@@ -46,6 +46,11 @@ export function MaterialCard({ material: m, onOpen, onDownload, downloading }: P
             {materialTypeById.get(t)?.labelDe ?? t}
           </span>
         ))}
+        {m.worksheet && (
+          <span className="rounded bg-amber-50 px-1.5 py-0.5 text-[11px] font-medium text-amber-700 ring-1 ring-amber-100">
+            + Arbeitsblatt
+          </span>
+        )}
       </div>
 
       <p className="mb-3 grow text-sm leading-relaxed text-slate-600">

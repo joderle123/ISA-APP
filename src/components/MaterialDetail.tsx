@@ -166,6 +166,39 @@ export function MaterialDetail({ material: m, onClose, onDownload, downloading }
             </div>
           </div>
 
+          {/* Worksheet */}
+          {m.worksheet && (
+            <div className="rounded-lg border border-amber-100 bg-amber-50/50 p-3">
+              <div className="mb-1 flex items-center gap-2">
+                <span className="rounded bg-amber-100 px-1.5 py-0.5 text-[11px] font-semibold text-amber-700">
+                  Arbeitsblatt
+                </span>
+                <span className="text-sm font-semibold text-slate-700">
+                  {m.worksheet.title || m.title}
+                </span>
+              </div>
+              {m.worksheet.intro && (
+                <p className="mb-2 text-sm text-slate-600">{m.worksheet.intro}</p>
+              )}
+              <ul className="space-y-0.5 text-sm text-slate-600">
+                {m.worksheet.blocks
+                  .filter((b) => b.kind === 'heading' || b.kind === 'question')
+                  .slice(0, 8)
+                  .map((b, i) => (
+                    <li key={i} className="flex gap-1.5">
+                      <span className="text-amber-500">
+                        {b.kind === 'heading' ? '▸' : '·'}
+                      </span>
+                      <span>{b.text}</span>
+                    </li>
+                  ))}
+              </ul>
+              <p className="mt-2 text-xs text-slate-400">
+                Vollständig als druckbare Seite im PDF enthalten.
+              </p>
+            </div>
+          )}
+
           {/* Tags + attachments */}
           {m.tags.length > 0 && (
             <div className="text-xs text-slate-400">{m.tags.map((t) => `#${t}`).join(' ')}</div>
