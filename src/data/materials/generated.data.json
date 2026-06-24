@@ -1,9 +1,4 @@
-import type { Material } from '../../types/material'
-
-// AI-generated library materials (one-time generation; offline thereafter).
-// Auto-written by scripts/integrate.mjs — do not edit by hand.
-// Each is a draft for human review before classroom use.
-export const generated: Material[] = [
+[
   {
     "id": "der-ich-detektiv-mit-der-lupe",
     "title": "Der Ich-Detektiv mit der Lupe",
