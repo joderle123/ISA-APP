@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Persönliche, lokale Claude-Settings
+.claude/settings.local.json
