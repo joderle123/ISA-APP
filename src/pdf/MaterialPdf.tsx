@@ -6,7 +6,7 @@ import {
   StyleSheet,
   Font,
 } from '@react-pdf/renderer'
-import type { Material } from '../types/material'
+import type { Material, WorksheetBlock } from '../types/material'
 
 // Disable automatic hyphenation so goal ids like "[SOZ-5]" never break into
 // "[-SOZ-5]". Words wrap at spaces only.
@@ -125,6 +125,23 @@ const s = StyleSheet.create({
     fontSize: 7.5,
     color: C.faint,
   },
+  // Worksheet (student-facing, printable)
+  wsBand: { borderBottomWidth: 2, borderBottomColor: C.blueDeep, paddingBottom: 6, marginBottom: 8 },
+  wsKicker: { fontSize: 9, fontFamily: 'Helvetica-Bold', color: C.blueDeep },
+  wsTitle: { fontSize: 15, fontFamily: 'Helvetica-Bold', marginTop: 2 },
+  wsNameRow: { flexDirection: 'row', marginTop: 6, fontSize: 9, color: C.faint },
+  wsIntro: { fontSize: 10, marginBottom: 6, color: C.ink },
+  wsHeading: { fontSize: 11.5, fontFamily: 'Helvetica-Bold', marginTop: 10, marginBottom: 3 },
+  wsInstruction: { fontSize: 9.5, color: '#5a6473', marginBottom: 3 },
+  wsQuestion: { fontSize: 10, marginTop: 6, marginBottom: 3 },
+  wsLine: { borderBottomWidth: 1, borderBottomColor: '#c2c9d2', height: 17 },
+  wsBox: { borderWidth: 1, borderColor: '#c2c9d2', borderRadius: 3, marginVertical: 3 },
+  wsCheckItem: { flexDirection: 'row', alignItems: 'flex-start', marginBottom: 4 },
+  wsScaleRow: { flexDirection: 'row', alignItems: 'center', flexWrap: 'wrap', marginTop: 3 },
+  wsScaleBox: { flexDirection: 'row', alignItems: 'center', marginRight: 12, marginBottom: 3 },
+  wsTableRow: { flexDirection: 'row' },
+  wsTableCell: { flex: 1, borderWidth: 0.5, borderColor: '#c2c9d2', paddingVertical: 5, paddingHorizontal: 4, fontSize: 9 },
+  wsTableHead: { backgroundColor: '#eef2f7', fontFamily: 'Helvetica-Bold' },
 })
 
 function Box({ checked }: { checked: boolean }) {
@@ -137,6 +154,120 @@ function Check({ checked, label }: { checked: boolean; label: string }) {
       <Box checked={checked} />
       <Text>{label}</Text>
     </View>
+  )
+}
+
+function WriteLines({ n }: { n: number }) {
+  return (
+    <>
+      {Array.from({ length: Math.max(1, n) }).map((_, i) => (
+        <View key={i} style={s.wsLine} />
+      ))}
+    </>
+  )
+}
+
+function WsBlock({ block }: { block: WorksheetBlock }) {
+  const { kind, text, lines, items } = block
+  if (kind === 'heading') return <Text style={s.wsHeading}>{text}</Text>
+  if (kind === 'instruction') return <Text style={s.wsInstruction}>{text}</Text>
+  if (kind === 'question')
+    return (
+      <View wrap={false}>
+        <Text style={s.wsQuestion}>{text}</Text>
+        <WriteLines n={lines ?? 2} />
+      </View>
+    )
+  if (kind === 'lines')
+    return (
+      <View>
+        {text ? <Text style={s.wsQuestion}>{text}</Text> : null}
+        <WriteLines n={lines ?? 3} />
+      </View>
+    )
+  if (kind === 'box')
+    return (
+      <View wrap={false}>
+        {text ? <Text style={s.wsQuestion}>{text}</Text> : null}
+        <View style={[s.wsBox, { height: (lines ?? 4) * 16 }]} />
+      </View>
+    )
+  if (kind === 'checklist')
+    return (
+      <View style={{ marginTop: 3 }}>
+        {(items ?? []).map((it, i) => (
+          <View key={i} style={s.wsCheckItem}>
+            <Box checked={false} />
+            <Text style={{ flex: 1 }}>{it}</Text>
+          </View>
+        ))}
+      </View>
+    )
+  if (kind === 'scale')
+    return (
+      <View style={{ marginTop: 4 }} wrap={false}>
+        {text ? <Text style={s.wsQuestion}>{text}</Text> : null}
+        <View style={s.wsScaleRow}>
+          {(items ?? []).map((lab, i) => (
+            <View key={i} style={s.wsScaleBox}>
+              <Box checked={false} />
+              <Text style={{ fontSize: 9 }}>{lab}</Text>
+            </View>
+          ))}
+        </View>
+      </View>
+    )
+  if (kind === 'table') {
+    const cols = items ?? []
+    const rows = lines ?? 3
+    return (
+      <View style={{ marginTop: 4 }}>
+        <View style={s.wsTableRow}>
+          {cols.map((c, i) => (
+            <Text key={i} style={[s.wsTableCell, s.wsTableHead]}>
+              {c}
+            </Text>
+          ))}
+        </View>
+        {Array.from({ length: rows }).map((_, r) => (
+          <View key={r} style={s.wsTableRow} wrap={false}>
+            {cols.map((_, c) => (
+              <Text key={c} style={[s.wsTableCell, { minHeight: 22 }]}>
+                {' '}
+              </Text>
+            ))}
+          </View>
+        ))}
+      </View>
+    )
+  }
+  return null
+}
+
+function WorksheetPage({ material: m }: { material: Material }) {
+  const w = m.worksheet!
+  return (
+    <Page size="A4" style={s.page}>
+      <View style={s.wsBand}>
+        <Text style={s.wsKicker}>ARBEITSBLATT</Text>
+        <Text style={s.wsTitle}>{w.title || m.title}</Text>
+        <View style={s.wsNameRow}>
+          <Text>Numm: ____________________________</Text>
+          <Text>     Datum: ______________</Text>
+        </View>
+      </View>
+      {w.intro ? <Text style={s.wsIntro}>{w.intro}</Text> : null}
+      {w.blocks.map((b, i) => (
+        <WsBlock key={i} block={b} />
+      ))}
+      <Text
+        style={s.footer}
+        render={({ pageNumber, totalPages }) =>
+          `ISA-App · Arbeitsblatt · ${m.title}                          ${pageNumber} / ${totalPages}`
+        }
+        fixed
+      />
+    </Page>
   )
 }
 
@@ -312,6 +443,9 @@ export function MaterialDocument({ material: m }: { material: Material }) {
           fixed
         />
       </Page>
+
+      {/* ---------------- Page 3 · Arbeitsblatt (optional) ---------------- */}
+      {m.worksheet ? <WorksheetPage material={m} /> : null}
     </Document>
   )
 }

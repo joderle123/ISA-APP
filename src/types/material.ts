@@ -44,6 +44,43 @@ export interface Attachment {
   kind: 'pdf' | 'link' | 'video'
 }
 
+/**
+ * A printable, student-facing worksheet ("Arbeitsblatt"). A flat block list
+ * keeps it easy to generate and to render to a clean fill-in PDF page.
+ *
+ * Per kind:
+ *  - heading      → `text` (section title)
+ *  - instruction  → `text` (guidance, no writing space)
+ *  - question     → `text` prompt + `lines` blank writing lines (default 2)
+ *  - lines        → `lines` blank writing lines, optional `text` as label
+ *  - box          → empty bordered box, `lines` ≈ height in lines, `text` label
+ *  - checklist    → `items` rendered each with a tick box
+ *  - table        → `items` = column headers, `lines` = number of empty rows
+ *  - scale        → `text` prompt + `items` = scale labels (tick boxes)
+ */
+export type WorksheetBlockKind =
+  | 'heading'
+  | 'instruction'
+  | 'question'
+  | 'lines'
+  | 'box'
+  | 'checklist'
+  | 'table'
+  | 'scale'
+
+export interface WorksheetBlock {
+  kind: WorksheetBlockKind
+  text?: string
+  lines?: number
+  items?: string[]
+}
+
+export interface Worksheet {
+  title?: string
+  intro?: string
+  blocks: WorksheetBlock[]
+}
+
 export interface Material {
   id: string
   title: string
@@ -70,6 +107,8 @@ export interface Material {
   eldibGoals: string[]
 
   attachments?: Attachment[]
+  /** Optional printable student worksheet (esp. for older youth / ES). */
+  worksheet?: Worksheet
 
   language: Language
   /** Provenance: digitised original vs. AI-generated for the library. */

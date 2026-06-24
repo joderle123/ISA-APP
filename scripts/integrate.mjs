@@ -24,6 +24,21 @@ const ELDIB_MAX = { V: 33, K: 35, SOZ: 41, KOG: 62 }
 const AGE = new Set(['C1','C2','C3','C4','ES'])
 const TYPE = new Set(['Aktivitéit','ganz Stonn','Projet','Hospi'])
 const MODE = new Set(['Individuel','Grupp','Klass'])
+const WS_KINDS = new Set(['heading','instruction','question','lines','box','checklist','table','scale'])
+
+function sanitizeWorksheet(w) {
+  if (!w || !Array.isArray(w.blocks)) return undefined
+  const blocks = w.blocks
+    .filter((b) => b && WS_KINDS.has(b.kind))
+    .map((b) => ({
+      kind: b.kind,
+      text: typeof b.text === 'string' ? b.text : undefined,
+      lines: Number.isFinite(b.lines) ? Math.min(12, Math.max(1, b.lines)) : undefined,
+      items: Array.isArray(b.items) ? b.items.filter((x) => typeof x === 'string') : undefined,
+    }))
+  if (!blocks.length) return undefined
+  return { title: w.title || undefined, intro: w.intro || undefined, blocks }
+}
 
 function slug(s) {
   return String(s).toLowerCase()
@@ -98,6 +113,7 @@ for (const m of incoming) {
     etepStufen: (m.etepStufen || []).filter((s) => s >= 1 && s <= 5),
     eldibGoals: [...new Set((m.eldibGoals || []).filter(validEldib))],
     attachments: m.attachments || undefined,
+    worksheet: sanitizeWorksheet(m.worksheet),
     language: m.language === 'lb' ? 'lb' : 'de',
     source: 'generated',
   })
