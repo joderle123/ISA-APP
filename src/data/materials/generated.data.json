@@ -5461,5 +5461,456 @@
     ],
     "language": "de",
     "source": "generated"
+  },
+  {
+    "id": "cybermobbing-net-matmaachen-hellefen",
+    "title": "Cybermobbing: net matmaachen, hëllefen",
+    "ageLevels": [
+      "C4",
+      "ES"
+    ],
+    "type": [
+      "ganz Stonn"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Plenum"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Kleingruppen"
+      }
+    ],
+    "themes": [
+      "mobbing",
+      "medien",
+      "gerechtigkeit"
+    ],
+    "tags": [
+      "Cybermobbing",
+      "online",
+      "Zivilcourage",
+      "Hilfe holen",
+      "Verantwortung",
+      "Chat"
+    ],
+    "shortDescription": "Mobbing hört am Bildschirm nicht auf - online ist es oft besonders verletzend, weil es jederzeit und vor vielen passiert. Die Jugendlichen erkennen, wie Cybermobbing wirkt, was Mitlaufen und Wegschauen anrichten und wie man sicher eingreift, betroffene Personen unterstützt und Hilfe holt - ohne sich selbst zu gefährden.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Warum online besonders weh tut",
+        "text": "Erarbeiten Sie, was Cybermobbing besonders macht: es ist rund um die Uhr da, verbreitet sich schnell, viele sehen zu, und man ist scheinbar anonym. Machen Sie klar: Hinter jedem Bildschirm sitzt ein echter Mensch mit echten Gefühlen."
+      },
+      {
+        "title": "Hauptteil – Vom Mitlaufen zum Helfen",
+        "text": "Besprechen Sie die Rollen (wer postet, wer liked/teilt, wer schweigt, wer hilft). Erarbeiten Sie sichere Schritte: nicht mitmachen, nichts weiterleiten, Beweise sichern (Screenshot), der betroffenen Person beistehen, blockieren/melden, eine erwachsene Vertrauensperson informieren. In Kleingruppen ordnen die Jugendlichen Situationen passende Hilfe-Schritte zu."
+      },
+      {
+        "title": "Abschluss – Mein Vorsatz & Hilfe",
+        "text": "Halten Sie Klassen-Regeln für ein faires Miteinander online fest. Jede/r notiert auf dem Arbeitsblatt einen Vorsatz und Anlaufstellen. Betonen Sie: Melden und Hilfe holen ist kein Petzen, sondern Verantwortung."
+      }
+    ],
+    "duration": "ca. 50 Min.",
+    "materialsNeeded": "Szenenkarten (altersgerecht, fiktiv); Arbeitsblatt; Liste seriöser Melde-/Hilfsstellen; Tafel/Flipchart",
+    "remark": "Sensibel und ohne Bloßstellung; ausschließlich fiktive Beispiele. Bei aktuellem Cybermobbing in der Gruppe Thema herauslösen und gezielt (mit Schulsozialarbeit/Fachstellen) bearbeiten und Beweise sichern. Hilfe holen konsequent positiv besetzen; Betroffene schützen.",
+    "etepStufen": [
+      4,
+      5
+    ],
+    "eldibGoals": [
+      "SOZ-23",
+      "SOZ-28",
+      "SOZ-35",
+      "K-21",
+      "KOG-58",
+      "V-22"
+    ],
+    "worksheet": {
+      "title": "Cybermobbing – was ich tun kann",
+      "intro": "Nur für dich. Überlege, wie du helfen kannst, ohne dich zu gefährden.",
+      "blocks": [
+        {
+          "kind": "checklist",
+          "text": "Wenn ich Cybermobbing mitbekomme:",
+          "items": [
+            "Ich mache nicht mit / leite nichts weiter",
+            "Ich sichere Beweise (Screenshot)",
+            "Ich stehe der betroffenen Person bei",
+            "Ich blockiere/melde",
+            "Ich informiere eine Vertrauensperson"
+          ]
+        },
+        {
+          "kind": "question",
+          "text": "Mein Vorsatz für ein faires Miteinander online:",
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "Hilfe finde ich bei:"
+        },
+        {
+          "kind": "lines",
+          "lines": 2
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "selbstdisziplin-drubleiwen-ouni-drock",
+    "title": "Selbstdisziplin: drubleiwen ouni Drock",
+    "ageLevels": [
+      "C4",
+      "ES"
+    ],
+    "type": [
+      "ganz Stonn"
+    ],
+    "participants": [
+      {
+        "mode": "Individuel",
+        "note": "persönliche Reflexion und Planung"
+      },
+      {
+        "mode": "Klass",
+        "note": "Strategien austauschen"
+      }
+    ],
+    "themes": [
+      "disziplin",
+      "motivation",
+      "selbstwahrnehmung"
+    ],
+    "tags": [
+      "Selbstdisziplin",
+      "Aufschieben",
+      "Gewohnheiten",
+      "Fokus",
+      "Durchhalten",
+      "Selbststeuerung"
+    ],
+    "shortDescription": "Selbstdisziplin ist keine Frage von Härte, sondern von klugen Strategien. Die Jugendlichen verstehen, warum Aufschieben so verlockend ist, und lernen Werkzeuge, um trotzdem dranzubleiben: kleine Schritte, Ablenkungen managen, Startrituale, sich selbst belohnen. So gewinnen sie mehr Kontrolle über ihr Lernen und ihre Ziele.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Warum schieben wir auf?",
+        "text": "Sammeln Sie ehrlich Gründe fürs Aufschieben (zu groß, langweilig, Angst zu scheitern, Ablenkung). Entlasten Sie: Aufschieben ist menschlich und kein Charakterfehler - aber man kann gegensteuern lernen."
+      },
+      {
+        "title": "Hauptteil – Werkzeuge zum Dranbleiben",
+        "text": "Stellen Sie konkrete Strategien vor und lassen Sie sie bewerten: Aufgaben in kleine Schritte teilen; mit dem ersten Mini-Schritt starten (2-Minuten-Regel); Ablenkungen ausschalten (Handy weg); feste Lernzeiten/Startritual; sich nach Etappen belohnen; an das Ziel/Warum erinnern. Jede/r wählt passende Werkzeuge aus."
+      },
+      {
+        "title": "Abschluss – Mein Anti-Aufschiebe-Plan",
+        "text": "Jede/r formuliert für eine konkrete eigene Aufgabe einen kleinen Plan mit erstem Schritt und Anti-Ablenkungs-Trick. Betonen Sie: Selbstdisziplin wächst mit Übung - kleine, machbare Schritte schlagen großen Druck."
+      }
+    ],
+    "duration": "ca. 50 Min.",
+    "materialsNeeded": "Arbeitsblatt/Heft für den persönlichen Plan; Tafel für gesammelte Strategien",
+    "remark": "Ohne Beschämung arbeiten - Aufschieben nicht moralisieren. Bei Hinweisen auf starke Prüfungsangst oder Überlastung Gesprächs-/Beratungsangebote einbeziehen. Berücksichtigen Sie unterschiedliche Lernbedingungen und entwickeln Sie realistische Pläne.",
+    "etepStufen": [
+      4,
+      5
+    ],
+    "eldibGoals": [
+      "V-20",
+      "V-27",
+      "V-28",
+      "KOG-25",
+      "KOG-44",
+      "SOZ-32"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "gutt-gefill-schlecht-gefill-maei-kierper-geheiert-mir",
+    "title": "Gutt Gefill, schlecht Gefill: mäi Kierper gehéiert mir",
+    "ageLevels": [
+      "C2",
+      "C3"
+    ],
+    "type": [
+      "ganz Stonn"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Sitzkreis, geschützte Atmosphäre"
+      }
+    ],
+    "themes": [
+      "grenzen",
+      "selbstwahrnehmung",
+      "emotionen"
+    ],
+    "tags": [
+      "Körpergrenzen",
+      "Selbstbestimmung",
+      "Nein sagen",
+      "Gefühle",
+      "Hilfe holen",
+      "Schutz"
+    ],
+    "shortDescription": "Eine altersgerechte Einheit zur körperlichen Selbstbestimmung: Kinder lernen, auf ihr Bauchgefühl zu hören, gute von unangenehmen Berührungen zu unterscheiden, „Nein\" zu sagen und sich Hilfe zu holen. Die Einheit stärkt Selbstwahrnehmung und das klare Wissen: Mein Körper gehört mir.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Mein Bauchgefühl",
+        "text": "Sprechen Sie über das „Bauchgefühl\": Manchmal sagt es uns, dass etwas schön ist, manchmal, dass etwas unangenehm ist. Beide Gefühle sind wichtige Hinweise. Sammeln Sie Beispiele für gute Gefühle (Umarmung von einem lieben Menschen, wenn man es mag) und unangenehme."
+      },
+      {
+        "title": "Hauptteil – Gute und unangenehme Berührungen",
+        "text": "Erarbeiten Sie kindgerecht: Es gibt Berührungen, die guttun, und solche, die sich nicht gut anfühlen - und DU darfst entscheiden. Übt die klare „Stopp\"-Botschaft und den wichtigen Satz: „Mein Körper gehört mir.\" Klären Sie: Wenn sich etwas nicht gut anfühlt oder jemand sagt, du sollst ein Geheimnis bewahren, das dich bedrückt, dann hole Hilfe - das ist immer richtig."
+      },
+      {
+        "title": "Abschluss – Meine Hilfe-Menschen",
+        "text": "Jedes Kind überlegt (für sich), wer seine Vertrauenspersonen sind, zu denen es mit einem unangenehmen Gefühl gehen kann. Betonen Sie: Über schlechte Gefühle reden ist mutig und richtig - und es ist nie die Schuld des Kindes."
+      }
+    ],
+    "duration": "ca. 45 Min.",
+    "materialsNeeded": "Optional Bildkarten zu Alltagssituationen; ruhiger, geschützter Rahmen",
+    "remark": "Sehr sensibles Schutz-Thema (Prävention sexualisierter Gewalt). Geschützte, ruhige Atmosphäre; ausschließlich altersgerechte, nicht-explizite Beispiele. Reagieren Sie auf mögliche Offenbarungen ruhig, glaubend und ohne Druck und beziehen Sie zwingend die zuständigen Fach-/Schutzstellen ein. An Schulkonzept und Präventionsleitfaden anpassen; Eltern ggf. vorab informieren.",
+    "etepStufen": [
+      2,
+      3
+    ],
+    "eldibGoals": [
+      "V-14",
+      "V-19",
+      "SOZ-16",
+      "SOZ-22",
+      "K-15",
+      "KOG-12"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "de-mutmach-spruch",
+    "title": "De Mutmach-Spruch",
+    "ageLevels": [
+      "C1",
+      "C2"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Sitzkreis"
+      },
+      {
+        "mode": "Individuel",
+        "note": "eigener Mutmach-Spruch"
+      }
+    ],
+    "themes": [
+      "motivation",
+      "selbstwertgefuehl",
+      "resilienz"
+    ],
+    "tags": [
+      "Mut machen",
+      "positive Sätze",
+      "Selbstvertrauen",
+      "Durchhalten",
+      "Ermutigung",
+      "innere Stimme"
+    ],
+    "shortDescription": "Kleine Sätze können großen Mut machen. Die Kinder lernen kurze „Mutmach-Sprüche\" kennen, die ihnen in schwierigen Momenten helfen (z. B. „Ich schaffe das Schritt für Schritt\"), und wählen oder erfinden ihren eigenen. So bekommen sie ein einfaches Werkzeug, sich selbst zu ermutigen.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Worte, die Mut machen",
+        "text": "Erzählen Sie von Momenten, in denen etwas schwer ist (etwas Neues, eine Aufgabe, allein einschlafen). Fragen Sie: „Was könnte man sich dann selbst sagen?\" Sammeln Sie einfache Mutmach-Sprüche und sprechen Sie ein, zwei gemeinsam laut - kräftig und freundlich."
+      },
+      {
+        "title": "Hauptteil – Mein Mutmach-Spruch",
+        "text": "Jedes Kind wählt einen Spruch aus der Sammlung oder erfindet einen eigenen und gestaltet ihn auf einer kleinen Karte (malen/schreiben). Übt das laute, mutige Sprechen - Haltung aufrecht, feste Stimme."
+      },
+      {
+        "title": "Abschluss – Mut in der Tasche",
+        "text": "Die Kinder dürfen ihre Mutmach-Karte behalten (z. B. im Mäppchen). Vereinbaren Sie, den Spruch auszuprobieren, wenn etwas schwerfällt. Schließen Sie mit einem gemeinsamen Mutmach-Ruf."
+      }
+    ],
+    "duration": "ca. 30-40 Min.",
+    "materialsNeeded": "Kärtchen; Bunt-/Filzstifte; optional eine Sammlung einfacher Mutmach-Sprüche",
+    "remark": "Sprüche kurz, positiv und kindgerecht halten („Ich kann das üben\" statt leerer Phrasen). Begleiten Sie Kinder mit geringem Selbstvertrauen besonders. Für C1 mit Bild + sehr kurzem Spruch arbeiten und viel gemeinsam sprechen.",
+    "etepStufen": [
+      1,
+      2
+    ],
+    "eldibGoals": [
+      "V-7",
+      "V-13",
+      "SOZ-7",
+      "K-8",
+      "KOG-5"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "5-finger-atem-roueg-ginn",
+    "title": "5-Finger-Atem: roueg ginn",
+    "ageLevels": [
+      "C2",
+      "C3"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "kurzes Ritual, jederzeit einsetzbar"
+      },
+      {
+        "mode": "Individuel",
+        "note": "jede/r für sich"
+      }
+    ],
+    "themes": [
+      "stressbewaeltigung",
+      "achtsamkeit",
+      "impulskontrolle"
+    ],
+    "tags": [
+      "Atemübung",
+      "Beruhigung",
+      "Selbstregulation",
+      "Hand",
+      "Ruhe",
+      "Anspannung"
+    ],
+    "shortDescription": "Eine einfache, überall einsetzbare Atemübung: Mit dem Finger fährt das Kind die Umrisse seiner anderen Hand nach - beim Hochfahren einatmen, beim Runterfahren ausatmen. Die „Fünf-Finger-Atmung\" beruhigt schnell und gibt den Kindern ein handliches Werkzeug gegen Aufregung, Wut oder Anspannung.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Die Hand als Atem-Helfer",
+        "text": "Erklären Sie: „Deine Hand ist immer dabei - und sie kann dir helfen, ruhig zu werden.\" Zeigen Sie die Übung langsam vor. Betonen Sie ruhiges, langsames Atmen."
+      },
+      {
+        "title": "Hauptteil – Fünf Finger atmen",
+        "text": "Alle spreizen eine Hand. Mit dem Zeigefinger der anderen Hand fahren sie langsam an der Außenseite des Daumens hoch (einatmen) und auf der anderen Seite runter (ausatmen) - so über alle fünf Finger. Wiederholen Sie die Runde zwei-, dreimal in ruhigem Tempo."
+      },
+      {
+        "title": "Abschluss – Wann hilft mir das?",
+        "text": "Kurz nachspüren: „Wie fühlst du dich jetzt?\" Besprechen Sie, wann die Übung hilft (vor einer Prüfung, bei Wut, beim Einschlafen). Üben Sie sie regelmäßig, damit sie im Ernstfall sitzt."
+      }
+    ],
+    "duration": "ca. 10-15 Min. (Übung 2-3 Min.)",
+    "materialsNeeded": "Keine; optional ein Bild der „Hand-Atmung\" als Erinnerung",
+    "remark": "Kurz und ohne Druck halten; Freiwilligkeit. Ideal als wiederkehrendes Mini-Ritual und als Notbremse bei Aufregung. Gut kombinierbar mit dem Schildkröten-Trick oder dem Stress-Thermometer.",
+    "etepStufen": [
+      2,
+      3
+    ],
+    "eldibGoals": [
+      "V-11",
+      "V-21",
+      "KOG-5",
+      "SOZ-16",
+      "K-15"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "teamrollen-wien-mecht-wat",
+    "title": "Teamrollen: wien mécht wat?",
+    "ageLevels": [
+      "C4",
+      "ES"
+    ],
+    "type": [
+      "ganz Stonn"
+    ],
+    "participants": [
+      {
+        "mode": "Grupp",
+        "note": "Projektteams"
+      },
+      {
+        "mode": "Klass",
+        "note": "Einführung und Auswertung"
+      }
+    ],
+    "themes": [
+      "kooperation",
+      "kommunikation",
+      "motivation"
+    ],
+    "tags": [
+      "Teamrollen",
+      "Projektarbeit",
+      "Aufgabenverteilung",
+      "Verantwortung",
+      "Zusammenarbeit",
+      "Absprache"
+    ],
+    "shortDescription": "Gute Teamarbeit braucht klare Rollen. Die Jugendlichen lernen typische Teamrollen kennen (z. B. Koordination, Zeit, Material, Präsentation), verteilen sie fair nach Stärken und üben verbindliche Absprachen. So werden Gruppenprojekte gerechter, effizienter - und niemand trägt alles allein oder bleibt außen vor.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Warum Rollen helfen",
+        "text": "Sammeln Sie typische Probleme in Gruppenarbeiten (einer macht alles, einer nichts, Chaos, Streit). Erarbeiten Sie: Klare Rollen sorgen dafür, dass alle beitragen und die Arbeit fair verteilt ist."
+      },
+      {
+        "title": "Hauptteil – Rollen verteilen",
+        "text": "Stellen Sie Rollen vor (z. B. Koordination/Leitung, Zeitwächter, Materialwart, Schriftführer, Präsentation). In den Teams verteilen die Jugendlichen die Rollen nach Stärken und Interessen und halten auf dem Arbeitsblatt fest, wer was übernimmt und bis wann. Betonen Sie, dass alle füreinander einspringen."
+      },
+      {
+        "title": "Abschluss – Verbindliche Absprache",
+        "text": "Jedes Team stellt seine Rollenverteilung kurz vor. Vereinbaren Sie einen Check-in-Zeitpunkt. Reflexion: Was macht eine faire Verteilung aus? Übertragen Sie das auf künftige Projekte."
+      }
+    ],
+    "duration": "ca. 50 Min.",
+    "materialsNeeded": "Arbeitsblatt „Teamrollen\"; Rollenkarten; Tafel/Flipchart",
+    "remark": "Achten Sie darauf, dass Rollen rotieren können, damit nicht immer dieselben führen. Unterstützen Sie leisere Jugendliche, eine Rolle zu finden, die zu ihnen passt. Verbindlichkeit (wer/was/bis wann) ist der Schlüssel - begleiten Sie die Einhaltung.",
+    "etepStufen": [
+      4,
+      5
+    ],
+    "eldibGoals": [
+      "SOZ-18",
+      "SOZ-27",
+      "K-20",
+      "K-29",
+      "KOG-46",
+      "V-22"
+    ],
+    "worksheet": {
+      "title": "Eis Teamrollen",
+      "intro": "Verteilt die Rollen fair – nach Stärken. So zieht ihr an einem Strang.",
+      "blocks": [
+        {
+          "kind": "table",
+          "text": "Wer macht was?",
+          "lines": 5,
+          "items": [
+            "Name",
+            "Rolle",
+            "Aufgabe",
+            "bis wann"
+          ]
+        },
+        {
+          "kind": "question",
+          "text": "Worauf achten wir, damit es fair bleibt?",
+          "lines": 2
+        },
+        {
+          "kind": "scale",
+          "text": "Unsere Zusammenarbeit klappt bisher:",
+          "items": [
+            "noch nicht",
+            "ok",
+            "richtig gut"
+          ]
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
   }
 ]
