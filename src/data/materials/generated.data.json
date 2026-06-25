@@ -1461,5 +1461,421 @@
     },
     "language": "de",
     "source": "generated"
+  },
+  {
+    "id": "de-konzentratiouns-kapitaen",
+    "title": "De Konzentratiouns-Kapitän",
+    "ageLevels": [
+      "C2",
+      "C3"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Einführung gemeinsam, ca. 12-20 Kinder"
+      },
+      {
+        "mode": "Individuel",
+        "note": "jedes Kind übt sein eigenes Start-Ritual"
+      }
+    ],
+    "themes": [
+      "disziplin",
+      "selbstwahrnehmung",
+      "impulskontrolle"
+    ],
+    "tags": [
+      "Konzentration",
+      "Arbeitshaltung",
+      "Selbststeuerung",
+      "Routine",
+      "Ablenkung",
+      "Durchhalten"
+    ],
+    "shortDescription": "Die Kinder werden „Kapitän\" über ihre eigene Konzentration: Sie lernen ein kurzes Start-Ritual, mit dem sie bewusst in eine Arbeitsphase steuern, Ablenkungen erkennen und sanft zur Aufgabe zurückkehren. Über den Rhythmus aus konzentriertem Arbeiten und kurzer Pause erleben sie, dass Dranbleiben übbar ist - wie das Steuern eines Schiffes.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Das Schiff und die Wellen",
+        "text": "Erklären Sie bildhaft: „Beim Arbeiten bist du der Kapitän deines Schiffes. Die Wellen sind Ablenkungen - Geräusche, Gedanken, der Nachbar. Ein guter Kapitän schimpft nicht über die Wellen, er steuert einfach wieder zurück auf Kurs.\" Sammeln Sie gemeinsam typische „Wellen\" im Klassenraum."
+      },
+      {
+        "title": "Hauptteil 1 – Mein Start-Ritual",
+        "text": "Führen Sie ein kurzes, immer gleiches Start-Ritual ein, das die Arbeitsphase einleitet: Tisch frei räumen, einmal tief durchatmen, Aufgabe leise wiederholen, „Los geht's\" denken. Üben Sie das Ritual zwei-, dreimal gemeinsam. Es wirkt wie ein Schalter, der das Gehirn auf „arbeiten\" stellt."
+      },
+      {
+        "title": "Hauptteil 2 – Arbeiten und Steuern (Kapitäns-Runde)",
+        "text": "Die Kinder arbeiten 8-10 Minuten still an einer Aufgabe. Vereinbartes Zeichen: Wer merkt, dass er „abgedriftet\" ist, macht innerlich kurz das Steuer-Zeichen (Hände ans gedachte Steuerrad) und kehrt ohne Ärger zur Aufgabe zurück. Danach eine kurze, aktive Pause (1-2 Min. Bewegung), dann eine zweite kurze Arbeitsrunde."
+      },
+      {
+        "title": "Abschluss – Logbuch des Kapitäns",
+        "text": "Kurze Reflexion: „Wie oft musstest du zurücksteuern? Das ist völlig normal - Hauptsache, du bist zurückgekommen.\" Jedes Kind nennt eine Strategie, die ihm geholfen hat. Vereinbaren Sie, das Start-Ritual künftig vor jeder Stillarbeit zu nutzen."
+      }
+    ],
+    "duration": "ca. 40 Min.; das Start-Ritual danach dauerhaft im Alltag",
+    "materialsNeeded": "Eine Arbeitsaufgabe passend zur Lerngruppe; optional ein kleines Bild (Schiff/Steuerrad) als Erinnerung; eine ruhige Pausen-Idee",
+    "remark": "Loben Sie ausdrücklich das Zurückkehren zur Aufgabe, nicht das „perfekte\" Stillsitzen - so wird Selbststeuerung gestärkt statt Druck aufgebaut. Für Kinder mit hoher Ablenkbarkeit Arbeitsrunden zunächst kürzer halten und schrittweise verlängern. Differenzierung: Für C2 das Ritual stark verkürzen und bildgestützt anbieten.",
+    "etepStufen": [
+      2,
+      3
+    ],
+    "eldibGoals": [
+      "V-6",
+      "V-13",
+      "V-20",
+      "V-28",
+      "KOG-11",
+      "KOG-25",
+      "SOZ-8",
+      "K-9"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "vun-der-faust-zum-wuert",
+    "title": "Vun der Faust zum Wuert",
+    "ageLevels": [
+      "C3",
+      "C4"
+    ],
+    "type": [
+      "ganz Stonn"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Plenum für Einstieg und Auswertung"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Übungen in Paaren und Kleingruppen"
+      }
+    ],
+    "themes": [
+      "gewalt",
+      "konfliktloesung",
+      "impulskontrolle"
+    ],
+    "tags": [
+      "Gewaltprävention",
+      "Deeskalation",
+      "Wut",
+      "Streit lösen",
+      "Hilfe holen",
+      "Worte statt Fäuste"
+    ],
+    "shortDescription": "Die Kinder lernen, die Stufen der Eskalation eines Streits zu erkennen und früh auszusteigen, bevor aus Wut körperliche Gewalt wird. Sie üben konkrete Deeskalations-Werkzeuge - Stopp, Abstand, Atmen, Worte finden, Hilfe holen - und erfahren, dass es Stärke zeigt, einen Streit ohne Fäuste zu beenden.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Die Eskalations-Treppe",
+        "text": "Zeichnen Sie eine Treppe mit Stufen: Es ärgert mich → ich werde wütend → wir streiten lauter → wir schubsen → es wird körperlich. Besprechen Sie: Je höher man steigt, desto schwerer ist das Umkehren. Die gute Nachricht: Auf jeder Stufe kann man aussteigen - je früher, desto leichter."
+      },
+      {
+        "title": "Hauptteil 1 – Mein Frühwarnsystem",
+        "text": "Die Kinder erkennen ihre eigenen Körper-Frühwarnzeichen für Wut (heißer Kopf, geballte Fäuste, schneller Atem). Erarbeiten Sie die Notbremse: Stopp - Abstand nehmen - dreimal tief atmen. Üben Sie diese Sequenz gemeinsam im Stehen, damit sie im Ernstfall abrufbar ist."
+      },
+      {
+        "title": "Hauptteil 2 – Worte finden (Paararbeit)",
+        "text": "Stellen Sie die Ich-Botschaft vor: „Ich ärgere mich, wenn ... Ich möchte, dass ...\" statt Vorwürfen und Schimpfen. In Paaren spielen die Kinder einen harmlosen Streitanlass durch und ersetzen Drohungen/Schubsen durch Worte. Sammeln Sie hilfreiche Sätze an der Tafel."
+      },
+      {
+        "title": "Abschluss – Stark ohne Fäuste & Hilfe holen",
+        "text": "Klären Sie deutlich: Wenn ein Streit zu groß wird oder jemand verletzt werden könnte, ist Hilfe holen kein Verlieren, sondern klug und mutig. Sammeln Sie, an wen man sich wenden kann. Schließen Sie mit dem Leitsatz: „Echte Stärke ist, einen Streit ohne Fäuste zu beenden.\""
+      }
+    ],
+    "duration": "ca. 50 Min. (eine ganze Stunde)",
+    "materialsNeeded": "Tafel/Flipchart für die Eskalations-Treppe; Karten mit harmlosen Streitanlässen; Platz für kurze Paarübungen",
+    "remark": "Sensibles Thema - arbeiten Sie ausschließlich mit fiktiven, harmlosen Beispielen und vermeiden Sie das Nachspielen realer Gewaltszenen. Achten Sie auf Kinder mit Gewalterfahrung und bieten Sie Rückzug an. Bei Hinweisen auf reale Gewalt (zu Hause oder in der Schule) das Thema aus der Stunde lösen und gezielt mit Fachstellen/Schulsozialarbeit weiterarbeiten. Hilfe holen konsequent positiv besetzen.",
+    "etepStufen": [
+      3,
+      4
+    ],
+    "eldibGoals": [
+      "V-8",
+      "V-17",
+      "V-25",
+      "V-31",
+      "SOZ-13",
+      "SOZ-24",
+      "SOZ-35",
+      "K-15",
+      "KOG-30"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "de-gefillsbarometer-eis-moiesritual",
+    "title": "De Gefillsbarometer – eis Moiesritual",
+    "ageLevels": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "tägliches Ritual im Morgenkreis"
+      },
+      {
+        "mode": "Individuel",
+        "note": "jedes Kind zeigt sein eigenes Befinden"
+      }
+    ],
+    "themes": [
+      "etep-epu",
+      "emotionen",
+      "selbstwahrnehmung"
+    ],
+    "tags": [
+      "Morgenritual",
+      "Gefühle zeigen",
+      "Befindlichkeit",
+      "ETEP",
+      "Klassengemeinschaft",
+      "Check-in"
+    ],
+    "shortDescription": "Ein kurzes, wiederkehrendes Morgenritual im Sinne der Entwicklungspädagogik (ETEP/EPU): Jedes Kind zeigt am Gefühls-Barometer, wie es ihm gerade geht. So lernen Kinder, Gefühle wahrzunehmen und zu benennen, und die Lehrperson erhält täglich einen schnellen Eindruck der Gruppe. Das Ritual schafft Sicherheit, Zugehörigkeit und einen achtsamen Start in den Tag.",
+    "ablauf": [
+      {
+        "title": "Aufbau – Das Barometer einführen",
+        "text": "Gestalten Sie mit der Klasse ein Gefühls-Barometer: eine Skala oder Wetter-Symbole (Sonne, Wolke, Regen, Gewitter) bzw. einfache Gesichter. Jedes Kind erhält eine Klammer/Magnet mit seinem Namen. Besprechen Sie die Gefühle und vereinbaren Sie die wichtigste Regel: Jedes Gefühl darf da sein, keines ist falsch."
+      },
+      {
+        "title": "Tägliche Durchführung – Mein Platz am Barometer",
+        "text": "Zu Tagesbeginn setzt jedes Kind seine Klammer an die passende Stelle. Wer mag, sagt einen Satz dazu - niemand muss. Halten Sie es kurz (5-8 Minuten). Achten Sie als Lehrperson besonders auf Kinder im „Regen/Gewitter\" und suchen Sie bei Bedarf später ein kurzes Einzelgespräch."
+      },
+      {
+        "title": "Variation & Vertiefung",
+        "text": "Erweitern Sie das Ritual nach und nach: ein Gefühl genauer benennen, eine Idee nennen, was jetzt guttäte, oder einem Kind im „Regen\" einen guten Wunsch schenken. So wächst der Gefühlswortschatz und die Fürsorge in der Gruppe."
+      },
+      {
+        "title": "Abschluss / Wochenrückblick",
+        "text": "Am Ende der Woche kurzer Blick: „Wie war die Stimmung diese Woche?\" Würdigen Sie, dass alle ihre Gefühle gezeigt haben. Das Barometer macht die unsichtbare Gefühlslage der Klasse sichtbar und besprechbar."
+      }
+    ],
+    "duration": "Einführung ca. 30 Min.; danach tägliches Ritual von 5-8 Min.",
+    "materialsNeeded": "Ein gestaltetes Gefühls-Barometer (Plakat mit Symbolen/Skala); pro Kind eine beschriftete Wäscheklammer oder ein Magnet; optional Gefühlskarten zur Wortschatzarbeit",
+    "remark": "Konsequente Freiwilligkeit beim Sprechen - das Zeigen genügt. Das Ritual lebt von Verlässlichkeit: möglichst täglich zur gleichen Zeit. Reagieren Sie auf wiederkehrend belastete Kinder feinfühlig und ggf. mit Unterstützung. Für C1 mit klaren Symbolen/Farben statt Worten arbeiten; für C3 den Gefühlswortschatz gezielt erweitern.",
+    "etepStufen": [
+      1,
+      2,
+      3
+    ],
+    "eldibGoals": [
+      "V-2",
+      "V-11",
+      "V-23",
+      "SOZ-5",
+      "SOZ-17",
+      "K-6",
+      "K-19",
+      "KOG-4"
+    ],
+    "worksheet": {
+      "title": "Mäi Gefillsbarometer",
+      "intro": "Wie geht es dir heute? Es gibt kein richtig oder falsch.",
+      "blocks": [
+        {
+          "kind": "scale",
+          "text": "Mein Wetter heute:",
+          "items": [
+            "Sonne",
+            "Wolke",
+            "Regen",
+            "Gewitter"
+          ]
+        },
+        {
+          "kind": "question",
+          "text": "Mein Gefühl heißt:",
+          "lines": 1
+        },
+        {
+          "kind": "question",
+          "text": "Das würde mir jetzt guttun:",
+          "lines": 2
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "respekt-grenzen-a-gutt-bezeiungen",
+    "title": "Respekt, Grenzen a gutt Bezéiungen",
+    "ageLevels": [
+      "ES"
+    ],
+    "type": [
+      "ganz Stonn"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "moderiertes Gespräch in geschützter Atmosphäre"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Austausch in Kleingruppen"
+      }
+    ],
+    "themes": [
+      "sexualitaet",
+      "grenzen",
+      "beziehungsaufbau"
+    ],
+    "tags": [
+      "Respekt",
+      "Beziehungen",
+      "Einverständnis",
+      "Grenzen",
+      "Selbstbestimmung",
+      "Hilfe finden"
+    ],
+    "shortDescription": "Eine altersgerechte Einheit für Jugendliche über respektvolle Beziehungen: Was macht eine Beziehung gut, wo verlaufen persönliche Grenzen, und warum ist gegenseitiges Einverständnis die Grundlage jedes Umgangs? Die Stunde stärkt Selbstbestimmung und Respekt, vermittelt eine klare Haltung gegen Grenzüberschreitungen und zeigt verlässliche Anlaufstellen für Fragen und Hilfe. Inhalt ist nicht-explizit und auf Werte, Kommunikation und Schutz ausgerichtet.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Was macht eine Beziehung gut?",
+        "text": "Sammeln Sie wertfrei Merkmale guter Beziehungen jeder Art (Freundschaft, Partnerschaft, Familie): Vertrauen, Respekt, Ehrlichkeit, sich wohl- und sicher fühlen, Grenzen achten. Halten Sie die Merkmale sichtbar fest und betonen Sie: Diese gelten für alle Beziehungen."
+      },
+      {
+        "title": "Hauptteil 1 – Grenzen und Einverständnis",
+        "text": "Erarbeiten Sie zwei Grundsätze: 1) Jeder Mensch hat eigene Grenzen, die respektiert werden müssen. 2) Einverständnis bedeutet ein freies, klares und jederzeit widerrufbares Ja - Schweigen, Druck oder „vielleicht\" sind kein Ja. Verdeutlichen Sie an Alltagsbeispielen (Foto teilen, Nähe, Mitmachen), dass jede Person über sich selbst bestimmt."
+      },
+      {
+        "title": "Hauptteil 2 – Respekt im Umgang (Kleingruppen)",
+        "text": "In Kleingruppen besprechen die Jugendlichen anhand neutraler Situationskarten: Wo wird hier eine Grenze überschritten? Was wäre respektvoll? Wie kann man ein Nein deutlich machen und ein Nein des anderen akzeptieren? Sammeln Sie hilfreiche Formulierungen im Plenum."
+      },
+      {
+        "title": "Abschluss – Haltung & Hilfe",
+        "text": "Fassen Sie zusammen: Respekt und Einverständnis sind nicht verhandelbar. Klären Sie deutlich und ruhig, an wen man sich bei Unsicherheit, Druck oder Grenzverletzungen wenden kann (Vertrauensperson, Beratungsstellen, Notfallnummern). Geben Sie verlässliche Anlaufstellen schriftlich mit."
+      }
+    ],
+    "duration": "ca. 50 Min. (eine ganze Stunde)",
+    "materialsNeeded": "Tafel/Flipchart; neutrale Situationskarten; vorbereitete Liste mit altersgerechten, seriösen Beratungs- und Hilfsangeboten",
+    "remark": "Sensibles Thema: Schaffen Sie eine geschützte, respektvolle Atmosphäre, arbeiten Sie nicht-explizit und wertschätzend gegenüber allen Lebensrealitäten. Vereinbaren Sie Gesprächsregeln (Vertraulichkeit, kein Auslachen, persönliche Fragen freiwillig). Stellen Sie immer konkrete Hilfsangebote bereit und reagieren Sie auf mögliche Offenbarungen von Übergriffen geschützt und mit Einbezug von Fachstellen. Inhalte an Lehrplan, Schulkonzept und Alter anpassen; Eltern ggf. vorab informieren.",
+    "etepStufen": [
+      4,
+      5
+    ],
+    "eldibGoals": [
+      "SOZ-10",
+      "SOZ-21",
+      "SOZ-29",
+      "SOZ-39",
+      "V-14",
+      "K-13",
+      "K-24",
+      "KOG-20"
+    ],
+    "worksheet": {
+      "title": "Respekt & Grenzen – für mich",
+      "intro": "Nur für dich. Du musst nichts abgeben.",
+      "blocks": [
+        {
+          "kind": "checklist",
+          "text": "Eine gute Beziehung erkenne ich an:",
+          "items": [
+            "Ich fühle mich sicher",
+            "Ich werde respektiert",
+            "Meine Grenzen werden geachtet",
+            "Ich kann ehrlich sein",
+            "Ich kann jederzeit Nein sagen"
+          ]
+        },
+        {
+          "kind": "question",
+          "text": "Was bedeutet Einverständnis für mich in eigenen Worten?",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "Wenn ich Hilfe brauche, wende ich mich an:"
+        },
+        {
+          "kind": "lines",
+          "lines": 2
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "energie-pausen-bewegung-geint-de-stress",
+    "title": "Energie-Pausen: Bewegung géint de Stress",
+    "ageLevels": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "gemeinsame Kurzpausen, jederzeit im Unterricht einsetzbar"
+      }
+    ],
+    "themes": [
+      "bewegung",
+      "stressbewaeltigung",
+      "achtsamkeit"
+    ],
+    "tags": [
+      "Bewegungspause",
+      "Energizer",
+      "Stressabbau",
+      "Konzentration",
+      "Auflockerung",
+      "Selbstregulation"
+    ],
+    "shortDescription": "Eine Sammlung kurzer Bewegungs-Pausen, die sich flexibel in den Unterricht einbauen lassen - mal aktivierend, wenn die Energie sinkt, mal beruhigend, wenn die Anspannung steigt. Die Kinder lernen, ihren eigenen Zustand wahrzunehmen und mit Bewegung bewusst zu regulieren. Schon 2-3 Minuten verbessern Konzentration, Stimmung und Lernbereitschaft.",
+    "ablauf": [
+      {
+        "title": "Einführung – Energie-Anzeige",
+        "text": "Führen Sie eine einfache Selbsteinschätzung ein: „Wie ist deine Energie gerade - zu niedrig (müde), genau richtig, oder zu hoch (zappelig/angespannt)?\" Erklären Sie: Bei zu niedrig hilft Aktivierung, bei zu hoch hilft Beruhigung. Bewegung ist die Fernbedienung."
+      },
+      {
+        "title": "Aktivierende Pausen (bei zu wenig Energie)",
+        "text": "Beispiele (je 1-2 Min.): „Wackel-Countdown\" (jedes Körperteil 8-mal schütteln, dann 4, 2, 1); „Überkreuz\" (rechte Hand zum linken Knie und umgekehrt, fördert beide Gehirnhälften); „Hampelmann-Geschichte\" (zu einer kurzen Erzählung passende Bewegungen). Danach kurz spüren: Wie ist die Energie jetzt?"
+      },
+      {
+        "title": "Beruhigende Pausen (bei zu viel Anspannung)",
+        "text": "Beispiele (je 1-2 Min.): „Kerze und Blume\" (Blume riechen = einatmen, Kerze ausblasen = lang ausatmen); „Baum im Wind\" (langsame, große Dehnbewegungen); „Igel\" (sich klein einrollen, langsam wieder öffnen). Leise Stimme, langsames Tempo - das überträgt sich auf die Kinder."
+      },
+      {
+        "title": "Transfer – Meine Lieblingspause",
+        "text": "Lassen Sie die Kinder ihre Lieblings-Energiepause wählen und benennen, wann sie ihnen hilft. Legen Sie eine kleine Klassen-Kartei an, aus der zukünftig ein Kind eine Pause ziehen darf. So wird Bewegung zur selbstverständlichen Selbstregulation."
+      }
+    ],
+    "duration": "je Pause 2-3 Min.; Einführung ca. 20 Min.",
+    "materialsNeeded": "Keine besondere Ausstattung nötig; optional Karten mit den Übungen für eine Klassen-Kartei; ausreichend Platz am Tisch oder im Stehen",
+    "remark": "Achten Sie auf genügend Platz und auf Kinder mit körperlichen Einschränkungen - bieten Sie immer eine sitzende Variante an. Wechseln Sie bewusst zwischen aktivierenden und beruhigenden Pausen je nach Gruppenzustand. Kurz halten und klar beenden, damit der Übergang zurück zum Lernen gelingt.",
+    "etepStufen": [
+      1,
+      2,
+      3
+    ],
+    "eldibGoals": [
+      "V-9",
+      "V-18",
+      "V-27",
+      "KOG-7",
+      "KOG-21",
+      "SOZ-6",
+      "K-10"
+    ],
+    "language": "de",
+    "source": "generated"
   }
 ]
