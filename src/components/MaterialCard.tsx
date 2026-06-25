@@ -2,6 +2,7 @@ import type { Material } from '../types/material'
 import { materialTypeById, themeLabel } from '../data/taxonomy'
 import { ageColors, truncate } from '../lib/ui'
 import { StarRating } from './StarRating'
+import { variantCount } from '../data/variants'
 
 interface Props {
   material: Material
@@ -52,6 +53,14 @@ export function MaterialCard({ material: m, onOpen, onDownload, downloading, rat
         {m.worksheet && (
           <span className="rounded bg-amber-50 px-1.5 py-0.5 text-[11px] font-medium text-amber-700 ring-1 ring-amber-100">
             + Arbeitsblatt
+          </span>
+        )}
+        {variantCount(m.id) > 0 && (
+          <span
+            title="Wählbare Setting-Varianten (z.B. Piraten/Astronauten)"
+            className="rounded bg-indigo-50 px-1.5 py-0.5 text-[11px] font-medium text-indigo-600 ring-1 ring-indigo-100"
+          >
+            🎭 {variantCount(m.id)} Versionen
           </span>
         )}
       </div>

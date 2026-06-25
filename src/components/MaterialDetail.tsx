@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import type { Material } from '../types/material'
 import {
   ageLevels,
@@ -10,6 +11,7 @@ import {
 } from '../data/taxonomy'
 import { ageColors } from '../lib/ui'
 import { StarRating } from './StarRating'
+import { variants, applyVariant } from '../data/variants'
 
 interface Props {
   material: Material | null
@@ -21,12 +23,19 @@ interface Props {
 }
 
 export function MaterialDetail({ material: m, onClose, onDownload, downloading, rating, onRate }: Props) {
+  // `null` = original setting; otherwise index into the variant settings list.
+  const [variantIdx, setVariantIdx] = useState<number | null>(null)
   if (!m) return null
+
+  const vset = variants[m.id]
+  const setting = vset && variantIdx !== null ? vset.settings[variantIdx] : null
+  // The re-skinned copy used for BOTH the on-screen detail and the PDF.
+  const view = setting ? applyVariant(m, setting) : m
 
   const goalsByDomain = eldibDomains
     .map((d) => ({
       domain: d,
-      goals: m.eldibGoals
+      goals: view.eldibGoals
         .map((id) => eldibGoalById.get(id))
         .filter((g) => g && g.domain === d.id),
     }))
@@ -47,7 +56,7 @@ export function MaterialDetail({ material: m, onClose, onDownload, downloading, 
             <div className="mb-1 text-xs font-semibold tracking-wide text-isa-blue-deep uppercase">
               ISA – Material
             </div>
-            <h2 className="text-xl font-bold text-slate-800">{m.title}</h2>
+            <h2 className="text-xl font-bold text-slate-800">{view.title}</h2>
             <p className="mt-1 text-sm text-slate-400">
               {m.author || 'ISA-App'}
               {m.source === 'generated' && ' · KI-Entwurf (vor Einsatz prüfen)'}
@@ -74,7 +83,7 @@ export function MaterialDetail({ material: m, onClose, onDownload, downloading, 
         <div className="space-y-5 p-5">
           {/* Badges */}
           <div className="flex flex-wrap gap-1.5">
-            {m.ageLevels.map((a) => (
+            {view.ageLevels.map((a) => (
               <span
                 key={a}
                 className={`rounded px-2 py-0.5 text-xs font-semibold ring-1 ${ageColors[a]}`}
@@ -83,12 +92,12 @@ export function MaterialDetail({ material: m, onClose, onDownload, downloading, 
                 {a}
               </span>
             ))}
-            {m.type.map((t) => (
+            {view.type.map((t) => (
               <span key={t} className="rounded bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">
                 {materialTypeById.get(t)?.labelDe ?? t}
               </span>
             ))}
-            {m.participants.map((p) => (
+            {view.participants.map((p) => (
               <span key={p.mode} className="rounded bg-slate-100 px-2 py-0.5 text-xs text-slate-500">
                 {participantModeById.get(p.mode)?.labelDe}
                 {p.note ? ` (${p.note})` : ''}
@@ -96,9 +105,52 @@ export function MaterialDetail({ material: m, onClose, onDownload, downloading, 
             ))}
           </div>
 
+          {/* Variante (Einkleidung) selector */}
+          {vset && (
+            <div className="rounded-xl border border-indigo-100 bg-indigo-50/50 p-3">
+              <div className="mb-2 flex items-center gap-2">
+                <span className="text-sm">🎭</span>
+                <span className="text-sm font-semibold text-slate-700">Variante wählen</span>
+                <span className="text-xs text-slate-400">
+                  · Titel, Ablauf &amp; PDF passen sich an
+                </span>
+              </div>
+              <div className="flex flex-wrap gap-1.5">
+                <button
+                  type="button"
+                  onClick={() => setVariantIdx(null)}
+                  className={`rounded-full px-3 py-1 text-xs font-medium ring-1 transition ${
+                    variantIdx === null
+                      ? 'bg-isa-blue-deep text-white ring-isa-blue-deep'
+                      : 'bg-white text-slate-600 ring-slate-200 hover:ring-slate-300'
+                  }`}
+                >
+                  {vset.base}
+                </button>
+                {vset.settings.map((s, i) => (
+                  <button
+                    key={s.label}
+                    type="button"
+                    onClick={() => setVariantIdx(i)}
+                    className={`rounded-full px-3 py-1 text-xs font-medium ring-1 transition ${
+                      variantIdx === i
+                        ? 'bg-isa-blue-deep text-white ring-isa-blue-deep'
+                        : 'bg-white text-slate-600 ring-slate-200 hover:ring-slate-300'
+                    }`}
+                  >
+                    {s.label}
+                  </button>
+                ))}
+              </div>
+              {setting?.description && (
+                <p className="mt-2 text-xs text-slate-500">{setting.description}</p>
+              )}
+            </div>
+          )}
+
           {/* Themes */}
           <div className="flex flex-wrap gap-1.5">
-            {m.themes.map((t) => (
+            {view.themes.map((t) => (
               <span key={t} className="rounded-full bg-isa-blue/60 px-2.5 py-0.5 text-xs text-isa-blue-deep">
                 {themeLabel(t)}
               </span>
@@ -106,13 +158,13 @@ export function MaterialDetail({ material: m, onClose, onDownload, downloading, 
           </div>
 
           {/* Description */}
-          <p className="text-sm leading-relaxed text-slate-700">{m.shortDescription}</p>
+          <p className="text-sm leading-relaxed text-slate-700">{view.shortDescription}</p>
 
           {/* Ablauf */}
           <div>
             <h3 className="mb-2 text-sm font-semibold text-slate-800">Ablauf</h3>
             <div className="space-y-3">
-              {m.ablauf.map((phase, i) => (
+              {view.ablauf.map((phase, i) => (
                 <div key={i} className="rounded-lg border border-slate-100 bg-slate-50/60 p-3">
                   {phase.title && (
                     <div className="mb-1 text-sm font-semibold text-slate-700">{phase.title}</div>
@@ -127,11 +179,11 @@ export function MaterialDetail({ material: m, onClose, onDownload, downloading, 
           <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
             <div className="rounded-lg border border-slate-100 p-3">
               <div className="text-xs font-semibold text-slate-500">Dauer</div>
-              <div className="text-sm text-slate-700">{m.duration || '—'}</div>
+              <div className="text-sm text-slate-700">{view.duration || '—'}</div>
             </div>
             <div className="rounded-lg border border-slate-100 p-3">
               <div className="text-xs font-semibold text-slate-500">Material</div>
-              <div className="text-sm text-slate-700">{m.materialsNeeded || '—'}</div>
+              <div className="text-sm text-slate-700">{view.materialsNeeded || '—'}</div>
             </div>
           </div>
 
@@ -140,7 +192,7 @@ export function MaterialDetail({ material: m, onClose, onDownload, downloading, 
             <h3 className="mb-2 text-sm font-semibold text-slate-800">Zielsetzungen</h3>
             <div className="mb-2 flex flex-wrap gap-1.5">
               {etepStufen
-                .filter((e) => m.etepStufen.includes(e.id))
+                .filter((e) => view.etepStufen.includes(e.id))
                 .map((e) => (
                   <span
                     key={e.id}
@@ -176,21 +228,21 @@ export function MaterialDetail({ material: m, onClose, onDownload, downloading, 
           </div>
 
           {/* Worksheet */}
-          {m.worksheet && (
+          {view.worksheet && (
             <div className="rounded-lg border border-amber-100 bg-amber-50/50 p-3">
               <div className="mb-1 flex items-center gap-2">
                 <span className="rounded bg-amber-100 px-1.5 py-0.5 text-[11px] font-semibold text-amber-700">
                   Arbeitsblatt
                 </span>
                 <span className="text-sm font-semibold text-slate-700">
-                  {m.worksheet.title || m.title}
+                  {view.worksheet.title || view.title}
                 </span>
               </div>
-              {m.worksheet.intro && (
-                <p className="mb-2 text-sm text-slate-600">{m.worksheet.intro}</p>
+              {view.worksheet.intro && (
+                <p className="mb-2 text-sm text-slate-600">{view.worksheet.intro}</p>
               )}
               <ul className="space-y-0.5 text-sm text-slate-600">
-                {m.worksheet.blocks
+                {view.worksheet.blocks
                   .filter((b) => b.kind === 'heading' || b.kind === 'question')
                   .slice(0, 8)
                   .map((b, i) => (
@@ -209,8 +261,8 @@ export function MaterialDetail({ material: m, onClose, onDownload, downloading, 
           )}
 
           {/* Tags + attachments */}
-          {m.tags.length > 0 && (
-            <div className="text-xs text-slate-400">{m.tags.map((t) => `#${t}`).join(' ')}</div>
+          {view.tags.length > 0 && (
+            <div className="text-xs text-slate-400">{view.tags.map((t) => `#${t}`).join(' ')}</div>
           )}
           {m.attachments?.length ? (
             <div>
@@ -229,22 +281,27 @@ export function MaterialDetail({ material: m, onClose, onDownload, downloading, 
         </div>
 
         {/* Footer */}
-        <div className="sticky bottom-0 flex justify-end gap-2 rounded-b-2xl border-t border-slate-100 bg-white p-4">
-          <button
-            type="button"
-            onClick={onClose}
-            className="rounded-lg px-4 py-2 text-sm font-medium text-slate-600 hover:bg-slate-100"
-          >
-            Schließen
-          </button>
-          <button
-            type="button"
-            onClick={() => onDownload(m)}
-            disabled={downloading}
-            className="inline-flex items-center gap-2 rounded-lg bg-isa-blue-deep px-4 py-2 text-sm font-semibold text-white transition hover:bg-[#264a82] disabled:opacity-50"
-          >
-            {downloading ? 'Erstelle PDF…' : 'PDF herunterladen'}
-          </button>
+        <div className="sticky bottom-0 flex items-center justify-between gap-2 rounded-b-2xl border-t border-slate-100 bg-white p-4">
+          <span className="hidden text-xs text-slate-400 sm:block">
+            {setting ? `Variante: ${setting.label}` : vset ? 'Original-Version' : ''}
+          </span>
+          <div className="flex justify-end gap-2">
+            <button
+              type="button"
+              onClick={onClose}
+              className="rounded-lg px-4 py-2 text-sm font-medium text-slate-600 hover:bg-slate-100"
+            >
+              Schließen
+            </button>
+            <button
+              type="button"
+              onClick={() => onDownload(view)}
+              disabled={downloading}
+              className="inline-flex items-center gap-2 rounded-lg bg-isa-blue-deep px-4 py-2 text-sm font-semibold text-white transition hover:bg-[#264a82] disabled:opacity-50"
+            >
+              {downloading ? 'Erstelle PDF…' : 'PDF herunterladen'}
+            </button>
+          </div>
         </div>
       </div>
     </div>

@@ -183,6 +183,7 @@ export default function App() {
       </div>
 
       <MaterialDetail
+        key={selected?.id ?? 'none'}
         material={selected}
         onClose={() => setSelected(null)}
         onDownload={handleDownload}
