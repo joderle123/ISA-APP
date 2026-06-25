@@ -11,6 +11,7 @@ import {
 import { FilterPanel } from './components/FilterPanel'
 import { MaterialCard } from './components/MaterialCard'
 import { MaterialDetail } from './components/MaterialDetail'
+import { loadRatings, saveRatings, type RatingMap } from './lib/ratings'
 import type { Material } from './types/material'
 
 export default function App() {
@@ -18,12 +19,30 @@ export default function App() {
   const [selected, setSelected] = useState<Material | null>(null)
   const [downloadingId, setDownloadingId] = useState<string | null>(null)
   const [showFilters, setShowFilters] = useState(false)
+  const [ratings, setRatings] = useState<RatingMap>(() => loadRatings())
 
   const update = (partial: Partial<FilterState>) =>
     setFilter((f) => ({ ...f, ...partial }))
   const reset = () => setFilter(emptyFilter)
 
-  const results = useMemo(() => applyFilters(allMaterials, filter), [filter])
+  const rate = (id: string, n: number) =>
+    setRatings((prev) => {
+      const next = { ...prev }
+      if (n) next[id] = n
+      else delete next[id]
+      saveRatings(next)
+      return next
+    })
+
+  const results = useMemo(() => {
+    let list = applyFilters(allMaterials, filter)
+    if (filter.minRating > 0)
+      list = list.filter((m) => (ratings[m.id] || 0) >= filter.minRating)
+    if (filter.onlyUnrated) list = list.filter((m) => !ratings[m.id])
+    if (filter.sortByRating)
+      list = [...list].sort((a, b) => (ratings[b.id] || 0) - (ratings[a.id] || 0))
+    return list
+  }, [filter, ratings])
   const allTags = useMemo(() => collectTags(allMaterials), [])
   const allAuthors = useMemo(() => collectAuthors(allMaterials), [])
   const active = activeFilterCount(filter)
@@ -144,6 +163,8 @@ export default function App() {
                   onOpen={setSelected}
                   onDownload={handleDownload}
                   downloading={downloadingId === m.id}
+                  rating={ratings[m.id] || 0}
+                  onRate={(n) => rate(m.id, n)}
                 />
               ))}
             </div>
@@ -156,6 +177,8 @@ export default function App() {
         onClose={() => setSelected(null)}
         onDownload={handleDownload}
         downloading={downloadingId === selected?.id}
+        rating={selected ? ratings[selected.id] || 0 : 0}
+        onRate={(n) => selected && rate(selected.id, n)}
       />
     </div>
   )

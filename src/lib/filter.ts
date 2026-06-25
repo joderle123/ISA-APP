@@ -27,6 +27,12 @@ export interface FilterState {
   sources: MaterialSource[]
   /** Only materials that ship a printable worksheet ("Arbeitsblatt"). */
   hasWorksheet: boolean
+  /** Minimum star rating (0 = any). Applied in App — ratings live in localStorage. */
+  minRating: number
+  /** Only materials the user has not rated yet. */
+  onlyUnrated: boolean
+  /** Sort results best-rated first. */
+  sortByRating: boolean
 }
 
 export const emptyFilter: FilterState = {
@@ -43,6 +49,9 @@ export const emptyFilter: FilterState = {
   languages: [],
   sources: [],
   hasWorksheet: false,
+  minRating: 0,
+  onlyUnrated: false,
+  sortByRating: false,
 }
 
 const some = <T,>(selected: T[], values: T[]) =>
@@ -110,7 +119,9 @@ export function activeFilterCount(f: FilterState): number {
     f.authors.length +
     f.languages.length +
     f.sources.length +
-    (f.hasWorksheet ? 1 : 0)
+    (f.hasWorksheet ? 1 : 0) +
+    (f.minRating > 0 ? 1 : 0) +
+    (f.onlyUnrated ? 1 : 0)
   )
 }
 

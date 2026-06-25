@@ -9,15 +9,18 @@ import {
   themeLabel,
 } from '../data/taxonomy'
 import { ageColors } from '../lib/ui'
+import { StarRating } from './StarRating'
 
 interface Props {
   material: Material | null
   onClose: () => void
   onDownload: (m: Material) => void
   downloading: boolean
+  rating: number
+  onRate: (n: number) => void
 }
 
-export function MaterialDetail({ material: m, onClose, onDownload, downloading }: Props) {
+export function MaterialDetail({ material: m, onClose, onDownload, downloading, rating, onRate }: Props) {
   if (!m) return null
 
   const goalsByDomain = eldibDomains
@@ -49,6 +52,12 @@ export function MaterialDetail({ material: m, onClose, onDownload, downloading }
               {m.author || 'ISA-App'}
               {m.source === 'generated' && ' · KI-Entwurf (vor Einsatz prüfen)'}
             </p>
+            <div className="mt-2 flex items-center gap-2">
+              <StarRating value={rating} onChange={onRate} size={22} />
+              <span className="text-xs text-slate-400">
+                {rating ? `${rating}/5 — meine Bewertung` : 'noch nicht bewertet'}
+              </span>
+            </div>
           </div>
           <button
             type="button"

@@ -2,6 +2,7 @@ import { useState, type ReactNode } from 'react'
 import type { FilterState } from '../lib/filter'
 import { activeFilterCount } from '../lib/filter'
 import type { EldibDomain } from '../types/material'
+import { StarRating } from './StarRating'
 import {
   ageLevels,
   eldibDomains,
@@ -118,6 +119,33 @@ export function FilterPanel({ filter, update, reset, total, shown, allTags, allA
           >
             Nur mit Arbeitsblatt
           </Chip>
+        </Section>
+
+        <Section title="Bewertung">
+          <div className="flex items-center gap-2">
+            <StarRating
+              value={filter.minRating}
+              onChange={(n) => update({ minRating: n })}
+              size={18}
+            />
+            <span className="text-xs text-slate-500">
+              {filter.minRating ? `ab ${filter.minRating} ★` : 'alle'}
+            </span>
+          </div>
+          <div className="mt-2 flex flex-wrap gap-1.5">
+            <Chip
+              active={filter.onlyUnrated}
+              onClick={() => update({ onlyUnrated: !filter.onlyUnrated })}
+            >
+              nur unbewertete
+            </Chip>
+            <Chip
+              active={filter.sortByRating}
+              onClick={() => update({ sortByRating: !filter.sortByRating })}
+            >
+              Beste zuerst
+            </Chip>
+          </div>
         </Section>
 
         {allAuthors.length > 0 && (

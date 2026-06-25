@@ -1,15 +1,18 @@
 import type { Material } from '../types/material'
 import { materialTypeById, themeLabel } from '../data/taxonomy'
 import { ageColors, truncate } from '../lib/ui'
+import { StarRating } from './StarRating'
 
 interface Props {
   material: Material
   onOpen: (m: Material) => void
   onDownload: (m: Material) => void
   downloading: boolean
+  rating: number
+  onRate: (n: number) => void
 }
 
-export function MaterialCard({ material: m, onOpen, onDownload, downloading }: Props) {
+export function MaterialCard({ material: m, onOpen, onDownload, downloading, rating, onRate }: Props) {
   return (
     <article
       onClick={() => onOpen(m)}
@@ -66,6 +69,11 @@ export function MaterialCard({ material: m, onOpen, onDownload, downloading }: P
             {themeLabel(t)}
           </span>
         ))}
+      </div>
+
+      <div className="mb-2 flex items-center gap-2">
+        <StarRating value={rating} onChange={onRate} size={15} />
+        {rating > 0 && <span className="text-[11px] text-slate-400">{rating}/5</span>}
       </div>
 
       <div className="mt-auto flex items-center justify-between border-t border-slate-100 pt-3">
