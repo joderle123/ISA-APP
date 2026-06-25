@@ -2215,5 +2215,360 @@
     ],
     "language": "de",
     "source": "generated"
+  },
+  {
+    "id": "meng-staeerkten-an-erausfuerderungen",
+    "title": "Meng Stäerkten an Erausfuerderungen",
+    "ageLevels": [
+      "C3",
+      "C4"
+    ],
+    "type": [
+      "ganz Stonn"
+    ],
+    "participants": [
+      {
+        "mode": "Individuel",
+        "note": "Selbsteinschätzung"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Stärken-Rückmeldung im Tandem"
+      }
+    ],
+    "themes": [
+      "selbstwahrnehmung",
+      "selbstwertgefuehl",
+      "ressourcen"
+    ],
+    "tags": [
+      "Stärken",
+      "Selbsteinschätzung",
+      "Wachstum",
+      "Selbstwert",
+      "Feedback",
+      "Ziele"
+    ],
+    "shortDescription": "Die Kinder lernen, sowohl ihre Stärken als auch ihre Herausforderungen wertschätzend zu benennen - ohne sich abzuwerten. Über eine Selbsteinschätzung und positive Rückmeldungen aus dem Tandem entsteht ein realistisches, freundliches Selbstbild und der Blick dafür, dass jede Herausforderung ein Wachstumsfeld ist.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Jeder kann etwas",
+        "text": "Sammeln Sie an einem Beispiel (z. B. einer bekannten Figur), welche Stärken und welche Lern-Baustellen sie hat. Machen Sie deutlich: Stärken und Herausforderungen gehören zu jedem Menschen - beides ist okay, beides darf man benennen."
+      },
+      {
+        "title": "Hauptteil – Selbst-Check & Tandem-Rückmeldung",
+        "text": "Jedes Kind hält drei Stärken und eine Herausforderung fest, an der es wachsen möchte. Anschließend nennt der Tandem-Partner dem Kind eine Stärke, die er an ihm schätzt („Ich schätze an dir, dass ...\"). Diese Fremdsicht ergänzt und stärkt das Selbstbild."
+      },
+      {
+        "title": "Abschluss – Aus Herausforderung wird Ziel",
+        "text": "Jedes Kind formuliert aus seiner Herausforderung einen freundlichen, kleinen Vorsatz („Ich übe ...\"). Betonen Sie die Wachstums-Haltung: „Noch nicht\" statt „kann ich nicht\". Würdigen Sie Mut zur Ehrlichkeit."
+      }
+    ],
+    "duration": "ca. 45 Min.",
+    "materialsNeeded": "Arbeitsblatt oder Heft für die Selbsteinschätzung; Stifte",
+    "remark": "Begleiten Sie Kinder mit geringem Selbstwert eng und sorgen Sie dafür, dass Rückmeldungen ausschließlich wertschätzend sind (klare Regeln für das Tandem). Herausforderungen nie bloßstellen. Für C3 mit vorgegebenen Stärken-Wörtern arbeiten.",
+    "etepStufen": [
+      3,
+      4
+    ],
+    "eldibGoals": [
+      "V-6",
+      "V-15",
+      "SOZ-12",
+      "SOZ-23",
+      "KOG-17",
+      "KOG-29",
+      "K-14"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "wien-sinn-ech-meng-ville-saeiten",
+    "title": "Wien sinn ech? Meng ville Säiten",
+    "ageLevels": [
+      "C4",
+      "ES"
+    ],
+    "type": [
+      "ganz Stonn"
+    ],
+    "participants": [
+      {
+        "mode": "Individuel",
+        "note": "persönliche Identitäts-Arbeit"
+      },
+      {
+        "mode": "Klass",
+        "note": "freiwilliger Austausch"
+      }
+    ],
+    "themes": [
+      "identitaet",
+      "selbstwahrnehmung",
+      "beziehungsaufbau"
+    ],
+    "tags": [
+      "Identität",
+      "Selbstbild",
+      "Vielfalt",
+      "Wer bin ich",
+      "Rollen",
+      "Werte"
+    ],
+    "shortDescription": "Jugendliche erkunden, dass ihre Identität aus vielen Seiten besteht: Interessen, Rollen, Herkunft, Werte, Träume. Sie gestalten ein persönliches Identitäts-Bild und erleben in der Gruppe, dass Vielfalt normal ist und Gemeinsamkeiten verbinden. Das stärkt Selbstkenntnis und gegenseitigen Respekt.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Mehr als ein Etikett",
+        "text": "Stoßen Sie an: „Wenn dich jemand nur mit einem Wort beschreibt - wird er dir gerecht?\" Erarbeiten Sie: Jeder Mensch hat viele Seiten. Stellen Sie die Bereiche vor, die zur Identität gehören (z. B. Interessen, Familie/Herkunft, Rollen, Werte, Stärken, Träume)."
+      },
+      {
+        "title": "Hauptteil – Meine vielen Seiten",
+        "text": "Jede/r füllt das Arbeitsblatt zu den eigenen Seiten aus. Betonen Sie, dass nur geteilt wird, was man möchte. Anschließend optional ein „Gemeinsamkeiten-Spiel\": Wer findet jemanden mit einer ähnlichen Seite? So werden Vielfalt UND Verbindung sichtbar."
+      },
+      {
+        "title": "Abschluss – Vielfalt verbindet",
+        "text": "Sammeln Sie: Was war überraschend? Was verbindet uns? Schließen Sie mit dem Gedanken, dass niemand auf ein einziges Etikett reduziert werden sollte - bei sich selbst und bei anderen."
+      }
+    ],
+    "duration": "ca. 50 Min.",
+    "materialsNeeded": "Arbeitsblatt „Meine vielen Seiten\"; Stifte; optional Material für eine kreative Gestaltung (Collage)",
+    "remark": "Sensibel mit Herkunft, Familie und Werten umgehen - alles freiwillig, nichts vorführen. Schützen Sie Jugendliche vor Bloßstellung und achten Sie auf vielfältige Lebensrealitäten. Bei belastenden Themen Gesprächsangebot machen.",
+    "etepStufen": [
+      4,
+      5
+    ],
+    "eldibGoals": [
+      "KOG-15",
+      "KOG-31",
+      "V-14",
+      "SOZ-19",
+      "SOZ-30",
+      "K-13"
+    ],
+    "worksheet": {
+      "title": "Meng ville Säiten",
+      "intro": "Du bist mehr als ein Wort. Fülle aus, was für dich stimmt - nur für dich.",
+      "blocks": [
+        {
+          "kind": "question",
+          "text": "Das interessiert mich / macht mir Freude:",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "Rollen, die ich habe (z. B. Freund/in, Geschwister, Teamkollege):",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "Werte, die mir wichtig sind:",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "Ein Traum oder Ziel von mir:",
+          "lines": 2
+        },
+        {
+          "kind": "instruction",
+          "text": "Markiere die Seite, die viele Menschen an dir gar nicht kennen."
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "laach-yoga-an-quatsch-spiller",
+    "title": "Laach-Yoga an Quatsch-Spiller",
+    "ageLevels": [
+      "C1",
+      "C2"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "ganze Gruppe, viel Platz"
+      }
+    ],
+    "themes": [
+      "spiel-spass",
+      "bewegung",
+      "beziehungsaufbau"
+    ],
+    "tags": [
+      "Lachen",
+      "Spaß",
+      "Auflockerung",
+      "Gemeinschaft",
+      "Bewegung",
+      "gute Laune"
+    ],
+    "shortDescription": "Eine fröhliche Einheit aus Lach-Yoga und Quatsch-Spielen, die gute Laune, Gemeinschaftsgefühl und Lockerheit fördert. Gemeinsames Lachen baut Anspannung ab, verbindet die Gruppe und schafft eine warme Atmosphäre - ideal als Auflockerung oder Start in einen Projekttag.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Lachen darf man üben",
+        "text": "Erklären Sie augenzwinkernd: „Lachen kann man üben - und es steckt an!\" Beginnen Sie mit einer einfachen Lach-Übung: „Hallo\" auf ganz viele lustige Arten sagen, oder reihum ein „Ha - He - Ho\" weitergeben, bis alle kichern."
+      },
+      {
+        "title": "Hauptteil – Quatsch-Spiele",
+        "text": "Spielen Sie 2-3 Quatsch-Spiele, z. B. „Lach-Ansteckung\" (ein Kind lacht, die Nachbarn machen mit), „Grimassen-Weitergabe\" im Kreis, oder „Roboter-Tanz\". Achten Sie darauf, dass mit-, nicht ausgelacht wird - es geht um gemeinsame Freude."
+      },
+      {
+        "title": "Abschluss – Wie fühlt sich Lachen an?",
+        "text": "Kurze Ruhe danach: „Wie fühlt sich dein Körper jetzt an?\" Sammeln Sie Wörter (locker, warm, leicht). Betonen Sie: Gemeinsam lachen tut gut und verbindet uns."
+      }
+    ],
+    "duration": "ca. 25-35 Min.",
+    "materialsNeeded": "Viel Platz; keine besondere Ausstattung; optional fröhliche Musik",
+    "remark": "Klare Regel: Wir lachen miteinander, nicht übereinander. Achten Sie auf Kinder, denen Albernheit unangenehm ist - Mitmachen ist freiwillig, Zuschauen erlaubt. Gut geeignet, um Spannungen in der Gruppe zu lösen.",
+    "etepStufen": [
+      1,
+      2
+    ],
+    "eldibGoals": [
+      "V-9",
+      "SOZ-6",
+      "SOZ-15",
+      "K-7",
+      "KOG-8"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "d-rees-vun-de-fennef-senner",
+    "title": "D'Rees vun de fënnef Sënner",
+    "ageLevels": [
+      "C2",
+      "C3"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "ruhige Atmosphäre"
+      },
+      {
+        "mode": "Individuel",
+        "note": "jedes Kind nimmt für sich wahr"
+      }
+    ],
+    "themes": [
+      "achtsamkeit",
+      "selbstwahrnehmung",
+      "stressbewaeltigung"
+    ],
+    "tags": [
+      "Achtsamkeit",
+      "Sinne",
+      "Wahrnehmung",
+      "Ruhe",
+      "Hier und Jetzt",
+      "Entschleunigung"
+    ],
+    "shortDescription": "Eine achtsame Reise durch die fünf Sinne, die Kinder ins Hier und Jetzt holt und beruhigt. Schritt für Schritt richten sie ihre Aufmerksamkeit auf Sehen, Hören, Riechen, Schmecken und Fühlen - eine einfache, überall einsetzbare Übung gegen Unruhe und zur Stärkung der Selbstwahrnehmung.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Ankommen",
+        "text": "Schaffen Sie Ruhe (ein Signal, bequeme Haltung). Erklären Sie: „Heute gehen wir mit unseren Sinnen auf Reise. Sie sind unsere Anker im Jetzt.\" Ein paar ruhige Atemzüge zum Ankommen."
+      },
+      {
+        "title": "Hauptteil – Die 5-4-3-2-1-Reise",
+        "text": "Führen Sie ruhig durch: 5 Dinge, die ich sehe; 4 Dinge, die ich höre; 3 Dinge, die ich fühle (z. B. Stuhl, Kleidung, Boden); 2 Dinge, die ich rieche; 1 Sache, die ich schmecke (oder gern schmecken würde). Lassen Sie zu jedem Sinn etwas Zeit und Stille."
+      },
+      {
+        "title": "Abschluss – Zurück und nachspüren",
+        "text": "Langsam zurückkommen, strecken. Kurze Runde: „Wie fühlst du dich jetzt?\" Erklären Sie, dass die Kinder diese Reise auch allein nutzen können, wenn sie aufgeregt oder unruhig sind."
+      }
+    ],
+    "duration": "ca. 20-30 Min.",
+    "materialsNeeded": "Ruhiger Raum; optional ein kleiner Snack für den Geschmackssinn; ein Ruhe-Signal",
+    "remark": "Freiwilligkeit beim Augenschließen - ein weicher Blick zum Boden ist eine gute Alternative. Kurz halten und in angenehmer Stimmung beenden. Hervorragend als wiederkehrendes Ritual vor Prüfungen oder nach turbulenten Pausen.",
+    "etepStufen": [
+      2,
+      3
+    ],
+    "eldibGoals": [
+      "V-11",
+      "V-21",
+      "KOG-5",
+      "SOZ-16",
+      "K-15"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "schildkroet-trick-stopp-denk-maach",
+    "title": "Schildkröt-Trick: Stopp – denk – maach",
+    "ageLevels": [
+      "C2",
+      "C3"
+    ],
+    "type": [
+      "ganz Stonn"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Plenum"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Übung in Paaren"
+      }
+    ],
+    "themes": [
+      "impulskontrolle",
+      "selbstwahrnehmung",
+      "konfliktloesung"
+    ],
+    "tags": [
+      "Impulskontrolle",
+      "Innehalten",
+      "Nachdenken",
+      "Selbststeuerung",
+      "Schildkröte",
+      "ruhig bleiben"
+    ],
+    "shortDescription": "Mit dem „Schildkröten-Trick\" lernen die Kinder, in heiklen Momenten kurz innezuhalten, bevor sie handeln: Stopp - in den Panzer ziehen und durchatmen - denken - dann erst machen. Diese einfache Drei-Schritt-Strategie hilft, impulsives Reagieren zu bremsen und überlegtere Entscheidungen zu treffen.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Die kluge Schildkröte",
+        "text": "Erzählen Sie von der Schildkröte, die sich bei Aufregung kurz in ihren Panzer zurückzieht, durchatmet und dann überlegt herauskommt. Übertragen Sie das: „Wenn ich wütend oder aufgeregt bin, kann ich auch kurz in meinen Panzer - das heißt: Stopp, durchatmen, denken.\""
+      },
+      {
+        "title": "Hauptteil – Stopp – denk – maach üben",
+        "text": "Üben Sie die drei Schritte mit Gesten: Stopp (Hand), Panzer (Schultern hoch, durchatmen), Denken (Finger an die Stirn), Machen (Hand öffnet sich). Spielen Sie in Paaren kleine Auslöse-Situationen durch (jemand drängelt, ein Spiel verliert) und wenden Sie den Trick an: Was wäre eine kluge Reaktion nach dem Denken?"
+      },
+      {
+        "title": "Abschluss – Mein Panzer-Moment",
+        "text": "Sammeln Sie, wann der Schildkröten-Trick im Alltag hilft. Jedes Kind nennt eine Situation, in der es ihn ausprobieren will. Hängen Sie die drei Schritte als Erinnerung auf."
+      }
+    ],
+    "duration": "ca. 45 Min.",
+    "materialsNeeded": "Optional ein Schildkröten-Bild/-Kuscheltier; ein kleines Plakat mit den drei Schritten",
+    "remark": "Üben Sie den Trick in ruhigen Momenten ein, damit er im Ernstfall abrufbar ist. Loben Sie das Innehalten ausdrücklich. Für C2 die Gesten stark betonen und Situationen sehr einfach halten. Gut kombinierbar mit Atemübungen.",
+    "etepStufen": [
+      2,
+      3
+    ],
+    "eldibGoals": [
+      "V-8",
+      "V-17",
+      "V-25",
+      "SOZ-13",
+      "KOG-12",
+      "K-9"
+    ],
+    "language": "de",
+    "source": "generated"
   }
 ]
