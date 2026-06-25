@@ -2575,5 +2575,402 @@ export const generated: Material[] = [
     ],
     "language": "de",
     "source": "generated"
+  },
+  {
+    "id": "vum-straeit-zur-leisung-4-schrett",
+    "title": "Vum Sträit zur Léisung: 4 Schrëtt",
+    "ageLevels": [
+      "C3",
+      "C4"
+    ],
+    "type": [
+      "ganz Stonn"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Plenum"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Übung in Paaren"
+      }
+    ],
+    "themes": [
+      "konfliktloesung",
+      "kommunikation",
+      "impulskontrolle"
+    ],
+    "tags": [
+      "Streit schlichten",
+      "Konfliktlösung",
+      "Ich-Botschaft",
+      "Lösung finden",
+      "Versöhnung",
+      "fair streiten"
+    ],
+    "shortDescription": "Die Kinder lernen eine klare Vier-Schritte-Methode, um Streit selbstständig und fair zu lösen: abkühlen, jeder erzählt, Gefühle und Wünsche benennen, gemeinsam eine Lösung finden. Mit einem Mini-Rollenspiel üben sie die Schritte ein und erleben, dass es nach einem Streit einen guten Weg zurück gibt.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Streit gehört dazu",
+        "text": "Normalisieren Sie: Streit passiert überall - wichtig ist, wie man ihn löst. Stellen Sie die vier Schritte vor: 1) Abkühlen (Stopp, durchatmen), 2) Jeder erzählt - der andere hört zu, 3) Gefühle und Wünsche benennen (Ich-Botschaft), 4) Gemeinsam eine Lösung suchen, mit der beide leben können."
+      },
+      {
+        "title": "Hauptteil – Die 4 Schritte üben (Paare)",
+        "text": "In Paaren spielen die Kinder einen harmlosen Streitanlass und gehen die vier Schritte durch. Geben Sie Satzhilfen: „Ich habe mich geärgert, als ...\", „Ich wünsche mir ...\", „Wie können wir das lösen?\" Wechseln Sie die Rollen. Sammeln Sie hilfreiche Lösungen an der Tafel."
+      },
+      {
+        "title": "Abschluss – Unser Streit-Schlichter-Plan",
+        "text": "Halten Sie die vier Schritte als Plakat fest, das künftig als „Streit-Schlichter\" im Raum hängt. Vereinbaren Sie, ihn bei echten Konflikten zu nutzen - bei Bedarf mit Unterstützung eines neutralen Kindes oder der Lehrperson."
+      }
+    ],
+    "duration": "ca. 50 Min.",
+    "materialsNeeded": "Plakat mit den vier Schritten; Karten mit harmlosen Streitanlässen; Satzhilfen sichtbar",
+    "remark": "Mit fiktiven Beispielen arbeiten; reale Konflikte nur behutsam und freiwillig aufgreifen. Der vierte Schritt (gemeinsame Lösung) braucht Übung - geben Sie genügend Zeit und Beispiele. Für C3 stärker mit Satzhilfen führen.",
+    "etepStufen": [
+      3,
+      4
+    ],
+    "eldibGoals": [
+      "SOZ-13",
+      "SOZ-24",
+      "SOZ-35",
+      "K-12",
+      "K-21",
+      "V-18",
+      "KOG-22"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "maei-stress-thermometer-an-d-notbremsen",
+    "title": "Mäi Stress-Thermometer an d'Notbremsen",
+    "ageLevels": [
+      "C4",
+      "ES"
+    ],
+    "type": [
+      "ganz Stonn"
+    ],
+    "participants": [
+      {
+        "mode": "Individuel",
+        "note": "persönliche Selbstbeobachtung"
+      },
+      {
+        "mode": "Klass",
+        "note": "Austausch über Strategien"
+      }
+    ],
+    "themes": [
+      "stressbewaeltigung",
+      "selbstwahrnehmung",
+      "impulskontrolle"
+    ],
+    "tags": [
+      "Stress",
+      "Selbstregulation",
+      "Frühwarnzeichen",
+      "Beruhigung",
+      "Notfallstrategien",
+      "Körpersignale"
+    ],
+    "shortDescription": "Die Jugendlichen lernen, ihren Stresspegel wie an einem Thermometer wahrzunehmen - von „alles ruhig\" bis „kurz vor dem Überkochen\" - und passende „Notbremsen\" einzusetzen, bevor es zu viel wird. Mit dem Arbeitsblatt erkennen sie persönliche Frühwarnzeichen und stellen sich einen eigenen Beruhigungs-Werkzeugkasten zusammen.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Das Stress-Thermometer",
+        "text": "Zeichnen Sie ein Thermometer mit Zonen: grün (ruhig), gelb (angespannt), orange (gestresst), rot (kurz vor dem Überkochen). Besprechen Sie: Je früher ich merke, dass ich steige, desto leichter kann ich gegensteuern."
+      },
+      {
+        "title": "Hauptteil – Frühwarnzeichen & Notbremsen",
+        "text": "Die Jugendlichen halten auf dem Arbeitsblatt ihre Körper-Frühwarnzeichen fest (z. B. Herzklopfen, gereizt sein, Bauchweh) und ordnen sie den Zonen zu. Dann sammeln und testen Sie gemeinsam „Notbremsen\" für die gelbe/orange Zone: bewusst atmen, kurz rausgehen, Bewegung, mit jemandem reden, Gedanken sortieren. Jede/r wählt persönliche Favoriten."
+      },
+      {
+        "title": "Abschluss – Mein Werkzeugkasten",
+        "text": "Jede/r notiert 2-3 persönliche Notbremsen, die wirklich passen. Betonen Sie: Verschiedene Menschen brauchen verschiedene Werkzeuge - und Stress früh zu bemerken ist bereits der halbe Weg."
+      }
+    ],
+    "duration": "ca. 50 Min.",
+    "materialsNeeded": "Arbeitsblatt „Stress-Thermometer\"; Tafel/Flipchart; Stifte",
+    "remark": "Vertraulich arbeiten; niemand muss persönliche Stressauslöser offenlegen. Achten Sie auf Hinweise auf anhaltende Überlastung und bieten Sie Gesprächs-/Beratungsmöglichkeiten an. Betonen Sie, dass Hilfe suchen eine starke Notbremse ist.",
+    "etepStufen": [
+      3,
+      4,
+      5
+    ],
+    "eldibGoals": [
+      "V-7",
+      "V-16",
+      "V-26",
+      "KOG-19",
+      "SOZ-20",
+      "K-16"
+    ],
+    "worksheet": {
+      "title": "Mein Stress-Thermometer",
+      "intro": "Lerne deine Zeichen kennen - dann kannst du früh gegensteuern. Nur für dich.",
+      "blocks": [
+        {
+          "kind": "instruction",
+          "text": "Schreibe zu jeder Zone, woran du sie bei dir merkst."
+        },
+        {
+          "kind": "table",
+          "text": "Meine Zonen",
+          "lines": 4,
+          "items": [
+            "Zone",
+            "Woran ich es merke",
+            "Was mir hilft"
+          ]
+        },
+        {
+          "kind": "scale",
+          "text": "Gerade stehe ich bei:",
+          "items": [
+            "grün",
+            "gelb",
+            "orange",
+            "rot"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "Meine 3 persönlichen Notbremsen"
+        },
+        {
+          "kind": "lines",
+          "lines": 3
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "komplimenter-reen",
+    "title": "Komplimenter-Reen",
+    "ageLevels": [
+      "C2",
+      "C3"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Sitzkreis"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Kleingruppen"
+      }
+    ],
+    "themes": [
+      "selbstwertgefuehl",
+      "beziehungsaufbau",
+      "kommunikation"
+    ],
+    "tags": [
+      "Komplimente",
+      "Wertschätzung",
+      "Selbstwert",
+      "Gemeinschaft",
+      "positives Feedback",
+      "Klassenklima"
+    ],
+    "shortDescription": "In dieser warmen Übung schenken sich die Kinder ehrliche Komplimente - es „regnet\" Wertschätzung. Sie lernen, Gutes an anderen zu sehen und auszusprechen sowie Komplimente anzunehmen. Das stärkt das Selbstwertgefühl jedes Kindes und das Wir-Gefühl der Gruppe.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Was ist ein echtes Kompliment?",
+        "text": "Erarbeiten Sie: Ein gutes Kompliment ist ehrlich, konkret und freundlich - lieber „Du hast mir heute geholfen, das war nett\" als nur „cool\". Üben Sie auch das Annehmen: einfach „Danke\" sagen und es wirken lassen."
+      },
+      {
+        "title": "Hauptteil – Es regnet Komplimente",
+        "text": "Variante A (Kreis): Reihum bekommt jedes Kind ein ehrliches Kompliment vom Nachbarn. Variante B (Kärtchen): Jedes Kind hat ein Blatt auf dem Rücken, die anderen schreiben Komplimente darauf. Sorgen Sie für die Regel: nur echt und freundlich, jeder bekommt etwas."
+      },
+      {
+        "title": "Abschluss – Wie hat sich das angefühlt?",
+        "text": "Kurze Runde: „Wie war es, ein Kompliment zu bekommen? Und eins zu geben?\" Die Kinder dürfen ihr Komplimente-Blatt behalten - als kleiner Schatz für schwierige Tage."
+      }
+    ],
+    "duration": "ca. 30-40 Min.",
+    "materialsNeeded": "Bei Variante B: pro Kind ein Blatt und Klebeband/Klemme; Stifte",
+    "remark": "Stellen Sie unbedingt sicher, dass JEDES Kind Komplimente erhält - steuern Sie aktiv mit. Klare Regeln gegen versteckte Spötteleien. Besonders wertvoll für Kinder mit geringem Selbstwert; behalten Sie diese im Blick.",
+    "etepStufen": [
+      2,
+      3
+    ],
+    "eldibGoals": [
+      "SOZ-7",
+      "SOZ-15",
+      "K-8",
+      "K-17",
+      "V-13"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "maei-kraaftquellen-schatzkaart",
+    "title": "Mäi Kraaftquellen-Schatzkaart",
+    "ageLevels": [
+      "C3",
+      "C4"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Individuel",
+        "note": "persönliche Schatzkarte"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Austausch im Tandem"
+      }
+    ],
+    "themes": [
+      "ressourcen",
+      "selbstwertgefuehl",
+      "resilienz"
+    ],
+    "tags": [
+      "Kraftquellen",
+      "Ressourcen",
+      "Selbstfürsorge",
+      "Schatzkarte",
+      "Wohlbefinden",
+      "Stärken"
+    ],
+    "shortDescription": "Die Kinder erstellen eine persönliche „Schatzkarte\" ihrer Kraftquellen: Menschen, Tätigkeiten, Orte und Gedanken, die ihnen guttun und Energie geben. So lernen sie, bei Belastung bewusst auf ihre eigenen Ressourcen zurückzugreifen - eine wichtige Grundlage für Resilienz und Selbstfürsorge.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Was gibt mir Kraft?",
+        "text": "Stoßen Sie an: „Was tut dir gut, wenn du traurig, müde oder gestresst bist?\" Sammeln Sie Beispiele in vier Kategorien: Menschen, Tätigkeiten, Orte und gute Gedanken. Machen Sie deutlich: Diese Kraftquellen hat jeder - man muss sie nur kennen."
+      },
+      {
+        "title": "Hauptteil – Meine Schatzkarte gestalten",
+        "text": "Jedes Kind gestaltet auf dem Arbeitsblatt seine Kraftquellen-Schatzkarte: eintragen, malen, eine Quelle besonders markieren. Anschließend tauschen sich Tandem-Partner über je eine Kraftquelle aus - das gibt neue Ideen."
+      },
+      {
+        "title": "Abschluss – Karte griffbereit",
+        "text": "Besprechen Sie, wo die Kinder ihre Schatzkarte aufbewahren, damit sie an schlechten Tagen daran denken. Betonen Sie: Bewusst eine Kraftquelle aufzusuchen ist ein kluger Selbstfürsorge-Schritt."
+      }
+    ],
+    "duration": "ca. 45 Min.",
+    "materialsNeeded": "Arbeitsblatt „Schatzkarte\"; Bunt-/Filzstifte",
+    "remark": "Achten Sie auf Kinder, denen wenig Kraftquellen einfallen - helfen Sie behutsam mit Beispielen und beobachten Sie sie weiter. Greifen Sie sensible Inhalte vertraulich auf. Für C3 die vier Kategorien mit Bildimpulsen unterstützen.",
+    "etepStufen": [
+      3,
+      4
+    ],
+    "eldibGoals": [
+      "V-15",
+      "KOG-17",
+      "KOG-29",
+      "SOZ-12",
+      "K-14"
+    ],
+    "worksheet": {
+      "title": "Meng Kraaftquellen-Schatzkaart",
+      "intro": "Was gibt dir Kraft? Trage deine Schätze ein und male sie aus.",
+      "blocks": [
+        {
+          "kind": "question",
+          "text": "Menschen, die mir guttun:",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "Tätigkeiten, die mir Kraft geben:",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "Orte, an denen ich mich wohlfühle:",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "Gute Gedanken / Sätze, die mir helfen:",
+          "lines": 2
+        },
+        {
+          "kind": "instruction",
+          "text": "Male einen Stern an die Kraftquelle, die dir am meisten gibt."
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "frendschaft-rezept",
+    "title": "Frëndschaft-Rezept",
+    "ageLevels": [
+      "C1",
+      "C2"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "gemeinsames Sammeln"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Kleingruppen"
+      }
+    ],
+    "themes": [
+      "beziehungsaufbau",
+      "kooperation",
+      "kommunikation"
+    ],
+    "tags": [
+      "Freundschaft",
+      "Zutaten",
+      "Miteinander",
+      "Teilen",
+      "Hilfe",
+      "Gemeinschaft"
+    ],
+    "shortDescription": "Wie ein Koch sammeln die Kinder die „Zutaten\" für eine gute Freundschaft - Teilen, Zuhören, Helfen, Ehrlichkeit, gemeinsam lachen. Spielerisch erarbeiten sie, was Freundschaft wachsen lässt, und gestalten ein gemeinsames Freundschafts-Rezept für die Klasse.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Was braucht Freundschaft?",
+        "text": "Bringen Sie das Bild vom Kochen ein: „Für eine gute Suppe brauchen wir Zutaten. Was braucht eine gute Freundschaft?\" Sammeln Sie erste Ideen (teilen, zuhören, helfen, ehrlich sein, miteinander lachen, sich vertragen)."
+      },
+      {
+        "title": "Hauptteil – Unser Rezept (Kleingruppen)",
+        "text": "Die Kleingruppen wählen ihre wichtigsten Freundschafts-Zutaten und überlegen je ein Beispiel aus dem Alltag („Teilen heißt: ich leihe meinen Stift\"). Sie gestalten ihr Rezept auf einem „Rezeptkarten\"-Blatt."
+      },
+      {
+        "title": "Abschluss – Das Klassen-Rezept",
+        "text": "Die Gruppen stellen ihre Zutaten vor; gemeinsam entsteht ein großes „Freundschafts-Rezept der Klasse\" als Plakat. Vereinbaren Sie, in der Woche besonders auf eine Zutat zu achten."
+      }
+    ],
+    "duration": "ca. 35-45 Min.",
+    "materialsNeeded": "Rezeptkarten-Vorlagen oder Blätter; Stifte; ein großes Plakat für das Klassen-Rezept",
+    "remark": "Achten Sie darauf, dass keine konkreten Kinder als „gute/schlechte Freunde\" benannt werden - es geht um Zutaten, nicht um Personen. Für C1 mit Bildsymbolen für die Zutaten arbeiten. Gut zum Schuljahresbeginn für ein warmes Klassenklima.",
+    "etepStufen": [
+      1,
+      2
+    ],
+    "eldibGoals": [
+      "SOZ-4",
+      "SOZ-14",
+      "K-7",
+      "K-12",
+      "V-5"
+    ],
+    "language": "de",
+    "source": "generated"
   }
 ]
