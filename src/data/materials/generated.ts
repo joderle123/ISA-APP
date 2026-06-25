@@ -4578,5 +4578,448 @@ export const generated: Material[] = [
     },
     "language": "de",
     "source": "generated"
+  },
+  {
+    "id": "maein-erfolgs-tagebuch",
+    "title": "Mäin Erfolgs-Tagebuch",
+    "ageLevels": [
+      "C4",
+      "ES"
+    ],
+    "type": [
+      "Projet"
+    ],
+    "participants": [
+      {
+        "mode": "Individuel",
+        "note": "tägliche/regelmäßige Einträge über mehrere Wochen"
+      },
+      {
+        "mode": "Klass",
+        "note": "Auftakt und Reflexion"
+      }
+    ],
+    "themes": [
+      "motivation",
+      "selbstwertgefuehl",
+      "resilienz"
+    ],
+    "tags": [
+      "Erfolgstagebuch",
+      "kleine Erfolge",
+      "Selbstwert",
+      "Dankbarkeit",
+      "Motivation",
+      "Selbstreflexion"
+    ],
+    "shortDescription": "Über mehrere Wochen halten die Jugendlichen täglich kleine Erfolge und gute Momente fest - bewusst auch die unscheinbaren. Der Blick auf das Gelungene stärkt Selbstwert, Motivation und Zuversicht und wirkt der Neigung entgegen, nur Misslungenes wahrzunehmen. Das Tagebuch wird zum persönlichen Beweis: Ich schaffe und erlebe mehr Gutes, als ich denke.",
+    "ablauf": [
+      {
+        "title": "Auftakt – Warum Erfolge aufschreiben?",
+        "text": "Erklären Sie: Unser Gehirn merkt sich Negatives oft stärker. Ein Erfolgstagebuch trainiert den Blick auf das Gelungene. Stellen Sie klar, dass auch kleine Dinge zählen (jemandem geholfen, drangeblieben, etwas verstanden). Jede/r gestaltet/erhält ein kleines Tagebuch oder das Arbeitsblatt."
+      },
+      {
+        "title": "Durchführung – Tägliche Einträge",
+        "text": "Über ca. 2-3 Wochen notiert jede/r täglich 1-3 Erfolge oder gute Momente und ein kurzes „Warum war das gut / was sagt das über mich?\". Erinnern Sie kurz und regelmäßig. Die Einträge sind privat."
+      },
+      {
+        "title": "Reflexion – Was zeigt mein Tagebuch?",
+        "text": "Nach der Phase: stiller Rückblick auf die eigenen Einträge. Freiwilliger Austausch: Was ist mir aufgefallen? Hat sich mein Blick verändert? Betonen Sie, dass die Gewohnheit weiterlaufen darf - der „Erfolgs-Muskel\" wächst mit Übung."
+      }
+    ],
+    "duration": "Projekt über ca. 2-3 Wochen: Auftakt ca. 30 Min., tägliche Einträge je 3-5 Min., Reflexion ca. 40 Min.",
+    "materialsNeeded": "Kleines Heft oder Arbeitsblatt „Erfolgs-Tagebuch\" pro Jugendlichem; Stifte",
+    "remark": "Privatsphäre wahren - Einträge nur freiwillig teilen. Begleiten Sie Jugendliche, denen wenig Erfolge einfallen, behutsam mit Beispielen und beobachten Sie sie weiter. Bei anhaltend negativer Selbstsicht Gesprächs-/Beratungsangebote einbeziehen.",
+    "etepStufen": [
+      4,
+      5
+    ],
+    "eldibGoals": [
+      "V-7",
+      "V-16",
+      "KOG-19",
+      "KOG-27",
+      "SOZ-12",
+      "K-16"
+    ],
+    "worksheet": {
+      "title": "Mäin Erfolgs-Tagebuch",
+      "intro": "Halte jeden Tag fest, was gut war - auch das Kleine zählt.",
+      "blocks": [
+        {
+          "kind": "instruction",
+          "text": "Trage täglich 1-3 Erfolge oder gute Momente ein."
+        },
+        {
+          "kind": "table",
+          "text": "Meine Woche",
+          "lines": 7,
+          "items": [
+            "Tag",
+            "Mein Erfolg / guter Moment",
+            "Was sagt das über mich?"
+          ]
+        },
+        {
+          "kind": "question",
+          "text": "Was ist mir nach einer Woche aufgefallen?",
+          "lines": 2
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "eent-zwee-draei-mir-sinn-en-team",
+    "title": "Eent, zwee, dräi – mir sinn en Team",
+    "ageLevels": [
+      "C1",
+      "C2"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "kleine Team-Spiele, viel Platz"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Paare und Kleingruppen"
+      }
+    ],
+    "themes": [
+      "kooperation",
+      "spiel-spass",
+      "kommunikation"
+    ],
+    "tags": [
+      "Teamwork",
+      "Zusammenarbeit",
+      "Spiele",
+      "Absprache",
+      "Vertrauen",
+      "Gemeinschaft"
+    ],
+    "shortDescription": "Eine fröhliche Sammlung einfacher Kooperationsspiele für jüngere Kinder, die nur gemeinsam gelingen: zusammen tragen, aufeinander achten, sich absprechen. Spielerisch erleben die Kinder, dass man als Team mehr schafft, und üben erste Bausteine der Zusammenarbeit - Zuhören, Rücksicht, gemeinsames Ziel.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Gemeinsam geht mehr",
+        "text": "Stimmen Sie mit einem Bild ein: „Eine Ameise allein kann wenig tragen, viele zusammen sehr viel.\" Kündigen Sie Spiele an, die nur als Team klappen. Vereinbaren Sie: aufeinander achten, niemanden auslachen."
+      },
+      {
+        "title": "Hauptteil – Team-Spiele",
+        "text": "Spielen Sie 2-3 einfache Kooperationsspiele, z. B.: zu zweit einen Luftballon ohne Hände transportieren; gemeinsam einen Reifen im Kreis weitergeben, ohne die Hände zu lösen; als Gruppe einen „Knoten\" entwirren. Loben Sie Absprache und Rücksicht."
+      },
+      {
+        "title": "Abschluss – Was hat als Team geholfen?",
+        "text": "Kurze Runde mit einfachen Fragen: „Was war schön am Zusammenspielen? Was hat geholfen?\" Sammeln Sie ein, zwei „Team-Wörter\" (zusammen, helfen, warten). Betonen Sie das gute Gemeinschaftsgefühl."
+      }
+    ],
+    "duration": "ca. 30-40 Min.",
+    "materialsNeeded": "Luftballons, ein Reifen, ggf. weiteres einfaches Spielmaterial; viel Platz",
+    "remark": "Sicherheit und genügend Platz beachten. Teams klein halten und so mischen, dass alle mitkommen. Wettbewerb bewusst kleinhalten - der Spaß am Miteinander steht im Vordergrund. Mitmachen freiwillig, Zuschauen erlaubt.",
+    "etepStufen": [
+      1,
+      2
+    ],
+    "eldibGoals": [
+      "SOZ-4",
+      "SOZ-9",
+      "K-7",
+      "K-11",
+      "V-12"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "sou-sinn-ech-sou-bass-du-eis-villfalt",
+    "title": "Sou sinn ech, sou bass du: eis Villfalt",
+    "ageLevels": [
+      "C3",
+      "C4"
+    ],
+    "type": [
+      "ganz Stonn"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Plenum und Spiel"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Kleingruppen"
+      }
+    ],
+    "themes": [
+      "identitaet",
+      "gerechtigkeit",
+      "beziehungsaufbau"
+    ],
+    "tags": [
+      "Vielfalt",
+      "Respekt",
+      "Gemeinsamkeiten",
+      "Unterschiede",
+      "Toleranz",
+      "Zusammenhalt"
+    ],
+    "shortDescription": "Die Kinder entdecken, was sie verbindet und was sie einzigartig macht: Vielfalt ist normal und bereichernd. Über Bewegungs- und Gesprächsspiele erleben sie Gemeinsamkeiten und Unterschiede wertfrei und erarbeiten, warum Respekt für alle wichtig ist - eine Grundlage für ein faires, offenes Miteinander.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Gleich und doch verschieden",
+        "text": "Spiel „Steh auf, wenn ...\": Sie nennen Eigenschaften/Vorlieben (mag Musik, hat schon mal umgezogen, spricht mehr als eine Sprache). Wer zustimmt, steht auf. Die Kinder sehen: Mal sind wir viele, mal wenige - Gemeinsamkeiten und Unterschiede wechseln ständig."
+      },
+      {
+        "title": "Hauptteil – Vielfalt ist wertvoll",
+        "text": "In Kleingruppen sammeln die Kinder, was an Vielfalt schön ist (verschiedene Ideen, Sprachen, Stärken) und besprechen anhand fairer Beispiele, warum niemand wegen Unterschieden ausgegrenzt werden darf. Erarbeiten Sie den Grundsatz: Verschieden sein ist okay - unfair behandeln nicht."
+      },
+      {
+        "title": "Abschluss – Unser Respekt-Versprechen",
+        "text": "Sammeln Sie im Plenum, wie Respekt im Alltag aussieht. Formulieren Sie ein gemeinsames Respekt-Versprechen für die Klasse. Betonen Sie: Unsere Vielfalt macht die Klasse stark."
+      }
+    ],
+    "duration": "ca. 50 Min.",
+    "materialsNeeded": "Platz für das Aufsteh-Spiel; Plakat für das Respekt-Versprechen; Stifte",
+    "remark": "Aussagen so wählen, dass niemand bloßgestellt oder zur Selbstoffenbarung gedrängt wird (heikle Merkmale vermeiden). Sensibel mit Herkunft, Familie, Sprache umgehen. Greifen Sie reale Ausgrenzung gesondert und geschützt auf. Vielfalt durchgehend positiv rahmen.",
+    "etepStufen": [
+      3,
+      4
+    ],
+    "eldibGoals": [
+      "SOZ-11",
+      "SOZ-19",
+      "SOZ-30",
+      "KOG-15",
+      "K-13",
+      "V-14"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "maei-glecks-glas",
+    "title": "Mäi Glécks-Glas",
+    "ageLevels": [
+      "C2",
+      "C3"
+    ],
+    "type": [
+      "Projet"
+    ],
+    "participants": [
+      {
+        "mode": "Individuel",
+        "note": "eigenes Glücks-Glas über mehrere Wochen"
+      },
+      {
+        "mode": "Klass",
+        "note": "Auftakt und Rückblick"
+      }
+    ],
+    "themes": [
+      "ressourcen",
+      "achtsamkeit",
+      "emotionen"
+    ],
+    "tags": [
+      "Glücksmomente",
+      "Dankbarkeit",
+      "Sammeln",
+      "Wohlbefinden",
+      "positive Erinnerungen",
+      "Achtsamkeit"
+    ],
+    "shortDescription": "Die Kinder sammeln über mehrere Wochen schöne Momente in einem „Glücks-Glas\": Jeden guten Augenblick schreiben oder malen sie auf einen Zettel und legen ihn hinein. So lernen sie, kleine Glücksmomente bewusst wahrzunehmen und festzuhalten - und haben an schlechten Tagen einen Schatz zum Nachlesen.",
+    "ablauf": [
+      {
+        "title": "Auftakt – Glück sammeln",
+        "text": "Sprechen Sie über kleine Glücksmomente (ein Lachen, schönes Wetter, ein nettes Wort). Jedes Kind gestaltet sein eigenes Glücks-Glas (oder ein Klassen-Glas wird angelegt). Erklären Sie: Wir sammeln ab jetzt unsere guten Momente."
+      },
+      {
+        "title": "Durchführung – Zettel ins Glas",
+        "text": "Über mehrere Wochen halten die Kinder Glücksmomente auf kleinen Zetteln fest und legen sie ins Glas - z. B. am Ende des Tages ein Moment. Erinnern Sie regelmäßig daran und lassen Sie das Glas sichtbar wachsen."
+      },
+      {
+        "title": "Rückblick – Unser Glücks-Schatz",
+        "text": "Nach einigen Wochen wird das Glas (freiwillig) geöffnet und einige Momente werden vorgelesen. Sprechen Sie darüber, wie es sich anfühlt, so viele schöne Momente zu sehen. Betonen Sie: Glück steckt oft im Kleinen - man muss es nur bemerken."
+      }
+    ],
+    "duration": "Projekt über mehrere Wochen: Auftakt ca. 30 Min., kurze tägliche Einträge, Rückblick ca. 30 Min.",
+    "materialsNeeded": "Ein Glas/Behälter pro Kind oder ein Klassen-Glas; kleine Zettel; Stifte; Material zum Verzieren",
+    "remark": "Freiwilligkeit beim Vorlesen. Achten Sie auf Kinder, denen wenig Glücksmomente einfallen, und unterstützen Sie behutsam mit Beispielen. Ein Klassen-Glas kann das Gemeinschaftsgefühl zusätzlich stärken.",
+    "etepStufen": [
+      2,
+      3
+    ],
+    "eldibGoals": [
+      "V-15",
+      "KOG-17",
+      "KOG-5",
+      "SOZ-12",
+      "K-14"
+    ],
+    "worksheet": {
+      "title": "Mäi Glécks-Glas",
+      "intro": "Sammle deine schönen Momente. Schreibe oder male sie auf.",
+      "blocks": [
+        {
+          "kind": "instruction",
+          "text": "Schneide die Zettel aus, fülle sie aus und lege sie in dein Glas."
+        },
+        {
+          "kind": "box",
+          "text": "Mein Glücksmoment heute",
+          "lines": 3
+        },
+        {
+          "kind": "box",
+          "text": "Mein Glücksmoment heute",
+          "lines": 3
+        },
+        {
+          "kind": "box",
+          "text": "Mein Glücksmoment heute",
+          "lines": 3
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "de-vertrauens-parcours",
+    "title": "De Vertrauens-Parcours",
+    "ageLevels": [
+      "C3",
+      "C4"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Grupp",
+        "note": "Paare; ein Kind führt, eines vertraut"
+      },
+      {
+        "mode": "Klass",
+        "note": "Aufbau und Auswertung"
+      }
+    ],
+    "themes": [
+      "kooperation",
+      "beziehungsaufbau",
+      "achtsamkeit"
+    ],
+    "tags": [
+      "Vertrauen",
+      "Verantwortung",
+      "Führen und folgen",
+      "Achtsamkeit",
+      "Teamwork",
+      "Rücksicht"
+    ],
+    "shortDescription": "In Paaren führt ein Kind sein Partnerkind behutsam durch einen einfachen Hindernis-Parcours - das geführte Kind hat die Augen geschlossen oder verbunden. Die Kinder erleben, was Vertrauen bedeutet und wie viel Verantwortung im Führen liegt. Eine starke Übung für Achtsamkeit, Rücksicht und Beziehungsaufbau.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Was ist Vertrauen?",
+        "text": "Sprechen Sie kurz: „Wem vertraust du - und warum?\" Erklären Sie die Übung und die wichtigste Regel: Das führende Kind ist voll verantwortlich, geht langsam und sorgt dafür, dass dem anderen nichts passiert. Sicherheit geht vor."
+      },
+      {
+        "title": "Hauptteil – Durch den Parcours",
+        "text": "Bauen Sie einen einfachen, sicheren Parcours auf. Ein Kind schließt die Augen (oder Augenbinde), das andere führt es behutsam - per Hand und ruhiger Stimme - hindurch. Danach Rollenwechsel. Variante: nur mit Worten führen, ohne Berührung."
+      },
+      {
+        "title": "Abschluss – Wie war Vertrauen und Verantwortung?",
+        "text": "Reflexion: „Wie war es, sich führen zu lassen? Wie war es, Verantwortung zu tragen?\" Sammeln Sie, was Vertrauen wachsen lässt (Ruhe, Achtsamkeit, Verlässlichkeit). Übertragen Sie auf Freundschaft und Zusammenarbeit."
+      }
+    ],
+    "duration": "ca. 45 Min.",
+    "materialsNeeded": "Sichere Hindernisse (Stühle, Kissen, Markierungen); optional Augenbinden; viel Platz",
+    "remark": "Sicherheit hat oberste Priorität: langsames Tempo, freie Bahn, ständige Aufsicht. Augen schließen statt Augenbinde anbieten, wenn das angenehmer ist - alles freiwillig. Paare sensibel zusammenstellen (Vertrauen muss möglich sein). Bei Unwohlsein sofort abbrechen.",
+    "etepStufen": [
+      3,
+      4
+    ],
+    "eldibGoals": [
+      "SOZ-9",
+      "SOZ-18",
+      "SOZ-27",
+      "K-11",
+      "V-12",
+      "KOG-14"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "gefiller-wierfel-rullen-an-erzielen",
+    "title": "Gefiller-Wierfel: rullen an erzielen",
+    "ageLevels": [
+      "C1",
+      "C2"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Sitzkreis"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Kleingruppen mit eigenem Würfel"
+      }
+    ],
+    "themes": [
+      "emotionen",
+      "kommunikation",
+      "selbstwahrnehmung"
+    ],
+    "tags": [
+      "Gefühle",
+      "Würfel",
+      "erzählen",
+      "Emotionswortschatz",
+      "Empathie",
+      "Spiel"
+    ],
+    "shortDescription": "Ein großer „Gefühls-Würfel\" zeigt auf jeder Seite ein Gefühl. Die Kinder würfeln und erzählen, wann sie dieses Gefühl zuletzt hatten. Spielerisch lernen sie, Gefühle zu erkennen, zu benennen und davon zu erzählen - und hören, dass andere Ähnliches erleben. Das stärkt Gefühlswortschatz und gegenseitiges Verständnis.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Der Gefühls-Würfel",
+        "text": "Stellen Sie den Würfel vor und benennen Sie die Gefühle auf den Seiten (z. B. froh, traurig, wütend, ängstlich, stolz, müde). Klären Sie: Alle Gefühle sind okay, und jeder kennt sie."
+      },
+      {
+        "title": "Hauptteil – Würfeln und erzählen",
+        "text": "Reihum würfeln die Kinder und erzählen - freiwillig - eine kurze Situation, in der sie dieses Gefühl hatten („Ich war stolz, als ...\"). Ein „Pass\" ist erlaubt. In Kleingruppen mit eigenem Würfel kommen mehr Kinder dran. Achten Sie auf wertschätzendes Zuhören."
+      },
+      {
+        "title": "Abschluss – Wir kennen viele Gefühle",
+        "text": "Kurzer Rückblick: „Welches Gefühl kam oft vor?\" Betonen Sie, dass es schön ist, von Gefühlen zu erzählen und zu merken: Anderen geht es manchmal ähnlich wie mir."
+      }
+    ],
+    "duration": "ca. 30 Min.",
+    "materialsNeeded": "Ein großer Gefühls-Würfel (selbst gebastelt) mit Gesichtern/Wörtern; optional mehrere kleine Würfel für Gruppen",
+    "remark": "Freiwilligkeit beim Erzählen; niemanden drängen. Achten Sie auf belastende Erzählungen und reagieren Sie behutsam, ggf. im Einzelgespräch. Für C1 mit Gesichts-Symbolen statt Wörtern arbeiten. Gut als wiederkehrendes Spiel zur Gefühlsarbeit.",
+    "etepStufen": [
+      1,
+      2
+    ],
+    "eldibGoals": [
+      "V-11",
+      "K-7",
+      "K-15",
+      "SOZ-15",
+      "KOG-4"
+    ],
+    "language": "de",
+    "source": "generated"
   }
 ]
