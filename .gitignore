@@ -25,3 +25,6 @@ dist-ssr
 
 # Persönliche, lokale Claude-Settings
 .claude/settings.local.json
+
+# Zwischendateien der KI-Generierung
+tmp/

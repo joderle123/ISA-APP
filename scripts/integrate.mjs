@@ -7,7 +7,7 @@
 // Assigns stable ids, marks source:'generated', validates themes/ELDiB ids,
 // and drops titles that duplicate the 316 existing materials (or each other).
 
-import { readFileSync, writeFileSync, existsSync } from 'node:fs'
+import { readFileSync, writeFileSync, existsSync, readdirSync, statSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
 import { dirname, join } from 'node:path'
 
@@ -57,14 +57,35 @@ function validEldib(id) {
   return m && Number(m[2]) >= 1 && Number(m[2]) <= ELDIB_MAX[m[1]]
 }
 
-// --- load inputs ---
-const inPath = process.argv[2]
-const append = process.argv.includes('--append')
-if (!inPath) { console.error('usage: integrate.mjs <input.json> [--append]'); process.exit(1) }
+// --- load inputs (one or more JSON files and/or directories) ---
+const argv = process.argv.slice(2)
+const append = argv.includes('--append')
+const inputs = argv.filter((a) => !a.startsWith('--'))
+if (!inputs.length) { console.error('usage: integrate.mjs <input.json|dir> [more…] [--append]'); process.exit(1) }
 
-let raw = JSON.parse(readFileSync(inPath, 'utf8'))
-let incoming = Array.isArray(raw) ? raw : raw.items || raw.materials || []
-incoming = incoming.map((x) => (x && x.material ? x.material : x)).filter(Boolean)
+// Expand any directory to its *.json files. A crashed/limited generation run
+// leaves several batch-*.json behind — pointing at the directory recovers ALL
+// of them in one call, so finished batches are never lost.
+const files = []
+for (const p of inputs) {
+  let st
+  try { st = statSync(p) } catch { console.error(`skip (not found): ${p}`); continue }
+  if (st.isDirectory()) {
+    for (const f of readdirSync(p).sort()) if (f.endsWith('.json')) files.push(join(p, f))
+  } else { files.push(p) }
+}
+
+// One corrupt batch must not sink the rest: skip unparseable files, keep going.
+let incoming = []
+for (const f of files) {
+  let raw
+  try { raw = JSON.parse(readFileSync(f, 'utf8')) }
+  catch (e) { console.error(`skip (bad JSON): ${f} — ${e.message}`); continue }
+  const arr = Array.isArray(raw) ? raw : raw.items || raw.materials || []
+  for (const x of arr) { const m = x && x.material ? x.material : x; if (m) incoming.push(m) }
+}
+if (!incoming.length) { console.error('no materials found in inputs'); process.exit(1) }
+console.error(`Loaded ${incoming.length} material(s) from ${files.length} file(s).`)
 
 // existing titles (dedup reference)
 const existingTitles = new Set()
