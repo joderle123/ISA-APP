@@ -9216,5 +9216,1698 @@ export const generated: Material[] = [
     ],
     "language": "de",
     "source": "generated"
+  },
+  {
+    "id": "gefiller-pantomime-ouni-wierder",
+    "title": "Gefiller-Pantomime: ouni Wierder",
+    "ageLevels": [
+      "C2",
+      "C3"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Sitzkreis"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Kleingruppen"
+      }
+    ],
+    "themes": [
+      "emotionen",
+      "kommunikation",
+      "fremdwahrnehmung"
+    ],
+    "tags": [
+      "Pantomime",
+      "Gefühle",
+      "Körpersprache",
+      "Mimik",
+      "Empathie",
+      "Spiel"
+    ],
+    "shortDescription": "Die Kinder stellen Gefühle ohne Worte dar - nur mit Mimik und Körperhaltung - und die anderen raten. Spielerisch lernen sie, Emotionen an der Körpersprache zu erkennen und auszudrücken, und erweitern ihren Gefühlswortschatz.",
+    "ablauf": [
+      {
+        "title": "Einstieg",
+        "text": "Sammeln Sie Gefühle, die man ohne Worte zeigen kann. Machen Sie ein Beispiel vor (z. B. Überraschung) und lassen Sie raten."
+      },
+      {
+        "title": "Spielen",
+        "text": "Reihum oder in Gruppen zieht ein Kind eine Gefühlskarte und stellt das Gefühl pantomimisch dar; die anderen raten und nennen, woran sie es erkannt haben (hochgezogene Schultern, hängender Kopf ...)."
+      },
+      {
+        "title": "Abschluss",
+        "text": "Kurze Runde: Welche Gefühle waren leicht/schwer zu zeigen? Übertragen Sie: Auch im Alltag verrät die Körpersprache, wie es jemandem geht."
+      }
+    ],
+    "duration": "ca. 25-30 Min.",
+    "materialsNeeded": "Gefühlskarten",
+    "remark": "Wir lachen miteinander, nicht über jemanden. Mitmachen freiwillig; Zuschauen/Raten ist auch eine Rolle.",
+    "etepStufen": [
+      2,
+      3
+    ],
+    "eldibGoals": [
+      "V-11",
+      "K-16",
+      "K-21",
+      "SOZ-25"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "wann-ech-en-deier-wier",
+    "title": "Wann ech en Déier wier",
+    "ageLevels": [
+      "C2",
+      "C3"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Individuel",
+        "note": "eigenes Tier-Selbstbild"
+      },
+      {
+        "mode": "Klass",
+        "note": "Austausch"
+      }
+    ],
+    "themes": [
+      "selbstwahrnehmung",
+      "identitaet",
+      "kreativitaet"
+    ],
+    "tags": [
+      "Selbstbild",
+      "Tiere",
+      "Stärken",
+      "Fantasie",
+      "Selbstwahrnehmung",
+      "Vergleich"
+    ],
+    "shortDescription": "Welches Tier wäre ich - und warum? Die Kinder wählen ein Tier, das zu ihnen passt, und begründen es mit eigenen Eigenschaften und Stärken. So setzen sie sich spielerisch und positiv mit ihrem Selbstbild auseinander.",
+    "ablauf": [
+      {
+        "title": "Einstieg",
+        "text": "Sammeln Sie Tiere und typische Eigenschaften (Löwe = mutig, Eule = klug, Schildkröte = ruhig ...). Es gibt keine besseren oder schlechteren Tiere."
+      },
+      {
+        "title": "Gestalten",
+        "text": "Jedes Kind wählt sein Tier und malt es; dazu notiert/erzählt es, welche Eigenschaft es mit dem Tier teilt. Begleiten Sie behutsam."
+      },
+      {
+        "title": "Abschluss",
+        "text": "Wer mag, stellt sein Tier vor. Betonen Sie die Vielfalt - jede Eigenschaft ist wertvoll."
+      }
+    ],
+    "duration": "ca. 35 Min.",
+    "materialsNeeded": "Papier, Bunt-/Filzstifte; optional Tierbilder als Anregung",
+    "remark": "Keine Wertung der Tiere/Eigenschaften. Bei geringem Selbstwert mit Tandem-Hilfe positive Eigenschaften finden.",
+    "etepStufen": [
+      2,
+      3
+    ],
+    "eldibGoals": [
+      "KOG-15",
+      "K-18",
+      "K-19",
+      "SOZ-19",
+      "V-13"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "stell-reihen-ouni-wierder-ordnen",
+    "title": "Stëll Reihen: ouni Wierder ordnen",
+    "ageLevels": [
+      "C3",
+      "C4"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "ganze Gruppe"
+      }
+    ],
+    "themes": [
+      "kooperation",
+      "kommunikation",
+      "spiel-spass"
+    ],
+    "tags": [
+      "nonverbal",
+      "Kooperation",
+      "Absprache",
+      "Körpersprache",
+      "Teamwork",
+      "Challenge"
+    ],
+    "shortDescription": "Die Klasse stellt sich in eine Reihe - z. B. nach Geburtstag im Jahr - aber ganz ohne Sprechen, nur mit Gesten. Die Kinder erleben, dass Kommunikation und Zusammenarbeit auch ohne Worte gelingen, wenn alle aufeinander achten.",
+    "ablauf": [
+      {
+        "title": "Einstieg",
+        "text": "Erklären Sie die Aufgabe und die einzige Regel: kein Sprechen, keine Lippenbewegungen - nur Gesten/Zeigen. Beispiel-Ordnung: nach Geburtsmonat und -tag."
+      },
+      {
+        "title": "Spielen",
+        "text": "Die Klasse ordnet sich still. Danach Auflösung: Stimmt die Reihe? Wiederholen Sie mit anderen Ordnungen (z. B. nach Schuhgröße, Anfangsbuchstabe des Namens)."
+      },
+      {
+        "title": "Abschluss",
+        "text": "Reflexion: Wie habt ihr euch ohne Worte verständigt? Was war schwierig? Übertragung: Aufeinander achten ist auch Kommunikation."
+      }
+    ],
+    "duration": "ca. 20 Min.",
+    "materialsNeeded": "Platz; keine Ausstattung",
+    "remark": "Auf Rücksicht achten (kein Schubsen). Inklusiv gestalten; Ordnungen wählen, die niemanden bloßstellen.",
+    "etepStufen": [
+      3,
+      4
+    ],
+    "eldibGoals": [
+      "SOZ-18",
+      "SOZ-19",
+      "K-11",
+      "V-12"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "de-staeerke-scheld",
+    "title": "De Stäerke-Schëld",
+    "ageLevels": [
+      "C3",
+      "C4"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Individuel",
+        "note": "eigenes Schild"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Tandem"
+      }
+    ],
+    "themes": [
+      "resilienz",
+      "selbstwertgefuehl",
+      "ressourcen"
+    ],
+    "tags": [
+      "Stärken",
+      "Schutz",
+      "Resilienz",
+      "Selbstwert",
+      "schwere Tage",
+      "Mut"
+    ],
+    "shortDescription": "Die Kinder gestalten einen „Stärke-Schild\", der sie an schwierigen Tagen schützt: ihre Stärken, hilfreiche Sätze und Menschen, die zu ihnen halten. So bekommen sie ein greifbares Resilienz-Werkzeug, auf das sie bei Stress oder Misserfolg zurückgreifen können.",
+    "ablauf": [
+      {
+        "title": "Einstieg",
+        "text": "Sprechen Sie: An manchen Tagen läuft viel schief. Ein „Schild\" aus unseren Stärken kann uns dann schützen. Was gehört auf so ein Schild?"
+      },
+      {
+        "title": "Gestalten",
+        "text": "Jedes Kind füllt die Felder des Schild-Arbeitsblatts: meine Stärken, ein Mutmach-Satz, Menschen die zu mir halten, was mir guttut. Im Tandem ergänzt der Partner eine Stärke."
+      },
+      {
+        "title": "Abschluss",
+        "text": "Besprechen Sie, wo das Schild aufbewahrt wird (Mäppchen, Heft). Betonen Sie: An schweren Tagen das Schild anschauen - es erinnert dich an deine Kraft."
+      }
+    ],
+    "duration": "ca. 40 Min.",
+    "materialsNeeded": "Schild-Arbeitsblatt; Bunt-/Filzstifte",
+    "remark": "Sicherstellen, dass jedes Kind echte Stärken findet (Tandem-Hilfe). Vertraulich; nur wertschätzende Rückmeldungen.",
+    "etepStufen": [
+      3,
+      4
+    ],
+    "eldibGoals": [
+      "V-15",
+      "V-16",
+      "KOG-17",
+      "SOZ-12",
+      "K-18"
+    ],
+    "worksheet": {
+      "title": "Mäi Stäerke-Schëld",
+      "intro": "Dein Schild für schwere Tage. Fülle die Felder.",
+      "blocks": [
+        {
+          "kind": "box",
+          "text": "Mein Schild (gestalte es) – Wappen meiner Stärken",
+          "lines": 6
+        },
+        {
+          "kind": "question",
+          "text": "Meine Stärken:",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "Mein Mutmach-Satz / Menschen, die zu mir halten:",
+          "lines": 2
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "den-1-minutt-kierper-scan",
+    "title": "Den 1-Minutt-Kierper-Scan",
+    "ageLevels": [
+      "C4",
+      "ES"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "kurzes Ritual"
+      },
+      {
+        "mode": "Individuel",
+        "note": "jede/r für sich"
+      }
+    ],
+    "themes": [
+      "achtsamkeit",
+      "stressbewaeltigung",
+      "selbstwahrnehmung"
+    ],
+    "tags": [
+      "Body-Scan",
+      "Achtsamkeit",
+      "Anspannung",
+      "Entspannung",
+      "Selbstwahrnehmung",
+      "Mikro-Pause"
+    ],
+    "shortDescription": "Ein kurzer Body-Scan: In etwa einer Minute wandern die Jugendlichen mit ihrer Aufmerksamkeit von Kopf bis Fuß und spüren, wo sie Anspannung halten. Das schult Körperwahrnehmung und hilft, Stress früh zu bemerken und loszulassen.",
+    "ablauf": [
+      {
+        "title": "Einstieg",
+        "text": "Erklären Sie sachlich: Unser Körper speichert Anspannung (Kiefer, Schultern, Bauch). Wir checken ihn kurz durch. Augen schließen ist freiwillig."
+      },
+      {
+        "title": "Durchführung",
+        "text": "Leiten Sie ruhig: „Spüre deinen Kopf, deinen Kiefer - lass locker. Schultern - sinken lassen. Arme, Bauch, Beine, Füße auf dem Boden.\" Bei Anspannung bewusst ausatmen und lösen."
+      },
+      {
+        "title": "Abschluss",
+        "text": "Kurz nachspüren: Wo war Anspannung? Etablieren Sie den Mini-Scan als Werkzeug vor Prüfungen oder bei Stress."
+      }
+    ],
+    "duration": "ca. 5-8 Min.",
+    "materialsNeeded": "Keine; ruhiger Moment",
+    "remark": "Freiwilligkeit beim Augenschließen; bei belastenden Körpererfahrungen offene Augen/Beobachterrolle anbieten. Kurz und ohne Druck.",
+    "etepStufen": [
+      3,
+      4,
+      5
+    ],
+    "eldibGoals": [
+      "V-21",
+      "V-26",
+      "KOG-5",
+      "SOZ-16"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "straeit-comic-wei-geet-et-weider",
+    "title": "Sträit-Comic: wéi geet et weider?",
+    "ageLevels": [
+      "C3",
+      "C4"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Individuel",
+        "note": "eigener Comic"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Austausch"
+      }
+    ],
+    "themes": [
+      "konfliktloesung",
+      "kreativitaet",
+      "kommunikation"
+    ],
+    "tags": [
+      "Comic",
+      "Streit lösen",
+      "Perspektive",
+      "kreativ",
+      "Lösungen",
+      "Konflikt"
+    ],
+    "shortDescription": "Die Kinder zeichnen einen kurzen Comic zu einem Streit - und vor allem ein gutes Ende: Wie lässt sich der Konflikt fair lösen? Kreatives Gestalten verbindet sich mit Konfliktlösung; die Kinder üben, Lösungswege zu finden und darzustellen.",
+    "ablauf": [
+      {
+        "title": "Einstieg",
+        "text": "Geben Sie einen Streit-Anfang vor (z. B. zwei wollen denselben Ball). Besprechen Sie: Wie könnte es fair weitergehen? Stellen Sie die Comic-Vorlage (3-4 Felder) vor."
+      },
+      {
+        "title": "Gestalten",
+        "text": "Jedes Kind zeichnet den Streit und ein faires Ende (mit Lösungs-Ideen aus dem Unterricht: reden, teilen, abwechseln, Hilfe holen). Einfache Strichmännchen genügen."
+      },
+      {
+        "title": "Abschluss",
+        "text": "Einige Comics werden vorgestellt; sammeln Sie die Lösungs-Ideen. Betonen Sie: Für die meisten Streits gibt es ein gutes Ende - man muss es nur finden."
+      }
+    ],
+    "duration": "ca. 45 Min.",
+    "materialsNeeded": "Comic-Vorlage (3-4 Felder); Stifte",
+    "remark": "Fiktive Beispiele; nicht zeichnen lassen, was reale Mitschüler bloßstellt. Fokus auf die Lösung, nicht auf den Streit. Gut nach den Streitschlichter-Einheiten.",
+    "etepStufen": [
+      3,
+      4
+    ],
+    "eldibGoals": [
+      "SOZ-13",
+      "SOZ-24",
+      "K-12",
+      "KOG-44",
+      "V-18"
+    ],
+    "worksheet": {
+      "title": "Mäi Sträit-Comic",
+      "intro": "Zeichne den Streit – und ein faires Ende.",
+      "blocks": [
+        {
+          "kind": "box",
+          "text": "Feld 1: Worum geht der Streit?",
+          "lines": 4
+        },
+        {
+          "kind": "box",
+          "text": "Feld 2: Es wird schlimmer ...",
+          "lines": 4
+        },
+        {
+          "kind": "box",
+          "text": "Feld 3: Eine gute Idee / Lösung",
+          "lines": 4
+        },
+        {
+          "kind": "box",
+          "text": "Feld 4: Gutes Ende",
+          "lines": 4
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "gemeinsamkeeten-spill-mir-3",
+    "title": "Gemeinsamkeeten-Spill: Mir 3",
+    "ageLevels": [
+      "C2",
+      "C3"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Grupp",
+        "note": "Dreiergruppen"
+      },
+      {
+        "mode": "Klass",
+        "note": "Auswertung"
+      }
+    ],
+    "themes": [
+      "beziehungsaufbau",
+      "kommunikation",
+      "kooperation"
+    ],
+    "tags": [
+      "Gemeinsamkeiten",
+      "Kennenlernen",
+      "Verbindung",
+      "Gespräch",
+      "Gemeinschaft",
+      "Vielfalt"
+    ],
+    "shortDescription": "In Dreiergruppen suchen die Kinder möglichst viele Dinge, die alle drei gemeinsam haben. Sie kommen ins Gespräch, entdecken Verbindendes über Unterschiede hinweg und stärken das Wir-Gefühl - ein schöner Einstieg in eine Gruppe.",
+    "ablauf": [
+      {
+        "title": "Einstieg",
+        "text": "Erklären Sie: Findet in eurer Dreiergruppe so viele Gemeinsamkeiten wie möglich - nicht nur das Offensichtliche (gleiche Schule), sondern auch Vorlieben, Erfahrungen, Wünsche."
+      },
+      {
+        "title": "Spielen",
+        "text": "Die Gruppen sammeln und notieren ihre Gemeinsamkeiten (Ziel z. B. 10). Sie müssen miteinander reden und nachfragen, um sie zu finden."
+      },
+      {
+        "title": "Abschluss",
+        "text": "Jede Gruppe nennt eine überraschende Gemeinsamkeit. Betonen Sie: Auch wer verschieden wirkt, hat oft viel gemeinsam - das verbindet."
+      }
+    ],
+    "duration": "ca. 25-30 Min.",
+    "materialsNeeded": "Papier und Stifte pro Gruppe",
+    "remark": "Gruppen bewusst mischen. Auf respektvolle Fragen achten; persönliche Antworten freiwillig. Gut zum Gruppen-/Schuljahresstart.",
+    "etepStufen": [
+      2,
+      3
+    ],
+    "eldibGoals": [
+      "SOZ-15",
+      "SOZ-31",
+      "K-14",
+      "K-17",
+      "V-12"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "wuttbarometer-baselen",
+    "title": "Wuttbarometer baselen",
+    "ageLevels": [
+      "C2",
+      "C3"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Individuel",
+        "note": "eigenes Barometer"
+      },
+      {
+        "mode": "Klass",
+        "note": "Einführung"
+      }
+    ],
+    "themes": [
+      "emotionen",
+      "impulskontrolle",
+      "selbstwahrnehmung"
+    ],
+    "tags": [
+      "Wut",
+      "Barometer",
+      "Selbstregulation",
+      "Frühwarnzeichen",
+      "Basteln",
+      "Beruhigung"
+    ],
+    "shortDescription": "Die Kinder basteln ein eigenes „Wutbarometer\" mit Zeiger - von ruhig bis kurz vor dem Explodieren. Sie lernen, ihre Wut-Stufen und Frühwarnzeichen zu erkennen und passende Beruhigungs-Strategien zuzuordnen, bevor die Wut überkocht.",
+    "ablauf": [
+      {
+        "title": "Einstieg",
+        "text": "Sprechen Sie: Wut ist okay - wichtig ist, was wir tun. Ein Barometer hilft zu merken, wie wütend wir gerade sind. Stellen Sie die Stufen vor (grün-gelb-orange-rot)."
+      },
+      {
+        "title": "Basteln & Zuordnen",
+        "text": "Jedes Kind bastelt das Barometer (Skala + drehbarer Zeiger). Zu jeder Stufe überlegt es ein Körper-Frühwarnzeichen und eine passende Beruhigung (atmen, weggehen, zählen)."
+      },
+      {
+        "title": "Abschluss",
+        "text": "Die Kinder zeigen ihr Barometer und nennen eine Beruhigungs-Strategie. Vereinbaren Sie: Bei „orange\" früh gegensteuern, bevor es „rot\" wird."
+      }
+    ],
+    "duration": "ca. 45 Min.",
+    "materialsNeeded": "Tonkarton/Papier, Musterklammer für den Zeiger, Stifte",
+    "remark": "Wut nicht moralisieren. Für stark impulsive Kinder die Beruhigungs-Strategien gezielt einüben. Gut kombinierbar mit Atem-/Schildkröten-Übungen.",
+    "etepStufen": [
+      2,
+      3
+    ],
+    "eldibGoals": [
+      "V-16",
+      "V-20",
+      "V-21",
+      "K-16",
+      "SOZ-16"
+    ],
+    "worksheet": {
+      "title": "Mäi Wuttbarometer",
+      "intro": "Lerne deine Wut-Stufen kennen.",
+      "blocks": [
+        {
+          "kind": "table",
+          "text": "Meine Stufen",
+          "lines": 4,
+          "items": [
+            "Stufe",
+            "Woran ich es merke",
+            "Was mir hilft"
+          ]
+        },
+        {
+          "kind": "question",
+          "text": "Meine beste Beruhigung, wenn ich bei 'orange' bin:",
+          "lines": 1
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "komplimenter-box-fir-d-klass",
+    "title": "Komplimenter-Box fir d'Klass",
+    "ageLevels": [
+      "C3",
+      "C4"
+    ],
+    "type": [
+      "Projet"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "fortlaufendes Klassenprojekt"
+      }
+    ],
+    "themes": [
+      "selbstwertgefuehl",
+      "beziehungsaufbau",
+      "kommunikation"
+    ],
+    "tags": [
+      "Komplimente",
+      "Wertschätzung",
+      "Klassenklima",
+      "Box",
+      "Gemeinschaft",
+      "Ritual"
+    ],
+    "shortDescription": "Eine Klassen-Box, in die alle über Wochen ehrliche Komplimente und Dankeschöns füreinander einwerfen. Regelmäßig werden einige vorgelesen. Das Projekt baut ein warmes, wertschätzendes Klassenklima auf und stärkt den Selbstwert jedes Kindes.",
+    "ablauf": [
+      {
+        "title": "Auftakt",
+        "text": "Besprechen Sie, was ein echtes Kompliment ausmacht (ehrlich, konkret, freundlich). Gestalten Sie gemeinsam die Komplimente-Box. Regel: nur freundlich, und mit der Zeit bekommt jeder etwas."
+      },
+      {
+        "title": "Durchführung",
+        "text": "Über Wochen werfen die Kinder Komplimente/Dankeschöns (mit Namen) ein. Einmal pro Woche liest die Lehrperson einige vor. Achten Sie aktiv darauf, dass jedes Kind bedacht wird (ggf. selbst nachhelfen)."
+      },
+      {
+        "title": "Abschluss",
+        "text": "Zum Abschluss bekommt jedes Kind seine gesammelten Komplimente. Reflexion: Wie hat sich das Klima verändert?"
+      }
+    ],
+    "duration": "Projekt über mehrere Wochen; wöchentlich ca. 10 Min.",
+    "materialsNeeded": "Eine gestaltete Box; Zettel; Stifte",
+    "remark": "Aktiv steuern, dass JEDES Kind Komplimente erhält - das ist entscheidend. Anonyme Gemeinheiten konsequent ausschließen. Besonders wertvoll bei angespanntem Klassenklima.",
+    "etepStufen": [
+      3,
+      4
+    ],
+    "eldibGoals": [
+      "SOZ-15",
+      "SOZ-26",
+      "K-17",
+      "K-22",
+      "V-13"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "jo-nee-vlaeicht-meng-entscheedung",
+    "title": "Jo / Nee / Vläicht: meng Entscheedung",
+    "ageLevels": [
+      "C3",
+      "C4"
+    ],
+    "type": [
+      "ganz Stonn"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Bewegungs-Positionierung"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Austausch"
+      }
+    ],
+    "themes": [
+      "grenzen",
+      "selbstwahrnehmung",
+      "kommunikation"
+    ],
+    "tags": [
+      "Entscheidung",
+      "Meinung",
+      "Nein sagen",
+      "Selbstbestimmung",
+      "Position beziehen",
+      "Gruppendruck"
+    ],
+    "shortDescription": "Zu Aussagen positionieren sich die Kinder im Raum bei „Ja\", „Nein\" oder „Vielleicht\" und begründen ihre Wahl. Sie üben, eine eigene Meinung zu bilden und zu vertreten - auch wenn andere anders denken - und merken, dass man seine Position ändern darf, wenn gute Argumente kommen.",
+    "ablauf": [
+      {
+        "title": "Einstieg",
+        "text": "Markieren Sie drei Ecken: Ja / Nein / Vielleicht. Erklären Sie: Ich lese eine Aussage vor, du stellst dich zu deiner Meinung - es gibt kein richtig/falsch."
+      },
+      {
+        "title": "Positionieren & Begründen",
+        "text": "Lesen Sie Aussagen vor (von harmlos bis nachdenklich, z. B. „Man muss alles mitmachen, um dazuzugehören\"). Einige begründen ihre Position. Wer durch ein Argument überzeugt wird, darf wechseln - das ist Stärke, nicht Schwäche."
+      },
+      {
+        "title": "Abschluss",
+        "text": "Reflexion: Wie war es, allein irgendwo zu stehen? Eine eigene Meinung zu vertreten? Übertragen Sie auf Gruppendruck: Ich darf Nein/anders denken."
+      }
+    ],
+    "duration": "ca. 45 Min.",
+    "materialsNeeded": "Drei Positionsschilder (Ja/Nein/Vielleicht); Aussagenliste; Platz",
+    "remark": "Aussagen sorgfältig wählen (nicht bloßstellend, keine heiklen privaten Themen). Respekt für Minderheitspositionen sichern. Stärkt Selbstbehauptung gegen Gruppendruck.",
+    "etepStufen": [
+      3,
+      4
+    ],
+    "eldibGoals": [
+      "V-18",
+      "V-19",
+      "SOZ-21",
+      "K-20",
+      "KOG-58"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "leier-ziler-smart-setzen",
+    "title": "Léier-Ziler SMART setzen",
+    "ageLevels": [
+      "C4",
+      "ES"
+    ],
+    "type": [
+      "ganz Stonn"
+    ],
+    "participants": [
+      {
+        "mode": "Individuel",
+        "note": "persönliches Ziel"
+      },
+      {
+        "mode": "Klass",
+        "note": "Einführung"
+      }
+    ],
+    "themes": [
+      "motivation",
+      "disziplin",
+      "selbstwahrnehmung"
+    ],
+    "tags": [
+      "SMART-Ziele",
+      "Lernziele",
+      "Planung",
+      "Selbstorganisation",
+      "Motivation",
+      "Erfolg"
+    ],
+    "shortDescription": "Die Jugendlichen lernen, Ziele „SMART\" zu formulieren - konkret, messbar, machbar, sinnvoll, mit Zeitpunkt. Statt vager Vorsätze („besser werden\") setzen sie sich klare, erreichbare Lernziele und planen erste Schritte. Das stärkt Motivation und Selbststeuerung.",
+    "ablauf": [
+      {
+        "title": "Einstieg",
+        "text": "Vergleichen Sie ein vages Ziel („Ich will besser in Mathe werden\") mit einem SMART-Ziel („Ich übe 3× pro Woche 15 Min. Bruchrechnen bis zur Arbeit\"). Erklären Sie die SMART-Kriterien einfach."
+      },
+      {
+        "title": "Ziel formulieren",
+        "text": "Jede/r wählt ein echtes Lernziel und formuliert es mit dem Arbeitsblatt SMART. Dann: erster Schritt, mögliche Hindernisse, Belohnung. Tandem-Feedback: Ist das Ziel wirklich machbar?"
+      },
+      {
+        "title": "Abschluss",
+        "text": "Vereinbaren Sie einen Check-in-Termin. Betonen Sie: Klare, machbare Ziele motivieren mehr als große, vage Vorsätze."
+      }
+    ],
+    "duration": "ca. 45 Min.; plus Check-in",
+    "materialsNeeded": "Arbeitsblatt „SMART-Ziel\"; Stifte",
+    "remark": "Ziele klein und selbst beeinflussbar halten. Begleiten Sie Jugendliche mit wenig Erfolgserfahrung eng und feiern Sie Teilschritte.",
+    "etepStufen": [
+      4,
+      5
+    ],
+    "eldibGoals": [
+      "KOG-19",
+      "KOG-27",
+      "V-20",
+      "V-22",
+      "SOZ-12"
+    ],
+    "worksheet": {
+      "title": "Mäi SMART-Ziel",
+      "intro": "Mach aus einem Wunsch ein klares Ziel.",
+      "blocks": [
+        {
+          "kind": "question",
+          "text": "Mein Ziel (konkret & machbar):",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "Woran merke ich, dass ich es erreicht habe?",
+          "lines": 1
+        },
+        {
+          "kind": "question",
+          "text": "Bis wann? Mein erster Schritt:",
+          "lines": 2
+        },
+        {
+          "kind": "scale",
+          "text": "Wie zuversichtlich bin ich?",
+          "items": [
+            "wenig",
+            "mittel",
+            "sehr"
+          ]
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "kooperativ-verstoppch-sardinnen",
+    "title": "Kooperativ Verstoppch: Sardinnen",
+    "ageLevels": [
+      "C1",
+      "C2"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Bewegungsspiel, geeigneter Raum"
+      }
+    ],
+    "themes": [
+      "spiel-spass",
+      "kooperation",
+      "bewegung"
+    ],
+    "tags": [
+      "Versteckspiel",
+      "Kooperation",
+      "Bewegung",
+      "Gemeinschaft",
+      "Spaß",
+      "Zusammen"
+    ],
+    "shortDescription": "Eine umgekehrte Versteckvariante: Ein Kind versteckt sich, alle anderen suchen - und wer es findet, versteckt sich leise mit dazu, bis am Ende alle wie „Sardinen\" zusammengedrängt sind. Ein fröhliches Spiel, das Gemeinschaft und Rücksicht statt Konkurrenz fördert.",
+    "ablauf": [
+      {
+        "title": "Einstieg",
+        "text": "Erklären Sie die Regeln: Ein Kind versteckt sich, alle anderen suchen einzeln. Wer es findet, versteckt sich leise mit dazu - nicht verraten! Klären Sie sichere Bereiche."
+      },
+      {
+        "title": "Spielen",
+        "text": "Spielen Sie mehrere Runden. Das Lustige: Am Ende quetschen sich alle ins selbe Versteck. Wer als Letztes findet, darf das nächste Mal verstecken."
+      },
+      {
+        "title": "Abschluss",
+        "text": "Kurze Runde: Wie war das gemeinsame Verstecken? Betonen Sie das Miteinander - hier gewinnt nicht einer, sondern alle kommen zusammen."
+      }
+    ],
+    "duration": "ca. 25 Min.",
+    "materialsNeeded": "Geeigneter Raum mit Versteckmöglichkeiten; klare Grenzen",
+    "remark": "Sicherheit und Grenzen des Spielbereichs klären. Auf Kinder achten, denen Enge unangenehm ist (freiwillig). Lautstärke/Vorsicht beim Zusammendrängen beachten.",
+    "etepStufen": [
+      1,
+      2
+    ],
+    "eldibGoals": [
+      "SOZ-14",
+      "SOZ-17",
+      "V-12",
+      "K-7"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "steekbreif-ee-frend-virstellen",
+    "title": "Steekbréif: ee Frënd virstellen",
+    "ageLevels": [
+      "C3",
+      "C4"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Grupp",
+        "note": "Paare (Interview)"
+      },
+      {
+        "mode": "Klass",
+        "note": "Vorstellung"
+      }
+    ],
+    "themes": [
+      "fremdwahrnehmung",
+      "kommunikation",
+      "beziehungsaufbau"
+    ],
+    "tags": [
+      "Steckbrief",
+      "Interview",
+      "Kennenlernen",
+      "Zuhören",
+      "Wertschätzung",
+      "Vorstellen"
+    ],
+    "shortDescription": "Die Kinder interviewen sich gegenseitig und erstellen einen „Steckbrief\" über den anderen, den sie dann der Klasse vorstellen. Sie üben Fragen stellen, genaues Zuhören und das wertschätzende Präsentieren einer anderen Person.",
+    "ablauf": [
+      {
+        "title": "Einstieg",
+        "text": "Stellen Sie den Steckbrief vor (Name, Hobbys, Lieblings-…, eine Stärke, ein Wunsch). Sammeln Sie gute Interviewfragen."
+      },
+      {
+        "title": "Interview",
+        "text": "In Paaren interviewt A das Kind B und füllt B's Steckbrief aus (nur was B teilen möchte). Dann Rollenwechsel. Genaues Zuhören und Nachfragen sind wichtig."
+      },
+      {
+        "title": "Vorstellung",
+        "text": "Jedes Kind stellt seinen Partner anhand des Steckbriefs kurz und wertschätzend vor. Die Klasse lernt sich besser kennen."
+      }
+    ],
+    "duration": "ca. 45 Min.",
+    "materialsNeeded": "Steckbrief-Vorlage; Stifte",
+    "remark": "Antworten freiwillig; keine heiklen Fragen. Auf wertschätzendes Vorstellen achten (kein Bloßstellen). Gut zum Kennenlernen.",
+    "etepStufen": [
+      3,
+      4
+    ],
+    "eldibGoals": [
+      "K-14",
+      "K-17",
+      "K-20",
+      "SOZ-25",
+      "V-13"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "maei-roue-plaz-eng-fantasiereis",
+    "title": "Mäi roue Plaz: eng Fantasiereis",
+    "ageLevels": [
+      "C2",
+      "C3"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "ruhige Atmosphäre, im Sitzen/Liegen"
+      }
+    ],
+    "themes": [
+      "stressbewaeltigung",
+      "achtsamkeit",
+      "emotionen"
+    ],
+    "tags": [
+      "Fantasiereise",
+      "Entspannung",
+      "Ruheort",
+      "Imagination",
+      "Beruhigung",
+      "innerer Ort"
+    ],
+    "shortDescription": "In einer geführten Fantasiereise stellen sich die Kinder einen ganz persönlichen Ruheort vor, an dem sie sich sicher und wohl fühlen. Sie lernen, diesen inneren Ort in Gedanken aufzusuchen, um sich bei Aufregung oder Stress selbst zu beruhigen.",
+    "ablauf": [
+      {
+        "title": "Einstieg",
+        "text": "Schaffen Sie Ruhe (bequeme Haltung, gedämpftes Licht). Erklären Sie: Wir reisen gleich in Gedanken an einen schönen, ruhigen Ort - jeder zu seinem eigenen."
+      },
+      {
+        "title": "Reise",
+        "text": "Führen Sie ruhig und langsam: „Stell dir einen Ort vor, an dem du dich ganz wohl fühlst … Was siehst du? Was hörst du? Wie fühlt es sich an?\" Lassen Sie Stille. Dann langsam zurückkommen."
+      },
+      {
+        "title": "Abschluss",
+        "text": "Wer mag, erzählt von seinem Ort oder malt ihn. Betonen Sie: Diesen Ruheort kannst du jederzeit in Gedanken besuchen, wenn du dich beruhigen möchtest."
+      }
+    ],
+    "duration": "ca. 20-30 Min.",
+    "materialsNeeded": "Ruhiger Raum; optional leise Musik; Papier/Stifte zum Nachmalen",
+    "remark": "Freiwilligkeit beim Augenschließen. Bei Kindern mit traumatischen Erfahrungen können Fantasiereisen belasten - Alternative (offene Augen, neutraler Fokus) und Achtsamkeit anbieten; nicht erzwingen.",
+    "etepStufen": [
+      2,
+      3
+    ],
+    "eldibGoals": [
+      "V-11",
+      "V-21",
+      "KOG-5",
+      "K-16"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "maei-kulturkoffer-wou-ech-hierkommen",
+    "title": "Mäi Kulturkoffer: wou ech hierkommen",
+    "ageLevels": [
+      "C4",
+      "ES"
+    ],
+    "type": [
+      "ganz Stonn"
+    ],
+    "participants": [
+      {
+        "mode": "Individuel",
+        "note": "persönliche Arbeit"
+      },
+      {
+        "mode": "Klass",
+        "note": "freiwilliger Austausch"
+      }
+    ],
+    "themes": [
+      "identitaet",
+      "beziehungsaufbau",
+      "gerechtigkeit"
+    ],
+    "tags": [
+      "Kultur",
+      "Herkunft",
+      "Identität",
+      "Vielfalt",
+      "Respekt",
+      "Traditionen"
+    ],
+    "shortDescription": "Jede/r packt einen symbolischen „Kulturkoffer\": Dinge, Traditionen, Sprachen, Lieblingsessen oder Bräuche, die zur eigenen Herkunft und Familie gehören. Die Jugendlichen würdigen ihre eigene Identität und entdecken die Vielfalt der Gruppe als Bereicherung.",
+    "ablauf": [
+      {
+        "title": "Einstieg",
+        "text": "Erklären Sie wertschätzend: Jeder bringt etwas mit - Sprachen, Essen, Feste, Geschichten. Heute packen wir einen Koffer mit dem, was zu uns gehört. Nur, was man teilen möchte."
+      },
+      {
+        "title": "Koffer füllen",
+        "text": "Jede/r notiert/zeichnet auf dem Koffer-Arbeitsblatt einige „Mitbringsel\" (z. B. eine Sprache, ein Gericht, ein Fest, eine Familientradition, ein Lieblingsort)."
+      },
+      {
+        "title": "Abschluss",
+        "text": "Freiwilliger Austausch über ein Mitbringsel. Sammeln Sie Gemeinsamkeiten und Vielfalt. Betonen Sie: Unsere Verschiedenheit macht die Gruppe reich - alle gehören dazu."
+      }
+    ],
+    "duration": "ca. 50 Min.",
+    "materialsNeeded": "Koffer-Arbeitsblatt; Stifte; optional Material für eine Collage",
+    "remark": "Sehr sensibel: Herkunft/Familie freiwillig, nichts vorführen, keine Stereotype. Schützen Sie vor Bloßstellung und achten Sie auf unterschiedliche, auch belastete Lebensgeschichten (Flucht). Vielfalt durchgehend positiv rahmen.",
+    "etepStufen": [
+      4,
+      5
+    ],
+    "eldibGoals": [
+      "KOG-15",
+      "SOZ-31",
+      "SOZ-33",
+      "K-13",
+      "V-14"
+    ],
+    "worksheet": {
+      "title": "Mäi Kulturkoffer",
+      "intro": "Was gehört zu dir und deiner Familie? Packe deinen Koffer – nur was du magst.",
+      "blocks": [
+        {
+          "kind": "box",
+          "text": "Mein Kulturkoffer (zeichne, was hineinkommt)",
+          "lines": 7
+        },
+        {
+          "kind": "question",
+          "text": "Ein Mitbringsel, das mir besonders wichtig ist – und warum:",
+          "lines": 2
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "spigeltanz-maach-no",
+    "title": "Spigeltanz: maach no",
+    "ageLevels": [
+      "C1",
+      "C2"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Grupp",
+        "note": "Paare"
+      },
+      {
+        "mode": "Klass",
+        "note": "Einstieg"
+      }
+    ],
+    "themes": [
+      "bewegung",
+      "kooperation",
+      "achtsamkeit"
+    ],
+    "tags": [
+      "Spiegeln",
+      "Bewegung",
+      "Aufmerksamkeit",
+      "Paar",
+      "Koordination",
+      "Zusammenspiel"
+    ],
+    "shortDescription": "Zwei Kinder stehen sich gegenüber; eines bewegt sich langsam, das andere spiegelt jede Bewegung wie ein Spiegelbild. Die Übung schult Aufmerksamkeit, Feinabstimmung und das achtsame Aufeinander-Eingehen - und macht viel Freude.",
+    "ablauf": [
+      {
+        "title": "Einstieg",
+        "text": "Machen Sie es vor: Sie bewegen sich langsam, ein Kind spiegelt. Regel: ganz langsam führen, damit der andere folgen kann; kein Austricksen."
+      },
+      {
+        "title": "Spielen",
+        "text": "In Paaren spiegelt ein Kind die langsamen Bewegungen des anderen (Arme, Gesicht, Schritte). Nach einer Weile Rollenwechsel. Variante mit ruhiger Musik."
+      },
+      {
+        "title": "Abschluss",
+        "text": "Kurze Runde: Wie war Führen, wie Folgen? Was hat geholfen? Betonen Sie das achtsame Aufeinander-Achten."
+      }
+    ],
+    "duration": "ca. 20-25 Min.",
+    "materialsNeeded": "Platz; optional ruhige Musik",
+    "remark": "Langsamkeit betonen (Erfolg für beide). Paare sensibel bilden. Mitmachen freiwillig.",
+    "etepStufen": [
+      1,
+      2
+    ],
+    "eldibGoals": [
+      "SOZ-17",
+      "SOZ-20",
+      "V-12",
+      "KOG-5"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "wat-ass-fair-dilemma-kaarten",
+    "title": "Wat ass fair? Dilemma-Kaarten",
+    "ageLevels": [
+      "C3",
+      "C4"
+    ],
+    "type": [
+      "ganz Stonn"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Plenum"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Kleingruppen"
+      }
+    ],
+    "themes": [
+      "gerechtigkeit",
+      "kommunikation",
+      "kooperation"
+    ],
+    "tags": [
+      "Fairness",
+      "Dilemma",
+      "Diskussion",
+      "Perspektive",
+      "Werte",
+      "Argumente"
+    ],
+    "shortDescription": "Anhand kleiner Dilemma-Geschichten („Was wäre fair?\") diskutieren die Kinder knifflige Alltagssituationen, in denen es kein einfaches Richtig gibt. Sie üben, Argumente abzuwägen, verschiedene Perspektiven zu hören und gemeinsam eine faire Lösung zu suchen.",
+    "ablauf": [
+      {
+        "title": "Einstieg",
+        "text": "Lesen Sie ein kurzes Dilemma vor (z. B. „Einer hat alle Stifte vergessen - teilt ihr, obwohl er nie teilt?\"). Klären Sie: Es gibt nicht die eine richtige Antwort - es geht ums Abwägen."
+      },
+      {
+        "title": "Diskutieren",
+        "text": "In Kleingruppen besprechen die Kinder Dilemma-Karten: Was wäre fair? Welche Gründe gibt es dafür und dagegen? Sie einigen sich (oder halten verschiedene Meinungen fest)."
+      },
+      {
+        "title": "Abschluss",
+        "text": "Die Gruppen stellen ihre Überlegungen vor. Betonen Sie: Fair sein heißt oft, gut nachzudenken und verschiedene Sichten zu berücksichtigen."
+      }
+    ],
+    "duration": "ca. 50 Min.",
+    "materialsNeeded": "Dilemma-Karten (altersgerecht); Tafel/Flipchart",
+    "remark": "Offene Diskussionskultur sichern - verschiedene Meinungen sind erlaubt. Keine realen Klassenkonflikte als Dilemma vorführen. Fördert Argumentieren und Perspektivübernahme.",
+    "etepStufen": [
+      3,
+      4
+    ],
+    "eldibGoals": [
+      "SOZ-34",
+      "SOZ-36",
+      "K-20",
+      "KOG-58",
+      "V-17"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "schrott-roboter-baselen",
+    "title": "Schrott-Roboter baselen",
+    "ageLevels": [
+      "C2",
+      "C3"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Grupp",
+        "note": "Kleingruppen"
+      },
+      {
+        "mode": "Individuel",
+        "note": "möglich"
+      }
+    ],
+    "themes": [
+      "kreativitaet",
+      "kooperation",
+      "ressourcen"
+    ],
+    "tags": [
+      "Basteln",
+      "Upcycling",
+      "Kreativität",
+      "Fantasie",
+      "Teamwork",
+      "Wiederverwertung"
+    ],
+    "shortDescription": "Aus Verpackungsmüll und Alltagsmaterial bauen die Kinder fantasievolle Roboter (oder Wesen). Die offene Bastelaufgabe fördert Kreativität, Problemlösen und - in Gruppen - Zusammenarbeit, und zeigt nebenbei, dass aus „Wertlosem\" Neues entstehen kann.",
+    "ablauf": [
+      {
+        "title": "Einstieg",
+        "text": "Zeigen Sie das gesammelte Material (Kartons, Deckel, Rollen ...). Aufgabe: Baut daraus einen Roboter/ein Wesen - es gibt kein richtig/falsch, eure Fantasie zählt."
+      },
+      {
+        "title": "Bauen",
+        "text": "Die Kinder planen kurz und bauen. In Gruppen sprechen sie sich ab (wer macht was). Ermutigen Sie zu eigenen Ideen und zum Ausprobieren; Fehlversuche gehören dazu."
+      },
+      {
+        "title": "Abschluss",
+        "text": "Jede Gruppe stellt ihren Roboter vor (Name, was er kann). Würdigen Sie Kreativität und Zusammenarbeit. Optional: kurz über Wiederverwertung sprechen."
+      }
+    ],
+    "duration": "ca. 50-60 Min.",
+    "materialsNeeded": "Sauberer Verpackungsmüll (Kartons, Rollen, Deckel); Kleber, Tape, Schere; optional Farben",
+    "remark": "Sauberkeit/Hygiene des Materials und Sicherheit (Schere) beachten. Material vorher gemeinsam sammeln. Ergebnis nicht bewerten - Kreativität und Prozess zählen.",
+    "etepStufen": [
+      2,
+      3
+    ],
+    "eldibGoals": [
+      "KOG-8",
+      "KOG-26",
+      "SOZ-18",
+      "V-13",
+      "K-11"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "erscht-denken-dann-aentweren",
+    "title": "Erscht denken, dann äntweren",
+    "ageLevels": [
+      "C3",
+      "C4"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Quiz im Plenum"
+      }
+    ],
+    "themes": [
+      "impulskontrolle",
+      "selbstwahrnehmung",
+      "spiel-spass"
+    ],
+    "tags": [
+      "Impulskontrolle",
+      "Innehalten",
+      "Nachdenken",
+      "Konzentration",
+      "Quiz",
+      "Selbststeuerung"
+    ],
+    "shortDescription": "In einem Quiz mit „Denk-Stopp\" üben die Kinder, nicht sofort herauszuplatzen, sondern erst zu überlegen und auf das Signal zu warten. Sie trainieren spielerisch, einen Impuls zu bremsen und überlegter zu reagieren - im Spiel wie im Alltag.",
+    "ablauf": [
+      {
+        "title": "Einstieg",
+        "text": "Erklären Sie die Regel: Ich stelle eine Frage, dann kommt eine kurze Denkzeit (z. B. bis 5 zählen, Hände auf den Tisch). Erst beim Signal darf geantwortet werden - wer vorher ruft, gibt die Antwort weiter."
+      },
+      {
+        "title": "Spielen",
+        "text": "Stellen Sie einfache Fragen/Rätsel mit Denk-Stopp. Loben Sie das Warten und Überlegen, nicht nur die schnellste Antwort. Variante: erst mit Banknachbar flüstern, dann antworten."
+      },
+      {
+        "title": "Abschluss",
+        "text": "Übertragen Sie: Auch im Streit oder bei Aufregung hilft ein kurzer Denk-Stopp, bevor wir reagieren. Vereinbaren Sie das „erst denken, dann …\" als Bild."
+      }
+    ],
+    "duration": "ca. 25 Min.",
+    "materialsNeeded": "Ein paar einfache Fragen/Rätsel; optional ein Signal (Glocke)",
+    "remark": "Das Warten würdigen, nicht das Tempo. Für sehr impulsive Kinder kurze Denkzeiten und viel Lob. Gut kombinierbar mit Ampel-/Schildkröten-Übungen.",
+    "etepStufen": [
+      3,
+      4
+    ],
+    "eldibGoals": [
+      "V-10",
+      "V-20",
+      "KOG-2",
+      "SOZ-14"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "d-mauer-vun-der-klass-zesummenhalen",
+    "title": "D'Mauer vun der Klass: zesummenhalen",
+    "ageLevels": [
+      "C2",
+      "C3"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "gemeinsames Plakat"
+      },
+      {
+        "mode": "Individuel",
+        "note": "eigener Stein"
+      }
+    ],
+    "themes": [
+      "mobbing",
+      "beziehungsaufbau",
+      "kooperation"
+    ],
+    "tags": [
+      "Zusammenhalt",
+      "Gemeinschaft",
+      "Mauer",
+      "Unterstützung",
+      "Klassenklima",
+      "füreinander"
+    ],
+    "shortDescription": "Die Klasse baut eine symbolische „Mauer des Zusammenhalts\": Jedes Kind gestaltet einen Stein mit einem Beitrag, wie es zum guten Miteinander beiträgt. Zusammengesetzt zeigt die Mauer, dass die Gemeinschaft stark ist, wenn alle füreinander da sind - ein Zeichen gegen Ausgrenzung.",
+    "ablauf": [
+      {
+        "title": "Einstieg",
+        "text": "Sprechen Sie: Eine Mauer hält, weil jeder Stein zählt - genau wie unsere Klasse. Was trägst du zum guten Miteinander bei (helfen, dazuholen, trösten, fair sein)?"
+      },
+      {
+        "title": "Steine gestalten",
+        "text": "Jedes Kind beschriftet/bemalt seinen „Stein\" mit seinem Beitrag. Die Steine werden gemeinsam zu einer Mauer an der Wand zusammengesetzt."
+      },
+      {
+        "title": "Abschluss",
+        "text": "Betrachten Sie die fertige Mauer: Jeder Stein/jeder von uns ist wichtig. Vereinbaren Sie, in der Woche besonders auf den eigenen Beitrag zu achten."
+      }
+    ],
+    "duration": "ca. 40 Min.",
+    "materialsNeeded": "„Stein\"-Kärtchen; Stifte; Platz an der Wand",
+    "remark": "Sicherstellen, dass jeder Stein gewürdigt wird. Positiv ausrichten (Beitrag, nicht Verbote). Gut als Anti-Mobbing-Symbol, das sichtbar im Raum bleibt.",
+    "etepStufen": [
+      2,
+      3
+    ],
+    "eldibGoals": [
+      "SOZ-18",
+      "SOZ-26",
+      "SOZ-30",
+      "K-22",
+      "V-13"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "maei-mutmach-kescht",
+    "title": "Mäi Mutmach-Këscht",
+    "ageLevels": [
+      "C2",
+      "C3"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Individuel",
+        "note": "eigene Box"
+      },
+      {
+        "mode": "Klass",
+        "note": "Einführung"
+      }
+    ],
+    "themes": [
+      "ressourcen",
+      "selbstwertgefuehl",
+      "resilienz"
+    ],
+    "tags": [
+      "Mutmach-Box",
+      "Kraftquellen",
+      "Erinnerungen",
+      "Selbstfürsorge",
+      "Trost",
+      "Schatz"
+    ],
+    "shortDescription": "Die Kinder gestalten eine kleine „Mutmach-Box\" und füllen sie mit Dingen, die ihnen guttun und Mut machen: ein Mutmach-Satz, eine schöne Erinnerung, ein Foto, ein kleiner Glücksbringer. An schlechten Tagen können sie ihre Box öffnen und Kraft tanken.",
+    "ablauf": [
+      {
+        "title": "Einstieg",
+        "text": "Sprechen Sie: An manchen Tagen sind wir traurig oder mutlos. Eine Mutmach-Box hilft dann - sie ist voll mit Dingen, die guttun. Sammeln Sie Ideen, was hineinpasst."
+      },
+      {
+        "title": "Gestalten & Füllen",
+        "text": "Jedes Kind gestaltet seine Box (z. B. eine kleine Schachtel) und füllt/notiert erste „Mutmach-Schätze\" (Satz, Erinnerung, Bild, etwas Schönes). Die Box darf weiter gefüllt werden."
+      },
+      {
+        "title": "Abschluss",
+        "text": "Besprechen Sie, wann man die Box öffnet. Betonen Sie: Du selbst kannst dir Mut machen - und für große Sorgen sind Erwachsene da."
+      }
+    ],
+    "duration": "ca. 40 Min.",
+    "materialsNeeded": "Kleine Schachteln oder Umschläge; Stifte, Papier; Bastelmaterial",
+    "remark": "Behutsam begleiten; bei Kindern, denen wenig einfällt, mit Beispielen helfen. Bei Hinweisen auf ernste Belastung Gespräch/Beratung anbieten.",
+    "etepStufen": [
+      2,
+      3
+    ],
+    "eldibGoals": [
+      "V-15",
+      "KOG-17",
+      "SOZ-12",
+      "K-16"
+    ],
+    "worksheet": {
+      "title": "Meng Mutmach-Këscht",
+      "intro": "Was macht dir Mut? Plane deine Box.",
+      "blocks": [
+        {
+          "kind": "question",
+          "text": "Mein Mutmach-Satz:",
+          "lines": 1
+        },
+        {
+          "kind": "question",
+          "text": "Eine schöne Erinnerung, die in die Box kommt:",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "Drei Dinge, die mir guttun:",
+          "lines": 2
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "bildschirmfraei-meng-aktiviteiten-ouni-screen",
+    "title": "Bildschirmfräi: meng Aktivitéiten ouni Screen",
+    "ageLevels": [
+      "C3",
+      "C4"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Individuel",
+        "note": "persönliche Ideenliste"
+      },
+      {
+        "mode": "Klass",
+        "note": "Ideen sammeln"
+      }
+    ],
+    "themes": [
+      "medien",
+      "stressbewaeltigung",
+      "ressourcen"
+    ],
+    "tags": [
+      "Bildschirmzeit",
+      "Balance",
+      "Hobbys",
+      "Freizeit",
+      "Medien",
+      "Alternativen"
+    ],
+    "shortDescription": "Die Kinder sammeln Dinge, die ihnen ohne Bildschirm Freude machen, und planen bewusst bildschirmfreie Aktivitäten. So erleben sie, dass es viele schöne Alternativen zum Screen gibt, und stärken eine gesunde Medien-Balance.",
+    "ablauf": [
+      {
+        "title": "Einstieg",
+        "text": "Sprechen Sie wertfrei: Bildschirme machen Spaß - aber zu viel tut oft nicht gut. Was macht euch sonst noch Freude? Sammeln Sie viele Ideen an der Tafel."
+      },
+      {
+        "title": "Meine Ideen",
+        "text": "Jedes Kind erstellt seine persönliche Liste bildschirmfreier Aktivitäten (drinnen, draußen, allein, mit anderen) und wählt eine aus, die es diese Woche ausprobieren will."
+      },
+      {
+        "title": "Abschluss",
+        "text": "Vereinbaren Sie eine kurze Rückschau. Betonen Sie: Du entscheidest, wie du deine Zeit verbringst - eine gute Balance tut gut."
+      }
+    ],
+    "duration": "ca. 35 Min.; plus Rückschau",
+    "materialsNeeded": "Arbeitsblatt/Liste; Tafel/Flipchart",
+    "remark": "Wertfrei, ohne Beschämung - Mediennutzung ist unterschiedlich. Berücksichtigen Sie, dass nicht alle Kinder dieselben Freizeitmöglichkeiten haben.",
+    "etepStufen": [
+      3,
+      4
+    ],
+    "eldibGoals": [
+      "KOG-44",
+      "V-22",
+      "V-24",
+      "SOZ-33"
+    ],
+    "worksheet": {
+      "title": "Meng bildschirmfräi Iddien",
+      "intro": "Was macht dir ohne Screen Freude? Sammle deine Ideen.",
+      "blocks": [
+        {
+          "kind": "question",
+          "text": "Drinnen:",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "Draußen:",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "Mit anderen zusammen:",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "Das probiere ich diese Woche:",
+          "lines": 1
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "pomodoro-fir-kanner-konzentreiert-schaffen",
+    "title": "Pomodoro fir Kanner: konzentréiert schaffen",
+    "ageLevels": [
+      "C4",
+      "ES"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Individuel",
+        "note": "eigene Lernphasen"
+      },
+      {
+        "mode": "Klass",
+        "note": "Einführung"
+      }
+    ],
+    "themes": [
+      "disziplin",
+      "selbstwahrnehmung",
+      "stressbewaeltigung"
+    ],
+    "tags": [
+      "Konzentration",
+      "Pomodoro",
+      "Pausen",
+      "Lernen",
+      "Zeitmanagement",
+      "Fokus"
+    ],
+    "shortDescription": "Die Jugendlichen lernen die Pomodoro-Methode kennen: konzentriert für einen festen Zeitblock arbeiten, dann eine kurze Pause. Sie erleben, dass Arbeiten in fokussierten Häppchen mit Pausen leichter fällt und weniger ermüdet - ein Werkzeug gegen Aufschieben und Überforderung.",
+    "ablauf": [
+      {
+        "title": "Einstieg",
+        "text": "Sprechen Sie über Konzentration: Stundenlang am Stück geht nicht. Stellen Sie die Pomodoro-Idee vor: z. B. 20 Min. fokussiert arbeiten, 5 Min. Pause - und das wiederholen."
+      },
+      {
+        "title": "Ausprobieren",
+        "text": "Probieren Sie EINE Runde gemeinsam: 15-20 Min. still und konzentriert an einer Aufgabe (Handy weg, ein Ziel), dann eine kurze, bewusste Pause (aufstehen, bewegen). Danach kurzes Nachspüren."
+      },
+      {
+        "title": "Abschluss",
+        "text": "Reflexion: Wie war das fokussierte Arbeiten mit klarem Ende? Jede/r plant, wie er die Methode zu Hause nutzen könnte (Blocklänge, Pausen-Idee)."
+      }
+    ],
+    "duration": "ca. 45 Min.",
+    "materialsNeeded": "Timer/Uhr; eine echte Lernaufgabe; Pausen-Ideen",
+    "remark": "Blocklänge an Alter/Konzentration anpassen (kürzer beginnen). Pausen wirklich als Pause gestalten (Bewegung, nicht Bildschirm). Berücksichtigen Sie unterschiedliche häusliche Lernbedingungen.",
+    "etepStufen": [
+      4,
+      5
+    ],
+    "eldibGoals": [
+      "V-20",
+      "V-27",
+      "KOG-2",
+      "KOG-25",
+      "SOZ-12"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "wochenziel-setzen-maei-fokus-vun-der-woch",
+    "title": "Wochenziel setzen: mäi Fokus vun der Woch",
+    "ageLevels": [
+      "C3",
+      "C4"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Wochenritual im Kreis"
+      },
+      {
+        "mode": "Individuel",
+        "note": "eigenes Ziel"
+      }
+    ],
+    "themes": [
+      "etep-epu",
+      "motivation",
+      "selbstwahrnehmung"
+    ],
+    "tags": [
+      "Wochenziel",
+      "Ritual",
+      "Fokus",
+      "Selbststeuerung",
+      "Reflexion",
+      "ETEP"
+    ],
+    "shortDescription": "Ein wöchentliches Ritual im Sinne der Entwicklungspädagogik: Zu Wochenbeginn setzt sich jedes Kind ein kleines, persönliches Ziel (sozial-emotional oder schulisch), am Wochenende wird zurückgeblickt. So üben die Kinder Selbststeuerung, Reflexion und das Dranbleiben an kleinen Vorsätzen.",
+    "ablauf": [
+      {
+        "title": "Wochenstart",
+        "text": "Im Kreis überlegt jedes Kind ein kleines, konkretes Wochenziel (z. B. „Ich melde mich jeden Tag einmal\", „Ich helfe einem Kind\"). Wer mag, nennt es laut - das macht es verbindlich. Festhalten am Ziel-Plakat/Heft."
+      },
+      {
+        "title": "Während der Woche",
+        "text": "Erinnern Sie kurz an die Ziele (z. B. täglich/halbe Woche). Würdigen Sie beobachtete Fortschritte."
+      },
+      {
+        "title": "Wochenrückblick",
+        "text": "Am Wochenende kurze Reflexion: Hat es geklappt? Was war schwer? Würdigen Sie das Dranbleiben - nicht nur das Erreichen. Dann wird das nächste Ziel gesetzt."
+      }
+    ],
+    "duration": "Wochenstart/-rückblick je ca. 15 Min.",
+    "materialsNeeded": "Ziel-Plakat oder Heft; Stifte",
+    "remark": "Ziele klein und selbst beeinflussbar halten. Freiwilligkeit beim lauten Nennen. Verlässlichkeit des Rituals ist entscheidend. Gut kombinierbar mit dem Klassenrat.",
+    "etepStufen": [
+      3,
+      4
+    ],
+    "eldibGoals": [
+      "V-16",
+      "V-22",
+      "KOG-19",
+      "SOZ-12",
+      "K-18"
+    ],
+    "language": "de",
+    "source": "generated"
   }
 ]
