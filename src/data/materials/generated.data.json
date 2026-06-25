@@ -5016,5 +5016,450 @@
     ],
     "language": "de",
     "source": "generated"
+  },
+  {
+    "id": "wouer-oder-fake-noriichten-checken",
+    "title": "Wouer oder Fake? Noriichten checken",
+    "ageLevels": [
+      "C3",
+      "C4"
+    ],
+    "type": [
+      "ganz Stonn"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Plenum"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Prüf-Teams"
+      }
+    ],
+    "themes": [
+      "medien",
+      "kommunikation",
+      "gerechtigkeit"
+    ],
+    "tags": [
+      "Medienkompetenz",
+      "Fake News",
+      "Quellen prüfen",
+      "kritisches Denken",
+      "Information",
+      "Internet"
+    ],
+    "shortDescription": "Die Kinder werden zu „Nachrichten-Detektiven\": Sie lernen, dass nicht alles, was im Internet steht, wahr ist, und üben einfache Prüfschritte, um echte von falschen Meldungen zu unterscheiden. So entwickeln sie früh Medienkompetenz und ein gesundes kritisches Hinterfragen.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Stimmt das wirklich?",
+        "text": "Zeigen Sie zwei Meldungen/Bilder - eine echt, eine offensichtlich erfunden. Lassen Sie die Kinder raten und begründen. Erarbeiten Sie: Im Internet kann jeder etwas veröffentlichen - auch Unwahres. Darum lohnt sich Prüfen."
+      },
+      {
+        "title": "Hauptteil – Die Detektiv-Checkliste",
+        "text": "Erarbeiten Sie einfache Prüfschritte: Wer hat das geschrieben (Quelle)? Steht es auch woanders? Wann ist es entstanden? Will mich jemand erschrecken oder reinlegen? Passt das Bild zum Text? In Prüf-Teams wenden die Kinder die Checkliste auf Beispiel-Meldungen an und entscheiden: echt, unsicher oder fake."
+      },
+      {
+        "title": "Abschluss – Erst denken, dann teilen",
+        "text": "Sammeln Sie die Erkenntnisse und die Regel: „Erst prüfen, dann glauben oder weiterschicken.\" Füllen Sie das Arbeitsblatt als persönliche Detektiv-Checkliste aus. Betonen Sie, dass Nachfragen klug ist - nicht peinlich."
+      }
+    ],
+    "duration": "ca. 50 Min.",
+    "materialsNeeded": "Beispiel-Meldungen (echt/erfunden, altersgerecht); Arbeitsblatt mit Checkliste; Tafel/Flipchart",
+    "remark": "Altersgerechte, harmlose Beispiele wählen; keine verstörenden Inhalte. Betonen Sie, dass auch Erwachsene auf Fakes hereinfallen - Prüfen ist eine Fähigkeit, kein Test. An die Mediennutzung der Lerngruppe anpassen.",
+    "etepStufen": [
+      3,
+      4
+    ],
+    "eldibGoals": [
+      "KOG-37",
+      "KOG-44",
+      "KOG-58",
+      "K-21",
+      "V-19",
+      "SOZ-30"
+    ],
+    "worksheet": {
+      "title": "Meng Fake-Check-Lëscht",
+      "intro": "Bevor du etwas glaubst oder teilst: prüfe es wie ein Detektiv.",
+      "blocks": [
+        {
+          "kind": "checklist",
+          "text": "Ich prüfe:",
+          "items": [
+            "Wer hat es geschrieben? (Quelle)",
+            "Steht es auch woanders?",
+            "Wann ist es entstanden?",
+            "Will mich jemand reinlegen/erschrecken?",
+            "Passt das Bild zum Text?"
+          ]
+        },
+        {
+          "kind": "question",
+          "text": "Eine Meldung, die ich schon mal nicht geglaubt habe – warum?",
+          "lines": 2
+        },
+        {
+          "kind": "scale",
+          "text": "Diese Meldung halte ich für:",
+          "items": [
+            "fake",
+            "unsicher",
+            "echt"
+          ]
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "eischten-androck-stemmt-en",
+    "title": "Éischten Androck: stëmmt en?",
+    "ageLevels": [
+      "C4",
+      "ES"
+    ],
+    "type": [
+      "ganz Stonn"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Plenum und Diskussion"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Kleingruppen"
+      }
+    ],
+    "themes": [
+      "fremdwahrnehmung",
+      "selbstwahrnehmung",
+      "gerechtigkeit"
+    ],
+    "tags": [
+      "erster Eindruck",
+      "Vorurteile",
+      "Schubladendenken",
+      "Empathie",
+      "Fairness",
+      "Offenheit"
+    ],
+    "shortDescription": "Wir bilden uns blitzschnell ein Urteil über andere - oft, ohne sie zu kennen. Die Jugendlichen erkennen, wie erste Eindrücke und Vorurteile entstehen, wie sie täuschen können und warum es fair und klug ist, Menschen eine Chance zu geben, statt sie in Schubladen zu stecken.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Das Blitzurteil",
+        "text": "Zeigen Sie (respektvoll) einige Bilder von Menschen und lassen Sie spontane Vermutungen sammeln: Was für ein Mensch könnte das sein? Lösen Sie auf, dass wir das gar nicht wissen können. Erarbeiten Sie: Unser Gehirn urteilt blitzschnell - das ist normal, aber oft falsch."
+      },
+      {
+        "title": "Hauptteil – Wenn der Eindruck täuscht",
+        "text": "In Kleingruppen tauschen die Jugendlichen (freiwillig) Beispiele aus, in denen ein erster Eindruck sich später als falsch herausstellte. Erarbeiten Sie, wie Vorurteile entstehen (Aussehen, Herkunft, Gerüchte) und wie sie verletzen können. Sammeln Sie: Was hilft, offen zu bleiben? (nachfragen, kennenlernen, sich selbst hinterfragen)."
+      },
+      {
+        "title": "Abschluss – Eine zweite Chance",
+        "text": "Formulieren Sie gemeinsam einen Grundsatz: Jeder Mensch verdient, kennengelernt zu werden, bevor man urteilt. Jede/r nimmt sich einen konkreten Vorsatz vor, offener auf andere zuzugehen."
+      }
+    ],
+    "duration": "ca. 50 Min.",
+    "materialsNeeded": "Respektvolle, vielfältige Personenbilder; Tafel/Flipchart",
+    "remark": "Sehr sensibel: keine realen Mitschüler bewerten, keine Stereotype verstärken - der Fokus liegt auf dem Aufdecken und Hinterfragen von Vorurteilen. Bei Erfahrungen mit Diskriminierung geschützt und unterstützend reagieren. Vielfalt durchgehend wertschätzend rahmen.",
+    "etepStufen": [
+      4,
+      5
+    ],
+    "eldibGoals": [
+      "SOZ-25",
+      "SOZ-31",
+      "SOZ-38",
+      "KOG-23",
+      "K-22",
+      "V-23"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "reegele-dei-schuetzen-kannerrechter",
+    "title": "Reegele, déi schützen: Kannerrechter",
+    "ageLevels": [
+      "C4",
+      "ES"
+    ],
+    "type": [
+      "ganz Stonn"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Plenum"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Kleingruppen"
+      }
+    ],
+    "themes": [
+      "gerechtigkeit",
+      "identitaet",
+      "beziehungsaufbau"
+    ],
+    "tags": [
+      "Kinderrechte",
+      "Recht auf Schutz",
+      "Beteiligung",
+      "Würde",
+      "Verantwortung",
+      "Hilfe"
+    ],
+    "shortDescription": "Die Jugendlichen lernen zentrale Kinderrechte kennen (Schutz, Förderung, Beteiligung) und verstehen, dass Rechte für alle gleich gelten und schützen sollen. Sie verknüpfen die Rechte mit ihrem Alltag, erkennen, wo Rechte wichtig werden, und wissen, an wen man sich wenden kann, wenn Rechte verletzt werden.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Warum gibt es Kinderrechte?",
+        "text": "Sammeln Sie, was Kinder zum guten Aufwachsen brauchen (Sicherheit, Essen, Bildung, Liebe, Gehörtwerden). Erklären Sie: Genau dafür gibt es Kinderrechte - sie gelten weltweit für jedes Kind und sollen schützen."
+      },
+      {
+        "title": "Hauptteil – Rechte und mein Alltag",
+        "text": "Stellen Sie einige Kinderrechte vor (Schutz vor Gewalt, Recht auf Bildung, Recht auf Beteiligung/eigene Meinung, Recht auf Spiel). In Kleingruppen ordnen die Jugendlichen Alltagssituationen den Rechten zu und überlegen: Wo ist dieses Recht wichtig? Was, wenn es fehlt?"
+      },
+      {
+        "title": "Abschluss – Rechte UND Hilfe",
+        "text": "Halten Sie fest: Rechte gelten für alle gleich und bringen auch Verantwortung füreinander mit. Sammeln Sie Anlaufstellen, wenn Rechte verletzt werden. Jede/r notiert auf dem Arbeitsblatt ein Recht, das ihm besonders wichtig ist - und warum."
+      }
+    ],
+    "duration": "ca. 50 Min.",
+    "materialsNeeded": "Karten mit ausgewählten Kinderrechten (altersgerecht); Alltags-Situationskarten; Arbeitsblatt; Liste von Hilfsangeboten",
+    "remark": "Sensibel begleiten - das Thema kann eigene Belastungen berühren (Gewalt, Vernachlässigung). Stets Hilfsangebote bereithalten und auf mögliche Offenbarungen geschützt reagieren (ggf. Fachstellen). Rechte positiv und stärkend vermitteln, nicht angstmachend.",
+    "etepStufen": [
+      4,
+      5
+    ],
+    "eldibGoals": [
+      "SOZ-26",
+      "SOZ-34",
+      "SOZ-39",
+      "KOG-54",
+      "K-24",
+      "V-31"
+    ],
+    "worksheet": {
+      "title": "Meng Kannerrechter",
+      "intro": "Rechte schützen dich und alle Kinder. Denke darüber nach.",
+      "blocks": [
+        {
+          "kind": "question",
+          "text": "Ein Kinderrecht, das mir besonders wichtig ist – und warum:",
+          "lines": 3
+        },
+        {
+          "kind": "question",
+          "text": "Wo im Alltag ist dieses Recht wichtig?",
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "Wenn ein Recht verletzt wird, hole ich Hilfe bei:"
+        },
+        {
+          "kind": "lines",
+          "lines": 2
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "yoga-deieren-roueg-a-staark",
+    "title": "Yoga-Déieren: roueg a staark",
+    "ageLevels": [
+      "C2",
+      "C3"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Bewegung mit Platz, ruhige Atmosphäre"
+      }
+    ],
+    "themes": [
+      "bewegung",
+      "achtsamkeit",
+      "stressbewaeltigung"
+    ],
+    "tags": [
+      "Kinderyoga",
+      "Bewegung",
+      "Ruhe",
+      "Körperwahrnehmung",
+      "Tiere",
+      "Entspannung"
+    ],
+    "shortDescription": "Über einfache Yoga-Übungen in Tiergestalt (Katze, Baum, Schildkröte, Löwe) verbinden die Kinder Bewegung mit Ruhe und Körperwahrnehmung. Sie üben Gleichgewicht, Dehnung und ruhiges Atmen und lernen spielerisch, sich selbst zu beruhigen und zu spüren - eine schöne Pause für Körper und Kopf.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Wir werden zu Tieren",
+        "text": "Schaffen Sie eine ruhige Atmosphäre. Erklären Sie: „Wir machen Tier-Übungen - manche machen stark, manche ganz ruhig.\" Beginnen Sie mit ein paar tiefen Atemzügen im Stand."
+      },
+      {
+        "title": "Hauptteil – Die Tier-Übungen",
+        "text": "Führen Sie langsam einige Übungen vor und mit: Katze (Rücken runden und strecken), Baum (auf einem Bein stehen, ruhig atmen), Schildkröte (klein einrollen), Löwe (kraftvoll ausatmen mit „Brüllen\"), Schmetterling (sitzen, Knie wippen). Benennen Sie jeweils, ob die Übung stark macht oder beruhigt."
+      },
+      {
+        "title": "Abschluss – Ruhe wie eine Schildkröte",
+        "text": "Enden Sie mit einer ruhigen Übung und kurzem Nachspüren im Liegen/Sitzen: „Wie fühlt sich dein Körper jetzt an?\" Betonen Sie, dass die Kinder einzelne Übungen auch nutzen können, wenn sie unruhig oder aufgeregt sind."
+      }
+    ],
+    "duration": "ca. 25-35 Min.",
+    "materialsNeeded": "Platz pro Kind; optional Matten/Teppich; ruhige Musik; optional Bildkarten der Tiere",
+    "remark": "Freiwilligkeit und kein Leistungsdruck - es geht ums Spüren, nicht ums perfekte Ausführen. Auf Sicherheit und genug Abstand achten; bei körperlichen Einschränkungen Varianten anbieten. Mit einer ruhigen Übung enden, um gut weiterarbeiten zu können.",
+    "etepStufen": [
+      2,
+      3
+    ],
+    "eldibGoals": [
+      "V-11",
+      "V-21",
+      "KOG-5",
+      "SOZ-16",
+      "K-15"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "tueftel-werkstatt-bau-eppes-neies",
+    "title": "Tüftel-Werkstatt: bau eppes Neies",
+    "ageLevels": [
+      "C3",
+      "C4"
+    ],
+    "type": [
+      "Projet"
+    ],
+    "participants": [
+      {
+        "mode": "Grupp",
+        "note": "Tüftel-Teams von 3-4 Kindern"
+      },
+      {
+        "mode": "Klass",
+        "note": "Vorstellung der Erfindungen"
+      }
+    ],
+    "themes": [
+      "kreativitaet",
+      "kooperation",
+      "motivation"
+    ],
+    "tags": [
+      "Erfinden",
+      "Kreativität",
+      "Problemlösen",
+      "Bauen",
+      "Teamwork",
+      "Ausprobieren"
+    ],
+    "shortDescription": "In der Tüftel-Werkstatt lösen Kleingruppen mit einfachen Materialien eine kreative Bau-Aufgabe (z. B. die höchste stabile Konstruktion, eine Murmelbahn, ein Schutz für ein rohes Ei). Die Kinder erleben kreatives Problemlösen, Zusammenarbeit und die wichtige Erfahrung, dass Fehlversuche zum Erfinden dazugehören.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Der Tüftel-Auftrag",
+        "text": "Stellen Sie eine klare, offene Bau-Aufgabe und die Materialien vor (z. B. Papier, Tape, Schnur, Becher). Betonen Sie die Erfinder-Regel: Es gibt viele Lösungen, Ausprobieren ist erlaubt, und Fehlversuche bringen uns weiter."
+      },
+      {
+        "title": "Hauptteil – Planen, bauen, testen",
+        "text": "Die Teams planen kurz, bauen und testen ihre Konstruktion - und verbessern sie nach dem Test. Geben Sie ein Zeitfenster und ermutigen Sie zu mehreren Versuchen. Beobachten Sie Zusammenarbeit und Durchhalten; geben Sie Impulse statt Lösungen."
+      },
+      {
+        "title": "Abschluss – Erfinder-Messe",
+        "text": "Jedes Team zeigt seine Erfindung und erzählt: Was war die Idee? Was ging schief, was habt ihr verbessert? Würdigen Sie Kreativität, Teamarbeit und das Lernen aus Fehlversuchen - nicht nur das „beste\" Ergebnis."
+      }
+    ],
+    "duration": "ca. 60 Min. (oder als längeres Projekt)",
+    "materialsNeeded": "Einfache Bau-/Bastelmaterialien (Papier, Klebeband, Schnur, Becher, Schere); je nach Aufgabe Testmaterial (Murmel, Ei)",
+    "remark": "Sicherheit beim Umgang mit Material/Schere beachten. Teams so mischen, dass alle mitwirken können. Den Wettbewerb klein halten und die Reflexion (Idee, Fehlversuch, Verbesserung) betonen - dort liegt der Lernkern.",
+    "etepStufen": [
+      3,
+      4
+    ],
+    "eldibGoals": [
+      "KOG-8",
+      "KOG-26",
+      "KOG-44",
+      "SOZ-18",
+      "V-22",
+      "K-23"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "maein-numm-meng-geschicht",
+    "title": "Mäin Numm, meng Geschicht",
+    "ageLevels": [
+      "C2",
+      "C3"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Sitzkreis"
+      },
+      {
+        "mode": "Individuel",
+        "note": "eigenes Namens-Bild"
+      }
+    ],
+    "themes": [
+      "identitaet",
+      "beziehungsaufbau",
+      "selbstwertgefuehl"
+    ],
+    "tags": [
+      "Name",
+      "Identität",
+      "Wertschätzung",
+      "Herkunft",
+      "Kennenlernen",
+      "Einzigartigkeit"
+    ],
+    "shortDescription": "Jeder Name erzählt eine Geschichte. Die Kinder beschäftigen sich mit ihrem eigenen Namen - was er bedeutet, wer ihn ausgesucht hat, wie sie zu ihm stehen - und gestalten ein Namens-Bild. So erleben sie Wertschätzung für sich selbst und füreinander und stärken Identität und Gemeinschaft.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Namen sind besonders",
+        "text": "Sprechen Sie darüber, dass jeder Name etwas Besonderes ist. Erzählen Sie (wenn möglich) kurz zu Ihrem eigenen Namen. Sammeln Sie Fragen, denen die Kinder nachgehen können: Wer hat meinen Namen ausgesucht? Bedeutet er etwas? Habe ich einen Spitznamen?"
+      },
+      {
+        "title": "Hauptteil – Mein Namens-Bild",
+        "text": "Jedes Kind gestaltet seinen Namen kreativ (groß schreiben, verzieren, mit Symbolen für seine Lieblingsdinge füllen). Wer mag, schreibt eine kleine Notiz dazu (Bedeutung, Geschichte). Begleiten Sie behutsam - manche Kinder kennen die Herkunft ihres Namens nicht, das ist okay."
+      },
+      {
+        "title": "Abschluss – Namens-Galerie",
+        "text": "Wer möchte, stellt sein Namens-Bild kurz vor. Hängen Sie alle Bilder als Galerie auf. Betonen Sie: Jeder Name und jedes Kind ist einzigartig und gehört zu uns."
+      }
+    ],
+    "duration": "ca. 40 Min.",
+    "materialsNeeded": "Papier; Bunt-/Filzstifte; optional Material zum Verzieren",
+    "remark": "Sehr sensibel mit Herkunft/Familie umgehen - alles freiwillig, nichts vorführen. Achten Sie darauf, dass Namen nicht ausgelacht oder falsch ausgesprochen werden; üben Sie die richtige Aussprache wertschätzend. Für Kinder ohne Namensinfos den Fokus auf das kreative Gestalten und Spitznamen legen.",
+    "etepStufen": [
+      2,
+      3
+    ],
+    "eldibGoals": [
+      "KOG-15",
+      "SOZ-19",
+      "K-15",
+      "K-19",
+      "V-14"
+    ],
+    "language": "de",
+    "source": "generated"
   }
 ]
