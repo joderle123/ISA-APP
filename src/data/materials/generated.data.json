@@ -4141,5 +4141,437 @@
     ],
     "language": "de",
     "source": "generated"
+  },
+  {
+    "id": "kennelern-bingo-wien-ass-wien",
+    "title": "Kennelern-Bingo: wien ass wien?",
+    "ageLevels": [
+      "C2",
+      "C3"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "alle gehen herum und befragen sich"
+      }
+    ],
+    "themes": [
+      "beziehungsaufbau",
+      "kommunikation",
+      "spiel-spass"
+    ],
+    "tags": [
+      "Kennenlernen",
+      "Bingo",
+      "Gemeinsamkeiten",
+      "Gespräch",
+      "Klassenstart",
+      "Interaktion"
+    ],
+    "shortDescription": "Ein lebendiges Kennenlern-Spiel: Auf einem Bingo-Blatt suchen die Kinder Mitschüler, auf die bestimmte Aussagen zutreffen („hat ein Haustier\", „mag Pizza\", „kann jonglieren\"). Sie kommen miteinander ins Gespräch, entdecken Gemeinsamkeiten und Besonderheiten und stärken so das Wir-Gefühl - ideal für den Schuljahres- oder Gruppenstart.",
+    "ablauf": [
+      {
+        "title": "Einstieg – So geht Bingo",
+        "text": "Verteilen Sie das Bingo-Blatt mit Aussagefeldern. Erklären Sie: Gehe herum, frage andere und finde für jedes Feld jemanden, auf den es zutrifft - er schreibt seinen Namen ins Feld. Pro Feld möglichst eine andere Person. Wer eine Reihe (oder das ganze Blatt) voll hat, ruft „Bingo\"."
+      },
+      {
+        "title": "Hauptteil – Fragen und entdecken",
+        "text": "Die Kinder bewegen sich frei und befragen sich gegenseitig. Ermutigen Sie zu echten kleinen Gesprächen statt nur Unterschriften-Sammeln. Begleiten Sie schüchterne Kinder und sorgen Sie dafür, dass alle einbezogen werden."
+      },
+      {
+        "title": "Abschluss – Was haben wir entdeckt?",
+        "text": "Sammeln Sie einige Funde: „Wer hat etwas Überraschendes über jemanden erfahren?\" Heben Sie Gemeinsamkeiten und Vielfalt hervor. Betonen Sie, dass wir in der Klasse viele interessante Menschen sind."
+      }
+    ],
+    "duration": "ca. 30 Min.",
+    "materialsNeeded": "Bingo-Blätter mit Aussagefeldern (altersgerecht); Stifte",
+    "remark": "Aussagen so wählen, dass niemand bloßgestellt wird (keine zu persönlichen/heiklen Felder). Achten Sie auf Kinder, die schwer Anschluss finden, und steuern Sie aktiv mit. Für C2 mit Bildsymbolen in den Feldern arbeiten.",
+    "etepStufen": [
+      2,
+      3
+    ],
+    "eldibGoals": [
+      "K-7",
+      "K-12",
+      "SOZ-4",
+      "SOZ-15",
+      "V-5"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "de-staeerke-spigel",
+    "title": "De Stäerke-Spigel",
+    "ageLevels": [
+      "C2",
+      "C3"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Grupp",
+        "note": "feste Kleingruppen"
+      },
+      {
+        "mode": "Klass",
+        "note": "Einstieg und Abschluss"
+      }
+    ],
+    "themes": [
+      "fremdwahrnehmung",
+      "selbstwertgefuehl",
+      "beziehungsaufbau"
+    ],
+    "tags": [
+      "Stärken",
+      "Fremdbild",
+      "Wertschätzung",
+      "Selbstwert",
+      "Feedback",
+      "Gemeinschaft"
+    ],
+    "shortDescription": "Die Kinder werden zum „Spiegel\" füreinander: In der Kleingruppe nennt jedes Kind den anderen je eine Stärke, die es an ihnen sieht. So erfahren die Kinder, wie andere sie wahrnehmen - oft positiver, als sie selbst denken. Das stärkt Selbstwert und gegenseitige Wertschätzung.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Andere sehen Stärken in uns",
+        "text": "Erklären Sie: Manchmal sehen andere Stärken an uns, die uns selbst gar nicht auffallen. Heute sind wir Spiegel füreinander. Sammeln Sie Beispiele für Stärken (hilfsbereit, lustig, geduldig, mutig, kreativ) als Wortschatz-Hilfe."
+      },
+      {
+        "title": "Hauptteil – Der Spiegel-Kreis",
+        "text": "In Kleingruppen ist nacheinander ein Kind „im Spiegel\". Die anderen nennen ihm je eine echte Stärke mit Beispiel („Du bist hilfsbereit, du hast mir neulich geholfen\"). Das Kind im Spiegel hört nur zu und sagt am Ende „Danke\". Optional halten die Kinder die gehörten Stärken auf einem Blatt fest."
+      },
+      {
+        "title": "Abschluss – Was nehme ich mit?",
+        "text": "Kurze Runde: „Welche genannte Stärke hat dich gefreut oder überrascht?\" Betonen Sie: Diese Stärken stecken wirklich in dir. Die Kinder dürfen ihr Stärken-Blatt behalten."
+      }
+    ],
+    "duration": "ca. 40 Min.",
+    "materialsNeeded": "Optional Stärken-Wortkarten als Hilfe; pro Kind ein Blatt für die gehörten Stärken; Stifte",
+    "remark": "Klare Regel: nur echte, freundliche Stärken - steuern Sie aktiv, dass jedes Kind Positives hört. Besonders wertvoll für Kinder mit geringem Selbstwert. Gruppen so zusammenstellen, dass eine wohlwollende Atmosphäre gesichert ist.",
+    "etepStufen": [
+      2,
+      3
+    ],
+    "eldibGoals": [
+      "SOZ-7",
+      "SOZ-15",
+      "SOZ-25",
+      "K-17",
+      "V-13"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "maei-wopen-dat-sinn-ech",
+    "title": "Mäi Wopen: dat sinn ech",
+    "ageLevels": [
+      "C3",
+      "C4"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Individuel",
+        "note": "eigenes Wappen gestalten"
+      },
+      {
+        "mode": "Klass",
+        "note": "freiwillige Vorstellung"
+      }
+    ],
+    "themes": [
+      "identitaet",
+      "selbstwahrnehmung",
+      "ressourcen"
+    ],
+    "tags": [
+      "Wappen",
+      "Selbstbild",
+      "Stärken",
+      "Werte",
+      "Träume",
+      "kreativ"
+    ],
+    "shortDescription": "Jedes Kind gestaltet sein persönliches Wappen mit Feldern für das, was es ausmacht: meine Stärken, was mir wichtig ist, ein Erfolg, ein Traum. So setzen sich die Kinder kreativ mit ihrer Identität auseinander und präsentieren - freiwillig - ein positives Selbstbild. Die Wappen-Galerie macht die Vielfalt der Klasse sichtbar.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Was ist ein Wappen?",
+        "text": "Zeigen Sie ein Beispiel-Wappen und erklären Sie: Früher zeigten Wappen, wofür jemand steht. Heute gestaltest du dein eigenes. Stellen Sie die vier Felder vor: eine Stärke von mir, etwas, das mir wichtig ist, ein Erfolg/etwas, worauf ich stolz bin, ein Traum/Wunsch."
+      },
+      {
+        "title": "Hauptteil – Mein Wappen gestalten",
+        "text": "Jedes Kind füllt die vier Felder mit Bildern/Symbolen und wenigen Worten. Betonen Sie: Es geht nicht um Schönheit, sondern um Inhalt - und nur, was man zeigen möchte. Gehen Sie unterstützend herum."
+      },
+      {
+        "title": "Abschluss – Wappen-Galerie",
+        "text": "Wer mag, stellt sein Wappen kurz vor. Hängen Sie die Wappen als Galerie auf. Würdigen Sie die Vielfalt und das Positive. Optional ein „Gemeinsamkeiten suchen\" über die Wappen."
+      }
+    ],
+    "duration": "ca. 45-50 Min.",
+    "materialsNeeded": "Wappen-Vorlage (mit vier Feldern); Bunt-/Filzstifte",
+    "remark": "Freiwilligkeit beim Vorstellen; sensibel mit Feldern wie „Erfolg\" oder „Traum\" umgehen, falls Kinder belastet sind. Keine Wertung der Inhalte. Für C3 mit Bildimpulsen für die Felder unterstützen.",
+    "etepStufen": [
+      3,
+      4
+    ],
+    "eldibGoals": [
+      "KOG-15",
+      "KOG-31",
+      "V-14",
+      "SOZ-19",
+      "K-13"
+    ],
+    "worksheet": {
+      "title": "Mäi Wopen",
+      "intro": "Gestalte dein Wappen - mit Bildern und wenigen Worten. Es zeigt, wer du bist.",
+      "blocks": [
+        {
+          "kind": "box",
+          "text": "Eine Stärke von mir",
+          "lines": 4
+        },
+        {
+          "kind": "box",
+          "text": "Das ist mir wichtig",
+          "lines": 4
+        },
+        {
+          "kind": "box",
+          "text": "Darauf bin ich stolz",
+          "lines": 4
+        },
+        {
+          "kind": "box",
+          "text": "Mein Traum / Wunsch",
+          "lines": 4
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "d-suergen-kescht",
+    "title": "D'Suergen-Këscht",
+    "ageLevels": [
+      "C1",
+      "C2"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Einführung gemeinsam"
+      },
+      {
+        "mode": "Individuel",
+        "note": "eigene Sorgen aufschreiben/malen"
+      }
+    ],
+    "themes": [
+      "stressbewaeltigung",
+      "emotionen",
+      "selbstwahrnehmung"
+    ],
+    "tags": [
+      "Sorgen",
+      "Ängste",
+      "Entlastung",
+      "Gefühle",
+      "Sicherheit",
+      "loslassen"
+    ],
+    "shortDescription": "Eine Sorgen-Box hilft jüngeren Kindern, belastende Gedanken loszuwerden: Sie malen oder schreiben ihre Sorge auf und legen sie symbolisch in die Box - das entlastet und schafft das Gefühl, nicht allein damit zu sein. Die Box wird zu einem festen, sicheren Ort für Sorgen im Klassenraum.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Jeder hat mal Sorgen",
+        "text": "Normalisieren Sie behutsam: Jeder Mensch hat manchmal Sorgen - das ist ganz normal. Stellen Sie die Sorgen-Box vor: „Hier können Sorgen hinein, dann müssen wir sie nicht die ganze Zeit mit uns herumtragen.\""
+      },
+      {
+        "title": "Hauptteil – Meine Sorge in die Box",
+        "text": "Jedes Kind malt oder schreibt eine Sorge auf einen Zettel (anonym möglich) und legt ihn in die Box. Betonen Sie Freiwilligkeit und Vertraulichkeit. Sprechen Sie, je nach Wunsch, einzelne Sorgen anonym und tröstend an: „Manche Kinder sorgen sich um ... - was könnte helfen?\""
+      },
+      {
+        "title": "Abschluss – Die Box passt auf",
+        "text": "Vereinbaren Sie, dass die Box einen festen Platz hat und regelmäßig (z. B. einmal pro Woche) gemeinsam oder vertraulich angeschaut wird. Betonen Sie: Sorgen teilen macht sie leichter, und für große Sorgen holen wir Hilfe bei Erwachsenen."
+      }
+    ],
+    "duration": "Einführung ca. 30 Min.; danach als wiederkehrendes Angebot",
+    "materialsNeeded": "Eine gestaltete Box mit Schlitz; kleine Zettel; Stifte",
+    "remark": "Sehr sensibel begleiten: Nehmen Sie ernste Sorgen (Gewalt, Vernachlässigung, Mobbing) auf und reagieren Sie geschützt, ggf. mit Fachstellen. Vertraulichkeit wahren und niemanden bloßstellen. Klar machen, dass die Lehrperson für große Sorgen da ist.",
+    "etepStufen": [
+      1,
+      2
+    ],
+    "eldibGoals": [
+      "V-11",
+      "V-21",
+      "SOZ-16",
+      "K-15",
+      "KOG-5"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "den-friddens-desch",
+    "title": "Den Friddens-Dësch",
+    "ageLevels": [
+      "C2",
+      "C3"
+    ],
+    "type": [
+      "ganz Stonn"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Einführung gemeinsam"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Übung zu zweit am Friedens-Tisch"
+      }
+    ],
+    "themes": [
+      "konfliktloesung",
+      "kommunikation",
+      "kooperation"
+    ],
+    "tags": [
+      "Friedensecke",
+      "Streit lösen",
+      "Versöhnung",
+      "Ritual",
+      "Zuhören",
+      "selbstständig"
+    ],
+    "shortDescription": "Die Klasse richtet einen festen „Friedens-Tisch\" ein - einen Ort, an den zwei Kinder nach einem Streit gehen, um sich mit einem klaren Ritual selbst zu versöhnen: jeder erzählt, jeder hört zu, gemeinsam wird eine Lösung gefunden. So lernen die Kinder, Konflikte zunehmend selbstständig und friedlich zu klären.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Ein Ort für den Frieden",
+        "text": "Stellen Sie die Idee vor: einen ruhigen Platz im Raum, an dem Streit geklärt wird. Gestalten Sie ihn gemeinsam (zwei Stühle, ein Symbol wie ein Redestein oder eine Friedenskarte). Erklären Sie die Grundregeln: einer spricht, der andere hört zu; keine Beschimpfungen; Ziel ist eine Lösung."
+      },
+      {
+        "title": "Hauptteil – Das Friedens-Ritual üben",
+        "text": "Stellen Sie die Schritte am Friedens-Tisch vor: 1) Beide atmen kurz durch. 2) Jeder erzählt mit Redestein, wie er es erlebt hat und wie er sich fühlt - der andere hört zu. 3) Gemeinsam eine Lösung suchen. 4) Per Handschlag/Zeichen abschließen. Üben Sie das Ritual zu zweit an harmlosen Beispielen."
+      },
+      {
+        "title": "Abschluss – So nutzen wir den Tisch",
+        "text": "Vereinbaren Sie, wann und wie der Friedens-Tisch genutzt wird (auch mit Unterstützung eines neutralen Kindes oder der Lehrperson). Hängen Sie die Schritte am Tisch auf. Betonen Sie: Sich versöhnen ist mutig und stark."
+      }
+    ],
+    "duration": "ca. 50 Min.; danach dauerhafter Bestandteil des Klassenraums",
+    "materialsNeeded": "Zwei Stühle/kleiner Tisch; ein Redestein oder Symbol; Karten mit den Friedens-Schritten",
+    "remark": "Begleiten Sie die Nutzung anfangs eng und ziehen Sie sich schrittweise zurück, wenn die Kinder sicherer werden. Mit fiktiven Beispielen üben. Achten Sie darauf, dass der Friedens-Tisch kein Straf-Ort wird, sondern ein geschützter Lösungs-Ort.",
+    "etepStufen": [
+      2,
+      3
+    ],
+    "eldibGoals": [
+      "SOZ-13",
+      "SOZ-24",
+      "K-12",
+      "K-21",
+      "V-18"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "wou-wunnt-d-gefill-am-kierper",
+    "title": "Wou wunnt d'Gefill am Kierper?",
+    "ageLevels": [
+      "C2",
+      "C3"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Einstieg gemeinsam"
+      },
+      {
+        "mode": "Individuel",
+        "note": "eigene Körper-Gefühlskarte"
+      }
+    ],
+    "themes": [
+      "emotionen",
+      "selbstwahrnehmung",
+      "achtsamkeit"
+    ],
+    "tags": [
+      "Körperwahrnehmung",
+      "Gefühle",
+      "Körpersignale",
+      "Selbstwahrnehmung",
+      "Emotionen",
+      "Achtsamkeit"
+    ],
+    "shortDescription": "Gefühle zeigen sich im Körper: Aufregung im Bauch, Wut in den Fäusten, Angst im Hals. Die Kinder lernen, diese Körpersignale wahrzunehmen und einzuordnen, und gestalten eine eigene „Körper-Gefühlskarte\". Wer früh merkt, wie sich ein Gefühl im Körper meldet, kann besser damit umgehen.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Gefühle melden sich im Körper",
+        "text": "Fragen Sie: „Wo spürst du, dass du aufgeregt bist? Wo die Wut?\" Sammeln Sie Beispiele (Herzklopfen, Bauchkribbeln, heißer Kopf, Kloß im Hals). Machen Sie deutlich: Der Körper gibt uns Hinweise auf unsere Gefühle."
+      },
+      {
+        "title": "Hauptteil – Meine Körper-Gefühlskarte",
+        "text": "Jedes Kind erhält eine Körper-Umriss-Vorlage und markiert mit Farben, wo es welche Gefühle spürt (z. B. rot = Wut in den Fäusten, gelb = Freude im Bauch). Es gibt kein richtig oder falsch - jeder spürt anders. Begleiten Sie behutsam."
+      },
+      {
+        "title": "Abschluss – Frühwarnsystem nutzen",
+        "text": "Besprechen Sie: Wenn ich merke, wie sich Wut im Körper meldet, kann ich früh etwas tun (atmen, Pause, Stopp). Verbinden Sie die Übung mit einer bekannten Beruhigungsstrategie."
+      }
+    ],
+    "duration": "ca. 40 Min.",
+    "materialsNeeded": "Körper-Umriss-Vorlage pro Kind; Bunt-/Filzstifte",
+    "remark": "Freiwilligkeit und Vertraulichkeit; auffällige Markierungen (z. B. großflächige Angst) behutsam und ggf. im Einzelgespräch aufgreifen. Für C2 mit wenigen klaren Gefühlen und Farben arbeiten. Gut kombinierbar mit Atem-/Beruhigungsübungen.",
+    "etepStufen": [
+      2,
+      3
+    ],
+    "eldibGoals": [
+      "V-11",
+      "V-21",
+      "KOG-5",
+      "SOZ-16",
+      "K-15"
+    ],
+    "worksheet": {
+      "title": "Wou wunnt d'Gefill?",
+      "intro": "Wo in deinem Körper spürst du welche Gefühle? Male sie mit Farben ein.",
+      "blocks": [
+        {
+          "kind": "instruction",
+          "text": "Nutze für jedes Gefühl eine eigene Farbe und male sie an die Stelle deines Körpers, wo du es spürst."
+        },
+        {
+          "kind": "box",
+          "text": "Mein Körper (zeichne dich) und meine Gefühls-Farben",
+          "lines": 8
+        },
+        {
+          "kind": "question",
+          "text": "Welches Gefühl spüre ich am stärksten - und wo?",
+          "lines": 2
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
   }
 ]
