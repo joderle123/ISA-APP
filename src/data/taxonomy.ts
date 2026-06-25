@@ -9,6 +9,7 @@ import type {
   AgeLevel,
   EldibDomain,
   EtepStufe,
+  Language,
   MaterialType,
   ParticipantMode,
 } from '../types/material'
@@ -50,6 +51,28 @@ export const participantModes: ParticipantModeDef[] = [
   { id: 'Individuel', labelDe: 'Individuell' },
   { id: 'Grupp', labelDe: 'Gruppe' },
   { id: 'Klass', labelDe: 'Klasse' },
+]
+
+export interface LanguageDef {
+  id: Language
+  labelDe: string
+}
+
+export const languages: LanguageDef[] = [
+  { id: 'de', labelDe: 'Deutsch' },
+  { id: 'lb', labelDe: 'Lëtzebuergesch' },
+  { id: 'fr', labelDe: 'Français' },
+  { id: 'en', labelDe: 'English' },
+]
+
+export interface SourceDef {
+  id: 'original' | 'generated'
+  labelDe: string
+}
+
+export const sources: SourceDef[] = [
+  { id: 'original', labelDe: 'Original' },
+  { id: 'generated', labelDe: 'KI-Entwurf' },
 ]
 
 export interface ThemeDef {
@@ -195,6 +218,7 @@ export const eldibGoalById = new Map(eldibGoals.map((g) => [g.id, g]))
 export const ageLevelById = new Map(ageLevels.map((a) => [a.id, a]))
 export const materialTypeById = new Map(materialTypes.map((t) => [t.id, t]))
 export const participantModeById = new Map(participantModes.map((p) => [p.id, p]))
+export const languageById = new Map(languages.map((l) => [l.id, l]))
 export const eldibDomainById = new Map(eldibDomains.map((d) => [d.id, d]))
 
 export const themeLabel = (id: string) => themeById.get(id)?.label ?? id

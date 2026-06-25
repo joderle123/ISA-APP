@@ -1,6 +1,12 @@
 import { useMemo, useState } from 'react'
 import { allMaterials } from './data/materials'
-import { applyFilters, emptyFilter, type FilterState } from './lib/filter'
+import {
+  applyFilters,
+  collectTags,
+  activeFilterCount,
+  emptyFilter,
+  type FilterState,
+} from './lib/filter'
 import { FilterPanel } from './components/FilterPanel'
 import { MaterialCard } from './components/MaterialCard'
 import { MaterialDetail } from './components/MaterialDetail'
@@ -10,12 +16,15 @@ export default function App() {
   const [filter, setFilter] = useState<FilterState>(emptyFilter)
   const [selected, setSelected] = useState<Material | null>(null)
   const [downloadingId, setDownloadingId] = useState<string | null>(null)
+  const [showFilters, setShowFilters] = useState(false)
 
   const update = (partial: Partial<FilterState>) =>
     setFilter((f) => ({ ...f, ...partial }))
   const reset = () => setFilter(emptyFilter)
 
   const results = useMemo(() => applyFilters(allMaterials, filter), [filter])
+  const allTags = useMemo(() => collectTags(allMaterials), [])
+  const active = activeFilterCount(filter)
 
   async function handleDownload(m: Material) {
     setDownloadingId(m.id)
@@ -67,6 +76,30 @@ export default function App() {
         </div>
       </header>
 
+      {/* Mobile filter toggle */}
+      <div className="mx-auto max-w-7xl px-4 pt-4 sm:px-6 lg:hidden">
+        <button
+          type="button"
+          onClick={() => setShowFilters((s) => !s)}
+          className="inline-flex items-center gap-2 rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm font-medium text-slate-700"
+        >
+          Filter{active > 0 ? ` (${active})` : ''}
+          <span className="text-slate-400">{showFilters ? '▲' : '▼'}</span>
+        </button>
+        {showFilters && (
+          <div className="mt-3 max-h-[70vh] overflow-y-auto rounded-xl border border-slate-200 bg-white p-4">
+            <FilterPanel
+              filter={filter}
+              update={update}
+              reset={reset}
+              total={allMaterials.length}
+              shown={results.length}
+              allTags={allTags}
+            />
+          </div>
+        )}
+      </div>
+
       {/* Body */}
       <div className="mx-auto flex max-w-7xl gap-6 px-4 py-6 sm:px-6">
         {/* Sidebar */}
@@ -78,6 +111,7 @@ export default function App() {
               reset={reset}
               total={allMaterials.length}
               shown={results.length}
+              allTags={allTags}
             />
           </div>
         </div>

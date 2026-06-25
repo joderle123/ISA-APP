@@ -2,19 +2,30 @@ import type {
   AgeLevel,
   EldibDomain,
   EtepStufe,
+  Language,
   Material,
   MaterialType,
+  ParticipantMode,
 } from '../types/material'
 import { eldibGoalById } from '../data/taxonomy'
+
+/** Provenance value of a material. */
+export type MaterialSource = Material['source']
 
 export interface FilterState {
   search: string
   themes: string[]
   ageLevels: AgeLevel[]
   types: MaterialType[]
+  participantModes: ParticipantMode[]
   etepStufen: EtepStufe[]
   eldibDomains: EldibDomain[]
   eldibGoals: string[]
+  tags: string[]
+  languages: Language[]
+  sources: MaterialSource[]
+  /** Only materials that ship a printable worksheet ("Arbeitsblatt"). */
+  hasWorksheet: boolean
 }
 
 export const emptyFilter: FilterState = {
@@ -22,9 +33,14 @@ export const emptyFilter: FilterState = {
   themes: [],
   ageLevels: [],
   types: [],
+  participantModes: [],
   etepStufen: [],
   eldibDomains: [],
   eldibGoals: [],
+  tags: [],
+  languages: [],
+  sources: [],
+  hasWorksheet: false,
 }
 
 const some = <T,>(selected: T[], values: T[]) =>
@@ -37,6 +53,8 @@ function matchesSearch(m: Material, q: string): boolean {
     m.author ?? '',
     m.shortDescription,
     m.tags.join(' '),
+    m.remark ?? '',
+    m.materialsNeeded ?? '',
     m.ablauf.map((a) => `${a.title ?? ''} ${a.text}`).join(' '),
   ]
     .join(' ')
@@ -54,6 +72,7 @@ export function matches(m: Material, f: FilterState): boolean {
   if (!some(f.themes, m.themes)) return false
   if (!some(f.ageLevels, m.ageLevels)) return false
   if (!some(f.types, m.type)) return false
+  if (!some(f.participantModes, m.participants.map((p) => p.mode))) return false
   if (!some(f.etepStufen, m.etepStufen)) return false
   if (f.eldibGoals.length && !f.eldibGoals.some((g) => m.eldibGoals.includes(g)))
     return false
@@ -63,6 +82,10 @@ export function matches(m: Material, f: FilterState): boolean {
     )
     if (!f.eldibDomains.some((d) => domains.has(d))) return false
   }
+  if (!some(f.tags, m.tags)) return false
+  if (!some(f.languages, [m.language])) return false
+  if (!some(f.sources, [m.source])) return false
+  if (f.hasWorksheet && !m.worksheet) return false
   return true
 }
 
@@ -76,8 +99,20 @@ export function activeFilterCount(f: FilterState): number {
     f.themes.length +
     f.ageLevels.length +
     f.types.length +
+    f.participantModes.length +
     f.etepStufen.length +
     f.eldibDomains.length +
-    f.eldibGoals.length
+    f.eldibGoals.length +
+    f.tags.length +
+    f.languages.length +
+    f.sources.length +
+    (f.hasWorksheet ? 1 : 0)
   )
+}
+
+/** Unique, sorted tag list across a set of materials (for the tag facet). */
+export function collectTags(materials: Material[]): string[] {
+  const set = new Set<string>()
+  for (const m of materials) for (const t of m.tags) set.add(t)
+  return [...set].sort((a, b) => a.localeCompare(b, 'de'))
 }

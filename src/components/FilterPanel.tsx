@@ -6,7 +6,10 @@ import {
   eldibDomains,
   eldibGoals,
   etepStufen,
+  languages,
   materialTypes,
+  participantModes,
+  sources,
   themes,
 } from '../data/taxonomy'
 
@@ -16,6 +19,8 @@ interface Props {
   reset: () => void
   total: number
   shown: number
+  /** All distinct tags present in the library (for the tag facet). */
+  allTags: string[]
 }
 
 function Chip({
@@ -59,8 +64,9 @@ function Section({
   )
 }
 
-export function FilterPanel({ filter, update, reset, total, shown }: Props) {
+export function FilterPanel({ filter, update, reset, total, shown, allTags }: Props) {
   const [goalQuery, setGoalQuery] = useState('')
+  const [tagQuery, setTagQuery] = useState('')
 
   function toggle<K extends keyof FilterState>(key: K, value: unknown) {
     const arr = filter[key] as unknown[]
@@ -77,6 +83,9 @@ export function FilterPanel({ filter, update, reset, total, shown }: Props) {
         `${g.label} ${g.id}`.toLowerCase().includes(goalQuery.toLowerCase()),
       )
     : []
+  const filteredTags = tagQuery
+    ? allTags.filter((t) => t.toLowerCase().includes(tagQuery.toLowerCase()))
+    : allTags
 
   return (
     <aside className="flex h-full flex-col">
@@ -96,6 +105,15 @@ export function FilterPanel({ filter, update, reset, total, shown }: Props) {
       </div>
 
       <div className="scroll-slim grow overflow-y-auto pr-1">
+        <Section title="Arbeitsblatt">
+          <Chip
+            active={filter.hasWorksheet}
+            onClick={() => update({ hasWorksheet: !filter.hasWorksheet })}
+          >
+            Nur mit Arbeitsblatt
+          </Chip>
+        </Section>
+
         <Section title="Themenbereich">
           <div className="max-h-56 space-y-1 overflow-y-auto pr-1">
             {themes.map((t) => (
@@ -138,6 +156,20 @@ export function FilterPanel({ filter, update, reset, total, shown }: Props) {
                 onClick={() => toggle('types', t.id)}
               >
                 {t.labelDe}
+              </Chip>
+            ))}
+          </div>
+        </Section>
+
+        <Section title="Sozialform">
+          <div className="flex flex-wrap gap-1.5">
+            {participantModes.map((p) => (
+              <Chip
+                key={p.id}
+                active={filter.participantModes.includes(p.id)}
+                onClick={() => toggle('participantModes', p.id)}
+              >
+                {p.labelDe}
               </Chip>
             ))}
           </div>
@@ -212,6 +244,76 @@ export function FilterPanel({ filter, update, reset, total, shown }: Props) {
               ))}
             </div>
           )}
+        </Section>
+
+        <Section title="Tags">
+          <input
+            type="search"
+            value={tagQuery}
+            onChange={(e) => setTagQuery(e.target.value)}
+            placeholder="Tag suchen…"
+            className="w-full rounded-lg border border-slate-200 px-2 py-1.5 text-sm outline-none focus:border-isa-blue-deep"
+          />
+          {filter.tags.length > 0 && (
+            <div className="mt-2 flex flex-wrap gap-1">
+              {filter.tags.map((t) => (
+                <button
+                  key={t}
+                  type="button"
+                  onClick={() => toggle('tags', t)}
+                  className="rounded-full bg-isa-blue-deep px-2 py-0.5 text-[11px] text-white"
+                >
+                  {t} ✕
+                </button>
+              ))}
+            </div>
+          )}
+          {filteredTags.length > 0 && (
+            <div className="mt-2 max-h-44 space-y-0.5 overflow-y-auto pr-1">
+              {filteredTags.slice(0, 60).map((t) => (
+                <label
+                  key={t}
+                  className="flex cursor-pointer items-center gap-2 rounded px-1 py-0.5 text-xs text-slate-700 hover:bg-slate-50"
+                >
+                  <input
+                    type="checkbox"
+                    checked={filter.tags.includes(t)}
+                    onChange={() => toggle('tags', t)}
+                    className="accent-isa-blue-deep"
+                  />
+                  {t}
+                </label>
+              ))}
+            </div>
+          )}
+        </Section>
+
+        <Section title="Sprache">
+          <div className="flex flex-wrap gap-1.5">
+            {languages.map((l) => (
+              <Chip
+                key={l.id}
+                active={filter.languages.includes(l.id)}
+                onClick={() => toggle('languages', l.id)}
+              >
+                {l.labelDe}
+              </Chip>
+            ))}
+          </div>
+        </Section>
+
+        <Section title="Quelle">
+          <div className="flex flex-wrap gap-1.5">
+            {sources.map((s) => (
+              <Chip
+                key={s.id}
+                active={filter.sources.includes(s.id)}
+                onClick={() => toggle('sources', s.id)}
+              >
+                {s.labelDe}
+              </Chip>
+            ))}
+          </div>
         </Section>
       </div>
     </aside>
