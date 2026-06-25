@@ -14,6 +14,7 @@
 // ---------------------------------------------------------------------------
 
 import type { Material } from '../types/material'
+import generatedVariants from './variants.generated.json'
 
 export interface VariantSetting {
   /** Chip label incl. emoji, e.g. "🚀 Weltall". */
@@ -39,7 +40,9 @@ export interface MaterialVariants {
 // Demo set — two narrative materials, each with three extra settings.
 // ---------------------------------------------------------------------------
 
-export const variants: Record<string, MaterialVariants> = {
+// Hand-authored, carefully tuned variants. These take precedence over any
+// AI-generated overlay for the same material id.
+const manualVariants: Record<string, MaterialVariants> = {
   // Cooperation game: cross stepping-stones, leave no one behind.
   'inselrettung-nur-gemeinsam-ans-ufer': {
     base: '🏝️ Insel (Original)',
@@ -141,6 +144,13 @@ export const variants: Record<string, MaterialVariants> = {
       },
     ],
   },
+}
+
+// AI-generated overlay (validated & integrated by scripts/integrate-variants.mjs).
+// Manual entries win on id collision.
+export const variants: Record<string, MaterialVariants> = {
+  ...(generatedVariants as unknown as Record<string, MaterialVariants>),
+  ...manualVariants,
 }
 
 // ---------------------------------------------------------------------------
