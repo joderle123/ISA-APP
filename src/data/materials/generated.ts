@@ -14004,5 +14004,9950 @@ export const generated: Material[] = [
     },
     "language": "de",
     "source": "generated"
+  },
+  {
+    "id": "mein-innen-aussen-fenster-was-man-sieht-und-was-ich-fuehle",
+    "title": "Mein Innen-Außen-Fenster: Was man sieht und was ich fühle",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "C1",
+      "C2"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Einstieg im Sitzkreis"
+      },
+      {
+        "mode": "Individuel",
+        "note": "jedes Kind gestaltet sein eigenes Fenster"
+      }
+    ],
+    "themes": [
+      "selbstwahrnehmung",
+      "emotionen",
+      "fremdwahrnehmung"
+    ],
+    "tags": [
+      "Selbstwahrnehmung",
+      "Gefühle",
+      "Innen und Außen",
+      "Körpersignale",
+      "Basteln",
+      "Sitzkreis"
+    ],
+    "shortDescription": "Die Kinder entdecken, dass man von außen oft nicht sieht, wie es jemandem innen geht. Mit einem aufklappbaren Papier-Fenster malen sie zuerst ihr Gesicht (außen) und dann ihr Gefühl (innen). So lernen sie, eigene Gefühle wahrzunehmen und zu benennen, auch wenn man sie nicht sofort ansieht.",
+    "ablauf": [
+      {
+        "title": "Einstieg: Das Geheimnis hinter dem Lächeln",
+        "text": "Setzt euch in den Sitzkreis. Halte ein Bild von einem lächelnden Kind hoch und frage: 'Wisst ihr ganz sicher, wie sich dieses Kind fühlt?' Sammle Antworten. Erzähle dann eine kurze Geschichte: 'Lena lächelt, aber innen ist sie traurig, weil ihr Hund krank ist.' Erkläre kindgerecht: Außen (das Gesicht) und Innen (das Gefühl im Bauch) sind nicht immer gleich. Macht gemeinsam Probe-Gesichter: 'Zeigt ein fröhliches Gesicht – und jetzt denkt an etwas, das traurig macht, behaltet aber das Lächeln.'"
+      },
+      {
+        "title": "Hauptteil 1: Mein Fenster basteln",
+        "text": "Jedes Kind erhält ein Blatt mit einem aufgemalten Fensterrahmen, dessen 'Flügel' bereits eingeschnitten und faltbar sind (vorbereiten!). Auf den geschlossenen Fenster-Flügel malt das Kind sein Gesicht so, wie andere es von außen sehen. Begleite mit Fragen: 'Wie schaust du aus, wenn andere dich sehen?' Jüngere Kinder dürfen einen Spiegel benutzen, um ihr Gesicht abzuschauen."
+      },
+      {
+        "title": "Hauptteil 2: Was wohnt innen?",
+        "text": "Nun öffnen die Kinder die Fenster-Flügel. Auf die Innenseite malen sie das Gefühl, das gerade in ihnen wohnt – mit Farben, einem zweiten Gesicht oder einem Symbol (Sonne, Wolke, Gewitter). Geh herum und biete Gefühlswörter an: froh, traurig, wütend, aufgeregt, müde, mutig. Wichtig: Es gibt kein richtig oder falsch; jedes Innen-Bild ist erlaubt."
+      },
+      {
+        "title": "Abschluss: Fenster öffnen im Kreis",
+        "text": "Zurück im Kreis darf jedes Kind, das mag, sein Fenster zeigen: erst zu (außen), dann auf (innen). Wer nicht sprechen möchte, zeigt nur das Bild. Schließe mit der Kernbotschaft: 'Manchmal sieht man von außen nicht, wie es jemandem innen geht. Darum dürfen wir nachfragen: Wie geht es dir wirklich?' Die Fenster kommen an die Klassenwand zur 'Fenster-Galerie'."
+      }
+    ],
+    "duration": "35–45 Minuten",
+    "materialsNeeded": "Vorbereitete Blätter mit eingeschnittenem Fensterrahmen (Flügel zum Aufklappen), Wachsmalstifte oder Buntstifte, ein bruchsicherer Handspiegel, ein Bildimpuls (lächelndes Kind), optional Gefühls-Symbolkärtchen als Anregung.",
+    "remark": "Differenzierung: Für C1 die Fenster vorfalten und Gefühls-Symbole zum Aufkleben anbieten; C2 darf das Gefühl zusätzlich mit einem Wort beschriften. Sensibel bleiben: Wenn ein Kind ein belastendes Innen-Bild zeigt (z. B. anhaltende Traurigkeit), das Gespräch behutsam aufnehmen und ggf. an die ETEP-/SePAS-Fachkraft weitergeben.",
+    "etepStufen": [
+      1,
+      2
+    ],
+    "eldibGoals": [
+      "V-1",
+      "V-6",
+      "K-16",
+      "K-18",
+      "K-26",
+      "SOZ-9",
+      "SOZ-28",
+      "KOG-11",
+      "KOG-16"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "der-groesser-geworden-pass-was-ich-heute-schon-kann",
+    "title": "Der Größer-geworden-Pass: Was ich heute schon kann",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "C1",
+      "C2"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Individuel",
+        "note": "jedes Kind führt seinen eigenen Pass"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Vorstellrunde in Kleingruppen"
+      }
+    ],
+    "themes": [
+      "selbstwahrnehmung",
+      "selbstwertgefuehl",
+      "identitaet"
+    ],
+    "tags": [
+      "Selbstwahrnehmung",
+      "Können",
+      "Stärken",
+      "Stolz",
+      "Entwicklung",
+      "Pass"
+    ],
+    "shortDescription": "Die Kinder werden sich bewusst, wie viel sie schon können – vom Schuhe-Anziehen bis zum Trösten. Sie gestalten einen kleinen 'Größer-geworden-Pass', in den sie ihre Fähigkeiten als Stempel oder Bild eintragen. Das stärkt die positive Selbstwahrnehmung und das Gefühl 'Ich schaffe etwas'.",
+    "ablauf": [
+      {
+        "title": "Einstieg: Damals und heute",
+        "text": "Zeige im Sitzkreis ein Babyfoto (deins oder ein neutrales Bild). Frage: 'Was konnte dieses Baby noch nicht? Was könnt ihr heute alles schon?' Sammelt gemeinsam Beispiele und macht sie sichtbar: aufstehen, laufen, sprechen, malen, einem Freund helfen. Betone: 'Ihr seid jeden Tag ein kleines Stück größer und schlauer geworden – ganz von allein.'"
+      },
+      {
+        "title": "Hauptteil 1: Mein Pass entsteht",
+        "text": "Jedes Kind bekommt ein kleines gefaltetes Heftchen ('Pass') mit seinem Foto oder Namen auf dem Deckblatt. Auf jeder Seite steht ein einfaches Bild-Symbol für eine Fähigkeit (anziehen, aufräumen, teilen, trösten, mutig sein). Lies die Symbole gemeinsam vor. Jedes Kind überlegt: 'Was kann ich davon schon?' und markiert es mit einem Stempel, Sticker oder Daumen-hoch-Bild."
+      },
+      {
+        "title": "Hauptteil 2: Mein eigenes Können dazumalen",
+        "text": "Auf einer leeren Pass-Seite darf jedes Kind etwas malen, das es besonders gut kann und worauf es stolz ist – etwas, das auf den vorgedruckten Seiten noch nicht stand (z. B. schnell rennen, Tiere kennen, lustig sein). Geh herum und benenne das Können wertschätzend: 'Du kannst also wirklich gut … – das ist eine echte Stärke von dir.'"
+      },
+      {
+        "title": "Abschluss: Stolz-Runde in Kleingruppen",
+        "text": "Bildet Gruppen zu dritt oder viert. Reihum zeigt jedes Kind eine Seite und sagt: 'Ich kann schon …' Die anderen antworten gemeinsam mit einem Applaus oder einem Daumen hoch. Zum Schluss kommen alle im Kreis zusammen: 'Behaltet euren Pass gut – wenn ihr etwas Neues lernt, klebt eine neue Seite dazu.' So wird Selbstwahrnehmung als wachsender Prozess erlebbar."
+      }
+    ],
+    "duration": "40 Minuten",
+    "materialsNeeded": "Vorbereitete Mini-Hefte ('Pässe') mit Bild-Symbolen für Fähigkeiten, Foto oder Namensschild je Kind, Stempel/Sticker/Daumen-hoch-Aufkleber, Buntstifte, ein Babyfoto als Einstiegsimpuls.",
+    "remark": "Differenzierung: C1 markiert nur mit Stempeln/Stickern; C2 kann zu einem Können ein Wort oder kurzes Satzanfang-Bild ergänzen. Achtung Vergleich: Den Fokus konsequent auf 'Was kann ICH schon' lenken, nicht auf 'Wer kann mehr'. Kinder mit wenig Zutrauen gezielt begleiten und auch kleine Fähigkeiten ausdrücklich würdigen.",
+    "etepStufen": [
+      1,
+      2,
+      3
+    ],
+    "eldibGoals": [
+      "V-6",
+      "V-14",
+      "K-18",
+      "K-19",
+      "K-24",
+      "SOZ-9",
+      "SOZ-24",
+      "SOZ-25",
+      "SOZ-40",
+      "KOG-7"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "mein-wohlfuehl-ort-im-koerper-wo-die-ruhe-wohnt",
+    "title": "Mein Wohlfühl-Ort im Körper: Wo die Ruhe wohnt",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "C1",
+      "C2"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "gemeinsame Körperreise"
+      },
+      {
+        "mode": "Individuel",
+        "note": "Markieren auf der eigenen Körper-Silhouette"
+      }
+    ],
+    "themes": [
+      "selbstwahrnehmung",
+      "achtsamkeit",
+      "emotionen"
+    ],
+    "tags": [
+      "Selbstwahrnehmung",
+      "Körper",
+      "Achtsamkeit",
+      "Ruhe",
+      "Körpersignale",
+      "Wohlfühlen"
+    ],
+    "shortDescription": "Die Kinder spüren ihren eigenen Körper und entdecken, wo sich Ruhe und Wohlgefühl anfühlt – und wo sich Aufregung meldet. Über eine kurze Körperreise und eine Körper-Silhouette lernen sie, innere Signale wahrzunehmen und einen 'Wohlfühl-Ort' zu finden, an den sie in stressigen Momenten denken können.",
+    "ablauf": [
+      {
+        "title": "Einstieg: Hände aufwärmen und horchen",
+        "text": "Bittet die Kinder, sich bequem hinzusetzen. Reibt gemeinsam die Hände aneinander, bis sie warm sind, und legt sie auf den Bauch. Frage leise: 'Spürt ihr eure Hände? Spürt ihr, wie sich der Bauch hebt und senkt beim Atmen?' Erkläre einfach: 'Unser Körper schickt uns ständig kleine Nachrichten. Heute hören wir genau hin.'"
+      },
+      {
+        "title": "Hauptteil 1: Die kleine Körperreise",
+        "text": "Führe eine sehr kurze, ruhige Körperreise (ca. 3–4 Minuten). Mit ruhiger Stimme: 'Spürt eure Füße auf dem Boden … eure Beine … euren Bauch … eure Schultern … euer Gesicht.' An jeder Stelle eine kleine Pause. Streue Spür-Fragen ein: 'Wo fühlt es sich gerade warm und ruhig an? Wo vielleicht kribbelig?' Beende sanft: 'Atmet noch einmal tief ein und aus, und öffnet langsam die Augen.'"
+      },
+      {
+        "title": "Hauptteil 2: Wohlfühl-Ort markieren",
+        "text": "Jedes Kind bekommt eine einfache Körper-Silhouette (Umriss eines Kindes). Es klebt einen grünen Punkt oder malt eine kleine Sonne dorthin, wo sich Ruhe und Wohlgefühl angefühlt hat (oft Bauch, Brust oder Hände). Wer mag, klebt auch einen orangen Punkt dorthin, wo sich Aufregung meldet (z. B. Bauchkribbeln, Herzklopfen). Begleite mit ruhiger Stimme und benenne Körperstellen mit."
+      },
+      {
+        "title": "Abschluss: Mein Ruhe-Knopf",
+        "text": "Sammelt im Kreis: 'Wo wohnt bei dir die Ruhe?' Wer mag, zeigt am eigenen Körper hin. Übt einen 'Ruhe-Knopf': Die Kinder legen die Hand auf ihren Wohlfühl-Ort, atmen einmal tief und sagen innerlich 'Ich bin ruhig.' Schließe mit: 'Diesen Knopf habt ihr immer dabei – wenn ihr aufgeregt seid, könnt ihr die Hand auf euren Ruhe-Ort legen.' Die Silhouetten kommen in die persönliche Mappe."
+      }
+    ],
+    "duration": "30–35 Minuten",
+    "materialsNeeded": "Vorgedruckte Körper-Silhouetten (Kinder-Umriss), grüne und orange Klebepunkte oder Buntstifte, optional ruhige Hintergrundmusik, ggf. Matten oder Kissen für eine entspannte Sitzhaltung.",
+    "remark": "Differenzierung: C1 arbeitet nur mit grünen Punkten (Wohlfühl-Orte); C2 kann zusätzlich Aufregungs-Orte markieren und benennen. Hinweis: Manche Kinder spüren beim Stillsitzen Unruhe – das ist normal; biete eine ganz kurze Variante an und zwinge niemanden, die Augen zu schließen. Keine therapeutische Tiefenentspannung, sondern altersgerechtes Körperspüren.",
+    "etepStufen": [
+      1,
+      2
+    ],
+    "eldibGoals": [
+      "V-1",
+      "V-2",
+      "K-16",
+      "K-26",
+      "SOZ-9",
+      "KOG-2",
+      "KOG-11",
+      "KOG-16"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "ich-tasttuete-so-fuehlt-sich-mein-tag-an",
+    "title": "Ich-Tasttüte: So fühlt sich mein Tag an",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "C1",
+      "C2"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Grupp",
+        "note": "Tast-Stationen in Kleingruppen"
+      },
+      {
+        "mode": "Klass",
+        "note": "Abschlussrunde im Kreis"
+      }
+    ],
+    "themes": [
+      "selbstwahrnehmung",
+      "emotionen",
+      "achtsamkeit"
+    ],
+    "tags": [
+      "Selbstwahrnehmung",
+      "Tasten",
+      "Sinne",
+      "Gefühle",
+      "Stimmung",
+      "Material erfühlen"
+    ],
+    "shortDescription": "Über den Tastsinn nähern sich die Kinder ihrer eigenen Stimmung: Sie ertasten verschiedene Materialien (weich, hart, kratzig, glatt) und ordnen ihnen Gefühle zu. Dann wählen sie das Material, das ihrem heutigen Tag entspricht. So üben sie, innere Befindlichkeiten wahrzunehmen und mit Worten oder Bildern auszudrücken.",
+    "ablauf": [
+      {
+        "title": "Einstieg: Fühlen ohne Schauen",
+        "text": "Zeige im Kreis eine geheimnisvolle Stofftüte. Lass ein paar Kinder hineingreifen (ohne zu schauen) und beschreiben, was sie fühlen: 'Wie fühlt es sich an? Weich? Kratzig? Kalt?' Erkläre: 'Heute fühlen wir mit den Händen – und wir merken: So wie sich Sachen anfühlen, so können sich auch Gefühle anfühlen. Ein kratziger Tag, ein weicher Tag …'"
+      },
+      {
+        "title": "Hauptteil 1: Tast-Stationen erkunden",
+        "text": "Richtet vier Stationen mit klar unterscheidbaren Materialien ein: weich (Watte/Fell), hart (Stein/Holz), kratzig (Schwamm/Klett) und glatt/kühl (Seide/Metallöffel). In Kleingruppen wandern die Kinder von Station zu Station, ertasten und beschreiben. Stelle Gefühls-Brücken her: 'Wann fühlt sich ein Tag weich an? Wann kratzig?' und sammle die Ideen der Kinder."
+      },
+      {
+        "title": "Hauptteil 2: Mein Tages-Material wählen",
+        "text": "Jedes Kind bekommt eine kleine eigene 'Ich-Tasttüte' (Papiertüte) und wählt aus den Materialien dasjenige aus, das seinem heutigen Tag oder seiner jetzigen Stimmung entspricht. Es legt das Material in die Tüte und klebt außen ein passendes Gefühls-Gesicht (froh, traurig, wütend, ruhig) auf. Begleite mit Fragen: 'Warum hast du dir das ausgesucht? Wie fühlt sich dein Tag an?'"
+      },
+      {
+        "title": "Abschluss: Tüten-Runde",
+        "text": "Im Kreis darf jedes Kind, das mag, seine Tüte zeigen und sagen: 'Mein Tag fühlt sich heute … an.' Wer nicht sprechen will, zeigt nur das aufgeklebte Gesicht. Würdige jede Rückmeldung ohne Bewertung. Schließe mit: 'Unsere Tage und Gefühle fühlen sich jeden Tag ein bisschen anders an – und alle Gefühle dürfen da sein.' Die Tüten können in der persönlichen Mappe gesammelt werden, um über die Woche Veränderungen zu bemerken."
+      }
+    ],
+    "duration": "35–45 Minuten",
+    "materialsNeeded": "Stofftüte für den Einstieg; je Station deutlich verschiedene Tastmaterialien (Watte/Fell, Stein/Holz, Schwamm/Klett, Seide/Metalllöffel); kleine Papiertüten für jedes Kind; aufklebbare Gefühls-Gesichter; ggf. Tabletts zur Stationsordnung.",
+    "remark": "Differenzierung: C1 wählt nur ein Material und ein Gesicht; C2 kann zwei Materialien für 'morgens/jetzt' wählen und den Unterschied beschreiben. Sicherheit: Nur ungefährliche, saubere Materialien ohne scharfe Kanten oder Verschluckungsgefahr verwenden; auf Allergien (z. B. Tierfell, Wolle) achten und Alternativen bereithalten.",
+    "etepStufen": [
+      1,
+      2
+    ],
+    "eldibGoals": [
+      "V-1",
+      "V-7",
+      "K-16",
+      "K-26",
+      "SOZ-9",
+      "SOZ-15",
+      "KOG-2",
+      "KOG-13",
+      "KOG-20"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "klar-gesagt-vom-murmeln-zur-deutlichen-botschaft",
+    "title": "Klar gesagt: Vom Murmeln zur deutlichen Botschaft",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "C2",
+      "C3"
+    ],
+    "type": [
+      "ganz Stonn"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "ganze Klasse im Sitzkreis, später Partnerarbeit"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Partner- oder Dreiergruppen für die Übungsphase"
+      }
+    ],
+    "themes": [
+      "kommunikation",
+      "selbstwahrnehmung"
+    ],
+    "tags": [
+      "deutlich sprechen",
+      "sender",
+      "lautstaerke",
+      "blickkontakt",
+      "verstaendlichkeit",
+      "sprechtraining"
+    ],
+    "shortDescription": "Eine ganze Stunde rund um die Frage: Wie sage ich etwas so, dass mein Gegenüber es wirklich versteht? Die Kinder erleben am eigenen Leib, wie Nuscheln, Tempo, Lautstärke und Blickkontakt darüber entscheiden, ob eine Botschaft ankommt. Sie üben in spielerischen Aufträgen, vom Murmeln zur klaren Botschaft zu wechseln, und entwickeln eine gemeinsame Checkliste für deutliches Sprechen.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Das Murmel-Experiment (10 Min.)",
+        "text": "Setzt euch in den Sitzkreis. Sage zu Beginn bewusst sehr leise, schnell und mit gesenktem Blick einen wichtigen Satz, z. B. 'Heute machen wir am Ende ein Geheimspiel.' Frage anschließend: 'Wer hat verstanden, was ich gesagt habe?' Sammle, was angekommen ist (meist Bruchstücke). Sprich denselben Satz nun deutlich, ruhig und mit Blickkontakt. Vergleicht gemeinsam: Was war anders? Halte an der Tafel die ersten Vermutungen der Kinder fest, woran 'gut verstanden werden' liegt."
+      },
+      {
+        "title": "Hinführung – Die vier Stellschrauben (8 Min.)",
+        "text": "Stelle vier 'Stellschrauben' für deutliches Sprechen vor und visualisiere sie mit je einem einfachen Symbol an der Tafel: LAUTSTÄRKE (Lautsprecher), TEMPO (Schnecke/Hase), MUND (offen sprechen statt nuscheln) und AUGEN (Blickkontakt). Macht zu jeder Stellschraube gemeinsam ein kurzes Mini-Beispiel: einmal denselben Satz zu leise, einmal zu schnell, einmal mit Hand vor dem Mund, einmal mit abgewandtem Blick. Die Klasse hebt die Hand, sobald die Botschaft 'klar angekommen' ist."
+      },
+      {
+        "title": "Hauptteil – Botschafts-Werkstatt in Partnerarbeit (18 Min.)",
+        "text": "Bildet Paare und stellt euch mit ca. drei Metern Abstand gegenüber (oder mit dem Rücken zu einer Geräuschquelle). Partner A zieht eine Auftragskarte mit einer kurzen Nachricht (z. B. 'Wir treffen uns morgen früh am roten Tor.') und überbringt sie. Partner B wiederholt, was angekommen ist. Gelingt es, tauschen die Rollen. Steigere die Schwierigkeit: Hintergrundgeräusch (alle summen leise) – jetzt müssen die Stellschrauben bewusst eingesetzt werden. Gehe herum und gib gezieltes Feedback mit den Symbolnamen: 'Probier die Schnecke' oder 'Augen helfen dir.'"
+      },
+      {
+        "title": "Abschluss – Unsere Klassen-Checkliste (9 Min.)",
+        "text": "Kommt im Kreis zusammen. Jedes Kind nennt eine Stellschraube, die ihm heute geholfen hat. Formuliert daraus gemeinsam vier kurze Merksätze für deutliches Sprechen (z. B. 'Ich spreche laut genug.', 'Ich nehme mir Zeit.', 'Ich öffne den Mund.', 'Ich schaue dich an.') und schreibt sie auf ein Plakat für die Klassenwand. Schließe mit einer Blitzlicht-Runde: 'Wann brauche ich diese Stellschrauben außerhalb der Schule?'"
+      }
+    ],
+    "duration": "ca. 45–50 Min.",
+    "materialsNeeded": "Tafel/Flipchart, vorbereitete Auftragskarten mit kurzen Nachrichten (8–12 Stück), Plakat und dicke Stifte für die Klassen-Checkliste, vier einfache Symbolkarten (Lautsprecher, Schnecke/Hase, Mund, Augen).",
+    "remark": "Differenzierung: Sehr zurückhaltenden oder sprechängstlichen Kindern zuerst die Zuhörer-/Wiederholrolle anbieten; Nachrichten bei Bedarf bildgestützt vorgeben. Achte darauf, dass 'deutlich' nicht mit 'schreien' verwechselt wird – die Lautstärke-Schraube hat auch ein 'zu laut'. Kinder mit Hörbeeinträchtigung in der Übungsphase mit gutem Blickkontakt und ohne Störgeräusch koppeln.",
+    "etepStufen": [
+      3,
+      4
+    ],
+    "eldibGoals": [
+      "K-9",
+      "K-10",
+      "K-12",
+      "K-14",
+      "K-17",
+      "K-30",
+      "SOZ-15",
+      "SOZ-19",
+      "SOZ-33",
+      "KOG-38"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "paraphrasieren-profis-in-eigenen-worten-wiederholen",
+    "title": "Paraphrasieren-Profis: In eigenen Worten wiederholen",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "C2",
+      "C3"
+    ],
+    "type": [
+      "ganz Stonn"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Einstieg und Abschluss im Plenum"
+      },
+      {
+        "mode": "Grupp",
+        "note": "feste Dreiergruppen mit Rollen: Erzähler, Spiegel, Beobachter"
+      }
+    ],
+    "themes": [
+      "kommunikation",
+      "beziehungsaufbau"
+    ],
+    "tags": [
+      "paraphrasieren",
+      "aktives zuhoeren",
+      "rueckmeldung",
+      "verstanden",
+      "ich habe gehoert",
+      "wertschaetzung"
+    ],
+    "shortDescription": "Echtes Zuhören zeigt sich, wenn man in eigenen Worten wiederholen kann, was gemeint war. In dieser Stunde lernen die Kinder die 'Ich-habe-gehört'-Technik kennen und üben in Dreiergruppen, Gesagtes treffend zu spiegeln statt einfach nur abzuwarten, bis sie selbst dran sind. So entsteht ein Gefühl dafür, wie wertschätzend es ist, richtig verstanden zu werden.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Das stille Telefon stimmt nicht (8 Min.)",
+        "text": "Erzähle der Klasse eine kurze, etwas verschachtelte Mitteilung, z. B. 'Meine Nachbarin hat mir erzählt, dass ihr Hund am Samstag beim Tierarzt war, weil er einen Igel zu nah beschnuppert hat.' Frage einzelne Kinder spontan: 'Was habe ich gerade erzählt?' Sammle die Versionen – meist verschiebt sich der Inhalt. Leite über: 'Heute werden wir Profis darin, das, was jemand sagt, so genau wie möglich in eigenen Worten zurückzugeben. Das nennt man paraphrasieren.'"
+      },
+      {
+        "title": "Modell – Die 'Ich-habe-gehört'-Brücke (9 Min.)",
+        "text": "Führe die Satzbrücke ein und schreibe sie sichtbar an: 'Ich habe gehört, dass …' und 'Habe ich dich richtig verstanden?'. Bitte ein Kind, dir einen Satz über sein Wochenende zu sagen. Spiegle es laut vor: 'Ich habe gehört, dass du … Habe ich das richtig verstanden?' Das Kind bestätigt oder korrigiert. Macht zwei, drei weitere Durchgänge im Plenum, sodass alle die Brücke einmal hören. Betone: Paraphrasieren heißt nicht nachplappern, sondern mit eigenen Worten."
+      },
+      {
+        "title": "Hauptteil – Dreiergruppen mit Rollen (20 Min.)",
+        "text": "Bildet Dreiergruppen mit den Rollen ERZÄHLER, SPIEGEL und BEOBACHTER. Der Erzähler berichtet zu einer Impulskarte (z. B. 'ein schöner Moment in den Ferien', 'mein Lieblingsessen und warum'). Der Spiegel antwortet mit der 'Ich-habe-gehört'-Brücke und fragt nach, ob er es richtig getroffen hat. Der Beobachter achtet mit einer kleinen Beobachterkarte darauf, ob der Spiegel a) in eigenen Worten gesprochen und b) nachgefragt hat, und gibt danach eine freundliche Rückmeldung. Nach jeder Runde rotieren die Rollen, sodass jedes Kind einmal Spiegel war. Gehe herum und unterstütze zögernde Spiegel mit dem Anfang der Satzbrücke."
+      },
+      {
+        "title": "Abschluss – Wie fühlt sich Verstandenwerden an? (8 Min.)",
+        "text": "Kommt in den Kreis. Stelle zwei Reflexionsfragen: 'Wie war es, gespiegelt zu werden – hat es sich anders angefühlt als sonst?' und 'Was war schwieriger: zuhören oder mit eigenen Worten wiederholen?' Sammle einige Stimmen. Vereinbart als Klasse einen kleinen Auftrag für die Woche: einmal bewusst die 'Ich-habe-gehört'-Brücke benutzen, z. B. im Streitfall oder beim Helfen. Verabschiede mit einem Daumen-Blitzlicht zur eigenen Spiegel-Leistung."
+      }
+    ],
+    "duration": "ca. 45–50 Min.",
+    "materialsNeeded": "Tafel/Plakat mit den Satzbrücken, Impulskarten mit Erzählthemen (mind. 1 pro Gruppe), kleine Beobachterkarten mit zwei Ankreuzpunkten ('eigene Worte' / 'nachgefragt'), optional ein weicher Gegenstand als Erzähler-Zeichen.",
+    "remark": "Differenzierung: Für jüngere oder sprachschwächere Kinder kürzere, konkrete Impulse wählen und die Beobachterkarte mit Bildsymbolen statt Text gestalten. Hinweis: Persönliche Inhalte freiwillig halten – niemand muss etwas Privates erzählen; neutrale Themen als Ausweichkarte bereithalten. In sehr lebhaften Gruppen die Erzählzeit mit einer kleinen Sanduhr begrenzen.",
+    "etepStufen": [
+      3,
+      4
+    ],
+    "eldibGoals": [
+      "K-9",
+      "K-14",
+      "K-15",
+      "K-17",
+      "K-28",
+      "K-30",
+      "SOZ-15",
+      "SOZ-26",
+      "SOZ-33",
+      "SOZ-37",
+      "V-10",
+      "KOG-37"
+    ],
+    "worksheet": {
+      "title": "Beobachterkarte – Paraphrasieren-Profis",
+      "intro": "Du bist Beobachter. Achte beim Spiegel auf diese zwei Dinge und gib danach eine freundliche Rückmeldung.",
+      "blocks": [
+        {
+          "kind": "checklist",
+          "items": [
+            "Der Spiegel hat in eigenen Worten wiederholt (nicht nur nachgeplappert).",
+            "Der Spiegel hat nachgefragt: 'Habe ich dich richtig verstanden?'"
+          ]
+        },
+        {
+          "kind": "question",
+          "text": "Was hat der Spiegel besonders gut gemacht?",
+          "lines": 2
+        },
+        {
+          "kind": "scale",
+          "text": "Wie gut wurde der Erzähler verstanden?",
+          "items": [
+            "noch üben",
+            "geht so",
+            "richtig gut"
+          ]
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "der-gefuehls-dolmetscher-sagen-wie-es-mir-geht",
+    "title": "Der Gefühls-Dolmetscher: Sagen, wie es mir geht",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "C2",
+      "C3"
+    ],
+    "type": [
+      "ganz Stonn"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Sitzkreis für Einstieg und Abschluss"
+      },
+      {
+        "mode": "Individuel",
+        "note": "kurze Einzelarbeit am Gefühls-Dolmetscher-Blatt"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Partnerarbeit zum Üben der Gefühlssätze"
+      }
+    ],
+    "themes": [
+      "kommunikation",
+      "emotionen"
+    ],
+    "tags": [
+      "gefuehle benennen",
+      "ich botschaft",
+      "wortschatz gefuehle",
+      "ausdruecken",
+      "selbstoeffnung",
+      "verstanden werden"
+    ],
+    "shortDescription": "Wer sagen kann, wie es ihm geht, muss seltener mit Wut oder Rückzug 'sprechen'. In dieser Stunde wird jedes Kind zum Gefühls-Dolmetscher: Es lernt, körperliche Anzeichen in Worte zu übersetzen und einfache Gefühlssätze zu bilden ('Ich fühle mich …, weil …'). So wächst der Wortschatz für Gefühle und die Fähigkeit, sich anderen verständlich mitzuteilen.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Gefühle haben einen Körper (9 Min.)",
+        "text": "Beginnt im Sitzkreis. Zeige nacheinander drei Gefühlskarten (z. B. froh, traurig, wütend, aufgeregt, ängstlich) und frage zu jeder: 'Wo im Körper spürt man das? Was macht der Körper?' Sammle Antworten (z. B. 'Bauch kribbelt', 'Schultern hoch', 'heißer Kopf'). Halte fest: Gefühle senden zuerst ein Körpersignal – und unsere Aufgabe heute ist, dieses Signal in Worte zu übersetzen, damit andere uns verstehen."
+      },
+      {
+        "title": "Hinführung – Der Gefühls-Satz (8 Min.)",
+        "text": "Stelle die Satzbrücke des Gefühls-Dolmetschers vor und schreibe sie groß an: 'Ich fühle mich … , weil … .' Mache es an einem Alltagsbeispiel vor: 'Ich fühle mich aufgeregt, weil wir gleich etwas Neues ausprobieren.' Erweitert gemeinsam den Gefühls-Wortschatz: Sammelt an der Tafel über 'froh – traurig – wütend – Angst' hinaus weitere Wörter (stolz, enttäuscht, einsam, neugierig, erleichtert) und ordnet sie grob in 'angenehm' und 'unangenehm'."
+      },
+      {
+        "title": "Hauptteil – Dolmetscher-Blatt und Partner-Übung (19 Min.)",
+        "text": "Teile das Gefühls-Dolmetscher-Blatt aus. Jedes Kind wählt zunächst in Einzelarbeit zwei reale Situationen aus dem eigenen Alltag und übersetzt sie in einen Gefühls-Satz ('Ich fühle mich …, weil …'). Bildet danach Paare: Die Kinder lesen sich gegenseitig ihre Gefühls-Sätze vor; der Partner antwortet mit einer kurzen, anerkennenden Rückmeldung ('Danke, dass du mir das sagst.'). Gehe herum, unterstütze beim Finden des passenden Gefühlsworts und ermutige, das 'weil' wirklich zu füllen. Wichtig: Inhalte bleiben freiwillig, niemand muss etwas Belastendes teilen."
+      },
+      {
+        "title": "Abschluss – Mein Gefühls-Wort für heute (9 Min.)",
+        "text": "Kommt in den Kreis zurück. Jedes Kind nennt in einer Blitzlicht-Runde mit der Satzbrücke ein Gefühl für genau jetzt ('Ich fühle mich … , weil …'). Reflektiert gemeinsam: 'Warum hilft es, Gefühle in Worte zu fassen, statt sie nur zu zeigen?' und 'Wem könnte ich diese Woche einmal sagen, wie es mir geht?' Hänge die Gefühls-Wortschatz-Sammlung sichtbar in der Klasse auf, damit die Wörter im Alltag verfügbar bleiben."
+      }
+    ],
+    "duration": "ca. 45–50 Min.",
+    "materialsNeeded": "Gefühlskarten oder Gefühls-Smileys (5–8 Stück), Tafel/Plakat für die Satzbrücke und den Wortschatz, ein Gefühls-Dolmetscher-Arbeitsblatt pro Kind, Stifte.",
+    "remark": "Sensibler Themenbereich: Teilnahme an persönlichen Beispielen ist freiwillig; halte neutrale Beispielkarten bereit. Beobachte, ob ein Kind wiederholt von belastenden Gefühlen berichtet, und suche bei Bedarf später ein Einzelgespräch. Differenzierung: jüngeren Kindern die Satzbrücke mit eingeklebten Gefühls-Smileys als Auswahl anbieten; das 'weil' kann anfangs auch nur mündlich ergänzt werden.",
+    "etepStufen": [
+      2,
+      3
+    ],
+    "eldibGoals": [
+      "K-15",
+      "K-16",
+      "K-17",
+      "K-18",
+      "K-26",
+      "K-30",
+      "SOZ-9",
+      "SOZ-15",
+      "SOZ-37",
+      "V-5",
+      "KOG-37"
+    ],
+    "worksheet": {
+      "title": "Mein Gefühls-Dolmetscher",
+      "intro": "Übersetze, wie es dir geht, in Worte. Benutze die Satzbrücke: 'Ich fühle mich … , weil … .'",
+      "blocks": [
+        {
+          "kind": "instruction",
+          "text": "Such dir aus dem Wortschatz an der Tafel passende Gefühlswörter aus."
+        },
+        {
+          "kind": "heading",
+          "text": "Situation 1"
+        },
+        {
+          "kind": "lines",
+          "text": "Ich fühle mich ",
+          "lines": 1
+        },
+        {
+          "kind": "lines",
+          "text": "weil ",
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "Situation 2"
+        },
+        {
+          "kind": "lines",
+          "text": "Ich fühle mich ",
+          "lines": 1
+        },
+        {
+          "kind": "lines",
+          "text": "weil ",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "Wem möchtest du diese Woche sagen, wie es dir geht?",
+          "lines": 1
+        },
+        {
+          "kind": "scale",
+          "text": "Wie leicht fällt es mir, über Gefühle zu sprechen?",
+          "items": [
+            "noch schwer",
+            "geht so",
+            "schon gut"
+          ]
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "reihum-reden-die-redekugel-der-klasse",
+    "title": "Reihum reden: Die Redekugel der Klasse",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "C2",
+      "C3"
+    ],
+    "type": [
+      "ganz Stonn"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "gesamte Klasse im Stuhl- oder Sitzkreis"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Kleingruppen mit eigener Redekugel für die Übungsrunde"
+      }
+    ],
+    "themes": [
+      "kommunikation",
+      "kooperation"
+    ],
+    "tags": [
+      "ausreden lassen",
+      "gespraechsregeln",
+      "redekugel",
+      "abwarten",
+      "zuhoeren",
+      "gesprochsrunde"
+    ],
+    "shortDescription": "Wenn alle gleichzeitig reden, versteht niemand etwas. In dieser Stunde erfindet die Klasse ihre 'Redekugel': Nur wer sie hält, spricht – alle anderen hören zu und warten ihren Moment ab. Die Kinder erleben den Unterschied zwischen Durcheinander und geordnetem Gespräch und entwickeln gemeinsame Gesprächsregeln, die danach im Klassenrat und in Gruppenarbeiten weiterleben.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Das große Durcheinander (8 Min.)",
+        "text": "Stelle eine einfache Frage in die Runde, zu der alle etwas zu sagen haben (z. B. 'Was ist dein Lieblingstier?'), und fordere ausdrücklich auf: 'Alle gleichzeitig, los!' Lass das Durcheinander zwei, drei Sekunden zu und stoppe dann. Frage: 'Wer hat verstanden, was die Person neben sich gesagt hat?' Sammle die Frustration ('zu laut', 'nichts verstanden'). Leite über: 'Heute finden wir heraus, wie ein Gespräch funktioniert, in dem wirklich jeder gehört wird.'"
+      },
+      {
+        "title": "Einführung – Die Redekugel und ihre Regel (8 Min.)",
+        "text": "Hole einen besonderen Gegenstand hervor (ein weicher Ball, ein bemalter Stein oder ein Kuscheltier) und tauft ihn zur 'Redekugel'. Erkläre die Grundregel und schreibe sie an: 'Nur wer die Redekugel hält, spricht. Alle anderen hören zu und schauen die sprechende Person an.' Macht eine erste langsame Proberunde mit derselben Frage von vorhin: Die Kugel wandert reihum, jedes Kind sagt höchstens einen Satz und gibt dann weiter. Wer nichts sagen möchte, sagt 'Ich gebe weiter' und reicht die Kugel."
+      },
+      {
+        "title": "Hauptteil – Gesprächsrunden in Kleingruppen (19 Min.)",
+        "text": "Bildet Gruppen von vier bis fünf Kindern, jede Gruppe bekommt eine eigene Redekugel und eine Gesprächskarte mit einem Thema (z. B. 'Was macht eine gute Pause aus?', 'Welche Klassenregel ist die wichtigste?'). Die Kugel wandert mehrere Runden; in einer zweiten Runde dürfen die Kinder auch auf das Gesagte der anderen eingehen ('Ich sehe das auch so, weil …'). Beobachte, wo das Abwarten schwerfällt, und erinnere ruhig an die Regel. Gib in der Mitte ein kurzes Signal, damit die Gruppen zur Anschluss-Runde wechseln, in der sie sich auf eine gemeinsame Antwort einigen."
+      },
+      {
+        "title": "Abschluss – Unsere Gesprächsregeln (10 Min.)",
+        "text": "Kommt im Plenum zusammen. Sammelt gemeinsam, was geholfen hat, damit jeder gehört wurde, und formuliert daraus drei bis vier Gesprächsregeln (z. B. 'Nur einer spricht.', 'Ich lasse ausreden.', 'Ich schaue die sprechende Person an.', 'Ich darf auch passen.'). Schreibt sie auf ein Plakat und vereinbart, dass die Redekugel ab jetzt fest zum Klassenrat und zu Gruppenarbeiten gehört. Schließe mit einer kurzen Reflexion: 'Wann ist Ausreden-Lassen besonders schwer – und warum lohnt es sich trotzdem?'"
+      }
+    ],
+    "duration": "ca. 45–50 Min.",
+    "materialsNeeded": "Mehrere 'Redekugeln' (weiche Bälle, bemalte Steine oder Kuscheltiere – eine pro Kleingruppe plus eine fürs Plenum), Gesprächskarten mit altersgerechten Themen, Plakat und Stifte für die Gesprächsregeln, optional eine kleine Klangschale oder Triangel als Signal.",
+    "remark": "Differenzierung: In sehr lebhaften oder großen Klassen die Runden zeitlich begrenzen (Sanduhr) und die Gruppen klein halten. Für Kinder mit Impulskontroll-Schwierigkeiten den Erfolg des Wartens ausdrücklich loben und ihnen früh in der Runde die Kugel geben. Wichtig: 'Passen' ist erlaubt – niemand wird zum Sprechen gezwungen; Schweigen ist eine gültige Form der Teilnahme.",
+    "etepStufen": [
+      3,
+      4
+    ],
+    "eldibGoals": [
+      "K-9",
+      "K-17",
+      "K-30",
+      "V-10",
+      "V-16",
+      "V-20",
+      "SOZ-18",
+      "SOZ-19",
+      "SOZ-27",
+      "SOZ-32",
+      "SOZ-33",
+      "KOG-37"
+    ],
+    "worksheet": {
+      "title": "Unsere Redekugel-Regeln",
+      "intro": "Haltet fest, was euch geholfen hat, damit jeder gehört wurde.",
+      "blocks": [
+        {
+          "kind": "instruction",
+          "text": "Kreuzt die Regeln an, die ihr in der Klasse benutzen wollt, und ergänzt eine eigene."
+        },
+        {
+          "kind": "checklist",
+          "items": [
+            "Nur wer die Redekugel hält, spricht.",
+            "Ich lasse die anderen ausreden.",
+            "Ich schaue die sprechende Person an.",
+            "Ich darf auch 'Ich gebe weiter' sagen."
+          ]
+        },
+        {
+          "kind": "lines",
+          "text": "Unsere eigene Regel:",
+          "lines": 2
+        },
+        {
+          "kind": "scale",
+          "text": "Wie gut ist uns das Abwarten heute gelungen?",
+          "items": [
+            "noch üben",
+            "geht so",
+            "richtig gut"
+          ]
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "vertrauens-werkstatt-wir-bauen-die-bruecke-der-klasse",
+    "title": "Vertrauens-Werkstatt: Wir bauen die Brücke der Klasse",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "C3",
+      "C4"
+    ],
+    "type": [
+      "Projet"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "gemeinsames Klassenprojekt über mehrere Einheiten"
+      },
+      {
+        "mode": "Grupp",
+        "note": "feste Bau-Teams zu 3–4 Kindern"
+      }
+    ],
+    "themes": [
+      "beziehungsaufbau",
+      "kooperation",
+      "kommunikation"
+    ],
+    "tags": [
+      "Vertrauen",
+      "Teamarbeit",
+      "Klassengemeinschaft",
+      "Brückenbau",
+      "Verlässlichkeit",
+      "Projekt",
+      "Zusammenhalt"
+    ],
+    "shortDescription": "In einem mehrteiligen Projekt baut die Klasse aus Alltagsmaterial gemeinsam eine stabile 'Brücke der Klasse' – als Sinnbild dafür, dass Beziehungen tragen, wenn man sich aufeinander verlassen kann. Die Kinder erleben, dass eine Brücke nur hält, wenn jeder seinen Teil verlässlich beiträgt. Über mehrere Einheiten wachsen Vertrauen, Absprachefähigkeit und das Gefühl, als Gruppe etwas zu schaffen.",
+    "ablauf": [
+      {
+        "title": "Einstieg: Was eine Brücke und eine Freundschaft gemeinsam haben",
+        "text": "Versammelt euch im Kreis. Zeige Bilder von Brücken (Holzsteg, Hängebrücke, Steinbogen) und frage: 'Was passiert, wenn nur ein Brett fehlt? Würdet ihr drübergehen?' Leitet gemeinsam ab: Eine Brücke trägt nur, wenn alle Teile zusammenhalten. Übertragt das auf die Klasse: 'Worauf müssen wir uns bei euch verlassen können, damit die Klasse trägt?' Sammelt erste Ideen (zuhören, helfen, sich an Absprachen halten) auf einem Plakat 'Was uns trägt'. Stelle das Projektziel vor: In den nächsten Einheiten baut ihr gemeinsam eine echte, begehbare oder belastbare Brücke aus Material – und nehmt euch dabei selbst unter die Lupe."
+      },
+      {
+        "title": "Hauptteil 1: Bau-Teams und ein verlässliches Versprechen",
+        "text": "Bildet feste Bau-Teams zu 3–4 Kindern (gemischt, nicht nur Freundesgruppen). Jedes Team bekommt einen Bauauftrag für einen Brückenabschnitt (z. B. Pfeiler, Mittelteil, Geländer) und gleiches Material (Zeitungsrollen, Pappe, Klebeband, Schnur). Wichtig: Bevor gebaut wird, vereinbart jedes Team drei Team-Regeln und schreibt sie auf eine Karte ('So arbeiten wir zusammen'). Jedes Kind übernimmt zusätzlich eine Rolle (Material-Holer:in, Zeit-Wächter:in, Ideen-Sammler:in, Verbinder:in zu den Nachbar-Teams). Begleite, indem du gezielt nach Absprachen fragst statt Lösungen vorzugeben."
+      },
+      {
+        "title": "Hauptteil 2: Bauen, abstimmen, aneinander anschließen",
+        "text": "Die Teams bauen ihren Abschnitt – aber die Brücke gelingt nur, wenn die Abschnitte am Ende zusammenpassen. Deshalb müssen sich benachbarte Teams regelmäßig abstimmen (Höhe, Breite, Verbindungsstellen). Plane bewusste 'Brücken-Konferenzen' ein: Alle Verbinder:innen treffen sich kurz, klären Übergänge und tragen Ergebnisse zurück ins Team. Tauchen Streit oder Frust auf, nutze die Team-Regelkarten als Anker: 'Was hattet ihr euch versprochen?' Halte fest, wo Verlässlichkeit besonders geholfen hat."
+      },
+      {
+        "title": "Hauptteil 3: Belastungsprobe und Würdigung",
+        "text": "Setzt die Abschnitte zur Gesamtbrücke zusammen und macht eine feierliche 'Belastungsprobe' (z. B. ein Spielzeugauto oder Gewicht über die Brücke führen). Egal ob die Brücke perfekt hält: Lenkt den Blick auf die Zusammenarbeit. Jedes Team berichtet: 'Worauf konnten wir uns verlassen? Wo mussten wir uns ganz neu absprechen?' Würdigt namentlich verlässliches Verhalten ('… hat immer an die Verbindungsstelle gedacht')."
+      },
+      {
+        "title": "Abschluss: Unsere Brücke der Klasse",
+        "text": "Ergänzt das Plakat 'Was uns trägt' mit den echten Erfahrungen aus dem Bau. Jedes Kind schreibt oder malt auf ein 'Brückenbrett' (Pappstreifen), worauf andere sich bei ihm verlassen können, und hängt es sichtbar an die fertige Brücke. Vereinbart einen 'Brücken-Check' in zwei Wochen: Halten wir, was wir versprochen haben? So wird das Bild der tragenden Brücke zum dauerhaften Bezugspunkt für die Klassengemeinschaft."
+      }
+    ],
+    "duration": "3–4 Einheiten à 45–60 Minuten (Projektwoche oder über mehrere Tage)",
+    "materialsNeeded": "Zeitungen/Papierrollen, Pappe und Kartonstreifen, Klebeband, Schnur/Wolle, Scheren; Bildimpulse verschiedener Brücken; großes Plakat 'Was uns trägt'; Karten für Team-Regeln und Rollen; Pappstreifen als 'Brückenbretter'; ein kleines Gewicht oder Spielzeugauto für die Belastungsprobe.",
+    "remark": "Differenzierung: Für C3 die Bauaufträge stärker vorstrukturieren und Rollen mit Bildsymbolen versehen; C4 kann eigene Konstruktionspläne skizzieren und die 'Brücken-Konferenzen' selbst moderieren. Sicherheit: stabile Tische, keine spitzen Werkzeuge, Belastungsprobe nur mit leichten Gegenständen. Gruppenbildung bewusst steuern, damit isolierte Kinder eingebunden werden; bei festgefahrenen Konflikten kurz unterbrechen und die Team-Regelkarte als neutralen Bezugspunkt nutzen.",
+    "etepStufen": [
+      3,
+      4
+    ],
+    "eldibGoals": [
+      "V-16",
+      "V-18",
+      "V-27",
+      "K-17",
+      "K-22",
+      "K-27",
+      "K-28",
+      "SOZ-18",
+      "SOZ-22",
+      "SOZ-26",
+      "SOZ-32",
+      "SOZ-41"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "steckbrief-tandems-mein-mensch-der-woche",
+    "title": "Steckbrief-Tandems: Mein Mensch der Woche",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "C3",
+      "C4"
+    ],
+    "type": [
+      "Projet"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Tandem-Auslosung und Vorstellrunden in der Klasse"
+      },
+      {
+        "mode": "Grupp",
+        "note": "wechselnde Zweierteams (Tandems) über mehrere Wochen"
+      }
+    ],
+    "themes": [
+      "beziehungsaufbau",
+      "fremdwahrnehmung",
+      "kommunikation"
+    ],
+    "tags": [
+      "Kennenlernen",
+      "Tandem",
+      "Interview",
+      "Wertschätzung",
+      "Gemeinsamkeiten",
+      "Projekt",
+      "Steckbrief"
+    ],
+    "shortDescription": "Über mehrere Wochen lernt jedes Kind im Tandem ein anderes Kind der Klasse wirklich kennen – nicht nur die offensichtlichen 'Beste-Freunde'-Verbindungen. Durch Interviews, gemeinsame Mini-Aufgaben und einen wertschätzenden Steckbrief entstehen neue Beziehungen quer durch die Klasse. Die Kinder entdecken Gemeinsamkeiten, üben echtes Zuhören und stellen ihr Tandem-Kind stolz vor.",
+    "ablauf": [
+      {
+        "title": "Einstieg: Wen kenne ich eigentlich kaum?",
+        "text": "Macht im Kreis eine stille Übung: 'Stellt euch vor unsere Klasse als Landkarte. Zu wem führt schon ein breiter Weg – und zu wem fast keiner?' Niemand muss Namen nennen. Erkläre das Projekt: 'In den nächsten Wochen baut jeder einen neuen Weg zu einem Kind, das er noch nicht so gut kennt.' Lost erste Tandems aus (bewusst nicht nach Freundschaften). Stelle klar, dass es nicht ums 'Müssen-Mögen' geht, sondern ums Kennenlernen: Man kann jemanden interessant finden, auch wenn man sonst wenig miteinander zu tun hat."
+      },
+      {
+        "title": "Hauptteil 1: Das gute Interview üben",
+        "text": "Bevor die Tandems starten, übt gemeinsam 'gutes Fragen und Zuhören'. Sammelt Beispiele für offene Fragen ('Was machst du am liebsten, wenn du frei hast?') gegenüber Ja/Nein-Fragen. Modelliere mit einem Kind ein kurzes Interview vor der Klasse: zugewandt sitzen, ausreden lassen, nachfragen ('Und wie war das für dich?'). Verteilt die Interview-Karte (siehe Arbeitsblatt) mit Leitfragen. Jedes Tandem führt nun ein erstes Interview – immer beide Richtungen, jeder fragt und antwortet."
+      },
+      {
+        "title": "Hauptteil 2: Gemeinsame Mini-Mission",
+        "text": "Damit aus Fakten eine Beziehung wird, erhält jedes Tandem über die Woche eine kleine gemeinsame Mission, die nur zu zweit lösbar ist (z. B. zusammen ein Pausenspiel ausdenken, drei Gemeinsamkeiten finden, ein gemeinsames Foto-/Bilderrätsel gestalten, sich gegenseitig etwas beibringen). Wichtig ist die gemeinsame Erfahrung, nicht das Ergebnis. Begleite Tandems, die schwer ins Tun kommen, mit einer ganz konkreten Mini-Aufgabe. Jedes Kind hält fest, was es Überraschendes über das andere Kind herausgefunden hat."
+      },
+      {
+        "title": "Hauptteil 3: Den wertschätzenden Steckbrief gestalten",
+        "text": "Nun gestaltet jedes Kind einen Steckbrief NICHT über sich, sondern über sein Tandem-Kind ('Mein Mensch der Woche'). Hineinkommen: Lieblingssachen, eine Stärke, etwas, das man gut kann, eine entdeckte Gemeinsamkeit ('Wir beide …'). Achte darauf, dass nur Wertschätzendes hineingeschrieben wird. Das Tandem-Kind darf den Steckbrief vorher lesen und ergänzen oder korrigieren ('Stimmt das so über dich?') – so lernen die Kinder, andere richtig wahrzunehmen statt zu vermuten."
+      },
+      {
+        "title": "Abschluss: Vorstellrunde und neue Wege auf der Klassenkarte",
+        "text": "In einer Vorstellrunde stellt jedes Kind sein Tandem-Kind anhand des Steckbriefs vor – wertschätzend und in der Ich-Form des Vorstellens ('Das ist …, und das Tolle an ihr ist …'). Hängt nach jeder Runde einen Faden auf einer großen Klassenkarte zwischen die beiden Namen: Sichtbar wächst ein Netz neuer Verbindungen. Über die Wochen werden die Tandems neu gemischt, bis möglichst viele 'Wege' entstanden sind. Schlusssatz: 'Unsere Klasse hält besser zusammen, je mehr Wege es zwischen uns gibt.'"
+      }
+    ],
+    "duration": "Projekt über 3–5 Wochen, je Woche 1–2 Einheiten à 30–45 Minuten",
+    "materialsNeeded": "Lose/Kärtchen für die Tandem-Auslosung; Interview-Karten mit Leitfragen; Steckbrief-Vorlagen (siehe Arbeitsblatt); Stifte; große Klassenkarte/Plakat mit allen Namen; Wolle oder Fäden plus Pins, um Verbindungen sichtbar zu machen; ggf. Material für die Mini-Missionen.",
+    "remark": "Differenzierung: Für C3 stärker bebilderte Interview- und Steckbrief-Vorlagen mit Satzanfängen anbieten; C4 kann freier formulieren und die Vorstellrunde selbst moderieren. Sensibel mit Außenseiter-Kindern: Tandems so steuern, dass niemand übrig bleibt; eine stille Variante (Vorstellung schriftlich) für sehr schüchterne Kinder ermöglichen. Klare Regel etablieren: Im Steckbrief steht nur Freundliches; auf Echtheit achten, damit es nicht zu Floskeln verkommt.",
+    "etepStufen": [
+      3,
+      4
+    ],
+    "eldibGoals": [
+      "V-24",
+      "K-14",
+      "K-15",
+      "K-17",
+      "K-20",
+      "K-21",
+      "K-32",
+      "SOZ-15",
+      "SOZ-24",
+      "SOZ-31",
+      "SOZ-33",
+      "SOZ-37"
+    ],
+    "worksheet": {
+      "title": "Mein Mensch der Woche – Interview & Steckbrief",
+      "intro": "Lerne dein Tandem-Kind richtig kennen. Frage freundlich, höre gut zu – und schreibe nur Dinge auf, über die sich dein Tandem-Kind freut.",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "Teil 1: Mein Interview"
+        },
+        {
+          "kind": "instruction",
+          "text": "Setzt euch zugewandt hin. Stelle die Fragen und lass dein Tandem-Kind in Ruhe ausreden. Du darfst nachfragen: 'Und wie war das für dich?'"
+        },
+        {
+          "kind": "question",
+          "text": "Wie heißt du, und was machst du am liebsten in deiner freien Zeit?",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "Worüber kannst du richtig lachen?",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "Was kannst du besonders gut? (Etwas, worauf du ein bisschen stolz bist.)",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "Gibt es etwas, das dir wichtig ist oder das dich gerade beschäftigt?",
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "Teil 2: Das haben wir gemeinsam"
+        },
+        {
+          "kind": "instruction",
+          "text": "Findet zusammen heraus, was ihr beide teilt."
+        },
+        {
+          "kind": "checklist",
+          "items": [
+            "Wir mögen beide …",
+            "Wir können beide …",
+            "Wir finden beide doof, wenn …",
+            "Eine Überraschung, die ich entdeckt habe:"
+          ]
+        },
+        {
+          "kind": "lines",
+          "text": "Notiere eure Gemeinsamkeiten:",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "Teil 3: Steckbrief – Mein Mensch der Woche"
+        },
+        {
+          "kind": "instruction",
+          "text": "Schreibe jetzt einen freundlichen Steckbrief über dein Tandem-Kind. Lies ihn ihm danach vor: 'Stimmt das so über dich?'"
+        },
+        {
+          "kind": "box",
+          "text": "Name und ein kleines Bild meines Tandem-Kindes:",
+          "lines": 4
+        },
+        {
+          "kind": "question",
+          "text": "Das mag mein Tandem-Kind:",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "Das kann mein Tandem-Kind richtig gut (eine Stärke):",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "Das haben wir gemeinsam – 'Wir beide …':",
+          "lines": 2
+        },
+        {
+          "kind": "scale",
+          "text": "Wie gut kennen wir uns jetzt im Vergleich zu vorher?",
+          "items": [
+            "genauso wie vorher",
+            "etwas besser",
+            "viel besser"
+          ]
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "klassen-wimmelbild-unsere-unsichtbaren-verbindungen-sichtbar-machen",
+    "title": "Klassen-Wimmelbild: Unsere unsichtbaren Verbindungen sichtbar machen",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "C3",
+      "C4"
+    ],
+    "type": [
+      "Projet"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "gemeinsames Wandbild der ganzen Klasse"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Recherche- und Gestaltungsgruppen"
+      },
+      {
+        "mode": "Individuel",
+        "note": "jedes Kind steuert seine eigenen Verbindungen bei"
+      }
+    ],
+    "themes": [
+      "beziehungsaufbau",
+      "fremdwahrnehmung",
+      "gerechtigkeit"
+    ],
+    "tags": [
+      "Klassengemeinschaft",
+      "Gemeinsamkeiten",
+      "Wandbild",
+      "Zugehörigkeit",
+      "Netzwerk",
+      "Projekt",
+      "Vielfalt"
+    ],
+    "shortDescription": "Die Klasse gestaltet über mehrere Einheiten ein großes 'Verbindungs-Wimmelbild', auf dem sichtbar wird, was die Kinder miteinander verbindet – von gleichen Hobbys bis zu geteilten Erfahrungen. Durch Mini-Umfragen entdecken die Kinder unerwartete Gemeinsamkeiten auch mit Kindern, mit denen sie sonst wenig zu tun haben. So wächst das Bewusstsein: Wir gehören alle zusammen, und jede:r ist mit vielen verbunden – niemand bleibt am Rand.",
+    "ablauf": [
+      {
+        "title": "Einstieg: Der unsichtbare Faden",
+        "text": "Stellt euch im Kreis auf. Nimm ein Wollknäuel und nenne eine Eigenschaft von dir ('Ich habe ein Haustier'). Wer auch ein Haustier hat, hebt die Hand; wirf einem von ihnen das Knäuel zu und halte den Faden fest. Das Kind nennt eine neue Gemeinsamkeit und wirft weiter. Nach mehreren Runden ist ein dichtes Netz zwischen allen entstanden. Frage: 'Was seht ihr?' Macht bewusst: Zwischen uns gibt es viele Verbindungen, die man normalerweise nicht sieht. Stelle das Projekt vor: 'Diese unsichtbaren Verbindungen machen wir jetzt auf einem großen Klassenbild sichtbar.'"
+      },
+      {
+        "title": "Hauptteil 1: Verbindungs-Forscher:innen sammeln Daten",
+        "text": "Sammelt gemeinsam Kategorien, in denen es Gemeinsamkeiten geben kann (Hobbys, Lieblingsessen, Sprachen zu Hause, Lieblingstier, 'war schon mal am Meer', Geschwister …). Bildet Forscher-Gruppen, die je eine Kategorie übernehmen und mit einer einfachen Strichliste durch die Klasse 'forschen': Wer gehört wozu? Übt vorher höfliches Fragen. Wichtig: Es geht um Verbindendes, nicht um 'besser/schlechter'. Achte darauf, dass auch seltene Antworten ('Ich spreche Portugiesisch') wertgeschätzt werden – Verschiedenheit ist Teil der Verbindung."
+      },
+      {
+        "title": "Hauptteil 2: Das Wimmelbild entsteht",
+        "text": "Auf einem großen Papier (Wand oder Boden) bekommt jedes Kind ein selbst gestaltetes 'Ich-Symbol' (Figur, Tier, Avatar mit Namen) und klebt es auf. Nun werden die Forschungsergebnisse eingearbeitet: Kinder mit gleichen Gemeinsamkeiten werden mit farbigen Fäden oder Linien verbunden (jede Kategorie eine Farbe). Schritt für Schritt entsteht ein dichtes, buntes Wimmelbild voller Verbindungslinien. Begleite so, dass jedes Kind mehrere Verbindungen erhält – fehlt jemandem eine Linie, sucht aktiv mit der Klasse nach einer Gemeinsamkeit."
+      },
+      {
+        "title": "Hauptteil 3: Verbindungen lesen und feiern",
+        "text": "Betrachtet das fertige Wimmelbild gemeinsam. Lest es: 'Welche Farbe (Kategorie) hat die meisten Linien? Wer hätte gedacht, dass …?' Jedes Kind sucht eine Verbindung, die es überrascht hat ('Ich wusste nicht, dass … und ich beide gern zeichnen'). Lass einige Kinder zu Paaren mit überraschender Verbindung kurz ins Gespräch kommen. Macht sichtbar: Jedes Kind ist Teil vieler Linien – niemand steht allein."
+      },
+      {
+        "title": "Abschluss: Unser Verbindungs-Versprechen",
+        "text": "Hängt das Wimmelbild dauerhaft in der Klasse auf. Formuliert gemeinsam ein kurzes Klassen-Versprechen, das zum Bild passt ('Wir suchen, was uns verbindet – und keiner bleibt ohne Linie'). Vereinbart, das Bild lebendig zu halten: Neue Kinder bekommen ein Ich-Symbol, und wer eine neue Gemeinsamkeit entdeckt, darf eine Linie ergänzen. So bleibt die Klassengemeinschaft als wachsendes Netz präsent und der Beziehungsaufbau geht über das Projekt hinaus weiter."
+      }
+    ],
+    "duration": "3 Einheiten à 45–60 Minuten plus Pflege über das Schuljahr",
+    "materialsNeeded": "Großes Plakat- oder Packpapier (Wand-/Bodenformat); Wollknäuel für den Einstieg; bunte Wolle/Fäden oder Filzstifte in mehreren Farben (eine pro Kategorie); Material für die Ich-Symbole (Papier, Stifte, ggf. Fotos); Strichlisten-Vorlagen für die Forscher-Gruppen; Klebepunkte/Pins.",
+    "remark": "Differenzierung: Für C3 die Kategorien vorgeben und mit Bildsymbolen versehen; C4 kann eigene Kategorien entwickeln und die Datenauswertung ('welche Farbe am meisten?') selbst übernehmen. Wichtig für Gerechtigkeit und Inklusion: aktiv darauf achten, dass JEDES Kind mehrfach verbunden wird – notfalls neutrale Gemeinsamkeiten ('wir sind in derselben Klasse') ergänzen. Sensible Kategorien (Herkunft, Familie) freiwillig halten und nie bloßstellen; den Fokus stets auf Verbindendes, nie auf Trennendes legen.",
+    "etepStufen": [
+      3,
+      4
+    ],
+    "eldibGoals": [
+      "V-16",
+      "V-24",
+      "K-15",
+      "K-17",
+      "K-20",
+      "K-22",
+      "SOZ-24",
+      "SOZ-28",
+      "SOZ-29",
+      "SOZ-31",
+      "SOZ-32",
+      "SOZ-33"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "verlaesslichkeits-quest-die-klasse-als-eingespieltes-team",
+    "title": "Verlässlichkeits-Quest: Die Klasse als eingespieltes Team",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "C3",
+      "C4"
+    ],
+    "type": [
+      "Projet"
+    ],
+    "participants": [
+      {
+        "mode": "Grupp",
+        "note": "feste Quest-Teams über mehrere Stationen"
+      },
+      {
+        "mode": "Klass",
+        "note": "gemeinsame Reflexion und Ziel-Setzung"
+      }
+    ],
+    "themes": [
+      "beziehungsaufbau",
+      "kooperation",
+      "selbstwahrnehmung"
+    ],
+    "tags": [
+      "Vertrauen",
+      "Verlässlichkeit",
+      "Kooperation",
+      "Teamchallenge",
+      "Verantwortung",
+      "Projekt",
+      "Reflexion"
+    ],
+    "shortDescription": "In einem mehrstufigen Stationen-Projekt ('Quest') stellt sich jedes Team gemeinsamen Aufgaben, die nur durch Verlässlichkeit und Aufeinander-Achten gelingen – vom blind geführten Parcours bis zur Aufgabe, bei der alle gebraucht werden. Zwischen den Stationen reflektieren die Kinder ihr eigenes Verhalten als Teampartner:in: Worauf können andere sich bei mir verlassen? So vertieft sich Vertrauen schrittweise und wird bewusst gemacht.",
+    "ablauf": [
+      {
+        "title": "Einstieg: Was heißt 'sich verlassen können'?",
+        "text": "Beginnt im Kreis mit einer Mini-Übung: Zwei Kinder stehen Rücken an Rücken und versuchen, sich gemeinsam langsam hinzusetzen und wieder aufzustehen, ohne umzufallen. Frage danach: 'Was war nötig, damit das klappt?' Sammelt Begriffe wie aufeinander achten, gleichzeitig handeln, sich verlassen können. Definiert gemeinsam für das Projekt: 'Verlässlich sein heißt, dass andere sich auf mich verlassen können.' Stelle die Quest vor: 'In den nächsten Stationen seid ihr ein Team auf einer Reise. Ihr kommt nur gemeinsam weiter – und nach jeder Station schaut ihr, wie gut ihr als Team wart.' Bildet feste Teams (4–5 Kinder, gemischt)."
+      },
+      {
+        "title": "Hauptteil 1: Station 'Blindes Vertrauen'",
+        "text": "Erste Station: Ein Kind wird (mit Augenbinde oder geschlossenen Augen) nur durch ruhige Worte des Teams durch einen kleinen Hindernis-Parcours geführt – nicht durch Anfassen, sondern durch klare, freundliche Ansagen ('zwei kleine Schritte vor, jetzt rechts'). Jedes Kind kommt einmal dran. Wichtig: Sicherheit zuerst, ein Kind geht als 'Schutzengel' nah mit. Nach der Station reflektiert das Team kurz mit der Reflexionskarte: 'Wann habt ihr euch sicher gefühlt? Was hat geholfen, was nicht?'"
+      },
+      {
+        "title": "Hauptteil 2: Station 'Alle werden gebraucht'",
+        "text": "Zweite Station: eine Aufgabe, die nur gelingt, wenn wirklich jede:r mitmacht – z. B. einen Ball auf einem Tuch, das alle an den Rändern halten, gemeinsam durch einen Slalom balancieren, oder einen Turm bauen, bei dem jedes Kind nur mit einer Hand bauen darf. Bewusst so gestaltet, dass kein Kind die Aufgabe allein lösen kann und Vielredner:innen nicht einfach übernehmen. Danach Reflexion im Team: 'Wurde jede:r gehört? Worauf konnten wir uns verlassen? Wer hat heute besonders an das Team gedacht?'"
+      },
+      {
+        "title": "Hauptteil 3: Mein Verlässlichkeits-Check",
+        "text": "Nach den Stationen schaut jedes Kind auf sich selbst (Arbeitsblatt 'Verlässlichkeits-Check'): Worauf konnten sich die anderen heute bei mir verlassen? Was möchte ich beim nächsten Mal besser machen? Anschließend gibt sich das Team gegenseitig wertschätzende Rückmeldung nach der Regel 'erst etwas Gutes, dann ein Wunsch' ('Auf dich war Verlass, weil … – und ich wünsche mir, dass wir …'). Modelliere die Regel zuerst, damit Rückmeldungen freundlich und konkret bleiben."
+      },
+      {
+        "title": "Abschluss: Team-Ziel und Verlässlichkeits-Orden",
+        "text": "Jedes Team formuliert ein gemeinsames Ziel für die nächste Zusammenarbeit ('Wir achten darauf, dass jeder zu Wort kommt'). Im Klassenkreis stellt jedes Team sein Ziel vor. Zum Abschluss vergebt ihr 'Verlässlichkeits-Orden': Jedes Kind benennt für ein anderes Kind im Team eine konkrete verlässliche Tat ('Du hast mich beim Parcours sicher geführt') und überreicht symbolisch einen Papier-Orden. So endet das Projekt mit dem starken Erleben: Auf uns ist Verlass, und das fühlt sich gut an. Vereinbart, das Team-Ziel in einer späteren Stunde zu überprüfen."
+      }
+    ],
+    "duration": "2–3 Einheiten à 45–60 Minuten (als Projekttag oder verteilt)",
+    "materialsNeeded": "Augenbinden (oder Vereinbarung 'Augen zu'); Material für einen ungefährlichen Hindernis-Parcours (Hütchen, Seile, Kissen); ein Tuch und ein Ball bzw. Baumaterial für die Teamaufgabe; Reflexionskarten je Station; Arbeitsblatt 'Verlässlichkeits-Check' (siehe unten); vorbereitete Papier-'Orden' und Stifte.",
+    "remark": "Differenzierung: Für C3 die Stationen stärker anleiten und die Reflexion mündlich mit Bildkarten führen; C4 kann die Stationen teils selbst aufbauen, anspruchsvollere Kooperationsaufgaben lösen und schriftlich reflektieren. Sicherheit hat Vorrang: Beim 'Blind-Parcours' immer eine begleitende Person nah am geführten Kind, keine Treppen/Kanten, freiwillige Teilnahme – wer die Augen nicht schließen mag, geht mit verengtem Blick. Bei der Rückmelderegel konsequent auf Wertschätzung achten und Bloßstellungen sofort stoppen.",
+    "etepStufen": [
+      3,
+      4
+    ],
+    "eldibGoals": [
+      "V-16",
+      "V-18",
+      "V-20",
+      "V-27",
+      "K-17",
+      "K-21",
+      "K-27",
+      "K-28",
+      "SOZ-15",
+      "SOZ-18",
+      "SOZ-26",
+      "SOZ-37"
+    ],
+    "worksheet": {
+      "title": "Mein Verlässlichkeits-Check",
+      "intro": "Schau ehrlich auf dich selbst als Teampartner:in. Es gibt kein Richtig oder Falsch – es geht darum, ein guter Teil deines Teams zu werden.",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "So war ich heute im Team"
+        },
+        {
+          "kind": "checklist",
+          "items": [
+            "Ich habe anderen gut zugehört.",
+            "Ich habe darauf geachtet, dass jeder mitmachen darf.",
+            "Ich habe gemacht, was wir abgesprochen hatten.",
+            "Ich habe jemandem geholfen.",
+            "Ich bin ruhig geblieben, als es schwierig wurde."
+          ]
+        },
+        {
+          "kind": "scale",
+          "text": "Wie sehr konnten sich die anderen heute auf mich verlassen?",
+          "items": [
+            "ein bisschen",
+            "ziemlich",
+            "voll und ganz"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "Worauf war bei mir Verlass?"
+        },
+        {
+          "kind": "question",
+          "text": "Eine Sache, bei der sich mein Team heute auf mich verlassen konnte:",
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "Mein nächster Schritt"
+        },
+        {
+          "kind": "question",
+          "text": "Das möchte ich als Teampartner:in beim nächsten Mal besser machen:",
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "Mein Orden für ein anderes Kind"
+        },
+        {
+          "kind": "instruction",
+          "text": "Schreibe für ein Kind aus deinem Team eine konkrete verlässliche Tat auf, die du ihm als Orden überreichst."
+        },
+        {
+          "kind": "box",
+          "text": "Verlässlichkeits-Orden für: ______________  weil:",
+          "lines": 3
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "stromkreis-nur-gemeinsam-fliesst-der-strom",
+    "title": "Stromkreis: Nur gemeinsam fließt der Strom",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "C4",
+      "ES"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Einstieg und Auswertung im Plenum"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Teams von 6-10 Jugendlichen pro 'Stromkreis'"
+      }
+    ],
+    "themes": [
+      "kooperation",
+      "konfliktloesung"
+    ],
+    "tags": [
+      "Teamaufgabe",
+      "Synchronisation",
+      "gegenseitige Abhängigkeit",
+      "Koordination",
+      "Verantwortung im Team",
+      "Kooperationsspiel"
+    ],
+    "shortDescription": "Ein bewegungsorientiertes Kooperationsexperiment: Die Gruppe bildet einen 'menschlichen Stromkreis', in dem ein Signal nur dann ankommt, wenn jedes Glied zuverlässig mitarbeitet. Schon ein einziger Wackelkontakt unterbricht den Fluss. Die Jugendlichen erleben unmittelbar, wie sehr ein Team von jedem Einzelnen abhängt, und reflektieren, was Verlässlichkeit, Tempo und Absprache für gelingende Zusammenarbeit bedeuten.",
+    "ablauf": [
+      {
+        "title": "Einstieg - Was bringt einen Kreis zum Laufen? (8 Min.)",
+        "text": "Versammelt euch im Plenum. Stelle eine echte Lichterkette oder eine Reihenschaltung aus Lämpchen vor (oder zeige ein Bild) und nimm bewusst eine Birne heraus: Die Kette bleibt dunkel. Frage: 'Welche Birne war schuld?' Lenke darauf, dass in einer Reihenschaltung jede Stelle gleich wichtig ist - eine reicht zum Ausfall. Kündige an: 'Gleich werdet ihr selbst zu so einem Stromkreis. Achtet darauf, woran es liegt, wenn der Strom stockt - und woran, wenn er rund läuft.'"
+      },
+      {
+        "title": "Hauptteil 1 - Den Stromkreis aufbauen (12 Min.)",
+        "text": "Bildet Teams von 6-10 Personen, die sich im Kreis an den Händen fassen (eine Person übernimmt eine doppelte Hand als 'Start/Ziel'). Das 'Signal' ist ein sanfter Handdruck, der reihum weitergegeben wird. Übt zunächst langsam in eine Richtung: Sobald meine rechte Hand gedrückt wird, drücke ich mit der linken weiter. Stoppt die Zeit für eine volle Runde. Lass die Gruppe selbst überlegen, wie sie schneller wird, und gib zwei, drei Versuche. Wichtige Regel: kein Vordrängeln, kein Auslassen - ein übersprungenes Glied gilt als Stromausfall und die Runde startet neu."
+      },
+      {
+        "title": "Hauptteil 2 - Spannung steigern (15 Min.)",
+        "text": "Erschwert die Aufgabe in Stufen: (a) mit geschlossenen Augen - jetzt zählt reines Vertrauen auf den Nachbarn; (b) das Signal startet von zwei Personen gleichzeitig in entgegengesetzte Richtungen und darf sich unterwegs nicht 'verlieren'; (c) ein stilles Sondersignal (zwei kurze Drücke) bedeutet Richtungswechsel und muss korrekt weitergegeben werden. Beobachte, wo Absprachen entstehen und wo Frust aufkommt. Gib bei Bedarf einen kurzen Beratungsstopp ('Team-Time-out, 60 Sekunden'), in dem die Gruppe eine Strategie abstimmen darf - aber während des Laufs wird nicht geredet."
+      },
+      {
+        "title": "Abschluss - Vom Spiel ins echte Team (10 Min.)",
+        "text": "Setzt euch in den Kreis. Leite die Auswertung mit gezielten Fragen: 'Wann ist der Strom abgerissen - und woran lag es wirklich?', 'Wie habt ihr es geschafft, schneller und sicherer zu werden?', 'Wer hat unauffällig dafür gesorgt, dass es lief?' Übertrage dann bewusst: 'Wo in eurem Alltag - Klasse, Sportteam, Gruppenarbeit - seid ihr so ein Stromkreis, in dem jeder zählt?' Sammelt zwei, drei konkrete Vorsätze für die nächste gemeinsame Aufgabe und haltet sie sichtbar fest."
+      }
+    ],
+    "duration": "ca. 45 Min.",
+    "materialsNeeded": "Eine Lichterkette/Reihenschaltung oder ein Bild davon als Einstiegsimpuls, eine Stoppuhr, genügend Platz für Stuhlkreise ohne Hindernisse, optional Augenbinden für die erschwerte Variante.",
+    "remark": "Sicherheit: Bei der Variante mit geschlossenen Augen Stolperfallen entfernen und auf festen Stand achten; niemanden zum Augenschließen zwingen, alternativ Blick nach unten anbieten. Differenzierung: Gruppengröße und Anzahl der Sondersignale je nach Reife anpassen; bei Berührungsvorbehalten (kulturell, sensorisch) statt Handdruck ein leichtes Antippen der Schulter oder einen weitergereichten Gegenstand nutzen. Vermeide es, einzelne Personen als 'Schuldige' für Stromausfälle zu markieren - der Fokus liegt auf dem System, nicht auf Schuld.",
+    "etepStufen": [
+      4,
+      5
+    ],
+    "eldibGoals": [
+      "V-16",
+      "V-23",
+      "V-27",
+      "K-17",
+      "K-28",
+      "K-29",
+      "SOZ-17",
+      "SOZ-18",
+      "SOZ-19",
+      "SOZ-26",
+      "SOZ-27",
+      "SOZ-30",
+      "KOG-47"
+    ],
+    "worksheet": {
+      "title": "Team-Check: Unser Stromkreis",
+      "intro": "Fülle den Bogen nach dem Spiel aus. Er hilft dir, das Erlebte auf echte Teamsituationen zu übertragen.",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "1. Wie lief unser Strom?"
+        },
+        {
+          "kind": "scale",
+          "text": "Wie zuverlässig hat unser Team das Signal weitergegeben?",
+          "items": [
+            "1 - oft abgerissen",
+            "2",
+            "3",
+            "4",
+            "5 - lief flüssig"
+          ]
+        },
+        {
+          "kind": "question",
+          "text": "An welcher Stelle ist der Strom am häufigsten ins Stocken geraten? Was war der Grund - und war es wirklich eine einzelne Person?",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "2. Was hat geholfen?"
+        },
+        {
+          "kind": "question",
+          "text": "Welche Absprache oder Idee hat unser Team schneller und sicherer gemacht?",
+          "lines": 3
+        },
+        {
+          "kind": "question",
+          "text": "Wer im Team hat - vielleicht ganz unauffällig - dafür gesorgt, dass es besser lief? Was hat die Person getan?",
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "3. Übertragung in meinen Alltag"
+        },
+        {
+          "kind": "instruction",
+          "text": "Denk an eine Gruppe, in der du regelmäßig bist (Klasse, Sport, Arbeitsgruppe, Verein)."
+        },
+        {
+          "kind": "question",
+          "text": "Wo seid ihr dort wie ein Stromkreis, in dem jeder Einzelne zählt? Wo 'reißt der Strom' bei euch oft ab?",
+          "lines": 3
+        },
+        {
+          "kind": "box",
+          "text": "Mein konkreter Vorsatz für die nächste gemeinsame Aufgabe:",
+          "lines": 3
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "schweigende-werkstatt-ein-auftrag-geteiltes-wissen",
+    "title": "Schweigende Werkstatt: Ein Auftrag, geteiltes Wissen",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "C4",
+      "ES"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Grupp",
+        "note": "feste Teams von 4-5 Personen"
+      },
+      {
+        "mode": "Klass",
+        "note": "gemeinsame Auswertung am Ende"
+      }
+    ],
+    "themes": [
+      "kooperation",
+      "kommunikation"
+    ],
+    "tags": [
+      "Informationslücke",
+      "Arbeitsteilung",
+      "Wissen teilen",
+      "nonverbal",
+      "Aushandeln",
+      "gemeinsames Ziel"
+    ],
+    "shortDescription": "Jedes Teammitglied besitzt nur einen Teil der Bauanleitung - niemand hat das ganze Bild. Die Gruppe muss ein Modell oder Muster exakt nachbauen, kann das aber nur, wenn alle ihr Teilwissen einbringen und zusammenführen. Eine erste Runde läuft unter erschwerten Kommunikationsregeln. So erleben die Jugendlichen, dass Zusammenarbeit nicht 'einer macht, die anderen schauen zu' heißt, sondern aktives Teilen, Nachfragen und Koordinieren verlangt.",
+    "ablauf": [
+      {
+        "title": "Einstieg - Niemand hat das ganze Bild (7 Min.)",
+        "text": "Halte ein fertiges Bauwerk (z. B. eine kleine Bauklotz-Konstruktion oder ein geometrisches Steckmuster) kurz hoch und verdecke es dann wieder. Sage: 'Ihr werdet das gleich nachbauen. Aber: Niemand von euch wird die ganze Anleitung haben - jeder bekommt nur ein Stück.' Frage in die Runde: 'Was braucht es, damit aus vielen Puzzleteilen im Kopf ein gemeinsames Ergebnis wird?' Sammle erste Vermutungen (fragen, zuhören, abstimmen, niemanden übergehen) sichtbar an der Tafel."
+      },
+      {
+        "title": "Hauptteil 1 - Stiller Aufbau (15 Min.)",
+        "text": "Bildet Teams von 4-5 Personen. Jede Person erhält eine Anleitungskarte mit nur einem Teilschritt oder einer Teilinformation (z. B. 'Das blaue Teil steht ganz unten', 'Es gibt genau zwei rote Teile', 'Nichts ragt über die Grundplatte hinaus'). Niemand darf die eigene Karte den anderen zeigen oder vorlesen - in dieser ersten Runde wird ausschließlich geflüstert oder mit Gesten gearbeitet. Die Gruppe baut mit dem bereitgestellten Material. Beobachte, wer sein Wissen aktiv einbringt und wer wartet, bis er gefragt wird. Greife nicht ein, auch wenn es stockt."
+      },
+      {
+        "title": "Hauptteil 2 - Zweite Runde mit voller Stimme (13 Min.)",
+        "text": "Deckt das Original kurz zur Selbstkontrolle auf, dann wird es wieder verdeckt und die Teams bauen ein neues, etwas schwierigeres Modell - diesmal dürfen sie frei sprechen. Setze eine zusätzliche Rolle ein: eine 'Koordinatorin' pro Team, die selbst keine Bauteile anfasst, sondern nur dafür sorgt, dass alle Karteninhalte abgefragt und alle Stimmen gehört werden. Vergleicht nach Ablauf der Zeit jedes Ergebnis mit dem Original und würdigt, was gelungen ist."
+      },
+      {
+        "title": "Abschluss - Was macht aus Teilen ein Ganzes? (10 Min.)",
+        "text": "Kommt im Plenum zusammen. Leite die Reflexion: 'Was war in der stillen Runde schwierig - und was hat trotzdem funktioniert?', 'Was hat sich verändert, als ihr reden durftet und eine Koordinatorin hattet?', 'Wessen Information war wichtig, wurde aber fast übersehen?' Ziehe die Kernbotschaft heraus: Echte Kooperation heißt, das eigene Wissen einzubringen UND aktiv das der anderen abzuholen. Sammelt drei 'Regeln fürs Wissenteilen' für künftige Gruppenarbeiten."
+      }
+    ],
+    "duration": "ca. 45-50 Min.",
+    "materialsNeeded": "Pro Team ein Satz Baumaterial (Bauklötze, Stecksystem, Magnetplättchen o. Ä.) plus ein identischer Satz für das verdeckte Original; vorbereitete Anleitungskarten mit je einer Teilinformation (4-5 pro Modell, zwei Schwierigkeitsstufen); ein Sichtschutz für die Original-Modelle; Tafel/Flipchart.",
+    "remark": "Differenzierung: Anzahl der Bauteile, Komplexität des Modells und Menge widersprüchlich klingender Teilinfos je nach Niveau steuern; leistungsschwächeren Teams Karten mit Bildern statt reinem Text geben. Inklusion: Die nonverbale Runde so gestalten, dass auch schriftlich kommuniziert werden darf (kleine Notizzettel), damit niemand allein durch Sprechhemmung benachteiligt wird. Achte darauf, dass die Koordinatorin-Rolle nicht zur 'Chefin' wird - betone die moderierende, ausgleichende Funktion.",
+    "etepStufen": [
+      4,
+      5
+    ],
+    "eldibGoals": [
+      "V-16",
+      "V-17",
+      "V-18",
+      "K-17",
+      "K-20",
+      "K-28",
+      "K-29",
+      "SOZ-16",
+      "SOZ-18",
+      "SOZ-23",
+      "SOZ-26",
+      "SOZ-34",
+      "KOG-46"
+    ],
+    "worksheet": {
+      "title": "Wissen teilen - mein Anteil im Team",
+      "intro": "Beantworte die Fragen nach beiden Baurunden. Sei ehrlich zu dir selbst.",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "Mein Verhalten im Team"
+        },
+        {
+          "kind": "scale",
+          "text": "Wie aktiv habe ich meine eigene Information ins Team eingebracht?",
+          "items": [
+            "1 - eher abgewartet",
+            "2",
+            "3",
+            "4",
+            "5 - sofort eingebracht"
+          ]
+        },
+        {
+          "kind": "scale",
+          "text": "Wie sehr habe ich darauf geachtet, dass auch die Stilleren gefragt wurden?",
+          "items": [
+            "1 - gar nicht",
+            "2",
+            "3",
+            "4",
+            "5 - sehr"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "Die zwei Runden im Vergleich"
+        },
+        {
+          "kind": "question",
+          "text": "Was war in der stillen Runde am schwierigsten? Wie hat euer Team es trotzdem hinbekommen (oder eben nicht)?",
+          "lines": 3
+        },
+        {
+          "kind": "question",
+          "text": "Was hat sich verbessert, als ihr sprechen durftet und eine Koordinatorin hattet?",
+          "lines": 3
+        },
+        {
+          "kind": "question",
+          "text": "Gab es eine Information, die fast übersehen wurde, aber wichtig war? Welche?",
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "Unsere Regeln fürs Wissenteilen"
+        },
+        {
+          "kind": "checklist",
+          "items": [
+            "Ich sage, was ich weiß, auch ungefragt.",
+            "Ich frage gezielt nach, was andere wissen.",
+            "Ich achte darauf, dass alle zu Wort kommen.",
+            "Ich fasse zwischendurch zusammen, was wir schon wissen."
+          ]
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "konsens-kompass-wenn-alle-dahinterstehen-muessen",
+    "title": "Konsens-Kompass: Wenn alle dahinterstehen müssen",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "C4",
+      "ES"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Grupp",
+        "note": "Entscheidungsteams von 4-6 Personen"
+      },
+      {
+        "mode": "Klass",
+        "note": "Vergleich und Auswertung im Plenum"
+      }
+    ],
+    "themes": [
+      "kooperation",
+      "gerechtigkeit"
+    ],
+    "tags": [
+      "Konsens",
+      "gemeinsame Entscheidung",
+      "Rangfolge",
+      "Aushandeln",
+      "Mehrheit und Minderheit",
+      "Standpunkt vertreten"
+    ],
+    "shortDescription": "Ein Survival-Szenario zwingt die Gruppe, eine gemeinsame Rangfolge wichtiger Gegenstände festzulegen - und zwar im Konsens, nicht per schneller Mehrheit. Zuerst entscheidet jeder allein, dann muss das Team eine Reihenfolge finden, hinter der wirklich alle stehen können. Die Jugendlichen erleben den Unterschied zwischen 'überstimmt werden' und 'mitgenommen werden' und üben, eigene Argumente zu vertreten, ohne andere zu überfahren.",
+    "ablauf": [
+      {
+        "title": "Einstieg - Mehrheit ist nicht gleich Einigkeit (8 Min.)",
+        "text": "Stelle eine harmlose Streitfrage in den Raum (z. B. 'Welches eine Lebensmittel nehmen wir mit auf eine einsame Insel?') und lass kurz per Handzeichen abstimmen. Frage dann die Überstimmten: 'Wie fühlt es sich an, wenn die Mehrheit entscheidet und eure Idee untergeht?' Führe den Begriff Konsens ein: eine Lösung, mit der alle leben können - nicht unbedingt die Lieblingslösung von jedem, aber von niemandem blockiert. Kündige an: 'Heute entscheidet ihr im Konsens. Mehrheit allein zählt nicht.'"
+      },
+      {
+        "title": "Hauptteil 1 - Erst allein entscheiden (8 Min.)",
+        "text": "Verteile das Szenario (z. B. 'Euer Boot ist gekentert, ihr erreicht eine einsame Insel und konntet 8 Gegenstände retten') samt einer Liste von 8 Gegenständen. Jede Person bringt die Gegenstände zunächst still und allein in eine Rangfolge nach Überlebenswichtigkeit (1 = am wichtigsten) und notiert zu den drei wichtigsten kurz ein Argument. Wichtig: In dieser Phase wird nicht geredet, damit jeder einen eigenen Standpunkt entwickelt, bevor die Gruppe sich angleicht."
+      },
+      {
+        "title": "Hauptteil 2 - Im Konsens zur Team-Rangfolge (18 Min.)",
+        "text": "Die Teams einigen sich nun auf EINE gemeinsame Rangfolge. Gib drei Konsens-Regeln vor und schreibe sie sichtbar an: (1) Es wird nicht abgestimmt - eine Position gilt erst, wenn niemand mehr begründeten Einspruch hat. (2) Wer anderer Meinung ist, sagt nicht nur 'nein', sondern nennt einen Vorschlag. (3) Jede Stimme wird einmal vollständig gehört, bevor entschieden wird. Optional darf jede Person einmal ein 'Veto mit Begründung' einlegen, das die Gruppe ernsthaft prüfen muss. Beobachte, wer überzeugt, wer nachgibt und wer übergangen wird - notiere Beispiele für die Auswertung."
+      },
+      {
+        "title": "Abschluss - Tragen alle die Entscheidung mit? (11 Min.)",
+        "text": "Jedes Team stellt kurz seine wichtigsten drei Plätze und eine knifflige Aushandlung vor. Dann der entscheidende Schritt: Bitte jede Person verdeckt per Daumen (hoch/zur Seite/runter) zu zeigen, wie sehr sie hinter dem Teamergebnis steht. Wertet aus: 'Wo fühlten sich Leute mitgenommen, wo überstimmt?', 'Welche Sätze haben geholfen, einen Konsens zu finden?', 'Wann ist Konsens sinnvoll - und wann ist eine schnelle Mehrheit klüger?' Schließt mit gesammelten Formulierungshilfen für faire Aushandlungen."
+      }
+    ],
+    "duration": "ca. 45-50 Min.",
+    "materialsNeeded": "Szenario-Blätter und Gegenstandslisten (8 Items) pro Person, Stifte, eine Tafel/ein Flipchart für die drei Konsens-Regeln, optional vorbereitete 'Veto-Karten'.",
+    "remark": "Differenzierung: Item-Anzahl reduzieren (z. B. 6) oder ein einfacheres Szenario für jüngere/leistungsschwächere C4-Gruppen wählen; für ES das Szenario mit echten Dilemma-Anteilen (knappe Ressourcen, Zielkonflikte) anreichern. Achtung auf Gruppendynamik: dominante Personen behutsam bremsen, stillere ausdrücklich einladen ('Bevor wir festlegen - was meinst du dazu?'). Es gibt bewusst keine offizielle Musterlösung; der Lerngewinn liegt im Aushandeln, nicht im 'Richtig-Raten'. Wenn ein Team gar keinen Konsens findet, ist das ein wertvoller Auswertungsfall, kein Scheitern.",
+    "etepStufen": [
+      4,
+      5
+    ],
+    "eldibGoals": [
+      "V-16",
+      "V-17",
+      "V-18",
+      "V-20",
+      "V-28",
+      "K-17",
+      "K-21",
+      "SOZ-21",
+      "SOZ-23",
+      "SOZ-26",
+      "SOZ-32",
+      "SOZ-34",
+      "KOG-58"
+    ],
+    "worksheet": {
+      "title": "Konsens-Kompass: Mein Standpunkt und unsere Entscheidung",
+      "intro": "Teil A füllst du allein aus, Teil B nach der Team-Aushandlung.",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "Teil A - Meine eigene Rangfolge (allein)"
+        },
+        {
+          "kind": "table",
+          "text": "Trage deine Reihenfolge ein (1 = am wichtigsten).",
+          "lines": 8,
+          "items": [
+            "Platz",
+            "Gegenstand",
+            "Mein Argument"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "Teil B - Nach der Team-Aushandlung"
+        },
+        {
+          "kind": "question",
+          "text": "Bei welchem Gegenstand musstest du am meisten um deinen Standpunkt ringen? Wie ist es ausgegangen?",
+          "lines": 3
+        },
+        {
+          "kind": "scale",
+          "text": "Wie sehr stehe ich hinter unserer gemeinsamen Entscheidung?",
+          "items": [
+            "1 - gar nicht",
+            "2",
+            "3",
+            "4",
+            "5 - voll und ganz"
+          ]
+        },
+        {
+          "kind": "question",
+          "text": "Wann hast du dich 'mitgenommen' gefühlt - und gab es einen Moment, in dem du dich übergangen fühltest?",
+          "lines": 3
+        },
+        {
+          "kind": "question",
+          "text": "Welcher Satz oder welches Verhalten hat eurem Team geholfen, einen Konsens zu finden?",
+          "lines": 2
+        },
+        {
+          "kind": "instruction",
+          "text": "Merke: Konsens heißt nicht, dass alle dasselbe wollen - sondern dass alle mit dem Ergebnis leben können."
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "saboteur-an-bord-zusammenarbeit-unter-verdacht",
+    "title": "Saboteur an Bord: Zusammenarbeit unter Verdacht",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "C4",
+      "ES"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Grupp",
+        "note": "Crews von 5-7 Personen pro Spielrunde"
+      },
+      {
+        "mode": "Klass",
+        "note": "gemeinsame Reflexion über Vertrauen und Zusammenarbeit"
+      }
+    ],
+    "themes": [
+      "kooperation",
+      "beziehungsaufbau"
+    ],
+    "tags": [
+      "Vertrauen",
+      "Zusammenhalt",
+      "Verdacht",
+      "Kommunikation",
+      "Verantwortung",
+      "Rollenspiel"
+    ],
+    "shortDescription": "Die 'Crew' muss gemeinsam eine Reihe von Aufgaben lösen, um ihr Raumschiff zu reparieren - doch eine geheime Rolle arbeitet im Verborgenen gegen den Erfolg. Ohne sich gegenseitig die Karten zeigen zu dürfen, müssen die Jugendlichen zusammenarbeiten, beobachten und Vertrauen aufbauen, während Unsicherheit im Raum liegt. Das Spiel macht erfahrbar, wie schnell Misstrauen ein Team lähmt - und wie verlässliches Verhalten Zusammenhalt wiederherstellt.",
+    "ablauf": [
+      {
+        "title": "Einstieg - Zusammen oder gegeneinander? (8 Min.)",
+        "text": "Erzähle den Rahmen: 'Ihr seid die Crew eines havarierten Raumschiffs. Nur als Team schafft ihr die Reparatur rechtzeitig. Aber: Eine Person an Bord will, dass ihr scheitert - und niemand weiß, wer.' Erkläre, dass es heute NICHT darum geht, den Saboteur zu jagen und bloßzustellen, sondern darum, trotz Unsicherheit zusammenzuarbeiten. Klärt vorab eine Regel des Respekts: keine Beleidigungen, keine echten Schuldzuweisungen nach dem Spiel. Verteile dann verdeckt die Rollenkarten (eine 'Saboteur', alle anderen 'Crew')."
+      },
+      {
+        "title": "Hauptteil 1 - Die Reparatur-Missionen (15 Min.)",
+        "text": "Stelle 3-4 kleine Kooperationsaufgaben als 'Missionen' bereit (z. B. gemeinsam einen Turm bauen, ein Seilmuster legen, eine Zahlenkette ergänzen, einen Gegenstand blind übergeben). Jede gelungene Mission bringt einen 'Energie-Punkt'; das Team braucht eine festgelegte Punktzahl, um zu gewinnen. Der Saboteur versucht, Missionen unauffällig zu stören oder zu verlangsamen, ohne enttarnt zu werden - aber ohne offene Gewalt oder Zerstörung. Die Crew arbeitet zusammen und darf nach jeder Mission kurz beraten. Begleite den Zeitdruck mit einem sichtbaren 'Countdown'."
+      },
+      {
+        "title": "Hauptteil 2 - Kurzer Rat der Crew (10 Min.)",
+        "text": "Schaltet zwischen den Missionen zwei moderierte 'Crew-Räte' ein (je ca. 3 Min.). Hier darf die Gruppe Beobachtungen teilen - aber nur als Ich-Beobachtung ('Mir ist aufgefallen, dass...'), nicht als Anklage ('Du bist schuld!'). Optional darf die Crew einmal jemanden für eine Mission von der Aufgabe ausschließen, muss das aber gemeinsam begründen. Achte streng darauf, dass der Ton fair bleibt, und stoppe persönliche Angriffe sofort. Danach geht es in die letzten Missionen, der Ausgang bleibt offen bis zum Schluss."
+      },
+      {
+        "title": "Abschluss - Vertrauen aus der Deckung (12 Min.)",
+        "text": "Löst auf, wer der Saboteur war, und applaudiert für das gute Spiel der Rolle. Leite eine ernsthafte Reflexion: 'Wie hat sich das Misstrauen auf eure Zusammenarbeit ausgewirkt?', 'Habt ihr jemanden zu Unrecht verdächtigt - und wie fühlt sich das von beiden Seiten an?', 'Welches Verhalten hat im Team Vertrauen geschaffen?' Übertrage abschließend: 'Auch im echten Leben arbeiten wir oft mit Menschen zusammen, denen wir nicht sofort vertrauen. Was hilft, trotzdem ein gutes Team zu werden?' Sammelt konkrete 'Vertrauensbausteine'."
+      }
+    ],
+    "duration": "ca. 45-55 Min.",
+    "materialsNeeded": "Rollenkarten (1x Saboteur, Rest Crew) pro Spielgruppe, Material für 3-4 Kooperationsmissionen (Bauklötze, Seil/Schnur, Zahlen- oder Wortkarten, ein weiterzureichender Gegenstand), Marker oder Chips für die 'Energie-Punkte', eine sichtbare Uhr/ein Countdown.",
+    "remark": "Sehr wichtig - psychologische Sicherheit: Dieses Spiel berührt Vertrauen und Verdacht und kann für sensible Gruppen oder einzelne Jugendliche belastend sein. Rahme klar, dass die Saboteur-Rolle ein geheimer AUFTRAG ist und nichts über den Charakter der Person aussagt; verbiete reale Schuldzuweisungen vor, während und nach dem Spiel. Nicht einsetzen, wenn in der Gruppe akute Ausgrenzung oder Mobbing besteht. Differenzierung: Bei jüngeren oder fragileren Gruppen die Sabotage entschärfen (nur 'verlangsamen', kein 'gewinnen gegen das Team') oder die Rolle weglassen und rein kooperativ spielen. Halte für die Auswertung Zeit bereit, damit die emotionale Seite nicht offenbleibt.",
+    "etepStufen": [
+      4,
+      5
+    ],
+    "eldibGoals": [
+      "V-16",
+      "V-20",
+      "V-21",
+      "V-27",
+      "K-17",
+      "K-21",
+      "K-26",
+      "SOZ-15",
+      "SOZ-18",
+      "SOZ-26",
+      "SOZ-32",
+      "SOZ-37",
+      "KOG-58"
+    ],
+    "worksheet": {
+      "title": "Vertrauensbausteine: Was unser Team zusammenhält",
+      "intro": "Beantworte die Fragen nach dem Spiel ehrlich - es gibt keine falschen Antworten.",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "Misstrauen und seine Wirkung"
+        },
+        {
+          "kind": "scale",
+          "text": "Wie sehr hat die Unsicherheit ('wer ist der Saboteur?') eure Zusammenarbeit gestört?",
+          "items": [
+            "1 - gar nicht",
+            "2",
+            "3",
+            "4",
+            "5 - sehr stark"
+          ]
+        },
+        {
+          "kind": "question",
+          "text": "Hast du jemanden verdächtigt? Lag dein Verdacht richtig - oder wurde jemand zu Unrecht beargwöhnt? Wie hat sich das angefühlt?",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "Was Vertrauen schafft"
+        },
+        {
+          "kind": "question",
+          "text": "Welches konkrete Verhalten von Teammitgliedern hat dir Vertrauen gegeben?",
+          "lines": 3
+        },
+        {
+          "kind": "checklist",
+          "items": [
+            "Verlässlich tun, was man zusagt",
+            "Offen sagen, was man beobachtet (ohne Anklage)",
+            "Anderen zuhören und ausreden lassen",
+            "Bei Fehlern nicht sofort Schuld suchen",
+            "Auch die Stilleren einbeziehen"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "Übertragung"
+        },
+        {
+          "kind": "question",
+          "text": "Mit wem im echten Leben musst du manchmal zusammenarbeiten, obwohl Vertrauen erst wachsen muss? Was könnte ein erster Vertrauensbaustein sein?",
+          "lines": 3
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "beobachtung-oder-behauptung-der-wahrnehmungs-filter-im-kopf",
+    "title": "Beobachtung oder Behauptung? Der Wahrnehmungs-Filter im Kopf",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "ES"
+    ],
+    "type": [
+      "ganz Stonn"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Einstieg und Auswertung im Plenum"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Beobachtungs- und Deutungsteams zu 3–4 Jugendlichen"
+      },
+      {
+        "mode": "Individuel",
+        "note": "schriftliche Selbstreflexion auf dem Arbeitsblatt"
+      }
+    ],
+    "themes": [
+      "fremdwahrnehmung",
+      "kommunikation",
+      "konfliktloesung"
+    ],
+    "tags": [
+      "Wahrnehmung",
+      "Beobachtung",
+      "Interpretation",
+      "Vorschnelle Urteile",
+      "Kommunikation",
+      "Perspektive",
+      "Sekundarstufe"
+    ],
+    "shortDescription": "Die Jugendlichen erkennen, dass zwischen dem, was sie wirklich sehen, und dem, was sie daraus schließen, ein Filter aus Annahmen liegt. An mehrdeutigen Situationen üben sie, reine Beobachtung von Deutung und Bewertung zu trennen. Sie erleben, wie aus derselben Beobachtung völlig verschiedene Geschichten entstehen – und wie dieser Filter Konflikte auslösen oder entschärfen kann.",
+    "ablauf": [
+      {
+        "title": "Einstieg: Was siehst du – und was denkst du?",
+        "text": "Projiziere oder zeige ein mehrdeutiges Foto (z. B. zwei Personen, von denen eine wegschaut; jemand allein in der Pause; eine Person, die einer anderen etwas reicht). Sage nichts dazu. Bitte die Klasse, in einem Satz aufzuschreiben, 'was hier passiert'. Sammle drei bis vier Antworten an der Tafel und mache sichtbar, wie unterschiedlich sie sind. Frage dann: 'Was habt ihr wirklich gesehen – und was habt ihr dazugedacht?' Führe die Stundenfrage ein: Zwischen Sehen und Urteilen liegt ein unsichtbarer Filter. Heute schauen wir uns diesen Filter genau an."
+      },
+      {
+        "title": "Hinführung: Beobachtung – Deutung – Gefühl – Reaktion",
+        "text": "Erkläre an einem Alltagsbeispiel die Kette: Beobachtung ('Sie hat meinen Gruß nicht erwidert') → Deutung ('Sie ist sauer auf mich') → Gefühl (gekränkt) → Reaktion (Rückzug). Mache deutlich, dass nur der erste Schritt eine Tatsache ist, alles danach eine Annahme. Zeige eine zweite, ebenso mögliche Deutung derselben Beobachtung ('Sie hat mich gar nicht bemerkt, weil sie in Gedanken war'). Sammelt gemeinsam, woraus sich unser Filter speist: frühere Erfahrungen, Stimmung, Vorwissen, Erwartungen. Halte die Vierer-Kette gut sichtbar fest, die Gruppen brauchen sie gleich."
+      },
+      {
+        "title": "Hauptteil: Beobachtungs-Detektive in Gruppen",
+        "text": "Bildet Teams zu 3–4 Personen. Jedes Team zieht eine kurze Szenenkarte mit einer mehrdeutigen sozialen Situation (z. B. 'Jemand verlässt mitten im Gespräch den Raum'; 'Eine Mitschülerin lacht, während du etwas vorträgst'; 'Jemand antwortet nur in einem Wort'). Aufgabe in zwei Schritten: Erstens die reine Beobachtung in einem Satz festhalten, ohne jede Wertung. Zweitens mindestens drei verschiedene, gleichermaßen plausible Deutungen finden – eine positive, eine neutrale, eine negative. Zum Schluss überlegt jedes Team, mit welcher freundlichen Nachfrage man herausfinden könnte, was wirklich stimmt ('Hey, ich hab gemerkt, dass … – ist alles okay?'). Geht herum und stoppt freundlich, wenn Beobachtung und Deutung vermischt werden ('Das ist schon eine Deutung – was habt ihr wirklich gesehen?')."
+      },
+      {
+        "title": "Auswertung: Eine Beobachtung, viele Geschichten",
+        "text": "Jedes Team stellt seine Szene kurz vor: erst die Beobachtung, dann die drei Deutungen. Lass die Klasse spüren, wie aus EINER Beobachtung ganz verschiedene Welten werden – und wie unterschiedlich man darauf reagieren würde. Greife auf, dass die negative Deutung oft am schnellsten kommt, obwohl sie nicht wahrscheinlicher ist. Diskutiert: 'Wann hat euch euer Filter schon mal in die Irre geführt?' Sammle die wirksamen Nachfragen der Teams als gemeinsamen 'Werkzeugkasten gegen vorschnelle Urteile'."
+      },
+      {
+        "title": "Abschluss: Mein Filter-Check",
+        "text": "Jede:r füllt den unteren Teil des Arbeitsblatts allein aus: eine eigene Situation, in der sich eine Deutung später als falsch herausgestellt hat, sowie ein Vorsatz für den Alltag. Bitte einige Freiwillige, ihren Vorsatz in einem Satz zu teilen ('Ich will erst fragen, bevor ich denke, jemand meint es böse'). Schließe mit der Kernbotschaft: Wir können nicht steuern, welche Deutung uns zuerst einfällt – aber wir können innehalten, eine zweite Deutung suchen und nachfragen, bevor wir reagieren. Das ist der Unterschied zwischen einem Konflikt und einem Missverständnis, das sich klärt."
+      }
+    ],
+    "duration": "50 Minuten (eine Unterrichtsstunde)",
+    "materialsNeeded": "Ein bis zwei mehrdeutige Bildimpulse (Beamer oder ausgedruckt); Tafel/Whiteboard für die Beobachtungs-Deutungs-Kette; vorbereitete Szenenkarten mit mehrdeutigen sozialen Situationen (eine pro Team); Arbeitsblatt 'Mein Filter-Check' je Person; Stifte.",
+    "remark": "Differenzierung: Leistungsstärkere Gruppen können zusätzlich benennen, WORAUS ihr Filter in der Szene gespeist sein könnte (Vorerfahrung, Stimmung); für sprachlich schwächere Jugendliche Satzanfänge auf den Karten anbieten ('Ich habe gesehen, dass …', 'Das könnte bedeuten, dass …'). Sensibilität: Keine realen Konflikte einzelner Schüler:innen zur Analyse vor der Klasse ausbreiten – mit den anonymen Szenenkarten arbeiten. Wenn im 'Filter-Check' belastende Erfahrungen aufkommen, das Gespräch behutsam einzeln aufnehmen und bei Bedarf an die SePAS-/ETEP-Fachkraft weitergeben.",
+    "etepStufen": [
+      4,
+      5
+    ],
+    "eldibGoals": [
+      "V-17",
+      "V-18",
+      "V-23",
+      "V-28",
+      "K-20",
+      "K-21",
+      "K-26",
+      "K-29",
+      "SOZ-31",
+      "SOZ-36",
+      "SOZ-37",
+      "KOG-58",
+      "KOG-61"
+    ],
+    "worksheet": {
+      "title": "Mein Filter-Check – Beobachtung oder Behauptung?",
+      "intro": "Zwischen dem, was wir sehen, und dem, was wir denken, liegt ein Filter aus Annahmen. Übe hier, beides zu trennen – und merke, wie viele Geschichten in einer einzigen Beobachtung stecken.",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "Teil 1: Die Kette verstehen"
+        },
+        {
+          "kind": "instruction",
+          "text": "Ordne den Beispielen zu, ob es eine reine Beobachtung (B) oder schon eine Deutung (D) ist. Schreibe B oder D dahinter."
+        },
+        {
+          "kind": "checklist",
+          "items": [
+            "Er hat während meines Vortrags auf sein Handy geschaut.",
+            "Ihn interessiert überhaupt nicht, was ich sage.",
+            "Sie hat heute kein Wort mit mir geredet.",
+            "Sie ist beleidigt.",
+            "Mein Sitznachbar hat die Augen verdreht."
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "Teil 2: Eine Beobachtung – drei Deutungen"
+        },
+        {
+          "kind": "instruction",
+          "text": "Nimm die Beobachtung deiner Gruppe. Schreibe sie zuerst wertfrei auf, dann drei mögliche Deutungen."
+        },
+        {
+          "kind": "lines",
+          "text": "Reine Beobachtung (nur Tatsachen, keine Wertung):",
+          "lines": 2
+        },
+        {
+          "kind": "lines",
+          "text": "Mögliche Deutung 1 (eher positiv):",
+          "lines": 2
+        },
+        {
+          "kind": "lines",
+          "text": "Mögliche Deutung 2 (eher neutral):",
+          "lines": 2
+        },
+        {
+          "kind": "lines",
+          "text": "Mögliche Deutung 3 (eher negativ):",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "Mit welcher freundlichen Nachfrage könntest du herausfinden, was wirklich stimmt?",
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "Teil 3: Mein eigener Filter"
+        },
+        {
+          "kind": "question",
+          "text": "Erinnere dich an eine Situation, in der sich deine Deutung später als falsch herausgestellt hat. Was war passiert?",
+          "lines": 3
+        },
+        {
+          "kind": "question",
+          "text": "Mein Vorsatz für den Alltag, wenn mir mein Filter etwas Negatives einredet:",
+          "lines": 2
+        },
+        {
+          "kind": "scale",
+          "text": "Wie oft springst du sofort zu einer negativen Deutung?",
+          "items": [
+            "selten",
+            "manchmal",
+            "oft",
+            "fast immer"
+          ]
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "in-fremden-schuhen-eine-schulszene-aus-vier-blickwinkeln",
+    "title": "In fremden Schuhen: Eine Schulszene aus vier Blickwinkeln",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "ES"
+    ],
+    "type": [
+      "ganz Stonn"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Einstieg und Abschlussdiskussion im Plenum"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Perspektiv-Teams – jedes Team vertritt eine beteiligte Person"
+      }
+    ],
+    "themes": [
+      "fremdwahrnehmung",
+      "konfliktloesung",
+      "beziehungsaufbau"
+    ],
+    "tags": [
+      "Perspektivwechsel",
+      "Empathie",
+      "Konflikt",
+      "Standpunkt",
+      "Verstehen",
+      "Rollenarbeit",
+      "Sekundarstufe"
+    ],
+    "shortDescription": "Die Jugendlichen nehmen eine alltägliche Schulkonflikt-Szene aus den Blickwinkeln aller Beteiligten in den Blick. In Perspektiv-Teams erarbeiten sie, was die jeweilige Person wahrnimmt, denkt, fühlt und braucht. Im Aufeinandertreffen der Sichtweisen erleben sie, dass dieselbe Situation für jede:n etwas völlig anderes bedeutet – und dass Verstehen nicht heißt, recht zu geben.",
+    "ablauf": [
+      {
+        "title": "Einstieg: Dieselbe Szene, andere Wahrheit",
+        "text": "Erzähle eine kurze, alltagsnahe Konfliktszene mit mehreren Beteiligten – z. B.: In einer Gruppenarbeit hat eine Person fast nichts beigetragen, eine andere hat alles allein gemacht, eine dritte hat geschwiegen, die Lehrkraft hat am Ende nur die fertige Arbeit gesehen. Frage in die Runde: 'Wer hat sich hier wohl ungerecht behandelt gefühlt?' Lass spontan ein paar Stimmen zu und mache sichtbar, dass je nach Blickwinkel verschiedene Personen 'im Recht' scheinen. Führe die Stundenidee ein: Heute steigen wir nacheinander in die Schuhe jeder beteiligten Person."
+      },
+      {
+        "title": "Hinführung: Vier Fragen, die in fremde Schuhe führen",
+        "text": "Stelle das Werkzeug für den Perspektivwechsel vor – vier Fragen, die man sich für jede Person stellt: Was nimmt diese Person wahr (was sieht/hört sie wirklich)? Was denkt sie über die Situation? Was fühlt sie dabei? Was braucht oder will sie? Mache an einer der Figuren laut vor, wie man diese Fragen beantwortet, und betone den Unterschied zwischen 'Ich finde, sie hat unrecht' und 'Ich verstehe, warum sie so empfindet'. Halte fest: Perspektive übernehmen heißt verstehen, nicht zustimmen."
+      },
+      {
+        "title": "Hauptteil: Perspektiv-Teams arbeiten ihre Person aus",
+        "text": "Teile die Klasse in so viele Teams, wie es beteiligte Personen gibt (z. B. vier). Jedes Team bekommt EINE Person zugewiesen und füllt für sie das Perspektiv-Blatt aus: Wahrnehmung, Gedanken, Gefühle, Bedürfnis. Außerdem formuliert jedes Team einen Ich-Satz, mit dem 'ihre' Person der Gruppe erklären würde, wie es ihr ging ('Ich habe mich übergangen gefühlt, weil …'). Wichtig: Die Teams sollen ihre Person ernst nehmen und ihr besten Glauben unterstellen, auch wenn ihr Verhalten von außen ungünstig wirkte. Begleite die Teams und frage nach: 'Was könnte diese Person nicht gewusst oder nicht gesehen haben?'"
+      },
+      {
+        "title": "Zusammenführung: Die Stuhlrunde der Perspektiven",
+        "text": "Stelle für jede Person einen Stuhl in die Mitte. Nacheinander setzt sich ein:e Sprecher:in jedes Teams auf 'ihren' Stuhl und spricht in der Ich-Form aus der Sicht ihrer Person: Was habe ich wahrgenommen, gedacht, gefühlt, gebraucht? Die Klasse hört zu, ohne zu unterbrechen. Wenn alle Perspektiven gesprochen wurden, frage: 'Hat sich euer Bild von einzelnen Personen verändert? Bei wem?' Mache sichtbar, dass viele Beteiligte gleichzeitig nachvollziehbare Gründe hatten – der Konflikt entstand aus unterschiedlicher Wahrnehmung, nicht aus bösem Willen."
+      },
+      {
+        "title": "Abschluss: Brücke statt Front",
+        "text": "Sammelt gemeinsam: 'Was hätte in dieser Szene geholfen, damit sich alle früher verstanden fühlen?' (z. B. nachfragen, Aufgaben absprechen, sichtbar machen, wer was tut). Jede:r notiert für sich einen Transfer auf das Blatt: eine echte Situation, in der ein Perspektivwechsel gerade nützlich wäre, und die vier Fragen für eine konkrete Person darin. Schließe mit der Kernbotschaft: Sobald wir uns fragen, was die andere Person wahrnimmt und braucht, wird aus einer Front eine Brücke – und Verstehen ist möglich, ohne dass jemand seine eigene Sicht aufgeben muss."
+      }
+    ],
+    "duration": "50 Minuten (eine Unterrichtsstunde)",
+    "materialsNeeded": "Eine ausgearbeitete Konfliktszene mit mehreren Beteiligten (vorlesen oder als Kärtchen austeilen); für jede beteiligte Person ein Stuhl für die Stuhlrunde; Perspektiv-Blatt je Team mit den vier Fragen; Tafel/Whiteboard für die gesammelten Lösungsideen; Stifte.",
+    "remark": "Differenzierung: Für leistungsstärkere Klassen eine Szene mit mehr Personen oder einer echten Interessenkollision wählen; für jüngere ES-Stufen die vier Fragen mit Satzanfängen vorstrukturieren. Sensibilität: Keine reale, gerade laufende Auseinandersetzung aus der Klasse nachspielen – mit der fiktiven Szene arbeiten, damit niemand bloßgestellt wird. Achte darauf, dass die Stuhlrunde wertschätzend bleibt; bei aufkommender Schärfe an die Regel erinnern, dass Verstehen nicht Zustimmen bedeutet. Die Rollen rein sprachlich besetzen, kein körperliches Ausagieren von Konflikten.",
+    "etepStufen": [
+      4,
+      5
+    ],
+    "eldibGoals": [
+      "V-17",
+      "V-18",
+      "V-23",
+      "K-20",
+      "K-21",
+      "K-26",
+      "K-29",
+      "SOZ-21",
+      "SOZ-31",
+      "SOZ-36",
+      "SOZ-37",
+      "SOZ-41",
+      "KOG-58"
+    ],
+    "worksheet": {
+      "title": "In fremden Schuhen – Mein Perspektiv-Blatt",
+      "intro": "Steige in die Schuhe einer beteiligten Person. Beantworte die vier Fragen aus IHRER Sicht – nicht aus deiner. Denk daran: Verstehen heißt nicht, recht geben.",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "Meine Person in dieser Szene"
+        },
+        {
+          "kind": "lines",
+          "text": "Ich vertrete:",
+          "lines": 1
+        },
+        {
+          "kind": "heading",
+          "text": "Die vier Fragen aus ihrer Sicht"
+        },
+        {
+          "kind": "question",
+          "text": "1. Was nimmt diese Person wahr? (Was sieht und hört sie wirklich?)",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "2. Was denkt sie über die Situation?",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "3. Was fühlt sie dabei?",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "4. Was braucht oder will sie?",
+          "lines": 2
+        },
+        {
+          "kind": "box",
+          "text": "Mein Ich-Satz aus ihrer Sicht: 'Ich habe mich … gefühlt, weil …'",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "Nachdem ich alle Perspektiven gehört habe"
+        },
+        {
+          "kind": "question",
+          "text": "Bei welcher Person hat sich mein Bild verändert – und warum?",
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "Transfer in meinen Alltag"
+        },
+        {
+          "kind": "question",
+          "text": "In welcher echten Situation wäre ein Perspektivwechsel für mich gerade nützlich? An wen denke ich dabei?",
+          "lines": 3
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "selbstbild-trifft-fremdbild-wie-andere-mich-sehen",
+    "title": "Selbstbild trifft Fremdbild: Wie andere mich sehen",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "ES"
+    ],
+    "type": [
+      "ganz Stonn"
+    ],
+    "participants": [
+      {
+        "mode": "Individuel",
+        "note": "Selbsteinschätzung und Auswertung in Einzelarbeit"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Wertschätzendes Feedback in festen Vertrauensgruppen zu 3–4 Personen"
+      },
+      {
+        "mode": "Klass",
+        "note": "Einstieg und Abschlussreflexion im Plenum"
+      }
+    ],
+    "themes": [
+      "fremdwahrnehmung",
+      "selbstwahrnehmung",
+      "selbstwertgefuehl"
+    ],
+    "tags": [
+      "Selbstbild",
+      "Fremdbild",
+      "Feedback",
+      "Stärken",
+      "Wahrnehmung",
+      "Identität",
+      "Sekundarstufe"
+    ],
+    "shortDescription": "Die Jugendlichen vergleichen, wie sie sich selbst sehen, mit dem Bild, das andere von ihnen haben. In einer geschützten Feedback-Runde geben sie sich gegenseitig wertschätzende, konkrete Rückmeldungen zu Stärken. Sie entdecken blinde Flecken – Qualitäten, die andere sehen, sie selbst aber unterschätzen – und erleben, dass das Fremdbild eine Ressource für ein realistischeres und freundlicheres Selbstbild sein kann.",
+    "ablauf": [
+      {
+        "title": "Einstieg: Vier Felder über mich",
+        "text": "Zeichne an die Tafel ein einfaches Vier-Felder-Schema (in Anlehnung an das Johari-Fenster, ohne Fachbegriff zu betonen): 'Was ich von mir weiß und andere auch', 'Was ich weiß, aber verberge', 'Was andere sehen, ich aber nicht', 'Was niemand weiß'. Erkläre an einem harmlosen Beispiel, dass besonders das dritte Feld spannend ist: Andere bemerken Dinge an uns, die wir selbst gar nicht wahrnehmen – oft etwas Gutes, das uns selbstverständlich erscheint. Führe die Stundenfrage ein: Wie viel Überschneidung gibt es zwischen meinem Selbstbild und dem Fremdbild – und was kann ich vom Blick der anderen lernen?"
+      },
+      {
+        "title": "Hinführung: Selbsteinschätzung zuerst",
+        "text": "Jede:r füllt zunächst allein und ohne Austausch den oberen Teil des Arbeitsblatts aus: drei Stärken, die man sich selbst zuschreibt, und eine Eigenschaft, bei der man unsicher ist, wie sie auf andere wirkt. Betone, dass es hier nicht um Angeberei oder Bescheidenheit geht, sondern um eine ehrliche Innensicht. Stelle klar, was gleich passiert (gegenseitiges, ausschließlich wertschätzendes Feedback in der Gruppe) und welche Regeln dabei gelten – das schafft Sicherheit, bevor es persönlich wird."
+      },
+      {
+        "title": "Hauptteil: Die Stärken-Runde in der Vertrauensgruppe",
+        "text": "Bildet feste Gruppen zu 3–4 Personen, möglichst mit Menschen, die sich etwas kennen. Reihum ist eine Person 'im Fokus' und sagt zunächst nichts. Die anderen geben ihr nacheinander eine konkrete, wertschätzende Rückmeldung nach der Formel 'Ich nehme an dir wahr, dass … – das habe ich gemerkt, als …'. Wichtig: nur Stärken, immer mit einem Beispiel, nie pauschal ('du bist nett') und nie etwas Negatives. Die Person im Fokus hört nur zu und notiert die Rückmeldungen auf ihrem Blatt unter 'Was andere an mir sehen'. Dann wechselt der Fokus. Begleite die Gruppen, modelliere bei Bedarf eine gute Rückmeldung und stoppe sofort, falls etwas abwertend formuliert wird."
+      },
+      {
+        "title": "Auswertung: Wo Selbstbild und Fremdbild auseinandergehen",
+        "text": "Zurück in Einzelarbeit vergleicht jede:r das eigene Selbstbild mit den erhaltenen Rückmeldungen. Leitfragen auf dem Blatt: Welche Stärke haben andere genannt, die ich mir selbst nicht zugeschrieben hätte (blinder Fleck)? Welche Rückmeldung hat mich überrascht oder gefreut? Gab es etwas, das gar nicht zu meinem Selbstbild passt – und wie gehe ich damit um? Gib ausreichend stille Zeit; das ist der eigentliche Lernmoment der Stunde."
+      },
+      {
+        "title": "Abschluss: Eine Stärke mitnehmen",
+        "text": "Hole die Klasse zurück ins Plenum. Bitte Freiwillige, einen Satz zu teilen – ohne Details preiszugeben, falls sie nicht wollen: 'Mich hat überrascht, dass andere … an mir sehen.' Reflektiert kurz gemeinsam: Warum unterschätzen wir oft gerade die Stärken, die uns leichtfallen? Jede:r wählt zum Schluss eine genannte Stärke aus, die er oder sie ab jetzt bewusster anerkennen will, und hält sie auf dem Blatt fest. Kernbotschaft: Das Fremdbild ist kein Urteil über uns, sondern ein zusätzlicher Spiegel – er kann uns helfen, uns selbst vollständiger und freundlicher zu sehen."
+      }
+    ],
+    "duration": "50–55 Minuten (eine Unterrichtsstunde, bei größeren Gruppen etwas mehr)",
+    "materialsNeeded": "Tafel/Whiteboard für das Vier-Felder-Schema; Arbeitsblatt 'Selbstbild trifft Fremdbild' je Person; Stifte; ruhige Sitzordnung für die Gruppenarbeit; gut sichtbar ausgehängte Feedback-Regeln.",
+    "remark": "Sensibilität hat hier Vorrang: Diese Übung lebt von Vertrauen und darf NICHT in Klassen mit aktuellem Mobbing oder starken Spannungen ungeschützt durchgeführt werden – dort vorher am Klima arbeiten oder die Übung anpassen. Strikt nur Stärken-Feedback zulassen; jede Abwertung sofort unterbinden. Niemand muss seine Selbsteinschätzung offenlegen; das Teilen im Plenum ist freiwillig. Differenzierung: Satzanfänge ('Ich nehme an dir wahr, dass …') als Karten bereitstellen; sehr zurückhaltenden Jugendlichen erlauben, ihr Feedback schriftlich auf einer Karte zu geben. Wenn jemand emotional reagiert, einfühlsam einzeln begleiten und ggf. SePAS/ETEP-Fachkraft einbeziehen.",
+    "etepStufen": [
+      4,
+      5
+    ],
+    "eldibGoals": [
+      "V-14",
+      "V-22",
+      "K-18",
+      "K-19",
+      "K-20",
+      "K-21",
+      "K-26",
+      "K-32",
+      "SOZ-25",
+      "SOZ-32",
+      "SOZ-37",
+      "SOZ-40",
+      "KOG-54"
+    ],
+    "worksheet": {
+      "title": "Selbstbild trifft Fremdbild",
+      "intro": "Zuerst schaust du allein auf dich. Dann hörst du, wie andere dich sehen. Zum Schluss vergleichst du beides – und nimmst etwas mit. Im Feedback geht es ausschließlich um Stärken, immer mit einem Beispiel.",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "Teil 1: Mein Selbstbild (allein ausfüllen)"
+        },
+        {
+          "kind": "instruction",
+          "text": "Sei ehrlich – weder angeben noch kleinmachen."
+        },
+        {
+          "kind": "lines",
+          "text": "Drei Stärken, die ich mir selbst zuschreibe:",
+          "lines": 3
+        },
+        {
+          "kind": "question",
+          "text": "Eine Eigenschaft, bei der ich unsicher bin, wie sie auf andere wirkt:",
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "Teil 2: Was andere an mir sehen (in der Gruppe notieren)"
+        },
+        {
+          "kind": "instruction",
+          "text": "Höre nur zu und schreibe mit. Frage nicht nach und rechtfertige dich nicht."
+        },
+        {
+          "kind": "lines",
+          "text": "Rückmeldungen, die ich von der Gruppe bekommen habe:",
+          "lines": 5
+        },
+        {
+          "kind": "heading",
+          "text": "Teil 3: Selbstbild und Fremdbild vergleichen"
+        },
+        {
+          "kind": "question",
+          "text": "Welche Stärke haben andere genannt, die ich mir selbst NICHT zugeschrieben hätte? (mein blinder Fleck)",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "Welche Rückmeldung hat mich am meisten gefreut oder überrascht?",
+          "lines": 2
+        },
+        {
+          "kind": "scale",
+          "text": "Wie stark passen mein Selbstbild und das Fremdbild zusammen?",
+          "items": [
+            "kaum",
+            "teilweise",
+            "ziemlich",
+            "sehr stark"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "Teil 4: Das nehme ich mit"
+        },
+        {
+          "kind": "box",
+          "text": "Eine Stärke, die ich ab jetzt bewusster an mir anerkennen will:",
+          "lines": 2
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "schubladen-auf-erster-eindruck-und-das-etikett-im-kopf",
+    "title": "Schubladen auf! Erster Eindruck und das Etikett im Kopf",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "ES"
+    ],
+    "type": [
+      "ganz Stonn"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Einstiegsexperiment und Abschlussdiskussion im Plenum"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Analyse-Teams zu 3–4 Jugendlichen"
+      },
+      {
+        "mode": "Individuel",
+        "note": "persönliche Reflexion auf dem Arbeitsblatt"
+      }
+    ],
+    "themes": [
+      "fremdwahrnehmung",
+      "gerechtigkeit",
+      "identitaet"
+    ],
+    "tags": [
+      "Erster Eindruck",
+      "Vorurteile",
+      "Schubladendenken",
+      "Etiketten",
+      "Vielfalt",
+      "Fairness",
+      "Sekundarstufe"
+    ],
+    "shortDescription": "Die Jugendlichen untersuchen, wie blitzschnell wir andere nach dem ersten Eindruck in 'Schubladen' stecken – und wie oft diese Etiketten danebenliegen. An Beispielen erleben sie, wie Vorannahmen unsere Wahrnehmung lenken und das Gegenüber unfair festlegen. Sie entwickeln Strategien, wie man ein vorschnelles Etikett bemerken, hinterfragen und wieder ablösen kann, um Menschen offener zu begegnen.",
+    "ablauf": [
+      {
+        "title": "Einstieg: Das Schnell-Urteil-Experiment",
+        "text": "Zeige nacheinander einige Porträtfotos verschiedener Menschen (bewusst vielfältig: Alter, Stil, Herkunft, Auftreten) für jeweils nur wenige Sekunden. Bitte die Klasse, spontan und still für sich aufzuschreiben, was ihnen zu jeder Person sofort durch den Kopf geht (Beruf, Charakter, 'wie ist die wohl?'). Niemand muss seine Notizen vorlesen. Frage danach: 'Wie sicher wart ihr euch – und worauf habt ihr euer Urteil eigentlich gestützt?' Mache sichtbar, dass wir in Sekunden ein ganzes Bild entwerfen, obwohl wir fast nichts wissen. Führe die Stundenidee ein: Heute öffnen wir die Schubladen in unserem Kopf."
+      },
+      {
+        "title": "Hinführung: Warum wir Schubladen bauen",
+        "text": "Erkläre sachlich und ohne Schuldzuweisung: Schubladen (Kategorien) sind ein normaler, nützlicher Mechanismus des Gehirns – sie helfen, eine unübersichtliche Welt schnell zu ordnen. Problematisch werden sie, wenn wir das Etikett mit der Person verwechseln und gar nicht mehr hinschauen, ob es stimmt. Stelle den Begriff 'sich-selbst-erfüllende Erwartung' kurz vor: Wer in einer Schublade steckt, wird oft auch entsprechend behandelt – und reagiert dann genau so. Sammelt gemeinsam, woran man im Alltag Schubladen erkennt ('typisch …', 'so jemand …', 'die sind doch alle …')."
+      },
+      {
+        "title": "Hauptteil: Analyse-Teams zerlegen ein Etikett",
+        "text": "Bildet Teams zu 3–4 Personen. Jedes Team bekommt eine kurze Fallkarte, in der eine Person nach dem ersten Eindruck vorschnell eingeordnet wird (z. B. 'der Neue, der nie etwas sagt – bestimmt arrogant'; 'die, die immer perfekt aussieht – sicher oberflächlich'; 'der Klassenclown – bestimmt faul'). Aufgaben: Erstens das Etikett benennen ('Welche Schublade?'). Zweitens mindestens drei andere Erklärungen für dasselbe Verhalten finden, die das Etikett widerlegen (der Neue ist schüchtern oder spricht die Sprache noch nicht sicher; der Clown lenkt von Unsicherheit ab). Drittens überlegen: Was bräuchte es, um diese Person wirklich kennenzulernen? Begleite die Teams und ermutige, das Verhalten von der Bewertung zu trennen."
+      },
+      {
+        "title": "Auswertung: Etiketten ablösen",
+        "text": "Jedes Team stellt seine Fallkarte vor: Schublade, die drei Gegen-Erklärungen, der Weg zum echten Kennenlernen. Mache im Plenum sichtbar, wie wackelig die ursprünglichen Urteile waren, sobald man Alternativen zulässt. Wende den Blick dann auf die Selbst-Seite: 'Wart ihr selbst schon mal in einer Schublade, die nicht zu euch passte? Wie hat sich das angefühlt?' Sammle, ohne zu drängen, einige Stimmen. Halte fest, dass jede:r mal falsch eingeordnet wird – und mal andere falsch einordnet."
+      },
+      {
+        "title": "Abschluss: Mein Schubladen-Stopp",
+        "text": "Jede:r notiert allein auf dem Arbeitsblatt einen 'Schubladen-Stopp' – einen Satz oder eine kleine Frage, mit der man sich selbst beim schnellen Urteilen ertappen kann ('Stopp – was weiß ich wirklich über die Person?'). Bitte einige Freiwillige, ihren Stopp-Satz vorzulesen, und sammle die besten sichtbar an der Tafel. Schließe mit der Kernbotschaft: Wir können nicht verhindern, dass uns ein erster Eindruck überkommt – aber wir können die Schublade bewusst wieder öffnen, nachfragen und der Person die Chance geben, mehr zu sein als unser Etikett. Genau das macht Begegnungen fairer."
+      }
+    ],
+    "duration": "50 Minuten (eine Unterrichtsstunde)",
+    "materialsNeeded": "Mehrere vielfältige Porträtfotos für das Einstiegsexperiment (Beamer oder ausgedruckt); vorbereitete Fallkarten mit Schubladen-Beispielen (eine pro Team); Arbeitsblatt 'Mein Schubladen-Stopp' je Person; Tafel/Whiteboard zum Sammeln der Stopp-Sätze; Stifte.",
+    "remark": "Sensibilität: Mit den anonymen Fall- und Bildbeispielen arbeiten, niemals reale Mitschüler:innen oder bestimmte Gruppen vor der Klasse 'einordnen'. Bei Beispielen darauf achten, keine herabsetzenden Stereotype über Herkunft, Religion, Geschlecht oder Aussehen zu reproduzieren – das Ziel ist, Etiketten zu hinterfragen, nicht sie zu bestätigen. Wenn das Thema persönliche Diskriminierungserfahrungen aufruft, das Gespräch ernst nehmen und bei Bedarf einzeln bzw. mit der SePAS-/ETEP-Fachkraft weiterführen. Differenzierung: Für leistungsstärkere Gruppen die 'sich-selbst-erfüllende Erwartung' an einem Beispiel vertiefen; sprachschwächeren Jugendlichen Satzbausteine für die Gegen-Erklärungen anbieten.",
+    "etepStufen": [
+      4,
+      5
+    ],
+    "eldibGoals": [
+      "V-17",
+      "V-18",
+      "V-23",
+      "V-28",
+      "K-20",
+      "K-21",
+      "K-29",
+      "SOZ-31",
+      "SOZ-35",
+      "SOZ-36",
+      "SOZ-37",
+      "KOG-55",
+      "KOG-58"
+    ],
+    "worksheet": {
+      "title": "Mein Schubladen-Stopp – Erster Eindruck unter der Lupe",
+      "intro": "Wir alle stecken andere blitzschnell in Schubladen. Das ist normal – aber oft unfair. Hier übst du, ein Etikett zu bemerken, zu hinterfragen und wieder abzulösen.",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "Teil 1: Mein erstes Urteil ehrlich anschauen"
+        },
+        {
+          "kind": "question",
+          "text": "Worauf habe ich beim Einstiegs-Experiment mein schnelles Urteil gestützt? (Kleidung, Gesicht, Stil …)",
+          "lines": 2
+        },
+        {
+          "kind": "scale",
+          "text": "Wie sicher fühlten sich diese schnellen Urteile an, obwohl ich fast nichts wusste?",
+          "items": [
+            "unsicher",
+            "eher sicher",
+            "sehr sicher"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "Teil 2: Ein Etikett zerlegen (aus der Teamarbeit)"
+        },
+        {
+          "kind": "lines",
+          "text": "Die Schublade in unserer Fallkarte:",
+          "lines": 1
+        },
+        {
+          "kind": "lines",
+          "text": "Drei andere Erklärungen für das Verhalten, die das Etikett widerlegen:",
+          "lines": 3
+        },
+        {
+          "kind": "question",
+          "text": "Was bräuchte es, um diese Person wirklich kennenzulernen?",
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "Teil 3: Selbst in der falschen Schublade"
+        },
+        {
+          "kind": "question",
+          "text": "Wann wurdest du selbst schon mal falsch eingeordnet? Wie hat sich das angefühlt?",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "Teil 4: Mein Schubladen-Stopp"
+        },
+        {
+          "kind": "box",
+          "text": "Mein Satz oder meine Frage, mit der ich mich beim schnellen Urteilen selbst stoppe:",
+          "lines": 2
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "die-atem-werkstatt-unser-klassen-ruhe-garten-waechst",
+    "title": "Die Atem-Werkstatt: Unser Klassen-Ruhe-Garten wächst",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "C1",
+      "C2"
+    ],
+    "type": [
+      "Projet"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "gemeinsames Klassenprojekt über mehrere Tage"
+      },
+      {
+        "mode": "Grupp",
+        "note": "kleine Atem-Stationen zu 4–5 Kindern"
+      }
+    ],
+    "themes": [
+      "achtsamkeit",
+      "selbstwahrnehmung",
+      "emotionen"
+    ],
+    "tags": [
+      "Atmung",
+      "Ruhe",
+      "Entspannung",
+      "Körperwahrnehmung",
+      "Projekt",
+      "Achtsamkeit",
+      "Beruhigen"
+    ],
+    "shortDescription": "Über mehrere Tage richtet die Klasse gemeinsam einen 'Ruhe-Garten' ein und erfindet dabei vier eigene Atem-Übungen, die jeweils ein Pflanzenbild bekommen (Blume, Baum, Schmetterling, Igel). Die Kinder spüren am eigenen Körper, wie ruhiges Atmen sie beruhigt, und lernen, ihren Atem als 'Ruhe-Knopf' bewusst einzusetzen. Am Ende steht eine sichtbare Garten-Ecke mit Atem-Karten, die im Alltag immer wieder genutzt werden kann.",
+    "ablauf": [
+      {
+        "title": "Einstieg: Wie atmet ein ruhiges Tier?",
+        "text": "Versammelt euch im Sitzkreis auf dem Boden. Legt eine Hand auf den eigenen Bauch und spürt nach: 'Geht euer Bauch beim Einatmen vor oder zurück?' Lasst die Kinder ausprobieren und staunen, dass sich der Bauch wie ein kleiner Ballon füllt. Erzählt dann von Tieren: 'Wie atmet wohl ein aufgeregter Hund? Und wie ein schlafender Igel?' Macht beides gemeinsam vor – schnelles Hecheln und ganz langsames, tiefes Atmen. Leitet ab: Wenn wir langsam atmen, wird auch alles in uns ruhiger. Stellt das Projekt vor: 'Wir bauen zusammen einen Ruhe-Garten und erfinden dafür unsere eigenen Atem-Übungen.'"
+      },
+      {
+        "title": "Hauptteil 1: Die vier Atem-Pflanzen erfinden",
+        "text": "Stellt vier einfache Atem-Übungen mit Bildern vor und probiert jede gemeinsam aus: die Blume (am Daumen 'riechen' = einatmen, ausblasen wie eine Kerze), den Baum (groß machen beim Einatmen, sinken lassen beim Ausatmen), den Schmetterling (Arme langsam heben und senken im Atemtakt) und den Igel (sich klein einrollen, ruhig atmen, langsam wieder öffnen). Verteilt die Klasse auf vier Stationen; jede Kleingruppe übt 'ihre' Übung so lange, bis sie sie der ganzen Klasse vorzeigen kann. Begleite ruhig und leise, damit die Atmosphäre selbst schon ruhig wird."
+      },
+      {
+        "title": "Hauptteil 2: Den Ruhe-Garten gestalten",
+        "text": "Richtet gemeinsam eine feste Ecke im Raum als 'Ruhe-Garten' ein: eine Decke oder ein Teppich, vielleicht ein Kissen, gedämpftes Licht. Für jede der vier Atem-Übungen gestaltet die zuständige Gruppe ein großes Pflanzen-Bild (Blume, Baum, Schmetterling, Igel) und klebt darunter mit eurer Hilfe ein einfaches Bild-Symbol, wie die Übung geht. Hängt die vier Atem-Karten gut sichtbar in der Ecke auf. Wichtig: Der Garten ist kein Spielbereich, sondern ein Ort zum Ruhigwerden – das besprecht ihr gemeinsam und legt eine 'Garten-Regel' fest (leise sein, allein oder zu zweit, ruhig atmen)."
+      },
+      {
+        "title": "Hauptteil 3: Den Ruhe-Knopf ausprobieren",
+        "text": "Übt nun, den Atem im Alltag als 'Ruhe-Knopf' zu nutzen. Spielt kleine Szenen durch: 'Du hast dich erschreckt' oder 'Du musstest warten und bist ungeduldig.' Fragt: 'Welche Atem-Pflanze hilft dir jetzt?' Die Kinder wählen eine Karte aus dem Garten und machen die Übung gemeinsam. Führt ein leises Signal ein (z. B. eine Klangschale oder eine Triangel), bei dem alle kurz innehalten und dreimal ruhig wie der Igel atmen. Übt dieses Signal über mehrere Tage immer wieder kurz, bis es vertraut ist."
+      },
+      {
+        "title": "Abschluss: Garten-Einweihung im Kreis",
+        "text": "Feiert die Einweihung des Ruhe-Gartens. Setzt euch im Kreis, lasst die Klangschale erklingen und macht gemeinsam alle vier Atem-Übungen langsam nacheinander. Jedes Kind darf danach mit dem Daumen zeigen, welche Pflanze ihm am besten beim Ruhigwerden hilft. Sprecht ab, wann der Garten genutzt werden darf (z. B. nach der Pause, wenn jemand traurig oder aufgeregt ist). Vereinbart: Immer wenn das Ruhe-Signal ertönt, hilft uns unser Atem. So bleibt der Ruhe-Garten ein dauerhafter Ort der Achtsamkeit in eurer Klasse."
+      }
+    ],
+    "duration": "Projekt über 3–4 Tage, je 20–30 Minuten; Ruhe-Garten danach dauerhaft nutzbar",
+    "materialsNeeded": "Decke/Teppich und ein bis zwei Kissen für die Ruhe-Ecke; großes Papier und Stifte für vier Pflanzen-Bilder (Blume, Baum, Schmetterling, Igel); Klangschale, Triangel oder eine kleine Glocke als Ruhe-Signal; optional eine kleine Kerze (nur zum Anschauen, nicht zum echten Auspusten bei den Kleinsten); Klebeband zum Aufhängen der Atem-Karten.",
+    "remark": "Differenzierung: Für C1 die Übungen vor allem über Nachmachen und Tierbilder vermitteln, ohne lange Erklärungen; C2 kann das Bild-Symbol für die Atem-Karten schon selbst zeichnen und die Garten-Regel mitformulieren. Hinweis: Atemübungen kurz halten und nie erzwingen – manche Kinder werden von zu langem bewusstem Atmen unruhig oder schwindelig; bei Anzeichen von Unwohlsein einfach normal weiteratmen lassen. Echte Kerzen aus Sicherheitsgründen nur als Symbol zeigen, nicht entzünden.",
+    "etepStufen": [
+      1,
+      2
+    ],
+    "eldibGoals": [
+      "V-1",
+      "V-3",
+      "V-10",
+      "V-11",
+      "V-21",
+      "K-16",
+      "SOZ-9",
+      "SOZ-14",
+      "KOG-1",
+      "KOG-2",
+      "KOG-11",
+      "KOG-16"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "lauschdetektive-auf-geraeusche-safari-durch-unseren-schultag",
+    "title": "Lauschdetektive auf Geräusche-Safari durch unseren Schultag",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "C1",
+      "C2"
+    ],
+    "type": [
+      "Projet"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "gemeinsame Hör-Reisen und Sammelrunden"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Hör-Teams zu 3–4 Kindern an verschiedenen Orten"
+      }
+    ],
+    "themes": [
+      "achtsamkeit",
+      "selbstwahrnehmung",
+      "kooperation"
+    ],
+    "tags": [
+      "Hören",
+      "Wahrnehmung",
+      "Stille",
+      "Konzentration",
+      "Projekt",
+      "Achtsamkeit",
+      "Geräusche"
+    ],
+    "shortDescription": "Als 'Lauschdetektive' gehen die Kinder über mehrere Tage auf Geräusche-Safari: Sie üben, ganz still zu werden und genau hinzuhören, sammeln Geräusche aus ihrem Schultag und gestalten daraus eine 'Hör-Landkarte'. Sie entdecken, dass Stille gar nicht leer ist und dass bewusstes Zuhören sie ruhig und aufmerksam macht. Das Projekt schult Achtsamkeit über den Hörsinn und endet mit einem gemeinsamen Hör-Rätsel.",
+    "ablauf": [
+      {
+        "title": "Einstieg: Die Stille ist nicht leer",
+        "text": "Setzt euch bequem hin und kündigt an: 'Wir machen jetzt eine Minute lang gar nichts – nur hören.' Schließt (wer mag) die Augen und lauscht. Nach einer Minute sammelt ihr leise im Kreis: 'Was habt ihr gehört? Etwas ganz Leises? Etwas weit weg?' Staunt gemeinsam, wie viel zu hören war, obwohl es 'still' schien. Erklärt: Heute werdet ihr alle zu Lauschdetektiven, die mit ihren Ohren auf die Pirsch gehen. Übt das Detektiv-Zeichen: eine Hand hinters Ohr legen heißt 'Jetzt höre ich ganz genau hin.'"
+      },
+      {
+        "title": "Hauptteil 1: Detektiv-Ohren trainieren",
+        "text": "Trainiert das genaue Hören mit kleinen Übungen. Erzeugt nacheinander leise Geräusche (Papier knistern, mit den Fingern schnipsen, einen Stift fallen lassen) und lasst die Kinder mit geschlossenen Augen raten, was es war und woher es kam (rechts, links, vorne). Spielt dann 'Wer hat den Schlüssel?': Ein Kind in der Mitte hört mit geschlossenen Augen, von wo ein leise weitergegebenes Geräusch kommt. Diese Übungen schärfen die Aufmerksamkeit und das ruhige Abwarten – wichtig: Es klappt nur, wenn alle ganz leise sind, das spüren die Kinder schnell selbst."
+      },
+      {
+        "title": "Hauptteil 2: Geräusche-Safari an verschiedenen Orten",
+        "text": "Geht in Hör-Teams auf Safari. Sucht nacheinander verschiedene Orte auf (Klassenzimmer, Flur, Pausenhof, vielleicht die Nähe der Küche) und lauscht an jedem Ort eine kurze Weile schweigend. Danach sammelt jedes Team leise, welche Geräusche es 'gefangen' hat. Hilf den Kindern, die Geräusche zu beschreiben ('ein Brummen', 'Schritte', 'Vogelzwitschern') und ordnet sie ein: Welche Geräusche sind laut, welche leise, welche mag ich gern, welche stören mich? So verbinden die Kinder Hören mit dem eigenen Empfinden."
+      },
+      {
+        "title": "Hauptteil 3: Unsere Hör-Landkarte gestalten",
+        "text": "Gestaltet gemeinsam eine große 'Hör-Landkarte' eures Schultags. Malt die besuchten Orte auf und klebt zu jedem Ort kleine Symbol-Bilder für die dort gefundenen Geräusche (eine Note für Musik/Singen, Füße für Schritte, ein Vogel für draußen). Markiert mit einem Ruhe-Zeichen (z. B. ein blaues Kissen-Symbol) den leisesten Ort, den ihr gefunden habt. Sprecht darüber: 'Wo können wir hingehen oder hinhören, wenn wir es ruhig brauchen?' So wird aus dem Zuhören ein Werkzeug, um selbst ruhiger zu werden."
+      },
+      {
+        "title": "Abschluss: Das große Hör-Rätsel",
+        "text": "Schließt das Projekt mit einem Hör-Rätsel ab. Erzeugt hinter einem Tuch oder mit geschlossenen Augen der Kinder verschiedene Geräusche vom Schultag, und die Lauschdetektive raten, welcher Ort der Hör-Landkarte gemeint ist. Macht zum Schluss noch einmal eine gemeinsame Stille-Minute und vergleicht: 'Hören wir jetzt mehr als am ersten Tag?' Vereinbart ein Klassen-Ritual: Wenn es zu laut und unruhig wird, ruft jemand leise 'Lauschdetektive!' – alle legen die Hand hinters Ohr und werden für einen Moment ganz still."
+      }
+    ],
+    "duration": "Projekt über 3–4 Tage, je 20–30 Minuten",
+    "materialsNeeded": "Großes Papier oder eine Plakatfläche für die Hör-Landkarte; Stifte und vorbereitete kleine Symbol-Bilder (Note, Füße, Vogel, Kissen); kleine Gegenstände zum leisen Geräuschemachen (Papier, Schlüssel, Stift); ein Tuch für das Hör-Rätsel; bequeme Sitzgelegenheiten für die Stille-Minuten.",
+    "remark": "Differenzierung: Für C1 die Stille-Phasen sehr kurz halten (30–60 Sekunden) und stark über das Detektiv-Spiel motivieren; C2 kann Geräusche selbst benennen, sortieren und die Symbol-Bilder zur Hör-Landkarte beisteuern. Hinweis: Geräuschempfindliche Kinder nicht zum Augenschließen zwingen; eine Variante mit offenen Augen anbieten. Auf den Safari-Wegen klare Bewegungsregeln vereinbaren (leise gehen, beim Team bleiben) und laute oder gefährliche Orte meiden.",
+    "etepStufen": [
+      1,
+      2
+    ],
+    "eldibGoals": [
+      "V-1",
+      "V-2",
+      "V-3",
+      "V-10",
+      "V-11",
+      "K-16",
+      "SOZ-14",
+      "SOZ-15",
+      "KOG-1",
+      "KOG-2",
+      "KOG-30"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "der-wetter-im-bauch-kalender-so-fuehlt-sich-mein-tag-an",
+    "title": "Der Wetter-im-Bauch-Kalender: So fühlt sich mein Tag an",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "C1",
+      "C2"
+    ],
+    "type": [
+      "Projet"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "tägliche kurze Gefühls-Wetter-Runde im Kreis"
+      },
+      {
+        "mode": "Individuel",
+        "note": "jedes Kind führt sein eigenes Wetter-Zeichen"
+      }
+    ],
+    "themes": [
+      "achtsamkeit",
+      "emotionen",
+      "selbstwahrnehmung"
+    ],
+    "tags": [
+      "Gefühle",
+      "Innehalten",
+      "Körperwahrnehmung",
+      "Wetter",
+      "Projekt",
+      "Achtsamkeit",
+      "Stimmung"
+    ],
+    "shortDescription": "Über zwei Wochen halten die Kinder jeden Morgen kurz inne und spüren nach, welches 'Wetter' gerade in ihrem Bauch ist – Sonne, Wolke, Regen, Sturm oder Regenbogen. Sie lernen, ohne Wertung wahrzunehmen, wie sie sich fühlen, und gestalten gemeinsam einen großen Wetter-Kalender für die Klasse. So üben sie achtsames Innehalten und merken: Gefühle dürfen wechseln wie das Wetter, und ich kann lernen, sie bei mir zu bemerken.",
+    "ablauf": [
+      {
+        "title": "Einstieg: Welches Wetter ist heute in mir?",
+        "text": "Setzt euch in den Kreis und zeigt Bilder von Wetter: strahlende Sonne, eine graue Wolke, Regen, einen Sturm mit Blitz, einen Regenbogen. Fragt: 'Wie fühlt sich Sonne an? Und wie ein Sturm?' Übt gemeinsam, jedem Wetter ein Gefühl zuzuordnen (Sonne = froh, Wolke = ein bisschen müde oder traurig, Regen = traurig, Sturm = wütend oder aufgeregt, Regenbogen = aufgeregt-glücklich). Dann legt jeder eine Hand auf den Bauch, schließt kurz die Augen und spürt nach: 'Welches Wetter ist gerade in mir?' Stellt das Projekt vor: 'Zwei Wochen lang werden wir jeden Morgen unser Bauch-Wetter anschauen.'"
+      },
+      {
+        "title": "Hauptteil 1: Mein eigenes Wetter-Zeichen basteln",
+        "text": "Jedes Kind bastelt sich seine fünf Wetter-Karten (Sonne, Wolke, Regen, Sturm, Regenbogen) zum Anmalen und einen kleinen Umschlag oder eine Klammer, um sie aufzubewahren. Sprecht beim Gestalten immer wieder über die Gefühle dahinter, damit jedes Kind die Bilder mit eigenem Erleben verbindet. Wichtig: Es gibt kein 'falsches' oder 'schlechtes' Wetter – auch ein Regentag gehört dazu. Betont, dass niemand ein bestimmtes Wetter haben muss und dass sich das Wetter im Laufe des Tages ändern darf."
+      },
+      {
+        "title": "Hauptteil 2: Die tägliche Wetter-Minute",
+        "text": "Richtet ein tägliches Morgen-Ritual ein: Eine kleine Glocke läutet, alle werden still, legen eine Hand auf den Bauch und spüren eine ruhige Minute lang nach. Dann wählt jedes Kind seine passende Wetter-Karte und hängt sie an den großen Klassen-Wetter-Kalender (eine Tafel mit den Namen oder Foto-Symbolen aller Kinder). Wer mag, darf in einem Satz erzählen, warum heute dieses Wetter herrscht – aber niemand muss. Führt das Ritual über die zwei Wochen jeden Morgen konsequent durch; gerade die Wiederholung macht das Innehalten vertraut."
+      },
+      {
+        "title": "Hauptteil 3: Wenn das Wetter umschlägt",
+        "text": "Nach einigen Tagen sprecht darüber, dass sich das Bauch-Wetter ändern kann. Fragt: 'War heute Morgen jemand eine Wolke und ist jetzt eine Sonne? Was hat geholfen?' Sammelt 'Wetterwechsel-Helfer' (kurz nach draußen, tief durchatmen, jemandem etwas erzählen, eine Pause machen) auf einem Plakat. Übt: Wer ein 'Sturm-Wetter' bemerkt, darf sich eine ruhige Sturm-Hilfe nehmen (z. B. dreimal tief atmen wie ein ruhiger Wind). So wird aus dem Wahrnehmen ein erstes, sanftes Umgehen mit den eigenen Gefühlen."
+      },
+      {
+        "title": "Abschluss: Unser Wetter-Rückblick",
+        "text": "Schaut am Ende der zwei Wochen gemeinsam auf den Wetter-Kalender. Staunt: 'Wie viele verschiedene Wetter gab es bei uns? Hatten wir jeden Tag dasselbe?' Macht sichtbar, dass alle Wetter normal sind und vorübergehen. Jedes Kind darf erzählen oder zeigen, welches Wetter es am liebsten mag und welches am häufigsten da war. Vereinbart, dass die Wetter-Minute ein Ritual bleibt, das ihr weiterführen könnt. Schlusssatz: 'Mein Bauch erzählt mir, wie es mir geht – und ich kann jeden Tag kurz nachhören.'"
+      }
+    ],
+    "duration": "Projekt über 2 Wochen, tägliche Wetter-Minute 5–10 Minuten; Auftakt und Abschluss je 25 Minuten",
+    "materialsNeeded": "Bildkarten der fünf Wetterarten (Sonne, Wolke, Regen, Sturm, Regenbogen) zum Vorzeigen; pro Kind ein Satz Wetter-Karten zum Anmalen sowie Umschlag/Klammer; eine große Kalender-Tafel mit Namen oder Foto-Symbolen aller Kinder; eine kleine Glocke oder Klangschale; ein Plakat für die 'Wetterwechsel-Helfer'.",
+    "remark": "Differenzierung: Für C1 mit nur drei Wetterarten (Sonne, Wolke, Sturm) starten und stark mit Bildern und Mimik arbeiten; C2 kann fünf Wetter unterscheiden und kurze Sätze zu seiner Stimmung sagen. Hinweis: Das tägliche Erzählen ist immer freiwillig – kein Kind soll vor der Gruppe Gefühle offenlegen müssen. Wenn ein Kind über längere Zeit nur 'Sturm' oder 'Regen' zeigt, das achtsam beobachten und das Gespräch behutsam außerhalb der Runde suchen.",
+    "etepStufen": [
+      1,
+      2
+    ],
+    "eldibGoals": [
+      "V-1",
+      "V-3",
+      "V-21",
+      "K-15",
+      "K-16",
+      "K-26",
+      "SOZ-9",
+      "SOZ-15",
+      "KOG-1",
+      "KOG-2",
+      "KOG-16"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "schneckentempo-tag-wie-wir-das-langsame-tun-entdecken",
+    "title": "Schneckentempo-Tag: Wie wir das langsame Tun entdecken",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "C1",
+      "C2"
+    ],
+    "type": [
+      "Projet"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "gemeinsame Langsam-Spiele im Kreis und im Raum"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Schnecken-Teams an Achtsamkeits-Stationen"
+      }
+    ],
+    "themes": [
+      "achtsamkeit",
+      "impulskontrolle",
+      "bewegung"
+    ],
+    "tags": [
+      "Langsamkeit",
+      "Innehalten",
+      "Bewegung",
+      "Selbststeuerung",
+      "Projekt",
+      "Achtsamkeit",
+      "Geduld"
+    ],
+    "shortDescription": "An mehreren 'Schneckentempo-Tagen' entdeckt die Klasse, wie es sich anfühlt, etwas ganz bewusst langsam zu tun. Die Kinder bewegen sich im Schneckentempo, tragen vorsichtig einen Löffel, malen langsam und üben so, ihre Impulse wahrzunehmen und das Tempo selbst zu steuern. Sie erleben, dass Langsamkeit hilft, genauer hinzuspüren und ruhiger zu werden – und gestalten gemeinsam eine 'Schnecken-Urkunde' mit ihren Langsam-Kunststücken.",
+    "ablauf": [
+      {
+        "title": "Einstieg: So langsam wie eine Schnecke",
+        "text": "Versammelt euch und betrachtet (auf einem Bild oder Video-Standbild) eine Schnecke. Staunt gemeinsam: 'Wie langsam die ist! Trotzdem kommt sie ans Ziel.' Probiert es selbst: Alle gehen einmal so schnell wie möglich durch den Raum und dann so langsam wie eine Schnecke – jeder Schritt ganz bewusst. Fragt nach: 'Wie hat sich schnell angefühlt? Und langsam? Was war schwerer?' Leitet ab: Langsam zu sein, ist gar nicht so leicht und braucht ganz viel Achtsamkeit. Kündigt die Schneckentempo-Tage an: 'Wir werden Meisterinnen und Meister im langsamen Tun.'"
+      },
+      {
+        "title": "Hauptteil 1: Langsam-Bewegungsspiele",
+        "text": "Übt das langsame Bewegen mit Spielen. Spielt 'Schnecken-Stopp': Die Kinder bewegen sich in Zeitlupe durch den Raum; bei einem leisen Glockenton frieren alle ganz langsam ein. Macht eine 'Schnecken-Parade', bei der alle hintereinander so langsam wie möglich eine Strecke zurücklegen – wer ist am langsamsten und nicht der Schnellste? Wichtig ist hier die Umkehrung des Gewohnten: Nicht das Schnellsein wird belohnt, sondern das bewusste, kontrollierte Langsamsein. Begleite mit ruhiger, leiser Stimme, damit die ganze Stimmung entschleunigt."
+      },
+      {
+        "title": "Hauptteil 2: Achtsamkeits-Stationen im Schneckentempo",
+        "text": "Richtet drei Schnecken-Stationen ein, an denen in Kleingruppen langsam und genau gehandelt wird. Station 1 'Löffel-Reise': einen Tischtennisball oder eine Murmel auf einem Löffel ganz langsam und ruhig über eine Strecke tragen. Station 2 'Langsam malen': mit dem Stift eine vorgezeichnete Linie ganz langsam nachfahren, ohne den Rand zu berühren. Station 3 'Vorsichtig stapeln': Bauklötze oder Becher Stück für Stück bedacht aufeinandersetzen. An jeder Station gilt: lieber langsam und genau als schnell. Lobe sichtbar das ruhige, konzentrierte Tun."
+      },
+      {
+        "title": "Hauptteil 3: Langsam essen und langsam atmen",
+        "text": "Probiert Achtsamkeit beim Genießen aus. Gebt jedem Kind ein kleines Stück Obst (z. B. eine Rosine oder ein Apfelstück) und esst es gemeinsam im Schneckentempo: erst lange anschauen, dann riechen, dann ganz langsam kauen und genau schmecken. Fragt: 'Schmeckt es anders, wenn man so langsam isst?' Schließt mit einer kurzen Schnecken-Atmung an: ganz langsam einatmen, während ihr die Arme wie Schneckenfühler hebt, und langsam ausatmen, während sie sinken. So verbindet sich Langsamkeit mit Ruhe und Genuss."
+      },
+      {
+        "title": "Abschluss: Die Schnecken-Urkunde",
+        "text": "Würdigt die Langsam-Kunststücke der Kinder. Jedes Kind darf zeigen, was es besonders gut im Schneckentempo kann, und erhält eine selbstgestaltete 'Schnecken-Urkunde' mit einem aufgemalten Schnecken-Stempel. Sammelt gemeinsam, wann Langsamsein im Alltag hilft (beim Anziehen, beim Aufräumen, wenn man wütend ist und nichts kaputtmachen will). Vereinbart ein Ritual: Wenn es hektisch wird, sagt jemand leise 'Schneckentempo!' – und alle machen für einen Moment alles ganz langsam und bewusst. So bleibt die Achtsamkeit für das eigene Tempo lebendig."
+      }
+    ],
+    "duration": "Projekt über 2–3 Tage, je 25–35 Minuten",
+    "materialsNeeded": "Bild oder Standbild einer Schnecke; eine kleine Glocke für das Stopp-Signal; Löffel und Tischtennisbälle/Murmeln; Arbeitsblätter mit vorgezeichneten Linien und Stifte; Bauklötze oder Stapelbecher; pro Kind ein kleines Stück Obst (Allergien beachten); vorbereitete Urkunden-Vorlagen mit Schnecken-Motiv und Stempel.",
+    "remark": "Differenzierung: Für C1 die Stationen einfach halten (Löffel-Reise, langsam malen) und kurze Spielphasen wählen; C2 kann zusätzlich das Stapeln und längere Konzentrationsphasen bewältigen und seine Urkunde selbst beschriften. Hinweis: Vor der Obst-Übung Allergien und Unverträglichkeiten abklären und ein alternatives Lebensmittel bereithalten. Murmeln bei den Jüngsten wegen Verschluckungsgefahr durch größere Bälle ersetzen. Kein Tempo-Wettbewerb 'wer ist am besten' – Lob gilt dem ruhigen, achtsamen Tun.",
+    "etepStufen": [
+      1,
+      2
+    ],
+    "eldibGoals": [
+      "V-3",
+      "V-10",
+      "V-11",
+      "V-20",
+      "V-21",
+      "K-16",
+      "SOZ-14",
+      "SOZ-18",
+      "KOG-1",
+      "KOG-2",
+      "KOG-18",
+      "KOG-29"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "die-streit-ampel-stopp-atmen-reden",
+    "title": "Die Streit-Ampel: Stopp, Atmen, Reden",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "C2",
+      "C3"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Einführung und Reflexion im Sitzkreis"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Übung in festen Dreiergruppen (zwei spielen, eine beobachtet)"
+      }
+    ],
+    "themes": [
+      "konfliktloesung",
+      "impulskontrolle",
+      "kommunikation"
+    ],
+    "tags": [
+      "Streit",
+      "Selbststeuerung",
+      "Ampel",
+      "Cool-down",
+      "Ich-Botschaft",
+      "Deeskalation",
+      "Gefuehle"
+    ],
+    "shortDescription": "Die Kinder lernen mit dem Bild einer Ampel, wie sie einen aufkommenden Streit nicht sofort eskalieren lassen, sondern bewusst anhalten. Rot heißt Stopp und Innehalten, Gelb heißt Durchatmen und das eigene Gefühl benennen, Grün heißt überlegt reden und eine Lösung suchen. In kleinen Rollenspielen üben sie die drei Schritte an typischen Schulhof-Situationen, sodass die Ampel zu einem verlässlichen inneren Notbremse-Bild wird.",
+    "ablauf": [
+      {
+        "title": "Einstieg: Wann wird aus einem Funken ein Feuer?",
+        "text": "Versammelt euch im Sitzkreis und zeigt eine große, selbst gebastelte Ampel mit drei Kreisen. Fragt: 'Was passiert in eurem Körper, wenn ihr euch richtig ärgert?' Sammelt Antworten (heißer Kopf, Fäuste, lautes Herz) und haltet sie an der Tafel fest. Erklärt: Genau in diesem heißen Moment passieren die meisten Streit-Sätze, die man später bereut. Stellt die Ampel vor: Rot = sofort stoppen und nichts Verletzendes tun oder sagen, Gelb = einmal tief durchatmen und sagen, was man fühlt, Grün = ruhig erklären, was man braucht, und gemeinsam eine Lösung suchen. Lasst die Kinder die drei Farben mit eigenen Worten wiederholen."
+      },
+      {
+        "title": "Hauptteil 1: Die Ampel mit dem Körper üben",
+        "text": "Übt die drei Schritte zunächst gemeinsam und körperlich, damit sie sich einprägen. Rot: Alle ballen kurz die Fäuste, halten inne und legen dann die offenen Hände bewusst auf die Knie ('Stopp, ich halte an'). Gelb: Alle atmen dreimal langsam und tief, eine Hand auf dem Bauch, und sagen reihum laut ein Gefühlswort ('Ich bin wütend', 'Ich bin traurig', 'Ich bin enttäuscht'). Grün: Alle üben einen ruhigen Ich-Satz nach dem Muster 'Mich stört …, ich wünsche mir …'. Wiederholt die Abfolge zwei- bis dreimal, bis die Bewegungen sitzen."
+      },
+      {
+        "title": "Hauptteil 2: Streit-Szenen in Dreiergruppen",
+        "text": "Bildet feste Dreiergruppen. Verteilt vorbereitete Streit-Karten mit Schulhof-Situationen (z. B. 'Jemand drängelt sich vor', 'Zwei wollen denselben Ball', 'Jemand lacht über deine Zeichnung'). Zwei Kinder spielen die Szene, das dritte hält die Papp-Ampel hoch und schaltet sie weiter: Bei Rot frieren die Spieler kurz ein, bei Gelb atmen sie und benennen ihr Gefühl, bei Grün sprechen sie ihre Ich-Sätze und suchen eine Einigung. Danach wird gewechselt, sodass jedes Kind einmal die Ampel führt. Geht herum und unterstützt leise bei den Ich-Sätzen."
+      },
+      {
+        "title": "Abschluss: Meine eigene innere Ampel",
+        "text": "Kommt zurück in den Kreis und fragt: 'Welcher Schritt war für euch am schwersten – Stopp, Atmen oder Reden?' Lasst einige Kinder berichten. Jedes Kind bekommt eine kleine Ampel-Karte für die Federtasche und überlegt für sich: 'Bei welchem nächsten Ärger probiere ich die Ampel aus?' Vereinbart ein gemeinsames Handzeichen (flache Hand = Rot/Stopp), mit dem ihr euch im Alltag gegenseitig an die Ampel erinnern könnt. Würdigt, dass Anhalten Mut und Stärke zeigt, nicht Schwäche."
+      }
+    ],
+    "duration": "ca. 45 Minuten",
+    "materialsNeeded": "Große Papp-Ampel für die Demonstration und kleine Papp-Ampeln für die Gruppen (rote, gelbe, grüne Kreise); vorbereitete Streit-Situationskarten; kleine Ampel-Karten im Visitenkartenformat für jedes Kind; Tafel oder Flipchart.",
+    "remark": "Differenzierung: Für C2 die Ich-Sätze als Satzanfänge fest vorgeben und an die Tafel schreiben; C3 kann eigene Situationen und Lösungen erfinden. Sicherheitshinweis: Beim Rollenspiel klar vereinbaren, dass nicht wirklich gerempelt oder geschubst wird – Streit wird nur angedeutet. Bei Kindern mit realen, frischen Konflikten in der Gruppe besser neutrale, erfundene Beispiele verwenden, damit niemand bloßgestellt wird.",
+    "etepStufen": [
+      3,
+      4
+    ],
+    "eldibGoals": [
+      "V-18",
+      "V-20",
+      "V-21",
+      "V-28",
+      "K-16",
+      "K-17",
+      "K-26",
+      "SOZ-18",
+      "SOZ-32",
+      "SOZ-34"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "bruecken-saetze-vom-vorwurf-zum-wunsch",
+    "title": "Brücken-Sätze: Vom Vorwurf zum Wunsch",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "C2",
+      "C3"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Modellierung und Auswertung im Plenum"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Partner- und Kleingruppenarbeit an einer 'Sätze-Brücke'"
+      }
+    ],
+    "themes": [
+      "konfliktloesung",
+      "kommunikation",
+      "emotionen"
+    ],
+    "tags": [
+      "Ich-Botschaft",
+      "Du-Vorwurf",
+      "Streit",
+      "Gefuehle",
+      "Wuensche",
+      "Sprache",
+      "Brueckenbau"
+    ],
+    "shortDescription": "Im Streit fallen schnell Du-Vorwürfe wie 'Du bist gemein!', die das Gegenüber verschließen. In dieser Aktivität bauen die Kinder Schritt für Schritt 'Brücken-Sätze', die aus einem Vorwurf einen verständlichen Wunsch machen: Was ist passiert, wie fühle ich mich, was wünsche ich mir. An einer großen Papp-Brücke verwandeln sie typische Vorwürfe in Ich-Botschaften und erleben, wie sich dadurch die Stimmung im Gespräch verändert.",
+    "ablauf": [
+      {
+        "title": "Einstieg: Mauer-Satz oder Brücken-Satz?",
+        "text": "Stellt zwei Bilder gegenüber: eine hohe Mauer und eine Brücke. Sprecht zwei Sätze laut und übertrieben: erst einen Vorwurf ('Immer nimmst du mir alles weg, du bist blöd!'), dann eine Ich-Botschaft ('Ich war traurig, als mein Stift weg war, ich wünsche mir, dass du mich fragst'). Fragt die Kinder: 'Bei welchem Satz möchtet ihr zuhören, bei welchem macht ihr zu?' Ordnet gemeinsam zu: Vorwürfe sind Mauer-Sätze, sie trennen; Ich-Botschaften sind Brücken-Sätze, sie verbinden. Macht das Ziel klar: Heute lernt ihr, Mauer-Sätze in Brücken-Sätze umzubauen."
+      },
+      {
+        "title": "Hauptteil 1: Die drei Brücken-Pfeiler kennenlernen",
+        "text": "Zeigt an der großen Papp-Brücke drei beschriftete Pfeiler: Pfeiler 1 'Was war?' (sachlich, ohne Schimpfwort), Pfeiler 2 'Wie fühle ich mich?' (Gefühlswort), Pfeiler 3 'Was wünsche ich mir?' (klarer Wunsch). Macht ein gemeinsames Beispiel: Aus 'Du Petzer!' wird Schritt für Schritt 'Du hast der Lehrerin erzählt, dass ich geredet habe' – 'Ich war wütend und beschämt' – 'Ich wünsche mir, dass du zuerst mit mir redest'. Lasst die Klasse jeden Pfeiler einmal gemeinsam laut formulieren, bevor ihr in die Gruppenarbeit geht."
+      },
+      {
+        "title": "Hauptteil 2: Vorwürfe umbauen in Partnerarbeit",
+        "text": "Verteilt an jedes Paar zwei bis drei Karten mit typischen Mauer-Sätzen aus dem Schulalltag. Aufgabe: Bauen Sie jeden Vorwurf entlang der drei Pfeiler in einen Brücken-Satz um und schreiben Sie das Ergebnis auf einen Papp-Streifen ('Brückenbrett'). Wer fertig ist, hängt sein Brückenbrett an die große Brücke und probiert, den neuen Satz dem Partner in ruhigem Ton vorzulesen. Geht herum und helft besonders beim mittleren Pfeiler, dem Gefühlswort, da dieser den Kindern oft am schwersten fällt; bietet eine kleine Gefühlsliste als Stütze an."
+      },
+      {
+        "title": "Abschluss: Über die Brücke gehen",
+        "text": "Lest einige der entstandenen Brücken-Sätze gemeinsam vor und vergleicht sie mit den ursprünglichen Vorwürfen. Fragt: 'Was verändert sich, wenn ich so spreche?' und 'Was ist schwerer – den Vorwurf oder den Wunsch zu sagen?' Jedes Kind wählt einen Brücken-Satz, den es sich für die nächste echte Streitsituation merken will, und schreibt oder zeichnet ihn auf eine kleine Karte. Vereinbart, die Pfeiler-Brücke an der Wand hängen zu lassen, damit ihr bei künftigen Konflikten gemeinsam darauf zeigen könnt: 'Lass uns einen Brücken-Satz bauen.'"
+      }
+    ],
+    "duration": "ca. 50 Minuten",
+    "materialsNeeded": "Große Papp-Brücke mit drei beschrifteten Pfeilern (Was war? / Wie fühle ich mich? / Was wünsche ich mir?); Karten mit typischen Vorwurf-Sätzen; Papp-Streifen als Brückenbretter; Stifte; eine bebilderte Gefühlsliste als Hilfe; Bilder von Mauer und Brücke.",
+    "remark": "Differenzierung: Für C2 die drei Pfeiler als feste Satzanfänge anbieten ('Du hast …', 'Ich fühlte mich …', 'Ich wünsche mir …'); C3 formuliert freier und kann eigene Vorwurf-Karten beisteuern. Hinweis: Bei der Auswertung wertschätzend bleiben und keine realen Streitparteien der Klasse als Beispiel vorführen – mit erfundenen oder allgemeinen Sätzen arbeiten, um Bloßstellung zu vermeiden.",
+    "etepStufen": [
+      3,
+      4
+    ],
+    "eldibGoals": [
+      "K-16",
+      "K-17",
+      "K-21",
+      "K-26",
+      "K-27",
+      "V-17",
+      "V-28",
+      "SOZ-32",
+      "SOZ-34",
+      "SOZ-37"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "der-friedens-tisch-wir-verhandeln-eine-faire-loesung",
+    "title": "Der Friedens-Tisch: Wir verhandeln eine faire Lösung",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "C3",
+      "C2"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Einführung des Friedens-Tisch-Ablaufs im Plenum"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Vierergruppen: zwei Streitende, eine vermittelnde Person, eine beobachtende Person"
+      }
+    ],
+    "themes": [
+      "konfliktloesung",
+      "kooperation",
+      "gerechtigkeit"
+    ],
+    "tags": [
+      "Mediation",
+      "Verhandeln",
+      "faire Loesung",
+      "Schlichten",
+      "Kompromiss",
+      "Streitschlichter",
+      "Zuhoeren"
+    ],
+    "shortDescription": "Am 'Friedens-Tisch' lernen die Kinder einen festen, fairen Ablauf, um einen Streit gemeinsam zu klären, statt zu gewinnen oder zu verlieren. Beide Seiten kommen ausreden, eine schlichtende Person achtet auf die Regeln, und am Ende suchen alle eine Lösung, mit der beide leben können. In Vierergruppen üben die Kinder diesen Ablauf an Beispiel-Konflikten und erleben, dass faire Lösungen oft besser sind als 'Recht haben'.",
+    "ablauf": [
+      {
+        "title": "Einstieg: Gewinnen oder gemeinsam lösen?",
+        "text": "Erzählt eine kurze Streitgeschichte, in der zwei Kinder dasselbe Spielgerät wollen und sich am Ende beide ärgern, weil keiner nachgibt. Fragt: 'Wer hat hier gewonnen?' Führt zur Einsicht, dass bei einem Streit oft beide verlieren. Stellt den Friedens-Tisch vor: einen besonderen Platz mit klaren Regeln, an dem man Streit nicht 'gewinnt', sondern gemeinsam fair löst. Zeigt die vier Schritte auf einer Plakatkarte: 1. Jeder erzählt seine Sicht, ohne unterbrochen zu werden. 2. Jeder wiederholt kurz, was er vom anderen gehört hat. 3. Gemeinsam Ideen sammeln. 4. Eine Lösung wählen, mit der beide einverstanden sind."
+      },
+      {
+        "title": "Hauptteil 1: Die Friedens-Tisch-Regeln und die Rollen",
+        "text": "Richtet einen Tisch mit zwei Stühlen für die Streitenden, einem für die schlichtende Person und einem für die Beobachtung ein. Legt drei Regel-Symbole sichtbar hin: ein Ohr (zuhören und ausreden lassen), ein offener Mund mit Herz (freundlich reden, keine Schimpfwörter), eine Hand mit Daumen (eine faire Lösung suchen). Klärt die Rollen: Die schlichtende Person stellt die vier Schritte als Fragen ('Was ist passiert?', 'Wie fühlst du dich?', 'Was habt ihr gehört?', 'Welche Lösung passt für beide?') und achtet auf die Regeln. Spielt mit zwei Freiwilligen einmal vor, wie ein Durchgang aussieht."
+      },
+      {
+        "title": "Hauptteil 2: Konflikte am Friedens-Tisch klären",
+        "text": "Bildet Vierergruppen und verteilt Konflikt-Karten (z. B. 'Ihr habt beide an dem Gruppentisch gearbeitet, jetzt ist ein Blatt zerrissen und keiner war es', 'Ihr wollt im Spiel verschiedene Rollen'). In jeder Gruppe spielen zwei den Streit, eine schlichtet mit den vier Fragen, eine beobachtet, ob die Regeln eingehalten werden. Nach einem Durchgang tauschen die Gruppen die Rollen, damit möglichst viele einmal schlichten. Geht herum, lobt gutes Nachfragen und erinnert sanft an Schritt 2, das Wiederholen – diesen Schritt überspringen Kinder gern, er ist aber der wichtigste."
+      },
+      {
+        "title": "Abschluss: Was macht eine Lösung fair?",
+        "text": "Kommt zusammen und sammelt an der Tafel: 'Woran merkt ihr, dass eine Lösung fair ist?' (beide haben etwas davon, keiner fühlt sich überrumpelt, beide stimmen zu). Lasst die Beobachter:innen kurz berichten, welche Regel am besten geklappt hat und welche schwerfiel. Beschließt gemeinsam, dass es in der Klasse ab jetzt einen echten Friedens-Tisch-Platz geben soll, an dem Streit nach diesen vier Schritten geklärt werden kann. Würdigt die schlichtenden Kinder besonders: Vermitteln ist eine echte Verantwortung."
+      }
+    ],
+    "duration": "ca. 55 Minuten",
+    "materialsNeeded": "Plakatkarte mit den vier Schritten; drei Regel-Symbole (Ohr, Mund mit Herz, Hand mit Daumen); ein Tisch mit vier Stühlen als Demonstrations-Friedens-Tisch; Konflikt-Situationskarten; Tafel oder Flipchart für die Auswertung.",
+    "remark": "Differenzierung: Für C2 die Rolle der schlichtenden Person stark mit den vorgegebenen vier Fragekarten stützen oder von einer erwachsenen Person übernehmen lassen; C3 kann eigenständig schlichten und eigene Konfliktfälle einbringen. Hinweis: Den Friedens-Tisch nur mit erfundenen oder zurückliegenden Beispielen üben. Für echte, akute Konflikte braucht es zunächst eine Abkühlphase und ggf. die Begleitung durch die Lehrkraft; das Üben hier ersetzt keine erwachsene Vermittlung bei ernsten Vorfällen.",
+    "etepStufen": [
+      3,
+      4
+    ],
+    "eldibGoals": [
+      "SOZ-18",
+      "SOZ-23",
+      "SOZ-32",
+      "SOZ-34",
+      "SOZ-37",
+      "K-17",
+      "K-21",
+      "V-18",
+      "V-28",
+      "KOG-37"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "streit-detektive-was-steckt-wirklich-dahinter",
+    "title": "Streit-Detektive: Was steckt wirklich dahinter?",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "C3",
+      "C2"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Einführung des 'Eisberg'-Bildes im Plenum"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Ermittler-Teams zu 3–4 Kindern untersuchen einen Streitfall"
+      }
+    ],
+    "themes": [
+      "konfliktloesung",
+      "fremdwahrnehmung",
+      "emotionen"
+    ],
+    "tags": [
+      "Eisberg",
+      "Beduerfnisse",
+      "Perspektive",
+      "Streit",
+      "Ursachen",
+      "Empathie",
+      "Detektive"
+    ],
+    "shortDescription": "Hinter jedem Streit steckt mehr als der sichtbare Auslöser – wie bei einem Eisberg liegt der größte Teil unter der Oberfläche. Als 'Streit-Detektive' untersuchen die Kinder einen Konfliktfall und suchen nach den verborgenen Gefühlen und Bedürfnissen beider Seiten. So lernen sie, dass beide Streitenden meist gute Gründe haben, und dass eine Lösung leichter wird, wenn man versteht, was wirklich dahintersteckt.",
+    "ablauf": [
+      {
+        "title": "Einstieg: Der Eisberg unter dem Streit",
+        "text": "Zeigt ein Bild eines Eisbergs: eine kleine Spitze über Wasser, ein riesiger Block darunter. Erklärt: Bei einem Streit sieht man oben nur das, was passiert – das Schubsen, das laute Wort. Aber unten, unter Wasser, liegen die Gefühle und das, was jemand wirklich braucht. Macht ein Beispiel: Oben sieht man 'Tim hat das Spiel umgeworfen'. Was könnte unten liegen? Sammelt Vermutungen (er war traurig, weil er nie gewinnt; er fühlte sich ausgeschlossen). Führt die Idee ein: Heute werdet ihr Streit-Detektive und sucht, was unter der Oberfläche steckt – bei beiden Streitenden."
+      },
+      {
+        "title": "Hauptteil 1: Die Detektiv-Fragen kennenlernen",
+        "text": "Stellt das Detektiv-Werkzeug vor: vier Spür-Fragen, mit denen man unter die Oberfläche kommt. 'Was ist sichtbar passiert?', 'Wie hat sich jede Seite wohl gefühlt?', 'Was hat jeder vielleicht gebraucht oder sich gewünscht?', 'Welcher Wunsch von beiden ist ähnlich?'. Übt die Fragen gemeinsam an einem kurzen Beispielfall, den ihr vorlest. Macht deutlich: Detektive raten nicht einfach, sie suchen mehrere mögliche Erklärungen und behaupten nichts Böses über die Personen. Schreibt die vier Fragen gut sichtbar an die Tafel."
+      },
+      {
+        "title": "Hauptteil 2: Ermittler-Teams untersuchen ihren Fall",
+        "text": "Bildet Ermittler-Teams zu 3–4 Kindern und verteilt je einen ausführlicheren Streitfall als 'Akte' (z. B. zwei Kinder, die sich um die Gruppenleitung streiten; oder eines, das ein anderes vom Spiel ausschließt). Jedes Team füllt einen Eisberg-Bogen aus: oben die sichtbare Handlung, unten die vermuteten Gefühle und Bedürfnisse beider Seiten. Wichtig: Für beide Streitparteien soll mindestens ein Gefühl und ein Bedürfnis gefunden werden. Anschließend überlegt das Team eine Lösung, die beide Bedürfnisse berücksichtigt. Begleitet die Teams und stellt nach, wenn ein Team nur eine Seite betrachtet: 'Und was war wohl mit der anderen Person?'"
+      },
+      {
+        "title": "Abschluss: Detektiv-Bericht und Aha-Moment",
+        "text": "Jedes Team stellt seinen Eisberg und seinen Lösungsvorschlag kurz vor. Fragt nach jeder Präsentation: 'Hatten beide Seiten gute Gründe?' Sammelt am Ende die wichtigste Erkenntnis der Stunde: Wer versteht, was unter der Oberfläche liegt, findet leichter eine Lösung und ärgert sich weniger über den anderen. Jedes Kind ergänzt für sich einen Satz: 'Wenn ich das nächste Mal Streit habe, frage ich mich: …'. Würdigt, dass es schwierig und mutig ist, sich auch in die andere Streit-Seite hineinzudenken."
+      }
+    ],
+    "duration": "ca. 50 Minuten",
+    "materialsNeeded": "Großes Eisberg-Bild für die Einführung; vier Detektiv-Spür-Fragen auf einer Tafelkarte; ausgedruckte Streitfall-'Akten' für die Teams; Eisberg-Arbeitsbögen (Spitze über Wasser, großer Bereich unter Wasser); Stifte; optional Detektiv-Lupen als Motivationsrequisite.",
+    "remark": "Differenzierung: Für C2 die Eisberg-Bögen mit Gefühls- und Bedürfniswörtern zum Ankreuzen versehen; C3 formuliert frei und kann zusätzlich überlegen, wie man das verborgene Bedürfnis im Gespräch ansprechen könnte. Hinweis: Mit erfundenen Fällen arbeiten und beim Deuten betonen, dass es sich um Vermutungen handelt – niemand wird über reale Mitschüler:innen 'urteilen'. Achtet darauf, dass beide Streitseiten gleich wohlwollend betrachtet werden, damit keine Schuldzuweisung entsteht.",
+    "etepStufen": [
+      3,
+      4
+    ],
+    "eldibGoals": [
+      "SOZ-31",
+      "SOZ-32",
+      "SOZ-34",
+      "SOZ-36",
+      "SOZ-37",
+      "K-21",
+      "K-26",
+      "K-33",
+      "V-18",
+      "KOG-37"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "mein-innerer-akku-was-mich-auflaedt-und-was-mich-leerlaufen-laesst",
+    "title": "Mein innerer Akku: Was mich auflädt und was mich leerlaufen lässt",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "C3",
+      "C4"
+    ],
+    "type": [
+      "ganz Stonn"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "gemeinsamer Einstieg und Auswertung im Sitzkreis"
+      },
+      {
+        "mode": "Individuel",
+        "note": "jedes Kind füllt sein eigenes Akku-Blatt aus"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Austausch über Auflade-Ideen in Vierergruppen"
+      }
+    ],
+    "themes": [
+      "resilienz",
+      "ressourcen",
+      "selbstwahrnehmung"
+    ],
+    "tags": [
+      "Energie",
+      "Selbstfürsorge",
+      "Kraftquellen",
+      "Resilienz",
+      "Ressourcen",
+      "Erholung",
+      "Stärken"
+    ],
+    "shortDescription": "Die Kinder lernen ihre persönlichen Kraftquellen kennen und entdecken, was ihren 'inneren Akku' auflädt und was ihn entlädt. Anhand eines Akku-Bildes erkunden sie eigene Energiegeber und Energieräuber im Alltag und entwickeln daraus konkrete Auflade-Strategien. Die Stunde stärkt die Selbstwahrnehmung und legt eine Grundlage für aktive Selbstfürsorge als Schutzfaktor der Resilienz.",
+    "ablauf": [
+      {
+        "title": "Einstieg: Wie voll ist dein Akku gerade?",
+        "text": "Beginnt im Sitzkreis. Zeigt das Bild eines Handy-Akkus, der mal voll (grün), mal halb, mal fast leer (rot) ist. Fragt: 'Ihr kennt das vom Handy oder Tablet – aber wusstet ihr, dass auch wir Menschen so einen Akku in uns tragen?' Lasst die Kinder mit der Hand zeigen, wie voll ihr eigener Akku gerade ist (Hand oben = voll, Hand am Boden = leer). Sammelt erste Beobachtungen: 'Wann ist euer Akku morgens voll? Wann fühlt ihr euch leer und schlapp?' Macht deutlich: Der innere Akku zeigt unsere Energie und gute Laune – und wir können lernen, ihn selbst aufzuladen. Genau das untersucht ihr heute."
+      },
+      {
+        "title": "Hinführung: Energiegeber und Energieräuber",
+        "text": "Erklärt die zwei Begriffe an Beispielen. Energiegeber laden den Akku auf: draußen toben, mit einer Freundin lachen, etwas schaffen, schlafen, Musik hören. Energieräuber leeren ihn: Streit, zu viel Lärm, sich langweilen, Stress vor einer Prüfung, zu wenig Schlaf. Sammelt an der Tafel in zwei Spalten ('+' und '-') gemeinsam je drei, vier Beispiele, die die Klasse einbringt. Betont eine wichtige Erkenntnis: Was den einen auflädt, kann den anderen leeren – für manche ist eine volle Pause mit vielen Kindern toll, für andere anstrengend. Jeder Akku ist anders, und es lohnt sich, den eigenen gut zu kennen."
+      },
+      {
+        "title": "Hauptteil 1: Mein persönliches Akku-Blatt",
+        "text": "Teilt das Arbeitsblatt 'Mein innerer Akku' aus. Jedes Kind arbeitet zuerst allein und in Ruhe. In den oberen Akku (grün) schreibt oder malt es mindestens vier eigene Energiegeber, in den unteren (rot) mindestens drei Energieräuber. Geht herum und gebt leise Impulse für Kinder, denen nichts einfällt ('Was hast du letztes Wochenende gemacht, nach dem du dich richtig gut gefühlt hast?'). Wichtig ist, dass es um die ganz persönliche Sicht geht – es gibt keine richtigen oder falschen Antworten. Plant für diese Einzelarbeit ausreichend Zeit ein, damit alle in Ruhe nachdenken können."
+      },
+      {
+        "title": "Hauptteil 2: Auflade-Ideen für die schwierigen Momente",
+        "text": "Bildet Vierergruppen. Jedes Kind stellt einen seiner Energieräuber vor (freiwillig, niemand muss). Die Gruppe sammelt gemeinsam Ideen, wie man den Akku in genau solchen Momenten trotzdem etwas aufladen kann ('Wenn dich Streit leer macht – was hilft dir danach?'). Haltet die besten Tipps auf Kärtchen fest. Jede Gruppe wählt ihre drei stärksten Auflade-Ideen aus und stellt sie kurz der Klasse vor. Sammelt alle Ideen sichtbar zu einer Klassen-Liste 'Unsere Auflade-Tricks'. So entsteht ein gemeinsamer Vorrat an Strategien, auf den alle zurückgreifen können."
+      },
+      {
+        "title": "Abschluss: Mein Auflade-Versprechen",
+        "text": "Kehrt in den Sitzkreis zurück. Jedes Kind sucht sich aus der Klassen-Liste oder vom eigenen Blatt eine Auflade-Strategie aus, die es in der nächsten Woche bewusst ausprobieren will, und trägt sie unten auf sein Akku-Blatt ein ('Diese Woche lade ich meinen Akku auf, indem ich ...'). Wer mag, sagt sie laut in die Runde. Schließt mit der Kernbotschaft: 'Niemand hat immer einen vollen Akku – das ist normal. Aber jeder von uns kann lernen, ihn selbst wieder aufzuladen.' Hängt die Klassen-Liste im Raum auf und verweist in den kommenden Tagen darauf, wenn jemand erschöpft wirkt."
+      }
+    ],
+    "duration": "ca. 50 Minuten (eine Unterrichtsstunde)",
+    "materialsNeeded": "Großes Akku-Bild oder Skizze an der Tafel; Arbeitsblatt 'Mein innerer Akku' pro Kind; Stifte und Buntstifte; leere Kärtchen für die Auflade-Ideen; ein Plakat für die Klassen-Liste 'Unsere Auflade-Tricks'.",
+    "remark": "Differenzierung: C3 arbeitet stärker zeichnerisch und mit Symbolen, C4 formuliert eigene Sätze und kann zwischen kurzfristigen und langfristigen Auflade-Strategien unterscheiden. Hinweis: Das Teilen von Energieräubern ist immer freiwillig – manche Belastungen (Streit zu Hause, Sorgen) sind sehr persönlich. Achte sensibel darauf, wenn ein Kind durchgehend einen 'leeren Akku' zeigt, und suche behutsam das Einzelgespräch. Die Akku-Metapher eignet sich gut als wiederkehrendes Stimmungs-Ritual im Klassenalltag.",
+    "etepStufen": [
+      3,
+      4
+    ],
+    "eldibGoals": [
+      "V-14",
+      "V-16",
+      "V-23",
+      "V-28",
+      "K-18",
+      "K-19",
+      "K-26",
+      "SOZ-9",
+      "SOZ-25",
+      "SOZ-26",
+      "KOG-37",
+      "KOG-55"
+    ],
+    "worksheet": {
+      "title": "Mein innerer Akku",
+      "intro": "Auch in dir steckt ein Akku. Manches lädt ihn auf, manches macht ihn leer. Finde heraus, was bei DIR dazugehört.",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "Das lädt meinen Akku AUF (Energiegeber +)"
+        },
+        {
+          "kind": "instruction",
+          "text": "Schreibe oder male mindestens vier Dinge, nach denen du dich stark, fröhlich oder voller Energie fühlst."
+        },
+        {
+          "kind": "lines",
+          "lines": 5
+        },
+        {
+          "kind": "heading",
+          "text": "Das macht meinen Akku LEER (Energieräuber -)"
+        },
+        {
+          "kind": "instruction",
+          "text": "Schreibe oder male mindestens drei Dinge, die dich müde, schlapp oder schlecht gelaunt machen."
+        },
+        {
+          "kind": "lines",
+          "lines": 4
+        },
+        {
+          "kind": "heading",
+          "text": "Wie voll ist mein Akku an einem normalen Schultag?"
+        },
+        {
+          "kind": "scale",
+          "text": "Kreuze an: 0 % (ganz leer) bis 100 % (randvoll)."
+        },
+        {
+          "kind": "heading",
+          "text": "Mein Auflade-Versprechen für diese Woche"
+        },
+        {
+          "kind": "box",
+          "text": "Diese Woche lade ich meinen Akku bewusst auf, indem ich ..."
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "der-fehler-schatz-wie-aus-misserfolgen-kluge-schritte-werden",
+    "title": "Der Fehler-Schatz: Wie aus Misserfolgen kluge Schritte werden",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "C3",
+      "C4"
+    ],
+    "type": [
+      "ganz Stonn"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "gemeinsamer Einstieg und Reflexion"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Fehler-Forscher-Teams analysieren Beispielgeschichten"
+      },
+      {
+        "mode": "Individuel",
+        "note": "persönliche Fehler-Schatz-Karte am Ende"
+      }
+    ],
+    "themes": [
+      "resilienz",
+      "selbstwertgefuehl",
+      "motivation"
+    ],
+    "tags": [
+      "Fehlerkultur",
+      "Misserfolg",
+      "Lernen",
+      "Resilienz",
+      "Mut",
+      "Durchhalten",
+      "Selbstwert"
+    ],
+    "shortDescription": "Diese Stunde dreht die übliche Sicht auf Fehler um: Statt sich für Misserfolge zu schämen, lernen die Kinder, in ihnen wertvolle Hinweise und Lernchancen zu entdecken. Sie untersuchen anhand von Beispielgeschichten, wie aus einem Scheitern ein nächster kluger Schritt wird, und entwickeln Sätze, die nach einem Misserfolg innerlich Mut machen. So wächst die Fähigkeit, an Rückschlägen nicht zu zerbrechen, sondern daran zu wachsen.",
+    "ablauf": [
+      {
+        "title": "Einstieg: Der berühmte Misserfolg",
+        "text": "Erzählt von einer bekannten Person, die viele Fehler machte, bevor sie Erfolg hatte (z. B. ein Erfinder, der hunderte Versuche brauchte, oder eine Sportlerin, die oft verlor, bevor sie gewann). Fragt: 'Was glaubt ihr – hat diese Person nach den ersten Misserfolgen aufgegeben?' Lasst die Kinder vermuten. Sammelt dann Gefühle: 'Wie fühlt es sich an, wenn etwas nicht klappt, das man sich vorgenommen hat?' Lasst auch unangenehme Gefühle Platz haben (Ärger, Scham, Enttäuschung). Leitet über: 'Heute schauen wir uns an, ob Fehler wirklich nur etwas Schlimmes sind – oder ob in ihnen sogar ein kleiner Schatz versteckt sein kann.'"
+      },
+      {
+        "title": "Hinführung: Was ein Fehler uns sagen will",
+        "text": "Macht den Unterschied zwischen zwei inneren Stimmen deutlich. Schreibt zwei Sprechblasen an die Tafel: 'Ich bin zu dumm, ich kann das nicht' (die Aufgeber-Stimme) und 'Das hat noch nicht geklappt, was probiere ich anders?' (die Forscher-Stimme). Spielt eine kleine Szene vor, z. B. ein Turm aus Bausteinen fällt um. Fragt: 'Was sagt die Aufgeber-Stimme? Was sagt die Forscher-Stimme?' Erarbeitet gemeinsam: Ein Fehler ist oft ein Hinweis, was man beim nächsten Mal anders machen kann. Das Wörtchen 'noch' ('Ich kann das NOCH nicht') verändert alles. Diese Forscher-Haltung wendet ihr gleich an konkreten Geschichten an."
+      },
+      {
+        "title": "Hauptteil 1: Fehler-Forscher analysieren Geschichten",
+        "text": "Bildet Fehler-Forscher-Teams zu drei bis vier Kindern. Jedes Team erhält eine kurze Beispielgeschichte mit einem Misserfolg (z. B. 'Mira hat für den Test gelernt und trotzdem eine schlechte Note bekommen', 'Tom wurde beim Fußball nicht ins Tor gelassen und hat den Ball verschossen', 'Lena traute sich nicht, im Theaterstück mitzuspielen, und ärgert sich jetzt'). Die Teams beantworten mit dem Forscher-Blatt drei Fragen: Was ist passiert? Was kann die Person daraus lernen? Was wäre ein kluger nächster Schritt? Geht herum und ermutigt, mehrere Lösungswege zu finden, statt nur einen."
+      },
+      {
+        "title": "Hauptteil 2: Vom Misserfolg zum nächsten Schritt",
+        "text": "Jedes Team stellt seine Geschichte und seine Forscher-Antworten kurz vor. Haltet die 'klugen nächsten Schritte' sichtbar an der Tafel fest. Arbeitet gemeinsam Muster heraus: Oft hilft es, etwas zu üben, um Hilfe zu fragen, einen Plan zu ändern oder es einfach noch einmal mutig zu versuchen. Führt den Begriff 'Fehler-Schatz' ein: Der Schatz ist das, was wir aus dem Fehler lernen und beim nächsten Mal besser machen können. Betont: Nicht der Fehler selbst macht stark, sondern wie wir danach weitermachen. Genau diese Haltung übt ihr nun für euch selbst."
+      },
+      {
+        "title": "Abschluss: Meine Fehler-Schatz-Karte",
+        "text": "Jedes Kind gestaltet allein seine Fehler-Schatz-Karte. Es denkt an einen eigenen kleinen Misserfolg (etwas, das nicht auf Anhieb klappte) und schreibt auf: Was ist passiert? Was habe ich daraus gelernt? Dann formuliert es einen persönlichen Mutmach-Satz für das nächste Mal ('Wenn etwas nicht klappt, dann ...'). Wer mag, liest seinen Satz im Kreis vor; alle anderen hören wertschätzend zu. Schließt mit der Kernbotschaft: 'Fehler sind keine Sackgasse, sondern Wegweiser. Wer aus ihnen lernt, wird Schritt für Schritt stärker.' Die Karten dürfen mit nach Hause genommen oder im Klassenzimmer ausgestellt werden."
+      }
+    ],
+    "duration": "ca. 50–55 Minuten (eine Unterrichtsstunde)",
+    "materialsNeeded": "Vorbereitete Beispielgeschichten (eine pro Team) auf Karten; 'Forscher-Blatt' mit den drei Leitfragen pro Team; Tafel/Whiteboard für die zwei inneren Stimmen; festeres Papier oder Karteikarten für die Fehler-Schatz-Karten; Stifte und Buntstifte; optional ein kurzes Beispiel einer bekannten Person, die durch Misserfolge zum Erfolg kam.",
+    "remark": "Differenzierung: C3 erhält kürzere Geschichten mit einer klaren Lernchance und kann den Mutmach-Satz mit vorgegebenen Satzanfängen bilden; C4 bearbeitet vielschichtigere Geschichten und unterscheidet zwischen Fehlern, aus denen man lernen kann, und Pech, an dem man nichts ändern kann. Hinweis: Achte darauf, dass kein Kind genötigt wird, einen echten, schambesetzten eigenen Misserfolg vor der Gruppe offenzulegen – ein erfundenes oder kleines Beispiel genügt vollkommen. Würdige jeden geteilten Beitrag ausdrücklich, damit Offenheit sicher bleibt.",
+    "etepStufen": [
+      3,
+      4
+    ],
+    "eldibGoals": [
+      "V-14",
+      "V-17",
+      "V-18",
+      "V-22",
+      "V-28",
+      "K-18",
+      "K-24",
+      "K-26",
+      "SOZ-24",
+      "SOZ-34",
+      "KOG-37",
+      "KOG-61"
+    ],
+    "worksheet": {
+      "title": "Forscher-Blatt: Dem Fehler-Schatz auf der Spur",
+      "intro": "Forscher geben nicht auf, wenn etwas schiefgeht – sie suchen den versteckten Schatz darin. Untersucht eure Geschichte wie echte Fehler-Forscher.",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "Unsere Geschichte"
+        },
+        {
+          "kind": "instruction",
+          "text": "Worum geht es? Schreibt in einem Satz, was passiert ist."
+        },
+        {
+          "kind": "lines",
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "Der versteckte Schatz"
+        },
+        {
+          "kind": "question",
+          "text": "Was kann die Person aus diesem Fehler lernen?"
+        },
+        {
+          "kind": "lines",
+          "lines": 3
+        },
+        {
+          "kind": "question",
+          "text": "Was wäre ein kluger nächster Schritt? Findet möglichst zwei Wege."
+        },
+        {
+          "kind": "lines",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "Meine Fehler-Schatz-Karte"
+        },
+        {
+          "kind": "instruction",
+          "text": "Denke an etwas, das bei dir nicht gleich geklappt hat."
+        },
+        {
+          "kind": "box",
+          "text": "Was habe ich daraus gelernt?"
+        },
+        {
+          "kind": "box",
+          "text": "Mein Mutmach-Satz: Wenn etwas nicht klappt, dann ..."
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "comeback-strategien-wie-ich-nach-einem-tiefschlag-wieder-aufstehe",
+    "title": "Comeback-Strategien: Wie ich nach einem Tiefschlag wieder aufstehe",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "C3",
+      "C4"
+    ],
+    "type": [
+      "ganz Stonn"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Einstieg und gemeinsame Strategie-Sammlung"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Stations- oder Gruppenarbeit zu den Comeback-Strategien"
+      },
+      {
+        "mode": "Individuel",
+        "note": "eigene Comeback-Schritte auf dem Notfallplan"
+      }
+    ],
+    "themes": [
+      "resilienz",
+      "stressbewaeltigung",
+      "impulskontrolle"
+    ],
+    "tags": [
+      "Comeback",
+      "Rückschlag",
+      "Bewältigung",
+      "Resilienz",
+      "Beruhigen",
+      "Durchhalten",
+      "Notfallplan"
+    ],
+    "shortDescription": "Die Kinder entwickeln einen persönlichen 'Comeback-Plan' für Momente, in denen etwas richtig schiefläuft – eine schlechte Note, ein Streit, eine Enttäuschung. Sie lernen vier erprobte Comeback-Strategien kennen (Durchatmen, Gedanken sortieren, Hilfe holen, kleiner nächster Schritt) und üben sie an Beispielsituationen ein. Ziel ist, dass jedes Kind weiß: Ein Tiefschlag ist nicht das Ende – es gibt Wege, wieder aufzustehen und weiterzumachen.",
+    "ablauf": [
+      {
+        "title": "Einstieg: Wenn der Tag im Keller ist",
+        "text": "Steigt mit einer Bewegungs-Skala ein: 'Stellt euch vor, der Boden ist ein Aufzug. Ganz unten ist ein richtig mieser Moment, ganz oben fühlt ihr euch top.' Nennt Situationen ('Du bekommst eine schlechte Note zurück', 'Dein bester Freund spielt heute mit jemand anderem', 'Du hast dich blamiert') und die Kinder gehen körperlich in die Hocke oder strecken sich, je nachdem wie es ihnen dabei ginge. Sammelt: 'Solche Tiefschläge kennt jeder. Die Frage ist nicht, ob wir mal hinfallen – sondern wie wir wieder aufstehen.' Erklärt das Stundenziel: Heute baut sich jeder seinen eigenen Comeback-Plan für schwere Momente."
+      },
+      {
+        "title": "Hinführung: Die vier Comeback-Strategien",
+        "text": "Stellt vier Strategien vor und macht jede mit einer kleinen Geste oder einem Symbol einprägsam. 1. Durchatmen (Hand auf den Bauch, dreimal langsam atmen) – damit der erste heftige Sturm im Körper abebbt. 2. Gedanken sortieren (Stirn antippen) – 'Was ist gerade wirklich passiert, und was rede ich mir vielleicht nur ein?'. 3. Hilfe holen (Hand reichen) – mit jemandem reden, der guttut. 4. Kleiner nächster Schritt (ein Schritt nach vorn) – etwas Machbares tun, statt alles auf einmal lösen zu wollen. Macht alle vier Gesten gemeinsam einmal durch, damit sie im Körper verankert werden."
+      },
+      {
+        "title": "Hauptteil 1: Strategien an Beispielen ausprobieren",
+        "text": "Teilt die Klasse in Gruppen. Jede Gruppe erhält eine Beispielsituation mit einem Tiefschlag und überlegt, wie die vier Comeback-Strategien hier konkret aussehen könnten: Wie genau atmet die Person durch? Welcher Gedanke hilft beim Sortieren? Wen könnte sie um Hilfe bitten? Was wäre ein erster kleiner Schritt? Die Gruppen halten ihre Ideen auf dem Comeback-Blatt fest. Wer mag, bereitet ein kurzes Mini-Rollenspiel vor, in dem eine Strategie gezeigt wird. Geht herum und unterstützt dabei, die Strategien wirklich konkret und alltagsnah zu machen, nicht nur allgemein."
+      },
+      {
+        "title": "Hauptteil 2: Comeback-Szenen zeigen und besprechen",
+        "text": "Lasst zwei bis drei Gruppen ihr Mini-Rollenspiel vorführen. Nach jeder Szene fragt ihr die Zuschauer: 'Welche Strategie habt ihr erkannt? Was hat der Person geholfen, wieder aufzustehen?' Sammelt an der Tafel, welche Strategie in welcher Situation besonders gut passt – und stellt heraus, dass man oft mehrere hintereinander braucht (erst durchatmen, dann Hilfe holen, dann ein kleiner Schritt). Würdigt den Mut, vor der Gruppe zu spielen. Überleitung: 'Jetzt wisst ihr, wie ein Comeback gehen kann. Bauen wir daraus euren ganz persönlichen Notfallplan.'"
+      },
+      {
+        "title": "Abschluss: Mein persönlicher Comeback-Plan",
+        "text": "Jedes Kind füllt allein seinen Comeback-Plan aus: Es notiert, welche der vier Strategien ihm am meisten liegt, wen es im Ernstfall um Hilfe bitten würde und welcher 'kleine nächste Schritt' ihm oft hilft. Der Plan wird so gestaltet, dass das Kind ihn aufbewahren und im echten Tiefschlag hervorholen kann (z. B. als Karte für die Federmappe). Schließt im Kreis mit einer Stärkung: Jedes Kind sagt reihum den Satz 'Wenn ich falle, dann stehe ich wieder auf, weil ...' und ergänzt ihn. Kernbotschaft: 'Hinfallen passiert jedem. Aufstehen kann man üben – und ihr habt heute genau dafür euren Plan.'"
+      }
+    ],
+    "duration": "ca. 55 Minuten (eine Unterrichtsstunde, ggf. leicht überziehend)",
+    "materialsNeeded": "Vier Symbol- oder Gesten-Karten für die Comeback-Strategien (Atmen, Sortieren, Hilfe, Schritt); Beispielsituationen pro Gruppe; 'Comeback-Blatt' für die Gruppenarbeit; Vorlage 'Mein Comeback-Plan' pro Kind, möglichst auf festerem Papier zum Aufbewahren; Stifte; Platz für die kurzen Rollenspiele.",
+    "remark": "Differenzierung: C3 nutzt stärker die Gesten und einfache, klar lösbare Beispielsituationen und kann den Plan mit Bildsymbolen ausfüllen; C4 bearbeitet komplexere Situationen, in denen mehrere Strategien kombiniert werden müssen, und reflektiert, welche Strategie wann sinnvoll ist. Hinweis: Mache deutlich, dass 'Hilfe holen' eine Stärke und kein Versagen ist, und nenne konkrete Anlaufstellen (Lehrkraft, Eltern, Vertrauensperson). Beobachte sensibel, falls eine Situation reale, ernste Belastungen eines Kindes berührt, und biete ein ruhiges Einzelgespräch an.",
+    "etepStufen": [
+      3,
+      4
+    ],
+    "eldibGoals": [
+      "V-18",
+      "V-20",
+      "V-21",
+      "V-23",
+      "V-28",
+      "K-16",
+      "K-26",
+      "K-28",
+      "SOZ-26",
+      "SOZ-34",
+      "KOG-37",
+      "KOG-57"
+    ],
+    "worksheet": {
+      "title": "Mein Comeback-Plan",
+      "intro": "Jeder fällt mal hin. Mit diesem Plan weißt du, wie du wieder aufstehst, wenn ein Tiefschlag kommt. Hebe ihn gut auf und hol ihn hervor, wenn du ihn brauchst.",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "Meine vier Comeback-Strategien"
+        },
+        {
+          "kind": "checklist",
+          "items": [
+            "Durchatmen – dreimal langsam, Hand auf den Bauch",
+            "Gedanken sortieren – was ist wirklich passiert?",
+            "Hilfe holen – mit jemandem reden, der guttut",
+            "Kleiner nächster Schritt – etwas Machbares tun"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "Was mir am besten liegt"
+        },
+        {
+          "kind": "instruction",
+          "text": "Kreise die Strategie ein, die dir am leichtesten fällt, und schreibe sie auf."
+        },
+        {
+          "kind": "lines",
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "Mein Hilfe-Mensch"
+        },
+        {
+          "kind": "instruction",
+          "text": "Wen könntest du nach einem Tiefschlag um Hilfe oder ein Gespräch bitten?"
+        },
+        {
+          "kind": "lines",
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "Mein Aufsteh-Satz"
+        },
+        {
+          "kind": "box",
+          "text": "Wenn ich falle, dann stehe ich wieder auf, weil ..."
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "sorgen-tresor-und-mutmacher-stimme-gedanken-die-mich-stark-machen",
+    "title": "Sorgen-Tresor und Mutmacher-Stimme: Gedanken, die mich stark machen",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "C3",
+      "C4"
+    ],
+    "type": [
+      "ganz Stonn"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Einstieg und gemeinsames Umformulieren von Gedanken"
+      },
+      {
+        "mode": "Individuel",
+        "note": "eigener Sorgen-Zettel und Mutmacher-Sätze"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Partner- oder Kleingruppenarbeit beim Umdenken"
+      }
+    ],
+    "themes": [
+      "resilienz",
+      "emotionen",
+      "selbstwahrnehmung"
+    ],
+    "tags": [
+      "Sorgen",
+      "innere Stimme",
+      "Gedanken",
+      "Resilienz",
+      "Mut",
+      "Selbstgespräch",
+      "Zuversicht"
+    ],
+    "shortDescription": "In dieser Stunde entdecken die Kinder, dass nicht die Ereignisse allein, sondern auch ihre Gedanken darüber bestimmen, wie stark oder hilflos sie sich fühlen. Sie lernen, belastende 'Miesmacher-Gedanken' zu erkennen und in stärkende 'Mutmacher-Sätze' umzuformulieren. Mithilfe eines symbolischen 'Sorgen-Tresors' üben sie zudem, Sorgen bewusst zu parken, statt sich von ihnen durch den ganzen Tag begleiten zu lassen – ein zentraler Baustein seelischer Widerstandskraft.",
+    "ablauf": [
+      {
+        "title": "Einstieg: Zwei Stimmen zur gleichen Sache",
+        "text": "Lest oder erzählt eine kurze Alltagsszene: 'Morgen ist eine Klassenarbeit.' Stellt zwei Kinder mit Sprechblasen vor: Das eine denkt 'Das schaffe ich nie, ich blamiere mich bestimmt', das andere denkt 'Ich habe geübt, ich gebe mein Bestes, mehr kann ich nicht tun'. Fragt: 'Beide haben morgen dieselbe Arbeit – aber wie fühlt sich wohl jedes Kind?' Lasst die Klasse vergleichen. Macht die zentrale Entdeckung sichtbar: Oft ist es nicht das Ereignis selbst, sondern unsere Gedanken darüber, die uns mutig oder mutlos machen. Genau diese inneren Stimmen nehmt ihr heute unter die Lupe."
+      },
+      {
+        "title": "Hinführung: Miesmacher und Mutmacher erkennen",
+        "text": "Führt die zwei inneren Stimmen als Figuren ein: den 'Miesmacher', der schwarzmalt und übertreibt ('immer', 'nie', 'alle lachen mich aus'), und die 'Mutmacher-Stimme', die ehrlich, aber stärkend spricht ('das ist schwer, aber ich kann es versuchen'). Zeigt einige Miesmacher-Gedanken auf Karten und formuliert sie gemeinsam mit der Klasse laut in Mutmacher-Sätze um. Wichtig ist die Unterscheidung: Es geht nicht darum, sich Probleme schönzureden, sondern Gedanken zu finden, die wahr UND hilfreich sind. Übt an zwei, drei Beispielen, bis die Kinder den Dreh heraushaben."
+      },
+      {
+        "title": "Hauptteil 1: Der Sorgen-Tresor",
+        "text": "Stellt den 'Sorgen-Tresor' vor – eine verschließbare Box oder ein gestalteter Karton. Erklärt: Manche Sorgen kann man gerade nicht lösen, und es hilft nicht, sie den ganzen Tag mit sich herumzuschleppen. Jedes Kind schreibt eine Sorge, die es im Moment beschäftigt, auf einen Zettel (anonym, niemand liest es vor) und legt sie in den Tresor. Besprecht das Ritual: 'Die Sorge ist jetzt sicher verwahrt. Wir holen sie zu einer festen Zeit wieder heraus, um in Ruhe zu schauen, was man tun kann.' Dieses bewusste Parken entlastet und gibt den Kindern das Gefühl, nicht ohnmächtig den Sorgen ausgeliefert zu sein."
+      },
+      {
+        "title": "Hauptteil 2: Vom Miesmacher zum Mutmacher",
+        "text": "Jedes Kind arbeitet nun mit dem Arbeitsblatt – zuerst allein, dann im Austausch mit einer Partnerin oder einem Partner. Es notiert ein, zwei eigene Miesmacher-Gedanken (z. B. vor Prüfungen, beim Sport, in Streitsituationen) und formuliert dazu jeweils einen ehrlichen Mutmacher-Satz. Die Partnerarbeit hilft: Oft fällt es leichter, der anderen Person einen guten Gedanken zu schenken, als sich selbst. Geht herum und gebt Hilfestellung beim Umformulieren, besonders dort, wo Mutmacher-Sätze in leeres Schönreden abrutschen ('Es ist alles super' ist kein guter Mutmacher – besser: 'Es ist schwierig, aber ich finde einen Weg')."
+      },
+      {
+        "title": "Abschluss: Mein stärkster Mutmacher",
+        "text": "Jedes Kind wählt seinen persönlich stärksten Mutmacher-Satz aus und schreibt ihn auf eine kleine Karte, die es sichtbar aufbewahren kann. Im Sitzkreis darf reihum, wer mag, seinen Satz laut sagen – die Klasse antwortet jeweils mit einem bestärkenden 'Das stimmt!'. Vereinbart, wann der Sorgen-Tresor gemeinsam oder einzeln wieder geöffnet wird (z. B. am Ende der Woche), und macht damit deutlich, dass Sorgen ernst genommen, aber nicht dauerhaft mitgeschleppt werden. Kernbotschaft: 'Du kannst nicht alles bestimmen, was passiert – aber du kannst lernen, wie du mit dir selbst sprichst. Und eine Mutmacher-Stimme macht dich stark.'"
+      }
+    ],
+    "duration": "ca. 50 Minuten (eine Unterrichtsstunde)",
+    "materialsNeeded": "Eine verschließbare Box oder ein gestalteter Karton als 'Sorgen-Tresor'; kleine Zettel für die Sorgen; Karten mit vorbereiteten Miesmacher-Beispielen; Arbeitsblatt 'Miesmacher und Mutmacher' pro Kind; Karteikarten für den persönlichen Mutmacher-Satz; Stifte; Tafel für die zwei inneren Stimmen.",
+    "remark": "Differenzierung: C3 arbeitet mit vorgegebenen Miesmacher-Sätzen und passenden Satzanfängen für die Mutmacher-Antwort; C4 entwickelt eigene Beispiele und reflektiert, woran man einen hilfreichen von einem unrealistisch beschönigenden Gedanken unterscheidet. Hinweis: Der Sorgen-Tresor verlangt einen klaren, vertrauensvollen Rahmen – Zettel bleiben anonym und werden nicht vorgelesen. Achte sensibel auf ernste Sorgen (Angst, familiäre Belastungen) und vereinbare, dass Kinder dich jederzeit vertraulich ansprechen können. Lege fest, dass und wann der Tresor wieder geöffnet wird, damit Sorgen nicht 'vergessen' wirken.",
+    "etepStufen": [
+      3,
+      4
+    ],
+    "eldibGoals": [
+      "V-16",
+      "V-17",
+      "V-21",
+      "V-23",
+      "V-33",
+      "K-16",
+      "K-19",
+      "K-26",
+      "SOZ-9",
+      "SOZ-37",
+      "KOG-37",
+      "KOG-55",
+      "KOG-57"
+    ],
+    "worksheet": {
+      "title": "Miesmacher und Mutmacher",
+      "intro": "In deinem Kopf reden zwei Stimmen mit. Der Miesmacher malt schwarz. Die Mutmacher-Stimme spricht ehrlich, aber stark. Du kannst lernen, lauter auf die richtige zu hören.",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "So redet der Miesmacher"
+        },
+        {
+          "kind": "instruction",
+          "text": "Schreibe einen Gedanken auf, der dich klein und mutlos macht (z. B. vor einer Prüfung oder beim Sport)."
+        },
+        {
+          "kind": "lines",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "So antwortet die Mutmacher-Stimme"
+        },
+        {
+          "kind": "instruction",
+          "text": "Formuliere einen Satz, der ehrlich UND stärkend ist. Tipp: 'Das ist schwer, aber ...'"
+        },
+        {
+          "kind": "lines",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "Miesmacher entlarven"
+        },
+        {
+          "kind": "table",
+          "text": "Trage je drei Gegensätze ein: links der Miesmacher-Gedanke, rechts dein Mutmacher-Satz."
+        },
+        {
+          "kind": "heading",
+          "text": "Mein stärkster Mutmacher"
+        },
+        {
+          "kind": "box",
+          "text": "Das ist mein Lieblings-Mutmacher-Satz, den ich mir immer wieder sage:"
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "staerken-tresor-mein-persoenliches-wertvoll-archiv",
+    "title": "Stärken-Tresor: Mein persönliches Wertvoll-Archiv",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "C4",
+      "ES"
+    ],
+    "type": [
+      "Projet"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Auftakt, Tresor-Galerie und Abschluss im Plenum"
+      },
+      {
+        "mode": "Individuel",
+        "note": "Jede:r baut über mehrere Einheiten den eigenen Stärken-Tresor"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Vertrauens-Tandems bzw. Dreierteams für Fremd-Rückmeldungen"
+      }
+    ],
+    "themes": [
+      "selbstwertgefuehl",
+      "selbstwahrnehmung",
+      "ressourcen"
+    ],
+    "tags": [
+      "Staerken",
+      "Selbstwert",
+      "Portfolio",
+      "Ressourcen",
+      "Erfolge",
+      "Wertschaetzung",
+      "Belege",
+      "Schatzkiste"
+    ],
+    "shortDescription": "In diesem mehrteiligen Projekt legt jede:r Jugendliche einen persönlichen 'Stärken-Tresor' an – eine gestaltete Box oder Mappe, in der echte Belege für die eigenen Stärken gesammelt werden. Statt vage zu behaupten 'Ich bin gut in irgendwas', suchen die Lernenden konkrete Beweise aus Schule, Familie, Hobby und Alltag und ordnen sie ihren Stärken zu. Über mehrere Einheiten wächst so ein Archiv, auf das man bei Selbstzweifeln zurückgreifen kann. Höhepunkt ist eine wertschätzende Tresor-Galerie, in der die Jugendlichen einander ihre Beweisstücke zeigen.",
+    "ablauf": [
+      {
+        "title": "Einstieg (Einheit 1): Warum Behauptungen nicht reichen",
+        "text": "Beginnt im Plenum mit einer Provokation an der Tafel: 'Ich bin ein wertvoller Mensch.' Fragt: 'Glaubt ihr das einem Menschen sofort – oder wollt ihr Beweise?' Erklärt den Unterschied zwischen einer leeren Behauptung und einem Beleg. Führt das Bild des Tresors ein: An schlechten Tagen, wenn der innere Zweifel laut wird, braucht man einen sicheren Ort mit echten Beweisen für den eigenen Wert. Zeigt einen Beispiel-Tresor mit drei Beleg-Karten vor (z. B. ein Foto, eine SMS einer Freundin, ein gelöstes Aufgabenblatt) und erläutert, wofür jeder Beleg steht. Vereinbart, dass das Projekt über mehrere Einheiten läuft und am Ende jede:r einen gefüllten Tresor besitzt."
+      },
+      {
+        "title": "Hauptteil 1 (Einheit 1–2): Stärken-Landkarte und erste Beweise sammeln",
+        "text": "Verteilt das Arbeitsblatt mit vier Lebensbereichen (Schule/Lernen, Freundschaft/Familie, Hobby/Sport/Kunst, Alltag/Verantwortung). Aufgabe: Jede:r notiert in jedem Feld mindestens eine Sache, die ihm gut gelingt oder die andere an ihm schätzen. Anschließend wird daraus eine konkrete Stärke abgeleitet (z. B. 'Ich höre Freund:innen zu, wenn es ihnen schlecht geht' → Stärke: 'verlässlich, einfühlsam'). Gebt als Hausauftrag bis zur nächsten Einheit mit, für mindestens drei Stärken einen echten Beleg in den Tresor zu legen: ein Gegenstand, ein Ausdruck, eine Notiz, eine erinnerte Situation. Betont: Auch kleine, alltägliche Belege zählen – es geht nicht um Pokale."
+      },
+      {
+        "title": "Hauptteil 2 (Einheit 2–3): Den Tresor gestalten und Fremd-Belege ergänzen",
+        "text": "Die Jugendlichen gestalten ihren Tresor (Schuhkarton, Mappe oder digitale Sammlung) und ordnen jeden Beleg einer Stärke zu, beschriftet mit einer kurzen Begründung 'Das beweist, dass ich …'. Danach folgt die Fremd-Perspektive in Vertrauens-Tandems: Jede:r erhält von einer vertrauten Person zwei wertschätzende Rückmeldungen nach dem Muster 'Eine Stärke, die ich an dir oft erlebe, ist …, zum Beispiel als …'. Diese Fremd-Belege kommen ebenfalls in den Tresor. Geht herum, achtet auf konkrete, ehrliche Rückmeldungen und unterbindet floskelhafte oder spöttische Aussagen sofort. Wer mag, ergänzt eine 'Noch-nicht-aber-bald'-Karte für eine Stärke im Aufbau."
+      },
+      {
+        "title": "Hauptteil 3 (Einheit 3): Die Tresor-Galerie",
+        "text": "Richtet eine ruhige Galerie ein: Jede:r stellt den eigenen Tresor auf den Tisch, wählt aber selbst aus, welche zwei bis drei Belege gezeigt werden – Privates bleibt privat. In zwei Runden gehen die Lernenden herum, betrachten die Tresore und hinterlassen auf kleinen Wertschätzungs-Zetteln eine ehrliche, konkrete Rückmeldung ('Mich beeindruckt an deinem Tresor, dass …'). Achtet streng darauf, dass nur Aufwertendes geschrieben wird. Anschließend liest jede:r die erhaltenen Zettel und legt sie in den Tresor. So wird der eigene Wert nicht nur selbst behauptet, sondern von der Gruppe bezeugt."
+      },
+      {
+        "title": "Abschluss (Einheit 3): Der Notfall-Plan für schlechte Tage",
+        "text": "Kommt im Kreis zusammen und reflektiert: 'Was hat sich verändert, seit ihr für eure Stärken echte Beweise habt?' Lasst einige berichten. Dann füllt jede:r die letzte Tresor-Karte aus – den 'Notfall-Plan': Welche drei Belege schaue ich mir an, wenn ich an mir zweifle? Wo bewahre ich meinen Tresor auf, damit ich ihn wiederfinde? Vereinbart, den Tresor mit nach Hause zu nehmen und ihn bei der nächsten Selbstzweifel-Welle bewusst zu öffnen. Würdigt zum Schluss, dass es Stärke zeigt, die eigenen Stärken ernst zu nehmen, statt sie kleinzureden."
+      }
+    ],
+    "duration": "Projekt über 3 Einheiten à ca. 50–60 Minuten (plus kurze Sammelaufträge zwischen den Einheiten)",
+    "materialsNeeded": "Pro Person eine Box (z. B. Schuhkarton) oder eine Sammelmappe; Arbeitsblatt 'Stärken-Landkarte' und Tresor-Karten; Gestaltungsmaterial (Farben, Sticker, Zeitschriften zum Ausschneiden); kleine Wertschätzungs-Zettel; Beispiel-Tresor der Lehrkraft als Modell; optional Tablets/Handys für eine digitale Variante.",
+    "remark": "Differenzierung: Für C4 die Beleg-Suche stark mit Beispielen und vorgegebenen Satzanfängen stützen; ES kann zusätzlich zwischen Stärken im Tun, im Denken und im Umgang mit anderen unterscheiden und langfristige Belege (Projekte, Entwicklungen) aufnehmen. Hinweis zum Schutz: Jede:r entscheidet selbst, was im Tresor sichtbar wird – niemand muss Privates herzeigen. Bei Jugendlichen mit geringem Selbstwert anfangs nur eine einzige Stärke ansteuern und die Fremd-Belege durch die Lehrkraft absichern, damit garantiert positive Rückmeldungen ankommen. Spott in der Galerie konsequent stoppen.",
+    "etepStufen": [
+      4,
+      5
+    ],
+    "eldibGoals": [
+      "V-14",
+      "V-22",
+      "V-30",
+      "V-32",
+      "K-18",
+      "K-19",
+      "K-24",
+      "K-32",
+      "SOZ-9",
+      "SOZ-25",
+      "SOZ-40",
+      "KOG-37"
+    ],
+    "worksheet": {
+      "title": "Mein Stärken-Tresor – Beweise sammeln",
+      "intro": "Ein wertvoller Mensch zu sein heißt nicht, perfekt zu sein. In diesem Tresor sammelst du echte Beweise für deine Stärken – für die Tage, an denen der Zweifel laut wird.",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "1. Meine Stärken-Landkarte"
+        },
+        {
+          "kind": "instruction",
+          "text": "Notiere in jedem Bereich mindestens eine Sache, die dir gelingt oder die andere an dir schätzen. Leite daraus eine Stärke ab."
+        },
+        {
+          "kind": "table",
+          "lines": 5,
+          "items": [
+            "Lebensbereich",
+            "Was mir gelingt / was andere schätzen",
+            "Stärke dahinter"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "2. Meine Beleg-Karten"
+        },
+        {
+          "kind": "instruction",
+          "text": "Wähle drei Stärken und lege für jede einen echten Beleg in deinen Tresor (Gegenstand, Notiz, Nachricht, erinnerte Situation)."
+        },
+        {
+          "kind": "lines",
+          "text": "Stärke 1 – Mein Beleg beweist, dass ich …",
+          "lines": 2
+        },
+        {
+          "kind": "lines",
+          "text": "Stärke 2 – Mein Beleg beweist, dass ich …",
+          "lines": 2
+        },
+        {
+          "kind": "lines",
+          "text": "Stärke 3 – Mein Beleg beweist, dass ich …",
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "3. Fremd-Belege (von einer vertrauten Person)"
+        },
+        {
+          "kind": "question",
+          "text": "Eine Stärke, die andere an mir erleben – und ein Beispiel dazu:",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "4. Mein Notfall-Plan für schlechte Tage"
+        },
+        {
+          "kind": "question",
+          "text": "Welche drei Belege schaue ich mir an, wenn ich an mir zweifle?",
+          "lines": 3
+        },
+        {
+          "kind": "question",
+          "text": "Wo bewahre ich meinen Tresor auf, damit ich ihn wiederfinde?",
+          "lines": 1
+        },
+        {
+          "kind": "scale",
+          "text": "So sehr glaube ich heute an meinen eigenen Wert:",
+          "items": [
+            "wenig",
+            "eher wenig",
+            "mittel",
+            "eher viel",
+            "viel"
+          ]
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "innerer-kritiker-innerer-coach-wer-redet-da-in-meinem-kopf",
+    "title": "Innerer Kritiker, innerer Coach: Wer redet da in meinem Kopf?",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "ES",
+      "C4"
+    ],
+    "type": [
+      "Projet"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Einführung der inneren Stimmen und Abschlussrunde im Plenum"
+      },
+      {
+        "mode": "Individuel",
+        "note": "Eigene Kritiker-Sätze sammeln und in Coach-Sätze übersetzen"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Übersetzungs-Werkstatt und Rollenspiel in Kleingruppen"
+      }
+    ],
+    "themes": [
+      "selbstwertgefuehl",
+      "resilienz",
+      "emotionen"
+    ],
+    "tags": [
+      "innerer Kritiker",
+      "Selbstgespraech",
+      "Reframing",
+      "Selbstmitgefuehl",
+      "Gedanken",
+      "Selbstwert",
+      "Coach",
+      "Abwertung"
+    ],
+    "shortDescription": "Jede:r kennt die abwertende Stimme im Kopf, die nach einem Fehler sagt 'Typisch, du kannst gar nichts'. In diesem Projekt lernen die Jugendlichen, diesen 'inneren Kritiker' als eine von mehreren möglichen Stimmen zu erkennen – und ihm einen freundlichen, fairen 'inneren Coach' zur Seite zu stellen. Über mehrere Einheiten geben sie beiden Stimmen Gestalt, sammeln typische Kritiker-Sätze und übersetzen sie in coachende, realistische Selbstgespräche. Ziel ist ein wohlwollenderer, aber ehrlicher Umgang mit sich selbst, der den Selbstwert schützt, ohne in Selbstüberhöhung zu kippen.",
+    "ablauf": [
+      {
+        "title": "Einstieg (Einheit 1): Die Stimme nach dem Fehler",
+        "text": "Erzählt eine kurze Alltagsszene: Jemand vergisst eine Hausaufgabe und denkt sofort 'Ich bin so dumm, ich mach immer alles falsch'. Fragt im Plenum: 'Kennt ihr eine solche Stimme im Kopf? Wie klingt sie bei euch?' Sammelt anonym auf Kärtchen typische Sätze des inneren Kritikers. Führt zwei Figuren ein: den inneren Kritiker (übertreibt, verallgemeinert, tritt nach) und den inneren Coach (ist ehrlich, aber fair, sieht den Menschen ganz). Macht klar: Es geht nicht darum, den Kritiker zum Schweigen zu lügen ('Alles super!'), sondern eine zweite, gerechtere Stimme zu stärken. Stellt das Projektziel vor: jede:r baut sich einen eigenen inneren Coach."
+      },
+      {
+        "title": "Hauptteil 1 (Einheit 1): Den inneren Kritiker entlarven",
+        "text": "In Einzelarbeit notiert jede:r auf dem Arbeitsblatt drei bis fünf eigene Kritiker-Sätze und die Situationen, in denen sie auftauchen (z. B. vor Prüfungen, beim Sport, vor dem Spiegel). Stellt dann die typischen 'Tricks' des Kritikers vor: Übertreiben ('immer', 'nie'), Verallgemeinern ('ich kann gar nichts'), das ganze Ich abwerten statt nur eine Handlung. Aufgabe: Jede:r markiert bei den eigenen Sätzen, welcher Trick steckt. So wird der Kritiker durchschaubar – man erkennt: Das ist nicht 'die Wahrheit', sondern eine unfaire, verzerrte Stimme. Lasst freiwillig einige Beispiele teilen, ohne Druck."
+      },
+      {
+        "title": "Hauptteil 2 (Einheit 2): Die Übersetzungs-Werkstatt",
+        "text": "Bildet Kleingruppen für die 'Übersetzungs-Werkstatt'. An anonym eingebrachten oder erfundenen Kritiker-Sätzen üben die Gruppen, jeden Satz in einen Coach-Satz zu übersetzen. Der Coach folgt drei Regeln: 1. ehrlich bleiben (nichts schönreden), 2. nur die Handlung bewerten, nicht den ganzen Menschen, 3. einen nächsten Schritt anbieten. Beispiel: 'Ich bin zu blöd für Mathe' wird zu 'Diese Aufgabe habe ich noch nicht verstanden – ich frage nach und übe den Teil gezielt'. Jede Gruppe gestaltet ein Plakat mit Kritiker-Satz und Coach-Übersetzung. Geht herum und prüft, dass die Coach-Sätze nicht ins Leere-Loben kippen, sondern fair und konkret bleiben."
+      },
+      {
+        "title": "Hauptteil 3 (Einheit 2–3): Meinem Coach Gestalt geben",
+        "text": "Jetzt wird der eigene innere Coach persönlich: Jede:r gestaltet ihn als Figur, Symbol, Tier oder gezeichnete Person, gibt ihm einen Tonfall und drei feste 'Coach-Sätze' für die eigenen häufigsten Kritiker-Momente. Wer mag, schreibt einen kurzen Brief des Coachs an sich selbst ('Lieber/Liebe …, wenn du wieder denkst, dass …, dann erinnere dich daran, dass …'). Anschließend übt ihr in Dreiergruppen ein kleines Rollenspiel: Eine Person spricht laut den Kritiker, eine zweite antwortet als Coach, die dritte beobachtet, ob der Coach ehrlich und fair bleibt. Danach Rollenwechsel."
+      },
+      {
+        "title": "Abschluss (Einheit 3): Wenn der Kritiker das nächste Mal ruft",
+        "text": "Im Plenum reflektiert ihr: 'Was ist der Unterschied, wenn der Coach antwortet?' und 'Wo wird euer Kritiker am lautesten – und welcher Coach-Satz hilft dort?' Jede:r formuliert einen persönlichen Vorsatz: einen konkreten Auslöser und den passenden Coach-Satz, der dann greifen soll. Vereinbart ein diskretes Erinnerungssignal (z. B. eine kleine Karte im Mäppchen oder ein Wort im Handy-Hintergrund). Würdigt zum Schluss, dass ein fairer Umgang mit sich selbst kein Weichmacher ist, sondern Stärke – wer sich nicht ständig selbst niedermacht, traut sich mehr zu."
+      }
+    ],
+    "duration": "Projekt über 2–3 Einheiten à ca. 50–60 Minuten",
+    "materialsNeeded": "Arbeitsblatt 'Kritiker & Coach'; Kärtchen für anonyme Kritiker-Sätze; Plakate und Marker für die Übersetzungs-Werkstatt; Gestaltungsmaterial für die Coach-Figur (Stifte, evtl. Knete oder Collage-Material); kleine Erinnerungskarten im Mäppchen-Format.",
+    "remark": "Differenzierung: Für C4 mit klar vorgegebenen Übersetzungs-Beispielen und Satzbausteinen arbeiten; ES kann die Denkfehler des Kritikers benennen und längere Coach-Briefe verfassen. Wichtiger Hinweis: Manche Jugendliche tragen sehr harte, evtl. abwertende oder selbstverletzende Selbstgespräche in sich. Macht alle Beiträge freiwillig und anonymisierbar. Wenn Sätze auf ernste seelische Not, Hoffnungslosigkeit oder Selbstverletzung hindeuten, das Thema nicht im Plenum vertiefen, sondern das Gespräch suchen und schulische Unterstützungsstellen einbeziehen. Diese Übung ist Prävention und Stärkung, kein Ersatz für Beratung oder Therapie.",
+    "etepStufen": [
+      4,
+      5
+    ],
+    "eldibGoals": [
+      "V-20",
+      "V-21",
+      "V-28",
+      "V-33",
+      "K-16",
+      "K-18",
+      "K-26",
+      "SOZ-9",
+      "SOZ-36",
+      "KOG-54",
+      "KOG-58",
+      "KOG-61"
+    ],
+    "worksheet": {
+      "title": "Innerer Kritiker & innerer Coach",
+      "intro": "In deinem Kopf reden manchmal zwei Stimmen. Die eine tritt nach, wenn etwas schiefgeht. Die andere ist ehrlich, aber fair. Hier baust du die zweite Stimme aus.",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "1. Mein innerer Kritiker"
+        },
+        {
+          "kind": "instruction",
+          "text": "Schreibe Sätze auf, die deine kritische Stimme nach Fehlern sagt – und wann sie kommt."
+        },
+        {
+          "kind": "table",
+          "lines": 4,
+          "items": [
+            "Situation / Auslöser",
+            "Was der Kritiker sagt"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "2. Die Tricks des Kritikers"
+        },
+        {
+          "kind": "checklist",
+          "items": [
+            "Er übertreibt ('immer', 'nie')",
+            "Er verallgemeinert ('ich kann gar nichts')",
+            "Er wertet den ganzen Menschen ab statt nur eine Handlung"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "3. Übersetzung in Coach-Sprache"
+        },
+        {
+          "kind": "instruction",
+          "text": "Der Coach bleibt ehrlich, bewertet nur die Handlung und bietet einen nächsten Schritt an."
+        },
+        {
+          "kind": "table",
+          "lines": 4,
+          "items": [
+            "Kritiker-Satz",
+            "Coach-Übersetzung"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "4. Mein innerer Coach"
+        },
+        {
+          "kind": "question",
+          "text": "So sieht / klingt mein Coach – und das sind seine drei festen Sätze für mich:",
+          "lines": 4
+        },
+        {
+          "kind": "heading",
+          "text": "5. Mein Vorsatz"
+        },
+        {
+          "kind": "question",
+          "text": "Wenn ich das nächste Mal denke … , dann sagt mein Coach: …",
+          "lines": 2
+        },
+        {
+          "kind": "scale",
+          "text": "Wie fair gehe ich zurzeit mit mir selbst um?",
+          "items": [
+            "sehr hart",
+            "hart",
+            "mittel",
+            "eher fair",
+            "fair"
+          ]
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "wirkungs-spuren-was-ich-fuer-andere-bedeute",
+    "title": "Wirkungs-Spuren: Was ich für andere bedeute",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "C4",
+      "ES"
+    ],
+    "type": [
+      "Projet"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Auftakt, Spuren-Ausstellung und Abschluss gemeinsam"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Recherche- und Interview-Teams sammeln Wirkungsspuren"
+      },
+      {
+        "mode": "Individuel",
+        "note": "Persönliche Wirkungs-Karte und Reflexion"
+      }
+    ],
+    "themes": [
+      "selbstwertgefuehl",
+      "fremdwahrnehmung",
+      "beziehungsaufbau"
+    ],
+    "tags": [
+      "Wirkung",
+      "Bedeutung",
+      "Selbstwert",
+      "Beitrag",
+      "Wertschaetzung",
+      "Gemeinschaft",
+      "Spuren",
+      "Anerkennung"
+    ],
+    "shortDescription": "Selbstwert wächst nicht nur aus Leistung, sondern auch aus der Erfahrung, für andere etwas zu bedeuten. In diesem Projekt gehen die Jugendlichen ihren eigenen 'Wirkungs-Spuren' nach: Wo habe ich jemandem geholfen, jemanden zum Lachen gebracht, etwas für die Klasse oder Familie beigetragen – oft, ohne es zu bemerken? Über mehrere Einheiten sammeln sie konkrete Belege ihrer Wirkung, auch durch echte Interviews mit Mitmenschen, und verdichten sie zu einer persönlichen Wirkungs-Karte. So erleben sie, dass sie für ihr Umfeld bedeutsam sind – unabhängig von Noten.",
+    "ablauf": [
+      {
+        "title": "Einstieg (Einheit 1): Die unsichtbaren Spuren",
+        "text": "Startet mit einem Gedankenexperiment im Plenum: 'Stellt euch vor, ihr wärt eine Woche lang nicht da gewesen. Was hätte gefehlt – für die Klasse, für Freund:innen, zu Hause?' Lasst die Lernenden zunächst still nachdenken und dann freiwillig erste Beispiele nennen. Erklärt das Bild der 'Wirkungs-Spuren': Wie Fußspuren im Sand hinterlassen wir bei anderen Spuren – ein Trost, ein gemeinsames Lachen, eine Hilfe, ein verlässliches Dasein. Die meisten dieser Spuren sehen wir selbst gar nicht. Stellt das Projektziel vor: Jede:r macht über die nächsten Einheiten die eigenen Wirkungs-Spuren sichtbar und erlebt dadurch den eigenen Wert für andere."
+      },
+      {
+        "title": "Hauptteil 1 (Einheit 1): Eigene Spuren aufspüren",
+        "text": "Auf dem Arbeitsblatt sucht jede:r in vier Feldern nach eigenen Wirkungs-Spuren: 'Ich habe geholfen, als …', 'Ich habe jemanden froh gemacht, als …', 'Ich habe etwas für die Gruppe/Familie beigetragen, als …', 'Jemand hat sich auf mich verlassen, als …'. Wichtig ist Konkretheit – eine Situation statt einer allgemeinen Behauptung. Sammelt anschließend an der Tafel, wie unterschiedlich Wirkung aussehen kann (helfen, zuhören, organisieren, beschützen, aufmuntern, teilen), damit auch leise Kinder ihre Form von Wirkung wiederfinden. Bereitet als Übergang die Interview-Aufgabe vor: Diese Selbstsicht wird gleich durch die Sicht anderer ergänzt."
+      },
+      {
+        "title": "Hauptteil 2 (Einheit 1–2): Wirkungs-Interviews führen",
+        "text": "Die Jugendlichen führen kleine Wirkungs-Interviews – in Interview-Tandems in der Klasse und zusätzlich als Auftrag mit einer Person außerhalb (Familie, Freundeskreis, Verein). Drei Leitfragen: 'Wann hast du dich über mich gefreut?', 'Wobei war ich dir schon einmal eine Hilfe?', 'Was würde dir fehlen, wenn es mich nicht gäbe?'. Die Antworten werden als 'Wirkungs-Belege' notiert. Klärt vorab eine Interview-Haltung: ausreden lassen, nachfragen, ehrliche und konkrete Antworten erbitten. Geht in der Klassen-Phase herum und unterstützt, dass die Rückmeldungen wertschätzend und spezifisch ausfallen, nicht floskelhaft."
+      },
+      {
+        "title": "Hauptteil 3 (Einheit 2): Die persönliche Wirkungs-Karte gestalten",
+        "text": "Jede:r verdichtet Selbst- und Fremd-Belege zu einer gestalteten 'Wirkungs-Karte': in der Mitte das eigene Symbol/Name, ringsum die wichtigsten Spuren, die man bei anderen hinterlässt, mit je einem konkreten Beispiel. Die Karte darf gezeichnet, collagiert oder digital gestaltet sein. Danach richtet ihr eine ruhige Spuren-Ausstellung ein: Die Karten werden ausgelegt, und die Lernenden gehen in zwei Runden herum. Auf kleinen Zetteln dürfen sie einander ehrliche Ergänzungen hinterlassen ('Eine Spur, die du bei mir/uns hinterlässt, ist …'). Achtet konsequent darauf, dass nur Aufwertendes geschrieben wird."
+      },
+      {
+        "title": "Abschluss (Einheit 2): Bedeutsam – auch ohne Noten",
+        "text": "Kommt im Kreis zusammen und reflektiert: 'Was habt ihr über eure Wirkung erfahren, das ihr vorher nicht so gesehen habt?' und 'Wie fühlt es sich an, für andere etwas zu bedeuten?' Macht den Kerngedanken stark: Der eigene Wert hängt nicht nur an Leistung und Noten, sondern auch daran, dass man für andere bedeutsam ist – und das ist man bereits. Jede:r formuliert einen Satz, den er sich merken will ('Ich bin wertvoll, weil ich für andere … bin'). Optional vereinbart die Gruppe, die Wirkungs-Idee weiterzutragen, indem jede:r in der kommenden Woche bewusst eine gute Spur bei jemandem hinterlässt und davon berichtet."
+      }
+    ],
+    "duration": "Projekt über 2 Einheiten à ca. 55–60 Minuten (plus ein Interview-Auftrag außerhalb der Schule)",
+    "materialsNeeded": "Arbeitsblatt 'Wirkungs-Spuren' mit Interview-Leitfaden; Material für die Wirkungs-Karte (Tonkarton, Farben, Zeitschriften, Kleber) oder Tablets für eine digitale Variante; kleine Wertschätzungs-Zettel für die Ausstellung; Tafel/Flipchart für die Sammlung der Wirkungsformen.",
+    "remark": "Differenzierung: Für C4 die Spuren-Felder und Interviewfragen mit Beispielen vorstrukturieren; ES kann zwischen verschiedenen Arten von Wirkung unterscheiden (helfen, verbinden, gestalten, schützen) und über die eigene Rolle in Gemeinschaften nachdenken. Schutz-Hinweis: Der außerschulische Interview-Auftrag ist freiwillig anpassbar – nicht alle Jugendlichen haben ein verlässliches, wohlwollendes Umfeld. Bietet als Alternative Interviewpartner:innen aus der Schule (Lehrkraft, Mitschüler:in, Schulsozialarbeit) an, damit garantiert wertschätzende Rückmeldungen möglich sind. Bei Kindern mit wenig erlebter Anerkennung die Lehrkraft-Rückmeldung gezielt einplanen.",
+    "etepStufen": [
+      4,
+      5
+    ],
+    "eldibGoals": [
+      "V-14",
+      "V-27",
+      "V-30",
+      "K-20",
+      "K-22",
+      "K-32",
+      "SOZ-9",
+      "SOZ-26",
+      "SOZ-37",
+      "SOZ-40",
+      "SOZ-41",
+      "KOG-37"
+    ],
+    "worksheet": {
+      "title": "Meine Wirkungs-Spuren",
+      "intro": "Wie Fußspuren im Sand hinterlässt du bei anderen Spuren – einen Trost, ein Lachen, eine Hilfe. Die meisten siehst du selbst nicht. Hier machst du sie sichtbar.",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "1. Meine eigenen Spuren"
+        },
+        {
+          "kind": "instruction",
+          "text": "Nenne zu jeder Zeile eine konkrete Situation – kein allgemeines 'oft', sondern ein echtes Beispiel."
+        },
+        {
+          "kind": "question",
+          "text": "Ich habe geholfen, als …",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "Ich habe jemanden froh gemacht, als …",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "Ich habe etwas für die Gruppe/Familie beigetragen, als …",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "Jemand hat sich auf mich verlassen, als …",
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "2. Wirkungs-Interview"
+        },
+        {
+          "kind": "instruction",
+          "text": "Frage zwei Menschen (eine:n in der Klasse, eine:n außerhalb) und notiere ihre Antworten."
+        },
+        {
+          "kind": "table",
+          "lines": 4,
+          "items": [
+            "Wen ich gefragt habe",
+            "Was diese Person geantwortet hat"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "3. Meine Wirkungs-Karte"
+        },
+        {
+          "kind": "box",
+          "text": "Skizze: In der Mitte ich – ringsum meine wichtigsten Spuren mit je einem Beispiel.",
+          "lines": 6
+        },
+        {
+          "kind": "heading",
+          "text": "4. Mein Satz zum Mitnehmen"
+        },
+        {
+          "kind": "lines",
+          "text": "Ich bin wertvoll, weil ich für andere … bin.",
+          "lines": 2
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "mein-lebens-wappen-werte-wurzeln-wege",
+    "title": "Mein Lebens-Wappen: Werte, Wurzeln, Wege",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "ES",
+      "C4"
+    ],
+    "type": [
+      "Projet"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Einführung der Wappen-Idee und feierliche Wappen-Zeremonie im Plenum"
+      },
+      {
+        "mode": "Individuel",
+        "note": "Jede:r entwirft und gestaltet das eigene Lebens-Wappen"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Wappen-Beratung in kleinen Vertrauensrunden"
+      }
+    ],
+    "themes": [
+      "selbstwertgefuehl",
+      "identitaet",
+      "ressourcen"
+    ],
+    "tags": [
+      "Wappen",
+      "Werte",
+      "Identitaet",
+      "Selbstwert",
+      "Wurzeln",
+      "Ziele",
+      "Staerken",
+      "Lebensgeschichte"
+    ],
+    "shortDescription": "Ein Wappen zeigt seit jeher, wofür jemand steht. In diesem Projekt entwirft jede:r Jugendliche ein persönliches 'Lebens-Wappen', das den eigenen Wert nicht an Noten oder Aussehen knüpft, sondern an Werte, Wurzeln und Wege: Wofür ich stehe, woher meine Stärke kommt, wohin ich will, was ich schon gemeistert habe. Über mehrere Einheiten füllen die Lernenden die Felder ihres Wappens mit Symbolen und kurzen Begründungen, beraten sich gegenseitig und stellen ihr Wappen in einer wertschätzenden Zeremonie vor. So entsteht ein stabiles, selbst gewähltes Fundament des Selbstwerts.",
+    "ablauf": [
+      {
+        "title": "Einstieg (Einheit 1): Wofür stehe ich?",
+        "text": "Zeigt im Plenum einige historische und moderne Wappen oder Logos und fragt: 'Was erkennt man daran über die Person oder Gruppe?' Erklärt, dass ein Wappen verdichtet, wofür jemand steht – ohne Worte, durch Symbole. Grenzt bewusst ab: Es geht nicht um Herkunft als Adel oder Besitz, sondern um inneren Halt. Stellt die vier Wappenfelder vor, die jede:r füllen wird: 1. Meine Werte (wofür ich stehe), 2. Meine Wurzeln (woher meine Stärke kommt – Menschen, Orte, Erfahrungen), 3. Meine Wege (wohin ich will), 4. Mein Sieg (was ich schon gemeistert habe). Dazu ein Wappenspruch – ein Satz, der zu mir passt. Macht das Projektziel klar: ein selbst gewähltes Fundament, das auch an wackeligen Tagen trägt."
+      },
+      {
+        "title": "Hauptteil 1 (Einheit 1): Die Felder gedanklich füllen",
+        "text": "In Einzelarbeit bearbeitet jede:r das Vorbereitungs-Arbeitsblatt zu den vier Feldern. Bietet zu jedem Feld Denkanstöße: Bei 'Werte' eine kleine Werte-Liste zum Ankreuzen (z. B. Ehrlichkeit, Loyalität, Mut, Humor, Gerechtigkeit, Freiheit) und die Bitte, die drei wichtigsten auszuwählen und je kurz zu begründen. Bei 'Wurzeln' fragt nach Menschen, Orten, Erlebnissen oder Sprüchen, die Halt geben. Bei 'Wege' nach einem Ziel oder Wunsch für die nächsten Jahre. Bei 'Sieg' nach einer überstandenen Schwierigkeit. Betont: Es gibt kein Richtig oder Falsch – das Wappen gehört dir. Geht herum und ermutigt besonders Lernende, die sich schwer einschätzen, mit konkreten Rückfragen."
+      },
+      {
+        "title": "Hauptteil 2 (Einheit 2): Wappen-Beratung in Vertrauensrunden",
+        "text": "Bevor gestaltet wird, beraten sich die Jugendlichen in kleinen Vertrauensrunden zu dritt. Reihum stellt jede:r seine Entwürfe für ein oder zwei Felder vor; die anderen geben ausschließlich aufbauende Rückmeldung nach dem Muster 'Das passt zu dir, weil ich dich so erlebe …' oder dürfen behutsam eine Stärke ergänzen, die der Person selbst gar nicht aufgefallen ist ('Ich würde bei deinen Werten noch … sehen'). Legt die Gesprächsregeln klar fest: zuhören, ausreden lassen, nichts abwerten, nichts ins Lächerliche ziehen. Diese Fremd-Sicht hilft besonders Jugendlichen mit geringem Selbstwert, blinde Flecken bei den eigenen Stärken zu entdecken."
+      },
+      {
+        "title": "Hauptteil 3 (Einheit 2–3): Das Wappen gestalten",
+        "text": "Jetzt gestaltet jede:r das eigentliche Lebens-Wappen auf einer Wappenvorlage: Für jedes der vier Felder wird ein Symbol gezeichnet oder collagiert und mit einem kurzen Begründungssatz versehen. Über oder unter das Wappen kommt der persönliche Wappenspruch. Lasst genug Zeit und Ruhe für die Gestaltung, denn die Verdichtung in Symbole ist der wertvolle Teil. Wer früher fertig ist, schreibt auf die Rückseite, warum gerade diese Symbole gewählt wurden. Stellt unterschiedliche Materialien bereit, damit auch weniger zeichensichere Jugendliche (z. B. über Collage oder digitale Symbole) ein Ergebnis erreichen, das sie zeigen mögen."
+      },
+      {
+        "title": "Abschluss (Einheit 3): Die Wappen-Zeremonie",
+        "text": "Gestaltet einen würdigen Rahmen: Jede:r stellt – freiwillig im Umfang – das eigene Wappen vor und spricht den Wappenspruch laut. Die Gruppe antwortet jeweils mit einem kurzen, ehrlichen Wertschätzungssatz oder mit Applaus. Niemand muss alle Felder erklären; jede:r entscheidet, was geteilt wird. Im Anschluss reflektiert ihr im Kreis: 'Was trägt euch an einem schwierigen Tag eher – Noten und Aussehen oder eure Werte, Wurzeln und Wege?' Vereinbart, dass jede:r das Wappen sichtbar aufhängt oder fotografiert, um sich daran zu erinnern, wofür man steht. Würdigt zum Schluss, dass ein Selbstwert, der auf eigenen Werten ruht, stabiler ist als einer, der von Lob oder Erfolg abhängt."
+      }
+    ],
+    "duration": "Projekt über 2–3 Einheiten à ca. 55–60 Minuten",
+    "materialsNeeded": "Wappenvorlage mit vier Feldern (pro Person); Vorbereitungs-Arbeitsblatt mit Werte-Liste und Denkanstößen; Gestaltungsmaterial (Farben, Schere, Kleber, Zeitschriften); Beispiele historischer und moderner Wappen/Logos; optional Tablets für digitale Gestaltung; Material für einen feierlichen Rahmen der Zeremonie.",
+    "remark": "Differenzierung: Für C4 die Felder stärker durch Auswahllisten und Satzanfänge stützen und den Wappenspruch aus Vorschlägen wählen lassen; ES kann Werte begründen, Spannungen zwischen Werten reflektieren und einen eigenen Spruch formulieren. Sensibilität: Das Feld 'Wurzeln' kann belastende Familien- oder Migrationsgeschichten berühren. Macht klar, dass Wurzeln auch Freund:innen, Vorbilder, Orte oder eigene Erfahrungen sein können – nicht zwingend die Familie. Stellt frei, wie viel in der Zeremonie geteilt wird, und sorgt dafür, dass keine schmerzhaften Hintergründe öffentlich gemacht werden müssen. Spott konsequent unterbinden.",
+    "etepStufen": [
+      4,
+      5
+    ],
+    "eldibGoals": [
+      "V-30",
+      "V-32",
+      "V-33",
+      "K-18",
+      "K-19",
+      "K-23",
+      "K-34",
+      "SOZ-9",
+      "SOZ-35",
+      "SOZ-40",
+      "KOG-54",
+      "KOG-58"
+    ],
+    "worksheet": {
+      "title": "Mein Lebens-Wappen – Vorbereitung",
+      "intro": "Ein Wappen zeigt, wofür jemand steht. Dein Lebens-Wappen knüpft deinen Wert nicht an Noten oder Aussehen, sondern an deine Werte, Wurzeln und Wege.",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "Feld 1 – Meine Werte (wofür ich stehe)"
+        },
+        {
+          "kind": "instruction",
+          "text": "Kreuze die drei wichtigsten an und begründe sie kurz."
+        },
+        {
+          "kind": "checklist",
+          "items": [
+            "Ehrlichkeit",
+            "Loyalität",
+            "Mut",
+            "Humor",
+            "Gerechtigkeit",
+            "Freiheit",
+            "Hilfsbereitschaft",
+            "Zuverlässigkeit"
+          ]
+        },
+        {
+          "kind": "lines",
+          "text": "Diese Werte sind mir wichtig, weil …",
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "Feld 2 – Meine Wurzeln (woher meine Stärke kommt)"
+        },
+        {
+          "kind": "question",
+          "text": "Menschen, Orte, Erlebnisse oder Sprüche, die mir Halt geben:",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "Feld 3 – Meine Wege (wohin ich will)"
+        },
+        {
+          "kind": "question",
+          "text": "Ein Ziel oder Wunsch für die nächsten Jahre:",
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "Feld 4 – Mein Sieg (was ich gemeistert habe)"
+        },
+        {
+          "kind": "question",
+          "text": "Eine Schwierigkeit, die ich überstanden habe – und was sie über mich zeigt:",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "Mein Wappenspruch"
+        },
+        {
+          "kind": "lines",
+          "text": "Ein Satz, der zu mir passt:",
+          "lines": 2
+        },
+        {
+          "kind": "scale",
+          "text": "Worauf ruht mein Selbstwert heute eher?",
+          "items": [
+            "fast nur Noten/Aussehen",
+            "eher außen",
+            "gemischt",
+            "eher Werte",
+            "vor allem meine Werte"
+          ]
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "die-6-sekunden-regel-der-puffer-zwischen-reiz-und-reaktion",
+    "title": "Die 6-Sekunden-Regel: Der Puffer zwischen Reiz und Reaktion",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "ES"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "gemeinsamer Einstieg und Auswertung im Stuhlkreis oder offenen Halbkreis"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Übung der Reiz-Reaktions-Szenen in Dreierteams (handelnd, auslösend, beobachtend)"
+      },
+      {
+        "mode": "Individuel",
+        "note": "persönliche 6-Sekunden-Karte am Ende"
+      }
+    ],
+    "themes": [
+      "impulskontrolle",
+      "selbstwahrnehmung",
+      "emotionen"
+    ],
+    "tags": [
+      "Impulskontrolle",
+      "Selbststeuerung",
+      "Innehalten",
+      "Reizverarbeitung",
+      "Pause-Technik",
+      "Stressreaktion",
+      "Jugendliche"
+    ],
+    "shortDescription": "Jugendliche entdecken den entscheidenden Moment, der über impulsives oder überlegtes Handeln bestimmt: die wenigen Sekunden zwischen einem auslösenden Reiz und der eigenen Reaktion. Sie lernen, dass das Gehirn in der ersten Aufregung anders arbeitet und ein kurzer, bewusster Puffer von einigen Sekunden ausreicht, um vom 'Autopilot' wieder in den 'Fahrersitz' zu wechseln. In Szenen erproben sie konkrete Mikro-Techniken, um diese Pause selbst herzustellen.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Der Knopf, den jemand drückt (10 Min.)",
+        "text": "Beginnt im Halbkreis. Stellt die Frage in den Raum: 'Was bringt euch sofort auf die Palme – diesen einen Moment, in dem ihr reagiert, bevor ihr überhaupt nachgedacht habt?' Sammelt einige typische Auslöser (jemand drängelt sich vor, eine blöde Bemerkung, ein Stups von hinten, eine ungerechte Note). Erklärt mit einem einfachen Bild: Im Gehirn gibt es eine schnelle 'Alarm-Zentrale', die in Bruchteilen von Sekunden reagiert – das war früher überlebenswichtig. Erst etwas später schaltet sich der 'kluge Chef' im Stirnhirn dazu, der abwägt. Genau diese kurze Lücke entscheidet oft, ob wir etwas tun, das wir später bereuen. Heute trainiert ihr, diese Lücke für euch zu nutzen."
+      },
+      {
+        "title": "Hinführung – Vom Autopilot in den Fahrersitz (8 Min.)",
+        "text": "Macht die zwei Modi greifbar. Autopilot: Der Körper handelt von selbst – zurückpöbeln, zuschlagen, die Tür knallen, einen verletzenden Kommentar tippen. Fahrersitz: Ich halte kurz inne und wähle, was ich tue. Führt drei schnelle Mikro-Techniken vor, die in den 6 Sekunden funktionieren: (1) Einmal langsam und tief ausatmen. (2) Innerlich bis sechs zählen und dabei die Füße auf dem Boden spüren. (3) Einen Stopp-Satz denken ('Stopp – ich entscheide gleich'). Probiert alle drei gemeinsam einmal aus, im Sitzen, ohne Anlass. Betont: Es geht nicht darum, das Gefühl wegzudrücken – Ärger darf da sein. Es geht nur darum, zwischen Gefühl und Tat einen kurzen Puffer zu schieben."
+      },
+      {
+        "title": "Hauptteil – Reiz-Reaktions-Szenen in Dreierteams (18 Min.)",
+        "text": "Bildet Dreierteams mit klaren Rollen: eine Person handelt, eine liefert den Reiz, eine beobachtet. Jedes Team zieht eine Reiz-Karte mit einer alltagsnahen Szene (z. B. 'Jemand macht vor allen eine spöttische Bemerkung über deine Kleidung', 'Du wartest seit zehn Minuten und jemand drängelt sich einfach vor', 'In der Gruppe wird dir die Schuld für etwas gegeben, das du nicht warst'). Die Szene wird zweimal gespielt: erst die typische Autopilot-Reaktion, dann dieselbe Szene mit einer der drei Mikro-Techniken in der 6-Sekunden-Pause und einer überlegten Reaktion. Die beobachtende Person achtet darauf, was sich verändert – an Körperhaltung, Tonfall und Ausgang. Danach rotieren die Rollen. Geht herum und ermutigt, die Pause wirklich sichtbar zu machen (kurz innehalten, ausatmen), statt sie nur zu behaupten."
+      },
+      {
+        "title": "Auswertung – Was die Pause verändert (8 Min.)",
+        "text": "Holt die Teams zusammen. Lasst zwei, drei Szenen kurz im Plenum zeigen oder beschreiben – jeweils beide Versionen. Fragt die Beobachtenden: 'Was war im zweiten Durchgang anders? Wie ging die Situation aus?' Arbeitet gemeinsam heraus, dass die überlegte Reaktion fast nie die schwächere ist – im Gegenteil: Sie wirkt souveräner und führt seltener zu Eskalation, Ärger oder Reue. Sammelt an der Tafel, welche der drei Mikro-Techniken den Jugendlichen am leichtesten fiel. Macht deutlich, dass die Pause nicht jedes Mal perfekt klappt – es ist Training, kein Schalter, und jeder gelungene Puffer zählt."
+      },
+      {
+        "title": "Abschluss – Meine 6-Sekunden-Karte (6 Min.)",
+        "text": "Jede:r gestaltet still die eigene 6-Sekunden-Karte (Format für die Hülle des Handys oder die Federmappe). Darauf notiert jede:r: meinen häufigsten 'Knopf', den jemand drückt; meine Lieblings-Mikro-Technik für die Pause; und einen kurzen Stopp-Satz, der zu mir passt. Wer mag, sagt seinen Stopp-Satz laut in die Runde. Schließt mit der Kernbotschaft: 'Zwischen dem, was dich trifft, und dem, was du tust, liegen ein paar Sekunden. Diese Sekunden gehören dir – und du kannst lernen, sie zu nutzen.' Verweist darauf, dass ihr in den nächsten Tagen leise an die 6 Sekunden erinnern werdet, wenn eine Situation kippt."
+      }
+    ],
+    "duration": "ca. 50 Minuten",
+    "materialsNeeded": "Reiz-Karten mit alltagsnahen Auslöser-Szenen (eine pro Team, plus Reserve); Tafel oder Flipchart für die Sammlung; festere Kärtchen im Hülle-Format für die persönliche 6-Sekunden-Karte; Stifte; ausreichend Platz, damit die Dreierteams ihre Szenen ohne Gedränge spielen können.",
+    "remark": "Differenzierung: Leistungsstärkere Gruppen entwickeln eigene Reiz-Szenen aus ihrem Alltag und reflektieren, in welchen Situationen die Pause besonders schwerfällt; zurückhaltendere Jugendliche dürfen statt zu spielen die Szene erzählen oder ausschließlich die Beobachterrolle übernehmen. Hinweis zur Sicherheit: Die Reize bleiben verbal und symbolisch – körperliche 'Auslöser' (Schubsen, Festhalten) werden nur angedeutet, nie real ausgeführt. Wähle keine Szenen, die reale Konflikte einzelner Jugendlicher der Klasse nachstellen, und greife sofort ein, falls eine Szene zu nah an einen echten Streit gerät. Achte sensibel auf Jugendliche mit starker Impulsivität (z. B. ADHS) und würdige bei ihnen schon kleine gelungene Pausen ausdrücklich.",
+    "etepStufen": [
+      3,
+      4
+    ],
+    "eldibGoals": [
+      "V-18",
+      "V-20",
+      "V-21",
+      "V-23",
+      "V-26",
+      "V-28",
+      "K-16",
+      "K-26",
+      "SOZ-14",
+      "SOZ-34",
+      "KOG-37",
+      "KOG-57"
+    ],
+    "worksheet": {
+      "title": "Meine 6-Sekunden-Karte",
+      "intro": "Zwischen dem Reiz und deiner Reaktion liegen ein paar Sekunden. In dieser Lücke entscheidest du, ob der Autopilot übernimmt oder du im Fahrersitz bleibst. Diese Karte hilft dir, die Pause zu nutzen.",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "Mein häufigster 'Knopf'"
+        },
+        {
+          "kind": "instruction",
+          "text": "Welcher Reiz bringt dich am schnellsten auf die Palme? Schreibe ihn in einem Satz auf."
+        },
+        {
+          "kind": "lines",
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "Meine Mikro-Technik für die 6 Sekunden"
+        },
+        {
+          "kind": "checklist",
+          "items": [
+            "Einmal langsam und tief ausatmen",
+            "Innerlich bis sechs zählen und die Füße spüren",
+            "Meinen Stopp-Satz denken"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "Mein Stopp-Satz"
+        },
+        {
+          "kind": "box",
+          "text": "Der Satz, den ich mir in der Pause sage, lautet:"
+        },
+        {
+          "kind": "heading",
+          "text": "Autopilot oder Fahrersitz?"
+        },
+        {
+          "kind": "question",
+          "text": "Beschreibe eine Situation aus deiner Woche, in der dir die 6-Sekunden-Pause gelungen ist – oder bei der du sie das nächste Mal ausprobieren willst."
+        },
+        {
+          "kind": "lines",
+          "lines": 3
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "meine-trigger-landkarte-fruehwarnzeichen-lesen-bevor-es-knallt",
+    "title": "Meine Trigger-Landkarte: Frühwarnzeichen lesen, bevor es knallt",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "ES"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Einstieg und Abschluss-Reflexion im Plenum"
+      },
+      {
+        "mode": "Individuel",
+        "note": "Erstellen der persönlichen Trigger-Landkarte in Stillarbeit"
+      },
+      {
+        "mode": "Grupp",
+        "note": "vertraulicher Austausch über Frühwarnzeichen und Strategien in Kleingruppen"
+      }
+    ],
+    "themes": [
+      "impulskontrolle",
+      "selbstwahrnehmung",
+      "stressbewaeltigung"
+    ],
+    "tags": [
+      "Impulskontrolle",
+      "Trigger",
+      "Frühwarnzeichen",
+      "Körpersignale",
+      "Selbstbeobachtung",
+      "Anspannung",
+      "Vorbeugen"
+    ],
+    "shortDescription": "Impulsives Verhalten kommt selten aus dem Nichts – fast immer kündigt der Körper es vorher an. In dieser Aktivität erstellen Jugendliche ihre persönliche 'Trigger-Landkarte': Sie sammeln, welche Situationen, Personen und Worte sie zuverlässig auf die Palme bringen, und lernen, die eigenen körperlichen Frühwarnzeichen zu erkennen (z. B. Hitze im Gesicht, geballte Fäuste, schneller Atem). Wer diese Signale früh bemerkt, kann gegensteuern, bevor die Anspannung in eine impulsive Reaktion umschlägt.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Der Wutberg (8 Min.)",
+        "text": "Zeichnet einen Berg an die Tafel: unten der ruhige Ausgangspunkt, oben der Gipfel als 'Explosion'. Erklärt: Impulsives Handeln passiert oben am Gipfel – aber bis dahin steigt die Anspannung über mehrere Stufen am Hang hinauf. Das Problem ist: Viele merken erst ganz oben, dass sie schon längst geklettert sind. Fragt: 'Kennt ihr das – plötzlich seid ihr explodiert und wisst gar nicht genau, wann es losging?' Macht deutlich, worum es heute geht: nicht das Gefühl zu verbieten, sondern den eigenen Weg den Berg hinauf so gut zu kennen, dass man rechtzeitig aussteigen kann. Dafür braucht man zwei Dinge – seine Auslöser (Trigger) und seine Frühwarnzeichen."
+      },
+      {
+        "title": "Hinführung – Trigger und Körpersignale (9 Min.)",
+        "text": "Klärt die zwei Begriffe. Trigger sind die Auslöser von außen: bestimmte Situationen (ungerecht behandelt werden, ausgelacht werden, Zeitdruck), bestimmte Personen oder bestimmte Sätze ('das schaffst du eh nicht'). Frühwarnzeichen sind die Signale von innen, mit denen der Körper Alarm gibt: Hitze im Gesicht, Herzklopfen, ein Kloß im Hals, geballte Fäuste, schnellerer Atem, ein flaues Gefühl im Bauch. Sammelt an der Tafel je einige Beispiele, die die Klasse einbringt. Betont, dass die Frühwarnzeichen bei jedem anders sind – die einen werden heiß, die anderen ganz still und kalt. Genau die eigenen zu kennen, ist der Schlüssel. Diese persönliche Spurensuche macht jede:r gleich auf der eigenen Landkarte."
+      },
+      {
+        "title": "Hauptteil 1 – Die persönliche Trigger-Landkarte (16 Min.)",
+        "text": "Teilt das Arbeitsblatt 'Meine Trigger-Landkarte' aus. Jede:r arbeitet allein und in Ruhe. Im ersten Teil tragen die Jugendlichen ihre wichtigsten Trigger ein (Situationen, Personen-Konstellationen, typische Sätze) und ordnen sie nach Stärke: Was bringt mich nur leicht in Wallung, was bringt mich zuverlässig zum Explodieren? Im zweiten Teil markieren sie auf einer einfachen Körper-Umrisszeichnung, wo und wie sie ihre Frühwarnzeichen spüren, und ordnen sie den Stufen des Wutbergs zu (frühes Signal unten, spätes Signal kurz vor dem Gipfel). Geht herum und gebt leise Impulse für Jugendliche, die nicht recht wissen, wo sie etwas spüren ('Wann hast du das letzte Mal richtig die Beherrschung verloren – wie hat sich das im Körper angefühlt, kurz davor?')."
+      },
+      {
+        "title": "Hauptteil 2 – Aussteigen, bevor man oben ist (9 Min.)",
+        "text": "Bildet Kleingruppen von drei bis vier Jugendlichen, die sich vertrauen. Reihum stellt jede:r freiwillig EIN frühes Frühwarnzeichen vor (niemand muss alles teilen). Die Gruppe sammelt gemeinsam, was man genau bei diesem frühen Signal tun könnte, um nicht weiter den Berg hinaufzusteigen: rausgehen, kurz etwas trinken, drei Mal ausatmen, das Thema vertagen, sich abwenden. Haltet die besten 'Aussteig-Ideen' fest. Jede:r ergänzt auf der eigenen Landkarte mindestens eine Strategie, die zu einem frühen Signal passt. Kernidee: Je früher man sein Warnzeichen bemerkt, desto leichter ist das Aussteigen – oben am Gipfel ist es fast unmöglich."
+      },
+      {
+        "title": "Abschluss – Mein Frühwarnsystem (8 Min.)",
+        "text": "Kommt im Plenum zusammen. Bittet einige Freiwillige, einen Satz zu vervollständigen: 'Mein frühestes Warnzeichen ist ... – und wenn ich es merke, will ich ...'. Macht deutlich, dass diese Landkarte etwas Persönliches und Wertvolles ist, das jede:r für sich behält und mit der Zeit ergänzt. Schließt mit der Kernbotschaft: 'Du kannst nicht verhindern, dass dich manche Dinge auf die Palme bringen. Aber je besser du deine eigenen Warnzeichen liest, desto eher hast du die Wahl, wie du reagierst.' Regt an, die Landkarte in den nächsten zwei Wochen weiterzuführen und neue Trigger oder Signale, die auffallen, zu ergänzen."
+      }
+    ],
+    "duration": "ca. 50 Minuten",
+    "materialsNeeded": "Tafel oder Flipchart für den Wutberg; Arbeitsblatt 'Meine Trigger-Landkarte' mit Körper-Umriss pro Person; Stifte und farbige Marker zum Einzeichnen der Frühwarnzeichen; optional eine vergrößerte Wutberg-Vorlage zum Aufhängen.",
+    "remark": "Differenzierung: Reflektiertere Jugendliche unterscheiden zwischen verschiedenen Trigger-Arten und überlegen, warum gerade diese Auslöser bei ihnen so stark wirken; Jugendliche, denen das Hineinspüren schwerfällt, arbeiten verstärkt mit der Körper-Umrisszeichnung und vorgegebenen Signal-Symbolen. Hinweis: Das Thema kann reale, belastende Erfahrungen berühren (Wutausbrüche mit Folgen, Konflikte zu Hause). Stelle klar, dass die Landkarte privat bleibt und im Austausch nur das geteilt wird, was jede:r freiwillig preisgeben möchte. Beobachte sensibel, falls die Selbstbeobachtung bei einzelnen Jugendlichen starke Scham oder Belastung auslöst, und biete ein vertrauliches Einzelgespräch sowie ggf. den Hinweis auf weitere Unterstützung an.",
+    "etepStufen": [
+      3,
+      4
+    ],
+    "eldibGoals": [
+      "V-20",
+      "V-21",
+      "V-23",
+      "V-26",
+      "V-28",
+      "V-33",
+      "K-16",
+      "K-26",
+      "SOZ-34",
+      "KOG-37",
+      "KOG-57",
+      "KOG-61"
+    ],
+    "worksheet": {
+      "title": "Meine Trigger-Landkarte",
+      "intro": "Impulsives Handeln kommt selten aus dem Nichts. Dein Körper warnt dich vorher. Auf dieser Landkarte erforschst du, was dich auf die Palme bringt und woran du es früh erkennst.",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "Meine Trigger – was mich auf die Palme bringt"
+        },
+        {
+          "kind": "instruction",
+          "text": "Notiere Situationen, Personen-Konstellationen oder Sätze, die dich zuverlässig wütend machen. Markiere mit Sternen, wie stark der jeweilige Auslöser wirkt (1 Stern = leicht, 3 Sterne = bringt mich zum Explodieren)."
+        },
+        {
+          "kind": "lines",
+          "lines": 5
+        },
+        {
+          "kind": "heading",
+          "text": "Meine Frühwarnzeichen im Körper"
+        },
+        {
+          "kind": "instruction",
+          "text": "Wo und wie spürst du die aufsteigende Anspannung? Trage deine Körpersignale ein und ordne sie: Welches kommt früh, welches erst kurz vor dem 'Gipfel'?"
+        },
+        {
+          "kind": "lines",
+          "lines": 4
+        },
+        {
+          "kind": "heading",
+          "text": "Mein frühestes Signal"
+        },
+        {
+          "kind": "box",
+          "text": "Das allererste Zeichen, an dem ich merke, dass es losgeht, ist:"
+        },
+        {
+          "kind": "heading",
+          "text": "Aussteigen, bevor ich oben bin"
+        },
+        {
+          "kind": "instruction",
+          "text": "Was kannst du bei deinem frühen Signal tun, um nicht weiter 'den Berg hinaufzusteigen'? Notiere mindestens zwei Strategien."
+        },
+        {
+          "kind": "lines",
+          "lines": 3
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "senden-oder-warten-impulskontrolle-im-chat",
+    "title": "Senden oder warten? Impulskontrolle im Chat",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "ES"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Einstieg und gemeinsame Auswertung im Plenum"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Analyse und Umformulieren von Chat-Situationen in Kleingruppen"
+      },
+      {
+        "mode": "Individuel",
+        "note": "persönliche Chat-Notbremse-Karte zum Abschluss"
+      }
+    ],
+    "themes": [
+      "impulskontrolle",
+      "medien",
+      "kommunikation"
+    ],
+    "tags": [
+      "Impulskontrolle",
+      "Chat",
+      "soziale Medien",
+      "Digitalverhalten",
+      "Cyber-Eskalation",
+      "Nachricht",
+      "Innehalten"
+    ],
+    "shortDescription": "Im Chat passiert Impulsives in Sekunden – eine wütende Nachricht ist abgeschickt, bevor man nachgedacht hat, und lässt sich nicht zurückholen. Diese Aktivität überträgt Impulskontrolle gezielt auf die digitale Welt der Jugendlichen: Sie analysieren, warum Tippen und Senden so schnell eskaliert, erproben eine 'Chat-Notbremse' und üben, hitzige Nachrichten zu entschärfen oder bewusst nicht zu senden. Ziel ist ein souveräner Umgang mit dem Drang, sofort und heftig zu antworten.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Eine Sekunde, die man nicht zurückholt (8 Min.)",
+        "text": "Steigt mit einer kurzen, anonymen Umfrage per Handzeichen ein: 'Wer hat schon einmal eine Nachricht abgeschickt, die er oder sie kurz danach am liebsten zurückgeholt hätte?' Lasst die vielen Hände wirken. Sammelt ohne Namen, was da passiert ist (im Streit etwas Gemeines getippt, in einer Gruppe vorschnell gelästert, eine wütende Sprachnachricht geschickt). Stellt die zentrale Besonderheit des Chats heraus: Anders als beim Reden gibt es hier keinen Moment, in dem das Gegenüber zurückzuckt und man sich noch korrigieren kann – einmal auf 'Senden' getippt, ist die Nachricht für immer raus, oft sogar als Screenshot festgehalten. Genau deshalb braucht es im Chat besonders gute Impulskontrolle. Die trainiert ihr heute."
+      },
+      {
+        "title": "Hinführung – Warum der Chat so schnell eskaliert (9 Min.)",
+        "text": "Erarbeitet gemeinsam, was Chatten impulsiv macht. Sammelt an der Tafel Faktoren: Es geht extrem schnell (tippen und senden in Sekunden). Man sieht das Gesicht des anderen nicht – Mimik, Tonfall und Pausen fehlen, deshalb wirkt vieles härter, als es gemeint ist. Man ist oft allein und ungebremst, niemand steht daneben. Und in Gruppen-Chats schaukelt sich Stimmung schnell hoch. Führt den Gedanken ein: Im Chat fällt der natürliche Puffer weg, den ein Gespräch von Angesicht zu Angesicht hat – also muss man ihn bewusst selbst einbauen. Genau dafür gibt es die 'Chat-Notbremse', die ihr gleich kennenlernt und anwendet."
+      },
+      {
+        "title": "Hauptteil 1 – Hitzige Chats unter der Lupe (17 Min.)",
+        "text": "Bildet Kleingruppen. Jede Gruppe erhält eine ausgedruckte 'Chat-Karte' mit einem nachgestellten Nachrichtenverlauf, der gerade zu kippen droht (z. B. eine Stichelei in einer Klassengruppe, ein Missverständnis zwischen Freund:innen, ein ungerechter Vorwurf). Aufgabe in drei Schritten: (1) Markiert die Stelle, an der eine impulsive, eskalierende Antwort 'auf der Zunge' liegt. (2) Schreibt zuerst die typische Sofort-Reaktion auf, wie sie viele wütend tippen würden. (3) Wendet dann die Chat-Notbremse an – Bildschirm sperren und kurz weglegen, einmal durchatmen, sich fragen 'Will ich das wirklich – und würde ich das auch ins Gesicht sagen?' – und formuliert eine überlegte Antwort oder entscheidet begründet, gar nicht zu antworten. Geht herum und unterstützt dabei, dass die überlegte Variante nicht einfach unterwürfig nachgibt, sondern klar und respektvoll bleibt."
+      },
+      {
+        "title": "Hauptteil 2 – Vorher-Nachher im Plenum (8 Min.)",
+        "text": "Lasst zwei bis drei Gruppen ihre Chat-Karte vorstellen – jeweils die Sofort-Reaktion und die überlegte Variante. Vergleicht im Plenum: 'Wie hätte sich der Chat mit der ersten Antwort wohl weiterentwickelt? Und mit der zweiten?' Macht sichtbar, dass die überlegte Antwort die Situation fast immer entschärft, ohne dass man sich klein macht – und dass manchmal die beste Reaktion ist, bewusst (noch) nicht zu antworten. Sammelt die wirksamsten Notbremse-Schritte, die die Gruppen genutzt haben, als gemeinsame Liste 'Bevor ich auf Senden tippe'."
+      },
+      {
+        "title": "Abschluss – Meine Chat-Notbremse (8 Min.)",
+        "text": "Jede:r gestaltet still die persönliche Chat-Notbremse-Karte. Darauf hält jede:r drei Schritte fest, die zwischen 'wütend tippen' und 'senden' gehen sollen (z. B. Bildschirm kurz weglegen, einmal tief durchatmen, sich die Kontroll-Frage stellen), sowie einen eigenen Merksatz für genau diesen Moment. Wer mag, liest seinen Merksatz vor. Schließt mit der Kernbotschaft: 'Eine Nachricht im Affekt ist in einer Sekunde verschickt – aber nie wieder zurückzuholen. Die kurze Pause vor dem Senden kostet dich fast nichts und kann dir viel Ärger ersparen.' Regt an, die Karte gedanklich oder als Notiz auf dem Handy griffbereit zu halten."
+      }
+    ],
+    "duration": "ca. 50 Minuten",
+    "materialsNeeded": "Ausgedruckte 'Chat-Karten' mit nachgestellten, eskalationsgefährdeten Nachrichtenverläufen (eine pro Gruppe, neutral und ohne reale Namen); Tafel oder Flipchart für die Faktoren-Sammlung und die Liste 'Bevor ich auf Senden tippe'; festere Kärtchen für die persönliche Chat-Notbremse; Stifte. Es werden ausdrücklich keine echten Handys oder echten Chatverläufe der Jugendlichen verwendet.",
+    "remark": "Differenzierung: Medienerfahrene Jugendliche analysieren zusätzlich, wie Gruppen-Chats Eskalation verstärken und welche Rolle Mitlesende dabei spielen; für andere reicht die Arbeit an einer klaren Zweier-Chat-Situation. Hinweis zur Sicherheit: Verwende ausschließlich erfundene, anonyme Chat-Beispiele – keine realen Screenshots, keine Namen aus der Klasse, kein Vorführen echter privater Konflikte. Das Thema grenzt an Cybermobbing; falls in der Auswertung deutlich wird, dass Jugendliche real von verletzenden Chats betroffen sind, nimm dies ernst, biete ein vertrauliches Gespräch an und verweise auf schulische Ansprechpersonen und Beratungsangebote. Stelle klar, dass 'nicht antworten' eine starke und legitime Wahl ist und nicht als Schwäche gilt.",
+    "etepStufen": [
+      4,
+      5
+    ],
+    "eldibGoals": [
+      "V-18",
+      "V-20",
+      "V-21",
+      "V-26",
+      "V-27",
+      "V-28",
+      "K-26",
+      "K-28",
+      "SOZ-34",
+      "SOZ-37",
+      "KOG-37",
+      "KOG-57"
+    ],
+    "worksheet": {
+      "title": "Meine Chat-Notbremse",
+      "intro": "Im Chat ist eine wütende Nachricht in einer Sekunde verschickt und nie wieder zurückzuholen. Diese Karte hilft dir, vor dem Tippen auf 'Senden' kurz innezuhalten.",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "Was den Chat so schnell eskalieren lässt"
+        },
+        {
+          "kind": "checklist",
+          "items": [
+            "Es geht super schnell – tippen und senden in Sekunden",
+            "Ich sehe das Gesicht des anderen nicht",
+            "Ich bin oft allein und ungebremst",
+            "In Gruppen schaukelt sich die Stimmung hoch"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "Meine drei Schritte zwischen 'wütend tippen' und 'senden'"
+        },
+        {
+          "kind": "instruction",
+          "text": "Schreibe drei Dinge auf, die du tun willst, BEVOR du auf Senden tippst."
+        },
+        {
+          "kind": "lines",
+          "lines": 4
+        },
+        {
+          "kind": "heading",
+          "text": "Meine Kontroll-Frage"
+        },
+        {
+          "kind": "box",
+          "text": "Würde ich das auch von Angesicht zu Angesicht sagen?  –  Mein Merksatz dazu:"
+        },
+        {
+          "kind": "heading",
+          "text": "Senden, anders formulieren oder gar nicht?"
+        },
+        {
+          "kind": "question",
+          "text": "Beschreibe eine Chat-Situation, in der 'nicht antworten' oder 'später antworten' die klügere Wahl gewesen wäre."
+        },
+        {
+          "kind": "lines",
+          "lines": 3
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "wenn-dann-plaene-meine-reaktion-vorher-festlegen",
+    "title": "Wenn-dann-Pläne: Meine Reaktion vorher festlegen",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "ES"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Einstieg und Abschluss im Plenum"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Entwickeln und Erproben von Wenn-dann-Plänen in Kleingruppen"
+      },
+      {
+        "mode": "Individuel",
+        "note": "drei persönliche Wenn-dann-Pläne für eigene Risikosituationen"
+      }
+    ],
+    "themes": [
+      "impulskontrolle",
+      "selbstwahrnehmung",
+      "disziplin"
+    ],
+    "tags": [
+      "Impulskontrolle",
+      "Wenn-dann-Plan",
+      "Vorsatz",
+      "Selbststeuerung",
+      "Strategie",
+      "Gewohnheit",
+      "Vorausplanen"
+    ],
+    "shortDescription": "Im Eifer des Moments fehlt für gute Entscheidungen oft die Zeit – deshalb verlegt diese Aktivität die Entscheidung nach vorn. Jugendliche lernen 'Wenn-dann-Pläne' kennen: kurze, konkrete Vorsätze nach dem Muster 'Wenn Situation X eintritt, dann tue ich Y'. Weil die passende Reaktion im Voraus festgelegt ist, muss sie im hitzigen Augenblick nicht mehr mühsam erfunden werden, sondern steht bereit. Die Jugendlichen entwickeln für ihre eigenen Risikosituationen solche Pläne und erproben sie in Szenen.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Die Entscheidung kommt zu spät (8 Min.)",
+        "text": "Stellt eine Alltagsfrage: 'Stell dir vor, jemand provoziert dich vor der ganzen Klasse. In genau diesem Moment – wie viel Zeit und Ruhe hast du, um in aller Gelassenheit die beste Reaktion zu überlegen?' Lasst die Jugendlichen merken: so gut wie keine. Genau das ist das Problem mit Impulsen – die kluge Entscheidung käme oft zu spät. Stellt die Lösungsidee vor: Was wäre, wenn die Entscheidung schon getroffen wäre, bevor die Situation überhaupt eintritt? Dann muss man im Moment nicht mehr nachdenken, sondern nur noch den fertigen Plan abrufen. Profis machen das ständig – Feuerwehr, Pilot:innen, Sportler:innen trainieren feste Abläufe für brenzlige Momente. Heute baut ihr euch solche Pläne für eure eigenen Auslöser."
+      },
+      {
+        "title": "Hinführung – Das Wenn-dann-Muster (9 Min.)",
+        "text": "Führt die Struktur klar ein: 'WENN (genau diese Situation passiert), DANN (tue ich genau das).' Betont zwei Qualitätsmerkmale eines guten Plans. Erstens muss das 'Wenn' konkret sein – nicht 'wenn ich wütend werde', sondern 'wenn jemand mich vor anderen auslacht'. Zweitens muss das 'Dann' eine Handlung sein, die man wirklich tun kann – nicht 'dann bleibe ich ruhig' (das ist ein Wunsch), sondern 'dann atme ich einmal tief aus und sage nichts, bis ich bis fünf gezählt habe' (das ist eine Handlung). Entwickelt zwei, drei Beispiele gemeinsam an der Tafel und schärft sie nach, bis 'Wenn' und 'Dann' beide konkret und machbar sind. Diese Genauigkeit ist der Trick – genau daran arbeitet ihr gleich in Gruppen."
+      },
+      {
+        "title": "Hauptteil 1 – Pläne schmieden und schärfen (16 Min.)",
+        "text": "Bildet Kleingruppen. Jede Gruppe erhält zwei bis drei typische Risikosituationen für impulsives Verhalten (z. B. 'Du wirst zu Unrecht beschuldigt', 'Jemand nimmt dir ohne Fragen deine Sachen weg', 'In einer Diskussion fallen dir alle ins Wort', 'Du verlierst bei einem Spiel und bist kurz davor, auszurasten'). Aufgabe: Für jede Situation einen Wenn-dann-Plan formulieren, der beide Qualitätsmerkmale erfüllt. Die Gruppe prüft sich gegenseitig mit zwei Kontrollfragen: 'Ist das Wenn konkret genug?' und 'Ist das Dann etwas, das man wirklich tun kann?'. Schärft die Pläne so lange nach, bis beide Fragen mit Ja beantwortet sind. Geht herum und greift typische Schwächen auf – zu vage Auslöser und 'Dann'-Teile, die nur Vorsätze ('ich bleibe cool') statt Handlungen sind."
+      },
+      {
+        "title": "Hauptteil 2 – Den Plan im Ernstfall abrufen (9 Min.)",
+        "text": "Jetzt werden die Pläne erprobt. Jede Gruppe wählt ihren besten Wenn-dann-Plan und spielt die zugehörige Situation kurz durch: Eine Person löst das 'Wenn' aus, eine andere ruft das 'Dann' ab und führt die festgelegte Handlung sichtbar aus. Wiederholt es ein- bis zweimal, sodass der Ablauf flüssiger wird – genau darum geht es: Ein Plan wirkt erst dann zuverlässig, wenn er ein paarmal 'durchgespielt' wurde und im Ernstfall fast von selbst abläuft. Besprecht kurz in der Gruppe: 'Wie hat es sich angefühlt, schon zu wissen, was zu tun ist, statt im Moment improvisieren zu müssen?'"
+      },
+      {
+        "title": "Abschluss – Meine drei persönlichen Pläne (8 Min.)",
+        "text": "Jede:r erstellt still drei eigene Wenn-dann-Pläne für persönliche Risikosituationen auf dem Arbeitsblatt – möglichst nah am eigenen Alltag und nach beiden Qualitätsmerkmalen geprüft. Bittet einige Freiwillige, einen ihrer Pläne vorzulesen; die Klasse gibt kurz Rückmeldung, ob 'Wenn' und 'Dann' konkret genug sind. Schließt mit der Kernbotschaft: 'Im hitzigen Moment ist es zu spät, in Ruhe nachzudenken. Aber du kannst die Entscheidung vorverlegen – und dann im Ernstfall einfach deinen Plan abrufen.' Regt an, die drei Pläne in den kommenden Wochen wirklich auszuprobieren und beim nächsten Mal zu berichten, welcher am besten funktioniert hat."
+      }
+    ],
+    "duration": "ca. 50 Minuten",
+    "materialsNeeded": "Karten mit typischen Risikosituationen für impulsives Verhalten (zwei bis drei pro Gruppe); Tafel oder Flipchart für die gemeinsamen Beispiele und die zwei Qualitätsmerkmale; Arbeitsblatt 'Meine Wenn-dann-Pläne' pro Person; Stifte; etwas Platz für die kurzen Erprobungs-Szenen.",
+    "remark": "Differenzierung: Stärkere Gruppen entwickeln gestufte Pläne (ein Plan für das frühe Signal, ein zweiter, falls die Anspannung trotzdem steigt) und überlegen, wie man einen Plan nach einem misslungenen Versuch verbessert; Jugendliche, denen das Formulieren schwerfällt, arbeiten mit vorgegebenen 'Dann'-Bausteinen, die sie ihren Situationen zuordnen. Hinweis: Achte darauf, dass die 'Dann'-Handlungen ausschließlich deeskalierend sind (innehalten, weggehen, durchatmen, etwas sagen) und niemals selbst neue Aggression enthalten. Die Erprobungs-Szenen bleiben rein verbal und angedeutet, ohne echten Körperkontakt. Wähle keine Risikosituationen, die einen realen Konflikt einzelner Jugendlicher nachstellen, und greife ein, falls eine Szene zu nah an einen echten Vorfall gerät.",
+    "etepStufen": [
+      4,
+      5
+    ],
+    "eldibGoals": [
+      "V-18",
+      "V-20",
+      "V-21",
+      "V-23",
+      "V-25",
+      "V-28",
+      "V-32",
+      "K-26",
+      "SOZ-34",
+      "KOG-37",
+      "KOG-57",
+      "KOG-61"
+    ],
+    "worksheet": {
+      "title": "Meine Wenn-dann-Pläne",
+      "intro": "Im hitzigen Moment fehlt die Zeit zum Nachdenken. Mit einem Wenn-dann-Plan triffst du die Entscheidung vorher – und rufst sie im Ernstfall einfach ab. Ein guter Plan ist konkret und beschreibt eine Handlung, die du wirklich tun kannst.",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "So funktioniert ein guter Plan"
+        },
+        {
+          "kind": "instruction",
+          "text": "Wenn (genau diese Situation passiert), dann (tue ich genau das). Das 'Wenn' muss konkret sein, das 'Dann' eine echte Handlung – kein bloßer Wunsch wie 'ich bleibe ruhig'."
+        },
+        {
+          "kind": "heading",
+          "text": "Meine drei Wenn-dann-Pläne"
+        },
+        {
+          "kind": "instruction",
+          "text": "Schreibe drei Pläne für Situationen, in denen du leicht impulsiv wirst."
+        },
+        {
+          "kind": "box",
+          "text": "1.  Wenn ...                                          , dann ..."
+        },
+        {
+          "kind": "box",
+          "text": "2.  Wenn ...                                          , dann ..."
+        },
+        {
+          "kind": "box",
+          "text": "3.  Wenn ...                                          , dann ..."
+        },
+        {
+          "kind": "heading",
+          "text": "Selbst-Check"
+        },
+        {
+          "kind": "checklist",
+          "items": [
+            "Mein 'Wenn' beschreibt eine ganz konkrete Situation",
+            "Mein 'Dann' ist eine Handlung, die ich wirklich tun kann",
+            "Mein 'Dann' deeskaliert die Lage, statt sie anzuheizen"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "Mein wichtigster Plan"
+        },
+        {
+          "kind": "question",
+          "text": "Welchen deiner drei Pläne willst du als Erstes ausprobieren – und in welcher Situation?"
+        },
+        {
+          "kind": "lines",
+          "lines": 2
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "die-gefuehls-lautstaerke-vom-leisen-kribbeln-zum-lauten-sturm",
+    "title": "Die Gefühls-Lautstärke: Vom leisen Kribbeln zum lauten Sturm",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "C1",
+      "C2"
+    ],
+    "type": [
+      "ganz Stonn"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Einstieg und Abschluss im Sitzkreis"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Hauptteil in festen Vierergruppen an Stationen"
+      },
+      {
+        "mode": "Individuel",
+        "note": "Jedes Kind füllt am Ende den eigenen Gefühls-Regler aus"
+      }
+    ],
+    "themes": [
+      "emotionen",
+      "selbstwahrnehmung",
+      "impulskontrolle"
+    ],
+    "tags": [
+      "Gefuehle",
+      "Intensitaet",
+      "Wut",
+      "Selbstwahrnehmung",
+      "Regler",
+      "Koerpersignale",
+      "Fruehwarnzeichen",
+      "Beruhigung"
+    ],
+    "shortDescription": "Kinder erleben Gefühle oft als plötzlichen Knall: eben war noch alles gut, dann ist die Wut schon explodiert. In dieser ganzen Stunde lernen sie, dass jedes Gefühl eine Lautstärke hat – von einem leisen Kribbeln bis zum lauten Sturm. An Stationen ordnen sie Gefühlssituationen einer Reglerskala von 1 bis 5 zu und entdecken ihre eigenen Frühwarnzeichen im Körper. Ziel ist, ein hochkochendes Gefühl früh zu bemerken, solange es noch 'leise' ist und man es besser steuern kann.",
+    "ablauf": [
+      {
+        "title": "Einstieg: Vom Tropfen zur Welle (10 Min.)",
+        "text": "Versammelt die Klasse im Sitzkreis. Zeigt ein durchsichtiges Glas und gießt langsam Wasser ein, bis es fast überläuft – haltet kurz vorher an. Sagt: 'So ist das auch mit Gefühlen. Sie kommen nicht plötzlich. Sie füllen uns langsam – Tropfen für Tropfen.' Fragt: 'Kennt ihr ein Gefühl, das ganz langsam immer größer wird?' Sammelt einige Beispiele (Wut, Aufregung, Angst, Freude). Führt das Bild des Reglers ein, wie an einer Musikanlage: 1 ist ganz leise (ein kleines Kribbeln), 5 ist ganz laut (ein Sturm, der überläuft). Betont das Ziel der Stunde: Wir wollen üben, unser Gefühl schon bei Stufe 2 oder 3 zu bemerken – nicht erst bei 5, wenn das Glas überläuft."
+      },
+      {
+        "title": "Hauptteil 1: Gefühle auf den Regler legen (18 Min.)",
+        "text": "Bildet feste Vierergruppen. Jede Gruppe erhält einen Stapel Situationskarten (z. B. 'Jemand drängelt sich vor', 'Ich gewinne ein Spiel', 'Mein Turm fällt um', 'Meine Freundin lacht mich aus', 'Wir haben gleich Pause'). Aufgabe: Legt jede Karte auf eine Regler-Leiste mit den Zahlen 1 bis 5 – wie laut wäre euer Gefühl dabei? Wichtig: Es gibt kein richtig und falsch, denn jeder fühlt anders stark. Lasst die Gruppen darüber sprechen, warum dieselbe Situation bei verschiedenen Kindern unterschiedlich laut ist. Geht herum und stellt nach: 'Bei welcher Karte wart ihr euch uneinig? Wie kommt das?' So wird erfahrbar, dass Gefühlsstärke etwas sehr Persönliches ist."
+      },
+      {
+        "title": "Hauptteil 2: Mein Körper-Alarm (14 Min.)",
+        "text": "Holt die Klasse kurz zusammen und erklärt: Bevor ein Gefühl 'laut' wird, sendet der Körper Signale – wie eine Alarmanlage. Macht es gemeinsam erfahrbar: 'Ballt mal ganz fest die Fäuste, presst die Zähne zusammen, zieht die Schultern hoch. So fühlt sich oft Stufe 4 an.' Lasst die Kinder dann wieder lockerlassen. In den Gruppen ergänzen sie auf einem Körperumriss, wo sie Frühwarnzeichen spüren: heißer Kopf, schneller Atem, Kribbeln im Bauch, zittrige Hände. Jede Gruppe stellt ein typisches Frühwarnzeichen vor. Sammelt die Signale an der Tafel zu einer gemeinsamen 'Alarm-Liste' der Klasse."
+      },
+      {
+        "title": "Abschluss: Mein eigener Gefühls-Regler (8 Min.)",
+        "text": "Zurück im Kreis. Jedes Kind erhält das Regler-Arbeitsblatt und trägt für ein selbstgewähltes Gefühl ein, woran es Stufe 2, Stufe 3 und Stufe 4 bei sich erkennt. Lasst einige freiwillig vorstellen, mit dem Satz: 'Mein Frühwarnzeichen ist … – dann weiß ich, mein Regler steht auf …' Schließt mit einer Vereinbarung: 'Wenn ihr diese Woche merkt, dass euer Regler steigt, sagt es leise zu euch selbst: Achtung, Stufe 3.' Würdigt, dass es klug ist, das eigene Gefühl früh zu bemerken – dann ist man der Chef über das Gefühl und nicht umgekehrt."
+      }
+    ],
+    "duration": "ca. 50 Minuten (eine ganze Stunde)",
+    "materialsNeeded": "Durchsichtiges Glas und Wasserkanne; pro Gruppe ein Satz Situationskarten und eine Regler-Leiste (1–5); großer Körperumriss pro Gruppe und Stifte; Regler-Arbeitsblatt pro Kind; Tafel/Flipchart für die gemeinsame Alarm-Liste.",
+    "remark": "Differenzierung: Für C1 die Situationskarten mit Bildsymbolen versehen und die Skala auf drei Stufen (leise – mittel – laut) verkürzen; C2 kann zusätzlich Beruhigungs-Ideen je Stufe sammeln. Sicherheitshinweis: Manche Kinder bringen reale, belastende Wut- oder Angstsituationen ein. Bleibt bei den allgemeinen Beispielkarten und drängt niemanden, Privates zu erzählen. Wird ein Kind beim Nachstellen der Anspannung sehr aufgewühlt, brecht die Übung für dieses Kind ab und kehrt bewusst zur Lockerung zurück.",
+    "etepStufen": [
+      2,
+      3
+    ],
+    "eldibGoals": [
+      "V-20",
+      "V-21",
+      "K-16",
+      "K-21",
+      "K-26",
+      "SOZ-21",
+      "SOZ-24",
+      "KOG-37",
+      "KOG-38"
+    ],
+    "worksheet": {
+      "title": "Mein Gefühls-Regler",
+      "intro": "Jedes Gefühl hat eine Lautstärke. Hier findest du heraus, woran du merkst, dass dein Regler langsam steigt – damit du früh reagieren kannst.",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "1. Mein Gefühl"
+        },
+        {
+          "kind": "instruction",
+          "text": "Such dir ein Gefühl aus, das bei dir manchmal richtig laut wird (z. B. Wut, Aufregung, Angst)."
+        },
+        {
+          "kind": "lines",
+          "text": "Mein Gefühl heißt:",
+          "lines": 1
+        },
+        {
+          "kind": "heading",
+          "text": "2. Mein Regler von 1 bis 5"
+        },
+        {
+          "kind": "instruction",
+          "text": "Schreibe auf, woran du merkst, auf welcher Stufe dein Regler steht."
+        },
+        {
+          "kind": "table",
+          "lines": 3,
+          "items": [
+            "Stufe",
+            "Das spüre ich im Körper",
+            "Das denke / tue ich"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "3. Mein Frühwarnzeichen"
+        },
+        {
+          "kind": "question",
+          "text": "Welches Körpersignal verrät mir am schnellsten: Achtung, mein Regler steigt?",
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "4. Mein Plan"
+        },
+        {
+          "kind": "question",
+          "text": "Was kann ich tun, wenn mein Regler auf Stufe 3 steht, damit er nicht auf 5 springt?",
+          "lines": 2
+        },
+        {
+          "kind": "scale",
+          "text": "Wie gut kann ich mein steigendes Gefühl heute schon bemerken?",
+          "items": [
+            "fast nie",
+            "selten",
+            "manchmal",
+            "oft",
+            "fast immer"
+          ]
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "gefuehls-mischpult-wenn-zwei-gefuehle-gleichzeitig-da-sind",
+    "title": "Gefühls-Mischpult: Wenn zwei Gefühle gleichzeitig da sind",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "C2",
+      "C1"
+    ],
+    "type": [
+      "ganz Stonn"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Einführung und Auswertung im Plenum"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Hauptteil in Dreier- bis Vierergruppen"
+      },
+      {
+        "mode": "Individuel",
+        "note": "Eigene Misch-Situation auf dem Arbeitsblatt"
+      }
+    ],
+    "themes": [
+      "emotionen",
+      "selbstwahrnehmung",
+      "kommunikation"
+    ],
+    "tags": [
+      "Gefuehle",
+      "gemischte Gefuehle",
+      "Ambivalenz",
+      "Mischpult",
+      "benennen",
+      "Verstaendnis",
+      "Gefuehlswortschatz",
+      "Reden"
+    ],
+    "shortDescription": "Oft tun Kinder so, als gäbe es immer nur ein Gefühl auf einmal – entweder froh oder traurig. Doch im echten Leben mischen sich Gefühle ständig: Stolz und Aufregung vor einem Auftritt, Freude und ein bisschen Angst am ersten Schultag. In dieser ganzen Stunde entdecken die Kinder am Bild eines 'Gefühls-Mischpults', dass mehrere Gefühle gleichzeitig laut sein dürfen. Sie lernen, gemischte Gefühle zu erkennen, zu benennen und in Worte zu fassen – eine wichtige Grundlage, um sich selbst und anderen erklären zu können, wie es einem wirklich geht.",
+    "ablauf": [
+      {
+        "title": "Einstieg: Froh und mulmig zugleich (9 Min.)",
+        "text": "Versammelt die Klasse und erzählt eine kurze Geschichte: 'Lena darf zum ersten Mal allein bei einer Freundin übernachten. Sie freut sich riesig – und gleichzeitig hat sie ein ganz mulmiges Gefühl im Bauch.' Fragt: 'Wie fühlt sich Lena? Froh oder ängstlich?' Lasst die Kinder merken, dass beide Antworten stimmen. Führt das Bild des Mischpults ein: Wie bei einer Musikanlage gibt es viele Regler, und mehrere können gleichzeitig hochgeschoben sein. Manchmal spielen also zwei oder drei Gefühle zusammen. Sammelt erste Beispiele von 'Gefühls-Mischungen', die die Kinder kennen (z. B. froh und müde, stolz und schüchtern)."
+      },
+      {
+        "title": "Hauptteil 1: Das Mischpult lesen lernen (16 Min.)",
+        "text": "Bildet Kleingruppen. Jede Gruppe bekommt mehrere Bildkarten mit Situationen (z. B. 'Geschenk auspacken, das man sich nicht gewünscht hat', 'Abschied von der Oma nach einem schönen Tag', 'beim Wettrennen Zweite werden'). Auf einem 'Mischpult'-Blatt mit mehreren Gefühlsreglern (froh, traurig, wütend, ängstlich, stolz, aufgeregt) schieben die Kinder mit Klebepunkten oder Stift hoch, welche Gefühle in der Situation wie stark mitspielen. Geht herum und fragt nach: 'Welche zwei Gefühle sind hier am lautesten? Wie passt das zusammen?' So wird greifbar, dass scheinbar gegensätzliche Gefühle gut nebeneinander bestehen können."
+      },
+      {
+        "title": "Hauptteil 2: Gefühls-Mischungen vorspielen (15 Min.)",
+        "text": "Jede Gruppe wählt eine ihrer Situationen aus und überlegt sich ein kurzes Standbild (eingefrorene Szene) dazu. Wichtig: Mindestens zwei verschiedene Gefühle sollen im Standbild sichtbar werden – zum Beispiel durch Gesicht und Körperhaltung. Die anderen Gruppen schauen zu und raten: 'Welche zwei Gefühle mischen sich hier?' Anschließend verrät die spielende Gruppe ihre Mischung und erklärt sie mit dem Satz: 'In dieser Situation sind wir … und … gleichzeitig, weil …' Achtet darauf, dass alle zu Wort kommen und das Raten wohlwollend bleibt, ohne Auslachen."
+      },
+      {
+        "title": "Abschluss: Meine eigene Mischung (10 Min.)",
+        "text": "Zurück im Plenum. Jedes Kind füllt auf dem Arbeitsblatt sein eigenes Mischpult zu einer selbst erlebten Situation aus und vervollständigt den Satz: 'Ich war … und … gleichzeitig.' Lasst einige freiwillig vorlesen. Haltet als gemeinsame Erkenntnis fest: 'Es ist ganz normal, mehrere Gefühle auf einmal zu haben. Das macht uns nicht durcheinander – das macht uns echt.' Gebt zum Schluss einen Auftrag für die Woche mit: 'Achtet einmal darauf, wann ihr zwei Gefühle gleichzeitig spürt, und versucht, beide zu benennen.'"
+      }
+    ],
+    "duration": "ca. 50 Minuten (eine ganze Stunde)",
+    "materialsNeeded": "Situations-Bildkarten pro Gruppe; 'Mischpult'-Blätter mit mehreren Gefühlsreglern und Klebepunkte (oder Stifte); Platz für Standbilder; Arbeitsblatt 'Meine Mischung' pro Kind; optional eine Gefühls-Wörterliste als Hilfe.",
+    "remark": "Differenzierung: Für C1 die Reglerauswahl auf vier Grundgefühle begrenzen und mit eindeutigen Smiley-Symbolen arbeiten; C2 kann feinere Gefühlswörter (z. B. erleichtert, enttäuscht, neugierig) einsetzen und kurze Begründungen formulieren. Hinweis: Beim Vorstellen eigener Mischungen können sensible Themen auftauchen (Abschied, Verlust, Streit). Stellt frei, ob ein Kind eine erfundene oder eine echte Situation nimmt, und reagiert behutsam, wenn ein Kind sichtlich betroffen ist. Das Raten der Gefühle dient dem Verstehen, nie der Bewertung.",
+    "etepStufen": [
+      3,
+      4
+    ],
+    "eldibGoals": [
+      "K-16",
+      "K-17",
+      "K-21",
+      "K-26",
+      "K-10",
+      "SOZ-21",
+      "SOZ-37",
+      "KOG-37",
+      "KOG-38",
+      "KOG-44"
+    ],
+    "worksheet": {
+      "title": "Mein Gefühls-Mischpult",
+      "intro": "Manchmal sind mehrere Gefühle gleichzeitig da. Das ist völlig normal. Hier übst du, deine eigene Gefühls-Mischung zu erkennen und zu benennen.",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "1. Meine Situation"
+        },
+        {
+          "kind": "instruction",
+          "text": "Denk an einen Moment, in dem du mehrere Gefühle gleichzeitig hattest."
+        },
+        {
+          "kind": "lines",
+          "text": "Das ist passiert:",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "2. Mein Mischpult"
+        },
+        {
+          "kind": "instruction",
+          "text": "Male die Regler so hoch, wie stark jedes Gefühl in dieser Situation war (1 = leise, 5 = laut)."
+        },
+        {
+          "kind": "table",
+          "lines": 5,
+          "items": [
+            "Gefühl",
+            "Wie laut? (1–5)"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "3. Meine Mischung in Worten"
+        },
+        {
+          "kind": "question",
+          "text": "Vervollständige: Ich war … und … gleichzeitig, weil …",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "4. Mein Aha"
+        },
+        {
+          "kind": "question",
+          "text": "Was hast du heute über gemischte Gefühle herausgefunden?",
+          "lines": 2
+        },
+        {
+          "kind": "scale",
+          "text": "Wie gut kann ich mehrere Gefühle gleichzeitig benennen?",
+          "items": [
+            "noch schwer",
+            "ein wenig",
+            "geht so",
+            "ganz gut",
+            "richtig gut"
+          ]
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "wo-wohnt-das-gefuehl-eine-reise-durch-den-gefuehls-koerper",
+    "title": "Wo wohnt das Gefühl? Eine Reise durch den Gefühls-Körper",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "C1",
+      "C2"
+    ],
+    "type": [
+      "ganz Stonn"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Bewegungseinstieg und Abschluss gemeinsam"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Hauptteil in Kleingruppen am großen Körperbild"
+      },
+      {
+        "mode": "Individuel",
+        "note": "Eigene Gefühls-Landkarte ausfüllen"
+      }
+    ],
+    "themes": [
+      "emotionen",
+      "selbstwahrnehmung",
+      "achtsamkeit"
+    ],
+    "tags": [
+      "Gefuehle",
+      "Koerper",
+      "Koerpersignale",
+      "Achtsamkeit",
+      "Landkarte",
+      "Wahrnehmung",
+      "Bauch",
+      "spueren"
+    ],
+    "shortDescription": "Gefühle sind nicht nur im Kopf – sie wohnen im ganzen Körper. Aufregung kribbelt im Bauch, Wut macht heiße Wangen, Traurigkeit drückt im Hals. In dieser ganzen Stunde gehen die Kinder auf Forschungsreise durch ihren 'Gefühls-Körper' und entdecken, an welchen Stellen sie verschiedene Gefühle spüren. Sie gestalten eine gemeinsame und eine persönliche Gefühls-Landkarte. So lernen sie, körperliche Signale als Hinweise auf ihre Gefühle zu lesen – eine wichtige Grundfähigkeit, um sich selbst rechtzeitig zu verstehen und mitzuteilen.",
+    "ablauf": [
+      {
+        "title": "Einstieg: Gefühle bewegen den Körper (9 Min.)",
+        "text": "Bittet die Kinder, sich frei im Raum zu verteilen. Ruft nacheinander Gefühle auf und lasst sie jedes Gefühl mit dem ganzen Körper zeigen, ohne Worte: 'Zeigt mir mit eurem Körper riesige Freude … jetzt großen Ärger … jetzt tiefe Traurigkeit … jetzt Angst.' Friert die Bewegung jeweils kurz ein und fragt: 'Wo im Körper habt ihr das gerade am stärksten gespürt?' Sammelt einige Antworten. Leitet über: 'Jedes Gefühl hat einen Lieblingsplatz in unserem Körper. Heute werden wir Gefühls-Forscher und finden heraus, wo welche Gefühle bei uns wohnen.' So wird der Körper von Anfang an als 'Sprechorgan' der Gefühle erfahrbar."
+      },
+      {
+        "title": "Hauptteil 1: Die große Körper-Landkarte (16 Min.)",
+        "text": "Legt pro Gruppe einen großen Körperumriss auf den Boden oder Tisch (z. B. auf Packpapier vorgezeichnet). Stellt eine Gefühls-Farbpalette bereit: jedem Gefühl eine Farbe (Wut = rot, Freude = gelb, Angst = blau, Traurigkeit = grau, Aufregung = orange). Die Kinder besprechen in der Gruppe: 'Wo spüren wir dieses Gefühl?' und malen die passende Farbe an die Körperstelle – heiße rote Wangen bei Wut, gelbes Kribbeln im Bauch bei Freude, ein blauer Kloß im Hals bei Angst. Geht herum und regt mit Fragen an: 'Wird euer Atem schneller? Wo wird euer Körper eng, wo weit?' Jede Gruppe darf am Ende ihre auffälligste Entdeckung vorstellen."
+      },
+      {
+        "title": "Hauptteil 2: Der Gefühls-Detektiv hört in sich hinein (14 Min.)",
+        "text": "Lasst die Kinder zur Ruhe kommen und bequem sitzen. Führt eine kurze, ruhige Hinhör-Übung an: 'Schließt die Augen, wenn ihr mögt. Ich erzähle euch gleich kleine Momente, und ihr spürt nach, wo sich in eurem Körper etwas regt.' Nennt langsam zwei bis drei Situationen (z. B. 'Stell dir vor, du bekommst gleich eine tolle Überraschung' oder 'Stell dir vor, jemand nimmt dir ungefragt dein Lieblingsding weg'). Nach jeder Situation kurze Stille, dann: 'Wo hast du etwas gespürt? Im Bauch, im Hals, in den Händen?' Die Kinder behalten die Antwort zunächst für sich. So üben sie achtsames Hineinspüren ohne Leistungsdruck."
+      },
+      {
+        "title": "Abschluss: Meine eigene Gefühls-Landkarte (11 Min.)",
+        "text": "Jedes Kind erhält einen kleinen Körperumriss und überträgt seine persönlichen Entdeckungen: Wo wohnen bei mir Freude, Wut, Angst, Aufregung? Lasst einige freiwillig zeigen und benennen: 'Bei mir wohnt die Aufregung im Bauch, das fühlt sich an wie …' Versammelt die Klasse zum Schluss und haltet fest: 'Wenn ihr ein Signal in eurem Körper bemerkt, ist das wie eine Nachricht: Achtung, hier ist ein Gefühl. Dann könnt ihr überlegen, welches es ist.' Gebt mit: 'Achtet diese Woche einmal darauf, wo in eurem Körper sich ein Gefühl meldet.'"
+      }
+    ],
+    "duration": "ca. 50 Minuten (eine ganze Stunde)",
+    "materialsNeeded": "Pro Gruppe ein großer vorgezeichneter Körperumriss (Packpapier); Wachsmalstifte oder Buntstifte in den 'Gefühlsfarben'; eine sichtbare Farb-Gefühl-Legende; kleiner Körperumriss als Arbeitsblatt pro Kind; ein ruhiger Platz für die Hinhör-Übung.",
+    "remark": "Differenzierung: Für C1 mit wenigen, klar benannten Grundgefühlen und fertiger Farb-Legende arbeiten; C2 kann zusätzlich beschreiben, wie sich das Körpersignal anfühlt (eng, warm, flatternd) und feinere Gefühle ergänzen. Achtsamkeitshinweis: Die Hinhör-Übung mit geschlossenen Augen ist freiwillig – manche Kinder fühlen sich dabei unwohl; sie dürfen die Augen offen lassen. Wählt nur leichte, alltagsnahe Situationen und keine, die an reale belastende Erlebnisse rühren. Reagiert ruhig und zugewandt, falls ein Kind beim Hineinspüren stärker berührt wird.",
+    "etepStufen": [
+      2,
+      3
+    ],
+    "eldibGoals": [
+      "V-1",
+      "V-3",
+      "K-16",
+      "K-26",
+      "SOZ-21",
+      "SOZ-24",
+      "KOG-2",
+      "KOG-16",
+      "KOG-37"
+    ],
+    "worksheet": {
+      "title": "Meine Gefühls-Landkarte",
+      "intro": "Gefühle wohnen im ganzen Körper. Hier zeichnest du deine eigene Landkarte: Wo spürst du welches Gefühl?",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "1. Meine Körper-Landkarte"
+        },
+        {
+          "kind": "instruction",
+          "text": "Male in den Körperumriss mit den Gefühlsfarben ein: Wo wohnt bei dir Freude, Wut, Angst, Aufregung?"
+        },
+        {
+          "kind": "box",
+          "text": "Hier ist Platz für deinen Körperumriss mit den Gefühlsfarben."
+        },
+        {
+          "kind": "heading",
+          "text": "2. Meine Gefühls-Plätze"
+        },
+        {
+          "kind": "instruction",
+          "text": "Schreibe auf, wo welches Gefühl bei dir wohnt und wie es sich anfühlt."
+        },
+        {
+          "kind": "table",
+          "lines": 4,
+          "items": [
+            "Gefühl",
+            "Wo im Körper?",
+            "Wie fühlt es sich an?"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "3. Mein stärkstes Signal"
+        },
+        {
+          "kind": "question",
+          "text": "Welches Körpersignal merke ich am schnellsten – und welches Gefühl zeigt es mir an?",
+          "lines": 2
+        },
+        {
+          "kind": "scale",
+          "text": "Wie gut kann ich Gefühle in meinem Körper spüren?",
+          "items": [
+            "fast nie",
+            "selten",
+            "manchmal",
+            "oft",
+            "sehr gut"
+          ]
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "das-gefuehls-wetteramt-wir-lesen-und-melden-was-andere-fuehlen",
+    "title": "Das Gefühls-Wetteramt: Wir lesen und melden, was andere fühlen",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "C2",
+      "C1"
+    ],
+    "type": [
+      "ganz Stonn"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Einstieg und Auswertung im Plenum"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Hauptteil als 'Wetteramt'-Teams"
+      },
+      {
+        "mode": "Individuel",
+        "note": "Eigene Wettermeldung als Reflexion"
+      }
+    ],
+    "themes": [
+      "emotionen",
+      "fremdwahrnehmung",
+      "kommunikation"
+    ],
+    "tags": [
+      "Gefuehle",
+      "Mimik",
+      "Koerpersprache",
+      "Empathie",
+      "Fremdwahrnehmung",
+      "lesen",
+      "Wetterbericht",
+      "nachfragen"
+    ],
+    "shortDescription": "Wie das Wetter draußen kann man auch das 'Gefühlswetter' eines Menschen ablesen – an Gesicht, Haltung und Stimme. In dieser ganzen Stunde werden die Kinder zu Mitarbeitenden eines 'Gefühls-Wetteramts': Sie üben, an Bildern und kleinen Szenen zu erkennen, wie sich ein anderer fühlt, und geben eine vorsichtige 'Wettermeldung' ab. Sie lernen dabei, dass man Gefühle anderer zwar erahnen, aber nicht sicher wissen kann – und dass eine freundliche Nachfrage hilft, um sicherzugehen. So stärkt die Stunde Empathie und einfühlsames Kommunizieren.",
+    "ablauf": [
+      {
+        "title": "Einstieg: Welches Wetter zeigt dieses Gesicht? (9 Min.)",
+        "text": "Versammelt die Klasse. Zeigt nacheinander einige große Fotos oder Zeichnungen von Gesichtern mit deutlichen Gefühlsausdrücken. Fragt zu jedem: 'Welches Gefühlswetter herrscht hier wohl? Sonnig, stürmisch, regnerisch, neblig?' Sammelt die Deutungen und übersetzt sie in Gefühle (sonnig = froh, stürmisch = wütend, regnerisch = traurig, neblig = unsicher). Macht den Kern der Stunde klar: 'Wir können das Gefühlswetter anderer lesen – an Augen, Mund, Schultern, Stimme. Aber wir können uns auch täuschen. Deshalb arbeiten echte Wetterleute vorsichtig.' Führt das Wetteramt als Rahmen ein: Heute werden alle zu Gefühls-Wetterfröschen."
+      },
+      {
+        "title": "Hauptteil 1: Die Wetter-Anzeichen sammeln (15 Min.)",
+        "text": "Bildet 'Wetteramt'-Teams. Jedes Team erhält Foto- oder Szenenkarten von Personen in verschiedenen Gefühlslagen. Aufgabe: Werdet zu Detektiven und findet die 'Anzeichen' – woran genau erkennt ihr das Gefühl? Sie notieren oder benennen konkrete Hinweise: hochgezogene Augenbrauen, herabgezogene Mundwinkel, hängende Schultern, geballte Fäuste, abgewandter Blick. Geht herum und schärft den Blick mit Fragen: 'Was machen die Augen? Was macht der Mund? Wie steht der Körper?' Jedes Team sammelt seine besten Anzeichen für zwei Gefühle und stellt sie kurz vor. So wird Gefühlslesen vom bloßen Raten zur begründeten Beobachtung."
+      },
+      {
+        "title": "Hauptteil 2: Die Wettermeldung mit Nachfrage (15 Min.)",
+        "text": "Erklärt: Eine gute Wettermeldung ist vorsichtig – sie sagt nicht 'So IST es', sondern 'So sieht es aus, ich frage lieber nach'. Übt den Wetter-Satz: 'Du siehst aus, als wärst du … Stimmt das?' In Dreiergruppen spielen die Kinder kleine Szenen: Eine Person stellt mit Gesicht und Haltung ein Gefühl dar, eine zweite gibt eine Wettermeldung mit Nachfrage ab, die erste antwortet, ob die Deutung stimmt. Danach Rollenwechsel. Betont, warum das Nachfragen wichtig ist: Manchmal sieht jemand wütend aus, ist aber nur müde. Geht herum und lobt vorsichtige, freundliche Wettermeldungen besonders."
+      },
+      {
+        "title": "Abschluss: Meine Wettermeldung des Tages (11 Min.)",
+        "text": "Zurück im Plenum. Jedes Kind füllt auf dem Arbeitsblatt eine eigene 'Wettermeldung' aus: Wie ist mein Gefühlswetter gerade – und woran würde ein anderer das erkennen? Lasst einige ihre Meldung vorstellen. Haltet die zwei wichtigsten Erkenntnisse fest: 'Erstens, man kann Gefühle anderer an vielen Zeichen ablesen. Zweitens, sicher weiß man es erst, wenn man freundlich nachfragt.' Gebt einen Wochenauftrag mit: 'Achtet einmal auf das Gefühlswetter eines anderen Menschen und fragt freundlich nach, ob ihr richtig gelesen habt.'"
+      }
+    ],
+    "duration": "ca. 50 Minuten (eine ganze Stunde)",
+    "materialsNeeded": "Große Gesichter-Fotos oder -Zeichnungen für den Einstieg; Foto- und Szenenkarten von Personen in verschiedenen Gefühlslagen pro Team; Notizblätter und Stifte; ein sichtbar aufgehängter 'Wetter-Satz' als Sprechhilfe; Arbeitsblatt 'Meine Wettermeldung' pro Kind.",
+    "remark": "Differenzierung: Für C1 mit klaren, eindeutigen Gefühlsausdrücken und der Vier-Wetter-Skala (sonnig/stürmisch/regnerisch/neblig) arbeiten; C2 kann mehrdeutige Gesichter deuten und begründen, warum Nachfragen nötig ist. Hinweis: Beim Rollenspiel keine Mitschüler:innen als 'Studienobjekt' echter, gerade sichtbarer Gefühle benutzen – gedeutet werden nur Bilder oder bewusst gespielte Szenen. Macht deutlich, dass niemand das Recht hat, anderen ihr Gefühl 'vorzuschreiben'; die Nachfrage und das ehrliche Antworten der dargestellten Person haben immer Vorrang.",
+    "etepStufen": [
+      3,
+      4
+    ],
+    "eldibGoals": [
+      "K-17",
+      "K-21",
+      "K-14",
+      "SOZ-15",
+      "SOZ-17",
+      "SOZ-37",
+      "SOZ-33",
+      "KOG-37",
+      "KOG-38",
+      "KOG-44"
+    ],
+    "worksheet": {
+      "title": "Meine Wettermeldung",
+      "intro": "Wie das Wetter kann man auch Gefühle ablesen – aber sicher weiß man es erst nach einer freundlichen Nachfrage. Hier übst du beides.",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "1. Mein Gefühlswetter heute"
+        },
+        {
+          "kind": "instruction",
+          "text": "Wähle dein Wetter und kreuze an."
+        },
+        {
+          "kind": "checklist",
+          "items": [
+            "sonnig (froh)",
+            "stürmisch (wütend)",
+            "regnerisch (traurig)",
+            "neblig (unsicher)",
+            "wechselhaft (gemischt)"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "2. Die Anzeichen"
+        },
+        {
+          "kind": "question",
+          "text": "Woran könnte ein anderer mein Gefühlswetter erkennen (Gesicht, Haltung, Stimme)?",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "3. Die freundliche Nachfrage"
+        },
+        {
+          "kind": "instruction",
+          "text": "Schreibe eine vorsichtige Wettermeldung mit Nachfrage auf."
+        },
+        {
+          "kind": "lines",
+          "text": "Du siehst aus, als wärst du … Stimmt das?",
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "4. Mein Aha"
+        },
+        {
+          "kind": "question",
+          "text": "Warum ist es wichtig, beim Gefühlswetter anderer nachzufragen?",
+          "lines": 2
+        },
+        {
+          "kind": "scale",
+          "text": "Wie gut kann ich erkennen, wie sich andere fühlen?",
+          "items": [
+            "noch schwer",
+            "ein wenig",
+            "geht so",
+            "ganz gut",
+            "richtig gut"
+          ]
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "mein-ich-koffer-was-ich-auf-die-reise-durchs-leben-mitnehme",
+    "title": "Mein Ich-Koffer: Was ich auf die Reise durchs Leben mitnehme",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "C2",
+      "C3"
+    ],
+    "type": [
+      "Projet"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Auftakt und Koffer-Galerie gemeinsam im Sitzkreis"
+      },
+      {
+        "mode": "Individuel",
+        "note": "Jedes Kind gestaltet über mehrere Einheiten den eigenen Ich-Koffer"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Vorstellrunden in festen Vertrauens-Vierergruppen"
+      }
+    ],
+    "themes": [
+      "identitaet",
+      "selbstwahrnehmung",
+      "selbstwertgefuehl"
+    ],
+    "tags": [
+      "ichkoffer",
+      "identitaet",
+      "stärken",
+      "lieblingsdinge",
+      "reise",
+      "vorstellen",
+      "wertschätzung"
+    ],
+    "shortDescription": "In diesem Projekt packt jedes Kind über mehrere Einheiten einen gebastelten Koffer mit dem, was zu ihm gehört: Lieblingsdinge, Menschen, Können und Mut-Mach-Sätze. Der Koffer macht abstrakte Fragen nach dem Ich für 6- bis 9-Jährige greifbar und sichtbar. Am Ende stellt jedes Kind seinen Koffer in einer wertschätzenden Galerie vor.",
+    "ablauf": [
+      {
+        "title": "Einstieg (Einheit 1): Was kommt in MEINEN Koffer?",
+        "text": "Bringen Sie einen kleinen, gepackten Reisekoffer mit und zeigen Sie den Kindern, was darin liegt (z. B. ein Foto, ein Lieblingsbuch, ein Glücksstein). Erzählen Sie kurz, warum jedes Ding zu Ihnen gehört. Dann die Leitfrage: 'Wenn ihr einen Koffer packen dürftet, der zeigt, wer ihr seid – was käme hinein?' Sammeln Sie erste Ideen mündlich im Kreis. Jedes Kind bekommt eine Koffer-Vorlage aus festem Papier (Vorder- und Rückseite, an einer Kante geklebt, zum Aufklappen)."
+      },
+      {
+        "title": "Hauptteil 1 (Einheit 1–2): Lieblings-Sachen einpacken",
+        "text": "Jedes Kind füllt die linke Kofferhälfte mit 'Sachen, die ich mag': Lieblingsfarbe als Fleck, Lieblingstier, Lieblingsessen, Lieblingsspiel – gemalt, geklebt oder mit Stickern. Geben Sie genug Zeit und gehen Sie herum, fragen Sie nach ('Erzähl mir von deinem Bild'). Wichtig: Es gibt kein richtig oder falsch, jedes Kind packt anders – genau das ist gut."
+      },
+      {
+        "title": "Hauptteil 2 (Einheit 2–3): Menschen und mein Können einpacken",
+        "text": "Nun füllt die rechte Kofferhälfte zwei Fächer: Im Fach 'Menschen, die zu mir gehören' malen die Kinder wichtige Personen (Familie, Freund:in, Haustier zählt auch). Im Fach 'Das kann ich schon' kommt eine Sache hinein, auf die das Kind stolz ist (Schwimmen, Trösten, schnell Laufen, gut Zuhören). Helfen Sie Kindern, die 'nichts finden', mit konkreten Beobachtungen: 'Ich habe gesehen, wie gut du heute geteilt hast.'"
+      },
+      {
+        "title": "Hauptteil 3 (Einheit 3): Der Mut-Mach-Zettel",
+        "text": "Jedes Kind steckt zuletzt einen kleinen 'Mut-Mach-Zettel' in den Koffer: einen Satz, der gut tut, wenn es einem mal nicht so gut geht (z. B. 'Ich schaffe das', 'Ich bin nicht allein'). Sammeln Sie zuerst Beispiele an der Tafel, dann wählt oder erfindet jedes Kind seinen Satz und schreibt oder malt ihn auf den Zettel."
+      },
+      {
+        "title": "Abschluss (Einheit 3): Die Koffer-Galerie",
+        "text": "Alle Koffer werden offen im Kreis ausgelegt oder an die Wand gehängt. Reihum darf jedes Kind, das möchte, EINE Sache aus seinem Koffer zeigen und einen Satz dazu sagen ('Das ist ... und das gehört zu mir, weil ...'). Die anderen hören zu und dürfen mit einem leisen Daumen-hoch wertschätzen. Schluss-Gedanke: Jeder Koffer ist anders – und genau das macht unsere Klasse bunt. Die Koffer dürfen mit nach Hause."
+      }
+    ],
+    "duration": "3 Einheiten à ca. 45 Min. (Projektwoche oder über drei Wochen verteilt)",
+    "materialsNeeded": "Koffer-Vorlagen aus festem Papier/Tonkarton (zum Aufklappen), Buntstifte/Wachsmalstifte, Klebstoff, Scheren, alte Zeitschriften und Sticker zum Ausschneiden, kleine Mut-Mach-Zettel, ein echter kleiner Koffer als Anschauungsbeispiel.",
+    "remark": "Differenzierung: Kinder, die wenig schreiben, malen oder kleben statt zu schreiben. Sensibel sein bei Familien-Fächern (Trennung, Verlust, Pflegefamilie) – formulieren Sie offen 'Menschen, die zu mir gehören' statt 'deine Familie' und zwingen Sie niemanden, etwas zu zeigen. Vorstellen ist immer freiwillig.",
+    "etepStufen": [
+      2,
+      3
+    ],
+    "eldibGoals": [
+      "K-18",
+      "K-19",
+      "K-22",
+      "K-23",
+      "SOZ-9",
+      "SOZ-24",
+      "SOZ-25",
+      "SOZ-31",
+      "V-14",
+      "V-30"
+    ],
+    "worksheet": {
+      "title": "Mein Ich-Koffer – Pack-Liste",
+      "intro": "Überlege zuerst, dann packe deinen Koffer. Du darfst malen statt schreiben.",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "In meinen Koffer kommt ..."
+        },
+        {
+          "kind": "instruction",
+          "text": "Male oder klebe in jedes Fach. Es gibt kein falsch."
+        },
+        {
+          "kind": "box",
+          "text": "Mein Lieblings-Ding",
+          "lines": 4
+        },
+        {
+          "kind": "box",
+          "text": "Menschen, die zu mir gehören",
+          "lines": 4
+        },
+        {
+          "kind": "box",
+          "text": "Das kann ich schon",
+          "lines": 4
+        },
+        {
+          "kind": "question",
+          "text": "Mein Mut-Mach-Satz für schlechte Tage:",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "Diese eine Sache zeige ich in der Galerie:",
+          "lines": 2
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "namens-werkstatt-die-geschichte-hinter-meinem-namen",
+    "title": "Namens-Werkstatt: Die Geschichte hinter meinem Namen",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "C2",
+      "C3"
+    ],
+    "type": [
+      "Projet"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Einstieg, Namens-Teppich und Abschluss gemeinsam"
+      },
+      {
+        "mode": "Individuel",
+        "note": "Namens-Forschung (teils mit Familie als Hausaufgabe) und Namens-Schild"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Austausch in Kleingruppen über Gemeinsamkeiten und Besonderheiten"
+      }
+    ],
+    "themes": [
+      "identitaet",
+      "beziehungsaufbau",
+      "fremdwahrnehmung"
+    ],
+    "tags": [
+      "name",
+      "identitaet",
+      "herkunft",
+      "zugehörigkeit",
+      "vielfalt",
+      "forschen",
+      "namensschild"
+    ],
+    "shortDescription": "Der eigene Name ist für Kinder ein erster, sehr persönlicher Anker der Identität. In diesem Projekt erforschen die Kinder Bedeutung, Herkunft und Geschichte ihres Namens, gestalten ein Namens-Schild und entdecken im Klassenverband, wie viele Namens-Geschichten zusammenkommen. Das stärkt Selbstwert und gegenseitige Wertschätzung in einer oft mehrsprachigen Klasse.",
+    "ablauf": [
+      {
+        "title": "Einstieg (Einheit 1): Jeder Name erzählt etwas",
+        "text": "Beginnen Sie mit Ihrem eigenen Namen: Erzählen Sie, wer ihn ausgesucht hat, was er bedeutet oder eine kleine Geschichte dazu. Dann fragen Sie: 'Wisst ihr, wer EUREN Namen ausgesucht hat? Und warum?' Sammeln Sie staunend erste Antworten. Spielen Sie das Kennlern-Spiel 'Namen-Klatschen': Im Kreis sagt jedes Kind seinen Namen mit einer Bewegung, alle wiederholen Namen und Bewegung. Geben Sie den Forscher-Auftrag für zu Hause mit: 'Frag jemanden in deiner Familie nach deinem Namen.'"
+      },
+      {
+        "title": "Hauptteil 1 (Einheit 2): Namens-Forschung auswerten",
+        "text": "Die Kinder bringen ihre Antworten mit (wer hat den Namen gewählt, woher kommt er, gibt es eine Geschichte, einen Spitznamen). Auf einem Forscher-Blatt halten sie Stichworte oder kleine Bilder fest. Unterstützen Sie Kinder, die nichts herausgefunden haben: Auch 'Meine Eltern fanden ihn einfach schön' ist eine gute Antwort. Gemeinsam an der Tafel: Welche Namen kommen aus anderen Sprachen oder Ländern? Das wird neugierig und nicht wertend besprochen."
+      },
+      {
+        "title": "Hauptteil 2 (Einheit 2–3): Mein Namens-Schild gestalten",
+        "text": "Jedes Kind gestaltet ein großes Namens-Schild: die Buchstaben des eigenen Namens schön und individuell verziert (Muster, Lieblingsfarben, kleine Bilder zu jedem Buchstaben). Wer mag, schreibt darunter, was der Name bedeutet oder eine winzige Namens-Geschichte. Legen Sie Wert auf Sorgfalt – dieses Schild gehört nur diesem einen Kind."
+      },
+      {
+        "title": "Hauptteil 3 (Einheit 3): Der Namens-Teppich der Klasse",
+        "text": "Alle Namens-Schilder werden zu einem großen 'Namens-Teppich' an der Wand oder am Boden zusammengelegt. In Kleingruppen suchen die Kinder Gemeinsamkeiten ('Wer hat denselben Anfangsbuchstaben?', 'Welche Namen sind besonders lang/kurz?') und Besonderheiten. Jede Gruppe nennt am Ende eine Entdeckung."
+      },
+      {
+        "title": "Abschluss (Einheit 3): Namen sind kostbar",
+        "text": "Sitzkreis: Jedes Kind, das möchte, sagt einen Satz: 'Mein Name bedeutet ... / wurde ausgesucht von ... / ich mag an meinem Namen ...'. Sprechen Sie zum Schluss darüber, dass es wehtut, wenn jemand den Namen verdreht oder auslacht – und dass wir die Namen der anderen richtig und freundlich aussprechen. Vereinbaren Sie das als Klassen-Versprechen."
+      }
+    ],
+    "duration": "3 Einheiten à ca. 45 Min., mit einem kurzen Forscher-Auftrag für zu Hause zwischen Einheit 1 und 2",
+    "materialsNeeded": "Forscher-Blätter, große Bögen Papier/Tonkarton für die Namens-Schilder, Stifte, Glitzer/Sticker zur Verzierung, Klebeband oder Schnur für den Namens-Teppich, ggf. ein Vornamen-Bedeutungslexikon oder vorbereitete Bedeutungen.",
+    "remark": "Sehr sensibel bei Kindern, die ihre Namens-Herkunft nicht kennen (Adoption, Pflege, Flucht) oder deren Familie nicht erreichbar ist: Bieten Sie an, gemeinsam in der Schule zu forschen oder den Namen einfach schön zu finden, ohne Herkunft. Niemand muss die Familie befragen. Mehrsprachigkeit ausdrücklich als Reichtum würdigen, nie bloßstellen.",
+    "etepStufen": [
+      2,
+      3
+    ],
+    "eldibGoals": [
+      "K-15",
+      "K-18",
+      "K-19",
+      "SOZ-3",
+      "SOZ-9",
+      "SOZ-15",
+      "SOZ-31",
+      "SOZ-32",
+      "V-14",
+      "V-19"
+    ],
+    "worksheet": {
+      "title": "Namens-Forscher:in – Mein Forscher-Blatt",
+      "intro": "Frag jemanden in deiner Familie und schreib oder male, was du herausfindest.",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "Meine Namens-Forschung"
+        },
+        {
+          "kind": "question",
+          "text": "Mein Vorname ist:",
+          "lines": 1
+        },
+        {
+          "kind": "question",
+          "text": "Wer hat meinen Namen ausgesucht?",
+          "lines": 1
+        },
+        {
+          "kind": "question",
+          "text": "Warum dieser Name? Gibt es eine Geschichte?",
+          "lines": 3
+        },
+        {
+          "kind": "question",
+          "text": "Was bedeutet mein Name (wenn man es weiß)?",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "Hast du einen Spitznamen? Welchen?",
+          "lines": 1
+        },
+        {
+          "kind": "instruction",
+          "text": "Male hier dein schönstes Namens-Zeichen:"
+        },
+        {
+          "kind": "box",
+          "text": "",
+          "lines": 4
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "vielfalt-mosaik-aus-vielen-teilen-werde-ich-ich",
+    "title": "Vielfalt-Mosaik: Aus vielen Teilen werde ich Ich",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "C2",
+      "C3"
+    ],
+    "type": [
+      "Projet"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Gemeinsames Klassen-Mosaik als großes Abschlussbild"
+      },
+      {
+        "mode": "Individuel",
+        "note": "Jedes Kind gestaltet die eigenen Mosaik-Teile"
+      },
+      {
+        "mode": "Grupp",
+        "note": "In Tischgruppen Teile vergleichen und ordnen"
+      }
+    ],
+    "themes": [
+      "identitaet",
+      "selbstwahrnehmung",
+      "kooperation"
+    ],
+    "tags": [
+      "mosaik",
+      "identitaet",
+      "vielfalt",
+      "einzigartig",
+      "gemeinschaft",
+      "puzzle",
+      "stärken"
+    ],
+    "shortDescription": "Identität besteht aus vielen Teilen – Vorlieben, Eigenschaften, Rollen, Herkunft. In diesem Projekt gestaltet jedes Kind bunte Mosaik-Steine zu verschiedenen 'Ich-Teilen' und fügt sie zu einem eigenen Mosaik-Ich zusammen. Anschließend wachsen alle Einzel-Mosaike zu einem großen Klassen-Mosaik – das Bild macht erlebbar: Jeder ist einzigartig, und zusammen ergeben wir ein Ganzes.",
+    "ablauf": [
+      {
+        "title": "Einstieg (Einheit 1): Ein Bild aus vielen Steinen",
+        "text": "Zeigen Sie ein Foto eines Mosaiks (z. B. ein Tier oder Muster aus vielen bunten Steinchen). Lassen Sie die Kinder entdecken: Aus der Nähe sieht man einzelne Steine, von weitem ein ganzes Bild. Überleitung: 'Auch DU bist wie ein Mosaik – aus vielen kleinen Teilen wirst du zu dir.' Sammeln Sie gemeinsam 'Ich-Teile' an der Tafel: was ich mag, was ich gut kann, wie ich bin, wo ich dazugehöre, was mir wichtig ist."
+      },
+      {
+        "title": "Hauptteil 1 (Einheit 1–2): Meine Mosaik-Teile gestalten",
+        "text": "Jedes Kind erhält mehrere große Papier-'Steine' (Quadrate/Rechtecke in verschiedenen Farben). Auf jeden Stein kommt ein Ich-Teil – gemalt oder mit einem Wort: z. B. ein Stein 'Das mag ich', ein Stein 'Das kann ich gut', ein Stein 'So bin ich', ein Stein 'Wo ich dazugehöre'. Gehen Sie herum und ermutigen Sie individuell. Wer schnell ist, gestaltet weitere freie Steine."
+      },
+      {
+        "title": "Hauptteil 2 (Einheit 2): Mein Mosaik-Ich zusammenfügen",
+        "text": "Die Kinder kleben ihre Steine auf einen Grundbogen zu ihrem persönlichen Mosaik-Ich – sie dürfen die Steine frei anordnen, dicht aneinander wie ein echtes Mosaik. In den Tischgruppen vergleichen sie dann: 'Welche Steine sind bei uns gleich? Welcher Stein gibt es nur bei dir?' Halten Sie fest: Gemeinsamkeiten verbinden, Besonderheiten machen einzigartig."
+      },
+      {
+        "title": "Hauptteil 3 (Einheit 3): Das große Klassen-Mosaik",
+        "text": "Auf einer großen Wandfläche (oder einem Bodenfeld) entsteht das Klassen-Mosaik: Jedes Kind bringt einen selbstgewählten Lieblings-Stein ein und fügt ihn an die wachsende Fläche. Während alle Steine zusammenkommen, entsteht sichtbar ein gemeinsames, buntes Gesamtbild. Geben Sie dem Mosaik einen Namen, z. B. 'Unsere Klasse'."
+      },
+      {
+        "title": "Abschluss (Einheit 3): Einzeln einzigartig, zusammen ein Bild",
+        "text": "Im Halbkreis vor dem Klassen-Mosaik: Jedes Kind zeigt seinen eingebrachten Stein und sagt einen Satz dazu. Sprechen Sie abschließend über die Kernbotschaft: Würde ein Stein fehlen, fehlte etwas im Bild – jeder gehört dazu und wird gebraucht. Das Klassen-Mosaik bleibt als sichtbares Wir-Gefühl im Raum hängen."
+      }
+    ],
+    "duration": "3 Einheiten à ca. 45 Min.",
+    "materialsNeeded": "Vorgeschnittene Papier-'Steine' in vielen Farben (Tonpapier), Grundbögen pro Kind, Klebstoff, Stifte, eine große Wand-/Bodenfläche oder ein Plakat für das Klassen-Mosaik, ein Mosaik-Bild zur Anschauung.",
+    "remark": "Differenzierung: Anzahl und Beschriftung der Steine an Tempo und Schreibfähigkeit anpassen – Malen genügt vollauf. Achten Sie beim Klassen-Mosaik darauf, dass wirklich jedes Kind einen Platz bekommt; planen Sie genug Fläche. Vermeiden Sie Bewertungen wie 'schön/unschön' – jeder Stein zählt gleich.",
+    "etepStufen": [
+      2,
+      3
+    ],
+    "eldibGoals": [
+      "K-18",
+      "K-19",
+      "K-22",
+      "SOZ-18",
+      "SOZ-24",
+      "SOZ-29",
+      "SOZ-30",
+      "SOZ-31",
+      "V-13",
+      "V-30"
+    ],
+    "worksheet": {
+      "title": "Mein Mosaik-Ich – Steine-Plan",
+      "intro": "Überlege, was auf deine Steine kommt. Male oder schreibe ein Wort pro Stein.",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "Das kommt auf meine Mosaik-Steine"
+        },
+        {
+          "kind": "box",
+          "text": "Stein 1 – Das mag ich",
+          "lines": 3
+        },
+        {
+          "kind": "box",
+          "text": "Stein 2 – Das kann ich gut",
+          "lines": 3
+        },
+        {
+          "kind": "box",
+          "text": "Stein 3 – So bin ich",
+          "lines": 3
+        },
+        {
+          "kind": "box",
+          "text": "Stein 4 – Wo ich dazugehöre",
+          "lines": 3
+        },
+        {
+          "kind": "question",
+          "text": "Diesen Stein bringe ich ins Klassen-Mosaik ein:",
+          "lines": 2
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "ich-baum-wurzeln-stamm-und-krone-von-mir",
+    "title": "Ich-Baum: Wurzeln, Stamm und Krone von mir",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "C2",
+      "C3"
+    ],
+    "type": [
+      "Projet"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Einstieg und Baum-Spaziergang gemeinsam"
+      },
+      {
+        "mode": "Individuel",
+        "note": "Jedes Kind gestaltet seinen eigenen Ich-Baum über mehrere Einheiten"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Stärken-Rückmeldungen in festen Dreier-/Vierergruppen"
+      }
+    ],
+    "themes": [
+      "identitaet",
+      "selbstwertgefuehl",
+      "ressourcen"
+    ],
+    "tags": [
+      "ichbaum",
+      "identitaet",
+      "wurzeln",
+      "stärken",
+      "wünsche",
+      "ressourcen",
+      "wachstum"
+    ],
+    "shortDescription": "Ein Baum ist ein anschauliches Bild für die eigene Person: Wurzeln (wo ich herkomme und was mich hält), Stamm (was ich kann und wie ich bin) und Krone (meine Wünsche und Träume). In diesem Projekt gestaltet jedes Kind über mehrere Einheiten einen großen Ich-Baum. Das Bild verbindet Herkunft, gegenwärtige Stärken und Zukunftswünsche und stärkt Selbstwert und Ressourcen-Bewusstsein.",
+    "ablauf": [
+      {
+        "title": "Einstieg (Einheit 1): Was ein Baum mit mir zu tun hat",
+        "text": "Gehen Sie (echt oder per Bild) zu einem Baum und betrachten Sie ihn: Die Wurzeln halten ihn fest und geben Kraft, der Stamm ist stark und trägt, die Krone wächst nach oben zur Sonne. Übertragen Sie es: 'Auch du hast Wurzeln, einen Stamm und eine Krone.' Erklären Sie die drei Teile kindgerecht – Wurzeln = Menschen und Orte, die mich halten; Stamm = was ich kann und wie ich bin; Krone = was ich mir wünsche. Jedes Kind erhält eine große Baum-Vorlage."
+      },
+      {
+        "title": "Hauptteil 1 (Einheit 1–2): Meine Wurzeln",
+        "text": "Die Kinder füllen die Wurzeln mit dem, was ihnen Halt gibt: wichtige Menschen, ein Lieblingsort, etwas aus der Familie, eine schöne Erinnerung. Gemalt oder mit Wörtern. Begleiten Sie sensibel und formulieren Sie offen ('Menschen und Orte, die dir guttun'). Im Kreis: Ein paar Kinder erzählen freiwillig von einer Wurzel."
+      },
+      {
+        "title": "Hauptteil 2 (Einheit 2): Mein Stamm – das macht mich stark",
+        "text": "In den Stamm kommt, was das Kind gut kann und wie es ist (z. B. hilfsbereit, mutig, lustig, gut im Rechnen, ein guter Freund). Wichtig: In festen Kleingruppen geben sich die Kinder gegenseitig eine 'Stamm-Stärke' – jedes Kind hört von den anderen EINE Sache, die sie an ihm mögen, und darf sie in den Stamm aufnehmen. So wächst der Stamm aus Selbst- UND Fremdbild."
+      },
+      {
+        "title": "Hauptteil 3 (Einheit 3): Meine Krone – Wünsche und Träume",
+        "text": "In die Baumkrone malen oder schreiben die Kinder ihre Wünsche und Träume: was sie lernen, werden oder erleben möchten – groß oder klein (gut schwimmen lernen, einmal das Meer sehen, eine bestimmte Sache werden). Betonen Sie: Träume dürfen mutig sein. Wer mag, gestaltet die Krone mit bunten Blättern, auf denen je ein Wunsch steht."
+      },
+      {
+        "title": "Abschluss (Einheit 3): Der Baum-Spaziergang",
+        "text": "Alle Ich-Bäume werden im Raum aufgehängt – es entsteht ein 'Ich-Wald'. Bei einem stillen Baum-Spaziergang gehen die Kinder herum und betrachten die anderen Bäume. Danach im Kreis: Jedes Kind zeigt, das möchte, einen Teil seines Baumes (eine Wurzel, eine Stamm-Stärke oder einen Kronen-Wunsch) und sagt einen Satz dazu. Schluss: 'Jeder Baum ist anders gewachsen – und alle zusammen sind unser Wald.' Die Bäume bleiben als Wald-Wand hängen oder gehen mit nach Hause."
+      }
+    ],
+    "duration": "3 Einheiten à ca. 45 Min. (gut als Projektwoche oder über drei Wochen)",
+    "materialsNeeded": "Große Baum-Vorlagen pro Kind (mit Wurzeln, Stamm, Krone vorgezeichnet), Buntstifte/Wachsmalstifte, grüne Papier-Blätter zum Beschriften und Aufkleben, Klebstoff, Scheren, ein echtes Baum-Bild oder ein Baum auf dem Schulhof zur Anschauung, Klebeband für den Ich-Wald.",
+    "remark": "Sehr sensibel bei den Wurzeln (Trennung, Verlust, Flucht, Pflegefamilie): offen 'Menschen und Orte, die mir guttun' formulieren, niemanden zu Familien-Inhalten drängen, Vorstellen stets freiwillig. Differenzierung: Schreibarme Kinder malen; bei der gegenseitigen Stärken-Rückmeldung vorab Beispielsätze sammeln und auf wertschätzende, konkrete Aussagen achten.",
+    "etepStufen": [
+      2,
+      3
+    ],
+    "eldibGoals": [
+      "K-18",
+      "K-19",
+      "K-20",
+      "K-22",
+      "SOZ-9",
+      "SOZ-24",
+      "SOZ-26",
+      "SOZ-31",
+      "V-14",
+      "V-30"
+    ],
+    "worksheet": {
+      "title": "Mein Ich-Baum – Pflanz-Plan",
+      "intro": "Sammle zuerst deine Ideen für jeden Teil deines Baumes. Male oder schreibe.",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "Wurzeln – was mich hält"
+        },
+        {
+          "kind": "box",
+          "text": "Menschen und Orte, die mir guttun",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "Stamm – das macht mich stark"
+        },
+        {
+          "kind": "question",
+          "text": "Das kann ich gut / so bin ich:",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "Eine Stärke, die andere an mir mögen:",
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "Krone – meine Wünsche"
+        },
+        {
+          "kind": "box",
+          "text": "Das wünsche ich mir / möchte ich werden",
+          "lines": 3
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "mein-stress-thermometer-vom-gruenen-ins-rote-feld",
+    "title": "Mein Stress-Thermometer: Vom grünen ins rote Feld",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "C3",
+      "C4"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Einstieg und Auswertung im Sitzkreis oder Halbkreis"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Zuordnen der Strategien zu den Stress-Zonen in Kleingruppen"
+      },
+      {
+        "mode": "Individuel",
+        "note": "eigenes Stress-Thermometer ausfüllen"
+      }
+    ],
+    "themes": [
+      "stressbewaeltigung",
+      "selbstwahrnehmung",
+      "impulskontrolle"
+    ],
+    "tags": [
+      "Stress",
+      "Anspannung",
+      "Selbstbeobachtung",
+      "Beruhigung",
+      "Thermometer",
+      "Frühwarnzeichen",
+      "Strategien"
+    ],
+    "shortDescription": "Stress hat verschiedene Stufen – vom leichten Kribbeln bis zum Kochen kurz vor dem Knall. In dieser Aktivität bauen die Kinder ihr persönliches 'Stress-Thermometer' mit drei Zonen (grün – ruhig, gelb – angespannt, rot – überkocht). Sie lernen, an welchen Körper- und Verhaltenssignalen sie ihre eigene Zone erkennen, und ordnen jeder Zone passende Beruhigungs-Strategien zu. So wissen sie: Je früher ich merke, dass ich ins Gelbe rutsche, desto leichter komme ich zurück ins Grüne.",
+    "ablauf": [
+      {
+        "title": "Einstieg: Wie heiß bin ich gerade?",
+        "text": "Beginnt im Kreis und zeigt ein großes Thermometer-Bild mit drei farbigen Feldern: grün (unten), gelb (Mitte), rot (oben). Erklärt: 'So wie ein Thermometer die Temperatur zeigt, könnt ihr bei euch selbst spüren, wie hoch eure Anspannung gerade ist.' Nennt ein paar Alltagssituationen ('Es ist Pause und du sitzt entspannt mit Freunden', 'Es klingelt und du hast die Aufgabe nicht fertig', 'Jemand schubst dich und lacht dich aus') und die Kinder zeigen mit der Hand auf Bauch-, Brust- oder Kopfhöhe, wie heiß es bei ihnen dabei würde. Haltet fest: Stress ist nicht gleich Stress – es gibt Stufen, und die kann man lernen zu lesen."
+      },
+      {
+        "title": "Hinführung: Die drei Zonen und ihre Signale",
+        "text": "Geht die drei Zonen gemeinsam durch und sammelt für jede Zone Erkennungszeichen an der Tafel. Grün: ruhiger Atem, lockere Schultern, ich kann gut denken und zuhören. Gelb: Herz klopft schneller, Bauchkribbeln, ich werde unruhig oder zappelig, die Gedanken rasen. Rot: Hitze im Gesicht, geballte Fäuste, ich will schreien, weglaufen oder zuschlagen, ich kann kaum noch klar denken. Betont die Kernidee: Im roten Feld ist Beruhigen am schwersten. Der Trick ist, schon im gelben Feld zu merken 'Achtung, ich heize auf' – dann reicht oft eine kleine Strategie, um nicht ins Rote zu kippen."
+      },
+      {
+        "title": "Hauptteil 1: Strategien sortieren",
+        "text": "Teilt die Klasse in Kleingruppen und gebt jeder Gruppe einen Satz Strategie-Karten (z. B. 'dreimal tief durchatmen', 'kurz raus an die Luft', 'bis zehn zählen', 'mit jemandem reden', 'Musik hören', 'etwas Lustiges denken', 'um eine Pause bitten', 'Hilfe holen'). Aufgabe: Ordnet jede Karte der Zone zu, in der sie am besten hilft – und überlegt, welche Strategie schon im Gelben gut wirkt, damit es gar nicht erst Rot wird. Die Gruppen kleben ihre Karten auf ein großes Zonen-Plakat. Geht herum und regt an, dass auch eigene Strategien dazukommen dürfen, die nicht auf den Karten stehen."
+      },
+      {
+        "title": "Hauptteil 2: Strategien vergleichen und ausprobieren",
+        "text": "Holt die Gruppen zusammen und vergleicht die Plakate: Welche Strategie haben mehrere ins gelbe Feld gelegt? Wo gab es Unterschiede? Macht deutlich, dass nicht jede Strategie für jeden gleich gut passt – jeder darf herausfinden, was bei ihm wirkt. Probiert zwei, drei gelbe-Zone-Strategien gemeinsam kurz aus (z. B. den langsamen Atem mit Hand auf dem Bauch, das stille Zählen mit Blick auf einen Punkt). Fragt danach: 'Was habt ihr im Körper gemerkt?' So erleben die Kinder, dass Beruhigen tatsächlich etwas verändert und keine leere Aufforderung ist."
+      },
+      {
+        "title": "Abschluss: Mein eigenes Stress-Thermometer",
+        "text": "Jedes Kind gestaltet allein sein persönliches Stress-Thermometer auf dem Arbeitsblatt: Es trägt in jede Zone seine eigenen Signale ein (Woran merke ICH grün, gelb, rot?) und wählt für die gelbe Zone seine zwei Lieblings-Strategien, die es ausprobieren will. Im Kreis darf reihum, wer mag, eine gelbe Strategie nennen. Schließt mit der Kernbotschaft: 'Dein Thermometer steigt nicht von null auf hundert – dazwischen liegt das gelbe Feld. Wenn du dort gegensteuerst, bleibst du dein eigener Chef, statt dass der Stress dich steuert.' Das Thermometer kann sichtbar in der Mappe oder am Platz aufbewahrt werden."
+      }
+    ],
+    "duration": "ca. 50 Minuten (eine Unterrichtsstunde)",
+    "materialsNeeded": "Großes Thermometer-Bild mit drei farbigen Zonen für den Einstieg; pro Gruppe ein Satz Strategie-Karten und ein leeres Zonen-Plakat (grün/gelb/rot); Klebestifte; Arbeitsblatt 'Mein Stress-Thermometer' pro Kind; Stifte; Tafel oder Flipchart für die Signal-Sammlung.",
+    "remark": "Differenzierung: C3 arbeitet mit den vorgegebenen Strategie-Karten und Bildsymbolen für die Signale; C4 entwickelt eigene Strategien und reflektiert, warum frühes Gegensteuern im gelben Feld leichter ist als im roten. Hinweis: Mache deutlich, dass alle Stufen normal sind und niemand verurteilt wird, der 'rot' wird – es geht ums Üben, nicht ums Funktionieren. Beobachte sensibel Kinder, die dauerhaft im gelben oder roten Bereich zu sein scheinen, und biete ein ruhiges Einzelgespräch sowie ggf. die Weitergabe an die ETEP-/SePAS-Fachkraft an.",
+    "etepStufen": [
+      2,
+      3,
+      4
+    ],
+    "eldibGoals": [
+      "V-20",
+      "V-21",
+      "V-23",
+      "V-28",
+      "K-16",
+      "K-26",
+      "SOZ-9",
+      "SOZ-26",
+      "SOZ-34",
+      "KOG-37",
+      "KOG-57"
+    ],
+    "worksheet": {
+      "title": "Mein Stress-Thermometer",
+      "intro": "Stress hat Stufen – von ruhig bis überkocht. Wenn du deine eigenen Signale kennst, merkst du früh, wenn du aufheizt, und kannst gegensteuern, bevor es Rot wird.",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "Meine Zonen-Signale"
+        },
+        {
+          "kind": "instruction",
+          "text": "Woran merkst du selbst, in welcher Zone du gerade bist? Trage deine eigenen Körper- und Verhaltenssignale ein."
+        },
+        {
+          "kind": "table",
+          "text": "Zone und Signal",
+          "lines": 3,
+          "items": [
+            "Zone",
+            "So merke ich es bei mir"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "Meine gelbe-Zone-Strategien"
+        },
+        {
+          "kind": "instruction",
+          "text": "Wähle zwei Strategien, die dir helfen, wenn du ins Gelbe rutschst, damit es nicht Rot wird."
+        },
+        {
+          "kind": "checklist",
+          "items": [
+            "Dreimal langsam durchatmen, Hand auf den Bauch",
+            "Innerlich bis zehn zählen",
+            "Kurz raus an die Luft / um eine Pause bitten",
+            "Mit jemandem reden, der mir guttut",
+            "Eine eigene Strategie:"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "Mein Frühwarn-Satz"
+        },
+        {
+          "kind": "box",
+          "text": "Wenn ich merke, dass ich ins Gelbe rutsche, sage ich mir:"
+        },
+        {
+          "kind": "heading",
+          "text": "Mein nächster Versuch"
+        },
+        {
+          "kind": "question",
+          "text": "In welcher Situation willst du dein Thermometer das nächste Mal bewusst beobachten und früh gegensteuern?",
+          "lines": 3
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "die-5-4-3-2-1-anker-uebung-mit-den-sinnen-aus-dem-stress",
+    "title": "Die 5-4-3-2-1-Anker-Übung: Mit den Sinnen aus dem Stress",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "C3",
+      "C4"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "gemeinsame Anleitung und Auswertung im Kreis"
+      },
+      {
+        "mode": "Individuel",
+        "note": "stilles Durchführen der Sinnes-Übung am Platz"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Partnerübung: sich gegenseitig durch die Übung führen"
+      }
+    ],
+    "themes": [
+      "stressbewaeltigung",
+      "achtsamkeit",
+      "selbstwahrnehmung"
+    ],
+    "tags": [
+      "Stress",
+      "Achtsamkeit",
+      "Sinne",
+      "Erdung",
+      "Beruhigen",
+      "Hier und Jetzt",
+      "Anker"
+    ],
+    "shortDescription": "Wenn Gedanken kreisen und die Anspannung steigt, hilft ein einfacher Trick: sich mit den fünf Sinnen ins Hier und Jetzt zurückholen. Die Kinder lernen die '5-4-3-2-1-Anker-Übung' kennen – sie benennen nacheinander Dinge, die sie sehen, hören, fühlen, riechen und schmecken. Diese Sinnes-Reise unterbricht das Gedankenkarussell und beruhigt den Körper. Am Ende hat jedes Kind einen 'Anker', den es überall und unauffällig einsetzen kann, wenn Stress oder Aufregung hochkommen.",
+    "ablauf": [
+      {
+        "title": "Einstieg: Das Gedankenkarussell",
+        "text": "Steigt mit einem Bild ein: 'Kennt ihr das, wenn sich die Gedanken drehen wie ein Karussell – vor einer Arbeit, nach einem Streit, abends im Bett? Je mehr man sich anstrengt aufzuhören, desto schneller dreht es sich.' Lasst kurz sammeln, in welchen Momenten das bei den Kindern passiert. Erklärt dann: 'Es gibt einen Trick, um das Karussell anzuhalten – man kann nicht gleichzeitig grübeln und ganz genau hinschauen, hinhören und fühlen. Genau das üben wir heute: Wir werfen einen Anker, der uns zurück ins Jetzt holt.'"
+      },
+      {
+        "title": "Hinführung: Die fünf Stufen des Ankers",
+        "text": "Stellt die Übung Schritt für Schritt vor und schreibt die Zahlen 5-4-3-2-1 an die Tafel. 5 Dinge, die ich SEHE (z. B. das Fenster, meinen Stift, einen Riss in der Wand). 4 Dinge, die ich HÖRE (ein Auto draußen, das Atmen, ein Knistern). 3 Dinge, die ich FÜHLE (der Stuhl unter mir, die Füße im Schuh, der Stift in der Hand). 2 Dinge, die ich RIECHE (oder mir vorstelle zu riechen). 1 Sache, die ich SCHMECKE (oder mag zu schmecken). Macht deutlich: Es geht nicht um Tempo, sondern ums genaue Hinspüren. Jeder Schritt holt die Aufmerksamkeit ein Stück mehr aus dem Kopf in den Körper."
+      },
+      {
+        "title": "Hauptteil 1: Die Anker-Übung gemeinsam erleben",
+        "text": "Führt die Übung nun einmal ruhig durch die ganze Klasse. Mit langsamer, leiser Stimme: 'Schaut euch um und findet fünf Dinge, die ihr sehen könnt … nehmt euch für jedes einen Moment Zeit. Jetzt horcht: vier Dinge, die ihr hören könnt … Nun spürt: drei Dinge, die ihr fühlen könnt …' Lasst zwischen den Stufen genug Zeit und sprecht selbst ruhig vor. Beendet sanft: 'Atmet noch einmal tief ein und aus. Spürt, wie ihr gerade ganz hier seid.' Fragt danach behutsam: 'Wie fühlt ihr euch jetzt im Vergleich zum Anfang?'"
+      },
+      {
+        "title": "Hauptteil 2: Sich gegenseitig durch den Anker führen",
+        "text": "Bildet Paare. Eine Person führt die andere leise durch die fünf Stufen (5-4-3-2-1) und gibt ihr Zeit, die Dinge wirklich wahrzunehmen; die andere lässt sich führen und benennt flüsternd oder still ihre Wahrnehmungen. Dann wird gewechselt. So üben die Kinder die Reihenfolge ein und merken, dass sie die Übung auch alleine im Kopf abrufen können. Geht herum und erinnert daran, dass langsam und genau besser ist als schnell und oberflächlich. Wer sich beim Vorstellen von Riechen und Schmecken schwertut, darf einfach an einen Lieblingsgeruch oder -geschmack denken."
+      },
+      {
+        "title": "Abschluss: Mein Anker für unterwegs",
+        "text": "Sammelt im Kreis: 'Was hat sich durch die Übung verändert? Wann könntet ihr euren Anker brauchen?' Jedes Kind hält auf seiner Anker-Karte die fünf Stufen fest und notiert eine Situation, in der es die Übung ausprobieren will. Betont, dass der Anker unauffällig ist – man kann ihn in der Schule, im Bus oder vor dem Einschlafen machen, ohne dass es jemand merkt. Kernbotschaft: 'Deine Sinne sind immer dabei. Mit ihnen kannst du dich jederzeit selbst zurück ins Jetzt holen, wenn der Stress dich wegziehen will.'"
+      }
+    ],
+    "duration": "ca. 40 Minuten",
+    "materialsNeeded": "Tafel oder Flipchart für die Zahlenfolge 5-4-3-2-1 und die Sinne; kleine Anker-Karten (im Hülle- oder Federmappen-Format) pro Kind; Stifte; ein ruhiger Raum, in dem die Klasse für ein paar Minuten still werden kann; optional ein kleines Bild eines Ankers als Symbol.",
+    "remark": "Differenzierung: C3 nutzt eine vereinfachte Variante (z. B. nur Sehen, Hören, Fühlen) und Bildsymbole auf der Karte; C4 macht alle fünf Stufen und reflektiert, warum genaues Wahrnehmen das Grübeln unterbricht. Hinweis: Die Übung ist eine kurze, alltagstaugliche Achtsamkeitsübung, keine therapeutische Tiefenentspannung. Zwinge niemanden, die Augen zu schließen, und biete bei Kindern, die Stille schwer aushalten, eine ganz kurze Version an. Wenn ein Kind beim Innehalten von belastenden Gedanken berichtet, nimm das ernst und biete ein vertrauliches Gespräch an.",
+    "etepStufen": [
+      2,
+      3,
+      4
+    ],
+    "eldibGoals": [
+      "V-2",
+      "V-3",
+      "V-20",
+      "V-21",
+      "V-23",
+      "K-16",
+      "K-26",
+      "SOZ-9",
+      "KOG-2",
+      "KOG-37"
+    ],
+    "worksheet": {
+      "title": "Mein 5-4-3-2-1-Anker",
+      "intro": "Wenn die Gedanken kreisen, hol dich mit deinen Sinnen zurück ins Jetzt. Du kannst nicht gleichzeitig grübeln und ganz genau hinschauen, hinhören und fühlen. Diese Karte ist dein Anker.",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "So werfe ich meinen Anker"
+        },
+        {
+          "kind": "checklist",
+          "items": [
+            "5 Dinge, die ich SEHE",
+            "4 Dinge, die ich HÖRE",
+            "3 Dinge, die ich FÜHLE",
+            "2 Dinge, die ich RIECHE",
+            "1 Sache, die ich SCHMECKE"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "Mein Lieblings-Sinn"
+        },
+        {
+          "kind": "question",
+          "text": "Welche Stufe holt dich am stärksten ins Jetzt zurück – Sehen, Hören oder Fühlen? Warum?",
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "Vorher und nachher"
+        },
+        {
+          "kind": "scale",
+          "text": "Wie aufgewühlt warst du vor der Übung – und wie ruhig danach? Kreuze an.",
+          "items": [
+            "sehr aufgewühlt",
+            "etwas unruhig",
+            "neutral",
+            "ziemlich ruhig",
+            "ganz ruhig"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "Mein nächster Anker-Moment"
+        },
+        {
+          "kind": "box",
+          "text": "Diese Situation will ich mit dem Anker ausprobieren:"
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "stress-detektive-energiefresser-und-kraftquellen-im-schultag",
+    "title": "Stress-Detektive: Energiefresser und Kraftquellen im Schultag",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "C3",
+      "C4"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Einstieg und gemeinsame Auswertung im Plenum"
+      },
+      {
+        "mode": "Individuel",
+        "note": "eigenen Schultag als Detektiv untersuchen"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Kraftquellen-Ideen in Kleingruppen austauschen und sammeln"
+      }
+    ],
+    "themes": [
+      "stressbewaeltigung",
+      "ressourcen",
+      "selbstwahrnehmung"
+    ],
+    "tags": [
+      "Stress",
+      "Energie",
+      "Kraftquellen",
+      "Schultag",
+      "Selbstbeobachtung",
+      "Ressourcen",
+      "Balance"
+    ],
+    "shortDescription": "Wie Detektive nehmen die Kinder ihren eigenen Schultag unter die Lupe und spüren auf, was Energie raubt ('Energiefresser') und was Energie schenkt ('Kraftquellen'). Sie zeichnen ihren Tag als Energie-Linie nach und entdecken, an welchen Stellen sie auftanken könnten. Ziel ist, Stress nicht nur auszuhalten, sondern aktiv mehr Kraftquellen in den Alltag einzubauen – kleine Pausen, Bewegung, schöne Momente, gute Kontakte. So lernen die Kinder, auf ihre eigene Energie-Balance zu achten.",
+    "ablauf": [
+      {
+        "title": "Einstieg: Der Akku am Ende des Tages",
+        "text": "Fragt in den Kreis: 'Stellt euch euren Energie-Akku vor – wie voll ist er morgens beim Aufstehen, und wie voll abends? Was passiert dazwischen?' Lasst die Kinder mit der Hand zeigen oder kurz erzählen. Sammelt erste Beispiele für Dinge, die müde und genervt machen, und Dinge, die guttun. Erklärt das Detektiv-Bild: 'Heute werdet ihr zu Stress-Detektiven. Ihr untersucht euren eigenen Schultag und findet die Spuren: Wo verliert ihr Energie – das sind die Energiefresser? Und wo tankt ihr auf – das sind eure Kraftquellen?'"
+      },
+      {
+        "title": "Hinführung: Energiefresser und Kraftquellen unterscheiden",
+        "text": "Klärt die zwei Begriffe an gemeinsamen Beispielen. Energiefresser: Streit, Hetze, Lärm, zu viel auf einmal, Langeweile, Sorgen, schlechter Schlaf. Kraftquellen: eine echte Pause, draußen sein, lachen mit Freunden, Bewegung, etwas gut können, gelobt werden, Musik. Macht eine wichtige Unterscheidung deutlich: Manche Energiefresser kann man nicht abstellen (ein Test muss sein) – aber man kann gezielt Kraftquellen dazwischenschieben, damit der Akku nicht ganz leerläuft. Sammelt an der Tafel zwei Spalten und ergänzt gemeinsam einige Beispiele aus dem Schulalltag der Kinder."
+      },
+      {
+        "title": "Hauptteil 1: Meinen Schultag als Detektiv untersuchen",
+        "text": "Jedes Kind erhält das Detektiv-Blatt mit einer einfachen Tages-Zeitleiste (Morgen, Vormittag, Mittag, Nachmittag, Abend). Aufgabe: Tragt entlang der Leiste ein, wo der Energie-Akku sinkt (Energiefresser, z. B. mit einem Pfeil nach unten) und wo er steigt (Kraftquelle, Pfeil nach oben). Verbindet die Punkte zu einer Energie-Linie, die zeigt, wie der Tag verläuft. Geht herum und unterstützt mit Fragen: 'Wann am Tag bist du oft am erschöpftesten? Gibt es einen Moment, der dir richtig guttut?' Wichtig ist die ehrliche Selbstbeobachtung, nicht ein 'schöner' Verlauf."
+      },
+      {
+        "title": "Hauptteil 2: Kraftquellen-Ideen sammeln",
+        "text": "Bildet Kleingruppen. Die Kinder vergleichen ihre Energie-Linien (nur, was sie teilen möchten) und sammeln gemeinsam möglichst viele Kraftquellen, die schon in kurzen Momenten Energie geben – etwas, das auch mitten im Schultag geht. Jede Gruppe schreibt ihre besten Ideen auf Karten für eine gemeinsame 'Kraftquellen-Wand'. Sprecht in den Gruppen auch darüber, welche Kraftquelle man leicht öfter einbauen könnte. Geht herum und regt an, über naheliegende, machbare Mini-Kraftquellen nachzudenken (kurz aufstehen, tief durchatmen, mit jemandem reden), nicht nur über große Wochenend-Aktivitäten."
+      },
+      {
+        "title": "Abschluss: Meine drei Kraftquellen für die Woche",
+        "text": "Holt die Klasse zusammen und schaut auf die Kraftquellen-Wand: Welche Ideen kommen mehrfach vor, welche sind neu? Jedes Kind wählt für sich drei Kraftquellen aus, die es in der kommenden Woche bewusst öfter nutzen will, und notiert sie auf dem Detektiv-Blatt. Reihum darf, wer mag, eine Kraftquelle nennen. Schließt mit der Kernbotschaft: 'Manche Energiefresser kannst du nicht wegzaubern – aber du bist nicht hilflos. Du kannst deinen Tag mit Kraftquellen aufladen, ein bisschen jeden Tag. Achte gut auf deinen Akku.' Die Kraftquellen-Wand bleibt sichtbar im Klassenraum als Erinnerung."
+      }
+    ],
+    "duration": "ca. 50 Minuten (eine Unterrichtsstunde)",
+    "materialsNeeded": "Tafel oder Flipchart mit zwei Spalten (Energiefresser / Kraftquellen); Detektiv-Blatt mit Tages-Zeitleiste pro Kind; Karten für die gemeinsame Kraftquellen-Wand; Stifte und Klebematerial; eine freie Wandfläche für die Kraftquellen-Wand.",
+    "remark": "Differenzierung: C3 arbeitet mit einer vorstrukturierten Zeitleiste und Symbolen (Pfeil hoch/runter, Smileys) sowie einer Auswahl vorgegebener Kraftquellen-Karten; C4 gestaltet die Energie-Linie freier und reflektiert, welche Energiefresser beeinflussbar sind und welche nicht. Hinweis: Manche Kinder benennen ernste Belastungen (Streit zu Hause, Überforderung, wenig Schlaf). Nimm solche Hinweise vertraulich ernst, dränge niemanden zum Teilen vor der Gruppe und biete bei Bedarf ein Einzelgespräch oder die Weitergabe an die SePAS-/ETEP-Fachkraft an. Halte den Fokus auf Stärkung und Handlungsmöglichkeiten, nicht aufs Problematisieren.",
+    "etepStufen": [
+      2,
+      3,
+      4
+    ],
+    "eldibGoals": [
+      "V-17",
+      "V-21",
+      "V-23",
+      "V-28",
+      "K-16",
+      "K-26",
+      "SOZ-9",
+      "SOZ-24",
+      "SOZ-26",
+      "KOG-37",
+      "KOG-57"
+    ],
+    "worksheet": {
+      "title": "Mein Stress-Detektiv-Blatt",
+      "intro": "Werde Detektiv deines eigenen Tages. Spüre auf, was dir Energie raubt (Energiefresser) und was dir Energie schenkt (Kraftquellen). Dann baust du gezielt mehr Kraftquellen ein.",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "Meine Energie-Linie"
+        },
+        {
+          "kind": "instruction",
+          "text": "Markiere entlang des Tages, wo dein Akku sinkt (Pfeil runter) und wo er steigt (Pfeil hoch). Verbinde die Punkte."
+        },
+        {
+          "kind": "table",
+          "text": "Tageszeit und Energie",
+          "lines": 5,
+          "items": [
+            "Tageszeit",
+            "Energiefresser oder Kraftquelle?"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "Mein größter Energiefresser"
+        },
+        {
+          "kind": "question",
+          "text": "Was raubt dir am meisten Energie? Kannst du etwas daran ändern – oder eine Kraftquelle danebenstellen?",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "Meine drei Kraftquellen für die Woche"
+        },
+        {
+          "kind": "lines",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "Mein Auftrag"
+        },
+        {
+          "kind": "box",
+          "text": "Diese eine Kraftquelle will ich diese Woche bewusst öfter nutzen:"
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "notfallkoffer-fuer-aufregungsmomente-meine-schnellen-sos-tricks",
+    "title": "Notfallkoffer für Aufregungsmomente: Meine schnellen SOS-Tricks",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "C3",
+      "C4"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Einstieg und Auswertung im Kreis"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Ausprobieren der SOS-Tricks an Stationen in Kleingruppen"
+      },
+      {
+        "mode": "Individuel",
+        "note": "Bestücken des eigenen Notfallkoffers"
+      }
+    ],
+    "themes": [
+      "stressbewaeltigung",
+      "impulskontrolle",
+      "ressourcen"
+    ],
+    "tags": [
+      "Stress",
+      "Notfallkoffer",
+      "SOS",
+      "Beruhigen",
+      "Stationen",
+      "Selbsthilfe",
+      "Aufregung"
+    ],
+    "shortDescription": "Wenn die Aufregung plötzlich hochschießt – vor einem Auftritt, in einem Streit, bei Prüfungsangst – braucht man schnelle Hilfe, die sofort wirkt. In dieser Aktivität probieren die Kinder an Stationen verschiedene 'SOS-Tricks' aus (Atem-Trick, Erdungs-Trick, Bewegungs-Trick, Gedanken-Trick) und spüren selbst, welche ihnen helfen. Am Ende packt jedes Kind seinen persönlichen 'Notfallkoffer' mit den Tricks, die für es funktionieren – griffbereit für den nächsten Aufregungsmoment.",
+    "ablauf": [
+      {
+        "title": "Einstieg: Wenn es plötzlich zu viel wird",
+        "text": "Steigt mit einer Frage ein: 'Kennt ihr Momente, in denen die Aufregung von einer Sekunde auf die andere hochschießt – das Herz rast, der Kopf wird leer, der Bauch flattert?' Lasst die Kinder kurz nicken oder Beispiele nennen (vor einem Referat, bei einem Streit, vor einer Arbeit, beim Wettkampf). Erklärt: 'In solchen Momenten kann man nicht erst lange nachdenken – da braucht man schnelle Hilfe, einen SOS-Trick, der sofort wirkt. Genau solche Tricks probiert ihr heute aus. Und das Beste: Am Ende baut sich jeder seinen eigenen Notfallkoffer mit den Tricks, die bei ihm wirken.'"
+      },
+      {
+        "title": "Hinführung: Vier Wege, schnell runterzukommen",
+        "text": "Stellt die vier Stationen kurz vor und erklärt, warum jeder Trick wirkt. Atem-Trick: langsames Ausatmen schaltet den Körper von Alarm auf Ruhe (z. B. vier zählen beim Einatmen, sechs beim Ausatmen). Erdungs-Trick: beide Füße fest auf den Boden, Hände auf die Oberschenkel drücken – das holt die Aufmerksamkeit aus dem rasenden Kopf in den Körper. Bewegungs-Trick: kurz die Schultern hochziehen und fallen lassen, Hände aus- und ausschütteln – Anspannung wird körperlich abgebaut. Gedanken-Trick: einen ruhigen Stopp-Satz denken ('Ich schaffe das gleich, einen Schritt nach dem anderen'). Betont: Es gibt nicht den einen richtigen Trick – jeder spürt selbst, was hilft."
+      },
+      {
+        "title": "Hauptteil 1: SOS-Tricks an Stationen ausprobieren",
+        "text": "Richtet vier Stationen mit je einer Anleitungskarte ein (Atem, Erdung, Bewegung, Gedanken). In Kleingruppen wandern die Kinder von Station zu Station und probieren jeden Trick selbst ruhig aus – nicht nur lesen, sondern wirklich machen. An jeder Station überlegen sie: 'Wie fühlt sich das an? Würde mir das in einem echten Aufregungsmoment helfen?' und notieren auf ihrem Laufzettel ein kurzes Urteil (hilft mir / vielleicht / eher nicht). Geht herum, macht die Tricks bei Bedarf vor und erinnert daran, dass es ums ehrliche Ausprobieren geht, nicht ums Richtigmachen."
+      },
+      {
+        "title": "Hauptteil 2: Tricks vergleichen und auswählen",
+        "text": "Holt die Gruppen zusammen und tauscht euch aus: 'Welcher Trick hat euch am meisten geholfen? Gab es Unterschiede in der Gruppe?' Macht sichtbar, dass verschiedene Kinder verschiedene Tricks bevorzugen – und dass das völlig in Ordnung ist. Besprecht auch, welcher Trick sich wo unauffällig einsetzen lässt (der Atem-Trick geht überall, der Bewegungs-Trick eher in der Pause). So lernen die Kinder, ihre Tricks zur Situation passend auszuwählen. Überleitung: 'Jetzt wisst ihr, was bei euch wirkt – packen wir das in euren persönlichen Notfallkoffer.'"
+      },
+      {
+        "title": "Abschluss: Mein Notfallkoffer ist gepackt",
+        "text": "Jedes Kind gestaltet seinen eigenen Notfallkoffer (Arbeitsblatt in Kofferform oder Karte): Es wählt zwei bis drei SOS-Tricks aus, die ihm am meisten geholfen haben, und hält fest, in welcher Situation es sie einsetzen will. Im Kreis darf reihum, wer mag, einen Trick aus seinem Koffer nennen. Schließt mit der Kernbotschaft: 'Aufregung kommt manchmal blitzschnell – aber jetzt bist du nicht mehr unvorbereitet. Dein Notfallkoffer ist immer dabei, in deinem Kopf und in deinem Körper. Du kannst ihn öffnen, wann immer du ihn brauchst.' Verabredet, dass die Kinder ihren Lieblings-Trick bis zur nächsten Stunde einmal im echten Moment ausprobieren."
+      }
+    ],
+    "duration": "ca. 50 Minuten (eine Unterrichtsstunde)",
+    "materialsNeeded": "Vier Stationen mit Anleitungskarten (Atem-Trick, Erdungs-Trick, Bewegungs-Trick, Gedanken-Trick); Laufzettel pro Kind zum Bewerten der Tricks; Arbeitsblatt 'Mein Notfallkoffer' (Kofferform) pro Kind; Stifte; genug Platz, damit die Gruppen die Bewegungs-Tricks ohne Gedränge machen können.",
+    "remark": "Differenzierung: C3 probiert die Tricks mit Bildanleitung aus und wählt einen Lieblings-Trick; C4 testet alle vier, vergleicht ihre Wirkung und ordnet jedem Trick eine passende Situation zu. Sicherheitshinweis: Beim Atem-Trick langsam und ohne Pressen atmen – wer sich schwindelig fühlt, atmet normal weiter; die Bewegungs-Tricks bleiben sanft (kein Hauen, kein wildes Toben). Hinweis: Diese schnellen Tricks helfen bei normaler Aufregung; bei anhaltender starker Angst oder Panik eines Kindes das Gespräch suchen und an die SePAS-/ETEP-Fachkraft weitergeben. Achte sensibel auf Kinder mit ausgeprägter Prüfungs- oder Sozialangst und würdige schon kleine Erfolge.",
+    "etepStufen": [
+      2,
+      3,
+      4
+    ],
+    "eldibGoals": [
+      "V-6",
+      "V-18",
+      "V-20",
+      "V-21",
+      "V-23",
+      "V-28",
+      "K-16",
+      "K-26",
+      "SOZ-9",
+      "SOZ-26",
+      "SOZ-34",
+      "KOG-37"
+    ],
+    "worksheet": {
+      "title": "Mein Notfallkoffer",
+      "intro": "Aufregung kommt manchmal blitzschnell. In deinem Notfallkoffer stecken die SOS-Tricks, die bei DIR wirken – griffbereit für den nächsten Moment, in dem es zu viel wird.",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "Die Tricks im Test"
+        },
+        {
+          "kind": "instruction",
+          "text": "Du hast vier SOS-Tricks ausprobiert. Wie gut hat dir jeder geholfen? Kreuze an."
+        },
+        {
+          "kind": "scale",
+          "text": "Atem-Trick (langsam ausatmen)",
+          "items": [
+            "hilft mir sehr",
+            "vielleicht",
+            "eher nicht"
+          ]
+        },
+        {
+          "kind": "scale",
+          "text": "Erdungs-Trick (Füße und Hände spüren)",
+          "items": [
+            "hilft mir sehr",
+            "vielleicht",
+            "eher nicht"
+          ]
+        },
+        {
+          "kind": "scale",
+          "text": "Bewegungs-Trick (Schultern, Hände ausschütteln)",
+          "items": [
+            "hilft mir sehr",
+            "vielleicht",
+            "eher nicht"
+          ]
+        },
+        {
+          "kind": "scale",
+          "text": "Gedanken-Trick (Stopp-Satz denken)",
+          "items": [
+            "hilft mir sehr",
+            "vielleicht",
+            "eher nicht"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "Das packe ich in meinen Koffer"
+        },
+        {
+          "kind": "instruction",
+          "text": "Wähle zwei bis drei Tricks, die dir am meisten geholfen haben, und schreibe sie auf."
+        },
+        {
+          "kind": "lines",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "Mein Stopp-Satz"
+        },
+        {
+          "kind": "box",
+          "text": "Der ruhige Satz, den ich mir in einem Aufregungsmoment sage:"
+        },
+        {
+          "kind": "heading",
+          "text": "Mein Einsatz-Plan"
+        },
+        {
+          "kind": "question",
+          "text": "In welcher Situation willst du deinen Notfallkoffer das nächste Mal öffnen?",
+          "lines": 2
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "kreativ-diaet-aus-drei-zufallszutaten-eine-idee-kochen",
+    "title": "Kreativ-Diät: Aus drei Zufallszutaten eine Idee kochen",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "C4",
+      "ES"
+    ],
+    "type": [
+      "ganz Stonn"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Einstieg und Auswertung im Plenum"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Ideen-Küche in festen Dreier- oder Vierergruppen"
+      },
+      {
+        "mode": "Individuel",
+        "note": "Stiller Ideen-Vorlauf: erst jeder für sich, dann teilen"
+      }
+    ],
+    "themes": [
+      "kreativitaet",
+      "kooperation",
+      "spiel-spass"
+    ],
+    "tags": [
+      "ideenfindung",
+      "zufall",
+      "brainstorming",
+      "querdenken",
+      "teamarbeit",
+      "erfinden",
+      "flexibilität"
+    ],
+    "shortDescription": "Kreativität entsteht selten aus dem Nichts, sondern aus überraschenden Kombinationen. In dieser Stunde ziehen Schüler:innen drei zufällige Zutatenkarten (ein Ding, ein Ort, ein Problem) und entwickeln daraus in der Gruppe eine Erfindung, Geschichte oder Lösung. Die enge Vorgabe nimmt den Druck der leeren Seite und macht erlebbar, dass Begrenzung Ideen anschiebt statt bremst.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Die leere Seite und der volle Topf (10 Min.)",
+        "text": "Fragen Sie offen: 'Wann hattet ihr zuletzt eine richtig gute Idee? Wie kam die zustande?' Sammeln Sie an der Tafel. Führen Sie dann das Bild der 'Kreativ-Diät' ein: Wer alles darf, fühlt sich oft gelähmt – ein Koch mit drei Zutaten erfindet schneller als einer vor dem vollen Supermarkt. Zeigen Sie zwei zufällige Beispielkarten (z. B. 'Regenschirm' + 'U-Bahn' + 'Langeweile') und denken Sie 30 Sekunden laut vor, wie daraus eine Idee wachsen könnte."
+      },
+      {
+        "title": "Hinführung – Stiller Ideen-Vorlauf (8 Min.)",
+        "text": "Jede Gruppe zieht verdeckt drei Karten aus drei Stapeln: ein DING, ein ORT, ein PROBLEM. Zuerst arbeitet jeder allein und still: Auf einem Notizzettel schreibt jede:r in 4 Minuten so viele Verknüpfungs-Ideen wie möglich auf – Quantität vor Qualität, nichts ist zu verrückt. Regel: kein Bewerten, kein 'das geht nicht', kein Ausreden. Diese Stillarbeit sichert, dass auch ruhigere Schüler:innen mit eigenen Ideen in die Gruppe gehen."
+      },
+      {
+        "title": "Hauptteil – Ideen-Küche in der Gruppe (18 Min.)",
+        "text": "Nun legen alle ihre Zettel offen. Die Gruppe wählt EINE Idee aus oder mischt mehrere zu einer und baut sie aus: Was genau ist das? Wie funktioniert es? Wem hilft es? Sie halten das Ergebnis auf einem 'Rezept-Blatt' fest: Name der Idee, drei Zutaten, kurze Beschreibung, eine Skizze. Gehen Sie herum und stupsen Sie festgefahrene Gruppen mit der Frage an: 'Und was wäre das genaue Gegenteil davon?' oder 'Was, wenn es zehnmal größer wäre?'"
+      },
+      {
+        "title": "Abschluss – Markt der Ideen (9 Min.)",
+        "text": "Jede Gruppe stellt ihr Rezept in 60 Sekunden vor: Zutaten nennen, Idee zeigen. Kein Applaus-Wettbewerb, sondern eine Wertschätzungsrunde: Nach jeder Vorstellung sagt eine andere Gruppe EINE Sache, die sie an der Idee überraschend oder clever fand. Schließen Sie mit der Übertragung: 'Heute haben Begrenzungen euch geholfen. Wo im Alltag könnte das auch so sein, wenn ihr mal keine Idee habt?'"
+      }
+    ],
+    "duration": "45 Min.",
+    "materialsNeeded": "Drei vorbereitete Kartenstapel (DING / ORT / PROBLEM, je 15–20 Karten), Notizzettel, ein 'Rezept-Blatt' pro Gruppe (DIN A4), Stifte, ggf. Tafel/Flipchart für die Sammlung.",
+    "remark": "Differenzierung: Für ES-Gruppen weniger und konkretere Karten anbieten und das Rezept-Blatt stärker vorstrukturieren (Lückentext). Bewertungsfreiheit ist der Kern – greifen Sie sofort ein, wenn Ideen ausgelacht werden ('Hier gibt es keine dummen Ideen, nur noch nicht zu Ende gedachte'). Bei Gruppen, die sich nicht einigen können, ist auch das Mischen zweier Ideen ausdrücklich erlaubt.",
+    "etepStufen": [
+      3,
+      4
+    ],
+    "eldibGoals": [
+      "K-23",
+      "K-25",
+      "K-30",
+      "SOZ-18",
+      "SOZ-23",
+      "SOZ-31",
+      "V-23",
+      "V-24",
+      "V-28",
+      "KOG-44",
+      "KOG-53"
+    ],
+    "worksheet": {
+      "title": "Rezept-Blatt: Unsere Idee aus drei Zutaten",
+      "intro": "Erst still allein sammeln, dann in der Gruppe eine Idee auswählen oder mischen und hier festhalten.",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "Unsere drei Zutaten"
+        },
+        {
+          "kind": "table",
+          "items": [
+            "DING",
+            "ORT",
+            "PROBLEM"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "Unsere Idee"
+        },
+        {
+          "kind": "question",
+          "text": "Wie heißt eure Idee?",
+          "lines": 1
+        },
+        {
+          "kind": "question",
+          "text": "Was ist es und wie funktioniert es?",
+          "lines": 4
+        },
+        {
+          "kind": "question",
+          "text": "Wem hilft oder nützt es?",
+          "lines": 2
+        },
+        {
+          "kind": "instruction",
+          "text": "Macht hier eine schnelle Skizze davon:"
+        },
+        {
+          "kind": "box",
+          "lines": 5
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "was-waere-wenn-die-werkstatt-fuer-unmoegliche-fragen",
+    "title": "Was wäre, wenn ...? Die Werkstatt für unmögliche Fragen",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "C4",
+      "ES"
+    ],
+    "type": [
+      "ganz Stonn"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Gedanken-Aufwärmen und Schluss-Galerie gemeinsam"
+      },
+      {
+        "mode": "Individuel",
+        "note": "Jede:r wählt eine Was-wäre-wenn-Frage und denkt sie aus"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Denk-Tandems schärfen die Idee gegenseitig"
+      }
+    ],
+    "themes": [
+      "kreativitaet",
+      "selbstwahrnehmung",
+      "kommunikation"
+    ],
+    "tags": [
+      "fantasie",
+      "gedankenexperiment",
+      "querdenken",
+      "fragen",
+      "vorstellungskraft",
+      "weiterdenken",
+      "perspektive"
+    ],
+    "shortDescription": "Echte Kreativität beginnt mit einer guten Frage. In dieser Stunde nehmen Schüler:innen 'Was wäre, wenn ...?'-Fragen als Startrampe und denken eine unmögliche oder absurde Annahme konsequent zu Ende. Die Übung trainiert divergentes Denken, Mut zur eigenen Vorstellung und die Fähigkeit, eine Idee gegen Rückfragen weiterzubauen, statt sie sofort zu verwerfen.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Gedanken-Aufwärmen im Stehkreis (8 Min.)",
+        "text": "Alle stehen im Kreis. Werfen Sie schnelle, kurze 'Was-wäre-wenn'-Fragen in die Runde, jede:r darf spontan einen Halbsatz ergänzen, dann geht es weiter: 'Was wäre, wenn Tiere reden könnten?', 'Was wäre, wenn ein Tag 30 Stunden hätte?'. Tempo halten, alle Antworten gelten. Ziel ist nicht Richtigkeit, sondern das Gehirn auf 'Möglichkeit' zu schalten. Benennen Sie danach: 'Genau dieses Weiterdenken machen wir jetzt gründlich.'"
+      },
+      {
+        "title": "Hinführung – Eine Frage wählen und aufmachen (8 Min.)",
+        "text": "Jede:r zieht oder wählt aus einer Liste eine 'Was-wäre-wenn'-Frage (oder erfindet eine eigene). Erste stille Einzelarbeit auf dem Arbeitsblatt: drei direkte Folgen der Annahme notieren ('Wenn das so wäre, dann ...'). Modellieren Sie an einem Beispiel an der Tafel, wie aus einer Folge die nächste wächst: 'Wenn niemand mehr schlafen müsste, dann ... – und dann wiederum ...'. So entsteht eine Kette statt nur einer Idee."
+      },
+      {
+        "title": "Hauptteil – Denk-Tandem und Ausbau (20 Min.)",
+        "text": "Schüler:innen finden sich zu zweit zusammen und stellen sich gegenseitig ihre Welt vor. Die zuhörende Person hat genau eine Aufgabe: bohrende, neugierige Rückfragen stellen ('Und was passiert dann mit ...?', 'Wer hätte ein Problem damit?', 'Was wäre das Gute daran?'). Diese Fragen zwingen die Idee, sich zu vertiefen. Danach baut jede:r die eigene Was-wäre-wenn-Welt auf dem Arbeitsblatt aus: ein Vorteil, ein Problem, eine überraschende Folge und eine kleine Szene oder Skizze aus dieser Welt."
+      },
+      {
+        "title": "Abschluss – Galerie der Möglichkeiten (9 Min.)",
+        "text": "Die Arbeitsblätter werden als stille Galerie ausgelegt oder aufgehängt. Mit einem Klebepunkt markiert jede:r die EINE fremde Welt, die sie am meisten zum Staunen oder Nachdenken gebracht hat. Zwei bis drei der markierten Welten werden kurz von ihren Autor:innen vorgestellt. Schluss-Impuls: 'Welche eurer Was-wäre-wenn-Fragen würdet ihr gern wirklich beantwortet bekommen?' – und der Hinweis, dass viele Erfindungen genau mit so einer Frage angefangen haben."
+      }
+    ],
+    "duration": "45 Min.",
+    "materialsNeeded": "Liste mit 20–25 'Was-wäre-wenn'-Fragen (auf Karten oder als Aushang), Arbeitsblatt pro Person, Stifte, Klebepunkte für die Galerie, ggf. Magnete/Klebeband zum Aufhängen.",
+    "remark": "Differenzierung: ES-Schüler:innen mit konkreten, lebensnahen Fragen starten lassen ('Was wäre, wenn unsere Schule ein Haustier hätte?') und die Folgen-Kette auf zwei Schritte verkürzen. Sehr fantasievolle Schüler:innen dürfen mehrere Fragen verketten. Achten Sie darauf, dass beim Tandem wirklich gefragt und nicht bewertet wird – geben Sie die Frage-Starter sichtbar vor.",
+    "etepStufen": [
+      3,
+      4
+    ],
+    "eldibGoals": [
+      "K-23",
+      "K-26",
+      "K-30",
+      "SOZ-13",
+      "SOZ-33",
+      "KOG-37",
+      "KOG-38",
+      "KOG-46",
+      "KOG-53",
+      "KOG-58"
+    ],
+    "worksheet": {
+      "title": "Meine Was-wäre-wenn-Welt",
+      "intro": "Wähle eine Frage. Denke die Annahme Schritt für Schritt zu Ende – kein Gedanke ist zu verrückt.",
+      "blocks": [
+        {
+          "kind": "question",
+          "text": "Meine Was-wäre-wenn-Frage lautet:",
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "Meine Folgen-Kette"
+        },
+        {
+          "kind": "instruction",
+          "text": "Wenn das so wäre, dann ... – und dann ... – und dann ..."
+        },
+        {
+          "kind": "lines",
+          "lines": 4
+        },
+        {
+          "kind": "heading",
+          "text": "Meine Welt genauer"
+        },
+        {
+          "kind": "question",
+          "text": "Ein Vorteil dieser Welt:",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "Ein Problem in dieser Welt:",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "Eine überraschende Folge:",
+          "lines": 2
+        },
+        {
+          "kind": "instruction",
+          "text": "Eine kleine Szene oder Skizze aus deiner Welt:"
+        },
+        {
+          "kind": "box",
+          "lines": 5
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "schrott-skulptur-aus-muell-wird-ein-klassen-wesen",
+    "title": "Schrott-Skulptur: Aus Müll wird ein Klassen-Wesen",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "C4",
+      "ES"
+    ],
+    "type": [
+      "ganz Stonn"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Materialbörse, Taufe und Ausstellung gemeinsam"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Bau-Teams von drei bis vier Personen je Skulptur"
+      }
+    ],
+    "themes": [
+      "kreativitaet",
+      "kooperation",
+      "ressourcen"
+    ],
+    "tags": [
+      "upcycling",
+      "basteln",
+      "material",
+      "gestalten",
+      "teamwork",
+      "nachhaltigkeit",
+      "skulptur"
+    ],
+    "shortDescription": "Kreativität heißt, in scheinbar Wertlosem Möglichkeiten zu sehen. In dieser handlungsorientierten Stunde bauen Bau-Teams aus mitgebrachtem 'Schrott' (Verpackungen, Korken, Draht, Reste) ein eigenes Fantasie-Wesen oder eine Maschine. Die Schüler:innen müssen Material umdeuten, sich im Team auf eine Form einigen und ihrer Skulptur am Ende eine Geschichte und einen Namen geben – Kopf, Hand und Vorstellung zugleich.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Die Materialbörse (8 Min.)",
+        "text": "Breiten Sie das gesammelte Material auf einem 'Markt-Tisch' aus. Lassen Sie die Schüler:innen herumgehen und nur schauen, noch nicht nehmen. Impuls: 'Das hier ist für viele Müll. Aber jedes Teil kann auch etwas anderes werden – ein Korken wird ein Auge, ein Strohhalm ein Bein. Was seht ihr?' Sammeln Sie zwei, drei spontane Umdeutungen laut. Erklären Sie die Aufgabe: Jedes Team baut ein Wesen oder eine Maschine, die es so noch nie gab."
+      },
+      {
+        "title": "Hinführung – Skizze und Materialwahl im Team (8 Min.)",
+        "text": "Die Bau-Teams setzen sich zusammen und einigen sich zuerst auf dem Planungsblatt: Was bauen wir ungefähr? Ein Tier, ein Roboter, ein Mischwesen? Jedes Team macht eine grobe Skizze und schreibt auf, welche Teile es von der Materialbörse braucht. Erst dann holen sie ihr Material – das verhindert Gerangel und zwingt zur Absprache. Betonen Sie: Der Plan darf sich beim Bauen noch ändern, das ist normal."
+      },
+      {
+        "title": "Hauptteil – Bauphase (20 Min.)",
+        "text": "Die Teams bauen ihre Skulptur. Geben Sie klare technische Hilfen (Heißkleber nur durch die Lehrkraft oder mit Aufsicht, Klebeband und Schnur frei). Gehen Sie herum und unterstützen Sie bei Frust mit Lösungsfragen statt Lösungen: 'Womit könntet ihr das befestigen?', 'Was, wenn dieses Teil nicht das Bein, sondern der Hals wird?'. Achten Sie auf Rollenverteilung im Team – wer baut, wer hält, wer plant den nächsten Schritt. Kündigen Sie die letzten 3 Minuten als 'Fertigstellen, nicht neu anfangen' an."
+      },
+      {
+        "title": "Abschluss – Taufe und Ausstellung (9 Min.)",
+        "text": "Jedes Team gibt seiner Skulptur einen Namen und denkt sich in zwei Sätzen aus: Wer oder was ist das, und was kann es? Die Werke werden als 'Galerie der Wesen' aufgestellt. Reihum stellt jedes Team sein Wesen vor (Name, was es kann). Wertschätzungsrunde: Die Zuhörenden nennen zu jedem Wesen eine clevere Umdeutung von Material, die sie entdeckt haben ('Ich sehe, der Flaschendeckel ist jetzt ein Auge'). Schluss: kurzer Blick darauf, dass aus 'Müll' etwas Einzigartiges geworden ist."
+      }
+    ],
+    "duration": "45 Min. (bei aufwändigeren Skulpturen auf eine Doppelstunde erweiterbar)",
+    "materialsNeeded": "Gesammeltes sauberes Verpackungsmaterial (Schachteln, Korken, Deckel, Klopapierrollen, Stoffreste, Draht, Strohhalme), Klebeband, Schnur/Wolle, Scheren, eine Heißklebepistole unter Aufsicht, Planungsblatt pro Team, ein Tisch als Materialbörse.",
+    "remark": "Sicherheit: Heißkleber, Draht und Scheren nur mit klarer Ansage und Aufsicht; scharfe Kanten vorab prüfen. Bitten Sie schon eine Woche vorher um saubere Materialspenden und halten Sie einen Grundvorrat bereit, damit kein Kind ohne Material dasteht. Differenzierung: ES-Teams kleiner halten und mehr fertig vorbereitetes Material (vorgeschnittene Teile) anbieten; Fokus auf das gemeinsame Tun, nicht auf ein perfektes Ergebnis.",
+    "etepStufen": [
+      3,
+      4
+    ],
+    "eldibGoals": [
+      "K-22",
+      "K-23",
+      "SOZ-16",
+      "SOZ-18",
+      "SOZ-19",
+      "SOZ-22",
+      "SOZ-23",
+      "V-7",
+      "V-23",
+      "V-28",
+      "KOG-44"
+    ],
+    "worksheet": {
+      "title": "Bau-Plan: Unser Schrott-Wesen",
+      "intro": "Plant zuerst gemeinsam, holt dann euer Material. Der Plan darf sich beim Bauen ändern.",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "Unsere Idee"
+        },
+        {
+          "kind": "question",
+          "text": "Was bauen wir ungefähr? (Tier, Roboter, Mischwesen ...)",
+          "lines": 2
+        },
+        {
+          "kind": "instruction",
+          "text": "Macht hier eine grobe Skizze:"
+        },
+        {
+          "kind": "box",
+          "lines": 5
+        },
+        {
+          "kind": "heading",
+          "text": "Das brauchen wir von der Materialbörse"
+        },
+        {
+          "kind": "lines",
+          "lines": 4
+        },
+        {
+          "kind": "heading",
+          "text": "Nach dem Bauen"
+        },
+        {
+          "kind": "question",
+          "text": "Name unseres Wesens:",
+          "lines": 1
+        },
+        {
+          "kind": "question",
+          "text": "Wer oder was ist es, und was kann es?",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "Wer hat was gemacht?"
+        },
+        {
+          "kind": "checklist",
+          "items": [
+            "geplant / skizziert",
+            "Material geholt",
+            "gebaut / geklebt",
+            "Geschichte erfunden"
+          ]
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "geschichten-maschine-wuerfel-wendung-weitererzaehlen",
+    "title": "Geschichten-Maschine: Würfel, Wendung, Weitererzählen",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "C4",
+      "ES"
+    ],
+    "type": [
+      "ganz Stonn"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Einstieg und Vorlese-Runde im Plenum"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Erzähl-Teams würfeln und bauen gemeinsam eine Geschichte"
+      },
+      {
+        "mode": "Individuel",
+        "note": "Jede:r schreibt zum Schluss eine eigene Lieblings-Wendung"
+      }
+    ],
+    "themes": [
+      "kreativitaet",
+      "kommunikation",
+      "spiel-spass"
+    ],
+    "tags": [
+      "geschichten",
+      "erzählen",
+      "würfel",
+      "fantasie",
+      "sprache",
+      "schreiben",
+      "improvisation"
+    ],
+    "shortDescription": "Mit einer einfachen 'Geschichten-Maschine' aus Würfeln und Karten erfinden Schüler:innen reihum eine zusammenhängende Geschichte und müssen bei jeder Wendung flexibel weiterdenken. Die Stunde verbindet Fantasie mit Erzähl- und Sprachkompetenz: zuhören, anknüpfen, eine überraschende Wendung einbauen und der gemeinsamen Geschichte trotz Zufall einen roten Faden geben.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Ein Satz, viele Fortsetzungen (8 Min.)",
+        "text": "Starten Sie mit einem offenen Satzanfang: 'Als Mara die Tür öffnete, war der ganze Flur plötzlich ...'. Sammeln Sie schnell mehrere Fortsetzungen aus der Klasse, ohne zu werten. Zeigen Sie: Aus EINEM Anfang können ganz verschiedene Geschichten wachsen. Stellen Sie die 'Geschichten-Maschine' vor: drei Würfel oder Kartenstapel liefern eine HAUPTPERSON, einen ORT und ein EREIGNIS, und reihum baut jede:r ein Stück weiter."
+      },
+      {
+        "title": "Hinführung – Probelauf im Plenum (8 Min.)",
+        "text": "Würfeln Sie einmal für die ganze Klasse die drei Startbausteine aus und schreiben Sie sie an die Tafel. Spielen Sie eine kurze Runde laut durch: Sie beginnen mit einem Satz, dann ergänzt reihum jeweils eine freiwillige Person genau einen Satz. Halten Sie die Erzähl-Regeln fest und sichtbar: (1) am Vorherigen anknüpfen, (2) die Geschichte nicht sofort beenden, (3) keine Idee der anderen 'wegmachen', sondern weiterführen ('Ja, und ...')."
+      },
+      {
+        "title": "Hauptteil – Erzähl-Teams an der Maschine (20 Min.)",
+        "text": "In Vierergruppen würfelt jedes Team seine eigenen drei Startbausteine. Reihum erzählt jede:r einen oder zwei Sätze und schreibt sie auf das Geschichten-Blatt, sodass eine zusammenhängende Geschichte entsteht. Nach zwei Runden ziehen die Teams eine 'Wendungs-Karte' (z. B. 'Plötzlich ein Geräusch', 'Jemand sagt die Wahrheit', 'Es beginnt zu schneien') und müssen diese Wendung einbauen – das übt flexibles Umdenken. Gehen Sie herum und helfen Sie blockierten Teams mit Anknüpf-Fragen: 'Wie könnte eure Figur darauf reagieren?'"
+      },
+      {
+        "title": "Abschluss – Vorlese-Runde und Lieblings-Wendung (9 Min.)",
+        "text": "Ein bis zwei Teams lesen ihre Geschichte vor (oder eine ausgewählte Stelle). Die Klasse hört zu und nennt zu jeder Geschichte eine Stelle, die überraschte oder gefiel. Zum stillen Abschluss schreibt jede:r für sich auf das Blatt eine eigene alternative Wendung: 'Wenn ICH die Geschichte gehabt hätte, hätte ich an dieser Stelle ...'. Schluss-Gedanke: Dieselben Bausteine, viele Geschichten – so funktioniert auch Fantasie im Kopf."
+      }
+    ],
+    "duration": "45 Min.",
+    "materialsNeeded": "Geschichten-Würfel oder drei Kartenstapel (PERSON / ORT / EREIGNIS), ein Stapel 'Wendungs-Karten', ein Geschichten-Blatt pro Team, Stifte, Tafel/Flipchart für den Probelauf.",
+    "remark": "Differenzierung: ES-Schüler:innen dürfen mündlich erzählen, während eine Stütze (Mitschüler:in oder Lehrkraft) mitschreibt; Bildkarten statt Wortkarten erleichtern den Einstieg. Für sehr schreibstarke Gruppen mehr Wendungs-Karten einsetzen. Achten Sie auf die 'Ja, und ...'-Haltung: Greifen Sie ein, wenn jemand die Geschichte abrupt 'kaputtmacht' oder eine andere Idee abwertet.",
+    "etepStufen": [
+      3,
+      4
+    ],
+    "eldibGoals": [
+      "K-17",
+      "K-23",
+      "K-30",
+      "SOZ-13",
+      "SOZ-19",
+      "SOZ-23",
+      "V-23",
+      "V-24",
+      "KOG-44",
+      "KOG-53",
+      "KOG-37"
+    ],
+    "worksheet": {
+      "title": "Unsere Geschichte aus der Maschine",
+      "intro": "Würfelt eure Bausteine, dann erzählt reihum weiter. Baut die Wendungs-Karte ein.",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "Unsere Start-Bausteine"
+        },
+        {
+          "kind": "table",
+          "items": [
+            "PERSON",
+            "ORT",
+            "EREIGNIS"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "Unsere Geschichte"
+        },
+        {
+          "kind": "instruction",
+          "text": "Schreibt reihum, jede:r knüpft am vorherigen Satz an."
+        },
+        {
+          "kind": "lines",
+          "lines": 8
+        },
+        {
+          "kind": "question",
+          "text": "Welche Wendungs-Karte habt ihr gezogen und eingebaut?",
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "Meine eigene Wendung"
+        },
+        {
+          "kind": "question",
+          "text": "Wenn ICH die Geschichte gehabt hätte, hätte ich an einer Stelle ...",
+          "lines": 3
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "bis-hierhin-und-nicht-weiter-die-grenz-landkarte-unserer-klasse",
+    "title": "Bis hierhin und nicht weiter: Die Grenz-Landkarte unserer Klasse",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "ES"
+    ],
+    "type": [
+      "Projet"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Auftakt, Galerie und Abschluss-Zeremonie im Plenum"
+      },
+      {
+        "mode": "Individuel",
+        "note": "Erst jede:r für sich – eigene Grenzen aufspüren und benennen"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Vertrauens-Tandems und Kleingruppen schärfen und üben"
+      }
+    ],
+    "themes": [
+      "grenzen",
+      "selbstwahrnehmung",
+      "kommunikation"
+    ],
+    "tags": [
+      "persönliche grenzen",
+      "stopp sagen",
+      "körpersignale",
+      "selbstbehauptung",
+      "respekt",
+      "nein",
+      "achtsamkeit"
+    ],
+    "shortDescription": "In diesem Projekt über mehrere Einheiten entwickeln Jugendliche eine persönliche 'Grenz-Landkarte': Wo verlaufen meine Grenzen, wie merke ich, dass sie überschritten werden, und wie sage ich das klar? Sie lernen körperliche Frühwarnzeichen zu lesen, üben deutliche Stopp-Botschaften und gestalten am Ende eine Ausstellung, die das Thema Grenzen für die ganze Klasse sichtbar und besprechbar macht. Ziel ist, dass eigene Grenzen wahrgenommen, in Worte gefasst und respektvoll vertreten werden können.",
+    "ablauf": [
+      {
+        "title": "Einstieg (Einheit 1) – Die unsichtbare Linie spüren",
+        "text": "Beginnen Sie mit einer ruhigen Distanz-Übung: Zwei Freiwillige gehen langsam aufeinander zu, eine Person sagt 'Stopp', sobald der Abstand sich unangenehm anfühlt. Machen Sie sichtbar, dass diese Linie bei jedem Menschen woanders liegt und unsichtbar ist. Sammeln Sie an der Tafel: 'Wo habe ich überall Grenzen?' (Körper, Sachen, Zeit, Gefühle, Themen). Halten Sie als gemeinsame Haltung fest: Grenzen sind kein Misstrauen, sondern Selbstachtung – und sie gelten für alle gleich. Führen Sie das Projektziel ein: eine eigene Grenz-Landkarte und eine Ausstellung."
+      },
+      {
+        "title": "Hauptteil 1 (Einheit 1–2) – Meine Frühwarnzeichen lesen",
+        "text": "Die Jugendlichen arbeiten zunächst still am Arbeitsblatt: Sie notieren konkrete Situationen, in denen ihre Grenze schon einmal überschritten wurde (anonymisierbar, z. B. 'jemand liest ungefragt mein Handy'). Dann erforschen sie ihre Körpersignale: Was passiert im Bauch, in den Schultern, im Gesicht, kurz bevor ich 'das ist zu viel' denke? Modellieren Sie an einem eigenen Beispiel, wie ein Frühwarnzeichen funktioniert. Anschließend ordnen sie ihre Grenzen in vier Felder der Landkarte: nahe Grenzen (sofort Stopp), bewegliche Grenzen (kommt drauf an), grüne Zonen (ist okay) und Tabuzonen (nie). So entsteht ein differenziertes Bild statt nur 'gut/schlecht'."
+      },
+      {
+        "title": "Hauptteil 2 (Einheit 2–3) – Vom Gefühl zur klaren Stopp-Botschaft",
+        "text": "Jetzt geht es vom Spüren zum Sagen. Führen Sie die drei Bausteine einer klaren Grenz-Botschaft ein: (1) benennen, was ist ('Du nimmst mein Handy ohne zu fragen'), (2) die eigene Grenze ('Das will ich nicht'), (3) Wunsch/Konsequenz ('Frag mich bitte vorher'). In Vertrauens-Tandems üben die Jugendlichen reihum an eigenen oder gezogenen Situationskarten. Die zuhörende Person gibt Rückmeldung zu Stimme, Haltung und Klarheit – ohne zu bewerten, ob die Grenze 'richtig' ist. Wichtig als Regel: Jede genannte Grenze wird respektiert, niemand muss sie begründen. Schwierige Fälle (Grenze wird ignoriert) werden gemeinsam besprochen: Was ist dann mein nächster Schritt, wen hole ich dazu?"
+      },
+      {
+        "title": "Hauptteil 3 (Einheit 3–4) – Die Grenz-Landkarte gestalten und Galerie",
+        "text": "Die Jugendlichen gestalten ihre persönliche Grenz-Landkarte als sichtbares Werk (Plakat, Zeichnung, Collage): die vier Zonen, ihre wichtigsten Frühwarnzeichen und ein eigener, starker Stopp-Satz, den sie sich zutrauen. Wer möchte, ergänzt eine anonyme 'Botschaft an alle' (z. B. 'Auch wenn ich lache, kann etwas eine Grenze sein'). Richten Sie eine stille Galerie ein. Mit Klebepunkten markiert jede:r Aussagen, die sie wiedererkennt oder die ihnen Mut machen. So wird sichtbar: Viele teilen ähnliche Grenzen – das entlastet und verbindet."
+      },
+      {
+        "title": "Abschluss (Einheit 4) – Unsere Grenz-Vereinbarung",
+        "text": "Aus der Galerie destilliert die Klasse gemeinsam vier bis sechs Sätze für einen Grenz-Kodex, der im Raum hängen bleibt (z. B. 'Stopp heißt sofort Stopp – ohne Diskussion', 'Ich frage, bevor ich etwas von dir nehme oder anfasse', 'Ein Nein muss niemand begründen'). Jede:r unterschreibt symbolisch. Schließen Sie mit einer kurzen Reflexionsrunde: 'Welche eigene Grenze nehme ich heute klarer wahr – und was traue ich mir zu, das nächste Mal zu sagen?' Verweisen Sie auf Ansprechpersonen für den Fall, dass Grenzen ernsthaft verletzt werden."
+      }
+    ],
+    "duration": "Projekt über 4 Einheiten à 50 Min. (auch als Doppelstunden-Block planbar)",
+    "materialsNeeded": "Arbeitsblatt 'Meine Grenz-Landkarte' pro Person, Plakatkarton oder DIN-A3-Bögen, Stifte/Marker, Collage-Material (alte Zeitschriften, Kleber, Schere), Situationskarten mit Alltagsszenen, Klebepunkte für die Galerie, ein großes Blatt/Flipchart für den Grenz-Kodex, Tafel.",
+    "remark": "Sensibler Stoff: Stellen Sie zu Beginn Vertraulichkeit und Freiwilligkeit klar – niemand muss persönliche Erlebnisse offenlegen, anonymes Arbeiten ist immer erlaubt. Achten Sie auf mögliche Betroffenheit (Grenzverletzungen, Übergriffe) und halten Sie Ansprechpersonen (SePAS/schulische Beratung) bereit; bei konkreten Hinweisen auf Gewalt nicht im Plenum, sondern geschützt weiterarbeiten. Differenzierung: Situationskarten mit Bildunterstützung und vorformulierten Stopp-Sätzen für Jugendliche, denen das freie Formulieren schwerfällt.",
+    "etepStufen": [
+      3,
+      4,
+      5
+    ],
+    "eldibGoals": [
+      "V-20",
+      "V-21",
+      "V-27",
+      "K-21",
+      "K-26",
+      "K-27",
+      "K-30",
+      "SOZ-31",
+      "SOZ-32",
+      "SOZ-37",
+      "SOZ-40",
+      "KOG-58"
+    ],
+    "worksheet": {
+      "title": "Meine Grenz-Landkarte",
+      "intro": "Erst spüren, dann benennen, dann sagen. Du entscheidest selbst, was du aufschreibst und was du teilst.",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "Wo habe ich überall Grenzen?"
+        },
+        {
+          "kind": "instruction",
+          "text": "Denk an Körper, deine Sachen, deine Zeit, Gefühle und Themen, über die du nicht reden willst."
+        },
+        {
+          "kind": "lines",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "Meine Frühwarnzeichen"
+        },
+        {
+          "kind": "question",
+          "text": "Woran merke ich im Körper, dass eine Grenze gleich überschritten wird?",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "Meine vier Zonen"
+        },
+        {
+          "kind": "table",
+          "items": [
+            "Nahe Grenze (sofort Stopp)",
+            "Bewegliche Grenze (kommt drauf an)",
+            "Grüne Zone (ist okay)",
+            "Tabu (nie)"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "Meine klare Stopp-Botschaft"
+        },
+        {
+          "kind": "instruction",
+          "text": "Bau deinen Satz aus drei Teilen: Was ist? – Meine Grenze – Mein Wunsch."
+        },
+        {
+          "kind": "question",
+          "text": "Mein starker Stopp-Satz:",
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "Wenn mein Stopp nicht gehört wird"
+        },
+        {
+          "kind": "question",
+          "text": "Was ist dann mein nächster Schritt, und wen kann ich dazuholen?",
+          "lines": 2
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "mein-digitaler-zaun-grenzen-ziehen-in-chat-feed-und-online-welt",
+    "title": "Mein digitaler Zaun: Grenzen ziehen in Chat, Feed und Online-Welt",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "ES"
+    ],
+    "type": [
+      "Projet"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Einstieg, Recherche-Sammlung und Abschluss-Pakt gemeinsam"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Redaktions-Teams erarbeiten je einen Grenz-Bereich"
+      },
+      {
+        "mode": "Individuel",
+        "note": "Eigener digitaler Grenz-Check und persönliche Vorsätze"
+      }
+    ],
+    "themes": [
+      "grenzen",
+      "medien",
+      "selbstwahrnehmung"
+    ],
+    "tags": [
+      "digitale grenzen",
+      "privatsphäre",
+      "social media",
+      "erreichbarkeit",
+      "datenschutz",
+      "selbstschutz online",
+      "nein im chat"
+    ],
+    "shortDescription": "Online verschwimmen Grenzen leicht: ständige Erreichbarkeit, Gruppendruck im Chat, Fotos ohne Einverständnis, kein Feierabend. In diesem Projekt untersuchen Jugendliche, wo ihre digitalen Grenzen liegen, und gestalten als Redaktions-Teams einen 'Grenz-Guide' für die Klasse. Sie lernen, eigene Online-Grenzen zu erkennen, höflich aber klar Nein zu sagen und die Grenzen anderer im Netz zu respektieren. Das Ergebnis ist ein gemeinsamer, selbst erarbeiteter Umgangs-Pakt für die digitale Welt.",
+    "ablauf": [
+      {
+        "title": "Einstieg (Einheit 1) – Wann hört online auf, okay zu sein?",
+        "text": "Starten Sie mit kurzen, realistischen Situationen, zu denen sich die Jugendlichen still im Raum positionieren (Ecke 'okay' / Mitte 'kommt drauf an' / Ecke 'Grenze überschritten'): 'Eine Freundin postet ein Foto von dir ohne zu fragen', 'Nachts um zwei kommt eine Sprachnachricht und du sollst sofort antworten', 'Im Klassenchat wird über jemanden gelästert'. Werten Sie nicht, sondern fragen Sie nach: Warum stehst du dort? Machen Sie deutlich, dass digitale Grenzen genauso echt sind wie im echten Leben – nur unsichtbarer. Stellen Sie das Projektziel vor: einen 'Grenz-Guide' fürs Netz, von der Klasse für die Klasse."
+      },
+      {
+        "title": "Hauptteil 1 (Einheit 1–2) – Vier Grenz-Bereiche untersuchen",
+        "text": "Die Klasse bildet vier Redaktions-Teams, je eines für einen Bereich: (1) Privatsphäre & Fotos (Was darf von mir online, wer entscheidet?), (2) Erreichbarkeit & Zeit (Muss ich immer sofort antworten? Wann ist Schluss?), (3) Chat & Gruppendruck (Mitlästern, Kettennachrichten, Ausschluss), (4) Daten & Fremde (Was gebe ich preis, wer fragt nach?). Jedes Team sammelt typische Situationen, recherchiert kurz, was hilft, und formuliert Faustregeln. Geben Sie jedem Team Leitfragen und konkrete Beispielfälle an die Hand. Betonen Sie: Es geht nicht um Verbote von oben, sondern um kluge eigene Grenzen."
+      },
+      {
+        "title": "Hauptteil 2 (Einheit 2–3) – Nein sagen, ohne die Freundschaft zu riskieren",
+        "text": "Viele trauen sich online nicht abzulehnen, aus Angst, ausgeschlossen zu werden. Üben Sie deshalb Grenz-Botschaften für den Chat: kurz, klar, freundlich. Stellen Sie Formulierungs-Bausteine bereit ('Bitte poste keine Fotos von mir ohne zu fragen', 'Ich antworte abends nicht mehr, melde mich morgen', 'Das mache ich nicht mit, das ist gemein'). Die Teams schreiben für ihre Bereiche je zwei, drei Muster-Antworten und spielen sie in kurzen Mini-Szenen durch – auch den schwierigen Fall, dass die Grenze nicht akzeptiert wird (Blockieren, Erwachsene einbeziehen, Screenshots sichern). Halten Sie fest: Eine Grenze zu setzen ist kein Angriff und keine Spielverderberei."
+      },
+      {
+        "title": "Hauptteil 3 (Einheit 3–4) – Den Grenz-Guide gestalten",
+        "text": "Jedes Team bringt seinen Bereich in eine ansprechende Form: eine Seite des gemeinsamen 'Grenz-Guides' mit klaren Faustregeln, je einem hilfreichen Muster-Satz und einem 'Das tust du, wenn deine Grenze nicht respektiert wird'-Tipp. Layout, Sprache und Beispiele wählen die Jugendlichen selbst (Plakat, digitale Folie oder kleines Booklet). Lassen Sie die Teams ihre Seite kurz vorstellen; die anderen geben eine konkrete Rückmeldung und eine Ergänzung. So entsteht aus vier Teilen ein gemeinsames Werk, das alle mittragen."
+      },
+      {
+        "title": "Abschluss (Einheit 4) – Unser digitaler Grenz-Pakt",
+        "text": "Aus den vier Guide-Seiten leitet die Klasse fünf bis sieben gemeinsame Vereinbarungen ab (z. B. 'Kein Foto von anderen ohne Okay', 'Nachts ist Funkstille – das ist keine Beleidigung', 'Wir machen kein Lästern im Chat mit'). Der Pakt wird sichtbar aufgehängt und/oder digital geteilt. Zum Schluss füllt jede:r still einen kurzen persönlichen Grenz-Check aus: eine eigene digitale Grenze, die ich ab jetzt klarer ziehe. Weisen Sie auf Hilfe-Anlaufstellen hin (Vertrauensperson, BEE SECURE / schulische Beratung), falls online etwas wirklich eskaliert."
+      }
+    ],
+    "duration": "Projekt über 4 Einheiten à 50 Min.",
+    "materialsNeeded": "Positionierungs-Karten (okay / kommt drauf an / Grenze überschritten), Situationskarten mit Online-Szenen, Leitfragen-Bogen pro Team, Plakatkarton oder Tablets/Laptops für die Guide-Seiten, Stifte/Marker, Formulierungs-Bausteine als Kärtchen, ein großes Blatt für den gemeinsamen Grenz-Pakt.",
+    "remark": "Keine privaten Geräte vorführen lassen und keine echten Chatverläufe der Klasse im Plenum analysieren – arbeiten Sie mit anonymisierten Beispielfällen, um niemanden bloßzustellen. Bei Hinweisen auf Cybermobbing oder Übergriffe nicht öffentlich, sondern geschützt mit der betroffenen Person und der schulischen Beratung weiterarbeiten. Differenzierung: vorformulierte Muster-Sätze und Bildkarten für Teams, denen das freie Schreiben schwerfällt; rechtliche Aspekte (Recht am eigenen Bild) altersgerecht und ohne Drohton einbauen.",
+    "etepStufen": [
+      3,
+      4,
+      5
+    ],
+    "eldibGoals": [
+      "V-20",
+      "V-26",
+      "V-27",
+      "K-27",
+      "K-28",
+      "K-30",
+      "SOZ-32",
+      "SOZ-34",
+      "SOZ-35",
+      "SOZ-37",
+      "KOG-54",
+      "KOG-58"
+    ],
+    "worksheet": {
+      "title": "Mein digitaler Grenz-Check",
+      "intro": "Wo liegen deine Grenzen im Netz – und was traust du dich zu sagen? Du entscheidest, was du teilst.",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "Wo wird es mir online zu viel?"
+        },
+        {
+          "kind": "scale",
+          "text": "Ständig erreichbar sein müssen:",
+          "items": [
+            "okay",
+            "kommt drauf an",
+            "Grenze"
+          ]
+        },
+        {
+          "kind": "scale",
+          "text": "Fotos von mir ohne Nachfrage:",
+          "items": [
+            "okay",
+            "kommt drauf an",
+            "Grenze"
+          ]
+        },
+        {
+          "kind": "scale",
+          "text": "Im Chat über andere lästern:",
+          "items": [
+            "okay",
+            "kommt drauf an",
+            "Grenze"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "Meine wichtigste digitale Grenze"
+        },
+        {
+          "kind": "question",
+          "text": "Welche eine Grenze ziehe ich ab jetzt klarer?",
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "Mein Nein für den Chat"
+        },
+        {
+          "kind": "instruction",
+          "text": "Kurz, klar, freundlich – schreib einen Satz, den du dir wirklich zutraust."
+        },
+        {
+          "kind": "lines",
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "Wenn meine Grenze nicht respektiert wird"
+        },
+        {
+          "kind": "checklist",
+          "items": [
+            "ruhig wiederholen",
+            "Person blockieren / stummschalten",
+            "Beweise sichern (Screenshot)",
+            "Vertrauensperson einbeziehen"
+          ]
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "regeln-die-wir-selbst-machen-werkstatt-fuer-ein-faires-klassen-grenzwerk",
+    "title": "Regeln, die wir selbst machen: Werkstatt für ein faires Klassen-Grenzwerk",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "ES"
+    ],
+    "type": [
+      "Projet"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Auftakt, Aushandlung und Verabschiedung des Grenzwerks im Plenum"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Gesetzgebungs-Teams formulieren Regeln für je einen Lebensbereich"
+      },
+      {
+        "mode": "Individuel",
+        "note": "Eigene Stimme: Was brauche ich, damit ich mich in der Klasse sicher fühle?"
+      }
+    ],
+    "themes": [
+      "grenzen",
+      "gerechtigkeit",
+      "kooperation"
+    ],
+    "tags": [
+      "klassenregeln",
+      "fairness",
+      "mitbestimmung",
+      "aushandeln",
+      "verantwortung",
+      "gemeinschaft",
+      "respektgrenzen"
+    ],
+    "shortDescription": "Regeln, die von oben verordnet werden, werden oft umgangen – Regeln, die eine Gruppe selbst aushandelt, werden eher getragen. In diesem Projekt entwickelt die Klasse als 'Gesetzgebungs-Teams' ein eigenes Grenzwerk: faire, klare Regeln für das Miteinander, samt der Frage, was passiert, wenn jemand eine Grenze überschreitet. Die Jugendlichen üben, eigene Bedürfnisse einzubringen, unterschiedliche Interessen auszuhandeln und gemeinsame Grenzen verbindlich zu machen. Ergebnis ist ein von allen mitgetragenes Klassen-Grenzwerk.",
+    "ablauf": [
+      {
+        "title": "Einstieg (Einheit 1) – Wozu überhaupt Grenzen in einer Gruppe?",
+        "text": "Beginnen Sie mit einem kurzen Gedankenexperiment: 'Stellt euch eine Klasse völlig ohne Regeln vor – einen Tag lang. Was wäre toll, was würde schiefgehen, und wer hätte am Ende die schlechtesten Karten?' Sammeln Sie die Antworten und führen Sie den Kern ein: Grenzen schützen vor allem die, die sich am wenigsten wehren können – sie schaffen Fairness, nicht Gängelung. Unterscheiden Sie 'Verbote von außen' und 'Grenzen, die wir uns selbst geben'. Stellen Sie das Projektziel vor: Die Klasse schreibt ihr eigenes Grenzwerk – und entscheidet auch mit, was bei Überschreitung passiert."
+      },
+      {
+        "title": "Hauptteil 1 (Einheit 1–2) – Bedürfnisse sammeln und Bereiche aufteilen",
+        "text": "Zuerst die leise Stimme jedes Einzelnen: Am Arbeitsblatt notiert jede:r still, was sie braucht, um sich in der Klasse sicher und respektiert zu fühlen ('Ich brauche, dass ...'). Anonym eingesammelt und vorgelesen entsteht ein ehrliches Stimmungsbild ohne Bloßstellung. Daraus leiten Sie gemeinsam vier bis fünf Bereiche ab (z. B. Umgang in Konflikten, Eigentum/Sachen, Sprache & Witze, Raum & Lautstärke, digitale Klassengruppe). Jeder Bereich geht an ein Gesetzgebungs-Team. Auftrag: aus den gesammelten Bedürfnissen klare, positiv formulierte Grenzen machen ('Wir reden so miteinander, dass ...' statt nur 'Verboten ist ...')."
+      },
+      {
+        "title": "Hauptteil 2 (Einheit 2–3) – Regeln schärfen und gerecht machen",
+        "text": "Die Teams formulieren je zwei bis vier Grenz-Regeln und prüfen sie an drei Tests: Ist sie klar (versteht jede:r, was gemeint ist)? Ist sie fair (gilt sie wirklich für alle, auch für die Beliebten und die Lauten)? Ist sie machbar (kann man sie im Alltag einhalten)? Lassen Sie schwierige Fälle durchdenken: Was, wenn jemand eine Grenze überschreitet – was wäre eine faire, wiedergutmachende Reaktion statt bloßer Strafe? Modellieren Sie das an einem Beispiel (z. B. abwertender Spruch: zuhören, Wirkung benennen, Wiedergutmachung statt Demütigung). Jedes Team bereitet vor, seine Regeln der Klasse zu begründen und zu verteidigen."
+      },
+      {
+        "title": "Hauptteil 3 (Einheit 3–4) – Die große Aushandlung",
+        "text": "Nun tagt das 'Klassen-Parlament'. Jedes Team stellt seine Grenz-Regeln vor und begründet sie. Die Klasse darf nachfragen, Einwände bringen und Änderungen vorschlagen – moderiert und mit fester Redeordnung. Strittige Punkte werden ausgehandelt, nicht überstimmt-und-vergessen: Suchen Sie nach Formulierungen, mit denen möglichst alle leben können. Erst wenn ein Punkt mehrheitsfähig und fair ist, wird er ins gemeinsame Grenzwerk aufgenommen. Diese Phase ist das Herzstück: Hier üben die Jugendlichen, eigene Grenzen zu vertreten UND die der anderen anzuerkennen."
+      },
+      {
+        "title": "Abschluss (Einheit 4) – Unser Grenzwerk in Kraft setzen",
+        "text": "Das fertige Grenzwerk wird sauber festgehalten (Plakat oder Urkunde) und sichtbar aufgehängt. Jede:r unterschreibt – nicht als Pflicht, sondern als Selbstverpflichtung. Vereinbaren Sie einen 'Check-Termin' in einigen Wochen: Was klappt, was muss nachgebessert werden? Ein Grenzwerk darf wachsen. Schließen Sie mit einer Reflexionsrunde: 'Welche Grenze war mir wichtig durchzusetzen – und wo habe ich für eine fremde Grenze nachgegeben?' Damit wird erfahrbar, dass faire Grenzen immer ein Geben und Nehmen sind."
+      }
+    ],
+    "duration": "Projekt über 4 Einheiten à 50 Min. (Aushandlungsphase ggf. als Doppelstunde)",
+    "materialsNeeded": "Arbeitsblatt 'Meine Stimme fürs Grenzwerk' pro Person, Box für anonyme Bedürfnis-Zettel, Plakatbögen pro Team, Marker, Moderationskarten, eine sichtbare Redeordnung/Redekugel für die Aushandlung, ein großes Blatt oder eine 'Urkunde' für das fertige Grenzwerk.",
+    "remark": "Achten Sie in der Aushandlung strikt auf die Redeordnung, damit nicht die Lautesten das Grenzwerk dominieren – die anonyme Bedürfnis-Sammlung sichert die leisen Stimmen ab. Steuern Sie weg von reiner Strafenlogik hin zu Wiedergutmachung; Regeln dürfen niemanden beschämen. Differenzierung: Satzanfänge und Beispiel-Regeln für Teams bereitstellen, denen das Formulieren schwerfällt. Hinweis: Das Grenzwerk muss mit der Hausordnung der Schule vereinbar bleiben – klären Sie den Rahmen vorab.",
+    "etepStufen": [
+      4,
+      5
+    ],
+    "eldibGoals": [
+      "V-17",
+      "V-18",
+      "V-27",
+      "V-32",
+      "K-30",
+      "K-31",
+      "SOZ-27",
+      "SOZ-32",
+      "SOZ-34",
+      "SOZ-39",
+      "KOG-54",
+      "KOG-58"
+    ],
+    "worksheet": {
+      "title": "Meine Stimme fürs Grenzwerk",
+      "intro": "Bevor wir gemeinsam Regeln machen, zählt erst deine eigene Stimme. Du kannst anonym bleiben.",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "Was ich brauche"
+        },
+        {
+          "kind": "instruction",
+          "text": "Ergänze ehrlich – es geht darum, dass sich alle sicher und respektiert fühlen."
+        },
+        {
+          "kind": "question",
+          "text": "Ich brauche in dieser Klasse, dass ...",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "Eine Grenze, die mir besonders wichtig ist"
+        },
+        {
+          "kind": "question",
+          "text": "Welche eine Regel wäre dir am wichtigsten – und warum?",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "Der Fairness-Test"
+        },
+        {
+          "kind": "instruction",
+          "text": "Prüfe deine Regel-Idee:"
+        },
+        {
+          "kind": "checklist",
+          "items": [
+            "Ist klar formuliert (alle verstehen sie)",
+            "Ist fair (gilt wirklich für ALLE)",
+            "Ist machbar (im Alltag einhaltbar)"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "Wenn jemand die Grenze überschreitet"
+        },
+        {
+          "kind": "question",
+          "text": "Was wäre eine faire Reaktion, die wiedergutmacht statt nur bestraft?",
+          "lines": 2
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "standhalten-unter-druck-wenn-die-gruppe-draengt-und-ich-nein-meine",
+    "title": "Standhalten unter Druck: Wenn die Gruppe drängt und ich Nein meine",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "ES"
+    ],
+    "type": [
+      "Projet"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Einstieg, Forum-Theater und Abschluss gemeinsam"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Szenen-Teams entwickeln und spielen Druck-Situationen"
+      },
+      {
+        "mode": "Individuel",
+        "note": "Eigener Standhalte-Plan und persönliche Nein-Strategien"
+      }
+    ],
+    "themes": [
+      "grenzen",
+      "impulskontrolle",
+      "selbstwertgefuehl"
+    ],
+    "tags": [
+      "gruppendruck",
+      "nein sagen",
+      "standhaftigkeit",
+      "selbstbehauptung",
+      "mut",
+      "peer pressure",
+      "entscheidungen"
+    ],
+    "shortDescription": "Eine eigene Grenze zu kennen ist eine Sache – sie zu halten, wenn Freunde drängen, eine andere. In diesem Projekt erarbeiten Jugendliche, wie Gruppendruck wirkt und wie man bei einer Grenze bleibt, ohne dazustehen wie ein Spielverderber. Über Forum-Theater erproben sie konkrete Nein-Strategien in realistischen Situationen und entwickeln einen persönlichen Standhalte-Plan. Ziel ist, dem Druck der Gruppe eine eigene Entscheidung entgegensetzen zu können und diese ruhig zu vertreten.",
+    "ablauf": [
+      {
+        "title": "Einstieg (Einheit 1) – Wie sich Druck anfühlt",
+        "text": "Beginnen Sie mit einem kurzen, harmlosen Experiment: Bitten Sie eine kleine Gruppe (eingeweiht) einstimmig eine offensichtlich falsche Antwort zu geben, und beobachten Sie, wie schwer es einer uneingeweihten Person fällt, zu widersprechen. Lösen Sie auf und besprechen Sie: Was macht Gruppendruck mit uns? Sammeln Sie typische Sätze, mit denen gedrängt wird ('Stell dich nicht so an', 'Alle machen das', 'Bist du feige?'). Machen Sie deutlich: Dem Druck nachzugeben ist menschlich – und genau deshalb lohnt es sich, vorher zu üben. Stellen Sie das Projektziel vor: Strategien zum Standhalten und ein eigener Standhalte-Plan."
+      },
+      {
+        "title": "Hauptteil 1 (Einheit 1–2) – Die Werkzeuge zum Neinsagen",
+        "text": "Führen Sie eine 'Nein-Werkzeugkiste' ein und üben Sie die Werkzeuge zunächst trocken in Partnerarbeit: das klare Kurz-Nein ('Nein, das mache ich nicht'), die kaputte Schallplatte (ruhig wiederholen, ohne sich in Diskussionen ziehen zu lassen), das Nein-mit-Alternative ('Nein, aber lass uns stattdessen ...'), der Gesichtswahrungs-Ausstieg ('Ist nicht mein Ding, viel Spaß euch') und das Verbündeten-Holen (jemanden ansprechen, der ähnlich denkt). Lassen Sie jede:n ausprobieren, welches Werkzeug zu ihr passt. Betonen Sie Körpersprache: ruhiger Stand, fester Blick, Stimme nicht hochgehen lassen."
+      },
+      {
+        "title": "Hauptteil 2 (Einheit 2–3) – Forum-Theater: Szenen, die man anhalten darf",
+        "text": "Szenen-Teams entwickeln kurze, realistische Druck-Situationen aus dem Jugendalltag (eine Mutprobe, Mitmachen beim Auslachen, etwas Verbotenes, ungewolltes Teilen eines Fotos). Eine Szene wird vorgespielt und endet ungut. Dann beginnt das Forum-Theater: Die Szene wird erneut gespielt, und Zuschauende dürfen 'Stopp' rufen, die unter Druck stehende Figur ersetzen und ein Nein-Werkzeug ausprobieren. Die Gruppe beobachtet: Was hat gewirkt, was hat den Druck verstärkt? So wird Standhalten nicht nur besprochen, sondern leibhaftig geprobt – in einem geschützten Rahmen, in dem Scheitern erlaubt ist."
+      },
+      {
+        "title": "Hauptteil 3 (Einheit 3–4) – Mein persönlicher Standhalte-Plan",
+        "text": "Jetzt wird es konkret und individuell. Am Arbeitsblatt erstellt jede:r einen Standhalte-Plan: In welcher realen Situation gerate ich am ehesten unter Druck? Welche zwei Werkzeuge passen für mich? Welchen Satz lege ich mir vorher zurecht? Wer ist mein möglicher Verbündeter? Und woran erkenne ich früh, dass es gleich brenzlig wird? Wer mag, übt seinen Satz noch einmal im Vertrauens-Tandem. Wichtig: Der Plan gehört der Person allein, er muss nicht vorgezeigt werden. So nimmt jede:r etwas Eigenes mit, das im Ernstfall abrufbar ist."
+      },
+      {
+        "title": "Abschluss (Einheit 4) – Rückhalt für alle",
+        "text": "Schließen Sie den Kreis von der einzelnen zur gemeinsamen Stärke: Sammeln Sie, wie die Klasse einander den Rücken stärken kann, wenn jemand standhält (nicht auslachen, sich anschließen, danebenstehen). Halten Sie zwei, drei 'Rückhalt-Regeln' fest. Beenden Sie mit einer kurzen Runde: 'Welches Nein traue ich mir jetzt eher zu als vor dem Projekt?' Würdigen Sie ausdrücklich, dass Standhalten Mut kostet – und verweisen Sie auf Ansprechpersonen, falls jemand unter ernsthaftem Druck steht (Mutproben, Nötigung), der die Schule betrifft."
+      }
+    ],
+    "duration": "Projekt über 4 Einheiten à 50 Min. (Forum-Theater ggf. als Doppelstunde)",
+    "materialsNeeded": "'Nein-Werkzeugkiste' als Kärtchen oder Plakat, Situationskarten mit Druck-Szenen, Arbeitsblatt 'Mein Standhalte-Plan' pro Person, etwas freie Spielfläche für das Forum-Theater, ggf. einfache Requisiten, Tafel/Flipchart für Druck-Sätze und Rückhalt-Regeln.",
+    "remark": "Sicherheit im Rollenspiel: klare Stopp-Regel, keine echten Namen aus der Klasse in Szenen, niemand spielt Erlebnisse nach, die ihn belasten – Freiwilligkeit gilt durchgehend. Achten Sie darauf, dass aus dem Üben kein echter Druck wird ('Du musst doch mitspielen!'). Bei Hinweisen auf reale Nötigung, Mutproben oder Suchtmittel geschützt und mit der schulischen Beratung weiterarbeiten, nicht im Plenum. Differenzierung: vorformulierte Nein-Sätze und einfache, eindeutige Szenen für Jugendliche, denen freies Spiel oder Formulieren schwerfällt.",
+    "etepStufen": [
+      3,
+      4,
+      5
+    ],
+    "eldibGoals": [
+      "V-20",
+      "V-21",
+      "V-23",
+      "V-26",
+      "V-27",
+      "K-26",
+      "K-30",
+      "SOZ-32",
+      "SOZ-37",
+      "SOZ-39",
+      "KOG-58",
+      "KOG-61"
+    ],
+    "worksheet": {
+      "title": "Mein Standhalte-Plan",
+      "intro": "Wer vorher überlegt, hält im Ernstfall leichter stand. Dieser Plan gehört nur dir – du musst ihn niemandem zeigen.",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "Meine Druck-Situation"
+        },
+        {
+          "kind": "question",
+          "text": "In welcher echten Situation gerate ich am ehesten unter Druck?",
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "Mein Frühwarnzeichen"
+        },
+        {
+          "kind": "question",
+          "text": "Woran merke ich früh, dass es gleich brenzlig wird?",
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "Meine Werkzeuge"
+        },
+        {
+          "kind": "instruction",
+          "text": "Kreuze die zwei an, die am besten zu dir passen."
+        },
+        {
+          "kind": "checklist",
+          "items": [
+            "Klares Kurz-Nein",
+            "Kaputte Schallplatte (ruhig wiederholen)",
+            "Nein mit Alternative",
+            "Gesichtswahrender Ausstieg",
+            "Verbündeten holen"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "Mein Satz für den Ernstfall"
+        },
+        {
+          "kind": "question",
+          "text": "Welchen Satz lege ich mir vorher zurecht?",
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "Mein Verbündeter"
+        },
+        {
+          "kind": "question",
+          "text": "Wer könnte mir den Rücken stärken?",
+          "lines": 1
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "die-mutige-mitte-wer-hinschaut-kann-etwas-veraendern",
+    "title": "Die mutige Mitte: Wer hinschaut, kann etwas verändern",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "C1",
+      "C2"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Einstieg, Standbild-Demonstration und Abschluss im Plenum"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Helfer-Werkstatt in festen Vierergruppen"
+      }
+    ],
+    "themes": [
+      "mobbing",
+      "kommunikation",
+      "gerechtigkeit"
+    ],
+    "tags": [
+      "zuschauer",
+      "zivilcourage",
+      "hilfe holen",
+      "ausgrenzung",
+      "klassengemeinschaft",
+      "einmischen",
+      "verantwortung"
+    ],
+    "shortDescription": "Bei Mobbing gibt es selten nur Täter und Opfer – meistens schaut eine ganze Gruppe zu. Diese Aktivität macht Kindern bewusst, dass gerade die Zuschauenden (die 'mutige Mitte') das Geschehen kippen können. An kurzen Standbildern erproben sie konkrete, ungefährliche Handlungsmöglichkeiten, von 'Hilfe holen' bis 'sich dazustellen', und merken sich einen persönlichen ersten Schritt.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Das stille Dreieck (10 Min.)",
+        "text": "Stellen Sie drei Stühle auf: einer für 'jemand wird geärgert', einer für 'jemand ärgert', viele leere Plätze für 'die anderen, die zuschauen'. Erzählen Sie eine kurze, alltagsnahe Szene (jemand wird beim Anstellen immer wieder weggeschubst und ausgelacht). Fragen Sie: 'Wie viele Menschen sind hier eigentlich beteiligt?' Lenken Sie den Blick auf die Zuschauenden: 'Was machen die gerade? Und was könnten sie tun?' Sammeln Sie erste Ideen ungewertet an der Tafel. Benennen Sie das Ziel: Heute schauen wir auf die Gruppe, die zusieht – die mutige Mitte."
+      },
+      {
+        "title": "Hinführung – Vier Wege, die Mitte zu verlassen (8 Min.)",
+        "text": "Stellen Sie vier konkrete Handlungsmöglichkeiten als Karten vor und erklären Sie jede mit einem Beispielsatz: HILFE HOLEN ('Ich hole eine Lehrerin'), DAZUSTELLEN ('Ich stelle mich neben die Person'), ANSPRECHEN ('Komm, lass uns gehen' – zur betroffenen Person), STOPP SAGEN ('Hör auf, das ist gemein'). Machen Sie deutlich: Es gibt nicht den einen richtigen Weg, und Hilfe holen ist kein Petzen, sondern mutig. Niemand muss sich in Gefahr bringen."
+      },
+      {
+        "title": "Hauptteil – Helfer-Werkstatt mit Standbildern (17 Min.)",
+        "text": "Die Vierergruppen ziehen je eine harmlose Mobbing-Szene (Bildkarte oder kurzer Satz). Sie stellen zuerst ein 'eingefrorenes' Standbild der Situation – ohne Bewegung, ohne echtes Anfassen. Dann verändert die Gruppe das Bild Schritt für Schritt: Eine Figur aus der Mitte wählt einen der vier Wege und nimmt eine neue Haltung ein. Die Gruppe überlegt: Was sagt diese Figur? Wie verändert sich die Stimmung? Jede Gruppe übt zwei verschiedene Wege. Gehen Sie herum und betonen Sie: Es wird gezeigt und gesagt, nicht gerempelt."
+      },
+      {
+        "title": "Abschluss – Mein erster Schritt (10 Min.)",
+        "text": "Zwei bis drei Gruppen zeigen ihr 'Vorher'-Standbild und danach das 'Nachher', in dem die Mitte handelt. Die Klasse beschreibt, was sich verändert hat. Zum Schluss überlegt jede:r still für sich: 'Welcher der vier Wege passt am ehesten zu mir?' Jede:r nimmt eine kleine Karte und schreibt oder malt seinen persönlichen ersten Schritt darauf. Schluss-Satz im Kreis: 'Wenn alle in der Mitte wegschauen, geht es weiter. Wenn eine:r anfängt zu handeln, machen oft andere mit.'"
+      }
+    ],
+    "duration": "45 Min.",
+    "materialsNeeded": "Drei Stühle für das Einstiegsbild, vier vorbereitete Handlungs-Karten (Hilfe holen / Dazustellen / Ansprechen / Stopp sagen), 6–8 Szenen- oder Bildkarten mit harmlosen Mobbing-Situationen, kleine Karten und Stifte für den 'ersten Schritt', Tafel/Flipchart.",
+    "remark": "Sicherheitshinweis: Standbilder bleiben eingefroren, es wird nicht gerangelt oder berührt – das vorher klar ansagen. Achten Sie sensibel darauf, ob ein Kind sich in einer Szene wiedererkennt; halten Sie ein Einzelgespräch bereit und stellen Sie nie eine reale Situation der Klasse nach. Stärken Sie durchgehend: Hilfe holen ist mutig und kein Verrat. Differenzierung (C1): mit Bildkarten statt Textkarten arbeiten und nur zwei Handlungswege anbieten.",
+    "etepStufen": [
+      2,
+      3,
+      4
+    ],
+    "eldibGoals": [
+      "SOZ-21",
+      "SOZ-22",
+      "SOZ-24",
+      "SOZ-25",
+      "SOZ-30",
+      "SOZ-31",
+      "SOZ-33",
+      "K-15",
+      "K-19",
+      "V-19",
+      "V-20"
+    ],
+    "worksheet": {
+      "title": "Mein erster Schritt aus der mutigen Mitte",
+      "intro": "Wenn jemand geärgert oder ausgeschlossen wird, kannst du als Zuschauer:in etwas tun. Welcher Weg passt zu dir?",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "Die vier Wege"
+        },
+        {
+          "kind": "checklist",
+          "items": [
+            "Hilfe holen (z. B. eine Lehrerin)",
+            "Mich dazustellen",
+            "Die Person ansprechen: 'Komm, lass uns gehen'",
+            "Stopp sagen: 'Hör auf, das ist gemein'"
+          ]
+        },
+        {
+          "kind": "question",
+          "text": "Welcher Weg passt am ehesten zu mir?",
+          "lines": 1
+        },
+        {
+          "kind": "question",
+          "text": "Was würde ich genau sagen oder tun?",
+          "lines": 2
+        },
+        {
+          "kind": "instruction",
+          "text": "Male oder schreibe deinen ersten Schritt hier hinein:"
+        },
+        {
+          "kind": "box",
+          "lines": 4
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "stopp-im-gruppenchat-gemeine-nachrichten-erkennen-und-bremsen",
+    "title": "Stopp im Gruppenchat: Gemeine Nachrichten erkennen und bremsen",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "C1",
+      "C2"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Einstieg und Auswertung gemeinsam im Sitzkreis"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Chat-Detektive in Dreier- oder Vierergruppen am 'Papier-Handy'"
+      },
+      {
+        "mode": "Individuel",
+        "note": "Stiller Abschluss: meine eigene Chat-Regel"
+      }
+    ],
+    "themes": [
+      "mobbing",
+      "medien",
+      "kommunikation"
+    ],
+    "tags": [
+      "cybermobbing",
+      "gruppenchat",
+      "nachrichten",
+      "online",
+      "medienkompetenz",
+      "respekt",
+      "screenshot"
+    ],
+    "shortDescription": "Auch in Klassenchats kann Mobbing passieren – schnell, vor vielen Augen und scheinbar 'nur Spaß'. Mit nachgebauten 'Papier-Handys' untersuchen die Kinder ausgedachte Chatverläufe: Wo kippt ein Witz in Gemeinheit? Sie üben, eine verletzende Nachricht zu erkennen, sie freundlich zu stoppen und zu wissen, was man tut, statt mitzulachen oder weiterzuleiten.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Ein Wort, zwei Wirkungen (9 Min.)",
+        "text": "Halten Sie zwei große ausgedruckte 'Sprechblasen' hoch, beide mit derselben kurzen Nachricht (z. B. 'Boah, schau dir das mal an 😂'). Fragen Sie: 'Wann ist so eine Nachricht lustig – und wann tut sie weh?' Sammeln Sie Beispiele. Erarbeiten Sie gemeinsam: Im Chat fehlen Stimme, Gesicht und der Moment danach – man sieht nicht, wie traurig jemand wird. Stellen Sie die Aufgabe vor: Heute werden alle zu Chat-Detektiven und finden heraus, wo Spaß aufhört und Gemeinheit anfängt."
+      },
+      {
+        "title": "Hinführung – Die Stopp-Ampel für den Chat (8 Min.)",
+        "text": "Führen Sie drei einfache Prüf-Fragen als 'Ampel' ein: GRÜN – 'Würde ich das auch von Angesicht zu Angesicht sagen?', GELB – 'Könnte sich jemand dadurch verletzt fühlen?', ROT – 'Macht es jemanden vor allen lächerlich?'. Zeigen Sie an einem kurzen Beispiel-Chat, wie man die Fragen anwendet. Erklären Sie drei Handlungsmöglichkeiten: NICHT mitlachen / NICHT weiterleiten, freundlich STOPP schreiben ('Das finde ich nicht ok'), und einer betroffenen Person privat schreiben ('Lass dich davon nicht runterziehen')."
+      },
+      {
+        "title": "Hauptteil – Chat-Detektive am Papier-Handy (18 Min.)",
+        "text": "Jede Gruppe erhält ein 'Papier-Handy': ein laminiertes oder gedrucktes Blatt in Handyform mit einem ausgedachten Chatverlauf. Aufgabe: (1) Mit der Ampel markieren, an welcher Nachricht es kippt (grün/gelb/rot kleben oder malen). (2) Eine eigene 'Stopp-Nachricht' formulieren und in eine leere Sprechblase schreiben. (3) Überlegen, was man tun könnte, ohne den Streit größer zu machen. Gehen Sie herum und fragen Sie nach: 'Woran genau habt ihr gemerkt, dass es jetzt gemein wird?'"
+      },
+      {
+        "title": "Abschluss – Unsere Chat-Regeln (10 Min.)",
+        "text": "Jede Gruppe stellt ihre wichtigste Erkenntnis und ihre Stopp-Nachricht kurz vor. Sammeln Sie daraus an der Tafel drei bis vier gemeinsame Chat-Regeln für die Klasse ('Wir lachen niemanden vor allen aus', 'Wir leiten gemeine Bilder nicht weiter', 'Wir holen Hilfe, wenn es jemandem schlecht geht'). Zum stillen Abschluss schreibt jede:r auf das Arbeitsblatt eine persönliche Chat-Regel. Schluss-Impuls: 'Hinter jedem Handy sitzt ein echter Mensch mit echten Gefühlen.'"
+      }
+    ],
+    "duration": "45 Min.",
+    "materialsNeeded": "Mehrere 'Papier-Handys' mit ausgedachten Chatverläufen (gedruckt, gern laminiert), leere Sprechblasen-Felder, grüne/gelbe/rote Klebepunkte oder Stifte, zwei große Sprechblasen für den Einstieg, Tafel/Flipchart für die Chat-Regeln, Arbeitsblatt pro Person.",
+    "remark": "Wichtiger Hinweis: Alle Chatverläufe sind erfunden und enthalten keine echten Namen der Klasse – niemals reale Screenshots oder echte Vorfälle der Lerngruppe verwenden. Klären Sie vorab den Unterschied zwischen 'Hilfe holen' und 'Petzen'. Behalten Sie sensibel im Blick, ob ein Kind betroffen wirkt, und bieten Sie ein Einzelgespräch an. Differenzierung (C1): kürzere Chats mit Bildern statt viel Text; bei jüngeren Gruppen reicht die rote Ampelstufe.",
+    "etepStufen": [
+      2,
+      3,
+      4
+    ],
+    "eldibGoals": [
+      "SOZ-22",
+      "SOZ-24",
+      "SOZ-25",
+      "SOZ-30",
+      "SOZ-31",
+      "K-15",
+      "K-17",
+      "K-19",
+      "V-19",
+      "V-20",
+      "KOG-44"
+    ],
+    "worksheet": {
+      "title": "Mein Chat-Detektiv-Blatt",
+      "intro": "Schau dir den Chat genau an. Wo kippt Spaß in Gemeinheit? Und was kannst du tun?",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "Die Stopp-Ampel"
+        },
+        {
+          "kind": "instruction",
+          "text": "Grün = okay. Gelb = könnte verletzen. Rot = macht jemanden lächerlich."
+        },
+        {
+          "kind": "question",
+          "text": "An welcher Nachricht wird es gemein? Schreibe sie auf.",
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "Meine Stopp-Nachricht"
+        },
+        {
+          "kind": "question",
+          "text": "Was schreibe ich freundlich, um zu stoppen?",
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "Was tue ich noch?"
+        },
+        {
+          "kind": "checklist",
+          "items": [
+            "Ich lache nicht mit",
+            "Ich leite es nicht weiter",
+            "Ich schreibe der Person privat etwas Nettes",
+            "Ich hole Hilfe"
+          ]
+        },
+        {
+          "kind": "question",
+          "text": "Meine persönliche Chat-Regel:",
+          "lines": 2
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "streit-oder-mobbing-den-unterschied-gemeinsam-herausfinden",
+    "title": "Streit oder Mobbing? Den Unterschied gemeinsam herausfinden",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "C1",
+      "C2"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Einstieg, Sortier-Linie und Abschluss im Plenum"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Sortier-Teams ordnen Situationskarten"
+      }
+    ],
+    "themes": [
+      "mobbing",
+      "konfliktloesung",
+      "fremdwahrnehmung"
+    ],
+    "tags": [
+      "streit",
+      "abgrenzung",
+      "kraefteverhaeltnis",
+      "wiederholung",
+      "absicht",
+      "einschaetzen",
+      "fairness"
+    ],
+    "shortDescription": "Nicht jeder Streit ist Mobbing – aber wo liegt der Unterschied? Diese Aktivität gibt Kindern drei klare Merkmale an die Hand (Wiederholung, Absicht zu verletzen, ungleiche Kräfte) und lässt sie ausgedachte Situationen auf einer Linie zwischen 'normaler Streit' und 'das ist Mobbing' einordnen. So lernen sie genauer hinzusehen, ernst zu nehmen, was ernst ist, und früh zu erkennen, wann man Hilfe holen sollte.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Zwei Geschichten, ein Unterschied (9 Min.)",
+        "text": "Erzählen Sie zwei kurze Geschichten: In der ersten streiten sich zwei Kinder einmalig lautstark um einen Ball und vertragen sich später wieder. In der zweiten wird ein Kind seit Wochen von mehreren immer wieder ausgelacht, ausgeschlossen und kann sich nicht wehren. Fragen Sie: 'Ist das beides dasselbe? Was fühlt sich anders an?' Sammeln Sie die Unterschiede, die die Kinder benennen, ungewertet an der Tafel. Führen Sie hin: Es gibt Merkmale, an denen man Mobbing erkennt."
+      },
+      {
+        "title": "Hinführung – Die drei Mobbing-Merkmale (8 Min.)",
+        "text": "Stellen Sie drei große Merkmal-Karten vor und erklären Sie jede mit dem Beispiel von vorhin: IMMER WIEDER (es passiert nicht nur einmal, sondern wiederholt), ABSICHT (es wird gemacht, um zu verletzen, nicht aus Versehen), UNGLEICH (eine:r ist allein oder unterlegen und kann sich kaum wehren). Machen Sie deutlich: Streit ist normal und gehört dazu – Mobbing aber ist nicht okay und braucht Hilfe von außen. Treffen alle drei Merkmale zu, ist es mit hoher Wahrscheinlichkeit Mobbing."
+      },
+      {
+        "title": "Hauptteil – Die Sortier-Linie (18 Min.)",
+        "text": "Spannen Sie im Raum (oder auf dem Boden mit einem Seil) eine Linie: links 'normaler Streit', rechts 'das ist Mobbing', dazwischen 'unsicher'. Die Sortier-Teams erhalten je mehrere Situationskarten. Für jede Karte prüfen sie mit den drei Merkmalen und legen sie an die passende Stelle der Linie. Wichtig: Sie schreiben dazu, WELCHES Merkmal sie erkannt haben. Gehen Sie herum und stellen Sie Rückfragen: 'Passiert das einmal oder immer wieder? Kann die Person sich wehren?' Die 'unsicher'-Position ist ausdrücklich erlaubt."
+      },
+      {
+        "title": "Abschluss – Wenn drei Merkmale zusammenkommen (10 Min.)",
+        "text": "Besprechen Sie einige Karten gemeinsam, vor allem die strittigen. Halten Sie fest: Je mehr Merkmale zutreffen, desto eher braucht es Hilfe von Erwachsenen. Klären Sie die wichtigste Botschaft: 'Wenn du unsicher bist, ob etwas Mobbing ist – frag eine erwachsene Person. Lieber einmal zu viel.' Zum Abschluss notiert jede:r auf dem Arbeitsblatt: 'Daran erkenne ich, dass aus Streit Mobbing geworden ist' und an wen man sich wenden kann."
+      }
+    ],
+    "duration": "45 Min.",
+    "materialsNeeded": "Drei große Merkmal-Karten (Immer wieder / Absicht / Ungleich), ein Seil oder Klebeband für die Sortier-Linie, drei Bodenschilder ('normaler Streit' / 'unsicher' / 'das ist Mobbing'), 10–14 Situationskarten mit kurzen Szenen, kleine Klebezettel, Arbeitsblatt pro Person, Tafel/Flipchart.",
+    "remark": "Differenzierungshinweis (C1): mit Bildkarten und nur den Merkmalen 'Immer wieder' und 'Ungleich' arbeiten; bei C2 das Merkmal 'Absicht' und Graubereiche bewusst diskutieren. Sicherheits-/Sensibilitätshinweis: keine realen Vorfälle der Klasse nachstellen; achten Sie auf betroffen wirkende Kinder und bieten Sie ein Einzelgespräch an. Vermeiden Sie, dass Kinder einander vorschnell als 'Mobber' etikettieren – es geht um das Erkennen von Verhalten, nicht um Schuldzuweisung.",
+    "etepStufen": [
+      2,
+      3,
+      4
+    ],
+    "eldibGoals": [
+      "SOZ-20",
+      "SOZ-21",
+      "SOZ-24",
+      "SOZ-25",
+      "SOZ-30",
+      "SOZ-33",
+      "K-15",
+      "K-19",
+      "KOG-44",
+      "KOG-46",
+      "V-19"
+    ],
+    "worksheet": {
+      "title": "Streit oder Mobbing? Mein Erkenn-Blatt",
+      "intro": "Mit drei Merkmalen kannst du herausfinden, ob aus Streit Mobbing geworden ist.",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "Die drei Merkmale"
+        },
+        {
+          "kind": "checklist",
+          "items": [
+            "IMMER WIEDER – es passiert nicht nur einmal",
+            "ABSICHT – es soll wehtun, nicht aus Versehen",
+            "UNGLEICH – eine:r kann sich kaum wehren"
+          ]
+        },
+        {
+          "kind": "instruction",
+          "text": "Je mehr Merkmale zutreffen, desto eher ist es Mobbing – und desto wichtiger ist Hilfe."
+        },
+        {
+          "kind": "question",
+          "text": "Daran erkenne ich, dass aus Streit Mobbing geworden ist:",
+          "lines": 3
+        },
+        {
+          "kind": "question",
+          "text": "An diese Personen kann ich mich wenden, wenn ich unsicher bin:",
+          "lines": 2
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "das-unsichtbare-netz-wie-unsere-klasse-niemanden-fallen-laesst",
+    "title": "Das unsichtbare Netz: Wie unsere Klasse niemanden fallen lässt",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "C1",
+      "C2"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Die gesamte Aktivität lebt von der ganzen Klasse im Kreis"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Kleingruppen sammeln konkrete Hilfe-Ideen"
+      }
+    ],
+    "themes": [
+      "mobbing",
+      "beziehungsaufbau",
+      "kooperation"
+    ],
+    "tags": [
+      "klassengemeinschaft",
+      "zusammenhalt",
+      "ausgrenzung",
+      "dazugehoeren",
+      "wollfaden",
+      "verantwortung",
+      "klassenregeln"
+    ],
+    "shortDescription": "Mobbing wächst dort, wo niemand sich verbunden fühlt und Ausgrenzung normal wird. In dieser Aktivität spannen die Kinder mit einem Wollfaden ein sichtbares 'Netz' zwischen sich und erleben körperlich, dass jede:r Teil des Halts ist. Daraus entwickeln sie konkrete Vereinbarungen, wie ihre Klasse dafür sorgt, dass niemand ausgeschlossen wird – ein präventiver Baustein für ein tragfähiges Klassenklima.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Ein Faden zwischen uns (10 Min.)",
+        "text": "Die Klasse sitzt im Kreis. Sie halten ein Wollknäuel und sagen einen Satz, der etwas Verbindendes nennt ('Ich werfe den Faden zu jemandem, der gern draußen ist'). Wer gemeint ist, hält den Faden fest und wirft das Knäuel weiter mit einem eigenen Satz. Nach und nach entsteht ein dichtes Netz zwischen allen Händen. Halten Sie kurz inne: 'Schaut euch dieses Netz an. Jede:r von euch hält es mit.' Lassen Sie eine Person den Faden absichtlich loslassen – das Netz sackt sichtbar durch. Botschaft: Wenn eine:r losgelassen wird, spüren es alle."
+      },
+      {
+        "title": "Hinführung – Wann reißt das Netz? (8 Min.)",
+        "text": "Bleiben Sie im Bild: Fragen Sie, was in einer Klasse passiert, durch das 'der Faden zu jemandem gekappt' wird – auslachen, nicht mitspielen lassen, hinter dem Rücken reden, jemanden immer übersehen. Sammeln Sie diese 'Faden-Schneider' (gern auf rote Karten). Stellen Sie dann die Leitfrage für den Hauptteil: 'Was können WIR ganz konkret tun, damit niemand aus unserem Netz fällt?' Machen Sie klar: Es geht um machbare Alltagsdinge, nicht um große Versprechen."
+      },
+      {
+        "title": "Hauptteil – Halte-Ideen sammeln (17 Min.)",
+        "text": "In Kleingruppen sammeln die Kinder konkrete 'Halte-Ideen' zu Alltagssituationen, z. B.: Was tun wir in der Pause, wenn jemand allein steht? Wie wählen wir Teams, ohne dass immer dieselben übrig bleiben? Was sagen wir, wenn jemand gehänselt wird? Jede Gruppe schreibt oder malt ihre drei besten Ideen auf 'grüne Halte-Karten'. Gehen Sie herum und schärfen Sie unkonkrete Ideen ('Nett sein' → 'Wir fragen, ob jemand mitspielen will'). Betonen Sie: Die Idee muss morgen wirklich umsetzbar sein."
+      },
+      {
+        "title": "Abschluss – Unser Halte-Versprechen (10 Min.)",
+        "text": "Die Gruppen hängen ihre grünen Halte-Karten auf ein gemeinsames Plakat ('Unser unsichtbares Netz'). Lesen Sie einige laut vor und wählen Sie mit der Klasse drei bis vier Vereinbarungen aus, die ab jetzt gelten. Zum Abschluss spannen Sie noch einmal kurz den Wollfaden und jede:r sagt reihum, welche eine Halte-Idee sie persönlich übernimmt. Schluss-Satz: 'Unser Netz ist unsichtbar – aber wir alle spüren, ob es hält.' Das Plakat bleibt sichtbar im Klassenraum hängen."
+      }
+    ],
+    "duration": "45 Min.",
+    "materialsNeeded": "Ein dickes Wollknäuel (gut sichtbar), rote Karten für die 'Faden-Schneider', grüne Karten für die 'Halte-Ideen', ein großes Plakat 'Unser unsichtbares Netz', Stifte, Klebeband oder Klebepunkte zum Anheften, ausreichend Platz für einen Sitzkreis.",
+    "remark": "Sicherheitshinweis: Den gespannten Wollfaden nicht um Hals oder Finger wickeln und nicht ruckartig ziehen – kurz ansagen. Differenzierung (C1): mit Bildkarten arbeiten und die Halte-Ideen vor allem malen lassen. Sensibilität: Formulieren Sie alles allgemein und stellen Sie keine reale Ausgrenzung der Klasse nach; richten Sie den Blick nach vorn ('Was tun WIR künftig'), nicht auf Schuld. Die ausgewählten Vereinbarungen wirken nur, wenn sie im Alltag immer wieder aufgegriffen werden.",
+    "etepStufen": [
+      2,
+      3,
+      4
+    ],
+    "eldibGoals": [
+      "SOZ-15",
+      "SOZ-16",
+      "SOZ-19",
+      "SOZ-21",
+      "SOZ-22",
+      "SOZ-24",
+      "SOZ-30",
+      "SOZ-33",
+      "K-15",
+      "V-19",
+      "V-20"
+    ],
+    "worksheet": {
+      "title": "Unsere Halte-Karte: So lassen wir niemanden fallen",
+      "intro": "Sammelt Ideen, die wirklich helfen, dass niemand aus unserem Netz fällt. Sie müssen morgen schon klappen.",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "Was kappt den Faden? (Faden-Schneider)"
+        },
+        {
+          "kind": "lines",
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "Unsere drei Halte-Ideen"
+        },
+        {
+          "kind": "instruction",
+          "text": "Schreibt oder malt drei konkrete Dinge, die ihr wirklich tun könnt."
+        },
+        {
+          "kind": "lines",
+          "lines": 4
+        },
+        {
+          "kind": "question",
+          "text": "In der Pause, wenn jemand allein steht, tun wir:",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "Diese eine Halte-Idee übernehme ich persönlich:",
+          "lines": 2
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "die-etappen-karte-vom-riesigen-ziel-zum-ersten-machbaren-schritt",
+    "title": "Die Etappen-Karte: Vom riesigen Ziel zum ersten machbaren Schritt",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "C2",
+      "C3"
+    ],
+    "type": [
+      "ganz Stonn"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "gemeinsamer Einstieg und Auswertung im Sitzkreis"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Tandems oder Dreiergruppen beraten sich gegenseitig"
+      },
+      {
+        "mode": "Individuel",
+        "note": "jedes Kind erstellt seine eigene Etappen-Karte"
+      }
+    ],
+    "themes": [
+      "motivation",
+      "selbstwahrnehmung",
+      "ressourcen"
+    ],
+    "tags": [
+      "ziele",
+      "etappen",
+      "teilschritte",
+      "durchhalten",
+      "planen",
+      "erster schritt",
+      "anstrengung"
+    ],
+    "shortDescription": "Große Ziele wirken oft so riesig, dass man gar nicht erst anfängt – die Motivation verpufft, bevor sie entsteht. In dieser Stunde lernen die Kinder, ein 'Berg-Ziel' in kleine, machbare Etappen zu zerlegen und sich für den allerersten Schritt zu begeistern. Sie erstellen eine persönliche Etappen-Karte, die aus einem fernen Wunsch einen konkreten, motivierenden Wegplan macht.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Der Berg, der zu hoch aussieht (10 Min.)",
+        "text": "Zeichnen Sie einen hohen Berg an die Tafel und kleben Sie ganz oben eine Wolke mit einem großen Ziel ('Ich will richtig gut schwimmen können' / 'Ich will das ganze Buch lesen'). Fragen Sie: 'Wenn ihr ganz unten steht und nur den Gipfel anschaut – wie fühlt sich das an?' Sammeln Sie Wörter wie 'unmöglich', 'keine Lust', 'zu weit'. Leiten Sie über: Genau hier verlieren viele die Motivation. Heute lernen wir einen Trick, mit dem selbst der höchste Berg machbar wird – wir teilen ihn in Etappen."
+      },
+      {
+        "title": "Hinführung – Etappen sind kleine Gipfel (8 Min.)",
+        "text": "Zeichnen Sie nun Rastplätze (Etappen) den Berg hinauf und benennen Sie sie gemeinsam für das Tafel-Beispiel: Etappe 1 'die ersten 5 Seiten', Etappe 2 'bis Kapitel 3', usw. Machen Sie drei Regeln für gute Etappen deutlich: KLEIN (in einer Woche schaffbar), KLAR (man erkennt, wann sie geschafft ist) und der ERSTE SCHRITT muss heute oder morgen starten können. Betonen Sie: Jede erreichte Etappe ist ein kleiner Gipfel, der Kraft für den nächsten gibt."
+      },
+      {
+        "title": "Hauptteil 1 – Meine eigene Etappen-Karte (16 Min.)",
+        "text": "Jedes Kind wählt ein echtes, eigenes Ziel und trägt es oben auf das Arbeitsblatt 'Etappen-Karte' (Berg-Vorlage) ein. Darunter zeichnet oder schreibt es 3–4 Etappen vom Fuß bis zum Gipfel. Die unterste Etappe – der allererste Schritt – wird besonders markiert (umkringeln) und muss so klein sein, dass man heute noch starten könnte ('Schwimmsachen rauslegen', 'die erste Seite lesen'). Gehen Sie herum und helfen Sie, zu große Etappen weiter zu zerlegen ('das ganze Kapitel' → 'die erste Seite')."
+      },
+      {
+        "title": "Hauptteil 2 – Etappen-Beratung im Tandem (10 Min.)",
+        "text": "Die Kinder tun sich zu zweit zusammen und stellen sich gegenseitig ihre Etappen-Karte vor. Der Partner stellt nur zwei Prüf-Fragen: 'Ist deine erste Etappe wirklich klein genug, um heute anzufangen?' und 'Woran merkst du, dass eine Etappe geschafft ist?' Bei Bedarf wird die Karte noch angepasst. So erleben die Kinder Beratung als Hilfe, nicht als Bewertung, und schärfen ihren ersten Schritt."
+      },
+      {
+        "title": "Abschluss – Mein erster Schritt heute (6 Min.)",
+        "text": "Zurück im Kreis nennt reihum jede:r, die mag, nur den allerersten kleinen Schritt (nicht das ganze Ziel). Halten Sie als Botschaft fest: 'Man besteigt keinen Berg in einem Sprung – man macht einen Schritt, dann den nächsten.' Vereinbaren Sie einen festen Zeitpunkt (z. B. in einer Woche), an dem nachgefragt wird, wer seine erste Etappe geschafft hat. Die Etappen-Karte nehmen die Kinder mit oder hängen sie sichtbar auf."
+      }
+    ],
+    "duration": "ca. 50 Minuten (eine Unterrichtsstunde)",
+    "materialsNeeded": "Tafel/Whiteboard für den Berg; Arbeitsblatt 'Etappen-Karte' mit Berg-Vorlage pro Kind; Stifte und Buntstifte; optional kleine Klebepunkte zum Markieren des ersten Schritts; ein Klassen-Plakat für eine gemeinsame 'Gipfel-Liste' geschaffter Etappen.",
+    "remark": "Differenzierungshinweis (C2): mit nur 2–3 Etappen arbeiten und stärker zeichnen statt schreiben lassen; bei C3 dürfen es 4–5 Etappen mit kurzen Notizen sein. Achten Sie darauf, dass Ziele realistisch und selbst gewählt sind – kein Wettbewerb darum, wer das 'größte' Ziel hat. Greifen Sie die vereinbarte Nachfrage wirklich auf: Das Feiern erreichter Etappen ist der eigentliche Motivationsmotor. Bei Kindern, die kein Ziel finden, gemeinsam ein kleines schulisches Ziel anbieten.",
+    "etepStufen": [
+      3,
+      4
+    ],
+    "eldibGoals": [
+      "KOG-37",
+      "KOG-38",
+      "KOG-39",
+      "KOG-55",
+      "KOG-57",
+      "SOZ-9",
+      "SOZ-25",
+      "SOZ-26",
+      "V-16",
+      "V-23",
+      "K-18"
+    ],
+    "worksheet": {
+      "title": "Meine Etappen-Karte",
+      "intro": "Jedes große Ziel wird machbar, wenn du es in kleine Etappen teilst. Trage dein Ziel oben auf den Gipfel und zeichne den Weg dorthin.",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "Mein Gipfel-Ziel"
+        },
+        {
+          "kind": "question",
+          "text": "Was möchte ich erreichen? (das große Ziel)",
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "Meine Etappen (von unten nach oben)"
+        },
+        {
+          "kind": "instruction",
+          "text": "Schreibe oder male 3–4 Etappen. Jede Etappe muss klein und klar sein."
+        },
+        {
+          "kind": "lines",
+          "lines": 5
+        },
+        {
+          "kind": "heading",
+          "text": "Mein allererster Schritt"
+        },
+        {
+          "kind": "question",
+          "text": "Was kann ich schon heute oder morgen tun?",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "Woran merke ich, dass meine erste Etappe geschafft ist?",
+          "lines": 2
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "die-warum-treppe-meinen-persoenlichen-antrieb-ausgraben",
+    "title": "Die Warum-Treppe: Meinen persönlichen Antrieb ausgraben",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "C2",
+      "C3"
+    ],
+    "type": [
+      "ganz Stonn"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Einstieg und Auswertung gemeinsam im Plenum"
+      },
+      {
+        "mode": "Individuel",
+        "note": "jedes Kind steigt seine eigene Warum-Treppe hinab"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Vertrauens-Tandems teilen freiwillig ihr stärkstes Warum"
+      }
+    ],
+    "themes": [
+      "motivation",
+      "identitaet",
+      "selbstwahrnehmung"
+    ],
+    "tags": [
+      "intrinsisch",
+      "antrieb",
+      "warum-fragen",
+      "sinn",
+      "eigene gruende",
+      "ausdauer",
+      "selbstmotivation"
+    ],
+    "shortDescription": "Wer nur lernt oder übt, 'weil man muss', verliert schnell die Lust. Echte, tragfähige Motivation entsteht aus dem eigenen Warum. In dieser Stunde graben die Kinder mit der 'Warum-Treppe' Schritt für Schritt unter der Oberfläche, bis sie einen persönlichen Antrieb finden, der ihnen wirklich gehört. So unterscheiden sie äußeren Druck von innerem Antrieb und entdecken einen Satz, der sie an schwierigen Tagen weiterzieht.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Zwei Motoren (10 Min.)",
+        "text": "Erzählen Sie von zwei Kindern, die dasselbe tun (z. B. Klavier üben): Das eine übt nur, weil die Eltern schimpfen, sonst nicht. Das andere übt, weil es sich freut, ein Lied vorspielen zu können. Fragen Sie: 'Wer hält wohl länger durch, wenn es mal schwer wird? Warum?' Führen Sie die zwei 'Motoren' ein: der ÄUSSERE Motor (Druck, Belohnung, Strafe) springt schnell an, geht aber auch schnell wieder aus. Der INNERE Motor (mein eigenes Warum) läuft länger und stärker. Heute suchen wir euren inneren Motor."
+      },
+      {
+        "title": "Hinführung – Wie man eine Treppe hinabsteigt (8 Min.)",
+        "text": "Erklären Sie die 'Warum-Treppe' an einem gemeinsamen Beispiel an der Tafel: Oben steht etwas, das man tun soll ('Ich übe für die Mathearbeit'). Dann fragen Sie immer wieder 'Und warum ist mir DAS wichtig?' und steigen so Stufe für Stufe tiefer: 'damit ich eine gute Note habe' → 'damit ich stolz auf mich bin' → 'weil ich mir beweisen will, dass ich das kann'. Machen Sie deutlich: Je tiefer man steigt, desto eher findet man ein Warum, das einem selbst gehört – nicht nur den Erwachsenen."
+      },
+      {
+        "title": "Hauptteil 1 – Meine eigene Warum-Treppe (16 Min.)",
+        "text": "Jedes Kind wählt eine Sache, die es tun soll oder will (Schule, Hobby, ein Vorsatz), und schreibt sie oben auf das Treppen-Arbeitsblatt. Dann steigt es hinab: Für jede Stufe beantwortet es 'Und warum ist mir das wichtig?'. Mindestens drei Stufen tief. Gehen Sie ruhig herum und stellen Sie bei Bedarf selbst die Warum-Frage. Manche Kinder landen bei Gefühlen ('weil ich mich dann gut fühle') – das ist genau richtig, dort sitzt der innere Motor."
+      },
+      {
+        "title": "Hauptteil 2 – Mein stärkstes Warum teilen (10 Min.)",
+        "text": "In Vertrauens-Tandems erzählen die Kinder freiwillig, welches Warum auf ihrer Treppe sich am stärksten angefühlt hat. Es gilt: Zuhören ohne Kommentar, nichts bewerten, nichts ausplaudern. Wer nicht teilen mag, beschreibt nur, wie das Hinabsteigen war. So wird das eigene Warum einmal ausgesprochen und dadurch greifbarer und verbindlicher."
+      },
+      {
+        "title": "Abschluss – Mein Antriebs-Satz (6 Min.)",
+        "text": "Jedes Kind formt aus seinem tiefsten Warum einen kurzen Antriebs-Satz in Ich-Form ('Ich übe, weil ich stolz auf mich sein will'). Wer mag, liest ihn im Kreis vor. Halten Sie fest: 'Wenn dir mal die Lust fehlt, frag dich nicht WAS du tun musst, sondern WARUM es DIR wichtig ist – das ist dein Motor.' Der Antriebs-Satz wird auf eine kleine Karte geschrieben und mitgenommen."
+      }
+    ],
+    "duration": "ca. 50–55 Minuten (eine Unterrichtsstunde)",
+    "materialsNeeded": "Tafel/Whiteboard für die Beispiel-Treppe; Arbeitsblatt 'Warum-Treppe' mit Stufen-Vorlage pro Kind; Karteikarten für den persönlichen Antriebs-Satz; Stifte; optional ein Plakat 'Unsere Motoren', auf dem freiwillig geteilte Antriebs-Sätze gesammelt werden.",
+    "remark": "Sensibilitätshinweis: Das Warum kann persönlich werden – Teilen ist immer freiwillig, und die Tandem-Regel 'nichts ausplaudern' muss klar gelten. Werten Sie kein Warum als 'besser' oder 'edler' – ein äußerer Motor ist nicht verboten, er trägt nur weniger weit. Differenzierung (C2): die Frage vereinfachen zu 'Warum magst du das?' und nur zwei Stufen verlangen; bei C3 ruhig 3–4 Stufen und die Unterscheidung innerer/äußerer Motor vertiefen. Bei Kindern, die kein Warum finden, gemeinsam mit kleinen Beispielen tasten.",
+    "etepStufen": [
+      3,
+      4
+    ],
+    "eldibGoals": [
+      "KOG-37",
+      "KOG-39",
+      "KOG-55",
+      "KOG-57",
+      "KOG-61",
+      "SOZ-9",
+      "SOZ-25",
+      "SOZ-34",
+      "V-17",
+      "V-23",
+      "K-18",
+      "K-26"
+    ],
+    "worksheet": {
+      "title": "Meine Warum-Treppe",
+      "intro": "Frage dich immer wieder 'Und warum ist mir das wichtig?' und steige so Stufe für Stufe tiefer, bis du dein eigenes Warum findest.",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "Ganz oben: Das tue ich (oder will ich tun)"
+        },
+        {
+          "kind": "question",
+          "text": "Schreibe es hier auf:",
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "Die Stufen hinab"
+        },
+        {
+          "kind": "instruction",
+          "text": "Frage bei jeder Stufe: 'Und warum ist mir das wichtig?' – mindestens 3 Stufen tief."
+        },
+        {
+          "kind": "lines",
+          "lines": 5
+        },
+        {
+          "kind": "scale",
+          "text": "Wie stark fühlt sich dein tiefstes Warum an? (1 = schwach, 5 = sehr stark)"
+        },
+        {
+          "kind": "heading",
+          "text": "Mein Antriebs-Satz"
+        },
+        {
+          "kind": "box",
+          "lines": 3
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "aufschieberitis-besiegen-das-5-minuten-start-ritual",
+    "title": "Aufschieberitis besiegen: Das 5-Minuten-Start-Ritual",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "C2",
+      "C3"
+    ],
+    "type": [
+      "ganz Stonn"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Einstieg und gemeinsame Sammlung im Plenum"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Forscher-Teams untersuchen typische Aufschiebe-Fallen"
+      },
+      {
+        "mode": "Individuel",
+        "note": "jedes Kind baut sein eigenes Start-Ritual"
+      }
+    ],
+    "themes": [
+      "motivation",
+      "impulskontrolle",
+      "disziplin"
+    ],
+    "tags": [
+      "aufschieben",
+      "anfangen",
+      "start-ritual",
+      "ablenkung",
+      "fünf minuten",
+      "ueberwindung",
+      "konzentration"
+    ],
+    "shortDescription": "Das Schwerste an vielen Aufgaben ist nicht das Tun, sondern das Anfangen – und genau hier siegt oft die Aufschieberitis. In dieser Stunde entlarven die Kinder ihre persönlichen Aufschiebe-Fallen und lernen den 5-Minuten-Trick kennen: Man verspricht sich, nur fünf Minuten anzufangen. Sie bauen ein eigenes Start-Ritual, das den Einstieg so leicht macht, dass die Motivation beim Tun von selbst entsteht.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Der Berg vor dem Anfang (9 Min.)",
+        "text": "Fragen Sie: 'Kennt ihr das – ihr sollt etwas tun, schiebt es aber immer weiter vor euch her: erst noch trinken, erst noch aufräumen, erst noch ...?' Sammeln Sie ehrlich und ohne Schimpfen typische Aufschiebe-Sätze an der Tafel. Stellen Sie die Schlüssel-Erkenntnis vor: Oft ist nicht die Aufgabe das Problem, sondern der ANFANG. Hat man erst einmal begonnen, läuft es meist von selbst. Heute lernen wir Tricks, um diese erste Hürde zu überspringen."
+      },
+      {
+        "title": "Hinführung – Die Aufschiebe-Fallen und der 5-Minuten-Trick (9 Min.)",
+        "text": "Stellen Sie kurz drei häufige 'Aufschiebe-Fallen' vor: die ABLENKUNGS-Falle (Handy, etwas Schöneres), die ZU-GROSS-Falle (die Aufgabe wirkt riesig) und die SPÄTER-Falle ('mach ich gleich'). Dann der zentrale Trick: der 5-MINUTEN-START. Man verspricht sich selbst, nur fünf Minuten anzufangen – nicht mehr. Erklären Sie, warum das wirkt: Fünf Minuten trauen sich alle zu, und meist macht man danach freiwillig weiter, weil das Anfangen schon geschafft ist."
+      },
+      {
+        "title": "Hauptteil 1 – Forscher-Teams jagen die Fallen (15 Min.)",
+        "text": "In Kleingruppen erhalten die Kinder Karten mit kurzen Alltagsszenen ('Tim soll Vokabeln lernen, schaut aber alle 2 Minuten aufs Handy'). Aufgabe: (1) Welche Aufschiebe-Falle steckt dahinter? (2) Was wäre hier ein winziger 5-Minuten-Start? (3) Welche Ablenkung müsste weggeräumt werden? Die Teams notieren ihre Lösungen. Gehen Sie herum und schärfen Sie die Starts ('lernen anfangen' → 'die ersten 3 Vokabeln laut lesen')."
+      },
+      {
+        "title": "Hauptteil 2 – Mein eigenes Start-Ritual bauen (10 Min.)",
+        "text": "Jedes Kind baut auf dem Arbeitsblatt ein persönliches Start-Ritual aus drei Bausteinen: ABLENKUNG WEG (was lege ich vorher beiseite?), MINI-START (welche allererste, winzige Handlung beginne ich?) und 5-MINUTEN-VERSPRECHEN (ich mache nur fünf Minuten, danach darf ich entscheiden). Ermutigen Sie, den Mini-Start so klein wie möglich zu machen – so klein, dass 'Nein' fast albern wäre."
+      },
+      {
+        "title": "Abschluss – Der Probe-Start (7 Min.)",
+        "text": "Machen Sie einen echten Mini-Versuch: Alle nehmen eine kleine, real anstehende Aufgabe und starten gemeinsam für genau fünf Minuten (Sie stoppen die Zeit). Danach kurzer Austausch im Kreis: 'War das Anfangen so schlimm wie gedacht? Wer hätte gern weitergemacht?' Halten Sie fest: 'Du musst nicht alles auf einmal schaffen – du musst nur anfangen. Fünf Minuten reichen.' Das Start-Ritual nehmen die Kinder mit."
+      }
+    ],
+    "duration": "ca. 50 Minuten (eine Unterrichtsstunde)",
+    "materialsNeeded": "Tafel/Whiteboard für die Aufschiebe-Sätze; Szenen-Karten mit Aufschiebe-Situationen (eine pro Team); Arbeitsblatt 'Mein Start-Ritual' pro Kind; eine sichtbare Uhr oder ein Timer für den Probe-Start; Stifte; optional ein Plakat 'Unsere 5-Minuten-Tricks'.",
+    "remark": "Hinweis: Begegnen Sie dem Aufschieben ohne Vorwürfe – fast alle Menschen kennen es, das nimmt Scham und öffnet fürs Lernen. Differenzierung (C2): nur die ZU-GROSS-Falle und den 5-Minuten-Trick behandeln, Szenen mit Bildunterstützung; bei C3 alle drei Fallen und das Wegräumen von Ablenkungen vertiefen. Der Probe-Start braucht eine wirklich kleine, sofort verfügbare Aufgabe – planen Sie diese vorab ein. Verknüpfen Sie das Ritual später mit echten Lernsituationen, damit es nicht nur Theorie bleibt.",
+    "etepStufen": [
+      3,
+      4
+    ],
+    "eldibGoals": [
+      "KOG-37",
+      "KOG-38",
+      "KOG-40",
+      "KOG-55",
+      "KOG-56",
+      "SOZ-9",
+      "SOZ-25",
+      "SOZ-26",
+      "V-14",
+      "V-16",
+      "K-18",
+      "K-19"
+    ],
+    "worksheet": {
+      "title": "Mein Start-Ritual gegen die Aufschieberitis",
+      "intro": "Das Schwerste ist oft der Anfang. Baue dir ein Ritual, das den Start ganz leicht macht.",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "Meine häufigste Aufschiebe-Falle"
+        },
+        {
+          "kind": "checklist",
+          "items": [
+            "Ablenkungs-Falle (Handy, etwas Schöneres)",
+            "Zu-groß-Falle (die Aufgabe wirkt riesig)",
+            "Später-Falle ('mach ich gleich')"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "Baustein 1: Ablenkung weg"
+        },
+        {
+          "kind": "question",
+          "text": "Was lege ich vorher beiseite?",
+          "lines": 1
+        },
+        {
+          "kind": "heading",
+          "text": "Baustein 2: Mein Mini-Start"
+        },
+        {
+          "kind": "question",
+          "text": "Welche winzige erste Handlung beginne ich?",
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "Baustein 3: Mein 5-Minuten-Versprechen"
+        },
+        {
+          "kind": "instruction",
+          "text": "Ich starte nur 5 Minuten. Danach darf ich frei entscheiden, ob ich weitermache."
+        },
+        {
+          "kind": "box",
+          "lines": 2
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "der-fortschritts-detektiv-schon-geschafft-statt-noch-nicht",
+    "title": "Der Fortschritts-Detektiv: Schon-geschafft statt Noch-nicht",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "C2",
+      "C3"
+    ],
+    "type": [
+      "ganz Stonn"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "gemeinsamer Einstieg und Reflexion im Sitzkreis"
+      },
+      {
+        "mode": "Individuel",
+        "note": "jedes Kind führt sein eigenes Fortschritts-Tagebuch"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Detektiv-Paare suchen gemeinsam nach Beweisen für Fortschritt"
+      }
+    ],
+    "themes": [
+      "motivation",
+      "selbstwertgefuehl",
+      "resilienz"
+    ],
+    "tags": [
+      "fortschritt",
+      "anstrengung",
+      "schon geschafft",
+      "kleine erfolge",
+      "dranbleiben",
+      "rueckblick",
+      "lob"
+    ],
+    "shortDescription": "Viele Kinder sehen beim Lernen nur, was noch fehlt – und verlieren darüber die Motivation. Diese Stunde dreht den Blick um: Der 'Fortschritts-Detektiv' sucht gezielt nach Beweisen dafür, was schon besser geworden ist, und schreibt nicht das Ergebnis, sondern die eigene Anstrengung gut. Die Kinder starten ein kleines Fortschritts-Tagebuch, das ihnen hilft, dranzubleiben, weil sie ihr eigenes Vorankommen endlich sehen können.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Die Brille, die nur Lücken sieht (10 Min.)",
+        "text": "Halten Sie ein halb gefülltes Glas hoch und fragen Sie: 'Halb leer oder halb voll?' Übertragen Sie es: Beim Lernen tragen viele eine 'Lücken-Brille' – sie sehen nur, was noch nicht klappt ('Ich kann das immer noch nicht'). Fragen Sie, wie das auf Dauer für die Motivation ist. Stellen Sie die Gegen-Brille vor: die Detektiv-Brille, die nach Spuren des Fortschritts sucht. Botschaft: Wer nur Lücken sieht, gibt schneller auf – wer Fortschritt sieht, bleibt dran."
+      },
+      {
+        "title": "Hinführung – Wie ein Detektiv nach Beweisen sucht (8 Min.)",
+        "text": "Erklären Sie zwei Detektiv-Werkzeuge. Erstens die Zauberformel 'NOCH NICHT': aus 'Ich kann das nicht' wird 'Ich kann das noch nicht' – das hält die Tür offen. Zweitens den FORTSCHRITTS-VERGLEICH: nicht mit anderen vergleichen, sondern mit sich selbst von früher ('Was konnte ich vor einem Monat noch nicht, das ich heute kann?'). Drittens: Loben Sie die ANSTRENGUNG, nicht nur das Ergebnis – 'Ich habe mich getraut' oder 'Ich bin drangeblieben' sind echte Erfolge, auch ohne perfekte Note."
+      },
+      {
+        "title": "Hauptteil 1 – Beweise sammeln im Detektiv-Paar (15 Min.)",
+        "text": "In Zweierteams werden die Kinder zu Fortschritts-Detektiven füreinander. Mit den Leitfragen vom Arbeitsblatt befragt einer den anderen: 'Was kannst du heute, das du vor einiger Zeit noch nicht konntest?', 'Wofür hast du dich zuletzt angestrengt, auch wenn es schwer war?', 'Worauf bist du ein bisschen stolz?'. Der Partner hilft beim Erinnern und notiert Stichworte. Dann wird getauscht. Gehen Sie herum und helfen Sie zögernden Kindern, kleine Fortschritte zu entdecken ('Du liest flüssiger als am Anfang')."
+      },
+      {
+        "title": "Hauptteil 2 – Mein Fortschritts-Tagebuch starten (10 Min.)",
+        "text": "Jedes Kind richtet die erste Seite seines Fortschritts-Tagebuchs ein (gefaltetes Blatt oder kleines Heft). Es trägt heute drei Dinge ein: einen Fortschritt ('Das kann ich jetzt besser'), eine Anstrengung ('Da bin ich drangeblieben') und ein 'Noch nicht'-Ziel für die nächste Zeit. Erklären Sie, dass das Tagebuch ab jetzt einmal pro Woche mit einer Zeile gefüttert wird – kleine Einträge, große Wirkung."
+      },
+      {
+        "title": "Abschluss – Mein Detektiv-Fund (7 Min.)",
+        "text": "Im Kreis nennt reihum jede:r, die mag, EINEN Fortschritt oder eine Anstrengung, die der Detektiv heute aufgespürt hat. Achten Sie auf eine wertschätzende, neidfreie Atmosphäre. Halten Sie fest: 'Du wirst jeden Tag ein kleines Stück besser – auch wenn du es nicht merkst. Der Detektiv hilft dir, es zu sehen.' Vereinbaren Sie einen festen Wochen-Termin für den nächsten Tagebuch-Eintrag."
+      }
+    ],
+    "duration": "ca. 50–55 Minuten (eine Unterrichtsstunde)",
+    "materialsNeeded": "Ein halb gefülltes Glas für den Einstieg; Arbeitsblatt mit den Detektiv-Leitfragen pro Kind; ein gefaltetes Blatt oder kleines Heft als Fortschritts-Tagebuch pro Kind; Stifte und Buntstifte; optional ein Klassen-Plakat 'Unsere Fortschritts-Funde'.",
+    "remark": "Differenzierungshinweis (C2): Fortschritte vor allem malen lassen und nur die 'Noch-nicht'-Formel nutzen; bei C3 den Selbst-Vergleich und das Loben der Anstrengung vertiefen. Wichtig: Lenken Sie den Vergleich konsequent weg von 'besser als andere' hin zu 'besser als ich früher' – sonst kippt die Übung ins Gegenteil. Für Kinder mit geringem Selbstwert kleine, konkrete Fortschritte aktiv anbieten. Die Übung wirkt nur, wenn das Tagebuch wirklich regelmäßig fortgeführt und gewürdigt wird – planen Sie feste Wochen-Termine ein.",
+    "etepStufen": [
+      3,
+      4
+    ],
+    "eldibGoals": [
+      "KOG-37",
+      "KOG-55",
+      "KOG-57",
+      "KOG-61",
+      "SOZ-9",
+      "SOZ-25",
+      "SOZ-26",
+      "SOZ-34",
+      "V-16",
+      "V-23",
+      "K-18",
+      "K-26"
+    ],
+    "worksheet": {
+      "title": "Mein Fortschritts-Detektiv-Blatt",
+      "intro": "Such wie ein Detektiv nach Beweisen dafür, was schon besser geworden ist – und schreib dir deine Anstrengung gut, nicht nur das Ergebnis.",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "Die Detektiv-Fragen"
+        },
+        {
+          "kind": "question",
+          "text": "Was kann ich heute, das ich vor einiger Zeit noch nicht konnte?",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "Wofür habe ich mich zuletzt angestrengt, auch wenn es schwer war?",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "Worauf bin ich ein bisschen stolz?",
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "Meine 'Noch-nicht'-Formel"
+        },
+        {
+          "kind": "instruction",
+          "text": "Mach aus 'Ich kann das nicht' ein 'Ich kann das NOCH NICHT'."
+        },
+        {
+          "kind": "question",
+          "text": "Das kann ich noch nicht – aber ich bleibe dran:",
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "Mein erster Tagebuch-Eintrag"
+        },
+        {
+          "kind": "box",
+          "lines": 3
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "die-waage-der-klasse-wir-entwickeln-ein-faires-verfahren-fuer-streitfaelle",
+    "title": "Die Waage der Klasse: Wir entwickeln ein faires Verfahren für Streitfälle",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "C3",
+      "C4"
+    ],
+    "type": [
+      "Projet"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Projekt der ganzen Klasse über mehrere Einheiten; Einstieg und Abschluss im Plenum"
+      },
+      {
+        "mode": "Grupp",
+        "note": "feste Verfahrens-Teams zu 3–4 Kindern entwickeln je einen Baustein"
+      },
+      {
+        "mode": "Individuel",
+        "note": "stille Reflexion: Wann fühle ich mich fair behandelt?"
+      }
+    ],
+    "themes": [
+      "gerechtigkeit",
+      "konfliktloesung",
+      "kommunikation"
+    ],
+    "tags": [
+      "fairness",
+      "verfahren",
+      "anhoeren",
+      "unparteilichkeit",
+      "streitschlichtung",
+      "perspektivwechsel",
+      "vereinbarung",
+      "mitsprache"
+    ],
+    "shortDescription": "Wenn es Streit gibt, entscheidet oft nicht die bessere Lösung, sondern wer lauter ist oder mehr Freunde hat. In diesem Projekt erkennen die Kinder, dass Gerechtigkeit nicht nur vom Ergebnis abhängt, sondern davon, WIE entschieden wird. Sie untersuchen unfaire und faire Abläufe, leiten daraus Bausteine eines gerechten Verfahrens ab (beide anhören, niemanden vorverurteilen, alle Seiten ernst nehmen) und entwickeln gemeinsam ein verbindliches Streit-Verfahren für ihre eigene Klasse, das sie am Ende erproben.",
+    "ablauf": [
+      {
+        "title": "Einstieg: Zwei Streitfälle, zwei Gefühle (1. Einheit, ca. 45 Min.)",
+        "text": "Spielen Sie mit zwei Freiwilligen zwei kurze Szenen vor, in denen derselbe Streit unterschiedlich 'gelöst' wird. Variante A: Die Lehrperson hört nur einer Seite zu und entscheidet sofort. Variante B: Beide werden angehört, dürfen ausreden und die Entscheidung wird begründet. Fragen Sie die Beteiligten und die Klasse: 'Bei welcher Variante fühlt sich die Entscheidung gerecht an – und warum, obwohl das Ergebnis vielleicht ähnlich ist?' Sammeln Sie die Beobachtungen an der Tafel. Führen Sie den Kerngedanken ein: Gerechtigkeit hat zwei Seiten – das ERGEBNIS (was entschieden wird) und das VERFAHREN (wie entschieden wird). Heute startet ein Projekt, an dessen Ende ein faires Streit-Verfahren steht, das in dieser Klasse wirklich gilt."
+      },
+      {
+        "title": "Hauptteil 1: Detektive für faire und unfaire Abläufe (1.–2. Einheit, ca. 45 Min.)",
+        "text": "Verteilen Sie an die Verfahrens-Teams kurze, ausgedachte Fallbeschreibungen (z. B. 'Es ist etwas kaputtgegangen und alle zeigen sofort auf ein bestimmtes Kind' oder 'Zwei beschuldigen sich, nur einer darf reden'). Aufgabe: Markieren, an welcher Stelle der Ablauf unfair wird, und benennen, woran man das erkennt. Sammeln Sie die Funde gemeinsam zu 'Fairness-Killern' (Vorverurteilen, nur eine Seite hören, Lautstärke entscheidet, Freundschaft bevorzugt, keine Begründung). Drehen Sie jeden Fairness-Killer in eine positive Regel um ('beide Seiten anhören', 'erst zuhören, dann urteilen'). Diese Regeln werden zum Rohmaterial für das Verfahren."
+      },
+      {
+        "title": "Hauptteil 2: Verfahrens-Bausteine entwickeln (2.–3. Einheit, ca. 60 Min.)",
+        "text": "Jedes Team übernimmt einen Baustein eines fairen Streit-Verfahrens und arbeitet ihn konkret aus: (1) ANHÖREN – Wie stellen wir sicher, dass beide ausreden dürfen? (2) VERSTEHEN – Wie finden wir heraus, was wirklich passiert ist und wie sich beide fühlen? (3) UNPARTEILICH BLEIBEN – Wer schlichtet, und wie verhindern wir, dass Freundschaft die Entscheidung lenkt? (4) LÖSEN & VEREINBAREN – Wie kommen wir zu einer Lösung, mit der beide leben können, und wie halten wir sie fest? Die Teams formulieren ihren Baustein als kurze Schritt-Anleitung und überlegen einen Test: 'Woran merken die Streitenden, dass es fair war?' Begleiten Sie und schärfen Sie unkonkrete Formulierungen ('fair sein' → 'jede Seite bekommt gleich viel Redezeit')."
+      },
+      {
+        "title": "Hauptteil 3: Das Verfahren zusammensetzen und erproben (3.–4. Einheit, ca. 60 Min.)",
+        "text": "Setzen Sie im Plenum die vier Bausteine zu einem einzigen 'Weg der Waage' zusammen – einer klaren Reihenfolge von Schritten, sichtbar auf einem Plakat. Lassen Sie das Verfahren an einem neuen, ausgedachten Streitfall durchspielen: Zwei Kinder spielen die Streitenden, ein bis zwei 'Waage-Schlichter:innen' führen durch die Schritte, der Rest beobachtet mit einer kurzen Beobachtungsliste ('Durften beide ausreden? Wurde nicht vorverurteilt? Gab es eine Begründung?'). Werten Sie aus, was schon gut lief und wo das Verfahren noch hakt, und passen Sie es gemeinsam an. Wichtig: Es darf nachgebessert werden – ein faires Verfahren entsteht durch Ausprobieren."
+      },
+      {
+        "title": "Abschluss: Unsere Selbstverpflichtung zur Fairness (4. Einheit, ca. 30 Min.)",
+        "text": "Halten Sie die endgültige Fassung des Verfahrens als 'Verfassung der Klasse für faire Streitlösung' fest und hängen Sie das Plakat dauerhaft sichtbar auf. Jede:r reflektiert still auf dem Arbeitsblatt: 'Wann habe ich mich schon einmal unfair behandelt gefühlt – und welcher Schritt unseres Verfahrens hätte geholfen?' Reihum nennt jede:r eine Sache, die er oder sie beim nächsten Streit selbst beachten will. Schluss-Impuls: 'Gerecht ist nicht, wenn alle dasselbe wollen, sondern wenn alle fair behandelt werden – auch die, die am Ende nachgeben.' Vereinbaren Sie, dass das Verfahren bei den nächsten echten Streitfällen tatsächlich genutzt wird."
+      }
+    ],
+    "duration": "4 Einheiten à 45–60 Minuten (Projektphase über eine Woche oder verteilt über mehrere Tage)",
+    "materialsNeeded": "6–10 ausgedachte Fallkarten mit Streitsituationen, rote Karten für 'Fairness-Killer' und grüne für die Regeln, vier vorbereitete Baustein-Plakate (Anhören / Verstehen / Unparteilich bleiben / Lösen & Vereinbaren), ein großes Plakat 'Der Weg der Waage', Beobachtungslisten für das Rollenspiel, Arbeitsblatt pro Kind, Stifte/Marker, ggf. ein Symbol für eine Waage.",
+    "remark": "Sensibilitätshinweis: Ausschließlich erfundene Fälle verwenden – niemals einen realen, ungelösten Streit der Klasse nachstellen oder einzelne Kinder als 'Beispiel' herausgreifen. Stellen Sie klar, dass das Verfahren bei ernsten Vorfällen (Gewalt, anhaltendes Mobbing) immer Erwachsene einbezieht und kein 'Kinder-Gericht' mit Strafen ist – es geht um faire Klärung, nicht um Verurteilung. Differenzierung: Für C3 die Bausteine mit Bildsymbolen und vorgegebenen Satzanfängen stärker vorstrukturieren und nur drei Bausteine bearbeiten; C4 kann eigene Beobachtungskriterien entwickeln und das Verfahren schriftlich als kurze 'Verfassung' ausformulieren. Das Verfahren wirkt nur, wenn es im Alltag konsequent angewendet und gelegentlich überprüft wird.",
+    "etepStufen": [
+      3,
+      4,
+      5
+    ],
+    "eldibGoals": [
+      "V-19",
+      "V-20",
+      "K-15",
+      "K-17",
+      "K-19",
+      "K-22",
+      "SOZ-24",
+      "SOZ-25",
+      "SOZ-30",
+      "SOZ-33",
+      "KOG-44",
+      "KOG-46"
+    ],
+    "worksheet": {
+      "title": "Mein Fairness-Logbuch zur Waage der Klasse",
+      "intro": "Gerechtigkeit hängt nicht nur davon ab, WAS entschieden wird, sondern auch davon, WIE. Halte deine Gedanken zum fairen Verfahren fest.",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "Fair oder unfair?"
+        },
+        {
+          "kind": "instruction",
+          "text": "Denke an einen Ablauf, der sich für dich unfair angefühlt hat – egal ob in der Schule, zu Hause oder beim Spiel."
+        },
+        {
+          "kind": "question",
+          "text": "Wann habe ich mich unfair behandelt gefühlt? Was ist passiert?",
+          "lines": 3
+        },
+        {
+          "kind": "question",
+          "text": "Was genau hat den Ablauf unfair gemacht? (z. B. niemand hat mir zugehört)",
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "Die Bausteine unseres Verfahrens"
+        },
+        {
+          "kind": "checklist",
+          "items": [
+            "Beide Seiten dürfen ausreden",
+            "Erst zuhören, dann urteilen – niemanden vorverurteilen",
+            "Wer schlichtet, bleibt unparteiisch",
+            "Es gibt eine Lösung, mit der beide leben können",
+            "Die Entscheidung wird begründet"
+          ]
+        },
+        {
+          "kind": "question",
+          "text": "Welcher Schritt unseres Verfahrens hätte in meiner Situation geholfen?",
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "Mein Vorsatz"
+        },
+        {
+          "kind": "question",
+          "text": "Das will ich beim nächsten Streit selbst beachten:",
+          "lines": 2
+        },
+        {
+          "kind": "scale",
+          "text": "Wie fair geht es in unserer Klasse gerade zu?",
+          "items": [
+            "oft unfair",
+            "mal so, mal so",
+            "meistens fair",
+            "sehr fair"
+          ]
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "gleich-gleicher-gerecht-wenn-nicht-alle-dasselbe-brauchen",
+    "title": "Gleich, gleicher, gerecht? Wenn nicht alle dasselbe brauchen",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "C3",
+      "C4"
+    ],
+    "type": [
+      "Projet"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Einstieg, Stationen-Auswertung und Abschluss-Galerie im Plenum"
+      },
+      {
+        "mode": "Grupp",
+        "note": "feste Forscher-Teams durchlaufen Fall-Stationen und gestalten ein Plakat"
+      },
+      {
+        "mode": "Individuel",
+        "note": "persönliche Entscheidung: Wo wünsche ich mir Gleichbehandlung, wo Rücksicht?"
+      }
+    ],
+    "themes": [
+      "gerechtigkeit",
+      "fremdwahrnehmung",
+      "kooperation"
+    ],
+    "tags": [
+      "fairness",
+      "gleichbehandlung",
+      "beduerfnisse",
+      "ruecksicht",
+      "verteilung",
+      "chancen",
+      "perspektivwechsel",
+      "abwaegen"
+    ],
+    "shortDescription": "Ist es gerecht, wenn alle exakt das Gleiche bekommen? Manchmal ja – manchmal aber braucht der eine eine Brille und der andere keine. In diesem Projekt unterscheiden die Kinder zwischen 'gleich behandeln' (jede:r bekommt dasselbe) und 'gerecht behandeln' (jede:r bekommt, was er oder sie braucht). An mehreren Fall-Stationen wägen sie ab, wann welche Sicht passt, lernen, Bedürfnisse anderer ernst zu nehmen, ohne in Beliebigkeit zu verfallen, und entwickeln eigene Faustregeln für gerechte Entscheidungen im Schulalltag.",
+    "ablauf": [
+      {
+        "title": "Einstieg: Drei Kisten am Zaun (1. Einheit, ca. 45 Min.)",
+        "text": "Beschreiben oder skizzieren Sie das bekannte Bild: Drei unterschiedlich große Personen wollen über einen Zaun schauen. Variante A: Alle bekommen genau eine gleich hohe Kiste – die kleinste sieht trotzdem nichts. Variante B: Die Kisten werden so verteilt, dass am Ende alle drüberschauen können. Fragen Sie: 'Welche Verteilung ist gerecht – und ist das dasselbe wie gleich?' Erarbeiten Sie zwei Begriffe: GLEICHBEHANDLUNG (alle bekommen exakt dasselbe) und GERECHTE BEHANDLUNG (jede:r bekommt, was er oder sie braucht, um mitzukommen). Machen Sie deutlich: Beides kann richtig sein – die Kunst ist zu erkennen, wann was passt. Kündigen Sie das Projekt an: Wir werden zu Gerechtigkeits-Forscher:innen und untersuchen echte Alltagsfälle."
+      },
+      {
+        "title": "Hauptteil 1: Die Fall-Stationen (1.–2. Einheit, ca. 60 Min.)",
+        "text": "Richten Sie vier bis fünf Stationen mit je einem alltagsnahen Fall ein, z. B.: 'Ein Kind bekommt im Unterricht mehr Zeit für eine Aufgabe – ist das fair gegenüber den anderen?', 'Beim Geburtstag verteilt jemand ungleich viele Stücke Kuchen', 'In der Mannschaft spielen immer dieselben, weil sie besser sind', 'Eine:r darf wegen einer Allergie etwas anderes essen'. Jedes Forscher-Team durchläuft die Stationen und entscheidet pro Fall: Geht es hier eher um GLEICH oder um GERECHT? Sie notieren ihre Begründung und – wichtig – ein Gegenargument ('Manche könnten finden, dass...'). Begleiten Sie und stellen Sie Rückfragen: 'Was braucht diese Person? Was würde sich für die anderen ungerecht anfühlen?'"
+      },
+      {
+        "title": "Hauptteil 2: Vom Streitfall zur Faustregel (2.–3. Einheit, ca. 45 Min.)",
+        "text": "Die Teams vergleichen ihre Stationen-Ergebnisse und suchen nach Mustern: In welchen Fällen war Gleichbehandlung gerecht, in welchen war Rücksicht auf Bedürfnisse gerechter? Daraus formuliert jedes Team zwei bis drei eigene FAUSTREGELN für gerechte Entscheidungen, z. B. 'Wenn jemand ohne Hilfe nicht mitmachen kann, ist Unterstützung kein Bevorzugen.' oder 'Wenn alle die gleichen Chancen haben, darf das Ergebnis verschieden sein.' Warnen Sie vor zwei Fallen: blinde Gleichmacherei ('alle exakt gleich, egal was') und Beliebigkeit ('jede:r bekommt, was er will'). Eine gute Faustregel benennt, WORAN man den Unterschied erkennt."
+      },
+      {
+        "title": "Hauptteil 3: Plakat und Galerie gestalten (3. Einheit, ca. 45 Min.)",
+        "text": "Jedes Team gestaltet ein Plakat zu einem selbst gewählten Fall: links die Frage, in der Mitte 'gleich oder gerecht?', rechts die Faustregel und ein kleines Bild dazu. Die Plakate werden als 'Galerie der Gerechtigkeit' im Raum aufgehängt. In einem Rundgang besuchen die Teams die Plakate der anderen und kleben grüne Punkte zu Faustregeln, die sie überzeugen, sowie Fragezeichen-Zettel zu Stellen, bei denen sie anderer Meinung sind. So entsteht ein echter Aushandlungsprozess statt fertiger Wahrheiten."
+      },
+      {
+        "title": "Abschluss: Meine Gerechtigkeits-Brille (3.–4. Einheit, ca. 30 Min.)",
+        "text": "Besprechen Sie im Plenum die Fragezeichen aus der Galerie – gerade dort, wo die Klasse uneins ist, wird Gerechtigkeit greifbar. Halten Sie gemeinsam fest: Gerecht heißt nicht immer gleich, aber auch nicht 'jede:r wie er will'. Jede:r entscheidet still auf dem Arbeitsblatt für eine eigene Situation: 'Wo wünsche ich mir, genau gleich behandelt zu werden – und wo wünsche ich mir, dass auf mein Bedürfnis Rücksicht genommen wird?' Schluss-Impuls im Kreis: Reihum nennt jede:r eine Faustregel, die er oder sie mitnimmt. Botschaft: 'Gerechtigkeit heißt nicht, alle gleich zu machen, sondern allen gerecht zu werden.'"
+      }
+    ],
+    "duration": "3–4 Einheiten à 45–60 Minuten (Projektphase über mehrere Tage)",
+    "materialsNeeded": "Skizze oder Bildkarten zum 'Zaun'-Beispiel (Gleichbehandlung vs. gerechte Verteilung), 4–5 Stationskarten mit Alltagsfällen, Notizblätter pro Team, Plakatpapier und Marker, grüne Klebepunkte und kleine Fragezeichen-Zettel für den Galerie-Rundgang, Arbeitsblatt pro Kind, ausreichend Platz für Stationen und Plakatgalerie.",
+    "remark": "Sensibilitätshinweis: Wählen Sie die Fälle so, dass kein Kind der Klasse bloßgestellt wird – verwenden Sie keine realen Beispiele zu Förderbedarf, Behinderung, Herkunft oder Armut einzelner Kinder, sondern allgemeine, erfundene Situationen. Achten Sie behutsam darauf, dass 'Bedürfnis' nicht zu Stigmatisierung führt ('der braucht ja immer Extra-Hilfe'); betonen Sie, dass Unterstützung Fairness herstellt und kein Makel ist. Differenzierung: Für C3 weniger Stationen, mit Bildern und vorgegebenen Satzanfängen; C4 kann Gegenargumente und Grenzfälle vertiefen und die Faustregeln schriftlich begründen. Halten Sie das Pendel bewusst in der Mitte: weder reine Gleichmacherei noch Beliebigkeit.",
+    "etepStufen": [
+      3,
+      4,
+      5
+    ],
+    "eldibGoals": [
+      "V-19",
+      "V-20",
+      "K-15",
+      "K-17",
+      "K-22",
+      "SOZ-24",
+      "SOZ-25",
+      "SOZ-27",
+      "SOZ-30",
+      "SOZ-33",
+      "KOG-44",
+      "KOG-46",
+      "KOG-48"
+    ],
+    "worksheet": {
+      "title": "Meine Gerechtigkeits-Brille",
+      "intro": "Gerecht heißt nicht immer gleich. Manchmal braucht jemand etwas anderes, um mitzukommen. Schau genau hin.",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "Gleich oder gerecht?"
+        },
+        {
+          "kind": "instruction",
+          "text": "Gleich = alle bekommen dasselbe. Gerecht = jede:r bekommt, was er oder sie braucht, um mitzumachen."
+        },
+        {
+          "kind": "question",
+          "text": "Ein Fall, bei dem GLEICHBEHANDLUNG für mich gerecht ist:",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "Ein Fall, bei dem RÜCKSICHT auf das Bedürfnis gerechter ist:",
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "Meine Faustregeln"
+        },
+        {
+          "kind": "instruction",
+          "text": "Schreibe zwei Regeln, die dir helfen, gerecht zu entscheiden."
+        },
+        {
+          "kind": "lines",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "Für mich selbst"
+        },
+        {
+          "kind": "question",
+          "text": "Wo möchte ich genau gleich behandelt werden wie alle?",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "Wo wünsche ich mir, dass auf mein Bedürfnis Rücksicht genommen wird?",
+          "lines": 2
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "wer-entscheidet-hier-eigentlich-eine-gerechte-mitsprache-fuer-unsere-klasse",
+    "title": "Wer entscheidet hier eigentlich? Eine gerechte Mitsprache für unsere Klasse",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "C3",
+      "C4"
+    ],
+    "type": [
+      "Projet"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Klassenrat-Projekt; Einstieg, Aushandlung und Abstimmung im Plenum"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Arbeitsgruppen entwerfen je ein Element der Mitsprache-Ordnung"
+      },
+      {
+        "mode": "Individuel",
+        "note": "stille Einschätzung: Wo habe ich in der Klasse eine Stimme?"
+      }
+    ],
+    "themes": [
+      "gerechtigkeit",
+      "kommunikation",
+      "kooperation"
+    ],
+    "tags": [
+      "mitbestimmung",
+      "mitsprache",
+      "klassenrat",
+      "stimme",
+      "minderheit",
+      "abstimmung",
+      "verantwortung",
+      "regeln"
+    ],
+    "shortDescription": "Gerechtigkeit zeigt sich auch darin, wer mitreden darf, wenn etwas entschieden wird – und ob auch leise oder unterlegene Stimmen zählen. In diesem Projekt untersuchen die Kinder, wie in ihrer Klasse Entscheidungen getroffen werden und wo Mitsprache ungerecht verteilt ist. Sie lernen unterschiedliche Entscheidungswege kennen (Mehrheit, Einigung, Los, Delegation), erproben, wie man Minderheiten schützt, und entwickeln eine faire, verbindliche Mitsprache-Ordnung für ihren Klassenrat, in der jede Stimme einen Platz hat.",
+    "ablauf": [
+      {
+        "title": "Einstieg: Wessen Stimme zählt? (1. Einheit, ca. 45 Min.)",
+        "text": "Beginnen Sie mit einer echten Mini-Entscheidung (z. B. 'Welches Spiel machen wir in der nächsten Bewegungspause?'), aber treffen Sie sie absichtlich unfair: Sie entscheiden allein, oder die lautesten drei setzen sich durch, während andere übergangen werden. Fragen Sie danach offen: 'War das gerecht? Wessen Stimme hat hier gezählt, wessen nicht?' Sammeln Sie die Beobachtungen. Führen Sie die Leitfrage des Projekts ein: In einer gerechten Klasse darf jede:r mitreden – aber wie organisiert man das, ohne dass Entscheidungen endlos dauern oder immer dieselben bestimmen? Kündigen Sie an: Am Ende steht eine selbst gemachte Mitsprache-Ordnung für den Klassenrat."
+      },
+      {
+        "title": "Hauptteil 1: Vier Wege, zu entscheiden (1.–2. Einheit, ca. 60 Min.)",
+        "text": "Stellen Sie vier Entscheidungswege vor und probieren Sie jeden an einer harmlosen Beispielfrage aus: MEHRHEIT (es zählt, was die meisten wollen), EINIGUNG/KONSENS (wir reden, bis alle mitgehen können), LOS (der Zufall entscheidet, wenn es wirklich gleichgültig ist) und DELEGATION (wir beauftragen jemanden, für uns zu entscheiden). Lassen Sie die Klasse nach jedem Durchgang bewerten: Was war daran gerecht, was nicht? Erarbeiten Sie gemeinsam: Kein Weg ist immer der beste – Mehrheit ist schnell, kann aber Minderheiten übergehen; Konsens ist gerecht, dauert aber; Los ist unparteiisch, passt aber nicht für wichtige Fragen. Halten Sie für jeden Weg fest, WANN er gerecht ist."
+      },
+      {
+        "title": "Hauptteil 2: Den Schutz der wenigen Stimmen erfinden (2.–3. Einheit, ca. 45 Min.)",
+        "text": "Stellen Sie das Kernproblem in den Mittelpunkt: Was passiert mit denen, die überstimmt werden? Lassen Sie die Arbeitsgruppen Schutzregeln für Minderheiten entwickeln, z. B.: 'Vor jeder Abstimmung dürfen beide Seiten ihre Gründe nennen', 'Wer überstimmt wurde, darf einen Wunsch äußern, der berücksichtigt wird', 'Manche Dinge entscheiden wir nicht per Mehrheit, weil sie alle gleich betreffen' (z. B. niemanden ausschließen). Jede Gruppe übernimmt zusätzlich ein Element der Klassenrat-Ordnung: Wie kommt ein Thema auf die Tagesordnung? Wer leitet? Wie wird Redezeit fair verteilt? Wie werden Beschlüsse festgehalten? Schärfen Sie unkonkrete Vorschläge zu klaren, machbaren Regeln."
+      },
+      {
+        "title": "Hauptteil 3: Die Mitsprache-Ordnung zusammenfügen und testen (3.–4. Einheit, ca. 60 Min.)",
+        "text": "Setzen Sie die Elemente im Plenum zu einer 'Mitsprache-Ordnung' zusammen – sichtbar auf einem Plakat: Tagesordnung, Rederegeln, passender Entscheidungsweg je nach Frage, Minderheitenschutz, Festhalten der Beschlüsse. Testen Sie die Ordnung sofort an einer echten Klassenfrage, die die Kinder wirklich betrifft. Eine:r leitet nach den neuen Regeln, der Rest beobachtet mit einer kurzen Checkliste ('Durften alle reden? Wurde der passende Weg gewählt? Wurde die Minderheit gehört?'). Werten Sie aus, was funktioniert und wo nachgebessert werden muss. Über die endgültige Fassung wird – passenderweise – nach den eigenen Regeln abgestimmt."
+      },
+      {
+        "title": "Abschluss: Meine Stimme, meine Verantwortung (4. Einheit, ca. 30 Min.)",
+        "text": "Verabschieden Sie die Mitsprache-Ordnung feierlich und hängen Sie sie dauerhaft beim Klassenrat-Platz auf. Jede:r reflektiert still auf dem Arbeitsblatt: 'Wo habe ich in der Klasse schon eine Stimme – und wo möchte ich mehr mitreden?' und 'Wie gehe ich fair damit um, wenn meine Meinung einmal überstimmt wird?' Reihum nennt jede:r eine Verantwortung, die zur eigenen Stimme gehört (z. B. 'andere ausreden lassen', 'mich an Beschlüsse halten, auch wenn ich dagegen war'). Schluss-Impuls: 'Mitreden dürfen ist gerecht – aber es bedeutet auch, die Stimmen der anderen ernst zu nehmen.' Legen Sie fest, wann der nächste Klassenrat nach der neuen Ordnung stattfindet."
+      }
+    ],
+    "duration": "4 Einheiten à 45–60 Minuten (Projektphase über eine bis zwei Wochen)",
+    "materialsNeeded": "Vier Karten mit den Entscheidungswegen (Mehrheit / Einigung / Los / Delegation), eine echte Beispielfrage für den Einstieg, Plakatpapier und Marker für die Mitsprache-Ordnung, Beobachtungs-Checklisten für den Test, Material zum Abstimmen (z. B. Stimmkarten oder Klebepunkte), ein Los-Behälter, Arbeitsblatt pro Kind, fester Platz für den Klassenrat.",
+    "remark": "Hinweis zur Verbindlichkeit: Lassen Sie nur über Dinge entscheiden, bei denen Mitbestimmung echt möglich ist – kündigen Sie offen an, welche Rahmen (Sicherheit, Schulregeln, Lehrplan) nicht zur Abstimmung stehen, sonst entsteht Scheinbeteiligung, die als ungerecht erlebt wird. Schützen Sie ausdrücklich, dass Grundrechte (niemanden ausschließen, niemanden bloßstellen) nicht per Mehrheit aufgehoben werden können. Differenzierung: Für C3 mit zwei Entscheidungswegen (Mehrheit/Einigung) und Bildsymbolen starten und die Ordnung stärker vorstrukturieren; C4 kann Grenzfälle (wann Mehrheit ungerecht ist) und Minderheitenschutz vertiefen. Die Ordnung wirkt nur, wenn der Klassenrat danach regelmäßig stattfindet und Beschlüsse sichtbar umgesetzt werden.",
+    "etepStufen": [
+      3,
+      4,
+      5
+    ],
+    "eldibGoals": [
+      "V-19",
+      "V-20",
+      "K-15",
+      "K-17",
+      "K-19",
+      "K-22",
+      "SOZ-22",
+      "SOZ-24",
+      "SOZ-25",
+      "SOZ-30",
+      "SOZ-33",
+      "KOG-44",
+      "KOG-46"
+    ],
+    "worksheet": {
+      "title": "Meine Stimme im Klassenrat",
+      "intro": "Gerecht ist eine Klasse, in der jede Stimme zählt – auch die, die einmal überstimmt wird. Wie ist das bei dir?",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "Vier Wege zu entscheiden"
+        },
+        {
+          "kind": "instruction",
+          "text": "Überlege, welcher Weg zu welcher Frage passt."
+        },
+        {
+          "kind": "table",
+          "lines": 4,
+          "items": [
+            "Entscheidungsweg",
+            "Passt gut für ...",
+            "Gerecht, weil ..."
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "Wenn meine Meinung überstimmt wird"
+        },
+        {
+          "kind": "question",
+          "text": "So gehe ich fair damit um, wenn die Mehrheit anders entscheidet als ich:",
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "Meine Stimme"
+        },
+        {
+          "kind": "question",
+          "text": "Wo habe ich in der Klasse schon eine Stimme?",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "Wo möchte ich mehr mitreden?",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "Diese Verantwortung gehört zu meiner Stimme:",
+          "lines": 2
+        },
+        {
+          "kind": "scale",
+          "text": "Wie gerecht ist die Mitsprache in unserer Klasse gerade verteilt?",
+          "items": [
+            "sehr ungerecht",
+            "eher ungerecht",
+            "eher gerecht",
+            "sehr gerecht"
+          ]
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "privileg-parcours-warum-nicht-alle-von-derselben-startlinie-loslaufen",
+    "title": "Privileg-Parcours: Warum nicht alle von derselben Startlinie loslaufen",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "C3",
+      "C4"
+    ],
+    "type": [
+      "Projet"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Bewegungs-Parcours, Auswertung und Ideenbörse mit der ganzen Klasse"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Reporter-Teams werten den Parcours aus und planen eine faire Maßnahme"
+      },
+      {
+        "mode": "Individuel",
+        "note": "stille Reflexion: Wo hatte ich Rückenwind, wo Gegenwind?"
+      }
+    ],
+    "themes": [
+      "gerechtigkeit",
+      "fremdwahrnehmung",
+      "bewegung"
+    ],
+    "tags": [
+      "chancengleichheit",
+      "startlinie",
+      "vorurteil",
+      "solidaritaet",
+      "perspektivwechsel",
+      "fairness",
+      "ausgleich",
+      "verantwortung"
+    ],
+    "shortDescription": "Im Spiel heißt 'fair', dass alle an derselben Linie starten. Aber im echten Leben laufen manche schon mit Vorsprung los, andere mit Gegenwind – ohne dass das jemand verdient hätte. In diesem Bewegungs-Projekt erleben die Kinder am eigenen Körper, wie unterschiedliche Startbedingungen ein Rennen entscheiden, bevor es richtig losgeht. Sie reflektieren behutsam, was im Leben Rückenwind oder Gegenwind sein kann, unterscheiden 'selbst verdient' von 'einfach so zugeteilt' und entwickeln Ideen, wie eine Gemeinschaft Startnachteile fair ausgleichen kann.",
+    "ablauf": [
+      {
+        "title": "Einstieg: Die unfaire Startlinie (1. Einheit, ca. 45 Min.)",
+        "text": "Stellen Sie alle Kinder an eine gemeinsame Startlinie für einen kurzen, harmlosen Lauf zu einem Ziel. Bevor es losgeht, verteilen Sie per Los kleine 'Schritt-Karten': Manche dürfen drei Schritte vorrücken, andere müssen zwei zurück, einige bleiben stehen – ausdrücklich zufällig, NICHT nach Können. Dann erst das Startsignal. Werten Sie sofort aus: 'Wer hat gewonnen? Lag das an Schnelligkeit oder an der Startposition? Wie hat sich das angefühlt – vorn wie hinten?' Führen Sie den Kerngedanken ein: Beim fairen Spiel starten alle gleich. Im Leben haben Menschen aber unterschiedliche Startbedingungen, die sie sich nicht ausgesucht haben. Genau das schauen wir uns in diesem Projekt an."
+      },
+      {
+        "title": "Hauptteil 1: Rückenwind und Gegenwind (1.–2. Einheit, ca. 45 Min.)",
+        "text": "Bauen Sie den Parcours zu Stationen um, an denen Bewegung mit Bedeutung verknüpft wird (rein auf allgemeine, nicht-bloßstellende Aussagen bezogen): An jeder Station lesen Sie eine Karte vor, und wer zustimmen kann, macht einen Schritt vor ('Rückenwind') oder zurück ('Gegenwind') – z. B. 'Zu Hause gibt es jemanden, der mir bei den Hausaufgaben helfen kann', 'Ich musste schon mal eine Sprache neu lernen', 'Es gibt einen ruhigen Platz zum Lernen'. Wählen Sie die Aussagen so, dass sie niemanden vorführen und jede:r mal vor und mal zurück geht. Danach Auswertung im Kreis: Wer steht jetzt weiter vorn? Hat sich jemand seinen Rückenwind ausgesucht? Unterscheiden Sie 'selbst verdient' (z. B. fleißig geübt) von 'einfach zugeteilt' (z. B. wo man geboren ist)."
+      },
+      {
+        "title": "Hauptteil 2: Reporter-Teams deuten die Startlinie (2.–3. Einheit, ca. 45 Min.)",
+        "text": "Die Reporter-Teams werten das Erlebte aus, ohne über einzelne Kinder zu sprechen – sie arbeiten mit ausgedachten Beispiel-Figuren. Aufgabe: Sammeln, was im Leben Rückenwind oder Gegenwind sein kann (Gesundheit, Sprache, Geld, Unterstützung, Wohnort) und entscheiden, was davon man sich aussucht und was nicht. Dann die Kernfrage: 'Ist es gerecht, dass manche mit Vorsprung starten? Und was kann eine Gemeinschaft tun, damit das Rennen fairer wird?' Führen Sie den Gedanken des AUSGLEICHS ein: nicht allen das Gleiche, sondern denen mit Gegenwind etwas Rückenwind geben (Hilfe, Förderung, Rücksicht). Jedes Team hält seine wichtigsten Erkenntnisse fest."
+      },
+      {
+        "title": "Hauptteil 3: Ideenbörse für mehr Fairness (3. Einheit, ca. 45 Min.)",
+        "text": "Jedes Reporter-Team entwickelt eine konkrete, machbare Idee, wie in der Klasse oder Schule Startnachteile ausgeglichen werden können – z. B. eine Lern-Patenschaft, eine Tausch-Ecke für Material, eine Regel, dass beim Teams-Wählen niemand übrig bleibt, oder eine 'zweite Chance' für jemanden, der etwas verpasst hat. Wichtig: Die Idee soll nicht 'bemitleiden', sondern echte Teilhabe ermöglichen. Die Teams stellen ihre Ideen an einer 'Ideenbörse' (Plakatwand) vor, die anderen kleben grüne Punkte zu Ideen, die wirklich helfen würden, und ergänzen Verbesserungen. Wählen Sie gemeinsam ein bis zwei Ideen aus, die die Klasse tatsächlich umsetzt."
+      },
+      {
+        "title": "Abschluss: Mein Rückenwind für andere (3.–4. Einheit, ca. 30 Min.)",
+        "text": "Schließen Sie den Kreis: Wiederholen Sie kurz die Startlinie vom Anfang und halten Sie fest – manche Vorteile sind verdient, viele sind einfach zugeteilt, und eine gerechte Gemeinschaft hilft denen mit Gegenwind, aufzuholen. Jede:r reflektiert still auf dem Arbeitsblatt: 'Wo hatte ich in meinem Leben Rückenwind, den ich mir nicht ausgesucht habe?' und 'Mit welchem kleinen Rückenwind kann ich jemand anderem helfen?' Reihum nennt jede:r eine konkrete Sache, mit der er oder sie zur Fairness beiträgt. Schluss-Impuls: 'Fairness heißt nicht, dass alle gleich schnell sind – sondern dass alle eine echte Chance bekommen, mitzukommen.'"
+      }
+    ],
+    "duration": "3–4 Einheiten à 45 Minuten (Projektphase, Hauptteil mit Bewegungsraum)",
+    "materialsNeeded": "Markierung für Start- und Ziellinie (Seil, Kreide oder Hütchen), Los-Set mit 'Schritt-Karten' (vor/zurück/stehen) für den Einstieg, vorbereitete Aussagen-Karten für Rückenwind/Gegenwind (allgemein, nicht bloßstellend), Notizblätter pro Reporter-Team, Plakatwand für die Ideenbörse, grüne Klebepunkte, Arbeitsblatt pro Kind, ausreichend großer Bewegungsraum (Turnhalle, Hof oder freigeräumter Klassenraum).",
+    "remark": "Wichtiger Sensibilitätshinweis: Dieses Projekt berührt Armut, Herkunft und familiäre Umstände – führen Sie alle Schritte-Aussagen so allgemein und freiwillig, dass kein Kind seine private Lage offenlegen muss; bieten Sie an, bei einzelnen Aussagen einfach stehenzubleiben, und beobachten Sie sensibel, ob jemand sich exponiert fühlt. Sprechen Sie nie über die reale Situation eines bestimmten Kindes und vermeiden Sie Mitleids-Dynamiken ('der Arme'); der Fokus liegt auf Strukturen und Solidarität, nicht auf einzelnen Personen. Halten Sie ein Einzelgespräch bereit. Differenzierung: Für C3 mit weniger, klar verständlichen Aussagen und stärkerem Bewegungsanteil arbeiten, die Deutung mit Bildkarten stützen; C4 kann 'verdient vs. zugeteilt' und Ausgleichsideen vertiefen. Sicherheit beim Bewegungsteil: genug Abstand, kein Drängeln, klare Stopp-Regel.",
+    "etepStufen": [
+      3,
+      4,
+      5
+    ],
+    "eldibGoals": [
+      "V-15",
+      "V-19",
+      "V-20",
+      "K-15",
+      "K-17",
+      "K-22",
+      "SOZ-19",
+      "SOZ-22",
+      "SOZ-24",
+      "SOZ-25",
+      "SOZ-30",
+      "SOZ-33",
+      "KOG-44",
+      "KOG-46"
+    ],
+    "worksheet": {
+      "title": "Rückenwind und Gegenwind – meine Startlinie",
+      "intro": "Manche starten mit Vorsprung, andere mit Gegenwind – oft ohne es sich ausgesucht zu haben. Eine gerechte Gemeinschaft gleicht das aus.",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "Verdient oder zugeteilt?"
+        },
+        {
+          "kind": "instruction",
+          "text": "Manche Vorteile hat man sich erarbeitet (verdient), andere sind einem einfach zugefallen (zugeteilt)."
+        },
+        {
+          "kind": "question",
+          "text": "Ein Rückenwind in meinem Leben, den ich mir NICHT ausgesucht habe:",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "Etwas, das ich mir wirklich selbst erarbeitet habe:",
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "Fair ausgleichen"
+        },
+        {
+          "kind": "question",
+          "text": "Wie kann eine Gemeinschaft denen mit Gegenwind helfen, ohne sie zu bemitleiden?",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "Mein Beitrag"
+        },
+        {
+          "kind": "question",
+          "text": "Mit welchem kleinen Rückenwind kann ich jemand anderem helfen?",
+          "lines": 2
+        },
+        {
+          "kind": "checklist",
+          "items": [
+            "Ich lasse beim Wählen niemanden übrig",
+            "Ich helfe, wenn jemand etwas nicht versteht",
+            "Ich teile Material, wenn jemand keins hat",
+            "Ich gönne anderen eine zweite Chance"
+          ]
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "echt-oder-erfunden-die-vier-fragen-pruefung-gegen-fake-news",
+    "title": "Echt oder erfunden? Die Vier-Fragen-Prüfung gegen Fake News",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "C4",
+      "ES"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "gemeinsamer Einstieg und Auswertung im Plenum"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Prüf-Teams nehmen je eine Meldung unter die Lupe"
+      },
+      {
+        "mode": "Individuel",
+        "note": "jede:r füllt am Ende die eigene Prüf-Karte aus"
+      }
+    ],
+    "themes": [
+      "medien",
+      "kommunikation"
+    ],
+    "tags": [
+      "fake news",
+      "quellen pruefen",
+      "medienkompetenz",
+      "faktencheck",
+      "desinformation",
+      "kritisches denken",
+      "internet"
+    ],
+    "shortDescription": "Im Netz sieht jede Meldung gleich echt aus – egal ob sie stimmt oder frei erfunden ist. In dieser Aktivität lernen die Jugendlichen, nicht alles sofort zu glauben, sondern jede Information mit vier einfachen Fragen zu prüfen, bevor sie sie für wahr halten oder weiterschicken. Sie untersuchen echte und gefälschte Beispiel-Meldungen und entwickeln eine persönliche Prüf-Routine, die sie auch im echten Online-Alltag anwenden können.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Drei Schlagzeilen, eine Lüge (10 Min.)",
+        "text": "Zeigen Sie drei kurze Schlagzeilen auf Karten oder am Bildschirm – zwei davon stimmen, eine ist erfunden (alle möglichst gleich seriös gestaltet, mit Foto). Lassen Sie die Klasse per Handzeichen abstimmen, welche gefälscht ist. Lösen Sie auf und sammeln Sie: 'Woran hättet ihr es erkennen können?' Machen Sie die Kernbotschaft deutlich: Im Internet sieht Falsches oft genauso echt aus wie Wahres – man kann es nicht am Aussehen erkennen, sondern nur durch Nachprüfen. Genau das üben wir heute."
+      },
+      {
+        "title": "Hinführung – Die Vier-Fragen-Prüfung (8 Min.)",
+        "text": "Stellen Sie vier Prüf-Fragen vor und schreiben Sie sie sichtbar an: (1) WER sagt das? – gibt es eine erkennbare Quelle, einen Namen, ein echtes Medium? (2) WANN ist es entstanden? – ist die Meldung aktuell oder ein alter, neu aufgewärmter Inhalt? (3) BEWEISE? – gibt es nachprüfbare Belege oder nur Behauptungen und große Gefühle? (4) WO STEHT ES SONST? – berichten auch andere, unabhängige Stellen darüber? Erklären Sie: Starke Gefühle (Wut, Angst, Empörung) sind oft ein Warnsignal – Fake News wollen genau das auslösen, damit man ungeprüft teilt."
+      },
+      {
+        "title": "Hauptteil 1 – Prüf-Teams am Werk (16 Min.)",
+        "text": "Verteilen Sie an Kleingruppen je eine vorbereitete 'Meldung' (Screenshot oder Karte) – ein Mix aus echten Nachrichten, alten aus dem Zusammenhang gerissenen Bildern und klaren Falschmeldungen. Die Teams arbeiten die vier Fragen schriftlich auf dem Arbeitsblatt durch und entscheiden begründet: 'glaubwürdig', 'zweifelhaft' oder 'wahrscheinlich falsch'. Gehen Sie herum und stupsen Sie an: 'Was sagt euch eigentlich, dass das stimmt – außer dass es überzeugend aussieht?'"
+      },
+      {
+        "title": "Hauptteil 2 – Urteile vergleichen (8 Min.)",
+        "text": "Jedes Team stellt seine Meldung kurz vor und nennt sein Urteil mit der wichtigsten Begründung. Lösen Sie nach jeder Vorstellung auf, was tatsächlich dahintersteckte. Heben Sie besonders die kniffligen Fälle hervor – echte Bilder mit falscher Bildunterschrift oder reißerische, aber im Kern korrekte Meldungen. Halten Sie fest: Prüfen heißt nicht, alles für Lüge zu halten, sondern erst zu schauen, dann zu glauben."
+      },
+      {
+        "title": "Abschluss – Meine Prüf-Routine (8 Min.)",
+        "text": "Jede:r hält auf einer kleinen Karte die persönliche Vier-Fragen-Prüfung fest und ergänzt einen eigenen Vorsatz, z. B. 'Bevor ich etwas weiterschicke, prüfe ich mindestens eine Quelle' oder 'Bei starker Empörung halte ich zuerst inne'. Schließen Sie mit der Botschaft: 'Wer prüft, bevor er teilt, wird nicht zum Werkzeug für Lügen.' Wer mag, liest seinen Vorsatz vor."
+      }
+    ],
+    "duration": "ca. 50 Minuten (eine Unterrichtsstunde)",
+    "materialsNeeded": "3 vorbereitete Schlagzeilen-Karten für den Einstieg (2 echt, 1 erfunden); pro Team ein Set Beispiel-Meldungen als Ausdruck oder Screenshot (Mischung aus echt, aus dem Kontext gerissen und falsch); Arbeitsblatt 'Vier-Fragen-Prüfung' pro Person; Karteikarten für die persönliche Prüf-Routine; Tafel/Whiteboard für die vier Fragen; optional Internetzugang für eine kurze Gegenprobe.",
+    "remark": "Vorbereitungshinweis: Stellen Sie die Beispiel-Meldungen vorab zusammen und notieren Sie sich für jede die Auflösung – verwenden Sie keine aktuellen, emotional aufgeladenen oder die Klasse betreffenden Themen, sondern neutrale, gut nachprüfbare Beispiele. Differenzierung (C4): mit nur zwei Fragen (WER? / WO STEHT ES SONST?) und eindeutigeren Fällen arbeiten; bei ES alle vier Fragen und die kniffligen Halbwahrheiten vertiefen. Achten Sie darauf, dass keine Mitschüler:innen bloßgestellt werden, falls jemand einbringt, selbst schon etwas Falsches geteilt zu haben – das offen und ohne Häme behandeln.",
+    "etepStufen": [
+      3,
+      4
+    ],
+    "eldibGoals": [
+      "KOG-37",
+      "KOG-39",
+      "KOG-40",
+      "KOG-55",
+      "KOG-57",
+      "KOG-61",
+      "SOZ-9",
+      "SOZ-25",
+      "SOZ-34",
+      "K-18",
+      "K-26",
+      "V-23"
+    ],
+    "worksheet": {
+      "title": "Vier-Fragen-Prüfung: Echt oder erfunden?",
+      "intro": "Im Netz sieht Falsches oft genauso echt aus wie Wahres. Prüfe jede Meldung mit diesen vier Fragen, bevor du sie glaubst oder weiterschickst.",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "Unsere Meldung"
+        },
+        {
+          "kind": "instruction",
+          "text": "Schreibe kurz auf, worum es in eurer Meldung geht."
+        },
+        {
+          "kind": "lines",
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "Die vier Prüf-Fragen"
+        },
+        {
+          "kind": "question",
+          "text": "1. WER sagt das? Gibt es eine erkennbare Quelle / ein echtes Medium?",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "2. WANN ist es entstanden? Aktuell oder alt und neu aufgewärmt?",
+          "lines": 1
+        },
+        {
+          "kind": "question",
+          "text": "3. BEWEISE? Gibt es Belege – oder nur Behauptungen und große Gefühle?",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "4. WO STEHT ES SONST? Berichten auch andere, unabhängige Stellen?",
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "Unser Urteil"
+        },
+        {
+          "kind": "checklist",
+          "items": [
+            "glaubwürdig",
+            "zweifelhaft",
+            "wahrscheinlich falsch"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "Mein Vorsatz fürs nächste Mal"
+        },
+        {
+          "kind": "box",
+          "lines": 2
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "hochglanz-gegen-wirklichkeit-was-der-feed-mir-nicht-zeigt",
+    "title": "Hochglanz gegen Wirklichkeit: Was der Feed mir nicht zeigt",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "C4",
+      "ES"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Einstieg und Abschluss gemeinsam im Sitzkreis"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Kleingruppen entlarven die Tricks hinter perfekten Bildern"
+      },
+      {
+        "mode": "Individuel",
+        "note": "jede:r gestaltet das eigene Vorher-Nachher-Bild"
+      }
+    ],
+    "themes": [
+      "medien",
+      "selbstwahrnehmung"
+    ],
+    "tags": [
+      "soziale medien",
+      "vergleich",
+      "filter",
+      "selbstbild",
+      "schein und sein",
+      "influencer",
+      "selbstwert"
+    ],
+    "shortDescription": "Feeds zeigen fast nur perfekte Momente – gestellte Fotos, beste Lichtblicke, geschönte Bilder. Wer sein eigenes ganz normales Leben damit vergleicht, fühlt sich schnell schlechter. In dieser Aktivität durchschauen die Jugendlichen, wie die scheinbar perfekten Online-Bilder entstehen, und üben, den ständigen Vergleich bewusst zu stoppen. Sie entdecken, dass hinter jedem Hochglanz-Moment ein ganz normaler Alltag mit Anstrengung, Pannen und Pausen steckt.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Der perfekte Moment (9 Min.)",
+        "text": "Beschreiben oder zeigen Sie (ohne echte Profile) ein typisches 'perfektes' Posting: Strandfoto, Traumkörper, lachende Freunde, tolles Essen. Fragen Sie: 'Wenn ihr so etwas seht, während ihr müde auf dem Sofa liegt – wie fühlt sich das an?' Sammeln Sie ehrlich Gefühle wie Neid, 'mein Leben ist langweilig', Druck. Stellen Sie die Leitfrage der Stunde: Zeigt so ein Bild das echte Leben – oder nur einen sorgfältig ausgewählten Ausschnitt davon?"
+      },
+      {
+        "title": "Hinführung – Die Tricks hinter dem Hochglanz (9 Min.)",
+        "text": "Machen Sie sichtbar, wie perfekte Bilder entstehen. Sammeln Sie an der Tafel die gängigen 'Tricks': AUSWAHL (von 50 Fotos wird das eine beste gepostet), INSZENIERUNG (gestellt, aufgeräumt, geplant), BEARBEITUNG (Filter, Retusche, Licht) und WEGLASSEN (Streit, Langeweile, Anstrengung zeigt niemand). Kernbotschaft: Ein Feed ist kein Fenster ins echte Leben, sondern eine Bühne. Man vergleicht das eigene komplette Leben mit den Höhepunkten der anderen – ein unfairer Vergleich, den man immer verliert."
+      },
+      {
+        "title": "Hauptteil 1 – Detektive der Inszenierung (15 Min.)",
+        "text": "In Kleingruppen erhalten die Jugendlichen Beschreibungen oder neutrale Beispielbilder typischer Posts. Aufgabe: Welche Tricks (Auswahl, Inszenierung, Bearbeitung, Weglassen) stecken vermutlich dahinter? Was könnte direkt VOR oder NACH dem Foto passiert sein, das man nicht sieht? Die Gruppen notieren ihre Vermutungen. Gehen Sie herum und regen Sie an: 'Was musste alles passieren, damit dieses eine Bild entsteht?'"
+      },
+      {
+        "title": "Hauptteil 2 – Mein ehrliches Vorher-Nachher (10 Min.)",
+        "text": "Jede:r gestaltet auf dem Arbeitsblatt ein 'Vorher-Nachher': In das eine Feld kommt der HOCHGLANZ (wie ein perfekter Post von einem selbst aussehen würde – gemalt oder beschrieben), in das andere die WIRKLICHKEIT dahinter (was im echten Leben drumherum war: Aufwand, Pannen, Unperfektes). Betonen Sie: Es geht nicht darum, sich schlechtzumachen, sondern zu zeigen, dass hinter jedem schönen Moment ein ganz normaler Alltag steckt – bei allen."
+      },
+      {
+        "title": "Abschluss – Mein Vergleichs-Stopp (7 Min.)",
+        "text": "Sammeln Sie im Kreis Sätze, die helfen, den Vergleich zu stoppen, z. B. 'Das ist nur ein Ausschnitt', 'Ich sehe seine Höhepunkte, nicht seinen Alltag', 'Mein echtes Leben ist mehr wert als ein gestelltes Bild'. Jede:r wählt einen Satz als persönlichen 'Vergleichs-Stopp' und schreibt ihn auf eine Karte. Schlussbotschaft: 'Du vergleichst deinen ganzen Film mit dem Trailer der anderen – kein Wunder, dass das unfair ist.'"
+      }
+    ],
+    "duration": "ca. 50 Minuten (eine Unterrichtsstunde)",
+    "materialsNeeded": "Tafel/Whiteboard für die 'Tricks'; neutrale Beispielbilder oder kurze Post-Beschreibungen für die Gruppen (keine echten Profile von Mitschüler:innen!); Arbeitsblatt 'Hochglanz und Wirklichkeit' mit Vorher-Nachher-Feldern pro Person; Karteikarten für den Vergleichs-Stopp; Stifte und Buntstifte.",
+    "remark": "Sensibilitätshinweis: Das Thema Selbstbild und Körper kann verletzlich machen – verwenden Sie ausschließlich neutrale oder erfundene Beispiele, niemals reale Profile oder Bilder von Anwesenden, und lassen Sie niemanden sein eigenes Aussehen bewerten. Stellen Sie keine Plattform und keine Person als 'schuld' bloß; es geht um den Mechanismus, nicht um Verbote. Differenzierung (C4): nur zwei Tricks (Auswahl / Weglassen) behandeln und stärker malen lassen; bei ES alle vier Tricks und den 'unfairen Vergleich' vertiefen. Wenn ein:e Jugendliche:r starken Druck oder Belastung andeutet, das Gespräch behutsam aufgreifen und bei Bedarf an Beratung weiterleiten.",
+    "etepStufen": [
+      3,
+      4
+    ],
+    "eldibGoals": [
+      "KOG-37",
+      "KOG-39",
+      "KOG-55",
+      "KOG-57",
+      "KOG-61",
+      "SOZ-9",
+      "SOZ-25",
+      "SOZ-34",
+      "V-16",
+      "V-23",
+      "K-18",
+      "K-26"
+    ],
+    "worksheet": {
+      "title": "Hochglanz und Wirklichkeit",
+      "intro": "Feeds zeigen nur die besten, ausgewählten Momente. Schau hinter den Hochglanz – und stopp den unfairen Vergleich mit deinem ganz normalen Leben.",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "Die Tricks hinter perfekten Bildern"
+        },
+        {
+          "kind": "checklist",
+          "items": [
+            "Auswahl (das eine beste von vielen Fotos)",
+            "Inszenierung (gestellt, geplant, aufgeräumt)",
+            "Bearbeitung (Filter, Retusche, Licht)",
+            "Weglassen (Streit, Langeweile, Anstrengung)"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "Mein Vorher-Nachher"
+        },
+        {
+          "kind": "instruction",
+          "text": "Links: wie ein 'perfekter Post' von dir aussähe. Rechts: was im echten Leben drumherum war."
+        },
+        {
+          "kind": "box",
+          "lines": 4
+        },
+        {
+          "kind": "question",
+          "text": "Was sieht man auf solchen perfekten Bildern NIE?",
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "Mein Vergleichs-Stopp"
+        },
+        {
+          "kind": "instruction",
+          "text": "Wähle einen Satz, der dir hilft, den Vergleich zu stoppen."
+        },
+        {
+          "kind": "box",
+          "lines": 2
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "wer-zieht-hier-an-mir-den-sog-der-bildschirme-durchschauen",
+    "title": "Wer zieht hier an mir? Den Sog der Bildschirme durchschauen",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "C4",
+      "ES"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Einstieg und Auswertung im Plenum"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Forscher-Teams entlarven die Tricks der Apps"
+      },
+      {
+        "mode": "Individuel",
+        "note": "jede:r baut den eigenen Bildschirm-Balance-Plan"
+      }
+    ],
+    "themes": [
+      "medien",
+      "impulskontrolle"
+    ],
+    "tags": [
+      "bildschirmzeit",
+      "digitale balance",
+      "abhaengigkeit",
+      "selbststeuerung",
+      "apps",
+      "pausen",
+      "achtsamkeit"
+    ],
+    "shortDescription": "Apps sind gezielt so gebaut, dass man immer weiter scrollt und nur schwer aufhört. Wer das nicht durchschaut, verliert leicht die Kontrolle über die eigene Zeit. In dieser Aktivität entlarven die Jugendlichen die Tricks, mit denen Spiele und Plattformen sie festhalten, und unterscheiden bewusste Nutzung vom gedankenlosen Hängenbleiben. Sie entwickeln einen persönlichen Plan, der ihnen die Steuerung über ihre Bildschirmzeit zurückgibt – ohne erhobenen Zeigefinger.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Nur noch ein Video (9 Min.)",
+        "text": "Fragen Sie: 'Kennt ihr das – ihr wolltet nur kurz reinschauen und plötzlich ist eine Stunde weg?' Sammeln Sie ehrlich und ohne Schuldzuweisung typische Situationen (ein Video führt zum nächsten, 'nur noch eine Runde'). Stellen Sie die überraschende Wende vor: Das ist kein Zeichen von Willensschwäche – die Apps sind absichtlich so gebaut, dass man nicht aufhören will. Heute drehen wir den Spieß um und schauen den Apps in die Karten."
+      },
+      {
+        "title": "Hinführung – Die Tricks, die uns festhalten (9 Min.)",
+        "text": "Stellen Sie die gängigen 'Halte-Tricks' vor und schreiben Sie sie an: KEIN ENDE (endloses Scrollen, automatisch startendes nächstes Video), BELOHNUNGS-ÜBERRASCHUNG (man weiß nie, ob das nächste Bild/Like spannend ist – wie an einem Glücksspielautomaten), ROTE PUNKTE & TÖNE (Benachrichtigungen, die ein Drang auslösen, sofort nachzusehen) und FOMO (die Angst, etwas zu verpassen). Kernbotschaft: Wer die Tricks kennt, ist ihnen nicht mehr hilflos ausgeliefert – man kann bewusst gegensteuern."
+      },
+      {
+        "title": "Hauptteil 1 – Forscher-Teams entlarven die Tricks (15 Min.)",
+        "text": "In Kleingruppen ordnen die Jugendlichen vorbereitete Beispiele konkreten Tricks zu ('Das Video startet von selbst' → kein Ende; 'Du hast 3 neue Benachrichtigungen' → rote Punkte). Dann überlegt jedes Team zu jedem Trick eine GEGEN-MASSNAHME ('Autoplay ausschalten', 'Töne stummschalten', feste Endzeit setzen). Die Ergebnisse werden notiert. Gehen Sie herum und schärfen Sie die Gegenmaßnahmen ('weniger nutzen' → 'Benachrichtigungen für eine App ausschalten')."
+      },
+      {
+        "title": "Hauptteil 2 – Mein Bildschirm-Balance-Plan (10 Min.)",
+        "text": "Jede:r baut auf dem Arbeitsblatt einen persönlichen Balance-Plan aus drei Teilen: BEWUSST STARTEN (kurz vorher überlegen: Wozu öffne ich das jetzt und wie lange?), EINE GEGEN-MASSNAHME (welchen Trick schalte ich konkret aus?) und OFFLINE-INSEL (eine feste Zeit oder Tätigkeit ohne Bildschirm, auf die ich mich freue). Betonen Sie: Es geht nicht um Verbote oder null Bildschirmzeit, sondern darum, selbst zu entscheiden statt gezogen zu werden."
+      },
+      {
+        "title": "Abschluss – Wer hat das Steuer? (7 Min.)",
+        "text": "Im Kreis nennt reihum jede:r, die mag, EINE Gegen-Maßnahme oder Offline-Insel aus dem eigenen Plan. Achten Sie auf eine wertschätzende, vorwurfsfreie Stimmung – niemand muss seine Nutzungszeiten offenlegen. Halten Sie als Botschaft fest: 'Die App will, dass du bleibst. Die Frage ist nur: Entscheidest du – oder die App?' Den Balance-Plan nehmen alle mit."
+      }
+    ],
+    "duration": "ca. 50 Minuten (eine Unterrichtsstunde)",
+    "materialsNeeded": "Tafel/Whiteboard für die Halte-Tricks; vorbereitete Beispiel-Karten mit App-Situationen für die Teams; Arbeitsblatt 'Mein Bildschirm-Balance-Plan' pro Person; Stifte; optional ein Klassen-Plakat 'Unsere Gegen-Tricks'.",
+    "remark": "Haltungshinweis: Begegnen Sie dem Thema ohne Moralisieren und ohne Bloßstellen – Bildschirmzeit ist bei Jugendlichen oft schambesetzt, und Vorwürfe verschließen sie sofort. Niemand muss seine echte Nutzungsdauer nennen. Differenzierung (C4): nur zwei Tricks (kein Ende / rote Punkte) behandeln und konkrete, einfache Gegenmaßnahmen sammeln; bei ES alle vier Tricks und den Vergleich mit dem Glücksspiel-Mechanismus vertiefen. Wenn jemand deutliche Belastung oder Kontrollverlust andeutet, das behutsam außerhalb der Gruppe aufgreifen und bei Bedarf an Beratung weiterleiten.",
+    "etepStufen": [
+      3,
+      4
+    ],
+    "eldibGoals": [
+      "KOG-37",
+      "KOG-38",
+      "KOG-40",
+      "KOG-55",
+      "KOG-57",
+      "SOZ-9",
+      "SOZ-25",
+      "SOZ-26",
+      "V-14",
+      "V-16",
+      "K-18",
+      "K-19"
+    ],
+    "worksheet": {
+      "title": "Mein Bildschirm-Balance-Plan",
+      "intro": "Apps sind so gebaut, dass du nicht aufhören willst. Wenn du die Tricks kennst, bekommst du das Steuer über deine Zeit zurück.",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "Welcher Trick zieht bei mir am stärksten?"
+        },
+        {
+          "kind": "checklist",
+          "items": [
+            "Kein Ende (endloses Scrollen, Autoplay)",
+            "Belohnungs-Überraschung (immer neugierig aufs Nächste)",
+            "Rote Punkte & Töne (sofort nachsehen müssen)",
+            "FOMO (Angst, etwas zu verpassen)"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "Teil 1: Bewusst starten"
+        },
+        {
+          "kind": "question",
+          "text": "Welche Frage stelle ich mir, bevor ich eine App öffne?",
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "Teil 2: Meine Gegen-Maßnahme"
+        },
+        {
+          "kind": "question",
+          "text": "Welchen Trick schalte ich konkret aus? (z. B. Töne aus, Autoplay aus, Endzeit setzen)",
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "Teil 3: Meine Offline-Insel"
+        },
+        {
+          "kind": "question",
+          "text": "Welche feste Zeit oder Tätigkeit ohne Bildschirm möchte ich mir gönnen?",
+          "lines": 2
+        },
+        {
+          "kind": "scale",
+          "text": "Wie sehr habe ich gerade das Gefühl, selbst zu entscheiden statt gezogen zu werden? (1 = die App entscheidet, 5 = ich entscheide)"
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "meine-digitalen-fussspuren-was-bleibt-wenn-ich-etwas-poste",
+    "title": "Meine digitalen Fußspuren: Was bleibt, wenn ich etwas poste",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "C4",
+      "ES"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Einstieg und Abschluss gemeinsam im Plenum"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Teams sortieren Inhalte nach 'kann bleiben' und 'lieber privat'"
+      },
+      {
+        "mode": "Individuel",
+        "note": "jede:r macht den persönlichen Vor-dem-Posten-Check"
+      }
+    ],
+    "themes": [
+      "medien",
+      "grenzen"
+    ],
+    "tags": [
+      "digitale spuren",
+      "privatsphaere",
+      "datenschutz",
+      "online-fußabdruck",
+      "teilen",
+      "selbstschutz",
+      "verantwortung"
+    ],
+    "shortDescription": "Alles, was im Netz landet, hinterlässt Spuren – oft länger und für mehr Leute sichtbar, als man denkt. In dieser Aktivität machen sich die Jugendlichen bewusst, welchen 'digitalen Fußabdruck' sie mit Posts, Bildern und Kommentaren hinterlassen, und üben, vor dem Teilen kurz innezuhalten. Sie unterscheiden, was unbedenklich ist und was besser privat bleibt, und entwickeln einen einfachen Check, der sie vor späterem Ärger schützt.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Die Spur im Schnee (9 Min.)",
+        "text": "Steigen Sie mit einem Bild ein: 'Wer durch frischen Schnee läuft, hinterlässt Spuren – jeder kann sehen, wo man war.' Im Internet ist es ähnlich, nur dass die Spuren oft nicht schmelzen. Fragen Sie: 'Was hinterlasst ihr alles im Netz, ohne groß darüber nachzudenken?' Sammeln Sie: Fotos, Kommentare, Likes, geteilte Inhalte, Standorte. Stellen Sie die Leitfrage: Wer kann diese Spuren sehen – jetzt und in Zukunft?"
+      },
+      {
+        "title": "Hinführung – Drei Eigenschaften digitaler Spuren (9 Min.)",
+        "text": "Erklären Sie, warum digitale Spuren besonders sind, und schreiben Sie drei Merkmale an: SIE BLEIBEN (einmal geteilt, kann ein Inhalt kopiert und gespeichert werden – auch nach dem Löschen kann er weiterleben), SIE VERBREITEN SICH (was man an wenige schickt, kann schnell viele erreichen) und SIE WERDEN GESEHEN (auch von Leuten, an die man gerade nicht denkt – später vielleicht von Schule, Ausbildungsbetrieb, fremden Personen). Kernbotschaft: Vor dem Posten kurz zu überlegen ist kein Verbot, sondern Selbstschutz."
+      },
+      {
+        "title": "Hauptteil 1 – Kann bleiben oder lieber privat? (15 Min.)",
+        "text": "In Kleingruppen sortieren die Jugendlichen vorbereitete Beispiel-Karten (z. B. 'ein lustiges Urlaubsfoto von mir', 'meine genaue Adresse', 'ein peinliches Foto von einer Freundin ohne zu fragen', 'meine Meinung zu einem Film', 'ein wütender Kommentar im Streit') in zwei Spalten: KANN ICH TEILEN und BESSER PRIVAT. Wichtig: zu jeder Zuordnung eine kurze Begründung. Gehen Sie herum und werfen Sie Rückfragen ein: 'Was, wenn das in zwei Jahren noch jemand findet?' und 'Wessen Spur hinterlasst ihr hier eigentlich – eure oder die eines anderen?'"
+      },
+      {
+        "title": "Hauptteil 2 – Mein Vor-dem-Posten-Check (10 Min.)",
+        "text": "Jede:r erstellt auf dem Arbeitsblatt einen kurzen Check mit Fragen, die man sich VOR dem Teilen stellt, z. B.: 'Wäre es okay, wenn das jeder sieht – auch in einigen Jahren?', 'Verletze oder blamiere ich jemand anderen?', 'Habe ich gefragt, wenn andere darauf zu sehen sind?', 'Gebe ich private Daten preis (Adresse, Schule, Standort)?'. Betonen Sie: Schon eine einzige Sekunde Nachdenken kann viel späteren Ärger verhindern."
+      },
+      {
+        "title": "Abschluss – Eine Spur, auf die ich stolz wäre (7 Min.)",
+        "text": "Drehen Sie den Blick zum Schluss ins Positive: Im Kreis nennt jede:r, die mag, eine Art von Spur, die man GERN im Netz hinterlässt (etwas Hilfreiches, Freundliches, Kreatives). Halten Sie fest: 'Du kannst deine Spuren nicht immer löschen – aber du kannst entscheiden, welche du hinterlässt.' Der Vor-dem-Posten-Check wird mitgenommen oder sichtbar aufgehängt."
+      }
+    ],
+    "duration": "ca. 50–55 Minuten (eine Unterrichtsstunde)",
+    "materialsNeeded": "Tafel/Whiteboard für die drei Merkmale; pro Team ein Set Beispiel-Karten mit Inhalten zum Sortieren; eine Sortiervorlage oder zwei beschriftete Bereiche ('Kann ich teilen' / 'Besser privat'); Arbeitsblatt 'Mein Vor-dem-Posten-Check' pro Person; Stifte; optional ein Klassen-Plakat 'Spuren, auf die wir stolz sind'.",
+    "remark": "Haltungshinweis: Vermeiden Sie Angstmache und Pauschalverbote – Ziel ist überlegtes, selbstbestimmtes Handeln, nicht Verzicht aus Furcht. Verwenden Sie ausschließlich erfundene Beispiel-Karten, keine realen Posts oder Daten von Anwesenden. Besonders sensibel: das Posten von Bildern anderer Personen ohne deren Einverständnis – dieses Thema unbedingt ausdrücklich behandeln (Recht am eigenen Bild). Differenzierung (C4): mit klar eindeutigen Karten und der einfachen Leitfrage 'Wäre das okay, wenn es jeder sieht?' arbeiten; bei ES die langfristige Sichtbarkeit (Ausbildung, Zukunft) und das Weiterleiten fremder Inhalte vertiefen. Wenn ein:e Jugendliche:r von einem konkreten Vorfall (geteiltes peinliches Bild o. Ä.) betroffen ist, das behutsam und vertraulich außerhalb der Gruppe aufgreifen.",
+    "etepStufen": [
+      3,
+      4
+    ],
+    "eldibGoals": [
+      "KOG-37",
+      "KOG-39",
+      "KOG-40",
+      "KOG-55",
+      "KOG-57",
+      "SOZ-9",
+      "SOZ-25",
+      "SOZ-30",
+      "SOZ-34",
+      "K-18",
+      "K-26",
+      "V-23"
+    ],
+    "worksheet": {
+      "title": "Mein Vor-dem-Posten-Check",
+      "intro": "Alles, was du teilst, hinterlässt eine Spur – oft länger und für mehr Leute sichtbar, als du denkst. Geh diesen Check durch, bevor du etwas postest.",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "Digitale Spuren – das macht sie besonders"
+        },
+        {
+          "kind": "instruction",
+          "text": "Sie bleiben. Sie verbreiten sich. Sie werden gesehen – auch von Leuten, an die du gerade nicht denkst."
+        },
+        {
+          "kind": "heading",
+          "text": "Meine Check-Fragen vor dem Teilen"
+        },
+        {
+          "kind": "checklist",
+          "items": [
+            "Wäre es okay, wenn das jeder sieht – auch in einigen Jahren?",
+            "Verletze oder blamiere ich jemand anderen?",
+            "Habe ich gefragt, wenn andere darauf zu sehen sind?",
+            "Gebe ich private Daten preis (Adresse, Schule, Standort)?"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "Kann ich teilen / Besser privat"
+        },
+        {
+          "kind": "question",
+          "text": "Nenne je ein Beispiel und begründe kurz.",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "Eine Spur, auf die ich stolz wäre"
+        },
+        {
+          "kind": "box",
+          "lines": 2
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "der-spiel-parcours-der-vier-stationen-krabbeln-balancieren-huepfen-verstecken",
+    "title": "Der Spiel-Parcours der vier Stationen: Krabbeln, Balancieren, Hüpfen, Verstecken",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "ES"
+    ],
+    "type": [
+      "ganz Stonn"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Gemeinsamer Aufwärm-Kreis und Abschluss-Kreis"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Kleingruppen von 2–3 Kindern rotieren durch die vier Stationen"
+      },
+      {
+        "mode": "Individuel",
+        "note": "Jedes Kind probiert in seinem eigenen Tempo, ohne Wettkampf"
+      }
+    ],
+    "themes": [
+      "spiel-spass",
+      "bewegung"
+    ],
+    "tags": [
+      "bewegungsspiel",
+      "grobmotorik",
+      "stationen",
+      "koerpererfahrung",
+      "freude",
+      "ausdauer",
+      "regeln-lernen"
+    ],
+    "shortDescription": "Bewegung und Spielfreude gehören für junge Kinder untrennbar zusammen – wer sich freut, bewegt sich, und wer sich bewegt, freut sich. In dieser ganzen Stunde durchlaufen die Kinder in kleinen Gruppen vier liebevoll aufgebaute Bewegungsstationen (Krabbel-Tunnel, Balancier-Linie, Hüpf-Teppiche, Versteck-Höhle). Im Mittelpunkt steht nicht Leistung, sondern das körperliche Erleben von Gelingen, Mut und gemeinsamer Lust an der Bewegung. Die feste Stationenstruktur gibt gerade unsicheren oder leicht überforderten Kindern einen klaren, überschaubaren Rahmen.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Der Wach-mach-Kreis (10 Min.)",
+        "text": "Versammeln Sie alle Kinder im Sitzkreis auf dem Boden. Beginnen Sie mit einem kurzen Körper-Aufweck-Spiel: 'Wir wecken unseren Körper auf!' – gemeinsam reiben wir die Hände warm, klopfen sanft auf die Beine, wackeln mit den Zehen, strecken uns zur Decke. Zeigen Sie dann mit ruhigen Worten und Gesten die vier Stationen im Raum und benennen Sie sie kindgerecht: Krabbel-Tunnel, Wackel-Linie, Hüpf-Wiese, Kuschel-Höhle. Vereinbaren Sie drei einfache Regeln, die Sie als Bild auf Karten zeigen: Wir warten, bis wir dran sind. Wir helfen einander. Wir spielen, bis das Glöckchen klingelt. So weiß jedes Kind, was es erwartet."
+      },
+      {
+        "title": "Hinführung – Wir probieren gemeinsam eine Station (7 Min.)",
+        "text": "Führen Sie alle Kinder zu EINER Station, zum Beispiel der Wackel-Linie (ein am Boden geklebtes Seil oder eine niedrige Bank). Machen Sie es selbst langsam vor: 'Schaut, ich gehe ganz langsam, Schritt für Schritt, die Arme helfen mir.' Lassen Sie zwei mutige Kinder es ausprobieren und loben Sie konkret das Tun, nicht das Können: 'Du hast deine Arme zum Helfen genommen – stark!' So verstehen alle Kinder das Prinzip und merken: Hier darf jeder in seinem Tempo, niemand wird ausgelacht. Teilen Sie nun die Kinder in feste Kleingruppen ein und weisen Sie jeder Gruppe eine Startstation zu."
+      },
+      {
+        "title": "Hauptteil – Die Stationen-Reise (20 Min.)",
+        "text": "Die Gruppen spielen an ihrer Station. Nach etwa vier Minuten läuten Sie ein Glöckchen – das vereinbarte Signal zum Weiterwandern im Uhrzeigersinn. Begleiten Sie die Stationen abwechselnd: Am Krabbel-Tunnel (Tücher über Stühle gespannt oder ein Stofftunnel) ermutigen Sie ängstliche Kinder, erst hineinzuschauen, dann durchzukrabbeln. An der Hüpf-Wiese (flache Teppichfliesen oder Reifen) hüpft jedes Kind von Insel zu Insel. In der Kuschel-Höhle (ein Tuch über einem Tisch mit Kissen) dürfen die Kinder kurz zur Ruhe kommen und durchatmen – diese Station ist bewusst der ruhige Gegenpol. Bleiben Sie ruhig und präsent, greifen Sie nur bei Bedarf helfend ein und feiern Sie kleine Erfolge mit einem Lächeln oder einem leisen 'Bravo'."
+      },
+      {
+        "title": "Abschluss – Der Müde-mach-Kreis (8 Min.)",
+        "text": "Läuten Sie das Glöckchen ein letztes Mal und rufen Sie alle zurück in den Sitzkreis. Lassen Sie die Kinder kurz nachspüren: 'Wir machen unseren Körper wieder ruhig.' – tief einatmen, langsam ausatmen, wie eine Schnecke ganz klein machen und wieder groß werden. Reichen Sie eine weiche 'Mut-Feder' (eine echte oder gebastelte) reihum: Wer die Feder hält, darf mit einem Wort oder einer Geste zeigen, welche Station ihm am meisten Spaß gemacht hat – sprechen ist erlaubt, aber kein Muss. Schließen Sie mit einem gemeinsamen Klatsch-Ritual: 'Wir haben gespielt, wir waren mutig – tschüss bis zum nächsten Mal!'"
+      }
+    ],
+    "duration": "ca. 45 Min.",
+    "materialsNeeded": "Ein Stofftunnel oder Tücher zum Spannen über Stühle, ein langes Seil oder eine niedrige Bank für die Balancier-Linie, 6–8 flache Teppichfliesen oder Gymnastikreifen, ein großer Tisch mit Tuch und mehreren Kissen für die Höhle, ein Glöckchen oder eine Klangschale als Signal, drei einfache Bildkarten für die Regeln, eine weiche 'Mut-Feder' für die Abschlussrunde.",
+    "remark": "Sicherheit: Stationen vor Beginn auf rutschfesten Stand prüfen, genügend Abstand zwischen den Aufbauten lassen und scharfe Kanten abpolstern. Differenzierung: Für sehr unsichere oder motorisch eingeschränkte Kinder die Anforderungen flexibel anpassen (Linie auf dem Boden statt erhöhte Bank, kürzere Tunnelstrecke). Die Kuschel-Höhle ist ein wichtiger Rückzugsort für Kinder, die sich von der Reizfülle überfordert fühlen – verbieten Sie diesen Rückzug nicht. Halten Sie die Gruppen klein und konstant, damit Wartezeiten kurz bleiben und kein Gedränge entsteht.",
+    "etepStufen": [
+      1,
+      2,
+      3
+    ],
+    "eldibGoals": [
+      "V-7",
+      "V-9",
+      "V-10",
+      "V-12",
+      "V-13",
+      "V-14",
+      "SOZ-10",
+      "SOZ-14",
+      "SOZ-18",
+      "KOG-1",
+      "KOG-43",
+      "K-16"
+    ],
+    "worksheet": {
+      "title": "Mein Stationen-Pass (für die Erzieher:in zum Ausfüllen mit dem Kind)",
+      "intro": "Dieser Pass wird gemeinsam mit dem Kind ausgefüllt – durch Ankreuzen, Ankleben eines Stickers oder Anmalen eines Smileys. Er dokumentiert das Erleben, nicht die Leistung.",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "An diesen Stationen war ich heute"
+        },
+        {
+          "kind": "checklist",
+          "items": [
+            "Krabbel-Tunnel",
+            "Wackel-Linie",
+            "Hüpf-Wiese",
+            "Kuschel-Höhle"
+          ]
+        },
+        {
+          "kind": "scale",
+          "text": "Wie hat mir das Spielen gefallen?",
+          "items": [
+            "traurig",
+            "geht so",
+            "froh"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "Hier war ich besonders mutig"
+        },
+        {
+          "kind": "box",
+          "text": "(Sticker oder Zeichnung der Lieblingsstation)",
+          "lines": 4
+        },
+        {
+          "kind": "instruction",
+          "text": "Heute habe ich gespielt, mich bewegt und war mutig. Gut gemacht!"
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "das-schwungtuch-wettermaerchen-gemeinsam-wellen-wind-und-sonne-machen",
+    "title": "Das Schwungtuch-Wettermärchen: Gemeinsam Wellen, Wind und Sonne machen",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "ES"
+    ],
+    "type": [
+      "ganz Stonn"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Alle Kinder halten gemeinsam ein großes Schwungtuch"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Wechselnde Kleingruppen übernehmen Sonderrollen (z. B. unter dem Tuch sitzen)"
+      }
+    ],
+    "themes": [
+      "spiel-spass",
+      "kooperation"
+    ],
+    "tags": [
+      "schwungtuch",
+      "gemeinschaftsspiel",
+      "aufeinander-achten",
+      "rhythmus",
+      "fantasie",
+      "gleichzeitigkeit",
+      "freude"
+    ],
+    "shortDescription": "Ein großes Schwungtuch ist ein Wunderwerkzeug für gemeinsames Spiel: Nur wenn alle zusammen ziehen und nachgeben, entstehen Wellen, ein Dach oder ein Wirbel. In dieser ganzen Stunde verwandelt sich das Tuch in eine kleine Wettergeschichte – aus sanften Wellen wird Wind, dann ein Gewitter, dann wieder ruhige Sonne. Die Kinder erleben spielerisch und ohne Worte, dass etwas Schönes nur gelingt, wenn man aufeinander achtet und gleichzeitig handelt. Das gemeinsame Tun verbindet, baut Hemmungen ab und schenkt das beglückende Gefühl, Teil von etwas Großem zu sein.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Wir lernen unser Tuch kennen (8 Min.)",
+        "text": "Breiten Sie das Schwungtuch in der Mitte des Raums aus und lassen Sie alle Kinder rundherum sitzen oder knien. Staunen Sie gemeinsam: 'Schaut, wie groß und bunt! Welche Farben seht ihr?' Lassen Sie jedes Kind einen Griff oder einen Rand fest mit beiden Händen halten. Erklären Sie die wichtigste Regel ruhig und klar: 'Das Tuch ist zum Spielen da, nicht zum Ziehen, bis jemand fällt. Wir halten gut fest und passen aufeinander auf.' Üben Sie gemeinsam ein erstes sanftes Auf und Ab – ganz langsam, alle zusammen."
+      },
+      {
+        "title": "Hinführung – Kleine Wellen, große Wellen (7 Min.)",
+        "text": "Führen Sie das gemeinsame Bewegen über Ihre Stimme: 'Jetzt machen wir ganz kleine Wellen – tipp, tipp, tipp.' Alle wackeln das Tuch leicht. Dann: 'Und nun große Wellen – hoch und runter!' Heben und senken alle gemeinsam die Arme. Spüren Sie hin, ob die Kinder die Gleichzeitigkeit finden, und benennen Sie es: 'Hört ihr, wie schön das aussieht, wenn wir alle zusammen machen?' Legen Sie zum Üben kleine Bälle oder Tücher auf die Tuchfläche, die wie Regentropfen oder Popcorn hüpfen – das macht das gemeinsame Tun sichtbar und löst Freude aus."
+      },
+      {
+        "title": "Hauptteil – Das Wettermärchen (20 Min.)",
+        "text": "Erzählen Sie nun eine einfache Wettergeschichte, die die Kinder mit dem Tuch begleiten: 'Am Morgen ist das Meer ganz ruhig' (sanftes Wiegen). 'Ein Wind kommt auf' (schnelleres Wackeln). 'Ein Gewitter!' (kräftiges, gemeinsames Auf und Ab, Bälle hüpfen). 'Und dann scheint wieder die Sonne' (langsam ausklingen lassen). Bauen Sie Höhepunkte ein, die Kinder lieben: das 'Zelt' (alle heben das Tuch hoch über den Kopf, gehen einen Schritt nach innen und ziehen es hinter sich nach unten, sodass eine Kuppel entsteht) und der 'Wechsel' (zwei Kinder dürfen, wenn das Tuch oben ist, schnell die Plätze tauschen oder kurz darunter sitzen). Wiederholen Sie beliebte Teile – Wiederholung gibt Sicherheit und steigert die Freude."
+      },
+      {
+        "title": "Abschluss – Das Tuch schläft ein (8 Min.)",
+        "text": "Lassen Sie die Bewegung immer ruhiger werden: 'Jetzt wird das Meer ganz, ganz müde.' Senken Sie gemeinsam die Wellen, bis das Tuch flach und still auf dem Boden liegt. Bitten Sie die Kinder, sich rund um das Tuch zu legen oder zu setzen und einmal tief durchzuatmen. Fragen Sie sanft in die Runde – mit Daumen hoch oder runter, sprechen ist freiwillig: 'War das schön mit allen zusammen?' Falten Sie zum Schluss das Tuch gemeinsam als kleines Ritual: 'Wir helfen alle mit, dann ist es schnell aufgeräumt.' So endet das Spiel mit einem letzten Akt der Kooperation."
+      }
+    ],
+    "duration": "ca. 43 Min.",
+    "materialsNeeded": "Ein großes Schwungtuch oder Fallschirmtuch mit Griffen (alternativ ein großes Bettlaken), mehrere weiche Schaumstoff- oder Stoffbälle, ggf. ein paar leichte Chiffontücher als 'Regentropfen', ausreichend freie Bodenfläche ohne Hindernisse.",
+    "remark": "Sicherheit: Brillen und harte Gegenstände aus den Hosentaschen entfernen lassen, bevor Kinder unter das Tuch gehen; das 'Zelt' nur kurz halten, damit niemand die Luft zu knapp wird. Differenzierung: Sehr zurückhaltende Kinder dürfen zunächst nur den Rand halten und müssen nicht unter das Tuch; ängstlichen Kindern beim Gewitter-Teil mit ruhiger Stimme Halt geben. Die Gruppe sollte nicht zu groß sein, damit jedes Kind einen guten Griff erreicht (ideal 6–10 Kinder). Wiederholen Sie die beliebten Spielteile bewusst – Vorhersehbarkeit ist auf dieser Stufe ein Genuss, keine Langeweile.",
+    "etepStufen": [
+      1,
+      2,
+      3
+    ],
+    "eldibGoals": [
+      "V-7",
+      "V-10",
+      "V-12",
+      "V-13",
+      "SOZ-5",
+      "SOZ-14",
+      "SOZ-17",
+      "SOZ-18",
+      "SOZ-19",
+      "SOZ-20",
+      "KOG-5",
+      "K-16"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "die-lach-werkstatt-quatschgesichter-pustefedern-und-kichern-auf-kommando",
+    "title": "Die Lach-Werkstatt: Quatschgesichter, Pustefedern und Kichern auf Kommando",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "ES"
+    ],
+    "type": [
+      "ganz Stonn"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Gemeinsamer Lach-Kreis als Rahmen"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Spiel zu zweit oder zu dritt bei den Quatsch-Aufgaben"
+      },
+      {
+        "mode": "Individuel",
+        "note": "Jedes Kind darf eigene Grimassen und Laute erfinden"
+      }
+    ],
+    "themes": [
+      "spiel-spass",
+      "emotionen"
+    ],
+    "tags": [
+      "lachen",
+      "humor",
+      "anspannung-loesen",
+      "mimik",
+      "gemeinschaft",
+      "leichtigkeit",
+      "freude-teilen"
+    ],
+    "shortDescription": "Gemeinsames Lachen ist eines der stärksten verbindenden Erlebnisse – es löst Anspannung, schafft Nähe und schenkt pure Lebensfreude. Diese ganze Stunde ist eine kleine 'Lach-Werkstatt' mit erprobten Quatsch- und Kicherspielen: Grimassen-Weitergeben, Federn pusten, Lach-Ansteckung und ein Gähn-Ausklang. Kinder mit Anspannungen, Ängsten oder verhärteter Mimik finden hier einen sicheren, regelgeleiteten Raum, in dem Albernsein ausdrücklich erlaubt ist. Im Mittelpunkt steht das geteilte Gefühl von Freude – nicht das Auslachen, sondern das Miteinander-Lachen.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Der Anspannungs-Schüttler (8 Min.)",
+        "text": "Bilden Sie mit allen Kindern einen Stehkreis. Sagen Sie: 'Bevor wir zusammen lachen, schütteln wir erst alle Sorgen ab!' Schütteln Sie gemeinsam die Hände aus, dann die Arme, die Beine, den ganzen Körper – immer wilder, dann auf Ihr Signal hin plötzlich ganz still ('Einfrieren!'). Wiederholen Sie das zwei- bis dreimal. Dieses Wechselspiel aus Bewegung und Stille löst körperliche Anspannung und macht den Kopf frei für Leichtigkeit. Erklären Sie die einzige große Regel der Lach-Werkstatt: 'Wir lachen MITeinander, niemals ÜBER jemanden. Hier ist jeder Quatsch erlaubt.'"
+      },
+      {
+        "title": "Hinführung – Das wandernde Quatschgesicht (8 Min.)",
+        "text": "Alle setzen sich in den Kreis. Beginnen Sie selbst: Schneiden Sie eine richtig alberne Grimasse und 'reichen' Sie diese mit den Händen an das Kind neben Ihnen weiter. Dieses Kind macht die Grimasse nach, verändert sie nach Lust und gibt sie weiter. So wandert das Quatschgesicht durch den ganzen Kreis und verändert sich dabei. Lachen darf und soll dabei entstehen. Ermutigen Sie zurückhaltende Kinder behutsam ('Du darfst auch nur ein kleines bisschen das Gesicht verziehen') und nehmen Sie den Druck: Mitmachen ist ein Angebot, kein Zwang. Allein das Zuschauen und Mitlachen ist schon Teilnahme."
+      },
+      {
+        "title": "Hauptteil – Die Quatsch-Stationen (18 Min.)",
+        "text": "Spielen Sie nun nacheinander zwei bis drei kurze Lachspiele im Kreis oder zu zweit: (1) PUSTE-FEDER: Zwei Kinder versuchen gemeinsam, eine leichte Feder mit Pusten in der Luft zu halten – das Scheitern ist hier das Lustige. (2) DER LACH-FUNKE: Ein Kind 'wirft' mit einer Handbewegung sein Lachen zu einem anderen, das daraufhin lachen darf und das Lachen weiterwirft – Lachen steckt an. (3) DER ERNST-WETTSTREIT: Zwei Kinder schauen sich an und versuchen, ernst zu bleiben, während die anderen leise Quatschlaute machen – wer zuerst lacht, hat trotzdem gewonnen, weil Lachen schön ist. Wechseln Sie zwischen den Spielen, bevor die Spannung nachlässt, und feiern Sie jede Albernheit mit."
+      },
+      {
+        "title": "Abschluss – Der ansteckende Gähn-Kreis (8 Min.)",
+        "text": "Leiten Sie sanft vom Lachen zur Ruhe über: 'Wenn man viel gelacht hat, wird man schön müde – und wisst ihr was? Gähnen steckt auch an!' Gähnen Sie herzhaft und langgezogen vor; meist gähnen die Kinder von selbst mit. Lassen Sie alle sich strecken wie eine müde Katze und sich dann ganz klein zusammenrollen. Reichen Sie zum Abschluss eine weiche Feder reihum: Wer sie hält, darf zeigen oder sagen, was am meisten gekitzelt oder gefreut hat. Schließen Sie mit dem Satz: 'Lachen tut gut, und am schönsten ist es zusammen.' So bleibt das gute Gefühl als Erinnerung."
+      }
+    ],
+    "duration": "ca. 42 Min.",
+    "materialsNeeded": "Mehrere sehr leichte Federn (echt oder aus Papier), eine Klangschale oder ein Glöckchen als Stille-Signal, ausreichend Platz für einen Steh- und Sitzkreis, optional ein kleiner Spiegel, in dem Kinder ihre Grimassen sehen dürfen.",
+    "remark": "Wichtig: Achten Sie sehr genau auf die Grenze zwischen Mit-Lachen und Aus-Lachen und greifen Sie sofort ruhig ein, falls ein Kind zur Zielscheibe wird ('Wir lachen zusammen, nicht über Leon'). Differenzierung: Kinder mit starker Anspannung oder traumatischen Erfahrungen dürfen jederzeit nur zuschauen; zwingen Sie niemanden zum Lachen, denn erzwungene Heiterkeit erzeugt Druck. Manche Kinder werden durch Lachspiele sehr aufgedreht – planen Sie den ruhigen Gähn-Abschluss bewusst großzügig ein und halten Sie die Reizmenge überschaubar. Bei einzelnen Kindern, die das Spiel kippen lassen, lieber das Spiel wechseln als ermahnen.",
+    "etepStufen": [
+      1,
+      2,
+      3
+    ],
+    "eldibGoals": [
+      "V-7",
+      "V-9",
+      "V-14",
+      "K-1",
+      "K-3",
+      "K-16",
+      "SOZ-5",
+      "SOZ-15",
+      "SOZ-17",
+      "SOZ-18",
+      "SOZ-20",
+      "KOG-5"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "wir-verwandeln-uns-in-tiere-das-grosse-fantasie-spiel-vom-bauernhof",
+    "title": "Wir verwandeln uns in Tiere: Das große Fantasie-Spiel vom Bauernhof",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "ES"
+    ],
+    "type": [
+      "ganz Stonn"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Gemeinsamer Erzähl-Kreis als Rahmen der Geschichte"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Tier-Familien (z. B. alle Katzen, alle Enten) spielen zusammen"
+      },
+      {
+        "mode": "Individuel",
+        "note": "Jedes Kind wählt und gestaltet sein eigenes Tier"
+      }
+    ],
+    "themes": [
+      "spiel-spass",
+      "kreativitaet"
+    ],
+    "tags": [
+      "rollenspiel",
+      "fantasie",
+      "tiere",
+      "verwandeln",
+      "nachahmen",
+      "bewegung",
+      "vorstellungskraft"
+    ],
+    "shortDescription": "Im Als-ob-Spiel schlüpfen Kinder in andere Rollen und erweitern spielerisch ihre Vorstellungskraft, ihren Ausdruck und ihr Einfühlungsvermögen. In dieser ganzen Stunde verwandelt sich die Gruppe gemeinsam in die Tiere eines Bauernhofs: Sie wachen mit dem Hahn auf, watscheln wie Enten zum Teich, schleichen wie Katzen und schlafen am Abend im Stall ein. Die Kinder erleben mit Lust an Bewegung und Stimme, wie es ist, ein anderes Wesen zu sein. Die durchgängige Geschichte und die wiederkehrenden Tiergeräusche geben dabei eine sichere, vorhersehbare Struktur, in der auch fantasie- oder sprachschwächere Kinder mitgenommen werden.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Der Zauber-Verwandlungs-Kreis (8 Min.)",
+        "text": "Setzen Sie sich mit allen Kindern in einen Kreis und kündigen Sie geheimnisvoll an: 'Heute besuchen wir einen Bauernhof – und das Beste ist: Wir dürfen selbst die Tiere sein!' Zeigen Sie nacheinander große, klare Bildkarten von Bauernhoftieren (Hahn, Ente, Katze, Kuh, Schaf, Pferd) und machen Sie gemeinsam Laut und Bewegung dazu: 'Wie macht die Kuh? Muuuh! Und wie geht die Kuh?' Lassen Sie jedes Kind ein Tier auswählen, das es heute besonders gerne sein möchte. Sprechen Sie einen kleinen 'Zauberspruch' zur Verwandlung ('Eins, zwei, drei – Tier herbei!'), der später immer wieder das Signal zum Losspielen gibt."
+      },
+      {
+        "title": "Hinführung – Jedes Tier zeigt sich (7 Min.)",
+        "text": "Geben Sie jedem Kind kurz Raum, sein gewähltes Tier zu zeigen – Laut und Bewegung, so wie es mag. Die anderen schauen zu und dürfen das Tier am Schluss gemeinsam nachmachen: 'Jetzt sind wir alle einmal eine Ente!' Diese Runde stärkt jedes einzelne Kind (es wird gesehen) und übt zugleich das Nachahmen. Bilden Sie dann lockere 'Tier-Familien': alle Katzen finden sich, alle Enten, alle Pferde. Wer ein einzigartiges Tier gewählt hat, darf 'das besondere Tier' des Hofs sein – auch das ist wertvoll. Verteilen Sie, wenn vorhanden, einfache Requisiten (ein Tuch als Fell, Ohren aus Papier)."
+      },
+      {
+        "title": "Hauptteil – Ein Tag auf dem Bauernhof (20 Min.)",
+        "text": "Erzählen Sie nun lebendig einen ganzen Tag auf dem Bauernhof, und die Kinder spielen ihn als ihre Tiere mit: 'Am frühen Morgen weckt der Hahn alle – Kikeriki!' (die Hähne krähen, alle erwachen, recken sich). 'Die Enten watscheln zum Teich und planschen' (Enten watscheln durch den Raum). 'Die Katzen schleichen ganz leise durch das Gras und suchen ein warmes Plätzchen.' 'Die Pferde galoppieren über die Wiese.' Bauen Sie ein gemeinsames Erlebnis ein, bei dem alle Tiere zusammenkommen – etwa ein Sommerregen, bei dem sich alle unter dem großen Stalldach (eine Ecke des Raums) zusammendrängen. Wechseln Sie zwischen wilden Bewegungsphasen (galoppieren, watscheln) und ruhigen (schleichen, dösen), um die Energie der Gruppe zu lenken. Nutzen Sie den Zauberspruch, wenn Sie eine neue Szene starten."
+      },
+      {
+        "title": "Abschluss – Alle Tiere schlafen ein (8 Min.)",
+        "text": "Führen Sie die Geschichte sanft zum Ende: 'Jetzt wird es Abend auf dem Bauernhof. Die Sonne geht unter, und alle Tiere werden müde.' Lassen Sie die Tiere langsamer werden, gähnen, sich im 'Stall' (auf einer Matte oder im Kreis) zusammenrollen und ganz still werden. Sprechen Sie mit leiser, ruhiger Stimme, bis es ganz still ist. Lösen Sie dann den Zauber: 'Eins, zwei, drei – und nun sind wir wieder Kinder!' – alle strecken sich und sind wieder sie selbst. Lassen Sie zum Schluss reihum (mit Daumen oder einem Wort, freiwillig) zeigen, welches Tier am meisten Spaß gemacht hat, und loben Sie die Verwandlungskünstler: 'Ihr wart wunderbare Tiere heute!'"
+      }
+    ],
+    "duration": "ca. 43 Min.",
+    "materialsNeeded": "Große, klare Bildkarten von Bauernhoftieren (Hahn, Ente, Katze, Kuh, Schaf, Pferd), optional einfache Requisiten (Tücher als Fell, gebastelte Ohren oder Schwänze), eine Matte oder ein abgegrenzter Bereich als 'Stall', ausreichend freie Bewegungsfläche, eine Klangschale für ruhige Übergänge.",
+    "remark": "Differenzierung: Kinder, denen das freie Rollenspiel schwerfällt, dürfen sich an einem Vorbild orientieren oder gemeinsam mit einem 'Tier-Geschwister' spielen; das reine Nachahmen der Erzieher:in ist ebenso erlaubt wie eigene Erfindungen. Sicherheit: Bei wilden Bewegungsszenen (galoppieren) auf genug Abstand achten und das Tempo über die Stimme drosseln, bevor es zu Zusammenstößen kommt. Manche Kinder bleiben lieber im Hintergrund – auch ein 'Tier, das nur zuschaut und beobachtet' (z. B. eine schlafende Katze) ist eine vollwertige Rolle. Halten Sie die Tiergeräusche und den Zauberspruch über die Stunde konstant, denn diese Wiederholungen geben Sicherheit und Freude.",
+    "etepStufen": [
+      1,
+      2,
+      3
+    ],
+    "eldibGoals": [
+      "V-7",
+      "V-9",
+      "V-12",
+      "V-13",
+      "K-1",
+      "K-16",
+      "SOZ-13",
+      "SOZ-17",
+      "SOZ-18",
+      "SOZ-20",
+      "KOG-5",
+      "KOG-53"
+    ],
+    "language": "de",
+    "source": "generated"
   }
 ]
