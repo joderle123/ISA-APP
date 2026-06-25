@@ -22,6 +22,7 @@ export interface FilterState {
   eldibDomains: EldibDomain[]
   eldibGoals: string[]
   tags: string[]
+  authors: string[]
   languages: Language[]
   sources: MaterialSource[]
   /** Only materials that ship a printable worksheet ("Arbeitsblatt"). */
@@ -38,6 +39,7 @@ export const emptyFilter: FilterState = {
   eldibDomains: [],
   eldibGoals: [],
   tags: [],
+  authors: [],
   languages: [],
   sources: [],
   hasWorksheet: false,
@@ -83,6 +85,7 @@ export function matches(m: Material, f: FilterState): boolean {
     if (!f.eldibDomains.some((d) => domains.has(d))) return false
   }
   if (!some(f.tags, m.tags)) return false
+  if (!some(f.authors, m.author ? [m.author] : [])) return false
   if (!some(f.languages, [m.language])) return false
   if (!some(f.sources, [m.source])) return false
   if (f.hasWorksheet && !m.worksheet) return false
@@ -104,6 +107,7 @@ export function activeFilterCount(f: FilterState): number {
     f.eldibDomains.length +
     f.eldibGoals.length +
     f.tags.length +
+    f.authors.length +
     f.languages.length +
     f.sources.length +
     (f.hasWorksheet ? 1 : 0)
@@ -114,5 +118,12 @@ export function activeFilterCount(f: FilterState): number {
 export function collectTags(materials: Material[]): string[] {
   const set = new Set<string>()
   for (const m of materials) for (const t of m.tags) set.add(t)
+  return [...set].sort((a, b) => a.localeCompare(b, 'de'))
+}
+
+/** Unique, sorted author list (skips materials without an author). */
+export function collectAuthors(materials: Material[]): string[] {
+  const set = new Set<string>()
+  for (const m of materials) if (m.author) set.add(m.author)
   return [...set].sort((a, b) => a.localeCompare(b, 'de'))
 }

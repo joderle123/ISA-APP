@@ -22,6 +22,8 @@ interface Props {
   shown: number
   /** All distinct tags present in the library (for the tag facet). */
   allTags: string[]
+  /** All distinct authors present in the library (for the author facet). */
+  allAuthors: string[]
 }
 
 function Chip({
@@ -65,7 +67,7 @@ function Section({
   )
 }
 
-export function FilterPanel({ filter, update, reset, total, shown, allTags }: Props) {
+export function FilterPanel({ filter, update, reset, total, shown, allTags, allAuthors }: Props) {
   const [goalQuery, setGoalQuery] = useState('')
   const [goalDomain, setGoalDomain] = useState<EldibDomain>('V')
   const [tagQuery, setTagQuery] = useState('')
@@ -117,6 +119,27 @@ export function FilterPanel({ filter, update, reset, total, shown, allTags }: Pr
             Nur mit Arbeitsblatt
           </Chip>
         </Section>
+
+        {allAuthors.length > 0 && (
+          <Section title="Autor">
+            <div className="space-y-1">
+              {allAuthors.map((a) => (
+                <label
+                  key={a}
+                  className="flex cursor-pointer items-center gap-2 rounded px-1 py-0.5 text-sm text-slate-700 hover:bg-slate-50"
+                >
+                  <input
+                    type="checkbox"
+                    checked={filter.authors.includes(a)}
+                    onChange={() => toggle('authors', a)}
+                    className="accent-isa-blue-deep"
+                  />
+                  {a}
+                </label>
+              ))}
+            </div>
+          </Section>
+        )}
 
         <Section title="Themenbereich">
           <div className="max-h-56 space-y-1 overflow-y-auto pr-1">

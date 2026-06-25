@@ -3,6 +3,7 @@ import { allMaterials } from './data/materials'
 import {
   applyFilters,
   collectTags,
+  collectAuthors,
   activeFilterCount,
   emptyFilter,
   type FilterState,
@@ -24,6 +25,7 @@ export default function App() {
 
   const results = useMemo(() => applyFilters(allMaterials, filter), [filter])
   const allTags = useMemo(() => collectTags(allMaterials), [])
+  const allAuthors = useMemo(() => collectAuthors(allMaterials), [])
   const active = activeFilterCount(filter)
 
   async function handleDownload(m: Material) {
@@ -95,6 +97,7 @@ export default function App() {
               total={allMaterials.length}
               shown={results.length}
               allTags={allTags}
+              allAuthors={allAuthors}
             />
           </div>
         )}
@@ -112,6 +115,7 @@ export default function App() {
               total={allMaterials.length}
               shown={results.length}
               allTags={allTags}
+              allAuthors={allAuthors}
             />
           </div>
         </div>
