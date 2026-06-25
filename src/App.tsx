@@ -11,6 +11,7 @@ import {
 import { FilterPanel } from './components/FilterPanel'
 import { MaterialCard } from './components/MaterialCard'
 import { MaterialDetail } from './components/MaterialDetail'
+import { FinderAssistant } from './components/FinderAssistant'
 import { loadRatings, saveRatings, type RatingMap } from './lib/ratings'
 import type { Material } from './types/material'
 
@@ -20,6 +21,7 @@ export default function App() {
   const [downloadingId, setDownloadingId] = useState<string | null>(null)
   const [showFilters, setShowFilters] = useState(false)
   const [ratings, setRatings] = useState<RatingMap>(() => loadRatings())
+  const [finderOpen, setFinderOpen] = useState(false)
 
   const update = (partial: Partial<FilterState>) =>
     setFilter((f) => ({ ...f, ...partial }))
@@ -90,9 +92,17 @@ export default function App() {
             />
           </div>
 
-          <div className="order-2 ml-auto text-sm text-slate-500 sm:order-3">
-            <span className="font-semibold text-slate-700">{results.length}</span>{' '}
-            Materialien
+          <div className="order-2 ml-auto flex items-center gap-3 sm:order-3">
+            <button
+              type="button"
+              onClick={() => setFinderOpen(true)}
+              className="inline-flex items-center gap-1.5 rounded-lg bg-isa-blue-deep px-3 py-2 text-sm font-semibold text-white transition hover:bg-[#264a82]"
+            >
+              <span>✨</span> Finder
+            </button>
+            <span className="hidden text-sm text-slate-500 sm:inline">
+              <span className="font-semibold text-slate-700">{results.length}</span> Materialien
+            </span>
           </div>
         </div>
       </header>
@@ -180,6 +190,23 @@ export default function App() {
         rating={selected ? ratings[selected.id] || 0 : 0}
         onRate={(n) => selected && rate(selected.id, n)}
       />
+
+      {finderOpen && (
+        <FinderAssistant
+          onClose={() => setFinderOpen(false)}
+          onApply={(f) => {
+            setFilter(f)
+            setFinderOpen(false)
+          }}
+          onOpen={(m) => {
+            setFinderOpen(false)
+            setSelected(m)
+          }}
+          onDownload={handleDownload}
+          downloadingId={downloadingId}
+          ratings={ratings}
+        />
+      )}
     </div>
   )
 }
