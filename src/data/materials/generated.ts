@@ -38114,5 +38114,840 @@ export const generated: Material[] = [
     },
     "language": "de",
     "source": "generated"
+  },
+  {
+    "id": "gefiller-skulpturen-aus-knaet",
+    "title": "Gefiller-Skulpturen aus Knät",
+    "ageLevels": [
+      "C2",
+      "C3"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Individuel",
+        "note": "jedes Kind knetet für sich"
+      },
+      {
+        "mode": "Klass",
+        "note": "Austausch"
+      }
+    ],
+    "themes": [
+      "emotionen",
+      "kreativitaet",
+      "selbstwahrnehmung"
+    ],
+    "tags": [
+      "Knete",
+      "Gefühle",
+      "kreativer Ausdruck",
+      "Selbstwahrnehmung",
+      "Skulptur",
+      "haptisch"
+    ],
+    "shortDescription": "Die Kinder formen aus Knete, wie sich ein Gefühl für sie anfühlt - spitz und hart für Wut, weich und rund für Geborgenheit. Über das haptische Gestalten drücken sie Emotionen aus, für die ihnen Worte fehlen, und kommen darüber ins Gespräch.",
+    "ablauf": [
+      {
+        "title": "Einstieg",
+        "text": "Sprechen Sie: Gefühle haben manchmal eine Form. Wie könnte Wut aussehen? Freude? Angst? Verteilen Sie Knete und nennen Sie ein erstes Gefühl zum Ausprobieren."
+      },
+      {
+        "title": "Gestalten",
+        "text": "Nennen Sie nacheinander Gefühle (oder die Kinder wählen selbst). Jedes Kind formt seine Skulptur dazu. Es gibt kein richtig/falsch - die eigene Form zählt. Gehen Sie herum und benennen Sie behutsam."
+      },
+      {
+        "title": "Abschluss",
+        "text": "Wer mag, zeigt eine Skulptur und erzählt dazu. Sammeln Sie: Dasselbe Gefühl sieht bei jedem anders aus. Betonen Sie: Gefühle ausdrücken tut gut."
+      }
+    ],
+    "duration": "ca. 30-40 Min.",
+    "materialsNeeded": "Knete oder Ton (pro Kind); Unterlagen",
+    "remark": "Freiwilligkeit beim Zeigen/Erzählen. Auf auffällige Darstellungen behutsam reagieren. Haptisches Arbeiten ist auch für Kinder geeignet, die sich sprachlich schwer ausdrücken.",
+    "etepStufen": [
+      2,
+      3
+    ],
+    "eldibGoals": [
+      "V-11",
+      "K-16",
+      "K-26",
+      "KOG-8",
+      "SOZ-16"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "eierfall-challenge-schuetzt-d-ee",
+    "title": "Eierfall-Challenge: schützt d'Ee",
+    "ageLevels": [
+      "C4",
+      "ES"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Grupp",
+        "note": "Teams von 3-4"
+      }
+    ],
+    "themes": [
+      "kooperation",
+      "kreativitaet",
+      "motivation"
+    ],
+    "tags": [
+      "Challenge",
+      "Teamwork",
+      "Problemlösen",
+      "Konstruktion",
+      "Ausprobieren",
+      "Fehlerkultur"
+    ],
+    "shortDescription": "Die Teams bauen aus einfachem Material eine Schutzkonstruktion, die ein rohes Ei einen Sturz unbeschadet überstehen lässt. Die Challenge fördert kreatives Problemlösen, Zusammenarbeit und die Erfahrung, dass Fehlversuche zum Tüfteln dazugehören.",
+    "ablauf": [
+      {
+        "title": "Einstieg",
+        "text": "Stellen Sie die Aufgabe und das Material vor. Regeln: feste Bauzeit, dann der Falltest aus vereinbarter Höhe. Betonen Sie: Planen, bauen, testen, verbessern - Fehlversuche sind erlaubt."
+      },
+      {
+        "title": "Bauen & Testen",
+        "text": "Die Teams planen kurz, bauen ihre Konstruktion und sprechen sich ab. Beim Falltest zeigt sich, was hält. Wenn Zeit bleibt: verbessern und nochmal testen."
+      },
+      {
+        "title": "Abschluss",
+        "text": "Reflexion: Was hat das Ei geschützt? Wie habt ihr im Team entschieden? Würdigen Sie Zusammenarbeit und kluge Ideen - nicht nur das heile Ei."
+      }
+    ],
+    "duration": "ca. 45-60 Min.",
+    "materialsNeeded": "Pro Team: rohe Eier, Zeitungspapier, Strohhalme, Tape, Schnur, Becher; Unterlage/Putzzeug für den Test",
+    "remark": "Sauerei einplanen (Unterlage, Putzzeug); auf Hygiene achten (Hände waschen). Sicherheit beim Fallenlassen. Den Wettbewerb klein halten, Kooperation und Tüfteln betonen.",
+    "etepStufen": [
+      3,
+      4
+    ],
+    "eldibGoals": [
+      "SOZ-18",
+      "SOZ-27",
+      "K-11",
+      "V-22",
+      "KOG-44"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "maein-energie-tank-wat-lued-mech-op",
+    "title": "Mäin Energie-Tank: wat lued mech op",
+    "ageLevels": [
+      "C4",
+      "ES"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Individuel",
+        "note": "persönliche Reflexion"
+      },
+      {
+        "mode": "Klass",
+        "note": "Austausch"
+      }
+    ],
+    "themes": [
+      "selbstwahrnehmung",
+      "ressourcen",
+      "stressbewaeltigung"
+    ],
+    "tags": [
+      "Energie",
+      "Selbstfürsorge",
+      "Kraftquellen",
+      "Energieräuber",
+      "Balance",
+      "Achtsamkeit"
+    ],
+    "shortDescription": "Die Jugendlichen untersuchen, was ihre „Energie auflädt\" und was sie „leert\". Sie erkennen ihre persönlichen Energiequellen und -räuber und überlegen, wie sie bewusster für Aufladung sorgen können - eine wichtige Grundlage für Selbstfürsorge und Stressbalance.",
+    "ablauf": [
+      {
+        "title": "Einstieg",
+        "text": "Bild vom Akku/Energie-Tank: Manches lädt uns auf (Freunde, Bewegung, Musik, Schlaf), manches leert uns (Streit, Überforderung, zu viel Bildschirm). Wie voll ist dein Tank gerade?"
+      },
+      {
+        "title": "Mein Tank",
+        "text": "Jede/r füllt das Arbeitsblatt: Energiequellen (+) und Energieräuber (−), und markiert die wichtigsten. Dann: Wie kann ich für mehr Aufladung sorgen?"
+      },
+      {
+        "title": "Abschluss",
+        "text": "Freiwilliger Austausch über eine Energiequelle. Betonen Sie: Den eigenen Tank zu kennen und bewusst aufzuladen ist kluge Selbstfürsorge."
+      }
+    ],
+    "duration": "ca. 40 Min.",
+    "materialsNeeded": "Arbeitsblatt „Energie-Tank\"; Stifte",
+    "remark": "Vertraulich; Energieräuber freiwillig teilen. Bei Hinweisen auf anhaltende Erschöpfung/Überlastung das Gespräch suchen und Beratung anbieten.",
+    "etepStufen": [
+      4,
+      5
+    ],
+    "eldibGoals": [
+      "V-16",
+      "V-21",
+      "KOG-19",
+      "SOZ-12",
+      "K-26"
+    ],
+    "worksheet": {
+      "title": "Mäin Energie-Tank",
+      "intro": "Was lädt dich auf, was leert dich? Nur für dich.",
+      "blocks": [
+        {
+          "kind": "question",
+          "text": "Das lädt meinen Tank auf (+):",
+          "lines": 3
+        },
+        {
+          "kind": "question",
+          "text": "Das leert meinen Tank (−):",
+          "lines": 3
+        },
+        {
+          "kind": "scale",
+          "text": "Wie voll ist mein Tank gerade?",
+          "items": [
+            "fast leer",
+            "halb",
+            "voll"
+          ]
+        },
+        {
+          "kind": "question",
+          "text": "So sorge ich diese Woche für Aufladung:",
+          "lines": 2
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "geheime-gutt-doten-d-frendschafts-woch",
+    "title": "Geheime gutt Doten: d'Frëndschafts-Woch",
+    "ageLevels": [
+      "C3",
+      "C4"
+    ],
+    "type": [
+      "Projet"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Klassenprojekt über eine Woche"
+      }
+    ],
+    "themes": [
+      "beziehungsaufbau",
+      "kooperation",
+      "selbstwertgefuehl"
+    ],
+    "tags": [
+      "geheimer Freund",
+      "Freundlichkeit",
+      "gute Taten",
+      "Gemeinschaft",
+      "Wertschätzung",
+      "Woche"
+    ],
+    "shortDescription": "Jedes Kind zieht heimlich den Namen eines anderen und tut ihm eine Woche lang kleine gute Taten - ohne sich zu verraten. Am Ende wird aufgelöst. Das Projekt stärkt Aufmerksamkeit füreinander, Freundlichkeit und das Wir-Gefühl der Klasse.",
+    "ablauf": [
+      {
+        "title": "Auftakt",
+        "text": "Jedes Kind zieht heimlich einen Namen. Erklären Sie: Diese Woche bist du der „geheime gute Freund\" für dieses Kind - du tust ihm kleine Gutes (helfen, ein nettes Wort, etwas teilen), ohne dich zu verraten. Sammeln Sie Ideen für gute Taten."
+      },
+      {
+        "title": "Während der Woche",
+        "text": "Die Kinder führen täglich kleine gute Taten für ihr geheimes Kind aus. Erinnern Sie kurz und würdigen Sie das Bemühen. Achten Sie darauf, dass niemand vergessen wird."
+      },
+      {
+        "title": "Auflösung",
+        "text": "Am Ende wird aufgelöst: Wer war wessen geheimer Freund? Kurze Runde: Was hat dir jemand Gutes getan? Wie war es, heimlich Gutes zu tun? Betonen Sie das warme Gefühl in der Klasse."
+      }
+    ],
+    "duration": "Projekt über eine Woche; Auftakt/Auflösung je ca. 20 Min.",
+    "materialsNeeded": "Namenszettel zum Ziehen; optional Ideenliste für gute Taten",
+    "remark": "Aktiv steuern, dass JEDES Kind bedacht wird (Lehrperson behält die Zuordnung im Blick, springt nötigenfalls ein). Klar: nur freundliche Taten, kein Ärgern. Für Kinder mit Außenseiterrolle besonders sensibel begleiten.",
+    "etepStufen": [
+      3,
+      4
+    ],
+    "eldibGoals": [
+      "SOZ-15",
+      "SOZ-26",
+      "SOZ-37",
+      "K-17",
+      "V-13"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "faarwen-sich-5-roueg-saachen",
+    "title": "Faarwen-Sich: 5 roueg Saachen",
+    "ageLevels": [
+      "C1",
+      "C2"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "im Raum oder draußen"
+      }
+    ],
+    "themes": [
+      "achtsamkeit",
+      "selbstwahrnehmung",
+      "stressbewaeltigung"
+    ],
+    "tags": [
+      "Achtsamkeit",
+      "Farben",
+      "Wahrnehmung",
+      "Beruhigung",
+      "Hier und Jetzt",
+      "Suchspiel"
+    ],
+    "shortDescription": "Eine einfache Achtsamkeitsübung als Suchspiel: Die Kinder suchen ruhig Dinge in einer bestimmten Farbe (z. B. 5 grüne Dinge). Das richtet die Aufmerksamkeit nach außen ins Hier und Jetzt und beruhigt - ideal bei Unruhe oder als kurzer Übergang.",
+    "ablauf": [
+      {
+        "title": "Einstieg",
+        "text": "„Wir gehen jetzt ganz ruhig auf Farb-Suche - nur mit den Augen.\" Nennen Sie eine Farbe (z. B. Grün) und eine Anzahl (5)."
+      },
+      {
+        "title": "Suchen",
+        "text": "Die Kinder suchen still mit den Augen die Dinge in der Farbe und merken sie sich (oder zeigen leise). Danach kurz sammeln: Was hast du gefunden? Wiederholen Sie mit anderen Farben, ruhiger werdend."
+      },
+      {
+        "title": "Abschluss",
+        "text": "Kurz nachspüren: Wie fühlst du dich jetzt? Erklären Sie: Diese Farb-Suche kannst du auch allein machen, wenn du unruhig bist - sie holt dich ins Jetzt."
+      }
+    ],
+    "duration": "ca. 10-15 Min.",
+    "materialsNeeded": "Keine; Raum oder draußen",
+    "remark": "Kurz und ruhig halten. Inklusiv (kein Tempo, kein Gewinnen). Gut als Mini-Ritual bei Unruhe oder als Übergang nach der Pause.",
+    "etepStufen": [
+      1,
+      2
+    ],
+    "eldibGoals": [
+      "V-11",
+      "KOG-2",
+      "KOG-23",
+      "SOZ-16"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "sorry-sandwich-richteg-sech-entschellegen",
+    "title": "Sorry-Sandwich: richteg sech entschëllegen",
+    "ageLevels": [
+      "C2",
+      "C3"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Plenum"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Paare"
+      }
+    ],
+    "themes": [
+      "konfliktloesung",
+      "kommunikation",
+      "beziehungsaufbau"
+    ],
+    "tags": [
+      "Entschuldigung",
+      "Versöhnung",
+      "Wiedergutmachen",
+      "ehrlich sein",
+      "Streit",
+      "Verantwortung"
+    ],
+    "shortDescription": "Eine echte Entschuldigung ist mehr als „Sorry\". Die Kinder lernen das „Sorry-Sandwich\": sagen, was man falsch gemacht hat - sagen, dass es einem leidtut - anbieten, etwas wiedergutzumachen. So üben sie, Verantwortung zu übernehmen und sich ehrlich zu versöhnen.",
+    "ablauf": [
+      {
+        "title": "Einstieg",
+        "text": "Vergleichen Sie ein hingeworfenes „Sorry\" mit einer echten Entschuldigung. Stellen Sie das Sorry-Sandwich vor: 1) Was habe ich getan? 2) Es tut mir leid, weil … 3) Wie kann ich es wiedergutmachen?"
+      },
+      {
+        "title": "Üben",
+        "text": "In Paaren üben die Kinder an harmlosen Beispielen das Sorry-Sandwich. Geben Sie Satzhilfen. Betonen Sie: ehrlich sein, nicht erzwungen; und auch das Annehmen einer Entschuldigung üben."
+      },
+      {
+        "title": "Abschluss",
+        "text": "Sammeln Sie: Wie fühlt sich eine echte Entschuldigung an - beim Geben und Annehmen? Betonen Sie: Sich entschuldigen ist mutig und stark."
+      }
+    ],
+    "duration": "ca. 40 Min.",
+    "materialsNeeded": "Karten mit harmlosen Beispielen; Satzhilfen sichtbar",
+    "remark": "Mit fiktiven Beispielen; niemanden zu einer realen Entschuldigung zwingen. Klar: Entschuldigen heißt nicht, dass alles sofort wieder gut ist - Wiedergutmachen gehört dazu.",
+    "etepStufen": [
+      2,
+      3
+    ],
+    "eldibGoals": [
+      "SOZ-13",
+      "SOZ-24",
+      "K-16",
+      "K-26",
+      "V-17"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "phoenix-geschichten-nei-ufaenken-nom-reckschlag",
+    "title": "Phoenix-Geschichten: nei ufänken nom Réckschlag",
+    "ageLevels": [
+      "C4",
+      "ES"
+    ],
+    "type": [
+      "ganz Stonn"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Plenum"
+      },
+      {
+        "mode": "Individuel",
+        "note": "eigene Geschichte"
+      }
+    ],
+    "themes": [
+      "resilienz",
+      "selbstwertgefuehl",
+      "motivation"
+    ],
+    "tags": [
+      "Resilienz",
+      "Comeback",
+      "Rückschlag",
+      "Neuanfang",
+      "Vorbilder",
+      "Durchhalten"
+    ],
+    "shortDescription": "Wie der Phoenix, der aus der Asche neu aufsteigt: Die Jugendlichen erkunden Geschichten von Menschen, die nach einem Rückschlag wieder aufgestanden sind, und ihre eigenen „Comebacks\". Sie erkennen, dass Scheitern nicht das Ende ist, und stärken ihre Zuversicht und Resilienz.",
+    "ablauf": [
+      {
+        "title": "Einstieg",
+        "text": "Erzählen Sie vom Phoenix - und von bekannten Menschen, die scheiterten und neu anfingen (Sport, Erfindungen, Musik). Erarbeiten Sie: Rückschläge gehören zu fast jedem Erfolg dazu."
+      },
+      {
+        "title": "Hauptteil",
+        "text": "Sammeln Sie, was beim Wiederaufstehen hilft (Pause, Unterstützung, aus Fehlern lernen, neues Ziel, dranbleiben). Jede/r denkt (für sich) an einen eigenen kleinen Rückschlag, den er überwunden hat - was hat geholfen? Freiwilliger Austausch."
+      },
+      {
+        "title": "Abschluss",
+        "text": "Jede/r formuliert einen Mut-Satz fürs nächste Mal, wenn etwas schiefgeht. Betonen Sie: Aufstehen kann man üben - jeder Neuanfang zählt."
+      }
+    ],
+    "duration": "ca. 50 Min.",
+    "materialsNeeded": "Beispiele bekannter „Comebacks\"; Tafel/Flipchart",
+    "remark": "Eigene Rückschläge strikt freiwillig; sensibel begleiten. Bei aktuellen, belastenden Krisen einfühlsam und ggf. mit Beratung reagieren - nicht zum Teilen drängen.",
+    "etepStufen": [
+      4,
+      5
+    ],
+    "eldibGoals": [
+      "V-16",
+      "V-24",
+      "KOG-19",
+      "KOG-27",
+      "SOZ-12",
+      "K-26"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "selfie-a-wierklechkeet-filter-a-selbstbild",
+    "title": "Selfie a Wierklechkeet: Filter a Selbstbild",
+    "ageLevels": [
+      "C4",
+      "ES"
+    ],
+    "type": [
+      "ganz Stonn"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Plenum"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Kleingruppen"
+      }
+    ],
+    "themes": [
+      "medien",
+      "selbstwahrnehmung",
+      "selbstwertgefuehl"
+    ],
+    "tags": [
+      "soziale Medien",
+      "Filter",
+      "Selbstbild",
+      "Körperbild",
+      "Vergleich",
+      "Medienkompetenz"
+    ],
+    "shortDescription": "Bilder in sozialen Medien sind oft gefiltert und inszeniert - der Vergleich damit nagt am Selbstwert. Die Jugendlichen lernen, hinter perfekte Online-Bilder zu schauen, den ständigen Vergleich zu durchschauen und einen freundlicheren Blick auf sich selbst zu entwickeln.",
+    "ablauf": [
+      {
+        "title": "Einstieg",
+        "text": "Zeigen Sie (neutral) ein Vorher/Nachher mit Filter/Bearbeitung. Sammeln Sie: Wie wirken perfekte Online-Bilder auf uns? Erarbeiten Sie: Vieles ist inszeniert und gefiltert - nicht die ganze Wirklichkeit."
+      },
+      {
+        "title": "Hauptteil",
+        "text": "In Kleingruppen besprechen die Jugendlichen: Wie fühlt sich der ständige Vergleich an? Welche Tricks stecken hinter „perfekten\" Bildern? Was hilft gegen den Vergleichsdruck (entfolgen, Pausen, echte Begegnungen, eigener Wert)? Sammeln Sie Strategien."
+      },
+      {
+        "title": "Abschluss",
+        "text": "Jede/r notiert einen freundlichen Satz über sich selbst, unabhängig von Likes/Aussehen. Betonen Sie: Dein Wert hängt nicht von gefilterten Bildern oder Likes ab."
+      }
+    ],
+    "duration": "ca. 50 Min.",
+    "materialsNeeded": "Neutrale Beispiel-Bilder (Filter/Bearbeitung); Arbeitsblatt; Tafel/Flipchart",
+    "remark": "Sensibel mit Körperbild/Selbstwert; keine echten Profile von Jugendlichen zeigen, niemanden bloßstellen. Bei Hinweisen auf belastendes Körperbild/Essverhalten einfühlsam reagieren und Beratung anbieten.",
+    "etepStufen": [
+      4,
+      5
+    ],
+    "eldibGoals": [
+      "KOG-44",
+      "KOG-58",
+      "V-23",
+      "SOZ-33",
+      "K-26"
+    ],
+    "worksheet": {
+      "title": "Hinter dem perfekten Bild",
+      "intro": "Schau hinter die Filter – und freundlich auf dich.",
+      "blocks": [
+        {
+          "kind": "question",
+          "text": "Tricks, die „perfekte\" Online-Bilder benutzen:",
+          "lines": 2
+        },
+        {
+          "kind": "scale",
+          "text": "Wie sehr vergleiche ich mich mit Online-Bildern?",
+          "items": [
+            "wenig",
+            "manchmal",
+            "stark"
+          ]
+        },
+        {
+          "kind": "question",
+          "text": "Was hilft mir gegen den Vergleichsdruck?",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "Ein freundlicher Satz über mich (ohne Likes/Aussehen):",
+          "lines": 1
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "schwungtuch-spiller-zesummen-an-der-loft",
+    "title": "Schwungtuch-Spiller: zesummen an der Loft",
+    "ageLevels": [
+      "C1",
+      "C2"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "ganze Gruppe am Schwungtuch"
+      }
+    ],
+    "themes": [
+      "bewegung",
+      "kooperation",
+      "spiel-spass"
+    ],
+    "tags": [
+      "Schwungtuch",
+      "Bewegung",
+      "Kooperation",
+      "Gemeinschaft",
+      "Rhythmus",
+      "Spaß"
+    ],
+    "shortDescription": "Mit einem großen Schwungtuch erleben die Kinder Kooperation in Bewegung: gemeinsam wellen, Bälle hüpfen lassen, unter das Tuch schlüpfen. Nur wenn alle aufeinander achten und im Rhythmus zusammenarbeiten, gelingen die Spiele - ein fröhliches Gemeinschaftserlebnis.",
+    "ablauf": [
+      {
+        "title": "Einstieg",
+        "text": "Alle fassen das Schwungtuch am Rand. Üben Sie gemeinsames Heben und Senken - langsam, dann schneller. Regel: aufeinander achten, gut festhalten."
+      },
+      {
+        "title": "Spiele",
+        "text": "Spielen Sie mehrere Tuch-Spiele: sanfte Wellen, „Popcorn\" (leichte Bälle hüpfen lassen), gemeinsam das Tuch hochwerfen und darunterschlüpfen, „Karussell\" (im Kreis gehen). Steigern Sie nach Können."
+      },
+      {
+        "title": "Abschluss",
+        "text": "Ruhiges Ausschwingen lassen, Tuch sinken lassen. Kurze Runde: Was hat als Gruppe am meisten Spaß gemacht? Betonen Sie das Miteinander - es klappt nur zusammen."
+      }
+    ],
+    "duration": "ca. 25-30 Min.",
+    "materialsNeeded": "Ein großes Schwungtuch/Fallschirmtuch; leichte Bälle; viel Platz (Halle)",
+    "remark": "Auf Sicherheit achten (festhalten, Abstand, niemanden überfordern beim Drunter-Schlüpfen). Inklusiv gestalten; Mitmachen freiwillig. Lautstärke im Blick behalten.",
+    "etepStufen": [
+      1,
+      2
+    ],
+    "eldibGoals": [
+      "SOZ-17",
+      "SOZ-18",
+      "V-12",
+      "K-10",
+      "KOG-7"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "breif-un-mech-an-engem-joer",
+    "title": "Bréif un mech an engem Joer",
+    "ageLevels": [
+      "C4",
+      "ES"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Individuel",
+        "note": "persönlicher Brief"
+      }
+    ],
+    "themes": [
+      "selbstwertgefuehl",
+      "identitaet",
+      "motivation"
+    ],
+    "tags": [
+      "Brief an mich",
+      "Zukunft",
+      "Ziele",
+      "Selbstreflexion",
+      "Hoffnung",
+      "Zeitkapsel"
+    ],
+    "shortDescription": "Die Jugendlichen schreiben einen Brief an sich selbst in einem Jahr: was sie gerade beschäftigt, worauf sie stolz sind, was sie sich wünschen. Der Brief wird verschlossen und später geöffnet. Das fördert Selbstreflexion, Zukunftsperspektive und einen wertschätzenden Blick auf sich selbst.",
+    "ablauf": [
+      {
+        "title": "Einstieg",
+        "text": "Erklären Sie die Idee der Zeitkapsel: Du schreibst dir selbst - dem Ich in einem Jahr. Niemand außer dir liest den Brief. Sammeln Sie mögliche Inhalte (Stärken, aktuelle Themen, Wünsche, Ziele, ein Mut-Satz)."
+      },
+      {
+        "title": "Schreiben",
+        "text": "Jede/r schreibt seinen Brief in Ruhe. Betonen Sie: ehrlich und freundlich zu dir selbst. Anschließend wird der Brief in einen Umschlag gesteckt und verschlossen (mit Namen/Öffnungsdatum)."
+      },
+      {
+        "title": "Abschluss",
+        "text": "Sammeln Sie die Briefe sicher ein (oder die Kinder behalten sie) und vereinbaren Sie das Öffnungsdatum in einem Jahr. Betonen Sie: Es ist spannend zu sehen, wie man sich entwickelt."
+      }
+    ],
+    "duration": "ca. 40 Min.",
+    "materialsNeeded": "Papier, Umschläge, Stifte; sicherer Aufbewahrungsort",
+    "remark": "Strikt privat - Briefe werden nicht gelesen. Aufbewahrung verlässlich organisieren (oder Kinder nehmen sie mit). Sensibel bei Jugendlichen in schwierigen Lebenslagen; freundlichen, hoffnungsvollen Rahmen geben.",
+    "etepStufen": [
+      4,
+      5
+    ],
+    "eldibGoals": [
+      "KOG-15",
+      "KOG-31",
+      "V-22",
+      "K-26",
+      "SOZ-19"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "zitroun-pressen-muskelentspannung",
+    "title": "Zitroun pressen: Muskelentspannung",
+    "ageLevels": [
+      "C1",
+      "C2"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "ruhige Atmosphäre"
+      }
+    ],
+    "themes": [
+      "stressbewaeltigung",
+      "achtsamkeit",
+      "selbstwahrnehmung"
+    ],
+    "tags": [
+      "Entspannung",
+      "Muskeln",
+      "Anspannung lösen",
+      "Beruhigung",
+      "Körperwahrnehmung",
+      "Ruhe"
+    ],
+    "shortDescription": "Eine kindgerechte Muskelentspannung: Die Kinder spannen Körperteile fest an („eine Zitrone pressen\") und lassen dann ganz locker. Sie lernen den Unterschied zwischen Anspannung und Entspannung zu spüren und bekommen ein einfaches Werkzeug, um sich zu beruhigen.",
+    "ablauf": [
+      {
+        "title": "Einstieg",
+        "text": "„Wir pressen gleich Zitronen - aber nur mit unseren Muskeln.\" Schaffen Sie Ruhe (Sitzen oder Liegen). Erklären Sie: fest anspannen, halten, dann ganz loslassen und den Unterschied spüren."
+      },
+      {
+        "title": "Übung",
+        "text": "Führen Sie durch: „Press die Zitrone in der Hand - fest, fest, halt … und loslassen.\" Dann andere Körperteile als Bilder: Schultern (Schildkröte), Gesicht (Grimasse), Bauch (hart wie ein Brett), Beine/Füße. Jeweils anspannen - halten - lösen."
+      },
+      {
+        "title": "Abschluss",
+        "text": "Zum Schluss einmal alles kurz anspannen und ganz lösen, ruhig atmen. Nachspüren: Wie fühlt sich dein Körper jetzt an - locker? Erklären Sie, wann die Übung hilft (vor dem Einschlafen, bei Aufregung)."
+      }
+    ],
+    "duration": "ca. 15-20 Min.",
+    "materialsNeeded": "Ruhiger Raum; optional Matten",
+    "remark": "Freiwilligkeit; bei Liegen/Augenschließen Alternativen anbieten. Kurz und in angenehmer Stimmung beenden. Auf behutsames Anspannen achten (kein Verkrampfen/Schmerz).",
+    "etepStufen": [
+      1,
+      2
+    ],
+    "eldibGoals": [
+      "V-11",
+      "V-21",
+      "KOG-5",
+      "SOZ-16"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "maei-waeerter-kompass-wat-ass-mir-wichteg",
+    "title": "Mäi Wäerter-Kompass: wat ass mir wichteg",
+    "ageLevels": [
+      "C4",
+      "ES"
+    ],
+    "type": [
+      "ganz Stonn"
+    ],
+    "participants": [
+      {
+        "mode": "Individuel",
+        "note": "persönliche Werte-Arbeit"
+      },
+      {
+        "mode": "Klass",
+        "note": "Austausch"
+      }
+    ],
+    "themes": [
+      "identitaet",
+      "selbstwahrnehmung",
+      "gerechtigkeit"
+    ],
+    "tags": [
+      "Werte",
+      "Orientierung",
+      "Identität",
+      "Entscheidungen",
+      "Haltung",
+      "Selbstkenntnis"
+    ],
+    "shortDescription": "Was ist mir im Leben wichtig - Ehrlichkeit, Familie, Freiheit, Gerechtigkeit, Erfolg? Die Jugendlichen erkunden ihre persönlichen Werte, priorisieren sie und erkennen, wie Werte Entscheidungen leiten. Das stärkt Identität, Selbstkenntnis und eine eigene Haltung.",
+    "ablauf": [
+      {
+        "title": "Einstieg",
+        "text": "Erklären Sie: Werte sind wie ein Kompass - sie zeigen, was uns wichtig ist und leiten unsere Entscheidungen. Stellen Sie eine Auswahl von Werten vor (Ehrlichkeit, Familie, Freundschaft, Freiheit, Gerechtigkeit, Erfolg, Hilfsbereitschaft, Mut …)."
+      },
+      {
+        "title": "Hauptteil",
+        "text": "Jede/r wählt aus der Liste die persönlich wichtigsten Werte (z. B. die Top 5) und ordnet sie auf dem Kompass-Arbeitsblatt. Reflexion: Wo zeigt sich dieser Wert in meinem Alltag? Freiwilliger Austausch zu zweit."
+      },
+      {
+        "title": "Abschluss",
+        "text": "Sammeln Sie im Plenum: Welche Werte kamen oft vor? Betonen Sie: Seine Werte zu kennen hilft, Entscheidungen zu treffen und zu sich zu stehen - auch unter Druck."
+      }
+    ],
+    "duration": "ca. 50 Min.",
+    "materialsNeeded": "Werte-Liste/-Karten; Kompass-Arbeitsblatt; Stifte",
+    "remark": "Werte sind persönlich - nicht bewerten, keine „richtigen\" Werte vorgeben. Vielfalt würdigen. Sensibel, wenn Wertekonflikte (Familie/Kultur) berührt werden; respektvollen Rahmen sichern.",
+    "etepStufen": [
+      4,
+      5
+    ],
+    "eldibGoals": [
+      "KOG-55",
+      "KOG-58",
+      "SOZ-35",
+      "SOZ-39",
+      "V-33",
+      "K-34"
+    ],
+    "worksheet": {
+      "title": "Mäi Wäerter-Kompass",
+      "intro": "Was ist dir wirklich wichtig? Wähle und ordne.",
+      "blocks": [
+        {
+          "kind": "instruction",
+          "text": "Wähle deine 5 wichtigsten Werte und trage sie ein (1 = am wichtigsten)."
+        },
+        {
+          "kind": "lines",
+          "lines": 5
+        },
+        {
+          "kind": "question",
+          "text": "Wo zeigt sich mein wichtigster Wert im Alltag?",
+          "lines": 2
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
   }
 ]
