@@ -6325,5 +6325,422 @@
     ],
     "language": "de",
     "source": "generated"
+  },
+  {
+    "id": "houfreg-mauer-ech-sinn-houfreg-op",
+    "title": "Houfreg-Mauer: ech sinn houfreg op...",
+    "ageLevels": [
+      "C2",
+      "C3"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "gemeinsame Mauer gestalten"
+      },
+      {
+        "mode": "Individuel",
+        "note": "eigene Stolz-Steine"
+      }
+    ],
+    "themes": [
+      "selbstwertgefuehl",
+      "selbstwahrnehmung",
+      "emotionen"
+    ],
+    "tags": [
+      "Stolz",
+      "Selbstwert",
+      "Erfolge",
+      "Anerkennung",
+      "Gemeinschaft",
+      "Wertschätzung"
+    ],
+    "shortDescription": "Die Klasse baut gemeinsam eine „Stolz-Mauer\": Jedes Kind schreibt auf „Steine\", worauf es stolz ist - kleine und große Dinge, Können und Charaktereigenschaften. So lernen die Kinder, eigene Erfolge wahrzunehmen und zu benennen, und sehen, dass jeder etwas kann. Das stärkt Selbstwert und Gemeinschaftsgefühl.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Worauf darf man stolz sein?",
+        "text": "Klären Sie: Stolz heißt nicht angeben - es heißt, etwas Gutes an sich anzuerkennen. Man darf auf Können stolz sein (schwimmen, helfen) und auf Eigenschaften (geduldig, mutig). Sammeln Sie erste Beispiele."
+      },
+      {
+        "title": "Hauptteil – Meine Stolz-Steine",
+        "text": "Jedes Kind beschriftet/bemalt ein bis drei „Steine\" (Papierkärtchen) mit „Ich bin stolz auf ...\". Begleiten Sie behutsam Kinder, denen wenig einfällt, mit Beispielen. Die Steine werden gemeinsam zu einer „Mauer\" an der Wand zusammengefügt."
+      },
+      {
+        "title": "Abschluss – Unsere starke Mauer",
+        "text": "Betrachten Sie die fertige Mauer: „Schaut, wie viel unsere Klasse kann!\" Wer mag, liest einen Stein vor. Betonen Sie: Jeder Stein zählt, und zusammen sind wir eine starke Mauer."
+      }
+    ],
+    "duration": "ca. 40 Min.",
+    "materialsNeeded": "„Stein\"-Kärtchen (grau, steinförmig); Stifte; Platz an der Wand für die Mauer",
+    "remark": "Sorgen Sie dafür, dass JEDES Kind etwas findet, auf das es stolz sein kann - steuern Sie aktiv mit. Kein Vergleichen/Werten der Steine. Besonders wertvoll für Kinder mit geringem Selbstwert. Für C2 mit Bildern und kurzen Stichworten arbeiten.",
+    "etepStufen": [
+      2,
+      3
+    ],
+    "eldibGoals": [
+      "V-13",
+      "SOZ-7",
+      "SOZ-15",
+      "K-18",
+      "KOG-5"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "d-geduld-spill-waarden-leieren",
+    "title": "D'Geduld-Spill: waarden léieren",
+    "ageLevels": [
+      "C1",
+      "C2"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Spiele im Kreis"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Kleingruppen"
+      }
+    ],
+    "themes": [
+      "impulskontrolle",
+      "selbstwahrnehmung",
+      "spiel-spass"
+    ],
+    "tags": [
+      "Geduld",
+      "Warten",
+      "Impulskontrolle",
+      "Selbststeuerung",
+      "Spiel",
+      "Abwarten"
+    ],
+    "shortDescription": "Warten fällt schwer - besonders jüngeren Kindern. Über kleine Geduld-Spiele üben sie spielerisch, einen Impuls kurz zurückzuhalten, abzuwarten und an der Reihe zu bleiben. Sie merken, dass Warten leichter wird, wenn man kleine Tricks kennt - eine wichtige Grundlage für Selbststeuerung.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Warten ist manchmal schwer",
+        "text": "Sprechen Sie kurz: Wann muss man warten (dran sein, anstehen, bis etwas fertig ist)? Wie fühlt sich das an? Erklären Sie: Warten kann man üben - heute mit Spielen."
+      },
+      {
+        "title": "Hauptteil – Geduld-Spiele",
+        "text": "Spielen Sie 2-3 Spiele, die Abwarten und Impulskontrolle üben, z. B.: „Kommando Pimperle\" (nur bei bestimmtem Kommando bewegen), „Standbild\" (auf Signal einfrieren), „Langsamster gewinnt\" (so langsam wie möglich gehen), Reihum-Spiele mit klarer Reihenfolge. Benennen Sie Tricks fürs Warten (zählen, atmen, Hände in den Schoß)."
+      },
+      {
+        "title": "Abschluss – Mein Warte-Trick",
+        "text": "Kurze Runde: „Was hat dir beim Warten geholfen?\" Sammeln Sie die Warte-Tricks. Betonen Sie: Wer warten kann, hat eine starke Selbst-Fernbedienung."
+      }
+    ],
+    "duration": "ca. 30-40 Min.",
+    "materialsNeeded": "Je nach Spiel wenig bis kein Material; Platz",
+    "remark": "Spiele kurz und mit klaren Regeln; Erfolgserlebnisse sichern, damit Warten positiv erlebt wird. Für sehr impulsive Kinder anfangs kurze Wartezeiten und viel Lob fürs Gelingen. Spielerisch und ohne Beschämung.",
+    "etepStufen": [
+      1,
+      2
+    ],
+    "eldibGoals": [
+      "V-10",
+      "V-20",
+      "SOZ-14",
+      "SOZ-19",
+      "K-9"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "roueg-an-den-test-pruefungsangst-zaehmen",
+    "title": "Roueg an den Test: Prüfungsangst zähmen",
+    "ageLevels": [
+      "C4",
+      "ES"
+    ],
+    "type": [
+      "ganz Stonn"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Plenum"
+      },
+      {
+        "mode": "Individuel",
+        "note": "persönliche Strategien"
+      }
+    ],
+    "themes": [
+      "stressbewaeltigung",
+      "selbstwahrnehmung",
+      "resilienz"
+    ],
+    "tags": [
+      "Prüfungsangst",
+      "Stress",
+      "Beruhigung",
+      "Vorbereitung",
+      "Selbstvertrauen",
+      "Atmung"
+    ],
+    "shortDescription": "Vor und in Prüfungen kann Angst blockieren. Die Jugendlichen verstehen, woher Prüfungsangst kommt, und lernen Strategien für die Zeit davor (gute Vorbereitung, realistische Gedanken) und für den Moment (atmen, sich beruhigen, Schritt für Schritt). So gewinnen sie mehr Ruhe und können zeigen, was sie können.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Was Angst mit uns macht",
+        "text": "Sammeln Sie körperliche Zeichen von Prüfungsangst (Herzklopfen, Blackout, Bauchweh). Erklären Sie sachlich: Etwas Aufregung ist normal und sogar hilfreich; zu viel blockiert. Man kann lernen, sie zu regulieren."
+      },
+      {
+        "title": "Hauptteil – Strategien davor und mittendrin",
+        "text": "Erarbeiten Sie zwei Pakete. Davor: rechtzeitig in kleinen Portionen lernen, genug Schlaf, realistische Gedanken statt Katastrophen, einen Mutmach-Satz. Mittendrin: kurz atmen (z. B. 5-Finger-Atmung), mit einer leichten Aufgabe starten, einen Blackout mit Durchatmen überbrücken, sich am Plan entlanghangeln. Jede/r testet eine Beruhigungsübung."
+      },
+      {
+        "title": "Abschluss – Mein Prüfungs-Plan",
+        "text": "Jede/r notiert auf dem Arbeitsblatt zwei Strategien für davor und zwei für mittendrin. Betonen Sie: Mit Übung wird der Umgang mit Prüfungsangst leichter - und eine Prüfung sagt nichts über deinen Wert als Mensch."
+      }
+    ],
+    "duration": "ca. 50 Min.",
+    "materialsNeeded": "Arbeitsblatt „Prüfungs-Plan\"; Tafel/Flipchart",
+    "remark": "Sensibel und entlastend arbeiten; Prüfungsangst nicht bagatellisieren. Bei starker, blockierender Angst individuelle Unterstützung und ggf. Beratung anbieten. Betonen Sie Selbstwert unabhängig von Noten.",
+    "etepStufen": [
+      4,
+      5
+    ],
+    "eldibGoals": [
+      "V-16",
+      "V-21",
+      "V-26",
+      "KOG-19",
+      "SOZ-20",
+      "K-16"
+    ],
+    "worksheet": {
+      "title": "Mäi Prüfungs-Plan",
+      "intro": "Plane deine Ruhe – für davor und für mittendrin.",
+      "blocks": [
+        {
+          "kind": "question",
+          "text": "Davor hilft mir (Vorbereitung, Gedanken, Schlaf …):",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "Mittendrin hilft mir (atmen, starten, durchhalten …):",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "Mein Mutmach-Satz für die Prüfung:",
+          "lines": 1
+        },
+        {
+          "kind": "scale",
+          "text": "So aufgeregt bin ich vor Prüfungen meist:",
+          "items": [
+            "wenig",
+            "mittel",
+            "stark"
+          ]
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "trommel-kreis-rhythmus-zesummen",
+    "title": "Trommel-Kreis: Rhythmus zesummen",
+    "ageLevels": [
+      "C1",
+      "C2"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "im Kreis, mit Rhythmus"
+      }
+    ],
+    "themes": [
+      "kreativitaet",
+      "bewegung",
+      "kooperation"
+    ],
+    "tags": [
+      "Rhythmus",
+      "Musik",
+      "Trommeln",
+      "Gemeinschaft",
+      "Zuhören",
+      "Konzentration"
+    ],
+    "shortDescription": "Im Trommel-Kreis erzeugt die Gruppe gemeinsam Rhythmen - mit Trommeln, Bechern oder dem eigenen Körper. Die Kinder üben Zuhören, Aufeinander-Achten und Konzentration und erleben das starke Gemeinschaftsgefühl, wenn alle im gleichen Takt sind. Musik verbindet und macht Freude.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Mein Körper macht Musik",
+        "text": "Beginnen Sie mit Körperperkussion: klatschen, patschen, stampfen. Geben Sie einen einfachen Rhythmus vor, den alle nachmachen. Erklären Sie die wichtigste Regel: gut zuhören und aufeinander achten."
+      },
+      {
+        "title": "Hauptteil – Der gemeinsame Rhythmus",
+        "text": "Verteilen Sie Trommeln/Becher (oder bleiben Sie bei Körperperkussion). Bauen Sie einen gemeinsamen Rhythmus auf, geben Sie einzelnen Kindern reihum ein kurzes „Solo\", danach wieder gemeinsam. Spielen Sie mit laut/leise und schnell/langsam (auf Ihr Signal)."
+      },
+      {
+        "title": "Abschluss – Zusammen im Takt",
+        "text": "Enden Sie mit einem ruhigen, langsamer werdenden Rhythmus bis zur Stille. Kurze Runde: „Wie war es, zusammen im Takt zu sein?\" Betonen Sie das schöne Gemeinschaftsgefühl."
+      }
+    ],
+    "duration": "ca. 30 Min.",
+    "materialsNeeded": "Trommeln, Becher oder Alltagsgegenstände als Instrumente (optional); sonst Körperperkussion; Sitzkreis",
+    "remark": "Auf eine erträgliche Lautstärke achten und klare Start-/Stopp-Signale vereinbaren. Mitmachen freiwillig; auch leises Mitmachen zählt. Solos nur für Kinder, die mögen - kein Vorführen erzwingen.",
+    "etepStufen": [
+      1,
+      2
+    ],
+    "eldibGoals": [
+      "V-9",
+      "K-1",
+      "K-10",
+      "SOZ-6",
+      "KOG-7"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "de-faire-schiri-streit-gerecht-leisen",
+    "title": "De faire Schiri: Streit gerecht léisen",
+    "ageLevels": [
+      "C2",
+      "C3"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Einstieg und Auswertung"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Rollenspiel in Dreiergruppen"
+      }
+    ],
+    "themes": [
+      "gerechtigkeit",
+      "konfliktloesung",
+      "kooperation"
+    ],
+    "tags": [
+      "Fairness",
+      "Schiedsrichter",
+      "neutral",
+      "Streit schlichten",
+      "Regeln",
+      "zuhören"
+    ],
+    "shortDescription": "Was macht eine faire Entscheidung aus? In der Rolle eines neutralen „Schiris\" üben die Kinder, beide Seiten anzuhören, nicht vorschnell zu urteilen und nach Regeln gerecht zu entscheiden. So entwickeln sie ein Gespür für Fairness und Unparteilichkeit - hilfreich beim Spielen und beim Streitschlichten.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Was ist ein fairer Schiri?",
+        "text": "Sprechen Sie über Schiedsrichter im Spiel: Was macht einen guten, fairen Schiri aus? (beide Seiten anschauen, Regeln kennen, nicht für Freunde Partei ergreifen, ruhig bleiben). Übertragen Sie das aufs Streitschlichten."
+      },
+      {
+        "title": "Hauptteil – Schiri-Rollenspiel",
+        "text": "In Dreiergruppen: zwei Kinder spielen einen kleinen Streit, ein Kind ist der faire Schiri. Der Schiri hört beide an („Erzähl du - jetzt du\"), fragt nach und schlägt eine gerechte Lösung vor. Rollen wechseln. Erinnern Sie an Neutralität und Zuhören."
+      },
+      {
+        "title": "Abschluss – Fair entscheiden",
+        "text": "Sammeln Sie: Was war schwer am Schiri-Sein? Was hilft, fair zu bleiben? Übertragen Sie auf den Alltag - manchmal kann ein neutrales Kind helfen, einen Streit gerecht zu lösen."
+      }
+    ],
+    "duration": "ca. 45 Min.",
+    "materialsNeeded": "Karten mit harmlosen Streit-Szenen; optional eine „Schiri\"-Pfeife/Karte als Symbol",
+    "remark": "Mit fiktiven Beispielen arbeiten. Betonen Sie Unparteilichkeit, ohne Kinder zu überfordern - bei echten Konflikten bleibt die Lehrperson Ansprechpartner. Achten Sie darauf, dass die Schiri-Rolle reihum geht.",
+    "etepStufen": [
+      2,
+      3
+    ],
+    "eldibGoals": [
+      "SOZ-11",
+      "SOZ-19",
+      "SOZ-26",
+      "K-12",
+      "KOG-22"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "wei-fillt-sech-deen-aneren",
+    "title": "Wéi fillt sech deen aneren?",
+    "ageLevels": [
+      "C2",
+      "C3"
+    ],
+    "type": [
+      "ganz Stonn"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Plenum"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Kleingruppen"
+      }
+    ],
+    "themes": [
+      "fremdwahrnehmung",
+      "emotionen",
+      "beziehungsaufbau"
+    ],
+    "tags": [
+      "Empathie",
+      "Mitgefühl",
+      "Gefühle erkennen",
+      "Perspektive",
+      "Rücksicht",
+      "Verständnis"
+    ],
+    "shortDescription": "Empathie beginnt damit, die Gefühle anderer zu erkennen. Anhand von Bildern, Geschichten und kleinen Szenen üben die Kinder, wahrzunehmen, wie sich ein anderer fühlt, und zu überlegen, was er gerade braucht. So wächst Mitgefühl und ein rücksichtsvoller Umgang miteinander.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Gefühle im Gesicht lesen",
+        "text": "Zeigen Sie Bilder/Mimik verschiedener Gefühle. Die Kinder benennen, wie sich die Person fühlt, und woran sie es erkennen (Gesicht, Körperhaltung). Erarbeiten Sie: Andere zeigen oft, wie es ihnen geht - wir müssen nur hinschauen."
+      },
+      {
+        "title": "Hauptteil – Was braucht der andere?",
+        "text": "Stellen Sie kurze Szenen vor (jemand ist traurig, weil er verloren hat; jemand ist neu und allein). In Kleingruppen überlegen die Kinder: Wie fühlt sich die Person? Was könnte ihr guttun? Spielen oder erzählen sie eine hilfreiche Reaktion."
+      },
+      {
+        "title": "Abschluss – Mitfühlen und handeln",
+        "text": "Sammeln Sie konkrete „Mitgefühl-Taten\" (trösten, fragen, dazuholen). Betonen Sie: Wenn wir merken, wie sich jemand fühlt, können wir freundlich reagieren. Vereinbaren Sie, diese Woche besonders auf die Gefühle anderer zu achten."
+      }
+    ],
+    "duration": "ca. 50 Min.",
+    "materialsNeeded": "Gefühls-/Mimikbilder; Szenenkarten; Tafel/Flipchart",
+    "remark": "Achten Sie darauf, dass Vermutungen über Gefühle respektvoll bleiben und niemand reale Mitschüler „analysiert\". Freiwilligkeit beim Teilen eigener Erfahrungen. Gut kombinierbar mit Gefühls-Wortschatz-Einheiten.",
+    "etepStufen": [
+      2,
+      3
+    ],
+    "eldibGoals": [
+      "SOZ-25",
+      "SOZ-37",
+      "K-21",
+      "KOG-23",
+      "V-23"
+    ],
+    "language": "de",
+    "source": "generated"
   }
 ]
