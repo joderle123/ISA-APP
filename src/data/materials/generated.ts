@@ -954,5 +954,517 @@ export const generated: Material[] = [
     ],
     "language": "de",
     "source": "generated"
+  },
+  {
+    "id": "stopp-meng-grenz",
+    "title": "Stopp – meng Grenz",
+    "ageLevels": [
+      "C2",
+      "C3"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Einstieg und Abschluss im Sitzkreis, ca. 12-20 Kinder"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Übungsphasen in Kleingruppen von 4-6 Kindern"
+      }
+    ],
+    "themes": [
+      "grenzen",
+      "selbstwahrnehmung",
+      "kommunikation"
+    ],
+    "tags": [
+      "Grenzen",
+      "Nein sagen",
+      "Stopp-Signal",
+      "Körpergefühl",
+      "Selbstbehauptung",
+      "Respekt"
+    ],
+    "shortDescription": "Die Kinder lernen, ihre persönlichen Grenzen wahrzunehmen und mit einem klaren „Stopp\" hörbar und sichtbar zu vertreten. Über ein Körpersignal, ein kurzes Rollenspiel und die „Ampel der Nähe\" entdecken sie, dass jeder Mensch andere Grenzen hat und dass ein Nein respektiert werden muss. Ziel ist, eigene Grenzen freundlich, aber bestimmt zu äußern und die Grenzen anderer zu achten.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Die unsichtbare Linie",
+        "text": "Versammeln Sie die Kinder im Kreis. Erklären Sie bildhaft: „Um jeden von uns gibt es eine unsichtbare Linie - das ist unsere Grenze. Manche Menschen mögen es, wenn man ihnen nah kommt, andere brauchen mehr Platz. Beides ist völlig in Ordnung.\" Bitten Sie zwei Freiwillige nach vorn: Ein Kind geht langsam auf das andere zu, das andere sagt „Stopp\", sobald es der Abstand unangenehm wird. Machen Sie deutlich, dass das „Stopp\" sofort gilt - ohne Diskussion."
+      },
+      {
+        "title": "Hauptteil 1 – Die Stopp-Hand",
+        "text": "Üben Sie gemeinsam das Körpersignal: aufrechte Haltung, Hand klar nach vorn (wie ein Verkehrspolizist), fester Blick und eine ruhige, deutliche Stimme: „Stopp, das will ich nicht.\" Lassen Sie alle Kinder die Stopp-Hand stehend ausprobieren - erst leise, dann mit kräftiger Stimme. Wichtig ist die Verbindung aus Körper, Stimme und Blick: Eine Grenze wirkt, wenn alle drei zusammenpassen."
+      },
+      {
+        "title": "Hauptteil 2 – Ampel der Nähe (Kleingruppen)",
+        "text": "In Kleingruppen erhalten die Kinder Beispielkarten mit Alltagssituationen (z. B. „Jemand nimmt dir ohne Fragen deinen Stift\", „Ein Kind umarmt dich, du magst das gerade nicht\", „Jemand kitzelt dich weiter, obwohl du lachst und schon genug hast\"). Zu jeder Karte zeigen die Kinder eine Ampelfarbe: Grün = ist okay für mich, Gelb = unsicher / ich frage nach, Rot = Stopp, das ist meine Grenze. Anschließend üben sie zu zweit die passende Stopp-Antwort. Betonen Sie: Es gibt keine falschen Farben - die gleiche Situation kann für verschiedene Kinder verschiedene Farben haben."
+      },
+      {
+        "title": "Abschluss – Mein Stopp, dein Stopp",
+        "text": "Zurück im Kreis sammeln Sie kurz: „Woran merkst du in deinem Körper, dass eine Grenze erreicht ist?\" (z. B. Bauchgefühl, Anspannung, Lust wegzugehen). Schließen Sie mit der gemeinsamen Vereinbarung: „Wenn jemand bei uns Stopp sagt, hören wir auf - immer.\" Jedes Kind nennt eine Sache, bei der ihm sein eigenes Stopp wichtig ist."
+      }
+    ],
+    "duration": "ca. 45-60 Min. (eine Unterrichtsstunde)",
+    "materialsNeeded": "Vorbereitete Situations-/Beispielkarten; drei Ampelkarten (grün/gelb/rot) pro Kleingruppe oder farbige Tonpapierkreise; ausreichend Platz für Bewegung und kurze Rollenspiele",
+    "remark": "Achten Sie auf Freiwilligkeit bei Körperkontakt-Beispielen; niemand muss eine Situation nachspielen, die unangenehm ist. Greifen Sie sensibel ein, falls ein Kind von realen Grenzverletzungen berichtet, und holen Sie bei ernsten Hinweisen Unterstützung. Für C2 die Situationen vereinfachen und stärker über Bilder arbeiten; für C3 zusätzlich besprechen, wie man ein Nein freundlich, aber bestimmt formuliert.",
+    "etepStufen": [
+      1,
+      2,
+      3
+    ],
+    "eldibGoals": [
+      "V-4",
+      "V-12",
+      "V-19",
+      "SOZ-7",
+      "SOZ-14",
+      "SOZ-22",
+      "SOZ-31",
+      "K-8",
+      "K-17"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "zivilcourage-net-wegkucken",
+    "title": "Zivilcourage: Net wegkucken",
+    "ageLevels": [
+      "C4",
+      "ES"
+    ],
+    "type": [
+      "ganz Stonn"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Plenum für Einstieg, Input und Auswertung"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Rollenspiele und Strategie-Arbeit in 3er- bis 4er-Gruppen"
+      }
+    ],
+    "themes": [
+      "mobbing",
+      "gerechtigkeit",
+      "kooperation"
+    ],
+    "tags": [
+      "Mobbing",
+      "Zivilcourage",
+      "Zuschauerrolle",
+      "Hilfe holen",
+      "Klassenklima",
+      "Verantwortung"
+    ],
+    "shortDescription": "Die Jugendlichen erkennen die verschiedenen Rollen bei Mobbing - besonders die oft übersehene, aber entscheidende Rolle der Zuschauenden. Sie erarbeiten konkrete, sichere Handlungsmöglichkeiten, um vom Wegschauen zum Eingreifen zu kommen, ohne sich selbst zu gefährden. Das begleitende Arbeitsblatt hilft, das eigene Verhalten ehrlich einzuschätzen und feste Vorsätze zu formulieren.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Wer ist alles dabei?",
+        "text": "Schildern Sie eine kurze, realistische Szene (z. B. jemand wird in der Pause regelmäßig ausgelacht und nachgeäfft). Fragen Sie: „Wer ist in dieser Szene beteiligt?\" Sammeln Sie die Rollen an der Tafel: die Person, die mobbt; die betroffene Person; Mitläufer; und die Zuschauenden. Machen Sie deutlich: Die größte Gruppe sind fast immer die Zuschauenden - und genau sie entscheiden mit, ob Mobbing weitergeht oder aufhört."
+      },
+      {
+        "title": "Hauptteil 1 – Vom Wegschauen zum Eingreifen",
+        "text": "Erarbeiten Sie gemeinsam, warum Eingreifen schwerfällt (Angst, selbst zur Zielscheibe zu werden, Unsicherheit, „geht mich nichts an\"). Stellen Sie dann eine Stufenleiter sicherer Handlungsmöglichkeiten vor: 1) nicht mitlachen / weggehen, 2) der betroffenen Person danach beistehen, 3) Verbündete suchen, 4) eine erwachsene Vertrauensperson informieren, 5) in der Situation ruhig, aber klar Stopp sagen. Betonen Sie: Schon Stufe 1 verändert die Lage - jeder findet eine Stufe, die zu ihm passt."
+      },
+      {
+        "title": "Hauptteil 2 – Rollenspiel mit Stopp-Taste",
+        "text": "In Kleingruppen spielen die Jugendlichen eine vorgegebene Mobbing-Szene und proben verschiedene Eingreif-Strategien durch. Mit einer „Stopp-Taste\" kann jederzeit angehalten und eine Alternative ausprobiert werden. Wichtig: Die betroffene Rolle wird nur angedeutet, nicht real bloßgestellt. Nach jedem Durchgang kurze Frage: Was hat geholfen? Was war für die eingreifende Person machbar?"
+      },
+      {
+        "title": "Abschluss – Mein Vorsatz",
+        "text": "Zurück im Plenum werden die wirksamsten Strategien gesammelt und als Klassen-Vereinbarung festgehalten. Jede/r füllt das Arbeitsblatt aus und formuliert einen persönlichen, realistischen Vorsatz. Schließen Sie mit dem Leitsatz: „Wegschauen ist auch eine Entscheidung - ich entscheide mich fürs Hinschauen.\""
+      }
+    ],
+    "duration": "ca. 50 Min. (eine ganze Stunde)",
+    "materialsNeeded": "Tafel/Flipchart; vorbereitete Szenenkarten; Arbeitsblatt pro Jugendlichem; optional Karten/Plakat für die Klassen-Vereinbarung",
+    "remark": "Heikles Thema - sorgen Sie für eine vertrauensvolle, nicht bloßstellende Atmosphäre und arbeiten Sie mit fiktiven Szenen statt realen Vorfällen aus der Klasse. Falls aktuelles Mobbing in der Gruppe sichtbar wird, Thema aus der Stunde herauslösen und gezielt (ggf. mit Schulsozialarbeit) bearbeiten. Machen Sie unmissverständlich klar, dass Hilfe holen kein „Petzen\", sondern Verantwortung ist.",
+    "etepStufen": [
+      3,
+      4,
+      5
+    ],
+    "eldibGoals": [
+      "SOZ-9",
+      "SOZ-15",
+      "SOZ-23",
+      "SOZ-28",
+      "SOZ-37",
+      "K-14",
+      "K-21",
+      "KOG-18",
+      "KOG-33",
+      "V-22"
+    ],
+    "worksheet": {
+      "title": "Zivilcourage – mein ehrlicher Check",
+      "intro": "Nur für dich. Sei ehrlich - es gibt keine richtigen oder falschen Antworten, nur deine.",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "1. Wie schätze ich mich ein?"
+        },
+        {
+          "kind": "scale",
+          "text": "Wenn jemand geärgert oder ausgelacht wird, schaue ich meist ...",
+          "items": [
+            "weg",
+            "hin, tue aber nichts",
+            "und tue etwas"
+          ]
+        },
+        {
+          "kind": "question",
+          "text": "Was hält mich am ehesten vom Eingreifen ab?",
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "2. Meine Stufen"
+        },
+        {
+          "kind": "checklist",
+          "text": "Diese Schritte traue ich mir zu:",
+          "items": [
+            "nicht mitlachen / weggehen",
+            "der betroffenen Person danach beistehen",
+            "Verbündete suchen",
+            "eine erwachsene Vertrauensperson informieren",
+            "ruhig, aber klar Stopp sagen"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "3. Mein Vorsatz"
+        },
+        {
+          "kind": "question",
+          "text": "Beim nächsten Mal probiere ich konkret das:",
+          "lines": 3
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "maei-ziel-kompass",
+    "title": "Mäi Ziel-Kompass",
+    "ageLevels": [
+      "C3",
+      "C4"
+    ],
+    "type": [
+      "ganz Stonn"
+    ],
+    "participants": [
+      {
+        "mode": "Individuel",
+        "note": "jedes Kind wählt und plant sein eigenes Ziel"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Tandem-Partner für Rückmeldung und Ermutigung"
+      }
+    ],
+    "themes": [
+      "motivation",
+      "selbstwertgefuehl",
+      "ressourcen"
+    ],
+    "tags": [
+      "Ziele setzen",
+      "Motivation",
+      "kleine Schritte",
+      "Durchhalten",
+      "Stärken",
+      "Selbstwirksamkeit"
+    ],
+    "shortDescription": "Die Kinder lernen, ein eigenes, erreichbares Ziel zu wählen und es in kleine, machbare Schritte zu zerlegen - statt sich von einem großen „Berg\" entmutigen zu lassen. Mit dem Ziel-Kompass als Arbeitsblatt planen sie den ersten Schritt, benennen Stolpersteine und ihre eigenen Stärken und vereinbaren ein Tandem zur gegenseitigen Ermutigung. So erleben sie Selbstwirksamkeit: Ich kann etwas bewirken, wenn ich dranbleibe.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Der Berg und die Treppe",
+        "text": "Zeigen Sie zwei Bilder: einen steilen Berg und eine Treppe. Fragen Sie: „Welches Bild macht mehr Mut, loszugehen?\" Erarbeiten Sie: Ein großes Ziel wirkt wie ein Berg - unmöglich. Zerlegt man es in Stufen, wird daraus eine Treppe, die man Schritt für Schritt schafft. Sammeln Sie Beispiele für große Ziele aus dem Schulalltag (z. B. flüssiger lesen, ordentlicher arbeiten, sich öfter melden)."
+      },
+      {
+        "title": "Hauptteil 1 – Mein Ziel wählen",
+        "text": "Jedes Kind wählt ein persönliches, erreichbares Ziel für die nächsten zwei Wochen. Helfen Sie mit der einfachen Regel: Ein gutes Ziel ist klein, klar und selbst machbar (nicht von anderen abhängig). Schwaches Ziel: „Ich will besser in Mathe sein.\" Starkes Ziel: „Ich übe an drei Tagen je 10 Minuten das kleine Einmaleins.\" Die Kinder tragen ihr Ziel oben in den Ziel-Kompass ein."
+      },
+      {
+        "title": "Hauptteil 2 – Schritte, Stolpersteine, Stärken",
+        "text": "Mit dem Arbeitsblatt planen die Kinder: den allerersten kleinen Schritt (heute oder morgen), mögliche Stolpersteine und eine Idee, wie sie diese umgehen, sowie eigene Stärken und Helfer, die sie unterstützen. Anschließend stellen sich Tandem-Partner gegenseitig ihr Ziel vor und geben eine ermutigende Rückmeldung („Das traue ich dir zu, weil ...\")."
+      },
+      {
+        "title": "Abschluss – Kompass-Versprechen",
+        "text": "Jedes Kind nennt laut seinen ersten Schritt - das macht ihn verbindlich. Vereinbaren Sie einen festen Termin in zwei Wochen, an dem alle zurückschauen: Was hat geklappt? Was war schwer? Würdigen Sie ausdrücklich das Dranbleiben, nicht nur das Erreichen."
+      }
+    ],
+    "duration": "ca. 45 Min.; plus kurze Rückschau nach 2 Wochen",
+    "materialsNeeded": "Arbeitsblatt „Ziel-Kompass\" pro Kind; zwei Anschauungsbilder (Berg / Treppe); Stifte; optional eine Pinnwand, an der die ersten Schritte sichtbar bleiben",
+    "remark": "Achten Sie darauf, dass die Ziele wirklich klein und selbst beeinflussbar sind - das ist der Schlüssel zum Erfolgserlebnis. Begleiten Sie Kinder mit geringem Selbstwert besonders und feiern Sie Teilschritte. Differenzierung: Für C3 stärker gemeinsam am Beispiel arbeiten; für C4 zusätzlich eine einfache Selbsteinschätzung (Skala) am Ende der zwei Wochen ergänzen.",
+    "etepStufen": [
+      2,
+      3,
+      4
+    ],
+    "eldibGoals": [
+      "KOG-6",
+      "KOG-19",
+      "KOG-27",
+      "KOG-44",
+      "V-7",
+      "V-16",
+      "V-24",
+      "SOZ-12",
+      "SOZ-25"
+    ],
+    "worksheet": {
+      "title": "Mäi Ziel-Kompass",
+      "intro": "Ein großes Ziel wird zur Treppe, wenn du es in kleine Schritte teilst. Fülle deinen Kompass aus.",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "Mein Ziel (klein, klar, selbst machbar)"
+        },
+        {
+          "kind": "lines",
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "Mein allererster Schritt – heute oder morgen"
+        },
+        {
+          "kind": "lines",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "Welcher Stolperstein könnte kommen – und was tue ich dann?",
+          "lines": 3
+        },
+        {
+          "kind": "question",
+          "text": "Welche Stärken und Helfer unterstützen mich?",
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "Rückschau nach 2 Wochen"
+        },
+        {
+          "kind": "scale",
+          "text": "So gut bin ich drangeblieben:",
+          "items": [
+            "noch wenig",
+            "ein Stück",
+            "richtig gut"
+          ]
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "fair-oder-onfair-d-regelwerkstatt",
+    "title": "Fair oder onfair? D'Regelwerkstatt",
+    "ageLevels": [
+      "C3",
+      "C4"
+    ],
+    "type": [
+      "ganz Stonn"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "gemeinsame Diskussion und Abstimmung"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Werkstatt-Gruppen von 4-5 Kindern"
+      }
+    ],
+    "themes": [
+      "gerechtigkeit",
+      "kooperation",
+      "kommunikation"
+    ],
+    "tags": [
+      "Gerechtigkeit",
+      "Regeln",
+      "Fairness",
+      "Mitbestimmung",
+      "Perspektivwechsel",
+      "Klassenrat"
+    ],
+    "shortDescription": "Die Kinder untersuchen, was eine Regel eigentlich fair macht, und gestalten in einer „Regelwerkstatt\" gemeinsam verbindliche, gerechte Klassenregeln. An Streit- und Dilemma-Beispielen üben sie, verschiedene Perspektiven einzunehmen und zwischen „gleich für alle\" und „gerecht für jeden\" zu unterscheiden. Mitbestimmung erhöht die Bereitschaft, Regeln auch wirklich einzuhalten.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Das unfaire Spiel",
+        "text": "Starten Sie mit einem kurzen Spiel, dessen Regeln bewusst unfair sind (z. B. nur Kinder der ersten Reihe dürfen punkten). Lassen Sie das Gefühl kurz wirken und fragen Sie dann: „Was war hier los? Wie hat sich das angefühlt?\" Leiten Sie über: Heute werden wir Regel-Detektive und finden heraus, was eine Regel fair macht."
+      },
+      {
+        "title": "Hauptteil 1 – Was macht eine Regel fair?",
+        "text": "Sammeln Sie gemeinsam Merkmale fairer Regeln: Sie gelten für alle, sie haben einen sinnvollen Grund, sie schützen jemanden oder etwas, man kann sie verstehen und einhalten, und alle durften mitreden. Diskutieren Sie an einem Beispiel den Unterschied zwischen „gleich\" und „gerecht\" (z. B. brauchen nicht alle dieselbe Hilfe, um mitzukommen). Halten Sie die Merkmale sichtbar fest."
+      },
+      {
+        "title": "Hauptteil 2 – Regelwerkstatt",
+        "text": "In Werkstatt-Gruppen bekommt jede Gruppe einen Bereich des Schulalltags (z. B. Umgang miteinander, Lautstärke, Material teilen, Streit lösen). Aufgabe: eine faire Regel formulieren, die alle Merkmale erfüllt, und in einem Satz begründen, wen sie schützt. Die Gruppen prüfen ihre Regel selbst an der Merkmal-Liste."
+      },
+      {
+        "title": "Abschluss – Abstimmung und Vereinbarung",
+        "text": "Jede Gruppe stellt ihre Regel vor; die Klasse prüft gemeinsam und stimmt ab. Angenommene Regeln kommen auf ein Plakat „Unsere fairen Regeln\", das alle unterschreiben. Vereinbaren Sie, dass die Regeln im Klassenrat regelmäßig überprüft und bei Bedarf angepasst werden dürfen - faire Regeln können mitwachsen."
+      }
+    ],
+    "duration": "ca. 50 Min. (eine ganze Stunde)",
+    "materialsNeeded": "Material für ein kurzes Bewegungs-/Punktspiel; Plakat und Marker; Karten für die Werkstatt-Bereiche; sichtbar notierte Merkmal-Liste „faire Regel\"",
+    "remark": "Das Einstiegsspiel weckt absichtlich Unmut - lösen Sie diesen bewusst auf und betonen Sie, dass es um das Lernen am Gefühl ging. Achten Sie darauf, dass leise Kinder in den Gruppen gehört werden. Differenzierung: Für C3 mit vorgegebenen Regel-Bausteinen arbeiten; für C4 echte aktuelle Streitfragen der Klasse aufgreifen und im Klassenrat verankern.",
+    "etepStufen": [
+      3,
+      4
+    ],
+    "eldibGoals": [
+      "SOZ-11",
+      "SOZ-19",
+      "SOZ-26",
+      "SOZ-34",
+      "KOG-22",
+      "KOG-37",
+      "K-12",
+      "K-20",
+      "V-18"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "bildschirm-detektiv-wat-mecht-de-medie-mat-mir",
+    "title": "Bildschirm-Detektiv: Wat mécht de Medie mat mir?",
+    "ageLevels": [
+      "C4",
+      "ES"
+    ],
+    "type": [
+      "Projet"
+    ],
+    "participants": [
+      {
+        "mode": "Individuel",
+        "note": "persönliches Medientagebuch über mehrere Tage"
+      },
+      {
+        "mode": "Klass",
+        "note": "Auswertung, Diskussion und gemeinsame Vereinbarungen"
+      }
+    ],
+    "themes": [
+      "medien",
+      "selbstwahrnehmung",
+      "stressbewaeltigung"
+    ],
+    "tags": [
+      "Medien",
+      "Bildschirmzeit",
+      "soziale Medien",
+      "Selbstbeobachtung",
+      "Wohlbefinden",
+      "digitale Balance"
+    ],
+    "shortDescription": "In diesem kurzen Projekt werden die Jugendlichen zu Detektiven ihrer eigenen Mediennutzung: Über mehrere Tage beobachten sie mit einem Medientagebuch, wann und wie lange sie Bildschirme nutzen und - vor allem - wie sie sich davor und danach fühlen. In der Auswertung erkennen sie eigene Muster, unterscheiden zwischen Nutzung, die guttut, und solcher, die Stress oder schlechte Stimmung macht, und entwickeln persönliche sowie gemeinsame Ideen für eine gesündere Balance.",
+    "ablauf": [
+      {
+        "title": "Auftakt – Der Detektiv-Auftrag",
+        "text": "Klären Sie wertfrei: Es geht nicht darum, Medien schlecht zu machen, sondern ehrlich hinzuschauen. Stellen Sie den Auftrag vor: Über die nächsten 3-4 Tage führt jede/r ein Medientagebuch. Notiert werden grob die Nutzungszeit und vor allem die Stimmung davor und danach (mit einer einfachen Skala). Vereinbaren Sie, dass die Aufzeichnungen privat bleiben und nur das geteilt wird, was man möchte."
+      },
+      {
+        "title": "Beobachtungsphase – Medientagebuch (mehrere Tage)",
+        "text": "Die Jugendlichen füllen das Arbeitsblatt eigenständig aus. Erinnern Sie kurz täglich daran. Ermutigen Sie zu ehrlichen, kleinen Notizen statt perfekter Protokolle - ein Detektiv sammelt Spuren, keine Beweise gegen sich selbst."
+      },
+      {
+        "title": "Auswertung – Muster erkennen",
+        "text": "Werten Sie anonymisiert gemeinsam aus: Bei welchen Tätigkeiten ging es mir danach besser (z. B. mit Freunden schreiben, Musik, etwas lernen)? Wann schlechter (z. B. endloses Scrollen, Vergleichen, vor dem Einschlafen)? Sammeln Sie typische „Stimmungs-Fallen\" und „Wohlfühl-Quellen\". Wichtig: keine Bewertung einzelner Personen, sondern Muster verstehen."
+      },
+      {
+        "title": "Abschluss – Meine Balance, unsere Ideen",
+        "text": "Jede/r formuliert eine kleine, konkrete Veränderung, die zu mehr Wohlbefinden führen könnte (z. B. „kein Handy in der letzten halben Stunde vor dem Schlafen\"). Sammeln Sie freiwillig einige Ideen für eine gemeinsame Klassen-Charta zur Mediennutzung. Schließen Sie mit dem Leitgedanken: „Ich entscheide, wie ich Medien nutze - nicht die Medien über mich.\""
+      }
+    ],
+    "duration": "Projekt über ca. 1 Woche: kurzer Auftakt (20 Min.), tägliches Eintragen (je 5 Min.), Auswertung/Abschluss (ca. 50 Min.)",
+    "materialsNeeded": "Arbeitsblatt „Medientagebuch\" pro Jugendlichem; Tafel/Flipchart für die anonyme Auswertung; optional Plakat für die Klassen-Charta",
+    "remark": "Streng vertraulich und wertfrei arbeiten - Mediennutzung ist schambesetzt und stark unterschiedlich. Keine Zahlen vergleichen oder bloßstellen; es geht um Selbstbeobachtung, nicht um Kontrolle. Bei Hinweisen auf problematische Nutzung (Schlafmangel, Rückzug, Cybermobbing) einfühlsam das Gespräch suchen und ggf. Beratungsangebote einbeziehen. Eltern können kurz über das Projekt informiert werden.",
+    "etepStufen": [
+      3,
+      4,
+      5
+    ],
+    "eldibGoals": [
+      "KOG-9",
+      "KOG-24",
+      "KOG-41",
+      "KOG-58",
+      "V-5",
+      "V-15",
+      "V-26",
+      "SOZ-20",
+      "SOZ-33"
+    ],
+    "worksheet": {
+      "title": "Mein Medientagebuch",
+      "intro": "Sei ehrlich und neugierig wie ein Detektiv. Das hier gehört nur dir.",
+      "blocks": [
+        {
+          "kind": "instruction",
+          "text": "Trage über 3-4 Tage ein, was du am Bildschirm gemacht hast und wie du dich davor und danach gefühlt hast."
+        },
+        {
+          "kind": "table",
+          "text": "Mein Tagebuch",
+          "lines": 6,
+          "items": [
+            "Tag / Uhrzeit",
+            "Was gemacht?",
+            "Wie lange?",
+            "Gefühl davor (1-5)",
+            "Gefühl danach (1-5)"
+          ]
+        },
+        {
+          "kind": "question",
+          "text": "Wobei ging es mir danach BESSER?",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "Wobei ging es mir danach SCHLECHTER?",
+          "lines": 2
+        },
+        {
+          "kind": "scale",
+          "text": "Insgesamt tut mir meine Mediennutzung gerade ...",
+          "items": [
+            "eher nicht gut",
+            "mittel",
+            "eher gut"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "Meine kleine Veränderung"
+        },
+        {
+          "kind": "lines",
+          "lines": 2
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
   }
 ]
