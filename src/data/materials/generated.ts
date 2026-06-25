@@ -7970,5 +7970,1251 @@ export const generated: Material[] = [
     ],
     "language": "de",
     "source": "generated"
+  },
+  {
+    "id": "spigel-lauschteren-nosoen-wat-ech-heieren",
+    "title": "Spigel-Lauschteren: nosoen wat ech héieren",
+    "ageLevels": [
+      "C4",
+      "ES"
+    ],
+    "type": [
+      "ganz Stonn"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Plenum"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Paare"
+      }
+    ],
+    "themes": [
+      "kommunikation",
+      "fremdwahrnehmung",
+      "beziehungsaufbau"
+    ],
+    "tags": [
+      "aktives Zuhören",
+      "Paraphrasieren",
+      "Spiegeln",
+      "Empathie",
+      "Gespräch",
+      "Verständnis"
+    ],
+    "shortDescription": "„Spiegeln\" heißt: in eigenen Worten wiedergeben, was der andere gesagt hat - und so zeigen, dass man wirklich zugehört hat. Die Jugendlichen üben diese Technik des aktiven Zuhörens und erleben, wie sie Missverständnisse abbaut und Gespräche vertieft.",
+    "ablauf": [
+      {
+        "title": "Einstieg",
+        "text": "Führen Sie das Spiegeln vor: Ein Kind erzählt etwas, Sie fassen zusammen „Habe ich richtig verstanden, dass …?\". Erarbeiten Sie: Spiegeln zeigt echtes Zuhören und gibt dem anderen die Chance zu korrigieren."
+      },
+      {
+        "title": "Üben (Paare)",
+        "text": "In Paaren erzählt A etwas Wichtiges (Hobby, Ärger), B spiegelt in eigenen Worten, bevor B antwortet. A bestätigt oder korrigiert. Dann Rollenwechsel. Achten Sie darauf, dass gespiegelt und nicht bewertet wird."
+      },
+      {
+        "title": "Abschluss",
+        "text": "Reflexion: Wie war es, sich verstanden zu fühlen? Übertragen Sie: Besonders im Streit hilft Spiegeln, bevor man kontert."
+      }
+    ],
+    "duration": "ca. 45 Min.",
+    "materialsNeeded": "Optional Themenkarten",
+    "remark": "Antworten freiwillig; keine persönlichen Inhalte erzwingen. Gut kombinierbar mit Ich-Botschaften und der 4-Schritte-Streitschlichtung.",
+    "etepStufen": [
+      3,
+      4,
+      5
+    ],
+    "eldibGoals": [
+      "K-12",
+      "K-17",
+      "K-21",
+      "SOZ-25",
+      "V-18"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "smiley-kalenner-meng-woch-a-gefiller",
+    "title": "Smiley-Kalenner: meng Woch a Gefiller",
+    "ageLevels": [
+      "C1",
+      "C2"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Individuel",
+        "note": "eigener Wochenkalender"
+      },
+      {
+        "mode": "Klass",
+        "note": "Einführung"
+      }
+    ],
+    "themes": [
+      "emotionen",
+      "selbstwahrnehmung",
+      "achtsamkeit"
+    ],
+    "tags": [
+      "Gefühle",
+      "Kalender",
+      "Selbstbeobachtung",
+      "Smileys",
+      "Woche",
+      "Wahrnehmung"
+    ],
+    "shortDescription": "Die Kinder halten eine Woche lang täglich mit einem Smiley fest, wie sie sich gefühlt haben. So lernen sie spielerisch, ihre Gefühle wahrzunehmen, zu benennen und zu bemerken, dass Stimmungen wechseln - eine Grundlage für Selbstwahrnehmung.",
+    "ablauf": [
+      {
+        "title": "Einstieg",
+        "text": "Stellen Sie einige Smiley-Gesichter vor (froh, traurig, wütend, müde, aufgeregt) und benennen Sie die Gefühle. Klären Sie: Jedes Gefühl ist okay, und es darf sich von Tag zu Tag ändern."
+      },
+      {
+        "title": "Durchführung",
+        "text": "Jedes Kind bekommt den Wochenkalender. An jedem Tag malt/klebt es das passende Smiley und (wer mag) ein Stichwort, warum. Erinnern Sie täglich kurz daran."
+      },
+      {
+        "title": "Abschluss",
+        "text": "Nach der Woche kurzer Blick: Welche Gefühle kamen vor? War jeder Tag gleich? Betonen Sie: Gefühle kommen und gehen - das ist normal."
+      }
+    ],
+    "duration": "Einführung 20 Min.; danach täglich 2 Min.; Rückblick 15 Min.",
+    "materialsNeeded": "Wochenkalender-Arbeitsblatt; Smiley-Aufkleber oder Stifte",
+    "remark": "Freiwilligkeit beim Teilen. Achten Sie auf Kinder mit durchgehend traurigen Smileys und suchen Sie behutsam das Gespräch.",
+    "etepStufen": [
+      1,
+      2
+    ],
+    "eldibGoals": [
+      "V-11",
+      "K-15",
+      "K-16",
+      "SOZ-16"
+    ],
+    "worksheet": {
+      "title": "Mäi Smiley-Kalenner",
+      "intro": "Wie geht es dir heute? Male jeden Tag dein Smiley.",
+      "blocks": [
+        {
+          "kind": "instruction",
+          "text": "Male für jeden Tag das passende Gesicht und ein kleines Bild dazu."
+        },
+        {
+          "kind": "table",
+          "text": "Meine Woche",
+          "lines": 7,
+          "items": [
+            "Tag",
+            "Mein Smiley",
+            "Warum?"
+          ]
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "decken-flip-zesummen-emdreinen",
+    "title": "Decken-Flip: zesummen ëmdréinen",
+    "ageLevels": [
+      "C3",
+      "C4"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Grupp",
+        "note": "Gruppen von 6-10 auf einer Decke"
+      }
+    ],
+    "themes": [
+      "kooperation",
+      "kommunikation",
+      "bewegung"
+    ],
+    "tags": [
+      "Teamwork",
+      "Problemlösen",
+      "Kooperation",
+      "Bewegung",
+      "Absprache",
+      "Challenge"
+    ],
+    "shortDescription": "Die ganze Gruppe steht auf einer Decke und muss sie gemeinsam umdrehen, ohne den Boden daneben zu betreten und ohne herunterzusteigen. Das gelingt nur mit Absprache, Geduld und Rücksicht - eine intensive Kooperationsübung.",
+    "ablauf": [
+      {
+        "title": "Einstieg",
+        "text": "Die Gruppe stellt sich auf eine ausgebreitete Decke. Aufgabe: die Decke komplett umdrehen, sodass alle am Ende auf der anderen Seite stehen - niemand darf den Boden neben der Decke berühren."
+      },
+      {
+        "title": "Lösen",
+        "text": "Die Gruppe plant und probiert. Geben Sie bei Bedarf kleine Impulse (zusammenrücken, Schritt für Schritt). Achten Sie auf Sicherheit und Rücksicht. Mehrere Versuche sind normal."
+      },
+      {
+        "title": "Abschluss",
+        "text": "Reflexion: Was hat geklappt? Wie wurde abgesprochen? Wer hatte gute Ideen? Übertragung auf Teamarbeit."
+      }
+    ],
+    "duration": "ca. 25 Min.",
+    "materialsNeeded": "Eine Decke/Plane pro Gruppe (Größe an Gruppe anpassen)",
+    "remark": "Auf Sicherheit achten (nicht drängeln, rutschfester Boden). Gruppengröße zur Deckengröße passend wählen. Den Prozess würdigen, auch wenn es nicht perfekt klappt.",
+    "etepStufen": [
+      3,
+      4
+    ],
+    "eldibGoals": [
+      "SOZ-18",
+      "SOZ-27",
+      "K-11",
+      "V-12",
+      "KOG-14"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "klangschuel-lauschteren",
+    "title": "Klangschuel-Lauschteren",
+    "ageLevels": [
+      "C2",
+      "C3"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "ruhige Atmosphäre"
+      }
+    ],
+    "themes": [
+      "achtsamkeit",
+      "stressbewaeltigung",
+      "selbstwahrnehmung"
+    ],
+    "tags": [
+      "Klangschale",
+      "Zuhören",
+      "Ruhe",
+      "Achtsamkeit",
+      "Konzentration",
+      "Entspannung"
+    ],
+    "shortDescription": "Eine einfache Achtsamkeitsübung mit einer Klangschale (oder einem Glöckchen): Die Kinder hören dem Ton nach, bis er ganz verklungen ist, und heben dann leise die Hand. Das schult Konzentration und Ruhe und eignet sich als beruhigendes Ritual.",
+    "ablauf": [
+      {
+        "title": "Einstieg",
+        "text": "Erklären Sie: „Wir hören gleich einem Ton ganz genau nach - so lange, bis wir ihn gar nicht mehr hören. Dann hebst du leise die Hand.\" Schaffen Sie Ruhe."
+      },
+      {
+        "title": "Üben",
+        "text": "Schlagen Sie die Klangschale an. Alle lauschen still dem Ausklingen und heben am Ende leise die Hand. Wiederholen Sie 2-3 Mal. Variante: Kinder zählen die Geräusche im Raum danach."
+      },
+      {
+        "title": "Abschluss",
+        "text": "Kurz nachspüren: Wie ruhig fühlst du dich jetzt? Etablieren Sie die Übung als Ritual (z. B. nach der Pause)."
+      }
+    ],
+    "duration": "ca. 10-15 Min.",
+    "materialsNeeded": "Klangschale oder Glöckchen mit langem Nachklang",
+    "remark": "Kurz halten; Freiwilligkeit. Ideal als wiederkehrendes Ruhe-Signal zu Stundenbeginn.",
+    "etepStufen": [
+      2,
+      3
+    ],
+    "eldibGoals": [
+      "V-11",
+      "V-21",
+      "KOG-2",
+      "SOZ-16"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "roudelicht-grengliicht-meng-ampel",
+    "title": "Roudelicht – Gréngliicht: meng Ampel",
+    "ageLevels": [
+      "C1",
+      "C2"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Bewegungsspiel, viel Platz"
+      }
+    ],
+    "themes": [
+      "impulskontrolle",
+      "selbstwahrnehmung",
+      "spiel-spass"
+    ],
+    "tags": [
+      "Impulskontrolle",
+      "Stopp",
+      "Bewegung",
+      "Selbststeuerung",
+      "Ampel",
+      "Spiel"
+    ],
+    "shortDescription": "Beim Ampelspiel laufen die Kinder bei „Grün\" und stoppen sofort bei „Rot\". Spielerisch üben sie, einen Impuls zu bremsen und auf ein Signal zu reagieren - eine Grundlage für Selbststeuerung. Die „innere Ampel\" hilft auch im Alltag: erst stoppen, dann handeln.",
+    "ablauf": [
+      {
+        "title": "Einstieg",
+        "text": "Erklären Sie die Signale: Grün = losgehen, Rot = sofort einfrieren, Gelb = langsam/leise. Üben Sie die Signale einmal gemeinsam."
+      },
+      {
+        "title": "Spielen",
+        "text": "Geben Sie die Signale (Wort, Karte oder Trommel) in wechselndem Tempo. Wer bei Rot noch wackelt, macht eine lustige Extra-Bewegung und spielt weiter. Steigern Sie das Tempo."
+      },
+      {
+        "title": "Abschluss",
+        "text": "Übertragen Sie: Auch im Kopf haben wir eine Ampel - bei Wut/Aufregung erst auf Rot (Stopp, atmen), dann überlegen. Vereinbaren Sie die „innere Ampel\" als Bild."
+      }
+    ],
+    "duration": "ca. 20-30 Min.",
+    "materialsNeeded": "Viel Platz; optional Ampelkarten oder eine Trommel",
+    "remark": "Auf Sicherheit/Abstand achten; niemanden ausscheiden lassen (Spaß vor Wettbewerb). Gut kombinierbar mit Atem-/Stopp-Übungen.",
+    "etepStufen": [
+      1,
+      2
+    ],
+    "eldibGoals": [
+      "V-10",
+      "V-12",
+      "V-20",
+      "SOZ-14"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "traum-collage-maei-vision-board",
+    "title": "Traum-Collage: mäi Vision-Board",
+    "ageLevels": [
+      "C4",
+      "ES"
+    ],
+    "type": [
+      "Projet"
+    ],
+    "participants": [
+      {
+        "mode": "Individuel",
+        "note": "eigene Collage"
+      },
+      {
+        "mode": "Klass",
+        "note": "freiwilliger Austausch"
+      }
+    ],
+    "themes": [
+      "motivation",
+      "identitaet",
+      "ressourcen"
+    ],
+    "tags": [
+      "Vision-Board",
+      "Ziele",
+      "Träume",
+      "Collage",
+      "Zukunft",
+      "Motivation"
+    ],
+    "shortDescription": "Die Jugendlichen gestalten ein „Vision-Board\" - eine Collage aus Bildern und Worten zu ihren Wünschen, Zielen und Werten. Das macht eigene Träume sichtbar, stärkt Motivation und Identität und hilft, erste Schritte in die gewünschte Richtung zu erkennen.",
+    "ablauf": [
+      {
+        "title": "Einstieg",
+        "text": "Sprechen Sie über Wünsche und Ziele in verschiedenen Bereichen (Schule, Hobbys, Beziehungen, Werte). Stellen Sie das Vision-Board vor: Bilder und Worte, die zeigen, wohin ich möchte."
+      },
+      {
+        "title": "Gestalten",
+        "text": "Jede/r sucht/zeichnet Bilder und Worte und gestaltet die eigene Collage. Betonen Sie: Es gibt kein richtig/falsch; nur geteilt wird, was man möchte. Optional: zu einem Bild einen ersten kleinen Schritt notieren."
+      },
+      {
+        "title": "Abschluss",
+        "text": "Freiwilliger Austausch über ein Element. Betonen Sie: Sichtbare Ziele motivieren - und große Träume erreicht man über kleine Schritte."
+      }
+    ],
+    "duration": "Projekt: 1-2 Einheiten à 45 Min.",
+    "materialsNeeded": "Plakat/Karton; Zeitschriften, Schere, Kleber; Stifte; optional Drucker für Bilder",
+    "remark": "Sensibel mit unterschiedlichen Lebenslagen umgehen; keine Wünsche bewerten. Bei Perspektivlosigkeit ermutigend begleiten.",
+    "etepStufen": [
+      4,
+      5
+    ],
+    "eldibGoals": [
+      "KOG-15",
+      "KOG-31",
+      "V-22",
+      "V-24",
+      "SOZ-19"
+    ],
+    "worksheet": {
+      "title": "Mäi Vision-Board – Begleetblat",
+      "intro": "Plane dein Board und deinen ersten Schritt.",
+      "blocks": [
+        {
+          "kind": "question",
+          "text": "Drei Wünsche/Ziele, die auf mein Board kommen:",
+          "lines": 3
+        },
+        {
+          "kind": "question",
+          "text": "Mein erster kleiner Schritt zu einem davon:",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "Was/wer hilft mir dabei?",
+          "lines": 2
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "frendschafts-armband-een-zeechen",
+    "title": "Frëndschafts-Armband: een Zeechen",
+    "ageLevels": [
+      "C2",
+      "C3"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Grupp",
+        "note": "Paare/Kleingruppen"
+      },
+      {
+        "mode": "Klass",
+        "note": "Einstieg"
+      }
+    ],
+    "themes": [
+      "beziehungsaufbau",
+      "kooperation",
+      "kreativitaet"
+    ],
+    "tags": [
+      "Freundschaft",
+      "Basteln",
+      "Wertschätzung",
+      "Gemeinschaft",
+      "Geschenk",
+      "Verbindung"
+    ],
+    "shortDescription": "Die Kinder knüpfen ein einfaches Freundschaftsarmband und verschenken es - als Zeichen von Wertschätzung und Verbundenheit. Beim gemeinsamen Basteln und Schenken üben sie Rücksicht, Geben und das Ausdrücken von Freundschaft.",
+    "ablauf": [
+      {
+        "title": "Einstieg",
+        "text": "Sprechen Sie kurz: Was macht eine gute Freundschaft aus? Ein kleines Geschenk kann zeigen: „Ich denke an dich.\" Stellen Sie das Armband vor."
+      },
+      {
+        "title": "Basteln",
+        "text": "Zeigen Sie eine einfache Knüpf-/Fädeltechnik. Jedes Kind gestaltet ein Armband für eine andere Person (z. B. per Los, damit niemand übergangen wird). Helfen Sie sich gegenseitig."
+      },
+      {
+        "title": "Schenken",
+        "text": "Die Kinder überreichen ihr Armband mit einem netten Wort. Kurze Runde: Wie fühlt sich Schenken und Beschenktwerden an?"
+      }
+    ],
+    "duration": "ca. 40 Min.",
+    "materialsNeeded": "Wolle/Bänder oder Perlen und Schnur; Schere",
+    "remark": "Über ein Lossystem sicherstellen, dass JEDES Kind ein Armband bekommt. Auf Feinmotorik-Unterschiede Rücksicht nehmen und Hilfe anbieten.",
+    "etepStufen": [
+      2,
+      3
+    ],
+    "eldibGoals": [
+      "SOZ-15",
+      "SOZ-26",
+      "K-17",
+      "KOG-18",
+      "V-13"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "klassevertrag-geint-mobbing",
+    "title": "Klassevertrag géint Mobbing",
+    "ageLevels": [
+      "C3",
+      "C4"
+    ],
+    "type": [
+      "ganz Stonn"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "gemeinsame Erarbeitung"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Kleingruppen"
+      }
+    ],
+    "themes": [
+      "mobbing",
+      "gerechtigkeit",
+      "kooperation"
+    ],
+    "tags": [
+      "Klassenvertrag",
+      "Regeln",
+      "Mobbing",
+      "Zusammenhalt",
+      "Verantwortung",
+      "Vereinbarung"
+    ],
+    "shortDescription": "Die Klasse erarbeitet gemeinsam einen verbindlichen Vertrag für ein faires Miteinander ohne Mobbing. Weil die Kinder die Regeln selbst formulieren und unterschreiben, fühlen sie sich verantwortlich - ein wirksamer Baustein der Mobbingprävention.",
+    "ablauf": [
+      {
+        "title": "Einstieg",
+        "text": "Sammeln Sie wertfrei: Wie wollen wir in unserer Klasse behandelt werden? Wie nicht? Halten Sie Wünsche fest (ohne reale Vorfälle/Namen)."
+      },
+      {
+        "title": "Regeln formulieren",
+        "text": "In Kleingruppen formulieren die Kinder positive, klare Regeln (z. B. „Wir lachen niemanden aus\", „Wir holen Hilfe, wenn jemand fertiggemacht wird\"). Auch: Was tun wir, wenn eine Regel gebrochen wird? Die Klasse wählt die wichtigsten aus."
+      },
+      {
+        "title": "Abschluss",
+        "text": "Die Regeln kommen auf ein Plakat, das alle unterschreiben. Vereinbaren Sie, den Vertrag regelmäßig im Klassenrat zu prüfen. Betonen Sie: Hilfe holen ist Verantwortung, kein Petzen."
+      }
+    ],
+    "duration": "ca. 50 Min.",
+    "materialsNeeded": "Plakat, Marker; Arbeitsblatt für Gruppenregeln",
+    "remark": "Mit fiktiven Beispielen arbeiten; aktuelles Mobbing separat und geschützt (ggf. Schulsozialarbeit) bearbeiten. Den Vertrag positiv formulieren (was wir TUN), nicht nur Verbote.",
+    "etepStufen": [
+      3,
+      4
+    ],
+    "eldibGoals": [
+      "SOZ-23",
+      "SOZ-27",
+      "SOZ-35",
+      "K-21",
+      "V-31"
+    ],
+    "worksheet": {
+      "title": "Eise Klassevertrag – Gruppenarbeit",
+      "intro": "Welche Regeln machen unsere Klasse fair und sicher?",
+      "blocks": [
+        {
+          "kind": "question",
+          "text": "So wollen wir miteinander umgehen:",
+          "lines": 3
+        },
+        {
+          "kind": "question",
+          "text": "Das tun wir, wenn jemand ausgegrenzt/geärgert wird:",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "Unsere wichtigste Regel:",
+          "lines": 1
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "wolleke-kucken-fantasie-fraei-loossen",
+    "title": "Wolleke-Kucken: Fantasie fräi loossen",
+    "ageLevels": [
+      "C1",
+      "C2"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "draußen oder mit Bildern"
+      }
+    ],
+    "themes": [
+      "kreativitaet",
+      "achtsamkeit",
+      "selbstwahrnehmung"
+    ],
+    "tags": [
+      "Fantasie",
+      "Wolken",
+      "Kreativität",
+      "Ruhe",
+      "Vorstellungskraft",
+      "Natur"
+    ],
+    "shortDescription": "Die Kinder betrachten Wolken (oder Wolkenbilder) und entdecken darin Formen, Tiere, Gesichter. Diese ruhige, fantasievolle Übung fördert Vorstellungskraft, Achtsamkeit und entspanntes Wahrnehmen - und zeigt, dass jeder etwas anderes sieht.",
+    "ablauf": [
+      {
+        "title": "Einstieg",
+        "text": "Gehen Sie nach draußen (oder zeigen Sie Wolkenbilder). „Legt euch/setzt euch bequem hin und schaut ganz ruhig zu den Wolken.\""
+      },
+      {
+        "title": "Entdecken",
+        "text": "Die Kinder beobachten still und entdecken Formen. Nach einer Weile erzählen einzelne, was sie sehen. Betonen Sie: Jeder sieht etwas anderes - das ist das Schöne. Optional anschließend das Gesehene malen."
+      },
+      {
+        "title": "Abschluss",
+        "text": "Kurze Runde: Wie war das Ruhigsein und Schauen? Würdigen Sie die verschiedenen Fantasien."
+      }
+    ],
+    "duration": "ca. 25-30 Min.",
+    "materialsNeeded": "Draußen: Decken; drinnen: Wolkenbilder; optional Papier/Stifte",
+    "remark": "Wetterabhängig - Alternative mit Bildern bereithalten. Auf Freiwilligkeit beim Erzählen achten. Schöne Verbindung von Ruhe und Kreativität.",
+    "etepStufen": [
+      1,
+      2
+    ],
+    "eldibGoals": [
+      "KOG-2",
+      "KOG-8",
+      "V-11",
+      "K-17"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "mir-stemmen-of-kleng-demokratie",
+    "title": "Mir stëmmen of: kleng Demokratie",
+    "ageLevels": [
+      "C3",
+      "C4"
+    ],
+    "type": [
+      "ganz Stonn"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Plenum + Abstimmung"
+      }
+    ],
+    "themes": [
+      "gerechtigkeit",
+      "kommunikation",
+      "kooperation"
+    ],
+    "tags": [
+      "Demokratie",
+      "Abstimmen",
+      "Mitbestimmung",
+      "Mehrheit",
+      "Argumente",
+      "Fairness"
+    ],
+    "shortDescription": "Die Kinder erleben, wie man gemeinsam eine faire Entscheidung trifft: Vorschläge sammeln, Argumente hören, abstimmen, das Ergebnis akzeptieren - auch wenn man selbst anders gestimmt hat. Eine praktische Einführung in demokratische Mitbestimmung.",
+    "ablauf": [
+      {
+        "title": "Einstieg",
+        "text": "Stellen Sie eine echte Klassen-Entscheidung zur Wahl (z. B. ein Spiel für den Wandertag, die Klassenraum-Deko). Erklären Sie: Wir entscheiden heute gemeinsam und fair."
+      },
+      {
+        "title": "Argumente & Abstimmung",
+        "text": "Sammeln Sie Vorschläge. Zu den Favoriten dürfen Kinder kurz Argumente nennen (dafür/dagegen). Dann wird abgestimmt (Handzeichen/geheim). Zählen Sie gemeinsam aus."
+      },
+      {
+        "title": "Abschluss",
+        "text": "Besprechen Sie: Wie fühlt sich Gewinnen/Verlieren der Abstimmung an? Erarbeiten Sie: In einer Gemeinschaft akzeptieren wir die Mehrheit - und achten darauf, dass auch Minderheiten gehört werden."
+      }
+    ],
+    "duration": "ca. 45 Min.",
+    "materialsNeeded": "Tafel/Flipchart; Material für die Abstimmung (Zettel/Klebepunkte)",
+    "remark": "Eine echte, umsetzbare Entscheidung wählen, damit es ernst ist. Thematisieren Sie Fairness gegenüber Verlierern der Abstimmung. Gut als Vorbereitung für einen Klassenrat.",
+    "etepStufen": [
+      3,
+      4
+    ],
+    "eldibGoals": [
+      "SOZ-21",
+      "SOZ-27",
+      "SOZ-34",
+      "K-20",
+      "KOG-58"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "werbung-erkennen-wat-wellen-se",
+    "title": "Werbung erkennen: wat wëllen se?",
+    "ageLevels": [
+      "C4",
+      "ES"
+    ],
+    "type": [
+      "ganz Stonn"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Plenum"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Kleingruppen"
+      }
+    ],
+    "themes": [
+      "medien",
+      "kommunikation",
+      "gerechtigkeit"
+    ],
+    "tags": [
+      "Werbung",
+      "Medienkompetenz",
+      "Manipulation",
+      "kritisches Denken",
+      "Konsum",
+      "Influencer"
+    ],
+    "shortDescription": "Werbung ist überall - auch versteckt in Videos und Posts. Die Jugendlichen lernen, Werbung und ihre Tricks zu erkennen (Versprechen, Emotionen, Influencer) und kritisch zu hinterfragen: Was will man mir verkaufen, und brauche ich das wirklich?",
+    "ablauf": [
+      {
+        "title": "Einstieg",
+        "text": "Sammeln Sie, wo überall Werbung begegnet (TV, Apps, Influencer, Spiele). Erarbeiten Sie das Ziel von Werbung: etwas verkaufen - oft über Gefühle und Versprechen."
+      },
+      {
+        "title": "Tricks entlarven",
+        "text": "In Kleingruppen analysieren die Jugendlichen Werbebeispiele: Welcher Trick wird benutzt (schön, cool, Angst, „alle haben es\", Rabatt-Druck, versteckte Werbung)? Sammeln Sie die Tricks."
+      },
+      {
+        "title": "Abschluss",
+        "text": "Erarbeiten Sie kritische Fragen vor dem Kaufen: Brauche ich das? Wer verdient daran? Ist das echt oder Werbung? Jede/r notiert eine Erkenntnis."
+      }
+    ],
+    "duration": "ca. 50 Min.",
+    "materialsNeeded": "Werbebeispiele (altersgerecht); Arbeitsblatt; Tafel/Flipchart",
+    "remark": "Neutrale, altersgerechte Beispiele wählen; keine Marken bloßstellen/bewerben. An die Mediennutzung der Gruppe anknüpfen. Versteckte Werbung/Influencer einbeziehen.",
+    "etepStufen": [
+      4,
+      5
+    ],
+    "eldibGoals": [
+      "KOG-44",
+      "KOG-58",
+      "K-21",
+      "V-23",
+      "SOZ-33"
+    ],
+    "worksheet": {
+      "title": "Werbe-Detektiv",
+      "intro": "Durchschaue die Tricks der Werbung.",
+      "blocks": [
+        {
+          "kind": "checklist",
+          "text": "Diese Tricks habe ich erkannt:",
+          "items": [
+            "Schöne Bilder/cooles Leben",
+            "Versprechen (\"macht dich besser\")",
+            "Alle haben es / Gruppendruck",
+            "Rabatt-/Zeitdruck",
+            "Versteckte Werbung / Influencer"
+          ]
+        },
+        {
+          "kind": "question",
+          "text": "Meine kritische Frage vor dem Kaufen:",
+          "lines": 2
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "mut-urkund-maei-tapfere-moment",
+    "title": "Mut-Urkund: mäi tapfere Moment",
+    "ageLevels": [
+      "C2",
+      "C3"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Individuel",
+        "note": "eigene Urkunde"
+      },
+      {
+        "mode": "Klass",
+        "note": "Würdigung"
+      }
+    ],
+    "themes": [
+      "resilienz",
+      "selbstwertgefuehl",
+      "emotionen"
+    ],
+    "tags": [
+      "Mut",
+      "Urkunde",
+      "Stolz",
+      "Selbstvertrauen",
+      "Erfolg",
+      "Würdigung"
+    ],
+    "shortDescription": "Jedes Kind erinnert sich an einen Moment, in dem es mutig war - etwas Neues gewagt, Nein gesagt, jemandem geholfen - und gestaltet sich dafür eine „Mut-Urkunde\". Das macht eigene Stärke sichtbar und stärkt Selbstvertrauen und Resilienz.",
+    "ablauf": [
+      {
+        "title": "Einstieg",
+        "text": "Sprechen Sie: Mut heißt nicht, keine Angst zu haben, sondern etwas trotzdem zu tun. Sammeln Sie Beispiele für mutige Momente im Alltag (vorlesen, Nein sagen, sich entschuldigen, helfen)."
+      },
+      {
+        "title": "Gestalten",
+        "text": "Jedes Kind denkt an einen eigenen mutigen Moment und gestaltet seine Mut-Urkunde (Name, der mutige Moment, ein Bild). Begleiten Sie behutsam Kinder, denen nichts einfällt, mit Beispielen."
+      },
+      {
+        "title": "Abschluss",
+        "text": "Wer mag, stellt seine Urkunde vor; die Klasse applaudiert. Betonen Sie: In jedem steckt Mut - und man darf stolz darauf sein."
+      }
+    ],
+    "duration": "ca. 35-40 Min.",
+    "materialsNeeded": "Urkunden-Vorlage; Stifte; optional Sticker/Verzierung",
+    "remark": "Sicherstellen, dass jedes Kind einen Moment findet - aktiv mit Beispielen unterstützen. Nur wertschätzende Würdigung. Für Kinder mit geringem Selbstwert besonders wertvoll.",
+    "etepStufen": [
+      2,
+      3
+    ],
+    "eldibGoals": [
+      "V-13",
+      "V-16",
+      "SOZ-7",
+      "K-18",
+      "KOG-5"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "buddy-system-ee-pate-fir-all-kand",
+    "title": "Buddy-System: ee Pate fir all Kand",
+    "ageLevels": [
+      "C2",
+      "C3"
+    ],
+    "type": [
+      "ganz Stonn"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Paarbildung und Einführung"
+      }
+    ],
+    "themes": [
+      "beziehungsaufbau",
+      "kooperation",
+      "mobbing"
+    ],
+    "tags": [
+      "Buddy",
+      "Patenschaft",
+      "Hilfe",
+      "Zusammenhalt",
+      "Inklusion",
+      "Verantwortung"
+    ],
+    "shortDescription": "Jedes Kind bekommt einen „Buddy\" - einen Paten, auf den es achtet und der auf einen achtet. Die Kinder lernen, füreinander Verantwortung zu übernehmen, sich zu helfen und niemanden allein zu lassen. Ein einfaches System, das Gemeinschaft stärkt und Ausgrenzung vorbeugt.",
+    "ablauf": [
+      {
+        "title": "Einstieg",
+        "text": "Erklären Sie die Idee: Ein Buddy ist jemand, der für dich da ist - fragt, wie es dir geht, hilft, dich nicht allein lässt. Sammeln Sie, was ein guter Buddy tut."
+      },
+      {
+        "title": "Buddys & Aufgaben",
+        "text": "Bilden Sie Buddy-Paare (bewusst gemischt, z. B. per Los). Die Paare lernen sich kurz kennen und vereinbaren kleine Buddy-Aufgaben (sich begrüßen, in der Pause schauen, bei Problemen helfen oder Hilfe holen)."
+      },
+      {
+        "title": "Abschluss",
+        "text": "Vereinbaren Sie eine Buddy-Routine (z. B. Montags-Check-in) und einen Wechsel nach einigen Wochen, damit alle sich kennenlernen. Betonen Sie: Aufeinander achten macht die Klasse stark."
+      }
+    ],
+    "duration": "ca. 45 Min.; danach als Routine",
+    "materialsNeeded": "Optional Buddy-Kärtchen mit Namen; Liste der Paare",
+    "remark": "Paare sorgfältig zusammenstellen und begleiten; bei Konflikten Paare wechseln. Sicherstellen, dass niemand ohne Buddy bleibt. Buddy-Aufgaben klein und freiwillig halten.",
+    "etepStufen": [
+      2,
+      3
+    ],
+    "eldibGoals": [
+      "SOZ-15",
+      "SOZ-18",
+      "SOZ-26",
+      "K-14",
+      "V-12"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "material-meeschter-verantwortung-am-klassesall",
+    "title": "Material-Meeschter: Verantwortung am Klassesall",
+    "ageLevels": [
+      "C2",
+      "C3"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Ämter verteilen"
+      }
+    ],
+    "themes": [
+      "disziplin",
+      "kooperation",
+      "selbstwertgefuehl"
+    ],
+    "tags": [
+      "Verantwortung",
+      "Klassendienste",
+      "Ämter",
+      "Ordnung",
+      "Selbstständigkeit",
+      "Gemeinschaft"
+    ],
+    "shortDescription": "Über feste Klassenämter (Material, Tafel, Pflanzen, Ordnung ...) übernehmen die Kinder Verantwortung für ihren gemeinsamen Raum. Sie erleben, dass die Gemeinschaft funktioniert, wenn jeder seinen Teil zuverlässig beiträgt - das fördert Selbstdisziplin, Selbstwirksamkeit und Zusammenhalt.",
+    "ablauf": [
+      {
+        "title": "Einstieg",
+        "text": "Sammeln Sie: Was muss in unserem Klassenraum regelmäßig getan werden, damit alles gut läuft? Erstellen Sie eine Liste von Ämtern."
+      },
+      {
+        "title": "Ämter verteilen",
+        "text": "Besprechen Sie zu jedem Amt die Aufgabe. Verteilen Sie die Ämter fair (Wahl/Los) und halten Sie sie sichtbar fest (Ämter-Tafel). Klären Sie: Was heißt zuverlässig? Was, wenn ich mal nicht kann (Vertretung)?"
+      },
+      {
+        "title": "Abschluss",
+        "text": "Vereinbaren Sie einen regelmäßigen Wechsel und eine kurze Rückschau (Was klappt? Was nicht?). Würdigen Sie zuverlässiges Übernehmen von Verantwortung."
+      }
+    ],
+    "duration": "ca. 40 Min.; danach als Routine mit Wechsel",
+    "materialsNeeded": "Ämter-Tafel/Plakat mit Namen-Kärtchen",
+    "remark": "Ämter an die Möglichkeiten aller Kinder anpassen, damit jeder Erfolg erlebt. Wechsel und Vertretung einplanen. Zuverlässigkeit loben statt Fehler bestrafen.",
+    "etepStufen": [
+      2,
+      3
+    ],
+    "eldibGoals": [
+      "V-8",
+      "V-27",
+      "V-32",
+      "SOZ-27",
+      "KOG-25"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "suergesteng-ofginn-a-lass-loossen",
+    "title": "Suergesteng: ofginn a lass loossen",
+    "ageLevels": [
+      "C2",
+      "C3"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "ruhige Atmosphäre"
+      },
+      {
+        "mode": "Individuel",
+        "note": "eigener Stein"
+      }
+    ],
+    "themes": [
+      "stressbewaeltigung",
+      "emotionen",
+      "selbstwahrnehmung"
+    ],
+    "tags": [
+      "Sorgen",
+      "Loslassen",
+      "Stein",
+      "Entlastung",
+      "Achtsamkeit",
+      "Ritual"
+    ],
+    "shortDescription": "Jedes Kind nimmt einen „Sorgenstein\" in die Hand, denkt an eine Sorge und gibt sie - symbolisch - an den Stein ab. Über dieses einfache, greifbare Ritual lernen die Kinder, belastende Gedanken bewusst loszulassen, und erleben, dass man Sorgen nicht ständig mit sich tragen muss.",
+    "ablauf": [
+      {
+        "title": "Einstieg",
+        "text": "Sprechen Sie behutsam: Jeder hat manchmal Sorgen. Heute lernen wir, sie kurz abzugeben. Jedes Kind wählt einen glatten Stein."
+      },
+      {
+        "title": "Ritual",
+        "text": "Die Kinder halten den Stein, schließen (freiwillig) die Augen, denken an eine Sorge und „geben sie in den Stein\". Dann legen sie den Stein bewusst ab (in eine Schale/Korb) - die Sorge bleibt dort. Atmen Sie gemeinsam ruhig durch."
+      },
+      {
+        "title": "Abschluss",
+        "text": "Kurz nachspüren: Fühlt es sich etwas leichter an? Klären Sie: Bei großen Sorgen reden wir mit einem Erwachsenen. Die Steine können als Klassen-Ritual bleiben."
+      }
+    ],
+    "duration": "ca. 20-25 Min.",
+    "materialsNeeded": "Glatte Steine (pro Kind einer); eine Schale/Korb; optional ruhige Musik",
+    "remark": "Sensibel begleiten; ernste Sorgen (Gewalt, Angst) aufgreifen und Hilfe vermitteln. Freiwilligkeit beim Augenschließen. Klar machen: Das Ritual entlastet, ersetzt aber kein Gespräch bei großen Sorgen.",
+    "etepStufen": [
+      2,
+      3
+    ],
+    "eldibGoals": [
+      "V-11",
+      "V-21",
+      "K-16",
+      "SOZ-16"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "emoji-messverstaendnis-tein-am-chat",
+    "title": "Emoji-Mëssverständnis: Téin am Chat",
+    "ageLevels": [
+      "C4",
+      "ES"
+    ],
+    "type": [
+      "ganz Stonn"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Plenum"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Kleingruppen"
+      }
+    ],
+    "themes": [
+      "medien",
+      "kommunikation",
+      "emotionen"
+    ],
+    "tags": [
+      "Chat",
+      "Emojis",
+      "Missverständnis",
+      "Tonfall",
+      "digitale Kommunikation",
+      "Empathie"
+    ],
+    "shortDescription": "Im Chat fehlen Stimme, Mimik und Tonfall - dadurch entstehen leicht Missverständnisse. Die Jugendlichen erkennen, wie dieselbe Nachricht ganz unterschiedlich ankommen kann, und lernen, klarer und rücksichtsvoller digital zu kommunizieren.",
+    "ablauf": [
+      {
+        "title": "Einstieg",
+        "text": "Zeigen Sie eine kurze Nachricht (z. B. „Na super.\") und fragen: Wie ist das gemeint? Sammeln Sie verschiedene Deutungen. Erarbeiten Sie: Im Chat fehlen Tonfall und Mimik - das führt zu Missverständnissen."
+      },
+      {
+        "title": "Üben",
+        "text": "In Kleingruppen interpretieren die Jugendlichen mehrdeutige Nachrichten und überlegen, wie man es klarer/freundlicher schreiben könnte (mit Emojis, klaren Worten, Nachfragen). Sammeln Sie Tipps für faire Chat-Kommunikation."
+      },
+      {
+        "title": "Abschluss",
+        "text": "Erarbeiten Sie eine Mini-Regel: Im Zweifel freundlich deuten und nachfragen statt sofort zurückzuschießen. Jede/r notiert einen Vorsatz für den eigenen Chat-Umgang."
+      }
+    ],
+    "duration": "ca. 45 Min.",
+    "materialsNeeded": "Beispiel-Nachrichten (neutral); Tafel/Flipchart",
+    "remark": "Mit fiktiven Nachrichten arbeiten; keine echten Chats der Jugendlichen vorzeigen. Bei Hinweisen auf Cybermobbing geschützt weiterarbeiten. Gut anschließend an „Meng digital Grenzen\" und Cybermobbing.",
+    "etepStufen": [
+      4,
+      5
+    ],
+    "eldibGoals": [
+      "K-21",
+      "K-26",
+      "SOZ-25",
+      "KOG-58",
+      "V-23"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "maein-avatar-wann-ech-en-held-wier",
+    "title": "Mäin Avatar: wann ech en Held wier",
+    "ageLevels": [
+      "C3",
+      "C4"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Individuel",
+        "note": "eigener Helden-Avatar"
+      },
+      {
+        "mode": "Klass",
+        "note": "freiwilliger Austausch"
+      }
+    ],
+    "themes": [
+      "identitaet",
+      "selbstwertgefuehl",
+      "kreativitaet"
+    ],
+    "tags": [
+      "Avatar",
+      "Held",
+      "Stärken",
+      "Selbstbild",
+      "Fantasie",
+      "Superkräfte"
+    ],
+    "shortDescription": "Die Kinder erfinden einen Helden-Avatar von sich selbst - mit „Superkräften\", die ihren echten Stärken entsprechen (z. B. Geduld, Hilfsbereitschaft, Mut). So setzen sie sich kreativ und positiv mit ihren Stärken auseinander und stärken Selbstbild und Selbstwert.",
+    "ablauf": [
+      {
+        "title": "Einstieg",
+        "text": "Sprechen Sie: Echte Superkräfte sind oft Charakterstärken - geduldig, mutig, hilfsbereit, kreativ. Welche Stärke wäre deine Superkraft?"
+      },
+      {
+        "title": "Gestalten",
+        "text": "Jedes Kind gestaltet auf dem Arbeitsblatt seinen Helden-Avatar: Name, Aussehen, 2-3 Superkräfte (echte Stärken) und wofür es sie einsetzt. Begleiten Sie behutsam beim Finden der Stärken."
+      },
+      {
+        "title": "Abschluss",
+        "text": "Wer mag, stellt seinen Helden vor. Betonen Sie: Diese Superkräfte hast du wirklich - du kannst sie im Alltag einsetzen."
+      }
+    ],
+    "duration": "ca. 40-45 Min.",
+    "materialsNeeded": "Arbeitsblatt „Helden-Avatar\"; Bunt-/Filzstifte",
+    "remark": "Sicherstellen, dass die Superkräfte echten Stärken entsprechen (Tandem-Hilfe), besonders bei Kindern mit geringem Selbstwert. Nur wertschätzende Rückmeldung.",
+    "etepStufen": [
+      3,
+      4
+    ],
+    "eldibGoals": [
+      "KOG-15",
+      "K-18",
+      "K-19",
+      "SOZ-19",
+      "V-13"
+    ],
+    "worksheet": {
+      "title": "Mäin Helden-Avatar",
+      "intro": "Erfinde deinen Helden – mit Superkräften, die du wirklich hast.",
+      "blocks": [
+        {
+          "kind": "box",
+          "text": "So sieht mein Held/meine Heldin aus (zeichne):",
+          "lines": 7
+        },
+        {
+          "kind": "question",
+          "text": "Name meines Helden:",
+          "lines": 1
+        },
+        {
+          "kind": "question",
+          "text": "Meine 2-3 Superkräfte (echte Stärken):",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "Wofür setze ich sie ein?",
+          "lines": 2
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "klasserot-eis-versammlung",
+    "title": "Klasserot: eis Versammlung",
+    "ageLevels": [
+      "C3",
+      "C4"
+    ],
+    "type": [
+      "ganz Stonn"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Versammlung im Kreis"
+      }
+    ],
+    "themes": [
+      "etep-epu",
+      "gerechtigkeit",
+      "kommunikation"
+    ],
+    "tags": [
+      "Klassenrat",
+      "Mitbestimmung",
+      "Versammlung",
+      "Gesprächsregeln",
+      "Verantwortung",
+      "Lösungen"
+    ],
+    "shortDescription": "Der Klassenrat ist eine regelmäßige Versammlung, in der die Kinder gemeinsam über das Zusammenleben sprechen: Lob, Probleme, Wünsche, Vorhaben. Mit festen Rollen und Regeln lernen sie demokratische Mitbestimmung, Zuhören und gemeinsames Lösen - ein Kernritual der Entwicklungspädagogik.",
+    "ablauf": [
+      {
+        "title": "Aufbau",
+        "text": "Führen Sie die festen Elemente ein: Sitzkreis, Rollen (Leitung, Zeit, Protokoll), eine Themenliste (z. B. ein Briefkasten für Anliegen) und Gesprächsregeln (ausreden lassen, Redestein, respektvoll bleiben)."
+      },
+      {
+        "title": "Ablauf der Sitzung",
+        "text": "Typischer Ablauf: 1) Positives/Lob, 2) Anliegen/Probleme besprechen, 3) gemeinsam Lösungen suchen und beschließen, 4) Vorhaben/Termine. Halten Sie Beschlüsse im Protokoll fest."
+      },
+      {
+        "title": "Abschluss & Routine",
+        "text": "Vereinbaren Sie einen festen wöchentlichen Termin und überprüfen Sie alte Beschlüsse beim nächsten Mal. Betonen Sie: Hier entscheiden und gestalten wir gemeinsam - und übernehmen Verantwortung dafür."
+      }
+    ],
+    "duration": "ca. 45 Min.; danach wöchentliches Ritual",
+    "materialsNeeded": "Sitzkreis; Redestein; Anliegen-Briefkasten; Protokollheft; Rollen-Karten",
+    "remark": "Anfangs eng begleiten, dann Rollen schrittweise an die Kinder übergeben. Darauf achten, dass Beschlüsse auch umgesetzt und überprüft werden, sonst verliert der Klassenrat an Wert. Leise Kinder gezielt einbinden.",
+    "etepStufen": [
+      3,
+      4,
+      5
+    ],
+    "eldibGoals": [
+      "SOZ-27",
+      "SOZ-34",
+      "SOZ-39",
+      "K-20",
+      "V-31",
+      "KOG-58"
+    ],
+    "language": "de",
+    "source": "generated"
   }
 ]
