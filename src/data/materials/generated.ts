@@ -3736,5 +3736,415 @@ export const generated: Material[] = [
     ],
     "language": "de",
     "source": "generated"
+  },
+  {
+    "id": "den-dagesofschloss-wat-war-gutt-haut",
+    "title": "Den Dagesofschloss: wat war gutt haut?",
+    "ageLevels": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "tägliches Ritual im Abschlusskreis"
+      }
+    ],
+    "themes": [
+      "etep-epu",
+      "selbstwahrnehmung",
+      "emotionen"
+    ],
+    "tags": [
+      "Tagesabschluss",
+      "Reflexion",
+      "Dankbarkeit",
+      "Ritual",
+      "Wertschätzung",
+      "ETEP"
+    ],
+    "shortDescription": "Ein kurzes, wiederkehrendes Abschlussritual im Sinne der Entwicklungspädagogik: Zum Tagesende blickt die Klasse gemeinsam zurück - was war heute gut, was habe ich geschafft, wem möchte ich danken? Das Ritual schließt den Tag positiv, stärkt die Selbstwahrnehmung und das Gemeinschaftsgefühl und schickt die Kinder mit einem guten Gefühl nach Hause.",
+    "ablauf": [
+      {
+        "title": "Aufbau – Das Ritual einführen",
+        "text": "Vereinbaren Sie ein festes Signal und einen festen Platz (Abschlusskreis). Stellen Sie drei mögliche Rückblick-Fragen vor, von denen täglich eine gewählt wird: „Was war heute schön?\", „Was habe ich heute geschafft?\", „Wem möchte ich danke sagen?\"."
+      },
+      {
+        "title": "Tägliche Durchführung – Reihum oder freiwillig",
+        "text": "Reihum oder freiwillig nennt jedes Kind einen kurzen Gedanken zur Tagesfrage. Halten Sie es knapp (5-8 Min.). Ein „Pass\" ist erlaubt. Als Lehrperson runden Sie mit einer wertschätzenden Beobachtung des Tages ab."
+      },
+      {
+        "title": "Variation",
+        "text": "Variieren Sie über die Zeit: ein Daumen-Signal für den Tag, ein gutes Wort an den Sitznachbarn, oder ein „Schatz des Tages\" (etwas Gelerntes). So bleibt das Ritual lebendig und der Wortschatz wächst."
+      }
+    ],
+    "duration": "tägliches Ritual von 5-8 Min.; Einführung ca. 20 Min.",
+    "materialsNeeded": "Ein Abschluss-Signal; optional Karten mit den Rückblick-Fragen; ruhiger Sitzkreis",
+    "remark": "Verlässlichkeit ist entscheidend - möglichst täglich. Freiwilligkeit beim Sprechen. Achten Sie darauf, dass auch stille Kinder einbezogen werden (z. B. über Daumen-Signal). Schließt gut an das Morgenritual „Gefühlsbarometer\" an.",
+    "etepStufen": [
+      1,
+      2,
+      3
+    ],
+    "eldibGoals": [
+      "V-2",
+      "V-11",
+      "SOZ-5",
+      "SOZ-17",
+      "K-6",
+      "KOG-4"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "haenn-sinn-fir-ze-hellefen-net-fir-ze-schloen",
+    "title": "Hänn sinn fir ze hëllefen, net fir ze schloen",
+    "ageLevels": [
+      "C1",
+      "C2"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Sitzkreis und Spiel"
+      }
+    ],
+    "themes": [
+      "gewalt",
+      "impulskontrolle",
+      "beziehungsaufbau"
+    ],
+    "tags": [
+      "Gewaltprävention",
+      "Hände",
+      "Helfen",
+      "Wut",
+      "Rücksicht",
+      "Körper"
+    ],
+    "shortDescription": "Eine altersgerechte Einheit zur Gewaltprävention für jüngere Kinder: Was können unsere Hände Gutes tun - und was tun sie nicht? Spielerisch lernen die Kinder, dass Hände zum Helfen, Trösten und Bauen da sind, nicht zum Schlagen, und üben, bei Wut eine andere Lösung als Hauen zu finden.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Was können Hände Gutes?",
+        "text": "Sammeln Sie im Kreis: „Was können unsere Hände alles Gutes tun?\" (winken, helfen, streicheln, bauen, trösten, klatschen). Halten Sie viele Beispiele als Hand-Bilder fest. Erst danach kurz und klar: „Wozu sind Hände NICHT da? - Zum Wehtun.\""
+      },
+      {
+        "title": "Hauptteil – Was tun, wenn ich wütend bin?",
+        "text": "Besprechen Sie kindgerecht: Wut ist okay, Hauen nicht. Üben Sie Alternativen mit den Händen: Fäuste fest machen und wieder loslassen, „Stopp\"-Hand zeigen, Hilfe holen, in ein Kissen drücken. Spielen Sie ein, wie man statt zu hauen Worte oder die Stopp-Hand nutzt."
+      },
+      {
+        "title": "Abschluss – Unsere Hilfe-Hände",
+        "text": "Jedes Kind malt seine Hand und eine gute Tat hinein. Hängen Sie die „Hilfe-Hände\" als Plakat auf. Vereinbaren Sie: „Unsere Hände helfen.\""
+      }
+    ],
+    "duration": "ca. 35-45 Min.",
+    "materialsNeeded": "Papier und Stifte für die Hand-Bilder; optional ein Kissen; ein Plakat",
+    "remark": "Sehr behutsam und positiv gestalten - Fokus auf das gute Tun, nicht auf Drohungen. Achten Sie auf Kinder mit Gewalterfahrung und reagieren Sie sensibel auf Hinweise (ggf. mit Fachstellen). Bei aktuellen Hau-Konflikten konsequent, aber ruhig die geübten Alternativen einfordern.",
+    "etepStufen": [
+      1,
+      2
+    ],
+    "eldibGoals": [
+      "V-8",
+      "V-17",
+      "SOZ-13",
+      "SOZ-22",
+      "K-9",
+      "KOG-12"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "geschichten-erfinder-eis-gemeinsam-geschicht",
+    "title": "Geschichten-Erfinder: eis gemeinsam Geschicht",
+    "ageLevels": [
+      "C2",
+      "C3"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "gemeinsames Erzählen"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Kleingruppen-Geschichten"
+      }
+    ],
+    "themes": [
+      "kreativitaet",
+      "kommunikation",
+      "kooperation"
+    ],
+    "tags": [
+      "Geschichten",
+      "Fantasie",
+      "kreatives Erzählen",
+      "Zuhören",
+      "gemeinsam",
+      "Sprache"
+    ],
+    "shortDescription": "Gemeinsam erfindet die Klasse Geschichten - Satz für Satz, Idee für Idee. Die Kinder üben Fantasie, freies Erzählen und aufeinander Aufbauen: Jede Idee wird angenommen und weitergesponnen. So wachsen Kreativität, Sprachfreude und das Gefühl, dass alle Beiträge wertvoll sind.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Die Erzähl-Regel",
+        "text": "Stellen Sie die wichtigste Regel vor: „Jede Idee ist willkommen - wir bauen aufeinander auf (‚Ja, und ...') statt abzulehnen.\" Starten Sie mit einem gemeinsamen Anfang: „Es war einmal ein/e ...\" und einem überraschenden Gegenstand."
+      },
+      {
+        "title": "Hauptteil – Die Geschichte wächst",
+        "text": "Reihum fügt jedes Kind einen Satz oder eine Idee hinzu (Variante: mit Bild-/Wortkarten als Impuls). Achten Sie auf das Aufeinander-Aufbauen. In einer zweiten Runde erfinden Kleingruppen eigene kurze Geschichten und stellen sie vor."
+      },
+      {
+        "title": "Abschluss – Unsere Geschichte",
+        "text": "Würdigen Sie die gemeinsame Geschichte und einzelne kreative Wendungen. Reflexion: Wie war es, auf den Ideen anderer aufzubauen? Optional die Geschichte aufschreiben/illustrieren und als Klassenbuch sammeln."
+      }
+    ],
+    "duration": "ca. 40 Min.",
+    "materialsNeeded": "Optional Bild-/Wortkarten als Erzählimpulse; Papier zum Festhalten/Illustrieren",
+    "remark": "Achten Sie darauf, dass Ideen nicht ausgelacht werden - die „Ja, und\"-Regel schützt die Kreativität. Für C2 mit starken Bildimpulsen und kurzen Beiträgen arbeiten. Stille Kinder über Wortkarten oder Zeichnen einbinden.",
+    "etepStufen": [
+      2,
+      3
+    ],
+    "eldibGoals": [
+      "KOG-8",
+      "KOG-26",
+      "K-7",
+      "K-18",
+      "SOZ-15",
+      "V-13"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "bewegte-gefiller-tanz-dech-fraei",
+    "title": "Bewegte Gefiller: tanz dech fräi",
+    "ageLevels": [
+      "C1",
+      "C2"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Bewegung mit Musik, viel Platz"
+      }
+    ],
+    "themes": [
+      "bewegung",
+      "emotionen",
+      "kreativitaet"
+    ],
+    "tags": [
+      "Tanz",
+      "Bewegung",
+      "Gefühle ausdrücken",
+      "Musik",
+      "Körperausdruck",
+      "Freude"
+    ],
+    "shortDescription": "Zu verschiedener Musik drücken die Kinder Gefühle mit ihrem ganzen Körper aus: mal wild und fröhlich, mal langsam und ruhig. Sie erleben, wie Bewegung Gefühle hörbar und sichtbar macht und wie gut es tut, Anspannung herauszutanzen. Eine fröhliche Verbindung aus Bewegung, Emotion und Kreativität.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Gefühle haben eine Bewegung",
+        "text": "Fragen Sie: „Wie bewegt sich Freude? Wie Wut? Wie Müdigkeit?\" Probieren Sie ein paar Bewegungen gemeinsam aus. Machen Sie deutlich: Es gibt kein richtig oder falsch - jeder darf seinen eigenen Ausdruck finden."
+      },
+      {
+        "title": "Hauptteil – Tanz der Gefühle",
+        "text": "Spielen Sie nacheinander Musikstücke unterschiedlicher Stimmung. Die Kinder bewegen sich passend dazu (fröhlich hüpfen, langsam schweben, kraftvoll stampfen). Bei einem Stopp-Signal „einfrieren\" alle. Wechseln Sie zwischen aktivierenden und beruhigenden Stücken und enden Sie ruhig."
+      },
+      {
+        "title": "Abschluss – Ausklang",
+        "text": "Beenden Sie mit einer langsamen „Auslauf\"-Bewegung und ein paar tiefen Atemzügen. Kurze Runde: „Welches Gefühl hat sich am besten angefühlt zum Tanzen?\" Betonen Sie, dass Bewegung helfen kann, Gefühle herauszulassen."
+      }
+    ],
+    "duration": "ca. 25-35 Min.",
+    "materialsNeeded": "Musik unterschiedlicher Stimmung; Abspielgerät; viel freier Platz",
+    "remark": "Achten Sie auf genug Abstand und Sicherheit. Mitmachen ist freiwillig - manche Kinder beobachten lieber erst. Keine „Vortänzer\" vorführen, es geht um den eigenen Ausdruck. Mit einem ruhigen Stück enden, um gut in den Unterricht zurückzufinden.",
+    "etepStufen": [
+      1,
+      2
+    ],
+    "eldibGoals": [
+      "V-9",
+      "V-11",
+      "KOG-7",
+      "SOZ-6",
+      "K-10"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "maein-inneschten-kritiker-an-maein-coach",
+    "title": "Mäin inneschten Kritiker an mäin Coach",
+    "ageLevels": [
+      "C4",
+      "ES"
+    ],
+    "type": [
+      "ganz Stonn"
+    ],
+    "participants": [
+      {
+        "mode": "Individuel",
+        "note": "persönliche Reflexion"
+      },
+      {
+        "mode": "Klass",
+        "note": "Austausch über hilfreiche Sätze"
+      }
+    ],
+    "themes": [
+      "selbstwertgefuehl",
+      "selbstwahrnehmung",
+      "resilienz"
+    ],
+    "tags": [
+      "innerer Kritiker",
+      "Selbstgespräch",
+      "Selbstmitgefühl",
+      "Selbstwert",
+      "innerer Coach",
+      "Gedanken"
+    ],
+    "shortDescription": "Jugendliche entdecken ihre innere Stimme: Oft meldet sich ein „innerer Kritiker\", der hart urteilt. Sie lernen, ihn zu erkennen und ihm einen freundlichen „inneren Coach\" zur Seite zu stellen, der unterstützt statt abwertet. Über das Umformulieren harter Selbstgespräche stärken sie Selbstwert und Selbstmitgefühl.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Die zwei Stimmen",
+        "text": "Stellen Sie die beiden inneren Stimmen vor: den Kritiker („Das schaffst du nie, du bist zu dumm\") und den Coach („Das ist schwer, aber du kannst üben - was hilft dir?\"). Lassen Sie an einem Beispiel beide Stimmen sprechen. Machen Sie klar: Den Ton der inneren Stimme kann man verändern."
+      },
+      {
+        "title": "Hauptteil – Den Coach trainieren",
+        "text": "Jede/r notiert (für sich) typische Kritiker-Sätze und formuliert sie in Coach-Sätze um - so, wie man mit einem guten Freund sprechen würde. Sammeln Sie freiwillig hilfreiche Coach-Sätze im Plenum. Üben Sie die Leitfrage: „Würde ich das auch zu einer Freundin/einem Freund sagen?\""
+      },
+      {
+        "title": "Abschluss – Mein Coach-Satz",
+        "text": "Jede/r wählt einen persönlichen Coach-Satz für schwierige Momente. Betonen Sie: Selbstmitgefühl ist keine Schwäche, sondern macht stark und ausdauernd. Der innere Coach lässt sich mit Übung stärken."
+      }
+    ],
+    "duration": "ca. 50 Min.",
+    "materialsNeeded": "Arbeitsblatt oder Heft für die persönliche Arbeit; Tafel für gesammelte Coach-Sätze",
+    "remark": "Sehr persönliches Thema - Kritiker-Sätze bleiben privat, nur Coach-Sätze freiwillig teilen. Achten Sie auf Jugendliche mit stark abwertender Selbstsicht und bieten Sie Gespräche/Beratung an. Bei Hinweisen auf ernste seelische Belastung Fachstellen einbeziehen.",
+    "etepStufen": [
+      4,
+      5
+    ],
+    "eldibGoals": [
+      "V-7",
+      "V-16",
+      "V-24",
+      "KOG-19",
+      "KOG-29",
+      "SOZ-12",
+      "K-16"
+    ],
+    "worksheet": {
+      "title": "Kritiker → Coach",
+      "intro": "Wie sprichst du mit dir selbst? Übe den freundlichen Coach. Nur für dich.",
+      "blocks": [
+        {
+          "kind": "instruction",
+          "text": "Schreibe links, was dein Kritiker sagt - und rechts, wie dein Coach es freundlich sagen würde."
+        },
+        {
+          "kind": "table",
+          "text": "",
+          "lines": 5,
+          "items": [
+            "Mein Kritiker sagt ...",
+            "Mein Coach sagt ..."
+          ]
+        },
+        {
+          "kind": "question",
+          "text": "Mein persönlicher Coach-Satz für schwere Momente:",
+          "lines": 2
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "reck-un-reck-zesumme-molen",
+    "title": "Réck-un-Réck: zesumme molen",
+    "ageLevels": [
+      "C3",
+      "C4"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Grupp",
+        "note": "Paare, Rücken an Rücken"
+      },
+      {
+        "mode": "Klass",
+        "note": "Auswertung"
+      }
+    ],
+    "themes": [
+      "kommunikation",
+      "kooperation",
+      "selbstwahrnehmung"
+    ],
+    "tags": [
+      "genaue Anweisung",
+      "Zuhören",
+      "Missverständnisse",
+      "Kommunikation",
+      "Paararbeit",
+      "Feedback"
+    ],
+    "shortDescription": "Ein Paar sitzt Rücken an Rücken: Eines beschreibt ein einfaches Bild, das andere zeichnet es nur nach den Worten - ohne zu schauen. Die Kinder erleben hautnah, wie leicht Missverständnisse entstehen und wie wichtig genaues Erklären, Nachfragen und Zuhören sind. Eine wirkungsvolle Übung zur Kommunikationsqualität.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Verstehen wir uns wirklich?",
+        "text": "Kündigen Sie ein Experiment an: Wie gut können wir etwas nur mit Worten erklären? Erklären Sie den Ablauf und die Regeln (das zeichnende Kind darf nachfragen, aber nicht schauen)."
+      },
+      {
+        "title": "Hauptteil – Beschreiben und Zeichnen",
+        "text": "In Paaren Rücken an Rücken beschreibt ein Kind ein einfaches Bild (Formen), das andere zeichnet nur nach Anweisung. Danach Vergleich von Original und Zeichnung - meist mit Lachern. Rollenwechsel mit neuem Bild. Zweite Runde: Nachfragen ausdrücklich erlaubt - wird es besser?"
+      },
+      {
+        "title": "Abschluss – Was hilft beim Verstehen?",
+        "text": "Sammeln Sie: Was hat geholfen (genau beschreiben, Schritt für Schritt, nachfragen, Geduld)? Übertragen Sie auf den Alltag: Auch im Gespräch hilft genaues Erklären und Nachfragen, um Missverständnisse zu vermeiden."
+      }
+    ],
+    "duration": "ca. 40 Min.",
+    "materialsNeeded": "Vorbereitete einfache Bilder (geometrische Formen); Papier und Stifte; Sitzgelegenheiten Rücken an Rücken",
+    "remark": "Betonen Sie, dass „Fehler\" hier zum Lernen da sind - es geht nicht um die schönste Zeichnung. Achten Sie auf eine wohlwollende Auswertung ohne Schuldzuweisung. Schwierigkeit über die Komplexität der Bilder anpassen (C3 einfacher).",
+    "etepStufen": [
+      3,
+      4
+    ],
+    "eldibGoals": [
+      "K-11",
+      "K-20",
+      "SOZ-9",
+      "SOZ-18",
+      "KOG-14",
+      "V-12"
+    ],
+    "language": "de",
+    "source": "generated"
   }
 ]
