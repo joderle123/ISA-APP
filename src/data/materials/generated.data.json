@@ -7182,5 +7182,397 @@
     ],
     "language": "de",
     "source": "generated"
+  },
+  {
+    "id": "frendschaft-verleiftsinn-a-respekt",
+    "title": "Frëndschaft, Verléiftsinn a Respekt",
+    "ageLevels": [
+      "C4",
+      "ES"
+    ],
+    "type": [
+      "ganz Stonn"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "moderiertes Gespräch in geschützter Atmosphäre"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Austausch in Kleingruppen"
+      }
+    ],
+    "themes": [
+      "sexualitaet",
+      "beziehungsaufbau",
+      "emotionen"
+    ],
+    "tags": [
+      "Freundschaft",
+      "Verliebtsein",
+      "Respekt",
+      "Gefühle",
+      "Grenzen",
+      "Beziehungen"
+    ],
+    "shortDescription": "Eine altersgerechte Einheit über Gefühle in Beziehungen: Was unterscheidet Freundschaft von Verliebtsein, wie geht man respektvoll mit eigenen und fremden Gefühlen um, und warum gehören Respekt und Grenzen in jede Beziehung? Die Stunde ist nicht-explizit und stärkt Einfühlung, Selbstbestimmung und einen wertschätzenden Umgang miteinander.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Freundschaft oder verliebt?",
+        "text": "Sammeln Sie wertfrei Merkmale von Freundschaft und von Verliebtsein (was fühlt sich ähnlich an, was anders?). Normalisieren Sie: Solche Gefühle sind normal und entwickeln sich bei jedem unterschiedlich - es gibt kein richtiges Tempo."
+      },
+      {
+        "title": "Hauptteil – Gefühle und Respekt",
+        "text": "Erarbeiten Sie zwei Grundsätze: 1) Eigene Gefühle sind okay - und auch das Gefühl des anderen zählt. 2) Ein Nein wird respektiert; niemand schuldet jemandem Nähe oder eine Beziehung. In Kleingruppen besprechen die Jugendlichen anhand neutraler Situationen, wie respektvoller Umgang aussieht (z. B. wenn Gefühle nicht erwidert werden)."
+      },
+      {
+        "title": "Abschluss – Respekt in jeder Beziehung",
+        "text": "Fassen Sie zusammen: Ob Freundschaft oder Verliebtsein - Respekt, Ehrlichkeit und Grenzen gehören immer dazu. Nennen Sie ruhig Anlaufstellen für Fragen oder bei Unsicherheit/Druck. Geben Sie verlässliche Hilfsangebote mit."
+      }
+    ],
+    "duration": "ca. 50 Min.",
+    "materialsNeeded": "Tafel/Flipchart; neutrale Situationskarten; Liste altersgerechter, seriöser Beratungsangebote",
+    "remark": "Sensibles Thema: geschützte, wertschätzende Atmosphäre; nicht-explizit; Vielfalt von Gefühlen und Lebensrealitäten respektieren. Gesprächsregeln vereinbaren (Vertraulichkeit, kein Auslachen, persönliche Fragen freiwillig). Auf mögliche Offenbarungen (Druck, Übergriffe) geschützt reagieren und Fachstellen einbeziehen. An Lehrplan/Schulkonzept und Alter anpassen.",
+    "etepStufen": [
+      4,
+      5
+    ],
+    "eldibGoals": [
+      "SOZ-21",
+      "SOZ-29",
+      "SOZ-39",
+      "K-24",
+      "V-14",
+      "KOG-20"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "paus-spiller-geint-laanschtweil",
+    "title": "Paus-Spiller géint Laanschtweil",
+    "ageLevels": [
+      "C2",
+      "C3"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Einführung gemeinsam"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Spiele in Kleingruppen"
+      }
+    ],
+    "themes": [
+      "spiel-spass",
+      "kooperation",
+      "bewegung"
+    ],
+    "tags": [
+      "Pausenspiele",
+      "Bewegung",
+      "Gemeinschaft",
+      "Langeweile",
+      "Fairplay",
+      "Mitmachen"
+    ],
+    "shortDescription": "Die Kinder lernen eine Sammlung einfacher Spiele kennen, die sie ohne viel Material selbst in der Pause spielen können - allein oder in der Gruppe. Das beugt Langeweile und Konflikten vor, fördert Bewegung und Gemeinschaft und gibt den Kindern Ideen an die Hand, wie sie andere fair zum Mitspielen einladen.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Langeweile? Ideen her!",
+        "text": "Fragen Sie: „Was macht ihr, wenn in der Pause Langeweile aufkommt - oder Streit?\" Sammeln Sie kurz. Kündigen Sie an: Heute lernen wir Spiele, die man ohne viel Material überall spielen kann."
+      },
+      {
+        "title": "Hauptteil – Spiele ausprobieren",
+        "text": "Probieren Sie gemeinsam 3-4 einfache Spiele aus (z. B. Fangen-Varianten, Gummitwist, Klatschspiele, „Ochs am Berg\", Seilspringen). Üben Sie auch das faire Dazu-Einladen: „Willst du mitspielen?\" Sprechen Sie kurz Regeln und Fairplay an."
+      },
+      {
+        "title": "Abschluss – Unsere Pausen-Spielesammlung",
+        "text": "Halten Sie die Lieblingsspiele als kleine Spielekartei/Plakat fest, auf die die Klasse zurückgreifen kann. Vereinbaren Sie: Wir laden andere zum Mitspielen ein und niemand muss allein bleiben."
+      }
+    ],
+    "duration": "ca. 40 Min.",
+    "materialsNeeded": "Wenig Material (Seil, Gummiband, Kreide); Platz (Hof/Halle); optional Karten für die Spielesammlung",
+    "remark": "Sicherheit und Platz beachten. Achten Sie darauf, dass die Spiele inklusiv sind und niemand ausgeschlossen wird; betonen Sie das Dazu-Einladen. Spiele an die Möglichkeiten aller Kinder anpassen.",
+    "etepStufen": [
+      2,
+      3
+    ],
+    "eldibGoals": [
+      "SOZ-9",
+      "SOZ-18",
+      "K-11",
+      "V-9",
+      "KOG-7"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "gutt-schlofen-zur-rou-kommen",
+    "title": "Gutt schlofen: zur Rou kommen",
+    "ageLevels": [
+      "C3",
+      "C4"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Gespräch und Übung"
+      },
+      {
+        "mode": "Individuel",
+        "note": "eigene Einschlaf-Routine"
+      }
+    ],
+    "themes": [
+      "stressbewaeltigung",
+      "achtsamkeit",
+      "selbstwahrnehmung"
+    ],
+    "tags": [
+      "Schlaf",
+      "Einschlafen",
+      "Entspannung",
+      "Routine",
+      "Erholung",
+      "Ruhe"
+    ],
+    "shortDescription": "Guter Schlaf macht stark - doch viele Kinder kommen abends schwer zur Ruhe. Sie lernen, warum Schlaf so wichtig ist, welche Gewohnheiten beim Einschlafen helfen und welche stören, und üben eine kleine Abend-Entspannung. So bekommen sie Werkzeuge für erholsamere Nächte und mehr Energie am Tag.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Warum Schlaf wichtig ist",
+        "text": "Sprechen Sie kindgerecht: Im Schlaf erholt sich der Körper, das Gehirn sortiert den Tag, wir tanken Energie. Sammeln Sie, wie man sich nach gutem und nach schlechtem Schlaf fühlt."
+      },
+      {
+        "title": "Hauptteil – Helfer und Störer",
+        "text": "Erarbeiten Sie Einschlaf-Helfer (feste Zeit, ruhig werden, abdunkeln, Bildschirm rechtzeitig weg, etwas Ruhiges tun) und Störer (späte Bildschirme, Aufregung, Koffein). Üben Sie eine kurze Abend-Entspannung (z. B. langsame Bauchatmung oder gedankliche „Ruhe-Reise\"), die die Kinder zu Hause nutzen können."
+      },
+      {
+        "title": "Abschluss – Meine Einschlaf-Routine",
+        "text": "Jedes Kind überlegt eine kleine eigene Abend-Routine (1-2 Schritte), die es ausprobieren möchte. Betonen Sie: Eine ruhige Routine hilft dem Körper, leichter einzuschlafen."
+      }
+    ],
+    "duration": "ca. 40 Min.",
+    "materialsNeeded": "Tafel/Flipchart; optional ruhige Musik für die Entspannungsübung",
+    "remark": "Sensibel mit unterschiedlichen Schlaf- und Wohnsituationen umgehen (z. B. geteilte Zimmer, Lärm) und realistische, machbare Tipps entwickeln. Bei Hinweisen auf anhaltende Schlafprobleme oder Belastungen das Gespräch suchen und ggf. Beratung einbeziehen.",
+    "etepStufen": [
+      3,
+      4
+    ],
+    "eldibGoals": [
+      "V-11",
+      "V-21",
+      "KOG-5",
+      "SOZ-16",
+      "K-15"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "firwat-maachen-ech-dat-belounung-vu-bannen",
+    "title": "Firwat maachen ech dat? Belounung vu bannen",
+    "ageLevels": [
+      "C4",
+      "ES"
+    ],
+    "type": [
+      "ganz Stonn"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Plenum"
+      },
+      {
+        "mode": "Individuel",
+        "note": "persönliche Reflexion"
+      }
+    ],
+    "themes": [
+      "motivation",
+      "selbstwahrnehmung",
+      "ressourcen"
+    ],
+    "tags": [
+      "Motivation",
+      "innere Motivation",
+      "Sinn",
+      "Antrieb",
+      "Ziele",
+      "Selbstbestimmung"
+    ],
+    "shortDescription": "Warum strengen wir uns an - für Belohnung, aus Pflicht, oder weil es uns selbst wichtig ist? Die Jugendlichen unterscheiden äußere und innere Motivation und entdecken, dass das eigene „Warum\" stärker und ausdauernder trägt. Sie verbinden Aufgaben mit persönlichem Sinn und stärken so ihren Antrieb von innen.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Was treibt mich an?",
+        "text": "Sammeln Sie Gründe, warum man etwas tut (Note, Lob, Belohnung, Pflicht - aber auch: weil es Spaß macht, wichtig ist, zu meinen Zielen passt). Stellen Sie den Unterschied vor: äußere Motivation (von außen) und innere Motivation (mein eigenes Warum)."
+      },
+      {
+        "title": "Hauptteil – Mein Warum finden",
+        "text": "Die Jugendlichen wählen eine Aufgabe/ein Ziel und fragen sich: Warum lohnt sich das für MICH? Was bringt es mir oder anderen, die mir wichtig sind? Wie hängt es mit meinen Zielen/Werten zusammen? Sie formulieren ein persönliches „Warum\". Besprechen Sie, dass inneres Warum hilft, auch ohne ständige Belohnung dranzubleiben."
+      },
+      {
+        "title": "Abschluss – Mein Antrieb",
+        "text": "Freiwilliger Austausch zu einem „Warum\". Betonen Sie: Wenn ich meinen eigenen Sinn kenne, brauche ich weniger Druck von außen - mein Antrieb kommt von innen."
+      }
+    ],
+    "duration": "ca. 45 Min.",
+    "materialsNeeded": "Tafel/Flipchart; Arbeitsblatt oder Heft für das persönliche „Warum\"",
+    "remark": "Wertschätzend mit unterschiedlichen Motivationslagen umgehen; äußere Motivation nicht abwerten. Bei Antriebslosigkeit/Resignation einfühlsam begleiten und kleine, sinnstiftende Schritte suchen. Kein Leistungsdruck.",
+    "etepStufen": [
+      4,
+      5
+    ],
+    "eldibGoals": [
+      "V-22",
+      "V-24",
+      "KOG-27",
+      "KOG-54",
+      "SOZ-12",
+      "K-26"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "nee-soen-ouni-schlecht-gewessen",
+    "title": "Nee soen ouni schlecht Gewëssen",
+    "ageLevels": [
+      "C3",
+      "C4"
+    ],
+    "type": [
+      "ganz Stonn"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Plenum"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Übung in Paaren"
+      }
+    ],
+    "themes": [
+      "kommunikation",
+      "grenzen",
+      "selbstwertgefuehl"
+    ],
+    "tags": [
+      "Nein sagen",
+      "Grenzen",
+      "Selbstbehauptung",
+      "Gruppendruck",
+      "Respekt",
+      "Mut"
+    ],
+    "shortDescription": "Nein zu sagen fällt schwer - aus Angst, andere zu enttäuschen oder ausgeschlossen zu werden. Die Kinder lernen, freundlich, aber klar Nein zu sagen, ohne sich schuldig zu fühlen, und üben das besonders bei Gruppendruck. So stärken sie ihre Selbstbehauptung und schützen ihre eigenen Grenzen.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Warum Nein so schwer ist",
+        "text": "Sammeln Sie Situationen, in denen Nein-Sagen schwerfällt (Freund will abschreiben lassen, Gruppe drängt zu etwas, das man nicht will). Erarbeiten Sie: Nein sagen ist erlaubt und wichtig - man muss nicht alles mitmachen, um dazuzugehören."
+      },
+      {
+        "title": "Hauptteil – Klar und freundlich Nein",
+        "text": "Stellen Sie Bausteine vor: klar „Nein\" sagen, kurz begründen ohne lange Rechtfertigung, ggf. eine Alternative anbieten („Nein, das will ich nicht - aber wir können …\"), bei Druck ruhig wiederholen. In Paaren üben die Kinder Nein-Situationen mit aufrechter Haltung und fester Stimme."
+      },
+      {
+        "title": "Abschluss – Mein gutes Recht",
+        "text": "Betonen Sie: Ein freundliches, klares Nein ist kein Streit und kein Grund für schlechtes Gewissen - es schützt deine Grenzen. Jedes Kind nennt eine Situation, in der es künftig Nein sagen möchte."
+      }
+    ],
+    "duration": "ca. 50 Min.",
+    "materialsNeeded": "Karten mit Nein-Situationen (inkl. Gruppendruck); Tafel/Flipchart",
+    "remark": "Mit fiktiven Beispielen üben. Machen Sie deutlich, dass Nein-Sagen besonders bei Druck zu riskantem Verhalten wichtig ist, und dass man sich Hilfe holen darf. Achten Sie auf Kinder, die sich schwer abgrenzen können, und stärken Sie sie gezielt.",
+    "etepStufen": [
+      3,
+      4
+    ],
+    "eldibGoals": [
+      "V-19",
+      "SOZ-22",
+      "K-13",
+      "K-21",
+      "KOG-22"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "staeerkekaarten-maei-staeerke-deck",
+    "title": "Stäerkekaarten: mäi Stäerke-Deck",
+    "ageLevels": [
+      "C3",
+      "C4"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Individuel",
+        "note": "eigenes Stärken-Deck"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Stärken im Tandem ergänzen"
+      }
+    ],
+    "themes": [
+      "ressourcen",
+      "selbstwertgefuehl",
+      "selbstwahrnehmung"
+    ],
+    "tags": [
+      "Stärken",
+      "Charakterstärken",
+      "Selbstwert",
+      "Ressourcen",
+      "Karten",
+      "Selbstkenntnis"
+    ],
+    "shortDescription": "Die Kinder erstellen ihr persönliches „Stärken-Deck\": Karten mit ihren Charakterstärken (z. B. mutig, hilfsbereit, neugierig, geduldig), jeweils mit einem Beispiel. So lernen sie ihre eigenen Ressourcen kennen und benennen - und können bei Herausforderungen bewusst eine passende Stärke „ziehen\". Das stärkt Selbstwert und Selbstkenntnis.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Stärken sind mehr als Können",
+        "text": "Unterscheiden Sie Fähigkeiten (rechnen, malen) von Charakterstärken (mutig, freundlich, ausdauernd, ehrlich). Sammeln Sie viele Charakterstärken als Wortschatz und klären Sie: Jeder hat mehrere - manche kennt man, manche entdeckt man noch."
+      },
+      {
+        "title": "Hauptteil – Mein Stärken-Deck",
+        "text": "Jedes Kind wählt einige Stärken aus, die zu ihm passen, schreibt sie auf Karten und ergänzt je ein Beispiel („Mutig: Ich habe mich getraut, vorzulesen\"). Im Tandem ergänzen sich die Kinder gegenseitig eine Stärke, die der andere an ihnen sieht."
+      },
+      {
+        "title": "Abschluss – Eine Stärke ziehen",
+        "text": "Spielen Sie es durch: Bei einer schwierigen Situation „ziehe\" ich eine passende Stärke aus meinem Deck. Jedes Kind nennt eine Stärke und wann sie ihm hilft. Die Karten dürfen behalten und erweitert werden."
+      }
+    ],
+    "duration": "ca. 45 Min.",
+    "materialsNeeded": "Kärtchen (Kartengröße); Stifte; optional eine Liste von Charakterstärken als Wortschatz-Hilfe",
+    "remark": "Sorgen Sie dafür, dass jedes Kind echte Stärken findet - die Tandem-Ergänzung hilft, besonders bei geringem Selbstwert. Nur wertschätzende Rückmeldungen zulassen. Für C3 mit vorgegebenen Stärken-Wörtern und Symbolen arbeiten.",
+    "etepStufen": [
+      3,
+      4
+    ],
+    "eldibGoals": [
+      "V-13",
+      "SOZ-7",
+      "SOZ-15",
+      "KOG-17",
+      "K-18"
+    ],
+    "language": "de",
+    "source": "generated"
   }
 ]
