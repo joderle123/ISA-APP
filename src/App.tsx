@@ -107,7 +107,7 @@ export default function App() {
       <div className="mx-auto flex max-w-7xl gap-6 px-4 py-6 sm:px-6">
         {/* Sidebar */}
         <div className="hidden w-72 shrink-0 lg:block">
-          <div className="sticky top-20 max-h-[calc(100vh-6rem)] rounded-xl border border-slate-200 bg-white p-4">
+          <div className="sticky top-20 max-h-[calc(100vh-6rem)] overflow-y-auto rounded-xl border border-slate-200 bg-white p-4">
             <FilterPanel
               filter={filter}
               update={update}

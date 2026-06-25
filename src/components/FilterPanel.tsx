@@ -94,7 +94,7 @@ export function FilterPanel({ filter, update, reset, total, shown, allTags, allA
     : allTags
 
   return (
-    <aside className="flex h-full flex-col">
+    <aside className="flex flex-col">
       <div className="flex items-center justify-between pb-2">
         <div className="text-sm text-slate-500">
           <span className="font-semibold text-slate-700">{shown}</span> von {total}
@@ -110,7 +110,7 @@ export function FilterPanel({ filter, update, reset, total, shown, allTags, allA
         )}
       </div>
 
-      <div className="scroll-slim grow overflow-y-auto pr-1">
+      <div className="scroll-slim pr-1">
         <Section title="Arbeitsblatt">
           <Chip
             active={filter.hasWorksheet}
