@@ -1,6 +1,7 @@
 import { useState, type ReactNode } from 'react'
 import type { FilterState } from '../lib/filter'
 import { activeFilterCount } from '../lib/filter'
+import type { EldibDomain } from '../types/material'
 import {
   ageLevels,
   eldibDomains,
@@ -66,6 +67,7 @@ function Section({
 
 export function FilterPanel({ filter, update, reset, total, shown, allTags }: Props) {
   const [goalQuery, setGoalQuery] = useState('')
+  const [goalDomain, setGoalDomain] = useState<EldibDomain>('V')
   const [tagQuery, setTagQuery] = useState('')
 
   function toggle<K extends keyof FilterState>(key: K, value: unknown) {
@@ -78,11 +80,13 @@ export function FilterPanel({ filter, update, reset, total, shown, allTags }: Pr
   }
 
   const active = activeFilterCount(filter)
-  const filteredGoals = goalQuery
+  // Browsable: with a query → search all domains; otherwise → list the
+  // goals of the currently selected browse-domain (so the picker is never empty).
+  const goalsToShow = goalQuery
     ? eldibGoals.filter((g) =>
         `${g.label} ${g.id}`.toLowerCase().includes(goalQuery.toLowerCase()),
       )
-    : []
+    : eldibGoals.filter((g) => g.domain === goalDomain)
   const filteredTags = tagQuery
     ? allTags.filter((t) => t.toLowerCase().includes(tagQuery.toLowerCase()))
     : allTags
@@ -204,11 +208,32 @@ export function FilterPanel({ filter, update, reset, total, shown, allTags }: Pr
         </Section>
 
         <Section title="ELDiB-Ziel">
+          {/* Bereich antippen zum Durchblättern (oder unten suchen) */}
+          <div className="mb-2 flex flex-wrap gap-1.5">
+            {eldibDomains.map((d) => (
+              <button
+                key={d.id}
+                type="button"
+                title={d.label}
+                onClick={() => {
+                  setGoalDomain(d.id)
+                  setGoalQuery('')
+                }}
+                className={`rounded-full px-2.5 py-1 text-xs font-medium ring-1 transition ${
+                  !goalQuery && goalDomain === d.id
+                    ? 'bg-isa-blue-deep text-white ring-isa-blue-deep'
+                    : 'bg-white text-slate-600 ring-slate-200 hover:ring-slate-300'
+                }`}
+              >
+                {d.id}
+              </button>
+            ))}
+          </div>
           <input
             type="search"
             value={goalQuery}
             onChange={(e) => setGoalQuery(e.target.value)}
-            placeholder="Ziel suchen…"
+            placeholder="Ziel suchen (alle Bereiche)…"
             className="w-full rounded-lg border border-slate-200 px-2 py-1.5 text-sm outline-none focus:border-isa-blue-deep"
           />
           {filter.eldibGoals.length > 0 && (
@@ -225,25 +250,26 @@ export function FilterPanel({ filter, update, reset, total, shown, allTags }: Pr
               ))}
             </div>
           )}
-          {filteredGoals.length > 0 && (
-            <div className="mt-2 max-h-44 space-y-0.5 overflow-y-auto pr-1">
-              {filteredGoals.slice(0, 40).map((g) => (
-                <label
-                  key={g.id}
-                  className="flex cursor-pointer items-center gap-2 rounded px-1 py-0.5 text-xs text-slate-700 hover:bg-slate-50"
-                >
-                  <input
-                    type="checkbox"
-                    checked={filter.eldibGoals.includes(g.id)}
-                    onChange={() => toggle('eldibGoals', g.id)}
-                    className="accent-isa-blue-deep"
-                  />
-                  <span className="font-medium">{g.label}</span>
-                  <span className="text-slate-400">[{g.id}]</span>
-                </label>
-              ))}
-            </div>
-          )}
+          <div className="mt-2 max-h-52 space-y-0.5 overflow-y-auto pr-1">
+            {goalsToShow.map((g) => (
+              <label
+                key={g.id}
+                className="flex cursor-pointer items-center gap-2 rounded px-1 py-0.5 text-xs text-slate-700 hover:bg-slate-50"
+              >
+                <input
+                  type="checkbox"
+                  checked={filter.eldibGoals.includes(g.id)}
+                  onChange={() => toggle('eldibGoals', g.id)}
+                  className="accent-isa-blue-deep"
+                />
+                <span className="font-medium">{g.label}</span>
+                <span className="text-slate-400">[{g.id}]</span>
+              </label>
+            ))}
+            {goalsToShow.length === 0 && (
+              <p className="px-1 py-2 text-xs text-slate-400">Kein Ziel gefunden.</p>
+            )}
+          </div>
         </Section>
 
         <Section title="Tags">
