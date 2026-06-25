@@ -3367,5 +3367,369 @@
     },
     "language": "de",
     "source": "generated"
+  },
+  {
+    "id": "d-gefiller-famill-mei-wei-frou-a-rosen",
+    "title": "D'Gefiller-Famill: méi wéi frou a rosen",
+    "ageLevels": [
+      "C3",
+      "C4"
+    ],
+    "type": [
+      "ganz Stonn"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Plenum"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Kleingruppen"
+      }
+    ],
+    "themes": [
+      "emotionen",
+      "selbstwahrnehmung",
+      "kommunikation"
+    ],
+    "tags": [
+      "Gefühle",
+      "Emotionswortschatz",
+      "Nuancen",
+      "Gefühle benennen",
+      "Empathie",
+      "Sprache"
+    ],
+    "shortDescription": "Zwischen „froh\" und „wütend\" gibt es viele Zwischentöne. Die Kinder erweitern ihren Gefühlswortschatz und lernen, Emotionen genauer zu benennen - von zufrieden über enttäuscht bis nervös. Wer Gefühle genauer benennen kann, versteht sich selbst besser und kann anderen klarer sagen, wie es ihm geht.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Die Gefühls-Familien",
+        "text": "Stellen Sie vier „Gefühls-Familien\" vor (Freude, Trauer, Angst, Wut) und sammeln Sie gemeinsam ihre „Verwandten\" - feinere Wörter: bei Freude z. B. zufrieden, stolz, erleichtert; bei Wut z. B. genervt, gekränkt, wütend. Verdeutlichen Sie an der Stärke (von leicht bis stark)."
+      },
+      {
+        "title": "Hauptteil – Gefühle erkennen und zeigen",
+        "text": "In Kleingruppen ziehen die Kinder Gefühlswörter und stellen sie pantomimisch oder mit Beispielsätzen dar („Ich fühle mich ..., wenn ...\"). Die anderen erraten und ordnen das Gefühl seiner Familie und Stärke zu. So wird der Wortschatz aktiv geübt."
+      },
+      {
+        "title": "Abschluss – Mein Gefühl heute",
+        "text": "Jedes Kind benennt - so genau wie möglich - ein Gefühl, das es heute schon hatte. Halten Sie eine „Gefühls-Wörterwand\" fest, die im Alltag weiter wächst. Betonen Sie: Alle Gefühle dürfen sein, Worte helfen beim Verstehen."
+      }
+    ],
+    "duration": "ca. 50 Min.",
+    "materialsNeeded": "Gefühlskarten/-wörter; Material für eine Gefühls-Wörterwand; Stifte",
+    "remark": "Freiwilligkeit beim Teilen eigener Gefühle. Achten Sie auf Kinder, die starke Gefühle zeigen, und bieten Sie Gespräche an. Für C3 mit Bildern zu den Gefühlswörtern arbeiten. Gut kombinierbar mit dem Gefühlsbarometer-Ritual.",
+    "etepStufen": [
+      3,
+      4
+    ],
+    "eldibGoals": [
+      "V-11",
+      "V-21",
+      "K-13",
+      "K-22",
+      "SOZ-16",
+      "SOZ-25",
+      "KOG-23"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "60-sekonnen-stille",
+    "title": "60 Sekonnen Stille",
+    "ageLevels": [
+      "C4",
+      "ES"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "kurzes Ritual, jederzeit einsetzbar"
+      },
+      {
+        "mode": "Individuel",
+        "note": "jede/r für sich"
+      }
+    ],
+    "themes": [
+      "achtsamkeit",
+      "stressbewaeltigung",
+      "selbstwahrnehmung"
+    ],
+    "tags": [
+      "Mikro-Achtsamkeit",
+      "Pause",
+      "Fokus",
+      "Atem",
+      "Ruhe",
+      "Selbstregulation"
+    ],
+    "shortDescription": "Eine minimalistische Achtsamkeitsübung für ältere Jugendliche: nur 60 Sekunden bewusste Stille, um anzukommen, Stress zu senken und den Fokus zu schärfen. Gerade weil sie so kurz und unkompliziert ist, lässt sie sich leicht in den Alltag integrieren - vor Prüfungen, nach Pausen oder bei Unruhe.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Warum eine Minute reicht",
+        "text": "Erklären Sie sachlich (kein „Eso\"-Touch): Schon eine Minute bewusste Ruhe kann das Nervensystem beruhigen und die Konzentration verbessern. Stellen Sie klar: Augen schließen ist freiwillig, ein weicher Blick zum Tisch genügt."
+      },
+      {
+        "title": "Durchführung – Die 60 Sekunden",
+        "text": "Geben Sie ein klares Start- und Endsignal. Anleitung knapp: „Sitz bequem, spüre deinen Atem ein- und ausströmen. Wenn Gedanken kommen, ist das okay - kehre einfach sanft zum Atem zurück.\" Halten Sie genau 60 Sekunden Stille."
+      },
+      {
+        "title": "Abschluss – Kurz nachspüren",
+        "text": "Nach dem Endsignal eine knappe, optionale Rückmeldung: „Daumen hoch/zur Seite - wie ruhig fühlst du dich jetzt?\" Etablieren Sie die Übung als festes Mini-Ritual, das die Klasse selbst einfordern darf."
+      }
+    ],
+    "duration": "ca. 3-5 Min. (Übung 60 Sek.)",
+    "materialsNeeded": "Ein Start-/Endsignal (z. B. Klang); sonst nichts",
+    "remark": "Strikte Freiwilligkeit beim Augenschließen; bei Unruhe oder belastenden Erfahrungen offene Augen anbieten. Kurz und ohne Druck halten - lieber regelmäßig als lang. Nicht als Strafe oder Disziplinierung einsetzen, sonst verliert die Übung ihren Wert.",
+    "etepStufen": [
+      3,
+      4,
+      5
+    ],
+    "eldibGoals": [
+      "V-21",
+      "V-26",
+      "KOG-5",
+      "SOZ-16",
+      "K-15"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "maei-resilienz-rucksak",
+    "title": "Mäi Resilienz-Rucksak",
+    "ageLevels": [
+      "C4",
+      "ES"
+    ],
+    "type": [
+      "Projet"
+    ],
+    "participants": [
+      {
+        "mode": "Individuel",
+        "note": "persönliche Arbeit über mehrere Einheiten"
+      },
+      {
+        "mode": "Klass",
+        "note": "Austausch und Abschluss"
+      }
+    ],
+    "themes": [
+      "resilienz",
+      "ressourcen",
+      "selbstwertgefuehl"
+    ],
+    "tags": [
+      "Resilienz",
+      "Bewältigung",
+      "Stärken",
+      "Unterstützung",
+      "Krisen",
+      "innere Stärke"
+    ],
+    "shortDescription": "In diesem Projekt packen Jugendliche über mehrere Einheiten einen symbolischen „Resilienz-Rucksack\": alles, was ihnen in schwierigen Zeiten Halt gibt - Stärken, hilfreiche Gedanken, Menschen, Strategien und Erinnerungen an bereits Gemeistertes. Sie reflektieren, was sie stark macht, und entwickeln ein bewusstes Repertoire zur Bewältigung von Belastungen.",
+    "ablauf": [
+      {
+        "title": "Auftakt – Was ist Resilienz?",
+        "text": "Führen Sie das Bild ein: Resilienz ist wie ein Stehaufmännchen - nicht ohne Stürze, aber mit der Fähigkeit, wieder aufzustehen. Der Rucksack enthält, was dabei hilft. Stellen Sie die fünf „Fächer\" vor: meine Stärken, hilfreiche Gedanken, meine Menschen, meine Strategien, schon Gemeistertes."
+      },
+      {
+        "title": "Hauptteil – Den Rucksack füllen (mehrere Einheiten)",
+        "text": "Über mehrere kurze Einheiten füllt jede/r ein Fach: Stärken benennen; hilfreiche Sätze sammeln; Unterstützer-Netz zeichnen; persönliche Bewältigungsstrategien notieren; eine überstandene schwierige Situation als Beweis eigener Stärke festhalten. Arbeiten Sie mit dem Arbeitsblatt als Rucksack-Vorlage."
+      },
+      {
+        "title": "Abschluss – Mein Rucksack ist gepackt",
+        "text": "Jede/r blickt auf den gefüllten Rucksack und wählt das wichtigste Stück. Freiwilliger Austausch in der Gruppe. Betonen Sie: Diesen Rucksack trägt man immer bei sich - und kann ihn jederzeit erweitern."
+      }
+    ],
+    "duration": "Projekt über ca. 2-3 Wochen: mehrere Einheiten à 20-30 Min.; Abschluss ca. 45 Min.",
+    "materialsNeeded": "Arbeitsblatt „Resilienz-Rucksack\" (mit fünf Fächern); Stifte; optional Material zum kreativen Gestalten",
+    "remark": "Sehr persönliches Thema - alles freiwillig, nichts vorführen. Achten Sie besonders auf belastete Jugendliche; das Fach „schon Gemeistertes\" kann starke Erinnerungen wecken, halten Sie Gesprächs-/Beratungsangebote bereit. Würdigen Sie jede Form von Bewältigung.",
+    "etepStufen": [
+      4,
+      5
+    ],
+    "eldibGoals": [
+      "V-15",
+      "V-24",
+      "KOG-17",
+      "KOG-29",
+      "SOZ-12",
+      "SOZ-23",
+      "K-16"
+    ],
+    "worksheet": {
+      "title": "Mäi Resilienz-Rucksak",
+      "intro": "Packe ein, was dir in schweren Zeiten Halt gibt. Nur für dich.",
+      "blocks": [
+        {
+          "kind": "question",
+          "text": "Meine Stärken:",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "Hilfreiche Gedanken / Sätze:",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "Meine Menschen (wer ist für mich da?):",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "Meine Strategien, wenn es schwer wird:",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "Etwas Schwieriges, das ich schon gemeistert habe:",
+          "lines": 2
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "kooperatiouns-olympiad",
+    "title": "Kooperatiouns-Olympiad",
+    "ageLevels": [
+      "C3",
+      "C4"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Grupp",
+        "note": "feste Teams an Stationen"
+      },
+      {
+        "mode": "Klass",
+        "note": "gemeinsamer Start und Abschluss"
+      }
+    ],
+    "themes": [
+      "spiel-spass",
+      "kooperation",
+      "bewegung"
+    ],
+    "tags": [
+      "Teamspiele",
+      "Kooperation",
+      "Bewegung",
+      "Stationen",
+      "Zusammenhalt",
+      "gemeinsames Ziel"
+    ],
+    "shortDescription": "Eine fröhliche „Olympiade\", bei der nicht der Schnellste gewinnt, sondern das Team, das am besten zusammenarbeitet. An mehreren Bewegungs-Stationen lösen die Kinder Aufgaben, die nur gemeinsam zu schaffen sind. Spaß, Bewegung und Kooperation verschmelzen - und der Zusammenhalt der Klasse wächst.",
+    "ablauf": [
+      {
+        "title": "Start – Es zählt das Team",
+        "text": "Bilden Sie feste Teams und erklären Sie die Besonderheit: Punkte gibt es für gute Zusammenarbeit, nicht für Tempo. Stellen Sie die Stationen kurz vor und vereinbaren Sie Fairplay-Regeln."
+      },
+      {
+        "title": "Stationen – Nur gemeinsam",
+        "text": "Die Teams durchlaufen kooperative Stationen, z. B.: einen Ball nur mit Schnüren transportieren, gemeinsam über eine „Lava-Linie\" gelangen, einen Turm im Team bauen, eine Aufgabe blind mit Anweisungen des Teams lösen. Jede Station braucht Absprache und Rücksicht. Beobachten Sie die Zusammenarbeit."
+      },
+      {
+        "title": "Abschluss – Team-Ehrung",
+        "text": "Statt nur Sieger zu küren, würdigen Sie beobachtete Kooperation („bestes Zuhören\", „beste gegenseitige Hilfe\"). Reflexion: Was hat im Team geholfen? Übertragung auf den Alltag."
+      }
+    ],
+    "duration": "ca. 60 Min.",
+    "materialsNeeded": "Stationsmaterial (Bälle, Schnüre, Seile/Linien, Baumaterial, Augenbinden); Stationskarten; viel Platz (Halle/Hof)",
+    "remark": "Sicherheit beachten (Augenbinden nur mit Führung; rutschfeste Flächen). Teams bewusst gemischt zusammenstellen. Den Wettbewerbsgedanken klein halten und Kooperation in den Vordergrund stellen, damit auch weniger sportliche Kinder Erfolg erleben.",
+    "etepStufen": [
+      3,
+      4
+    ],
+    "eldibGoals": [
+      "SOZ-9",
+      "SOZ-18",
+      "SOZ-27",
+      "K-11",
+      "K-20",
+      "V-9",
+      "V-12"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "ich-botschaften-soen-wat-ech-mengen",
+    "title": "Ich-Botschaften: soen wat ech mengen",
+    "ageLevels": [
+      "C3",
+      "C4"
+    ],
+    "type": [
+      "ganz Stonn"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Plenum"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Übung in Paaren"
+      }
+    ],
+    "themes": [
+      "kommunikation",
+      "konfliktloesung",
+      "emotionen"
+    ],
+    "tags": [
+      "Ich-Botschaft",
+      "Kommunikation",
+      "Konflikt",
+      "Gefühle ausdrücken",
+      "Vorwürfe vermeiden",
+      "Wünsche"
+    ],
+    "shortDescription": "Die Kinder lernen den Unterschied zwischen verletzenden Du-Vorwürfen und klaren Ich-Botschaften. Mit der Formel „Ich fühle ... wenn ... ich wünsche mir ...\" üben sie, Ärger und Wünsche auszudrücken, ohne den anderen anzugreifen - eine Schlüsselkompetenz für faire Kommunikation und Konfliktlösung.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Du-Vorwurf vs. Ich-Botschaft",
+        "text": "Stellen Sie zwei Sätze gegenüber: „Immer nimmst du mir alles weg!\" und „Ich ärgere mich, wenn mein Stift weg ist - ich wünsche mir, dass du fragst.\" Lassen Sie die Wirkung vergleichen. Erarbeiten Sie die drei Teile der Ich-Botschaft: Gefühl - Auslöser - Wunsch."
+      },
+      {
+        "title": "Hauptteil – Ich-Botschaften bauen (Paare)",
+        "text": "Sammeln Sie Du-Vorwürfe aus dem Alltag und bauen Sie sie gemeinsam in Ich-Botschaften um. Dann üben die Kinder in Paaren an eigenen Beispielen mit der Satzvorlage. Achten Sie auf echte Gefühlswörter (nicht „Ich fühle, dass du gemein bist\")."
+      },
+      {
+        "title": "Abschluss – Meine Ich-Botschaft",
+        "text": "Jedes Kind formuliert eine Ich-Botschaft für eine Situation, die es gerade beschäftigt. Hängen Sie die Satzvorlage als Hilfe auf. Betonen Sie: Ich-Botschaften greifen nicht an - sie öffnen ein Gespräch."
+      }
+    ],
+    "duration": "ca. 50 Min.",
+    "materialsNeeded": "Tafel/Flipchart; Satzvorlage „Ich fühle ... wenn ... ich wünsche mir ...\"; Karten mit Du-Vorwürfen",
+    "remark": "Üben Sie an harmlosen Beispielen; reale Konflikte nur freiwillig und behutsam. Machen Sie deutlich, dass Ich-Botschaften kein Trick zum Durchsetzen sind, sondern ehrliches Mitteilen. Für C3 stark mit der Satzvorlage führen. Gut kombinierbar mit der 4-Schritte-Streitschlichtung.",
+    "etepStufen": [
+      3,
+      4
+    ],
+    "eldibGoals": [
+      "K-12",
+      "K-21",
+      "SOZ-13",
+      "SOZ-24",
+      "V-18",
+      "KOG-22"
+    ],
+    "language": "de",
+    "source": "generated"
   }
 ]
