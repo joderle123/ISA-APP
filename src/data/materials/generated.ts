@@ -6747,5 +6747,445 @@ export const generated: Material[] = [
     ],
     "language": "de",
     "source": "generated"
+  },
+  {
+    "id": "meng-zukunft-wensch-a-ziler",
+    "title": "Meng Zukunft: Wënsch a Ziler",
+    "ageLevels": [
+      "C4",
+      "ES"
+    ],
+    "type": [
+      "ganz Stonn"
+    ],
+    "participants": [
+      {
+        "mode": "Individuel",
+        "note": "persönliche Zukunftsarbeit"
+      },
+      {
+        "mode": "Klass",
+        "note": "freiwilliger Austausch"
+      }
+    ],
+    "themes": [
+      "identitaet",
+      "motivation",
+      "ressourcen"
+    ],
+    "tags": [
+      "Zukunft",
+      "Ziele",
+      "Träume",
+      "Berufe",
+      "Wünsche",
+      "Selbstbild"
+    ],
+    "shortDescription": "Die Jugendlichen richten den Blick nach vorn: Was wünsche ich mir für meine Zukunft - im Leben, im Lernen, vielleicht im Beruf? Sie unterscheiden Träume von konkreten Zielen und überlegen erste Schritte und Stärken, die sie dorthin bringen. Das stärkt Identität, Hoffnung und Selbstwirksamkeit.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Ein Blick nach vorn",
+        "text": "Stoßen Sie offen an: „Wenn du an deine Zukunft denkst - was wünschst du dir?\" Klären Sie wertfrei, dass es viele Wege gibt und niemand schon alles wissen muss. Unterscheiden Sie Traum (groß, weit) und Ziel (konkret, machbar)."
+      },
+      {
+        "title": "Hauptteil – Wünsche, Ziele, Schritte",
+        "text": "Mit dem Arbeitsblatt halten die Jugendlichen fest: ein Wunsch/Traum, ein konkretes Ziel für das nächste Jahr, ein erster Schritt, und welche Stärken/Menschen ihnen helfen. Betonen Sie, dass Wege sich ändern dürfen - Planen heißt nicht Festnageln."
+      },
+      {
+        "title": "Abschluss – Mein erster Schritt",
+        "text": "Freiwilliger Austausch zu einem Ziel oder Schritt. Betonen Sie: Die Zukunft entsteht aus kleinen Schritten heute - und jede/r hat Stärken, auf die er bauen kann."
+      }
+    ],
+    "duration": "ca. 50 Min.",
+    "materialsNeeded": "Arbeitsblatt „Meine Zukunft\"; Stifte; optional Bild-/Berufekarten als Anregung",
+    "remark": "Sensibel mit sehr unterschiedlichen Lebenslagen und Möglichkeiten umgehen; keine Wünsche bewerten. Vermeiden Sie Druck und vergleichende Bewertung. Bei Perspektivlosigkeit ermutigend begleiten und Beratungsangebote (z. B. Berufsorientierung) aufzeigen.",
+    "etepStufen": [
+      4,
+      5
+    ],
+    "eldibGoals": [
+      "KOG-15",
+      "KOG-31",
+      "KOG-54",
+      "V-22",
+      "SOZ-19",
+      "K-26"
+    ],
+    "worksheet": {
+      "title": "Meng Zukunft",
+      "intro": "Träume groß, plane klein. Halte fest, wohin du willst.",
+      "blocks": [
+        {
+          "kind": "question",
+          "text": "Ein Traum/Wunsch für meine Zukunft:",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "Ein konkretes Ziel für das nächste Jahr:",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "Mein erster kleiner Schritt:",
+          "lines": 1
+        },
+        {
+          "kind": "question",
+          "text": "Stärken und Menschen, die mir helfen:",
+          "lines": 2
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "gemeinsam-e-bild-eis-klassemural",
+    "title": "Gemeinsam e Bild: eis Klassemural",
+    "ageLevels": [
+      "C1",
+      "C2"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "alle malen an einem großen Bild"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Bereiche in Kleingruppen"
+      }
+    ],
+    "themes": [
+      "kooperation",
+      "kreativitaet",
+      "beziehungsaufbau"
+    ],
+    "tags": [
+      "Gemeinschaftsbild",
+      "Mural",
+      "Zusammenarbeit",
+      "Kreativität",
+      "Wir-Gefühl",
+      "Malen"
+    ],
+    "shortDescription": "Die ganze Klasse gestaltet gemeinsam ein großes Bild zu einem Thema (z. B. „Unsere Traum-Insel\", „Unser Wir\"). Jedes Kind trägt seinen Teil bei, alle stimmen sich ab. Beim gemeinsamen Gestalten üben die Kinder Absprache und Rücksicht und sehen am Ende ein Werk, das nur zusammen entstehen konnte.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Unser gemeinsames Bild",
+        "text": "Stellen Sie das Thema und die große Fläche vor. Klären Sie Absprache-Regeln: jeder hat Platz, wir reden uns ab, wir übermalen nichts von anderen. Sammeln Sie kurz Ideen, was alles aufs Bild soll."
+      },
+      {
+        "title": "Hauptteil – Alle malen mit",
+        "text": "Teilen Sie die Fläche grob auf (Bereiche/Gruppen) oder lassen Sie alle gleichzeitig beitragen. Die Kinder malen ihren Teil und stimmen sich an den Rändern ab. Unterstützen Sie bei Absprachen und achten Sie darauf, dass jedes Kind Platz findet."
+      },
+      {
+        "title": "Abschluss – Unser Werk",
+        "text": "Betrachten Sie das fertige Mural gemeinsam: „Das haben wir zusammen geschaffen!\" Jedes Kind zeigt seinen Beitrag. Hängen Sie das Bild sichtbar auf. Betonen Sie das gemeinsame Ergebnis und die Zusammenarbeit."
+      }
+    ],
+    "duration": "ca. 45-60 Min.",
+    "materialsNeeded": "Große Papierbahn/Packpapier; Farben, Stifte, Pinsel; Platz am Boden oder an der Wand",
+    "remark": "Klare Regel: niemandes Teil übermalen. Achten Sie auf gerechte Platzverteilung und unterstützen Sie zurückhaltende Kinder. Auf Materialien/Kleidung (Kittel) achten. Das Ergebnis nicht bewerten - die Zusammenarbeit zählt.",
+    "etepStufen": [
+      1,
+      2
+    ],
+    "eldibGoals": [
+      "SOZ-9",
+      "SOZ-18",
+      "K-11",
+      "V-12",
+      "KOG-8"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "kleng-gesten-grouss-wierkung",
+    "title": "Kleng Gesten, grouss Wierkung",
+    "ageLevels": [
+      "C2",
+      "C3"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Plenum"
+      },
+      {
+        "mode": "Individuel",
+        "note": "eigene Freundlichkeits-Tat"
+      }
+    ],
+    "themes": [
+      "beziehungsaufbau",
+      "kooperation",
+      "selbstwahrnehmung"
+    ],
+    "tags": [
+      "Freundlichkeit",
+      "Hilfsbereitschaft",
+      "kleine Gesten",
+      "Wir-Gefühl",
+      "Rücksicht",
+      "Gemeinschaft"
+    ],
+    "shortDescription": "Oft sind es kleine Gesten, die den Tag besser machen: helfen, teilen, ein nettes Wort, jemanden dazuholen. Die Kinder entdecken, wie viel kleine Freundlichkeiten bewirken, sammeln Ideen und nehmen sich konkrete „Freundlichkeits-Taten\" vor. So wächst ein warmes, hilfsbereites Klassenklima.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Was hat dir mal gutgetan?",
+        "text": "Sammeln Sie kleine Gesten, die guttun (jemand teilt, hilft, lächelt, sagt etwas Nettes, holt dazu). Erarbeiten Sie: Solche kleinen Dinge kosten wenig und bewirken viel."
+      },
+      {
+        "title": "Hauptteil – Freundlichkeits-Ideen",
+        "text": "Erstellen Sie gemeinsam eine Ideensammlung konkreter freundlicher Taten für den Schulalltag. Jedes Kind wählt eine Tat aus, die es diese Woche tun möchte. Optional: ein „Freundlichkeits-Plakat\", auf dem gelungene Gesten gesammelt werden."
+      },
+      {
+        "title": "Abschluss – Meine Tat der Woche",
+        "text": "Jedes Kind nennt seine gewählte Freundlichkeits-Tat. Vereinbaren Sie einen kurzen Rückblick in einigen Tagen: Was habt ihr erlebt? Betonen Sie, dass freundlich sein ansteckend ist."
+      }
+    ],
+    "duration": "ca. 35 Min.; plus kurzer Rückblick",
+    "materialsNeeded": "Tafel/Flipchart; optional ein „Freundlichkeits-Plakat\"; Stifte",
+    "remark": "Freundlichkeit anregen, nicht erzwingen oder belohnen-abhängig machen - es geht um echte Gesten. Achten Sie darauf, dass alle Kinder auch Empfänger von Freundlichkeit sind. Vorbild der Lehrperson wirkt stark.",
+    "etepStufen": [
+      2,
+      3
+    ],
+    "eldibGoals": [
+      "SOZ-15",
+      "SOZ-26",
+      "K-17",
+      "V-13",
+      "KOG-5"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "achtsam-schmaachen-iessen-mat-alle-senner",
+    "title": "Achtsam schmaachen: Iessen mat alle Sënner",
+    "ageLevels": [
+      "C2",
+      "C3"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "ruhige Atmosphäre"
+      },
+      {
+        "mode": "Individuel",
+        "note": "jede/r schmeckt für sich"
+      }
+    ],
+    "themes": [
+      "achtsamkeit",
+      "selbstwahrnehmung",
+      "stressbewaeltigung"
+    ],
+    "tags": [
+      "Achtsamkeit",
+      "Sinne",
+      "Genießen",
+      "Wahrnehmung",
+      "Ruhe",
+      "Essen"
+    ],
+    "shortDescription": "Eine kleine Achtsamkeitsübung rund ums Schmecken: Die Kinder erkunden ein Stück Obst oder einen Keks ganz langsam mit allen Sinnen - sehen, riechen, fühlen, hören, schmecken. Sie üben, im Moment zu sein und bewusst wahrzunehmen, und entdecken, wie reich ein einziger Bissen sein kann.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Langsam statt schnell",
+        "text": "Sprechen Sie kurz: Oft essen wir nebenbei und schnell. Heute probieren wir das Gegenteil - ganz langsam und aufmerksam. Schaffen Sie Ruhe und teilen Sie ein kleines, unkompliziertes Lebensmittel aus (z. B. eine Rosine, ein Stück Apfel)."
+      },
+      {
+        "title": "Hauptteil – Mit allen Sinnen",
+        "text": "Führen Sie ruhig durch: zuerst anschauen (Farbe, Form), dann riechen, dann fühlen, vielleicht horchen (Geräusch beim Zerdrücken), dann ganz langsam in den Mund nehmen, schmecken, lange kauen, bewusst schlucken. Lassen Sie zwischen den Schritten Zeit und Stille."
+      },
+      {
+        "title": "Abschluss – Was habe ich entdeckt?",
+        "text": "Kurze Runde: „Was ist dir aufgefallen, was du sonst nicht bemerkst?\" Betonen Sie: Achtsam wahrnehmen kann man bei vielem üben - es bringt Ruhe und Genuss in den Alltag."
+      }
+    ],
+    "duration": "ca. 20-30 Min.",
+    "materialsNeeded": "Ein kleines, unkompliziertes Lebensmittel pro Kind (auf Allergien/Unverträglichkeiten und Hygiene achten); ruhiger Rahmen",
+    "remark": "WICHTIG: Allergien, Unverträglichkeiten und religiöse/familiäre Essensregeln vorab klären; eine neutrale Alternative bereithalten und Mitmachen freiwillig lassen. Hygiene beachten. Wer nicht essen mag, kann die Übung mit Riechen/Fühlen mitmachen.",
+    "etepStufen": [
+      2,
+      3
+    ],
+    "eldibGoals": [
+      "V-11",
+      "V-21",
+      "KOG-5",
+      "SOZ-16",
+      "K-15"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "maei-gefiller-journal",
+    "title": "Mäi Gefiller-Journal",
+    "ageLevels": [
+      "C4",
+      "ES"
+    ],
+    "type": [
+      "Projet"
+    ],
+    "participants": [
+      {
+        "mode": "Individuel",
+        "note": "persönliches Journal über mehrere Wochen"
+      },
+      {
+        "mode": "Klass",
+        "note": "Auftakt und Reflexion"
+      }
+    ],
+    "themes": [
+      "emotionen",
+      "selbstwahrnehmung",
+      "stressbewaeltigung"
+    ],
+    "tags": [
+      "Gefühlstagebuch",
+      "Selbstreflexion",
+      "Emotionen",
+      "Muster erkennen",
+      "Achtsamkeit",
+      "Schreiben"
+    ],
+    "shortDescription": "Über mehrere Wochen halten die Jugendlichen regelmäßig fest, wie es ihnen geht: welches Gefühl, welcher Auslöser, was geholfen hat. Das Journal schärft die Selbstwahrnehmung, hilft Muster zu erkennen (Was tut mir gut? Was belastet mich?) und macht den eigenen Umgang mit Gefühlen bewusster.",
+    "ablauf": [
+      {
+        "title": "Auftakt – Warum ein Gefühls-Journal?",
+        "text": "Erklären Sie: Gefühle aufzuschreiben schafft Abstand und Klarheit - man versteht sich selbst besser und erkennt, was guttut. Stellen Sie die einfache Struktur vor: Gefühl benennen, Auslöser, was geholfen hat. Betonen Sie: Das Journal ist privat."
+      },
+      {
+        "title": "Durchführung – Regelmäßige Einträge",
+        "text": "Über ca. 2-3 Wochen schreibt jede/r regelmäßig (z. B. jeden zweiten Tag) einen kurzen Eintrag mit dem Arbeitsblatt-Schema. Erinnern Sie unaufdringlich. Qualität vor Menge - ehrliche kurze Einträge genügen."
+      },
+      {
+        "title": "Reflexion – Was zeigen meine Einträge?",
+        "text": "Nach der Phase: stiller Rückblick. Leitfragen (für sich): Welche Gefühle kamen oft? Was hat zuverlässig geholfen? Freiwilliger Austausch über Erkenntnisse - ohne private Inhalte preiszugeben. Betonen Sie den Gewinn an Selbstkenntnis."
+      }
+    ],
+    "duration": "Projekt über ca. 2-3 Wochen: Auftakt ca. 30 Min., kurze Einträge, Reflexion ca. 40 Min.",
+    "materialsNeeded": "Heft oder Arbeitsblatt-Vorlage „Gefühls-Journal\"; Stifte",
+    "remark": "Strikte Privatsphäre - Einträge werden nicht eingesammelt oder vorgelesen, nur freiwillige Erkenntnisse geteilt. Achten Sie auf Hinweise auf anhaltende Belastung und bieten Sie vertrauliche Gespräche/Beratung an.",
+    "etepStufen": [
+      4,
+      5
+    ],
+    "eldibGoals": [
+      "V-16",
+      "V-21",
+      "KOG-19",
+      "KOG-27",
+      "SOZ-16",
+      "K-26"
+    ],
+    "worksheet": {
+      "title": "Mäi Gefiller-Journal",
+      "intro": "Schreibe regelmäßig kurz auf, wie es dir geht. Nur für dich.",
+      "blocks": [
+        {
+          "kind": "instruction",
+          "text": "Pro Eintrag: Datum, Gefühl, Auslöser, was geholfen hat."
+        },
+        {
+          "kind": "table",
+          "text": "Meine Einträge",
+          "lines": 6,
+          "items": [
+            "Datum",
+            "Gefühl",
+            "Auslöser",
+            "Was geholfen hat"
+          ]
+        },
+        {
+          "kind": "question",
+          "text": "Nach 2 Wochen: Welches Muster fällt mir auf?",
+          "lines": 2
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "bewegungs-geschicht-mir-ginn-op-rees",
+    "title": "Bewegungs-Geschicht: mir ginn op Rees",
+    "ageLevels": [
+      "C1",
+      "C2"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Bewegung zur Geschichte, viel Platz"
+      }
+    ],
+    "themes": [
+      "bewegung",
+      "spiel-spass",
+      "kreativitaet"
+    ],
+    "tags": [
+      "Bewegungsgeschichte",
+      "Fantasie",
+      "Bewegung",
+      "Koordination",
+      "Zuhören",
+      "Spiel"
+    ],
+    "shortDescription": "Eine erzählte Reise, bei der die Kinder jede Station mit Bewegung darstellen: durch den Dschungel schleichen, über Berge klettern, durch den Fluss schwimmen. Bewegung, Fantasie und Zuhören verbinden sich; die Kinder lassen Energie heraus und üben nebenbei Koordination und aufmerksames Folgen.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Wir packen die Reise",
+        "text": "Schaffen Sie Platz und stimmen Sie ein: „Wir machen zusammen eine Reise - und stellen alles mit dem Körper dar.\" Klären Sie ein Stopp-Signal (z. B. Glocke), bei dem alle einfrieren."
+      },
+      {
+        "title": "Hauptteil – Die Reise erzählen und bewegen",
+        "text": "Erzählen Sie eine kurze Reise mit Bewegungs-Stationen, die die Kinder mitmachen: durch hohes Gras schleichen, über Steine springen, einen Berg hochklettern, durch den Fluss schwimmen, vor Regen rennen, müde ausruhen. Wechseln Sie zwischen schnellen und langsamen Teilen; bauen Sie Stopp-Momente ein."
+      },
+      {
+        "title": "Abschluss – Wieder zu Hause, ausruhen",
+        "text": "Lassen Sie die Reise ruhig enden („Wir kommen müde, aber glücklich nach Hause\") mit Hinlegen und ein paar tiefen Atemzügen. Kurze Runde: „Welche Station hat dir am besten gefallen?\""
+      }
+    ],
+    "duration": "ca. 20-30 Min.",
+    "materialsNeeded": "Viel freier Platz; ein Stopp-Signal; optional ruhige Musik für den Schluss",
+    "remark": "Auf Sicherheit und Abstand achten; Bewegungen an die Gruppe anpassen und sitzende Varianten anbieten. Tempo bewusst steuern und ruhig enden, damit die Kinder gut zur Ruhe kommen. Mitmachen freiwillig.",
+    "etepStufen": [
+      1,
+      2
+    ],
+    "eldibGoals": [
+      "V-9",
+      "V-11",
+      "KOG-7",
+      "SOZ-6",
+      "K-10"
+    ],
+    "language": "de",
+    "source": "generated"
   }
 ]
