@@ -7579,5 +7579,396 @@ export const generated: Material[] = [
     ],
     "language": "de",
     "source": "generated"
+  },
+  {
+    "id": "fluesterpost-wei-wierder-sech-aenneren",
+    "title": "Flüsterpost: wéi Wierder sech änneren",
+    "ageLevels": [
+      "C1",
+      "C2"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Sitzkreis"
+      }
+    ],
+    "themes": [
+      "kommunikation",
+      "kooperation",
+      "spiel-spass"
+    ],
+    "tags": [
+      "Flüsterpost",
+      "Zuhören",
+      "Kommunikation",
+      "Missverständnis",
+      "Konzentration",
+      "Spiel"
+    ],
+    "shortDescription": "Beim Flüsterpost-Spiel wandert ein geflüsterter Satz durch die Reihe - und kommt am Ende oft ganz anders an. Spielerisch erleben die Kinder, wie leicht Botschaften sich verändern, und lernen, warum genaues Zuhören und deutliches Sprechen wichtig sind.",
+    "ablauf": [
+      {
+        "title": "Einstieg",
+        "text": "Die Kinder sitzen im Kreis. Erklären Sie die Regel: Ein Satz wird leise von Ohr zu Ohr weitergeflüstert - nur einmal, ohne Nachfragen. Das letzte Kind sagt laut, was angekommen ist."
+      },
+      {
+        "title": "Spielen",
+        "text": "Starten Sie mit einem kurzen, lustigen Satz. Vergleichen Sie Start- und Endsatz - meist mit Gelächter. Spielen Sie mehrere Runden, auch mit Kindern als Starter. Steigern Sie die Satzlänge."
+      },
+      {
+        "title": "Abschluss",
+        "text": "Sprechen Sie: Warum verändert sich der Satz? Übertragen Sie: Auch im Alltag entstehen so Missverständnisse - deutlich sprechen, gut zuhören und nachfragen hilft."
+      }
+    ],
+    "duration": "ca. 20 Min.",
+    "materialsNeeded": "Keine; Sitzkreis",
+    "remark": "Auf eine wertschätzende, nicht bloßstellende Stimmung achten - Fehler sind hier lustig und erwünscht. Für C1 sehr kurze Sätze.",
+    "etepStufen": [
+      1,
+      2
+    ],
+    "eldibGoals": [
+      "K-7",
+      "K-11",
+      "SOZ-15",
+      "V-10"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "gefiller-memory",
+    "title": "Gefiller-Memory",
+    "ageLevels": [
+      "C1",
+      "C2"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Grupp",
+        "note": "Kleingruppen von 3-4"
+      }
+    ],
+    "themes": [
+      "emotionen",
+      "selbstwahrnehmung",
+      "spiel-spass"
+    ],
+    "tags": [
+      "Gefühle",
+      "Memory",
+      "Emotionswortschatz",
+      "Mimik",
+      "Spiel",
+      "Wahrnehmung"
+    ],
+    "shortDescription": "Ein Memory-Spiel mit Gefühlsgesichtern: Die Kinder suchen passende Paare und benennen dabei das Gefühl. Spielerisch erweitern sie ihren Gefühlswortschatz und üben, Emotionen an der Mimik zu erkennen.",
+    "ablauf": [
+      {
+        "title": "Einstieg",
+        "text": "Zeigen Sie die Gefühlskarten und benennen Sie gemeinsam die Gefühle (froh, traurig, wütend, ängstlich, überrascht ...). Klären Sie: Alle Gefühle sind okay."
+      },
+      {
+        "title": "Spielen",
+        "text": "In Kleingruppen wird Memory gespielt. Wer ein Paar findet, benennt das Gefühl und darf - freiwillig - erzählen, wann man sich so fühlt. So wird der Wortschatz aktiv geübt."
+      },
+      {
+        "title": "Abschluss",
+        "text": "Kurze Runde: Welches Gefühl war heute oft dabei? Betonen Sie, dass es schön ist, Gefühle benennen zu können."
+      }
+    ],
+    "duration": "ca. 25 Min.",
+    "materialsNeeded": "Gefühls-Memory-Karten (Paare mit Gesichtern); pro Gruppe ein Satz",
+    "remark": "Freiwilligkeit beim Erzählen. Für C1 mit wenigen, klaren Gefühlen arbeiten. Gut kombinierbar mit dem Gefühls-Würfel.",
+    "etepStufen": [
+      1,
+      2
+    ],
+    "eldibGoals": [
+      "V-11",
+      "K-15",
+      "SOZ-15",
+      "KOG-30"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "menschleche-knuet",
+    "title": "Mënschleche Knuet",
+    "ageLevels": [
+      "C3",
+      "C4"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Grupp",
+        "note": "Gruppen von 6-8"
+      }
+    ],
+    "themes": [
+      "kooperation",
+      "kommunikation",
+      "bewegung"
+    ],
+    "tags": [
+      "Teamwork",
+      "Problemlösen",
+      "Kooperation",
+      "Absprache",
+      "Bewegung",
+      "Zusammenhalt"
+    ],
+    "shortDescription": "Die Gruppe verknotet sich an den Händen und muss sich gemeinsam wieder entwirren, ohne loszulassen. Nur durch Absprache, Geduld und Rücksicht gelingt die Lösung - eine starke Erfahrung von Kooperation und gemeinsamem Problemlösen.",
+    "ablauf": [
+      {
+        "title": "Einstieg",
+        "text": "Die Gruppe stellt sich eng im Kreis. Jeder greift mit beiden Händen zwei verschiedene Hände gegenüber (nicht die Nachbarn). So entsteht ein „Knoten\"."
+      },
+      {
+        "title": "Entwirren",
+        "text": "Aufgabe: den Knoten gemeinsam zu einem Kreis entwirren, ohne die Hände zu lösen - durch Übersteigen, Drehen, Durchschlüpfen. Wichtig: absprechen, vorsichtig sein, niemandem wehtun. Geben Sie bei Bedarf Mut-Impulse statt Lösungen."
+      },
+      {
+        "title": "Abschluss",
+        "text": "Reflexion: Was hat geholfen (Zuhören, Absprache, Geduld)? Was war schwierig? Übertragen Sie auf Teamarbeit im Alltag."
+      }
+    ],
+    "duration": "ca. 30 Min.",
+    "materialsNeeded": "Keine; viel Platz",
+    "remark": "Auf Vorsicht und Freiwilligkeit bei Körperkontakt achten; bei Unwohlsein Alternative (Beobachter/Anleiter) anbieten. Gruppengröße nicht zu groß. Auflösen ist nicht immer möglich - dann den Prozess würdigen.",
+    "etepStufen": [
+      3,
+      4
+    ],
+    "eldibGoals": [
+      "SOZ-18",
+      "SOZ-27",
+      "K-11",
+      "V-12"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "maei-liewensfloss",
+    "title": "Mäi Liewensfloss",
+    "ageLevels": [
+      "C4",
+      "ES"
+    ],
+    "type": [
+      "ganz Stonn"
+    ],
+    "participants": [
+      {
+        "mode": "Individuel",
+        "note": "persönliche Arbeit"
+      },
+      {
+        "mode": "Klass",
+        "note": "freiwilliger Austausch"
+      }
+    ],
+    "themes": [
+      "selbstwahrnehmung",
+      "identitaet",
+      "resilienz"
+    ],
+    "tags": [
+      "Lebenslinie",
+      "Biografie",
+      "wichtige Momente",
+      "Selbstreflexion",
+      "Stärken",
+      "Wendepunkte"
+    ],
+    "shortDescription": "Die Jugendlichen zeichnen ihren „Lebensfluss\": wichtige Momente, schöne und schwierige, als Flusslauf mit ruhigen und wilden Stellen. So reflektieren sie ihren bisherigen Weg, erkennen, was sie geprägt und stark gemacht hat, und blicken zuversichtlich nach vorn.",
+    "ablauf": [
+      {
+        "title": "Einstieg",
+        "text": "Führen Sie das Bild ein: Ein Leben ist wie ein Fluss - mal ruhig, mal mit Stromschnellen, mit Quellen (schöne Momente) und Hindernissen. Betonen Sie: Jeder Fluss ist einzigartig, und nur geteilt wird, was man möchte."
+      },
+      {
+        "title": "Gestalten",
+        "text": "Jede/r zeichnet auf dem Arbeitsblatt den eigenen Lebensfluss und markiert einige wichtige Stationen (Wendepunkte, schöne Erinnerungen, gemeisterte Schwierigkeiten). Begleiten Sie behutsam."
+      },
+      {
+        "title": "Abschluss",
+        "text": "Freiwilliger Austausch über eine Station. Leitgedanke: Auch schwierige Stellen gehören dazu - sie zeigen, was wir schon geschafft haben."
+      }
+    ],
+    "duration": "ca. 50 Min.",
+    "materialsNeeded": "Arbeitsblatt „Lebensfluss\"; Stifte",
+    "remark": "Sehr persönliches Thema - strikt freiwillig, nichts vorführen, vertraulich. Achten Sie auf belastende Erinnerungen und halten Sie Gesprächs-/Beratungsangebote bereit. Nicht in Krisensituationen einsetzen.",
+    "etepStufen": [
+      4,
+      5
+    ],
+    "eldibGoals": [
+      "KOG-15",
+      "KOG-31",
+      "V-24",
+      "SOZ-19",
+      "K-26"
+    ],
+    "worksheet": {
+      "title": "Mäi Liewensfloss",
+      "intro": "Zeichne dein Leben als Fluss – mit ruhigen und wilden Stellen. Nur für dich.",
+      "blocks": [
+        {
+          "kind": "box",
+          "text": "Mein Lebensfluss (zeichne ihn) mit wichtigen Stationen",
+          "lines": 8
+        },
+        {
+          "kind": "question",
+          "text": "Eine Station, die mich stark gemacht hat:",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "Worauf ich mich im nächsten Abschnitt freue:",
+          "lines": 2
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "win-win-sichen-beid-gewannen",
+    "title": "Win-Win sichen: béid gewannen",
+    "ageLevels": [
+      "C3",
+      "C4"
+    ],
+    "type": [
+      "ganz Stonn"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Plenum"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Paararbeit"
+      }
+    ],
+    "themes": [
+      "konfliktloesung",
+      "kooperation",
+      "kommunikation"
+    ],
+    "tags": [
+      "Win-Win",
+      "Kompromiss",
+      "Konfliktlösung",
+      "Bedürfnisse",
+      "faire Lösung",
+      "Verhandeln"
+    ],
+    "shortDescription": "Bei vielen Streits gibt es eine Lösung, bei der beide gewinnen - man muss sie nur suchen. Die Kinder lernen, hinter Positionen die eigentlichen Bedürfnisse zu erkennen und gemeinsam eine faire Win-Win-Lösung zu finden, statt dass einer verliert.",
+    "ablauf": [
+      {
+        "title": "Einstieg",
+        "text": "Erzählen Sie das Beispiel der Orange (zwei wollen die letzte Orange - einer braucht den Saft, der andere die Schale). Erarbeiten Sie: Oft steckt hinter dem Streit ein Bedürfnis - wenn wir es kennen, finden wir eine Lösung für beide."
+      },
+      {
+        "title": "Üben",
+        "text": "Stellen Sie die Frage-Schritte vor: Was will jeder wirklich (Bedürfnis)? Wo überschneidet es sich? Welche Lösung passt für beide? In Paaren bearbeiten die Kinder kleine Streitfälle und suchen Win-Win-Lösungen."
+      },
+      {
+        "title": "Abschluss",
+        "text": "Sammeln Sie gelungene Win-Win-Ideen. Betonen Sie: Eine Lösung suchen, bei der beide zufrieden sind, ist fairer und hält länger als Gewinnen-um-jeden-Preis."
+      }
+    ],
+    "duration": "ca. 50 Min.",
+    "materialsNeeded": "Karten mit Streitfällen; Tafel/Flipchart",
+    "remark": "Mit fiktiven Beispielen arbeiten. Klarmachen, dass nicht jeder Konflikt eine perfekte Win-Win-Lösung hat - manchmal braucht es Kompromiss oder Hilfe. Gut kombinierbar mit Ich-Botschaften.",
+    "etepStufen": [
+      3,
+      4
+    ],
+    "eldibGoals": [
+      "SOZ-13",
+      "SOZ-24",
+      "K-12",
+      "K-21",
+      "V-18"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "schneikugel-gedanken-loossen-sech",
+    "title": "Schnéikugel: Gedanken loossen sech",
+    "ageLevels": [
+      "C2",
+      "C3"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "ruhige Atmosphäre"
+      }
+    ],
+    "themes": [
+      "achtsamkeit",
+      "impulskontrolle",
+      "stressbewaeltigung"
+    ],
+    "tags": [
+      "Schneekugel",
+      "Beruhigung",
+      "Gedanken",
+      "Achtsamkeit",
+      "Geduld",
+      "Selbstregulation"
+    ],
+    "shortDescription": "Eine Schneekugel als Bild für den aufgewühlten Kopf: Schüttelt man sie, wirbelt alles - stellt man sie ab und wartet, sinkt der Schnee und das Bild wird klar. Die Kinder lernen, dass auch aufgewühlte Gedanken und Gefühle sich beruhigen, wenn man kurz innehält und wartet.",
+    "ablauf": [
+      {
+        "title": "Einstieg",
+        "text": "Schütteln Sie eine Schneekugel (oder ein selbstgemachtes Glas mit Glitzer). „So sieht es manchmal in unserem Kopf aus, wenn wir wütend oder aufgeregt sind - alles wirbelt.\" Stellen Sie sie ab: Der Schnee sinkt langsam."
+      },
+      {
+        "title": "Üben",
+        "text": "Während der Schnee sinkt, atmen alle ruhig mit. „Wenn wir warten und atmen, beruhigen sich auch unsere Gedanken - und wir sehen wieder klar.\" Jedes Kind darf die Kugel schütteln und abwarten. Optional eigene Glitzer-Gläser basteln."
+      },
+      {
+        "title": "Abschluss",
+        "text": "Besprechen Sie: Wann ist mein Kopf eine geschüttelte Schneekugel? Die Übung als Erinnerung: Erst warten und atmen, dann handeln."
+      }
+    ],
+    "duration": "ca. 30 Min.",
+    "materialsNeeded": "Eine Schneekugel oder ein Glas mit Wasser und Glitzer; optional Material zum Basteln eigener Gläser",
+    "remark": "Ruhig und ohne Druck. Beim Basteln auf gut verschlossene Gläser achten. Ideal als wiederkehrendes Beruhigungs-Bild; gut kombinierbar mit Atemübungen.",
+    "etepStufen": [
+      2,
+      3
+    ],
+    "eldibGoals": [
+      "V-11",
+      "V-21",
+      "KOG-5",
+      "SOZ-16"
+    ],
+    "language": "de",
+    "source": "generated"
   }
 ]
