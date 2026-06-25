@@ -5912,5 +5912,418 @@
     },
     "language": "de",
     "source": "generated"
+  },
+  {
+    "id": "mat-frustratioun-emgoen",
+    "title": "Mat Frustratioun ëmgoen",
+    "ageLevels": [
+      "C4",
+      "ES"
+    ],
+    "type": [
+      "ganz Stonn"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Plenum"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Kleingruppen"
+      }
+    ],
+    "themes": [
+      "emotionen",
+      "impulskontrolle",
+      "resilienz"
+    ],
+    "tags": [
+      "Frustration",
+      "Ärger",
+      "Selbstregulation",
+      "Durchhalten",
+      "Geduld",
+      "Umgang mit Misserfolg"
+    ],
+    "shortDescription": "Wenn etwas nicht klappt, steigt Frust - und mit ihm der Drang aufzugeben oder loszupoltern. Die Jugendlichen lernen, Frustration als normales Gefühl zu erkennen, ihre Auslöser und Frühzeichen zu verstehen und gesunde Strategien anzuwenden, um nicht impulsiv zu reagieren, sondern dranzubleiben oder eine Pause zu machen.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Wann kocht der Frust?",
+        "text": "Sammeln Sie typische Frust-Auslöser (etwas klappt nicht, Warten, Ungerechtigkeit, zu schwer). Normalisieren Sie: Frustration ist ein normales Gefühl - es zeigt, dass uns etwas wichtig ist. Es geht nicht darum, ihn wegzudrücken, sondern gut damit umzugehen."
+      },
+      {
+        "title": "Hauptteil – Strategien gegen den Frust-Stau",
+        "text": "Erarbeiten Sie und sammeln Sie in Kleingruppen Strategien: kurz Pause machen/durchatmen, das Problem in kleinere Schritte zerlegen, um Hilfe fragen, sich einen Mutmach-Satz sagen, später nochmal versuchen. Unterscheiden Sie: Was hilft im Moment (beruhigen) und was hilft danach (Problem lösen)?"
+      },
+      {
+        "title": "Abschluss – Mein Frust-Plan",
+        "text": "Jede/r wählt zwei Strategien, die zu ihm passen, für das nächste Mal. Betonen Sie: Frust gut zu bewältigen ist eine Stärke, die man trainieren kann - und Aufgeben ist nur eine von vielen Optionen, meist nicht die beste."
+      }
+    ],
+    "duration": "ca. 50 Min.",
+    "materialsNeeded": "Tafel/Flipchart; Karten mit Frust-Situationen; Stifte",
+    "remark": "Ohne Beschämung arbeiten; Frust nicht als Schwäche darstellen. Achten Sie auf Jugendliche, die schnell aggressiv oder resigniert reagieren, und bieten Sie individuelle Unterstützung. Gut kombinierbar mit Atem- und Selbstgesprächs-Übungen.",
+    "etepStufen": [
+      3,
+      4
+    ],
+    "eldibGoals": [
+      "V-16",
+      "V-20",
+      "V-24",
+      "SOZ-13",
+      "KOG-19",
+      "K-16"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "brecke-bauen-sech-nees-versoehnen",
+    "title": "Brécke bauen: sech nees versöhnen",
+    "ageLevels": [
+      "C1",
+      "C2"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Sitzkreis"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Übung in Paaren"
+      }
+    ],
+    "themes": [
+      "konfliktloesung",
+      "beziehungsaufbau",
+      "emotionen"
+    ],
+    "tags": [
+      "Versöhnung",
+      "Entschuldigung",
+      "Streit",
+      "Freundschaft",
+      "Wiedergutmachen",
+      "Brücke"
+    ],
+    "shortDescription": "Nach einem Streit fühlt sich oft beides schlecht an. Am Bild der „Brücke\" lernen jüngere Kinder, wie man sich wieder versöhnt: aufeinander zugehen, sich entschuldigen, etwas wiedergutmachen. Sie üben einfache Versöhnungs-Sätze und erleben, wie gut es tut, eine Brücke zu bauen.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Der Riss und die Brücke",
+        "text": "Zeigen Sie ein Bild von zwei Ufern mit einer Lücke. Erklären Sie: Nach einem Streit ist da oft so eine Lücke zwischen zwei Kindern. Wir können eine Brücke bauen, um wieder zusammenzukommen. Sammeln Sie, wie sich Streit anfühlt - und wie Versöhnung."
+      },
+      {
+        "title": "Hauptteil – Versöhnungs-Sätze üben",
+        "text": "Erarbeiten Sie kleine Brücken-Sätze und Gesten: „Es tut mir leid\", „Wollen wir wieder zusammen spielen?\", etwas anbieten/teilen, die Hand reichen. In Paaren spielen die Kinder einen harmlosen Streit und bauen dann mit einem Satz die Brücke. Betonen Sie: Sich entschuldigen ist mutig."
+      },
+      {
+        "title": "Abschluss – Unsere Brücken-Wörter",
+        "text": "Halten Sie die Versöhnungs-Sätze als kleines Plakat fest. Kurze Runde: „Wie fühlt es sich an, sich wieder zu vertragen?\" Betonen Sie, dass man auch nach einem Streit wieder Freunde sein kann."
+      }
+    ],
+    "duration": "ca. 35 Min.",
+    "materialsNeeded": "Bild einer Brücke; optional Plakat für die Versöhnungs-Sätze",
+    "remark": "Mit fiktiven, harmlosen Beispielen arbeiten; niemanden zwingen, sich zu entschuldigen oder reale Streits vorzuspielen. Echte aktuelle Konflikte behutsam und freiwillig begleiten. Für C1 sehr kurze Sätze und viel gemeinsames Sprechen.",
+    "etepStufen": [
+      1,
+      2
+    ],
+    "eldibGoals": [
+      "SOZ-13",
+      "SOZ-16",
+      "K-12",
+      "K-15",
+      "V-12"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "maein-helfer-netz",
+    "title": "Mäin Helfer-Netz",
+    "ageLevels": [
+      "C3",
+      "C4"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Individuel",
+        "note": "eigenes Helfer-Netz"
+      },
+      {
+        "mode": "Klass",
+        "note": "Austausch über Anlaufstellen"
+      }
+    ],
+    "themes": [
+      "ressourcen",
+      "beziehungsaufbau",
+      "selbstwahrnehmung"
+    ],
+    "tags": [
+      "Unterstützung",
+      "Vertrauenspersonen",
+      "Hilfe holen",
+      "Netzwerk",
+      "Sicherheit",
+      "Ressourcen"
+    ],
+    "shortDescription": "Niemand muss alles allein schaffen. Die Kinder zeichnen ihr persönliches „Helfer-Netz\": Menschen, an die sie sich bei verschiedenen Anliegen wenden können - in der Familie, in der Schule, im Verein. So wird ihnen bewusst, dass sie Unterstützung haben, und sie wissen, wohin sie sich mit Sorgen wenden können.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Hilfe holen ist klug",
+        "text": "Sprechen Sie darüber, dass jeder mal Hilfe braucht - bei Hausaufgaben, bei Streit, bei Sorgen. Hilfe zu holen ist klug und stark, nicht schwach. Verschiedene Hilfe braucht verschiedene Menschen."
+      },
+      {
+        "title": "Hauptteil – Mein Netz zeichnen",
+        "text": "Jedes Kind zeichnet auf dem Arbeitsblatt sich selbst in die Mitte und drumherum seine Helfer (Familie, Lehrpersonen, Freunde, Verein, Beratungsstellen). Zu verschiedenen Anliegen ordnen sie zu, wen sie fragen würden. Ergänzen Sie gemeinsam wichtige Anlaufstellen, die alle kennen sollten."
+      },
+      {
+        "title": "Abschluss – Mein Netz trägt",
+        "text": "Wer mag, nennt eine Person aus seinem Netz. Betonen Sie: Dieses Netz ist immer da, und es darf wachsen. Für große Sorgen sind Erwachsene da, denen man vertrauen kann."
+      }
+    ],
+    "duration": "ca. 40 Min.",
+    "materialsNeeded": "Arbeitsblatt „Helfer-Netz\"; Stifte; gemeinsame Liste wichtiger Anlaufstellen",
+    "remark": "Sensibel begleiten - manche Kinder haben wenig stabile Bezugspersonen; sorgen Sie dafür, dass schulische und externe Anlaufstellen für alle sichtbar werden. Auf mögliche Hinweise auf Belastung achten und geschützt reagieren.",
+    "etepStufen": [
+      3,
+      4
+    ],
+    "eldibGoals": [
+      "SOZ-12",
+      "SOZ-15",
+      "K-14",
+      "KOG-17",
+      "V-15"
+    ],
+    "worksheet": {
+      "title": "Mäin Helfer-Netz",
+      "intro": "Du bist nicht allein. Zeichne, wer dich unterstützt.",
+      "blocks": [
+        {
+          "kind": "box",
+          "text": "Ich (in der Mitte) und meine Helfer rundherum",
+          "lines": 8
+        },
+        {
+          "kind": "question",
+          "text": "Wen frage ich bei Streit?",
+          "lines": 1
+        },
+        {
+          "kind": "question",
+          "text": "Wen frage ich bei einer großen Sorge?",
+          "lines": 1
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "den-otem-frend",
+    "title": "Den Otem-Frënd",
+    "ageLevels": [
+      "C1",
+      "C2"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "ruhige Atmosphäre, im Liegen"
+      },
+      {
+        "mode": "Individuel",
+        "note": "jedes Kind mit seinem Kuscheltier"
+      }
+    ],
+    "themes": [
+      "achtsamkeit",
+      "stressbewaeltigung",
+      "selbstwahrnehmung"
+    ],
+    "tags": [
+      "Atemübung",
+      "Beruhigung",
+      "Kuscheltier",
+      "Ruhe",
+      "Einschlafen",
+      "Selbstregulation"
+    ],
+    "shortDescription": "Mit einem Kuscheltier als „Atem-Freund\" auf dem Bauch lernen jüngere Kinder spielerisch die beruhigende Bauchatmung: Beim Einatmen hebt sich der Freund, beim Ausatmen sinkt er. Die Übung macht das unsichtbare Atmen sichtbar und gibt den Kindern ein liebevolles Werkzeug, um zur Ruhe zu kommen.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Mein Atem-Freund",
+        "text": "Jedes Kind legt sich hin und ein kleines Kuscheltier auf den Bauch. Erklären Sie: „Dein Atem-Freund möchte sanft auf deinem Bauch schaukeln. Atme ruhig - dann fährt er nach oben und wieder nach unten.\""
+      },
+      {
+        "title": "Hauptteil – Schaukeln auf dem Bauch",
+        "text": "Leiten Sie ruhig an: langsam durch die Nase einatmen (der Freund steigt), langsam ausatmen (der Freund sinkt). Zählen Sie leise mit. Wiederholen Sie 6-8 ruhige Atemzüge. Sprechen Sie langsam und leise - das überträgt sich."
+      },
+      {
+        "title": "Abschluss – Ruhig und wach",
+        "text": "Langsam zurückkommen, strecken, aufsetzen. Kurze Runde: „Wie fühlt sich dein Bauch/dein Atem-Freund jetzt an?\" Sagen Sie den Kindern, dass sie das auch zu Hause (z. B. beim Einschlafen) machen können."
+      }
+    ],
+    "duration": "ca. 15-20 Min.",
+    "materialsNeeded": "Pro Kind ein kleines Kuscheltier oder ein leichter Gegenstand (Korken, Sandsäckchen); Matten/Teppich; ruhiger Raum",
+    "remark": "Freiwilligkeit beim Hinlegen/Augenschließen; offene Augen sind in Ordnung. Kurz halten und in angenehmer Stimmung beenden. Ideal als regelmäßiges Ruheritual nach turbulenten Phasen.",
+    "etepStufen": [
+      1,
+      2
+    ],
+    "eldibGoals": [
+      "V-11",
+      "V-21",
+      "KOG-5",
+      "SOZ-16",
+      "K-15"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "dei-richteg-froen-stellen",
+    "title": "Déi richteg Froen stellen",
+    "ageLevels": [
+      "C3",
+      "C4"
+    ],
+    "type": [
+      "ganz Stonn"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Plenum"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Übung in Paaren"
+      }
+    ],
+    "themes": [
+      "kommunikation",
+      "beziehungsaufbau",
+      "fremdwahrnehmung"
+    ],
+    "tags": [
+      "Fragen stellen",
+      "Interesse zeigen",
+      "Gespräch",
+      "offene Fragen",
+      "Zuhören",
+      "Neugier"
+    ],
+    "shortDescription": "Wer gute Fragen stellt, zeigt Interesse und erfährt mehr. Die Kinder lernen den Unterschied zwischen geschlossenen (Ja/Nein) und offenen Fragen und üben, mit neugierigen Nachfragen echte Gespräche zu führen. Eine wichtige Fähigkeit, um andere besser kennenzulernen und Beziehungen aufzubauen.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Kurze und lange Antworten",
+        "text": "Stellen Sie demselben Kind zwei Fragen: eine geschlossene („Magst du Fußball?\") und eine offene („Was spielst du am liebsten und warum?\"). Vergleichen Sie die Antworten. Erarbeiten Sie: Offene Fragen (Was? Wie? Warum? Erzähl mal …) bringen ein Gespräch in Gang."
+      },
+      {
+        "title": "Hauptteil – Interview-Paare",
+        "text": "In Paaren interviewen sich die Kinder gegenseitig zu einem Thema (Hobby, Lieblingsort) - mit mindestens drei offenen Fragen und neugierigen Nachfragen. Sammeln Sie danach gute Fragen an der Tafel. Betonen Sie echtes Zuhören und Nachhaken."
+      },
+      {
+        "title": "Abschluss – Meine Lieblingsfrage",
+        "text": "Jedes Kind nennt eine offene Frage, die es gut fand. Übertragen Sie: Mit guten Fragen kann man neue Leute kennenlernen und zeigen, dass einen jemand interessiert."
+      }
+    ],
+    "duration": "ca. 45 Min.",
+    "materialsNeeded": "Tafel/Flipchart; optional Themenkarten für die Interviews",
+    "remark": "Achten Sie darauf, dass Fragen respektvoll bleiben und niemand zu Persönlichem gedrängt wird (Antworten freiwillig). Für C3 offene Frage-Wörter als Hilfe vorgeben. Gut kombinierbar mit der Zuhör-Übung.",
+    "etepStufen": [
+      3,
+      4
+    ],
+    "eldibGoals": [
+      "K-9",
+      "K-17",
+      "K-22",
+      "SOZ-15",
+      "KOG-37"
+    ],
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "maei-feeler-frend-aus-feeler-leieren",
+    "title": "Mäi Feeler-Frënd: aus Feeler léieren",
+    "ageLevels": [
+      "C3",
+      "C4"
+    ],
+    "type": [
+      "ganz Stonn"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Plenum"
+      },
+      {
+        "mode": "Individuel",
+        "note": "eigene Fehler-Geschichte"
+      }
+    ],
+    "themes": [
+      "resilienz",
+      "motivation",
+      "selbstwertgefuehl"
+    ],
+    "tags": [
+      "Fehlerkultur",
+      "aus Fehlern lernen",
+      "Mut",
+      "Wachstum",
+      "Lernen",
+      "Selbstwert"
+    ],
+    "shortDescription": "Fehler sind keine Katastrophe, sondern Helfer beim Lernen. Die Kinder entwickeln eine freundliche Fehlerkultur: Sie erkennen, dass jeder Fehler macht, dass Fehler zeigen, wo man wachsen kann, und dass man sie als „Feeler-Frënd\" begrüßen darf. Das nimmt Angst und stärkt Mut, Neues auszuprobieren.",
+    "ablauf": [
+      {
+        "title": "Einstieg – Fehler sind normal",
+        "text": "Erzählen Sie (gern von sich selbst) von einem Fehler, aus dem etwas Gutes wurde. Sammeln Sie berühmte Beispiele oder Alltagsfehler. Erarbeiten Sie: Wer Neues lernt, macht Fehler - das gehört dazu und ist kein Grund für Scham."
+      },
+      {
+        "title": "Hauptteil – Was lerne ich aus dem Fehler?",
+        "text": "Stellen Sie die Lern-Fragen vor: Was ist passiert? Was kann ich daraus lernen? Was mache ich beim nächsten Mal anders? Jedes Kind denkt (für sich) an einen eigenen Fehler und beantwortet die Fragen. Freiwilliger Austausch in der Gruppe - der „Feeler-Frënd\" hat etwas beigebracht."
+      },
+      {
+        "title": "Abschluss – Fehler willkommen",
+        "text": "Vereinbaren Sie eine fehlerfreundliche Klassenregel (z. B. „Bei uns darf man Fehler machen - wir lachen niemanden aus\"). Betonen Sie: Mutig etwas zu versuchen ist wertvoller als fehlerfrei nichts zu wagen."
+      }
+    ],
+    "duration": "ca. 45 Min.",
+    "materialsNeeded": "Tafel/Flipchart; optional Beispiele von „nützlichen Fehlern\"; Stifte",
+    "remark": "Schützen Sie die fehlerfreundliche Atmosphäre konsequent - kein Auslachen. Zwingen Sie niemanden, eigene Fehler zu teilen. Besonders wichtig für Kinder mit Versagensangst; loben Sie Mut und Anstrengung.",
+    "etepStufen": [
+      3,
+      4
+    ],
+    "eldibGoals": [
+      "V-16",
+      "V-24",
+      "KOG-19",
+      "KOG-27",
+      "SOZ-12",
+      "K-16"
+    ],
+    "language": "de",
+    "source": "generated"
   }
 ]
