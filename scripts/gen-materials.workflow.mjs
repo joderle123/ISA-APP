@@ -29,9 +29,11 @@ export const meta = {
   phases: [{ title: 'Generieren', detail: 'one agent per (Thema × Altersstufe) batch — each writes batch-NN.json' }],
 }
 
-const A = (typeof args === 'object' && args) ? args : {}
+const A = typeof args === 'string'
+  ? (() => { try { return JSON.parse(args) } catch { return {} } })()
+  : ((typeof args === 'object' && args) ? args : {})
 const PER_BATCH = Math.max(1, Math.min(8, A.perBatch || 4))
-const N_BATCHES = Math.max(1, Math.min(40, A.batches || 6))
+const N_BATCHES = Math.max(1, Math.min(40, A.batches || 20))
 const OUT_DIR = String(A.outDir || 'tmp/gen-batches').replace(/\/+$/, '')
 
 // Coverage grid: spread batches across Thema × Altersstufe × Typ so the library
@@ -92,7 +94,7 @@ function promptFor(a) {
     `- titles dürfen sich NICHT wiederholen und keine offensichtlichen Standard-Dubletten sein.`,
     `- source NICHT setzen — das vergibt das Integrationsskript.`,
     ``,
-    `PFLICHT: Schreibe das Ergebnis als JSON-ARRAY von genau ${PER_BATCH} Objekten mit dem Write-Tool nach EXAKT dieser Datei:`,
+    `WICHTIG: Führe KEINE Shell-Kommandos oder Skripte aus (kein node, kein integrate.mjs, keine eigene Validierung) — das macht hinterher das Hauptprogramm. Schreibe NUR die JSON-Datei und gib die OK-Zeile zurück. Wähle einzigartige, spezifische Titel (keine generischen Standard-Titel).`,
     `  ${file}`,
     `Reines JSON in die Datei (kein Markdown, keine Code-Fences). Gib danach NUR diese eine Zeile zurück:`,
     `  OK ${file}`,
