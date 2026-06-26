@@ -311,23 +311,36 @@ const s = StyleSheet.create({
     fontSize: 7.5,
     color: C.faint,
   },
-  // Worksheet (student-facing, printable)
-  wsBand: { flexDirection: 'row', alignItems: 'center', paddingBottom: 8, marginBottom: 8, borderBottomWidth: 2 },
-  wsKicker: { fontSize: 9, fontFamily: 'Helvetica-Bold' },
-  wsTitle: { fontSize: 15, fontFamily: 'Helvetica-Bold', marginTop: 1 },
-  wsNameRow: { flexDirection: 'row', marginTop: 6, fontSize: 9, color: C.faint },
-  wsIntro: { fontSize: 10, marginBottom: 6, color: C.ink },
-  wsHeading: { fontSize: 11.5, fontFamily: 'Helvetica-Bold', marginTop: 10, marginBottom: 3 },
-  wsInstruction: { fontSize: 9.5, color: '#5a6473', marginBottom: 3 },
-  wsQuestion: { fontSize: 10, marginTop: 6, marginBottom: 3 },
-  wsLine: { borderBottomWidth: 1, borderBottomColor: '#c2c9d2', height: 17 },
-  wsBox: { borderWidth: 1, borderColor: '#c2c9d2', borderRadius: 3, marginVertical: 3 },
-  wsCheckItem: { flexDirection: 'row', alignItems: 'flex-start', marginBottom: 4 },
-  wsScaleRow: { flexDirection: 'row', alignItems: 'center', flexWrap: 'wrap', marginTop: 3 },
-  wsScaleBox: { flexDirection: 'row', alignItems: 'center', marginRight: 12, marginBottom: 3 },
-  wsTableRow: { flexDirection: 'row' },
-  wsTableCell: { flex: 1, borderWidth: 0.5, borderColor: '#c2c9d2', paddingVertical: 5, paddingHorizontal: 4, fontSize: 9 },
-  wsTableHead: { backgroundColor: '#eef2f7', fontFamily: 'Helvetica-Bold' },
+  // Worksheet (student-facing, printable) — child-friendly, age-aware
+  wsAccent: { height: 7, borderRadius: 4, marginBottom: 12 },
+  wsBand: { flexDirection: 'row', alignItems: 'center' },
+  wsKicker: { fontSize: 9, fontFamily: 'Helvetica-Bold', letterSpacing: 1.5 },
+  wsTitle: { fontFamily: 'Helvetica-Bold', marginTop: 1 },
+  wsField: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    borderWidth: 1.4,
+    borderRadius: 8,
+    paddingVertical: 5,
+    paddingHorizontal: 9,
+    marginRight: 8,
+  },
+  wsIntro: { borderRadius: 10, padding: 10, marginBottom: 2 },
+  wsHeadingRow: { flexDirection: 'row', alignItems: 'center', marginBottom: 5 },
+  wsHeadingBar: { width: 6, borderRadius: 3, marginRight: 8 },
+  wsTile: {
+    alignItems: 'center',
+    justifyContent: 'flex-start',
+    borderWidth: 1.4,
+    borderRadius: 12,
+    paddingVertical: 8,
+    paddingHorizontal: 4,
+    marginRight: 8,
+    marginBottom: 7,
+  },
+  wsTileLabel: { fontFamily: 'Helvetica-Bold', marginTop: 6, textAlign: 'center' },
+  wsCheckItem: { flexDirection: 'row', alignItems: 'center', marginBottom: 8 },
+  wsTableCell: { flex: 1, borderWidth: 0.8, borderColor: '#c8cfd8', paddingVertical: 7, paddingHorizontal: 5 },
 })
 
 function Box({ checked }: { checked: boolean }) {
@@ -353,87 +366,308 @@ function SectionHead({ children, color }: { children: ReactNode; color: string }
   )
 }
 
-function WriteLines({ n }: { n: number }) {
+// --- Age-aware sizing: younger kids get bigger text, taller lines, larger tiles.
+interface WsScale {
+  q: number // prompt/body font
+  head: number // heading font
+  line: number // writing-line height
+  box: number // checkbox / number-badge size
+  glyph: number // pictorial glyph size (faces, weather, colour dots)
+  gap: number // vertical gap before a task
+  extraLines: number // extra writing lines (young kids write big & need room)
+}
+function wsScale(ageLevels: string[]): WsScale {
+  const young = ageLevels.includes('C1') || ageLevels.includes('C2')
+  const mid = !young && ageLevels.includes('C3')
+  if (young) return { q: 13, head: 16, line: 40, box: 19, glyph: 40, gap: 14, extraLines: 1 }
+  if (mid) return { q: 12, head: 15, line: 33, box: 17, glyph: 35, gap: 11, extraLines: 1 }
+  return { q: 11, head: 14, line: 27, box: 15, glyph: 30, gap: 9, extraLines: 0 }
+}
+
+/** Numbered circle badge that opens each task. */
+function NumBadge({ n, color, size }: { n: number; color: string; size: number }) {
+  return (
+    <View
+      style={{
+        width: size,
+        height: size,
+        borderRadius: size / 2,
+        backgroundColor: color,
+        alignItems: 'center',
+        justifyContent: 'center',
+        marginRight: 8,
+        marginTop: 1,
+      }}
+    >
+      <Text style={{ color: '#fff', fontSize: size * 0.62, fontFamily: 'Helvetica-Bold' }}>{n}</Text>
+    </View>
+  )
+}
+
+/** Large, easy-to-tick empty box. */
+function BigBox({ size, color = '#5a6473' }: { size: number; color?: string }) {
+  return (
+    <View
+      style={{
+        width: size,
+        height: size,
+        borderWidth: 1.6,
+        borderColor: color,
+        borderRadius: Math.max(3, size * 0.22),
+        marginRight: 8,
+      }}
+    />
+  )
+}
+
+const COLOR_WORD: Record<string, string> = {
+  grün: '#43a047', gruen: '#43a047', gelb: '#ffd21f', orange: '#fb8c00',
+  rot: '#e53935', blau: '#1e88e5', grau: '#9e9e9e', rosa: '#ec407a',
+  lila: '#8e24aa', violett: '#8e24aa', braun: '#795548', schwarz: '#37474f',
+  türkis: '#1f8a8a', tuerkis: '#1f8a8a',
+}
+
+function ColorDot({ size, color }: { size: number; color: string }) {
+  return (
+    <Svg viewBox="0 0 24 24" width={size} height={size}>
+      <Circle cx={12} cy={12} r={9} fill={color} stroke="#33415566" strokeWidth={1} />
+    </Svg>
+  )
+}
+
+function CloudShape({ color }: { color: string }) {
   return (
     <>
-      {Array.from({ length: Math.max(1, n) }).map((_, i) => (
-        <View key={i} style={s.wsLine} />
-      ))}
+      <Circle cx={9} cy={13} r={3.6} fill={color} />
+      <Circle cx={14.5} cy={11.5} r={4.4} fill={color} />
+      <Rect x={5.5} y={13} width={13} height={4.6} rx={2.3} fill={color} />
     </>
   )
 }
 
-function WsBlock({ block }: { block: WorksheetBlock }) {
+function Weather({ kind, size, color }: { kind: string; size: number; color: string }) {
+  const rays = [0, 45, 90, 135, 180, 225, 270, 315]
+  return (
+    <Svg viewBox="0 0 24 24" width={size} height={size}>
+      {kind === 'sun' && (
+        <>
+          {rays.map((a, i) => {
+            const r = (a * Math.PI) / 180
+            return (
+              <Line
+                key={i}
+                x1={12 + Math.cos(r) * 6.5}
+                y1={12 + Math.sin(r) * 6.5}
+                x2={12 + Math.cos(r) * 9.5}
+                y2={12 + Math.sin(r) * 9.5}
+                stroke={color}
+                strokeWidth={1.8}
+              />
+            )
+          })}
+          <Circle cx={12} cy={12} r={5} fill={color} />
+        </>
+      )}
+      {kind === 'cloud' && <CloudShape color={color} />}
+      {kind === 'rain' && (
+        <>
+          <CloudShape color={color} />
+          {[8, 12, 16].map((x, i) => (
+            <Line key={i} x1={x} y1={18.5} x2={x - 1.4} y2={22} stroke={color} strokeWidth={1.8} />
+          ))}
+        </>
+      )}
+      {kind === 'storm' && (
+        <>
+          <CloudShape color={color} />
+          <Polygon points="12,17 9,22 11.5,22 10,24.5 15,20 12,20" fill="#f5a623" />
+        </>
+      )}
+      {kind === 'snow' && (
+        <>
+          <CloudShape color={color} />
+          {[8, 12, 16].map((x, i) => (
+            <Circle key={i} cx={x} cy={20.5} r={1.1} fill={color} />
+          ))}
+        </>
+      )}
+    </Svg>
+  )
+}
+
+/** Simple smiley whose mouth goes from sad (0) to happy (1). */
+function Face({ size, happiness, color }: { size: number; happiness: number; color: string }) {
+  const cy = 15 + (happiness - 0.5) * 8 // mouth control point
+  return (
+    <Svg viewBox="0 0 24 24" width={size} height={size}>
+      <Circle cx={12} cy={12} r={10} fill="#fff" stroke={color} strokeWidth={1.6} />
+      <Circle cx={8.6} cy={10} r={1.3} fill={color} />
+      <Circle cx={15.4} cy={10} r={1.3} fill={color} />
+      <Path d={`M7.5 15 Q12 ${cy} 16.5 15`} fill="none" stroke={color} strokeWidth={1.7} strokeLinecap="round" />
+    </Svg>
+  )
+}
+
+/** Pick a pictorial glyph for a scale/checklist label, else null. */
+function glyphFor(label: string, size: number, color: string): ReactNode {
+  const k = label.toLowerCase().replace(/[^a-zäöüß]/g, '')
+  for (const [w, c] of Object.entries(COLOR_WORD)) {
+    if (k === w) return <ColorDot size={size} color={c} />
+  }
+  if (k.includes('sonn')) return <Weather kind="sun" size={size} color={color} />
+  if (k.includes('wolk') || k.includes('bewölk') || k.includes('bewoelk')) return <Weather kind="cloud" size={size} color={color} />
+  if (k.includes('regen') || k.includes('regn')) return <Weather kind="rain" size={size} color={color} />
+  if (k.includes('gewitter') || k.includes('sturm') || k.includes('blitz') || k.includes('donner'))
+    return <Weather kind="storm" size={size} color={color} />
+  if (k.includes('schnee')) return <Weather kind="snow" size={size} color={color} />
+  return null
+}
+
+function WriteLines({ n, h, indent = 0 }: { n: number; h: number; indent?: number }) {
+  return (
+    <View style={{ marginLeft: indent, marginTop: 5 }}>
+      {Array.from({ length: Math.max(1, n) }).map((_, i) => (
+        <View key={i} style={{ borderBottomWidth: 1.4, borderBottomColor: '#cdd5df', height: h }} />
+      ))}
+    </View>
+  )
+}
+
+/** A task prompt: numbered colour badge + bold question text. */
+function Prompt({ num, text, sc, tc }: { num: number | null; text: string; sc: WsScale; tc: { deep: string; light: string } }) {
+  return (
+    <View style={{ flexDirection: 'row', alignItems: 'flex-start' }}>
+      {num ? <NumBadge n={num} color={tc.deep} size={sc.box} /> : null}
+      <Text style={{ flex: 1, fontSize: sc.q, fontFamily: 'Helvetica-Bold', color: C.ink, lineHeight: 1.3 }}>
+        {text}
+      </Text>
+    </View>
+  )
+}
+
+function WsBlock({
+  block,
+  sc,
+  tc,
+  num,
+}: {
+  block: WorksheetBlock
+  sc: WsScale
+  tc: { deep: string; light: string }
+  num: number | null
+}) {
   const { kind, text, lines, items } = block
-  if (kind === 'heading') return <Text style={s.wsHeading}>{text}</Text>
-  if (kind === 'instruction') return <Text style={s.wsInstruction}>{text}</Text>
-  if (kind === 'question')
+  const indent = num ? sc.box + 8 : 0
+
+  if (kind === 'heading')
     return (
-      <View wrap={false}>
-        <Text style={s.wsQuestion}>{text}</Text>
-        <WriteLines n={lines ?? 2} />
+      <View style={[s.wsHeadingRow, { marginTop: sc.gap + 4 }]} wrap={false} minPresenceAhead={70}>
+        <View style={[s.wsHeadingBar, { height: sc.head + 3, backgroundColor: tc.deep }]} />
+        <Text style={{ fontSize: sc.head, fontFamily: 'Helvetica-Bold', color: tc.deep }}>{text}</Text>
       </View>
     )
+
+  if (kind === 'instruction')
+    return (
+      <View style={{ backgroundColor: tc.light, borderRadius: 8, paddingVertical: 6, paddingHorizontal: 9, marginTop: 7, marginBottom: 2 }}>
+        <Text style={{ fontSize: sc.q - 0.5, color: tc.deep }}>{text}</Text>
+      </View>
+    )
+
+  if (kind === 'question' || (kind === 'lines' && text))
+    return (
+      <View wrap={false} style={{ marginTop: sc.gap }}>
+        <Prompt num={num} text={text!} sc={sc} tc={tc} />
+        <WriteLines n={(lines ?? 2) + sc.extraLines} h={sc.line} indent={indent} />
+      </View>
+    )
+
   if (kind === 'lines')
+    return <WriteLines n={(lines ?? 3) + sc.extraLines} h={sc.line} />
+
+  if (kind === 'box') {
+    const h = Math.min(360, (lines ?? 5) * sc.line * 0.8)
     return (
-      <View>
-        {text ? <Text style={s.wsQuestion}>{text}</Text> : null}
-        <WriteLines n={lines ?? 3} />
+      <View wrap={false} style={{ marginTop: sc.gap }}>
+        {text ? <Prompt num={num} text={text} sc={sc} tc={tc} /> : null}
+        <View
+          style={{
+            borderWidth: 1.4,
+            borderColor: '#c2c9d2',
+            borderStyle: 'dashed',
+            borderRadius: 10,
+            height: h,
+            marginTop: 6,
+            marginLeft: indent,
+          }}
+        />
       </View>
     )
-  if (kind === 'box')
-    return (
-      <View wrap={false}>
-        {text ? <Text style={s.wsQuestion}>{text}</Text> : null}
-        <View style={[s.wsBox, { height: (lines ?? 4) * 16 }]} />
-      </View>
-    )
+  }
+
   if (kind === 'checklist')
     return (
-      <View style={{ marginTop: 3 }}>
-        {(items ?? []).map((it, i) => (
-          <View key={i} style={s.wsCheckItem}>
-            <Box checked={false} />
-            <Text style={{ flex: 1 }}>{it}</Text>
-          </View>
-        ))}
+      <View style={{ marginTop: sc.gap, marginLeft: indent }}>
+        {(items ?? []).map((it, i) => {
+          const g = glyphFor(it, sc.box + 4, tc.deep)
+          return (
+            <View key={i} style={s.wsCheckItem}>
+              <BigBox size={sc.box} color={tc.deep} />
+              {g ? <View style={{ marginRight: 6 }}>{g}</View> : null}
+              <Text style={{ flex: 1, fontSize: sc.q }}>{it}</Text>
+            </View>
+          )
+        })}
       </View>
     )
-  if (kind === 'scale')
+
+  if (kind === 'scale') {
+    const its = items ?? []
+    const tileW = its.length <= 4 ? 98 : its.length <= 6 ? 74 : 58
     return (
-      <View style={{ marginTop: 4 }} wrap={false}>
-        {text ? <Text style={s.wsQuestion}>{text}</Text> : null}
-        <View style={s.wsScaleRow}>
-          {(items ?? []).map((lab, i) => (
-            <View key={i} style={s.wsScaleBox}>
-              <Box checked={false} />
-              <Text style={{ fontSize: 9 }}>{lab}</Text>
-            </View>
-          ))}
+      <View style={{ marginTop: sc.gap }} wrap={false}>
+        {text ? <Prompt num={num} text={text} sc={sc} tc={tc} /> : null}
+        <View style={{ flexDirection: 'row', flexWrap: 'wrap', marginTop: 8, marginLeft: indent }}>
+          {its.map((lab, i) => {
+            const g =
+              glyphFor(lab, sc.glyph, tc.deep) ??
+              <Face size={sc.glyph} happiness={its.length > 1 ? i / (its.length - 1) : 0.5} color={tc.deep} />
+            return (
+              <View key={i} style={[s.wsTile, { borderColor: tc.deep, width: tileW }]}>
+                {g}
+                <Text style={[s.wsTileLabel, { fontSize: sc.q - 1.5, color: C.ink }]}>{lab}</Text>
+              </View>
+            )
+          })}
         </View>
       </View>
     )
+  }
+
   if (kind === 'table') {
     const cols = items ?? []
     const rows = lines ?? 3
     return (
-      <View style={{ marginTop: 4 }}>
-        <View style={s.wsTableRow}>
-          {cols.map((c, i) => (
-            <Text key={i} style={[s.wsTableCell, s.wsTableHead]}>
-              {c}
-            </Text>
-          ))}
-        </View>
-        {Array.from({ length: rows }).map((_, r) => (
-          <View key={r} style={s.wsTableRow} wrap={false}>
-            {cols.map((_, c) => (
-              <Text key={c} style={[s.wsTableCell, { minHeight: 22 }]}>
-                {' '}
+      <View style={{ marginTop: sc.gap }}>
+        {text ? <Prompt num={num} text={text} sc={sc} tc={tc} /> : null}
+        <View style={{ marginTop: 6, borderRadius: 8, overflow: 'hidden', borderWidth: 0.8, borderColor: '#c8cfd8' }}>
+          <View style={{ flexDirection: 'row' }}>
+            {cols.map((c, i) => (
+              <Text key={i} style={[s.wsTableCell, { backgroundColor: tc.deep, color: '#fff', fontFamily: 'Helvetica-Bold', fontSize: sc.q - 1.5 }]}>
+                {c}
               </Text>
             ))}
           </View>
-        ))}
+          {Array.from({ length: rows }).map((_, r) => (
+            <View key={r} style={{ flexDirection: 'row' }} wrap={false}>
+              {cols.map((_, c) => (
+                <Text key={c} style={[s.wsTableCell, { minHeight: sc.line + 6, backgroundColor: r % 2 ? '#f6f9fc' : '#fff' }]}>
+                  {' '}
+                </Text>
+              ))}
+            </View>
+          ))}
+        </View>
       </View>
     )
   }
@@ -443,25 +677,45 @@ function WsBlock({ block }: { block: WorksheetBlock }) {
 function WorksheetPage({ material: m }: { material: Material }) {
   const w = m.worksheet!
   const tc = themeColor(m.themes[0])
+  const sc = wsScale(m.ageLevels)
+  let task = 0
   return (
     <Page size="A4" style={s.page}>
-      <View style={[s.wsBand, { borderBottomColor: tc.deep }]}>
-        <View style={[s.bannerIcon, { width: 38, height: 38, borderRadius: 19, backgroundColor: tc.deep, marginRight: 10 }]}>
-          <Icon name={themeIconName(m.themes[0])} size={20} color="#fff" />
+      <View style={[s.wsAccent, { backgroundColor: tc.deep }]} />
+      <View style={s.wsBand}>
+        <View style={[s.bannerIcon, { width: 40, height: 40, borderRadius: 20, backgroundColor: tc.deep, marginRight: 11 }]}>
+          <Icon name={themeIconName(m.themes[0])} size={22} color="#fff" />
         </View>
         <View style={{ flex: 1 }}>
           <Text style={[s.wsKicker, { color: tc.deep }]}>ARBEITSBLATT</Text>
-          <Text style={s.wsTitle}>{w.title || m.title}</Text>
+          <Text style={[s.wsTitle, { fontSize: sc.head + 4 }]}>{w.title || m.title}</Text>
         </View>
       </View>
-      <View style={s.wsNameRow}>
-        <Text>Numm: ____________________________</Text>
-        <Text>     Datum: ______________</Text>
+
+      {/* Name / Datum fields */}
+      <View style={{ flexDirection: 'row', marginTop: 10, marginBottom: 8 }}>
+        <View style={[s.wsField, { borderColor: tc.deep, flex: 1 }]}>
+          <Text style={{ color: tc.deep, fontFamily: 'Helvetica-Bold', fontSize: sc.q - 0.5 }}>Numm:</Text>
+          <Text> </Text>
+        </View>
+        <View style={[s.wsField, { borderColor: tc.deep, width: 150, marginRight: 0 }]}>
+          <Text style={{ color: tc.deep, fontFamily: 'Helvetica-Bold', fontSize: sc.q - 0.5 }}>Datum:</Text>
+          <Text> </Text>
+        </View>
       </View>
-      {w.intro ? <Text style={[s.wsIntro, { marginTop: 6 }]}>{w.intro}</Text> : null}
-      {w.blocks.map((b, i) => (
-        <WsBlock key={i} block={b} />
-      ))}
+
+      {w.intro ? (
+        <View style={[s.wsIntro, { backgroundColor: tc.light }]}>
+          <Text style={{ fontSize: sc.q, color: C.ink }}>{w.intro}</Text>
+        </View>
+      ) : null}
+
+      {w.blocks.map((b, i) => {
+        const isTask = b.kind !== 'heading' && b.kind !== 'instruction'
+        if (isTask) task += 1
+        return <WsBlock key={i} block={b} sc={sc} tc={tc} num={isTask ? task : null} />
+      })}
+
       <Text
         style={s.footer}
         render={({ pageNumber, totalPages }) =>
