@@ -103,6 +103,108 @@
             "vor Schneegestöber"
           ]
         ]
+      },
+      {
+        "label": "🏜️ Wüsten-Reise",
+        "description": "Die Reise führt durch eine heiße Wüste mit Sanddünen, Oasen und einem Wadi statt durch den Dschungel.",
+        "replace": [
+          [
+            "durch den Dschungel schleichen",
+            "durch den Sandsturm schleichen"
+          ],
+          [
+            "über Berge klettern",
+            "über Dünen klettern"
+          ],
+          [
+            "durch den Fluss schwimmen",
+            "durch das Wadi waten"
+          ],
+          [
+            "durch hohes Gras schleichen",
+            "durch heißen Sand schleichen"
+          ],
+          [
+            "über Steine springen",
+            "über Kakteen springen"
+          ],
+          [
+            "einen Berg hochklettern",
+            "eine Düne hochklettern"
+          ],
+          [
+            "vor Regen rennen",
+            "vor dem Sandsturm rennen"
+          ]
+        ]
+      },
+      {
+        "label": "🏴‍☠️ Piraten-Reise",
+        "description": "Die Kinder werden zu Piraten, die über das Deck wanken, an Klippen klettern und durch die Brandung schwimmen.",
+        "replace": [
+          [
+            "durch den Dschungel schleichen",
+            "über das Deck schleichen"
+          ],
+          [
+            "über Berge klettern",
+            "über Klippen klettern"
+          ],
+          [
+            "durch den Fluss schwimmen",
+            "durch die Brandung schwimmen"
+          ],
+          [
+            "durch hohes Gras schleichen",
+            "über schwankende Planken schleichen"
+          ],
+          [
+            "über Steine springen",
+            "über Felsen springen"
+          ],
+          [
+            "einen Berg hochklettern",
+            "den Mast hochklettern"
+          ],
+          [
+            "vor Regen rennen",
+            "vor dem Sturm rennen"
+          ]
+        ]
+      },
+      {
+        "label": "⛰️ Berg-Expedition",
+        "description": "Eine Reise hoch ins Gebirge, über Geröll, durch Gletscherbäche und steile Felswände.",
+        "replace": [
+          [
+            "durch den Dschungel schleichen",
+            "durch das Geröllfeld schleichen"
+          ],
+          [
+            "über Berge klettern",
+            "über Felswände klettern"
+          ],
+          [
+            "durch den Fluss schwimmen",
+            "durch den Gletscherbach waten"
+          ],
+          [
+            "durch hohes Gras schleichen",
+            "durch tiefen Schnee schleichen"
+          ],
+          [
+            "über Steine springen",
+            "über Felsblöcke springen"
+          ],
+          [
+            "einen Berg hochklettern",
+            "einen Gipfel hochklettern"
+          ],
+          [
+            "vor Regen rennen",
+            "vor dem Schneesturm rennen"
+          ]
+        ]
       }
     ]
   },
@@ -194,6 +296,60 @@
             "Urteile"
           ]
         ]
+      },
+      {
+        "label": "⚓ Kapitän",
+        "description": "Die Jugendlichen steuern als Kapitäne ihre eigene Mediennutzung und halten Kurs im Logbuch.",
+        "replace": [
+          [
+            "zu Detektiven",
+            "zu Kapitänen"
+          ],
+          [
+            "Der Detektiv-Auftrag",
+            "Der Kapitäns-Auftrag"
+          ],
+          [
+            "ein Detektiv sammelt Spuren, keine Beweise gegen sich selbst",
+            "ein Kapitän liest die Zeichen des Wetters, nicht Vorwürfe gegen sich selbst"
+          ]
+        ]
+      },
+      {
+        "label": "🐝 Naturforscher",
+        "description": "Als Naturforscher beobachten die Jugendlichen ihre Mediennutzung wie Verhalten in der Wildnis.",
+        "replace": [
+          [
+            "zu Detektiven",
+            "zu Naturforschern"
+          ],
+          [
+            "Der Detektiv-Auftrag",
+            "Der Forscher-Auftrag"
+          ],
+          [
+            "ein Detektiv sammelt Spuren, keine Beweise gegen sich selbst",
+            "ein Naturforscher sammelt Beobachtungen, keine Beweise gegen sich selbst"
+          ]
+        ]
+      },
+      {
+        "label": "🏴‍☠️ Schatzsucher",
+        "description": "Die Jugendlichen werden zu Schatzsuchern, die in ihrer Mediennutzung wertvolle Wohlfühl-Quellen aufspüren.",
+        "replace": [
+          [
+            "zu Detektiven",
+            "zu Schatzsuchern"
+          ],
+          [
+            "Der Detektiv-Auftrag",
+            "Der Schatzsucher-Auftrag"
+          ],
+          [
+            "ein Detektiv sammelt Spuren, keine Beweise gegen sich selbst",
+            "ein Schatzsucher sammelt Hinweise, keine Vorwürfe gegen sich selbst"
+          ]
+        ]
       }
     ]
   },
@@ -255,6 +411,144 @@
           [
             "das Wasser getrennt",
             "die Lava getrennt"
+          ]
+        ]
+      },
+      {
+        "label": "🌳 Baumhäuser",
+        "description": "Statt zweier Inseln verbinden die Kinder zwei Baumhäuser mit einer Seilbrücke über die Lichtung.",
+        "replace": [
+          [
+            "zwischen zwei \"Inseln\"",
+            "zwischen zwei \"Baumhäusern\""
+          ],
+          [
+            "Die zwei Inseln",
+            "Die zwei Baumhäuser"
+          ],
+          [
+            "zwei markierten \"Inseln\"",
+            "zwei markierten \"Baumhäusern\""
+          ],
+          [
+            "ihr beide wohnt auf zwei kleinen Inseln, die durch das Wasser getrennt sind",
+            "ihr beide wohnt in zwei kleinen Baumhäusern, die durch eine Lichtung getrennt sind"
+          ],
+          [
+            "Eine Insel allein kann keine Brücke bauen",
+            "Ein Baumhaus allein kann keine Brücke bauen"
+          ],
+          [
+            "wenn beide Inseln zusammenarbeiten",
+            "wenn beide Baumhäuser zusammenarbeiten"
+          ],
+          [
+            "zwischen den beiden Inseln",
+            "zwischen den beiden Baumhäusern"
+          ],
+          [
+            "Eine Brücke verbindet zwei Inseln",
+            "Eine Brücke verbindet zwei Baumhäuser"
+          ],
+          [
+            "2 Stühle/Bücherstapel/Becher als \"Inseln\"",
+            "2 Stühle/Bücherstapel/Becher als \"Baumhäuser\""
+          ],
+          [
+            "größerer Inselabstand",
+            "größerer Baumhausabstand"
+          ]
+        ]
+      },
+      {
+        "label": "🏰 Burgtürme",
+        "description": "Zwei Burgtürme werden über den Burggraben hinweg mit einer Zugbrücke verbunden.",
+        "replace": [
+          [
+            "zwischen zwei \"Inseln\"",
+            "zwischen zwei \"Burgtürmen\""
+          ],
+          [
+            "Die zwei Inseln",
+            "Die zwei Burgtürme"
+          ],
+          [
+            "zwei markierten \"Inseln\"",
+            "zwei markierten \"Burgtürmen\""
+          ],
+          [
+            "ihr beide wohnt auf zwei kleinen Inseln, die durch das Wasser getrennt sind",
+            "ihr beide wohnt in zwei kleinen Burgtürmen, die durch den Burggraben getrennt sind"
+          ],
+          [
+            "Eine Insel allein kann keine Brücke bauen",
+            "Ein Turm allein kann keine Brücke bauen"
+          ],
+          [
+            "wenn beide Inseln zusammenarbeiten",
+            "wenn beide Türme zusammenarbeiten"
+          ],
+          [
+            "zwischen den beiden Inseln",
+            "zwischen den beiden Burgtürmen"
+          ],
+          [
+            "Eine Brücke verbindet zwei Inseln",
+            "Eine Brücke verbindet zwei Burgtürme"
+          ],
+          [
+            "2 Stühle/Bücherstapel/Becher als \"Inseln\"",
+            "2 Stühle/Bücherstapel/Becher als \"Burgtürme\""
+          ],
+          [
+            "größerer Inselabstand",
+            "größerer Grabenabstand"
+          ]
+        ]
+      },
+      {
+        "label": "🌌 Raumstationen",
+        "description": "Zwei Raumstationen werden durch einen Andock-Tunnel über das leere All verbunden.",
+        "replace": [
+          [
+            "zwischen zwei \"Inseln\"",
+            "zwischen zwei \"Raumstationen\""
+          ],
+          [
+            "Die zwei Inseln",
+            "Die zwei Raumstationen"
+          ],
+          [
+            "zwei markierten \"Inseln\"",
+            "zwei markierten \"Raumstationen\""
+          ],
+          [
+            "ihr beide wohnt auf zwei kleinen Inseln, die durch das Wasser getrennt sind",
+            "ihr beide wohnt auf zwei kleinen Raumstationen, die durch das leere All getrennt sind"
+          ],
+          [
+            "Eine Insel allein kann keine Brücke bauen",
+            "Eine Station allein kann keine Brücke bauen"
+          ],
+          [
+            "wenn beide Inseln zusammenarbeiten",
+            "wenn beide Stationen zusammenarbeiten"
+          ],
+          [
+            "zwischen den beiden Inseln",
+            "zwischen den beiden Raumstationen"
+          ],
+          [
+            "Eine Brücke verbindet zwei Inseln",
+            "Eine Brücke verbindet zwei Raumstationen"
+          ],
+          [
+            "2 Stühle/Bücherstapel/Becher als \"Inseln\"",
+            "2 Stühle/Bücherstapel/Becher als \"Raumstationen\""
+          ],
+          [
+            "größerer Inselabstand",
+            "größerer Stationsabstand"
           ]
         ]
       }
@@ -424,6 +718,192 @@
             "Forscherin"
           ]
         ]
+      },
+      {
+        "label": "🦉 Gefühls-Späher",
+        "description": "Die Kinder werden zu Gefühls-Spähern, die im Beobachtungsposten Hinweise sammeln und Gefühle erspähen.",
+        "replace": [
+          [
+            "'Gefühls-Detektiv:innen'",
+            "'Gefühls-Späher:innen'"
+          ],
+          [
+            "Willkommen im Gefühls-Detektivbüro",
+            "Willkommen im Gefühls-Beobachtungsposten"
+          ],
+          [
+            "Detektiv:innen erraten Gefühle nicht einfach",
+            "Späher:innen erraten Gefühle nicht einfach"
+          ],
+          [
+            "Detektiv-Teams ermitteln an den Fall-Stationen",
+            "Späher-Teams ermitteln an den Fall-Stationen"
+          ],
+          [
+            "Die Detektiv-Teams",
+            "Die Späher-Teams"
+          ],
+          [
+            "eine gute Detektivin",
+            "eine gute Späherin"
+          ],
+          [
+            "Der eigene Fall und der Detektiv-Ausweis",
+            "Der eigene Fall und der Späher-Ausweis"
+          ],
+          [
+            "den Detektivblick auf sich selbst",
+            "den Späherblick auf sich selbst"
+          ],
+          [
+            "dem Detektiv-Merksatz",
+            "dem Späher-Merksatz"
+          ],
+          [
+            "'geprüften Gefühls-Detektiv:innen'",
+            "'geprüften Gefühls-Späher:innen'"
+          ],
+          [
+            "Mein Spur-Zettel und Detektiv-Ausweis",
+            "Mein Spur-Zettel und Späher-Ausweis"
+          ],
+          [
+            "Gute Detektiv:innen raten nicht",
+            "Gute Späher:innen raten nicht"
+          ],
+          [
+            "Mein Detektiv-Ausweis: Spuren bei mir selbst",
+            "Mein Späher-Ausweis: Spuren bei mir selbst"
+          ],
+          [
+            "Profi-Detektiv:in",
+            "Profi-Späher:in"
+          ]
+        ]
+      },
+      {
+        "label": "⚕️ Gefühls-Doktor",
+        "description": "Die Kinder werden zu Gefühls-Doktoren in der Praxis, die Symptome lesen und vorsichtig nachfragen.",
+        "replace": [
+          [
+            "'Gefühls-Detektiv:innen'",
+            "'Gefühls-Doktor:innen'"
+          ],
+          [
+            "Willkommen im Gefühls-Detektivbüro",
+            "Willkommen in der Gefühls-Praxis"
+          ],
+          [
+            "Detektiv:innen erraten Gefühle nicht einfach",
+            "Doktor:innen erraten Gefühle nicht einfach"
+          ],
+          [
+            "Detektiv-Teams ermitteln an den Fall-Stationen",
+            "Doktor-Teams ermitteln an den Fall-Stationen"
+          ],
+          [
+            "Die Detektiv-Teams",
+            "Die Doktor-Teams"
+          ],
+          [
+            "eine gute Detektivin",
+            "eine gute Ärztin"
+          ],
+          [
+            "Der eigene Fall und der Detektiv-Ausweis",
+            "Der eigene Fall und der Doktor-Ausweis"
+          ],
+          [
+            "den Detektivblick auf sich selbst",
+            "den Doktorblick auf sich selbst"
+          ],
+          [
+            "dem Detektiv-Merksatz",
+            "dem Doktor-Merksatz"
+          ],
+          [
+            "'geprüften Gefühls-Detektiv:innen'",
+            "'geprüften Gefühls-Doktor:innen'"
+          ],
+          [
+            "Mein Spur-Zettel und Detektiv-Ausweis",
+            "Mein Spur-Zettel und Doktor-Ausweis"
+          ],
+          [
+            "Gute Detektiv:innen raten nicht",
+            "Gute Doktor:innen raten nicht"
+          ],
+          [
+            "Mein Detektiv-Ausweis: Spuren bei mir selbst",
+            "Mein Doktor-Ausweis: Spuren bei mir selbst"
+          ],
+          [
+            "Profi-Detektiv:in",
+            "Profi-Doktor:in"
+          ]
+        ]
+      },
+      {
+        "label": "🌟 Gefühls-Sternsucher",
+        "description": "Die Kinder werden zu Sternsuchern im Observatorium, die feine Gefühls-Signale am Himmel der Mimik entdecken.",
+        "replace": [
+          [
+            "'Gefühls-Detektiv:innen'",
+            "'Gefühls-Sternsucher:innen'"
+          ],
+          [
+            "Willkommen im Gefühls-Detektivbüro",
+            "Willkommen im Gefühls-Observatorium"
+          ],
+          [
+            "Detektiv:innen erraten Gefühle nicht einfach",
+            "Sternsucher:innen erraten Gefühle nicht einfach"
+          ],
+          [
+            "Detektiv-Teams ermitteln an den Fall-Stationen",
+            "Sternsucher-Teams ermitteln an den Fall-Stationen"
+          ],
+          [
+            "Die Detektiv-Teams",
+            "Die Sternsucher-Teams"
+          ],
+          [
+            "eine gute Detektivin",
+            "eine gute Sternsucherin"
+          ],
+          [
+            "Der eigene Fall und der Detektiv-Ausweis",
+            "Der eigene Fall und der Sternsucher-Ausweis"
+          ],
+          [
+            "den Detektivblick auf sich selbst",
+            "den Sternsucherblick auf sich selbst"
+          ],
+          [
+            "dem Detektiv-Merksatz",
+            "dem Sternsucher-Merksatz"
+          ],
+          [
+            "'geprüften Gefühls-Detektiv:innen'",
+            "'geprüften Gefühls-Sternsucher:innen'"
+          ],
+          [
+            "Mein Spur-Zettel und Detektiv-Ausweis",
+            "Mein Spur-Zettel und Sternsucher-Ausweis"
+          ],
+          [
+            "Gute Detektiv:innen raten nicht",
+            "Gute Sternsucher:innen raten nicht"
+          ],
+          [
+            "Mein Detektiv-Ausweis: Spuren bei mir selbst",
+            "Mein Sternsucher-Ausweis: Spuren bei mir selbst"
+          ],
+          [
+            "Profi-Detektiv:in",
+            "Profi-Sternsucher:in"
+          ]
+        ]
       }
     ]
   },
@@ -513,6 +993,72 @@
           [
             "Mission",
             "Aktion"
+          ]
+        ]
+      },
+      {
+        "label": "⭐ Sternenfreund",
+        "description": "Jedes Kind wird zum stillen Sternenfreund, der einem geheimen Schützling unbemerkt Licht und Gutes schenkt.",
+        "replace": [
+          [
+            "zur stillen guten Fee",
+            "zum stillen Sternenfreund"
+          ],
+          [
+            "für ein bestimmtes Kind zur stillen guten Fee",
+            "für ein bestimmtes Kind zum stillen Sternenfreund"
+          ],
+          [
+            "Ich war deine geheime gute Fee",
+            "Ich war dein geheimer Sternenfreund"
+          ],
+          [
+            "Du bist die stille gute Fee für ein Kind aus unserer Klasse",
+            "Du bist der stille Sternenfreund für ein Kind aus unserer Klasse"
+          ]
+        ]
+      },
+      {
+        "label": "🦸 Heimlicher Held",
+        "description": "Jedes Kind wird zum heimlichen Helden, der seinem geheimen Schützling unerkannt Gutes tut.",
+        "replace": [
+          [
+            "zur stillen guten Fee",
+            "zum heimlichen Helden"
+          ],
+          [
+            "für ein bestimmtes Kind zur stillen guten Fee",
+            "für ein bestimmtes Kind zum heimlichen Helden"
+          ],
+          [
+            "Ich war deine geheime gute Fee",
+            "Ich war dein heimlicher Held"
+          ],
+          [
+            "Du bist die stille gute Fee für ein Kind aus unserer Klasse",
+            "Du bist der heimliche Held für ein Kind aus unserer Klasse"
+          ]
+        ]
+      },
+      {
+        "label": "🌻 Sonnenbote",
+        "description": "Jedes Kind wird zum stillen Sonnenboten, der einem geheimen Schützling unbemerkt Wärme bringt.",
+        "replace": [
+          [
+            "zur stillen guten Fee",
+            "zum stillen Sonnenboten"
+          ],
+          [
+            "für ein bestimmtes Kind zur stillen guten Fee",
+            "für ein bestimmtes Kind zum stillen Sonnenboten"
+          ],
+          [
+            "Ich war deine geheime gute Fee",
+            "Ich war dein geheimer Sonnenbote"
+          ],
+          [
+            "Du bist die stille gute Fee für ein Kind aus unserer Klasse",
+            "Du bist der stille Sonnenbote für ein Kind aus unserer Klasse"
           ]
         ]
       }
@@ -662,6 +1208,216 @@
             "Rennwagen"
           ]
         ]
+      },
+      {
+        "label": "🚂 Lokführer",
+        "description": "Die Kinder steuern ihre Konzentration wie ein Lokführer seine Eisenbahn sicher über die Gleise.",
+        "replace": [
+          [
+            "Konzentratiouns-Kapitän",
+            "Konzentratiouns-Lokführer"
+          ],
+          [
+            "Kapitäns-Runde",
+            "Lokführer-Runde"
+          ],
+          [
+            "Logbuch des Kapitäns",
+            "Fahrtenbuch des Lokführers"
+          ],
+          [
+            "Kapitän deines Schiffes",
+            "Lokführer deiner Eisenbahn"
+          ],
+          [
+            "guter Kapitän",
+            "guter Lokführer"
+          ],
+          [
+            "Kapitän",
+            "Lokführer"
+          ],
+          [
+            "Steuern eines Schiffes",
+            "Fahren einer Eisenbahn"
+          ],
+          [
+            "Das Schiff und die Wellen",
+            "Die Lok und die Hindernisse"
+          ],
+          [
+            "deines Schiffes",
+            "deiner Eisenbahn"
+          ],
+          [
+            "Die Wellen sind Ablenkungen",
+            "Die Hindernisse sind Ablenkungen"
+          ],
+          [
+            "über die Wellen",
+            "über die Hindernisse"
+          ],
+          [
+            "zurück auf Kurs",
+            "zurück auf die Gleise"
+          ],
+          [
+            "typische „Wellen\"",
+            "typische „Hindernisse\""
+          ],
+          [
+            "das Steuer-Zeichen (Hände ans gedachte Steuerrad)",
+            "das Hebel-Zeichen (Hände an den gedachten Fahrhebel)"
+          ],
+          [
+            "zurücksteuern",
+            "zurücklenken"
+          ],
+          [
+            "Schiff/Steuerrad",
+            "Lok/Fahrhebel"
+          ]
+        ]
+      },
+      {
+        "label": "🎈 Heißluftballon",
+        "description": "Die Kinder lenken ihre Konzentration wie ein Ballonfahrer ruhig durch den Himmel.",
+        "replace": [
+          [
+            "Konzentratiouns-Kapitän",
+            "Konzentratiouns-Ballonfahrer"
+          ],
+          [
+            "Kapitäns-Runde",
+            "Ballonfahrer-Runde"
+          ],
+          [
+            "Logbuch des Kapitäns",
+            "Flugbuch des Ballonfahrers"
+          ],
+          [
+            "Kapitän deines Schiffes",
+            "Ballonfahrer deines Heißluftballons"
+          ],
+          [
+            "guter Kapitän",
+            "guter Ballonfahrer"
+          ],
+          [
+            "Kapitän",
+            "Ballonfahrer"
+          ],
+          [
+            "Steuern eines Schiffes",
+            "Lenken eines Heißluftballons"
+          ],
+          [
+            "Das Schiff und die Wellen",
+            "Der Ballon und die Windböen"
+          ],
+          [
+            "deines Schiffes",
+            "deines Heißluftballons"
+          ],
+          [
+            "Die Wellen sind Ablenkungen",
+            "Die Windböen sind Ablenkungen"
+          ],
+          [
+            "über die Wellen",
+            "über die Windböen"
+          ],
+          [
+            "zurück auf Kurs",
+            "zurück in die Höhe"
+          ],
+          [
+            "typische „Wellen\"",
+            "typische „Windböen\""
+          ],
+          [
+            "das Steuer-Zeichen (Hände ans gedachte Steuerrad)",
+            "das Brenner-Zeichen (Hände an den gedachten Brenner)"
+          ],
+          [
+            "zurücksteuern",
+            "zurücklenken"
+          ],
+          [
+            "Schiff/Steuerrad",
+            "Ballon/Brenner"
+          ]
+        ]
+      },
+      {
+        "label": "🐎 Reiter",
+        "description": "Die Kinder führen ihre Konzentration wie ein Reiter sein Pferd ruhig über die Strecke.",
+        "replace": [
+          [
+            "Konzentratiouns-Kapitän",
+            "Konzentratiouns-Reiter"
+          ],
+          [
+            "Kapitäns-Runde",
+            "Reiter-Runde"
+          ],
+          [
+            "Logbuch des Kapitäns",
+            "Reittagebuch des Reiters"
+          ],
+          [
+            "Kapitän deines Schiffes",
+            "Reiter deines Pferdes"
+          ],
+          [
+            "guter Kapitän",
+            "guter Reiter"
+          ],
+          [
+            "Kapitän",
+            "Reiter"
+          ],
+          [
+            "Steuern eines Schiffes",
+            "Lenken eines Pferdes"
+          ],
+          [
+            "Das Schiff und die Wellen",
+            "Das Pferd und die Hindernisse"
+          ],
+          [
+            "deines Schiffes",
+            "deines Pferdes"
+          ],
+          [
+            "Die Wellen sind Ablenkungen",
+            "Die Hindernisse sind Ablenkungen"
+          ],
+          [
+            "über die Wellen",
+            "über die Hindernisse"
+          ],
+          [
+            "zurück auf Kurs",
+            "zurück auf den Weg"
+          ],
+          [
+            "typische „Wellen\"",
+            "typische „Hindernisse\""
+          ],
+          [
+            "das Steuer-Zeichen (Hände ans gedachte Steuerrad)",
+            "das Zügel-Zeichen (Hände an die gedachten Zügel)"
+          ],
+          [
+            "zurücksteuern",
+            "zurücklenken"
+          ],
+          [
+            "Schiff/Steuerrad",
+            "Pferd/Zügel"
+          ]
+        ]
       }
     ]
   },
@@ -707,6 +1463,60 @@
           [
             "Kurs",
             "Fahrplan"
+          ]
+        ]
+      },
+      {
+        "label": "🏰 Burgherr",
+        "description": "Die Kinder planen ihre Lern-Routine wie ein Burgherr, der seine Burg klug verwaltet.",
+        "replace": [
+          [
+            "Hausaufgaben-Kapitän",
+            "Hausaufgaben-Burgherr"
+          ],
+          [
+            "Plan für den Kapitän",
+            "Plan für den Burgherrn"
+          ],
+          [
+            "Kapitän",
+            "Burgherr"
+          ]
+        ]
+      },
+      {
+        "label": "🐝 Bienenkönigin",
+        "description": "Die Kinder organisieren ihre Lern-Routine so geschickt wie eine Bienenkönigin ihren Bienenstock.",
+        "replace": [
+          [
+            "Hausaufgaben-Kapitän",
+            "Hausaufgaben-Bienenkönigin"
+          ],
+          [
+            "Plan für den Kapitän",
+            "Plan für die Bienenkönigin"
+          ],
+          [
+            "Kapitän",
+            "Bienenkönigin"
+          ]
+        ]
+      },
+      {
+        "label": "🦁 Löwen-Anführer",
+        "description": "Die Kinder steuern ihre Lern-Routine wie ein Löwen-Anführer, der sein Rudel gut führt.",
+        "replace": [
+          [
+            "Hausaufgaben-Kapitän",
+            "Hausaufgaben-Löwe"
+          ],
+          [
+            "Plan für den Kapitän",
+            "Plan für den Löwen"
+          ],
+          [
+            "Kapitän",
+            "Löwe"
           ]
         ]
       }
@@ -790,6 +1600,88 @@
           [
             "Gestrandet",
             "Auf der Eisscholle gestrandet"
+          ]
+        ]
+      },
+      {
+        "label": "🚀 Raumschiff-Crew",
+        "description": "Die Gruppe ist mit dem Raumschiff auf einem fremden Planeten gelandet und muss gemeinsam einen Plan zum Weiterflug schmieden.",
+        "replace": [
+          [
+            "Den Insel-Plang",
+            "De Planéiten-Plang"
+          ],
+          [
+            "auf einer einsamen Insel",
+            "auf einem einsamen Planeten"
+          ],
+          [
+            "auf einer Insel",
+            "auf einem fremden Planeten"
+          ],
+          [
+            "Insel",
+            "Planet"
+          ],
+          [
+            "Rettungsplan",
+            "Startplan"
+          ],
+          [
+            "„geretteten Gegenständen\"",
+            "„geretteten Ausrüstungsteilen\""
+          ]
+        ]
+      },
+      {
+        "label": "🏜️ Wüsten-Karawane",
+        "description": "Die Gruppe sitzt mitten in der Wüste fest und muss gemeinsam einen Plan finden, um die nächste Oase zu erreichen.",
+        "replace": [
+          [
+            "Den Insel-Plang",
+            "De Wüsten-Plang"
+          ],
+          [
+            "auf einer einsamen Insel",
+            "in einer endlosen Wüste"
+          ],
+          [
+            "auf einer Insel",
+            "mitten in der Wüste"
+          ],
+          [
+            "Insel",
+            "Wüste"
+          ]
+        ]
+      },
+      {
+        "label": "⛰️ Bergsteiger-Seilschaft",
+        "description": "Die Gruppe ist auf einem hohen Berg eingeschneit und muss als Seilschaft gemeinsam einen Plan zum Abstieg machen.",
+        "replace": [
+          [
+            "Den Insel-Plang",
+            "De Bierg-Plang"
+          ],
+          [
+            "auf einer einsamen Insel",
+            "auf einem einsamen Berggipfel"
+          ],
+          [
+            "auf einer Insel",
+            "auf einem hohen Berg"
+          ],
+          [
+            "Insel",
+            "Berg"
+          ],
+          [
+            "Rettungsplan",
+            "Abstiegsplan"
+          ],
+          [
+            "„geretteten Gegenständen\"",
+            "„geretteten Ausrüstungsteilen\""
           ]
         ]
       }
@@ -947,6 +1839,232 @@
             "Entdecker"
           ]
         ]
+      },
+      {
+        "label": "🏴‍☠️ Schatzsucher",
+        "description": "Die Kinder werden Schatzsucher, die mit Fernrohr und Spiegel den wertvollsten Schatz der Welt erforschen: sich selbst.",
+        "replace": [
+          [
+            "Der Ich-Detektiv mit der Lupe",
+            "Der Ich-Schatzsucher mit dem Fernrohr"
+          ],
+          [
+            "Detektivinnen und Detektiven",
+            "Schatzsucherinnen und Schatzsuchern"
+          ],
+          [
+            "Die Detektiv-Mission",
+            "Die Schatzsucher-Mission"
+          ],
+          [
+            "Mein Detektiv-Steckbrief",
+            "Mein Schatzsucher-Steckbrief"
+          ],
+          [
+            "Detektiv-Schatz",
+            "Schatzsucher-Schatz"
+          ],
+          [
+            "echte Ich-Detektive",
+            "echte Ich-Schatzsucher"
+          ],
+          [
+            "Ich-Detektive",
+            "Ich-Schatzsucher"
+          ],
+          [
+            "Detektive suchen Spuren",
+            "Schatzsucher suchen Spuren"
+          ],
+          [
+            "Detektive, findet eure Augen",
+            "Schatzsucher, findet eure Augen"
+          ],
+          [
+            "einen \"Detektiv-Hut\"",
+            "einen \"Schatzsucher-Hut\""
+          ],
+          [
+            "Detektivrahmung",
+            "Schatzsucher-Rahmung"
+          ],
+          [
+            "Detektiv-Bilder",
+            "Schatzsucher-Bilder"
+          ],
+          [
+            "Detektiv-Bild",
+            "Schatzsucher-Bild"
+          ],
+          [
+            "drei kurze Detektiv-Fragen",
+            "drei kurze Schatzsucher-Fragen"
+          ],
+          [
+            "Detektiv-Handschlag",
+            "Schatzsucher-Handschlag"
+          ],
+          [
+            "\"Ich-Detektiv-Wand\"",
+            "\"Ich-Schatzsucher-Wand\""
+          ],
+          [
+            "ein Stofftier oder Detektiv-Hut als Maskottchen",
+            "ein Stofftier oder Schatzsucher-Hut als Maskottchen"
+          ],
+          [
+            "eine Lupe (echt oder aus Pappe gebastelt)",
+            "ein Fernrohr (echt oder aus Pappe gebastelt)"
+          ]
+        ]
+      },
+      {
+        "label": "🐝 Bienen-Forscher",
+        "description": "Die Kinder werden kleine Bienen-Forscher, die mit Lupe und Spiegel das spannendste Geheimnis der Wiese erforschen: sich selbst.",
+        "replace": [
+          [
+            "Der Ich-Detektiv mit der Lupe",
+            "Der Ich-Bienen-Forscher mit der Lupe"
+          ],
+          [
+            "Detektivinnen und Detektiven",
+            "Bienen-Forscherinnen und Bienen-Forschern"
+          ],
+          [
+            "Die Detektiv-Mission",
+            "Die Bienen-Mission"
+          ],
+          [
+            "Mein Detektiv-Steckbrief",
+            "Mein Bienen-Steckbrief"
+          ],
+          [
+            "Detektiv-Schatz",
+            "Bienen-Schatz"
+          ],
+          [
+            "echte Ich-Detektive",
+            "echte Ich-Bienen-Forscher"
+          ],
+          [
+            "Ich-Detektive",
+            "Ich-Bienen-Forscher"
+          ],
+          [
+            "Detektive suchen Spuren",
+            "Bienen suchen Spuren"
+          ],
+          [
+            "Detektive, findet eure Augen",
+            "Bienen-Forscher, findet eure Augen"
+          ],
+          [
+            "einen \"Detektiv-Hut\"",
+            "einen \"Bienen-Fühler\""
+          ],
+          [
+            "Detektivrahmung",
+            "Bienen-Rahmung"
+          ],
+          [
+            "Detektiv-Bilder",
+            "Bienen-Bilder"
+          ],
+          [
+            "Detektiv-Bild",
+            "Bienen-Bild"
+          ],
+          [
+            "drei kurze Detektiv-Fragen",
+            "drei kurze Bienen-Fragen"
+          ],
+          [
+            "Detektiv-Handschlag",
+            "Bienen-Handschlag"
+          ],
+          [
+            "\"Ich-Detektiv-Wand\"",
+            "\"Ich-Bienen-Wand\""
+          ],
+          [
+            "ein Stofftier oder Detektiv-Hut als Maskottchen",
+            "ein Stofftier oder Bienen-Fühler als Maskottchen"
+          ]
+        ]
+      },
+      {
+        "label": "🚒 Feuerwehr-Spürnasen",
+        "description": "Die Kinder werden mutige Feuerwehrleute, die mit Lupe und Spiegel das wichtigste Geheimnis der Wache erforschen: sich selbst.",
+        "replace": [
+          [
+            "Der Ich-Detektiv mit der Lupe",
+            "Die Ich-Feuerwehr mit der Lupe"
+          ],
+          [
+            "Detektivinnen und Detektiven",
+            "Feuerwehrfrauen und Feuerwehrmännern"
+          ],
+          [
+            "Die Detektiv-Mission",
+            "Die Feuerwehr-Mission"
+          ],
+          [
+            "Mein Detektiv-Steckbrief",
+            "Mein Feuerwehr-Steckbrief"
+          ],
+          [
+            "Detektiv-Schatz",
+            "Feuerwehr-Schatz"
+          ],
+          [
+            "echte Ich-Detektive",
+            "echte Ich-Feuerwehrleute"
+          ],
+          [
+            "Ich-Detektive",
+            "Ich-Feuerwehrleute"
+          ],
+          [
+            "Detektive suchen Spuren",
+            "Feuerwehrleute suchen Spuren"
+          ],
+          [
+            "Detektive, findet eure Augen",
+            "Feuerwehrleute, findet eure Augen"
+          ],
+          [
+            "einen \"Detektiv-Hut\"",
+            "einen \"Feuerwehr-Helm\""
+          ],
+          [
+            "Detektivrahmung",
+            "Feuerwehr-Rahmung"
+          ],
+          [
+            "Detektiv-Bilder",
+            "Feuerwehr-Bilder"
+          ],
+          [
+            "Detektiv-Bild",
+            "Feuerwehr-Bild"
+          ],
+          [
+            "drei kurze Detektiv-Fragen",
+            "drei kurze Feuerwehr-Fragen"
+          ],
+          [
+            "Detektiv-Handschlag",
+            "Feuerwehr-Handschlag"
+          ],
+          [
+            "\"Ich-Detektiv-Wand\"",
+            "\"Ich-Feuerwehr-Wand\""
+          ],
+          [
+            "ein Stofftier oder Detektiv-Hut als Maskottchen",
+            "ein Stofftier oder Feuerwehr-Helm als Maskottchen"
+          ]
+        ]
       }
     ]
   },
@@ -1028,6 +2146,84 @@
           [
             "Detektiv",
             "Späher"
+          ]
+        ]
+      },
+      {
+        "label": "🦉 Eulen-Späher",
+        "description": "Als weise Eulen-Späher spüren die Kinder auf, wo Gefühle im Körper wohnen.",
+        "replace": [
+          [
+            "Der Körperdetektiv",
+            "Der Körper-Eulen-Späher"
+          ],
+          [
+            "Mein Körperdetektiv-Blatt",
+            "Mein Körper-Späher-Blatt"
+          ],
+          [
+            "Körperdetektive",
+            "Körper-Eulen-Späher"
+          ],
+          [
+            "Detektive für den eigenen Körper",
+            "Eulen-Späher für den eigenen Körper"
+          ],
+          [
+            "Ein Detektiv sucht Spuren",
+            "Eine Eule sucht Spuren"
+          ]
+        ]
+      },
+      {
+        "label": "🏔️ Bergführer",
+        "description": "Als mutige Bergführer erkunden die Kinder Schritt für Schritt, wo Gefühle im Körper wohnen.",
+        "replace": [
+          [
+            "Der Körperdetektiv",
+            "Der Körper-Bergführer"
+          ],
+          [
+            "Mein Körperdetektiv-Blatt",
+            "Mein Körper-Bergführer-Blatt"
+          ],
+          [
+            "Körperdetektive",
+            "Körper-Bergführer"
+          ],
+          [
+            "Detektive für den eigenen Körper",
+            "Bergführer für den eigenen Körper"
+          ],
+          [
+            "Ein Detektiv sucht Spuren",
+            "Ein Bergführer sucht Spuren"
+          ]
+        ]
+      },
+      {
+        "label": "🐬 Tiefsee-Taucher",
+        "description": "Als neugierige Tiefsee-Taucher erforschen die Kinder, wo Gefühle im Körper wohnen.",
+        "replace": [
+          [
+            "Der Körperdetektiv",
+            "Der Körper-Taucher"
+          ],
+          [
+            "Mein Körperdetektiv-Blatt",
+            "Mein Körper-Taucher-Blatt"
+          ],
+          [
+            "Körperdetektive",
+            "Körper-Taucher"
+          ],
+          [
+            "Detektive für den eigenen Körper",
+            "Taucher für den eigenen Körper"
+          ],
+          [
+            "Ein Detektiv sucht Spuren",
+            "Ein Taucher sucht Spuren"
           ]
         ]
       }
@@ -1177,6 +2373,132 @@
             "Reporter"
           ]
         ]
+      },
+      {
+        "label": "🏴‍☠️ Schatzsucher",
+        "description": "Die Jugendlichen segeln als Schatzsucher-Crew los und bergen die verborgenen Tricks, mit denen Apps sie an Bord halten.",
+        "replace": [
+          [
+            "Aufmerksamkeits-Detektiv:in",
+            "Aufmerksamkeits-Schatzsucher"
+          ],
+          [
+            "Detektiv:innen",
+            "Schatzsuchern"
+          ],
+          [
+            "Detektivteam",
+            "Schatzsucher-Team"
+          ],
+          [
+            "Like-Detektiv",
+            "Like-Schatzsucher"
+          ],
+          [
+            "Forscherteams",
+            "Schatzsucher-Teams"
+          ],
+          [
+            "Spurensuche",
+            "Schatzsuche"
+          ],
+          [
+            "Ermittlungskarten",
+            "Schatzkarten"
+          ],
+          [
+            "Ermittlungskarte",
+            "Schatzkarte"
+          ],
+          [
+            "Ermittlungsakte",
+            "Schatz-Logbuch"
+          ]
+        ]
+      },
+      {
+        "label": "🦖 Dino-Spurenleser",
+        "description": "Wie Paläontolog:innen graben die Jugendlichen die versteckten Aufmerksamkeits-Tricks der Apps Schicht für Schicht aus.",
+        "replace": [
+          [
+            "Aufmerksamkeits-Detektiv:in",
+            "Aufmerksamkeits-Spurenleser"
+          ],
+          [
+            "Detektiv:innen",
+            "Spurenlesern"
+          ],
+          [
+            "Detektivteam",
+            "Spurenleser-Team"
+          ],
+          [
+            "Like-Detektiv",
+            "Like-Spurenleser"
+          ],
+          [
+            "Forscherteams",
+            "Grabungs-Teams"
+          ],
+          [
+            "Spurensuche",
+            "Ausgrabung"
+          ],
+          [
+            "Ermittlungskarten",
+            "Grabungskarten"
+          ],
+          [
+            "Ermittlungskarte",
+            "Grabungskarte"
+          ],
+          [
+            "Ermittlungsakte",
+            "Grabungs-Tagebuch"
+          ]
+        ]
+      },
+      {
+        "label": "🧑‍💻 Code-Knacker",
+        "description": "Die Jugendlichen werden zu Code-Knacker:innen und entschlüsseln, mit welchen eingebauten Tricks Apps sie am Bildschirm festhalten.",
+        "replace": [
+          [
+            "Aufmerksamkeits-Detektiv:in",
+            "Aufmerksamkeits-Code-Knacker"
+          ],
+          [
+            "Detektiv:innen",
+            "Code-Knackern"
+          ],
+          [
+            "Detektivteam",
+            "Code-Knacker-Team"
+          ],
+          [
+            "Like-Detektiv",
+            "Like-Code-Knacker"
+          ],
+          [
+            "Forscherteams",
+            "Code-Teams"
+          ],
+          [
+            "Spurensuche",
+            "Code-Suche"
+          ],
+          [
+            "Ermittlungskarten",
+            "Analyse-Karten"
+          ],
+          [
+            "Ermittlungskarte",
+            "Analyse-Karte"
+          ],
+          [
+            "Ermittlungsakte",
+            "Analyse-Protokoll"
+          ]
+        ]
       }
     ]
   },
@@ -1320,6 +2642,120 @@
             "gleiten"
           ]
         ]
+      },
+      {
+        "label": "🏜️ Wüsten-Oasen",
+        "description": "Die Kinder reiten auf dem Gefühls-Kamel durch die Wüste zu vier Gefühls-Oasen und kommen am ruhigen Palmen-Hain an.",
+        "replace": [
+          [
+            "Inseln",
+            "Oasen"
+          ],
+          [
+            "Insel",
+            "Oase"
+          ],
+          [
+            "Gefühls-Boot",
+            "Gefühls-Kamel"
+          ],
+          [
+            "Fantasie-Boot",
+            "Fantasie-Kamel"
+          ],
+          [
+            "Boot",
+            "Kamel"
+          ],
+          [
+            "Ruhe-Strand",
+            "Ruhe-Hain"
+          ],
+          [
+            "rudern",
+            "schaukeln"
+          ],
+          [
+            "Wellen-Geräusche",
+            "Sand-Geräusche"
+          ]
+        ]
+      },
+      {
+        "label": "🎈 Himmels-Reise",
+        "description": "Die Kinder schweben im Gefühls-Luftschiff von Wolke zu Wolke und landen sanft auf dem ruhigen Regenbogen.",
+        "replace": [
+          [
+            "Inseln",
+            "Wolken"
+          ],
+          [
+            "Insel",
+            "Wolke"
+          ],
+          [
+            "Gefühls-Boot",
+            "Gefühls-Luftschiff"
+          ],
+          [
+            "Fantasie-Boot",
+            "Fantasie-Luftschiff"
+          ],
+          [
+            "Boot",
+            "Luftschiff"
+          ],
+          [
+            "Ruhe-Strand",
+            "Ruhe-Regenbogen"
+          ],
+          [
+            "rudern",
+            "schweben"
+          ],
+          [
+            "Wellen-Geräusche",
+            "Wind-Geräusche"
+          ]
+        ]
+      },
+      {
+        "label": "🍄 Zauber-Lichtung",
+        "description": "Die Kinder reiten auf dem Gefühls-Einhorn durch den Zauberwald zu vier Gefühls-Lichtungen und ruhen sich auf dem weichen Moos-Hügel aus.",
+        "replace": [
+          [
+            "Inseln",
+            "Lichtungen"
+          ],
+          [
+            "Insel",
+            "Lichtung"
+          ],
+          [
+            "Gefühls-Boot",
+            "Gefühls-Einhorn"
+          ],
+          [
+            "Fantasie-Boot",
+            "Fantasie-Einhorn"
+          ],
+          [
+            "Boot",
+            "Einhorn"
+          ],
+          [
+            "Ruhe-Strand",
+            "Ruhe-Hügel"
+          ],
+          [
+            "rudern",
+            "reiten"
+          ],
+          [
+            "Wellen-Geräusche",
+            "Wald-Geräusche"
+          ]
+        ]
       }
     ]
   },
@@ -1413,6 +2849,84 @@
           [
             "jagen",
             "aufspüren"
+          ]
+        ]
+      },
+      {
+        "label": "🐭 Lausch-Mäuse",
+        "description": "Die Kinder werden zu kleinen Lausch-Mäusen, die ganz leise durch den Raum schnüffeln und die feinsten Geräusche aufspüren.",
+        "replace": [
+          [
+            "Lauschmuscheln",
+            "Lausch-Mäuse"
+          ],
+          [
+            "Lauschmuschel",
+            "Lausch-Maus"
+          ],
+          [
+            "Geräusche-Jägern",
+            "Geräusche-Schnüfflern"
+          ],
+          [
+            "Geräusche-Jäger",
+            "Geräusche-Schnüffler"
+          ],
+          [
+            "Geräusche-Jagd",
+            "Geräusche-Schnüffel-Tour"
+          ]
+        ]
+      },
+      {
+        "label": "🦇 Lausch-Fledermäuse",
+        "description": "Die Kinder verwandeln sich in Lausch-Fledermäuse, die in der dunklen Höhle nur mit den Ohren die leisesten Geräusche finden.",
+        "replace": [
+          [
+            "Lauschmuscheln",
+            "Lausch-Fledermäuse"
+          ],
+          [
+            "Lauschmuschel",
+            "Lausch-Fledermaus"
+          ],
+          [
+            "Geräusche-Jägern",
+            "Geräusche-Spähern"
+          ],
+          [
+            "Geräusche-Jäger",
+            "Geräusche-Späher"
+          ],
+          [
+            "Geräusche-Jagd",
+            "Geräusche-Suche"
+          ]
+        ]
+      },
+      {
+        "label": "🐱 Lausch-Katzen",
+        "description": "Die Kinder werden zu Lausch-Katzen, die mit gespitzten Ohren lautlos durch den Raum pirschen und jedes leise Geräusch erlauschen.",
+        "replace": [
+          [
+            "Lauschmuscheln",
+            "Lausch-Katzen"
+          ],
+          [
+            "Lauschmuschel",
+            "Lausch-Katze"
+          ],
+          [
+            "Geräusche-Jägern",
+            "Geräusche-Pirschern"
+          ],
+          [
+            "Geräusche-Jäger",
+            "Geräusche-Pirscher"
+          ],
+          [
+            "Geräusche-Jagd",
+            "Geräusche-Pirsch"
           ]
         ]
       }
@@ -1586,6 +3100,120 @@
             "Praxistest"
           ]
         ]
+      },
+      {
+        "label": "🍞 Lösungs-Bäckerei",
+        "description": "Aus einem festgefahrenen Streit backen die Kinder in einer Ideen-Bäckerei viele Auswege und prüfen, welcher für beide Seiten schmeckt.",
+        "replace": [
+          [
+            "geschmiedete",
+            "gebackene"
+          ],
+          [
+            "schmiedest",
+            "bäckst"
+          ],
+          [
+            "schmieden",
+            "backen"
+          ],
+          [
+            "Schmiede",
+            "Bäckerei"
+          ],
+          [
+            "hämmern",
+            "kneten"
+          ],
+          [
+            "Funkenflug",
+            "Teigwirbel"
+          ],
+          [
+            "Härteprüfungs-Fragen",
+            "Geschmacksproben-Fragen"
+          ],
+          [
+            "Härteprüfung",
+            "Geschmacksprobe"
+          ]
+        ]
+      },
+      {
+        "label": "🧵 Lösungs-Schneiderei",
+        "description": "In einer Schneiderei nähen die Kinder aus einem Streit viele Auswege und prüfen bei einer Anprobe, welche Lösung beiden passt.",
+        "replace": [
+          [
+            "geschmiedete",
+            "genähte"
+          ],
+          [
+            "schmiedest",
+            "nähst"
+          ],
+          [
+            "schmieden",
+            "nähen"
+          ],
+          [
+            "Schmiede",
+            "Schneiderei"
+          ],
+          [
+            "hämmern",
+            "schneidern"
+          ],
+          [
+            "Funkenflug",
+            "Stoff-Wirbel"
+          ],
+          [
+            "Härteprüfungs-Fragen",
+            "Anprobe-Fragen"
+          ],
+          [
+            "Härteprüfung",
+            "Anprobe"
+          ]
+        ]
+      },
+      {
+        "label": "🌱 Lösungs-Gärtnerei",
+        "description": "In einer Gärtnerei pflanzen die Kinder aus einem Streit viele Auswege und prüfen bei der Reifeprüfung, welche Lösung für beide aufgeht.",
+        "replace": [
+          [
+            "geschmiedete",
+            "gepflanzte"
+          ],
+          [
+            "schmiedest",
+            "pflanzt"
+          ],
+          [
+            "schmieden",
+            "pflanzen"
+          ],
+          [
+            "Schmiede",
+            "Gärtnerei"
+          ],
+          [
+            "hämmern",
+            "säen"
+          ],
+          [
+            "Funkenflug",
+            "Samenflug"
+          ],
+          [
+            "Härteprüfungs-Fragen",
+            "Reifeprüfungs-Fragen"
+          ],
+          [
+            "Härteprüfung",
+            "Reifeprüfung"
+          ]
+        ]
       }
     ]
   },
@@ -1729,6 +3357,60 @@
             "Entdecker"
           ]
         ]
+      },
+      {
+        "label": "🏔️ Berg-Expedition",
+        "description": "Die Kinder werden zu Stille-Bergsteigern, die Woche für Woche einen Sinn erklimmen und am Ende eine Sinnes-Schau für die Parallelklasse aufbauen.",
+        "replace": [
+          [
+            "Forscher",
+            "Bergsteiger"
+          ],
+          [
+            "Forschung",
+            "Erkundung"
+          ],
+          [
+            "Ausstellung",
+            "Schau"
+          ]
+        ]
+      },
+      {
+        "label": "🕳️ Höhlen-Expedition",
+        "description": "Die Kinder werden zu Stille-Höhlen-Entdeckern, die Woche für Woche einen Sinn in der Tropfsteinhöhle erkunden und ihre Funde in einer Sinnes-Vorführung zeigen.",
+        "replace": [
+          [
+            "Forscher",
+            "Höhlen-Entdecker"
+          ],
+          [
+            "Forschung",
+            "Tour"
+          ],
+          [
+            "Ausstellung",
+            "Vorführung"
+          ]
+        ]
+      },
+      {
+        "label": "❄️ Polar-Expedition",
+        "description": "Die Kinder werden zu Stille-Polar-Spähern, die Woche für Woche einen Sinn im ewigen Eis untersuchen und am Ende eine Sinnes-Schau für die Parallelklasse aufbauen.",
+        "replace": [
+          [
+            "Forscher",
+            "Polar-Späher"
+          ],
+          [
+            "Forschung",
+            "Expedition"
+          ],
+          [
+            "Ausstellung",
+            "Schau"
+          ]
+        ]
       }
     ]
   },
@@ -1812,6 +3494,196 @@
             "Forscher"
           ]
         ]
+      },
+      {
+        "label": "🏴‍☠️ Piraten",
+        "description": "Zwei Piraten an verschiedenen Buchten geben sich geheime Schatzpläne nur über das Sprachrohr weiter und müssen genau senden und aufmerksam empfangen.",
+        "replace": [
+          [
+            "Funkgerät-Detektive",
+            "Sprachrohr-Piraten"
+          ],
+          [
+            "Funk-Detektiven",
+            "Sprachrohr-Piraten"
+          ],
+          [
+            "Funk-Detektive",
+            "Sprachrohr-Piraten"
+          ],
+          [
+            "Detektiv-Team",
+            "Piraten-Team"
+          ],
+          [
+            "Detektivin",
+            "Piratin"
+          ],
+          [
+            "Detektive",
+            "Piraten"
+          ],
+          [
+            "durchfunken",
+            "durchrufen"
+          ],
+          [
+            "weitergefunkt",
+            "weitergerufen"
+          ],
+          [
+            "Funkergebnis",
+            "Sprachrohr-Ergebnis"
+          ],
+          [
+            "Funkpartner",
+            "Piraten-Partner"
+          ],
+          [
+            "Funkregeln",
+            "Piraten-Regeln"
+          ],
+          [
+            "Funkgeräte",
+            "Sprachrohre"
+          ],
+          [
+            "Funkgerät",
+            "Sprachrohr"
+          ],
+          [
+            "Funkstation",
+            "Sprachrohr-Station"
+          ],
+          [
+            "Funkprotokoll",
+            "Piraten-Protokoll"
+          ],
+          [
+            "Funkwörter",
+            "Piraten-Wörter"
+          ],
+          [
+            "Funkmission",
+            "Piraten-Mission"
+          ],
+          [
+            "Funkbesprechung",
+            "Piraten-Besprechung"
+          ]
+        ]
+      },
+      {
+        "label": "🧙 Zauberer",
+        "description": "Zwei Magier in getrennten Türmen schicken sich Botschaften nur durch das Zauberhorn und üben dabei genaues Erklären und geduldiges Zuhören.",
+        "replace": [
+          [
+            "Funkgerät-Detektive",
+            "Zauberhorn-Magier"
+          ],
+          [
+            "Funk-Detektiven",
+            "Zauberhorn-Magiern"
+          ],
+          [
+            "Funk-Detektive",
+            "Zauberhorn-Magier"
+          ],
+          [
+            "Detektiv-Team",
+            "Magier-Team"
+          ],
+          [
+            "Detektivin",
+            "Zauberin"
+          ],
+          [
+            "Detektive",
+            "Magier"
+          ],
+          [
+            "durchfunken",
+            "durchrufen"
+          ],
+          [
+            "weitergefunkt",
+            "weitergerufen"
+          ],
+          [
+            "Funkergebnis",
+            "Zauber-Ergebnis"
+          ],
+          [
+            "Funkpartner",
+            "Zauber-Partner"
+          ],
+          [
+            "Funkregeln",
+            "Zauber-Regeln"
+          ],
+          [
+            "Funkgeräte",
+            "Zauberhörner"
+          ],
+          [
+            "Funkgerät",
+            "Zauberhorn"
+          ],
+          [
+            "Funkstation",
+            "Zauber-Station"
+          ],
+          [
+            "Funkprotokoll",
+            "Zauber-Protokoll"
+          ],
+          [
+            "Funkwörter",
+            "Zauberwörter"
+          ],
+          [
+            "Funkmission",
+            "Zauber-Mission"
+          ],
+          [
+            "Funkbesprechung",
+            "Zauber-Besprechung"
+          ]
+        ]
+      },
+      {
+        "label": "🚂 Lokführer",
+        "description": "Zwei Lokführer an verschiedenen Bahnhöfen stimmen sich nur über den Bahnfunk ab und üben, ihren Fahrplan klar durchzugeben und genau zuzuhören.",
+        "replace": [
+          [
+            "Funkgerät-Detektive",
+            "Funk-Lokführer"
+          ],
+          [
+            "Funk-Detektiven",
+            "Funk-Lokführern"
+          ],
+          [
+            "Funk-Detektive",
+            "Funk-Lokführer"
+          ],
+          [
+            "Detektiv-Team",
+            "Lokführer-Team"
+          ],
+          [
+            "Detektivin",
+            "Lokführerin"
+          ],
+          [
+            "Detektive",
+            "Lokführer"
+          ],
+          [
+            "geheimen Plan",
+            "geheimen Fahrplan"
+          ]
+        ]
       }
     ]
   },
@@ -1887,6 +3759,64 @@
             "Dschungel"
           ]
         ]
+      },
+      {
+        "label": "🌋 Vulkaninsel",
+        "description": "Ein Vulkanausbruch zwingt die Gruppe, gemeinsam eine Rangfolge geretteter Gegenstände im Konsens festzulegen.",
+        "replace": [
+          [
+            "Survival-Szenario",
+            "Vulkan-Szenario"
+          ],
+          [
+            "einsame Insel",
+            "rauchende Vulkaninsel"
+          ],
+          [
+            "Euer Boot ist gekentert",
+            "Der Vulkan ist ausgebrochen"
+          ]
+        ]
+      },
+      {
+        "label": "🏔️ Bergrettung",
+        "description": "Nach einem Unglück hoch am Berg muss das Team im Konsens entscheiden, welche Ausrüstung am wichtigsten ist.",
+        "replace": [
+          [
+            "Survival-Szenario",
+            "Berg-Szenario"
+          ],
+          [
+            "einsame Insel",
+            "einsame Bergspitze"
+          ],
+          [
+            "Euer Boot ist gekentert",
+            "Eure Seilbahn ist abgestürzt"
+          ]
+        ]
+      },
+      {
+        "label": "🏜️ Wüsten-Karawane",
+        "description": "In der endlosen Wüste gestrandet, einigt sich die Gruppe im Konsens auf die wichtigsten geretteten Dinge.",
+        "replace": [
+          [
+            "Survival-Szenario",
+            "Wüsten-Szenario"
+          ],
+          [
+            "auf eine einsame Insel",
+            "in eine endlose Wüste"
+          ],
+          [
+            "einsame Insel",
+            "endlose Wüste"
+          ],
+          [
+            "Euer Boot ist gekentert",
+            "Eure Karawane hat sich verirrt"
+          ]
+        ]
       }
     ]
   },
@@ -1944,6 +3874,72 @@
           [
             "Lava-Linie",
             "Sumpf-Linie"
+          ]
+        ]
+      },
+      {
+        "label": "🎪 Zirkus",
+        "description": "Eine fröhliche Zirkus-Show, bei der nicht die Schnellsten gewinnen, sondern das Team, das am besten zusammenarbeitet.",
+        "replace": [
+          [
+            "Olympiade",
+            "Zirkus-Show"
+          ],
+          [
+            "Olympiad",
+            "Zirkus"
+          ],
+          [
+            "Lava-Linie",
+            "Hochseil-Linie"
+          ],
+          [
+            "Sieger",
+            "Manegen-Stars"
+          ]
+        ]
+      },
+      {
+        "label": "🤠 Wilder Westen",
+        "description": "Eine Rodeo-Schau im Wilden Westen, bei der das Team mit dem besten Zusammenhalt zählt.",
+        "replace": [
+          [
+            "Olympiade",
+            "Rodeo-Schau"
+          ],
+          [
+            "Olympiad",
+            "Rodeo"
+          ],
+          [
+            "Lava-Linie",
+            "Schlucht-Linie"
+          ],
+          [
+            "Sieger",
+            "Cowboy-Helden"
+          ]
+        ]
+      },
+      {
+        "label": "🏖️ Strand-Spiele",
+        "description": "Eine bunte Strand-Meisterschaft, bei der nicht Tempo zählt, sondern wie gut das Team zusammenhält.",
+        "replace": [
+          [
+            "Olympiade",
+            "Strand-Meisterschaft"
+          ],
+          [
+            "Olympiad",
+            "Strandfest"
+          ],
+          [
+            "Lava-Linie",
+            "Wellen-Linie"
+          ],
+          [
+            "Sieger",
+            "Strandhelden"
           ]
         ]
       }
@@ -2063,6 +4059,132 @@
           [
             "Detektiv-Zeichen",
             "Späher-Zeichen"
+          ]
+        ]
+      },
+      {
+        "label": "🦉 Lausch-Eulen",
+        "description": "Als Lausch-Eulen gehen die Kinder auf leisem Streifzug durch den Schultag und üben, ganz still zu werden und genau hinzuhören.",
+        "replace": [
+          [
+            "Lauschdetektiven",
+            "Lausch-Eulen"
+          ],
+          [
+            "Lauschdetektive",
+            "Lausch-Eulen"
+          ],
+          [
+            "Detektiv-Ohren",
+            "Eulen-Ohren"
+          ],
+          [
+            "Detektiv-Zeichen",
+            "Eulen-Zeichen"
+          ],
+          [
+            "Detektiv-Spiel",
+            "Eulen-Spiel"
+          ],
+          [
+            "Geräusche-Safari",
+            "Geräusche-Streifzug"
+          ],
+          [
+            "Safari-Wegen",
+            "Streifzug-Wegen"
+          ],
+          [
+            "Safari",
+            "Streifzug"
+          ],
+          [
+            "auf die Pirsch",
+            "auf den Nachtflug"
+          ]
+        ]
+      },
+      {
+        "label": "🐱 Schleich-Katzen",
+        "description": "Als Schleich-Katzen pirschen die Kinder leise durch den Schultag und trainieren feines Hören und ruhiges Abwarten.",
+        "replace": [
+          [
+            "Lauschdetektiven",
+            "Lausch-Katzen"
+          ],
+          [
+            "Lauschdetektive",
+            "Lausch-Katzen"
+          ],
+          [
+            "Detektiv-Ohren",
+            "Katzen-Ohren"
+          ],
+          [
+            "Detektiv-Zeichen",
+            "Katzen-Zeichen"
+          ],
+          [
+            "Detektiv-Spiel",
+            "Katzen-Spiel"
+          ],
+          [
+            "Geräusche-Safari",
+            "Geräusche-Schleichtour"
+          ],
+          [
+            "Safari-Wegen",
+            "Schleichtour-Wegen"
+          ],
+          [
+            "Safari",
+            "Schleichtour"
+          ],
+          [
+            "auf die Pirsch",
+            "auf leise Samtpfoten"
+          ]
+        ]
+      },
+      {
+        "label": "🥷 Lausch-Ninjas",
+        "description": "Als Lausch-Ninjas bewegen sich die Kinder lautlos durch den Schultag und schärfen ihr genaues Hören und ihre Konzentration.",
+        "replace": [
+          [
+            "Lauschdetektiven",
+            "Lausch-Ninjas"
+          ],
+          [
+            "Lauschdetektive",
+            "Lausch-Ninjas"
+          ],
+          [
+            "Detektiv-Ohren",
+            "Ninja-Ohren"
+          ],
+          [
+            "Detektiv-Zeichen",
+            "Ninja-Zeichen"
+          ],
+          [
+            "Detektiv-Spiel",
+            "Ninja-Spiel"
+          ],
+          [
+            "Geräusche-Safari",
+            "Geräusche-Geheimmission"
+          ],
+          [
+            "Safari-Wegen",
+            "Geheimmission-Wegen"
+          ],
+          [
+            "Safari",
+            "Geheimmission"
+          ],
+          [
+            "auf die Pirsch",
+            "auf den Schleichpfad"
           ]
         ]
       }
@@ -2196,6 +4318,108 @@
             "Ein Späher prüft genau"
           ]
         ]
+      },
+      {
+        "label": "🐾 Spür-Hunde",
+        "description": "Als Spür-Hunde schnüffeln die Kinder an Alltagsszenen, finden die Stelle des Missverständnisses und üben das Nachfragen statt Vermuten.",
+        "replace": [
+          [
+            "Missverständnis-Detektiven",
+            "Missverständnis-Spürhunden"
+          ],
+          [
+            "Missverständnis-Detektive",
+            "Missverständnis-Spürhunde"
+          ],
+          [
+            "Detektiv-Auftrag",
+            "Spürhund-Auftrag"
+          ],
+          [
+            "Detektiv-Teams",
+            "Spürhund-Teams"
+          ],
+          [
+            "Detektiv-Satz",
+            "Spürhund-Satz"
+          ],
+          [
+            "Detektiv-Trick",
+            "Spürhund-Trick"
+          ],
+          [
+            "Ein Detektiv",
+            "Ein Spürhund"
+          ]
+        ]
+      },
+      {
+        "label": "🦊 Schlau-Füchse",
+        "description": "Als schlaue Füchse untersuchen die Kinder knifflige Alltagsszenen und lernen, lieber nachzufragen, als etwas falsch zu vermuten.",
+        "replace": [
+          [
+            "Missverständnis-Detektiven",
+            "Missverständnis-Füchsen"
+          ],
+          [
+            "Missverständnis-Detektive",
+            "Missverständnis-Füchse"
+          ],
+          [
+            "Detektiv-Auftrag",
+            "Fuchs-Auftrag"
+          ],
+          [
+            "Detektiv-Teams",
+            "Fuchs-Teams"
+          ],
+          [
+            "Detektiv-Satz",
+            "Fuchs-Satz"
+          ],
+          [
+            "Detektiv-Trick",
+            "Fuchs-Trick"
+          ],
+          [
+            "Ein Detektiv",
+            "Ein Fuchs"
+          ]
+        ]
+      },
+      {
+        "label": "🧙 Wort-Zauberer",
+        "description": "Als Wort-Zauberer durchschauen die Kinder Missverständnisse und üben einen Zauberspruch, der jeden Streit klären kann: das Nachfragen.",
+        "replace": [
+          [
+            "Missverständnis-Detektiven",
+            "Missverständnis-Zauberern"
+          ],
+          [
+            "Missverständnis-Detektive",
+            "Missverständnis-Zauberer"
+          ],
+          [
+            "Detektiv-Auftrag",
+            "Zauberer-Auftrag"
+          ],
+          [
+            "Detektiv-Teams",
+            "Zauberer-Teams"
+          ],
+          [
+            "Detektiv-Satz",
+            "Zauberspruch"
+          ],
+          [
+            "Detektiv-Trick",
+            "Zauberer-Trick"
+          ],
+          [
+            "Ein Detektiv",
+            "Ein Zauberer"
+          ]
+        ]
       }
     ]
   },
@@ -2303,6 +4527,196 @@
             "Strom-Punkt"
           ]
         ]
+      },
+      {
+        "label": "🏰 Ritterburg",
+        "description": "Die Verteidiger einer belagerten Burg müssen die Mauern gemeinsam reparieren, während ein heimlicher Verräter im Verborgenen wirkt.",
+        "replace": [
+          [
+            "Saboteur an Bord",
+            "Verräter in der Burg"
+          ],
+          [
+            "eines havarierten Raumschiffs",
+            "einer belagerten Burg"
+          ],
+          [
+            "ihr Raumschiff zu reparieren",
+            "ihre Burg zu verteidigen"
+          ],
+          [
+            "Raumschiffs",
+            "Burg"
+          ],
+          [
+            "an Bord",
+            "in der Burg"
+          ],
+          [
+            "Die Reparatur-Missionen",
+            "Die Reparatur-Aufträge"
+          ],
+          [
+            "Reparatur-Missionen",
+            "Reparatur-Aufträge"
+          ],
+          [
+            "Reparatur rechtzeitig",
+            "Verteidigung rechtzeitig"
+          ],
+          [
+            "als 'Missionen'",
+            "als 'Aufträge'"
+          ],
+          [
+            "Jede gelungene Mission",
+            "Jeder gelungene Auftrag"
+          ],
+          [
+            "Saboteur",
+            "Verräter"
+          ],
+          [
+            "Crew-Räte",
+            "Burg-Räte"
+          ],
+          [
+            "Rat der Crew",
+            "Rat der Burg"
+          ],
+          [
+            "Crew",
+            "Mannschaft"
+          ],
+          [
+            "Missionen",
+            "Aufträge"
+          ],
+          [
+            "Mission",
+            "Auftrag"
+          ],
+          [
+            "Energie-Punkte",
+            "Mauerstein-Punkte"
+          ],
+          [
+            "Energie-Punkt",
+            "Mauerstein-Punkt"
+          ]
+        ]
+      },
+      {
+        "label": "🎪 Zirkus-Truppe",
+        "description": "Eine Zirkustruppe muss gemeinsam die große Vorstellung vorbereiten, doch jemand will heimlich, dass die Show misslingt.",
+        "replace": [
+          [
+            "Saboteur an Bord",
+            "Störenfried im Zelt"
+          ],
+          [
+            "eines havarierten Raumschiffs",
+            "einer Zirkustruppe"
+          ],
+          [
+            "ihr Raumschiff zu reparieren",
+            "ihre Vorstellung vorzubereiten"
+          ],
+          [
+            "Reparatur rechtzeitig",
+            "Vorstellung rechtzeitig"
+          ],
+          [
+            "Die Reparatur",
+            "Die Vorbereitung"
+          ],
+          [
+            "an Bord",
+            "im Zelt"
+          ],
+          [
+            "Saboteur",
+            "Störenfried"
+          ],
+          [
+            "Crew-Räte",
+            "Truppen-Räte"
+          ],
+          [
+            "Rat der Crew",
+            "Rat der Truppe"
+          ],
+          [
+            "Crew",
+            "Truppe"
+          ],
+          [
+            "Missionen",
+            "Nummern"
+          ],
+          [
+            "Mission",
+            "Nummer"
+          ],
+          [
+            "Energie-Punkte",
+            "Applaus-Punkte"
+          ],
+          [
+            "Energie-Punkt",
+            "Applaus-Punkt"
+          ]
+        ]
+      },
+      {
+        "label": "🤿 Tauch-Team",
+        "description": "Ein Team von Tauchern muss in einer Forschungsstation gemeinsam Aufgaben lösen, während heimlich jemand gegen den Erfolg arbeitet.",
+        "replace": [
+          [
+            "Saboteur an Bord",
+            "Saboteur im Team"
+          ],
+          [
+            "eines havarierten Raumschiffs",
+            "einer beschädigten Forschungsstation"
+          ],
+          [
+            "ihr Raumschiff zu reparieren",
+            "ihre Station zu reparieren"
+          ],
+          [
+            "Raumschiffs",
+            "Forschungsstation"
+          ],
+          [
+            "an Bord",
+            "im Team"
+          ],
+          [
+            "Crew-Räte",
+            "Team-Räte"
+          ],
+          [
+            "Rat der Crew",
+            "Rat des Teams"
+          ],
+          [
+            "Die 'Crew'",
+            "Das 'Team'"
+          ],
+          [
+            "Crew",
+            "Team"
+          ],
+          [
+            "Energie-Punkte",
+            "Sauerstoff-Punkte"
+          ],
+          [
+            "Energie-Punkt",
+            "Sauerstoff-Punkt"
+          ]
+        ]
       }
     ]
   },
@@ -2348,6 +4762,108 @@
           [
             "Roboter",
             "Ritter"
+          ]
+        ]
+      },
+      {
+        "label": "🚂 Schrott-Lokomotive",
+        "description": "Aus Verpackungsmüll bauen die Kinder fantasievolle Lokomotiven und Eisenbahn-Fahrzeuge.",
+        "replace": [
+          [
+            "Schrott-Roboter baselen",
+            "Schrott-Lokomotive baselen"
+          ],
+          [
+            "Baut daraus einen Roboter/ein Wesen",
+            "Baut daraus eine Lokomotive/ein Schienenfahrzeug"
+          ],
+          [
+            "einen Roboter/ein Wesen",
+            "eine Lokomotive/ein Schienenfahrzeug"
+          ],
+          [
+            "Roboter (oder Wesen)",
+            "Lokomotiven (oder Schienenfahrzeuge)"
+          ],
+          [
+            "stellt ihren Roboter vor",
+            "stellt ihre Lokomotive vor"
+          ],
+          [
+            "ihren Roboter",
+            "ihre Lokomotive"
+          ],
+          [
+            "Roboter",
+            "Lokomotive"
+          ]
+        ]
+      },
+      {
+        "label": "🤠 Wilder-Westen-Wesen",
+        "description": "Aus Alltagsmaterial basteln die Kinder fantasievolle Westernfiguren wie Cowboys und Lagerfeuer-Gestalten.",
+        "replace": [
+          [
+            "Schrott-Roboter baselen",
+            "Schrott-Westernfiguren baselen"
+          ],
+          [
+            "Baut daraus einen Roboter/ein Wesen",
+            "Baut daraus eine Westernfigur/ein Wesen"
+          ],
+          [
+            "einen Roboter/ein Wesen",
+            "eine Westernfigur/ein Wesen"
+          ],
+          [
+            "Roboter (oder Wesen)",
+            "Westernfiguren (oder Wesen)"
+          ],
+          [
+            "stellt ihren Roboter vor",
+            "stellt ihre Westernfigur vor"
+          ],
+          [
+            "ihren Roboter",
+            "ihre Westernfigur"
+          ],
+          [
+            "Roboter",
+            "Westernfigur"
+          ]
+        ]
+      },
+      {
+        "label": "🧜 Unterwasser-Wesen",
+        "description": "Aus Verpackungsmüll bauen die Kinder fantasievolle Meeresbewohner und Unterwasser-Wesen.",
+        "replace": [
+          [
+            "Schrott-Roboter baselen",
+            "Schrott-Meeresbewohner baselen"
+          ],
+          [
+            "Baut daraus einen Roboter/ein Wesen",
+            "Baut daraus einen Meeresbewohner/ein Wesen"
+          ],
+          [
+            "einen Roboter/ein Wesen",
+            "einen Meeresbewohner/ein Wesen"
+          ],
+          [
+            "Roboter (oder Wesen)",
+            "Meeresbewohner (oder Wesen)"
+          ],
+          [
+            "stellt ihren Roboter vor",
+            "stellt ihren Meeresbewohner vor"
+          ],
+          [
+            "ihren Roboter",
+            "ihren Meeresbewohner"
+          ],
+          [
+            "Roboter",
+            "Meeresbewohner"
           ]
         ]
       }
@@ -2457,6 +4973,228 @@
             "Spurensucher"
           ]
         ]
+      },
+      {
+        "label": "🐝 Bienen-Späher",
+        "description": "Die Kinder werden zu aufmerksamen Bienen-Spähern, die mit ihren Fühlern ganz genau auf einen anderen achten.",
+        "replace": [
+          [
+            "Detektive op der Sich no engem aneren",
+            "Bienen-Späher op der Sich no engem aneren"
+          ],
+          [
+            "Beobachtungs-Detektiven",
+            "Beobachtungs-Spähern"
+          ],
+          [
+            "große Lupe (echt oder aus Pappe gebastelt)",
+            "große Blüte (echt oder aus Pappe gebastelt)"
+          ],
+          [
+            "große Lupe (echt oder aus Pappe/Karton gebastelt)",
+            "große Blüte (echt oder aus Pappe/Karton gebastelt)"
+          ],
+          [
+            "eine große Lupe",
+            "eine große Blüte"
+          ],
+          [
+            "Die Detektiv-Lupe",
+            "Die Späher-Blüte"
+          ],
+          [
+            "Detektiv-Lupe",
+            "Späher-Blüte"
+          ],
+          [
+            "als „Erzähl-Lupe",
+            "als „Erzähl-Blüte"
+          ],
+          [
+            "Wer die Lupe hat",
+            "Wer die Blüte hat"
+          ],
+          [
+            "Die Lupe",
+            "Die Blüte"
+          ],
+          [
+            "Lupe",
+            "Blüte"
+          ],
+          [
+            "alle zu Detektiven",
+            "alle zu Bienen-Spähern"
+          ],
+          [
+            "Ein Detektiv schaut",
+            "Ein Bienen-Späher schaut"
+          ],
+          [
+            "Detektiv-Augen an",
+            "Späher-Augen an"
+          ],
+          [
+            "Detektiv-Geheimnis",
+            "Späher-Geheimnis"
+          ],
+          [
+            "echte Detektive",
+            "echte Bienen-Späher"
+          ],
+          [
+            "Detektive",
+            "Bienen-Späher"
+          ]
+        ]
+      },
+      {
+        "label": "🦉 Eulen-Wächter",
+        "description": "Die Kinder werden zu klugen Eulen, die mit ihren großen Augen in der Nacht ganz genau einen anderen wahrnehmen.",
+        "replace": [
+          [
+            "Detektive op der Sich no engem aneren",
+            "Eulen-Wächter op der Sich no engem aneren"
+          ],
+          [
+            "Beobachtungs-Detektiven",
+            "Beobachtungs-Eulen"
+          ],
+          [
+            "große Lupe (echt oder aus Pappe gebastelt)",
+            "große Eulen-Brille (echt oder aus Pappe gebastelt)"
+          ],
+          [
+            "große Lupe (echt oder aus Pappe/Karton gebastelt)",
+            "große Eulen-Brille (echt oder aus Pappe/Karton gebastelt)"
+          ],
+          [
+            "eine große Lupe",
+            "eine große Eulen-Brille"
+          ],
+          [
+            "Die Detektiv-Lupe",
+            "Die Eulen-Brille"
+          ],
+          [
+            "Detektiv-Lupe",
+            "Eulen-Brille"
+          ],
+          [
+            "als „Erzähl-Lupe",
+            "als „Erzähl-Brille"
+          ],
+          [
+            "Wer die Lupe hat",
+            "Wer die Brille hat"
+          ],
+          [
+            "Die Lupe",
+            "Die Brille"
+          ],
+          [
+            "Lupe",
+            "Brille"
+          ],
+          [
+            "alle zu Detektiven",
+            "alle zu Eulen-Wächtern"
+          ],
+          [
+            "Ein Detektiv schaut",
+            "Eine Eule schaut"
+          ],
+          [
+            "Detektiv-Augen an",
+            "Eulen-Augen an"
+          ],
+          [
+            "Detektiv-Geheimnis",
+            "Eulen-Geheimnis"
+          ],
+          [
+            "echte Detektive",
+            "echte Eulen-Wächter"
+          ],
+          [
+            "Detektive",
+            "Eulen-Wächter"
+          ]
+        ]
+      },
+      {
+        "label": "🏰 Ritter-Späher",
+        "description": "Die Kinder werden zu mutigen Ritter-Spähern, die durch ihr Fernrohr ganz genau auf einen anderen Menschen achten.",
+        "replace": [
+          [
+            "Detektive op der Sich no engem aneren",
+            "Ritter-Späher op der Sich no engem aneren"
+          ],
+          [
+            "Beobachtungs-Detektiven",
+            "Beobachtungs-Spähern"
+          ],
+          [
+            "große Lupe (echt oder aus Pappe gebastelt)",
+            "großes Fernrohr (echt oder aus Pappe gebastelt)"
+          ],
+          [
+            "große Lupe (echt oder aus Pappe/Karton gebastelt)",
+            "großes Fernrohr (echt oder aus Pappe/Karton gebastelt)"
+          ],
+          [
+            "eine große Lupe",
+            "ein großes Fernrohr"
+          ],
+          [
+            "Die Detektiv-Lupe",
+            "Das Späher-Fernrohr"
+          ],
+          [
+            "Detektiv-Lupe",
+            "Späher-Fernrohr"
+          ],
+          [
+            "als „Erzähl-Lupe",
+            "als „Erzähl-Fernrohr"
+          ],
+          [
+            "Wer die Lupe hat",
+            "Wer das Fernrohr hat"
+          ],
+          [
+            "Die Lupe",
+            "Das Fernrohr"
+          ],
+          [
+            "Lupe",
+            "Fernrohr"
+          ],
+          [
+            "alle zu Detektiven",
+            "alle zu Ritter-Spähern"
+          ],
+          [
+            "Ein Detektiv schaut",
+            "Ein Ritter-Späher schaut"
+          ],
+          [
+            "Detektiv-Augen an",
+            "Späher-Augen an"
+          ],
+          [
+            "Detektiv-Geheimnis",
+            "Späher-Geheimnis"
+          ],
+          [
+            "echte Detektive",
+            "echte Ritter-Späher"
+          ],
+          [
+            "Detektive",
+            "Ritter-Späher"
+          ]
+        ]
       }
     ]
   },
@@ -2526,6 +5264,144 @@
           [
             "Mütze",
             "Zipfelmütze"
+          ]
+        ]
+      },
+      {
+        "label": "🐠 Fisch & Hai",
+        "description": "Die Geschichte vom kleinen Fisch, dem ein Hai immer wieder die Muschel wegnimmt, vermittelt das Stopp-Setzen und Hilfe-Holen.",
+        "replace": [
+          [
+            "Die Geschichte vom geärgerten Hasen",
+            "Die Geschichte vom geärgerten Fisch"
+          ],
+          [
+            "Der kleine Hase wird vom Fuchs immer wieder geärgert",
+            "Der kleine Fisch wird vom Hai immer wieder geärgert"
+          ],
+          [
+            "der Fuchs nimmt ihm jeden Tag die Mütze weg",
+            "der Hai nimmt ihm jeden Tag die Muschel weg"
+          ],
+          [
+            "Der Hase traut sich",
+            "Der Fisch traut sich"
+          ],
+          [
+            "wie fühlt sich der Hase",
+            "wie fühlt sich der Fisch"
+          ],
+          [
+            "Geschichte vom Hasen",
+            "Geschichte vom Fisch"
+          ],
+          [
+            "und der Hase (Puppe)",
+            "und der Fisch (Puppe)"
+          ],
+          [
+            "dass der Hase",
+            "dass der Fisch"
+          ],
+          [
+            "(Hase und Fuchs)",
+            "(Fisch und Hai)"
+          ],
+          [
+            "Hase",
+            "Fisch"
+          ]
+        ]
+      },
+      {
+        "label": "🐿️ Eichhörnchen & Marder",
+        "description": "Die Geschichte vom kleinen Eichhörnchen, dem ein Marder immer wieder die Nuss wegnimmt, vermittelt das Stopp-Setzen und Hilfe-Holen.",
+        "replace": [
+          [
+            "Die Geschichte vom geärgerten Hasen",
+            "Die Geschichte vom geärgerten Eichhörnchen"
+          ],
+          [
+            "Der kleine Hase wird vom Fuchs immer wieder geärgert",
+            "Das kleine Eichhörnchen wird vom Marder immer wieder geärgert"
+          ],
+          [
+            "der Fuchs nimmt ihm jeden Tag die Mütze weg",
+            "der Marder nimmt ihm jeden Tag die Nuss weg"
+          ],
+          [
+            "Der Hase traut sich",
+            "Das Eichhörnchen traut sich"
+          ],
+          [
+            "wie fühlt sich der Hase",
+            "wie fühlt sich das Eichhörnchen"
+          ],
+          [
+            "Geschichte vom Hasen",
+            "Geschichte vom Eichhörnchen"
+          ],
+          [
+            "und der Hase (Puppe)",
+            "und das Eichhörnchen (Puppe)"
+          ],
+          [
+            "dass der Hase",
+            "dass das Eichhörnchen"
+          ],
+          [
+            "(Hase und Fuchs)",
+            "(Eichhörnchen und Marder)"
+          ],
+          [
+            "Hase",
+            "Eichhörnchen"
+          ]
+        ]
+      },
+      {
+        "label": "🐧 Pinguin & Robbe",
+        "description": "Die Geschichte vom kleinen Pinguin, dem eine Robbe immer wieder den Fisch wegnimmt, vermittelt das Stopp-Setzen und Hilfe-Holen.",
+        "replace": [
+          [
+            "Die Geschichte vom geärgerten Hasen",
+            "Die Geschichte vom geärgerten Pinguin"
+          ],
+          [
+            "Der kleine Hase wird vom Fuchs immer wieder geärgert",
+            "Der kleine Pinguin wird von der Robbe immer wieder geärgert"
+          ],
+          [
+            "der Fuchs nimmt ihm jeden Tag die Mütze weg",
+            "die Robbe nimmt ihm jeden Tag den Fisch weg"
+          ],
+          [
+            "Der Hase traut sich",
+            "Der Pinguin traut sich"
+          ],
+          [
+            "wie fühlt sich der Hase",
+            "wie fühlt sich der Pinguin"
+          ],
+          [
+            "Geschichte vom Hasen",
+            "Geschichte vom Pinguin"
+          ],
+          [
+            "und der Hase (Puppe)",
+            "und der Pinguin (Puppe)"
+          ],
+          [
+            "dass der Hase",
+            "dass der Pinguin"
+          ],
+          [
+            "(Hase und Fuchs)",
+            "(Pinguin und Robbe)"
+          ],
+          [
+            "Hase",
+            "Pinguin"
           ]
         ]
       }
@@ -2669,6 +5545,144 @@
           [
             "unter die Lupe",
             "auf die Schatzkarte"
+          ]
+        ]
+      },
+      {
+        "label": "🌲 Schatz-Förster",
+        "description": "Wie Förster im Wald spüren die Kinder auf, was Energie raubt und was wie eine Lichtung neue Kraft schenkt.",
+        "replace": [
+          [
+            "Stress-Detektive: Energiefresser und Kraftquellen im Schultag",
+            "Stress-Förster: Energiefresser und Kraftquellen im Schultag"
+          ],
+          [
+            "Wie Detektive nehmen die Kinder",
+            "Wie Förster nehmen die Kinder"
+          ],
+          [
+            "Erklärt das Detektiv-Bild",
+            "Erklärt das Förster-Bild"
+          ],
+          [
+            "werdet ihr zu Stress-Detektiven",
+            "werdet ihr zu Stress-Förstern"
+          ],
+          [
+            "Meinen Schultag als Detektiv untersuchen",
+            "Meinen Schultag als Förster untersuchen"
+          ],
+          [
+            "Detektiv-Blatt mit einer einfachen",
+            "Förster-Blatt mit einer einfachen"
+          ],
+          [
+            "Detektiv-Blatt mit Tages-Zeitleiste",
+            "Förster-Blatt mit Tages-Zeitleiste"
+          ],
+          [
+            "auf dem Detektiv-Blatt",
+            "auf dem Förster-Blatt"
+          ],
+          [
+            "Mein Stress-Detektiv-Blatt",
+            "Mein Stress-Förster-Blatt"
+          ],
+          [
+            "Werde Detektiv deines eigenen Tages",
+            "Werde Förster deines eigenen Tages"
+          ]
+        ]
+      },
+      {
+        "label": "⛏️ Schatz-Bergleute",
+        "description": "Wie Bergleute im Stollen graben die Kinder nach dem, was Energie raubt, und nach verborgenen Kraftquellen-Adern.",
+        "replace": [
+          [
+            "Stress-Detektive: Energiefresser und Kraftquellen im Schultag",
+            "Stress-Bergleute: Energiefresser und Kraftquellen im Schultag"
+          ],
+          [
+            "Wie Detektive nehmen die Kinder",
+            "Wie Bergleute nehmen die Kinder"
+          ],
+          [
+            "Erklärt das Detektiv-Bild",
+            "Erklärt das Bergleute-Bild"
+          ],
+          [
+            "werdet ihr zu Stress-Detektiven",
+            "werdet ihr zu Stress-Bergleuten"
+          ],
+          [
+            "Meinen Schultag als Detektiv untersuchen",
+            "Meinen Schultag als Bergmann untersuchen"
+          ],
+          [
+            "Detektiv-Blatt mit einer einfachen",
+            "Bergleute-Blatt mit einer einfachen"
+          ],
+          [
+            "Detektiv-Blatt mit Tages-Zeitleiste",
+            "Bergleute-Blatt mit Tages-Zeitleiste"
+          ],
+          [
+            "auf dem Detektiv-Blatt",
+            "auf dem Bergleute-Blatt"
+          ],
+          [
+            "Mein Stress-Detektiv-Blatt",
+            "Mein Stress-Bergleute-Blatt"
+          ],
+          [
+            "Werde Detektiv deines eigenen Tages",
+            "Werde Bergmann deines eigenen Tages"
+          ]
+        ]
+      },
+      {
+        "label": "🦊 Spür-Fährtenleser",
+        "description": "Wie Fährtenleser in der Wildnis folgen die Kinder den Spuren, die Energie rauben, und finden ihre Kraftquellen-Wasserstellen.",
+        "replace": [
+          [
+            "Stress-Detektive: Energiefresser und Kraftquellen im Schultag",
+            "Stress-Fährtenleser: Energiefresser und Kraftquellen im Schultag"
+          ],
+          [
+            "Wie Detektive nehmen die Kinder",
+            "Wie Fährtenleser nehmen die Kinder"
+          ],
+          [
+            "Erklärt das Detektiv-Bild",
+            "Erklärt das Fährtenleser-Bild"
+          ],
+          [
+            "werdet ihr zu Stress-Detektiven",
+            "werdet ihr zu Stress-Fährtenlesern"
+          ],
+          [
+            "Meinen Schultag als Detektiv untersuchen",
+            "Meinen Schultag als Fährtenleser untersuchen"
+          ],
+          [
+            "Detektiv-Blatt mit einer einfachen",
+            "Fährtenleser-Blatt mit einer einfachen"
+          ],
+          [
+            "Detektiv-Blatt mit Tages-Zeitleiste",
+            "Fährtenleser-Blatt mit Tages-Zeitleiste"
+          ],
+          [
+            "auf dem Detektiv-Blatt",
+            "auf dem Fährtenleser-Blatt"
+          ],
+          [
+            "Mein Stress-Detektiv-Blatt",
+            "Mein Stress-Fährtenleser-Blatt"
+          ],
+          [
+            "Werde Detektiv deines eigenen Tages",
+            "Werde Fährtenleser deines eigenen Tages"
           ]
         ]
       }
@@ -2910,6 +5924,240 @@
             "Die Raptoren schleichen ganz leise durch die Farne"
           ]
         ]
+      },
+      {
+        "label": "❄️ Polarwelt",
+        "description": "Statt auf dem Bauernhof verwandelt sich die Gruppe in Tiere der eisigen Polarwelt und erlebt gemeinsam einen ganzen Tag am Nordpol.",
+        "replace": [
+          [
+            "Bauernhoftieren",
+            "Polartieren"
+          ],
+          [
+            "Bauernhof",
+            "Nordpol"
+          ],
+          [
+            "Stalldach",
+            "Iglu-Dach"
+          ],
+          [
+            "Stall",
+            "Iglu"
+          ],
+          [
+            "Hähne",
+            "Eisbären"
+          ],
+          [
+            "Hahn",
+            "Eisbär"
+          ],
+          [
+            "krähen",
+            "brummen"
+          ],
+          [
+            "Kikeriki",
+            "Brummbrumm"
+          ],
+          [
+            "Enten",
+            "Robben"
+          ],
+          [
+            "Ente",
+            "Robbe"
+          ],
+          [
+            "Katzen",
+            "Schneeeulen"
+          ],
+          [
+            "Katze",
+            "Schneeeule"
+          ],
+          [
+            "Kuh",
+            "Walrosskuh"
+          ],
+          [
+            "Pferde",
+            "Rentiere"
+          ],
+          [
+            "Pferd",
+            "Rentier"
+          ],
+          [
+            "Schaf",
+            "Walross"
+          ],
+          [
+            "Teich",
+            "Eisloch"
+          ],
+          [
+            "Wiese",
+            "Schneefläche"
+          ]
+        ]
+      },
+      {
+        "label": "🏰 Märchen-Zauberwald",
+        "description": "Die Kinder schlüpfen in zauberhafte Wesen eines Märchen-Zauberwaldes und erleben dort gemeinsam einen ganzen Tag.",
+        "replace": [
+          [
+            "Bauernhoftieren",
+            "Zauberwesen"
+          ],
+          [
+            "Bauernhof",
+            "Zauberwald"
+          ],
+          [
+            "Stalldach",
+            "Pilzdach"
+          ],
+          [
+            "Stall",
+            "Pilzhaus"
+          ],
+          [
+            "Hähne",
+            "Zwerge"
+          ],
+          [
+            "Hahn",
+            "Zwerg"
+          ],
+          [
+            "krähen",
+            "jubeln"
+          ],
+          [
+            "Kikeriki",
+            "Trillala"
+          ],
+          [
+            "Enten",
+            "Feen"
+          ],
+          [
+            "Ente",
+            "Fee"
+          ],
+          [
+            "Katzen",
+            "Elfen"
+          ],
+          [
+            "Katze",
+            "Elfe"
+          ],
+          [
+            "Kuh",
+            "Riesin"
+          ],
+          [
+            "Muuuh",
+            "Hooo"
+          ],
+          [
+            "Pferde",
+            "Einhörner"
+          ],
+          [
+            "Pferd",
+            "Einhorn"
+          ],
+          [
+            "Schaf",
+            "Zauberpony"
+          ],
+          [
+            "Teich",
+            "Zauberteich"
+          ]
+        ]
+      },
+      {
+        "label": "🌳 Wald",
+        "description": "Die Gruppe verwandelt sich in die wilden Tiere eines heimischen Waldes und erlebt ihren Tag zwischen Bäumen und Waldteich.",
+        "replace": [
+          [
+            "Bauernhoftieren",
+            "Waldtieren"
+          ],
+          [
+            "Bauernhof",
+            "Wald"
+          ],
+          [
+            "Stalldach",
+            "Blätterdach"
+          ],
+          [
+            "Stall",
+            "Unterschlupf"
+          ],
+          [
+            "Hähne",
+            "Hirsche"
+          ],
+          [
+            "Hahn",
+            "Hirsch"
+          ],
+          [
+            "krähen",
+            "röhren"
+          ],
+          [
+            "Kikeriki",
+            "Röhö"
+          ],
+          [
+            "Enten",
+            "Wildgänse"
+          ],
+          [
+            "Ente",
+            "Wildgans"
+          ],
+          [
+            "Katzen",
+            "Füchsinnen"
+          ],
+          [
+            "Katze",
+            "Füchsin"
+          ],
+          [
+            "Kuh",
+            "Bärin"
+          ],
+          [
+            "Muuuh",
+            "Brumm"
+          ],
+          [
+            "Pferde",
+            "Rehe"
+          ],
+          [
+            "Pferd",
+            "Reh"
+          ],
+          [
+            "Schaf",
+            "Eichhörnchen"
+          ],
+          [
+            "Teich",
+            "Waldteich"
+          ]
+        ]
       }
     ]
   },
@@ -2991,6 +6239,60 @@
           [
             "Detektiv",
             "Forscher"
+          ]
+        ]
+      },
+      {
+        "label": "🏰 Ritter",
+        "description": "Die Kinder werden zu mutigen Rittern, die prüfen, ob eine Botschaft echt oder erfunden ist.",
+        "replace": [
+          [
+            "Nachrichten-Detektiven",
+            "Nachrichten-Rittern"
+          ],
+          [
+            "Detektiv-Checkliste",
+            "Ritter-Checkliste"
+          ],
+          [
+            "Detektiv",
+            "Ritter"
+          ]
+        ]
+      },
+      {
+        "label": "🦸 Superhelden",
+        "description": "Die Kinder werden zu Superhelden, die mit klugem Blick echte von falschen Meldungen unterscheiden.",
+        "replace": [
+          [
+            "Nachrichten-Detektiven",
+            "Nachrichten-Superhelden"
+          ],
+          [
+            "Detektiv-Checkliste",
+            "Superhelden-Checkliste"
+          ],
+          [
+            "Detektiv",
+            "Superheld"
+          ]
+        ]
+      },
+      {
+        "label": "🏴‍☠️ Schatzsucher",
+        "description": "Die Kinder werden zu Schatzsuchern, die echte Schatzkarten von gefälschten unterscheiden lernen.",
+        "replace": [
+          [
+            "Nachrichten-Detektiven",
+            "Nachrichten-Schatzsuchern"
+          ],
+          [
+            "Detektiv-Checkliste",
+            "Schatzsucher-Checkliste"
+          ],
+          [
+            "Detektiv",
+            "Schatzsucher"
           ]
         ]
       }
