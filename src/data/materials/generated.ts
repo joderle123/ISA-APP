@@ -1,8 +1,6 @@
 import type { Material } from '../../types/material'
 
-// AI-generated library materials (one-time generation; offline thereafter).
-// Auto-written by scripts/integrate.mjs — do not edit by hand.
-// Each is a draft for human review before classroom use.
+// Auto-written — do not edit by hand.
 export const generated: Material[] = [
   {
     "id": "der-ich-detektiv-mit-der-lupe",
@@ -64,20 +62,14 @@ export const generated: Material[] = [
       2
     ],
     "eldibGoals": [
-      "V-1",
       "V-3",
       "V-9",
-      "V-14",
-      "SOZ-3",
-      "SOZ-9",
-      "SOZ-19",
-      "SOZ-25",
+      "K-13",
       "K-15",
-      "K-18",
-      "K-26",
-      "KOG-11",
-      "KOG-16",
-      "KOG-2"
+      "K-16",
+      "SOZ-9",
+      "KOG-2",
+      "KOG-11"
     ],
     "language": "de",
     "source": "generated"
@@ -134,20 +126,14 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-3",
-      "V-10",
-      "K-7",
-      "K-9",
-      "K-10",
+      "K-8",
       "K-11",
       "K-13",
       "K-14",
-      "K-17",
-      "K-29",
       "SOZ-17",
       "SOZ-18",
       "SOZ-19",
-      "SOZ-26"
+      "KOG-12"
     ],
     "language": "de",
     "source": "generated"
@@ -208,20 +194,14 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-13",
-      "V-16",
-      "V-18",
-      "V-23",
       "K-9",
+      "K-11",
       "K-14",
-      "K-17",
       "K-28",
       "SOZ-15",
       "SOZ-16",
       "SOZ-18",
-      "SOZ-19",
-      "SOZ-26",
-      "SOZ-33"
+      "SOZ-19"
     ],
     "language": "de",
     "source": "generated"
@@ -291,20 +271,15 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-18",
+      "V-23",
       "V-28",
+      "K-17",
       "K-28",
-      "SOZ-16",
       "SOZ-18",
-      "SOZ-19",
       "SOZ-22",
-      "SOZ-23",
-      "SOZ-26",
       "SOZ-27",
       "SOZ-30",
-      "SOZ-34",
-      "SOZ-37",
-      "KOG-47"
+      "SOZ-34"
     ],
     "language": "de",
     "source": "generated"
@@ -371,15 +346,11 @@ export const generated: Material[] = [
     "eldibGoals": [
       "V-1",
       "V-3",
-      "V-9",
-      "V-13",
       "K-13",
-      "K-20",
       "K-21",
+      "SOZ-2",
       "SOZ-5",
       "SOZ-20",
-      "SOZ-31",
-      "SOZ-37",
       "KOG-5"
     ],
     "language": "de",
@@ -456,18 +427,11 @@ export const generated: Material[] = [
       "V-3",
       "V-10",
       "V-11",
-      "V-13",
       "V-21",
-      "V-25",
-      "V-32",
-      "K-15",
+      "V-24",
       "K-16",
       "K-26",
-      "SOZ-16",
-      "SOZ-18",
-      "SOZ-30",
-      "KOG-2",
-      "KOG-39"
+      "KOG-2"
     ],
     "language": "de",
     "source": "generated"
@@ -528,15 +492,11 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-16",
-      "V-17",
       "V-18",
       "V-20",
-      "V-21",
+      "V-22",
       "V-26",
       "V-28",
-      "V-33",
-      "K-16",
       "K-26",
       "SOZ-34",
       "SOZ-37"
@@ -606,20 +566,14 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-3",
       "V-4",
       "V-5",
       "V-12",
-      "V-13",
-      "V-20",
       "V-21",
       "V-23",
-      "K-26",
-      "SOZ-14",
       "SOZ-18",
-      "SOZ-19",
-      "KOG-2",
-      "KOG-43"
+      "SOZ-22",
+      "KOG-2"
     ],
     "language": "de",
     "source": "generated"
@@ -684,20 +638,12 @@ export const generated: Material[] = [
     "eldibGoals": [
       "V-9",
       "V-10",
-      "V-12",
-      "V-13",
-      "K-3",
-      "K-5",
-      "K-7",
       "K-23",
-      "SOZ-5",
       "SOZ-13",
       "SOZ-17",
-      "SOZ-18",
       "SOZ-19",
       "SOZ-20",
-      "SOZ-30",
-      "KOG-53"
+      "KOG-15"
     ],
     "language": "de",
     "source": "generated"
@@ -763,20 +709,14 @@ export const generated: Material[] = [
       3
     ],
     "eldibGoals": [
-      "V-3",
       "V-12",
-      "V-13",
-      "V-14",
       "V-21",
-      "V-23",
+      "V-24",
       "K-15",
       "K-16",
       "K-18",
-      "K-26",
-      "SOZ-26",
-      "SOZ-29",
-      "SOZ-30",
-      "KOG-53"
+      "K-19",
+      "SOZ-9"
     ],
     "language": "de",
     "source": "generated"
@@ -842,19 +782,14 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-14",
-      "V-30",
       "K-15",
       "K-18",
       "K-19",
       "K-20",
-      "K-23",
-      "K-32",
+      "K-28",
       "SOZ-9",
-      "SOZ-21",
       "SOZ-26",
-      "SOZ-31",
-      "SOZ-32"
+      "SOZ-33"
     ],
     "language": "de",
     "source": "generated"
@@ -932,25 +867,14 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-3",
-      "V-10",
       "V-18",
       "V-20",
-      "V-21",
       "V-22",
       "V-25",
       "V-26",
       "V-28",
-      "V-32",
-      "V-33",
-      "K-16",
       "K-26",
-      "SOZ-14",
-      "SOZ-19",
-      "SOZ-34",
-      "SOZ-37",
-      "KOG-38",
-      "KOG-61"
+      "SOZ-34"
     ],
     "language": "de",
     "source": "generated"
@@ -1016,15 +940,14 @@ export const generated: Material[] = [
       3
     ],
     "eldibGoals": [
-      "V-4",
-      "V-12",
-      "V-19",
+      "V-18",
+      "K-15",
+      "K-16",
+      "K-26",
       "SOZ-7",
-      "SOZ-14",
       "SOZ-22",
       "SOZ-31",
-      "K-8",
-      "K-17"
+      "SOZ-32"
     ],
     "language": "de",
     "source": "generated"
@@ -1090,16 +1013,14 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "SOZ-9",
-      "SOZ-15",
-      "SOZ-23",
-      "SOZ-28",
-      "SOZ-37",
-      "K-14",
+      "V-18",
+      "V-20",
+      "V-28",
       "K-21",
-      "KOG-18",
-      "KOG-33",
-      "V-22"
+      "K-28",
+      "SOZ-34",
+      "SOZ-35",
+      "SOZ-37"
     ],
     "worksheet": {
       "title": "Zivilcourage – mein ehrlicher Check",
@@ -1249,15 +1170,14 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "KOG-6",
-      "KOG-19",
-      "KOG-27",
-      "KOG-44",
-      "V-7",
       "V-16",
+      "V-22",
       "V-24",
-      "SOZ-12",
-      "SOZ-25"
+      "K-15",
+      "K-18",
+      "K-19",
+      "SOZ-26",
+      "KOG-44"
     ],
     "worksheet": {
       "title": "Mäi Ziel-Kompass",
@@ -1367,15 +1287,14 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "SOZ-11",
-      "SOZ-19",
-      "SOZ-26",
-      "SOZ-34",
-      "KOG-22",
-      "KOG-37",
-      "K-12",
-      "K-20",
-      "V-18"
+      "V-17",
+      "V-18",
+      "V-31",
+      "K-17",
+      "SOZ-21",
+      "SOZ-27",
+      "SOZ-32",
+      "SOZ-34"
     ],
     "language": "de",
     "source": "generated"
@@ -1441,15 +1360,14 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "KOG-9",
-      "KOG-24",
-      "KOG-41",
-      "KOG-58",
-      "V-5",
       "V-15",
-      "V-26",
-      "SOZ-20",
-      "SOZ-33"
+      "V-22",
+      "V-25",
+      "V-29",
+      "K-29",
+      "KOG-49",
+      "KOG-58",
+      "SOZ-40"
     ],
     "worksheet": {
       "title": "Mein Medientagebuch",
@@ -1563,14 +1481,14 @@ export const generated: Material[] = [
       3
     ],
     "eldibGoals": [
-      "V-6",
-      "V-13",
-      "V-20",
-      "V-28",
-      "KOG-11",
-      "KOG-25",
-      "SOZ-8",
-      "K-9"
+      "V-3",
+      "V-8",
+      "V-10",
+      "V-11",
+      "V-15",
+      "V-21",
+      "V-22",
+      "KOG-2"
     ],
     "language": "de",
     "source": "generated"
@@ -1635,15 +1553,15 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-8",
-      "V-17",
+      "V-18",
+      "V-20",
       "V-25",
-      "V-31",
-      "SOZ-13",
-      "SOZ-24",
-      "SOZ-35",
-      "K-15",
-      "KOG-30"
+      "V-26",
+      "V-28",
+      "K-16",
+      "K-26",
+      "K-31",
+      "SOZ-34"
     ],
     "language": "de",
     "source": "generated"
@@ -1710,14 +1628,14 @@ export const generated: Material[] = [
       3
     ],
     "eldibGoals": [
-      "V-2",
+      "V-8",
       "V-11",
-      "V-23",
+      "K-15",
+      "K-16",
+      "K-26",
+      "SOZ-1",
       "SOZ-5",
-      "SOZ-17",
-      "K-6",
-      "K-19",
-      "KOG-4"
+      "SOZ-9"
     ],
     "worksheet": {
       "title": "Mäi Gefillsbarometer",
@@ -1829,14 +1747,15 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "SOZ-10",
-      "SOZ-21",
-      "SOZ-29",
+      "V-25",
+      "V-27",
+      "V-31",
+      "V-32",
+      "SOZ-32",
+      "SOZ-37",
       "SOZ-39",
-      "V-14",
-      "K-13",
-      "K-24",
-      "KOG-20"
+      "SOZ-41",
+      "K-33"
     ],
     "worksheet": {
       "title": "Respekt & Grenzen – für mich",
@@ -1973,13 +1892,12 @@ export const generated: Material[] = [
       3
     ],
     "eldibGoals": [
-      "V-9",
-      "V-18",
-      "V-27",
-      "KOG-7",
-      "KOG-21",
-      "SOZ-6",
-      "K-10"
+      "V-3",
+      "V-12",
+      "V-13",
+      "V-21",
+      "KOG-2",
+      "K-16"
     ],
     "language": "de",
     "source": "generated"
@@ -2041,12 +1959,12 @@ export const generated: Material[] = [
     ],
     "eldibGoals": [
       "K-2",
-      "K-7",
+      "K-9",
       "K-12",
-      "K-18",
-      "SOZ-4",
+      "K-14",
+      "SOZ-2",
       "SOZ-15",
-      "V-5"
+      "V-3"
     ],
     "language": "de",
     "source": "generated"
@@ -2107,13 +2025,14 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "SOZ-9",
       "SOZ-18",
+      "SOZ-22",
       "SOZ-27",
+      "SOZ-30",
+      "SOZ-32",
       "K-11",
-      "K-20",
-      "V-12",
-      "KOG-14"
+      "K-14",
+      "K-17"
     ],
     "language": "de",
     "source": "generated"
@@ -2178,13 +2097,13 @@ export const generated: Material[] = [
       3
     ],
     "eldibGoals": [
-      "V-7",
-      "V-16",
+      "V-14",
+      "V-22",
       "V-24",
-      "SOZ-12",
-      "SOZ-22",
-      "KOG-19",
-      "K-16"
+      "SOZ-21",
+      "K-15",
+      "K-16",
+      "K-18"
     ],
     "language": "de",
     "source": "generated"
@@ -2245,13 +2164,14 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "SOZ-14",
-      "SOZ-25",
-      "SOZ-33",
+      "SOZ-21",
+      "SOZ-32",
       "K-13",
-      "K-22",
-      "KOG-23",
-      "V-19"
+      "K-20",
+      "K-21",
+      "K-25",
+      "KOG-38",
+      "V-18"
     ],
     "language": "de",
     "source": "generated"
@@ -2312,12 +2232,12 @@ export const generated: Material[] = [
       2
     ],
     "eldibGoals": [
-      "V-3",
-      "V-13",
-      "K-8",
-      "KOG-9",
-      "KOG-26",
-      "SOZ-7"
+      "K-5",
+      "K-16",
+      "K-23",
+      "KOG-23",
+      "SOZ-9",
+      "V-13"
     ],
     "language": "de",
     "source": "generated"
@@ -2378,13 +2298,12 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-6",
-      "V-15",
-      "SOZ-12",
-      "SOZ-23",
-      "KOG-17",
-      "KOG-29",
-      "K-14"
+      "K-18",
+      "K-19",
+      "K-28",
+      "SOZ-26",
+      "SOZ-33",
+      "V-22"
     ],
     "language": "de",
     "source": "generated"
@@ -2445,12 +2364,12 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "KOG-15",
-      "KOG-31",
-      "V-14",
-      "SOZ-19",
-      "SOZ-30",
-      "K-13"
+      "K-19",
+      "K-33",
+      "K-34",
+      "SOZ-31",
+      "SOZ-32",
+      "SOZ-40"
     ],
     "worksheet": {
       "title": "Meng ville Säiten",
@@ -2578,11 +2497,12 @@ export const generated: Material[] = [
       2
     ],
     "eldibGoals": [
-      "V-9",
-      "SOZ-6",
+      "SOZ-10",
       "SOZ-15",
+      "SOZ-20",
       "K-7",
-      "KOG-8"
+      "K-16",
+      "V-12"
     ],
     "language": "de",
     "source": "generated"
@@ -2643,11 +2563,12 @@ export const generated: Material[] = [
       3
     ],
     "eldibGoals": [
+      "V-3",
       "V-11",
       "V-21",
-      "KOG-5",
-      "SOZ-16",
-      "K-15"
+      "KOG-2",
+      "K-16",
+      "SOZ-9"
     ],
     "language": "de",
     "source": "generated"
@@ -2709,11 +2630,11 @@ export const generated: Material[] = [
     ],
     "eldibGoals": [
       "V-8",
-      "V-17",
-      "V-25",
-      "SOZ-13",
-      "KOG-12",
-      "K-9"
+      "V-10",
+      "V-20",
+      "V-21",
+      "K-16",
+      "SOZ-14"
     ],
     "language": "de",
     "source": "generated"
@@ -2774,13 +2695,13 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "SOZ-13",
-      "SOZ-24",
-      "SOZ-35",
-      "K-12",
-      "K-21",
       "V-18",
-      "KOG-22"
+      "V-25",
+      "V-28",
+      "SOZ-34",
+      "K-16",
+      "K-21",
+      "K-26"
     ],
     "language": "de",
     "source": "generated"
@@ -2842,12 +2763,12 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-7",
-      "V-16",
+      "V-21",
+      "V-22",
       "V-26",
-      "KOG-19",
-      "SOZ-20",
-      "K-16"
+      "K-16",
+      "K-26",
+      "SOZ-40"
     ],
     "worksheet": {
       "title": "Mein Stress-Thermometer & meine Notbremsen",
@@ -2974,11 +2895,12 @@ export const generated: Material[] = [
       3
     ],
     "eldibGoals": [
-      "SOZ-7",
+      "K-13",
+      "K-18",
+      "K-20",
+      "K-28",
       "SOZ-15",
-      "K-8",
-      "K-17",
-      "V-13"
+      "SOZ-26"
     ],
     "language": "de",
     "source": "generated"
@@ -3039,11 +2961,12 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-15",
-      "KOG-17",
-      "KOG-29",
+      "K-15",
+      "K-19",
+      "KOG-21",
       "SOZ-12",
-      "K-14"
+      "SOZ-25",
+      "V-22"
     ],
     "worksheet": {
       "title": "Meng Kraaftquellen-Schatzkaart",
@@ -3158,11 +3081,12 @@ export const generated: Material[] = [
       2
     ],
     "eldibGoals": [
-      "SOZ-4",
-      "SOZ-14",
+      "SOZ-15",
+      "SOZ-16",
+      "SOZ-19",
+      "SOZ-25",
       "K-7",
-      "K-12",
-      "V-5"
+      "K-14"
     ],
     "language": "de",
     "source": "generated"
@@ -3223,13 +3147,12 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-7",
-      "V-16",
+      "V-14",
+      "V-22",
       "V-24",
-      "KOG-19",
-      "KOG-27",
-      "SOZ-12",
-      "K-16"
+      "K-15",
+      "K-18",
+      "K-29"
     ],
     "language": "de",
     "source": "generated"
@@ -3290,12 +3213,12 @@ export const generated: Material[] = [
       3
     ],
     "eldibGoals": [
-      "SOZ-9",
       "SOZ-15",
-      "SOZ-22",
-      "K-12",
-      "V-12",
-      "KOG-14"
+      "SOZ-23",
+      "SOZ-27",
+      "K-16",
+      "K-21",
+      "K-28"
     ],
     "language": "de",
     "source": "generated"
@@ -3356,11 +3279,12 @@ export const generated: Material[] = [
       2
     ],
     "eldibGoals": [
-      "SOZ-4",
-      "SOZ-11",
+      "SOZ-15",
+      "SOZ-16",
       "SOZ-19",
+      "SOZ-21",
       "K-7",
-      "V-5"
+      "V-10"
     ],
     "language": "de",
     "source": "generated"
@@ -3421,13 +3345,13 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-14",
-      "V-19",
-      "SOZ-21",
-      "SOZ-30",
-      "K-13",
-      "K-24",
-      "KOG-20"
+      "V-25",
+      "V-31",
+      "SOZ-31",
+      "SOZ-39",
+      "K-26",
+      "K-33",
+      "KOG-55"
     ],
     "worksheet": {
       "title": "Meine digitalen Grenzen",
@@ -3551,12 +3475,12 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-6",
+      "V-8",
+      "V-11",
       "V-13",
-      "V-20",
-      "KOG-11",
-      "KOG-25",
-      "SOZ-8"
+      "V-15",
+      "V-22",
+      "V-29"
     ],
     "worksheet": {
       "title": "Meng Léier-Routine - ich bin der Kapitän",
@@ -3680,13 +3604,12 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-11",
-      "V-21",
-      "K-13",
-      "K-22",
-      "SOZ-16",
-      "SOZ-25",
-      "KOG-23"
+      "V-13",
+      "K-10",
+      "K-15",
+      "K-16",
+      "K-21",
+      "K-26"
     ],
     "language": "de",
     "source": "generated"
@@ -3748,11 +3671,11 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
+      "V-8",
       "V-21",
-      "V-26",
-      "KOG-5",
-      "SOZ-16",
-      "K-15"
+      "V-22",
+      "V-24",
+      "K-26"
     ],
     "language": "de",
     "source": "generated"
@@ -3813,13 +3736,12 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-15",
-      "V-24",
-      "KOG-17",
-      "KOG-29",
-      "SOZ-12",
-      "SOZ-23",
-      "K-16"
+      "V-22",
+      "V-33",
+      "K-19",
+      "K-26",
+      "SOZ-40",
+      "KOG-61"
     ],
     "worksheet": {
       "title": "Mäi Resilienz-Rucksak",
@@ -3946,13 +3868,12 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "SOZ-9",
+      "V-12",
+      "V-21",
+      "K-28",
+      "SOZ-16",
       "SOZ-18",
-      "SOZ-27",
-      "K-11",
-      "K-20",
-      "V-9",
-      "V-12"
+      "SOZ-32"
     ],
     "language": "de",
     "source": "generated"
@@ -4013,12 +3934,12 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "K-12",
-      "K-21",
-      "SOZ-13",
-      "SOZ-24",
       "V-18",
-      "KOG-22"
+      "V-26",
+      "K-16",
+      "K-26",
+      "K-31",
+      "SOZ-34"
     ],
     "language": "de",
     "source": "generated"
@@ -4077,12 +3998,12 @@ export const generated: Material[] = [
       3
     ],
     "eldibGoals": [
-      "V-2",
-      "V-11",
-      "SOZ-5",
-      "SOZ-17",
-      "K-6",
-      "KOG-4"
+      "V-14",
+      "V-22",
+      "K-15",
+      "K-16",
+      "K-28",
+      "SOZ-24"
     ],
     "language": "de",
     "source": "generated"
@@ -4139,12 +4060,12 @@ export const generated: Material[] = [
       2
     ],
     "eldibGoals": [
-      "V-8",
-      "V-17",
-      "SOZ-13",
-      "SOZ-22",
-      "K-9",
-      "KOG-12"
+      "V-13",
+      "V-18",
+      "K-16",
+      "SOZ-15",
+      "SOZ-21",
+      "KOG-11"
     ],
     "language": "de",
     "source": "generated"
@@ -4205,12 +4126,12 @@ export const generated: Material[] = [
       3
     ],
     "eldibGoals": [
-      "KOG-8",
-      "KOG-26",
-      "K-7",
-      "K-18",
-      "SOZ-15",
-      "V-13"
+      "K-8",
+      "K-11",
+      "K-23",
+      "SOZ-13",
+      "SOZ-18",
+      "SOZ-23"
     ],
     "language": "de",
     "source": "generated"
@@ -4267,11 +4188,12 @@ export const generated: Material[] = [
       2
     ],
     "eldibGoals": [
-      "V-9",
-      "V-11",
-      "KOG-7",
-      "SOZ-6",
-      "K-10"
+      "V-4",
+      "V-5",
+      "V-12",
+      "K-16",
+      "SOZ-10",
+      "KOG-5"
     ],
     "language": "de",
     "source": "generated"
@@ -4332,13 +4254,12 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-7",
-      "V-16",
-      "V-24",
-      "KOG-19",
-      "KOG-29",
-      "SOZ-12",
-      "K-16"
+      "V-33",
+      "K-19",
+      "K-26",
+      "K-29",
+      "SOZ-40",
+      "KOG-61"
     ],
     "worksheet": {
       "title": "Mäin inneschten Kritiker → mäin Coach",
@@ -4459,11 +4380,11 @@ export const generated: Material[] = [
     ],
     "eldibGoals": [
       "K-11",
-      "K-20",
-      "SOZ-9",
+      "K-13",
+      "K-14",
       "SOZ-18",
-      "KOG-14",
-      "V-12"
+      "SOZ-32",
+      "KOG-20"
     ],
     "language": "de",
     "source": "generated"
@@ -4520,11 +4441,12 @@ export const generated: Material[] = [
       3
     ],
     "eldibGoals": [
-      "K-7",
-      "K-12",
-      "SOZ-4",
+      "K-9",
+      "K-13",
+      "K-14",
+      "SOZ-12",
       "SOZ-15",
-      "V-5"
+      "SOZ-25"
     ],
     "language": "de",
     "source": "generated"
@@ -4585,11 +4507,12 @@ export const generated: Material[] = [
       3
     ],
     "eldibGoals": [
-      "SOZ-7",
+      "K-13",
+      "K-18",
+      "K-20",
+      "K-28",
       "SOZ-15",
-      "SOZ-25",
-      "K-17",
-      "V-13"
+      "SOZ-26"
     ],
     "language": "de",
     "source": "generated"
@@ -4650,11 +4573,12 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "KOG-15",
-      "KOG-31",
       "V-14",
-      "SOZ-19",
-      "K-13"
+      "K-15",
+      "K-18",
+      "K-19",
+      "K-23",
+      "SOZ-22"
     ],
     "worksheet": {
       "title": "Mäi Wopen: dat sinn ech",
@@ -4778,11 +4702,11 @@ export const generated: Material[] = [
       2
     ],
     "eldibGoals": [
-      "V-11",
-      "V-21",
-      "SOZ-16",
+      "V-13",
       "K-15",
-      "KOG-5"
+      "K-16",
+      "SOZ-9",
+      "SOZ-12"
     ],
     "language": "de",
     "source": "generated"
@@ -4843,11 +4767,12 @@ export const generated: Material[] = [
       3
     ],
     "eldibGoals": [
-      "SOZ-13",
-      "SOZ-24",
-      "K-12",
+      "V-18",
       "K-21",
-      "V-18"
+      "K-26",
+      "K-31",
+      "SOZ-32",
+      "SOZ-34"
     ],
     "language": "de",
     "source": "generated"
@@ -4908,11 +4833,12 @@ export const generated: Material[] = [
       3
     ],
     "eldibGoals": [
-      "V-11",
-      "V-21",
-      "KOG-5",
-      "SOZ-16",
-      "K-15"
+      "V-13",
+      "K-15",
+      "K-16",
+      "SOZ-9",
+      "KOG-11",
+      "KOG-12"
     ],
     "worksheet": {
       "title": "Wou wunnt d'Gefill am Kierper?",
@@ -5021,12 +4947,12 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-7",
-      "V-16",
-      "KOG-19",
-      "KOG-27",
-      "SOZ-12",
-      "K-16"
+      "V-22",
+      "K-18",
+      "K-19",
+      "K-26",
+      "SOZ-40",
+      "KOG-49"
     ],
     "worksheet": {
       "title": "Mäin Erfolgs-Tagebuch",
@@ -5145,11 +5071,12 @@ export const generated: Material[] = [
       2
     ],
     "eldibGoals": [
-      "SOZ-4",
-      "SOZ-9",
-      "K-7",
-      "K-11",
-      "V-12"
+      "SOZ-14",
+      "SOZ-15",
+      "SOZ-16",
+      "SOZ-17",
+      "SOZ-18",
+      "K-7"
     ],
     "language": "de",
     "source": "generated"
@@ -5210,12 +5137,12 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "SOZ-11",
-      "SOZ-19",
-      "SOZ-30",
-      "KOG-15",
       "K-13",
-      "V-14"
+      "K-20",
+      "SOZ-21",
+      "SOZ-31",
+      "SOZ-32",
+      "V-16"
     ],
     "language": "de",
     "source": "generated"
@@ -5276,11 +5203,11 @@ export const generated: Material[] = [
       3
     ],
     "eldibGoals": [
-      "V-15",
-      "KOG-17",
-      "KOG-5",
-      "SOZ-12",
-      "K-14"
+      "K-15",
+      "K-16",
+      "K-18",
+      "SOZ-24",
+      "V-13"
     ],
     "worksheet": {
       "title": "Mäi Glécks-Glas",
@@ -5393,12 +5320,12 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "SOZ-9",
+      "SOZ-17",
       "SOZ-18",
-      "SOZ-27",
-      "K-11",
-      "V-12",
-      "KOG-14"
+      "SOZ-22",
+      "V-21",
+      "V-24",
+      "K-28"
     ],
     "language": "de",
     "source": "generated"
@@ -5459,11 +5386,11 @@ export const generated: Material[] = [
       2
     ],
     "eldibGoals": [
-      "V-11",
-      "K-7",
+      "K-5",
+      "K-9",
       "K-15",
-      "SOZ-15",
-      "KOG-4"
+      "K-16",
+      "SOZ-15"
     ],
     "language": "de",
     "source": "generated"
@@ -5525,11 +5452,11 @@ export const generated: Material[] = [
     ],
     "eldibGoals": [
       "KOG-37",
-      "KOG-44",
-      "KOG-58",
-      "K-21",
-      "V-19",
-      "SOZ-30"
+      "KOG-39",
+      "KOG-41",
+      "KOG-47",
+      "K-17",
+      "SOZ-21"
     ],
     "worksheet": {
       "title": "Meng Fake-Check-Lëscht",
@@ -5643,12 +5570,12 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "SOZ-25",
-      "SOZ-31",
-      "SOZ-38",
-      "KOG-23",
-      "K-22",
-      "V-23"
+      "SOZ-32",
+      "SOZ-36",
+      "SOZ-37",
+      "KOG-38",
+      "KOG-59",
+      "K-33"
     ],
     "language": "de",
     "source": "generated"
@@ -5709,12 +5636,12 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "SOZ-26",
-      "SOZ-34",
+      "V-31",
+      "SOZ-35",
       "SOZ-39",
-      "KOG-54",
-      "K-24",
-      "V-31"
+      "KOG-55",
+      "KOG-62",
+      "K-33"
     ],
     "worksheet": {
       "title": "Meng Kannerrechter",
@@ -5829,10 +5756,11 @@ export const generated: Material[] = [
     ],
     "eldibGoals": [
       "V-11",
+      "V-13",
       "V-21",
-      "KOG-5",
-      "SOZ-16",
-      "K-15"
+      "KOG-16",
+      "KOG-28",
+      "SOZ-20"
     ],
     "language": "de",
     "source": "generated"
@@ -5893,12 +5821,12 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "KOG-8",
-      "KOG-26",
-      "KOG-44",
       "SOZ-18",
+      "SOZ-22",
+      "KOG-26",
+      "K-23",
       "V-22",
-      "K-23"
+      "V-24"
     ],
     "language": "de",
     "source": "generated"
@@ -5959,11 +5887,11 @@ export const generated: Material[] = [
       3
     ],
     "eldibGoals": [
-      "KOG-15",
-      "SOZ-19",
+      "K-13",
       "K-15",
+      "K-18",
       "K-19",
-      "V-14"
+      "SOZ-9"
     ],
     "language": "de",
     "source": "generated"
@@ -6024,12 +5952,12 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "SOZ-23",
-      "SOZ-28",
+      "SOZ-32",
+      "SOZ-34",
       "SOZ-35",
-      "K-21",
-      "KOG-58",
-      "V-22"
+      "SOZ-37",
+      "K-28",
+      "K-31"
     ],
     "worksheet": {
       "title": "Cybermobbing – was ich tun kann",
@@ -6165,12 +6093,12 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-20",
+      "V-22",
       "V-27",
-      "V-28",
-      "KOG-25",
-      "KOG-44",
-      "SOZ-32"
+      "V-29",
+      "V-33",
+      "SOZ-40",
+      "K-29"
     ],
     "language": "de",
     "source": "generated"
@@ -6227,12 +6155,11 @@ export const generated: Material[] = [
       3
     ],
     "eldibGoals": [
-      "V-14",
-      "V-19",
-      "SOZ-16",
-      "SOZ-22",
       "K-15",
-      "KOG-12"
+      "K-16",
+      "KOG-11",
+      "SOZ-12",
+      "V-18"
     ],
     "language": "de",
     "source": "generated"
@@ -6293,11 +6220,11 @@ export const generated: Material[] = [
       2
     ],
     "eldibGoals": [
-      "V-7",
-      "V-13",
-      "SOZ-7",
       "K-8",
-      "KOG-5"
+      "K-15",
+      "K-18",
+      "V-7",
+      "V-13"
     ],
     "language": "de",
     "source": "generated"
@@ -6360,9 +6287,9 @@ export const generated: Material[] = [
     "eldibGoals": [
       "V-11",
       "V-21",
-      "KOG-5",
-      "SOZ-16",
-      "K-15"
+      "KOG-11",
+      "KOG-18",
+      "SOZ-20"
     ],
     "language": "de",
     "source": "generated"
@@ -6423,12 +6350,12 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "SOZ-18",
-      "SOZ-27",
-      "K-20",
-      "K-29",
-      "KOG-46",
-      "V-22"
+      "SOZ-30",
+      "SOZ-32",
+      "SOZ-38",
+      "V-23",
+      "V-30",
+      "K-20"
     ],
     "worksheet": {
       "title": "Eis Teamrollen",
@@ -6556,12 +6483,12 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-16",
-      "V-20",
-      "V-24",
-      "SOZ-13",
-      "KOG-19",
-      "K-16"
+      "V-21",
+      "V-26",
+      "V-28",
+      "V-33",
+      "K-26",
+      "K-29"
     ],
     "language": "de",
     "source": "generated"
@@ -6622,11 +6549,11 @@ export const generated: Material[] = [
       2
     ],
     "eldibGoals": [
-      "SOZ-13",
+      "SOZ-15",
       "SOZ-16",
-      "K-12",
-      "K-15",
-      "V-12"
+      "K-9",
+      "K-14",
+      "K-16"
     ],
     "language": "de",
     "source": "generated"
@@ -6689,9 +6616,9 @@ export const generated: Material[] = [
     "eldibGoals": [
       "SOZ-12",
       "SOZ-15",
-      "K-14",
-      "KOG-17",
-      "V-15"
+      "SOZ-26",
+      "K-12",
+      "K-15"
     ],
     "worksheet": {
       "title": "Mäin Helfer-Netz",
@@ -6804,11 +6731,12 @@ export const generated: Material[] = [
       2
     ],
     "eldibGoals": [
+      "V-3",
+      "V-6",
+      "V-10",
       "V-11",
-      "V-21",
-      "KOG-5",
-      "SOZ-16",
-      "K-15"
+      "KOG-2",
+      "KOG-5"
     ],
     "language": "de",
     "source": "generated"
@@ -6869,11 +6797,12 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "K-9",
-      "K-17",
-      "K-22",
+      "K-12",
+      "K-14",
+      "K-13",
+      "K-27",
       "SOZ-15",
-      "KOG-37"
+      "SOZ-32"
     ],
     "language": "de",
     "source": "generated"
@@ -6934,12 +6863,12 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-16",
+      "V-22",
       "V-24",
-      "KOG-19",
-      "KOG-27",
-      "SOZ-12",
-      "K-16"
+      "V-27",
+      "K-16",
+      "K-29",
+      "SOZ-21"
     ],
     "language": "de",
     "source": "generated"
@@ -7000,11 +6929,12 @@ export const generated: Material[] = [
       3
     ],
     "eldibGoals": [
-      "V-13",
-      "SOZ-7",
-      "SOZ-15",
       "K-18",
-      "KOG-5"
+      "K-19",
+      "K-22",
+      "V-14",
+      "SOZ-22",
+      "K-15"
     ],
     "language": "de",
     "source": "generated"
@@ -7066,10 +6996,11 @@ export const generated: Material[] = [
     ],
     "eldibGoals": [
       "V-10",
+      "V-11",
       "V-20",
       "SOZ-14",
-      "SOZ-19",
-      "K-9"
+      "SOZ-16",
+      "SOZ-19"
     ],
     "language": "de",
     "source": "generated"
@@ -7130,12 +7061,12 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-16",
       "V-21",
+      "V-22",
+      "V-24",
       "V-26",
-      "KOG-19",
-      "SOZ-20",
-      "K-16"
+      "K-26",
+      "SOZ-40"
     ],
     "worksheet": {
       "title": "Mäi Prüfungs-Plan",
@@ -7257,11 +7188,12 @@ export const generated: Material[] = [
       2
     ],
     "eldibGoals": [
+      "V-3",
       "V-9",
-      "K-1",
-      "K-10",
-      "SOZ-6",
-      "KOG-7"
+      "V-11",
+      "KOG-5",
+      "SOZ-18",
+      "SOZ-20"
     ],
     "language": "de",
     "source": "generated"
@@ -7322,11 +7254,12 @@ export const generated: Material[] = [
       3
     ],
     "eldibGoals": [
-      "SOZ-11",
-      "SOZ-19",
-      "SOZ-26",
-      "K-12",
-      "KOG-22"
+      "SOZ-21",
+      "SOZ-27",
+      "SOZ-32",
+      "SOZ-34",
+      "K-17",
+      "KOG-38"
     ],
     "language": "de",
     "source": "generated"
@@ -7387,11 +7320,12 @@ export const generated: Material[] = [
       3
     ],
     "eldibGoals": [
-      "SOZ-25",
-      "SOZ-37",
       "K-21",
-      "KOG-23",
-      "V-23"
+      "K-20",
+      "K-16",
+      "SOZ-37",
+      "SOZ-32",
+      "KOG-38"
     ],
     "language": "de",
     "source": "generated"
@@ -7452,12 +7386,12 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "KOG-15",
-      "KOG-31",
-      "KOG-54",
+      "SOZ-40",
+      "K-19",
+      "K-34",
       "V-22",
-      "SOZ-19",
-      "K-26"
+      "V-29",
+      "KOG-49"
     ],
     "worksheet": {
       "title": "Meng Zukunft",
@@ -7574,11 +7508,12 @@ export const generated: Material[] = [
       2
     ],
     "eldibGoals": [
-      "SOZ-9",
+      "SOZ-16",
       "SOZ-18",
-      "K-11",
-      "V-12",
-      "KOG-8"
+      "SOZ-19",
+      "V-9",
+      "V-23",
+      "K-22"
     ],
     "language": "de",
     "source": "generated"
@@ -7639,11 +7574,12 @@ export const generated: Material[] = [
       3
     ],
     "eldibGoals": [
-      "SOZ-15",
+      "SOZ-16",
+      "K-28",
       "SOZ-26",
-      "K-17",
-      "V-13",
-      "KOG-5"
+      "K-27",
+      "SOZ-37",
+      "SOZ-32"
     ],
     "language": "de",
     "source": "generated"
@@ -7704,11 +7640,12 @@ export const generated: Material[] = [
       3
     ],
     "eldibGoals": [
+      "V-3",
       "V-11",
-      "V-21",
-      "KOG-5",
-      "SOZ-16",
-      "K-15"
+      "KOG-2",
+      "K-13",
+      "K-15",
+      "V-6"
     ],
     "language": "de",
     "source": "generated"
@@ -7769,12 +7706,12 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-16",
-      "V-21",
-      "KOG-19",
-      "KOG-27",
-      "SOZ-16",
-      "K-26"
+      "K-26",
+      "K-29",
+      "KOG-49",
+      "SOZ-40",
+      "V-22",
+      "SOZ-36"
     ],
     "worksheet": {
       "title": "Mäi Gefiller-Journal",
@@ -7884,11 +7821,12 @@ export const generated: Material[] = [
       2
     ],
     "eldibGoals": [
+      "V-3",
       "V-9",
-      "V-11",
-      "KOG-7",
-      "SOZ-6",
-      "K-10"
+      "KOG-4",
+      "KOG-5",
+      "SOZ-13",
+      "KOG-16"
     ],
     "language": "de",
     "source": "generated"
@@ -7949,12 +7887,12 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "SOZ-21",
-      "SOZ-29",
+      "SOZ-37",
       "SOZ-39",
-      "K-24",
-      "V-14",
-      "KOG-20"
+      "SOZ-41",
+      "SOZ-35",
+      "K-33",
+      "V-25"
     ],
     "language": "de",
     "source": "generated"
@@ -8015,11 +7953,12 @@ export const generated: Material[] = [
       3
     ],
     "eldibGoals": [
-      "SOZ-9",
+      "SOZ-15",
       "SOZ-18",
-      "K-11",
-      "V-9",
-      "KOG-7"
+      "SOZ-19",
+      "SOZ-23",
+      "SOZ-30",
+      "V-9"
     ],
     "language": "de",
     "source": "generated"
@@ -8080,11 +8019,12 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-11",
-      "V-21",
-      "KOG-5",
-      "SOZ-16",
-      "K-15"
+      "V-6",
+      "V-8",
+      "V-22",
+      "K-15",
+      "K-29",
+      "KOG-37"
     ],
     "language": "de",
     "source": "generated"
@@ -8145,12 +8085,12 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-22",
-      "V-24",
-      "KOG-27",
-      "KOG-54",
-      "SOZ-12",
-      "K-26"
+      "SOZ-40",
+      "V-29",
+      "K-34",
+      "SOZ-39",
+      "K-33",
+      "V-22"
     ],
     "language": "de",
     "source": "generated"
@@ -8211,11 +8151,12 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-19",
-      "SOZ-22",
-      "K-13",
-      "K-21",
-      "KOG-22"
+      "V-18",
+      "V-20",
+      "V-25",
+      "K-16",
+      "K-29",
+      "SOZ-21"
     ],
     "language": "de",
     "source": "generated"
@@ -8276,11 +8217,11 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
+      "K-19",
+      "K-18",
+      "K-15",
       "V-13",
-      "SOZ-7",
-      "SOZ-15",
-      "KOG-17",
-      "K-18"
+      "V-22"
     ],
     "language": "de",
     "source": "generated"
@@ -8337,10 +8278,11 @@ export const generated: Material[] = [
       2
     ],
     "eldibGoals": [
-      "K-7",
-      "K-11",
-      "SOZ-15",
-      "V-10"
+      "K-2",
+      "K-8",
+      "K-9",
+      "SOZ-7",
+      "V-11"
     ],
     "language": "de",
     "source": "generated"
@@ -8397,10 +8339,11 @@ export const generated: Material[] = [
       2
     ],
     "eldibGoals": [
-      "V-11",
-      "K-15",
-      "SOZ-15",
-      "KOG-30"
+      "K-16",
+      "K-14",
+      "KOG-17",
+      "KOG-12",
+      "SOZ-15"
     ],
     "language": "de",
     "source": "generated"
@@ -8458,8 +8401,9 @@ export const generated: Material[] = [
     ],
     "eldibGoals": [
       "SOZ-18",
-      "SOZ-27",
+      "K-17",
       "K-11",
+      "V-21",
       "V-12"
     ],
     "language": "de",
@@ -8521,10 +8465,11 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "KOG-15",
-      "KOG-31",
-      "V-24",
-      "SOZ-19",
+      "SOZ-40",
+      "K-30",
+      "K-15",
+      "SOZ-29",
+      "V-22",
       "K-26"
     ],
     "worksheet": {
@@ -8657,10 +8602,10 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "SOZ-13",
-      "SOZ-24",
-      "K-12",
+      "SOZ-34",
+      "V-28",
       "K-21",
+      "SOZ-32",
       "V-18"
     ],
     "language": "de",
@@ -8718,10 +8663,11 @@ export const generated: Material[] = [
       3
     ],
     "eldibGoals": [
+      "V-10",
+      "SOZ-14",
       "V-11",
-      "V-21",
-      "KOG-5",
-      "SOZ-16"
+      "KOG-2",
+      "V-20"
     ],
     "language": "de",
     "source": "generated"
@@ -8783,11 +8729,11 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "K-12",
-      "K-17",
+      "K-27",
       "K-21",
-      "SOZ-25",
-      "V-18"
+      "SOZ-32",
+      "SOZ-37",
+      "K-12"
     ],
     "language": "de",
     "source": "generated"
@@ -8848,10 +8794,11 @@ export const generated: Material[] = [
       2
     ],
     "eldibGoals": [
-      "V-11",
-      "K-15",
       "K-16",
-      "SOZ-16"
+      "K-15",
+      "SOZ-9",
+      "KOG-2",
+      "V-11"
     ],
     "worksheet": {
       "title": "Mäi Smiley-Kalenner",
@@ -8964,10 +8911,10 @@ export const generated: Material[] = [
     ],
     "eldibGoals": [
       "SOZ-18",
-      "SOZ-27",
-      "K-11",
+      "K-17",
+      "V-21",
       "V-12",
-      "KOG-14"
+      "SOZ-16"
     ],
     "language": "de",
     "source": "generated"
@@ -9024,10 +8971,11 @@ export const generated: Material[] = [
       3
     ],
     "eldibGoals": [
-      "V-11",
-      "V-21",
       "KOG-2",
-      "SOZ-16"
+      "V-11",
+      "V-10",
+      "SOZ-14",
+      "V-21"
     ],
     "language": "de",
     "source": "generated"
@@ -9085,9 +9033,10 @@ export const generated: Material[] = [
     ],
     "eldibGoals": [
       "V-10",
-      "V-12",
       "V-20",
-      "SOZ-14"
+      "V-5",
+      "SOZ-14",
+      "V-12"
     ],
     "language": "de",
     "source": "generated"
@@ -9148,11 +9097,11 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "KOG-15",
-      "KOG-31",
-      "V-22",
-      "V-24",
-      "SOZ-19"
+      "SOZ-40",
+      "K-34",
+      "K-23",
+      "K-15",
+      "V-22"
     ],
     "worksheet": {
       "title": "Mäi Vision-Board – Begleetblat",
@@ -9280,10 +9229,10 @@ export const generated: Material[] = [
     ],
     "eldibGoals": [
       "SOZ-15",
-      "SOZ-26",
-      "K-17",
+      "SOZ-25",
+      "K-28",
       "KOG-18",
-      "V-13"
+      "SOZ-26"
     ],
     "language": "de",
     "source": "generated"
@@ -9344,11 +9293,11 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "SOZ-23",
       "SOZ-27",
+      "V-31",
       "SOZ-35",
-      "K-21",
-      "V-31"
+      "K-17",
+      "V-16"
     ],
     "worksheet": {
       "title": "Eise Klassevertrag – Gruppenarbeit",
@@ -9477,10 +9426,11 @@ export const generated: Material[] = [
       2
     ],
     "eldibGoals": [
+      "SOZ-13",
       "KOG-2",
-      "KOG-8",
+      "KOG-12",
       "V-11",
-      "K-17"
+      "K-15"
     ],
     "language": "de",
     "source": "generated"
@@ -9537,11 +9487,11 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
+      "SOZ-32",
+      "K-17",
       "SOZ-21",
-      "SOZ-27",
-      "SOZ-34",
-      "K-20",
-      "KOG-58"
+      "V-32",
+      "SOZ-27"
     ],
     "language": "de",
     "source": "generated"
@@ -9602,11 +9552,11 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "KOG-44",
       "KOG-58",
-      "K-21",
-      "V-23",
-      "SOZ-33"
+      "KOG-59",
+      "K-33",
+      "KOG-57",
+      "SOZ-35"
     ],
     "worksheet": {
       "title": "Werbe-Detektiv",
@@ -9741,11 +9691,11 @@ export const generated: Material[] = [
       3
     ],
     "eldibGoals": [
-      "V-13",
-      "V-16",
-      "SOZ-7",
       "K-18",
-      "KOG-5"
+      "K-15",
+      "V-14",
+      "V-22",
+      "SOZ-24"
     ],
     "language": "de",
     "source": "generated"
@@ -9805,8 +9755,8 @@ export const generated: Material[] = [
       "SOZ-15",
       "SOZ-18",
       "SOZ-26",
-      "K-14",
-      "V-12"
+      "K-28",
+      "K-14"
     ],
     "language": "de",
     "source": "generated"
@@ -9865,9 +9815,9 @@ export const generated: Material[] = [
     "eldibGoals": [
       "V-8",
       "V-27",
-      "V-32",
-      "SOZ-27",
-      "KOG-25"
+      "V-30",
+      "V-31",
+      "SOZ-27"
     ],
     "language": "de",
     "source": "generated"
@@ -9931,7 +9881,8 @@ export const generated: Material[] = [
       "V-11",
       "V-21",
       "K-16",
-      "SOZ-16"
+      "K-26",
+      "SOZ-14"
     ],
     "language": "de",
     "source": "generated"
@@ -9993,10 +9944,12 @@ export const generated: Material[] = [
     ],
     "eldibGoals": [
       "K-21",
-      "K-26",
-      "SOZ-25",
-      "KOG-58",
-      "V-23"
+      "K-25",
+      "K-31",
+      "V-26",
+      "SOZ-32",
+      "SOZ-37",
+      "KOG-58"
     ],
     "language": "de",
     "source": "generated"
@@ -10057,11 +10010,11 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "KOG-15",
       "K-18",
       "K-19",
-      "SOZ-19",
-      "V-13"
+      "K-23",
+      "V-14",
+      "SOZ-18"
     ],
     "worksheet": {
       "title": "Mäin Helden-Avatar",
@@ -10177,12 +10130,13 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "SOZ-27",
-      "SOZ-34",
-      "SOZ-39",
-      "K-20",
+      "V-28",
       "V-31",
-      "KOG-58"
+      "V-32",
+      "K-17",
+      "SOZ-27",
+      "SOZ-32",
+      "SOZ-34"
     ],
     "language": "de",
     "source": "generated"
@@ -10243,10 +10197,10 @@ export const generated: Material[] = [
       3
     ],
     "eldibGoals": [
-      "V-11",
       "K-16",
       "K-21",
-      "SOZ-25"
+      "SOZ-20",
+      "V-11"
     ],
     "language": "de",
     "source": "generated"
@@ -10307,10 +10261,9 @@ export const generated: Material[] = [
       3
     ],
     "eldibGoals": [
-      "KOG-15",
       "K-18",
       "K-19",
-      "SOZ-19",
+      "K-23",
       "V-13"
     ],
     "language": "de",
@@ -10369,9 +10322,9 @@ export const generated: Material[] = [
     ],
     "eldibGoals": [
       "SOZ-18",
-      "SOZ-19",
-      "K-11",
-      "V-12"
+      "SOZ-22",
+      "V-21",
+      "V-23"
     ],
     "language": "de",
     "source": "generated"
@@ -10432,11 +10385,11 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-15",
-      "V-16",
-      "KOG-17",
-      "SOZ-12",
-      "K-18"
+      "K-18",
+      "K-19",
+      "V-22",
+      "V-24",
+      "SOZ-12"
     ],
     "worksheet": {
       "title": "Mäi Stäerke-Schëld",
@@ -10557,9 +10510,9 @@ export const generated: Material[] = [
     ],
     "eldibGoals": [
       "V-21",
-      "V-26",
-      "KOG-5",
-      "SOZ-16"
+      "V-22",
+      "V-24",
+      "K-26"
     ],
     "language": "de",
     "source": "generated"
@@ -10620,11 +10573,11 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "SOZ-13",
-      "SOZ-24",
-      "K-12",
-      "KOG-44",
-      "V-18"
+      "V-18",
+      "V-28",
+      "K-23",
+      "K-29",
+      "SOZ-34"
     ],
     "worksheet": {
       "title": "Mäi Sträit-Comic",
@@ -10746,10 +10699,10 @@ export const generated: Material[] = [
     ],
     "eldibGoals": [
       "SOZ-15",
-      "SOZ-31",
+      "SOZ-25",
+      "K-13",
       "K-14",
-      "K-17",
-      "V-12"
+      "K-17"
     ],
     "language": "de",
     "source": "generated"
@@ -10814,7 +10767,7 @@ export const generated: Material[] = [
       "V-20",
       "V-21",
       "K-16",
-      "SOZ-16"
+      "K-26"
     ],
     "worksheet": {
       "title": "Mäi Wuttbarometer",
@@ -10930,11 +10883,11 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "SOZ-15",
-      "SOZ-26",
-      "K-17",
       "K-22",
-      "V-13"
+      "K-27",
+      "K-28",
+      "SOZ-15",
+      "SOZ-26"
     ],
     "language": "de",
     "source": "generated"
@@ -10996,9 +10949,9 @@ export const generated: Material[] = [
     ],
     "eldibGoals": [
       "V-18",
-      "V-19",
+      "V-20",
       "SOZ-21",
-      "K-20",
+      "SOZ-32",
       "KOG-58"
     ],
     "language": "de",
@@ -11060,11 +11013,11 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "KOG-19",
-      "KOG-27",
-      "V-20",
       "V-22",
-      "SOZ-12"
+      "V-29",
+      "V-32",
+      "SOZ-40",
+      "KOG-62"
     ],
     "worksheet": {
       "title": "Mäi SMART-Ziel",
@@ -11183,10 +11136,11 @@ export const generated: Material[] = [
       2
     ],
     "eldibGoals": [
+      "SOZ-10",
       "SOZ-14",
+      "SOZ-15",
       "SOZ-17",
-      "V-12",
-      "K-7"
+      "V-12"
     ],
     "language": "de",
     "source": "generated"
@@ -11247,11 +11201,11 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
+      "K-12",
       "K-14",
-      "K-17",
       "K-20",
-      "SOZ-25",
-      "V-13"
+      "SOZ-15",
+      "K-17"
     ],
     "language": "de",
     "source": "generated"
@@ -11308,9 +11262,9 @@ export const generated: Material[] = [
       3
     ],
     "eldibGoals": [
+      "SOZ-13",
       "V-11",
       "V-21",
-      "KOG-5",
       "K-16"
     ],
     "language": "de",
@@ -11372,11 +11326,12 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "KOG-15",
-      "SOZ-31",
-      "SOZ-33",
       "K-13",
-      "V-14"
+      "K-15",
+      "K-33",
+      "SOZ-31",
+      "SOZ-32",
+      "SOZ-37"
     ],
     "worksheet": {
       "title": "Mäi Kulturkoffer",
@@ -11490,9 +11445,11 @@ export const generated: Material[] = [
       2
     ],
     "eldibGoals": [
+      "V-3",
+      "V-12",
       "SOZ-17",
       "SOZ-20",
-      "V-12",
+      "KOG-2",
       "KOG-5"
     ],
     "language": "de",
@@ -11554,11 +11511,12 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
+      "SOZ-21",
       "SOZ-34",
-      "SOZ-36",
-      "K-20",
-      "KOG-58",
-      "V-17"
+      "SOZ-35",
+      "K-17",
+      "KOG-55",
+      "KOG-58"
     ],
     "language": "de",
     "source": "generated"
@@ -11619,11 +11577,12 @@ export const generated: Material[] = [
       3
     ],
     "eldibGoals": [
-      "KOG-8",
-      "KOG-26",
-      "SOZ-18",
       "V-13",
-      "K-11"
+      "SOZ-18",
+      "K-23",
+      "KOG-15",
+      "KOG-18",
+      "KOG-26"
     ],
     "language": "de",
     "source": "generated"
@@ -11682,8 +11641,9 @@ export const generated: Material[] = [
     "eldibGoals": [
       "V-10",
       "V-20",
-      "KOG-2",
-      "SOZ-14"
+      "V-21",
+      "SOZ-14",
+      "KOG-2"
     ],
     "language": "de",
     "source": "generated"
@@ -11744,11 +11704,12 @@ export const generated: Material[] = [
       3
     ],
     "eldibGoals": [
+      "SOZ-16",
       "SOZ-18",
-      "SOZ-26",
-      "SOZ-30",
+      "SOZ-27",
       "K-22",
-      "V-13"
+      "V-13",
+      "V-30"
     ],
     "language": "de",
     "source": "generated"
@@ -11809,10 +11770,12 @@ export const generated: Material[] = [
       3
     ],
     "eldibGoals": [
-      "V-15",
-      "KOG-17",
-      "SOZ-12",
-      "K-16"
+      "V-13",
+      "K-15",
+      "K-16",
+      "K-18",
+      "SOZ-9",
+      "SOZ-25"
     ],
     "worksheet": {
       "title": "Meng Mutmach-Këscht",
@@ -11926,10 +11889,11 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "KOG-44",
-      "V-22",
       "V-24",
-      "SOZ-33"
+      "V-29",
+      "K-15",
+      "SOZ-24",
+      "KOG-44"
     ],
     "worksheet": {
       "title": "Meng bildschirmfräi Iddien",
@@ -12051,11 +12015,11 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-20",
+      "V-21",
+      "V-22",
       "V-27",
-      "KOG-2",
-      "KOG-25",
-      "SOZ-12"
+      "V-29",
+      "KOG-2"
     ],
     "language": "de",
     "source": "generated"
@@ -12117,10 +12081,10 @@ export const generated: Material[] = [
     ],
     "eldibGoals": [
       "V-16",
+      "V-17",
       "V-22",
-      "KOG-19",
-      "SOZ-12",
-      "K-18"
+      "K-18",
+      "SOZ-40"
     ],
     "language": "de",
     "source": "generated"
@@ -12186,19 +12150,11 @@ export const generated: Material[] = [
       2
     ],
     "eldibGoals": [
-      "V-1",
-      "V-3",
       "V-9",
-      "V-14",
-      "V-20",
-      "SOZ-3",
       "SOZ-9",
-      "SOZ-19",
       "K-15",
-      "K-18",
+      "K-16",
       "K-26",
-      "KOG-2",
-      "KOG-11",
       "KOG-16"
     ],
     "language": "de",
@@ -12265,20 +12221,12 @@ export const generated: Material[] = [
       2
     ],
     "eldibGoals": [
-      "V-1",
-      "V-3",
       "V-9",
       "V-13",
-      "V-14",
-      "SOZ-3",
       "SOZ-9",
-      "SOZ-19",
       "SOZ-25",
       "K-15",
-      "K-18",
-      "K-26",
-      "KOG-2",
-      "KOG-16"
+      "K-18"
     ],
     "language": "de",
     "source": "generated"
@@ -12344,17 +12292,9 @@ export const generated: Material[] = [
       2
     ],
     "eldibGoals": [
-      "V-1",
-      "V-3",
       "V-9",
       "V-13",
-      "V-14",
-      "V-19",
-      "SOZ-3",
       "SOZ-9",
-      "SOZ-19",
-      "SOZ-25",
-      "K-15",
       "K-18",
       "KOG-11",
       "KOG-16"
@@ -12423,20 +12363,12 @@ export const generated: Material[] = [
       2
     ],
     "eldibGoals": [
-      "V-1",
-      "V-3",
       "V-9",
       "V-13",
-      "V-14",
-      "V-19",
-      "SOZ-3",
       "SOZ-9",
-      "SOZ-19",
-      "SOZ-25",
       "K-15",
       "K-18",
-      "K-26",
-      "KOG-16"
+      "KOG-11"
     ],
     "language": "de",
     "source": "generated"
@@ -12502,20 +12434,12 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-3",
-      "V-16",
       "K-9",
-      "K-10",
       "K-13",
       "K-14",
-      "K-17",
-      "K-20",
       "K-21",
       "SOZ-15",
-      "SOZ-32",
-      "SOZ-37",
-      "KOG-38",
-      "KOG-48"
+      "SOZ-32"
     ],
     "worksheet": {
       "title": "Frage-Schätze - Tür-zu oder Tür-auf?",
@@ -12642,19 +12566,11 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-3",
-      "K-13",
       "K-16",
-      "K-17",
       "K-20",
       "K-21",
-      "K-26",
       "SOZ-5",
-      "SOZ-15",
-      "SOZ-31",
-      "SOZ-32",
       "SOZ-37",
-      "KOG-2",
       "KOG-38"
     ],
     "worksheet": {
@@ -12780,20 +12696,12 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-16",
-      "V-17",
-      "V-18",
-      "K-9",
-      "K-17",
       "K-21",
-      "K-26",
+      "K-25",
+      "K-29",
       "K-30",
-      "SOZ-32",
-      "SOZ-34",
       "SOZ-37",
-      "KOG-38",
-      "KOG-39",
-      "KOG-48"
+      "KOG-38"
     ],
     "worksheet": {
       "title": "Die vier Ohren einer Nachricht",
@@ -12934,17 +12842,9 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-10",
-      "V-16",
-      "V-17",
       "V-18",
-      "K-9",
       "K-17",
-      "K-25",
       "K-29",
-      "K-30",
-      "SOZ-18",
-      "SOZ-19",
       "SOZ-27",
       "SOZ-31",
       "SOZ-32"
@@ -13073,17 +12973,9 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-19",
-      "V-24",
-      "V-30",
-      "K-14",
-      "K-17",
       "K-20",
-      "K-22",
       "K-27",
-      "SOZ-15",
       "SOZ-29",
-      "SOZ-31",
       "SOZ-32",
       "SOZ-33",
       "SOZ-41"
@@ -13219,20 +13111,12 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-24",
-      "V-27",
-      "V-30",
-      "K-14",
-      "K-17",
-      "K-19",
-      "K-22",
       "K-27",
       "K-28",
       "K-32",
       "SOZ-18",
-      "SOZ-26",
-      "SOZ-32",
-      "SOZ-37"
+      "SOZ-37",
+      "SOZ-41"
     ],
     "worksheet": {
       "title": "Unser Tandem-Tagebuch - Wochenseite",
@@ -13360,19 +13244,11 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-18",
-      "V-24",
-      "V-27",
-      "V-30",
       "K-22",
       "K-27",
       "K-28",
       "SOZ-18",
-      "SOZ-23",
-      "SOZ-26",
       "SOZ-30",
-      "SOZ-32",
-      "SOZ-34",
       "SOZ-41"
     ],
     "worksheet": {
@@ -13500,20 +13376,15 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-24",
-      "V-30",
+      "K-13",
       "K-14",
-      "K-17",
+      "K-15",
       "K-20",
       "K-21",
-      "K-22",
       "K-27",
-      "K-32",
+      "K-22",
       "SOZ-29",
-      "SOZ-31",
-      "SOZ-32",
-      "SOZ-33",
-      "SOZ-37"
+      "SOZ-32"
     ],
     "worksheet": {
       "title": "Reporter-Auftrag: Ich porträtiere dich",
@@ -13640,19 +13511,13 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-19",
+      "V-21",
       "V-23",
-      "V-27",
-      "SOZ-17",
       "SOZ-18",
-      "SOZ-19",
-      "SOZ-26",
-      "SOZ-29",
       "SOZ-30",
       "SOZ-31",
-      "K-22",
-      "KOG-38",
-      "KOG-48"
+      "SOZ-41",
+      "K-22"
     ],
     "worksheet": {
       "title": "Unser Getriebe - Was treibt unsere Zusammenarbeit an?",
@@ -13783,19 +13648,13 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-18",
       "V-23",
       "V-28",
-      "K-17",
-      "K-21",
-      "SOZ-16",
-      "SOZ-17",
       "SOZ-18",
-      "SOZ-23",
-      "SOZ-26",
+      "SOZ-19",
+      "SOZ-30",
       "SOZ-34",
-      "KOG-38",
-      "KOG-48"
+      "K-17"
     ],
     "worksheet": {
       "title": "Stille Konstrukteure - Wie arbeiten wir zusammen?",
@@ -13940,19 +13799,13 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-13",
-      "V-23",
-      "V-27",
-      "K-22",
-      "K-28",
-      "SOZ-16",
-      "SOZ-17",
       "SOZ-18",
       "SOZ-22",
-      "SOZ-26",
-      "SOZ-29",
-      "KOG-38",
-      "KOG-48",
+      "SOZ-32",
+      "SOZ-41",
+      "K-17",
+      "K-22",
+      "K-28",
       "KOG-51"
     ],
     "worksheet": {
@@ -14089,20 +13942,13 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-17",
-      "V-18",
-      "V-23",
       "V-28",
-      "K-29",
-      "K-30",
-      "K-31",
-      "SOZ-18",
-      "SOZ-26",
-      "SOZ-27",
-      "SOZ-31",
+      "V-32",
+      "SOZ-32",
       "SOZ-34",
-      "KOG-48",
-      "KOG-57"
+      "SOZ-39",
+      "K-29",
+      "K-31"
     ],
     "worksheet": {
       "title": "Konsens-Werkstatt - Eine Lösung, die alle tragen",
@@ -14269,20 +14115,13 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-17",
-      "V-23",
-      "V-24",
-      "K-18",
       "K-19",
       "K-20",
-      "K-32",
-      "SOZ-21",
-      "SOZ-26",
+      "K-28",
       "SOZ-31",
+      "SOZ-33",
       "SOZ-37",
-      "SOZ-40",
-      "KOG-54",
-      "KOG-61"
+      "SOZ-40"
     ],
     "worksheet": {
       "title": "Der blinde Fleck - Mein Stärkenspiegel",
@@ -14422,20 +14261,13 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-17",
-      "V-18",
-      "V-23",
-      "V-28",
-      "K-21",
-      "SOZ-26",
-      "SOZ-31",
-      "SOZ-34",
+      "K-29",
+      "SOZ-35",
+      "SOZ-36",
       "SOZ-37",
-      "KOG-37",
-      "KOG-39",
-      "KOG-54",
+      "KOG-38",
       "KOG-58",
-      "KOG-61"
+      "KOG-59"
     ],
     "worksheet": {
       "title": "Vorschnell geurteilt - Die Geschichte hinter dem Verhalten",
@@ -14575,20 +14407,13 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-17",
       "V-18",
-      "V-23",
-      "V-28",
       "K-21",
-      "K-27",
-      "SOZ-26",
-      "SOZ-31",
+      "K-31",
       "SOZ-34",
       "SOZ-37",
       "SOZ-38",
-      "KOG-54",
-      "KOG-58",
-      "KOG-61"
+      "KOG-38"
     ],
     "worksheet": {
       "title": "Mit deinen Augen - Perspektivwechsel im Streitfall",
@@ -14730,20 +14555,13 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-17",
-      "V-20",
-      "V-23",
-      "K-1",
-      "K-18",
+      "K-16",
       "K-19",
+      "K-25",
       "K-26",
-      "SOZ-21",
-      "SOZ-26",
-      "SOZ-31",
+      "SOZ-33",
       "SOZ-37",
-      "KOG-37",
-      "KOG-54",
-      "KOG-61"
+      "SOZ-40"
     ],
     "worksheet": {
       "title": "Wirkung statt Absicht - Wie ich auf andere wirke",
@@ -14897,10 +14715,6 @@ export const generated: Material[] = [
       "V-10",
       "V-11",
       "K-16",
-      "K-17",
-      "SOZ-9",
-      "SOZ-14",
-      "SOZ-15",
       "KOG-1",
       "KOG-2",
       "KOG-12"
@@ -15059,17 +14873,12 @@ export const generated: Material[] = [
     ],
     "eldibGoals": [
       "V-3",
-      "V-20",
+      "V-10",
       "V-21",
-      "V-23",
-      "V-32",
       "K-16",
       "K-26",
-      "SOZ-9",
-      "SOZ-26",
-      "SOZ-31",
       "KOG-2",
-      "KOG-37"
+      "SOZ-9"
     ],
     "worksheet": {
       "title": "Mein Anker-Pass",
@@ -15217,13 +15026,9 @@ export const generated: Material[] = [
       "V-11",
       "V-12",
       "K-16",
-      "K-18",
-      "SOZ-9",
-      "SOZ-14",
-      "SOZ-30",
       "KOG-1",
       "KOG-2",
-      "KOG-12"
+      "SOZ-9"
     ],
     "worksheet": {
       "title": "Mein Achtsamkeits-Pass",
@@ -15368,16 +15173,11 @@ export const generated: Material[] = [
       "V-1",
       "V-3",
       "V-21",
-      "V-33",
       "K-16",
-      "K-17",
       "K-26",
-      "SOZ-9",
-      "SOZ-15",
-      "SOZ-37",
       "KOG-2",
-      "KOG-37",
-      "KOG-58"
+      "KOG-11",
+      "SOZ-9"
     ],
     "worksheet": {
       "title": "Mein Gefühls-Wettertagebuch",
@@ -15518,14 +15318,12 @@ export const generated: Material[] = [
     ],
     "eldibGoals": [
       "V-1",
-      "V-6",
       "K-16",
       "K-18",
       "K-26",
-      "SOZ-9",
-      "SOZ-28",
       "KOG-11",
-      "KOG-16"
+      "KOG-12",
+      "SOZ-9"
     ],
     "language": "de",
     "source": "generated"
@@ -15594,14 +15392,11 @@ export const generated: Material[] = [
     "eldibGoals": [
       "V-6",
       "V-14",
+      "K-15",
       "K-18",
       "K-19",
       "K-24",
-      "SOZ-9",
-      "SOZ-24",
-      "SOZ-25",
-      "SOZ-40",
-      "KOG-7"
+      "SOZ-9"
     ],
     "language": "de",
     "source": "generated"
@@ -15671,10 +15466,9 @@ export const generated: Material[] = [
       "V-2",
       "K-16",
       "K-26",
-      "SOZ-9",
       "KOG-2",
       "KOG-11",
-      "KOG-16"
+      "SOZ-9"
     ],
     "language": "de",
     "source": "generated"
@@ -15744,11 +15538,10 @@ export const generated: Material[] = [
       "V-7",
       "K-16",
       "K-26",
-      "SOZ-9",
-      "SOZ-15",
       "KOG-2",
       "KOG-13",
-      "KOG-20"
+      "KOG-20",
+      "SOZ-9"
     ],
     "language": "de",
     "source": "generated"
@@ -15813,16 +15606,13 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
+      "K-8",
       "K-9",
-      "K-10",
+      "K-11",
       "K-12",
       "K-14",
       "K-17",
-      "K-30",
-      "SOZ-15",
-      "SOZ-19",
-      "SOZ-33",
-      "KOG-38"
+      "SOZ-15"
     ],
     "language": "de",
     "source": "generated"
@@ -15887,18 +15677,14 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
+      "K-2",
       "K-9",
       "K-14",
-      "K-15",
       "K-17",
+      "K-21",
+      "K-27",
       "K-28",
-      "K-30",
-      "SOZ-15",
-      "SOZ-26",
-      "SOZ-33",
-      "SOZ-37",
-      "V-10",
-      "KOG-37"
+      "SOZ-15"
     ],
     "worksheet": {
       "title": "Paraphrasieren-Profis: Mein Beobachter- und Spiegel-Blatt",
@@ -16034,17 +15820,13 @@ export const generated: Material[] = [
       3
     ],
     "eldibGoals": [
+      "K-9",
+      "K-13",
       "K-15",
       "K-16",
-      "K-17",
-      "K-18",
       "K-26",
-      "K-30",
-      "SOZ-9",
-      "SOZ-15",
-      "SOZ-37",
-      "V-5",
-      "KOG-37"
+      "K-17",
+      "SOZ-15"
     ],
     "worksheet": {
       "title": "Mein Gefühls-Dolmetscher",
@@ -16169,18 +15951,14 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "K-9",
-      "K-17",
-      "K-30",
       "V-10",
-      "V-16",
-      "V-20",
-      "SOZ-18",
+      "V-11",
+      "V-21",
+      "K-17",
+      "SOZ-16",
       "SOZ-19",
       "SOZ-27",
-      "SOZ-32",
-      "SOZ-33",
-      "KOG-37"
+      "SOZ-32"
     ],
     "worksheet": {
       "title": "Unsere Redekugel-Regeln",
@@ -16312,16 +16090,13 @@ export const generated: Material[] = [
     ],
     "eldibGoals": [
       "V-16",
-      "V-18",
       "V-27",
-      "K-17",
       "K-22",
       "K-27",
       "K-28",
       "SOZ-18",
       "SOZ-22",
-      "SOZ-26",
-      "SOZ-32",
+      "SOZ-27",
       "SOZ-41"
     ],
     "language": "de",
@@ -16393,16 +16168,13 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-24",
       "K-14",
-      "K-15",
-      "K-17",
       "K-20",
       "K-21",
-      "K-32",
+      "K-27",
       "SOZ-15",
-      "SOZ-24",
-      "SOZ-31",
+      "SOZ-25",
+      "SOZ-32",
       "SOZ-33",
       "SOZ-37"
     ],
@@ -16572,15 +16344,11 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-16",
-      "V-24",
+      "K-13",
       "K-15",
-      "K-17",
       "K-20",
       "K-22",
-      "SOZ-24",
-      "SOZ-28",
-      "SOZ-29",
+      "SOZ-25",
       "SOZ-31",
       "SOZ-32",
       "SOZ-33"
@@ -16655,14 +16423,11 @@ export const generated: Material[] = [
     ],
     "eldibGoals": [
       "V-16",
-      "V-18",
-      "V-20",
+      "V-22",
       "V-27",
-      "K-17",
       "K-21",
       "K-27",
       "K-28",
-      "SOZ-15",
       "SOZ-18",
       "SOZ-26",
       "SOZ-37"
@@ -16809,19 +16574,15 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-16",
+      "V-21",
       "V-23",
       "V-27",
       "K-17",
-      "K-28",
       "K-29",
-      "SOZ-17",
       "SOZ-18",
       "SOZ-19",
-      "SOZ-26",
-      "SOZ-27",
       "SOZ-30",
-      "KOG-47"
+      "SOZ-41"
     ],
     "worksheet": {
       "title": "Team-Check: Unser Stromkreis",
@@ -16945,18 +16706,14 @@ export const generated: Material[] = [
     ],
     "eldibGoals": [
       "V-16",
-      "V-17",
-      "V-18",
+      "V-23",
       "K-17",
-      "K-20",
       "K-28",
       "K-29",
       "SOZ-16",
       "SOZ-18",
       "SOZ-23",
-      "SOZ-26",
-      "SOZ-34",
-      "KOG-46"
+      "SOZ-34"
     ],
     "worksheet": {
       "title": "Wissen teilen - mein Anteil im Team",
@@ -17085,18 +16842,14 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-16",
-      "V-17",
-      "V-18",
-      "V-20",
       "V-28",
       "K-17",
-      "K-21",
-      "SOZ-21",
+      "K-31",
+      "K-33",
       "SOZ-23",
-      "SOZ-26",
       "SOZ-32",
       "SOZ-34",
+      "SOZ-39",
       "KOG-58"
     ],
     "worksheet": {
@@ -17216,19 +16969,15 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-16",
       "V-20",
       "V-21",
-      "V-27",
+      "V-26",
       "K-17",
-      "K-21",
       "K-26",
-      "SOZ-15",
+      "K-31",
       "SOZ-18",
-      "SOZ-26",
       "SOZ-32",
-      "SOZ-37",
-      "KOG-58"
+      "SOZ-37"
     ],
     "worksheet": {
       "title": "Vertrauensbausteine: Was unser Team zusammenhält",
@@ -17356,18 +17105,14 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-17",
-      "V-18",
-      "V-23",
-      "V-28",
-      "K-20",
-      "K-21",
-      "K-26",
       "K-29",
+      "K-30",
+      "K-33",
       "SOZ-31",
       "SOZ-36",
       "SOZ-37",
       "KOG-58",
+      "KOG-59",
       "KOG-61"
     ],
     "worksheet": {
@@ -17519,19 +17264,15 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-17",
-      "V-18",
-      "V-23",
-      "K-20",
       "K-21",
       "K-26",
-      "K-29",
-      "SOZ-21",
+      "K-33",
       "SOZ-31",
+      "SOZ-32",
       "SOZ-36",
       "SOZ-37",
-      "SOZ-41",
-      "KOG-58"
+      "SOZ-38",
+      "KOG-38"
     ],
     "worksheet": {
       "title": "In fremden Schuhen – Mein Perspektiv-Blatt",
@@ -17695,19 +17436,15 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-14",
       "V-22",
       "K-18",
       "K-19",
-      "K-20",
-      "K-21",
       "K-26",
-      "K-32",
-      "SOZ-25",
+      "K-28",
       "SOZ-32",
+      "SOZ-33",
       "SOZ-37",
-      "SOZ-40",
-      "KOG-54"
+      "SOZ-40"
     ],
     "worksheet": {
       "title": "Selbstbild trifft Fremdbild",
@@ -17851,19 +17588,15 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-17",
-      "V-18",
-      "V-23",
-      "V-28",
-      "K-20",
-      "K-21",
-      "K-29",
+      "K-30",
+      "K-33",
       "SOZ-31",
+      "SOZ-32",
       "SOZ-35",
       "SOZ-36",
       "SOZ-37",
       "KOG-55",
-      "KOG-58"
+      "KOG-59"
     ],
     "worksheet": {
       "title": "Mein Schubladen-Stopp – Erster Eindruck unter der Lupe",
@@ -18000,13 +17733,9 @@ export const generated: Material[] = [
       "V-10",
       "V-11",
       "V-21",
-      "K-16",
-      "SOZ-9",
-      "SOZ-14",
       "KOG-1",
       "KOG-2",
-      "KOG-11",
-      "KOG-16"
+      "KOG-11"
     ],
     "language": "de",
     "source": "generated"
@@ -18082,12 +17811,9 @@ export const generated: Material[] = [
       "V-3",
       "V-10",
       "V-11",
-      "K-16",
-      "SOZ-14",
-      "SOZ-15",
+      "SOZ-10",
       "KOG-1",
-      "KOG-2",
-      "KOG-30"
+      "KOG-2"
     ],
     "language": "de",
     "source": "generated"
@@ -18158,17 +17884,14 @@ export const generated: Material[] = [
       2
     ],
     "eldibGoals": [
-      "V-1",
       "V-3",
-      "V-21",
       "K-15",
       "K-16",
-      "K-26",
       "SOZ-9",
       "SOZ-15",
       "KOG-1",
       "KOG-2",
-      "KOG-16"
+      "KOG-30"
     ],
     "language": "de",
     "source": "generated"
@@ -18244,13 +17967,10 @@ export const generated: Material[] = [
       "V-11",
       "V-20",
       "V-21",
-      "K-16",
-      "SOZ-14",
-      "SOZ-18",
       "KOG-1",
       "KOG-2",
       "KOG-18",
-      "KOG-29"
+      "KOG-26"
     ],
     "language": "de",
     "source": "generated"
@@ -18317,12 +18037,10 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-18",
       "V-20",
       "V-21",
       "V-28",
       "K-16",
-      "K-17",
       "K-26",
       "SOZ-18",
       "SOZ-32",
@@ -18394,11 +18112,9 @@ export const generated: Material[] = [
     ],
     "eldibGoals": [
       "K-16",
-      "K-17",
-      "K-21",
       "K-26",
       "K-27",
-      "V-17",
+      "K-31",
       "V-28",
       "SOZ-32",
       "SOZ-34",
@@ -18469,16 +18185,14 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "SOZ-18",
+      "V-28",
+      "K-17",
+      "K-21",
+      "K-31",
       "SOZ-23",
       "SOZ-32",
       "SOZ-34",
-      "SOZ-37",
-      "K-17",
-      "K-21",
-      "V-18",
-      "V-28",
-      "KOG-37"
+      "SOZ-37"
     ],
     "language": "de",
     "source": "generated"
@@ -18545,16 +18259,13 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "SOZ-31",
-      "SOZ-32",
-      "SOZ-34",
-      "SOZ-36",
       "SOZ-37",
       "K-21",
-      "K-26",
-      "K-33",
+      "SOZ-34",
       "V-18",
-      "KOG-37"
+      "K-16",
+      "SOZ-32",
+      "K-29"
     ],
     "language": "de",
     "source": "generated"
@@ -18629,18 +18340,13 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-14",
-      "V-16",
-      "V-23",
-      "V-28",
-      "K-18",
       "K-19",
       "K-26",
-      "SOZ-9",
-      "SOZ-25",
-      "SOZ-26",
-      "KOG-37",
-      "KOG-55"
+      "V-28",
+      "K-15",
+      "SOZ-24",
+      "K-16",
+      "V-22"
     ],
     "worksheet": {
       "title": "Mein innerer Akku",
@@ -18788,18 +18494,13 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-14",
-      "V-17",
-      "V-18",
-      "V-22",
-      "V-28",
-      "K-18",
-      "K-24",
-      "K-26",
-      "SOZ-24",
-      "SOZ-34",
       "KOG-37",
-      "KOG-61"
+      "V-22",
+      "V-18",
+      "K-26",
+      "V-28",
+      "K-29",
+      "SOZ-24"
     ],
     "worksheet": {
       "title": "Forscher-Blatt: Dem Fehler-Schatz auf der Spur",
@@ -18953,18 +18654,13 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-18",
-      "V-20",
-      "V-21",
-      "V-23",
       "V-28",
       "K-16",
       "K-26",
-      "K-28",
-      "SOZ-26",
+      "V-21",
       "SOZ-34",
-      "KOG-37",
-      "KOG-57"
+      "V-23",
+      "KOG-37"
     ],
     "worksheet": {
       "title": "Mein Comeback-Plan",
@@ -19122,19 +18818,12 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-16",
-      "V-17",
-      "V-21",
-      "V-23",
-      "V-33",
       "K-16",
-      "K-19",
       "K-26",
-      "SOZ-9",
-      "SOZ-37",
-      "KOG-37",
-      "KOG-55",
-      "KOG-57"
+      "K-29",
+      "V-22",
+      "K-19",
+      "SOZ-24"
     ],
     "worksheet": {
       "title": "Miesmacher und Mutmacher",
@@ -19286,18 +18975,12 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-14",
+      "K-19",
+      "K-18",
       "V-22",
       "V-30",
-      "V-32",
-      "K-18",
-      "K-19",
-      "K-24",
-      "K-32",
-      "SOZ-9",
-      "SOZ-25",
       "SOZ-40",
-      "KOG-37"
+      "K-15"
     ],
     "worksheet": {
       "title": "Mein Stärken-Tresor – Beweise sammeln",
@@ -19453,18 +19136,13 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-20",
-      "V-21",
-      "V-28",
-      "V-33",
-      "K-16",
-      "K-18",
       "K-26",
-      "SOZ-9",
-      "SOZ-36",
-      "KOG-54",
-      "KOG-58",
-      "KOG-61"
+      "K-29",
+      "K-19",
+      "V-22",
+      "SOZ-40",
+      "V-33",
+      "K-16"
     ],
     "worksheet": {
       "title": "Innerer Kritiker & innerer Coach",
@@ -19619,18 +19297,13 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-14",
-      "V-27",
-      "V-30",
-      "K-20",
-      "K-22",
-      "K-32",
-      "SOZ-9",
-      "SOZ-26",
-      "SOZ-37",
       "SOZ-40",
       "SOZ-41",
-      "KOG-37"
+      "K-22",
+      "SOZ-33",
+      "K-28",
+      "V-27",
+      "K-20"
     ],
     "worksheet": {
       "title": "Meine Wirkungs-Spuren",
@@ -19795,18 +19468,12 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-30",
-      "V-32",
-      "V-33",
-      "K-18",
-      "K-19",
-      "K-23",
       "K-34",
-      "SOZ-9",
-      "SOZ-35",
+      "SOZ-39",
       "SOZ-40",
-      "KOG-54",
-      "KOG-58"
+      "K-23",
+      "K-18",
+      "SOZ-35"
     ],
     "worksheet": {
       "title": "Mein Lebens-Wappen – Vorbereitung",
@@ -19959,18 +19626,12 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-18",
-      "V-20",
-      "V-21",
-      "V-23",
       "V-26",
+      "V-21",
+      "V-20",
+      "V-25",
       "V-28",
-      "K-16",
-      "K-26",
-      "SOZ-14",
-      "SOZ-34",
-      "KOG-37",
-      "KOG-57"
+      "K-26"
     ],
     "worksheet": {
       "title": "Meine 6-Sekunden-Karte",
@@ -20131,18 +19792,12 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-20",
-      "V-21",
-      "V-23",
       "V-26",
-      "V-28",
-      "V-33",
-      "K-16",
+      "V-21",
+      "V-20",
+      "V-22",
       "K-26",
-      "SOZ-34",
-      "KOG-37",
-      "KOG-57",
-      "KOG-61"
+      "V-33"
     ],
     "worksheet": {
       "title": "Meine Trigger-Landkarte",
@@ -20288,18 +19943,12 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-18",
-      "V-20",
-      "V-21",
       "V-26",
+      "V-21",
+      "V-20",
       "V-27",
-      "V-28",
-      "K-26",
-      "K-28",
-      "SOZ-34",
-      "SOZ-37",
-      "KOG-37",
-      "KOG-57"
+      "K-31",
+      "V-28"
     ],
     "worksheet": {
       "title": "Meine Chat-Notbremse",
@@ -20451,18 +20100,12 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-18",
-      "V-20",
-      "V-21",
-      "V-23",
       "V-25",
-      "V-28",
-      "V-32",
-      "K-26",
-      "SOZ-34",
-      "KOG-37",
-      "KOG-57",
-      "KOG-61"
+      "V-26",
+      "V-21",
+      "V-20",
+      "V-18",
+      "V-28"
     ],
     "worksheet": {
       "title": "Meine Wenn-dann-Pläne",
@@ -20592,15 +20235,12 @@ export const generated: Material[] = [
       3
     ],
     "eldibGoals": [
-      "V-20",
-      "V-21",
       "K-16",
       "K-21",
-      "K-26",
       "SOZ-21",
-      "SOZ-24",
-      "KOG-37",
-      "KOG-38"
+      "KOG-11",
+      "KOG-2",
+      "V-3"
     ],
     "worksheet": {
       "title": "Mein Gefühls-Regler",
@@ -20757,15 +20397,11 @@ export const generated: Material[] = [
     ],
     "eldibGoals": [
       "K-16",
-      "K-17",
       "K-21",
-      "K-26",
-      "K-10",
       "SOZ-21",
-      "SOZ-37",
-      "KOG-37",
-      "KOG-38",
-      "KOG-44"
+      "K-13",
+      "KOG-12",
+      "SOZ-20"
     ],
     "worksheet": {
       "title": "Mein Gefühls-Mischpult",
@@ -20904,12 +20540,9 @@ export const generated: Material[] = [
       "V-1",
       "V-3",
       "K-16",
-      "K-26",
-      "SOZ-21",
-      "SOZ-24",
+      "KOG-11",
       "KOG-2",
-      "KOG-16",
-      "KOG-37"
+      "SOZ-21"
     ],
     "worksheet": {
       "title": "Meine Gefühls-Landkarte",
@@ -21036,16 +20669,12 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "K-17",
       "K-21",
+      "KOG-12",
+      "K-13",
       "K-14",
       "SOZ-15",
-      "SOZ-17",
-      "SOZ-37",
-      "SOZ-33",
-      "KOG-37",
-      "KOG-38",
-      "KOG-44"
+      "K-17"
     ],
     "worksheet": {
       "title": "Meine Wettermeldung",
@@ -21188,14 +20817,10 @@ export const generated: Material[] = [
     "eldibGoals": [
       "K-18",
       "K-19",
-      "K-22",
-      "K-23",
+      "K-15",
       "SOZ-9",
-      "SOZ-24",
-      "SOZ-25",
-      "SOZ-31",
-      "V-14",
-      "V-30"
+      "K-23",
+      "K-13"
     ],
     "worksheet": {
       "title": "Mein Ich-Koffer – Pack-Liste",
@@ -21333,14 +20958,10 @@ export const generated: Material[] = [
     "eldibGoals": [
       "K-15",
       "K-18",
-      "K-19",
-      "SOZ-3",
       "SOZ-9",
-      "SOZ-15",
-      "SOZ-31",
+      "K-13",
       "SOZ-32",
-      "V-14",
-      "V-19"
+      "SOZ-24"
     ],
     "worksheet": {
       "title": "Namens-Forscher:in – Mein Forscher-Blatt",
@@ -21473,14 +21094,11 @@ export const generated: Material[] = [
     "eldibGoals": [
       "K-18",
       "K-19",
-      "K-22",
+      "SOZ-9",
       "SOZ-18",
-      "SOZ-24",
-      "SOZ-29",
-      "SOZ-30",
       "SOZ-31",
-      "V-13",
-      "V-30"
+      "K-22",
+      "K-23"
     ],
     "worksheet": {
       "title": "Mein Mosaik-Ich – Steine-Plan",
@@ -21612,16 +21230,13 @@ export const generated: Material[] = [
       3
     ],
     "eldibGoals": [
+      "K-13",
+      "K-15",
       "K-18",
       "K-19",
-      "K-20",
-      "K-22",
       "SOZ-9",
       "SOZ-24",
-      "SOZ-26",
-      "SOZ-31",
-      "V-14",
-      "V-30"
+      "SOZ-26"
     ],
     "worksheet": {
       "title": "Mein Ich-Baum – Pflanz-Plan",
@@ -21735,17 +21350,13 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-20",
-      "V-21",
-      "V-23",
-      "V-28",
       "K-16",
       "K-26",
-      "SOZ-9",
-      "SOZ-26",
-      "SOZ-34",
-      "KOG-37",
-      "KOG-57"
+      "K-29",
+      "V-20",
+      "V-21",
+      "V-28",
+      "KOG-37"
     ],
     "worksheet": {
       "title": "Mein Stress-Thermometer",
@@ -21895,15 +21506,12 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-2",
-      "V-3",
-      "V-20",
-      "V-21",
-      "V-23",
       "K-16",
       "K-26",
-      "SOZ-9",
-      "KOG-2",
+      "V-20",
+      "V-21",
+      "V-24",
+      "SOZ-32",
       "KOG-37"
     ],
     "worksheet": {
@@ -22052,17 +21660,13 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-17",
-      "V-21",
-      "V-23",
-      "V-28",
+      "K-15",
       "K-16",
       "K-26",
-      "SOZ-9",
+      "K-29",
       "SOZ-24",
-      "SOZ-26",
-      "KOG-37",
-      "KOG-57"
+      "V-22",
+      "KOG-37"
     ],
     "worksheet": {
       "title": "Mein Stress-Detektiv-Blatt",
@@ -22186,17 +21790,12 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-6",
+      "K-16",
+      "K-26",
       "V-18",
       "V-20",
       "V-21",
-      "V-23",
       "V-28",
-      "K-16",
-      "K-26",
-      "SOZ-9",
-      "SOZ-26",
-      "SOZ-34",
       "KOG-37"
     ],
     "worksheet": {
@@ -22348,14 +21947,12 @@ export const generated: Material[] = [
     ],
     "eldibGoals": [
       "K-23",
-      "K-25",
       "K-30",
       "SOZ-18",
       "SOZ-23",
-      "SOZ-31",
+      "SOZ-30",
       "V-23",
       "V-24",
-      "V-28",
       "KOG-44",
       "KOG-53"
     ],
@@ -22505,13 +22102,12 @@ export const generated: Material[] = [
     ],
     "eldibGoals": [
       "K-23",
-      "K-26",
       "K-30",
-      "SOZ-13",
+      "SOZ-32",
       "SOZ-33",
-      "KOG-37",
-      "KOG-38",
-      "KOG-46",
+      "V-24",
+      "KOG-30",
+      "KOG-41",
       "KOG-53",
       "KOG-58"
     ],
@@ -22656,10 +22252,7 @@ export const generated: Material[] = [
       "SOZ-19",
       "SOZ-22",
       "SOZ-23",
-      "V-7",
-      "V-23",
-      "V-28",
-      "KOG-44"
+      "V-23"
     ],
     "worksheet": {
       "title": "Bau-Plan und Rückblick: Unser Schrott-Wesen",
@@ -22825,14 +22418,12 @@ export const generated: Material[] = [
       "K-17",
       "K-23",
       "K-30",
-      "SOZ-13",
-      "SOZ-19",
+      "SOZ-18",
       "SOZ-23",
       "V-23",
       "V-24",
       "KOG-44",
-      "KOG-53",
-      "KOG-37"
+      "KOG-53"
     ],
     "worksheet": {
       "title": "Unsere Geschichte aus der Maschine",
@@ -22988,18 +22579,14 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-20",
-      "V-21",
-      "V-27",
-      "K-21",
       "K-26",
       "K-27",
       "K-30",
-      "SOZ-31",
+      "V-21",
+      "V-27",
       "SOZ-32",
       "SOZ-37",
-      "SOZ-40",
-      "KOG-58"
+      "SOZ-40"
     ],
     "worksheet": {
       "title": "Meine Grenz-Landkarte",
@@ -23136,18 +22723,14 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-20",
-      "V-26",
-      "V-27",
       "K-27",
       "K-28",
       "K-30",
+      "K-31",
+      "V-26",
+      "V-27",
       "SOZ-32",
-      "SOZ-34",
-      "SOZ-35",
-      "SOZ-37",
-      "KOG-54",
-      "KOG-58"
+      "SOZ-37"
     ],
     "worksheet": {
       "title": "Mein digitaler Grenz-Check",
@@ -23292,18 +22875,15 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-17",
-      "V-18",
+      "K-30",
+      "K-33",
       "V-27",
       "V-32",
-      "K-30",
-      "K-31",
       "SOZ-27",
       "SOZ-32",
-      "SOZ-34",
+      "SOZ-35",
       "SOZ-39",
-      "KOG-54",
-      "KOG-58"
+      "KOG-55"
     ],
     "worksheet": {
       "title": "Meine Stimme fürs Grenzwerk",
@@ -23431,18 +23011,14 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-20",
-      "V-21",
-      "V-23",
-      "V-26",
-      "V-27",
       "K-26",
       "K-30",
-      "SOZ-32",
+      "V-20",
+      "V-21",
+      "V-26",
+      "V-27",
       "SOZ-37",
-      "SOZ-39",
-      "KOG-58",
-      "KOG-61"
+      "SOZ-39"
     ],
     "worksheet": {
       "title": "Mein Standhalte-Plan",
@@ -23570,17 +23146,13 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
+      "K-15",
+      "K-21",
+      "SOZ-20",
       "SOZ-21",
       "SOZ-22",
-      "SOZ-24",
       "SOZ-25",
-      "SOZ-30",
-      "SOZ-31",
-      "SOZ-33",
-      "K-15",
-      "K-19",
-      "V-19",
-      "V-20"
+      "SOZ-27"
     ],
     "worksheet": {
       "title": "Mein erster Schritt aus der mutigen Mitte",
@@ -23709,17 +23281,13 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "SOZ-22",
-      "SOZ-24",
-      "SOZ-25",
-      "SOZ-30",
-      "SOZ-31",
       "K-15",
       "K-17",
-      "K-19",
-      "V-19",
-      "V-20",
-      "KOG-44"
+      "K-21",
+      "SOZ-21",
+      "SOZ-22",
+      "SOZ-25",
+      "SOZ-27"
     ],
     "worksheet": {
       "title": "Mein Chat-Detektiv-Blatt",
@@ -23846,17 +23414,13 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
+      "K-15",
+      "K-21",
       "SOZ-20",
       "SOZ-21",
       "SOZ-24",
       "SOZ-25",
-      "SOZ-30",
-      "SOZ-33",
-      "K-15",
-      "K-19",
-      "KOG-44",
-      "KOG-46",
-      "V-19"
+      "KOG-41"
     ],
     "worksheet": {
       "title": "Streit oder Mobbing? Mein Erkenn-Blatt",
@@ -23971,17 +23535,13 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
+      "K-15",
       "SOZ-15",
       "SOZ-16",
       "SOZ-19",
-      "SOZ-21",
-      "SOZ-22",
-      "SOZ-24",
-      "SOZ-30",
-      "SOZ-33",
-      "K-15",
-      "V-19",
-      "V-20"
+      "SOZ-25",
+      "SOZ-27",
+      "SOZ-33"
     ],
     "worksheet": {
       "title": "Unsere Halte-Karte: So lassen wir niemanden fallen",
@@ -24104,17 +23664,13 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "KOG-37",
-      "KOG-38",
-      "KOG-39",
-      "KOG-55",
-      "KOG-57",
-      "SOZ-9",
-      "SOZ-25",
-      "SOZ-26",
+      "K-15",
+      "K-18",
       "V-16",
-      "V-23",
-      "K-18"
+      "V-22",
+      "SOZ-24",
+      "SOZ-26",
+      "KOG-37"
     ],
     "worksheet": {
       "title": "Meine Etappen-Karte",
@@ -24246,18 +23802,13 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "KOG-37",
-      "KOG-39",
-      "KOG-55",
-      "KOG-57",
-      "KOG-61",
-      "SOZ-9",
-      "SOZ-25",
-      "SOZ-34",
-      "V-17",
-      "V-23",
+      "K-15",
       "K-18",
-      "K-26"
+      "K-26",
+      "K-29",
+      "V-22",
+      "SOZ-24",
+      "KOG-37"
     ],
     "worksheet": {
       "title": "Meine Warum-Treppe",
@@ -24393,18 +23944,13 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "KOG-37",
-      "KOG-38",
-      "KOG-40",
-      "KOG-55",
-      "KOG-56",
-      "SOZ-9",
-      "SOZ-25",
-      "SOZ-26",
-      "V-14",
-      "V-16",
       "K-18",
-      "K-19"
+      "K-29",
+      "V-15",
+      "V-16",
+      "V-22",
+      "SOZ-24",
+      "KOG-37"
     ],
     "worksheet": {
       "title": "Mein Start-Ritual gegen die Aufschieberitis",
@@ -24560,18 +24106,12 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "KOG-37",
-      "KOG-55",
-      "KOG-57",
-      "KOG-61",
-      "SOZ-9",
-      "SOZ-25",
-      "SOZ-26",
-      "SOZ-34",
-      "V-16",
-      "V-23",
+      "V-22",
+      "K-24",
       "K-18",
-      "K-26"
+      "K-19",
+      "K-26",
+      "SOZ-24"
     ],
     "worksheet": {
       "title": "Mein Fortschritts-Detektiv-Blatt",
@@ -24719,18 +24259,13 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-19",
-      "V-20",
-      "K-15",
       "K-17",
-      "K-19",
-      "K-22",
-      "SOZ-24",
-      "SOZ-25",
+      "V-28",
+      "SOZ-21",
+      "SOZ-27",
       "SOZ-30",
-      "SOZ-33",
-      "KOG-44",
-      "KOG-46"
+      "SOZ-32",
+      "SOZ-34"
     ],
     "worksheet": {
       "title": "Mein Fairness-Logbuch zur Waage der Klasse",
@@ -24869,19 +24404,13 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-19",
-      "V-20",
-      "K-15",
       "K-17",
-      "K-22",
-      "SOZ-24",
-      "SOZ-25",
-      "SOZ-27",
-      "SOZ-30",
-      "SOZ-33",
-      "KOG-44",
-      "KOG-46",
-      "KOG-48"
+      "SOZ-21",
+      "SOZ-32",
+      "SOZ-34",
+      "SOZ-35",
+      "SOZ-37",
+      "KOG-55"
     ],
     "worksheet": {
       "title": "Meine Gerechtigkeits-Brille",
@@ -25035,19 +24564,13 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-19",
-      "V-20",
-      "K-15",
       "K-17",
-      "K-19",
-      "K-22",
-      "SOZ-22",
-      "SOZ-24",
-      "SOZ-25",
+      "V-19",
+      "V-32",
+      "SOZ-27",
       "SOZ-30",
-      "SOZ-33",
-      "KOG-44",
-      "KOG-46"
+      "SOZ-32",
+      "SOZ-34"
     ],
     "worksheet": {
       "title": "Meine Stimme im Klassenrat",
@@ -25185,20 +24708,13 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-15",
-      "V-19",
-      "V-20",
-      "K-15",
       "K-17",
-      "K-22",
-      "SOZ-19",
-      "SOZ-22",
-      "SOZ-24",
-      "SOZ-25",
-      "SOZ-30",
-      "SOZ-33",
-      "KOG-44",
-      "KOG-46"
+      "V-24",
+      "SOZ-21",
+      "SOZ-29",
+      "SOZ-35",
+      "SOZ-37",
+      "KOG-55"
     ],
     "worksheet": {
       "title": "Rückenwind und Gegenwind – meine Startlinie",
@@ -25351,18 +24867,13 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "KOG-37",
+      "K-30",
       "KOG-39",
-      "KOG-40",
-      "KOG-55",
+      "KOG-41",
+      "KOG-47",
       "KOG-57",
-      "KOG-61",
-      "SOZ-9",
-      "SOZ-25",
-      "SOZ-34",
-      "K-18",
-      "K-26",
-      "V-23"
+      "KOG-58",
+      "KOG-59"
     ],
     "worksheet": {
       "title": "Vier-Fragen-Prüfung: Echt oder erfunden?",
@@ -25522,18 +25033,12 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "KOG-37",
-      "KOG-39",
+      "K-26",
+      "SOZ-31",
+      "SOZ-40",
+      "KOG-41",
       "KOG-55",
-      "KOG-57",
-      "KOG-61",
-      "SOZ-9",
-      "SOZ-25",
-      "SOZ-34",
-      "V-16",
-      "V-23",
-      "K-18",
-      "K-26"
+      "KOG-58"
     ],
     "worksheet": {
       "title": "Hochglanz und Wirklichkeit",
@@ -25685,18 +25190,12 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "KOG-37",
+      "V-21",
+      "K-25",
+      "SOZ-40",
       "KOG-38",
-      "KOG-40",
-      "KOG-55",
-      "KOG-57",
-      "SOZ-9",
-      "SOZ-25",
-      "SOZ-26",
-      "V-14",
-      "V-16",
-      "K-18",
-      "K-19"
+      "KOG-41",
+      "KOG-61"
     ],
     "worksheet": {
       "title": "Mein Bildschirm-Balance-Plan",
@@ -25845,18 +25344,12 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "KOG-37",
-      "KOG-39",
-      "KOG-40",
-      "KOG-55",
-      "KOG-57",
-      "SOZ-9",
-      "SOZ-25",
-      "SOZ-30",
-      "SOZ-34",
-      "K-18",
-      "K-26",
-      "V-23"
+      "V-20",
+      "V-27",
+      "K-25",
+      "K-29",
+      "SOZ-40",
+      "KOG-55"
     ],
     "worksheet": {
       "title": "Mein Vor-dem-Posten-Check",
@@ -26015,16 +25508,12 @@ export const generated: Material[] = [
     "eldibGoals": [
       "V-7",
       "V-9",
-      "V-10",
       "V-12",
       "V-13",
       "V-14",
-      "SOZ-10",
       "SOZ-14",
       "SOZ-18",
-      "KOG-1",
-      "KOG-43",
-      "K-16"
+      "KOG-43"
     ],
     "worksheet": {
       "title": "Mein Stationen-Pass (für die Erzieher:in zum Ausfüllen mit dem Kind)",
@@ -26132,17 +25621,13 @@ export const generated: Material[] = [
     ],
     "eldibGoals": [
       "V-7",
-      "V-10",
       "V-12",
       "V-13",
       "SOZ-5",
-      "SOZ-14",
       "SOZ-17",
       "SOZ-18",
-      "SOZ-19",
       "SOZ-20",
-      "KOG-5",
-      "K-16"
+      "KOG-5"
     ],
     "language": "de",
     "source": "generated"
@@ -26214,14 +25699,11 @@ export const generated: Material[] = [
     "eldibGoals": [
       "V-7",
       "V-9",
-      "V-14",
       "K-1",
-      "K-3",
       "K-16",
       "SOZ-5",
       "SOZ-15",
       "SOZ-17",
-      "SOZ-18",
       "SOZ-20",
       "KOG-5"
     ],
@@ -26298,13 +25780,10 @@ export const generated: Material[] = [
       "V-12",
       "V-13",
       "K-1",
-      "K-16",
       "SOZ-13",
       "SOZ-17",
       "SOZ-18",
-      "SOZ-20",
-      "KOG-5",
-      "KOG-53"
+      "SOZ-20"
     ],
     "language": "de",
     "source": "generated"
@@ -26372,16 +25851,11 @@ export const generated: Material[] = [
     "eldibGoals": [
       "V-1",
       "V-3",
-      "V-9",
       "K-15",
       "K-16",
       "K-26",
-      "SOZ-3",
       "SOZ-9",
-      "SOZ-21",
-      "KOG-1",
-      "KOG-2",
-      "KOG-11"
+      "KOG-2"
     ],
     "language": "de",
     "source": "generated"
@@ -26453,12 +25927,8 @@ export const generated: Material[] = [
       "K-18",
       "K-19",
       "K-26",
-      "SOZ-3",
       "SOZ-9",
-      "SOZ-24",
-      "KOG-2",
-      "KOG-11",
-      "KOG-15"
+      "SOZ-24"
     ],
     "language": "de",
     "source": "generated"
@@ -26526,16 +25996,11 @@ export const generated: Material[] = [
     "eldibGoals": [
       "V-1",
       "V-3",
-      "V-11",
       "K-15",
       "K-16",
-      "K-26",
-      "SOZ-3",
       "SOZ-9",
-      "KOG-1",
       "KOG-2",
-      "KOG-11",
-      "KOG-16"
+      "KOG-11"
     ],
     "language": "de",
     "source": "generated"
@@ -26605,13 +26070,9 @@ export const generated: Material[] = [
       "V-14",
       "K-18",
       "K-19",
-      "K-22",
       "K-26",
-      "SOZ-3",
       "SOZ-9",
       "SOZ-24",
-      "SOZ-40",
-      "KOG-2",
       "KOG-11"
     ],
     "language": "de",
@@ -26679,17 +26140,13 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
+      "V-10",
       "K-9",
       "K-10",
       "K-11",
       "K-14",
-      "K-29",
-      "K-30",
       "SOZ-18",
-      "SOZ-19",
-      "KOG-38",
-      "KOG-48",
-      "V-10"
+      "SOZ-19"
     ],
     "language": "de",
     "source": "generated"
@@ -26756,16 +26213,11 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "K-3",
-      "K-10",
       "K-16",
       "K-17",
       "K-21",
       "K-26",
-      "SOZ-5",
-      "SOZ-37",
-      "KOG-37",
-      "KOG-48"
+      "SOZ-37"
     ],
     "language": "de",
     "source": "generated"
@@ -26832,16 +26284,13 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
+      "V-18",
       "K-9",
       "K-14",
       "K-17",
       "K-21",
-      "SOZ-33",
       "SOZ-34",
-      "SOZ-37",
-      "KOG-37",
-      "KOG-48",
-      "V-18"
+      "SOZ-37"
     ],
     "worksheet": {
       "title": "Missverständnis-Detektive",
@@ -26960,13 +26409,11 @@ export const generated: Material[] = [
       "K-12",
       "K-14",
       "K-17",
-      "K-28",
+      "SOZ-16",
       "SOZ-18",
       "SOZ-19",
       "SOZ-27",
-      "SOZ-33",
-      "V-10",
-      "KOG-48"
+      "V-10"
     ],
     "worksheet": {
       "title": "Unsere Gesprächs-Chips",
@@ -27119,13 +26566,10 @@ export const generated: Material[] = [
       "K-20",
       "K-22",
       "K-27",
-      "K-32",
       "SOZ-18",
       "SOZ-29",
       "SOZ-32",
-      "SOZ-33",
-      "SOZ-40",
-      "V-19"
+      "SOZ-40"
     ],
     "worksheet": {
       "title": "Meine Chronik-Seite",
@@ -27256,17 +26700,14 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "K-17",
       "K-21",
       "K-28",
-      "SOZ-15",
       "SOZ-26",
       "SOZ-32",
-      "SOZ-33",
       "SOZ-37",
       "SOZ-38",
-      "V-27",
-      "KOG-37"
+      "SOZ-41",
+      "V-27"
     ],
     "worksheet": {
       "title": "Mein Paten-Tagebuch",
@@ -27394,16 +26835,13 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-19",
       "V-20",
       "V-27",
-      "K-21",
       "K-28",
       "SOZ-16",
       "SOZ-18",
       "SOZ-19",
       "SOZ-26",
-      "SOZ-32",
       "SOZ-37"
     ],
     "worksheet": {
@@ -27531,14 +26969,11 @@ export const generated: Material[] = [
       "K-19",
       "K-20",
       "K-21",
-      "K-32",
       "SOZ-18",
       "SOZ-31",
       "SOZ-32",
-      "SOZ-33",
       "SOZ-37",
-      "SOZ-41",
-      "KOG-37"
+      "SOZ-41"
     ],
     "worksheet": {
       "title": "Unsere Brücke",
@@ -27668,18 +27103,13 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-18",
       "V-23",
-      "V-27",
       "V-28",
-      "K-22",
       "K-28",
-      "K-31",
       "SOZ-18",
       "SOZ-22",
-      "SOZ-23",
-      "SOZ-26",
       "SOZ-30",
+      "SOZ-32",
       "SOZ-34",
       "SOZ-38"
     ],
@@ -27818,19 +27248,14 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-3",
       "V-23",
-      "K-7",
-      "K-21",
-      "K-28",
       "SOZ-15",
       "SOZ-18",
       "SOZ-19",
-      "SOZ-26",
-      "SOZ-30",
       "SOZ-31",
+      "SOZ-32",
       "SOZ-37",
-      "KOG-48"
+      "SOZ-38"
     ],
     "worksheet": {
       "title": "Der stumme Auftrag - Mein Beobachtungsblatt",
@@ -27980,19 +27405,15 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-12",
-      "V-18",
+      "V-21",
       "V-23",
-      "V-27",
       "V-28",
       "K-22",
       "K-28",
-      "SOZ-16",
       "SOZ-18",
-      "SOZ-26",
       "SOZ-30",
       "SOZ-34",
-      "SOZ-37"
+      "SOZ-41"
     ],
     "worksheet": {
       "title": "Inselrettung - Team-Auswertung",
@@ -28127,16 +27548,11 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-13",
+      "V-21",
       "V-23",
-      "V-27",
-      "K-7",
-      "K-20",
       "K-22",
-      "K-28",
       "SOZ-17",
       "SOZ-18",
-      "SOZ-26",
       "SOZ-30",
       "SOZ-32",
       "SOZ-38",
@@ -28270,18 +27686,14 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "K-15",
       "K-19",
       "K-20",
-      "K-21",
-      "K-22",
-      "K-27",
+      "K-28",
       "K-32",
-      "SOZ-21",
-      "SOZ-31",
       "SOZ-32",
+      "SOZ-33",
       "SOZ-37",
-      "V-30"
+      "SOZ-40"
     ],
     "worksheet": {
       "title": "Im Spiegel der Gruppe - Mein Fremdbild",
@@ -28424,14 +27836,11 @@ export const generated: Material[] = [
       "K-20",
       "K-21",
       "K-29",
-      "K-30",
-      "SOZ-20",
       "SOZ-32",
+      "SOZ-36",
       "SOZ-37",
-      "KOG-37",
-      "KOG-39",
-      "KOG-57",
-      "V-17"
+      "KOG-38",
+      "KOG-59"
     ],
     "worksheet": {
       "title": "Lies mein Gesicht - Beobachten, deuten, nachfragen",
@@ -28575,18 +27984,14 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "K-20",
-      "K-21",
+      "K-31",
       "K-33",
-      "K-34",
       "SOZ-32",
       "SOZ-34",
       "SOZ-35",
       "SOZ-37",
-      "V-17",
-      "V-18",
-      "KOG-54",
-      "KOG-61"
+      "KOG-58",
+      "KOG-59"
     ],
     "worksheet": {
       "title": "Stille Post über Menschen - Mein fairer Blick",
@@ -28735,18 +28140,14 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "K-20",
-      "K-21",
       "K-33",
-      "K-34",
       "SOZ-31",
       "SOZ-32",
       "SOZ-35",
       "SOZ-37",
       "SOZ-40",
-      "V-17",
-      "KOG-54",
-      "KOG-61"
+      "KOG-58",
+      "KOG-59"
     ],
     "worksheet": {
       "title": "Der Sympathie-Sog - Meinem Schnellurteil auf der Spur",
@@ -28924,14 +28325,8 @@ export const generated: Material[] = [
       "V-3",
       "V-11",
       "V-13",
-      "V-23",
-      "V-24",
-      "K-10",
-      "K-16",
-      "K-23",
       "SOZ-16",
-      "SOZ-24",
-      "SOZ-30",
+      "SOZ-18",
       "KOG-1",
       "KOG-11"
     ],
@@ -29064,14 +28459,9 @@ export const generated: Material[] = [
       "V-3",
       "V-10",
       "V-11",
-      "V-23",
-      "K-1",
-      "K-17",
       "K-23",
       "SOZ-18",
       "SOZ-19",
-      "SOZ-30",
-      "SOZ-33",
       "KOG-1",
       "KOG-2"
     ],
@@ -29208,18 +28598,12 @@ export const generated: Material[] = [
     "eldibGoals": [
       "V-1",
       "V-3",
-      "V-13",
-      "V-20",
+      "V-10",
+      "V-11",
       "V-21",
-      "V-23",
       "K-16",
       "K-26",
-      "SOZ-9",
-      "SOZ-24",
-      "SOZ-27",
-      "SOZ-30",
-      "KOG-1",
-      "KOG-11"
+      "KOG-1"
     ],
     "worksheet": {
       "title": "Mein Atem-Tier-Heft",
@@ -29351,20 +28735,14 @@ export const generated: Material[] = [
       3
     ],
     "eldibGoals": [
-      "V-1",
       "V-3",
+      "V-11",
       "V-13",
-      "V-23",
       "K-15",
       "K-16",
-      "K-17",
       "K-23",
       "SOZ-9",
-      "SOZ-24",
-      "SOZ-30",
-      "SOZ-33",
-      "SOZ-37",
-      "KOG-1"
+      "SOZ-24"
     ],
     "worksheet": {
       "title": "Mein Heft der guten Augenblicke",
@@ -29497,13 +28875,10 @@ export const generated: Material[] = [
       "V-20",
       "V-21",
       "V-26",
-      "V-28",
       "K-16",
       "K-26",
       "SOZ-21",
-      "SOZ-32",
-      "SOZ-34",
-      "KOG-37"
+      "SOZ-34"
     ],
     "worksheet": {
       "title": "Mein Streit-Stopp-Knopf",
@@ -29669,16 +29044,12 @@ export const generated: Material[] = [
     "eldibGoals": [
       "V-18",
       "V-28",
-      "K-21",
       "K-26",
       "K-28",
       "K-31",
       "SOZ-16",
-      "SOZ-19",
       "SOZ-23",
-      "SOZ-34",
-      "SOZ-37",
-      "KOG-38"
+      "SOZ-34"
     ],
     "worksheet": {
       "title": "Die Wünsche-Tauschbörse",
@@ -29829,15 +29200,11 @@ export const generated: Material[] = [
       "V-18",
       "V-20",
       "V-21",
-      "V-27",
+      "V-26",
       "V-28",
-      "K-21",
       "K-26",
       "SOZ-21",
-      "SOZ-32",
-      "SOZ-34",
-      "SOZ-38",
-      "KOG-58"
+      "SOZ-34"
     ],
     "worksheet": {
       "title": "Drache, Schildkröte oder Eule",
@@ -29988,16 +29355,12 @@ export const generated: Material[] = [
     "eldibGoals": [
       "V-18",
       "V-28",
-      "V-31",
-      "K-21",
-      "K-28",
+      "K-17",
       "SOZ-16",
       "SOZ-19",
+      "SOZ-21",
       "SOZ-27",
-      "SOZ-34",
-      "SOZ-35",
-      "KOG-54",
-      "KOG-58"
+      "SOZ-34"
     ],
     "worksheet": {
       "title": "Das gerechte Los?",
@@ -30150,20 +29513,13 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-3",
-      "V-7",
-      "V-11",
-      "V-16",
-      "V-24",
-      "V-30",
+      "K-15",
       "K-16",
-      "K-23",
+      "K-19",
       "SOZ-12",
-      "SOZ-21",
-      "SOZ-25",
-      "KOG-19",
-      "KOG-27",
-      "KOG-44"
+      "SOZ-26",
+      "KOG-44",
+      "V-24"
     ],
     "worksheet": {
       "title": "Mein Resilienz-Rucksack",
@@ -30302,19 +29658,12 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-7",
-      "V-13",
-      "V-16",
-      "V-21",
-      "V-24",
+      "K-15",
       "K-16",
-      "K-19",
-      "SOZ-12",
-      "SOZ-22",
-      "SOZ-25",
-      "KOG-19",
-      "KOG-27",
-      "KOG-32",
+      "K-23",
+      "K-29",
+      "SOZ-24",
+      "KOG-31",
       "KOG-44"
     ],
     "worksheet": {
@@ -30457,20 +29806,11 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-3",
-      "V-9",
-      "V-11",
-      "V-18",
+      "V-13",
       "V-21",
-      "V-27",
-      "K-10",
+      "V-24",
       "K-16",
-      "SOZ-6",
-      "SOZ-16",
-      "KOG-2",
-      "KOG-7",
-      "KOG-21",
-      "KOG-39"
+      "KOG-21"
     ],
     "worksheet": {
       "title": "Meine Anker-Karte",
@@ -30614,19 +29954,11 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-7",
-      "V-14",
-      "V-16",
-      "V-24",
-      "V-30",
       "K-16",
       "K-19",
-      "K-23",
-      "SOZ-12",
+      "K-29",
       "SOZ-21",
-      "SOZ-25",
-      "KOG-19",
-      "KOG-27",
+      "KOG-38",
       "KOG-44"
     ],
     "worksheet": {
@@ -30778,20 +30110,12 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-18",
       "V-20",
       "V-21",
-      "V-27",
-      "V-28",
-      "K-16",
-      "K-21",
+      "V-25",
+      "V-26",
       "K-26",
-      "SOZ-16",
-      "SOZ-19",
-      "SOZ-32",
-      "KOG-7",
-      "KOG-38",
-      "KOG-39"
+      "K-29"
     ],
     "worksheet": {
       "title": "Meine Geheim-Bremse",
@@ -30920,20 +30244,12 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-18",
       "V-21",
-      "V-24",
+      "V-25",
       "V-27",
-      "V-28",
-      "K-16",
       "K-26",
-      "SOZ-16",
-      "SOZ-19",
-      "KOG-7",
-      "KOG-27",
-      "KOG-38",
-      "KOG-39",
-      "KOG-44"
+      "K-29",
+      "SOZ-39"
     ],
     "worksheet": {
       "title": "Meine Warte-Tricks",
@@ -31072,20 +30388,12 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-18",
-      "V-20",
       "V-21",
+      "V-25",
       "V-26",
-      "V-27",
-      "V-28",
-      "K-16",
-      "K-21",
-      "SOZ-16",
-      "SOZ-19",
-      "KOG-2",
-      "KOG-7",
-      "KOG-21",
-      "KOG-39"
+      "K-26",
+      "K-29",
+      "SOZ-31"
     ],
     "worksheet": {
       "title": "Meine Ausloeser-Landkarte",
@@ -31223,20 +30531,12 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-18",
       "V-20",
       "V-21",
-      "V-27",
-      "V-28",
-      "K-16",
-      "K-21",
-      "SOZ-16",
-      "SOZ-19",
-      "KOG-2",
-      "KOG-7",
-      "KOG-27",
-      "KOG-38",
-      "KOG-39"
+      "V-25",
+      "K-26",
+      "K-29",
+      "KOG-61"
     ],
     "worksheet": {
       "title": "Mein Reaktionstempo",
@@ -31368,16 +30668,10 @@ export const generated: Material[] = [
     "eldibGoals": [
       "V-1",
       "V-3",
-      "V-9",
-      "V-11",
-      "V-13",
-      "K-7",
-      "K-10",
-      "K-15",
+      "K-16",
       "SOZ-9",
-      "SOZ-12",
       "KOG-1",
-      "KOG-11"
+      "KOG-23"
     ],
     "worksheet": {
       "title": "Meine Gefuehls-Farben",
@@ -31500,17 +30794,10 @@ export const generated: Material[] = [
     "eldibGoals": [
       "V-1",
       "V-3",
-      "V-9",
-      "V-11",
-      "V-13",
-      "V-16",
-      "K-7",
-      "K-10",
+      "K-16",
       "SOZ-9",
-      "SOZ-12",
-      "KOG-1",
-      "KOG-11",
-      "KOG-15"
+      "KOG-5",
+      "KOG-11"
     ],
     "worksheet": {
       "title": "Wo wohnen meine Gefühle?",
@@ -31647,17 +30934,10 @@ export const generated: Material[] = [
     "eldibGoals": [
       "V-1",
       "V-3",
-      "V-9",
-      "V-11",
-      "V-13",
-      "V-16",
-      "K-7",
-      "K-10",
+      "K-16",
       "SOZ-9",
-      "SOZ-12",
-      "KOG-1",
-      "KOG-11",
-      "KOG-19"
+      "SOZ-13",
+      "KOG-1"
     ],
     "worksheet": {
       "title": "Meine Gefühls-Inseln",
@@ -31777,17 +31057,10 @@ export const generated: Material[] = [
     "eldibGoals": [
       "V-1",
       "V-3",
-      "V-9",
-      "V-13",
-      "K-7",
-      "K-10",
-      "K-11",
-      "SOZ-9",
-      "SOZ-12",
-      "SOZ-15",
-      "KOG-1",
-      "KOG-11",
-      "KOG-16"
+      "K-16",
+      "SOZ-2",
+      "SOZ-20",
+      "KOG-5"
     ],
     "worksheet": {
       "title": "Welches Gefühl seh ich?",
@@ -31917,18 +31190,11 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
+      "K-13",
+      "K-15",
       "K-18",
       "K-19",
-      "K-20",
-      "K-26",
-      "K-33",
-      "SOZ-9",
-      "SOZ-28",
-      "SOZ-31",
-      "SOZ-32",
-      "SOZ-40",
-      "KOG-55",
-      "V-30"
+      "SOZ-24"
     ],
     "worksheet": {
       "title": "Meine Ich-Landkarte - Forscherheft",
@@ -32071,18 +31337,11 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
+      "K-13",
+      "K-15",
       "K-18",
       "K-19",
-      "K-22",
-      "K-23",
-      "K-32",
-      "K-34",
-      "SOZ-9",
-      "SOZ-21",
-      "SOZ-32",
-      "SOZ-40",
-      "KOG-55",
-      "V-30"
+      "K-23"
     ],
     "worksheet": {
       "title": "Mein Ich-Wappen - Werkstattheft",
@@ -32225,18 +31484,11 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
+      "K-13",
       "K-15",
       "K-18",
-      "K-24",
-      "K-26",
-      "SOZ-24",
-      "SOZ-28",
-      "SOZ-40",
-      "KOG-55",
-      "KOG-57",
-      "KOG-58",
-      "V-22",
-      "V-30"
+      "K-19",
+      "SOZ-24"
     ],
     "worksheet": {
       "title": "Zeitstrahl meines Lebens - Sammelheft",
@@ -32375,19 +31627,12 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "K-15",
+      "K-13",
+      "K-14",
       "K-19",
       "K-20",
-      "K-21",
-      "K-32",
-      "SOZ-9",
-      "SOZ-28",
-      "SOZ-31",
-      "SOZ-32",
-      "SOZ-37",
-      "SOZ-40",
-      "SOZ-41",
-      "V-30"
+      "SOZ-15",
+      "SOZ-32"
     ],
     "worksheet": {
       "title": "Vielfalt-Forscher:in - Mein Ausstellungsheft",
@@ -32545,20 +31790,11 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-3",
-      "V-9",
-      "V-11",
-      "V-16",
-      "V-18",
-      "V-21",
-      "V-27",
-      "K-10",
       "K-16",
-      "SOZ-6",
-      "SOZ-16",
-      "KOG-7",
-      "KOG-21",
-      "KOG-39"
+      "K-19",
+      "K-29",
+      "V-21",
+      "KOG-21"
     ],
     "worksheet": {
       "title": "Mein Stress-Thermometer",
@@ -32682,19 +31918,11 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-3",
-      "V-9",
-      "V-11",
-      "V-16",
-      "V-18",
       "V-21",
-      "K-10",
+      "V-24",
       "K-16",
-      "SOZ-6",
-      "SOZ-16",
-      "KOG-2",
-      "KOG-7",
-      "KOG-21"
+      "K-28",
+      "SOZ-22"
     ],
     "worksheet": {
       "title": "Meine 5-4-3-2-1 Erdungs-Karte",
@@ -32812,20 +32040,12 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-3",
-      "V-9",
-      "V-11",
-      "V-13",
-      "V-16",
-      "V-18",
-      "K-10",
+      "K-15",
       "K-16",
       "K-19",
-      "SOZ-12",
-      "SOZ-16",
-      "KOG-7",
-      "KOG-21",
-      "KOG-27"
+      "V-21",
+      "SOZ-21",
+      "KOG-21"
     ],
     "worksheet": {
       "title": "Mein Sorgen-Tresor",
@@ -32971,20 +32191,13 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-3",
-      "V-7",
-      "V-9",
-      "V-11",
-      "V-16",
       "V-24",
-      "K-10",
+      "V-25",
+      "V-29",
       "K-16",
-      "SOZ-12",
-      "SOZ-16",
-      "SOZ-21",
-      "KOG-7",
-      "KOG-21",
-      "KOG-27"
+      "K-26",
+      "SOZ-25",
+      "KOG-37"
     ],
     "worksheet": {
       "title": "Mein Erste-Hilfe-Set gegen Stress",
@@ -33105,18 +32318,14 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-18",
       "V-23",
       "V-24",
-      "V-28",
       "K-23",
       "K-30",
-      "K-33",
-      "SOZ-13",
-      "SOZ-23",
-      "KOG-53",
-      "KOG-56",
-      "KOG-58"
+      "SOZ-30",
+      "SOZ-32",
+      "KOG-41",
+      "KOG-56"
     ],
     "worksheet": {
       "title": "Was-wäre-wenn-Labor - Forscherbogen",
@@ -33265,18 +32474,14 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-18",
       "V-23",
       "V-24",
-      "V-25",
       "K-23",
-      "K-24",
-      "K-33",
-      "SOZ-13",
-      "SOZ-23",
+      "K-30",
+      "SOZ-30",
+      "SOZ-32",
       "KOG-21",
-      "KOG-56",
-      "KOG-58"
+      "KOG-56"
     ],
     "worksheet": {
       "title": "Zweckentfremdung - Ideen-Logbuch",
@@ -33424,18 +32629,14 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-18",
       "V-22",
       "V-23",
       "V-24",
       "K-23",
       "K-30",
-      "K-33",
-      "SOZ-13",
-      "SOZ-24",
+      "SOZ-32",
       "KOG-44",
-      "KOG-53",
-      "KOG-56"
+      "KOG-54"
     ],
     "worksheet": {
       "title": "Zwangsbedingungen - Werkstattheft",
@@ -33575,17 +32776,13 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-18",
       "V-23",
       "V-24",
       "V-28",
-      "K-23",
       "K-28",
       "K-30",
       "SOZ-18",
-      "SOZ-23",
-      "SOZ-26",
-      "KOG-47",
+      "SOZ-37",
       "KOG-56"
     ],
     "worksheet": {
@@ -33745,18 +32942,13 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-16",
       "V-18",
-      "V-20",
       "V-26",
       "V-27",
       "V-31",
-      "K-19",
-      "K-21",
       "K-26",
       "SOZ-27",
       "SOZ-32",
-      "SOZ-34",
       "SOZ-37",
       "SOZ-39"
     ],
@@ -33914,20 +33106,15 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-17",
       "V-18",
       "V-26",
       "V-27",
       "V-31",
-      "K-20",
       "K-26",
       "K-27",
       "SOZ-32",
-      "SOZ-34",
       "SOZ-37",
-      "SOZ-39",
-      "KOG-38",
-      "KOG-58"
+      "SOZ-39"
     ],
     "worksheet": {
       "title": "Unser Kampagnen-Produkt: Stopp heißt Stopp",
@@ -34081,18 +33268,13 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-16",
       "V-17",
       "V-18",
       "V-27",
       "V-31",
       "K-26",
-      "K-27",
-      "SOZ-31",
       "SOZ-32",
-      "SOZ-34",
       "SOZ-39",
-      "KOG-38",
       "KOG-55",
       "KOG-58"
     ],
@@ -34249,20 +33431,15 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-16",
       "V-18",
-      "V-20",
+      "V-25",
       "V-26",
-      "V-27",
+      "V-30",
       "K-18",
-      "K-19",
       "K-26",
-      "SOZ-21",
-      "SOZ-32",
       "SOZ-37",
       "SOZ-39",
-      "SOZ-40",
-      "KOG-38"
+      "SOZ-40"
     ],
     "worksheet": {
       "title": "Mein Stärke-Pass und meine Standpunkt-Sätze",
@@ -34408,14 +33585,9 @@ export const generated: Material[] = [
       "SOZ-16",
       "SOZ-17",
       "SOZ-18",
-      "SOZ-26",
-      "SOZ-27",
-      "SOZ-30",
-      "SOZ-37",
+      "SOZ-20",
       "K-16",
-      "K-21",
-      "V-16",
-      "V-28"
+      "K-21"
     ],
     "language": "de",
     "source": "generated"
@@ -34482,18 +33654,13 @@ export const generated: Material[] = [
       3
     ],
     "eldibGoals": [
+      "V-20",
+      "SOZ-15",
+      "SOZ-21",
       "SOZ-26",
       "SOZ-27",
-      "SOZ-34",
-      "SOZ-35",
-      "SOZ-37",
-      "V-20",
-      "V-26",
-      "V-28",
       "K-16",
-      "K-26",
-      "KOG-37",
-      "KOG-38"
+      "K-21"
     ],
     "worksheet": {
       "title": "Stopp-Hand und Hilfe holen - mein Mut-Blatt",
@@ -34626,16 +33793,11 @@ export const generated: Material[] = [
     "eldibGoals": [
       "SOZ-21",
       "SOZ-32",
-      "SOZ-35",
       "SOZ-37",
       "K-16",
-      "K-17",
       "K-21",
       "K-26",
-      "K-32",
-      "V-26",
-      "KOG-37",
-      "KOG-55"
+      "KOG-37"
     ],
     "language": "de",
     "source": "generated"
@@ -34704,15 +33866,10 @@ export const generated: Material[] = [
       "SOZ-15",
       "SOZ-16",
       "SOZ-18",
-      "SOZ-26",
+      "SOZ-21",
       "SOZ-27",
-      "SOZ-30",
-      "SOZ-34",
       "SOZ-37",
-      "K-21",
-      "V-18",
-      "V-28",
-      "KOG-37"
+      "K-21"
     ],
     "language": "de",
     "source": "generated"
@@ -34779,18 +33936,13 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-14",
-      "V-18",
       "V-22",
       "V-24",
       "V-25",
-      "V-28",
-      "V-33",
       "K-18",
       "K-26",
-      "SOZ-25",
-      "KOG-37",
-      "KOG-58"
+      "K-29",
+      "KOG-38"
     ],
     "worksheet": {
       "title": "Mein innerer Motor",
@@ -34929,15 +34081,10 @@ export const generated: Material[] = [
     "eldibGoals": [
       "V-14",
       "V-22",
-      "V-23",
       "V-24",
       "V-25",
-      "V-27",
       "K-18",
-      "K-24",
-      "K-26",
-      "SOZ-26",
-      "KOG-37",
+      "K-29",
       "KOG-61"
     ],
     "worksheet": {
@@ -35077,18 +34224,13 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-14",
+      "V-10",
       "V-15",
-      "V-18",
-      "V-20",
       "V-22",
-      "V-28",
       "K-18",
       "K-24",
-      "K-26",
-      "SOZ-22",
-      "KOG-37",
-      "KOG-47"
+      "SOZ-14",
+      "KOG-37"
     ],
     "worksheet": {
       "title": "Mein Belohnungs-Baum",
@@ -35218,16 +34360,11 @@ export const generated: Material[] = [
     ],
     "eldibGoals": [
       "V-13",
-      "V-14",
-      "V-18",
-      "V-23",
+      "V-22",
       "V-24",
-      "V-28",
-      "K-23",
+      "V-25",
       "K-25",
-      "K-33",
       "SOZ-25",
-      "KOG-37",
       "KOG-56"
     ],
     "worksheet": {
@@ -35361,21 +34498,13 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-17",
-      "V-18",
       "V-27",
       "V-28",
-      "V-31",
-      "V-33",
-      "K-20",
-      "K-21",
       "K-33",
-      "SOZ-21",
-      "SOZ-34",
+      "SOZ-32",
       "SOZ-35",
       "SOZ-37",
       "SOZ-38",
-      "KOG-54",
       "KOG-57"
     ],
     "worksheet": {
@@ -35523,21 +34652,14 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-16",
       "V-17",
-      "V-19",
       "V-27",
       "V-31",
       "V-32",
-      "V-33",
-      "K-19",
-      "K-31",
-      "SOZ-21",
+      "K-33",
       "SOZ-27",
-      "SOZ-32",
       "SOZ-35",
       "SOZ-39",
-      "KOG-54",
       "KOG-62"
     ],
     "worksheet": {
@@ -35684,21 +34806,13 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-17",
       "V-18",
       "V-28",
-      "V-31",
-      "V-33",
       "K-20",
-      "K-21",
       "K-29",
-      "SOZ-16",
-      "SOZ-21",
       "SOZ-31",
       "SOZ-35",
       "SOZ-37",
-      "KOG-37",
-      "KOG-54",
       "KOG-57"
     ],
     "worksheet": {
@@ -35842,22 +34956,14 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-17",
       "V-18",
-      "V-27",
       "V-28",
-      "V-31",
       "K-21",
-      "K-26",
-      "K-27",
       "K-31",
-      "SOZ-16",
+      "SOZ-32",
       "SOZ-34",
       "SOZ-37",
-      "SOZ-38",
-      "SOZ-39",
-      "KOG-37",
-      "KOG-57"
+      "KOG-38"
     ],
     "worksheet": {
       "title": "Mein Weg zum Schlichtungs-Fuehrerschein",
@@ -36000,18 +35106,13 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-20",
       "V-21",
-      "V-23",
-      "V-27",
-      "V-32",
+      "V-22",
       "V-33",
-      "K-25",
       "K-26",
-      "SOZ-36",
-      "KOG-37",
-      "KOG-58",
-      "KOG-59"
+      "SOZ-40",
+      "KOG-59",
+      "KOG-61"
     ],
     "worksheet": {
       "title": "Ermittlungsakte: Die Aufmerksamkeits-Falle",
@@ -36147,16 +35248,12 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-17",
-      "V-18",
-      "V-27",
-      "V-33",
       "K-17",
       "K-30",
       "K-33",
       "SOZ-35",
-      "SOZ-36",
       "KOG-38",
+      "KOG-41",
       "KOG-58",
       "KOG-59"
     ],
@@ -36304,9 +35401,6 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-23",
-      "V-24",
-      "V-33",
       "K-18",
       "K-19",
       "K-26",
@@ -36314,8 +35408,7 @@ export const generated: Material[] = [
       "SOZ-31",
       "SOZ-37",
       "SOZ-40",
-      "KOG-37",
-      "KOG-58"
+      "V-33"
     ],
     "worksheet": {
       "title": "Hinter dem perfekten Bild",
@@ -36461,16 +35554,12 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-18",
       "V-20",
       "V-26",
-      "V-27",
       "V-28",
-      "V-33",
-      "K-17",
       "K-21",
       "K-26",
-      "SOZ-32",
+      "K-31",
       "SOZ-34",
       "SOZ-37"
     ],
@@ -36612,18 +35701,13 @@ export const generated: Material[] = [
       2
     ],
     "eldibGoals": [
-      "V-1",
-      "V-9",
       "V-14",
       "V-22",
+      "K-13",
       "K-15",
       "K-18",
       "K-19",
-      "SOZ-9",
-      "SOZ-24",
-      "SOZ-25",
-      "KOG-2",
-      "KOG-15"
+      "SOZ-9"
     ],
     "language": "de",
     "source": "generated"
@@ -36692,15 +35776,10 @@ export const generated: Material[] = [
       "V-1",
       "V-3",
       "V-11",
-      "V-20",
-      "V-21",
       "K-16",
-      "K-26",
       "KOG-1",
       "KOG-2",
-      "KOG-11",
-      "KOG-16",
-      "KOG-28"
+      "KOG-11"
     ],
     "language": "de",
     "source": "generated"
@@ -36766,18 +35845,12 @@ export const generated: Material[] = [
       2
     ],
     "eldibGoals": [
-      "V-1",
-      "V-14",
+      "K-13",
       "K-15",
+      "K-16",
       "K-18",
       "K-19",
-      "K-26",
-      "SOZ-3",
-      "SOZ-9",
-      "SOZ-25",
-      "SOZ-40",
-      "KOG-2",
-      "KOG-16"
+      "SOZ-9"
     ],
     "worksheet": {
       "title": "Mein Ich-Koffer",
@@ -36892,18 +35965,13 @@ export const generated: Material[] = [
       3
     ],
     "eldibGoals": [
+      "V-10",
       "K-9",
       "K-12",
       "K-14",
       "K-17",
-      "K-30",
       "SOZ-15",
-      "SOZ-18",
-      "SOZ-19",
-      "SOZ-33",
-      "V-10",
-      "V-20",
-      "KOG-2"
+      "SOZ-32"
     ],
     "worksheet": {
       "title": "Mein Echo-Ohren-Pass",
@@ -37033,18 +36101,13 @@ export const generated: Material[] = [
       3
     ],
     "eldibGoals": [
+      "V-18",
       "K-16",
-      "K-17",
       "K-21",
       "K-25",
       "K-26",
-      "K-30",
-      "SOZ-18",
-      "SOZ-26",
-      "SOZ-37",
-      "V-18",
-      "V-20",
-      "KOG-44"
+      "K-29",
+      "SOZ-34"
     ],
     "worksheet": {
       "title": "Meine Ich-Brücke",
@@ -37153,14 +36216,8 @@ export const generated: Material[] = [
       "K-12",
       "K-14",
       "K-28",
-      "K-30",
-      "SOZ-7",
-      "SOZ-15",
-      "SOZ-18",
-      "SOZ-26",
-      "V-16",
-      "V-17",
-      "KOG-44"
+      "SOZ-12",
+      "SOZ-26"
     ],
     "worksheet": {
       "title": "Meine Hilf-mir-Karte",
@@ -37290,17 +36347,11 @@ export const generated: Material[] = [
     ],
     "eldibGoals": [
       "K-8",
-      "K-9",
       "K-11",
-      "K-17",
+      "K-15",
       "K-23",
-      "K-30",
-      "SOZ-15",
-      "SOZ-19",
-      "SOZ-33",
-      "KOG-44",
-      "KOG-39",
-      "V-11"
+      "SOZ-24",
+      "KOG-31"
     ],
     "worksheet": {
       "title": "Mein roter Faden",
@@ -37431,17 +36482,13 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
+      "K-13",
       "K-15",
-      "K-17",
       "K-20",
       "K-27",
-      "K-32",
       "SOZ-15",
       "SOZ-23",
-      "SOZ-31",
-      "SOZ-33",
-      "SOZ-37",
-      "V-24",
+      "SOZ-25",
       "SOZ-41"
     ],
     "worksheet": {
@@ -37568,18 +36615,12 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
+      "V-31",
       "K-17",
-      "K-25",
-      "K-28",
       "K-31",
-      "K-34",
       "SOZ-18",
-      "SOZ-23",
-      "SOZ-26",
-      "SOZ-32",
-      "SOZ-39",
-      "V-18",
-      "KOG-55"
+      "SOZ-27",
+      "SOZ-32"
     ],
     "worksheet": {
       "title": "Meine Stimme für unsere Charta",
@@ -37698,18 +36739,13 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
+      "K-13",
       "K-15",
       "K-18",
-      "K-20",
       "K-22",
-      "K-27",
+      "K-23",
       "SOZ-15",
-      "SOZ-16",
-      "SOZ-29",
-      "SOZ-31",
-      "SOZ-33",
-      "V-19",
-      "KOG-44"
+      "SOZ-29"
     ],
     "worksheet": {
       "title": "Meine Kachel im Wir-Mosaik",
@@ -37845,18 +36881,13 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
+      "K-14",
       "K-15",
       "K-17",
       "K-21",
       "K-23",
       "K-27",
-      "K-32",
-      "SOZ-15",
-      "SOZ-24",
-      "SOZ-33",
-      "SOZ-37",
-      "V-24",
-      "KOG-44"
+      "SOZ-32"
     ],
     "worksheet": {
       "title": "Mein Interview fürs Klassen-Hörbuch",
@@ -37964,17 +36995,12 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-18",
-      "V-20",
       "V-23",
       "V-28",
       "K-25",
-      "K-30",
       "SOZ-18",
-      "SOZ-26",
-      "SOZ-30",
+      "SOZ-32",
       "SOZ-34",
-      "KOG-44",
       "KOG-61"
     ],
     "worksheet": {
@@ -38106,18 +37132,12 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-3",
-      "V-10",
       "V-13",
-      "V-20",
+      "V-21",
       "V-23",
-      "K-30",
-      "SOZ-14",
+      "V-24",
       "SOZ-18",
-      "SOZ-19",
-      "SOZ-30",
-      "KOG-2",
-      "KOG-28"
+      "SOZ-32"
     ],
     "worksheet": {
       "title": "Tausend Hände, ein Takt - Mein Rhythmus-Bogen",
@@ -38254,18 +37274,13 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-10",
-      "V-20",
       "V-27",
       "K-9",
+      "K-11",
       "K-25",
       "K-28",
-      "SOZ-15",
       "SOZ-18",
-      "SOZ-26",
-      "SOZ-37",
-      "KOG-2",
-      "KOG-48"
+      "SOZ-37"
     ],
     "worksheet": {
       "title": "Blind durch den Parcours - Mein Vertrauens-Bogen",
@@ -38407,18 +37422,13 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-18",
       "V-23",
-      "V-27",
+      "V-28",
       "K-25",
-      "K-28",
-      "K-30",
+      "K-31",
       "SOZ-16",
       "SOZ-18",
-      "SOZ-26",
-      "SOZ-34",
-      "SOZ-37",
-      "KOG-44"
+      "SOZ-34"
     ],
     "worksheet": {
       "title": "Mangel-Markt - Mein Auswertungsbogen",
@@ -38551,17 +37561,13 @@ export const generated: Material[] = [
     ],
     "eldibGoals": [
       "SOZ-31",
-      "SOZ-32",
-      "SOZ-33",
       "SOZ-37",
-      "SOZ-41",
-      "K-20",
-      "K-21",
+      "K-30",
       "K-33",
-      "V-17",
-      "V-23",
-      "KOG-37",
-      "KOG-58"
+      "KOG-58",
+      "KOG-59",
+      "V-22",
+      "SOZ-36"
     ],
     "worksheet": {
       "title": "Der erste Eindruck unter der Lupe",
@@ -38693,18 +37699,14 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "SOZ-23",
-      "SOZ-31",
-      "SOZ-33",
-      "SOZ-34",
       "SOZ-37",
       "SOZ-38",
-      "K-16",
-      "K-21",
+      "SOZ-32",
+      "K-26",
       "K-33",
-      "V-18",
-      "V-28",
-      "KOG-58"
+      "KOG-38",
+      "SOZ-36",
+      "K-30"
     ],
     "worksheet": {
       "title": "Perspektivwechsel-Werkstatt",
@@ -38829,18 +37831,14 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "SOZ-21",
-      "SOZ-31",
-      "SOZ-32",
       "SOZ-35",
       "SOZ-37",
-      "SOZ-41",
-      "K-20",
       "K-33",
       "K-34",
-      "V-17",
       "KOG-55",
-      "KOG-58"
+      "KOG-58",
+      "SOZ-32",
+      "SOZ-31"
     ],
     "worksheet": {
       "title": "Schubladen im Kopf",
@@ -38969,18 +37967,14 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "K-18",
       "K-19",
       "K-20",
-      "K-21",
-      "K-27",
-      "K-32",
-      "SOZ-26",
+      "K-28",
       "SOZ-32",
-      "SOZ-37",
+      "SOZ-33",
       "SOZ-40",
-      "V-22",
-      "V-33"
+      "SOZ-37",
+      "V-22"
     ],
     "worksheet": {
       "title": "Selbstbild und Fremdbild im ehrlichen Abgleich",
@@ -39134,15 +38128,11 @@ export const generated: Material[] = [
       "V-1",
       "V-3",
       "V-5",
-      "V-14",
-      "K-15",
-      "K-16",
-      "SOZ-3",
-      "SOZ-9",
-      "SOZ-24",
+      "V-10",
       "KOG-2",
-      "KOG-15",
-      "KOG-16"
+      "KOG-3",
+      "SOZ-14",
+      "K-16"
     ],
     "worksheet": {
       "title": "Mein Glocken-Heft",
@@ -39260,15 +38250,11 @@ export const generated: Material[] = [
       "V-1",
       "V-3",
       "V-5",
-      "V-14",
-      "K-15",
-      "K-16",
-      "K-18",
-      "SOZ-9",
-      "SOZ-24",
+      "KOG-1",
       "KOG-2",
-      "KOG-15",
-      "KOG-16"
+      "KOG-11",
+      "K-15",
+      "K-16"
     ],
     "worksheet": {
       "title": "Mein Barfuß-Forscher-Pass",
@@ -39386,17 +38372,13 @@ export const generated: Material[] = [
       2
     ],
     "eldibGoals": [
-      "V-1",
       "V-9",
       "V-14",
-      "V-22",
       "K-15",
+      "K-16",
       "K-18",
-      "K-19",
-      "SOZ-9",
       "SOZ-24",
       "SOZ-25",
-      "KOG-2",
       "KOG-15"
     ],
     "worksheet": {
@@ -39515,15 +38497,11 @@ export const generated: Material[] = [
       "V-1",
       "V-3",
       "V-5",
-      "V-14",
-      "K-15",
-      "K-16",
-      "K-18",
-      "SOZ-3",
-      "SOZ-9",
-      "SOZ-24",
+      "V-11",
       "KOG-2",
-      "KOG-16"
+      "KOG-16",
+      "K-15",
+      "SOZ-14"
     ],
     "worksheet": {
       "title": "Mein Langsam-Heft",
@@ -39638,14 +38616,10 @@ export const generated: Material[] = [
       "V-20",
       "V-21",
       "V-26",
-      "V-28",
       "SOZ-21",
-      "SOZ-27",
       "SOZ-34",
-      "SOZ-36",
       "K-16",
-      "K-26",
-      "KOG-58"
+      "K-26"
     ],
     "worksheet": {
       "title": "Mein Streit-Thermometer",
@@ -39764,18 +38738,14 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "SOZ-23",
-      "SOZ-26",
-      "SOZ-32",
+      "SOZ-27",
       "SOZ-34",
       "SOZ-37",
-      "SOZ-38",
       "K-17",
-      "K-21",
       "K-28",
-      "V-18",
+      "K-31",
       "V-28",
-      "KOG-58"
+      "SOZ-32"
     ],
     "worksheet": {
       "title": "Mein Schlichter-Pass",
@@ -39923,18 +38893,14 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "SOZ-21",
-      "SOZ-31",
       "SOZ-34",
-      "SOZ-35",
       "SOZ-37",
-      "K-16",
       "K-21",
       "K-26",
-      "K-33",
+      "K-29",
       "V-18",
       "V-28",
-      "KOG-58"
+      "SOZ-21"
     ],
     "worksheet": {
       "title": "Mein Eisberg unter dem Streit",
@@ -40068,17 +39034,13 @@ export const generated: Material[] = [
     ],
     "eldibGoals": [
       "V-18",
-      "V-23",
       "V-28",
-      "SOZ-16",
       "SOZ-18",
-      "SOZ-23",
       "SOZ-34",
       "SOZ-35",
+      "SOZ-16",
       "K-31",
-      "K-33",
-      "KOG-38",
-      "KOG-58"
+      "KOG-38"
     ],
     "worksheet": {
       "title": "Meine Loesungs-Schmiede",
@@ -40222,16 +39184,12 @@ export const generated: Material[] = [
     "eldibGoals": [
       "V-22",
       "V-24",
-      "V-28",
-      "V-33",
       "K-16",
       "K-18",
       "K-26",
       "SOZ-24",
       "SOZ-26",
-      "SOZ-34",
-      "KOG-37",
-      "KOG-58"
+      "KOG-37"
     ],
     "worksheet": {
       "title": "Mein Stehauf-Plan",
@@ -40356,18 +39314,14 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-21",
       "V-22",
-      "V-33",
       "K-16",
       "K-18",
-      "K-19",
       "K-26",
-      "SOZ-9",
+      "K-29",
       "SOZ-24",
-      "SOZ-37",
       "KOG-37",
-      "KOG-58"
+      "KOG-38"
     ],
     "worksheet": {
       "title": "Mein innerer Trainer",
@@ -40496,16 +39450,12 @@ export const generated: Material[] = [
     "eldibGoals": [
       "V-20",
       "V-21",
-      "V-22",
-      "V-33",
+      "V-26",
       "K-16",
       "K-26",
-      "SOZ-9",
       "SOZ-24",
-      "SOZ-26",
       "KOG-37",
-      "KOG-38",
-      "KOG-58"
+      "V-22"
     ],
     "worksheet": {
       "title": "Mein Anker-Notfallplan",
@@ -40642,13 +39592,9 @@ export const generated: Material[] = [
       "K-18",
       "K-19",
       "K-22",
-      "K-28",
       "SOZ-24",
       "SOZ-25",
-      "SOZ-26",
-      "SOZ-40",
-      "KOG-37",
-      "KOG-58"
+      "SOZ-40"
     ],
     "worksheet": {
       "title": "Mein Kraftquellen-Netz",
@@ -40775,20 +39721,14 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-14",
       "V-22",
       "V-27",
-      "V-32",
       "V-33",
       "K-18",
       "K-19",
-      "K-26",
       "K-33",
-      "SOZ-9",
-      "SOZ-24",
       "SOZ-40",
-      "KOG-37",
-      "KOG-55"
+      "KOG-49"
     ],
     "worksheet": {
       "title": "Mein Stärken-Portfolio",
@@ -40975,19 +39915,13 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-21",
-      "V-23",
-      "V-26",
+      "V-22",
       "V-33",
-      "K-16",
       "K-26",
       "K-28",
-      "SOZ-9",
-      "SOZ-37",
+      "K-29",
       "SOZ-40",
-      "KOG-37",
       "KOG-38",
-      "KOG-57",
       "KOG-61"
     ],
     "worksheet": {
@@ -41164,20 +40098,14 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-14",
-      "V-22",
       "V-30",
       "K-19",
       "K-20",
       "K-22",
-      "K-32",
-      "SOZ-9",
-      "SOZ-24",
+      "K-28",
       "SOZ-37",
       "SOZ-40",
-      "SOZ-41",
-      "KOG-37",
-      "KOG-55"
+      "SOZ-41"
     ],
     "worksheet": {
       "title": "Mein Spuren-Blatt",
@@ -41340,19 +40268,13 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-21",
-      "V-23",
-      "V-24",
+      "V-22",
       "V-33",
       "K-18",
       "K-19",
       "K-26",
-      "SOZ-9",
       "SOZ-31",
-      "SOZ-35",
       "SOZ-40",
-      "KOG-37",
-      "KOG-55",
       "KOG-58"
     ],
     "worksheet": {
@@ -41504,11 +40426,12 @@ export const generated: Material[] = [
       3
     ],
     "eldibGoals": [
-      "V-11",
       "K-16",
+      "K-23",
       "K-26",
-      "KOG-8",
-      "SOZ-16"
+      "V-9",
+      "SOZ-15",
+      "K-15"
     ],
     "language": "de",
     "source": "generated"
@@ -41566,10 +40489,12 @@ export const generated: Material[] = [
     ],
     "eldibGoals": [
       "SOZ-18",
-      "SOZ-27",
-      "K-11",
+      "SOZ-30",
       "V-22",
-      "KOG-44"
+      "V-23",
+      "V-28",
+      "K-27",
+      "KOG-56"
     ],
     "language": "de",
     "source": "generated"
@@ -41630,11 +40555,11 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-16",
-      "V-21",
-      "KOG-19",
-      "SOZ-12",
-      "K-26"
+      "SOZ-40",
+      "K-26",
+      "V-22",
+      "V-27",
+      "KOG-49"
     ],
     "worksheet": {
       "title": "Mäin Energie-Tank: Wat lued mech op?",
@@ -41765,10 +40690,11 @@ export const generated: Material[] = [
     ],
     "eldibGoals": [
       "SOZ-15",
+      "SOZ-25",
       "SOZ-26",
-      "SOZ-37",
-      "K-17",
-      "V-13"
+      "SOZ-27",
+      "K-28",
+      "SOZ-20"
     ],
     "language": "de",
     "source": "generated"
@@ -41825,10 +40751,11 @@ export const generated: Material[] = [
       2
     ],
     "eldibGoals": [
-      "V-11",
+      "V-3",
       "KOG-2",
       "KOG-23",
-      "SOZ-16"
+      "SOZ-4",
+      "V-10"
     ],
     "language": "de",
     "source": "generated"
@@ -41889,11 +40816,12 @@ export const generated: Material[] = [
       3
     ],
     "eldibGoals": [
-      "SOZ-13",
-      "SOZ-24",
+      "V-18",
+      "V-25",
+      "V-27",
       "K-16",
       "K-26",
-      "V-17"
+      "SOZ-21"
     ],
     "language": "de",
     "source": "generated"
@@ -41954,12 +40882,12 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-16",
+      "V-22",
       "V-24",
-      "KOG-19",
-      "KOG-27",
-      "SOZ-12",
-      "K-26"
+      "K-26",
+      "K-29",
+      "SOZ-40",
+      "SOZ-28"
     ],
     "language": "de",
     "source": "generated"
@@ -42020,11 +40948,12 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "KOG-44",
       "KOG-58",
-      "V-23",
+      "SOZ-35",
       "SOZ-33",
-      "K-26"
+      "K-19",
+      "K-26",
+      "KOG-55"
     ],
     "worksheet": {
       "title": "Hinter dem perfekten Bild",
@@ -42148,11 +41077,12 @@ export const generated: Material[] = [
       2
     ],
     "eldibGoals": [
-      "SOZ-17",
-      "SOZ-18",
+      "SOZ-10",
+      "SOZ-15",
+      "SOZ-16",
       "V-12",
-      "K-10",
-      "KOG-7"
+      "V-5",
+      "KOG-4"
     ],
     "language": "de",
     "source": "generated"
@@ -42209,11 +41139,11 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "KOG-15",
-      "KOG-31",
+      "K-15",
+      "K-18",
       "V-22",
-      "K-26",
-      "SOZ-19"
+      "SOZ-40",
+      "KOG-49"
     ],
     "language": "de",
     "source": "generated"
@@ -42270,10 +41200,11 @@ export const generated: Material[] = [
       2
     ],
     "eldibGoals": [
+      "V-3",
+      "KOG-11",
       "V-11",
-      "V-21",
-      "KOG-5",
-      "SOZ-16"
+      "KOG-2",
+      "SOZ-7"
     ],
     "language": "de",
     "source": "generated"
@@ -42335,11 +41266,11 @@ export const generated: Material[] = [
     ],
     "eldibGoals": [
       "KOG-55",
-      "KOG-58",
       "SOZ-35",
       "SOZ-39",
       "V-33",
-      "K-34"
+      "K-34",
+      "SOZ-40"
     ],
     "worksheet": {
       "title": "Mäi Wäerter-Kompass",
@@ -42464,15 +41395,11 @@ export const generated: Material[] = [
       3
     ],
     "eldibGoals": [
-      "V-1",
       "V-3",
       "K-15",
       "K-16",
-      "K-18",
       "K-26",
-      "SOZ-3",
       "SOZ-9",
-      "SOZ-25",
       "KOG-2"
     ],
     "language": "de",
@@ -42545,11 +41472,7 @@ export const generated: Material[] = [
       "K-18",
       "K-19",
       "SOZ-9",
-      "SOZ-25",
-      "SOZ-28",
-      "SOZ-40",
-      "KOG-7",
-      "KOG-2"
+      "KOG-7"
     ],
     "worksheet": {
       "title": "Meine Stärken-Medaille",
@@ -42663,16 +41586,12 @@ export const generated: Material[] = [
       3
     ],
     "eldibGoals": [
-      "V-1",
       "V-3",
       "K-15",
       "K-16",
-      "K-26",
       "SOZ-9",
       "KOG-2",
-      "KOG-11",
-      "KOG-16",
-      "KOG-28"
+      "KOG-11"
     ],
     "worksheet": {
       "title": "Mein Körperdetektiv-Blatt",
@@ -42782,15 +41701,11 @@ export const generated: Material[] = [
       3
     ],
     "eldibGoals": [
-      "V-1",
       "V-14",
       "K-15",
       "K-18",
       "K-19",
-      "SOZ-3",
       "SOZ-9",
-      "SOZ-25",
-      "SOZ-28",
       "SOZ-31"
     ],
     "worksheet": {
@@ -42891,14 +41806,10 @@ export const generated: Material[] = [
     "eldibGoals": [
       "V-20",
       "V-21",
-      "K-3",
-      "K-6",
-      "K-7",
+      "K-16",
       "K-17",
-      "SOZ-18",
-      "SOZ-19",
-      "SOZ-27",
-      "KOG-48"
+      "SOZ-16",
+      "SOZ-7"
     ],
     "worksheet": {
       "title": "Meine Stimm-Schieberegler",
@@ -43003,14 +41914,10 @@ export const generated: Material[] = [
     "eldibGoals": [
       "V-20",
       "V-21",
-      "K-7",
       "K-9",
-      "K-14",
       "K-17",
-      "SOZ-15",
-      "SOZ-19",
-      "SOZ-27",
-      "SOZ-33"
+      "SOZ-14",
+      "SOZ-32"
     ],
     "worksheet": {
       "title": "Erst zu Ende hören",
@@ -43137,16 +42044,12 @@ export const generated: Material[] = [
       3
     ],
     "eldibGoals": [
-      "K-9",
-      "K-10",
       "K-15",
       "K-16",
       "K-17",
-      "K-19",
       "K-26",
       "K-30",
-      "SOZ-15",
-      "SOZ-33"
+      "SOZ-21"
     ],
     "worksheet": {
       "title": "Meine Gefühlswörter",
@@ -43269,18 +42172,12 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-16",
-      "V-17",
       "V-18",
-      "K-3",
-      "K-17",
-      "K-25",
+      "K-16",
       "K-26",
       "K-27",
-      "SOZ-26",
-      "SOZ-27",
-      "KOG-38",
-      "KOG-48"
+      "V-28",
+      "SOZ-26"
     ],
     "worksheet": {
       "title": "Mein Anliegen in drei Schritten",
@@ -43408,20 +42305,15 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-17",
-      "V-24",
-      "V-30",
       "K-14",
-      "K-17",
+      "K-15",
       "K-19",
-      "K-22",
+      "K-20",
       "K-27",
       "K-28",
       "SOZ-15",
       "SOZ-26",
-      "SOZ-32",
-      "SOZ-37",
-      "SOZ-41"
+      "SOZ-37"
     ],
     "worksheet": {
       "title": "Mein Brief an meinen geheimen Brieffreund",
@@ -43546,20 +42438,14 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-16",
-      "V-22",
+      "V-25",
       "V-27",
-      "V-30",
       "K-21",
       "K-22",
       "K-28",
-      "K-32",
       "SOZ-16",
       "SOZ-26",
-      "SOZ-30",
-      "SOZ-32",
-      "SOZ-37",
-      "SOZ-39"
+      "SOZ-37"
     ],
     "worksheet": {
       "title": "Meine geheime Missions-Karte",
@@ -43682,17 +42568,12 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-19",
-      "V-24",
       "K-9",
       "K-14",
-      "K-17",
       "K-19",
       "K-20",
-      "K-22",
       "K-27",
       "SOZ-15",
-      "SOZ-31",
       "SOZ-32",
       "SOZ-33",
       "SOZ-37"
@@ -43824,15 +42705,10 @@ export const generated: Material[] = [
     ],
     "eldibGoals": [
       "V-18",
-      "V-19",
-      "V-24",
       "V-28",
-      "V-30",
-      "K-22",
-      "K-27",
+      "K-17",
       "K-28",
       "SOZ-18",
-      "SOZ-26",
       "SOZ-27",
       "SOZ-30",
       "SOZ-32",
@@ -43977,18 +42853,14 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-18",
-      "V-19",
       "V-23",
       "V-28",
-      "SOZ-16",
+      "K-16",
       "SOZ-18",
       "SOZ-19",
-      "SOZ-23",
-      "SOZ-26",
+      "SOZ-22",
       "SOZ-30",
-      "SOZ-34",
-      "K-31"
+      "SOZ-32"
     ],
     "worksheet": {
       "title": "Bruecken-Team: Wie wir zusammengearbeitet haben",
@@ -44116,16 +42988,13 @@ export const generated: Material[] = [
     "eldibGoals": [
       "V-25",
       "V-27",
-      "SOZ-18",
-      "SOZ-22",
-      "SOZ-26",
-      "SOZ-29",
-      "SOZ-32",
-      "SOZ-41",
       "K-17",
       "K-28",
       "K-32",
-      "KOG-38"
+      "SOZ-18",
+      "SOZ-22",
+      "SOZ-32",
+      "SOZ-41"
     ],
     "worksheet": {
       "title": "Mein Teil im Gruppenpuzzle",
@@ -44267,15 +43136,11 @@ export const generated: Material[] = [
       "V-19",
       "V-27",
       "V-30",
+      "K-32",
       "SOZ-18",
       "SOZ-22",
-      "SOZ-27",
-      "SOZ-30",
       "SOZ-38",
-      "SOZ-41",
-      "K-22",
-      "K-32",
-      "KOG-54"
+      "SOZ-41"
     ],
     "worksheet": {
       "title": "Mein Rollen-Kompass",
@@ -44406,18 +43271,15 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-18",
-      "V-20",
       "V-23",
       "V-28",
-      "SOZ-18",
-      "SOZ-23",
-      "SOZ-34",
-      "SOZ-37",
-      "SOZ-39",
       "K-17",
       "K-27",
-      "KOG-58"
+      "K-31",
+      "SOZ-18",
+      "SOZ-23",
+      "SOZ-32",
+      "SOZ-34"
     ],
     "worksheet": {
       "title": "Konsens-Werkstatt: Unser Weg zur Einigung",
@@ -44544,18 +43406,14 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-18",
-      "V-20",
-      "V-23",
-      "V-28",
-      "SOZ-18",
-      "SOZ-23",
-      "SOZ-30",
-      "SOZ-34",
-      "SOZ-37",
       "K-17",
-      "K-27",
-      "KOG-50"
+      "K-21",
+      "K-29",
+      "K-30",
+      "SOZ-32",
+      "SOZ-36",
+      "SOZ-37",
+      "KOG-38"
     ],
     "worksheet": {
       "title": "Eisberg entschluesseln",
@@ -44686,18 +43544,14 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-18",
-      "V-20",
-      "V-23",
-      "V-28",
-      "SOZ-18",
-      "SOZ-23",
-      "SOZ-30",
-      "SOZ-34",
+      "K-21",
+      "K-26",
+      "K-29",
+      "SOZ-32",
+      "SOZ-36",
       "SOZ-37",
-      "SOZ-39",
-      "K-17",
-      "K-27"
+      "SOZ-38",
+      "KOG-38"
     ],
     "worksheet": {
       "title": "In deiner Rolle - eine Szene aus drei Blickwinkeln",
@@ -44840,17 +43694,13 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-18",
-      "V-20",
-      "V-23",
-      "V-28",
-      "SOZ-18",
-      "SOZ-23",
-      "SOZ-30",
-      "SOZ-34",
+      "K-29",
+      "K-30",
+      "K-33",
+      "SOZ-35",
+      "SOZ-36",
       "SOZ-37",
-      "K-27",
-      "KOG-50",
+      "KOG-38",
       "KOG-58"
     ],
     "worksheet": {
@@ -44984,18 +43834,15 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-14",
-      "V-18",
-      "V-23",
-      "V-28",
-      "SOZ-18",
-      "SOZ-25",
-      "SOZ-28",
-      "SOZ-30",
+      "K-18",
+      "K-19",
+      "K-20",
+      "K-27",
+      "K-28",
+      "SOZ-32",
+      "SOZ-33",
       "SOZ-37",
-      "SOZ-40",
-      "K-17",
-      "K-27"
+      "SOZ-40"
     ],
     "worksheet": {
       "title": "Mein Feedback-Fenster",
@@ -45128,14 +43975,10 @@ export const generated: Material[] = [
       "V-3",
       "V-10",
       "V-11",
-      "V-21",
       "K-15",
       "K-16",
       "K-26",
-      "SOZ-1",
       "SOZ-9",
-      "SOZ-27",
-      "KOG-1",
       "KOG-2"
     ],
     "worksheet": {
@@ -45248,13 +44091,9 @@ export const generated: Material[] = [
       "V-10",
       "K-15",
       "K-26",
-      "SOZ-1",
-      "SOZ-2",
-      "SOZ-9",
       "KOG-1",
       "KOG-2",
-      "KOG-3",
-      "KOG-27"
+      "KOG-3"
     ],
     "worksheet": {
       "title": "Mein Lauschpiraten-Logbuch",
@@ -45368,16 +44207,13 @@ export const generated: Material[] = [
     "eldibGoals": [
       "V-1",
       "V-3",
-      "V-21",
+      "V-10",
       "K-15",
       "K-16",
       "K-26",
-      "SOZ-1",
       "SOZ-9",
       "KOG-2",
-      "KOG-11",
-      "KOG-16",
-      "KOG-28"
+      "KOG-11"
     ],
     "worksheet": {
       "title": "Mein Atemfreund",
@@ -45488,18 +44324,15 @@ export const generated: Material[] = [
       3
     ],
     "eldibGoals": [
+      "V-1",
       "V-3",
       "V-10",
-      "V-20",
-      "V-21",
       "K-15",
       "K-26",
       "SOZ-9",
       "SOZ-14",
       "KOG-1",
-      "KOG-2",
-      "KOG-12",
-      "KOG-27"
+      "KOG-2"
     ],
     "worksheet": {
       "title": "Mein Schneckentempo-Blatt",
@@ -45618,9 +44451,7 @@ export const generated: Material[] = [
       "V-28",
       "K-16",
       "K-21",
-      "K-28",
-      "SOZ-26",
-      "SOZ-32",
+      "K-31",
       "SOZ-34",
       "SOZ-37"
     ],
@@ -45743,8 +44574,7 @@ export const generated: Material[] = [
       "SOZ-31",
       "SOZ-32",
       "SOZ-37",
-      "KOG-37",
-      "KOG-58"
+      "KOG-38"
     ],
     "worksheet": {
       "title": "Meine Streit-Schuhe",
@@ -45864,12 +44694,10 @@ export const generated: Material[] = [
       "V-23",
       "V-28",
       "K-17",
-      "K-31",
       "SOZ-18",
-      "SOZ-23",
+      "SOZ-21",
       "SOZ-34",
-      "KOG-38",
-      "KOG-54"
+      "KOG-38"
     ],
     "worksheet": {
       "title": "Meine Lösungs-Lostrommel",
@@ -45998,11 +44826,10 @@ export const generated: Material[] = [
       "V-21",
       "K-9",
       "K-16",
-      "K-17",
       "K-21",
+      "K-31",
       "SOZ-32",
-      "SOZ-37",
-      "KOG-37"
+      "SOZ-37"
     ],
     "worksheet": {
       "title": "Mein Streit-Echo",
@@ -46122,7 +44949,6 @@ export const generated: Material[] = [
     ],
     "eldibGoals": [
       "V-18",
-      "V-21",
       "V-23",
       "V-25",
       "V-28",
@@ -46130,9 +44956,7 @@ export const generated: Material[] = [
       "K-26",
       "K-28",
       "SOZ-26",
-      "SOZ-34",
-      "KOG-37",
-      "KOG-54"
+      "SOZ-34"
     ],
     "worksheet": {
       "title": "Meine Resilienz-Werkbank",
@@ -46263,16 +45087,13 @@ export const generated: Material[] = [
     "eldibGoals": [
       "V-18",
       "V-22",
-      "V-23",
       "K-18",
       "K-19",
       "K-25",
       "K-26",
-      "SOZ-24",
-      "SOZ-36",
+      "K-29",
       "KOG-37",
-      "KOG-38",
-      "KOG-57"
+      "KOG-38"
     ],
     "worksheet": {
       "title": "Meine zwei inneren Stimmen",
@@ -46411,15 +45232,11 @@ export const generated: Material[] = [
       "V-22",
       "V-23",
       "V-24",
-      "V-25",
       "K-16",
       "K-26",
+      "K-29",
       "SOZ-24",
-      "SOZ-36",
-      "KOG-37",
-      "KOG-39",
-      "KOG-54",
-      "KOG-57"
+      "KOG-37"
     ],
     "worksheet": {
       "title": "Mein Bambus-Blatt",
@@ -46562,11 +45379,7 @@ export const generated: Material[] = [
       "V-28",
       "K-16",
       "K-26",
-      "SOZ-26",
-      "SOZ-34",
-      "SOZ-37",
-      "KOG-37",
-      "KOG-54"
+      "SOZ-34"
     ],
     "worksheet": {
       "title": "Mein Notfallplan für Gefühlsstürme",
@@ -46711,19 +45524,13 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-14",
-      "V-22",
-      "V-24",
       "V-30",
       "K-18",
       "K-19",
       "K-20",
       "K-32",
-      "SOZ-9",
-      "SOZ-24",
-      "SOZ-25",
-      "SOZ-31",
       "SOZ-32",
+      "SOZ-33",
       "SOZ-40"
     ],
     "worksheet": {
@@ -46870,18 +45677,12 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-21",
       "V-22",
-      "V-24",
       "V-33",
-      "K-18",
       "K-19",
       "K-26",
-      "K-34",
-      "SOZ-9",
-      "SOZ-25",
+      "K-29",
       "SOZ-40",
-      "KOG-37",
       "KOG-55",
       "KOG-61"
     ],
@@ -47018,18 +45819,11 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-13",
-      "V-22",
-      "V-24",
       "V-30",
       "K-18",
       "K-19",
-      "K-22",
       "K-23",
-      "SOZ-9",
-      "SOZ-25",
       "SOZ-31",
-      "SOZ-32",
       "SOZ-40",
       "KOG-55"
     ],
@@ -47180,20 +45974,14 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-14",
       "V-22",
-      "V-24",
-      "V-25",
       "V-30",
       "K-18",
-      "K-22",
-      "K-24",
+      "K-28",
       "K-32",
-      "SOZ-9",
-      "SOZ-24",
       "SOZ-26",
       "SOZ-40",
-      "KOG-37"
+      "KOG-49"
     ],
     "worksheet": {
       "title": "Mein Erfolgs-Logbuch",
@@ -47349,12 +46137,8 @@ export const generated: Material[] = [
       "V-26",
       "V-28",
       "V-33",
-      "K-16",
       "K-26",
-      "SOZ-14",
       "SOZ-34",
-      "SOZ-37",
-      "KOG-37",
       "KOG-61"
     ],
     "worksheet": {
@@ -47500,16 +46284,12 @@ export const generated: Material[] = [
     "eldibGoals": [
       "V-20",
       "V-21",
-      "V-23",
-      "V-28",
+      "V-26",
       "K-16",
       "K-26",
-      "SOZ-14",
-      "SOZ-26",
+      "K-29",
       "SOZ-36",
-      "KOG-37",
-      "KOG-38",
-      "KOG-58"
+      "KOG-38"
     ],
     "worksheet": {
       "title": "Mein geeichtes Frust-Thermometer",
@@ -47636,17 +46416,12 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-10",
       "V-20",
       "V-21",
-      "V-23",
-      "V-28",
       "V-29",
-      "SOZ-14",
-      "SOZ-34",
-      "KOG-37",
+      "V-31",
+      "SOZ-39",
       "KOG-55",
-      "KOG-58",
       "KOG-61"
     ],
     "worksheet": {
@@ -47778,17 +46553,13 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-17",
-      "V-18",
       "V-20",
       "V-21",
       "V-27",
       "V-28",
       "V-33",
       "SOZ-34",
-      "SOZ-37",
-      "KOG-37",
-      "KOG-58",
+      "SOZ-36",
       "KOG-61"
     ],
     "worksheet": {
@@ -47924,17 +46695,12 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "K-9",
+      "K-15",
       "K-16",
-      "K-17",
       "K-21",
-      "K-26",
       "K-23",
-      "SOZ-21",
       "SOZ-24",
       "SOZ-31",
-      "SOZ-37",
-      "V-16",
       "KOG-37"
     ],
     "worksheet": {
@@ -48089,16 +46855,11 @@ export const generated: Material[] = [
     "eldibGoals": [
       "K-13",
       "K-16",
+      "K-20",
       "K-21",
-      "K-17",
-      "K-9",
-      "SOZ-5",
+      "KOG-12",
       "SOZ-15",
-      "SOZ-31",
-      "SOZ-32",
-      "SOZ-37",
-      "V-26",
-      "KOG-37"
+      "SOZ-21"
     ],
     "worksheet": {
       "title": "Mein Spur-Zettel und Detektiv-Ausweis",
@@ -48234,18 +46995,12 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "K-10",
-      "K-16",
-      "K-26",
-      "K-17",
-      "K-21",
-      "SOZ-21",
-      "SOZ-24",
-      "SOZ-37",
-      "V-16",
       "V-20",
-      "V-21",
-      "KOG-37"
+      "K-16",
+      "K-21",
+      "K-26",
+      "SOZ-21",
+      "SOZ-24"
     ],
     "worksheet": {
       "title": "Meine Ärger-Treppe",
@@ -48372,19 +47127,12 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "K-16",
-      "K-26",
-      "K-17",
-      "K-25",
-      "K-33",
-      "SOZ-24",
-      "SOZ-34",
-      "SOZ-37",
-      "V-16",
-      "V-18",
       "V-20",
       "V-21",
-      "V-26",
+      "K-16",
+      "K-26",
+      "K-29",
+      "SOZ-24",
       "KOG-37"
     ],
     "worksheet": {
@@ -48536,22 +47284,13 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-1",
-      "V-3",
-      "V-14",
-      "V-22",
-      "V-24",
+      "K-13",
       "K-15",
       "K-18",
       "K-19",
-      "K-26",
-      "SOZ-9",
       "SOZ-25",
       "SOZ-31",
-      "SOZ-32",
-      "SOZ-40",
-      "KOG-2",
-      "KOG-37"
+      "SOZ-32"
     ],
     "worksheet": {
       "title": "Mein Mosaik-Steckbrief",
@@ -48687,22 +47426,13 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-1",
-      "V-3",
-      "V-14",
-      "V-22",
-      "V-24",
+      "K-13",
       "K-15",
       "K-18",
       "K-19",
       "K-22",
-      "SOZ-9",
-      "SOZ-25",
       "SOZ-31",
-      "SOZ-32",
-      "SOZ-40",
-      "KOG-2",
-      "KOG-37"
+      "SOZ-32"
     ],
     "worksheet": {
       "title": "Mein Sprach-Tagebuch",
@@ -48846,22 +47576,13 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-1",
-      "V-3",
-      "V-14",
-      "V-22",
-      "V-24",
+      "K-13",
       "K-15",
       "K-18",
       "K-19",
-      "K-26",
-      "SOZ-9",
-      "SOZ-25",
-      "SOZ-28",
+      "SOZ-24",
       "SOZ-31",
-      "SOZ-40",
-      "KOG-2",
-      "KOG-37"
+      "KOG-49"
     ],
     "worksheet": {
       "title": "Meine Zeitkapsel - Brief an mein zukünftiges Ich",
@@ -49005,22 +47726,13 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-1",
-      "V-3",
-      "V-14",
-      "V-22",
-      "V-24",
-      "V-30",
+      "K-13",
       "K-15",
       "K-18",
       "K-19",
-      "SOZ-9",
-      "SOZ-25",
+      "K-23",
       "SOZ-31",
-      "SOZ-32",
-      "SOZ-40",
-      "KOG-2",
-      "KOG-37"
+      "SOZ-32"
     ],
     "worksheet": {
       "title": "Mein Lebenswappen",
@@ -49158,19 +47870,12 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-16",
-      "V-18",
-      "V-20",
       "V-21",
-      "V-23",
-      "V-26",
+      "V-22",
       "K-16",
       "K-26",
-      "SOZ-24",
-      "SOZ-34",
-      "SOZ-37",
-      "KOG-37",
-      "KOG-55"
+      "K-29",
+      "KOG-61"
     ],
     "worksheet": {
       "title": "Mein Stress-Frühwarnsystem",
@@ -49306,19 +48011,12 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-13",
-      "V-16",
       "V-22",
-      "V-24",
-      "V-30",
       "K-16",
       "K-26",
-      "SOZ-14",
-      "SOZ-24",
-      "SOZ-34",
-      "KOG-37",
-      "KOG-55",
-      "KOG-58"
+      "K-29",
+      "KOG-61",
+      "SOZ-24"
     ],
     "worksheet": {
       "title": "Mein Energie-Akku",
@@ -49446,18 +48144,11 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-10",
-      "V-16",
-      "V-20",
       "V-21",
-      "V-23",
-      "V-28",
+      "V-24",
       "K-16",
-      "SOZ-14",
-      "SOZ-34",
-      "KOG-37",
-      "KOG-38",
-      "KOG-55"
+      "K-26",
+      "KOG-61"
     ],
     "worksheet": {
       "title": "Meine 5-4-3-2-1-Anker-Karte",
@@ -49580,19 +48271,11 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-16",
       "V-18",
-      "V-20",
-      "V-21",
-      "V-26",
+      "V-25",
       "K-16",
       "K-26",
-      "SOZ-24",
-      "SOZ-34",
-      "SOZ-37",
-      "KOG-37",
-      "KOG-55",
-      "KOG-58",
+      "K-29",
       "KOG-61"
     ],
     "worksheet": {
@@ -49724,19 +48407,13 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
+      "V-24",
       "V-25",
-      "V-27",
-      "V-28",
-      "V-31",
-      "K-16",
-      "K-22",
+      "K-23",
       "K-28",
-      "SOZ-22",
-      "SOZ-26",
-      "KOG-43",
-      "KOG-45",
-      "KOG-54",
-      "KOG-57"
+      "SOZ-30",
+      "SOZ-32",
+      "KOG-61"
     ],
     "worksheet": {
       "title": "Meine Ideen-Schmiede",
@@ -49905,19 +48582,13 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-25",
-      "V-27",
-      "V-28",
-      "V-31",
-      "K-16",
-      "K-22",
-      "SOZ-22",
-      "SOZ-26",
-      "SOZ-31",
-      "KOG-43",
-      "KOG-45",
-      "KOG-46",
-      "KOG-54"
+      "V-23",
+      "V-24",
+      "K-23",
+      "SOZ-18",
+      "SOZ-30",
+      "SOZ-32",
+      "KOG-56"
     ],
     "worksheet": {
       "title": "Meine selbstgewählte Grenze",
@@ -50062,18 +48733,12 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-25",
-      "V-27",
-      "V-28",
-      "V-31",
-      "V-32",
-      "K-16",
-      "K-22",
-      "SOZ-22",
-      "SOZ-26",
-      "KOG-43",
-      "KOG-45",
-      "KOG-54",
+      "V-24",
+      "K-23",
+      "K-30",
+      "SOZ-30",
+      "SOZ-32",
+      "KOG-53",
       "KOG-57"
     ],
     "worksheet": {
@@ -50220,20 +48885,13 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-18",
-      "V-21",
+      "V-23",
+      "V-24",
       "V-25",
-      "V-27",
-      "V-28",
-      "V-31",
-      "K-16",
-      "K-28",
-      "SOZ-26",
-      "SOZ-34",
-      "KOG-43",
-      "KOG-45",
-      "KOG-54",
-      "KOG-57"
+      "K-23",
+      "SOZ-30",
+      "SOZ-32",
+      "KOG-61"
     ],
     "worksheet": {
       "title": "Meine Anti-Block-Karte",
@@ -50383,18 +49041,12 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-16",
-      "V-20",
       "V-21",
-      "V-27",
-      "V-32",
-      "V-33",
-      "K-16",
+      "V-25",
+      "V-26",
       "K-26",
       "K-27",
-      "SOZ-9",
-      "SOZ-32",
-      "SOZ-37",
+      "SOZ-31",
       "SOZ-40",
       "SOZ-41"
     ],
@@ -50558,20 +49210,14 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-16",
-      "V-18",
       "V-27",
       "V-31",
-      "V-33",
-      "K-25",
+      "V-32",
       "K-27",
       "K-33",
-      "SOZ-27",
       "SOZ-32",
       "SOZ-35",
-      "SOZ-37",
-      "SOZ-39",
-      "KOG-55"
+      "SOZ-39"
     ],
     "worksheet": {
       "title": "Grenzen im Netz - mein Beitrag zum Kodex",
@@ -50725,20 +49371,14 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-16",
-      "V-20",
       "V-26",
       "V-27",
-      "V-33",
       "K-21",
       "K-27",
-      "SOZ-19",
-      "SOZ-31",
       "SOZ-32",
       "SOZ-37",
       "SOZ-38",
-      "SOZ-41",
-      "KOG-55"
+      "SOZ-41"
     ],
     "worksheet": {
       "title": "Stopp heißt Stopp - mein Grenz-Achtsamkeits-Protokoll",
@@ -50903,20 +49543,14 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-16",
-      "V-18",
       "V-23",
       "V-28",
-      "V-33",
       "K-26",
       "K-27",
-      "K-30",
-      "SOZ-26",
+      "K-31",
       "SOZ-32",
       "SOZ-34",
-      "SOZ-37",
-      "SOZ-41",
-      "KOG-58"
+      "SOZ-41"
     ],
     "worksheet": {
       "title": "Die Grenz-Verhandlung - meine Bilanz",
@@ -51103,19 +49737,12 @@ export const generated: Material[] = [
     ],
     "eldibGoals": [
       "V-26",
-      "V-27",
-      "V-28",
       "K-16",
       "K-21",
-      "K-28",
       "SOZ-15",
       "SOZ-26",
       "SOZ-27",
-      "SOZ-32",
-      "SOZ-34",
-      "SOZ-37",
-      "KOG-37",
-      "KOG-55"
+      "SOZ-32"
     ],
     "worksheet": {
       "title": "Meine Hilfe-Hand",
@@ -51268,20 +49895,13 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
+      "V-20",
       "V-26",
-      "V-27",
-      "V-30",
-      "K-16",
-      "K-20",
       "K-21",
-      "K-27",
       "SOZ-21",
-      "SOZ-26",
+      "SOZ-27",
       "SOZ-32",
-      "SOZ-34",
-      "SOZ-37",
-      "SOZ-38",
-      "KOG-37"
+      "SOZ-37"
     ],
     "language": "de",
     "source": "generated"
@@ -51350,20 +49970,13 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-12",
       "V-20",
       "V-21",
       "V-26",
       "K-16",
       "K-18",
-      "K-26",
       "SOZ-9",
-      "SOZ-21",
-      "SOZ-32",
-      "SOZ-34",
-      "KOG-2",
-      "KOG-37",
-      "KOG-38"
+      "SOZ-21"
     ],
     "worksheet": {
       "title": "Mein Stopp-Schild",
@@ -51504,19 +50117,12 @@ export const generated: Material[] = [
     ],
     "eldibGoals": [
       "V-18",
-      "V-26",
-      "V-27",
-      "V-30",
-      "K-16",
-      "K-21",
       "K-27",
       "K-28",
+      "SOZ-15",
       "SOZ-16",
       "SOZ-18",
-      "SOZ-23",
-      "SOZ-26",
-      "SOZ-32",
-      "SOZ-37"
+      "SOZ-23"
     ],
     "worksheet": {
       "title": "Meine Mitspiel-Ampel",
@@ -51656,17 +50262,12 @@ export const generated: Material[] = [
     ],
     "eldibGoals": [
       "V-16",
-      "V-20",
-      "V-21",
       "V-22",
       "V-24",
-      "K-16",
       "K-18",
+      "K-26",
       "SOZ-9",
-      "SOZ-34",
-      "KOG-37",
-      "KOG-55",
-      "KOG-58"
+      "KOG-61"
     ],
     "worksheet": {
       "title": "Mein Motivations-Motor",
@@ -51817,18 +50418,13 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-16",
-      "V-20",
-      "V-21",
       "V-22",
       "V-23",
       "V-24",
-      "V-28",
       "K-16",
+      "K-18",
       "SOZ-9",
-      "KOG-37",
-      "KOG-38",
-      "KOG-55"
+      "KOG-38"
     ],
     "worksheet": {
       "title": "Die Kraft vom kleinen Wort 'noch'",
@@ -51977,18 +50573,11 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-16",
-      "V-20",
-      "V-21",
+      "V-15",
       "V-22",
       "V-24",
-      "V-28",
-      "K-16",
       "K-18",
       "SOZ-9",
-      "KOG-37",
-      "KOG-55",
-      "KOG-58",
       "KOG-61"
     ],
     "worksheet": {
@@ -52127,18 +50716,13 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-16",
-      "V-20",
-      "V-21",
+      "V-14",
       "V-22",
       "V-24",
-      "V-30",
-      "K-16",
+      "K-18",
       "K-26",
       "SOZ-9",
-      "SOZ-34",
-      "KOG-37",
-      "KOG-55"
+      "SOZ-26"
     ],
     "worksheet": {
       "title": "Meine Erfolgs-Tankstelle",
@@ -52283,20 +50867,14 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "K-16",
-      "K-20",
-      "K-21",
-      "K-27",
-      "SOZ-15",
       "SOZ-21",
-      "SOZ-26",
+      "SOZ-32",
       "SOZ-34",
+      "SOZ-35",
       "SOZ-37",
-      "KOG-37",
-      "KOG-44",
-      "KOG-49",
-      "KOG-55",
-      "KOG-57"
+      "K-29",
+      "K-30",
+      "KOG-55"
     ],
     "worksheet": {
       "title": "Mein Gerechtigkeits-Forscherbogen",
@@ -52439,20 +51017,14 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "K-16",
-      "K-20",
-      "K-21",
-      "K-30",
-      "SOZ-15",
+      "SOZ-18",
       "SOZ-21",
-      "SOZ-26",
-      "SOZ-31",
+      "SOZ-32",
       "SOZ-34",
+      "SOZ-35",
       "SOZ-37",
-      "KOG-37",
-      "KOG-44",
-      "KOG-49",
-      "KOG-57"
+      "K-30",
+      "KOG-55"
     ],
     "worksheet": {
       "title": "Mein Verteilungs-Gipfel-Heft",
@@ -52630,19 +51202,13 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "K-16",
-      "K-20",
-      "K-21",
-      "K-27",
-      "K-28",
-      "SOZ-15",
       "SOZ-21",
-      "SOZ-26",
       "SOZ-32",
       "SOZ-34",
+      "SOZ-36",
       "SOZ-37",
-      "KOG-37",
-      "KOG-44",
+      "K-17",
+      "K-31",
       "KOG-55"
     ],
     "worksheet": {
@@ -52782,20 +51348,14 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "K-16",
-      "K-20",
-      "K-21",
-      "K-30",
-      "SOZ-15",
       "SOZ-21",
-      "SOZ-26",
-      "SOZ-31",
+      "SOZ-27",
+      "SOZ-32",
       "SOZ-34",
+      "SOZ-35",
       "SOZ-37",
-      "KOG-37",
-      "KOG-44",
-      "KOG-49",
-      "KOG-57"
+      "K-29",
+      "KOG-55"
     ],
     "worksheet": {
       "title": "Mein Regel-Detektiv-Bogen",
@@ -52934,19 +51494,14 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-12",
-      "V-16",
-      "V-25",
-      "V-27",
-      "K-16",
-      "K-25",
-      "K-27",
-      "SOZ-27",
-      "SOZ-32",
-      "KOG-37",
-      "KOG-48",
-      "KOG-55",
-      "KOG-58"
+      "KOG-41",
+      "KOG-47",
+      "KOG-51",
+      "KOG-57",
+      "KOG-58",
+      "K-30",
+      "K-33",
+      "SOZ-36"
     ],
     "worksheet": {
       "title": "Faktencheck: Echt oder erfunden?",
@@ -53121,19 +51676,14 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-1",
-      "V-3",
-      "V-16",
-      "V-25",
-      "V-30",
-      "K-16",
       "K-26",
-      "SOZ-9",
-      "KOG-13",
-      "KOG-37",
-      "KOG-48",
-      "KOG-55",
-      "KOG-58"
+      "K-29",
+      "K-30",
+      "KOG-38",
+      "KOG-49",
+      "SOZ-40",
+      "V-22",
+      "V-25"
     ],
     "worksheet": {
       "title": "Mein Stimmungs-Logbuch",
@@ -53279,20 +51829,14 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-9",
-      "V-16",
-      "V-27",
-      "K-3",
-      "K-16",
-      "K-20",
       "K-25",
-      "K-27",
-      "SOZ-16",
-      "SOZ-27",
-      "SOZ-32",
-      "KOG-37",
-      "KOG-48",
-      "KOG-55"
+      "K-29",
+      "K-30",
+      "K-31",
+      "K-35",
+      "KOG-38",
+      "SOZ-37",
+      "V-26"
     ],
     "worksheet": {
       "title": "Chat-Werkstatt und meine Notbremse",
@@ -53446,19 +51990,13 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-1",
-      "V-16",
+      "K-29",
+      "K-30",
+      "KOG-38",
+      "KOG-61",
+      "V-22",
       "V-25",
-      "V-30",
-      "K-16",
-      "K-26",
-      "SOZ-9",
-      "KOG-13",
-      "KOG-37",
-      "KOG-48",
-      "KOG-55",
-      "KOG-58",
-      "KOG-61"
+      "SOZ-40"
     ],
     "worksheet": {
       "title": "Aufmerksamkeits-Diebe und mein Stopp-Punkt",
@@ -53595,18 +52133,14 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-9",
-      "V-13",
-      "V-14",
-      "V-24",
-      "K-7",
-      "K-22",
-      "SOZ-15",
-      "SOZ-17",
-      "SOZ-29",
-      "SOZ-30",
+      "SOZ-21",
+      "SOZ-32",
       "SOZ-37",
-      "KOG-43"
+      "SOZ-41",
+      "K-26",
+      "K-27",
+      "K-29",
+      "V-24"
     ],
     "worksheet": {
       "title": "Mein Lach-Labor-Protokoll",
@@ -53747,17 +52281,13 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-18",
+      "SOZ-18",
+      "SOZ-23",
+      "SOZ-32",
+      "K-23",
+      "K-27",
       "V-23",
       "V-24",
-      "K-7",
-      "K-14",
-      "K-23",
-      "SOZ-17",
-      "SOZ-19",
-      "SOZ-23",
-      "SOZ-30",
-      "KOG-43",
       "KOG-53"
     ],
     "worksheet": {
@@ -53899,18 +52429,14 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-9",
-      "V-13",
-      "V-18",
-      "V-23",
-      "K-22",
-      "K-23",
-      "SOZ-16",
       "SOZ-18",
       "SOZ-27",
       "SOZ-30",
-      "KOG-43",
-      "KOG-47"
+      "SOZ-32",
+      "K-22",
+      "K-28",
+      "V-23",
+      "KOG-43"
     ],
     "worksheet": {
       "title": "Unser Spiel ohne Verlierer - Bauplan und Erfinder-Tagebuch",
@@ -54074,18 +52600,13 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-12",
-      "V-13",
-      "V-14",
-      "V-22",
-      "K-7",
-      "K-22",
       "SOZ-18",
       "SOZ-22",
-      "SOZ-29",
       "SOZ-30",
-      "KOG-43",
-      "KOG-48"
+      "V-12",
+      "V-13",
+      "V-22",
+      "KOG-43"
     ],
     "worksheet": {
       "title": "Mein Energizer-Anleiter-Heft",
@@ -54253,15 +52774,11 @@ export const generated: Material[] = [
       "V-1",
       "V-3",
       "V-6",
-      "V-14",
-      "K-9",
       "K-15",
       "K-16",
-      "K-26",
       "SOZ-9",
       "KOG-11",
-      "KOG-16",
-      "KOG-37"
+      "KOG-16"
     ],
     "worksheet": {
       "title": "Mein Koerper funkt mir was",
@@ -54400,16 +52917,12 @@ export const generated: Material[] = [
     "eldibGoals": [
       "V-1",
       "V-3",
-      "K-9",
       "K-15",
       "K-16",
       "K-23",
-      "K-26",
       "SOZ-9",
-      "SOZ-25",
       "KOG-2",
-      "KOG-23",
-      "KOG-37"
+      "KOG-23"
     ],
     "worksheet": {
       "title": "Mein Gefuehls-Wetter",
@@ -54550,18 +53063,13 @@ export const generated: Material[] = [
       3
     ],
     "eldibGoals": [
-      "V-1",
-      "V-14",
+      "K-9",
+      "K-13",
       "K-15",
       "K-18",
-      "K-19",
-      "SOZ-3",
       "SOZ-9",
-      "SOZ-25",
-      "SOZ-40",
-      "KOG-23",
-      "KOG-37",
-      "K-9"
+      "KOG-14",
+      "KOG-23"
     ],
     "worksheet": {
       "title": "Mein Ich-Koffer",
@@ -54727,14 +53235,10 @@ export const generated: Material[] = [
       "V-3",
       "V-11",
       "V-12",
-      "V-20",
-      "V-21",
-      "K-16",
-      "K-26",
       "SOZ-9",
+      "K-16",
       "KOG-2",
-      "KOG-16",
-      "KOG-37"
+      "KOG-16"
     ],
     "worksheet": {
       "title": "Mein Ruhig-Wild-Regler",
@@ -54884,17 +53388,13 @@ export const generated: Material[] = [
     ],
     "eldibGoals": [
       "K-9",
-      "K-10",
-      "K-12",
+      "K-11",
+      "K-13",
       "K-14",
-      "K-17",
-      "K-30",
-      "SOZ-15",
-      "SOZ-18",
-      "KOG-37",
-      "KOG-38",
-      "KOG-44",
-      "KOG-48"
+      "KOG-12",
+      "KOG-20",
+      "KOG-23",
+      "SOZ-18"
     ],
     "worksheet": {
       "title": "Treffer-Wörter: Genau gesagt statt 'das Ding da'",
@@ -55059,18 +53559,14 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "K-1",
       "K-9",
+      "K-11",
       "K-12",
-      "K-17",
-      "K-25",
-      "K-30",
-      "SOZ-5",
+      "K-13",
+      "K-14",
+      "K-15",
       "SOZ-15",
-      "SOZ-19",
-      "KOG-37",
-      "KOG-44",
-      "KOG-48"
+      "SOZ-19"
     ],
     "worksheet": {
       "title": "Mein Telefon-Spickzettel",
@@ -55198,17 +53694,13 @@ export const generated: Material[] = [
     ],
     "eldibGoals": [
       "K-9",
-      "K-10",
+      "K-11",
+      "K-13",
       "K-14",
-      "K-17",
-      "K-28",
-      "K-30",
-      "SOZ-16",
+      "KOG-12",
+      "KOG-20",
       "SOZ-18",
-      "SOZ-19",
-      "KOG-37",
-      "KOG-44",
-      "KOG-48"
+      "SOZ-19"
     ],
     "worksheet": {
       "title": "Erklär-Werkstatt: Bau es nach meinem Wort",
@@ -55355,17 +53847,13 @@ export const generated: Material[] = [
     ],
     "eldibGoals": [
       "K-9",
+      "K-11",
+      "K-13",
       "K-14",
       "K-17",
-      "K-20",
-      "K-21",
-      "K-27",
       "SOZ-15",
       "SOZ-17",
-      "SOZ-19",
-      "SOZ-32",
-      "SOZ-37",
-      "KOG-37"
+      "SOZ-19"
     ],
     "worksheet": {
       "title": "Ich docke an",
@@ -55505,18 +53993,14 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-9",
-      "V-13",
-      "V-14",
-      "V-22",
-      "K-7",
-      "K-14",
-      "SOZ-15",
+      "V-21",
+      "V-24",
+      "K-27",
       "SOZ-16",
+      "SOZ-18",
       "SOZ-22",
-      "SOZ-29",
-      "SOZ-30",
-      "KOG-43"
+      "SOZ-32",
+      "KOG-26"
     ],
     "worksheet": {
       "title": "Mein Vertrauens-Forscherblatt",
@@ -55651,18 +54135,14 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-9",
-      "V-13",
-      "V-18",
-      "K-7",
+      "V-24",
+      "K-12",
+      "K-13",
       "K-14",
-      "K-22",
-      "K-23",
+      "K-27",
       "SOZ-15",
-      "SOZ-17",
-      "SOZ-30",
-      "KOG-43",
-      "KOG-47"
+      "SOZ-25",
+      "SOZ-32"
     ],
     "worksheet": {
       "title": "Mein Brücken-Forscherblatt",
@@ -55810,18 +54290,14 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-9",
-      "V-13",
-      "V-18",
       "V-24",
-      "K-7",
-      "K-22",
-      "SOZ-17",
+      "V-25",
+      "K-27",
+      "K-28",
       "SOZ-18",
-      "SOZ-23",
-      "SOZ-30",
-      "SOZ-37",
-      "KOG-43"
+      "SOZ-26",
+      "SOZ-32",
+      "SOZ-37"
     ],
     "worksheet": {
       "title": "Mein Freundlichkeits-Heft",
@@ -55962,19 +54438,13 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-9",
-      "V-13",
-      "V-18",
       "V-24",
-      "K-7",
-      "K-22",
-      "K-23",
+      "K-13",
+      "K-27",
+      "K-28",
       "SOZ-15",
-      "SOZ-16",
-      "SOZ-17",
-      "SOZ-30",
-      "KOG-43",
-      "KOG-47"
+      "SOZ-25",
+      "SOZ-32"
     ],
     "worksheet": {
       "title": "Mein Beziehungsnetz-Blatt",
@@ -56128,20 +54598,14 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-13",
-      "V-22",
-      "V-24",
-      "K-7",
-      "K-14",
+      "V-23",
+      "V-30",
+      "K-12",
       "K-30",
-      "SOZ-15",
-      "SOZ-16",
       "SOZ-18",
       "SOZ-22",
       "SOZ-30",
-      "KOG-37",
-      "KOG-43",
-      "KOG-48"
+      "KOG-32"
     ],
     "worksheet": {
       "title": "Mein Werk-Logbuch",
@@ -56295,20 +54759,14 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-13",
-      "V-18",
       "V-22",
-      "K-7",
-      "K-14",
-      "K-22",
+      "V-23",
+      "K-28",
+      "K-29",
       "K-30",
-      "SOZ-15",
-      "SOZ-16",
       "SOZ-18",
-      "SOZ-22",
       "SOZ-30",
-      "KOG-43",
-      "KOG-48"
+      "SOZ-32"
     ],
     "worksheet": {
       "title": "Mein Koop-Kompass",
@@ -56476,20 +54934,13 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-9",
-      "V-13",
-      "V-14",
-      "V-22",
-      "K-7",
-      "K-14",
+      "V-21",
+      "V-23",
       "SOZ-15",
-      "SOZ-16",
       "SOZ-18",
-      "SOZ-22",
-      "SOZ-29",
+      "SOZ-19",
       "SOZ-30",
-      "KOG-43",
-      "KOG-48"
+      "SOZ-32"
     ],
     "worksheet": {
       "title": "Mein Stille-Werk-Heft",
@@ -56639,21 +55090,14 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-13",
-      "V-18",
-      "V-22",
-      "V-24",
-      "K-7",
-      "K-14",
+      "V-27",
+      "V-29",
+      "V-30",
       "K-22",
-      "SOZ-15",
-      "SOZ-17",
       "SOZ-18",
-      "SOZ-22",
+      "SOZ-27",
       "SOZ-30",
-      "SOZ-37",
-      "KOG-43",
-      "KOG-48"
+      "SOZ-35"
     ],
     "worksheet": {
       "title": "Mein Verantwortungs-Logbuch",
@@ -56807,18 +55251,12 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-18",
-      "V-20",
-      "V-23",
       "V-25",
-      "K-12",
-      "K-17",
-      "K-27",
-      "SOZ-18",
-      "SOZ-23",
-      "SOZ-30",
-      "SOZ-34",
-      "KOG-50"
+      "K-16",
+      "K-21",
+      "SOZ-32",
+      "SOZ-36",
+      "SOZ-37"
     ],
     "worksheet": {
       "title": "Körpersignale-Detektivblatt",
@@ -56966,18 +55404,13 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-18",
-      "V-20",
-      "V-23",
-      "V-28",
-      "K-17",
-      "K-27",
-      "SOZ-18",
-      "SOZ-23",
-      "SOZ-30",
+      "K-29",
+      "K-33",
       "SOZ-34",
+      "SOZ-36",
       "SOZ-37",
-      "KOG-50"
+      "KOG-38",
+      "KOG-59"
     ],
     "worksheet": {
       "title": "Der Ursachen-Check",
@@ -57123,18 +55556,13 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-9",
-      "V-13",
-      "V-18",
-      "V-24",
-      "K-7",
-      "K-22",
-      "SOZ-17",
-      "SOZ-18",
-      "SOZ-23",
-      "SOZ-30",
-      "SOZ-37",
-      "KOG-43"
+      "K-18",
+      "K-19",
+      "K-20",
+      "K-28",
+      "SOZ-26",
+      "SOZ-32",
+      "SOZ-33"
     ],
     "worksheet": {
       "title": "Mein Rückenwind-Blatt",
@@ -57267,18 +55695,13 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-18",
-      "V-20",
-      "V-23",
-      "V-28",
-      "K-17",
-      "K-27",
-      "SOZ-18",
-      "SOZ-23",
-      "SOZ-30",
-      "SOZ-34",
+      "K-20",
+      "K-33",
+      "SOZ-32",
+      "SOZ-35",
+      "SOZ-36",
       "SOZ-37",
-      "KOG-50"
+      "KOG-59"
     ],
     "worksheet": {
       "title": "Etiketten knacken",
@@ -57425,15 +55848,10 @@ export const generated: Material[] = [
     ],
     "eldibGoals": [
       "V-1",
+      "V-2",
       "V-3",
       "V-10",
       "V-11",
-      "V-20",
-      "K-1",
-      "K-16",
-      "SOZ-1",
-      "SOZ-14",
-      "SOZ-18",
       "KOG-1",
       "KOG-2"
     ],
@@ -57562,12 +55980,8 @@ export const generated: Material[] = [
       "V-1",
       "V-2",
       "V-3",
+      "V-5",
       "V-12",
-      "V-13",
-      "K-1",
-      "K-16",
-      "SOZ-1",
-      "SOZ-15",
       "KOG-1",
       "KOG-2",
       "KOG-11"
@@ -57692,15 +56106,10 @@ export const generated: Material[] = [
       "V-1",
       "V-3",
       "V-11",
-      "K-1",
       "K-16",
-      "K-26",
-      "SOZ-1",
       "SOZ-9",
-      "SOZ-15",
       "KOG-1",
-      "KOG-11",
-      "KOG-16"
+      "KOG-11"
     ],
     "worksheet": {
       "title": "Meine Körper-Wetterkarte",
@@ -57846,11 +56255,6 @@ export const generated: Material[] = [
       "V-4",
       "V-11",
       "V-12",
-      "V-20",
-      "K-1",
-      "SOZ-1",
-      "SOZ-5",
-      "SOZ-19",
       "SOZ-20",
       "KOG-1",
       "KOG-2"
@@ -58006,20 +56410,14 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-16",
       "V-18",
-      "V-21",
-      "K-16",
+      "V-28",
       "K-17",
-      "K-20",
       "K-21",
       "K-27",
-      "SOZ-26",
-      "SOZ-32",
-      "SOZ-34",
-      "SOZ-37",
-      "KOG-37",
-      "KOG-44"
+      "K-31",
+      "SOZ-27",
+      "SOZ-34"
     ],
     "worksheet": {
       "title": "Mein Schlichter-Pass",
@@ -58177,19 +56575,13 @@ export const generated: Material[] = [
     ],
     "eldibGoals": [
       "V-16",
-      "V-17",
       "V-18",
-      "K-3",
-      "K-16",
       "K-17",
       "K-21",
       "K-27",
-      "SOZ-26",
+      "K-31",
       "SOZ-27",
-      "SOZ-32",
-      "SOZ-34",
-      "KOG-38",
-      "KOG-48"
+      "SOZ-34"
     ],
     "worksheet": {
       "title": "Mein Friedens-Logbuch",
@@ -58335,20 +56727,14 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-10",
-      "V-16",
       "V-18",
-      "V-23",
       "K-16",
-      "K-17",
       "K-21",
-      "SOZ-26",
-      "SOZ-32",
+      "K-23",
       "SOZ-34",
       "SOZ-37",
-      "KOG-37",
-      "KOG-54",
-      "KOG-58"
+      "KOG-31",
+      "KOG-37"
     ],
     "worksheet": {
       "title": "Mein Geschichten-Heft",
@@ -58490,20 +56876,15 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-18",
-      "V-23",
+      "V-16",
       "V-28",
       "K-17",
-      "K-25",
-      "K-27",
-      "K-31",
-      "SOZ-15",
-      "SOZ-18",
-      "SOZ-23",
+      "K-29",
+      "SOZ-21",
+      "SOZ-27",
       "SOZ-34",
-      "KOG-38",
-      "KOG-44",
-      "KOG-54"
+      "SOZ-35",
+      "KOG-38"
     ],
     "worksheet": {
       "title": "Mein Forscher-Tagebuch",
@@ -58653,20 +57034,14 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-3",
-      "V-11",
-      "V-14",
-      "V-16",
-      "V-20",
+      "V-21",
+      "V-24",
       "K-16",
       "K-26",
-      "K-30",
-      "SOZ-9",
-      "SOZ-15",
-      "SOZ-30",
-      "KOG-11",
-      "KOG-16",
-      "KOG-20"
+      "K-29",
+      "SOZ-21",
+      "KOG-37",
+      "KOG-55"
     ],
     "worksheet": {
       "title": "Mein innerer Wetterbericht",
@@ -58843,20 +57218,14 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-11",
-      "V-14",
-      "V-16",
-      "V-20",
       "V-21",
+      "V-24",
+      "V-25",
+      "K-16",
       "K-26",
-      "K-30",
-      "K-31",
-      "SOZ-9",
-      "SOZ-15",
-      "SOZ-30",
-      "KOG-16",
-      "KOG-20",
-      "KOG-24"
+      "SOZ-21",
+      "KOG-37",
+      "KOG-41"
     ],
     "worksheet": {
       "title": "Mein Steh-auf-Plan",
@@ -58999,20 +57368,14 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-11",
-      "V-14",
-      "V-20",
-      "K-2",
-      "K-10",
-      "K-22",
-      "K-30",
-      "SOZ-9",
-      "SOZ-15",
-      "SOZ-22",
-      "SOZ-30",
-      "KOG-11",
-      "KOG-16",
-      "KOG-20"
+      "V-24",
+      "K-15",
+      "K-19",
+      "K-26",
+      "K-27",
+      "SOZ-12",
+      "SOZ-25",
+      "KOG-37"
     ],
     "worksheet": {
       "title": "Mein Halte-Netz",
@@ -59146,20 +57509,14 @@ export const generated: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-3",
-      "V-11",
-      "V-14",
-      "V-16",
       "V-20",
+      "V-21",
       "K-16",
       "K-26",
-      "K-30",
-      "SOZ-9",
-      "SOZ-15",
-      "SOZ-30",
-      "KOG-11",
-      "KOG-16",
-      "KOG-20"
+      "K-29",
+      "SOZ-21",
+      "KOG-37",
+      "KOG-55"
     ],
     "worksheet": {
       "title": "Mein Sorgen-Tresor",
@@ -59292,20 +57649,14 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-14",
       "V-22",
       "V-30",
-      "V-32",
       "K-18",
       "K-19",
       "K-26",
-      "K-33",
-      "SOZ-9",
-      "SOZ-25",
+      "K-34",
       "SOZ-35",
-      "SOZ-40",
-      "KOG-54",
-      "KOG-57"
+      "SOZ-40"
     ],
     "worksheet": {
       "title": "Mein Selbstwert-Tresor",
@@ -59456,20 +57807,14 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-21",
       "V-22",
-      "V-26",
       "V-33",
-      "K-18",
       "K-19",
       "K-26",
       "K-33",
-      "SOZ-9",
       "SOZ-31",
       "SOZ-35",
-      "KOG-37",
-      "KOG-54",
-      "KOG-57"
+      "KOG-58"
     ],
     "worksheet": {
       "title": "Mein Vergleichs-Stopp",
@@ -59619,19 +57964,13 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-21",
-      "V-23",
-      "V-28",
+      "V-22",
       "V-33",
-      "K-18",
       "K-19",
       "K-26",
-      "SOZ-9",
-      "SOZ-21",
+      "K-29",
       "SOZ-35",
-      "KOG-37",
       "KOG-41",
-      "KOG-57",
       "KOG-61"
     ],
     "worksheet": {
@@ -59774,20 +58113,14 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-20",
-      "V-21",
       "V-27",
       "V-30",
       "V-32",
       "K-18",
-      "K-26",
-      "K-33",
       "K-34",
-      "SOZ-9",
       "SOZ-32",
       "SOZ-35",
-      "SOZ-39",
-      "KOG-54"
+      "SOZ-39"
     ],
     "worksheet": {
       "title": "Mein Applaus-Check und mein Stand-Satz",
@@ -59935,20 +58268,14 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-17",
-      "V-20",
       "V-21",
-      "V-23",
+      "V-26",
       "V-27",
       "V-28",
-      "V-33",
-      "K-16",
       "K-26",
-      "SOZ-14",
       "SOZ-34",
       "SOZ-37",
-      "KOG-37",
-      "KOG-58"
+      "KOG-61"
     ],
     "worksheet": {
       "title": "Mein Pausentaste-Logbuch",
@@ -60116,20 +58443,14 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-1",
-      "V-16",
-      "V-20",
-      "V-21",
+      "V-22",
       "V-25",
-      "V-28",
-      "V-30",
-      "K-16",
+      "V-29",
+      "V-33",
       "K-26",
-      "SOZ-9",
-      "KOG-13",
       "KOG-37",
-      "KOG-48",
-      "KOG-55"
+      "KOG-55",
+      "KOG-62"
     ],
     "worksheet": {
       "title": "Mein Bildschirm-Tagebuch (Doomscroll-Detox)",
@@ -60302,20 +58623,14 @@ export const generated: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-9",
-      "V-16",
       "V-20",
-      "V-21",
+      "V-26",
       "V-27",
-      "K-3",
-      "K-16",
-      "K-20",
       "K-25",
       "K-27",
-      "SOZ-16",
-      "SOZ-27",
+      "K-31",
       "SOZ-32",
-      "KOG-37"
+      "SOZ-37"
     ],
     "worksheet": {
       "title": "Mein Wort-Bremse-Pass",
@@ -60480,19 +58795,13 @@ export const generated: Material[] = [
     ],
     "eldibGoals": [
       "V-10",
-      "V-17",
-      "V-20",
       "V-21",
-      "V-23",
-      "V-28",
       "V-29",
-      "K-16",
+      "V-33",
       "K-26",
-      "SOZ-14",
       "SOZ-34",
-      "KOG-37",
-      "KOG-55",
-      "KOG-58"
+      "KOG-45",
+      "KOG-61"
     ],
     "worksheet": {
       "title": "Mein Wett-Tagebuch (Jetzt oder später?)",
@@ -60652,16 +58961,13 @@ export const generated: Material[] = [
       3
     ],
     "eldibGoals": [
-      "V-1",
-      "V-3",
-      "K-10",
+      "V-5",
       "K-16",
       "K-21",
-      "K-26",
-      "SOZ-5",
       "SOZ-9",
-      "SOZ-37",
-      "KOG-2",
+      "SOZ-10",
+      "SOZ-20",
+      "KOG-5",
       "KOG-14"
     ],
     "language": "de",
@@ -60731,16 +59037,13 @@ export const generated: Material[] = [
       3
     ],
     "eldibGoals": [
-      "V-1",
-      "V-18",
-      "V-20",
+      "V-3",
       "V-21",
       "K-16",
       "K-26",
       "SOZ-9",
-      "SOZ-25",
       "KOG-2",
-      "KOG-27"
+      "KOG-11"
     ],
     "language": "de",
     "source": "generated"
@@ -60809,17 +59112,13 @@ export const generated: Material[] = [
       3
     ],
     "eldibGoals": [
-      "V-1",
       "V-6",
-      "V-18",
       "V-21",
       "K-16",
       "K-26",
-      "K-28",
       "SOZ-9",
-      "SOZ-26",
-      "KOG-2",
-      "KOG-37"
+      "SOZ-14",
+      "KOG-2"
     ],
     "language": "de",
     "source": "generated"
@@ -60888,18 +59187,14 @@ export const generated: Material[] = [
       3
     ],
     "eldibGoals": [
-      "V-1",
       "V-5",
-      "V-18",
-      "K-17",
+      "K-16",
       "K-21",
       "K-28",
-      "SOZ-5",
       "SOZ-15",
+      "SOZ-20",
       "SOZ-26",
-      "SOZ-37",
-      "KOG-2",
-      "KOG-37"
+      "KOG-12"
     ],
     "language": "de",
     "source": "generated"
@@ -60974,18 +59269,14 @@ export const generated: Material[] = [
       3
     ],
     "eldibGoals": [
-      "V-1",
-      "V-2",
-      "V-3",
-      "V-5",
       "V-11",
-      "K-12",
-      "K-14",
-      "SOZ-3",
-      "SOZ-16",
-      "SOZ-21",
+      "K-13",
+      "K-15",
+      "K-16",
+      "SOZ-9",
+      "SOZ-24",
       "KOG-9",
-      "KOG-22"
+      "KOG-14"
     ],
     "worksheet": {
       "title": "Mein Innen-Außen-Fenster",
@@ -61131,19 +59422,14 @@ export const generated: Material[] = [
       3
     ],
     "eldibGoals": [
-      "V-1",
-      "V-2",
-      "V-3",
-      "V-7",
       "V-11",
-      "K-10",
-      "K-12",
-      "SOZ-3",
-      "SOZ-7",
-      "SOZ-16",
+      "K-13",
+      "K-15",
+      "K-18",
       "SOZ-21",
+      "SOZ-26",
       "KOG-9",
-      "KOG-22"
+      "KOG-14"
     ],
     "worksheet": {
       "title": "Mein Das-kann-ich-Plakat",
@@ -61283,18 +59569,13 @@ export const generated: Material[] = [
       3
     ],
     "eldibGoals": [
-      "V-1",
-      "V-2",
-      "V-3",
       "V-11",
-      "K-12",
-      "K-14",
-      "SOZ-3",
-      "SOZ-13",
-      "SOZ-16",
-      "SOZ-21",
+      "K-13",
+      "K-15",
+      "SOZ-9",
+      "SOZ-24",
       "KOG-9",
-      "KOG-22"
+      "KOG-14"
     ],
     "worksheet": {
       "title": "Mein Wurzeln-und-Flügel-Baum",
@@ -61439,19 +59720,14 @@ export const generated: Material[] = [
       3
     ],
     "eldibGoals": [
-      "V-1",
-      "V-2",
-      "V-3",
-      "K-1",
-      "K-12",
+      "V-11",
+      "K-13",
       "K-14",
-      "SOZ-3",
-      "SOZ-13",
+      "K-20",
+      "SOZ-15",
       "SOZ-16",
       "SOZ-21",
-      "SOZ-29",
-      "KOG-9",
-      "KOG-22"
+      "KOG-9"
     ],
     "worksheet": {
       "title": "Meine Ich-bin-einzigartig-Karte",

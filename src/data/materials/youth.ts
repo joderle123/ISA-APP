@@ -1,8 +1,6 @@
 import type { Material } from '../../types/material'
 
-// Youth / secondary (ES) materials — AI-generated, adolescent-focused set.
-// Auto-written by scripts/integrate-youth.mjs — do not edit by hand.
-// Each is a draft for human review before classroom use.
+// Auto-written — do not edit by hand.
 export const youth: Material[] = [
   {
     "id": "mein-werte-kompass-wofuer-ich-eigentlich-stehe",
@@ -73,16 +71,13 @@ export const youth: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-27",
-      "V-30",
       "V-32",
-      "V-33",
       "K-33",
       "K-34",
       "SOZ-35",
+      "SOZ-39",
       "SOZ-40",
-      "KOG-55",
-      "KOG-58"
+      "KOG-55"
     ],
     "worksheet": {
       "title": "Mein Werte-Kompass",
@@ -265,12 +260,9 @@ export const youth: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-23",
-      "V-24",
       "V-33",
       "K-19",
       "K-20",
-      "SOZ-28",
       "SOZ-31",
       "SOZ-40",
       "KOG-55",
@@ -444,15 +436,11 @@ export const youth: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-21",
       "V-22",
       "V-33",
       "K-26",
-      "K-32",
-      "SOZ-9",
       "SOZ-40",
-      "KOG-37",
-      "KOG-58",
+      "KOG-59",
       "KOG-61"
     ],
     "worksheet": {
@@ -643,12 +631,10 @@ export const youth: Material[] = [
       4
     ],
     "eldibGoals": [
-      "V-14",
       "K-18",
       "K-19",
       "K-20",
-      "K-32",
-      "SOZ-9",
+      "K-28",
       "SOZ-26",
       "SOZ-32",
       "KOG-58"
@@ -825,14 +811,11 @@ export const youth: Material[] = [
     ],
     "eldibGoals": [
       "V-22",
-      "V-24",
-      "V-27",
-      "V-31",
+      "K-30",
+      "SOZ-31",
       "KOG-49",
       "KOG-55",
-      "KOG-58",
-      "SOZ-33",
-      "K-30"
+      "KOG-58"
     ],
     "worksheet": {
       "title": "Spiegel vs. Feed - mein ehrlicher Check",
@@ -1008,13 +991,10 @@ export const youth: Material[] = [
     "eldibGoals": [
       "V-22",
       "V-23",
-      "V-26",
-      "V-29",
       "V-33",
-      "KOG-50",
-      "KOG-54",
+      "K-26",
       "KOG-59",
-      "K-31"
+      "KOG-61"
     ],
     "worksheet": {
       "title": "Meine innere Stimme - fair statt fies",
@@ -1187,14 +1167,12 @@ export const youth: Material[] = [
     ],
     "eldibGoals": [
       "V-22",
-      "V-25",
-      "V-28",
-      "KOG-49",
-      "KOG-52",
-      "KOG-57",
-      "SOZ-30",
+      "V-24",
+      "K-26",
       "SOZ-35",
-      "K-28"
+      "KOG-37",
+      "KOG-47",
+      "KOG-58"
     ],
     "worksheet": {
       "title": "Pubertät-Faktencheck - mein Stationenheft",
@@ -1361,15 +1339,12 @@ export const youth: Material[] = [
     ],
     "eldibGoals": [
       "V-22",
-      "V-27",
-      "V-30",
-      "V-32",
+      "V-26",
+      "K-29",
       "SOZ-31",
       "SOZ-36",
-      "SOZ-39",
-      "KOG-56",
-      "K-29",
-      "K-33"
+      "SOZ-37",
+      "KOG-49"
     ],
     "worksheet": {
       "title": "Mein Körper im Wandel - mein Survival-Plan",
@@ -1544,13 +1519,11 @@ export const youth: Material[] = [
     ],
     "eldibGoals": [
       "V-26",
-      "V-33",
       "K-33",
-      "K-34",
-      "SOZ-31",
       "SOZ-32",
+      "SOZ-35",
       "SOZ-37",
-      "KOG-56",
+      "KOG-55",
       "KOG-58"
     ],
     "worksheet": {
@@ -1729,15 +1702,12 @@ export const youth: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-27",
       "V-28",
-      "V-33",
+      "V-30",
       "K-34",
-      "SOZ-32",
       "SOZ-34",
       "SOZ-37",
       "SOZ-39",
-      "KOG-56",
       "KOG-62"
     ],
     "worksheet": {
@@ -1929,14 +1899,11 @@ export const youth: Material[] = [
     ],
     "eldibGoals": [
       "V-22",
-      "V-25",
-      "V-33",
       "K-18",
       "K-19",
       "K-24",
       "SOZ-24",
       "SOZ-26",
-      "KOG-58",
       "KOG-61"
     ],
     "worksheet": {
@@ -2113,12 +2080,9 @@ export const youth: Material[] = [
     "eldibGoals": [
       "V-22",
       "V-28",
-      "V-32",
-      "V-33",
+      "V-29",
       "K-24",
       "K-26",
-      "SOZ-34",
-      "KOG-58",
       "KOG-61"
     ],
     "worksheet": {
@@ -2307,12 +2271,9 @@ export const youth: Material[] = [
     "eldibGoals": [
       "V-22",
       "V-25",
-      "V-26",
-      "V-33",
       "K-26",
-      "SOZ-9",
+      "K-29",
       "KOG-49",
-      "KOG-58",
       "KOG-61"
     ],
     "worksheet": {
@@ -2514,13 +2475,10 @@ export const youth: Material[] = [
     "eldibGoals": [
       "V-22",
       "V-25",
-      "V-26",
+      "V-29",
       "K-26",
-      "K-30",
-      "KOG-49",
-      "KOG-50",
-      "KOG-52",
-      "KOG-57"
+      "K-29",
+      "KOG-49"
     ],
     "worksheet": {
       "title": "Mein realistischer Lernplan",
@@ -2720,12 +2678,10 @@ export const youth: Material[] = [
     "eldibGoals": [
       "V-22",
       "V-25",
-      "V-26",
+      "V-29",
       "K-26",
-      "K-30",
-      "SOZ-30",
+      "KOG-37",
       "KOG-49",
-      "KOG-57",
       "KOG-58"
     ],
     "worksheet": {
@@ -2922,13 +2878,10 @@ export const youth: Material[] = [
     "eldibGoals": [
       "V-22",
       "V-25",
-      "V-26",
-      "V-33",
+      "V-29",
       "K-26",
-      "K-30",
-      "KOG-49",
-      "KOG-57",
-      "KOG-58"
+      "SOZ-40",
+      "KOG-49"
     ],
     "worksheet": {
       "title": "Mein Akku-Check",
@@ -3120,14 +3073,11 @@ export const youth: Material[] = [
     ],
     "eldibGoals": [
       "V-22",
-      "V-29",
-      "V-33",
+      "V-25",
       "K-26",
-      "K-31",
-      "SOZ-38",
-      "SOZ-40",
+      "K-29",
       "KOG-49",
-      "KOG-58"
+      "KOG-61"
     ],
     "worksheet": {
       "title": "Angst verstehen - mein Werkzeugkasten",
@@ -3306,12 +3256,10 @@ export const youth: Material[] = [
     "eldibGoals": [
       "V-22",
       "V-23",
+      "V-24",
       "V-25",
-      "V-33",
       "K-26",
-      "SOZ-26",
-      "KOG-49",
-      "KOG-58"
+      "KOG-49"
     ],
     "worksheet": {
       "title": "Meine Anti-Panik-Toolbox",
@@ -3472,14 +3420,10 @@ export const youth: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-26",
       "V-28",
-      "V-33",
       "K-28",
       "K-31",
-      "SOZ-26",
-      "SOZ-38",
-      "SOZ-40",
+      "SOZ-37",
       "KOG-49",
       "KOG-58"
     ],
@@ -3657,16 +3601,13 @@ export const youth: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-27",
+      "V-28",
       "V-30",
-      "V-31",
-      "V-33",
-      "SOZ-26",
-      "SOZ-36",
-      "SOZ-40",
+      "K-28",
+      "K-34",
+      "SOZ-34",
       "KOG-49",
-      "KOG-58",
-      "KOG-61"
+      "KOG-62"
     ],
     "worksheet": {
       "title": "Anti-Stigma-Kampagne - mein Projektbegleiter",
@@ -3833,12 +3774,10 @@ export const youth: Material[] = [
     "eldibGoals": [
       "V-22",
       "V-24",
-      "V-25",
       "V-26",
-      "V-33",
+      "K-26",
+      "K-29",
       "KOG-49",
-      "KOG-55",
-      "KOG-58",
       "KOG-61"
     ],
     "worksheet": {
@@ -4033,11 +3972,10 @@ export const youth: Material[] = [
       "V-22",
       "V-25",
       "V-26",
-      "V-28",
-      "V-33",
+      "K-26",
+      "K-29",
       "SOZ-30",
       "KOG-49",
-      "KOG-55",
       "KOG-61"
     ],
     "worksheet": {
@@ -4217,15 +4155,12 @@ export const youth: Material[] = [
       5
     ],
     "eldibGoals": [
+      "V-21",
       "V-22",
       "V-25",
       "V-26",
-      "V-27",
-      "V-33",
-      "SOZ-32",
-      "SOZ-37",
-      "KOG-49",
-      "KOG-58",
+      "K-26",
+      "K-29",
       "KOG-61"
     ],
     "worksheet": {
@@ -4434,15 +4369,12 @@ export const youth: Material[] = [
       5
     ],
     "eldibGoals": [
+      "V-21",
       "V-22",
+      "V-25",
       "V-26",
-      "V-27",
-      "V-33",
-      "SOZ-32",
-      "SOZ-39",
+      "K-29",
       "KOG-49",
-      "KOG-50",
-      "KOG-58",
       "KOG-61"
     ],
     "worksheet": {
@@ -4646,14 +4578,12 @@ export const youth: Material[] = [
       5
     ],
     "eldibGoals": [
+      "V-3",
       "V-22",
-      "V-23",
-      "V-25",
-      "V-33",
+      "V-24",
       "K-26",
-      "SOZ-26",
-      "KOG-49",
-      "KOG-58"
+      "KOG-2",
+      "KOG-49"
     ],
     "worksheet": {
       "title": "Achtsamkeit im Alltag - raus aus dem Autopiloten",
@@ -4839,13 +4769,12 @@ export const youth: Material[] = [
     ],
     "eldibGoals": [
       "V-22",
-      "V-24",
-      "V-29",
-      "V-33",
+      "K-18",
       "K-26",
-      "SOZ-30",
+      "K-29",
+      "SOZ-40",
       "KOG-49",
-      "KOG-58"
+      "KOG-61"
     ],
     "worksheet": {
       "title": "Selbstfürsorge - gut zu mir selbst sein",
@@ -5029,13 +4958,11 @@ export const youth: Material[] = [
     "eldibGoals": [
       "V-22",
       "V-29",
-      "V-32",
-      "V-33",
       "K-26",
       "SOZ-30",
+      "SOZ-40",
       "KOG-49",
-      "KOG-57",
-      "KOG-58"
+      "KOG-61"
     ],
     "worksheet": {
       "title": "Überforderung erkennen und entlasten - meine Stress-Landkarte",
@@ -5215,15 +5142,14 @@ export const youth: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-27",
       "V-30",
-      "V-33",
+      "V-32",
+      "K-17",
       "K-31",
       "SOZ-30",
-      "SOZ-36",
+      "SOZ-32",
       "SOZ-40",
       "KOG-49",
-      "KOG-58",
       "KOG-61"
     ],
     "worksheet": {
@@ -5395,12 +5321,10 @@ export const youth: Material[] = [
     ],
     "eldibGoals": [
       "V-26",
-      "V-32",
-      "V-33",
       "K-26",
       "K-28",
-      "SOZ-26",
       "SOZ-37",
+      "SOZ-41",
       "KOG-58",
       "KOG-61"
     ],
@@ -5600,13 +5524,11 @@ export const youth: Material[] = [
     "eldibGoals": [
       "V-22",
       "V-27",
-      "V-32",
       "K-28",
       "SOZ-26",
       "SOZ-34",
       "KOG-49",
-      "KOG-56",
-      "KOG-61"
+      "KOG-62"
     ],
     "worksheet": {
       "title": "Mein Notfallplan – für den Fall, dass es kippt",
@@ -5796,14 +5718,11 @@ export const youth: Material[] = [
     ],
     "eldibGoals": [
       "V-22",
-      "V-23",
-      "V-33",
+      "V-24",
       "K-26",
-      "K-33",
+      "K-29",
       "SOZ-37",
-      "SOZ-40",
-      "KOG-55",
-      "KOG-58",
+      "KOG-38",
       "KOG-61"
     ],
     "worksheet": {
@@ -5980,14 +5899,12 @@ export const youth: Material[] = [
     ],
     "eldibGoals": [
       "V-22",
-      "V-33",
       "K-18",
+      "K-19",
       "K-26",
-      "K-33",
-      "SOZ-37",
+      "K-29",
       "SOZ-40",
-      "KOG-55",
-      "KOG-58"
+      "KOG-61"
     ],
     "worksheet": {
       "title": "Innerer Trainer statt innerer Kritiker",
@@ -6151,15 +6068,11 @@ export const youth: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-23",
       "V-24",
-      "V-33",
       "K-26",
       "K-28",
-      "K-33",
       "SOZ-37",
-      "KOG-49",
-      "KOG-57",
+      "KOG-58",
       "KOG-59"
     ],
     "worksheet": {
@@ -6332,13 +6245,11 @@ export const youth: Material[] = [
     ],
     "eldibGoals": [
       "V-24",
-      "V-33",
+      "K-15",
       "K-23",
       "K-26",
-      "K-35",
-      "SOZ-37",
-      "KOG-49",
-      "KOG-54"
+      "SOZ-24",
+      "KOG-49"
     ],
     "worksheet": {
       "title": "Mein Erinnerungsobjekt - Planung und Bedeutung",
@@ -6500,15 +6411,12 @@ export const youth: Material[] = [
     ],
     "eldibGoals": [
       "V-24",
-      "V-28",
-      "V-33",
       "K-26",
       "K-27",
       "SOZ-37",
       "SOZ-40",
-      "KOG-49",
-      "KOG-57",
-      "KOG-59"
+      "SOZ-41",
+      "KOG-61"
     ],
     "worksheet": {
       "title": "Einsamkeit verstehen - du bist damit nicht allein",
@@ -6684,15 +6592,12 @@ export const youth: Material[] = [
     ],
     "eldibGoals": [
       "V-24",
-      "V-27",
-      "V-33",
+      "V-30",
       "K-27",
       "K-28",
       "SOZ-32",
       "SOZ-37",
-      "SOZ-40",
-      "SOZ-41",
-      "KOG-49"
+      "SOZ-41"
     ],
     "worksheet": {
       "title": "Zugehörigkeit gestalten - meine Rolle im Wir",
@@ -6868,16 +6773,14 @@ export const youth: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-24",
-      "V-28",
+      "V-20",
       "V-31",
       "K-30",
-      "K-32",
-      "SOZ-33",
+      "K-33",
+      "SOZ-35",
       "SOZ-38",
-      "SOZ-41",
-      "KOG-57",
-      "KOG-60"
+      "SOZ-39",
+      "KOG-59"
     ],
     "worksheet": {
       "title": "Echte Loyalität oder nur Mitlaufen?",
@@ -7041,14 +6944,12 @@ export const youth: Material[] = [
     ],
     "eldibGoals": [
       "V-24",
-      "V-28",
-      "V-31",
-      "K-26",
+      "K-20",
       "K-30",
       "SOZ-31",
-      "SOZ-33",
+      "SOZ-35",
       "SOZ-38",
-      "KOG-57"
+      "SOZ-41"
     ],
     "worksheet": {
       "title": "Was eine Freundschaft wirklich trägt",
@@ -7229,15 +7130,12 @@ export const youth: Material[] = [
     ],
     "eldibGoals": [
       "V-25",
+      "V-26",
       "V-28",
       "K-29",
-      "K-30",
-      "K-32",
+      "K-31",
       "SOZ-32",
-      "SOZ-35",
-      "SOZ-39",
-      "KOG-54",
-      "KOG-60"
+      "SOZ-34"
     ],
     "worksheet": {
       "title": "Fair streiten statt Recht behalten",
@@ -7421,16 +7319,13 @@ export const youth: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-25",
       "V-28",
-      "K-29",
-      "K-30",
+      "K-31",
+      "K-32",
       "SOZ-32",
-      "SOZ-35",
+      "SOZ-34",
       "SOZ-36",
-      "SOZ-39",
-      "KOG-54",
-      "KOG-60"
+      "SOZ-37"
     ],
     "worksheet": {
       "title": "Schlichten statt Partei ergreifen",
@@ -7607,12 +7502,11 @@ export const youth: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-23",
-      "V-33",
       "K-16",
       "K-26",
-      "K-33",
-      "KOG-54",
+      "K-30",
+      "SOZ-37",
+      "KOG-55",
       "KOG-57",
       "KOG-58"
     ],
@@ -7778,14 +7672,13 @@ export const youth: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-18",
+      "V-25",
       "V-26",
-      "K-17",
       "K-27",
+      "K-31",
       "SOZ-32",
-      "SOZ-34",
       "SOZ-37",
-      "KOG-54"
+      "SOZ-41"
     ],
     "worksheet": {
       "title": "Respektvoll daten - Interesse zeigen und Grenzen achten",
@@ -7965,13 +7858,12 @@ export const youth: Material[] = [
     ],
     "eldibGoals": [
       "V-22",
-      "V-23",
-      "V-33",
       "K-26",
       "K-28",
+      "K-29",
+      "SOZ-26",
       "SOZ-37",
-      "KOG-49",
-      "KOG-57"
+      "KOG-49"
     ],
     "worksheet": {
       "title": "Liebeskummer - es tut weh, aber es geht vorbei",
@@ -8142,14 +8034,13 @@ export const youth: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-18",
-      "V-23",
-      "V-33",
+      "V-22",
       "K-18",
+      "K-19",
       "K-26",
-      "K-33",
-      "KOG-57",
-      "KOG-58"
+      "SOZ-40",
+      "KOG-58",
+      "KOG-61"
     ],
     "worksheet": {
       "title": "Mit Zurückweisung umgehen - dein Wert bleibt",
@@ -8322,16 +8213,14 @@ export const youth: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-24",
-      "V-31",
-      "V-32",
-      "V-33",
-      "K-26",
-      "K-32",
+      "K-33",
       "SOZ-32",
+      "SOZ-35",
+      "SOZ-36",
       "SOZ-37",
       "SOZ-41",
-      "KOG-57"
+      "KOG-55",
+      "KOG-58"
     ],
     "worksheet": {
       "title": "Green Flags, Red Flags",
@@ -8498,15 +8387,13 @@ export const youth: Material[] = [
     ],
     "eldibGoals": [
       "V-26",
-      "V-31",
-      "V-33",
-      "K-26",
-      "K-32",
       "K-33",
-      "SOZ-32",
+      "SOZ-35",
+      "SOZ-36",
       "SOZ-37",
-      "KOG-57",
-      "KOG-58"
+      "KOG-55",
+      "KOG-58",
+      "KOG-59"
     ],
     "worksheet": {
       "title": "So sieht Liebe nicht aus",
@@ -8675,14 +8562,12 @@ export const youth: Material[] = [
     "eldibGoals": [
       "V-21",
       "V-26",
-      "V-31",
-      "V-33",
       "K-26",
-      "K-30",
-      "SOZ-32",
+      "K-29",
+      "SOZ-35",
       "SOZ-37",
-      "KOG-57",
-      "KOG-60"
+      "KOG-55",
+      "KOG-59"
     ],
     "worksheet": {
       "title": "Eifersucht verstehen",
@@ -8860,16 +8745,14 @@ export const youth: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-26",
       "V-31",
-      "V-32",
-      "V-33",
-      "K-32",
-      "K-34",
+      "K-33",
       "SOZ-32",
+      "SOZ-35",
       "SOZ-39",
+      "KOG-55",
       "KOG-57",
-      "KOG-62"
+      "KOG-59"
     ],
     "worksheet": {
       "title": "\"Wo bist du gerade?\" – Digitale Grenzen in Beziehungen",
@@ -9055,15 +8938,13 @@ export const youth: Material[] = [
       5
     ],
     "eldibGoals": [
+      "V-25",
       "V-26",
-      "V-29",
-      "V-33",
-      "K-17",
       "K-27",
       "SOZ-32",
-      "SOZ-34",
+      "SOZ-35",
       "SOZ-37",
-      "KOG-54",
+      "SOZ-39",
       "KOG-58"
     ],
     "worksheet": {
@@ -9244,14 +9125,13 @@ export const youth: Material[] = [
       5
     ],
     "eldibGoals": [
+      "V-25",
       "V-26",
-      "V-29",
-      "V-32",
       "K-27",
-      "K-33",
       "SOZ-32",
       "SOZ-37",
-      "KOG-54",
+      "SOZ-39",
+      "KOG-55",
       "KOG-58"
     ],
     "worksheet": {
@@ -9423,14 +9303,12 @@ export const youth: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-22",
-      "V-26",
       "V-29",
-      "K-27",
       "K-33",
-      "SOZ-37",
-      "KOG-50",
-      "KOG-54",
+      "SOZ-39",
+      "KOG-47",
+      "KOG-51",
+      "KOG-55",
       "KOG-58"
     ],
     "worksheet": {
@@ -9608,15 +9486,13 @@ export const youth: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-22",
-      "V-23",
-      "V-33",
-      "K-27",
       "K-33",
-      "SOZ-34",
+      "K-34",
+      "SOZ-32",
+      "SOZ-35",
       "SOZ-37",
       "SOZ-41",
-      "KOG-54",
+      "KOG-55",
       "KOG-58"
     ],
     "worksheet": {
@@ -9790,16 +9666,14 @@ export const youth: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-23",
+      "V-25",
       "V-28",
-      "V-32",
-      "V-33",
-      "K-25",
+      "K-29",
       "K-30",
+      "K-31",
       "SOZ-34",
       "SOZ-37",
-      "SOZ-38",
-      "KOG-57"
+      "SOZ-38"
     ],
     "worksheet": {
       "title": "Mehr Freiheit aushandeln",
@@ -10003,16 +9877,13 @@ export const youth: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-24",
-      "V-32",
-      "V-33",
-      "K-26",
       "K-33",
       "K-34",
       "SOZ-31",
       "SOZ-37",
+      "SOZ-39",
       "SOZ-40",
-      "KOG-54"
+      "KOG-55"
     ],
     "worksheet": {
       "title": "Loslassen und dazugehören",
@@ -10196,12 +10067,10 @@ export const youth: Material[] = [
       "V-20",
       "V-21",
       "V-28",
-      "V-33",
       "K-26",
       "K-31",
       "SOZ-34",
       "SOZ-37",
-      "KOG-58",
       "KOG-61"
     ],
     "worksheet": {
@@ -10395,8 +10264,6 @@ export const youth: Material[] = [
       "V-22",
       "V-27",
       "V-28",
-      "V-32",
-      "V-33",
       "K-30",
       "K-31",
       "SOZ-34",
@@ -10601,15 +10468,13 @@ export const youth: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-26",
-      "K-17",
       "K-21",
       "K-27",
       "K-28",
       "K-29",
+      "SOZ-32",
       "SOZ-33",
-      "SOZ-37",
-      "KOG-58"
+      "SOZ-37"
     ],
     "worksheet": {
       "title": "Aktives Zuhören - vom Hinhören zum Verstehen",
@@ -10785,14 +10650,14 @@ export const youth: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-18",
-      "V-26",
+      "V-25",
       "V-28",
-      "K-17",
       "K-26",
       "K-27",
+      "K-29",
+      "K-31",
       "SOZ-34",
-      "KOG-58"
+      "SOZ-37"
     ],
     "worksheet": {
       "title": "Die Ich-Botschaft - sagen, was du brauchst, ohne anzugreifen",
@@ -10960,15 +10825,13 @@ export const youth: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-23",
-      "V-26",
-      "V-33",
       "K-20",
-      "K-33",
+      "K-21",
       "SOZ-31",
+      "SOZ-36",
       "SOZ-37",
       "SOZ-38",
-      "KOG-58",
+      "KOG-38",
       "KOG-59"
     ],
     "worksheet": {
@@ -11133,15 +10996,13 @@ export const youth: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-26",
-      "V-30",
       "K-21",
       "K-26",
       "K-28",
       "SOZ-32",
       "SOZ-37",
       "SOZ-41",
-      "KOG-58"
+      "KOG-38"
     ],
     "worksheet": {
       "title": "Empathie trainieren - erkennen, mitfühlen, handeln",
@@ -11316,16 +11177,14 @@ export const youth: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-22",
-      "V-28",
-      "V-30",
-      "V-33",
+      "V-18",
+      "V-25",
+      "V-26",
       "K-26",
-      "K-30",
-      "K-33",
-      "SOZ-34",
+      "SOZ-31",
       "SOZ-37",
-      "KOG-58"
+      "SOZ-39",
+      "V-30"
     ],
     "worksheet": {
       "title": "Nein sagen, ohne das Gesicht zu verlieren",
@@ -11507,15 +11366,12 @@ export const youth: Material[] = [
     ],
     "eldibGoals": [
       "V-22",
-      "V-24",
-      "V-30",
-      "V-33",
-      "K-26",
-      "K-33",
+      "K-25",
+      "K-29",
       "SOZ-31",
+      "SOZ-36",
       "SOZ-37",
-      "KOG-54",
-      "KOG-58"
+      "KOG-59"
     ],
     "worksheet": {
       "title": "Der unsichtbare Sog",
@@ -11718,16 +11574,13 @@ export const youth: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-22",
-      "V-30",
-      "V-33",
-      "K-30",
-      "K-33",
+      "V-25",
+      "V-28",
       "SOZ-34",
+      "SOZ-36",
       "SOZ-37",
       "SOZ-39",
-      "SOZ-41",
-      "KOG-58"
+      "K-29"
     ],
     "worksheet": {
       "title": "Vom Zuschauer zum Helfer",
@@ -11911,16 +11764,14 @@ export const youth: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-22",
       "V-30",
-      "V-33",
-      "K-30",
-      "K-35",
+      "V-32",
+      "SOZ-27",
+      "SOZ-30",
       "SOZ-34",
       "SOZ-37",
-      "SOZ-39",
       "SOZ-41",
-      "KOG-61"
+      "K-35"
     ],
     "worksheet": {
       "title": "Projekt Zivilcourage – mein Logbuch",
@@ -12110,14 +11961,11 @@ export const youth: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-23",
-      "V-24",
-      "V-33",
+      "V-22",
       "K-19",
       "K-26",
       "SOZ-35",
       "SOZ-40",
-      "KOG-57",
       "KOG-58"
     ],
     "worksheet": {
@@ -12287,14 +12135,12 @@ export const youth: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-23",
       "V-24",
-      "V-33",
       "K-19",
       "K-26",
       "SOZ-31",
       "SOZ-40",
-      "KOG-57"
+      "KOG-58"
     ],
     "worksheet": {
       "title": "Echt oder gefiltert? - mein Blick auf Filter und Aussehen",
@@ -12458,15 +12304,12 @@ export const youth: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-21",
-      "V-29",
-      "V-33",
       "K-18",
+      "K-19",
       "K-26",
-      "K-32",
+      "SOZ-33",
       "SOZ-40",
-      "KOG-55",
-      "KOG-58"
+      "KOG-55"
     ],
     "worksheet": {
       "title": "Likes sind keine Liebe - mein Selbstwert gehört mir",
@@ -12636,14 +12479,11 @@ export const youth: Material[] = [
     ],
     "eldibGoals": [
       "V-21",
-      "V-23",
-      "V-29",
       "V-32",
-      "V-33",
       "K-26",
+      "SOZ-36",
       "SOZ-40",
-      "KOG-50",
-      "KOG-58"
+      "KOG-59"
     ],
     "worksheet": {
       "title": "FOMO und der Dopamin-Loop - ich entscheide, nicht die App",
@@ -12813,16 +12653,13 @@ export const youth: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-22",
+      "V-25",
+      "V-26",
       "V-27",
-      "V-28",
-      "V-33",
       "K-26",
-      "K-28",
       "SOZ-37",
       "SOZ-41",
-      "KOG-58",
-      "KOG-61"
+      "KOG-59"
     ],
     "worksheet": {
       "title": "Wenn das Handy nie ausgeht",
@@ -13016,15 +12853,12 @@ export const youth: Material[] = [
     ],
     "eldibGoals": [
       "V-22",
-      "V-26",
+      "V-25",
       "V-27",
-      "V-33",
-      "K-26",
-      "K-33",
+      "K-25",
+      "SOZ-34",
       "SOZ-37",
-      "SOZ-39",
-      "KOG-54",
-      "KOG-58"
+      "SOZ-39"
     ],
     "worksheet": {
       "title": "Ein Screenshot, tausend Augen",
@@ -13215,13 +13049,11 @@ export const youth: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-22",
       "V-26",
-      "V-33",
-      "K-30",
+      "K-31",
       "K-33",
       "K-34",
-      "SOZ-31",
+      "SOZ-35",
       "SOZ-37",
       "SOZ-39",
       "KOG-58"
@@ -13425,16 +13257,13 @@ export const youth: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-22",
       "V-30",
-      "V-33",
       "K-23",
-      "K-30",
+      "K-31",
       "K-34",
+      "SOZ-30",
       "SOZ-37",
-      "SOZ-39",
-      "SOZ-41",
-      "KOG-61"
+      "SOZ-41"
     ],
     "worksheet": {
       "title": "Gegen den Hass posten – mein Projekt-Logbuch",
@@ -13646,15 +13475,12 @@ export const youth: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-22",
-      "V-23",
-      "V-29",
-      "V-33",
-      "K-26",
+      "V-25",
+      "V-26",
+      "V-27",
       "K-29",
       "SOZ-37",
-      "SOZ-40",
-      "KOG-57",
+      "SOZ-39",
       "KOG-58"
     ],
     "worksheet": {
@@ -13822,14 +13648,12 @@ export const youth: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-23",
-      "V-30",
-      "V-33",
-      "K-26",
+      "V-25",
+      "V-27",
+      "V-31",
       "K-29",
       "SOZ-34",
-      "SOZ-37",
-      "KOG-57"
+      "SOZ-37"
     ],
     "worksheet": {
       "title": "Wem gehört das Bild? - Bildrechte und Verantwortung",
@@ -13990,15 +13814,11 @@ export const youth: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-23",
-      "V-29",
+      "V-27",
       "V-32",
-      "V-33",
-      "K-26",
       "K-29",
+      "SOZ-36",
       "SOZ-40",
-      "KOG-50",
-      "KOG-57",
       "KOG-58"
     ],
     "worksheet": {
@@ -14164,16 +13984,12 @@ export const youth: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-22",
-      "V-23",
+      "V-27",
       "V-30",
-      "V-33",
-      "K-26",
-      "K-33",
+      "K-19",
       "SOZ-35",
-      "SOZ-40",
-      "KOG-57",
-      "KOG-58"
+      "SOZ-36",
+      "SOZ-40"
     ],
     "worksheet": {
       "title": "Wer bin ich online? - meine digitale Identität gestalten",
@@ -14333,14 +14149,10 @@ export const youth: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-24",
-      "V-28",
-      "V-33",
-      "K-25",
-      "K-30",
+      "V-27",
+      "K-33",
       "SOZ-36",
-      "SOZ-39",
-      "KOG-50",
+      "KOG-41",
       "KOG-57",
       "KOG-58"
     ],
@@ -14507,15 +14319,12 @@ export const youth: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-23",
-      "V-24",
-      "V-33",
-      "K-25",
+      "K-33",
       "SOZ-31",
+      "SOZ-32",
       "SOZ-36",
-      "SOZ-38",
       "KOG-57",
-      "KOG-60"
+      "KOG-58"
     ],
     "worksheet": {
       "title": "Gefangen in der Blase? - Meinen Feed durchschauen",
@@ -14684,15 +14493,12 @@ export const youth: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-20",
       "V-21",
-      "V-29",
+      "V-22",
       "V-32",
-      "V-33",
       "K-26",
       "SOZ-40",
-      "KOG-55",
-      "KOG-60"
+      "KOG-59"
     ],
     "worksheet": {
       "title": "Wann kippt es? - Steuere ich, oder werde ich gesteuert?",
@@ -14870,12 +14676,9 @@ export const youth: Material[] = [
       "V-21",
       "V-22",
       "V-25",
-      "V-29",
       "V-32",
-      "V-33",
       "K-26",
-      "KOG-50",
-      "KOG-60"
+      "SOZ-40"
     ],
     "worksheet": {
       "title": "Mein digitales Selbstexperiment - eine Woche bewusst",
@@ -15060,15 +14863,13 @@ export const youth: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-21",
+      "V-25",
       "V-27",
-      "V-32",
-      "V-33",
-      "K-26",
+      "K-33",
+      "SOZ-35",
       "SOZ-37",
-      "KOG-56",
       "KOG-57",
-      "KOG-62"
+      "KOG-58"
     ],
     "worksheet": {
       "title": "Alkohol - Fakten, Mythen und das, was im Notfall zählt",
@@ -15234,13 +15035,11 @@ export const youth: Material[] = [
     "eldibGoals": [
       "V-20",
       "V-26",
-      "V-27",
-      "V-32",
       "K-26",
+      "K-31",
       "SOZ-32",
-      "SOZ-37",
-      "KOG-57",
-      "KOG-59"
+      "SOZ-39",
+      "SOZ-41"
     ],
     "worksheet": {
       "title": "Gruppendruck und Alkohol - mein Nein-Sag-Werkzeugkasten",
@@ -15395,16 +15194,13 @@ export const youth: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-21",
-      "V-24",
-      "V-29",
-      "V-32",
-      "K-26",
+      "V-25",
+      "V-27",
+      "K-33",
       "SOZ-35",
-      "KOG-56",
+      "KOG-55",
       "KOG-57",
-      "KOG-60",
-      "KOG-62"
+      "KOG-58"
     ],
     "worksheet": {
       "title": "Vapes unter der Lupe - Fakten, Tricks und der Suchtkreislauf",
@@ -15571,15 +15367,13 @@ export const youth: Material[] = [
     ],
     "eldibGoals": [
       "V-22",
-      "V-27",
       "V-30",
       "K-23",
-      "K-30",
+      "K-32",
       "SOZ-30",
-      "SOZ-35",
-      "KOG-48",
-      "KOG-57",
-      "KOG-62"
+      "SOZ-41",
+      "KOG-49",
+      "KOG-57"
     ],
     "worksheet": {
       "title": "Projekt-Logbuch: Unsere Gegen-Kampagne 'Rauchfrei & dampffrei'",
@@ -15758,15 +15552,12 @@ export const youth: Material[] = [
     ],
     "eldibGoals": [
       "V-27",
-      "V-32",
-      "V-33",
       "K-33",
       "SOZ-35",
       "SOZ-36",
-      "KOG-49",
       "KOG-57",
       "KOG-58",
-      "KOG-60"
+      "KOG-59"
     ],
     "worksheet": {
       "title": "Cannabis: Fakten statt Mythen - mein Wissens-Check",
@@ -15928,16 +15719,13 @@ export const youth: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-21",
+      "V-22",
       "V-27",
       "V-29",
-      "V-32",
-      "K-26",
+      "K-29",
       "K-33",
-      "SOZ-37",
-      "KOG-49",
       "KOG-58",
-      "KOG-60"
+      "KOG-59"
     ],
     "worksheet": {
       "title": "Vom Probieren zur Gewohnheit - mein Selbst-Check",
@@ -16103,13 +15891,11 @@ export const youth: Material[] = [
     "eldibGoals": [
       "V-20",
       "V-26",
-      "V-30",
+      "K-26",
       "K-27",
-      "K-28",
-      "SOZ-32",
+      "K-31",
       "SOZ-39",
-      "SOZ-41",
-      "KOG-57"
+      "SOZ-41"
     ],
     "worksheet": {
       "title": "Mein Nein-Repertoire bei Gruppendruck",
@@ -16277,12 +16063,9 @@ export const youth: Material[] = [
       "V-20",
       "V-27",
       "V-28",
-      "V-32",
       "SOZ-34",
-      "SOZ-36",
-      "KOG-49",
       "KOG-58",
-      "KOG-60"
+      "KOG-61"
     ],
     "worksheet": {
       "title": "Die entscheidende Sekunde - mein Entscheidungs-Plan",
@@ -16459,16 +16242,13 @@ export const youth: Material[] = [
       5
     ],
     "eldibGoals": [
+      "V-25",
       "V-26",
-      "V-27",
       "K-21",
-      "K-33",
-      "SOZ-31",
       "SOZ-32",
       "SOZ-37",
-      "KOG-54",
-      "KOG-57",
-      "KOG-60"
+      "KOG-55",
+      "KOG-59"
     ],
     "worksheet": {
       "title": "Alltagsrassismus & Mikroaggressionen - genauer hinhören",
@@ -16635,13 +16415,11 @@ export const youth: Material[] = [
       "V-27",
       "V-28",
       "V-30",
-      "V-32",
       "K-28",
       "K-34",
       "SOZ-34",
       "SOZ-39",
-      "SOZ-41",
-      "KOG-61"
+      "SOZ-41"
     ],
     "worksheet": {
       "title": "Nicht wegschauen - meine Projektmappe Zivilcourage",
@@ -16806,14 +16584,12 @@ export const youth: Material[] = [
     "eldibGoals": [
       "V-23",
       "V-24",
-      "V-33",
       "K-33",
       "SOZ-31",
       "SOZ-36",
       "SOZ-37",
-      "KOG-54",
-      "KOG-57",
-      "KOG-58"
+      "KOG-55",
+      "KOG-59"
     ],
     "worksheet": {
       "title": "Schubladen im Kopf - Vorurteile erkennen und öffnen",
@@ -16975,16 +16751,13 @@ export const youth: Material[] = [
       5
     ],
     "eldibGoals": [
+      "K-19",
       "K-20",
       "K-27",
-      "K-32",
       "SOZ-31",
       "SOZ-32",
       "SOZ-33",
-      "SOZ-37",
-      "SOZ-40",
-      "KOG-54",
-      "KOG-55"
+      "SOZ-37"
     ],
     "worksheet": {
       "title": "Mein Eisberg - mehr als das, was man sieht",
@@ -17137,15 +16910,12 @@ export const youth: Material[] = [
     ],
     "eldibGoals": [
       "V-26",
+      "V-28",
       "V-30",
-      "V-31",
-      "K-30",
-      "K-34",
-      "SOZ-32",
+      "K-25",
+      "SOZ-37",
       "SOZ-38",
-      "SOZ-39",
-      "SOZ-41",
-      "KOG-57"
+      "SOZ-41"
     ],
     "worksheet": {
       "title": "Niemand handelt allein - meine Rolle beim Mobbing",
@@ -17311,14 +17081,12 @@ export const youth: Material[] = [
     "eldibGoals": [
       "V-27",
       "V-30",
-      "V-31",
-      "K-30",
+      "K-23",
       "K-34",
       "K-35",
-      "SOZ-33",
       "SOZ-38",
-      "SOZ-40",
-      "KOG-55"
+      "SOZ-41",
+      "KOG-49"
     ],
     "worksheet": {
       "title": "Klasse gegen Cybermobbing - mein Projekt-Begleiter",
@@ -17483,15 +17251,13 @@ export const youth: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-22",
-      "V-28",
       "V-31",
+      "V-32",
       "K-29",
-      "K-31",
-      "SOZ-33",
+      "SOZ-30",
+      "SOZ-32",
       "SOZ-40",
-      "KOG-55",
-      "KOG-57"
+      "KOG-62"
     ],
     "worksheet": {
       "title": "Demokratie ist mehr als Wählen - wo meine Stimme zählt",
@@ -17653,16 +17419,13 @@ export const youth: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-24",
-      "V-28",
       "V-31",
-      "K-29",
-      "K-31",
-      "K-32",
-      "SOZ-33",
-      "SOZ-38",
-      "KOG-56",
-      "KOG-57"
+      "K-33",
+      "K-34",
+      "SOZ-32",
+      "SOZ-35",
+      "SOZ-39",
+      "KOG-55"
     ],
     "worksheet": {
       "title": "Werte unter Druck - was zählt für mich?",
@@ -17827,15 +17590,13 @@ export const youth: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-22",
       "V-24",
-      "V-29",
-      "K-31",
       "K-32",
-      "SOZ-33",
+      "K-33",
+      "SOZ-32",
       "KOG-55",
-      "KOG-56",
-      "KOG-57"
+      "KOG-57",
+      "KOG-58"
     ],
     "worksheet": {
       "title": "Werbe-Detektiv:in - die Tricks durchschauen",
@@ -18004,14 +17765,12 @@ export const youth: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-22",
-      "V-23",
+      "V-25",
       "V-29",
-      "V-32",
-      "K-31",
-      "SOZ-30",
-      "KOG-50",
-      "KOG-55",
+      "K-29",
+      "KOG-45",
+      "KOG-52",
+      "KOG-56",
       "KOG-58"
     ],
     "worksheet": {
@@ -18181,15 +17940,12 @@ export const youth: Material[] = [
       5
     ],
     "eldibGoals": [
-      "V-22",
-      "V-25",
-      "V-27",
-      "V-33",
+      "K-19",
       "K-29",
       "SOZ-31",
+      "SOZ-40",
       "KOG-49",
-      "KOG-56",
-      "KOG-60"
+      "KOG-61"
     ],
     "worksheet": {
       "title": "Stärken, Werte, Wege - mein Profil",
@@ -18368,14 +18124,11 @@ export const youth: Material[] = [
     ],
     "eldibGoals": [
       "V-22",
-      "V-23",
       "V-25",
-      "V-32",
+      "V-29",
       "K-29",
-      "SOZ-31",
-      "KOG-50",
+      "SOZ-40",
       "KOG-58",
-      "KOG-60",
       "KOG-61"
     ],
     "worksheet": {
