@@ -8524,22 +8524,72 @@
     ],
     "worksheet": {
       "title": "Mäi Liewensfloss",
-      "intro": "Zeichne dein Leben als Fluss – mit ruhigen und wilden Stellen. Nur für dich.",
+      "intro": "Dein Leben ist wie ein Fluss – mal ruhig, mal mit wilden Stromschnellen. Halte hier deinen ganz eigenen Weg fest. Du entscheidest selbst, was du aufschreibst und was du teilst.",
       "blocks": [
         {
+          "kind": "heading",
+          "text": "1. Mein Fluss"
+        },
+        {
+          "kind": "instruction",
+          "text": "Zeichne deinen Lebensfluss von der Quelle bis heute. Markiere ruhige Stellen, Quellen (schöne Momente) und Stromschnellen (Schwierigkeiten)."
+        },
+        {
           "kind": "box",
-          "text": "Mein Lebensfluss (zeichne ihn) mit wichtigen Stationen",
+          "text": "Mein Lebensfluss mit wichtigen Stationen",
           "lines": 8
         },
         {
-          "kind": "question",
-          "text": "Eine Station, die mich stark gemacht hat:",
-          "lines": 2
+          "kind": "heading",
+          "text": "2. Wichtige Stationen"
+        },
+        {
+          "kind": "table",
+          "text": "Trage drei Stationen deines Flusses ein:",
+          "lines": 3,
+          "items": [
+            "Was ist passiert?",
+            "Ruhig oder wild?",
+            "Was hat es mit mir gemacht?"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "3. Mein Rückblick"
         },
         {
           "kind": "question",
-          "text": "Worauf ich mich im nächsten Abschnitt freue:",
-          "lines": 2
+          "text": "Eine schwierige Stelle, die ich gemeistert habe – und was sie mir gezeigt hat:",
+          "lines": 3
+        },
+        {
+          "kind": "question",
+          "text": "Diese Menschen, Stärken oder Erfahrungen haben mich stark gemacht:",
+          "lines": 3
+        },
+        {
+          "kind": "scale",
+          "text": "Wenn ich auf meinen Fluss bisher schaue, fühle ich mich:",
+          "items": [
+            "gar nicht stolz",
+            "ein bisschen stolz",
+            "stolz",
+            "sehr stolz"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "4. Mein Weiterfließen"
+        },
+        {
+          "kind": "question",
+          "text": "Worauf ich mich im nächsten Abschnitt meines Flusses freue:",
+          "lines": 3
+        },
+        {
+          "kind": "question",
+          "text": "Ein Wunsch oder Vorsatz, den ich mitnehme:",
+          "lines": 3
         }
       ]
     },
@@ -8800,21 +8850,56 @@
     ],
     "worksheet": {
       "title": "Mäi Smiley-Kalenner",
-      "intro": "Wie geht es dir heute? Male jeden Tag dein Smiley.",
+      "intro": "Wie geht es dir heute? Male jeden Tag dein Smiley. Jedes Gefühl ist okay – und morgen kann es schon wieder anders sein!",
       "blocks": [
         {
+          "kind": "heading",
+          "text": "So fühle ich mich heute"
+        },
+        {
           "kind": "instruction",
-          "text": "Male für jeden Tag das passende Gesicht und ein kleines Bild dazu."
+          "text": "Male zuerst dein Gesicht für heute in das große Feld."
+        },
+        {
+          "kind": "box",
+          "text": "Mein Gesicht heute",
+          "lines": 4
+        },
+        {
+          "kind": "heading",
+          "text": "Meine Woche"
+        },
+        {
+          "kind": "instruction",
+          "text": "Male jeden Tag das passende Smiley und ein kleines Bild, warum."
         },
         {
           "kind": "table",
-          "text": "Meine Woche",
           "lines": 7,
           "items": [
             "Tag",
             "Mein Smiley",
             "Warum?"
           ]
+        },
+        {
+          "kind": "heading",
+          "text": "Mein Rückblick"
+        },
+        {
+          "kind": "scale",
+          "text": "Wie war meine Woche insgesamt?",
+          "items": [
+            "Sonne",
+            "Wolke",
+            "Regen",
+            "Gewitter"
+          ]
+        },
+        {
+          "kind": "question",
+          "text": "Mein schönster Moment in dieser Woche war:",
+          "lines": 2
         }
       ]
     },
@@ -9066,21 +9151,66 @@
     ],
     "worksheet": {
       "title": "Mäi Vision-Board – Begleetblat",
-      "intro": "Plane dein Board und deinen ersten Schritt.",
+      "intro": "Auf deinem Vision-Board wird sichtbar, wohin du möchtest. Plane hier deine Bilder, deine Ziele und deinen ersten Schritt. Große Träume erreicht man Schritt für Schritt.",
       "blocks": [
         {
+          "kind": "heading",
+          "text": "1. Meine Träume sammeln"
+        },
+        {
+          "kind": "table",
+          "text": "Sammle Wünsche aus verschiedenen Bereichen:",
+          "lines": 4,
+          "items": [
+            "Bereich (Schule, Hobby, Beziehungen, Werte)",
+            "Mein Wunsch / Ziel"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "2. Mein wichtigstes Ziel"
+        },
+        {
           "kind": "question",
-          "text": "Drei Wünsche/Ziele, die auf mein Board kommen:",
+          "text": "Das Ziel, das mir gerade am wichtigsten ist – und warum:",
           "lines": 3
         },
         {
           "kind": "question",
-          "text": "Mein erster kleiner Schritt zu einem davon:",
-          "lines": 2
+          "text": "Wie würde es sich anfühlen, wenn ich es erreicht habe?",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "3. Mein erster Schritt"
         },
         {
           "kind": "question",
-          "text": "Was/wer hilft mir dabei?",
+          "text": "Ein erster kleiner Schritt, den ich diese Woche tun kann:",
+          "lines": 3
+        },
+        {
+          "kind": "question",
+          "text": "Was oder wer hilft mir dabei?",
+          "lines": 2
+        },
+        {
+          "kind": "scale",
+          "text": "Wie zuversichtlich bin ich, dass ich diesen Schritt schaffe?",
+          "items": [
+            "gar nicht",
+            "ein bisschen",
+            "ziemlich",
+            "sehr"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "4. Mein Board"
+        },
+        {
+          "kind": "question",
+          "text": "Diese Bilder, Farben oder Worte kommen auf mein Board:",
           "lines": 2
         }
       ]
@@ -9217,22 +9347,73 @@
     ],
     "worksheet": {
       "title": "Eise Klassevertrag – Gruppenarbeit",
-      "intro": "Welche Regeln machen unsere Klasse fair und sicher?",
+      "intro": "Wie wollen wir in unserer Klasse miteinander umgehen, damit sich alle sicher und wohlfühlen? Überlegt das gemeinsam und schlagt eure Regeln vor.",
       "blocks": [
         {
+          "kind": "heading",
+          "text": "1. So wollen wir uns fühlen"
+        },
+        {
           "kind": "question",
-          "text": "So wollen wir miteinander umgehen:",
+          "text": "In unserer Klasse soll sich jede/r so fühlen:",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "2. Unsere Regeln"
+        },
+        {
+          "kind": "instruction",
+          "text": "Schreibt positive, klare Regeln auf (z. B. „Wir lachen niemanden aus\")."
+        },
+        {
+          "kind": "question",
+          "text": "Unsere Regeln für ein faires Miteinander:",
+          "lines": 4
+        },
+        {
+          "kind": "checklist",
+          "text": "Das gehört für uns auf jeden Fall dazu:",
+          "items": [
+            "Wir lachen niemanden aus",
+            "Wir schließen niemanden aus",
+            "Wir holen Hilfe, wenn jemand fertiggemacht wird",
+            "Wir behandeln alle gleich gut",
+            "Wir sagen Stopp, wenn etwas zu weit geht"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "3. Wenn eine Regel gebrochen wird"
+        },
+        {
+          "kind": "question",
+          "text": "Das tun wir, wenn jemand ausgegrenzt oder geärgert wird:",
           "lines": 3
         },
         {
           "kind": "question",
-          "text": "Das tun wir, wenn jemand ausgegrenzt/geärgert wird:",
+          "text": "Bei diesen Erwachsenen können wir Hilfe holen:",
           "lines": 2
         },
         {
+          "kind": "heading",
+          "text": "4. Unsere wichtigste Regel"
+        },
+        {
           "kind": "question",
-          "text": "Unsere wichtigste Regel:",
-          "lines": 1
+          "text": "Wenn wir nur EINE Regel wählen dürften, dann diese:",
+          "lines": 2
+        },
+        {
+          "kind": "scale",
+          "text": "Wie gut können wir uns alle an unsere Regeln halten?",
+          "items": [
+            "grün",
+            "gelb",
+            "orange",
+            "rot"
+          ]
         }
       ]
     },
@@ -9424,23 +9605,75 @@
     ],
     "worksheet": {
       "title": "Werbe-Detektiv",
-      "intro": "Durchschaue die Tricks der Werbung.",
+      "intro": "Werbung ist überall – manchmal ganz versteckt. Werde zum Detektiv und durchschaue ihre Tricks: Was will man dir verkaufen, und brauchst du das wirklich?",
       "blocks": [
+        {
+          "kind": "heading",
+          "text": "1. Wo steckt Werbung?"
+        },
+        {
+          "kind": "question",
+          "text": "Hier ist mir heute Werbung begegnet (TV, Apps, Influencer, Spiele …):",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "2. Die Tricks"
+        },
         {
           "kind": "checklist",
           "text": "Diese Tricks habe ich erkannt:",
           "items": [
-            "Schöne Bilder/cooles Leben",
-            "Versprechen (\"macht dich besser\")",
+            "Schöne Bilder / cooles Leben",
+            "Versprechen (\"macht dich besser/beliebter\")",
             "Alle haben es / Gruppendruck",
-            "Rabatt-/Zeitdruck",
-            "Versteckte Werbung / Influencer"
+            "Rabatt- und Zeitdruck (\"nur heute!\")",
+            "Versteckte Werbung / Influencer",
+            "Gefühle (Angst, Sehnsucht, Spaß)"
           ]
         },
         {
+          "kind": "table",
+          "text": "Untersuche ein Werbebeispiel genauer:",
+          "lines": 3,
+          "items": [
+            "Was wird verkauft?",
+            "Welcher Trick?",
+            "Ist das echt oder übertrieben?"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "3. Kritisch nachfragen"
+        },
+        {
           "kind": "question",
-          "text": "Meine kritische Frage vor dem Kaufen:",
+          "text": "Brauche ich das wirklich – oder will die Werbung nur, dass ich es kaufe?",
+          "lines": 3
+        },
+        {
+          "kind": "question",
+          "text": "Wer verdient eigentlich daran?",
           "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "4. Meine Erkenntnis"
+        },
+        {
+          "kind": "question",
+          "text": "Das nehme ich mir vor dem nächsten Kaufen vor:",
+          "lines": 3
+        },
+        {
+          "kind": "scale",
+          "text": "Wie sicher kann ich jetzt Werbung durchschauen?",
+          "items": [
+            "gar nicht sicher",
+            "ein bisschen",
+            "ziemlich sicher",
+            "sehr sicher"
+          ]
         }
       ]
     },
@@ -9827,8 +10060,12 @@
     ],
     "worksheet": {
       "title": "Mäin Helden-Avatar",
-      "intro": "Erfinde deinen Helden – mit Superkräften, die du wirklich hast.",
+      "intro": "Echte Superkräfte sind oft Charakterstärken – geduldig, mutig oder hilfsbereit zu sein. Erfinde deinen Helden mit Superkräften, die du wirklich hast!",
       "blocks": [
+        {
+          "kind": "heading",
+          "text": "1. Mein Held / meine Heldin"
+        },
         {
           "kind": "box",
           "text": "So sieht mein Held/meine Heldin aus (zeichne):",
@@ -9836,17 +10073,45 @@
         },
         {
           "kind": "question",
-          "text": "Name meines Helden:",
+          "text": "So heißt mein Held / meine Heldin:",
           "lines": 1
         },
         {
-          "kind": "question",
-          "text": "Meine 2-3 Superkräfte (echte Stärken):",
-          "lines": 2
+          "kind": "heading",
+          "text": "2. Meine Superkräfte"
         },
         {
           "kind": "question",
-          "text": "Wofür setze ich sie ein?",
+          "text": "Meine 2–3 Superkräfte (echte Stärken von mir):",
+          "lines": 3
+        },
+        {
+          "kind": "question",
+          "text": "Eine Situation, in der ich diese Stärke schon gezeigt habe:",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "3. Meine Kräfte einsetzen"
+        },
+        {
+          "kind": "question",
+          "text": "Wofür setze ich meine Superkräfte ein? Wem helfe ich damit?",
+          "lines": 3
+        },
+        {
+          "kind": "scale",
+          "text": "Wie gut kenne ich meine eigenen Stärken jetzt?",
+          "items": [
+            "gar nicht",
+            "ein bisschen",
+            "ziemlich gut",
+            "sehr gut"
+          ]
+        },
+        {
+          "kind": "question",
+          "text": "Eine Superkraft, die ich noch trainieren möchte:",
           "lines": 2
         }
       ]
@@ -10170,21 +10435,58 @@
     ],
     "worksheet": {
       "title": "Mäi Stäerke-Schëld",
-      "intro": "Dein Schild für schwere Tage. Fülle die Felder.",
+      "intro": "Das ist dein Schild für schwere Tage. Fülle die Felder aus und gestalte es bunt. An einem schlechten Tag schaust du es an - es erinnert dich an deine Kraft.",
       "blocks": [
         {
+          "kind": "heading",
+          "text": "1. Mein Schild gestalten"
+        },
+        {
           "kind": "box",
-          "text": "Mein Schild (gestalte es) – Wappen meiner Stärken",
-          "lines": 6
+          "text": "Zeichne dein Wappen: ein Zeichen, das zu deiner Stärke passt (z. B. ein Löwe, ein Stern, ein Fels).",
+          "lines": 7
+        },
+        {
+          "kind": "heading",
+          "text": "2. Was mich stark macht"
         },
         {
           "kind": "question",
-          "text": "Meine Stärken:",
+          "text": "Drei Dinge, die ich gut kann (meine Stärken):",
+          "lines": 3
+        },
+        {
+          "kind": "question",
+          "text": "Mein Mutmach-Satz, den ich mir an schweren Tagen sage:",
           "lines": 2
         },
         {
           "kind": "question",
-          "text": "Mein Mutmach-Satz / Menschen, die zu mir halten:",
+          "text": "Menschen, die zu mir halten und denen ich vertrauen kann:",
+          "lines": 3
+        },
+        {
+          "kind": "question",
+          "text": "Was mir guttut, wenn ich traurig oder gestresst bin:",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "3. Mein Schild nutzen"
+        },
+        {
+          "kind": "scale",
+          "text": "Wie sehr hilft mir mein Schild, wenn ich es anschaue?",
+          "items": [
+            "gar nicht",
+            "ein bisschen",
+            "ziemlich",
+            "sehr"
+          ]
+        },
+        {
+          "kind": "question",
+          "text": "Wo bewahre ich mein Schild auf, damit ich es schnell finde?",
           "lines": 2
         }
       ]
@@ -10321,27 +10623,61 @@
     ],
     "worksheet": {
       "title": "Mäi Sträit-Comic",
-      "intro": "Zeichne den Streit – und ein faires Ende.",
+      "intro": "Zeichne einen kurzen Comic über einen Streit - und vor allem ein gutes, faires Ende. Strichmännchen reichen vollkommen!",
       "blocks": [
         {
-          "kind": "box",
-          "text": "Feld 1: Worum geht der Streit?",
-          "lines": 4
+          "kind": "heading",
+          "text": "1. Mein Comic in 4 Bildern"
         },
         {
           "kind": "box",
-          "text": "Feld 2: Es wird schlimmer ...",
-          "lines": 4
+          "text": "Feld 1: Worum geht der Streit? Wer streitet?",
+          "lines": 5
         },
         {
           "kind": "box",
-          "text": "Feld 3: Eine gute Idee / Lösung",
-          "lines": 4
+          "text": "Feld 2: Der Streit wird schlimmer ...",
+          "lines": 5
         },
         {
           "kind": "box",
-          "text": "Feld 4: Gutes Ende",
-          "lines": 4
+          "text": "Feld 3: Eine gute Idee - jemand findet eine Lösung.",
+          "lines": 5
+        },
+        {
+          "kind": "box",
+          "text": "Feld 4: Gutes Ende - so geht es fair weiter.",
+          "lines": 5
+        },
+        {
+          "kind": "heading",
+          "text": "2. Über die Lösung nachdenken"
+        },
+        {
+          "kind": "question",
+          "text": "Welche faire Lösung hast du gewählt (z. B. reden, teilen, abwechseln, Hilfe holen)?",
+          "lines": 3
+        },
+        {
+          "kind": "question",
+          "text": "Wie fühlen sich die beiden am Ende deines Comics?",
+          "lines": 2
+        },
+        {
+          "kind": "checklist",
+          "text": "Diese Lösungswege kenne ich für einen Streit:",
+          "items": [
+            "ruhig miteinander reden",
+            "teilen oder abwechseln",
+            "sich entschuldigen",
+            "einen Kompromiss finden",
+            "Hilfe bei einem Erwachsenen holen"
+          ]
+        },
+        {
+          "kind": "question",
+          "text": "In welchem echten Streit könntest du diese Idee bald ausprobieren?",
+          "lines": 3
         }
       ]
     },
@@ -10477,22 +10813,60 @@
     ],
     "worksheet": {
       "title": "Mäi Wuttbarometer",
-      "intro": "Lerne deine Wut-Stufen kennen.",
+      "intro": "Wut ist okay - wichtig ist, was wir damit machen. Dein Barometer hilft dir zu merken, wie wütend du gerade bist.",
       "blocks": [
         {
-          "kind": "table",
-          "text": "Meine Stufen",
-          "lines": 4,
+          "kind": "heading",
+          "text": "1. Meine Wut-Stufen"
+        },
+        {
+          "kind": "box",
+          "text": "Male dein Barometer aus: grün = ruhig, gelb = ärgerlich, orange = sehr wütend, rot = kurz vor dem Explodieren.",
+          "lines": 6
+        },
+        {
+          "kind": "scale",
+          "text": "So wütend war ich heute meistens:",
           "items": [
-            "Stufe",
-            "Woran ich es merke",
-            "Was mir hilft"
+            "grün",
+            "gelb",
+            "orange",
+            "rot"
           ]
+        },
+        {
+          "kind": "heading",
+          "text": "2. Woran ich meine Wut merke"
+        },
+        {
+          "kind": "question",
+          "text": "Was passiert in meinem Körper, wenn ich wütend werde? (z. B. heißer Kopf, geballte Fäuste)",
+          "lines": 3
+        },
+        {
+          "kind": "checklist",
+          "text": "So merke ich, dass meine Wut steigt:",
+          "items": [
+            "mein Herz klopft schnell",
+            "meine Hände werden Fäuste",
+            "mein Kopf wird heiß",
+            "ich rede laut",
+            "ich will etwas werfen"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "3. Was mir hilft"
+        },
+        {
+          "kind": "question",
+          "text": "Was kann ich tun, bevor die Wut rot wird? (z. B. tief atmen, weggehen, bis 10 zählen)",
+          "lines": 3
         },
         {
           "kind": "question",
           "text": "Meine beste Beruhigung, wenn ich bei 'orange' bin:",
-          "lines": 1
+          "lines": 2
         }
       ]
     },
@@ -10689,29 +11063,61 @@
     ],
     "worksheet": {
       "title": "Mäi SMART-Ziel",
-      "intro": "Mach aus einem Wunsch ein klares Ziel.",
+      "intro": "Mach aus einem Wunsch ein klares Ziel. SMART heißt: konkret, messbar, machbar, sinnvoll - und mit einem Zeitpunkt.",
       "blocks": [
         {
+          "kind": "heading",
+          "text": "1. Mein Lernziel SMART machen"
+        },
+        {
           "kind": "question",
-          "text": "Mein Ziel (konkret & machbar):",
+          "text": "Mein Ziel ganz konkret formuliert (was genau willst du erreichen?):",
+          "lines": 3
+        },
+        {
+          "kind": "table",
+          "text": "Prüfe dein Ziel nach den SMART-Kriterien:",
+          "lines": 5,
+          "items": [
+            "Kriterium",
+            "So trifft es auf mein Ziel zu"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "2. Mein Plan"
+        },
+        {
+          "kind": "question",
+          "text": "Woran merke ich genau, dass ich das Ziel erreicht habe?",
           "lines": 2
         },
         {
           "kind": "question",
-          "text": "Woran merke ich, dass ich es erreicht habe?",
-          "lines": 1
+          "text": "Bis wann will ich es schaffen? Mein erster konkreter Schritt:",
+          "lines": 3
         },
         {
           "kind": "question",
-          "text": "Bis wann? Mein erster Schritt:",
+          "text": "Welche Hindernisse könnten kommen - und wie gehe ich damit um?",
+          "lines": 3
+        },
+        {
+          "kind": "question",
+          "text": "Womit belohne ich mich, wenn ich das Ziel erreicht habe?",
           "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "3. Mein Check"
         },
         {
           "kind": "scale",
-          "text": "Wie zuversichtlich bin ich?",
+          "text": "Wie zuversichtlich bin ich, dass ich es schaffe?",
           "items": [
-            "wenig",
-            "mittel",
+            "gar nicht",
+            "ein bisschen",
+            "ziemlich",
             "sehr"
           ]
         }
@@ -10969,16 +11375,53 @@
     ],
     "worksheet": {
       "title": "Mäi Kulturkoffer",
-      "intro": "Was gehört zu dir und deiner Familie? Packe deinen Koffer – nur was du magst.",
+      "intro": "Was gehört zu dir, deiner Familie und deiner Herkunft? Packe deinen Koffer - nur mit dem, was du teilen möchtest.",
       "blocks": [
         {
+          "kind": "heading",
+          "text": "1. Mein Koffer"
+        },
+        {
           "kind": "box",
-          "text": "Mein Kulturkoffer (zeichne, was hineinkommt)",
+          "text": "Zeichne deinen Koffer und was hineinkommt (Dinge, Symbole, Lieblingsessen ...).",
           "lines": 7
         },
         {
+          "kind": "heading",
+          "text": "2. Meine Mitbringsel"
+        },
+        {
           "kind": "question",
-          "text": "Ein Mitbringsel, das mir besonders wichtig ist – und warum:",
+          "text": "Sprache(n), die in meiner Familie gesprochen werden:",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "Ein Lieblingsessen oder Gericht aus meiner Familie:",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "Ein Fest oder eine Familientradition, die mir wichtig ist:",
+          "lines": 3
+        },
+        {
+          "kind": "question",
+          "text": "Ein besonderer Ort, der zu mir oder meiner Familie gehört:",
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "3. Das ist mir wichtig"
+        },
+        {
+          "kind": "question",
+          "text": "Ein Mitbringsel, das mir besonders viel bedeutet - und warum:",
+          "lines": 3
+        },
+        {
+          "kind": "question",
+          "text": "Was möchte ich von einem anderen aus der Gruppe gerne kennenlernen?",
           "lines": 2
         }
       ]
@@ -11368,21 +11811,53 @@
     ],
     "worksheet": {
       "title": "Meng Mutmach-Këscht",
-      "intro": "Was macht dir Mut? Plane deine Box.",
+      "intro": "An manchen Tagen sind wir traurig oder mutlos. Deine Mutmach-Box ist voll mit Dingen, die dir guttun. Plane hier, was hineinkommt.",
       "blocks": [
         {
-          "kind": "question",
-          "text": "Mein Mutmach-Satz:",
-          "lines": 1
+          "kind": "heading",
+          "text": "1. Meine Box gestalten"
+        },
+        {
+          "kind": "box",
+          "text": "Male deine Mutmach-Box: Wie soll sie aussehen? Schmücke sie schön.",
+          "lines": 6
+        },
+        {
+          "kind": "heading",
+          "text": "2. Was in die Box kommt"
         },
         {
           "kind": "question",
-          "text": "Eine schöne Erinnerung, die in die Box kommt:",
+          "text": "Mein Mutmach-Satz, der mir Kraft gibt:",
           "lines": 2
         },
         {
           "kind": "question",
+          "text": "Eine schöne Erinnerung, die in die Box kommt:",
+          "lines": 3
+        },
+        {
+          "kind": "question",
           "text": "Drei Dinge, die mir guttun:",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "3. Meine Box nutzen"
+        },
+        {
+          "kind": "scale",
+          "text": "Wie fühle ich mich, wenn ich an meine Box denke?",
+          "items": [
+            "Gewitter",
+            "Regen",
+            "Wolke",
+            "Sonne"
+          ]
+        },
+        {
+          "kind": "question",
+          "text": "Wann öffne ich meine Box? (Wann brauche ich Mut?)",
           "lines": 2
         }
       ]
@@ -11453,27 +11928,62 @@
     ],
     "worksheet": {
       "title": "Meng bildschirmfräi Iddien",
-      "intro": "Was macht dir ohne Screen Freude? Sammle deine Ideen.",
+      "intro": "Bildschirme machen Spaß - aber zu viel tut nicht gut. Was macht dir SONST noch Freude? Sammle deine Ideen und plane etwas Schönes ohne Screen.",
       "blocks": [
         {
-          "kind": "question",
-          "text": "Drinnen:",
-          "lines": 2
+          "kind": "heading",
+          "text": "1. Meine Ideen-Schatzkiste"
+        },
+        {
+          "kind": "instruction",
+          "text": "Schreibe für jeden Bereich mindestens zwei Sachen auf, die dir ohne Bildschirm Freude machen."
         },
         {
           "kind": "question",
-          "text": "Draußen:",
-          "lines": 2
+          "text": "Das mache ich gern DRINNEN:",
+          "lines": 3
         },
         {
           "kind": "question",
-          "text": "Mit anderen zusammen:",
-          "lines": 2
+          "text": "Das mache ich gern DRAUSSEN:",
+          "lines": 3
         },
         {
           "kind": "question",
-          "text": "Das probiere ich diese Woche:",
-          "lines": 1
+          "text": "Das macht mir mit ANDEREN zusammen Spaß:",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "2. Mein Plan für diese Woche"
+        },
+        {
+          "kind": "question",
+          "text": "Das probiere ich diese Woche ohne Bildschirm aus - und wann:",
+          "lines": 3
+        },
+        {
+          "kind": "box",
+          "text": "Male dich, wie du diese bildschirmfreie Sache machst:",
+          "lines": 6
+        },
+        {
+          "kind": "heading",
+          "text": "3. Meine Medien-Balance"
+        },
+        {
+          "kind": "question",
+          "text": "Woran merke ich, dass ich zu lange am Bildschirm war? Wie fühle ich mich dann?",
+          "lines": 3
+        },
+        {
+          "kind": "scale",
+          "text": "Wie gut gelingt mir eine gute Balance zwischen Screen und anderen Dingen?",
+          "items": [
+            "geht noch",
+            "ganz okay",
+            "richtig gut"
+          ]
         }
       ]
     },
@@ -12282,7 +12792,7 @@
     ],
     "worksheet": {
       "title": "Die vier Ohren einer Nachricht",
-      "intro": "Jede Nachricht kann man mit vier Ohren hören: dem Sach-Ohr (die Tatsache), dem Gefühls-Ohr (wie es dem anderen geht), dem Beziehungs-Ohr (was er von mir hält) und dem Appell-Ohr (was er sich wünscht). Probiere es aus!",
+      "intro": "Jede Nachricht kann man mit vier Ohren hören: dem Sach-Ohr (die Tatsache), dem Gefühls-Ohr (wie es dem anderen geht), dem Beziehungs-Ohr (was er von mir hält) und dem Appell-Ohr (was er sich wünscht). Probier es aus!",
       "blocks": [
         {
           "kind": "heading",
@@ -12290,49 +12800,67 @@
         },
         {
           "kind": "instruction",
-          "text": "Der Satz lautet: 'Dein Pausenbrot liegt noch auf dem Tisch.' Schreibe auf, was jedes Ohr hört."
+          "text": "Der Satz lautet: 'Dein Pausenbrot liegt noch auf dem Tisch.' Schreibe auf, was jedes Ohr darin hört."
         },
         {
-          "kind": "lines",
-          "text": "Sach-Ohr (die Tatsache):",
-          "lines": 1
+          "kind": "question",
+          "text": "Sach-Ohr - die reine Tatsache:",
+          "lines": 2
         },
         {
-          "kind": "lines",
-          "text": "Gefühls-Ohr (wie geht es dem Sprecher?):",
-          "lines": 1
+          "kind": "question",
+          "text": "Gefühls-Ohr - wie geht es dem Sprecher gerade?",
+          "lines": 2
         },
         {
-          "kind": "lines",
-          "text": "Beziehungs-Ohr (was hält er von mir?):",
-          "lines": 1
+          "kind": "question",
+          "text": "Beziehungs-Ohr - was hält er vielleicht von mir?",
+          "lines": 2
         },
         {
-          "kind": "lines",
-          "text": "Appell-Ohr (was wünscht er sich?):",
-          "lines": 1
-        },
-        {
-          "kind": "heading",
-          "text": "2. Mein Nachfrage-Joker"
-        },
-        {
-          "kind": "instruction",
-          "text": "Wenn ich mich angegriffen fühle, frage ich erst nach, wie etwas gemeint war."
-        },
-        {
-          "kind": "lines",
-          "text": "So frage ich freundlich nach:",
+          "kind": "question",
+          "text": "Appell-Ohr - was wünscht er sich von mir?",
           "lines": 2
         },
         {
           "kind": "heading",
-          "text": "3. Mein Vorsatz"
+          "text": "2. Mein eigenes Beispiel"
         },
         {
-          "kind": "lines",
+          "kind": "question",
+          "text": "Schreibe einen Satz auf, den jemand zu dir gesagt hat und den du erst falsch verstanden hast. Was hast du gehört - und wie war es gemeint?",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "3. Mein Nachfrage-Joker"
+        },
+        {
+          "kind": "instruction",
+          "text": "Wenn ich mich angegriffen fühle, frage ich erst nach, wie etwas gemeint war - statt gleich beleidigt zu sein."
+        },
+        {
+          "kind": "question",
+          "text": "So frage ich freundlich nach, wie etwas gemeint war:",
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "4. Mein Vorsatz"
+        },
+        {
+          "kind": "question",
           "text": "Welches Ohr ist bei mir oft besonders laut - und was nehme ich mir vor?",
           "lines": 3
+        },
+        {
+          "kind": "scale",
+          "text": "Wie gut gelingt es mir, erst nachzufragen statt gleich beleidigt zu reagieren?",
+          "items": [
+            "geht noch",
+            "ganz okay",
+            "richtig gut"
+          ]
         }
       ]
     },
@@ -12703,11 +13231,11 @@
     ],
     "worksheet": {
       "title": "Unser Tandem-Tagebuch - Wochenseite",
-      "intro": "Diese Seite füllt ihr nach jeder Tandem-Zeit gemeinsam aus. Schreibt ehrlich - auch schwierige Momente gehören dazu und helfen eurer Partnerschaft.",
+      "intro": "Diese Seite fuellt ihr nach jeder Tandem-Zeit gemeinsam aus. Schreibt ehrlich - auch schwierige Momente gehoeren dazu und helfen eurer Partnerschaft zu wachsen.",
       "blocks": [
         {
           "kind": "heading",
-          "text": "Unsere Woche"
+          "text": "1. Unsere Woche"
         },
         {
           "kind": "lines",
@@ -12721,25 +13249,25 @@
         },
         {
           "kind": "heading",
-          "text": "So lief es"
+          "text": "2. So lief es bei uns"
         },
         {
           "kind": "question",
-          "text": "Was hat in unserem Tandem heute gut geklappt?",
-          "lines": 2
+          "text": "Was hat in unserem Tandem heute richtig gut geklappt? Beschreibt einen Moment.",
+          "lines": 3
         },
         {
           "kind": "question",
-          "text": "Was war schwierig - und wie sind wir damit umgegangen?",
-          "lines": 2
+          "text": "Was war schwierig - und wie sind wir gemeinsam damit umgegangen?",
+          "lines": 3
         },
         {
           "kind": "heading",
-          "text": "Mein Schatz der Woche"
+          "text": "3. Mein Schatz der Woche"
         },
         {
-          "kind": "lines",
-          "text": "Das schätze ich diese Woche an meinem Partner:",
+          "kind": "question",
+          "text": "Das schaetze ich diese Woche an meinem Partner / meiner Partnerin:",
           "lines": 2
         },
         {
@@ -12750,6 +13278,15 @@
             "ganz okay",
             "richtig gut"
           ]
+        },
+        {
+          "kind": "heading",
+          "text": "4. Naechste Woche"
+        },
+        {
+          "kind": "question",
+          "text": "Das wollen wir naechste Woche als Tandem ausprobieren oder besser machen:",
+          "lines": 2
         }
       ]
     },
@@ -13114,7 +13651,7 @@
     ],
     "worksheet": {
       "title": "Unser Getriebe - Was treibt unsere Zusammenarbeit an?",
-      "intro": "In einem Getriebe greift jedes Zahnrad in das nächste - es läuft nur rund, wenn alle mitdrehen und aufeinander achten. Übertrage das auf dein Team.",
+      "intro": "In einem Getriebe greift jedes Zahnrad in das naechste - es laeuft nur rund, wenn alle mitdrehen und aufeinander achten. Uebertrage das, was du im lebenden Getriebe gespuert hast, auf dein echtes Team.",
       "blocks": [
         {
           "kind": "heading",
@@ -13123,42 +13660,56 @@
         {
           "kind": "question",
           "text": "Worauf musstest du achten, damit euer menschliches Getriebe rund lief?",
-          "lines": 2
+          "lines": 3
         },
         {
           "kind": "question",
-          "text": "Was passierte, wenn jemand sein eigenes Tempo gemacht hat?",
-          "lines": 2
+          "text": "Was passierte, wenn jemand sein eigenes Tempo gemacht oder gestoppt hat?",
+          "lines": 3
         },
         {
           "kind": "heading",
-          "text": "2. Antrieb oder Sand?"
+          "text": "2. Antrieb oder Sand im Getriebe?"
         },
         {
           "kind": "instruction",
-          "text": "Sortiere: Was treibt eine Zusammenarbeit an - und was bringt Sand ins Getriebe?"
+          "text": "Sortiere: Was treibt eine Zusammenarbeit an - und was bringt Sand ins Getriebe? Schreibe in jede Spalte mindestens drei Dinge."
         },
         {
           "kind": "table",
-          "text": "Antrieb (treibt an) | Sand (blockiert)"
+          "text": "Antrieb - das laesst das Getriebe laufen | Sand - das blockiert das Getriebe",
+          "lines": 4,
+          "items": [
+            "Antrieb (treibt an)",
+            "Sand (blockiert)"
+          ]
         },
         {
           "kind": "heading",
           "text": "3. Mein Beitrag"
         },
         {
-          "kind": "lines",
-          "text": "Welches 'Zahnrad' will ich in unserem Team verlässlich drehen?",
-          "lines": 2
+          "kind": "question",
+          "text": "Welches Zahnrad will ich in unserem Team verlaesslich drehen? Was tue ich dafuer ganz konkret?",
+          "lines": 3
         },
         {
           "kind": "scale",
-          "text": "Wie gut konnte ich mich heute auf die anderen einstellen?",
+          "text": "Wie gut konnte ich mich heute auf das Tempo der anderen einstellen?",
           "items": [
             "geht noch",
             "ganz okay",
             "richtig gut"
           ]
+        },
+        {
+          "kind": "heading",
+          "text": "4. Unser Antriebsrad der Woche"
+        },
+        {
+          "kind": "question",
+          "text": "Auf welches gemeinsame Verhalten wollt ihr diese Woche besonders achten?",
+          "lines": 2
         }
       ]
     },
@@ -13243,7 +13794,7 @@
     ],
     "worksheet": {
       "title": "Stille Konstrukteure - Wie arbeiten wir zusammen?",
-      "intro": "Ihr habt erst ohne Worte und dann mit Absprache gebaut. Halte fest, was den Unterschied gemacht hat.",
+      "intro": "Ihr habt erst ohne Worte und dann mit Absprache gebaut. Halte fest, was den entscheidenden Unterschied gemacht hat - es geht nicht um den Turm, sondern um euer Miteinander.",
       "blocks": [
         {
           "kind": "heading",
@@ -13252,43 +13803,69 @@
         {
           "kind": "question",
           "text": "Was war beim Bauen ohne Sprechen am schwierigsten?",
-          "lines": 2
+          "lines": 3
         },
         {
           "kind": "question",
-          "text": "Wie habt ihr euch trotzdem verständigt?",
-          "lines": 2
-        },
-        {
-          "kind": "heading",
-          "text": "2. Unsere Absprache"
-        },
-        {
-          "kind": "lines",
-          "text": "Was habt ihr vor der zweiten Runde verabredet (Aufgaben, Zeichen, wer behält den Überblick)?",
+          "text": "Wie habt ihr euch trotzdem verstaendigt (Blicke, Gesten, Zeigen)?",
           "lines": 3
         },
         {
           "kind": "heading",
-          "text": "3. Unsere Gelingens-Regeln"
+          "text": "2. Die beiden Runden im Vergleich"
         },
         {
-          "kind": "checklist",
+          "kind": "instruction",
+          "text": "Halte fest, was sich von der stillen zur gesprochenen Runde veraendert hat."
+        },
+        {
+          "kind": "table",
+          "text": "Vergleicht die beiden Runden",
+          "lines": 3,
           "items": [
-            "Zuerst einen gemeinsamen Plan machen",
-            "Aufgaben verteilen",
-            "Ein klares Zeichen für 'Stopp' vereinbaren",
-            "Ideen der anderen ausprobieren",
-            "Ruhig bleiben, wenn etwas einstürzt"
+            "Runde ohne Worte",
+            "Runde mit Absprache"
           ]
         },
         {
           "kind": "heading",
-          "text": "4. Mein Vorsatz"
+          "text": "3. Unsere Absprache"
         },
         {
-          "kind": "lines",
-          "text": "Das mache ich beim nächsten gemeinsamen Projekt bewusst besser:",
+          "kind": "question",
+          "text": "Was habt ihr vor der zweiten Runde verabredet (Aufgaben, Zeichen, wer behaelt den Ueberblick)?",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "4. Unsere Gelingens-Regeln"
+        },
+        {
+          "kind": "checklist",
+          "items": [
+            "Zuerst gemeinsam einen Plan machen",
+            "Aufgaben fair verteilen",
+            "Ein klares Zeichen fuer 'Stopp' vereinbaren",
+            "Ideen der anderen ausprobieren",
+            "Ruhig bleiben, wenn etwas einstuerzt"
+          ]
+        },
+        {
+          "kind": "scale",
+          "text": "Wie gut habe ich in der stillen Runde auf mein Team geachtet?",
+          "items": [
+            "geht noch",
+            "ganz okay",
+            "richtig gut"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "5. Mein Vorsatz"
+        },
+        {
+          "kind": "question",
+          "text": "Das mache ich beim naechsten gemeinsamen Projekt bewusst besser:",
           "lines": 2
         }
       ]
@@ -13374,8 +13951,8 @@
       "KOG-51"
     ],
     "worksheet": {
-      "title": "Expertenpuzzle - Mein Teilstück fürs Ganze",
-      "intro": "Du wirst Experte für ein Teilstück. Nur wenn alle ihr Stück beisteuern, wird das Bild komplett. Bereite dich gut vor - deine Gruppe rechnet mit dir.",
+      "title": "Expertenpuzzle - Mein Teilstueck fuers Ganze",
+      "intro": "Du wirst Experte oder Expertin fuer ein Teilstueck. Nur wenn alle ihr Stueck beisteuern, wird das Bild komplett. Bereite dich gut vor - deine Stammgruppe rechnet mit dir.",
       "blocks": [
         {
           "kind": "heading",
@@ -13391,9 +13968,14 @@
           "text": "Notiere die wichtigsten Punkte, die deine Stammgruppe unbedingt von dir erfahren muss."
         },
         {
-          "kind": "lines",
-          "text": "Das müssen die anderen wissen:",
+          "kind": "question",
+          "text": "Das muessen die anderen wissen (Kernpunkte):",
           "lines": 4
+        },
+        {
+          "kind": "question",
+          "text": "So erklaere ich es kurz und verstaendlich (ein Beispiel oder Bild dazu):",
+          "lines": 3
         },
         {
           "kind": "heading",
@@ -13401,11 +13983,16 @@
         },
         {
           "kind": "instruction",
-          "text": "Halte fest, was dir die anderen Experten beigetragen haben - so wird das Puzzle komplett."
+          "text": "Halte zu jedem Teilstueck den wichtigsten Punkt fest - so wird das Puzzle in deiner Stammgruppe komplett."
         },
         {
           "kind": "table",
-          "text": "Teilstück | Wichtigster Punkt"
+          "text": "Notiere die Beitraege der anderen Experten",
+          "lines": 4,
+          "items": [
+            "Teilstueck / Name",
+            "Wichtigster Punkt"
+          ]
         },
         {
           "kind": "heading",
@@ -13413,12 +14000,17 @@
         },
         {
           "kind": "question",
-          "text": "Was hat eurer Gruppe geholfen, dass jeder verstanden wurde?",
+          "text": "Was hat eurer Gruppe geholfen, dass wirklich jeder verstanden wurde?",
+          "lines": 3
+        },
+        {
+          "kind": "question",
+          "text": "Was waere passiert, wenn ein Experte seinen Teil nicht gut vorbereitet haette?",
           "lines": 2
         },
         {
           "kind": "scale",
-          "text": "Wie gut konnte ich mein Teilstück verständlich erklären?",
+          "text": "Wie gut konnte ich mein Teilstueck verstaendlich erklaeren?",
           "items": [
             "geht noch",
             "ganz okay",
@@ -13509,33 +14101,51 @@
     ],
     "worksheet": {
       "title": "Konsens-Werkstatt - Eine Lösung, die alle tragen",
-      "intro": "Konsens heißt: eine Lösung finden, mit der möglichst ALLE leben können - nicht nur die Mehrheit. Begleite den Weg eurer Gruppe.",
+      "intro": "Konsens heißt: eine Lösung finden, mit der möglichst ALLE leben können - nicht nur die Mehrheit oder die Lautesten. Begleite hier den Weg eurer Gruppe von den ersten Ideen bis zur gemeinsamen Entscheidung.",
       "blocks": [
         {
           "kind": "heading",
-          "text": "1. Mein erster Vorschlag"
+          "text": "1. Worum geht es in eurer Aufgabe?"
         },
         {
-          "kind": "lines",
-          "text": "Das wäre meine Lieblingslösung - und warum sie mir wichtig ist:",
-          "lines": 2
+          "kind": "question",
+          "text": "Was sollt ihr als Gruppe entscheiden - und welche Regeln (Budget, Zeit) müsst ihr dabei einhalten?",
+          "lines": 3
         },
         {
           "kind": "heading",
-          "text": "2. Die anderen anhören"
+          "text": "2. Mein erster Vorschlag"
+        },
+        {
+          "kind": "question",
+          "text": "Das wäre meine Lieblingslösung - und warum sie mir wichtig ist:",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "3. Die anderen anhören"
         },
         {
           "kind": "instruction",
-          "text": "Höre den anderen zu, bevor du urteilst. Notiere einen Vorschlag, den du zuerst nicht mochtest, aber jetzt besser verstehst."
+          "text": "Höre zuerst zu, bevor du urteilst. Bedenken sind keine Blockade - sie zeigen, wie der Vorschlag besser werden kann."
         },
         {
-          "kind": "lines",
-          "text": "",
-          "lines": 2
+          "kind": "table",
+          "text": "Sammelt die Ideen und die Bedenken eurer Gruppe:",
+          "lines": 4,
+          "items": [
+            "Vorschlag",
+            "Wer hat ein Bedenken?",
+            "Wie könnte man es lösen?"
+          ]
         },
         {
           "kind": "heading",
-          "text": "3. Vom Bedenken zur besseren Lösung"
+          "text": "4. Vom Bedenken zur besseren Lösung"
+        },
+        {
+          "kind": "instruction",
+          "text": "Diese Satzhilfen bringen euch weiter - hake ab, was du heute ausprobiert hast:"
         },
         {
           "kind": "checklist",
@@ -13548,20 +14158,39 @@
         },
         {
           "kind": "heading",
-          "text": "4. Unsere gemeinsame Entscheidung"
+          "text": "5. Unsere gemeinsame Entscheidung"
         },
         {
           "kind": "question",
-          "text": "Wie sieht unsere gemeinsame Lösung aus - und was mussten wir verändern, damit alle mitgehen?",
+          "text": "Wie sieht unsere gemeinsame Lösung aus - und was mussten wir an meinem ersten Vorschlag verändern, damit alle mitgehen?",
+          "lines": 4
+        },
+        {
+          "kind": "heading",
+          "text": "6. Mehrheit oder Konsens?"
+        },
+        {
+          "kind": "question",
+          "text": "Was war an diesem Weg schwerer als bei einer schnellen Abstimmung - und was war besser?",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "7. Mein Vorsatz"
+        },
+        {
+          "kind": "question",
+          "text": "Wo in deinem Alltag (Klasse, Freunde, zu Hause) willst du das nächste Mal nach einer Lösung suchen, die alle tragen?",
           "lines": 3
         },
         {
           "kind": "scale",
-          "text": "Wie gut konnte ich heute eigene Wünsche zurückstellen und zuhören?",
+          "text": "Wie gut konnte ich heute eigene Wünsche zurückstellen und wirklich zuhören?",
           "items": [
-            "geht noch",
-            "ganz okay",
-            "richtig gut"
+            "gar nicht",
+            "ein wenig",
+            "ziemlich",
+            "sehr"
           ]
         }
       ]
@@ -13652,7 +14281,7 @@
     ],
     "worksheet": {
       "title": "Der blinde Fleck - Mein Stärkenspiegel",
-      "intro": "Jeder Mensch hat einen blinden Fleck: Eigenschaften, die andere an dir sehen, du selbst aber nicht. Vergleiche dein Selbstbild mit dem, was andere dir spiegeln.",
+      "intro": "Jeder Mensch hat einen blinden Fleck: Stärken, die andere an dir sehen, die du selbst aber gar nicht bemerkst. Vergleiche hier dein eigenes Bild von dir mit dem, was deine Gruppe dir spiegelt - die Außensicht ist oft ein Geschenk.",
       "blocks": [
         {
           "kind": "heading",
@@ -13660,12 +14289,16 @@
         },
         {
           "kind": "instruction",
-          "text": "Wähle 3-4 Eigenschaften, die zu dir passen, und schreibe je ein kurzes Beispiel dazu."
+          "text": "Wähle 3-4 Eigenschaften, die zu dir passen. Schreibe sie auf und nenne zu jeder ein kurzes Beispiel."
         },
         {
-          "kind": "lines",
+          "kind": "table",
           "text": "So sehe ich mich:",
-          "lines": 4
+          "lines": 4,
+          "items": [
+            "Meine Stärke",
+            "Ein Beispiel dafür"
+          ]
         },
         {
           "kind": "heading",
@@ -13673,11 +14306,11 @@
         },
         {
           "kind": "instruction",
-          "text": "Trage hier ein, welche Stärken die anderen an dir genannt haben - ohne sie kleinzureden."
+          "text": "Höre zu, bedanke dich und schreibe auf, welche Stärken die anderen an dir genannt haben - ohne sie kleinzureden."
         },
         {
           "kind": "lines",
-          "text": "So sehen mich andere:",
+          "text": "So sehen mich die anderen:",
           "lines": 4
         },
         {
@@ -13686,25 +14319,35 @@
         },
         {
           "kind": "question",
-          "text": "Welche Stärke haben andere genannt, die du selbst NICHT angekreuzt hattest?",
-          "lines": 2
+          "text": "Welche Stärke haben andere genannt, die du selbst NICHT aufgeschrieben hattest? Was sagt dir das?",
+          "lines": 3
         },
         {
           "kind": "heading",
-          "text": "4. Mein Fazit"
+          "text": "4. Geben und annehmen"
         },
         {
-          "kind": "lines",
-          "text": "Heute habe ich über mich gelernt, dass ...",
-          "lines": 2
+          "kind": "question",
+          "text": "Wie hat es sich angefühlt, von anderen eine Stärke gespiegelt zu bekommen - und jemandem selbst eine ehrliche, gute Rückmeldung zu geben?",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "5. Mein Fazit"
+        },
+        {
+          "kind": "question",
+          "text": "Heute habe ich über mich gelernt, dass ... Diese Stärke möchte ich öfter zeigen:",
+          "lines": 3
         },
         {
           "kind": "scale",
           "text": "Wie gut konnte ich eine ehrliche, wertschätzende Rückmeldung annehmen?",
           "items": [
-            "geht noch",
-            "ganz okay",
-            "richtig gut"
+            "gar nicht",
+            "ein wenig",
+            "ziemlich",
+            "sehr"
           ]
         }
       ]
@@ -13791,28 +14434,28 @@
     ],
     "worksheet": {
       "title": "Vorschnell geurteilt - Die Geschichte hinter dem Verhalten",
-      "intro": "Wir deuten Verhalten blitzschnell - oft unfair. Trenne, was du beobachtest, von dem, was du hineinliest, und suche andere mögliche Erklärungen.",
+      "intro": "Wir deuten das Verhalten anderer blitzschnell - und oft unfair. Übe hier, das, was du wirklich beobachtest, von dem zu trennen, was du hineinliest. Fast jedes Verhalten lässt sich auf mehrere Weisen erklären.",
       "blocks": [
         {
           "kind": "heading",
-          "text": "1. Was ist passiert?"
+          "text": "1. Was ist passiert? (Beobachtung)"
         },
         {
           "kind": "instruction",
-          "text": "Schreibe nur die reine Beobachtung auf - das, was eine Kamera aufnehmen würde, ohne Wertung."
+          "text": "Schreibe nur die reine Beobachtung auf - das, was eine Kamera aufnehmen würde, ganz ohne Wertung."
         },
         {
-          "kind": "lines",
+          "kind": "question",
           "text": "Beobachtung:",
-          "lines": 2
+          "lines": 3
         },
         {
           "kind": "heading",
           "text": "2. Meine erste Deutung"
         },
         {
-          "kind": "lines",
-          "text": "Was habe ich im ersten Moment über die Person gedacht?",
+          "kind": "question",
+          "text": "Was habe ich im ersten Moment über diese Person gedacht?",
           "lines": 2
         },
         {
@@ -13821,29 +14464,43 @@
         },
         {
           "kind": "instruction",
-          "text": "Finde mindestens drei weitere Erklärungen für genau dasselbe Verhalten."
+          "text": "Suche zu genau demselben Verhalten mindestens drei weitere, ebenso mögliche Erklärungen."
         },
         {
-          "kind": "lines",
-          "text": "Vielleicht ...",
-          "lines": 4
+          "kind": "table",
+          "text": "Vielleicht ist es ganz anders ...",
+          "lines": 4,
+          "items": [
+            "Mögliche Erklärung",
+            "Wie würde ich dann denken/fühlen?"
+          ]
         },
         {
           "kind": "heading",
           "text": "4. Statt urteilen: nachfragen"
         },
         {
-          "kind": "lines",
-          "text": "Wie könntest du freundlich herausfinden, was wirklich los ist?",
-          "lines": 2
+          "kind": "question",
+          "text": "Wie könntest du freundlich herausfinden, was wirklich los ist? Schreibe einen Satz, mit dem du nachfragst.",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "5. Mein Merksatz"
+        },
+        {
+          "kind": "question",
+          "text": "Was nimmst du mit? Vervollständige: 'Was eine Kamera sieht, ist die Beobachtung. Was ich daraus mache, ist ...'",
+          "lines": 3
         },
         {
           "kind": "scale",
           "text": "Wie leicht fiel es mir, meine erste Deutung in Frage zu stellen?",
           "items": [
-            "schwer",
-            "ging so",
-            "leicht"
+            "gar nicht",
+            "ein wenig",
+            "ziemlich",
+            "sehr"
           ]
         }
       ]
@@ -13930,55 +14587,71 @@
     ],
     "worksheet": {
       "title": "Mit deinen Augen - Perspektivwechsel im Streitfall",
-      "intro": "In fast jedem Streit gibt es zwei Sichtweisen. Setze beide Brillen auf und finde heraus, was die andere Seite sieht, denkt, fühlt und braucht.",
+      "intro": "In fast jedem Streit gibt es nicht EINE Wahrheit, sondern zwei Sichtweisen. Setze nacheinander beide Brillen auf und finde heraus, was jede Seite sieht, denkt, fühlt und braucht. Verstehen heißt nicht zustimmen.",
       "blocks": [
         {
           "kind": "heading",
-          "text": "1. Meine Figur (Brille A oder B)"
-        },
-        {
-          "kind": "lines",
-          "text": "Ich vertrete:",
-          "lines": 1
-        },
-        {
-          "kind": "table",
-          "text": "Ich sehe/erlebe ... | Ich denke ... | Ich fühle ... | Ich brauche ..."
-        },
-        {
-          "kind": "heading",
-          "text": "2. Nach dem Rollentausch"
+          "text": "1. Unser Streitfall"
         },
         {
           "kind": "question",
-          "text": "Was hast du verstanden, als du in der Haut der anderen Person stecktest?",
+          "text": "Worum geht der Konflikt - und welche Figur vertrittst du zuerst (Brille A oder B)?",
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "2. Beide Brillen aufsetzen"
+        },
+        {
+          "kind": "instruction",
+          "text": "Fülle die Felder erst für deine Figur aus. Nach dem Rollentausch füllst du dieselbe Tabelle für die andere Seite aus."
+        },
+        {
+          "kind": "table",
+          "text": "So erlebt jede Seite den Streit:",
+          "lines": 4,
+          "items": [
+            "Ich sehe/erlebe ...",
+            "Ich denke ...",
+            "Ich fühle ...",
+            "Ich brauche ..."
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "3. Nach dem Rollentausch"
+        },
+        {
+          "kind": "question",
+          "text": "Was hast du verstanden, als du in der Haut der anderen Person stecktest? War sie wirklich nur im Unrecht?",
           "lines": 3
         },
         {
           "kind": "heading",
-          "text": "3. Verständnis zeigen"
+          "text": "4. Verständnis zeigen"
         },
         {
-          "kind": "lines",
-          "text": "Ich kann verstehen, dass du ..., weil ...",
-          "lines": 2
+          "kind": "question",
+          "text": "Schreibe einen Satz an die andere Seite: 'Ich kann verstehen, dass du ..., weil ...'",
+          "lines": 3
         },
         {
           "kind": "heading",
-          "text": "4. Gemeinsame Lösung"
+          "text": "5. Gemeinsame Lösung"
         },
         {
-          "kind": "lines",
-          "text": "Eine Lösung, mit der BEIDE leben können:",
-          "lines": 2
+          "kind": "question",
+          "text": "Eine Lösung, mit der BEIDE leben können - und die das Bedürfnis von beiden berücksichtigt:",
+          "lines": 3
         },
         {
           "kind": "scale",
           "text": "Wie sehr hat sich mein Blick auf den Konflikt durch den Perspektivwechsel verändert?",
           "items": [
-            "kaum",
-            "etwas",
-            "stark"
+            "gar nicht",
+            "ein wenig",
+            "ziemlich",
+            "sehr"
           ]
         }
       ]
@@ -14069,20 +14742,24 @@
     ],
     "worksheet": {
       "title": "Wirkung statt Absicht - Wie ich auf andere wirke",
-      "intro": "Was du meinst, und was beim anderen ankommt, ist oft nicht dasselbe. Erkunde, welche Signale deine Wirkung ausmachen - und wie du die Lücke kleiner machst.",
+      "intro": "Was du SAGEN willst (deine Absicht) und was beim anderen ANKOMMT (deine Wirkung) ist oft nicht dasselbe. Erkunde hier, welche Signale deine Wirkung ausmachen - und wie du die Lücke zwischen beiden kleiner machst.",
       "blocks": [
         {
           "kind": "heading",
-          "text": "1. Absicht und Wirkung"
+          "text": "1. Absicht trifft Wirkung"
         },
         {
           "kind": "instruction",
           "text": "Denke an eine Situation, in der jemand deine Absicht missverstanden hat."
         },
         {
-          "kind": "lines",
-          "text": "Ich wollte eigentlich ... / Angekommen ist aber ...",
-          "lines": 3
+          "kind": "table",
+          "text": "So war es gemeint - so ist es angekommen:",
+          "lines": 3,
+          "items": [
+            "Das wollte ich eigentlich sagen",
+            "So ist es bei der anderen Person angekommen"
+          ]
         },
         {
           "kind": "heading",
@@ -14090,7 +14767,7 @@
         },
         {
           "kind": "instruction",
-          "text": "Welche deiner Signale könnten dazu beitragen, dass du anders rüberkommst, als du meinst?"
+          "text": "Stimme, Gesicht und Haltung senden Botschaften, ohne dass wir es merken. Kreuze an, welche deiner Signale dazu beitragen können, dass du anders rüberkommst, als du meinst."
         },
         {
           "kind": "checklist",
@@ -14104,29 +14781,39 @@
         },
         {
           "kind": "heading",
-          "text": "3. Rückmeldung (nur wenn du magst)"
+          "text": "3. Was die anderen beobachtet haben"
         },
         {
-          "kind": "lines",
-          "text": "Wie wirke ich auf mein Tandem in solchen Momenten?",
-          "lines": 2
+          "kind": "question",
+          "text": "Welche Wirkung haben dein Tandem oder dein Team bei dir bemerkt - und passte sie zu deiner Absicht?",
+          "lines": 3
         },
         {
           "kind": "heading",
-          "text": "4. Mein Vorsatz"
+          "text": "4. Die Lücke kleiner machen"
         },
         {
-          "kind": "lines",
-          "text": "Damit meine Absicht besser ankommt, will ich künftig ...",
-          "lines": 2
+          "kind": "question",
+          "text": "Welches EINE Signal willst du bewusst verändern, damit deine Absicht besser ankommt? Wie genau?",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "5. Mein Vorsatz"
+        },
+        {
+          "kind": "question",
+          "text": "Wenn ich das nächste Mal missverstanden werde, mache ich Folgendes (statt mich zu ärgern):",
+          "lines": 3
         },
         {
           "kind": "scale",
           "text": "Wie gut kenne ich nach dieser Stunde meine eigene Wirkung auf andere?",
           "items": [
-            "geht noch",
-            "ganz okay",
-            "richtig gut"
+            "gar nicht",
+            "ein wenig",
+            "ziemlich",
+            "sehr"
           ]
         }
       ]
@@ -14215,16 +14902,25 @@
     ],
     "worksheet": {
       "title": "Mein Stille-Forscher-Heft",
-      "intro": "Ein echter Forscher schaut, hört und fühlt ganz genau. Halte hier fest, was du in den Stille-Wochen entdeckst.",
+      "intro": "Ein echter Forscher schaut, hört und fühlt ganz genau und wird dabei innen ganz ruhig. Halte hier fest, was du in deiner Stille-Woche entdeckst!",
       "blocks": [
         {
           "kind": "heading",
           "text": "Meine Forscher-Woche"
         },
         {
-          "kind": "lines",
-          "text": "Diese Woche untersuchen wir den Sinn:",
-          "lines": 1
+          "kind": "instruction",
+          "text": "Male oder kreuze an, welchen Sinn ihr diese Woche untersucht."
+        },
+        {
+          "kind": "checklist",
+          "items": [
+            "Hören (Ohren)",
+            "Sehen (Augen)",
+            "Fühlen (Hände)",
+            "Riechen (Nase)",
+            "Schmecken (Mund)"
+          ]
         },
         {
           "kind": "heading",
@@ -14232,15 +14928,16 @@
         },
         {
           "kind": "instruction",
-          "text": "Zeichne oder schreibe, was du mit diesem Sinn genau wahrgenommen hast."
+          "text": "Zeichne in den Rahmen, was du mit diesem Sinn ganz genau entdeckt hast."
         },
         {
           "kind": "box",
-          "text": "Meine Entdeckung"
+          "text": "Meine Entdeckung",
+          "lines": 7
         },
         {
           "kind": "lines",
-          "text": "Heute habe ich gemerkt ...",
+          "text": "Das habe ich gemerkt:",
           "lines": 2
         },
         {
@@ -14248,17 +14945,25 @@
           "text": "Meine Stille"
         },
         {
-          "kind": "question",
-          "text": "Wie hat sich die Stille heute für dich angefühlt?",
-          "lines": 2
+          "kind": "instruction",
+          "text": "Schließe kurz die Augen. Wie fühlt sich die Stille heute an?"
         },
         {
           "kind": "scale",
-          "text": "Wie ruhig warst du innen drin? (1 = ganz unruhig, 5 = ganz ruhig)"
+          "text": "Wie ruhig war ich heute innen drin?",
+          "items": [
+            "Sonne",
+            "Wolke",
+            "Regen",
+            "Gewitter"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "Das hilft mir, ruhig zu werden"
         },
         {
           "kind": "checklist",
-          "text": "Das hat mir beim Ruhigwerden geholfen:",
           "items": [
             "langsam atmen",
             "Augen schließen",
@@ -14266,6 +14971,15 @@
             "still sitzen",
             "an etwas Schönes denken"
           ]
+        },
+        {
+          "kind": "heading",
+          "text": "Mein Lieblingssinn"
+        },
+        {
+          "kind": "box",
+          "text": "Male den Sinn, der dir am meisten Spaß gemacht hat:",
+          "lines": 6
         }
       ]
     },
@@ -14354,15 +15068,24 @@
     ],
     "worksheet": {
       "title": "Mein Anker-Pass",
-      "intro": "Anker helfen dir, ruhig zu werden, wenn es in dir stürmt. Halte hier fest, welche Anker dir guttun.",
+      "intro": "Ein Anker hilft dir, ruhig zu werden, wenn es in dir stürmt. Hier hältst du fest, welche Anker dir guttun.",
       "blocks": [
         {
           "kind": "heading",
           "text": "Wann stürmt es in mir?"
         },
         {
+          "kind": "instruction",
+          "text": "Male in den Kasten einen kleinen Sturm in dir - wann fühlst du dich so?"
+        },
+        {
+          "kind": "box",
+          "text": "So sieht mein innerer Sturm aus:",
+          "lines": 6
+        },
+        {
           "kind": "question",
-          "text": "In welcher Situation wird es in dir manchmal unruhig oder zu viel?",
+          "text": "In welcher Situation wird es in dir unruhig, wütend oder zu viel?",
           "lines": 2
         },
         {
@@ -14376,12 +15099,13 @@
         {
           "kind": "table",
           "text": "Anker | hat geholfen | war okay | nichts für mich",
+          "lines": 5,
           "items": [
-            "Atem-Quadrat",
-            "Faust öffnen",
+            "Faust langsam öffnen",
             "Bauchatmung mit Kuscheltier",
             "5-4-3-2-1 sehen",
-            "Schultern fallen lassen"
+            "Schultern fallen lassen",
+            "Atem zählen"
           ]
         },
         {
@@ -14389,18 +15113,28 @@
           "text": "Mein Lieblings-Anker"
         },
         {
-          "kind": "lines",
-          "text": "Mein persönlicher Anker heißt:",
-          "lines": 1
+          "kind": "question",
+          "text": "Mein bester Anker heißt - und so geht er:",
+          "lines": 2
+        },
+        {
+          "kind": "box",
+          "text": "Male ein Bild oder Zeichen für deinen Anker:",
+          "lines": 6
         },
         {
           "kind": "question",
-          "text": "Wann möchtest du diesen Anker das nächste Mal benutzen?",
+          "text": "Wann willst du deinen Anker das nächste Mal benutzen?",
           "lines": 2
         },
         {
           "kind": "scale",
-          "text": "Wie sicher fühlst du dich, deinen Anker selbst einzusetzen? (1 = noch unsicher, 5 = ganz sicher)"
+          "text": "Wie sicher fühlst du dich, deinen Anker selbst einzusetzen?",
+          "items": [
+            "noch unsicher",
+            "ein bisschen sicher",
+            "ganz sicher"
+          ]
         }
       ]
     },
@@ -14488,7 +15222,7 @@
     ],
     "worksheet": {
       "title": "Mein Achtsamkeits-Pass",
-      "intro": "Diese Woche darfst du das Leben einmal in Zeitlupe genießen. Sammle für jede Station eine Marke und halte fest, was du bemerkst.",
+      "intro": "Diese Woche genießt du das Leben einmal in Zeitlupe. Sammle für jede Station eine Marke und halte fest, was du bemerkst.",
       "blocks": [
         {
           "kind": "heading",
@@ -14507,11 +15241,20 @@
         },
         {
           "kind": "heading",
+          "text": "Achtsam gehen"
+        },
+        {
+          "kind": "question",
+          "text": "Wie hat sich der Boden unter deinen Füßen angefühlt?",
+          "lines": 2
+        },
+        {
+          "kind": "heading",
           "text": "Achtsam essen"
         },
         {
           "kind": "question",
-          "text": "Wie viele Geschmäcker oder Dinge hast du beim langsamen Essen entdeckt?",
+          "text": "Was hast du beim ganz langsamen Essen geschmeckt und gemerkt?",
           "lines": 2
         },
         {
@@ -14520,22 +15263,12 @@
         },
         {
           "kind": "instruction",
-          "text": "Schreibe oder zeichne drei Dinge dieser Woche, für die du dankbar bist."
+          "text": "Male oder schreibe drei Dinge dieser Woche, für die du dankbar bist."
         },
         {
-          "kind": "lines",
-          "text": "1.",
-          "lines": 1
-        },
-        {
-          "kind": "lines",
-          "text": "2.",
-          "lines": 1
-        },
-        {
-          "kind": "lines",
-          "text": "3.",
-          "lines": 1
+          "kind": "box",
+          "text": "Meine drei Dankbar-Dinge:",
+          "lines": 6
         },
         {
           "kind": "heading",
@@ -14543,7 +15276,12 @@
         },
         {
           "kind": "scale",
-          "text": "Wie gut tat dir das langsame, achtsame Tempo? (1 = gar nicht, 5 = sehr gut)"
+          "text": "Wie gut tat dir das langsame, achtsame Tempo?",
+          "items": [
+            "gar nicht",
+            "ein bisschen",
+            "sehr gut"
+          ]
         },
         {
           "kind": "question",
@@ -14646,23 +15384,30 @@
         },
         {
           "kind": "instruction",
-          "text": "Male oder kreuze das Wetter an, das gerade in dir ist."
+          "text": "Kreuze das Wetter an, das gerade in dir ist."
         },
         {
-          "kind": "checklist",
+          "kind": "scale",
           "text": "So ist mein inneres Wetter heute:",
           "items": [
-            "Sonne (Freude)",
-            "Wolken (gemischt)",
-            "Regen (traurig/müde)",
-            "Gewitter (Wut)",
-            "Sturm (Angst)",
-            "Nebel (unsicher)"
+            "Sonne",
+            "Wolke",
+            "Regen",
+            "Gewitter"
           ]
         },
         {
           "kind": "heading",
           "text": "Meine Wetterboten"
+        },
+        {
+          "kind": "instruction",
+          "text": "Male in den Körper-Umriss, wo du Wut, Angst oder Freude spürst."
+        },
+        {
+          "kind": "box",
+          "text": "Mein Körper - hier spüre ich Gefühle:",
+          "lines": 7
         },
         {
           "kind": "question",
@@ -14674,19 +15419,14 @@
           "text": "Was mir hilft"
         },
         {
-          "kind": "lines",
+          "kind": "question",
           "text": "Bei Gewitter (Wut) hilft mir:",
-          "lines": 1
+          "lines": 2
         },
         {
-          "kind": "lines",
-          "text": "Bei Sturm (Angst) hilft mir:",
-          "lines": 1
-        },
-        {
-          "kind": "lines",
+          "kind": "question",
           "text": "Bei Regen (Traurigkeit) hilft mir:",
-          "lines": 1
+          "lines": 2
         },
         {
           "kind": "heading",
@@ -14694,11 +15434,17 @@
         },
         {
           "kind": "box",
-          "text": "Jedes Wetter geht vorbei - auch ..."
+          "text": "Jedes Wetter geht vorbei - auch ...",
+          "lines": 3
         },
         {
           "kind": "scale",
-          "text": "Wie gut kannst du dein inneres Wetter schon selbst beruhigen? (1 = noch schwer, 5 = schon gut)"
+          "text": "Wie gut kannst du dein inneres Wetter schon selbst beruhigen?",
+          "items": [
+            "noch schwer",
+            "ein bisschen",
+            "schon gut"
+          ]
         }
       ]
     },
@@ -15150,9 +15896,35 @@
       "KOG-37"
     ],
     "worksheet": {
-      "title": "Beobachterkarte – Paraphrasieren-Profis",
-      "intro": "Du bist Beobachter. Achte beim Spiegel auf diese zwei Dinge und gib danach eine freundliche Rückmeldung.",
+      "title": "Paraphrasieren-Profis: Mein Beobachter- und Spiegel-Blatt",
+      "intro": "Du übst, gut zuzuhören und in eigenen Worten zu wiederholen. Wenn du Beobachter bist, achte genau hin und gib eine freundliche Rückmeldung.",
       "blocks": [
+        {
+          "kind": "heading",
+          "text": "Die Brücke zum Spiegeln"
+        },
+        {
+          "kind": "instruction",
+          "text": "Das hilft dir beim Spiegeln. Vervollständige die zwei Satzanfänge."
+        },
+        {
+          "kind": "question",
+          "text": "Ich habe gehört, dass ...",
+          "lines": 2
+        },
+        {
+          "kind": "lines",
+          "text": "Habe ich dich richtig verstanden?",
+          "lines": 1
+        },
+        {
+          "kind": "heading",
+          "text": "Wenn ich Beobachter bin"
+        },
+        {
+          "kind": "instruction",
+          "text": "Achte beim Spiegel auf diese zwei Dinge und kreuze an."
+        },
         {
           "kind": "checklist",
           "items": [
@@ -15166,6 +15938,11 @@
           "lines": 2
         },
         {
+          "kind": "question",
+          "text": "Welchen freundlichen Tipp kannst du ihm geben?",
+          "lines": 2
+        },
+        {
           "kind": "scale",
           "text": "Wie gut wurde der Erzähler verstanden?",
           "items": [
@@ -15173,6 +15950,15 @@
             "geht so",
             "richtig gut"
           ]
+        },
+        {
+          "kind": "heading",
+          "text": "Mein Vorsatz"
+        },
+        {
+          "kind": "question",
+          "text": "Wann willst du diese Woche die 'Ich-habe-gehört'-Brücke benutzen?",
+          "lines": 2
         }
       ]
     },
@@ -15257,44 +16043,52 @@
     ],
     "worksheet": {
       "title": "Mein Gefühls-Dolmetscher",
-      "intro": "Übersetze, wie es dir geht, in Worte. Benutze die Satzbrücke: 'Ich fühle mich … , weil … .'",
+      "intro": "Übersetze, wie es dir geht, in Worte. Benutze die Satzbrücke: 'Ich fühle mich ... , weil ... .'",
       "blocks": [
         {
+          "kind": "heading",
+          "text": "Mein Gefühls-Wortschatz"
+        },
+        {
           "kind": "instruction",
-          "text": "Such dir aus dem Wortschatz an der Tafel passende Gefühlswörter aus."
+          "text": "Sammle hier Gefühlswörter von der Tafel - angenehme und unangenehme."
+        },
+        {
+          "kind": "question",
+          "text": "Angenehme Gefühle (z. B. froh, stolz, neugierig):",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "Unangenehme Gefühle (z. B. traurig, wütend, einsam):",
+          "lines": 2
         },
         {
           "kind": "heading",
           "text": "Situation 1"
         },
         {
-          "kind": "lines",
-          "text": "Ich fühle mich ",
-          "lines": 1
-        },
-        {
-          "kind": "lines",
-          "text": "weil ",
-          "lines": 2
+          "kind": "question",
+          "text": "Ich fühle mich ... , weil ...",
+          "lines": 3
         },
         {
           "kind": "heading",
           "text": "Situation 2"
         },
         {
-          "kind": "lines",
-          "text": "Ich fühle mich ",
-          "lines": 1
+          "kind": "question",
+          "text": "Ich fühle mich ... , weil ...",
+          "lines": 3
         },
         {
-          "kind": "lines",
-          "text": "weil ",
-          "lines": 2
+          "kind": "heading",
+          "text": "Mein Vorsatz"
         },
         {
           "kind": "question",
-          "text": "Wem möchtest du diese Woche sagen, wie es dir geht?",
-          "lines": 1
+          "text": "Wem möchtest du diese Woche sagen, wie es dir geht? Und was?",
+          "lines": 2
         },
         {
           "kind": "scale",
@@ -15385,11 +16179,29 @@
     ],
     "worksheet": {
       "title": "Unsere Redekugel-Regeln",
-      "intro": "Haltet fest, was euch geholfen hat, damit jeder gehört wurde.",
+      "intro": "Nur wer die Redekugel hält, spricht. Haltet fest, was euch geholfen hat, damit wirklich jeder gehört wurde.",
       "blocks": [
         {
+          "kind": "heading",
+          "text": "Durcheinander oder Gespräch?"
+        },
+        {
+          "kind": "question",
+          "text": "Wie war es, als alle gleichzeitig geredet haben?",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "Was war anders, als die Redekugel reihum ging?",
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "Unsere Gesprächsregeln"
+        },
+        {
           "kind": "instruction",
-          "text": "Kreuzt die Regeln an, die ihr in der Klasse benutzen wollt, und ergänzt eine eigene."
+          "text": "Kreuzt die Regeln an, die ihr benutzen wollt, und ergänzt eine eigene."
         },
         {
           "kind": "checklist",
@@ -15401,13 +16213,22 @@
           ]
         },
         {
-          "kind": "lines",
+          "kind": "question",
           "text": "Unsere eigene Regel:",
           "lines": 2
         },
         {
+          "kind": "heading",
+          "text": "Mein Blick auf mich"
+        },
+        {
+          "kind": "question",
+          "text": "Wann fällt dir das Abwarten besonders schwer?",
+          "lines": 2
+        },
+        {
           "kind": "scale",
-          "text": "Wie gut ist uns das Abwarten heute gelungen?",
+          "text": "Wie gut ist mir das Abwarten heute gelungen?",
           "items": [
             "noch üben",
             "geht so",
