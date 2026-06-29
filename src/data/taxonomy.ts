@@ -111,6 +111,16 @@ export const themes: ThemeDef[] = [
   { id: 'medien', label: 'Medien' },
   { id: 'sexualitaet', label: 'Sexualität' },
   { id: 'etep-epu', label: 'ETEP / EPU' },
+  // Jugend-/Sekundar-Themen (ES) — Themenbereiche speziell für Jugendliche.
+  { id: 'liebe-beziehungen', label: 'Liebe & Beziehungen' },
+  { id: 'koerper-selbstbild', label: 'Körper & Selbstbild' },
+  { id: 'psychische-gesundheit', label: 'Psychische Gesundheit' },
+  { id: 'sucht-praevention', label: 'Sucht & Prävention' },
+  { id: 'gruppendruck', label: 'Gruppendruck' },
+  { id: 'diskriminierung-vielfalt', label: 'Vielfalt & Diskriminierung' },
+  { id: 'demokratie-engagement', label: 'Demokratie & Engagement' },
+  { id: 'zukunft-beruf', label: 'Zukunft & Beruf' },
+  { id: 'geld-konsum', label: 'Geld & Konsum' },
 ]
 
 export interface EtepStufeDef {

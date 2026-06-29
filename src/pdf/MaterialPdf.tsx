@@ -76,6 +76,16 @@ const THEME_COLOR: Record<string, { deep: string; light: string }> = {
   medien: { deep: '#2e75b6', light: '#deebf7' },
   sexualitaet: { deep: '#b0367a', light: '#f6dcea' },
   'etep-epu': { deep: '#2f5597', light: '#dbe5f1' },
+  // Jugend-/Sekundar-Themen
+  'liebe-beziehungen': { deep: '#d6336c', light: '#fbe0ea' },
+  'koerper-selbstbild': { deep: '#c0560f', light: '#fbe4d5' },
+  'psychische-gesundheit': { deep: '#2f8f6b', light: '#d7f0e6' },
+  'sucht-praevention': { deep: '#9c4221', light: '#f0ddd2' },
+  gruppendruck: { deep: '#b08900', light: '#fff2cc' },
+  'diskriminierung-vielfalt': { deep: '#7048c4', light: '#e7dcf7' },
+  'demokratie-engagement': { deep: '#1f6f8b', light: '#d7eaf0' },
+  'zukunft-beruf': { deep: '#2f5597', light: '#dbe5f1' },
+  'geld-konsum': { deep: '#3a7d44', light: '#dcefe0' },
 }
 const themeColor = (id?: string) =>
   (id && THEME_COLOR[id]) || { deep: C.blueDeep, light: C.blue }
@@ -92,6 +102,11 @@ const THEME_ICON: Record<string, string> = {
   bewegung: 'bolt', 'spiel-spass': 'play',
   kreativitaet: 'idea', resilienz: 'mountain', motivation: 'flag',
   disziplin: 'target', medien: 'screen',
+  // Jugend-/Sekundar-Themen
+  'liebe-beziehungen': 'heart', 'koerper-selbstbild': 'self',
+  'psychische-gesundheit': 'mind', 'sucht-praevention': 'shield',
+  gruppendruck: 'shield', 'diskriminierung-vielfalt': 'team',
+  'demokratie-engagement': 'peace', 'zukunft-beruf': 'flag', 'geld-konsum': 'target',
 }
 
 /** Draw a theme icon in a 0..24 viewBox. */
