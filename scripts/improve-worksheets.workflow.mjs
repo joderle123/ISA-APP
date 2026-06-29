@@ -21,6 +21,9 @@ function prompt(idx) {
   const outPath = `${outDir}/wsout-${nn}.json`
   return `Du bist Förderpädagog:in und gestaltest druckbare Schüler-Arbeitsblätter für die ISA-Bibliothek (Luxemburg, sozial-emotionales Lernen, ETEP/ELDiB). Aufgabe: jedes Arbeitsblatt im Batch INHALTLICH prüfen und – wenn es dünn, zu kurz oder schwach ist – durch ein besseres ersetzen.
 
+SCHRITT 0 – Versuche zuerst, die Ausgabedatei zu lesen (Read-Tool): ${outPath}
+Wenn sie schon existiert und gültiges JSON mit einem "results"-Array enthält, ist dieser Batch BEREITS fertig: mache NICHTS weiter, antworte nur "batch ${nn}: bereits fertig" und stoppe. Sonst weiter mit Schritt 1.
+
 SCHRITT 1 – Lies die Eingabedatei mit dem Read-Tool:
 ${inPath}
 Sie enthält bis zu 6 Materialien mit: id, title, language, ageLevels, themes, eldibGoals, type, shortDescription, ablauf (gekürzt), materialsNeeded und dem aktuellen worksheet.
