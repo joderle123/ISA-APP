@@ -16669,20 +16669,25 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Mein Verlässlichkeits-Check",
-      "intro": "Schau ehrlich auf dich selbst als Teampartner:in. Es gibt kein Richtig oder Falsch – es geht darum, ein guter Teil deines Teams zu werden.",
+      "intro": "Du hast heute in deinem Team verschiedene Stationen gemeistert. Schau jetzt ehrlich auf dich selbst: Worauf konnten sich die anderen bei dir verlassen? Es gibt kein Richtig oder Falsch.",
       "blocks": [
         {
           "kind": "heading",
-          "text": "So war ich heute im Team"
+          "text": "1. So war ich heute im Team"
+        },
+        {
+          "kind": "instruction",
+          "text": "Kreuze an, was auf dich zutrifft. Sei dabei ehrlich zu dir selbst."
         },
         {
           "kind": "checklist",
           "items": [
-            "Ich habe anderen gut zugehört.",
+            "Ich habe den anderen gut zugehört.",
             "Ich habe darauf geachtet, dass jeder mitmachen darf.",
             "Ich habe gemacht, was wir abgesprochen hatten.",
             "Ich habe jemandem geholfen.",
-            "Ich bin ruhig geblieben, als es schwierig wurde."
+            "Ich bin ruhig geblieben, als es schwierig wurde.",
+            "Ich habe geführt, ohne zu schubsen oder zu drängeln."
           ]
         },
         {
@@ -16696,34 +16701,48 @@ export const generated: Material[] = [
         },
         {
           "kind": "heading",
-          "text": "Worauf war bei mir Verlass?"
+          "text": "2. Die beiden Stationen"
         },
         {
           "kind": "question",
-          "text": "Eine Sache, bei der sich mein Team heute auf mich verlassen konnte:",
-          "lines": 2
+          "text": "Station 'Blindes Vertrauen': Wie war es für dich, dich nur auf die Worte deines Teams zu verlassen? Hast du dich sicher gefühlt?",
+          "lines": 3
+        },
+        {
+          "kind": "question",
+          "text": "Station 'Alle werden gebraucht': Was hat geklappt, als wirklich jeder mitmachen musste? Was war schwierig?",
+          "lines": 3
         },
         {
           "kind": "heading",
-          "text": "Mein nächster Schritt"
+          "text": "3. Worauf war bei mir Verlass?"
+        },
+        {
+          "kind": "question",
+          "text": "Eine Sache, bei der sich mein Team heute richtig auf mich verlassen konnte:",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "4. Mein nächster Schritt"
         },
         {
           "kind": "question",
           "text": "Das möchte ich als Teampartner:in beim nächsten Mal besser machen:",
-          "lines": 2
+          "lines": 3
         },
         {
           "kind": "heading",
-          "text": "Mein Orden für ein anderes Kind"
+          "text": "5. Mein Orden für ein anderes Kind"
         },
         {
           "kind": "instruction",
-          "text": "Schreibe für ein Kind aus deinem Team eine konkrete verlässliche Tat auf, die du ihm als Orden überreichst."
+          "text": "Erinnere dich an eine verlässliche Tat eines Kindes aus deinem Team ('Du hast mich beim Parcours sicher geführt'). Schreibe sie auf und überreiche den Orden."
         },
         {
           "kind": "box",
-          "text": "Verlässlichkeits-Orden für: ______________  weil:",
-          "lines": 3
+          "text": "Verlässlichkeits-Orden für: ______________________   weil:",
+          "lines": 4
         }
       ]
     },
@@ -17516,63 +17535,91 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "In fremden Schuhen – Mein Perspektiv-Blatt",
-      "intro": "Steige in die Schuhe einer beteiligten Person. Beantworte die vier Fragen aus IHRER Sicht – nicht aus deiner. Denk daran: Verstehen heißt nicht, recht geben.",
+      "intro": "Steige in die Schuhe einer beteiligten Person und sieh die Szene mit IHREN Augen, nicht mit deinen. Denk daran: Verstehen heißt nicht, recht geben – es heißt nur, nachvollziehen, warum jemand so empfindet.",
       "blocks": [
         {
           "kind": "heading",
-          "text": "Meine Person in dieser Szene"
+          "text": "Teil 1: Meine Person in dieser Szene"
         },
         {
           "kind": "lines",
-          "text": "Ich vertrete:",
+          "text": "Ich vertrete diese Person:",
           "lines": 1
         },
         {
+          "kind": "instruction",
+          "text": "Beantworte die nächsten vier Fragen ganz aus IHRER Sicht – als wärst du sie. Unterstelle ihr guten Willen."
+        },
+        {
           "kind": "heading",
-          "text": "Die vier Fragen aus ihrer Sicht"
+          "text": "Teil 2: Die vier Fragen aus ihrer Sicht"
         },
         {
           "kind": "question",
-          "text": "1. Was nimmt diese Person wahr? (Was sieht und hört sie wirklich?)",
-          "lines": 2
+          "text": "1. Was nimmt diese Person wahr? Was sieht und hört sie in der Situation wirklich?",
+          "lines": 3
         },
         {
           "kind": "question",
-          "text": "2. Was denkt sie über die Situation?",
-          "lines": 2
+          "text": "2. Was denkt sie über die Situation? Was geht ihr durch den Kopf?",
+          "lines": 3
         },
         {
           "kind": "question",
-          "text": "3. Was fühlt sie dabei?",
-          "lines": 2
+          "text": "3. Was fühlt sie dabei? Nenne ein bis zwei Gefühle und warum.",
+          "lines": 3
         },
         {
           "kind": "question",
-          "text": "4. Was braucht oder will sie?",
-          "lines": 2
+          "text": "4. Was braucht oder will sie in diesem Moment am meisten?",
+          "lines": 3
         },
         {
           "kind": "box",
-          "text": "Mein Ich-Satz aus ihrer Sicht: 'Ich habe mich … gefühlt, weil …'",
+          "text": "Mein Ich-Satz aus ihrer Sicht: „Ich habe mich … gefühlt, weil …“",
           "lines": 3
         },
         {
           "kind": "heading",
-          "text": "Nachdem ich alle Perspektiven gehört habe"
+          "text": "Teil 3: Nachdem ich alle Perspektiven gehört habe"
         },
         {
           "kind": "question",
-          "text": "Bei welcher Person hat sich mein Bild verändert – und warum?",
+          "text": "Bei welcher Person hat sich mein Bild verändert – und was genau hat das ausgelöst?",
+          "lines": 3
+        },
+        {
+          "kind": "scale",
+          "text": "Wie gut konnte ich mich wirklich in meine Person hineinversetzen?",
+          "items": [
+            "gar nicht",
+            "ein bisschen",
+            "ziemlich gut",
+            "sehr gut"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "Teil 4: Was allen geholfen hätte"
+        },
+        {
+          "kind": "question",
+          "text": "Was hätte in dieser Szene geholfen, damit sich alle früher verstanden fühlen?",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "Teil 5: Transfer in meinen Alltag"
+        },
+        {
+          "kind": "question",
+          "text": "In welcher echten Situation wäre ein Perspektivwechsel für mich gerade nützlich – und an wen denke ich dabei?",
+          "lines": 3
+        },
+        {
+          "kind": "box",
+          "text": "Mein Vorsatz: Das nächste Mal, bevor ich urteile, frage ich mich …",
           "lines": 2
-        },
-        {
-          "kind": "heading",
-          "text": "Transfer in meinen Alltag"
-        },
-        {
-          "kind": "question",
-          "text": "In welcher echten Situation wäre ein Perspektivwechsel für mich gerade nützlich? An wen denke ich dabei?",
-          "lines": 3
         }
       ]
     },
@@ -18597,8 +18644,22 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Mein innerer Akku",
-      "intro": "Auch in dir steckt ein Akku. Manches lädt ihn auf, manches macht ihn leer. Finde heraus, was bei DIR dazugehört.",
+      "intro": "Auch in dir steckt ein Akku. Manches lädt ihn auf, manches macht ihn leer. Finde heraus, was bei DIR dazugehört – und wie du ihn selbst wieder auflädst.",
       "blocks": [
+        {
+          "kind": "heading",
+          "text": "Wie voll ist mein Akku gerade?"
+        },
+        {
+          "kind": "scale",
+          "text": "Wie voll fühlt sich dein Akku heute an?",
+          "items": [
+            "fast leer",
+            "halb voll",
+            "ziemlich voll",
+            "randvoll"
+          ]
+        },
         {
           "kind": "heading",
           "text": "Das lädt meinen Akku AUF (Energiegeber +)"
@@ -18608,8 +18669,9 @@ export const generated: Material[] = [
           "text": "Schreibe oder male mindestens vier Dinge, nach denen du dich stark, fröhlich oder voller Energie fühlst."
         },
         {
-          "kind": "lines",
-          "lines": 5
+          "kind": "box",
+          "text": "Meine Energiegeber:",
+          "lines": 6
         },
         {
           "kind": "heading",
@@ -18620,16 +18682,27 @@ export const generated: Material[] = [
           "text": "Schreibe oder male mindestens drei Dinge, die dich müde, schlapp oder schlecht gelaunt machen."
         },
         {
-          "kind": "lines",
-          "lines": 4
+          "kind": "box",
+          "text": "Meine Energieräuber:",
+          "lines": 5
         },
         {
           "kind": "heading",
-          "text": "Wie voll ist mein Akku an einem normalen Schultag?"
+          "text": "Mein stärkster Energiegeber"
         },
         {
-          "kind": "scale",
-          "text": "Kreuze an: 0 % (ganz leer) bis 100 % (randvoll)."
+          "kind": "question",
+          "text": "Welcher Energiegeber hilft dir am allermeisten? Schreibe ihn auf.",
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "Aufladen, wenn es schwierig ist"
+        },
+        {
+          "kind": "question",
+          "text": "Such dir einen Energieräuber aus. Was kannst du tun, damit dein Akku danach wieder etwas voller wird?",
+          "lines": 3
         },
         {
           "kind": "heading",
@@ -18637,7 +18710,8 @@ export const generated: Material[] = [
         },
         {
           "kind": "box",
-          "text": "Diese Woche lade ich meinen Akku bewusst auf, indem ich ..."
+          "text": "Diese Woche lade ich meinen Akku bewusst auf, indem ich …",
+          "lines": 3
         }
       ]
     },
@@ -18729,55 +18803,80 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Forscher-Blatt: Dem Fehler-Schatz auf der Spur",
-      "intro": "Forscher geben nicht auf, wenn etwas schiefgeht – sie suchen den versteckten Schatz darin. Untersucht eure Geschichte wie echte Fehler-Forscher.",
+      "intro": "Forscher geben nicht auf, wenn etwas schiefgeht – sie suchen den versteckten Schatz darin. Untersucht eure Geschichte wie echte Fehler-Forscher und findet heraus, was man daraus lernen kann.",
       "blocks": [
         {
           "kind": "heading",
-          "text": "Unsere Geschichte"
+          "text": "Teil 1: Unsere Geschichte"
         },
         {
           "kind": "instruction",
-          "text": "Worum geht es? Schreibt in einem Satz, was passiert ist."
+          "text": "Worum geht es? Schreibt in ein bis zwei Sätzen, was passiert ist und was nicht geklappt hat."
         },
         {
           "kind": "lines",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "Teil 2: Die zwei inneren Stimmen"
+        },
+        {
+          "kind": "question",
+          "text": "Was würde die Aufgeber-Stimme zu dieser Person sagen?",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "Was würde die mutige Forscher-Stimme sagen?",
           "lines": 2
         },
         {
           "kind": "heading",
-          "text": "Der versteckte Schatz"
+          "text": "Teil 3: Der versteckte Schatz"
         },
         {
           "kind": "question",
-          "text": "Was kann die Person aus diesem Fehler lernen?"
-        },
-        {
-          "kind": "lines",
+          "text": "Was kann die Person aus diesem Fehler lernen?",
           "lines": 3
         },
         {
           "kind": "question",
-          "text": "Was wäre ein kluger nächster Schritt? Findet möglichst zwei Wege."
-        },
-        {
-          "kind": "lines",
+          "text": "Was wäre ein kluger nächster Schritt? Findet möglichst zwei Wege.",
           "lines": 3
         },
         {
           "kind": "heading",
-          "text": "Meine Fehler-Schatz-Karte"
+          "text": "Teil 4: Meine eigene Fehler-Schatz-Karte"
         },
         {
           "kind": "instruction",
-          "text": "Denke an etwas, das bei dir nicht gleich geklappt hat."
+          "text": "Denke an etwas, das bei dir selbst nicht gleich geklappt hat."
+        },
+        {
+          "kind": "question",
+          "text": "Was ist bei dir passiert?",
+          "lines": 2
         },
         {
           "kind": "box",
-          "text": "Was habe ich daraus gelernt?"
+          "text": "Mein Fehler-Schatz: Das habe ich daraus gelernt.",
+          "lines": 3
         },
         {
           "kind": "box",
-          "text": "Mein Mutmach-Satz: Wenn etwas nicht klappt, dann ..."
+          "text": "Mein Mutmach-Satz: Wenn etwas nicht klappt, dann …",
+          "lines": 2
+        },
+        {
+          "kind": "scale",
+          "text": "Wie gut kann ich nach einem Fehler weitermachen?",
+          "items": [
+            "noch schwer",
+            "manchmal",
+            "meistens",
+            "richtig gut"
+          ]
         }
       ]
     },
@@ -18869,11 +18968,11 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Mein Comeback-Plan",
-      "intro": "Jeder fällt mal hin. Mit diesem Plan weißt du, wie du wieder aufstehst, wenn ein Tiefschlag kommt. Hebe ihn gut auf und hol ihn hervor, wenn du ihn brauchst.",
+      "intro": "Jeder fällt mal hin – eine schlechte Note, ein Streit, eine Enttäuschung. Mit diesem Plan weißt du, wie du wieder aufstehst. Hebe ihn gut auf und hol ihn hervor, wenn ein Tiefschlag kommt.",
       "blocks": [
         {
           "kind": "heading",
-          "text": "Meine vier Comeback-Strategien"
+          "text": "1. Meine vier Comeback-Strategien"
         },
         {
           "kind": "checklist",
@@ -18886,35 +18985,67 @@ export const generated: Material[] = [
         },
         {
           "kind": "heading",
-          "text": "Was mir am besten liegt"
+          "text": "2. Mein eigener Tiefschlag"
+        },
+        {
+          "kind": "question",
+          "text": "Denke an einen Moment, in dem dir etwas richtig danebenging. Was war passiert, und wie hast du dich gefühlt?",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "3. Strategien an meinem Beispiel"
         },
         {
           "kind": "instruction",
-          "text": "Kreise die Strategie ein, die dir am leichtesten fällt, und schreibe sie auf."
+          "text": "Wende die vier Strategien auf deinen Tiefschlag an. Schreibe zu jeder ganz konkret, wie sie bei dir aussehen würde."
         },
         {
-          "kind": "lines",
+          "kind": "table",
+          "text": "Trage zu jeder Strategie deinen eigenen Schritt ein.",
+          "lines": 4,
+          "items": [
+            "Strategie",
+            "So sieht sie bei mir aus"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "4. Was mir am leichtesten fällt"
+        },
+        {
+          "kind": "question",
+          "text": "Welche der vier Strategien liegt dir am meisten – und warum?",
           "lines": 2
         },
         {
           "kind": "heading",
-          "text": "Mein Hilfe-Mensch"
+          "text": "5. Mein Hilfe-Mensch"
         },
         {
-          "kind": "instruction",
-          "text": "Wen könntest du nach einem Tiefschlag um Hilfe oder ein Gespräch bitten?"
-        },
-        {
-          "kind": "lines",
+          "kind": "question",
+          "text": "Wen könntest du nach einem Tiefschlag um Hilfe oder ein Gespräch bitten? Schreibe einen Namen und wie du ihn ansprichst.",
           "lines": 2
         },
         {
+          "kind": "scale",
+          "text": "Wie sicher bist du, dass du nach einem Tiefschlag wieder aufstehst?",
+          "items": [
+            "gar nicht sicher",
+            "etwas sicher",
+            "mittel",
+            "ziemlich sicher",
+            "sehr sicher"
+          ]
+        },
+        {
           "kind": "heading",
-          "text": "Mein Aufsteh-Satz"
+          "text": "6. Mein Aufsteh-Satz"
         },
         {
           "kind": "box",
-          "text": "Wenn ich falle, dann stehe ich wieder auf, weil ..."
+          "text": "Schreibe oder male groß: 'Wenn ich falle, dann stehe ich wieder auf, weil ...'",
+          "lines": 4
         }
       ]
     },
@@ -19007,15 +19138,15 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Miesmacher und Mutmacher",
-      "intro": "In deinem Kopf reden zwei Stimmen mit. Der Miesmacher malt schwarz. Die Mutmacher-Stimme spricht ehrlich, aber stark. Du kannst lernen, lauter auf die richtige zu hören.",
+      "intro": "In deinem Kopf reden zwei Stimmen mit. Der Miesmacher malt alles schwarz. Die Mutmacher-Stimme spricht ehrlich, aber stark. Du kannst lernen, lauter auf die richtige zu hören.",
       "blocks": [
         {
           "kind": "heading",
-          "text": "So redet der Miesmacher"
+          "text": "1. So redet der Miesmacher"
         },
         {
           "kind": "instruction",
-          "text": "Schreibe einen Gedanken auf, der dich klein und mutlos macht (z. B. vor einer Prüfung oder beim Sport)."
+          "text": "Schreibe einen Gedanken auf, der dich klein und mutlos macht (z. B. vor einer Prüfung, beim Sport oder bei Streit)."
         },
         {
           "kind": "lines",
@@ -19023,11 +19154,11 @@ export const generated: Material[] = [
         },
         {
           "kind": "heading",
-          "text": "So antwortet die Mutmacher-Stimme"
+          "text": "2. So antwortet die Mutmacher-Stimme"
         },
         {
           "kind": "instruction",
-          "text": "Formuliere einen Satz, der ehrlich UND stärkend ist. Tipp: 'Das ist schwer, aber ...'"
+          "text": "Formuliere dazu einen Satz, der ehrlich UND stärkend ist. Tipp: Fang an mit 'Das ist schwer, aber ...'"
         },
         {
           "kind": "lines",
@@ -19035,19 +19166,49 @@ export const generated: Material[] = [
         },
         {
           "kind": "heading",
-          "text": "Miesmacher entlarven"
+          "text": "3. Miesmacher entlarven"
+        },
+        {
+          "kind": "instruction",
+          "text": "Trage drei Gegensätze ein: links der Miesmacher-Gedanke, rechts dein Mutmacher-Satz."
         },
         {
           "kind": "table",
-          "text": "Trage je drei Gegensätze ein: links der Miesmacher-Gedanke, rechts dein Mutmacher-Satz."
+          "text": "Vergleiche die beiden Stimmen.",
+          "lines": 3,
+          "items": [
+            "Was der Miesmacher sagt",
+            "Was die Mutmacher-Stimme sagt"
+          ]
         },
         {
           "kind": "heading",
-          "text": "Mein stärkster Mutmacher"
+          "text": "4. Mein Sorgen-Tresor"
+        },
+        {
+          "kind": "question",
+          "text": "Eine Sorge, die ich gerade nicht lösen kann, parke ich hier. Wann hole ich sie wieder heraus, um in Ruhe darüber nachzudenken?",
+          "lines": 2
+        },
+        {
+          "kind": "scale",
+          "text": "Wie stark fühle ich mich gerade – oder wie hilflos?",
+          "items": [
+            "sehr hilflos",
+            "eher hilflos",
+            "mittel",
+            "eher stark",
+            "sehr stark"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "5. Mein stärkster Mutmacher"
         },
         {
           "kind": "box",
-          "text": "Das ist mein Lieblings-Mutmacher-Satz, den ich mir immer wieder sage:"
+          "text": "Schreibe groß deinen Lieblings-Mutmacher-Satz, den du dir immer wieder sagst:",
+          "lines": 4
         }
       ]
     },
@@ -19473,7 +19634,7 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Meine Wirkungs-Spuren",
-      "intro": "Wie Fußspuren im Sand hinterlässt du bei anderen Spuren – einen Trost, ein Lachen, eine Hilfe. Die meisten siehst du selbst nicht. Hier machst du sie sichtbar.",
+      "intro": "Wie Fußspuren im Sand hinterlässt du bei anderen Spuren – einen Trost, ein Lachen, eine Hilfe. Die meisten siehst du selbst nicht. Hier machst du sie sichtbar – und merkst: Du bist bedeutsam, ganz ohne Noten.",
       "blocks": [
         {
           "kind": "heading",
@@ -19481,27 +19642,27 @@ export const generated: Material[] = [
         },
         {
           "kind": "instruction",
-          "text": "Nenne zu jeder Zeile eine konkrete Situation – kein allgemeines 'oft', sondern ein echtes Beispiel."
+          "text": "Nenne zu jeder Zeile eine konkrete Situation – kein allgemeines 'oft', sondern ein echtes Beispiel mit Wann und Wem."
         },
         {
           "kind": "question",
           "text": "Ich habe geholfen, als …",
-          "lines": 2
+          "lines": 3
         },
         {
           "kind": "question",
-          "text": "Ich habe jemanden froh gemacht, als …",
-          "lines": 2
+          "text": "Ich habe jemanden froh gemacht oder zum Lachen gebracht, als …",
+          "lines": 3
         },
         {
           "kind": "question",
-          "text": "Ich habe etwas für die Gruppe/Familie beigetragen, als …",
-          "lines": 2
+          "text": "Ich habe etwas für die Gruppe oder Familie beigetragen, als …",
+          "lines": 3
         },
         {
           "kind": "question",
           "text": "Jemand hat sich auf mich verlassen, als …",
-          "lines": 2
+          "lines": 3
         },
         {
           "kind": "heading",
@@ -19509,10 +19670,11 @@ export const generated: Material[] = [
         },
         {
           "kind": "instruction",
-          "text": "Frage zwei Menschen (eine:n in der Klasse, eine:n außerhalb) und notiere ihre Antworten."
+          "text": "Frage zwei Menschen (eine:n in der Klasse, eine:n außerhalb): Wann hast du dich über mich gefreut? Wobei war ich dir eine Hilfe? Was würde dir fehlen, wenn es mich nicht gäbe? Notiere ihre Antworten."
         },
         {
           "kind": "table",
+          "text": "Halte fest, was du gehört hast.",
           "lines": 4,
           "items": [
             "Wen ich gefragt habe",
@@ -19521,16 +19683,36 @@ export const generated: Material[] = [
         },
         {
           "kind": "heading",
-          "text": "3. Meine Wirkungs-Karte"
+          "text": "3. Das hat mich überrascht"
         },
         {
-          "kind": "box",
-          "text": "Skizze: In der Mitte ich – ringsum meine wichtigsten Spuren mit je einem Beispiel.",
-          "lines": 6
+          "kind": "question",
+          "text": "Welche Wirkung von dir war dir vorher gar nicht so bewusst?",
+          "lines": 2
         },
         {
           "kind": "heading",
-          "text": "4. Mein Satz zum Mitnehmen"
+          "text": "4. Meine Wirkungs-Karte"
+        },
+        {
+          "kind": "box",
+          "text": "Skizze: In der Mitte du – ringsum deine wichtigsten Spuren mit je einem Beispiel.",
+          "lines": 6
+        },
+        {
+          "kind": "scale",
+          "text": "Wie sehr spürst du gerade, dass du für andere bedeutsam bist?",
+          "items": [
+            "wenig",
+            "eher wenig",
+            "mittel",
+            "eher viel",
+            "viel"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "5. Mein Satz zum Mitnehmen"
         },
         {
           "kind": "lines",
@@ -19792,50 +19974,87 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Meine 6-Sekunden-Karte",
-      "intro": "Zwischen dem Reiz und deiner Reaktion liegen ein paar Sekunden. In dieser Lücke entscheidest du, ob der Autopilot übernimmt oder du im Fahrersitz bleibst. Diese Karte hilft dir, die Pause zu nutzen.",
+      "intro": "Zwischen dem, was dich trifft, und dem, was du tust, liegen ein paar Sekunden. Diese Sekunden gehören dir. Mit dieser Karte machst du dir deinen Autopilot bewusst und übst, in den Fahrersitz zu wechseln.",
       "blocks": [
         {
           "kind": "heading",
-          "text": "Mein häufigster 'Knopf'"
+          "text": "1. Mein häufigster 'Knopf'"
         },
         {
-          "kind": "instruction",
-          "text": "Welcher Reiz bringt dich am schnellsten auf die Palme? Schreibe ihn in einem Satz auf."
-        },
-        {
-          "kind": "lines",
-          "lines": 2
+          "kind": "question",
+          "text": "Welcher Reiz bringt dich am schnellsten auf die Palme – der eine Moment, in dem du reagierst, bevor du nachgedacht hast? Beschreibe ihn genau.",
+          "lines": 3
         },
         {
           "kind": "heading",
-          "text": "Meine Mikro-Technik für die 6 Sekunden"
+          "text": "2. Autopilot oder Fahrersitz?"
+        },
+        {
+          "kind": "instruction",
+          "text": "Vergleiche, wie eine typische Situation einmal im Autopilot und einmal im Fahrersitz abläuft."
+        },
+        {
+          "kind": "table",
+          "lines": 3,
+          "items": [
+            "Situation",
+            "So reagiere ich im Autopilot",
+            "So möchte ich im Fahrersitz reagieren"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "3. Meine Mikro-Technik für die 6 Sekunden"
+        },
+        {
+          "kind": "instruction",
+          "text": "Welche Pausen-Technik passt am besten zu dir? Kreuze deine Favoritin an."
         },
         {
           "kind": "checklist",
           "items": [
             "Einmal langsam und tief ausatmen",
-            "Innerlich bis sechs zählen und die Füße spüren",
-            "Meinen Stopp-Satz denken"
+            "Innerlich bis sechs zählen und dabei die Füße auf dem Boden spüren",
+            "Meinen Stopp-Satz denken",
+            "Den Blick kurz von der Person lösen"
           ]
         },
         {
           "kind": "heading",
-          "text": "Mein Stopp-Satz"
+          "text": "4. Mein Stopp-Satz"
         },
         {
           "kind": "box",
-          "text": "Der Satz, den ich mir in der Pause sage, lautet:"
+          "text": "Der kurze Satz, den ich mir in der Pause sage (z. B. 'Stopp – ich entscheide gleich'):",
+          "lines": 3
         },
         {
           "kind": "heading",
-          "text": "Autopilot oder Fahrersitz?"
+          "text": "5. Was die Pause verändert"
         },
         {
           "kind": "question",
-          "text": "Beschreibe eine Situation aus deiner Woche, in der dir die 6-Sekunden-Pause gelungen ist – oder bei der du sie das nächste Mal ausprobieren willst."
+          "text": "Eine überlegte Reaktion ist fast nie die schwächere. Was glaubst du: Wie könnte eine Situation besser ausgehen, wenn du dir die 6 Sekunden nimmst?",
+          "lines": 3
         },
         {
-          "kind": "lines",
+          "kind": "scale",
+          "text": "Wie gut gelingt es mir gerade, vor dem Reagieren kurz innezuhalten?",
+          "items": [
+            "gar nicht",
+            "selten",
+            "manchmal",
+            "oft",
+            "fast immer"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "6. Mein Vorsatz"
+        },
+        {
+          "kind": "question",
+          "text": "Bei welcher konkreten Situation in dieser Woche willst du deine 6-Sekunden-Pause als Erstes ausprobieren?",
           "lines": 3
         }
       ]
@@ -19927,50 +20146,72 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Meine Trigger-Landkarte",
-      "intro": "Impulsives Handeln kommt selten aus dem Nichts. Dein Körper warnt dich vorher. Auf dieser Landkarte erforschst du, was dich auf die Palme bringt und woran du es früh erkennst.",
+      "intro": "Impulsives Handeln kommt selten aus dem Nichts – dein Körper warnt dich vorher. Auf dieser Landkarte erforschst du, was dich auf die Palme bringt, woran du es früh erkennst und wie du aussteigst, bevor du oben am Gipfel bist.",
       "blocks": [
         {
           "kind": "heading",
-          "text": "Meine Trigger – was mich auf die Palme bringt"
+          "text": "1. Meine Trigger – was mich auf die Palme bringt"
         },
         {
           "kind": "instruction",
-          "text": "Notiere Situationen, Personen-Konstellationen oder Sätze, die dich zuverlässig wütend machen. Markiere mit Sternen, wie stark der jeweilige Auslöser wirkt (1 Stern = leicht, 3 Sterne = bringt mich zum Explodieren)."
+          "text": "Trage deine wichtigsten Auslöser ein und ordne sie nach Stärke (1 Stern = bringt mich nur leicht in Wallung, 3 Sterne = bringt mich zuverlässig zum Explodieren)."
         },
         {
-          "kind": "lines",
-          "lines": 5
+          "kind": "table",
+          "lines": 5,
+          "items": [
+            "Situation, Person oder Satz",
+            "Stärke (★ bis ★★★)"
+          ]
         },
         {
           "kind": "heading",
-          "text": "Meine Frühwarnzeichen im Körper"
+          "text": "2. Mein Wutberg"
         },
         {
           "kind": "instruction",
-          "text": "Wo und wie spürst du die aufsteigende Anspannung? Trage deine Körpersignale ein und ordne sie: Welches kommt früh, welches erst kurz vor dem 'Gipfel'?"
-        },
-        {
-          "kind": "lines",
-          "lines": 4
-        },
-        {
-          "kind": "heading",
-          "text": "Mein frühestes Signal"
+          "text": "Unten ist es ruhig, oben ist die Explosion. Trage von unten nach oben ein, was du Stufe für Stufe in deinem Körper spürst (z. B. Hitze im Gesicht, Herzklopfen, geballte Fäuste)."
         },
         {
           "kind": "box",
-          "text": "Das allererste Zeichen, an dem ich merke, dass es losgeht, ist:"
+          "text": "Unten = ruhig … Mitte = es steigt … oben = Gipfel:",
+          "lines": 6
         },
         {
           "kind": "heading",
-          "text": "Aussteigen, bevor ich oben bin"
+          "text": "3. Mein allererstes Signal"
+        },
+        {
+          "kind": "question",
+          "text": "Welches Frühwarnzeichen kommt bei dir ganz zuerst – noch lange vor dem Gipfel? Beschreibe es genau.",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "4. Aussteigen, bevor ich oben bin"
         },
         {
           "kind": "instruction",
-          "text": "Was kannst du bei deinem frühen Signal tun, um nicht weiter 'den Berg hinaufzusteigen'? Notiere mindestens zwei Strategien."
+          "text": "Was kannst du bei deinem frühen Signal tun, um nicht weiter den Berg hinaufzusteigen? Notiere mindestens zwei Strategien (z. B. rausgehen, etwas trinken, dreimal ausatmen)."
         },
         {
-          "kind": "lines",
+          "kind": "scale",
+          "text": "Wie früh bemerke ich meine eigenen Warnzeichen schon?",
+          "items": [
+            "erst ganz oben",
+            "ziemlich spät",
+            "manchmal früh",
+            "meistens früh",
+            "sehr früh"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "5. Mein Frühwarnsystem"
+        },
+        {
+          "kind": "question",
+          "text": "Vervollständige: Mein frühestes Warnzeichen ist … – und wenn ich es merke, will ich …",
           "lines": 3
         }
       ]
@@ -20062,52 +20303,79 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Meine Chat-Notbremse",
-      "intro": "Im Chat ist eine wütende Nachricht in einer Sekunde verschickt und nie wieder zurückzuholen. Diese Karte hilft dir, vor dem Tippen auf 'Senden' kurz innezuhalten.",
+      "intro": "Im Chat ist eine wütende Nachricht in einer Sekunde verschickt – und nie wieder zurückzuholen. Diese Karte hilft dir, vor dem Tippen auf 'Senden' kurz innezuhalten und souverän statt im Affekt zu antworten.",
       "blocks": [
         {
           "kind": "heading",
-          "text": "Was den Chat so schnell eskalieren lässt"
+          "text": "1. Warum der Chat so schnell eskaliert"
+        },
+        {
+          "kind": "instruction",
+          "text": "Kreuze an, was beim Chatten dazu führt, dass man impulsiv reagiert."
         },
         {
           "kind": "checklist",
           "items": [
             "Es geht super schnell – tippen und senden in Sekunden",
             "Ich sehe das Gesicht des anderen nicht",
+            "Mimik, Tonfall und Pausen fehlen – vieles wirkt härter als gemeint",
             "Ich bin oft allein und ungebremst",
-            "In Gruppen schaukelt sich die Stimmung hoch"
+            "In Gruppen schaukelt sich die Stimmung schnell hoch"
           ]
         },
         {
           "kind": "heading",
-          "text": "Meine drei Schritte zwischen 'wütend tippen' und 'senden'"
+          "text": "2. Sofort-Reaktion und überlegte Antwort"
         },
         {
           "kind": "instruction",
-          "text": "Schreibe drei Dinge auf, die du tun willst, BEVOR du auf Senden tippst."
+          "text": "Denk an eine hitzige Chat-Situation. Schreibe links die wütende Sofort-Reaktion, rechts die überlegte Variante."
         },
         {
-          "kind": "lines",
-          "lines": 4
+          "kind": "table",
+          "lines": 3,
+          "items": [
+            "Die Nachricht, die mich getroffen hat",
+            "Sofort-Reaktion (im Affekt)",
+            "Überlegte Antwort"
+          ]
         },
         {
           "kind": "heading",
-          "text": "Meine Kontroll-Frage"
+          "text": "3. Meine drei Schritte zwischen 'wütend tippen' und 'senden'"
+        },
+        {
+          "kind": "instruction",
+          "text": "Schreibe drei Dinge auf, die du tun willst, BEVOR du auf Senden tippst (z. B. Bildschirm kurz weglegen, einmal tief durchatmen)."
+        },
+        {
+          "kind": "heading",
+          "text": "4. Meine Kontroll-Frage"
         },
         {
           "kind": "box",
-          "text": "Würde ich das auch von Angesicht zu Angesicht sagen?  –  Mein Merksatz dazu:"
+          "text": "Würde ich das auch von Angesicht zu Angesicht sagen? – Mein eigener Merksatz dazu:",
+          "lines": 3
         },
         {
           "kind": "heading",
-          "text": "Senden, anders formulieren oder gar nicht?"
+          "text": "5. Senden, anders formulieren oder gar nicht?"
         },
         {
           "kind": "question",
-          "text": "Beschreibe eine Chat-Situation, in der 'nicht antworten' oder 'später antworten' die klügere Wahl gewesen wäre."
+          "text": "Beschreibe eine Chat-Situation, in der 'nicht antworten' oder 'später antworten' die klügere Wahl gewesen wäre. Was hätte das verändert?",
+          "lines": 3
         },
         {
-          "kind": "lines",
-          "lines": 3
+          "kind": "scale",
+          "text": "Wie gut gelingt es mir, eine wütende Nachricht NICHT sofort abzuschicken?",
+          "items": [
+            "gar nicht",
+            "selten",
+            "manchmal",
+            "oft",
+            "fast immer"
+          ]
         }
       ]
     },
@@ -20336,7 +20604,7 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Mein Gefühls-Regler",
-      "intro": "Jedes Gefühl hat eine Lautstärke. Hier findest du heraus, woran du merkst, dass dein Regler langsam steigt – damit du früh reagieren kannst.",
+      "intro": "Jedes Gefühl hat eine Lautstärke – von einem leisen Kribbeln bis zum lauten Sturm. Hier findest du heraus, woran du merkst, dass dein Regler steigt, damit du früh reagieren kannst.",
       "blocks": [
         {
           "kind": "heading",
@@ -20353,42 +20621,61 @@ export const generated: Material[] = [
         },
         {
           "kind": "heading",
-          "text": "2. Mein Regler von 1 bis 5"
+          "text": "2. Leise – mittel – laut"
         },
         {
           "kind": "instruction",
-          "text": "Schreibe auf, woran du merkst, auf welcher Stufe dein Regler steht."
+          "text": "Male in jedes Feld ein Gesicht, das zeigt, wie dieses Gefühl auf Stufe 2, Stufe 3 und Stufe 4 aussieht."
         },
         {
-          "kind": "table",
-          "lines": 3,
-          "items": [
-            "Stufe",
-            "Das spüre ich im Körper",
-            "Das denke / tue ich"
-          ]
+          "kind": "box",
+          "text": "Stufe 2 (leise)",
+          "lines": 4
+        },
+        {
+          "kind": "box",
+          "text": "Stufe 3 (mittel)",
+          "lines": 4
+        },
+        {
+          "kind": "box",
+          "text": "Stufe 4 (fast laut)",
+          "lines": 4
         },
         {
           "kind": "heading",
-          "text": "3. Mein Frühwarnzeichen"
+          "text": "3. Mein Körper-Alarm"
+        },
+        {
+          "kind": "instruction",
+          "text": "Male auf dem Körper an oder zeichne, wo du den Alarm spürst: heißer Kopf, schneller Atem, Kribbeln im Bauch, zittrige Hände."
+        },
+        {
+          "kind": "box",
+          "text": "Mein Körper:",
+          "lines": 6
+        },
+        {
+          "kind": "heading",
+          "text": "4. Mein Frühwarnzeichen"
         },
         {
           "kind": "question",
-          "text": "Welches Körpersignal verrät mir am schnellsten: Achtung, mein Regler steigt?",
+          "text": "Welches Körpersignal verrät dir am schnellsten: Achtung, mein Regler steigt?",
           "lines": 2
         },
         {
           "kind": "heading",
-          "text": "4. Mein Plan"
+          "text": "5. Mein Plan"
         },
         {
           "kind": "question",
-          "text": "Was kann ich tun, wenn mein Regler auf Stufe 3 steht, damit er nicht auf 5 springt?",
+          "text": "Was kannst du tun, wenn dein Regler auf Stufe 3 steht, damit er nicht auf 5 springt?",
           "lines": 2
         },
         {
           "kind": "scale",
-          "text": "Wie gut kann ich mein steigendes Gefühl heute schon bemerken?",
+          "text": "Wie gut bemerke ich heute schon, wenn mein Gefühl lauter wird?",
           "items": [
             "fast nie",
             "selten",
@@ -20912,40 +21199,62 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Mein Ich-Koffer – Pack-Liste",
-      "intro": "Überlege zuerst, dann packe deinen Koffer. Du darfst malen statt schreiben.",
+      "intro": "Was gehört zu DIR? Überlege erst, dann packe deinen Koffer. Du darfst malen statt schreiben.",
       "blocks": [
         {
           "kind": "heading",
-          "text": "In meinen Koffer kommt ..."
+          "text": "1. Das packe ich ein"
         },
         {
           "kind": "instruction",
-          "text": "Male oder klebe in jedes Fach. Es gibt kein falsch."
+          "text": "Male oder klebe in jedes Fach. Es gibt kein richtig oder falsch."
         },
         {
           "kind": "box",
-          "text": "Mein Lieblings-Ding",
-          "lines": 4
+          "text": "Mein Lieblings-Ding (Farbe, Tier, Essen oder Spiel)",
+          "lines": 5
         },
         {
           "kind": "box",
           "text": "Menschen, die zu mir gehören",
-          "lines": 4
+          "lines": 5
         },
         {
           "kind": "box",
-          "text": "Das kann ich schon",
-          "lines": 4
+          "text": "Das kann ich schon gut",
+          "lines": 5
         },
         {
-          "kind": "question",
+          "kind": "heading",
+          "text": "2. Mein Mut-Mach-Satz"
+        },
+        {
+          "kind": "instruction",
+          "text": "Ein Satz, der dir guttut, wenn ein Tag mal schwer ist."
+        },
+        {
+          "kind": "lines",
           "text": "Mein Mut-Mach-Satz für schlechte Tage:",
           "lines": 2
         },
         {
+          "kind": "heading",
+          "text": "3. In der Galerie"
+        },
+        {
           "kind": "question",
-          "text": "Diese eine Sache zeige ich in der Galerie:",
+          "text": "Diese eine Sache aus meinem Koffer zeige ich – und das sage ich dazu:",
           "lines": 2
+        },
+        {
+          "kind": "scale",
+          "text": "Wie gern mag ich meinen Koffer?",
+          "items": [
+            "geht so",
+            "gut",
+            "sehr gut",
+            "ich liebe ihn"
+          ]
         }
       ]
     },
@@ -21035,45 +21344,57 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Namens-Forscher:in – Mein Forscher-Blatt",
-      "intro": "Frag jemanden in deiner Familie und schreib oder male, was du herausfindest.",
+      "intro": "Frag jemanden in deiner Familie nach deinem Namen. Schreib oder male, was du herausfindest.",
       "blocks": [
         {
           "kind": "heading",
-          "text": "Meine Namens-Forschung"
+          "text": "1. Meine Namens-Forschung"
         },
         {
           "kind": "question",
           "text": "Mein Vorname ist:",
-          "lines": 1
-        },
-        {
-          "kind": "question",
-          "text": "Wer hat meinen Namen ausgesucht?",
-          "lines": 1
-        },
-        {
-          "kind": "question",
-          "text": "Warum dieser Name? Gibt es eine Geschichte?",
-          "lines": 3
-        },
-        {
-          "kind": "question",
-          "text": "Was bedeutet mein Name (wenn man es weiß)?",
           "lines": 2
         },
         {
           "kind": "question",
-          "text": "Hast du einen Spitznamen? Welchen?",
-          "lines": 1
+          "text": "Wer hat meinen Namen ausgesucht – und warum gerade diesen?",
+          "lines": 3
+        },
+        {
+          "kind": "question",
+          "text": "Gibt es eine kleine Geschichte zu meinem Namen?",
+          "lines": 3
+        },
+        {
+          "kind": "question",
+          "text": "Was bedeutet mein Name? Kommt er aus einer anderen Sprache oder einem Land?",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "Hast du einen Spitznamen? Wer nennt dich so?",
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "2. Mein Namens-Schild"
         },
         {
           "kind": "instruction",
-          "text": "Male hier dein schönstes Namens-Zeichen:"
+          "text": "Male hier dein schönstes Namens-Zeichen mit deinen Lieblingsfarben."
         },
         {
           "kind": "box",
-          "text": "",
-          "lines": 4
+          "lines": 6
+        },
+        {
+          "kind": "heading",
+          "text": "3. Namen sind kostbar"
+        },
+        {
+          "kind": "question",
+          "text": "Was magst du an deinem Namen am liebsten?",
+          "lines": 2
         }
       ]
     },
@@ -21163,11 +21484,15 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Mein Mosaik-Ich – Steine-Plan",
-      "intro": "Überlege, was auf deine Steine kommt. Male oder schreibe ein Wort pro Stein.",
+      "intro": "Du bist wie ein Mosaik aus vielen Teilen. Überlege, was auf deine Steine kommt. Male oder schreibe ein Wort pro Stein.",
       "blocks": [
         {
           "kind": "heading",
-          "text": "Das kommt auf meine Mosaik-Steine"
+          "text": "1. Meine Mosaik-Steine"
+        },
+        {
+          "kind": "instruction",
+          "text": "Gestalte jeden Stein – mit einem Bild oder einem Wort."
         },
         {
           "kind": "box",
@@ -21190,8 +21515,26 @@ export const generated: Material[] = [
           "lines": 3
         },
         {
+          "kind": "heading",
+          "text": "2. Gleich und besonders"
+        },
+        {
           "kind": "question",
-          "text": "Diesen Stein bringe ich ins Klassen-Mosaik ein:",
+          "text": "Welcher Stein ist bei dir und deinen Tischnachbarn gleich?",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "Welchen Stein gibt es nur bei dir?",
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "3. Im Klassen-Mosaik"
+        },
+        {
+          "kind": "question",
+          "text": "Diesen Lieblings-Stein bringe ich ins große Klassen-Mosaik ein – weil:",
           "lines": 2
         }
       ]
@@ -21406,23 +21749,37 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Mein Stress-Thermometer",
-      "intro": "Stress hat Stufen – von ruhig bis überkocht. Wenn du deine eigenen Signale kennst, merkst du früh, wenn du aufheizt, und kannst gegensteuern, bevor es Rot wird.",
+      "intro": "Stress hat Stufen – von ruhig (grün) bis überkocht (rot). Wenn du deine eigenen Signale kennst, merkst du früh, wenn du aufheizt, und kannst gegensteuern, bevor es Rot wird.",
       "blocks": [
+        {
+          "kind": "heading",
+          "text": "Wie heiß bist du gerade?"
+        },
+        {
+          "kind": "scale",
+          "text": "Zeige auf deinem Thermometer, wo du jetzt stehst:",
+          "items": [
+            "grün",
+            "gelb",
+            "orange",
+            "rot"
+          ]
+        },
         {
           "kind": "heading",
           "text": "Meine Zonen-Signale"
         },
         {
           "kind": "instruction",
-          "text": "Woran merkst du selbst, in welcher Zone du gerade bist? Trage deine eigenen Körper- und Verhaltenssignale ein."
+          "text": "Woran merkst DU, in welcher Zone du bist? Trage in jede Zeile deine eigenen Körper- und Verhaltenssignale ein."
         },
         {
           "kind": "table",
-          "text": "Zone und Signal",
+          "text": "Meine Signale je Zone",
           "lines": 3,
           "items": [
             "Zone",
-            "So merke ich es bei mir"
+            "So merke ich es bei mir (Körper + Verhalten)"
           ]
         },
         {
@@ -21431,15 +21788,16 @@ export const generated: Material[] = [
         },
         {
           "kind": "instruction",
-          "text": "Wähle zwei Strategien, die dir helfen, wenn du ins Gelbe rutschst, damit es nicht Rot wird."
+          "text": "Kreuze zwei Strategien an, die dir helfen, wenn du ins Gelbe rutschst, damit es nicht Rot wird."
         },
         {
           "kind": "checklist",
           "items": [
-            "Dreimal langsam durchatmen, Hand auf den Bauch",
+            "Dreimal langsam ausatmen, Hand auf den Bauch",
             "Innerlich bis zehn zählen",
             "Kurz raus an die Luft / um eine Pause bitten",
             "Mit jemandem reden, der mir guttut",
+            "Etwas Beruhigendes denken",
             "Eine eigene Strategie:"
           ]
         },
@@ -21449,7 +21807,8 @@ export const generated: Material[] = [
         },
         {
           "kind": "box",
-          "text": "Wenn ich merke, dass ich ins Gelbe rutsche, sage ich mir:"
+          "text": "Wenn ich merke, dass ich ins Gelbe rutsche, sage ich mir:",
+          "lines": 3
         },
         {
           "kind": "heading",
@@ -21457,7 +21816,7 @@ export const generated: Material[] = [
         },
         {
           "kind": "question",
-          "text": "In welcher Situation willst du dein Thermometer das nächste Mal bewusst beobachten und früh gegensteuern?",
+          "text": "In welcher Situation willst du dein Thermometer das nächste Mal beobachten und früh gegensteuern? Was machst du genau?",
           "lines": 3
         }
       ]
@@ -21549,20 +21908,54 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Mein 5-4-3-2-1-Anker",
-      "intro": "Wenn die Gedanken kreisen, hol dich mit deinen Sinnen zurück ins Jetzt. Du kannst nicht gleichzeitig grübeln und ganz genau hinschauen, hinhören und fühlen. Diese Karte ist dein Anker.",
+      "intro": "Wenn die Gedanken kreisen, hol dich mit deinen Sinnen zurück ins Jetzt. Du kannst nicht gleichzeitig grübeln und ganz genau hinschauen, hinhören und fühlen. Probiere deinen Anker gleich hier aus.",
       "blocks": [
         {
           "kind": "heading",
-          "text": "So werfe ich meinen Anker"
+          "text": "Ich werfe meinen Anker"
         },
         {
-          "kind": "checklist",
+          "kind": "instruction",
+          "text": "Schau, horch und spür dich um. Schreibe in jede Zeile, was du gerade wahrnimmst."
+        },
+        {
+          "kind": "question",
+          "text": "5 Dinge, die ich SEHE:",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "4 Dinge, die ich HÖRE:",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "3 Dinge, die ich FÜHLE:",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "2 Dinge, die ich RIECHE (oder gern riechen würde):",
+          "lines": 1
+        },
+        {
+          "kind": "question",
+          "text": "1 Sache, die ich SCHMECKE (oder mag zu schmecken):",
+          "lines": 1
+        },
+        {
+          "kind": "heading",
+          "text": "Vorher und nachher"
+        },
+        {
+          "kind": "scale",
+          "text": "Wie aufgewühlt warst du VOR der Übung – und wie ruhig DANACH? Kreuze an.",
           "items": [
-            "5 Dinge, die ich SEHE",
-            "4 Dinge, die ich HÖRE",
-            "3 Dinge, die ich FÜHLE",
-            "2 Dinge, die ich RIECHE",
-            "1 Sache, die ich SCHMECKE"
+            "sehr aufgewühlt",
+            "etwas unruhig",
+            "neutral",
+            "ziemlich ruhig",
+            "ganz ruhig"
           ]
         },
         {
@@ -21576,26 +21969,12 @@ export const generated: Material[] = [
         },
         {
           "kind": "heading",
-          "text": "Vorher und nachher"
-        },
-        {
-          "kind": "scale",
-          "text": "Wie aufgewühlt warst du vor der Übung – und wie ruhig danach? Kreuze an.",
-          "items": [
-            "sehr aufgewühlt",
-            "etwas unruhig",
-            "neutral",
-            "ziemlich ruhig",
-            "ganz ruhig"
-          ]
-        },
-        {
-          "kind": "heading",
           "text": "Mein nächster Anker-Moment"
         },
         {
           "kind": "box",
-          "text": "Diese Situation will ich mit dem Anker ausprobieren:"
+          "text": "Diese Situation will ich mit dem Anker ausprobieren:",
+          "lines": 3
         }
       ]
     },
@@ -21982,7 +22361,7 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Rezept-Blatt: Unsere Idee aus drei Zutaten",
-      "intro": "Erst still allein sammeln, dann in der Gruppe eine Idee auswählen oder mischen und hier festhalten.",
+      "intro": "Erst still allein Ideen sammeln, dann in der Gruppe eine Idee auswählen oder mehrere mischen und hier festhalten. Denkt dran: Quantität vor Qualität – nichts ist zu verrückt.",
       "blocks": [
         {
           "kind": "heading",
@@ -21990,6 +22369,8 @@ export const generated: Material[] = [
         },
         {
           "kind": "table",
+          "text": "Diese drei Karten haben wir gezogen:",
+          "lines": 1,
           "items": [
             "DING",
             "ORT",
@@ -22007,13 +22388,13 @@ export const generated: Material[] = [
         },
         {
           "kind": "question",
-          "text": "Was ist es und wie funktioniert es?",
+          "text": "Was ist es genau und wie funktioniert es?",
           "lines": 4
         },
         {
           "kind": "question",
-          "text": "Wem hilft oder nützt es?",
-          "lines": 2
+          "text": "Wem hilft oder nützt es – und warum?",
+          "lines": 3
         },
         {
           "kind": "instruction",
@@ -22021,7 +22402,36 @@ export const generated: Material[] = [
         },
         {
           "kind": "box",
-          "lines": 5
+          "text": "Skizze unserer Idee",
+          "lines": 6
+        },
+        {
+          "kind": "heading",
+          "text": "Wie lief unser Erfinden?"
+        },
+        {
+          "kind": "scale",
+          "text": "Wie zufrieden seid ihr mit eurer Idee?",
+          "items": [
+            "gar nicht",
+            "ein bisschen",
+            "ziemlich",
+            "sehr"
+          ]
+        },
+        {
+          "kind": "question",
+          "text": "Was hat geholfen, als ihr nicht weiterkamt? (z. B. ein Gegenteil denken, 'zehnmal größer', eine Idee mischen)",
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "Übertragen"
+        },
+        {
+          "kind": "question",
+          "text": "Wo im Alltag könnten dir Begrenzungen oder feste Vorgaben helfen, wenn du mal keine Idee hast?",
+          "lines": 3
         }
       ]
     },
@@ -22107,7 +22517,7 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Meine Was-wäre-wenn-Welt",
-      "intro": "Wähle eine Frage. Denke die Annahme Schritt für Schritt zu Ende – kein Gedanke ist zu verrückt.",
+      "intro": "Wähle eine Frage und denke die Annahme Schritt für Schritt zu Ende – kein Gedanke ist zu verrückt. Eine Idee gegen Rückfragen weiterzubauen, ist die hohe Kunst.",
       "blocks": [
         {
           "kind": "question",
@@ -22120,7 +22530,7 @@ export const generated: Material[] = [
         },
         {
           "kind": "instruction",
-          "text": "Wenn das so wäre, dann ... – und dann ... – und dann ..."
+          "text": "Wenn das so wäre, dann ... – und dann ... – und dann ...? Baue eine Kette aus mindestens drei Folgen."
         },
         {
           "kind": "lines",
@@ -22142,7 +22552,7 @@ export const generated: Material[] = [
         },
         {
           "kind": "question",
-          "text": "Eine überraschende Folge:",
+          "text": "Eine überraschende Folge, an die zuerst keiner denkt:",
           "lines": 2
         },
         {
@@ -22151,7 +22561,26 @@ export const generated: Material[] = [
         },
         {
           "kind": "box",
+          "text": "Skizze meiner Welt",
           "lines": 5
+        },
+        {
+          "kind": "heading",
+          "text": "Die beste Rückfrage"
+        },
+        {
+          "kind": "question",
+          "text": "Welche Rückfrage deines Tandem-Partners hat deine Idee am meisten weitergebracht?",
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "Weiterdenken"
+        },
+        {
+          "kind": "question",
+          "text": "Welche deiner Was-wäre-wenn-Fragen würdest du gern wirklich beantwortet bekommen – und warum?",
+          "lines": 3
         }
       ]
     },
@@ -22233,8 +22662,8 @@ export const generated: Material[] = [
       "KOG-44"
     ],
     "worksheet": {
-      "title": "Bau-Plan: Unser Schrott-Wesen",
-      "intro": "Plant zuerst gemeinsam, holt dann euer Material. Der Plan darf sich beim Bauen ändern.",
+      "title": "Bau-Plan und Rückblick: Unser Schrott-Wesen",
+      "intro": "Plant zuerst gemeinsam, holt dann euer Material und baut. Am Ende schaut ihr zurück: Was ist aus 'Müll' geworden? Der Plan darf sich beim Bauen ändern.",
       "blocks": [
         {
           "kind": "heading",
@@ -22247,23 +22676,33 @@ export const generated: Material[] = [
         },
         {
           "kind": "instruction",
-          "text": "Macht hier eine grobe Skizze:"
+          "text": "Macht hier eine grobe Skizze von eurem Wesen:"
         },
         {
           "kind": "box",
-          "lines": 5
+          "text": "Unsere Skizze",
+          "lines": 6
         },
         {
           "kind": "heading",
           "text": "Das brauchen wir von der Materialbörse"
         },
         {
-          "kind": "lines",
-          "lines": 4
+          "kind": "instruction",
+          "text": "Schreibt auf, welche Teile ihr holen wollt und wozu sie werden sollen (z. B. Korken = Auge)."
+        },
+        {
+          "kind": "table",
+          "text": "Material und seine neue Bedeutung",
+          "lines": 4,
+          "items": [
+            "Welches Teil?",
+            "Wird bei uns zu ..."
+          ]
         },
         {
           "kind": "heading",
-          "text": "Nach dem Bauen"
+          "text": "Nach dem Bauen: Unser Wesen"
         },
         {
           "kind": "question",
@@ -22272,7 +22711,7 @@ export const generated: Material[] = [
         },
         {
           "kind": "question",
-          "text": "Wer oder was ist es, und was kann es?",
+          "text": "Wer oder was ist es, und was kann es? Denkt euch zwei Sätze aus.",
           "lines": 3
         },
         {
@@ -22285,8 +22724,32 @@ export const generated: Material[] = [
             "geplant / skizziert",
             "Material geholt",
             "gebaut / geklebt",
-            "Geschichte erfunden"
+            "Geschichte und Name erfunden"
           ]
+        },
+        {
+          "kind": "heading",
+          "text": "Zurückgeschaut"
+        },
+        {
+          "kind": "question",
+          "text": "Welche clevere Umdeutung von Material gefällt euch an eurem Wesen am besten? (Aus ... wurde ...)",
+          "lines": 3
+        },
+        {
+          "kind": "scale",
+          "text": "Wie gut haben wir uns im Team abgesprochen und Aufgaben geteilt?",
+          "items": [
+            "gar nicht",
+            "ein bisschen",
+            "gut",
+            "sehr gut"
+          ]
+        },
+        {
+          "kind": "question",
+          "text": "Wenn ihr noch einmal so etwas baut: Was würdet ihr beim nächsten Mal anders machen?",
+          "lines": 3
         }
       ]
     },
@@ -22373,7 +22836,7 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Unsere Geschichte aus der Maschine",
-      "intro": "Würfelt eure Bausteine, dann erzählt reihum weiter. Baut die Wendungs-Karte ein.",
+      "intro": "Würfelt eure Bausteine, dann erzählt reihum weiter. Hört gut zu, knüpft am vorherigen Satz an und baut die Wendungs-Karte ein.",
       "blocks": [
         {
           "kind": "heading",
@@ -22381,10 +22844,24 @@ export const generated: Material[] = [
         },
         {
           "kind": "table",
+          "text": "Das hat uns die Maschine gegeben:",
+          "lines": 1,
           "items": [
             "PERSON",
             "ORT",
             "EREIGNIS"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "Unsere Erzähl-Regeln"
+        },
+        {
+          "kind": "checklist",
+          "items": [
+            "am vorherigen Satz anknüpfen",
+            "die Geschichte nicht zu früh beenden",
+            "Ideen der anderen weiterführen ('Ja, und ...')"
           ]
         },
         {
@@ -22400,8 +22877,31 @@ export const generated: Material[] = [
           "lines": 8
         },
         {
+          "kind": "heading",
+          "text": "Die Wendung"
+        },
+        {
           "kind": "question",
-          "text": "Welche Wendungs-Karte habt ihr gezogen und eingebaut?",
+          "text": "Welche Wendungs-Karte habt ihr gezogen, und wie habt ihr sie eingebaut?",
+          "lines": 3
+        },
+        {
+          "kind": "scale",
+          "text": "Wie gut ist es uns gelungen, an die Sätze der anderen anzuknüpfen?",
+          "items": [
+            "gar nicht",
+            "ein bisschen",
+            "gut",
+            "sehr gut"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "Meine Lieblingsstelle"
+        },
+        {
+          "kind": "question",
+          "text": "Welche Stelle in eurer Geschichte hat dich überrascht oder dir am besten gefallen?",
           "lines": 2
         },
         {
@@ -22410,7 +22910,7 @@ export const generated: Material[] = [
         },
         {
           "kind": "question",
-          "text": "Wenn ICH die Geschichte gehabt hätte, hätte ich an einer Stelle ...",
+          "text": "Wenn ICH die Geschichte allein gehabt hätte, hätte ich an einer Stelle ...",
           "lines": 3
         }
       ]
@@ -23084,11 +23584,11 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Mein erster Schritt aus der mutigen Mitte",
-      "intro": "Wenn jemand geärgert oder ausgeschlossen wird, kannst du als Zuschauer:in etwas tun. Welcher Weg passt zu dir?",
+      "intro": "Wenn jemand geärgert oder ausgeschlossen wird, schauen viele nur zu. Du kannst etwas tun! Finde heraus, welcher Weg zu dir passt.",
       "blocks": [
         {
           "kind": "heading",
-          "text": "Die vier Wege"
+          "text": "Die vier Wege, etwas zu tun"
         },
         {
           "kind": "checklist",
@@ -23101,21 +23601,41 @@ export const generated: Material[] = [
         },
         {
           "kind": "question",
-          "text": "Welcher Weg passt am ehesten zu mir?",
-          "lines": 1
-        },
-        {
-          "kind": "question",
-          "text": "Was würde ich genau sagen oder tun?",
+          "text": "Welcher Weg passt am besten zu mir? Kreuze oben an und schreibe ihn hier auf.",
           "lines": 2
         },
         {
+          "kind": "question",
+          "text": "Was würde ich genau sagen oder tun? Schreibe deine Worte auf.",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "Mein erster Schritt"
+        },
+        {
           "kind": "instruction",
-          "text": "Male oder schreibe deinen ersten Schritt hier hinein:"
+          "text": "Male ein Bild: So sieht es aus, wenn du der Person in der Mitte hilfst."
         },
         {
           "kind": "box",
-          "lines": 4
+          "text": "Hier male ich meinen ersten Schritt",
+          "lines": 7
+        },
+        {
+          "kind": "scale",
+          "text": "Wie mutig fühle ich mich, diesen Schritt zu gehen?",
+          "items": [
+            "gar nicht",
+            "ein bisschen",
+            "ziemlich",
+            "sehr"
+          ]
+        },
+        {
+          "kind": "question",
+          "text": "Wer kann mir helfen, wenn ich mich nicht traue?",
+          "lines": 2
         }
       ]
     },
@@ -23203,7 +23723,7 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Mein Chat-Detektiv-Blatt",
-      "intro": "Schau dir den Chat genau an. Wo kippt Spaß in Gemeinheit? Und was kannst du tun?",
+      "intro": "Du bist heute Chat-Detektiv! Schau dir den Chat genau an. Wo wird aus Spaß Gemeinheit? Und was kannst du tun?",
       "blocks": [
         {
           "kind": "heading",
@@ -23219,13 +23739,26 @@ export const generated: Material[] = [
           "lines": 2
         },
         {
+          "kind": "scale",
+          "text": "Welche Ampel-Farbe hat diese Nachricht?",
+          "items": [
+            "grün",
+            "gelb",
+            "rot"
+          ]
+        },
+        {
           "kind": "heading",
           "text": "Meine Stopp-Nachricht"
         },
         {
-          "kind": "question",
-          "text": "Was schreibe ich freundlich, um zu stoppen?",
-          "lines": 2
+          "kind": "instruction",
+          "text": "Schreibe in die Sprechblase, was du freundlich antwortest, damit es aufhört."
+        },
+        {
+          "kind": "box",
+          "text": "Meine Stopp-Nachricht (in die Sprechblase)",
+          "lines": 4
         },
         {
           "kind": "heading",
@@ -23242,7 +23775,7 @@ export const generated: Material[] = [
         },
         {
           "kind": "question",
-          "text": "Meine persönliche Chat-Regel:",
+          "text": "Meine persönliche Chat-Regel für unsere Klasse:",
           "lines": 2
         }
       ]
@@ -23327,11 +23860,11 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Streit oder Mobbing? Mein Erkenn-Blatt",
-      "intro": "Mit drei Merkmalen kannst du herausfinden, ob aus Streit Mobbing geworden ist.",
+      "intro": "Nicht jeder Streit ist Mobbing. Mit drei Merkmalen kannst du genau hinschauen und herausfinden, was wirklich los ist.",
       "blocks": [
         {
           "kind": "heading",
-          "text": "Die drei Merkmale"
+          "text": "Die drei Merkmale von Mobbing"
         },
         {
           "kind": "checklist",
@@ -23347,8 +23880,23 @@ export const generated: Material[] = [
         },
         {
           "kind": "question",
+          "text": "Denk an eine Situation von der Sortier-Linie. Welche Merkmale hast du erkannt?",
+          "lines": 3
+        },
+        {
+          "kind": "question",
           "text": "Daran erkenne ich, dass aus Streit Mobbing geworden ist:",
           "lines": 3
+        },
+        {
+          "kind": "scale",
+          "text": "Wie fühlt sich Mobbing für die betroffene Person an?",
+          "items": [
+            "okay",
+            "traurig",
+            "sehr schlimm",
+            "ganz allein"
+          ]
         },
         {
           "kind": "question",
@@ -23437,14 +23985,15 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Unsere Halte-Karte: So lassen wir niemanden fallen",
-      "intro": "Sammelt Ideen, die wirklich helfen, dass niemand aus unserem Netz fällt. Sie müssen morgen schon klappen.",
+      "intro": "Jede:r von uns hält das Netz unserer Klasse mit. Sammle Ideen, die wirklich helfen, damit niemand allein bleibt. Sie müssen morgen schon klappen!",
       "blocks": [
         {
           "kind": "heading",
-          "text": "Was kappt den Faden? (Faden-Schneider)"
+          "text": "Was kappt den Faden?"
         },
         {
-          "kind": "lines",
+          "kind": "question",
+          "text": "Was tut weh und lässt jemanden aus dem Netz fallen? (Faden-Schneider)",
           "lines": 2
         },
         {
@@ -23453,11 +24002,12 @@ export const generated: Material[] = [
         },
         {
           "kind": "instruction",
-          "text": "Schreibt oder malt drei konkrete Dinge, die ihr wirklich tun könnt."
+          "text": "Schreibe oder male drei konkrete Dinge, die ihr wirklich tun könnt."
         },
         {
-          "kind": "lines",
-          "lines": 4
+          "kind": "box",
+          "text": "Hier male oder schreibe ich unsere Halte-Ideen",
+          "lines": 6
         },
         {
           "kind": "question",
@@ -23466,8 +24016,18 @@ export const generated: Material[] = [
         },
         {
           "kind": "question",
-          "text": "Diese eine Halte-Idee übernehme ich persönlich:",
+          "text": "Diese eine Halte-Idee übernehme ich ganz persönlich:",
           "lines": 2
+        },
+        {
+          "kind": "scale",
+          "text": "Wie gut hält unser Klassen-Netz im Moment?",
+          "items": [
+            "reißt oft",
+            "wackelt",
+            "hält",
+            "hält ganz fest"
+          ]
         }
       ]
     },
@@ -23558,7 +24118,7 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Meine Etappen-Karte",
-      "intro": "Jedes große Ziel wird machbar, wenn du es in kleine Etappen teilst. Trage dein Ziel oben auf den Gipfel und zeichne den Weg dorthin.",
+      "intro": "Jedes große Ziel wird machbar, wenn du es in kleine Etappen teilst. Trage dein Ziel oben auf den Gipfel und zeichne den Weg dorthin – Schritt für Schritt.",
       "blocks": [
         {
           "kind": "heading",
@@ -23566,7 +24126,12 @@ export const generated: Material[] = [
         },
         {
           "kind": "question",
-          "text": "Was möchte ich erreichen? (das große Ziel)",
+          "text": "Was möchte ich erreichen? Schreibe dein großes Ziel auf.",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "Warum ist mir dieses Ziel wichtig?",
           "lines": 2
         },
         {
@@ -23575,11 +24140,12 @@ export const generated: Material[] = [
         },
         {
           "kind": "instruction",
-          "text": "Schreibe oder male 3–4 Etappen. Jede Etappe muss klein und klar sein."
+          "text": "Zeichne deinen Berg und male 3–4 Etappen ein. Jede Etappe muss klein und klar sein."
         },
         {
-          "kind": "lines",
-          "lines": 5
+          "kind": "box",
+          "text": "Hier zeichne ich meinen Berg mit den Etappen",
+          "lines": 7
         },
         {
           "kind": "heading",
@@ -23587,13 +24153,23 @@ export const generated: Material[] = [
         },
         {
           "kind": "question",
-          "text": "Was kann ich schon heute oder morgen tun?",
+          "text": "Was kann ich schon heute oder morgen tun? (ganz klein!)",
           "lines": 2
         },
         {
           "kind": "question",
           "text": "Woran merke ich, dass meine erste Etappe geschafft ist?",
           "lines": 2
+        },
+        {
+          "kind": "scale",
+          "text": "Wie sehr traue ich mir zu, heute den ersten Schritt zu machen?",
+          "items": [
+            "gar nicht",
+            "ein bisschen",
+            "ziemlich",
+            "ganz sicher"
+          ]
         }
       ]
     },
@@ -23685,7 +24261,7 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Meine Warum-Treppe",
-      "intro": "Frage dich immer wieder 'Und warum ist mir das wichtig?' und steige so Stufe für Stufe tiefer, bis du dein eigenes Warum findest.",
+      "intro": "Frage dich immer wieder 'Und warum ist mir das wichtig?' und steige so Stufe für Stufe tiefer, bis du dein eigenes Warum findest – deinen inneren Motor.",
       "blocks": [
         {
           "kind": "heading",
@@ -23705,19 +24281,41 @@ export const generated: Material[] = [
           "text": "Frage bei jeder Stufe: 'Und warum ist mir das wichtig?' – mindestens 3 Stufen tief."
         },
         {
-          "kind": "lines",
-          "lines": 5
+          "kind": "question",
+          "text": "Stufe 1 – Und warum ist mir das wichtig?",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "Stufe 2 – Und warum ist mir DAS wichtig?",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "Stufe 3 – Und warum ist mir das wichtig?",
+          "lines": 2
         },
         {
           "kind": "scale",
-          "text": "Wie stark fühlt sich dein tiefstes Warum an? (1 = schwach, 5 = sehr stark)"
+          "text": "Wie stark fühlt sich dein tiefstes Warum an?",
+          "items": [
+            "gar nicht",
+            "ein bisschen",
+            "ziemlich",
+            "sehr stark"
+          ]
         },
         {
           "kind": "heading",
           "text": "Mein Antriebs-Satz"
         },
         {
+          "kind": "instruction",
+          "text": "Forme aus deinem tiefsten Warum einen kurzen Satz in Ich-Form, z. B. 'Ich übe, weil ich stolz auf mich sein will.'"
+        },
+        {
           "kind": "box",
+          "text": "Mein Antriebs-Satz",
           "lines": 3
         }
       ]
@@ -23810,19 +24408,28 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Mein Start-Ritual gegen die Aufschieberitis",
-      "intro": "Das Schwerste ist oft der Anfang. Baue dir ein Ritual, das den Start ganz leicht macht.",
+      "intro": "Das Schwerste ist oft nicht das Tun, sondern der Anfang. Heute baust du dir ein Ritual, das den Start ganz leicht macht – und probierst es gleich aus.",
       "blocks": [
         {
           "kind": "heading",
-          "text": "Meine häufigste Aufschiebe-Falle"
+          "text": "Meine Aufschiebe-Falle"
+        },
+        {
+          "kind": "instruction",
+          "text": "Kreuze an, in welche Falle du am häufigsten tappst."
         },
         {
           "kind": "checklist",
           "items": [
-            "Ablenkungs-Falle (Handy, etwas Schöneres)",
-            "Zu-groß-Falle (die Aufgabe wirkt riesig)",
-            "Später-Falle ('mach ich gleich')"
+            "Ablenkungs-Falle: Handy oder etwas Schöneres lockt",
+            "Zu-groß-Falle: die Aufgabe wirkt riesig",
+            "Später-Falle: 'Mach ich gleich ...'"
           ]
+        },
+        {
+          "kind": "question",
+          "text": "Bei welcher Aufgabe schiebe ich besonders oft auf? Beschreibe sie kurz.",
+          "lines": 2
         },
         {
           "kind": "heading",
@@ -23830,16 +24437,20 @@ export const generated: Material[] = [
         },
         {
           "kind": "question",
-          "text": "Was lege ich vorher beiseite?",
-          "lines": 1
+          "text": "Was lege ich vorher zur Seite oder schalte ich aus, damit ich Ruhe habe?",
+          "lines": 2
         },
         {
           "kind": "heading",
           "text": "Baustein 2: Mein Mini-Start"
         },
         {
+          "kind": "instruction",
+          "text": "Mach die erste Handlung so winzig, dass 'Nein' fast albern wäre."
+        },
+        {
           "kind": "question",
-          "text": "Welche winzige erste Handlung beginne ich?",
+          "text": "Welche allererste, ganz kleine Handlung beginne ich? (z. B. 'die ersten 3 Vokabeln laut lesen')",
           "lines": 2
         },
         {
@@ -23852,7 +24463,27 @@ export const generated: Material[] = [
         },
         {
           "kind": "box",
+          "text": "Hier male oder schreibe ich mein 5-Minuten-Versprechen als kleines Plakat für mich.",
+          "lines": 4
+        },
+        {
+          "kind": "heading",
+          "text": "Nach dem Probe-Start"
+        },
+        {
+          "kind": "question",
+          "text": "War das Anfangen so schlimm wie gedacht? Hätte ich gern weitergemacht?",
           "lines": 2
+        },
+        {
+          "kind": "scale",
+          "text": "Wie leicht ist mir der Start mit meinem Ritual gefallen?",
+          "items": [
+            "gar nicht leicht",
+            "ein bisschen",
+            "ziemlich leicht",
+            "ganz leicht"
+          ]
         }
       ]
     },
@@ -23944,11 +24575,15 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Mein Fortschritts-Detektiv-Blatt",
-      "intro": "Such wie ein Detektiv nach Beweisen dafür, was schon besser geworden ist – und schreib dir deine Anstrengung gut, nicht nur das Ergebnis.",
+      "intro": "Setz deine Detektiv-Brille auf! Such nach Beweisen dafür, was schon besser geworden ist – und schreib dir deine Anstrengung gut, nicht nur das Ergebnis.",
       "blocks": [
         {
           "kind": "heading",
-          "text": "Die Detektiv-Fragen"
+          "text": "Meine Detektiv-Funde"
+        },
+        {
+          "kind": "instruction",
+          "text": "Beantworte die Fragen oder lass dir von deinem Detektiv-Partner beim Erinnern helfen."
         },
         {
           "kind": "question",
@@ -23957,7 +24592,7 @@ export const generated: Material[] = [
         },
         {
           "kind": "question",
-          "text": "Wofür habe ich mich zuletzt angestrengt, auch wenn es schwer war?",
+          "text": "Wofür habe ich mich zuletzt richtig angestrengt, auch wenn es schwer war?",
           "lines": 2
         },
         {
@@ -23971,7 +24606,7 @@ export const generated: Material[] = [
         },
         {
           "kind": "instruction",
-          "text": "Mach aus 'Ich kann das nicht' ein 'Ich kann das NOCH NICHT'."
+          "text": "Aus 'Ich kann das nicht' wird 'Ich kann das NOCH NICHT'. So bleibt die Tür offen."
         },
         {
           "kind": "question",
@@ -23983,8 +24618,29 @@ export const generated: Material[] = [
           "text": "Mein erster Tagebuch-Eintrag"
         },
         {
-          "kind": "box",
-          "lines": 3
+          "kind": "question",
+          "text": "Mein Fortschritt: Das kann ich jetzt besser.",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "Meine Anstrengung: Da bin ich drangeblieben.",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "Mein nächstes 'Noch-nicht'-Ziel:",
+          "lines": 2
+        },
+        {
+          "kind": "scale",
+          "text": "Wie sehr sehe ich gerade meine eigenen Fortschritte?",
+          "items": [
+            "gar nicht",
+            "ein wenig",
+            "ziemlich gut",
+            "sehr gut"
+          ]
         }
       ]
     },
@@ -24229,7 +24885,7 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Meine Gerechtigkeits-Brille",
-      "intro": "Gerecht heißt nicht immer gleich. Manchmal braucht jemand etwas anderes, um mitzukommen. Schau genau hin.",
+      "intro": "Gerecht heißt nicht immer gleich. Manchmal braucht jemand etwas anderes, um mitzukommen. Schau an den Stationen genau hin und entscheide klug.",
       "blocks": [
         {
           "kind": "heading",
@@ -24237,17 +24893,34 @@ export const generated: Material[] = [
         },
         {
           "kind": "instruction",
-          "text": "Gleich = alle bekommen dasselbe. Gerecht = jede:r bekommt, was er oder sie braucht, um mitzumachen."
+          "text": "Gleich = alle bekommen genau dasselbe. Gerecht = jede:r bekommt, was er oder sie braucht, um mitzumachen."
         },
         {
           "kind": "question",
-          "text": "Ein Fall, bei dem GLEICHBEHANDLUNG für mich gerecht ist:",
+          "text": "Ein Fall, bei dem GLEICHBEHANDLUNG für mich gerecht ist – und warum:",
           "lines": 2
         },
         {
           "kind": "question",
-          "text": "Ein Fall, bei dem RÜCKSICHT auf das Bedürfnis gerechter ist:",
+          "text": "Ein Fall, bei dem RÜCKSICHT auf das Bedürfnis gerechter ist – und warum:",
           "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "Meine Stationen-Tabelle"
+        },
+        {
+          "kind": "instruction",
+          "text": "Trage zu Fällen von den Stationen ein, ob eher 'gleich' oder eher 'gerecht' passt."
+        },
+        {
+          "kind": "table",
+          "lines": 4,
+          "items": [
+            "Der Fall",
+            "Gleich oder gerecht?",
+            "Warum?"
+          ]
         },
         {
           "kind": "heading",
@@ -24255,7 +24928,7 @@ export const generated: Material[] = [
         },
         {
           "kind": "instruction",
-          "text": "Schreibe zwei Regeln, die dir helfen, gerecht zu entscheiden."
+          "text": "Schreibe zwei Regeln, die dir helfen, gerecht zu entscheiden, ohne dass es Willkür wird."
         },
         {
           "kind": "lines",
@@ -24274,6 +24947,16 @@ export const generated: Material[] = [
           "kind": "question",
           "text": "Wo wünsche ich mir, dass auf mein Bedürfnis Rücksicht genommen wird?",
           "lines": 2
+        },
+        {
+          "kind": "scale",
+          "text": "Wie gut gelingt es mir, zwischen 'gleich' und 'gerecht' zu unterscheiden?",
+          "items": [
+            "noch schwer",
+            "geht so",
+            "ziemlich gut",
+            "ganz sicher"
+          ]
         }
       ]
     },
@@ -24519,8 +25202,17 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Rückenwind und Gegenwind – meine Startlinie",
-      "intro": "Manche starten mit Vorsprung, andere mit Gegenwind – oft ohne es sich ausgesucht zu haben. Eine gerechte Gemeinschaft gleicht das aus.",
+      "intro": "Manche starten mit Vorsprung, andere mit Gegenwind – oft ohne es sich ausgesucht zu haben. Eine gerechte Gemeinschaft hilft, das auszugleichen. Denk an den Parcours zurück.",
       "blocks": [
+        {
+          "kind": "heading",
+          "text": "Wie war das im Parcours?"
+        },
+        {
+          "kind": "question",
+          "text": "Wie hat es sich angefühlt, als die Schritt-Karten verteilt wurden – vorn oder hinten zu stehen?",
+          "lines": 2
+        },
         {
           "kind": "heading",
           "text": "Verdient oder zugeteilt?"
@@ -24528,6 +25220,15 @@ export const generated: Material[] = [
         {
           "kind": "instruction",
           "text": "Manche Vorteile hat man sich erarbeitet (verdient), andere sind einem einfach zugefallen (zugeteilt)."
+        },
+        {
+          "kind": "table",
+          "text": "Sortiere, was im Leben Rückenwind oder Gegenwind sein kann.",
+          "lines": 4,
+          "items": [
+            "Rückenwind / Gegenwind",
+            "Verdient oder zugeteilt?"
+          ]
         },
         {
           "kind": "question",
@@ -24564,6 +25265,16 @@ export const generated: Material[] = [
             "Ich helfe, wenn jemand etwas nicht versteht",
             "Ich teile Material, wenn jemand keins hat",
             "Ich gönne anderen eine zweite Chance"
+          ]
+        },
+        {
+          "kind": "scale",
+          "text": "Wie oft achte ich darauf, anderen einen kleinen Rückenwind zu geben?",
+          "items": [
+            "selten",
+            "manchmal",
+            "oft",
+            "fast immer"
           ]
         }
       ]
@@ -24655,63 +25366,87 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Vier-Fragen-Prüfung: Echt oder erfunden?",
-      "intro": "Im Netz sieht Falsches oft genauso echt aus wie Wahres. Prüfe jede Meldung mit diesen vier Fragen, bevor du sie glaubst oder weiterschickst.",
+      "intro": "Im Netz sieht Falsches oft genauso echt aus wie Wahres – man erkennt es nicht am Aussehen, sondern nur durchs Nachprüfen. Untersuche eure Meldung mit den vier Fragen und entscheide begründet.",
       "blocks": [
         {
           "kind": "heading",
-          "text": "Unsere Meldung"
+          "text": "1. Unsere Meldung"
         },
         {
           "kind": "instruction",
-          "text": "Schreibe kurz auf, worum es in eurer Meldung geht."
+          "text": "Worum geht es in eurer Meldung? Schreibe es in eigenen Worten auf."
         },
         {
           "kind": "lines",
-          "lines": 2
+          "lines": 3
         },
         {
           "kind": "heading",
-          "text": "Die vier Prüf-Fragen"
+          "text": "2. Die Vier-Fragen-Prüfung"
         },
         {
-          "kind": "question",
-          "text": "1. WER sagt das? Gibt es eine erkennbare Quelle / ein echtes Medium?",
-          "lines": 2
+          "kind": "instruction",
+          "text": "Geht jede Frage durch und haltet eure Antwort kurz fest."
         },
         {
-          "kind": "question",
-          "text": "2. WANN ist es entstanden? Aktuell oder alt und neu aufgewärmt?",
-          "lines": 1
-        },
-        {
-          "kind": "question",
-          "text": "3. BEWEISE? Gibt es Belege – oder nur Behauptungen und große Gefühle?",
-          "lines": 2
-        },
-        {
-          "kind": "question",
-          "text": "4. WO STEHT ES SONST? Berichten auch andere, unabhängige Stellen?",
-          "lines": 2
-        },
-        {
-          "kind": "heading",
-          "text": "Unser Urteil"
-        },
-        {
-          "kind": "checklist",
+          "kind": "table",
+          "text": "Was sagt die Prüfung?",
+          "lines": 4,
           "items": [
-            "glaubwürdig",
-            "zweifelhaft",
-            "wahrscheinlich falsch"
+            "Frage",
+            "Was wir herausgefunden haben"
           ]
         },
         {
-          "kind": "heading",
-          "text": "Mein Vorsatz fürs nächste Mal"
+          "kind": "question",
+          "text": "WER sagt das? Gibt es eine erkennbare Quelle, einen Namen oder ein echtes Medium – oder bleibt das unklar?",
+          "lines": 3
         },
         {
-          "kind": "box",
-          "lines": 2
+          "kind": "question",
+          "text": "WO STEHT ES SONST? Berichten auch andere, unabhängige Stellen darüber? Wo habt ihr nachgeschaut?",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "3. Vorsicht-Signal: starke Gefühle"
+        },
+        {
+          "kind": "question",
+          "text": "Will die Meldung dich vor allem wütend, ängstlich oder empört machen? Woran merkst du das?",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "4. Unser Urteil"
+        },
+        {
+          "kind": "scale",
+          "text": "Wie glaubwürdig ist diese Meldung nach unserer Prüfung?",
+          "items": [
+            "wahrscheinlich falsch",
+            "zweifelhaft",
+            "eher glaubwürdig",
+            "glaubwürdig"
+          ]
+        },
+        {
+          "kind": "question",
+          "text": "Begründet euer Urteil: Welche Frage war am wichtigsten für eure Entscheidung?",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "5. Mein Vorsatz fürs nächste Mal"
+        },
+        {
+          "kind": "instruction",
+          "text": "Wer prüft, bevor er teilt, wird nicht zum Werkzeug für Lügen."
+        },
+        {
+          "kind": "question",
+          "text": "Was nimmst du dir konkret vor, bevor du das nächste Mal etwas glaubst oder weiterschickst?",
+          "lines": 3
         }
       ]
     },
@@ -24802,11 +25537,15 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Hochglanz und Wirklichkeit",
-      "intro": "Feeds zeigen nur die besten, ausgewählten Momente. Schau hinter den Hochglanz – und stopp den unfairen Vergleich mit deinem ganz normalen Leben.",
+      "intro": "Feeds zeigen fast nur die besten, ausgewählten Momente – eine Bühne, kein Fenster ins echte Leben. Schau hinter den Hochglanz und stopp den unfairen Vergleich mit deinem ganz normalen Alltag.",
       "blocks": [
         {
           "kind": "heading",
-          "text": "Die Tricks hinter perfekten Bildern"
+          "text": "1. Die Tricks hinter perfekten Bildern"
+        },
+        {
+          "kind": "instruction",
+          "text": "Kreuze an, welche Tricks dir bei solchen Bildern begegnen."
         },
         {
           "kind": "checklist",
@@ -24818,33 +25557,59 @@ export const generated: Material[] = [
           ]
         },
         {
+          "kind": "question",
+          "text": "Was sieht man auf solchen perfekten Bildern fast NIE? Nenne mehrere Dinge.",
+          "lines": 3
+        },
+        {
           "kind": "heading",
-          "text": "Mein Vorher-Nachher"
+          "text": "2. Mein ehrliches Vorher-Nachher"
         },
         {
           "kind": "instruction",
-          "text": "Links: wie ein 'perfekter Post' von dir aussähe. Rechts: was im echten Leben drumherum war."
+          "text": "Links: wie ein 'perfekter Post' von dir aussähe (malen oder beschreiben). Rechts: was im echten Leben drumherum war – Aufwand, Pannen, Unperfektes."
         },
         {
           "kind": "box",
-          "lines": 4
+          "text": "Hochglanz (der perfekte Post)",
+          "lines": 5
+        },
+        {
+          "kind": "box",
+          "text": "Wirklichkeit (was wirklich drumherum war)",
+          "lines": 5
+        },
+        {
+          "kind": "heading",
+          "text": "3. Wie geht es mir beim Vergleichen?"
+        },
+        {
+          "kind": "scale",
+          "text": "Wenn ich solche perfekten Posts sehe, fühle ich mich danach oft …",
+          "items": [
+            "sehr schlecht",
+            "schlecht",
+            "geht so",
+            "gut"
+          ]
         },
         {
           "kind": "question",
-          "text": "Was sieht man auf solchen perfekten Bildern NIE?",
-          "lines": 2
+          "text": "In welcher Situation vergleichst du dich am ehesten mit anderen Feeds? Was löst das in dir aus?",
+          "lines": 3
         },
         {
           "kind": "heading",
-          "text": "Mein Vergleichs-Stopp"
+          "text": "4. Mein Vergleichs-Stopp"
         },
         {
           "kind": "instruction",
-          "text": "Wähle einen Satz, der dir hilft, den Vergleich zu stoppen."
+          "text": "Du vergleichst deinen ganzen Film mit dem Trailer der anderen – kein Wunder, dass das unfair ist."
         },
         {
-          "kind": "box",
-          "lines": 2
+          "kind": "question",
+          "text": "Welchen Satz nimmst du dir vor, um den Vergleich zu stoppen? (z. B. 'Das ist nur ein Ausschnitt.')",
+          "lines": 3
         }
       ]
     },
@@ -24935,11 +25700,15 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Mein Bildschirm-Balance-Plan",
-      "intro": "Apps sind so gebaut, dass du nicht aufhören willst. Wenn du die Tricks kennst, bekommst du das Steuer über deine Zeit zurück.",
+      "intro": "Apps sind absichtlich so gebaut, dass du nicht aufhören willst – das ist keine Willensschwäche. Wenn du die Tricks durchschaust, bekommst du das Steuer über deine Zeit zurück.",
       "blocks": [
         {
           "kind": "heading",
-          "text": "Welcher Trick zieht bei mir am stärksten?"
+          "text": "1. Welche Tricks halten mich fest?"
+        },
+        {
+          "kind": "instruction",
+          "text": "Kreuze an, welcher Trick bei dir am stärksten zieht."
         },
         {
           "kind": "checklist",
@@ -24951,35 +25720,56 @@ export const generated: Material[] = [
           ]
         },
         {
-          "kind": "heading",
-          "text": "Teil 1: Bewusst starten"
-        },
-        {
           "kind": "question",
-          "text": "Welche Frage stelle ich mir, bevor ich eine App öffne?",
-          "lines": 2
+          "text": "Beschreibe eine Situation, in der ein Trick dich richtig erwischt hat ('Ich wollte nur kurz …').",
+          "lines": 3
         },
         {
           "kind": "heading",
-          "text": "Teil 2: Meine Gegen-Maßnahme"
+          "text": "2. Bewusst starten"
         },
         {
           "kind": "question",
-          "text": "Welchen Trick schalte ich konkret aus? (z. B. Töne aus, Autoplay aus, Endzeit setzen)",
-          "lines": 2
+          "text": "Welche Frage stelle ich mir, BEVOR ich eine App öffne? (Wozu öffne ich das – und wie lange?)",
+          "lines": 3
         },
         {
           "kind": "heading",
-          "text": "Teil 3: Meine Offline-Insel"
+          "text": "3. Meine Gegen-Maßnahme"
         },
         {
           "kind": "question",
-          "text": "Welche feste Zeit oder Tätigkeit ohne Bildschirm möchte ich mir gönnen?",
-          "lines": 2
+          "text": "Welchen Trick schalte ich konkret aus? (z. B. Töne aus, Autoplay aus, feste Endzeit setzen)",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "4. Meine Offline-Insel"
+        },
+        {
+          "kind": "question",
+          "text": "Welche feste Zeit oder Tätigkeit ohne Bildschirm gönne ich mir – und auf die ich mich freue?",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "5. Wer hat das Steuer?"
         },
         {
           "kind": "scale",
-          "text": "Wie sehr habe ich gerade das Gefühl, selbst zu entscheiden statt gezogen zu werden? (1 = die App entscheidet, 5 = ich entscheide)"
+          "text": "Wie sehr habe ich das Gefühl, selbst zu entscheiden statt gezogen zu werden?",
+          "items": [
+            "gar nicht",
+            "wenig",
+            "mittel",
+            "stark",
+            "sehr stark"
+          ]
+        },
+        {
+          "kind": "question",
+          "text": "Was wäre ein erster kleiner Schritt, mit dem du diese Woche mehr selbst entscheidest?",
+          "lines": 3
         }
       ]
     },
@@ -25074,15 +25864,42 @@ export const generated: Material[] = [
       "blocks": [
         {
           "kind": "heading",
-          "text": "Digitale Spuren – das macht sie besonders"
+          "text": "1. Digitale Spuren – das macht sie besonders"
         },
         {
           "kind": "instruction",
-          "text": "Sie bleiben. Sie verbreiten sich. Sie werden gesehen – auch von Leuten, an die du gerade nicht denkst."
+          "text": "Sie bleiben. Sie verbreiten sich. Sie werden gesehen – auch von Leuten, an die du gerade nicht denkst (später vielleicht Schule oder Ausbildungsbetrieb)."
+        },
+        {
+          "kind": "question",
+          "text": "Welches dieser drei Merkmale überrascht dich am meisten – und warum?",
+          "lines": 3
         },
         {
           "kind": "heading",
-          "text": "Meine Check-Fragen vor dem Teilen"
+          "text": "2. Kann ich teilen oder besser privat?"
+        },
+        {
+          "kind": "instruction",
+          "text": "Sortiere Beispiele in die Tabelle und schreibe kurz dazu, warum."
+        },
+        {
+          "kind": "table",
+          "text": "Mein Sortier-Check",
+          "lines": 5,
+          "items": [
+            "Inhalt",
+            "Teilen oder privat?",
+            "Warum?"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "3. Meine Check-Fragen vor dem Teilen"
+        },
+        {
+          "kind": "instruction",
+          "text": "Diese Fragen stelle ich mir, BEVOR ich auf 'Senden' tippe."
         },
         {
           "kind": "checklist",
@@ -25094,21 +25911,37 @@ export const generated: Material[] = [
           ]
         },
         {
-          "kind": "heading",
-          "text": "Kann ich teilen / Besser privat"
-        },
-        {
           "kind": "question",
-          "text": "Nenne je ein Beispiel und begründe kurz.",
+          "text": "Welche dieser Fragen ist für dich am wichtigsten – und welche vergisst du am ehesten?",
           "lines": 3
         },
         {
           "kind": "heading",
-          "text": "Eine Spur, auf die ich stolz wäre"
+          "text": "4. Wie sicher bin ich beim Posten?"
         },
         {
-          "kind": "box",
-          "lines": 2
+          "kind": "scale",
+          "text": "Wie oft halte ich gerade kurz inne, bevor ich etwas teile?",
+          "items": [
+            "fast nie",
+            "selten",
+            "manchmal",
+            "oft",
+            "fast immer"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "5. Eine Spur, auf die ich stolz wäre"
+        },
+        {
+          "kind": "instruction",
+          "text": "Du kannst deine Spuren nicht immer löschen – aber du kannst entscheiden, welche du hinterlässt."
+        },
+        {
+          "kind": "question",
+          "text": "Welche Art von Spur möchtest du gern im Netz hinterlassen (etwas Hilfreiches, Freundliches, Kreatives)?",
+          "lines": 3
         }
       ]
     },
@@ -26137,7 +26970,7 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Unsere Gesprächs-Chips",
-      "intro": "Faire Gespräche heißt: Alle kommen zu Wort und alle hören zu. Überlege nach dem Spiel, wie es bei dir war.",
+      "intro": "Bei einem fairen Gespräch kommen alle zu Wort und alle hören zu. Schau zurück: Wie war es bei dir mit den Chips?",
       "blocks": [
         {
           "kind": "heading",
@@ -26158,35 +26991,55 @@ export const generated: Material[] = [
           "kind": "scale",
           "text": "Wie gut habe ich den anderen zugehört?",
           "items": [
-            "geht so",
+            "gar nicht",
+            "ein bisschen",
             "gut",
             "sehr gut"
           ]
         },
         {
           "kind": "heading",
-          "text": "Nachdenken"
+          "text": "Mein Bild vom Gespräch"
+        },
+        {
+          "kind": "box",
+          "text": "Male deine Gruppe im Kreis. Zeichne, wer viel geredet hat (viele Chips) und wer wenig.",
+          "lines": 6
+        },
+        {
+          "kind": "heading",
+          "text": "Darüber denke ich nach"
+        },
+        {
+          "kind": "question",
+          "text": "Wie war es für dich, mit den Chips zu sprechen? War es leichter oder schwerer als sonst?",
+          "lines": 3
         },
         {
           "kind": "question",
           "text": "Was hat geholfen, dass mehr Kinder zu Wort kamen?",
-          "lines": 2
+          "lines": 3
         },
         {
           "kind": "question",
-          "text": "Wen könnte ich beim nächsten Mal mehr einbeziehen – und mit welcher Frage?",
-          "lines": 2
+          "text": "Wen möchte ich beim nächsten Mal mehr einbeziehen? Mit welcher Frage hole ich diese Stimme dazu?",
+          "lines": 3
         },
         {
           "kind": "heading",
           "text": "Unsere Gesprächsregeln"
         },
         {
+          "kind": "instruction",
+          "text": "Kreuze die Regeln an, die du dir besonders merken willst."
+        },
+        {
           "kind": "checklist",
           "items": [
             "Wir lassen einander ausreden.",
             "Wir hören zu, bevor wir antworten.",
-            "Wir holen auch leise Stimmen dazu."
+            "Wir holen auch leise Stimmen dazu.",
+            "Ich frage nach: 'Was meinst du dazu?'"
           ]
         }
       ]
@@ -26276,30 +27129,31 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Meine Chronik-Seite",
-      "intro": "Das ist deine Seite in unserer Klassen-Chronik. Fülle sie so aus, dass man dich darin gut wiedererkennt.",
+      "intro": "Das ist deine Seite in unserer Klassen-Chronik. Gestalte sie so, dass man dich darin gut wiedererkennt - mit Worten und einem Bild von dir.",
       "blocks": [
         {
           "kind": "heading",
           "text": "Das bin ich"
         },
         {
-          "kind": "instruction",
-          "text": "Schreibe oder male, was wichtig zu dir gehört. Du musst nicht alles ausfüllen - wähle, was zu dir passt."
+          "kind": "box",
+          "text": "Male hier ein Bild von dir oder zeichne etwas, das gut zu dir passt.",
+          "lines": 6
         },
         {
           "kind": "question",
-          "text": "Mein Name und worüber ich mich freuen kann:",
+          "text": "Mein Name und das mag ich besonders gern:",
           "lines": 2
         },
         {
           "kind": "question",
-          "text": "Darin bin ich gut (eine Stärke von mir):",
-          "lines": 2
+          "text": "Darin bin ich gut (eine oder zwei Stärken von mir):",
+          "lines": 3
         },
         {
           "kind": "question",
           "text": "Das wünsche ich mir für unsere Klasse:",
-          "lines": 2
+          "lines": 3
         },
         {
           "kind": "heading",
@@ -26311,7 +27165,7 @@ export const generated: Material[] = [
         },
         {
           "kind": "lines",
-          "lines": 3
+          "lines": 4
         },
         {
           "kind": "heading",
@@ -26320,10 +27174,15 @@ export const generated: Material[] = [
         {
           "kind": "checklist",
           "items": [
-            "Ich habe meine Seite gestaltet.",
+            "Ich habe meine Seite gestaltet und gemalt.",
             "Ich habe für zwei andere einen wertschätzenden Satz geschrieben.",
             "Ich habe meinem Team bei einem Beitrag geholfen."
           ]
+        },
+        {
+          "kind": "question",
+          "text": "Was habe ich beim Gestalten Neues über jemanden in unserer Klasse erfahren?",
+          "lines": 3
         }
       ]
     },
@@ -26975,11 +27834,11 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Der stumme Auftrag - Mein Beobachtungsblatt",
-      "intro": "Fülle dieses Blatt nach den stillen Aufgaben aus. Denke daran, wie ihr euch ohne Worte verständigt habt.",
+      "intro": "Ihr habt mehrere Aufgaben gelöst, ohne ein einziges Wort zu sagen. Halte hier fest, wie ihr euch nur über Blicke, Gesten und Aufmerksamkeit verständigt habt.",
       "blocks": [
         {
           "kind": "heading",
-          "text": "Unsere stillen Signale"
+          "text": "1. Unsere stillen Signale"
         },
         {
           "kind": "instruction",
@@ -26992,19 +27851,37 @@ export const generated: Material[] = [
             "Nicken / Kopfschütteln",
             "Blickkontakt",
             "Mimik (Gesicht)",
-            "Hände / Gesten",
+            "Hände und Gesten",
             "Antippen / sanftes Lenken",
             "Vormachen / Nachmachen"
           ]
         },
         {
           "kind": "heading",
-          "text": "Was ist mir aufgefallen?"
+          "text": "2. Aufgabe für Aufgabe"
+        },
+        {
+          "kind": "instruction",
+          "text": "Wie gut hat es bei den einzelnen Aufgaben ohne Worte geklappt? Trage kurz ein."
+        },
+        {
+          "kind": "table",
+          "text": "Stille Aufgabe",
+          "lines": 3,
+          "items": [
+            "Aufgabe",
+            "So lief es (gut / schwer)",
+            "Welches Signal hat geholfen?"
+          ]
         },
         {
           "kind": "question",
-          "text": "Welche Aufgabe war ohne Worte am schwierigsten - und warum?",
+          "text": "Welche Aufgabe war ohne Worte am schwierigsten - und warum gerade diese?",
           "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "3. Wer hat geführt?"
         },
         {
           "kind": "question",
@@ -27012,8 +27889,13 @@ export const generated: Material[] = [
           "lines": 3
         },
         {
+          "kind": "question",
+          "text": "Hat sich jemand eher zurückgehalten? Wie hätte man diese Person stiller einbeziehen können?",
+          "lines": 3
+        },
+        {
           "kind": "scale",
-          "text": "Wie gut habe ich heute auf die anderen geachtet?",
+          "text": "Wie genau habe ich heute auf die anderen geachtet?",
           "items": [
             "kaum",
             "ein wenig",
@@ -27024,12 +27906,12 @@ export const generated: Material[] = [
         },
         {
           "kind": "heading",
-          "text": "Mein Vorsatz"
+          "text": "4. Mein Vorsatz"
         },
         {
           "kind": "box",
           "text": "Das nehme ich mir für die nächste Teamarbeit vor:",
-          "lines": 3
+          "lines": 4
         }
       ]
     },
@@ -27114,15 +27996,15 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Inselrettung - Team-Auswertung",
-      "intro": "Fülle dieses Blatt nach der Rettung aus. Denke daran, wie ihr es geschafft habt, dass alle ans Ufer kamen.",
+      "intro": "Ihr habt es als Team über die Trittsteine ans rettende Ufer geschafft - niemand durfte zurückbleiben. Schau zurück: Wie habt ihr das gemeinsam hinbekommen?",
       "blocks": [
         {
           "kind": "heading",
-          "text": "1. Unser Weg ans Ufer"
+          "text": "1. Unser Plan und unser Weg"
         },
         {
           "kind": "question",
-          "text": "Was war unsere wichtigste Idee, damit ALLE es geschafft haben?",
+          "text": "Was war unsere wichtigste Idee oder Strategie, damit wirklich ALLE es geschafft haben?",
           "lines": 3
         },
         {
@@ -27131,8 +28013,27 @@ export const generated: Material[] = [
           "lines": 3
         },
         {
+          "kind": "question",
+          "text": "Wie haben wir reagiert, als jemand einen Fehler gemacht hat oder wir neu planen mussten?",
+          "lines": 3
+        },
+        {
           "kind": "heading",
-          "text": "2. Zusammenhalt im Team"
+          "text": "2. Wie wir uns geholfen haben"
+        },
+        {
+          "kind": "instruction",
+          "text": "Trage Beispiele ein, wie ihr euch während der Rettung gegenseitig unterstützt habt."
+        },
+        {
+          "kind": "table",
+          "text": "Hilfe im Team",
+          "lines": 4,
+          "items": [
+            "Wer half?",
+            "Wem?",
+            "Wie genau (gestützt, Stein gereicht, Mut gemacht ...)?"
+          ]
         },
         {
           "kind": "scale",
@@ -27146,18 +28047,13 @@ export const generated: Material[] = [
           ]
         },
         {
-          "kind": "question",
-          "text": "Wer hat heute besonders zum Zusammenhalt beigetragen - auch leise und unauffällig? (Namen + was sie getan haben)",
-          "lines": 3
-        },
-        {
           "kind": "heading",
           "text": "3. Mein eigener Beitrag"
         },
         {
-          "kind": "lines",
+          "kind": "question",
           "text": "Das habe ICH zum Gelingen beigetragen:",
-          "lines": 2
+          "lines": 3
         },
         {
           "kind": "box",
@@ -27248,30 +28144,35 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Das Zahnrad-Werk - Mein Teil im Ganzen",
-      "intro": "Fülle dieses Blatt nach der Teamaufgabe aus. Denke an deine Rolle und an die der anderen.",
+      "intro": "Ihr wart eine Maschine: Jede:r ein Zahnrad, das gebraucht wird. Denke an deine Rolle und daran, wie alle Teile ineinandergegriffen haben.",
       "blocks": [
         {
           "kind": "heading",
-          "text": "Meine Rolle"
-        },
-        {
-          "kind": "lines",
-          "text": "Meine Pflichtrolle im Team war:",
-          "lines": 1
+          "text": "1. Meine Rolle"
         },
         {
           "kind": "question",
-          "text": "Wie hat es sich angefühlt, ein notwendiges 'Zahnrad' zu sein, das gebraucht wird?",
+          "text": "Welche Pflichtrolle hattest du im Team - und was war genau deine Aufgabe?",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "Wie hat es sich angefühlt, ein notwendiges 'Zahnrad' zu sein, auf das die anderen angewiesen waren?",
           "lines": 3
         },
         {
           "kind": "heading",
-          "text": "Aufeinander angewiesen"
+          "text": "2. Aufeinander angewiesen"
         },
         {
           "kind": "question",
-          "text": "Was passierte (oder wäre passiert), wenn deine Rolle ausgefallen wäre?",
-          "lines": 2
+          "text": "Was passierte (oder wäre passiert), wenn deine Rolle ausgefallen wäre oder gegen den Takt gearbeitet hätte?",
+          "lines": 3
+        },
+        {
+          "kind": "question",
+          "text": "War es schwer, NICHT in die Aufgabe der anderen einzugreifen? Wie bist du damit umgegangen?",
+          "lines": 3
         },
         {
           "kind": "scale",
@@ -27286,7 +28187,7 @@ export const generated: Material[] = [
         },
         {
           "kind": "heading",
-          "text": "Wertschätzung"
+          "text": "3. Wertschätzung"
         },
         {
           "kind": "question",
@@ -27294,8 +28195,12 @@ export const generated: Material[] = [
           "lines": 3
         },
         {
+          "kind": "heading",
+          "text": "4. Mein Mitnehm-Satz"
+        },
+        {
           "kind": "box",
-          "text": "Was ich für die nächste Teamarbeit gelernt habe:",
+          "text": "Das habe ich für die nächste Teamarbeit gelernt:",
           "lines": 3
         }
       ]
@@ -27380,7 +28285,7 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Im Spiegel der Gruppe - Mein Fremdbild",
-      "intro": "Heute hast du gehört, wie andere dich wahrnehmen. Halte fest, was du über dein Fremdbild gelernt hast. Niemand außer dir muss dieses Blatt lesen.",
+      "intro": "Heute hast du auf dem Spiegel-Stuhl gehört, wie andere dich wahrnehmen. Halte fest, was du über dein Fremdbild gelernt hast. Niemand außer dir muss dieses Blatt lesen.",
       "blocks": [
         {
           "kind": "heading",
@@ -27388,7 +28293,7 @@ export const generated: Material[] = [
         },
         {
           "kind": "instruction",
-          "text": "Trage hier die drei Eigenschaften ein, von denen du VOR der Runde vermutet hast, dass andere sie an dir sehen."
+          "text": "Trage die drei Eigenschaften ein, von denen du VOR der Runde vermutet hast, dass andere sie an dir sehen."
         },
         {
           "kind": "lines",
@@ -27400,7 +28305,7 @@ export const generated: Material[] = [
         },
         {
           "kind": "instruction",
-          "text": "Notiere drei Rückmeldungen, die du im Spiegel-Stuhl bekommen hast."
+          "text": "Notiere drei Rückmeldungen, die du im Spiegel-Stuhl von der Gruppe bekommen hast."
         },
         {
           "kind": "lines",
@@ -27408,39 +28313,46 @@ export const generated: Material[] = [
         },
         {
           "kind": "heading",
-          "text": "3. Vergleich"
+          "text": "3. Vergleich von Selbst- und Fremdbild"
         },
         {
           "kind": "question",
-          "text": "Welche Rückmeldung hat dich am meisten überrascht - und warum?"
-        },
-        {
-          "kind": "lines",
+          "text": "Welche Rückmeldung hat dich am meisten überrascht - und warum?",
           "lines": 3
         },
         {
           "kind": "question",
-          "text": "Welche Rückmeldung hat dir besonders gutgetan?"
-        },
-        {
-          "kind": "lines",
-          "lines": 2
+          "text": "Welche Rückmeldung hat dir besonders gutgetan? Was hat sie in dir ausgelöst?",
+          "lines": 3
         },
         {
           "kind": "scale",
-          "text": "Wie stark passt das Fremdbild der Gruppe zu deinem eigenen Selbstbild? (1 = ganz anders, 6 = fast gleich)"
+          "text": "Wie stark passt das Fremdbild der Gruppe zu deinem eigenen Selbstbild?",
+          "items": [
+            "ganz anders",
+            "eher anders",
+            "teils",
+            "ähnlich",
+            "fast gleich"
+          ]
         },
         {
           "kind": "heading",
-          "text": "4. Mein Mitnehm-Satz"
+          "text": "4. Anderen etwas Gutes sagen"
         },
         {
-          "kind": "instruction",
-          "text": "Vervollständige: \"Andere sehen an mir eine Stärke, die ich selbst oft vergesse - nämlich ...\""
-        },
-        {
-          "kind": "lines",
+          "kind": "question",
+          "text": "Wie war es für dich, anderen eine wertschätzende Rückmeldung zu geben?",
           "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "5. Mein Mitnehm-Satz"
+        },
+        {
+          "kind": "box",
+          "text": "Vervollständige: 'Andere sehen an mir eine Stärke, die ich selbst oft vergesse - nämlich ...'",
+          "lines": 3
         }
       ]
     },
@@ -27523,7 +28435,7 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Lies mein Gesicht - Beobachten, deuten, nachfragen",
-      "intro": "Wir lesen ständig die Körpersignale anderer. Übe, das Gesehene von dem Vermuteten zu trennen.",
+      "intro": "Wir lesen ständig die Körpersignale anderer und urteilen oft blitzschnell. Übe heute, das Gesehene (Beobachtung) vom Vermuteten (Deutung) zu trennen.",
       "blocks": [
         {
           "kind": "heading",
@@ -27531,11 +28443,16 @@ export const generated: Material[] = [
         },
         {
           "kind": "instruction",
-          "text": "Kreuze bei jeder Aussage an, ob es eine Beobachtung (überprüfbar) oder eine Deutung (Vermutung) ist."
+          "text": "Schreibe zu jeder Aussage in die letzte Spalte, ob es eine BEOBACHTUNG (überprüfbar) oder eine DEUTUNG (Vermutung) ist."
         },
         {
           "kind": "table",
-          "text": "Aussage | Beobachtung | Deutung — z. B. 'Sie schaut auf den Boden' / 'Sie schämt sich' / 'Er lacht laut' / 'Er fühlt sich überlegen'"
+          "text": "Aussage einordnen",
+          "lines": 5,
+          "items": [
+            "Aussage (z. B. 'Sie schaut auf den Boden')",
+            "Beobachtung oder Deutung?"
+          ]
         },
         {
           "kind": "heading",
@@ -27543,10 +28460,11 @@ export const generated: Material[] = [
         },
         {
           "kind": "instruction",
-          "text": "Beobachtung: 'Jemand verschränkt die Arme und sagt wenig.' Schreibe drei ganz verschiedene Gefühle/Gründe auf, die dahinterstecken könnten."
+          "text": "Beobachtung: 'Jemand verschränkt die Arme und sagt wenig.'"
         },
         {
-          "kind": "lines",
+          "kind": "question",
+          "text": "Schreibe drei ganz verschiedene Gefühle oder Gründe auf, die dahinterstecken könnten.",
           "lines": 3
         },
         {
@@ -27554,12 +28472,9 @@ export const generated: Material[] = [
           "text": "3. Nachfragen üben"
         },
         {
-          "kind": "instruction",
-          "text": "Formuliere eine behutsame Nachfrage, mit der du deine Deutung überprüfst (Muster: 'Ich habe den Eindruck, du bist ... - stimmt das?')."
-        },
-        {
-          "kind": "lines",
-          "lines": 2
+          "kind": "question",
+          "text": "Formuliere eine behutsame Nachfrage, mit der du deine Deutung überprüfst (Muster: 'Ich habe den Eindruck, du bist ... - stimmt das?').",
+          "lines": 3
         },
         {
           "kind": "heading",
@@ -27574,16 +28489,24 @@ export const generated: Material[] = [
           ]
         },
         {
+          "kind": "scale",
+          "text": "Wie sicher fühle ich mich jetzt, Beobachtung und Deutung zu trennen?",
+          "items": [
+            "unsicher",
+            "geht so",
+            "teils",
+            "ziemlich sicher",
+            "sehr sicher"
+          ]
+        },
+        {
           "kind": "heading",
           "text": "5. Mein Vorsatz"
         },
         {
           "kind": "question",
-          "text": "In welcher Situation der nächsten Tage probierst du den geschärften Blick bewusst aus?"
-        },
-        {
-          "kind": "lines",
-          "lines": 2
+          "text": "In welcher Situation der nächsten Tage probierst du den geschärften Blick bewusst aus?",
+          "lines": 3
         }
       ]
     },
@@ -27667,18 +28590,15 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Stille Post über Menschen - Mein fairer Blick",
-      "intro": "Vieles, was wir über andere zu wissen glauben, ist Hörensagen. Halte fest, wie du dir ein eigenes, faires Bild machst.",
+      "intro": "Vieles, was wir über andere zu wissen glauben, ist Hörensagen. Halte fest, wie aus einer Information ein Gerücht wird - und wie du dir ein eigenes, faires Bild machst.",
       "blocks": [
         {
           "kind": "heading",
           "text": "1. Was im Experiment passiert ist"
         },
         {
-          "kind": "instruction",
-          "text": "Vergleiche Anfangs- und Endversion der Stille Post. Was wurde weggelassen, übertrieben oder hinzugedichtet?"
-        },
-        {
-          "kind": "lines",
+          "kind": "question",
+          "text": "Vergleiche Anfangs- und Endversion der Stille Post: Was wurde weggelassen, übertrieben oder hinzugedichtet?",
           "lines": 3
         },
         {
@@ -27687,11 +28607,16 @@ export const generated: Material[] = [
         },
         {
           "kind": "instruction",
-          "text": "Notiere ein Beispiel, wie aus einer harmlosen Beobachtung über eine Person eine negative Bewertung wurde."
+          "text": "So verändert sich eine Aussage Schritt für Schritt. Fülle ein Beispiel aus."
         },
         {
-          "kind": "lines",
-          "lines": 2
+          "kind": "table",
+          "text": "Vom Fakt zum Gerücht",
+          "lines": 3,
+          "items": [
+            "Was war wirklich (Fakt)?",
+            "Was wurde daraus gemacht (Urteil)?"
+          ]
         },
         {
           "kind": "heading",
@@ -27699,10 +28624,7 @@ export const generated: Material[] = [
         },
         {
           "kind": "question",
-          "text": "Hattest du schon einmal eine feste Meinung über jemanden, BEVOR du die Person wirklich kanntest? Woher kam dieses Bild?"
-        },
-        {
-          "kind": "lines",
+          "text": "Hattest du schon einmal eine feste Meinung über jemanden, BEVOR du die Person wirklich kanntest? Woher kam dieses Bild?",
           "lines": 3
         },
         {
@@ -27712,7 +28634,7 @@ export const generated: Material[] = [
         {
           "kind": "checklist",
           "items": [
-            "Ich frage: 'Woher weißt du das?'",
+            "Ich frage nach: 'Woher weißt du das?'",
             "Ich trage ein Gerücht nicht weiter.",
             "Ich suche selbst das Gespräch mit der Person.",
             "Ich begegne der Person unvoreingenommen."
@@ -27724,23 +28646,28 @@ export const generated: Material[] = [
         },
         {
           "kind": "question",
-          "text": "Wie würde es sich anfühlen, wenn ein falsches Gerücht über DICH dein Bild bei anderen verzerrt?"
+          "text": "Wie würde es sich anfühlen, wenn ein falsches Gerücht über DICH dein Bild bei anderen verzerrt?",
+          "lines": 3
         },
         {
-          "kind": "lines",
-          "lines": 2
+          "kind": "scale",
+          "text": "Wie wichtig ist es mir ab jetzt, mir selbst ein Bild zu machen?",
+          "items": [
+            "gar nicht",
+            "wenig",
+            "teils",
+            "wichtig",
+            "sehr wichtig"
+          ]
         },
         {
           "kind": "heading",
           "text": "6. Mein Leitsatz"
         },
         {
-          "kind": "instruction",
-          "text": "Vervollständige: 'Ich urteile erst, wenn ...'"
-        },
-        {
-          "kind": "lines",
-          "lines": 1
+          "kind": "box",
+          "text": "Vervollständige: 'Ich urteile über einen Menschen erst, wenn ...'",
+          "lines": 2
         }
       ]
     },
@@ -27823,7 +28750,7 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Der Sympathie-Sog - Meinem Schnellurteil auf der Spur",
-      "intro": "Wir schätzen Menschen in Sekunden ein. Untersuche, wovon dein Bild von anderen heimlich gesteuert wird.",
+      "intro": "Wir schätzen Menschen in Sekunden ein - lange bevor wir sie kennen. Geh heute deinen eigenen Sofort-Urteilen auf den Grund und finde heraus, was dein Bild von anderen heimlich steuert.",
       "blocks": [
         {
           "kind": "heading",
@@ -27831,22 +28758,36 @@ export const generated: Material[] = [
         },
         {
           "kind": "question",
-          "text": "Beim Einstieg: Wie schnell hattest du eine Meinung zu den Gesichtern - und wie viel wusstest du wirklich über diese Personen?"
+          "text": "Beim Einstieg hattest du in Sekunden eine Meinung zu fremden Gesichtern. Woran hast du sie festgemacht - und wie viel wusstest du wirklich über diese Personen?",
+          "lines": 3
         },
         {
-          "kind": "lines",
-          "lines": 2
+          "kind": "scale",
+          "text": "Wie sicher warst du dir bei deinen Blitz-Urteilen, obwohl du fast nichts wusstest?",
+          "items": [
+            "gar nicht sicher",
+            "ein bisschen",
+            "mittel",
+            "ziemlich sicher",
+            "sehr sicher"
+          ]
         },
         {
           "kind": "heading",
-          "text": "2. Das Experiment - ein Wort verändert alles"
+          "text": "2. Das Experiment - ein einziges Wort verändert alles"
         },
         {
           "kind": "instruction",
-          "text": "Notiere, wie dein Urteil über die beschriebene Person ausfiel - und wie es sich erklärt, dass die andere Gruppe zu einem anderen Ergebnis kam."
+          "text": "Beide Gruppen lasen fast dieselbe Beschreibung - nur ein Wort war anders (herzlich / distanziert)."
         },
         {
-          "kind": "lines",
+          "kind": "question",
+          "text": "Wie ist dein Urteil über die Person ausgefallen? Und wie erklärst du dir, dass die andere Gruppe dieselbe Person ganz anders gesehen hat?",
+          "lines": 4
+        },
+        {
+          "kind": "question",
+          "text": "Das nennt man Halo-Effekt: Ein einziges Merkmal färbt das ganze Bild ein. Wo könnte dir das im Alltag passieren?",
           "lines": 3
         },
         {
@@ -27855,39 +28796,58 @@ export const generated: Material[] = [
         },
         {
           "kind": "instruction",
-          "text": "Welche Merkmale machen jemanden für DICH sofort sympathisch oder unsympathisch? Sei ehrlich."
+          "text": "Welche Merkmale lösen bei DIR einen Sympathie-Sog aus - im Guten wie im Schlechten? Sei ehrlich, niemand muss es lesen."
         },
         {
           "kind": "table",
-          "text": "Macht mir jemanden sympathisch | Macht mir jemanden unsympathisch"
+          "text": "Mein Sympathie-Sog",
+          "lines": 5,
+          "items": [
+            "Macht mir jemanden sofort sympathisch",
+            "Macht mir jemanden sofort unsympathisch"
+          ]
         },
         {
           "kind": "heading",
-          "text": "4. Ehrliche Selbstreflexion"
+          "text": "4. Wer zahlt den Preis?"
         },
         {
           "kind": "question",
-          "text": "Wann hast du jemanden zu schnell ab- oder aufgewertet - und lagst damit daneben?"
-        },
-        {
-          "kind": "lines",
-          "lines": 3
-        },
-        {
-          "kind": "scale",
-          "text": "Wie oft folgst du im Alltag deinem ersten Eindruck, ohne ihn zu hinterfragen? (1 = fast nie, 6 = fast immer)"
+          "text": "Welche Vor- und Nachteile hat es, sofort sympathisch oder unsympathisch zu wirken? Wer wird durch solche Schnellurteile immer wieder benachteiligt?",
+          "lines": 4
         },
         {
           "kind": "heading",
-          "text": "5. Mein zweiter Blick"
+          "text": "5. Ehrliche Selbstreflexion"
+        },
+        {
+          "kind": "question",
+          "text": "Wann hast du selbst jemanden zu schnell ab- oder aufgewertet - und lagst damit daneben? Was hat dich eines Besseren belehrt?",
+          "lines": 4
+        },
+        {
+          "kind": "scale",
+          "text": "Wie oft folgst du im Alltag deinem ersten Eindruck, ohne ihn zu hinterfragen?",
+          "items": [
+            "fast nie",
+            "selten",
+            "manchmal",
+            "oft",
+            "fast immer"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "6. Mein zweiter Blick"
         },
         {
           "kind": "instruction",
-          "text": "Vervollständige: 'Wenn mir jemand auf Anhieb unsympathisch ist, will ich künftig ...'"
+          "text": "Ein Schnellurteil lässt sich nicht abschalten - aber du kannst ihm einen 'zweiten Blick' hinterherschicken und der Person eine echte Chance geben."
         },
         {
-          "kind": "lines",
-          "lines": 2
+          "kind": "question",
+          "text": "Mein konkreter Vorsatz: Wenn mir jemand auf Anhieb unsympathisch ist, will ich künftig ...",
+          "lines": 3
         }
       ]
     },
@@ -28547,7 +29507,7 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Mein Streit-Stopp-Knopf",
-      "intro": "Wenn die Wut hochkocht, hilft dir dein Stopp-Knopf. Halte hier fest, wie er für dich aussieht und wie du ihn benutzt.",
+      "intro": "Wenn die Wut hochkocht, rutscht schnell ein böses Wort oder ein Schubs heraus - und hinterher tut es allen leid. Dein Stopp-Knopf schenkt dir einen kleinen Moment zum Nachdenken. Halte hier fest, wie er für dich aussieht und wie du ihn benutzt.",
       "blocks": [
         {
           "kind": "heading",
@@ -28555,7 +29515,7 @@ export const generated: Material[] = [
         },
         {
           "kind": "box",
-          "text": "Male hier deinen Stopp-Knopf mit deinem Beruhigungs-Bild.",
+          "text": "Male hier deinen Stopp-Knopf mit deinem Beruhigungs-Bild (z. B. eine Welle, eine Wolke, dein Lieblingsort).",
           "lines": 5
         },
         {
@@ -28564,10 +29524,7 @@ export const generated: Material[] = [
         },
         {
           "kind": "question",
-          "text": "Mit welcher Geste drückst du deinen Knopf, wenn du keinen echten dabeihast?"
-        },
-        {
-          "kind": "lines",
+          "text": "Mit welcher Geste drückst du deinen Knopf, wenn du keinen echten dabeihast? (z. B. flache Hand auf die Brust)",
           "lines": 2
         },
         {
@@ -28575,10 +29532,14 @@ export const generated: Material[] = [
           "text": "3. Meine drei Schritte"
         },
         {
+          "kind": "instruction",
+          "text": "Diese drei Schritte machst du, sobald du den Knopf gedrückt hast:"
+        },
+        {
           "kind": "checklist",
           "items": [
             "STOPP - ich halte kurz inne.",
-            "ATMEN - ich atme dreimal tief.",
+            "ATMEN - ich atme dreimal tief ein und aus.",
             "ABKÜHLEN - ich zähle bis fünf oder trete einen Schritt zurück."
           ]
         },
@@ -28588,23 +29549,56 @@ export const generated: Material[] = [
         },
         {
           "kind": "question",
-          "text": "Woran merkst du in deinem Körper, dass die Wut hochkommt? (z. B. heißer Kopf, schnelles Herz)"
+          "text": "Woran merkst du in deinem Körper, dass die Wut hochkommt? (z. B. heißer Kopf, schnelles Herz, geballte Fäuste)",
+          "lines": 3
         },
         {
-          "kind": "lines",
-          "lines": 2
+          "kind": "scale",
+          "text": "Wie ist dein Wut-Wetter gerade, wenn jemand dich richtig ärgert?",
+          "items": [
+            "Sonne",
+            "Wolke",
+            "Regen",
+            "Gewitter"
+          ]
         },
         {
           "kind": "heading",
-          "text": "5. Mein Merksatz"
+          "text": "5. Den Knopf im Streit ausprobiert"
+        },
+        {
+          "kind": "question",
+          "text": "In den Streit-Szenen hast du den Knopf gedrückt: Wie hat es sich angefühlt, erst zu stoppen und dann zu reden - leicht oder schwer?",
+          "lines": 3
+        },
+        {
+          "kind": "scale",
+          "text": "Wie gut konntest du in der Übung den Knopf wirklich drücken, bevor du losgelegt hast?",
+          "items": [
+            "gar nicht",
+            "ein bisschen",
+            "mittel",
+            "gut",
+            "sehr gut"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "6. Mein Knopf im echten Leben"
+        },
+        {
+          "kind": "question",
+          "text": "In welchem echten Streit willst du das nächste Mal deinen Stopp-Knopf benutzen?",
+          "lines": 2
         },
         {
           "kind": "instruction",
-          "text": "Vervollständige: 'Erst Stopp und Atmen - dann ...'"
+          "text": "Vervollständige deinen Merksatz - er hilft dir, wenn es das nächste Mal hochkocht:"
         },
         {
-          "kind": "lines",
-          "lines": 1
+          "kind": "question",
+          "text": "Erst Stopp und Atmen - dann ...",
+          "lines": 2
         }
       ]
     },
@@ -28688,7 +29682,7 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Die Wünsche-Tauschbörse",
-      "intro": "Hinter jedem Streit steckt ein Wunsch. Finde heraus, was du willst und was die andere Person will - und dann eine Lösung für beide.",
+      "intro": "Hinter jedem Streit steckt ein Wunsch. Finde heraus, was du willst und was die andere Person will - und dann eine Lösung, bei der beide etwas bekommen.",
       "blocks": [
         {
           "kind": "heading",
@@ -28696,10 +29690,16 @@ export const generated: Material[] = [
         },
         {
           "kind": "instruction",
-          "text": "Schreibe oder male einen Wunsch, den du dir oft wünschst."
+          "text": "Male oder schreibe einen Wunsch, den du dir in der Klasse oder im Hof oft wünschst."
         },
         {
-          "kind": "lines",
+          "kind": "box",
+          "text": "Hier kannst du deinen Wunsch malen.",
+          "lines": 5
+        },
+        {
+          "kind": "question",
+          "text": "Mein Wunsch in Worten: Ich wünsche mir, dass ...",
           "lines": 2
         },
         {
@@ -28708,15 +29708,20 @@ export const generated: Material[] = [
         },
         {
           "kind": "instruction",
-          "text": "Höre gut zu und schreibe auf, was sich die andere Person wünscht."
+          "text": "Höre gut zu. Sage dann mit eigenen Worten zurück: \"Du wünschst dir also, dass ...\""
         },
         {
-          "kind": "lines",
+          "kind": "question",
+          "text": "Die andere Person wünscht sich, dass ...",
           "lines": 2
         },
         {
           "kind": "heading",
           "text": "3. Unsere drei Lösungs-Werkzeuge"
+        },
+        {
+          "kind": "instruction",
+          "text": "Kreuze an, welches Werkzeug ihr benutzt habt."
         },
         {
           "kind": "checklist",
@@ -28732,11 +29737,18 @@ export const generated: Material[] = [
         },
         {
           "kind": "question",
-          "text": "Welche Lösung habt ihr an der Tauschbörse gefunden, bei der beide etwas bekommen?"
+          "text": "Welche Lösung habt ihr an der Tauschbörse gefunden, bei der beide etwas bekommen?",
+          "lines": 3
         },
         {
-          "kind": "lines",
-          "lines": 3
+          "kind": "scale",
+          "text": "Wie zufrieden seid ihr beide mit eurer Lösung?",
+          "items": [
+            "gar nicht",
+            "ein bisschen",
+            "ziemlich",
+            "sehr"
+          ]
         },
         {
           "kind": "heading",
@@ -28744,11 +29756,8 @@ export const generated: Material[] = [
         },
         {
           "kind": "question",
-          "text": "Bei welchem echten Streit könntest du eines der Werkzeuge ausprobieren?"
-        },
-        {
-          "kind": "lines",
-          "lines": 2
+          "text": "Bei welchem echten Streit könntest du diese Woche ein Werkzeug ausprobieren - und welches?",
+          "lines": 3
         }
       ]
     },
@@ -28836,19 +29845,29 @@ export const generated: Material[] = [
       "blocks": [
         {
           "kind": "heading",
-          "text": "1. Die drei Tiere"
+          "text": "1. Die drei Tiere im Streit"
         },
         {
           "kind": "instruction",
-          "text": "So reagiert jedes Tier im Streit: Drache = greift an und wird laut. Schildkröte = gibt nach oder läuft weg. Eule = bleibt ruhig und sucht eine faire Lösung."
+          "text": "Drache = greift an und wird laut. Schildkröte = gibt nach oder läuft weg. Eule = bleibt ruhig und sucht eine faire Lösung."
+        },
+        {
+          "kind": "box",
+          "text": "Male hier das Tier, das du am liebsten sein möchtest.",
+          "lines": 5
         },
         {
           "kind": "heading",
           "text": "2. Welches Tier ist das?"
         },
         {
+          "kind": "instruction",
+          "text": "Lies, was jemand sagt, und schreibe das passende Tier daneben."
+        },
+        {
           "kind": "table",
-          "lines": 4,
+          "text": "Drache, Schildkröte oder Eule?",
+          "lines": 5,
           "items": [
             "Was jemand sagt",
             "Welches Tier?"
@@ -28859,11 +29878,16 @@ export const generated: Material[] = [
           "text": "3. Meine Eulen-Sätze"
         },
         {
+          "kind": "instruction",
+          "text": "Diese Sätze helfen dir, wie eine Eule zu reden. Kreuze die an, die du ausprobiert hast."
+        },
+        {
           "kind": "checklist",
           "items": [
             "Ich möchte ...",
             "Wie können wir das fair machen?",
-            "Lass uns abwechseln oder teilen."
+            "Lass uns abwechseln oder teilen.",
+            "Ich höre dir zu - sag du zuerst."
           ]
         },
         {
@@ -28872,11 +29896,18 @@ export const generated: Material[] = [
         },
         {
           "kind": "question",
-          "text": "Welches Tier bist du im Streit am häufigsten - und in welcher Situation?"
+          "text": "Welches Tier bist du im Streit am häufigsten - und in welcher Situation merkst du das?",
+          "lines": 3
         },
         {
-          "kind": "lines",
-          "lines": 2
+          "kind": "scale",
+          "text": "Wie oft schaffst du es schon, eine ruhige Eule zu sein?",
+          "items": [
+            "fast nie",
+            "manchmal",
+            "oft",
+            "fast immer"
+          ]
         },
         {
           "kind": "heading",
@@ -28884,11 +29915,8 @@ export const generated: Material[] = [
         },
         {
           "kind": "question",
-          "text": "Was hilft dir, im Streit eher wie eine ruhige Eule zu reagieren?"
-        },
-        {
-          "kind": "lines",
-          "lines": 2
+          "text": "Was hilft dir, im Streit eher wie eine ruhige Eule zu reagieren?",
+          "lines": 3
         }
       ]
     },
@@ -28994,8 +30022,13 @@ export const generated: Material[] = [
           "text": "2. Welcher Weg passt hier?"
         },
         {
+          "kind": "instruction",
+          "text": "Schreibe zu jeder Situation den fairen Weg, den ihr gewählt habt."
+        },
+        {
           "kind": "table",
-          "lines": 4,
+          "text": "Situation und fairer Weg",
+          "lines": 5,
           "items": [
             "Die Situation",
             "Mein fairer Weg"
@@ -29007,11 +30040,18 @@ export const generated: Material[] = [
         },
         {
           "kind": "question",
-          "text": "Warum war euer gewählter Weg in der Situation fair?"
+          "text": "Warum war euer gewählter Weg in der Situation fair? Erkläre genau.",
+          "lines": 3
         },
         {
-          "kind": "lines",
-          "lines": 2
+          "kind": "scale",
+          "text": "Waren am Ende alle einverstanden?",
+          "items": [
+            "gar nicht",
+            "ein paar",
+            "fast alle",
+            "alle"
+          ]
         },
         {
           "kind": "heading",
@@ -29035,11 +30075,8 @@ export const generated: Material[] = [
         },
         {
           "kind": "question",
-          "text": "Welche faire Regel habt ihr für einen echten Streitfall in eurer Klasse vereinbart?"
-        },
-        {
-          "kind": "lines",
-          "lines": 2
+          "text": "Welche faire Regel habt ihr für einen echten Streitfall in eurer Klasse vereinbart?",
+          "lines": 3
         }
       ]
     },
@@ -29134,46 +30171,67 @@ export const generated: Material[] = [
       "blocks": [
         {
           "kind": "heading",
-          "text": "Fach 1 - Meine Stärken (Was kann ich gut? Was macht mich aus?)"
-        },
-        {
-          "kind": "lines",
-          "lines": 3
-        },
-        {
-          "kind": "heading",
-          "text": "Fach 2 - Meine Menschen (Wem kann ich vertrauen? Wer hilft mir?)"
-        },
-        {
-          "kind": "lines",
-          "lines": 3
-        },
-        {
-          "kind": "heading",
-          "text": "Fach 3 - Was mich beruhigt (Was tut mir gut und bringt mich runter?)"
-        },
-        {
-          "kind": "lines",
-          "lines": 3
-        },
-        {
-          "kind": "heading",
-          "text": "Fach 4 - Meine Mutmach-Sätze (Was sage ich mir selbst, wenn es schwer ist?)"
-        },
-        {
-          "kind": "lines",
-          "lines": 3
-        },
-        {
-          "kind": "box",
-          "text": "Male hier dein wichtigstes Rucksack-Teil als Bild - das eine, das dich am meisten trägt."
+          "text": "Fach 1 - Meine Stärken"
         },
         {
           "kind": "question",
-          "text": "Welche neue Idee hast du heute von einem anderen Kind für deinen Rucksack mitbekommen?"
+          "text": "Was kann ich gut? Was macht mich aus? (z. B. \"Ich gebe nicht so schnell auf.\")",
+          "lines": 3
         },
         {
-          "kind": "lines",
+          "kind": "heading",
+          "text": "Fach 2 - Meine Menschen"
+        },
+        {
+          "kind": "question",
+          "text": "Wem kann ich vertrauen? Wer hilft mir, wenn es mir schlecht geht?",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "Fach 3 - Was mich beruhigt"
+        },
+        {
+          "kind": "question",
+          "text": "Was tut mir gut und bringt mich runter, wenn ich Ärger oder Stress habe?",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "Fach 4 - Meine Mutmach-Sätze"
+        },
+        {
+          "kind": "question",
+          "text": "Was sage ich mir selbst, wenn es schwer ist? (z. B. \"Das schaffe ich Schritt für Schritt.\")",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "Mein wichtigstes Rucksack-Teil"
+        },
+        {
+          "kind": "box",
+          "text": "Male hier das eine Teil, das dich am meisten trägt.",
+          "lines": 6
+        },
+        {
+          "kind": "scale",
+          "text": "Wie gut fühlst du dich gerüstet für einen schweren Tag?",
+          "items": [
+            "noch wenig",
+            "ein bisschen",
+            "ziemlich",
+            "gut gerüstet"
+          ]
+        },
+        {
+          "kind": "question",
+          "text": "Welche neue Idee hast du heute von einem anderen Kind für deinen Rucksack mitbekommen?",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "In welchem nächsten schweren Moment willst du an deinen Rucksack denken?",
           "lines": 2
         }
       ]
@@ -29261,59 +30319,75 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Unser Comeback-Geschichten-Bogen",
-      "intro": "Erfindet eine Geschichte über eine Figur, die nach einem Rückschlag wieder zurückkommt. Füllt alle fünf Stationen aus - das Wichtigste ist das große 'Und dann'.",
+      "intro": "Erfindet eine Geschichte über eine Figur, die nach einem Rückschlag wieder zurückkommt. Füllt alle fünf Stationen aus - das Wichtigste ist das große \"Und dann\".",
       "blocks": [
         {
           "kind": "instruction",
-          "text": "Gebt eurer Figur einen Namen: ____________________"
+          "text": "Der Name unserer Figur: ____________________"
         },
         {
           "kind": "heading",
-          "text": "1. Es lief gut - wie war es am Anfang?"
+          "text": "1. Es lief gut"
         },
         {
-          "kind": "lines",
+          "kind": "question",
+          "text": "Wie war es am Anfang? Was konnte die Figur gut?",
           "lines": 2
         },
         {
           "kind": "heading",
-          "text": "2. Der Rückschlag - was ging schief?"
+          "text": "2. Der Rückschlag"
         },
         {
-          "kind": "lines",
+          "kind": "question",
+          "text": "Was ging schief? Was klappte plötzlich nicht mehr?",
           "lines": 2
         },
         {
           "kind": "heading",
-          "text": "3. Das Gefühl - wie fühlte sich die Figur?"
+          "text": "3. Das Gefühl"
         },
         {
-          "kind": "lines",
+          "kind": "question",
+          "text": "Wie fühlte sich die Figur? (wütend, beschämt, traurig, mutlos ...)",
           "lines": 2
         },
         {
           "kind": "heading",
-          "text": "4. UND DANN - was tat oder dachte die Figur, um weiterzumachen? (am wichtigsten!)"
+          "text": "4. UND DANN (am wichtigsten!)"
         },
         {
-          "kind": "lines",
+          "kind": "question",
+          "text": "Was tat oder dachte die Figur, um weiterzumachen? Wer oder was half ihr?",
+          "lines": 4
+        },
+        {
+          "kind": "heading",
+          "text": "5. Die Wendung"
+        },
+        {
+          "kind": "question",
+          "text": "Wie ging die Geschichte aus? Wie hat die Figur ihr Comeback geschafft?",
           "lines": 3
         },
         {
           "kind": "heading",
-          "text": "5. Die Wendung - wie ging die Geschichte aus?"
-        },
-        {
-          "kind": "lines",
-          "lines": 2
+          "text": "Mein eigenes kleines Comeback"
         },
         {
           "kind": "question",
-          "text": "Mein eigenes kleines Comeback: Etwas, das bei mir erst nicht klappte - und dann doch."
+          "text": "Etwas, das bei mir erst nicht klappte - und dann doch. Was war mein \"Und dann\"?",
+          "lines": 3
         },
         {
-          "kind": "lines",
-          "lines": 2
+          "kind": "scale",
+          "text": "Wie sehr glaubst du jetzt: Nach einem Rückschlag kann ich wieder aufstehen?",
+          "items": [
+            "gar nicht",
+            "ein bisschen",
+            "ziemlich",
+            "ganz sicher"
+          ]
         }
       ]
     },
@@ -29403,45 +30477,70 @@ export const generated: Material[] = [
       "intro": "Vier Anker hast du ausprobiert. Welcher hält DICH im Sturm am besten fest? Wähle aus und gestalte deine eigene Anker-Karte.",
       "blocks": [
         {
+          "kind": "heading",
+          "text": "1. Meine Anker"
+        },
+        {
           "kind": "instruction",
-          "text": "Kreuze deine wichtigsten Anker an (du darfst auch zwei wählen):"
+          "text": "Kreuze deine wichtigsten Anker an (du darfst auch zwei wählen)."
         },
         {
           "kind": "checklist",
           "items": [
             "Atem-Anker (Viereck-Atmen)",
             "Fünf-Sinne-Anker (5-4-3-2-1)",
-            "Bewegungs-Anker (fest erden, anspannen-lösen)",
+            "Bewegungs-Anker (fest erden, anspannen - lösen)",
             "Gedanken-Anker (mein ruhiger Satz)"
           ]
         },
         {
-          "kind": "question",
-          "text": "In welchen Situationen brauchst du deinen Anker? Nenne zwei."
+          "kind": "heading",
+          "text": "2. Wann brauche ich meinen Anker?"
         },
         {
-          "kind": "lines",
-          "lines": 2
+          "kind": "question",
+          "text": "In welchen Situationen brauchst du deinen Anker? Nenne zwei Beispiele.",
+          "lines": 3
         },
         {
           "kind": "heading",
-          "text": "Mein Anker heißt:"
+          "text": "3. Mein Anker heißt:"
         },
         {
           "kind": "lines",
           "lines": 1
         },
         {
+          "kind": "heading",
+          "text": "4. Meine Anker-Karte gestalten"
+        },
+        {
           "kind": "box",
-          "text": "Gestalte hier dein Anker-Symbol und schreibe daneben die Schritt-für-Schritt-Anleitung, damit du sie im Ernstfall lesen kannst."
+          "text": "Male hier dein Anker-Symbol und schreibe daneben die Schritt-für-Schritt-Anleitung, damit du sie im Ernstfall lesen kannst.",
+          "lines": 6
         },
         {
           "kind": "scale",
-          "text": "Wie ruhig hat sich mein Lieblings-Anker angefühlt? (1 = kaum, 5 = sehr ruhig)"
+          "text": "Wie ruhig hat sich mein Lieblings-Anker angefühlt?",
+          "items": [
+            "kaum ruhig",
+            "ein bisschen",
+            "ziemlich ruhig",
+            "sehr ruhig"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "5. Mein Vorsatz"
         },
         {
           "kind": "instruction",
-          "text": "Denk daran: Einen Anker übt man bei ruhigem Wetter, damit er im Sturm sitzt. Übe ihn diese Woche dreimal!"
+          "text": "Denk daran: Einen Anker übt man bei ruhigem Wetter, damit er im Sturm sitzt."
+        },
+        {
+          "kind": "question",
+          "text": "Wann und wie oft willst du deinen Anker diese Woche üben?",
+          "lines": 2
         }
       ]
     },
@@ -29532,59 +30631,81 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Stolperstein-Forscherblatt",
-      "intro": "In der Stolperstein-Werkstatt drehst du Fehler um und schaust, was sie dir verraten. Nutze deine Forscher-Werkzeuge: das Wort 'noch nicht' und die Frage 'Was kann ich daraus lernen?'.",
+      "intro": "In der Stolperstein-Werkstatt drehst du Fehler um und schaust, was sie dir verraten. Deine Forscher-Werkzeuge: das kleine Wort 'noch nicht' und die Frage 'Was kann ich daraus lernen?'.",
       "blocks": [
         {
           "kind": "heading",
-          "text": "Teil 1 - Wir untersuchen einen Stolperstein (an der Station)"
+          "text": "Teil 1: Wir untersuchen einen Stolperstein (an der Station)"
+        },
+        {
+          "kind": "instruction",
+          "text": "Lies die Stolperstein-Geschichte an deiner Station und beantworte die Forscher-Fragen."
         },
         {
           "kind": "question",
-          "text": "Welches Gefühl hat die Person in der Geschichte wohl?"
-        },
-        {
-          "kind": "lines",
-          "lines": 1
-        },
-        {
-          "kind": "question",
-          "text": "Was kann die Person aus diesem Stolperstein LERNEN?"
-        },
-        {
-          "kind": "lines",
+          "text": "Was ist der Person passiert? Beschreibe ihren Stolperstein kurz.",
           "lines": 2
         },
         {
           "kind": "question",
-          "text": "Was wäre ihr nächster, kleiner Schritt nach vorn?"
+          "text": "Welches Gefuehl hat die Person wohl? Woran merkst du das?",
+          "lines": 2
         },
         {
-          "kind": "lines",
+          "kind": "question",
+          "text": "Was kann die Person aus diesem Stolperstein LERNEN? (Was verraet ihr der Fehler?)",
+          "lines": 3
+        },
+        {
+          "kind": "question",
+          "text": "Was waere ihr naechster, kleiner Schritt nach vorn?",
           "lines": 2
         },
         {
           "kind": "heading",
-          "text": "Teil 2 - Mein eigener Stolperstein wird zum Sprungbrett"
+          "text": "Teil 2: Vom 'nicht' zum 'noch nicht'"
         },
         {
           "kind": "instruction",
-          "text": "Schreibe einen eigenen kleinen Stolperstein auf - etwas, das gerade noch nicht klappt:"
+          "text": "Verwandle diese harten Saetze in mutige 'noch nicht'-Saetze."
         },
         {
-          "kind": "lines",
+          "kind": "table",
+          "text": "Schreibe links den harten Satz ab und rechts deinen 'noch nicht'-Satz:",
+          "lines": 3,
+          "items": [
+            "Harter Satz ('... nicht')",
+            "Mein 'noch nicht'-Satz"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "Teil 3: Mein eigener Stolperstein wird zum Sprungbrett"
+        },
+        {
+          "kind": "question",
+          "text": "Mein eigener kleiner Stolperstein - etwas, das gerade noch nicht klappt:",
           "lines": 2
         },
         {
-          "kind": "instruction",
-          "text": "Forme deinen 'noch nicht'-Satz: Ich kann ____________________ noch nicht, aber ..."
-        },
-        {
-          "kind": "lines",
+          "kind": "question",
+          "text": "Mein 'noch nicht'-Satz dazu: Ich kann ____ noch nicht, aber ich kann schon ...",
           "lines": 2
         },
         {
           "kind": "box",
-          "text": "Mein nächster kleiner Schritt, der den Stolperstein zum Sprungbrett macht:"
+          "text": "Mein naechster kleiner Schritt, der den Stolperstein zum Sprungbrett macht (male oder schreibe):",
+          "lines": 5
+        },
+        {
+          "kind": "scale",
+          "text": "Wie sehr glaube ich jetzt, dass Fehler beim Lernen helfen koennen?",
+          "items": [
+            "gar nicht",
+            "ein bisschen",
+            "ziemlich",
+            "sehr"
+          ]
         }
       ]
     },
@@ -29674,7 +30795,7 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Meine Geheim-Bremse",
-      "intro": "Zwischen einem Auslöser und deiner Reaktion liegt eine kleine Lücke. Baue dir hier deine eigene Bremse für genau diesen Moment - drei Sekunden, in denen du selbst entscheidest.",
+      "intro": "Zwischen einem Ausloeser und deiner Reaktion liegt eine winzige Luecke. Baue dir hier deine eigene Bremse fuer genau diesen Moment - drei Sekunden, in denen DU entscheidest und nicht der Impuls.",
       "blocks": [
         {
           "kind": "heading",
@@ -29682,42 +30803,50 @@ export const generated: Material[] = [
         },
         {
           "kind": "instruction",
-          "text": "1. STOPP (kurz erstarren) - 2. ATMEN (einmal tief) - 3. WÄHLEN (Was bringt mich weiter?)"
-        },
-        {
-          "kind": "heading",
-          "text": "Mein Brems-Wort (das ich mir innerlich sage):"
-        },
-        {
-          "kind": "lines",
-          "lines": 1
-        },
-        {
-          "kind": "heading",
-          "text": "Meine geheime Brems-Geste (die niemandem auffällt):"
-        },
-        {
-          "kind": "lines",
-          "lines": 1
+          "text": "1. STOPP (kurz erstarren) - 2. ATMEN (einmal tief durch die Nase) - 3. WAEHLEN (Was bringt mich weiter?)"
         },
         {
           "kind": "question",
-          "text": "In welchen Situationen will ich meine Bremse einsetzen? Nenne zwei bis drei."
+          "text": "Mein Brems-Wort, das ich mir innerlich sage (z. B. 'Halt', 'Erst denken', 'Nicht jetzt'):",
+          "lines": 2
         },
         {
-          "kind": "lines",
+          "kind": "question",
+          "text": "Meine geheime Brems-Geste, die niemandem auffaellt (z. B. Daumen in die Faust, Zehen auf den Boden):",
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "Wann brauche ich meine Bremse?"
+        },
+        {
+          "kind": "table",
+          "text": "Trage deine typischen Ausloeser ein und was du sonst ohne Bremse tust:",
+          "lines": 3,
+          "items": [
+            "Ausloese-Situation",
+            "Was ich sonst (ohne Bremse) mache"
+          ]
+        },
+        {
+          "kind": "question",
+          "text": "Was koennte ich MIT Bremse stattdessen tun? Beschreibe eine bessere Reaktion.",
           "lines": 3
         },
         {
           "kind": "scale",
-          "text": "Wie schwer fiel es mir, drei Sekunden zu warten? (1 = sehr leicht, 5 = sehr schwer)"
+          "text": "Wie schwer fiel es mir, drei Sekunden zu warten, bevor ich reagiert habe?",
+          "items": [
+            "sehr leicht",
+            "leicht",
+            "mittel",
+            "schwer",
+            "sehr schwer"
+          ]
         },
         {
-          "kind": "instruction",
-          "text": "Mein Mini-Auftrag für diese Woche: Diese eine Situation will ich mit der Bremse bewusst meistern:"
-        },
-        {
-          "kind": "lines",
+          "kind": "question",
+          "text": "Mein Mini-Auftrag fuer diese Woche: In dieser einen Situation will ich meine Bremse bewusst einsetzen:",
           "lines": 2
         }
       ]
@@ -29808,53 +30937,68 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Meine Warte-Tricks",
-      "intro": "Du hast gerade gespürt, wie schwer Warten sein kann. Hier sammelst du die Tricks, die dir helfen, dem Sofort-Drang zu widerstehen - und überlegst, wo du sie im echten Leben brauchst.",
+      "intro": "Du hast gerade am eigenen Leib gespuert, wie schwer Warten sein kann. Hier sammelst du die Tricks, die dir helfen, dem Sofort-Drang zu widerstehen - und ueberlegst, wo du sie im echten Leben brauchst.",
       "blocks": [
         {
-          "kind": "question",
-          "text": "Was ist in mir vorgegangen, während die Leckerei vor mir lag?"
+          "kind": "heading",
+          "text": "Mein Erleben bei der Warte-Probe"
         },
         {
-          "kind": "lines",
-          "lines": 2
+          "kind": "question",
+          "text": "Was ist in mir vorgegangen, waehrend die Leckerei vor mir lag? Was hat das Warten leichter oder schwerer gemacht?",
+          "lines": 3
         },
         {
           "kind": "heading",
-          "text": "Meine Lieblings-Tricks gegen den Sofort-Drang (ankreuzen):"
+          "text": "Meine Warte-Tricks gegen den Sofort-Drang"
         },
         {
           "kind": "checklist",
           "items": [
             "Wegschauen / Abstand schaffen",
             "An etwas anderes denken / ablenken",
-            "Mir das Stück uninteressant vorstellen",
-            "An das größere Ziel denken",
+            "Mir das Stueck uninteressant vorstellen",
+            "An das groessere Ziel denken",
             "Mir selbst Mut machen ('Ich schaff das')",
             "Einen Plan machen ('erst wenn ...')"
           ]
         },
         {
           "kind": "question",
-          "text": "Bei welcher echten Versuchung in meinem Alltag könnte ich diese Tricks brauchen?"
-        },
-        {
-          "kind": "lines",
-          "lines": 3
-        },
-        {
-          "kind": "question",
-          "text": "Wofür lohnt es sich für MICH zu warten? Was ist mein größeres Ziel?"
-        },
-        {
-          "kind": "lines",
+          "text": "Mein liebster Trick - und warum er bei mir funktioniert:",
           "lines": 2
         },
         {
-          "kind": "instruction",
-          "text": "Diese Woche probiere ich diesen einen Trick bei dieser einen Versuchung aus:"
+          "kind": "heading",
+          "text": "Vom Spiel ins echte Leben"
         },
         {
-          "kind": "lines",
+          "kind": "table",
+          "text": "Wo lockt der Sofort-Drang im Alltag - und welcher Trick hilft dort?",
+          "lines": 3,
+          "items": [
+            "Echte Versuchung im Alltag",
+            "Mein Trick dagegen"
+          ]
+        },
+        {
+          "kind": "question",
+          "text": "Wofuer lohnt es sich fuer MICH zu warten? Was ist mein groesseres Ziel?",
+          "lines": 3
+        },
+        {
+          "kind": "scale",
+          "text": "Wie gut kann ich gerade warten, wenn sich etwas lohnt?",
+          "items": [
+            "gar nicht gut",
+            "ein bisschen",
+            "ziemlich gut",
+            "sehr gut"
+          ]
+        },
+        {
+          "kind": "question",
+          "text": "Diese Woche probiere ich diesen einen Trick bei dieser einen Versuchung aus:",
           "lines": 2
         }
       ]
@@ -29944,60 +31088,70 @@ export const generated: Material[] = [
       "KOG-39"
     ],
     "worksheet": {
-      "title": "Meine Auslöser-Landkarte",
-      "intro": "Niemand explodiert aus dem Nichts. Werde zum Wächter über deine eigenen Knöpfe: Welche Situationen und Worte lösen bei dir einen heftigen Impuls aus - und woran merkst du früh, dass es hochkocht? Dieses Blatt ist privat.",
+      "title": "Meine Ausloeser-Landkarte",
+      "intro": "Niemand explodiert aus dem Nichts. Werde zum Waechter ueber deine eigenen Knoepfe: Welche Situationen und Worte loesen bei dir einen heftigen Impuls aus - und woran merkst du frueh, dass es hochkocht? Dieses Blatt ist privat.",
       "blocks": [
         {
           "kind": "heading",
-          "text": "1. Meine Auslöser-Situationen (was bringt mich schnell auf die Palme?)"
+          "text": "1. Meine Ausloeser-Situationen"
         },
         {
-          "kind": "lines",
+          "kind": "question",
+          "text": "Welche Situationen bringen mich schnell auf die Palme? (z. B. ausgelacht werden, ungerecht behandelt werden, Zeitdruck)",
           "lines": 3
         },
         {
-          "kind": "heading",
-          "text": "2. Worte oder Sätze, die bei mir einen Knopf drücken:"
-        },
-        {
-          "kind": "lines",
+          "kind": "question",
+          "text": "Welche Worte oder Saetze druecken bei mir einen Knopf? (z. B. bestimmte Beleidigungen, Spitznamen)",
           "lines": 2
         },
         {
           "kind": "scale",
-          "text": "Wie groß ist mein Knopf bei meinem stärksten Auslöser? (1 = kleiner Ärger, 5 = riesige Wut)"
+          "text": "Wie gross ist mein Knopf bei meinem staerksten Ausloeser?",
+          "items": [
+            "kleiner Aerger",
+            "etwas Wut",
+            "ziemlich Wut",
+            "riesige Wut"
+          ]
         },
         {
           "kind": "heading",
-          "text": "3. Meine GELB-Signale (woran merke ich früh im Körper, dass es hochkocht?)"
+          "text": "2. Meine GELB-Signale (Fruehwarnsystem)"
+        },
+        {
+          "kind": "instruction",
+          "text": "Woran merke ich frueh im Koerper, dass es hochkocht? Kreuze deine Signale an."
         },
         {
           "kind": "checklist",
           "items": [
             "Herzklopfen",
-            "heißes Gesicht",
-            "Hände ballen / Fäuste",
-            "Kiefer/Zähne anspannen",
+            "heisses Gesicht",
+            "Haende ballen / Faeuste",
+            "Kiefer/Zaehne anspannen",
             "Gedanken rasen",
             "lauter werden",
             "Bauch zieht sich zusammen"
           ]
         },
         {
+          "kind": "heading",
+          "text": "3. Mein Gegenzug im gelben Bereich"
+        },
+        {
+          "kind": "table",
+          "text": "Was tue ich, BEVOR ich 'rot' sehe? Ordne deinem Signal einen Gegenzug zu:",
+          "lines": 3,
+          "items": [
+            "Mein Gelb-Signal",
+            "Mein erster Gegenzug"
+          ]
+        },
+        {
           "kind": "question",
-          "text": "Mein erster Gegenzug im gelben Bereich (bevor ich 'rot' sehe):"
-        },
-        {
-          "kind": "lines",
+          "text": "Mein Beobachtungsauftrag: Auf dieses eine Fruehwarnsignal achte ich diese Woche besonders:",
           "lines": 2
-        },
-        {
-          "kind": "instruction",
-          "text": "Mein Beobachtungsauftrag: Diese Woche achte ich besonders auf dieses eine Frühwarnsignal:"
-        },
-        {
-          "kind": "lines",
-          "lines": 1
         }
       ]
     },
@@ -30226,41 +31380,51 @@ export const generated: Material[] = [
       "KOG-11"
     ],
     "worksheet": {
-      "title": "Meine Gefühls-Farben",
-      "intro": "Male jedes Gefühl in seiner Farbe an. Welche Farbe passt für dich zu welchem Gefühl?",
+      "title": "Meine Gefuehls-Farben",
+      "intro": "Gefuehle haben fuer dich vielleicht eine Farbe. Male jedes Gefuehl in seiner Farbe an. Welche Farbe passt fuer DICH zu welchem Gefuehl?",
       "blocks": [
         {
           "kind": "instruction",
-          "text": "Schau dir die vier Gesichter an. Male jedes Gesicht in der Farbe an, die für dich zu diesem Gefühl passt."
+          "text": "Schau dir die vier Gesichter an. Male jedes Gesicht in der Farbe an, die fuer dich zu diesem Gefuehl passt."
         },
         {
           "kind": "box",
-          "text": "Froh - das lachende Gesicht (welche Farbe hat deine Freude?)",
+          "text": "FROH - das lachende Gesicht (welche Farbe hat deine Freude?)",
           "lines": 4
         },
         {
           "kind": "box",
-          "text": "Wütend - das zornige Gesicht (welche Farbe hat deine Wut?)",
+          "text": "WUETEND - das zornige Gesicht (welche Farbe hat deine Wut?)",
           "lines": 4
         },
         {
           "kind": "box",
-          "text": "Ängstlich - das erschrockene Gesicht (welche Farbe hat deine Angst?)",
+          "text": "AENGSTLICH - das erschrockene Gesicht (welche Farbe hat deine Angst?)",
           "lines": 4
         },
         {
           "kind": "box",
-          "text": "Traurig - das weinende Gesicht (welche Farbe hat deine Traurigkeit?)",
+          "text": "TRAURIG - das weinende Gesicht (welche Farbe hat deine Traurigkeit?)",
           "lines": 4
         },
         {
           "kind": "instruction",
-          "text": "Male in dieses leere Feld, wie du dich HEUTE fühlst:"
+          "text": "Male jetzt in dieses Feld, wie du dich HEUTE fuehlst. Nimm die Farben, die passen."
         },
         {
           "kind": "box",
-          "text": "So fühle ich mich heute",
+          "text": "So fuehle ich mich heute",
           "lines": 6
+        },
+        {
+          "kind": "scale",
+          "text": "Wie geht es dir heute?",
+          "items": [
+            "Sonne",
+            "Wolke",
+            "Regen",
+            "Gewitter"
+          ]
         }
       ]
     },
@@ -30350,28 +31514,62 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Wo wohnen meine Gefühle?",
-      "intro": "Hier siehst du einen Körper. Male mit Farben an, wo du jedes Gefühl in dir spürst - so wie Knuddel.",
+      "intro": "Knuddel spürt Gefühle im ganzen Körper. Wo spürst du sie? Male und zeige es!",
       "blocks": [
         {
+          "kind": "heading",
+          "text": "Mein Gefühls-Körper"
+        },
+        {
           "kind": "instruction",
-          "text": "Hier ist ein Körper-Bild. Male die Stellen an, an denen DU das Gefühl am meisten spürst."
+          "text": "Hier ist ein Körper. Male mit Farben an, wo du jedes Gefühl spürst. Freude = gelb, Wut = rot, Angst = blau, Traurigkeit = grau."
         },
         {
           "kind": "box",
-          "text": "Mein Körper - male hier deine Gefühle ein (Bauch, Gesicht, Herz, Hände ...)",
+          "text": "Mein Körper - male deine Gefühle ein (Bauch, Gesicht, Herz, Hände)",
           "lines": 8
         },
         {
-          "kind": "instruction",
-          "text": "Male einen Punkt in der Farbe, die zum Gefühl passt: Freude (gelb), Wut (rot), Angst (blau), Traurigkeit (grau)."
-        },
-        {
-          "kind": "instruction",
-          "text": "Welches Gefühl spürst du heute? Male ein passendes Gesicht in das Feld:"
+          "kind": "heading",
+          "text": "Knuddels vier Gefühle"
         },
         {
           "kind": "box",
-          "text": "So fühle ich mich heute",
+          "text": "FREUDE - der Bauch kribbelt. Male ein frohes Gesicht.",
+          "lines": 4
+        },
+        {
+          "kind": "box",
+          "text": "WUT - das Gesicht wird heiß, die Hände werden zu Fäusten. Male ein wütendes Gesicht.",
+          "lines": 4
+        },
+        {
+          "kind": "box",
+          "text": "ANGST - das Herz pocht ganz schnell. Male ein ängstliches Gesicht.",
+          "lines": 4
+        },
+        {
+          "kind": "box",
+          "text": "TRAURIGKEIT - alles wird schwer. Male ein trauriges Gesicht.",
+          "lines": 4
+        },
+        {
+          "kind": "heading",
+          "text": "So fühle ich mich heute"
+        },
+        {
+          "kind": "scale",
+          "text": "Wie geht es dir gerade? Kreise dein Wetter ein.",
+          "items": [
+            "Sonne",
+            "Wolke",
+            "Regen",
+            "Gewitter"
+          ]
+        },
+        {
+          "kind": "box",
+          "text": "Male dein Gesicht von heute",
           "lines": 5
         }
       ]
@@ -30593,39 +31791,53 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Welches Gefühl seh ich?",
-      "intro": "Schau dir die Gesichter genau an. Welches Gefühl zeigt jedes Gesicht? Verbinde oder male.",
+      "intro": "Im Gesicht kann man sehen, wie es jemandem geht. Male die Gefühls-Gesichter und sei ein guter Spiegel!",
       "blocks": [
         {
-          "kind": "instruction",
-          "text": "Hier siehst du vier Gesichter. Schau genau auf Mund und Augen. Male das richtige Gefühl dazu oder kreuze an."
-        },
-        {
-          "kind": "box",
-          "text": "Gesicht 1 - Welches Gefühl ist das? (froh / wütend / ängstlich / traurig)",
-          "lines": 3
-        },
-        {
-          "kind": "box",
-          "text": "Gesicht 2 - Welches Gefühl ist das?",
-          "lines": 3
-        },
-        {
-          "kind": "box",
-          "text": "Gesicht 3 - Welches Gefühl ist das?",
-          "lines": 3
-        },
-        {
-          "kind": "box",
-          "text": "Gesicht 4 - Welches Gefühl ist das?",
-          "lines": 3
+          "kind": "heading",
+          "text": "Ich male Gefühls-Gesichter"
         },
         {
           "kind": "instruction",
-          "text": "Wenn ein Freund ein trauriges Gesicht macht - was kannst du tun? Male ein Bild dazu:"
+          "text": "Denk an Mund und Augen. Male in jedes Feld das passende Gesicht."
         },
         {
           "kind": "box",
-          "text": "So kann ich freundlich sein",
+          "text": "FROH - der Mund geht nach oben, die Augen glänzen",
+          "lines": 4
+        },
+        {
+          "kind": "box",
+          "text": "WÜTEND - die Augenbrauen ziehen sich zusammen",
+          "lines": 4
+        },
+        {
+          "kind": "box",
+          "text": "ÄNGSTLICH - die Augen sind weit offen",
+          "lines": 4
+        },
+        {
+          "kind": "box",
+          "text": "TRAURIG - die Mundwinkel gehen nach unten",
+          "lines": 4
+        },
+        {
+          "kind": "heading",
+          "text": "Ich bin ein guter Freund"
+        },
+        {
+          "kind": "scale",
+          "text": "Wie geht es dir heute?",
+          "items": [
+            "Sonne",
+            "Wolke",
+            "Regen",
+            "Gewitter"
+          ]
+        },
+        {
+          "kind": "box",
+          "text": "Ein Kind macht ein trauriges Gesicht. Male, wie du freundlich sein kannst.",
           "lines": 6
         }
       ]
@@ -31179,55 +32391,86 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Vielfalt-Forscher:in - Mein Ausstellungsheft",
-      "intro": "Du bist Forscher:in in der Vielfalt-Galerie. Sammle hier, was dich ausmacht und was du über andere herausfindest - was uns verbindet und was jede:n besonders macht.",
+      "intro": "Du bist Forscher:in in der Vielfalt-Galerie! Hier hältst du fest, was dich besonders macht und was du über andere herausfindest. Mal und schreib - so wie es zu dir passt.",
       "blocks": [
         {
           "kind": "heading",
-          "text": "Mein Porträt - Das bin ich:"
+          "text": "1. Mein Porträt - so sehe ich aus"
         },
         {
-          "kind": "instruction",
-          "text": "Fülle aus: Das kann ich gut / Das mag ich / Das ist mir wichtig / Darin bin ich vielleicht anders."
-        },
-        {
-          "kind": "lines",
-          "lines": 4
+          "kind": "box",
+          "text": "Male hier ein Bild von dir.",
+          "lines": 7
         },
         {
           "kind": "heading",
-          "text": "Forscher-Interview: Das haben mein:e Partner:in und ich GEMEINSAM:"
-        },
-        {
-          "kind": "lines",
-          "lines": 3
-        },
-        {
-          "kind": "heading",
-          "text": "Forscher-Interview: Darin sind wir VERSCHIEDEN (spannend, nicht besser oder schlechter):"
-        },
-        {
-          "kind": "lines",
-          "lines": 3
+          "text": "2. Das bin ich"
         },
         {
           "kind": "question",
-          "text": "Bei der Galerie-Eröffnung: Eine Gemeinsamkeit, die mich überrascht hat:"
-        },
-        {
-          "kind": "lines",
+          "text": "Das kann ich richtig gut:",
           "lines": 2
         },
         {
           "kind": "question",
-          "text": "Etwas Besonderes an einem anderen Kind, das ich richtig toll finde:"
+          "text": "Das mag ich besonders gern:",
+          "lines": 2
         },
         {
-          "kind": "lines",
+          "kind": "question",
+          "text": "Das ist mir wichtig:",
           "lines": 2
         },
         {
           "kind": "box",
-          "text": "Mein Galerie-Satz: Anders sein ist ... weil ..."
+          "text": "Darin bin ich vielleicht anders als andere - male oder schreib es hier.",
+          "lines": 4
+        },
+        {
+          "kind": "heading",
+          "text": "3. Forscher-Interview mit meine:r Partner:in"
+        },
+        {
+          "kind": "instruction",
+          "text": "Frag dein Forscher-Kind aus. Was findest du heraus?"
+        },
+        {
+          "kind": "box",
+          "text": "GEMEINSAM: Das mögen oder können wir BEIDE (grüne Karte).",
+          "lines": 3
+        },
+        {
+          "kind": "box",
+          "text": "VERSCHIEDEN: Das macht mein Forscher-Kind anders als ich - spannend!",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "4. Bei der Galerie-Eröffnung"
+        },
+        {
+          "kind": "question",
+          "text": "Eine Gemeinsamkeit, die mich überrascht hat:",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "Etwas Besonderes an einem anderen Kind, das ich richtig toll finde:",
+          "lines": 2
+        },
+        {
+          "kind": "scale",
+          "text": "Wie fühle ich mich in unserer bunten Klasse?",
+          "items": [
+            "Sonne",
+            "Wolke",
+            "Regen"
+          ]
+        },
+        {
+          "kind": "box",
+          "text": "Mein Galerie-Satz: \"Anders sein ist ..., weil ...\"",
+          "lines": 3
         }
       ]
     },
@@ -31586,50 +32829,74 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Mein Sorgen-Tresor",
-      "intro": "Sorgen drehen sich oft im Kreis. In deinem Tresor bekommen sie einen festen Platz - und einen festen Termin, an dem du dich kümmerst.",
+      "intro": "Sorgen drehen sich oft im Kreis - besonders abends oder mitten im Unterricht. In deinem Tresor bekommen sie einen festen Platz und einen festen Termin, an dem du dich um sie kümmerst. Du musst hier nichts zeigen, was privat ist.",
       "blocks": [
         {
+          "kind": "heading",
+          "text": "1. Sorgen sortieren"
+        },
+        {
           "kind": "instruction",
-          "text": "Sortiere zuerst: Bei welchen Sorgen kannst du etwas tun, welche musst du loslassen?"
+          "text": "Bei welchen Sorgen kannst du etwas tun? Welche musst du gerade loslassen? Trag sie in die Tabelle ein."
         },
         {
           "kind": "table",
+          "text": "Meine Sorgen - sortiert",
           "lines": 4,
           "items": [
             "Da kann ich etwas tun (mein nächster Schritt)",
-            "Das muss ich loslassen"
+            "Das muss ich gerade loslassen"
           ]
         },
         {
           "kind": "heading",
-          "text": "Mein Sorgen-Termin"
+          "text": "2. Mein Sorgen-Termin"
         },
         {
           "kind": "instruction",
-          "text": "Lege fest, wann du jeden Tag kurz deinen Tresor öffnest und dich um deine Sorgen kümmerst (z. B. nach dem Mittagessen)."
-        },
-        {
-          "kind": "lines",
-          "text": "Mein fester Sorgen-Termin ist:",
-          "lines": 1
-        },
-        {
-          "kind": "heading",
-          "text": "Mein Stopp-Satz"
-        },
-        {
-          "kind": "instruction",
-          "text": "Wenn eine Sorge zur falschen Zeit kommt, sag dir diesen Satz:"
-        },
-        {
-          "kind": "lines",
-          "text": "Stopp - du wartest im Tresor, ich kümmere mich um dich um ...",
-          "lines": 1
+          "text": "Leg fest, wann du jeden Tag kurz deinen Tresor öffnest und dich um deine Sorgen kümmerst (z. B. nach dem Mittagessen)."
         },
         {
           "kind": "question",
-          "text": "Wem könnte ich eine Sorge anvertrauen, die zu groß zum Alleintragen ist?",
+          "text": "Mein fester Sorgen-Termin ist:",
           "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "3. Mein Stopp-Satz"
+        },
+        {
+          "kind": "instruction",
+          "text": "Wenn eine Sorge zur falschen Zeit kommt, sag dir diesen Satz und schreib ihn hier in deinen eigenen Worten auf."
+        },
+        {
+          "kind": "question",
+          "text": "Stopp! Du wartest im Tresor. Ich kümmere mich um dich um ...",
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "4. Wie geht es mir mit dem Grübeln?"
+        },
+        {
+          "kind": "scale",
+          "text": "Wie stark kreisen meine Gedanken gerade?",
+          "items": [
+            "gar nicht",
+            "ein bisschen",
+            "ziemlich",
+            "sehr"
+          ]
+        },
+        {
+          "kind": "question",
+          "text": "Wem könnte ich eine Sorge anvertrauen, die zu groß ist, um sie allein zu tragen?",
+          "lines": 3
+        },
+        {
+          "kind": "question",
+          "text": "Was tut mir gut, wenn ich gemerkt habe, dass meine Sorge im Tresor gut aufgehoben ist?",
+          "lines": 3
         }
       ]
     },
@@ -32495,61 +33762,80 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Meine Grenz-Landkarte und meine Nein-Sätze",
-      "intro": "Jeder Mensch hat eine eigene Linie, an der das Wohlfühlen endet. Diese Karte gehört nur dir - du musst sie niemandem zeigen. Sie hilft dir, deine Grenzen zu kennen und sie klar zu vertreten.",
+      "intro": "Jeder Mensch hat eine unsichtbare Linie, an der das Wohlfühlen endet - und sie verläuft bei jedem anders. Diese Karte gehört nur dir, du musst sie niemandem zeigen. Sie hilft dir, deine eigenen Grenzen zu kennen, sie klar zu zeigen und ein Nein anderer zu achten.",
       "blocks": [
         {
           "kind": "heading",
-          "text": "Meine Grenz-Landkarte"
+          "text": "1. Meine Grenz-Landkarte"
         },
         {
           "kind": "instruction",
-          "text": "Trage Beispiele aus deinem Alltag in die drei Bereiche ein (Körper, Sachen, Worte, online, Mitmachen)."
+          "text": "Trage Beispiele aus deinem Alltag ein - aus den Bereichen Körper, Sachen, Worte/Fragen, Online und Mitmachen."
         },
         {
           "kind": "box",
-          "text": "GRÜN - das ist für mich okay:",
-          "lines": 2
+          "text": "GRÜN - das ist für mich völlig okay:",
+          "lines": 3
         },
         {
           "kind": "box",
-          "text": "GELB - Graubereich, kommt drauf an:",
-          "lines": 2
+          "text": "GELB - Graubereich, kommt auf die Situation an:",
+          "lines": 3
         },
         {
           "kind": "box",
           "text": "ROT - das geht für mich gar nicht:",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "2. Meine Nein-Sätze"
+        },
+        {
+          "kind": "instruction",
+          "text": "Schreibe Nein-Formulierungen auf, die sich für dich echt und machbar anfühlen - freundlich, aber klar. Probiere verschiedene Stärken."
+        },
+        {
+          "kind": "question",
+          "text": "Mein freundliches Nein (ruhig, aber bestimmt):",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "Mein deutliches Nein (wenn jemand nicht aufhört):",
           "lines": 2
         },
         {
           "kind": "heading",
-          "text": "Meine Nein-Sätze"
+          "text": "3. Ein Nein der anderen erkennen"
         },
         {
-          "kind": "instruction",
-          "text": "Schreibe Nein-Formulierungen auf, die sich für dich echt und machbar anfühlen - freundlich, aber klar."
-        },
-        {
-          "kind": "lines",
+          "kind": "question",
+          "text": "Woran erkenne ich, dass jemand anderes mir gerade eine Grenze zeigt - auch ohne ein deutliches Wort? (Blick, Körper, Stimme ...)",
           "lines": 3
         },
         {
-          "kind": "question",
-          "text": "Woran erkenne ich, dass jemand anderes mir gerade eine Grenze zeigt - auch ohne deutliches Wort?"
-        },
-        {
-          "kind": "lines",
-          "lines": 2
-        },
-        {
           "kind": "scale",
-          "text": "Wie leicht fällt es mir aktuell, Nein zu sagen, wenn ich es möchte? (1 = sehr schwer, 5 = sehr leicht)"
+          "text": "Wie leicht fällt es mir aktuell, Nein zu sagen, wenn ich es möchte?",
+          "items": [
+            "gar nicht leicht",
+            "geht so",
+            "ziemlich leicht",
+            "sehr leicht"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "4. Was ich mitnehme"
         },
         {
           "kind": "question",
-          "text": "Was nehme ich aus dem Charta-Projekt für mich persönlich mit?"
+          "text": "Grenzen bedeuten kein Misstrauen, sondern Respekt. Was nehme ich aus dem Charta-Projekt für mich persönlich mit?",
+          "lines": 3
         },
         {
-          "kind": "lines",
+          "kind": "box",
+          "text": "Ein Satz aus unserer Klassen-Charta, der mir besonders wichtig ist:",
           "lines": 2
         }
       ]
@@ -32645,11 +33931,11 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Unser Kampagnen-Produkt: Stopp heißt Stopp",
-      "intro": "Ihr macht aus eurem Wissen eine Botschaft für die ganze Schule. Plant euer Produkt mit diesem Steckbrief - und überlegt am Ende für dich selbst, wie du als Zuschauer:in handeln willst.",
+      "intro": "Ihr macht aus eurem Wissen eine Botschaft für die ganze Schule. Plant euer Produkt mit diesem Steckbrief - und überlegt am Ende für dich selbst, wie du als Zuschauer:in wirklich handeln willst. Stopp heißt Stopp - sofort, ohne Diskussion.",
       "blocks": [
         {
           "kind": "heading",
-          "text": "Unser Produkt"
+          "text": "1. Unser Produkt"
         },
         {
           "kind": "checklist",
@@ -32662,42 +33948,61 @@ export const generated: Material[] = [
         },
         {
           "kind": "question",
-          "text": "Welche Kernbotschaft transportiert unser Produkt?"
-        },
-        {
-          "kind": "lines",
+          "text": "Welche eine Kernbotschaft soll bei allen ankommen?",
           "lines": 2
         },
         {
           "kind": "question",
-          "text": "Wen wollen wir damit erreichen, und welche Wirkung soll entstehen?"
+          "text": "Wen genau wollen wir erreichen, und welche Wirkung soll entstehen?",
+          "lines": 3
         },
         {
-          "kind": "lines",
-          "lines": 2
+          "kind": "heading",
+          "text": "2. Unser Plan"
+        },
+        {
+          "kind": "question",
+          "text": "Wer in unserem Team übernimmt was? (Aufgaben verteilen)",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "3. Wirkungs-Probe - unser Produkt prüfen"
         },
         {
           "kind": "instruction",
-          "text": "Prüft euer Produkt: Ist die Botschaft sofort verständlich? Wird niemand bloßgestellt? Steht drin, wo man Hilfe bekommt?"
+          "text": "Prüft ehrlich: Kommt die Botschaft an, ohne jemanden bloßzustellen?"
         },
         {
           "kind": "table",
-          "lines": 3,
+          "lines": 4,
           "items": [
-            "Prüfpunkt",
-            "erfüllt? (ja/nein/noch nicht)"
+            "Prüfpunkt (verständlich? wirkt? niemand bloßgestellt? Hilfe genannt?)",
+            "erfüllt? (ja / nein / noch nicht)"
+          ]
+        },
+        {
+          "kind": "question",
+          "text": "Was hat uns das Testpublikum zurückgemeldet, und was ändern wir daraufhin?",
+          "lines": 3
+        },
+        {
+          "kind": "scale",
+          "text": "Wie stolz sind wir gerade auf unser Produkt?",
+          "items": [
+            "gar nicht",
+            "ein bisschen",
+            "ziemlich",
+            "sehr stolz"
           ]
         },
         {
           "kind": "heading",
-          "text": "Meine Selbstverpflichtung als Zuschauer:in"
+          "text": "4. Meine Selbstverpflichtung als Zuschauer:in"
         },
         {
           "kind": "question",
-          "text": "Wenn ich sehe, dass eine Grenze überschritten wird, will ich konkret das tun:"
-        },
-        {
-          "kind": "lines",
+          "text": "Wenn ich sehe, dass eine Grenze überschritten wird, will ich ganz konkret das tun (hinschauen, mich danebenstellen, Hilfe holen ...):",
           "lines": 3
         }
       ]
@@ -32793,16 +34098,16 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Mein Digitale-Grenzen-Check",
-      "intro": "Online sind deine Grenzen genauso wichtig wie im echten Leben. Dieser Check gehört nur dir - prüfe ehrlich deinen eigenen Datenraum und nimm dir konkrete Schritte vor.",
+      "intro": "Online sind deine Grenzen genauso wichtig wie im echten Leben - nur werden sie schneller überschritten. Dieser Check gehört nur dir. Prüfe ehrlich deinen eigenen Datenraum und nimm dir konkrete Schritte vor.",
       "blocks": [
         {
           "kind": "heading",
-          "text": "Mein Datenraum - wie steht es um meine Grenzen?"
+          "text": "1. Mein Datenraum - wie steht es um meine Grenzen?"
         },
         {
           "kind": "checklist",
           "items": [
-            "Ich weiß, wer meine Bilder/Beiträge sehen kann",
+            "Ich weiß, wer meine Bilder und Beiträge sehen kann",
             "Ich leite private Nachrichten anderer nicht ungefragt weiter",
             "Ich frage, bevor ich ein Bild mit anderen darauf teile",
             "Ich kenne meine Privatsphäre-Einstellungen",
@@ -32811,40 +34116,62 @@ export const generated: Material[] = [
           ]
         },
         {
+          "kind": "scale",
+          "text": "Wie sicher fühle ich mich aktuell mit meinem digitalen Datenraum?",
+          "items": [
+            "gar nicht sicher",
+            "eher unsicher",
+            "ziemlich sicher",
+            "sehr sicher"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "2. Meine digitalen Grenzen"
+        },
+        {
           "kind": "question",
-          "text": "Was würde ich online niemals von mir verschicken oder posten - wo liegt klar meine Grenze?"
-        },
-        {
-          "kind": "lines",
-          "lines": 2
+          "text": "Was würde ich online niemals von mir verschicken oder posten - wo liegt klar meine Grenze?",
+          "lines": 3
         },
         {
           "kind": "question",
-          "text": "Habe ich vielleicht schon einmal die digitale Grenze von jemandem überschritten, ohne es zu merken? Was ändere ich?"
+          "text": "Recht am eigenen Bild: Wann darf ein Foto, auf dem ich zu sehen bin, geteilt werden - und wann nicht?",
+          "lines": 3
         },
         {
-          "kind": "lines",
-          "lines": 2
+          "kind": "heading",
+          "text": "3. Auch die Grenzen anderer achten"
+        },
+        {
+          "kind": "question",
+          "text": "Habe ich vielleicht schon einmal die digitale Grenze von jemandem überschritten, ohne es zu merken? Was ändere ich?",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "4. Wenn meine Grenze überschritten wird"
         },
         {
           "kind": "instruction",
-          "text": "Wenn jemand meine digitale Grenze überschreitet, ist mein Plan: sichern - melden/blockieren - Hilfe holen bei ..."
+          "text": "Mein Plan: sichern - melden / blockieren - Hilfe holen."
         },
         {
-          "kind": "lines",
+          "kind": "question",
+          "text": "Bei wem konkret hole ich mir im Ernstfall Hilfe?",
           "lines": 2
         },
         {
           "kind": "heading",
-          "text": "Meine zwei konkreten Schritte"
+          "text": "5. Meine zwei konkreten Schritte"
         },
         {
           "kind": "instruction",
-          "text": "Das nehme ich mir nach diesem Projekt für meinen eigenen Datenraum konkret vor:"
+          "text": "Das nehme ich mir nach diesem Projekt für meinen eigenen Datenraum konkret vor (z. B. eine Einstellung ändern, etwas löschen, vor dem Posten fragen):"
         },
         {
           "kind": "lines",
-          "lines": 2
+          "lines": 3
         }
       ]
     },
@@ -32943,10 +34270,15 @@ export const generated: Material[] = [
       "blocks": [
         {
           "kind": "heading",
-          "text": "Mein Stärke-Pass (an den Stationen ausfüllen)"
+          "text": "1. Mein Stärke-Pass (an den Stationen ausfüllen)"
+        },
+        {
+          "kind": "instruction",
+          "text": "Trage an jeder Station ein, was schon gut gelingt und woran du noch arbeiten willst."
         },
         {
           "kind": "table",
+          "text": "Stand - Stimme - Blick - Aussage",
           "lines": 4,
           "items": [
             "Station / Baustein",
@@ -32956,35 +34288,54 @@ export const generated: Material[] = [
         },
         {
           "kind": "question",
-          "text": "Welcher der vier Bausteine - Stand, Stimme, Blick oder Aussage - hilft MIR am meisten, klar zu wirken?"
-        },
-        {
-          "kind": "lines",
-          "lines": 1
+          "text": "Welcher der vier Bausteine - Stand, Stimme, Blick oder Aussage - hilft MIR am meisten, klar zu wirken? Warum gerade dieser?",
+          "lines": 3
         },
         {
           "kind": "heading",
-          "text": "Meine Standpunkt-Sätze für echte Situationen"
+          "text": "2. Vom Stein im Bauch zum klaren Standpunkt"
         },
         {
-          "kind": "instruction",
-          "text": "Formuliere zwei bis drei kurze, klare Sätze, die fest, aber nicht verletzend sind (z. B. 'Nein, das will ich nicht.')."
-        },
-        {
-          "kind": "lines",
+          "kind": "question",
+          "text": "Wann hattest du an einer Station diesen 'Stein im Bauch' - und was hat dir geholfen, ihn kleiner werden zu lassen?",
           "lines": 3
         },
         {
           "kind": "question",
-          "text": "In welcher echten Situation will ich meinen wichtigsten Standpunkt-Satz als Nächstes einsetzen?"
+          "text": "Was ist der Unterschied zwischen 'fest und klar' und 'aggressiv und verletzend'? Beschreibe es in eigenen Worten.",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "3. Meine Standpunkt-Sätze für echte Situationen"
+        },
+        {
+          "kind": "instruction",
+          "text": "Formuliere zwei bis drei kurze, klare Sätze, die fest, aber nicht verletzend sind (z. B. 'Nein, das will ich nicht.', 'Hör bitte auf.', 'Ich sehe das anders.')."
         },
         {
           "kind": "lines",
-          "lines": 2
+          "lines": 4
+        },
+        {
+          "kind": "question",
+          "text": "In welcher echten Situation will ich meinen wichtigsten Standpunkt-Satz als Nächstes einsetzen - und wie könnte ich dabei stehen, schauen und sprechen?",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "4. Mein Selbst-Check"
         },
         {
           "kind": "scale",
-          "text": "Wie sicher fühle ich mich jetzt, meine Grenze klar zu vertreten? (1 = noch unsicher, 5 = sehr sicher)"
+          "text": "Wie sicher fühle ich mich jetzt, meine Grenze klar und respektvoll zu vertreten?",
+          "items": [
+            "gar nicht",
+            "ein wenig",
+            "mittel",
+            "ziemlich",
+            "sehr sicher"
+          ]
         }
       ]
     },
@@ -33146,7 +34497,7 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Stopp-Hand und Hilfe holen - mein Mut-Blatt",
-      "intro": "Ein Blatt zum Anschauen und Anmalen für zu Hause oder die Gruppe. Erwachsene können es mit dem Kind besprechen.",
+      "intro": "Hier kannst du malen und ankreuzen. Übe deine Stopp-Hand und finde heraus, wann du Hilfe holst. Erwachsene können das Blatt mit dir besprechen.",
       "blocks": [
         {
           "kind": "heading",
@@ -33154,11 +34505,12 @@ export const generated: Material[] = [
         },
         {
           "kind": "instruction",
-          "text": "Lege deine Hand auf das Blatt und male sie ab. Das ist deine Stopp-Hand. Übe den Satz: 'Stopp! Das will ich nicht!'"
+          "text": "Lege deine Hand auf das Blatt und male sie ab. Das ist deine Stopp-Hand. Übe laut: 'Stopp! Das will ich nicht!'"
         },
         {
           "kind": "box",
-          "text": "Hier deine Stopp-Hand abmalen"
+          "text": "Hier deine Stopp-Hand abmalen",
+          "lines": 8
         },
         {
           "kind": "heading",
@@ -33166,27 +34518,45 @@ export const generated: Material[] = [
         },
         {
           "kind": "instruction",
-          "text": "Male einen Daumen hoch, wenn man Hilfe holen sollte. Erwachsene lesen die Sätze vor."
+          "text": "Ein Erwachsener liest die Sätze vor. Male einen Haken, wenn man Hilfe holen sollte."
         },
         {
           "kind": "checklist",
           "items": [
             "Ein Kind wird geschubst und weint.",
-            "Ein Kind wird seit Tagen ausgelacht.",
+            "Ein Kind wird seit Tagen ausgelacht und ist traurig.",
             "Jemand hat aus Versehen etwas umgeworfen."
           ]
         },
         {
           "kind": "heading",
-          "text": "3. Meine Hilfs-Erwachsenen"
+          "text": "3. Wie fühlt sich der Hase am Ende?"
         },
         {
           "kind": "instruction",
-          "text": "Male oder klebe Bilder von Erwachsenen, die du um Hilfe bitten kannst."
+          "text": "Der Hase hat Stopp gesagt und sich Hilfe geholt. Male an, wie er sich jetzt fühlt."
+        },
+        {
+          "kind": "scale",
+          "text": "So fühlt sich der Hase jetzt:",
+          "items": [
+            "traurig",
+            "ein bisschen besser",
+            "froh und mutig"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "4. Meine Hilfs-Erwachsenen"
+        },
+        {
+          "kind": "instruction",
+          "text": "Male oder klebe Bilder von Erwachsenen, die du um Hilfe bitten kannst (zum Beispiel Lehrerin, Mama, Papa, Oma)."
         },
         {
           "kind": "box",
-          "text": "Meine Hilfs-Erwachsenen"
+          "text": "Meine Hilfs-Erwachsenen",
+          "lines": 7
         }
       ]
     },
@@ -33572,7 +34942,7 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Meine Anstrengungs-Treppe",
-      "intro": "Können fällt nicht vom Himmel - man steigt Stufe für Stufe hoch. Anstrengung heißt: Dein Gehirn wächst gerade.",
+      "intro": "Können fällt nicht vom Himmel - man steigt Stufe für Stufe hoch. Anstrengung heißt: Dein Gehirn wächst gerade. Halte hier fest, wie du an den Stationen besser geworden bist.",
       "blocks": [
         {
           "kind": "heading",
@@ -33595,6 +34965,11 @@ export const generated: Material[] = [
           ]
         },
         {
+          "kind": "question",
+          "text": "Bei welcher Aufgabe hast du beim ersten Mal gedacht 'das kann ich nicht' - und konntest es nach ein paar Versuchen doch ein bisschen?",
+          "lines": 3
+        },
+        {
           "kind": "heading",
           "text": "2. Mein 'noch nicht'"
         },
@@ -33614,11 +34989,26 @@ export const generated: Material[] = [
         },
         {
           "kind": "instruction",
-          "text": "Ein Satz, den du dir sagst, wenn es anstrengend wird und du aufgeben möchtest."
+          "text": "Ein Satz, den du dir sagst, wenn es anstrengend wird und du aufgeben möchtest (z. B. 'Noch nicht ist nicht nie!')."
         },
         {
           "kind": "box",
-          "text": "Mein Anfeuer-Satz"
+          "text": "Mein Anfeuer-Satz",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "4. Mein Üben-Wetter"
+        },
+        {
+          "kind": "scale",
+          "text": "Wie geht es mir, wenn etwas anstrengend wird und ich dranbleiben soll?",
+          "items": [
+            "Gewitter",
+            "Regen",
+            "Wolke",
+            "Sonne"
+          ]
         }
       ]
     },
@@ -33990,59 +35380,71 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Mein Urteil - meine Begründung",
-      "intro": "Beim Gerechtigkeits-Gerichtshof hörst du beide Seiten an und überlegst dann selbst, was fair wäre. Wichtig ist nicht nur, WAS du entscheidest, sondern WARUM. Ein gutes Urteil hat immer eine Begründung.",
+      "intro": "Beim Gerechtigkeits-Gerichtshof hörst du beide Seiten an und entscheidest dann selbst, was fair wäre. Wichtig ist nicht nur, WAS du entscheidest, sondern WARUM. Ein gutes Urteil hat immer eine Begründung.",
       "blocks": [
         {
           "kind": "heading",
-          "text": "Der Fall in einem Satz"
-        },
-        {
-          "kind": "lines",
-          "lines": 2
-        },
-        {
-          "kind": "heading",
-          "text": "Beide Seiten anhören"
+          "text": "Der Fall, um den es geht"
         },
         {
           "kind": "question",
-          "text": "Was sagt die eine Seite (Anklage)? Was findet sie ungerecht?"
-        },
-        {
-          "kind": "lines",
-          "lines": 2
-        },
-        {
-          "kind": "question",
-          "text": "Was sagt die andere Seite (Verteidigung)? Wie erklärt sie ihr Verhalten?"
-        },
-        {
-          "kind": "lines",
-          "lines": 2
+          "text": "Worum geht es in diesem Fall? Erzähle ihn kurz in eigenen Worten.",
+          "lines": 3
         },
         {
           "kind": "heading",
-          "text": "Mein Urteil"
+          "text": "Ich höre beide Seiten an"
+        },
+        {
+          "kind": "instruction",
+          "text": "Schreibe für jede Seite auf, was sie sagt und was sie ungerecht findet - ohne sofort zu urteilen."
+        },
+        {
+          "kind": "table",
+          "text": "Was sagen die beiden Seiten?",
+          "lines": 4,
+          "items": [
+            "Seite / Rolle",
+            "Das ist passiert",
+            "Das findet sie ungerecht / wichtig"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "Mein gerechtes Urteil"
         },
         {
           "kind": "instruction",
           "text": "Beginne deinen Satz immer mit: 'Ich entscheide so, weil ...'"
         },
         {
-          "kind": "lines",
-          "lines": 3
+          "kind": "question",
+          "text": "Mein Urteil und meine Begründung:",
+          "lines": 4
         },
         {
           "kind": "scale",
-          "text": "Wie sicher bin ich mir, dass mein Urteil fair ist? (1 = ganz unsicher, 5 = sehr sicher)"
+          "text": "Wie sicher bin ich, dass mein Urteil fair ist?",
+          "items": [
+            "ganz unsicher",
+            "ein bisschen sicher",
+            "ziemlich sicher",
+            "sehr sicher"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "Was das Anhören verändert hat"
         },
         {
           "kind": "question",
-          "text": "Hat sich meine Meinung verändert, nachdem ich beide Seiten gehört habe? Wodurch?"
+          "text": "Hat sich meine Meinung verändert, nachdem ich BEIDE Seiten gehört habe? Wodurch?",
+          "lines": 3
         },
         {
-          "kind": "lines",
-          "lines": 2
+          "kind": "question",
+          "text": "Welcher Grundsatz hat mir bei diesem Fall geholfen (z. B. 'Absicht und Versehen sind nicht dasselbe')? Wo könnte er dir im Alltag noch helfen?",
+          "lines": 3
         }
       ]
     },
@@ -34140,43 +35542,37 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Meine Stimme für unsere Verfassung",
-      "intro": "Eine Verfassung ist ein Satz gerechter Regeln und Rechte, der für ALLE in der Klasse gilt. Hier sammelst du deine Ideen und triffst deine eigene Wahl. Deine Stimme zählt genauso viel wie jede andere.",
+      "intro": "Eine Verfassung ist ein Satz gerechter Regeln und Rechte, der fuer ALLE in der Klasse gilt. Hier sammelst du deine Ideen und triffst deine eigene Wahl. Deine Stimme zaehlt genauso viel wie jede andere.",
       "blocks": [
         {
           "kind": "heading",
-          "text": "Meine Rechte-Vorschläge"
+          "text": "Meine Rechte und die passenden Pflichten"
         },
         {
           "kind": "instruction",
-          "text": "Schreibe Rechte auf, die du für eine gerechte Klasse wichtig findest. Beginne mit: 'Jedes Kind hat das Recht ...'"
+          "text": "Zu jedem Recht gehoert eine Pflicht: Mein Recht ist die Pflicht der anderen - und umgekehrt. Fuelle die Tabelle aus."
         },
         {
-          "kind": "lines",
-          "lines": 3
-        },
-        {
-          "kind": "heading",
-          "text": "Die passende Pflicht dazu"
-        },
-        {
-          "kind": "instruction",
-          "text": "Zu jedem Recht gehört eine Pflicht. Beginne mit: 'Ich habe die Pflicht ...'"
-        },
-        {
-          "kind": "lines",
-          "lines": 3
+          "kind": "table",
+          "text": "Recht - Pflicht",
+          "lines": 4,
+          "items": [
+            "Jedes Kind hat das Recht ...",
+            "Dazu habe ICH die Pflicht ..."
+          ]
         },
         {
           "kind": "heading",
           "text": "Gerechte Folge bei Regelbruch"
         },
         {
-          "kind": "question",
-          "text": "Was wäre eine faire Folge, die zur Tat passt und etwas wiedergutmacht (statt nur zu bestrafen)?"
+          "kind": "instruction",
+          "text": "Eine gerechte Folge passt zur Tat und macht etwas wieder gut - sie ist keine willkuerliche Strafe."
         },
         {
-          "kind": "lines",
-          "lines": 2
+          "kind": "question",
+          "text": "Welche Regel koennte gebrochen werden, und welche faire Folge wuerde dazu passen?",
+          "lines": 3
         },
         {
           "kind": "heading",
@@ -34184,19 +35580,32 @@ export const generated: Material[] = [
         },
         {
           "kind": "question",
-          "text": "Was kannst du tun, wenn du dich ungerecht behandelt fühlst?"
+          "text": "Was kannst du Schritt fuer Schritt tun, wenn du dich ungerecht behandelt fuehlst?",
+          "lines": 3
         },
         {
-          "kind": "lines",
-          "lines": 2
+          "kind": "scale",
+          "text": "Wie sehr finde ich, dass diese Regeln wirklich fuer ALLE gleich gerecht sind?",
+          "items": [
+            "gar nicht",
+            "ein bisschen",
+            "ziemlich",
+            "voll und ganz"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "Das ist mir am wichtigsten"
         },
         {
           "kind": "question",
-          "text": "Welche Regel aus unserer Verfassung ist mir am wichtigsten - und warum?"
+          "text": "Welche Regel aus unserer Verfassung ist dir am wichtigsten - und warum?",
+          "lines": 3
         },
         {
-          "kind": "lines",
-          "lines": 2
+          "kind": "question",
+          "text": "Wie kannst DU dazu beitragen, dass unsere Verfassung im Alltag wirklich gilt?",
+          "lines": 3
         }
       ]
     },
@@ -34294,15 +35703,16 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Welche Brille passt hier?",
-      "intro": "Es gibt mehr als eine Art, gerecht zu sein. Mit drei Brillen kannst du eine Situation betrachten: die Gleichheits-Brille (alle gleich), die Bedarfs-Brille (wer mehr braucht, bekommt mehr) und die Leistungs-Brille (wer mehr beiträgt, bekommt mehr). Probiere aus, welche wann am gerechtesten ist.",
+      "intro": "Es gibt mehr als eine Art, gerecht zu sein. Mit drei Brillen kannst du eine Situation betrachten: die Gleichheits-Brille (alle gleich), die Bedarfs-Brille (wer mehr braucht, bekommt mehr) und die Leistungs-Brille (wer mehr beitraegt, bekommt mehr). Probiere aus, welche wann am gerechtesten ist.",
       "blocks": [
         {
           "kind": "heading",
           "text": "Die Situation"
         },
         {
-          "kind": "lines",
-          "lines": 2
+          "kind": "question",
+          "text": "Welche Situation schaust du dir an? Beschreibe sie kurz.",
+          "lines": 3
         },
         {
           "kind": "heading",
@@ -34310,43 +35720,50 @@ export const generated: Material[] = [
         },
         {
           "kind": "instruction",
-          "text": "Überlege für jede Brille: Wer fühlt sich gerecht behandelt, wer vielleicht nicht?"
+          "text": "Ueberlege fuer jede Brille: Wie wuerdest du verteilen - und wer fuehlt sich dabei gerecht behandelt, wer vielleicht nicht?"
         },
         {
           "kind": "table",
+          "text": "Drei Brillen im Vergleich",
+          "lines": 4,
           "items": [
             "Brille",
-            "Wie würde ich verteilen?",
-            "Fühlt sich das gerecht an?"
+            "So wuerde ich verteilen",
+            "Fuehlt sich das gerecht an?"
           ]
         },
         {
-          "kind": "question",
-          "text": "Welche Brille passt in DIESER Situation am besten? Warum?"
-        },
-        {
-          "kind": "lines",
-          "lines": 2
+          "kind": "heading",
+          "text": "Gleich ist nicht immer gerecht"
         },
         {
           "kind": "question",
-          "text": "Wann ist 'für alle gleich' gerade NICHT gerecht? Nenne ein Beispiel."
+          "text": "Welche Brille passt in DIESER Situation am besten? Begruende deine Wahl.",
+          "lines": 3
         },
         {
-          "kind": "lines",
-          "lines": 2
+          "kind": "question",
+          "text": "Wann ist 'fuer alle gleich' gerade NICHT gerecht? Nenne ein Beispiel.",
+          "lines": 3
         },
         {
           "kind": "scale",
-          "text": "Wie gut kann ich schon erkennen, was ein anderes Kind wirklich braucht? (1 = noch schwer, 5 = schon gut)"
+          "text": "Wie gut kann ich schon erkennen, was ein anderes Kind wirklich braucht?",
+          "items": [
+            "noch schwer",
+            "geht so",
+            "ziemlich gut",
+            "schon richtig gut"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "Mein Vorsatz"
         },
         {
           "kind": "question",
-          "text": "In welcher echten Situation möchte ich selbst die Brille wechseln, um gerechter zu sein?"
-        },
-        {
-          "kind": "lines",
-          "lines": 2
+          "text": "In welcher echten Situation moechtest du selbst die Brille wechseln, um gerechter zu sein?",
+          "lines": 3
         }
       ]
     },
@@ -34443,62 +35860,78 @@ export const generated: Material[] = [
       "KOG-57"
     ],
     "worksheet": {
-      "title": "Mein Weg zum Schlichtungs-Führerschein",
-      "intro": "Ein:e Schlichter:in hilft zwei Streitenden, selbst eine gerechte Lösung zu finden - ohne Partei zu ergreifen und ohne zu bestimmen, wer recht hat. Hier übst du die Schritte und sammelst, was du brauchst, um deinen Führerschein zu bekommen.",
+      "title": "Mein Weg zum Schlichtungs-Fuehrerschein",
+      "intro": "Ein:e Schlichter:in hilft zwei Streitenden, selbst eine gerechte Loesung zu finden - ohne Partei zu ergreifen und ohne zu bestimmen, wer recht hat. Hier uebst du die Schritte und sammelst, was du fuer deinen Fuehrerschein brauchst.",
       "blocks": [
         {
           "kind": "heading",
           "text": "Die Schlichtungs-Schritte"
         },
         {
+          "kind": "instruction",
+          "text": "Hake ab, was du schon kannst."
+        },
+        {
           "kind": "checklist",
           "items": [
-            "Ich höre beiden Seiten gleich lang und ungestört zu",
+            "Ich hoere beiden Seiten gleich lang und ungestoert zu",
             "Ich gebe wieder, was ich verstanden habe ('Habe ich richtig verstanden, dass ...?')",
-            "Ich finde heraus, welche Gefühle und Bedürfnisse hinter dem Streit stecken",
-            "Ich helfe, mehrere Lösungsideen zu sammeln",
-            "Wir wählen gemeinsam die fairste Lösung - beide müssen einverstanden sein"
+            "Ich finde heraus, welche Gefuehle und Beduerfnisse hinter dem Streit stecken",
+            "Ich helfe, mehrere Loesungsideen zu sammeln",
+            "Wir waehlen gemeinsam die fairste Loesung - beide muessen einverstanden sein"
           ]
         },
         {
           "kind": "heading",
-          "text": "Meine besten Schlichter-Sätze"
+          "text": "Mein geuebter Fall"
         },
         {
-          "kind": "instruction",
-          "text": "Schreibe Sätze auf, die dir beim Schlichten helfen."
-        },
-        {
-          "kind": "lines",
+          "kind": "question",
+          "text": "Welchen Streitfall hast du geschlichtet? Was wollten die beiden Seiten?",
           "lines": 3
         },
         {
           "kind": "question",
-          "text": "Warum darf ein:e Schlichter:in NICHT entscheiden, wer recht hat?"
+          "text": "Auf welche gemeinsame Loesung haben sie sich am Ende geeinigt?",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "Meine besten Schlichter-Saetze"
         },
         {
           "kind": "lines",
+          "text": "Saetze, die mir beim Schlichten helfen:",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "Das muss ich als Schlichter:in wissen"
+        },
+        {
+          "kind": "question",
+          "text": "Warum darf ein:e Schlichter:in NICHT entscheiden, wer recht hat?",
           "lines": 2
         },
         {
           "kind": "question",
-          "text": "Wann musst du unbedingt eine erwachsene Person holen?"
-        },
-        {
-          "kind": "lines",
+          "text": "Wann musst du unbedingt eine erwachsene Person holen?",
           "lines": 2
         },
         {
           "kind": "scale",
-          "text": "Wie sicher fühle ich mich schon als Schlichter:in? (1 = noch sehr unsicher, 5 = schon sicher)"
+          "text": "Wie sicher fuehle ich mich schon als Schlichter:in?",
+          "items": [
+            "noch sehr unsicher",
+            "ein bisschen sicher",
+            "ziemlich sicher",
+            "schon sicher"
+          ]
         },
         {
           "kind": "question",
-          "text": "Was fällt mir beim Schlichten leicht - und was möchte ich noch üben?"
-        },
-        {
-          "kind": "lines",
-          "lines": 2
+          "text": "Was faellt dir beim Schlichten leicht - und was moechtest du noch ueben?",
+          "lines": 3
         }
       ]
     },
@@ -34582,7 +36015,7 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Ermittlungsakte: Die Aufmerksamkeits-Falle",
-      "intro": "Du bist Aufmerksamkeits-Detektiv:in. Deine Aufgabe: Finde heraus, mit welchen Tricks Apps dich länger am Bildschirm halten – und entwickle eine eigene Gegenstrategie.",
+      "intro": "Du bist Aufmerksamkeits-Detektiv:in. Deine Aufgabe: Finde heraus, mit welchen Tricks Apps dich laenger am Bildschirm halten, beobachte, wie das auf dich wirkt - und entwickle eine eigene Gegenstrategie.",
       "blocks": [
         {
           "kind": "heading",
@@ -34590,7 +36023,7 @@ export const generated: Material[] = [
         },
         {
           "kind": "instruction",
-          "text": "Wählt im Team eine App oder Plattform, die ihr gut kennt."
+          "text": "Waehlt im Team eine App oder Plattform, die ihr gut kennt."
         },
         {
           "kind": "lines",
@@ -34599,41 +36032,40 @@ export const generated: Material[] = [
         },
         {
           "kind": "heading",
-          "text": "2. Die Tricks – was hält dich dran?"
+          "text": "2. Die Spurensicherung - welche Tricks halten dich dran?"
         },
         {
-          "kind": "question",
-          "text": "Trick 1 – was passiert, und wie wirkt er auf dich?",
-          "lines": 2
+          "kind": "instruction",
+          "text": "Tragt die entdeckten Tricks in die Tabelle ein und beschreibt, was sie mit eurer Aufmerksamkeit machen."
         },
         {
-          "kind": "question",
-          "text": "Trick 2 – was passiert, und wie wirkt er auf dich?",
-          "lines": 2
-        },
-        {
-          "kind": "question",
-          "text": "Trick 3 – was passiert, und wie wirkt er auf dich?",
-          "lines": 2
+          "kind": "table",
+          "text": "Aufgedeckte Tricks",
+          "lines": 4,
+          "items": [
+            "Trick (was passiert?)",
+            "Wie wirkt er auf mich / meinen Koerper?",
+            "Was nimmt er mir ab?"
+          ]
         },
         {
           "kind": "heading",
-          "text": "3. Welcher Trick erwischt MICH am häufigsten?"
+          "text": "3. Welcher Trick erwischt MICH am haeufigsten?"
         },
         {
           "kind": "scale",
-          "text": "Wie oft merkst du, dass dich ein Trick 'einfängt'?",
+          "text": "Wie oft merkst du, dass dich ein Trick 'einfaengt'?",
           "items": [
             "fast nie",
             "manchmal",
             "oft",
-            "fast täglich"
+            "fast taeglich"
           ]
         },
         {
-          "kind": "lines",
-          "text": "Der Trick, der bei mir am besten funktioniert, ist:",
-          "lines": 2
+          "kind": "question",
+          "text": "Der Trick, der bei mir am besten funktioniert, ist ... - und so fuehlt es sich an, wenn er wirkt:",
+          "lines": 3
         },
         {
           "kind": "heading",
@@ -34641,7 +36073,12 @@ export const generated: Material[] = [
         },
         {
           "kind": "question",
-          "text": "Das mache ich ab jetzt konkret anders:",
+          "text": "Das mache ich ab jetzt ganz konkret anders, um die Kontrolle ueber meine Bildschirmzeit zurueckzugewinnen:",
+          "lines": 3
+        },
+        {
+          "kind": "question",
+          "text": "Woran wirst du merken, dass deine Gegenstrategie funktioniert?",
           "lines": 3
         }
       ]
@@ -34724,30 +36161,52 @@ export const generated: Material[] = [
       "KOG-59"
     ],
     "worksheet": {
-      "title": "Fake-News-Werkstatt: Mein Prüf-Heft",
-      "intro": "Falschmeldungen verbreiten sich schnell – weil sie aufregend klingen. Hier lernst du, sie zu entlarven, und baust selbst eine Übungs-Fälschung.",
+      "title": "Fake-News-Werkstatt: Mein Pruef-Heft",
+      "intro": "Falschmeldungen verbreiten sich schnell - weil sie aufregend klingen. Hier lernst du, sie zu entlarven, baust selbst eine Uebungs-Faelschung und nimmst dir etwas fuer den Alltag vor.",
       "blocks": [
         {
           "kind": "heading",
           "text": "1. Woran erkenne ich eine Falschmeldung?"
         },
         {
+          "kind": "instruction",
+          "text": "Diese Pruef-Fragen helfen dir, bevor du etwas glaubst oder teilst."
+        },
+        {
           "kind": "checklist",
           "items": [
-            "Wer hat es veröffentlicht? (Quelle bekannt?)",
-            "Steht es auch woanders / bei seriösen Quellen?",
-            "Gibt es ein Datum – ist es aktuell?",
-            "Will mich die Meldung wütend oder ängstlich machen?",
+            "Wer hat es veroeffentlicht? (Quelle bekannt und serioes?)",
+            "Steht es auch woanders / bei mehreren Quellen?",
+            "Gibt es ein Datum - ist es aktuell?",
+            "Will mich die Meldung wuetend oder aengstlich machen?",
             "Passt das Bild wirklich zum Text?"
           ]
         },
         {
           "kind": "heading",
-          "text": "2. Unsere Übungs-Fälschung"
+          "text": "2. Eine Schlagzeile unter der Lupe"
         },
         {
           "kind": "instruction",
-          "text": "Erfindet im Team eine glaubwürdig klingende Schlagzeile – nur als Übung, kein echtes Thema, keine echten Personen."
+          "text": "Nimm dir eine Schlagzeile vor und pruefe sie mit den Fragen von oben."
+        },
+        {
+          "kind": "table",
+          "text": "Meine Pruefung",
+          "lines": 4,
+          "items": [
+            "Pruef-Frage",
+            "Was finde ich heraus?",
+            "Verdaechtig? (ja/nein)"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "3. Unsere Uebungs-Faelschung"
+        },
+        {
+          "kind": "instruction",
+          "text": "Erfindet im Team eine glaubwuerdig klingende Schlagzeile - nur als Uebung, kein echtes Thema, keine echten Personen."
         },
         {
           "kind": "lines",
@@ -34756,16 +36215,26 @@ export const generated: Material[] = [
         },
         {
           "kind": "question",
-          "text": "Woran könnte man sie als Fälschung erkennen?",
-          "lines": 2
+          "text": "Woran koennte man sie als Faelschung entlarven?",
+          "lines": 3
+        },
+        {
+          "kind": "scale",
+          "text": "Wie sicher kann ich schon echte von erfundenen Meldungen unterscheiden?",
+          "items": [
+            "noch unsicher",
+            "ein bisschen",
+            "ziemlich sicher",
+            "schon sicher"
+          ]
         },
         {
           "kind": "heading",
-          "text": "3. Meine Selbstverpflichtung"
+          "text": "4. Meine Selbstverpflichtung"
         },
         {
           "kind": "question",
-          "text": "Bevor ich etwas glaube oder weiterleite, mache ich ab jetzt das:",
+          "text": "Bevor ich das naechste Mal etwas glaube oder weiterleite, mache ich ab jetzt das:",
           "lines": 3
         }
       ]
@@ -34850,21 +36319,29 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Hinter dem perfekten Bild",
-      "intro": "Online sehen wir oft die 'Höhepunkt-Sammlung' anderer Menschen. Hier schaust du hinter die Bilder – und stärkst dein echtes Ich.",
+      "intro": "Online sehen wir oft nur die 'Höhepunkt-Sammlung' anderer Menschen – ausgewählt, bearbeitet, inszeniert. Hier schaust du hinter die Bilder und stärkst dein echtes Ich.",
       "blocks": [
         {
           "kind": "heading",
-          "text": "1. Was zeigt man online – was nicht?"
+          "text": "1. Was zeigt man online – und was nicht?"
         },
         {
-          "kind": "lines",
-          "text": "Online sieht man oft:",
-          "lines": 2
+          "kind": "instruction",
+          "text": "Denk an das 'perfekte' Bild und die Situation dahinter."
         },
         {
-          "kind": "lines",
-          "text": "Online sieht man fast nie:",
-          "lines": 2
+          "kind": "table",
+          "text": "Das gepostete Bild zeigt … – das Bild zeigt fast nie …",
+          "lines": 4,
+          "items": [
+            "Online zu sehen",
+            "Online fast nie zu sehen"
+          ]
+        },
+        {
+          "kind": "question",
+          "text": "Mit welchen 'Tricks' wird ein Bild perfekt gemacht (Pose, Licht, Filter …)? Nenne mindestens drei.",
+          "lines": 3
         },
         {
           "kind": "heading",
@@ -34872,7 +36349,7 @@ export const generated: Material[] = [
         },
         {
           "kind": "scale",
-          "text": "Wie oft vergleichst du dich mit Bildern, die du siehst?",
+          "text": "Wie oft vergleichst du dich mit Bildern, die du online siehst?",
           "items": [
             "selten",
             "manchmal",
@@ -34882,13 +36359,13 @@ export const generated: Material[] = [
         },
         {
           "kind": "question",
-          "text": "Wie fühlst du dich meistens NACH dem Scrollen?",
-          "lines": 2
+          "text": "In welchen Momenten vergleichst du dich am meisten – und wie fühlst du dich danach?",
+          "lines": 3
         },
         {
           "kind": "question",
-          "text": "Was würdest du jemandem sagen, der sich danach schlecht fühlt?",
-          "lines": 2
+          "text": "Was würdest du einer Freundin oder einem Freund sagen, die/der sich nach dem Scrollen schlecht fühlt?",
+          "lines": 3
         },
         {
           "kind": "heading",
@@ -34896,17 +36373,26 @@ export const generated: Material[] = [
         },
         {
           "kind": "instruction",
-          "text": "Schreibe zwei Sätze über dich, die nichts mit Aussehen oder Likes zu tun haben."
+          "text": "Schreibe zwei wertschätzende Sätze über dich, die nichts mit Aussehen oder Likes zu tun haben."
         },
         {
-          "kind": "lines",
-          "text": "Ich bin ...",
-          "lines": 1
+          "kind": "question",
+          "text": "Mein erster Satz über mein echtes Ich:",
+          "lines": 2
         },
         {
-          "kind": "lines",
-          "text": "Ich kann gut ...",
-          "lines": 1
+          "kind": "question",
+          "text": "Mein zweiter Satz über mein echtes Ich:",
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "4. Mein Vorsatz"
+        },
+        {
+          "kind": "question",
+          "text": "Was nimmst du dir konkret vor, damit der Vergleich dir weniger schadet (z. B. Accounts entfolgen, die dir nicht guttun)?",
+          "lines": 3
         }
       ]
     },
@@ -34990,7 +36476,7 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Bevor ich auf Senden tippe",
-      "intro": "Im Chat fehlen Stimme und Gesicht – Nachrichten wirken oft härter als gemeint. Hier übst du, fair zu schreiben und einzugreifen, wenn es nötig ist.",
+      "intro": "Im Chat fehlen Stimme, Gesicht und Tonfall – Nachrichten wirken oft härter als gemeint. Hier untersuchst du, wo es schiefgeht, und übst, fair zu schreiben und einzugreifen.",
       "blocks": [
         {
           "kind": "heading",
@@ -34998,44 +36484,48 @@ export const generated: Material[] = [
         },
         {
           "kind": "question",
-          "text": "An welcher Stelle ging die Chat-Szene schief?",
-          "lines": 2
+          "text": "An welcher Stelle ging die Chat-Szene schief? Was wurde falsch verstanden?",
+          "lines": 3
         },
         {
           "kind": "question",
-          "text": "Wer hätte was anders machen können?",
-          "lines": 2
+          "text": "Wer hätte was anders machen können – und an welcher Stelle?",
+          "lines": 3
         },
         {
           "kind": "heading",
-          "text": "2. Sätze, die helfen"
+          "text": "2. Härter als gemeint?"
         },
         {
           "kind": "instruction",
-          "text": "Sammle Nachrichten, die einen Streit im Chat entschärfen."
+          "text": "Manche Nachrichten klingen geschrieben anders als gesprochen. Schreibe sie fairer."
         },
         {
-          "kind": "lines",
-          "text": "Deeskalierende Nachricht:",
-          "lines": 2
+          "kind": "table",
+          "text": "Vergleiche eine harte und eine faire Variante.",
+          "lines": 3,
+          "items": [
+            "Klingt hart / kann falsch ankommen",
+            "So schreibe ich es fair"
+          ]
         },
         {
           "kind": "heading",
-          "text": "3. Wenn jemand fertiggemacht wird"
+          "text": "3. Sätze, die helfen"
         },
         {
           "kind": "question",
-          "text": "Was kann ich als Zuschauer:in im Chat konkret tun?",
-          "lines": 2
+          "text": "Welche Nachricht entschärft einen Streit (nachfragen statt annehmen, freundlich klarstellen, Stopp sagen)?",
+          "lines": 3
         },
         {
           "kind": "heading",
-          "text": "4. Meine wichtigste Chat-Regel"
+          "text": "4. Wenn jemand fertiggemacht wird"
         },
         {
-          "kind": "lines",
-          "text": "Mir ist diese Regel am wichtigsten:",
-          "lines": 2
+          "kind": "question",
+          "text": "Was kannst du als Zuschauer:in im Chat konkret tun (eingreifen, Partei ergreifen, Hilfe holen, Chat verlassen)?",
+          "lines": 3
         },
         {
           "kind": "scale",
@@ -35046,6 +36536,15 @@ export const generated: Material[] = [
             "oft",
             "fast immer"
           ]
+        },
+        {
+          "kind": "heading",
+          "text": "5. Meine wichtigste Chat-Regel"
+        },
+        {
+          "kind": "question",
+          "text": "Diese Regel ist mir am wichtigsten – und so will ich mich im Streitfall verhalten:",
+          "lines": 3
         }
       ]
     },
@@ -35408,7 +36907,7 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Mein Echo-Ohren-Pass",
-      "intro": "Heute habe ich geübt, erst richtig zuzuhören und dann ein Echo zurückzugeben.",
+      "intro": "Heute habe ich geübt, erst richtig zuzuhören und dann ein Echo zurückzugeben: 'Du hast gesagt, dass …'",
       "blocks": [
         {
           "kind": "heading",
@@ -35417,14 +36916,18 @@ export const generated: Material[] = [
         {
           "kind": "checklist",
           "items": [
-            "Augen zum Sprecher",
-            "Mund bleibt zu",
-            "Echo zurück: 'Du hast gesagt, dass ...'"
+            "Augen zum Sprecher (ich schaue hin)",
+            "Mund bleibt zu (ich unterbreche nicht)",
+            "Echo zurück: 'Du hast gesagt, dass …'"
           ]
         },
         {
+          "kind": "heading",
+          "text": "Mein Echo"
+        },
+        {
           "kind": "question",
-          "text": "Was hat mir mein Partner erzählt? Mein Echo dazu:",
+          "text": "Was hat mir mein Partner erzählt? Schreibe dein Echo auf: 'Du hast gesagt, dass …'",
           "lines": 3
         },
         {
@@ -35437,8 +36940,31 @@ export const generated: Material[] = [
           ]
         },
         {
+          "kind": "heading",
+          "text": "Zuhören üben"
+        },
+        {
+          "kind": "question",
+          "text": "Was war für dich am schwersten beim Zuhören?",
+          "lines": 2
+        },
+        {
           "kind": "question",
           "text": "So fühlt es sich an, wenn mir jemand wirklich zuhört:",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "Ein guter Zuhörer … (ergänze den Satz):",
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "Mein Vorsatz"
+        },
+        {
+          "kind": "question",
+          "text": "Wem möchtest du das nächste Mal besonders gut zuhören – und wann?",
           "lines": 2
         }
       ]
@@ -35638,7 +37164,7 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Meine Hilf-mir-Karte",
-      "intro": "Um Hilfe bitten ist clever. So gelingt mir eine gute Bitte.",
+      "intro": "Um Hilfe bitten ist clever, kein Versagen. So gelingt mir eine gute, klare Bitte.",
       "blocks": [
         {
           "kind": "heading",
@@ -35653,13 +37179,30 @@ export const generated: Material[] = [
           ]
         },
         {
+          "kind": "heading",
+          "text": "Warum trauen wir uns oft nicht?"
+        },
+        {
           "kind": "question",
-          "text": "Bei dieser Sache fällt es mir schwer zu fragen:",
+          "text": "Bei dieser Sache fällt es mir schwer, um Hilfe zu fragen:",
           "lines": 2
         },
         {
           "kind": "question",
-          "text": "So könnte ich genau um Hilfe bitten:",
+          "text": "Was hält mich manchmal davon ab zu fragen?",
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "Meine gute Bitte"
+        },
+        {
+          "kind": "instruction",
+          "text": "Schreibe eine klare Bitte mit allen drei Teilen auf."
+        },
+        {
+          "kind": "question",
+          "text": "Wen frage ich – und was genau brauche ich? ('Entschuldige … Kannst du mir zeigen, wie …?')",
           "lines": 3
         },
         {
@@ -35670,6 +37213,15 @@ export const generated: Material[] = [
             "geht so",
             "schon leicht"
           ]
+        },
+        {
+          "kind": "heading",
+          "text": "Helfen tut auch gut"
+        },
+        {
+          "kind": "question",
+          "text": "Ich helfe gern, wenn … (ergänze den Satz):",
+          "lines": 2
         }
       ]
     },
@@ -35752,26 +37304,47 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Mein roter Faden",
-      "intro": "Eine gute Geschichte geht der Reihe nach: Anfang, Mitte, Ende.",
+      "intro": "Eine gute Geschichte geht der Reihe nach: zuerst der Anfang, dann die Mitte, zum Schluss das Ende. Spanne hier deinen eigenen roten Faden!",
       "blocks": [
         {
+          "kind": "heading",
+          "text": "Mein Erlebnis"
+        },
+        {
           "kind": "instruction",
-          "text": "Spanne deinen roten Faden: Schreibe oder male zu jedem Teil ein Stichwort."
+          "text": "Wähle ein eigenes Erlebnis. Male hier, worum es geht."
         },
         {
-          "kind": "lines",
-          "text": "Zuerst (Anfang: Wer? Wo?)",
+          "kind": "box",
+          "text": "Mein Erlebnis als Bild",
+          "lines": 6
+        },
+        {
+          "kind": "heading",
+          "text": "Ich spanne meinen Faden"
+        },
+        {
+          "kind": "instruction",
+          "text": "Schreibe oder male zu jedem Teil ein Stichwort."
+        },
+        {
+          "kind": "question",
+          "text": "Zuerst (Anfang): Wer? Wo? Was war als Erstes?",
           "lines": 2
         },
         {
-          "kind": "lines",
-          "text": "Dann (Mitte: Was passierte?)",
+          "kind": "question",
+          "text": "Dann (Mitte): Was passierte? Was war spannend?",
           "lines": 2
         },
         {
-          "kind": "lines",
-          "text": "Zum Schluss (Ende: Wie ging es aus?)",
+          "kind": "question",
+          "text": "Zum Schluss (Ende): Wie ging es aus?",
           "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "Wie ist es gelaufen?"
         },
         {
           "kind": "scale",
@@ -36140,26 +37713,47 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Meine Kachel im Wir-Mosaik",
-      "intro": "Ich gestalte meinen eigenen Stein im großen Mosaik der Klasse - und suche, was mich mit anderen verbindet.",
+      "intro": "Ich gestalte meinen eigenen Stein im großen Mosaik der Klasse - und suche, was mich mit anderen verbindet. Hier plane ich meine Kachel.",
       "blocks": [
         {
+          "kind": "heading",
+          "text": "Was steckt in meiner Kachel?"
+        },
+        {
           "kind": "instruction",
-          "text": "Sammle erst Ideen für deine Kachel. Schreibe oder male zu jedem Feld etwas, das zu dir passt."
+          "text": "Sammle Ideen für deine Kachel. Schreibe zu jedem Feld etwas, das zu dir passt."
         },
         {
-          "kind": "lines",
+          "kind": "question",
           "text": "Das mag ich / mein Hobby:",
-          "lines": 1
+          "lines": 2
         },
         {
-          "kind": "lines",
+          "kind": "question",
           "text": "Das kann ich gut / meine Stärke:",
-          "lines": 1
+          "lines": 2
         },
         {
-          "kind": "lines",
+          "kind": "question",
           "text": "Das ist mir wichtig:",
-          "lines": 1
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "So sieht meine Kachel aus"
+        },
+        {
+          "kind": "instruction",
+          "text": "Entwirf hier mit Symbolen und Farben, wie deine Kachel später aussehen soll."
+        },
+        {
+          "kind": "box",
+          "text": "Mein Kachel-Entwurf",
+          "lines": 7
+        },
+        {
+          "kind": "heading",
+          "text": "Was mich mit anderen verbindet"
         },
         {
           "kind": "question",
@@ -36385,8 +37979,12 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Der schwebende Zauberstab - Mein Auswertungsbogen",
-      "intro": "Eine winzige Aufgabe hat gezeigt, wie schnell eine Gruppe gegeneinander statt miteinander arbeitet. Halte deine Beobachtungen fest.",
+      "intro": "Eine winzige Aufgabe hat gezeigt, wie schnell eine Gruppe gegeneinander statt miteinander arbeitet. Halte hier fest, was du beobachtet und gelernt hast.",
       "blocks": [
+        {
+          "kind": "heading",
+          "text": "Was ist passiert?"
+        },
         {
           "kind": "instruction",
           "text": "Denke an die ersten Versuche zurück, als der Stab immer nach oben stieg."
@@ -36402,6 +38000,23 @@ export const generated: Material[] = [
           "lines": 3
         },
         {
+          "kind": "heading",
+          "text": "Gegeneinander oder miteinander?"
+        },
+        {
+          "kind": "instruction",
+          "text": "Trage ein, was du im 'Gegeneinander' und im 'Miteinander' beobachtet hast."
+        },
+        {
+          "kind": "table",
+          "text": "Was war anders?",
+          "lines": 3,
+          "items": [
+            "Als es NICHT klappte",
+            "Als es KLAPPTE"
+          ]
+        },
+        {
           "kind": "scale",
           "text": "Wie ruhig bin ich geblieben, als es nicht klappte?",
           "items": [
@@ -36412,14 +38027,18 @@ export const generated: Material[] = [
           ]
         },
         {
-          "kind": "question",
-          "text": "Wo im echten Leben 'drücken' Gruppen sich gegenseitig hoch, ohne es zu merken? Ein Beispiel:",
-          "lines": 2
+          "kind": "heading",
+          "text": "Was nehme ich mit?"
         },
         {
-          "kind": "lines",
-          "text": "Mein wichtigster Satz für gute Zusammenarbeit:",
-          "lines": 1
+          "kind": "question",
+          "text": "Wo im echten Leben 'drücken' Gruppen sich gegenseitig hoch, ohne es zu merken? Ein Beispiel aus deinem Alltag:",
+          "lines": 3
+        },
+        {
+          "kind": "question",
+          "text": "Mein Vorsatz: Das nehme ich mir für die nächste Gruppenarbeit vor:",
+          "lines": 3
         }
       ]
     },
@@ -36502,17 +38121,17 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Tausend Hände, ein Takt - Mein Rhythmus-Bogen",
-      "intro": "Heute wurde die Gruppe zu einem Körper. Halte fest, was du über Zusammenarbeit ohne Anführer gelernt hast.",
+      "intro": "Heute wurde aus eurer Gruppe für kurze Momente ein einziger Körper: gemeinsam klatschen, zählen, sich bewegen - ganz ohne Anführer und ohne Worte. Halte hier fest, was nötig war, damit das gelingt, und was du daraus über echtes Zusammenwirken mitnimmst.",
       "blocks": [
         {
           "kind": "heading",
-          "text": "Synchron sein"
+          "text": "1. Wie synchron war ich?"
         },
         {
           "kind": "scale",
-          "text": "Wie gut konnte ich auf die anderen achten statt nur auf mich?",
+          "text": "Wie gut konnte ich auf die anderen achten, statt nur auf mich selbst?",
           "items": [
-            "am Anfang",
+            "am Anfang kaum",
             "geht so",
             "schon gut",
             "richtig gut"
@@ -36520,8 +38139,21 @@ export const generated: Material[] = [
         },
         {
           "kind": "question",
-          "text": "In welchem Moment war die Gruppe wirklich synchron - und woran lag das?",
+          "text": "In welchem Moment war die Gruppe wirklich synchron (das Klatschen, das Zählen oder die Bewegung) - und was hat in genau diesem Moment gestimmt?",
           "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "2. Vorangehen oder Sich-Zurücknehmen?"
+        },
+        {
+          "kind": "table",
+          "text": "Bei den drei Aufgaben ging es immer um die Balance zwischen 'mehr machen' und 'zurücknehmen'. Trage ein, was dir jeweils geholfen hat.",
+          "lines": 3,
+          "items": [
+            "Aufgabe (Klatschen / Zählen / Bewegung)",
+            "Musste ich eher VORANGEHEN oder mich ZURÜCKNEHMEN?"
+          ]
         },
         {
           "kind": "instruction",
@@ -36530,16 +38162,30 @@ export const generated: Material[] = [
         {
           "kind": "checklist",
           "items": [
-            "mich vordrängen lassen / warten können",
+            "warten können, statt mich vorzudrängen",
             "mich trauen, anzufangen",
-            "mein Tempo zurücknehmen",
-            "ruhig bleiben, wenn es nicht klappt"
+            "mein eigenes Tempo zurücknehmen",
+            "ruhig bleiben, wenn es nicht klappt und wir neu anfangen mussten"
           ]
         },
         {
-          "kind": "lines",
-          "text": "Damit eine Gruppe im Takt ist, muss ich ...",
-          "lines": 1
+          "kind": "heading",
+          "text": "3. Wer führt, wenn niemand führt?"
+        },
+        {
+          "kind": "question",
+          "text": "Hat jemand die Gruppe unbemerkt geführt, obwohl niemand führen sollte? Beschreibe, woran du das gemerkt hast - und ob das schlimm war.",
+          "lines": 3
+        },
+        {
+          "kind": "question",
+          "text": "Wo im Alltag (Sport, Musik, Gruppenarbeit) ist es genauso wichtig, die anderen aufmerksam zu spüren, statt laute Ansagen zu machen? Nenne ein Beispiel.",
+          "lines": 3
+        },
+        {
+          "kind": "box",
+          "text": "Mein Vorsatz: Damit eine Gruppe im Takt ist, achte ich beim nächsten Mal besonders auf ...",
+          "lines": 3
         }
       ]
     },
@@ -36623,16 +38269,11 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Blind durch den Parcours - Mein Vertrauens-Bogen",
-      "intro": "Heute hast du beide Seiten erlebt: geführt werden und führen. Halte fest, was gute Zusammenarbeit dabei ausmacht.",
+      "intro": "Heute hast du beide Seiten erlebt: blind geführt werden und selbst lotsen. Dabei hängt gute Zusammenarbeit an zwei Dingen - an klaren Worten und an dem Vertrauen, dass die andere Person Verantwortung für dich übernimmt. Halte fest, was du auf beiden Seiten gelernt hast.",
       "blocks": [
         {
           "kind": "heading",
-          "text": "Als ich geführt wurde"
-        },
-        {
-          "kind": "question",
-          "text": "Welche Worte meines Lotsen haben mir Sicherheit gegeben?",
-          "lines": 2
+          "text": "1. Als ich geführt wurde"
         },
         {
           "kind": "scale",
@@ -36645,13 +38286,18 @@ export const generated: Material[] = [
           ]
         },
         {
+          "kind": "question",
+          "text": "Welche Worte deines Lotsen haben dir Sicherheit gegeben - und welche haben dich fast gegen ein Hindernis laufen lassen?",
+          "lines": 3
+        },
+        {
           "kind": "heading",
-          "text": "Als ich gelotst habe"
+          "text": "2. Als ich gelotst habe"
         },
         {
           "kind": "question",
-          "text": "Was habe ich beim Führen besser gemacht, weil ich vorher selbst geführt wurde?",
-          "lines": 2
+          "text": "Was hast du beim Führen besser gemacht, weil du vorher selbst geführt wurdest?",
+          "lines": 3
         },
         {
           "kind": "instruction",
@@ -36660,17 +38306,39 @@ export const generated: Material[] = [
         {
           "kind": "checklist",
           "items": [
-            "präzise: Schrittzahl und Richtung nennen",
-            "rechtzeitig warnen",
-            "ruhiges Tempo",
-            "Sicherheit zuerst (Stopp gilt sofort)",
-            "die Person nicht im Stich lassen"
+            "präzise sein: Schrittzahl und Richtung nennen",
+            "rechtzeitig warnen (nicht erst im letzten Moment)",
+            "ruhiges Tempo halten",
+            "Sicherheit zuerst - 'Stopp' gilt sofort",
+            "die geführte Person nicht im Stich lassen"
           ]
         },
         {
-          "kind": "lines",
-          "text": "Vertrauen fällt mir leichter, wenn ...",
-          "lines": 1
+          "kind": "heading",
+          "text": "3. Gutes Lotsen - schlechtes Lotsen"
+        },
+        {
+          "kind": "table",
+          "text": "Vergleiche, was hilft und was schadet, wenn man jemanden mit Worten führt.",
+          "lines": 3,
+          "items": [
+            "Das hat geholfen / Sicherheit gegeben",
+            "Das hat unsicher gemacht / gestört"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "4. Vertrauen im echten Leben"
+        },
+        {
+          "kind": "question",
+          "text": "Wo im Alltag musst du dich auf andere verlassen - und wo tragen ANDERE darauf, dass sie sich auf dich verlassen können? Nenne je ein Beispiel.",
+          "lines": 3
+        },
+        {
+          "kind": "box",
+          "text": "Mein Vorsatz: Vertrauen fällt mir leichter, wenn ... / Damit andere mir vertrauen können, will ich ...",
+          "lines": 3
         }
       ]
     },
@@ -36754,20 +38422,20 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Mangel-Markt - Mein Auswertungsbogen",
-      "intro": "Niemand hatte alles - nur gemeinsam konnte es klappen. Halte fest, was du über Geben, Nehmen und gemeinsames Gelingen gelernt hast.",
+      "intro": "Niemand hatte alles - und gewonnen war erst, wenn ALLE Teams ihre Aufgabe geschafft hatten. Du musstest tauschen, verhandeln und auch abgeben. Halte fest, was du über Geben, Nehmen und gemeinsames Gelingen gelernt hast.",
       "blocks": [
         {
-          "kind": "instruction",
-          "text": "Denke an den Moment, als ihr gemerkt habt, dass euch etwas fehlt."
+          "kind": "heading",
+          "text": "1. Aufeinander angewiesen"
         },
         {
           "kind": "question",
-          "text": "Wann wurde dir klar, dass euer Team die anderen Teams braucht?",
-          "lines": 2
+          "text": "Wann genau wurde dir klar, dass euer Team die anderen Teams braucht, um die Aufgabe zu schaffen?",
+          "lines": 3
         },
         {
           "kind": "scale",
-          "text": "Wie leicht ist es mir gefallen, etwas abzugeben?",
+          "text": "Wie leicht ist es dir gefallen, etwas abzugeben, das ihr vielleicht behalten wolltet?",
           "items": [
             "sehr schwer",
             "eher schwer",
@@ -36776,19 +38444,45 @@ export const generated: Material[] = [
           ]
         },
         {
+          "kind": "heading",
+          "text": "2. Horten oder Teilen?"
+        },
+        {
+          "kind": "table",
+          "text": "Beim Markt gibt es zwei Wege. Trage ein, was jeder Weg für das gemeinsame Ziel bedeutet.",
+          "lines": 3,
+          "items": [
+            "HORTEN / hart verhandeln - was bewirkt das?",
+            "TEILEN / Überflüssiges verschenken - was bewirkt das?"
+          ]
+        },
+        {
           "kind": "question",
-          "text": "Hat in unserer Klasse eher das Horten oder das Teilen gewonnen? Woran lag das?",
+          "text": "Hat in eurer Klasse am Ende eher das Horten oder das Teilen gewonnen? Woran lag das?",
           "lines": 3
         },
         {
-          "kind": "question",
-          "text": "Wo im echten Leben sind Menschen aufeinander angewiesen und müssen teilen statt horten? Ein Beispiel:",
-          "lines": 2
+          "kind": "heading",
+          "text": "3. Fairness auf dem Markt"
         },
         {
-          "kind": "lines",
-          "text": "Gemeinsam schaffen wir es, wenn ...",
-          "lines": 1
+          "kind": "question",
+          "text": "Lief der Tausch fair ab, oder wurde jemand übervorteilt? Beschreibe einen Moment.",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "4. Im echten Leben"
+        },
+        {
+          "kind": "question",
+          "text": "Wo im echten Leben (Klasse, Familie, Gesellschaft) sind Menschen aufeinander angewiesen und müssen teilen statt horten? Nenne ein Beispiel.",
+          "lines": 3
+        },
+        {
+          "kind": "box",
+          "text": "Mein Vorsatz: Gemeinsam schaffen wir es, wenn ich selbst ...",
+          "lines": 3
         }
       ]
     },
@@ -37289,54 +38983,63 @@ export const generated: Material[] = [
       "V-33"
     ],
     "worksheet": {
-      "title": "Selbstbild und Fremdbild im Abgleich",
-      "intro": "Wie du dich selbst siehst und wie du auf andere wirkst, ist nicht immer dasselbe. Heute legst du beide Bilder nebeneinander - wertschätzend und ehrlich.",
+      "title": "Selbstbild und Fremdbild im ehrlichen Abgleich",
+      "intro": "Wie du dich selbst siehst und wie du auf andere wirkst, ist selten genau dasselbe. Dazwischen liegt oft ein blinder Fleck - Dinge, die andere an dir sehen, du selbst aber nicht. Heute legst du beide Bilder nebeneinander: wertschätzend, ehrlich und ohne dich zu verbiegen.",
       "blocks": [
         {
           "kind": "heading",
-          "text": "1. Mein Selbstbild"
+          "text": "1. Mein Selbstbild - so sehe ich mich"
         },
         {
           "kind": "question",
-          "text": "Drei Eigenschaften, die mich aus meiner Sicht beschreiben ('So bin ich, glaube ich'):",
+          "text": "Schreibe drei Eigenschaften auf, die dich aus deiner Sicht beschreiben. Begründe kurz, woran du das merkst.",
+          "lines": 4
+        },
+        {
+          "kind": "question",
+          "text": "Eine Stärke, von der du sicher bist, dass du sie hast:",
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "2. Mein Fremdbild - die Rückmeldung aus dem Tandem"
+        },
+        {
+          "kind": "instruction",
+          "text": "Halte fest, was dein Tandem dir wertschätzend zurückgemeldet hat - so konkret wie möglich, am besten mit dem Beispiel, das genannt wurde."
+        },
+        {
+          "kind": "question",
+          "text": "Auf mein Tandem wirke ich oft ... (mit Beispiel):",
+          "lines": 3
+        },
+        {
+          "kind": "question",
+          "text": "Eine Stärke, die ich vielleicht selbst nicht sehe, ist ...",
+          "lines": 3
+        },
+        {
+          "kind": "question",
+          "text": "In der Gruppe merkt mein Tandem an mir ...",
           "lines": 3
         },
         {
           "kind": "heading",
-          "text": "2. Mein Fremdbild (vom Tandem)"
+          "text": "3. Der Abgleich - was passt, was überrascht?"
         },
         {
-          "kind": "instruction",
-          "text": "Halte die wertschätzende Rückmeldung deines Tandems stichpunktartig fest."
-        },
-        {
-          "kind": "lines",
-          "text": "Auf mein Tandem wirke ich oft ...",
-          "lines": 1
-        },
-        {
-          "kind": "lines",
-          "text": "Eine Stärke, die ich vielleicht selbst nicht sehe, ist ...",
-          "lines": 1
-        },
-        {
-          "kind": "lines",
-          "text": "In der Gruppe merkt mein Tandem an mir ...",
-          "lines": 1
-        },
-        {
-          "kind": "heading",
-          "text": "3. Der Abgleich"
+          "kind": "table",
+          "text": "Trage Selbstbild und Fremdbild nebeneinander ein und vergleiche.",
+          "lines": 4,
+          "items": [
+            "Das sehe ich UND andere (passt zusammen)",
+            "Das hat mich überrascht (mein blinder Fleck)"
+          ]
         },
         {
           "kind": "question",
-          "text": "Was passt zusammen - das sehe ICH und auch andere?",
-          "lines": 2
-        },
-        {
-          "kind": "question",
-          "text": "Was hat mich überrascht (mein blinder Fleck)?",
-          "lines": 2
+          "text": "Etwas, das ich an mir sehe, das andere offenbar nicht so wahrnehmen - woran könnte das liegen?",
+          "lines": 3
         },
         {
           "kind": "scale",
@@ -37348,8 +39051,18 @@ export const generated: Material[] = [
           ]
         },
         {
-          "kind": "box",
-          "text": "Mein Mitnehm-Satz - das habe ich heute über meine Wirkung auf andere gelernt:"
+          "kind": "heading",
+          "text": "4. Was ich mitnehme"
+        },
+        {
+          "kind": "question",
+          "text": "Welche Rückmeldung hat dir heute besonders gutgetan - und warum?",
+          "lines": 3
+        },
+        {
+          "kind": "question",
+          "text": "Mein Mitnehm-Satz: Entweder eine Stärke, die das Fremdbild ans Licht gebracht hat ('Ich nehme mit, dass ich auf andere ... wirke'), oder ein kleiner Vorsatz für meine Außenwirkung.",
+          "lines": 4
         }
       ]
     },
@@ -37433,23 +39146,24 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Mein Glocken-Heft",
-      "intro": "Die Stille-Glocke hilft uns, ruhig zu werden. Hier kannst du festhalten, was du beim Lauschen entdeckst.",
+      "intro": "Wenn die Stille-Glocke klingt, halten wir an, lauschen und atmen einmal. Hier kannst du festhalten, was du dabei entdeckst.",
       "blocks": [
         {
           "kind": "heading",
-          "text": "Anhalten - Lauschen - Atmen"
+          "text": "So macht es die Glocke: anhalten - lauschen - atmen"
         },
         {
           "kind": "instruction",
-          "text": "Male, wie der Glockenton für dich aussieht (zum Beispiel eine lange, immer dünner werdende Linie)."
+          "text": "Male, wie der Glockenton für dich aussieht. Vielleicht eine lange Linie, die immer dünner wird, bis sie verschwindet."
         },
         {
           "kind": "box",
-          "text": "Mein Klangbild"
+          "text": "Mein Klangbild",
+          "lines": 7
         },
         {
           "kind": "question",
-          "text": "Wie fühlt sich dein Körper an, wenn du der Glocke nachlauschst?",
+          "text": "Wie fühlt sich dein Körper an, wenn du dem Ton ganz nachlauschst?",
           "lines": 2
         },
         {
@@ -37463,9 +39177,18 @@ export const generated: Material[] = [
           ]
         },
         {
-          "kind": "lines",
-          "text": "Heute hat mir die Glocke geholfen bei:",
-          "lines": 1
+          "kind": "instruction",
+          "text": "Male ein Gesicht, das zeigt, wie du dich nach der Glocke fühlst."
+        },
+        {
+          "kind": "box",
+          "text": "So fühle ich mich nach dem Lauschen",
+          "lines": 5
+        },
+        {
+          "kind": "question",
+          "text": "Heute hat mir die Glocke geholfen bei ...",
+          "lines": 2
         }
       ]
     },
@@ -37549,7 +39272,7 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Mein Barfuß-Forscher-Pass",
-      "intro": "Was erzählen dir deine Füße? Halte deine Spür-Entdeckungen hier fest.",
+      "intro": "Was erzählen dir deine Füße? Geh ganz langsam und spüre genau hin. Halte deine Spür-Entdeckungen hier fest.",
       "blocks": [
         {
           "kind": "heading",
@@ -37573,12 +39296,18 @@ export const generated: Material[] = [
         },
         {
           "kind": "box",
-          "text": "Mein Lieblings-Untergrund"
+          "text": "Mein Lieblings-Untergrund",
+          "lines": 6
         },
         {
           "kind": "question",
-          "text": "Welcher Boden hat dich am ruhigsten gemacht?",
-          "lines": 1
+          "text": "Welcher Boden hat dich am ruhigsten gemacht? Wie hat er sich angefühlt?",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "Ein Fühl-Wort für deine Füße heute (weich, rau, kühl, kribbelig, warm ...):",
+          "lines": 2
         },
         {
           "kind": "scale",
@@ -37672,7 +39401,7 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Mein Glanz-Blatt",
-      "intro": "Such dir einen besonders schönen Augenblick aus und verweile einen Moment bei ihm.",
+      "intro": "Such dir einen besonders schönen Augenblick aus und verweile einen Moment ganz bei ihm. Dann gestaltest du dein Glanz-Blatt für unseren Dankbar-Baum.",
       "blocks": [
         {
           "kind": "heading",
@@ -37680,19 +39409,20 @@ export const generated: Material[] = [
         },
         {
           "kind": "instruction",
-          "text": "Male deinen schönsten Augenblick ganz genau - was war zu sehen, wer war dabei?"
+          "text": "Male deinen schönsten Augenblick ganz genau: Was war zu sehen? Wer war dabei?"
         },
         {
           "kind": "box",
-          "text": "Mein Glanz-Augenblick"
+          "text": "Mein Glanz-Augenblick",
+          "lines": 7
         },
         {
           "kind": "question",
           "text": "Wo in deinem Körper spürst du das gute Gefühl?",
-          "lines": 1
+          "lines": 2
         },
         {
-          "kind": "lines",
+          "kind": "question",
           "text": "Mein guter Augenblick in einem Satz:",
           "lines": 2
         },
@@ -37705,6 +39435,15 @@ export const generated: Material[] = [
             "sehr schön",
             "wunderschön"
           ]
+        },
+        {
+          "kind": "instruction",
+          "text": "Male ein kleines Herz oder eine Sonne dorthin, wo das gute Gefühl in dir sitzt."
+        },
+        {
+          "kind": "box",
+          "text": "Hier sitzt mein gutes Gefühl",
+          "lines": 5
         }
       ]
     },
@@ -38040,30 +39779,47 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Mein Schlichter-Pass",
-      "intro": "Ein Streitschlichter hilft zwei Streitenden, ohne Partei zu sein. Hier merkst du dir, wie das geht - und übst die wichtigsten Schritte.",
+      "intro": "Ein Streitschlichter hilft zwei Streitenden und ist fuer keinen Partei. Hier merkst du dir die Schritte und uebst, wie ein guter Schlichter spricht.",
       "blocks": [
         {
           "kind": "heading",
-          "text": "1. Die vier Schlichter-Schritte"
+          "text": "1. Meine vier Schlichter-Schritte"
         },
         {
           "kind": "instruction",
-          "text": "Trage die vier Schritte der Reihe nach ein (zuhören, nachfragen, zusammenfassen, Lösung suchen)."
+          "text": "Trage die vier Schritte der Reihe nach ein. Tipp: zuhoeren - nachfragen - zusammenfassen - Loesung suchen."
         },
         {
-          "kind": "lines",
-          "lines": 4
+          "kind": "question",
+          "text": "Schritt 1:",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "Schritt 2:",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "Schritt 3:",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "Schritt 4:",
+          "lines": 2
         },
         {
           "kind": "heading",
-          "text": "2. Schlichter-Regeln"
+          "text": "2. Meine Schlichter-Regeln"
         },
         {
           "kind": "checklist",
+          "text": "Daran halte ich mich beim Schlichten:",
           "items": [
-            "Ich bin für keinen Partei - ich helfe beiden.",
+            "Ich bin fuer keinen Partei - ich helfe beiden.",
             "Ich lasse beide ausreden, einer nach dem anderen.",
-            "Ich lache niemanden aus und erzähle nichts weiter.",
+            "Ich lache niemanden aus und erzaehle nichts weiter.",
             "Bei einem schlimmen Streit hole ich eine erwachsene Person."
           ]
         },
@@ -38073,25 +39829,32 @@ export const generated: Material[] = [
         },
         {
           "kind": "question",
-          "text": "Schreibe zwei Fragen, mit denen du beim Schlichten nachfragen kannst:",
-          "lines": 2
+          "text": "Schreibe zwei Fragen auf, mit denen du beim Schlichten nachfragen kannst (z. B. 'Was ist passiert?' / 'Wie hast du dich gefuehlt?'):",
+          "lines": 3
         },
         {
           "kind": "heading",
-          "text": "4. Wie war es als Schlichter?"
+          "text": "4. Wie war es fuer mich als Schlichter?"
         },
         {
           "kind": "scale",
-          "text": "Wie gut konntest du neutral bleiben und nicht selbst Partei werden?",
+          "text": "Wie gut konnte ich neutral bleiben und nicht selbst Partei werden?",
           "items": [
             "war schwer",
-            "ging einigermaßen",
-            "ging gut"
+            "ging einigermassen",
+            "ging gut",
+            "ging sehr gut"
           ]
         },
         {
+          "kind": "question",
+          "text": "Was war fuer mich als Schlichter am schwierigsten - und was hat mir geholfen?",
+          "lines": 3
+        },
+        {
           "kind": "box",
-          "text": "Mein Schlichter-Satz - den merke ich mir für den nächsten echten Streit:"
+          "text": "Mein Schlichter-Satz - den merke ich mir fuer den naechsten echten Streit. Schreibe und gestalte ihn gross:",
+          "lines": 5
         }
       ]
     },
@@ -38175,38 +39938,47 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Mein Eisberg unter dem Streit",
-      "intro": "Im Streit sieht man nur die Spitze. Hier wirst du zum Eisberg-Forscher und suchst, was darunter wirklich gebraucht wird.",
+      "intro": "Im Streit sieht man nur die Spitze. Hier wirst du zum Eisberg-Forscher und suchst, was tief unter dem Wasser wirklich gebraucht wird.",
       "blocks": [
         {
           "kind": "heading",
-          "text": "1. Die Spitze (was man sieht und hört)"
+          "text": "1. Die Spitze - was man sieht und hoert"
         },
         {
           "kind": "question",
           "text": "Was tun oder sagen die beiden Kinder im Streit?",
-          "lines": 2
+          "lines": 3
         },
         {
           "kind": "heading",
-          "text": "2. Unter dem Wasser (das versteckte Bedürfnis)"
+          "text": "2. Unter dem Wasser - das versteckte Beduerfnis"
         },
         {
-          "kind": "lines",
-          "text": "Kind 1 braucht vielleicht wirklich ...",
-          "lines": 1
-        },
-        {
-          "kind": "lines",
-          "text": "Kind 2 braucht vielleicht wirklich ...",
-          "lines": 1
-        },
-        {
-          "kind": "heading",
-          "text": "3. Eine Lösung für beide"
+          "kind": "instruction",
+          "text": "Ein Beduerfnis ist nie boese - jeder darf etwas brauchen. Was braucht wohl jedes Kind wirklich?"
         },
         {
           "kind": "question",
-          "text": "Wie können beide bekommen, was sie wirklich brauchen?",
+          "text": "Kind 1 braucht vielleicht wirklich ...",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "Kind 2 braucht vielleicht wirklich ...",
+          "lines": 2
+        },
+        {
+          "kind": "box",
+          "text": "Male den Eisberg: oben die kleine Spitze (Streit), unten gross das versteckte Beduerfnis von beiden.",
+          "lines": 6
+        },
+        {
+          "kind": "heading",
+          "text": "3. Eine Loesung fuer beide"
+        },
+        {
+          "kind": "question",
+          "text": "Wie koennen beide Kinder bekommen, was sie wirklich brauchen?",
           "lines": 3
         },
         {
@@ -38214,8 +39986,19 @@ export const generated: Material[] = [
           "text": "4. Meine Dahinter-Frage"
         },
         {
+          "kind": "scale",
+          "text": "Wie gut kann ich im Streit nach dem Beduerfnis darunter fragen, statt nur auf die Spitze zu schauen?",
+          "items": [
+            "noch schwer",
+            "ein bisschen",
+            "ziemlich gut",
+            "sehr gut"
+          ]
+        },
+        {
           "kind": "box",
-          "text": "Diese Frage stelle ich im nächsten Streit - mir selbst und dem anderen:"
+          "text": "Diese Frage stelle ich im naechsten Streit - mir selbst und dem anderen:",
+          "lines": 3
         }
       ]
     },
@@ -38298,49 +40081,73 @@ export const generated: Material[] = [
       "KOG-58"
     ],
     "worksheet": {
-      "title": "Meine Lösungs-Schmiede",
-      "intro": "In jedem Streit steckt mehr als gewinnen oder verlieren. Hier schmiedest du erst viele Ideen und suchst dann die faire Lösung heraus.",
+      "title": "Meine Loesungs-Schmiede",
+      "intro": "In jedem Streit steckt mehr als gewinnen oder verlieren. Hier schmiedest du erst viele Ideen und suchst dann die faire Loesung heraus.",
       "blocks": [
         {
           "kind": "heading",
           "text": "1. Der Streit"
         },
         {
-          "kind": "lines",
+          "kind": "question",
           "text": "Worum streiten die beiden Kinder?",
           "lines": 2
         },
         {
           "kind": "heading",
-          "text": "2. Funkenflug - viele Auswege"
+          "text": "2. Funkenflug - viele Auswege sammeln"
         },
         {
           "kind": "instruction",
-          "text": "Schreibe so viele Lösungsideen auf wie möglich. Hier wird noch nichts bewertet - auch wilde Ideen sind erlaubt!"
+          "text": "Schreibe so viele Loesungsideen auf wie moeglich. Hier wird noch nichts bewertet - auch wilde und lustige Ideen sind erlaubt!"
         },
         {
           "kind": "lines",
-          "lines": 6
+          "lines": 7
         },
         {
           "kind": "heading",
-          "text": "3. Härteprüfung"
+          "text": "3. Haertepruefung"
+        },
+        {
+          "kind": "instruction",
+          "text": "Pruefe deine Ideen mit diesen Fragen. Streiche durch, was nur fuer einen gut ist oder jemanden verletzt."
         },
         {
           "kind": "checklist",
           "items": [
-            "Ist diese Lösung fair für BEIDE?",
-            "Können beide damit leben?",
+            "Ist diese Loesung fair fuer BEIDE?",
+            "Koennen beide damit leben?",
             "Verletzt sie niemanden?"
           ]
         },
         {
           "kind": "heading",
-          "text": "4. Meine geschmiedete Lösung"
+          "text": "4. Meine geschmiedete Loesung"
         },
         {
           "kind": "box",
-          "text": "Diese Lösung ist für beide gut - so habe ich mich entschieden:"
+          "text": "Diese eine Loesung ist fuer beide gut - so habe ich mich entschieden:",
+          "lines": 4
+        },
+        {
+          "kind": "heading",
+          "text": "5. Drei Schritte aus dem Streit"
+        },
+        {
+          "kind": "question",
+          "text": "In welchem eigenen Streit haettest du mehr Auswege gebraucht? Welche faire Loesung faellt dir jetzt dafuer ein?",
+          "lines": 3
+        },
+        {
+          "kind": "scale",
+          "text": "Wie gut gelingt es mir, im Streit nach mehreren Auswegen zu suchen, statt zu kaempfen?",
+          "items": [
+            "noch schwer",
+            "ein bisschen",
+            "ziemlich gut",
+            "sehr gut"
+          ]
         }
       ]
     },
@@ -39830,32 +41637,75 @@ export const generated: Material[] = [
       "K-26"
     ],
     "worksheet": {
-      "title": "Mäin Energie-Tank",
-      "intro": "Was lädt dich auf, was leert dich? Nur für dich.",
+      "title": "Mäin Energie-Tank: Wat lued mech op?",
+      "intro": "Wéi en Akku gëtt och deng Energie opgelueden a geleert. Hei kucks du no, wat dech stäerkt a wat dech méid mécht - an dréckst no, fir bewosst méi opzelueden. Nëmme fir dech.",
       "blocks": [
         {
-          "kind": "question",
-          "text": "Das lädt meinen Tank auf (+):",
-          "lines": 3
-        },
-        {
-          "kind": "question",
-          "text": "Das leert meinen Tank (−):",
-          "lines": 3
+          "kind": "heading",
+          "text": "Wéi voll ass mäin Tank?"
         },
         {
           "kind": "scale",
-          "text": "Wie voll ist mein Tank gerade?",
+          "text": "Wéi voll ass mäin Energie-Tank am Moment?",
           "items": [
             "fast leer",
-            "halb",
-            "voll"
+            "e bësschen",
+            "hallef voll",
+            "zimlech voll",
+            "ganz voll"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "Wat lued mech op a wat leert mech"
+        },
+        {
+          "kind": "instruction",
+          "text": "Sammel an der Tabell: Wat gëtt dir Energie (+) a wat zitt dir Energie of (−)? Maach hannert dat Wichtegst e Stäerchen."
+        },
+        {
+          "kind": "table",
+          "text": "Mäin Energie-Tank",
+          "lines": 5,
+          "items": [
+            "Dat lued mech op (+)",
+            "Dat leert mech (−)",
+            "Wichteg? ★"
           ]
         },
         {
           "kind": "question",
-          "text": "So sorge ich diese Woche für Aufladung:",
-          "lines": 2
+          "text": "Wat ass momentan mäin gréisste Energie-Raiber - a firwat?",
+          "lines": 3
+        },
+        {
+          "kind": "question",
+          "text": "Wat ass eng Energiequell, déi mir richteg gutt deet, a wéini hunn ech se fir d'lescht genotzt?",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "Sou lueden ech mech op"
+        },
+        {
+          "kind": "question",
+          "text": "Ee klengen, konkrete Plang fir dës Woch: Wat maachen ech, fir mäin Tank ze fëllen? (Wat? Wéini?)",
+          "lines": 3
+        },
+        {
+          "kind": "question",
+          "text": "Ee Schratt, fir e Raiber méi kleng ze maachen (manner Bildschierm, fréier schlofen, e Sträit klären ...):",
+          "lines": 3
+        },
+        {
+          "kind": "scale",
+          "text": "Wéi gutt kennen ech elo dat, wat mech oplued?",
+          "items": [
+            "gar nët",
+            "e bësschen",
+            "gutt",
+            "ganz gutt"
+          ]
         }
       ]
     },
@@ -40178,31 +42028,68 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Hinter dem perfekten Bild",
-      "intro": "Schau hinter die Filter – und freundlich auf dich.",
+      "intro": "Online-Bilder sind oft gefiltert und inszeniert - nicht die ganze Wirklichkeit. Schau heute hinter die Filter und finde einen freundlichen Blick auf dich selbst.",
       "blocks": [
         {
+          "kind": "heading",
+          "text": "Was steckt hinter dem Bild?"
+        },
+        {
           "kind": "question",
-          "text": "Tricks, die „perfekte\" Online-Bilder benutzen:",
-          "lines": 2
+          "text": "Welche Tricks benutzen Menschen, damit Online-Bilder \"perfekt\" wirken? (z. B. Filter, Pose, Licht, Ausschnitt, viele Versuche)",
+          "lines": 3
+        },
+        {
+          "kind": "question",
+          "text": "Wie fühlt sich der ständige Vergleich mit solchen Bildern an? Beschreibe es ehrlich.",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "Wie sehr betrifft mich das?"
         },
         {
           "kind": "scale",
-          "text": "Wie sehr vergleiche ich mich mit Online-Bildern?",
+          "text": "Wie stark vergleiche ich mich mit Online-Bildern?",
           "items": [
-            "wenig",
-            "manchmal",
-            "stark"
+            "gar nicht",
+            "ein bisschen",
+            "oft",
+            "sehr stark"
+          ]
+        },
+        {
+          "kind": "scale",
+          "text": "Wie sehr beeinflussen Likes mein Gefühl über mich selbst?",
+          "items": [
+            "gar nicht",
+            "ein bisschen",
+            "ziemlich",
+            "sehr"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "Was hilft mir?"
+        },
+        {
+          "kind": "table",
+          "text": "Strategien gegen den Vergleichsdruck - was probiere ich aus?",
+          "lines": 4,
+          "items": [
+            "Strategie (z. B. entfolgen, Pause, echte Treffen)",
+            "Wie könnte ich das umsetzen?"
           ]
         },
         {
           "kind": "question",
-          "text": "Was hilft mir gegen den Vergleichsdruck?",
-          "lines": 2
+          "text": "Mein freundlicher Satz über mich selbst - unabhängig von Aussehen und Likes:",
+          "lines": 3
         },
         {
           "kind": "question",
-          "text": "Ein freundlicher Satz über mich (ohne Likes/Aussehen):",
-          "lines": 1
+          "text": "Mein Vorsatz: Das mache ich diese Woche konkret, um weniger zu vergleichen.",
+          "lines": 3
         }
       ]
     },
@@ -40456,20 +42343,59 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Mäi Wäerter-Kompass",
-      "intro": "Was ist dir wirklich wichtig? Wähle und ordne.",
+      "intro": "Werte sind wie ein Kompass - sie zeigen, was dir wichtig ist, und leiten deine Entscheidungen. Finde heraus, was dich wirklich ausmacht.",
       "blocks": [
         {
-          "kind": "instruction",
-          "text": "Wähle deine 5 wichtigsten Werte und trage sie ein (1 = am wichtigsten)."
+          "kind": "heading",
+          "text": "Meine 5 wichtigsten Werte"
         },
         {
-          "kind": "lines",
-          "lines": 5
+          "kind": "instruction",
+          "text": "Wähle aus der Werte-Liste deine fünf wichtigsten Werte. Trage sie ein - die Nummer 1 ist dir am wichtigsten."
+        },
+        {
+          "kind": "table",
+          "text": "Mein Wäerter-Kompass",
+          "lines": 5,
+          "items": [
+            "Platz",
+            "Mein Wert",
+            "Warum ist er mir wichtig?"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "Werte im Alltag"
         },
         {
           "kind": "question",
-          "text": "Wo zeigt sich mein wichtigster Wert im Alltag?",
-          "lines": 2
+          "text": "Wo zeigt sich mein wichtigster Wert in meinem Alltag? Nenne ein konkretes Beispiel.",
+          "lines": 3
+        },
+        {
+          "kind": "question",
+          "text": "Erinnere dich an eine Entscheidung, bei der einer deiner Werte dir geholfen hat. Was war das?",
+          "lines": 3
+        },
+        {
+          "kind": "scale",
+          "text": "Wie gut gelingt es mir, nach meinen Werten zu handeln - auch unter Druck?",
+          "items": [
+            "selten",
+            "manchmal",
+            "oft",
+            "fast immer"
+          ]
+        },
+        {
+          "kind": "question",
+          "text": "Welcher Wert fällt mir schwer zu leben, wenn andere Druck machen? Was könnte mir helfen, trotzdem dazu zu stehen?",
+          "lines": 3
+        },
+        {
+          "kind": "question",
+          "text": "Mein Vorsatz: So möchte ich diese Woche nach einem meiner Werte handeln.",
+          "lines": 3
         }
       ]
     },
@@ -40626,27 +42552,49 @@ export const generated: Material[] = [
       "KOG-2"
     ],
     "worksheet": {
-      "title": "Meine Stärkenmedaille",
-      "intro": "Male deine Stärke in den Kreis. Wenn du magst, schreibe oder lass schreiben, was du gut kannst.",
+      "title": "Meine Stärken-Medaille",
+      "intro": "Heute verleihst du dir selbst eine Medaille - für etwas, das DU gut kannst. Male sie und zeig stolz, was in dir steckt.",
       "blocks": [
         {
+          "kind": "heading",
+          "text": "Das kann ich gut"
+        },
+        {
           "kind": "instruction",
-          "text": "Das kann ich gut: Male ein Bild davon in die Medaille."
+          "text": "Male in die Medaille ein Bild von deiner Stärke - zum Beispiel, wie du etwas Tolles machst."
         },
         {
           "kind": "box",
           "text": "Meine Stärken-Medaille (hier malen)",
-          "lines": 6
+          "lines": 7
         },
         {
           "kind": "question",
           "text": "Ich kann gut ...",
-          "lines": 1
+          "lines": 2
         },
         {
           "kind": "question",
           "text": "Das mache ich besonders gern:",
-          "lines": 1
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "So fühlt sich meine Medaille an"
+        },
+        {
+          "kind": "scale",
+          "text": "Wie fühle ich mich, wenn ich an meine Stärke denke?",
+          "items": [
+            "Sonne",
+            "Wolke",
+            "Regen"
+          ]
+        },
+        {
+          "kind": "question",
+          "text": "Wer hat schon einmal gesehen, dass ich das gut kann?",
+          "lines": 2
         }
       ]
     },
@@ -40728,26 +42676,44 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Mein Körperdetektiv-Blatt",
-      "intro": "Wo wohnen deine Gefühle? Male mit Farben in deine Körperfigur, wo du sie spürst.",
+      "intro": "Wo wohnen deine Gefühle? Werde zum Detektiv und finde mit Farben heraus, wo du sie in deinem Körper spürst.",
       "blocks": [
         {
+          "kind": "heading",
+          "text": "Mein Farb-Geheimcode"
+        },
+        {
           "kind": "instruction",
-          "text": "Farb-Geheimcode: gelb = Freude, blau = traurig, rot = Wut, grün = aufgeregt/Angst."
+          "text": "Male mit diesen Farben: gelb = Freude, blau = traurig, rot = Wut, grün = aufgeregt oder Angst."
         },
         {
           "kind": "box",
-          "text": "Meine Körperfigur (hier die Gefühle einmalen)",
+          "text": "Meine Körperfigur (male hier deine Gefühle ein)",
           "lines": 8
         },
         {
           "kind": "question",
           "text": "Mein stärkstes Gefühl heute spüre ich hier:",
-          "lines": 1
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "Mein Körper sagt mir Bescheid"
+        },
+        {
+          "kind": "scale",
+          "text": "Wie geht es meinem Körper gerade?",
+          "items": [
+            "Sonne",
+            "Wolke",
+            "Regen",
+            "Gewitter"
+          ]
         },
         {
           "kind": "question",
-          "text": "Wenn mein Bauch oder Kopf mir etwas sagt, kann ich Folgendes tun:",
-          "lines": 1
+          "text": "Wenn mein Bauch oder Kopf mir etwas sagt, kann ich das tun (z. B. tief atmen, Hilfe holen):",
+          "lines": 2
         }
       ]
     },
@@ -41048,33 +43014,44 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Erst zu Ende hören",
-      "intro": "Denke an die Übung mit deinem Partner.",
+      "intro": "Heute hast du geübt, zu warten, bis der andere fertig ist. Das ist gar nicht so leicht! Hier hältst du fest, wie es dir gelungen ist.",
       "blocks": [
         {
           "kind": "heading",
-          "text": "Beim Zuhören"
+          "text": "Was ich gehört habe"
         },
         {
           "kind": "question",
-          "text": "Was hat mein Partner erzählt? Eine Sache, die ich gehört habe:",
-          "lines": 2
+          "text": "Dein Partner hat dir etwas erzählt. Schreibe eine Sache auf, an die du dich noch erinnerst:",
+          "lines": 3
+        },
+        {
+          "kind": "box",
+          "text": "Male, wovon dein Partner erzählt hat",
+          "lines": 6
         },
         {
           "kind": "heading",
-          "text": "Beim Warten"
+          "text": "Mein Trick fürs Warten"
         },
         {
           "kind": "checklist",
+          "text": "Was hat dir geholfen, NICHT reinzureden? Kreuze an:",
           "items": [
-            "Ich habe die Wart-Hand benutzt",
+            "Ich habe die Wart-Hand auf den Bauch gelegt",
             "Ich habe einmal tief geatmet",
-            "Ich habe meinen Gedanken im Kopf behalten"
+            "Ich habe meinen Gedanken im Kopf behalten",
+            "Ich habe den Sprech-Gegenstand angeschaut"
           ]
         },
         {
           "kind": "question",
-          "text": "Mein Trick, um nicht reinzureden:",
+          "text": "Mein bester Trick, damit ich warten kann, bis der andere fertig ist:",
           "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "Wie war das für mich?"
         },
         {
           "kind": "scale",
@@ -41084,6 +43061,11 @@ export const generated: Material[] = [
             "geht so",
             "richtig gut"
           ]
+        },
+        {
+          "kind": "question",
+          "text": "Das nehme ich mir fürs nächste Mal vor:",
+          "lines": 2
         }
       ]
     },
@@ -41168,7 +43150,7 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Meine Gefühlswörter",
-      "intro": "Mehr als gut und schlecht - hier sammelst du genaue Wörter.",
+      "intro": "Mehr als nur gut und schlecht! Es gibt ganz viele genaue Wörter für Gefühle. Hier sammelst du sie und übst, sie zu benutzen.",
       "blocks": [
         {
           "kind": "heading",
@@ -41179,29 +43161,46 @@ export const generated: Material[] = [
           "text": "Schreibe zu jedem großen Gefühl zwei genauere Wörter."
         },
         {
-          "kind": "lines",
-          "text": "Froh ist auch:",
-          "lines": 1
-        },
-        {
-          "kind": "lines",
-          "text": "Traurig ist auch:",
-          "lines": 1
-        },
-        {
-          "kind": "lines",
-          "text": "Wütend ist auch:",
-          "lines": 1
+          "kind": "question",
+          "text": "Froh ist auch ...",
+          "lines": 2
         },
         {
           "kind": "question",
-          "text": "Eine Situation und mein genaues Gefühlswort dazu: „Da fühle ich mich ...\"",
+          "text": "Traurig ist auch ...",
           "lines": 2
         },
         {
-          "kind": "box",
-          "text": "Mein Gefühlswort für heute",
+          "kind": "question",
+          "text": "Wütend ist auch ...",
           "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "Mein genaues Gefühlswort"
+        },
+        {
+          "kind": "question",
+          "text": "Denke an etwas, das dir heute passiert ist. Schreibe es auf: „Als ... , da fühlte ich mich ...\"",
+          "lines": 3
+        },
+        {
+          "kind": "box",
+          "text": "Male ein Gesicht zu diesem Gefühl",
+          "lines": 5
+        },
+        {
+          "kind": "heading",
+          "text": "Mein Wort für heute"
+        },
+        {
+          "kind": "scale",
+          "text": "Wie fühlst du dich gerade?",
+          "items": [
+            "traurig",
+            "geht so",
+            "froh"
+          ]
         }
       ]
     },
@@ -41285,7 +43284,7 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Mein Anliegen in drei Schritten",
-      "intro": "Sagen, was ich brauche - klar und freundlich.",
+      "intro": "Sagen, was ich brauche - klar und freundlich. Mit den drei Schritten hört dir der andere viel besser zu. Hier übst du sie.",
       "blocks": [
         {
           "kind": "heading",
@@ -41293,22 +43292,26 @@ export const generated: Material[] = [
         },
         {
           "kind": "instruction",
-          "text": "1. Was ist?  ·  2. Was wünsche ich mir?  ·  3. Warum?"
+          "text": "1. Was ist?   2. Was wünsche ich mir?   3. Warum?"
         },
         {
           "kind": "question",
           "text": "Schritt 1 – Was ist gerade? „Ich ...\"",
-          "lines": 1
+          "lines": 2
         },
         {
           "kind": "question",
           "text": "Schritt 2 – Was wünsche ich mir? „Ich möchte ...\"",
-          "lines": 1
+          "lines": 2
         },
         {
           "kind": "question",
           "text": "Schritt 3 – Warum? „... weil ...\"",
-          "lines": 1
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "Wie hat es geklappt?"
         },
         {
           "kind": "scale",
@@ -41320,8 +43323,21 @@ export const generated: Material[] = [
           ]
         },
         {
-          "kind": "box",
-          "text": "Ein echtes Anliegen aus meinem Alltag",
+          "kind": "scale",
+          "text": "Wie freundlich und ruhig war mein Ton?",
+          "items": [
+            "noch laut",
+            "geht so",
+            "ruhig und freundlich"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "Mein echtes Anliegen"
+        },
+        {
+          "kind": "question",
+          "text": "Ein Anliegen aus meinem Alltag, das ich bald in drei Schritten sagen möchte:",
           "lines": 3
         }
       ]
@@ -41823,8 +43839,8 @@ export const generated: Material[] = [
       "SOZ-34"
     ],
     "worksheet": {
-      "title": "Unsere Werkstatt: Ein Ritual für ein gutes Miteinander",
-      "intro": "Ihr seid ein Werkstatt-Team und erfindet ein Ritual für unsere Klasse. Überlegt gemeinsam, hört einander zu und einigt euch auf einen Vorschlag, den wir wirklich machen können.",
+      "title": "Unsere Werkstatt: Ein Ritual fuer ein gutes Miteinander",
+      "intro": "Ihr seid ein Werkstatt-Team und erfindet ein Ritual fuer unsere Klasse. Hoert einander zu, sammelt Ideen und einigt euch auf einen Vorschlag, den wir wirklich ausprobieren koennen.",
       "blocks": [
         {
           "kind": "heading",
@@ -41832,24 +43848,30 @@ export const generated: Material[] = [
         },
         {
           "kind": "instruction",
-          "text": "Kreuzt an, woran euer Team arbeitet."
+          "text": "Kreuzt an, woran euer Team heute arbeitet."
         },
         {
           "kind": "checklist",
           "items": [
-            "Begrüßung",
-            "Dazugehören (niemand allein)",
-            "Helfen",
-            "Versöhnen nach Streit"
+            "Begruessung am Morgen",
+            "Dazugehoeren - niemand bleibt allein",
+            "Einander helfen",
+            "Sich versoehnen nach einem Streit"
           ]
         },
         {
           "kind": "heading",
-          "text": "2. So ist es bei uns, wenn es schlecht läuft"
+          "text": "2. So merkt man, ob es gut oder schlecht laeuft"
         },
         {
-          "kind": "lines",
-          "lines": 2
+          "kind": "question",
+          "text": "Woran merkt man in unserem Bereich, dass es SCHLECHT laeuft? Schreibt ein Beispiel auf.",
+          "lines": 3
+        },
+        {
+          "kind": "question",
+          "text": "Und woran wuerde man merken, dass es GUT laeuft?",
+          "lines": 3
         },
         {
           "kind": "heading",
@@ -41857,10 +43879,11 @@ export const generated: Material[] = [
         },
         {
           "kind": "instruction",
-          "text": "Beschreibt genau, was wir tun sollen. Es muss für JEDES Kind passen."
+          "text": "Beschreibt genau, was man tun soll. Das Ritual muss fuer JEDES Kind passen - auch fuer schuechterne."
         },
         {
-          "kind": "lines",
+          "kind": "question",
+          "text": "So geht unser Ritual - Schritt fuer Schritt:",
           "lines": 4
         },
         {
@@ -41869,8 +43892,8 @@ export const generated: Material[] = [
         },
         {
           "kind": "question",
-          "text": "Funktioniert unser Ritual auch an einem stressigen Tag? Warum?",
-          "lines": 2
+          "text": "Funktioniert unser Ritual auch an einem stressigen oder hektischen Tag? Warum?",
+          "lines": 3
         },
         {
           "kind": "scale",
@@ -41880,6 +43903,11 @@ export const generated: Material[] = [
             "ganz okay",
             "richtig gut"
           ]
+        },
+        {
+          "kind": "question",
+          "text": "Das moechte ICH selbst tun, damit unsere Klasse ein guter Ort wird:",
+          "lines": 3
         }
       ]
     },
@@ -41963,17 +43991,17 @@ export const generated: Material[] = [
       "K-31"
     ],
     "worksheet": {
-      "title": "Brücken-Team: Wie wir zusammengearbeitet haben",
-      "intro": "Fülle das Blatt nach dem Bauen aus. Es geht nicht um die Brücke, sondern um euer Team.",
+      "title": "Bruecken-Team: Wie wir zusammengearbeitet haben",
+      "intro": "Fuell das Blatt nach dem Bauen aus. Es geht nicht um die Bruecke, sondern um euer Team in der stillen Bauphase. Es gibt kein Richtig oder Falsch - antworte ehrlich.",
       "blocks": [
         {
-          "kind": "instruction",
-          "text": "Denk an die stille Bauphase zurück und antworte ehrlich - es gibt kein Richtig oder Falsch."
+          "kind": "heading",
+          "text": "Verstaendigung ohne Worte"
         },
         {
           "kind": "question",
-          "text": "So haben wir uns ohne Worte verständigt:",
-          "lines": 2
+          "text": "So haben wir uns ohne Sprache verstaendigt (Gesten, Blicke, Zeigen ...):",
+          "lines": 3
         },
         {
           "kind": "scale",
@@ -41986,24 +44014,37 @@ export const generated: Material[] = [
           ]
         },
         {
+          "kind": "heading",
+          "text": "Schwierige Momente"
+        },
+        {
           "kind": "question",
-          "text": "An dieser Stelle gab es eine Meinungsverschiedenheit - so haben wir sie gelöst:",
-          "lines": 2
+          "text": "Hier gab es eine Meinungsverschiedenheit (zwei wollten etwas Verschiedenes). So haben wir sie ohne Worte geloest:",
+          "lines": 3
         },
         {
           "kind": "checklist",
-          "text": "Das hat mir bei meinem Team gut getan:",
+          "text": "Das hat mir in meinem Team gut getan:",
           "items": [
             "Man hat auf mich geachtet",
             "Meine Idee wurde aufgegriffen",
             "Wir haben uns abgewechselt",
-            "Niemand wurde übergangen"
+            "Niemand wurde uebergangen"
           ]
         },
         {
+          "kind": "heading",
+          "text": "Was ich mitnehme"
+        },
+        {
           "kind": "question",
-          "text": "Meine persönliche Team-Regel für die nächste Gruppenarbeit:",
-          "lines": 2
+          "text": "Ohne Reden zu duerfen war fuer mich vor allem ... (z. B. schwer, lustig, anstrengend) - und warum?",
+          "lines": 3
+        },
+        {
+          "kind": "question",
+          "text": "Meine persoenliche Team-Regel fuer die naechste echte Gruppenarbeit:",
+          "lines": 3
         }
       ]
     },
@@ -42088,7 +44129,7 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Mein Teil im Gruppenpuzzle",
-      "intro": "Begleitblatt für deine Expertenrolle. Nutze es in der Expertengruppe und in der Stammgruppe.",
+      "intro": "Dieses Blatt begleitet deine Expertenrolle. Nutze Teil 1 in der Expertengruppe und Teil 2 spaeter in deiner Stammgruppe. Denk daran: Deine Gruppe ist auf DEINEN Teil angewiesen.",
       "blocks": [
         {
           "kind": "heading",
@@ -42096,22 +44137,36 @@ export const generated: Material[] = [
         },
         {
           "kind": "question",
-          "text": "Mein Teilthema in eigenen Worten (so erkläre ich es gleich):",
+          "text": "Mein Teilthema in eigenen Worten - so erklaere ich es gleich verstaendlich:",
           "lines": 3
         },
         {
           "kind": "question",
-          "text": "Das Wichtigste, das meine Stammgruppe unbedingt von mir wissen muss:",
-          "lines": 2
+          "text": "Die wichtigsten Punkte, die meine Stammgruppe unbedingt von mir wissen muss:",
+          "lines": 3
+        },
+        {
+          "kind": "scale",
+          "text": "So sicher fuehle ich mich, meinen Teil gleich gut zu erklaeren:",
+          "items": [
+            "noch unsicher",
+            "geht so",
+            "ziemlich sicher",
+            "richtig sicher"
+          ]
         },
         {
           "kind": "heading",
           "text": "2. In der Stammgruppe"
         },
         {
+          "kind": "instruction",
+          "text": "Hoere den anderen gut zu, frage nach und halte das Wichtigste fest."
+        },
+        {
           "kind": "table",
           "text": "Was ich von den anderen Teilen gelernt habe:",
-          "lines": 3,
+          "lines": 4,
           "items": [
             "Wer",
             "Sein/ihr Teil - das Wichtigste"
@@ -42119,7 +44174,7 @@ export const generated: Material[] = [
         },
         {
           "kind": "scale",
-          "text": "So gut konnte unsere Gruppe ihr Wissen zusammenfügen:",
+          "text": "So gut konnte unsere Gruppe am Ende alles zusammenfuegen:",
           "items": [
             "schwierig",
             "ging so",
@@ -42128,9 +44183,18 @@ export const generated: Material[] = [
           ]
         },
         {
+          "kind": "heading",
+          "text": "3. Meine Erkenntnis"
+        },
+        {
           "kind": "question",
-          "text": "Heute war ich unverzichtbar, weil ...",
-          "lines": 2
+          "text": "Heute war ICH unverzichtbar, weil ...",
+          "lines": 3
+        },
+        {
+          "kind": "question",
+          "text": "Wo im echten Leben braucht eine Gruppe das Wissen von jeder einzelnen Person?",
+          "lines": 3
         }
       ]
     },
@@ -42215,20 +44279,25 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Mein Rollen-Kompass",
-      "intro": "Fülle das Blatt nach der Team-Challenge aus. Sei ehrlich zu dir selbst - hier wird nichts benotet.",
+      "intro": "Fuell das Blatt nach der Team-Challenge aus. Sei ehrlich zu dir selbst - hier wird nichts benotet. Es geht darum, was deine Rolle mit der Zusammenarbeit gemacht hat.",
       "blocks": [
         {
-          "kind": "question",
-          "text": "Meine Rolle heute war:",
-          "lines": 1
+          "kind": "heading",
+          "text": "1. Meine Rolle heute"
         },
         {
-          "kind": "instruction",
-          "text": "Denk daran, was dein Job im Team war und wie du ihn erfüllt hast."
+          "kind": "question",
+          "text": "Meine Rolle war (z. B. Zeitwaechter:in, Materialchef:in, Stimmungs-Hueter:in ...):",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "Mein Auftrag dabei war - in eigenen Worten:",
+          "lines": 2
         },
         {
           "kind": "scale",
-          "text": "So gut habe ich meine Rolle ausgefüllt:",
+          "text": "So gut habe ich meine Rolle ausgefuellt:",
           "items": [
             "schwierig",
             "ging so",
@@ -42237,29 +44306,37 @@ export const generated: Material[] = [
           ]
         },
         {
-          "kind": "question",
-          "text": "Das ist mir an meiner Rolle leichtgefallen:",
-          "lines": 2
+          "kind": "heading",
+          "text": "2. Leicht und schwer"
         },
         {
           "kind": "question",
-          "text": "Das war für mich ungewohnt oder schwierig:",
-          "lines": 2
+          "text": "Das ist mir an meiner Rolle leichtgefallen:",
+          "lines": 3
+        },
+        {
+          "kind": "question",
+          "text": "Das war fuer mich ungewohnt oder schwierig:",
+          "lines": 3
         },
         {
           "kind": "checklist",
-          "text": "Durch die Rollen war unsere Zusammenarbeit ...",
+          "text": "Durch die festen Rollen war unsere Zusammenarbeit ...",
           "items": [
             "gerechter verteilt",
             "ruhiger und klarer",
             "schneller fertig",
-            "alle wurden gehört"
+            "alle wurden gehoert"
           ]
         },
         {
+          "kind": "heading",
+          "text": "3. Beim naechsten Mal"
+        },
+        {
           "kind": "question",
-          "text": "Diese Rolle möchte ich beim nächsten Mal ausprobieren - und warum:",
-          "lines": 2
+          "text": "Diese Rolle moechte ich beim naechsten Mal ausprobieren - und warum:",
+          "lines": 3
         }
       ]
     },
@@ -42344,29 +44421,37 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Konsens-Werkstatt: Unser Weg zur Einigung",
-      "intro": "Begleitblatt für eure Gruppenentscheidung. Nutzt die Schritte der Reihe nach.",
+      "intro": "Dieses Begleitblatt fuehrt euch durch eure Gruppenentscheidung. Geht die Schritte der Reihe nach durch. Ziel ist eine Loesung, mit der ALLE leben koennen - nicht nur die Mehrheit.",
       "blocks": [
         {
           "kind": "heading",
           "text": "Schritt 1 - Ideen sammeln"
         },
         {
+          "kind": "instruction",
+          "text": "Erst sammeln, noch nicht bewerten - sonst trauen sich leise Stimmen nicht."
+        },
+        {
           "kind": "lines",
-          "text": "Alle Vorschläge unserer Gruppe (erst sammeln, noch nicht bewerten):",
+          "text": "Alle Vorschlaege unserer Gruppe:",
           "lines": 4
         },
         {
           "kind": "heading",
-          "text": "Schritt 2 - Abwägen mit dem Daumen"
+          "text": "Schritt 2 - Abwaegen mit dem Daumen"
         },
         {
           "kind": "instruction",
-          "text": "Daumen hoch = dafür. Daumen zur Seite = kann ich mittragen. Daumen runter = geht für mich nicht (dann sagen, was ihr braucht!)."
+          "text": "Daumen hoch = dafuer. Daumen zur Seite = kann ich mittragen. Daumen runter = geht fuer mich nicht (dann sagen, was ihr braucht!)."
         },
         {
-          "kind": "question",
-          "text": "Hier gab es eine Blockade - das war nötig, damit es für alle passt:",
-          "lines": 2
+          "kind": "table",
+          "text": "Wo gab es Blockaden - und was war noetig, damit es fuer alle passt?",
+          "lines": 3,
+          "items": [
+            "Die Blockade war ...",
+            "Geholfen hat ..."
+          ]
         },
         {
           "kind": "heading",
@@ -42374,18 +44459,23 @@ export const generated: Material[] = [
         },
         {
           "kind": "box",
-          "text": "Das ist die Lösung, die ALLE mittragen:",
-          "lines": 3
+          "text": "Das ist die Loesung, die ALLE mittragen:",
+          "lines": 4
         },
         {
           "kind": "scale",
-          "text": "Wie sehr stehe ich persönlich hinter unserem Ergebnis?",
+          "text": "Wie sehr stehe ich persoenlich hinter unserem Ergebnis?",
           "items": [
             "gar nicht",
             "ein wenig",
             "ziemlich",
             "voll und ganz"
           ]
+        },
+        {
+          "kind": "question",
+          "text": "Was war anstrengend am Konsens - und was ist sein Vorteil gegenueber einfachem Abstimmen?",
+          "lines": 3
         }
       ]
     },
@@ -42468,21 +44558,21 @@ export const generated: Material[] = [
       "KOG-50"
     ],
     "worksheet": {
-      "title": "Eisberg entschlüsseln",
-      "intro": "Was du siehst, ist nur die Spitze. Trenne, was du wirklich beobachtest, von dem, was du dir dazu denkst - und such nach dem, was unter Wasser liegen könnte.",
+      "title": "Eisberg entschluesseln",
+      "intro": "Was du an einem Menschen siehst, ist nur die Spitze. Trenne, was du wirklich beobachtest, von dem, was du dir dazu denkst - und such nach dem, was unter Wasser liegen koennte. Es gibt nicht DIE eine richtige Loesung.",
       "blocks": [
         {
           "kind": "instruction",
-          "text": "Bearbeitet pro Situationskarte die folgenden Schritte. Es gibt nicht DIE eine richtige Lösung."
+          "text": "Nimm eine Situationskarte und bearbeite die Schritte der Reihe nach."
         },
         {
           "kind": "heading",
-          "text": "Über Wasser - die sichtbare Spitze"
+          "text": "Ueber Wasser - die sichtbare Spitze"
         },
         {
           "kind": "question",
-          "text": "Reine Beobachtung (was eine Kamera aufnehmen würde, ohne Deutung):",
-          "lines": 2
+          "text": "Reine Beobachtung: Was wuerde eine Kamera aufnehmen - ganz ohne Deutung?",
+          "lines": 3
         },
         {
           "kind": "heading",
@@ -42490,21 +44580,29 @@ export const generated: Material[] = [
         },
         {
           "kind": "question",
-          "text": "Welche Deutung schießt mir spontan in den Kopf?",
-          "lines": 1
+          "text": "Welche Deutung schiesst mir spontan in den Kopf?",
+          "lines": 2
         },
         {
           "kind": "heading",
-          "text": "Unter Wasser - was sonst noch sein könnte"
+          "text": "Unter Wasser - was sonst noch sein koennte"
         },
         {
-          "kind": "lines",
-          "text": "Drei ganz unterschiedliche Dinge, die unter der Oberfläche liegen könnten:",
-          "lines": 3
+          "kind": "instruction",
+          "text": "Such bewusst drei GANZ unterschiedliche Erklaerungen - auch freundliche."
+        },
+        {
+          "kind": "table",
+          "text": "Was koennte beim anderen unter der Oberflaeche liegen?",
+          "lines": 3,
+          "items": [
+            "Moegliches Gefuehl / Beduerfnis",
+            "Was koennte passiert sein?"
+          ]
         },
         {
           "kind": "scale",
-          "text": "Wie sicher kann ich wirklich wissen, was in diesem Menschen vorgeht?",
+          "text": "Wie sicher kann ich WIRKLICH wissen, was in diesem Menschen vorgeht?",
           "items": [
             "gar nicht sicher",
             "wenig",
@@ -42513,9 +44611,13 @@ export const generated: Material[] = [
           ]
         },
         {
+          "kind": "heading",
+          "text": "Die Frage statt das Urteil"
+        },
+        {
           "kind": "question",
-          "text": "Mein Satz für das nächste Mal, wenn ich vorschnell urteile:",
-          "lines": 2
+          "text": "Mein Satz fuer das naechste Mal, wenn ich vorschnell urteile (z. B. 'Ich frage mich, was bei ihm gerade los ist'):",
+          "lines": 3
         }
       ]
     },
@@ -42598,9 +44700,13 @@ export const generated: Material[] = [
       "K-27"
     ],
     "worksheet": {
-      "title": "In deiner Rolle",
-      "intro": "Versetze dich ganz in deine Person. Du erlebst die Szene aus IHRER Sicht - mit ihren Gefühlen und ihren guten Gründen.",
+      "title": "In deiner Rolle - eine Szene aus drei Blickwinkeln",
+      "intro": "Versetze dich ganz in deine Person. Du erlebst die Szene aus IHRER Sicht - mit ihren Gefuehlen und ihren guten Gruenden. Spaeter vergleichst du, wie die Szene aus den anderen Blickwinkeln aussah.",
       "blocks": [
+        {
+          "kind": "heading",
+          "text": "1. Ich werde zu meiner Rolle"
+        },
         {
           "kind": "question",
           "text": "Meine Rolle ist:",
@@ -42608,36 +44714,64 @@ export const generated: Material[] = [
         },
         {
           "kind": "instruction",
-          "text": "Beantworte alles aus der Sicht dieser Person, in der Ich-Form."
+          "text": "Ab jetzt antwortest du als diese Person, in der Ich-Form: \"Ich habe ... gemacht, weil ...\""
         },
         {
           "kind": "question",
-          "text": "Wie habe ich die Szene erlebt - was ist aus meiner Sicht passiert?",
-          "lines": 2
+          "text": "So habe ICH die Szene erlebt - was ist aus meiner Sicht passiert?",
+          "lines": 3
+        },
+        {
+          "kind": "scale",
+          "text": "So stark war mein Gefuehl in diesem Moment:",
+          "items": [
+            "gar nicht stark",
+            "ein wenig",
+            "ziemlich",
+            "sehr stark"
+          ]
         },
         {
           "kind": "question",
-          "text": "Das habe ich in diesem Moment gefühlt:",
-          "lines": 1
+          "text": "Das habe ich gefuehlt - und was hat es in mir ausgeloest?",
+          "lines": 3
         },
         {
           "kind": "question",
-          "text": "Das wollte oder brauchte ich eigentlich:",
-          "lines": 1
+          "text": "Das wollte oder brauchte ich eigentlich, auch wenn man es nicht gesehen hat:",
+          "lines": 3
         },
         {
           "kind": "question",
-          "text": "Darum habe ich so gehandelt, auch wenn es von außen anders aussah:",
-          "lines": 2
+          "text": "Darum habe ich genau so gehandelt - mein guter Grund:",
+          "lines": 3
         },
         {
           "kind": "heading",
-          "text": "Nach dem Heißen Stuhl"
+          "text": "2. Nach dem Heissen Stuhl - drei Blickwinkel"
+        },
+        {
+          "kind": "table",
+          "text": "Trag ein, was du jetzt ueber jede Person verstanden hast:",
+          "lines": 3,
+          "items": [
+            "Person",
+            "Was sie gefuehlt/gewollt hat"
+          ]
         },
         {
           "kind": "question",
-          "text": "Diese andere Sicht hat mein Bild von der Szene verändert, weil ...",
-          "lines": 2
+          "text": "Bei wem habe ich am Anfang gedacht \"die hat schuld\" - und wie sehe ich das jetzt, nachdem ich ihre Seite kenne?",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "3. Das nehme ich mit"
+        },
+        {
+          "kind": "question",
+          "text": "Mein Transfersatz: Wenn ich das naechste Mal nur eine Seite eines Streits kenne, dann ...",
+          "lines": 3
         }
       ]
     },
@@ -42721,15 +44855,15 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Erster Eindruck unter der Lupe",
-      "intro": "Unser Gehirn urteilt blitzschnell. Hier machst du sichtbar, wie ein erster Eindruck oder ein Etikett deinen Blick auf andere lenkt.",
+      "intro": "Unser Gehirn urteilt blitzschnell. Hier machst du sichtbar, wie ein erster Eindruck oder ein Etikett deinen Blick auf andere lenkt - und wie du ihm misstrauen kannst.",
       "blocks": [
         {
           "kind": "heading",
-          "text": "Teil 1 - Mein Urteil über Robin"
+          "text": "1. Mein Urteil ueber Robin"
         },
         {
           "kind": "instruction",
-          "text": "Du hast eine kurze Beschreibung von Robin gehört. Kreuze an, wie Robin auf dich wirkt."
+          "text": "Du hast eine kurze Beschreibung von Robin gehoert. Kreuze an, wie Robin auf dich wirkt."
         },
         {
           "kind": "scale",
@@ -42743,26 +44877,44 @@ export const generated: Material[] = [
         },
         {
           "kind": "question",
-          "text": "Robin redet in Gruppen wenig - wie deute ich das?",
-          "lines": 1
+          "text": "Robin redet in Gruppen wenig. Wie deute ICH das - und worauf stuetze ich diese Deutung?",
+          "lines": 3
+        },
+        {
+          "kind": "question",
+          "text": "Im Vergleich mit der Klasse: Hatten andere ein ganz anderes Bild von Robin? Woran lag das?",
+          "lines": 3
         },
         {
           "kind": "heading",
-          "text": "Teil 2 - Meine eigenen Schubladen"
+          "text": "2. Meine eigenen Schubladen"
+        },
+        {
+          "kind": "table",
+          "text": "Woran machen Menschen oft einen ersten Eindruck fest? Sammle Beispiele und was sie verraten - oder eben NICHT verraten:",
+          "lines": 3,
+          "items": [
+            "Merkmal (Kleidung, Sprache ...)",
+            "Was es ueber den Menschen wirklich sagt"
+          ]
         },
         {
           "kind": "question",
-          "text": "Woran mache ich oft einen ersten Eindruck fest (Kleidung, Sprache, Aussehen ...)?",
-          "lines": 1
+          "text": "Ein erster Eindruck von MIR ueber jemanden, der sich spaeter als voellig falsch erwies:",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "3. Dem ersten Eindruck misstrauen"
         },
         {
           "kind": "question",
-          "text": "Ein erster Eindruck von mir über jemanden, der sich später als völlig falsch erwies:",
+          "text": "Mein Tueroeffner-Satz, mit dem ich dem ersten Eindruck eine zweite Chance gebe:",
           "lines": 2
         },
         {
           "kind": "question",
-          "text": "Mein Türöffner, um dem ersten Eindruck zu misstrauen:",
+          "text": "An diese eine Person denke ich, der ich im Kopf gerade eine zweite Chance geben moechte (Name fuer mich):",
           "lines": 2
         }
       ]
@@ -42847,21 +44999,21 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Mein Feedback-Fenster",
-      "intro": "So sehe ich mich - und so sehen andere mich. Vergleiche beides und entdecke, was im Fenster sichtbar wird.",
+      "intro": "So sehe ich mich - und so sehen andere mich. Fuelle erst dein Selbstbild aus, sammle dann das Fremdbild deiner Gruppe und entdecke, was im Fenster sichtbar wird.",
       "blocks": [
         {
           "kind": "heading",
-          "text": "1. Mein Selbstbild (vor dem Feedback ausfüllen)"
+          "text": "1. Mein Selbstbild (vor dem Feedback ausfuellen)"
         },
         {
           "kind": "question",
-          "text": "Zwei Stärken, die ich an mir selbst sehe:",
-          "lines": 2
+          "text": "Zwei Staerken, die ich an mir selbst sehe:",
+          "lines": 3
         },
         {
           "kind": "question",
           "text": "Worin bin ich vielleicht besser, als ich mir zutraue?",
-          "lines": 1
+          "lines": 2
         },
         {
           "kind": "heading",
@@ -42869,25 +45021,20 @@ export const generated: Material[] = [
         },
         {
           "kind": "instruction",
-          "text": "Schreib die wertschätzenden Rückmeldungen deiner Gruppe auf. Nur zuhören und Danke sagen - nicht widersprechen."
+          "text": "Schreib die wertschaetzenden Rueckmeldungen deiner Gruppe auf. Nur zuhoeren und Danke sagen - nicht widersprechen."
         },
         {
           "kind": "lines",
           "text": "Das haben andere an mir gesehen:",
-          "lines": 3
+          "lines": 4
         },
         {
           "kind": "heading",
           "text": "3. Selbstbild trifft Fremdbild"
         },
         {
-          "kind": "question",
-          "text": "Diese Stärke haben andere gesehen, die mir selbst gar nicht bewusst war:",
-          "lines": 1
-        },
-        {
           "kind": "scale",
-          "text": "Wie überrascht war ich von dem, was andere an mir sehen?",
+          "text": "Wie ueberrascht war ich von dem, was andere an mir sehen?",
           "items": [
             "gar nicht",
             "ein wenig",
@@ -42897,8 +45044,18 @@ export const generated: Material[] = [
         },
         {
           "kind": "question",
-          "text": "Das nehme ich als Geschenk für mein Selbstbild mit:",
-          "lines": 2
+          "text": "Diese Staerke haben andere gesehen, die mir selbst gar nicht bewusst war (mein blinder Fleck im Positiven):",
+          "lines": 3
+        },
+        {
+          "kind": "question",
+          "text": "Wie war es fuer mich, so viel Wertschaetzung zu hoeren - und sie selbst zu geben?",
+          "lines": 3
+        },
+        {
+          "kind": "question",
+          "text": "Das nehme ich als Geschenk fuer mein Selbstbild mit - so will ich diese Staerke nutzen:",
+          "lines": 3
         }
       ]
     },
@@ -42986,22 +45143,31 @@ export const generated: Material[] = [
       "intro": "Hier wohnt unsere Stille-Insel. Male, was dir hilft, ruhig zu werden, und merke dir unsere Inselregeln.",
       "blocks": [
         {
-          "kind": "instruction",
-          "text": "Auf der Insel ist immer nur EIN Kind. Wir sind leise. Wir lassen das Inselkind in Ruhe."
-        },
-        {
           "kind": "box",
-          "text": "So sieht meine Ruhe aus (hier malen):",
+          "text": "So sieht meine Stille-Insel aus (hier malen):",
           "lines": 6
         },
         {
-          "kind": "question",
-          "text": "Das tut mir gut, wenn es mir zu viel wird:",
-          "lines": 1
+          "kind": "heading",
+          "text": "Unsere Inselregeln"
+        },
+        {
+          "kind": "checklist",
+          "items": [
+            "Auf die Insel geht immer nur EIN Kind.",
+            "Auf der Insel sind wir leise.",
+            "Wir bleiben nur eine kurze Weile (Sanduhr).",
+            "Das Inselkind wird in Ruhe gelassen."
+          ]
+        },
+        {
+          "kind": "box",
+          "text": "Das tut mir gut, wenn es mir zu viel wird (malen):",
+          "lines": 5
         },
         {
           "kind": "scale",
-          "text": "Wie ruhig fühle ich mich nach der Insel?",
+          "text": "Wie ruhig fuehle ich mich nach der Insel?",
           "items": [
             "noch zappelig",
             "schon ruhiger",
@@ -43092,7 +45258,7 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Mein Lauschpiraten-Logbuch",
-      "intro": "Echte Lauschpiraten hören die leisesten Geräusche. Male oder zeige, welche Geräusche du auf deiner Hörfahrt entdeckt hast.",
+      "intro": "Echte Lauschpiraten hoeren die leisesten Geraeusche. Werde ganz still und male, welche Geraeusche-Schaetze du auf deiner Hoerfahrt entdeckt hast.",
       "blocks": [
         {
           "kind": "instruction",
@@ -43100,18 +45266,36 @@ export const generated: Material[] = [
         },
         {
           "kind": "box",
-          "text": "Mein liebstes gehörtes Geräusch (hier malen):",
-          "lines": 5
+          "text": "Mein liebster Geraeusche-Schatz (hier malen):",
+          "lines": 6
         },
         {
-          "kind": "question",
-          "text": "Das war das leiseste Geräusch, das ich gehört habe:",
-          "lines": 1
+          "kind": "heading",
+          "text": "Da habe ich gelauscht"
         },
         {
-          "kind": "question",
-          "text": "So viele verschiedene Geräusche habe ich gezählt:",
-          "lines": 1
+          "kind": "checklist",
+          "items": [
+            "ganz still im Raum",
+            "an einer Hoerstation mit verbundenen Augen",
+            "draussen auf dem Lausch-Spaziergang",
+            "nach oben in die Baeume",
+            "nach unten zum Boden"
+          ]
+        },
+        {
+          "kind": "box",
+          "text": "Das leiseste Geraeusch, das ich gehoert habe (malen):",
+          "lines": 4
+        },
+        {
+          "kind": "scale",
+          "text": "Wie gut konnte ich meine Lauschpiraten-Ohren spitzen?",
+          "items": [
+            "ein bisschen",
+            "schon gut",
+            "richtig gut"
+          ]
         }
       ]
     },
@@ -43201,24 +45385,37 @@ export const generated: Material[] = [
       "blocks": [
         {
           "kind": "instruction",
-          "text": "Lege eine Hand auf den Bauch. Spüre, wie er sich beim Einatmen hebt und beim Ausatmen senkt."
+          "text": "Lege eine Hand auf den Bauch. Spuere, wie er sich beim Einatmen hebt und beim Ausatmen senkt."
         },
         {
           "kind": "box",
-          "text": "Mein Lieblings-Atem-Trick (hier malen):",
-          "lines": 5
+          "text": "Mein Lieblings-Atem-Trick (z. B. Meer, Blume, Kerze) - hier malen:",
+          "lines": 6
         },
         {
-          "kind": "question",
-          "text": "Wenn ich aufgeregt bin, hilft mir dieser Atem-Trick:",
-          "lines": 1
+          "kind": "heading",
+          "text": "Wann ruft mein Atemfreund mir zu Hilfe?"
+        },
+        {
+          "kind": "checklist",
+          "items": [
+            "wenn ich wuetend bin",
+            "wenn ich aufgeregt bin",
+            "wenn ich traurig bin",
+            "wenn ich nicht einschlafen kann"
+          ]
+        },
+        {
+          "kind": "box",
+          "text": "So fuehlt sich mein Bauch beim ruhigen Atmen an (malen):",
+          "lines": 4
         },
         {
           "kind": "scale",
           "text": "Wie ruhig macht mich mein Atemfreund?",
           "items": [
             "ein bisschen",
-            "ganz schön",
+            "ganz schoen",
             "richtig ruhig"
           ]
         }
@@ -43306,26 +45503,48 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Mein Schneckentempo-Blatt",
-      "intro": "Die Schnecke hat es nie eilig und entdeckt dabei ganz viel. Male, was du im Schneckentempo entdeckt hast.",
+      "intro": "Die Schnecke hat es nie eilig und entdeckt dabei ganz viel. Heute warst du auch eine Schnecke. Male und erzähle, was du im Schneckentempo entdeckt hast.",
       "blocks": [
         {
+          "kind": "heading",
+          "text": "Ganz langsam wie eine Schnecke"
+        },
+        {
           "kind": "instruction",
-          "text": "Mach etwas ganz langsam - so langsam wie eine Schnecke. Was entdeckst du dabei?"
+          "text": "Mach eine Sache ganz, ganz langsam - so langsam wie eine Schnecke. Schau und spüre dabei genau."
         },
         {
           "kind": "box",
           "text": "Das habe ich im Schneckentempo entdeckt (hier malen):",
+          "lines": 6
+        },
+        {
+          "kind": "scale",
+          "text": "Wie hat sich das langsame Schnecken-Tempo angefühlt?",
+          "items": [
+            "Sonne",
+            "Wolke",
+            "Regen"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "Meine Sinne als Schnecke"
+        },
+        {
+          "kind": "box",
+          "text": "Das habe ich ganz langsam getastet oder geschmeckt (hier malen):",
           "lines": 5
         },
         {
           "kind": "question",
-          "text": "Im Schneckentempo geschmeckt/gefühlt/gesehen habe ich:",
-          "lines": 1
+          "text": "Das habe ich im Schneckentempo gehört oder gerochen:",
+          "lines": 2
         },
         {
           "kind": "question",
           "text": "Wann tut es mir gut, langsam zu sein?",
-          "lines": 1
+          "lines": 2
         }
       ]
     },
@@ -43529,7 +45748,7 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Meine Streit-Schuhe",
-      "intro": "Du hast eine Szene aus zwei Seiten erlebt. Halte fest, was du gemerkt hast.",
+      "intro": "Du hast eine Streit-Szene aus zwei Seiten erlebt - aus deiner und aus der des anderen. Halte fest, was du auf jeder Seite gemerkt hast.",
       "blocks": [
         {
           "kind": "heading",
@@ -43537,21 +45756,26 @@ export const generated: Material[] = [
         },
         {
           "kind": "question",
-          "text": "Was wollte ich? Wie habe ich mich gefühlt?",
+          "text": "Was wollte ich? Was war für mich wichtig?",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "Wie habe ich mich auf meiner Seite gefühlt?",
           "lines": 2
         },
         {
           "kind": "heading",
-          "text": "Auf der anderen Seite (Seite B)"
+          "text": "In den Schuhen des anderen (Seite B)"
         },
         {
           "kind": "question",
-          "text": "Wie hat sich die andere Person wohl gefühlt?",
-          "lines": 2
+          "text": "Was wollte die andere Person? Wie hat sie sich wohl gefühlt?",
+          "lines": 3
         },
         {
           "kind": "box",
-          "text": "Mein größtes Aha: 'Von der anderen Seite sieht es so aus ...'",
+          "text": "Mein größtes Aha: 'Von der anderen Seite sieht es so aus ...' (schreiben oder malen)",
           "lines": 3
         },
         {
@@ -43563,6 +45787,11 @@ export const generated: Material[] = [
             "gut",
             "sehr gut"
           ]
+        },
+        {
+          "kind": "question",
+          "text": "Beim nächsten Streit will ich zuerst: einmal die Schuhe tauschen und denken ...",
+          "lines": 2
         }
       ]
     },
@@ -43644,22 +45873,28 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Meine Lösungs-Lostrommel",
-      "intro": "Notiere die Ideen aus eurer Trommel und prüfe, welche fair sind.",
+      "intro": "Erst sammeln, dann entscheiden! Notiere die Ideen aus eurer Trommel und prüfe gemeinsam, welche Lösung für beide fair ist.",
       "blocks": [
         {
           "kind": "heading",
           "text": "Unser Streitfall"
         },
         {
-          "kind": "lines",
+          "kind": "question",
+          "text": "Worum geht der Streit? Wer will was?",
           "lines": 2
         },
         {
           "kind": "heading",
-          "text": "Ideen aus der Trommel"
+          "text": "Ideen aus der Trommel - und der Fairness-Test"
+        },
+        {
+          "kind": "instruction",
+          "text": "Schreibe jede Idee auf. Prüfe dann: Gewinnen beide etwas? Ist die Lösung fair?"
         },
         {
           "kind": "table",
+          "text": "Unsere Lösungsideen prüfen:",
           "lines": 5,
           "items": [
             "Lösungsidee",
@@ -43673,8 +45908,23 @@ export const generated: Material[] = [
           "lines": 2
         },
         {
+          "kind": "question",
+          "text": "Warum ist gerade diese Lösung fair für beide?",
+          "lines": 2
+        },
+        {
+          "kind": "scale",
+          "text": "Wie gut konntet ihr ohne Streit eine Lösung auswählen?",
+          "items": [
+            "schwer",
+            "geht so",
+            "gut",
+            "sehr gut"
+          ]
+        },
+        {
           "kind": "instruction",
-          "text": "Eine faire Lösung erkennst du daran: Beide bekommen etwas und beide können damit leben."
+          "text": "Merke dir: Im Streit gibt es fast immer mehr als eine Lösung - die beste ist die, bei der keiner verliert."
         }
       ]
     },
@@ -43886,53 +46136,47 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Meine Resilienz-Werkbank",
-      "intro": "Auch für schwere Tage gibt es Werkzeuge. Such dir deine drei Lieblingswerkzeuge aus und schreib oder male sie in deinen Kasten. Überlege bei jedem: Wann hilft es mir?",
+      "intro": "Auch für schwere Tage gibt es Werkzeuge - zum Beruhigen, Ablenken, Hilfe holen und Mutmachen. Wähle deine Lieblingswerkzeuge und überlege bei jedem: Wann hilft es mir?",
       "blocks": [
         {
           "kind": "heading",
-          "text": "Mein Werkzeug 1"
+          "text": "Meine schweren Momente"
         },
         {
-          "kind": "lines",
-          "text": "Das ist mein Werkzeug:",
-          "lines": 1
-        },
-        {
-          "kind": "lines",
-          "text": "Es hilft mir, wenn ...",
-          "lines": 1
+          "kind": "question",
+          "text": "Wann wird ein Tag für mich schwer (z. B. Streit, schlechte Note, Heimweh, Aufregung)?",
+          "lines": 2
         },
         {
           "kind": "heading",
-          "text": "Mein Werkzeug 2"
+          "text": "Mein Werkzeugkasten"
         },
         {
-          "kind": "lines",
-          "text": "Das ist mein Werkzeug:",
-          "lines": 1
+          "kind": "instruction",
+          "text": "Trage deine drei Lieblingswerkzeuge ein. Schreibe dazu, wobei sie helfen und wie du sie machst."
         },
         {
-          "kind": "lines",
-          "text": "Es hilft mir, wenn ...",
-          "lines": 1
-        },
-        {
-          "kind": "heading",
-          "text": "Mein Werkzeug 3"
-        },
-        {
-          "kind": "lines",
-          "text": "Das ist mein Werkzeug:",
-          "lines": 1
-        },
-        {
-          "kind": "lines",
-          "text": "Es hilft mir, wenn ...",
-          "lines": 1
+          "kind": "table",
+          "text": "Meine drei Werkzeuge:",
+          "lines": 3,
+          "items": [
+            "Mein Werkzeug",
+            "Das hilft mir, wenn ...",
+            "So mache ich es"
+          ]
         },
         {
           "kind": "box",
-          "text": "Mein Geheimwerkzeug (nur für mich):",
+          "text": "Mein Geheimwerkzeug - nur für mich (schreiben oder malen):",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "Mein Plan für den nächsten schweren Tag"
+        },
+        {
+          "kind": "question",
+          "text": "Welches Werkzeug probiere ich beim nächsten schweren Moment zuerst? Und wann?",
           "lines": 3
         },
         {
@@ -43941,7 +46185,8 @@ export const generated: Material[] = [
           "items": [
             "noch unsicher",
             "geht so",
-            "ich bin gerüstet"
+            "gut gerüstet",
+            "ich bin bereit"
           ]
         }
       ]
@@ -44031,29 +46276,55 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Meine zwei inneren Stimmen",
-      "intro": "In deinem Kopf wohnen zwei Stimmen: der Miesmacher und der Mutmacher. Schreib links auf, was der Miesmacher sagt - und baue ihn dann rechts in einen Mutmacher um.",
+      "intro": "In deinem Kopf wohnen zwei Stimmen: der Miesmacher macht dich klein, der Mutmacher hilft dir. Hier lernst du, den Miesmacher zu entlarven und in einen Mutmacher umzubauen.",
       "blocks": [
         {
+          "kind": "heading",
+          "text": "1. So spricht der Miesmacher"
+        },
+        {
           "kind": "instruction",
-          "text": "Umbau-Tricks: 1. 'noch' einbauen   2. 'nie/immer/alle' zu 'manchmal/oft'   3. einen ersten kleinen Schritt anhängen."
+          "text": "Miesmacher-Sätze sind streng und übertrieben. Sie sagen 'nie', 'immer', 'alle' - und behaupten als sicher, was gar nicht sicher ist."
+        },
+        {
+          "kind": "question",
+          "text": "Ein Miesmacher-Satz, den ich aus meinem Kopf kenne:",
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "2. Umbauen mit den drei Tricks"
+        },
+        {
+          "kind": "instruction",
+          "text": "Trick 1: 'noch' einbauen.   Trick 2: 'nie/immer/alle' zu 'manchmal/oft'.   Trick 3: einen ersten kleinen Schritt anhängen."
         },
         {
           "kind": "table",
-          "text": "Was der MIESMACHER sagt  →  Was der MUTMACHER daraus macht",
+          "text": "Baue drei Sätze um:",
+          "lines": 3,
           "items": [
-            "Miesmacher-Satz 1 → Mutmacher-Satz 1",
-            "Miesmacher-Satz 2 → Mutmacher-Satz 2",
-            "Miesmacher-Satz 3 → Mutmacher-Satz 3"
+            "Was der MIESMACHER sagt",
+            "Was der MUTMACHER daraus macht"
           ]
+        },
+        {
+          "kind": "heading",
+          "text": "3. Mein eigener Mutmacher"
         },
         {
           "kind": "question",
           "text": "In dieser Situation taucht mein Miesmacher besonders oft auf:",
-          "lines": 2
+          "lines": 3
         },
         {
           "kind": "box",
-          "text": "MEIN persönlicher Mutmacher-Satz (kurz und stark):",
+          "text": "MEIN persönlicher Mutmacher-Satz - kurz und stark, damit ich ihn nie vergesse:",
+          "lines": 4
+        },
+        {
+          "kind": "question",
+          "text": "So kann ich meinem Mutmacher diese Woche zuhören:",
           "lines": 3
         },
         {
@@ -44152,7 +46423,7 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Mein Bambus-Blatt",
-      "intro": "Der Bambus biegt sich im Sturm - und richtet sich danach wieder auf. So eine Bambus-Kraft steckt auch in dir. Erforsche das Material und übertrage es auf deine eigenen Stürme.",
+      "intro": "Der Bambus biegt sich im Sturm tief - und richtet sich danach wieder auf. So eine Bambus-Kraft steckt auch in dir. Erforsche das Material und übertrage es auf deine eigenen Stürme.",
       "blocks": [
         {
           "kind": "heading",
@@ -44160,17 +46431,17 @@ export const generated: Material[] = [
         },
         {
           "kind": "instruction",
-          "text": "Biege vorsichtig die Materialien. Ordne sie von 'bricht schnell' bis 'biegt sich gut'."
+          "text": "Biege vorsichtig die Materialien. Was bricht sofort? Was gibt nach und kommt zurück?"
         },
         {
-          "kind": "lines",
-          "text": "Das ist sofort gebrochen:",
-          "lines": 1
+          "kind": "question",
+          "text": "Das ist sofort gebrochen - und so sah es aus:",
+          "lines": 2
         },
         {
-          "kind": "lines",
-          "text": "Das hat nachgegeben und kam zurück:",
-          "lines": 1
+          "kind": "question",
+          "text": "Das hat nachgegeben und kam wieder zurück:",
+          "lines": 2
         },
         {
           "kind": "heading",
@@ -44178,8 +46449,8 @@ export const generated: Material[] = [
         },
         {
           "kind": "box",
-          "text": "Ein schwerer Moment (Sturm), den ich kenne:",
-          "lines": 3
+          "text": "Ein schwerer Moment (Sturm), den ich kenne - male oder schreibe ihn:",
+          "lines": 5
         },
         {
           "kind": "heading",
@@ -44197,6 +46468,11 @@ export const generated: Material[] = [
             "es noch einmal versuchen",
             "________________________"
           ]
+        },
+        {
+          "kind": "question",
+          "text": "Mein wichtigster Aufricht-Helfer ist - weil:",
+          "lines": 3
         },
         {
           "kind": "scale",
@@ -44294,52 +46570,61 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Mein Notfallplan für Gefühlsstürme",
-      "intro": "Wenn ein Gefühlssturm kommt und alles zu viel wird, hilft dir dein Notfallplan. Trage zu jedem Schritt ein, was bei DIR am besten funktioniert. Merke dir die Reihenfolge: Stopp - Spüren - Beruhigen - Überlegen - Handeln.",
+      "intro": "Wenn ein Gefühlssturm kommt und alles zu viel wird, hilft dir dein Notfallplan. Trage zu jedem Schritt ein, was bei DIR am besten funktioniert. Die Reihenfolge: Stopp - Spüren - Beruhigen - Überlegen - Handeln.",
       "blocks": [
         {
-          "kind": "heading",
-          "text": "1. STOPP"
-        },
-        {
-          "kind": "lines",
-          "text": "So setze ich mein Stoppzeichen:",
-          "lines": 1
+          "kind": "instruction",
+          "text": "Diesen Plan machst du JETZT in Ruhe - damit er dir im Ernstfall hilft, wenn das Denken schwerfällt."
         },
         {
           "kind": "heading",
-          "text": "2. SPÜREN"
+          "text": "Schritt 1 - STOPP"
         },
         {
-          "kind": "lines",
+          "kind": "question",
+          "text": "So setze ich mein Stoppzeichen (z. B. Hand wie ein Stoppschild, innerlich 'STOPP' denken):",
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "Schritt 2 - SPÜREN"
+        },
+        {
+          "kind": "question",
           "text": "So sage ich mir, was los ist ('Ich bin gerade ...'):",
-          "lines": 1
+          "lines": 2
         },
         {
           "kind": "heading",
-          "text": "3. BERUHIGEN"
+          "text": "Schritt 3 - BERUHIGEN"
         },
         {
-          "kind": "lines",
-          "text": "Meine Beruhigungs-Übung:",
-          "lines": 1
+          "kind": "question",
+          "text": "Meine Beruhigungs-Übung (z. B. tief atmen, bis zehn zählen, Hände drücken):",
+          "lines": 2
         },
         {
           "kind": "heading",
-          "text": "4. ÜBERLEGEN"
+          "text": "Schritt 4 - ÜBERLEGEN"
         },
         {
-          "kind": "lines",
+          "kind": "question",
           "text": "Diese Frage stelle ich mir ('Was hilft mir jetzt wirklich?'):",
-          "lines": 1
+          "lines": 2
         },
         {
           "kind": "heading",
-          "text": "5. HOLEN ODER HANDELN"
+          "text": "Schritt 5 - HOLEN ODER HANDELN"
         },
         {
           "kind": "box",
-          "text": "Das tue ich - und DAS ist meine Person, die ich um Hilfe bitten kann:",
-          "lines": 3
+          "text": "Das tue ich - UND das ist meine Person, die ich um Hilfe bitten kann:",
+          "lines": 4
+        },
+        {
+          "kind": "question",
+          "text": "Wo hänge ich meinen Notfallplan auf, damit ich ihn immer finde?",
+          "lines": 2
         },
         {
           "kind": "scale",
@@ -44912,23 +47197,23 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Mein Erfolgs-Logbuch",
-      "intro": "Erfolge verblassen schnell. Halte sie hier fest - auch die kleinen, die niemand sonst sieht.",
+      "intro": "Fehler bleiben haften, Erfolge verblassen schnell - so entsteht ein schiefes Bild von dir. Halte hier deine Erfolge fest, auch die kleinen, die niemand sonst sieht. Jeder zaehlt.",
       "blocks": [
         {
           "kind": "instruction",
-          "text": "Trage Erfolge in der Ich-Form ein und ordne sie einer Kategorie zu. Ein Erfolg darf klein sein - er zählt trotzdem."
+          "text": "Trage deine Erfolge in der Ich-Form ein ('Ich habe ...') und ordne jeden einer Kategorie zu. Ein Erfolg darf ganz klein sein - er zaehlt trotzdem."
         },
         {
           "kind": "heading",
-          "text": "Meine Erfolgs-Kategorien"
+          "text": "Die vier Erfolgs-Kategorien"
         },
         {
           "kind": "checklist",
           "items": [
-            "Mut-Erfolg (ich habe mich getraut)",
-            "Dranbleib-Erfolg (ich habe nicht aufgegeben)",
-            "Können-Erfolg (ich habe etwas geschafft)",
-            "Herz-Erfolg (ich war hilfsbereit/fair)"
+            "Mut-Erfolg: ich habe mich getraut",
+            "Dranbleib-Erfolg: ich habe nicht aufgegeben",
+            "Koennen-Erfolg: ich habe etwas geschafft oder gelernt",
+            "Herz-Erfolg: ich war hilfsbereit, fair oder freundlich"
           ]
         },
         {
@@ -44937,40 +47222,56 @@ export const generated: Material[] = [
         },
         {
           "kind": "table",
+          "text": "Schreibe jeden Erfolg konkret auf - so, dass du spaeter noch weisst, was passiert ist.",
           "lines": 6,
           "items": [
             "Mein Erfolg (Ich habe ...)",
             "Kategorie",
-            "Was mir dabei half"
+            "Was mir dabei geholfen hat"
           ]
         },
         {
           "kind": "heading",
-          "text": "Bezeugt von meinem Mutmach-Paar"
-        },
-        {
-          "kind": "lines",
-          "lines": 2
+          "text": "Mein Mutmach-Paar bezeugt mir einen Erfolg"
         },
         {
           "kind": "question",
-          "text": "Mein Erfolgs-Muster: Wobei gelingen mir Erfolge besonders?",
-          "lines": 2
+          "text": "Was hat dein Mutmach-Paar bei dir gesehen oder gehoert - und warum war das stark?",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "Mein Erfolgs-Muster"
+        },
+        {
+          "kind": "question",
+          "text": "Schau auf deine Erfolge: Wobei gelingen sie dir besonders? Wann oder mit wem klappt es gut?",
+          "lines": 3
+        },
+        {
+          "kind": "question",
+          "text": "Was hilft dir, wenn du an einer Sache dranbleibst, obwohl es schwer wird?",
+          "lines": 3
         },
         {
           "kind": "box",
-          "text": "Die Stärke hinter meinen Erfolgen ist:",
-          "lines": 2
+          "text": "Welche Staerke steckt hinter deinen Erfolgen? Male oder schreibe sie hier gross hinein:",
+          "lines": 4
         },
         {
           "kind": "scale",
-          "text": "Wie verändert sich mein Blick auf mich, seit ich Erfolge sammle?",
+          "text": "Wie veraendert sich dein Blick auf dich selbst, seit du deine Erfolge sammelst?",
           "items": [
             "gar nicht",
             "etwas",
             "deutlich",
             "stark"
           ]
+        },
+        {
+          "kind": "question",
+          "text": "Mein Vorsatz: Welchen einen Erfolg willst du dir in der naechsten Woche zutrauen?",
+          "lines": 3
         }
       ]
     },
@@ -45637,51 +47938,76 @@ export const generated: Material[] = [
       "KOG-37"
     ],
     "worksheet": {
-      "title": "Meine Gefühls-Mischpalette",
-      "intro": "Manchmal sind zwei Gefühle gleichzeitig in dir - das ist normal. Mische sie hier zu deiner eigenen Farbe.",
+      "title": "Meine Gefuehls-Mischpalette",
+      "intro": "Manchmal sind zwei Gefuehle gleichzeitig in dir - zum Beispiel Freude UND Angst. Das ist ganz normal! Hier mischst du Gefuehle wie Farben zu deiner eigenen Mischfarbe.",
       "blocks": [
         {
           "kind": "heading",
-          "text": "Unsere Gefühls-Farben"
+          "text": "Meine Gefuehls-Farben"
         },
         {
           "kind": "instruction",
-          "text": "Male jedes Feld in seiner Gefühlsfarbe an: Freude, Traurigkeit, Wut/Aufregung, Ruhe, Angst."
+          "text": "Male jedes Feld in seiner Gefuehlsfarbe an. Schau auf eure Farbtafel im Kreis."
+        },
+        {
+          "kind": "box",
+          "text": "Freude (gelb)",
+          "lines": 3
+        },
+        {
+          "kind": "box",
+          "text": "Angst (grau)",
+          "lines": 3
+        },
+        {
+          "kind": "box",
+          "text": "Wut (rot)",
+          "lines": 3
+        },
+        {
+          "kind": "box",
+          "text": "Ruhe (gruen)",
+          "lines": 3
         },
         {
           "kind": "heading",
-          "text": "Gemischte Gefühle in Geschichten"
+          "text": "Zwei Gefuehle auf einmal"
         },
         {
           "kind": "instruction",
-          "text": "Welche zwei Gefühlsfarben passen? Mische sie auf einem Palettenfeld."
+          "text": "Lina darf zum ersten Mal woanders uebernachten. Sie freut sich UND hat Angst. Male ihre Misch-Farbe."
         },
         {
-          "kind": "table",
-          "lines": 3,
-          "items": [
-            "Situation",
-            "Gefühl 1",
-            "Gefühl 2"
-          ]
+          "kind": "box",
+          "text": "Linas Misch-Farbe (gelb und grau zusammen):",
+          "lines": 5
         },
         {
           "kind": "heading",
           "text": "Meine eigene Mischfarbe"
         },
         {
+          "kind": "instruction",
+          "text": "Denk an einen Moment, in dem zwei Gefuehle gleichzeitig in dir waren. Male deine eigene Mischfarbe gross."
+        },
+        {
           "kind": "box",
-          "text": "Hier male ich meine eigene Mischfarbe. Die zwei Gefühle sind:",
+          "text": "Meine Mischfarbe:",
+          "lines": 6
+        },
+        {
+          "kind": "question",
+          "text": "Meine zwei Gefuehle heissen:",
           "lines": 2
         },
         {
           "kind": "question",
-          "text": "Was tut mir gut, wenn zwei Gefühle in mir sind?",
+          "text": "Was tut dir gut, wenn zwei Gefuehle in dir sind?",
           "lines": 2
         },
         {
           "kind": "scale",
-          "text": "Wie gut kann ich jetzt verstehen, dass ich zwei Gefühle gleichzeitig haben darf?",
+          "text": "Wie geht es dir mit dem Wissen, dass du zwei Gefuehle gleichzeitig haben darfst?",
           "items": [
             "noch schwer",
             "geht so",
@@ -46062,25 +48388,31 @@ export const generated: Material[] = [
       "KOG-37"
     ],
     "worksheet": {
-      "title": "Meine Gefühls-Bedienungsanleitung",
+      "title": "Meine Gefühls-Kette und die Stopp-Stelle",
       "intro": "Gefühle kommen nicht aus dem Nichts. Erst ein Auslöser, dann ein Gefühl, dann eine Reaktion. Zwischen Gefühl und Reaktion liegt deine Stopp-Stelle.",
       "blocks": [
         {
           "kind": "heading",
-          "text": "Die Gefühls-Kette"
+          "text": "Meine Gefühls-Kette"
         },
         {
           "kind": "instruction",
-          "text": "Zerlege eine Situation in ihre drei Glieder: Auslöser, Gefühl, Reaktion."
+          "text": "Denke an eine Situation und fülle die drei Glieder aus."
         },
         {
-          "kind": "table",
-          "lines": 3,
-          "items": [
-            "Auslöser (was passiert)",
-            "Gefühl (was in mir entsteht)",
-            "Reaktion (was ich tue)"
-          ]
+          "kind": "question",
+          "text": "Auslöser - Was ist passiert?",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "Gefühl - Was habe ich gefühlt?",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "Reaktion - Was habe ich gemacht?",
+          "lines": 2
         },
         {
           "kind": "heading",
@@ -46088,7 +48420,7 @@ export const generated: Material[] = [
         },
         {
           "kind": "instruction",
-          "text": "Zwischen Gefühl und Reaktion kann ich kurz STOPP sagen und wählen."
+          "text": "Zwischen Gefühl und Reaktion kann ich STOPP sagen. Was hilft mir? Kreuze an."
         },
         {
           "kind": "checklist",
@@ -46096,21 +48428,25 @@ export const generated: Material[] = [
             "Dreimal tief atmen",
             "Langsam bis fünf zählen",
             "Kurz weggehen",
-            "In Worten sagen, was ich brauche"
+            "Sagen, was ich brauche"
           ]
         },
         {
           "kind": "heading",
-          "text": "Meine eigene Bedienungsanleitung"
+          "text": "Mein Stopp-Zeichen"
         },
         {
           "kind": "box",
-          "text": "Auslöser - mein Gefühl - an der Stopp-Stelle wähle ich - meine bessere Reaktion:",
-          "lines": 3
+          "text": "Hier male ich mein eigenes Stopp-Zeichen:",
+          "lines": 5
+        },
+        {
+          "kind": "heading",
+          "text": "Mein nächstes Mal"
         },
         {
           "kind": "question",
-          "text": "Welche Reaktion möchte ich beim nächsten Mal ausprobieren?",
+          "text": "Welche bessere Reaktion möchte ich beim nächsten Mal ausprobieren?",
           "lines": 2
         },
         {
@@ -46688,52 +49024,56 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Mein Lebenswappen",
-      "intro": "Ein Wappen erzählt mit Bildern, wofür jemand steht. Sammle hier deine Ideen für dein eigenes Wappen - wofür stehst du?",
+      "intro": "Ein Wappen erzählt mit Bildern, wofür jemand steht. Male in jedes Feld ein Bild oder Symbol - so zeigst du, wofür DU stehst. Wörter darfst du dazuschreiben.",
       "blocks": [
         {
           "kind": "heading",
-          "text": "Meine Wappen-Felder"
+          "text": "Meine vier Wappen-Felder"
         },
         {
           "kind": "instruction",
-          "text": "Notiere zu jedem Feld eine Idee oder ein Symbol."
+          "text": "Male in jedes Feld ein Bild oder Zeichen. Ein Symbol sagt oft mehr als viele Wörter."
         },
         {
-          "kind": "table",
-          "lines": 4,
-          "items": [
-            "Feld",
-            "Meine Idee / mein Symbol"
-          ]
+          "kind": "box",
+          "text": "1. Meine Wurzeln: Woher ich komme, wer zu mir gehört",
+          "lines": 6
         },
         {
-          "kind": "heading",
-          "text": "Meine Stärke und mein Wert"
+          "kind": "box",
+          "text": "2. Meine Stärke: Etwas, das ich gut kann",
+          "lines": 6
         },
         {
-          "kind": "question",
-          "text": "Welche Stärke habe ich, und welcher Wert ist mir wichtig - und warum?",
-          "lines": 3
+          "kind": "box",
+          "text": "3. Mein Wert: Was mir wichtig ist (z. B. Freundschaft, Tiere)",
+          "lines": 6
+        },
+        {
+          "kind": "box",
+          "text": "4. Das macht mich glücklich",
+          "lines": 6
         },
         {
           "kind": "heading",
           "text": "Mein Wahlspruch"
         },
         {
+          "kind": "instruction",
+          "text": "Schreibe einen kurzen Satz, der zeigt, wofür du stehst (z. B. 'Ich gebe nicht auf.')."
+        },
+        {
           "kind": "box",
-          "text": "Mein kurzer Satz, der zeigt, wofür ich stehe:",
+          "text": "Mein Wahlspruch:",
           "lines": 2
         },
         {
           "kind": "heading",
-          "text": "Rückmeldung an andere"
+          "text": "Ich lese ein anderes Wappen"
         },
         {
-          "kind": "instruction",
-          "text": "Schreibe einem anderen Kind, was dir an seinem Wappen gefällt."
-        },
-        {
-          "kind": "lines",
+          "kind": "question",
+          "text": "An einem anderen Wappen gefällt mir ... , weil ...",
           "lines": 2
         },
         {
@@ -47400,8 +49740,26 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Meine Ideen-Schmiede",
-      "intro": "Kreativität ist ein Handwerk. Mit den richtigen Werkzeugen kommst du auf viele Ideen - und machst aus einer davon einen ersten Schritt. Denk daran: erst sammeln, dann bewerten.",
+      "intro": "Kreativität ist ein Handwerk, kein Talent, das man hat oder nicht. Mit den richtigen Werkzeugen kommst du auf viele Ideen - und machst aus einer davon einen ersten Schritt. Merke: erst sammeln, dann bewerten.",
       "blocks": [
+        {
+          "kind": "heading",
+          "text": "Ideenkiller entlarven"
+        },
+        {
+          "kind": "instruction",
+          "text": "Ideenkiller sind Sätze, die eine Idee erschlagen, bevor sie atmen kann."
+        },
+        {
+          "kind": "question",
+          "text": "Welcher Ideenkiller bremst MICH am meisten ('Das geht eh nicht', 'Das ist peinlich', ...)?",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "Was könnte ich mir stattdessen sagen, damit eine Idee überleben darf?",
+          "lines": 2
+        },
         {
           "kind": "heading",
           "text": "Meine vier Schmiede-Werkzeuge"
@@ -47417,7 +49775,7 @@ export const generated: Material[] = [
         },
         {
           "kind": "heading",
-          "text": "Meine Aufgabe / mein kleines Problem"
+          "text": "Meine Aufgabe und mein Ideenberg"
         },
         {
           "kind": "lines",
@@ -47425,17 +49783,30 @@ export const generated: Material[] = [
           "lines": 2
         },
         {
-          "kind": "heading",
-          "text": "Mein Ideenberg"
-        },
-        {
           "kind": "instruction",
-          "text": "Schreibe mindestens fünf Ideen auf - auch verrückte. Jetzt noch nicht bewerten!"
+          "text": "Schreibe mindestens fünf Ideen auf - auch verrückte. Jetzt noch NICHT bewerten!"
         },
         {
           "kind": "lines",
-          "text": "",
           "lines": 6
+        },
+        {
+          "kind": "heading",
+          "text": "Vom Ideenberg zur Lieblingsidee"
+        },
+        {
+          "kind": "instruction",
+          "text": "Bewerte erst jetzt: Welche Ideen überraschen dich - und welche könnten wirklich klappen?"
+        },
+        {
+          "kind": "table",
+          "text": "Meine drei spannendsten Ideen",
+          "lines": 3,
+          "items": [
+            "Idee",
+            "überrascht mich?",
+            "könnte klappen?"
+          ]
         },
         {
           "kind": "heading",
@@ -47443,7 +49814,12 @@ export const generated: Material[] = [
         },
         {
           "kind": "box",
-          "text": "Meine Lieblingsidee ist - und mein winziger erster Schritt heute oder morgen:",
+          "text": "Meine Lieblingsidee (die, die am meisten Lust macht) ist:",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "Mein winziger erster Schritt, heute oder morgen machbar ('Ich frage X', 'Ich skizziere es', 'Ich probiere 5 Minuten'):",
           "lines": 3
         },
         {
@@ -47545,15 +49921,43 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Meine selbstgewählte Grenze",
-      "intro": "Grenzen können Kreativität wecken statt sie zu bremsen. Wähle für eine eigene Aufgabe bewusst eine kleine Grenze - und finde heraus, wozu sie dich zwingt.",
+      "intro": "Grenzen können Kreativität wecken statt sie zu bremsen. Halte fest, was du an den Stationen entdeckt hast - und wähle dann bewusst eine eigene Grenze, die deinen Kopf in Schwung bringt.",
       "blocks": [
         {
           "kind": "heading",
-          "text": "Was ich heute gemerkt habe"
+          "text": "Rückblick auf die Stationen"
+        },
+        {
+          "kind": "instruction",
+          "text": "Trage ein, was dir an den Stationen aufgefallen ist."
+        },
+        {
+          "kind": "table",
+          "text": "Wie war es an den Stationen?",
+          "lines": 4,
+          "items": [
+            "Station",
+            "Grenze (z. B. nur 5 Blatt, genau 6 Wörter)",
+            "Hat sie gestört oder geholfen?"
+          ]
         },
         {
           "kind": "question",
-          "text": "Bei welcher Station hat dir die Grenze am meisten GEHOLFEN - und warum?",
+          "text": "Bei welcher Station hat dir die Grenze am meisten GEHOLFEN - und wie genau hat sie deine Ideen angeschoben?",
+          "lines": 3
+        },
+        {
+          "kind": "question",
+          "text": "Was habt ihr gefunden, worauf ihr ohne die Einschränkung wohl NIE gekommen wärt?",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "Das Geheimnis dahinter"
+        },
+        {
+          "kind": "question",
+          "text": "Warum kann ein leeres Blatt lähmen, eine klare Grenze aber beflügeln? Schreib es in eigenen Worten.",
           "lines": 3
         },
         {
@@ -47561,13 +49965,9 @@ export const generated: Material[] = [
           "text": "Meine eigene Aufgabe"
         },
         {
-          "kind": "lines",
-          "text": "Wofür will ich eine kreative Grenze setzen?",
+          "kind": "box",
+          "text": "Wofür will ich demnächst eine kreative Grenze setzen? (z. B. Referat, Geschenk, Zimmer, Hobby-Projekt)",
           "lines": 2
-        },
-        {
-          "kind": "heading",
-          "text": "Meine Grenze"
         },
         {
           "kind": "box",
@@ -47576,7 +49976,7 @@ export const generated: Material[] = [
         },
         {
           "kind": "question",
-          "text": "Wozu könnte mich genau diese Grenze zwingen - was muss ich dann neu denken?",
+          "text": "Wozu könnte mich genau diese Grenze zwingen - was muss ich dann neu oder anders denken?",
           "lines": 3
         },
         {
@@ -47678,7 +50078,7 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Meine Was-wäre-wenn-Frage",
-      "intro": "Mit zwei kleinen Worten kannst du die Welt umbauen und neue Ideen finden. Erfinde eine eigene Frage - und spinne sie folgerichtig weiter.",
+      "intro": "Mit zwei kleinen Worten kannst du die Welt umbauen und neue Ideen finden. Erfinde eine eigene Frage und spinne sie Schritt für Schritt folgerichtig weiter.",
       "blocks": [
         {
           "kind": "heading",
@@ -47686,7 +50086,12 @@ export const generated: Material[] = [
         },
         {
           "kind": "instruction",
-          "text": "Gutes Weiterspinnen heißt: immer wieder fragen 'und was würde DANN passieren?'"
+          "text": "Gutes Weiterspinnen heißt: nach jeder Folge wieder fragen 'und was würde DANN passieren?'"
+        },
+        {
+          "kind": "question",
+          "text": "Welche Folge aus eurem Team-Szenario hat dich am meisten überrascht?",
+          "lines": 2
         },
         {
           "kind": "heading",
@@ -47703,20 +50108,20 @@ export const generated: Material[] = [
         },
         {
           "kind": "instruction",
-          "text": "Notiere mindestens drei Folgen und frage dich nach jeder: und dann?"
+          "text": "Notiere mindestens vier Folgen und frage dich nach jeder: und dann?"
         },
         {
           "kind": "lines",
-          "text": "",
-          "lines": 5
+          "lines": 6
         },
         {
           "kind": "heading",
-          "text": "Zwei Seiten"
+          "text": "Zwei Seiten dieser neuen Welt"
         },
         {
           "kind": "table",
-          "lines": 2,
+          "text": "Was wäre schön, was schwierig?",
+          "lines": 3,
           "items": [
             "Was wäre schön daran?",
             "Was wäre schwierig daran?"
@@ -47724,7 +50129,12 @@ export const generated: Material[] = [
         },
         {
           "kind": "question",
-          "text": "Welche Erfindung (Gerät, Regel, Beruf) bräuchte diese neue Welt?",
+          "text": "Welche Erfindung (Gerät, Regel, Beruf) bräuchte diese neue Welt - und wozu?",
+          "lines": 3
+        },
+        {
+          "kind": "question",
+          "text": "Was nimmst du dir vor: Wann willst du deine Frage weiterspinnen (z. B. beim Spazieren, beim Einschlafen)?",
           "lines": 2
         },
         {
@@ -47827,7 +50237,7 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Meine Anti-Block-Karte",
-      "intro": "Festfahren gehört zum Erfinden dazu. Eine Blockade ist kein Stopp, sondern eine Aufforderung, den Weg zu wechseln. Bau dir deinen eigenen Notfall-Plan für 'wenn nichts kommt'.",
+      "intro": "Festfahren gehört zum Erfinden dazu. Eine Blockade ist kein Stopp, sondern eine Aufforderung, den Weg zu wechseln. Bau dir hier deinen eigenen Notfall-Plan für 'wenn nichts kommt'.",
       "blocks": [
         {
           "kind": "heading",
@@ -47845,11 +50255,38 @@ export const generated: Material[] = [
         },
         {
           "kind": "heading",
-          "text": "Was mir heute am meisten geholfen hat"
+          "text": "Mein Test an der Block-Aufgabe"
+        },
+        {
+          "kind": "instruction",
+          "text": "Erinnere dich an die knifflige Aufgabe im Team."
+        },
+        {
+          "kind": "question",
+          "text": "An welcher Stelle bist du steckengeblieben - und welche Strategie hast du dann ausprobiert?",
+          "lines": 3
+        },
+        {
+          "kind": "question",
+          "text": "Was ist nach dem Strategie-Wechsel passiert? Hat sich der Knoten gelöst?",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "Was mir am meisten geholfen hat"
         },
         {
           "kind": "lines",
-          "text": "Meine zwei, drei Lieblingsstrategien:",
+          "text": "Meine zwei, drei Lieblingsstrategien (in eigenen Worten):",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "Mich selbst kennen"
+        },
+        {
+          "kind": "question",
+          "text": "Woran merke ich bei MIR, dass ich gerade blockiert bin? (z. B. Gedanken, Körper, Frust)",
           "lines": 3
         },
         {
@@ -47859,11 +50296,6 @@ export const generated: Material[] = [
         {
           "kind": "box",
           "text": "Wenn mir nichts einfällt, sage ich mir:",
-          "lines": 2
-        },
-        {
-          "kind": "question",
-          "text": "Woran merke ich bei MIR, dass ich gerade blockiert bin?",
           "lines": 2
         },
         {
@@ -48310,7 +50742,7 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Stopp heißt Stopp - mein Grenz-Achtsamkeits-Protokoll",
-      "intro": "Grenzen achten heißt: hinsehen, fragen und sofort aufhören. Hier trainierst du, die Grenzen anderer zu lesen und ernst zu nehmen.",
+      "intro": "Grenzen achten heißt: hinsehen, fragen und sofort aufhören. Hier trainierst du, die Grenzen anderer zu lesen und ernst zu nehmen - auch wenn sie nicht laut ausgesprochen werden.",
       "blocks": [
         {
           "kind": "heading",
@@ -48318,7 +50750,7 @@ export const generated: Material[] = [
         },
         {
           "kind": "instruction",
-          "text": "Woran merkst du, dass jemand eine Grenze erreicht hat - auch ohne klares Nein?"
+          "text": "Woran merkst du, dass jemand eine Grenze erreicht hat - auch ohne klares Nein? Kreuze an."
         },
         {
           "kind": "checklist",
@@ -48333,15 +50765,30 @@ export const generated: Material[] = [
         },
         {
           "kind": "heading",
-          "text": "Vorher fragen"
+          "text": "Signale deuten"
         },
         {
           "kind": "instruction",
-          "text": "Welche Fragen kannst du stellen, bevor du jemandem nahe kommst oder etwas tust?"
+          "text": "Halte fest, was du beim Üben in den Triaden beobachtet hast."
         },
         {
-          "kind": "lines",
-          "lines": 2
+          "kind": "table",
+          "text": "Welches Signal bedeutet was?",
+          "lines": 4,
+          "items": [
+            "Beobachtetes Signal",
+            "Was es mir vermutlich sagt",
+            "Wie ich darauf reagiere"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "Vorher fragen"
+        },
+        {
+          "kind": "question",
+          "text": "Welche Fragen kannst du stellen, bevor du jemandem nahe kommst oder etwas tust?",
+          "lines": 3
         },
         {
           "kind": "heading",
@@ -48350,7 +50797,7 @@ export const generated: Material[] = [
         {
           "kind": "box",
           "text": "Was hilft mir, ein Stopp NICHT persönlich zu nehmen und sofort aufzuhören?",
-          "lines": 2
+          "lines": 3
         },
         {
           "kind": "heading",
@@ -48358,13 +50805,13 @@ export const generated: Material[] = [
         },
         {
           "kind": "question",
-          "text": "Wie hat es sich angefühlt, als deine Grenze ernst genommen wurde?",
-          "lines": 2
+          "text": "Wie hat es sich angefühlt, als deine eigene Grenze ernst genommen wurde?",
+          "lines": 3
         },
         {
           "kind": "question",
-          "text": "Welches Signal hast du früher leicht übersehen?",
-          "lines": 1
+          "text": "Welches Signal eines anderen hast du früher leicht übersehen - und worauf achtest du ab jetzt?",
+          "lines": 3
         },
         {
           "kind": "scale",
@@ -48473,57 +50920,89 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Die Grenz-Verhandlung - meine Bilanz",
-      "intro": "In Beziehungen treffen Nähe und Freiraum aufeinander. Hier lernst du, deine Grenzen fair auszuhandeln - und zu erkennen, wo eine feste Grenze gilt.",
+      "intro": "In echten Beziehungen treffen Nähe und Freiraum ständig aufeinander. Oft haben BEIDE ein berechtigtes Bedürfnis. Hier hältst du fest, was du brauchst, übst das faire Aushandeln - und erkennst, wo eine feste Grenze gilt.",
       "blocks": [
         {
           "kind": "heading",
-          "text": "Meine Grenz-Landkarte"
+          "text": "1. Meine Grenz-Landkarte"
         },
         {
           "kind": "instruction",
-          "text": "Wo brauchst du in welcher Beziehung eher mehr Nähe, wo mehr Freiraum?"
+          "text": "Wo brauchst du in welcher Beziehung eher mehr Nähe, wo mehr Freiraum? Trage Beispiele ein."
         },
         {
           "kind": "table",
+          "text": "Meine Bedürfnisse nach Nähe und Freiraum",
           "lines": 4,
           "items": [
-            "Beziehung (Freund:in, Familie, Gruppe)",
-            "eher Nähe / eher Freiraum",
-            "Beispiel"
+            "Beziehung (Freund:in / Familie / Gruppe)",
+            "eher mehr Nähe oder mehr Freiraum?",
+            "Woran merke ich das?"
           ]
         },
         {
           "kind": "heading",
-          "text": "Mein Bedürfnis in drei Schritten"
+          "text": "2. Mein Bedürfnis in drei Schritten"
         },
         {
           "kind": "instruction",
-          "text": "Formuliere zu einer Situation eine klare Ich-Botschaft."
+          "text": "Denk an eine echte Situation und formuliere eine klare Ich-Botschaft - kein Vorwurf, sondern was DU brauchst."
         },
         {
-          "kind": "box",
-          "text": "Was fühle ich? Was brauche ich? Worum bitte ich konkret?",
+          "kind": "question",
+          "text": "Was fühle ich in dieser Situation?",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "Was brauche ich? Und worum bitte ich die andere Person konkret?",
           "lines": 3
         },
         {
           "kind": "heading",
-          "text": "Das Verhandlungs-Schema"
+          "text": "3. Vom Vorwurf zur Ich-Botschaft"
         },
         {
-          "kind": "checklist",
+          "kind": "instruction",
+          "text": "Baue den Vorwurf so um, dass er dein Bedürfnis zeigt."
+        },
+        {
+          "kind": "table",
+          "text": "Umformulieren",
+          "lines": 3,
           "items": [
-            "Gefühl und Bedürfnis nennen",
-            "das Bedürfnis des anderen wiederholen",
-            "gemeinsam Lösungen suchen",
-            "prüfen: tragbar für beide?"
+            "Vorwurf (z. B. \"Du nervst total!\")",
+            "Meine Ich-Botschaft (\"Ich brauche ...\")"
           ]
         },
         {
           "kind": "heading",
-          "text": "Verhandeln oder feste Grenze?"
+          "text": "4. Das Verhandlungs-Schema"
+        },
+        {
+          "kind": "instruction",
+          "text": "Hake ab, was zu einer fairen Verhandlung gehört - so kannst du es Schritt für Schritt nutzen."
+        },
+        {
+          "kind": "checklist",
+          "items": [
+            "Ich nenne mein Gefühl und mein Bedürfnis.",
+            "Ich höre zu und wiederhole das Bedürfnis des anderen.",
+            "Wir suchen gemeinsam Lösungen (Kompromiss, abwechseln, dritte Idee).",
+            "Wir prüfen: Kann jede:r damit leben, ohne über die eigene Grenze zu gehen?"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "5. Verhandeln oder feste Grenze?"
+        },
+        {
+          "kind": "instruction",
+          "text": "Manche Grenzen sind verhandelbar - bei Körper, Sicherheit und Werten gibt es keinen Kompromiss. Sortiere Beispiele ein."
         },
         {
           "kind": "table",
+          "text": "Meine rote Linie",
           "lines": 3,
           "items": [
             "Das kann ich aushandeln",
@@ -48532,12 +51011,17 @@ export const generated: Material[] = [
         },
         {
           "kind": "heading",
-          "text": "Meine Verhandlungs-Bilanz"
+          "text": "6. Meine Verhandlungs-Bilanz"
         },
         {
           "kind": "question",
-          "text": "Welches Bedürfnis willst du demnächst klar benennen und aushandeln?",
-          "lines": 2
+          "text": "In welcher Beziehung willst du demnächst ein Bedürfnis klar benennen und aushandeln? Was genau sagst du?",
+          "lines": 3
+        },
+        {
+          "kind": "question",
+          "text": "Wo willst du in Zukunft eine feste Grenze setzen - und was hindert dich bisher daran?",
+          "lines": 3
         },
         {
           "kind": "scale",
@@ -48635,7 +51119,7 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Meine Hilfe-Hand",
-      "intro": "Manchmal muss man Bescheid sagen, damit jemandem geholfen wird. Das ist kein Petzen - das ist mutig. Diese Hand hilft dir zu erkennen, wann du Hilfe holst.",
+      "intro": "Manchmal muss man Bescheid sagen, damit jemandem geholfen wird. Das ist kein Petzen - das ist mutig! Diese Hand hilft dir zu erkennen, wann du Hilfe holst.",
       "blocks": [
         {
           "kind": "heading",
@@ -48643,11 +51127,31 @@ export const generated: Material[] = [
         },
         {
           "kind": "instruction",
-          "text": "Male einen Kreis um das richtige Bild: Will jemand, dass ein anderes Kind Ärger bekommt? Oder will jemand, dass geholfen wird?"
+          "text": "Petzen will, dass ein Kind Ärger bekommt. Hilfe holen will, dass einem Kind geholfen wird. Male ein Herz neben das HILFE-HOLEN."
+        },
+        {
+          "kind": "checklist",
+          "items": [
+            "\"Lena hat sich vorgedrängelt!\" - das ist Petzen.",
+            "\"Drei Kinder ärgern Lena und sie weint.\" - das ist Hilfe holen."
+          ]
         },
         {
           "kind": "heading",
-          "text": "Meine Hilfe-Hand - die Fragen"
+          "text": "Meine Hilfe-Hand"
+        },
+        {
+          "kind": "instruction",
+          "text": "Male deine Hand mit fünf Fingern. Schreibe oder male an jeden Finger eine Frage von unten."
+        },
+        {
+          "kind": "box",
+          "text": "Meine Hilfe-Hand zum Malen",
+          "lines": 6
+        },
+        {
+          "kind": "heading",
+          "text": "Die fünf Finger-Fragen"
         },
         {
           "kind": "checklist",
@@ -48661,25 +51165,39 @@ export const generated: Material[] = [
         },
         {
           "kind": "instruction",
-          "text": "Wenn du mehrere Hände abhakst: Hole Hilfe!"
-        },
-        {
-          "kind": "heading",
-          "text": "Mein Mut-Satz"
-        },
-        {
-          "kind": "box",
-          "text": "Das sage ich einer erwachsenen Person: 'Ich brauche Hilfe für jemanden.'",
-          "lines": 1
+          "text": "Wenn du mehrere Finger abhakst: Hole Hilfe! Das ist richtig und mutig."
         },
         {
           "kind": "heading",
           "text": "Zu dieser Person gehe ich"
         },
         {
+          "kind": "instruction",
+          "text": "Male oder schreibe die erwachsene Person in deiner Schule, der du Bescheid sagst."
+        },
+        {
+          "kind": "box",
+          "text": "Meine Hilfe-Person",
+          "lines": 4
+        },
+        {
+          "kind": "heading",
+          "text": "Mein Mut-Satz"
+        },
+        {
           "kind": "lines",
-          "text": "Name oder Bild der Person in meiner Schule:",
-          "lines": 1
+          "text": "Das sage ich: \"Ich brauche Hilfe für jemanden, weil ...\"",
+          "lines": 2
+        },
+        {
+          "kind": "scale",
+          "text": "Wie mutig fühle ich mich, Hilfe zu holen?",
+          "items": [
+            "noch ein bisschen ängstlich",
+            "geht so",
+            "ziemlich mutig",
+            "ganz mutig"
+          ]
         }
       ]
     },
@@ -48849,18 +51367,22 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Mein Stopp-Schild",
-      "intro": "Wenn dich jemand ärgert, darfst du Stopp sagen. Dein Körper und deine Stimme helfen dir dabei. Üben wir die drei Teile von einem guten Stopp.",
+      "intro": "Wenn dich jemand ärgert oder schubst, darfst du Stopp sagen. Dein Körper und deine Stimme schützen dich. Üben wir die drei Teile von einem guten Stopp!",
       "blocks": [
         {
           "kind": "heading",
           "text": "Die drei Teile von meinem Stopp"
         },
         {
+          "kind": "instruction",
+          "text": "Hake ab, was du übst."
+        },
+        {
           "kind": "checklist",
           "items": [
-            "Fester Körper: Füße fest, Rücken gerade, Hand wie ein Stopp-Schild",
+            "Fester Körper: Füße fest wie Wurzeln, Rücken gerade, Hand wie ein Stopp-Schild",
             "Laute ruhige Stimme: aus dem Bauch, nicht geschrien",
-            "Klare Worte: 'Stopp! Das will ich nicht.'"
+            "Klare Worte: \"Stopp! Das will ich nicht. Hör auf damit.\""
           ]
         },
         {
@@ -48874,15 +51396,33 @@ export const generated: Material[] = [
         {
           "kind": "box",
           "text": "Mein Stopp-Schild",
+          "lines": 6
+        },
+        {
+          "kind": "heading",
+          "text": "So fühlt sich mein fester Körper an"
+        },
+        {
+          "kind": "instruction",
+          "text": "Male ein Kind, das fest und stark steht - so wie du beim Stopp-Sagen."
+        },
+        {
+          "kind": "box",
+          "text": "Ich stehe fest",
           "lines": 4
         },
         {
           "kind": "heading",
-          "text": "Daran denke ich"
+          "text": "Wenn das Ärgern weitergeht"
         },
         {
           "kind": "instruction",
-          "text": "Wenn das Ärgern weitergeht, sage ich nicht nur lauter Stopp - dann hole ich Hilfe."
+          "text": "Wenn jemand trotz Stopp nicht aufhört, sage ich nicht nur lauter Stopp - dann hole ich Hilfe."
+        },
+        {
+          "kind": "lines",
+          "text": "Diese erwachsene Person hilft mir:",
+          "lines": 2
         },
         {
           "kind": "scale",
@@ -48984,14 +51524,27 @@ export const generated: Material[] = [
       "blocks": [
         {
           "kind": "heading",
+          "text": "So fühlt sich Draußenstehen an"
+        },
+        {
+          "kind": "instruction",
+          "text": "Ein Kind darf nicht mitspielen und steht allein. Male sein Gesicht: Wie fühlt es sich?"
+        },
+        {
+          "kind": "box",
+          "text": "So schaut das Kind",
+          "lines": 4
+        },
+        {
+          "kind": "heading",
           "text": "Die drei Farben"
         },
         {
           "kind": "checklist",
           "items": [
-            "Grün - Komm dazu! Ich winke und mache Platz.",
-            "Gelb - Darf ich mitspielen? Ich frage und antworte freundlich.",
-            "Rot - Du nie! Weg da! Das tut weh und gehört nicht zu uns."
+            "Grün - \"Komm dazu!\" Ich winke und mache Platz.",
+            "Gelb - \"Darf ich mitspielen?\" Ich frage und antworte freundlich.",
+            "Rot - \"Du nie! Weg da!\" Das tut weh und gehört nicht zu uns."
           ]
         },
         {
@@ -49000,21 +51553,35 @@ export const generated: Material[] = [
         },
         {
           "kind": "instruction",
-          "text": "Male das obere Feld rot, das mittlere gelb und das untere grün. Male in jedes Feld ein passendes Gesicht."
+          "text": "Male oben rot, in der Mitte gelb, unten grün. Male in jedes Feld ein passendes Gesicht."
         },
         {
           "kind": "box",
           "text": "Meine Ampel",
-          "lines": 4
+          "lines": 6
         },
         {
           "kind": "heading",
           "text": "Meine grüne Tat"
         },
         {
+          "kind": "instruction",
+          "text": "Eine grüne Tat lädt jemanden ein. Schreibe oder male deine Tat für diese Woche."
+        },
+        {
           "kind": "lines",
           "text": "Diese Woche lade ich jemanden zum Mitspielen ein:",
           "lines": 2
+        },
+        {
+          "kind": "scale",
+          "text": "Wie gut kann ich schon jemanden zum Mitspielen einladen?",
+          "items": [
+            "traue ich mich noch nicht",
+            "ein bisschen",
+            "ziemlich gut",
+            "ganz leicht"
+          ]
         }
       ]
     },
@@ -49897,7 +52464,17 @@ export const generated: Material[] = [
         },
         {
           "kind": "instruction",
-          "text": "Verbinde jede Regel mit einem Beispiel, bei dem sie gut passt: Gleichheit - Bedarf - Leistung - Los."
+          "text": "Schreibe zu jeder Regel ein Beispiel, bei dem sie gut passt."
+        },
+        {
+          "kind": "table",
+          "text": "Was bedeutet die Regel - und wann passt sie gut?",
+          "lines": 4,
+          "items": [
+            "Regel",
+            "Das bedeutet sie",
+            "Gut zum Beispiel bei ..."
+          ]
         },
         {
           "kind": "heading",
@@ -49910,7 +52487,8 @@ export const generated: Material[] = [
         },
         {
           "kind": "table",
-          "text": "Daumen hoch / Daumen runter für meine Regel",
+          "text": "Daumen hoch oder Daumen runter für meine Regel",
+          "lines": 3,
           "items": [
             "Wann ist sie gerecht?",
             "Wann ist sie ungerecht?"
@@ -49918,15 +52496,15 @@ export const generated: Material[] = [
         },
         {
           "kind": "heading",
-          "text": "Meine Abstimmungen"
+          "text": "Meine Abstimmungen in den Runden"
         },
         {
           "kind": "instruction",
-          "text": "Wie gerecht hat sich jede Runde angefühlt? Male Daumen hoch, zur Seite oder runter."
+          "text": "Wie gerecht hat sich jede Verteilungs-Runde angefühlt? Markiere zwischen unfair und fair."
         },
         {
           "kind": "scale",
-          "text": "Aufgabe 1 - Verteilung der Ämter",
+          "text": "Runde 1 - Verteilung der Ämter",
           "items": [
             "unfair",
             "geht so",
@@ -49935,7 +52513,7 @@ export const generated: Material[] = [
         },
         {
           "kind": "scale",
-          "text": "Aufgabe 2 - Verteilung der Sticker",
+          "text": "Runde 2 - Verteilung der Sticker",
           "items": [
             "unfair",
             "geht so",
@@ -49944,7 +52522,7 @@ export const generated: Material[] = [
         },
         {
           "kind": "scale",
-          "text": "Aufgabe 3 - Verteilung der Material-Zeit",
+          "text": "Runde 3 - Verteilung der Material-Zeit",
           "items": [
             "unfair",
             "geht so",
@@ -49956,8 +52534,8 @@ export const generated: Material[] = [
           "text": "Meine Faustregel"
         },
         {
-          "kind": "box",
-          "text": "Diese Regel ist gerecht, WENN ...",
+          "kind": "question",
+          "text": "Welche Regel war bei welcher Aufgabe am gerechtesten? Schreibe deine Faustregel: 'Diese Regel ist gerecht, WENN ...'",
           "lines": 3
         },
         {
@@ -49965,9 +52543,19 @@ export const generated: Material[] = [
           "text": "Meine Meinung hat sich geändert"
         },
         {
-          "kind": "lines",
-          "text": "Vorher dachte ich ... / Jetzt denke ich ...",
+          "kind": "question",
+          "text": "Vorher dachte ich ... - Jetzt denke ich ... Was hat dich überzeugt?",
           "lines": 3
+        },
+        {
+          "kind": "scale",
+          "text": "Wie sicher kannst du jetzt eine gerechte Regel wählen?",
+          "items": [
+            "noch unsicher",
+            "geht so",
+            "ziemlich sicher",
+            "ganz sicher"
+          ]
         }
       ]
     },
@@ -50362,7 +52950,7 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Faktencheck: Echt oder erfunden?",
-      "intro": "Bevor du eine Meldung glaubst oder teilst, prüfe sie. Gehe die vier Schritte durch und entscheide am Ende selbst.",
+      "intro": "Bevor du eine Meldung glaubst oder weiterleitest, prüfe sie. Gehe die vier Schritte durch, notiere, was dir auffällt, und faelle am Ende dein eigenes Urteil.",
       "blocks": [
         {
           "kind": "heading",
@@ -50370,12 +52958,12 @@ export const generated: Material[] = [
         },
         {
           "kind": "instruction",
-          "text": "Schreibe kurz auf, worum es in deiner Meldung geht."
+          "text": "Schreibe kurz auf, was deine Meldung behauptet."
         },
         {
           "kind": "box",
-          "text": "Die Meldung behauptet:",
-          "lines": 2
+          "text": "Die Meldung sagt:",
+          "lines": 3
         },
         {
           "kind": "heading",
@@ -50383,8 +52971,8 @@ export const generated: Material[] = [
         },
         {
           "kind": "question",
-          "text": "Wer hat das veröffentlicht? Kennst du die Seite? Wirkt sie seriös?",
-          "lines": 2
+          "text": "Wer hat das veroeffentlicht? Kennst du die Seite, und wirkt sie seriös? Woran machst du das fest?",
+          "lines": 3
         },
         {
           "kind": "heading",
@@ -50392,8 +52980,8 @@ export const generated: Material[] = [
         },
         {
           "kind": "question",
-          "text": "Von wann ist die Meldung? Ist sie aktuell oder vielleicht alt?",
-          "lines": 1
+          "text": "Von wann ist die Meldung? Ist sie aktuell, oder koennte es ein altes Bild in neuem Zusammenhang sein?",
+          "lines": 2
         },
         {
           "kind": "heading",
@@ -50401,24 +52989,35 @@ export const generated: Material[] = [
         },
         {
           "kind": "question",
-          "text": "Gibt es Beweise oder andere seriöse Quellen, die dasselbe berichten?",
-          "lines": 2
+          "text": "Gibt es Beweise, Links oder andere seriöse Quellen, die genau dasselbe berichten? Was findest du?",
+          "lines": 3
         },
         {
           "kind": "heading",
-          "text": "Schritt 4 - Gefühls-Alarm"
+          "text": "Schritt 4 - Gefuehls-Alarm"
         },
         {
           "kind": "instruction",
-          "text": "Will dich die Meldung vor allem wütend oder ängstlich machen? Kreuze an."
+          "text": "Will dich die Meldung vor allem aufwuehlen? Kreuze an, was zutrifft."
         },
         {
           "kind": "checklist",
           "items": [
-            "macht mich wütend",
+            "macht mich wuetend",
             "macht mir Angst",
-            "klingt zu unglaublich",
-            "drängt zum sofortigen Teilen"
+            "klingt zu unglaublich, um wahr zu sein",
+            "draengt zum sofortigen Teilen"
+          ]
+        },
+        {
+          "kind": "scale",
+          "text": "Wie stark zielt die Meldung auf deine Gefuehle?",
+          "items": [
+            "gar nicht",
+            "ein bisschen",
+            "mittel",
+            "stark",
+            "sehr stark"
           ]
         },
         {
@@ -50427,7 +53026,7 @@ export const generated: Material[] = [
         },
         {
           "kind": "scale",
-          "text": "Wie schätzt du die Meldung ein?",
+          "text": "Wie schaetzt du die Meldung jetzt ein?",
           "items": [
             "sicher echt",
             "eher echt",
@@ -50438,7 +53037,16 @@ export const generated: Material[] = [
         },
         {
           "kind": "question",
-          "text": "An welchem Schritt hast du es gemerkt? Teilst du die Meldung weiter?",
+          "text": "An welchem Schritt hast du es gemerkt? Begruende dein Urteil in einem Satz.",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "Erst checken, dann teilen"
+        },
+        {
+          "kind": "question",
+          "text": "Was nimmst du dir vor, bevor du das naechste Mal eine Meldung weiterleitest?",
           "lines": 2
         }
       ]
@@ -50529,7 +53137,7 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Mein Stimmungs-Logbuch",
-      "intro": "Bildschirminhalte verändern deine Stimmung - manchmal ohne dass du es merkst. Beobachte dich selbst: Was hebt deine Laune, was zieht sie runter?",
+      "intro": "Bildschirminhalte veraendern deine Stimmung - manchmal, ohne dass du es merkst. Beobachte dich wie ein Forscher: Was hebt deine Laune, was zieht sie heimlich runter? Und was nimmst du dir vor?",
       "blocks": [
         {
           "kind": "heading",
@@ -50537,7 +53145,7 @@ export const generated: Material[] = [
         },
         {
           "kind": "instruction",
-          "text": "Trage für jede Tätigkeit ein, wie deine Stimmung vorher war und wie nachher (1 = runtergezogen, 5 = richtig gut)."
+          "text": "Trage fuer jede Online-Taetigkeit ein, wie deine Stimmung vorher und nachher war (1 = runtergezogen, 5 = richtig gut)."
         },
         {
           "kind": "table",
@@ -50553,23 +53161,26 @@ export const generated: Material[] = [
           "text": "Meine Stimmungs-Heber"
         },
         {
-          "kind": "instruction",
-          "text": "Welche Inhalte oder Apps heben deine Laune? Warum wohl?"
-        },
-        {
-          "kind": "lines",
-          "lines": 2
+          "kind": "question",
+          "text": "Welche Inhalte oder Apps heben deine Laune? Warum tun sie dir wohl gut?",
+          "lines": 3
         },
         {
           "kind": "heading",
           "text": "Meine Stimmungs-Sauger"
         },
         {
-          "kind": "instruction",
-          "text": "Was zieht dich heimlich runter? Woran könnte das liegen?"
+          "kind": "question",
+          "text": "Was zieht dich heimlich runter? Woran koennte das liegen?",
+          "lines": 3
         },
         {
-          "kind": "lines",
+          "kind": "heading",
+          "text": "Mein groesster Unterschied"
+        },
+        {
+          "kind": "question",
+          "text": "Bei welcher Taetigkeit war der Sprung zwischen vorher und nachher am groessten? Was sagt dir das?",
           "lines": 2
         },
         {
@@ -50578,19 +53189,19 @@ export const generated: Material[] = [
         },
         {
           "kind": "instruction",
-          "text": "Wähle EINE kleine Regel, die dein Bildschirm-Gefühl verbessern könnte."
+          "text": "Waehle EINE kleine Regel, die dein Bildschirm-Gefuehl verbessern koennte."
         },
         {
           "kind": "box",
           "text": "Ab jetzt probiere ich:",
-          "lines": 2
+          "lines": 3
         },
         {
           "kind": "scale",
-          "text": "Wie gut fühlst du dich meistens nach dem Bildschirm?",
+          "text": "Wie gut fuehlst du dich meistens nach dem Bildschirm?",
           "items": [
             "runtergezogen",
-            "eher müde",
+            "eher muede",
             "geht so",
             "ganz gut",
             "richtig gut"
@@ -50685,7 +53296,7 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Chat-Werkstatt und meine Notbremse",
-      "intro": "Im Chat fehlen Stimme und Gesicht - da entstehen leicht Missverständnisse. Hier baust du heikle Nachrichten um und planst deine eigene Notbremse.",
+      "intro": "Im Chat fehlen Stimme und Gesicht - da entstehen leicht Missverstaendnisse. Hier baust du heikle Nachrichten in klare, freundliche um und planst deine eigene Notbremse fuer hitzige Momente.",
       "blocks": [
         {
           "kind": "heading",
@@ -50700,7 +53311,7 @@ export const generated: Material[] = [
           "lines": 4,
           "items": [
             "Original (riskant)",
-            "Meine entschärfte Fassung"
+            "Meine entschaerfte Fassung"
           ]
         },
         {
@@ -50715,11 +53326,20 @@ export const generated: Material[] = [
           "kind": "checklist",
           "items": [
             "Ich-Botschaft statt Vorwurf",
-            "einen Satz mehr erklären",
+            "einen Satz mehr erklaeren",
             "nachfragen statt unterstellen",
             "passendes Emoji nutzen",
-            "Heikles lieber persönlich klären"
+            "Heikles lieber persoenlich klaeren"
           ]
+        },
+        {
+          "kind": "heading",
+          "text": "Warum geht das so leicht schief?"
+        },
+        {
+          "kind": "question",
+          "text": "Was fehlt im Chat im Vergleich zu einem echten Gespraech? Warum versteht man Nachrichten oft falsch?",
+          "lines": 3
         },
         {
           "kind": "heading",
@@ -50727,7 +53347,7 @@ export const generated: Material[] = [
         },
         {
           "kind": "instruction",
-          "text": "Was tust du, wenn ein Chat gerade heiß zu laufen droht?"
+          "text": "Was tust du, wenn ein Chat gerade heiss zu laufen droht?"
         },
         {
           "kind": "box",
@@ -50739,12 +53359,20 @@ export const generated: Material[] = [
           "text": "Mein Nachfrage-Satz"
         },
         {
-          "kind": "instruction",
-          "text": "Mit welchem Satz fragst du nach, wie etwas gemeint war?"
+          "kind": "question",
+          "text": "Mit welchem Satz fragst du freundlich nach, wie etwas gemeint war?",
+          "lines": 2
         },
         {
-          "kind": "lines",
-          "lines": 1
+          "kind": "scale",
+          "text": "Wie sicher fuehlst du dich, einen heiklen Chat zu entschaerfen?",
+          "items": [
+            "gar nicht sicher",
+            "etwas",
+            "mittel",
+            "ziemlich",
+            "sehr sicher"
+          ]
         }
       ]
     },
@@ -50982,15 +53610,15 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Mein Lach-Labor-Protokoll",
-      "intro": "Forscher:innen halten ihre Beobachtungen fest. Heute beobachtest du, was gemeinsames Lachen mit dir und mit der Gruppe macht - und wo die Grenze zum Auslachen verläuft.",
+      "intro": "Forscher:innen halten ihre Beobachtungen fest. Heute beobachtest du, was gemeinsames Lachen mit dir und mit der Gruppe macht - und wo die Grenze zwischen Mitlachen und Auslachen verlaeuft.",
       "blocks": [
         {
           "kind": "instruction",
-          "text": "Fülle die Felder direkt nach den Experimenten aus - es gibt kein richtig oder falsch, nur deine ehrliche Beobachtung."
+          "text": "Fuelle die Felder direkt nach den Experimenten aus. Es gibt kein richtig oder falsch - nur deine ehrliche Beobachtung."
         },
         {
           "kind": "heading",
-          "text": "Mein Körper vorher und nachher"
+          "text": "Mein Koerper vorher und nachher"
         },
         {
           "kind": "scale",
@@ -51003,7 +53631,7 @@ export const generated: Material[] = [
         },
         {
           "kind": "scale",
-          "text": "Wie angespannt fühlst du dich NACH den Experimenten?",
+          "text": "Wie angespannt fuehlst du dich NACH den Experimenten?",
           "items": [
             "ganz locker",
             "mittel",
@@ -51011,16 +53639,18 @@ export const generated: Material[] = [
           ]
         },
         {
+          "kind": "question",
+          "text": "Was hat sich in deinem Koerper veraendert? Beschreibe, was du gespuert hast.",
+          "lines": 3
+        },
+        {
           "kind": "heading",
           "text": "Die Gruppe"
         },
         {
           "kind": "question",
-          "text": "Schaust du eine Person im Raum jetzt anders an als am Anfang? Wen und wie?"
-        },
-        {
-          "kind": "lines",
-          "lines": 2
+          "text": "Schaust du eine Person im Raum jetzt anders an als am Anfang? Wen, und wie?",
+          "lines": 3
         },
         {
           "kind": "heading",
@@ -51028,11 +53658,8 @@ export const generated: Material[] = [
         },
         {
           "kind": "question",
-          "text": "Woran erkennst du, ob über jemanden gelacht wird, statt mit ihm? Nenne ein Merkmal."
-        },
-        {
-          "kind": "lines",
-          "lines": 2
+          "text": "Woran erkennst du, ob ueber jemanden gelacht wird statt mit ihm? Nenne zwei Merkmale.",
+          "lines": 3
         },
         {
           "kind": "heading",
@@ -51041,6 +53668,15 @@ export const generated: Material[] = [
         {
           "kind": "box",
           "text": "Schreibe den Satz aus dem Lach-Vertrag auf, der dir am wichtigsten ist:",
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "Mein Vorsatz"
+        },
+        {
+          "kind": "question",
+          "text": "Was willst du in dieser Gruppe tun, damit Humor niemanden verletzt?",
           "lines": 2
         }
       ]
@@ -51126,7 +53762,7 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Mein Ja-und-Logbuch",
-      "intro": "'Ja, und...' heißt: Ich nehme die Idee des anderen an und baue etwas darauf. Mit diesem Logbuch hältst du fest, was du in der Impro-Arena bemerkt hast - und wo dir das Prinzip im echten Leben hilft.",
+      "intro": "'Ja, und...' heisst: Ich nehme die Idee des anderen an und baue etwas darauf. Mit diesem Logbuch haeltst du fest, was du in der Impro-Arena bemerkt hast - und wo dir das Prinzip im echten Leben hilft.",
       "blocks": [
         {
           "kind": "heading",
@@ -51134,11 +53770,8 @@ export const generated: Material[] = [
         },
         {
           "kind": "question",
-          "text": "Wie hat sich 'Nein, aber' angefühlt - und wie 'Ja, und'? Beschreibe den Unterschied in eigenen Worten."
-        },
-        {
-          "kind": "lines",
-          "lines": 3
+          "text": "Wie hat sich 'Nein, aber' angefuehlt - und wie 'Ja, und'? Beschreibe den Unterschied in eigenen Worten.",
+          "lines": 4
         },
         {
           "kind": "heading",
@@ -51146,8 +53779,25 @@ export const generated: Material[] = [
         },
         {
           "kind": "box",
-          "text": "In welcher Szene wurde deine Idee (oder die eines anderen) besonders schön angenommen? Was ist passiert?",
+          "text": "In welcher Szene wurde deine Idee (oder die eines anderen) besonders schoen angenommen? Was ist passiert?",
           "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "Was 'Ja, und' braucht"
+        },
+        {
+          "kind": "instruction",
+          "text": "Was hilft, damit 'Ja, und' wirklich gelingt? Kreuze an."
+        },
+        {
+          "kind": "checklist",
+          "items": [
+            "gut zuhoeren, was der andere sagt",
+            "die Idee erst annehmen, nicht sofort blocken",
+            "etwas Eigenes hinzufuegen",
+            "den Mut haben, nicht perfekt zu sein"
+          ]
         },
         {
           "kind": "heading",
@@ -51155,11 +53805,8 @@ export const generated: Material[] = [
         },
         {
           "kind": "question",
-          "text": "In welcher Situation der nächsten Tage willst du bewusst 'Ja, und' statt 'Nein, aber' ausprobieren?"
-        },
-        {
-          "kind": "lines",
-          "lines": 2
+          "text": "In welcher Situation der naechsten Tage willst du bewusst 'Ja, und' statt 'Nein, aber' ausprobieren?",
+          "lines": 3
         },
         {
           "kind": "heading",
@@ -51168,9 +53815,20 @@ export const generated: Material[] = [
         {
           "kind": "checklist",
           "items": [
-            "'Ja, und' heißt nicht, zu allem Ja zu sagen.",
-            "Es heißt: die Idee erst annehmen und weiterdenken.",
+            "'Ja, und' heisst nicht, zu allem Ja zu sagen.",
+            "Es heisst: die Idee erst annehmen und weiterdenken.",
             "Am Ende darf ich trotzdem anderer Meinung sein."
+          ]
+        },
+        {
+          "kind": "scale",
+          "text": "Wie leicht faellt es dir, Ideen anderer erst einmal anzunehmen?",
+          "items": [
+            "sehr schwer",
+            "schwer",
+            "geht so",
+            "leicht",
+            "sehr leicht"
           ]
         }
       ]
@@ -51255,65 +53913,98 @@ export const generated: Material[] = [
       "KOG-47"
     ],
     "worksheet": {
-      "title": "Unser Spielblatt: Ein Spiel ohne Verlierer",
-      "intro": "Erfindet ein Spiel, bei dem die ganze Gruppe nur gemeinsam gewinnt. Nutzt die Felder als Bauplan, testet eure erste Version und verbessert sie danach.",
+      "title": "Unser Spiel ohne Verlierer - Bauplan und Erfinder-Tagebuch",
+      "intro": "Ihr werdet zu Spiel-Erfinder:innen! Baut mit diesem Blatt ein Spiel, bei dem die ganze Gruppe nur GEMEINSAM gewinnt. Erst der Bauplan, dann der Test, dann macht ihr es besser.",
       "blocks": [
         {
           "kind": "heading",
-          "text": "Name unseres Spiels"
+          "text": "1. Unser Spiel bekommt einen Namen"
         },
         {
           "kind": "lines",
+          "text": "Wie heisst euer kooperatives Spiel?",
           "lines": 1
         },
         {
           "kind": "heading",
-          "text": "Der Bauplan"
+          "text": "2. Der Bauplan"
         },
         {
           "kind": "table",
-          "text": "Füllt jede Zeile aus:",
+          "text": "Fuellt jede Zeile gemeinsam aus - ein gutes kooperatives Spiel braucht alle vier Teile.",
+          "lines": 5,
           "items": [
-            "Gemeinsames Ziel (was schaffen wir nur zusammen?)",
-            "Hürde / Gegenspielerin (gegen wen/was spielen wir?)",
-            "Rolle für jede Person (niemand schaut nur zu)",
-            "Gewonnen, wenn ...",
-            "Verloren, wenn ..."
+            "Bauteil",
+            "Das haben wir uns ausgedacht"
           ]
         },
         {
-          "kind": "heading",
-          "text": "Unsere Regeln"
+          "kind": "instruction",
+          "text": "Zeilen von oben nach unten: Gemeinsames Ziel - Huerde/Gegenspielerin - Rolle fuer JEDE Person - Gewonnen, wenn... - Verloren, wenn..."
         },
         {
-          "kind": "lines",
-          "text": "Schreibt die Regeln so kurz und klar wie möglich auf:",
+          "kind": "heading",
+          "text": "3. Unsere Regeln"
+        },
+        {
+          "kind": "question",
+          "text": "Schreibt eure Regeln so kurz und klar auf, dass man sie in 30 Sekunden versteht.",
           "lines": 4
         },
         {
           "kind": "heading",
-          "text": "Nach dem ersten Test"
+          "text": "4. Nach dem ersten Test"
         },
         {
           "kind": "question",
-          "text": "Was hat beim Antesten nicht funktioniert - und wie habt ihr es verbessert?"
+          "text": "Was hat beim Antesten noch nicht gut funktioniert?",
+          "lines": 3
         },
         {
-          "kind": "lines",
+          "kind": "question",
+          "text": "Wie habt ihr euer Spiel danach verbessert?",
           "lines": 3
         },
         {
           "kind": "heading",
-          "text": "Spiel-Check"
+          "text": "5. Spiel-Check vor der Spiele-Messe"
         },
         {
           "kind": "checklist",
           "items": [
-            "Wir können wirklich nur GEMEINSAM gewinnen.",
-            "Jede Person hat eine Aufgabe.",
+            "Wir koennen wirklich nur GEMEINSAM gewinnen - niemand spielt gegen das eigene Team.",
+            "Jede Person hat eine Aufgabe oder Rolle.",
             "Die Regeln versteht man in 30 Sekunden.",
-            "Es ist klar, wann das Spiel zu Ende ist."
+            "Es ist klar, wann das Spiel zu Ende ist.",
+            "Das Spiel macht Spass, auch ohne dass jemand verliert."
           ]
+        },
+        {
+          "kind": "heading",
+          "text": "6. Meine Erfahrung"
+        },
+        {
+          "kind": "scale",
+          "text": "Wie hat es sich angefuehlt, zu spielen, ohne dass jemand verlieren musste?",
+          "items": [
+            "langweiliger als Wettkampf",
+            "anders, aber okay",
+            "schoener als Wettkampf"
+          ]
+        },
+        {
+          "kind": "question",
+          "text": "Wo war beim Erfinden Teamarbeit noetig? Wer hatte eine Idee, wer hat zugehoert, wie habt ihr euch geeinigt?",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "7. Mein Vorsatz"
+        },
+        {
+          "kind": "question",
+          "text": "Wann koenntest du ausserhalb dieser Stunde mal ein Spiel waehlen, bei dem alle zusammen gewinnen?",
+          "lines": 2
         }
       ]
     },
@@ -51398,24 +54089,29 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Mein Energizer-Anleiter-Heft",
-      "intro": "Ein guter Energizer ist schnell erklärt und macht Schwung. Mit diesem Heft bereitest du dein Spiel zum Anleiten vor und sammelst die besten Energizer für deinen eigenen Werkzeugkasten.",
+      "intro": "Ein guter Energizer ist schnell erklaert und bringt Schwung. Mit diesem Heft bereitest du dein Spiel zum Anleiten vor, sammelst die besten Energizer und planst, wann euer Werkzeugkasten kuenftig hilft.",
       "blocks": [
         {
           "kind": "heading",
-          "text": "Mein Energiestand heute"
+          "text": "1. Mein Energiestand jetzt"
         },
         {
           "kind": "scale",
-          "text": "Wie wach fühlst du dich JETZT am Stundenanfang?",
+          "text": "Wie wach fuehlst du dich JETZT, am Anfang der Stunde?",
           "items": [
-            "sehr müde",
+            "sehr muede",
             "geht so",
             "hellwach"
           ]
         },
         {
+          "kind": "question",
+          "text": "Wann faellt deine Energie im Alltag regelmaessig in ein Tief? (z. B. Tageszeit, Fach, Situation)",
+          "lines": 2
+        },
+        {
           "kind": "heading",
-          "text": "Mein Energizer zum Anleiten"
+          "text": "2. Mein Energizer zum Anleiten"
         },
         {
           "kind": "lines",
@@ -51423,13 +54119,19 @@ export const generated: Material[] = [
           "lines": 1
         },
         {
+          "kind": "question",
+          "text": "Wie erklaerst du die Regel in EINEM kurzen Satz? Schreib deinen Satz hier auf und ueb ihn.",
+          "lines": 2
+        },
+        {
           "kind": "heading",
-          "text": "Meine Anleiter-Checkliste"
+          "text": "3. Meine Anleiter-Checkliste"
         },
         {
           "kind": "checklist",
           "items": [
-            "Ich erkläre die Regel in einem Satz.",
+            "Ich sage laut und deutlich an.",
+            "Ich erklaere die Regel in einem Satz.",
             "Ich mache es einmal vor.",
             "Ich gebe ein klares Startsignal.",
             "Ich beende freundlich und rechtzeitig."
@@ -51437,28 +54139,43 @@ export const generated: Material[] = [
         },
         {
           "kind": "heading",
-          "text": "Mein Werkzeugkasten"
+          "text": "4. Mein Werkzeugkasten"
         },
         {
-          "kind": "instruction",
-          "text": "Notiere die zwei Energizer, die dir heute am besten gefallen haben - mit einem Stichwort, wie sie gehen."
-        },
-        {
-          "kind": "lines",
-          "lines": 4
+          "kind": "table",
+          "text": "Notiere die zwei Energizer, die dir heute am besten gefallen haben - mit einem Stichwort, wie sie gehen.",
+          "lines": 2,
+          "items": [
+            "Name des Energizers",
+            "Stichwort: wie es geht"
+          ]
         },
         {
           "kind": "heading",
-          "text": "Wirkung"
+          "text": "5. Wann nutzen wir den Kasten?"
+        },
+        {
+          "kind": "question",
+          "text": "In welcher Situation tut der Klasse ein Energizer besonders gut? (z. B. nach langer Stillarbeit, vor einer Pruefung)",
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "6. Wirkung"
         },
         {
           "kind": "scale",
-          "text": "Wie wach fühlst du dich am ENDE der Stunde?",
+          "text": "Wie wach fuehlst du dich am ENDE der Stunde?",
           "items": [
-            "sehr müde",
+            "sehr muede",
             "geht so",
             "hellwach"
           ]
+        },
+        {
+          "kind": "question",
+          "text": "Was war fuer dich am schwersten oder am schoensten beim Anleiten vor der Gruppe?",
+          "lines": 2
         }
       ]
     },
@@ -51547,8 +54264,8 @@ export const generated: Material[] = [
       "KOG-37"
     ],
     "worksheet": {
-      "title": "Mein Körper funkt mir was",
-      "intro": "Dein Körper schickt dir Zeichen von innen. Male und kreuze an, welche Signale du schon gut spürst.",
+      "title": "Mein Koerper funkt mir was",
+      "intro": "Dein Koerper schickt dir Zeichen von innen. Male und kreuze an, welche Signale du schon gut spuerst.",
       "blocks": [
         {
           "kind": "heading",
@@ -51560,18 +54277,23 @@ export const generated: Material[] = [
         },
         {
           "kind": "box",
-          "lines": 3
+          "text": "Hier malen:",
+          "lines": 5
         },
         {
           "kind": "heading",
-          "text": "Diese Signale spüre ich schon"
+          "text": "Diese Signale spuere ich schon"
+        },
+        {
+          "kind": "instruction",
+          "text": "Kreuze an, was dein Koerper dir manchmal funkt."
         },
         {
           "kind": "checklist",
           "items": [
             "Hunger - knurrender Bauch",
             "Durst - trockener Mund",
-            "müde Augen",
+            "muede Augen",
             "Pipi-Druck",
             "Zappel-Energie in den Beinen",
             "schnelles Herz nach dem Toben"
@@ -51579,15 +54301,29 @@ export const generated: Material[] = [
         },
         {
           "kind": "heading",
-          "text": "Mein Merksatz"
+          "text": "Wie laut funkt dein Bauch JETZT?"
+        },
+        {
+          "kind": "scale",
+          "text": "Wie hungrig bist du gerade?",
+          "items": [
+            "gar nicht",
+            "ein bisschen",
+            "sehr"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "Mein Merksatz: Ich spuere - ich sage - ich tue"
         },
         {
           "kind": "instruction",
-          "text": "Sprich nach und male ein Bild dazu: Ich spüre - ich sage - ich tue."
+          "text": "Male ein Bild dazu: Du spuerst ein Signal und tust dann das Richtige."
         },
         {
           "kind": "box",
-          "lines": 3
+          "text": "Hier malen:",
+          "lines": 5
         }
       ]
     },
@@ -51676,24 +54412,39 @@ export const generated: Material[] = [
       "KOG-37"
     ],
     "worksheet": {
-      "title": "Mein Gefühls-Wetter",
-      "intro": "In dir gibt es auch ein Wetter. Male und kreuze an, welches Wetter du kennst und heute hast.",
+      "title": "Mein Gefuehls-Wetter",
+      "intro": "In dir gibt es auch ein Wetter. Male, kreuze an und zeige, welches Wetter du kennst und heute hast.",
       "blocks": [
         {
           "kind": "heading",
           "text": "Mein Wetter heute"
         },
         {
-          "kind": "instruction",
-          "text": "Male das Wetter, das gerade in dir ist."
-        },
-        {
-          "kind": "box",
-          "lines": 3
+          "kind": "scale",
+          "text": "Welches Wetter ist gerade in dir? Kreuze an.",
+          "items": [
+            "Sonne",
+            "Wolke",
+            "Regen",
+            "Gewitter"
+          ]
         },
         {
           "kind": "heading",
-          "text": "Diese Gefühls-Wetter kenne ich"
+          "text": "So sieht mein Wetter aus"
+        },
+        {
+          "kind": "instruction",
+          "text": "Male das Wetter, das gerade in dir ist - mit einem Gesicht dazu."
+        },
+        {
+          "kind": "box",
+          "text": "Hier malen:",
+          "lines": 5
+        },
+        {
+          "kind": "heading",
+          "text": "Diese Gefuehls-Wetter kenne ich"
         },
         {
           "kind": "checklist",
@@ -51711,11 +54462,20 @@ export const generated: Material[] = [
         },
         {
           "kind": "instruction",
-          "text": "Male oder zeige, was dir bei Gewitter oder Regen guttut."
+          "text": "Male oder zeige, was dir bei Wut-Gewitter oder Traurig-Regen guttut."
         },
         {
           "kind": "box",
-          "lines": 3
+          "text": "Hier malen:",
+          "lines": 5
+        },
+        {
+          "kind": "heading",
+          "text": "Wetter-Regel"
+        },
+        {
+          "kind": "instruction",
+          "text": "Sprich nach: Jedes Wetter darf da sein - und jedes Wetter zieht wieder vorbei."
         }
       ]
     },
@@ -51805,7 +54565,7 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Mein Ich-Koffer",
-      "intro": "In diesen Koffer kommt, was zu DIR gehört. Male deine Schätze hinein.",
+      "intro": "In diesen Koffer kommt, was zu DIR gehoert. Male deine Schaetze hinein - jeder Koffer ist anders!",
       "blocks": [
         {
           "kind": "heading",
@@ -51817,7 +54577,8 @@ export const generated: Material[] = [
         },
         {
           "kind": "box",
-          "lines": 3
+          "text": "Hier malen:",
+          "lines": 5
         },
         {
           "kind": "heading",
@@ -51829,29 +54590,65 @@ export const generated: Material[] = [
         },
         {
           "kind": "box",
-          "lines": 3
+          "text": "Hier malen:",
+          "lines": 5
         },
         {
           "kind": "heading",
           "text": "Das kann ich schon"
         },
         {
+          "kind": "instruction",
+          "text": "Kreuze an und male, wenn du magst, noch etwas dazu."
+        },
+        {
           "kind": "checklist",
           "items": [
-            "hüpfen",
+            "huepfen",
             "einen Turm bauen",
             "singen",
-            "jemanden trösten",
+            "jemanden troesten",
             "etwas ganz allein anziehen"
           ]
         },
         {
           "kind": "heading",
-          "text": "Das gehört zu mir, weil..."
+          "text": "Meine liebsten Menschen"
+        },
+        {
+          "kind": "instruction",
+          "text": "Male die Menschen, die du gern hast."
         },
         {
           "kind": "box",
-          "lines": 2
+          "text": "Hier malen:",
+          "lines": 4
+        },
+        {
+          "kind": "heading",
+          "text": "Das macht mich froehlich"
+        },
+        {
+          "kind": "instruction",
+          "text": "Male etwas, das dich richtig froehlich macht."
+        },
+        {
+          "kind": "box",
+          "text": "Hier malen:",
+          "lines": 4
+        },
+        {
+          "kind": "heading",
+          "text": "So stolz bin ich auf mich"
+        },
+        {
+          "kind": "scale",
+          "text": "Wie stolz bist du auf deinen Ich-Koffer?",
+          "items": [
+            "ein bisschen",
+            "mittel",
+            "ganz doll"
+          ]
         }
       ]
     },
@@ -51941,19 +54738,33 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Mein Ruhig-Wild-Regler",
-      "intro": "In dir steckt ein Motor. Male und kreuze an, wie schnell er läuft und was dir beim Einstellen hilft.",
+      "intro": "In dir steckt ein Motor. Manchmal laeuft er ruhig, manchmal mittel, manchmal ganz wild. Kreuze an und male, wie schnell er gerade laeuft und was dir beim Einstellen hilft.",
       "blocks": [
         {
           "kind": "heading",
-          "text": "So läuft mein Motor gerade"
+          "text": "So laeuft mein Motor gerade"
+        },
+        {
+          "kind": "scale",
+          "text": "Wie schnell laeuft dein Motor JETZT? Kreuze an.",
+          "items": [
+            "gruen - ruhig",
+            "gelb - mittel",
+            "rot - wild"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "So fuehlt sich mein Motor an"
         },
         {
           "kind": "instruction",
-          "text": "Male den Zeiger auf grün (ruhig), gelb (mittel) oder rot (wild)."
+          "text": "Male ein Bild: Wie sieht dein Motor gerade aus - ruhig, mittel oder wild?"
         },
         {
           "kind": "box",
-          "lines": 3
+          "text": "Hier malen:",
+          "lines": 5
         },
         {
           "kind": "heading",
@@ -51968,8 +54779,8 @@ export const generated: Material[] = [
           "items": [
             "tief in den Bauch atmen",
             "mich strecken und schlapp machen",
-            "leise zählen",
-            "kurz an einen ruhigen Ort"
+            "leise zaehlen",
+            "kurz an einen ruhigen Ort gehen"
           ]
         },
         {
@@ -51978,16 +54789,29 @@ export const generated: Material[] = [
         },
         {
           "kind": "instruction",
-          "text": "Kreuze an, was dir hilft, wenn dein Motor zu müde ist."
+          "text": "Kreuze an, was dir hilft, wenn dein Motor zu muede ist."
         },
         {
           "kind": "checklist",
           "items": [
-            "aufstehen und schütteln",
-            "ein paar Mal hüpfen",
+            "aufstehen und schuetteln",
+            "ein paar Mal huepfen",
             "mich recken",
             "etwas trinken"
           ]
+        },
+        {
+          "kind": "heading",
+          "text": "Mein Lieblings-Trick"
+        },
+        {
+          "kind": "instruction",
+          "text": "Male deinen liebsten Runter-Trick, der dich gut ruhig macht."
+        },
+        {
+          "kind": "box",
+          "text": "Hier malen:",
+          "lines": 4
         }
       ]
     },
@@ -52073,12 +54897,12 @@ export const generated: Material[] = [
       "KOG-48"
     ],
     "worksheet": {
-      "title": "Treffer-Wörter: Genau gesagt",
-      "intro": "Wackel-Wörter wie 'Ding', 'da' oder 'so' lassen die andere Person raten. Treffer-Wörter sagen genau, was gemeint ist. Übe, genau zu sprechen.",
+      "title": "Treffer-Wörter: Genau gesagt statt 'das Ding da'",
+      "intro": "Wackel-Wörter wie 'Ding', 'da' oder 'so' lassen die andere Person raten - oft rät sie falsch. Treffer-Wörter sagen genau, was gemeint ist. Heute übst du, so zu sprechen, dass niemand mehr raten muss.",
       "blocks": [
         {
           "kind": "heading",
-          "text": "Wackel-Wörter, die ich kenne"
+          "text": "1. Wackel-Wörter erkennen"
         },
         {
           "kind": "instruction",
@@ -52092,48 +54916,78 @@ export const generated: Material[] = [
             "so / einfach so",
             "irgendwie",
             "das andere",
-            "das rote Quadrat oben links"
+            "das blaue Quadrat oben links"
           ]
         },
         {
           "kind": "heading",
-          "text": "Aus Wackel-Wort wird Treffer-Wort"
+          "text": "2. Die drei Treffer-Fragen"
         },
         {
           "kind": "instruction",
-          "text": "Mache aus dem unklaren Satz einen genauen Satz."
-        },
-        {
-          "kind": "table",
-          "items": [
-            "Unklar: Gib mir das Ding da.  ->  Genau: ___",
-            "Unklar: Stell das mal dorthin.  ->  Genau: ___",
-            "Unklar: Mach es so.  ->  Genau: ___"
-          ]
-        },
-        {
-          "kind": "heading",
-          "text": "Die drei Treffer-Fragen"
+          "text": "Diese drei Fragen helfen dir, genau zu sagen, was du meinst. Hake sie ab, wenn du sie kannst."
         },
         {
           "kind": "checklist",
           "items": [
-            "Welche Farbe?",
-            "Wie groß / welche Form?",
-            "Wo genau (links, rechts, neben, zwischen)?"
+            "Welche Farbe hat es?",
+            "Wie groß ist es / welche Form?",
+            "Wo genau (links, rechts, neben, zwischen, oben)?"
           ]
         },
         {
           "kind": "heading",
-          "text": "Mein eigener Treffer-Satz"
+          "text": "3. Aus Wackel-Wort wird Treffer-Wort"
         },
         {
           "kind": "instruction",
-          "text": "Denk an eine Sache in der Klasse und beschreibe sie so genau, dass es nur EINE sein kann."
+          "text": "Schreibe zu jedem unklaren Satz einen genauen Satz, bei dem nur EINE Sache gemeint sein kann."
+        },
+        {
+          "kind": "question",
+          "text": "Wackel: 'Gib mir mal das Ding da.'  ->  Treffer:",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "Wackel: 'Stell das mal dorthin.'  ->  Treffer:",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "Wackel: 'Mach es einfach so.'  ->  Treffer:",
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "4. Mein eigener Treffer-Satz"
+        },
+        {
+          "kind": "instruction",
+          "text": "Denk an eine Sache in der Klasse. Beschreibe sie so genau, dass es nur EINE sein kann - male sie dann dazu."
         },
         {
           "kind": "lines",
           "lines": 3
+        },
+        {
+          "kind": "box",
+          "text": "Male die Sache, die du beschrieben hast.",
+          "lines": 5
+        },
+        {
+          "kind": "heading",
+          "text": "5. Wie genau habe ich gesprochen?"
+        },
+        {
+          "kind": "scale",
+          "text": "Heute habe ich genaue Treffer-Wörter benutzt:",
+          "items": [
+            "gar nicht",
+            "ein bisschen",
+            "ziemlich gut",
+            "sehr gut"
+          ]
         }
       ]
     },
@@ -52358,11 +55212,11 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Erklär-Werkstatt: Bau es nach meinem Wort",
-      "intro": "Etwas so zu erklären, dass jemand es ohne Hinschauen nachbauen kann, braucht Übung. Diese Werkzeuge helfen dir beim Erklären und beim Zuhören.",
+      "intro": "Etwas so zu erklären, dass jemand es ohne Hinschauen nachbauen kann, ist eine echte Sprach-Kunst. Diese Werkzeuge helfen dir beim Erklären UND beim Zuhören.",
       "blocks": [
         {
           "kind": "heading",
-          "text": "Meine Erklär-Werkzeuge"
+          "text": "1. Meine Erklär-Werkzeuge"
         },
         {
           "kind": "instruction",
@@ -52374,44 +55228,61 @@ export const generated: Material[] = [
             "Schritt für Schritt (zuerst, dann, zum Schluss)",
             "genaue Lage-Wörter (auf, neben, links, oben)",
             "nicht zu schnell - auf den anderen warten",
-            "ruhig wiederholen, wenn nötig"
+            "ruhig wiederholen, wenn es nötig ist"
           ]
         },
         {
           "kind": "heading",
-          "text": "Gute Lage-Wörter"
+          "text": "2. Gute Lage-Wörter sammeln"
         },
         {
           "kind": "instruction",
-          "text": "Sammle Wörter, die genau sagen, wohin etwas kommt."
-        },
-        {
-          "kind": "lines",
-          "lines": 2
-        },
-        {
-          "kind": "heading",
-          "text": "Mein Nachfrage-Satz"
-        },
-        {
-          "kind": "instruction",
-          "text": "Wenn ich als Bauender etwas nicht verstehe, frage ich:"
-        },
-        {
-          "kind": "lines",
-          "lines": 2
-        },
-        {
-          "kind": "heading",
-          "text": "Hat es geklappt?"
-        },
-        {
-          "kind": "question",
-          "text": "Wo war der Unterschied zwischen Vorlage und Nachbau - und woran lag es?"
+          "text": "Sammle Wörter, die genau sagen, WOHIN etwas kommt."
         },
         {
           "kind": "lines",
           "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "3. Mein Nachfrage-Satz"
+        },
+        {
+          "kind": "instruction",
+          "text": "Wenn du als Bauende:r etwas nicht verstehst - was fragst du? Schreibe deinen Nachfrage-Satz auf."
+        },
+        {
+          "kind": "question",
+          "text": "Ich frage:",
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "4. Hat es geklappt?"
+        },
+        {
+          "kind": "question",
+          "text": "Wo war der Unterschied zwischen Vorlage und Nachbau - und woran hat es gelegen?",
+          "lines": 3
+        },
+        {
+          "kind": "question",
+          "text": "Was würdest du beim nächsten Mal anders erklären?",
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "5. Wie gut konnte ich erklären?"
+        },
+        {
+          "kind": "scale",
+          "text": "Meine Anleitung war für meinen Partner zu verstehen:",
+          "items": [
+            "gar nicht",
+            "ein bisschen",
+            "ziemlich gut",
+            "sehr gut"
+          ]
         }
       ]
     },
@@ -52498,11 +55369,11 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Ich docke an",
-      "intro": "In einem echten Gespräch knüpfst du an das an, was die andere Person gesagt hat - und bleibst beim Thema. Diese Sätze helfen dir beim Andocken.",
+      "intro": "In einem echten Gespräch knüpfst du an das an, was die andere Person gesagt hat - so wie Waggons an einen Zug. Diese Sätze helfen dir beim Andocken und beim Dranbleiben am Thema.",
       "blocks": [
         {
           "kind": "heading",
-          "text": "Andock-Sätze"
+          "text": "1. Andock-Sätze"
         },
         {
           "kind": "instruction",
@@ -52519,23 +55390,33 @@ export const generated: Material[] = [
         },
         {
           "kind": "heading",
-          "text": "Erst andocken, dann Eigenes"
+          "text": "2. Erst andocken, dann Eigenes"
         },
         {
           "kind": "instruction",
-          "text": "Schreibe einen Satz auf, mit dem du an einen Vorredner anknüpfst."
+          "text": "Stell dir vor, ein Kind sagt: 'Ich spiele am liebsten draußen Fangen.' Schreibe einen Satz, mit dem du daran andockst und dann Eigenes erzählst."
         },
         {
-          "kind": "lines",
+          "kind": "question",
+          "text": "Mein Andock-Satz:",
           "lines": 3
         },
         {
           "kind": "heading",
-          "text": "Beim Thema bleiben"
+          "text": "3. Beim Thema bleiben"
         },
         {
           "kind": "question",
-          "text": "Warum ist es wichtig, nicht plötzlich vom Thema abzuspringen?"
+          "text": "Warum fühlt sich ein Gespräch nicht gut an, wenn jemand plötzlich vom Thema abspringt?",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "4. Mein Lieblings-Andock-Satz"
+        },
+        {
+          "kind": "instruction",
+          "text": "Schreibe den einen Satz auf, den du in Zukunft am meisten benutzen willst."
         },
         {
           "kind": "lines",
@@ -52543,11 +55424,17 @@ export const generated: Material[] = [
         },
         {
           "kind": "heading",
-          "text": "Wie gut docke ich schon an?"
+          "text": "5. Wie gut docke ich schon an?"
         },
         {
           "kind": "scale",
-          "text": "1 = ich rede meist nur über mich, 5 = ich knüpfe gut an andere an"
+          "text": "Im Gespräch knüpfe ich an das an, was andere sagen:",
+          "items": [
+            "fast nie",
+            "manchmal",
+            "oft",
+            "fast immer"
+          ]
         }
       ]
     },
@@ -52779,21 +55666,21 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Mein Brücken-Forscherblatt",
-      "intro": "Heute baust du Brücken zu deinen Mitschülerinnen und Mitschülern. Suche zu jedem Auftrag eine andere Person - jeder Name nur einmal!",
+      "intro": "Oft glaubt man, mit manchen Kindern habe man 'gar nichts gemeinsam'. Heute bist du Brücken-Forscher:in und suchst überraschende Verbindungen. Jede Gemeinsamkeit ist eine Brücke - jeden Namen nur einmal benutzen!",
       "blocks": [
         {
-          "kind": "instruction",
-          "text": "Sprich die Person an, frage nach und trage Namen und eure Gemeinsamkeit ein. Du darfst auch eigene Brücken dazuschreiben."
+          "kind": "heading",
+          "text": "1. Meine Suchaufträge"
         },
         {
-          "kind": "heading",
-          "text": "Meine Suchaufträge"
+          "kind": "instruction",
+          "text": "Sprich verschiedene Kinder an, frage nach und trage Name und eure Gemeinsamkeit ein."
         },
         {
           "kind": "table",
           "text": "Finde jemanden, der/die ...",
           "items": [
-            "... dasselbe Pausenbrot mag wie du - Name + was genau",
+            "... dasselbe Pausenbrot mag - Name + was genau",
             "... Verwandte in einem anderen Land hat - Name + wo",
             "... vor etwas Ähnlichem Angst hat wie du - Name + was",
             "... dasselbe Spiel gern spielt wie du - Name + welches",
@@ -52802,24 +55689,57 @@ export const generated: Material[] = [
         },
         {
           "kind": "heading",
-          "text": "Meine überraschendste Brücke"
+          "text": "2. Meine eigene Brücke"
         },
         {
-          "kind": "box",
-          "text": "Mit wem hättest du nie eine Gemeinsamkeit erwartet? Was habt ihr gefunden?",
+          "kind": "instruction",
+          "text": "Denk dir einen eigenen Such-Auftrag aus und finde dafür ein Kind."
+        },
+        {
+          "kind": "question",
+          "text": "Finde jemanden, der/die ...",
           "lines": 2
         },
         {
           "kind": "heading",
-          "text": "Mein Vorsatz"
+          "text": "3. Meine überraschendste Brücke"
         },
         {
           "kind": "question",
-          "text": "Mit welchem Kind möchtest du in den nächsten Tagen eine neue Brücke bauen?"
+          "text": "Mit wem hättest du nie eine Gemeinsamkeit erwartet? Was habt ihr gemeinsam gefunden?",
+          "lines": 3
         },
         {
-          "kind": "lines",
-          "lines": 1
+          "kind": "heading",
+          "text": "4. Was Brücken mit uns machen"
+        },
+        {
+          "kind": "question",
+          "text": "Wie fühlst du dich gegenüber einem Kind, wenn ihr etwas Gemeinsames entdeckt habt?",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "5. Mein Vorsatz"
+        },
+        {
+          "kind": "question",
+          "text": "Mit welchem Kind möchtest du in den nächsten Tagen eine neue Brücke bauen - und wie?",
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "6. Wie viele Brücken habe ich gebaut?"
+        },
+        {
+          "kind": "scale",
+          "text": "Ich habe heute mit so vielen verschiedenen Kindern gesprochen:",
+          "items": [
+            "wenige",
+            "ein paar",
+            "viele",
+            "sehr viele"
+          ]
         }
       ]
     },
@@ -52905,23 +55825,28 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Mein Freundlichkeits-Heft",
-      "intro": "Freundlichkeit steckt an! Sammle Ideen, übe sie und halte deine geheime Mission fest.",
+      "intro": "Freundlichkeit steckt an - wie umfallende Dominosteine! Hier sammelst du Ideen, hältst deine Komplimente-Kette fest und startest deine geheime Mission.",
       "blocks": [
         {
           "kind": "heading",
-          "text": "Meine Freundlichkeits-Ideen"
+          "text": "So sieht Freundlichkeit aus"
         },
         {
           "kind": "instruction",
-          "text": "Schreibe oder zeichne drei kleine Freundlichkeiten, die du im Schulalltag wirklich tun kannst."
+          "text": "Schreibe oder zeichne kleine Freundlichkeiten, die du im Schulalltag wirklich tun kannst (z. B. helfen, loben, teilen, trösten, mitspielen lassen)."
         },
         {
           "kind": "lines",
-          "lines": 3
+          "lines": 4
         },
         {
           "kind": "heading",
-          "text": "So fühlt es sich an"
+          "text": "Die Komplimente-Kette"
+        },
+        {
+          "kind": "question",
+          "text": "Welches ehrliche Kompliment hast du jemandem in der Kette gegeben?",
+          "lines": 2
         },
         {
           "kind": "scale",
@@ -52947,8 +55872,17 @@ export const generated: Material[] = [
         },
         {
           "kind": "box",
-          "text": "(Geheim!) Welche Freundlichkeit planst du für dein Geheim-Kind - ohne dich zu verraten?",
-          "lines": 2
+          "text": "(Geheim!) Zeichne oder schreibe, welche Freundlichkeit du für dein Geheim-Kind planst - ohne dich zu verraten.",
+          "lines": 4
+        },
+        {
+          "kind": "heading",
+          "text": "So verändert sich unsere Klasse"
+        },
+        {
+          "kind": "question",
+          "text": "Stell dir vor, alle machen mit: Wie fühlt sich unsere Klasse an, wenn viele kleine Freundlichkeiten zusammenkommen?",
+          "lines": 3
         },
         {
           "kind": "heading",
@@ -52956,11 +55890,8 @@ export const generated: Material[] = [
         },
         {
           "kind": "question",
-          "text": "Diese eine Freundlichkeit mache ich morgen ganz bestimmt:"
-        },
-        {
-          "kind": "lines",
-          "lines": 1
+          "text": "Diese eine Freundlichkeit mache ich morgen ganz bestimmt:",
+          "lines": 2
         }
       ]
     },
@@ -53047,22 +55978,24 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Mein Beziehungsnetz-Blatt",
-      "intro": "Unsere Klasse ist ein Netz aus vielen Fäden. Heute knüpfst du selbst neue Fäden mit. Halte fest, was du dabei entdeckst.",
+      "intro": "Unsere Klasse ist ein Netz aus vielen Fäden. Heute knüpfst du selbst neue Fäden mit. Halte fest, was du dabei entdeckst - es geht nicht um beliebt oder unbeliebt, sondern ums Zusammengehören.",
       "blocks": [
-        {
-          "kind": "instruction",
-          "text": "Bearbeite die Felder nach den Übungen. Sei ehrlich und freundlich - es geht nicht um beliebt oder unbeliebt, sondern ums Zusammengehören."
-        },
         {
           "kind": "heading",
           "text": "Meine neuen Fäden"
         },
         {
+          "kind": "instruction",
+          "text": "Trage ein, mit welchen Kindern du heute einen neuen Faden geknüpft hast und was du dabei herausgefunden hast."
+        },
+        {
           "kind": "table",
-          "text": "Mit diesen Kindern habe ich heute einen neuen Faden geknüpft:",
+          "text": "Mein neuer Faden:",
+          "lines": 4,
           "items": [
-            "Name 1 - das habe ich über ihn/sie erfahren",
-            "Name 2 - das haben wir gemeinsam"
+            "Name",
+            "Das habe ich über ihn/sie erfahren",
+            "Das haben wir gemeinsam"
           ]
         },
         {
@@ -53071,10 +56004,16 @@ export const generated: Material[] = [
         },
         {
           "kind": "question",
-          "text": "Was hast du über ein Kind herausgefunden, das du vorher kaum kanntest?"
+          "text": "Was hast du über ein Kind herausgefunden, das du vorher kaum kanntest?",
+          "lines": 3
         },
         {
-          "kind": "lines",
+          "kind": "heading",
+          "text": "Wie war es, zuzugehen?"
+        },
+        {
+          "kind": "question",
+          "text": "Wie hat es sich angefühlt, auf ein Kind zuzugehen, das du noch wenig kanntest?",
           "lines": 2
         },
         {
@@ -53083,13 +56022,23 @@ export const generated: Material[] = [
         },
         {
           "kind": "checklist",
-          "text": "Diese Regeln will ich einhalten:",
+          "text": "Diese Regeln will ich einhalten, damit unser Netz stark bleibt:",
           "items": [
             "Ich lasse niemanden allein in der Pause stehen.",
             "Ich spiele auch mal mit anderen Kindern.",
             "Ich begrüße andere freundlich.",
-            "Ich höre zu, wenn mir jemand etwas erzählt."
+            "Ich höre zu, wenn mir jemand etwas erzählt.",
+            "Ich frage neue oder allein stehende Kinder, ob sie mitmachen."
           ]
+        },
+        {
+          "kind": "heading",
+          "text": "Ein eigener Vorsatz"
+        },
+        {
+          "kind": "question",
+          "text": "Mit diesem Kind möchte ich in den nächsten Tagen meinen Faden noch dicker machen:",
+          "lines": 2
         },
         {
           "kind": "heading",
@@ -53873,11 +56822,11 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Körpersignale-Detektivblatt",
-      "intro": "Der Körper redet mit - auch ohne Worte. Lies die Signale genau, trenne sie von deiner Deutung und prüfe, wie sicher du dir wirklich sein kannst.",
+      "intro": "Der Körper redet mit - schon lange bevor ein Wort fällt. Werde Detektiv:in: Trenne genau, was du wirklich SIEHST, von dem, was du dir dazu DENKST - und prüfe, wie sicher du dir sein kannst.",
       "blocks": [
         {
           "kind": "instruction",
-          "text": "Notiere bei jeder Darstellung erst, was du wirklich SIEHST, und danach, was du dir dazu DENKST. Erst danach wird aufgelöst."
+          "text": "Bei jeder stummen Haltung gilt: Notiere zuerst nur, was du tatsächlich siehst (Haltung, Mimik, Gestik). Erst danach deine Vermutung. Aufgelöst wird ganz zum Schluss."
         },
         {
           "kind": "heading",
@@ -53885,7 +56834,8 @@ export const generated: Material[] = [
         },
         {
           "kind": "table",
-          "text": "Trage zu jeder Haltung Beobachtung und Vermutung ein:",
+          "text": "Trage zu jeder dargestellten Haltung deine reine Beobachtung, deine Vermutung und am Ende ein, ob es gestimmt hat:",
+          "lines": 5,
           "items": [
             "Reine Beobachtung (Haltung, Mimik, Gestik)",
             "Meine Vermutung (welches Gefühl?)",
@@ -53898,11 +56848,13 @@ export const generated: Material[] = [
         },
         {
           "kind": "question",
-          "text": "Bei welchem Satz hast du eher dem Körper geglaubt als den Worten? Warum?"
+          "text": "Beim selben Satz ('Schön, dass du da bist' / 'Kein Problem') klang er dreimal anders. Bei welcher Version hast du eher dem Körper geglaubt als den Worten - und woran lag das genau?",
+          "lines": 3
         },
         {
-          "kind": "lines",
-          "lines": 2
+          "kind": "question",
+          "text": "Was verändert die Körpersprache an der Bedeutung eines Satzes? Erkläre es mit einem Beispiel.",
+          "lines": 3
         },
         {
           "kind": "heading",
@@ -53910,19 +56862,13 @@ export const generated: Material[] = [
         },
         {
           "kind": "question",
-          "text": "An welchem Körpersignal merkst DU selbst, dass es dir nicht gut geht?"
-        },
-        {
-          "kind": "lines",
-          "lines": 1
+          "text": "An welchem Körpersignal merkst DU selbst, dass es dir gerade nicht gut geht?",
+          "lines": 3
         },
         {
           "kind": "question",
-          "text": "Welches Signal von dir wird vielleicht oft falsch verstanden?"
-        },
-        {
-          "kind": "lines",
-          "lines": 1
+          "text": "Welches Signal von dir wird vielleicht oft falsch verstanden - und wofür wird es manchmal gehalten?",
+          "lines": 3
         },
         {
           "kind": "heading",
@@ -53930,7 +56876,7 @@ export const generated: Material[] = [
         },
         {
           "kind": "scale",
-          "text": "Wie sicher kann man aus der Körpersprache wirklich auf das Innere schließen?",
+          "text": "Wie sicher kann man aus der Körpersprache wirklich auf das Innere eines Menschen schließen?",
           "items": [
             "gar nicht sicher",
             "ein bisschen",
@@ -53939,13 +56885,18 @@ export const generated: Material[] = [
           ]
         },
         {
+          "kind": "question",
+          "text": "Dieselbe verschränkte Haltung kann Ablehnung bedeuten - oder dass jemandem nur kalt ist. Was kannst du tun, statt vorschnell zu urteilen?",
+          "lines": 3
+        },
+        {
           "kind": "heading",
           "text": "Mein Vorsatz"
         },
         {
           "kind": "box",
-          "text": "Bei dieser Person achte ich in den nächsten Tagen bewusst auf die Körpersignale - und frage im Zweifel nach:",
-          "lines": 2
+          "text": "Bei dieser Person achte ich in den nächsten Tagen bewusst auf die Körpersignale - und frage im Zweifel freundlich nach:",
+          "lines": 3
         }
       ]
     },
@@ -54030,11 +56981,20 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Der Ursachen-Check",
-      "intro": "Lag es am Charakter - oder an der Lage? Bei anderen greifen wir schnell zur Charakter-Erklärung. Übe, auch die Situations-Brille aufzusetzen.",
+      "intro": "Lag es am Charakter - oder an der Lage? Bei anderen greifen wir blitzschnell zur Charakter-Erklärung, bei uns selbst zur Situation. Übe, bewusst auch die Situations-Brille aufzusetzen - das macht deinen Blick fairer.",
       "blocks": [
         {
           "kind": "instruction",
-          "text": "Bearbeitet jeden Situationsfall in den drei Schritten. Sucht bewusst mehrere situative Erklärungen - es gibt nicht DIE eine Lösung."
+          "text": "Nimm einen Situationsfall (z. B. 'Mara antwortet nur knapp und schaut aufs Handy') und arbeite ihn in den Schritten durch. Such bewusst mehrere situative Erklärungen - es gibt nicht DIE eine richtige."
+        },
+        {
+          "kind": "heading",
+          "text": "Der Fall"
+        },
+        {
+          "kind": "lines",
+          "text": "Notiere kurz das Verhalten, um das es geht:",
+          "lines": 2
         },
         {
           "kind": "heading",
@@ -54042,11 +57002,8 @@ export const generated: Material[] = [
         },
         {
           "kind": "question",
-          "text": "Welche Charakter-Erklärung schießt dir zuerst in den Kopf ('Er/Sie ist einfach ...')?"
-        },
-        {
-          "kind": "lines",
-          "lines": 1
+          "text": "Welche Charakter-Erklärung schießt dir zuerst in den Kopf? ('Er/Sie ist einfach ...')",
+          "lines": 2
         },
         {
           "kind": "heading",
@@ -54054,8 +57011,8 @@ export const generated: Material[] = [
         },
         {
           "kind": "lines",
-          "text": "Drei ganz unterschiedliche Erklärungen, die in der SITUATION liegen könnten:",
-          "lines": 3
+          "text": "Drei ganz unterschiedliche Erklärungen, die in der SITUATION liegen könnten (Stress, Zufall, Druck von außen ...):",
+          "lines": 4
         },
         {
           "kind": "heading",
@@ -54063,11 +57020,8 @@ export const generated: Material[] = [
         },
         {
           "kind": "question",
-          "text": "Wie würdest du dich gegenüber der Person verhalten, wenn die situative Erklärung stimmt?"
-        },
-        {
-          "kind": "lines",
-          "lines": 2
+          "text": "Wie würdest du dich gegenüber der Person verhalten, wenn die situative Erklärung stimmt - und nicht der Charakter?",
+          "lines": 3
         },
         {
           "kind": "heading",
@@ -54084,13 +57038,18 @@ export const generated: Material[] = [
           ]
         },
         {
+          "kind": "question",
+          "text": "Warum fällt es uns leichter, bei uns selbst die Situation und bei anderen den Charakter verantwortlich zu machen?",
+          "lines": 3
+        },
+        {
           "kind": "heading",
           "text": "Meine faire Frage"
         },
         {
           "kind": "box",
-          "text": "Diese Frage stelle ich mir künftig, bevor ich über jemanden urteile:",
-          "lines": 2
+          "text": "Diese eine 'faire Frage' stelle ich mir künftig, bevor ich über jemanden urteile:",
+          "lines": 3
         }
       ]
     },
@@ -54179,11 +57138,11 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Mein Rückenwind-Blatt",
-      "intro": "Andere sehen oft Stärken an dir, die du selbst übersiehst. Hier sammeln deine Gruppenmitglieder, was sie an dir schätzen - und du vergleichst es mit deinem eigenen Bild.",
+      "intro": "Andere sehen oft Stärken an dir, die du selbst übersiehst - weil sie dir so selbstverständlich sind. Hier sammelt deine Gruppe, was sie an dir schätzt, und du vergleichst es mit deinem eigenen Bild.",
       "blocks": [
         {
           "kind": "instruction",
-          "text": "Oben steht dein Name. Die anderen schreiben in den großen Bereich, was sie an dir schätzen - ehrlich, freundlich und konkret. Den unteren Teil füllst nur du selbst aus."
+          "text": "Oben steht dein Name. Die anderen schreiben in den großen Bereich, was sie an dir schätzen - ehrlich, freundlich und konkret (also nicht nur 'nett', sondern 'du hörst geduldig zu'). Den unteren Teil füllst nur du selbst aus."
         },
         {
           "kind": "heading",
@@ -54191,7 +57150,7 @@ export const generated: Material[] = [
         },
         {
           "kind": "box",
-          "text": "(Wird von der Gruppe ausgefüllt - bitte ehrlich und konkret, eine Wertschätzung pro Person.)",
+          "text": "(Wird von der Gruppe ausgefüllt - ehrlich und konkret, eine Wertschätzung pro Person, über Stärken und Verhalten.)",
           "lines": 8
         },
         {
@@ -54200,11 +57159,8 @@ export const generated: Material[] = [
         },
         {
           "kind": "question",
-          "text": "Welche Rückmeldung hat dir besonders gutgetan?"
-        },
-        {
-          "kind": "lines",
-          "lines": 1
+          "text": "Welche Rückmeldung hat dir besonders gutgetan - und warum hat sie dich berührt?",
+          "lines": 3
         },
         {
           "kind": "heading",
@@ -54212,11 +57168,8 @@ export const generated: Material[] = [
         },
         {
           "kind": "question",
-          "text": "Welche Stärke haben andere gesehen, die du an dir selbst gar nicht bemerkt hast?"
-        },
-        {
-          "kind": "lines",
-          "lines": 2
+          "text": "Welche Stärke haben andere gesehen, die du an dir selbst gar nicht bemerkt hast (dein 'blinder Fleck')?",
+          "lines": 3
         },
         {
           "kind": "heading",
@@ -54233,13 +57186,18 @@ export const generated: Material[] = [
           ]
         },
         {
+          "kind": "question",
+          "text": "Wo ist dein Selbstbild strenger oder enger als das, was die anderen sehen? Was nimmst du dir daraus mit?",
+          "lines": 3
+        },
+        {
           "kind": "heading",
           "text": "Rückenwind weitergeben"
         },
         {
           "kind": "box",
-          "text": "Dieser Person sage ich in den nächsten Tagen eine ehrliche Wertschätzung:",
-          "lines": 1
+          "text": "Dieser Person sage oder schreibe ich in den nächsten Tagen eine ehrliche, konkrete Wertschätzung:",
+          "lines": 2
         }
       ]
     },
@@ -54324,11 +57282,11 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Etiketten knacken",
-      "intro": "Ein Etikett pickt eine Eigenschaft heraus und behauptet, das sei der ganze Mensch. Durchschaue das Schubladendenken - und finde heraus, wie leicht jedes Etikett zu widerlegen ist.",
+      "intro": "Ein Etikett pickt eine einzige Eigenschaft heraus und tut so, als wäre das der ganze Mensch. Durchschaue das Schubladendenken - und finde heraus, wie leicht sich jedes Etikett widerlegen lässt.",
       "blocks": [
         {
           "kind": "instruction",
-          "text": "Bearbeitet die Etiketten gemeinsam. Den persönlichen Teil unten füllt jede Person für sich aus - anonym, ohne Namen."
+          "text": "Bearbeitet die Etiketten gemeinsam in der Gruppe. Den persönlichen Teil weiter unten füllt jede:r für sich aus - anonym, ohne Namen."
         },
         {
           "kind": "heading",
@@ -54336,11 +57294,8 @@ export const generated: Material[] = [
         },
         {
           "kind": "question",
-          "text": "Nimm ein Etikett (z. B. 'der Klassenclown'). Was sieht man durch dieses Etikett alles NICHT an der Person?"
-        },
-        {
-          "kind": "lines",
-          "lines": 2
+          "text": "Nimm ein Etikett (z. B. 'der Klassenclown'). Was sieht man durch dieses Etikett alles NICHT an der Person - was könnte noch dahinterstecken?",
+          "lines": 3
         },
         {
           "kind": "heading",
@@ -54348,7 +57303,8 @@ export const generated: Material[] = [
         },
         {
           "kind": "table",
-          "text": "Knackt die Etiketten mit Situationen, in denen das Gegenteil zutrifft:",
+          "text": "Knackt die Etiketten: Findet zu jedem eine Situation, in der genau das Gegenteil zutrifft:",
+          "lines": 4,
           "items": [
             "Das Etikett ('Der/Die ist immer ...')",
             "Eine Situation, in der das Gegenteil stimmt"
@@ -54360,8 +57316,13 @@ export const generated: Material[] = [
         },
         {
           "kind": "box",
-          "text": "(Anonym, ohne Namen) Welches Etikett wurde dir selbst schon aufgedrückt, das dir nicht gerecht wurde?",
+          "text": "(Anonym, ohne Namen) Welches Etikett wurde dir selbst schon einmal aufgedrückt, das dir nicht gerecht wurde?",
           "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "Wie hat es sich angefühlt, auf diese eine Eigenschaft reduziert zu werden?",
+          "lines": 3
         },
         {
           "kind": "heading",
@@ -54378,13 +57339,18 @@ export const generated: Material[] = [
           ]
         },
         {
+          "kind": "question",
+          "text": "Manche Etiketten verletzen oder grenzen aus - dann wird Schubladendenken zum Einstieg in Mobbing. Wie kannst du eine Schublade bewusst 'offen lassen'?",
+          "lines": 3
+        },
+        {
           "kind": "heading",
           "text": "Mein Vorsatz"
         },
         {
           "kind": "box",
-          "text": "Dieses Etikett, das ich selbst manchmal benutze, hinterfrage ich künftig:",
-          "lines": 1
+          "text": "Dieses Etikett, das ich selbst manchmal benutze, hinterfrage ich ab jetzt:",
+          "lines": 2
         }
       ]
     },
@@ -54473,11 +57439,11 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Mein Lausch-Blatt",
-      "intro": "Für kleine Geräusche-Jäger: Male oder klebe ein Zeichen zu dem, was du gehört hast. Die Erwachsenen dürfen vorlesen und helfen.",
+      "intro": "Du warst eine kleine Lauschmuschel! Male hier, was du in der Stille gehört hast. Die Erwachsenen dürfen vorlesen und mithelfen.",
       "blocks": [
         {
           "kind": "instruction",
-          "text": "Schließt kurz die Augen und lauscht. Male danach in die Felder, welches Geräusch du gehört hast (z. B. eine Uhr, einen Vogel, dein Atmen)."
+          "text": "Schließ kurz die Augen und lausch noch einmal. Male danach in die Felder, was du gehört hast."
         },
         {
           "kind": "heading",
@@ -54485,7 +57451,7 @@ export const generated: Material[] = [
         },
         {
           "kind": "box",
-          "text": "Male hier ein leises Geräusch, das du in der Stille gehört hast:",
+          "text": "Male ein leises Geräusch, das du in der Stille gehört hast (z. B. eine Uhr, einen Vogel, dein Atmen):",
           "lines": 4
         },
         {
@@ -54502,8 +57468,21 @@ export const generated: Material[] = [
           "text": "Laut oder leise?"
         },
         {
+          "kind": "checklist",
+          "items": [
+            "Ich war ganz leise",
+            "Ich habe die Lauschmuschel gemacht",
+            "Ich habe die Augen zugemacht",
+            "Ich habe ein neues Geräusch entdeckt"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "Wie war die Stille für dich?"
+        },
+        {
           "kind": "scale",
-          "text": "Wie hat dir die Stille gefallen? (Kreuze ein Gesicht an.)",
+          "text": "Wie hat dir die stille Minute gefallen? (Kreuze ein Gesicht an.)",
           "items": [
             "nicht so",
             "ein bisschen",
@@ -54725,32 +57704,20 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Meine Körper-Wetterkarte",
-      "intro": "Wie ist gerade dein Wetter im Körper? Male auf den Körper, wo du etwas spürst. Sonne = fühlt sich gut an, Wolke oder Blitz = drückt oder kribbelt.",
+      "intro": "Gefühle kann man im ganzen Körper spüren - im Bauch, im Herz, im Hals. Spür einmal in dich hinein. Wie ist gerade dein Wetter? Male und kreuze an. Die Erwachsenen helfen beim Lesen.",
       "blocks": [
         {
-          "kind": "instruction",
-          "text": "Spür einmal in deinen Körper hinein. Male dann auf das Körper-Bild deine Wetter-Zeichen dort hin, wo du etwas fühlst."
-        },
-        {
           "kind": "heading",
-          "text": "Mein Körper-Wetter"
+          "text": "Mein Körper-Wetter heute"
         },
         {
-          "kind": "box",
-          "text": "(Hier ist das Körper-Bild.) Male deine Wetter-Zeichen: Sonne, Wolke, Blitz oder Regenbogen.",
-          "lines": 6
-        },
-        {
-          "kind": "heading",
-          "text": "Mein Wetter heute"
-        },
-        {
-          "kind": "checklist",
+          "kind": "scale",
+          "text": "Wie ist dein Wetter gerade in dir drin?",
           "items": [
-            "Sonne (mir geht es gut)",
-            "Wolke (so mittel)",
-            "Blitz (etwas drückt oder ich bin wütend)",
-            "Regenbogen (es wird wieder schön)"
+            "Sonne",
+            "Wolke",
+            "Regen",
+            "Gewitter"
           ]
         },
         {
@@ -54758,9 +57725,49 @@ export const generated: Material[] = [
           "text": "Wo wohnt dein Gefühl?"
         },
         {
+          "kind": "instruction",
+          "text": "Male auf den Körper deine Wetter-Zeichen genau dort hin, wo du etwas spürst: eine Sonne, wo es sich gut anfühlt, eine Wolke oder einen Blitz, wo es kribbelt, drückt oder zwickt."
+        },
+        {
           "kind": "box",
-          "text": "Male ein Herz dort hin, wo du dein Gefühl am meisten spürst (Bauch, Herz, Hals ...):",
+          "text": "(Hier ist dein Körper.) Male deine Wetter-Zeichen: Sonne, Wolke, Blitz, Regenbogen.",
+          "lines": 7
+        },
+        {
+          "kind": "heading",
+          "text": "Mein stärkstes Gefühl"
+        },
+        {
+          "kind": "question",
+          "text": "Wo spürst du dein Gefühl am meisten? Male oder schreibe: im Bauch, im Herz, im Hals ...",
           "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "Jedes Wetter zieht vorbei"
+        },
+        {
+          "kind": "instruction",
+          "text": "Bei einem Gewitter im Bauch hilft das: Hände auf den Bauch legen, einmal tief einatmen und langsam ausatmen."
+        },
+        {
+          "kind": "box",
+          "text": "Male dich selbst, wie du die Hände auf den Bauch legst und tief atmest.",
+          "lines": 5
+        },
+        {
+          "kind": "heading",
+          "text": "Wie ist dein Wetter jetzt?"
+        },
+        {
+          "kind": "scale",
+          "text": "Nach dem tiefen Atmen - wie fühlst du dich jetzt?",
+          "items": [
+            "Sonne",
+            "Wolke",
+            "Regen",
+            "Gewitter"
+          ]
         }
       ]
     },
@@ -54850,21 +57857,17 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Mein Langsam-Blatt",
-      "intro": "Heute warst du eine Feder, eine Schnecke und ein Stein. Male, wie es dir dabei ging. Die Erwachsenen helfen beim Lesen.",
+      "intro": "Heute warst du eine leichte Feder, eine langsame Schnecke und ein schwerer Stein. Ganz langsam sein ist eine echte Kunst! Male und kreuze an, wie es dir dabei ging. Die Erwachsenen helfen beim Lesen.",
       "blocks": [
         {
-          "kind": "instruction",
-          "text": "Denk an die langsame Stunde. Kreuze an und male, was dir gefallen hat."
-        },
-        {
           "kind": "heading",
-          "text": "Schnell oder langsam?"
+          "text": "So gut konnte ich langsam sein"
         },
         {
           "kind": "scale",
-          "text": "Wie gut konntest du dich ganz langsam bewegen?",
+          "text": "Wie gut konntest du dich ganz, ganz langsam bewegen?",
           "items": [
-            "schwer",
+            "gar nicht",
             "ein bisschen",
             "gut",
             "sehr gut"
@@ -54872,24 +57875,60 @@ export const generated: Material[] = [
         },
         {
           "kind": "heading",
-          "text": "Mein Lieblings-Tempo heute"
+          "text": "Mein Lieblings-Tier heute"
         },
         {
           "kind": "checklist",
           "items": [
-            "die leichte Feder",
+            "die leichte Feder, die schwebt",
             "die langsame Schnecke",
-            "der ruhige Stein"
+            "der schwere, ruhige Stein"
           ]
         },
         {
           "kind": "heading",
-          "text": "So fühlte sich das Stillsein an"
+          "text": "So sah meine Lieblings-Bewegung aus"
         },
         {
           "kind": "box",
-          "text": "Male ein Gesicht oder ein Bild: Wie war es, ganz still wie ein Stein zu liegen?",
-          "lines": 3
+          "text": "Male dich als Feder, Schnecke oder Stein - so wie es dir am besten gefallen hat.",
+          "lines": 6
+        },
+        {
+          "kind": "heading",
+          "text": "Ganz still wie ein Stein"
+        },
+        {
+          "kind": "scale",
+          "text": "Wie war es, ganz still wie ein Stein zu liegen?",
+          "items": [
+            "langweilig",
+            "komisch",
+            "schön",
+            "sehr schön"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "So fühlt sich Ruhe an"
+        },
+        {
+          "kind": "box",
+          "text": "Male ein Gesicht: Wie hast du dich am Ende gefühlt, als du ganz ruhig warst?",
+          "lines": 4
+        },
+        {
+          "kind": "heading",
+          "text": "Mein Ruhe-Trick"
+        },
+        {
+          "kind": "instruction",
+          "text": "Wenn du ganz aufgeregt bist, kannst du dich schwer machen wie ein Stein und langsam atmen. Das macht ruhig."
+        },
+        {
+          "kind": "question",
+          "text": "Wann möchtest du deinen Stein-Trick ausprobieren? Male oder schreibe es.",
+          "lines": 2
         }
       ]
     },
@@ -55631,8 +58670,22 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Mein innerer Wetterbericht",
-      "intro": "Auch ein Gefühls-Sturm zieht wieder vorbei - und du kannst mithelfen, dass schneller die Sonne kommt. Halte hier deinen ganz persönlichen Wetterbericht fest.",
+      "intro": "In dir gibt es Wetter - genau wie draußen. Auch der schwärzeste Gefühls-Sturm zieht wieder vorbei, und du kannst mithelfen, dass schneller die Sonne kommt. Halte hier deinen ganz persönlichen Wetterbericht fest.",
       "blocks": [
+        {
+          "kind": "heading",
+          "text": "Mein Wetter gerade"
+        },
+        {
+          "kind": "scale",
+          "text": "Wie ist dein inneres Wetter im Moment?",
+          "items": [
+            "Sonne",
+            "Wolke",
+            "Regen",
+            "Gewitter"
+          ]
+        },
         {
           "kind": "heading",
           "text": "So merke ich, dass ein Sturm aufzieht"
@@ -55645,17 +58698,35 @@ export const generated: Material[] = [
           "kind": "checklist",
           "items": [
             "Mein Kopf wird heiß",
-            "Ich habe einen Kloß im Hals / Tränen",
+            "Ich habe einen Kloß im Hals oder Tränen",
             "Mein Bauch zieht sich zusammen",
             "Ich will weglaufen oder allein sein",
-            "Ich finde alles doof",
+            "Ich finde plötzlich alles doof",
             "Meine Hände werden zu Fäusten"
           ]
         },
         {
-          "kind": "lines",
-          "text": "Mein eigenes Warnzeichen:",
-          "lines": 1
+          "kind": "question",
+          "text": "Mein eigenes Warnzeichen, an dem ich meinen Sturm erkenne:",
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "Welches Wetter bei welchem Sturm?"
+        },
+        {
+          "kind": "instruction",
+          "text": "Denk an Sturm-Momente, die du kennst. Wie heftig stürmt es da in dir - und was bringt die Sonne zurück?"
+        },
+        {
+          "kind": "table",
+          "text": "Trage ein, was bei dir passt:",
+          "lines": 3,
+          "items": [
+            "Sturm-Moment",
+            "Wie heftig? (Wolke/Regen/Gewitter)",
+            "Mein Sonnenstrahl"
+          ]
         },
         {
           "kind": "heading",
@@ -55663,12 +58734,22 @@ export const generated: Material[] = [
         },
         {
           "kind": "instruction",
-          "text": "Diese drei Dinge holen die Sonne bei mir am schnellsten zurück:"
+          "text": "Diese Dinge holen die Sonne bei mir am schnellsten zurück. Denk an: beruhigen, bewegen, mit jemandem reden, etwas Gutes tun."
         },
         {
-          "kind": "lines",
-          "text": "",
-          "lines": 3
+          "kind": "question",
+          "text": "1.",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "2.",
+          "lines": 2
+        },
+        {
+          "kind": "question",
+          "text": "3.",
+          "lines": 2
         },
         {
           "kind": "heading",
@@ -55677,7 +58758,7 @@ export const generated: Material[] = [
         {
           "kind": "box",
           "text": "Schreibe oder male: 'Wenn in mir ein Sturm tobt, hilft mir am meisten ...'",
-          "lines": 3
+          "lines": 4
         },
         {
           "kind": "scale",
@@ -55779,52 +58860,71 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Mein Steh-auf-Plan",
-      "intro": "Hinfallen passiert allen - liegen bleiben muss niemand. Hier baust du deinen eigenen Plan, mit dem du dich nach einem Reinfall wieder aufrichtest.",
+      "intro": "Hinfallen passiert allen - liegen bleiben muss niemand. Wie ein Stehaufmännchen kannst auch du dich nach einem Reinfall wieder aufrichten. Hier baust du deinen eigenen Steh-auf-Plan in vier Schritten.",
       "blocks": [
         {
           "kind": "instruction",
-          "text": "Denk an etwas, das dir manchmal danebengeht. Gehe deine Situation mit den vier Schritten durch."
+          "text": "Denk an etwas, das dir manchmal danebengeht (zum Beispiel ein Test, ein Spiel, ein Streit). Schreibe es kurz auf und gehe es dann mit den vier Schritten durch."
+        },
+        {
+          "kind": "box",
+          "text": "Das geht mir manchmal daneben:",
+          "lines": 2
         },
         {
           "kind": "heading",
           "text": "Schritt 1 - SPÜREN: Es darf wehtun"
         },
         {
-          "kind": "lines",
-          "text": "Welches Gefühl habe ich, wenn das schiefgeht?",
-          "lines": 1
+          "kind": "question",
+          "text": "Welches Gefühl steigt in mir hoch, wenn das schiefgeht? (Wut, Frust, Scham, Traurigkeit ...)",
+          "lines": 2
         },
         {
           "kind": "heading",
           "text": "Schritt 2 - DURCHATMEN: Erst ruhig werden"
         },
         {
-          "kind": "lines",
-          "text": "Was hilft mir, kurz ruhig zu werden?",
-          "lines": 1
+          "kind": "question",
+          "text": "Was hilft mir, kurz ruhig zu werden, bevor ich weitermache?",
+          "lines": 2
         },
         {
           "kind": "heading",
           "text": "Schritt 3 - VERSTEHEN: Was lerne ich daraus?"
         },
         {
-          "kind": "lines",
+          "kind": "question",
           "text": "Was würde ich beim nächsten Mal anders machen?",
-          "lines": 2
+          "lines": 3
         },
         {
           "kind": "heading",
           "text": "Schritt 4 - WEITERGEHEN: Neuer Anlauf!"
         },
         {
-          "kind": "lines",
-          "text": "Was ist mein nächster Schritt? (nochmal versuchen, Hilfe holen, anderen Weg suchen ...)",
-          "lines": 2
+          "kind": "question",
+          "text": "Was ist mein nächster konkreter Schritt? (nochmal versuchen, Hilfe holen, anderen Weg suchen ...)",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "Mein Mut-mach-Satz"
         },
         {
           "kind": "box",
-          "text": "Mein Mut-mach-Satz: 'Wenn mir etwas danebengeht, sage ich mir ...'",
-          "lines": 2
+          "text": "Vervollständige: 'Wenn mir etwas danebengeht, sage ich mir ...'",
+          "lines": 3
+        },
+        {
+          "kind": "scale",
+          "text": "Wie gut traue ich mir zu, nach einem Reinfall wieder aufzustehen?",
+          "items": [
+            "noch schwer",
+            "ein bisschen",
+            "ziemlich gut",
+            "ganz sicher"
+          ]
         }
       ]
     },
@@ -56213,7 +59313,7 @@ export const generated: Material[] = [
       "blocks": [
         {
           "kind": "instruction",
-          "text": "Fülle den Tresor in Ruhe aus. Denke an Situationen, in denen jemand 'Danke' oder 'auf dich kann man sich verlassen' zu dir gesagt hat - das sind Hinweise auf deinen Inhalt."
+          "text": "Fülle den Tresor in Ruhe aus. Denk an Situationen, in denen jemand 'Danke' oder 'auf dich kann man sich verlassen' zu dir gesagt hat - das sind Hinweise auf deinen Inhalt."
         },
         {
           "kind": "heading",
@@ -56221,20 +59321,21 @@ export const generated: Material[] = [
         },
         {
           "kind": "instruction",
-          "text": "Kreuze an, wovon dein Wert gerade zu stark abhängt - und was du lieber in den Tresor legen würdest."
+          "text": "Manches an dir kann sich jederzeit ändern (außen), manches gehört fest zu dir (innen). Sortiere ein."
         },
         {
-          "kind": "checklist",
+          "kind": "table",
+          "text": "Was hängt vom Tag, von anderen oder vom Glück ab - und was bleibt?",
+          "lines": 4,
           "items": [
-            "Noten und Leistung",
-            "Likes und Kommentare",
-            "Aussehen und Klamotken",
-            "Lob von anderen",
-            "Gewinnen und besser sein",
-            "wer ich für andere bin",
-            "wofür ich einstehe",
-            "was ich wirklich kann"
+            "AUSSEN - schwankt von Tag zu Tag",
+            "INNEN - gehört fest zu mir"
           ]
+        },
+        {
+          "kind": "question",
+          "text": "Wovon hängt mein Wert gerade zu stark ab - was würde ich gern lockerer sehen?",
+          "lines": 2
         },
         {
           "kind": "heading",
@@ -56261,11 +59362,8 @@ export const generated: Material[] = [
         },
         {
           "kind": "question",
-          "text": "Welches Stück ist dir am wichtigsten - das, an das du denken willst, wenn du dich einmal klein fühlst?"
-        },
-        {
-          "kind": "lines",
-          "lines": 2
+          "text": "Welches Stück ist dir am wichtigsten - das, an das du denken willst, wenn du dich einmal klein fühlst?",
+          "lines": 3
         },
         {
           "kind": "heading",
@@ -56274,7 +59372,17 @@ export const generated: Material[] = [
         {
           "kind": "box",
           "text": "Vervollständige: 'Auch an einem schlechten Tag bleibt in mir ...'",
-          "lines": 2
+          "lines": 3
+        },
+        {
+          "kind": "scale",
+          "text": "Wie stabil fühlt sich mein Selbstwert gerade an - auch wenn ein Tag mal schlecht läuft?",
+          "items": [
+            "wackelig",
+            "geht so",
+            "ziemlich stabil",
+            "sehr stabil"
+          ]
         }
       ]
     },
@@ -56528,11 +59636,11 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Mein Urteils-Protokoll",
-      "intro": "Dein innerer Richter fällt oft harte Pauschalurteile, ohne die Verteidigung zu hören. Hier machst du daraus ein faires Verfahren. Ein faires Urteil redet nichts schön - es nimmt nur die Übertreibung heraus.",
+      "intro": "Dein innerer Richter fällt oft harte Pauschalurteile, ohne die Verteidigung zu hören. Hier machst du daraus ein faires Verfahren. Ein faires Urteil redet nichts schön - es nimmt nur die Übertreibung heraus. Das hier bleibt privat.",
       "blocks": [
         {
           "kind": "instruction",
-          "text": "Wähle einen Selbst-Vorwurf, der dich öfter belastet - aber nicht den allerschwersten. Das hier bleibt privat."
+          "text": "Wähle einen Selbst-Vorwurf, der dich öfter belastet - aber nicht den allerschwersten."
         },
         {
           "kind": "heading",
@@ -56540,8 +59648,8 @@ export const generated: Material[] = [
         },
         {
           "kind": "box",
-          "text": "Welches harte Urteil fällt dein innerer Richter? Schreibe es wörtlich auf:",
-          "lines": 2
+          "text": "Welches harte Urteil fällt dein innerer Richter über dich? Schreibe es wörtlich auf - genau so, wie es dir durch den Kopf geht:",
+          "lines": 3
         },
         {
           "kind": "heading",
@@ -56549,20 +59657,17 @@ export const generated: Material[] = [
         },
         {
           "kind": "question",
-          "text": "Stimmt das wirklich IMMER und ÜBERALL? Markiere Übertreibungswörter (immer, nie, total, überall) und nenne Ausnahmen."
-        },
-        {
-          "kind": "lines",
-          "lines": 2
+          "text": "Stimmt dieses Urteil wirklich IMMER und ÜBERALL? Kreise Übertreibungswörter ein (immer, nie, total, überall) und nenne mindestens zwei Ausnahmen, in denen es nicht stimmte.",
+          "lines": 4
         },
         {
           "kind": "heading",
           "text": "3. Die Verteidigung"
         },
         {
-          "kind": "box",
-          "text": "Welche Gegenbeweise und übersehenen Tatsachen gibt es? Was würde ein guter Freund zu dir sagen?",
-          "lines": 3
+          "kind": "question",
+          "text": "Welche Gegenbeweise und übersehenen Tatsachen gibt es? Was würde ein guter Freund zu dir sagen, der dich gut kennt?",
+          "lines": 4
         },
         {
           "kind": "heading",
@@ -56570,8 +59675,23 @@ export const generated: Material[] = [
         },
         {
           "kind": "box",
-          "text": "Sprich ein gerechtes Urteil - ehrlich, aber ohne dich pauschal zu verdammen:",
-          "lines": 3
+          "text": "Sprich nun ein gerechtes Urteil - ehrlich, aber ohne dich pauschal zu verdammen. Benenne den Fehler, ohne den ganzen Menschen zu verurteilen:",
+          "lines": 4
+        },
+        {
+          "kind": "heading",
+          "text": "Wie hart war mein Richter?"
+        },
+        {
+          "kind": "scale",
+          "text": "Wie streng und ungerecht hat dein innerer Richter dich bisher behandelt?",
+          "items": [
+            "sehr hart",
+            "ziemlich hart",
+            "manchmal hart",
+            "schon fair",
+            "fair"
+          ]
         },
         {
           "kind": "heading",
@@ -56579,8 +59699,8 @@ export const generated: Material[] = [
         },
         {
           "kind": "box",
-          "text": "Vervollständige: 'Beim nächsten Schnellurteil im Kopf frage ich mich ...'",
-          "lines": 2
+          "text": "Vervollständige für den nächsten Schnellurteils-Moment: 'Beim nächsten harten Urteil im Kopf frage ich mich zuerst ...'",
+          "lines": 3
         }
       ]
     },
@@ -57873,16 +60993,16 @@ export const generated: Material[] = [
       "blocks": [
         {
           "kind": "heading",
-          "text": "Meine Außenseite - was man sehen kann"
+          "text": "Meine Außenseite"
         },
         {
           "kind": "instruction",
-          "text": "Male dich so, wie andere dich sehen: dein Gesicht, deine Haare, dein Lächeln."
+          "text": "Male dich so, wie andere dich sehen: dein Gesicht, deine Haare, dein Lächeln, deine Kleidung."
         },
         {
           "kind": "box",
           "text": "(Hier malst du deine Außenseite)",
-          "lines": 5
+          "lines": 6
         },
         {
           "kind": "heading",
@@ -57890,41 +61010,51 @@ export const generated: Material[] = [
         },
         {
           "kind": "instruction",
-          "text": "Male oder schreibe zu jeder Frage etwas. Du darfst auch Symbole benutzen."
+          "text": "Schreibe oder male zu jeder Frage etwas. Du darfst auch Symbole oder Herzen benutzen."
         },
         {
-          "kind": "lines",
-          "text": "Worüber freue ich mich gerade?",
-          "lines": 1
+          "kind": "question",
+          "text": "Worüber freue ich mich gerade richtig?",
+          "lines": 2
         },
         {
-          "kind": "lines",
+          "kind": "question",
           "text": "Worauf bin ich stolz?",
-          "lines": 1
+          "lines": 2
         },
         {
-          "kind": "lines",
+          "kind": "question",
           "text": "Wovor habe ich manchmal Angst?",
-          "lines": 1
+          "lines": 2
         },
         {
-          "kind": "lines",
+          "kind": "question",
           "text": "Was mag ich am allerliebsten?",
-          "lines": 1
+          "lines": 2
         },
         {
           "kind": "box",
-          "text": "Mein Geheim-Fach: Etwas, das nur ich kenne und nicht verraten muss (darf auch leer bleiben).",
-          "lines": 2
+          "text": "Mein Geheim-Fach: Etwas, das nur ich kenne. Das muss ich niemandem verraten - es darf auch leer bleiben.",
+          "lines": 3
         },
         {
           "kind": "heading",
           "text": "Mein Schatz-Satz"
         },
         {
-          "kind": "lines",
+          "kind": "question",
           "text": "Etwas, das man von außen nicht an mir sieht, ist ...",
-          "lines": 1
+          "lines": 2
+        },
+        {
+          "kind": "scale",
+          "text": "Wie viel von meiner Innenseite möchte ich heute zeigen?",
+          "items": [
+            "nur die Außenseite",
+            "eine kleine Sache",
+            "ein bisschen",
+            "ganz viel"
+          ]
         }
       ]
     },
@@ -58168,8 +61298,21 @@ export const generated: Material[] = [
     ],
     "worksheet": {
       "title": "Mein Wurzeln-und-Flügel-Baum",
-      "intro": "Wie ein Baum hast du Wurzeln, die dir Halt geben, und Flügel-Wünsche, die zeigen, wohin du wachsen willst. Beides gehört zu dir.",
+      "intro": "Wie ein Baum hast du Wurzeln, die dir Halt geben, und Flügel-Wünsche, die zeigen, wohin du wachsen willst. Beides gehört zu dir und macht dich stark.",
       "blocks": [
+        {
+          "kind": "heading",
+          "text": "Mein Baum"
+        },
+        {
+          "kind": "instruction",
+          "text": "Male deinen Baum: unten die Wurzeln, oben die Krone mit den Flügel-Wünschen."
+        },
+        {
+          "kind": "box",
+          "text": "(Hier malst du deinen Wurzeln-und-Flügel-Baum)",
+          "lines": 6
+        },
         {
           "kind": "heading",
           "text": "Meine Wurzeln - was mir Halt gibt"
@@ -58180,7 +61323,7 @@ export const generated: Material[] = [
         },
         {
           "kind": "lines",
-          "text": "",
+          "text": "Meine Wurzeln sind:",
           "lines": 4
         },
         {
@@ -58193,7 +61336,7 @@ export const generated: Material[] = [
         },
         {
           "kind": "lines",
-          "text": "",
+          "text": "Meine Flügel-Wünsche sind:",
           "lines": 4
         },
         {
@@ -58201,14 +61344,24 @@ export const generated: Material[] = [
           "text": "Stolz und Wunsch"
         },
         {
-          "kind": "lines",
+          "kind": "question",
           "text": "Auf diese Wurzel bin ich besonders stolz:",
-          "lines": 1
+          "lines": 2
         },
         {
-          "kind": "lines",
+          "kind": "question",
           "text": "Mein größter Flügel-Wunsch ist ...",
-          "lines": 1
+          "lines": 2
+        },
+        {
+          "kind": "scale",
+          "text": "Wie sehr freue ich mich auf das, was noch wächst?",
+          "items": [
+            "ein bisschen",
+            "mittel",
+            "ziemlich",
+            "ganz fest"
+          ]
         }
       ]
     },
