@@ -16390,8 +16390,8 @@ export const youth: Material[] = [
     "source": "generated"
   },
   {
-    "id": "alltagsrassismus-erkennen-was-hinter-wo-kommst-du-wirklich-her-steckt-und-wie-man-eingreift",
-    "title": "Alltagsrassismus erkennen: Was hinter 'Wo kommst du WIRKLICH her?' steckt - und wie man eingreift",
+    "id": "alltagsrassismus-mikroaggressionen-die-kleinen-saetze-mit-grosser-wirkung",
+    "title": "Alltagsrassismus & Mikroaggressionen - die kleinen Sätze mit großer Wirkung",
     "author": "ISA-Toolbox",
     "ageLevels": [
       "ES"
@@ -16402,58 +16402,58 @@ export const youth: Material[] = [
     "participants": [
       {
         "mode": "Klass",
-        "note": "Plenum für Einstieg, Klärung und gemeinsamen Abschluss, ca. 12-26 Jugendliche"
+        "note": "Plenum für Einstieg, Begriffsklärung und gemeinsame Auswertung, ca. 12-26 Jugendliche"
       },
       {
         "mode": "Grupp",
-        "note": "Kleingruppen 3-4 für die Fallanalyse und das Entwickeln von Eingreif-Strategien"
+        "note": "Kleingruppen 3-4 für die Analyse der Aussagen und das Entwickeln von Reaktionen"
       },
       {
         "mode": "Individuel",
-        "note": "stille, freiwillige Selbstreflexion zu eigenen Erfahrungen und blinden Flecken - bleibt privat, wird nicht eingesammelt"
+        "note": "stille, freiwillige Selbstreflexion auf dem Arbeitsblatt - bleibt privat"
       }
     ],
     "themes": [
       "diskriminierung-vielfalt",
       "fremdwahrnehmung",
-      "gerechtigkeit"
+      "kommunikation"
     ],
     "tags": [
       "Jugend",
       "Rassismus",
       "Alltagsrassismus",
-      "Mikroaggression",
-      "Zivilcourage",
-      "Vorurteile",
+      "Mikroaggressionen",
       "Diskriminierung",
-      "Solidarität"
+      "Vorurteile",
+      "Zivilcourage",
+      "Empathie"
     ],
-    "shortDescription": "Rassismus zeigt sich selten als offener Hass mit Hakenkreuz - viel häufiger steckt er in scheinbar harmlosen Sätzen, Blicken und 'Komplimenten': 'Wo kommst du WIRKLICH her?', 'Du sprichst aber gut Deutsch', 'für eine wie dich ganz hübsch'. Solche Mikroaggressionen sind oft nicht böse gemeint, treffen aber trotzdem - weil sie Menschen immer wieder zu 'Anderen' machen, die sich erklären müssen. In dieser Doppelstunde lernen Jugendliche, Alltagsrassismus zu erkennen und zu benennen (statt ihn als 'Spaß' oder 'Übertreibung' abzutun), verstehen den Unterschied zwischen Absicht und Wirkung, und üben in geschützten Situationen, als Betroffene oder als Mitschauende souverän zu reagieren und Zivilcourage zu zeigen. Ziel ist kein Schuld-Tribunal und kein Verbot des Redens, sondern Sensibilität, eine gemeinsame Sprache für das Problem und konkrete Handlungsmöglichkeiten - vom kurzen Nachfragen bis zum klaren Widerspruch. Das Arbeitsblatt sichert die Begriffe, eine Fallanalyse, fertige Eingreif-Sätze und eine persönliche Standortbestimmung.",
+    "shortDescription": "Rassismus zeigt sich selten als offene Beschimpfung - viel häufiger steckt er in scheinbar harmlosen Sätzen, Fragen und Blicken, die sich für Betroffene wie tausend kleine Nadelstiche anfühlen. 'Woher kommst du WIRKLICH?', 'Du sprichst aber gut Deutsch', 'Für eine wie dich siehst du echt gut aus' - solche Mikroaggressionen sind oft nicht böse gemeint, verletzen aber trotzdem und vermitteln: Du gehörst nicht ganz dazu. Diese Doppelstunde macht das Unsichtbare sichtbar: Jugendliche lernen, was Alltagsrassismus und Mikroaggressionen sind, warum 'nicht böse gemeint' nicht dasselbe ist wie 'nicht verletzend', und wie die Wirkung einer Aussage nicht von der Absicht abhängt. Sie analysieren echte Alltagsbeispiele, wechseln die Perspektive zu den Betroffenen und entwickeln konkrete Möglichkeiten, angemessen zu reagieren - als Betroffene wie als Beobachtende. Ziel ist Sensibilität ohne Beschämung: nicht Schuldzuweisung, sondern die Fähigkeit, genauer hinzuhören und respektvoller miteinander umzugehen. Das Arbeitsblatt sichert Begriffe, Perspektivwechsel, Reaktions-Werkzeuge und eine ehrliche Selbsteinschätzung.",
     "ablauf": [
       {
-        "title": "Einstieg - 'War doch nur ein Kompliment'",
-        "text": "Steigen Sie mit zwei echten Alltagssätzen ein, die Sie an die Tafel schreiben: 'Wo kommst du WIRKLICH her?' und 'Du sprichst aber gut Deutsch'. Fragen Sie: 'Was ist daran eigentlich ein Problem? Ist das überhaupt Rassismus - oder Übertreibung?' Lassen Sie bewusst beide Positionen zu Wort kommen und sammeln Sie sie. Führen Sie dann den Schlüsselgedanken ein: Es kommt nicht nur darauf an, wie etwas GEMEINT ist, sondern auch, wie es WIRKT - und wie es sich anfühlt, wenn man dieselbe Frage zum hundertsten Mal hört und dadurch immer wieder zur Ausnahme, zum 'nicht richtig dazugehörig' gemacht wird. Stellen Sie die Leitfrage: 'Warum kann etwas verletzen, obwohl es nett gemeint war?' Moderationshinweis: Setzen Sie von Beginn an einen klaren, sicheren Rahmen. Es geht um Verstehen, nicht um Anklage; niemand wird als Rassist abgestempelt, niemand muss sich als Opfer outen. Grundregeln an die Tafel: Wir reden respektvoll, hören zu, lachen niemanden aus, und Betroffene bestimmen selbst, ob und was sie teilen. Genau diese Ernsthaftigkeit macht das Thema besprechbar."
+        "title": "Einstieg - 'War doch nur eine Frage'",
+        "text": "Schreiben Sie drei reale Alltagssätze gut sichtbar an die Tafel, z. B.: 'Und woher kommst du WIRKLICH?', 'Du sprichst aber gut Luxemburgisch/Deutsch', 'Darf ich mal deine Haare anfassen?'. Fragen Sie zunächst neutral: 'Was könnte die Person damit gemeint haben?' (meist: Neugier, Interesse, ein Kompliment). Dann der Perspektivwechsel: 'Und wie könnte sich das anfühlen, wenn man so etwas immer und immer wieder hört?' Lassen Sie kurz Ideen sammeln. Führen Sie das Bild der Nadelstiche ein: Ein einzelner Stich tut kaum weh - aber tausend Stiche, jeden Tag, von vielen verschiedenen Leuten, das zermürbt. Machen Sie das Stundenziel klar: 'Heute klagen wir niemanden an. Wir lernen, genauer hinzuhören - denn ob ein Satz verletzt, hängt nicht davon ab, wie er gemeint war, sondern wie er ankommt.' Moderationshinweis: Bleiben Sie ruhig und nicht moralisierend. Betroffene im Raum sollen sich gesehen, aber nicht zum 'Anschauungsobjekt' gemacht fühlen - niemand muss von eigenen Erlebnissen berichten. Grundregel ab jetzt: kein Auslachen, niemand wird vorgeführt."
       },
       {
-        "title": "Klärung - Absicht ist nicht gleich Wirkung",
-        "text": "Sachlicher, jugendgerechter Kurzinput (max. 12 Min). Klären Sie drei Begriffe nüchtern und mit Beispielen: (1) VORURTEIL - eine schnelle Schublade im Kopf ('die sind so'), oft unbewusst, jeder hat sie. (2) DISKRIMINIERUNG - wenn aus dem Vorurteil eine Benachteiligung wird (jemand wird ausgeschlossen, schlechter behandelt, nicht ernst genommen). (3) ALLTAGS-/MIKRORASSISMUS - kleine, oft 'nicht böse gemeinte' Sätze, Blicke und Handlungen, die Menschen wegen ihrer Herkunft, Hautfarbe, Sprache oder Religion immer wieder zu 'Anderen' machen. Machen Sie den Kernpunkt unmissverständlich: Rassismus ist nicht erst der offene Hass - die Summe vieler 'Kleinigkeiten' ist eine echte Belastung. Trennen Sie sauber: 'Es war nicht böse gemeint' kann stimmen UND die Wirkung kann trotzdem verletzend sein - beides schließt sich nicht aus. Räumen Sie auch mit zwei Abwehrsätzen auf: 'Man wird ja heute gar nichts mehr sagen dürfen' (Es geht nicht ums Verbieten, sondern ums bewusster Werden) und 'Stell dich nicht so an' (Nicht der/die Betroffene übertreibt, sondern die Wirkung ist real). Begriffe an die Tafel: Vorurteil - Diskriminierung - Alltagsrassismus; Absicht ungleich Wirkung."
+        "title": "Input - Was Alltagsrassismus und Mikroaggressionen sind",
+        "text": "Sachlicher Kurzinput (max. 15 Min). (1) BEGRIFFE: Alltagsrassismus sind die ständigen, oft beiläufigen Abwertungen und Ausgrenzungen im normalen Leben - in der Schule, im Bus, beim Einkaufen. Mikroaggressionen sind kleine, oft unbeabsichtigte verbale oder nonverbale Botschaften, die jemanden auf seine Herkunft, Hautfarbe, Religion oder Sprache reduzieren und das Signal senden: 'Du bist anders / gehörst nicht richtig dazu.' (2) DREI TYPEN, mit Beispielen: das ständige 'Othering' ('Woher kommst du WIRKLICH?' - du wirst dauerhaft zum Fremden gemacht); das 'Kompliment', das eigentlich abwertet ('Du sprichst aber gut Deutsch' - setzt voraus, dass man es nicht koennen muesste); die unsichtbar machende Geste (Misstrauen im Laden, automatische Zuschreibungen). (3) DER KERN: Absicht und Wirkung sind zweierlei. 'Ich hab's nicht böse gemeint' kann stimmen - und der Satz kann trotzdem verletzen. Entscheidend ist nicht, sich für die gute Absicht zu rechtfertigen, sondern die Wirkung ernst zu nehmen. (4) WARUM ES ZÄHLT: Es geht nicht darum, ein schlechtes Gewissen zu machen oder jedes Wort auf die Goldwaage zu legen, sondern darum, Verantwortung für die Wirkung des eigenen Verhaltens zu übernehmen. Begriffe an die Tafel: Alltagsrassismus, Mikroaggression, Othering, Absicht vs. Wirkung. Moderationshinweis: Definieren Sie sauber, ohne Fachjargon-Überladung; ein klares Beispiel pro Begriff wirkt stärker als lange Theorie."
       },
       {
-        "title": "Erarbeitung - Fallanalyse in Kleingruppen",
-        "text": "Kleingruppen analysieren kurze, realistische Alltagsszenen (auf Karten) und beantworten je drei Fragen: Was passiert hier? Wie könnte sich die betroffene Person fühlen? Ist das (Alltags-)Rassismus - und woran macht ihr das fest? Beispiele: A) Eine Mitschülerin wird im Praktikum ständig gefragt, ob sie 'zu Hause auch so isst' und ob ihre Eltern 'das erlauben'. B) Beim Fußball ruft jemand nach einem Foul ein rassistisches Schimpfwort - 'war doch nur im Spaß'. C) Eine Lehrkraft verwechselt regelmäßig die beiden einzigen Schüler mit dunkler Hautfarbe. D) In einer WhatsApp-Gruppe kursiert ein 'lustiges' Meme über eine Religion. E) Beim Bewerbungstraining sagt jemand: 'Mit dem Namen hast du es natürlich schwerer' - achselzuckend, als sei das normal. F) 'Du bist ja gar nicht wie die anderen Ausländer' - als Lob gemeint. Ergebnisse aufs Arbeitsblatt; jede Gruppe ordnet ihre Fälle auf einer kleinen Skala von 'unabsichtlich/unbedacht' bis 'offen abwertend' ein. Auswertung im Plenum: gemeinsam herausarbeiten, dass Wirkung und Häufigkeit zählen, nicht nur die Absicht. Moderationshinweis: herumgehen, ermutigen, nichts ins Lächerliche ziehen; Fall B (Schimpfwort) und 'war nur Spaß' eignen sich besonders, um die 'Spaß'-Ausrede zu hinterfragen."
+        "title": "Erarbeitung - Aussagen unter die Lupe nehmen",
+        "text": "Kleingruppen erhalten ein Set mit 5-6 kurzen, fiktiven Alltagsaussagen und -situationen (gemischt: klare Mikroaggressionen, Grenzfälle und auch harmlose Aussagen, um den Blick zu schärfen). Aufgabe pro Karte: (1) Was könnte gemeint sein? (2) Wie könnte es bei der angesprochenen Person ankommen / was vermittelt es eigentlich? (3) Ist das eine Mikroaggression, ein Grenzfall oder harmlos - und warum? Beispiele für Karten: 'Du bist ja gar nicht so, wie man bei euch denkt', 'Wow, du bist echt integriert', 'Wo kann man hier gut [Herkunftsland]-Essen kriegen, du kennst dich doch aus', 'Hast du am Wochenende Zeit?' (harmlos - als Kontrast), 'Ihr seid doch alle...', eine Verkäuferin, die nur einer bestimmten Person nachschaut. Jede Gruppe wählt die zwei Aussagen aus, bei denen die Lücke zwischen Absicht und Wirkung am größten ist, und bereitet sie für die Klasse vor. Moderationshinweis: herumgehen, nachfragen 'Warum genau verletzt das?', 'Was wird hier über die Person vorausgesetzt?'. Bestehen Sie auf differenzierten Urteilen - manchmal ist die Antwort 'kommt auf Ton und Situation an', und das ist eine gute, ehrliche Antwort. Würdigen Sie, dass es Übung braucht, das überhaupt zu erkennen."
       },
       {
-        "title": "Vertiefung - Eingreifen statt wegschauen (Zivilcourage)",
-        "text": "Plenum und Kleingruppen - das ist der Handlungsteil. Machen Sie klar: Wer dabeisteht und schweigt, lässt es geschehen; aber niemand muss zum Helden werden oder sich in Gefahr bringen. Erarbeiten Sie gemeinsam abgestufte Reaktions-Möglichkeiten und sichern Sie sie: (1) NACHFRAGEN/IRRITIEREN: 'Wie meinst du das genau?' oder 'Was soll daran witzig sein?' - zwingt zum Nachdenken, ohne anzugreifen. (2) BENENNEN: 'Das ist gerade rassistisch / das geht zu weit.' (3) BETROFFENE STÄRKEN: sich danebenstellen, nachher hingehen ('Ich fand das auch nicht okay'). (4) UMLENKEN/ABLENKEN, wenn direkter Widerspruch zu riskant ist. (5) HILFE HOLEN bei Bedrohung: Lehrkraft, Aufsicht, im Notfall 112 - das ist kein Petzen, sondern Schutz. Lassen Sie pro Gruppe an zwei Karten-Fällen passende Reaktionen entwickeln und freiwillig kurz durchspielen (Rollentausch). Betonen Sie auch die Betroffenen-Perspektive: Man muss nicht jedes Mal reagieren oder schlagfertig sein - sich Verbündete und Hilfe zu holen ist genauso stark. Moderationshinweis: realistische, sichere Optionen betonen; übertriebenes 'Helden'-Verhalten bremsen; würdigen, dass es Mut kostet, gegen die Gruppe oder gegen Freunde Position zu beziehen."
+        "title": "Vertiefung - Wie man angemessen reagiert",
+        "text": "Plenum. Lassen Sie die Gruppen ihre Beispiele vorstellen. Erarbeiten Sie dann gemeinsam ein Repertoire an Reaktionen - für zwei Rollen. ALS BETROFFENE:R: ruhig nachfragen ('Wie meinst du das genau?'), die Wirkung benennen ('Diese Frage höre ich oft, und sie gibt mir das Gefühl, nicht dazuzugehören'), Grenze setzen ('Bitte fass meine Haare nicht an'), oder bewusst nicht reagieren, wenn man keine Kraft hat - auch das ist okay, man schuldet niemandem eine Bildungsstunde. ALS BEOBACHTER:IN (oft die wirksamste Rolle): unterbrechen ('Das fand ich gerade unangenehm'), Solidarität zeigen ('Lass die Frage doch'), nachher der betroffenen Person den Rücken stärken. Und für ALLE, die selbst einen Fehltritt bemerken: nicht in die Verteidigung gehen ('war doch nur...'), sondern annehmen, sich ggf. kurz entschuldigen ('Sorry, das war daneben') und es nächstes Mal besser machen - das ist Stärke, keine Schwäche. Optional zwei kurze, freiwillige Rollenspiele zur 'guten Reaktion'. Moderationshinweis: betonen Sie, dass auf eine Mikroaggression zu reagieren Mut kostet und dass schon kleine Reaktionen viel bewirken; und dass das Ziel respektvolles Miteinander ist, nicht öffentliches Anprangern."
       },
       {
-        "title": "Reflexion & Transfer - Mein blinder Fleck, meine Haltung",
-        "text": "Stille, freiwillige Einzelreflexion auf dem Arbeitsblatt: Habe ich selbst schon so etwas erlebt oder gesagt - ohne böse Absicht? Was hat mich heute überrascht? Welche zwei Eingreif-Sätze traue ich mir wirklich zu? Betonen Sie ausdrücklich Freiwilligkeit und Privatheit - das Blatt bleibt bei den Jugendlichen. Würdigen Sie die ehrliche Selbstprüfung: Zuzugeben, selbst Vorurteile zu haben, ist kein Makel, sondern der erste Schritt. Lassen Sie jede:n einen Merksatz und einen Vorsatz festhalten ('Absicht zählt - aber Wirkung auch' / 'Ich frage nach, statt wegzuschauen' / 'Niemand muss sich für seine Herkunft erklären'). Sammeln Sie zum Abschluss freiwillig allgemeine Erkenntnisse. Schlusssatz: 'Rassismus lebt vom Schweigen und vom Wegschauen. Du musst nicht perfekt sein und nicht jedes Mal die perfekte Antwort haben - aber jedes Hinschauen, jedes Nachfragen, jedes Danebenstellen macht einen Unterschied.' Weisen Sie sensibel und konkret darauf hin, dass man sich Hilfe holen darf, wenn man Diskriminierung erlebt - und dass das keine Schwäche ist."
+        "title": "Reflexion & Transfer - Genauer hinhören",
+        "text": "Stille, freiwillige Einzelreflexion auf dem Arbeitsblatt: Welche dieser Sätze habe ich selbst schon gehört - oder vielleicht selbst gesagt, ohne es böse zu meinen? Was habe ich heute über den Unterschied zwischen Absicht und Wirkung verstanden? Betonen Sie ausdrücklich Freiwilligkeit und Privatheit - es geht NICHT um Beichte oder Schuld, sondern um ehrliches Hinschauen bei sich selbst. Würdigen Sie, dass sich JEDE:R manchmal danebenbenimmt und dass Dazulernen normal ist. Lassen Sie jede:n einen konkreten Vorsatz formulieren ('Ich frage nicht mehr nach dem WIRKLICHEN Herkommen' / 'Wenn ich so etwas höre, sage ich etwas') und einen Merksatz festhalten. Sammeln Sie zum Abschluss freiwillig Erkenntnisse. Schlusssatz: 'Niemand muss perfekt sein. Aber jede:r kann genauer hinhören - und damit aus tausend Nadelstichen ein paar weniger machen.' Weisen Sie sensibel darauf hin, dass man sich Hilfe holen darf, wenn man selbst von Rassismus oder Diskriminierung betroffen ist und das belastet."
       }
     ],
-    "duration": "ca. 90 Minuten (Doppelstunde); als Einzelstunde mit Fokus auf Begriffe und Fallanalyse kürzbar",
-    "materialsNeeded": "Tafel/Flipchart; Karten mit realistischen Alltagsszenen; Infokarte 'Vorurteil - Diskriminierung - Alltagsrassismus' und 'Absicht ungleich Wirkung'; Übersichtskarte 'Eingreifen - abgestufte Reaktionen'; Übersichtskarte mit Hilfe-/Anlaufstellen (SePAS, Antidiskriminierungsstelle); Arbeitsblatt pro Jugendlichem; optional anonyme Erfahrungs-/Fragebox",
-    "remark": "Sensibles Thema mit hoher persönlicher Betroffenheit - mit großer Wahrscheinlichkeit sitzen im Raum Jugendliche, die Rassismus selbst erleben, und solche, die unbewusst diskriminierend gesprochen haben. Halten Sie strikt einen Rahmen des Verstehens statt der Anklage: Niemand wird als 'Rassist' etikettiert, niemand muss sich als Betroffene:r outen oder die Rolle des 'Erklärbären' für die ganze Gruppe übernehmen. Achten Sie ausdrücklich darauf, betroffene Jugendliche nicht zu Anschauungsobjekten zu machen ('Wie ist das denn bei dir?') - Teilen ist immer freiwillig und selbstbestimmt. Vermeiden Sie sowohl Verharmlosung ('war doch nur Spaß') als auch Beschämung; arbeiten Sie konsequent mit der Unterscheidung Absicht/Wirkung, das entlastet und ermöglicht ehrliche Selbstprüfung. Reagieren Sie klar, falls im Unterricht selbst eine rassistische Äußerung fällt - benennen, einordnen, nicht bloßstellen. Differenzierung: für jüngere/unsichere Gruppen mit klaren Begriffen, einfachen Szenen und vorformulierten Eingreif-Sätzen arbeiten (ggf. mit C4 kombinierbar); für reifere Gruppen strukturellen Rassismus, eigene Privilegien, die Funktion von 'Othering' und rechtliche Aspekte (Antidiskriminierung) vertiefen. Bei Belastung/Krise: Vertrauensperson, SePAS/Schulpsychologie, Kanner- a Jugendtelefon 116 111, im Notfall 112.",
+    "duration": "ca. 90 Minuten (Doppelstunde); als Einzelstunde mit Kürzung der Vertiefung möglich",
+    "materialsNeeded": "Tafel/Flipchart; drei Einstiegs-Sätze sichtbar vorbereitet; pro Gruppe ein Set mit 5-6 fiktiven Alltagsaussagen/-situationen (Mikroaggression, Grenzfall, harmlos gemischt); Übersichtskarte 'So kann ich reagieren' (Betroffene / Beobachtende); Arbeitsblatt pro Jugendlichem; optional Projektor",
+    "remark": "Sensibles Thema, das viele direkt betrifft. Der Lernkern ist Sensibilisierung OHNE Beschämung: Es geht nicht darum, irgendjemanden als Rassist:in abzustempeln, sondern darum, die Lücke zwischen guter Absicht und verletzender Wirkung zu verstehen. Fordern Sie KEINE Erlebnisberichte von Betroffenen ein und machen Sie niemanden zum 'Repräsentanten' einer Gruppe ('Erklär uns mal, wie das bei euch ist'). Rechnen Sie damit, dass mehrere Jugendliche selbst regelmäßig Alltagsrassismus erleben - schaffen Sie einen sicheren Rahmen (kein Auslachen, Freiwilligkeit, Privatheit beim Arbeitsblatt) und seien Sie bereit, ein Einzelgespräch anzubieten. Achten Sie auch darauf, niemanden bloszustellen, der versehentlich eine Mikroaggression äußert - reagieren Sie aufklärend statt anklagend. Differenzierung: für jüngere/unsichere Gruppen (C4/ES) klare, eindeutige Beispiele und vorformulierte Reaktions-Bausteine nutzen, Fokus auf 'Absicht vs. Wirkung'; für reifere Gruppen Grenzfälle, strukturelle Dimension und die Beobachter-Rolle (Zivilcourage) vertiefen. Bei Belastung/Krise: Vertrauensperson, SePAS/Schulpsychologie, Kanner- a Jugendtelefon 116 111, im Notfall 112.",
     "etepStufen": [
       4,
       5
@@ -16461,90 +16461,85 @@ export const youth: Material[] = [
     "eldibGoals": [
       "V-26",
       "V-27",
-      "V-33",
-      "K-30",
+      "K-21",
+      "K-33",
+      "SOZ-31",
       "SOZ-32",
       "SOZ-37",
-      "SOZ-39",
-      "KOG-58",
-      "KOG-61"
+      "KOG-54",
+      "KOG-57",
+      "KOG-60"
     ],
     "worksheet": {
-      "title": "Alltagsrassismus erkennen und eingreifen",
-      "intro": "Dieses Blatt hilft dir, Alltagsrassismus zu erkennen, den Unterschied zwischen Absicht und Wirkung zu verstehen und Wege zu finden, einzugreifen statt wegzuschauen. Es geht ums Verstehen, nicht ums Anklagen. Du musst nichts Persönliches verraten - das Blatt bleibt bei dir.",
+      "title": "Alltagsrassismus & Mikroaggressionen - genauer hinhören",
+      "intro": "Rassismus ist nicht nur die offene Beschimpfung. Oft steckt er in kleinen Sätzen, die 'nicht böse gemeint' sind und trotzdem verletzen. Dieses Blatt hilft dir zu verstehen, warum Absicht und Wirkung zwei verschiedene Dinge sind, und wie man reagieren kann. Es geht nicht um Schuld oder Beichte - was du hier aufschreibst, bleibt bei dir.",
       "blocks": [
         {
           "kind": "heading",
-          "text": "1. Drei Begriffe, die du auseinanderhalten solltest"
-        },
-        {
-          "kind": "instruction",
-          "text": "VORURTEIL = schnelle Schublade im Kopf ('die sind so'), oft unbewusst. DISKRIMINIERUNG = wenn aus dem Vorurteil eine Benachteiligung wird. ALLTAGSRASSISMUS = kleine, oft 'nicht böse gemeinte' Sätze und Blicke, die Menschen wegen Herkunft, Hautfarbe, Sprache oder Religion immer wieder zu 'Anderen' machen."
+          "text": "1. Absicht und Wirkung sind nicht dasselbe"
         },
         {
           "kind": "question",
-          "text": "Erkläre mit eigenen Worten: Warum kann ein Satz verletzen, obwohl er 'nett gemeint' war? (Stichwort: Absicht ist nicht gleich Wirkung)",
+          "text": "Erkläre in eigenen Worten: Warum kann ein Satz verletzen, auch wenn er 'nicht böse gemeint' war? Nutze ein Beispiel von heute.",
           "lines": 3
         },
         {
           "kind": "heading",
-          "text": "2. Fallanalyse"
-        },
-        {
-          "kind": "table",
-          "text": "Trage zu den besprochenen Szenen ein - und ordne sie ein von 'unbedacht' bis 'offen abwertend':",
-          "lines": 5,
-          "items": [
-            "Szene (Stichwort)",
-            "Wie könnte sich die betroffene Person fühlen?",
-            "Absicht / Wirkung - dein Urteil"
-          ]
-        },
-        {
-          "kind": "question",
-          "text": "Warum ist 'war doch nur Spaß' oft keine gute Entschuldigung, wenn sich jemand verletzt fühlt?",
-          "lines": 2
-        },
-        {
-          "kind": "heading",
-          "text": "3. Eingreifen - meine Werkzeuge"
+          "text": "2. Was steckt eigentlich dahinter?"
         },
         {
           "kind": "instruction",
-          "text": "Du musst kein Held sein und dich nicht in Gefahr bringen. Es gibt abgestufte Wege: nachfragen ('Wie meinst du das?'), benennen ('Das ist rassistisch'), Betroffene stärken (sich danebenstellen, nachher hingehen), umlenken - und bei Bedrohung Hilfe holen (Lehrkraft, Aufsicht, im Notfall 112)."
+          "text": "Trage für jede Aussage ein, was gemeint sein KÖNNTE und was sie der angesprochenen Person eigentlich vermittelt."
         },
         {
-          "kind": "box",
-          "text": "Schreibe DREI Sätze/Reaktionen auf, die wirklich zu dir passen und die du dir zutraust:",
-          "lines": 4
-        },
-        {
-          "kind": "checklist",
-          "text": "Was kann ich tun, wenn ich Zeuge werde? Kreuze an, was für mich machbar ist:",
+          "kind": "table",
+          "text": "Aussagen analysieren:",
+          "lines": 4,
           "items": [
-            "kurz nachfragen 'Wie meinst du das?'",
-            "klar benennen 'Das geht zu weit'",
-            "mich neben die betroffene Person stellen",
-            "nachher hingehen: 'Ich fand das auch nicht okay'",
-            "Hilfe holen, wenn es bedrohlich wird"
+            "Aussage",
+            "Vermutlich gemeint",
+            "Vermittelt eigentlich"
           ]
         },
         {
           "kind": "heading",
-          "text": "4. Mein blinder Fleck"
+          "text": "3. Mikroaggression, Grenzfall oder harmlos?"
         },
         {
-          "kind": "question",
-          "text": "Was hat dich heute am meisten überrascht oder zum Nachdenken gebracht?",
-          "lines": 2
+          "kind": "instruction",
+          "text": "Kreuze deine Einschätzung an. Bei Grenzfällen gilt: Es kommt oft auf Ton und Situation an - das ist eine gute Antwort."
+        },
+        {
+          "kind": "checklist",
+          "items": [
+            "'Und woher kommst du WIRKLICH?' - Mikroaggression / Grenzfall / harmlos",
+            "'Du sprichst aber gut Deutsch.' - Mikroaggression / Grenzfall / harmlos",
+            "'Hast du am Wochenende Zeit?' - Mikroaggression / Grenzfall / harmlos",
+            "'Darf ich mal deine Haare anfassen?' - Mikroaggression / Grenzfall / harmlos",
+            "'Du bist ja gar nicht so, wie man bei euch denkt.' - Mikroaggression / Grenzfall / harmlos"
+          ]
         },
         {
           "kind": "heading",
-          "text": "5. Mein Standort"
+          "text": "4. So kann ich reagieren"
+        },
+        {
+          "kind": "question",
+          "text": "Stell dir vor, du beobachtest eine Mikroaggression in deiner Klasse. Was könntest du sagen oder tun, um die betroffene Person zu unterstützen?",
+          "lines": 3
+        },
+        {
+          "kind": "box",
+          "text": "Notiere zwei kurze Sätze, die du als BETROFFENE:R sagen könntest (z. B. ruhig nachfragen oder die Wirkung benennen):",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "5. Ehrlich zu mir selbst"
         },
         {
           "kind": "scale",
-          "text": "Wie sicher fühle ich mich, in einer solchen Situation tatsächlich etwas zu sagen? (1 = gar nicht sicher, 5 = sehr sicher)",
+          "text": "Wie sicher fühle ich mich, bei einer Mikroaggression angemessen zu reagieren - ohne jemanden vorzuführen? (1 = gar nicht sicher, 5 = sehr sicher)",
           "items": [
             "1",
             "2",
@@ -16555,7 +16550,7 @@ export const youth: Material[] = [
         },
         {
           "kind": "box",
-          "text": "Mein Merksatz und mein Vorsatz (z. B. 'Ich frage nach, statt wegzuschauen' / 'Niemand muss sich für seine Herkunft erklären'):",
+          "text": "Mein Vorsatz und mein Merksatz (z. B. 'Ich frage nicht mehr nach dem WIRKLICHEN Herkommen' / 'Wie es ankommt zählt, nicht wie es gemeint war'):",
           "lines": 2
         }
       ]
@@ -16564,10 +16559,185 @@ export const youth: Material[] = [
     "source": "generated"
   },
   {
-    "id": "schubladen-im-kopf-wie-vorurteile-entstehen-warum-wir-gegen-die-so-schnell-kippt-und-wie-man-gegensteuert",
-    "title": "Schubladen im Kopf: Wie Vorurteile entstehen, warum 'wir gegen die' so schnell kippt - und wie man gegensteuert",
+    "id": "nicht-wegschauen-zivilcourage-gegen-diskriminierung-projekt-mit-aktion",
+    "title": "Nicht wegschauen - Zivilcourage gegen Diskriminierung (Projekt mit Aktion)",
     "author": "ISA-Toolbox",
     "ageLevels": [
+      "ES"
+    ],
+    "type": [
+      "Projet"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Plenum für Auftakt, Zwischenstände und Präsentation der Aktion"
+      },
+      {
+        "mode": "Grupp",
+        "note": "feste Projektteams 3-5, jedes Team verantwortet einen Aktionsbaustein"
+      },
+      {
+        "mode": "Individuel",
+        "note": "persönliche Reflexion zur eigenen Rolle und zum eigenen Beitrag"
+      }
+    ],
+    "themes": [
+      "diskriminierung-vielfalt",
+      "demokratie-engagement",
+      "kooperation"
+    ],
+    "tags": [
+      "Jugend",
+      "Zivilcourage",
+      "Diskriminierung",
+      "Rassismus",
+      "Engagement",
+      "Projekt",
+      "Bystander",
+      "Verantwortung"
+    ],
+    "shortDescription": "Wenn vor unseren Augen jemand beleidigt, ausgegrenzt oder rassistisch angegangen wird, schauen die meisten weg - nicht aus Bosheit, sondern aus Unsicherheit, Angst oder weil sie denken, jemand anderes wird schon eingreifen. Dieses Projekt verwandelt diese passive Haltung in Handlungsfähigkeit. Über mehrere Einheiten erforschen Jugendliche, warum Menschen in Gruppen oft nicht eingreifen (Zuschauer-Effekt, Verantwortungsdiffusion), lernen erprobte und sichere Strategien der Zivilcourage kennen (die '5 D' / Ablenken, Delegieren, Dokumentieren, Direkt ansprechen, Danach kümmern) und entwickeln daraus eine eigene Aktion für ihre Schule - etwa eine Plakat- oder Social-Media-Kampagne, einen Verhaltens-Kodex für die Klasse, kurze Erklärvideos oder eine interaktive Ausstellung. So wird aus abstraktem 'Man müsste mal' konkretes, sicheres Handeln. Der Schwerpunkt liegt auf realistischer, gefahrloser Hilfe (sich selbst nicht in Gefahr bringen) und auf Wirksamkeit: Schon ein Satz oder ein Blick kann den Unterschied machen. Das Arbeitsblatt strukturiert die Projektarbeit, sichert die Strategien und fördert die Reflexion der eigenen Rolle.",
+    "ablauf": [
+      {
+        "title": "Auftakt - 'Warum hat keiner was gesagt?'",
+        "text": "Beginnen Sie mit einer realistischen, fiktiven Szene (kurz vorgelesen oder als kurzer Clip): In einem vollen Bus wird eine Person rassistisch beleidigt - zwanzig Menschen sind dabei, niemand sagt etwas. Fragen Sie: 'Warum greift in so einer Situation oft niemand ein - obwohl die meisten es falsch finden?' Sammeln Sie ehrlich die Gründe (Angst, Unsicherheit 'Wie reagiere ich?', 'Geht mich nichts an', 'Die anderen machen ja auch nichts', Angst, selbst zur Zielscheibe zu werden). Führen Sie den Zuschauer-Effekt und die Verantwortungsdiffusion ein: Je mehr Leute dabei sind, desto unwahrscheinlicher greift einer ein - jeder denkt, ein anderer macht es. Machen Sie das Projektziel klar: 'Am Ende habt ihr nicht nur verstanden, warum Wegschauen passiert - ihr habt etwas entwickelt, das andere zum Hinsehen und Handeln bringt.' Stellen Sie die möglichen Aktionsformate vor (Kampagne, Klassen-Kodex, Erklärvideos, Ausstellung). Moderationshinweis: Niemanden für ehrliche 'Ich hätte wohl auch weggeschaut'-Antworten verurteilen - genau diese Ehrlichkeit ist der Startpunkt. Betonen Sie früh: Es geht NIE darum, sich selbst in Gefahr zu bringen."
+      },
+      {
+        "title": "Wissensbasis - Die Werkzeuge der Zivilcourage",
+        "text": "Input und gemeinsame Erarbeitung der zentralen, sicheren Handlungsstrategien - die '5 D': (1) ABLENKEN/Stören: indirekt eingreifen, ohne die Situation anzuheizen (zur betroffenen Person gehen und sie in ein Gespräch verwickeln, nach der Uhrzeit fragen, etwas 'fallen lassen') - bringt Ruhe und unterbricht. (2) DELEGIEREN: Hilfe holen, andere gezielt ansprechen ('Sie da im roten Pulli, helfen Sie mir mal'), Busfahrer:in, Lehrkraft, Erwachsene einbinden. (3) DOKUMENTIEREN: aus sicherer Entfernung beobachten, ggf. festhalten - aber nur, wenn andere bereits helfen, und das Material der betroffenen Person überlassen. (4) DIREKT ansprechen: die Tat klar benennen ('Hören Sie auf damit, das ist Diskriminierung') - nur wenn es sicher ist. (5) DANACH kümmern: nach der Situation auf die betroffene Person zugehen, fragen, ob alles okay ist, Beistand leisten - oft das Wirksamste und immer Sichere. Kernregel an die Tafel: Eigene Sicherheit zuerst - Held sein heißt nicht, sich selbst in Gefahr zu bringen, sondern klug zu helfen. Die Teams sammeln zusätzlich Beispiele für Diskriminierung im Schulalltag (Ausgrenzung, Sprüche, 'Witze', Cybermobbing). Moderationshinweis: an realistischen Schulsituationen festmachen, nicht nur an dramatischen Bus-Szenen; die meisten Gelegenheiten zur Zivilcourage sind alltäglich und klein."
+      },
+      {
+        "title": "Projektarbeit I - Konzept & Planung in Teams",
+        "text": "Die Projektteams wählen je ein Aktionsformat und entwickeln ein Konzept. Mögliche Bausteine: A) PLAKAT-/SOCIAL-MEDIA-KAMPAGNE mit klaren Botschaften und den 5 D (Slogans, die zum Hinsehen auffordern). B) KLASSEN-/SCHUL-KODEX: gemeinsam vereinbarte Regeln für ein diskriminierungsfreies Miteinander, inkl. 'Was tun wir, wenn doch etwas passiert?'. C) KURZE ERKLÄRVIDEOS/REELS, die eine Strategie anschaulich zeigen. D) INTERAKTIVE AUSSTELLUNG/STATIONEN für andere Klassen (Mitmach-Quiz, Perspektivwechsel-Station, Selbsttest 'Wie würdest du reagieren?'). Jedes Team klärt mit einem Planungsraster auf dem Arbeitsblatt: Botschaft (was sollen andere mitnehmen?), Zielgruppe, Format, Arbeitsschritte, Aufgabenverteilung, benötigtes Material, Zeitplan. Moderationshinweis: herumgehen, auf Realisierbarkeit und auf eine klare, positive Kernbotschaft achten ('Hinsehen statt Wegschauen' wirkt besser als reines Verbot). Bestehen Sie darauf, dass die sicheren Handlungsstrategien in jeder Aktion auftauchen - die Aktion soll andere befähigen, nicht nur empören."
+      },
+      {
+        "title": "Projektarbeit II - Umsetzung & Probe",
+        "text": "Die Teams setzen ihre Aktion um (Plakate gestalten, Videos drehen/schneiden, Kodex formulieren und schön aufbereiten, Ausstellungsstationen bauen). Planen Sie eine Zwischenpräsentation ('Pitch') ein, in der jedes Team seinen Stand zeigt und konstruktives Feedback der Klasse einholt: Ist die Botschaft klar? Spricht es die Zielgruppe an? Sind die Strategien richtig und sicher dargestellt? Danach überarbeiten die Teams. Klären Sie das Organisatorische der späteren Veröffentlichung/Präsentation (Wo hängen die Plakate? Wer wird eingeladen? Genehmigungen der Schulleitung? Bei Videos/Social Media: Rechte, Einverständnis, Datenschutz). Moderationshinweis: auf fachliche Korrektheit achten (keine gefährlichen 'Heldentaten' propagieren), auf wertschätzende Sprache und auf Qualität, die sich zu zeigen lohnt. Würdigen Sie Teamarbeit und Verlässlichkeit - ein Projekt steht und fällt mit dem Einhalten von Absprachen."
+      },
+      {
+        "title": "Aktion & Präsentation - Wirkung entfalten",
+        "text": "Die Aktion geht 'live': Die Kampagne wird ausgehängt/veröffentlicht, die Ausstellung für andere Klassen geöffnet, der Kodex feierlich verabschiedet und sichtbar aufgehängt, die Videos gezeigt. Jedes Team stellt kurz vor, was es entwickelt hat und WARUM (Botschaft, Strategie). Wenn möglich, holen Sie eine echte Resonanz ein (Rückmeldungen der Besucher:innen, kurze Umfrage 'Was nimmst du mit?'). Würdigen Sie jedes Team konkret. Moderationshinweis: Machen Sie die Wirksamkeit sichtbar - schon dass andere Schüler:innen über Zivilcourage nachdenken, ist ein Erfolg. Betonen Sie: Das ist gelebte Demokratie und Verantwortung füreinander."
+      },
+      {
+        "title": "Reflexion & Transfer - Meine Rolle, wenn es darauf ankommt",
+        "text": "Stille, freiwillige Einzelreflexion auf dem Arbeitsblatt: Welche der 5 D passt am besten zu mir - was traue ich mir realistisch zu? Was hat das Projekt an meiner Haltung verändert? In welcher echten Situation (Schule, Bus, online) könnte ich das nächste Mal etwas tun? Lassen Sie jede:n einen konkreten, machbaren Vorsatz formulieren - bewusst klein und realistisch (z. B. 'Ich gehe nach einer fiesen Situation auf die Person zu' / 'Ich hole Hilfe, statt nur zuzusehen'). Reflektieren Sie auch im Plenum: Was war schwer, was sind wir stolz? Schlusssatz: 'Zivilcourage heißt nicht, der mutigste Mensch der Welt zu sein. Es heißt, nicht wegzuschauen - und es gibt immer einen sicheren Weg zu helfen.' Weisen Sie darauf hin, dass man bei eigener Betroffenheit oder Bedrohung jederzeit Erwachsene und Anlaufstellen einbeziehen darf und soll."
+      }
+    ],
+    "duration": "Projekt über ca. 4-6 Einheiten (je 50-90 Min) plus Aktionstag/Präsentation; flexibel als Projektwoche umsetzbar",
+    "materialsNeeded": "Einstiegs-Szene (Text oder kurzer Clip); Übersichtskarte '5 D der Zivilcourage'; Beispiele für Diskriminierung im Schulalltag; Plakatpapier, Stifte, Marker; Geräte für Video/Design (Tablets/Smartphones, Schnitt-App) je nach Format; Drucker; Material für Ausstellungsstationen; Arbeitsblatt/Projektmappe pro Team und pro Person; Abstimmung mit Schulleitung für Aushang/Veröffentlichung",
+    "remark": "Handlungsorientiertes, motivierendes Projekt, das Wissen in echtes Engagement übersetzt. Zentrale Sicherheitsregel, die durchgängig betont werden muss: Zivilcourage heißt NIE, sich selbst in Gefahr zu bringen - die Aktion darf keine riskanten 'Heldentaten' propagieren (kein Dazwischengehen bei körperlicher Gewalt), sondern sichere Wege (ablenken, Hilfe holen, danach kümmern). Achten Sie darauf, dass mehrere Jugendliche selbst Diskriminierung erleben; das Projekt soll stärken, nicht zur Selbstoffenbarung zwingen - persönliche Erlebnisse einzubringen ist immer freiwillig. Bei Social-Media-Aktionen Datenschutz, Persönlichkeitsrechte und Einverständnis klären; bei Aushängen die Schulleitung einbinden. Differenzierung: leistungsstärkere/ältere Teams können anspruchsvollere Formate (Videoreihe, schulweite Ausstellung) übernehmen, andere klar strukturierte Bausteine (Plakat mit vorgegebenem Raster, Klassen-Kodex); Rollen nach Stärken verteilen (Schreiben, Gestalten, Technik, Präsentieren). Bei Belastung/Krise: Vertrauensperson, SePAS/Schulpsychologie, Kanner- a Jugendtelefon 116 111, im Notfall 112.",
+    "etepStufen": [
+      4,
+      5
+    ],
+    "eldibGoals": [
+      "V-27",
+      "V-28",
+      "V-30",
+      "V-32",
+      "K-28",
+      "K-34",
+      "SOZ-34",
+      "SOZ-39",
+      "SOZ-41",
+      "KOG-61"
+    ],
+    "worksheet": {
+      "title": "Nicht wegschauen - meine Projektmappe Zivilcourage",
+      "intro": "Dieses Blatt begleitet euer Projekt von der Idee bis zur Aktion - und hilft dir am Ende, deine eigene Rolle zu klären. Zivilcourage heißt nicht, der mutigste Mensch zu sein, sondern klug und sicher zu helfen, statt wegzuschauen. Die persönlichen Teile bleiben bei dir.",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "1. Warum schauen Menschen weg?"
+        },
+        {
+          "kind": "question",
+          "text": "Erkläre in eigenen Worten den Zuschauer-Effekt: Warum greift in einer großen Gruppe oft NIEMAND ein, obwohl die meisten es falsch finden?",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "2. Die 5 D - meine Werkzeuge"
+        },
+        {
+          "kind": "instruction",
+          "text": "Ordne jeder Strategie ein konkretes Beispiel zu, wie man sie im Schulalltag anwenden könnte."
+        },
+        {
+          "kind": "table",
+          "text": "Die 5 D der Zivilcourage:",
+          "lines": 5,
+          "items": [
+            "Strategie",
+            "Konkretes Beispiel in der Schule"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "3. Unser Aktions-Konzept"
+        },
+        {
+          "kind": "lines",
+          "text": "Unser Format (Kampagne / Kodex / Video / Ausstellung) und unsere Kernbotschaft - was sollen andere mitnehmen?",
+          "lines": 3
+        },
+        {
+          "kind": "table",
+          "text": "Unser Projektplan:",
+          "lines": 5,
+          "items": [
+            "Arbeitsschritt",
+            "Wer macht es?",
+            "Bis wann?"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "4. Sicherheit zuerst"
+        },
+        {
+          "kind": "checklist",
+          "text": "Prüft eure Aktion: Vermittelt sie nur SICHERE Hilfe? Kreuzt ab, was zutrifft.",
+          "items": [
+            "Unsere Aktion fordert NICHT auf, sich selbst in Gefahr zu bringen",
+            "Wir zeigen mindestens zwei sichere Strategien (z. B. Hilfe holen, danach kümmern)",
+            "Unsere Sprache ist wertschätzend, nicht nur verbietend",
+            "Bei Fotos/Videos haben wir das Einverständnis aller Beteiligten",
+            "Die Kernbotschaft ist klar und befähigt andere zum Handeln"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "5. Meine Rolle, wenn es darauf ankommt"
+        },
+        {
+          "kind": "scale",
+          "text": "Wie wahrscheinlich ist es, dass ich beim nächsten Mal NICHT wegschaue, sondern auf eine sichere Art helfe? (1 = unwahrscheinlich, 5 = sehr wahrscheinlich)",
+          "items": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ]
+        },
+        {
+          "kind": "box",
+          "text": "Welche der 5 D passt am besten zu mir - und in welcher echten Situation könnte ich sie anwenden? Schreibe deinen persönlichen, machbaren Vorsatz auf:",
+          "lines": 3
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "schubladen-im-kopf-wie-vorurteile-und-stereotype-entstehen",
+    "title": "Schubladen im Kopf - wie Vorurteile und Stereotype entstehen",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "C4",
       "ES"
     ],
     "type": [
@@ -16576,149 +16746,135 @@ export const youth: Material[] = [
     "participants": [
       {
         "mode": "Klass",
-        "note": "Plenum für Einstieg, Experiment und Auswertung, ca. 12-26 Jugendliche"
+        "note": "Plenum für Experimente, Input und Auswertung, ca. 12-26 Jugendliche"
       },
       {
         "mode": "Grupp",
-        "note": "Kleingruppen 3-4 für Analyse, Gegen-Beispiele und das Aufdecken von Stereotypen"
+        "note": "Kleingruppen 3-4 für die Analyse von Stereotypen und Gegen-Beispielen"
       },
       {
         "mode": "Individuel",
-        "note": "stille, freiwillige Selbsteinschätzung zu eigenen Schubladen - bleibt privat"
+        "note": "stille, freiwillige Selbstreflexion zu eigenen Schubladen - bleibt privat"
       }
     ],
     "themes": [
       "diskriminierung-vielfalt",
-      "selbstwahrnehmung",
-      "medien"
+      "fremdwahrnehmung",
+      "selbstwahrnehmung"
     ],
     "tags": [
       "Jugend",
       "Vorurteile",
       "Stereotype",
       "Schubladendenken",
-      "unbewusste Vorurteile",
-      "Diskriminierung",
-      "Medien",
-      "Perspektivwechsel"
+      "Vielfalt",
+      "Gehirn",
+      "Empathie",
+      "Selbstreflexion"
     ],
-    "shortDescription": "Vorurteile sind kein Zeichen, dass jemand ein schlechter Mensch ist - sie entstehen, weil unser Gehirn die Welt blitzschnell in Schubladen sortiert, um sich zu entlasten. Das Problem beginnt, wenn diese automatischen Schubladen unbemerkt unser Verhalten steuern, wenn aus 'praktischer Vereinfachung' starre Stereotype werden und wenn das 'Wir' sich auf Kosten der 'Anderen' aufwertet. In dieser Doppelstunde verstehen Jugendliche den Mechanismus hinter Vorurteilen (schnelles Schubladendenken, Bestätigungsfalle, Gruppenzugehörigkeit), erleben in einem kurzen Selbstexperiment, wie automatisch sie selbst urteilen, und durchschauen, wie Medien, Memes und Algorithmen Stereotype verstärken. Vor allem aber lernen sie, dass man Vorurteile zwar nicht ganz abschalten, aber bewusst überprüfen und korrigieren kann - durch Innehalten, Nachfragen und echte Begegnung. Ziel ist kein moralischer Zeigefinger, sondern Selbsterkenntnis und mentale Werkzeuge gegen das eigene Schubladendenken. Das Arbeitsblatt sichert den Mechanismus, ein ehrliches Selbstexperiment, eine Medienanalyse und konkrete Gegenstrategien.",
+    "shortDescription": "Vorurteile sind nicht das Problem böser Menschen - sie sind ein normaler, automatischer Vorgang im Gehirn jedes Menschen. Um die Flut an Eindrücken zu bewältigen, sortiert unser Kopf blitzschnell in Kategorien und 'Schubladen'. Das hilft im Alltag, führt aber auch dazu, dass wir Menschen vorschnell beurteilen, bevor wir sie kennen. Diese Doppelstunde nimmt den Mechanismus ehrlich auseinander: Jugendliche erleben in kleinen Experimenten ihre eigenen automatischen Bewertungen, verstehen den Unterschied zwischen einem (oft unbewussten) Vorurteil und einer aktiven Diskriminierung, und lernen, wie aus 'Wir gegen Die'-Denken (In-Group/Out-Group) gefährliche Verallgemeinerungen werden. Der entscheidende Schritt: Nicht so zu tun, als hätte man keine Vorurteile - das hat jeder -, sondern sie zu bemerken und bewusst zu hinterfragen. Ziel ist nicht Schuld, sondern Selbsterkenntnis und die Fähigkeit, die eigenen Schubladen zu öffnen. Das Arbeitsblatt sichert die Mechanismen, deckt eigene Stereotype auf und übt, ihnen mit Differenzierung und Neugier zu begegnen.",
     "ablauf": [
       {
-        "title": "Einstieg - Das Gehirn sortiert blitzschnell",
-        "text": "Steigen Sie mit einem kleinen, ehrlichen Gedankenexperiment ein. Nennen Sie nacheinander einige neutrale Stichworte ('eine Person, die Fußball spielt', 'jemand, der gut in Mathe ist', 'ein Familienvater', 'eine Person mit Kopftuch') und bitten Sie die Jugendlichen, still für sich das erste innere Bild zu bemerken: Wie sieht die Person aus, wie alt, welches Geschlecht? KEINE Antworten laut - nur bemerken. Fragen Sie dann: 'Hattet ihr sofort ein Bild im Kopf? Woher kam das?' Machen Sie sichtbar: Unser Gehirn füllt Lücken automatisch mit Erwartungen - das ist normal und entlastet uns. Schlüsselgedanke: Eine Schublade im Kopf zu haben, macht niemanden zum schlechten Menschen - entscheidend ist, was man damit macht. Leitfrage: 'Wann ist so eine schnelle Schublade praktisch - und wann wird sie gefährlich?' Moderationshinweis: sicherer, wertfreier Rahmen; betonen Sie, dass das Experiment niemanden überführen soll, sondern zeigt, wie alle Gehirne ticken. Grundregel: kein Auslachen, ehrlich mit sich selbst sein. Das gemeinsame Eingeständnis 'ich hatte auch sofort ein Bild' nimmt Druck und Scham."
+        "title": "Einstieg - Das schnelle Urteil",
+        "text": "Starten Sie mit einem kurzen Wahrnehmungs-Experiment. Zeigen Sie nacheinander einige neutrale Porträtfotos verschiedener Menschen (sehr kurz, wenige Sekunden) und lassen Sie jede:n für sich SPONTAN auf das Arbeitsblatt notieren: Beruf? Sympathisch oder nicht? Vertrauenswürdig? Danach die Aufdeckung im Plenum (ohne Namensnennung): 'Wie schnell hattet ihr ein Urteil - eine halbe Sekunde?' Sammeln Sie, wie unterschiedlich und wie sicher die Einschätzungen waren, obwohl niemand diese Menschen kennt. Stellen Sie die Schlüsselfrage: 'Woher kamen diese Urteile so blitzschnell - und stimmen sie überhaupt?' Führen Sie das Bild der Schubladen ein: Unser Kopf sortiert automatisch. Machen Sie das Stundenziel klar: 'Heute geht es NICHT darum, sich für Vorurteile zu schämen - die hat jeder Mensch. Es geht darum zu verstehen, woher sie kommen, und wie man verhindert, dass sie unfair werden.' Moderationshinweis: entlastend rahmen - die spontanen Urteile sind normal, nicht peinlich; gerade ihre Selbstverständlichkeit ist die Lektion."
       },
       {
-        "title": "Klärung - Vom praktischen Sortieren zum starren Stereotyp",
-        "text": "Sachlicher Kurzinput (max. 12 Min). Erklären Sie die Mechanik in drei Schritten: (1) SCHUBLADENDENKEN: Das Gehirn kategorisiert, um schnell zu sein - sinnvoll bei Gefahr, problematisch bei Menschen. (2) STEREOTYP: Wenn die Schublade starr wird ('alle X sind Y') und man Einzelne nicht mehr sieht, sondern nur die Gruppe. (3) BESTÄTIGUNGSFALLE: Wir merken uns vor allem das, was unser Vorurteil bestätigt, und übersehen die vielen Gegenbeispiele - so wird das Vorurteil scheinbar 'immer wieder bewiesen'. Vierter, sozialer Baustein: WIR gegen DIE - Menschen werten oft die eigene Gruppe auf und fremde Gruppen ab, um dazuzugehören; das macht Vorurteile besonders zäh und gefährlich, weil sie Gemeinschaft stiften. Machen Sie den entscheidenden Punkt: Man kann das automatische Auftauchen von Schubladen kaum verhindern - aber man kann sie BEMERKEN und ÜBERPRÜFEN, bevor man danach handelt. Begriffe an die Tafel: Schublade - Stereotyp - Bestätigungsfalle - Wir/Die. Kernsatz: 'Das erste Bild kommt automatisch. Das zweite Denken ist deine Entscheidung.'"
+        "title": "Input - Warum das Gehirn in Schubladen denkt",
+        "text": "Sachlicher Kurzinput (max. 15 Min). (1) WARUM ÜBERHAUPT: Das Gehirn wird mit Reizen überflutet und muss vereinfachen. Es bildet Kategorien ('Stuhl', 'Hund', 'Lehrer') - das ist überlebenswichtig und meist nützlich. Bei MENSCHEN führt dasselbe Sortieren aber zu Stereotypen: vereinfachten Bildern über ganze Gruppen ('die sind alle...'). (2) WIE STEREOTYPE ENTSTEHEN: durch Wiederholung (Medien, Sprüche, Bilder, die wir tausendfach sehen), durch Übernahme aus dem Umfeld, und durch den Hang, das Eigene als 'normal' und das Andere als 'anders' zu sehen. (3) IN-GROUP / OUT-GROUP: Wir teilen unbewusst in 'Wir' (die eigene Gruppe - differenziert gesehen) und 'Die Anderen' (über einen Kamm geschoren). Bei 'den Anderen' fällt uns Vielfalt schwerer auf - das ist der Boden für Verallgemeinerungen. (4) DER WICHTIGE UNTERSCHIED: Ein Vorurteil ist ein Gedanke/Gefühl (oft unbewusst, hat fast jeder). Diskriminierung ist das HANDELN danach - jemanden deswegen schlechter behandeln. Den ersten kann man kaum verhindern, das zweite schon. Begriffe an die Tafel: Kategorie, Stereotyp, Vorurteil, Diskriminierung, In-Group/Out-Group. Moderationshinweis: Den entlastenden Kern stark machen - 'Vorurteile haben heißt nicht, ein schlechter Mensch sein. Sie NICHT zu hinterfragen, das wird zum Problem.'"
       },
       {
-        "title": "Erarbeitung - Stereotype und Gegenbeispiele",
-        "text": "Kleingruppen arbeiten an zwei Aufgaben. Aufgabe 1 - Stereotype aufdecken: Geben Sie verbreitete 'Alle ...'-Sätze vor (z. B. 'Jungs können nicht über Gefühle reden', 'Mädchen sind schlecht in Technik', 'Alte Menschen verstehen das Internet nicht', 'Wer einen bestimmten Akzent hat, ist ungebildet', 'Sportliche sind dumm'). Die Gruppen benennen je: Welches Stereotyp steckt dahinter? Und finden sofort EIN konkretes Gegenbeispiel aus ihrem echten Umfeld. Ziel: erleben, wie leicht jedes Stereotyp zu widerlegen ist - und wie die Bestätigungsfalle die Gegenbeispiele sonst ausblendet. Aufgabe 2 - die Folgen: Was kann passieren, wenn man Menschen nur durch die Schublade sieht (übersieht Talente, behandelt unfair, schließt aus, verletzt)? Ergebnisse aufs Arbeitsblatt. Auswertung im Plenum: gemeinsam herausarbeiten, dass hinter jeder Schublade unzählige verschiedene Einzelmenschen stehen. Moderationshinweis: herumgehen, ermutigen; falls eine Gruppe ein Stereotyp 'verteidigt' ('stimmt doch oft'), ruhig mit der Bestätigungsfalle und Gegenbeispielen kontern, nicht mit Empörung."
+        "title": "Erarbeitung - Stereotype sammeln und sprengen",
+        "text": "Kleingruppen bekommen je eine Gruppen-Kategorie, über die es bekannte Stereotype gibt (bewusst breit und teils auf die Schüler:innen selbst gemünzt, um Distanz zu vermeiden, z. B. 'Teenager', 'Mädchen/Jungen', 'Gamer', 'Influencer', 'Ältere Menschen', 'Menschen aus Land X', 'Fußballfans'). Aufgabe 1: Welche Stereotype kennt man über diese Gruppe (ohne dass ihr sie teilen müsst)? Aufgabe 2: Findet GEGEN-Beispiele - Menschen/Fälle, die das Stereotyp widerlegen. Aufgabe 3: Was geht verloren, wenn man alle in diese eine Schublade steckt? Lassen Sie bewusst auch eine Gruppe bearbeiten, die die Jugendlichen SELBST betrifft ('Teenager sind...') - so erleben sie am eigenen Leib, wie unfair Pauschalurteile sind. Jede Gruppe bereitet ihr stärkstes Gegen-Beispiel vor. Moderationshinweis: herumgehen, betonen, dass das Benennen eines Stereotyps NICHT bedeutet, es zu teilen; auf wertschätzende Sprache achten und abwertende Inhalte sofort einordnen. Kerneinsicht herausarbeiten: Jede Schublade ist zu klein für einen echten Menschen."
       },
       {
-        "title": "Vertiefung - Wie Medien, Memes und Algorithmen Schubladen füttern",
-        "text": "Plenum und Kleingruppen. Machen Sie sichtbar, dass unsere Schubladen nicht im luftleeren Raum entstehen, sondern täglich gefüttert werden: Filme und Serien zeigen bestimmte Gruppen oft in immer denselben Rollen (Klischee-Bösewicht, 'lustiger Sidekick', 'Opfer'); Memes leben von Übertreibung und Stereotyp; und Algorithmen zeigen uns bevorzugt, was unsere Meinung bestätigt - so verengt sich der Blick (Filterblase). Lassen Sie die Gruppen Beispiele sammeln oder beschreiben: Welche Gruppe wird in Filmen/Games/Memes oft wie dargestellt? Was fehlt, was wird ausgeblendet? Diskutieren Sie die Schlüsselfrage: 'Wenn ich eine Gruppe fast nur durch Klischeebilder kenne - woher soll mein Kopf dann ein realistisches Bild nehmen?' Erarbeiten Sie als Gegenmittel: bewusst andere Perspektiven suchen, echte Begegnungen zählen mehr als Bildschirm-Klischees, Quellen und Absichten hinterfragen. Moderationshinweis: keine echte Hetze oder beleidigende Memes im Unterricht reproduzieren - beschreibend und kritisch arbeiten. Betonen Sie: Wer durchschaut, wie Stereotype gemacht werden, lässt sich schlechter steuern."
+        "title": "Vertiefung - Vom Vorurteil zur Diskriminierung",
+        "text": "Plenum. Lassen Sie Gegen-Beispiele vorstellen und greifen Sie besonders die 'Teenager'-Gruppe auf: 'Wie fühlt es sich an, wenn Erwachsene euch alle für faul/am-Handy/respektlos halten?' - der Perspektivwechsel macht den Schmerz von Pauschalurteilen direkt erfahrbar. Arbeiten Sie dann die Kette heraus, wie aus harmlosem Sortieren Unrecht wird: Kategorie -> Stereotyp -> Vorurteil (Gefühl) -> Diskriminierung (Handlung) -> im Extrem Ausgrenzung. Markieren Sie die entscheidende Stelle: zwischen Vorurteil und Handlung liegt EINE Wahl - hier kann jeder eingreifen. Diskutieren Sie konkrete Strategien, die eigenen Schubladen zu öffnen: bewusst innehalten ('Ist das ein Fakt oder ein Stereotyp?'), die Person als Individuum sehen, Kontakt und echte Begegnung suchen (nichts baut Vorurteile so ab wie persönliches Kennenlernen), die eigenen Quellen prüfen (woher habe ich dieses Bild?). Moderationshinweis: betonen, dass es um Bewusstheit geht, nicht um Perfektion; und dass Neugier auf Menschen das beste Gegenmittel gegen Schubladen ist."
       },
       {
-        "title": "Reflexion & Transfer - Meine Schubladen, mein Stopp-Knopf",
-        "text": "Stille, freiwillige Einzelreflexion auf dem Arbeitsblatt: Welche Schublade ertappe ich bei mir selbst manchmal? In welcher Situation habe ich mich schon mal in einer Person getäuscht, weil ich sie zu schnell einsortiert hatte? Betonen Sie Freiwilligkeit und Privatheit - das Blatt bleibt bei den Jugendlichen, niemand muss seine Vorurteile öffentlich beichten. Würdigen Sie ausdrücklich die Ehrlichkeit: Eigene Schubladen zuzugeben ist reif, nicht peinlich. Führen Sie den 'Stopp-Knopf' als Werkzeug ein: kurz innehalten - 'Ist das gerade ein Fakt oder eine Schublade?' - eine zweite, individuelle Sicht zulassen. Lassen Sie jede:n einen Merksatz und einen Vorsatz festhalten ('Das erste Bild kommt automatisch - das zweite Denken entscheide ich' / 'Ich suche das Gegenbeispiel' / 'Ich sehe den Menschen, nicht die Gruppe'). Sammeln Sie zum Abschluss freiwillig Erkenntnisse. Schlusssatz: 'Niemand ist vorurteilsfrei - das ist auch nicht das Ziel. Das Ziel ist, die eigenen Schubladen zu kennen, sie zu hinterfragen und Menschen eine echte Chance zu geben, mehr zu sein als das erste Bild im Kopf.' Weisen Sie sensibel auf Hilfe hin, falls jemand selbst unter Stereotypen oder Ausgrenzung leidet."
+        "title": "Reflexion & Transfer - Meine eigenen Schubladen",
+        "text": "Stille, freiwillige Einzelreflexion auf dem Arbeitsblatt: Welche Schublade ertappe ich bei mir selbst manchmal? Wann wurde ICH schon einmal in eine Schublade gesteckt, in die ich nicht passe - wie hat sich das angefühlt? Betonen Sie ausdrücklich Freiwilligkeit und Privatheit - das ist Selbsterkenntnis, keine Beichte, und das ehrliche Zugeben eigener Vorurteile ist ein Zeichen von Reife, nicht von schlechtem Charakter. Lassen Sie jede:n eine konkrete Strategie und einen Merksatz festhalten ('Ich halte kurz inne, bevor ich urteile' / 'Erst kennenlernen, dann urteilen'). Sammeln Sie zum Abschluss freiwillig Erkenntnisse. Schlusssatz: 'Schubladen im Kopf hat jeder Mensch - das ist normal. Der Unterschied liegt darin, ob man sie für die Wahrheit hält oder ob man bereit ist, sie zu öffnen.' Weisen Sie sensibel darauf hin, dass man sich Unterstützung holen darf, wenn man selbst unter Vorurteilen und Ausgrenzung leidet."
       }
     ],
-    "duration": "ca. 90 Minuten (Doppelstunde); als Einzelstunde mit Fokus auf Mechanik und Stereotyp-Aufgabe kürzbar",
-    "materialsNeeded": "Tafel/Flipchart; Kärtchen mit neutralen Stichworten für das Einstiegs-Experiment; Karten mit 'Alle ...'-Stereotypen; Infokarte 'Schublade - Stereotyp - Bestätigungsfalle - Wir/Die'; ggf. anonymisierte Beschreibungen von Medien-/Meme-Klischees (keine echten beleidigenden Inhalte); Arbeitsblatt pro Jugendlichem",
-    "remark": "Das Thema berührt jeden, weil ausnahmslos alle Menschen Vorurteile haben - genau das ist die entlastende, scham-reduzierende Kernbotschaft. Vermeiden Sie jeden moralischen Zeigefinger und jede Beschämung; arbeiten Sie konsequent mit der Unterscheidung 'Schublade haben' (normal, unvermeidlich) und 'danach handeln' (Verantwortung). Achten Sie darauf, das Einstiegs-Experiment so zu rahmen, dass es niemanden vorführt, sondern Selbsterkenntnis ermöglicht - keine Antworten laut abfragen. Reproduzieren Sie KEINE echten hetzerischen oder beleidigenden Memes/Medieninhalte; arbeiten Sie beschreibend und kritisch. Seien Sie sich bewusst, dass Jugendliche im Raum selbst Ziel von Stereotypen sein können (Geschlecht, Herkunft, Aussehen, Religion, Leistung); machen Sie niemanden zum Beispiel und stellen Sie niemanden bloß. Greifen Sie 'stimmt doch oft'-Einwände sachlich über die Bestätigungsfalle und Gegenbeispiele auf, nicht mit Empörung - das überzeugt nachhaltiger. Differenzierung: für jüngere/unsichere Gruppen mit dem Experiment, klaren Stereotyp-Karten und Gegenbeispielen arbeiten; für reifere Gruppen unbewusste Bias-Mechanismen, Filterblasen/Algorithmen, Eigengruppen-Bevorzugung und den Schritt vom individuellen Vorurteil zur strukturellen Diskriminierung vertiefen. Bei Belastung/Krise: Vertrauensperson, SePAS/Schulpsychologie, Kanner- a Jugendtelefon 116 111, im Notfall 112.",
+    "duration": "ca. 90 Minuten (Doppelstunde); als Einzelstunde mit Kürzung der Erarbeitung möglich",
+    "materialsNeeded": "Tafel/Flipchart; einige neutrale Porträtfotos für das Einstiegs-Experiment (Projektor oder Ausdrucke); pro Gruppe eine Gruppen-Kategorie als Arbeitskarte; Übersichtskarte mit der Kette Kategorie -> Stereotyp -> Vorurteil -> Diskriminierung; Arbeitsblatt pro Jugendlichem",
+    "remark": "Grundlegendes Thema, das Diskriminierung an der Wurzel - der menschlichen Wahrnehmung - erklärt. Der Lernkern ist entlastende Selbsterkenntnis: Vorurteile sind ein normaler kognitiver Vorgang, kein Beweis schlechten Charakters; problematisch wird erst das unhinterfragte Handeln danach. Vermeiden Sie es, Schüler:innen für ihre spontanen Urteile blozustellen - das würde die Offenheit zerstören. Beim Sammeln von Stereotypen klar rahmen: Benennen ist nicht Teilen; abwertende oder verletzende Inhalte sofort sachlich einordnen, nicht unkommentiert stehen lassen, und niemanden im Raum zum Beispiel machen. Die Arbeit an einer Gruppe, die die Jugendlichen selbst betrifft ('Teenager'), erzeugt den wirksamsten Perspektivwechsel - bewusst einsetzen. Differenzierung: für jüngere Gruppen (C4) mit konkreten, eindeutigen Beispielen und dem klaren Unterschied Vorurteil/Diskriminierung arbeiten; für reifere Gruppen In-Group/Out-Group-Mechanismen, unbewusste Verzerrungen und Medieneinfluss vertiefen. Bei Belastung/Krise: Vertrauensperson, SePAS/Schulpsychologie, Kanner- a Jugendtelefon 116 111, im Notfall 112.",
     "etepStufen": [
+      3,
       4,
       5
     ],
     "eldibGoals": [
+      "V-23",
       "V-24",
-      "V-26",
       "V-33",
       "K-33",
       "SOZ-31",
       "SOZ-36",
       "SOZ-37",
-      "KOG-56",
-      "KOG-59",
-      "KOG-61"
+      "KOG-54",
+      "KOG-57",
+      "KOG-58"
     ],
     "worksheet": {
-      "title": "Schubladen im Kopf - Vorurteile verstehen und überprüfen",
-      "intro": "Jeder Mensch hat Schubladen im Kopf - das macht dich nicht zu einem schlechten Menschen. Dieses Blatt hilft dir zu verstehen, wie Vorurteile entstehen, wie Medien sie füttern und wie du deine eigenen Schubladen bemerken und überprüfen kannst. Sei ehrlich mit dir selbst - das Blatt bleibt bei dir.",
+      "title": "Schubladen im Kopf - Vorurteile erkennen und öffnen",
+      "intro": "Jeder Mensch hat Vorurteile - das ist ein normaler Vorgang im Gehirn, kein Zeichen von schlechtem Charakter. Dieses Blatt hilft dir zu verstehen, wie Schubladendenken entsteht, und wie man die eigenen Schubladen bemerkt und öffnet. Es geht um Selbsterkenntnis, nicht um Schuld - was du aufschreibst, bleibt bei dir.",
       "blocks": [
         {
           "kind": "heading",
-          "text": "1. Wie eine Schublade zum Stereotyp wird"
+          "text": "1. Mein schnelles Urteil (Einstiegs-Experiment)"
         },
         {
           "kind": "instruction",
-          "text": "Dein Gehirn sortiert blitzschnell, um sich zu entlasten (SCHUBLADE). Wird die Schublade starr ('alle X sind Y'), ist es ein STEREOTYP. Die BESTÄTIGUNGSFALLE sorgt dafür, dass du dir vor allem das merkst, was dein Vorurteil bestätigt - und die Gegenbeispiele übersiehst."
-        },
-        {
-          "kind": "question",
-          "text": "Erkläre mit eigenen Worten: Warum ist es normal, Schubladen zu haben - und ab wann wird es zum Problem?",
-          "lines": 3
-        },
-        {
-          "kind": "heading",
-          "text": "2. Mein ehrliches Selbstexperiment"
+          "text": "Notiere hier SPONTAN deine ersten Eindrücke zu den gezeigten Personen - ohne lange nachzudenken."
         },
         {
           "kind": "box",
-          "text": "Denk an die Stichworte vom Anfang (z. B. 'Person mit Kopftuch', 'gut in Mathe'). Welches Bild kam dir ZUERST in den Kopf - und woher könnte es stammen? (Bleibt bei dir.)",
+          "text": "Person 1 / Person 2 / Person 3 - Beruf? Sympathisch? Vertrauenswürdig? (nur Stichworte):",
           "lines": 3
         },
         {
           "kind": "heading",
-          "text": "3. Stereotype und Gegenbeispiele"
-        },
-        {
-          "kind": "table",
-          "text": "Notiere ein Stereotyp - und sofort ein echtes Gegenbeispiel aus deinem Umfeld:",
-          "lines": 5,
-          "items": [
-            "Stereotyp ('Alle ... sind ...')",
-            "Mein Gegenbeispiel aus dem echten Leben"
-          ]
+          "text": "2. Wie aus Sortieren Unrecht wird"
         },
         {
           "kind": "question",
-          "text": "Was kann passieren, wenn man einen Menschen nur durch eine Schublade sieht?",
-          "lines": 2
+          "text": "Erkläre den Unterschied zwischen einem Vorurteil und einer Diskriminierung. An welcher Stelle hat man die Wahl, anders zu handeln?",
+          "lines": 3
         },
         {
           "kind": "heading",
-          "text": "4. Wer füttert meine Schubladen?"
+          "text": "3. Stereotyp und Gegen-Beispiel"
         },
         {
           "kind": "instruction",
-          "text": "Filme, Serien, Games, Memes zeigen Gruppen oft in immer denselben Rollen. Algorithmen zeigen dir bevorzugt, was du eh schon denkst (Filterblase). Wenn du eine Gruppe fast nur aus Klischeebildern kennst, hat dein Kopf kein realistisches Bild."
+          "text": "Trage zu deiner Gruppen-Kategorie ein bekanntes Stereotyp ein (das du nicht teilen musst) und mindestens ein Gegen-Beispiel, das es widerlegt."
+        },
+        {
+          "kind": "table",
+          "text": "Schubladen sprengen:",
+          "lines": 4,
+          "items": [
+            "Gruppe / Kategorie",
+            "Bekanntes Stereotyp",
+            "Gegen-Beispiel"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "4. Wenn ICH in einer Schublade lande"
         },
         {
           "kind": "question",
-          "text": "Nenne ein Beispiel: Welche Gruppe wird in Filmen, Games oder Memes oft wie dargestellt - und was wird dabei ausgeblendet?",
+          "text": "Wann wurdest du selbst schon einmal in eine Schublade gesteckt, in die du nicht passt (z. B. 'Teenager sind...')? Wie hat sich das angefühlt?",
           "lines": 3
         },
         {
           "kind": "heading",
-          "text": "5. Mein Stopp-Knopf"
-        },
-        {
-          "kind": "checklist",
-          "text": "Was hilft gegen vorschnelles Schubladendenken? Kreuze an, was du ausprobieren willst:",
-          "items": [
-            "kurz innehalten: 'Fakt oder Schublade?'",
-            "bewusst das Gegenbeispiel suchen",
-            "nachfragen statt annehmen",
-            "echte Begegnung statt Klischeebild zählen lassen",
-            "Quelle/Absicht eines Memes hinterfragen"
-          ]
+          "text": "5. Meine Schubladen öffnen"
         },
         {
           "kind": "scale",
-          "text": "Wie gut gelingt es mir, mein erstes Urteil über einen Menschen zu hinterfragen? (1 = noch gar nicht, 5 = sehr gut)",
+          "text": "Wie gut gelingt es mir, kurz innezuhalten, bevor ich eine Person vorschnell beurteile? (1 = sehr schwer, 5 = gelingt mir gut)",
           "items": [
             "1",
             "2",
@@ -16728,8 +16884,18 @@ export const youth: Material[] = [
           ]
         },
         {
+          "kind": "checklist",
+          "text": "Welche Strategien willst du ausprobieren, um deine Schubladen zu öffnen? Kreuze an:",
+          "items": [
+            "Innehalten und fragen: Ist das ein Fakt oder ein Stereotyp?",
+            "Die Person als Individuum sehen, nicht als Gruppe",
+            "Echten Kontakt suchen - kennenlernen, bevor ich urteile",
+            "Meine Quellen prüfen: Woher habe ich dieses Bild?"
+          ]
+        },
+        {
           "kind": "box",
-          "text": "Mein Merksatz (z. B. 'Das erste Bild kommt automatisch - das zweite Denken entscheide ich'):",
+          "text": "Mein Merksatz (z. B. 'Jede Schublade ist zu klein für einen echten Menschen' / 'Erst kennenlernen, dann urteilen'):",
           "lines": 2
         }
       ]
@@ -16738,8 +16904,8 @@ export const youth: Material[] = [
     "source": "generated"
   },
   {
-    "id": "der-eisberg-der-identitaet-was-man-sieht-was-man-nicht-sieht-und-warum-vielfalt-mehr-ist-als-herkunft",
-    "title": "Der Eisberg der Identität: Was man sieht, was man nicht sieht - und warum Vielfalt mehr ist als Herkunft",
+    "id": "mehr-als-das-was-man-sieht-vielfalt-zugehoerigkeit-und-das-eisberg-ich",
+    "title": "Mehr als das, was man sieht - Vielfalt, Zugehörigkeit und das Eisberg-Ich",
     "author": "ISA-Toolbox",
     "ageLevels": [
       "C4",
@@ -16759,121 +16925,118 @@ export const youth: Material[] = [
       },
       {
         "mode": "Individuel",
-        "note": "stille, freiwillige Einzelarbeit am eigenen Identitäts-Eisberg - jede:r entscheidet selbst, was sichtbar wird"
+        "note": "stille Einzelarbeit am eigenen 'Eisberg' - jede:r entscheidet selbst, was geteilt wird"
       }
     ],
     "themes": [
       "diskriminierung-vielfalt",
       "identitaet",
-      "fremdwahrnehmung"
+      "beziehungsaufbau"
     ],
     "tags": [
       "Jugend",
       "Vielfalt",
-      "Identität",
       "Diversity",
-      "Vorurteile",
-      "Perspektivwechsel",
-      "Wertschätzung",
-      "Inklusion"
+      "Identität",
+      "Inklusion",
+      "Zugehörigkeit",
+      "Eisbergmodell",
+      "Selbstwert"
     ],
-    "shortDescription": "Wenn man einen Menschen ansieht, erkennt man nur einen winzigen Teil von ihm - so wie bei einem Eisberg, von dem nur die Spitze aus dem Wasser ragt. Sichtbar sind oft Aussehen, Alter, Geschlecht, vielleicht Kleidung oder Sprache; unter der Oberfläche liegt fast alles, was einen Menschen wirklich ausmacht: Werte, Erfahrungen, Talente, Ängste, Träume, Familiengeschichte, Humor. Diese Aktivität nutzt das Eisberg-Bild, damit Jugendliche ihre eigene vielschichtige Identität entdecken, erleben, wie wenig man von außen wirklich weiß, und verstehen, dass Vielfalt weit mehr ist als Herkunft oder Hautfarbe - sie steckt in jedem einzelnen Menschen. Im geschützten Austausch entdecken sie überraschende Gemeinsamkeiten quer durch die Gruppe und lernen, dass Unterschiede normal und bereichernd sind. Ziel ist ein wertschätzender Blick auf sich selbst und andere, weniger schnelles Urteilen und mehr echte Neugier. Das Arbeitsblatt ist der persönliche Identitäts-Eisberg mit Reflexion - selbstbestimmt, niemand muss alles preisgeben.",
+    "shortDescription": "Was man von einem Menschen auf den ersten Blick sieht - Aussehen, Kleidung, Sprache, Herkunft - ist nur die Spitze des Eisbergs. Der weitaus größere Teil liegt unter der Oberfläche: Werte, Erfahrungen, Träume, Stärken, Ängste, das, was uns wirklich ausmacht. Diese Aktivität nutzt das Eisbergmodell, um Vielfalt erfahrbar zu machen und Schubladendenken etwas Stärkeres entgegenzusetzen: echtes Kennenlernen. Jugendliche gestalten ihren eigenen 'Identitäts-Eisberg', entdecken im Austausch überraschende Gemeinsamkeiten mit Menschen, die anders wirken, und ebenso wertvolle Unterschiede. Sie erleben, dass Vielfalt kein Problem ist, das man tolerieren muss, sondern eine Bereicherung - eine Gruppe, in der alle gleich sind, wäre langweilig und schwach. Der Schwerpunkt liegt auf Zugehörigkeit und Inklusion: Wie schaffen wir ein Klima, in dem jede:r mit dem ganzen Eisberg dazugehören darf? Die Aktivität stärkt Selbstwert, Empathie und Beziehungen. Das Arbeitsblatt ist zugleich der persönliche Eisberg und sichert Reflexion über Gemeinsamkeit, Vielfalt und Zugehörigkeit.",
     "ablauf": [
       {
-        "title": "Einstieg - Nur die Spitze ist sichtbar",
-        "text": "Zeichnen Sie einen Eisberg an die Tafel: eine kleine Spitze über der Wasserlinie, ein großer Block darunter. Fragen Sie: 'Wie viel von einem Eisberg sieht man eigentlich?' (nur etwa ein Zehntel). Übertragen Sie das Bild: 'Wenn ihr einen fremden Menschen seht - was erkennt ihr sofort?' Sammeln Sie die sichtbare Spitze (Aussehen, ungefähres Alter, Geschlecht, Kleidung, vielleicht Sprache/Akzent). Dann: 'Und was alles liegt unter Wasser - was ihr NICHT seht?' Sammeln Sie die unsichtbaren Teile (Werte, Erfahrungen, Hobbys, Talente, Ängste, Träume, Familie, Glaube, Humor, was jemand schon erlebt oder überstanden hat). Machen Sie den Kernpunkt: Wir urteilen oft über die kleine Spitze - und übersehen den riesigen Rest. Leitfrage: 'Wie oft täuscht uns die Spitze?' Moderationshinweis: warmer, sicherer Rahmen; betonen Sie, dass gleich jede:r den EIGENEN Eisberg gestaltet und selbst bestimmt, was er teilen will. Grundregel: Wir hören wertschätzend zu, lachen niemanden aus, und was jemand von sich erzählt, wird respektiert."
+        "title": "Einstieg - Die Spitze des Eisbergs",
+        "text": "Zeigen Sie ein Bild eines Eisbergs (kleine Spitze über Wasser, riesiger Teil darunter). Fragen Sie: 'Wie viel von einem Eisberg sieht man eigentlich?' (nur ca. ein Siebtel). Übertragen Sie das auf Menschen: 'Was seht ihr von einem Menschen, den ihr zum ersten Mal trefft?' Sammeln Sie die sichtbare Spitze (Aussehen, Kleidung, Hautfarbe, Sprache, Geschlecht, Alter). Dann: 'Und was liegt unter der Oberfläche - was macht einen Menschen WIRKLICH aus?' Sammeln Sie den unsichtbaren Teil (Werte, Erfahrungen, Träume, Humor, Stärken, Ängste, Lieblingsmusik, was einem wichtig ist). Machen Sie das Ziel klar: 'Wir urteilen oft über die Spitze - dabei steckt das Spannendste unter Wasser. Heute schauen wir genauer hin: bei uns selbst und bei anderen.' Moderationshinweis: positiver, neugieriger Ton; das ist eine wertschätzende, verbindende Aktivität, kein 'Problem-Thema'."
       },
       {
-        "title": "Aktivität - Mein Identitäts-Eisberg",
-        "text": "Jede:r gestaltet still und in Einzelarbeit den eigenen Eisberg auf dem Arbeitsblatt. ÜBER der Wasserlinie: Was sehen andere auf den ersten Blick von mir? UNTER der Wasserlinie: Was macht mich aus, das man nicht sofort sieht? (Werte, Stärken, Hobbys, Erfahrungen, was mir wichtig ist, was mich besonders macht, worauf ich stolz bin). Geben Sie Anregungen, aber lassen Sie viel Freiheit. Betonen Sie ausdrücklich: Du entscheidest selbst, was du aufschreibst und ob/was du später zeigst - es gibt kein Richtig oder Falsch, und nichts muss 'spektakulär' sein. Wer mag, gestaltet kreativ (Symbole, Farben, Zeichnungen). Moderationshinweis: ruhige Arbeitsatmosphäre schaffen, Zeit geben, herumgehen und bei Bedarf einzeln Impulse geben ('Was kann niemand sehen, ist dir aber wichtig?'). Achten Sie sensibel darauf, dass niemand sich gedrängt fühlt, Schweres preiszugeben - der Eisberg darf auch nur leichte, schöne Dinge enthalten."
+        "title": "Aktivität I - Mein Eisberg",
+        "text": "Jede:r gestaltet still auf dem Arbeitsblatt den eigenen Identitäts-Eisberg. ÜBER WASSER (Spitze): Was sieht man von mir auf den ersten Blick? UNTER WASSER (der große Teil): Was macht mich wirklich aus - meine Werte, eine wichtige Erfahrung, ein Traum, eine Stärke, etwas, das kaum jemand über mich weiß? Geben Sie genug Zeit und Ruhe. Betonen Sie die wichtigste Regel: JEDE:R entscheidet selbst, was später geteilt wird und was privat bleibt - der Eisberg darf so tief oder so vorsichtig sein, wie man möchte. Wer mag, darf gestalten/zeichnen. Moderationshinweis: leise Arbeitsatmosphäre schaffen; selbst ein Beispiel anbieten (auch von sich, in angemessenem Maß), das macht es leichter; herumgehen und ermutigen, aber nicht drängen. Betonen, dass es kein 'richtig oder falsch' und keine Bewertung gibt."
       },
       {
-        "title": "Austausch - Gemeinsamkeiten unter der Oberfläche",
-        "text": "Bilden Sie Kleingruppen (3-4) für einen freiwilligen Austausch. Aufgabe: Jede:r teilt SO VIEL er möchte von seinem Eisberg - mindestens eine sichtbare und eine unsichtbare Sache, aber alles freiwillig. Die Gruppe sucht dann gemeinsam: Welche überraschenden GEMEINSAMKEITEN gibt es unter der Oberfläche (gleiche Werte, ähnliche Träume, gleiche Lieblingssachen, ähnliche Erfahrungen)? Und welche bereichernden UNTERSCHIEDE? Halten Sie pro Gruppe beides fest. Führen Sie kurz im Plenum zusammen: Was hat überrascht? Häufig zeigt sich, dass Menschen, die oberflächlich verschieden wirken, unter Wasser viel teilen - und dass die spannendsten Unterschiede oft die sind, die man nicht sieht. Moderationshinweis: strikte Freiwilligkeit betonen, niemand wird 'aufgefordert'; achten Sie auf wertschätzende Reaktionen, unterbinden Sie jeden Spott sofort. Würdigen Sie Mut zur Offenheit, ohne Druck aufzubauen. Heben Sie die entstehende Erkenntnis hervor: 'Je tiefer man schaut, desto ähnlicher und zugleich einzigartiger wird jeder.'"
+        "title": "Aktivität II - Gemeinsamkeiten finden, Unterschiede schätzen",
+        "text": "Die Jugendlichen tauschen sich in Kleingruppen aus - mit selbst gewählter Tiefe. Auftrag 1 (Gemeinsamkeiten): Findet in eurer Gruppe drei Dinge unter der Wasseroberfläche, die ihr GEMEINSAM habt, die man euch aber nicht ansieht (z. B. dieselbe Lieblingsserie, alle haben mal etwas Schweres durchgemacht, gleicher Traumberuf). Auftrag 2 (Vielfalt): Findet eine Sache, in der ihr euch UNTERSCHEIDET und die ihr aneinander spannend/bereichernd findet. Variante zum Aufwärmen optional: 'Steh auf, wenn...' mit unsichtbaren Eigenschaften ('...du schon mal in einem anderen Land gelebt hast', '...du ein Instrument spielst', '...du dich schon mal richtig fremd gefühlt hast') - macht verborgene Gemeinsamkeiten sichtbar. Jede Gruppe hält ihre überraschendste Gemeinsamkeit und ihren spannendsten Unterschied fest. Moderationshinweis: nur freiwilliges Teilen; betonen, dass die überraschenden Gemeinsamkeiten oft zwischen Leuten auftauchen, die sich auf den ersten Blick fremd sind - genau das ist der Punkt. Würdigen Sie auch die Unterschiede ausdrücklich als Bereicherung, nicht nur als 'auszuhalten'."
       },
       {
-        "title": "Vertiefung - Vielfalt steckt in jedem",
-        "text": "Plenum. Weiten Sie den Blick: Wenn schon innerhalb einer Klasse jeder Eisberg so unterschiedlich und vielschichtig ist - dann ist Vielfalt nicht etwas, das nur 'die anderen' oder 'Menschen mit Migrationshintergrund' betrifft, sondern etwas, das in JEDEM Menschen steckt. Machen Sie die Dimensionen von Vielfalt bewusst: sichtbare (z. B. Aussehen, Alter) und unsichtbare (z. B. Herkunft der Familie, Glaube, soziale Lage, Interessen, Gesundheit, wie man liebt, wie man denkt). Diskutieren Sie die Schlüsselfrage: 'Was wäre eine Klasse/Welt, in der alle exakt gleich wären - und was bringt uns Verschiedenheit?' Sammeln Sie den Gewinn von Vielfalt (verschiedene Ideen, voneinander lernen, weniger Langeweile, mehr Stärken im Team) - und benennen Sie ehrlich die Herausforderung (Unterschiede können erst befremden; dann hilft Neugier statt Urteil). Moderationshinweis: positiv, aber nicht schönfärberisch; nehmen Sie ernst, dass Verschiedenheit auch verunsichern kann, und bieten Sie 'Neugier statt Schublade' als Haltung an."
+        "title": "Vertiefung - Warum Vielfalt eine Stärke ist",
+        "text": "Plenum. Sammeln Sie die überraschenden Gemeinsamkeiten und spannenden Unterschiede. Arbeiten Sie zwei Einsichten heraus: (1) GEMEINSAMKEIT verbindet über die Spitze hinweg - Menschen, die ganz verschieden aussehen, teilen unter Wasser oft mehr, als man denkt; das macht Vorurteile gegen 'die Anderen' brüchig. (2) VIELFALT ist eine Stärke, kein Problem: Lassen Sie überlegen - 'Wie wäre eine Klasse/ein Team, in dem alle exakt gleich sind, gleich denken, gleich können?' (langweilig, einseitig, kann weniger). Verschiedene Stärken, Sichtweisen und Erfahrungen machen eine Gruppe klüger, kreativer und stärker. Führen Sie den Unterschied ein zwischen bloßer TOLERANZ ('ich ertrage, dass du anders bist') und INKLUSION/Wertschätzung ('du gehörst mit allem, was du bist, dazu - und das ist gut'). Diskutieren Sie konkret: Was macht eine Klasse zu einem Ort, an dem jede:r mit dem ganzen Eisberg dazugehören darf? Moderationshinweis: die Botschaft positiv halten - es geht um den Gewinn durch Vielfalt, nicht nur um die Abwehr von Diskriminierung."
       },
       {
-        "title": "Reflexion & Transfer - Mein Blick auf andere",
-        "text": "Stille, freiwillige Einzelreflexion auf dem Arbeitsblatt: Bei wem habe ich mich heute getäuscht - wessen Eisberg hat mich überrascht? Wo habe ich selbst schon erlebt, dass jemand nur meine 'Spitze' gesehen hat? Was nehme ich mir für meinen Blick auf andere vor? Betonen Sie Freiwilligkeit und Privatheit. Lassen Sie jede:n einen Merksatz und einen konkreten Vorsatz festhalten ('Ich urteile nicht nur über die Spitze' / 'Hinter jedem Menschen liegt ein ganzer Eisberg' / 'Ich frage nach, statt anzunehmen'). Sammeln Sie zum Abschluss freiwillig Erkenntnisse. Schlusssatz: 'Von jedem Menschen siehst du nur die Spitze - und urteilst doch oft über den ganzen Eisberg. Wer neugierig unter die Oberfläche schaut, entdeckt, wie viel mehr in jedem steckt - und wie viel ihr trotz aller Unterschiede teilt.' Weisen Sie sensibel darauf hin, dass man sich Unterstützung holen darf, wenn man wegen seiner Person ausgegrenzt oder abgewertet wird."
+        "title": "Reflexion & Transfer - Dazugehören dürfen",
+        "text": "Stille, kurze Einzelreflexion und gemeinsamer Abschluss. Auf dem Arbeitsblatt: Was habe ich heute über jemanden erfahren, das mich überrascht hat? Was wünsche ICH mir, damit ich mit meinem ganzen Eisberg dazugehören kann? Was kann ich selbst tun, damit andere sich zugehörig fühlen? Lassen Sie jede:n eine konkrete kleine Handlung festhalten ('Ich frage neue/stille Leute auch mal nach dem, was unter Wasser liegt' / 'Ich lache nicht über das, was jemanden anders macht'). Schließen Sie mit einer wertschätzenden Plenumsrunde (freiwillig): eine Sache, die ich an der Vielfalt unserer Gruppe schätze. Schlusssatz: 'Wir alle sind mehr als das, was man auf den ersten Blick sieht. Und eine Gruppe wird nicht trotz, sondern WEGEN ihrer Vielfalt stark - wenn jede:r mit allem dazugehören darf.' Weisen Sie sensibel darauf hin, dass man Unterstützung suchen darf, wenn man sich ausgeschlossen oder fremd fühlt."
       }
     ],
-    "duration": "ca. 50-70 Minuten (eine bis anderthalb Unterrichtsstunden)",
-    "materialsNeeded": "Tafel/Flipchart mit Eisberg-Skizze; Arbeitsblatt mit großem Eisberg-Umriss pro Jugendlichem; Stifte, bunte Stifte/Marker für die kreative Gestaltung; optional ruhige Hintergrundmusik für die Einzelarbeit; Übersichtskarte mit Hilfe-/Anlaufstellen",
-    "remark": "Identitätsarbeit ist persönlich und kann Nähe und Verletzlichkeit erzeugen - der wichtigste Grundsatz ist daher radikale Selbstbestimmung: Jede:r entscheidet vollständig allein, was im Eisberg steht und was geteilt wird; niemand wird aufgerufen oder gedrängt. Schaffen Sie eine wertschätzende, spott-freie Atmosphäre und greifen Sie jede Abwertung sofort auf. Achten Sie darauf, dass der Eisberg keine erzwungene 'Beichte' schwerer Themen wird - leichte, schöne, alltägliche Inhalte sind völlig in Ordnung; seien Sie aber aufmerksam, falls jemand Belastendes andeutet, und bieten Sie ein vertrauliches Gespräch an. Vermeiden Sie es, Vielfalt auf Herkunft/Migration zu verengen oder einzelne Jugendliche als 'Vertreter' ihrer Gruppe zu adressieren - die Kernbotschaft ist, dass Vielfalt in jedem steckt. Differenzierung: für jüngere/C4 mit stärker vorgegebenen Impulsfragen und kreativ-visueller Gestaltung arbeiten; für reifere Gruppen die Dimensionen von Diversität, sichtbare/unsichtbare Merkmale, Selbst- vs. Fremdbild und den Bezug zu Vorurteilen und Inklusion vertiefen. Wer nicht in der Gruppe teilen möchte, kann seinen Eisberg auch nur für sich behalten. Bei Belastung/Krise: Vertrauensperson, SePAS/Schulpsychologie, Kanner- a Jugendtelefon 116 111, im Notfall 112.",
+    "duration": "ca. 50-60 Minuten (eine Unterrichtsstunde); mit ausführlicherem Eisberg und Gestaltung auf 90 Min erweiterbar",
+    "materialsNeeded": "Bild eines Eisbergs (Projektor oder Ausdruck); Arbeitsblatt mit Eisberg-Vorlage pro Jugendlichem; Stifte, ggf. Buntstifte zum Gestalten; optional Karten/Liste für 'Steh auf, wenn...' mit unsichtbaren Eigenschaften; ruhige Arbeitsatmosphäre",
+    "remark": "Verbindende, stärkende Aktivität, die Vielfalt positiv rahmt und Inklusion erfahrbar macht - bewusst als Gegengewicht zu Schubladendenken und Diskriminierung. Zentral ist die Freiwilligkeit der Selbstoffenbarung: Der 'unter Wasser'-Teil kann sehr persönlich werden; betonen Sie wiederholt, dass jede:r selbst bestimmt, was geteilt wird und was privat bleibt, und stellen Sie niemanden bloss. Sorgen Sie für einen sicheren Rahmen (kein Auslachen, Vertraulichkeit in der Gruppe) - sonst wird aus einer wertschätzenden Übung schnell eine Verletzungsgefahr. Achten Sie auf Schüler:innen, die wenig 'sichtbare' Zugehörigkeit haben oder sich oft fremd fühlen; die Aktivität soll sie einbeziehen, nicht exponieren. Unterscheiden Sie klar zwischen bloßer Toleranz und echter Wertschätzung/Inklusion - das ist der inhaltliche Mehrwert. Differenzierung: für jüngere Gruppen (C4) konkrete Leitfragen und Beispiele für den Eisberg vorgeben, mehr gestalterisch; für reifere Gruppen den Begriff Identität (auch mehrfache Zugehörigkeiten) und den Unterschied Toleranz/Inklusion vertiefen. Bei Belastung/Krise: Vertrauensperson, SePAS/Schulpsychologie, Kanner- a Jugendtelefon 116 111, im Notfall 112.",
     "etepStufen": [
       3,
       4,
       5
     ],
     "eldibGoals": [
-      "V-24",
-      "K-19",
       "K-20",
       "K-27",
+      "K-32",
       "SOZ-31",
+      "SOZ-32",
       "SOZ-33",
+      "SOZ-37",
       "SOZ-40",
-      "KOG-56"
+      "KOG-54",
+      "KOG-55"
     ],
     "worksheet": {
-      "title": "Mein Identitäts-Eisberg",
-      "intro": "Von jedem Menschen sieht man nur eine kleine 'Spitze' - der größte Teil liegt unter der Oberfläche. Dieses Blatt gehört nur dir: Du entscheidest selbst, was du aufschreibst und was du teilst. Es gibt kein Richtig oder Falsch und nichts muss spektakulär sein.",
+      "title": "Mein Eisberg - mehr als das, was man sieht",
+      "intro": "Von einem Eisberg sieht man nur die kleine Spitze - der große Teil liegt unter Wasser. Bei Menschen ist es genauso: Das Wichtigste sieht man nicht auf den ersten Blick. Auf diesem Blatt gestaltest du deinen eigenen Eisberg und entdeckst, was du mit anderen teilst. Du entscheidest selbst, was du teilst und was privat bleibt.",
       "blocks": [
         {
           "kind": "heading",
-          "text": "1. Mein Eisberg - über und unter Wasser"
-        },
-        {
-          "kind": "instruction",
-          "text": "ÜBER der Wasserlinie: Was sehen andere auf den ersten Blick von dir? UNTER der Wasserlinie: Was macht dich aus, das man NICHT sofort sieht (Werte, Stärken, Hobbys, Erfahrungen, Träume, worauf du stolz bist)? Du darfst auch zeichnen und Symbole benutzen."
+          "text": "1. Über Wasser - was man sieht"
         },
         {
           "kind": "box",
-          "text": "Über Wasser (was man sofort sieht):",
-          "lines": 4
-        },
-        {
-          "kind": "box",
-          "text": "Unter Wasser (was man nicht sieht, dich aber ausmacht):",
-          "lines": 6
-        },
-        {
-          "kind": "heading",
-          "text": "2. Was niemand vermuten würde"
-        },
-        {
-          "kind": "question",
-          "text": "Nenne eine Sache an dir, die andere wahrscheinlich NICHT erraten würden, wenn sie dich nur ansehen.",
-          "lines": 2
-        },
-        {
-          "kind": "heading",
-          "text": "3. Gemeinsamkeiten und Unterschiede"
-        },
-        {
-          "kind": "table",
-          "text": "Nach dem Austausch in der Gruppe: Was habt ihr gemeinsam - und welche Unterschiede sind spannend?",
-          "lines": 4,
-          "items": [
-            "Überraschende Gemeinsamkeit",
-            "Bereichernder Unterschied"
-          ]
-        },
-        {
-          "kind": "heading",
-          "text": "4. Mein Blick auf andere"
-        },
-        {
-          "kind": "question",
-          "text": "Bei wem hat dich heute der 'Eisberg' überrascht - und was sagt dir das über schnelles Urteilen?",
+          "text": "Die Spitze deines Eisbergs: Was sehen andere von dir auf den ersten Blick? (z. B. Aussehen, Kleidung, Sprache, Stil)",
           "lines": 3
         },
         {
+          "kind": "heading",
+          "text": "2. Unter Wasser - was mich wirklich ausmacht"
+        },
+        {
+          "kind": "instruction",
+          "text": "Der große Teil deines Eisbergs. Fülle so viel oder so wenig aus, wie du möchtest - das bleibt erstmal bei dir."
+        },
+        {
+          "kind": "box",
+          "text": "Meine Werte / eine wichtige Erfahrung / ein Traum / eine Stärke / etwas, das kaum jemand über mich weiß:",
+          "lines": 5
+        },
+        {
+          "kind": "heading",
+          "text": "3. Überraschende Gemeinsamkeiten"
+        },
+        {
+          "kind": "question",
+          "text": "Welche Gemeinsamkeiten 'unter Wasser' hast du in deiner Gruppe entdeckt, die man euch nicht ansieht?",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "4. Vielfalt als Stärke"
+        },
+        {
+          "kind": "question",
+          "text": "Welchen spannenden Unterschied hast du an jemandem entdeckt? Und warum wäre eine Gruppe, in der alle gleich sind, schwächer?",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "5. Dazugehören dürfen"
+        },
+        {
           "kind": "scale",
-          "text": "Wie sehr gelingt es mir, Menschen nicht nur nach dem ersten Eindruck ('der Spitze') zu beurteilen? (1 = selten, 5 = fast immer)",
+          "text": "Wie sehr habe ich das Gefühl, in dieser Gruppe mit meinem ganzen Eisberg dazugehören zu dürfen? (1 = gar nicht, 5 = voll und ganz)",
           "items": [
             "1",
             "2",
@@ -16881,195 +17044,20 @@ export const youth: Material[] = [
             "4",
             "5"
           ]
-        },
-        {
-          "kind": "heading",
-          "text": "5. Mein Vorsatz"
-        },
-        {
-          "kind": "box",
-          "text": "Mein Merksatz oder Vorsatz (z. B. 'Hinter jedem Menschen liegt ein ganzer Eisberg - ich frage nach, statt anzunehmen'):",
-          "lines": 2
-        }
-      ]
-    },
-    "language": "de",
-    "source": "generated"
-  },
-  {
-    "id": "inklusions-check-unserer-schule-wer-gehoert-wirklich-dazu-und-was-aendern-wir-daran",
-    "title": "Inklusions-Check unserer Schule: Wer gehört wirklich dazu - und was ändern WIR daran?",
-    "author": "ISA-Toolbox",
-    "ageLevels": [
-      "ES"
-    ],
-    "type": [
-      "Projet"
-    ],
-    "participants": [
-      {
-        "mode": "Klass",
-        "note": "Plenum für Projektstart, Zwischenstände und Abschlusspräsentation"
-      },
-      {
-        "mode": "Grupp",
-        "note": "feste Projektteams 3-5, je nach untersuchtem Bereich (Pausenhof, Unterricht, Räume, Sprache/Umgang, digitale Räume)"
-      }
-    ],
-    "themes": [
-      "diskriminierung-vielfalt",
-      "demokratie-engagement",
-      "kooperation"
-    ],
-    "tags": [
-      "Jugend",
-      "Inklusion",
-      "Vielfalt",
-      "Schulklima",
-      "Zugehörigkeit",
-      "Engagement",
-      "Teilhabe",
-      "Diskriminierung"
-    ],
-    "shortDescription": "Über Inklusion und Vielfalt zu reden ist das eine - zu prüfen, wie inklusiv die eigene Schule wirklich ist, das andere. In diesem mehrstündigen Projekt werden Jugendliche zu Forscher:innen und Gestalter:innen in eigener Sache: Sie untersuchen systematisch, wer an ihrer Schule gut dazugehört und wer (oft unbeabsichtigt) ausgeschlossen, übersehen oder benachteiligt wird - im Pausenhof, im Unterricht, in den Räumen, in der Sprache und im Umgang, in digitalen Gruppen. Aus ihren Beobachtungen leiten sie konkrete, realistische Verbesserungsvorschläge ab und entwickeln daraus einen Aktionsplan oder eine kleine Maßnahme, die sie selbst umsetzen oder der Schule vorschlagen. Das Projekt verbindet die Auseinandersetzung mit Vielfalt, Vorurteilen und Diskriminierung mit demokratischem Engagement, Teamarbeit und echter Selbstwirksamkeit - Jugendliche erleben, dass sie ihr eigenes Umfeld mitgestalten können, statt nur darüber zu klagen. Das Arbeitsblatt dient als Projekt-Logbuch von der Bestandsaufnahme über die Analyse bis zum Maßnahmen- und Wirkungsplan.",
-    "ablauf": [
-      {
-        "title": "Projektstart - Vom Reden zum Hinschauen",
-        "text": "Eröffnen Sie das Projekt mit einer ehrlichen Frage: 'Unsere Schule sagt, dass alle willkommen sind - aber stimmt das auch im Alltag? Wer gehört hier WIRKLICH dazu, und wer eher nicht?' Klären Sie kurz den Begriff Inklusion (nicht nur 'dabei sein dürfen', sondern wirklich dazugehören, mitmachen und mitbestimmen können - unabhängig von Herkunft, Aussehen, Geschlecht, Sprache, Behinderung, Beliebtheit, Geldbeutel). Machen Sie den Auftrag klar: Wir werden nicht anklagen, sondern genau hinschauen und dann konkret etwas verbessern. Bilden Sie feste Projektteams und verteilen Sie Untersuchungsbereiche: (A) Pausenhof/Pausen (Wer ist allein? Wer wird nicht mitgespielt?), (B) Unterricht (Wer kommt zu Wort, wer nicht? Fühlen sich alle ernst genommen?), (C) Räume & Zugang (Sind alle Orte für alle erreichbar/nutzbar?), (D) Sprache & Umgang (Welche Sprüche, Spitznamen, 'Witze' grenzen aus?), (E) Digitale Räume (Wer ist in Klassen-Gruppen drin, wer wird ausgeschlossen?). Moderationshinweis: wertschätzender, lösungsorientierter Rahmen; Datenschutz und Respekt betonen - es geht um Muster, nicht ums Anschwärzen Einzelner. Legen Sie Zeitplan und Bewertungskriterien transparent fest (Genauigkeit der Beobachtung, Fairness, Qualität und Machbarkeit der Vorschläge, Teamarbeit)."
-      },
-      {
-        "title": "Bestandsaufnahme - Forschen im eigenen Umfeld",
-        "text": "Die Teams sammeln zu ihrem Bereich systematisch Beobachtungen und Hinweise - mit klaren, fairen Methoden: strukturierte Beobachtung (z. B. in der Pause neutral notieren, wer regelmäßig allein ist - ohne Namen, ohne Starren), eine kurze anonyme Mini-Umfrage in der Klasse/Stufe ('Wo fühlst du dich willkommen? Wo nicht? Was würdest du ändern?'), oder das Sammeln typischer ausschließender Situationen und Sprüche (anonym, ohne reale Personen vorzuführen). Geben Sie Leitfragen vor: Wer hat es hier leichter, dazuzugehören - wer schwerer, und warum? Welche Hürden sind sichtbar (Stufen, Sprache, Geld für Ausflüge), welche unsichtbar (Cliquen, Spott, 'das macht man hier so')? Ergebnisse ins Logbuch. Moderationshinweis: streng auf Anonymität, Freiwilligkeit und Respekt achten - keine Namen, kein Pranger, kein heimliches Filmen/Fotografieren; betroffene Mitschüler:innen werden geschützt, nicht ausgestellt. Begleiten Sie als Coach, helfen Sie, von Einzelfällen auf Muster zu schließen ('Ist das einmal passiert oder ist das ein Muster?'). Klären Sie, dass eine Mini-Umfrage vorab mit Ihnen und ggf. der Schule abgestimmt wird."
-      },
-      {
-        "title": "Analyse - Vom Befund zur Idee",
-        "text": "Die Teams werten ihre Beobachtungen aus und leiten Verbesserungen ab. Schritt 1: Befunde ordnen - Was läuft schon gut (Stärken sichtbar machen!)? Wo gibt es klare Lücken oder Ausschluss-Muster? Schritt 2: Ursachen verstehen - Liegt es an fehlendem Wissen, an Gewohnheiten, an Räumen/Geld, an Cliquen, an Sprache? Schritt 3: Lösungen entwickeln - pro Hauptproblem mindestens eine KONKRETE, realistische Idee, die im Schulalltag machbar ist (Beispiele: 'Buddy'-System für neue oder einsame Schüler:innen, inklusivere Spiel-/Pausenangebote, klare Regeln gegen ausgrenzende Sprüche, barrierefreie Wege/Sitzordnung, faire Lösungen für teure Ausflüge, klare Regeln für Klassen-Chats). Wenden Sie die 'machbar-wirksam'-Prüfung an: Ist es umsetzbar? Hilft es wirklich denen, die ausgeschlossen werden? Ergebnisse ins Logbuch. Bauen Sie eine Feedback-Runde ein (Teams stellen ihre Top-Idee vor, Regel '2 Stärken, 1 Verbesserungsidee'). Moderationshinweis: als Coach Ideen schärfen (lieber eine gute, umsetzbare Maßnahme als zehn vage Wünsche), Realismus und Wirkung im Blick behalten."
-      },
-      {
-        "title": "Umsetzung & Vorschlag - Wir verändern etwas",
-        "text": "Jedes Team bereitet seine Maßnahme zur Umsetzung oder als offiziellen Vorschlag vor. Phase A (Plan): Was genau wollen wir erreichen? Wer macht was bis wann? Was brauchen wir, wen müssen wir fragen (Klasse, Lehrkräfte, Schulleitung, SePAS, Schülervertretung)? Phase B (Umsetzung/Pitch): Je nach Idee entweder direkt eine kleine Maßnahme starten (z. B. Buddy-System oder neue Pausen-Regel testweise einführen, einen respektvollen 'Umgangs-Kodex' für die Klasse erarbeiten, eine Aufklärungs-Aktion machen) ODER den Vorschlag professionell aufbereiten und der zuständigen Stelle vorstellen (kurzer Pitch: Problem - Beleg - Lösung - was wir dafür brauchen). Geben Sie Qualitätskriterien: Problem klar belegt, Lösung konkret und machbar, niemand wird bloßgestellt, respektvoller Ton. Moderationshinweis: als Coach begleiten, nicht übernehmen; realistische Erwartungen (manche Maßnahmen brauchen Zeit oder Genehmigung); Persönlichkeitsrechte wahren; nach Möglichkeit echte Ansprechpartner:innen (Schulleitung, SePAS, Schülervertretung) einbinden, damit Selbstwirksamkeit spürbar wird."
-      },
-      {
-        "title": "Präsentation & Reflexion - Was bleibt und was wirkt",
-        "text": "Jedes Team präsentiert im Plenum (idealerweise mit den eingebundenen Verantwortlichen): den untersuchten Bereich, die wichtigsten Befunde (anonym), die vorgeschlagene oder gestartete Maßnahme und die erhoffte Wirkung. Das Publikum gibt strukturiertes Feedback: Ist das Problem nachvollziehbar belegt? Ist die Lösung fair und machbar? Würde sie wirklich helfen? Halten Sie fest, welche Maßnahmen tatsächlich umgesetzt oder weiterverfolgt werden, und vereinbaren Sie wenn möglich einen Termin, um später die Wirkung zu prüfen. Abschließende Reflexion, erst im Team, dann freiwillig individuell im Logbuch: Was habe ich über Zugehörigkeit, Vielfalt und Ausgrenzung an unserer Schule gelernt? Was hat mich überrascht oder betroffen gemacht? Was habe ICH selbst dazu beigetragen, dass sich etwas verbessert? Schlusssatz: 'Ihr habt nicht nur über Inklusion geredet, sondern hingeschaut und gehandelt. Eine Schule, in der wirklich alle dazugehören, entsteht nicht von selbst - sondern weil Menschen wie ihr sie gestalten.' Weisen Sie sensibel darauf hin, dass man sich vertraulich Hilfe holen darf, wenn man selbst ausgegrenzt oder diskriminiert wird."
-      }
-    ],
-    "duration": "ca. 4-6 Unterrichtsstunden (Projekt über mehrere Tage/Wochen); kompakt als Projekttag möglich",
-    "materialsNeeded": "Projekt-/Logbuch-Arbeitsblatt pro Jugendlichem; Material für die Bestandsaufnahme (Beobachtungsbögen, Vorlage für anonyme Mini-Umfrage); Plakatpapier, Stifte, Marker; ggf. Geräte für Umfrage-Auswertung und Präsentation; Präsentationsmöglichkeit (Beamer/Plakatwände); Kontakt zu Ansprechpartner:innen (Schulleitung, SePAS, Schülervertretung); Übersichtskarte mit Bewertungskriterien und Hilfe-/Anlaufstellen",
-    "remark": "Wirkungsstarkes Projekt, das Vielfalt und Anti-Diskriminierung mit echtem demokratischem Engagement und Selbstwirksamkeit verbindet - der Lernkern liegt im genauen, fairen Hinschauen und im selbst Gestalten, nicht im Anklagen. Höchste Priorität haben Schutz und Respekt: keine Namen, kein Pranger, kein heimliches Filmen/Fotografieren; betroffene Mitschüler:innen werden geschützt und nicht ausgestellt - es geht immer um Muster, nicht um Einzelpersonen. Stimmen Sie Mini-Umfragen und Beobachtungen vorab mit der Schule ab (Datenschutz, Freiwilligkeit, Anonymität). Achten Sie darauf, Stärken sichtbar zu machen und nicht nur Defizite, sonst kippt das Projekt ins Demotivierende. Halten Sie die Erwartungen realistisch: Nicht jede Maßnahme lässt sich sofort umsetzen, manche braucht Genehmigung - auch ein gut begründeter Vorschlag ist ein Erfolg. Seien Sie sich bewusst, dass Teilnehmende selbst von Ausgrenzung betroffen sein können; das Projekt kann das berühren - bieten Sie vertrauliche Gespräche an und binden Sie SePAS ein. Differenzierung: Bereiche und Rollen nach Stärken vergeben (Beobachten, Umfrage auswerten, Schreiben, Gestalten, Präsentieren/Pitchen); für reifere/leistungsstarke Teams systematische Methoden, Ursachenanalyse und eine echte Eingabe bei der Schulleitung/Schülervertretung vertiefen, für andere klar strukturierte Vorlagen und enger begleitete Schritte anbieten. Bei Belastung/Krise: Vertrauensperson, SePAS/Schulpsychologie, Kanner- a Jugendtelefon 116 111, im Notfall 112.",
-    "etepStufen": [
-      4,
-      5
-    ],
-    "eldibGoals": [
-      "V-27",
-      "V-28",
-      "V-31",
-      "V-32",
-      "SOZ-34",
-      "SOZ-39",
-      "SOZ-41",
-      "KOG-58",
-      "KOG-61",
-      "KOG-62"
-    ],
-    "worksheet": {
-      "title": "Inklusions-Check - Logbuch für unser Schul-Projekt",
-      "intro": "In diesem Projekt schaut ihr genau hin: Wer gehört an unserer Schule wirklich dazu, wer wird (oft unabsichtlich) ausgeschlossen - und was könnt IHR daran verbessern? Dieses Logbuch begleitet euch von der Beobachtung bis zur Maßnahme. Wichtig: keine Namen, kein Bloßstellen - es geht um Muster und um Lösungen.",
-      "blocks": [
-        {
-          "kind": "heading",
-          "text": "1. Unser Bereich und was Inklusion hier heißt"
-        },
-        {
-          "kind": "instruction",
-          "text": "Inklusion heißt nicht nur 'dabei sein dürfen', sondern wirklich dazugehören, mitmachen und mitbestimmen können - egal welche Herkunft, welches Aussehen, Geschlecht, welche Sprache, Behinderung, Beliebtheit oder welcher Geldbeutel."
-        },
-        {
-          "kind": "lines",
-          "text": "Unser Untersuchungsbereich (z. B. Pausenhof, Unterricht, Räume, Sprache/Umgang, digitale Gruppen) und unsere Forschungsfrage:",
-          "lines": 2
-        },
-        {
-          "kind": "heading",
-          "text": "2. Bestandsaufnahme - was wir beobachtet/erfahren haben"
-        },
-        {
-          "kind": "table",
-          "text": "Sammelt fair und anonym - Muster, keine Namen:",
-          "lines": 5,
-          "items": [
-            "Beobachtung / Hinweis (anonym)",
-            "Wer hat es leichter / schwerer dazuzugehören - und warum?"
-          ]
-        },
-        {
-          "kind": "heading",
-          "text": "3. Was schon gut läuft - und wo es hakt"
-        },
-        {
-          "kind": "question",
-          "text": "Was läuft an unserer Schule schon gut in Sachen Zugehörigkeit (Stärken)?",
-          "lines": 2
-        },
-        {
-          "kind": "question",
-          "text": "Wo gibt es klare Lücken oder Ausschluss-Muster - und woran könnte das liegen (Wissen, Gewohnheit, Räume, Geld, Cliquen, Sprache)?",
-          "lines": 3
-        },
-        {
-          "kind": "heading",
-          "text": "4. Unsere Lösung"
-        },
-        {
-          "kind": "box",
-          "text": "Unsere konkrete, machbare Idee (was genau, für wen?):",
-          "lines": 3
         },
         {
           "kind": "checklist",
-          "text": "Macht den 'machbar-wirksam'-Check. Unsere Idee ...",
+          "text": "Was kann ich tun, damit sich andere zugehörig fühlen? Kreuze an, was du dir vornimmst:",
           "items": [
-            "ist im Schulalltag wirklich umsetzbar",
-            "hilft denen, die ausgeschlossen werden",
-            "stellt niemanden bloß",
-            "ist fair und respektvoll formuliert",
-            "wir wissen, wen wir dafür fragen müssen"
+            "Auch stille oder neue Leute ansprechen und kennenlernen wollen",
+            "Nicht über das lachen, was jemanden anders macht",
+            "Bei Ausgrenzung nicht mitmachen und etwas sagen",
+            "Neugierig sein auf das, was unter der Oberfläche liegt"
           ]
-        },
-        {
-          "kind": "table",
-          "text": "Unser Aktionsplan - wer macht was bis wann?",
-          "lines": 4,
-          "items": [
-            "Aufgabe / Schritt",
-            "Wer?",
-            "Bis wann?"
-          ]
-        },
-        {
-          "kind": "heading",
-          "text": "5. Wirkung und meine Reflexion"
-        },
-        {
-          "kind": "scale",
-          "text": "Wie sehr glaube ich, dass unsere Maßnahme unsere Schule inklusiver machen kann? (1 = kaum, 5 = sehr stark)",
-          "items": [
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"
-          ]
-        },
-        {
-          "kind": "question",
-          "text": "Was hat mich bei diesem Projekt am meisten überrascht oder betroffen gemacht - und was habe ICH selbst dazu beigetragen?",
-          "lines": 3
         },
         {
           "kind": "box",
-          "text": "Mein persönlicher Merksatz (z. B. 'Eine Schule, in der alle dazugehören, entsteht nicht von selbst - wir gestalten sie'):",
+          "text": "Mein Merksatz (z. B. 'Wir sind alle mehr als das, was man sieht' / 'Vielfalt macht uns stärker'):",
           "lines": 2
         }
       ]
@@ -17760,6 +17748,748 @@ export const youth: Material[] = [
         {
           "kind": "box",
           "text": "Ein Vorsatz für die nächste hitzige Diskussion - wie will ich meine Meinung vertreten UND die andere Person respektieren? (beginne mit 'Ich will...')",
+          "lines": 3
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "die-tricks-der-werbung-durchschauen-wer-will-hier-eigentlich-was-von-dir",
+    "title": "Die Tricks der Werbung durchschauen - wer will hier eigentlich was von dir?",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "C4",
+      "ES"
+    ],
+    "type": [
+      "Aktivitéit"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Plenum für Einstieg, gemeinsame Analyse von Beispielen und Auswertung"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Kleingruppen 3-4 für die Werbe-Analyse und das Entlarven der Tricks"
+      },
+      {
+        "mode": "Individuel",
+        "note": "stille Einzelreflexion zum eigenen Kaufverhalten und zu eigenen 'Schwachstellen'"
+      }
+    ],
+    "themes": [
+      "medien",
+      "geld-konsum",
+      "selbstwahrnehmung"
+    ],
+    "tags": [
+      "Jugend",
+      "Werbung",
+      "Konsum",
+      "Medienkompetenz",
+      "Marketing",
+      "Influencer",
+      "Manipulation",
+      "kritisches Denken"
+    ],
+    "shortDescription": "Jugendliche sind eine der wichtigsten Zielgruppen der Werbung - und werden täglich hundertfach beworben, ohne es bewusst zu merken: über Social Media, Influencer, Product Placement, personalisierte Anzeigen. Diese Aktivität dreht den Spieß um: Statt sich beeinflussen zu lassen, lernen die Jugendlichen, die Mechanik von Werbung zu durchschauen und die wiederkehrenden psychologischen Tricks zu benennen (Verknappung, Gruppenzugehörigkeit, Idealbilder, Emotionen statt Fakten, künstlicher Zeitdruck). Sie analysieren echte, mitgebrachte Werbeformen und entlarven, welches Gefühl verkauft wird und welche 'Schwachstelle' angesprochen werden soll. Im Zentrum steht eine zentrale Medienkompetenz und Selbstwahrnehmung: zu erkennen, dass Werbung kein Geschenk, sondern ein Geschäft ist, das mit gezielter Psychologie arbeitet - und dass man freier entscheidet, wenn man die Tricks kennt. Das Arbeitsblatt sichert das Trick-Wissen, eine eigene Werbe-Analyse und eine ehrliche Reflexion der eigenen Beeinflussbarkeit.",
+    "ablauf": [
+      {
+        "title": "Einstieg - Wie oft wirst du heute schon beworben?",
+        "text": "Starten Sie mit einer Schätzfrage im Plenum: 'Was glaubt ihr - wie vielen Werbebotschaften begegnet ein Mensch heute pro Tag?' Sammeln Sie Schätzungen und lösen Sie auf (die Zahlen gehen in die Hunderte bis Tausende, je nach Studie). Dann die entscheidende Frage: 'Wie viele davon merkt ihr bewusst?' Die meisten erkennen: erstaunlich wenige. Sammeln Sie gemeinsam, WO Werbung heute überall steckt - und arbeiten Sie heraus, dass vieles gar nicht wie klassische Werbung aussieht: das Lieblings-Outfit der Influencerin, das beiläufig gezeigte Getränk im Video, die 'Empfehlung' im Feed, das gesponserte Posting ohne klare Kennzeichnung. Leitfrage: 'Wenn dir jemand etwas zeigt, ohne dass du merkst, dass es Werbung ist - wer hat dann die Kontrolle: du oder die Werbung?' Machen Sie das Ziel klar: 'Heute werden wir zu Werbe-Detektiven. Wir schauen nicht, WAS verkauft wird, sondern WIE - und mit welchen Tricks.' Moderationshinweis: Wertfrei bleiben - es geht nicht darum, Konsum zu verteufeln, sondern um durchschauen statt durchschaut werden."
+      },
+      {
+        "title": "Input - Die immer gleichen Tricks",
+        "text": "Sachlicher Kurzinput (max. 12 Min). Stellen Sie die wiederkehrenden Werbe-Tricks vor und geben Sie zu jedem ein griffiges Beispiel: (1) EMOTIONEN STATT FAKTEN - verkauft wird kein Schuh, sondern ein Gefühl (Freiheit, Coolness, Dazugehören); fast nie geht es um echte Produkteigenschaften. (2) IDEALBILDER - perfekte, oft bearbeitete Menschen suggerieren: 'Mit diesem Produkt wirst auch du so.' (3) DAZUGEHÖREN / SOZIALER DRUCK - 'Alle haben es' / 'Sei Teil der Community'; spielt mit der Angst, außen vor zu sein. (4) VERKNAPPUNG & ZEITDRUCK - 'Nur noch 2 verfügbar!', 'Nur heute!'; erzeugt Stress, der schnelles, unüberlegtes Kaufen auslöst. (5) AUTORITÄT & VORBILDER - Influencer:innen und Stars als scheinbar vertrauenswürdige Empfehler. (6) VERSTECKTE WERBUNG - Product Placement und bezahlte Posts, die wie persönliche Tipps wirken. Kernbotschaft: Werbung verkauft selten das Produkt - sie verkauft ein Versprechen und spricht ein Bedürfnis oder eine Unsicherheit an. Begriffe an die Tafel: Bedürfnis, Versprechen, Verknappung, Idealbild, Influencer-Marketing, Kennzeichnungspflicht. Moderationshinweis: Lassen Sie zu jedem Trick die Jugendlichen selbst ein Beispiel aus ihrem Alltag nennen - so wird der Input konkret und ihr Vorwissen sichtbar."
+      },
+      {
+        "title": "Aktivität - Werbung unter der Lupe",
+        "text": "Die Kleingruppen werden zu Werbe-Detektiven. Jede Gruppe analysiert ein bis zwei Werbebeispiele (vorbereitete Anzeigen/Screenshots, oder von den Jugendlichen mitgebrachte/erinnerte Beispiele - klassische Anzeigen, Social-Media-Werbung, Influencer-Posts). Leitfragen: (a) WAS wird hier eigentlich verkauft - und welches GEFÜHL/Versprechen wird mitverkauft? (b) Welche Tricks aus dem Input erkennt ihr? Markiert sie. (c) Welche 'Schwachstelle' / welches Bedürfnis soll angesprochen werden (dazugehören, besser sein, Angst, etwas verpassen)? (d) Was wird BEWUSST WEGGELASSEN oder geschönt (Preis, Nebenwirkungen, dass das Bild bearbeitet ist, dass es bezahlte Werbung ist)? Jede Gruppe bereitet vor, ihr 'entlarvtes' Beispiel kurz vorzustellen. Moderationshinweis: herumgehen und nachfragen ('Würdest du das wirklich brauchen - oder verkauft man dir das Gefühl, es zu brauchen?'). Achten Sie darauf, dass die Gruppen über die Oberfläche hinausgehen und die Strategie dahinter benennen, nicht nur 'das ist schön gemacht'."
+      },
+      {
+        "title": "Vertiefung - Selber machen entlarvt am besten",
+        "text": "Plenum: Die Gruppen stellen ihre entlarvten Beispiele vor. Sammeln Sie die erkannten Tricks an der Tafel - die Klasse sieht: Es sind immer wieder dieselben Muster. Als Vertiefung (optional, je nach Zeit) drehen Sie die Perspektive einmal komplett um: Die Gruppen entwerfen in 5 Minuten selbst eine kurze, bewusst übertriebene 'Werbung' für ein banales Alltagsprodukt (z. B. einen Bleistift, ein Glas Wasser) und müssen dabei mindestens drei Tricks einbauen. Beim Vorstellen benennt die Klasse jeweils die verwendeten Tricks. Das macht Spaß und verankert die Erkenntnis tief: Wer selbst manipuliert, durchschaut Manipulation. Arbeiten Sie abschließend zwei Einsichten heraus: ERSTENS - kein Produkt macht dich automatisch glücklicher, beliebter oder schöner; das ist das Versprechen, nicht die Realität. ZWEITENS - du kaufst freier, wenn du dir vor dem Kauf eine einzige Frage stellst: 'Will ICH das wirklich - oder will gerade die Werbung, dass ich das will?' Moderationshinweis: stärkenorientiert und mit Humor; Ziel ist Souveränität, kein schlechtes Gewissen."
+      },
+      {
+        "title": "Reflexion & Transfer - Meine Schwachstellen, meine Power",
+        "text": "Stille, freiwillige Einzelreflexion auf dem Arbeitsblatt: Auf welche Tricks falle ICH am ehesten herein (ehrlich)? Bei welchem letzten Kauf habe ich hinterher gemerkt, dass ich vor allem ein Gefühl gekauft habe? Was hilft MIR, bewusster zu entscheiden (z. B. eine Nacht drüber schlafen, die '24-Stunden-Regel', mich fragen 'brauche ich das oder will ich nur dazugehören'). Lassen Sie jede:n eine persönliche 'Anti-Werbe-Strategie' festhalten - eine konkrete Frage oder Regel, die er/sie sich beim nächsten Kaufimpuls stellt. Sichern Sie zum Abschluss die Trick-Liste als Klassen-Plakat. Schlusssatz: 'Werbung ist kein Feind - aber sie ist auch nicht dein Freund. Sie ist ein Geschäft, das mit deiner Psychologie arbeitet. Du musst nicht aufhören zu konsumieren. Du musst nur wissen, wann jemand für dich entscheiden will - dann entscheidest wieder du.'"
+      }
+    ],
+    "duration": "ca. 50-60 Minuten (eine Unterrichtsstunde); mit der Eigen-Werbung als Vertiefung auf 90 Min erweiterbar",
+    "materialsNeeded": "vorbereitete Werbebeispiele (gedruckte Anzeigen und/oder Screenshots von Social-Media-/Influencer-Werbung, jugendnah und vielfältig); optional Vorab-Auftrag an die Jugendlichen, Werbung mitzubringen/zu fotografieren; Tafel/Flipchart für die Trick-Liste; Material für ein Klassen-Plakat; Arbeitsblatt pro Jugendlichem; optional Projektor",
+    "remark": "Lebensnahes, niedrigschwelliges Thema mit hohem Aktivierungspotenzial. Bleiben Sie wertfrei: Es geht nicht darum, Konsum oder bestimmte Marken/Influencer:innen schlechtzumachen oder den Jugendlichen ihren Geschmack abzusprechen - das erzeugt Abwehr. Ziel ist Souveränität und kritisches Durchschauen, nicht ein schlechtes Gewissen beim Kaufen. Achten Sie bei mitgebrachten Beispielen darauf, dass keine reale Mitschülerin / kein realer Mitschüler bloßgestellt wird (keine privaten Profile analysieren). Das Thema kann an Körperbild und sozialen Druck rühren (Idealbilder, 'mit Produkt X werde ich schöner/beliebter') - greifen Sie das sensibel auf, ohne Druck zu erzeugen, und betonen Sie, dass bearbeitete Idealbilder nicht die Realität sind. Differenzierung: für jüngere Gruppen (C4/ES) mit wenigen, sehr klaren Tricks und eindeutigen Beispielen arbeiten; für reifere Gruppen versteckte Werbung, Algorithmen/personalisierte Werbung, Kennzeichnungspflicht und die wirtschaftlichen Hintergründe (Daten als Währung) vertiefen. Bei Belastung/Krise: Vertrauensperson, SePAS/Schulpsychologie, Kanner- a Jugendtelefon 116 111, im Notfall 112.",
+    "etepStufen": [
+      3,
+      4,
+      5
+    ],
+    "eldibGoals": [
+      "V-22",
+      "V-24",
+      "V-29",
+      "K-31",
+      "K-32",
+      "SOZ-33",
+      "KOG-55",
+      "KOG-56",
+      "KOG-57"
+    ],
+    "worksheet": {
+      "title": "Werbe-Detektiv:in - die Tricks durchschauen",
+      "intro": "Du wirst jeden Tag hundertfach beworben - oft, ohne es zu merken. Dieses Blatt macht dich zum Werbe-Profi: Du lernst die immer gleichen Tricks kennen, entlarvst eine echte Werbung und schaust ehrlich, worauf du selbst am ehesten hereinfällst. Werbung verkauft fast nie ein Produkt - sie verkauft ein Gefühl. Wer das durchschaut, entscheidet freier. Was du aufschreibst, bleibt bei dir.",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "1. Wo überall steckt Werbung?"
+        },
+        {
+          "kind": "instruction",
+          "text": "Viel Werbung sieht heute gar nicht wie Werbung aus. Kreuze an, was eigentlich auch Werbung ist."
+        },
+        {
+          "kind": "checklist",
+          "text": "Das ist (versteckte) Werbung:",
+          "items": [
+            "ein Influencer zeigt 'zufällig' ein bestimmtes Getränk im Video",
+            "eine 'Empfehlung' oder ein gesponsertes Posting in deinem Feed",
+            "das Lieblings-Outfit deiner Lieblings-Creatorin mit Rabattcode",
+            "Product Placement im Film oder Musikvideo",
+            "personalisierte Anzeigen, die genau zu deinen Interessen passen"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "2. Die Tricks der Werbung"
+        },
+        {
+          "kind": "instruction",
+          "text": "Werbung benutzt immer wieder dieselben psychologischen Tricks. Erkläre kurz, wie jeder Trick funktioniert."
+        },
+        {
+          "kind": "table",
+          "text": "Trick erkennen und erklären:",
+          "lines": 6,
+          "items": [
+            "Trick",
+            "So funktioniert er (in eigenen Worten)"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "3. Meine Werbe-Analyse"
+        },
+        {
+          "kind": "instruction",
+          "text": "Nimm die Werbung, die deine Gruppe untersucht hat (oder eine, die dir gerade einfällt), und seziere sie."
+        },
+        {
+          "kind": "question",
+          "text": "Was wird hier verkauft - und welches GEFÜHL / Versprechen wird mitverkauft (z. B. dazugehören, cool sein, glücklich werden)?",
+          "lines": 3
+        },
+        {
+          "kind": "question",
+          "text": "Welche Tricks erkennst du? Und was wird bewusst weggelassen oder geschönt (Preis, dass das Bild bearbeitet ist, dass es bezahlte Werbung ist)?",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "4. Brauchen oder wollen?"
+        },
+        {
+          "kind": "question",
+          "text": "Denk an deinen letzten Kauf, den du eigentlich nicht gebraucht hast. Was hat dich dazu gebracht - und hast du am Ende eher ein Produkt oder ein Gefühl gekauft?",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "5. Worauf falle ich herein?"
+        },
+        {
+          "kind": "scale",
+          "text": "Wie leicht lasse ich mich von Werbung und 'nur heute'-Angeboten zu spontanen Käufen verleiten? (1 = fast nie, 5 = sehr leicht)",
+          "items": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "6. Meine Anti-Werbe-Strategie"
+        },
+        {
+          "kind": "box",
+          "text": "Eine Frage oder Regel, die ich mir ab jetzt VOR einem Kauf stelle, um freier zu entscheiden (z. B. 'Will ICH das wirklich - oder will die Werbung, dass ich das will?', '24 Stunden warten', 'Brauche ich das oder will ich nur dazugehören?'):",
+          "lines": 3
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "mein-geld-im-griff-zwischen-wollen-brauchen-und-schuldenfalle",
+    "title": "Mein Geld im Griff - zwischen Wollen, Brauchen und Schuldenfalle",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "ES"
+    ],
+    "type": [
+      "ganz Stonn"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Plenum für Einstieg, Input zu Bedürfnissen, Budget und Schuldenfallen sowie Auswertung"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Kleingruppen 3-4 für das Durchspielen von Budget-Situationen und Spar-Strategien"
+      },
+      {
+        "mode": "Individuel",
+        "note": "stille, freiwillige Einzelarbeit zum eigenen Geld-Überblick und persönlichen Spar-Ziel"
+      }
+    ],
+    "themes": [
+      "geld-konsum",
+      "impulskontrolle",
+      "zukunft-beruf"
+    ],
+    "tags": [
+      "Jugend",
+      "Geld",
+      "Budget",
+      "Sparen",
+      "Schulden",
+      "Konsum",
+      "Finanzkompetenz",
+      "Selbstkontrolle"
+    ],
+    "shortDescription": "Mit Geld umgehen zu können ist eine der wichtigsten Lebenskompetenzen - und kaum jemand bringt sie Jugendlichen systematisch bei. Diese Doppelstunde schließt diese Lücke realitätsnah und ohne moralischen Zeigefinger: Die Jugendlichen lernen, zwischen echten Bedürfnissen und Wünschen zu unterscheiden, sich einen ehrlichen Überblick über Einnahmen und Ausgaben zu verschaffen (Budget) und die typischen Schuldenfallen für junge Menschen zu erkennen - Ratenkäufe, 'Buy now, pay later', Abos, In-App-Käufe, das Smartphone als unsichtbare Geldausgabe-Maschine. Im Zentrum stehen Finanzkompetenz und Impulskontrolle: zu verstehen, dass kleine, regelmäßige Ausgaben sich heimlich summieren, dass Schulden schnell entstehen und schwer wieder loszuwerden sind, und dass bewusstes Sparen kein Verzicht, sondern Freiheit für eigene Ziele ist. Die Stunde verbindet konkretes Rechnen mit der psychologischen Seite des Geldausgebens. Das Arbeitsblatt sichert das Bedürfnis-Wunsch-Verständnis, einen persönlichen Geld-Überblick und ein realistisches eigenes Spar-Ziel.",
+    "ablauf": [
+      {
+        "title": "Einstieg - 100 Euro - was machst du damit?",
+        "text": "Steigen Sie konkret ein: 'Stell dir vor, du bekommst heute unerwartet 100 Euro geschenkt. Schreib in 30 Sekunden auf, was du damit machst.' Sammeln Sie einige Antworten an der Tafel und sortieren Sie sie sichtbar in drei Spalten: SOFORT AUSGEBEN / SPAREN / FÜR ETWAS GROSSES ZURÜCKLEGEN. Fragen Sie wertfrei nach: Was steckt hinter den Entscheidungen? Leitfrage: 'Geld ist schnell weg - aber wofür eigentlich? Und wisst ihr eigentlich, wohin euer Geld im Monat so verschwindet?' Die meisten werden zugeben: Den genauen Überblick haben sie nicht. Machen Sie das Ziel klar: 'Heute geht es nicht darum, dass ihr knausern sollt. Es geht darum, dass IHR über euer Geld bestimmt - und nicht euer Geld über euch. Wer den Überblick hat, ist freier.' Moderationshinweis: Heikles, weil ungleich verteiltes Thema - manche Jugendliche haben viel Taschengeld/Nebenjob, andere fast nichts oder finanzielle Sorgen zu Hause. Bleiben Sie sensibel, vergleichen Sie keine Beträge und betonen Sie, dass es um den UMGANG mit Geld geht, nicht um die Menge."
+      },
+      {
+        "title": "Input 1 - Brauchen oder wollen, und der Geld-Überblick",
+        "text": "Sachlicher Kurzinput (max. 12 Min). (1) BEDÜRFNIS vs. WUNSCH: Ein Bedürfnis ist etwas, das man wirklich braucht (Essen, ein funktionierendes Handy für Schule/Kontakt, Kleidung); ein Wunsch ist etwas, das schön wäre, aber nicht nötig (das neueste Modell, die dritte Sneaker, der teure Energydrink). Wichtig und ehrlich: Wünsche sind völlig okay - aber sie als Wünsche zu ERKENNEN hilft, bewusst zu entscheiden. Die Grenze ist nicht immer scharf, das ist Teil der Übung. (2) DER GELD-ÜBERBLICK / BUDGET: Erklären Sie das einfache Prinzip - Einnahmen (Taschengeld, Nebenjob, Geschenke) minus Ausgaben = was übrig bleibt. Wer das nicht kennt, wundert sich am Monatsende, wo das Geld ist. (3) DIE KLEINEN AUSGABEN summieren sich: Rechnen Sie gemeinsam ein Beispiel vor - ein Snack/Getränk für ein paar Euro, mehrmals die Woche, ergibt im Jahr eine überraschend große Summe. Das ist der wichtigste Aha-Moment. Begriffe an die Tafel: Bedürfnis, Wunsch, Einnahmen, Ausgaben, Budget, Sparrate. Moderationshinweis: Rechnen Sie das 'kleine Ausgaben'-Beispiel wirklich live durch - die Zahl wirkt stärker als jede Ermahnung."
+      },
+      {
+        "title": "Input 2 & Erarbeitung - Die Schuldenfallen erkennen",
+        "text": "Kurzer Input zu den modernen Schuldenfallen, die gezielt auf junge Menschen zielen (max. 8 Min): RATENKÄUFE & 'BUY NOW, PAY LATER' ('Kauf jetzt, zahl später' / 'in 3 Raten' - lässt teure Dinge billig wirken, das Geld ist aber trotzdem weg, oft plus Gebühren/Zinsen); ABOS, die man vergisst (Streaming, Apps, Gaming - kleine monatliche Beträge, die unbemerkt weiterlaufen); IN-APP- & SPIELKÄUFE (Skins, Coins, Lootboxen - bewusst so gebaut, dass man immer weiter ausgibt); LEICHT VERFÜGBARER KREDIT / Überziehen. Kernbotschaft: Schulden sind schnell gemacht und schwer wieder loszuwerden - 'später zahlen' heißt nicht 'umsonst'. Dann in Kleingruppen: Jede Gruppe bekommt eine realistische Budget-Situation (z. B. 'Du hast 60 Euro im Monat. Du willst ein Konzertticket für 90 Euro, hast drei laufende Abos und gibst regelmäßig für Snacks aus. Was tun?'). Aufgaben: Überblick verschaffen, Wünsche und Bedürfnisse trennen, einen realistischen Plan finden (sparen, verzichten, warten - statt Schulden/Ratenkauf). Moderationshinweis: herumgehen und auf realistische, nicht moralische Lösungen achten ('Ratenkauf löst das nicht, es verschiebt es nur')."
+      },
+      {
+        "title": "Vertiefung - Sparen ist Freiheit, nicht Verzicht",
+        "text": "Plenum: Die Gruppen stellen ihre Budget-Lösungen kurz vor. Arbeiten Sie die zentrale Umdeutung heraus: Sparen wird oft als langweiliger Verzicht erlebt ('ich kann mir nichts gönnen') - in Wahrheit ist es das Gegenteil: Wer spart, verschafft sich die FREIHEIT, sich später etwas Größeres zu leisten, ohne in die Schuldenfalle zu geraten, und ist gewappnet, wenn etwas Unerwartetes kommt. Sammeln Sie konkrete, machbare Spar-Strategien: ein festes 'erst sparen, dann ausgeben' (einen kleinen Teil sofort beiseitelegen); die '24-Stunden-Regel' bei Wünschen (eine Nacht drüber schlafen - oft will man es dann gar nicht mehr); Abos prüfen und kündigen, was man nicht nutzt; ein konkretes Sparziel setzen, das motiviert. Greifen Sie die psychologische Seite auf: Geld ausgeben fühlt sich kurz gut an (Belohnung), Sparen zahlt sich erst später aus - genau deshalb ist Impulskontrolle hier so wichtig. Moderationshinweis: stärkenorientiert; machen Sie sichtbar, dass schon kleine Beträge über Zeit zu etwas werden ('aus 5 Euro pro Woche wird im Jahr...') - das motiviert mehr als Verbote."
+      },
+      {
+        "title": "Reflexion & Transfer - Mein Geld, mein Ziel",
+        "text": "Stille, freiwillige Einzelarbeit auf dem Arbeitsblatt: Wie sieht MEIN grober Geld-Überblick aus (Einnahmen, ungefähre Ausgaben, was bleibt)? Wo geht bei mir am ehesten unbemerkt Geld weg (kleine Ausgaben, Abos, In-App-Käufe)? Welches eine SPARZIEL hätte ich - etwas, für das es sich lohnt, bewusster zu sein? Lassen Sie jede:n einen konkreten, kleinen ersten Schritt festhalten (z. B. ein Abo kündigen, eine Woche die Ausgaben notieren, einen festen Betrag sparen). Betonen Sie: Der eigene Überblick ist privat. Schlusssatz: 'Geld ist Freiheit - aber nur, wenn DU es steuerst und nicht die nächste 'nur heute'-Verlockung oder der nächste Ratenkauf. Du musst nicht reich sein, um deine Finanzen im Griff zu haben. Du musst nur wissen, was reinkommt, was rausgeht - und wofür es sich für DICH lohnt zu warten.'"
+      }
+    ],
+    "duration": "ca. 90 Minuten (Doppelstunde); als Einzelstunde mit Fokus auf Bedürfnis/Wunsch und Geld-Überblick möglich",
+    "materialsNeeded": "Tafel/Flipchart; Taschenrechner oder Handys zum Rechnen; vorbereitete realistische Budget-Situationen als Karten (eine pro Gruppe, jugendnah); ein durchgerechnetes 'kleine Ausgaben summieren sich'-Beispiel als Lehrkraft-Hintergrund; Übersicht über typische Schuldenfallen (Ratenkauf, BNPL, Abos, In-App-Käufe) als Hintergrund; Arbeitsblatt pro Jugendlichem; optional Projektor",
+    "remark": "Heikel, weil finanzielle Verhältnisse in jeder Klasse sehr ungleich sind - manche haben viel Geld zur Verfügung, andere kaum oder erleben zu Hause finanzielle Sorgen oder Überschuldung. Vergleichen Sie KEINE konkreten Beträge, fordern Sie niemanden auf, seine echten Zahlen offenzulegen, und betonen Sie konsequent, dass es um den UMGANG mit Geld geht, nicht um die Menge - so wird niemand bloßgestellt. Der eigene Geld-Überblick auf dem Arbeitsblatt ist freiwillig und privat; biete an, mit erfundenen Beispielzahlen zu arbeiten, wer das möchte. Vermeiden Sie jeden moralischen Zeigefinger ('wer Schulden macht, ist selber schuld') - Überschuldung kann viele Ursachen haben und Familien betreffen; bleiben Sie sachlich und stärkend. Wenn deutlich wird, dass ein:e Jugendliche:r oder die Familie ernsthafte finanzielle Probleme oder Schulden hat, behandeln Sie das vertraulich und verweisen Sie auf Beratung (SePAS, Schuldnerberatung in Luxemburg). Differenzierung: für jüngere Gruppen mit kleineren, einfacheren Beträgen und dem Schwerpunkt Bedürfnis/Wunsch arbeiten; für reifere Gruppen Zinsen, Ratenkauf-Realität, Handyvertrag und erste Schritte zur finanziellen Selbstständigkeit vertiefen. Bei Belastung/Krise: Vertrauensperson, SePAS/Schulpsychologie, Kanner- a Jugendtelefon 116 111, im Notfall 112.",
+    "etepStufen": [
+      3,
+      4,
+      5
+    ],
+    "eldibGoals": [
+      "V-22",
+      "V-23",
+      "V-29",
+      "V-32",
+      "K-31",
+      "SOZ-30",
+      "KOG-50",
+      "KOG-55",
+      "KOG-58"
+    ],
+    "worksheet": {
+      "title": "Mein Geld im Griff - Überblick, Fallen, Ziel",
+      "intro": "Mit Geld umgehen zu können ist eine echte Superkraft fürs Leben - und niemand wird damit geboren. Dieses Blatt hilft dir, Wünsche von echten Bedürfnissen zu trennen, einen ehrlichen Überblick über dein Geld zu bekommen, die typischen Schuldenfallen zu erkennen und dir ein Sparziel zu setzen, das sich für DICH lohnt. Es geht nicht um Knausern, sondern um Freiheit. Was du hier ausfüllst, bleibt bei dir - du darfst auch mit Beispielzahlen arbeiten.",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "1. Brauchen oder wollen?"
+        },
+        {
+          "kind": "instruction",
+          "text": "Ein Bedürfnis brauchst du wirklich, ein Wunsch wäre schön. Beides ist okay - aber den Unterschied zu kennen hilft. Ordne ein paar Beispiele zu."
+        },
+        {
+          "kind": "table",
+          "text": "Trage Dinge ein, für die du Geld ausgibst - und ordne sie ein:",
+          "lines": 4,
+          "items": [
+            "Eher Bedürfnis (brauche ich)",
+            "Eher Wunsch (wäre schön)"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "2. Mein Geld-Überblick"
+        },
+        {
+          "kind": "instruction",
+          "text": "Verschaff dir einen groben Überblick (echte oder geschätzte Zahlen - das bleibt bei dir)."
+        },
+        {
+          "kind": "lines",
+          "text": "Was kommt im Monat ungefähr rein (Taschengeld, Nebenjob, Geschenke)?",
+          "lines": 2
+        },
+        {
+          "kind": "lines",
+          "text": "Wofür geht es ungefähr wieder raus?",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "3. Die heimlichen Geld-Fresser"
+        },
+        {
+          "kind": "instruction",
+          "text": "Kleine, regelmäßige Ausgaben summieren sich unbemerkt. Kreuze an, was bei DIR Geld frisst, ohne dass du es merkst."
+        },
+        {
+          "kind": "checklist",
+          "text": "Das frisst heimlich mein Geld:",
+          "items": [
+            "Snacks, Getränke, Energydrinks unterwegs",
+            "Abos, die ich kaum noch nutze (Streaming, Apps, Gaming)",
+            "In-App- oder Spielkäufe (Skins, Coins, Lootboxen)",
+            "Spontankäufe wegen 'nur heute'-Angeboten",
+            "Ratenkäufe / 'jetzt kaufen, später zahlen'"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "4. Die Schuldenfalle verstehen"
+        },
+        {
+          "kind": "question",
+          "text": "Warum ist 'jetzt kaufen, später zahlen' (Ratenkauf) oft eine Falle? Erkläre in eigenen Worten, warum 'später zahlen' nicht 'umsonst' heißt.",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "5. Wie gut kann ich warten?"
+        },
+        {
+          "kind": "scale",
+          "text": "Wenn ich etwas unbedingt haben will - wie gut kann ich warten, statt es sofort zu kaufen? (1 = sehr schwer, 5 = gut)",
+          "items": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "6. Mein Sparziel"
+        },
+        {
+          "kind": "box",
+          "text": "Wofür würde es sich für MICH lohnen, bewusster mit Geld umzugehen? Mein Sparziel - und ein kleiner erster Schritt diese Woche (z. B. ein Abo kündigen, eine Woche Ausgaben notieren, einen festen Betrag beiseitelegen):",
+          "lines": 4
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "staerken-werte-wege-wer-bin-ich-und-was-passt-zu-mir",
+    "title": "Stärken, Werte, Wege - wer bin ich, und was passt zu mir?",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "ES"
+    ],
+    "type": [
+      "ganz Stonn"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Plenum für Einstieg, Input zu Stärken/Interessen/Werten und Auswertung"
+      },
+      {
+        "mode": "Grupp",
+        "note": "Partner- oder Kleingruppenarbeit 2-3 für gegenseitiges Stärken-Feedback (Fremdbild)"
+      },
+      {
+        "mode": "Individuel",
+        "note": "ausführliche, freiwillige Einzelarbeit zum eigenen Stärken-Werte-Profil"
+      }
+    ],
+    "themes": [
+      "zukunft-beruf",
+      "selbstwahrnehmung",
+      "identitaet"
+    ],
+    "tags": [
+      "Jugend",
+      "Berufsorientierung",
+      "Stärken",
+      "Interessen",
+      "Werte",
+      "Selbstkenntnis",
+      "Zukunft",
+      "Lebensplanung"
+    ],
+    "shortDescription": "Bei der Berufs- und Zukunftsorientierung starten Jugendliche oft mit der falschen Frage: 'Welcher Job bringt viel Geld / ist angesehen?' - statt mit 'Was passt zu MIR?'. Diese Doppelstunde dreht die Reihenfolge um und legt das Fundament für jede gute Zukunftsentscheidung: die eigene Selbstkenntnis. Die Jugendlichen erkunden strukturiert ihre Stärken (was kann ich gut?), ihre Interessen (was tue ich gern, auch ohne Belohnung?) und ihre Werte (was ist mir im Leben und in der Arbeit wichtig - Sicherheit, Kreativität, Menschen helfen, Freiheit, Anerkennung?). Ein zentrales Element ist der Abgleich von Selbstbild und Fremdbild: Andere sehen Stärken an uns, die wir selbst gar nicht bemerken. Statt vorschnell auf einen Beruf zu zeigen, entwickeln die Jugendlichen ein persönliches Profil, aus dem sich PASSENDE Richtungen ableiten lassen - das schützt vor Fehlentscheidungen aus Prestige oder fremden Erwartungen. Das Arbeitsblatt sichert das eigene Stärken-Interessen-Werte-Profil, integriert das Fremdbild und leitet zu ersten passenden Berufsfeldern über.",
+    "ablauf": [
+      {
+        "title": "Einstieg - Die falsche erste Frage",
+        "text": "Schreiben Sie zwei Fragen nebeneinander an die Tafel: 'Welcher Beruf bringt viel Geld und Ansehen?' und 'Welcher Beruf passt zu MIR?'. Fragen Sie: 'Mit welcher Frage fangen die meisten an, wenn sie über ihre Zukunft nachdenken?' Die meisten erkennen: mit der ersten. Leitfrage: 'Was passiert, wenn man einen gut bezahlten Job wählt, der überhaupt nicht zu einem passt?' Sammeln Sie (Unzufriedenheit, Stress, Abbruch). Führen Sie heraus: Eine gute Zukunftsentscheidung beginnt nicht beim Beruf, sondern bei DIR - bei dem, was du kannst, gern tust und wichtig findest. Machen Sie das Ziel klar: 'Heute geht es noch nicht darum, einen Beruf zu finden. Heute geht es um die wichtigste Vorarbeit: euch selbst besser kennenzulernen. Denn wer sich selbst kennt, trifft bessere Entscheidungen - bei der Ausbildung, im Job, im ganzen Leben.' Moderationshinweis: Nehmen Sie Druck raus - betonen Sie, dass heute niemand wissen muss, was er/sie 'werden will', und dass sich Interessen und Pläne im Laufe des Lebens verändern dürfen."
+      },
+      {
+        "title": "Input - Die drei Bausteine: Stärken, Interessen, Werte",
+        "text": "Sachlicher Kurzinput (max. 12 Min). Stellen Sie die drei Bausteine der Selbstkenntnis vor: (1) STÄRKEN - was kann ich gut? (nicht nur Schulnoten! auch: zuhören können, organisieren, mit Händen arbeiten, andere zum Lachen bringen, durchhalten, kreativ sein, Probleme lösen). Wichtig: Stärken zeigen sich oft in Dingen, die uns leichtfallen und die wir für 'normal' halten. (2) INTERESSEN - was tue ich gern, auch ohne dass mich jemand dazu zwingt oder belohnt? Wofür vergesse ich die Zeit? (3) WERTE - was ist mir wichtig, wofür will ich arbeiten? Stellen Sie Beispiele für Arbeitswerte vor: anderen Menschen helfen, Sicherheit, viel Geld, Freiheit/Selbstbestimmung, Kreativität, Anerkennung, mit Menschen oder lieber allein arbeiten, draußen oder drinnen. Kernbotschaft: Diese drei zusammen ergeben ein Profil - und ein Beruf passt umso besser, je mehr er zu allen dreien passt. Begriffe an die Tafel: Stärke, Interesse, Wert, Selbstbild, Fremdbild. Moderationshinweis: Geben Sie zu jeder Kategorie alltagsnahe, nicht-akademische Beispiele, damit auch schulisch weniger starke Jugendliche ihre Stärken erkennen - das ist entscheidend für die Selbstwirksamkeit."
+      },
+      {
+        "title": "Erarbeitung - Mein Profil und der Blick der anderen",
+        "text": "Zweiteilig. ERST EINZELARBEIT (still): Jede:r füllt auf dem Arbeitsblatt das eigene Profil aus - Stärken, Interessen, Werte. Geben Sie Zeit und ermutigen Sie, auch außerschulische Dinge ernst zu nehmen (Hobbys, Verantwortung in der Familie, Sport, Gaming-Skills wie Strategie/Teamführung). DANN FREMDBILD (zu zweit/dritt mit Menschen, die man vertraut): Die Jugendlichen geben sich gegenseitig ehrliches, wertschätzendes Stärken-Feedback - 'Eine Stärke, die ich an dir sehe, ist...', 'Du wirkst auf mich besonders gut in...'. Jede:r notiert das Fremdbild auf dem Arbeitsblatt. Dieser Schritt ist oft der wertvollste: Andere sehen Stärken, die man selbst übersieht oder für selbstverständlich hält. Moderationshinweis: Strukturieren Sie das Feedback klar (nur Positives, konkret, mit Beispiel), damit es ehrlich und aufbauend bleibt; herumgehen und Formulierungshilfen geben. Achten Sie darauf, dass jede:r Feedback bekommt - niemand soll leer ausgehen. Bei sehr unsicheren Gruppen Feedback in Stichworten auf Kärtchen schreiben lassen statt mündlich."
+      },
+      {
+        "title": "Vertiefung - Wo Selbstbild und Fremdbild sich treffen",
+        "text": "Plenum/Einzelreflexion. Die Jugendlichen vergleichen ihr Selbstbild mit dem erhaltenen Fremdbild: Wo stimmt es überein (das sind oft die verlässlichsten Stärken)? Was haben andere gesehen, das mir selbst neu war (ein verstecktes Talent)? Sammeln Sie im Plenum freiwillig einige Überraschungen ('Was hat dich am Feedback überrascht?'). Arbeiten Sie heraus: Das vollständigste Bild von uns entsteht erst, wenn wir beide Perspektiven zusammennehmen. Dann der Brückenschlag zum Beruf: Zeigen Sie an zwei, drei Beispiel-Profilen, wie man von einem Profil zu PASSENDEN Berufsfeldern kommt (z. B. 'gut zuhören + Menschen helfen wichtig + arbeitet gern mit Menschen' deutet auf soziale/pflegerische/beratende Felder; 'tüfteln + draußen sein + Dinge mit den Händen schaffen' auf handwerklich-technische). Wichtig: Es geht um RICHTUNGEN und Felder, nicht um EINEN festgelegten Beruf. Moderationshinweis: Halten Sie es offen und vorurteilsfrei bzgl. Geschlecht und Prestige (jeder Weg ist wertvoll); betonen Sie, dass ein Profil viele mögliche Wege zulässt."
+      },
+      {
+        "title": "Reflexion & Transfer - Mein nächster Schritt zur Klarheit",
+        "text": "Stille, freiwillige Einzelreflexion auf dem Arbeitsblatt: Was sind - nach Selbst- und Fremdbild - meine drei klarsten Stärken? Welche zwei Werte sind mir bei einer späteren Arbeit am wichtigsten? Welche ein bis zwei Berufsfelder/Richtungen passen am ehesten zu meinem Profil - und was würde ich gern darüber herausfinden? Lassen Sie jede:n einen konkreten nächsten Schritt zur Berufsorientierung festhalten (z. B. mit jemandem aus dem Wunschfeld sprechen, ein Praktikum/Schnuppern, gezielt recherchieren, das Beratungsangebot der Schule / Maison de l'orientation nutzen). Verweisen Sie auf die konkreten Orientierungsangebote in Luxemburg. Schlusssatz: 'Du musst heute noch nicht wissen, was du einmal wirst - das wissen die wenigsten in eurem Alter, und das ist völlig normal. Aber je besser du dich selbst kennst - deine Stärken, deine Interessen, deine Werte -, desto sicherer findest du einen Weg, der wirklich zu DIR passt und nicht nur zu den Erwartungen anderer.'"
+      }
+    ],
+    "duration": "ca. 90 Minuten (Doppelstunde); als Einzelstunde mit Fokus auf Stärken und Fremdbild möglich",
+    "materialsNeeded": "Tafel/Flipchart; Arbeitsblatt pro Jugendlichem; ggf. Kärtchen für schriftliches Stärken-Feedback; Übersicht/Beispiele von Berufsfeldern und Arbeitswerten als Lehrkraft-Hintergrund; Hinweise auf die Orientierungsangebote in Luxemburg (z. B. Maison de l'orientation, schulische Berufsberatung/SePAS); optional Projektor",
+    "remark": "Berufsorientierung berührt Identität, Selbstwert und oft familiäre Erwartungen oder Druck (manche Jugendliche sollen einen bestimmten Weg gehen, andere haben keinerlei Vorbilder oder Perspektiven). Gehen Sie sensibel damit um, nehmen Sie Leistungsdruck heraus und betonen Sie, dass niemand jetzt eine endgültige Entscheidung treffen muss und dass sich Wege im Leben ändern dürfen. Achten Sie besonders darauf, dass auch schulisch schwächere Jugendliche ihre (oft außerschulischen) Stärken erkennen - dies ist eine wichtige Quelle von Selbstwirksamkeit; werten Sie keinen Weg gegen einen anderen ab (handwerklich vs. akademisch, 'Prestige'). Halten Sie das Stärken-Feedback strikt wertschätzend und konkret (nur Positives), damit es niemanden verletzt; sorgen Sie dafür, dass jede:r Feedback erhält. Vermeiden Sie Geschlechter-Klischees bei der Zuordnung von Berufsfeldern. Wer sich beim Selbst-/Fremdbild nicht öffnen möchte, darf zurückhaltend bleiben - Freiwilligkeit wahren. Differenzierung: für unsichere Gruppen mit klaren Stärken-Listen zum Ankreuzen und schriftlichem Feedback arbeiten; für reifere Gruppen die Verbindung von Werten und Lebensentwürfen, realistische Wege (Ausbildung/Studium) und Umgang mit fremden Erwartungen vertiefen. Bei Belastung/Krise: Vertrauensperson, SePAS/Schulpsychologie, Kanner- a Jugendtelefon 116 111, im Notfall 112.",
+    "etepStufen": [
+      3,
+      4,
+      5
+    ],
+    "eldibGoals": [
+      "V-22",
+      "V-25",
+      "V-27",
+      "V-33",
+      "K-29",
+      "SOZ-31",
+      "KOG-49",
+      "KOG-56",
+      "KOG-60"
+    ],
+    "worksheet": {
+      "title": "Stärken, Werte, Wege - mein Profil",
+      "intro": "Eine gute Zukunftsentscheidung beginnt nicht beim Beruf, sondern bei dir. Dieses Blatt hilft dir, deine Stärken, Interessen und Werte zu entdecken, den Blick der anderen einzubeziehen (oft sehen sie Stärken, die du übersiehst) und daraus erste passende Richtungen abzuleiten. Du musst hier noch nicht wissen, was du 'werden willst' - das ist völlig okay. Was du aufschreibst, gehört dir.",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "1. Meine Stärken - was kann ich gut?"
+        },
+        {
+          "kind": "instruction",
+          "text": "Stärken sind nicht nur Schulnoten. Oft sind es Dinge, die dir leichtfallen und die du für selbstverständlich hältst (zuhören, organisieren, mit Händen arbeiten, durchhalten, andere zum Lachen bringen, Probleme lösen)."
+        },
+        {
+          "kind": "lines",
+          "text": "Das kann ich gut (auch außerhalb der Schule - Hobbys, Sport, Verantwortung zu Hause, Gaming-Skills wie Strategie/Teamführung):",
+          "lines": 4
+        },
+        {
+          "kind": "heading",
+          "text": "2. Meine Interessen - was tue ich gern?"
+        },
+        {
+          "kind": "question",
+          "text": "Was tust du gern, auch ohne Belohnung oder Zwang? Wofür vergisst du die Zeit?",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "3. Meine Werte - was ist mir wichtig?"
+        },
+        {
+          "kind": "instruction",
+          "text": "Bei der Arbeit (und im Leben) ist Menschen Unterschiedliches wichtig. Kreuze an, was DIR am wichtigsten wäre (max. 4)."
+        },
+        {
+          "kind": "checklist",
+          "text": "Das ist mir bei einer späteren Arbeit wichtig:",
+          "items": [
+            "anderen Menschen helfen / etwas Sinnvolles tun",
+            "Sicherheit und ein verlässliches Einkommen",
+            "viel Geld verdienen",
+            "Freiheit und Selbstbestimmung",
+            "Kreativität, etwas erschaffen",
+            "Anerkennung und Erfolg",
+            "viel mit Menschen zu tun haben",
+            "lieber für mich / konzentriert allein arbeiten",
+            "draußen / in Bewegung statt am Schreibtisch"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "4. Der Blick der anderen (Fremdbild)"
+        },
+        {
+          "kind": "instruction",
+          "text": "Trage hier ein, welche Stärken andere an dir sehen (aus dem Feedback) - besonders die, die dich überrascht haben."
+        },
+        {
+          "kind": "box",
+          "text": "Stärken, die andere an mir sehen:",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "5. Selbstbild trifft Fremdbild"
+        },
+        {
+          "kind": "question",
+          "text": "Wo stimmen dein eigenes Bild und das der anderen überein? Was war neu für dich?",
+          "lines": 3
+        },
+        {
+          "kind": "heading",
+          "text": "6. Wie klar ist mir, was zu mir passt?"
+        },
+        {
+          "kind": "scale",
+          "text": "Wie klar ist mir gerade, in welche berufliche Richtung ich gehen könnte? (1 = noch gar keine Idee, 5 = ziemlich klar)",
+          "items": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "7. Mein Profil und mein nächster Schritt"
+        },
+        {
+          "kind": "box",
+          "text": "Meine 3 klarsten Stärken + meine 2 wichtigsten Werte + 1-2 Berufsfelder, die dazu passen könnten - und mein konkreter nächster Schritt, um mehr herauszufinden (z. B. Praktikum, mit jemandem sprechen, recherchieren, Beratung nutzen):",
+          "lines": 5
+        }
+      ]
+    },
+    "language": "de",
+    "source": "generated"
+  },
+  {
+    "id": "vom-traum-zum-plan-wie-aus-zielen-wirklich-etwas-wird",
+    "title": "Vom Traum zum Plan - wie aus Zielen wirklich etwas wird",
+    "author": "ISA-Toolbox",
+    "ageLevels": [
+      "ES"
+    ],
+    "type": [
+      "Projet",
+      "ganz Stonn"
+    ],
+    "participants": [
+      {
+        "mode": "Klass",
+        "note": "Plenum für Auftakt, Input zu Zielen/SMART und Hindernissen sowie Abschluss"
+      },
+      {
+        "mode": "Grupp",
+        "note": "feste Tandems / Kleingruppen 2-3 als 'Ziel-Buddies' für gegenseitige Begleitung und Feedback"
+      },
+      {
+        "mode": "Individuel",
+        "note": "individuelle Arbeit am eigenen, selbst gewählten Ziel und am persönlichen Aktionsplan"
+      }
+    ],
+    "themes": [
+      "zukunft-beruf",
+      "motivation",
+      "resilienz"
+    ],
+    "tags": [
+      "Jugend",
+      "Ziele",
+      "Motivation",
+      "Selbstwirksamkeit",
+      "Planung",
+      "Durchhalten",
+      "Zukunft",
+      "SMART-Ziele"
+    ],
+    "shortDescription": "Fast jede:r hat Träume und Vorsätze - 'fitter werden', 'bessere Noten', 'sparen für etwas', 'Führerschein machen' - und fast jede:r kennt das Scheitern daran. Der Grund ist selten fehlender Wille, sondern fehlende Methode: Ziele bleiben zu vage, zu groß, ohne Plan und ohne Strategie für die unvermeidlichen Rückschläge. Dieses Projekt vermittelt eine der wichtigsten Zukunftskompetenzen ganz praktisch: aus einem Wunsch ein erreichbares Ziel und einen konkreten Plan zu machen - und dann WIRKLICH dranzubleiben. Die Jugendlichen lernen, vage Wünsche in klare, machbare Ziele zu übersetzen (Prinzip der SMART-Ziele), große Ziele in kleine Schritte zu zerlegen, Hindernisse vorauszudenken und Strategien für Motivationstiefs und Rückschläge zu entwickeln. Als Projekt verfolgen sie über mehrere Wochen ein selbst gewähltes, realistisches Ziel und begleiten sich gegenseitig als 'Ziel-Buddies'. Im Zentrum stehen Selbstwirksamkeit und Resilienz: die Erfahrung, dass man Einfluss auf das eigene Leben hat - wenn man weiß, wie man Ziele angeht. Das Arbeitsblatt führt vom Wunsch über das geschärfte Ziel und den Schrittplan bis zum Umgang mit Rückschlägen.",
+    "ablauf": [
+      {
+        "title": "Auftakt - Warum gute Vorsätze meistens scheitern",
+        "text": "Steigen Sie ehrlich ein: 'Wer kennt das - man nimmt sich fest etwas vor (mehr lernen, mehr Sport, weniger Handy) und nach zwei Wochen ist es vorbei?' Fast alle Hände gehen hoch - das entlastet sofort. Leitfrage: 'Liegt das wirklich daran, dass wir alle zu faul oder willensschwach sind - oder machen wir vielleicht etwas falsch, wenn wir uns Ziele setzen?' Sammeln Sie Gründe fürs Scheitern an der Tafel (zu groß, zu unklar, kein Plan, vergessen, keine Lust mehr, ein Rückschlag und dann ganz aufgegeben). Machen Sie das Ziel und das Projekt klar: 'Scheitern an Vorsätzen ist kein Charakterfehler - es ist meistens eine Frage der Methode. Heute lernt ihr, wie man Ziele so setzt, dass man sie wirklich erreicht. Und dann probiert ihr es über die nächsten Wochen an einem eigenen Ziel aus - mit einem Buddy, der euch begleitet.' Stellen Sie den Projektcharakter vor (heute Methode lernen + Ziel festlegen, dann mehrere Wochen dranbleiben mit Check-ins, am Ende gemeinsame Auswertung). Moderationshinweis: Nehmen Sie Druck und Scham raus - Scheitern normalisieren ist hier didaktisch entscheidend."
+      },
+      {
+        "title": "Input - Vom vagen Wunsch zum klaren Ziel",
+        "text": "Sachlicher Input (max. 15 Min) mit aktiven Beispielen. (1) DER UNTERSCHIED Wunsch vs. Ziel: 'Ich will fitter werden' ist ein Wunsch (vage, nicht überprüfbar); 'Ich gehe ab Montag dreimal pro Woche 20 Minuten laufen' ist ein Ziel. (2) WAS EIN GUTES ZIEL AUSMACHT (SMART, jugendgerecht erklärt): KONKRET (was genau, nicht 'irgendwie besser'); MESSBAR (woran merke ich, dass ich's geschafft habe?); REALISTISCH (machbar mit meinen Mitteln - lieber ein kleines Ziel erreichen als an einem riesigen scheitern); WICHTIG FÜR MICH (ist es MEIN Ziel oder das von Eltern/anderen? - eigene Ziele zieht man eher durch); MIT ZEITRAHMEN (bis wann?). Üben Sie das live: Nehmen Sie zwei, drei vage Wünsche aus der Klasse und schärfen Sie sie gemeinsam zu guten Zielen. (3) GROSSES ZIEL = VIELE KLEINE SCHRITTE: Ein großes Ziel überfordert; zerlegt in kleine, konkrete erste Schritte wird es machbar ('Was ist der allererste, kleinste Schritt, den ich diese Woche tun kann?'). Begriffe an die Tafel: Wunsch vs. Ziel, konkret/messbar/realistisch, erster Schritt, Zeitrahmen. Moderationshinweis: Das gemeinsame Schärfen vager Wünsche ist der Kern - lassen Sie die Klasse mitarbeiten, statt nur zu dozieren."
+      },
+      {
+        "title": "Erarbeitung - Mein Ziel und mein Schrittplan",
+        "text": "Individuelle Arbeit (mit Buddy-Unterstützung) am Arbeitsblatt. Jede:r wählt EIN realistisches, persönlich wichtiges Ziel für die nächsten Wochen (Beispiele anbieten: schulisch, sportlich, finanziell sparen, eine Gewohnheit ändern, etwas lernen, einen Schritt zur Berufsorientierung). Dann: (a) Wunsch zu einem GUTEN Ziel schärfen (konkret, messbar, realistisch, mit Zeitrahmen) - der Buddy prüft kritisch nach ('Ist das wirklich konkret? Woran merkst du, dass du's geschafft hast? Ist das realistisch?'). (b) Das Ziel in 3-5 kleine Schritte zerlegen, mit klarem erstem Schritt für diese Woche. (c) WARUM ist mir das wichtig (Motivation festhalten - das trägt durch Tiefs). Die Buddies tauschen ihre Ziele und Pläne aus und vereinbaren, wie sie sich gegenseitig begleiten (z. B. wöchentlich kurz nachfragen). Moderationshinweis: herumgehen und konsequent auf Realismus und Konkretheit drängen ('lieber kleiner und geschafft als groß und gescheitert'). Achten Sie darauf, dass die Ziele wirklich die EIGENEN sind und nicht das, was gut klingt."
+      },
+      {
+        "title": "Vertiefung - Hindernisse vorausdenken und Rückschläge überstehen",
+        "text": "Plenum/Gruppe - der entscheidende Schritt, der echtes Dranbleiben von gut gemeinten Vorsätzen unterscheidet. Arbeiten Sie heraus: Die meisten Ziele scheitern nicht am Anfang, sondern beim ersten Hindernis oder Motivationstief. Deshalb plant man beides VORHER ein. (1) HINDERNISSE VORAUSDENKEN: 'Was könnte dich von deinem Ziel abbringen?' (keine Zeit, Freunde lenken ab, keine Lust, etwas kommt dazwischen) - und für jedes wahrscheinliche Hindernis vorab eine Wenn-dann-Strategie überlegen ('WENN ich keine Lust habe, DANN mache ich wenigstens die kleinste Version - 5 Minuten statt nichts'). (2) RÜCKSCHLÄGE GEHÖREN DAZU: Ein verpasster Tag bedeutet NICHT, dass alles vorbei ist - das ist der gefährlichste Denkfehler ('jetzt ist eh egal'). Resilienz heißt: einmal hinfallen, wieder aufstehen, weitermachen. (3) DRANBLEIBEN ERLEICHTERN: kleine Erfolge sichtbar machen/feiern, sich erinnern WARUM, den Buddy nutzen. Lassen Sie jede:n auf dem Arbeitsblatt sein wahrscheinlichstes Hindernis und eine Wenn-dann-Strategie festhalten. Moderationshinweis: Betonen Sie, dass Rückschläge normal und kein Versagen sind - diese Haltung ist der wichtigste Schutz gegen vorzeitiges Aufgeben."
+      },
+      {
+        "title": "Umsetzung & Check-ins - Dranbleiben über Wochen",
+        "text": "Die eigentliche Projektphase über mehrere Wochen. Die Jugendlichen verfolgen ihr Ziel im Alltag. Bauen Sie regelmäßige, kurze CHECK-INS ein (z. B. einmal pro Woche 5-10 Min in der Klasse oder im Buddy-Tandem): Was lief gut? Wo hakt es? Was ist der nächste kleine Schritt? Muss ich mein Ziel anpassen (das ist erlaubt und klug, kein Scheitern)? Die Buddies unterstützen sich aktiv. Halten Sie die Check-ins wertschätzend und druckfrei - es geht ums Lernen am eigenen Prozess, nicht um Leistungskontrolle; auch wer ins Stocken geraten ist, soll ohne Beschämung berichten und neu ansetzen können. Moderationshinweis: Die Regelmäßigkeit ist hier das Wirksamste - schon das Wissen, dass nächste Woche jemand nachfragt, hilft beim Dranbleiben. Würdigen Sie Fortschritte sichtbar und behandeln Sie Rückschläge als normalen Teil des Lernens, nicht als Misserfolg."
+      },
+      {
+        "title": "Abschluss & Transfer - Was ich über mich gelernt habe",
+        "text": "Gemeinsame Auswertung am Ende der Projektphase. Jede:r reflektiert (freiwillig, teils im Buddy-Tandem): Habe ich mein Ziel (ganz oder teilweise) erreicht? Was hat mir geholfen dranzubleiben - und was hat mich gebremst? Was hat mir mein Buddy gebracht? Vor allem: Was habe ich über mich und über das Erreichen von Zielen gelernt, das ich auf NÄCHSTE Ziele übertragen kann? Würdigen Sie ausdrücklich auch teilweise Erfolge und das Dranbleiben trotz Rückschlägen - nicht nur das perfekte Ergebnis. Sammeln Sie im Plenum die wichtigsten 'Dranbleib-Erkenntnisse' der Klasse als Methoden-Schatz. Schlusssatz: 'Träume hat fast jeder. Der Unterschied zwischen einem Traum und einem Ergebnis ist ein Plan, kleine Schritte - und die Bereitschaft, nach einem Rückschlag wieder aufzustehen. Ihr habt jetzt erlebt, dass ihr mehr Einfluss auf euer Leben habt, als ihr vielleicht dachtet. Diese Methode funktioniert für jedes Ziel - in der Schule, im Beruf, im ganzen Leben.'"
+      }
+    ],
+    "duration": "Projekt über mehrere Wochen: 1 Doppelstunde Auftakt/Methode + Zielfestlegung, dann mehrere Wochen Umsetzung mit kurzen wöchentlichen Check-ins (5-10 Min) + 1 Abschlussstunde zur Auswertung",
+    "materialsNeeded": "Tafel/Flipchart; Arbeitsblatt pro Jugendlichem (begleitet das ganze Projekt); Beispiele für gut formulierte (SMART-)Ziele als Lehrkraft-Hintergrund; ggf. ein einfaches Fortschritts-/Tracking-Blatt oder Heft; fester, kurzer Zeitslot für die wöchentlichen Check-ins; optional Projektor",
+    "remark": "Motivierendes, lebensnahes Projekt mit großem Übertragungswert. Entscheidend ist eine druck- und beschämungsfreie Haltung: Das Projekt darf NICHT zur Leistungskontrolle werden, an der man 'durchfallen' kann - sonst erzeugt es genau die Versagensgefühle, die es abbauen soll. Normalisieren Sie Scheitern und Rückschläge ausdrücklich und immer wieder; würdigen Sie das Dranbleiben und teilweise Erfolge mindestens so stark wie das perfekte Ergebnis. Achten Sie darauf, dass die Ziele wirklich SELBST gewählt, realistisch und nicht von außen aufgedrückt sind - und erlauben Sie ausdrücklich, ein Ziel unterwegs anzupassen oder zu verkleinern (das ist klug, kein Versagen). Bei den Check-ins niemanden bloßstellen, der nicht vorangekommen ist; freiwilliges Teilen wahren. Seien Sie sensibel: Manche Jugendliche haben durch ihre Lebensumstände weniger Kontrolle über ihren Alltag - vermeiden Sie die Botschaft 'wer scheitert, hat sich nicht genug angestrengt'. Wenn bei einem Ziel sensible Themen auftauchen (z. B. Gewicht/Körper, Geld, familiäre Belastung), gehen Sie behutsam damit um. Differenzierung: für unsichere Gruppen sehr kleine, kurzfristige Ziele und enge Begleitung wählen; für reifere Gruppen längerfristige Ziele, ausführliche Hindernis-Strategien und die Verbindung zur Berufs-/Lebensplanung vertiefen. Bei Belastung/Krise: Vertrauensperson, SePAS/Schulpsychologie, Kanner- a Jugendtelefon 116 111, im Notfall 112.",
+    "etepStufen": [
+      3,
+      4,
+      5
+    ],
+    "eldibGoals": [
+      "V-22",
+      "V-23",
+      "V-25",
+      "V-32",
+      "K-29",
+      "SOZ-31",
+      "KOG-50",
+      "KOG-58",
+      "KOG-60",
+      "KOG-61"
+    ],
+    "worksheet": {
+      "title": "Vom Traum zum Plan - mein Ziel-Begleiter",
+      "intro": "Vorsätze scheitern fast nie am Willen, sondern an der Methode: Ziele sind oft zu vage, zu groß, ohne Plan - und ein Rückschlag wirft alles um. Dieses Blatt begleitet dich durch dein eigenes Ziel: vom Wunsch zum klaren Ziel, in kleine Schritte zerlegt, mit einer Strategie für die schwierigen Momente. Rückschläge gehören dazu - entscheidend ist, wieder aufzustehen. Was du aufschreibst, gehört dir.",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "1. Mein Wunsch"
+        },
+        {
+          "kind": "question",
+          "text": "Was möchtest du in den nächsten Wochen erreichen? (Schreib es erstmal so auf, wie es dir in den Kopf kommt - z. B. 'fitter werden', 'sparen', 'bessere Noten')",
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "2. Vom Wunsch zum klaren Ziel"
+        },
+        {
+          "kind": "instruction",
+          "text": "Ein gutes Ziel ist konkret, messbar, realistisch, wichtig für DICH und hat einen Zeitrahmen. Schärfe deinen Wunsch zu einem echten Ziel."
+        },
+        {
+          "kind": "checklist",
+          "text": "Prüfe dein Ziel - ist es...",
+          "items": [
+            "konkret? (genau, was - nicht 'irgendwie besser')",
+            "messbar? (woran merkst du, dass du es geschafft hast?)",
+            "realistisch? (machbar mit deinen Mitteln)",
+            "wirklich DEIN Ziel? (nicht das von anderen)",
+            "mit Zeitrahmen? (bis wann?)"
+          ]
+        },
+        {
+          "kind": "box",
+          "text": "Mein Ziel - jetzt konkret und klar formuliert:",
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "3. Warum ist mir das wichtig?"
+        },
+        {
+          "kind": "question",
+          "text": "Warum willst du gerade DIESES Ziel erreichen? (Dieser Grund trägt dich durch die schwierigen Momente - schreib ihn ehrlich auf.)",
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "4. Mein Schrittplan"
+        },
+        {
+          "kind": "instruction",
+          "text": "Ein großes Ziel wird machbar, wenn du es in kleine Schritte zerlegst."
+        },
+        {
+          "kind": "table",
+          "text": "Meine Schritte zum Ziel - mit dem allerersten für diese Woche:",
+          "lines": 5,
+          "items": [
+            "Schritt",
+            "Bis wann?"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "5. Hindernisse und mein Notfallplan"
+        },
+        {
+          "kind": "instruction",
+          "text": "Die meisten Ziele scheitern beim ersten Hindernis. Plane es vorher ein."
+        },
+        {
+          "kind": "question",
+          "text": "Was könnte dich am ehesten von deinem Ziel abbringen?",
+          "lines": 2
+        },
+        {
+          "kind": "box",
+          "text": "Meine Wenn-dann-Strategie: 'WENN ... (das Hindernis kommt), DANN mache ich ...' (z. B. WENN ich keine Lust habe, DANN mache ich wenigstens die kleinste Version):",
+          "lines": 2
+        },
+        {
+          "kind": "heading",
+          "text": "6. Wie sicher bin ich, dass ich dranbleibe?"
+        },
+        {
+          "kind": "scale",
+          "text": "Wie zuversichtlich bin ich, dass ich bei meinem Ziel wirklich dranbleibe? (1 = eher unsicher, 5 = sehr zuversichtlich)",
+          "items": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "7. Check-in & Rückblick"
+        },
+        {
+          "kind": "instruction",
+          "text": "Nutze diesen Teil für deine wöchentlichen Check-ins und den Rückblick am Ende. Ein verpasster Tag ist KEIN Grund aufzugeben."
+        },
+        {
+          "kind": "lines",
+          "text": "Was lief gut, wo hakt es, was ist mein nächster kleiner Schritt? (mehrere Wochen):",
+          "lines": 4
+        },
+        {
+          "kind": "question",
+          "text": "Rückblick am Ende: Was habe ich über mich und über das Erreichen von Zielen gelernt, das ich auf mein nächstes Ziel übertragen kann?",
           "lines": 3
         }
       ]
