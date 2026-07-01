@@ -12,6 +12,7 @@ import {
 import { ageColors } from '../lib/ui'
 import { StarRating } from './StarRating'
 import { variants, applyVariant } from '../data/variants'
+import { WorksheetView } from './WorksheetView'
 
 interface Props {
   material: Material | null
@@ -227,37 +228,13 @@ export function MaterialDetail({ material: m, onClose, onDownload, downloading, 
             </div>
           </div>
 
-          {/* Worksheet */}
+          {/* Worksheet — full visual preview (mirrors the printable PDF) */}
           {view.worksheet && (
-            <div className="rounded-lg border border-amber-100 bg-amber-50/50 p-3">
-              <div className="mb-1 flex items-center gap-2">
-                <span className="rounded bg-amber-100 px-1.5 py-0.5 text-[11px] font-semibold text-amber-700">
-                  Arbeitsblatt
-                </span>
-                <span className="text-sm font-semibold text-slate-700">
-                  {view.worksheet.title || view.title}
-                </span>
-              </div>
-              {view.worksheet.intro && (
-                <p className="mb-2 text-sm text-slate-600">{view.worksheet.intro}</p>
-              )}
-              <ul className="space-y-0.5 text-sm text-slate-600">
-                {view.worksheet.blocks
-                  .filter((b) => b.kind === 'heading' || b.kind === 'question')
-                  .slice(0, 8)
-                  .map((b, i) => (
-                    <li key={i} className="flex gap-1.5">
-                      <span className="text-amber-500">
-                        {b.kind === 'heading' ? '▸' : '·'}
-                      </span>
-                      <span>{b.text}</span>
-                    </li>
-                  ))}
-              </ul>
-              <p className="mt-2 text-xs text-slate-400">
-                Vollständig als druckbare Seite im PDF enthalten.
-              </p>
-            </div>
+            <WorksheetView
+              worksheet={view.worksheet}
+              themeId={view.themes[0]}
+              fallbackTitle={view.title}
+            />
           )}
 
           {/* Tags + attachments */}
