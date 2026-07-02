@@ -24,7 +24,7 @@ const ELDIB_MAX = { V: 33, K: 35, SOZ: 41, KOG: 62 }
 const AGE = new Set(['C1','C2','C3','C4','ES'])
 const TYPE = new Set(['Aktivitéit','ganz Stonn','Projet','Hospi'])
 const MODE = new Set(['Individuel','Grupp','Klass'])
-const WS_KINDS = new Set(['heading','instruction','question','lines','box','checklist','table','scale'])
+const WS_KINDS = new Set(['heading','instruction','question','lines','box','checklist','table','scale','columns','wordbank','sentences','bubble','steps','thermometer','bodymap','target','mindmap'])
 
 function sanitizeWorksheet(w) {
   if (!w || !Array.isArray(w.blocks)) return undefined

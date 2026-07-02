@@ -8,6 +8,7 @@ import {
   Svg,
   Path,
   Circle,
+  Ellipse,
   Rect,
   Polygon,
   Line,
@@ -442,6 +443,17 @@ const COLOR_WORD: Record<string, string> = {
   türkis: '#1f8a8a', tuerkis: '#1f8a8a',
 }
 
+/** Distinct dot colours for body-map legends. */
+const LEGEND_COLORS = ['#e53935', '#1e88e5', '#43a047', '#f9a825', '#8e24aa', '#fb8c00']
+
+/** Heat ramp for thermometer zones without an explicit colour word. */
+function zoneColor(label: string, idx: number, count: number): string {
+  const k = label.toLowerCase().replace(/[^a-zäöüß]/g, '')
+  if (COLOR_WORD[k]) return COLOR_WORD[k]
+  const ramp = ['#43a047', '#ffd21f', '#fb8c00', '#e53935']
+  return ramp[Math.min(3, Math.round((idx / Math.max(1, count - 1)) * 3))]
+}
+
 function ColorDot({ size, color }: { size: number; color: string }) {
   return (
     <Svg viewBox="0 0 24 24" width={size} height={size}>
@@ -682,6 +694,387 @@ function WsBlock({
               ))}
             </View>
           ))}
+        </View>
+      </View>
+    )
+  }
+
+  if (kind === 'columns') {
+    const cols = items ?? []
+    const rows = lines ?? 4
+    return (
+      <View style={{ marginTop: sc.gap }} wrap={false}>
+        {text ? <Prompt num={num} text={text} sc={sc} tc={tc} /> : null}
+        <View style={{ flexDirection: 'row', marginTop: 6, marginLeft: indent }}>
+          {cols.map((c, i) => (
+            <View
+              key={i}
+              style={{
+                flex: 1,
+                marginRight: i < cols.length - 1 ? 8 : 0,
+                borderWidth: 1.3,
+                borderColor: tc.deep,
+                borderRadius: 10,
+                overflow: 'hidden',
+              }}
+            >
+              <Text
+                style={{
+                  backgroundColor: tc.deep,
+                  color: '#fff',
+                  fontFamily: 'Helvetica-Bold',
+                  fontSize: sc.q - 1,
+                  paddingVertical: 4,
+                  paddingHorizontal: 6,
+                  textAlign: 'center',
+                }}
+              >
+                {c}
+              </Text>
+              <View style={{ paddingHorizontal: 7, paddingBottom: 7 }}>
+                {Array.from({ length: rows }).map((_, r) => (
+                  <View key={r} style={{ borderBottomWidth: 1.2, borderBottomColor: '#cdd5df', height: sc.line * 0.85 }} />
+                ))}
+              </View>
+            </View>
+          ))}
+        </View>
+      </View>
+    )
+  }
+
+  if (kind === 'wordbank')
+    return (
+      <View style={{ marginTop: sc.gap }} wrap={false}>
+        {text ? <Prompt num={num} text={text} sc={sc} tc={tc} /> : null}
+        <View
+          style={{
+            flexDirection: 'row',
+            flexWrap: 'wrap',
+            marginTop: 6,
+            marginLeft: indent,
+            backgroundColor: tc.light,
+            borderRadius: 10,
+            paddingTop: 7,
+            paddingLeft: 7,
+            paddingRight: 2,
+            paddingBottom: 2,
+          }}
+        >
+          {(items ?? []).map((w, i) => (
+            <Text
+              key={i}
+              style={{
+                borderWidth: 1,
+                borderColor: tc.deep,
+                color: tc.deep,
+                backgroundColor: '#fff',
+                borderRadius: 9,
+                paddingHorizontal: 7,
+                paddingVertical: 2.5,
+                marginRight: 5,
+                marginBottom: 5,
+                fontSize: sc.q - 1,
+                fontFamily: 'Helvetica-Bold',
+              }}
+            >
+              {w}
+            </Text>
+          ))}
+        </View>
+      </View>
+    )
+
+  if (kind === 'sentences')
+    return (
+      <View style={{ marginTop: sc.gap }} wrap={false}>
+        {text ? <Prompt num={num} text={text} sc={sc} tc={tc} /> : null}
+        <View style={{ marginLeft: indent, marginTop: 2 }}>
+          {(items ?? []).map((st, i) => (
+            <View key={i} style={{ marginTop: 7 }}>
+              <View style={{ flexDirection: 'row', alignItems: 'flex-end' }}>
+                <Text style={{ fontSize: sc.q, fontFamily: 'Helvetica-BoldOblique', color: tc.deep }}>{st} </Text>
+                <View style={{ flex: 1, borderBottomWidth: 1.4, borderBottomColor: '#cdd5df', height: sc.q + 2 }} />
+              </View>
+              {Array.from({ length: Math.max(0, (lines ?? 1) - 1) }).map((_, r) => (
+                <View key={r} style={{ borderBottomWidth: 1.4, borderBottomColor: '#cdd5df', height: sc.line * 0.9 }} />
+              ))}
+            </View>
+          ))}
+        </View>
+      </View>
+    )
+
+  if (kind === 'bubble') {
+    const speakers = items && items.length ? items : ['']
+    return (
+      <View style={{ marginTop: sc.gap }}>
+        {text ? <Prompt num={num} text={text} sc={sc} tc={tc} /> : null}
+        <View style={{ marginLeft: indent, marginTop: 4 }}>
+          {speakers.map((sp, i) => {
+            const right = i % 2 === 1
+            return (
+              <View key={i} style={{ marginTop: 8, alignItems: right ? 'flex-end' : 'flex-start' }} wrap={false}>
+                {sp ? (
+                  <Text
+                    style={{
+                      fontSize: sc.q - 1.5,
+                      fontFamily: 'Helvetica-Bold',
+                      color: tc.deep,
+                      marginBottom: 2,
+                      marginLeft: right ? 0 : 12,
+                      marginRight: right ? 12 : 0,
+                    }}
+                  >
+                    {sp}
+                  </Text>
+                ) : null}
+                <View
+                  style={[
+                    { width: '80%', borderWidth: 1.4, borderColor: tc.deep, borderRadius: 12, padding: 8, backgroundColor: '#fff' },
+                    right ? { borderBottomRightRadius: 2 } : { borderBottomLeftRadius: 2 },
+                  ]}
+                >
+                  {Array.from({ length: lines ?? 2 }).map((_, r) => (
+                    <View key={r} style={{ borderBottomWidth: 1.2, borderBottomColor: '#cdd5df', height: sc.line * 0.85 }} />
+                  ))}
+                </View>
+              </View>
+            )
+          })}
+        </View>
+      </View>
+    )
+  }
+
+  if (kind === 'steps') {
+    const st = items ?? []
+    return (
+      <View style={{ marginTop: sc.gap }} wrap={false}>
+        {text ? <Prompt num={num} text={text} sc={sc} tc={tc} /> : null}
+        <View style={{ marginLeft: indent, marginTop: 4 }}>
+          {st.map((label, i) => {
+            const filled = !!(label && label.trim())
+            const extra = filled ? (lines ?? 0) : Math.max(1, lines ?? 1)
+            return (
+              <View key={i} style={{ flexDirection: 'row' }}>
+                <View style={{ width: sc.box + 8, alignItems: 'center' }}>
+                  <View
+                    style={{
+                      width: sc.box,
+                      height: sc.box,
+                      borderRadius: sc.box / 2,
+                      backgroundColor: tc.deep,
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                    }}
+                  >
+                    <Text style={{ color: '#fff', fontSize: sc.box * 0.6, fontFamily: 'Helvetica-Bold' }}>{i + 1}</Text>
+                  </View>
+                  {i < st.length - 1 ? (
+                    <View style={{ width: 2.5, flex: 1, backgroundColor: tc.light, marginTop: 2, marginBottom: 2, borderRadius: 1 }} />
+                  ) : null}
+                </View>
+                <View style={{ flex: 1, paddingBottom: 9, paddingLeft: 6 }}>
+                  {filled ? <Text style={{ fontSize: sc.q, paddingTop: 2 }}>{label}</Text> : null}
+                  {Array.from({ length: extra }).map((_, r) => (
+                    <View key={r} style={{ borderBottomWidth: 1.3, borderBottomColor: '#cdd5df', height: sc.line * 0.8 }} />
+                  ))}
+                </View>
+              </View>
+            )
+          })}
+        </View>
+      </View>
+    )
+  }
+
+  if (kind === 'thermometer') {
+    const zones = items && items.length ? items : ['ruhig', 'angespannt', 'gestresst', 'kurz vorm Überkochen']
+    const n = zones.length
+    const rowH = Math.max(sc.line + 10, 36)
+    const W = 30
+    const rev = [...zones].reverse() // hottest on top
+    return (
+      <View style={{ marginTop: sc.gap }} wrap={false}>
+        {text ? <Prompt num={num} text={text} sc={sc} tc={tc} /> : null}
+        <View style={{ flexDirection: 'row', marginTop: 8, marginLeft: indent }}>
+          <Svg width={W + 8} height={rowH * n + 26} viewBox={`0 0 ${W + 8} ${rowH * n + 26}`}>
+            {rev.map((lab, i) => {
+              const orig = n - 1 - i
+              return (
+                <Rect
+                  key={i}
+                  x={7}
+                  y={i * rowH}
+                  width={W - 8}
+                  height={rowH - 4}
+                  rx={4}
+                  fill={zoneColor(lab, orig, n)}
+                />
+              )
+            })}
+            <Circle cx={7 + (W - 8) / 2} cy={rowH * n + 11} r={12} fill={zoneColor(zones[0], 0, n)} />
+          </Svg>
+          <View style={{ flex: 1, marginLeft: 10 }}>
+            {rev.map((lab, i) => (
+              <View key={i} style={{ height: rowH, justifyContent: 'center' }}>
+                <Text style={{ fontSize: sc.q - 1, fontFamily: 'Helvetica-Bold' }}>{lab}</Text>
+                <View style={{ borderBottomWidth: 1.2, borderBottomColor: '#cdd5df', height: sc.line * 0.55 }} />
+              </View>
+            ))}
+          </View>
+        </View>
+      </View>
+    )
+  }
+
+  if (kind === 'bodymap') {
+    const h = Math.min(300, Math.max(180, (lines ?? 8) * 26))
+    return (
+      <View style={{ marginTop: sc.gap }} wrap={false}>
+        {text ? <Prompt num={num} text={text} sc={sc} tc={tc} /> : null}
+        <View style={{ flexDirection: 'row', marginTop: 6, marginLeft: indent }}>
+          <View
+            style={{
+              flex: 1,
+              borderWidth: 1.4,
+              borderStyle: 'dashed',
+              borderColor: '#c2c9d2',
+              borderRadius: 10,
+              alignItems: 'center',
+              paddingTop: 8,
+              paddingBottom: 8,
+            }}
+          >
+            <Svg width={h * 0.45} height={h} viewBox="0 0 100 240">
+              <Circle cx={50} cy={26} r={19} fill="none" stroke={tc.deep} strokeWidth={5} />
+              <Rect x={36} y={52} width={28} height={80} rx={13} fill="none" stroke={tc.deep} strokeWidth={5} />
+              <Line x1={34} y1={64} x2={12} y2={112} stroke={tc.deep} strokeWidth={7} strokeLinecap="round" />
+              <Line x1={66} y1={64} x2={88} y2={112} stroke={tc.deep} strokeWidth={7} strokeLinecap="round" />
+              <Line x1={43} y1={134} x2={37} y2={218} stroke={tc.deep} strokeWidth={7} strokeLinecap="round" />
+              <Line x1={57} y1={134} x2={63} y2={218} stroke={tc.deep} strokeWidth={7} strokeLinecap="round" />
+            </Svg>
+          </View>
+          {items && items.length ? (
+            <View style={{ width: 132, marginLeft: 10 }}>
+              <Text style={{ fontSize: sc.q - 1.5, fontFamily: 'Helvetica-Bold', marginBottom: 5 }}>Legende</Text>
+              {items.map((it, i) => (
+                <View key={i} style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 6 }}>
+                  <View
+                    style={{
+                      width: 10,
+                      height: 10,
+                      borderRadius: 5,
+                      marginRight: 5,
+                      backgroundColor: LEGEND_COLORS[i % LEGEND_COLORS.length],
+                    }}
+                  />
+                  <Text style={{ fontSize: sc.q - 1.5, flex: 1 }}>{it}</Text>
+                </View>
+              ))}
+            </View>
+          ) : null}
+        </View>
+      </View>
+    )
+  }
+
+  if (kind === 'target') {
+    const rings = items && items.length ? items : ['später', 'bald', 'jetzt']
+    const n = rings.length
+    const R = 66
+    return (
+      <View style={{ marginTop: sc.gap }} wrap={false}>
+        {text ? <Prompt num={num} text={text} sc={sc} tc={tc} /> : null}
+        <View style={{ alignItems: 'center', marginTop: 8 }}>
+          <Svg width={R * 2 + 8} height={R * 2 + 8} viewBox={`0 0 ${R * 2 + 8} ${R * 2 + 8}`}>
+            {rings.map((_, i) => {
+              const r = R - (i * R) / n
+              return (
+                <Circle
+                  key={i}
+                  cx={R + 4}
+                  cy={R + 4}
+                  r={r}
+                  fill={i === n - 1 ? tc.light : i % 2 ? '#fff' : '#f2f5f9'}
+                  stroke={tc.deep}
+                  strokeWidth={1.6}
+                />
+              )
+            })}
+          </Svg>
+          <View style={{ flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center', marginTop: 6 }}>
+            {rings.map((lab, i) => (
+              <View key={i} style={{ flexDirection: 'row', alignItems: 'center', marginRight: 10, marginBottom: 3 }}>
+                <View
+                  style={{
+                    width: 9,
+                    height: 9,
+                    borderRadius: 4.5,
+                    borderWidth: 1.4,
+                    borderColor: tc.deep,
+                    backgroundColor: i === n - 1 ? tc.light : i % 2 ? '#fff' : '#f2f5f9',
+                    marginRight: 4,
+                  }}
+                />
+                <Text style={{ fontSize: sc.q - 2 }}>
+                  {n - i}. {lab}
+                </Text>
+              </View>
+            ))}
+          </View>
+        </View>
+      </View>
+    )
+  }
+
+  if (kind === 'mindmap') {
+    const branches = items && items.length ? items : Array.from({ length: Math.max(3, Math.min(8, lines ?? 6)) }, () => '')
+    const n = branches.length
+    const W = 430
+    const H = 210
+    const cx = W / 2
+    const cy = H / 2
+    const bw = 88
+    const bh = 30
+    return (
+      <View style={{ marginTop: sc.gap, alignItems: 'center' }} wrap={false}>
+        {/* Fixed-width wrapper so the absolute label overlay lines up with the Svg. */}
+        <View style={{ width: W, height: H, position: 'relative' }}>
+          <Svg width={W} height={H} viewBox={`0 0 ${W} ${H}`}>
+            {branches.map((_, i) => {
+              const a = (i / n) * Math.PI * 2 - Math.PI / 2
+              const bx = cx + Math.cos(a) * (W / 2 - bw / 2 - 6)
+              const by = cy + Math.sin(a) * (H / 2 - bh / 2 - 6)
+              return <Line key={'l' + i} x1={cx} y1={cy} x2={bx} y2={by} stroke={tc.deep} strokeWidth={1.4} />
+            })}
+            {branches.map((_, i) => {
+              const a = (i / n) * Math.PI * 2 - Math.PI / 2
+              const bx = cx + Math.cos(a) * (W / 2 - bw / 2 - 6)
+              const by = cy + Math.sin(a) * (H / 2 - bh / 2 - 6)
+              return (
+                <Ellipse key={'e' + i} cx={bx} cy={by} rx={bw / 2} ry={bh / 2} fill="#fff" stroke={tc.deep} strokeWidth={1.6} />
+              )
+            })}
+            <Ellipse cx={cx} cy={cy} rx={62} ry={24} fill={tc.deep} />
+          </Svg>
+          {/* Centre + branch labels laid over the Svg (SVG text is unreliable
+              in react-pdf), so keep labels short. */}
+          <View style={{ position: 'absolute', left: cx - 60, width: 120, top: cy - 7, alignItems: 'center' }}>
+            <Text style={{ color: '#fff', fontFamily: 'Helvetica-Bold', fontSize: sc.q - 1 }}>{text || 'Ich'}</Text>
+          </View>
+          {branches.map((lab, i) => {
+            if (!lab) return null
+            const a = (i / n) * Math.PI * 2 - Math.PI / 2
+            const bx = cx + Math.cos(a) * (W / 2 - bw / 2 - 6)
+            const by = cy + Math.sin(a) * (H / 2 - bh / 2 - 6)
+            return (
+              <View key={'t' + i} style={{ position: 'absolute', left: bx - bw / 2, width: bw, top: by - 6, alignItems: 'center' }}>
+                <Text style={{ fontSize: sc.q - 2.5, color: C.ink }}>{lab}</Text>
+              </View>
+            )
+          })}
         </View>
       </View>
     )

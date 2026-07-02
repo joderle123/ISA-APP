@@ -11,6 +11,14 @@ const COLOR_WORD: Record<string, string> = {
   blau: '#1e88e5', grau: '#9e9e9e', rosa: '#ec407a', lila: '#8e24aa', violett: '#8e24aa',
   braun: '#795548', schwarz: '#37474f', türkis: '#1f8a8a', tuerkis: '#1f8a8a',
 }
+const LEGEND_COLORS = ['#e53935', '#1e88e5', '#43a047', '#f9a825', '#8e24aa', '#fb8c00']
+
+function zoneColor(label: string, idx: number, count: number): string {
+  const k = label.toLowerCase().replace(/[^a-zäöüß]/g, '')
+  if (COLOR_WORD[k]) return COLOR_WORD[k]
+  const ramp = ['#43a047', '#f9c400', '#fb8c00', '#e53935']
+  return ramp[Math.min(3, Math.round((idx / Math.max(1, count - 1)) * 3))]
+}
 const WEATHER: [RegExp, string][] = [
   [/sonn/, '☀️'], [/wolk|bewölk|bewoelk/, '☁️'], [/regen|regn/, '🌧️'],
   [/gewitter|sturm|blitz|donner/, '⛈️'], [/schnee/, '❄️'],
@@ -157,6 +165,276 @@ function Block({ block, num, deep, light }: { block: WorksheetBlock; num: number
             </div>
           ))}
         </div>
+      </div>
+    )
+  }
+
+  if (kind === 'columns') {
+    const cols = items ?? []
+    const rows = lines ?? 4
+    return (
+      <div className="mt-4">
+        {text ? prompt : null}
+        <div className={`mt-2 flex gap-2.5 ${num ? 'pl-[34px]' : ''}`}>
+          {cols.map((c, i) => (
+            <div key={i} className="flex-1 overflow-hidden rounded-xl border" style={{ borderColor: deep }}>
+              <div className="px-2 py-1.5 text-center text-xs font-bold text-white" style={{ backgroundColor: deep }}>
+                {c}
+              </div>
+              <div className="space-y-4 px-2.5 pt-1 pb-3">
+                {Array.from({ length: rows }).map((_, r) => (
+                  <div key={r} className="border-b border-slate-300" />
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    )
+  }
+
+  if (kind === 'wordbank')
+    return (
+      <div className="mt-4">
+        {text ? prompt : null}
+        <div className={`mt-2 flex flex-wrap gap-1.5 rounded-xl p-2.5 ${num ? 'ml-[34px]' : ''}`} style={{ backgroundColor: light }}>
+          {(items ?? []).map((w, i) => (
+            <span
+              key={i}
+              className="rounded-full border bg-white px-2.5 py-0.5 text-xs font-semibold"
+              style={{ borderColor: deep, color: deep }}
+            >
+              {w}
+            </span>
+          ))}
+        </div>
+      </div>
+    )
+
+  if (kind === 'sentences')
+    return (
+      <div className="mt-4">
+        {text ? prompt : null}
+        <div className={`space-y-3 ${num ? 'pl-[34px]' : ''} mt-1`}>
+          {(items ?? []).map((st, i) => (
+            <div key={i}>
+              <div className="flex items-end gap-1.5">
+                <span className="text-sm font-semibold italic" style={{ color: deep }}>{st}</span>
+                <span className="mb-0.5 flex-1 border-b border-slate-300" />
+              </div>
+              {Array.from({ length: Math.max(0, (lines ?? 1) - 1) }).map((_, r) => (
+                <div key={r} className="mt-5 border-b border-slate-300" />
+              ))}
+            </div>
+          ))}
+        </div>
+      </div>
+    )
+
+  if (kind === 'bubble') {
+    const speakers = items && items.length ? items : ['']
+    return (
+      <div className="mt-4">
+        {text ? prompt : null}
+        <div className={`space-y-3 ${num ? 'pl-[34px]' : ''} mt-1`}>
+          {speakers.map((sp, i) => {
+            const right = i % 2 === 1
+            return (
+              <div key={i} className={`flex flex-col ${right ? 'items-end' : 'items-start'}`}>
+                {sp ? (
+                  <span className={`mb-0.5 text-xs font-bold ${right ? 'mr-3' : 'ml-3'}`} style={{ color: deep }}>
+                    {sp}
+                  </span>
+                ) : null}
+                <div
+                  className={`w-[82%] rounded-2xl border-2 bg-white px-3 pt-1 pb-3 ${right ? 'rounded-br-sm' : 'rounded-bl-sm'}`}
+                  style={{ borderColor: deep }}
+                >
+                  {Array.from({ length: lines ?? 2 }).map((_, r) => (
+                    <div key={r} className="mt-5 border-b border-slate-300" />
+                  ))}
+                </div>
+              </div>
+            )
+          })}
+        </div>
+      </div>
+    )
+  }
+
+  if (kind === 'steps') {
+    const st = items ?? []
+    return (
+      <div className="mt-4">
+        {text ? prompt : null}
+        <div className={`mt-2 ${num ? 'pl-[34px]' : ''}`}>
+          {st.map((label, i) => {
+            const filled = !!(label && label.trim())
+            const extra = filled ? (lines ?? 0) : Math.max(1, lines ?? 1)
+            return (
+              <div key={i} className="flex gap-2.5">
+                <div className="flex w-6 flex-col items-center">
+                  <span
+                    className="grid h-6 w-6 shrink-0 place-items-center rounded-full text-xs font-bold text-white"
+                    style={{ backgroundColor: deep }}
+                  >
+                    {i + 1}
+                  </span>
+                  {i < st.length - 1 ? <span className="my-0.5 w-0.5 flex-1 rounded" style={{ backgroundColor: light }} /> : null}
+                </div>
+                <div className="flex-1 pb-3">
+                  {filled ? <p className="pt-0.5 text-sm text-slate-700">{label}</p> : null}
+                  {Array.from({ length: extra }).map((_, r) => (
+                    <div key={r} className="mt-5 border-b border-slate-300" />
+                  ))}
+                </div>
+              </div>
+            )
+          })}
+        </div>
+      </div>
+    )
+  }
+
+  if (kind === 'thermometer') {
+    const zones = items && items.length ? items : ['ruhig', 'angespannt', 'gestresst', 'kurz vorm Überkochen']
+    const n = zones.length
+    const rev = [...zones].reverse()
+    return (
+      <div className="mt-4">
+        {text ? prompt : null}
+        <div className={`mt-2 flex gap-3 ${num ? 'pl-[34px]' : ''}`}>
+          <div className="flex w-7 flex-col items-center">
+            {rev.map((lab, i) => (
+              <div
+                key={i}
+                className="mb-1 w-5 flex-1 rounded"
+                style={{ backgroundColor: zoneColor(lab, n - 1 - i, n), minHeight: 40 }}
+              />
+            ))}
+            <div className="h-7 w-7 rounded-full" style={{ backgroundColor: zoneColor(zones[0], 0, n) }} />
+          </div>
+          <div className="flex flex-1 flex-col">
+            {rev.map((lab, i) => (
+              <div key={i} className="flex flex-1 flex-col justify-center pb-1" style={{ minHeight: 44 }}>
+                <span className="text-xs font-bold text-slate-700">{lab}</span>
+                <div className="mt-3 border-b border-slate-300" />
+              </div>
+            ))}
+            <div className="h-7" />
+          </div>
+        </div>
+      </div>
+    )
+  }
+
+  if (kind === 'bodymap')
+    return (
+      <div className="mt-4">
+        {text ? prompt : null}
+        <div className={`mt-2 flex gap-3 ${num ? 'ml-[34px]' : ''}`}>
+          <div className="flex flex-1 items-center justify-center rounded-xl border-2 border-dashed border-slate-300 py-3">
+            <svg width={Math.min(120, (lines ?? 8) * 12)} viewBox="0 0 100 240" fill="none">
+              <circle cx="50" cy="26" r="19" stroke={deep} strokeWidth="5" />
+              <rect x="36" y="52" width="28" height="80" rx="13" stroke={deep} strokeWidth="5" />
+              <line x1="34" y1="64" x2="12" y2="112" stroke={deep} strokeWidth="7" strokeLinecap="round" />
+              <line x1="66" y1="64" x2="88" y2="112" stroke={deep} strokeWidth="7" strokeLinecap="round" />
+              <line x1="43" y1="134" x2="37" y2="218" stroke={deep} strokeWidth="7" strokeLinecap="round" />
+              <line x1="57" y1="134" x2="63" y2="218" stroke={deep} strokeWidth="7" strokeLinecap="round" />
+            </svg>
+          </div>
+          {items && items.length ? (
+            <div className="w-36 shrink-0">
+              <p className="mb-1.5 text-xs font-bold text-slate-700">Legende</p>
+              {items.map((it, i) => (
+                <div key={i} className="mb-1.5 flex items-center gap-1.5">
+                  <span
+                    className="h-3 w-3 shrink-0 rounded-full"
+                    style={{ backgroundColor: LEGEND_COLORS[i % LEGEND_COLORS.length] }}
+                  />
+                  <span className="text-xs text-slate-600">{it}</span>
+                </div>
+              ))}
+            </div>
+          ) : null}
+        </div>
+      </div>
+    )
+
+  if (kind === 'target') {
+    const rings = items && items.length ? items : ['später', 'bald', 'jetzt']
+    const n = rings.length
+    return (
+      <div className="mt-4">
+        {text ? prompt : null}
+        <div className="mt-2 flex flex-col items-center">
+          <svg width="150" height="150" viewBox="0 0 140 140">
+            {rings.map((_, i) => (
+              <circle
+                key={i}
+                cx="70"
+                cy="70"
+                r={66 - (i * 66) / n}
+                fill={i === n - 1 ? light : i % 2 ? '#fff' : '#f2f5f9'}
+                stroke={deep}
+                strokeWidth="1.6"
+              />
+            ))}
+          </svg>
+          <div className="mt-1.5 flex flex-wrap justify-center gap-x-3 gap-y-1">
+            {rings.map((lab, i) => (
+              <span key={i} className="flex items-center gap-1 text-xs text-slate-600">
+                <span
+                  className="h-2.5 w-2.5 rounded-full border"
+                  style={{ borderColor: deep, backgroundColor: i === n - 1 ? light : i % 2 ? '#fff' : '#f2f5f9' }}
+                />
+                {n - i}. {lab}
+              </span>
+            ))}
+          </div>
+        </div>
+      </div>
+    )
+  }
+
+  if (kind === 'mindmap') {
+    const branches = items && items.length ? items : Array.from({ length: Math.max(3, Math.min(8, lines ?? 6)) }, () => '')
+    const n = branches.length
+    const W = 460
+    const H = 220
+    const cx = W / 2
+    const cy = H / 2
+    const bw = 96
+    const bh = 32
+    return (
+      <div className="mt-4 overflow-x-auto">
+        <svg width={W} height={H} viewBox={`0 0 ${W} ${H}`} className="mx-auto block">
+          {branches.map((_, i) => {
+            const a = (i / n) * Math.PI * 2 - Math.PI / 2
+            const bx = cx + Math.cos(a) * (W / 2 - bw / 2 - 6)
+            const by = cy + Math.sin(a) * (H / 2 - bh / 2 - 6)
+            return <line key={'l' + i} x1={cx} y1={cy} x2={bx} y2={by} stroke={deep} strokeWidth="1.4" />
+          })}
+          {branches.map((lab, i) => {
+            const a = (i / n) * Math.PI * 2 - Math.PI / 2
+            const bx = cx + Math.cos(a) * (W / 2 - bw / 2 - 6)
+            const by = cy + Math.sin(a) * (H / 2 - bh / 2 - 6)
+            return (
+              <g key={'e' + i}>
+                <ellipse cx={bx} cy={by} rx={bw / 2} ry={bh / 2} fill="#fff" stroke={deep} strokeWidth="1.6" />
+                {lab ? (
+                  <text x={bx} y={by + 3.5} textAnchor="middle" fontSize="10" fill="#334155">
+                    {lab.length > 16 ? lab.slice(0, 15) + '…' : lab}
+                  </text>
+                ) : null}
+              </g>
+            )
+          })}
+          <ellipse cx={cx} cy={cy} rx={64} ry={25} fill={deep} />
+          <text x={cx} y={cy + 4} textAnchor="middle" fontSize="12" fontWeight="bold" fill="#fff">
+            {(text || 'Ich').length > 18 ? (text || 'Ich').slice(0, 17) + '…' : text || 'Ich'}
+          </text>
+        </svg>
       </div>
     )
   }

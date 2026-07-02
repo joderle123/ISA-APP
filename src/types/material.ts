@@ -57,6 +57,22 @@ export interface Attachment {
  *  - checklist    → `items` rendered each with a tick box
  *  - table        → `items` = column headers, `lines` = number of empty rows
  *  - scale        → `text` prompt + `items` = scale labels (tick boxes)
+ *  - columns      → `items` = column titles, `lines` = writing lines per column
+ *  - wordbank     → `items` = word chips to pick from, `text` label
+ *  - sentences    → `items` = sentence starters, each continued by a line
+ *                   (`lines` = extra lines per starter)
+ *  - bubble       → speech bubbles to fill in; `items` = speaker labels
+ *                   (alternating left/right), `lines` = lines per bubble
+ *  - steps        → numbered step chain; `items` = step labels ('' = blank
+ *                   line to fill), `lines` = extra lines per step
+ *  - thermometer  → vertical zone gauge; `items` = zone labels calm→hot
+ *                   (colour words auto-colour), one writing line per zone
+ *  - bodymap      → body outline to mark/colour; `items` = optional legend
+ *                   labels, `lines` ≈ height
+ *  - target       → concentric rings; `items` = ring labels outer→center
+ *  - mindmap      → center bubble (`text`) with branches; `items` = branch
+ *                   labels ('' = empty to fill), `lines` = branch count if
+ *                   no items
  */
 export type WorksheetBlockKind =
   | 'heading'
@@ -67,6 +83,15 @@ export type WorksheetBlockKind =
   | 'checklist'
   | 'table'
   | 'scale'
+  | 'columns'
+  | 'wordbank'
+  | 'sentences'
+  | 'bubble'
+  | 'steps'
+  | 'thermometer'
+  | 'bodymap'
+  | 'target'
+  | 'mindmap'
 
 export interface WorksheetBlock {
   kind: WorksheetBlockKind

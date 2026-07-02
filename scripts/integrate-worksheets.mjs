@@ -18,7 +18,7 @@ const sidecar = path.join(ROOT, 'src/data/materials/generated.data.json')
 const all = JSON.parse(fs.readFileSync(sidecar, 'utf8'))
 const byId = new Map(all.map((m) => [m.id, m]))
 
-const WS_KINDS = new Set(['heading', 'instruction', 'question', 'lines', 'box', 'checklist', 'table', 'scale'])
+const WS_KINDS = new Set(['heading', 'instruction', 'question', 'lines', 'box', 'checklist', 'table', 'scale', 'columns', 'wordbank', 'sentences', 'bubble', 'steps', 'thermometer', 'bodymap', 'target', 'mindmap'])
 function sanitizeWorksheet(w) {
   if (!w || !Array.isArray(w.blocks)) return undefined
   const blocks = w.blocks
