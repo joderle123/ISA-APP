@@ -11,7 +11,7 @@ import {
 import { FilterPanel } from './components/FilterPanel'
 import { MaterialCard } from './components/MaterialCard'
 import { MaterialDetail } from './components/MaterialDetail'
-import { FinderAssistant } from './components/FinderAssistant'
+import { ChatFinder } from './components/ChatFinder'
 import { loadRatings, saveRatings, type RatingMap } from './lib/ratings'
 import type { Material } from './types/material'
 
@@ -193,7 +193,7 @@ export default function App() {
       />
 
       {finderOpen && (
-        <FinderAssistant
+        <ChatFinder
           onClose={() => setFinderOpen(false)}
           onApply={(f) => {
             setFilter(f)
