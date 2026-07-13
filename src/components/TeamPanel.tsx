@@ -11,7 +11,7 @@ interface Props {
 
 // Shared secret that unlocks the upload capability for selected staff.
 // (Trust model = network-drive access + this code; change it for your team.)
-const UPLOADER_CODE = 'ISA-CDSE'
+const UPLOADER_CODE = 'sixseven_aurafarming'
 
 function fmtTime(ts: number | null): string {
   if (!ts) return '—'

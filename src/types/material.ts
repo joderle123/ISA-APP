@@ -155,5 +155,8 @@ export interface Material {
     ext: string
     mime: string
     size: number
+    /** true = a file dropped straight into the shared folder (auto-detected),
+     *  read by its real name; false/absent = uploaded via the app into blaetter/. */
+    loose?: boolean
   }
 }

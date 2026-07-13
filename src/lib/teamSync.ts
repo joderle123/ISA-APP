@@ -10,6 +10,7 @@
 // consistent by polling — plenty for a small team.
 // ---------------------------------------------------------------------------
 import type { Material } from '../types/material'
+import { slug } from './slug'
 
 const MANIFEST = 'isa-manifest.json'
 const FILES_DIR = 'blaetter'
@@ -152,13 +153,61 @@ async function filesDir(create = false): Promise<FileSystemDirectoryHandle | nul
   }
 }
 
-/** One read → merge → (write back if we hold newer) → emit cycle. */
+const FILE_EXT = new Set(['pdf', 'doc', 'docx'])
+
+/** Auto-detect PDF/Word files dropped straight into the shared folder (not yet
+ *  in the manifest) so „einfach in den Ordner legen" just works for everyone. */
+async function scanLoose(known: Set<string>): Promise<TeamRecord[]> {
+  if (!dir) return []
+  const out: TeamRecord[] = []
+  try {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    for await (const entry of (dir as any).values()) {
+      if (entry.kind !== 'file') continue
+      const name: string = entry.name
+      if (name === MANIFEST || name.startsWith('.')) continue
+      const ext = (name.split('.').pop() || '').toLowerCase()
+      if (!FILE_EXT.has(ext)) continue
+      const base = name.replace(/\.[^.]+$/, '')
+      const id = 'cdse-loose-' + (slug(base) || 'datei')
+      if (known.has(id)) continue // already imported (or tombstoned)
+      const f = await entry.getFile()
+      out.push({
+        id,
+        title: base,
+        author: 'CDSE (Ordner)',
+        ageLevels: ['ES'],
+        type: ['Aktivitéit'],
+        participants: [],
+        themes: [],
+        tags: ['CDSE'],
+        shortDescription: 'Direkt in den Team-Ordner gelegtes Material.',
+        ablauf: [{ text: 'Original-Datei — über „Datei öffnen" ansehen / herunterladen.' }],
+        etepStufen: [],
+        eldibGoals: [],
+        language: 'de',
+        source: 'cdse',
+        uploadedBy: 'Ordner',
+        uploadedAt: new Date(f.lastModified).toISOString(),
+        upload: { fileName: name, ext, mime: f.type || 'application/octet-stream', size: f.size, loose: true },
+        _ts: f.lastModified || Date.now(),
+      })
+    }
+  } catch {
+    /* listing not possible – ignore */
+  }
+  return out
+}
+
+/** One read → scan loose files → merge → (write back if we hold newer) → emit. */
 async function cycle(): Promise<void> {
   if (!dir) return
   try {
     const remote = await readManifest(dir)
     if (!remote) return
-    const merged = mergeRecords(remote.materials, cache)
+    const known = new Set([...cache.map((r) => r.id), ...remote.materials.map((r) => r.id)])
+    const loose = await scanLoose(known)
+    const merged = mergeRecords(mergeRecords(remote.materials, cache), loose)
     const remoteKey = JSON.stringify(remote.materials.map((r) => [r.id, r._ts, r._del]).sort())
     const mergedKey = JSON.stringify(merged.map((r) => [r.id, r._ts, r._del]).sort())
     if (mergedKey !== remoteKey) {
@@ -289,10 +338,16 @@ export const teamSync = {
   /** Blob URL for an uploaded material's file (for viewing / download). */
   async getFileUrl(m: Material): Promise<string | null> {
     if (!dir || !m.upload) return null
-    const fd = await filesDir(false)
-    if (!fd) return null
     try {
-      const fh = await fd.getFileHandle(`${m.id}.${m.upload.ext}`)
+      let fh: FileSystemFileHandle
+      if (m.upload.loose) {
+        // dropped straight into the shared folder → read by its real name
+        fh = await dir.getFileHandle(m.upload.fileName)
+      } else {
+        const fd = await filesDir(false)
+        if (!fd) return null
+        fh = await fd.getFileHandle(`${m.id}.${m.upload.ext}`)
+      }
       const f = await fh.getFile()
       return URL.createObjectURL(f)
     } catch {
