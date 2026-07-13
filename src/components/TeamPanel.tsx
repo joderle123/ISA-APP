@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useState, type ReactNode } from 'react'
 import { teamSync, type TeamStatus } from '../lib/teamSync'
 import { ageLevels, materialTypes, themes as allThemes } from '../data/taxonomy'
 import { slug } from '../lib/slug'
@@ -29,6 +29,7 @@ export function TeamPanel({ onClose, teamMaterials }: Props) {
   })
   const [code, setCode] = useState('')
   const [showUpload, setShowUpload] = useState(false)
+  const [showHelp, setShowHelp] = useState(() => !teamSync.status().connected)
 
   useEffect(() => {
     const i = setInterval(() => setStatus(teamSync.status()), 1500)
@@ -59,12 +60,22 @@ export function TeamPanel({ onClose, teamMaterials }: Props) {
               <div className="text-xs text-slate-400">Gemeinsamer Ordner auf O:\ — hochgeladene Blätter sehen alle</div>
             </div>
           </div>
-          <button type="button" onClick={onClose} className="rounded-full p-1.5 text-slate-400 hover:bg-slate-100" aria-label="Schließen">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M18 6 6 18M6 6l12 12" /></svg>
-          </button>
+          <div className="flex items-center gap-1">
+            <button
+              type="button"
+              onClick={() => setShowHelp((v) => !v)}
+              className={`rounded-lg px-2.5 py-1 text-xs font-semibold ring-1 transition ${showHelp ? 'bg-emerald-600 text-white ring-emerald-600' : 'bg-white text-emerald-700 ring-emerald-200 hover:bg-emerald-50'}`}
+            >
+              ❓ So geht’s
+            </button>
+            <button type="button" onClick={onClose} className="rounded-full p-1.5 text-slate-400 hover:bg-slate-100" aria-label="Schließen">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M18 6 6 18M6 6l12 12" /></svg>
+            </button>
+          </div>
         </div>
 
         <div className="space-y-5 p-5">
+          {showHelp && <HelpGuide onClose={() => setShowHelp(false)} />}
           {!status.supported && (
             <div className="rounded-xl border border-rose-200 bg-rose-50 p-3 text-sm text-rose-700">
               Dieser Browser unterstützt die gemeinsame Ablage nicht. Bitte in <b>Microsoft Edge</b> oder <b>Chrome</b> öffnen (Firefox/Safari können das nicht).
@@ -186,6 +197,62 @@ export function TeamPanel({ onClose, teamMaterials }: Props) {
             </div>
           )}
         </div>
+      </div>
+    </div>
+  )
+}
+
+function Step({ n, title, children }: { n: number; title: string; children: ReactNode }) {
+  return (
+    <div className="flex gap-3">
+      <span className="grid h-6 w-6 shrink-0 place-items-center rounded-full bg-emerald-600 text-xs font-bold text-white">{n}</span>
+      <div className="text-sm text-slate-600">
+        <b className="text-slate-800">{title}</b> {children}
+      </div>
+    </div>
+  )
+}
+
+function HelpGuide({ onClose }: { onClose: () => void }) {
+  return (
+    <div className="rounded-2xl border border-emerald-200 bg-emerald-50/60 p-4">
+      <div className="mb-3 flex items-center justify-between">
+        <h3 className="font-bold text-slate-800">📖 So funktioniert die Team-Ablage</h3>
+        <button type="button" onClick={onClose} className="text-xs font-medium text-slate-500 hover:text-slate-700">ausblenden</button>
+      </div>
+
+      <div className="rounded-xl bg-white p-3 text-xs text-amber-700 ring-1 ring-amber-100">
+        ⚠️ Nur mit <b>Microsoft Edge</b> oder <b>Chrome</b> (Firefox/Safari können das nicht).
+      </div>
+
+      <div className="mt-3 text-xs font-semibold tracking-wide text-emerald-700 uppercase">1 · Verbinden (einmalig)</div>
+      <div className="mt-2 space-y-2.5">
+        <Step n={1} title="Namen eintragen">oben ins Feld „Wer bin ich?" — erscheint bei „zuletzt von …".</Step>
+        <Step n={2} title="Ordner anlegen">Eine Person legt auf dem Laufwerk O:\ einen Ordner an, z. B. <code className="rounded bg-slate-100 px-1">O:\ISA-Blaetter</code>.</Step>
+        <Step n={3} title="Verbinden">Auf „📂 Team-Ordner verbinden" klicken, diesen Ordner wählen und Zugriff <b>erlauben</b>.</Step>
+        <Step n={4} title="Alle anderen">machen dasselbe und wählen <b>genau denselben</b> Ordner. Fertig — es steht „✓ Verbunden".</Step>
+      </div>
+
+      <div className="mt-4 text-xs font-semibold tracking-wide text-emerald-700 uppercase">2 · Blatt hochladen — zwei Wege</div>
+      <div className="mt-2 grid gap-2.5 sm:grid-cols-2">
+        <div className="rounded-xl bg-white p-3 ring-1 ring-slate-200">
+          <div className="mb-1 text-sm font-bold text-slate-800">📥 Einfach reinlegen</div>
+          <p className="text-xs text-slate-600">PDF oder Word direkt in den Ordner <code className="rounded bg-slate-100 px-1">O:\ISA-Blaetter</code> kopieren. Nach ein paar Sekunden erscheint sie bei <b>allen</b> (Titel = Dateiname).</p>
+        </div>
+        <div className="rounded-xl bg-white p-3 ring-1 ring-slate-200">
+          <div className="mb-1 text-sm font-bold text-slate-800">⬆️ Im Programm hochladen</div>
+          <p className="text-xs text-slate-600">„Material hochladen" → Code eingeben → Datei + <b>Titel, Alter, Thema</b> angeben. Besser für Suche &amp; Chatbot.</p>
+        </div>
+      </div>
+
+      <div className="mt-4 rounded-xl bg-white p-3 text-xs text-slate-600 ring-1 ring-slate-200">
+        <b className="text-slate-800">Gut zu wissen</b>
+        <ul className="mt-1 list-disc space-y-0.5 pl-4">
+          <li><b>Sehen</b> können alle Verbundenen. <b>Hochladen</b> nur berechtigte Kollegen (mit Code).</li>
+          <li>Alles bleibt <b>im Haus</b> auf O:\ — kein Internet, keine Cloud.</li>
+          <li>Nach einem Browser-Neustart evtl. einmal „Verbinden" klicken (Edge fragt die Erlaubnis neu).</li>
+          <li>Grünes <span className="rounded bg-emerald-50 px-1 text-emerald-700 ring-1 ring-emerald-200">CDSE ✓</span> = echtes Material · <span className="rounded bg-indigo-50 px-1 text-indigo-600 ring-1 ring-indigo-100">KI-Entwurf</span> = KI-generiert.</li>
+        </ul>
       </div>
     </div>
   )
