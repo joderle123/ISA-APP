@@ -66,12 +66,13 @@ export const languages: LanguageDef[] = [
 ]
 
 export interface SourceDef {
-  id: 'original' | 'generated'
+  id: 'original' | 'cdse' | 'generated'
   labelDe: string
 }
 
 export const sources: SourceDef[] = [
-  { id: 'original', labelDe: 'Original' },
+  { id: 'original', labelDe: 'CDSE / ISA-Team' },
+  { id: 'cdse', labelDe: 'CDSE-Upload' },
   { id: 'generated', labelDe: 'KI-Entwurf' },
 ]
 

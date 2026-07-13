@@ -9,7 +9,7 @@ import {
   participantModeById,
   themeLabel,
 } from '../data/taxonomy'
-import { ageColors } from '../lib/ui'
+import { ageColors, sourceInfo } from '../lib/ui'
 import { StarRating } from './StarRating'
 import { variants, applyVariant } from '../data/variants'
 import { WorksheetView } from './WorksheetView'
@@ -58,9 +58,11 @@ export function MaterialDetail({ material: m, onClose, onDownload, downloading, 
               ISA – Material
             </div>
             <h2 className="text-xl font-bold text-slate-800">{view.title}</h2>
-            <p className="mt-1 text-sm text-slate-400">
-              {m.author || 'ISA-App'}
-              {m.source === 'generated' && ' · KI-Entwurf (vor Einsatz prüfen)'}
+            <p className="mt-1 flex flex-wrap items-center gap-x-2 gap-y-1 text-sm text-slate-400">
+              <span>{m.author || 'ISA-App'}</span>
+              <span className={`rounded-full px-2 py-0.5 text-[11px] font-medium ring-1 ${sourceInfo(m.source).chip}`}>
+                {sourceInfo(m.source).label}
+              </span>
             </p>
             <div className="mt-2 flex items-center gap-2">
               <StarRating value={rating} onChange={onRate} size={22} />

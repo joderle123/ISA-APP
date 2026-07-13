@@ -136,6 +136,14 @@ export interface Material {
   worksheet?: Worksheet
 
   language: Language
-  /** Provenance: digitised original vs. AI-generated for the library. */
-  source: 'original' | 'generated'
+  /**
+   * Provenance:
+   *  - 'original'  → digitised real ISA worksheet (CDSE / ISA-Team authors)
+   *  - 'cdse'      → uploaded by a CDSE staff member in-app
+   *  - 'generated' → AI-generated draft
+   */
+  source: 'original' | 'cdse' | 'generated'
+  /** Uploader name / date for CDSE-uploaded material (source: 'cdse'). */
+  uploadedBy?: string
+  uploadedAt?: string
 }

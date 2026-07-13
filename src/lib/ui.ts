@@ -12,3 +12,25 @@ export const ageColors: Record<AgeLevel, string> = {
 export function truncate(s: string, n: number): string {
   return s.length > n ? s.slice(0, n - 1).trimEnd() + '…' : s
 }
+
+/** Visual identity of a material's provenance (AI draft ↔ CDSE / ISA-Team). */
+export function sourceInfo(source: 'original' | 'cdse' | 'generated'): {
+  short: string
+  label: string
+  title: string
+  chip: string
+} {
+  if (source === 'generated')
+    return {
+      short: 'KI-Entwurf',
+      label: 'KI-generierter Entwurf',
+      title: 'KI-generierter Entwurf – vor dem Einsatz prüfen',
+      chip: 'bg-indigo-50 text-indigo-600 ring-indigo-100',
+    }
+  return {
+    short: source === 'cdse' ? 'CDSE ✓' : 'ISA-Team ✓',
+    label: source === 'cdse' ? 'Von CDSE-Mitarbeiter:in' : 'CDSE / ISA-Team',
+    title: 'Geprüftes Material von CDSE / ISA-Team',
+    chip: 'bg-emerald-50 text-emerald-700 ring-emerald-200',
+  }
+}

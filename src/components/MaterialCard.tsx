@@ -1,6 +1,6 @@
 import type { Material } from '../types/material'
 import { materialTypeById, themeLabel } from '../data/taxonomy'
-import { ageColors, truncate } from '../lib/ui'
+import { ageColors, truncate, sourceInfo } from '../lib/ui'
 import { StarRating } from './StarRating'
 import { variantCount } from '../data/variants'
 
@@ -23,14 +23,12 @@ export function MaterialCard({ material: m, onOpen, onDownload, downloading, rat
         <h3 className="font-semibold leading-snug text-slate-800 group-hover:text-isa-blue-deep">
           {m.title}
         </h3>
-        {m.source === 'generated' && (
-          <span
-            title="KI-Entwurf – vor Einsatz prüfen"
-            className="shrink-0 rounded-full bg-indigo-50 px-2 py-0.5 text-[10px] font-medium text-indigo-600 ring-1 ring-indigo-100"
-          >
-            Entwurf
-          </span>
-        )}
+        <span
+          title={sourceInfo(m.source).title}
+          className={`shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium ring-1 ${sourceInfo(m.source).chip}`}
+        >
+          {sourceInfo(m.source).short}
+        </span>
       </div>
 
       <div className="mb-2 flex flex-wrap items-center gap-1.5">
