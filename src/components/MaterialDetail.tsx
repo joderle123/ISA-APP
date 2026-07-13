@@ -278,7 +278,13 @@ export function MaterialDetail({ material: m, onClose, onDownload, downloading, 
               disabled={downloading}
               className="inline-flex items-center gap-2 rounded-lg bg-isa-blue-deep px-4 py-2 text-sm font-semibold text-white transition hover:bg-[#264a82] disabled:opacity-50"
             >
-              {downloading ? 'Erstelle PDF…' : 'PDF herunterladen'}
+              {m.source === 'cdse'
+                ? downloading
+                  ? 'Öffne Datei…'
+                  : '📄 Original-Datei öffnen'
+                : downloading
+                  ? 'Erstelle PDF…'
+                  : 'PDF herunterladen'}
             </button>
           </div>
         </div>

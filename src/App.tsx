@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { allMaterials } from './data/materials'
 import {
   applyFilters,
@@ -12,6 +12,8 @@ import { FilterPanel } from './components/FilterPanel'
 import { MaterialCard } from './components/MaterialCard'
 import { MaterialDetail } from './components/MaterialDetail'
 import { ChatFinder } from './components/ChatFinder'
+import { TeamPanel } from './components/TeamPanel'
+import { teamSync } from './lib/teamSync'
 import { loadRatings, saveRatings, type RatingMap } from './lib/ratings'
 import type { Material } from './types/material'
 
@@ -22,6 +24,22 @@ export default function App() {
   const [showFilters, setShowFilters] = useState(false)
   const [ratings, setRatings] = useState<RatingMap>(() => loadRatings())
   const [finderOpen, setFinderOpen] = useState(false)
+  const [teamOpen, setTeamOpen] = useState(false)
+  const [teamMaterials, setTeamMaterials] = useState<Material[]>([])
+
+  // Connect to the shared team folder (CDSE uploads) and keep the merged list.
+  useEffect(() => {
+    const off = teamSync.onChange(setTeamMaterials)
+    teamSync.reconnect().catch(() => {})
+    return off
+  }, [])
+
+  // Full library = baked-in materials + live team uploads (team wins on id).
+  const library = useMemo(() => {
+    if (!teamMaterials.length) return allMaterials
+    const ids = new Set(teamMaterials.map((m) => m.id))
+    return [...teamMaterials, ...allMaterials.filter((m) => !ids.has(m.id))]
+  }, [teamMaterials])
 
   const update = (partial: Partial<FilterState>) =>
     setFilter((f) => ({ ...f, ...partial }))
@@ -37,27 +55,35 @@ export default function App() {
     })
 
   const results = useMemo(() => {
-    let list = applyFilters(allMaterials, filter)
+    let list = applyFilters(library, filter)
     if (filter.minRating > 0)
       list = list.filter((m) => (ratings[m.id] || 0) >= filter.minRating)
     if (filter.onlyUnrated) list = list.filter((m) => !ratings[m.id])
     if (filter.sortByRating)
       list = [...list].sort((a, b) => (ratings[b.id] || 0) - (ratings[a.id] || 0))
     return list
-  }, [filter, ratings])
-  const allTags = useMemo(() => collectTags(allMaterials), [])
-  const allAuthors = useMemo(() => collectAuthors(allMaterials), [])
+  }, [filter, ratings, library])
+  const allTags = useMemo(() => collectTags(library), [library])
+  const allAuthors = useMemo(() => collectAuthors(library), [library])
   const active = activeFilterCount(filter)
 
   async function handleDownload(m: Material) {
     setDownloadingId(m.id)
     try {
-      // Lazy-load the (heavy) PDF renderer only on first download.
-      const { downloadMaterialPdf } = await import('./lib/pdf')
-      await downloadMaterialPdf(m)
+      if (m.source === 'cdse' && m.upload) {
+        // CDSE-uploaded original file — open it from the shared team folder.
+        const url = await teamSync.getFileUrl(m)
+        if (!url) throw new Error('Datei nicht verfügbar – ist die Team-Ablage verbunden?')
+        window.open(url, '_blank')
+        setTimeout(() => URL.revokeObjectURL(url), 60000)
+      } else {
+        // Lazy-load the (heavy) PDF renderer only on first download.
+        const { downloadMaterialPdf } = await import('./lib/pdf')
+        await downloadMaterialPdf(m)
+      }
     } catch (err) {
       console.error(err)
-      alert('PDF konnte nicht erstellt werden.')
+      alert(err instanceof Error ? err.message : 'Datei konnte nicht geöffnet werden.')
     } finally {
       setDownloadingId(null)
     }
@@ -92,7 +118,18 @@ export default function App() {
             />
           </div>
 
-          <div className="order-2 ml-auto flex items-center gap-3 sm:order-3">
+          <div className="order-2 ml-auto flex items-center gap-2 sm:order-3 sm:gap-3">
+            <button
+              type="button"
+              onClick={() => setTeamOpen(true)}
+              title="Gemeinsame CDSE-Ablage (Upload & Teilen)"
+              className="inline-flex items-center gap-1.5 rounded-lg border border-emerald-200 bg-emerald-50 px-3 py-2 text-sm font-semibold text-emerald-700 transition hover:bg-emerald-100"
+            >
+              <span>🗂️</span> <span className="hidden sm:inline">Team-Ablage</span>
+              {teamMaterials.length > 0 && (
+                <span className="rounded-full bg-emerald-600 px-1.5 text-xs text-white">{teamMaterials.length}</span>
+              )}
+            </button>
             <button
               type="button"
               onClick={() => setFinderOpen(true)}
@@ -123,7 +160,7 @@ export default function App() {
               filter={filter}
               update={update}
               reset={reset}
-              total={allMaterials.length}
+              total={library.length}
               shown={results.length}
               allTags={allTags}
               allAuthors={allAuthors}
@@ -141,7 +178,7 @@ export default function App() {
               filter={filter}
               update={update}
               reset={reset}
-              total={allMaterials.length}
+              total={library.length}
               shown={results.length}
               allTags={allTags}
               allAuthors={allAuthors}
@@ -206,8 +243,11 @@ export default function App() {
           onDownload={handleDownload}
           downloadingId={downloadingId}
           ratings={ratings}
+          materials={library}
         />
       )}
+
+      {teamOpen && <TeamPanel onClose={() => setTeamOpen(false)} teamMaterials={teamMaterials} />}
     </div>
   )
 }

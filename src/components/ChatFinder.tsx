@@ -1,5 +1,4 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
-import { allMaterials } from '../data/materials'
 import type { FilterState } from '../lib/filter'
 import type { Material } from '../types/material'
 import { ageColors } from '../lib/ui'
@@ -23,6 +22,7 @@ interface Props {
   onDownload: (m: Material) => void
   downloadingId: string | null
   ratings: Record<string, number>
+  materials: Material[]
 }
 
 type Msg =
@@ -96,7 +96,7 @@ function ResultCard({
   )
 }
 
-export function ChatFinder({ onClose, onApply, onOpen, onDownload, downloadingId, ratings }: Props) {
+export function ChatFinder({ onClose, onApply, onOpen, onDownload, downloadingId, ratings, materials }: Props) {
   const [messages, setMessages] = useState<Msg[]>([{ role: 'bot', text: GREETING }])
   const [signals, setSignals] = useState<Signals>(emptySignals)
   const [input, setInput] = useState('')
@@ -121,7 +121,7 @@ export function ChatFinder({ onClose, onApply, onOpen, onDownload, downloadingId
     const add = parse(text)
     const merged = mergeSignals(signals, add)
     setSignals(merged)
-    const results = rank(allMaterials, merged, ratings)
+    const results = rank(materials, merged, ratings)
     const understood = describe(merged)
     let botText: string
     if (!hasAnySignal(merged)) {

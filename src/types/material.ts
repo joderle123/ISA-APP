@@ -146,4 +146,14 @@ export interface Material {
   /** Uploader name / date for CDSE-uploaded material (source: 'cdse'). */
   uploadedBy?: string
   uploadedAt?: string
+  /**
+   * For CDSE-uploaded materials: the real file that lives in the shared
+   * team folder (bytes are NOT in the manifest — read on demand by id).
+   */
+  upload?: {
+    fileName: string
+    ext: string
+    mime: string
+    size: number
+  }
 }
