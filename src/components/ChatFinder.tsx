@@ -1,8 +1,10 @@
-import { useEffect, useMemo, useRef, useState } from 'react'
+import { useEffect, useId, useMemo, useRef, useState } from 'react'
 import type { FilterState } from '../lib/filter'
 import type { Material } from '../types/material'
-import { ageColors } from '../lib/ui'
+import { typeLabels } from '../lib/ui'
 import { StarRating } from './StarRating'
+import { Dialog } from './Dialog'
+import { Icon } from './Icon'
 import {
   describe,
   emptySignals,
@@ -37,58 +39,73 @@ const EXAMPLES = [
 ]
 
 const GREETING =
-  'Hi! Ich bin dein Material-Assistent. Beschreib mir in eigenen Worten deine Situation — z. B. Alter/Klasse, Thema, ob Einzeln/Gruppe/Klasse, Interessen, ob du ein Arbeitsblatt brauchst. Ich suche dir die passendsten Materialien heraus und ranke sie.'
+  'Beschreib mir in eigenen Worten die Situation – zum Beispiel Alter oder Klasse, Thema, ob Einzeln, Gruppe oder Klasse, Interessen und ob du ein Arbeitsblatt brauchst. Ich suche die passendsten Materialien heraus und sortiere sie nach Passung.'
 
 function MatchBar({ percent }: { percent: number }) {
   return (
-    <div className="flex items-center gap-1.5">
-      <div className="h-1.5 w-16 overflow-hidden rounded-full bg-slate-200">
-        <div className="h-full rounded-full bg-isa-blue-deep" style={{ width: `${percent}%` }} />
+    <div className="flex shrink-0 items-center gap-1.5" title={`Passung ${percent} %`}>
+      <div className="h-1.5 w-14 overflow-hidden rounded-full bg-page-2">
+        <div className="h-full rounded-full bg-accent" style={{ width: `${percent}%` }} />
       </div>
-      <span className="text-[10px] font-semibold text-slate-500">{percent}%</span>
+      <span className="w-8 text-right text-[11.5px] font-semibold text-muted tabular-nums">{percent} %</span>
     </div>
   )
 }
 
 function ResultCard({
-  r, rating, onOpen, onDownload, downloading, rankNo,
+  r,
+  rating,
+  onOpen,
+  onDownload,
+  downloading,
+  rankNo,
 }: {
-  r: Ranked; rating: number; onOpen: () => void; onDownload: () => void; downloading: boolean; rankNo: number
+  r: Ranked
+  rating: number
+  onOpen: () => void
+  onDownload: () => void
+  downloading: boolean
+  rankNo: number
 }) {
   const m = r.material
   return (
-    <div className="flex gap-2.5 rounded-xl border border-slate-200 bg-white p-2.5">
-      <div className="grid h-6 w-6 shrink-0 place-items-center rounded-full bg-isa-blue/60 text-xs font-bold text-isa-blue-deep">
+    <div className="flex gap-3 rounded-xl border border-line bg-surface p-3">
+      <div className="grid h-7 w-7 shrink-0 place-items-center rounded-full bg-accent-soft text-[12.5px] font-bold text-accent-strong">
         {rankNo}
       </div>
       <div className="min-w-0 flex-1">
-        <div className="flex items-start justify-between gap-2">
-          <span className="text-sm font-semibold text-slate-800">{m.title}</span>
+        <div className="flex items-start justify-between gap-3">
+          <span className="text-[14.5px] leading-snug font-semibold text-ink">{m.title}</span>
           <MatchBar percent={r.percent} />
         </div>
-        <div className="mt-1 flex flex-wrap items-center gap-1">
+        <div className="mt-1.5 flex flex-wrap items-center gap-1.5 text-[12.5px] text-muted">
+          <span className="font-semibold text-accent">{typeLabels(m)}</span>
           {m.ageLevels.map((a) => (
-            <span key={a} className={`rounded px-1.5 py-0.5 text-[10px] font-semibold ring-1 ${ageColors[a]}`}>{a}</span>
+            <span key={a} className="tag">
+              {a}
+            </span>
           ))}
           {m.worksheet && (
-            <span className="rounded bg-amber-50 px-1.5 py-0.5 text-[10px] font-medium text-amber-700 ring-1 ring-amber-100">+ AB</span>
+            <span className="tag tag-outline">
+              <Icon name="file" />
+              Arbeitsblatt
+            </span>
           )}
-          <StarRating value={rating} size={11} readOnly />
+          {rating > 0 && <StarRating value={rating} size={12} readOnly />}
         </div>
         {r.reasons.length > 0 && (
-          <div className="mt-1 text-[11px] text-slate-500">✓ {r.reasons.join(' · ')}</div>
+          <div className="mt-1.5 flex items-start gap-1.5 text-[12.5px] leading-snug text-muted">
+            <Icon name="check" className="ic mt-px h-3.5 w-3.5 text-ok" />
+            <span>{r.reasons.join(' · ')}</span>
+          </div>
         )}
-        <div className="mt-1.5 flex gap-1.5">
-          <button type="button" onClick={onOpen} className="rounded-lg px-2 py-1 text-xs font-medium text-isa-blue-deep hover:bg-isa-blue/40">
+        <div className="mt-2 flex gap-2">
+          <button type="button" onClick={onOpen} className="btn btn-sm">
             Öffnen
           </button>
-          <button
-            type="button"
-            onClick={onDownload}
-            disabled={downloading}
-            className="rounded-lg bg-isa-blue-deep px-2 py-1 text-xs font-medium text-white hover:bg-[#264a82] disabled:opacity-50"
-          >
-            {downloading ? '…' : 'PDF'}
+          <button type="button" onClick={onDownload} disabled={downloading} className="btn btn-sm btn-quiet">
+            {downloading ? <span className="spin" /> : <Icon name="download" />}
+            PDF
           </button>
         </div>
       </div>
@@ -101,6 +118,7 @@ export function ChatFinder({ onClose, onApply, onOpen, onDownload, downloadingId
   const [signals, setSignals] = useState<Signals>(emptySignals)
   const [input, setInput] = useState('')
   const scrollRef = useRef<HTMLDivElement>(null)
+  const titleId = useId()
 
   const lastResults = useMemo(() => {
     for (let i = messages.length - 1; i >= 0; i--) {
@@ -126,11 +144,11 @@ export function ChatFinder({ onClose, onApply, onOpen, onDownload, downloadingId
     let botText: string
     if (!hasAnySignal(merged)) {
       botText =
-        'Hmm, daraus konnte ich noch kein Kriterium erkennen. Nenn mir z. B. das Alter (oder die Klasse), worum es geht (Thema/Verhalten), und ob es für Einzeln, Gruppe oder Klasse sein soll.'
+        'Daraus konnte ich noch kein Kriterium erkennen. Nenn mir zum Beispiel das Alter (oder die Klasse), worum es geht (Thema oder Verhalten) und ob es für Einzeln, Gruppe oder Klasse sein soll.'
     } else if (results.length) {
-      botText = `Alles klar — ich habe ${results.length} passende Materialien gefunden. Die besten oben. Du kannst weiter verfeinern (z. B. „lieber ohne Arbeitsblatt" oder „eher für die ganze Klasse").`
+      botText = `Ich habe ${results.length} passende Materialien gefunden – die besten stehen oben. Du kannst weiter verfeinern, z. B. „lieber ohne Arbeitsblatt“ oder „eher für die ganze Klasse“.`
     } else {
-      botText = 'Ich habe leider nichts gefunden, das gut passt. Lockere ein Kriterium oder beschreib es etwas anders.'
+      botText = 'Dazu habe ich nichts Passendes gefunden. Lockere ein Kriterium oder beschreib es etwas anders.'
     }
     setMessages((prev) => [
       ...prev,
@@ -147,129 +165,132 @@ export function ChatFinder({ onClose, onApply, onOpen, onDownload, downloadingId
   const understood = describe(signals)
 
   return (
-    <div
-      className="fixed inset-0 z-50 flex items-stretch justify-center bg-slate-900/40 p-0 backdrop-blur-sm sm:items-start sm:p-6"
-      onClick={onClose}
-    >
-      <div
-        className="flex h-full w-full max-w-2xl flex-col bg-white shadow-2xl sm:my-2 sm:h-[calc(100vh-1rem)] sm:rounded-2xl"
-        onClick={(e) => e.stopPropagation()}
-      >
-        {/* Header */}
-        <div className="flex items-center justify-between gap-4 border-b border-slate-100 p-4">
-          <div className="flex items-center gap-2.5">
-            <div className="grid h-9 w-9 place-items-center rounded-full bg-isa-blue-deep text-lg">✨</div>
-            <div>
-              <div className="font-bold text-slate-800">Material-Assistent</div>
-              <div className="text-xs text-slate-400">Beschreib deine Situation — ich finde & ranke passende Materialien</div>
+    <Dialog onClose={onClose} labelledBy={titleId} className="dlg-mid sm:h-[min(820px,calc(100dvh-48px))]">
+      <header className="dlg-head items-center">
+        <div className="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-accent-soft text-accent">
+          <Icon name="compass" className="ic h-5 w-5" />
+        </div>
+        <div className="min-w-0 flex-1">
+          <h2 id={titleId} className="disp text-[19px] leading-tight">
+            Material-Finder
+          </h2>
+          <p className="text-[13px] text-muted max-sm:hidden">Situation beschreiben – passende Materialien finden und vergleichen</p>
+        </div>
+        {hasAnySignal(signals) && (
+          <button type="button" onClick={reset} className="btn btn-sm btn-quiet">
+            <Icon name="reset" />
+            <span className="max-sm:sr-only">Neu starten</span>
+          </button>
+        )}
+        <button type="button" onClick={onClose} className="icon-btn" aria-label="Schließen">
+          <Icon name="x" />
+        </button>
+      </header>
+
+      <div ref={scrollRef} className="dlg-body scroll-slim space-y-3 bg-surface-2 p-4 sm:p-5" aria-live="polite">
+        {messages.map((m, i) =>
+          m.role === 'user' ? (
+            <div key={i} className="flex justify-end">
+              <div className="max-w-[85%] rounded-2xl rounded-br-md bg-accent px-3.5 py-2 text-[14px] text-white">{m.text}</div>
             </div>
-          </div>
-          <div className="flex items-center gap-1">
-            {hasAnySignal(signals) && (
-              <button type="button" onClick={reset} className="rounded-lg px-2 py-1 text-xs font-medium text-slate-500 hover:bg-slate-100">
-                ↻ Neu
+          ) : (
+            <div key={i} className="flex flex-col items-start gap-2">
+              <div className="max-w-[92%] rounded-2xl rounded-bl-md border border-line bg-surface px-3.5 py-2.5 text-[14px] leading-relaxed text-ink-2">
+                {m.text}
+              </div>
+              {m.understood && m.understood.length > 0 && (
+                <div className="flex flex-wrap gap-1 pl-1">
+                  {m.understood.map((u, j) => (
+                    <span key={j} className="badge badge-upload">
+                      {u}
+                    </span>
+                  ))}
+                </div>
+              )}
+              {m.results && m.results.length > 0 && (
+                <div className="w-full space-y-2">
+                  {m.results.map((r, j) => (
+                    <ResultCard
+                      key={r.material.id}
+                      r={r}
+                      rankNo={j + 1}
+                      rating={ratings[r.material.id] || 0}
+                      onOpen={() => onOpen(r.material)}
+                      onDownload={() => onDownload(r.material)}
+                      downloading={downloadingId === r.material.id}
+                    />
+                  ))}
+                  <button type="button" onClick={() => onApply(signalsToFilter(signals))} className="btn w-full">
+                    Alle Treffer in der Bibliothek anzeigen
+                    <Icon name="arrowRight" />
+                  </button>
+                </div>
+              )}
+            </div>
+          ),
+        )}
+
+        {messages.length === 1 && (
+          <div className="space-y-2 pt-1">
+            <div className="flex items-center gap-1.5 pl-1 text-[12.5px] font-semibold text-muted">
+              <Icon name="lightbulb" className="ic h-4 w-4" />
+              Beispiele – antippen oder selbst schreiben
+            </div>
+            {EXAMPLES.map((ex) => (
+              <button
+                key={ex}
+                type="button"
+                onClick={() => send(ex)}
+                className="block w-full rounded-xl border border-line bg-surface px-3.5 py-2.5 text-left text-[14px] text-ink-2 transition hover:border-accent-line hover:text-accent-strong"
+              >
+                {ex}
               </button>
-            )}
-            <button type="button" onClick={onClose} className="rounded-full p-1.5 text-slate-400 hover:bg-slate-100 hover:text-slate-600" aria-label="Schließen">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M18 6 6 18M6 6l12 12" /></svg>
-            </button>
+            ))}
           </div>
-        </div>
-
-        {/* Messages */}
-        <div ref={scrollRef} className="flex-1 space-y-3 overflow-y-auto p-4">
-          {messages.map((m, i) =>
-            m.role === 'user' ? (
-              <div key={i} className="flex justify-end">
-                <div className="max-w-[85%] rounded-2xl rounded-br-sm bg-isa-blue-deep px-3.5 py-2 text-sm text-white">{m.text}</div>
-              </div>
-            ) : (
-              <div key={i} className="flex flex-col items-start gap-2">
-                <div className="max-w-[92%] rounded-2xl rounded-bl-sm bg-slate-100 px-3.5 py-2 text-sm text-slate-700">{m.text}</div>
-                {m.understood && m.understood.length > 0 && (
-                  <div className="flex flex-wrap gap-1 pl-1">
-                    {m.understood.map((u, j) => (
-                      <span key={j} className="rounded-full bg-isa-green px-2 py-0.5 text-[11px] font-medium text-isa-green-deep">{u}</span>
-                    ))}
-                  </div>
-                )}
-                {m.results && m.results.length > 0 && (
-                  <div className="w-full space-y-2">
-                    {m.results.map((r, j) => (
-                      <ResultCard
-                        key={r.material.id}
-                        r={r}
-                        rankNo={j + 1}
-                        rating={ratings[r.material.id] || 0}
-                        onOpen={() => onOpen(r.material)}
-                        onDownload={() => onDownload(r.material)}
-                        downloading={downloadingId === r.material.id}
-                      />
-                    ))}
-                    <button
-                      type="button"
-                      onClick={() => onApply(signalsToFilter(signals))}
-                      className="w-full rounded-lg border border-isa-blue-deep py-2 text-xs font-semibold text-isa-blue-deep hover:bg-isa-blue/30"
-                    >
-                      Alle Treffer in der Bibliothek anzeigen
-                    </button>
-                  </div>
-                )}
-              </div>
-            ),
-          )}
-
-          {/* Example prompts (only before first user message) */}
-          {messages.length === 1 && (
-            <div className="space-y-1.5 pt-1">
-              <div className="pl-1 text-xs font-medium text-slate-400">💡 Beispiele — antippen oder selbst tippen:</div>
-              {EXAMPLES.map((ex) => (
-                <button
-                  key={ex}
-                  type="button"
-                  onClick={() => send(ex)}
-                  className="block w-full rounded-xl border border-slate-200 bg-white px-3 py-2 text-left text-sm text-slate-600 transition hover:border-isa-blue-deep hover:text-isa-blue-deep"
-                >
-                  {ex}
-                </button>
-              ))}
-            </div>
-          )}
-        </div>
-
-        {/* Understanding summary + input */}
-        <div className="border-t border-slate-100 p-3">
-          {understood.length > 0 && (
-            <div className="mb-2 flex flex-wrap items-center gap-1">
-              <span className="text-[11px] text-slate-400">Verstanden:</span>
-              {understood.map((u, i) => (
-                <span key={i} className="rounded-full bg-isa-blue/60 px-2 py-0.5 text-[11px] text-isa-blue-deep">{u}</span>
-              ))}
-            </div>
-          )}
-          <form
-            onSubmit={(e) => { e.preventDefault(); send(input) }}
-            className="flex items-end gap-2"
-          >
-            <textarea
-              value={input}
-              onChange={(e) => setInput(e.target.value)}
-              onKeyDown={(e) => { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); send(input) } }}
-              rows={1}
-              placeholder={lastResults ? 'Verfeinern … (z. B. „lieber ohne Arbeitsblatt")' : 'Beschreib deinen Schüler / deine Situation …'}
-              className="max-h-28 min-h-[2.6rem] flex-1 resize-none rounded-xl border border-slate-200 px-3 py-2 text-sm outline-none focus:border-isa-blue-deep"
-            />
-            <button
-              type="submit"
-              disabled={!input.trim()}
-              className="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-isa-blue-deep text-white transition hover:bg-[#264a82] disabled:opacity-40"
-              aria-label="Senden"
-            >
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7z" /></svg>
-            </button>
-          </form>
-        </div>
+        )}
       </div>
-    </div>
+
+      <div className="dlg-foot flex-col items-stretch gap-2">
+        {understood.length > 0 && (
+          <div className="flex flex-wrap items-center gap-1">
+            <span className="mr-1 text-[12px] font-semibold text-muted">Verstanden:</span>
+            {understood.map((u, i) => (
+              <span key={i} className="badge badge-upload">
+                {u}
+              </span>
+            ))}
+          </div>
+        )}
+        <form
+          onSubmit={(e) => {
+            e.preventDefault()
+            send(input)
+          }}
+          className="flex items-end gap-2"
+        >
+          <label className="sr-only" htmlFor={titleId + '-in'}>
+            Situation beschreiben
+          </label>
+          <textarea
+            id={titleId + '-in'}
+            data-autofocus
+            value={input}
+            onChange={(e) => setInput(e.target.value)}
+            onKeyDown={(e) => {
+              if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault()
+                send(input)
+              }
+            }}
+            rows={1}
+            placeholder={lastResults ? 'Verfeinern, z. B. „ohne Arbeitsblatt“' : 'Situation beschreiben …'}
+            className="field max-h-28 min-h-[42px] flex-1 resize-none"
+          />
+          <button type="submit" disabled={!input.trim()} className="btn btn-primary h-[42px] w-[42px] p-0" aria-label="Senden">
+            <Icon name="send" />
+          </button>
+        </form>
+      </div>
+    </Dialog>
   )
 }

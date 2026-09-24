@@ -4,8 +4,8 @@ import { themeColor } from '../lib/themeColors'
 
 // On-screen, visually rich rendering of a worksheet — mirrors the printable PDF
 // (numbered tasks, writing lines, pictorial scales, drawing boxes, tables).
+// Faces and weather symbols are drawn as SVG exactly like in the PDF.
 
-const FACES = ['😞', '🙁', '😐', '🙂', '😊']
 const COLOR_WORD: Record<string, string> = {
   grün: '#43a047', gruen: '#43a047', gelb: '#f9c400', orange: '#fb8c00', rot: '#e53935',
   blau: '#1e88e5', grau: '#9e9e9e', rosa: '#ec407a', lila: '#8e24aa', violett: '#8e24aa',
@@ -19,17 +19,96 @@ function zoneColor(label: string, idx: number, count: number): string {
   const ramp = ['#43a047', '#f9c400', '#fb8c00', '#e53935']
   return ramp[Math.min(3, Math.round((idx / Math.max(1, count - 1)) * 3))]
 }
-const WEATHER: [RegExp, string][] = [
-  [/sonn/, '☀️'], [/wolk|bewölk|bewoelk/, '☁️'], [/regen|regn/, '🌧️'],
-  [/gewitter|sturm|blitz|donner/, '⛈️'], [/schnee/, '❄️'],
-]
 
-function glyphFor(label: string, deep: string): ReactNode {
+function Cloud({ color }: { color: string }) {
+  return (
+    <>
+      <circle cx={9} cy={13} r={3.6} fill={color} />
+      <circle cx={14.5} cy={11.5} r={4.4} fill={color} />
+      <rect x={5.5} y={13} width={13} height={4.6} rx={2.3} fill={color} />
+    </>
+  )
+}
+
+function Weather({ kind, color, size = 30 }: { kind: string; color: string; size?: number }) {
+  const rays = [0, 45, 90, 135, 180, 225, 270, 315]
+  return (
+    <svg viewBox="0 0 24 24" width={size} height={size} aria-hidden="true">
+      {kind === 'sun' && (
+        <>
+          {rays.map((a) => {
+            const r = (a * Math.PI) / 180
+            return (
+              <line
+                key={a}
+                x1={12 + Math.cos(r) * 6.5}
+                y1={12 + Math.sin(r) * 6.5}
+                x2={12 + Math.cos(r) * 9.5}
+                y2={12 + Math.sin(r) * 9.5}
+                stroke={color}
+                strokeWidth={1.8}
+              />
+            )
+          })}
+          <circle cx={12} cy={12} r={5} fill={color} />
+        </>
+      )}
+      {kind === 'cloud' && <Cloud color={color} />}
+      {kind === 'rain' && (
+        <>
+          <Cloud color={color} />
+          {[8, 12, 16].map((x) => (
+            <line key={x} x1={x} y1={18.5} x2={x - 1.4} y2={22} stroke={color} strokeWidth={1.8} />
+          ))}
+        </>
+      )}
+      {kind === 'storm' && (
+        <>
+          <Cloud color={color} />
+          <polygon points="12,17 9,22 11.5,22 10,24.5 15,20 12,20" fill="#f5a623" />
+        </>
+      )}
+      {kind === 'snow' && (
+        <>
+          <Cloud color={color} />
+          {[8, 12, 16].map((x) => (
+            <circle key={x} cx={x} cy={20.5} r={1.1} fill={color} />
+          ))}
+        </>
+      )}
+    </svg>
+  )
+}
+
+/** Smiley whose mouth goes from sad (0) to happy (1) — same drawing as the PDF. */
+function Face({ happiness, color, size = 30 }: { happiness: number; color: string; size?: number }) {
+  const cy = 15 + (happiness - 0.5) * 8
+  return (
+    <svg viewBox="0 0 24 24" width={size} height={size} aria-hidden="true">
+      <circle cx={12} cy={12} r={10} fill="#fff" stroke={color} strokeWidth={1.6} />
+      <circle cx={8.6} cy={10} r={1.3} fill={color} />
+      <circle cx={15.4} cy={10} r={1.3} fill={color} />
+      <path d={`M7.5 15 Q12 ${cy} 16.5 15`} fill="none" stroke={color} strokeWidth={1.7} strokeLinecap="round" />
+    </svg>
+  )
+}
+
+function glyphFor(label: string, deep: string, size = 30): ReactNode {
   const k = label.toLowerCase().replace(/[^a-zäöüß]/g, '')
   if (COLOR_WORD[k])
-    return <span className="inline-block h-5 w-5 rounded-full ring-1 ring-black/10" style={{ backgroundColor: COLOR_WORD[k] }} />
-  for (const [re, emo] of WEATHER) if (re.test(k)) return <span className="text-2xl leading-none">{emo}</span>
-  void deep
+    return (
+      <span
+        className="inline-block h-5 w-5 rounded-full ring-1 ring-black/15"
+        style={{ backgroundColor: COLOR_WORD[k] }}
+        aria-hidden="true"
+      />
+    )
+  if (k.includes('sonn')) return <Weather kind="sun" color={deep} size={size} />
+  if (k.includes('wolk') || k.includes('bewölk') || k.includes('bewoelk')) return <Weather kind="cloud" color={deep} size={size} />
+  if (k.includes('regen') || k.includes('regn')) return <Weather kind="rain" color={deep} size={size} />
+  if (k.includes('gewitter') || k.includes('sturm') || k.includes('blitz') || k.includes('donner'))
+    return <Weather kind="storm" color={deep} size={size} />
+  if (k.includes('schnee')) return <Weather kind="snow" color={deep} size={size} />
   return null
 }
 
@@ -67,7 +146,7 @@ function Block({ block, num, deep, light }: { block: WorksheetBlock; num: number
     return (
       <div className="mt-5 mb-1 flex items-center gap-2">
         <span className="h-5 w-1.5 rounded-full" style={{ backgroundColor: deep }} />
-        <h4 className="text-base font-bold" style={{ color: deep }}>{text}</h4>
+        <h5 className="text-base font-bold" style={{ color: deep }}>{text}</h5>
       </div>
     )
 
@@ -125,9 +204,7 @@ function Block({ block, num, deep, light }: { block: WorksheetBlock; num: number
         <div className={`mt-3 flex flex-wrap gap-2.5 ${num ? 'pl-[34px]' : ''}`}>
           {its.map((lab, i) => {
             const g = glyphFor(lab, deep) ?? (
-              <span className="text-2xl leading-none">
-                {FACES[Math.round((its.length > 1 ? i / (its.length - 1) : 0.5) * (FACES.length - 1))]}
-              </span>
+              <Face happiness={its.length > 1 ? i / (its.length - 1) : 0.5} color={deep} />
             )
             return (
               <div
@@ -407,8 +484,9 @@ function Block({ block, num, deep, light }: { block: WorksheetBlock; num: number
     const bw = 96
     const bh = 32
     return (
-      <div className="mt-4 overflow-x-auto">
-        <svg width={W} height={H} viewBox={`0 0 ${W} ${H}`} className="mx-auto block">
+      <div className="mt-4">
+        <svg viewBox={`0 0 ${W} ${H}`} className="mx-auto block h-auto w-full" style={{ maxWidth: W }} role="img" aria-label="Mindmap">
+
           {branches.map((_, i) => {
             const a = (i / n) * Math.PI * 2 - Math.PI / 2
             const bx = cx + Math.cos(a) * (W / 2 - bw / 2 - 6)
@@ -452,23 +530,28 @@ export function WorksheetView({
 }) {
   const { deep, light } = themeColor(themeId)
   let task = 0
+  // Papier-Vorschau: Farben und Aufbau wie auf dem gedruckten Blatt (PDF).
   return (
-    <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+    <div className="overflow-hidden rounded-xl border border-line bg-white shadow-[var(--shadow-1)]">
       <div className="h-1.5" style={{ backgroundColor: deep }} />
-      <div className="p-5">
-        <div className="flex items-center gap-2">
+      <div className="p-4 sm:p-6">
+        <div className="flex flex-wrap items-center gap-2">
           <span
             className="rounded-md px-2 py-0.5 text-[11px] font-bold tracking-wide text-white uppercase"
             style={{ backgroundColor: deep }}
           >
             Arbeitsblatt
           </span>
-          <h3 className="font-bold text-slate-800">{w.title || fallbackTitle}</h3>
+          <h4 className="text-[16px] font-bold text-slate-800">{w.title || fallbackTitle}</h4>
         </div>
 
-        <div className="mt-3 flex flex-wrap gap-4 text-sm text-slate-400">
-          <span>Numm: <span className="inline-block w-40 border-b border-slate-300" /></span>
-          <span>Datum: <span className="inline-block w-24 border-b border-slate-300" /></span>
+        <div className="mt-3 flex flex-wrap gap-x-5 gap-y-2 text-sm text-slate-500">
+          <span>
+            Numm: <span className="inline-block w-36 border-b border-slate-300 sm:w-40" />
+          </span>
+          <span>
+            Datum: <span className="inline-block w-24 border-b border-slate-300" />
+          </span>
         </div>
 
         {w.intro ? (
@@ -482,10 +565,6 @@ export function WorksheetView({
           if (isTask) task += 1
           return <Block key={i} block={b} num={isTask ? task : null} deep={deep} light={light} />
         })}
-
-        <p className="mt-4 text-xs text-slate-400">
-          So sieht das druckbare Arbeitsblatt aus — „PDF herunterladen" für die Druckversion.
-        </p>
       </div>
     </div>
   )

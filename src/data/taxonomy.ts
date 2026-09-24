@@ -47,8 +47,10 @@ export interface ParticipantModeDef {
   labelDe: string
 }
 
+// The id (Luxembourgish) is printed on the PDF cover sheet ("Participants");
+// the UI shows the German label.
 export const participantModes: ParticipantModeDef[] = [
-  { id: 'Individuel', labelDe: 'Individuell' },
+  { id: 'Individuel', labelDe: 'Einzeln' },
   { id: 'Grupp', labelDe: 'Gruppe' },
   { id: 'Klass', labelDe: 'Klasse' },
 ]
@@ -60,9 +62,9 @@ export interface LanguageDef {
 
 export const languages: LanguageDef[] = [
   { id: 'de', labelDe: 'Deutsch' },
-  { id: 'lb', labelDe: 'Lëtzebuergesch' },
-  { id: 'fr', labelDe: 'Français' },
-  { id: 'en', labelDe: 'English' },
+  { id: 'lb', labelDe: 'Luxemburgisch' },
+  { id: 'fr', labelDe: 'Französisch' },
+  { id: 'en', labelDe: 'Englisch' },
 ]
 
 export interface SourceDef {
@@ -72,7 +74,7 @@ export interface SourceDef {
 
 export const sources: SourceDef[] = [
   { id: 'original', labelDe: 'CDSE / ISA-Team' },
-  { id: 'cdse', labelDe: 'CDSE-Upload' },
+  { id: 'cdse', labelDe: 'Team-Ablage' },
   { id: 'generated', labelDe: 'KI-Entwurf' },
 ]
 
@@ -145,11 +147,15 @@ export interface EldibDomainDef {
   color: string
 }
 
+// Domain colours = CDSE Hub / ELDiB-Generator (one colour code across the
+// product family). Used on screen AND for the ELDiB grid headers in the PDF:
+// the paper template's grid is plain green, so there is no template colour to
+// preserve there — the rest of the PDF keeps the template's block colours.
 export const eldibDomains: EldibDomainDef[] = [
-  { id: 'V', label: 'Verhalten', color: '#2f5597' },
-  { id: 'K', label: 'Kommunikation', color: '#548235' },
-  { id: 'SOZ', label: 'Sozialisation', color: '#bf8f00' },
-  { id: 'KOG', label: 'Kognition', color: '#c55a11' },
+  { id: 'V', label: 'Verhalten', color: '#B4533A' },
+  { id: 'K', label: 'Kommunikation', color: '#2E3A9C' },
+  { id: 'SOZ', label: 'Sozialisation', color: '#1F6B6F' },
+  { id: 'KOG', label: 'Kognition', color: '#8A6414' },
 ]
 
 export interface EldibGoal {

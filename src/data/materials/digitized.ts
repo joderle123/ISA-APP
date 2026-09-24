@@ -63,7 +63,7 @@ export const digitized: Material[] = [
   },
   {
     "id": "buch-ich-bin-wie-du-ich-bin-anders-als-du",
-    "title": "Buch “Ich bin wie du/Ich bin anders als du",
+    "title": "Buch “Ich bin wie du/Ich bin anders als du”",
     "author": "Nadine Breser",
     "ageLevels": [
       "C2",
@@ -103,7 +103,7 @@ export const digitized: Material[] = [
   },
   {
     "id": "buch-menschen",
-    "title": "Buch “Menschen",
+    "title": "Buch “Menschen”",
     "author": "Nadine Breser",
     "ageLevels": [
       "C3",
@@ -542,14 +542,14 @@ export const digitized: Material[] = [
     "tags": [
       "Selbstwahrnehmung",
       "Fremdwahrnehmung",
-      "Ic",
+      "Ich",
       "Einzigartigkeit",
       "Individualität"
     ],
-    "shortDescription": "In dieser Stunde entdecken die Kinder mithilfe des Videos „Knietzsche und das Ich“ , was das „Ich“  bedeutet und warum jeder Mensch einzigartig ist. Nach dem kurzen Film sitzen die Kinder im  Sitzkreis und machen eine Übung, bei der jedes Kind einen persönlichen Aspekt von sich teilt – z. B.  etwas, das es gut kann, etwas, das es mag, oder etwas, d as es besonders macht.",
+    "shortDescription": "In dieser Stunde entdecken die Kinder mithilfe des Videos „Knietzsche und das Ich“ , was das „Ich“  bedeutet und warum jeder Mensch einzigartig ist. Nach dem kurzen Film sitzen die Kinder im  Sitzkreis und machen eine Übung, bei der jedes Kind einen persönlichen Aspekt von sich teilt – z. B.  etwas, das es gut kann, etwas, das es mag, oder etwas, das es besonders macht.",
     "ablauf": [
       {
-        "text": "Video „Knietzsche und das Ich“ + Gruppenreflexion  Die Stunde beginnt mit dem kurzen Video „Knietzsche und das I ch“, in dem die Kinder erfahren,  was zum eigenen Ich gehört und warum jeder Mensch einzigartig ist. Anschließend findet eine  kurze Reflexion im Sitzkreis statt. Die Kinder sprechen darüber, was ihnen im Film aufgefallen ist,  welche Beispiele sie verstanden haben und was für sie persönlich „Ich sein“ bedeutet. Gemeinsam  wird herausgearbeitet, dass jeder Mensch unterschiedliche Gefühle, Stärken und Erfahrungen hat  – und dass diese Vielfalt jeden einzelnen besonders macht."
+        "text": "Video „Knietzsche und das Ich“ + Gruppenreflexion  Die Stunde beginnt mit dem kurzen Video „Knietzsche und das Ich“, in dem die Kinder erfahren,  was zum eigenen Ich gehört und warum jeder Mensch einzigartig ist. Anschließend findet eine  kurze Reflexion im Sitzkreis statt. Die Kinder sprechen darüber, was ihnen im Film aufgefallen ist,  welche Beispiele sie verstanden haben und was für sie persönlich „Ich sein“ bedeutet. Gemeinsam  wird herausgearbeitet, dass jeder Mensch unterschiedliche Gefühle, Stärken und Erfahrungen hat  – und dass diese Vielfalt jeden einzelnen besonders macht."
       },
       {
         "text": "Spiel „Ich bin die einzige Person im Raum, die …“  Im Sitzkreis spielen die Kinder das Spiel „Ich bin die einzige Person im Raum, die …“ . Dabei denkt  jedes Kind an eine besondere Eigenschaft, Vorliebe oder Erfahrung, die es einzigartig macht. Wer  etwas gefunden hat, steht auf und sagt: „Ich bin die einzige Person im Raum, die …“ – z. B. „…  gerne scharfes Essen mag“ oder „… Geige spielt“. Die anderen Kinder bleiben sitzen, wenn die  Aussage nicht auf sie zutrifft.  Das Spiel macht sichtbar, wie unterschiedlich alle sind, stärkt das Bewusstsein für die eigene  Besonderheit und fördert gleichzeitig Wertschätzung für die Vielfalt in der Gruppe ."

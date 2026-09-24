@@ -1,8 +1,11 @@
-import { useEffect, useMemo, useState, type ReactNode } from 'react'
+import { useEffect, useId, useState, type ReactNode } from 'react'
 import { teamSync, type TeamStatus } from '../lib/teamSync'
 import { ageLevels, materialTypes, themes as allThemes } from '../data/taxonomy'
 import { slug } from '../lib/slug'
 import type { AgeLevel, Material, MaterialType } from '../types/material'
+import { Dialog } from './Dialog'
+import { Icon } from './Icon'
+import { toast } from '../lib/toast'
 
 interface Props {
   onClose: () => void
@@ -22,14 +25,25 @@ function fmtTime(ts: number | null): string {
 export function TeamPanel({ onClose, teamMaterials }: Props) {
   const [status, setStatus] = useState<TeamStatus>(teamSync.status())
   const [name, setName] = useState(() => {
-    try { return localStorage.getItem('isa_team_user') || '' } catch { return '' }
+    try {
+      return localStorage.getItem('isa_team_user') || ''
+    } catch {
+      return ''
+    }
   })
   const [unlocked, setUnlocked] = useState(() => {
-    try { return localStorage.getItem('isa_uploader_ok') === '1' } catch { return false }
+    try {
+      return localStorage.getItem('isa_uploader_ok') === '1'
+    } catch {
+      return false
+    }
   })
   const [code, setCode] = useState('')
+  const [codeError, setCodeError] = useState(false)
   const [showUpload, setShowUpload] = useState(false)
   const [showHelp, setShowHelp] = useState(() => !teamSync.status().connected)
+  const [confirmId, setConfirmId] = useState<string | null>(null)
+  const titleId = useId()
 
   useEffect(() => {
     const i = setInterval(() => setStatus(teamSync.status()), 1500)
@@ -38,223 +52,339 @@ export function TeamPanel({ onClose, teamMaterials }: Props) {
 
   function saveName(v: string) {
     setName(v)
-    try { localStorage.setItem('isa_team_user', v || 'Unbekannt') } catch { /* ignore */ }
+    try {
+      localStorage.setItem('isa_team_user', v || 'Unbekannt')
+    } catch {
+      /* ignore */
+    }
   }
-  async function connect() { await teamSync.connect(); setStatus(teamSync.status()) }
-  function disconnect() { teamSync.disconnect(); setStatus(teamSync.status()) }
+  async function connect() {
+    await teamSync.connect()
+    setStatus(teamSync.status())
+  }
+  function disconnect() {
+    teamSync.disconnect()
+    setStatus(teamSync.status())
+  }
   function unlock() {
     if (code.trim() === UPLOADER_CODE) {
       setUnlocked(true)
-      try { localStorage.setItem('isa_uploader_ok', '1') } catch { /* ignore */ }
-    } else alert('Code stimmt nicht.')
+      setCodeError(false)
+      try {
+        localStorage.setItem('isa_uploader_ok', '1')
+      } catch {
+        /* ignore */
+      }
+    } else setCodeError(true)
   }
 
   return (
-    <div className="fixed inset-0 z-50 flex items-start justify-center overflow-y-auto bg-slate-900/40 p-4 backdrop-blur-sm sm:p-8" onClick={onClose}>
-      <div className="my-4 w-full max-w-2xl rounded-2xl bg-white shadow-2xl" onClick={(e) => e.stopPropagation()}>
-        <div className="flex items-center justify-between gap-4 border-b border-slate-100 p-5">
-          <div className="flex items-center gap-2.5">
-            <div className="grid h-9 w-9 place-items-center rounded-full bg-emerald-600 text-lg">🗂️</div>
+    <Dialog onClose={onClose} labelledBy={titleId} className="dlg-mid">
+      <header className="dlg-head items-center">
+        <div className="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-accent-soft text-accent">
+          <Icon name="folder" className="ic h-5 w-5" />
+        </div>
+        <div className="min-w-0 flex-1">
+          <h2 id={titleId} className="disp text-[19px] leading-tight">
+            Team-Ablage (CDSE)
+          </h2>
+          <p className="text-[13px] text-muted">Gemeinsamer Ordner auf O:\ – hochgeladene Blätter sehen alle</p>
+        </div>
+        <button
+          type="button"
+          onClick={() => setShowHelp((v) => !v)}
+          aria-expanded={showHelp}
+          className="btn btn-sm btn-quiet"
+        >
+          <Icon name="help" />
+          <span className="max-sm:sr-only">So geht’s</span>
+        </button>
+        <button type="button" onClick={onClose} className="icon-btn" aria-label="Schließen">
+          <Icon name="x" />
+        </button>
+      </header>
+
+      <div className="dlg-body scroll-slim space-y-5 p-5 sm:p-6" data-autofocus tabIndex={-1} style={{ outline: 'none' }}>
+        {showHelp && <HelpGuide onClose={() => setShowHelp(false)} />}
+        {!status.supported && (
+          <div className="callout callout-error" role="alert">
+            <Icon name="alert" />
             <div>
-              <div className="font-bold text-slate-800">Team-Ablage (CDSE)</div>
-              <div className="text-xs text-slate-400">Gemeinsamer Ordner auf O:\ — hochgeladene Blätter sehen alle</div>
+              Dieser Browser unterstützt die gemeinsame Ablage nicht. Bitte in <b>Microsoft Edge</b> oder <b>Chrome</b>{' '}
+              öffnen (Firefox und Safari können das nicht).
             </div>
           </div>
-          <div className="flex items-center gap-1">
-            <button
-              type="button"
-              onClick={() => setShowHelp((v) => !v)}
-              className={`rounded-lg px-2.5 py-1 text-xs font-semibold ring-1 transition ${showHelp ? 'bg-emerald-600 text-white ring-emerald-600' : 'bg-white text-emerald-700 ring-emerald-200 hover:bg-emerald-50'}`}
-            >
-              ❓ So geht’s
-            </button>
-            <button type="button" onClick={onClose} className="rounded-full p-1.5 text-slate-400 hover:bg-slate-100" aria-label="Schließen">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M18 6 6 18M6 6l12 12" /></svg>
-            </button>
-          </div>
+        )}
+
+        {/* Who am I */}
+        <div>
+          <label htmlFor={titleId + '-name'} className="mb-1.5 block text-[13px] font-semibold text-ink-2">
+            Dein Name
+          </label>
+          <input
+            id={titleId + '-name'}
+            value={name}
+            onChange={(e) => saveName(e.target.value)}
+            placeholder="z. B. Anna Muster"
+            className="field"
+          />
+          <p className="mt-1 text-[12.5px] text-muted">Erscheint bei „zuletzt von …“ und bei deinen Uploads.</p>
         </div>
 
-        <div className="space-y-5 p-5">
-          {showHelp && <HelpGuide onClose={() => setShowHelp(false)} />}
-          {!status.supported && (
-            <div className="rounded-xl border border-rose-200 bg-rose-50 p-3 text-sm text-rose-700">
-              Dieser Browser unterstützt die gemeinsame Ablage nicht. Bitte in <b>Microsoft Edge</b> oder <b>Chrome</b> öffnen (Firefox/Safari können das nicht).
-            </div>
-          )}
-
-          {/* Who am I */}
-          <div>
-            <label className="mb-1 block text-xs font-semibold tracking-wide text-slate-500 uppercase">Wer bin ich?</label>
-            <input
-              value={name}
-              onChange={(e) => saveName(e.target.value)}
-              placeholder={'Dein Name (erscheint bei „zuletzt von …")'}
-              className="w-full rounded-lg border border-slate-200 px-3 py-2 text-sm outline-none focus:border-emerald-600"
-            />
-          </div>
-
-          {/* Connection */}
-          <div className="rounded-xl border border-slate-200 p-4">
-            <div className="mb-2 flex items-center justify-between">
-              <span className="text-sm font-semibold text-slate-700">Verbindung</span>
-              {status.connected ? (
-                <span className="rounded-full bg-emerald-50 px-2 py-0.5 text-xs font-medium text-emerald-700 ring-1 ring-emerald-200">✓ Verbunden</span>
-              ) : (
-                <span className="rounded-full bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-500">nicht verbunden</span>
-              )}
-            </div>
+        {/* Connection */}
+        <section className="panel p-4" aria-label="Verbindung">
+          <div className="mb-2 flex items-center justify-between gap-3">
+            <h3 className="text-[14.5px] font-semibold text-ink">Verbindung</h3>
             {status.connected ? (
-              <>
-                <div className="text-sm text-slate-600">
-                  📁 <b>{status.folderName}</b> · {status.count} Blätter · zuletzt {fmtTime(status.lastSync)}
-                  {status.lastBy ? ` · von ${status.lastBy}` : ''}
-                </div>
-                <button type="button" onClick={disconnect} className="mt-3 rounded-lg border border-slate-200 px-3 py-1.5 text-xs font-medium text-slate-600 hover:bg-slate-50">
-                  Trennen
-                </button>
-              </>
+              <span className="badge badge-ok">
+                <Icon name="checkCircle" />
+                Verbunden
+              </span>
             ) : (
-              <>
-                <p className="text-sm text-slate-500">
-                  {status.needsPermission
-                    ? 'Ordner gemerkt — bitte Zugriff erneut bestätigen.'
-                    : 'Eine Person legt einen Ordner auf O:\\ an (z. B. O:\\ISA-Blaetter). Alle anderen wählen genau diesen Ordner.'}
-                </p>
-                <button
-                  type="button"
-                  onClick={connect}
-                  disabled={!status.supported}
-                  className="mt-3 rounded-lg bg-emerald-600 px-4 py-2 text-sm font-semibold text-white hover:bg-emerald-700 disabled:opacity-50"
-                >
-                  📂 Team-Ordner verbinden
-                </button>
-              </>
+              <span className="badge badge-ki">Nicht verbunden</span>
             )}
-            {status.error && <div className="mt-2 text-xs text-rose-600">{status.error}</div>}
           </div>
+          {status.connected ? (
+            <>
+              <p className="flex flex-wrap items-center gap-x-1.5 text-[14px] text-ink-2">
+                <Icon name="folder" className="ic h-4 w-4 text-muted" />
+                <b className="font-semibold">{status.folderName}</b>
+                <span className="text-muted">
+                  · {status.count} Blätter · zuletzt {fmtTime(status.lastSync)}
+                  {status.lastBy ? ` · von ${status.lastBy}` : ''}
+                </span>
+              </p>
+              <button type="button" onClick={disconnect} className="btn btn-sm mt-3">
+                Trennen
+              </button>
+            </>
+          ) : (
+            <>
+              <p className="text-[14px] leading-relaxed text-muted">
+                {status.needsPermission
+                  ? 'Der Ordner ist gemerkt – bitte den Zugriff einmal neu bestätigen.'
+                  : 'Eine Person legt einen Ordner auf O:\\ an (z. B. O:\\ISA-Blaetter). Alle anderen wählen genau diesen Ordner.'}
+              </p>
+              <button type="button" onClick={connect} disabled={!status.supported} className="btn btn-primary mt-3">
+                <Icon name="folder" />
+                {status.needsPermission ? 'Zugriff bestätigen' : 'Team-Ordner verbinden'}
+              </button>
+            </>
+          )}
+          {status.error && (
+            <p className="mt-2 flex items-start gap-1.5 text-[13px] text-danger" role="alert">
+              <Icon name="alert" className="ic mt-px h-4 w-4" />
+              {status.error}
+            </p>
+          )}
+        </section>
 
-          {/* Upload (gated) */}
-          {status.connected && (
-            <div className="rounded-xl border border-slate-200 p-4">
-              <div className="mb-2 flex items-center justify-between">
-                <span className="text-sm font-semibold text-slate-700">Material hochladen</span>
-                {unlocked && <span className="text-xs text-emerald-600">freigeschaltet</span>}
-              </div>
-              {!unlocked ? (
-                <div className="flex items-end gap-2">
-                  <div className="flex-1">
-                    <p className="mb-1 text-xs text-slate-500">Nur für berechtigte CDSE-Mitarbeiter. Code eingeben:</p>
-                    <input
-                      value={code}
-                      onChange={(e) => setCode(e.target.value)}
-                      type="password"
-                      placeholder="Uploader-Code"
-                      className="w-full rounded-lg border border-slate-200 px-3 py-2 text-sm outline-none focus:border-emerald-600"
-                    />
-                  </div>
-                  <button type="button" onClick={unlock} className="rounded-lg bg-slate-800 px-3 py-2 text-sm font-medium text-white hover:bg-slate-700">
-                    Freischalten
-                  </button>
-                </div>
-              ) : showUpload ? (
-                <UploadForm
-                  uploaderName={name || 'CDSE'}
-                  onDone={() => setShowUpload(false)}
-                  onCancel={() => setShowUpload(false)}
-                />
-              ) : (
-                <button type="button" onClick={() => setShowUpload(true)} className="rounded-lg bg-emerald-600 px-4 py-2 text-sm font-semibold text-white hover:bg-emerald-700">
-                  ⬆️ PDF / Word hochladen
-                </button>
+        {/* Upload (gated) */}
+        {status.connected && (
+          <section className="panel p-4" aria-label="Material hochladen">
+            <div className="mb-2 flex items-center justify-between gap-3">
+              <h3 className="text-[14.5px] font-semibold text-ink">Material hochladen</h3>
+              {unlocked && (
+                <span className="badge badge-ok">
+                  <Icon name="check" />
+                  Freigeschaltet
+                </span>
               )}
             </div>
-          )}
+            {!unlocked ? (
+              <form
+                className="flex flex-wrap items-end gap-2"
+                onSubmit={(e) => {
+                  e.preventDefault()
+                  unlock()
+                }}
+              >
+                <div className="min-w-[200px] flex-1">
+                  <label htmlFor={titleId + '-code'} className="mb-1 block text-[13px] text-muted">
+                    Nur für berechtigte CDSE-Mitarbeitende. Code eingeben:
+                  </label>
+                  <input
+                    id={titleId + '-code'}
+                    value={code}
+                    onChange={(e) => {
+                      setCode(e.target.value)
+                      setCodeError(false)
+                    }}
+                    type="password"
+                    placeholder="Uploader-Code"
+                    className="field"
+                    aria-invalid={codeError}
+                    aria-describedby={codeError ? titleId + '-codeerr' : undefined}
+                  />
+                </div>
+                <button type="submit" className="btn">
+                  <Icon name="lock" />
+                  Freischalten
+                </button>
+                {codeError && (
+                  <p id={titleId + '-codeerr'} className="w-full text-[13px] text-danger" role="alert">
+                    Der Code stimmt nicht.
+                  </p>
+                )}
+              </form>
+            ) : showUpload ? (
+              <UploadForm
+                uploaderName={name || 'CDSE'}
+                onDone={() => {
+                  setShowUpload(false)
+                  toast('Hochgeladen – das Blatt ist jetzt für alle sichtbar.', 'ok')
+                }}
+                onCancel={() => setShowUpload(false)}
+              />
+            ) : (
+              <button type="button" onClick={() => setShowUpload(true)} className="btn btn-primary">
+                <Icon name="upload" />
+                PDF oder Word hochladen
+              </button>
+            )}
+          </section>
+        )}
 
-          {/* Uploaded list */}
-          {teamMaterials.length > 0 && (
-            <div>
-              <div className="mb-2 text-xs font-semibold tracking-wide text-slate-500 uppercase">
-                Team-Blätter ({teamMaterials.length})
-              </div>
-              <div className="max-h-52 space-y-1.5 overflow-y-auto pr-1">
-                {teamMaterials.map((m) => (
-                  <div key={m.id} className="flex items-center gap-2 rounded-lg border border-slate-100 p-2 text-sm">
-                    <span className="rounded bg-emerald-50 px-1.5 py-0.5 text-[10px] font-medium text-emerald-700 ring-1 ring-emerald-200">CDSE</span>
-                    <span className="min-w-0 flex-1 truncate text-slate-700">{m.title}</span>
-                    <span className="shrink-0 text-xs text-slate-400">{m.uploadedBy}</span>
-                    {unlocked && (
+        {/* Uploaded list */}
+        {teamMaterials.length > 0 && (
+          <section aria-label="Team-Blätter">
+            <h3 className="eyebrow mb-2">Team-Blätter ({teamMaterials.length})</h3>
+            <ul className="scroll-slim m-0 max-h-64 list-none space-y-1.5 overflow-y-auto p-0 pr-1">
+              {teamMaterials.map((m) => (
+                <li key={m.id} className="flex flex-wrap items-center gap-2 rounded-xl border border-line bg-surface p-2.5 text-[14px]">
+                  <span className="badge badge-upload">
+                    <Icon name="folder" />
+                    CDSE
+                  </span>
+                  <span className="min-w-0 flex-1 truncate text-ink">{m.title}</span>
+                  <span className="shrink-0 text-[12.5px] text-muted">{m.uploadedBy}</span>
+                  {unlocked &&
+                    (confirmId === m.id ? (
+                      <span className="flex items-center gap-1.5">
+                        <span className="text-[12.5px] text-danger">Für alle entfernen?</span>
+                        <button
+                          type="button"
+                          className="btn btn-sm btn-danger btn-primary"
+                          onClick={() => {
+                            setConfirmId(null)
+                            teamSync.removeMaterial(m.id).catch(() => toast('Entfernen fehlgeschlagen.', 'error'))
+                          }}
+                        >
+                          Entfernen
+                        </button>
+                        <button type="button" className="btn btn-sm btn-quiet" onClick={() => setConfirmId(null)}>
+                          Abbrechen
+                        </button>
+                      </span>
+                    ) : (
                       <button
                         type="button"
-                        onClick={() => { if (confirm('Dieses Team-Blatt für alle entfernen?')) teamSync.removeMaterial(m.id) }}
-                        className="shrink-0 rounded px-1.5 py-0.5 text-xs text-rose-500 hover:bg-rose-50"
+                        onClick={() => setConfirmId(m.id)}
+                        className="btn btn-sm btn-quiet btn-danger"
+                        aria-label={`${m.title} entfernen`}
                       >
-                        entfernen
+                        <Icon name="trash" />
                       </button>
-                    )}
-                  </div>
-                ))}
-              </div>
-            </div>
-          )}
-        </div>
+                    ))}
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
       </div>
-    </div>
+    </Dialog>
   )
 }
 
 function Step({ n, title, children }: { n: number; title: string; children: ReactNode }) {
   return (
-    <div className="flex gap-3">
-      <span className="grid h-6 w-6 shrink-0 place-items-center rounded-full bg-emerald-600 text-xs font-bold text-white">{n}</span>
-      <div className="text-sm text-slate-600">
-        <b className="text-slate-800">{title}</b> {children}
+    <li className="flex gap-3">
+      <span className="grid h-6 w-6 shrink-0 place-items-center rounded-full bg-accent text-[12px] font-bold text-white">{n}</span>
+      <div className="text-[14px] leading-relaxed text-ink-2">
+        <b className="font-semibold text-ink">{title}</b> {children}
       </div>
-    </div>
+    </li>
   )
 }
 
 function HelpGuide({ onClose }: { onClose: () => void }) {
   return (
-    <div className="rounded-2xl border border-emerald-200 bg-emerald-50/60 p-4">
-      <div className="mb-3 flex items-center justify-between">
-        <h3 className="font-bold text-slate-800">📖 So funktioniert die Team-Ablage</h3>
-        <button type="button" onClick={onClose} className="text-xs font-medium text-slate-500 hover:text-slate-700">ausblenden</button>
+    <section className="rounded-2xl border border-accent-line bg-accent-soft/60 p-4" aria-label="Anleitung Team-Ablage">
+      <div className="mb-3 flex items-center justify-between gap-3">
+        <h3 className="flex items-center gap-2 text-[15px] font-semibold text-ink">
+          <Icon name="book" className="ic h-4 w-4 text-accent" />
+          So funktioniert die Team-Ablage
+        </h3>
+        <button type="button" onClick={onClose} className="link-btn text-[13px]">
+          Ausblenden
+        </button>
       </div>
 
-      <div className="rounded-xl bg-white p-3 text-xs text-amber-700 ring-1 ring-amber-100">
-        ⚠️ Nur mit <b>Microsoft Edge</b> oder <b>Chrome</b> (Firefox/Safari können das nicht).
+      <div className="callout py-2 text-[13px]">
+        <Icon name="alert" className="ic h-4 w-4" />
+        <div>
+          Nur mit <b>Microsoft Edge</b> oder <b>Chrome</b> (Firefox und Safari können das nicht).
+        </div>
       </div>
 
-      <div className="mt-3 text-xs font-semibold tracking-wide text-emerald-700 uppercase">1 · Verbinden (einmalig)</div>
-      <div className="mt-2 space-y-2.5">
-        <Step n={1} title="Namen eintragen">oben ins Feld „Wer bin ich?" — erscheint bei „zuletzt von …".</Step>
-        <Step n={2} title="Ordner anlegen">Eine Person legt auf dem Laufwerk O:\ einen Ordner an, z. B. <code className="rounded bg-slate-100 px-1">O:\ISA-Blaetter</code>.</Step>
-        <Step n={3} title="Verbinden">Auf „📂 Team-Ordner verbinden" klicken, diesen Ordner wählen und Zugriff <b>erlauben</b>.</Step>
-        <Step n={4} title="Alle anderen">machen dasselbe und wählen <b>genau denselben</b> Ordner. Fertig — es steht „✓ Verbunden".</Step>
-      </div>
+      <h4 className="eyebrow mt-4">1 · Verbinden (einmalig)</h4>
+      <ol className="m-0 mt-2 list-none space-y-2.5 p-0">
+        <Step n={1} title="Namen eintragen">
+          oben ins Feld „Dein Name“ – erscheint bei „zuletzt von …“.
+        </Step>
+        <Step n={2} title="Ordner anlegen">
+          Eine Person legt auf dem Laufwerk O:\ einen Ordner an, z. B. <code className="rounded bg-page-2 px-1.5">O:\ISA-Blaetter</code>.
+        </Step>
+        <Step n={3} title="Verbinden">
+          Auf „Team-Ordner verbinden“ klicken, diesen Ordner wählen und den Zugriff <b>erlauben</b>.
+        </Step>
+        <Step n={4} title="Alle anderen">
+          machen dasselbe und wählen <b>genau denselben</b> Ordner. Fertig – es steht „Verbunden“.
+        </Step>
+      </ol>
 
-      <div className="mt-4 text-xs font-semibold tracking-wide text-emerald-700 uppercase">2 · Blatt hochladen — zwei Wege</div>
+      <h4 className="eyebrow mt-4">2 · Blatt hochladen – zwei Wege</h4>
       <div className="mt-2 grid gap-2.5 sm:grid-cols-2">
-        <div className="rounded-xl bg-white p-3 ring-1 ring-slate-200">
-          <div className="mb-1 text-sm font-bold text-slate-800">📥 Einfach reinlegen</div>
-          <p className="text-xs text-slate-600">PDF oder Word direkt in den Ordner <code className="rounded bg-slate-100 px-1">O:\ISA-Blaetter</code> kopieren. Nach ein paar Sekunden erscheint sie bei <b>allen</b> (Titel = Dateiname).</p>
+        <div className="rounded-xl border border-line bg-surface p-3">
+          <div className="mb-1 flex items-center gap-1.5 text-[14px] font-semibold text-ink">
+            <Icon name="folder" className="ic h-4 w-4 text-accent" />
+            Einfach hineinlegen
+          </div>
+          <p className="text-[13px] leading-relaxed text-muted">
+            PDF oder Word direkt in den Ordner <code className="rounded bg-page-2 px-1">O:\ISA-Blaetter</code> kopieren. Nach ein paar
+            Sekunden erscheint die Datei bei <b>allen</b> (Titel = Dateiname).
+          </p>
         </div>
-        <div className="rounded-xl bg-white p-3 ring-1 ring-slate-200">
-          <div className="mb-1 text-sm font-bold text-slate-800">⬆️ Im Programm hochladen</div>
-          <p className="text-xs text-slate-600">„Material hochladen" → Code eingeben → Datei + <b>Titel, Alter, Thema</b> angeben. Besser für Suche &amp; Chatbot.</p>
+        <div className="rounded-xl border border-line bg-surface p-3">
+          <div className="mb-1 flex items-center gap-1.5 text-[14px] font-semibold text-ink">
+            <Icon name="upload" className="ic h-4 w-4 text-accent" />
+            In der Toolbox hochladen
+          </div>
+          <p className="text-[13px] leading-relaxed text-muted">
+            „Material hochladen“ → Code eingeben → Datei mit <b>Titel, Alter und Thema</b> angeben. Besser für Suche und
+            Material-Finder.
+          </p>
         </div>
       </div>
 
-      <div className="mt-4 rounded-xl bg-white p-3 text-xs text-slate-600 ring-1 ring-slate-200">
-        <b className="text-slate-800">Gut zu wissen</b>
+      <div className="mt-3 rounded-xl border border-line bg-surface p-3 text-[13px] text-muted">
+        <b className="font-semibold text-ink">Gut zu wissen</b>
         <ul className="mt-1 list-disc space-y-0.5 pl-4">
-          <li><b>Sehen</b> können alle Verbundenen. <b>Hochladen</b> nur berechtigte Kollegen (mit Code).</li>
-          <li>Alles bleibt <b>im Haus</b> auf O:\ — kein Internet, keine Cloud.</li>
-          <li>Nach einem Browser-Neustart evtl. einmal „Verbinden" klicken (Edge fragt die Erlaubnis neu).</li>
-          <li>Grünes <span className="rounded bg-emerald-50 px-1 text-emerald-700 ring-1 ring-emerald-200">CDSE ✓</span> = echtes Material · <span className="rounded bg-indigo-50 px-1 text-indigo-600 ring-1 ring-indigo-100">KI-Entwurf</span> = KI-generiert.</li>
+          <li>
+            <b>Sehen</b> können alle Verbundenen, <b>hochladen</b> nur berechtigte Kolleginnen und Kollegen (mit Code).
+          </li>
+          <li>
+            Alles bleibt <b>im Haus</b> auf O:\ – kein Internet, keine Cloud.
+          </li>
+          <li>Nach einem Browser-Neustart evtl. einmal „Zugriff bestätigen“ klicken (Edge fragt die Erlaubnis neu).</li>
+          <li>
+            <span className="badge badge-ok align-middle">ISA-Team</span> = geprüftes Material,{' '}
+            <span className="badge badge-upload align-middle">Team-Ablage</span> = Upload aus dem Team,{' '}
+            <span className="badge badge-ki align-middle">KI-Entwurf</span> = KI-generiert, vor dem Einsatz prüfen.
+          </li>
         </ul>
       </div>
-    </div>
+    </section>
   )
 }
 
@@ -269,21 +399,28 @@ function UploadForm({ uploaderName, onDone, onCancel }: { uploaderName: string; 
   const [type, setType] = useState<MaterialType>('Aktivitéit')
   const [busy, setBusy] = useState(false)
   const [err, setErr] = useState<string | null>(null)
+  const id = useId()
 
-  const themeOptions = useMemo(() => allThemes, [])
-
-  function toggle<T>(arr: T[], v: T, set: (a: T[]) => void) {
-    set(arr.includes(v) ? arr.filter((x) => x !== v) : [...arr, v])
+  function toggle<T>(arr: T[], v: T, set: (a: T[]) => void, max = Infinity) {
+    if (arr.includes(v)) set(arr.filter((x) => x !== v))
+    else if (arr.length < max) set([...arr, v])
   }
 
   async function submit() {
-    if (!file) { setErr('Bitte eine Datei wählen.'); return }
-    if (!title.trim()) { setErr('Bitte einen Titel eingeben.'); return }
-    setBusy(true); setErr(null)
+    if (!file) {
+      setErr('Bitte eine Datei wählen.')
+      return
+    }
+    if (!title.trim()) {
+      setErr('Bitte einen Titel eingeben.')
+      return
+    }
+    setBusy(true)
+    setErr(null)
     try {
-      const id = 'cdse-' + (slug(title) || 'material') + '-' + Date.now().toString(36)
+      const mid = 'cdse-' + (slug(title) || 'material') + '-' + Date.now().toString(36)
       const m: Material = {
-        id,
+        id: mid,
         title: title.trim(),
         author: uploaderName,
         ageLevels: ages.length ? ages : ['ES'],
@@ -308,55 +445,88 @@ function UploadForm({ uploaderName, onDone, onCancel }: { uploaderName: string; 
   }
 
   return (
-    <div className="space-y-3">
-      <input
-        type="file"
-        accept=".pdf,.doc,.docx,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
-        onChange={(e) => { const f = e.target.files?.[0] || null; setFile(f); if (f && !title) setTitle(f.name.replace(/\.[^.]+$/, '')) }}
-        className="w-full text-sm"
-      />
-      <input value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Titel *" className="w-full rounded-lg border border-slate-200 px-3 py-2 text-sm outline-none focus:border-emerald-600" />
-      <textarea value={desc} onChange={(e) => setDesc(e.target.value)} rows={2} placeholder="Kurzbeschreibung" className="w-full resize-none rounded-lg border border-slate-200 px-3 py-2 text-sm outline-none focus:border-emerald-600" />
+    <div className="space-y-3.5">
       <div>
-        <div className="mb-1 text-xs font-medium text-slate-500">Altersstufe</div>
+        <label htmlFor={id + '-file'} className="mb-1 block text-[13px] font-semibold text-ink-2">
+          Datei (PDF oder Word)
+        </label>
+        <input
+          id={id + '-file'}
+          type="file"
+          accept=".pdf,.doc,.docx,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+          onChange={(e) => {
+            const f = e.target.files?.[0] || null
+            setFile(f)
+            if (f && !title) setTitle(f.name.replace(/\.[^.]+$/, ''))
+          }}
+          className="block w-full text-[14px] text-ink-2 file:mr-3 file:rounded-lg file:border file:border-line-2 file:bg-surface file:px-3 file:py-1.5 file:font-semibold file:text-ink"
+        />
+      </div>
+      <div>
+        <label htmlFor={id + '-title'} className="mb-1 block text-[13px] font-semibold text-ink-2">
+          Titel *
+        </label>
+        <input id={id + '-title'} value={title} onChange={(e) => setTitle(e.target.value)} className="field" />
+      </div>
+      <div>
+        <label htmlFor={id + '-desc'} className="mb-1 block text-[13px] font-semibold text-ink-2">
+          Kurzbeschreibung
+        </label>
+        <textarea id={id + '-desc'} value={desc} onChange={(e) => setDesc(e.target.value)} rows={2} className="field resize-y" />
+      </div>
+      <fieldset className="m-0 border-0 p-0">
+        <legend className="mb-1.5 text-[13px] font-semibold text-ink-2">Altersstufe</legend>
         <div className="flex flex-wrap gap-1.5">
           {AGE_IDS.map((a) => (
-            <button key={a} type="button" onClick={() => toggle(ages, a, setAges)}
-              className={`rounded-full px-2.5 py-1 text-xs font-medium ring-1 ${ages.includes(a) ? 'bg-emerald-600 text-white ring-emerald-600' : 'bg-white text-slate-600 ring-slate-200'}`}>
+            <button key={a} type="button" aria-pressed={ages.includes(a)} onClick={() => toggle(ages, a, setAges)} className="fchip">
               {ageLevels.find((x) => x.id === a)?.label ?? a}
             </button>
           ))}
         </div>
-      </div>
-      <div>
-        <div className="mb-1 text-xs font-medium text-slate-500">Typ</div>
+      </fieldset>
+      <fieldset className="m-0 border-0 p-0">
+        <legend className="mb-1.5 text-[13px] font-semibold text-ink-2">Format</legend>
         <div className="flex flex-wrap gap-1.5">
-          {materialTypes.filter((t) => t.id !== 'Hospi').map((t) => (
-            <button key={t.id} type="button" onClick={() => setType(t.id)}
-              className={`rounded-full px-2.5 py-1 text-xs font-medium ring-1 ${type === t.id ? 'bg-emerald-600 text-white ring-emerald-600' : 'bg-white text-slate-600 ring-slate-200'}`}>
-              {t.labelDe}
-            </button>
-          ))}
+          {materialTypes
+            .filter((t) => t.id !== 'Hospi')
+            .map((t) => (
+              <button key={t.id} type="button" aria-pressed={type === t.id} onClick={() => setType(t.id)} className="fchip">
+                {t.labelDe}
+              </button>
+            ))}
         </div>
-      </div>
-      <div>
-        <div className="mb-1 text-xs font-medium text-slate-500">Themen (max. 3)</div>
-        <div className="max-h-28 overflow-y-auto rounded-lg border border-slate-100 p-2">
+      </fieldset>
+      <fieldset className="m-0 border-0 p-0">
+        <legend className="mb-1.5 text-[13px] font-semibold text-ink-2">Themen (höchstens 3)</legend>
+        <div className="scroll-slim max-h-32 overflow-y-auto rounded-xl border border-line p-2">
           <div className="flex flex-wrap gap-1.5">
-            {themeOptions.map((t) => (
-              <button key={t.id} type="button" onClick={() => toggle(themeIds, t.id, setThemeIds)}
-                className={`rounded-full px-2 py-0.5 text-[11px] ring-1 ${themeIds.includes(t.id) ? 'bg-isa-blue-deep text-white ring-isa-blue-deep' : 'bg-white text-slate-600 ring-slate-200'}`}>
+            {allThemes.map((t) => (
+              <button
+                key={t.id}
+                type="button"
+                aria-pressed={themeIds.includes(t.id)}
+                onClick={() => toggle(themeIds, t.id, setThemeIds, 3)}
+                className="fchip min-h-[28px] text-[12.5px]"
+              >
                 {t.label}
               </button>
             ))}
           </div>
         </div>
-      </div>
-      {err && <div className="text-xs text-rose-600">{err}</div>}
+      </fieldset>
+      {err && (
+        <p className="flex items-center gap-1.5 text-[13px] text-danger" role="alert">
+          <Icon name="alert" className="ic h-4 w-4" />
+          {err}
+        </p>
+      )}
       <div className="flex justify-end gap-2">
-        <button type="button" onClick={onCancel} className="rounded-lg px-3 py-2 text-sm text-slate-600 hover:bg-slate-100">Abbrechen</button>
-        <button type="button" onClick={submit} disabled={busy} className="rounded-lg bg-emerald-600 px-4 py-2 text-sm font-semibold text-white hover:bg-emerald-700 disabled:opacity-50">
-          {busy ? 'Lädt hoch…' : 'Hochladen & teilen'}
+        <button type="button" onClick={onCancel} className="btn btn-quiet">
+          Abbrechen
+        </button>
+        <button type="button" onClick={submit} disabled={busy} className="btn btn-primary">
+          {busy ? <span className="spin" /> : <Icon name="upload" />}
+          {busy ? 'Wird hochgeladen …' : 'Hochladen und teilen'}
         </button>
       </div>
     </div>

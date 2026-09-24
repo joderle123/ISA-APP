@@ -1135,6 +1135,15 @@ function WorksheetPage({ material: m }: { material: Material }) {
   )
 }
 
+/** Only the student worksheet page(s) — for printing a class set. */
+export function WorksheetDocument({ material: m }: { material: Material }) {
+  return (
+    <Document title={`Arbeitsblatt: ${m.worksheet?.title || m.title}`} author={m.author || 'ISA-App'}>
+      {m.worksheet ? <WorksheetPage material={m} /> : null}
+    </Document>
+  )
+}
+
 export function MaterialDocument({ material: m }: { material: Material }) {
   const has = <T,>(arr: T[], v: T) => arr.includes(v)
   const goalSet = new Set(m.eldibGoals)
@@ -1309,7 +1318,8 @@ export function MaterialDocument({ material: m }: { material: Material }) {
                   <View key={g.id} style={s.goal}>
                     <Box checked={goalSet.has(g.id)} />
                     <Text style={s.goalText}>
-                      {g.label} [{g.id}]
+                      {/* geschütztes Leerzeichen: Code bleibt beim Begriff (kein „[-“-Umbruch) */}
+                      {`${g.label}\u00a0[${g.id}]`}
                     </Text>
                   </View>
                 ))}

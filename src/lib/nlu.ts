@@ -5,7 +5,7 @@
 // ---------------------------------------------------------------------------
 import type { AgeLevel, Material, MaterialType, ParticipantMode } from '../types/material'
 import { emptyFilter, type FilterState } from './filter'
-import { themeLabel } from '../data/taxonomy'
+import { materialTypeById, participantModeById, themeLabel } from '../data/taxonomy'
 
 export interface Signals {
   themes: string[]
@@ -188,12 +188,10 @@ export function describe(s: Signals): string[] {
   if (s.ages.length) out.push('Alter: ' + s.ages.join('/'))
   if (s.themes.length) out.push('Thema: ' + s.themes.map(themeLabel).join(', '))
   if (s.participants.length) {
-    const map: Record<ParticipantMode, string> = { Individuel: 'Einzeln', Grupp: 'Gruppe', Klass: 'Klasse' }
-    out.push('Sozialform: ' + s.participants.map((p) => map[p]).join('/'))
+    out.push('Sozialform: ' + s.participants.map((p) => participantModeById.get(p)?.labelDe ?? p).join('/'))
   }
   if (s.types.length) {
-    const map: Record<MaterialType, string> = { 'Aktivitéit': 'Aktivität', 'ganz Stonn': 'Stunde', Projet: 'Projekt', Hospi: 'Hospitation' }
-    out.push('Format: ' + s.types.map((t) => map[t]).join('/'))
+    out.push('Format: ' + s.types.map((t) => materialTypeById.get(t)?.labelDe ?? t).join('/'))
   }
   if (s.wantWorksheet === true) out.push('mit Arbeitsblatt')
   if (s.wantWorksheet === false) out.push('ohne Arbeitsblatt')

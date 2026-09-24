@@ -1,11 +1,14 @@
-import { useState, type ReactNode } from 'react'
-import type { FilterState } from '../lib/filter'
-import { activeFilterCount } from '../lib/filter'
+import { useId, useState, type CSSProperties, type ReactNode } from 'react'
+import type { FacetCounts, FilterState } from '../lib/filter'
+import { fold } from '../lib/filter'
 import type { EldibDomain } from '../types/material'
 import { StarRating } from './StarRating'
+import { Icon } from './Icon'
+import { domainStyle } from '../lib/ui'
 import {
   ageLevels,
   eldibDomains,
+  eldibGoalById,
   eldibGoals,
   etepStufen,
   languages,
@@ -18,381 +21,409 @@ import {
 interface Props {
   filter: FilterState
   update: (partial: Partial<FilterState>) => void
-  reset: () => void
-  total: number
-  shown: number
-  /** All distinct tags present in the library (for the tag facet). */
+  /** Result counts per option under the current filters. */
+  counts: FacetCounts
+  /** Counts over the whole library (to hide options that never occur). */
+  totals: FacetCounts
+  /** All distinct tags, most frequent first. */
   allTags: string[]
-  /** All distinct authors present in the library (for the author facet). */
   allAuthors: string[]
 }
 
+function toggleIn<T>(arr: T[], v: T): T[] {
+  return arr.includes(v) ? arr.filter((x) => x !== v) : [...arr, v]
+}
+
+/** Umschaltbarer Filter-Chip mit Trefferzahl. */
 function Chip({
-  active,
+  on,
+  n,
   onClick,
+  title,
   children,
+  style,
 }: {
-  active: boolean
+  on: boolean
+  n?: number
   onClick: () => void
+  title?: string
   children: ReactNode
+  style?: CSSProperties
 }) {
   return (
     <button
       type="button"
+      className="fchip"
+      aria-pressed={on}
       onClick={onClick}
-      className={`rounded-full px-2.5 py-1 text-xs font-medium ring-1 transition ${
-        active
-          ? 'bg-isa-blue-deep text-white ring-isa-blue-deep'
-          : 'bg-white text-slate-600 ring-slate-200 hover:ring-slate-300'
-      }`}
+      title={title}
+      style={style}
+      disabled={!on && n === 0}
     >
+      {on ? <Icon name="check" /> : null}
       {children}
+      {n !== undefined ? <span className="n">{n}</span> : null}
     </button>
   )
 }
 
 function Section({
   title,
+  active,
+  defaultOpen = true,
   children,
 }: {
   title: string
+  active: number
+  defaultOpen?: boolean
   children: ReactNode
 }) {
+  const [open, setOpen] = useState(defaultOpen || active > 0)
+  const id = useId()
   return (
-    <div className="border-b border-slate-100 py-3">
-      <h3 className="mb-2 text-xs font-semibold tracking-wide text-slate-500 uppercase">
-        {title}
+    <section className="fsec">
+      <h3>
+        <button
+          type="button"
+          className="fsec-toggle"
+          aria-expanded={open}
+          aria-controls={id}
+          onClick={() => setOpen((o) => !o)}
+        >
+          <span className="grow">{title}</span>
+          {active > 0 && (
+            <span className="fsec-count" aria-label={`${active} aktiv`}>
+              {active}
+            </span>
+          )}
+          <Icon name="chevronDown" className="ic chev" />
+        </button>
       </h3>
-      {children}
-    </div>
+      <div id={id} hidden={!open} className="pb-4">
+        {children}
+      </div>
+    </section>
   )
 }
 
-export function FilterPanel({ filter, update, reset, total, shown, allTags, allAuthors }: Props) {
+export function FilterPanel({ filter, update, counts, totals, allTags, allAuthors }: Props) {
   const [goalQuery, setGoalQuery] = useState('')
-  const [goalDomain, setGoalDomain] = useState<EldibDomain>('V')
+  const [goalDomain, setGoalDomain] = useState<EldibDomain>(() => {
+    const first = filter.eldibGoals[0]
+    return (first && eldibGoalById.get(first)?.domain) || 'V'
+  })
   const [tagQuery, setTagQuery] = useState('')
 
-  function toggle<K extends keyof FilterState>(key: K, value: unknown) {
-    const arr = filter[key] as unknown[]
-    update({
-      [key]: arr.includes(value)
-        ? arr.filter((v) => v !== value)
-        : [...arr, value],
-    } as Partial<FilterState>)
-  }
-
-  const active = activeFilterCount(filter)
-  // Browsable: with a query → search all domains; otherwise → list the
-  // goals of the currently selected browse-domain (so the picker is never empty).
-  const goalsToShow = goalQuery
-    ? eldibGoals.filter((g) =>
-        `${g.label} ${g.id}`.toLowerCase().includes(goalQuery.toLowerCase()),
-      )
+  const q = fold(goalQuery.trim())
+  const goalsToShow = q
+    ? eldibGoals.filter((g) => fold(`${g.id} ${g.label}`).includes(q) || fold(g.id.replace('-', '')).includes(q))
     : eldibGoals.filter((g) => g.domain === goalDomain)
-  const filteredTags = tagQuery
-    ? allTags.filter((t) => t.toLowerCase().includes(tagQuery.toLowerCase()))
-    : allTags
+
+  const tq = fold(tagQuery.trim())
+  const tagList = (tq ? allTags.filter((t) => fold(t).includes(tq)) : allTags).slice(0, tq ? 40 : 14)
+  const selectedTagsHidden = filter.tags.filter((t) => !tagList.includes(t))
+
+  const themeOrder = themes
+    .filter((t) => (totals.themes.get(t.id) ?? 0) > 0 || filter.themes.includes(t.id))
+    .sort((a, b) => a.label.localeCompare(b.label, 'de'))
+  const moreCount = filter.languages.length + filter.sources.length + filter.authors.length + filter.tags.length
 
   return (
-    <aside className="flex flex-col">
-      <div className="flex items-center justify-between pb-2">
-        <div className="text-sm text-slate-500">
-          <span className="font-semibold text-slate-700">{shown}</span> von {total}
+    <div className="flex flex-col">
+      <Section title="Altersstufe" active={filter.ageLevels.length}>
+        <div className="flex flex-wrap gap-1.5">
+          {ageLevels.map((a) => (
+            <Chip
+              key={a.id}
+              on={filter.ageLevels.includes(a.id)}
+              n={counts.ageLevels.get(a.id) ?? 0}
+              title={a.description}
+              onClick={() => update({ ageLevels: toggleIn(filter.ageLevels, a.id) })}
+            >
+              {a.label}
+            </Chip>
+          ))}
         </div>
-        {active > 0 && (
-          <button
-            type="button"
-            onClick={reset}
-            className="text-xs font-medium text-isa-blue-deep hover:underline"
-          >
-            Zurücksetzen ({active})
-          </button>
-        )}
-      </div>
+      </Section>
 
-      <div className="scroll-slim pr-1">
-        <Section title="Arbeitsblatt">
-          <Chip
-            active={filter.hasWorksheet}
-            onClick={() => update({ hasWorksheet: !filter.hasWorksheet })}
-          >
-            Nur mit Arbeitsblatt
-          </Chip>
-        </Section>
-
-        <Section title="Bewertung">
-          <div className="flex items-center gap-2">
-            <StarRating
-              value={filter.minRating}
-              onChange={(n) => update({ minRating: n })}
-              size={18}
-            />
-            <span className="text-xs text-slate-500">
-              {filter.minRating ? `ab ${filter.minRating} ★` : 'alle'}
-            </span>
-          </div>
-          <div className="mt-2 flex flex-wrap gap-1.5">
-            <Chip
-              active={filter.onlyUnrated}
-              onClick={() => update({ onlyUnrated: !filter.onlyUnrated })}
-            >
-              nur unbewertete
-            </Chip>
-            <Chip
-              active={filter.sortByRating}
-              onClick={() => update({ sortByRating: !filter.sortByRating })}
-            >
-              Beste zuerst
-            </Chip>
-          </div>
-        </Section>
-
-        {allAuthors.length > 0 && (
-          <Section title="Autor">
-            <div className="space-y-1">
-              {allAuthors.map((a) => (
-                <label
-                  key={a}
-                  className="flex cursor-pointer items-center gap-2 rounded px-1 py-0.5 text-sm text-slate-700 hover:bg-slate-50"
-                >
-                  <input
-                    type="checkbox"
-                    checked={filter.authors.includes(a)}
-                    onChange={() => toggle('authors', a)}
-                    className="accent-isa-blue-deep"
-                  />
-                  {a}
-                </label>
-              ))}
-            </div>
-          </Section>
-        )}
-
-        <Section title="Themenbereich">
-          <div className="max-h-56 space-y-1 overflow-y-auto pr-1">
-            {themes.map((t) => (
-              <label
-                key={t.id}
-                className="flex cursor-pointer items-center gap-2 rounded px-1 py-0.5 text-sm text-slate-700 hover:bg-slate-50"
-              >
-                <input
-                  type="checkbox"
-                  checked={filter.themes.includes(t.id)}
-                  onChange={() => toggle('themes', t.id)}
-                  className="accent-isa-blue-deep"
-                />
-                {t.label}
-              </label>
-            ))}
-          </div>
-        </Section>
-
-        <Section title="Altersstufe">
-          <div className="flex flex-wrap gap-1.5">
-            {ageLevels.map((a) => (
-              <Chip
-                key={a.id}
-                active={filter.ageLevels.includes(a.id)}
-                onClick={() => toggle('ageLevels', a.id)}
-              >
-                {a.label}
-              </Chip>
-            ))}
-          </div>
-        </Section>
-
-        <Section title="Typ">
-          <div className="flex flex-wrap gap-1.5">
-            {materialTypes.map((t) => (
+      <Section title="Format" active={filter.types.length}>
+        <div className="flex flex-wrap gap-1.5">
+          {materialTypes
+            .filter((t) => (totals.types.get(t.id) ?? 0) > 0 || filter.types.includes(t.id))
+            .map((t) => (
               <Chip
                 key={t.id}
-                active={filter.types.includes(t.id)}
-                onClick={() => toggle('types', t.id)}
+                on={filter.types.includes(t.id)}
+                n={counts.types.get(t.id) ?? 0}
+                onClick={() => update({ types: toggleIn(filter.types, t.id) })}
               >
                 {t.labelDe}
               </Chip>
             ))}
-          </div>
-        </Section>
+        </div>
+      </Section>
 
-        <Section title="Sozialform">
-          <div className="flex flex-wrap gap-1.5">
-            {participantModes.map((p) => (
-              <Chip
-                key={p.id}
-                active={filter.participantModes.includes(p.id)}
-                onClick={() => toggle('participantModes', p.id)}
-              >
-                {p.labelDe}
-              </Chip>
-            ))}
-          </div>
-        </Section>
+      <Section title="Sozialform" active={filter.participantModes.length}>
+        <div className="flex flex-wrap gap-1.5">
+          {participantModes.map((p) => (
+            <Chip
+              key={p.id}
+              on={filter.participantModes.includes(p.id)}
+              n={counts.participantModes.get(p.id) ?? 0}
+              onClick={() => update({ participantModes: toggleIn(filter.participantModes, p.id) })}
+            >
+              {p.labelDe}
+            </Chip>
+          ))}
+        </div>
+      </Section>
 
-        <Section title="ETEP-Stufe">
-          <div className="flex flex-wrap gap-1.5">
-            {etepStufen.map((e) => (
-              <Chip
-                key={e.id}
-                active={filter.etepStufen.includes(e.id)}
-                onClick={() => toggle('etepStufen', e.id)}
-              >
-                {e.label}
-              </Chip>
-            ))}
-          </div>
-        </Section>
+      <Section title="Arbeitsblatt" active={filter.hasWorksheet ? 1 : 0}>
+        <Chip
+          on={filter.hasWorksheet}
+          n={counts.hasWorksheet}
+          onClick={() => update({ hasWorksheet: !filter.hasWorksheet })}
+        >
+          Nur mit Arbeitsblatt
+        </Chip>
+      </Section>
 
-        <Section title="ELDiB-Bereich">
-          <div className="flex flex-wrap gap-1.5">
-            {eldibDomains.map((d) => (
-              <Chip
-                key={d.id}
-                active={filter.eldibDomains.includes(d.id)}
-                onClick={() => toggle('eldibDomains', d.id)}
-              >
-                {d.label}
-              </Chip>
-            ))}
-          </div>
-        </Section>
-
-        <Section title="ELDiB-Ziel">
-          {/* Bereich antippen zum Durchblättern (oder unten suchen) */}
-          <div className="mb-2 flex flex-wrap gap-1.5">
-            {eldibDomains.map((d) => (
-              <button
-                key={d.id}
-                type="button"
-                title={d.label}
-                onClick={() => {
-                  setGoalDomain(d.id)
-                  setGoalQuery('')
-                }}
-                className={`rounded-full px-2.5 py-1 text-xs font-medium ring-1 transition ${
-                  !goalQuery && goalDomain === d.id
-                    ? 'bg-isa-blue-deep text-white ring-isa-blue-deep'
-                    : 'bg-white text-slate-600 ring-slate-200 hover:ring-slate-300'
-                }`}
-              >
-                {d.id}
-              </button>
-            ))}
-          </div>
+      <Section title="ELDiB-Ziele" active={filter.eldibGoals.length + filter.eldibDomains.length}>
+        <div className="seg mb-2.5 w-full" role="tablist" aria-label="ELDiB-Bereich zum Durchblättern">
+          {eldibDomains.map((d) => (
+            <button
+              key={d.id}
+              type="button"
+              role="tab"
+              aria-selected={!q && goalDomain === d.id}
+              title={d.label}
+              style={domainStyle(d.id)}
+              onClick={() => {
+                setGoalDomain(d.id)
+                setGoalQuery('')
+              }}
+            >
+              <span className="dot" />
+              {d.id}
+            </button>
+          ))}
+        </div>
+        <label className="search search-sm mb-2">
+          <Icon name="search" className="ic h-4 w-4" />
+          <span className="sr-only">ELDiB-Ziel suchen</span>
           <input
             type="search"
             value={goalQuery}
             onChange={(e) => setGoalQuery(e.target.value)}
-            placeholder="Ziel suchen (alle Bereiche)…"
-            className="w-full rounded-lg border border-slate-200 px-2 py-1.5 text-sm outline-none focus:border-isa-blue-deep"
+            placeholder="Ziel oder Code, z. B. V-13"
           />
-          {filter.eldibGoals.length > 0 && (
-            <div className="mt-2 flex flex-wrap gap-1">
-              {filter.eldibGoals.map((id) => (
-                <button
-                  key={id}
-                  type="button"
-                  onClick={() => toggle('eldibGoals', id)}
-                  className="rounded-full bg-isa-blue-deep px-2 py-0.5 text-[11px] text-white"
-                >
-                  {id} ✕
-                </button>
-              ))}
-            </div>
-          )}
-          <div className="mt-2 max-h-52 space-y-0.5 overflow-y-auto pr-1">
-            {goalsToShow.map((g) => (
-              <label
-                key={g.id}
-                className="flex cursor-pointer items-center gap-2 rounded px-1 py-0.5 text-xs text-slate-700 hover:bg-slate-50"
+        </label>
+        {filter.eldibGoals.length > 0 && (
+          <div className="mb-2 flex flex-wrap items-center gap-1">
+            <span className="mr-0.5 text-[12px] font-semibold text-muted">Gewählt:</span>
+            {filter.eldibGoals.map((id) => (
+              <button
+                key={id}
+                type="button"
+                className="code inline-flex items-center gap-1"
+                style={domainStyle(id)}
+                title={`${id} ${eldibGoalById.get(id)?.label ?? ''} – entfernen`}
+                aria-label={`ELDiB-Ziel ${id} entfernen`}
+                onClick={() => update({ eldibGoals: filter.eldibGoals.filter((g) => g !== id) })}
               >
+                {id}
+                <Icon name="x" className="ic h-3 w-3" />
+              </button>
+            ))}
+          </div>
+        )}
+        <div
+          className="scroll-slim -mx-1 max-h-64 overflow-y-auto px-1"
+          role="group"
+          aria-label={q ? 'Gefundene ELDiB-Ziele' : `ELDiB-Ziele ${eldibDomains.find((d) => d.id === goalDomain)?.label}`}
+        >
+          {goalsToShow.map((g) => {
+            const n = counts.eldibGoals.get(g.id) ?? 0
+            const on = filter.eldibGoals.includes(g.id)
+            return (
+              <label key={g.id} className={`check-row ${n === 0 && !on ? 'zero' : ''}`}>
                 <input
                   type="checkbox"
-                  checked={filter.eldibGoals.includes(g.id)}
-                  onChange={() => toggle('eldibGoals', g.id)}
-                  className="accent-isa-blue-deep"
+                  checked={on}
+                  onChange={() => update({ eldibGoals: toggleIn(filter.eldibGoals, g.id) })}
                 />
-                <span className="font-medium">{g.label}</span>
-                <span className="text-slate-400">[{g.id}]</span>
+                <span className="code text-[11px]" style={domainStyle(g.id)}>
+                  {g.id}
+                </span>
+                <span className="min-w-0 truncate">{g.label}</span>
+                <span className="n">{n}</span>
               </label>
+            )
+          })}
+          {goalsToShow.length === 0 && <p className="px-1.5 py-2 text-[13px] text-muted">Kein Ziel gefunden.</p>}
+        </div>
+        <div className="mt-3">
+          <div className="mb-1.5 text-[12px] font-semibold text-muted">Ganzer Bereich</div>
+          <div className="flex flex-wrap gap-1.5">
+            {eldibDomains.map((d) => (
+              <Chip
+                key={d.id}
+                on={filter.eldibDomains.includes(d.id)}
+                n={counts.eldibDomains.get(d.id) ?? 0}
+                style={domainStyle(d.id)}
+                onClick={() => update({ eldibDomains: toggleIn(filter.eldibDomains, d.id) })}
+              >
+                <span className="dot" />
+                {d.label}
+              </Chip>
             ))}
-            {goalsToShow.length === 0 && (
-              <p className="px-1 py-2 text-xs text-slate-400">Kein Ziel gefunden.</p>
-            )}
           </div>
-        </Section>
+        </div>
+      </Section>
 
-        <Section title="Tags">
-          <input
-            type="search"
-            value={tagQuery}
-            onChange={(e) => setTagQuery(e.target.value)}
-            placeholder="Tag suchen…"
-            className="w-full rounded-lg border border-slate-200 px-2 py-1.5 text-sm outline-none focus:border-isa-blue-deep"
+      <Section title="Themenbereich" active={filter.themes.length}>
+        <div className="scroll-slim -mx-1.5 max-h-72 overflow-y-auto px-0" role="group" aria-label="Themenbereiche">
+          {themeOrder.map((t) => {
+            const n = counts.themes.get(t.id) ?? 0
+            const on = filter.themes.includes(t.id)
+            return (
+              <label key={t.id} className={`check-row ${n === 0 && !on ? 'zero' : ''}`}>
+                <input type="checkbox" checked={on} onChange={() => update({ themes: toggleIn(filter.themes, t.id) })} />
+                <span className="min-w-0 truncate">{t.label}</span>
+                <span className="n">{n}</span>
+              </label>
+            )
+          })}
+        </div>
+      </Section>
+
+      <Section title="ETEP-Stufe" active={filter.etepStufen.length} defaultOpen={false}>
+        <div className="flex flex-wrap gap-1.5">
+          {etepStufen.map((e) => (
+            <Chip
+              key={e.id}
+              on={filter.etepStufen.includes(e.id)}
+              n={counts.etepStufen.get(e.id) ?? 0}
+              title={e.description}
+              onClick={() => update({ etepStufen: toggleIn(filter.etepStufen, e.id) })}
+            >
+              {e.label}
+            </Chip>
+          ))}
+        </div>
+      </Section>
+
+      <Section
+        title="Meine Bewertung"
+        active={(filter.minRating > 0 ? 1 : 0) + (filter.onlyUnrated ? 1 : 0)}
+        defaultOpen={false}
+      >
+        <div className="flex flex-wrap items-center gap-2">
+          <span className="text-[13px] text-muted">Mindestens</span>
+          <StarRating
+            value={filter.minRating}
+            onChange={(n) => update({ minRating: n, onlyUnrated: false })}
+            size={18}
+            label="Mindestbewertung"
           />
-          {filter.tags.length > 0 && (
-            <div className="mt-2 flex flex-wrap gap-1">
-              {filter.tags.map((t) => (
-                <button
-                  key={t}
-                  type="button"
-                  onClick={() => toggle('tags', t)}
-                  className="rounded-full bg-isa-blue-deep px-2 py-0.5 text-[11px] text-white"
-                >
-                  {t} ✕
-                </button>
-              ))}
+        </div>
+        <div className="mt-2">
+          <Chip
+            on={filter.onlyUnrated}
+            n={counts.unrated}
+            onClick={() => update({ onlyUnrated: !filter.onlyUnrated, minRating: 0 })}
+          >
+            Nur unbewertete
+          </Chip>
+        </div>
+        <p className="mt-2 text-[12.5px] leading-snug text-muted">
+          Bewertungen bleiben nur in diesem Browser gespeichert.
+        </p>
+      </Section>
+
+      <Section title="Weitere Filter" active={moreCount} defaultOpen={false}>
+        <div className="space-y-4">
+          <div>
+            <div className="mb-1.5 text-[12.5px] font-semibold text-ink-2">Sprache</div>
+            <div className="flex flex-wrap gap-1.5">
+              {languages
+                .filter((l) => (totals.languages.get(l.id) ?? 0) > 0 || filter.languages.includes(l.id))
+                .map((l) => (
+                  <Chip
+                    key={l.id}
+                    on={filter.languages.includes(l.id)}
+                    n={counts.languages.get(l.id) ?? 0}
+                    onClick={() => update({ languages: toggleIn(filter.languages, l.id) })}
+                  >
+                    {l.labelDe}
+                  </Chip>
+                ))}
+            </div>
+          </div>
+          <div>
+            <div className="mb-1.5 text-[12.5px] font-semibold text-ink-2">Herkunft</div>
+            <div className="flex flex-wrap gap-1.5">
+              {sources
+                .filter((s) => (totals.sources.get(s.id) ?? 0) > 0 || filter.sources.includes(s.id))
+                .map((s) => (
+                  <Chip
+                    key={s.id}
+                    on={filter.sources.includes(s.id)}
+                    n={counts.sources.get(s.id) ?? 0}
+                    onClick={() => update({ sources: toggleIn(filter.sources, s.id) })}
+                  >
+                    {s.labelDe}
+                  </Chip>
+                ))}
+            </div>
+          </div>
+          {allAuthors.length > 0 && (
+            <div>
+              <div className="mb-1 text-[12.5px] font-semibold text-ink-2">Autor:in</div>
+              <div className="-mx-1.5">
+                {allAuthors.map((a) => {
+                  const n = counts.authors.get(a) ?? 0
+                  const on = filter.authors.includes(a)
+                  return (
+                    <label key={a} className={`check-row ${n === 0 && !on ? 'zero' : ''}`}>
+                      <input type="checkbox" checked={on} onChange={() => update({ authors: toggleIn(filter.authors, a) })} />
+                      <span className="min-w-0 truncate">{a}</span>
+                      <span className="n">{n}</span>
+                    </label>
+                  )
+                })}
+              </div>
             </div>
           )}
-          {filteredTags.length > 0 && (
-            <div className="mt-2 max-h-44 space-y-0.5 overflow-y-auto pr-1">
-              {filteredTags.slice(0, 60).map((t) => (
-                <label
-                  key={t}
-                  className="flex cursor-pointer items-center gap-2 rounded px-1 py-0.5 text-xs text-slate-700 hover:bg-slate-50"
-                >
-                  <input
-                    type="checkbox"
-                    checked={filter.tags.includes(t)}
-                    onChange={() => toggle('tags', t)}
-                    className="accent-isa-blue-deep"
-                  />
-                  {t}
-                </label>
-              ))}
+          <div>
+            <div className="mb-1.5 text-[12.5px] font-semibold text-ink-2">Schlagwort</div>
+            <label className="search search-sm mb-1.5">
+              <Icon name="search" className="ic h-4 w-4" />
+              <span className="sr-only">Schlagwort suchen</span>
+              <input
+                type="search"
+                value={tagQuery}
+                onChange={(e) => setTagQuery(e.target.value)}
+                placeholder={`${allTags.length} Schlagwörter durchsuchen`}
+              />
+            </label>
+            <div className="-mx-1.5">
+              {[...selectedTagsHidden, ...tagList].map((t) => {
+                const n = counts.tags.get(t) ?? 0
+                const on = filter.tags.includes(t)
+                return (
+                  <label key={t} className={`check-row ${n === 0 && !on ? 'zero' : ''}`}>
+                    <input type="checkbox" checked={on} onChange={() => update({ tags: toggleIn(filter.tags, t) })} />
+                    <span className="min-w-0 truncate">{t}</span>
+                    <span className="n">{n}</span>
+                  </label>
+                )
+              })}
+              {tq && tagList.length === 0 && <p className="px-1.5 py-1 text-[13px] text-muted">Kein Schlagwort gefunden.</p>}
             </div>
-          )}
-        </Section>
-
-        <Section title="Sprache">
-          <div className="flex flex-wrap gap-1.5">
-            {languages.map((l) => (
-              <Chip
-                key={l.id}
-                active={filter.languages.includes(l.id)}
-                onClick={() => toggle('languages', l.id)}
-              >
-                {l.labelDe}
-              </Chip>
-            ))}
           </div>
-        </Section>
-
-        <Section title="Quelle">
-          <div className="flex flex-wrap gap-1.5">
-            {sources.map((s) => (
-              <Chip
-                key={s.id}
-                active={filter.sources.includes(s.id)}
-                onClick={() => toggle('sources', s.id)}
-              >
-                {s.labelDe}
-              </Chip>
-            ))}
-          </div>
-        </Section>
-      </div>
-    </aside>
+        </div>
+      </Section>
+    </div>
   )
 }

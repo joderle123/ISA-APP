@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "tsc -b && vite build && npm run index",
+    "index": "tsx --tsconfig tsconfig.scripts.json scripts/toolbox-index.mjs",
     "lint": "oxlint",
     "preview": "vite preview"
   },
