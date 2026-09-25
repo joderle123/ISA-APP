@@ -120,5 +120,1751 @@
         "material": "Luftballon zum Zeigen, Buntstifte"
       }
     }
+  },
+  {
+    "id": "gefuehle-gesichter",
+    "bereich": "gefuehle",
+    "thema": "erkennen",
+    "stufen": ["C1"],
+    "sozialform": ["einzeln", "gruppe"],
+    "dauer": "20–30 Min.",
+    "eldib": ["K-10", "KOG-14", "KOG-17", "K-13"],
+    "schlagworte": ["Gefühle erkennen", "Gesichtsausdruck", "Gefühlswörter", "Memory", "Spielschule"],
+    "bild": "gesicht:froh",
+    "verwandt": ["mein-wetter-heute", "gefuehle-detektiv"],
+    "de": {
+      "titel": "Gefühle-Gesichter",
+      "anleitung": "Die Gesichter zusammen anschauen: „Zeig mir, wer traurig ist.“ Danach benennt das Kind die Gefühle selbst und macht sie nach. Die Karten auf festes Papier kopieren und Memory spielen.",
+      "bausteine": [
+        {"art": "aufgabe", "text": "Zeig auf das Gesicht. Mach es nach.", "symbole": ["zeigen", "sprechen"]},
+        {"art": "gefuehle", "gefuehle": ["froh", "traurig", "wuetend", "aengstlich"], "spalten": 4},
+        {"art": "aufgabe", "text": "Wann bist du froh? Wann bist du traurig? Male.", "symbole": ["malen"]},
+        {
+          "art": "spalten",
+          "links": [{"art": "feld", "label": "Da bin ich froh.", "hoehe": 2.75, "zeichnen": true}],
+          "rechts": [{"art": "feld", "label": "Da bin ich traurig.", "hoehe": 2.75, "zeichnen": true}]
+        },
+        {"art": "aufgabe", "text": "Schneide die Karten aus. Spiel Memory.", "symbole": ["schneiden"]},
+        {
+          "art": "karten",
+          "spalten": 4,
+          "hoehe": 108,
+          "karten": [
+            {"bild": "gesicht:froh", "titel": "froh"},
+            {"bild": "gesicht:traurig", "titel": "traurig"},
+            {"bild": "gesicht:wuetend", "titel": "wütend"},
+            {"bild": "gesicht:aengstlich", "titel": "ängstlich"},
+            {"bild": "gesicht:wuetend", "titel": "wütend"},
+            {"bild": "gesicht:froh", "titel": "froh"},
+            {"bild": "gesicht:aengstlich", "titel": "ängstlich"},
+            {"bild": "gesicht:traurig", "titel": "traurig"}
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder erkennen froh, traurig, wütend und ängstlich an Augen, Augenbrauen und Mund. Sie zeigen die Gefühle auf Nachfrage, benennen sie und verbinden sie mit eigenen Erlebnissen.",
+        "ablauf": [
+          "Einstieg im Sitzkreis (5 Min.): Die Lehrperson macht nacheinander ein frohes, trauriges, wütendes und ängstliches Gesicht. Frage: „Wie fühle ich mich? Woran siehst du das?“",
+          "Aufgabe 1: Zuerst zeigen lassen („Zeig mir: Wer ist wütend?“), dann benennen lassen. Auf Einzelheiten achten: Tränen, zusammengebissene Zähne, weit offene Augen.",
+          "Alle Gesichter nachmachen, am besten vor einem Handspiegel.",
+          "Aufgabe 2: Die Kinder malen je eine Situation. Nachfragen und die Worte des Kindes neben das Bild schreiben.",
+          "Aufgabe 3: Karten ausschneiden (Erwachsene helfen), zu zweit oder zu dritt Memory spielen. Regel: Wer ein Paar findet, sagt das Wort und macht das Gesicht nach."
+        ],
+        "hintergrund": "Gefühle am Gesicht zu erkennen und mit einem Wort zu benennen, gehört zu den ersten Bausteinen emotionaler Kompetenz. Im Vorschulalter wird Freude meist zuerst sicher erkannt, Traurigkeit und Wut folgen; Angst wird am längsten mit anderen Gefühlen verwechselt (Denham, 1998). Kinder, die Gefühle erkennen und benennen können, drücken eigene Gefühle eher mit Worten aus und kommen im Spiel mit Gleichaltrigen besser zurecht (Petermann & Wiedebusch, 2016). Der Gefühlswortschatz wächst vor allem im Gespräch: wenn Erwachsene Gefühle im Alltag benennen und mit Situationen verbinden. Das Memory wiederholt die vier Wörter spielerisch und oft.",
+        "quellen": [
+          "Denham, S. A. (1998). Emotional Development in Young Children. New York: Guilford.",
+          "Petermann, F. & Wiedebusch, S. (2016). Emotionale Kompetenz bei Kindern (3. Aufl.). Göttingen: Hogrefe."
+        ],
+        "differenzierung": {
+          "leichter": "Mit zwei Gefühlen beginnen (froh und traurig). Memory offen spielen: Alle Karten liegen aufgedeckt, das Kind sucht die Paare.",
+          "schwerer": "Beim Memory zu jedem Paar erzählen: „Ich war wütend, als …“ Weitere Gefühle ergänzen, z. B. überrascht oder müde."
+        },
+        "impulse": ["Woran siehst du, dass jemand traurig ist?", "Was macht dich froh – und was macht dich wütend?", "Was hilft dir, wenn du Angst hast?"],
+        "tipps": [
+          "Gefühle im Alltag beiläufig benennen: „Du strahlst ja – bist du froh?“ So lernen Kinder die Wörter dort, wo sie sie brauchen.",
+          "Die Karten weiter nutzen: Ein Kind zieht eine Karte und zeigt das Gefühl ohne Worte, die anderen raten."
+        ],
+        "achtung": "Wenn ein Kind beim Malen von belastenden Erlebnissen erzählt: ruhig zuhören, nicht nachbohren und die zuständige Leitung (Responsable) informieren.",
+        "material": "Buntstifte, Schere, festes Papier für die Karten; optional ein Handspiegel"
+      }
+    }
+  },
+  {
+    "id": "gefuehle-detektiv",
+    "bereich": "gefuehle",
+    "thema": "erkennen",
+    "stufen": ["C2"],
+    "sozialform": ["einzeln", "gruppe"],
+    "dauer": "30 Min.",
+    "eldib": ["K-21", "KOG-38", "K-13"],
+    "schlagworte": ["Gefühle erkennen", "Körpersprache", "Stimme", "Situationen", "Pantomime"],
+    "bild": "icon:search",
+    "verwandt": ["gefuehle-gesichter", "gefuehle-viele-namen"],
+    "de": {
+      "titel": "Gefühle-Detektiv",
+      "untertitel": "Gefühle kann man sehen und hören. Detektive achten auf Gesicht, Körper und Stimme.",
+      "bausteine": [
+        {"art": "aufgabe", "text": "Woran erkennst du Wut? Kreuze an.", "hinweis": "Drei Hinweise stimmen.", "symbole": ["lesen", "ankreuzen"]},
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:2",
+          "links": [{"art": "bild", "bild": "figur:sami:wuetend:verschraenkt", "groesse": "m"}],
+          "rechts": [
+            {
+              "art": "ankreuzen",
+              "items": [
+                "Die Augenbrauen gehen nach unten.",
+                "Der Mund lacht.",
+                "Die Hände werden zu Fäusten.",
+                "Der Körper wird ganz schlapp.",
+                "Die Stimme wird laut."
+              ]
+            }
+          ]
+        },
+        {"art": "aufgabe", "text": "Was ist passiert? Welches Gefühl passt? Verbinde.", "symbole": ["lesen", "verbinden"]},
+        {
+          "art": "zuordnen",
+          "titel": ["Was ist passiert?", "Gefühl"],
+          "links": ["Jemand schubst Pol.", "Emma hört ein Gewitter.", "Aylin hat Geburtstag.", "Nora vermisst ihre Oma."],
+          "rechts": ["froh", "traurig", "wütend", "ängstlich"]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Spielt zu zweit: Zeig ein Gefühl ohne Worte. Dein Partner rät.",
+          "hinweis": "Nur mit Gesicht und Körper. Dann tauscht ihr.",
+          "symbole": ["partner", "zeigen"]
+        },
+        {"art": "gefuehle", "gefuehle": ["froh", "traurig", "wuetend", "aengstlich", "ueberrascht", "muede"], "spalten": 6},
+        {"art": "rueckblick"}
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder erkennen Gefühle anderer an Gesicht, Körper und Stimme sowie an der Situation. Sie ordnen typischen Alltagssituationen ein passendes Gefühl zu und begründen es.",
+        "ablauf": [
+          "Einstieg (5 Min.): Einen Satz („Ich habe ein Päckchen bekommen.“) froh, wütend und ängstlich sagen. Frage: „Woran habt ihr gemerkt, wie ich mich fühle?“ Antworten nach Gesicht, Körper und Stimme ordnen.",
+          "Aufgabe 1: Sätze vorlesen, die Kinder kreuzen an. Die drei richtigen Hinweise gemeinsam vormachen.",
+          "Aufgabe 2: Situationen lesen und verbinden. Nachfragen: „Könnte man sich auch anders fühlen?“ Mehrere Gefühle zugleich sind möglich.",
+          "Aufgabe 3: Pantomime zu zweit (5–10 Min.). Wer rät, nennt einen Hinweis: „Ich glaube, du bist traurig, weil dein Kopf hängt.“",
+          "Abschluss: Eine Detektiv-Regel festhalten: „Erst genau hinschauen, dann nachfragen: Bist du traurig?“"
+        ],
+        "hintergrund": "Um Gefühle anderer zu verstehen, nutzen Kinder zwei Arten von Hinweisen: den Ausdruck (Gesicht, Körperhaltung, Stimme) und die Situation (Was ist passiert?). Saarni (1999) zählt die Fähigkeit, beide Hinweise zu deuten, zu den Kernfertigkeiten emotionaler Kompetenz. Im Grundschulalter lernen Kinder zunehmend, dass dieselbe Situation bei verschiedenen Menschen unterschiedliche Gefühle auslösen kann und dass Ausdruck und Gefühl nicht immer übereinstimmen. Programme wie PATHS üben das Erkennen von Gefühlen mit Bildern, Rollenspiel und Gefühlswörtern; sie verbessern nachweislich den Gefühlswortschatz und das Verständnis von Gefühlen (Greenberg et al., 1995).",
+        "quellen": [
+          "Saarni, C. (1999). The Development of Emotional Competence. New York: Guilford.",
+          "Greenberg, M. T., Kusché, C. A., Cook, E. T. & Quamma, J. P. (1995). Promoting emotional competence in school-aged children: The effects of the PATHS curriculum. Development and Psychopathology, 7(1), 117–136."
+        ],
+        "differenzierung": {
+          "leichter": "Aufgabe 2 mündlich lösen: Die Lehrperson liest vor, das Kind zeigt auf das passende Gesicht in Aufgabe 3.",
+          "schwerer": "Eigene Detektiv-Fälle erfinden: Ein Kind beschreibt eine Situation, die anderen nennen das Gefühl und begründen es."
+        },
+        "impulse": [
+          "Woran merkst du, dass ein Freund traurig ist?",
+          "Kann man lachen und trotzdem traurig sein?",
+          "Was kannst du tun, wenn du nicht sicher bist, wie es jemandem geht?"
+        ],
+        "tipps": [
+          "Beim Vorspielen niemanden vorführen: Wer nicht vorspielen möchte, darf raten.",
+          "Die Frage „Woran hast du das erkannt?“ im Alltag wiederholen, etwa beim Vorlesen von Bilderbüchern."
+        ],
+        "achtung": "Fällt es einem Kind auffallend schwer, Gefühle anderer zu erkennen: mehr Übung mit Bildern und Vorbildern anbieten und bei anhaltenden Schwierigkeiten im Team beraten.",
+        "material": "Stifte; optional ein Spiegel für Aufgabe 3"
+      }
+    }
+  },
+  {
+    "id": "gefuehle-viele-namen",
+    "bereich": "gefuehle",
+    "thema": "erkennen",
+    "stufen": ["C3", "C4"],
+    "sozialform": ["einzeln", "gruppe"],
+    "dauer": "40–45 Min.",
+    "eldib": ["K-26", "K-16", "K-15"],
+    "schlagworte": ["Gefühlswörter", "Gefühlsstärke", "Skala 0–10", "Körpersignale", "Wortschatz"],
+    "bild": "icon:alphabet-latin",
+    "verwandt": ["gefuehle-detektiv", "gefuehle-genau-benennen", "meine-gefuehlswoche"],
+    "de": {
+      "titel": "Gefühle haben viele Namen",
+      "untertitel": "Wütend ist nicht gleich wütend. Wer das genaue Wort findet, kann besser sagen, was los ist.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Gefühle gibt es in verschiedenen Stärken. Ordne die Wörter aus der Wörterkiste in die Tabelle ein.",
+          "hinweis": "Die Familien heißen Angst, Traurigkeit und Freude. Die erste Zeile ist ein Beispiel.",
+          "symbole": ["lesen", "schreiben"]
+        },
+        {
+          "art": "wortspeicher",
+          "titel": "Wörterkiste",
+          "items": ["panisch", "zufrieden", "traurig", "unsicher", "überglücklich", "enttäuscht", "ängstlich", "verzweifelt", "froh"]
+        },
+        {
+          "art": "tabelle",
+          "spalten": ["Gefühlsfamilie", "ein bisschen", "mittel", "sehr stark"],
+          "beispiel": ["Wut", "genervt", "sauer", "wütend"],
+          "zeilen": 3
+        },
+        {
+          "art": "aufgabe",
+          "text": "Denk an drei Situationen aus den letzten Tagen. Welches Wort passt genau? Wie stark war das Gefühl?",
+          "hinweis": "0 heißt: gar nicht. 10 heißt: so stark wie noch nie.",
+          "symbole": ["nachdenken", "schreiben"]
+        },
+        {
+          "art": "tabelle",
+          "spalten": ["Was ist passiert?", "Gefühlswort", "Stärke (0–10)"],
+          "breiten": [3, 1.4, 1.1],
+          "beispiel": ["In der Pause wurde ich beim Fußball als Letzter gewählt.", "enttäuscht", "6"],
+          "zeilen": 3
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wo spürst du diese Gefühle im Körper? Male mit den passenden Farben.",
+          "hinweis": "Zum Beispiel: Herzklopfen, heißer Kopf, Kloß im Hals, Kribbeln im Bauch, weiche Knie.",
+          "symbole": ["malen"]
+        },
+        {
+          "art": "koerper",
+          "legende": [
+            {"farbe": "rot", "text": "Wut"},
+            {"farbe": "lila", "text": "Angst"},
+            {"farbe": "blau", "text": "Traurigkeit"},
+            {"farbe": "gelb", "text": "Freude"}
+          ]
+        },
+        {"art": "aufgabe", "text": "Sag es genau. Ergänze die Sätze mit einem passenden Gefühlswort.", "symbole": ["schreiben"]},
+        {
+          "art": "satzanfaenge",
+          "items": ["Wenn mich jemand auslacht, bin ich …", "Vor einem Test bin ich …", "Wenn ich etwas Schweres geschafft habe, bin ich …"]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "text": "Gefühle haben viele Namen und verschiedene Stärken. Oft sind zwei Gefühle gleichzeitig da: Vor dem Schulausflug ist man vielleicht aufgeregt und froh."
+        },
+        {"art": "rueckblick"}
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder unterscheiden Gefühle nach ihrer Stärke, ordnen Gefühlswörter vier Gefühlsfamilien zu und schätzen eigene Gefühle auf einer Skala von 0 bis 10 ein. Sie verbinden Gefühle mit Körpersignalen.",
+        "ablauf": [
+          "Einstieg (5 Min.): An die Tafel schreiben: „Mir geht es schlecht.“ Frage: „Was könnte das alles heißen?“ Die Antworten zeigen, wie ungenau der Satz ist.",
+          "Aufgabe 1 in Partnerarbeit, danach im Plenum vergleichen. Abweichende Reihenfolgen begründen lassen.",
+          "Die Skala einführen: Mit dem Arm zeigen lassen, wie stark ein Gefühl ist (Arm unten = 0, ganz oben = 10).",
+          "Aufgabe 2 und 3 in Einzelarbeit. Wer mag, stellt seine Körperkarte vor; niemand muss private Situationen vorlesen.",
+          "Aufgabe 4 gemeinsam besprechen. Neue Wörter auf einem Plakat „Gefühlswörter“ sammeln und aufhängen."
+        ],
+        "hintergrund": "Ein differenzierter Gefühlswortschatz ist mehr als Sprachförderung: Wer zwischen ‚genervt‘ und ‚wütend‘ oder ‚unsicher‘ und ‚panisch‘ unterscheiden kann, versteht besser, was in ihm vorgeht, und kann gezielter reagieren. Brackett (2019) beschreibt das genaue Benennen deshalb als Schlüsselschritt auf dem Weg zur Regulation. Im Grundschulalter wächst der Gefühlswortschatz stark; Kinder lernen, dass Gefühle unterschiedlich stark sein und gleichzeitig auftreten können (Petermann & Wiedebusch, 2016). Die Skala von 0 bis 10 macht die Stärke sichtbar und schafft eine gemeinsame Sprache: „Wie stark ist es gerade – eher 3 oder eher 8?“ Die Körperkarte verbindet Gefühle mit Körpersignalen, die oft früher spürbar sind als der Gedanke „Ich bin wütend“.",
+        "quellen": [
+          "Brackett, M. A. (2019). Permission to Feel. New York: Celadon.",
+          "Petermann, F. & Wiedebusch, S. (2016). Emotionale Kompetenz bei Kindern (3. Aufl.). Göttingen: Hogrefe."
+        ],
+        "differenzierung": {
+          "leichter": "Nur die Wut- und die Freude-Familie bearbeiten; die Wörter als Kärtchen zum Legen anbieten.",
+          "schwerer": "Jede Familie um ein Wort erweitern (z. B. zornig, nervös, bedrückt, erleichtert) und die Einordnung begründen."
+        },
+        "impulse": [
+          "Welches Gefühl kennst du in allen drei Stärken?",
+          "Woran merkst du, dass aus ‚genervt‘ langsam ‚wütend‘ wird?",
+          "Welches Wort passt zu deinem Gefühl gerade jetzt?"
+        ],
+        "tipps": [
+          "Das Plakat im Morgenkreis nutzen: „Welches Wort passt heute zu dir?“",
+          "Unterschiedliche Einschätzungen stehen lassen: Für manche ist ‚sauer‘ stärker als ‚wütend‘. Wichtig ist, dass das Kind seine Wahl begründen kann."
+        ],
+        "achtung": "Zeigt ein Kind bei den Situationen oder der Körperkarte starke, anhaltende Traurigkeit oder Angst: im Einzelgespräch nachfragen und bei Bedarf die zuständige Leitung (Responsable) einbeziehen.",
+        "material": "Buntstifte (rot, lila, blau, gelb); optional Wortkärtchen"
+      }
+    }
+  },
+  {
+    "id": "gefuehle-genau-benennen",
+    "bereich": "gefuehle",
+    "thema": "erkennen",
+    "stufen": ["ES"],
+    "sozialform": ["einzeln", "gruppe"],
+    "dauer": "45 Min.",
+    "eldib": ["K-26", "K-29", "SOZ-40"],
+    "schlagworte": ["Gefühlswortschatz", "Energie", "Angenehmheit", "Selbstbeobachtung", "Check-in"],
+    "bild": "icon:palette",
+    "verwandt": ["gefuehle-viele-namen", "was-meine-stimmung-beeinflusst"],
+    "de": {
+      "titel": "Gefühle genauer benennen",
+      "untertitel": "„Gut“ oder „schlecht“ sagt wenig. Wer genauer benennen kann, was er fühlt, versteht sich besser – und kann gezielter handeln.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Zwei Fragen ordnen jedes Gefühl",
+          "text": "Wie viel Energie spüre ich – viel oder wenig? Und wie angenehm fühlt es sich an? Aus den beiden Antworten ergeben sich vier Felder. Kein Feld ist „falsch“: Jedes Gefühl liefert eine Information.",
+          "punkte": [
+            "Rot: viel Energie, unangenehm – z. B. wütend, gestresst",
+            "Gelb: viel Energie, angenehm – z. B. fröhlich, stolz",
+            "Blau: wenig Energie, unangenehm – z. B. traurig, erschöpft",
+            "Grün: wenig Energie, angenehm – z. B. ruhig, zufrieden"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ordne die Gefühlswörter in die vier Felder ein. Ergänze in jedem Feld ein eigenes Wort.",
+          "hinweis": "Nicht immer ist die Einordnung eindeutig. Entscheidend ist, wie sich das Gefühl für dich anfühlt."
+        },
+        {
+          "art": "wortspeicher",
+          "items": [
+            "gereizt",
+            "entspannt",
+            "motiviert",
+            "enttäuscht",
+            "panisch",
+            "erleichtert",
+            "neugierig",
+            "lustlos",
+            "angespannt",
+            "geborgen",
+            "begeistert",
+            "einsam",
+            "frustriert",
+            "gelassen",
+            "übermütig",
+            "niedergeschlagen"
+          ]
+        },
+        {
+          "art": "spalten",
+          "links": [
+            {"art": "feld", "label": "Rot – viel Energie, unangenehm", "hoehe": 4.8},
+            {"art": "feld", "label": "Blau – wenig Energie, unangenehm", "hoehe": 4.8}
+          ],
+          "rechts": [
+            {"art": "feld", "label": "Gelb – viel Energie, angenehm", "hoehe": 4.8},
+            {"art": "feld", "label": "Grün – wenig Energie, angenehm", "hoehe": 4.8}
+          ]
+        },
+        {"art": "aufgabe", "text": "Und jetzt du: Welches Wort beschreibt dein Gefühl gerade am genauesten?"},
+        {"art": "satzanfaenge", "items": ["Gerade fühle ich mich …", "Das gehört ins Feld …, weil …"]},
+        {
+          "art": "aufgabe",
+          "text": "Beobachte eine Woche lang: Notiere jeden Tag einen Moment und benenne das Gefühl so genau wie möglich.",
+          "hinweis": "Am besten immer zur gleichen Zeit, zum Beispiel abends. Die Wörter von oben helfen dir."
+        },
+        {
+          "art": "tabelle",
+          "spalten": ["Tag", "Moment", "Gefühlswort", "Feld"],
+          "breiten": [0.6, 3, 1.6, 1],
+          "beispiel": ["Mo", "Referat gehalten: vorher Herzklopfen, danach Pause mit Freunden", "angespannt, dann erleichtert", "Rot, dann Grün"],
+          "zeilen": 6
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Was in welchem Feld helfen kann",
+          "punkte": [
+            "Rot: den Körper herunterfahren – langsam ausatmen, kurz rausgehen, Wasser trinken.",
+            "Blau: in Bewegung kommen – ein paar Schritte gehen, jemandem schreiben, eine kleine Sache erledigen.",
+            "Gelb und Grün: nutzen – Gelb für neue Ideen, Grün zum Lernen und Nachdenken."
+          ]
+        },
+        {"art": "aufgabe", "text": "Schau auf deine Woche zurück."},
+        {
+          "art": "satzanfaenge",
+          "items": ["Am häufigsten war ich im Feld …", "In das rote Feld bringt mich oft …", "Aus dem roten oder blauen Feld hilft mir …"],
+          "linien": 2
+        },
+        {
+          "art": "skala",
+          "frage": "Wie leicht fällt es dir jetzt, deine Gefühle genau zu benennen?",
+          "von": "sehr schwer",
+          "bis": "sehr leicht",
+          "stufen": 11
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen ordnen Gefühle nach Energie und Angenehmheit in vier Felder ein, erweitern ihren Gefühlswortschatz und beobachten eine Woche lang ihre häufigsten Gefühle und deren Auslöser.",
+        "ablauf": [
+          "Einstieg (5 Min.): „Wie geht’s?“ – „Gut.“ Frage: „Was kann ‚gut‘ alles bedeuten?“ Antworten sammeln (entspannt, motiviert, erleichtert …).",
+          "Info-Kasten lesen; die vier Felder als Kreuz an die Tafel zeichnen (Energie senkrecht, Angenehmheit waagrecht).",
+          "Aufgabe 1 zu zweit (10 Min.), strittige Wörter im Plenum klären. Aufgabe 2 still und einzeln.",
+          "Aufgabe 3 als Wochenaufgabe (eine Woche lang): täglich zwei Minuten, z. B. zu Beginn der ersten Stunde.",
+          "Nach einer Woche Aufgabe 4 auswerten; freiwillig in Kleingruppen austauschen: Was hilft, von Rot nach Grün zu kommen?"
+        ],
+        "hintergrund": "Das Modell der vier Farbfelder stammt aus dem Yale Center for Emotional Intelligence (Brackett, 2019): Gefühle werden auf zwei Dimensionen verortet – Energie und Angenehmheit. So entsteht eine Landkarte, auf der sich auch ungewohnte Gefühlswörter einordnen lassen. Brackett betont, dass kein Feld „falsch“ ist: Jedes Gefühl liefert Information, und unterschiedliche Stimmungen eignen sich für unterschiedliche Aufgaben. Wer Gefühle genau benennt, kann gezielter wählen, was jetzt hilft. Schulische Programme, die solche Fertigkeiten systematisch üben, verbessern nachweislich emotionale Kompetenzen, Verhalten und Schulleistungen (Durlak et al., 2011).",
+        "quellen": [
+          "Brackett, M. A. (2019). Permission to Feel. New York: Celadon.",
+          "Durlak, J. A., Weissberg, R. P., Dymnicki, A. B., Taylor, R. D. & Schellinger, K. B. (2011). The impact of enhancing students’ social and emotional learning: A meta-analysis of school-based universal interventions. Child Development, 82(1), 405–432."
+        ],
+        "differenzierung": {
+          "leichter": "Nur acht Wörter einordnen (zwei pro Feld); in der Woche drei Einträge statt sieben.",
+          "schwerer": "Für jedes Feld überlegen: Wofür ist dieses Gefühl nützlich? Was gelingt darin besonders gut?"
+        },
+        "impulse": ["In welchem Feld bist du in der Schule am häufigsten?", "Welches Wort aus der Liste hast du noch nie für dich benutzt?"],
+        "tipps": [
+          "Die vier Felder als Plakat aufhängen und für kurze Check-ins nutzen: „Zeigt, wo ihr gerade seid.“",
+          "Grenzfälle beim Einordnen sind gewollt: Die Diskussion darüber schärft die Wahrnehmung."
+        ],
+        "achtung": "Liegen die Einträge über längere Zeit fast nur im blauen oder roten Feld oder deuten sie auf Hoffnungslosigkeit hin: das Gespräch unter vier Augen suchen und die zuständige Leitung (Responsable) bzw. den SePAS einbeziehen.",
+        "material": "Optional: Plakat mit den vier Farbfeldern, farbige Stifte"
+      }
+    },
+    "fr": {
+      "titel": "Nommer ses émotions avec précision",
+      "untertitel": "Dire « bien » ou « mal » en dit peu. Qui nomme précisément ce qu’il ressent se comprend mieux – et peut agir de façon plus ciblée.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Deux questions pour situer chaque émotion",
+          "text": "Combien d’énergie est-ce que je ressens – beaucoup ou peu ? Et est-ce agréable ou désagréable ? Les deux réponses donnent quatre zones. Aucune zone n’est « mauvaise » : chaque émotion apporte une information.",
+          "punkte": [
+            "Rouge : beaucoup d’énergie, désagréable – p. ex. colère, stress",
+            "Jaune : beaucoup d’énergie, agréable – p. ex. joie, fierté",
+            "Bleu : peu d’énergie, désagréable – p. ex. tristesse, épuisement",
+            "Vert : peu d’énergie, agréable – p. ex. calme, contentement"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Classe les mots dans les quatre zones. Ajoute un mot à toi dans chaque zone.",
+          "hinweis": "Le classement n’est pas toujours évident. Ce qui compte, c’est ce que tu ressens toi-même."
+        },
+        {
+          "art": "wortspeicher",
+          "items": [
+            "irritation",
+            "détente",
+            "motivation",
+            "déception",
+            "panique",
+            "soulagement",
+            "curiosité",
+            "lassitude",
+            "tension",
+            "sécurité",
+            "enthousiasme",
+            "solitude",
+            "frustration",
+            "sérénité",
+            "exubérance",
+            "abattement"
+          ]
+        },
+        {
+          "art": "spalten",
+          "links": [
+            {"art": "feld", "label": "Rouge – beaucoup d’énergie, désagréable", "hoehe": 4.8},
+            {"art": "feld", "label": "Bleu – peu d’énergie, désagréable", "hoehe": 4.8}
+          ],
+          "rechts": [
+            {"art": "feld", "label": "Jaune – beaucoup d’énergie, agréable", "hoehe": 4.8},
+            {"art": "feld", "label": "Vert – peu d’énergie, agréable", "hoehe": 4.8}
+          ]
+        },
+        {"art": "aufgabe", "text": "Et toi, maintenant ? Quel mot décrit le plus précisément ce que tu ressens ?"},
+        {"art": "satzanfaenge", "items": ["En ce moment, je ressens …", "C’est la zone …, parce que …"]},
+        {
+          "art": "aufgabe",
+          "text": "Observe-toi pendant une semaine : note chaque jour un moment et nomme l’émotion aussi précisément que possible.",
+          "hinweis": "Idéalement toujours au même moment, par exemple le soir. Les mots ci-dessus peuvent t’aider."
+        },
+        {
+          "art": "tabelle",
+          "spalten": ["Jour", "Moment", "Émotion", "Zone"],
+          "breiten": [0.6, 3, 1.6, 1],
+          "beispiel": ["Lu", "Exposé en classe : cœur qui bat avant, pause avec des amis après", "tension, puis soulagement", "rouge, puis vert"],
+          "zeilen": 6
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Ce qui peut aider dans chaque zone",
+          "punkte": [
+            "Rouge : faire redescendre le corps – expirer lentement, sortir un instant, boire de l’eau.",
+            "Bleu : se remettre en mouvement – marcher un peu, écrire à quelqu’un, régler une petite chose.",
+            "Jaune et vert : en profiter – le jaune pour trouver des idées, le vert pour apprendre et réfléchir."
+          ]
+        },
+        {"art": "aufgabe", "text": "Fais le bilan de ta semaine."},
+        {
+          "art": "satzanfaenge",
+          "items": ["J’étais le plus souvent dans la zone …", "Ce qui me fait passer dans le rouge : …", "Ce qui m’aide à sortir du rouge ou du bleu : …"],
+          "linien": 2
+        },
+        {
+          "art": "skala",
+          "frage": "Est-ce facile pour toi, maintenant, de nommer précisément tes émotions ?",
+          "von": "très difficile",
+          "bis": "très facile",
+          "stufen": 11
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes situent leurs émotions dans quatre zones selon l’énergie et le caractère agréable, enrichissent leur vocabulaire émotionnel et observent pendant une semaine leurs émotions fréquentes et ce qui les déclenche.",
+        "ablauf": [
+          "Entrée en matière (5 min) : « Ça va ? » – « Bien. » Question : « Que peut vouloir dire “bien” ? » Recueillir les réponses (détendu, motivé, soulagé …).",
+          "Lire l’encadré ; dessiner au tableau les quatre zones sous forme de croix (énergie à la verticale, caractère agréable à l’horizontale).",
+          "Exercice 1 à deux (10 min), clarifier en plénière les mots qui font débat. Exercice 2 en silence, individuellement.",
+          "Exercice 3 sur une semaine : deux minutes par jour, par exemple au début de la première heure.",
+          "Après une semaine, exploiter l’exercice 4 ; échange volontaire en petits groupes : qu’est-ce qui aide à passer du rouge au vert ?"
+        ],
+        "hintergrund": "Le modèle des quatre zones de couleur a été développé au Yale Center for Emotional Intelligence (Brackett, 2019) : les émotions sont situées sur deux dimensions – l’énergie et le caractère agréable. On obtient ainsi une carte sur laquelle on peut placer aussi des mots moins familiers. Brackett insiste sur le fait qu’aucune zone n’est « mauvaise » : chaque émotion apporte une information, et des états différents conviennent à des tâches différentes. Qui nomme précisément ses émotions choisit plus facilement ce qui l’aide sur le moment. Les programmes scolaires qui entraînent ces compétences de façon systématique améliorent de manière démontrée les compétences émotionnelles, le comportement et les résultats scolaires (Durlak et al., 2011).",
+        "quellen": [
+          "Brackett, M. A. (2019). Permission to Feel. New York: Celadon.",
+          "Durlak, J. A., Weissberg, R. P., Dymnicki, A. B., Taylor, R. D. & Schellinger, K. B. (2011). The impact of enhancing students’ social and emotional learning: A meta-analysis of school-based universal interventions. Child Development, 82(1), 405–432."
+        ],
+        "differenzierung": {
+          "leichter": "Classer seulement huit mots (deux par zone) ; pendant la semaine, trois entrées au lieu de sept.",
+          "schwerer": "Pour chaque zone, réfléchir à l’utilité de cette émotion et à ce qui y réussit particulièrement bien."
+        },
+        "impulse": ["Dans quelle zone es-tu le plus souvent au lycée ?", "Quel mot de la liste n’as-tu encore jamais utilisé pour toi ?"],
+        "tipps": [
+          "Afficher les quatre zones et les utiliser pour de courts check-ins : « Montrez où vous en êtes. »",
+          "Les cas limites sont bienvenus : en discuter affine la perception."
+        ],
+        "achtung": "Si, sur une longue période, les entrées se situent presque uniquement dans le bleu ou le rouge, ou laissent entrevoir du désespoir : chercher un entretien individuel et impliquer la direction compétente (responsable) ou le SePAS.",
+        "material": "En option : affiche des quatre zones, crayons de couleur"
+      }
+    }
+  },
+  {
+    "id": "mein-wetter-heute",
+    "bereich": "gefuehle",
+    "thema": "stimmung",
+    "stufen": ["C1"],
+    "sozialform": ["einzeln", "gruppe"],
+    "dauer": "10–15 Min.",
+    "eldib": ["K-12", "V-8", "SOZ-9"],
+    "schlagworte": ["Check-in", "Stimmung", "Wetter", "Ritual", "Bedürfnisse", "Spielschule"],
+    "bild": "icon:sun",
+    "verwandt": ["wie-geht-es-mir", "gefuehle-gesichter"],
+    "de": {
+      "titel": "Mein Wetter heute",
+      "anleitung": "Die Wetterbilder zusammen anschauen: Wie fühlt sich Sonne an, wie Gewitter? Das Kind zeigt oder kreist sein Wetter ein und erzählt, wenn es mag. Danach wählt es, was ihm heute guttut.",
+      "bausteine": [
+        {"art": "aufgabe", "text": "Wie ist dein Wetter heute? Kreise ein.", "symbole": ["zeigen", "einkreisen"]},
+        {
+          "art": "bilder",
+          "modus": "einkreisen",
+          "spalten": 3,
+          "bilder": [
+            {"bild": "icon:sun", "text": "Sonne"},
+            {"bild": "icon:cloud", "text": "Wolken"},
+            {"bild": "icon:cloud-rain", "text": "Regen"},
+            {"bild": "icon:cloud-storm", "text": "Gewitter"},
+            {"bild": "icon:wind", "text": "Wind"},
+            {"bild": "icon:rainbow", "text": "Regenbogen"}
+          ]
+        },
+        {"art": "aufgabe", "text": "Was brauchst du heute? Kreise ein.", "symbole": ["einkreisen"]},
+        {
+          "art": "bilder",
+          "modus": "einkreisen",
+          "spalten": 4,
+          "bilder": [
+            {"bild": "icon:heart", "text": "kuscheln"},
+            {"bild": "icon:message-circle", "text": "erzählen"},
+            {"bild": "icon:pillow", "text": "ausruhen"},
+            {"bild": "icon:run", "text": "toben"}
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder zeigen ihre Stimmung mit einem Wetterbild und sagen, was ihnen gerade guttut. Als tägliches Ritual erleben sie, dass sich Gefühle verändern.",
+        "ablauf": [
+          "Einstieg im Sitzkreis: Die Wetterbilder zeigen. Fragen: „Wie fühlt es sich an, wenn die Sonne scheint? Und bei Gewitter?“ Das Wetter mit dem Körper nachmachen (Sonne: Arme weit, Regen: mit den Fingern trommeln, Gewitter: stampfen, Wind: hin und her wiegen).",
+          "Aufgabe 1: Jedes Kind zeigt oder kreist sein Wetter ein. Wer mag, erzählt, warum. Nicht nachbohren.",
+          "Aufgabe 2: Gemeinsam überlegen, was bei welchem Wetter hilft. Das Kind kreist ein, was es heute braucht; die Lehrperson greift es auf, wo es möglich ist.",
+          "Als Ritual einführen: Die Wetterbilder vergrößert aufhängen. Morgens hängt jedes Kind eine Klammer mit seinem Namen an sein Wetter. Mittags fragen: „Hat sich dein Wetter verändert?“"
+        ],
+        "hintergrund": "Junge Kinder können innere Zustände noch schwer in Worte fassen. Bilder aus ihrer Erfahrungswelt – Sonne, Regen, Gewitter – schlagen eine Brücke: Sie sind konkret, wertfrei und erlauben es, auch schwierige Gefühle zu zeigen, ohne sie genau benennen zu müssen. Visuelle Hilfen unterstützen besonders Kinder mit geringen Sprachkenntnissen oder Schwierigkeiten in der Kommunikation (Hodgdon, 1995). Entscheidend ist die Antwort der Erwachsenen: Wer Gefühle wahrnimmt, benennt und ernst nimmt, ohne sie wegzureden, hilft Kindern, sie zu verstehen und zu regulieren (Gottman, 1997). Das Wetterbild trägt zugleich eine wichtige Botschaft: Auch nach Regen und Gewitter kommt wieder anderes Wetter.",
+        "quellen": [
+          "Hodgdon, L. A. (1995). Visual Strategies for Improving Communication. Troy, MI: QuirkRoberts.",
+          "Gottman, J. (1997). Raising an Emotionally Intelligent Child. New York: Simon & Schuster."
+        ],
+        "differenzierung": {
+          "leichter": "Nur drei Wetterbilder anbieten (Sonne, Regen, Gewitter). Das Kind zeigt, statt einzukreisen.",
+          "schwerer": "Zwei Wetter zugleich erlauben („Sonne mit Wolken“) und erzählen lassen, was das Wetter verändert hat."
+        },
+        "impulse": [
+          "Was hat heute dein Wetter gemacht?",
+          "Was könnte aus Regen wieder Sonne machen?",
+          "Welches Wetter hatte deine Freundin oder dein Freund heute Morgen?"
+        ],
+        "tipps": [
+          "Jedes Wetter ist erlaubt. Kein Kind soll sein Wetter „besser machen“ müssen.",
+          "Die Lehrperson nennt auch ihr eigenes Wetter: So sehen die Kinder, dass auch Erwachsene Regentage haben."
+        ],
+        "achtung": "Zeigt ein Kind über mehrere Tage nur Regen oder Gewitter oder erzählt es von Belastungen zu Hause: im Einzelgespräch nachfragen und die zuständige Leitung (Responsable) informieren.",
+        "material": "Buntstifte; für das Ritual vergrößerte Wetterbilder und Wäscheklammern mit Namen"
+      }
+    }
+  },
+  {
+    "id": "wie-geht-es-mir",
+    "bereich": "gefuehle",
+    "thema": "stimmung",
+    "stufen": ["C2"],
+    "sozialform": ["einzeln"],
+    "dauer": "10–15 Min.",
+    "eldib": ["K-12", "K-15", "K-26"],
+    "schlagworte": ["Check-in", "Befinden", "Gesichterskala", "Bedürfnisse", "Routine"],
+    "bild": "icon:mood-smile",
+    "verwandt": ["mein-wetter-heute", "meine-gefuehlswoche"],
+    "de": {
+      "titel": "Wie geht es mir heute?",
+      "untertitel": "Gefühle ändern sich jeden Tag. Heute schaust du genau hin.",
+      "bausteine": [
+        {"art": "aufgabe", "text": "Wie geht es dir gerade? Kreise ein Gesicht ein.", "symbole": ["einkreisen"]},
+        {"art": "skala", "von": "gar nicht gut", "bis": "sehr gut", "gesichter": true},
+        {"art": "aufgabe", "text": "Warum geht es dir so? Male oder schreibe.", "symbole": ["malen", "schreiben"]},
+        {"art": "feld", "label": "Mir geht es so, weil …", "hoehe": 4.5, "zeichnen": true},
+        {
+          "art": "aufgabe",
+          "text": "Was brauchst du jetzt? Kreise ein.",
+          "hinweis": "Du darfst auch zwei Bilder einkreisen.",
+          "symbole": ["einkreisen"]
+        },
+        {
+          "art": "bilder",
+          "modus": "einkreisen",
+          "spalten": 4,
+          "bilder": [
+            {"bild": "icon:bottle", "text": "trinken"},
+            {"bild": "icon:apple", "text": "essen"},
+            {"bild": "icon:run", "text": "bewegen"},
+            {"bild": "icon:headphones", "text": "Ruhe"},
+            {"bild": "icon:message-circle", "text": "reden"},
+            {"bild": "icon:help-circle", "text": "Hilfe"},
+            {"bild": "icon:heart", "text": "Trost"},
+            {"bild": "icon:thumb-up", "text": "alles gut"}
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder schätzen ihr Befinden auf einer Gesichterskala ein, nennen einen Grund und sagen, was sie jetzt brauchen. Regelmäßig genutzt, wird der Check-in zu einer vertrauten Brücke zwischen Kind und Erwachsenen.",
+        "ablauf": [
+          "Einführung (10 Min.): Die Skala an die Tafel zeichnen und vormachen: „Heute bin ich beim vierten Gesicht, weil ich gut geschlafen habe. Nach dem Turnen brauche ich etwas zu trinken.“",
+          "Aufgabe 1 und 2 in Einzelarbeit. Wer nicht schreiben mag, malt.",
+          "Aufgabe 3: Die Bilder vorher kurz besprechen (Was heißt „Ruhe“, was „Hilfe“?). Dann kreist jedes Kind ein, was es braucht.",
+          "Kindern, die ein trauriges Gesicht gewählt haben, leise ein Gespräch anbieten: „Heute ist kein guter Tag, oder? Möchtest du mir erzählen?“",
+          "Als Routine nutzen, z. B. montags oder nach der großen Pause; die Blätter in einer Mappe sammeln."
+        ],
+        "hintergrund": "Regelmäßige Check-ins helfen Kindern, auf ihr Inneres zu achten und es mitzuteilen, bevor sich Gefühle aufstauen. Brackett (2019) betont, dass die Frage „Wie geht es dir?“ nur dann wirkt, wenn sie ernst gemeint ist und die Antwort Folgen hat. Das Blatt verbindet deshalb drei Schritte: das Befinden einschätzen, einen Grund nennen und ein Bedürfnis formulieren. Für Erwachsene entsteht so ein früher Hinweis, wann ein Kind Unterstützung braucht. Kinder lernen Gefühle besser zu regulieren, wenn Erwachsene sie wahrnehmen, benennen und gemeinsam nach Lösungen suchen, statt sie zu übergehen (Gottman, 1997).",
+        "quellen": [
+          "Brackett, M. A. (2019). Permission to Feel. New York: Celadon.",
+          "Gottman, J. (1997). Raising an Emotionally Intelligent Child. New York: Simon & Schuster."
+        ],
+        "differenzierung": {
+          "leichter": "Nur Aufgabe 1 und 3: Das Kind zeigt auf Gesicht und Bild, die Lehrperson schreibt den Grund auf.",
+          "schwerer": "Ein genaues Gefühlswort ergänzen (z. B. enttäuscht, aufgeregt) und aufschreiben, wer helfen kann."
+        },
+        "impulse": ["Was hat dir heute gutgetan?", "Was könnte dein Gesicht auf der Skala nach rechts bringen?", "Wem kannst du sagen, was du brauchst?"],
+        "tipps": [
+          "Was ein Kind einkreist, möglichst aufgreifen – sonst lernt es, dass die Antwort nichts bewirkt.",
+          "Die Blätter nicht öffentlich auswerten oder aufhängen: Das Befinden ist Privatsache."
+        ],
+        "achtung": "Wählt ein Kind wiederholt das traurigste Gesicht: das Gespräch suchen und die zuständige Leitung (Responsable) informieren. Bei Hinweisen auf Gewalt oder Gefährdung sofort nach dem internen Ablauf handeln und das Kind nicht allein lassen.",
+        "material": "Stifte; optional eine Mappe für die Check-in-Blätter"
+      }
+    }
+  },
+  {
+    "id": "meine-gefuehlswoche",
+    "bereich": "gefuehle",
+    "thema": "stimmung",
+    "stufen": ["C3", "C4"],
+    "sozialform": ["einzeln"],
+    "dauer": "15 Min. + täglich 5 Min.",
+    "eldib": ["K-26", "K-29", "K-15"],
+    "schlagworte": ["Gefühlstagebuch", "Selbstbeobachtung", "Muster", "Wochenplan", "Wenn-dann-Plan"],
+    "bild": "icon:calendar",
+    "verwandt": ["wie-geht-es-mir", "gefuehle-viele-namen", "was-meine-stimmung-beeinflusst"],
+    "de": {
+      "titel": "Meine Gefühlswoche",
+      "untertitel": "Wer eine Woche lang genau hinschaut, entdeckt Muster: Was tut mir gut? Was bringt mich aus dem Gleichgewicht?",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Wie ging es dir? Male jeden Tag vier Gesichter.",
+          "hinweis": "Zeichne Mund und Augenbrauen in die leeren Gesichter, zum Beispiel ein Lächeln für froh.",
+          "symbole": ["malen"]
+        },
+        {
+          "art": "plan",
+          "tage": ["Mo", "Di", "Mi", "Do", "Fr", "Sa", "So"],
+          "zeilen": ["morgens", "mittags", "nachmittags", "abends"],
+          "symbol": "gesicht"
+        },
+        {
+          "art": "wortspeicher",
+          "titel": "Gefühlswörter",
+          "items": ["froh", "stolz", "ruhig", "erleichtert", "aufgeregt", "genervt", "wütend", "traurig", "enttäuscht", "ängstlich", "müde", "gelangweilt"]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schreib jeden Tag einen Moment auf, der dir wichtig war.",
+          "hinweis": "Die erste Zeile ist ein Beispiel.",
+          "symbole": ["schreiben"]
+        },
+        {
+          "art": "tabelle",
+          "spalten": ["Tag", "Was ist passiert?", "Wie habe ich mich gefühlt?", "Was habe ich getan?"],
+          "breiten": [0.6, 2.5, 1.6, 2.1],
+          "beispiel": ["Mo", "In der Pause durfte ich nicht mitspielen.", "traurig, dann wütend", "Ich habe es der Lehrerin erzählt."],
+          "zeilen": 6
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schau auf deine Woche zurück. Was hat dir Kraft gegeben? Was hat dich Kraft gekostet?",
+          "symbole": ["nachdenken", "schreiben"]
+        },
+        {"art": "batterie", "laden": "Das hat mir gutgetan", "leeren": "Das war schwer für mich", "linien": 3},
+        {"art": "aufgabe", "text": "Entdecke Muster. Ergänze die Sätze.", "symbole": ["schreiben"]},
+        {"art": "satzanfaenge", "items": ["Mir fällt auf, dass …", "Geholfen hat mir …"], "linien": 2},
+        {
+          "art": "aufgabe",
+          "text": "Mach einen Plan für die nächste Woche.",
+          "hinweis": "Wähle eine Situation, die oft schwierig war. Was willst du dann tun?",
+          "symbole": ["schreiben"]
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [{"wenn": "Wenn ich in der Pause allein herumstehe,", "dann": "frage ich Mila oder Tiago, ob ich mitspielen darf."}]
+        },
+        {"art": "rueckblick"}
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder beobachten eine Woche lang ihre Gefühle und die Situationen dazu, erkennen wiederkehrende Muster und leiten daraus einen konkreten Plan für die nächste Woche ab.",
+        "ablauf": [
+          "Start (15 Min.): Das Blatt vorstellen, das Beispiel besprechen und den heutigen Tag gemeinsam rückblickend ausfüllen („Wie war es heute Morgen?“).",
+          "Die Woche über täglich fünf Minuten, z. B. vor dem Heimgehen. Für Abende und Wochenende das Blatt mit nach Hause geben.",
+          "Am Ende der Woche (20 Min.): Aufgabe 3 bis 5 in Einzelarbeit. Hilfreiche Frage: „An welchen Tagen gab es viele frohe Gesichter? Was war da anders?“",
+          "Freiwilliger Austausch zu zweit: Jedes Kind erzählt nur, was es teilen möchte, z. B. seinen Plan.",
+          "Nach einer weiteren Woche nachfragen: Hat der Plan funktioniert? Was muss angepasst werden?"
+        ],
+        "hintergrund": "Selbstbeobachtung ist ein Grundbaustein des Selbstmanagements: Wer sein Erleben regelmäßig festhält, erkennt Zusammenhänge, die im Alltag untergehen, und kann Veränderungen gezielt planen (Kanfer et al., 2012). Kinder erleben Gefühle meist als einzelne Momente; erst der Blick auf eine ganze Woche zeigt, dass bestimmte Situationen, Tageszeiten oder Menschen immer wieder ähnliche Gefühle auslösen. Brackett (2019) beschreibt das Erkennen solcher Ursachen als Voraussetzung dafür, Gefühle zu verstehen und hilfreich damit umzugehen. Der Wenn-dann-Plan am Ende übersetzt die Einsicht in eine konkrete Handlung; solche Pläne erhöhen nachweislich die Chance, ein Vorhaben umzusetzen (Gollwitzer, 1999).",
+        "quellen": [
+          "Kanfer, F. H., Reinecker, H. & Schmelzer, D. (2012). Selbstmanagement-Therapie (5. Aufl.). Berlin: Springer.",
+          "Brackett, M. A. (2019). Permission to Feel. New York: Celadon.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "differenzierung": {
+          "leichter": "Im Gesichter-Plan nur zwei Zeilen (morgens, nachmittags) und in der Tabelle drei Tage ausfüllen.",
+          "schwerer": "Zusätzlich die Stärke der Gefühle (0–10) notieren und prüfen, ob Schlaf oder Hunger eine Rolle spielen."
+        },
+        "impulse": [
+          "Gibt es eine Tageszeit, zu der es dir meistens gut geht?",
+          "Welche Menschen oder Orte tun dir gut?",
+          "Was hast du in dieser Woche über dich gelernt?"
+        ],
+        "tipps": [
+          "Selbst eine Gefühlswoche ausfüllen und am Ende erzählen, was einem aufgefallen ist. Das macht Mut, ehrlich hinzuschauen.",
+          "Das Blatt gehört dem Kind: Es entscheidet, was es zeigt."
+        ],
+        "achtung": "Häufen sich traurige oder ängstliche Gesichter oder erzählt ein Kind von Belastungen zu Hause: nicht im Plenum vertiefen, das Einzelgespräch suchen und die zuständige Leitung (Responsable) informieren.",
+        "material": "Buntstifte; das Blatt für Abende und Wochenende mit nach Hause geben"
+      }
+    }
+  },
+  {
+    "id": "was-meine-stimmung-beeinflusst",
+    "bereich": "gefuehle",
+    "thema": "stimmung",
+    "stufen": ["ES"],
+    "sozialform": ["einzeln", "gruppe"],
+    "dauer": "2 × 20 Min.",
+    "eldib": ["K-29", "V-29", "KOG-61"],
+    "schlagworte": ["Stimmung", "Schlaf", "Bewegung", "Bildschirmzeit", "Selbstbeobachtung", "Gewohnheiten"],
+    "bild": "icon:timeline",
+    "verwandt": ["gefuehle-genau-benennen", "meine-gefuehlswoche"],
+    "de": {
+      "titel": "Was meine Stimmung beeinflusst",
+      "untertitel": "Stimmung fällt nicht vom Himmel. Schlaf, Bewegung, Kontakte und Bildschirmzeit spielen mit – bei jedem ein bisschen anders.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Was man darüber weiß",
+          "punkte": [
+            "Schlaf: Mit 13 bis 18 Jahren braucht man 8 bis 10 Stunden pro Nacht.",
+            "Bewegung: Schon ein Spaziergang oder eine Runde mit dem Rad kann die Stimmung heben.",
+            "Kontakte: Zeit mit Menschen, die einem guttun, federt Stress ab.",
+            "Bildschirm: Entscheidend ist, was er verdrängt – Schlaf, Bewegung, Treffen."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was glaubst du: Wie stark beeinflusst das deine Stimmung?",
+          "hinweis": "Kreuze vor der Woche an. Am Ende prüfst du deine Vermutung."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": ["stark", "etwas", "kaum"],
+          "items": [
+            "wie lange ich geschlafen habe",
+            "ob ich mich bewegt habe",
+            "Zeit mit Freunden oder Familie",
+            "wie lange ich am Bildschirm war",
+            "Stress in der Schule",
+            "Essen und Trinken"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Trage eine Woche lang jeden Abend ein.",
+          "hinweis": "Stimmung: 0 = sehr schlecht, 10 = sehr gut. Schätzen reicht."
+        },
+        {
+          "art": "tabelle",
+          "spalten": ["Tag", "Schlaf (Std.)", "Bewegung (Min.)", "Zeit mit anderen", "Bildschirm (Std.)", "Stimmung (0–10)"],
+          "breiten": [0.7, 1, 1.1, 1.6, 1.1, 1.1],
+          "beispiel": ["Mo", "7,5", "30", "Training, Oma", "4", "6"],
+          "zeilen": 6
+        },
+        {
+          "art": "aufgabe",
+          "text": "Werte deine Woche aus.",
+          "hinweis": "Markiere in der Tabelle deine zwei besten und deine zwei schwierigsten Tage."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": ["An meinen besten Tagen …", "An meinen schwierigsten Tagen …", "Meine Vermutung aus Aufgabe 1 stimmt / stimmt nicht, weil …"],
+          "linien": 2
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Kleine Experimente, die sich lohnen",
+          "punkte": [
+            "In der letzten halben Stunde vor dem Schlafen kein Bildschirm.",
+            "Jeden Tag 20 Minuten draußen in Bewegung sein.",
+            "Einmal pro Woche etwas mit Freunden unternehmen – ohne Handy."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Starte ein kleines Experiment für die nächste Woche.",
+          "hinweis": "Ändere nur eine Sache. So siehst du, ob sie wirkt."
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [{"wenn": "Wenn es 22 Uhr ist,", "dann": "lege ich das Handy zum Laden in die Küche und lese noch zehn Minuten."}]
+        },
+        {"art": "notfall"}
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen dokumentieren eine Woche lang Stimmung, Schlaf, Bewegung, Kontakte und Bildschirmzeit, prüfen ihre Vermutungen an den eigenen Daten und planen ein kleines Experiment.",
+        "ablauf": [
+          "Einstieg (5 Min.): „Was macht einen Tag richtig gut oder richtig schlecht?“ Stichworte sammeln und den vier Bereichen zuordnen.",
+          "Info-Kasten lesen; Aufgabe 1 als Vermutung vor der Woche ausfüllen (5 Min.).",
+          "Die Tabelle eine Woche lang jeden Abend ausfüllen (2 Min.). Schätzen reicht, Genauigkeit ist nicht entscheidend.",
+          "Nach einer Woche (20 Min.): Aufgabe 3 in Einzelarbeit, dann freiwillig zu zweit: „Hat euch etwas überrascht?“",
+          "Aufgabe 4: Ein Experiment wählen und nur eine Sache ändern. Eine Woche später gemeinsam auswerten."
+        ],
+        "hintergrund": "Stimmung hängt mit alltäglichen Gewohnheiten zusammen, die Jugendliche selbst beeinflussen können. Für 13- bis 18-Jährige empfiehlt die American Academy of Sleep Medicine 8 bis 10 Stunden Schlaf; ausreichender Schlaf geht mit besserer Aufmerksamkeit, Gefühlsregulation und psychischer Gesundheit einher (Paruthi et al., 2016). Beim Bildschirm raten Livingstone und Blum-Ross (2020) zu einem differenzierten Blick: Entscheidend sind Inhalte, Zeitpunkt und das, was die Nutzung verdrängt – nicht die Stundenzahl allein. Die Selbstbeobachtung (Kanfer et al., 2012) macht persönliche Muster sichtbar und zeigt, wo sich eine Veränderung lohnt.",
+        "quellen": [
+          "Paruthi, S. et al. (2016). Recommended amount of sleep for pediatric populations: A consensus statement of the American Academy of Sleep Medicine. Journal of Clinical Sleep Medicine, 12(6), 785–786.",
+          "Livingstone, S. & Blum-Ross, A. (2020). Parenting for a Digital Future. New York: Oxford University Press.",
+          "Kanfer, F. H., Reinecker, H. & Schmelzer, D. (2012). Selbstmanagement-Therapie (5. Aufl.). Berlin: Springer."
+        ],
+        "differenzierung": {
+          "leichter": "Nur Schlaf, Bildschirm und Stimmung notieren; fünf Schultage statt sieben.",
+          "schwerer": "Die Werte in ein Diagramm übertragen (Stimmung und Schlaf als zwei Linien) und beschreiben, was sich zeigt."
+        },
+        "impulse": ["Was hat dich an deinen Daten überrascht?", "Wer oder was könnte dich bei deinem Experiment unterstützen?"],
+        "tipps": ["Ohne Bewertung auswerten: Es geht um Muster, nicht um „gute“ Werte.", "Selbst mitmachen und die eigenen Beobachtungen teilen."],
+        "achtung": "Bleibt die Stimmung lange sehr niedrig oder zieht sich jemand stark zurück: das Gespräch suchen und die zuständige Leitung (Responsable) bzw. den SePAS einbeziehen. Bei Hinweisen auf Selbstverletzung sofort nach dem internen Ablauf handeln.",
+        "material": "Optional: Tabellenprogramm"
+      }
+    },
+    "fr": {
+      "titel": "Ce qui influence mon humeur",
+      "untertitel": "L’humeur ne tombe pas du ciel. Le sommeil, le mouvement, les contacts et les écrans jouent un rôle – un peu différent pour chacun.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Ce que l’on sait",
+          "punkte": [
+            "Sommeil : entre 13 et 18 ans, on a besoin de 8 à 10 heures par nuit.",
+            "Mouvement : une simple promenade ou un tour à vélo peut améliorer l’humeur.",
+            "Contacts : du temps avec des personnes qui font du bien amortit le stress.",
+            "Écrans : ce qui compte, c’est ce qu’ils remplacent – sommeil, mouvement, rencontres."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "À ton avis : à quel point ces éléments influencent-ils ton humeur ?",
+          "hinweis": "Coche avant la semaine. À la fin, tu vérifieras ton hypothèse."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": ["beaucoup", "un peu", "à peine"],
+          "items": [
+            "combien de temps j’ai dormi",
+            "si j’ai bougé",
+            "le temps passé avec des amis ou la famille",
+            "le temps passé devant un écran",
+            "le stress à l’école",
+            "manger et boire"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Remplis le tableau chaque soir pendant une semaine.",
+          "hinweis": "Humeur : 0 = très mauvaise, 10 = très bonne. Une estimation suffit."
+        },
+        {
+          "art": "tabelle",
+          "spalten": ["Jour", "Sommeil (h)", "Mouvement (min)", "Temps avec d’autres", "Écran (h)", "Humeur (0–10)"],
+          "breiten": [0.7, 1, 1.1, 1.6, 1.1, 1.1],
+          "beispiel": ["Lu", "7 h 30", "30", "entraînement, mamie", "4", "6"],
+          "zeilen": 6
+        },
+        {
+          "art": "aufgabe",
+          "text": "Fais le bilan de ta semaine.",
+          "hinweis": "Repère dans le tableau tes deux meilleurs jours et tes deux jours les plus difficiles."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": ["Mes meilleurs jours, …", "Mes jours les plus difficiles, …", "Mon hypothèse de l’exercice 1 se vérifie / ne se vérifie pas, parce que …"],
+          "linien": 2
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Petites expériences qui valent la peine",
+          "punkte": [
+            "Pas d’écran pendant la dernière demi-heure avant de dormir.",
+            "Chaque jour, 20 minutes dehors, en mouvement.",
+            "Une fois par semaine, un moment avec des amis – sans téléphone."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Lance une petite expérience pour la semaine prochaine.",
+          "hinweis": "Ne change qu’une seule chose : tu verras ainsi si elle a un effet."
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [{"wenn": "S’il est 22 h,", "dann": "je mets mon téléphone à charger dans la cuisine et je lis encore dix minutes."}]
+        },
+        {"art": "notfall"}
+      ],
+      "lehrer": {
+        "ziel": "Pendant une semaine, les jeunes notent humeur, sommeil, mouvement, contacts et temps d’écran, confrontent leurs hypothèses à leurs données et planifient une petite expérience.",
+        "ablauf": [
+          "Entrée en matière (5 min) : « Qu’est-ce qui rend une journée vraiment bonne ou vraiment mauvaise ? » Recueillir des mots-clés et les classer dans les quatre domaines.",
+          "Lire l’encadré ; remplir l’exercice 1 comme hypothèse avant la semaine (5 min).",
+          "Remplir le tableau chaque soir pendant une semaine (2 min). Une estimation suffit, la précision n’est pas essentielle.",
+          "Après une semaine (20 min) : exercice 3 individuellement, puis échange volontaire à deux : « Qu’est-ce qui vous a surpris ? »",
+          "Exercice 4 : choisir une expérience et ne changer qu’une seule chose. En faire le bilan ensemble une semaine plus tard."
+        ],
+        "hintergrund": "L’humeur est liée à des habitudes quotidiennes sur lesquelles les jeunes ont prise. Pour les 13-18 ans, l’American Academy of Sleep Medicine recommande 8 à 10 heures de sommeil ; un sommeil suffisant va de pair avec une meilleure attention, une meilleure régulation émotionnelle et une meilleure santé psychique (Paruthi et al., 2016). Concernant les écrans, Livingstone et Blum-Ross (2020) invitent à un regard nuancé : ce qui compte, ce sont les contenus, le moment et ce que l’usage remplace – pas seulement le nombre d’heures. L’auto-observation (Kanfer et al., 2012) rend visibles les schémas personnels et montre où un changement vaut la peine.",
+        "quellen": [
+          "Paruthi, S. et al. (2016). Recommended amount of sleep for pediatric populations: A consensus statement of the American Academy of Sleep Medicine. Journal of Clinical Sleep Medicine, 12(6), 785–786.",
+          "Livingstone, S. & Blum-Ross, A. (2020). Parenting for a Digital Future. New York: Oxford University Press.",
+          "Kanfer, F. H., Reinecker, H. & Schmelzer, D. (2012). Selbstmanagement-Therapie (5. Aufl.). Berlin: Springer."
+        ],
+        "differenzierung": {
+          "leichter": "Ne noter que le sommeil, les écrans et l’humeur ; cinq jours d’école au lieu de sept.",
+          "schwerer": "Reporter les valeurs dans un graphique (humeur et sommeil sur deux courbes) et décrire ce qui apparaît."
+        },
+        "impulse": ["Qu’est-ce qui t’a surpris dans tes données ?", "Qui ou quoi pourrait t’aider dans ton expérience ?"],
+        "tipps": ["Faire le bilan sans jugement : on cherche des schémas, pas de « bonnes » valeurs.", "Participer soi-même et partager ses observations."],
+        "achtung": "Si l’humeur reste longtemps très basse ou si un·e jeune se replie fortement : chercher le dialogue et impliquer la direction compétente (responsable) ou le SePAS. En cas de signes d’automutilation, agir immédiatement selon la procédure interne.",
+        "material": "En option : tableur"
+      }
+    }
+  },
+  {
+    "id": "wenn-ich-wuetend-bin",
+    "bereich": "gefuehle",
+    "thema": "wut",
+    "stufen": ["C1"],
+    "sozialform": ["einzeln", "gruppe"],
+    "dauer": "20 Min.",
+    "eldib": ["V-18", "V-20", "SOZ-12"],
+    "schlagworte": ["Wut", "Beruhigen", "Ruhe-Ecke", "Hilfe holen", "Spielschule"],
+    "bild": "gesicht:wuetend",
+    "verwandt": ["ballon-atmen", "wut-thermometer", "wutvulkan"],
+    "de": {
+      "titel": "Wenn ich wütend bin",
+      "anleitung": "Zuerst über Wut sprechen: Wie fühlt sich Wut im Körper an? Dann jede Idee zusammen ausprobieren. Das Kind kreist ein oder zwei Bilder ein und malt, was ihm am besten hilft.",
+      "bausteine": [
+        {"art": "aufgabe", "text": "Was hilft dir, wenn du wütend bist? Kreise ein.", "symbole": ["zeigen", "einkreisen"]},
+        {
+          "art": "bilder",
+          "modus": "einkreisen",
+          "spalten": 3,
+          "bilder": [
+            {"bild": "icon:pillow", "text": "Kissen drücken"},
+            {"bild": "icon:shoe", "text": "fest stampfen"},
+            {"bild": "motiv:ballon", "text": "tief atmen"},
+            {"bild": "motiv:stopp", "text": "„Stopp“ sagen"},
+            {"bild": "icon:armchair", "text": "Ruhe-Ecke"},
+            {"bild": "figur:lehrerin:ruhig", "text": "Erwachsene holen"}
+          ]
+        },
+        {"art": "aufgabe", "text": "Male dich: Das mache ich, wenn ich wütend bin.", "symbole": ["malen"]},
+        {"art": "feld", "hoehe": 4.2, "zeichnen": true}
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder lernen sechs Wege kennen, mit Wut umzugehen, ohne sich oder anderen wehzutun. Sie probieren sie aus und wählen eine Strategie, die zu ihnen passt.",
+        "ablauf": [
+          "Einstieg im Sitzkreis (5 Min.): „Wann warst du schon einmal richtig wütend? Wie hat sich dein Körper angefühlt?“ Klar sagen: Wut ist erlaubt – hauen, treten und kaputt machen nicht.",
+          "Jede Idee gemeinsam ausprobieren: ein Kissen fest drücken und loslassen, dreimal stampfen, wie ein Ballon atmen, laut „Stopp“ sagen, zur Ruhe-Ecke gehen, eine Erwachsene holen.",
+          "Aufgabe 1: Das Kind kreist ein oder zwei Bilder ein, die ihm am meisten geholfen haben.",
+          "Aufgabe 2: Das Kind malt sich mit seiner Strategie. Die Lehrperson schreibt dazu, was das Kind erzählt.",
+          "Das Bild in der Ruhe-Ecke oder am Platz aufhängen und die Strategie in ruhigen Momenten regelmäßig üben."
+        ],
+        "hintergrund": "Kleine Kinder erleben Wut mit dem ganzen Körper; Worte und Einsicht sind im Moment der Aufregung kaum verfügbar. Siegel und Bryson (2011) empfehlen deshalb, zuerst Nähe herzustellen und das Kind zur Ruhe kommen zu lassen, auch über Bewegung, und erst danach über das Geschehene zu sprechen. Anspannen und Loslassen, Stampfen oder langsames Atmen bauen die Erregung ab. Programme für junge Kinder wie das Dina-Dinosaurier-Programm üben solche Strategien mit Bildern, Puppen und vielen Wiederholungen und verbessern so Selbststeuerung und soziale Kompetenz (Webster-Stratton & Reid, 2003). Entscheidend ist das Üben in ruhigen Momenten: Nur dann stehen die Strategien in der Wut zur Verfügung.",
+        "quellen": [
+          "Siegel, D. J. & Bryson, T. P. (2011). The Whole-Brain Child. New York: Delacorte.",
+          "Webster-Stratton, C. & Reid, M. J. (2003). Treating conduct problems and strengthening social and emotional competence in young children: The Dina Dinosaur treatment program. Journal of Emotional and Behavioral Disorders, 11(3), 130–143."
+        ],
+        "differenzierung": {
+          "leichter": "Nur drei Bilder anbieten (Kissen, atmen, Erwachsene holen). Das Kind zeigt, statt einzukreisen.",
+          "schwerer": "Eine Reihenfolge besprechen: „Was machst du zuerst, was danach?“ Dazu zwei Bilder malen."
+        },
+        "impulse": ["Woran merkst du, dass die Wut kommt?", "Was hilft dir, wieder ruhig zu werden?", "Wen kannst du holen, wenn du wütend bist?"],
+        "tipps": [
+          "Beim Kissen auf Drücken achten, nicht auf Schlagen: Anspannen und Loslassen beruhigt, Schlagen hält die Aufregung eher hoch.",
+          "Die Ruhe-Ecke nie als Strafe nutzen: Das Kind geht freiwillig hin und kommt zurück, wenn es bereit ist."
+        ],
+        "achtung": "Wird ein Kind sehr häufig und heftig wütend oder verletzt es sich oder andere: das Gespräch mit den Eltern suchen und die zuständige Leitung (Responsable) informieren. Bei Hinweisen auf Gewalt sofort nach dem internen Ablauf handeln.",
+        "material": "Buntstifte; ein Kissen und ein Luftballon zum Ausprobieren"
+      }
+    }
+  },
+  {
+    "id": "wut-thermometer",
+    "bereich": "gefuehle",
+    "thema": "wut",
+    "stufen": ["C2"],
+    "sozialform": ["einzeln", "gruppe"],
+    "dauer": "30 Min.",
+    "eldib": ["V-18", "V-21", "K-16"],
+    "schlagworte": ["Wut", "Erregung", "Thermometer", "Strategien", "Selbstkontrolle"],
+    "bild": "icon:temperature",
+    "verwandt": ["wenn-ich-wuetend-bin", "wutvulkan", "wut-verstehen"],
+    "de": {
+      "titel": "Das Wut-Thermometer",
+      "untertitel": "Wut kann klein oder groß sein. Das Thermometer zeigt, wie heiß sie gerade ist.",
+      "bausteine": [
+        {"art": "aufgabe", "text": "Lies die vier Zonen. Zeig: Wo bist du jetzt?", "symbole": ["lesen", "zeigen"]},
+        {
+          "art": "thermometer",
+          "linien": 0,
+          "stufen": [
+            {"titel": "Kühl: Ich bin ruhig.", "text": "Ich kann gut denken und spielen."},
+            {"titel": "Warm: Ich bin genervt.", "text": "Etwas stört mich."},
+            {"titel": "Heiß: Ich bin wütend.", "text": "Mein Gesicht wird heiß. Ich mache Fäuste."},
+            {"titel": "Kochend: Ich platze gleich.", "text": "Ich will schreien oder hauen."}
+          ]
+        },
+        {"art": "aufgabe", "text": "Was hilft in welcher Zone? Verbinde.", "symbole": ["lesen", "verbinden"]},
+        {
+          "art": "zuordnen",
+          "titel": ["Zone", "Das hilft"],
+          "links": ["Kühl", "Warm", "Heiß", "Kochend"],
+          "rechts": ["atmen, bis 10 zählen", "weggehen, Hilfe holen", "weiterspielen", "„Hör bitte auf“ sagen"]
+        },
+        {"art": "aufgabe", "text": "Was hilft dir, wenn deine Wut kocht? Male oder schreibe.", "symbole": ["malen", "schreiben"]},
+        {"art": "feld", "label": "Mein Plan für die kochende Zone:", "hoehe": 3, "zeichnen": true}
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder unterscheiden vier Stärken von Wut, erkennen typische Körperzeichen und wissen, welche Strategie in welcher Zone hilft.",
+        "ablauf": [
+          "Einstieg (5 Min.): Ein großes Thermometer an die Tafel zeichnen. Frage: „Kann Wut klein sein? Wie fühlt sich große Wut an?“",
+          "Aufgabe 1: Die Zonen gemeinsam lesen und mit dem Körper zeigen (kühl: ganz locker, kochend: ganz angespannt). Jedes Kind zeigt auf seine Zone gerade jetzt.",
+          "Aufgabe 2: Verbinden und besprechen: „Warum hilft Weggehen, wenn die Wut kocht?“ Je heißer die Wut, desto weniger helfen Worte.",
+          "Aufgabe 3: Jedes Kind malt oder schreibt seinen Plan für die heißeste Zone.",
+          "Im Alltag nutzen: „Wo bist du gerade auf dem Thermometer?“ Die Zonen im Klassenzimmer aufhängen."
+        ],
+        "hintergrund": "Wut steigt meist in Stufen an. Je höher die Erregung, desto weniger sind Denken, Sprache und Planen verfügbar – Siegel und Bryson (2011) beschreiben anschaulich, dass das „obere Stockwerk“ des Gehirns dann vorübergehend nicht mitarbeitet. Daraus folgt eine einfache Regel: In den unteren Zonen helfen Worte („Hör bitte auf“), in den oberen zuerst Abstand und die Beruhigung des Körpers. Trainingsprogramme für impulsive Kinder setzen auf das frühe Erkennen der eigenen Erregung und auf wenige, gut geübte Handlungen (Petermann & Petermann, 2012). Das Thermometer macht die Stufen sichtbar und gibt Kindern und Erwachsenen eine gemeinsame Sprache.",
+        "quellen": [
+          "Siegel, D. J. & Bryson, T. P. (2011). The Whole-Brain Child. New York: Delacorte.",
+          "Petermann, F. & Petermann, U. (2012). Training mit aggressiven Kindern (13. Aufl.). Weinheim: Beltz."
+        ],
+        "differenzierung": {
+          "leichter": "Nur drei Zonen verwenden (kühl, warm, kochend); Aufgabe 2 mit Bildkarten lösen.",
+          "schwerer": "Zu jeder Zone ein eigenes Beispiel aufschreiben: „Warm werde ich, wenn …“"
+        },
+        "impulse": ["Was bringt dich von kühl zu warm?", "Woran merkst du, dass du in der heißen Zone bist?", "Wer kann dir helfen, wenn deine Wut kocht?"],
+        "tipps": [
+          "Ein kleines Thermometer auf den Tisch kleben: So kann das Kind seine Zone zeigen, ohne zu sprechen.",
+          "Mit dem Kind ein Zeichen vereinbaren, mit dem es die Ruhe-Ecke aufsuchen darf."
+        ],
+        "achtung": "Ist ein Kind oft in der kochenden Zone, verletzt es sich oder andere oder erzählt es von Gewalt: nicht im Plenum vertiefen, sondern die zuständige Leitung (Responsable) informieren.",
+        "material": "Stifte; optional ein großes Thermometer für die Klasse"
+      }
+    }
+  },
+  {
+    "id": "wut-verstehen",
+    "bereich": "gefuehle",
+    "thema": "wut",
+    "stufen": ["ES"],
+    "sozialform": ["einzeln", "gruppe"],
+    "dauer": "45–50 Min.",
+    "eldib": ["V-26", "V-25", "K-33"],
+    "schlagworte": ["Wut", "Eisberg", "Warnsignale", "STOP-Fertigkeit", "Wenn-dann-Plan", "Impulskontrolle"],
+    "bild": "icon:flame",
+    "verwandt": ["wutvulkan", "wut-thermometer", "gefuehle-genau-benennen"],
+    "de": {
+      "titel": "Wut verstehen und steuern",
+      "untertitel": "Wut ist ein normales Gefühl – und oft ein Schutz für etwas Verletzliches. Entscheidend ist, was du tust, wenn sie hochkocht.",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "Dienstag, Mathestunde",
+          "text": "Diogo (15) bekommt seinen Mathetest zurück: 22 von 60 Punkten. Sein Sitznachbar grinst. Diogo zerknüllt das Blatt, schiebt den Stuhl zurück und sagt laut: „Das ist doch alles Mist.“ Die Lehrerin schickt ihn vor die Tür. Später sagt er zu seinem Régent: „Ich hatte echt gelernt. Und zu Hause gibt es wieder Stress.“",
+          "bild": "figur:ben:wuetend"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Das Beispiel zeigt Diogos Eisberg. Fülle deinen eigenen aus: Was sehen die anderen, wenn du wütend bist – und was steckt darunter?",
+          "hinweis": "Oben steht, was man sieht. Darunter liegt, was man nicht sieht: Gefühle, Gedanken, Bedürfnisse."
+        },
+        {
+          "art": "eisberg",
+          "oben": "Das sehen die anderen",
+          "unten": "Das liegt darunter",
+          "beispielOben": "Blatt zerknüllen, laut werden",
+          "beispielUnten": "Enttäuschung, Scham, Angst vor dem Streit zu Hause"
+        },
+        {"art": "aufgabe", "text": "Woran merkst du früh, dass deine Wut steigt? Kreuze an und ergänze."},
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "frei": 2,
+          "items": [
+            "Das Herz schlägt schneller.",
+            "Das Gesicht wird heiß.",
+            "Kiefer oder Fäuste spannen sich an.",
+            "Der Atem wird flach und schnell.",
+            "„Der macht das mit Absicht.“",
+            "„Das ist so unfair.“",
+            "Die Stimme wird lauter.",
+            "Ich will Türen knallen oder etwas werfen."
+          ]
+        },
+        {"art": "aufgabe", "text": "Lerne die STOP-Fertigkeit. Sie hilft, in wenigen Sekunden aus dem Autopiloten auszusteigen."},
+        {
+          "art": "schritte",
+          "linien": 0,
+          "items": [
+            {"titel": "S – Stopp", "text": "Halte inne. Sag nichts, tu nichts – nur für einen Moment."},
+            {"titel": "T – Tritt einen Schritt zurück", "text": "Nimm Abstand, innerlich oder wirklich. Atme langsam aus."},
+            {"titel": "O – Beobachte", "text": "Was passiert in dir, was um dich herum? Was ist Tatsache, was Vermutung?"},
+            {"titel": "P – Plane achtsam", "text": "Was ist dein Ziel? Was macht die Lage besser, nicht schlimmer?"}
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "So hätte Diogo STOP nutzen können",
+          "punkte": [
+            "S: Das Blatt liegen lassen und nichts sagen.",
+            "T: Einmal langsam ausatmen, den Stuhl ein Stück zurückschieben.",
+            "O: „Ich bin enttäuscht und schäme mich. Das Grinsen ist nicht der eigentliche Grund.“",
+            "P: Nach der Stunde mit der Lehrerin über den Test reden."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Verbinde dein stärkstes Warnsignal mit einem STOP-Schritt.",
+          "hinweis": "Je genauer Signal und Handlung beschrieben sind, desto eher klappt es im Ernstfall."
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 2,
+          "beispiele": [
+            {
+              "wenn": "Wenn ich merke, dass mein Kiefer fest wird und meine Stimme lauter,",
+              "dann": "sage ich „Moment“, gehe zum Fenster und atme dreimal langsam aus."
+            }
+          ]
+        },
+        {
+          "art": "skala",
+          "frage": "Wie sicher bist du, dass du STOP in der nächsten Woche mindestens einmal nutzt?",
+          "von": "gar nicht sicher",
+          "bis": "sehr sicher",
+          "stufen": 11
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen erkennen, welche Gefühle und Bedürfnisse oft unter Wut liegen, benennen ihre frühen Warnsignale und üben die STOP-Fertigkeit als Notbremse. Ein Wenn-dann-Plan verankert sie im Alltag.",
+        "ablauf": [
+          "Einstieg (5 Min.): Fallvignette lesen. Frage: „Worum ging es Diogo eigentlich?“ Antworten ohne Wertung sammeln.",
+          "Aufgabe 1 einzeln (10 Min.). Betonen: Wut ist berechtigt – es geht darum, sie zu verstehen, nicht sie wegzumachen.",
+          "Aufgabe 2: Warnsignale ankreuzen; im Plenum sammeln, welche Signale am frühesten kommen.",
+          "Aufgabe 3: STOP lesen und in einer kurzen Szene durchspielen (z. B. „Jemand macht sich über dein Referat lustig“). Den Diogo-Kasten besprechen.",
+          "Aufgabe 4: Pläne zu zweit prüfen (Ist das Signal konkret? Ist die Handlung machbar?). Nach einer Woche nachfragen, wo STOP geklappt hat."
+        ],
+        "hintergrund": "Wut reagiert auf Hindernisse, Ungerechtigkeit oder Kränkung; oft liegen darunter verletzlichere Gefühle wie Enttäuschung, Scham oder Angst. Das Eisberg-Bild hilft, diese Schicht wahrzunehmen. Nach dem Prozessmodell der Emotionsregulation lässt sich früh im Ablauf am leichtesten eingreifen (Gross, 1998) – deshalb stehen die Warnsignale im Mittelpunkt. Die STOP-Fertigkeit stammt aus der Dialektisch-Behavioralen Therapie und gehört dort zu den Fertigkeiten für akute Belastung; Rathus und Miller (2015) haben sie für Jugendliche aufbereitet. Wenn-dann-Pläne verknüpfen ein Signal mit einer vorbereiteten Handlung und erhöhen so die Chance, dass sie im Ernstfall abgerufen wird (Gollwitzer, 1999).",
+        "quellen": [
+          "Gross, J. J. (1998). The emerging field of emotion regulation: An integrative review. Review of General Psychology, 2(3), 271–299.",
+          "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "differenzierung": {
+          "leichter": "Den Eisberg zuerst für Diogo ausfüllen; nur einen Wenn-dann-Plan formulieren.",
+          "schwerer": "Einen zweiten Eisberg für eine andere Person der Szene füllen (Lehrerin, Sitznachbar): Was lag bei ihr oder ihm darunter?"
+        },
+        "impulse": [
+          "Was liegt bei dir am häufigsten unter der Wut?",
+          "Welches Warnsignal kommt bei dir zuerst?",
+          "Wann hast du schon einmal einen Streit rechtzeitig gestoppt?"
+        ],
+        "tipps": [
+          "STOP in ruhigen Momenten üben, etwa im Rollenspiel: Unter Stress wird nur Geübtes abgerufen.",
+          "Vereinbaren, wie man den Raum kurz verlassen darf, ohne dass es als Provokation gilt."
+        ],
+        "achtung": "Bei Hinweisen auf Gewalt, Bedrohung oder Selbstverletzung: nicht im Plenum vertiefen, sofort nach dem internen Ablauf handeln und die zuständige Leitung (Responsable) bzw. den SePAS informieren.",
+        "material": "Optional: Rollenspielkarten"
+      }
+    },
+    "fr": {
+      "titel": "Comprendre et gérer sa colère",
+      "untertitel": "La colère est une émotion normale – et elle protège souvent quelque chose de plus fragile. Ce qui compte, c’est ce que tu fais quand elle monte.",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "Mardi, cours de maths",
+          "text": "Diogo (15 ans) récupère son contrôle de maths : 22 points sur 60. Son voisin ricane. Diogo froisse la feuille, repousse sa chaise et lance à voix haute : « C’est vraiment n’importe quoi. » La professeure le fait sortir. Plus tard, il confie à son régent : « J’avais vraiment révisé. Et à la maison, ça va encore crier. »",
+          "bild": "figur:ben:wuetend"
+        },
+        {
+          "art": "aufgabe",
+          "text": "L’exemple montre l’iceberg de Diogo. Remplis le tien : que voient les autres quand tu es en colère – et qu’y a-t-il en dessous ?",
+          "hinweis": "En haut, ce que l’on voit. En dessous, ce que l’on ne voit pas : émotions, pensées, besoins."
+        },
+        {
+          "art": "eisberg",
+          "oben": "Ce que les autres voient",
+          "unten": "Ce qu’il y a en dessous",
+          "beispielOben": "froisser la feuille, hausser le ton",
+          "beispielUnten": "déception, honte, peur de la dispute à la maison"
+        },
+        {"art": "aufgabe", "text": "À quoi remarques-tu tôt que ta colère monte ? Coche et complète."},
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "frei": 2,
+          "items": [
+            "Le cœur bat plus vite.",
+            "Le visage chauffe.",
+            "La mâchoire ou les poings se serrent.",
+            "La respiration devient courte et rapide.",
+            "« Il le fait exprès. »",
+            "« C’est trop injuste. »",
+            "La voix monte.",
+            "J’ai envie de claquer une porte ou de jeter quelque chose."
+          ]
+        },
+        {"art": "aufgabe", "text": "Apprends la compétence STOP. Elle aide à sortir du pilote automatique en quelques secondes."},
+        {
+          "art": "schritte",
+          "linien": 0,
+          "items": [
+            {"titel": "S – Stop", "text": "Arrête-toi. Ne dis rien, ne fais rien – juste un instant."},
+            {"titel": "T – Temporise", "text": "Prends de la distance, dans ta tête ou pour de vrai. Expire lentement."},
+            {
+              "titel": "O – Observe",
+              "text": "Que se passe-t-il en toi, autour de toi ? Qu’est-ce qui est un fait, qu’est-ce qui est une supposition ?"
+            },
+            {"titel": "P – Poursuis en conscience", "text": "Quel est ton objectif ? Qu’est-ce qui améliore la situation au lieu de l’aggraver ?"}
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Voici comment Diogo aurait pu utiliser STOP",
+          "punkte": [
+            "S : laisser la feuille et ne rien dire.",
+            "T : expirer lentement une fois, reculer un peu sa chaise.",
+            "O : « Je suis déçu et j’ai honte. Le ricanement n’est pas la vraie raison. »",
+            "P : après le cours, parler du contrôle avec la professeure."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Relie ton signal d’alerte le plus fort à une étape de STOP.",
+          "hinweis": "Plus le signal et l’action sont précis, plus ça marchera le moment venu."
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 2,
+          "beispiele": [
+            {
+              "wenn": "Si je sens que ma mâchoire se serre et que ma voix monte,",
+              "dann": "je dis « une seconde », je vais à la fenêtre et j’expire lentement trois fois."
+            }
+          ]
+        },
+        {
+          "art": "skala",
+          "frage": "À quel point es-tu sûr·e d’utiliser STOP au moins une fois la semaine prochaine ?",
+          "von": "pas du tout sûr·e",
+          "bis": "tout à fait sûr·e",
+          "stufen": 11
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes repèrent les émotions et les besoins qui se cachent souvent sous la colère, nomment leurs premiers signaux d’alerte et s’entraînent à la compétence STOP comme frein d’urgence. Un plan « si … alors » l’ancre dans le quotidien.",
+        "ablauf": [
+          "Entrée en matière (5 min) : lire la vignette. Question : « De quoi s’agissait-il vraiment pour Diogo ? » Recueillir les réponses sans jugement.",
+          "Exercice 1 individuellement (10 min). Souligner : la colère est légitime – il s’agit de la comprendre, pas de la faire disparaître.",
+          "Exercice 2 : cocher les signaux ; relever en plénière ceux qui arrivent le plus tôt.",
+          "Exercice 3 : lire STOP et le jouer dans une courte scène (p. ex. « Quelqu’un se moque de ton exposé »). Discuter l’encadré sur Diogo.",
+          "Exercice 4 : vérifier les plans à deux (le signal est-il précis ? l’action réalisable ?). Une semaine plus tard, demander où STOP a fonctionné."
+        ],
+        "hintergrund": "La colère réagit à un obstacle, à une injustice ou à une blessure ; elle recouvre souvent des émotions plus vulnérables comme la déception, la honte ou la peur. L’image de l’iceberg aide à percevoir cette couche. Selon le modèle processuel de la régulation émotionnelle, il est plus facile d’intervenir tôt (Gross, 1998) – d’où l’importance des signaux d’alerte. La compétence STOP vient de la thérapie comportementale dialectique, où elle fait partie des outils pour les moments de crise ; Rathus et Miller (2015) l’ont adaptée aux adolescent·e·s. Les plans « si … alors » relient un signal à une action préparée et augmentent ainsi les chances qu’elle soit mobilisée le moment venu (Gollwitzer, 1999).",
+        "quellen": [
+          "Gross, J. J. (1998). The emerging field of emotion regulation: An integrative review. Review of General Psychology, 2(3), 271–299.",
+          "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "differenzierung": {
+          "leichter": "Remplir d’abord l’iceberg pour Diogo ; formuler un seul plan « si … alors ».",
+          "schwerer": "Remplir un second iceberg pour une autre personne de la scène (professeure, voisin) : qu’y avait-il en dessous pour elle ou lui ?"
+        },
+        "impulse": [
+          "Qu’y a-t-il le plus souvent sous ta colère ?",
+          "Quel signal d’alerte arrive en premier chez toi ?",
+          "As-tu déjà arrêté une dispute à temps ?"
+        ],
+        "tipps": [
+          "Entraîner STOP à froid, par exemple en jeu de rôle : sous stress, seul ce qui a été exercé revient.",
+          "Convenir de la façon de quitter brièvement la salle sans que ce soit vu comme une provocation."
+        ],
+        "achtung": "En cas de signes de violence, de menace ou d’automutilation : ne pas approfondir en plénière, agir immédiatement selon la procédure interne et informer la direction compétente (responsable) ou le SePAS.",
+        "material": "En option : cartes de jeu de rôle"
+      }
+    }
+  },
+  {
+    "id": "ich-kann-mutig-sein",
+    "bereich": "gefuehle",
+    "thema": "angst",
+    "stufen": ["C1"],
+    "sozialform": ["einzeln", "gruppe"],
+    "dauer": "20 Min. + 1 Woche",
+    "eldib": ["V-13", "SOZ-15", "SOZ-12"],
+    "schlagworte": ["Mut", "Angst", "kleine Schritte", "Mut-Helfer", "Spielschule"],
+    "bild": "icon:star",
+    "verwandt": ["was-hilft-bei-angst", "ballon-atmen"],
+    "de": {
+      "titel": "Ich kann mutig sein",
+      "anleitung": "Die Bilder zusammen anschauen: Wofür braucht man Mut? Das Kind kreist ein, was für es schwer ist, und wählt, was ihm hilft. Dann gemeinsam einen kleinen Mut-Schritt für die Woche festlegen.",
+      "bausteine": [
+        {"art": "aufgabe", "text": "Wofür brauchst du Mut? Kreise ein.", "symbole": ["einkreisen"]},
+        {
+          "art": "bilder",
+          "modus": "einkreisen",
+          "spalten": 4,
+          "bilder": [
+            {"bild": "figur:lea:traurig:winken", "text": "Tschüss sagen"},
+            {"bild": "icon:friends", "text": "Mitspielen fragen"},
+            {"bild": "icon:users-group", "text": "Im Kreis erzählen"},
+            {"bild": "icon:moon-stars", "text": "Im Dunkeln schlafen"}
+          ]
+        },
+        {"art": "aufgabe", "text": "Was hilft dir? Kreise ein.", "symbole": ["einkreisen"]},
+        {
+          "art": "bilder",
+          "modus": "einkreisen",
+          "spalten": 4,
+          "bilder": [
+            {"bild": "motiv:ballon", "text": "tief atmen"},
+            {"bild": "icon:heart-handshake", "text": "Hand halten"},
+            {"bild": "icon:message-circle", "text": "„Ich schaffe das.“"},
+            {"bild": "icon:stairs-up", "text": "klein anfangen"}
+          ]
+        },
+        {"art": "aufgabe", "text": "Warst du mutig? Male einen Stern an.", "symbole": ["malen"]},
+        {"art": "plan", "ziel": "", "zeilen": ["Ich war mutig."], "symbol": "stern"}
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder erkennen Situationen, die ihnen Mut abverlangen, lernen einfache Mut-Helfer kennen und erleben mit einem kleinen Mut-Schritt, dass Angst beim Ausprobieren kleiner wird.",
+        "ablauf": [
+          "Einstieg im Sitzkreis: „Was ist Mut? Muss man dafür keine Angst haben?“ Klären: Mutig ist, wer etwas tut, obwohl er Angst hat.",
+          "Aufgabe 1: Die Bilder besprechen. Jedes Kind kreist ein, was für es schwer ist. Alle Antworten sind richtig.",
+          "Aufgabe 2: Die Mut-Helfer ausprobieren: Ballon-Atmen, die Hand einer vertrauten Person halten, den Mut-Satz „Ich schaffe das“ laut und leise sagen.",
+          "Aufgabe 3: Mit jedem Kind einen kleinen Mut-Schritt festlegen und auf die Zeile schreiben, z. B. „Ich sage im Kreis einen Satz.“",
+          "Die Woche über jeden Versuch mit einem Stern würdigen, auch wenn es nicht ganz geklappt hat: „Du hattest Angst und hast es trotzdem probiert.“"
+        ],
+        "hintergrund": "Ängste gehören zur normalen Entwicklung: Trennung, Dunkelheit oder neue Kinder sind für viele Vorschulkinder eine echte Herausforderung. Rapee und Kollegen (2008) raten, Angst ernst zu nehmen, das Ausweichen aber nicht zu unterstützen: Wer eine Situation immer meidet, erlebt nie, dass sie zu bewältigen ist. Hilfreich sind kleine, gut machbare Schritte, Ermutigung und Anerkennung für jeden Versuch. Solche Erfolgserlebnisse stärken nach Bandura (1977) die Selbstwirksamkeit – die Überzeugung „Ich kann das“ –, die wiederum Mut für den nächsten Schritt macht.",
+        "quellen": [
+          "Rapee, R. M., Wignall, A., Spence, S. H., Cobham, V. & Lyneham, H. (2008). Helping Your Anxious Child (2nd ed.). Oakland: New Harbinger.",
+          "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215."
+        ],
+        "differenzierung": {
+          "leichter": "Nur Aufgabe 1 und 2; den Mut-Schritt zuerst gemeinsam mit einer Bezugsperson üben.",
+          "schwerer": "Zwei Mut-Schritte planen: einen leichten und einen etwas schwereren."
+        },
+        "impulse": ["Wann warst du schon einmal mutig?", "Was sagst du dir, wenn du Angst hast?", "Wer hilft dir, mutig zu sein?"],
+        "tipps": [
+          "Den Mut-Schritt so klein wählen, dass er sicher gelingt. Lieber oft einen kleinen Schritt als einmal einen zu großen.",
+          "Kein Kind vorführen oder überreden: Mut wächst durch Freiwilligkeit und Erfolg, nicht durch Druck."
+        ],
+        "achtung": "Schränken Ängste den Alltag eines Kindes stark ein (z. B. kann es sich über Wochen morgens nicht lösen): das Gespräch mit den Eltern suchen und die zuständige Leitung (Responsable) informieren.",
+        "material": "Buntstifte; optional Sticker für den Mut-Plan"
+      }
+    }
+  },
+  {
+    "id": "was-hilft-bei-angst",
+    "bereich": "gefuehle",
+    "thema": "angst",
+    "stufen": ["C2"],
+    "sozialform": ["einzeln", "gruppe"],
+    "dauer": "30 Min.",
+    "eldib": ["K-16", "K-12", "SOZ-26"],
+    "schlagworte": ["Angst", "Körpersignale", "Mut-Sätze", "Helfer", "Selbstermutigung"],
+    "bild": "icon:shield",
+    "verwandt": ["ich-kann-mutig-sein", "mut-leiter"],
+    "de": {
+      "titel": "Was hilft mir, wenn ich Angst habe?",
+      "untertitel": "Angst will dich beschützen. Manchmal ist sie aber zu laut.",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "Emma und das Gedicht",
+          "text": "Morgen soll Emma vor der Klasse ein Gedicht aufsagen. Schon beim Abendessen kribbelt ihr Bauch. Im Bett klopft ihr Herz ganz schnell. Sie denkt: „Alle lachen mich bestimmt aus.“",
+          "bild": "figur:mia:aengstlich"
+        },
+        {"art": "aufgabe", "text": "Wo spürst du Angst im Körper? Kreuze an.", "symbole": ["ankreuzen"]},
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "items": ["Bauchweh", "Herzklopfen", "zittrige Knie", "schwitzige Hände", "Kloß im Hals", "Ich will weglaufen."]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was könnte Emma zu sich sagen? Kreuze die Mut-Sätze an, die dir helfen.",
+          "hinweis": "Unten kannst du einen eigenen Mut-Satz schreiben.",
+          "symbole": ["lesen", "ankreuzen"]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "frei": 2,
+          "items": [
+            "Ich schaffe das.",
+            "Die Angst geht vorbei.",
+            "Ich atme erst tief durch.",
+            "Ein kleiner Schritt reicht.",
+            "Ich darf Hilfe holen.",
+            "Fehler sind erlaubt."
+          ]
+        },
+        {"art": "aufgabe", "text": "Wer hilft dir, wenn du Angst hast? Schreib auf.", "symbole": ["schreiben"]},
+        {"art": "satzanfaenge", "items": ["Zu Hause hilft mir …", "In der Schule hilft mir …"]},
+        {"art": "rueckblick"}
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder erkennen Angst an Körpersignalen, lernen Mut-Sätze zur Selbstermutigung kennen und benennen Menschen, die ihnen helfen.",
+        "ablauf": [
+          "Einstieg (5 Min.): Die Geschichte vorlesen. Fragen: „Wie fühlt sich Emma? Woran merkt sie das?“",
+          "Klären: Angst ist ein Alarm im Körper. Er will schützen, ist aber manchmal zu laut – wie ein Rauchmelder, der schon beim Toasten piept.",
+          "Aufgabe 1: Körpersignale ankreuzen; wer mag, zeigt am eigenen Körper, wo es kribbelt oder drückt.",
+          "Aufgabe 2: Die Mut-Sätze gemeinsam lesen, erst laut, dann leise sprechen. Jedes Kind schreibt seinen Lieblingssatz auf eine Karte für das Mäppchen.",
+          "Aufgabe 3: Helfer eintragen. Abschluss: „Was könnte Emma morgen früh tun?“"
+        ],
+        "hintergrund": "Angst ist ein Schutzsystem: Herzklopfen, schneller Atem und angespannte Muskeln bereiten den Körper auf Gefahr vor. Bei ängstlichen Kindern springt dieser Alarm auch an, wenn keine echte Gefahr besteht. Programme für ängstliche Kinder beginnen deshalb damit, Körpersignale zu erkennen und als Angst zu benennen (Kendall & Hedtke, 2006). Ein zweiter Baustein sind hilfreiche Selbstgespräche: Kinder lernen, sich mit kurzen Sätzen selbst anzuleiten und zu ermutigen. Das Prinzip der Selbstinstruktion geht auf Meichenbaum und Goodman (1971) zurück. Mut-Sätze wirken am besten, wenn sie kurz und realistisch sind und vorher oft geübt wurden. Zu wissen, wer hilft, gibt zusätzlich Sicherheit.",
+        "quellen": [
+          "Kendall, P. C. & Hedtke, K. A. (2006). Cognitive-Behavioral Therapy for Anxious Children: Therapist Manual (3rd ed.). Ardmore, PA: Workbook Publishing.",
+          "Meichenbaum, D. & Goodman, J. (1971). Training impulsive children to talk to themselves. Journal of Abnormal Psychology, 77(2), 115–126."
+        ],
+        "differenzierung": {
+          "leichter": "Aufgabe 1 und 2 mündlich: Die Lehrperson liest vor, das Kind zeigt auf seine Sätze.",
+          "schwerer": "Einen eigenen Mut-Satz für eine bestimmte Situation erfinden, z. B. für den Schwimmunterricht."
+        },
+        "impulse": ["Wann hattest du Angst – und dann war es gar nicht so schlimm?", "Was sagst du dir, wenn du Angst hast?", "Wer merkt, wenn du Angst hast?"],
+        "tipps": [
+          "Angst nicht ausreden („Da musst du keine Angst haben“), sondern anerkennen: „Das ist aufregend für dich. Du schaffst das trotzdem.“",
+          "Den Lieblings-Mut-Satz auf eine kleine Karte schreiben, die das Kind bei sich trägt."
+        ],
+        "achtung": "Sind Ängste sehr stark, halten lange an oder erschweren den Schulbesuch (jeden Morgen Bauchweh, Weinen, Weigern): mit den Eltern sprechen und die zuständige Leitung (Responsable) informieren.",
+        "material": "Stifte; optional kleine Karten für die Mut-Sätze"
+      }
+    }
+  },
+  {
+    "id": "mut-leiter",
+    "bereich": "gefuehle",
+    "thema": "angst",
+    "stufen": ["C3", "C4"],
+    "sozialform": ["einzeln"],
+    "dauer": "45 Min. + Übungszeit",
+    "eldib": ["V-24", "V-22", "K-26"],
+    "schlagworte": ["Angst", "Mut-Leiter", "kleine Schritte", "Belohnung", "Mut-Sätze", "Selbstwirksamkeit"],
+    "bild": "icon:ladder",
+    "verwandt": ["was-hilft-bei-angst", "angst-verstehen", "ich-kann-mutig-sein"],
+    "de": {
+      "titel": "Meine Mut-Leiter",
+      "untertitel": "Angst wird kleiner, wenn man sich ihr Schritt für Schritt stellt. Jede Stufe ist ein kleiner Sieg.",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "Tiagos Umweg",
+          "text": "Tiago hat Angst vor Hunden. Seit Wochen macht er einen Umweg zur Schule, weil beim Nachbarn ein Hund bellt. Mit seiner Mutter baut er eine Mut-Leiter. Zuerst schaut er Hundefotos an. Dann beobachtet er den Nachbarshund vom Fenster aus. Später geht er zusammen mit seiner Mutter am Zaun vorbei. Jede Stufe übt er so lange, bis die Angst deutlich kleiner ist.",
+          "bild": "figur:noah:aengstlich"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Welche Angst möchtest du kleiner machen? Kreuze eine an oder schreib deine eigene.",
+          "symbole": ["ankreuzen", "schreiben"]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "frei": 2,
+          "items": [
+            "vor der Klasse sprechen",
+            "allein schlafen",
+            "Hunde oder andere Tiere",
+            "neue Kinder ansprechen",
+            "im Dunkeln sein",
+            "eine Spritze beim Arzt"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Baue deine Mut-Leiter. Unten steht der leichteste Schritt, oben der schwerste.",
+          "hinweis": "Schreib zu jedem Schritt die Angst (0–10) dazu. Tiago beginnt mit: Hundefotos anschauen (2).",
+          "symbole": ["schreiben"]
+        },
+        {"art": "leiter", "stufen": 5, "oben": "am schwersten: mein großes Ziel", "unten": "am leichtesten: hier fange ich an"},
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "text": "Beim Üben steigt die Angst zuerst an. Wenn du dabeibleibst, sinkt sie wieder – jedes Mal ein bisschen schneller. Erst wenn eine Stufe leicht geworden ist, gehst du zur nächsten."
+        },
+        {"art": "aufgabe", "text": "Übe jede Stufe mehrmals. Trag ein, wie groß die Angst vorher und nachher war.", "symbole": ["schreiben"]},
+        {
+          "art": "tabelle",
+          "spalten": ["Stufe", "Tag", "Angst vorher (0–10)", "Angst nachher (0–10)", "Das habe ich zu mir gesagt"],
+          "breiten": [0.7, 0.8, 1.2, 1.2, 2.5],
+          "beispiel": ["1", "Mo", "4", "2", "„Fotos können mir nichts tun.“"],
+          "zeilen": 6
+        },
+        {
+          "art": "aufgabe",
+          "text": "Mach dir Mut und plane eine Belohnung.",
+          "hinweis": "Kleine Belohnungen reichen: ein Spieleabend, dein Lieblingsessen, eine Stunde Fußball.",
+          "symbole": ["schreiben"]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": ["Mein Mut-Satz: …", "Nach Stufe 3 belohne ich mich mit …", "Wenn ich oben angekommen bin, feiere ich mit …"]
+        },
+        {"art": "rueckblick"}
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder wählen eine Angst, die sie verkleinern möchten, zerlegen den Weg in fünf Stufen und üben Schritt für Schritt. Sie erleben, dass die Angst beim Üben sinkt, und belohnen ihren Mut.",
+        "ablauf": [
+          "Einstieg (10 Min.): Tiagos Geschichte lesen. Fragen: „Warum hilft der Umweg Tiago nicht? Warum fängt er mit Fotos an?“",
+          "Aufgabe 1 und 2 mit Unterstützung: Die Stufen gemeinsam ordnen und den Angstwert schätzen lassen. Die erste Stufe muss gut machbar sein (Angst etwa 2 bis 3).",
+          "Den Info-Kasten besprechen und mit der Hand eine Welle zeigen: Die Angst steigt, erreicht einen Gipfel und sinkt wieder.",
+          "Aufgabe 3 und 4: Übungsplan, Mut-Satz und Belohnung festlegen. Die Eltern einbeziehen, wenn Stufen zu Hause geübt werden.",
+          "Wöchentlich nachfragen: „Auf welcher Stufe bist du? Wie groß ist die Angst jetzt?“ Jeden Fortschritt anerkennen."
+        ],
+        "hintergrund": "Vermeiden lindert Angst kurzfristig, hält sie aber langfristig aufrecht: Das Kind erlebt nie, dass die Situation zu bewältigen ist. Kognitiv-verhaltenstherapeutische Programme für ängstliche Kinder setzen deshalb auf schrittweise Konfrontation: Die gefürchtete Situation wird in kleine, nach Schwierigkeit geordnete Stufen zerlegt und von unten nach oben geübt (Kendall & Hedtke, 2006). Rapee und Kollegen (2008) machen solche Leitern zum Kern ihres Programms und betonen zwei Punkte: jede Stufe so lange üben, bis sie leicht fällt, und Mut belohnen – nicht nur Erfolg. Mut-Sätze helfen, auf der Stufe zu bleiben, statt wieder auszuweichen.",
+        "quellen": [
+          "Kendall, P. C. & Hedtke, K. A. (2006). Cognitive-Behavioral Therapy for Anxious Children: Therapist Manual (3rd ed.). Ardmore, PA: Workbook Publishing.",
+          "Rapee, R. M., Wignall, A., Spence, S. H., Cobham, V. & Lyneham, H. (2008). Helping Your Anxious Child (2nd ed.). Oakland: New Harbinger."
+        ],
+        "differenzierung": {
+          "leichter": "Nur drei Stufen planen und gemeinsam mit einer Bezugsperson formulieren.",
+          "schwerer": "Zu einer Stufe eine schwerere Variante überlegen: länger, allein oder vor mehr Menschen."
+        },
+        "impulse": ["Was hat deine Angst bisher groß gehalten?", "Woran merkst du, dass eine Stufe leichter geworden ist?", "Wer kann dich beim Üben begleiten?"],
+        "tipps": [
+          "Die Leiter nicht über das Kind hinweg planen: Es entscheidet mit, welche Stufe als Nächstes drankommt.",
+          "Rückschritte sind normal. Dann eine Stufe zurückgehen und dort noch einmal üben."
+        ],
+        "achtung": "Das Blatt ersetzt keine Therapie. Sind Ängste sehr stark, schränken den Alltag deutlich ein oder gehen mit Panik einher: mit den Eltern sprechen und die zuständige Leitung (Responsable) informieren, damit fachliche Hilfe einbezogen wird.",
+        "material": "Stifte; optional Sticker für geschaffte Stufen"
+      }
+    }
+  },
+  {
+    "id": "angst-verstehen",
+    "bereich": "gefuehle",
+    "thema": "angst",
+    "stufen": ["ES"],
+    "sozialform": ["einzeln", "gruppe"],
+    "dauer": "45–50 Min.",
+    "eldib": ["V-24", "V-33", "SOZ-40"],
+    "schlagworte": ["Angst", "Vermeidung", "Angstkurve", "Angstleiter", "Konfrontation", "Selbstwirksamkeit"],
+    "bild": "icon:mountain",
+    "verwandt": ["mut-leiter", "was-hilft-bei-angst", "wut-verstehen"],
+    "de": {
+      "titel": "Angst verstehen – und angehen",
+      "untertitel": "Angst ist unangenehm, aber nicht gefährlich. Wer versteht, wie sie funktioniert, kann ihr Schritt für Schritt begegnen.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "So funktioniert Angst",
+          "punkte": [
+            "Angst ist ein Alarmsystem: Herzklopfen, schneller Atem und Anspannung machen den Körper bereit für Flucht oder Kampf.",
+            "Angst verläuft wie eine Welle: Sie steigt, erreicht einen Höhepunkt und sinkt wieder – auch wenn du nichts tust.",
+            "Vermeiden bringt sofort Erleichterung. Aber das Gehirn lernt: „Das war gefährlich.“ Beim nächsten Mal ist die Angst größer.",
+            "Wer sich der Situation in kleinen Schritten stellt, erlebt: „Ich halte das aus.“ So wird die Angst nach und nach kleiner."
+          ]
+        },
+        {
+          "art": "geschichte",
+          "titel": "Chiara und das Referat",
+          "text": "Chiara (14) soll im Französischunterricht ein Referat halten. Seit Tagen schläft sie schlecht. Am Morgen meldet sie sich krank – und ist sofort erleichtert. Zwei Wochen später soll sie nur eine Frage vor der Klasse beantworten. Schon beim Gedanken daran rast ihr Herz.",
+          "bild": "figur:jana:aengstlich"
+        },
+        {"art": "aufgabe", "text": "Was hat Chiara das Vermeiden gebracht?"},
+        {"art": "satzanfaenge", "items": ["Kurzfristig: …", "Langfristig: …"], "linien": 2},
+        {
+          "art": "aufgabe",
+          "text": "Und du? Was tust du, wenn du Angst hast?",
+          "hinweis": "Die ersten fünf Strategien sind menschlich – sie halten die Angst aber auf Dauer am Leben."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": ["oft", "manchmal", "selten"],
+          "items": [
+            "Ich gehe der Situation aus dem Weg.",
+            "Ich finde Ausreden oder melde mich krank.",
+            "Ich lenke mich mit dem Handy ab.",
+            "Ich frage immer wieder nach, ob alles gut geht.",
+            "Ich mache es nur, wenn jemand mitkommt.",
+            "Ich bleibe dabei, bis es leichter wird."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Baue deine Angstleiter: Wähle eine Angst und ordne sechs Schritte – unten der leichteste, oben der schwerste.",
+          "hinweis": "Notiere die Angst (0–10). Chiaras Leiter beginnt so: allein laut lesen (2), einer Freundin vortragen (4)."
+        },
+        {"art": "leiter", "stufen": 6, "oben": "am schwersten (Angst 8–10)", "unten": "am leichtesten (Angst 2–3)"},
+        {"art": "aufgabe", "text": "Plane deinen ersten Schritt so genau wie möglich."},
+        {
+          "art": "satzanfaenge",
+          "items": ["Mein erster Schritt: …", "Wann und wo: …", "Das sage ich mir, wenn die Angst steigt: …", "Wer mich unterstützt: …"]
+        },
+        {"art": "notfall"}
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen verstehen, dass Angst von selbst steigt und wieder sinkt und dass Vermeidung sie aufrechterhält. Sie bauen eine eigene Angstleiter und planen einen ersten, gut machbaren Schritt.",
+        "ablauf": [
+          "Einstieg (5 Min.): Die Angstkurve an die Tafel zeichnen (Anstieg, Gipfel, Abfall). Frage: „Was passiert mit der Angst, wenn man geht – und was, wenn man bleibt?“",
+          "Info-Kasten und Fallvignette lesen, Aufgabe 1 im Plenum besprechen.",
+          "Aufgabe 2 still und einzeln. Betonen: Diese Strategien sind menschlich – sie helfen nur auf Dauer nicht.",
+          "Aufgabe 3 und 4: Leiter bauen und den ersten Schritt planen, bei Bedarf in Einzelbegleitung. Die erste Stufe muss gut machbar sein.",
+          "In den folgenden Wochen nachfragen und jeden Schritt anerkennen, auch einen Versuch."
+        ],
+        "hintergrund": "Angst ist ein Alarmsystem, das manchmal zu empfindlich reagiert. Vermeiden beruhigt kurzfristig, verhindert aber die Erfahrung, dass die Situation zu bewältigen ist; auch Ausreden, Ablenkung oder ständiges Rückversichern halten die Angst aufrecht (Beck, 2011). Wirksam ist deshalb die schrittweise Konfrontation: Wer in der Situation bleibt, erlebt, dass die Angst einen Höhepunkt erreicht und wieder sinkt. Die Angstleiter ordnet diese Erfahrungen nach Schwierigkeit; sie ist ein Kernelement kognitiv-verhaltenstherapeutischer Programme für Kinder und Jugendliche (Kendall & Hedtke, 2006; Rapee et al., 2008).",
+        "quellen": [
+          "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
+          "Kendall, P. C. & Hedtke, K. A. (2006). Cognitive-Behavioral Therapy for Anxious Children: Therapist Manual (3rd ed.). Ardmore, PA: Workbook Publishing.",
+          "Rapee, R. M., Wignall, A., Spence, S. H., Cobham, V. & Lyneham, H. (2008). Helping Your Anxious Child (2nd ed.). Oakland: New Harbinger."
+        ],
+        "differenzierung": {
+          "leichter": "Nur vier Stufen planen; Aufgabe 2 weglassen.",
+          "schwerer": "Für die erste Stufe eine Angstkurve protokollieren: Angst (0–10) zu Beginn, nach 5, 10 und 15 Minuten."
+        },
+        "impulse": ["Welche Situation hast du lange vermieden?", "Was unterscheidet Gefahr von Angst?", "Wer unterstützt dich beim ersten Schritt?"],
+        "tipps": [
+          "Niemanden zu einer Stufe drängen: Die Jugendlichen bestimmen Tempo und Reihenfolge selbst.",
+          "Nicht mit Referaten oder Prüfungen beginnen, sondern mit geschützten Situationen."
+        ],
+        "achtung": "Das Blatt ersetzt keine Behandlung. Bei starker oder lang anhaltender Angst, Panikattacken oder Schulvermeidung das Gespräch suchen und die zuständige Leitung (Responsable) bzw. den SePAS einbeziehen.",
+        "material": "Keines"
+      }
+    },
+    "fr": {
+      "titel": "Comprendre la peur – et l’affronter",
+      "untertitel": "La peur est désagréable, mais pas dangereuse. Qui comprend comment elle fonctionne peut l’affronter pas à pas.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Comment fonctionne la peur",
+          "punkte": [
+            "La peur est un système d’alarme : cœur qui bat, respiration rapide et tension préparent le corps à fuir ou à se battre.",
+            "La peur fonctionne comme une vague : elle monte, atteint un pic et redescend – même si tu ne fais rien.",
+            "Éviter soulage tout de suite. Mais le cerveau retient : « C’était dangereux. » La fois suivante, la peur est plus forte.",
+            "Qui affronte la situation par petites étapes découvre : « Je peux le supporter. » Ainsi, la peur diminue peu à peu."
+          ]
+        },
+        {
+          "art": "geschichte",
+          "titel": "Chiara et l’exposé",
+          "text": "Chiara (14 ans) doit faire un exposé en cours de français. Depuis des jours, elle dort mal. Le matin même, elle se fait porter malade – et se sent aussitôt soulagée. Deux semaines plus tard, elle doit simplement répondre à une question devant la classe. Rien que d’y penser, son cœur s’emballe.",
+          "bild": "figur:jana:aengstlich"
+        },
+        {"art": "aufgabe", "text": "Qu’est-ce que l’évitement a apporté à Chiara ?"},
+        {"art": "satzanfaenge", "items": ["À court terme : …", "À long terme : …"], "linien": 2},
+        {
+          "art": "aufgabe",
+          "text": "Et toi ? Que fais-tu quand tu as peur ?",
+          "hinweis": "Les cinq premières stratégies sont humaines – mais, à la longue, elles entretiennent la peur."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": ["souvent", "parfois", "rarement"],
+          "items": [
+            "J’évite la situation.",
+            "Je trouve des excuses ou je me fais porter malade.",
+            "Je me distrais avec mon téléphone.",
+            "Je demande sans cesse si tout va bien se passer.",
+            "Je ne le fais que si quelqu’un m’accompagne.",
+            "Je reste dans la situation jusqu’à ce que ça aille mieux."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Construis ton échelle de la peur : choisis une peur et range six étapes – en bas la plus facile, en haut la plus difficile.",
+          "hinweis": "Note la peur (0–10). L’échelle de Chiara commence ainsi : lire seule à voix haute (2), présenter à une amie (4)."
+        },
+        {"art": "leiter", "stufen": 6, "oben": "le plus difficile (peur 8–10)", "unten": "le plus facile (peur 2–3)"},
+        {"art": "aufgabe", "text": "Planifie ta première étape aussi précisément que possible."},
+        {
+          "art": "satzanfaenge",
+          "items": ["Ma première étape : …", "Quand et où : …", "Ce que je me dis quand la peur monte : …", "Qui me soutient : …"]
+        },
+        {"art": "notfall"}
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes comprennent que la peur monte et redescend d’elle-même et que l’évitement l’entretient. Ils construisent leur propre échelle de la peur et planifient une première étape bien réalisable.",
+        "ablauf": [
+          "Entrée en matière (5 min) : dessiner la courbe de la peur au tableau (montée, pic, descente). Question : « Que devient la peur si l’on part – et si l’on reste ? »",
+          "Lire l’encadré et la vignette ; discuter l’exercice 1 en plénière.",
+          "Exercice 2 en silence, individuellement. Souligner : ces stratégies sont humaines – elles n’aident simplement pas à la longue.",
+          "Exercices 3 et 4 : construire l’échelle et planifier la première étape, si besoin avec un accompagnement individuel. La première étape doit être bien réalisable.",
+          "Les semaines suivantes, prendre des nouvelles et reconnaître chaque pas, même une tentative."
+        ],
+        "hintergrund": "La peur est un système d’alarme qui réagit parfois de façon trop sensible. L’évitement apaise à court terme, mais empêche l’expérience correctrice que la situation est gérable ; des formes plus discrètes comme les excuses, la distraction ou le besoin constant d’être rassuré entretiennent aussi la peur (Beck, 2011). L’exposition progressive est donc efficace : qui reste dans la situation constate que la peur atteint un pic, puis redescend. L’échelle de la peur ordonne ces expériences par difficulté ; elle est un élément central des programmes cognitivo-comportementaux pour enfants et adolescent·e·s (Kendall & Hedtke, 2006 ; Rapee et al., 2008).",
+        "quellen": [
+          "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
+          "Kendall, P. C. & Hedtke, K. A. (2006). Cognitive-Behavioral Therapy for Anxious Children: Therapist Manual (3rd ed.). Ardmore, PA: Workbook Publishing.",
+          "Rapee, R. M., Wignall, A., Spence, S. H., Cobham, V. & Lyneham, H. (2008). Helping Your Anxious Child (2nd ed.). Oakland: New Harbinger."
+        ],
+        "differenzierung": {
+          "leichter": "Planifier seulement quatre étapes ; laisser de côté l’exercice 2.",
+          "schwerer": "Pour la première étape, noter une courbe de la peur : niveau (0–10) au début, puis après 5, 10 et 15 minutes."
+        },
+        "impulse": ["Quelle situation as-tu longtemps évitée ?", "Qu’est-ce qui distingue un danger de la peur ?", "Qui te soutient pour ta première étape ?"],
+        "tipps": [
+          "Ne pousser personne vers une étape : les jeunes décident eux-mêmes du rythme et de l’ordre.",
+          "Ne pas commencer par des exposés ou des examens, mais par des situations protégées."
+        ],
+        "achtung": "Cette fiche ne remplace pas un traitement. En cas de peur forte ou durable, de crises de panique ou de refus scolaire, chercher le dialogue et impliquer la direction compétente (responsable) ou le SePAS.",
+        "material": "Aucun"
+      }
+    }
   }
 ]

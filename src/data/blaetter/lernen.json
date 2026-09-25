@@ -155,5 +155,1228 @@
         "material": "En option : minuteur de cuisine ou application"
       }
     }
+  },
+  {
+    "id": "konzentrations-tricks",
+    "bereich": "lernen",
+    "thema": "aufmerksamkeit",
+    "stufen": ["C2"],
+    "sozialform": ["einzeln", "gruppe"],
+    "dauer": "30 Min.",
+    "eldib": ["V-11", "V-15", "V-18"],
+    "schlagworte": ["Konzentration", "Ablenkung", "Stopp-Signal", "Bewegungspause", "Signalkarten"],
+    "bild": "icon:target",
+    "verwandt": ["ich-sage-mir-selbst", "fokus"],
+    "de": {
+      "titel": "Meine Konzentrations-Tricks",
+      "untertitel": "Manchmal wandern die Gedanken weg. Das passiert allen. Mit Tricks holst du sie zurück.",
+      "bausteine": [
+        { "art": "aufgabe", "text": "Was lenkt dich ab? Kreise ein.", "symbole": ["einkreisen"] },
+        {
+          "art": "bilder",
+          "modus": "einkreisen",
+          "spalten": 4,
+          "bilder": [
+            { "bild": "icon:ear", "text": "Lärm" },
+            { "bild": "icon:messages", "text": "Jemand redet" },
+            { "bild": "icon:device-mobile", "text": "Handy" },
+            { "bild": "icon:puzzle", "text": "Spielsachen" },
+            { "bild": "icon:apple", "text": "Hunger" },
+            { "bild": "icon:zzz", "text": "müde" },
+            { "bild": "icon:bubble", "text": "Gedanken" },
+            { "bild": "icon:search", "text": "Sachen suchen" }
+          ]
+        },
+        { "art": "aufgabe", "text": "Was hilft dir? Kreuze an.", "hinweis": "Kreise danach deine zwei besten Tricks ein.", "symbole": ["ankreuzen"] },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "frei": 2,
+          "items": [
+            "Ich sitze an einem ruhigen Platz.",
+            "Mein Tisch ist aufgeräumt.",
+            "Ich trage Kopfhörer gegen Lärm.",
+            "Ich mache eine Bewegungspause.",
+            "Ich trinke einen Schluck Wasser.",
+            "Ich sage mir leise: Stopp."
+          ]
+        },
+        { "art": "aufgabe", "text": "Schneide die Karten aus. Leg sie auf deinen Tisch.", "symbole": ["schneiden"] },
+        {
+          "art": "karten",
+          "spalten": 3,
+          "hoehe": 112,
+          "karten": [
+            { "titel": "Stopp", "text": "Wo bin ich? Zurück zur Aufgabe.", "bild": "motiv:stopp" },
+            { "titel": "Pause", "text": "Ich brauche kurz eine Pause.", "bild": "icon:player-pause" },
+            { "titel": "Hilfe", "text": "Ich komme nicht weiter.", "bild": "icon:help-circle" }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder erkennen, was sie beim Arbeiten ablenkt, wählen Hilfen für Platz und Pausen aus und lernen ein Stopp-Signal, mit dem sie ihre Aufmerksamkeit selbst zur Aufgabe zurückholen.",
+        "ablauf": [
+          "Einstieg (5 Min.): Abschweifen vormachen, dann die Hand auf den Tisch legen und leise sagen: „Stopp, zurück zur Aufgabe.“",
+          "Aufgabe 1: Bilder benennen, jedes Kind kreist ein. Betonen: Jeder Kopf wandert manchmal weg.",
+          "Aufgabe 2: Zwei Hilfen sofort ausprobieren (auf der Stelle gehen, Wasser trinken). Jedes Kind wählt zwei Tricks.",
+          "Aufgabe 3: Karten ausschneiden. Mit jedem Kind vereinbaren, was Pause- und Hilfe-Karte genau bedeuten.",
+          "Das Stopp-Signal in den nächsten Tagen oft üben, anfangs mit stiller Erinnerung durch die Lehrperson."
+        ],
+        "hintergrund": "Aufmerksamkeit gehört zu den exekutiven Funktionen, die sich über die ganze Kindheit entwickeln – vor allem die Fähigkeit, störende Reize zu übergehen und bei einer Aufgabe zu bleiben (Diamond, 2013). Sechs- bis Achtjährigen gelingt das nur für kurze Zeit. Sie brauchen äußere Hilfen: einen reizarmen Platz, Bewegungspausen und klare, vorher vereinbarte Signale. Programme für Kinder mit Aufmerksamkeitsproblemen verbinden solche Hilfen mit einfachen Selbstanweisungen (Döpfner et al., 2019). Das Stopp-Signal ist eine solche Selbstanweisung; es wirkt nur, wenn es vorher in ruhigen Momenten oft geübt wurde.",
+        "quellen": [
+          "Diamond, A. (2013). Executive functions. Annual Review of Psychology, 64, 135–168.",
+          "Döpfner, M., Schürmann, S. & Frölich, J. (2019). Therapieprogramm für Kinder mit hyperkinetischem und oppositionellem Problemverhalten THOP (6. Aufl.). Weinheim: Beltz."
+        ],
+        "differenzierung": {
+          "leichter": "Nur vier Bilder besprechen; zwei Tricks direkt ausprobieren statt ankreuzen.",
+          "schwerer": "Eine Woche lang notieren, wann die Stopp-Karte geholfen hat."
+        },
+        "impulse": [
+          "Woran merkst du, dass deine Gedanken woanders sind?",
+          "Wo kannst du im Klassenzimmer gut arbeiten?",
+          "Welcher Trick hat dir heute geholfen?"
+        ],
+        "tipps": [
+          "Anfangs mit einem stillen Zeichen an die Stopp-Karte erinnern, nicht vor der Klasse.",
+          "Bewegungspausen einplanen, bevor die Unruhe groß wird."
+        ],
+        "achtung": "Wenn ein Kind trotz Hilfen kaum bei einer Aufgabe bleiben kann: Beobachtungen festhalten und mit den Eltern und der zuständigen Leitung (Responsable) besprechen. Keine Diagnosen vermuten.",
+        "material": "Schere; optional Laminierfolie, Lärmschutz-Kopfhörer"
+      }
+    }
+  },
+  {
+    "id": "ich-sage-mir-selbst",
+    "bereich": "lernen",
+    "thema": "strategien",
+    "stufen": ["C3", "C4"],
+    "sozialform": ["einzeln", "gruppe"],
+    "dauer": "45 Min.",
+    "eldib": ["V-15", "V-25", "V-22"],
+    "schlagworte": ["Selbstinstruktion", "Denk-Sätze", "genau arbeiten", "Impulskontrolle", "Selbstkontrolle"],
+    "bild": "icon:message-circle",
+    "verwandt": ["konzentrations-tricks", "fokus"],
+    "de": {
+      "titel": "Ich sage mir selbst, was ich tue",
+      "untertitel": "Wer sich beim Arbeiten leise selbst anleitet, arbeitet ruhiger und genauer. Das kann man üben.",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "Zu schnell losgelegt",
+          "text": "Mathis bekommt ein Arbeitsblatt. Er will als Erster fertig sein und fängt sofort an. Nach fünf Minuten merkt er: Er sollte die Wörter gar nicht abschreiben, sondern ordnen. Mathis ärgert sich und radiert so fest, dass das Blatt reißt. Seine Lehrerin sagt ruhig: „Probier es mit Denk-Sätzen.“",
+          "bild": "figur:noah:enttaeuscht"
+        },
+        { "art": "aufgabe", "text": "Lies die fünf Denk-Sätze. Schreibe jeden in deinen eigenen Worten auf.", "hinweis": "Beispiel für Satz 1: „Was soll ich hier genau machen?“", "symbole": ["lesen", "schreiben"] },
+        {
+          "art": "schritte",
+          "linien": 1,
+          "items": [
+            { "titel": "Was ist meine Aufgabe?", "text": "Ich lese genau und sage die Aufgabe mit eigenen Worten." },
+            { "titel": "Wie gehe ich vor?", "text": "Ich überlege: Was mache ich zuerst, was danach?" },
+            { "titel": "Ich arbeite Schritt für Schritt.", "text": "Langsam und genau. Ich sage mir leise jeden Schritt." },
+            { "titel": "Ich prüfe.", "text": "Habe ich alles? Stimmt es? Einen Fehler verbessere ich in Ruhe." },
+            { "titel": "Ich lobe mich.", "text": "„Das habe ich gut gemacht.“ Oder: „Nächstes Mal achte ich auf …“" }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Laut – leise – im Kopf",
+          "text": "Sag die Denk-Sätze zuerst halblaut. Dann flüsterst du sie. Am Ende denkst du sie nur noch. So werden sie zu deiner inneren Stimme."
+        },
+        { "art": "aufgabe", "text": "Was denkt Mathis beim zweiten Versuch? Verbinde mit dem passenden Denk-Satz.", "symbole": ["verbinden"] },
+        {
+          "art": "zuordnen",
+          "titel": ["Mathis denkt", "Denk-Satz"],
+          "links": ["Was soll ich hier genau tun?", "Erst lesen, dann nummerieren.", "Eins nach dem anderen.", "Stimmt das wirklich?", "Das habe ich geschafft."],
+          "rechts": ["Ich prüfe.", "Was ist meine Aufgabe?", "Ich lobe mich.", "Wie gehe ich vor?", "Schritt für Schritt"]
+        },
+        { "art": "aufgabe", "text": "Übe eine Woche lang. Male einen Stern aus, wenn es geklappt hat.", "symbole": ["malen"] },
+        {
+          "art": "plan",
+          "symbol": "stern",
+          "zeilen": ["Ich habe die Denk-Sätze benutzt.", "Ich habe am Ende geprüft."]
+        },
+        { "art": "aufgabe", "text": "Schneide deine Denk-Karte aus. Leg sie beim Arbeiten auf deinen Tisch.", "hinweis": "Du kannst die Karten auch einzeln ausschneiden und an einen Ring hängen.", "symbole": ["schneiden"] },
+        {
+          "art": "karten",
+          "spalten": 3,
+          "hoehe": 104,
+          "karten": [
+            { "titel": "Meine Denk-Sätze", "text": "Erst denken, dann tun.", "bild": "icon:message-circle" },
+            { "titel": "1. Was ist meine Aufgabe?", "bild": "icon:search" },
+            { "titel": "2. Wie gehe ich vor?", "bild": "icon:route" },
+            { "titel": "3. Schritt für Schritt", "bild": "icon:stairs-up" },
+            { "titel": "4. Ich prüfe.", "bild": "icon:clipboard-check" },
+            { "titel": "5. Ich lobe mich.", "bild": "icon:thumb-up" }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder lernen fünf Denk-Sätze, mit denen sie sich beim Arbeiten selbst anleiten, und üben, sie erst laut, dann leise und schließlich nur im Kopf zu sprechen.",
+        "ablauf": [
+          "Einstieg (5 Min.): Geschichte vorlesen. Fragen: „Was ist schiefgelaufen? Was hätte Mathis sich sagen können?“",
+          "Vormachen (5 Min.): Eine Aufgabe an der Tafel lösen und dabei laut alle fünf Denk-Sätze sprechen – auch einen Fehler ruhig verbessern.",
+          "Aufgabe 1 und 2 (10 Min.): Sätze in eigene Worte fassen, Zuordnung gemeinsam kontrollieren.",
+          "Zu zweit üben: Ein Kind zeichnet ein Muster ab und spricht die Sätze laut, dann flüsternd, dann im Kopf; danach Rollen tauschen.",
+          "Karte ausschneiden. In der nächsten Woche vor Einzelarbeiten an die Karte erinnern und den Plan ausfüllen lassen."
+        ],
+        "hintergrund": "Das Selbstinstruktionstraining nach Meichenbaum und Goodman (1971) wurde für Kinder entwickelt, die impulsiv und vorschnell arbeiten. Sie lernen, sich mit kurzen Sätzen selbst zu steuern: Aufgabe klären, Vorgehen planen, Schritt für Schritt arbeiten, prüfen und sich bestärken – auch nach einem Fehler. Geübt wird in Stufen: Ein Erwachsener macht es laut vor, dann leitet das Kind sich selbst laut, flüsternd und schließlich innerlich an. Selbstinstruktion ist fester Bestandteil von Programmen für Kinder mit Aufmerksamkeitsproblemen (Döpfner et al., 2019). Entscheidend ist die Übertragung in den Alltag: Die Sätze müssen im Unterricht immer wieder angeregt werden.",
+        "quellen": [
+          "Meichenbaum, D. & Goodman, J. (1971). Training impulsive children to talk to themselves. Journal of Abnormal Psychology, 77(2), 115–126.",
+          "Döpfner, M., Schürmann, S. & Frölich, J. (2019). Therapieprogramm für Kinder mit hyperkinetischem und oppositionellem Problemverhalten THOP (6. Aufl.). Weinheim: Beltz."
+        ],
+        "differenzierung": {
+          "leichter": "Nur drei Sätze nutzen: Was ist meine Aufgabe? – Schritt für Schritt – Ich prüfe.",
+          "schwerer": "Eigene Denk-Sätze für schwierige Momente entwickeln, z. B. bei Ärger oder vor einem Test."
+        },
+        "impulse": [
+          "Welcher Denk-Satz fällt dir am schwersten?",
+          "Was sagst du dir, wenn dir ein Fehler passiert?",
+          "Wo willst du die Sätze morgen ausprobieren?"
+        ],
+        "tipps": [
+          "Selbst Vorbild sein: bei Tafelarbeiten ab und zu laut denken.",
+          "Leises Selbstgespräch beim Arbeiten ausdrücklich erlauben – es gehört zur Übung."
+        ],
+        "achtung": "Bleibt ein Kind trotz Übung sehr impulsiv und gerät dadurch oft in Konflikte: Beobachtungen festhalten und mit der zuständigen Leitung (Responsable) besprechen.",
+        "material": "Schere; optional Laminierfolie und Schlüsselring; kurze Übungsaufgaben (Muster, Labyrinth)"
+      }
+    }
+  },
+  {
+    "id": "fokus",
+    "bereich": "lernen",
+    "thema": "aufmerksamkeit",
+    "stufen": ["ES"],
+    "sozialform": ["einzeln", "gruppe"],
+    "dauer": "45 Min.",
+    "eldib": ["V-29", "V-32", "V-33"],
+    "schlagworte": ["Konzentration", "Ablenkung", "Handy", "Arbeitsblöcke", "Fokusplan", "Selbstregulation"],
+    "bild": "icon:target",
+    "verwandt": ["aufschieben-ueberlisten", "konzentrations-tricks", "die-woche-im-griff"],
+    "de": {
+      "titel": "Fokus: Ablenkungen erkennen und steuern",
+      "untertitel": "Konzentration ist nicht nur Willenssache. Sie lässt sich einrichten: mit passender Umgebung, klaren Handy-Regeln und festen Arbeitsblöcken.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Warum Ablenkung so viel kostet",
+          "text": "Nach jeder Unterbrechung braucht der Kopf eine Weile, um wieder in die Aufgabe hineinzufinden. Wer beim Lernen immer wieder kurz aufs Handy schaut, braucht deshalb länger – auch wenn es sich nicht so anfühlt. Ablenkungen kommen von außen (Nachrichten, Geräusche) und von innen (Gedanken, Hunger, Müdigkeit)."
+        },
+        { "art": "aufgabe", "text": "Was lenkt dich beim Lernen ab? Kreuze an, wie oft." },
+        {
+          "art": "einschaetzung",
+          "optionen": ["oft", "manchmal", "selten"],
+          "items": [
+            "Nachrichten und Benachrichtigungen auf dem Handy",
+            "Videos oder Apps „nur kurz“ zwischendurch",
+            "Geräusche, Gespräche oder der Fernseher im Hintergrund",
+            "Gedanken an andere Dinge (Pläne, Sorgen, Streit)",
+            "Hunger, Durst oder Müdigkeit",
+            "Unordnung auf dem Schreibtisch oder am Bildschirm",
+            "Andere, die mich beim Lernen ansprechen"
+          ]
+        },
+        { "art": "aufgabe", "text": "Wähle zwei Handy-Regeln aus, die du diese Woche testest." },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "frei": 1,
+          "items": [
+            "Das Handy liegt in einem anderen Raum.",
+            "Es ist stumm und liegt mit dem Display nach unten.",
+            "Der Fokus- oder Nicht-stören-Modus ist an.",
+            "Benachrichtigungen von Apps sind aus.",
+            "Ich schaue erst nach dem Arbeitsblock aufs Handy.",
+            "Ich sage Freunden: „Bin bis 18\u00a0Uhr offline.“",
+            "Apps, die viel Zeit kosten, haben ein Zeitlimit."
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "So funktioniert ein Arbeitsblock",
+          "punkte": [
+            "Vorher ein Ziel festlegen: Was genau will ich in diesem Block schaffen?",
+            "25 Minuten nur an dieser einen Sache arbeiten. Ein Timer zeigt das Ende.",
+            "Taucht ein ablenkender Gedanke auf: kurz notieren und weiterarbeiten.",
+            "Dann 5 Minuten Pause: aufstehen, trinken, bewegen. Nach vier Blöcken eine längere Pause."
+          ]
+        },
+        { "art": "aufgabe", "text": "Plane deine nächste Lernzeit in Arbeitsblöcken.", "hinweis": "Mache für jede Ablenkung einen Strich. So siehst du, ob deine Regeln wirken." },
+        {
+          "art": "tabelle",
+          "spalten": ["Block", "Ziel für diesen Block", "Ablenkungen", "Geschafft?"],
+          "breiten": [0.7, 3, 1.3, 1],
+          "zeilen": 4,
+          "beispiel": ["1", "20 Vokabeln (Englisch, Unit 4) wiederholen", "III", "ja"]
+        },
+        { "art": "aufgabe", "text": "Halte deinen Fokusplan fest. Ergänze die Sätze." },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Ich lerne am besten hier: …",
+            "Mein Handy ist während der Lernzeit …",
+            "Ein Arbeitsblock dauert bei mir … Minuten.",
+            "In der Pause mache ich …",
+            "Wenn ich merke, dass ich abschweife, …"
+          ]
+        },
+        { "art": "skala", "frage": "Wie sicher bist du, dass du deinen Fokusplan diese Woche umsetzt?", "von": "gar nicht sicher", "bis": "sehr sicher", "stufen": 11 },
+        { "art": "frage", "text": "Nach einer Woche: Welche Regel hat dir am meisten geholfen – und was änderst du?", "linien": 2 }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen erkennen ihre typischen Ablenkungen, legen Handy-Regeln fest, erproben Arbeitsblöcke und halten ihre Strategien in einem Fokusplan fest.",
+        "ablauf": [
+          "Einstieg (5 Min.): „Wie oft habt ihr gestern beim Lernen aufs Handy geschaut – geschätzt?“ Ohne Wertung sammeln.",
+          "Info-Kasten lesen, Aufgabe 1 allein (5 Min.). Auswerten: Welche Ablenkungen kommen von außen, welche von innen?",
+          "Aufgabe 2: Regeln wählen und zu zweit begründen.",
+          "Arbeitsblock erklären; einen kurzen Block von 10 Minuten in der Klasse ausprobieren.",
+          "Fokusplan ausfüllen. Nach einer Woche die Schlussfrage beantworten und Pläne anpassen."
+        ],
+        "hintergrund": "Aufmerksamkeit zu halten und Störreize auszublenden, gehört zu den exekutiven Funktionen, die sich bis ins junge Erwachsenenalter weiterentwickeln (Diamond, 2013). Willenskraft allein reicht dafür selten; wirksamer ist es, die Umgebung so zu gestalten, dass Ablenkung gar nicht erst entsteht. Selbstreguliert Lernende planen ihre Arbeitszeit, beobachten sich dabei und passen ihre Strategien an (Zimmerman, 2002). Die Methode nach Cirillo (2018) verbindet Arbeitsphasen von 25 Minuten mit kurzen Pausen; auftauchende Gedanken werden notiert statt verfolgt. Die Jugendlichen wählen ihre Regeln deshalb selbst und prüfen nach einer Woche, was bei ihnen wirkt.",
+        "quellen": [
+          "Diamond, A. (2013). Executive functions. Annual Review of Psychology, 64, 135–168.",
+          "Zimmerman, B. J. (2002). Becoming a self-regulated learner: An overview. Theory Into Practice, 41(2), 64–70.",
+          "Cirillo, F. (2018). The Pomodoro Technique. New York: Currency."
+        ],
+        "differenzierung": {
+          "leichter": "Nur Aufgabe 1 und 2 bearbeiten; Arbeitsblöcke von 15 Minuten vorschlagen.",
+          "schwerer": "Eine Woche lang Blöcke protokollieren und auswerten: Wann waren Ablenkungen am häufigsten?"
+        },
+        "impulse": [
+          "Wann fällt es dir am leichtesten, bei der Sache zu bleiben?",
+          "Was unterscheidet eine Pause von einer Ablenkung?",
+          "Wer könnte dich bei deinen Regeln unterstützen?"
+        ],
+        "tipps": [
+          "Die Handynutzung Einzelner nicht vorführen oder bewerten – es geht um Strategien, nicht um Kontrolle.",
+          "Bei Blockarbeit in der Klasse einen Timer für alle sichtbar laufen lassen."
+        ],
+        "achtung": "Wenn Jugendliche ihre Handynutzung kaum noch steuern können, Schlaf oder Freundschaften leiden oder starke Sorgen die Konzentration blockieren: Einzelgespräch suchen und den SePAS einbeziehen.",
+        "material": "Timer oder Uhr; optional eine Handy-Box für die Übungsphase"
+      }
+    },
+    "fr": {
+      "titel": "Se concentrer malgré les distractions",
+      "untertitel": "La concentration n’est pas qu’une question de volonté : elle s’organise, avec le bon cadre, des règles pour le téléphone et des plages de travail.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Pourquoi les distractions coûtent cher",
+          "text": "Après chaque interruption, le cerveau a besoin d’un moment pour se replonger dans la tâche. Jeter sans cesse un œil à son téléphone en travaillant fait donc perdre du temps – même si on n’en a pas l’impression. Les distractions viennent de l’extérieur (messages, bruits) et de l’intérieur (pensées, faim, fatigue)."
+        },
+        { "art": "aufgabe", "text": "Qu’est-ce qui te distrait quand tu travailles ? Indique à quelle fréquence." },
+        {
+          "art": "einschaetzung",
+          "optionen": ["souvent", "parfois", "rarement"],
+          "items": [
+            "Les messages et notifications du téléphone",
+            "Des vidéos ou des applis « juste deux minutes »",
+            "Les bruits, les conversations ou la télé en fond",
+            "Des pensées sur autre chose (projets, soucis, disputes)",
+            "La faim, la soif ou la fatigue",
+            "Le désordre sur le bureau ou sur l’écran",
+            "Des personnes qui me parlent pendant que je travaille"
+          ]
+        },
+        { "art": "aufgabe", "text": "Choisis deux règles pour ton téléphone et teste-les cette semaine." },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "frei": 1,
+          "items": [
+            "Le téléphone est dans une autre pièce.",
+            "Il est en silencieux, écran contre la table.",
+            "Le mode Concentration ou « Ne pas déranger » est activé.",
+            "Les notifications des applis sont coupées.",
+            "Je ne regarde mon téléphone qu’après la plage de travail.",
+            "Je préviens mes ami·e·s : « Hors ligne jusqu’à 18\u00a0h. »",
+            "Les applis qui prennent beaucoup de temps ont une limite."
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Comment fonctionne une plage de travail",
+          "punkte": [
+            "Avant : fixer un objectif. Qu’est-ce que je veux avoir fait à la fin de cette plage ?",
+            "Travailler 25 minutes sur cette seule tâche. Un minuteur indique la fin.",
+            "Une pensée parasite arrive ? La noter en deux mots et continuer.",
+            "Puis 5 minutes de pause : se lever, boire, bouger. Après quatre plages, une pause plus longue."
+          ]
+        },
+        { "art": "aufgabe", "text": "Planifie ta prochaine séance de travail en plages.", "hinweis": "Fais un trait pour chaque distraction : tu verras si tes règles fonctionnent." },
+        {
+          "art": "tabelle",
+          "spalten": ["Plage", "Objectif de cette plage", "Distractions", "Réussi ?"],
+          "breiten": [0.7, 3, 1.3, 1],
+          "zeilen": 4,
+          "beispiel": ["1", "Revoir 20 mots de vocabulaire (anglais, unit 4)", "III", "oui"]
+        },
+        { "art": "aufgabe", "text": "Note ton plan de concentration : complète les phrases." },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Je travaille le mieux ici : …",
+            "Pendant que je travaille, mon téléphone est …",
+            "Une plage de travail dure chez moi … minutes.",
+            "Pendant la pause, je …",
+            "Quand je remarque que je décroche, je …"
+          ]
+        },
+        { "art": "skala", "frage": "À quel point es-tu sûr·e d’appliquer ton plan cette semaine ?", "von": "pas du tout sûr·e", "bis": "tout à fait sûr·e", "stufen": 11 },
+        { "art": "frage", "text": "Une semaine plus tard : quelle règle t’a le plus aidé·e – et que vas-tu changer ?", "linien": 2 }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes repèrent leurs distractions habituelles, fixent des règles pour leur téléphone, testent des plages de travail et rédigent leur plan de concentration.",
+        "ablauf": [
+          "Entrée (5 min) : « Hier, combien de fois avez-vous regardé votre téléphone en travaillant ? » Recueillir sans juger.",
+          "Lire l’encadré ; exercice 1 seul·e (5 min). Puis trier : distractions extérieures ou intérieures ?",
+          "Exercice 2 : choisir des règles et les justifier à deux.",
+          "Présenter la plage de travail ; en tester une de 10 minutes en classe.",
+          "Remplir le plan. Une semaine plus tard, répondre à la dernière question et ajuster."
+        ],
+        "hintergrund": "Maintenir son attention et ignorer les distractions relève des fonctions exécutives, qui se développent jusqu’au début de l’âge adulte (Diamond, 2013). La volonté seule suffit rarement ; mieux vaut organiser son environnement pour que la distraction n’apparaisse pas. Les élèves qui autorégulent leur apprentissage planifient leur temps de travail, s’observent et ajustent leurs stratégies (Zimmerman, 2002). La méthode de Cirillo (2018) alterne plages de 25 minutes et courtes pauses ; les pensées parasites sont notées au lieu d’être suivies. Les jeunes choisissent donc eux-mêmes leurs règles et vérifient au bout d’une semaine ce qui fonctionne pour eux.",
+        "quellen": [
+          "Diamond, A. (2013). Executive functions. Annual Review of Psychology, 64, 135–168.",
+          "Zimmerman, B. J. (2002). Becoming a self-regulated learner: An overview. Theory Into Practice, 41(2), 64–70.",
+          "Cirillo, F. (2018). The Pomodoro Technique. New York: Currency."
+        ],
+        "differenzierung": {
+          "leichter": "Exercices 1 et 2 seulement ; plages de 15 minutes.",
+          "schwerer": "Noter ses plages pendant une semaine et repérer quand on décroche le plus."
+        },
+        "impulse": [
+          "Quand restes-tu concentré·e le plus facilement ?",
+          "Pause ou distraction : quelle différence ?",
+          "Qui pourrait t’aider à tenir tes règles ?"
+        ],
+        "tipps": [
+          "Ne pas exposer ni juger l’usage du téléphone de chacun : il s’agit de stratégies, pas de contrôle.",
+          "En classe, afficher un minuteur visible de tous pendant la plage de travail."
+        ],
+        "achtung": "Si un·e jeune ne maîtrise plus son usage du téléphone, dort mal ou est bloqué·e par de fortes inquiétudes : entretien individuel et contact avec le SePAS.",
+        "material": "Minuteur ou horloge ; en option, une boîte à téléphones"
+      }
+    }
+  },
+  {
+    "id": "alles-an-seinen-platz",
+    "bereich": "lernen",
+    "thema": "ordnung",
+    "stufen": ["C1"],
+    "sozialform": ["gruppe", "einzeln"],
+    "dauer": "15–20 Min.",
+    "eldib": ["V-8", "V-9", "KOG-21"],
+    "schlagworte": ["Aufräumen", "Ordnung", "Zuerst-dann", "Bildkarten", "Routine", "Spielschule"],
+    "bild": "icon:basket",
+    "verwandt": ["meine-schultasche", "arbeitsplatz-check"],
+    "de": {
+      "titel": "Alles an seinen Platz",
+      "anleitung": "Die Bilder gemeinsam benennen. Das Kind verbindet jedes Ding mit seinem Platz. Dann „Zuerst – dann“ besprechen: „Zuerst räumen wir auf, dann …“ – das Kind malt, was danach kommt.",
+      "bausteine": [
+        { "art": "aufgabe", "text": "Wohin gehört das? Verbinde.", "symbole": ["zeigen", "verbinden"] },
+        {
+          "art": "bilder",
+          "modus": "nur",
+          "spalten": 4,
+          "bilder": [
+            { "bild": "icon:pencil", "text": "Stifte" },
+            { "bild": "icon:book", "text": "Buch" },
+            { "bild": "icon:ball-football", "text": "Ball" },
+            { "bild": "icon:shirt", "text": "Pulli" }
+          ]
+        },
+        { "art": "abstand", "hoehe": 26 },
+        {
+          "art": "bilder",
+          "modus": "nur",
+          "spalten": 4,
+          "bilder": [
+            { "bild": "icon:basket", "text": "Korb" },
+            { "bild": "icon:hanger", "text": "Garderobe" },
+            { "bild": "icon:books", "text": "Regal" },
+            { "bild": "icon:bucket", "text": "Becher" }
+          ]
+        },
+        { "art": "aufgabe", "text": "Zuerst aufräumen, dann …? Male.", "symbole": ["malen"] },
+        {
+          "art": "comic",
+          "spalten": 3,
+          "felder": [
+            { "figuren": ["figur:mia:ruhig:geben"], "requisit": "icon:basket", "blase": "keine", "untertitel": "Zuerst: aufräumen" },
+            { "figuren": ["figur:mia:froh:jubeln"], "blase": "keine", "untertitel": "Fertig." },
+            { "leer": true, "untertitel": "Dann: …" }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder ordnen Alltagsgegenstände ihrem festen Platz zu und lernen mit „Zuerst – dann“ einen klaren Ablauf für das Aufräumen kennen.",
+        "ablauf": [
+          "Einstieg: Stift, Buch, Ball und Pulli zeigen. Fragen: „Wo wohnt der Stift bei uns?“ Die Kinder bringen die Dinge an ihren Platz.",
+          "Aufgabe 1: Bilder benennen. Die Kinder verbinden zuerst mit dem Finger, dann mit dem Stift.",
+          "Aufgabe 2: „Zuerst räumen wir auf, dann …“ sagen. Jedes Kind malt, was es danach gern macht.",
+          "Kisten und Regale im Raum mit denselben Bildern kennzeichnen.",
+          "Beim echten Aufräumen immer gleich ansagen: „Zuerst aufräumen, dann …“ – und das „Dann“ verlässlich einhalten."
+        ],
+        "hintergrund": "Kinder im Spielschulalter verstehen Abläufe am besten über Bilder und feste Wiederholung. Hat jeder Gegenstand einen gekennzeichneten Platz, können sie selbstständig aufräumen, ohne dass Erwachsene jeden Schritt ansagen. Bildkarten und Ablaufpläne erleichtern das Verstehen von Anweisungen und senken Stress bei Übergängen (Hodgdon, 1995; Mesibov et al., 2004). „Zuerst – dann“ nutzt ein einfaches Lernprinzip: Eine weniger beliebte Tätigkeit wird verlässlich von einer beliebten gefolgt (Premack, 1959). Entscheidend ist, dass das „Dann“ wirklich kommt – sonst verliert die Ansage ihre Wirkung.",
+        "quellen": [
+          "Hodgdon, L. A. (1995). Visual Strategies for Improving Communication. Troy, MI: QuirkRoberts.",
+          "Mesibov, G. B., Shea, V. & Schopler, E. (2004). The TEACCH Approach to Autism Spectrum Disorders. New York: Springer.",
+          "Premack, D. (1959). Toward empirical behavior laws: I. Positive reinforcement. Psychological Review, 66(4), 219–233."
+        ],
+        "differenzierung": {
+          "leichter": "Mit zwei Paaren beginnen; echte Gegenstände statt Bildern zuordnen.",
+          "schwerer": "Das Kind sucht im Raum weitere Dinge und zeigt ihren Platz."
+        },
+        "impulse": [
+          "Wo wohnt dein Lieblingsspielzeug?",
+          "Was machst du gern nach dem Aufräumen?"
+        ],
+        "tipps": [
+          "Aufräumen immer mit demselben Signal ankündigen, z. B. einem kurzen Lied.",
+          "Kleine Aufträge geben („Du räumst die Bälle ein.“) statt „Räum alles auf.“"
+        ],
+        "material": "Stift, Buch, Ball und Pulli zum Zeigen; Buntstifte; Bildkarten für Kisten und Regale"
+      }
+    }
+  },
+  {
+    "id": "meine-schultasche",
+    "bereich": "lernen",
+    "thema": "ordnung",
+    "stufen": ["C2"],
+    "sozialform": ["einzeln", "gruppe"],
+    "dauer": "30 Min.",
+    "eldib": ["V-8", "V-16", "KOG-15"],
+    "schlagworte": ["Schultasche", "Packliste", "Abendroutine", "Selbstständigkeit", "Material"],
+    "bild": "icon:backpack",
+    "verwandt": ["alles-an-seinen-platz", "arbeitsplatz-check", "mein-schultag-in-bildern"],
+    "de": {
+      "titel": "Meine Schultasche",
+      "untertitel": "Wer am Abend packt, hat am Morgen alles dabei.",
+      "bausteine": [
+        { "art": "aufgabe", "text": "Was kommt in deine Schultasche? Kreise ein.", "hinweis": "Eine Sache bleibt zu Hause.", "symbole": ["einkreisen"] },
+        {
+          "art": "bilder",
+          "modus": "einkreisen",
+          "spalten": 4,
+          "bilder": [
+            { "bild": "icon:notebook", "text": "Aufgabenheft" },
+            { "bild": "icon:pencil", "text": "Mäppchen" },
+            { "bild": "icon:book", "text": "Bücher" },
+            { "bild": "icon:bottle", "text": "Trinkflasche" },
+            { "bild": "icon:bread", "text": "Pausenbrot" },
+            { "bild": "icon:device-gamepad-2", "text": "Spielkonsole" },
+            { "bild": "icon:mail", "text": "Elternbrief" },
+            { "bild": "icon:shoe", "text": "Turnschuhe" }
+          ]
+        },
+        { "art": "aufgabe", "text": "Was brauchst du nur an manchen Tagen? Kreuze an.", "symbole": ["ankreuzen"] },
+        {
+          "art": "plan",
+          "symbol": "kasten",
+          "zeilen": ["Turnsachen", "Schwimmsachen", ""]
+        },
+        { "art": "aufgabe", "text": "Lies die vier Schritte. Pack heute Abend genauso.", "symbole": ["lesen"] },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 0,
+          "items": [
+            { "titel": "Stundenplan anschauen", "text": "Was brauche ich morgen?" },
+            { "titel": "Einpacken", "text": "Hefte, Bücher, Mäppchen" },
+            { "titel": "Prüfen", "text": "Ist alles da?" },
+            { "titel": "Tasche an die Tür", "text": "So vergisst du sie nicht." }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder wissen, was sie täglich und an bestimmten Tagen für die Schule brauchen, und lernen eine feste Abendroutine zum Packen ihrer Schultasche.",
+        "ablauf": [
+          "Einstieg (5 Min.): Eine gepackte Schultasche Stück für Stück auspacken. Bei jedem Ding fragen: „Brauchen wir das jeden Tag?“",
+          "Aufgabe 1: Bilder benennen und einkreisen. Klären: Was bleibt zu Hause?",
+          "Aufgabe 2: Mit dem Stundenplan der Klasse eintragen, wann Turn- und Schwimmsachen nötig sind.",
+          "Aufgabe 3: Die vier Schritte vorlesen und mit einer echten Tasche nachspielen.",
+          "Das Blatt mit nach Hause geben. Die Eltern bitten, das Packen zu begleiten, aber nicht zu übernehmen."
+        ],
+        "hintergrund": "An Dinge zu denken, die erst am nächsten Tag gebraucht werden, verlangt Planung und Arbeitsgedächtnis – Fähigkeiten, die in der Grundschulzeit noch im Aufbau sind. Barkley (2012) empfiehlt deshalb, wichtige Informationen dort sichtbar zu machen, wo gehandelt wird: als Liste, Bild oder Karte. Bildgestützte Checklisten ermöglichen auch Kindern, die noch nicht sicher lesen, selbstständig zu arbeiten (Hodgdon, 1995). Eine feste Abendroutine mit immer gleichen Schritten entlastet den Morgen. Ziel ist, dass das Kind die Verantwortung nach und nach selbst übernimmt.",
+        "quellen": [
+          "Barkley, R. A. (2012). Executive Functions: What They Are, How They Work, and Why They Evolved. New York: Guilford.",
+          "Hodgdon, L. A. (1995). Visual Strategies for Improving Communication. Troy, MI: QuirkRoberts."
+        ],
+        "differenzierung": {
+          "leichter": "Nur vier Dinge besprechen; Fotos der eigenen Sachen als Packliste nutzen.",
+          "schwerer": "Eine eigene Packliste für einen besonderen Tag schreiben, z. B. für einen Ausflug."
+        },
+        "impulse": [
+          "Wo steht deine Tasche am besten, damit du sie morgens siehst?",
+          "Wer kann dich am Abend an das Packen erinnern?",
+          "Was hilft dir, wenn doch einmal etwas fehlt?"
+        ],
+        "tipps": [
+          "Die Packliste zu Hause an einer festen Stelle aufhängen, z. B. an der Zimmertür.",
+          "Gelungenes Packen konkret anerkennen („Du hast an die Turnschuhe gedacht.“), statt Vergessenes zu tadeln."
+        ],
+        "achtung": "Vergisst ein Kind sehr häufig Material, nicht mit Strafen reagieren. Ursachen im Gespräch klären; bei Hinweisen auf Belastungen zu Hause die zuständige Leitung (Responsable) einbeziehen.",
+        "material": "Gepackte Schultasche zum Zeigen; Stundenplan der Klasse"
+      }
+    }
+  },
+  {
+    "id": "arbeitsplatz-check",
+    "bereich": "lernen",
+    "thema": "ordnung",
+    "stufen": ["C3", "C4"],
+    "sozialform": ["einzeln", "klasse"],
+    "dauer": "40 Min.",
+    "eldib": ["V-16", "V-27", "V-22"],
+    "schlagworte": ["Arbeitsplatz", "Ordnung", "Material", "Mäppchen", "Wochen-Check"],
+    "bild": "icon:checklist",
+    "verwandt": ["meine-schultasche", "mein-ordnungssystem"],
+    "de": {
+      "titel": "Mein Arbeitsplatz-Check",
+      "untertitel": "Auf einem aufgeräumten Tisch findest du schneller, was du brauchst. Und du fängst leichter an.",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "Wo ist der Füller?",
+          "text": "Diogo soll einen kurzen Text in sein Heft schreiben. Auf seinem Tisch liegen drei Hefte, die Brotdose, zwei Sammelkarten und ein zerknülltes Blatt. Sein Füller ist weg. Diogo sucht in der Tasche, unter dem Tisch und im Fach. Als er ihn endlich findet, sind die anderen schon fast fertig.",
+          "bild": "figur:tom:verwirrt"
+        },
+        { "art": "aufgabe", "text": "Was braucht Diogo für seine Aufgabe? Kreuze nur das an.", "symbole": ["lesen", "ankreuzen"] },
+        {
+          "art": "ankreuzen",
+          "spalten": 3,
+          "items": ["sein Heft", "die Brotdose", "den Füller", "die Sammelkarten", "den Tintenkiller", "das zerknüllte Blatt", "die anderen Hefte"]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Die Tisch-Regel",
+          "text": "Beim Arbeiten liegt auf dem Tisch nur, was du für diese Aufgabe brauchst. Alles andere hat einen festen Platz: in der Tasche, im Fach oder im Mäppchen."
+        },
+        { "art": "aufgabe", "text": "Prüfe dein Mäppchen. Kreuze an.", "hinweis": "Was fehlt, schreibst du auf einen Zettel für zu Hause.", "symbole": ["ankreuzen"] },
+        {
+          "art": "einschaetzung",
+          "optionen": ["da", "fehlt", "kaputt oder leer"],
+          "items": ["Bleistift, gespitzt", "Radiergummi", "Füller und Patronen", "Tintenkiller", "Buntstifte", "Lineal", "Klebestift"]
+        },
+        { "art": "aufgabe", "text": "Zeichne deinen Tisch so, wie er beim Arbeiten aussehen soll.", "hinweis": "Was liegt darauf? Wo ist der Rest?", "symbole": ["malen"] },
+        { "art": "feld", "zeichnen": true, "hoehe": 10 },
+        { "art": "aufgabe", "text": "Mach jeden Freitag deinen Wochen-Check. Kreuze an, was du geschafft hast.", "symbole": ["ankreuzen"] },
+        {
+          "art": "plan",
+          "symbol": "kasten",
+          "tage": ["Woche 1", "Woche 2", "Woche 3", "Woche 4"],
+          "zeilen": ["Mein Mäppchen ist vollständig.", "Lose Blätter sind abgeheftet.", "Mein Fach ist aufgeräumt.", "Müll und Krümel sind weg."]
+        },
+        { "art": "rueckblick" }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder erkennen, wie Unordnung am Platz das Arbeiten bremst, prüfen ihr Material und führen einen wöchentlichen Arbeitsplatz-Check ein.",
+        "ablauf": [
+          "Einstieg (5 Min.): Geschichte vorlesen. Fragen: „Wie viel Zeit hat Diogo verloren? Wie geht es ihm?“",
+          "Aufgabe 1 besprechen und die Tisch-Regel an der Tafel festhalten.",
+          "Aufgabe 2: Jedes Kind leert sein Mäppchen und prüft es. Fehlendes auf einem Zettel für zu Hause notieren.",
+          "Aufgabe 3: Den Tisch zeichnen, wie er beim Arbeiten aussehen soll; zu zweit vergleichen.",
+          "Den ersten Wochen-Check gemeinsam machen (10 Min.) und als festes Freitagsritual einführen."
+        ],
+        "hintergrund": "Ein geordneter Arbeitsplatz ist keine Charakterfrage, sondern eine Gewohnheit, die man lernen kann. Zum selbstregulierten Lernen gehört ausdrücklich, die eigene Lernumgebung zu gestalten: Wer Ablenkendes wegräumt und Material bereitlegt, kann sich besser auf die Aufgabe konzentrieren (Zimmerman, 2002). Kinder mit Aufmerksamkeitsproblemen profitieren besonders von festen Plätzen für ihre Sachen, klaren Tischregeln und regelmäßigen Kontrollen mit Rückmeldung (Döpfner et al., 2019). Ein kurzer Check pro Woche verhindert, dass sich Unordnung aufstaut, und macht Fortschritte sichtbar.",
+        "quellen": [
+          "Zimmerman, B. J. (2002). Becoming a self-regulated learner: An overview. Theory Into Practice, 41(2), 64–70.",
+          "Döpfner, M., Schürmann, S. & Frölich, J. (2019). Therapieprogramm für Kinder mit hyperkinetischem und oppositionellem Problemverhalten THOP (6. Aufl.). Weinheim: Beltz."
+        ],
+        "differenzierung": {
+          "leichter": "Das Mäppchen mit echten Gegenständen statt Liste prüfen; im Wochen-Check nur zwei Punkte.",
+          "schwerer": "Regeln für den Arbeitsplatz zu Hause entwickeln und nach vier Wochen auswerten."
+        },
+        "impulse": [
+          "Was liegt bei dir oft auf dem Tisch, obwohl du es nicht brauchst?",
+          "Wo ist ein guter Platz für lose Blätter?",
+          "Wie fühlt es sich an, an einem leeren Tisch anzufangen?"
+        ],
+        "tipps": [
+          "Den Wochen-Check als gemeinsames Ritual gestalten, z. B. mit Musik und Timer – nie als Strafe.",
+          "Kindern, denen Ordnung schwerfällt, eine kleine Tischkarte mit der Regel geben, statt sie zu ermahnen."
+        ],
+        "achtung": "Fehlt regelmäßig Material, weil es zu Hause nicht ersetzt werden kann: das diskret klären und Unterstützung über die zuständige Leitung (Responsable) organisieren.",
+        "material": "Mäppchen der Kinder; Müllbeutel, Locher und Ordner für den ersten Check"
+      }
+    }
+  },
+  {
+    "id": "mein-ordnungssystem",
+    "bereich": "lernen",
+    "thema": "ordnung",
+    "stufen": ["ES"],
+    "sozialform": ["einzeln", "gruppe"],
+    "dauer": "45 Min.",
+    "eldib": ["V-29", "V-32", "KOG-62"],
+    "schlagworte": ["Ordnung", "Ablage", "Dateien", "Wochen-Rückblick", "Selbstorganisation"],
+    "bild": "icon:clipboard-list",
+    "verwandt": ["arbeitsplatz-check", "die-woche-im-griff"],
+    "de": {
+      "titel": "Mein Ordnungssystem",
+      "untertitel": "Wer weiß, wo was liegt, verliert weniger Zeit, verpasst keine Abgaben und lernt mit weniger Stress.",
+      "bausteine": [
+        { "art": "aufgabe", "text": "Wie organisiert bist du im Moment? Kreuze an." },
+        {
+          "art": "einschaetzung",
+          "optionen": ["stimmt", "teils", "stimmt nicht"],
+          "items": [
+            "Ich finde ein Arbeitsblatt von letzter Woche in unter einer Minute.",
+            "Lose Blätter landen oft irgendwo in meiner Tasche.",
+            "Ich notiere Aufgaben und Termine immer an derselben Stelle.",
+            "Meine Dateien haben Namen, an denen ich sie wiedererkenne.",
+            "In meinen Downloads oder Fotos herrscht Durcheinander.",
+            "Ich merke oft erst kurz vorher, dass etwas fehlt."
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Drei Grundregeln",
+          "punkte": [
+            "Alles hat einen festen Ort – auf Papier und digital.",
+            "Neues kommt sofort an seinen Ort oder in ein Eingangsfach, das regelmäßig geleert wird.",
+            "Einmal pro Woche wird aufgeräumt und vorausgeschaut."
+          ]
+        },
+        { "art": "aufgabe", "text": "Lege dein Papier-System fest: ein Ordner oder eine Mappe pro Fach.", "hinweis": "Ein Eingangsfach für alles Neue gehört dazu." },
+        {
+          "art": "tabelle",
+          "spalten": ["Ordner / Mappe", "Was kommt hinein?", "Farbe oder Zeichen"],
+          "breiten": [1.5, 3, 1.2],
+          "zeilen": 5,
+          "beispiel": ["Französisch", "Arbeitsblätter, Vokabellisten, korrigierte Tests", "blau"]
+        },
+        { "art": "aufgabe", "text": "Räume deine digitale Ablage auf. Ergänze die Sätze." },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Dateinamen, die man wiederfindet",
+          "text": "Datum – Fach – Inhalt, zum Beispiel: 2026-10-12_Geschichte_Referat-Industrialisierung. Steht das Datum in der Reihenfolge Jahr-Monat-Tag, sortieren sich die Dateien von selbst."
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 2,
+          "items": [
+            "Meine Schulordner auf dem Laptop oder in der Cloud heißen: …",
+            "Dateien benenne ich so: …",
+            "Fotos von der Tafel oder von Arbeitsblättern speichere ich …",
+            "Was ich nicht mehr brauche, lösche ich …"
+          ]
+        },
+        { "art": "aufgabe", "text": "Dein Wochen-Rückblick: 15 Minuten, einmal pro Woche. Lies die Schritte." },
+        {
+          "art": "schritte",
+          "linien": 0,
+          "items": [
+            { "titel": "Tasche leeren", "text": "Alle losen Blätter herausnehmen." },
+            { "titel": "Einsortieren", "text": "Jedes Blatt in seinen Ordner, Unnötiges ins Altpapier." },
+            { "titel": "Digital aufräumen", "text": "Downloads und Fotos in Ordner verschieben und sinnvoll benennen." },
+            { "titel": "Vorausschauen", "text": "Termine und Abgaben der nächsten Woche eintragen." },
+            { "titel": "Material prüfen", "text": "Was fehlt? Auf die Einkaufsliste setzen." }
+          ]
+        },
+        { "art": "aufgabe", "text": "Lege fest, wann du deinen Wochen-Rückblick machst." },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [{ "wenn": "Wenn ich am Freitag nach Hause komme,", "dann": "mache ich als Erstes meinen Wochen-Rückblick am Schreibtisch." }]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen prüfen ihre bisherige Organisation, legen ein einfaches Ablagesystem für Papier und Dateien fest und machen den Wochen-Rückblick zur Gewohnheit.",
+        "ablauf": [
+          "Einstieg (5 Min.): „Zeigt das Arbeitsblatt vom letzten Montag – wie lange braucht ihr?“ Kurz ausprobieren.",
+          "Selbsteinschätzung (5 Min.), dann die drei Grundregeln gemeinsam lesen.",
+          "Papier-System festlegen; Farben nach Möglichkeit in der Klasse abstimmen.",
+          "Digitale Ablage: Wenn Geräte da sind, direkt einen Ordner anlegen und drei Dateien umbenennen.",
+          "Wochen-Rückblick besprechen und den Wenn-dann-Plan formulieren. Nach zwei Wochen nachfragen."
+        ],
+        "hintergrund": "Ordnung entlastet das Arbeitsgedächtnis: Wer nicht ständig suchen und sich Termine merken muss, hat mehr Kapazität für das eigentliche Lernen. Barkley (2012) beschreibt es als zentrale Hilfe, Informationen außerhalb des Kopfes festzuhalten – in Ordnern, Listen und Kalendern. Im Modell des selbstregulierten Lernens gehören das Gestalten der Lernumgebung und regelmäßige Selbstreflexion zu den Strategien erfolgreicher Lernender (Zimmerman, 2002). Ein System funktioniert nur, wenn es gepflegt wird; der feste Wochen-Rückblick ist deshalb der wichtigste Teil. Wenn-dann-Pläne helfen, ihn zur Gewohnheit zu machen (Gollwitzer, 1999).",
+        "quellen": [
+          "Barkley, R. A. (2012). Executive Functions: What They Are, How They Work, and Why They Evolved. New York: Guilford.",
+          "Zimmerman, B. J. (2002). Becoming a self-regulated learner: An overview. Theory Into Practice, 41(2), 64–70.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "differenzierung": {
+          "leichter": "Nur das Papier-System und einen Termin für den Rückblick festlegen.",
+          "schwerer": "Ein Ablagesystem für ein größeres Projekt entwerfen (Referat, Praktikum) und nach vier Wochen prüfen."
+        },
+        "impulse": [
+          "Was hast du zuletzt gesucht – und wo war es?",
+          "Welche Regel wäre für dich die wichtigste?",
+          "Wer oder was erinnert dich an den Rückblick?"
+        ],
+        "tipps": [
+          "Den ersten Wochen-Rückblick im Unterricht gemeinsam durchführen.",
+          "Ordner und Farben in der Klasse vereinheitlichen, wo es geht."
+        ],
+        "achtung": "Plötzliche starke Unordnung, nicht mehr abgegebene Arbeiten oder Rückzug können auf Belastungen hinweisen: das Gespräch suchen und bei Bedarf den SePAS einbeziehen.",
+        "material": "Ordner, Mappen, Farbpunkte; wenn vorhanden Laptop oder Tablet"
+      }
+    },
+    "fr": {
+      "titel": "Mon système d’organisation",
+      "untertitel": "Savoir où se trouve chaque chose, c’est perdre moins de temps, ne rater aucune échéance et apprendre plus sereinement.",
+      "bausteine": [
+        { "art": "aufgabe", "text": "Où en es-tu dans ton organisation ? Coche." },
+        {
+          "art": "einschaetzung",
+          "optionen": ["vrai", "en partie", "faux"],
+          "items": [
+            "Je retrouve une fiche de la semaine dernière en moins d’une minute.",
+            "Les feuilles volantes finissent souvent n’importe où dans mon sac.",
+            "Je note devoirs et dates toujours au même endroit.",
+            "Mes fichiers ont des noms qui me permettent de les retrouver.",
+            "Mes téléchargements ou mes photos sont en désordre.",
+            "Je remarque souvent au dernier moment qu’il me manque quelque chose."
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Trois règles de base",
+          "punkte": [
+            "Chaque chose a sa place – sur papier comme sur l’ordinateur.",
+            "Ce qui est nouveau va tout de suite à sa place, ou dans une bannette « à trier » vidée régulièrement.",
+            "Une fois par semaine, on range et on regarde la semaine suivante."
+          ]
+        },
+        { "art": "aufgabe", "text": "Définis ton système papier : un classeur ou une pochette par matière.", "hinweis": "Ajoute une bannette « à trier » pour tout ce qui est nouveau." },
+        {
+          "art": "tabelle",
+          "spalten": ["Classeur / pochette", "Qu’est-ce qu’on y range ?", "Couleur ou signe"],
+          "breiten": [1.5, 3, 1.2],
+          "zeilen": 5,
+          "beispiel": ["Allemand", "Fiches, listes de vocabulaire, contrôles corrigés", "rouge"]
+        },
+        { "art": "aufgabe", "text": "Range tes fichiers numériques. Complète les phrases." },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Des noms de fichiers faciles à retrouver",
+          "text": "Date – matière – contenu, par exemple : 2026-10-12_Histoire_Expose-industrialisation. Avec la date dans l’ordre année-mois-jour, les fichiers se classent tout seuls."
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 2,
+          "items": [
+            "Mes dossiers de cours sur l’ordinateur ou dans le cloud s’appellent : …",
+            "Je nomme mes fichiers ainsi : …",
+            "Les photos du tableau ou des fiches, je les enregistre …",
+            "Ce dont je n’ai plus besoin, je le supprime …"
+          ]
+        },
+        { "art": "aufgabe", "text": "Ton bilan de la semaine : 15 minutes, une fois par semaine. Lis les étapes." },
+        {
+          "art": "schritte",
+          "linien": 0,
+          "items": [
+            { "titel": "Vider son sac", "text": "Sortir toutes les feuilles volantes." },
+            { "titel": "Trier", "text": "Chaque feuille dans son classeur, le reste au recyclage." },
+            { "titel": "Ranger le numérique", "text": "Déplacer téléchargements et photos dans les bons dossiers, les renommer." },
+            { "titel": "Anticiper", "text": "Noter les dates et les échéances de la semaine suivante." },
+            { "titel": "Vérifier le matériel", "text": "Que manque-t-il ? L’ajouter à la liste des courses." }
+          ]
+        },
+        { "art": "aufgabe", "text": "Décide quand tu fais ton bilan de la semaine." },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [{ "wenn": "Si je rentre à la maison le vendredi,", "dann": "je fais d’abord mon bilan de la semaine à mon bureau." }]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes font le point sur leur organisation, mettent en place un système simple pour le papier et les fichiers et font du bilan hebdomadaire une habitude.",
+        "ablauf": [
+          "Entrée (5 min) : « Montrez la fiche de lundi dernier – combien de temps vous faut-il ? » Essayer rapidement.",
+          "Auto-évaluation (5 min), puis lire ensemble les trois règles de base.",
+          "Définir son système papier ; si possible, harmoniser les couleurs dans la classe.",
+          "Rangement numérique : si des appareils sont disponibles, créer un dossier et renommer trois fichiers.",
+          "Présenter le bilan de la semaine, formuler le plan « si … alors ». Faire le point deux semaines plus tard."
+        ],
+        "hintergrund": "L’ordre soulage la mémoire de travail : qui ne doit pas sans cesse chercher ni retenir des dates garde plus de capacité pour apprendre. Barkley (2012) souligne l’intérêt de noter les informations hors de la tête – dans des classeurs, des listes et des agendas. Dans le modèle de l’apprentissage autorégulé, l’aménagement de son environnement et l’autoréflexion régulière font partie des stratégies des élèves qui réussissent (Zimmerman, 2002). Un système ne tient que s’il est entretenu ; le bilan hebdomadaire en est donc l’élément clé. Les plans « si … alors » aident à en faire une habitude (Gollwitzer, 1999).",
+        "quellen": [
+          "Barkley, R. A. (2012). Executive Functions: What They Are, How They Work, and Why They Evolved. New York: Guilford.",
+          "Zimmerman, B. J. (2002). Becoming a self-regulated learner: An overview. Theory Into Practice, 41(2), 64–70.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "differenzierung": {
+          "leichter": "Définir seulement le système papier et un moment pour le bilan.",
+          "schwerer": "Concevoir le rangement d’un projet plus long (exposé, stage) et le vérifier après quatre semaines."
+        },
+        "impulse": [
+          "Qu’as-tu cherché en dernier – et où était-ce ?",
+          "Quelle règle serait la plus importante pour toi ?",
+          "Qui ou quoi te rappellera ton bilan ?"
+        ],
+        "tipps": [
+          "Faire le premier bilan de la semaine ensemble en classe.",
+          "Harmoniser classeurs et couleurs dans la classe quand c’est possible."
+        ],
+        "achtung": "Un désordre soudain, des travaux qui ne sont plus rendus ou un repli sur soi peuvent signaler une difficulté : chercher le dialogue et, si besoin, impliquer le SePAS.",
+        "material": "Classeurs, pochettes, pastilles de couleur ; si possible, ordinateur portable ou tablette"
+      }
+    }
+  },
+  {
+    "id": "mein-schultag-in-bildern",
+    "bereich": "lernen",
+    "thema": "planen",
+    "stufen": ["C2"],
+    "sozialform": ["einzeln", "klasse"],
+    "dauer": "30 Min.",
+    "eldib": ["V-8", "KOG-31", "KOG-45"],
+    "schlagworte": ["Tagesablauf", "Tagesplan", "Uhrzeit", "Übergänge", "Veränderungen"],
+    "bild": "icon:clock",
+    "verwandt": ["meine-schultasche", "hausaufgabenplan"],
+    "de": {
+      "titel": "Mein Schultag in Bildern",
+      "untertitel": "Ein Plan zeigt, was heute kommt. So weißt du, wie es weitergeht.",
+      "bausteine": [
+        { "art": "aufgabe", "text": "Wie läuft dein Schultag? Schreibe die Uhrzeiten dazu.", "hinweis": "Deine Lehrerin oder dein Lehrer hilft dir. In die leere Zeile malst du etwas Eigenes.", "symbole": ["schreiben"] },
+        {
+          "art": "tagesplan",
+          "leer": 1,
+          "zeilen": [
+            { "zeit": "7:55", "bild": "icon:school", "text": "Ich komme in der Schule an." },
+            { "bild": "icon:pencil", "text": "Wir lernen in der Klasse." },
+            { "bild": "icon:ball-football", "text": "Pause auf dem Schulhof" },
+            { "bild": "icon:book", "text": "Wir lernen weiter." },
+            { "bild": "icon:tools-kitchen-2", "text": "Mittagessen: in der Kantine oder zu Hause" },
+            { "bild": "icon:building-community", "text": "Nachmittag: Schule oder Maison Relais" },
+            { "bild": "icon:home", "text": "Ich gehe nach Hause." }
+          ]
+        },
+        { "art": "aufgabe", "text": "Manchmal ist ein Tag anders. Was hilft dir dann? Kreuze an.", "symbole": ["ankreuzen"] },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "items": ["Ich schaue auf meinen Plan.", "Ich frage nach.", "Ich atme ruhig ein und aus.", "Ich sage: Das ist neu für mich."]
+        },
+        { "art": "rueckblick" }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder bringen die Abschnitte ihres Schultags in eine feste Reihenfolge, ordnen ihnen Uhrzeiten zu und wissen, was ihnen hilft, wenn ein Tag anders verläuft.",
+        "ablauf": [
+          "Einstieg (5 Min.): Bildkarten vom Schultag durcheinander an die Tafel hängen und gemeinsam ordnen: „Was kommt zuerst?“",
+          "Aufgabe 1: Die Bilder besprechen. Uhrzeiten mit einer großen Lernuhr bestimmen und eintragen.",
+          "Die leere Zeile für etwas Eigenes nutzen, z. B. Turnen, Schwimmen oder Musik.",
+          "Aufgabe 2: Von einer Änderung erzählen („Heute kommt eine andere Lehrerin.“). Fragen: „Was hilft euch dann?“",
+          "Einen Tagesplan mit denselben Bildern in der Klasse aufhängen und jeden Morgen kurz besprechen."
+        ],
+        "hintergrund": "Ein sichtbarer Tagesplan macht einen abstrakten Zeitablauf konkret: Kinder sehen, was jetzt geschieht, was als Nächstes kommt und wann der Tag endet. Das erleichtert Übergänge und senkt Unsicherheit, besonders bei Kindern, die Veränderungen schwer nehmen oder die Unterrichtssprache noch lernen (Hodgdon, 1995). Im TEACCH-Ansatz gehören Bildpläne zu den wichtigsten Mitteln, um Selbstständigkeit zu fördern (Mesibov et al., 2004). Änderungen sollten angekündigt und im Plan sichtbar gemacht werden, statt sie zu übergehen. Die Uhrzeiten verbinden den Plan mit dem Lesen der Uhr, das in diesem Alter geübt wird.",
+        "quellen": [
+          "Hodgdon, L. A. (1995). Visual Strategies for Improving Communication. Troy, MI: QuirkRoberts.",
+          "Mesibov, G. B., Shea, V. & Schopler, E. (2004). The TEACCH Approach to Autism Spectrum Disorders. New York: Springer."
+        ],
+        "differenzierung": {
+          "leichter": "Nur die Bilder besprechen und ganze Stunden eintragen.",
+          "schwerer": "Einen eigenen Plan für einen besonderen Tag gestalten, z. B. Ausflug oder Schulfest."
+        },
+        "impulse": [
+          "Welcher Teil des Tages gefällt dir am besten?",
+          "Was ist schwierig, wenn etwas anders ist als sonst?",
+          "Woran erkennst du, wie spät es ist?"
+        ],
+        "tipps": [
+          "Erledigte Abschnitte auf dem Klassenplan umdrehen oder abnehmen – so sehen die Kinder, wie der Tag vorangeht.",
+          "Änderungen möglichst früh am Morgen ankündigen."
+        ],
+        "achtung": "Reagiert ein Kind auf Änderungen im Ablauf regelmäßig mit starker Angst oder Wut: die Beobachtungen mit den Eltern und der zuständigen Leitung (Responsable) besprechen.",
+        "material": "Lernuhr; Bildkarten oder Fotos vom Schultag"
+      }
+    }
+  },
+  {
+    "id": "hausaufgabenplan",
+    "bereich": "lernen",
+    "thema": "planen",
+    "stufen": ["C3", "C4"],
+    "sozialform": ["einzeln", "gruppe"],
+    "dauer": "40–45 Min.",
+    "eldib": ["V-15", "SOZ-26", "KOG-45"],
+    "schlagworte": ["Hausaufgaben", "Wochenplan", "Reihenfolge", "Pausen", "Hilfe holen"],
+    "bild": "icon:calendar",
+    "verwandt": ["mein-schultag-in-bildern", "konzentrations-tricks", "die-woche-im-griff"],
+    "de": {
+      "titel": "Mein Hausaufgabenplan",
+      "untertitel": "Hausaufgaben gehen leichter, wenn Zeit, Ort und Reihenfolge feststehen. Und wenn du weißt, wer dir helfen kann.",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "Chiaras Dienstag",
+          "text": "Chiara kommt um vier Uhr aus der Maison Relais nach Hause. Sie schaut eine Folge ihrer Serie, dann noch eine. Um sechs Uhr fallen ihr die Hausaufgaben ein. Sie beginnt mit der schwersten Aufgabe und kommt nicht weiter. Beim Abendessen ist sie müde und schlecht gelaunt.",
+          "bild": "figur:lea:muede"
+        },
+        { "art": "aufgabe", "text": "Plane deine Hausaufgaben-Woche.", "hinweis": "Denk an Sport, Musik und Maison Relais: Wann bleibt Zeit?", "symbole": ["schreiben"] },
+        {
+          "art": "tabelle",
+          "spalten": ["Tag", "Wann?", "Wo?", "Wer kann helfen?"],
+          "breiten": [1, 1, 1.6, 2],
+          "zeilen": 5,
+          "beispiel": ["Montag", "16:30 Uhr", "am Küchentisch", "Papa, Hausaufgabenhilfe"]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Eine gute Reihenfolge",
+          "text": "Fang mit etwas Leichtem an, damit du in Schwung kommst. Dann kommt die schwerste Aufgabe dran, solange du noch frisch bist. Zum Schluss wieder etwas Leichtes."
+        },
+        { "art": "aufgabe", "text": "Plane die Hausaufgaben für heute. Was machst du zuerst?", "symbole": ["schreiben"] },
+        {
+          "art": "tabelle",
+          "spalten": ["Nr.", "Aufgabe", "leicht oder schwer?", "Minuten", "fertig"],
+          "breiten": [0.6, 3, 1.6, 1, 0.8],
+          "zeilen": 4,
+          "beispiel": ["1", "Lesen: Seite 12", "leicht", "10", "x"]
+        },
+        { "art": "aufgabe", "text": "Was machst du in deinen Pausen? Kreuze an.", "hinweis": "Nach etwa 20 Minuten Arbeit: 5 Minuten Pause – am besten ohne Bildschirm.", "symbole": ["ankreuzen"] },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "frei": 1,
+          "items": ["ein Glas Wasser trinken", "mich strecken", "zehn Hampelmänner machen", "aus dem Fenster schauen", "etwas Obst essen"]
+        },
+        { "art": "aufgabe", "text": "Du kommst nicht weiter? Geh diese Schritte durch.", "symbole": ["lesen"] },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 0,
+          "items": [
+            { "titel": "Noch einmal lesen", "text": "Was genau ist gefragt?" },
+            { "titel": "Im Heft nachschauen", "text": "Gibt es ein Beispiel?" },
+            { "titel": "Markieren, weitermachen", "text": "Später zurückkommen." },
+            { "titel": "Jemanden fragen", "text": "Wen? Schau in Aufgabe 1." }
+          ]
+        },
+        { "art": "rueckblick" }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder planen feste Zeiten und Orte für ihre Hausaufgaben, legen eine sinnvolle Reihenfolge mit Pausen fest und wissen, was sie tun und wen sie fragen können, wenn sie nicht weiterkommen.",
+        "ablauf": [
+          "Einstieg (5 Min.): Geschichte vorlesen. Fragen: „Was könnte Chiara anders machen?“ Ideen sammeln, ohne Chiara zu bewerten.",
+          "Aufgabe 1 (10 Min.): Wochenplan ausfüllen; feste Termine wie Sport oder Musik mitdenken.",
+          "Tipp-Kasten lesen. Aufgabe 2 mit den heutigen Hausaufgaben: Reihenfolge festlegen, Minuten schätzen.",
+          "Aufgabe 3 und 4 besprechen; die Schritte an einer echten Aufgabe durchspielen.",
+          "Das Blatt mit nach Hause geben. Nach einer Woche fragen: Was hat geklappt, was wurde geändert?"
+        ],
+        "hintergrund": "Hausaufgaben verlangen von Kindern, ihr Arbeiten selbst zu steuern: anfangen, dranbleiben, Schwierigkeiten lösen. Gute Selbstregulation beginnt mit der Planung – mit Zielen, Zeiten und einer Vorstellung davon, wie man vorgeht (Zimmerman, 2002). Kinder mit Aufmerksamkeitsproblemen profitieren besonders von festen Zeiten, einem ruhigen Platz, kurzen Arbeitsabschnitten und Pausen (Döpfner et al., 2019). Die Regel „erst die Aufgaben, dann die Serie“ nutzt ein einfaches Lernprinzip: Eine beliebte Tätigkeit wirkt als Belohnung, wenn sie auf eine weniger beliebte folgt (Premack, 1959). Wer hilft, sollte vorher geklärt sein.",
+        "quellen": [
+          "Zimmerman, B. J. (2002). Becoming a self-regulated learner: An overview. Theory Into Practice, 41(2), 64–70.",
+          "Döpfner, M., Schürmann, S. & Frölich, J. (2019). Therapieprogramm für Kinder mit hyperkinetischem und oppositionellem Problemverhalten THOP (6. Aufl.). Weinheim: Beltz.",
+          "Premack, D. (1959). Toward empirical behavior laws: I. Positive reinforcement. Psychological Review, 66(4), 219–233."
+        ],
+        "differenzierung": {
+          "leichter": "Nur die Tage mit Hausaufgaben eintragen; die Reihenfolge mündlich besprechen.",
+          "schwerer": "Eine Woche lang notieren, wie lange die Aufgaben wirklich gedauert haben, und mit der Schätzung vergleichen."
+        },
+        "impulse": [
+          "Wo kannst du zu Hause am besten arbeiten?",
+          "Was machst du, wenn dich jemand stört?",
+          "Woran merkst du, dass du eine Pause brauchst?"
+        ],
+        "tipps": [
+          "Mit den Eltern absprechen, welche Hilfe sinnvoll ist: ermutigen und da sein ja, Aufgaben lösen nein.",
+          "Dauern Hausaufgaben regelmäßig viel länger als vorgesehen, soll das Kind es rückmelden dürfen."
+        ],
+        "achtung": "Nicht jedes Kind hat zu Hause Ruhe oder Hilfe: Hausaufgabenhilfe und Maison Relais als Möglichkeiten nennen. Bei regelmäßigem Streit oder Tränen das Gespräch mit den Eltern suchen und die zuständige Leitung (Responsable) informieren.",
+        "material": "Stundenplan, Hausaufgabenheft; optional ein Küchentimer"
+      }
+    }
+  },
+  {
+    "id": "die-woche-im-griff",
+    "bereich": "lernen",
+    "thema": "planen",
+    "stufen": ["ES"],
+    "sozialform": ["einzeln", "gruppe"],
+    "dauer": "45 Min.",
+    "eldib": ["V-32", "V-29", "KOG-61"],
+    "schlagworte": ["Wochenplanung", "wichtig und dringend", "Puffer", "Rückblick", "Zeitmanagement"],
+    "bild": "icon:calendar-event",
+    "verwandt": ["aufschieben-ueberlisten", "fokus", "mein-ordnungssystem", "hausaufgabenplan"],
+    "de": {
+      "titel": "Die Woche im Griff",
+      "untertitel": "Wer einmal pro Woche plant, erlebt weniger böse Überraschungen – und hat trotzdem Zeit für sich.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Wichtig ist nicht dasselbe wie dringend",
+          "text": "Dringend ist, was bald fällig ist. Wichtig ist, was dich deinen Zielen näherbringt. Viele wichtige Aufgaben sind lange nicht dringend – etwa das Lernen für einen Test in drei Wochen. Genau sie rutschen leicht nach hinten, bis sie plötzlich dringend werden."
+        },
+        { "art": "aufgabe", "text": "Sammle alles, was diese Woche ansteht, und sortiere es in das Raster." },
+        {
+          "art": "spalten",
+          "links": [
+            { "art": "feld", "label": "Wichtig und dringend: sofort erledigen", "beispiel": "Vokabeltest morgen", "hoehe": 3.5 },
+            { "art": "feld", "label": "Dringend, aber nicht wichtig: kurz halten", "beispiel": "im Gruppenchat antworten", "hoehe": 3.5 }
+          ],
+          "rechts": [
+            { "art": "feld", "label": "Wichtig, aber nicht dringend: fest einplanen", "beispiel": "Referat in drei Wochen", "hoehe": 3.5 },
+            { "art": "feld", "label": "Weder noch: streichen oder später", "beispiel": "Videos durchscrollen", "hoehe": 3.5 }
+          ]
+        },
+        { "art": "aufgabe", "text": "Plane deine Woche: zuerst feste Termine, dann Lernzeiten, dann Puffer.", "hinweis": "Puffer sind freie Zeitfenster für alles, was länger dauert als gedacht." },
+        {
+          "art": "tabelle",
+          "spalten": ["Tag", "Feste Termine", "Lernen und Aufgaben", "Puffer"],
+          "breiten": [0.6, 2, 2.2, 1.1],
+          "zeilen": 6,
+          "beispiel": ["Mo", "17–18:30 Fußballtraining", "16–16:45 Vokabeln Englisch", "19:30–20:00"]
+        },
+        { "art": "aufgabe", "text": "Lege einen festen Termin für deine Wochenplanung fest." },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [{ "wenn": "Wenn ich am Sonntagabend meine Tasche für Montag packe,", "dann": "plane ich vorher 15 Minuten lang meine Woche." }]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Wenn der Plan nicht aufgeht",
+          "text": "Das passiert allen. Nutze zuerst deinen Puffer. Reicht er nicht, verkleinere die Aufgabe oder verschiebe etwas Unwichtiges. Dann planst du neu – ohne dir Vorwürfe zu machen."
+        },
+        { "art": "aufgabe", "text": "Am Ende der Woche: Zieh Bilanz." },
+        {
+          "art": "einschaetzung",
+          "optionen": ["stimmt", "teils", "stimmt nicht"],
+          "items": ["Ich habe alle festen Termine eingetragen.", "Ich habe wichtige Aufgaben früh begonnen.", "Ich habe Puffer eingeplant.", "Ich hatte genug freie Zeit."]
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 2,
+          "items": ["Gut geklappt hat: …", "Länger gedauert als geplant hat: …", "Nächste Woche mache ich anders: …"]
+        },
+        { "art": "skala", "frage": "Wie gut hattest du deine Woche im Griff?", "von": "gar nicht", "bis": "voll und ganz", "stufen": 11 }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen unterscheiden wichtige von dringenden Aufgaben, planen eine Woche mit festen Terminen, Lernzeiten und Puffern und werten sie in einem kurzen Rückblick aus.",
+        "ablauf": [
+          "Einstieg (5 Min.): „Was hat euch letzte Woche kalt erwischt?“ Beispiele sammeln, ohne zu bewerten.",
+          "Info-Kasten lesen. Aufgabe 1: Anstehendes sammeln, ins Raster sortieren, zu zweit vergleichen.",
+          "Aufgabe 2 (15 Min.): erst feste Termine, dann Lernzeiten für „wichtig, aber nicht dringend“, dann Puffer eintragen.",
+          "Aufgabe 3: Einen festen Planungstermin als Wenn-dann-Plan formulieren.",
+          "Nach einer Woche Bilanz ziehen: „Was habt ihr über eure Planung gelernt?“"
+        ],
+        "hintergrund": "Aufgaben mit fernem Abgabetermin werden besonders oft aufgeschoben: Je weiter eine Frist oder Belohnung entfernt ist, desto geringer ist die Motivation, jetzt zu beginnen (Steel, 2007). Die Unterscheidung von „wichtig“ und „dringend“ macht solche Aufgaben sichtbar, bevor sie zum Notfall werden. Planung, Umsetzung und Rückblick bilden im Modell des selbstregulierten Lernens einen Kreislauf: Wer seine Planung regelmäßig auswertet, passt Strategien und Zeitschätzungen an (Zimmerman, 2002). Puffer fangen Unvorhergesehenes ab. Ein fester Planungstermin als Wenn-dann-Plan erhöht die Chance, dass tatsächlich geplant wird (Gollwitzer, 1999).",
+        "quellen": [
+          "Steel, P. (2007). The nature of procrastination: A meta-analytic and theoretical review of quintessential self-regulatory failure. Psychological Bulletin, 133(1), 65–94.",
+          "Zimmerman, B. J. (2002). Becoming a self-regulated learner: An overview. Theory Into Practice, 41(2), 64–70.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "differenzierung": {
+          "leichter": "Nur drei Tage planen; das Raster vorab mit Beispielen gemeinsam füllen.",
+          "schwerer": "Zwei Wochen planen und im Rückblick Plan und tatsächlichen Verlauf vergleichen."
+        },
+        "impulse": [
+          "Welche wichtige Aufgabe schiebst du gerade vor dir her?",
+          "Wie viel freie Zeit brauchst du, um dich zu erholen?",
+          "Was tust du, wenn der Plan nicht aufgeht?"
+        ],
+        "tipps": [
+          "Freizeit, Sport und Erholung ausdrücklich einplanen – ein Plan ohne Pausen wird nicht eingehalten.",
+          "Die Planung einige Wochen lang an einem festen Tag im Unterricht wiederholen."
+        ],
+        "achtung": "Beschreiben Jugendliche eine dauerhaft überfüllte Woche (z. B. Nebenjob, Betreuung von Geschwistern) oder starken Leistungsdruck: Einzelgespräch suchen und bei Bedarf den SePAS einbeziehen.",
+        "material": "Optional Schülerkalender oder Kalender-App"
+      }
+    },
+    "fr": {
+      "titel": "Maîtriser sa semaine",
+      "untertitel": "Planifier une fois par semaine, c’est moins de mauvaises surprises – et quand même du temps pour soi.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Important ne veut pas dire urgent",
+          "text": "Est urgent ce qui arrive bientôt à échéance. Est important ce qui te rapproche de tes objectifs. Beaucoup de tâches importantes ne sont pas urgentes pendant longtemps – par exemple réviser pour un contrôle dans trois semaines. Ce sont justement elles qui glissent vers la fin, jusqu’à devenir soudain urgentes."
+        },
+        { "art": "aufgabe", "text": "Rassemble tout ce qui t’attend cette semaine et classe-le dans le tableau." },
+        {
+          "art": "spalten",
+          "links": [
+            { "art": "feld", "label": "Important et urgent : à faire tout de suite", "beispiel": "contrôle de vocabulaire demain", "hoehe": 3.5 },
+            { "art": "feld", "label": "Urgent mais pas important : faire vite", "beispiel": "répondre dans le chat de groupe", "hoehe": 3.5 }
+          ],
+          "rechts": [
+            { "art": "feld", "label": "Important mais pas urgent : à planifier", "beispiel": "exposé à rendre dans trois semaines", "hoehe": 3.5 },
+            { "art": "feld", "label": "Ni l’un ni l’autre : laisser tomber ou plus tard", "beispiel": "faire défiler des vidéos", "hoehe": 3.5 }
+          ]
+        },
+        { "art": "aufgabe", "text": "Planifie ta semaine : d’abord les rendez-vous fixes, puis le travail, puis les marges.", "hinweis": "Les marges sont des créneaux libres pour tout ce qui prend plus de temps que prévu." },
+        {
+          "art": "tabelle",
+          "spalten": ["Jour", "Rendez-vous fixes", "Travail et devoirs", "Marge"],
+          "breiten": [0.6, 2, 2.2, 1.1],
+          "zeilen": 6,
+          "beispiel": ["Lu", "17 h–18 h 30 entraînement de foot", "16 h–16 h 45 vocabulaire d’anglais", "19 h 30–20 h"]
+        },
+        { "art": "aufgabe", "text": "Fixe un moment régulier pour planifier ta semaine." },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [{ "wenn": "Si je prépare mon sac pour lundi le dimanche soir,", "dann": "je prends d’abord 15 minutes pour planifier ma semaine." }]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Quand le plan ne tient pas",
+          "text": "Ça arrive à tout le monde. Utilise d’abord ta marge. Si elle ne suffit pas, réduis la tâche ou décale quelque chose de moins important. Puis replanifie – sans te le reprocher."
+        },
+        { "art": "aufgabe", "text": "En fin de semaine : fais le bilan." },
+        {
+          "art": "einschaetzung",
+          "optionen": ["vrai", "en partie", "faux"],
+          "items": ["J’ai noté tous mes rendez-vous fixes.", "J’ai commencé tôt les tâches importantes.", "J’ai prévu des marges.", "J’ai eu assez de temps libre."]
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 2,
+          "items": ["Ce qui a bien marché : …", "Ce qui a pris plus de temps que prévu : …", "La semaine prochaine, je change ceci : …"]
+        },
+        { "art": "skala", "frage": "À quel point avais-tu ta semaine en main ?", "von": "pas du tout", "bis": "complètement", "stufen": 11 }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes distinguent l’important de l’urgent, planifient une semaine avec rendez-vous fixes, temps de travail et marges, puis en font un bref bilan.",
+        "ablauf": [
+          "Entrée (5 min) : « Qu’est-ce qui vous a pris de court la semaine dernière ? » Recueillir des exemples sans juger.",
+          "Lire l’encadré. Exercice 1 : lister ce qui arrive, le classer, comparer à deux.",
+          "Exercice 2 (15 min) : d’abord les rendez-vous fixes, puis le travail « important mais pas urgent », puis les marges.",
+          "Exercice 3 : fixer un moment de planification sous forme de plan « si … alors ».",
+          "Une semaine plus tard, faire le bilan : « Qu’avez-vous appris sur votre façon de planifier ? »"
+        ],
+        "hintergrund": "Les tâches dont l’échéance est lointaine sont particulièrement souvent reportées : plus un délai ou une récompense est éloigné, plus la motivation à commencer maintenant est faible (Steel, 2007). Distinguer l’important de l’urgent rend ces tâches visibles avant qu’elles ne deviennent des urgences. Dans le modèle de l’apprentissage autorégulé, planification, action et bilan forment un cycle : qui évalue régulièrement sa planification ajuste ses stratégies et ses estimations de temps (Zimmerman, 2002). Les marges absorbent l’imprévu. Un moment fixe de planification, formulé en plan « si … alors », augmente les chances que l’on planifie vraiment (Gollwitzer, 1999).",
+        "quellen": [
+          "Steel, P. (2007). The nature of procrastination: A meta-analytic and theoretical review of quintessential self-regulatory failure. Psychological Bulletin, 133(1), 65–94.",
+          "Zimmerman, B. J. (2002). Becoming a self-regulated learner: An overview. Theory Into Practice, 41(2), 64–70.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "differenzierung": {
+          "leichter": "Planifier seulement trois jours ; remplir le tableau ensemble à l’avance avec des exemples.",
+          "schwerer": "Planifier deux semaines et comparer, lors du bilan, le plan et ce qui s’est réellement passé."
+        },
+        "impulse": [
+          "Quelle tâche importante repousses-tu en ce moment ?",
+          "De combien de temps libre as-tu besoin pour récupérer ?",
+          "Que fais-tu quand le plan ne tient pas ?"
+        ],
+        "tipps": [
+          "Inscrire explicitement loisirs, sport et repos : un planning sans pauses n’est pas tenu.",
+          "Refaire la planification en classe, le même jour, pendant quelques semaines."
+        ],
+        "achtung": "Si un·e jeune décrit une semaine durablement surchargée (petit boulot, garde des frères et sœurs) ou une forte pression scolaire : entretien individuel et, si besoin, contact avec le SePAS.",
+        "material": "En option : agenda ou application de calendrier"
+      }
+    }
   }
 ]

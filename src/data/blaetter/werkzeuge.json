@@ -1,0 +1,1256 @@
+[
+  {
+    "id": "punkteplan",
+    "bereich": "werkzeuge",
+    "thema": "verstaerker",
+    "stufen": ["C1", "C2", "C3", "C4"],
+    "sozialform": ["einzeln"],
+    "dauer": "Planung 20 Min., dann täglich 5 Min.",
+    "eldib": ["V-14", "V-16", "V-22"],
+    "schlagworte": ["Punkteplan", "Verstärkerplan", "Token-System", "Zielverhalten", "Lob", "positives Gegenteil"],
+    "bild": "icon:star",
+    "verwandt": ["belohnungs-menue", "verhalten-zaehlen", "check-in-check-out"],
+    "de": {
+      "titel": "Punkteplan (Verstärkerplan)",
+      "untertitel": "Für ein einziges, klar beschriebenes Zielverhalten. Das Kind sammelt Sterne und tauscht sie gegen vorher vereinbarte Belohnungen ein.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Zielverhalten als positives Gegenteil beschreiben",
+          "hinweis": "Was soll das Kind stattdessen tun? So konkret, dass alle es gleich beurteilen würden."
+        },
+        {
+          "art": "tabelle",
+          "spalten": ["Das tut das Kind bisher", "Das soll es stattdessen tun (Zielverhalten)", "Wann und wo?"],
+          "breiten": [1.2, 1.6, 1],
+          "zeilen": 1,
+          "beispiel": [
+            "ruft im Sitzkreis dazwischen",
+            "meldet sich und wartet, bis es aufgerufen wird",
+            "Morgenkreis, Arbeitsphasen am Vormittag"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Sterne sammeln",
+          "hinweis": "Links die Situationen eintragen. Den Stern sofort geben und dabei konkret loben."
+        },
+        {"art": "plan", "ziel": "", "zeilen": ["", "", ""], "symbol": "stern"},
+        {
+          "art": "aufgabe",
+          "text": "Eintauschen vereinbaren",
+          "hinweis": "Eine kleine Belohnung muss am ersten Tag erreichbar sein. Mit dem Kind auswählen."
+        },
+        {
+          "art": "tabelle",
+          "spalten": ["Sterne", "Belohnung", "Wann und bei wem?"],
+          "breiten": [0.6, 2, 1.4],
+          "zeilen": 2,
+          "beispiel": ["3", "die Musik zum Aufräumen aussuchen", "täglich vor dem Heimgehen, bei der Klassenlehrerin"]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Damit der Plan wirkt",
+          "punkte": [
+            "Anfangs so planen, dass das Kind sicher Erfolg hat.",
+            "Jeden Stern mit konkretem Lob verbinden: „Du hast gewartet, bis du dran warst.“",
+            "Verdiente Sterne nie wieder abziehen.",
+            "Nach zwei bis drei Wochen gemeinsam auswerten und das Ziel anpassen."
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Ein erwünschtes Verhalten wird mit sofortiger Rückmeldung, Punkten und vereinbarten Belohnungen gezielt aufgebaut. Das Kind erlebt Erfolg und bekommt Aufmerksamkeit für das, was ihm gelingt.",
+        "ablauf": [
+          "Vorbereitung (15 Min.): Ein Zielverhalten als positives Gegenteil formulieren. Prüffrage: „Könnte man es filmen?“ – „nicht stören“ nicht, „meldet sich und wartet“ schon.",
+          "Ausgangslage: Eine Woche zählen, wie oft es schon gelingt (Vorlage „Verhalten zählen“). Das erste Ziel knapp darüber ansetzen.",
+          "Einführung (10 Min.): Plan erklären, Zielverhalten vormachen und einmal üben, Belohnungen mit dem Kind auswählen.",
+          "Täglich: Stern sofort geben und konkret loben; zur festen Zeit zählen und eintauschen.",
+          "Nach 2–3 Wochen auswerten: Klappt es, die Anforderung behutsam erhöhen, später seltener Sterne geben und das Lob beibehalten. Klappt es nicht, das Ziel verkleinern."
+        ],
+        "hintergrund": "Verstärkerpläne beruhen auf einem einfachen Prinzip: Verhalten, dem unmittelbar eine angenehme Folge folgt, tritt häufiger auf. Kazdin (2008) nennt die wirksamen Bestandteile: ein positiv formuliertes Zielverhalten (das „positive Gegenteil“ des Problemverhaltens), kleine Anfangsschritte, die sofort gelingen, unmittelbares und konkretes Lob zusammen mit dem Punkt sowie Belohnungen, die das Kind wirklich erreichen möchte. Punkte-Pläne sind ein fester Baustein verhaltenstherapeutischer Programme bei oppositionellem und impulsivem Verhalten (Döpfner et al., 2019). Der Plan lenkt die Aufmerksamkeit der Erwachsenen auf das, was gelingt – deshalb werden verdiente Punkte nicht wieder abgezogen.",
+        "quellen": [
+          "Kazdin, A. E. (2008). The Kazdin Method for Parenting the Defiant Child. Boston: Houghton Mifflin.",
+          "Döpfner, M., Schürmann, S. & Frölich, J. (2019). Therapieprogramm für Kinder mit hyperkinetischem und oppositionellem Problemverhalten THOP (6. Aufl.). Weinheim: Beltz."
+        ],
+        "differenzierung": {
+          "leichter": "Spielschule und C2: eine Situation pro Tag, Eintauschen am selben Tag, Aufkleber statt Sterne.",
+          "schwerer": "C4: Das Kind trägt die Sterne selbst ein und schätzt den Tag ein; die Lehrperson bestätigt."
+        },
+        "impulse": [
+          "Woran merkst du heute, dass du dein Ziel geschafft hast?",
+          "Was hat dir geholfen, dich zu melden und zu warten?",
+          "Für welche Belohnung möchtest du zuerst sammeln?"
+        ],
+        "tipps": [
+          "Das Lob ist wichtiger als der Stern: sofort, konkret und freundlich.",
+          "Für Problemverhalten gelten die üblichen Absprachen – getrennt vom Plan.",
+          "Den Plan nur mit Einverständnis des Kindes in der Klasse aufhängen."
+        ],
+        "achtung": "Bleibt das Verhalten nach drei bis vier Wochen sorgfältiger Umsetzung unverändert, im Team beraten und die zuständige Leitung (Responsable) einbeziehen.",
+        "material": "Buntstifte oder Aufkleber"
+      }
+    }
+  },
+  {
+    "id": "check-in-check-out",
+    "bereich": "werkzeuge",
+    "thema": "verstaerker",
+    "stufen": ["C2", "C3", "C4", "ES"],
+    "sozialform": ["einzeln"],
+    "dauer": "täglich 2 × 3–5 Min.",
+    "eldib": ["V-16", "V-22", "V-27", "K-12"],
+    "schlagworte": ["Check-in/Check-out", "Tageskarte", "Rückmeldung", "Behavior Education Program", "Tagesziele", "Bezugsperson"],
+    "bild": "icon:clipboard-check",
+    "verwandt": ["punkteplan", "belohnungs-menue", "abc-beobachtung"],
+    "de": {
+      "titel": "Check-in/Check-out-Karte",
+      "untertitel": "Eine Tageskarte mit drei Zielen: morgens abholen, nach jeder Stunde eine kurze Rückmeldung, nachmittags gemeinsam auswerten.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Drei Ziele für jede Stunde",
+          "hinweis": "Positiv und beobachtbar, z. B. „Ich beginne innerhalb von zwei Minuten mit der Aufgabe.“"
+        },
+        {"art": "satzanfaenge", "items": ["Ziel 1:", "Ziel 2:", "Ziel 3:"]},
+        {"art": "aufgabe", "text": "Check-in am Morgen"},
+        {"art": "ankreuzen", "items": ["Begrüßt, Karte abgeholt", "Material vollständig", "Tagesziel besprochen"], "spalten": 3},
+        {
+          "art": "aufgabe",
+          "text": "Rückmeldung nach jeder Stunde",
+          "hinweis": "2 = hat gut geklappt · 1 = teilweise · 0 = heute noch nicht. Dazu ein kurzer, konkreter Satz."
+        },
+        {
+          "art": "tabelle",
+          "spalten": ["Stunde / Fach", "Ziel 1", "Ziel 2", "Ziel 3", "Kürzel"],
+          "breiten": [1.6, 1, 1, 1, 0.9],
+          "zeilen": 7,
+          "beispiel": ["Beispiel: Mathematik", "2", "1", "2", "MW"]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Check-out am Nachmittag",
+          "hinweis": "Punkte zählen, Gelungenes benennen. Die Karte geht zur Unterschrift nach Hause."
+        },
+        {
+          "art": "tabelle",
+          "spalten": ["Punkte heute", "Tagesziel", "Erreicht?", "Kürzel Check-out", "Unterschrift Eltern"],
+          "breiten": [1, 1, 0.9, 1.1, 1.4],
+          "zeilen": 1
+        },
+        {"art": "satzanfaenge", "items": ["Das lief heute besonders gut:"]}
+      ],
+      "lehrer": {
+        "ziel": "Die Karte gibt Kindern mit wiederkehrenden Verhaltensschwierigkeiten einen verlässlichen Rahmen: zwei kurze Kontakte am Tag mit einer Bezugsperson und nach jeder Stunde eine Rückmeldung.",
+        "ablauf": [
+          "Im Team (20 Min.): Bezugsperson, drei Ziele und Tagesziel festlegen (üblich: 80 % der möglichen Punkte).",
+          "Mit Kind und Eltern Karte, Bewertung 0–1–2 und Belohnung besprechen: Die Karte ist eine Hilfe, keine Strafe.",
+          "Check-in (2–3 Min.): begrüßen, Material prüfen, Karte geben, ein Ziel hervorheben.",
+          "Nach jeder Stunde (1 Min.): Punkte eintragen und einen konkreten Satz dazu sagen („Du hast sofort angefangen.“).",
+          "Check-out (3–5 Min.): Punkte zählen, Erfolge anerkennen, bei erreichtem Tagesziel eine kleine Belohnung; Karte nach Hause.",
+          "Nach 4–6 Wochen den Verlauf auswerten: weiterführen, anpassen oder ausschleichen."
+        ],
+        "hintergrund": "Check-in/Check-out ist das Kernstück des Behavior Education Program (Crone, Hawken & Horner, 2010) für Schülerinnen und Schüler, bei denen die allgemeinen Klassenregeln nicht ausreichen. Wirksam sind die feste Struktur, die häufige positive Zuwendung durch Erwachsene und die sofortige Rückmeldung. Rückmeldung wirkt am stärksten, wenn sie sich auf ein klares Ziel bezieht und den nächsten Schritt aufzeigt (Hattie & Timperley, 2007). Die Karte passt besonders zu Kindern, denen die Aufmerksamkeit Erwachsener wichtig ist. Weicht ein Kind mit seinem Verhalten vor allem schwierigen Aufgaben aus, braucht es zusätzlich Anpassungen im Unterricht.",
+        "quellen": [
+          "Crone, D. A., Hawken, L. S. & Horner, R. H. (2010). Responding to Problem Behavior in Schools: The Behavior Education Program (2nd ed.). New York: Guilford.",
+          "Hattie, J. & Timperley, H. (2007). The power of feedback. Review of Educational Research, 77(1), 81–112."
+        ],
+        "differenzierung": {
+          "leichter": "C2: zwei Ziele und Gesichter statt Zahlen.",
+          "schwerer": "Sekundarschule: zuerst selbst einschätzen, dann vergleicht die Lehrperson."
+        },
+        "impulse": [
+          "Welches Ziel willst du heute besonders im Blick behalten?",
+          "In welcher Stunde hat es am besten geklappt? Was war anders?",
+          "Was hilft dir morgen in der schwierigen Stunde?"
+        ],
+        "tipps": [
+          "Check-in und Check-out nie ausfallen lassen – Verlässlichkeit wirkt mit.",
+          "Rückmeldungen kurz und freundlich halten, nie vor der Klasse diskutieren.",
+          "Eine verlorene Karte nicht bestrafen, sondern ersetzen."
+        ],
+        "achtung": "Bleibt eine Besserung nach einigen Wochen aus oder gefährdet das Verhalten andere, im Team genauer analysieren (ABC-Beobachtung) und die zuständige Leitung (Responsable) einbeziehen.",
+        "material": "Karte täglich kopieren"
+      }
+    }
+  },
+  {
+    "id": "belohnungs-menue",
+    "bereich": "werkzeuge",
+    "thema": "verstaerker",
+    "stufen": ["C2", "C3", "C4"],
+    "layout": "mittel",
+    "sozialform": ["einzeln"],
+    "dauer": "20–30 Min.",
+    "eldib": ["V-14", "V-22", "K-12"],
+    "schlagworte": ["Belohnung", "Verstärker", "Premack-Prinzip", "Punkteplan", "Mitbestimmung", "Motivation"],
+    "bild": "icon:gift",
+    "verwandt": ["punkteplan", "check-in-check-out"],
+    "de": {
+      "titel": "Belohnungs-Menü",
+      "untertitel": "Belohnungen, die dir wirklich Freude machen – von klein bis groß. Du suchst sie zusammen mit einem Erwachsenen aus.",
+      "anleitung": "Gemeinsam mit dem Kind ausfüllen. Nur aufnehmen, was verlässlich möglich ist – keine Süßigkeiten, kein Geld und nichts, worauf das Kind ohnehin ein Recht hat.",
+      "bausteine": [
+        {"art": "aufgabe", "text": "Was macht dir Freude? Kreuze an und ergänze.", "symbole": ["ankreuzen", "schreiben"]},
+        {
+          "art": "spalten",
+          "links": [
+            {
+              "art": "ankreuzen",
+              "titel": "Zeit mit jemandem",
+              "items": ["ein Spiel mit einem Erwachsenen", "neben einem Freund oder einer Freundin sitzen", "der Klasse etwas vorstellen"]
+            },
+            {
+              "art": "ankreuzen",
+              "titel": "Etwas aussuchen",
+              "items": ["die Musik beim Aufräumen", "das Bewegungsspiel für die Klasse", "meinen Platz in der Lesezeit"]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "ankreuzen",
+              "titel": "Eine wichtige Aufgabe",
+              "items": ["das Material austeilen", "die Pflanzen gießen", "eine Nachricht ins Nachbarzimmer bringen"]
+            },
+            {
+              "art": "ankreuzen",
+              "titel": "Spielen und Bewegen",
+              "items": ["10 Minuten in der Bauecke", "den Ball für die Pause aussuchen", "als Erstes in die Pause gehen"]
+            }
+          ]
+        },
+        {"art": "satzanfaenge", "items": ["Meine eigenen Ideen:"]},
+        {
+          "art": "aufgabe",
+          "text": "Stell dein Menü zusammen.",
+          "hinweis": "Kleine Belohnungen gibt es jeden Tag. Für große sammelst du länger.",
+          "symbole": ["schreiben"]
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 2,
+          "items": [
+            {"titel": "Klein", "text": "jeden Tag, für ___ Punkte"},
+            {"titel": "Mittel", "text": "jede Woche, für ___ Punkte"},
+            {"titel": "Groß", "text": "etwas Besonderes, für ___ Punkte"}
+          ]
+        },
+        {"art": "aufgabe", "text": "Unsere Abmachung", "symbole": ["schreiben"]},
+        {
+          "art": "vertrag",
+          "text": "Einlösen: ___ bei ___ . Wir prüfen das Menü wieder am ___ .",
+          "unterschriften": ["Kind", "Erwachsene Person"]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Das Kind wählt mit einer erwachsenen Person Belohnungen aus, die ihm wirklich etwas bedeuten, und ordnet sie nach Aufwand. Das Menü ergänzt den Punkteplan oder die Check-in/Check-out-Karte.",
+        "ablauf": [
+          "Vorbereitung (5 Min.): Klären, welche Belohnungen in Schule, Maison Relais oder zu Hause verlässlich möglich sind.",
+          "Ideen sammeln (10 Min.): Die Liste mit dem Kind durchgehen: „Was machst du am liebsten, wenn du frei wählen darfst?“ Eigene Ideen ergänzen.",
+          "Menü füllen (10 Min.): Je Stufe zwei bis drei Belohnungen eintragen. Preise so festlegen, dass eine kleine Belohnung am ersten Tag erreichbar ist.",
+          "Abmachung ausfüllen und unterschreiben; eine Kopie bekommt das Kind.",
+          "Alle zwei bis drei Wochen nachfragen, was noch reizt, und das Menü auffrischen."
+        ],
+        "hintergrund": "Belohnungen wirken nur, wenn sie für das Kind attraktiv sind – und das weiß das Kind oft besser als die Erwachsenen. Nach dem Premack-Prinzip eignen sich besonders Tätigkeiten, die ein Kind gern und häufig tut (Premack, 1959): etwas aussuchen, Zeit mit einer Bezugsperson, eine Aufgabe mit Verantwortung. Solche Belohnungen sind jederzeit verfügbar und kosten nichts. Kazdin (2008) empfiehlt ein abgestuftes Menü: Kleine Belohnungen sind sofort erreichbar, größere erfordern Sparen. Wird das Kind an der Auswahl beteiligt, erlebt es Mitbestimmung statt Kontrolle; das erleichtert es, das Ziel als eigenes zu übernehmen (Deci & Ryan, 2000).",
+        "quellen": [
+          "Premack, D. (1959). Toward empirical behavior laws: I. Positive reinforcement. Psychological Review, 66(4), 219–233.",
+          "Kazdin, A. E. (2008). The Kazdin Method for Parenting the Defiant Child. Boston: Houghton Mifflin.",
+          "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268."
+        ],
+        "differenzierung": {
+          "leichter": "C2: Belohnungen als Bildkarten zeigen; nur zwei Stufen (heute – diese Woche).",
+          "schwerer": "C4: Das Kind rechnet selbst aus, wann es eine große Belohnung erreichen kann."
+        },
+        "impulse": [
+          "Was machst du am liebsten, wenn du selbst entscheiden darfst?",
+          "Mit wem verbringst du in der Schule gern Zeit?",
+          "Welche Aufgabe würdest du gern einmal für die Klasse übernehmen?"
+        ],
+        "tipps": [
+          "Keine Süßigkeiten und kein Geld: Beides nutzt sich schnell ab und lenkt vom Verhalten ab.",
+          "Versprochene Belohnungen pünktlich einlösen."
+        ],
+        "achtung": "Grundbedürfnisse und Rechte des Kindes – Essen, Pause, Kontakt zur Familie, Teilnahme an Klassenaktivitäten – sind nie Teil des Menüs und werden nie entzogen.",
+        "material": "Buntstifte; Kopie für Kind und Eltern"
+      }
+    }
+  },
+  {
+    "id": "abc-beobachtung",
+    "bereich": "werkzeuge",
+    "thema": "beobachtung",
+    "stufen": ["C1", "C2", "C3", "C4", "ES"],
+    "sozialform": ["einzeln"],
+    "dauer": "1–2 Wochen, je Eintrag 2 Min.",
+    "eldib": ["V-20", "V-21", "V-26"],
+    "schlagworte": ["ABC-Analyse", "Verhaltensbeobachtung", "Auslöser", "Funktion von Verhalten", "Verhaltensanalyse", "Ersatzverhalten"],
+    "bild": "icon:search",
+    "verwandt": ["verhalten-zaehlen", "elterngespraech-vorbereiten", "punkteplan"],
+    "de": {
+      "titel": "ABC-Beobachtungsbogen",
+      "untertitel": "Was geht einem Verhalten voraus, was folgt darauf? Wer das über ein bis zwei Wochen festhält, erkennt Muster statt Einzelfälle.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Verhalten festlegen",
+          "hinweis": "So beschreiben, dass alle dasselbe meinen: „wirft Gegenstände“ statt „ist aggressiv“."
+        },
+        {"art": "satzanfaenge", "items": ["Beobachtetes Verhalten:"]},
+        {
+          "art": "aufgabe",
+          "text": "Jedes Auftreten möglichst sofort eintragen",
+          "hinweis": "Nur beschreiben, was zu sehen und zu hören war – ohne Deutung."
+        },
+        {
+          "art": "tabelle",
+          "spalten": ["Tag, Uhrzeit", "Ort, Tätigkeit", "A – direkt davor", "B – das Verhalten", "C – direkt danach"],
+          "breiten": [0.8, 1.05, 1.4, 1.4, 1.4],
+          "zeilen": 9,
+          "beispiel": [
+            "Di, 10:20",
+            "Klasse, Einzelarbeit Mathe",
+            "Blatt mit Textaufgaben wird ausgeteilt",
+            "zerknüllt das Blatt, ruft: „Das mach ich nicht.“",
+            "Lehrerin setzt sich zu ihm; die Aufgabe bleibt liegen"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Nach 10 bis 15 Einträgen auswerten",
+          "hinweis": "Was wiederholt sich bei A und C? Was bekommt oder vermeidet das Kind durch sein Verhalten?"
+        },
+        {
+          "art": "ankreuzen",
+          "titel": "Vermutete Funktion:",
+          "items": ["Zuwendung bekommen", "einer Anforderung entgehen", "etwas Begehrtes bekommen", "Reize oder Anspannung regulieren"],
+          "spalten": 2
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Das Verhalten tritt vor allem auf, wenn …",
+            "Es tritt selten oder nie auf, wenn …",
+            "Stattdessen könnte das Kind lernen, …"
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Der Bogen hilft, ein wiederkehrendes Verhalten systematisch zu beobachten und begründete Vermutungen über seine Auslöser und seine Funktion zu bilden.",
+        "ablauf": [
+          "Verhalten festlegen (5 Min.): beobachtbar beschreiben – „wirft Gegenstände“ statt „ist aggressiv“.",
+          "Beobachten (1–2 Wochen): jedes Auftreten zeitnah eintragen, auch in der Pause und in der Maison Relais.",
+          "Auswerten im Team (20 Min.): wiederkehrende Auslöser und Folgen markieren.",
+          "Hypothese formulieren: „Wenn …, zeigt das Kind …, weil es dadurch … erreicht.“",
+          "Maßnahmen ableiten: Auslöser verändern, Ersatzverhalten üben, Folgen anpassen; nach 3–4 Wochen erneut beobachten."
+        ],
+        "hintergrund": "Das ABC-Schema (Antecedent – Behavior – Consequence) ist eine vereinfachte Verhaltensanalyse, wie sie etwa das SORKC-Modell beschreibt (Kanfer, Reinecker & Schmelzer, 2012): Verhalten wird von dem beeinflusst, was ihm vorausgeht, und von dem, was ihm folgt. Problemverhalten erfüllt für ein Kind oft eine nachvollziehbare Funktion – Zuwendung bekommen, einer Anforderung entgehen, etwas Begehrtes erhalten oder Anspannung regulieren. Wer die Funktion kennt, kann ein angemessenes Verhalten mit demselben Zweck aufbauen und gezielt verstärken (Kazdin, 2008). Die Beobachtung ersetzt keine Diagnostik, macht aber aus einem Eindruck überprüfbare Vermutungen.",
+        "quellen": [
+          "Kanfer, F. H., Reinecker, H. & Schmelzer, D. (2012). Selbstmanagement-Therapie (5. Aufl.). Berlin: Springer.",
+          "Kazdin, A. E. (2008). The Kazdin Method for Parenting the Defiant Child. Boston: Houghton Mifflin."
+        ],
+        "differenzierung": {
+          "leichter": "Nur zwei feste Zeitfenster pro Tag beobachten, z. B. Morgenkreis und erste Arbeitsphase.",
+          "schwerer": "Zusätzlich Dauer, Stärke (1–5) und Besonderheiten des Tages notieren."
+        },
+        "impulse": [
+          "Wann tritt das Verhalten nie auf – was ist dann anders?",
+          "Was bekommt oder vermeidet das Kind unmittelbar danach?",
+          "Welche Fähigkeit fehlt, um dasselbe anders zu erreichen?"
+        ],
+        "tipps": [
+          "Direkt nach dem Vorfall eintragen – später schleichen sich Deutungen ein.",
+          "Auch ruhige Tage festhalten: Sie zeigen, was hilft."
+        ],
+        "achtung": "Beobachtungen vertraulich behandeln. Bei Hinweisen auf Gefährdung sofort nach dem internen Ablauf handeln und die zuständige Leitung (Responsable) informieren.",
+        "material": "Bogen mehrfach kopieren"
+      }
+    }
+  },
+  {
+    "id": "verhalten-zaehlen",
+    "bereich": "werkzeuge",
+    "thema": "beobachtung",
+    "stufen": ["C1", "C2", "C3", "C4", "ES"],
+    "sozialform": ["einzeln"],
+    "dauer": "1 Woche; Auswertung 10 Min.",
+    "eldib": ["V-20", "V-22"],
+    "schlagworte": ["Häufigkeit", "Strichliste", "Ausgangslage", "Verlauf", "Verhaltensbeobachtung", "Selbstbeobachtung"],
+    "bild": "icon:calendar",
+    "verwandt": ["abc-beobachtung", "punkteplan"],
+    "de": {
+      "titel": "Verhalten zählen: Wochenprotokoll",
+      "untertitel": "Wie oft zeigt sich ein genau beschriebenes Verhalten? Eine Woche Strichliste ersetzt den Eindruck durch eine verlässliche Ausgangslage.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Verhalten genau beschreiben",
+          "hinweis": "Was zählt als ein Mal, was nicht? Nur so zählen alle Beobachtenden gleich."
+        },
+        {
+          "art": "tabelle",
+          "spalten": ["Verhalten", "Zählt als ein Mal, wenn …", "Zählt nicht, wenn …"],
+          "breiten": [1, 1.4, 1.4],
+          "zeilen": 1,
+          "beispiel": [
+            "ruft ohne Melden in die Klasse",
+            "es laut spricht, während ein anderes Kind dran ist",
+            "es aufgerufen wurde oder in der Gruppenarbeit leise spricht"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Eine Woche lang Striche machen",
+          "hinweis": "Links die Zeiträume, jedes Auftreten sofort als Strich. Letzte Zeile: Tagessumme."
+        },
+        {
+          "art": "tabelle",
+          "spalten": ["Zeitraum", "Mo", "Di", "Mi", "Do", "Fr"],
+          "breiten": [1.5, 1, 1, 1, 1, 1],
+          "zeilen": 7,
+          "beispiel": ["8:00–10:00", "|||| ||", "|||", "||||", "nicht beobachtet", "||"]
+        },
+        {"art": "aufgabe", "text": "Auswerten"},
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Besonderheiten dieser Woche:",
+            "Summe der Woche:",
+            "Am häufigsten (Tag, Zeit, Situation):",
+            "Am seltensten – was war da anders?",
+            "Nächster Schritt:"
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Das Protokoll hält fest, wie oft ein genau beschriebenes Verhalten in einer Woche auftritt. Es liefert eine Ausgangslage, an der sich später zeigt, ob eine Maßnahme wirkt.",
+        "ablauf": [
+          "Verhalten definieren (5 Min.): eine einzige, klar abgrenzbare Verhaltensweise wählen und festlegen, was als ein Mal zählt.",
+          "Zeiträume wählen: nur Zeiten, in denen verlässlich beobachtet werden kann – lieber zwei sichere als ein lückenhafter ganzer Tag.",
+          "Eine Woche zählen: jedes Auftreten sofort als Strich; Besonderheiten wie Vertretung oder Ausflug notieren.",
+          "Auswerten (10 Min.): Summen bilden und Muster nach Tagen, Zeiten und Situationen suchen.",
+          "Nach einer Maßnahme mit derselben Definition erneut zählen – nur so sind die Zahlen vergleichbar."
+        ],
+        "hintergrund": "Der Eindruck „Er stört ständig“ ist wenig verlässlich: Auffällige Momente bleiben im Gedächtnis, ruhige Phasen werden übersehen. Eine einfache Häufigkeitszählung schafft eine überprüfbare Ausgangslage. In der Verhaltensanalyse ist sie der erste Schritt, bevor eine Veränderung geplant wird, und sie zeigt später, ob eine Maßnahme wirkt (Kanfer, Reinecker & Schmelzer, 2012). Zählen Kinder oder Jugendliche ihr Verhalten selbst, verändert oft schon diese Selbstbeobachtung das Verhalten in die gewünschte Richtung; sie gehört zu den Grundbausteinen selbstregulierten Lernens (Zimmerman, 2002).",
+        "quellen": [
+          "Kanfer, F. H., Reinecker, H. & Schmelzer, D. (2012). Selbstmanagement-Therapie (5. Aufl.). Berlin: Springer.",
+          "Zimmerman, B. J. (2002). Becoming a self-regulated learner: An overview. Theory Into Practice, 41(2), 64–70."
+        ],
+        "differenzierung": {
+          "leichter": "Nur einen festen Zeitraum pro Tag zählen, zum Beispiel die erste Arbeitsphase.",
+          "schwerer": "Ab C4: Das Kind zählt parallel selbst; am Ende des Tages beide Zählungen vergleichen."
+        },
+        "impulse": [
+          "Stimmen die Zahlen mit unserem Eindruck überein?",
+          "Wann tritt das Verhalten kaum auf – was ist dort anders?",
+          "Welche Zahl wäre in vier Wochen ein realistischer Erfolg?"
+        ],
+        "tipps": [
+          "Unauffällig zählen, etwa auf einem Klebezettel am Pult.",
+          "Auch das erwünschte Gegenteil zählen – das lenkt den Blick auf Fortschritte."
+        ],
+        "achtung": "Die Zahlen beschreiben Verhalten in bestimmten Situationen, nicht das Kind. Sie werden vertraulich behandelt und nur im Team und mit den Eltern besprochen.",
+        "material": "Klemmbrett oder Klebezettel"
+      }
+    }
+  },
+  {
+    "id": "loesungsorientiertes-gespraech",
+    "bereich": "werkzeuge",
+    "thema": "gespraech",
+    "stufen": ["C3", "C4", "ES"],
+    "sozialform": ["einzeln"],
+    "dauer": "20–30 Min.",
+    "eldib": ["V-22", "V-28", "V-33"],
+    "schlagworte": ["lösungsorientiert", "Skalenfrage", "Ausnahmen", "Gesprächsführung", "kleine Schritte", "Ressourcen"],
+    "bild": "icon:stairs-up",
+    "verwandt": ["nachgespraech-krise", "elterngespraech-vorbereiten"],
+    "de": {
+      "titel": "Lösungsorientiertes Gespräch – Leitfaden",
+      "untertitel": "Ein Gesprächsrahmen für 20 bis 30 Minuten: vom Anliegen über Ausnahmen und die Skala zum nächsten kleinen Schritt. Die Fragen sind Vorschläge.",
+      "bausteine": [
+        {"art": "aufgabe", "text": "Anliegen klären"},
+        {"art": "frage", "text": "„Was müsste heute passieren, damit sich das Gespräch für dich gelohnt hat?“", "linien": 2},
+        {"art": "aufgabe", "text": "Ziel beschreiben"},
+        {"art": "frage", "text": "„Woran würdest du merken, dass es besser ist? Was würdest du dann anders machen?“", "linien": 2},
+        {"art": "aufgabe", "text": "Ausnahmen finden"},
+        {"art": "frage", "text": "„Wann war es schon einmal ein bisschen besser? Was hast du da anders gemacht?“", "linien": 2},
+        {
+          "art": "aufgabe",
+          "text": "Skalenfrage",
+          "hinweis": "Zuerst würdigen, was schon da ist – dann nach einem Punkt mehr fragen, nicht nach der 10."
+        },
+        {
+          "art": "skala",
+          "frage": "„Auf einer Skala von 0 bis 10: Wo stehst du heute?“",
+          "von": "0 = das Problem bestimmt alles",
+          "bis": "10 = mein Ziel ist erreicht",
+          "stufen": 11
+        },
+        {"art": "satzanfaenge", "items": ["Warum schon hier und nicht bei 0?", "Woran würdest du einen Punkt mehr merken?"]},
+        {
+          "art": "aufgabe",
+          "text": "Abschluss",
+          "hinweis": "Konkret anerkennen, was beeindruckt hat. Einen kleinen, selbst gewählten Schritt vereinbaren."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Das hat mich beeindruckt:",
+            "Kleinster nächster Schritt (bis wann?):",
+            "Darauf achten bis zum nächsten Mal:",
+            "Nächstes Gespräch am:"
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Der Leitfaden strukturiert ein kurzes Gespräch, in dem Kinder und Jugendliche nicht auf das Problem schauen, sondern auf ihr Ziel, auf vorhandene Fähigkeiten und auf einen machbaren nächsten Schritt.",
+        "ablauf": [
+          "Rahmen (2 Min.): ruhiger Ort, Zeit ansagen („Wir haben 20 Minuten.“), erklären, wozu Notizen gemacht werden.",
+          "Anliegen und Ziel (5–8 Min.): nachfragen, bis ein konkretes, beobachtbares Bild entsteht.",
+          "Ausnahmen (5 Min.): nach Momenten fragen, in denen das Problem kleiner war: „Wie hast du das geschafft?“",
+          "Skala (5 Min.): erst würdigen, was schon da ist, dann nach einem Punkt mehr fragen.",
+          "Abschluss (5 Min.): konkret anerkennen, einen kleinen Schritt und einen Termin vereinbaren. Das nächste Gespräch beginnt mit: „Was ist besser geworden?“"
+        ],
+        "hintergrund": "Die lösungsorientierte Kurzzeitberatung geht auf de Shazer (1985) zurück. Sie verzichtet auf eine ausführliche Problemanalyse und richtet den Blick auf Ziele, auf Ausnahmen – Situationen, in denen das Problem nicht oder weniger auftritt – und auf vorhandene Ressourcen. Was funktioniert, wird verstärkt; schon eine kleine Veränderung kann weitere nach sich ziehen. Skalenfragen machen Fortschritte sichtbar. Die Frage, warum jemand nicht niedriger steht, lässt die Person selbst Gründe für ihre Fähigkeiten und für Veränderung formulieren – ein Vorgehen, das auch die motivierende Gesprächsführung nutzt (Miller & Rollnick, 2013). Die Haltung ist neugierig und nicht wertend.",
+        "quellen": [
+          "de Shazer, S. (1985). Keys to Solution in Brief Therapy. New York: Norton.",
+          "Miller, W. R. & Rollnick, S. (2013). Motivational Interviewing (3rd ed.). New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "C3: die Skala als Treppe zeigen; nur Ziel, eine Ausnahme und einen Schritt besprechen.",
+          "schwerer": "Sekundarschule: mit der Wunderfrage beginnen: „Angenommen, über Nacht wäre das Problem gelöst – woran merkst du es morgen zuerst?“"
+        },
+        "impulse": [
+          "Was hast du schon ausprobiert, das ein bisschen geholfen hat?",
+          "Wer würde als Erstes merken, dass es dir besser geht?",
+          "Wie hast du es geschafft, dass es nicht noch schlimmer geworden ist?"
+        ],
+        "tipps": [
+          "„Weiß nicht“ aushalten und nachsetzen: „Wenn du es wüsstest – was würdest du sagen?“",
+          "Keine eigenen Lösungen vorschlagen; nachfragen, bis die Idee vom Kind kommt."
+        ],
+        "achtung": "Kein Ersatz für Krisenintervention: Bei Hinweisen auf Gewalt, Selbstverletzung oder Suizidgedanken nach dem internen Ablauf handeln und die zuständige Leitung (Responsable) informieren.",
+        "material": "Optional Zahlenkarten 0–10"
+      }
+    }
+  },
+  {
+    "id": "elterngespraech-vorbereiten",
+    "bereich": "werkzeuge",
+    "thema": "gespraech",
+    "stufen": ["C1", "C2", "C3", "C4", "ES"],
+    "sozialform": ["einzeln", "gruppe"],
+    "dauer": "Vorbereitung 20 Min., Gespräch 30–45 Min.",
+    "eldib": ["V-22", "K-12"],
+    "schlagworte": ["Elterngespräch", "Zusammenarbeit", "Beobachtung statt Bewertung", "Stärken", "Vereinbarungen", "Erziehungspartnerschaft"],
+    "bild": "icon:heart-handshake",
+    "verwandt": ["abc-beobachtung", "loesungsorientiertes-gespraech", "verhalten-zaehlen"],
+    "de": {
+      "titel": "Elterngespräch vorbereiten",
+      "untertitel": "Gut vorbereitet wird aus einem Problemgespräch ein Gespräch über ein gemeinsames Ziel: dass es dem Kind in der Schule gut geht.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Mein Anliegen in einem Satz",
+          "hinweis": "Was soll nach dem Gespräch geklärt oder vereinbart sein?"
+        },
+        {"art": "feld", "hoehe": 2, "beispiel": "Wir vereinbaren, wie wir Noah beim Ankommen am Morgen gemeinsam unterstützen."},
+        {
+          "art": "aufgabe",
+          "text": "Beobachtungen statt Bewertungen",
+          "hinweis": "Nicht „Er ist respektlos“, sondern: Was genau war wann zu sehen oder zu hören?"
+        },
+        {
+          "art": "tabelle",
+          "spalten": ["Datum, Situation", "Was genau ist passiert?"],
+          "breiten": [1, 3],
+          "zeilen": 2,
+          "beispiel": ["Di, 12.3., Pause", "Noah sagt zweimal „Halt die Klappe“ zur Aufsicht und läuft weg, als sie ihn anspricht."]
+        },
+        {"art": "aufgabe", "text": "Stärken und Gelungenes", "hinweis": "Mit konkreten Beispielen – damit beginnt das Gespräch."},
+        {
+          "art": "satzanfaenge",
+          "items": ["Das kann das Kind gut:", "Darüber hat es sich zuletzt gefreut:", "Das ist in letzter Zeit besser geworden:"]
+        },
+        {"art": "aufgabe", "text": "Fragen an die Eltern"},
+        {
+          "art": "ankreuzen",
+          "items": [
+            "Wie erleben Sie Ihr Kind zu Hause?",
+            "Was hilft Ihrem Kind, wenn es schwierig wird?",
+            "Was erzählt Ihr Kind von der Schule?",
+            "Was wünschen Sie sich von uns?"
+          ],
+          "spalten": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Vereinbarungen",
+          "hinweis": "Klein, konkret, mit Namen und Termin – Schule und Familie tragen je etwas bei."
+        },
+        {
+          "art": "tabelle",
+          "spalten": ["Was?", "Wer?", "Bis wann?"],
+          "breiten": [3, 1.2, 1],
+          "zeilen": 2,
+          "beispiel": ["Kurze Nachricht im Heft, wenn der Morgen gut gelaufen ist", "Klassenlehrerin", "ab Montag, täglich"]
+        },
+        {"art": "satzanfaenge", "items": ["Nächstes Gespräch am:"]}
+      ],
+      "lehrer": {
+        "ziel": "Die Vorlage hilft, ein Elterngespräch sachlich und wertschätzend vorzubereiten: mit klarem Anliegen, konkreten Beobachtungen, den Stärken des Kindes und überprüfbaren Vereinbarungen.",
+        "ablauf": [
+          "Vorbereiten (15–20 Min.): Vorlage ausfüllen, Beobachtungen aus Notizen oder dem ABC-Bogen übernehmen; klären, wer das Gespräch leitet.",
+          "Einladen: Anlass offen und freundlich nennen, Zeitrahmen angeben, bei Bedarf eine Übersetzung organisieren.",
+          "Beginnen (5 Min.): danken, Ziel und Zeitrahmen nennen, mit den Stärken des Kindes anfangen.",
+          "Anliegen (10 Min.): Beobachtungen schildern, dann nach der Sicht der Eltern fragen und zuhören.",
+          "Vereinbaren (10–15 Min.): Ideen sammeln, zwei bis drei Vereinbarungen festhalten, den nächsten Termin festlegen; Kopie für die Eltern."
+        ],
+        "hintergrund": "Eltern und Schule verfolgen im Kern dasselbe Interesse: dass es dem Kind gut geht und es lernen kann. Gespräche gelingen eher, wenn dieses gemeinsame Interesse im Vordergrund steht und nicht die Positionen, wie es das Harvard-Konzept beschreibt (Fisher & Ury, 1981). Zentral sind Beobachtungen ohne Bewertung: Konkretes Verhalten lässt sich prüfen und besprechen, ein Urteil über das Kind löst leicht Rechtfertigung und Abwehr aus (Rosenberg, 2001). Wer mit echten Stärken beginnt, zeigt, dass die Schule das Kind als ganze Person sieht; verlässliche Beziehungen zu Erwachsenen gehören zu den wichtigsten Schutzfaktoren (Masten, 2014).",
+        "quellen": [
+          "Fisher, R. & Ury, W. (1981). Getting to Yes. Boston: Houghton Mifflin.",
+          "Rosenberg, M. B. (2001). Gewaltfreie Kommunikation. Paderborn: Junfermann.",
+          "Masten, A. S. (2014). Ordinary Magic: Resilience in Development. New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Für kurze Gespräche: nur Anliegen, eine Beobachtung, eine Stärke und eine Vereinbarung.",
+          "schwerer": "Runder Tisch mit Maison Relais oder Therapie: vorab klären, wer was einbringt, und eine Moderation bestimmen."
+        },
+        "impulse": [
+          "Was erleben Sie zu Hause, das uns hilft, Ihr Kind besser zu verstehen?",
+          "Was hat früher schon einmal gut geholfen?",
+          "Was wäre für Sie ein gutes Ergebnis dieses Gesprächs?"
+        ],
+        "tipps": [
+          "Bei Sprachbarrieren rechtzeitig eine interkulturelle Mediatorin oder einen Mediator anfragen – nie das Kind übersetzen lassen.",
+          "Fachbegriffe vermeiden; Diagnosen sind nicht Aufgabe der Schule."
+        ],
+        "achtung": "Hinweise auf Gewalt oder Vernachlässigung ernst nehmen, nach dem internen Ablauf handeln und die zuständige Leitung (Responsable) informieren.",
+        "material": "Beobachtungsbögen"
+      }
+    }
+  },
+  {
+    "id": "tagesplan-bildkarten",
+    "bereich": "werkzeuge",
+    "thema": "visuell",
+    "stufen": ["C1", "C2"],
+    "layout": "bild",
+    "sozialform": ["einzeln", "klasse"],
+    "dauer": "Vorbereitung 20 Min., dann täglich 2–3 Min.",
+    "eldib": ["V-8", "KOG-31", "V-13"],
+    "schlagworte": ["Tagesplan", "Bildkarten", "Struktur", "Übergänge", "visuelle Hilfe", "TEACCH"],
+    "bild": "icon:clock",
+    "verwandt": ["ruhe-ecke-karten"],
+    "de": {
+      "titel": "Tagesplan-Bildkarten",
+      "anleitung": "Karten ausschneiden, laminieren und mit Klett auf einen Streifen kleben – in der Reihenfolge des Tages. Nach jeder Tätigkeit nimmt das Kind die Karte ab und steckt sie in die „Fertig“-Tasche.",
+      "bausteine": [
+        {"art": "aufgabe", "text": "Was machen wir jetzt? Was kommt danach?", "symbole": ["zeigen", "sprechen"]},
+        {
+          "art": "karten",
+          "spalten": 4,
+          "karten": [
+            {"titel": "Ankommen", "bild": "icon:door-enter"},
+            {"titel": "Morgenkreis", "bild": "icon:users-group"},
+            {"titel": "Spielen", "bild": "icon:puzzle"},
+            {"titel": "Aufräumen", "bild": "icon:basket"},
+            {"titel": "Hände waschen", "bild": "icon:droplet"},
+            {"titel": "Essen", "bild": "icon:tools-kitchen-2"},
+            {"titel": "Toilette", "bild": "icon:toilet-paper"},
+            {"titel": "Anziehen", "bild": "icon:hanger"},
+            {"titel": "Pause", "bild": "icon:ball-football"},
+            {"titel": "Turnen", "bild": "icon:run"},
+            {"titel": "Malen", "bild": "icon:palette"},
+            {"titel": "Singen", "bild": "icon:music"},
+            {"titel": "Vorlesen", "bild": "icon:book"},
+            {"titel": "Ausruhen", "bild": "icon:pillow"},
+            {"titel": "Überraschung", "bild": "icon:question-mark"},
+            {"titel": "Bus", "bild": "icon:bus"},
+            {"titel": "Maison Relais", "bild": "icon:building-community"},
+            {"titel": "Nach Hause", "bild": "icon:home"},
+            {"titel": "Fertig", "bild": "icon:circle-check"},
+            {}
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Bildkarten machen den Tagesablauf für Kinder sichtbar, die sich an gesprochener Sprache allein schwer orientieren. Sie geben Sicherheit, erleichtern Übergänge und kündigen Änderungen an.",
+        "ablauf": [
+          "Vorbereiten (20 Min.): Karten ausschneiden, laminieren, Klett aufkleben. Fehlende Tätigkeiten auf die leere Karte zeichnen oder ein Foto aufkleben.",
+          "Streifen aufhängen: auf Augenhöhe des Kindes, immer am selben Ort; die Karte „Fertig“ kommt auf eine Tasche oder einen Umschlag.",
+          "Morgens gemeinsam anschauen (2–3 Min.): Karten zeigen und benennen: „Zuerst Morgenkreis, dann Spielen.“",
+          "Übergänge begleiten: Vor jedem Wechsel zum Plan gehen; das Kind steckt die erledigte Karte in die „Fertig“-Tasche.",
+          "Änderungen ankündigen: Die Karte „Überraschung“ an die Stelle legen, an der etwas anders wird, und die Änderung erklären."
+        ],
+        "hintergrund": "Viele junge Kinder – besonders Kinder mit Sprachentwicklungsverzögerung, mit Autismus oder Kinder, die die Schulsprache gerade erst lernen – verstehen Bilder schneller und dauerhafter als gesprochene Anweisungen. Gesprochene Sprache ist flüchtig, ein Bild bleibt stehen und kann immer wieder angeschaut werden. Visuelle Hilfen wie Tagespläne verbessern das Verständnis von Abläufen und können Unruhe bei Übergängen verringern (Hodgdon, 1995). Im TEACCH-Ansatz ist der visuelle Tagesplan ein zentrales Element der Strukturierung: Er zeigt, was passiert, in welcher Reihenfolge und wann etwas zu Ende ist (Mesibov, Shea & Schopler, 2004).",
+        "quellen": [
+          "Hodgdon, L. A. (1995). Visual Strategies for Improving Communication. Troy, MI: QuirkRoberts.",
+          "Mesibov, G. B., Shea, V. & Schopler, E. (2004). The TEACCH Approach to Autism Spectrum Disorders. New York: Springer."
+        ],
+        "differenzierung": {
+          "leichter": "Mit zwei Karten beginnen: „Zuerst – dann“ (zuerst Aufräumen, dann Pause). Später auf drei bis vier Karten erweitern.",
+          "schwerer": "C2: den Plan waagrecht für den ganzen Tag legen und Uhrzeiten dazuschreiben; das Kind hängt die Karten selbst um."
+        },
+        "impulse": ["Was machen wir jetzt? Und was kommt danach?", "Welche Karte ist schon fertig?", "Wo ist heute die Überraschung?"],
+        "tipps": [
+          "Für dieselbe Tätigkeit immer dasselbe Bild verwenden – auch in der Maison Relais und zu Hause.",
+          "Karten nie als Strafe wegnehmen: Der Plan zeigt, was kommt, nicht was man sich verdient."
+        ],
+        "material": "Schere, Laminierfolie, Klettpunkte, Kartonstreifen, Umschlag für „Fertig“"
+      }
+    }
+  },
+  {
+    "id": "ruhe-ecke-karten",
+    "bereich": "werkzeuge",
+    "thema": "visuell",
+    "stufen": ["C1", "C2", "C3"],
+    "layout": "gross",
+    "sozialform": ["einzeln", "klasse"],
+    "dauer": "Einführung 3 × 15 Min., dann nach Bedarf",
+    "eldib": ["V-18", "V-21", "K-16"],
+    "schlagworte": ["Ruhe-Ecke", "Beruhigung", "Selbstregulation", "Strategiekarten", "Atmung", "Signalkarte"],
+    "bild": "motiv:schildkroete",
+    "verwandt": ["tagesplan-bildkarten", "ballon-atmen", "nachgespraech-krise"],
+    "de": {
+      "titel": "Karten für die Ruhe-Ecke",
+      "untertitel": "Was hilft mir, wieder ruhig zu werden?",
+      "anleitung": "Karten ausschneiden, laminieren und in der Ruhe-Ecke aufhängen oder an einen Ring fädeln. Jede Karte in ruhigen Momenten vormachen und üben – erst dann hilft sie auch bei Aufregung.",
+      "bausteine": [
+        {"art": "aufgabe", "text": "Welche Karten helfen dir? Such dir drei aus.", "symbole": ["zeigen"]},
+        {
+          "art": "karten",
+          "spalten": 3,
+          "karten": [
+            {"titel": "Pause", "text": "Ich brauche eine Pause.", "bild": "icon:player-pause"},
+            {"titel": "Tief atmen", "text": "Ganz langsam ein und aus.", "bild": "motiv:ballon"},
+            {"titel": "Schildkröte", "text": "Ich mache mich klein und atme.", "bild": "motiv:schildkroete-panzer"},
+            {"titel": "Kissen drücken", "text": "Fest drücken, dann loslassen.", "bild": "icon:pillow"},
+            {"titel": "Wasser trinken", "text": "Langsam, Schluck für Schluck.", "bild": "motiv:wasserglas"},
+            {"titel": "Musik hören", "text": "Leise, mit Kopfhörer.", "bild": "icon:headphones"},
+            {"titel": "Malen", "text": "Ich male, wie es mir geht.", "bild": "icon:palette"},
+            {"titel": "Buch anschauen", "text": "Ich blättere in Ruhe.", "bild": "icon:book"},
+            {"titel": "Strecken", "text": "Ganz groß, dann ganz klein.", "bild": "icon:stretching"},
+            {"titel": "Zählen", "text": "Langsam bis zehn.", "bild": "icon:abacus"},
+            {"titel": "Reden", "text": "Ich sage, was los ist.", "bild": "figur:lehrerin:ruhig"},
+            {"titel": "Bereit", "text": "Ich bin wieder bereit.", "bild": "icon:thumb-up"}
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder lernen Beruhigungsstrategien kennen, üben sie in ruhigen Momenten und wenden sie in der Ruhe-Ecke selbstständig an. Die Karten „Pause“ und „Bereit“ regeln den Weg in die Ecke und zurück.",
+        "ablauf": [
+          "Ruhe-Ecke einrichten: ruhiger, einsehbarer Platz mit Kissen, Kopfhörer, Büchern und Wasser – ein Rückzugsort, kein Strafplatz.",
+          "Karten einführen (3 × 15 Min.): je Einheit drei bis vier Strategien vormachen und gemeinsam ausprobieren: „Wie fühlt sich dein Körper jetzt an?“",
+          "Ablauf üben: „Pause“ zeigen, in die Ecke gehen, eine Karte wählen, „Bereit“ zeigen, zurückkommen. Einmal im Rollenspiel durchspielen.",
+          "Jedes Kind wählt seine drei hilfreichsten Karten; eine Kopie kommt an den Platz.",
+          "Begleiten: anfangs an die Karten erinnern („Möchtest du eine Pause?“), nach der Rückkehr kurz anerkennen: „Du hast dir selbst geholfen.“"
+        ],
+        "hintergrund": "Kinder lernen Selbstregulation schrittweise – zuerst mit Unterstützung Erwachsener, nach und nach selbstständig. Langsames Atmen, An- und Entspannen oder das Umlenken der Aufmerksamkeit greifen früh in die Entstehung eines Gefühls ein und senken die Erregung (Gross, 1998). Die Schildkröten-Technik – sich zurückziehen, zur Ruhe kommen, dann eine Lösung suchen – wurde schon früh im Klassenzimmer erprobt (Robin, Schneider & Dolnick, 1976) und ist Teil von Förderprogrammen für junge Kinder (Webster-Stratton & Reid, 2003). Bildkarten entlasten in aufgewühlten Momenten: Das Kind muss nichts erklären, es kann zeigen.",
+        "quellen": [
+          "Gross, J. J. (1998). The emerging field of emotion regulation: An integrative review. Review of General Psychology, 2(3), 271–299.",
+          "Robin, A., Schneider, M. & Dolnick, M. (1976). The turtle technique: An extended case study of self-control in the classroom. Psychology in the Schools, 13(4), 449–453.",
+          "Webster-Stratton, C. & Reid, M. J. (2003). Treating conduct problems and strengthening social and emotional competence in young children: The Dina Dinosaur treatment program. Journal of Emotional and Behavioral Disorders, 11(3), 130–143."
+        ],
+        "differenzierung": {
+          "leichter": "Spielschule: mit drei Karten beginnen (Atmen, Kissen, Reden) und jede gemeinsam ausführen.",
+          "schwerer": "C3: Karten sortieren – was hilft bei „ein bisschen aufgeregt“, was bei „sehr aufgeregt“?"
+        },
+        "impulse": [
+          "Welche Karte hilft dir, wenn du wütend bist? Und wenn du traurig bist?",
+          "Woran merkst du, dass du wieder bereit bist?",
+          "Was könnte in unserer Ruhe-Ecke noch helfen?"
+        ],
+        "tipps": [
+          "Die Ruhe-Ecke nie als Strafe nutzen – sonst meiden Kinder sie, wenn sie sie brauchen.",
+          "Eine Sanduhr (3–5 Minuten) begrenzt die Pause, ohne zu drängen."
+        ],
+        "achtung": "Sucht ein Kind die Ecke sehr häufig oder sehr lange auf, zieht es sich stark zurück oder verletzt es sich selbst, das Gespräch suchen und die zuständige Leitung (Responsable) informieren.",
+        "material": "Schere, Laminierfolie, Ring oder Klett; optional Sanduhr"
+      }
+    }
+  },
+  {
+    "id": "sicherheitsplan",
+    "bereich": "werkzeuge",
+    "thema": "krise",
+    "stufen": ["ES"],
+    "sozialform": ["einzeln"],
+    "dauer": "30–45 Min.",
+    "eldib": ["V-32", "K-26", "SOZ-40"],
+    "schlagworte": ["Sicherheitsplan", "Krise", "Suizidprävention", "Warnzeichen", "Hilfe holen", "Notfallnummern"],
+    "bild": "icon:shield-check",
+    "verwandt": ["nachgespraech-krise", "loesungsorientiertes-gespraech"],
+    "de": {
+      "titel": "Mein Sicherheitsplan",
+      "untertitel": "Für Momente, in denen es dir sehr schlecht geht. Gemeinsam mit einer Fachperson ausfüllen und griffbereit aufbewahren, etwa als Foto auf dem Handy.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "So nutzt du den Plan",
+          "text": "In einer Krise gehst du die Schritte der Reihe nach durch. Reicht ein Schritt nicht, nimm den nächsten. Bist du in Gefahr, ruf sofort die 112 an."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Meine Warnzeichen",
+          "hinweis": "Gedanken, Gefühle, Bilder oder Situationen, an denen ich merke: Es wird gerade kritisch."
+        },
+        {"art": "linien", "anzahl": 3},
+        {
+          "art": "aufgabe",
+          "text": "Was ich selbst tun kann",
+          "hinweis": "Was mich beruhigt oder ablenkt, ohne dass ich jemanden brauche – zum Beispiel Musik, Bewegung, kaltes Wasser."
+        },
+        {"art": "linien", "anzahl": 3},
+        {
+          "art": "aufgabe",
+          "text": "Menschen und Orte, die mich ablenken",
+          "hinweis": "Wo und mit wem ich auf andere Gedanken komme, ohne über die Krise reden zu müssen."
+        },
+        {"art": "linien", "anzahl": 3},
+        {
+          "art": "aufgabe",
+          "text": "Menschen, die ich um Hilfe bitten kann",
+          "hinweis": "Familie, Freundinnen und Freunde, Erwachsene, denen ich vertraue."
+        },
+        {"art": "tabelle", "spalten": ["Name", "Telefon"], "breiten": [2, 1.2], "zeilen": 3},
+        {
+          "art": "aufgabe",
+          "text": "Fachleute, die ich erreichen kann",
+          "hinweis": "Zum Beispiel SePAS, Psychologin oder Psychologe, Ärztin oder Arzt."
+        },
+        {"art": "tabelle", "spalten": ["Name, Stelle", "Telefon", "Wann erreichbar?"], "breiten": [1.8, 1.1, 1.1], "zeilen": 2},
+        {"art": "notfall"},
+        {
+          "art": "aufgabe",
+          "text": "Mein Umfeld sicherer machen",
+          "hinweis": "Was ich weglege oder jemandem gebe, damit ich in einer Krise sicher bin – und wer mir dabei hilft."
+        },
+        {"art": "linien", "anzahl": 3},
+        {"art": "frage", "text": "Das ist mir wichtig und gibt mir Halt:", "linien": 2},
+        {
+          "art": "skala",
+          "frage": "Wie wahrscheinlich ist es, dass du den Plan nutzt, wenn du deine Warnzeichen bemerkst?",
+          "von": "gar nicht wahrscheinlich",
+          "bis": "sehr wahrscheinlich",
+          "stufen": 11
+        },
+        {"art": "satzanfaenge", "items": ["Erstellt am … mit:", "Mein Plan liegt hier:", "Wir schauen ihn wieder an am:"]}
+      ],
+      "lehrer": {
+        "ziel": "Die oder der Jugendliche erarbeitet mit einer Fachperson einen persönlichen Plan für Krisenmomente: Warnzeichen erkennen, sich selbst helfen, Hilfe holen, das Umfeld sicherer machen.",
+        "ablauf": [
+          "Rahmen (5 Min.): nur im Einzelgespräch; erklären, wozu der Plan dient und wer davon erfährt.",
+          "Warnzeichen (5–10 Min.): aus der letzten schwierigen Situation ableiten – in den Worten der oder des Jugendlichen.",
+          "Schritte 2–5 (15 Min.): konkrete, realistische Einträge; jeweils fragen: „Was könnte dich daran hindern?“",
+          "Umfeld (5 Min.): ruhig besprechen, was weggelegt wird und wer hilft; bei Bedarf die Eltern einbeziehen.",
+          "Abschluss (5 Min.): Wahrscheinlichkeit der Nutzung erfragen, Aufbewahrung und nächsten Termin klären; den Plan nach jeder Krise überprüfen."
+        ],
+        "hintergrund": "Der Sicherheitsplan geht auf die Safety Planning Intervention von Stanley & Brown (2012) zurück, eine kurze, strukturierte Maßnahme für Menschen mit Suizidgedanken oder nach einer suizidalen Krise. Der gemeinsam erarbeitete Plan nennt in fester Reihenfolge Warnzeichen, eigene Bewältigungsstrategien, ablenkende Kontakte, Menschen und Fachstellen für Hilfe sowie Schritte, das Umfeld sicherer zu machen – beginnend bei dem, was die Person selbst tun kann. Für eigene Strategien eignen sich Fertigkeiten der Stresstoleranz wie kaltes Wasser, intensive Bewegung oder langsames Atmen (Rathus & Miller, 2015). Der Plan ist kein Anti-Suizid-Vertrag und ersetzt keine Behandlung.",
+        "quellen": [
+          "Stanley, B. & Brown, G. K. (2012). Safety planning intervention: A brief intervention to mitigate suicide risk. Cognitive and Behavioral Practice, 19(2), 256–264.",
+          "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Fällt das Schreiben schwer, schreibt die Fachperson mit; Stichworte reichen.",
+          "schwerer": "Mit Einverständnis den Plan einer Vertrauensperson zeigen, damit sie weiß, wie sie helfen kann."
+        },
+        "impulse": [
+          "Woran hast du beim letzten Mal zuerst gemerkt, dass es kritisch wird?",
+          "Wem könntest du schreiben, wenn Reden zu schwer ist?"
+        ],
+        "tipps": [
+          "Die Worte der oder des Jugendlichen verwenden – der Plan muss in der Krise verständlich sein.",
+          "Offen nach Suizidgedanken zu fragen, bringt niemanden erst auf die Idee; es entlastet oft."
+        ],
+        "achtung": "Nur im Einzelgespräch, nie in der Klasse; Leitung (Responsable) und SePAS informieren. Bei akuten Suizidgedanken sofort nach dem Krisenablauf handeln, nicht allein lassen, Eltern und Notruf 112 einbeziehen.",
+        "material": "Kopie; Foto auf dem Handy"
+      }
+    },
+    "fr": {
+      "titel": "Mon plan de sécurité",
+      "untertitel": "Pour les moments où tu vas vraiment mal. À remplir avec un·e professionnel·le et à garder à portée de main, par exemple en photo sur ton téléphone.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Comment utiliser ton plan",
+          "text": "En cas de crise, suis les étapes dans l’ordre. Si une étape ne suffit pas, passe à la suivante. Si tu es en danger, appelle tout de suite le 112."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Mes signaux d’alerte",
+          "hinweis": "Pensées, émotions, images ou situations qui me montrent que ça devient critique."
+        },
+        {"art": "linien", "anzahl": 3},
+        {
+          "art": "aufgabe",
+          "text": "Ce que je peux faire moi-même",
+          "hinweis": "Ce qui me calme ou me change les idées sans avoir besoin de quelqu’un – par exemple de la musique, du sport, de l’eau froide."
+        },
+        {"art": "linien", "anzahl": 3},
+        {
+          "art": "aufgabe",
+          "text": "Des personnes et des lieux qui me changent les idées",
+          "hinweis": "Où et avec qui je pense à autre chose, sans devoir parler de la crise."
+        },
+        {"art": "linien", "anzahl": 3},
+        {
+          "art": "aufgabe",
+          "text": "Les personnes à qui je peux demander de l’aide",
+          "hinweis": "Famille, ami·e·s, adultes en qui j’ai confiance."
+        },
+        {"art": "tabelle", "spalten": ["Nom", "Téléphone"], "breiten": [2, 1.2], "zeilen": 3},
+        {
+          "art": "aufgabe",
+          "text": "Les professionnel·le·s que je peux joindre",
+          "hinweis": "Par exemple le SePAS, un·e psychologue, un·e médecin."
+        },
+        {"art": "tabelle", "spalten": ["Nom, service", "Téléphone", "Joignable quand ?"], "breiten": [1.8, 1.1, 1.1], "zeilen": 2},
+        {"art": "notfall"},
+        {
+          "art": "aufgabe",
+          "text": "Rendre mon environnement plus sûr",
+          "hinweis": "Ce que je range ou confie à quelqu’un pour être en sécurité en cas de crise – et qui m’aide à le faire."
+        },
+        {"art": "linien", "anzahl": 3},
+        {"art": "frage", "text": "Ce qui compte pour moi et me donne de la force :", "linien": 2},
+        {
+          "art": "skala",
+          "frage": "À quel point est-il probable que tu utilises ce plan quand tu remarques tes signaux d’alerte ?",
+          "von": "pas du tout probable",
+          "bis": "très probable",
+          "stufen": 11
+        },
+        {"art": "satzanfaenge", "items": ["Établi le … avec :", "Mon plan se trouve ici :", "Nous le revoyons le :"]}
+      ],
+      "lehrer": {
+        "ziel": "Avec un·e professionnel·le, le ou la jeune élabore un plan personnel pour les moments de crise : reconnaître les signaux d’alerte, s’aider soi-même, demander de l’aide, sécuriser son environnement.",
+        "ablauf": [
+          "Cadre (5 min) : uniquement en entretien individuel ; expliquer à quoi sert le plan et qui en sera informé.",
+          "Signaux d’alerte (5–10 min) : les dégager de la dernière situation difficile – avec les mots du ou de la jeune.",
+          "Étapes 2 à 5 (15 min) : réponses concrètes et réalistes ; pour chaque étape, repérer ce qui pourrait gêner sa mise en œuvre et chercher une solution.",
+          "Environnement (5 min) : aborder calmement ce qui sera mis à l’écart et qui aide ; si nécessaire, impliquer les parents.",
+          "Clôture (5 min) : évaluer la probabilité d’utiliser le plan, convenir où le garder et du prochain rendez-vous ; le revoir après chaque crise."
+        ],
+        "hintergrund": "Le plan de sécurité s’appuie sur la Safety Planning Intervention de Stanley & Brown (2012), une intervention brève et structurée pour les personnes ayant des idées suicidaires ou sortant d’une crise suicidaire. Élaboré ensemble, le plan liste dans un ordre défini les signaux d’alerte, les stratégies personnelles, les contacts qui changent les idées, les personnes et services d’aide et les mesures pour sécuriser l’environnement – en commençant par ce que la personne peut faire seule. Pour les stratégies personnelles, les compétences de tolérance à la détresse conviennent bien : eau froide, activité physique intense, respiration lente (Rathus & Miller, 2015). Le plan n’est pas un « contrat de non-suicide » et ne remplace aucun traitement.",
+        "quellen": [
+          "Stanley, B. & Brown, G. K. (2012). Safety planning intervention: A brief intervention to mitigate suicide risk. Cognitive and Behavioral Practice, 19(2), 256–264.",
+          "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Si l’écriture est difficile, le ou la professionnel·le note ; des mots-clés suffisent.",
+          "schwerer": "Avec son accord, montrer le plan à une personne de confiance pour qu’elle sache comment aider."
+        },
+        "impulse": [
+          "La dernière fois, à quoi as-tu remarqué en premier que ça devenait critique ?",
+          "Qu’est-ce qui t’a déjà aidé·e, même un peu ?",
+          "À qui pourrais-tu écrire si parler est trop difficile ?"
+        ],
+        "tipps": [
+          "Utiliser les mots du ou de la jeune : en pleine crise, le plan doit rester compréhensible.",
+          "Poser ouvertement la question des idées suicidaires ne donne pas l’idée à quelqu’un ; cela soulage souvent."
+        ],
+        "achtung": "Uniquement en entretien individuel, jamais en classe ; informer la direction (responsable) et le SePAS. En cas d’idées suicidaires aiguës, agir selon la procédure de crise, ne pas laisser le ou la jeune seul·e, impliquer les parents et le 112.",
+        "material": "Une copie ; une photo sur le téléphone"
+      }
+    }
+  },
+  {
+    "id": "nachgespraech-krise",
+    "bereich": "werkzeuge",
+    "thema": "krise",
+    "stufen": ["C1", "C2", "C3", "C4", "ES"],
+    "sozialform": ["einzeln"],
+    "dauer": "10–30 Min., nach der Beruhigung",
+    "eldib": ["V-27", "V-18", "K-26"],
+    "schlagworte": ["Nachgespräch", "Krise", "Vorfall", "Wiedergutmachung", "Dokumentation", "Deeskalation"],
+    "bild": "icon:messages",
+    "verwandt": ["sicherheitsplan", "abc-beobachtung", "ruhe-ecke-karten"],
+    "de": {
+      "titel": "Nach einer Krise: Nachgespräch",
+      "untertitel": "Erst reden, wenn alle wieder ruhig sind – oft erst am nächsten Tag. Ziel ist Verstehen und Wiedergutmachen, nicht Beschämen.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Was ist passiert?",
+          "hinweis": "Nachfragen: „Was hast du da gedacht und gefühlt?“ – „Wer war noch betroffen?“"
+        },
+        {"art": "frage", "text": "„Erzähl mir, was passiert ist.“", "linien": 2},
+        {"art": "aufgabe", "text": "Was hat geholfen?", "hinweis": "Nachfragen: „Wann hättest du noch anders handeln können?“"},
+        {"art": "frage", "text": "„Was hat dir geholfen, wieder ruhig zu werden?“", "linien": 2},
+        {
+          "art": "aufgabe",
+          "text": "Was brauchen wir?",
+          "hinweis": "Nachfragen: „Wie kannst du es wiedergutmachen?“ – „Was können wir Erwachsenen tun?“"
+        },
+        {"art": "frage", "text": "„Was brauchst du, damit es nächstes Mal anders läuft?“", "linien": 2},
+        {
+          "art": "aufgabe",
+          "text": "Dokumentation",
+          "hinweis": "Noch am selben Tag, sachlich und ohne Bewertung. Nur für die Akte und das zuständige Team."
+        },
+        {"art": "satzanfaenge", "items": ["Datum, Uhrzeit, Ort:", "Beteiligte:"]},
+        {"art": "frage", "text": "Ablauf aus Sicht der Erwachsenen (beobachtbar beschreiben):", "linien": 2},
+        {"art": "satzanfaenge", "items": ["Sofortmaßnahmen:", "Vereinbarungen und Wiedergutmachung:"]},
+        {
+          "art": "ankreuzen",
+          "titel": "Informiert:",
+          "items": ["Eltern", "Leitung (Responsable)", "Klassenlehrperson", "SePAS oder ISA-Team"],
+          "spalten": 2
+        }
+      ],
+      "lehrer": {
+        "ziel": "Das Kind versteht nach einem Vorfall, was passiert ist, übernimmt Verantwortung und findet mit den Erwachsenen einen Plan für das nächste Mal. Die Dokumentation sichert die Absprachen.",
+        "ablauf": [
+          "Zeitpunkt: erst sprechen, wenn alle ruhig sind – auch die Erwachsenen; ankündigen: „Morgen reden wir in Ruhe darüber.“",
+          "Einstieg (2 Min.): ruhiger Ort, nebeneinander sitzen: „Ich möchte verstehen, was passiert ist.“",
+          "Was ist passiert? (5–10 Min.): erzählen lassen, zusammenfassen, Gefühle benennen; keine Verhörfragen.",
+          "Was hat geholfen? Was brauchen wir? (10 Min.): den Anteil des Kindes würdigen, Wiedergutmachung und ein bis zwei Absprachen vereinbaren – auch für die Erwachsenen.",
+          "Noch am selben Tag dokumentieren und nach dem internen Ablauf informieren."
+        ],
+        "hintergrund": "In einer Krise ist das Denken durch hohe Erregung eingeschränkt; über Ursachen und Folgen lässt sich erst sprechen, wenn sich alle beruhigt haben. Omer & von Schlippe (2004) sprechen davon, das Eisen zu schmieden, solange es kalt ist: Der Abstand verhindert eine neue Eskalation und zeigt, dass die Erwachsenen dranbleiben. Erzählen und Gefühle benennen hilft dem Kind, das Erlebte zu ordnen (Siegel & Bryson, 2011). Die Fragen nach Betroffenen und Wiedergutmachung stammen aus der restaurativen Praxis, die den entstandenen Schaden und seine Behebung in den Mittelpunkt stellt statt der Strafe (Wachtel, 2016).",
+        "quellen": [
+          "Omer, H. & von Schlippe, A. (2004). Autorität durch Beziehung. Göttingen: Vandenhoeck & Ruprecht.",
+          "Siegel, D. J. & Bryson, T. P. (2011). The Whole-Brain Child. New York: Delacorte.",
+          "Wachtel, T. (2016). Defining Restorative. Bethlehem, PA: International Institute for Restorative Practices."
+        ],
+        "differenzierung": {
+          "leichter": "Spielschule, C2: nur „Was ist passiert?“ und „Was hilft nächstes Mal?“; malen oder mit Figuren nachspielen lassen.",
+          "schwerer": "Sekundarschule: den Ablauf selbst aufschreiben und eine Wiedergutmachung vorschlagen."
+        },
+        "impulse": [
+          "Wann ist es gekippt?",
+          "Woran hättest du früher merken können, dass es schwierig wird?",
+          "Was brauchst du von uns, wenn es wieder so weit kommt?"
+        ],
+        "tipps": [
+          "Konsequenzen nicht im Nachgespräch aushandeln, sondern getrennt und sachlich mitteilen.",
+          "Eigene Anteile benennen („Ich war zu laut.“) – das erleichtert es dem Kind, Verantwortung zu übernehmen."
+        ],
+        "achtung": "Bei Verletzungen oder Hinweisen auf Gefährdung gilt der interne Krisenablauf: sofort handeln, das Kind nicht allein lassen, Leitung (Responsable) und Eltern informieren.",
+        "material": "Papier, Stifte oder Spielfiguren"
+      }
+    }
+  },
+  {
+    "id": "klassenrat-protokoll",
+    "bereich": "werkzeuge",
+    "thema": "gruppe",
+    "stufen": ["C3", "C4", "ES"],
+    "sozialform": ["klasse"],
+    "dauer": "30–45 Min. pro Woche",
+    "eldib": ["K-17", "SOZ-32", "SOZ-34", "SOZ-22"],
+    "schlagworte": ["Klassenrat", "Protokoll", "Mitbestimmung", "Rollen", "Demokratie", "Konflikte lösen"],
+    "bild": "icon:users-group",
+    "verwandt": ["gruppenregeln-erarbeiten"],
+    "de": {
+      "titel": "Klassenrat: Protokoll",
+      "untertitel": "Der Klassenrat trifft sich jede Woche zur gleichen Zeit. Das Protokoll hält fest, was beschlossen wurde – und ob es umgesetzt wird.",
+      "bausteine": [
+        {
+          "art": "spalten",
+          "links": [{"art": "satzanfaenge", "items": ["Leitung:", "Protokoll:"]}],
+          "rechts": [{"art": "satzanfaenge", "items": ["Zeit:", "Regeln:"]}]
+        },
+        {"art": "aufgabe", "text": "Positive Runde: Was lief diese Woche gut?"},
+        {"art": "linien", "anzahl": 2},
+        {
+          "art": "aufgabe",
+          "text": "Rückblick auf die letzten Beschlüsse",
+          "hinweis": "Wurde umgesetzt, was wir beschlossen haben? Wenn nicht: Was brauchen wir dafür?"
+        },
+        {
+          "art": "tabelle",
+          "spalten": ["Beschluss", "Umgesetzt? ja – teils – nein", "Was jetzt?"],
+          "breiten": [2, 1.2, 1.6],
+          "zeilen": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Anliegen besprechen und beschließen",
+          "hinweis": "Wer das Anliegen eingebracht hat, erzählt; Betroffene antworten; alle sammeln Vorschläge. Abgestimmt wird über Lösungen, nie über Personen."
+        },
+        {
+          "art": "tabelle",
+          "spalten": ["Anliegen (von wem?)", "Vorschläge", "Beschluss", "Wer? Bis wann?"],
+          "breiten": [1.3, 1.3, 1.5, 1],
+          "zeilen": 3,
+          "beispiel": [
+            "Beim Fußball in der Pause gibt es jeden Tag Streit. (Diogo)",
+            "feste Mannschaften; Schiedsrichter; Plan, wer spielt",
+            "Jeden Tag stellen zwei andere Kinder die Mannschaften zusammen.",
+            "Zoé und Mathis machen die Liste, ab Montag"
+          ]
+        },
+        {"art": "aufgabe", "text": "Abschluss", "hinweis": "Beschlüsse vorlesen, Rollen für die nächste Sitzung verteilen."},
+        {"art": "satzanfaenge", "items": ["Nächste Sitzung am:", "Nächste Leitung und nächstes Protokoll:"]},
+        {"art": "seitenumbruch"},
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "So läuft eine Sitzung",
+          "punkte": [
+            "Eröffnung: Die Leitung begrüßt, nennt die Rollen und die Anliegen des Tages.",
+            "Positive Runde: Wer mag, sagt, was gut lief oder wem sie oder er danken möchte.",
+            "Rückblick: Was ist aus den letzten Beschlüssen geworden?",
+            "Anliegen: erzählen, nachfragen, Lösungen sammeln, abstimmen, festhalten.",
+            "Abschluss: Beschlüsse vorlesen, Rollen für die nächste Woche verteilen."
+          ]
+        },
+        {"art": "aufgabe", "text": "Rollenkarten", "hinweis": "Ausschneiden und laminieren. Die Rollen wechseln jede Woche."},
+        {
+          "art": "karten",
+          "spalten": 4,
+          "hoehe": 120,
+          "karten": [
+            {"titel": "Leitung", "text": "eröffnet, ruft auf, fasst zusammen, lässt abstimmen", "bild": "icon:microphone"},
+            {"titel": "Protokoll", "text": "schreibt Anliegen und Beschlüsse auf und liest sie vor", "bild": "icon:pencil"},
+            {"titel": "Zeit", "text": "achtet auf die Zeit und sagt, wenn noch fünf Minuten bleiben", "bild": "icon:hourglass"},
+            {"titel": "Regeln", "text": "achtet auf die Gesprächsregeln und erinnert freundlich daran", "bild": "icon:hand-stop"}
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Unsere Gesprächsregeln",
+          "punkte": [
+            "Wir melden uns und warten, bis wir dran sind.",
+            "Wir sprechen über das Problem, nicht über die Person.",
+            "Wir hören zu und lachen niemanden aus.",
+            "Persönliches aus dem Klassenrat bleibt in der Klasse."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Anliegen-Liste für die Woche",
+          "hinweis": "Hängt gut sichtbar in der Klasse. Wer ein Anliegen hat, trägt es mit Namen ein."
+        },
+        {
+          "art": "tabelle",
+          "spalten": ["Datum", "Mein Anliegen", "Name"],
+          "breiten": [0.8, 3.2, 1],
+          "zeilen": 6,
+          "beispiel": ["Mo, 14.10.", "In der Garderobe wird nach der Pause immer gedrängelt.", "Leonor"]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Der Klassenrat gibt der Klasse einen festen, demokratischen Rahmen, um Anliegen zu besprechen, Konflikte zu lösen und Beschlüsse zu fassen. Die Kinder übernehmen Rollen und lernen, Gespräche selbst zu leiten.",
+        "ablauf": [
+          "Einführung (45 Min.): Sinn erklären, Gesprächsregeln vereinbaren, Rollen und Anliegen-Liste vorstellen.",
+          "Unter der Woche: Anliegen mit Namen in die Liste eintragen; die Leitung sortiert sie vor der Sitzung mit der Lehrperson.",
+          "Sitzung (30–45 Min.): Eröffnung, positive Runde, Rückblick, Anliegen, Abschluss – immer in derselben Reihenfolge.",
+          "Anliegen: erzählen lassen, Betroffene antworten lassen, Lösungen sammeln; abgestimmt wird über Lösungen, nie über Personen.",
+          "Rollen wöchentlich wechseln. Die Lehrperson hält sich zunehmend zurück, greift aber bei Bloßstellung ein."
+        ],
+        "hintergrund": "Im Klassenrat erleben Kinder, dass ihre Anliegen gehört werden und sie ihr Zusammenleben mitgestalten können. Das stärkt Selbstbestimmung und Zugehörigkeit – Grundbedürfnisse, die Motivation und die Übernahme von Regeln fördern (Deci & Ryan, 2000). Regelmäßige Klassengespräche über das Miteinander sind zudem ein fester Bestandteil schulweiter Programme gegen Mobbing (Olweus, 1993). Das Vorgehen – Problem benennen, Lösungen sammeln, Folgen abwägen, entscheiden – übt soziale Problemlösefertigkeiten, wie sie Förderprogramme systematisch trainieren (Shure, 1992). Entscheidend sind Verlässlichkeit und echte Entscheidungsspielräume.",
+        "quellen": [
+          "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268.",
+          "Olweus, D. (1993). Bullying at School: What We Know and What We Can Do. Oxford: Blackwell.",
+          "Shure, M. B. (1992). I Can Problem Solve (ICPS). Champaign, IL: Research Press."
+        ],
+        "differenzierung": {
+          "leichter": "C3: mit zwei Rollen (Leitung, Protokoll) und einem Anliegen pro Sitzung beginnen; die Lehrperson schreibt anfangs mit.",
+          "schwerer": "Sekundarschule: Die Klasse leitet selbstständig, die Lehrperson ist Gast; offene Beschlüsse werden sichtbar nachverfolgt."
+        },
+        "impulse": [
+          "Was hat sich seit unserem letzten Beschluss verändert?",
+          "Welche Lösung ist für alle Beteiligten fair?",
+          "Was brauchen wir, damit wir den Beschluss auch umsetzen?"
+        ],
+        "tipps": [
+          "Vorher klären, was die Klasse beschließen darf und was nicht.",
+          "Anliegen, die eine Person bloßstellen würden, vorher im Einzelgespräch klären."
+        ],
+        "achtung": "Mobbing, Gewalt und sehr persönliche Konflikte gehören nicht in den Klassenrat: Betroffene einzeln begleiten und die zuständige Leitung (Responsable) informieren.",
+        "material": "Rollenkarten, Anliegen-Liste, Ordner für Protokolle"
+      }
+    }
+  },
+  {
+    "id": "gruppenregeln-erarbeiten",
+    "bereich": "werkzeuge",
+    "thema": "gruppe",
+    "stufen": ["C2", "C3", "C4"],
+    "sozialform": ["klasse", "gruppe"],
+    "dauer": "2 × 30–45 Min.",
+    "eldib": ["V-16", "V-17", "SOZ-27"],
+    "schlagworte": ["Gruppenregeln", "Klassenregeln", "positive Formulierung", "Mitbestimmung", "Visualisierung", "Klassenführung"],
+    "bild": "icon:checklist",
+    "verwandt": ["klassenrat-protokoll"],
+    "de": {
+      "titel": "Gruppenregeln erarbeiten",
+      "untertitel": "Regeln, die eine Gruppe selbst erarbeitet, werden eher verstanden und eingehalten: wenige, positiv formuliert, sichtbar und regelmäßig überprüft.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Vom Verbot zur Regel",
+          "hinweis": "Gesammelte Ideen positiv formulieren: Was tun wir stattdessen – und warum?"
+        },
+        {
+          "art": "tabelle",
+          "spalten": ["Idee oder Verbot", "Unsere Regel (positiv)", "Warum ist sie wichtig?"],
+          "breiten": [1, 1.4, 1.4],
+          "zeilen": 4,
+          "beispiel": ["„Nicht schreien.“", "Wir sprechen leise, wenn andere arbeiten.", "Damit sich alle konzentrieren können."]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Regeln auswählen und sichtbar machen",
+          "hinweis": "Gemeinsam drei bis fünf Regeln wählen, zum Beispiel mit Klebepunkten."
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "So wird das Regelplakat gut",
+          "punkte": [
+            "Jede Regel in einem kurzen Satz, der sagt, was wir tun.",
+            "Zu jeder Regel ein Foto, auf dem Kinder sie vormachen.",
+            "Auf Augenhöhe der Kinder aufhängen, dort, wo die Regel gilt.",
+            "Jede Regel einmal im Rollenspiel üben."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Regeln überprüfen",
+          "hinweis": "Einmal pro Woche gemeinsam einschätzen, wie gut jede Regel geklappt hat, und ein Gesicht malen."
+        },
+        {"art": "plan", "zeilen": ["", "", "", ""], "tage": ["Woche 1", "Woche 2", "Woche 3", "Woche 4"], "symbol": "gesicht"}
+      ],
+      "lehrer": {
+        "ziel": "Die Gruppe erarbeitet wenige, positiv formulierte Regeln, versteht ihren Sinn, macht sie sichtbar und überprüft sie regelmäßig. So werden Regeln zu einer gemeinsamen Vereinbarung statt zu einer Vorgabe von außen.",
+        "ablauf": [
+          "Sammeln (10 Min.): „Was brauchen wir, damit sich alle hier wohlfühlen und gut lernen können?“ Antworten ohne Wertung an der Tafel sammeln.",
+          "Umformulieren (15 Min.): Jede Idee positiv fassen („Was tun wir stattdessen?“) und gemeinsam begründen.",
+          "Auswählen (10 Min.): Ähnliches zusammenfassen; jedes Kind vergibt zwei Klebepunkte an die wichtigsten Regeln.",
+          "Sichtbar machen (2. Einheit): Regelplakat mit Fotos gestalten; jede Regel einmal im Rollenspiel üben.",
+          "Überprüfen: wöchentlich kurz einschätzen; nach vier Wochen gemeinsam entscheiden, ob eine Regel angepasst wird."
+        ],
+        "hintergrund": "Wenige, klar formulierte Regeln, die früh eingeführt, begründet und regelmäßig besprochen werden, gehören zu den wirksamsten vorbeugenden Maßnahmen der Klassenführung (Nolting, 2002). Positiv formulierte Regeln beschreiben das erwünschte Verhalten; es lässt sich vormachen, üben und anerkennen, während ein Verbot offenlässt, was stattdessen gilt. Werden Kinder an der Entstehung beteiligt und verstehen sie den Sinn einer Regel, übernehmen sie diese eher aus eigener Überzeugung statt nur aus Angst vor Folgen (Deci & Ryan, 2000). Gemeinsam vereinbarte Klassenregeln gegen Ausgrenzung sind zudem ein Kernelement der Mobbingprävention (Olweus, 1993).",
+        "quellen": [
+          "Nolting, H.-P. (2002). Störungen in der Schulklasse. Weinheim: Beltz.",
+          "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268.",
+          "Olweus, D. (1993). Bullying at School: What We Know and What We Can Do. Oxford: Blackwell."
+        ],
+        "differenzierung": {
+          "leichter": "C2: nur drei Regeln, jede mit Foto und einer Geste (z. B. Hand ans Ohr für „zuhören“).",
+          "schwerer": "C4: zusätzlich vereinbaren, wie jemand etwas wiedergutmachen kann, wenn eine Regel verletzt wurde."
+        },
+        "impulse": [
+          "Woran merkt man, dass sich jemand an diese Regel hält?",
+          "Wem hilft diese Regel – und wie?",
+          "Welche Regel hat diese Woche am besten geklappt? Woran lag das?"
+        ],
+        "tipps": [
+          "Regeln vor allem dann ansprechen, wenn sie eingehalten werden: „Ihr habt einander zugehört.“",
+          "Die Regeln gelten auch für die Erwachsenen – das macht sie glaubwürdig."
+        ],
+        "material": "Tafel oder Flipchart, Plakat, Klebepunkte, Kamera oder Tablet für Fotos"
+      }
+    }
+  }
+]

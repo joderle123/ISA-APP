@@ -1,0 +1,1116 @@
+[
+  {
+    "id": "wenn-ich-traurig-bin",
+    "bereich": "gefuehle",
+    "thema": "trauer",
+    "stufen": ["C2"],
+    "sozialform": ["einzeln", "gruppe"],
+    "dauer": "25–30 Min.",
+    "eldib": ["K-21", "K-16", "K-12"],
+    "schlagworte": ["Traurigkeit", "Trost", "Gefühle erkennen", "Vertrauensperson", "Hilfe holen"],
+    "bild": "gesicht:traurig",
+    "verwandt": ["trost-koffer", "das-macht-mich-froh"],
+    "de": {
+      "titel": "Wenn ich traurig bin",
+      "untertitel": "Alle sind manchmal traurig. Mit Trost wird es leichter.",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "Oma fliegt nach Hause",
+          "text": "Diogos Oma war drei Wochen zu Besuch. Heute Morgen ist sie zurück nach Portugal geflogen. In der Schule ist Diogo ganz still. Er hat einen Kloß im Hals. In der Pause will er nicht Fußball spielen.",
+          "bild": "figur:noah:traurig"
+        },
+        { "art": "aufgabe", "text": "Woran merkst du, dass du traurig bist? Kreuze an.", "symbole": ["ankreuzen"] },
+        {
+          "art": "ankreuzen",
+          "items": ["Ich muss weinen.", "Ich habe einen Kloß im Hals.", "Ich bin ganz still.", "Ich will allein sein.", "Ich habe keine Lust zu spielen.", "Mein Bauch fühlt sich schwer an."],
+          "spalten": 2
+        },
+        { "art": "aufgabe", "text": "Was tröstet dich? Kreise ein.", "symbole": ["einkreisen"] },
+        {
+          "art": "bilder",
+          "modus": "einkreisen",
+          "spalten": 4,
+          "bilder": [
+            { "bild": "icon:hearts", "text": "kuscheln" },
+            { "bild": "icon:message-circle", "text": "reden" },
+            { "bild": "icon:headphones", "text": "Musik hören" },
+            { "bild": "icon:palette", "text": "malen" },
+            { "bild": "icon:paw", "text": "Tier streicheln" },
+            { "bild": "icon:trees", "text": "rausgehen" },
+            { "bild": "icon:coffee", "text": "Kakao trinken" },
+            { "bild": "icon:book", "text": "Buch ansehen" }
+          ]
+        },
+        { "art": "aufgabe", "text": "Wem kannst du sagen, dass du traurig bist?", "symbole": ["schreiben"] },
+        { "art": "satzanfaenge", "items": ["Zu Hause:", "In der Schule:"] }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder erkennen Anzeichen von Traurigkeit bei sich und anderen, wählen aus, was sie tröstet, und benennen Menschen, denen sie sich anvertrauen können.",
+        "ablauf": [
+          "Einstieg (5 Min.): Geschichte vorlesen. Fragen: „Woran merkt man, dass Diogo traurig ist?“ „Was könnte ihn trösten?“",
+          "Aufgabe 1 (5 Min.): Jedes Kind kreuzt für sich an. Anzeichen an der Tafel sammeln; niemand muss Erlebnisse erzählen.",
+          "Aufgabe 2 (10 Min.): Bilder einkreisen. Im Sitzkreis: „Was tröstet dich am meisten?“ Nicht allen hilft dasselbe.",
+          "Aufgabe 3 (5 Min.): Vertrauenspersonen eintragen. Wer niemanden findet, bekommt unauffällig Hilfe.",
+          "Das Blatt aufbewahren und in traurigen Momenten gemeinsam ansehen: „Was davon hilft dir jetzt?“"
+        ],
+        "hintergrund": "Traurigkeit ist eine Reaktion auf Verlust, Abschied oder Enttäuschung. Sie verlangsamt, lenkt die Aufmerksamkeit nach innen und zeigt dem Umfeld, dass jemand Nähe braucht. Im Grundschulalter lernen Kinder zunehmend, Gefühle an Ausdruck und Situation zu erkennen und passende Wege zur Regulation zu wählen; der Trost durch vertraute Erwachsene bleibt dabei eine zentrale Hilfe (Petermann & Wiedebusch, 2016). Erwachsene unterstützen am besten, wenn sie das Gefühl wahrnehmen, benennen und annehmen, statt es schnell wegzureden – erst danach wird gemeinsam nach Lösungen gesucht (Gottman, 1997).",
+        "quellen": [
+          "Petermann, F. & Wiedebusch, S. (2016). Emotionale Kompetenz bei Kindern (3. Aufl.). Göttingen: Hogrefe.",
+          "Gottman, J. (1997). Raising an Emotionally Intelligent Child. New York: Simon & Schuster."
+        ],
+        "differenzierung": {
+          "leichter": "Anzeichen vorlesen und mit Mimik vormachen. Das Kind zeigt auf Bilder; die Lehrperson schreibt Namen auf.",
+          "schwerer": "Zusätzlich aufschreiben: „Was kann ich tun, wenn ein anderes Kind traurig ist?“"
+        },
+        "impulse": [
+          "Hilft dir eher allein sein oder mit jemandem zusammen sein?",
+          "Woran merkst du, dass die Traurigkeit kleiner wird?",
+          "Was sagst du, wenn jemand aus deiner Klasse traurig ist?"
+        ],
+        "tipps": [
+          "Traurigkeit nicht wegtrösten („Ist doch nicht schlimm“), sondern benennen: „Du bist traurig, weil Oma abgereist ist.“",
+          "Die Bilder aus Aufgabe 2 als Trost-Karten in der Ruhe-Ecke aufhängen."
+        ],
+        "achtung": "Wirkt ein Kind über längere Zeit traurig oder zurückgezogen oder erzählt es von Verlust, Trennung oder Belastungen in der Familie: nicht im Plenum vertiefen, ein Einzelgespräch anbieten und die zuständige Leitung (Responsable) informieren.",
+        "material": "Buntstifte"
+      }
+    }
+  },
+  {
+    "id": "trost-koffer",
+    "bereich": "gefuehle",
+    "thema": "trauer",
+    "stufen": ["C3", "C4"],
+    "sozialform": ["einzeln", "gruppe"],
+    "dauer": "40–45 Min.",
+    "eldib": ["K-26", "V-18", "SOZ-26"],
+    "schlagworte": ["Trost", "Traurigkeit", "Selbstfürsorge", "Hilfe holen", "Trost-Karten"],
+    "bild": "motiv:werkzeugkiste",
+    "verwandt": ["wenn-ich-traurig-bin", "wenn-es-laenger-schwer-ist"],
+    "de": {
+      "titel": "Mein Trost-Koffer",
+      "untertitel": "Trost macht Traurigkeit nicht weg. Aber er macht sie leichter zu tragen. Pack dir einen Koffer für schwere Tage.",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "Zoé ist weg",
+          "text": "Nora und Zoé sind beste Freundinnen seit dem Précoce. Vor zwei Wochen ist Zoé mit ihrer Familie nach Kanada gezogen. Seitdem ist Nora in der Pause oft allein und abends traurig. Heute Abend holt sie das Freundschaftsband heraus, das Zoé ihr geschenkt hat. Sie erzählt Mama, was sie mit Zoé alles erlebt hat. Mama nimmt sie in den Arm und sagt: „Freundschaft hört nicht einfach auf.“ Nora ist immer noch traurig – aber nicht mehr so allein.",
+          "bild": "figur:mia:traurig"
+        },
+        { "art": "aufgabe", "text": "Was hat Nora getröstet? Verbinde mit dem passenden Fach im Koffer.", "symbole": ["lesen", "verbinden"] },
+        {
+          "art": "zuordnen",
+          "titel": ["Aus der Geschichte", "Fach im Koffer"],
+          "links": ["Mama", "das Freundschaftsband", "von Zoé erzählen", "„Freundschaft hört nicht einfach auf.“"],
+          "rechts": ["ein Satz", "ein Mensch", "etwas tun", "ein Ding"]
+        },
+        { "art": "aufgabe", "text": "Pack deinen eigenen Trost-Koffer. Schreibe oder male in jedes Fach.", "hinweis": "Zwei oder drei Ideen pro Fach reichen. Nur was dir wirklich hilft, kommt hinein.", "symbole": ["schreiben", "malen"] },
+        {
+          "art": "spalten",
+          "links": [
+            { "art": "feld", "label": "Menschen, die mich trösten", "beispiel": "Oma, mein Bruder, meine Lehrerin", "hoehe": 3.5 },
+            { "art": "feld", "label": "Dinge, die mich trösten", "beispiel": "meine Decke, ein Foto", "hoehe": 3.5 }
+          ],
+          "rechts": [
+            { "art": "feld", "label": "Das tue ich, wenn ich traurig bin", "beispiel": "Musik hören, mit dem Hund rausgehen", "hoehe": 3.5 },
+            { "art": "feld", "label": "Sätze, die mir guttun", "beispiel": "„Das geht wieder vorbei.“", "hoehe": 3.5 }
+          ]
+        },
+        { "art": "aufgabe", "text": "Trost-Karten: Schneide die Sätze aus, die dir guttun. Schreibe eigene auf die leeren Karten.", "symbole": ["schneiden", "schreiben"] },
+        {
+          "art": "karten",
+          "spalten": 3,
+          "hoehe": 96,
+          "karten": [
+            { "bild": "icon:heart", "titel": "Ich darf traurig sein." },
+            { "bild": "icon:rainbow", "titel": "Das geht wieder vorbei." },
+            { "bild": "icon:friends", "titel": "Ich bin nicht allein." },
+            { "bild": "icon:sunrise", "titel": "Morgen ist ein neuer Tag." },
+            { "bild": "icon:lifebuoy", "titel": "Ich kann mir Hilfe holen." },
+            { "bild": "icon:droplet", "titel": "Weinen ist in Ordnung." },
+            {},
+            {},
+            {}
+          ]
+        },
+        { "art": "aufgabe", "text": "Mein Plan für traurige Tage", "symbole": ["schreiben"] },
+        {
+          "art": "schritte",
+          "items": [
+            { "titel": "Ich merke: Ich bin traurig.", "text": "Woran merke ich es?" },
+            { "titel": "Ich öffne meinen Trost-Koffer.", "text": "Was nehme ich zuerst heraus?" },
+            { "titel": "Wenn es nicht besser wird, rede ich mit …", "text": "Name der Person" }
+          ]
+        },
+        { "art": "rueckblick" }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder lernen verschiedene Quellen von Trost kennen – Menschen, Dinge, Tätigkeiten und hilfreiche Sätze – und stellen einen persönlichen Trost-Koffer mit einem Plan für traurige Tage zusammen.",
+        "ablauf": [
+          "Einstieg (5 Min.): Geschichte vorlesen. Fragen: „Was hat Nora geholfen? Ist ihre Traurigkeit jetzt weg?“",
+          "Aufgabe 1 (5 Min.): Zuordnen und besprechen: Trost kann ein Mensch, ein Ding, eine Tätigkeit oder ein Satz sein.",
+          "Aufgabe 2 (10 Min.): Koffer in Einzelarbeit packen. Zeichnen ist ausdrücklich erlaubt.",
+          "Aufgabe 3 (10 Min.): Trost-Karten auswählen, eigene ergänzen, ausschneiden und in einen Umschlag stecken.",
+          "Aufgabe 4 (5 Min.): Plan ausfüllen. Betonen: Wenn der Koffer nicht reicht, ist Hilfe holen der richtige Schritt."
+        ],
+        "hintergrund": "Traurigkeit ist eine Reaktion auf Verlust oder Enttäuschung und signalisiert dem Umfeld, dass jemand Nähe braucht. Im Grundschulalter erweitern Kinder ihr Repertoire an Regulationsstrategien: Neben dem Trost durch vertraute Personen nutzen sie zunehmend eigene Wege wie Ablenkung, angenehme Tätigkeiten oder beruhigende Selbstgespräche (Petermann & Wiedebusch, 2016). Emotional kompetent ist nicht, wer keine Traurigkeit empfindet, sondern wer über mehrere Wege verfügt, mit ihr umzugehen (Saarni, 1999). Der Trost-Koffer macht diese Wege sichtbar. Er soll Traurigkeit nicht wegmachen, sondern tragbar machen.",
+        "quellen": [
+          "Petermann, F. & Wiedebusch, S. (2016). Emotionale Kompetenz bei Kindern (3. Aufl.). Göttingen: Hogrefe.",
+          "Saarni, C. (1999). The Development of Emotional Competence. New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Nur zwei Fächer füllen. Die Trost-Karten mit Bildern statt Sätzen gestalten.",
+          "schwerer": "Einen Brief an Nora schreiben: „Was würdest du ihr sagen, damit sie sich weniger allein fühlt?“"
+        },
+        "impulse": [
+          "Was tröstet dich, wenn gerade niemand da ist?",
+          "Welcher Trost-Satz klingt für dich echt, welcher nicht?",
+          "Für wen könntest du selbst ein Trost sein?"
+        ],
+        "tipps": [
+          "Anregen, zu Hause einen echten Trost-Koffer zu packen (Schuhkarton mit Foto, Kuscheltier, Karten).",
+          "Trost-Sätze nie verordnen: Was für das Kind falsch klingt, darf weggelassen werden."
+        ],
+        "achtung": "Manche Kinder denken dabei an Todesfälle, eine Trennung der Eltern oder einen Umzug. Nicht im Plenum vertiefen, ein Einzelgespräch anbieten. Bei anhaltender Traurigkeit die zuständige Leitung (Responsable) informieren.",
+        "material": "Schere, Briefumschlag oder kleine Schachtel, Buntstifte"
+      }
+    }
+  },
+  {
+    "id": "wenn-es-laenger-schwer-ist",
+    "bereich": "gefuehle",
+    "thema": "trauer",
+    "stufen": ["ES"],
+    "sozialform": ["einzeln", "gruppe", "klasse"],
+    "dauer": "45 Min.",
+    "eldib": ["K-26", "SOZ-37", "V-32"],
+    "schlagworte": ["Niedergeschlagenheit", "Warnzeichen", "Hilfe holen", "Freunde unterstützen", "psychische Gesundheit", "Notfallnummern"],
+    "bild": "icon:cloud-rain",
+    "verwandt": ["trost-koffer", "stress-werkzeugkoffer"],
+    "de": {
+      "titel": "Wenn es mir länger nicht gut geht",
+      "untertitel": "Schlechte Tage kennt jeder. Manchmal bleibt die Schwere aber über Wochen. Das sollte man ernst nehmen – bei sich selbst und bei anderen.",
+      "bausteine": [
+        {
+          "art": "spalten",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "Ein Durchhänger …",
+              "punkte": ["hat oft einen klaren Anlass", "dauert Stunden oder ein paar Tage", "lässt zwischendurch auch gute Momente zu", "Schlaf, Essen und Alltag laufen weiter"]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "achtung",
+              "titel": "Mehr als ein Durchhänger, wenn …",
+              "punkte": ["es über Wochen anhält, fast jeden Tag", "kaum noch etwas Freude macht", "man sich von Freunden und Familie zurückzieht", "Schlaf, Appetit oder Konzentration sich verändern", "Gedanken wie „Ich bin nichts wert“ oder „Alles ist sinnlos“ kommen"]
+            }
+          ]
+        },
+        { "art": "text", "text": "Faustregel: Halten mehrere dieser Anzeichen länger als zwei Wochen an, ist Unterstützung wichtig. Sich Hilfe zu holen ist kein Zeichen von Schwäche." },
+        { "art": "aufgabe", "text": "Durchhänger oder mehr? Schätze die vier Situationen ein.", "hinweis": "Nicht immer ist die Antwort eindeutig. Achte auf Dauer, Alltag und Gedanken." },
+        {
+          "art": "einschaetzung",
+          "optionen": ["eher ein Durchhänger", "eher mehr als das"],
+          "items": [
+            "Elias hat die Mathearbeit verhauen. Er ist den ganzen Abend schlecht gelaunt, am nächsten Tag geht er wieder zum Training.",
+            "Aylin sagt seit Wochen alle Treffen ab. Sie schläft schlecht, isst kaum und sagt oft: „Ist doch eh egal.“",
+            "Rafael ist nach dem Streit mit seiner Freundin zwei Tage lang niedergeschlagen. Dann redet er mit seinem Bruder darüber.",
+            "Chiara sitzt seit über einem Monat in den Pausen allein. Ihre Noten fallen ab, und sie wirkt ständig erschöpft."
+          ]
+        },
+        { "art": "aufgabe", "text": "Wenn du dir um jemanden Sorgen machst: vier Schritte" },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 0,
+          "items": [
+            { "titel": "Ansprechen", "text": "„Mir ist aufgefallen, dass du viel allein bist. Wie geht es dir wirklich?“" },
+            { "titel": "Zuhören", "text": "Ernst nehmen, nicht bewerten, nicht sofort Ratschläge geben." },
+            { "titel": "Hilfe holen", "text": "Gemeinsam eine erwachsene Vertrauensperson ansprechen." },
+            { "titel": "Dranbleiben", "text": "Ein paar Tage später noch einmal nachfragen." }
+          ]
+        },
+        { "art": "aufgabe", "text": "Aylin wirkt seit Wochen bedrückt. Wie könntest du sie ansprechen? Schreibe das Gespräch weiter.", "hinweis": "Viele antworten zuerst ausweichend. Bleib freundlich dran, ohne Druck zu machen." },
+        {
+          "art": "dialog",
+          "zeilen": [
+            { "wer": "Du" },
+            { "wer": "Aylin", "text": "Passt schon. Ist gerade einfach viel los." },
+            { "wer": "Du" }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "achtung",
+          "titel": "Wichtig",
+          "text": "Spricht jemand davon, nicht mehr leben zu wollen, oder verletzt sich selbst, musst du das nicht allein tragen. Sag es sofort einer erwachsenen Person – auch wenn du versprochen hast, es geheim zu halten. Das ist kein Verrat, sondern Hilfe."
+        },
+        { "art": "aufgabe", "text": "Und wenn es dich selbst betrifft? Dein Plan", "hinweis": "Was du hier schreibst, gehört dir. Ein Anfang kann so klingen: „Mir geht es seit einer Weile nicht gut. Hast du kurz Zeit?“" },
+        { "art": "satzanfaenge", "items": ["Daran merke ich, dass es mir länger nicht gut geht: …"], "linien": 2 },
+        { "art": "satzanfaenge", "items": ["Mit dieser Person könnte ich reden: …", "In der Schule kann ich mich wenden an (z. B. SePAS): …"] },
+        { "art": "satzanfaenge", "items": ["Mein erster Satz könnte sein: …"], "linien": 2 },
+        { "art": "notfall" }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen unterscheiden vorübergehende Tiefs von anhaltender Niedergeschlagenheit, kennen Warnzeichen bei sich und anderen und wissen, wie und wo sie Hilfe bekommen.",
+        "ablauf": [
+          "Einstieg (5 Min.): „Woran merkt man, dass jemand einfach einen schlechten Tag hat?“ Nicht nach eigenen Erfahrungen fragen.",
+          "Info-Kästen lesen (5 Min.): Entscheidend sind Dauer, Häufigkeit und Folgen für den Alltag.",
+          "Aufgabe 1 zu zweit (10 Min.), dann begründen. Unklare Fälle sind gewollt: im Zweifel nachfragen.",
+          "Aufgaben 2 und 3 (10 Min.): Schritte besprechen, Gesprächsanfänge formulieren, freiwillig vorlesen.",
+          "Aufgabe 4 allein (10 Min.), nicht einsammeln. SePAS mit Raum und Sprechzeiten nennen; sagen, wann Sie erreichbar sind."
+        ],
+        "hintergrund": "Die Adoleszenz ist eine Phase erhöhter emotionaler Empfindlichkeit; zugleich werden Gleichaltrige zu zentralen Bezugspersonen (Steinberg, 2014). Die meisten Stimmungstiefs gehen vorüber. Halten Niedergeschlagenheit, Freudlosigkeit und Rückzug aber über Wochen an, braucht es Unterstützung und gegebenenfalls eine fachliche Abklärung. Weil sich Jugendliche oft zuerst Freunden anvertrauen, sollten alle wissen, wie man Sorgen anspricht und Erwachsene einbezieht. Aufgabe 4 folgt vereinfacht dem Aufbau eines Sicherheitsplans: Warnzeichen erkennen, Ansprechpersonen festlegen, professionelle Hilfe kennen (Stanley & Brown, 2012).",
+        "quellen": [
+          "Steinberg, L. (2014). Age of Opportunity: Lessons from the New Science of Adolescence. Boston: Houghton Mifflin Harcourt.",
+          "Stanley, B. & Brown, G. K. (2012). Safety planning intervention: A brief intervention to mitigate suicide risk. Cognitive and Behavioral Practice, 19(2), 256–264."
+        ],
+        "differenzierung": {
+          "leichter": "Nur zwei Fallbeispiele bearbeiten; Gesprächsanfänge aus einer Auswahl wählen.",
+          "schwerer": "Diskutieren: Warum fällt es schwer, Hilfe zu holen – und was könnte die Schule erleichtern?"
+        },
+        "impulse": [
+          "Was macht es schwer, jemanden anzusprechen?",
+          "Woran würdest du merken, dass du selbst Hilfe brauchst?",
+          "Was sagt man, wenn jemand abwinkt: „Passt schon“?"
+        ],
+        "tipps": [
+          "Keine Fragen nach eigenen Erfahrungen im Plenum; alles über die Fallpersonen besprechen.",
+          "Notfallnummern zusätzlich im Klassenraum aushängen."
+        ],
+        "achtung": "Bei Hinweisen auf Suizidgedanken, Selbstverletzung oder andere Gefährdung: sofort nach internem Ablauf handeln, die Person nicht allein lassen, SePAS und zuständige Leitung (Responsable) informieren. Vertraulichkeit hat hier Grenzen.",
+        "material": "Optional: Kontakt des SePAS"
+      }
+    },
+    "fr": {
+      "titel": "Quand ça ne va pas depuis un moment",
+      "untertitel": "Tout le monde a des mauvais jours. Mais parfois, le poids reste des semaines. Cela mérite d’être pris au sérieux – chez soi comme chez les autres.",
+      "bausteine": [
+        {
+          "art": "spalten",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "Un coup de mou …",
+              "punkte": ["a souvent une cause précise", "dure quelques heures ou quelques jours", "laisse aussi place à de bons moments", "sommeil, repas et quotidien continuent"]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "achtung",
+              "titel": "Plus qu’un coup de mou, quand …",
+              "punkte": ["ça dure des semaines, presque tous les jours", "presque plus rien ne fait plaisir", "on s’éloigne des ami·e·s et de la famille", "le sommeil, l’appétit ou la concentration changent", "des pensées comme « Je ne vaux rien » ou « Tout est inutile » reviennent"]
+            }
+          ]
+        },
+        { "art": "text", "text": "Repère simple : si plusieurs de ces signes durent plus de deux semaines, il faut en parler. Demander de l’aide n’est pas un signe de faiblesse." },
+        { "art": "aufgabe", "text": "Coup de mou ou plus que ça ? Évalue les quatre situations.", "hinweis": "La réponse n’est pas toujours évidente. Regarde la durée, le quotidien et les pensées." },
+        {
+          "art": "einschaetzung",
+          "optionen": ["plutôt un coup de mou", "plutôt plus que ça"],
+          "items": [
+            "Elias a raté son contrôle de maths. Il est de mauvaise humeur toute la soirée ; le lendemain, il retourne à l’entraînement.",
+            "Depuis des semaines, Aylin annule toutes les sorties. Elle dort mal, mange peu et répète : « De toute façon, à quoi bon ? »",
+            "Après une dispute avec sa copine, Rafael est abattu pendant deux jours. Ensuite, il en parle à son frère.",
+            "Depuis plus d’un mois, Chiara reste seule pendant les récréations. Ses notes baissent et elle a l’air épuisée en permanence."
+          ]
+        },
+        { "art": "aufgabe", "text": "Tu t’inquiètes pour quelqu’un ? Quatre étapes" },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 0,
+          "items": [
+            { "titel": "Aborder", "text": "« J’ai remarqué que tu es souvent seul·e. Comment tu vas, vraiment ? »" },
+            { "titel": "Écouter", "text": "Prendre au sérieux, ne pas juger, ne pas donner tout de suite des conseils." },
+            { "titel": "Chercher de l’aide", "text": "Aller ensemble voir un·e adulte de confiance." },
+            { "titel": "Rester présent·e", "text": "Quelques jours plus tard, redemander comment ça va." }
+          ]
+        },
+        { "art": "aufgabe", "text": "Aylin a l’air abattue depuis des semaines. Comment pourrais-tu l’aborder ? Continue le dialogue.", "hinweis": "Beaucoup répondent d’abord de façon évasive. Reste bienveillant·e et présent·e, sans mettre la pression." },
+        {
+          "art": "dialog",
+          "zeilen": [
+            { "wer": "Toi" },
+            { "wer": "Aylin", "text": "Ça va. C’est juste beaucoup en ce moment." },
+            { "wer": "Toi" }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "achtung",
+          "titel": "Important",
+          "text": "Si quelqu’un parle de ne plus vouloir vivre ou se fait du mal, tu n’as pas à porter ça seul·e. Parles-en tout de suite à un·e adulte – même si tu as promis de garder le secret. Ce n’est pas une trahison, c’est de l’aide."
+        },
+        { "art": "aufgabe", "text": "Et si c’est toi qui ne vas pas bien ? Ton plan", "hinweis": "Ce que tu écris ici t’appartient. Pour commencer, tu peux dire : « Ça ne va pas trop depuis quelque temps. Tu as un moment ? »" },
+        { "art": "satzanfaenge", "items": ["Je remarque que ça ne va pas depuis un moment quand : …"], "linien": 2 },
+        { "art": "satzanfaenge", "items": ["Une personne à qui je pourrais parler : …", "Au lycée, je peux m’adresser à (p. ex. le SePAS) : …"] },
+        { "art": "satzanfaenge", "items": ["Ma première phrase pourrait être : …"], "linien": 2 },
+        { "art": "notfall" }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes distinguent un passage à vide d’un abattement qui dure, connaissent les signaux d’alerte chez eux et chez les autres, et savent comment et où trouver de l’aide.",
+        "ablauf": [
+          "Entrée en matière (5 min) : « À quoi voit-on que quelqu’un a juste une mauvaise journée ? » Ne pas demander d’expériences personnelles.",
+          "Lire les encadrés (5 min) : ce qui compte, c’est la durée, la fréquence et l’impact sur le quotidien.",
+          "Exercice 1 à deux (10 min), puis justifier. Les cas ambigus sont voulus : dans le doute, mieux vaut demander.",
+          "Exercices 2 et 3 (10 min) : discuter les étapes, formuler des premières phrases, lecture volontaire.",
+          "Exercice 4 seul·e (10 min), sans ramasser. Indiquer le SePAS (salle, horaires) et quand vous êtes joignable."
+        ],
+        "hintergrund": "L’adolescence est une période de sensibilité émotionnelle accrue ; en même temps, les pairs deviennent des personnes de référence essentielles (Steinberg, 2014). La plupart des baisses de moral sont passagères. Mais quand l’abattement, la perte de plaisir et le repli durent des semaines, un soutien et, le cas échéant, un avis professionnel s’imposent. Comme les jeunes se confient souvent d’abord à leurs ami·e·s, toute la classe devrait savoir aborder une inquiétude et impliquer des adultes. L’exercice 4 reprend, simplifiée, la structure d’un plan de sécurité : repérer les signaux d’alerte, choisir des personnes ressources, connaître l’aide professionnelle (Stanley & Brown, 2012).",
+        "quellen": [
+          "Steinberg, L. (2014). Age of Opportunity: Lessons from the New Science of Adolescence. Boston: Houghton Mifflin Harcourt.",
+          "Stanley, B. & Brown, G. K. (2012). Safety planning intervention: A brief intervention to mitigate suicide risk. Cognitive and Behavioral Practice, 19(2), 256–264."
+        ],
+        "differenzierung": {
+          "leichter": "Ne traiter que deux situations ; choisir les premières phrases dans une sélection.",
+          "schwerer": "Débattre : pourquoi est-il difficile de demander de l’aide – et comment le lycée pourrait-il faciliter cette démarche ?"
+        },
+        "impulse": [
+          "Qu’est-ce qui rend difficile d’aborder quelqu’un ?",
+          "À quoi remarquerais-tu que tu as besoin d’aide ?",
+          "Que dire quand quelqu’un balaie la question : « Ça va » ?"
+        ],
+        "tipps": [
+          "Pas de questions sur les expériences personnelles en classe ; tout aborder à travers les personnages.",
+          "Afficher aussi les numéros d’urgence en classe."
+        ],
+        "achtung": "En cas d’indices de pensées suicidaires, d’automutilation ou d’un autre danger : agir immédiatement selon la procédure interne, ne pas laisser la personne seule, informer le SePAS et la direction compétente (responsable). La confidentialité a ici ses limites.",
+        "material": "En option : contact du SePAS"
+      }
+    }
+  },
+  {
+    "id": "ruhe-ecke",
+    "bereich": "gefuehle",
+    "thema": "beruhigen",
+    "stufen": ["C1"],
+    "sozialform": ["einzeln", "gruppe"],
+    "dauer": "15–20 Min.",
+    "eldib": ["V-6", "V-8", "V-13"],
+    "schlagworte": ["Ruhe-Ecke", "Beruhigen", "Selbstregulation", "Zurück in die Gruppe", "Spielschule"],
+    "bild": "icon:armchair",
+    "verwandt": ["ballon-atmen", "meine-ruhe-insel"],
+    "de": {
+      "titel": "In der Ruhe-Ecke",
+      "anleitung": "Die Ruhe-Ecke gemeinsam anschauen. Das Kind zeigt und kreist ein, was ihm dort hilft. Die drei Schritte zum Zurückkommen vormachen und im Rollenspiel üben.",
+      "bausteine": [
+        { "art": "aufgabe", "text": "Was hilft dir in der Ruhe-Ecke? Kreise ein.", "symbole": ["zeigen", "einkreisen"] },
+        {
+          "art": "bilder",
+          "modus": "einkreisen",
+          "spalten": 4,
+          "bilder": [
+            { "bild": "icon:pillow", "text": "Kissen drücken" },
+            { "bild": "motiv:ballon", "text": "Ballon-Atmen" },
+            { "bild": "icon:book", "text": "Buch ansehen" },
+            { "bild": "icon:headphones", "text": "Musik hören" },
+            { "bild": "icon:hourglass", "text": "Sanduhr" },
+            { "bild": "icon:palette", "text": "malen" },
+            { "bild": "motiv:wasserglas", "text": "Wasser trinken" },
+            { "bild": "icon:hand-grab", "text": "Knete drücken" }
+          ]
+        },
+        { "art": "aufgabe", "text": "So komme ich zurück.", "symbole": ["zeigen"] },
+        {
+          "art": "comic",
+          "spalten": 3,
+          "felder": [
+            { "figuren": ["figur:lea:ruhig"], "requisit": "icon:hourglass", "blase": "keine", "untertitel": "1. Ich bin wieder ruhig." },
+            { "figuren": ["figur:lea:ruhig", "figur:lehrerin:froh"], "text": "Ich bin bereit.", "sprecher": 0, "untertitel": "2. Ich sage Bescheid." },
+            { "figuren": ["figur:lea:froh", "figur:sami:froh"], "requisit": "icon:puzzle", "blase": "keine", "untertitel": "3. Ich spiele wieder mit." }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder kennen die Ruhe-Ecke als sicheren Ort, wählen aus, was ihnen dort beim Ruhigwerden hilft, und lernen einen festen Ablauf, um in die Gruppe zurückzukehren.",
+        "ablauf": [
+          "Die Ruhe-Ecke mit der Gruppe besuchen (5 Min.): jedes Material zeigen und kurz ausprobieren.",
+          "Aufgabe 1 (5 Min.): Jedes Kind zeigt und kreist ein, was ihm hilft. Fragen: „Was machst du dort am liebsten?“",
+          "Aufgabe 2 (5 Min.): Die drei Bilder erzählen und als Rollenspiel üben: ruhig werden – Bescheid sagen – mitspielen.",
+          "Das Blatt in der Ruhe-Ecke aufhängen oder in die Mappe des Kindes legen.",
+          "In den folgenden Wochen nach jedem Besuch kurz nachfragen: „Was hat dir geholfen?“"
+        ],
+        "hintergrund": "Kleine Kinder können starke Gefühle noch kaum allein regulieren; sie brauchen dafür die Nähe und Unterstützung Erwachsener. Erst wenn sich ein Kind wieder sicher und verbunden fühlt, kann es nachdenken und Neues lernen (Siegel & Bryson, 2011). Eine Ruhe-Ecke ist deshalb kein Strafort, sondern ein Angebot: ein fester, gemütlicher Platz mit wenigen, vertrauten Hilfen. Bilder machen dieses Angebot für Kinder, die noch nicht lesen, verständlich und vorhersehbar (Hodgdon, 1995). Ein klarer Ablauf für das Zurückkommen verhindert, dass die Ecke zum Rückzug vor Anforderungen wird.",
+        "quellen": [
+          "Siegel, D. J. & Bryson, T. P. (2011). The Whole-Brain Child. New York: Delacorte.",
+          "Hodgdon, L. A. (1995). Visual Strategies for Improving Communication. Troy, MI: QuirkRoberts."
+        ],
+        "differenzierung": {
+          "leichter": "Nur zwei oder drei Bilder anbieten. Das Kind zeigt, die Lehrperson kreist ein.",
+          "schwerer": "Das Kind erklärt einem anderen Kind, wie die Ruhe-Ecke funktioniert."
+        },
+        "impulse": [
+          "Woran merkst du, dass du wieder ruhig bist?",
+          "Wem sagst du Bescheid, wenn du bereit bist?",
+          "Was sollte es in unserer Ruhe-Ecke noch geben?"
+        ],
+        "tipps": [
+          "Die Ruhe-Ecke nie als Strafe nutzen, sondern anbieten: „Möchtest du kurz in die Ruhe-Ecke?“",
+          "Wenige Materialien, immer am selben Platz. Eine Sanduhr macht die Zeit sichtbar."
+        ],
+        "achtung": "Beruhigt sich ein Kind auch dort nicht oder nutzt es die Ecke sehr häufig, um Anforderungen zu entgehen: genau beobachten, mit den Eltern sprechen und die zuständige Leitung (Responsable) einbeziehen. Ein sehr aufgebrachtes Kind nicht allein lassen.",
+        "material": "Buntstifte; Materialien der Ruhe-Ecke (Kissen, Bücher, Sanduhr, Kopfhörer)"
+      }
+    }
+  },
+  {
+    "id": "meine-ruhe-insel",
+    "bereich": "gefuehle",
+    "thema": "beruhigen",
+    "stufen": ["C2"],
+    "sozialform": ["einzeln", "gruppe", "klasse"],
+    "dauer": "25–30 Min.",
+    "eldib": ["SOZ-13", "K-15", "V-21"],
+    "schlagworte": ["Ruhe", "Fantasieübung", "sicherer Ort", "Entspannung", "Vorstellung"],
+    "bild": "motiv:insel",
+    "verwandt": ["ruhe-ecke", "ruhig-werden-drei-uebungen"],
+    "de": {
+      "titel": "Meine Ruhe-Insel",
+      "untertitel": "Deine Ruhe-Insel ist in deinem Kopf. Du kannst sie überallhin mitnehmen.",
+      "bausteine": [
+        { "art": "aufgabe", "text": "Stell dir deine Ruhe-Insel vor. Male sie.", "hinweis": "Nur was dir guttut, darf auf deine Insel.", "symbole": ["zuhoeren", "malen"] },
+        { "art": "feld", "zeichnen": true, "hoehe": 8.5 },
+        { "art": "aufgabe", "text": "Beschreibe deine Insel und gib ihr einen Namen.", "symbole": ["schreiben"] },
+        { "art": "satzanfaenge", "items": ["Ich sehe …", "Ich höre …", "Ich fühle …", "Meine Insel heißt …"] },
+        { "art": "aufgabe", "text": "Wann denkst du an deine Insel? Kreuze an.", "symbole": ["ankreuzen"] },
+        {
+          "art": "ankreuzen",
+          "items": ["vor dem Einschlafen", "wenn ich warten muss", "wenn ich aufgeregt bin", "wenn es mir zu laut ist", "wenn ich traurig bin", "vor einem Test"],
+          "spalten": 2
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder stellen sich einen ruhigen, sicheren Ort vor, halten ihn im Bild und mit allen Sinnen fest und wissen, wann sie ihn in Gedanken aufsuchen können.",
+        "ablauf": [
+          "Einstimmung (3 Min.): bequem sitzen, Augen zu oder Blick auf den Tisch, drei ruhige Atemzüge.",
+          "Langsam vorlesen (5 Min.): „Stell dir eine Insel vor, nur für dich. Was siehst du? Was hörst du? Wie fühlt sich der Boden an? Hier ist alles ruhig. Bleib noch einen Moment. Dann öffne langsam die Augen.“",
+          "Aufgabe 1 (10 Min.): Insel malen. Nachfragen statt bewerten: „Erzähl mir von deiner Insel.“",
+          "Aufgabe 2 (5 Min.): Sinne und Namen aufschreiben; beim Schreiben helfen.",
+          "Aufgabe 3 (5 Min.): Wann hilft die Insel? Die Übung in den nächsten Tagen kurz wiederholen, z. B. nach der Pause."
+        ],
+        "hintergrund": "Sich einen ruhigen, sicheren Ort vorzustellen, ist eine verbreitete Übung zur Beruhigung; bildhafte Vorstellungen gehören auch zu den Fertigkeiten, mit denen sich belastende Momente überstehen lassen (Linehan, 2015). Im Grundschulalter nutzen Kinder neben äußeren Hilfen zunehmend innere, gedankliche Strategien, um Gefühle zu regulieren, etwa an etwas Schönes zu denken (Petermann & Wiedebusch, 2016). Je genauer die Vorstellung mit Sinneseindrücken und einem Namen verknüpft ist, desto leichter lässt sie sich später abrufen. Wirksam wird die Übung durch Wiederholung in ruhigen Momenten.",
+        "quellen": [
+          "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford.",
+          "Petermann, F. & Wiedebusch, S. (2016). Emotionale Kompetenz bei Kindern (3. Aufl.). Göttingen: Hogrefe."
+        ],
+        "differenzierung": {
+          "leichter": "Nur malen. Die Lehrperson schreibt auf, was das Kind erzählt.",
+          "schwerer": "Einen kurzen Text schreiben: „Ein Nachmittag auf meiner Insel“."
+        },
+        "impulse": [
+          "Was ist das Schönste auf deiner Insel?",
+          "Wie fühlt sich dein Körper an, wenn du dort bist?",
+          "Wann könntest du heute schon an deine Insel denken?"
+        ],
+        "tipps": [
+          "Die Augen dürfen offen bleiben – manche Kinder fühlen sich mit geschlossenen Augen unsicher.",
+          "Auf die Insel kommen nur Menschen, Tiere oder Fantasiewesen, die guttun. Wer Sorgen macht, bleibt draußen."
+        ],
+        "achtung": "Wird ein Kind während der Übung unruhig, ängstlich oder traurig: die Übung für dieses Kind beenden, die Augen öffnen lassen, im Raum orientieren („Was siehst du hier?“) und in Ruhe nachfragen. Bei starken oder wiederholten Reaktionen die zuständige Leitung (Responsable) informieren.",
+        "material": "Buntstifte; optional ruhige Musik"
+      }
+    }
+  },
+  {
+    "id": "ruhig-werden-drei-uebungen",
+    "bereich": "gefuehle",
+    "thema": "beruhigen",
+    "stufen": ["C3", "C4"],
+    "sozialform": ["einzeln", "gruppe", "klasse"],
+    "dauer": "40–45 Min.",
+    "eldib": ["V-21", "V-25", "V-22"],
+    "schlagworte": ["Beruhigen", "Atmung", "Achtsamkeit", "Entspannung", "Selbstregulation"],
+    "bild": "icon:wind",
+    "verwandt": ["ballon-atmen", "meine-ruhe-insel", "stress-werkzeugkoffer"],
+    "de": {
+      "titel": "Ruhig werden: drei Übungen",
+      "untertitel": "Wenn der Körper aufgeregt ist, kann der Kopf schlecht denken. Probiere alle drei Übungen aus und finde heraus, welche dir am besten hilft.",
+      "bausteine": [
+        { "art": "aufgabe", "text": "Quadrat-Atmung: Fahre mit dem Finger die Seiten entlang.", "hinweis": "Zähle bei jeder Seite langsam bis vier. Mach drei Runden.", "symbole": ["zeigen"] },
+        { "art": "atmen", "uebung": "quadrat" },
+        { "art": "aufgabe", "text": "5-4-3-2-1: Schau dich um und schreibe auf.", "hinweis": "Die Übung holt deine Gedanken ins Hier und Jetzt zurück.", "symbole": ["schreiben"] },
+        { "art": "atmen", "uebung": "fuenf-sinne" },
+        { "art": "aufgabe", "text": "Anspannen und locker lassen", "hinweis": "Spanne jede Stelle fünf Sekunden lang fest an. Dann lass locker und spüre nach." },
+        {
+          "art": "schritte",
+          "linien": 0,
+          "items": [
+            { "titel": "Hände: Zitrone auspressen", "text": "Balle beide Fäuste, als ob du eine Zitrone auspresst. Halten – und loslassen." },
+            { "titel": "Schultern: Schildkröte", "text": "Zieh die Schultern hoch bis zu den Ohren. Halten – und fallen lassen." },
+            { "titel": "Gesicht: Fliege verscheuchen", "text": "Rümpfe die Nase und kneif die Augen zu. Halten – und locker lassen." },
+            { "titel": "Füße: Zehen im Sand", "text": "Drück die Zehen fest in den Boden. Halten – und entspannen." }
+          ]
+        },
+        { "art": "aufgabe", "text": "Wie gut hat dir jede Übung geholfen?", "symbole": ["ankreuzen"] },
+        {
+          "art": "einschaetzung",
+          "optionen": ["hilft gut", "hilft etwas", "hilft kaum"],
+          "items": ["Quadrat-Atmung", "5-4-3-2-1", "Anspannen und locker lassen"]
+        },
+        { "art": "aufgabe", "text": "Dein Plan: Wann setzt du deine beste Übung ein?", "symbole": ["schreiben"] },
+        {
+          "art": "wennDann",
+          "zeilen": 2,
+          "beispiele": [{ "wenn": "Wenn ich vor dem Diktat nervös bin,", "dann": "mache ich unter dem Tisch zwei Runden Quadrat-Atmung." }]
+        },
+        { "art": "rueckblick" }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder lernen drei Übungen zur Beruhigung kennen, probieren sie aus, bewerten ihre Wirkung und planen, wann sie ihre beste Übung einsetzen.",
+        "ablauf": [
+          "Einstieg (5 Min.): „Woran merkt dein Körper, dass du aufgeregt bist?“ Kurz sammeln: Herzklopfen, schneller Atem, feste Schultern.",
+          "Quadrat-Atmung (5 Min.) gemeinsam; die Lehrperson zählt leise mit. Drei Runden.",
+          "5-4-3-2-1 (8 Min.) in Einzelarbeit, danach einige Beispiele vorlesen lassen.",
+          "Anspannen und Lockerlassen (5 Min.) anleiten: jede Stelle zweimal, langsam sprechen, Pausen lassen.",
+          "Aufgaben 4 und 5 (10 Min.): bewerten, Plan schreiben, Pläne zu zweit vorstellen.",
+          "In den folgenden Wochen täglich eine Übung wiederholen, z. B. nach der Pause."
+        ],
+        "hintergrund": "Aufregung zeigt sich zuerst im Körper: Herz und Atem werden schneller, Muskeln spannen sich an, klares Denken fällt schwer. Nach dem Prozessmodell der Emotionsregulation lässt sich unter anderem über die Aufmerksamkeit und über die körperliche Reaktion eingreifen (Gross, 1998). Genau hier setzen die Übungen an: Gleichmäßiges, langsames Atmen beruhigt, 5-4-3-2-1 lenkt die Aufmerksamkeit auf die Umgebung, Anspannen und Lösen macht Entspannung spürbar. Entspannungsübungen sind fester Bestandteil kognitiv-verhaltenstherapeutischer Programme für ängstliche Kinder (Kendall & Hedtke, 2006). Entscheidend ist das Üben in ruhigen Momenten.",
+        "quellen": [
+          "Gross, J. J. (1998). The emerging field of emotion regulation: An integrative review. Review of General Psychology, 2(3), 271–299.",
+          "Kendall, P. C. & Hedtke, K. A. (2006). Cognitive-Behavioral Therapy for Anxious Children: Therapist Manual (3rd ed.). Ardmore, PA: Workbook Publishing."
+        ],
+        "differenzierung": {
+          "leichter": "Nur eine Übung pro Tag einführen. Bei 5-4-3-2-1 mündlich antworten lassen.",
+          "schwerer": "Eine eigene Variante erfinden und sie der Klasse anleiten."
+        },
+        "impulse": [
+          "Bei welcher Übung wurde dein Körper am ruhigsten?",
+          "Welche Übung geht im Unterricht, ohne dass es jemand merkt?",
+          "Was könnte dich an deine Übung erinnern?"
+        ],
+        "tipps": [
+          "Nicht erst in der Aufregung einführen: Die Übungen wirken nur, wenn sie vorher oft geübt wurden.",
+          "Beim Anspannen fest, aber ohne Schmerz – nicht bis zum Zittern."
+        ],
+        "achtung": "Bei Kindern mit Asthma oder anderen Atemwegserkrankungen die Atmung nicht forcieren und die Luft nur kurz anhalten lassen. Wird ein Kind bei einer Übung unruhig oder ängstlich, abbrechen und eine andere anbieten.",
+        "material": "Optional: Sanduhr oder Uhr mit Sekundenzeiger"
+      }
+    }
+  },
+  {
+    "id": "stress-werkzeugkoffer",
+    "bereich": "gefuehle",
+    "thema": "beruhigen",
+    "stufen": ["ES"],
+    "sozialform": ["einzeln", "gruppe", "klasse"],
+    "dauer": "45 Min.",
+    "eldib": ["V-25", "V-29", "V-32"],
+    "schlagworte": ["Stress", "Stresstoleranz", "Fertigkeiten", "Selbstregulation", "Plan für schwierige Momente"],
+    "bild": "icon:tools",
+    "verwandt": ["ruhig-werden-drei-uebungen", "wenn-es-laenger-schwer-ist"],
+    "de": {
+      "titel": "Mein Werkzeugkoffer gegen Stress",
+      "untertitel": "Stress ist eine normale Reaktion auf Anforderungen. Wird er zu viel, helfen Werkzeuge – am besten solche, die man vorher ausprobiert hat.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Warum zuerst der Körper?",
+          "text": "Bei starkem Stress schaltet der Körper auf Alarm: Herz und Atem werden schneller, das Denken wird eng. Dann helfen zuerst Werkzeuge, die direkt beim Körper ansetzen. Ist die Anspannung gesunken, kommen Kopf und Kontakt dazu."
+        },
+        { "art": "aufgabe", "text": "Woran merkst du Stress? Kreuze an, was du von dir kennst.", "hinweis": "Körper, Gedanken, Verhalten – Stress zeigt sich auf mehreren Ebenen." },
+        {
+          "art": "ankreuzen",
+          "spalten": 3,
+          "frei": 3,
+          "items": ["Herzklopfen", "Gedankenkreisen", "schnell gereizt sein", "feste Schultern, Nacken", "Blackout", "mich zurückziehen", "Bauchweh, Übelkeit", "„Das schaffe ich nie.“", "mehr am Handy hängen", "schlecht schlafen", "vergesslich werden", "Dinge aufschieben"]
+        },
+        { "art": "aufgabe", "text": "Werkzeuge testen: Kreuze an, was du ausprobieren willst." },
+        {
+          "art": "ankreuzen",
+          "titel": "Körper – wenn der Stress hoch ist",
+          "spalten": 2,
+          "items": ["Kaltes Wasser über Hände und Handgelenke laufen lassen", "Zwei Minuten zügig gehen oder Treppen steigen", "Länger aus- als einatmen: 4 Sekunden ein, 6 aus", "Fäuste und Schultern fest anspannen, dann loslassen"]
+        },
+        {
+          "art": "ankreuzen",
+          "titel": "Kopf – wenn du wieder denken kannst",
+          "spalten": 2,
+          "items": ["STOPP: anhalten, Schritt zurück, beobachten, dann bewusst handeln", "Von 100 in Siebener-Schritten rückwärts zählen", "Nur den nächsten kleinen Schritt planen", "Mir sagen: „Das ist unangenehm, aber ich schaffe das.“"]
+        },
+        {
+          "art": "ankreuzen",
+          "titel": "Kontakt – niemand muss alles allein schaffen",
+          "spalten": 2,
+          "items": ["Jemandem schreiben: „Hast du kurz Zeit?“", "Mit einer Person reden, der ich vertraue", "Zeit mit anderen verbringen, ohne über Stress zu reden", "Um Hilfe bitten, z. B. beim SePAS"]
+        },
+        { "art": "aufgabe", "text": "Dein Plan für „zu viel“: Was tust du auf welcher Stufe?", "hinweis": "Trage deine Anzeichen und passende Werkzeuge aus Aufgabe 1 und 2 ein." },
+        {
+          "art": "thermometer",
+          "linien": 2,
+          "stufen": [
+            { "titel": "Ruhig", "text": "Was tut mir gut, damit es so bleibt?" },
+            { "titel": "Angespannt", "text": "Erste Anzeichen – mein Werkzeug:" },
+            { "titel": "Gestresst", "text": "Deutliche Anzeichen – mein Werkzeug:" },
+            { "titel": "Zu viel", "text": "Sofort Pause und Kontakt. Wen spreche ich an?" }
+          ]
+        },
+        { "art": "aufgabe", "text": "Teste diese Woche ein Werkzeug pro Bereich und notiere die Wirkung.", "hinweis": "Stress vorher und nachher auf einer Skala von 0 bis 10." },
+        {
+          "art": "tabelle",
+          "spalten": ["Tag", "Situation", "Werkzeug", "Wirkung"],
+          "breiten": [0.7, 2.2, 1.8, 1.3],
+          "zeilen": 3,
+          "beispiel": ["Di", "Vor der Präsentation in Französisch", "4 ein, 6 aus", "von 8 auf 5"]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Wenn der Werkzeugkoffer nicht reicht",
+          "text": "Wird der Stress über Wochen nicht weniger, schläfst du kaum noch oder kannst an nichts anderes mehr denken: Sprich mit dem SePAS oder einer Lehrperson, oder ruf das Kanner- a Jugendtelefon an: 116 111 (anonym, kostenlos)."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen erkennen ihre persönlichen Stresssignale, lernen Werkzeuge für Körper, Kopf und Kontakt kennen und erstellen einen gestuften Plan für Momente, in denen es zu viel wird.",
+        "ablauf": [
+          "Einstieg (5 Min.): „Was stresst Jugendliche in eurem Alter am meisten?“ Sammeln, ohne zu werten.",
+          "Info-Kasten und Aufgabe 1 (10 Min.): Signale ankreuzen. Betonen: Jede Person hat eigene Muster.",
+          "Aufgabe 2 (10 Min.): Aus jedem Bereich ein Werkzeug gemeinsam ausprobieren, z. B. 4-6-Atmung und Rückwärtszählen.",
+          "Aufgabe 3 (10 Min.) allein; zu zweit prüfen, ob die Werkzeuge zur Stufe passen.",
+          "Aufgabe 4 als Wochenauftrag; nach einer Woche auswerten: Was hat gewirkt, was nicht?"
+        ],
+        "hintergrund": "Die Werkzeuge orientieren sich an Fertigkeiten der Dialektisch-Behavioralen Therapie, die für Jugendliche adaptiert wurden (Rathus & Miller, 2015). Bei sehr hoher Anspannung sind Denken und Problemlösen eingeschränkt. Dann helfen zuerst körperbezogene Fertigkeiten, die die Erregung rasch senken: kaltes Wasser, kurze intensive Bewegung, verlangsamtes Ausatmen und Muskelentspannung. Ist die Anspannung gesunken, wirken Innehalten (STOPP), Ablenkung, hilfreiche Selbstgespräche und soziale Unterstützung (Linehan, 2015). Entscheidend ist, die Werkzeuge in ruhigen Zeiten zu üben und den Plan nach Stufen zu ordnen.",
+        "quellen": [
+          "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford.",
+          "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Nur die Stufe „Gestresst“ ausfüllen und aus jedem Bereich ein Werkzeug wählen.",
+          "schwerer": "Für jede Stufe einen Wenn-dann-Satz formulieren und einer anderen Person erklären."
+        },
+        "impulse": [
+          "Welches Werkzeug geht im Unterricht, ohne aufzufallen?",
+          "Was tust du bisher bei Stress – und was davon hilft wirklich?",
+          "Wer gehört in deinen Bereich „Kontakt“?"
+        ],
+        "tipps": [
+          "Mit der Klasse vereinbaren, welche Stressbremsen im Unterricht erlaubt sind (Wasser trinken, kurz vor die Tür).",
+          "Werkzeuge nicht bewerten: Was einer Person hilft, muss einer anderen nicht helfen."
+        ],
+        "achtung": "Hält hoher Stress über Wochen an oder kommen Schlafprobleme, Rückzug oder Hinweise auf Selbstverletzung hinzu: das Gespräch suchen und SePAS sowie die zuständige Leitung (Responsable) einbeziehen. Bei Gefährdung sofort nach internem Ablauf handeln.",
+        "material": "Optional: Timer, Wasser"
+      }
+    },
+    "fr": {
+      "titel": "Ma boîte à outils contre le stress",
+      "untertitel": "Le stress est une réaction normale face aux exigences. Quand il devient trop fort, des outils aident – surtout ceux qu’on a déjà testés.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Pourquoi commencer par le corps ?",
+          "text": "Sous un stress intense, le corps passe en mode alarme : le cœur et la respiration s’accélèrent, la pensée se rétrécit. Les outils qui agissent directement sur le corps aident alors en premier. Quand la tension baisse, la tête et le contact prennent le relais."
+        },
+        { "art": "aufgabe", "text": "À quoi reconnais-tu ton stress ? Coche ce que tu connais chez toi.", "hinweis": "Corps, pensées, comportement : le stress se manifeste à plusieurs niveaux." },
+        {
+          "art": "ankreuzen",
+          "spalten": 3,
+          "frei": 3,
+          "items": ["cœur qui bat fort", "pensées qui tournent en boucle", "vite irrité·e", "épaules, nuque tendues", "trou noir", "me replier sur moi", "mal au ventre, nausée", "« Je n’y arriverai jamais. »", "plus de temps sur le téléphone", "mal dormir", "oublier des choses", "tout remettre à plus tard"]
+        },
+        { "art": "aufgabe", "text": "Tester des outils : coche ce que tu veux essayer." },
+        {
+          "art": "ankreuzen",
+          "titel": "Corps – quand le stress est très fort",
+          "spalten": 2,
+          "items": ["Faire couler de l’eau froide sur les mains et les poignets", "Marcher vite ou monter des escaliers pendant deux minutes", "Expirer plus longtemps qu’inspirer : 4 secondes pour inspirer, 6 pour expirer", "Serrer fort les poings et les épaules, puis relâcher"]
+        },
+        {
+          "art": "ankreuzen",
+          "titel": "Tête – quand tu peux de nouveau réfléchir",
+          "spalten": 2,
+          "items": ["STOP : s’arrêter, prendre du recul, observer, puis agir en conscience", "Compter à rebours à partir de 100, de 7 en 7", "Ne planifier que la prochaine petite étape", "Me dire : « C’est désagréable, mais je vais y arriver. »"]
+        },
+        {
+          "art": "ankreuzen",
+          "titel": "Contact – personne ne doit tout gérer seul·e",
+          "spalten": 2,
+          "items": ["Écrire à quelqu’un : « Tu as un moment ? »", "Parler à une personne de confiance", "Passer du temps avec d’autres, sans parler du stress", "Demander de l’aide, p. ex. au SePAS"]
+        },
+        { "art": "aufgabe", "text": "Ton plan quand c’est « trop » : que fais-tu à chaque niveau ?", "hinweis": "Note tes signes et les outils qui conviennent, à partir des exercices 1 et 2." },
+        {
+          "art": "thermometer",
+          "linien": 2,
+          "stufen": [
+            { "titel": "Calme", "text": "Qu’est-ce qui m’aide à rester ainsi ?" },
+            { "titel": "Tendu·e", "text": "Premiers signes – mon outil :" },
+            { "titel": "Stressé·e", "text": "Signes nets – mon outil :" },
+            { "titel": "Trop", "text": "Tout de suite : pause et contact. À qui je m’adresse ?" }
+          ]
+        },
+        { "art": "aufgabe", "text": "Cette semaine, teste un outil par domaine et note l’effet.", "hinweis": "Stress avant et après, sur une échelle de 0 à 10." },
+        {
+          "art": "tabelle",
+          "spalten": ["Jour", "Situation", "Outil", "Effet"],
+          "breiten": [0.7, 2.2, 1.8, 1.3],
+          "zeilen": 3,
+          "beispiel": ["mardi", "Avant l’exposé en allemand", "4 inspirer, 6 expirer", "de 8 à 5"]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Quand la boîte à outils ne suffit pas",
+          "text": "Si le stress ne diminue pas pendant des semaines, si tu ne dors presque plus ou si tu ne penses plus qu’à ça : parles-en au SePAS ou à un·e enseignant·e, ou appelle le Kanner- a Jugendtelefon au 116 111 (anonyme, gratuit)."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes reconnaissent leurs signaux de stress personnels, découvrent des outils pour le corps, la tête et le contact, et élaborent un plan par niveaux pour les moments où c’est « trop ».",
+        "ablauf": [
+          "Entrée en matière (5 min) : « Qu’est-ce qui stresse le plus les jeunes de votre âge ? » Recueillir sans juger.",
+          "Encadré et exercice 1 (10 min) : cocher ses signaux. Souligner : chacun·e a ses propres schémas.",
+          "Exercice 2 (10 min) : tester ensemble un outil par domaine, p. ex. respiration 4-6 et compte à rebours.",
+          "Exercice 3 (10 min) seul·e ; vérifier à deux si les outils conviennent au niveau.",
+          "Exercice 4 à faire pendant la semaine ; une semaine plus tard, faire le point : qu’est-ce qui a marché ?"
+        ],
+        "hintergrund": "Les outils s’inspirent des compétences de la thérapie comportementale dialectique, adaptées aux adolescent·e·s (Rathus & Miller, 2015). Sous une tension très forte, la réflexion et la résolution de problèmes sont limitées. Ce sont alors d’abord des compétences corporelles qui font baisser rapidement l’activation : eau froide, bref effort physique intense, expiration ralentie et relâchement musculaire. Une fois la tension retombée, la pause (STOP), la distraction, le discours intérieur aidant et le soutien social deviennent efficaces (Linehan, 2015). L’essentiel : s’entraîner dans les moments calmes et organiser son plan par niveaux.",
+        "quellen": [
+          "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford.",
+          "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Ne remplir que le niveau « Stressé·e » et choisir un outil par domaine.",
+          "schwerer": "Formuler une phrase « si … alors » pour chaque niveau et l’expliquer à quelqu’un."
+        },
+        "impulse": [
+          "Quel outil peut-on utiliser en classe sans se faire remarquer ?",
+          "Que fais-tu jusqu’ici face au stress – et qu’est-ce qui aide vraiment ?",
+          "Qui fait partie de ton domaine « contact » ?"
+        ],
+        "tipps": [
+          "Convenir avec la classe des « freins à stress » autorisés en cours (boire de l’eau, sortir un instant).",
+          "Ne pas juger les outils : ce qui aide une personne n’aide pas forcément une autre."
+        ],
+        "achtung": "Si un stress élevé dure des semaines ou s’accompagne de troubles du sommeil, de repli ou d’indices d’automutilation : chercher le dialogue et impliquer le SePAS ainsi que la direction compétente (responsable). En cas de danger, agir immédiatement selon la procédure interne.",
+        "material": "En option : minuteur, eau"
+      }
+    }
+  },
+  {
+    "id": "das-macht-mich-froh",
+    "bereich": "gefuehle",
+    "thema": "freude",
+    "stufen": ["C2"],
+    "sozialform": ["einzeln", "gruppe"],
+    "dauer": "25–30 Min.",
+    "eldib": ["K-15", "K-23", "K-14"],
+    "schlagworte": ["Freude", "angenehme Gefühle", "Wohlbefinden", "Mitteilen", "Ritual"],
+    "bild": "gesicht:froh",
+    "verwandt": ["drei-gute-dinge", "darauf-bin-ich-stolz", "wenn-ich-traurig-bin"],
+    "de": {
+      "titel": "Das macht mich froh",
+      "untertitel": "Freude ist oft klein und schnell vorbei. Wer genau hinschaut, findet jeden Tag etwas.",
+      "bausteine": [
+        { "art": "aufgabe", "text": "Was macht dich froh? Kreise ein.", "symbole": ["einkreisen"] },
+        {
+          "art": "bilder",
+          "modus": "einkreisen",
+          "spalten": 4,
+          "bilder": [
+            { "bild": "icon:friends", "text": "Freunde" },
+            { "bild": "icon:dog", "text": "Tiere" },
+            { "bild": "icon:music", "text": "Musik" },
+            { "bild": "icon:sun", "text": "Sonne" },
+            { "bild": "icon:ball-football", "text": "spielen" },
+            { "bild": "icon:cake", "text": "Kuchen" },
+            { "bild": "icon:bike", "text": "Rad fahren" },
+            { "bild": "icon:palette", "text": "malen" }
+          ]
+        },
+        { "art": "aufgabe", "text": "Male etwas, das dich heute froh gemacht hat.", "hinweis": "Auch Kleines zählt: ein Witz, ein Sonnenstrahl, ein gutes Spiel.", "symbole": ["malen"] },
+        { "art": "feld", "zeichnen": true, "hoehe": 5 },
+        { "art": "aufgabe", "text": "Zeige dein Bild einem anderen Kind. Frag: Was macht dich froh?", "symbole": ["partner", "sprechen"] },
+        { "art": "satzanfaenge", "items": ["Das Kind heißt:", "Das macht es froh:"] }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder benennen, was ihnen Freude macht, halten einen frohen Moment des Tages fest und tauschen sich mit einem anderen Kind darüber aus.",
+        "ablauf": [
+          "Einstieg (5 Min.): Die Lehrperson erzählt einen kleinen frohen Moment von heute. Frage: „Was war heute schon schön?“",
+          "Aufgabe 1 (5 Min.): Bilder einkreisen; eigene Ideen dürfen an den Rand gemalt werden.",
+          "Aufgabe 2 (10 Min.): Einen frohen Moment von heute malen. Wem nichts einfällt, darf etwas von gestern malen.",
+          "Aufgabe 3 (5 Min.): Zu zweit Bilder zeigen und erzählen. Im Kreis: „Was hat das andere Kind erzählt?“",
+          "Als Ritual fortführen: am Ende des Tages reihum einen frohen Moment nennen."
+        ],
+        "hintergrund": "Angenehme Momente gehen im Alltag leicht unter. Freude lässt sich aber bewusst wahrnehmen und festhalten: In Studien mit Erwachsenen steigerte schon das regelmäßige Notieren guter Erlebnisse das Wohlbefinden über Monate (Seligman et al., 2005). Kinder profitieren besonders, wenn Erwachsene auch angenehme Gefühle aufgreifen, benennen und nachfragen. So wächst der Gefühlswortschatz, und Freude wird mitteilbar (Brackett, 2019). Das Blatt überträgt diese Idee in eine kindgerechte Form: sammeln, einen frohen Moment malen, davon erzählen.",
+        "quellen": [
+          "Seligman, M. E. P., Steen, T. A., Park, N. & Peterson, C. (2005). Positive psychology progress: Empirical validation of interventions. American Psychologist, 60(5), 410–421.",
+          "Brackett, M. A. (2019). Permission to Feel. New York: Celadon."
+        ],
+        "differenzierung": {
+          "leichter": "Nur einkreisen und malen. Beim Erzählen und Aufschreiben hilft die Lehrperson.",
+          "schwerer": "Zu drei Bildern einen Satz schreiben: „Ich freue mich, wenn …“"
+        },
+        "impulse": [
+          "Wie fühlt sich Freude in deinem Körper an?",
+          "Was hat dich heute zum Lachen gebracht?",
+          "Wie kannst du einem anderen Kind eine Freude machen?"
+        ],
+        "tipps": [
+          "Ein Freude-Glas in der Klasse: Täglich kommt ein Zettel mit einem frohen Moment hinein, am Freitag wird vorgelesen.",
+          "Freude nie einfordern. Auch ein „Heute war nichts“ darf stehen bleiben."
+        ],
+        "achtung": "Findet ein Kind über längere Zeit nichts, was ihm Freude macht, oder wirkt es oft bedrückt: aufmerksam beobachten, ein Einzelgespräch anbieten und bei Bedarf die zuständige Leitung (Responsable) informieren.",
+        "material": "Buntstifte; optional Glas und Zettel für ein Freude-Glas"
+      }
+    }
+  },
+  {
+    "id": "drei-gute-dinge",
+    "bereich": "gefuehle",
+    "thema": "freude",
+    "stufen": ["C3", "C4"],
+    "sozialform": ["einzeln", "klasse"],
+    "dauer": "1 Woche, täglich 5 Min.",
+    "eldib": ["K-15", "K-29", "K-26"],
+    "schlagworte": ["Freude", "Dankbarkeit", "Tagebuch", "Positive Psychologie", "Wohlbefinden"],
+    "bild": "icon:notebook",
+    "verwandt": ["das-macht-mich-froh", "was-diese-woche-gut-war"],
+    "de": {
+      "titel": "Drei gute Dinge",
+      "untertitel": "Jeden Tag passiert etwas Gutes – oft ist es ganz klein. Wer es eine Woche lang aufschreibt, bemerkt es mit der Zeit leichter.",
+      "bausteine": [
+        { "art": "aufgabe", "text": "Schreibe eine Woche lang jeden Abend drei gute Dinge auf – und wie es dazu kam.", "hinweis": "Kleine Dinge zählen auch: ein Witz, ein Tor in der Pause, ein gutes Gespräch.", "symbole": ["schreiben"] },
+        {
+          "art": "tabelle",
+          "spalten": ["Montag – das war gut", "Wie kam es dazu?"],
+          "breiten": [1.1, 1],
+          "zeilen": 3,
+          "beispiel": ["Beim Diktat hatte ich nur zwei Fehler.", "Ich habe am Wochenende mit meiner Schwester geübt."]
+        },
+        { "art": "tabelle", "spalten": ["Dienstag – das war gut", "Wie kam es dazu?"], "breiten": [1.1, 1], "zeilen": 3 },
+        { "art": "tabelle", "spalten": ["Mittwoch – das war gut", "Wie kam es dazu?"], "breiten": [1.1, 1], "zeilen": 3 },
+        { "art": "tabelle", "spalten": ["Donnerstag – das war gut", "Wie kam es dazu?"], "breiten": [1.1, 1], "zeilen": 3 },
+        { "art": "tabelle", "spalten": ["Freitag – das war gut", "Wie kam es dazu?"], "breiten": [1.1, 1], "zeilen": 3 },
+        { "art": "tabelle", "spalten": ["Samstag – das war gut", "Wie kam es dazu?"], "breiten": [1.1, 1], "zeilen": 3 },
+        { "art": "tabelle", "spalten": ["Sonntag – das war gut", "Wie kam es dazu?"], "breiten": [1.1, 1], "zeilen": 3 },
+        { "art": "aufgabe", "text": "Am Ende der Woche: Schau zurück.", "symbole": ["nachdenken", "schreiben"] },
+        {
+          "art": "satzanfaenge",
+          "linien": 2,
+          "items": ["Am meisten gefreut habe ich mich über …", "Dazu habe ich selbst beigetragen: …", "Das ist mir in dieser Woche aufgefallen: …"]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder richten ihre Aufmerksamkeit eine Woche lang gezielt auf gute Erlebnisse, benennen deren Ursachen und erkennen dabei auch ihren eigenen Anteil.",
+        "ablauf": [
+          "Einführung (10 Min.): Die Lehrperson nennt drei eigene gute Dinge von gestern und erklärt jeweils, wie es dazu kam.",
+          "Den Montag gemeinsam ausfüllen. Fragen: „Wer oder was hat dazu beigetragen? Was hast du selbst getan?“",
+          "An Schultagen täglich 5 Minuten am Ende des Unterrichts schreiben lassen; das Wochenende zu Hause.",
+          "Nach einer Woche (15 Min.): Aufgabe 2 ausfüllen, im Sitzkreis freiwillig ein gutes Ding vorstellen.",
+          "Auswerten: „Fiel es dir am Ende der Woche leichter, gute Dinge zu finden?“"
+        ],
+        "hintergrund": "Die Übung „Drei gute Dinge“ stammt aus der Positiven Psychologie: Erwachsene, die eine Woche lang jeden Abend drei gute Erlebnisse und deren Ursachen notierten, berichteten noch sechs Monate später mehr Wohlbefinden und weniger depressive Beschwerden (Seligman et al., 2005). Zwei Mechanismen gelten als wirksam: Die Aufmerksamkeit wird auf Gelungenes gelenkt, und die Frage nach der Ursache verbindet gute Erlebnisse mit dem eigenen Handeln und mit anderen Menschen. Wer erlebt, dass das eigene Tun etwas bewirkt, stärkt seine Selbstwirksamkeit (Bandura, 1977). Für Kinder ist die Form vereinfacht; entscheidend sind Regelmäßigkeit und Freiwilligkeit beim Teilen.",
+        "quellen": [
+          "Seligman, M. E. P., Steen, T. A., Park, N. & Peterson, C. (2005). Positive psychology progress: Empirical validation of interventions. American Psychologist, 60(5), 410–421.",
+          "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215."
+        ],
+        "differenzierung": {
+          "leichter": "Ein gutes Ding pro Tag genügt; die Ursache darf mündlich erzählt werden.",
+          "schwerer": "Zusätzlich notieren, welches Gefühl das gute Ding ausgelöst hat."
+        },
+        "impulse": [
+          "Was war das kleinste gute Ding der Woche?",
+          "Bei welchem guten Ding hast du selbst mitgeholfen?",
+          "Wem möchtest du für etwas danken?"
+        ],
+        "tipps": [
+          "Einträge nicht korrigieren und nur mit Erlaubnis vorlesen.",
+          "Das Blatt am Platz oder im Hausaufgabenheft aufbewahren, damit es täglich griffbereit ist."
+        ],
+        "achtung": "Schreibt ein Kind wiederholt, dass nichts gut war, oder tauchen belastende Erlebnisse auf: behutsam im Einzelgespräch nachfragen und bei Bedarf die zuständige Leitung (Responsable) informieren."
+      }
+    }
+  },
+  {
+    "id": "was-diese-woche-gut-war",
+    "bereich": "gefuehle",
+    "thema": "freude",
+    "stufen": ["ES"],
+    "sozialform": ["einzeln", "gruppe"],
+    "dauer": "30 Min.",
+    "eldib": ["K-32", "K-24", "SOZ-40"],
+    "schlagworte": ["Dankbarkeit", "Stolz", "Wochenrückblick", "Stärken", "Positive Psychologie"],
+    "bild": "icon:calendar-event",
+    "verwandt": ["drei-gute-dinge", "darauf-bin-ich-stolz"],
+    "de": {
+      "titel": "Was diese Woche gut war",
+      "untertitel": "Ärger bleibt leichter im Gedächtnis als Gutes. Ein bewusster Rückblick macht die Woche nicht schöner – aber vollständiger.",
+      "bausteine": [
+        { "art": "aufgabe", "text": "Drei Dinge, die diese Woche gut waren – und wie es dazu kam", "hinweis": "Kleines zählt auch. Frag dich jeweils: Was habe ich beigetragen, wer hat geholfen, was war Glück?" },
+        {
+          "art": "tabelle",
+          "spalten": ["Was war gut?", "Mein Anteil", "Andere, Zufall"],
+          "breiten": [1.3, 1, 1],
+          "zeilen": 3,
+          "beispiel": ["Die Präsentation in Geschichte lief gut.", "zweimal geprobt, Karteikarten geschrieben", "Ana hat mir eine Rückmeldung gegeben"]
+        },
+        { "art": "aufgabe", "text": "Wem bist du diese Woche dankbar – und wofür?", "hinweis": "Wenn du magst: Sag es der Person oder schreib ihr eine kurze Nachricht." },
+        { "art": "satzanfaenge", "items": ["Ich bin dankbar für …", "Danke sagen möchte ich …"] },
+        { "art": "aufgabe", "text": "Worauf bist du diese Woche stolz?", "hinweis": "Nicht nur Ergebnisse zählen, auch Anstrengung, Mut oder Fairness. Die Wörter helfen beim Benennen." },
+        {
+          "art": "wortspeicher",
+          "titel": "Stärken",
+          "items": ["Ausdauer", "Mut", "Hilfsbereitschaft", "Humor", "Fairness", "Neugier", "Geduld", "Kreativität", "Ehrlichkeit", "Selbstdisziplin", "Teamgeist", "Freundlichkeit"]
+        },
+        { "art": "satzanfaenge", "items": ["Darauf bin ich stolz: …", "Dabei hat mir diese Stärke geholfen: …"], "linien": 2 },
+        { "art": "aufgabe", "text": "Was nimmst du mit in die nächste Woche?" },
+        { "art": "satzanfaenge", "items": ["Das möchte ich wiederholen oder beibehalten: …"], "linien": 2 }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen blicken strukturiert auf ihre Woche zurück, benennen gute Erlebnisse und deren Ursachen, drücken Dankbarkeit aus und erkennen eigene Leistungen und Stärken.",
+        "ablauf": [
+          "Einstieg (5 Min.): „Woran erinnert ihr euch von dieser Woche zuerst?“ Sammeln; oft kommt Ärger zuerst.",
+          "Aufgabe 1 (10 Min.): Das Beispiel besprechen – eigener Anteil, Anteil anderer und Zufall stehen nebeneinander.",
+          "Aufgaben 2 und 3 (10 Min.): Dankbarkeit und Stolz; den Wortspeicher als Hilfe nutzen.",
+          "Aufgabe 4 und Austausch zu zweit (5 Min.), nur freiwillig.",
+          "Als Wochenritual fortführen, z. B. jeden Freitag in der letzten Stunde."
+        ],
+        "hintergrund": "Im Rückblick drängen sich oft Ärger und Stress in den Vordergrund; ein gezielter Blick auf Gelungenes gleicht das aus. In einer kontrollierten Studie steigerten das tägliche Notieren guter Erlebnisse mit ihren Ursachen und der neue Einsatz eigener Stärken das Wohlbefinden über Monate; ein Dankesbesuch wirkte kurzfristig am stärksten (Seligman et al., 2005). Die Frage nach dem eigenen Anteil fördert eine realistische Sicht auf das eigene Können und damit Selbstwirksamkeit (Bandura, 1977). Der Wortspeicher greift Stärken aus der Klassifikation von Peterson und Seligman (2004) auf und hilft, Leistung nicht nur an Noten festzumachen.",
+        "quellen": [
+          "Seligman, M. E. P., Steen, T. A., Park, N. & Peterson, C. (2005). Positive psychology progress: Empirical validation of interventions. American Psychologist, 60(5), 410–421.",
+          "Peterson, C. & Seligman, M. E. P. (2004). Character Strengths and Virtues. New York: Oxford University Press.",
+          "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215."
+        ],
+        "differenzierung": {
+          "leichter": "In Aufgabe 1 ein gutes Ding genügt; Aufgabe 2 mündlich.",
+          "schwerer": "Eine Dankesnachricht formulieren und sie – wenn gewünscht – tatsächlich abschicken."
+        },
+        "impulse": [
+          "Was hättest du ohne diesen Rückblick vergessen?",
+          "Wo lag dein Anteil, wo hattest du Glück?",
+          "Welche Stärke hast du diese Woche bei jemand anderem bemerkt?"
+        ],
+        "tipps": [
+          "Die Blätter über mehrere Wochen sammeln: So werden wiederkehrende Stärken sichtbar.",
+          "Nichts beschönigen: Auch eine schwierige Woche darf so benannt werden; ein gutes Ding reicht."
+        ],
+        "achtung": "Finden Jugendliche über Wochen nichts Gutes, werten sie sich stark ab oder deuten sie Belastungen an: das Gespräch suchen und bei Bedarf SePAS und die zuständige Leitung (Responsable) einbeziehen."
+      }
+    },
+    "fr": {
+      "titel": "Ce qui s’est bien passé cette semaine",
+      "untertitel": "Le négatif reste plus facilement en mémoire. Un regard en arrière ne rend pas la semaine plus belle – mais plus complète.",
+      "bausteine": [
+        { "art": "aufgabe", "text": "Trois choses qui se sont bien passées cette semaine – et comment c’est arrivé", "hinweis": "Les petites choses comptent aussi. Demande-toi à chaque fois : qu’est-ce que j’y ai apporté, qui m’a aidé·e, qu’est-ce qui relevait de la chance ?" },
+        {
+          "art": "tabelle",
+          "spalten": ["Qu’est-ce qui était bien ?", "Ma part", "Les autres, la chance"],
+          "breiten": [1.3, 1, 1],
+          "zeilen": 3,
+          "beispiel": ["L’exposé d’histoire s’est bien passé.", "répété deux fois, préparé des fiches", "Ana m’a fait un retour"]
+        },
+        { "art": "aufgabe", "text": "À qui es-tu reconnaissant·e cette semaine – et pour quoi ?", "hinweis": "Si tu veux : dis-le à la personne ou envoie-lui un petit message." },
+        { "art": "satzanfaenge", "items": ["Je suis reconnaissant·e pour …", "J’aimerais dire merci à …"] },
+        { "art": "aufgabe", "text": "De quoi es-tu fier·ère cette semaine ?", "hinweis": "Les résultats ne sont pas tout : l’effort, le courage ou l’esprit d’équipe comptent aussi. Les mots t’aident à nommer tes forces." },
+        {
+          "art": "wortspeicher",
+          "titel": "Forces",
+          "items": ["persévérance", "courage", "serviabilité", "humour", "sens de la justice", "curiosité", "patience", "créativité", "honnêteté", "autodiscipline", "esprit d’équipe", "gentillesse"]
+        },
+        { "art": "satzanfaenge", "items": ["Je suis fier·ère de : …", "Une force qui m’a aidé·e : …"], "linien": 2 },
+        { "art": "aufgabe", "text": "Que retiens-tu pour la semaine prochaine ?" },
+        { "art": "satzanfaenge", "items": ["Ce que je veux refaire ou garder : …"], "linien": 2 }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes font un bilan structuré de leur semaine, nomment les bons moments et leurs causes, expriment leur gratitude et reconnaissent leurs propres réussites et forces.",
+        "ablauf": [
+          "Entrée en matière (5 min) : « De quoi vous souvenez-vous en premier cette semaine ? » Recueillir ; souvent, l’agacement vient d’abord.",
+          "Exercice 1 (10 min) : discuter l’exemple – sa propre part, celle des autres et la chance figurent côte à côte.",
+          "Exercices 2 et 3 (10 min) : gratitude et fierté ; s’aider de la liste de forces.",
+          "Exercice 4 et échange à deux (5 min), uniquement sur base volontaire.",
+          "En faire un rituel hebdomadaire, p. ex. chaque vendredi en dernière heure."
+        ],
+        "hintergrund": "Avec le recul, l’agacement et le stress prennent souvent le dessus ; un regard ciblé sur ce qui a réussi rééquilibre les choses. Dans une étude contrôlée, noter chaque jour de bons moments avec leurs causes et utiliser ses forces de façon nouvelle ont augmenté le bien-être pendant des mois ; une visite de gratitude a eu l’effet le plus fort à court terme (Seligman et al., 2005). S’interroger sur sa propre part favorise une vision réaliste de ses capacités et donc le sentiment d’efficacité personnelle (Bandura, 1977). La liste de forces reprend la classification de Peterson et Seligman (2004) et aide à ne pas réduire la réussite aux notes.",
+        "quellen": [
+          "Seligman, M. E. P., Steen, T. A., Park, N. & Peterson, C. (2005). Positive psychology progress: Empirical validation of interventions. American Psychologist, 60(5), 410–421.",
+          "Peterson, C. & Seligman, M. E. P. (2004). Character Strengths and Virtues. New York: Oxford University Press.",
+          "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215."
+        ],
+        "differenzierung": {
+          "leichter": "Dans l’exercice 1, une seule bonne chose suffit ; l’exercice 2 se fait à l’oral.",
+          "schwerer": "Rédiger un message de remerciement et, si on le souhaite, l’envoyer vraiment."
+        },
+        "impulse": [
+          "Qu’aurais-tu oublié sans ce retour en arrière ?",
+          "Où était ta part, où as-tu eu de la chance ?",
+          "Quelle force as-tu remarquée chez quelqu’un d’autre cette semaine ?"
+        ],
+        "tipps": [
+          "Rassembler les fiches sur plusieurs semaines : les forces récurrentes deviennent visibles.",
+          "Ne rien enjoliver : une semaine difficile peut être nommée comme telle ; une seule bonne chose suffit."
+        ],
+        "achtung": "Si des jeunes ne trouvent rien de positif pendant des semaines, se dévalorisent fortement ou laissent entendre des difficultés : chercher le dialogue et, si nécessaire, impliquer le SePAS et la direction compétente (responsable)."
+      }
+    }
+  },
+  {
+    "id": "darauf-bin-ich-stolz",
+    "bereich": "gefuehle",
+    "thema": "freude",
+    "stufen": ["C1"],
+    "sozialform": ["einzeln", "gruppe"],
+    "dauer": "20–25 Min.",
+    "eldib": ["SOZ-9", "V-14", "K-13"],
+    "schlagworte": ["Stolz", "Selbstwert", "Können", "Freude", "Spielschule"],
+    "bild": "gesicht:stolz",
+    "verwandt": ["das-macht-mich-froh", "was-diese-woche-gut-war"],
+    "de": {
+      "titel": "Darauf bin ich stolz",
+      "anleitung": "Die Bildgeschichte gemeinsam erzählen: Erst ist es schwer, Pol übt, dann klappt es – und er ist stolz. Danach malt das Kind etwas, das es schon kann, zeigt sein Bild und erzählt davon.",
+      "bausteine": [
+        { "art": "aufgabe", "text": "Schau die Bilder an. Wie fühlt sich Pol am Ende?", "symbole": ["zeigen", "sprechen"] },
+        {
+          "art": "comic",
+          "spalten": 3,
+          "felder": [
+            { "figuren": ["figur:tom:besorgt"], "requisit": "icon:bike", "blase": "keine", "untertitel": "1. Rad fahren ist noch schwer." },
+            { "figuren": ["figur:tom:neutral"], "requisit": "icon:bike", "blase": "keine", "untertitel": "2. Pol übt jeden Tag." },
+            { "figuren": ["figur:tom:stolz:jubeln"], "requisit": "icon:bike", "blase": "keine", "untertitel": "3. Geschafft. Pol ist stolz." }
+          ]
+        },
+        { "art": "aufgabe", "text": "Was kannst du schon? Male, worauf du stolz bist.", "hinweis": "Zeige dein Bild und erzähle davon.", "symbole": ["malen", "zeigen"] },
+        { "art": "feld", "zeichnen": true, "hoehe": 5.5 },
+        { "art": "linien", "anzahl": 1, "label": "Das erzählt das Kind dazu (Erwachsene schreiben mit):" }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder erkennen Stolz als Gefühl nach eigener Anstrengung, stellen dar, was sie schon können, und erzählen einem Erwachsenen davon.",
+        "ablauf": [
+          "Einstieg im Sitzkreis (5 Min.): Die Bildgeschichte erzählen. Fragen: „Wie fühlt sich Pol am Anfang? Und am Ende?“",
+          "Stolz zeigen (3 Min.): Alle stehen auf und zeigen mit dem Körper, wie stolz aussieht: aufrecht, Arme hoch, lächeln.",
+          "Aufgabe 2 (10 Min.): Das Kind malt etwas, das es schon kann. Nachfragen: „Wie hast du das gelernt?“",
+          "Die Lehrperson schreibt auf, was das Kind erzählt. Wer mag, zeigt sein Bild im Kreis.",
+          "Die Bilder als „Darauf sind wir stolz“-Wand aufhängen und im Laufe des Jahres ergänzen."
+        ],
+        "hintergrund": "Stolz entsteht, wenn Kinder einen Erfolg sich selbst zuschreiben. Schon im Vorschulalter zeigen sie Freude über Gelungenes und suchen dafür die Rückmeldung vertrauter Erwachsener (Denham, 1998). Selbst erreichte Erfolge sind die wichtigste Quelle der Überzeugung, etwas bewirken zu können (Bandura, 1977). Die Bildgeschichte zeigt deshalb den ganzen Weg: schwer – geübt – geschafft. Rückmeldungen, die Anstrengung und Vorgehen beschreiben, stärken die Lernbereitschaft mehr als pauschales Lob (Dweck, 2006).",
+        "quellen": [
+          "Denham, S. A. (1998). Emotional Development in Young Children. New York: Guilford.",
+          "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
+          "Dweck, C. S. (2006). Mindset: The New Psychology of Success. New York: Random House."
+        ],
+        "differenzierung": {
+          "leichter": "Die Geschichte nachspielen statt erzählen. Das Kind malt, die Lehrperson schreibt mit.",
+          "schwerer": "Das Kind erzählt eine eigene Geschichte in drei Schritten: schwer – geübt – geschafft."
+        },
+        "impulse": [
+          "Was war am Anfang schwer für dich?",
+          "Wer hat dir beim Üben geholfen?",
+          "Was möchtest du als Nächstes lernen?"
+        ],
+        "tipps": [
+          "Das Tun beschreiben statt pauschal zu loben: „Du bist drangeblieben, bis es geklappt hat.“",
+          "Kinder nicht vergleichen: Jedes Kind zeigt, was es selbst schon kann."
+        ],
+        "achtung": "Traut sich ein Kind kaum etwas zu oder wertet es sich häufig ab: aufmerksam beobachten, mit den Eltern sprechen und bei Bedarf die zuständige Leitung (Responsable) einbeziehen.",
+        "material": "Buntstifte"
+      }
+    }
+  }
+]

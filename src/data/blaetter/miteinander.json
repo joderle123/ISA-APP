@@ -1,0 +1,1890 @@
+[
+  {
+    "id": "was-machen-freunde",
+    "bereich": "miteinander",
+    "thema": "freundschaft",
+    "stufen": ["C1"],
+    "sozialform": ["einzeln", "gruppe"],
+    "dauer": "15–20 Min.",
+    "eldib": ["SOZ-16", "SOZ-17", "SOZ-18"],
+    "schlagworte": ["Freundschaft", "Teilen", "Trösten", "Helfen", "Spielschule"],
+    "bild": "icon:friends",
+    "verwandt": ["guter-freund", "freundschafts-rezept"],
+    "de": {
+      "titel": "Was machen Freunde?",
+      "anleitung": "Die Bilder gemeinsam anschauen: Was passiert hier? Wie fühlt sich das Kind? Das Kind kreist ein, wo Kinder freundlich miteinander sind. Danach malt es sich mit einem Kind, mit dem es gern spielt.",
+      "bausteine": [
+        { "art": "aufgabe", "text": "Was machen Freunde? Kreise ein.", "symbole": ["zeigen", "einkreisen"] },
+        {
+          "art": "comic",
+          "spalten": 3,
+          "felder": [
+            { "figuren": ["figur:lea:froh:geben", "figur:sami:froh"], "requisit": "icon:apple", "blase": "keine", "untertitel": "teilen" },
+            { "figuren": ["figur:noah:froh:zeigen", "figur:amira:traurig"], "blase": "keine", "untertitel": "auslachen" },
+            {
+              "figuren": ["figur:tom:froh:jubeln", "figur:mia:froh"],
+              "requisit": "icon:ball-football",
+              "blase": "keine",
+              "untertitel": "zusammen spielen"
+            },
+            { "figuren": ["figur:mia:besorgt:geben", "figur:noah:traurig"], "blase": "keine", "untertitel": "trösten" },
+            { "figuren": ["figur:sami:wuetend:verschraenkt", "figur:lea:traurig"], "blase": "keine", "untertitel": "nicht mitspielen lassen" },
+            { "figuren": ["figur:amira:froh:geben", "figur:tom:froh"], "requisit": "icon:backpack", "blase": "keine", "untertitel": "helfen" }
+          ]
+        },
+        { "art": "aufgabe", "text": "Male dich und ein Kind, mit dem du gern spielst.", "symbole": ["malen"] },
+        { "art": "feld", "zeichnen": true, "hoehe": 2.6 }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder erkennen auf Bildern freundliches und unfreundliches Verhalten, sagen, wie sich die Kinder dabei fühlen, und erzählen, was sie selbst gern mit anderen Kindern machen.",
+        "ablauf": [
+          "Einstieg im Sitzkreis (3 Min.): Eine Handpuppe sagt: „Ich hätte so gern einen Freund. Was kann ich tun?“ Ideen der Kinder sammeln.",
+          "Bild für Bild besprechen (5 Min.): „Was passiert hier? Wie fühlt sich das Kind?“ Die Kinder zeigen mit dem Daumen, ob das freundlich ist.",
+          "Die Kinder kreisen die freundlichen Bilder ein. Zu den anderen Bildern fragen: „Was könnte das Kind stattdessen tun?“",
+          "Eine Szene mit echtem Spielzeug nachspielen (5 Min.): teilen, trösten oder beim Anziehen helfen.",
+          "Aufgabe 2: Die Kinder malen sich mit einem anderen Kind. Beim Malen nachfragen und einen Satz des Kindes auf das Blatt schreiben."
+        ],
+        "hintergrund": "Im Spielschulalter entstehen die ersten Freundschaften vor allem im gemeinsamen Spiel. Kinder, die teilen, abwechseln, helfen und trösten, werden von Gleichaltrigen eher angenommen. Grundlage dafür ist emotionale Kompetenz: Gefühle bei sich und anderen erkennen und passend darauf reagieren (Denham, 1998). Programme für junge Kinder üben solche Freundschaftsfertigkeiten deshalb gezielt – mit Bildern, Handpuppen und kurzen Rollenspielen – und stärken so das soziale Miteinander in der Gruppe (Webster-Stratton & Reid, 2003). Entscheidend ist die Wiederholung im Alltag: Wird freundliches Verhalten bemerkt und benannt, zeigen Kinder es häufiger.",
+        "quellen": [
+          "Denham, S. A. (1998). Emotional Development in Young Children. New York: Guilford.",
+          "Webster-Stratton, C. & Reid, M. J. (2003). Treating conduct problems and strengthening social and emotional competence in young children: The Dina Dinosaur treatment program. Journal of Emotional and Behavioral Disorders, 11(3), 130–143."
+        ],
+        "differenzierung": {
+          "leichter": "Nur die vier freundlichen Bilder besprechen und nachspielen. Das Kind zeigt auf die Bilder, statt einzukreisen.",
+          "schwerer": "Zu den zwei unfreundlichen Bildern erzählen: Was könnte das Kind sagen oder tun, damit es wieder gut wird?"
+        },
+        "impulse": [
+          "Was hast du heute mit einem anderen Kind gemacht?",
+          "Woran merkst du, dass ein Kind traurig ist?",
+          "Was kannst du tun, wenn ein Kind allein spielt?"
+        ],
+        "tipps": [
+          "Freundliche Momente im Alltag benennen: „Du hast mit Tiago geteilt. Schau, er freut sich.“",
+          "Die Bilder vergrößert als Gesprächskarten für den Sitzkreis nutzen."
+        ],
+        "achtung": "Wenn ein Kind oft allein bleibt, ausgelacht oder ausgeschlossen wird: in den nächsten Tagen gezielt beobachten, im Team besprechen und bei Bedarf die zuständige Leitung (Responsable) informieren.",
+        "material": "Buntstifte; optional eine Handpuppe und Spielzeug zum Nachspielen"
+      }
+    }
+  },
+  {
+    "id": "guter-freund",
+    "bereich": "miteinander",
+    "thema": "freundschaft",
+    "stufen": ["C2"],
+    "sozialform": ["einzeln", "gruppe"],
+    "dauer": "30 Min.",
+    "eldib": ["K-20", "K-19", "SOZ-25"],
+    "schlagworte": ["Freundschaft", "Eigenschaften", "Freund sein", "Zusammenhalt", "Selbstbild"],
+    "bild": "icon:heart-handshake",
+    "verwandt": ["was-machen-freunde", "freundschafts-rezept"],
+    "de": {
+      "titel": "Ein guter Freund, eine gute Freundin",
+      "untertitel": "Gute Freunde spielen zusammen und halten zueinander. Nach einem Streit vertragen sie sich wieder.",
+      "bausteine": [
+        { "art": "aufgabe", "text": "Was tut ein guter Freund? Kreuze an.", "symbole": ["lesen", "ankreuzen"] },
+        {
+          "art": "ankreuzen",
+          "titel": "Ein guter Freund, eine gute Freundin …",
+          "spalten": 2,
+          "items": [
+            "hört mir zu.",
+            "lacht mich aus.",
+            "hilft mir, wenn ich etwas nicht kann.",
+            "bestimmt immer, was wir spielen.",
+            "tröstet mich, wenn ich traurig bin.",
+            "sagt: „Sonst bist du nicht mehr mein Freund.“",
+            "spielt auch mal, was ich will.",
+            "verträgt sich nach einem Streit wieder mit mir."
+          ]
+        },
+        { "art": "aufgabe", "text": "Denk an ein Kind, mit dem du gern spielst. Male euch beide und schreibe.", "symbole": ["malen", "schreiben"] },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [{ "art": "feld", "zeichnen": true, "hoehe": 4.2 }],
+          "rechts": [{ "art": "satzanfaenge", "items": ["Wir spielen gern …", "Ich mag an dir, dass …"], "linien": 2 }]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wie bist du ein guter Freund, eine gute Freundin?",
+          "hinweis": "Zum Beispiel: Ich teile meine Stifte. Ich lasse andere mitspielen.",
+          "symbole": ["nachdenken", "schreiben"]
+        },
+        { "art": "satzanfaenge", "items": ["Das kann ich schon gut: Ich …", "Das will ich noch üben: Ich …"], "linien": 2 }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder unterscheiden, was einer Freundschaft guttut und was ihr schadet, beschreiben eine eigene Freundschaft und benennen, was sie als Freund oder Freundin gut können.",
+        "ablauf": [
+          "Einstieg (5 Min.): „Woran merkst du, dass jemand dein Freund oder deine Freundin ist?“ Antworten an der Tafel sammeln.",
+          "Aufgabe 1 (5 Min.): Sätze gemeinsam lesen, allein ankreuzen. Nachfragen: Wie fühlt sich „Sonst bist du nicht mehr mein Freund“ an?",
+          "Aufgabe 2 (10 Min.): Malen und Sätze ergänzen. Wer mag, stellt sein Bild vor.",
+          "Aufgabe 3 (5 Min.): Beispiele an der Tafel sammeln, dann schreibt jedes Kind für sich.",
+          "Nach einer Woche fragen: „Wann warst du ein guter Freund oder eine gute Freundin?“"
+        ],
+        "hintergrund": "Mit dem Schulbeginn verändert sich, was Kinder unter Freundschaft verstehen: Neben dem gemeinsamen Spiel werden Hilfe, Trost und Verlässlichkeit wichtiger. Kinder in diesem Alter können solche Eigenschaften benennen, reagieren im Streit aber oft noch impulsiv – etwa mit „Dann bist du nicht mehr mein Freund“. Das Blatt verbindet deshalb das Erkennen guter Eigenschaften mit dem Blick auf das eigene Verhalten. Sich mit anderen verbunden zu fühlen, ist ein psychologisches Grundbedürfnis (Deci & Ryan, 2000); schulische Programme zum sozial-emotionalen Lernen stärken Beziehungsfertigkeiten nachweislich (Durlak et al., 2011).",
+        "quellen": [
+          "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268.",
+          "Durlak, J. A., Weissberg, R. P., Dymnicki, A. B., Taylor, R. D. & Schellinger, K. B. (2011). The impact of enhancing students’ social and emotional learning: A meta-analysis of school-based universal interventions. Child Development, 82(1), 405–432."
+        ],
+        "differenzierung": {
+          "leichter": "Sätze vorlesen; das Kind zeigt Daumen hoch oder runter. Aufgabe 2 und 3 malen oder mündlich beantworten.",
+          "schwerer": "Zu den Sätzen ohne Kreuz aufschreiben, was ein guter Freund stattdessen tun würde."
+        },
+        "impulse": [
+          "Was ist manchmal schwer daran, ein guter Freund zu sein?",
+          "Kann man befreundet sein, wenn einer mal gemein ist?",
+          "Wie kannst du einem neuen Kind ein guter Freund sein?"
+        ],
+        "tipps": [
+          "Wer gerade kein Kind nennen kann, malt jemanden aus Familie oder Nachbarschaft oder zeichnet, wie ein guter Freund wäre.",
+          "Die Eigenschaften als Plakat „So sind gute Freunde“ aufhängen."
+        ],
+        "achtung": "Wenn ein Kind sagt, dass es keine Freunde hat oder nie mitspielen darf: nicht im Plenum vertiefen, sondern im Einzelgespräch nachfragen, die Pausen beobachten und bei Bedarf die zuständige Leitung (Responsable) informieren.",
+        "material": "Buntstifte; Tafel oder Plakat"
+      }
+    }
+  },
+  {
+    "id": "freundschafts-rezept",
+    "bereich": "miteinander",
+    "thema": "freundschaft",
+    "stufen": ["C3", "C4"],
+    "sozialform": ["einzeln", "gruppe"],
+    "dauer": "45 Min.",
+    "eldib": ["K-27", "K-20", "K-28", "SOZ-34"],
+    "schlagworte": ["Freundschaft", "Vertrauen", "Beziehungspflege", "Versöhnung", "Streit"],
+    "bild": "icon:tools-kitchen-2",
+    "verwandt": ["guter-freund", "was-mir-in-freundschaften-wichtig-ist", "konflikt-bruecke"],
+    "de": {
+      "titel": "Das Freundschafts-Rezept",
+      "untertitel": "Eine Freundschaft entsteht nicht von allein. Sie braucht gute Zutaten, Pflege – und manchmal eine Reparatur nach einem Streit.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Welche Zutaten braucht eine gute Freundschaft? Wähle vier aus und trage sie ins Rezept ein.",
+          "hinweis": "Schreibe dazu, wie viel man davon braucht (eine Prise, zwei Löffel, eine große Portion …) und woran man die Zutat merkt.",
+          "symbole": ["lesen", "schreiben"]
+        },
+        {
+          "art": "wortspeicher",
+          "titel": "Zutaten",
+          "items": [
+            "Vertrauen",
+            "Zuhören",
+            "Ehrlichkeit",
+            "Humor",
+            "Hilfsbereitschaft",
+            "Geduld",
+            "Verzeihen",
+            "gemeinsame Zeit",
+            "Respekt",
+            "Teilen",
+            "Zusammenhalt"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": ["Zutat", "Wie viel?", "Daran merkt man sie"],
+          "breiten": [1.1, 1.2, 2.9],
+          "zeilen": 4,
+          "beispiel": ["Zuhören", "eine große Portion", "Diogo lässt mich ausreden, wenn ich von meinem Hund erzähle."]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Freundschaft pflegen: Wie oft machst du das?",
+          "hinweis": "Kreise danach eine Sache ein, die du diese Woche öfter tun willst.",
+          "symbole": ["ankreuzen", "einkreisen"]
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": ["oft", "manchmal", "selten"],
+          "items": [
+            "Ich frage nach, wie es meinem Freund oder meiner Freundin geht.",
+            "Ich halte, was ich verspreche.",
+            "Ich freue mich mit, wenn bei ihm oder ihr etwas gut klappt.",
+            "Ich halte zu ihm oder ihr, wenn andere lästern.",
+            "Ich erzähle Geheimnisse nicht weiter.",
+            "Ich sage auch mal Danke."
+          ]
+        },
+        {
+          "art": "geschichte",
+          "titel": "Angebrannt",
+          "text": "Chiara und Inês sind beste Freundinnen. In der Maison Relais basteln sie fast jeden Tag zusammen. Heute will Chiara lieber mit Aylin Fußball spielen. Inês ist gekränkt und ruft: „Dann bist du eben nicht mehr meine Freundin.“ Chiara dreht sich wortlos weg. Am nächsten Morgen sitzen beide im Schulbus weit auseinander.",
+          "bild": "figur:mia:traurig"
+        },
+        { "art": "aufgabe", "text": "Wie finden Chiara und Inês wieder zusammen? Schreibe zu jedem Schritt.", "symbole": ["lesen", "schreiben"] },
+        {
+          "art": "schritte",
+          "linien": 2,
+          "items": [
+            { "titel": "Abkühlen", "text": "Erst ruhig werden. Was kann Inês tun, bevor sie mit Chiara spricht?" },
+            { "titel": "Zuhören", "text": "Jede erzählt, wie es ihr ging. Was könnte Chiara sagen?" },
+            { "titel": "Sich entschuldigen", "text": "Wofür kann sich Inês entschuldigen? Und Chiara?" },
+            { "titel": "Neu verabreden", "text": "Wie machen die beiden es beim nächsten Mal?" }
+          ]
+        },
+        { "art": "aufgabe", "text": "Denk an einen eigenen Streit mit einem Freund oder einer Freundin.", "symbole": ["nachdenken", "schreiben"] },
+        { "art": "frage", "text": "Was hat euch geholfen, euch wieder zu vertragen – oder was hätte geholfen?", "linien": 2 }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder benennen, was eine Freundschaft trägt, schätzen ein, wie sie selbst Freundschaften pflegen, und kennen vier Schritte, mit denen man sich nach einem Streit wieder verträgt.",
+        "ablauf": [
+          "Einstieg (5 Min.): Ein echtes Rezept zeigen. Frage: „Wenn Freundschaft ein Gericht wäre – was gehört hinein?“",
+          "Aufgabe 1 (10 Min.): Zutaten wählen und das Rezept ausfüllen. Mengen vergleichen: Wovon braucht es viel, wovon nur eine Prise?",
+          "Aufgabe 2 (5 Min.): Selbsteinschätzung in Einzelarbeit; jedes Kind kreist einen Vorsatz für die Woche ein.",
+          "Die Geschichte vorlesen. Fragen: „Was ist hier angebrannt? Wie geht es Inês, wie geht es Chiara?“",
+          "Aufgabe 3 (15 Min.) zu zweit: die vier Schritte ausfüllen und die Versöhnung kurz als Rollenspiel zeigen.",
+          "Aufgabe 4: eigene Erfahrung notieren; Austausch nur freiwillig."
+        ],
+        "hintergrund": "Im Grundschulalter werden Freundschaften stabiler und wechselseitiger: Vertrauen, Unterstützung und Verlässlichkeit gewinnen an Gewicht. Sich mit anderen verbunden zu fühlen, ist ein psychologisches Grundbedürfnis (Deci & Ryan, 2000). Streit gehört auch zu engen Freundschaften – entscheidend ist, ob Kinder Wege kennen, sich wieder zu versöhnen. Restaurative Ansätze stellen dabei nicht die Schuldfrage in den Mittelpunkt, sondern fragen: Was ist passiert, wer ist betroffen, und was braucht es, um es wieder gut zu machen? (Wachtel, 2016). Das Bild des Rezepts macht abstrakte Beziehungsqualitäten greifbar und lädt dazu ein, das eigene Verhalten ohne Schuldzuweisung anzuschauen.",
+        "quellen": [
+          "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268.",
+          "Wachtel, T. (2016). Defining Restorative. Bethlehem, PA: International Institute for Restorative Practices."
+        ],
+        "differenzierung": {
+          "leichter": "Nur zwei Zutaten eintragen und die Spalte „Wie viel?“ weglassen. Die vier Schritte mündlich besprechen, zu einem Schritt schreiben.",
+          "schwerer": "Ein ganzes Freundschafts-Rezept mit Zubereitung schreiben („Man nehme …“) und für ein Klassen-Kochbuch gestalten."
+        },
+        "impulse": [
+          "Welche Zutat ist am schwersten zu bekommen?",
+          "Kann eine Freundschaft einen Streit aushalten?",
+          "Reicht „Entschuldigung“ – oder braucht es mehr?"
+        ],
+        "tipps": [
+          "Versöhnung im Rollenspiel bleibt freiwillig: Niemand muss sich sofort vertragen.",
+          "Die Rezepte als Klassen-Kochbuch sammeln und bei Streit darauf zurückgreifen."
+        ],
+        "achtung": "Wenn ein Kind von dauerhaftem Ausschluss, Drohungen oder Auslachen erzählt, kann Mobbing dahinterstehen: im Einzelgespräch nachfragen und die zuständige Leitung (Responsable) informieren.",
+        "material": "Optional ein Rezept oder Kochbuch"
+      }
+    }
+  },
+  {
+    "id": "was-mir-in-freundschaften-wichtig-ist",
+    "bereich": "miteinander",
+    "thema": "freundschaft",
+    "stufen": ["ES"],
+    "sozialform": ["einzeln", "gruppe"],
+    "dauer": "45 Min.",
+    "eldib": ["K-34", "SOZ-39", "SOZ-41", "KOG-59"],
+    "schlagworte": ["Freundschaft", "Werte", "Grenzen", "Kontrolle", "Loyalität", "Beziehungen"],
+    "bild": "icon:hearts",
+    "verwandt": ["freundschafts-rezept", "nein-unter-druck", "klar-sagen-was-ich-brauche"],
+    "de": {
+      "titel": "Was mir in Freundschaften wichtig ist",
+      "untertitel": "Jede Freundschaft ist anders. Was dir darin wichtig ist und wo deine Grenzen liegen, darfst du selbst bestimmen.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Was ist dir in einer Freundschaft am wichtigsten? Kreuze fünf Punkte an und kreise den wichtigsten ein.",
+          "hinweis": "In die leeren Zeilen kannst du eigene Punkte schreiben."
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 3,
+          "frei": 3,
+          "items": [
+            "Vertrauen",
+            "Ehrlichkeit, auch wenn sie unbequem ist",
+            "Loyalität vor anderen",
+            "gemeinsamer Humor",
+            "gleiche Interessen",
+            "Zuverlässigkeit",
+            "Respekt vor meinem Nein",
+            "Unterstützung in schweren Zeiten",
+            "viel Zeit miteinander",
+            "Verschwiegenheit",
+            "Freiheit, auch andere Freunde zu haben",
+            "Streit aushalten und sich versöhnen"
+          ]
+        },
+        { "art": "aufgabe", "text": "Nimm deine drei wichtigsten Punkte: Woran erkennst du sie im Alltag?" },
+        {
+          "art": "tabelle",
+          "spalten": ["Das ist mir wichtig", "Daran erkenne ich es im Alltag"],
+          "breiten": [1.3, 3],
+          "zeilen": 3,
+          "beispiel": ["Loyalität vor anderen", "Wenn in der Gruppe über mich gelästert wird, hält Jil dagegen – auch wenn ich nicht dabei bin."]
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Tragfähig oder belastend?",
+          "text": "In einer tragfähigen Freundschaft fühlen sich beide meistens wohl, dürfen ehrlich sein und auch andere Menschen treffen. Streit kommt vor – entscheidend ist, dass man danach wieder zueinanderfindet. Warnzeichen sind dagegen:",
+          "punkte": [
+            "Kontrolle: Jemand will ständig wissen, wo du bist und mit wem du schreibst.",
+            "Schuldgefühle: Du wirst bestraft, wenn du Zeit mit anderen verbringst.",
+            "Abwertung: Witze auf deine Kosten, danach heißt es „War doch nur Spaß“.",
+            "Druck: Du sollst Dinge tun, die du nicht willst.",
+            "Einbahnstraße: Einer gibt immer, der andere nimmt nur."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Lies die Situationen. Wie schätzt du sie ein?",
+          "hinweis": "Es gibt nicht immer eine eindeutige Antwort. Überlege, was du brauchen würdest, damit es in Ordnung ist."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": ["in Ordnung", "fragwürdig", "Warnzeichen"],
+          "items": [
+            "Emma ist enttäuscht, dass du am Samstag keine Zeit hast, und sagt dir das offen.",
+            "Yusuf schreibt: „Wenn du heute mit denen gehst, brauchst du morgen nicht mehr zu kommen.“",
+            "Nora will jeden Abend deinen Chatverlauf sehen, „damit es keine Geheimnisse gibt“.",
+            "Ben macht vor der Klasse Witze über dein Aussehen. Danach sagt er: „War nur Spaß.“",
+            "Ihr habt euch gestritten und sprecht zwei Tage später in Ruhe darüber.",
+            "Du erzählst immer von deinen Problemen – Tiago kommt selbst kaum zu Wort."
+          ]
+        },
+        { "art": "aufgabe", "text": "Deine Grenze: Was ist für dich in einer Freundschaft nicht in Ordnung – und was würdest du dann sagen?" },
+        {
+          "art": "satzanfaenge",
+          "linien": 2,
+          "items": ["In einer Freundschaft ist für mich nicht in Ordnung, wenn …", "Dann würde ich sagen: …", "Darüber reden könnte ich mit …"]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "text": "Wenn du dich in einer Freundschaft oder Beziehung dauerhaft kontrolliert, bedroht oder unter Druck gesetzt fühlst, sprich mit einer Vertrauensperson – zum Beispiel beim SePAS. Anonym und kostenlos: Kanner- a Jugendtelefon 116 111."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen klären, welche Werte ihnen in Freundschaften wichtig sind, unterscheiden tragfähige von belastenden Beziehungsmustern und formulieren eine eigene Grenze.",
+        "ablauf": [
+          "Einstieg (5 Min.): „Woran merkt man, dass eine Freundschaft echt ist?“ Stichworte sammeln, ohne zu werten.",
+          "Aufgabe 1 und 2 allein (10 Min.), dann zu zweit vergleichen: Wo seid ihr euch ähnlich, wo verschieden?",
+          "Info-Kasten lesen. Klären: Streit ist kein Warnzeichen – Kontrolle, Abwertung und Druck schon.",
+          "Aufgabe 3 in Kleingruppen (10 Min.): einschätzen und begründen. Nachfragen: „Was müsste passieren, damit es in Ordnung wäre?“",
+          "Aufgabe 4 allein; die Grenzen werden nicht vorgelesen. Auf die Ansprechpersonen im Lycée hinweisen."
+        ],
+        "hintergrund": "Im Jugendalter gewinnen Gleichaltrige stark an Bedeutung; Anerkennung durch Freunde wird besonders belohnend erlebt (Steinberg, 2014). Nach der Selbstbestimmungstheorie brauchen Menschen zugleich Verbundenheit und Autonomie (Deci & Ryan, 2000). Tragfähige Freundschaften erfüllen beides; Kontrolle, Abwertung und Schuldgefühle schränken die Autonomie ein und werden oft erst spät als belastend erkannt. Das DBT-Fertigkeitentraining für Jugendliche nennt für Beziehungen drei Ziele: das eigene Anliegen erreichen, die Beziehung erhalten, die Selbstachtung wahren (Rathus & Miller, 2015). Wer die eigenen Werte kennt, spürt leichter, wann eine Grenze nötig ist.",
+        "quellen": [
+          "Steinberg, L. (2014). Age of Opportunity: Lessons from the New Science of Adolescence. Boston: Houghton Mifflin Harcourt.",
+          "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268.",
+          "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Nur Aufgabe 1 und 3; die Situationen gemeinsam lesen und per Handzeichen einschätzen.",
+          "schwerer": "Eine eigene Situation zwischen „in Ordnung“ und „Warnzeichen“ schreiben und zur Diskussion stellen."
+        },
+        "impulse": [
+          "Kann man zu loyal sein?",
+          "Wo endet Fürsorge, wo beginnt Kontrolle?",
+          "Warum ist es so schwer, eine Freundschaft zu beenden, die nicht guttut?"
+        ],
+        "tipps": ["Keine Fälle aus der Klasse besprechen; die Namen auf dem Blatt sind erfunden.", "Die Warnzeichen gelten genauso für Liebesbeziehungen."],
+        "achtung": "Erzählt jemand von Kontrolle, Drohungen oder Gewalt: nicht im Plenum vertiefen, ein Einzelgespräch anbieten, SePAS und zuständige Leitung (Responsable) informieren. Bei Gefährdung sofort nach dem internen Ablauf handeln, nicht allein lassen."
+      }
+    },
+    "fr": {
+      "titel": "Ce qui compte pour moi en amitié",
+      "untertitel": "Chaque amitié est différente. Ce qui compte pour toi et où se situent tes limites, c’est à toi de le décider.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Qu’est-ce qui compte le plus pour toi dans une amitié ? Coche cinq éléments et entoure le plus important.",
+          "hinweis": "Tu peux ajouter tes propres éléments sur les lignes vides."
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 3,
+          "frei": 3,
+          "items": [
+            "la confiance",
+            "l’honnêteté, même quand elle dérange",
+            "la loyauté devant les autres",
+            "le même sens de l’humour",
+            "des centres d’intérêt communs",
+            "la fiabilité",
+            "le respect de mon « non »",
+            "du soutien dans les moments difficiles",
+            "beaucoup de temps ensemble",
+            "la discrétion",
+            "la liberté d’avoir d’autres ami·es",
+            "pouvoir se disputer et se réconcilier"
+          ]
+        },
+        { "art": "aufgabe", "text": "Reprends tes trois éléments les plus importants : à quoi les reconnais-tu au quotidien ?" },
+        {
+          "art": "tabelle",
+          "spalten": ["Ce qui compte pour moi", "Je le reconnais au quotidien quand …"],
+          "breiten": [1.3, 3],
+          "zeilen": 3,
+          "beispiel": ["la loyauté devant les autres", "Quand le groupe se moque de moi, Jil prend ma défense – même quand je ne suis pas là."]
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Une amitié qui porte ou qui pèse ?",
+          "text": "Dans une amitié solide, on se sent bien la plupart du temps, on peut être honnête et voir d’autres personnes. Les disputes arrivent – l’important, c’est de se retrouver ensuite. Voici en revanche des signaux d’alerte :",
+          "punkte": [
+            "Contrôle : l’autre veut savoir en permanence où tu es et avec qui tu écris.",
+            "Culpabilité : on te le fait payer quand tu passes du temps avec d’autres.",
+            "Dénigrement : des blagues à tes dépens, suivies de « C’était pour rire ».",
+            "Pression : tu dois faire des choses que tu ne veux pas faire.",
+            "Sens unique : l’un donne toujours, l’autre ne fait que prendre."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Lis les situations. Comment les évalues-tu ?",
+          "hinweis": "Il n’y a pas toujours une seule bonne réponse. Demande-toi ce qu’il te faudrait pour que ce soit acceptable."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": ["ça va", "discutable", "signal d’alerte"],
+          "items": [
+            "Emma est déçue que tu n’aies pas le temps samedi, et elle te le dit franchement.",
+            "Yusuf t’écrit : « Si tu sors avec eux aujourd’hui, pas la peine de revenir demain. »",
+            "Nora veut voir tes conversations tous les soirs, « pour qu’il n’y ait pas de secrets ».",
+            "Devant la classe, Ben fait des blagues sur ton physique. Ensuite, il dit : « C’était pour rire. »",
+            "Vous vous êtes disputé·es et vous en reparlez calmement deux jours plus tard.",
+            "Tu parles toujours de tes problèmes – Tiago a à peine le temps de placer un mot."
+          ]
+        },
+        { "art": "aufgabe", "text": "Ta limite : qu’est-ce qui n’est pas acceptable pour toi dans une amitié – et que dirais-tu alors ?" },
+        {
+          "art": "satzanfaenge",
+          "linien": 2,
+          "items": ["Dans une amitié, ce n’est pas acceptable pour moi quand …", "Je dirais alors : …", "Je pourrais en parler avec …"]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "text": "Si tu te sens durablement contrôlé·e, menacé·e ou sous pression dans une amitié ou une relation amoureuse, parles-en à une personne de confiance – par exemple au SePAS. Anonyme et gratuit : Kanner- a Jugendtelefon 116 111."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes clarifient les valeurs qui comptent pour eux en amitié, distinguent les relations qui portent de celles qui pèsent et formulent une limite personnelle.",
+        "ablauf": [
+          "Entrée en matière (5 min) : « À quoi voit-on qu’une amitié est vraie ? » Noter les mots-clés, sans jugement.",
+          "Activités 1 et 2 en individuel (10 min), puis comparer à deux : où êtes-vous proches, où différents ?",
+          "Lire l’encadré. Préciser : une dispute n’est pas un signal d’alerte – le contrôle, le dénigrement et la pression, si.",
+          "Activité 3 en petits groupes (10 min) : évaluer et justifier. Demander : « Que faudrait-il pour que ce soit acceptable ? »",
+          "Activité 4 en individuel ; les limites ne sont pas lues à voix haute. Rappeler les personnes ressources du lycée."
+        ],
+        "hintergrund": "À l’adolescence, les pairs prennent une place centrale ; leur reconnaissance est vécue comme particulièrement gratifiante (Steinberg, 2014). Selon la théorie de l’autodétermination, l’être humain a besoin à la fois de lien et d’autonomie (Deci & Ryan, 2000). Une amitié solide répond aux deux ; le contrôle, le dénigrement et la culpabilité restreignent l’autonomie et ne sont souvent reconnus que tardivement. L’entraînement aux compétences de la TCD pour adolescents distingue trois objectifs dans les relations : obtenir ce que l’on demande, préserver la relation, garder le respect de soi (Rathus & Miller, 2015). Connaître ses valeurs aide à sentir quand une limite s’impose.",
+        "quellen": [
+          "Steinberg, L. (2014). Age of Opportunity: Lessons from the New Science of Adolescence. Boston: Houghton Mifflin Harcourt.",
+          "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268.",
+          "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Seulement les activités 1 et 3 ; lire les situations ensemble et les évaluer à main levée.",
+          "schwerer": "Écrire une situation entre « ça va » et « signal d’alerte » et la soumettre à la discussion."
+        },
+        "impulse": [
+          "Peut-on être trop loyal·e ?",
+          "Où s’arrête l’attention, où commence le contrôle ?",
+          "Pourquoi est-il si difficile de quitter une amitié qui fait du mal ?"
+        ],
+        "tipps": [
+          "Ne pas discuter de cas de la classe ; les prénoms de la fiche sont inventés.",
+          "Les signaux d’alerte valent aussi pour les relations amoureuses."
+        ],
+        "achtung": "Si quelqu’un évoque du contrôle, des menaces ou de la violence : ne pas approfondir en groupe, proposer un entretien individuel, informer le SePAS et la direction compétente (responsable). En cas de danger, agir aussitôt selon la procédure interne, ne pas laisser la personne seule."
+      }
+    }
+  },
+  {
+    "id": "streit-was-nun",
+    "bereich": "miteinander",
+    "thema": "konflikte",
+    "stufen": ["C2"],
+    "sozialform": ["einzeln", "gruppe"],
+    "dauer": "30 Min.",
+    "eldib": ["V-18", "SOZ-19", "SOZ-23"],
+    "schlagworte": ["Streit", "Konflikt", "Problemlösen", "Abwechseln", "Pause"],
+    "bild": "icon:messages",
+    "verwandt": ["konflikt-bruecke", "ich-sage-was-ich-fuehle"],
+    "de": {
+      "titel": "Streit – was nun?",
+      "untertitel": "Streit gibt es in jeder Klasse. Mit vier Schritten findet ihr eine Lösung.",
+      "bausteine": [
+        { "art": "aufgabe", "text": "Was passiert hier? Schau die Bilder genau an.", "symbole": ["lesen", "nachdenken"] },
+        {
+          "art": "comic",
+          "spalten": 3,
+          "felder": [
+            {
+              "figuren": ["figur:tom:wuetend", "figur:sami:wuetend"],
+              "requisit": "icon:ball-football",
+              "text": "Der Ball gehört mir.",
+              "sprecher": 0,
+              "untertitel": "Luca und Yusuf wollen beide den Ball."
+            },
+            {
+              "figuren": ["figur:tom:ruhig", "figur:sami:wuetend:verschraenkt"],
+              "text": "Stopp. Wir atmen erst mal.",
+              "sprecher": 0,
+              "untertitel": "Luca hält an."
+            },
+            {
+              "figuren": ["figur:tom:froh", "figur:sami:froh"],
+              "requisit": "icon:ball-football",
+              "sprecher": 1,
+              "untertitel": "Die beiden einigen sich."
+            }
+          ]
+        },
+        { "art": "aufgabe", "text": "Lies die vier Schritte laut.", "symbole": ["lesen", "sprechen"] },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 0,
+          "items": [
+            { "titel": "Anhalten", "text": "Stopp sagen. Tief atmen." },
+            { "titel": "Sagen, was los ist", "text": "„Ich will …, weil …“" },
+            { "titel": "Ideen sammeln", "text": "Abwechseln? Zusammen spielen?" },
+            { "titel": "Sich einigen", "text": "Eine Idee ausprobieren." }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Welche Ideen sind fair für beide? Kreuze an.",
+          "hinweis": "Schreibe eine Idee in die leere Sprechblase.",
+          "symbole": ["ankreuzen", "schreiben"]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "items": ["abwechseln", "den Ball wegnehmen", "zusammen spielen", "laut schreien", "auslosen, wer anfängt", "einen Erwachsenen fragen"]
+        },
+        { "art": "aufgabe", "text": "Und du? Denk an einen Streit von dir.", "symbole": ["nachdenken", "schreiben"] },
+        { "art": "satzanfaenge", "items": ["Wir haben gestritten wegen …", "Beim nächsten Streit mache ich zuerst: …"] }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder erkennen in einer Bildgeschichte einen typischen Streit, lernen vier einfache Schritte zur Lösung kennen und wählen faire Ideen aus.",
+        "ablauf": [
+          "Einstieg (5 Min.): „Worüber streitet ihr in der Pause am häufigsten?“ Beispiele sammeln, ohne Namen zu nennen.",
+          "Bildgeschichte anschauen (5 Min.): „Was ist das Problem? Wie fühlen sich die beiden?“",
+          "Die vier Schritte vorlesen und mit Gesten verbinden: Hand hoch (anhalten), Hand auf die Brust (sagen, was los ist), Finger zählen (Ideen), Handschlag (einigen).",
+          "Aufgabe 3 (10 Min.): Ideen ankreuzen, eine Einigung in die Sprechblase schreiben und vergleichen: Ist das fair für beide?",
+          "Aufgabe 4 (5 Min.): an einen eigenen Streit denken. Zum Schluss eine Szene zu zweit nachspielen – einmal ohne, einmal mit den vier Schritten."
+        ],
+        "hintergrund": "Kinder zwischen sechs und acht Jahren streiten oft um Dinge, Plätze und Spielregeln. Im Streit brauchen sie einfache, immer gleiche Schritte, die sie auch in der Aufregung abrufen können. Programme zur Gewaltprävention üben deshalb eine kurze Problemlöse-Folge: Problem benennen, Lösungen sammeln, eine faire Lösung wählen und ausprobieren (Cierpka, 2005). Auch das Dinosaurier-Programm für junge Kinder trainiert solche Schritte mit Bildern und Rollenspielen und stärkt damit soziale Problemlösefähigkeiten (Webster-Stratton & Reid, 2003). Das Anhalten steht bewusst am Anfang: Erst wenn die Aufregung sinkt, können Kinder zuhören und nach Ideen suchen.",
+        "quellen": [
+          "Cierpka, M. (Hrsg.) (2005). Faustlos – Wie Kinder Konflikte gewaltfrei lösen lernen. Freiburg: Herder.",
+          "Webster-Stratton, C. & Reid, M. J. (2003). Treating conduct problems and strengthening social and emotional competence in young children: The Dina Dinosaur treatment program. Journal of Emotional and Behavioral Disorders, 11(3), 130–143."
+        ],
+        "differenzierung": {
+          "leichter": "Bilder und Schritte mündlich besprechen; die Ideen vorlesen, das Kind zeigt auf die passenden.",
+          "schwerer": "Eine eigene Bildgeschichte zu einem Streit malen und die vier Schritte darunter schreiben."
+        },
+        "impulse": ["Was hilft dir, im Streit ruhig zu werden?", "Woran merkst du, dass eine Lösung fair ist?", "Wann holst du einen Erwachsenen?"],
+        "tipps": [
+          "Die vier Schritte mit den Gesten als Plakat in der Klasse und in der Maison Relais aufhängen.",
+          "Im nächsten echten Streit fragen: „Bei welchem Schritt seid ihr gerade?“"
+        ],
+        "achtung": "Wenn Streit regelmäßig in Gewalt endet oder immer dasselbe Kind trifft, genauer hinschauen: Es kann sich um Mobbing handeln. Dann die zuständige Leitung (Responsable) informieren.",
+        "material": "Optional ein Ball und eine Sanduhr zum Nachspielen"
+      }
+    }
+  },
+  {
+    "id": "konflikt-bruecke",
+    "bereich": "miteinander",
+    "thema": "konflikte",
+    "stufen": ["C3", "C4"],
+    "sozialform": ["einzeln", "gruppe"],
+    "dauer": "45 Min.",
+    "eldib": ["V-18", "K-29", "SOZ-34", "K-21"],
+    "schlagworte": ["Konflikt", "Problemlösen", "Lösungen finden", "Folgen bedenken", "Fairness"],
+    "bild": "motiv:bruecke",
+    "verwandt": ["streit-was-nun", "konflikte-loesen", "freundschafts-rezept"],
+    "de": {
+      "titel": "Die Konflikt-Brücke",
+      "untertitel": "Bei einem Streit stehen zwei Seiten gegenüber. Eine gute Lösung ist wie eine Brücke: Beide können darübergehen.",
+      "bausteine": [
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:2",
+          "links": [
+            {
+              "art": "bild",
+              "bild": "motiv:bruecke",
+              "groesse": "l",
+              "text": "Links und rechts stehen die beiden Seiten. Die Brücke ist eure Lösung."
+            }
+          ],
+          "rechts": [
+            {
+              "art": "schritte",
+              "linien": 0,
+              "items": [
+                { "titel": "Beide Seiten verstehen", "text": "Was wollen beide? Wie geht es ihnen?" },
+                { "titel": "Ideen sammeln", "text": "So viele wie möglich – erst mal ohne Bewertung." },
+                { "titel": "Folgen bedenken", "text": "Was passiert dann? Für wen ist das gut?" },
+                { "titel": "Die fairste Idee wählen", "text": "Mit welcher Idee können beide leben?" }
+              ]
+            }
+          ]
+        },
+        {
+          "art": "geschichte",
+          "titel": "Ein Ball, zwei Gruppen",
+          "text": "In der Pause gibt es nur noch einen Basketball. Jil, Mathis und Nora wollen Körbe werfen. Pol, Ana und Elias wollen ein Spiel mit zwei Mannschaften. Beide Gruppen ziehen am Ball. Jil ruft: „Wir waren zuerst da.“ Pol ruft zurück: „Ihr habt ihn doch jeden Tag.“ Dann klingelt es, und alle gehen wütend in die Klasse.",
+          "bild": "figur:lea:wuetend"
+        },
+        { "art": "aufgabe", "text": "Schritt 1: Was wollen die beiden Gruppen – und warum? Wie fühlen sie sich?", "symbole": ["lesen", "schreiben"] },
+        {
+          "art": "spalten",
+          "links": [{ "art": "satzanfaenge", "items": ["Jils Gruppe will …", "weil …", "Sie fühlt sich …"], "linien": 2 }],
+          "rechts": [{ "art": "satzanfaenge", "items": ["Pols Gruppe will …", "weil …", "Sie fühlt sich …"], "linien": 2 }]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schritte 2 und 3: Sammle mindestens vier Brücken. Was passiert jeweils? Ist es fair für beide?",
+          "hinweis": "Schreibe in die letzte Spalte „ja“, „teils“ oder „nein“.",
+          "symbole": ["gruppe", "schreiben"]
+        },
+        {
+          "art": "tabelle",
+          "spalten": ["Idee für eine Brücke", "Was passiert dann?", "Fair für beide?"],
+          "breiten": [2.3, 2.3, 1],
+          "zeilen": 4,
+          "beispiel": ["Abwechseln: zehn Minuten Körbe, dann zehn Minuten Spiel.", "Beide kommen dran, aber keiner hat die ganze Pause.", "ja"]
+        },
+        { "art": "aufgabe", "text": "Schritt 4: Welche Brücke ist am fairsten? Begründe.", "symbole": ["nachdenken", "schreiben"] },
+        { "art": "linien", "anzahl": 3 },
+        { "art": "aufgabe", "text": "Denk an einen eigenen Streit. Wie könnte eure Brücke aussehen?", "symbole": ["nachdenken", "schreiben"] },
+        { "art": "satzanfaenge", "items": ["Ich wollte …", "Die andere Seite wollte …", "Unsere Brücke könnte sein: …"], "linien": 2 }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder lernen ein Problemlöse-Modell in vier Schritten kennen, versetzen sich in beide Seiten eines Konflikts, sammeln Lösungen, schätzen deren Folgen ab und wählen eine faire Lösung.",
+        "ablauf": [
+          "Einstieg (5 Min.): Das Brückenbild zeigen: „Zwei Gruppen stehen an verschiedenen Ufern. Was brauchen sie, um zusammenzukommen?“",
+          "Geschichte vorlesen, Aufgabe 1 zu zweit (10 Min.). Nachfragen: „Warum ist es Jils Gruppe so wichtig? Und Pols Gruppe?“",
+          "Aufgabe 2 in Kleingruppen (15 Min.): Ideen zuerst ohne Bewertung sammeln, dann Folgen und Fairness prüfen.",
+          "Aufgabe 3: Jede Gruppe stellt ihre fairste Brücke vor. Die Klasse prüft: Können beide Seiten damit leben?",
+          "Aufgabe 4 in Einzelarbeit, Austausch freiwillig. Das Brückenbild für echte Konflikte weiterverwenden, etwa im Klassenrat."
+        ],
+        "hintergrund": "Das Programm „I Can Problem Solve“ zeigt, dass schon Kinder im Grundschulalter Denkfertigkeiten für Konflikte lernen können: mehrere Lösungen finden, Folgen abschätzen und die Gefühle anderer berücksichtigen (Shure, 1992). Die Lehrperson gibt dabei keine richtige Lösung vor, sondern regt das Denken an – Kinder lernen, wie sie denken, nicht was sie denken sollen. Ähnliche Problemlöse-Schritte enthält das PATHS-Curriculum, das emotionale und soziale Kompetenzen von Schulkindern nachweislich stärkt (Greenberg et al., 1995). Das Bild der Brücke macht sichtbar, dass eine tragfähige Lösung beide Seiten verbinden muss.",
+        "quellen": [
+          "Shure, M. B. (1992). I Can Problem Solve (ICPS). Champaign, IL: Research Press.",
+          "Greenberg, M. T., Kusché, C. A., Cook, E. T. & Quamma, J. P. (1995). Promoting emotional competence in school-aged children: The effects of the PATHS curriculum. Development and Psychopathology, 7(1), 117–136."
+        ],
+        "differenzierung": {
+          "leichter": "Nur zwei Ideen in die Tabelle schreiben; die Spalte „Was passiert dann?“ mündlich besprechen.",
+          "schwerer": "Eine Brücke für einen Konflikt entwerfen, der die ganze Klasse betrifft (z. B. Nutzung des Fußballplatzes), und im Klassenrat vorschlagen."
+        },
+        "impulse": [
+          "Gibt es Streit, bei dem keine Brücke möglich ist? Was dann?",
+          "Warum ist „Wer zuerst da war, gewinnt“ nicht immer fair?",
+          "Wer kann helfen, eine Brücke zu bauen?"
+        ],
+        "tipps": [
+          "Beim Sammeln nicht sofort bewerten: Auch ungewöhnliche Ideen führen oft zu guten Lösungen.",
+          "Die vier Schritte mit dem Brückenbild als Plakat aufhängen."
+        ],
+        "achtung": "Wenn ein Konflikt immer wieder dieselben Kinder trifft oder mit Drohungen und Gewalt verbunden ist, reicht Problemlösen nicht: die zuständige Leitung (Responsable) informieren und das weitere Vorgehen gemeinsam klären.",
+        "material": "Tafel oder Plakat mit dem Brückenbild"
+      }
+    }
+  },
+  {
+    "id": "konflikte-loesen",
+    "bereich": "miteinander",
+    "thema": "konflikte",
+    "stufen": ["ES"],
+    "sozialform": ["einzeln", "gruppe"],
+    "dauer": "45–50 Min.",
+    "eldib": ["K-33", "V-33", "SOZ-34", "K-31"],
+    "schlagworte": ["Konflikt", "Verhandeln", "Harvard-Konzept", "Interessen", "Positionen", "Gruppenarbeit"],
+    "bild": "motiv:eisberg",
+    "verwandt": ["konflikt-bruecke", "klar-sagen-was-ich-brauche"],
+    "de": {
+      "titel": "Konflikte lösen: Interessen statt Positionen",
+      "untertitel": "Wer nur auf seiner Forderung beharrt, landet schnell in einer Sackgasse. Wer fragt, was dahintersteckt, findet oft eine Lösung für beide.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Das Harvard-Konzept",
+          "text": "Die Verhandlungsforscher Roger Fisher und William Ury haben vier Grundsätze beschrieben, mit denen sich Konflikte fair lösen lassen:",
+          "punkte": [
+            "Menschen und Problem trennen: hart in der Sache, respektvoll zur Person.",
+            "Interessen statt Positionen: Nicht die Forderung zählt, sondern das Warum dahinter.",
+            "Optionen entwickeln: mehrere Lösungen sammeln, bei denen beide gewinnen.",
+            "Faire Kriterien nutzen: Maßstäbe, die beide Seiten anerkennen."
+          ]
+        },
+        {
+          "art": "geschichte",
+          "titel": "Die Präsentation",
+          "text": "Rafael und Leonor müssen in einer Woche eine Präsentation in Geschichte halten. Rafael will alles am Samstag an einem Stück erledigen. Leonor besteht darauf, ab sofort jeden Tag nach der Schule eine Stunde daran zu arbeiten. Nach zehn Minuten wird es laut: Rafael nennt Leonor „kontrollsüchtig“, Leonor nennt Rafael „unzuverlässig“. Keiner gibt nach.",
+          "bild": "figur:ben:wuetend:verschraenkt"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Leonors Position und Interessen sind als Beispiel vorgegeben. Fülle den Eisberg für Rafael aus.",
+          "hinweis": "Interessen sind Bedürfnisse, Sorgen und Wünsche. Du darfst Vermutungen anstellen – was könnte ihm wichtig sein?"
+        },
+        {
+          "art": "eisberg",
+          "oben": "Position: Was Rafael fordert",
+          "unten": "Interessen: Warum es ihm wichtig sein könnte",
+          "beispielOben": "„Jeden Tag eine Stunde.“ (Leonor)",
+          "beispielUnten": "Sicherheit, keine Panik vor der Abgabe, eine gute Note (Leonor)"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Entwickelt Optionen, bei denen beide gewinnen.",
+          "hinweis": "Erst sammeln, dann bewerten. Eine gute Option erfüllt Interessen von beiden Seiten."
+        },
+        {
+          "art": "tabelle",
+          "spalten": ["Option", "Was hat Rafael davon?", "Was hat Leonor davon?"],
+          "breiten": [2.4, 1.5, 1.5],
+          "zeilen": 3,
+          "beispiel": [
+            "Aufgaben aufteilen, jeder arbeitet, wann er will. Mittwoch: Zwischenstand per Chat.",
+            "freie Abende unter der Woche",
+            "Sicherheit durch den Zwischenstand"
+          ]
+        },
+        { "art": "aufgabe", "text": "Welche Kriterien sind fair, um zwischen den Optionen zu entscheiden? Kreuze an." },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "items": [
+            "Beide übernehmen gleich viel Arbeit.",
+            "Wer lauter ist, entscheidet.",
+            "Der Abgabetermin der Lehrperson wird sicher eingehalten.",
+            "Wer die bessere Note braucht, bestimmt allein.",
+            "Die Lösung passt zu den Terminen von beiden.",
+            "Wer mehr Freunde in der Klasse hat, hat recht."
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Fragen, die Interessen sichtbar machen",
+          "punkte": ["„Was ist dir daran wichtig?“", "„Was befürchtest du, wenn wir es anders machen?“", "„Was bräuchtest du, um zustimmen zu können?“"]
+        },
+        { "art": "aufgabe", "text": "Nimm einen eigenen Konflikt – in der Familie, mit Freunden oder in der Schule – und wende die Grundsätze an." },
+        {
+          "art": "satzanfaenge",
+          "linien": 2,
+          "items": [
+            "Meine Position: …",
+            "Meine Interessen dahinter: …",
+            "Die Interessen der anderen Seite könnten sein: …",
+            "Eine Option, bei der beide gewinnen: …"
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen unterscheiden Positionen von Interessen, analysieren einen Konflikt mit dem Eisberg-Modell, entwickeln Optionen zum beiderseitigen Vorteil und nutzen faire Kriterien für eine Entscheidung.",
+        "ablauf": [
+          "Einstieg (5 Min.): Zwei Schwestern streiten um die letzte Orange und teilen sie in der Mitte. Die eine presst Saft, die andere braucht nur die Schale für einen Kuchen. „Was wäre die bessere Lösung gewesen?“",
+          "Info-Kasten lesen, die vier Grundsätze an einem Alltagsbeispiel klären (5 Min.).",
+          "Fall lesen, Aufgabe 1 zu zweit (10 Min.). Nachfragen: „Woher wisst ihr das? Wie könnte man es herausfinden?“",
+          "Aufgabe 2 und 3 in Kleingruppen (10 Min.): Optionen sammeln, dann mit Kriterien prüfen.",
+          "Aufgabe 4 in Einzelarbeit (10 Min.); im Plenum nur freiwillige, anonymisierte Beispiele."
+        ],
+        "hintergrund": "Das Harvard-Konzept (Fisher & Ury, 1981) beschreibt sachbezogenes Verhandeln in vier Grundsätzen: Menschen und Probleme getrennt behandeln, auf Interessen statt auf Positionen achten, Optionen zum beiderseitigen Vorteil entwickeln und neutrale Beurteilungskriterien anwenden. Positionen sind die sichtbaren Forderungen, Interessen die Bedürfnisse, Sorgen und Wünsche dahinter. Weil sich hinter gegensätzlichen Positionen oft vereinbare Interessen verbergen, eröffnet der Blick unter die Oberfläche neue Lösungen. Ähnlich unterscheidet die Gewaltfreie Kommunikation zwischen Bedürfnissen und den Strategien, mit denen man sie erfüllen will (Rosenberg, 2001).",
+        "quellen": [
+          "Fisher, R. & Ury, W. (1981). Getting to Yes. Boston: Houghton Mifflin.",
+          "Rosenberg, M. B. (2001). Gewaltfreie Kommunikation. Paderborn: Junfermann."
+        ],
+        "differenzierung": {
+          "leichter": "Aufgabe 1 und 2 im Tandem; mögliche Interessen als Hilfe an die Tafel schreiben (Zeit, Sicherheit, Anerkennung, Selbstbestimmung).",
+          "schwerer": "Zusätzlich klären: Was tun Rafael und Leonor, wenn sie sich nicht einigen? Warum ist eine Einigung trotzdem besser?"
+        },
+        "impulse": [
+          "Woran erkennt man, dass jemand eine Position verteidigt?",
+          "Welche Fragen helfen, Interessen herauszufinden?",
+          "Wann ist ein fauler Kompromiss schlechter als keine Einigung?"
+        ],
+        "tipps": [
+          "Die Frage „Warum ist dir das wichtig?“ üben – neugierig, nicht verhörend.",
+          "Das Modell bei echten Konflikten nutzen, etwa im Klassenrat oder bei Gruppenarbeiten."
+        ],
+        "achtung": "Das Modell setzt ein ungefähres Kräftegleichgewicht voraus. Bei Mobbing, Drohungen oder Gewalt wird nicht verhandelt: Betroffene schützen und die zuständige Leitung (Responsable) informieren.",
+        "material": "Optional eine Orange für den Einstieg"
+      }
+    },
+    "fr": {
+      "titel": "Conflits : des positions aux intérêts",
+      "untertitel": "Qui s’accroche à sa demande finit vite dans une impasse. Qui cherche ce qu’il y a derrière trouve souvent une solution pour les deux.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "La méthode de Harvard",
+          "text": "Les chercheurs en négociation Roger Fisher et William Ury ont formulé quatre principes pour résoudre les conflits de manière équitable :",
+          "punkte": [
+            "Séparer les personnes du problème : ferme sur le fond, respectueux envers la personne.",
+            "Les intérêts plutôt que les positions : ce qui compte, ce n’est pas la demande, mais le pourquoi.",
+            "Inventer des options : chercher plusieurs solutions où chacun·e gagne.",
+            "Utiliser des critères équitables : des repères que les deux parties acceptent."
+          ]
+        },
+        {
+          "art": "geschichte",
+          "titel": "L’exposé",
+          "text": "Rafael et Leonor doivent présenter un exposé d’histoire dans une semaine. Rafael veut tout faire samedi, d’une traite. Leonor insiste pour y travailler une heure chaque jour après les cours, dès aujourd’hui. Au bout de dix minutes, le ton monte : Rafael traite Leonor de « maniaque du contrôle », Leonor dit que Rafael n’est « pas fiable ». Personne ne cède.",
+          "bild": "figur:ben:wuetend:verschraenkt"
+        },
+        {
+          "art": "aufgabe",
+          "text": "La position et les intérêts de Leonor sont donnés en exemple. Complète l’iceberg pour Rafael.",
+          "hinweis": "Les intérêts, ce sont des besoins, des craintes et des souhaits. Tu peux faire des hypothèses : qu’est-ce qui pourrait compter pour lui ?"
+        },
+        {
+          "art": "eisberg",
+          "oben": "Position : ce que Rafael exige",
+          "unten": "Intérêts : pourquoi cela pourrait compter pour lui",
+          "beispielOben": "« Une heure par jour. » (Leonor)",
+          "beispielUnten": "sécurité, pas de panique avant l’échéance, une bonne note (Leonor)"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Imaginez des options où les deux sont gagnants.",
+          "hinweis": "D’abord rassembler, ensuite évaluer. Une bonne option répond aux intérêts des deux côtés."
+        },
+        {
+          "art": "tabelle",
+          "spalten": ["Option", "Ce que Rafael y gagne", "Ce que Leonor y gagne"],
+          "breiten": [2.4, 1.5, 1.5],
+          "zeilen": 3,
+          "beispiel": [
+            "Se répartir le travail, chacun avance quand il veut. Mercredi : point d’étape par message.",
+            "des soirées libres en semaine",
+            "la sécurité grâce au point d’étape"
+          ]
+        },
+        { "art": "aufgabe", "text": "Quels critères sont équitables pour choisir entre les options ? Coche." },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "items": [
+            "Les deux font autant de travail.",
+            "Celui qui parle le plus fort décide.",
+            "La date de remise fixée par l’enseignant·e est respectée.",
+            "Celui qui a le plus besoin d’une bonne note décide seul.",
+            "La solution est compatible avec l’emploi du temps des deux.",
+            "Celui qui a le plus d’amis dans la classe a raison."
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Des questions pour faire apparaître les intérêts",
+          "punkte": [
+            "« Qu’est-ce qui compte pour toi là-dedans ? »",
+            "« Qu’est-ce que tu crains si on fait autrement ? »",
+            "« De quoi aurais-tu besoin pour pouvoir dire oui ? »"
+          ]
+        },
+        { "art": "aufgabe", "text": "Choisis un conflit personnel – en famille, entre ami·es ou à l’école – et applique les principes." },
+        {
+          "art": "satzanfaenge",
+          "linien": 2,
+          "items": [
+            "Ma position : …",
+            "Mes intérêts derrière cette position : …",
+            "Les intérêts de l’autre pourraient être : …",
+            "Une option où nous gagnons tous les deux : …"
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes distinguent positions et intérêts, analysent un conflit avec le modèle de l’iceberg, imaginent des options à bénéfice mutuel et s’appuient sur des critères équitables pour décider.",
+        "ablauf": [
+          "Entrée en matière (5 min) : deux sœurs se disputent la dernière orange et la coupent en deux. L’une en presse le jus, l’autre n’a besoin que de l’écorce pour un gâteau. « Quelle aurait été la meilleure solution ? »",
+          "Lire l’encadré, clarifier les quatre principes à l’aide d’un exemple du quotidien (5 min).",
+          "Lire le cas, activité 1 à deux (10 min). Demander : « Comment le savez-vous ? Comment pourrait-on le découvrir ? »",
+          "Activités 2 et 3 en petits groupes (10 min) : trouver des options, puis les passer au crible des critères.",
+          "Activité 4 en individuel (10 min) ; en plénière, seulement des exemples volontaires et anonymisés."
+        ],
+        "hintergrund": "La méthode de Harvard (Fisher & Ury, 1981) décrit la négociation raisonnée en quatre principes : traiter séparément les personnes et le problème, se concentrer sur les intérêts plutôt que sur les positions, imaginer des options à bénéfice mutuel et recourir à des critères objectifs. Les positions sont les demandes visibles, les intérêts les besoins, craintes et souhaits qui se cachent derrière. Comme des positions opposées recouvrent souvent des intérêts compatibles, regarder sous la surface ouvre de nouvelles solutions. De même, la communication non violente distingue les besoins des stratégies par lesquelles on cherche à les satisfaire (Rosenberg, 2001).",
+        "quellen": [
+          "Fisher, R. & Ury, W. (1981). Getting to Yes. Boston: Houghton Mifflin.",
+          "Rosenberg, M. B. (2001). Gewaltfreie Kommunikation. Paderborn: Junfermann."
+        ],
+        "differenzierung": {
+          "leichter": "Activités 1 et 2 en binôme ; noter au tableau des intérêts possibles (temps, sécurité, reconnaissance, autonomie).",
+          "schwerer": "Préciser en plus : que font Rafael et Leonor s’ils ne trouvent pas d’accord ? Pourquoi un accord reste-t-il préférable ?"
+        },
+        "impulse": [
+          "À quoi reconnaît-on que quelqu’un défend une position ?",
+          "Quelles questions aident à découvrir les intérêts ?",
+          "Quand un mauvais compromis est-il pire que pas d’accord du tout ?"
+        ],
+        "tipps": [
+          "S’entraîner à la question « Pourquoi est-ce important pour toi ? » – avec curiosité, sans interrogatoire.",
+          "Utiliser le modèle pour de vrais conflits, par exemple au conseil de classe ou en travail de groupe."
+        ],
+        "achtung": "Le modèle suppose un rapport de force à peu près équilibré. En cas de harcèlement, de menaces ou de violence, on ne négocie pas : protéger la personne concernée et informer la direction compétente (responsable).",
+        "material": "En option : une orange pour l’entrée en matière"
+      }
+    }
+  },
+  {
+    "id": "ich-sage-was-ich-fuehle",
+    "bereich": "miteinander",
+    "thema": "mitteilen",
+    "stufen": ["C2"],
+    "sozialform": ["einzeln", "gruppe"],
+    "dauer": "30 Min.",
+    "eldib": ["K-26", "K-16", "K-14"],
+    "schlagworte": ["Gefühle mitteilen", "Ich-Sätze", "Gespräch", "Gefühlswörter"],
+    "bild": "icon:message-circle",
+    "verwandt": ["ich-botschaften", "streit-was-nun"],
+    "de": {
+      "titel": "Ich sage, was ich fühle",
+      "untertitel": "Andere können nicht in dich hineinschauen. Wenn du sagst, was du fühlst, verstehen sie dich besser.",
+      "bausteine": [
+        { "art": "aufgabe", "text": "Lies die Ich-Sätze. Sprich sie nach.", "symbole": ["lesen", "sprechen"] },
+        {
+          "art": "comic",
+          "spalten": 2,
+          "felder": [
+            {
+              "figuren": ["figur:sami:wuetend", "figur:tom:ueberrascht"],
+              "requisit": "icon:puzzle",
+              "text": "Ich bin wütend, weil du mein Puzzle kaputt gemacht hast.",
+              "sprecher": 0
+            },
+            { "figuren": ["figur:amira:traurig", "figur:noah:neutral"], "text": "Ich bin traurig, weil ich nicht mitspielen darf.", "sprecher": 0 }
+          ]
+        },
+        { "art": "aufgabe", "text": "Und du? Ergänze die Sätze.", "symbole": ["schreiben"] },
+        { "art": "satzanfaenge", "items": ["Ich bin wütend, weil …", "Ich bin traurig, weil …", "Ich freue mich, weil …"] },
+        {
+          "art": "aufgabe",
+          "text": "Übt zu zweit. Was antwortet Diogo? Was sagt Emma dann?",
+          "hinweis": "Zum Beispiel: „Das wusste ich nicht. Spielst du morgen mit?“",
+          "symbole": ["partner", "sprechen"]
+        },
+        {
+          "art": "dialog",
+          "zeilen": [{ "wer": "Emma", "text": "Ich bin traurig, weil du in der Pause nicht mit mir spielst." }, { "wer": "Diogo" }, { "wer": "Emma" }]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder drücken Gefühle in einfachen Ich-Sätzen aus („Ich bin …, weil …“) und üben, auf einen Ich-Satz freundlich zu antworten.",
+        "ablauf": [
+          "Einstieg (5 Min.): Ein Kind zeigt ein Gefühl pantomimisch, die anderen raten. Frage: „Was hilft mehr – raten oder sagen?“",
+          "Bildgeschichte (5 Min.): Die Ich-Sätze gemeinsam lesen und mit passender Stimme nachsprechen.",
+          "Aufgabe 2 (10 Min.): Die Kinder ergänzen die Sätze. Vorlesen nur freiwillig.",
+          "Aufgabe 3 zu zweit (10 Min.): Emmas Satz lesen, das Gespräch zu Ende schreiben, dann mit vertauschten Rollen spielen.",
+          "Im Alltag aufgreifen: Bei Streit fragen: „Kannst du es als Ich-Satz sagen?“"
+        ],
+        "hintergrund": "Wer Gefühle benennen kann, kann sie leichter steuern und anderen mitteilen. Emotionale Kompetenz umfasst neben dem Erkennen von Gefühlen auch ihren angemessenen Ausdruck; sie hängt eng mit gelingenden Beziehungen zu Gleichaltrigen zusammen (Petermann & Wiedebusch, 2016). Im Grundschulalter wächst der Gefühlswortschatz stark – vor allem, wenn Erwachsene Gefühle benennen und zum Sprechen darüber einladen. Brackett (2019) beschreibt das Erkennen, Benennen und Ausdrücken von Gefühlen als lernbare Fähigkeiten, die sich durch Übung im Alltag festigen. Der Satz „Ich bin …, weil …“ verbindet Gefühl und Anlass und ist eine Vorstufe der Ich-Botschaft.",
+        "quellen": [
+          "Petermann, F. & Wiedebusch, S. (2016). Emotionale Kompetenz bei Kindern (3. Aufl.). Göttingen: Hogrefe.",
+          "Brackett, M. A. (2019). Permission to Feel. New York: Celadon."
+        ],
+        "differenzierung": {
+          "leichter": "Die Sätze mündlich ergänzen, die Lehrperson schreibt mit. Gefühlsgesichter als Bildkarten anbieten.",
+          "schwerer": "Weitere Gefühlswörter sammeln (enttäuscht, stolz, aufgeregt, beleidigt) und eigene Ich-Sätze damit bilden."
+        },
+        "impulse": [
+          "Wem sagst du, dass du traurig bist?",
+          "Was ist leichter: sagen, dass du dich freust, oder sagen, dass du wütend bist?",
+          "Wie fühlt es sich an, wenn jemand deinen Ich-Satz ernst nimmt?"
+        ],
+        "tipps": [
+          "Selbst Ich-Sätze vormachen: „Ich bin gerade ungeduldig, weil es so laut ist.“",
+          "Kein Kind zum Sprechen drängen: Manche brauchen Zeit, bevor sie über Gefühle reden."
+        ],
+        "achtung": "Wenn ein Kind in den Sätzen von Angst, Gewalt oder großen Sorgen zu Hause schreibt: nicht im Plenum vertiefen, später im Einzelgespräch nachfragen und die zuständige Leitung (Responsable) informieren.",
+        "material": "Optional Gefühlsgesichter als Bildkarten"
+      }
+    }
+  },
+  {
+    "id": "ich-botschaften",
+    "bereich": "miteinander",
+    "thema": "mitteilen",
+    "stufen": ["C3", "C4"],
+    "sozialform": ["einzeln", "gruppe"],
+    "dauer": "45 Min.",
+    "eldib": ["K-26", "K-31", "V-26"],
+    "schlagworte": ["Ich-Botschaft", "Du-Botschaft", "Gefühle mitteilen", "Streit", "Kommunikation"],
+    "bild": "icon:message-2",
+    "verwandt": ["ich-sage-was-ich-fuehle", "klar-sagen-was-ich-brauche"],
+    "de": {
+      "titel": "Ich-Botschaften in drei Teilen",
+      "untertitel": "Vorwürfe machen einen Streit meist schlimmer. Eine Ich-Botschaft sagt klar, was dich stört – ohne den anderen anzugreifen.",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "In der Hausaufgabenhilfe",
+          "text": "Nora rechnet in der Hausaufgabenhilfe. Liam nimmt schon zum dritten Mal ihr Lineal, ohne zu fragen. Nora ruft: „Du nervst. Immer nimmst du meine Sachen.“ Liam ruft zurück: „Stell dich nicht so an.“ Jetzt sind beide sauer, und keiner rechnet mehr.",
+          "bild": "figur:mia:wuetend"
+        },
+        {
+          "art": "aufgabe",
+          "text": "So hätte Nora es mit einer Ich-Botschaft sagen können. Lies die drei Teile.",
+          "hinweis": "Sag genau, was passiert ist: ohne Schimpfwörter, ohne „immer“ und „nie“.",
+          "symbole": ["lesen"]
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 0,
+          "items": [
+            { "titel": "Verhalten", "text": "„Wenn du mein Lineal nimmst, ohne zu fragen, …“" },
+            { "titel": "Gefühl", "text": "„… ärgere ich mich.“" },
+            { "titel": "Wunsch", "text": "„Ich wünsche mir, dass du vorher fragst.“" }
+          ]
+        },
+        { "art": "aufgabe", "text": "Du-Botschaft oder Ich-Botschaft? Kreuze an.", "symbole": ["lesen", "ankreuzen"] },
+        {
+          "art": "einschaetzung",
+          "optionen": ["Du-Botschaft", "Ich-Botschaft"],
+          "items": [
+            "Du bist so gemein.",
+            "Wenn du mich unterbrichst, verliere ich den Faden. Bitte lass mich ausreden.",
+            "Immer musst du dich vordrängeln.",
+            "Ich bin traurig, wenn du mich auslachst. Ich wünsche mir, dass du damit aufhörst.",
+            "Du hörst mir nie zu.",
+            "Wenn ihr so laut seid, kann ich mich nicht konzentrieren. Könnt ihr leiser sein?"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Verwandle diese zwei Du-Botschaften in Ich-Botschaften.",
+          "symbole": ["schreiben"],
+          "hinweis": "Die Gefühlswörter helfen dir."
+        },
+        {
+          "art": "wortspeicher",
+          "titel": "Gefühlswörter",
+          "items": ["wütend", "genervt", "enttäuscht", "traurig", "verletzt", "unsicher", "gestresst", "ungeduldig", "hilflos"]
+        },
+        {
+          "art": "spalten",
+          "links": [
+            { "art": "text", "text": "„Immer musst du dich vordrängeln.“" },
+            { "art": "satzanfaenge", "linien": 2, "items": ["Wenn du …", "bin ich …", "Ich wünsche mir, dass …"] }
+          ],
+          "rechts": [
+            { "art": "text", "text": "„Du hörst mir nie zu.“" },
+            { "art": "satzanfaenge", "linien": 2, "items": ["Wenn du …", "bin ich …", "Ich wünsche mir, dass …"] }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Denk an eine echte Situation, die dich stört. Schreibe deine Ich-Botschaft und übe sie mit einem Partner.",
+          "symbole": ["schreiben", "partner"]
+        },
+        { "art": "satzanfaenge", "items": ["Wenn du …", "bin ich …", "Ich wünsche mir, dass …", "Mein Partner antwortet: …"] },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "text": "Auch die Stimme spricht mit. Sag deine Ich-Botschaft ruhig und deutlich und schau die andere Person dabei an."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder unterscheiden Du- und Ich-Botschaften, kennen die drei Teile einer Ich-Botschaft (Verhalten, Gefühl, Wunsch) und formulieren Vorwürfe in Ich-Botschaften um.",
+        "ablauf": [
+          "Einstieg (5 Min.): Geschichte vorlesen. Fragen: „Was hat Nora gesagt? Wie hat Liam reagiert? Warum ist es schlimmer geworden?“",
+          "Die drei Teile an der Tafel zeigen und Noras Ich-Botschaft laut sprechen – einmal wütend, einmal ruhig. Was wirkt besser?",
+          "Aufgabe 2 allein (5 Min.), dann vergleichen. Merkmale von Du-Botschaften sammeln: Schimpfwörter, „immer“, „nie“.",
+          "Aufgabe 3 zu zweit (10 Min.): Du-Botschaften umwandeln, einige Ergebnisse vorlesen.",
+          "Aufgabe 4 (10 Min.): eigene Ich-Botschaft schreiben und im Rollenspiel üben. Der Partner hört zu und antwortet."
+        ],
+        "hintergrund": "Thomas Gordon (1972) beschrieb die Ich-Botschaft als Gegenstück zur Du-Botschaft: Du-Botschaften („Du bist so gemein“) enthalten Urteile und Vorwürfe und lösen oft Verteidigung oder Gegenangriff aus. Ich-Botschaften beschreiben dagegen das Verhalten ohne Wertung, benennen das eigene Gefühl und machen deutlich, was man braucht. In Gordons ursprünglicher Form gehört auch die konkrete Auswirkung des Verhaltens dazu; für die Schule hat sich die einfache Dreierform Verhalten – Gefühl – Wunsch bewährt. Voraussetzung ist, dass Kinder ihre Gefühle erkennen und benennen können (Petermann & Wiedebusch, 2016).",
+        "quellen": [
+          "Gordon, T. (1972). Familienkonferenz. Hamburg: Hoffmann und Campe.",
+          "Petermann, F. & Wiedebusch, S. (2016). Emotionale Kompetenz bei Kindern (3. Aufl.). Göttingen: Hogrefe."
+        ],
+        "differenzierung": {
+          "leichter": "Gefühlswörter und den Satz „Ich wünsche mir, dass …“ an die Tafel schreiben. Nur eine Du-Botschaft umwandeln.",
+          "schwerer": "Aufschreiben, was der andere antworten könnte – und wie man reagiert, wenn er die Ich-Botschaft nicht ernst nimmt."
+        },
+        "impulse": [
+          "Warum sind „immer“ und „nie“ im Streit gefährlich?",
+          "Wann fällt es dir schwer, eine Ich-Botschaft zu sagen?",
+          "Was kannst du tun, wenn der andere trotzdem weitermacht?"
+        ],
+        "tipps": [
+          "Selbst Ich-Botschaften verwenden: „Wenn alle gleichzeitig reden, verstehe ich niemanden. Ich wünsche mir, dass ihr euch meldet.“",
+          "Nicht auf dem genauen Wortlaut bestehen: Es geht um die Haltung, nicht um eine Formel."
+        ],
+        "achtung": "Ich-Botschaften helfen nicht gegen Mobbing oder Gewalt. Wird ein Kind wiederholt angegriffen, braucht es den Schutz Erwachsener: die zuständige Leitung (Responsable) informieren."
+      }
+    }
+  },
+  {
+    "id": "klar-sagen-was-ich-brauche",
+    "bereich": "miteinander",
+    "thema": "mitteilen",
+    "stufen": ["ES"],
+    "sozialform": ["einzeln", "gruppe"],
+    "dauer": "45–50 Min.",
+    "eldib": ["K-30", "K-31", "KOG-58", "K-26"],
+    "schlagworte": ["Gewaltfreie Kommunikation", "Bedürfnisse", "Bitte", "Beobachtung", "Gefühle mitteilen"],
+    "bild": "icon:bubble",
+    "verwandt": ["ich-botschaften", "konflikte-loesen", "was-mir-in-freundschaften-wichtig-ist"],
+    "de": {
+      "titel": "Klar sagen, was ich brauche",
+      "untertitel": "Wer Bedürfnisse ausspricht, statt Vorwürfe zu machen, wird eher gehört. Die Gewaltfreie Kommunikation beschreibt dafür vier Schritte.",
+      "bausteine": [
+        {
+          "art": "schritte",
+          "linien": 0,
+          "items": [
+            {
+              "titel": "Beobachtung",
+              "text": "Was genau ist passiert – wie mit einer Kamera, ohne Bewertung. Beispiel: „Du hast unsere letzten drei Treffen eine Stunde vorher abgesagt.“"
+            },
+            { "titel": "Gefühl", "text": "Wie geht es mir damit? Beispiel: „Ich bin enttäuscht und auch traurig.“" },
+            {
+              "titel": "Bedürfnis",
+              "text": "Was ist mir wichtig? Beispiel: „Ich möchte mich auf dich verlassen können – und Zeit mit dir verbringen.“"
+            },
+            {
+              "titel": "Bitte",
+              "text": "Was genau wünsche ich mir – konkret und machbar? Beispiel: „Kannst du mir bis Freitag sagen, ob Samstag wirklich klappt?“"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Beobachtung oder Bewertung? Kreuze an.",
+          "hinweis": "Bewertungen erkennst du oft an „immer“, „nie“ und an Eigenschaften wie „egoistisch“."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": ["Beobachtung", "Bewertung"],
+          "items": [
+            "Du bist immer zu spät.",
+            "Du bist heute 20 Minuten nach der verabredeten Zeit gekommen.",
+            "Du ignorierst mich.",
+            "Du hast auf meine letzten drei Nachrichten nicht geantwortet.",
+            "Du bist egoistisch.",
+            "Du hast das letzte Stück Pizza genommen, ohne zu fragen."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Welche Gefühle und Bedürfnisse kennst du aus eigenen Konflikten? Unterstreiche sie.",
+          "hinweis": "Die Wörter helfen dir bei Aufgabe 3."
+        },
+        {
+          "art": "wortspeicher",
+          "titel": "Gefühle",
+          "items": ["enttäuscht", "traurig", "gereizt", "angespannt", "verunsichert", "frustriert", "einsam", "überfordert", "besorgt", "erleichtert"]
+        },
+        {
+          "art": "wortspeicher",
+          "titel": "Bedürfnisse",
+          "items": [
+            "Verlässlichkeit",
+            "Respekt",
+            "Ruhe",
+            "Anerkennung",
+            "Zugehörigkeit",
+            "Selbstbestimmung",
+            "Sicherheit",
+            "Unterstützung",
+            "Fairness",
+            "Verständnis"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "achtung",
+          "titel": "Vorsicht, Deutung",
+          "text": "„Ich fühle mich ignoriert“ oder „… ausgenutzt“ beschreibt, was der andere angeblich tut – nicht, was in dir vorgeht. Frag dich: Was fühle ich, wenn ich denke, dass ich ignoriert werde?"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Formuliere eine Nachricht in vier Schritten – zur Situation im Hinweis oder zu einer eigenen.",
+          "hinweis": "Gruppenarbeit: Mathis hat zum zweiten Mal seinen Teil nicht fertig. Die Präsentation ist am Montag."
+        },
+        {
+          "art": "schritte",
+          "linien": 2,
+          "items": [
+            { "titel": "Beobachtung", "text": "Was genau ist passiert?" },
+            { "titel": "Gefühl", "text": "Wie geht es dir damit?" },
+            { "titel": "Bedürfnis", "text": "Was ist dir wichtig?" },
+            { "titel": "Bitte", "text": "Was wünschst du dir konkret – bis wann?" }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "text": "Eine Bitte ist keine Forderung: Die andere Person darf Nein sagen. Dann sucht ihr gemeinsam weiter – ihre Bedürfnisse zählen auch."
+        },
+        { "art": "aufgabe", "text": "Plane: Wann willst du die vier Schritte ausprobieren?" },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Wenn ich merke, dass ich im Chat gleich einen Vorwurf schreibe,",
+              "dann": "lege ich das Handy kurz weg und beginne mit dem, was ich beobachtet habe."
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen kennen die vier Schritte der Gewaltfreien Kommunikation, unterscheiden Beobachtung von Bewertung und Gefühle von Deutungen und formulieren ein Anliegen als konkrete Bitte.",
+        "ablauf": [
+          "Einstieg (5 Min.): „Du bist total unzuverlässig.“ – „Du hast drei Treffen kurz vorher abgesagt.“ Frage: „Auf welchen Satz würdet ihr eher eingehen?“",
+          "Die vier Schritte am Beispiel lesen (5 Min.).",
+          "Aufgabe 1 allein, dann im Plenum klären (10 Min.): Woran erkennt man Bewertungen?",
+          "Aufgabe 2: Wortspeicher und den Kasten zu Deutungen besprechen (5 Min.).",
+          "Aufgabe 3 allein, danach zu zweit üben: sagen, zuhören, nachfragen (15 Min.).",
+          "Abschluss: Wenn-dann-Plan schreiben. Frage: „Eine Bitte darf abgelehnt werden. Was dann?“"
+        ],
+        "hintergrund": "Die Gewaltfreie Kommunikation nach Rosenberg (2001) beschreibt vier Schritte: Beobachtung ohne Bewertung, Gefühl, Bedürfnis und eine konkrete, erfüllbare Bitte. Zentral ist die Trennung von Beobachtung und Urteil: Bewertungen („Du bist egoistisch“) lösen Rechtfertigung aus, Beobachtungen lassen sich überprüfen. Ebenso wichtig ist der Unterschied zwischen Gefühlen und Deutungen: „Ich fühle mich ignoriert“ enthält eine Vermutung über das Verhalten anderer. Das DBT-Fertigkeitentraining für Jugendliche nutzt eine verwandte Struktur (DEAR MAN), um Anliegen wirksam und zugleich beziehungsschonend vorzubringen (Rathus & Miller, 2015).",
+        "quellen": [
+          "Rosenberg, M. B. (2001). Gewaltfreie Kommunikation. Paderborn: Junfermann.",
+          "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Satzanfänge anbieten: „Mir ist aufgefallen, dass …“, „Ich bin …“, „Mir ist wichtig, dass …“, „Wärst du bereit, …?“",
+          "schwerer": "Die Nachricht als Chatnachricht umschreiben und besprechen, was schriftlich anders wirkt als mündlich."
+        },
+        "impulse": [
+          "Warum ist es so schwer, ohne Bewertung zu beobachten?",
+          "Was unterscheidet eine Bitte von einer Forderung?",
+          "Wann klärt man etwas besser mündlich als per Nachricht?"
+        ],
+        "tipps": [
+          "Kein starres Schema: Im Alltag reichen oft zwei Sätze – Beobachtung und Bitte.",
+          "Kurze Übungen „Beobachtung oder Bewertung?“ eignen sich als Einstieg in weitere Stunden."
+        ],
+        "achtung": "Schreiben Jugendliche in Aufgabe 3 von Gewalt, Erpressung oder starkem Druck, reicht eine Bitte nicht: ein Einzelgespräch anbieten und die zuständige Leitung (Responsable) informieren."
+      }
+    },
+    "fr": {
+      "titel": "Dire clairement ce dont j’ai besoin",
+      "untertitel": "Exprimer ses besoins plutôt que des reproches, c’est se donner une chance d’être entendu·e. La communication non violente propose quatre étapes.",
+      "bausteine": [
+        {
+          "art": "schritte",
+          "linien": 0,
+          "items": [
+            {
+              "titel": "Observation",
+              "text": "Ce qui s’est passé, comme le verrait une caméra, sans jugement. Exemple : « Tu as annulé nos trois derniers rendez-vous une heure avant. »"
+            },
+            { "titel": "Sentiment", "text": "Ce que je ressens. Exemple : « Je suis déçu·e, et triste aussi. »" },
+            {
+              "titel": "Besoin",
+              "text": "Ce qui compte pour moi. Exemple : « J’ai besoin de pouvoir compter sur toi – et de passer du temps avec toi. »"
+            },
+            {
+              "titel": "Demande",
+              "text": "Ce que je souhaite, concret et réalisable. Exemple : « Peux-tu me dire d’ici vendredi si samedi tient vraiment ? »"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Observation ou jugement ? Coche.",
+          "hinweis": "On reconnaît souvent un jugement à « toujours », « jamais » ou à des qualificatifs comme « égoïste »."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": ["observation", "jugement"],
+          "items": [
+            "Tu es toujours en retard.",
+            "Aujourd’hui, tu es arrivé·e 20 minutes après l’heure convenue.",
+            "Tu m’ignores.",
+            "Tu n’as pas répondu à mes trois derniers messages.",
+            "Tu es égoïste.",
+            "Tu as pris la dernière part de pizza sans demander."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Quels sentiments et besoins connais-tu de tes propres conflits ? Souligne-les.",
+          "hinweis": "Ces mots t’aideront pour l’activité 3."
+        },
+        {
+          "art": "wortspeicher",
+          "titel": "Sentiments",
+          "items": ["déçu·e", "triste", "agacé·e", "tendu·e", "inquiet·ète", "frustré·e", "seul·e", "dépassé·e", "perdu·e", "soulagé·e"]
+        },
+        {
+          "art": "wortspeicher",
+          "titel": "Besoins",
+          "items": ["fiabilité", "respect", "calme", "reconnaissance", "appartenance", "autonomie", "sécurité", "soutien", "équité", "compréhension"]
+        },
+        {
+          "art": "info",
+          "symbol": "achtung",
+          "titel": "Attention aux interprétations",
+          "text": "« Je me sens ignoré·e » ou « … exploité·e » décrit ce que l’autre ferait – pas ce qui se passe en toi. Demande-toi : qu’est-ce que je ressens quand je pense qu’on m’ignore ?"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Formule un message en quatre étapes – pour la situation ci-dessous ou pour une situation personnelle.",
+          "hinweis": "Travail de groupe : pour la deuxième fois, Mathis n’a pas terminé sa partie. L’exposé a lieu lundi."
+        },
+        {
+          "art": "schritte",
+          "linien": 2,
+          "items": [
+            { "titel": "Observation", "text": "Que s’est-il passé exactement ?" },
+            { "titel": "Sentiment", "text": "Comment te sens-tu ?" },
+            { "titel": "Besoin", "text": "Qu’est-ce qui compte pour toi ?" },
+            { "titel": "Demande", "text": "Que souhaites-tu concrètement – et pour quand ?" }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "text": "Une demande n’est pas une exigence : l’autre a le droit de dire non. Vous cherchez alors ensemble une autre solution – ses besoins comptent aussi."
+        },
+        { "art": "aufgabe", "text": "Planifie : quand veux-tu essayer les quatre étapes ?" },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Si je remarque que je suis sur le point d’écrire un reproche dans le chat,",
+              "dann": "je pose mon téléphone un instant, puis je commence par ce que j’ai observé."
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes connaissent les quatre étapes de la communication non violente, distinguent observation et jugement, sentiments et interprétations, et formulent une demande concrète.",
+        "ablauf": [
+          "Entrée en matière (5 min) : « Tu n’es vraiment pas fiable. » – « Tu as annulé trois rendez-vous au dernier moment. » Demander : « À quelle phrase répondriez-vous plus volontiers ? »",
+          "Lire les quatre étapes à partir de l’exemple (5 min).",
+          "Activité 1 en individuel, puis mise en commun (10 min) : à quoi reconnaît-on un jugement ?",
+          "Activité 2 : discuter les listes de mots et l’encadré sur les interprétations (5 min).",
+          "Activité 3 en individuel, puis s’entraîner à deux : dire, écouter, reformuler (15 min).",
+          "Pour conclure : écrire le plan « si … alors ». Demander : « Une demande peut être refusée. Et alors ? »"
+        ],
+        "hintergrund": "La communication non violente selon Rosenberg (2001) repose sur quatre étapes : observation sans jugement, sentiment, besoin et demande concrète et réalisable. L’essentiel est de séparer l’observation de l’évaluation : un jugement (« Tu es égoïste ») appelle la justification, une observation peut être vérifiée. Il importe tout autant de distinguer sentiments et interprétations : « Je me sens ignoré·e » contient une supposition sur le comportement de l’autre. L’entraînement aux compétences de la TCD pour adolescents utilise une structure proche (DEAR MAN) pour défendre une demande avec efficacité tout en préservant la relation (Rathus & Miller, 2015).",
+        "quellen": [
+          "Rosenberg, M. B. (2001). Gewaltfreie Kommunikation. Paderborn: Junfermann.",
+          "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Proposer des débuts de phrase : « J’ai remarqué que … », « Je me sens … », « C’est important pour moi que … », « Serais-tu d’accord pour … ? »",
+          "schwerer": "Réécrire le message sous forme de message écrit et discuter de ce qui change par rapport à l’oral."
+        },
+        "impulse": [
+          "Pourquoi est-il si difficile d’observer sans juger ?",
+          "Qu’est-ce qui distingue une demande d’une exigence ?",
+          "Quand vaut-il mieux régler les choses de vive voix que par message ?"
+        ],
+        "tipps": [
+          "Pas de schéma rigide : au quotidien, deux phrases suffisent souvent – l’observation et la demande.",
+          "De courts exercices « observation ou jugement ? » font de bons débuts de cours."
+        ],
+        "achtung": "Si des jeunes décrivent dans l’activité 3 de la violence, du chantage ou une forte pression, une demande ne suffit pas : proposer un entretien individuel et informer la direction compétente (responsable)."
+      }
+    }
+  },
+  {
+    "id": "stopp-das-will-ich-nicht",
+    "bereich": "miteinander",
+    "thema": "grenzen",
+    "stufen": ["C1"],
+    "sozialform": ["einzeln", "gruppe"],
+    "dauer": "15–20 Min.",
+    "eldib": ["K-7", "SOZ-12", "K-12"],
+    "schlagworte": ["Grenzen", "Nein sagen", "Stopp", "Hilfe holen", "Prävention", "Spielschule"],
+    "bild": "motiv:stopp",
+    "verwandt": ["mein-nein-ist-okay", "grenzen-spueren"],
+    "de": {
+      "titel": "Stopp, das will ich nicht!",
+      "anleitung": "Die Stopp-Geste vormachen und gemeinsam üben: fest hinstellen, Hand hoch, laut „Stopp, das will ich nicht“ sagen. Betonen: Nein sagen ist erlaubt. Einem Erwachsenen davon zu erzählen, ist richtig – das ist kein Petzen.",
+      "bausteine": [
+        { "art": "aufgabe", "text": "Wann sagst du Stopp? Kreise ein.", "symbole": ["zeigen", "einkreisen"] },
+        {
+          "art": "comic",
+          "spalten": 3,
+          "felder": [
+            { "figuren": ["figur:tom:froh", "figur:lea:verlegen"], "blase": "keine", "untertitel": "Kitzeln – aber das Kind will nicht." },
+            { "figuren": ["figur:sami:wuetend", "figur:amira:aengstlich"], "blase": "keine", "untertitel": "Ein Kind haut." },
+            {
+              "figuren": ["figur:noah:froh", "figur:mia:froh"],
+              "requisit": "icon:ball-football",
+              "blase": "keine",
+              "untertitel": "Beide spielen gern zusammen."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "So geht es: Stopp sagen, weggehen, erzählen. Mach mit.",
+          "hinweis": "Im dritten Bild malst du, wem du es erzählst.",
+          "symbole": ["zeigen", "sprechen", "malen"]
+        },
+        {
+          "art": "comic",
+          "spalten": 3,
+          "felder": [
+            { "figuren": ["figur:lea:neutral:stopp"], "text": "Stopp. Das will ich nicht.", "sprecher": 0, "untertitel": "1  Stopp sagen." },
+            { "figuren": ["figur:lea:neutral"], "requisit": "icon:walk", "blase": "keine", "untertitel": "2  Weggehen." },
+            { "leer": true, "untertitel": "3  Erzählen. Wem? Male." }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder erfahren, dass sie Nein sagen dürfen, üben die Stopp-Geste mit klarer Stimme und wissen, dass sie sich bei Erwachsenen Hilfe holen dürfen.",
+        "ablauf": [
+          "Einstieg (5 Min.): Die Stopp-Geste vormachen, alle machen mit – einmal leise, einmal laut. Was wirkt stärker?",
+          "Aufgabe 1 (5 Min.): „Wie fühlt sich das Kind? Wo spürt es das?“ Die Kinder kreisen ein, wo sie Stopp sagen würden.",
+          "Aufgabe 2 (5 Min.): Die drei Schritte zeigen und nachspielen.",
+          "Die Kinder malen einen Erwachsenen, dem sie etwas erzählen würden; den Namen dazuschreiben.",
+          "Die Geste in den nächsten Wochen spielerisch wiederholen, etwa beim Stopp-Tanz."
+        ],
+        "hintergrund": "Prävention mit jungen Kindern stärkt drei Dinge: das Gefühl, über den eigenen Körper bestimmen zu dürfen, unangenehme Gefühle als Warnsignal ernst zu nehmen und sich Hilfe zu holen – ohne Angst machende Details. Zutrauen in ein neues Verhalten entsteht am ehesten durch eigenes, erfolgreiches Ausprobieren; deshalb wird die Stopp-Geste mehrfach im Spiel geübt (Bandura, 1977). Verlässliche Beziehungen zu Erwachsenen gehören zu den wichtigsten Schutzfaktoren in der Entwicklung (Masten, 2014): Jedes Kind sollte eine Person nennen können, der es sich anvertrauen würde.",
+        "quellen": [
+          "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
+          "Masten, A. S. (2014). Ordinary Magic: Resilience in Development. New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Nur die Stopp-Geste üben. Statt zu malen, nennt das Kind eine Person.",
+          "schwerer": "Rollenspiel: Was tun, wenn das andere Kind nicht aufhört? Lauter Stopp sagen, weggehen, erzählen."
+        },
+        "impulse": ["Wie fühlt sich dein Bauch an, wenn dir etwas nicht gefällt?", "Darf man auch zu Erwachsenen Stopp sagen?", "Wem kannst du alles erzählen?"],
+        "tipps": [
+          "Die Stopp-Regel gilt auch für Erwachsene, etwa beim Kitzeln oder Toben.",
+          "Erzählen bestärken statt als Petzen abtun: „Gut, dass du es mir sagst.“"
+        ],
+        "achtung": "Erzählt ein Kind von belastenden Berührungen, Geheimnissen oder Gewalt: ruhig zuhören, nicht ausfragen, nichts versprechen. Bei Hinweisen auf Gefährdung sofort nach dem internen Ablauf handeln, das Kind nicht allein lassen und die zuständige Leitung (Responsable) informieren.",
+        "material": "Buntstifte; optional Musik"
+      }
+    }
+  },
+  {
+    "id": "mein-nein-ist-okay",
+    "bereich": "miteinander",
+    "thema": "grenzen",
+    "stufen": ["C2"],
+    "sozialform": ["einzeln", "gruppe"],
+    "dauer": "30 Min.",
+    "eldib": ["SOZ-21", "K-12", "K-26"],
+    "schlagworte": ["Nein sagen", "Geheimnisse", "Vertrauenspersonen", "Körper", "Prävention"],
+    "bild": "icon:shield-check",
+    "verwandt": ["stopp-das-will-ich-nicht", "grenzen-spueren"],
+    "de": {
+      "titel": "Mein Nein ist okay",
+      "untertitel": "Dein Körper gehört dir. Du darfst Nein sagen – auch zu Erwachsenen.",
+      "bausteine": [
+        { "art": "aufgabe", "text": "Stimmt das? Kreuze an.", "symbole": ["lesen", "ankreuzen"] },
+        {
+          "art": "einschaetzung",
+          "optionen": ["stimmt", "stimmt nicht"],
+          "items": [
+            "Ich darf Nein sagen, wenn mir etwas nicht gefällt.",
+            "Zu Erwachsenen darf ich nie Nein sagen.",
+            "Wenn ich Nein sage, bin ich unfreundlich.",
+            "Wenn jemand mein Nein nicht hört, hole ich Hilfe."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ist das ein gutes oder ein schlechtes Geheimnis? Kreuze an.",
+          "hinweis": "Gute Geheimnisse machen Freude. Schlechte machen Bauchweh. Die darfst du immer erzählen.",
+          "symbole": ["lesen", "ankreuzen"]
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": ["gut", "schlecht"],
+          "items": [
+            "Wir basteln eine Überraschung für die Lehrerin.",
+            "Ein Kind sagt: „Sag keinem, dass ich dich gehauen habe.“",
+            "Du weißt, was Mila zum Geburtstag bekommt.",
+            "Jemand sagt: „Erzählst du das, bist du nicht mehr mein Freund.“"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wem kannst du es erzählen? Schreibe Namen auf.",
+          "hinweis": "Du kannst auch das Kanner- a Jugendtelefon anrufen: 116 111.",
+          "symbole": ["schreiben"]
+        },
+        { "art": "satzanfaenge", "items": ["Zu Hause: …", "In der Schule: …", "Sonst noch: …"] }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder wissen, dass sie Nein sagen dürfen – auch zu Erwachsenen –, unterscheiden gute von schlechten Geheimnissen und nennen Menschen, denen sie sich anvertrauen können.",
+        "ablauf": [
+          "Einstieg (5 Min.): Ein schwaches Nein (leise, kichernd) und ein starkes Nein (laut, fester Blick) vormachen. „Welches wirkt?“ Alle üben das starke Nein.",
+          "Aufgabe 1 (5 Min.): Die Sätze vorlesen und besprechen. Klären: Nein sagen ist nicht unhöflich; man kann auch anders begrüßen, etwa winken.",
+          "Aufgabe 2 (10 Min.): Überraschungen sind gute Geheimnisse, sie werden bald verraten. Schlechte Geheimnisse dürfen immer erzählt werden – auch wenn man etwas versprochen hat.",
+          "Aufgabe 3 (5 Min.): Vertrauenspersonen aufschreiben, die Nummer 116 111 gemeinsam lesen.",
+          "Abschluss: „Petzen oder Hilfe holen?“ Hilfe holen ist richtig, wenn es jemandem schlecht geht."
+        ],
+        "hintergrund": "Präventionsangebote für Grundschulkinder vermitteln Selbstbestimmung über den eigenen Körper, das Recht auf ein Nein und den Unterschied zwischen guten und schlechten Geheimnissen. Diese Unterscheidung ist wichtig, weil Kinder bei Übergriffen oft mit Geheimhaltung, Schuldgefühlen oder Drohungen zum Schweigen gebracht werden. Kinder brauchen dafür Worte für ihre Gefühle; ein „Bauchweh-Gefühl“ ist ein ernst zu nehmendes Signal (Petermann & Wiedebusch, 2016). Ebenso wichtig sind verlässliche Erwachsene, an die sich ein Kind wenden kann – sie gehören zu den stärksten Schutzfaktoren (Masten, 2014). Die Inhalte werden ohne Angst machende Details vermittelt.",
+        "quellen": [
+          "Petermann, F. & Wiedebusch, S. (2016). Emotionale Kompetenz bei Kindern (3. Aufl.). Göttingen: Hogrefe.",
+          "Masten, A. S. (2014). Ordinary Magic: Resilience in Development. New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Alle Sätze vorlesen; das Kind zeigt Daumen hoch oder runter. Vertrauenspersonen malen statt schreiben.",
+          "schwerer": "Eigene Beispiele für gute und schlechte Geheimnisse finden und begründen."
+        },
+        "impulse": [
+          "Woran merkst du, dass ein Geheimnis ein schlechtes ist?",
+          "Was kannst du tun, wenn dir jemand nicht glaubt?",
+          "Wie kannst du jemanden begrüßen, ohne ihn zu drücken?"
+        ],
+        "tipps": [
+          "Den Kindern sagen: „Hört dir jemand nicht zu, erzähl es einem anderen Erwachsenen – so lange, bis dir jemand hilft.“",
+          "Die Eltern vorab informieren, dass Nein sagen und Geheimnisse im Unterricht Thema sind."
+        ],
+        "achtung": "Erzählt ein Kind von einem schlechten Geheimnis, von Berührungen oder Gewalt: ruhig zuhören, nicht ausfragen, nichts versprechen. Bei Hinweisen auf Gefährdung sofort nach dem internen Ablauf handeln, das Kind nicht allein lassen und die zuständige Leitung (Responsable) informieren."
+      }
+    }
+  },
+  {
+    "id": "grenzen-spueren",
+    "bereich": "miteinander",
+    "thema": "grenzen",
+    "stufen": ["C3", "C4"],
+    "sozialform": ["einzeln", "gruppe"],
+    "dauer": "45 Min.",
+    "eldib": ["K-26", "SOZ-31", "SOZ-32"],
+    "schlagworte": ["Grenzen", "Körpersignale", "Nähe und Abstand", "Nein sagen", "Prävention"],
+    "bild": "icon:hand-stop",
+    "verwandt": ["mein-nein-ist-okay", "stopp-das-will-ich-nicht", "nein-unter-druck"],
+    "de": {
+      "titel": "Grenzen spüren und zeigen",
+      "untertitel": "Jeder Mensch hat unsichtbare Grenzen. Dein Körper merkt oft zuerst, wenn dir etwas zu nah oder zu viel wird.",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "Zu fest",
+          "text": "Zoé und Aylin sind gute Freundinnen. Jeden Morgen umarmt Zoé Aylin zur Begrüßung – ganz fest und lange. Aylin mag Zoé sehr. Aber die Umarmungen sind ihr zu viel. Ihr Körper wird steif, und sie hält die Luft an. Sie weiß nicht, wie sie es sagen soll, ohne Zoé zu kränken.",
+          "bild": "figur:amira:verlegen"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wo spürst du es, wenn dir etwas zu nah oder zu viel ist? Male die Stellen in der passenden Farbe an.",
+          "hinweis": "Jeder spürt es anders. Es gibt kein Richtig oder Falsch.",
+          "symbole": ["nachdenken", "malen"]
+        },
+        {
+          "art": "koerper",
+          "legende": [
+            { "farbe": "rot", "text": "Mein Herz klopft schnell." },
+            { "farbe": "orange", "text": "Mein Bauch zieht sich zusammen." },
+            { "farbe": "blau", "text": "Mein Körper wird steif." },
+            { "farbe": "lila", "text": "Ich halte die Luft an." },
+            { "farbe": "gelb", "text": "Mir wird heiß im Gesicht." },
+            { "farbe": "gruen", "text": "Meine Beine wollen weglaufen." }
+          ]
+        },
+        { "art": "satzanfaenge", "items": ["Noch ein Zeichen bei mir: …"] },
+        {
+          "art": "aufgabe",
+          "text": "Wer darf dir wie nah kommen? Schreibe Namen oder Gruppen in die Kreise.",
+          "hinweis": "Deine Kreise gehören dir und dürfen sich ändern. Auch wer ganz nah ist, muss dein Nein beachten.",
+          "symbole": ["schreiben"]
+        },
+        { "art": "zielscheibe", "ringe": ["winken, Hallo sagen", "Hand geben, abklatschen", "umarmen"], "mitte": "Ich" },
+        {
+          "art": "aufgabe",
+          "text": "Grenzen zeigen: Was kannst du sagen und tun? Schreibe klare Sätze.",
+          "hinweis": "Situationen: Im Schulbus sitzt jemand ganz dicht an dir. – Jemand kitzelt weiter, obwohl du Stopp gesagt hast.",
+          "symbole": ["schreiben", "partner"]
+        },
+        {
+          "art": "tabelle",
+          "spalten": ["Situation", "Das sage ich", "Das tue ich"],
+          "breiten": [1.4, 2, 1.6],
+          "zeilen": 2,
+          "beispiel": [
+            "Zoé umarmt Aylin zu fest.",
+            "„Ich mag dich, aber das ist mir zu fest. Wollen wir abklatschen?“",
+            "Ich gehe einen Schritt zurück und halte die Hand hoch."
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "text": "Wenn jemand deine Grenze nicht beachtet – auch nach einem klaren Stopp –, hol dir Hilfe bei einem Erwachsenen. Das ist kein Petzen. Anonym und kostenlos: Kanner- a Jugendtelefon 116 111."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder nehmen Körpersignale als Hinweis auf eigene Grenzen wahr, unterscheiden Stufen von Nähe und üben klare, freundliche Sätze, um Grenzen zu zeigen.",
+        "ablauf": [
+          "Einstieg (5 Min.): Abstandsübung zu zweit: Ein Kind geht langsam auf das andere zu, bis dieses „Stopp“ sagt. War der Abstand bei allen gleich?",
+          "Geschichte lesen: „Warum sagt Aylin nichts? Was spürt sie?“",
+          "Aufgabe 1 (10 Min.): anmalen, dann sammeln: Welche Zeichen kennen alle, welche nur manche?",
+          "Aufgabe 2 (10 Min.): Nähe-Kreise ausfüllen; sie sind privat und werden nicht gezeigt.",
+          "Aufgabe 3 zu zweit (10 Min.): Sätze schreiben und im Rollenspiel üben – mit fester Stimme."
+        ],
+        "hintergrund": "Wer eigene Grenzen schützen will, muss sie zuerst wahrnehmen. Körpersignale wie Anspannung, Herzklopfen oder ein flaues Gefühl im Bauch zeigen oft zuerst, dass etwas zu viel ist; sie zu erkennen und zu benennen, ist Teil emotionaler Kompetenz (Petermann & Wiedebusch, 2016). Das Blatt zeigt Grenzen bewusst in einer Freundschaft: Nein sagen gehört zu guten Beziehungen und lehnt nicht die Person ab. Klare Sätze wirken erst, wenn sie geübt sind; Rollenspiele mit Erfolgserlebnissen stärken das Zutrauen, sie im Ernstfall zu nutzen (Bandura, 1977).",
+        "quellen": [
+          "Petermann, F. & Wiedebusch, S. (2016). Emotionale Kompetenz bei Kindern (3. Aufl.). Göttingen: Hogrefe.",
+          "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215."
+        ],
+        "differenzierung": {
+          "leichter": "Nur Aufgabe 1 und 2; in den Kreisen genügen Symbole oder Anfangsbuchstaben.",
+          "schwerer": "Einen Satz für den Fall schreiben, dass jemand die eigene Grenze nicht beachtet."
+        },
+        "impulse": [
+          "Warum ist Nein sagen bei Freunden oft schwer?",
+          "Woran merkst du, dass es anderen zu nah ist?",
+          "Petzen oder Hilfe holen – was ist der Unterschied?"
+        ],
+        "tipps": ["Die Kreise nicht einsammeln oder vorlesen lassen.", "Auch die Grenzen anderer üben: Wer Stopp hört, hört auf."],
+        "achtung": "Deutet ein Kind belastende Berührungen, Geheimnisse oder Gewalt an: ruhig zuhören, nicht ausfragen. Bei Hinweisen auf Gefährdung sofort nach dem internen Ablauf handeln, das Kind nicht allein lassen und die zuständige Leitung (Responsable) informieren.",
+        "material": "Buntstifte"
+      }
+    }
+  },
+  {
+    "id": "nein-unter-druck",
+    "bereich": "miteinander",
+    "thema": "grenzen",
+    "stufen": ["ES"],
+    "sozialform": ["einzeln", "gruppe"],
+    "dauer": "50 Min.",
+    "eldib": ["SOZ-39", "V-26", "V-32"],
+    "schlagworte": ["Gruppendruck", "Nein sagen", "Rollenspiel", "Wenn-dann-Plan", "Vape", "Klassenchat"],
+    "bild": "icon:users-group",
+    "verwandt": ["grenzen-spueren", "was-mir-in-freundschaften-wichtig-ist"],
+    "de": {
+      "titel": "Nein sagen unter Druck",
+      "untertitel": "In der Gruppe fällt ein Nein schwerer als allein. Wer ein paar Sätze vorbereitet hat, bleibt leichter bei sich.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Warum Gruppendruck wirkt",
+          "text": "Im Jugendalter ist die Anerkennung durch Gleichaltrige besonders wichtig. Versuche zeigen: Wenn Freunde zuschauen, gehen Jugendliche mehr Risiken ein als allein. Druck kann laut sein – überreden, auslachen, drohen – oder leise: Alle machen mit, und keiner sagt etwas."
+        },
+        {
+          "art": "skala",
+          "frage": "Wie leicht fällt es dir, in einer Gruppe Nein zu sagen?",
+          "von": "sehr schwer",
+          "bis": "ganz leicht",
+          "stufen": 11
+        },
+        {
+          "art": "geschichte",
+          "titel": "An der Bushaltestelle",
+          "text": "Freitag nach der Schule. An der Bushaltestelle stehen Ben, Mehmet und ein paar andere aus deiner Klasse. Ben holt eine Vape heraus und lässt sie herumgehen. Die meisten nehmen einen Zug. Jetzt schauen alle dich an.",
+          "bild": "figur:ben:froh:geben"
+        },
+        { "art": "aufgabe", "text": "Welche Druck-Sätze hast du schon gehört? Kreuze an und ergänze." },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "frei": 2,
+          "items": [
+            "„Sei kein Feigling.“",
+            "„Alle machen das.“",
+            "„Nur einmal, merkt doch keiner.“",
+            "„Hast du etwa Angst?“",
+            "„Sonst gehörst du nicht mehr dazu.“",
+            "„Sei nicht so ein Spielverderber.“",
+            "„Stell dich nicht so an.“",
+            "„Wir sind doch Freunde, oder?“"
+          ]
+        },
+        { "art": "aufgabe", "text": "Lies die vier Strategien. Kreise die ein, die dir am leichtesten fällt." },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 0,
+          "items": [
+            {
+              "titel": "Klar ablehnen",
+              "text": "Kurz, ohne lange Begründung, mit Blickkontakt: „Nein, danke. Ich mach nicht mit.“ Wenn nötig, wiederholen."
+            },
+            { "titel": "Etwas anderes vorschlagen", "text": "„Ich geh lieber zum Basketball. Kommt jemand mit?“" },
+            { "titel": "Gehen", "text": "Sich entfernen, zu anderen gehen, eine Nachricht nicht beantworten." },
+            { "titel": "Verbündete suchen", "text": "Ein zweites Nein macht es leichter: Wer will auch nicht mitmachen?" }
+          ]
+        },
+        { "art": "seitenumbruch" },
+        {
+          "art": "aufgabe",
+          "text": "Übe das Gespräch: Was antwortest du?",
+          "hinweis": "Die Szene an der Bushaltestelle geht weiter. Schreibt eure Antworten auf und spielt die Szene zu dritt."
+        },
+        {
+          "art": "dialog",
+          "zeilen": [
+            { "wer": "Ben", "text": "Komm, nur ein Zug. Merkt doch keiner." },
+            { "wer": "Du" },
+            { "wer": "Ben", "text": "Echt jetzt? Sei nicht so langweilig." },
+            { "wer": "Du" },
+            { "wer": "Mehmet", "text": "Lass mal, ich will auch nicht." },
+            { "wer": "Du" }
+          ]
+        },
+        { "art": "aufgabe", "text": "Plane deinen Satz für eine Situation, die du kennst." },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Wenn im Klassenchat ein peinliches Foto herumgeht und ich es weiterleiten soll,",
+              "dann": "leite ich es nicht weiter und schreibe: „Ohne mich.“"
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "text": "Wirst du unter Druck gesetzt, erpresst oder bedroht – auch online –, bist du nicht allein: Sprich mit einer Vertrauensperson oder dem SePAS. Kanner- a Jugendtelefon 116 111, BEE SECURE Helpline 8002 1234."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen erkennen Formen von Gruppendruck, kennen vier Strategien, um Nein zu sagen, üben sie im Rollenspiel und legen einen eigenen Wenn-dann-Plan fest.",
+        "ablauf": [
+          "Einstieg (5 Min.): Skala ausfüllen. Frage: „Wann ist es schwerer, Nein zu sagen – allein oder in der Gruppe? Warum?“",
+          "Info-Kasten und Fall lesen; Aufgabe 1 allein, dann Druck-Sätze an der Tafel sammeln (10 Min.).",
+          "Aufgabe 2: Strategien besprechen. Wichtig: Ein Nein braucht keine lange Begründung.",
+          "Aufgabe 3 in Dreiergruppen (15 Min.): Antworten schreiben, die Szene spielen, Rollen tauschen. Nachfragen: „Was hat sich geändert, als Mehmet dazukam?“",
+          "Aufgabe 4 allein (5 Min.); auf die Hilfsangebote hinweisen."
+        ],
+        "hintergrund": "Im Jugendalter reagiert das Gehirn besonders stark auf soziale Belohnung. In Experimenten entschieden Jugendliche riskanter, wenn Gleichaltrige zusahen – bei Erwachsenen zeigte sich dieser Effekt kaum (Steinberg, 2014). Gruppendruck ist deshalb kein Charakterproblem, sondern eine erwartbare Herausforderung dieser Lebensphase. Hilfreich sind kurze, vorbereitete Sätze: Das DBT-Fertigkeitentraining für Jugendliche empfiehlt, ein Anliegen klar zu formulieren, es bei Bedarf zu wiederholen („kaputte Schallplatte“) und selbstsicher aufzutreten (Rathus & Miller, 2015). Wenn-dann-Pläne verknüpfen eine erwartete Situation mit einer festen Reaktion und erleichtern das Handeln im entscheidenden Moment (Gollwitzer, 1999).",
+        "quellen": [
+          "Steinberg, L. (2014). Age of Opportunity: Lessons from the New Science of Adolescence. Boston: Houghton Mifflin Harcourt.",
+          "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "differenzierung": {
+          "leichter": "Antwortsätze an die Tafel schreiben: „Nein, danke.“ – „Ohne mich.“ – „Hab keine Lust drauf.“",
+          "schwerer": "Eine Szene mit leisem Druck schreiben (alle machen mit, keiner sagt etwas) und eine Strategie dafür entwickeln."
+        },
+        "impulse": [
+          "Welcher Druck ist schwerer auszuhalten: der laute oder der leise?",
+          "Was brauchst du, um in einer Gruppe als Erste oder Erster Nein zu sagen?",
+          "Wie reagierst du, wenn dir eine Freundin Nein sagt?"
+        ],
+        "tipps": [
+          "Rollen klar ansagen: „Ben ist eine Rolle, niemand aus der Klasse.“",
+          "Nicht moralisieren: Es geht um Handlungsmöglichkeiten, nicht um Schuldgefühle."
+        ],
+        "achtung": "Werden Jugendliche zu Straftaten, Drogenkonsum oder zum Versenden intimer Bilder gedrängt, erpresst oder bedroht: Einzelgespräch anbieten, SePAS und zuständige Leitung (Responsable) informieren. Bei Gefährdung sofort nach dem internen Ablauf handeln, nicht allein lassen."
+      }
+    },
+    "fr": {
+      "titel": "Dire non sous la pression",
+      "untertitel": "En groupe, dire non est plus difficile que seul·e. Avoir quelques phrases prêtes aide à rester fidèle à soi-même.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Pourquoi la pression du groupe fonctionne",
+          "text": "À l’adolescence, la reconnaissance des pairs compte énormément. Des expériences le montrent : sous le regard de leurs ami·es, les jeunes prennent plus de risques que seul·es. La pression peut être bruyante – insister, se moquer, menacer – ou silencieuse : tout le monde suit, et personne ne dit rien."
+        },
+        {
+          "art": "skala",
+          "frage": "Est-ce facile pour toi de dire non dans un groupe ?",
+          "von": "très difficile",
+          "bis": "très facile",
+          "stufen": 11
+        },
+        {
+          "art": "geschichte",
+          "titel": "À l’arrêt de bus",
+          "text": "Vendredi après les cours. À l’arrêt de bus, il y a Ben, Mehmet et quelques autres de ta classe. Ben sort une vapoteuse et la fait tourner. La plupart tirent une bouffée. Maintenant, tout le monde te regarde.",
+          "bild": "figur:ben:froh:geben"
+        },
+        { "art": "aufgabe", "text": "Quelles phrases de pression as-tu déjà entendues ? Coche et complète." },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "frei": 2,
+          "items": [
+            "« T’as peur ou quoi ? »",
+            "« Tout le monde le fait. »",
+            "« Juste une fois, personne ne verra rien. »",
+            "« Allez, sois pas rabat-joie. »",
+            "« Sinon, t’es plus des nôtres. »",
+            "« Arrête de faire ton cinéma. »",
+            "« T’es pas drôle. »",
+            "« On est potes, non ? »"
+          ]
+        },
+        { "art": "aufgabe", "text": "Lis les quatre stratégies. Entoure celle qui te paraît la plus facile." },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 0,
+          "items": [
+            {
+              "titel": "Refuser clairement",
+              "text": "Court, sans longue justification, en regardant l’autre : « Non merci, sans moi. » Répéter si besoin."
+            },
+            { "titel": "Proposer autre chose", "text": "« Moi, je vais au basket. Quelqu’un vient ? »" },
+            { "titel": "Partir", "text": "S’éloigner, rejoindre d’autres personnes, ne pas répondre à un message." },
+            { "titel": "Trouver un·e allié·e", "text": "Un deuxième « non » rend les choses plus faciles : qui d’autre ne veut pas ?" }
+          ]
+        },
+        { "art": "seitenumbruch" },
+        {
+          "art": "aufgabe",
+          "text": "Entraîne-toi : que réponds-tu ?",
+          "hinweis": "La scène à l’arrêt de bus continue. Écrivez vos réponses, puis jouez la scène à trois."
+        },
+        {
+          "art": "dialog",
+          "zeilen": [
+            { "wer": "Ben", "text": "Allez, juste une bouffée. Personne ne le saura." },
+            { "wer": "Toi" },
+            { "wer": "Ben", "text": "Sérieux ? Tu casses l’ambiance." },
+            { "wer": "Toi" },
+            { "wer": "Mehmet", "text": "Laisse tomber, moi non plus je veux pas." },
+            { "wer": "Toi" }
+          ]
+        },
+        { "art": "aufgabe", "text": "Prépare ta phrase pour une situation que tu connais." },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Si une photo gênante circule dans le groupe de classe et qu’on me demande de la transférer,",
+              "dann": "je ne la transfère pas et j’écris : « Sans moi. »"
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "text": "Si on te met la pression, te fait du chantage ou te menace – en ligne aussi –, tu n’es pas seul·e : parles-en à une personne de confiance ou au SePAS. Kanner- a Jugendtelefon 116 111, BEE SECURE Helpline 8002 1234."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes reconnaissent différentes formes de pression du groupe, connaissent quatre stratégies pour dire non, les exercent en jeu de rôle et se fixent un plan « si … alors ».",
+        "ablauf": [
+          "Entrée en matière (5 min) : remplir l’échelle. « Quand est-il plus difficile de dire non : seul·e ou en groupe ? Pourquoi ? »",
+          "Lire l’encadré et le cas ; activité 1 en individuel, puis noter au tableau les phrases de pression (10 min).",
+          "Activité 2 : discuter les stratégies. Important : un non n’a pas besoin d’une longue justification.",
+          "Activité 3 par groupes de trois (15 min) : écrire les réponses, jouer la scène, échanger les rôles. Demander : « Qu’est-ce qui a changé quand Mehmet s’en est mêlé ? »",
+          "Activité 4 en individuel (5 min) ; présenter les aides disponibles."
+        ],
+        "hintergrund": "À l’adolescence, le cerveau réagit particulièrement fort à la récompense sociale. Dans des expériences, les adolescent·es prenaient des décisions plus risquées quand des pairs les observaient – chez les adultes, cet effet n’apparaissait guère (Steinberg, 2014). La pression du groupe n’est donc pas un défaut de caractère, mais un défi prévisible de cet âge. Des phrases courtes et préparées aident : la TCD pour adolescents recommande de formuler clairement sa demande, de la répéter au besoin (« disque rayé ») et d’afficher de l’assurance (Rathus & Miller, 2015). Les plans « si … alors » associent une situation attendue à une réaction fixée d’avance (Gollwitzer, 1999).",
+        "quellen": [
+          "Steinberg, L. (2014). Age of Opportunity: Lessons from the New Science of Adolescence. Boston: Houghton Mifflin Harcourt.",
+          "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "differenzierung": {
+          "leichter": "Noter des phrases de réponse au tableau : « Non merci. » – « Sans moi. » – « Ça ne me dit rien. »",
+          "schwerer": "Écrire une scène de pression silencieuse (tout le monde suit, personne ne dit rien) et trouver une stratégie adaptée."
+        },
+        "impulse": [
+          "Quelle pression est la plus dure : la bruyante ou la silencieuse ?",
+          "De quoi as-tu besoin pour dire non en premier ?",
+          "Comment réagis-tu quand un·e ami·e te dit non ?"
+        ],
+        "tipps": [
+          "Annoncer clairement les rôles : « Ben est un rôle, personne de la classe. »",
+          "Ne pas faire la morale : il s’agit d’ouvrir des possibilités d’action, pas de culpabiliser."
+        ],
+        "achtung": "Si des jeunes sont poussé·es à des délits, à consommer des drogues ou à envoyer des images intimes, ou s’ils subissent chantage ou menaces : proposer un entretien individuel, informer le SePAS et la direction compétente (responsable). En cas de danger, agir aussitôt selon la procédure interne, ne pas laisser la personne seule."
+      }
+    }
+  }
+]

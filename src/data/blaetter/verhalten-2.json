@@ -1,0 +1,1225 @@
+[
+  {
+    "id": "das-war-nicht-okay",
+    "bereich": "verhalten",
+    "thema": "wiedergutmachung",
+    "stufen": ["C2"],
+    "sozialform": ["einzeln", "gruppe"],
+    "dauer": "25–30 Min.",
+    "eldib": ["V-18", "K-21", "SOZ-21"],
+    "schlagworte": ["Wiedergutmachung", "Entschuldigung", "Missgeschick", "Verantwortung", "Gefühle anderer"],
+    "bild": "icon:bandage",
+    "verwandt": ["was-ist-passiert", "verantwortung-uebernehmen"],
+    "de": {
+      "titel": "Ups – das war nicht okay",
+      "untertitel": "Jedem passiert mal etwas, das nicht okay ist. Du kannst es wiedergutmachen.",
+      "bausteine": [
+        { "art": "aufgabe", "text": "Lies die Geschichte. Wie fühlt sich Finn? Schreibe es auf die Linie.", "symbole": ["lesen", "schreiben"] },
+        {
+          "art": "comic",
+          "spalten": 3,
+          "felder": [
+            { "figuren": ["figur:noah:froh"], "requisit": "icon:palette", "blase": "keine", "untertitel": "Finn malt ein Bild für seine Oma." },
+            {
+              "figuren": ["figur:mia:ueberrascht", "figur:noah:ueberrascht"],
+              "requisit": "icon:droplet",
+              "blase": "keine",
+              "untertitel": "Mila rennt vorbei. Der Becher kippt um."
+            },
+            { "figuren": ["figur:mia:verlegen", "figur:noah:traurig"], "blase": "keine", "untertitel": "" }
+          ]
+        },
+        { "art": "aufgabe", "text": "Was kann Mila jetzt tun? Kreuze an, was hilft.", "symbole": ["ankreuzen"] },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "items": [
+            "„Es tut mir leid“ sagen",
+            "weglaufen",
+            "das Wasser aufwischen",
+            "sagen: „Ist doch egal.“",
+            "Finn ein neues Blatt holen",
+            "fragen: „Was kann ich tun?“"
+          ]
+        },
+        { "art": "aufgabe", "text": "Spielt die Geschichte zu zweit. Mila macht es wieder gut.", "symbole": ["sprechen", "partner"] },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 0,
+          "items": [
+            { "titel": "Hinschauen", "text": "Was ist passiert?" },
+            { "titel": "Entschuldigen", "text": "„Es tut mir leid.“" },
+            { "titel": "Helfen", "text": "„Was kann ich tun?“" }
+          ]
+        },
+        { "art": "aufgabe", "text": "Und du? Was kannst du sagen, wenn dir so etwas passiert?", "symbole": ["schreiben"] },
+        { "art": "satzanfaenge", "items": ["Es tut mir leid, dass …", "Ich mache es wieder gut. Ich …"], "linien": 2 }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder erkennen, wie es einem anderen Kind nach einem Missgeschick geht, und üben drei Schritte der Wiedergutmachung: hinschauen, sich entschuldigen, helfen.",
+        "ablauf": [
+          "Einstieg (5 Min.): Die Bildgeschichte vorlesen. Fragen: „Was ist passiert? Wem geht es jetzt nicht gut?“",
+          "Aufgabe 1: Finns Gefühl benennen. Mehrere Antworten sind richtig (traurig, enttäuscht, wütend).",
+          "Aufgabe 2: Bei „weglaufen“ und „Ist doch egal“ nachfragen: „Wie geht es Finn dann?“",
+          "Aufgabe 3 (10 Min.): Die drei Schritte vormachen. Dann spielen die Kinder zu zweit, mit Rollentausch.",
+          "Aufgabe 4: Die Satzanfänge ergänzen, bei Bedarf mündlich.",
+          "Im Alltag nach einem Vorfall an die drei Schritte erinnern – erst, wenn alle wieder ruhig sind."
+        ],
+        "hintergrund": "Wiedergutmachung fragt nicht zuerst nach der passenden Strafe, sondern danach, welcher Schaden entstanden ist und wie er behoben werden kann (Zehr, 2002). Für Kinder heißt das: hinschauen, Verantwortung übernehmen und etwas Konkretes tun – aufwischen, ersetzen, helfen. Erwachsene unterstützen dabei am wirksamsten, wenn sie klare Erwartungen mit viel Unterstützung verbinden und „mit“ dem Kind handeln statt „gegen“ oder „für“ es (Wachtel, 2016). Ein erzwungenes „Entschuldigung“ bleibt oft leer. Kinder im Cycle 2 lernen gerade, die Gefühle anderer zu lesen; wer erkennt, wie es dem anderen geht, kann passender helfen (Denham, 1998).",
+        "quellen": [
+          "Zehr, H. (2002). The Little Book of Restorative Justice. Intercourse, PA: Good Books.",
+          "Wachtel, T. (2016). Defining Restorative. Bethlehem, PA: International Institute for Restorative Practices.",
+          "Denham, S. A. (1998). Emotional Development in Young Children. New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Möglichkeiten vorlesen; das Kind zeigt auf seine Wahl.",
+          "schwerer": "Eine eigene Bildgeschichte zum Wiedergutmachen zeichnen."
+        },
+        "impulse": [
+          "Woran merkst du, wie es jemandem geht?",
+          "Was ist schwerer: sich entschuldigen oder helfen?",
+          "Was hilft dir, wenn dir jemand etwas kaputt macht?"
+        ],
+        "tipps": [
+          "Nicht zur Entschuldigung zwingen, sondern fragen: „Wie kannst du es wiedergutmachen?“",
+          "Wiedergutmachen vorleben: Passiert der Lehrperson ein Fehler, die drei Schritte selbst zeigen."
+        ],
+        "achtung": "Wenn ein Kind anderen häufig absichtlich schadet oder selbst oft verletzt wird, genauer hinschauen und die zuständige Leitung (Responsable) einbeziehen.",
+        "material": "Stifte; für das Rollenspiel optional Becher und Tuch"
+      }
+    }
+  },
+  {
+    "id": "was-ist-passiert",
+    "bereich": "verhalten",
+    "thema": "wiedergutmachung",
+    "stufen": ["C3", "C4"],
+    "sozialform": ["einzeln"],
+    "dauer": "30–40 Min.",
+    "eldib": ["V-27", "K-29", "K-21", "V-18"],
+    "schlagworte": ["Wiedergutmachung", "Wiedergutmachende Fragen", "Perspektivwechsel", "Konflikt", "Verantwortung"],
+    "bild": "icon:messages",
+    "verwandt": ["das-war-nicht-okay", "verantwortung-uebernehmen"],
+    "de": {
+      "titel": "Was ist passiert?",
+      "untertitel": "Manchmal läuft etwas schief. Mit diesen Fragen denkst du in Ruhe darüber nach – und findest einen Weg, es wiedergutzumachen.",
+      "bausteine": [
+        {
+          "art": "skala",
+          "frage": "Bevor du anfängst: Wie ruhig bist du jetzt? Bei 1 oder 2 machst du zuerst eine kurze Pause.",
+          "von": "noch sehr aufgeregt",
+          "bis": "ganz ruhig",
+          "stufen": 5
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was ist passiert? Erzähle es wie eine Kamera.",
+          "hinweis": "Schreibe der Reihe nach auf, was man sehen und hören konnte.",
+          "symbole": ["schreiben"]
+        },
+        { "art": "linien", "anzahl": 5 },
+        {
+          "art": "aufgabe",
+          "text": "Was hast du in dem Moment gedacht und gefühlt? Und was denkst du heute darüber?",
+          "hinweis": "Die Wörter im Kasten können dir helfen.",
+          "symbole": ["nachdenken", "schreiben"]
+        },
+        {
+          "art": "wortspeicher",
+          "titel": "Gefühlswörter",
+          "items": ["wütend", "gekränkt", "enttäuscht", "eifersüchtig", "genervt", "erschrocken", "ängstlich", "gestresst", "traurig"]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": ["In dem Moment habe ich gedacht: …", "Ich habe mich … gefühlt.", "Heute denke ich darüber: …"],
+          "linien": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wer ist betroffen? Wie geht es dieser Person jetzt vielleicht?",
+          "hinweis": "Denke auch an dich selbst, an Kinder, die zugeschaut haben, und an die Klasse.",
+          "symbole": ["nachdenken", "schreiben"]
+        },
+        {
+          "art": "tabelle",
+          "spalten": ["Wer?", "Was ist für sie oder ihn passiert?", "Wie geht es ihr oder ihm?"],
+          "breiten": [1, 2.2, 1.6],
+          "zeilen": 4,
+          "beispiel": ["Jil", "Ihr Heft ist zerrissen.", "traurig, sauer auf mich"]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was braucht es jetzt, damit es wieder gut wird? Kreuze an oder schreibe eigene Ideen auf.",
+          "symbole": ["ankreuzen", "schreiben"]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "frei": 2,
+          "items": [
+            "die Person fragen, was sie braucht",
+            "mich entschuldigen – mündlich oder mit einer Karte",
+            "etwas reparieren oder ersetzen",
+            "beim Aufräumen helfen",
+            "etwas Nettes für die Person tun",
+            "miteinander reden, ein Erwachsener hilft"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was machst du beim nächsten Mal anders?",
+          "hinweis": "Ein Wenn-dann-Plan verbindet eine schwierige Situation mit einer neuen Idee.",
+          "symbole": ["schreiben"]
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [{ "wenn": "Wenn ich merke, dass ich gleich wütend werde,", "dann": "gehe ich zur Lehrerin und sage: „Ich brauche eine Pause.“" }]
+        },
+        { "art": "frage", "text": "Mit wem möchtest du über deine Antworten sprechen?", "linien": 1 },
+        { "art": "rueckblick", "frage": "So ging es mir mit den Fragen:" }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder beschreiben einen Vorfall sachlich, benennen ihre Gedanken und Gefühle, erkennen, wer betroffen ist, und planen eine Wiedergutmachung.",
+        "ablauf": [
+          "Erst einsetzen, wenn alle ruhig sind – oft am nächsten Tag. Nie als Strafe und nie vor der Klasse.",
+          "Rahmen setzen: „Ich möchte verstehen, was passiert ist, und mit dir überlegen, wie es wieder gut wird.“",
+          "Aufgaben 1–3 (15 Min.): Das Kind schreibt oder erzählt, bei Bedarf mitschreiben. Nachfragen statt bewerten.",
+          "Aufgaben 4–5 (10 Min.): Eine Wiedergutmachung wählen, die zur betroffenen Person passt; Plan formulieren.",
+          "Ein begleitetes Gespräch nur anbieten, wenn beide bereit sind. Nach einer Woche nachfragen."
+        ],
+        "hintergrund": "Wiedergutmachende (restorative) Arbeit stellt nicht Schuld und Strafe in den Mittelpunkt, sondern die Fragen, wer verletzt wurde, was die Betroffenen brauchen und wie sich der Schaden beheben lässt (Zehr, 2002). Wachtel (2016) beschreibt dafür wenige, immer gleiche Fragen: Was ist passiert? Was hast du dabei gedacht? Wer ist betroffen? Was muss geschehen, damit es wieder gut wird? Feste Fragen geben Sicherheit, trennen die Person vom Verhalten und fördern den Perspektivwechsel – vorausgesetzt, sie werden ohne Beschämung gestellt. Der Wenn-dann-Plan verknüpft eine typische Auslösesituation mit einer Alternative (Gollwitzer, 1999).",
+        "quellen": [
+          "Wachtel, T. (2016). Defining Restorative. Bethlehem, PA: International Institute for Restorative Practices.",
+          "Zehr, H. (2002). The Little Book of Restorative Justice. Intercourse, PA: Good Books.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "differenzierung": {
+          "leichter": "Fragen mündlich stellen und Stichworte notieren; das Kind darf zeichnen.",
+          "schwerer": "Die Sicht der betroffenen Person aufschreiben: „Was würde sie erzählen?“"
+        },
+        "impulse": ["Wann hättest du noch anders handeln können?", "Was braucht die andere Person jetzt?", "Wer kann dir beim Wiedergutmachen helfen?"],
+        "tipps": [
+          "Betroffene Kinder ebenfalls fragen: „Was war am schlimmsten? Was brauchst du jetzt?“",
+          "Wiedergutmachung nicht verordnen: Das Kind wählt sie, die betroffene Person stimmt zu."
+        ],
+        "achtung": "Wenn deutlich wird, dass das Kind selbst bedroht, gemobbt oder verletzt wird: nicht weiter nachfragen, nach dem internen Ablauf handeln und die Leitung (Responsable) informieren.",
+        "material": "Ruhiger Ort für das Gespräch"
+      }
+    }
+  },
+  {
+    "id": "verantwortung-uebernehmen",
+    "bereich": "verhalten",
+    "thema": "wiedergutmachung",
+    "stufen": ["ES"],
+    "sozialform": ["einzeln", "gruppe"],
+    "dauer": "45 Min.",
+    "eldib": ["V-27", "SOZ-37", "K-31", "V-33"],
+    "schlagworte": ["Verantwortung", "Wiedergutmachung", "Entschuldigung", "Perspektivwechsel", "Klärungsgespräch"],
+    "bild": "icon:heart-handshake",
+    "verwandt": ["was-ist-passiert", "das-war-nicht-okay"],
+    "de": {
+      "titel": "Verantwortung übernehmen",
+      "untertitel": "Verantwortung heißt nicht, sich klein zu machen. Es heißt: sehen, was man ausgelöst hat – und etwas dafür tun, dass es wieder gut wird.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Drei Leitfragen",
+          "text": "Wer wurde verletzt? Was brauchen die Betroffenen jetzt? Wer muss was tun, damit es wieder gut wird?"
+        },
+        {
+          "art": "geschichte",
+          "titel": "Das Video",
+          "text": "Nach dem Sportunterricht teilt Mehmet (15) in der Klassengruppe ein Video: Nora reißt beim Hochsprung die Latte und landet unglücklich auf der Matte. Er schreibt dazu: „Legendär.“ Innerhalb einer Stunde gibt es Dutzende Reaktionen, die meisten lachend. Am nächsten Tag fehlt Nora. Mehmet sagt zuerst: „War doch nur Spaß, alle haben gelacht.“ Inzwischen hat er ein schlechtes Gewissen.",
+          "bild": "figur:ben:besorgt"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wer ist von Mehmets Video betroffen – und wie?",
+          "hinweis": "Denke auch an die Klasse, an Mehmet selbst und an Erwachsene."
+        },
+        {
+          "art": "tabelle",
+          "spalten": ["Wer?", "Was hat sich für sie oder ihn verändert?", "Was braucht sie oder er jetzt?"],
+          "breiten": [0.9, 2, 2],
+          "zeilen": 3,
+          "beispiel": ["Nora", "Sie schämt sich und will nicht in die Schule.", "dass das Video verschwindet, eine ehrliche Entschuldigung"]
+        },
+        { "art": "aufgabe", "text": "Übernimmt der Satz Verantwortung – oder weicht er aus?" },
+        {
+          "art": "einschaetzung",
+          "optionen": ["übernimmt", "weicht aus"],
+          "items": [
+            "„War doch nur Spaß, alle haben gelacht.“",
+            "„Ich habe das Video geteilt. Das war nicht in Ordnung.“",
+            "„Es tut mir leid, falls sich jemand angegriffen fühlt.“",
+            "„Die anderen haben es ja auch weitergeschickt.“",
+            "„Ich lösche das Video und schreibe in die Gruppe, dass es falsch war.“",
+            "„Ich verstehe, dass du dich vor der ganzen Klasse bloßgestellt gefühlt hast.“"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Plane eine Wiedergutmachung – für Mehmet oder für eine eigene Situation.",
+          "hinweis": "Eine gute Wiedergutmachung passt zum Schaden und wird mit der betroffenen Person abgestimmt."
+        },
+        {
+          "art": "schritte",
+          "stil": "liste",
+          "linien": 2,
+          "items": [
+            { "titel": "Anerkennen", "text": "Was genau habe ich getan? Was hat es ausgelöst?" },
+            { "titel": "Wiedergutmachen", "text": "Was tue ich konkret – und bis wann?" },
+            { "titel": "Verändern", "text": "Was mache ich künftig anders?" }
+          ]
+        },
+        { "art": "aufgabe", "text": "Bereite das Gespräch mit der betroffenen Person vor. Ergänze die Sätze." },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Ich möchte mit dir über … sprechen.",
+            "Mir ist klar geworden, dass …",
+            "Es tut mir leid, dass …",
+            "Ich möchte es wiedergutmachen, indem …"
+          ],
+          "linien": 2
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Gut vorbereitet ins Gespräch",
+          "punkte": [
+            "Wähle einen ruhigen Ort und Zeitpunkt – nicht zwischen Tür und Angel.",
+            "Frag nach einer Begleitung, zum Beispiel einer Lehrperson oder jemandem vom SePAS.",
+            "Hör zu, ohne dich zu verteidigen. Die andere Person darf wütend sein.",
+            "Frag am Ende: „Was brauchst du noch von mir?“",
+            "Will sie (noch) nicht reden, respektiere das – und tu trotzdem, was du versprochen hast."
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen unterscheiden Verantwortung von Ausreden, erfassen die Folgen eines Vorfalls für alle Beteiligten, planen eine konkrete Wiedergutmachung und bereiten ein klärendes Gespräch vor.",
+        "ablauf": [
+          "Einstieg (5 Min.): Die drei Leitfragen vorstellen. Betonen: Es geht um Folgen und Lösungen, nicht um Schuld und Strafe.",
+          "Fallbeispiel lesen, Aufgabe 1 zu zweit (10 Min.). Im Plenum sammeln, wer alles betroffen ist.",
+          "Aufgabe 2 (5 Min.): Einzeln einordnen, dann vergleichen. Klären, warum „falls sich jemand angegriffen fühlt“ keine echte Entschuldigung ist.",
+          "Aufgaben 3–4 (15 Min.): Mehmets Fall oder eine eigene Situation wählen. Eigene Situationen nicht im Plenum besprechen.",
+          "Bei einem echten Vorfall: Das Gespräch begleitet und freiwillig führen; die betroffene Person entscheidet, ob und wann."
+        ],
+        "hintergrund": "Restorative Justice versteht Fehlverhalten vor allem als Verletzung von Menschen und Beziehungen. Daraus ergeben sich drei Leitfragen: Wer wurde geschädigt? Was brauchen die Betroffenen? Wer ist verpflichtet, den Schaden wiedergutzumachen (Zehr, 2002)? Verantwortung heißt in diesem Verständnis nicht, eine Strafe hinzunehmen, sondern die Folgen des eigenen Handelns zu verstehen und aktiv zu ihrer Behebung beizutragen. In der Schule gelingt das am besten mit einer Haltung, die klare Erwartungen mit Unterstützung verbindet (Wachtel, 2016). Jugendliche reagieren besonders empfindlich auf das Urteil Gleichaltriger und auf Beschämung (Steinberg, 2014); Klärungen sollten deshalb vertraulich und respektvoll stattfinden.",
+        "quellen": [
+          "Zehr, H. (2002). The Little Book of Restorative Justice. Intercourse, PA: Good Books.",
+          "Wachtel, T. (2016). Defining Restorative. Bethlehem, PA: International Institute for Restorative Practices.",
+          "Steinberg, L. (2014). Age of Opportunity: Lessons from the New Science of Adolescence. Boston: Houghton Mifflin Harcourt."
+        ],
+        "differenzierung": {
+          "leichter": "Nur Aufgaben 1 und 2 bearbeiten, dann die Satzanfänge aus Aufgabe 4 mündlich üben.",
+          "schwerer": "Das Gespräch zu dritt spielen: Eine Person spricht, eine antwortet, eine beobachtet und gibt Rückmeldung."
+        },
+        "impulse": [
+          "Was unterscheidet eine Entschuldigung von einer Ausrede?",
+          "Warum ist Verantwortung übernehmen oft so schwer?",
+          "Was tun, wenn die andere Person nicht reden will?"
+        ],
+        "tipps": [
+          "Mit dem Fallbeispiel beginnen: Die Distanz erleichtert ehrliche Antworten.",
+          "Wiedergutmachung muss zum Schaden passen: Auf ein öffentliches Video gehört eine öffentliche Klarstellung."
+        ],
+        "achtung": "Steckt hinter einem Vorfall wiederholtes Mobbing oder ein deutliches Machtgefälle, reicht ein Klärungsgespräch nicht: nach dem Schulkonzept gegen Mobbing handeln und die zuständige Leitung (Responsable) informieren."
+      }
+    },
+    "fr": {
+      "titel": "Assumer ses actes",
+      "untertitel": "Assumer, ce n’est pas se rabaisser. C’est voir ce que l’on a provoqué – et agir pour que les choses s’arrangent.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Trois questions clés",
+          "text": "Qui a été blessé ? De quoi les personnes concernées ont-elles besoin maintenant ? Qui doit faire quoi pour réparer ?"
+        },
+        {
+          "art": "geschichte",
+          "titel": "La vidéo",
+          "text": "Après le cours de sport, Mehmet (15 ans) partage une vidéo dans le groupe de la classe : Nora fait tomber la barre au saut en hauteur et atterrit maladroitement sur le tapis. Il ajoute : « Légendaire. » En une heure, la vidéo récolte des dizaines de réactions, presque toutes moqueuses. Le lendemain, Nora est absente. Mehmet dit d’abord : « C’était pour rire, tout le monde a ri. » Depuis, il a mauvaise conscience.",
+          "bild": "figur:ben:besorgt"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Qui est touché par la vidéo de Mehmet – et de quelle manière ?",
+          "hinweis": "Pense aussi à la classe, à Mehmet lui-même et aux adultes."
+        },
+        {
+          "art": "tabelle",
+          "spalten": ["Qui ?", "Qu’est-ce qui a changé pour cette personne ?", "De quoi a-t-elle besoin maintenant ?"],
+          "breiten": [0.9, 2, 2],
+          "zeilen": 3,
+          "beispiel": ["Nora", "Elle a honte et ne veut plus venir à l’école.", "que la vidéo disparaisse, des excuses sincères"]
+        },
+        { "art": "aufgabe", "text": "Cette phrase assume-t-elle la responsabilité – ou l’esquive-t-elle ?" },
+        {
+          "art": "einschaetzung",
+          "optionen": ["assume", "esquive"],
+          "items": [
+            "« C’était pour rire, tout le monde a ri. »",
+            "« J’ai partagé la vidéo. Ce n’était pas correct. »",
+            "« Désolé si quelqu’un s’est senti visé. »",
+            "« Les autres l’ont transférée aussi. »",
+            "« Je supprime la vidéo et j’écris dans le groupe que c’était une erreur. »",
+            "« Je comprends que tu te sois sentie humiliée devant toute la classe. »"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Planifie une réparation – pour Mehmet ou pour une situation que tu as vécue.",
+          "hinweis": "Une bonne réparation correspond au tort causé et se décide avec la personne concernée."
+        },
+        {
+          "art": "schritte",
+          "stil": "liste",
+          "linien": 2,
+          "items": [
+            { "titel": "Reconnaître", "text": "Qu’ai-je fait exactement ? Qu’est-ce que cela a provoqué ?" },
+            { "titel": "Réparer", "text": "Que vais-je faire concrètement – et d’ici quand ?" },
+            { "titel": "Changer", "text": "Que ferai-je autrement à l’avenir ?" }
+          ]
+        },
+        { "art": "aufgabe", "text": "Prépare la conversation avec la personne concernée. Complète les phrases." },
+        {
+          "art": "satzanfaenge",
+          "items": ["J’aimerais te parler de …", "J’ai compris que …", "Je suis désolé·e de …", "J’aimerais réparer en …"],
+          "linien": 2
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Bien préparer la conversation",
+          "punkte": [
+            "Choisis un moment et un lieu calmes – pas entre deux portes.",
+            "Demande à quelqu’un de t’accompagner, par exemple un·e enseignant·e ou une personne du SePAS.",
+            "Écoute sans te défendre. L’autre a le droit d’être en colère.",
+            "Pour finir, demande : « De quoi as-tu encore besoin de ma part ? »",
+            "Si la personne ne veut pas (encore) parler, respecte-le – et fais quand même ce que tu as promis."
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes distinguent responsabilité et justifications, mesurent les conséquences d’un incident pour toutes les personnes concernées, planifient une réparation concrète et préparent une conversation de clarification.",
+        "ablauf": [
+          "Entrée en matière (5 min) : présenter les trois questions clés. Souligner qu’il s’agit de conséquences et de solutions, pas de faute ni de punition.",
+          "Lire le cas, exercice 1 à deux (10 min). En plénière, recenser toutes les personnes concernées.",
+          "Exercice 2 (5 min) : classer seul·e, puis comparer. Expliquer pourquoi « désolé si quelqu’un s’est senti visé » ne sont pas de vraies excuses.",
+          "Exercices 3–4 (15 min) : choisir le cas de Mehmet ou une situation personnelle. Ne pas discuter les situations personnelles en plénière.",
+          "En cas d’incident réel : mener la conversation accompagnée et sur base volontaire. La personne concernée décide si et quand."
+        ],
+        "hintergrund": "La justice restaurative considère une faute avant tout comme une atteinte aux personnes et aux relations. Il en découle trois questions : Qui a été lésé ? De quoi les personnes concernées ont-elles besoin ? Qui a l’obligation de réparer (Zehr, 2002) ? Assumer ne signifie donc pas subir une sanction, mais comprendre les conséquences de ses actes et contribuer activement à les réparer. À l’école, cela fonctionne le mieux avec une posture qui associe des attentes claires à un réel soutien (Wachtel, 2016). Les jeunes sont particulièrement sensibles au regard de leurs pairs et à la honte (Steinberg, 2014). Les clarifications doivent donc se faire dans la confidentialité et le respect.",
+        "quellen": [
+          "Zehr, H. (2002). The Little Book of Restorative Justice. Intercourse, PA: Good Books.",
+          "Wachtel, T. (2016). Defining Restorative. Bethlehem, PA: International Institute for Restorative Practices.",
+          "Steinberg, L. (2014). Age of Opportunity: Lessons from the New Science of Adolescence. Boston: Houghton Mifflin Harcourt."
+        ],
+        "differenzierung": {
+          "leichter": "Traiter seulement les exercices 1 et 2, puis s’entraîner à l’oral avec les débuts de phrases de l’exercice 4.",
+          "schwerer": "Jouer la conversation à trois : une personne parle, une répond, une observe et fait un retour."
+        },
+        "impulse": [
+          "Qu’est-ce qui distingue des excuses d’une justification ?",
+          "Pourquoi est-il souvent si difficile d’assumer ?",
+          "Que faire si l’autre ne veut pas parler ?"
+        ],
+        "tipps": [
+          "Commencer par le cas : la distance facilite des réponses honnêtes.",
+          "La réparation doit correspondre au tort : une vidéo publique appelle une rectification publique."
+        ],
+        "achtung": "Si l’incident cache un harcèlement répété ou un net déséquilibre de pouvoir, une conversation de clarification ne suffit pas : agir selon le concept de l’école contre le harcèlement et informer la direction compétente (responsable)."
+      }
+    }
+  },
+  {
+    "id": "mein-kleines-ziel",
+    "bereich": "verhalten",
+    "thema": "ziele",
+    "stufen": ["C2"],
+    "sozialform": ["einzeln"],
+    "dauer": "20 Min., dann täglich 2 Min.",
+    "eldib": ["V-16", "V-22", "K-18"],
+    "schlagworte": ["Ziel", "Wochenplan", "Sternplan", "Selbstbeobachtung", "Erfolg"],
+    "bild": "icon:target",
+    "verwandt": ["ziel-treppe", "woop-plan"],
+    "de": {
+      "titel": "Mein kleines Ziel",
+      "untertitel": "Ein gutes Ziel ist klein und klar. Man kann sehen, ob es klappt.",
+      "bausteine": [
+        { "art": "aufgabe", "text": "Suche dir ein Ziel aus. Kreuze an oder schreibe selbst.", "symbole": ["ankreuzen", "schreiben"] },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "frei": 2,
+          "items": [
+            "Ich melde mich und warte.",
+            "Ich räume meinen Platz auf.",
+            "Ich frage nach Hilfe.",
+            "Ich lasse andere ausreden.",
+            "Ich bleibe auf meinem Platz.",
+            "Ich stelle mich ruhig an."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schreibe dein Ziel auf. Hat es geklappt? Male den Stern an.",
+          "hinweis": "Ein Erwachsener schaut jeden Tag mit dir auf den Plan.",
+          "symbole": ["schreiben", "malen"]
+        },
+        { "art": "plan", "ziel": "", "zeilen": ["vor der Pause", "nach der Pause"], "symbol": "stern" },
+        { "art": "aufgabe", "text": "Wer hilft dir? Kreuze an oder schreibe.", "symbole": ["ankreuzen", "schreiben"] },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "frei": 2,
+          "items": ["meine Lehrerin / mein Lehrer", "ein Kind aus meiner Klasse", "meine Familie", "jemand in der Maison Relais"]
+        },
+        { "art": "aufgabe", "text": "Am Freitag: Wie hat es geklappt?", "symbole": ["einkreisen"] },
+        { "art": "skala", "von": "gar nicht", "bis": "sehr gut", "stufen": 5, "gesichter": true }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder wählen ein kleines, beobachtbares Verhaltensziel, verfolgen es eine Woche lang mit einem Sternplan und erleben, dass sie mit Unterstützung Fortschritte machen.",
+        "ablauf": [
+          "Einstieg (5 Min.): Zwei Ziele vergleichen: „Ich bin lieb“ und „Ich melde mich und warte“. Fragen: „Bei welchem Ziel kann man sehen, ob es klappt?“",
+          "Aufgabe 1: Das Kind wählt ein Ziel, das es fast schon kann. Nur ein Ziel pro Woche.",
+          "Aufgabe 2: Das Ziel in die Zeile schreiben, bei Bedarf vorschreiben. Festlegen, wann der Plan angeschaut wird.",
+          "Aufgabe 3: Eine Helferin oder einen Helfer bestimmen und ein kleines Erinnerungszeichen verabreden.",
+          "Täglich (2 Min.): Vor und nach der Pause kurz gemeinsam einschätzen. Jeden Stern konkret loben.",
+          "Am Freitag: Aufgabe 4 ausfüllen und entscheiden: Ziel behalten, etwas größer machen oder ein neues wählen."
+        ],
+        "hintergrund": "Kinder im Cycle 2 können ihr Verhalten am besten steuern, wenn das Ziel klein, positiv formuliert und beobachtbar ist: „Ich melde mich und warte“ statt „Ich bin nicht mehr so laut“. Kurze Zeiträume und eine Rückmeldung mehrmals am Tag machen Fortschritte sichtbar; so arbeitet auch das Check-in/Check-out-Verfahren, bei dem ein Kind täglich mit einer vertrauten erwachsenen Person auf wenige Ziele schaut (Crone, Hawken & Horner, 2010). Erfolge zählen dabei mehr als Fehler: Wer ein kleines Ziel erreicht, traut sich das nächste eher zu (Bandura, 1977). Lob wirkt am besten, wenn es sofort kommt und das Verhalten genau benennt (Kazdin, 2008).",
+        "quellen": [
+          "Crone, D. A., Hawken, L. S. & Horner, R. H. (2010). Responding to Problem Behavior in Schools: The Behavior Education Program (2nd ed.). New York: Guilford.",
+          "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
+          "Kazdin, A. E. (2008). The Kazdin Method for Parenting the Defiant Child. Boston: Houghton Mifflin."
+        ],
+        "differenzierung": {
+          "leichter": "Nur einen Zeitraum am Tag beobachten. Das Ziel als Bildkarte auf den Tisch kleben.",
+          "schwerer": "Das Kind schätzt sich zuerst selbst ein, dann die Lehrperson. Stimmen die Sterne überein?"
+        },
+        "impulse": ["Woran merkst du, dass du dein Ziel geschafft hast?", "Was hat dir heute geholfen?", "Welches Ziel möchtest du als Nächstes ausprobieren?"],
+        "tipps": [
+          "Das Ziel so wählen, dass das Kind schon in der ersten Woche viele Sterne sammelt. Erfolg motiviert mehr als Strenge.",
+          "Nicht geschaffte Zeiträume einfach leer lassen – nichts durchstreichen, keine Sterne wegnehmen."
+        ],
+        "material": "Buntstifte; optional eine Bildkarte mit dem Ziel für den Tisch"
+      }
+    }
+  },
+  {
+    "id": "ziel-treppe",
+    "bereich": "verhalten",
+    "thema": "ziele",
+    "stufen": ["C3", "C4"],
+    "sozialform": ["einzeln", "gruppe"],
+    "dauer": "40–45 Min.",
+    "eldib": ["V-22", "V-25", "SOZ-26"],
+    "schlagworte": ["Ziele", "Teilschritte", "Hindernisse", "Helfer", "Belohnung"],
+    "bild": "icon:stairs-up",
+    "verwandt": ["mein-kleines-ziel", "woop-plan"],
+    "de": {
+      "titel": "Meine Ziel-Treppe",
+      "untertitel": "Große Ziele erreicht man Stufe für Stufe. Plane deine Treppe – mit Hindernissen, Helfern und kleinen Belohnungen.",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "Mathis will fair spielen",
+          "text": "Mathis spielt in der Pause gern Fußball. Wenn seine Mannschaft verliert, schimpft er und tritt gegen den Ball. Dann wollen die anderen nicht mehr mit ihm spielen. Mathis setzt sich ein Ziel: „Ich spiele fair, auch wenn wir verlieren.“ Seine erste Stufe: In einer Pause bleibt er ruhig, wenn ein Tor gegen ihn fällt. Sein Freund Pol erinnert ihn mit einem Daumen hoch.",
+          "bild": "figur:tom:ruhig"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was ist dein großes Ziel? Schreibe es so auf, dass man sehen kann, ob du es schaffst.",
+          "symbole": ["schreiben"]
+        },
+        { "art": "satzanfaenge", "items": ["Mein Ziel: Ich …"], "linien": 2 },
+        {
+          "art": "ankreuzen",
+          "titel": "Prüfe dein Ziel:",
+          "items": [
+            "Es sagt, was ich tun will – nicht, was ich lassen will.",
+            "Man kann sehen oder hören, ob ich es schaffe.",
+            "Ich kann es in ein paar Wochen schaffen."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Baue deine Ziel-Treppe. Beginne unten mit einem kleinen ersten Schritt.",
+          "hinweis": "Jede Stufe ist ein bisschen schwerer als die davor. Die oberste Stufe ist dein Ziel.",
+          "symbole": ["schreiben"]
+        },
+        { "art": "leiter", "stufen": 5, "oben": "mein Ziel", "unten": "mein erster Schritt" },
+        {
+          "art": "aufgabe",
+          "text": "Was kann schwierig werden? Plane vor, was du dann tust und wer dir hilft.",
+          "symbole": ["nachdenken", "schreiben"]
+        },
+        {
+          "art": "tabelle",
+          "spalten": ["Das kann schwierig werden", "Das mache ich dann", "Wer hilft mir?"],
+          "breiten": [1.6, 1.8, 1.1],
+          "zeilen": 3,
+          "beispiel": ["Wir verlieren, und ich werde sauer.", "Ich atme aus und sage: „Nächstes Mal.“", "Pol zeigt mir den Daumen."]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wie feierst du, wenn du eine Stufe geschafft hast? Kreuze an oder schreibe.",
+          "symbole": ["ankreuzen", "schreiben"]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "frei": 2,
+          "items": [
+            "Ich erzähle es meiner Familie.",
+            "Ich male einen Stern auf die Stufe.",
+            "Ich sage mir: „Das habe ich geschafft.“",
+            "Ich suche das nächste Pausenspiel aus."
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Wenn eine Stufe nicht klappt",
+          "text": "Das ist normal. Übe die Stufe noch eine Woche oder mache sie kleiner. Auch auf einer echten Treppe geht man manchmal eine Stufe zurück."
+        },
+        { "art": "aufgabe", "text": "Unterschreibe deine Abmachung – zusammen mit deiner Helferin oder deinem Helfer.", "symbole": ["schreiben"] },
+        {
+          "art": "vertrag",
+          "titel": "Meine Abmachung",
+          "text": "Ich, ___, gehe ab ___ Stufe für Stufe auf mein Ziel zu. Jeden ___ schaue ich mit ___, wie weit ich schon bin.",
+          "unterschriften": ["Ich", "Helferin / Helfer"]
+        },
+        { "art": "rueckblick" }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder zerlegen ein persönliches Verhaltensziel in kleine Stufen, planen, was sie bei Hindernissen tun und wer ihnen hilft, und legen fest, wie sie Erfolge feiern.",
+        "ablauf": [
+          "Einstieg (5 Min.): Die Geschichte lesen. Fragen: „Warum fängt Mathis mit einer so kleinen Stufe an?“",
+          "Aufgabe 1 (5 Min.): Ziel formulieren und mit den drei Prüffragen verbessern, z. B. „ruhig bleiben, wenn wir verlieren“ statt „nicht mehr schimpfen“.",
+          "Aufgabe 2 (10 Min.): Die Treppe von unten füllen. Die erste Stufe muss in einer Woche sicher gelingen.",
+          "Aufgaben 3–4 (10 Min.): Hindernisse, Helfer und kleine Feiern planen. Die Helferin oder den Helfer gleich fragen.",
+          "Aufgabe 5: Abmachung unterschreiben. Wöchentlich nachschauen und die Treppe bei Bedarf anpassen."
+        ],
+        "hintergrund": "Große Ziele wirken für Kinder oft unerreichbar. In kleine Stufen zerlegt, werden sie überschaubar – und jede geschaffte Stufe ist eine Erfolgserfahrung, die das Vertrauen in die eigene Wirksamkeit stärkt (Bandura, 1977). Wer Hindernisse vorher bedenkt und mit einer konkreten Handlung verbindet, setzt Vorsätze häufiger um (Gollwitzer, 1999). Selbstmanagement-Ansätze arbeiten mit drei Bausteinen: sich selbst beobachten, das Ergebnis bewerten und sich selbst verstärken (Kanfer, Reinecker & Schmelzer, 2012). Belohnungen sollten klein, zeitnah und selbst gewählt sein; sie unterstützen, solange das Gefühl, etwas selbst geschafft zu haben, im Vordergrund bleibt (Deci & Ryan, 2000).",
+        "quellen": [
+          "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503.",
+          "Kanfer, F. H., Reinecker, H. & Schmelzer, D. (2012). Selbstmanagement-Therapie (5. Aufl.). Berlin: Springer.",
+          "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268."
+        ],
+        "differenzierung": {
+          "leichter": "Nur drei Stufen planen; die Lehrperson schreibt mit. Belohnungen als Bildkarten anbieten.",
+          "schwerer": "Zu jeder Stufe ein Datum notieren und nach jeder Woche einen Satz schreiben: Was hat geholfen?"
+        },
+        "impulse": [
+          "Woran merkst du, dass du eine Stufe geschafft hast?",
+          "Was tust du, wenn eine Stufe nicht klappt?",
+          "Wer hat dir schon einmal geholfen, etwas Schweres zu lernen?"
+        ],
+        "tipps": [
+          "Rückschritte vorher ansprechen: Auf einer Treppe darf man auch mal eine Stufe zurückgehen.",
+          "Die Treppe sichtbar aufbewahren, z. B. im Heft oder an der Pinnwand – wenn das Kind einverstanden ist."
+        ],
+        "material": "Optional: Klebepunkte oder Sterne für geschaffte Stufen"
+      }
+    }
+  },
+  {
+    "id": "woop-plan",
+    "bereich": "verhalten",
+    "thema": "ziele",
+    "stufen": ["ES"],
+    "sozialform": ["einzeln", "klasse"],
+    "dauer": "45 Min.",
+    "eldib": ["V-29", "V-32", "V-22", "KOG-61"],
+    "schlagworte": ["WOOP", "Ziele", "Mentales Kontrastieren", "Wenn-dann-Plan", "Selbststeuerung"],
+    "bild": "motiv:berg",
+    "verwandt": ["ziel-treppe", "mein-kleines-ziel"],
+    "de": {
+      "titel": "Ziele erreichen mit WOOP",
+      "untertitel": "Sich ein Ziel schön auszumalen, reicht nicht. WOOP verbindet den Wunsch mit einem ehrlichen Blick auf das, was im Weg steht.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Warum nicht einfach positiv denken?",
+          "text": "Wer sich nur ausmalt, wie schön das Ziel ist, fühlt sich schon halb angekommen – und strengt sich weniger an. Wer auch das Hindernis sieht, weiß, wo er handeln muss."
+        },
+        {
+          "art": "geschichte",
+          "titel": "Zoés WOOP",
+          "text": "Zoé (16) wird in Diskussionen schnell laut. Ihr Wunsch: in den nächsten vier Wochen ruhig bleiben, auch wenn es hitzig wird. Das beste Ergebnis: Die anderen hören ihr zu, und sie ärgert sich hinterher nicht über sich selbst. Ihr Hindernis: Wenn ihr jemand widerspricht, wird sie sofort laut. Ihr Plan: Wenn ihre Stimme lauter wird, atmet sie einmal aus und fragt: „Wie meinst du das?“",
+          "bild": "figur:jana:ruhig"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Mach deinen eigenen WOOP.",
+          "hinweis": "Nimm dir für jeden Schritt eine Minute. Schließ die Augen und stell dir alles so genau wie möglich vor."
+        },
+        {
+          "art": "schritte",
+          "linien": 2,
+          "items": [
+            { "titel": "W – Wunsch", "text": "Was möchtest du in den nächsten Wochen erreichen? Herausfordernd, aber machbar." },
+            { "titel": "O – Bestes Ergebnis", "text": "Was wäre das Beste daran? Stell es dir genau vor: Wie fühlt es sich an?" },
+            { "titel": "O – Hindernis", "text": "Was in dir selbst könnte dich bremsen? Eine Gewohnheit, ein Gefühl, ein Gedanke." }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "P – Plan: Verbinde dein wichtigstes Hindernis mit einer konkreten Handlung.",
+          "hinweis": "Das Wenn beschreibt eine Situation, die du erkennst. Das Dann ist eine Handlung, die du sofort ausführen kannst."
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [{ "wenn": "Wenn meine Stimme in einer Diskussion lauter wird,", "dann": "atme ich einmal aus und frage: „Wie meinst du das?“" }]
+        },
+        { "art": "aufgabe", "text": "Prüfe deinen Wunsch." },
+        { "art": "skala", "frage": "Wie wichtig ist dir dein Wunsch?", "von": "gar nicht", "bis": "sehr wichtig", "stufen": 11 },
+        { "art": "skala", "frage": "Wie realistisch ist er in der geplanten Zeit?", "von": "gar nicht", "bis": "sehr realistisch", "stufen": 11 },
+        { "art": "text", "text": "Liegt ein Wert unter 5? Dann passe deinen Wunsch an – kleiner oder genauer.", "klein": true },
+        { "art": "aufgabe", "text": "Teste deinen Plan eine Woche lang. Kreuze jeden Tag an, was zutrifft." },
+        { "art": "plan", "zeilen": ["Das Hindernis ist aufgetaucht.", "Ich habe meinen Plan genutzt."], "symbol": "kasten" },
+        { "art": "aufgabe", "text": "Nach einer Woche: Was nimmst du mit?" },
+        { "art": "satzanfaenge", "items": ["Gut funktioniert hat …", "An meinem Plan ändere ich …"], "linien": 2 },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "WOOP im Alltag",
+          "text": "Du kannst WOOP für vieles nutzen: für ein schwieriges Gespräch, fürs Training oder für den Abend vor einer Prüfung. Mit etwas Übung dauert es nur fünf Minuten – auch im Kopf, ohne Blatt."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen lernen die WOOP-Methode kennen, formulieren einen Wunsch mit bestem Ergebnis und innerem Hindernis, übersetzen das Hindernis in einen Wenn-dann-Plan und erproben ihn eine Woche lang.",
+        "ablauf": [
+          "Einstieg (5 Min.): „Hilft es, sich ein Ziel möglichst schön auszumalen?“ Meinungen sammeln, dann den Kasten lesen.",
+          "Zoés Beispiel besprechen: Warum liegt ihr Hindernis in ihr selbst und nicht bei den anderen?",
+          "Aufgabe 1 (10 Min.): Allein und in Ruhe arbeiten, pro Schritt etwa eine Minute mit geschlossenen Augen vorstellen. Nicht vorlesen lassen.",
+          "Aufgabe 2 (5 Min.): Plan zu zweit prüfen: Ist das Wenn eine erkennbare Situation, das Dann eine konkrete Handlung?",
+          "Aufgabe 3: Liegt ein Wert unter 5, den Wunsch anpassen. Aufgaben 4–5: eine Woche erproben, dann kurz nachbesprechen."
+        ],
+        "hintergrund": "Positive Zukunftsfantasien allein können die Anstrengung sogar senken, weil sich das Ziel schon halb erreicht anfühlt (Oettingen, 2014). Wirksamer ist das mentale Kontrastieren: erst das gewünschte Ergebnis vorstellen, dann das eigene innere Hindernis. Ist das Ziel realistisch, entsteht so Energie zum Handeln; ist es unrealistisch, fällt es leichter, das Ziel anzupassen. WOOP verbindet dieses Kontrastieren mit Wenn-dann-Plänen, die eine kritische Situation mit einer vorbereiteten Handlung verknüpfen und die Umsetzung von Vorsätzen deutlich verbessern (Gollwitzer, 1999). Selbst gewählte Ziele werden zudem ausdauernder verfolgt als vorgegebene (Deci & Ryan, 2000).",
+        "quellen": [
+          "Oettingen, G. (2014). Rethinking Positive Thinking. New York: Current.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503.",
+          "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268."
+        ],
+        "differenzierung": {
+          "leichter": "Nur Wunsch, Hindernis und Plan bearbeiten. Beispiele für Wünsche vorgeben.",
+          "schwerer": "Für zwei verschiedene Hindernisse je einen Plan formulieren und nach einer Woche vergleichen."
+        },
+        "impulse": ["Warum sollte das Hindernis in dir selbst liegen?", "Was unterscheidet einen Wunsch von einem Plan?", "Wo könntest du WOOP noch einsetzen?"],
+        "tipps": ["WOOP ist privat: Niemand muss seinen Wunsch vorlesen.", "Die Methode lässt sich in fünf Minuten wiederholen, z. B. zu Beginn jeder Woche."],
+        "achtung": "Wenn Wünsche auf starke Belastungen hinweisen (z. B. „weniger Angst haben“, „nicht mehr so traurig sein“), das Einzelgespräch suchen und bei Bedarf den SePAS einbeziehen."
+      }
+    },
+    "fr": {
+      "titel": "Atteindre ses objectifs avec WOOP",
+      "untertitel": "Imaginer son objectif ne suffit pas. WOOP associe le souhait à un regard honnête sur ce qui se met en travers du chemin.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Pourquoi ne pas simplement penser positif ?",
+          "text": "Quand on imagine seulement à quel point l’objectif est beau, on se sent déjà à moitié arrivé – et on fait moins d’efforts. En regardant aussi l’obstacle, on sait où il faut agir."
+        },
+        {
+          "art": "geschichte",
+          "titel": "Le WOOP de Zoé",
+          "text": "Zoé (16 ans) s’emporte vite dans les discussions. Son souhait : rester calme pendant les quatre prochaines semaines, même quand le ton monte. Le meilleur résultat : les autres l’écoutent, et elle ne s’en veut plus après coup. Son obstacle : dès qu’on la contredit, elle hausse la voix. Son plan : si sa voix monte, elle expire une fois et demande : « Qu’est-ce que tu veux dire par là ? »",
+          "bild": "figur:jana:ruhig"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Fais ton propre WOOP.",
+          "hinweis": "Prends une minute par étape. Ferme les yeux et imagine tout le plus précisément possible."
+        },
+        {
+          "art": "schritte",
+          "linien": 2,
+          "items": [
+            { "titel": "W – Souhait", "text": "Que veux-tu atteindre dans les prochaines semaines ? Un défi, mais réalisable." },
+            { "titel": "O – Meilleur résultat", "text": "Qu’est-ce qui serait le mieux ? Imagine-le précisément : qu’est-ce que tu ressens ?" },
+            { "titel": "O – Obstacle", "text": "Qu’est-ce qui, en toi, pourrait te freiner ? Une habitude, une émotion, une pensée." }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "P – Plan : relie ton obstacle principal à une action concrète.",
+          "hinweis": "Le « si » décrit une situation que tu reconnais. Le « alors » est une action que tu peux faire tout de suite."
+        },
+        {
+          "art": "wennDann",
+          "wenn": "Si …",
+          "dann": "… alors",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Si ma voix monte pendant une discussion,",
+              "dann": "j’expire une fois et je demande : « Qu’est-ce que tu veux dire par là ? »"
+            }
+          ]
+        },
+        { "art": "aufgabe", "text": "Vérifie ton souhait." },
+        {
+          "art": "skala",
+          "frage": "À quel point ce souhait est-il important pour toi ?",
+          "von": "pas du tout",
+          "bis": "très important",
+          "stufen": 11
+        },
+        {
+          "art": "skala",
+          "frage": "À quel point est-il réaliste dans le temps prévu ?",
+          "von": "pas du tout",
+          "bis": "tout à fait réaliste",
+          "stufen": 11
+        },
+        { "art": "text", "text": "Une valeur sous 5 ? Adapte ton souhait : plus petit ou plus précis.", "klein": true },
+        { "art": "aufgabe", "text": "Teste ton plan pendant une semaine. Coche chaque jour ce qui est vrai." },
+        { "art": "plan", "zeilen": ["L’obstacle est apparu.", "J’ai utilisé mon plan."], "symbol": "kasten" },
+        { "art": "aufgabe", "text": "Après une semaine : qu’est-ce que tu retiens ?" },
+        { "art": "satzanfaenge", "items": ["Ce qui a bien marché, c’est …", "Dans mon plan, je change …"], "linien": 2 },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "WOOP au quotidien",
+          "text": "Tu peux utiliser WOOP pour beaucoup de choses : une conversation difficile, l’entraînement, la veille d’un examen. Avec un peu de pratique, cela prend cinq minutes – même dans ta tête, sans feuille."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes découvrent la méthode WOOP, formulent un souhait avec son meilleur résultat et son obstacle intérieur, transforment l’obstacle en plan « si … alors » et le testent pendant une semaine.",
+        "ablauf": [
+          "Entrée en matière (5 min) : « Est-ce que ça aide d’imaginer son objectif sous son meilleur jour ? » Recueillir les avis, puis lire l’encadré.",
+          "Discuter l’exemple de Zoé : pourquoi son obstacle se trouve-t-il en elle, et non chez les autres ?",
+          "Exercice 1 (10 min) : travail individuel au calme, environ une minute par étape, les yeux fermés. Ne pas faire lire les réponses.",
+          "Exercice 2 (5 min) : vérifier le plan à deux. Le « si » décrit-il une situation reconnaissable, le « alors » une action concrète ?",
+          "Exercice 3 : si une valeur est sous 5, adapter le souhait. Exercices 4–5 : tester pendant une semaine, puis faire un bref bilan."
+        ],
+        "hintergrund": "Les projections positives, à elles seules, peuvent même réduire l’effort, car l’objectif semble déjà à moitié atteint (Oettingen, 2014). Le contraste mental est plus efficace : imaginer d’abord le résultat souhaité, puis son propre obstacle intérieur. Si l’objectif est réaliste, cela donne de l’énergie pour agir. S’il ne l’est pas, il devient plus facile de l’ajuster. WOOP associe ce contraste à des plans « si … alors », qui relient une situation critique à une action préparée et améliorent nettement la mise en œuvre des intentions (Gollwitzer, 1999). Les objectifs choisis librement sont en outre poursuivis avec plus de persévérance que les objectifs imposés (Deci & Ryan, 2000).",
+        "quellen": [
+          "Oettingen, G. (2014). Rethinking Positive Thinking. New York: Current.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503.",
+          "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268."
+        ],
+        "differenzierung": {
+          "leichter": "Traiter seulement le souhait, l’obstacle et le plan. Proposer des exemples de souhaits.",
+          "schwerer": "Formuler un plan pour deux obstacles différents et comparer après une semaine."
+        },
+        "impulse": [
+          "Pourquoi l’obstacle doit-il se trouver en toi ?",
+          "Quelle différence entre un souhait et un plan ?",
+          "Où pourrais-tu encore utiliser WOOP ?"
+        ],
+        "tipps": [
+          "WOOP reste privé : personne ne doit lire son souhait à voix haute.",
+          "La méthode se refait en cinq minutes, par exemple au début de chaque semaine."
+        ],
+        "achtung": "Si des souhaits révèlent une souffrance importante (par ex. « avoir moins peur », « ne plus être aussi triste »), chercher un entretien individuel et, si nécessaire, impliquer le SePAS."
+      }
+    }
+  },
+  {
+    "id": "ich-brauche-eine-pause",
+    "bereich": "verhalten",
+    "thema": "pausen",
+    "stufen": ["C1"],
+    "sozialform": ["einzeln", "gruppe"],
+    "dauer": "15–20 Min.",
+    "eldib": ["SOZ-5", "K-12", "V-6"],
+    "schlagworte": ["Bildkarten", "Pause", "Bedürfnisse zeigen", "Unterstützte Kommunikation", "Spielschule"],
+    "bild": "icon:armchair",
+    "verwandt": ["signalkarten", "pausen-klug-nutzen"],
+    "de": {
+      "titel": "Ich brauche eine Pause",
+      "anleitung": "Die Bildgeschichte vorlesen. Das Kind malt die Karten an. Dann ausschneiden, laminieren und üben: Das Kind zeigt eine Karte, der Erwachsene reagiert sofort.",
+      "bausteine": [
+        { "art": "aufgabe", "text": "Schau zu: Tom zeigt eine Karte.", "symbole": ["zuhoeren", "zeigen"] },
+        {
+          "art": "comic",
+          "spalten": 3,
+          "felder": [
+            { "figuren": ["figur:tom:wuetend:haende-gesicht"], "blase": "keine", "untertitel": "Es ist so laut. Tom will schreien." },
+            {
+              "figuren": ["figur:tom:neutral:zeigen", "figur:lehrerin:ruhig"],
+              "requisit": "icon:armchair",
+              "blase": "keine",
+              "untertitel": "Tom zeigt der Lehrerin die Pause-Karte."
+            },
+            { "figuren": ["figur:tom:ruhig"], "requisit": "icon:pillow", "blase": "keine", "untertitel": "Tom ruht sich aus. Dann spielt er weiter." }
+          ]
+        },
+        { "art": "aufgabe", "text": "Male die Karten an. Schneide sie aus.", "symbole": ["malen", "schneiden"] },
+        {
+          "art": "karten",
+          "spalten": 4,
+          "hoehe": 190,
+          "karten": [
+            { "titel": "Pause", "text": "Ich brauche eine Pause.", "bild": "icon:armchair" },
+            { "titel": "Hilfe", "text": "Hilf mir bitte.", "bild": "icon:heart-handshake" },
+            { "titel": "Toilette", "text": "Ich muss zur Toilette.", "bild": "icon:toilet-paper" },
+            { "titel": "Trinken", "text": "Ich habe Durst.", "bild": "motiv:wasserglas" }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder lernen vier Bildkarten kennen, mit denen sie ein Bedürfnis zeigen können – Pause, Hilfe, Toilette, Trinken –, statt zu schreien, wegzulaufen oder zu weinen.",
+        "ablauf": [
+          "Die Bildgeschichte vorlesen und nachspielen. Fragen: „Was macht Tom, als es ihm zu viel wird?“",
+          "Jede Karte einzeln vorstellen und sofort passend handeln: Zeigt ein Kind die Trinken-Karte, gibt es Wasser.",
+          "Die Kinder malen die Karten an. Danach ausschneiden, laminieren und griffbereit aufbewahren (Klettband oder Schlüsselring).",
+          "Üben im Spiel (5 Min.): Die Lehrperson beschreibt eine Situation („Du hast Durst.“), das Kind zeigt die passende Karte.",
+          "Im Alltag jede gezeigte Karte sofort beachten und benennen: „Du hast mir die Karte gezeigt. Jetzt machst du Pause.“"
+        ],
+        "hintergrund": "Schreien, Weglaufen oder Weinen sind bei jungen Kindern oft eine Mitteilung: „Ich brauche etwas.“ Wer noch wenige Worte hat oder unter Stress keine findet, kann ein Bild zeigen. Bilder bleiben sichtbar, während gesprochene Sprache sofort vergeht; visuelle Hilfen unterstützen deshalb Verstehen und Mitteilen (Hodgdon, 1995). Bildgestützte, gut strukturierte Kommunikation hat sich auch in der Förderung autistischer Kinder bewährt (Mesibov, Shea & Schopler, 2004). Entscheidend ist die zuverlässige Reaktion der Erwachsenen: Führt das Zeigen einer Karte schneller zum Ziel als Schreien, nutzt das Kind die Karte immer häufiger (Kazdin, 2008).",
+        "quellen": [
+          "Hodgdon, L. A. (1995). Visual Strategies for Improving Communication. Troy, MI: QuirkRoberts.",
+          "Mesibov, G. B., Shea, V. & Schopler, E. (2004). The TEACCH Approach to Autism Spectrum Disorders. New York: Springer.",
+          "Kazdin, A. E. (2008). The Kazdin Method for Parenting the Defiant Child. Boston: Houghton Mifflin."
+        ],
+        "differenzierung": {
+          "leichter": "Mit einer einzigen Karte beginnen (meist „Pause“ oder „Trinken“), die nächste erst nach einigen Tagen einführen.",
+          "schwerer": "Das Kind zeigt die Karte und sagt den Satz dazu: „Ich brauche eine Pause.“"
+        },
+        "impulse": ["Was machst du, wenn dir alles zu laut ist?", "Wem kannst du die Karte zeigen?", "Welche Karte brauchst du am meisten?"],
+        "tipps": [
+          "Jede gezeigte Karte beachten. Geht es gerade nicht: „Du hast Durst. Nach dem Lied trinken wir.“",
+          "Die Pause-Karte mit einem festen Ort verbinden, z. B. der Ruhe-Ecke."
+        ],
+        "achtung": "Lässt sich ein Kind kaum beruhigen oder weicht es mit den Karten allem aus: mit den Eltern sprechen und die Leitung (Responsable) einbeziehen.",
+        "material": "Buntstifte, Schere, Laminierfolie"
+      }
+    }
+  },
+  {
+    "id": "signalkarten",
+    "bereich": "verhalten",
+    "thema": "pausen",
+    "stufen": ["C3", "C4"],
+    "sozialform": ["einzeln", "klasse"],
+    "dauer": "35–45 Min.",
+    "eldib": ["V-25", "V-21", "K-26"],
+    "schlagworte": ["Signalkarten", "Pause", "Hilfe holen", "Überforderung", "Absprachen"],
+    "bild": "icon:flag",
+    "verwandt": ["ich-brauche-eine-pause", "pausen-klug-nutzen"],
+    "de": {
+      "titel": "Meine Signalkarten",
+      "untertitel": "Manchmal ist Reden gerade schwer. Mit einer Karte zeigst du ruhig, was du brauchst – ohne die ganze Klasse zu stören.",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "Jils Karte",
+          "text": "Nach der Pause ist es in Jils Klasse oft laut. Dann wird ihr alles zu viel. Früher ist sie einfach aus der Klasse gelaufen. Heute legt sie ihre Karte „Es ist mir zu viel“ auf den Tisch. Ihre Lehrerin nickt ihr zu. Jil setzt ihren Gehörschutz auf und arbeitet in der Leseecke weiter.",
+          "bild": "figur:amira:ruhig"
+        },
+        { "art": "aufgabe", "text": "Woran merkst du, dass du ein Signal brauchst? Kreuze an.", "symbole": ["ankreuzen", "schreiben"] },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "frei": 2,
+          "items": [
+            "Mein Kopf ist voll.",
+            "Ich kann nicht mehr stillsitzen.",
+            "Alles ist mir zu laut.",
+            "Ich werde wütend.",
+            "Ich verstehe die Aufgabe nicht.",
+            "Ich bin fertig und warte."
+          ]
+        },
+        { "art": "aufgabe", "text": "Welche Karte passt? Verbinde.", "symbole": ["lesen", "verbinden"] },
+        {
+          "art": "zuordnen",
+          "titel": ["Situation", "Karte"],
+          "links": ["Ich merke, dass ich gleich platze.", "Ich verstehe Aufgabe 3 nicht.", "Mein Blatt ist fertig.", "Es ist so laut, dass mein Kopf dröhnt."],
+          "rechts": ["Ich bin fertig.", "Es ist mir zu viel.", "Ich brauche eine Pause.", "Ich brauche Hilfe."]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "So benutzt du eine Karte",
+          "punkte": [
+            "Lege die Karte leise auf deinen Tisch.",
+            "Warte, bis deine Lehrerin oder dein Lehrer dir zunickt.",
+            "Tu dann genau das, was ihr abgemacht habt."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was passiert, wenn du eine Karte zeigst? Trefft zusammen Absprachen.",
+          "hinweis": "Besprich die Absprachen mit deiner Lehrerin oder deinem Lehrer.",
+          "symbole": ["sprechen", "schreiben"]
+        },
+        {
+          "art": "tabelle",
+          "spalten": ["Karte", "Das mache ich", "Das macht meine Lehrerin / mein Lehrer"],
+          "breiten": [0.8, 2.2, 1.6],
+          "zeilen": 3,
+          "beispiel": ["Pause", "Ich lege die Karte hin und gehe leise in die Leseecke. Nach 5 Minuten komme ich zurück.", "Sie nickt und lässt mich gehen."]
+        },
+        {
+          "art": "vertrag",
+          "text": "Wir probieren die Karten bis ___ aus. Dann sprechen wir darüber, was gut klappt.",
+          "unterschriften": ["Ich", "Lehrerin / Lehrer"]
+        },
+        { "art": "aufgabe", "text": "Schneide deine Karten aus. Bewahre sie an deinem Platz auf.", "symbole": ["schneiden"] },
+        {
+          "art": "karten",
+          "spalten": 4,
+          "hoehe": 190,
+          "karten": [
+            { "titel": "Pause", "text": "Ich brauche eine Pause.", "bild": "icon:player-pause" },
+            { "titel": "Hilfe", "text": "Ich brauche Hilfe.", "bild": "icon:lifebuoy" },
+            { "titel": "Fertig", "text": "Ich bin fertig.", "bild": "icon:circle-check" },
+            { "titel": "Zu viel", "text": "Es ist mir zu viel.", "bild": "icon:cloud-storm" }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder erkennen, wann sie ein Signal brauchen, ordnen vier Signalkarten passenden Situationen zu und vereinbaren mit der Lehrperson, was nach dem Zeigen einer Karte geschieht.",
+        "ablauf": [
+          "Einstieg (5 Min.): Die Geschichte lesen. Fragen: „Was hat sich für Jil verändert, seit sie die Karte hat?“",
+          "Aufgaben 1–2 (10 Min.): Anzeichen ankreuzen und Karten zuordnen. Bei den Anzeichen gibt es kein Richtig oder Falsch.",
+          "Aufgabe 3 (10 Min.): Absprachen mit jedem Kind konkret treffen: Wohin darf es gehen, wie lange, wie kommt es zurück?",
+          "Aufgabe 4: Karten ausschneiden, eventuell laminieren und am Platz aufbewahren, z. B. im Mäppchen.",
+          "Zwei Wochen erproben, dann nachbesprechen und die Absprachen anpassen."
+        ],
+        "hintergrund": "Viele Konflikte im Unterricht entstehen, weil ein Kind überfordert ist, aber keinen akzeptierten Weg hat, das zu zeigen. Signalkarten schaffen diesen Weg: Sie sind leise, eindeutig und kommen ohne Worte aus, die unter Anspannung oft fehlen. Visuelle Hilfen erleichtern die Verständigung gerade dann, wenn Sprache schwerfällt (Hodgdon, 1995). Zugleich stützen sie die Selbstregulation: Wer früh bemerkt, dass die Anspannung steigt, und die Situation kurz verändert, kann eine Eskalation verhindern (Gross, 1998). Wirksam sind die Karten nur mit klaren Absprachen und einer verlässlichen Reaktion; vorhersehbare Abläufe beugen Unterrichtsstörungen vor (Nolting, 2002).",
+        "quellen": [
+          "Hodgdon, L. A. (1995). Visual Strategies for Improving Communication. Troy, MI: QuirkRoberts.",
+          "Gross, J. J. (1998). The emerging field of emotion regulation: An integrative review. Review of General Psychology, 2(3), 271–299.",
+          "Nolting, H.-P. (2002). Störungen in der Schulklasse. Weinheim: Beltz."
+        ],
+        "differenzierung": {
+          "leichter": "Mit zwei Karten beginnen (Pause und Hilfe). Die Absprachen mündlich treffen, die Lehrperson schreibt.",
+          "schwerer": "Eine fünfte Karte entwerfen, z. B. „Ich brauche Bewegung“, und die Absprache dazu formulieren."
+        },
+        "impulse": [
+          "Woran merkst du im Körper, dass du ein Signal brauchst?",
+          "Was ist leichter: eine Karte zeigen oder etwas sagen?",
+          "Was soll passieren, wenn du die Karte hinlegst?"
+        ],
+        "tipps": [
+          "Die Karten der ganzen Klasse erklären: Alle dürfen Signale nutzen, niemand wird dafür ausgelacht.",
+          "Auf jede Karte bald reagieren – schon ein Nicken zeigt: Ich habe es gesehen."
+        ],
+        "achtung": "Zeigt ein Kind sehr häufig „zu viel“ oder wirkt es dauerhaft überfordert, die Ursachen klären und die zuständige Leitung (Responsable) einbeziehen.",
+        "material": "Schere; optional Laminierfolie und Klettband"
+      }
+    }
+  },
+  {
+    "id": "pausen-klug-nutzen",
+    "bereich": "verhalten",
+    "thema": "pausen",
+    "stufen": ["ES"],
+    "sozialform": ["einzeln", "gruppe"],
+    "dauer": "45 Min.",
+    "eldib": ["V-29", "V-32", "SOZ-40"],
+    "schlagworte": ["Pausen", "Energie", "Konzentration", "Erholung", "Selbstbeobachtung"],
+    "bild": "icon:battery-4",
+    "verwandt": ["signalkarten", "ich-brauche-eine-pause"],
+    "de": {
+      "titel": "Pausen klug nutzen",
+      "untertitel": "Nicht jede Pause lädt den Akku auf. Wer weiß, was ihm guttut, kommt konzentrierter und ruhiger durch den Schultag.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Warum Pausen wirken",
+          "text": "Konzentration lässt im Lauf des Tages nach – besonders bei Stress, wenig Schlaf und langem Sitzen. Kurze, bewusst gewählte Pausen helfen, wieder aufzutanken. Was erholt, ist bei jedem anders: Probiere aus und beobachte dich."
+        },
+        { "art": "aufgabe", "text": "Was lädt deinen Akku auf, was leert ihn? Denk an einen ganz normalen Schultag." },
+        { "art": "batterie", "laden": "Das gibt mir Energie", "leeren": "Das kostet mich Energie", "linien": 3 },
+        { "art": "aufgabe", "text": "Wie erholsam sind diese Pausen für dich?", "hinweis": "Es gibt kein richtiges Ergebnis – es geht um dich." },
+        {
+          "art": "einschaetzung",
+          "optionen": ["lädt auf", "neutral", "kostet Kraft"],
+          "items": [
+            "5 Minuten am Handy scrollen",
+            "einmal über den Schulhof oder ums Gebäude gehen",
+            "mit Freunden reden und lachen",
+            "etwas essen und ein Glas Wasser trinken",
+            "Musik über Kopfhörer, Augen zu",
+            "schnell noch Hausaufgaben für die nächste Stunde machen",
+            "mich strecken, ein paar Treppen steigen"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Tipp für die Hausaufgaben: 25 + 5",
+          "text": "Arbeite 25 Minuten konzentriert, dann mach 5 Minuten echte Pause: aufstehen, trinken, Fenster auf. Stell dir einen Wecker, damit aus 5 Minuten nicht 30 werden."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Plane deine Pausen für einen typischen Schultag.",
+          "hinweis": "Die Pausenarten im Kasten helfen dir bei der zweiten Spalte."
+        },
+        {
+          "art": "wortspeicher",
+          "titel": "Pausenarten",
+          "items": ["Bewegung", "Ruhe", "Kontakt", "Essen und Trinken", "frische Luft", "etwas Kreatives"]
+        },
+        {
+          "art": "tabelle",
+          "spalten": ["Wann?", "Welche Pause?", "Was genau mache ich?"],
+          "breiten": [1.2, 1.1, 2.6],
+          "zeilen": 3,
+          "beispiel": ["große Pause", "Bewegung", "mit Samuel einmal ums Gebäude gehen, Wasser trinken"]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Mini-Pause im Unterricht: Was tust du, wenn deine Konzentration wegrutscht?",
+          "hinweis": "Eine Mini-Pause dauert eine Minute und stört niemanden."
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Wenn ich denselben Satz zum dritten Mal lese,",
+              "dann": "setze ich mich gerade hin, atme dreimal tief aus und trinke einen Schluck Wasser."
+            }
+          ]
+        },
+        { "art": "aufgabe", "text": "Was probierst du morgen aus?" },
+        { "art": "satzanfaenge", "items": ["Diese Pause probiere ich morgen aus: …", "Ich merke, dass sie mir guttut, wenn …"], "linien": 2 }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen erkennen, was ihnen im Schulalltag Energie gibt oder nimmt, unterscheiden erholsame von nur scheinbar erholsamen Pausen und planen Pausen für einen typischen Schultag.",
+        "ablauf": [
+          "Einstieg (5 Min.): „Wie voll ist euer Akku gerade – von 0 bis 10?“ Per Handzeichen, ohne Kommentar.",
+          "Den Kasten lesen, Aufgabe 1 in Einzelarbeit (5 Min.).",
+          "Aufgabe 2 (5 Min.): Selbsteinschätzung, dann in Kleingruppen vergleichen: Warum erholen sich nicht alle gleich?",
+          "Aufgaben 3–4 (15 Min.): Pausenplan und einen Wenn-dann-Plan für eine Mini-Pause im Unterricht formulieren.",
+          "Aufgabe 5 als Vorsatz für den nächsten Tag. Nach einer Woche nachfragen: Welche Pause hat wirklich geholfen?"
+        ],
+        "hintergrund": "Exekutive Funktionen – Aufmerksamkeit steuern, Impulse bremsen, flexibel denken – sind keine feste Größe: Stress, Schlafmangel, Einsamkeit und fehlende Bewegung schwächen sie, körperliche Aktivität und Erholung stärken sie (Diamond, 2013). Pausen sind deshalb kein Luxus, sondern Teil guten Lernens. Ein fester Wechsel aus konzentrierter Arbeit und kurzer Pause, etwa 25 zu 5 Minuten, macht Pausen planbar (Cirillo, 2018). Was erholt, ist individuell; das Blatt setzt deshalb auf Selbstbeobachtung statt auf Verbote. Grundlage bleibt ausreichender Schlaf: Für 13- bis 18-Jährige werden 8 bis 10 Stunden empfohlen (Paruthi et al., 2016).",
+        "quellen": [
+          "Diamond, A. (2013). Executive functions. Annual Review of Psychology, 64, 135–168.",
+          "Cirillo, F. (2018). The Pomodoro Technique. New York: Currency.",
+          "Paruthi, S. et al. (2016). Recommended amount of sleep for pediatric populations: A consensus statement of the American Academy of Sleep Medicine. Journal of Clinical Sleep Medicine, 12(6), 785–786."
+        ],
+        "differenzierung": {
+          "leichter": "Nur Aufgaben 1 und 3 bearbeiten und Ideen aus dem Wortspeicher übernehmen.",
+          "schwerer": "Eine Woche lang den Akku morgens, mittags und abends einschätzen (0–10) und Zusammenhänge mit Pausen und Schlaf suchen."
+        },
+        "impulse": ["Wann ist dein Akku am leersten?", "Welche Pause fühlt sich gut an, lädt aber nicht auf?", "Was bräuchte die Klasse für erholsamere Pausen?"],
+        "tipps": [
+          "Bewegungspausen auch in den Unterricht einbauen: eine Minute aufstehen, strecken, Fenster öffnen.",
+          "Das Handy nicht verteufeln – die Jugendlichen prüfen selbst, wann es erholt und wann es stresst."
+        ],
+        "achtung": "Wirkt jemand dauerhaft erschöpft, schläft sehr wenig oder zieht sich zurück, das Einzelgespräch suchen und bei Bedarf den SePAS einbeziehen."
+      }
+    },
+    "fr": {
+      "titel": "Des pauses qui ressourcent",
+      "untertitel": "Toutes les pauses ne rechargent pas les batteries. Savoir ce qui te fait du bien aide à traverser la journée plus concentré·e et plus calme.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Pourquoi les pauses aident",
+          "text": "La concentration baisse au fil de la journée – surtout en cas de stress, de manque de sommeil ou quand on reste longtemps assis. De courtes pauses bien choisies aident à recharger. Ce qui repose varie d’une personne à l’autre : essaie et observe-toi."
+        },
+        { "art": "aufgabe", "text": "Qu’est-ce qui recharge ta batterie, qu’est-ce qui la vide ? Pense à une journée d’école ordinaire." },
+        { "art": "batterie", "laden": "Ce qui me donne de l’énergie", "leeren": "Ce qui me coûte de l’énergie", "linien": 3 },
+        { "art": "aufgabe", "text": "Ces pauses te reposent-elles vraiment ?", "hinweis": "Il n’y a pas de bonne réponse : il s’agit de toi." },
+        {
+          "art": "einschaetzung",
+          "optionen": ["recharge", "neutre", "fatigue"],
+          "items": [
+            "faire défiler mon téléphone pendant 5 minutes",
+            "faire un tour de la cour ou du bâtiment",
+            "parler et rire avec des ami·e·s",
+            "manger quelque chose et boire un verre d’eau",
+            "écouter de la musique au casque, les yeux fermés",
+            "vite finir les devoirs pour le cours suivant",
+            "m’étirer, monter quelques escaliers"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Astuce pour les devoirs : 25 + 5",
+          "text": "Travaille 25 minutes concentré·e, puis fais une vraie pause de 5 minutes : te lever, boire, ouvrir la fenêtre. Mets un réveil pour que 5 minutes ne deviennent pas 30."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Planifie tes pauses pour une journée d’école typique.",
+          "hinweis": "Les types de pauses dans l’encadré t’aident pour la deuxième colonne."
+        },
+        {
+          "art": "wortspeicher",
+          "titel": "Types de pauses",
+          "items": ["bouger", "se reposer", "voir du monde", "manger et boire", "prendre l’air", "faire quelque chose de créatif"]
+        },
+        {
+          "art": "tabelle",
+          "spalten": ["Quand ?", "Quelle pause ?", "Qu’est-ce que je fais exactement ?"],
+          "breiten": [1.2, 1.1, 2.6],
+          "zeilen": 3,
+          "beispiel": ["grande récréation", "bouger", "faire le tour du bâtiment avec Samuel, boire de l’eau"]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Mini-pause en classe : que fais-tu quand ta concentration décroche ?",
+          "hinweis": "Une mini-pause dure une minute et ne dérange personne."
+        },
+        {
+          "art": "wennDann",
+          "wenn": "Si …",
+          "dann": "… alors",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Si je lis la même phrase pour la troisième fois,",
+              "dann": "je me redresse, j’expire trois fois profondément et je bois une gorgée d’eau."
+            }
+          ]
+        },
+        { "art": "aufgabe", "text": "Qu’est-ce que tu essaies demain ?" },
+        { "art": "satzanfaenge", "items": ["Demain, j’essaie cette pause : …", "Je remarque qu’elle me fait du bien quand …"], "linien": 2 }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes identifient ce qui leur donne ou leur prend de l’énergie à l’école, distinguent les pauses vraiment reposantes de celles qui le semblent seulement et planifient leurs pauses pour une journée type.",
+        "ablauf": [
+          "Entrée en matière (5 min) : « Votre batterie est à combien en ce moment, de 0 à 10 ? » Réponse à main levée, sans commentaire.",
+          "Lire l’encadré, exercice 1 individuellement (5 min).",
+          "Exercice 2 (5 min) : auto-évaluation, puis comparaison en petits groupes. Pourquoi ne récupère-t-on pas tous de la même façon ?",
+          "Exercices 3–4 (15 min) : planifier les pauses et formuler un plan « si … alors » pour une mini-pause en classe.",
+          "Exercice 5 comme résolution pour le lendemain. Une semaine plus tard : quelle pause a vraiment aidé ?"
+        ],
+        "hintergrund": "Les fonctions exécutives – diriger son attention, freiner ses impulsions, penser avec souplesse – ne sont pas figées : le stress, le manque de sommeil, la solitude et le manque d’activité physique les affaiblissent, l’activité physique et la récupération les renforcent (Diamond, 2013). Les pauses ne sont donc pas un luxe, mais font partie d’un bon apprentissage. Une alternance fixe entre travail concentré et courte pause, par exemple 25 et 5 minutes, permet de les planifier (Cirillo, 2018). Ce qui repose varie d’une personne à l’autre. C’est pourquoi la fiche mise sur l’auto-observation plutôt que sur les interdictions. La base reste un sommeil suffisant : entre 13 et 18 ans, 8 à 10 heures sont recommandées (Paruthi et al., 2016).",
+        "quellen": [
+          "Diamond, A. (2013). Executive functions. Annual Review of Psychology, 64, 135–168.",
+          "Cirillo, F. (2018). The Pomodoro Technique. New York: Currency.",
+          "Paruthi, S. et al. (2016). Recommended amount of sleep for pediatric populations: A consensus statement of the American Academy of Sleep Medicine. Journal of Clinical Sleep Medicine, 12(6), 785–786."
+        ],
+        "differenzierung": {
+          "leichter": "Traiter seulement les exercices 1 et 3, en reprenant des idées de l’encadré.",
+          "schwerer": "Pendant une semaine, noter sa batterie le matin, à midi et le soir (0–10) et chercher des liens avec les pauses et le sommeil."
+        },
+        "impulse": [
+          "À quel moment ta batterie est-elle la plus vide ?",
+          "Quelle pause fait du bien sans vraiment recharger ?",
+          "De quoi la classe aurait-elle besoin pour mieux récupérer ?"
+        ],
+        "tipps": [
+          "Intégrer aussi des pauses actives en classe : se lever une minute, s’étirer, ouvrir la fenêtre.",
+          "Ne pas diaboliser le téléphone : les jeunes vérifient eux-mêmes quand il repose et quand il stresse."
+        ],
+        "achtung": "Si un·e jeune paraît épuisé·e en permanence, dort très peu ou se replie sur soi, chercher un entretien individuel et, si nécessaire, impliquer le SePAS."
+      }
+    }
+  }
+]

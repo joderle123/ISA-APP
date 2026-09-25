@@ -1,0 +1,1362 @@
+[
+  {
+    "id": "meine-stopp-hand",
+    "bereich": "verhalten",
+    "thema": "impulse",
+    "stufen": ["C1"],
+    "sozialform": ["einzeln", "gruppe"],
+    "dauer": "20–30 Min.",
+    "eldib": ["V-20", "K-7", "SOZ-7"],
+    "schlagworte": ["Stopp", "Stopp-Regel", "Impulskontrolle", "Anhalten", "Spielschule"],
+    "bild": "motiv:stopp",
+    "de": {
+      "titel": "Meine Stopp-Hand",
+      "anleitung": "Die Bildgeschichte Bild für Bild gemeinsam erzählen. Dann üben alle: Hand hoch und mit fester Stimme „Stopp“ sagen. Beim Umranden der Hand hilft ein Erwachsener; das Kind malt die Hand rot an.",
+      "bausteine": [
+        {"art": "aufgabe", "text": "Schau genau. Was passiert?", "symbole": ["zuhoeren", "zeigen"]},
+        {
+          "art": "comic",
+          "spalten": 3,
+          "felder": [
+            {
+              "figuren": ["figur:sami:wuetend", "figur:tom:froh:jubeln"],
+              "requisit": "icon:ball-football",
+              "blase": "keine",
+              "untertitel": "Pol nimmt Yusuf den Ball weg."
+            },
+            {"figuren": ["figur:sami:wuetend:stopp"], "text": "Stopp!", "untertitel": "Yusuf haut nicht. Er sagt: Stopp."},
+            {
+              "figuren": ["figur:tom:verlegen:geben", "figur:sami:froh"],
+              "requisit": "icon:ball-football",
+              "blase": "keine",
+              "untertitel": "Pol hört auf. Er gibt den Ball zurück."
+            }
+          ]
+        },
+        {"art": "aufgabe", "text": "Hand hoch. Sag laut: „Stopp“.", "symbole": ["zeigen", "sprechen"]},
+        {"art": "aufgabe", "text": "Umrande deine Hand. Male sie rot an.", "symbole": ["malen"]},
+        {"art": "feld", "label": "Meine Stopp-Hand", "zeichnen": true, "hoehe": 7}
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder lernen ein festes Stopp-Signal (erhobene Hand und das Wort „Stopp“) kennen, setzen es statt Hauen oder Wegnehmen ein und hören auf, wenn ein anderes Kind „Stopp“ sagt.",
+        "ablauf": [
+          "Einstieg (5 Min.): Ein Stopp-Schild zeigen. Fragen: „Wo habt ihr das schon gesehen? Was macht ein Auto dort?“",
+          "Bildgeschichte (5 Min.): Die Kinder erzählen Bild für Bild. Fragen: „Was macht Yusuf, statt zu hauen? Was macht Pol, als er ‚Stopp‘ hört?“",
+          "Stopp üben (5 Min.): Alle heben die Hand und sagen „Stopp“ – erst leise, dann mit fester Stimme. Dabei das Gegenüber anschauen.",
+          "Stopp-Hand gestalten (10 Min.): Hand umranden, rot anmalen, ausschneiden und auf ein Holzstäbchen kleben.",
+          "Stopp-Tanz: Musik läuft, alle bewegen sich. Hebt ein Kind seine Stopp-Hand, erstarren alle. Mit wechselnden Kindern wiederholen."
+        ],
+        "hintergrund": "Sich bremsen zu können – nicht zu hauen, nichts wegzunehmen, aufzuhören, wenn ein anderes Kind „Stopp“ sagt – beruht auf Hemmungskontrolle. Sie gehört zu den exekutiven Funktionen, entwickelt sich im Vorschulalter besonders stark und lässt sich im Spiel üben (Diamond, 2013). Kleine Kinder steuern ihr Handeln noch stark über äußere Zeichen und lautes Sprechen. Ein festes Signal – erhobene Hand und ein kurzes Wort – ersetzt Hauen oder Schreien durch eine einfache Handlung. Programme zur Gewaltprävention im Kindergarten üben solche Signale in beide Richtungen ein: Stopp sagen und Stopp beachten (Cierpka, 2005).",
+        "quellen": [
+          "Diamond, A. (2013). Executive functions. Annual Review of Psychology, 64, 135–168.",
+          "Cierpka, M. (Hrsg.) (2005). Faustlos – Wie Kinder Konflikte gewaltfrei lösen lernen. Freiburg: Herder."
+        ],
+        "differenzierung": {
+          "leichter": "Die Hand gemeinsam umranden. „Stopp“ zuerst mit einer Handpuppe üben.",
+          "schwerer": "Zu zweit Szenen spielen: Ein Kind nimmt ein Spielzeug, das andere zeigt die Stopp-Hand. Dann Rollen tauschen."
+        },
+        "impulse": [
+          "Wann hast du schon einmal „Stopp“ gesagt?",
+          "Was machst du, wenn ein anderes Kind „Stopp“ zu dir sagt?",
+          "Was kannst du tun, wenn das andere Kind nicht aufhört?"
+        ],
+        "tipps": [
+          "Die Stopp-Regel für die ganze Gruppe vereinbaren: Wer „Stopp“ hört, hört sofort auf. Klappt das nicht, holt das Kind einen Erwachsenen.",
+          "Das Signal zuerst im Spiel üben, nicht erst im Streit."
+        ],
+        "achtung": "Wenn ein Kind häufig haut oder beißt, sich auch mit Hilfe kaum bremsen kann oder auf das Wort „Stopp“ sehr ängstlich reagiert: genau beobachten, mit den Eltern sprechen und die zuständige Leitung (Responsable) informieren.",
+        "material": "Rote Buntstifte oder Wachsmalstifte, Schere, Holzstäbchen, Kleber; Musik für den Stopp-Tanz"
+      }
+    }
+  },
+  {
+    "id": "ampel-im-kopf",
+    "bereich": "verhalten",
+    "thema": "impulse",
+    "stufen": ["C2"],
+    "sozialform": ["einzeln", "gruppe", "klasse"],
+    "dauer": "30–40 Min.",
+    "eldib": ["V-20", "V-18", "SOZ-21"],
+    "schlagworte": ["Ampel", "Impulskontrolle", "Nachdenken", "Konflikt", "Pause"],
+    "bild": "icon:traffic-lights",
+    "de": {
+      "titel": "Die Ampel im Kopf",
+      "untertitel": "Rot heißt: anhalten. Gelb heißt: nachdenken. Grün heißt: handeln.",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "An der Schaukel",
+          "text": "Emma wartet schon lange an der Schaukel. Da drängelt sich Diogo einfach vor. Emmas Bauch wird heiß. Am liebsten würde sie ihn wegschubsen. Doch dann denkt sie an ihre Ampel im Kopf.",
+          "bild": "figur:lea:wuetend"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Hilf Emma. Was kann sie bei Gelb und Grün tun?",
+          "hinweis": "Rot ist schon ausgefüllt.",
+          "symbole": ["lesen", "schreiben"]
+        },
+        {
+          "art": "ampel",
+          "linien": 1,
+          "stufen": [
+            {"titel": "Rot: Anhalten", "text": "Emma bleibt stehen. Sie atmet tief aus."},
+            {"titel": "Gelb: Nachdenken", "text": "Was könnte Emma tun?"},
+            {"titel": "Grün: Handeln", "text": "Welche Idee probiert Emma aus?"}
+          ]
+        },
+        {"art": "aufgabe", "text": "Wann brauchst du deine Ampel im Kopf? Kreuze an.", "symbole": ["ankreuzen"]},
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "items": ["Jemand drängelt sich vor.", "Ich verliere beim Spiel.", "Jemand lacht über mich.", "Ich will sofort drankommen."],
+          "frei": 2
+        },
+        {"art": "aufgabe", "text": "Spielt eine Situation zu zweit. Zeigt dabei Rot, Gelb und Grün.", "symbole": ["partner", "sprechen"]}
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder kennen die drei Schritte der Ampel (anhalten – nachdenken – handeln), wenden sie auf eine Alltagssituation an und erkennen eigene Situationen, in denen die Ampel hilft.",
+        "ablauf": [
+          "Einstieg (5 Min.): Eine Ampel zeigen. Fragen: „Was passiert, wenn alle bei Rot weiterfahren?“ Dann: „Auch im Kopf kann eine Ampel stehen.“",
+          "Geschichte vorlesen (5 Min.). Fragen: „Was passiert, wenn Emma schubst? Was könnte sie stattdessen tun?“ Ideen an der Tafel sammeln.",
+          "Aufgabe 1 (10 Min.): Jedes Kind schreibt eine Idee für Gelb und wählt für Grün die beste. Prüffrage: „Ist die Idee sicher und fair?“",
+          "Aufgabe 2 (5 Min.): Eigene Situationen ankreuzen; zwei Kinder erzählen freiwillig.",
+          "Rollenspiel (10 Min.): Zu zweit eine Situation spielen. Die anderen zeigen mit roten, gelben und grünen Karten, wo die Spielenden gerade stehen."
+        ],
+        "hintergrund": "Das Bild der Ampel stammt aus Programmen zur Förderung sozial-emotionaler Kompetenz wie PATHS: Rot steht für Anhalten und Ruhigwerden, Gelb für das Nachdenken über Möglichkeiten, Grün für das Ausprobieren eines Plans (Greenberg et al., 1995). Kinder im Grundschulalter handeln in Konflikten oft, bevor sie überlegt haben. Die Ampel schiebt eine kurze Pause zwischen Auslöser und Handlung. Entscheidend ist die gelbe Phase: Kinder, die mehrere Lösungen finden und deren Folgen abschätzen, reagieren seltener mit Gewalt (Shure, 1992). Das Bild hilft nur, wenn es oft und in ruhigen Momenten geübt wird.",
+        "quellen": [
+          "Greenberg, M. T., Kusché, C. A., Cook, E. T. & Quamma, J. P. (1995). Promoting emotional competence in school-aged children: The effects of the PATHS curriculum. Development and Psychopathology, 7(1), 117–136.",
+          "Shure, M. B. (1992). I Can Problem Solve (ICPS). Champaign, IL: Research Press."
+        ],
+        "differenzierung": {
+          "leichter": "Ideen als Bildkarten anbieten (etwas sagen, Hilfe holen, woanders spielen). Das Kind wählt eine aus und malt sie.",
+          "schwerer": "Für Gelb zwei Ideen finden und zu jeder überlegen: „Was passiert dann?“"
+        },
+        "impulse": [
+          "Woran merkst du, dass deine Ampel auf Rot springen muss?",
+          "Welche Idee für Gelb hat dir schon einmal geholfen?",
+          "Wer kann dich an deine Ampel erinnern?"
+        ],
+        "tipps": [
+          "Eine große Ampel im Raum aufhängen und im Alltag darauf zeigen: „Wo steht deine Ampel gerade?“",
+          "Gelungene Momente benennen: „Du hast angehalten, nachgedacht und dann gefragt.“"
+        ],
+        "achtung": "Wenn ein Kind in Konflikten regelmäßig handgreiflich wird oder die Kontrolle ganz verliert, reicht das Blatt allein nicht aus: Beobachtungen festhalten und mit der zuständigen Leitung (Responsable) das weitere Vorgehen besprechen.",
+        "material": "Stifte; optional rote, gelbe und grüne Karten für das Rollenspiel"
+      }
+    }
+  },
+  {
+    "id": "stopp-denken-handeln",
+    "bereich": "verhalten",
+    "thema": "impulse",
+    "stufen": ["C3", "C4"],
+    "sozialform": ["einzeln", "gruppe"],
+    "dauer": "40–45 Min.",
+    "eldib": ["V-21", "V-18", "V-25", "K-29"],
+    "schlagworte": ["Selbstinstruktion", "Problemlösen", "Impulskontrolle", "Stopp – Denken – Handeln", "Signalkarten"],
+    "bild": "icon:bulb",
+    "de": {
+      "titel": "Stopp – denken – handeln",
+      "untertitel": "Wer wütend oder aufgeregt ist, handelt oft zu schnell. Drei kurze Sätze im Kopf helfen, klug zu entscheiden.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Lies die drei Schritte. Sprich die Sätze erst laut, dann flüsternd, dann nur im Kopf.",
+          "symbole": ["lesen", "sprechen"]
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 0,
+          "items": [
+            {"titel": "Stopp", "text": "„Halt. Was ist los? Wie fühle ich mich?“"},
+            {"titel": "Denken", "text": "„Was kann ich tun? Was passiert dann?“"},
+            {"titel": "Handeln", "text": "„Ich probiere die beste Idee. Hat es geklappt?“"}
+          ]
+        },
+        {
+          "art": "geschichte",
+          "titel": "Der Turm",
+          "text": "In der Maison Relais baut Rafael seit einer halben Stunde an einem Turm. Beim Fangenspielen rennt Mathis vorbei und stößt dagegen. Der Turm kracht zusammen. Rafael springt auf, sein Gesicht wird heiß. Er ballt die Fäuste. Mathis sagt schnell: „Oh nein, das wollte ich nicht.“",
+          "bild": "figur:sami:wuetend"
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Absicht oder Versehen?",
+          "text": "Nicht alles, was dich ärgert, passiert mit Absicht. Frag dich beim Denken auch: War das vielleicht ein Versehen?"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wie geht es für Rafael weiter? Schreibe auf, was er sich sagen kann.",
+          "hinweis": "Den Stopp-Schritt hat er schon geschafft: „Halt. Mein Turm ist kaputt. Ich bin richtig sauer.“",
+          "symbole": ["schreiben"]
+        },
+        {"art": "satzanfaenge", "linien": 2, "items": ["Denken: „Ich könnte …", "„Wenn ich das mache, dann …", "Handeln: „Ich …"]},
+        {
+          "art": "aufgabe",
+          "text": "Denk an eine eigene Situation. Gehe die Schritte durch.",
+          "hinweis": "Zum Beispiel in der Pause, in der Kantine, im Schulbus oder bei den Hausaufgaben.",
+          "symbole": ["nachdenken", "schreiben"]
+        },
+        {
+          "art": "schritte",
+          "linien": 1,
+          "items": [
+            {"titel": "Das ist passiert:", "text": "Beispiel: Im Schulbus sitzt jemand auf meinem Platz."},
+            {"titel": "Stopp – das fühle ich:", "text": "Beispiel: Ich bin wütend und will ihn wegziehen."},
+            {
+              "titel": "Denken – meine Ideen und was dann passiert:",
+              "text": "Beispiel: Wegziehen gibt Streit. Fragen oder woanders sitzen ist besser."
+            },
+            {"titel": "Handeln – das mache ich:", "text": "Beispiel: Ich frage: „Kannst du bitte rutschen?“"}
+          ]
+        },
+        {"art": "aufgabe", "text": "Schneide die drei Karten aus. Lege sie an deinen Platz.", "symbole": ["schneiden"]},
+        {
+          "art": "karten",
+          "spalten": 3,
+          "hoehe": 112,
+          "karten": [
+            {"titel": "Stopp", "text": "Was ist los?", "bild": "motiv:stopp"},
+            {"titel": "Denken", "text": "Was kann ich tun? Was passiert dann?", "bild": "icon:bulb"},
+            {"titel": "Handeln", "text": "Ich probiere es. Hat es geklappt?", "bild": "icon:player-play"}
+          ]
+        },
+        {"art": "rueckblick"}
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder lernen drei Selbstanweisungen (Stopp – Denken – Handeln) kennen, üben sie vom lauten bis zum inneren Sprechen und wenden sie auf eine Geschichte und eine eigene Situation an.",
+        "ablauf": [
+          "Einstieg (5 Min.): Die Schritte an einem eigenen Beispiel laut vormachen: „Ich merke, ich werde ungeduldig. Stopp. Was ist los? …“",
+          "Aufgabe 1 (5 Min.): Die Sätze gemeinsam sprechen – laut, geflüstert, nur im Kopf. So wird aus lautem Sprechen inneres Sprechen.",
+          "Geschichte lesen, Aufgabe 2 in Einzelarbeit (10 Min.). Fragen: „War das Absicht? Was ändert das für Rafael?“",
+          "Aufgabe 3 (10 Min.): Eine eigene Situation durchgehen. Freiwillige stellen sie vor; die Gruppe sucht weitere Ideen für den Denken-Schritt.",
+          "Karten ausschneiden und am Platz befestigen. In den folgenden Tagen im Alltag daran erinnern: „Denk an deine Karten.“"
+        ],
+        "hintergrund": "Impulsive Kinder handeln oft, bevor sie eine Situation eingeschätzt haben. Das Selbstinstruktionstraining nach Meichenbaum und Goodman (1971) setzt hier an: Ein Erwachsener macht das Vorgehen laut sprechend vor, das Kind spricht die Anweisungen zuerst laut, dann flüsternd und schließlich nur noch im Kopf. So wird aus Fremdsteuerung Selbststeuerung. Trainings für Kinder mit aggressivem Verhalten verbinden solche Selbstanweisungen mit Problemlöseschritten: die Situation genau wahrnehmen, auch ein Versehen in Betracht ziehen, Lösungen suchen, Folgen abwägen, handeln und das Ergebnis prüfen (Petermann & Petermann, 2012).",
+        "quellen": [
+          "Meichenbaum, D. & Goodman, J. (1971). Training impulsive children to talk to themselves. Journal of Abnormal Psychology, 77(2), 115–126.",
+          "Petermann, F. & Petermann, U. (2012). Training mit aggressiven Kindern (13. Aufl.). Weinheim: Beltz."
+        ],
+        "differenzierung": {
+          "leichter": "Die Schritte mündlich durchgehen; das Kind diktiert, ein Erwachsener schreibt mit.",
+          "schwerer": "Für den Denken-Schritt drei Ideen finden und jede prüfen: Ist sie fair? Ist sie sicher? Hilft sie?"
+        },
+        "impulse": [
+          "Woran merkst du, dass du gleich zu schnell handelst?",
+          "Welcher der drei Schritte fällt dir am schwersten?",
+          "Wie klingt dein Stopp-Satz, wenn du ihn nur denkst?"
+        ],
+        "tipps": [
+          "Die Schritte selbst vorleben: im Alltag laut denken, wenn etwas schiefgeht.",
+          "Anfangs erinnern die Karten, später reicht ein vereinbartes Zeichen der Lehrperson."
+        ],
+        "achtung": "Wenn ein Kind trotz Übung häufig die Kontrolle verliert, sich oder andere verletzt oder sehr belastet wirkt: das Gespräch mit den Eltern suchen und die zuständige Leitung (Responsable) informieren.",
+        "material": "Schere; Klebestreifen zum Befestigen der Karten"
+      }
+    }
+  },
+  {
+    "id": "erst-die-pause",
+    "bereich": "verhalten",
+    "thema": "impulse",
+    "stufen": ["ES"],
+    "sozialform": ["einzeln", "gruppe"],
+    "dauer": "45–50 Min.",
+    "eldib": ["V-26", "V-33", "V-29"],
+    "schlagworte": ["Impulskontrolle", "10-Sekunden-Regel", "Wenn-dann-Plan", "Provokation", "Chat"],
+    "bild": "icon:player-pause",
+    "de": {
+      "titel": "Erst die Pause, dann die Entscheidung",
+      "untertitel": "Zwischen dem, was passiert, und dem, was du tust, liegt ein kurzer Moment. Wer ihn nutzt, entscheidet selbst.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Warum Impulse so stark sein können",
+          "text": "Im Jugendalter reagiert das Gehirn besonders stark auf Aufregung, Ärger und die Meinung anderer. Die Bereiche, die bremsen und vorausplanen, reifen dagegen bis ins junge Erwachsenenalter. Starke Impulse sind deshalb normal – und kein Charakterfehler. Bremsen lässt sich trotzdem üben, am einfachsten mit einer kurzen Pause."
+        },
+        {"art": "aufgabe", "text": "In welchen Situationen reagierst du schneller, als dir lieb ist?"},
+        {
+          "art": "einschaetzung",
+          "optionen": ["oft", "manchmal", "selten"],
+          "items": [
+            "Eine Nachricht ärgert mich und ich antworte sofort.",
+            "Jemand provoziert mich vor anderen und ich gebe zurück.",
+            "Im Unterricht rutscht mir ein Kommentar heraus.",
+            "Wenn ich beim Zocken oder im Sport verliere, werde ich laut.",
+            "Wenn ich müde oder hungrig bin, reagiere ich gereizt."
+          ]
+        },
+        {
+          "art": "geschichte",
+          "titel": "Zehn Sekunden",
+          "text": "Jil sitzt abends an den Hausaufgaben, als ihr Handy vibriert. In der Gruppe für das Biologie-Projekt schreibt Tiago: „Typisch Jil. Wieder nichts gemacht.“ Dabei hat sie ihren Teil schon gestern hochgeladen. Ihr wird heiß, die Daumen tippen schon eine scharfe Antwort mit ein paar Beleidigungen. Kurz vor dem Senden legt sie das Handy weg und atmet zweimal lang aus. Dann überlegt sie: Was will ich eigentlich erreichen?",
+          "bild": "figur:jana:wuetend"
+        },
+        {"art": "aufgabe", "text": "Die 10-Sekunden-Regel: Spiele sie einmal in Gedanken durch – mit einer Situation aus Aufgabe 1."},
+        {
+          "art": "schritte",
+          "linien": 0,
+          "items": [
+            {"titel": "Stopp: Hände weg, Mund zu.", "text": "Nicht sofort antworten, das Handy weglegen, einen Schritt zurücktreten."},
+            {"titel": "Ausatmen: zweimal lang ausatmen.", "text": "Langsames Ausatmen beruhigt den Körper."},
+            {
+              "titel": "Benennen: Was fühle ich? Was will ich?",
+              "text": "„Ich bin wütend. Ich will, dass die anderen sehen: Ich habe meinen Teil gemacht.“"
+            },
+            {"titel": "Entscheiden: Was bringt mich meinem Ziel näher?", "text": "Erst jetzt handeln – oder bewusst später."}
+          ]
+        },
+        {"art": "aufgabe", "text": "Was passiert, wenn Jil sofort antwortet – und was, wenn sie erst eine Pause macht? Notiere die Folgen."},
+        {"art": "waage", "links": "Sofort antworten", "rechts": "Erst Pause, dann antworten", "zeilen": 4},
+        {
+          "art": "aufgabe",
+          "text": "Plane deine Pause: Formuliere zwei Wenn-dann-Pläne für deine häufigsten Situationen.",
+          "hinweis": "Je genauer die Situation beschrieben ist, desto eher fällt dir der Plan im richtigen Moment ein."
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 2,
+          "beispiele": [
+            {"wenn": "Wenn mich eine Nachricht ärgert,", "dann": "lege ich das Handy zehn Minuten weg, bevor ich antworte."}
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": ["Daran merke ich früh, dass ich eine Pause brauche: …", "Mein Signal für die Pause (ein Wort oder eine Geste): …"],
+          "linien": 2
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen verstehen, warum Impulse im Jugendalter stark sind, erkennen eigene typische Situationen, üben eine kurze Unterbrechung (10-Sekunden-Regel) und legen Wenn-dann-Pläne für ihre häufigsten Auslöser fest.",
+        "ablauf": [
+          "Einstieg (5 Min.): „Welche Nachricht, welcher Satz bringt euch in Sekunden auf hundert?“ Beispiele sammeln, ohne zu werten.",
+          "Info-Kasten und Selbsteinschätzung (10 Min.). Betonen: Starke Impulse sind in diesem Alter normal – Bremsen ist trainierbar.",
+          "Fall Jil lesen, dann die 10-Sekunden-Regel an einer erfundenen Provokation gemeinsam durchspielen (10 Min.).",
+          "Folgen vergleichen (10 Min.). Frage: „Was will Jil erreichen – und welcher Weg bringt sie dahin?“",
+          "Wenn-dann-Pläne formulieren und zu zweit prüfen (10 Min.): Ist die Situation konkret, die Handlung sofort machbar? Nach einer Woche nachfragen."
+        ],
+        "hintergrund": "Im Jugendalter reifen die Systeme für Belohnung und Gefühle früher als die Kontrollfunktionen des präfrontalen Kortex. Unter Gleichaltrigen und bei starker Erregung setzen sich Impulse deshalb leichter durch (Steinberg, 2014). Wirksam ist eine kurze, gut eingeübte Unterbrechung zwischen Auslöser und Reaktion. Die dialektisch-behaviorale Therapie für Jugendliche lehrt dafür die STOP-Fertigkeit: anhalten, zurücktreten, beobachten, achtsam weitermachen (Rathus & Miller, 2015). Ein Wenn-dann-Plan koppelt die Pause an typische Situationen und verbessert so die Umsetzung von Vorsätzen deutlich (Gollwitzer, 1999).",
+        "quellen": [
+          "Steinberg, L. (2014). Age of Opportunity: Lessons from the New Science of Adolescence. Boston: Houghton Mifflin Harcourt.",
+          "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "differenzierung": {
+          "leichter": "Nur eine Situation auswählen und den Wenn-dann-Plan gemeinsam formulieren.",
+          "schwerer": "Notieren, welche Gedanken den Impuls anheizen („Das lasse ich mir nicht gefallen“) und welche ihn bremsen."
+        },
+        "impulse": [
+          "Woran merkst du, dass ein Impuls übernimmt?",
+          "Wann hat dir eine Pause schon Ärger erspart?",
+          "Was ist schwerer: die Pause oder das Danach?"
+        ],
+        "tipps": [
+          "Die Pause selbst vorleben: bei eigenem Ärger sichtbar kurz innehalten.",
+          "Keine Moralpredigt – Wissen über das eigene Gehirn und echte Wahlmöglichkeiten wirken besser."
+        ],
+        "achtung": "Wenn jemand häufig die Kontrolle verliert, andere bedroht oder Cybermobbing anspricht: nicht im Plenum vertiefen, das Einzelgespräch suchen, die zuständige Leitung (Responsable) bzw. den SePAS einbeziehen. Bei Hinweisen auf Selbstverletzung sofort nach dem internen Ablauf handeln und nicht allein lassen."
+      }
+    },
+    "fr": {
+      "titel": "D’abord la pause, ensuite la décision",
+      "untertitel": "Entre ce qui arrive et ce que tu fais, il y a un bref instant. Qui sait l’utiliser reste maître de sa décision.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Pourquoi les impulsions peuvent être si fortes",
+          "text": "À l’adolescence, le cerveau réagit particulièrement fort à l’excitation, à la colère et au regard des autres. Les zones qui freinent et anticipent, elles, continuent de mûrir jusqu’au début de l’âge adulte. Des impulsions fortes sont donc normales – ce n’est pas un défaut de caractère. Se freiner, cela s’entraîne quand même, et le plus simple, c’est une courte pause."
+        },
+        {"art": "aufgabe", "text": "Dans quelles situations réagis-tu plus vite que tu ne le voudrais ?"},
+        {
+          "art": "einschaetzung",
+          "optionen": ["souvent", "parfois", "rarement"],
+          "items": [
+            "Un message m’énerve et je réponds tout de suite.",
+            "Quelqu’un me provoque devant les autres et je riposte.",
+            "En classe, un commentaire m’échappe.",
+            "Quand je perds à un jeu vidéo ou en sport, je m’emporte.",
+            "Quand je suis fatigué·e ou que j’ai faim, je deviens vite irritable."
+          ]
+        },
+        {
+          "art": "geschichte",
+          "titel": "Dix secondes",
+          "text": "Le soir, Jil fait ses devoirs quand son téléphone vibre. Dans le groupe du projet de biologie, Tiago écrit : « Typique de Jil. Encore rien fait. » Pourtant, elle a déposé sa partie hier. Elle sent la chaleur monter, ses pouces tapent déjà une réponse cinglante, avec quelques insultes. Juste avant d’envoyer, elle pose son téléphone et expire deux fois longuement. Puis elle se demande : qu’est-ce que je veux vraiment obtenir ?",
+          "bild": "figur:jana:wuetend"
+        },
+        {"art": "aufgabe", "text": "La règle des 10 secondes : déroule-la une fois dans ta tête, avec une situation de l’exercice 1."},
+        {
+          "art": "schritte",
+          "linien": 0,
+          "items": [
+            {
+              "titel": "Stop : mains loin du téléphone, bouche fermée.",
+              "text": "Ne pas répondre tout de suite, poser le téléphone, reculer d’un pas."
+            },
+            {"titel": "Expirer : deux longues expirations.", "text": "Expirer lentement calme le corps."},
+            {
+              "titel": "Nommer : qu’est-ce que je ressens ? Qu’est-ce que je veux ?",
+              "text": "« Je suis en colère. Je veux que les autres voient que j’ai fait ma part. »"
+            },
+            {"titel": "Décider : qu’est-ce qui me rapproche de mon but ?", "text": "Agir seulement maintenant – ou volontairement plus tard."}
+          ]
+        },
+        {"art": "aufgabe", "text": "Que se passe-t-il si Jil répond tout de suite – et si elle fait d’abord une pause ? Note les conséquences."},
+        {"art": "waage", "links": "Répondre tout de suite", "rechts": "D’abord une pause, puis répondre", "zeilen": 4},
+        {
+          "art": "aufgabe",
+          "text": "Planifie ta pause : formule deux plans « si … alors » pour tes situations les plus fréquentes.",
+          "hinweis": "Plus la situation est décrite avec précision, plus le plan te reviendra au bon moment."
+        },
+        {
+          "art": "wennDann",
+          "wenn": "Si …",
+          "dann": "… alors",
+          "zeilen": 2,
+          "beispiele": [
+            {"wenn": "Si un message m’énerve,", "dann": "je pose mon téléphone dix minutes avant de répondre."}
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": ["Je remarque tôt que j’ai besoin d’une pause quand : …", "Mon signal pour la pause (un mot ou un geste) : …"],
+          "linien": 2
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes comprennent pourquoi les impulsions sont fortes à l’adolescence, repèrent leurs situations typiques, s’exercent à une courte interruption (règle des 10 secondes) et formulent des plans « si … alors » pour leurs déclencheurs les plus fréquents.",
+        "ablauf": [
+          "Entrée en matière (5 min) : « Quel message, quelle phrase vous fait monter à cent en quelques secondes ? » Recueillir des exemples sans jugement.",
+          "Encadré et auto-évaluation (10 min). Souligner : des impulsions fortes sont normales à cet âge – se freiner, cela s’apprend.",
+          "Lire le cas de Jil, puis dérouler ensemble la règle des 10 secondes sur une provocation inventée (10 min).",
+          "Comparer les conséquences (10 min). Question : « Que veut obtenir Jil – et quel chemin l’y mène ? »",
+          "Formuler les plans « si … alors » et les vérifier à deux (10 min) : la situation est-elle précise, l’action faisable tout de suite ? En reparler une semaine plus tard."
+        ],
+        "hintergrund": "À l’adolescence, les systèmes liés à la récompense et aux émotions mûrissent plus tôt que les fonctions de contrôle du cortex préfrontal. Entre pairs et en cas de forte excitation, les impulsions prennent donc plus facilement le dessus (Steinberg, 2014). Une interruption brève et bien entraînée entre le déclencheur et la réaction est efficace. La thérapie comportementale dialectique pour adolescents enseigne pour cela la compétence STOP : s’arrêter, prendre du recul, observer, continuer en pleine conscience (Rathus & Miller, 2015). Un plan « si … alors » associe la pause à des situations typiques et améliore nettement la réalisation des intentions (Gollwitzer, 1999).",
+        "quellen": [
+          "Steinberg, L. (2014). Age of Opportunity: Lessons from the New Science of Adolescence. Boston: Houghton Mifflin Harcourt.",
+          "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "differenzierung": {
+          "leichter": "Choisir une seule situation et formuler ensemble le plan « si … alors ».",
+          "schwerer": "Noter les pensées qui attisent l’impulsion (« Je ne vais pas me laisser faire ») et celles qui la freinent."
+        },
+        "impulse": [
+          "À quoi sens-tu qu’une impulsion prend le dessus ?",
+          "Quand une pause t’a-t-elle évité des ennuis ?",
+          "Le plus dur : la pause ou ce qui suit ?"
+        ],
+        "tipps": [
+          "Montrer l’exemple : en cas d’agacement, marquer une courte pause visible.",
+          "Pas de sermon – des connaissances sur son propre cerveau et de vrais choix fonctionnent mieux."
+        ],
+        "achtung": "Si un·e jeune perd souvent le contrôle, menace d’autres personnes ou évoque du cyberharcèlement : ne pas approfondir en groupe, chercher un entretien individuel, impliquer la direction compétente (responsable) ou le SePAS. En cas de signes d’automutilation, agir immédiatement selon la procédure interne et ne pas laisser le ou la jeune seul·e."
+      }
+    }
+  },
+  {
+    "id": "schildkroeten-trick",
+    "bereich": "verhalten",
+    "thema": "pausen",
+    "stufen": ["C2"],
+    "sozialform": ["einzeln", "gruppe", "klasse"],
+    "dauer": "25–30 Min.",
+    "eldib": ["V-21", "V-20", "K-16"],
+    "schlagworte": ["Schildkröte", "Wut", "Beruhigung", "Rückzug", "Selbstkontrolle"],
+    "bild": "motiv:schildkroete",
+    "de": {
+      "titel": "Der Schildkröten-Trick",
+      "untertitel": "Eine Schildkröte zieht sich in ihren Panzer zurück. Das kannst du auch, wenn du wütend bist.",
+      "bausteine": [
+        {"art": "aufgabe", "text": "Lies die Bildgeschichte. Mach jeden Schritt mit.", "symbole": ["lesen", "zeigen"]},
+        {
+          "art": "comic",
+          "spalten": 3,
+          "felder": [
+            {
+              "figuren": ["figur:tom:froh:zeigen", "figur:noah:wuetend"],
+              "text": "Du bist raus!",
+              "sprecher": 0,
+              "untertitel": "Beim Fangen ist Elias raus."
+            },
+            {"figuren": ["figur:noah:wuetend"], "blase": "denken", "text": "Stopp. Ich mache die Schildkröte.", "untertitel": "1. Anhalten."},
+            {
+              "figuren": ["figur:noah:wuetend:verschraenkt"],
+              "requisit": "motiv:schildkroete-panzer",
+              "blase": "denken",
+              "text": "Arme ran, Kopf runter.",
+              "untertitel": "2. In den Panzer gehen."
+            },
+            {
+              "figuren": ["figur:noah:ruhig:verschraenkt"],
+              "requisit": "motiv:schildkroete-panzer",
+              "blase": "denken",
+              "text": "Einatmen, ausatmen.",
+              "untertitel": "3. Dreimal langsam atmen."
+            },
+            {"figuren": ["figur:noah:neutral"], "blase": "denken", "text": "Was kann ich jetzt tun?", "untertitel": "4. Nachdenken."},
+            {
+              "figuren": ["figur:noah:froh", "figur:tom:froh"],
+              "requisit": "motiv:schildkroete",
+              "text": "Nächste Runde fange ich.",
+              "sprecher": 0,
+              "untertitel": "5. Mit einer Lösung herauskommen."
+            }
+          ]
+        },
+        {"art": "aufgabe", "text": "Wann hilft dir der Schildkröten-Trick? Kreuze an.", "symbole": ["ankreuzen"]},
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "items": ["Ich verliere beim Spiel.", "Jemand ärgert mich.", "Etwas klappt nicht.", "Ich muss lange warten."],
+          "frei": 2
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder lernen den Schildkröten-Trick in fünf Schritten kennen und üben ihn so oft, dass sie ihn bei Wut oder starker Aufregung abrufen können.",
+        "ablauf": [
+          "Einstieg (5 Min.): Eine Schildkröte zeigen oder beschreiben. Fragen: „Was macht eine Schildkröte, wenn Gefahr droht?“",
+          "Bildgeschichte (10 Min.) gemeinsam lesen. Jeden Schritt sofort mit dem Körper nachmachen: Arme an den Körper, Kopf runter, Augen zu, dreimal atmen.",
+          "Ein Signalwort vereinbaren, z. B. „Schildkröte“. Die Lehrperson sagt es, alle machen den Trick.",
+          "Aufgabe 2 (5 Min.): Eigene Situationen ankreuzen. Fragen: „Wann hätte dir der Trick schon geholfen?“",
+          "In den nächsten Wochen täglich einmal in ruhigen Momenten üben und gelungene „Schildkröten-Momente“ benennen."
+        ],
+        "hintergrund": "Der Schildkröten-Trick wurde für Grundschulklassen entwickelt, in denen Kinder bei Ärger schnell handgreiflich wurden (Robin, Schneider & Dolnick, 1976). Die Kinder lernen, sich bei einem Auslöser wie eine Schildkröte zurückzuziehen: Arme an den Körper, Kopf nach unten, Muskeln entspannen. Danach suchen sie eine Lösung und „kommen aus dem Panzer“. Das Bild ist leicht zu merken und verbindet Beruhigung mit Problemlösen. Auch das Programm Dina Dinosaur nutzt eine Schildkröte, um jüngeren Kindern den Umgang mit Ärger zu vermitteln, und ergänzt sie um Rollenspiele und Lob für gelungene Versuche (Webster-Stratton & Reid, 2003).",
+        "quellen": [
+          "Robin, A., Schneider, M. & Dolnick, M. (1976). The turtle technique: An extended case study of self-control in the classroom. Psychology in the Schools, 13(4), 449–453.",
+          "Webster-Stratton, C. & Reid, M. J. (2003). Treating conduct problems and strengthening social and emotional competence in young children: The Dina Dinosaur treatment program. Journal of Emotional and Behavioral Disorders, 11(3), 130–143."
+        ],
+        "differenzierung": {
+          "leichter": "Die Schritte mit einer Handpuppe vormachen; das Kind macht nur die Bewegungen mit.",
+          "schwerer": "Das Kind malt eine eigene Situation als Bildgeschichte und zeigt darin alle fünf Schritte."
+        },
+        "impulse": ["Wann wärst du gern eine Schildkröte gewesen?", "Wie fühlt sich dein Körper im Panzer an?", "Welche Lösung hast du im Panzer gefunden?"],
+        "tipps": [
+          "Den Trick nie als Strafe einsetzen („Geh in deinen Panzer“). Er ist ein Angebot.",
+          "Kinder, die den Trick von sich aus nutzen, sofort und konkret loben."
+        ],
+        "achtung": "Wenn ein Kind häufig ausbricht und dabei sich oder andere verletzt, reicht eine Übung allein nicht: mit den Eltern sprechen und die zuständige Leitung (Responsable) einbeziehen.",
+        "material": "Optional: Handpuppe oder Plüschtier Schildkröte"
+      }
+    }
+  },
+  {
+    "id": "regeln-in-bildern",
+    "bereich": "verhalten",
+    "thema": "regeln",
+    "stufen": ["C1"],
+    "sozialform": ["einzeln", "gruppe", "klasse"],
+    "dauer": "30 Min., dann täglich 2 Min.",
+    "eldib": ["V-8", "SOZ-7", "V-16"],
+    "schlagworte": ["Regeln", "Bildkarten", "Gruppenregeln", "Spielschule", "positiv formulieren"],
+    "bild": "icon:clipboard-list",
+    "de": {
+      "titel": "Unsere Regeln in Bildern",
+      "anleitung": "Jede Regel einzeln einführen: Bild zeigen, Regel sagen, gemeinsam vormachen. Danach schneidet das Kind die Karten aus. Unten trägt ein Erwachsener die Wochenregel ein; an jedem Tag, an dem es geklappt hat, malt das Kind einen Stern an.",
+      "bausteine": [
+        {"art": "aufgabe", "text": "Mach jede Regel vor. Dann schneide die Karten aus.", "symbole": ["zeigen", "schneiden"]},
+        {
+          "art": "karten",
+          "spalten": 3,
+          "hoehe": 172,
+          "karten": [
+            {"titel": "Leise sprechen", "text": "Ich spreche leise.", "bild": "icon:feather"},
+            {"titel": "Hände bei mir", "text": "Meine Hände bleiben bei mir.", "bild": "figur:amira:ruhig:verschraenkt"},
+            {"titel": "Zuhören", "text": "Ich höre zu.", "bild": "icon:ear"},
+            {"titel": "Abwechseln", "text": "Wir wechseln uns ab.", "bild": "figur:lea:froh:geben"},
+            {"titel": "Aufräumen", "text": "Ich räume auf.", "bild": "icon:basket"},
+            {"titel": "Hilfe holen", "text": "Ich hole einen Erwachsenen.", "bild": "figur:tom:neutral:melden"}
+          ]
+        },
+        {"art": "aufgabe", "text": "Diese Regel übe ich. Male jeden Tag einen Stern an.", "symbole": ["malen"]},
+        {"art": "plan", "ziel": "", "zeilen": ["Heute hat es geklappt."], "symbol": "stern"}
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder lernen sechs Gruppenregeln als Bilder kennen, zeigen jede Regel mit dem Körper und üben eine Regel eine Woche lang gezielt.",
+        "ablauf": [
+          "Einstieg (5 Min.): Fragen: „Was brauchen wir, damit sich alle in unserer Gruppe wohlfühlen?“ Antworten der Kinder aufgreifen.",
+          "Regeln einführen (10 Min.): Jede Karte zeigen, die Regel sagen und gemeinsam vormachen – etwa „leise wie eine Feder“ flüstern oder die Hände auf den Bauch legen.",
+          "Karten ausschneiden (10 Min.), dabei Hilfe anbieten. Die Karten des Kindes an einen Ring fädeln; ein zweiter Satz kommt als Regel-Plakat an die Wand.",
+          "Wochenregel wählen: Jedes Kind sucht eine Regel aus. Am Ende des Tages gemeinsam einen Stern anmalen, wenn es geklappt hat.",
+          "Im Alltag statt einer Ermahnung die Karte zeigen und die Regel kurz benennen: „Hände bei mir.“"
+        ],
+        "hintergrund": "Kleine Kinder verstehen Regeln besser, wenn sie sehen, was erwartet wird. Bildkarten machen Erwartungen dauerhaft sichtbar: Anders als ein gesprochener Satz sind sie noch da, wenn das Kind wieder hinschaut (Hodgdon, 1995). Positiv formulierte Regeln beschreiben das gewünschte Verhalten („Ich spreche leise“) statt eines Verbots („Nicht schreien“). So weiß das Kind, was es tun kann. Programme für junge Kinder verbinden klare Regeln mit häufigem, konkretem Lob, sobald ein Kind die Regel einhält (Webster-Stratton & Reid, 2003).",
+        "quellen": [
+          "Hodgdon, L. A. (1995). Visual Strategies for Improving Communication. Troy, MI: QuirkRoberts.",
+          "Webster-Stratton, C. & Reid, M. J. (2003). Treating conduct problems and strengthening social and emotional competence in young children: The Dina Dinosaur treatment program. Journal of Emotional and Behavioral Disorders, 11(3), 130–143."
+        ],
+        "differenzierung": {
+          "leichter": "Mit zwei oder drei Regeln beginnen und diese über mehrere Wochen festigen.",
+          "schwerer": "Das Kind erklärt zu jeder Regel, warum sie der Gruppe hilft, oder malt eine eigene Regelkarte."
+        },
+        "impulse": ["Welche Regel ist für dich leicht, welche schwer?", "Wie klingt eine leise Stimme?", "Wen kannst du um Hilfe bitten?"],
+        "tipps": [
+          "Wenige Regeln sind besser als viele: Mehr als fünf oder sechs überfordern kleine Kinder.",
+          "Das Einhalten konkret loben: „Du hast gewartet, bis du dran warst.“"
+        ],
+        "achtung": "Wenn ein Kind Regeln dauerhaft nicht umsetzen kann, genau hinschauen: Versteht es die Sprache? Braucht es mehr Bewegung oder Begleitung? Bei Sorge mit den Eltern sprechen und die zuständige Leitung (Responsable) einbeziehen.",
+        "material": "Schere, Buntstifte; optional Locher und Schlüsselring"
+      }
+    }
+  },
+  {
+    "id": "warum-regeln",
+    "bereich": "verhalten",
+    "thema": "regeln",
+    "stufen": ["C2"],
+    "sozialform": ["einzeln", "klasse"],
+    "dauer": "35–40 Min.",
+    "eldib": ["V-17", "V-16", "SOZ-27"],
+    "schlagworte": ["Regeln", "Fairness", "Sicherheit", "Klassenregeln", "Begründen"],
+    "bild": "icon:road-sign",
+    "de": {
+      "titel": "Warum gibt es Regeln?",
+      "untertitel": "Regeln helfen, dass es fair und sicher zugeht.",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "Spiel ohne Regeln",
+          "text": "In der Pause spielen alle Fußball – heute ohne Regeln. Mehmet trägt den Ball einfach in der Hand. Niemand zählt die Tore. Nach fünf Minuten streiten alle. Nora steht am Rand, sie darf nicht mitspielen.",
+          "bild": "figur:mia:traurig"
+        },
+        {"art": "aufgabe", "text": "Welche Regeln hätten geholfen? Kreuze an.", "symbole": ["lesen", "ankreuzen"]},
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "items": ["Nur der Torwart fängt mit der Hand.", "Wir zählen die Tore.", "Alle dürfen mitspielen.", "Wer am lautesten schreit, bestimmt."]
+        },
+        {"art": "aufgabe", "text": "Regeln gibt es überall. Wozu ist die Regel da? Verbinde.", "symbole": ["verbinden"]},
+        {
+          "art": "zuordnen",
+          "titel": ["Regel", "Wozu?"],
+          "links": ["Bei Rot warten.", "In der Kantine anstellen.", "In der Bücherei leise sein."],
+          "rechts": ["Damit alle lesen können.", "Damit niemand verletzt wird.", "Damit es gerecht zugeht."]
+        },
+        {"art": "aufgabe", "text": "Welche Regel ist dir in der Klasse wichtig? Male sie.", "symbole": ["malen"]},
+        {"art": "feld", "label": "Meine Klassenregel:", "zeichnen": true, "hoehe": 4.5}
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder erkennen, wozu Regeln da sind (Sicherheit, Gerechtigkeit, Rücksicht), finden Regeln in ihrem Alltag und gestalten eine Klassenregel, die ihnen wichtig ist.",
+        "ablauf": [
+          "Einstieg (5 Min.): Ein Spiel ohne Regeln ausprobieren, z. B. Memory, bei dem jeder so viele Karten umdreht, wie er will. Nach einer Minute abbrechen. Fragen: „Wie war das?“",
+          "Geschichte lesen (5 Min.). Fragen: „Warum streiten alle? Wie geht es Nora?“",
+          "Aufgabe 1 und 2 (10 Min.). Die drei Gründe an die Tafel schreiben: Regeln schützen, Regeln sind gerecht, Regeln nehmen Rücksicht.",
+          "Aufgabe 3 (10 Min.): Jedes Kind malt eine Regel. Fragen: „Warum ist dir diese Regel wichtig?“",
+          "Die Bilder aufhängen und gemeinsam die drei bis fünf wichtigsten Regeln für die Klasse auswählen."
+        ],
+        "hintergrund": "Jüngere Kinder befolgen Regeln oft, weil Erwachsene sie aufstellen. Im Lauf der Grundschulzeit verstehen sie Regeln zunehmend als Vereinbarungen, die das Zusammenleben schützen und die man begründen und verändern kann. Klassenregeln wirken am besten, wenn es wenige sind, wenn sie positiv formuliert und mit den Kindern besprochen werden und ihr Sinn verstanden ist (Nolting, 2002). Das eigene Erleben – ein Spiel, das ohne Regeln im Streit endet – macht diesen Sinn greifbarer als jede Erklärung. Schulische Programme zum sozial-emotionalen Lernen verbessern nachweislich das Sozialverhalten und verringern Verhaltensprobleme (Durlak et al., 2011).",
+        "quellen": [
+          "Nolting, H.-P. (2002). Störungen in der Schulklasse. Weinheim: Beltz.",
+          "Durlak, J. A., Weissberg, R. P., Dymnicki, A. B., Taylor, R. D. & Schellinger, K. B. (2011). The impact of enhancing students’ social and emotional learning: A meta-analysis of school-based universal interventions. Child Development, 82(1), 405–432."
+        ],
+        "differenzierung": {
+          "leichter": "Die Zuordnung mündlich lösen; das Kind malt seine Regel, ein Erwachsener schreibt den Satz dazu.",
+          "schwerer": "Eine zweite Regel für die Pause erfinden und begründen: „Diese Regel schützt …“"
+        },
+        "impulse": [
+          "Welche Regel findest du schwer – und warum gibt es sie trotzdem?",
+          "Gibt es Regeln, die nicht gerecht sind?",
+          "Was passiert, wenn sich jemand nicht an eine Regel hält?"
+        ],
+        "tipps": [
+          "Regeln positiv formulieren: „Wir gehen im Gang“ statt „Nicht rennen“.",
+          "Die Klassenregeln sichtbar aufhängen und regelmäßig im Klassenrat überprüfen."
+        ],
+        "material": "Buntstifte; für den Einstieg ein kurzes Spiel, z. B. Memory"
+      }
+    }
+  },
+  {
+    "id": "klassenvereinbarung",
+    "bereich": "verhalten",
+    "thema": "regeln",
+    "stufen": ["C3", "C4"],
+    "sozialform": ["einzeln", "gruppe", "klasse"],
+    "dauer": "45–60 Min.",
+    "eldib": ["V-17", "SOZ-27", "SOZ-34"],
+    "schlagworte": ["Klassenregeln", "Vereinbarung", "Mitbestimmung", "Klassenrat", "positiv formulieren"],
+    "bild": "icon:heart-handshake",
+    "de": {
+      "titel": "Unsere Klassenvereinbarung",
+      "untertitel": "Regeln, die wir gemeinsam aushandeln, halten wir besser ein. Hier entsteht eure Abmachung.",
+      "bausteine": [
+        {"art": "aufgabe", "text": "Was ist dir in der Klasse am wichtigsten? Kreuze drei Dinge an.", "symbole": ["ankreuzen"]},
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "items": [
+            "Ich kann in Ruhe arbeiten.",
+            "Niemand wird ausgelacht.",
+            "Alle dürfen mitmachen.",
+            "Unsere Sachen bleiben heil.",
+            "Jeder kommt zu Wort.",
+            "Streit wird fair gelöst."
+          ],
+          "frei": 2
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "So klingt eine gute Regel",
+          "punkte": ["Sie sagt, was wir tun – nicht, was verboten ist.", "Sie ist kurz und klar.", "Alle wissen, wozu es sie gibt."]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Aus Verboten werden Regeln. Schreibe die Sätze positiv.",
+          "hinweis": "Beispiel: Statt „Nicht reinrufen“: Wir melden uns und warten, bis wir dran sind.",
+          "symbole": ["schreiben"]
+        },
+        {"art": "satzanfaenge", "items": ["Statt „Nicht schubsen“: Wir …", "Statt „Nicht auslachen“: Wir …", "Statt „Nichts liegen lassen“: Wir …"]},
+        {"art": "aufgabe", "text": "Wählt in der Gruppe drei Regeln aus. Schreibt auf, warum sie wichtig sind.", "symbole": ["gruppe", "schreiben"]},
+        {
+          "art": "tabelle",
+          "spalten": ["Unsere Regel", "Warum ist sie wichtig?"],
+          "breiten": [1, 1.15],
+          "zeilen": 3,
+          "beispiel": ["Wir hören zu, wenn jemand spricht.", "So wird jeder verstanden und ernst genommen."]
+        },
+        {"art": "aufgabe", "text": "Unterschreibe eure Vereinbarung.", "symbole": ["schreiben"]},
+        {
+          "art": "vertrag",
+          "titel": "Unsere Klassenvereinbarung",
+          "text": "Wir, die Klasse ___, haben unsere Regeln gemeinsam ausgehandelt. Wir halten uns daran und erinnern uns freundlich gegenseitig. Klappt eine Regel nicht, besprechen wir sie im Klassenrat. Wir überprüfen die Vereinbarung am ___.",
+          "unterschriften": ["Unterschrift", "Lehrperson"]
+        },
+        {"art": "aufgabe", "text": "Nach zwei Wochen: Wie gut klappt unsere Vereinbarung?", "symbole": ["nachdenken"]},
+        {"art": "skala", "von": "gar nicht gut", "bis": "sehr gut", "stufen": 5, "gesichter": true},
+        {"art": "frage", "text": "Was sollten wir im Klassenrat besprechen?", "linien": 2}
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder formulieren gemeinsam wenige, positive Klassenregeln, begründen sie und besiegeln sie in einer Vereinbarung, die nach zwei Wochen überprüft wird.",
+        "ablauf": [
+          "Einstieg (5 Min.): „Wie muss unsere Klasse sein, damit ihr gern hierherkommt?“ Aufgabe 1 in Einzelarbeit, danach die Kreuze an der Tafel zählen.",
+          "Merkkasten lesen, Aufgabe 2 (10 Min.): Verbote gemeinsam in Wir-Sätze verwandeln.",
+          "Aufgabe 3 in Gruppen (15 Min.): Jede Gruppe schlägt drei Regeln mit Begründung vor. Im Plenum auf drei bis fünf Regeln einigen, z. B. mit Klebepunkten.",
+          "Die Regeln groß auf ein Plakat schreiben. Alle unterschreiben Plakat und Blatt (Aufgabe 4).",
+          "Nach zwei Wochen im Klassenrat Aufgabe 5 bearbeiten und die Regeln bei Bedarf anpassen."
+        ],
+        "hintergrund": "Regeln, an deren Entstehung Kinder beteiligt sind, erleben sie eher als eigenes Anliegen und halten sie besser ein. Das entspricht der Selbstbestimmungstheorie: Wer mitbestimmen kann und den Sinn einer Regel versteht, handelt eher aus Überzeugung als aus äußerem Druck (Deci & Ryan, 2000). Für die Klassenführung gilt: wenige, positiv formulierte und begründete Regeln, die sichtbar bleiben und regelmäßig überprüft werden (Nolting, 2002). Die Unterschrift macht die Abmachung verbindlich. Die Überprüfung nach zwei Wochen zeigt, dass Regeln ernst genommen werden und veränderbar sind.",
+        "quellen": [
+          "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268.",
+          "Nolting, H.-P. (2002). Störungen in der Schulklasse. Weinheim: Beltz."
+        ],
+        "differenzierung": {
+          "leichter": "Regeln aus einer vorgegebenen Auswahl wählen und nur eine Begründung schreiben.",
+          "schwerer": "Zu jeder Regel eine faire Folge vorschlagen, falls sie nicht eingehalten wird."
+        },
+        "impulse": [
+          "Welche Regel ist dir am wichtigsten – und warum?",
+          "Was machen wir, wenn sich jemand nicht an die Abmachung hält?",
+          "Woran merken wir, dass eine Regel gut funktioniert?"
+        ],
+        "tipps": [
+          "Nicht mehr als fünf Regeln: lieber wenige, die alle kennen, als eine lange Liste.",
+          "Die Lehrperson unterschreibt mit und hält sich an die Regeln, die auch sie betreffen."
+        ],
+        "material": "Plakat, dicke Stifte; optional Klebepunkte zum Abstimmen"
+      }
+    }
+  },
+  {
+    "id": "regeln-fair-aushandeln",
+    "bereich": "verhalten",
+    "thema": "regeln",
+    "stufen": ["ES"],
+    "sozialform": ["gruppe", "klasse"],
+    "dauer": "50 Min.",
+    "eldib": ["V-31", "SOZ-33", "V-28"],
+    "schlagworte": ["Klassenrat", "Interessen", "Verhandeln", "Folgen statt Strafen", "Vereinbarung"],
+    "bild": "icon:messages",
+    "de": {
+      "titel": "Regeln fair aushandeln",
+      "untertitel": "Gute Regeln entstehen nicht durch Durchsetzen, sondern durch Aushandeln. Das dauert länger – und hält länger.",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "Streit um die Kopfhörer",
+          "text": "Zweimal pro Woche hat die Klasse eine Arbeitsstunde, in der alle still für sich arbeiten. Mila hört dabei Musik über Kopfhörer – so kann sie sich besser konzentrieren. Elias sitzt neben ihr und hört das leise Wummern trotzdem. Es lenkt ihn ab. Einige nutzen die Kopfhörer auch, um heimlich Videos zu schauen. Die Klassenlehrerin will Kopfhörer deshalb ganz verbieten. Die Klasse bringt das Thema in den Klassenrat.",
+          "bild": "figur:jana:neutral"
+        },
+        {"art": "text", "text": "Im Klassenrat geht ihr in vier Schritten vor:"},
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 0,
+          "items": [
+            {"titel": "Interessen klären", "text": "Was braucht jede Seite?"},
+            {"titel": "Lösungen sammeln", "text": "Erst sammeln, dann bewerten."},
+            {"titel": "Folgen festlegen", "text": "Fair statt Strafe."},
+            {"titel": "Vereinbaren", "text": "Aufschreiben, unterschreiben, überprüfen."}
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Position oder Interesse?",
+          "text": "Eine Position ist das, was jemand fordert: „Kopfhörer verbieten.“ Ein Interesse ist der Grund dahinter: „Ich will mich konzentrieren können.“ Wer nur über Positionen streitet, findet selten eine Lösung. Wer nach Interessen fragt, entdeckt oft Lösungen, mit denen mehrere Seiten leben können."
+        },
+        {"art": "aufgabe", "text": "Was steckt hinter den Forderungen? Ergänze Elias und die Klassenlehrerin."},
+        {
+          "art": "tabelle",
+          "spalten": ["Wer?", "Position: Was wird gefordert?", "Interesse: Worum geht es eigentlich?"],
+          "breiten": [0.8, 1.4, 1.6],
+          "zeilen": 2,
+          "beispiel": ["Mila", "„Kopfhörer müssen erlaubt bleiben.“", "Mit Musik kann sie sich besser konzentrieren."]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Sammelt Lösungen, die möglichst viele Interessen berücksichtigen.",
+          "hinweis": "Erst sammeln, dann bewerten. Auch ungewöhnliche Ideen zählen."
+        },
+        {"art": "feld", "label": "Unsere Lösungsideen", "beispiel": "ein Tisch für Arbeiten mit Musik, ein Tisch für absolute Ruhe", "hoehe": 4},
+        {
+          "art": "aufgabe",
+          "text": "Folgen statt Strafen: Welche Folge ist fair, wenn jemand die neue Regel bricht?",
+          "hinweis": "Fair heißt: Die Folge hängt mit der Regel zusammen, ist angemessen und macht etwas wieder gut."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": ["fair", "unklar", "unfair"],
+          "items": [
+            "Wer andere stört, legt die Kopfhörer für den Rest der Stunde weg.",
+            "Wer andere stört, schreibt eine Strafarbeit über Respekt.",
+            "Weil einer gestört hat, sind Kopfhörer für alle verboten.",
+            "Wer gestört hat, klärt danach mit den Betroffenen, wie es besser geht.",
+            "Wer Videos schaut, muss das Handy eine Woche lang abgeben."
+          ]
+        },
+        {"art": "aufgabe", "text": "Haltet eure Vereinbarung fest."},
+        {
+          "art": "satzanfaenge",
+          "linien": 2,
+          "items": ["Unsere Regel: …", "Diese Interessen berücksichtigt sie: …", "Wenn sich jemand nicht daran hält: …"]
+        },
+        {
+          "art": "vertrag",
+          "titel": "Vereinbarung",
+          "text": "Wir haben diese Regel im Klassenrat gemeinsam ausgehandelt. Wir halten uns daran und überprüfen sie am ___.",
+          "unterschriften": ["Für die Klasse", "Lehrperson"]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen unterscheiden Positionen und Interessen, entwickeln im Klassenrat Lösungen, die mehreren Interessen gerecht werden, bewerten Folgen nach Fairness und halten eine Vereinbarung schriftlich fest.",
+        "ablauf": [
+          "Einstieg (5 Min.): „Welche Regel an dieser Schule findet ihr unsinnig – und warum?“ Zwei, drei Beispiele sammeln, nicht diskutieren.",
+          "Fall lesen, Info-Kasten besprechen, Aufgabe 1 zu zweit (10 Min.). Frage: „Was braucht Elias, was die Lehrerin?“",
+          "Aufgabe 2 als Klassenrat-Runde (10 Min.): Ideen sammeln, ohne zu bewerten; dann prüfen, welche Idee die meisten Interessen berücksichtigt.",
+          "Aufgabe 3 (10 Min.): Folgen einschätzen und Unterschiede diskutieren: Was macht eine Folge fair?",
+          "Aufgabe 4 (10 Min.): Die Vereinbarung formulieren, unterschreiben und einen Termin zur Überprüfung festlegen."
+        ],
+        "hintergrund": "Das Harvard-Konzept unterscheidet Positionen – was jemand fordert – von Interessen – warum er es fordert. Verhandlungen, die bei den Interessen ansetzen, führen häufiger zu Lösungen, die für mehrere Seiten tragfähig sind (Fisher & Ury, 1981). Für den Umgang mit Regelverstößen bieten restaurative Ansätze eine Alternative zur Strafe: Im Mittelpunkt steht, den entstandenen Schaden zu erkennen und gemeinsam wiedergutzumachen, statt nur zu sanktionieren. So stärken sie Verantwortung und Beziehung (Wachtel, 2016). Der Klassenrat verbindet beides: Jugendliche handeln Konflikte in einem geregelten Verfahren aus und erleben, dass ihre Stimme zählt.",
+        "quellen": [
+          "Fisher, R. & Ury, W. (1981). Getting to Yes. Boston: Houghton Mifflin.",
+          "Wachtel, T. (2016). Defining Restorative. Bethlehem, PA: International Institute for Restorative Practices."
+        ],
+        "differenzierung": {
+          "leichter": "In Aufgabe 1 nur eine Person bearbeiten; für Aufgabe 2 zwei Lösungen vorgeben, zwischen denen gewählt wird.",
+          "schwerer": "Eine umstrittene Regel der eigenen Klasse mit denselben vier Schritten neu verhandeln."
+        },
+        "impulse": [
+          "Wann hast du erlebt, dass eine Regel ohne Mitsprache nicht funktioniert hat?",
+          "Was ist der Unterschied zwischen einer Folge und einer Strafe?",
+          "Wie überzeugt man jemanden, ohne ihn zu übergehen?"
+        ],
+        "tipps": [
+          "Im Klassenrat feste Rollen verteilen (Leitung, Protokoll, Zeit) – das entlastet die Lehrperson.",
+          "Nicht jede Regel ist verhandelbar (Sicherheit, Schulordnung). Das vorher offen sagen, damit keine Scheinbeteiligung entsteht."
+        ],
+        "achtung": "Wenn hinter einem Konflikt Mobbing oder gezielte Ausgrenzung steckt, gehört er nicht in den Klassenrat: Einzelgespräche führen und die zuständige Leitung (Responsable) bzw. den SePAS einbeziehen."
+      }
+    },
+    "fr": {
+      "titel": "Négocier des règles justes",
+      "untertitel": "Les bonnes règles ne s’imposent pas, elles se négocient. Cela prend plus de temps – et elles tiennent plus longtemps.",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "La dispute des écouteurs",
+          "text": "Deux fois par semaine, la classe a une heure d’étude où chacun travaille en silence. Mila écoute alors de la musique avec ses écouteurs – elle se concentre mieux ainsi. Elias, assis à côté d’elle, entend quand même un léger bourdonnement. Cela le déconcentre. Certains utilisent aussi leurs écouteurs pour regarder des vidéos en cachette. La régente veut donc interdire complètement les écouteurs. La classe porte le sujet au conseil de coopération.",
+          "bild": "figur:jana:neutral"
+        },
+        {"art": "text", "text": "Au conseil de coopération, vous avancez en quatre étapes :"},
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 0,
+          "items": [
+            {"titel": "Clarifier les intérêts", "text": "De quoi chaque partie a-t-elle besoin ?"},
+            {"titel": "Chercher des solutions", "text": "D’abord récolter, ensuite évaluer."},
+            {"titel": "Fixer les conséquences", "text": "Réparer plutôt que punir."},
+            {"titel": "Se mettre d’accord", "text": "Écrire, signer, vérifier."}
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Position ou intérêt ?",
+          "text": "Une position, c’est ce que quelqu’un exige : « Interdire les écouteurs. » Un intérêt, c’est la raison derrière : « Je veux pouvoir me concentrer. » Qui ne discute que de positions trouve rarement une solution. Qui cherche les intérêts découvre souvent des solutions acceptables pour plusieurs parties."
+        },
+        {"art": "aufgabe", "text": "Qu’y a-t-il derrière les exigences ? Complète pour Elias et pour la régente."},
+        {
+          "art": "tabelle",
+          "spalten": ["Qui ?", "Position : que demande-t-on ?", "Intérêt : de quoi s’agit-il vraiment ?"],
+          "breiten": [0.8, 1.4, 1.6],
+          "zeilen": 2,
+          "beispiel": ["Mila", "« Les écouteurs doivent rester autorisés. »", "Avec de la musique, elle se concentre mieux."]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Rassemblez des solutions qui tiennent compte d’un maximum d’intérêts.",
+          "hinweis": "D’abord récolter, ensuite évaluer. Les idées inhabituelles comptent aussi."
+        },
+        {
+          "art": "feld",
+          "label": "Nos idées de solutions",
+          "beispiel": "une table pour travailler en musique, une table pour le silence complet",
+          "hoehe": 4
+        },
+        {
+          "art": "aufgabe",
+          "text": "Des conséquences plutôt que des punitions : quelle conséquence est juste si quelqu’un enfreint la nouvelle règle ?",
+          "hinweis": "Juste signifie : la conséquence est liée à la règle, elle est proportionnée et elle répare quelque chose."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": ["juste", "pas sûr", "injuste"],
+          "items": [
+            "Qui dérange les autres range ses écouteurs pour le reste de l’heure.",
+            "Qui dérange les autres doit écrire une punition sur le respect.",
+            "Parce qu’une personne a dérangé, les écouteurs sont interdits pour tous.",
+            "Qui a dérangé en parle ensuite avec les personnes concernées pour que ça aille mieux.",
+            "Qui regarde des vidéos doit rendre son téléphone pendant une semaine."
+          ]
+        },
+        {"art": "aufgabe", "text": "Notez votre accord."},
+        {
+          "art": "satzanfaenge",
+          "linien": 2,
+          "items": ["Notre règle : …", "Elle tient compte de ces intérêts : …", "Si quelqu’un ne la respecte pas : …"]
+        },
+        {
+          "art": "vertrag",
+          "titel": "Accord",
+          "text": "Nous avons négocié cette règle ensemble au conseil de coopération. Nous la respectons et nous la réexaminerons le ___.",
+          "unterschriften": ["Pour la classe", "Enseignant·e"]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes distinguent positions et intérêts, élaborent au conseil de coopération des solutions qui répondent à plusieurs intérêts, évaluent des conséquences selon leur équité et consignent un accord par écrit.",
+        "ablauf": [
+          "Entrée en matière (5 min) : « Quelle règle de l’école trouvez-vous absurde – et pourquoi ? » Recueillir deux ou trois exemples, sans en débattre.",
+          "Lire le cas, discuter l’encadré, exercice 1 à deux (10 min). Question : « De quoi Elias a-t-il besoin ? Et la régente ? »",
+          "Exercice 2 sous forme de conseil de coopération (10 min) : récolter des idées sans les juger, puis vérifier laquelle tient compte du plus grand nombre d’intérêts.",
+          "Exercice 3 (10 min) : évaluer les conséquences et discuter des différences : qu’est-ce qui rend une conséquence juste ?",
+          "Exercice 4 (10 min) : formuler l’accord, le signer et fixer une date pour le réexaminer."
+        ],
+        "hintergrund": "La méthode de Harvard distingue les positions – ce que quelqu’un exige – des intérêts – pourquoi il l’exige. Les négociations qui partent des intérêts aboutissent plus souvent à des solutions viables pour plusieurs parties (Fisher & Ury, 1981). Face aux transgressions, les approches restauratives offrent une alternative à la punition : il s’agit de reconnaître le tort causé et de le réparer ensemble plutôt que de simplement sanctionner. Elles renforcent ainsi la responsabilité et la relation (Wachtel, 2016). Le conseil de coopération réunit les deux : les jeunes négocient leurs conflits dans un cadre réglé et constatent que leur voix compte.",
+        "quellen": [
+          "Fisher, R. & Ury, W. (1981). Getting to Yes. Boston: Houghton Mifflin.",
+          "Wachtel, T. (2016). Defining Restorative. Bethlehem, PA: International Institute for Restorative Practices."
+        ],
+        "differenzierung": {
+          "leichter": "Dans l’exercice 1, ne traiter qu’une personne ; pour l’exercice 2, proposer deux solutions entre lesquelles choisir.",
+          "schwerer": "Renégocier une règle controversée de sa propre classe avec les mêmes quatre étapes."
+        },
+        "impulse": [
+          "As-tu déjà vu une règle imposée sans concertation échouer ?",
+          "Quelle est la différence entre une conséquence et une punition ?",
+          "Comment convaincre quelqu’un sans passer par-dessus lui ?"
+        ],
+        "tipps": [
+          "Au conseil, répartir des rôles fixes (animation, compte rendu, gardien du temps) – cela soulage l’enseignant·e.",
+          "Toutes les règles ne sont pas négociables (sécurité, règlement de l’école). Le dire clairement dès le départ pour éviter une participation de façade."
+        ],
+        "achtung": "Si un conflit cache du harcèlement ou une exclusion ciblée, il n’a pas sa place au conseil de coopération : mener des entretiens individuels et impliquer la direction compétente (responsable) ou le SePAS."
+      }
+    }
+  },
+  {
+    "id": "stern-des-tages",
+    "bereich": "verhalten",
+    "thema": "ziele",
+    "stufen": ["C2"],
+    "sozialform": ["einzeln"],
+    "dauer": "15 Min., dann zweimal täglich 2 Min.",
+    "eldib": ["V-16", "V-14", "V-22"],
+    "schlagworte": ["Sterneplan", "Verstärkerplan", "Ziel", "Belohnung", "Lob"],
+    "bild": "icon:star",
+    "de": {
+      "titel": "Mein Stern des Tages",
+      "untertitel": "Ein Ziel für die ganze Woche. Jeder Stern zeigt: Das hast du geschafft.",
+      "bausteine": [
+        {"art": "aufgabe", "text": "Wähle ein Ziel für diese Woche. Kreuze eines an.", "symbole": ["ankreuzen"]},
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "items": [
+            "Ich melde mich, bevor ich rede.",
+            "Ich bleibe bei meiner Aufgabe.",
+            "Ich warte, bis ich dran bin.",
+            "Ich räume meinen Platz auf.",
+            "Bei Streit hole ich Hilfe."
+          ],
+          "frei": 1
+        },
+        {"art": "aufgabe", "text": "Schreibe dein Ziel auf. Hat es geklappt? Male einen Stern an.", "symbole": ["schreiben", "malen"]},
+        {"art": "plan", "ziel": "", "zeilen": ["Bis zur Pause", "Nach der Pause"], "symbol": "stern"},
+        {
+          "art": "aufgabe",
+          "text": "Was bekommst du für deine Sterne? Macht eine Abmachung.",
+          "hinweis": "Ideen: ein Spiel aussuchen, den Klassendienst wählen, neben einem Freund sitzen.",
+          "symbole": ["sprechen", "schreiben"]
+        },
+        {
+          "art": "vertrag",
+          "titel": "Unsere Abmachung",
+          "text": "Wenn ich diese Woche ___ Sterne sammle, darf ich ___.",
+          "unterschriften": ["Mein Name", "Lehrperson"]
+        },
+        {"art": "frage", "text": "Am Freitag: Was hat dir diese Woche geholfen?", "linien": 1}
+      ],
+      "lehrer": {
+        "ziel": "Das Kind wählt ein konkretes, positiv formuliertes Ziel, bekommt zweimal täglich eine Rückmeldung mit Sternen und tauscht die Sterne nach einer vereinbarten Regel gegen eine Belohnung ein.",
+        "ablauf": [
+          "Vorgespräch (10 Min.) mit dem Kind allein: „Was klappt schon gut? Was ist als Nächstes dran?“ Das Ziel so formulieren, dass man es sehen kann.",
+          "Die Schwelle so festlegen, dass sie in der ersten Woche sicher erreichbar ist, z. B. 6 von 10 Sternen.",
+          "Belohnung gemeinsam aussuchen: am besten eine Tätigkeit (Spiel aussuchen, Klassendienst wählen) statt Süßigkeiten oder Geschenken.",
+          "Vor der Pause und am Ende des Vormittags kurz besprechen: „Hat es geklappt?“ Den Stern mit einem konkreten Lob verbinden: „Du hast dich gemeldet und gewartet.“",
+          "Nach einer Woche auswerten; bei Erfolg die Schwelle leicht anheben oder ein neues Ziel wählen. Nach einigen Wochen die Sterne schrittweise ausschleichen."
+        ],
+        "hintergrund": "Sternepläne sind eine einfache Form positiver Verstärkung. Sie wirken, wenn das Ziel klein, konkret und positiv formuliert ist, die Rückmeldung zeitnah kommt und die Belohnung für das Kind wirklich attraktiv ist (Kazdin, 2008). Besonders geeignet sind beliebte Tätigkeiten: Eine Aktivität, die ein Kind gern macht, kann ein weniger beliebtes Verhalten verstärken (Premack, 1959). Der Stern ist dabei mehr als ein Zeichen: Er macht Fortschritt sichtbar und ist Anlass für ein kurzes, konkretes Lob. Ein Sterneplan dient nie der Bestrafung – verdiente Sterne werden nicht wieder abgezogen.",
+        "quellen": [
+          "Kazdin, A. E. (2008). The Kazdin Method for Parenting the Defiant Child. Boston: Houghton Mifflin.",
+          "Premack, D. (1959). Toward empirical behavior laws: I. Positive reinforcement. Psychological Review, 66(4), 219–233."
+        ],
+        "differenzierung": {
+          "leichter": "Nur eine Zeile nutzen und die Schwelle niedrig ansetzen, z. B. 3 von 5 Sternen.",
+          "schwerer": "Das Kind schätzt sich zuerst selbst ein und vergleicht dann mit der Einschätzung der Lehrperson."
+        },
+        "impulse": [
+          "Was hat dir heute geholfen, dein Ziel zu schaffen?",
+          "Was war schwer – und was probierst du morgen?",
+          "Welches Ziel möchtest du als Nächstes angehen?"
+        ],
+        "tipps": [
+          "Nie Sterne wegnehmen: Ein Plan, der bestraft, verliert seine Wirkung.",
+          "Die Eltern einbeziehen: Ein Foto des Plans am Freitag ermöglicht Lob auch zu Hause."
+        ],
+        "achtung": "Wenn trotz passendem Ziel und erreichbarer Schwelle über Wochen kaum Sterne gelingen: das Ziel überprüfen und mit der zuständigen Leitung (Responsable) über weitere Unterstützung sprechen.",
+        "material": "Buntstifte oder Stempel; die vereinbarte Belohnung"
+      }
+    }
+  },
+  {
+    "id": "bin-ich-bei-der-sache",
+    "bereich": "verhalten",
+    "thema": "selbstbeobachtung",
+    "stufen": ["C3", "C4"],
+    "sozialform": ["einzeln"],
+    "dauer": "30 Min. + eine Woche Beobachtung",
+    "eldib": ["V-15", "V-22", "K-24"],
+    "schlagworte": ["Selbstbeobachtung", "Aufmerksamkeit", "Strichliste", "Signal", "Selbstmanagement"],
+    "bild": "icon:target",
+    "de": {
+      "titel": "Bin ich bei der Sache?",
+      "untertitel": "Gedanken wandern – das passiert allen. Wer es bemerkt, kann sie zurückholen.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "So funktioniert die Strichliste",
+          "text": "Während du arbeitest, kommt ab und zu ein Signal. Das kann ein leiser Ton sein oder ein Zeichen der Lehrperson. Dann fragst du dich kurz: Bin ich gerade bei der Sache? Du machst einen Strich bei „Ja“ oder bei „Nein“. Danach arbeitest du sofort weiter."
+        },
+        {"art": "aufgabe", "text": "Bei der Sache oder abgelenkt? Kreuze an.", "symbole": ["ankreuzen"]},
+        {
+          "art": "einschaetzung",
+          "optionen": ["bei der Sache", "abgelenkt"],
+          "items": [
+            "Meine Augen sind bei der Aufgabe.",
+            "Ich spiele mit meinem Stift.",
+            "Ich lese die Aufgabe noch einmal, weil ich sie nicht verstehe.",
+            "Ich denke an die Pause.",
+            "Ich weiß, was ich gerade tun soll.",
+            "Ich schaue, was mein Nachbar macht."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Führe die Strichliste eine Woche lang. Mache bei jedem Signal einen Strich.",
+          "hinweis": "Die erste Zeile ist ein Beispiel.",
+          "symbole": ["schreiben"]
+        },
+        {
+          "art": "tabelle",
+          "spalten": ["Tag und Fach", "Ja, bei der Sache", "Nein, abgelenkt", "Das hat mich abgelenkt"],
+          "breiten": [1, 1, 1, 1.5],
+          "zeilen": 5,
+          "beispiel": ["Mo, Mathematik", "|||| |", "||", "Gespräch am Nebentisch"]
+        },
+        {"art": "aufgabe", "text": "Was hilft dir, wieder zur Sache zu kommen? Kreuze an oder ergänze.", "symbole": ["ankreuzen", "schreiben"]},
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "items": [
+            "Ich lese die Aufgabe noch einmal.",
+            "Ich lege störende Dinge weg.",
+            "Ich sage mir leise: „Weiter geht’s.“",
+            "Ich frage, wenn ich nicht weiterweiß.",
+            "Ich setze mir ein kleines Ziel: noch drei Aufgaben.",
+            "Ich trinke einen Schluck Wasser."
+          ],
+          "frei": 2
+        },
+        {"art": "aufgabe", "text": "Zähle am Ende der Woche deine Striche. Was fällt dir auf?", "symbole": ["nachdenken", "schreiben"]},
+        {"art": "satzanfaenge", "items": ["Ja-Striche: ______   Nein-Striche: ______"]},
+        {
+          "art": "satzanfaenge",
+          "linien": 2,
+          "items": ["Am besten war ich bei der Sache, wenn …", "Abgelenkt hat mich vor allem …", "Nächste Woche probiere ich …"]
+        },
+        {
+          "art": "skala",
+          "frage": "Wie zufrieden bist du mit deiner Woche?",
+          "von": "gar nicht zufrieden",
+          "bis": "sehr zufrieden",
+          "stufen": 5,
+          "gesichter": true
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder lernen, ihre Aufmerksamkeit bei einem Signal selbst zu überprüfen, führen eine Woche lang eine Strichliste und leiten daraus eigene Strategien ab.",
+        "ablauf": [
+          "Einstieg (5 Min.): „Wohin wandern eure Gedanken, wenn ihr arbeitet?“ Betonen: Abschweifen ist normal – entscheidend ist das Zurückholen.",
+          "Aufgabe 1 besprechen (5 Min.), vor allem die Grenzfälle: Nochmal-Lesen gehört zur Arbeit, Stiftspielen nicht.",
+          "Signal vereinbaren und ausprobieren (10 Min.), z. B. ein leiser Gong alle fünf bis zehn Minuten in der Einzelarbeit. Nach dem Signal: kurz prüfen, Strich machen, weiterarbeiten.",
+          "Eine Woche lang in ein bis zwei Arbeitsphasen pro Tag die Strichliste führen.",
+          "Am Ende der Woche Aufgabe 3 und 4 bearbeiten und im Einzelgespräch besprechen: „Was hat dir geholfen?“"
+        ],
+        "hintergrund": "Selbstbeobachtung ist ein zentraler Baustein des Selbstmanagements: Wer ein Verhalten regelmäßig beobachtet und festhält, verändert es oft schon dadurch in die gewünschte Richtung (Kanfer, Reinecker & Schmelzer, 2012). Therapieprogramme für Kinder mit Aufmerksamkeitsproblemen nutzen dafür Signalkarten und einfache Beobachtungsbögen, deren Ergebnisse anfangs mit der Einschätzung der Lehrperson abgeglichen werden (Döpfner, Schürmann & Frölich, 2019). Wichtig ist eine wertfreie Haltung: Jeder Nein-Strich ist eine Information, kein Versagen.",
+        "quellen": [
+          "Kanfer, F. H., Reinecker, H. & Schmelzer, D. (2012). Selbstmanagement-Therapie (5. Aufl.). Berlin: Springer.",
+          "Döpfner, M., Schürmann, S. & Frölich, J. (2019). Therapieprogramm für Kinder mit hyperkinetischem und oppositionellem Problemverhalten THOP (6. Aufl.). Weinheim: Beltz."
+        ],
+        "differenzierung": {
+          "leichter": "Nur eine Arbeitsphase pro Tag beobachten; die Lehrperson gibt das Signal durch leises Antippen am Platz.",
+          "schwerer": "Am Freitag die Ja-Striche als Säulen für jeden Tag zeichnen und die Tage vergleichen."
+        },
+        "impulse": [
+          "Wann bist du am leichtesten bei der Sache – morgens, nach der Pause, allein, mit anderen?",
+          "Was holt dich am schnellsten zurück?",
+          "Was könnte die Lehrperson tun, damit es leichter wird?"
+        ],
+        "tipps": [
+          "Das Signal leise und neutral halten: Es ist eine Erinnerung, keine Ermahnung.",
+          "Ehrliches Zählen ausdrücklich loben – belohnte Ja-Striche führen leicht zu geschönten Listen."
+        ],
+        "achtung": "Die Strichliste ersetzt keine Abklärung. Kann sich ein Kind über längere Zeit und in vielen Situationen kaum konzentrieren: mit den Eltern sprechen und die zuständige Leitung (Responsable) einbeziehen.",
+        "material": "Klangschale, Gong oder Timer"
+      }
+    }
+  },
+  {
+    "id": "selbstcheck",
+    "bereich": "verhalten",
+    "thema": "selbstbeobachtung",
+    "stufen": ["ES"],
+    "sozialform": ["einzeln"],
+    "dauer": "2 × 30 Min.",
+    "eldib": ["V-33", "V-29", "K-29", "SOZ-40"],
+    "schlagworte": ["Selbstbeobachtung", "Auslöser", "Verhaltensanalyse", "Gewohnheiten", "Selbstmanagement"],
+    "bild": "icon:clipboard-check",
+    "de": {
+      "titel": "Selbstcheck: Was läuft gut – was nicht?",
+      "untertitel": "Wer etwas verändern will, muss es zuerst genau kennen. Eine Woche Beobachtung sagt mehr als jeder gute Vorsatz.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Auslöser – Verhalten – Folge",
+          "text": "Verhalten passiert selten zufällig. Meist gibt es einen Auslöser – eine Situation, eine Person, einen Gedanken – und eine Folge, die das Verhalten kurzfristig belohnt, auch wenn es langfristig schadet. Beispiel: Die Erklärung ist langweilig (Auslöser), du rufst einen Witz in die Klasse (Verhalten), alle lachen (Folge). Das fühlt sich gut an – bis die dritte Verwarnung kommt."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Zieh Bilanz: Was läuft gerade gut, was möchtest du ändern?",
+          "hinweis": "Denk an Schule, Freundschaften und Freizeit."
+        },
+        {
+          "art": "spalten",
+          "links": [
+            {"art": "feld", "label": "Das läuft gut", "beispiel": "Ich bin pünktlich beim Training.", "hoehe": 4}
+          ],
+          "rechts": [
+            {"art": "feld", "label": "Das möchte ich ändern", "beispiel": "Ich rufe im Unterricht oft dazwischen.", "hoehe": 4}
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wähle ein Verhalten, das du eine Woche lang beobachtest.",
+          "hinweis": "Beschreibe es so, dass eine Kamera es filmen könnte: nicht „Ich bin respektlos“, sondern „Ich rufe im Unterricht Kommentare dazwischen“."
+        },
+        {"art": "satzanfaenge", "items": ["Das beobachte ich: …"]},
+        {"art": "aufgabe", "text": "Beobachte eine Woche lang. Notiere jedes Mal: Was war vorher, was hast du getan, was kam danach?"},
+        {
+          "art": "tabelle",
+          "spalten": ["Tag", "Auslöser: Was war vorher?", "Verhalten: Was habe ich getan?", "Folge: Was kam danach?"],
+          "breiten": [0.55, 1.4, 1.3, 1.4],
+          "zeilen": 5,
+          "beispiel": ["Mo", "Langweilige Erklärung, ein Freund grinst mich an", "Witz laut in die Klasse gerufen", "Alle lachen. Danach eine Verwarnung."]
+        },
+        {"art": "aufgabe", "text": "Werte deine Woche aus."},
+        {
+          "art": "satzanfaenge",
+          "linien": 2,
+          "items": ["Das Verhalten kommt vor allem, wenn …", "Kurzfristig bringt es mir …", "Langfristig kostet es mich …", "Besser lief es, als …"]
+        },
+        {"art": "aufgabe", "text": "Plane eine Veränderung mit einem Wenn-dann-Plan."},
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {"wenn": "Wenn mir im Unterricht ein Witz auf der Zunge liegt,", "dann": "schreibe ich ihn auf und erzähle ihn in der Pause."}
+          ]
+        },
+        {"art": "satzanfaenge", "items": ["Das gönne ich mir, wenn es eine Woche lang klappt: …"]},
+        {"art": "skala", "frage": "Wie wichtig ist dir diese Veränderung?", "von": "gar nicht wichtig", "bis": "sehr wichtig", "stufen": 11}
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen beobachten ein selbst gewähltes Verhalten eine Woche lang, analysieren Auslöser und Folgen und planen daraus eine konkrete Veränderung mit Selbstbelohnung.",
+        "ablauf": [
+          "Einstieg (5 Min.): „Welche Gewohnheit würdet ihr gern loswerden – und warum ist das so schwer?“ Info-Kasten lesen.",
+          "Aufgabe 1 und 2 (10 Min.): Bilanz ziehen und ein Verhalten auswählen. Hilfe beim Konkretisieren: „Woran würde eine Kamera das Verhalten erkennen?“",
+          "Beobachtungswoche: die Tabelle täglich kurz ausfüllen, am besten zur selben Zeit. Auch Tage ohne das Verhalten notieren.",
+          "Nach einer Woche (15 Min.): Aufgabe 4 in Einzelarbeit, danach freiwillig zu zweit: Welche Muster fallen auf?",
+          "Aufgabe 5 (10 Min.): Wenn-dann-Plan und Selbstbelohnung festlegen; nach zwei Wochen nachfragen."
+        ],
+        "hintergrund": "Das Selbstmanagement-Modell beschreibt Veränderung in drei Schritten: sich selbst beobachten, das Verhalten mit einem eigenen Maßstab vergleichen und sich für Fortschritte selbst verstärken (Kanfer, Reinecker & Schmelzer, 2012). Die Analyse von Auslöser, Verhalten und Folge macht sichtbar, warum ein Verhalten bestehen bleibt: Oft wird es kurzfristig belohnt, während die Nachteile erst später spürbar werden. Der Blick auf das, was bereits gut läuft, und auf Ausnahmen („Wann tritt das Problem nicht auf?“) liefert Hinweise auf Lösungen (de Shazer, 1985). Ein Wenn-dann-Plan hilft, die neue Handlung im entscheidenden Moment abzurufen (Gollwitzer, 1999).",
+        "quellen": [
+          "Kanfer, F. H., Reinecker, H. & Schmelzer, D. (2012). Selbstmanagement-Therapie (5. Aufl.). Berlin: Springer.",
+          "de Shazer, S. (1985). Keys to Solution in Brief Therapy. New York: Norton.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "differenzierung": {
+          "leichter": "Nur drei Beobachtungstage und eine Auswertungsfrage; das Verhalten gemeinsam mit der Lehrperson auswählen.",
+          "schwerer": "Zusätzlich die Gedanken im Moment des Auslösers notieren und eine zweite Woche mit dem neuen Plan beobachten."
+        },
+        "impulse": [
+          "Was hat dich bei der Auswertung überrascht?",
+          "Welche kurzfristige Belohnung hält das Verhalten am Leben?",
+          "Was war an den Tagen anders, an denen es besser lief?"
+        ],
+        "tipps": [
+          "Ein eigenes Beispiel zeigen, etwa: abends zu lange am Handy. Das nimmt Scham.",
+          "Die Tabellen weder einsammeln noch benoten. Sie gehören den Jugendlichen."
+        ],
+        "achtung": "Wird in der Beobachtung selbstverletzendes Verhalten, Suchtverhalten oder starke Belastung sichtbar: im Einzelgespräch ansprechen, nicht allein lassen, bei Gefährdung sofort nach dem internen Ablauf handeln und die zuständige Leitung (Responsable) bzw. den SePAS einbeziehen."
+      }
+    },
+    "fr": {
+      "titel": "Faire le point : ce qui va, ce qui coince",
+      "untertitel": "Pour changer quelque chose, il faut d’abord bien le connaître. Une semaine d’observation en dit plus que toutes les bonnes résolutions.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Déclencheur – comportement – conséquence",
+          "text": "Un comportement arrive rarement par hasard. Le plus souvent, il y a un déclencheur – une situation, une personne, une pensée – et une conséquence qui récompense ce comportement à court terme, même s’il nuit à long terme. Exemple : l’explication est ennuyeuse (déclencheur), tu lances une blague à voix haute (comportement), toute la classe rit (conséquence). Sur le moment, c’est agréable – jusqu’au troisième avertissement."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Fais le bilan : qu’est-ce qui va bien en ce moment, qu’est-ce que tu aimerais changer ?",
+          "hinweis": "Pense à l’école, aux amitiés et aux loisirs."
+        },
+        {
+          "art": "spalten",
+          "links": [
+            {"art": "feld", "label": "Ce qui va bien", "beispiel": "Je suis à l’heure à l’entraînement.", "hoehe": 4}
+          ],
+          "rechts": [
+            {"art": "feld", "label": "Ce que j’aimerais changer", "beispiel": "Je lance souvent des remarques en classe.", "hoehe": 4}
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Choisis un comportement que tu vas observer pendant une semaine.",
+          "hinweis": "Décris-le de façon qu’une caméra puisse le filmer : pas « Je suis irrespectueux·se », mais « Je lance des remarques pendant le cours »."
+        },
+        {"art": "satzanfaenge", "items": ["J’observe ceci : …"]},
+        {"art": "aufgabe", "text": "Observe pendant une semaine. Note à chaque fois : qu’y avait-il avant, qu’as-tu fait, que s’est-il passé après ?"},
+        {
+          "art": "tabelle",
+          "spalten": ["Jour", "Déclencheur : qu’y avait-il avant ?", "Comportement : qu’ai-je fait ?", "Conséquence : que s’est-il passé après ?"],
+          "breiten": [0.55, 1.4, 1.3, 1.4],
+          "zeilen": 5,
+          "beispiel": [
+            "Lu",
+            "Explication ennuyeuse, un copain me fait un clin d’œil",
+            "Blague lancée à voix haute",
+            "Tout le monde rit. Ensuite, un avertissement."
+          ]
+        },
+        {"art": "aufgabe", "text": "Analyse ta semaine."},
+        {
+          "art": "satzanfaenge",
+          "linien": 2,
+          "items": ["Ce comportement apparaît surtout quand …", "À court terme, il m’apporte …", "À long terme, il me coûte …", "Ça s’est mieux passé quand …"]
+        },
+        {"art": "aufgabe", "text": "Planifie un changement avec un plan « si … alors »."},
+        {
+          "art": "wennDann",
+          "wenn": "Si …",
+          "dann": "… alors",
+          "zeilen": 1,
+          "beispiele": [
+            {"wenn": "Si une blague me vient pendant le cours,", "dann": "je la note et je la raconte à la pause."}
+          ]
+        },
+        {"art": "satzanfaenge", "items": ["Ce que je m’offre si ça marche pendant une semaine : …"]},
+        {
+          "art": "skala",
+          "frage": "À quel point ce changement est-il important pour toi ?",
+          "von": "pas du tout important",
+          "bis": "très important",
+          "stufen": 11
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes observent un comportement choisi pendant une semaine, analysent déclencheurs et conséquences et planifient un changement concret avec une récompense qu’ils s’accordent eux-mêmes.",
+        "ablauf": [
+          "Entrée en matière (5 min) : « Quelle habitude aimeriez-vous perdre – et pourquoi est-ce si dur ? » Lire l’encadré.",
+          "Exercices 1 et 2 (10 min) : faire le bilan, puis choisir un comportement. Pour le préciser : « À quoi une caméra le reconnaîtrait-elle ? »",
+          "Semaine d’observation : remplir le tableau chaque jour, y compris les jours sans le comportement.",
+          "Une semaine plus tard (15 min) : exercice 4 seul·e, puis échange volontaire à deux : quels schémas apparaissent ?",
+          "Exercice 5 (10 min) : plan « si … alors » et récompense ; en reparler deux semaines plus tard."
+        ],
+        "hintergrund": "Le modèle de l’autogestion décrit le changement en trois étapes : s’observer, comparer son comportement à un critère personnel et se renforcer soi-même pour ses progrès (Kanfer, Reinecker & Schmelzer, 2012). L’analyse déclencheur – comportement – conséquence montre pourquoi un comportement se maintient : il est souvent récompensé à court terme, alors que ses inconvénients n’apparaissent que plus tard. Les exceptions (« Quand le problème n’apparaît-il pas ? ») donnent des pistes de solution (de Shazer, 1985). Un plan « si … alors » aide à mobiliser le nouveau comportement au bon moment (Gollwitzer, 1999).",
+        "quellen": [
+          "Kanfer, F. H., Reinecker, H. & Schmelzer, D. (2012). Selbstmanagement-Therapie (5. Aufl.). Berlin: Springer.",
+          "de Shazer, S. (1985). Keys to Solution in Brief Therapy. New York: Norton.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "differenzierung": {
+          "leichter": "Trois jours d’observation et une seule question d’analyse ; choisir le comportement avec l’enseignant·e.",
+          "schwerer": "Noter aussi les pensées au moment du déclencheur et observer une deuxième semaine avec le nouveau plan."
+        },
+        "impulse": [
+          "Qu’est-ce qui t’a surpris·e dans l’analyse ?",
+          "Quelle récompense à court terme entretient ce comportement ?",
+          "Qu’est-ce qui changeait les jours où ça allait mieux ?"
+        ],
+        "tipps": [
+          "Montrer un exemple personnel (trop de téléphone le soir, par exemple) : cela enlève la honte.",
+          "Ne pas ramasser ni noter les tableaux : ils appartiennent aux jeunes."
+        ],
+        "achtung": "En cas d’automutilation, de dépendance ou de forte souffrance : entretien individuel, ne pas laisser le ou la jeune seul·e, agir tout de suite selon la procédure interne en cas de danger et impliquer la direction compétente (responsable) ou le SePAS."
+      }
+    }
+  }
+]

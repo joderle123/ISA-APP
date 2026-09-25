@@ -1,0 +1,1209 @@
+[
+  {
+    "id": "zuerst-dann",
+    "bereich": "alltag",
+    "thema": "uebergaenge",
+    "stufen": ["C1"],
+    "sozialform": ["einzeln", "gruppe"],
+    "dauer": "15–20 Min.",
+    "eldib": ["V-8", "V-10", "SOZ-7", "KOG-31"],
+    "schlagworte": ["Zuerst-dann-Tafel", "Übergänge", "Bildkarten", "Visualisierung", "Spielschule"],
+    "bild": "icon:arrow-big-right",
+    "verwandt": ["mein-tag-in-bildern"],
+    "de": {
+      "titel": "Zuerst – dann",
+      "anleitung": "Karten und Tafel ausschneiden, laminieren, mit Klett versehen. Auf „Zuerst“ kommt die Aufgabe, auf „Dann“ etwas, das das Kind gern tut. Dazu sagen: „Zuerst Hände waschen, dann essen.“",
+      "bausteine": [
+        { "art": "aufgabe", "text": "Male die Karten an. Schneide sie aus.", "hinweis": "Auf die leere Karte malst du, was du am liebsten machst.", "symbole": ["malen", "schneiden"] },
+        {
+          "art": "karten",
+          "spalten": 4,
+          "karten": [
+            { "titel": "aufräumen", "bild": "icon:basket" },
+            { "titel": "Hände waschen", "bild": "icon:droplet" },
+            { "titel": "anziehen", "bild": "icon:shirt" },
+            { "titel": "Toilette", "bild": "icon:toilet-paper" },
+            { "titel": "Kreis", "bild": "icon:users-group" },
+            { "titel": "essen", "bild": "icon:tools-kitchen-2" },
+            { "titel": "draußen spielen", "bild": "icon:ball-football" },
+            { "titel": "malen", "bild": "icon:palette" },
+            { "titel": "Buch anschauen", "bild": "icon:book" },
+            { "titel": "Musik", "bild": "icon:music" },
+            { "titel": "puzzeln", "bild": "icon:puzzle" },
+            {}
+          ]
+        },
+        { "art": "aufgabe", "text": "Was kommt zuerst? Was kommt dann? Lege die Karten.", "symbole": ["zeigen", "sprechen"] },
+        {
+          "art": "spalten",
+          "links": [{ "art": "feld", "label": "Zuerst", "hoehe": 4 }],
+          "rechts": [{ "art": "feld", "label": "Dann", "hoehe": 4 }]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder erfahren an einer Bildtafel, was jetzt zu tun ist und was danach kommt. Übergänge zwischen zwei Tätigkeiten gelingen so mit weniger Worten und weniger Widerstand.",
+        "ablauf": [
+          "Vorbereitung: Mit dem Kind herausfinden, was es besonders gern macht – das gehört auf „Dann“.",
+          "Einführung im Sitzkreis (5 Min.): Die Tafel vormachen: „Zuerst Hände waschen, dann essen.“ Dabei auf die Karten zeigen.",
+          "Karten benennen lassen: „Was ist das? Was machst du da?“ Ein Kind legt selbst ein Paar und sagt den Satz.",
+          "Im Alltag vor einem Übergang: Tafel zeigen, kurz sagen, nicht diskutieren. Ist die Aufgabe erledigt, die Karte abnehmen: „Fertig. Jetzt kommt …“",
+          "Die „Dann“-Karte immer zuverlässig einlösen."
+        ],
+        "hintergrund": "Für kleine Kinder sind Zeitangaben wie „gleich“ oder „nach dem Essen“ schwer greifbar. Bilder bleiben sichtbar, wenn Worte längst verklungen sind. Visuelle Hilfen erleichtern deshalb das Verstehen von Abläufen, besonders bei geringerem Sprachverständnis (Hodgdon, 1995); sichtbare, vorhersehbare Strukturen sind auch ein Kernelement des TEACCH-Ansatzes (Mesibov et al., 2004). Die Reihenfolge „zuerst – dann“ nutzt das Premack-Prinzip: Eine Tätigkeit, die ein Kind lieber und häufiger ausführt, verstärkt eine weniger beliebte, wenn sie unmittelbar darauf folgt (Premack, 1959). In mehrsprachigen Gruppen kommt hinzu: Bilder sind an keine Sprache gebunden.",
+        "quellen": [
+          "Premack, D. (1959). Toward empirical behavior laws: I. Positive reinforcement. Psychological Review, 66(4), 219–233.",
+          "Hodgdon, L. A. (1995). Visual Strategies for Improving Communication. Troy, MI: QuirkRoberts.",
+          "Mesibov, G. B., Shea, V. & Schopler, E. (2004). The TEACCH Approach to Autism Spectrum Disorders. New York: Springer."
+        ],
+        "differenzierung": {
+          "leichter": "Mit echten Gegenständen beginnen (Seife, Teller), dann erst Bildkarten.",
+          "schwerer": "Drei Karten legen: „zuerst – dann – danach“. Das Kind legt selbst."
+        },
+        "impulse": [
+          "Was machen wir zuerst?",
+          "Und was kommt dann?",
+          "Was machst du am liebsten?"
+        ],
+        "tipps": [
+          "Die Tafel kündigt an, sie droht nicht: „Wenn du nicht aufräumst, darfst du nicht raus“ vermeiden.",
+          "Mit kurzen „Zuerst“-Aufgaben beginnen. So erlebt das Kind schnell: Das „Dann“ kommt wirklich."
+        ],
+        "achtung": "Reagiert ein Kind bei Übergängen regelmäßig sehr heftig (lange Wutanfälle, Weglaufen, Selbstverletzung): Situationen notieren und mit Eltern und zuständiger Leitung (Responsable) besprechen.",
+        "material": "Buntstifte, Schere, Laminierfolie, Klettpunkte, Karton"
+      }
+    }
+  },
+  {
+    "id": "neue-klasse",
+    "bereich": "alltag",
+    "thema": "uebergaenge",
+    "stufen": ["C2"],
+    "sozialform": ["einzeln", "gruppe"],
+    "dauer": "30–40 Min.",
+    "eldib": ["SOZ-15", "K-13", "K-14"],
+    "schlagworte": ["neue Klasse", "Schulanfang", "sich vorstellen", "Kontakt aufnehmen", "Mitspielen"],
+    "bild": "icon:friends",
+    "verwandt": ["wechsel-in-eine-neue-schule", "neustart"],
+    "de": {
+      "titel": "Neue Klasse, neue Leute",
+      "untertitel": "Am Anfang ist vieles neu. Das ist für fast alle Kinder aufregend.",
+      "bausteine": [
+        { "art": "aufgabe", "text": "Worauf freust du dich? Was macht dir Sorgen? Kreuze an.", "symbole": ["ankreuzen"] },
+        {
+          "art": "spalten",
+          "links": [
+            { "art": "ankreuzen", "titel": "Ich freue mich auf …", "items": ["neue Kinder.", "neue Spiele in der Pause.", "mein neues Klassenzimmer."], "frei": 1 }
+          ],
+          "rechts": [
+            { "art": "ankreuzen", "titel": "Ich mache mir Sorgen, …", "items": ["dass ich niemanden kenne.", "dass keiner mit mir spielt.", "dass ich mich verlaufe."], "frei": 1 }
+          ]
+        },
+        { "art": "aufgabe", "text": "So stellst du dich vor. Male und schreibe.", "symbole": ["malen", "schreiben"] },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:2",
+          "links": [{ "art": "feld", "label": "Das bin ich.", "hoehe": 3.5, "zeichnen": true }],
+          "rechts": [{ "art": "satzanfaenge", "items": ["Ich heiße …", "Ich spiele gern …", "Ich kann gut …"] }]
+        },
+        { "art": "aufgabe", "text": "Was antwortet das Mädchen? Schreibe in die Blase.", "symbole": ["lesen", "schreiben"] },
+        {
+          "art": "comic",
+          "spalten": 2,
+          "felder": [
+            { "figuren": ["figur:sami:ruhig:winken", "figur:lea:neutral"], "requisit": "icon:ball-football", "text": "Hallo, ich bin Yusuf. Darf ich mitspielen?", "sprecher": 0 },
+            { "figuren": ["figur:sami:ruhig", "figur:lea:ruhig"], "requisit": "icon:ball-football", "sprecher": 1 }
+          ]
+        },
+        { "art": "aufgabe", "text": "Wen fragst du morgen? Und was fragst du?", "symbole": ["schreiben"] },
+        { "art": "satzanfaenge", "items": ["Morgen frage ich …"] }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder benennen, worauf sie sich in der neuen Klasse freuen und was ihnen Sorgen macht. Sie üben, sich vorzustellen und ein anderes Kind anzusprechen.",
+        "ablauf": [
+          "Einstieg im Sitzkreis (5 Min.): „Wer war schon einmal irgendwo neu? Wie war das?“ Erfahrungen sammeln, ohne zu werten.",
+          "Aufgabe 1 allein. Danach freiwillig erzählen: „Worauf freust du dich?“ Sorgen nur aufgreifen, wenn ein Kind selbst davon spricht.",
+          "Aufgabe 2: Zu zweit gegenseitig vorstellen, dann in der Runde: „Das ist Mila. Sie spielt gern …“",
+          "Aufgabe 3: Bildgeschichte lesen, Antworten sammeln. „Darf ich mitspielen?“ im Rollenspiel üben – auch ein freundliches Nein.",
+          "Aufgabe 4 ist der Vorsatz für morgen. Am nächsten Tag nachfragen: „Hat es geklappt? Mit wem hast du gespielt?“"
+        ],
+        "hintergrund": "Eine neue Klasse wirft für Kinder vor allem soziale Fragen auf: Finde ich Anschluss? Wer spielt mit mir? Tragfähige Beziehungen zu Gleichaltrigen und Erwachsenen gehören zu den wichtigsten Schutzfaktoren in der Entwicklung (Masten, 2014). Kontakt aufzunehmen ist eine lernbare Fertigkeit: Programme zur sozial-emotionalen Förderung üben Freundschaftsfertigkeiten wie Vorstellen und Mitspielen-Fragen mit Puppen und im Rollenspiel (Webster-Stratton & Reid, 2003). Schulische Programme dieser Art verbessern nachweislich soziale Fertigkeiten, Einstellungen und Verhalten (Durlak et al., 2011). Sorgen zu Beginn sind normal; sie werden meist kleiner, wenn Kinder wissen, was sie konkret tun können.",
+        "quellen": [
+          "Masten, A. S. (2014). Ordinary Magic: Resilience in Development. New York: Guilford.",
+          "Webster-Stratton, C. & Reid, M. J. (2003). Treating conduct problems and strengthening social and emotional competence in young children: The Dina Dinosaur treatment program. Journal of Emotional and Behavioral Disorders, 11(3), 130–143.",
+          "Durlak, J. A., Weissberg, R. P., Dymnicki, A. B., Taylor, R. D. & Schellinger, K. B. (2011). The impact of enhancing students’ social and emotional learning: A meta-analysis of school-based universal interventions. Child Development, 82(1), 405–432."
+        ],
+        "differenzierung": {
+          "leichter": "Aufgabe 2 nur malen und mündlich vorstellen. Satzanfänge vorlesen.",
+          "schwerer": "Weitere Sätze zum Ansprechen sammeln und aufschreiben."
+        },
+        "impulse": [
+          "Worauf freust du dich am meisten?",
+          "Was kannst du sagen, wenn du mitspielen möchtest?",
+          "Was machst du, wenn jemand Nein sagt?"
+        ],
+        "tipps": [
+          "Neuen Kindern für die ersten Tage ein Patenkind aus der Klasse zur Seite stellen.",
+          "Namensspiele in der ersten Woche täglich wiederholen: Wer Namen kennt, spricht andere leichter an."
+        ],
+        "achtung": "Sorgen nicht im Plenum vertiefen. Wirkt ein Kind nach einigen Wochen noch sehr zurückgezogen oder ängstlich: Gespräch mit den Eltern suchen, zuständige Leitung (Responsable) informieren.",
+        "material": "Buntstifte"
+      }
+    }
+  },
+  {
+    "id": "wechsel-in-eine-neue-schule",
+    "bereich": "alltag",
+    "thema": "uebergaenge",
+    "stufen": ["C3", "C4"],
+    "sozialform": ["einzeln", "gruppe"],
+    "dauer": "45 Min.",
+    "eldib": ["V-24", "V-23", "K-15", "SOZ-26"],
+    "schlagworte": ["Schulwechsel", "Umzug", "Lycée", "Übergang", "Wenn-dann-Plan", "Unterstützung"],
+    "bild": "icon:school",
+    "verwandt": ["neue-klasse", "neustart"],
+    "de": {
+      "titel": "Wechsel in eine neue Schule",
+      "untertitel": "Ob Umzug oder Wechsel ins Lycée: In einer neuen Schule ist vieles neu. Aber nicht alles.",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "Nach den Sommerferien",
+          "text": "Diogo zieht mit seiner Familie von Esch nach Ettelbruck. Nach den Ferien kommt er in eine neue Schule. Er freut sich auf den großen Schulhof. Aber abends im Bett denkt er: Was, wenn ich mich verlaufe? Was, wenn keiner mit mir spielt? Seine Oma sagt: „Deinen Humor nimmst du mit. Und deinen Fußball auch.“",
+          "bild": "figur:noah:besorgt"
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "text": "Vor einem Schulwechsel sind fast alle Kinder aufgeregt. Das ist normal. Die Aufregung wird meistens kleiner, wenn du mehr über die neue Schule weißt und einen Plan hast."
+        },
+        { "art": "aufgabe", "text": "Was bleibt, wenn du die Schule wechselst? Was wird neu? Worauf freust du dich?", "hinweis": "Denk an Menschen, Wege, Dinge, Hobbys – und an dich selbst.", "symbole": ["schreiben"] },
+        {
+          "art": "tabelle",
+          "spalten": ["Das bleibt", "Das wird neu", "Darauf freue ich mich"],
+          "zeilen": 4,
+          "beispiel": ["meine Familie, mein Fußballverein", "der Schulweg mit dem Bus, meine Lehrerin", "der große Schulhof"]
+        },
+        { "art": "aufgabe", "text": "Was möchtest du über die neue Schule wissen? Kreuze an und ergänze.", "hinweis": "Stelle deine Fragen beim Kennenlerntag, deiner Lehrperson oder deinen Eltern.", "symbole": ["ankreuzen", "schreiben"] },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "items": [
+            "Wie komme ich zur Schule?",
+            "Wer ist meine Lehrperson?",
+            "Wann beginnt und endet der Unterricht?",
+            "Wo esse ich zu Mittag?",
+            "Welche Regeln gelten dort?",
+            "Was muss ich mitbringen?"
+          ],
+          "frei": 2
+        },
+        { "art": "aufgabe", "text": "Was machst du, wenn es in den ersten Tagen schwierig wird? Schreibe Wenn-dann-Pläne.", "hinweis": "Ein Plan für einen schwierigen Moment hilft, im richtigen Augenblick zu handeln.", "symbole": ["schreiben"] },
+        {
+          "art": "wennDann",
+          "zeilen": 2,
+          "beispiele": [
+            { "wenn": "Wenn ich meinen Klassenraum nicht finde,", "dann": "frage ich ein Kind aus meiner Klasse oder eine Lehrperson." },
+            { "wenn": "Wenn ich in der Pause allein bin,", "dann": "gehe ich zu einer Gruppe und frage: „Was spielt ihr?“" }
+          ]
+        },
+        { "art": "aufgabe", "text": "Wer hilft dir beim Wechsel? Schreibe Namen auf.", "symbole": ["schreiben"] },
+        { "art": "hand", "finger": ["Zu Hause", "Aus meiner alten Schule", "In der neuen Klasse", "Eine erwachsene Person in der Schule", "Noch jemand"] },
+        { "art": "skala", "frage": "Wie bereit fühlst du dich jetzt für den Wechsel?", "von": "noch gar nicht", "bis": "richtig bereit", "stufen": 11 }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder bereiten sich auf einen Schulwechsel vor: Sie unterscheiden, was bleibt und was neu wird, sammeln offene Fragen und legen fest, was sie in schwierigen Momenten tun und wer ihnen hilft.",
+        "ablauf": [
+          "Geschichte vorlesen (5 Min.). Fragen: „Worauf freut sich Diogo? Was macht ihm Sorgen? Was hilft ihm?“",
+          "Aufgabe 1 allein, dann zu zweit vergleichen. Betonen: Freundschaften, Hobbys und Stärken ziehen mit um.",
+          "Aufgabe 2: Fragen sammeln und klären, wer sie beantworten kann, z. B. beim Kennenlerntag.",
+          "Aufgabe 3: Wenn-dann-Pläne schreiben, einen davon im Rollenspiel ausprobieren.",
+          "Aufgabe 4 und Skala allein. Das Blatt mitgeben – für die ersten Tage an der neuen Schule."
+        ],
+        "hintergrund": "Ein Schulwechsel ist ein normaler Übergang, verlangt aber viel Anpassung auf einmal: neue Wege, Regeln und Menschen. Belastend ist vor allem die Ungewissheit. Veränderungen lassen sich leichter bewältigen, wenn sie verstehbar, handhabbar und sinnvoll erscheinen (Antonovsky, 1987). Die Aufgaben setzen genau dort an: Informationen einholen, konkrete Pläne machen, Vorfreude benennen. Wenn-dann-Pläne verknüpfen eine erwartete schwierige Situation mit einer Handlung und erleichtern so das Handeln im entscheidenden Moment (Gollwitzer, 1999). Unterstützende Beziehungen zu Erwachsenen und Gleichaltrigen gehören zu den wichtigsten Schutzfaktoren (Masten, 2014).",
+        "quellen": [
+          "Antonovsky, A. (1987). Unraveling the Mystery of Health. San Francisco: Jossey-Bass.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503.",
+          "Masten, A. S. (2014). Ordinary Magic: Resilience in Development. New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Tabelle mündlich füllen, Fragen nur ankreuzen, einen Plan gemeinsam formulieren.",
+          "schwerer": "Einen Brief an sich selbst schreiben, der am ersten Schultag geöffnet wird."
+        },
+        "impulse": [
+          "Was nimmst du aus deiner alten Schule mit?",
+          "Wer könnte dir am ersten Tag den Weg zeigen?",
+          "Was hat dir früher geholfen, wenn etwas neu war?"
+        ],
+        "tipps": [
+          "Wenn möglich, Schulweg und Gebäude vorher gemeinsam anschauen.",
+          "Kommt ein Kind mitten im Jahr: ein Patenkind aus der Klasse und einen festen Platz organisieren."
+        ],
+        "achtung": "Umzüge haben manchmal belastende Gründe (Trennung, Verlust, Flucht). Nicht im Plenum nachfragen; Einzelgespräch anbieten, bei Bedarf die Leitung (Responsable) informieren.",
+        "material": "Optional: Fotos der neuen Schule"
+      }
+    }
+  },
+  {
+    "id": "neustart",
+    "bereich": "alltag",
+    "thema": "uebergaenge",
+    "stufen": ["ES"],
+    "sozialform": ["einzeln", "gruppe"],
+    "dauer": "45–50 Min.",
+    "eldib": ["SOZ-40", "V-24", "V-29", "V-32"],
+    "schlagworte": ["Übergang", "Lycée", "Praktikum", "Stärken", "Ziele", "WOOP", "Unterstützung"],
+    "bild": "icon:rocket",
+    "verwandt": ["wechsel-in-eine-neue-schule", "neue-klasse"],
+    "de": {
+      "titel": "Neustart: Was nehme ich mit?",
+      "untertitel": "Neues Lycée, neue Klasse, erstes Praktikum: Ein Neustart fängt nie bei null an. Du bringst Stärken, Erfahrungen und Menschen mit.",
+      "bausteine": [
+        { "art": "aufgabe", "text": "Welche Stärken bringst du mit? Kreuze die drei an, die am besten zu dir passen. Ergänze, was fehlt." },
+        {
+          "art": "ankreuzen",
+          "spalten": 3,
+          "items": ["neugierig", "kreativ", "mutig", "ausdauernd", "ehrlich", "hilfsbereit", "fair", "teamfähig", "humorvoll", "gut organisiert", "ruhig unter Druck", "mehrsprachig"],
+          "frei": 3
+        },
+        { "art": "frage", "text": "Denk an einen Wechsel, den du schon geschafft hast. Welche Stärke hat dir damals geholfen – und wie?", "linien": 2 },
+        { "art": "aufgabe", "text": "Was nimmst du mit, was lässt du zurück, was probierst du neu?", "hinweis": "Ein Neustart ist auch eine Chance: Du kannst Gewohnheiten oder Rollen ablegen, die nicht mehr zu dir passen." },
+        {
+          "art": "tabelle",
+          "spalten": ["Das nehme ich mit", "Das lasse ich zurück", "Das probiere ich neu"],
+          "zeilen": 3,
+          "beispiel": ["meinen Humor, den Kontakt zu Lena", "meinen Ruf als Klassenclown", "mich im Unterricht öfter melden"]
+        },
+        { "art": "aufgabe", "text": "Wer unterstützt dich? Trage ein, an wen du dich wenden kannst.", "hinweis": "Im Lycée zum Beispiel: Klassenlehrer·in (Régent·e), SePAS, Éducateur·rice, Tutor·in. Im Praktikum: deine Betreuungsperson." },
+        {
+          "art": "tabelle",
+          "spalten": ["Person oder Stelle", "Dabei kann sie helfen", "So erreiche ich sie"],
+          "zeilen": 3,
+          "beispiel": ["SePAS", "Stress, Sorgen, Fragen zur Schullaufbahn", "Termin im Büro oder per E-Mail"]
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Warum das Hindernis dazugehört",
+          "text": "Wer sich nur ausmalt, wie schön das Ziel ist, fühlt sich oft schon fast angekommen – und strengt sich weniger an. Wer zusätzlich überlegt, was ihn bremsen könnte, und dafür einen Plan macht, bleibt eher dran."
+        },
+        { "art": "aufgabe", "text": "Setz dir ein Ziel für die ersten Wochen. Geh die vier Schritte der Reihe nach durch." },
+        {
+          "art": "schritte",
+          "linien": 2,
+          "items": [
+            { "titel": "Mein Wunsch", "text": "z. B. zwei Leute finden, mit denen ich mittags esse" },
+            { "titel": "Das beste Ergebnis", "text": "z. B. Ich fühle mich in der Klasse nicht mehr fremd." },
+            { "titel": "Mein inneres Hindernis", "text": "z. B. Ich warte, bis mich jemand anspricht." },
+            { "titel": "Mein Plan: Wenn …, dann …", "text": "z. B. Wenn ich zur Kantine gehe, frage ich jemanden aus der Klasse, ob ich mich dazusetzen kann." }
+          ]
+        },
+        { "art": "skala", "frage": "Wie zuversichtlich blickst du auf deinen Neustart?", "von": "gar nicht zuversichtlich", "bis": "sehr zuversichtlich", "stufen": 11 }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen gehen einen Übergang bewusst an: Sie benennen Stärken und frühere Erfahrungen, entscheiden, was sie mitnehmen und ändern wollen, kennen ihre Anlaufstellen und planen ein Ziel samt Hindernis.",
+        "ablauf": [
+          "Einstieg (5 Min.): „Was war euer bisher größter Wechsel – und was hat geholfen?“ Zwei, drei Stimmen sammeln.",
+          "Aufgabe 1 allein (10 Min.). Danach zu zweit: Jede Person nennt eine Stärke, die sie beim anderen beobachtet hat.",
+          "Aufgabe 2: Betonen, dass ein Neustart erlaubt, Rollen abzulegen („der Clown“, „die Stille“).",
+          "Aufgabe 3: Anlaufstellen des Lycée mit echten Namen, Räumen und Sprechzeiten ergänzen.",
+          "Aufgabe 4 (WOOP) Schritt für Schritt anleiten; beim Hindernis nach inneren Hürden fragen.",
+          "Nach vier Wochen: kurzer Rückblick auf Ziel und Skala."
+        ],
+        "hintergrund": "Übergänge sind Wendepunkte: Sie bringen Unsicherheit, aber auch die Chance, neu anzufangen. Die stärkste Quelle von Selbstwirksamkeit sind eigene Bewältigungserfahrungen (Bandura, 1977) – wer sich bewusst macht, frühere Wechsel gemeistert zu haben, geht zuversichtlicher in den nächsten. Die eigenen Stärken auf neue Weise einzusetzen, steigerte in kontrollierten Studien das Wohlbefinden (Seligman et al., 2005). Für Ziele hat sich mentales Kontrastieren bewährt: Wunsch und bestes Ergebnis vorstellen, dann das innere Hindernis benennen und einen Wenn-dann-Plan formulieren (WOOP; Oettingen, 2014; Gollwitzer, 1999).",
+        "quellen": [
+          "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
+          "Seligman, M. E. P., Steen, T. A., Park, N. & Peterson, C. (2005). Positive psychology progress: Empirical validation of interventions. American Psychologist, 60(5), 410–421.",
+          "Oettingen, G. (2014). Rethinking Positive Thinking. New York: Current.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "differenzierung": {
+          "leichter": "Stärken nur ankreuzen; WOOP mündlich mit einer erwachsenen Person durchgehen, nur den Plan aufschreiben.",
+          "schwerer": "Einen zweiten WOOP-Plan für ein anderes Ziel (z. B. Praktikum) erstellen und nach zwei Wochen auswerten."
+        },
+        "impulse": [
+          "Welche Stärke hat dir beim letzten Wechsel am meisten geholfen?",
+          "Was möchtest du in der neuen Klasse anders machen als bisher?",
+          "Wer wäre deine erste Anlaufstelle, wenn es hakt?"
+        ],
+        "tipps": [
+          "Beim Hindernis innere Hürden suchen (Gewohnheiten, Gedanken, Gefühle) – äußere lassen sich selten planen.",
+          "Stärken nicht bewerten lassen: Jede angekreuzte Stärke zählt, auch „mehrsprachig“ oder „humorvoll“."
+        ],
+        "achtung": "Zeigen Jugendliche im Übergang anhaltende Niedergeschlagenheit, Rückzug oder große Überforderung: Einzelgespräch suchen, SePAS bzw. zuständige Leitung (Responsable) einbeziehen."
+      }
+    },
+    "fr": {
+      "titel": "Nouveau départ : qu’est-ce que j’emporte ?",
+      "untertitel": "Nouveau lycée, nouvelle classe, premier stage : on ne repart jamais de zéro. Tu emportes tes forces, ton expérience et des gens sur qui compter.",
+      "bausteine": [
+        { "art": "aufgabe", "text": "Quelles forces emportes-tu ? Coche les trois qui te ressemblent le plus. Ajoute ce qui manque." },
+        {
+          "art": "ankreuzen",
+          "spalten": 3,
+          "items": ["curieux·se", "créatif·ve", "courageux·se", "persévérant·e", "honnête", "serviable", "juste", "à l’aise en équipe", "drôle", "bien organisé·e", "calme sous pression", "multilingue"],
+          "frei": 3
+        },
+        { "art": "frage", "text": "Pense à un changement que tu as déjà réussi. Quelle force t’a aidé·e à ce moment-là – et comment ?", "linien": 2 },
+        { "art": "aufgabe", "text": "Qu’est-ce que tu emportes, que laisses-tu derrière toi, que veux-tu essayer ?", "hinweis": "Un nouveau départ est aussi une chance : tu peux laisser tomber des habitudes ou des rôles qui ne te correspondent plus." },
+        {
+          "art": "tabelle",
+          "spalten": ["J’emporte", "Je laisse derrière moi", "J’essaie"],
+          "zeilen": 3,
+          "beispiel": ["mon humour, le contact avec Lena", "ma réputation de clown de la classe", "lever la main plus souvent en cours"]
+        },
+        { "art": "aufgabe", "text": "Qui peut te soutenir ? Note à qui tu peux t’adresser.", "hinweis": "Au lycée, par exemple : régent·e, SePAS, éducateur·rice, tuteur·rice. En stage : ton tuteur ou ta tutrice de stage." },
+        {
+          "art": "tabelle",
+          "spalten": ["Personne ou service", "Pour quoi elle peut m’aider", "Comment la joindre"],
+          "zeilen": 3,
+          "beispiel": ["SePAS", "stress, soucis, questions d’orientation", "rendez-vous au bureau ou par e-mail"]
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Pourquoi l’obstacle compte",
+          "text": "Quand on se contente d’imaginer son objectif, on a souvent l’impression d’y être presque – et on fait moins d’efforts. Quand on réfléchit aussi à ce qui pourrait nous freiner et qu’on prévoit un plan, on tient plus facilement."
+        },
+        { "art": "aufgabe", "text": "Fixe-toi un objectif pour les premières semaines. Suis les quatre étapes dans l’ordre." },
+        {
+          "art": "schritte",
+          "linien": 2,
+          "items": [
+            { "titel": "Mon souhait", "text": "p. ex. trouver deux personnes avec qui manger à midi" },
+            { "titel": "Le meilleur résultat", "text": "p. ex. je ne me sens plus étranger·ère dans la classe." },
+            { "titel": "Mon obstacle intérieur", "text": "p. ex. j’attends que quelqu’un vienne me parler." },
+            { "titel": "Mon plan : si …, alors …", "text": "p. ex. si je vais à la cantine, je demande à quelqu’un de la classe si je peux m’asseoir à sa table." }
+          ]
+        },
+        { "art": "skala", "frage": "Avec quelle confiance abordes-tu ce nouveau départ ?", "von": "pas du tout confiant·e", "bis": "très confiant·e", "stufen": 11 }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes abordent une transition de façon consciente : ils nomment leurs forces et leurs expériences, décident ce qu’ils emportent et ce qu’ils veulent changer, repèrent leurs personnes-ressources et planifient un objectif en tenant compte de l’obstacle.",
+        "ablauf": [
+          "Entrée en matière (5 min) : « Quel a été votre plus grand changement jusqu’ici – et qu’est-ce qui vous a aidés ? » Recueillir deux ou trois réponses.",
+          "Tâche 1 individuellement (10 min). Puis à deux : chacun·e nomme une force observée chez l’autre.",
+          "Tâche 2 : souligner qu’un nouveau départ permet de quitter un rôle (« le clown », « la discrète »).",
+          "Tâche 3 : compléter les personnes-ressources du lycée avec de vrais noms, salles et horaires.",
+          "Tâche 4 (WOOP) : guider étape par étape ; pour l’obstacle, chercher un frein intérieur.",
+          "Quatre semaines plus tard : bref bilan de l’objectif et de l’échelle."
+        ],
+        "hintergrund": "Les transitions sont des tournants : elles apportent de l’incertitude, mais aussi la possibilité de recommencer. La source la plus puissante du sentiment d’efficacité personnelle, ce sont les réussites vécues (Bandura, 1977) : se rappeler avoir surmonté d’autres changements aide à aborder le suivant avec confiance. Utiliser ses forces d’une manière nouvelle a augmenté le bien-être dans des études contrôlées (Seligman et al., 2005). Pour les objectifs, le contraste mental a fait ses preuves : imaginer le souhait et le meilleur résultat, puis nommer l’obstacle intérieur et formuler un plan « si … alors » (WOOP ; Oettingen, 2014 ; Gollwitzer, 1999).",
+        "quellen": [
+          "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
+          "Seligman, M. E. P., Steen, T. A., Park, N. & Peterson, C. (2005). Positive psychology progress: Empirical validation of interventions. American Psychologist, 60(5), 410–421.",
+          "Oettingen, G. (2014). Rethinking Positive Thinking. New York: Current.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "differenzierung": {
+          "leichter": "Seulement cocher les forces ; faire le WOOP à l’oral avec un·e adulte et n’écrire que le plan.",
+          "schwerer": "Établir un second plan WOOP pour un autre objectif (p. ex. le stage) et l’évaluer après deux semaines."
+        },
+        "impulse": [
+          "Quelle force t’a le plus aidé·e lors de ton dernier changement ?",
+          "Qu’aimerais-tu faire autrement dans ta nouvelle classe ?",
+          "Vers qui te tournerais-tu en premier si ça coince ?"
+        ],
+        "tipps": [
+          "Pour l’obstacle, viser les freins intérieurs (habitudes, pensées, émotions) : les obstacles extérieurs se planifient rarement.",
+          "Ne pas faire juger les forces : chaque force cochée compte, « multilingue » ou « drôle » aussi."
+        ],
+        "achtung": "Si un·e jeune montre pendant la transition un abattement durable, un repli ou une forte surcharge : chercher l’entretien individuel, impliquer le SePAS ou la direction compétente (responsable)."
+      }
+    }
+  },
+  {
+    "id": "mein-tag-in-bildern",
+    "bereich": "alltag",
+    "thema": "tagesablauf",
+    "stufen": ["C1"],
+    "sozialform": ["einzeln", "gruppe"],
+    "dauer": "20 Min.",
+    "eldib": ["V-8", "KOG-14", "KOG-31"],
+    "schlagworte": ["Tagesablauf", "Bildplan", "Bildkarten", "Struktur", "Spielschule"],
+    "bild": "icon:sun",
+    "verwandt": ["zuerst-dann", "meine-morgenroutine"],
+    "de": {
+      "titel": "Mein Tag in Bildern",
+      "anleitung": "Karten anmalen lassen, ausschneiden, laminieren. In der Reihenfolge des Tages mit Klett auf einen Streifen kleben. Nach jeder Tätigkeit die Karte gemeinsam abnehmen.",
+      "bausteine": [
+        { "art": "aufgabe", "text": "Male die Karten an. Schneide sie aus.", "symbole": ["malen", "schneiden"] },
+        {
+          "art": "karten",
+          "spalten": 4,
+          "karten": [
+            { "titel": "ankommen", "bild": "icon:door-enter" },
+            { "titel": "Kreis", "bild": "icon:users-group" },
+            { "titel": "spielen", "bild": "icon:puzzle" },
+            { "titel": "Toilette", "bild": "icon:toilet-paper" },
+            { "titel": "Hände waschen", "bild": "icon:droplet" },
+            { "titel": "essen", "bild": "icon:apple" },
+            { "titel": "draußen", "bild": "icon:trees" },
+            { "titel": "turnen", "bild": "icon:run" },
+            { "titel": "malen", "bild": "icon:palette" },
+            { "titel": "Geschichte", "bild": "icon:book" },
+            { "titel": "ausruhen", "bild": "icon:pillow" },
+            { "titel": "abholen", "bild": "icon:home" }
+          ]
+        },
+        { "art": "aufgabe", "text": "Was machst du in der Spielschule am liebsten? Male es.", "symbole": ["malen"] },
+        { "art": "feld", "label": "Das mache ich am liebsten.", "hoehe": 4, "zeichnen": true }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder erkennen den Ablauf ihres Tages in der Spielschule an Bildern wieder. Der sichtbare Plan gibt Sicherheit und hilft, sich auf das Nächste einzustellen.",
+        "ablauf": [
+          "Karten gemeinsam anschauen und benennen: „Was machen wir da?“ Die Kinder malen die Karten an.",
+          "Karten laminieren und in der Reihenfolge des Tages auf einen Streifen in Augenhöhe der Kinder kleben.",
+          "Morgens im Kreis den Tag gemeinsam „lesen“: „Zuerst …, dann …, dann …“",
+          "Nach jeder Tätigkeit nimmt ein Kind die Karte ab und legt sie in eine „Fertig“-Box.",
+          "Ändert sich etwas (Ausflug, Turnen fällt aus), die Karte vorher sichtbar austauschen und ankündigen."
+        ],
+        "hintergrund": "Vorhersehbarkeit gibt kleinen Kindern Sicherheit: Wer weiß, was als Nächstes kommt, muss weniger nachfragen und kann Übergänge leichter mitmachen. Bildpläne machen den Tagesablauf sichtbar und bleiben – anders als gesprochene Ankündigungen – den ganzen Tag verfügbar (Hodgdon, 1995). Im TEACCH-Ansatz gehören visuelle Tagespläne zu den zentralen Strukturhilfen; sie fördern Selbstständigkeit und verringern Stress bei Wechseln (Mesibov et al., 2004). Das Abnehmen erledigter Karten zeigt anschaulich, wie der Tag voranschreitet. Unerwartete Änderungen fallen leichter, wenn sie am Plan angekündigt werden.",
+        "quellen": [
+          "Hodgdon, L. A. (1995). Visual Strategies for Improving Communication. Troy, MI: QuirkRoberts.",
+          "Mesibov, G. B., Shea, V. & Schopler, E. (2004). The TEACCH Approach to Autism Spectrum Disorders. New York: Springer."
+        ],
+        "differenzierung": {
+          "leichter": "Mit drei Karten beginnen (ankommen, spielen, abholen) und nach und nach ergänzen.",
+          "schwerer": "Das Kind legt den Plan am Morgen selbst und erzählt ihn einem anderen Kind."
+        },
+        "impulse": [
+          "Was machen wir jetzt?",
+          "Was kommt nach dem Essen?",
+          "Was machst du am liebsten?"
+        ],
+        "tipps": [
+          "Den Plan immer gleich lesen: von oben nach unten oder von links nach rechts.",
+          "Fällt der Abschied am Morgen schwer, die Karte „abholen“ zeigen: Sie macht sichtbar, dass der Tag ein Ende hat."
+        ],
+        "achtung": "Reagiert ein Kind trotz Bildplan anhaltend stark auf Übergänge oder Abschiede: Beobachtungen festhalten und mit Eltern und zuständiger Leitung (Responsable) besprechen.",
+        "material": "Buntstifte, Schere, Laminierfolie, Klett, Kartonstreifen"
+      }
+    }
+  },
+  {
+    "id": "meine-morgenroutine",
+    "bereich": "alltag",
+    "thema": "tagesablauf",
+    "stufen": ["C2"],
+    "sozialform": ["einzeln", "klasse"],
+    "dauer": "30 Min. + eine Woche Plan",
+    "eldib": ["V-6", "V-15", "KOG-31"],
+    "schlagworte": ["Morgenroutine", "Reihenfolge", "Selbstständigkeit", "Checkliste", "Wochenplan"],
+    "bild": "icon:alarm",
+    "verwandt": ["mein-tag-in-bildern", "gut-schlafen"],
+    "de": {
+      "titel": "Meine Morgenroutine",
+      "untertitel": "Mit einem festen Ablauf klappt der Morgen leichter.",
+      "bausteine": [
+        { "art": "aufgabe", "text": "Was machst du am Morgen? Kreuze an.", "symbole": ["ankreuzen"] },
+        {
+          "art": "bilder",
+          "modus": "ankreuzen",
+          "spalten": 4,
+          "bilder": [
+            { "bild": "icon:alarm", "text": "aufstehen" },
+            { "bild": "icon:toilet-paper", "text": "Toilette" },
+            { "bild": "icon:droplet", "text": "waschen" },
+            { "bild": "icon:mood-happy", "text": "Zähne putzen" },
+            { "bild": "icon:shirt", "text": "anziehen" },
+            { "bild": "icon:bread", "text": "frühstücken" },
+            { "bild": "icon:shoe", "text": "Schuhe, Jacke" },
+            { "bild": "icon:backpack", "text": "Schultasche" }
+          ]
+        },
+        { "art": "aufgabe", "text": "Schreibe deinen Plan. Hake jeden Morgen ab.", "hinweis": "Schreibe die Schritte der Reihe nach auf. Die Wörter oben helfen dir.", "symbole": ["schreiben", "ankreuzen"] },
+        { "art": "plan", "symbol": "kasten", "zeilen": ["aufstehen", "", "", "", ""] }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder benennen die Schritte ihres Morgens, bringen sie in eine feste Reihenfolge und haken eine Woche lang ab, was sie selbstständig geschafft haben.",
+        "ablauf": [
+          "Einstieg im Kreis (5 Min.): „Was hast du heute Morgen alles gemacht, bevor du in die Schule kamst?“",
+          "Aufgabe 1: Ankreuzen, was zum eigenen Morgen gehört. Unterschiede sind normal (Duschen am Abend, Frühstück in der Maison Relais).",
+          "Aufgabe 2: Den eigenen Plan der Reihe nach schreiben; Wörter aus Aufgabe 1 dürfen abgeschrieben werden.",
+          "Den Plan mit einer kurzen Notiz an die Eltern mitgeben; nach einer Woche zurückbringen.",
+          "Auswertung im Kreis: „Welcher Schritt klappt schon allein? Welcher ist noch schwer?“"
+        ],
+        "hintergrund": "Feste Abläufe entlasten das Arbeitsgedächtnis: Was zur Gewohnheit geworden ist, muss nicht jeden Morgen neu geplant oder ausgehandelt werden. Exekutive Funktionen wie Planen, Erinnern und Sich-nicht-ablenken-Lassen sind im Grundschulalter noch in Entwicklung (Diamond, 2013). Eine sichtbare Checkliste übernimmt einen Teil dieser Steuerung von außen. Das eigene Abhaken ist eine einfache Form der Selbstbeobachtung, eines Kernelements von Selbstmanagement (Kanfer et al., 2012). Bilder zu den Handlungsschritten helfen besonders Kindern, die mit mündlichen Anweisungen wenig anfangen können (Hodgdon, 1995).",
+        "quellen": [
+          "Diamond, A. (2013). Executive functions. Annual Review of Psychology, 64, 135–168.",
+          "Kanfer, F. H., Reinecker, H. & Schmelzer, D. (2012). Selbstmanagement-Therapie (5. Aufl.). Berlin: Springer.",
+          "Hodgdon, L. A. (1995). Visual Strategies for Improving Communication. Troy, MI: QuirkRoberts."
+        ],
+        "differenzierung": {
+          "leichter": "Die Bilder aus Aufgabe 1 ausschneiden und in der richtigen Reihenfolge aufkleben.",
+          "schwerer": "Zu jedem Schritt notieren, wie lange er ungefähr dauert."
+        },
+        "impulse": [
+          "Was machst du als Erstes, wenn du aufwachst?",
+          "Welcher Schritt dauert bei dir am längsten?",
+          "Was kannst du schon am Abend vorbereiten?"
+        ],
+        "tipps": [
+          "Eltern kurz informieren: Der Plan soll helfen, nicht zusätzlichen Druck machen.",
+          "Den Plan zu Hause dort aufhängen, wo er gebraucht wird, z. B. an der Badezimmertür."
+        ],
+        "achtung": "Morgen sehen in Familien sehr verschieden aus (zwei Haushalte, früher Dienst der Eltern). Nicht vergleichen; bei Hinweisen auf Vernachlässigung die zuständige Leitung (Responsable) informieren.",
+        "material": "Buntstifte; optional Schere und Kleber"
+      }
+    }
+  },
+  {
+    "id": "gut-schlafen",
+    "bereich": "alltag",
+    "thema": "tagesablauf",
+    "stufen": ["C3", "C4"],
+    "sozialform": ["einzeln", "gruppe"],
+    "dauer": "45 Min. + eine Woche Tagebuch",
+    "eldib": ["K-29", "KOG-45", "V-22"],
+    "schlagworte": ["Schlaf", "Abendroutine", "Schlaf-Tagebuch", "Bildschirm am Abend", "Konzentration"],
+    "bild": "icon:moon-stars",
+    "verwandt": ["meine-morgenroutine", "schlaf-check", "medien-tagebuch"],
+    "de": {
+      "titel": "Gut schlafen",
+      "untertitel": "Im Schlaf erholt sich dein Körper. Dein Gehirn ordnet, was du am Tag erlebt und gelernt hast.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Wie viel Schlaf brauchst du?",
+          "punkte": [
+            "Kinder zwischen 6 und 12 Jahren brauchen jede Nacht 9 bis 12 Stunden Schlaf.",
+            "Wer genug schläft, kann sich besser konzentrieren und merkt sich mehr.",
+            "Ausgeschlafen bist du meistens besser gelaunt und nicht so schnell gereizt."
+          ]
+        },
+        { "art": "aufgabe", "text": "Rechne aus: Wie lange schläfst du an einem Schultag?", "hinweis": "Beispiel: von 20:30 Uhr bis 6:30 Uhr sind es 10 Stunden.", "symbole": ["nachdenken", "schreiben"] },
+        { "art": "satzanfaenge", "items": ["Ins Bett gehe ich um …", "Aufstehen muss ich um …", "So viele Stunden schlafe ich: …"] },
+        { "art": "aufgabe", "text": "Was hilft beim Einschlafen? Was hält wach? Kreuze an.", "symbole": ["ankreuzen"] },
+        {
+          "art": "einschaetzung",
+          "optionen": ["hilft", "hält wach"],
+          "items": [
+            "ein Buch lesen oder vorgelesen bekommen",
+            "im Bett noch am Tablet oder Handy spielen",
+            "jeden Abend ungefähr zur gleichen Zeit ins Bett gehen",
+            "am Abend Cola oder Eistee trinken",
+            "ein Hörspiel oder ruhige Musik hören",
+            "kurz vor dem Schlafen einen gruseligen Film schauen",
+            "tagsüber draußen toben",
+            "Sorgen vorher jemandem erzählen"
+          ]
+        },
+        { "art": "aufgabe", "text": "Plane deine Abendroutine für einen Schultag.", "hinweis": "Die letzte Stunde vor dem Schlafen sollte ruhig sein – am besten ohne Bildschirm.", "symbole": ["schreiben"] },
+        { "art": "tagesplan", "zeilen": [{ "zeit": "19:30", "text": "Bildschirm aus, Schultasche packen", "bild": "icon:backpack" }], "leer": 4 },
+        { "art": "aufgabe", "text": "Führe eine Woche lang dein Schlaf-Tagebuch.", "hinweis": "Trage jeden Morgen ein, wann du ins Bett gegangen und wann du aufgestanden bist.", "symbole": ["schreiben"] },
+        {
+          "art": "tabelle",
+          "spalten": ["Tag", "Ins Bett um", "Aufgestanden um", "Stunden", "Am Morgen fühle ich mich …"],
+          "breiten": [0.7, 1.1, 1.3, 0.9, 2.2],
+          "zeilen": 7,
+          "beispiel": ["Mo", "20:45", "6:45", "10", "wach und fit"]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder kennen ihren Schlafbedarf, berechnen ihre Schlafdauer, unterscheiden Gewohnheiten, die das Einschlafen fördern oder stören, und planen eine ruhige Abendroutine.",
+        "ablauf": [
+          "Einstieg (5 Min.): „Woran merkst du morgens, ob du gut geschlafen hast?“ Antworten sammeln.",
+          "Info-Kasten gemeinsam lesen. Aufgabe 1: Schlafdauer ausrechnen, ein Beispiel an der Tafel vorrechnen.",
+          "Aufgabe 2 zu zweit, dann vergleichen. Unterschiede zulassen: Musik hilft manchen, andere stört sie.",
+          "Aufgabe 3: Abendroutine für einen Schultag planen, die letzte Stunde möglichst ohne Bildschirm.",
+          "Aufgabe 4 als Hausaufgabe über eine Woche. Auswertung: „Wann warst du morgens am fittesten?“"
+        ],
+        "hintergrund": "Die American Academy of Sleep Medicine empfiehlt Kindern von 6 bis 12 Jahren regelmäßig 9 bis 12 Stunden Schlaf pro 24 Stunden (Paruthi et al., 2016). Ausreichender Schlaf hängt mit besserer Aufmerksamkeit, besserem Verhalten, Lernen und Gedächtnis, Emotionsregulation und Gesundheit zusammen; zu wenig Schlaf mit Aufmerksamkeits-, Verhaltens- und Lernproblemen. Vieles, was den Schlaf beeinflusst, sind Gewohnheiten, die Kinder mitgestalten können: feste Zeiten, eine ruhige Abendroutine, wenig Aufregung kurz vor dem Einschlafen. Das Schlaf-Tagebuch macht eigene Muster sichtbar; Selbstbeobachtung ist ein erster Schritt zur Veränderung (Kanfer et al., 2012).",
+        "quellen": [
+          "Paruthi, S. et al. (2016). Recommended amount of sleep for pediatric populations: A consensus statement of the American Academy of Sleep Medicine. Journal of Clinical Sleep Medicine, 12(6), 785–786.",
+          "Kanfer, F. H., Reinecker, H. & Schmelzer, D. (2012). Selbstmanagement-Therapie (5. Aufl.). Berlin: Springer."
+        ],
+        "differenzierung": {
+          "leichter": "Schlafdauer an einer Lernuhr abzählen; im Tagebuch nur Uhrzeiten und ein Wort eintragen.",
+          "schwerer": "Die Woche auswerten: Durchschnitt berechnen, Schultage und Wochenende vergleichen."
+        },
+        "impulse": [
+          "Was machst du in der letzten halben Stunde vor dem Schlafen?",
+          "Was hilft dir, wenn du nicht einschlafen kannst?",
+          "Woran merkst du am nächsten Tag, dass du zu wenig geschlafen hast?"
+        ],
+        "tipps": [
+          "Eltern über das Tagebuch informieren: Es geht ums Beobachten, nicht ums Kontrollieren.",
+          "Nicht jedes Kind hat ein eigenes Zimmer oder feste Zeiten – Pläne an die Lebenslage anpassen."
+        ],
+        "achtung": "Schlafprobleme können auf Sorgen, Belastungen zu Hause oder gesundheitliche Ursachen hinweisen. Wirkt ein Kind dauerhaft übermüdet: Gespräch mit den Eltern, zuständige Leitung (Responsable) informieren, ggf. ärztliche Abklärung empfehlen.",
+        "material": "Optional: Lernuhr"
+      }
+    }
+  },
+  {
+    "id": "schlaf-check",
+    "bereich": "alltag",
+    "thema": "tagesablauf",
+    "stufen": ["ES"],
+    "sozialform": ["einzeln", "gruppe"],
+    "dauer": "45 Min.",
+    "eldib": ["V-29", "V-32", "K-29", "V-22"],
+    "schlagworte": ["Schlaf", "Handy am Abend", "Schlaf-Protokoll", "Wenn-dann-Plan", "Pubertät"],
+    "bild": "icon:bed",
+    "verwandt": ["gut-schlafen", "mein-handy-und-ich"],
+    "de": {
+      "titel": "Schlaf-Check",
+      "untertitel": "Jugendliche brauchen 8 bis 10 Stunden Schlaf pro Nacht. Wie viel bekommst du wirklich – und was hält dich wach?",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Warum Schlaf in der Jugend knapp wird",
+          "text": "In der Pubertät verschiebt sich die innere Uhr: Man wird abends später müde, muss morgens aber früh raus. Dazu halten Handy, Serien und Chats wach. Viele schlafen deshalb unter der Woche weniger, als sie brauchen – und merken es an Konzentration und Stimmung."
+        },
+        { "art": "aufgabe", "text": "Wie sieht dein Schlaf aus? Kreuze an." },
+        {
+          "art": "einschaetzung",
+          "optionen": ["stimmt", "teils", "stimmt nicht"],
+          "items": [
+            "Unter der Woche schlafe ich weniger als 8 Stunden.",
+            "Am Wochenende schlafe ich viel länger als unter der Woche.",
+            "Morgens komme ich nur schwer aus dem Bett.",
+            "Im Unterricht bin ich oft müde.",
+            "Mein Handy liegt nachts in Reichweite.",
+            "Kurz vor dem Einschlafen bin ich noch am Handy.",
+            "Nachts wache ich manchmal wegen Nachrichten auf."
+          ]
+        },
+        { "art": "aufgabe", "text": "Was könntest du ändern? Kreuze eine Idee an, die du eine Woche lang ausprobierst." },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "items": [
+            "Handy nachts außerhalb des Zimmers laden",
+            "„Nicht stören“ ab einer festen Uhrzeit",
+            "einen echten Wecker statt des Handys nutzen",
+            "die letzte halbe Stunde ohne Bildschirm",
+            "keine Serien mehr im Bett",
+            "unter der Woche etwa zur gleichen Zeit ins Bett",
+            "ab dem Nachmittag keine Energydrinks oder Cola",
+            "kreisende Gedanken vor dem Schlafen aufschreiben"
+          ],
+          "frei": 2
+        },
+        { "art": "aufgabe", "text": "Formuliere deinen Plan für die nächste Woche.", "hinweis": "Je genauer Uhrzeit und Handlung, desto eher klappt es." },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [{ "wenn": "Wenn es 22 Uhr ist,", "dann": "lege ich das Handy zum Laden in die Küche und stelle meinen Wecker." }]
+        },
+        { "art": "aufgabe", "text": "Führe eine Woche lang ein Schlaf-Protokoll.", "hinweis": "Trage jeden Morgen ein, wann du das Handy weggelegt hast, wann du ungefähr eingeschlafen und wann du aufgestanden bist." },
+        {
+          "art": "tabelle",
+          "spalten": ["Tag", "Handy weg um", "Eingeschlafen ca.", "Aufgestanden um", "Schlaf (Std.)"],
+          "zeilen": 7,
+          "beispiel": ["Mo", "22:30", "23:00", "6:30", "7,5"]
+        },
+        { "art": "frage", "text": "Nach der Woche: Was hat sich verändert – beim Einschlafen, am Morgen, im Unterricht?", "linien": 2 },
+        { "art": "skala", "frage": "Wie gut hat dein Plan geklappt?", "von": "gar nicht", "bis": "sehr gut", "stufen": 11 },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Wenn du nicht einschlafen kannst",
+          "punkte": [
+            "Nicht aufs Handy und nicht auf die Uhr schauen.",
+            "Langsam atmen: 4 Sekunden ein, 6 Sekunden aus.",
+            "Bist du nach etwa 20 Minuten noch hellwach: kurz aufstehen, etwas Ruhiges tun, dann zurück ins Bett."
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen schätzen ihren Schlaf realistisch ein, erkennen Zusammenhänge zwischen Handy, Schlaf und Befinden und erproben eine Woche lang einen selbst gewählten Abendplan.",
+        "ablauf": [
+          "Einstieg (5 Min.): „Wie viele Stunden habt ihr letzte Nacht geschlafen?“ Anonym auf Zetteln sammeln, an der Tafel verteilen.",
+          "Info-Kasten lesen; Selbsteinschätzung allein (5 Min.). Keine Auswertung im Plenum.",
+          "Aufgabe 2: Ideen diskutieren – was ist realistisch? Jede Person wählt eine Idee.",
+          "Aufgabe 3: Wenn-dann-Plan formulieren und zu zweit prüfen: Sind Uhrzeit und Handlung konkret?",
+          "Aufgabe 4: Protokoll eine Woche führen. Danach: „Was hat sich verändert – beim Einschlafen, am Morgen, im Unterricht?“"
+        ],
+        "hintergrund": "Für Jugendliche von 13 bis 18 Jahren empfiehlt die American Academy of Sleep Medicine regelmäßig 8 bis 10 Stunden Schlaf pro 24 Stunden (Paruthi et al., 2016); zu wenig Schlaf hängt unter anderem mit Aufmerksamkeits- und Lernproblemen, gedrückter Stimmung und höherer Unfallgefahr zusammen. In der Pubertät verschiebt sich der Schlaf-wach-Rhythmus nach hinten, während der Unterricht früh beginnt; das Handy am Abend verstärkt diesen Druck. Selbst gewählte Ziele werden eher umgesetzt als verordnete (Deci & Ryan, 2000) – daher ein eigener Wenn-dann-Plan (Gollwitzer, 1999) und ein kurzes Protokoll, das Zusammenhänge sichtbar macht.",
+        "quellen": [
+          "Paruthi, S. et al. (2016). Recommended amount of sleep for pediatric populations: A consensus statement of the American Academy of Sleep Medicine. Journal of Clinical Sleep Medicine, 12(6), 785–786.",
+          "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "differenzierung": {
+          "leichter": "Nur Aufgabe 1 und einen Plan; das Protokoll an drei Schultagen führen.",
+          "schwerer": "Protokoll auswerten: Durchschnitt unter der Woche und am Wochenende berechnen und vergleichen."
+        },
+        "impulse": [
+          "Was ist das Letzte, was du abends am Handy machst?",
+          "Was würde dir helfen, das Handy früher wegzulegen?",
+          "Woran merkst du im Unterricht, dass du zu wenig geschlafen hast?"
+        ],
+        "tipps": [
+          "Nicht moralisieren: Jugendliche kennen die Ratschläge. Überzeugender ist die eigene Beobachtung im Protokoll.",
+          "Mit der Klasse eine Ruhezeit für den Klassenchat vereinbaren, z. B. ab 21 Uhr."
+        ],
+        "achtung": "Anhaltende Schlaflosigkeit, nächtliches Grübeln oder starke Tagesmüdigkeit können auf Belastungen oder Erkrankungen hinweisen: Einzelgespräch suchen, SePAS bzw. zuständige Leitung (Responsable) einbeziehen, ärztliche Abklärung empfehlen."
+      }
+    },
+    "fr": {
+      "titel": "Bilan sommeil",
+      "untertitel": "Les ados ont besoin de 8 à 10 heures de sommeil par nuit. Combien en as-tu vraiment – et qu’est-ce qui te tient éveillé·e ?",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Pourquoi le sommeil manque à l’adolescence",
+          "text": "À la puberté, l’horloge interne se décale : on a sommeil plus tard le soir, mais il faut se lever tôt. Le téléphone, les séries et les discussions tiennent en plus éveillé. Beaucoup dorment donc moins que nécessaire en semaine – et le sentent à leur concentration et à leur humeur."
+        },
+        { "art": "aufgabe", "text": "À quoi ressemble ton sommeil ? Coche." },
+        {
+          "art": "einschaetzung",
+          "optionen": ["vrai", "en partie", "faux"],
+          "items": [
+            "En semaine, je dors moins de 8 heures.",
+            "Le week-end, je dors beaucoup plus longtemps qu’en semaine.",
+            "Le matin, j’ai du mal à sortir du lit.",
+            "En cours, je suis souvent fatigué·e.",
+            "La nuit, mon téléphone est à portée de main.",
+            "Juste avant de m’endormir, je suis encore sur mon téléphone.",
+            "Il m’arrive de me réveiller la nuit à cause de messages."
+          ]
+        },
+        { "art": "aufgabe", "text": "Qu’est-ce que tu pourrais changer ? Coche une idée que tu vas tester pendant une semaine." },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "items": [
+            "charger le téléphone hors de la chambre la nuit",
+            "activer « Ne pas déranger » à heure fixe",
+            "utiliser un vrai réveil plutôt que le téléphone",
+            "passer la dernière demi-heure sans écran",
+            "ne plus regarder de séries au lit",
+            "me coucher à peu près à la même heure en semaine",
+            "pas de boissons énergisantes ni de cola l’après-midi",
+            "noter avant de dormir les pensées qui tournent en boucle"
+          ],
+          "frei": 2
+        },
+        { "art": "aufgabe", "text": "Formule ton plan pour la semaine prochaine.", "hinweis": "Plus l’heure et l’action sont précises, mieux ça marche." },
+        {
+          "art": "wennDann",
+          "wenn": "Si …",
+          "dann": "… alors",
+          "zeilen": 1,
+          "beispiele": [{ "wenn": "S’il est 22 h,", "dann": "je mets mon téléphone à charger dans la cuisine et je règle mon réveil." }]
+        },
+        { "art": "aufgabe", "text": "Tiens un relevé de ton sommeil pendant une semaine.", "hinweis": "Note chaque matin quand tu as posé ton téléphone, quand tu t’es endormi·e (environ) et quand tu t’es levé·e." },
+        {
+          "art": "tabelle",
+          "spalten": ["Jour", "Téléphone posé à", "Endormi·e vers", "Levé·e à", "Sommeil (h)"],
+          "zeilen": 7,
+          "beispiel": ["Lu", "22 h 30", "23 h", "6 h 30", "7,5"]
+        },
+        { "art": "frage", "text": "Après la semaine : qu’est-ce qui a changé – à l’endormissement, le matin, en cours ?", "linien": 2 },
+        { "art": "skala", "frage": "Dans quelle mesure ton plan a-t-il fonctionné ?", "von": "pas du tout", "bis": "très bien", "stufen": 11 },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Quand tu n’arrives pas à t’endormir",
+          "punkte": [
+            "Ne regarde ni ton téléphone ni l’heure.",
+            "Respire lentement : 4 secondes pour inspirer, 6 pour expirer.",
+            "Si tu es encore bien réveillé·e après une vingtaine de minutes : lève-toi un moment, fais quelque chose de calme, puis retourne au lit."
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes évaluent leur sommeil de façon réaliste, repèrent les liens entre téléphone, sommeil et bien-être, et testent pendant une semaine un plan du soir qu’ils ont choisi eux-mêmes.",
+        "ablauf": [
+          "Entrée en matière (5 min) : « Combien d’heures avez-vous dormi la nuit dernière ? » Recueillir les réponses de façon anonyme sur des papiers.",
+          "Lire l’encadré ; auto-évaluation individuelle (5 min). Pas de mise en commun en plénière.",
+          "Tâche 2 : discuter les idées – qu’est-ce qui est réaliste ? Chacun·e en choisit une.",
+          "Tâche 3 : formuler le plan « si … alors » et le vérifier à deux : l’heure et l’action sont-elles concrètes ?",
+          "Tâche 4 : tenir le relevé pendant une semaine. Ensuite : « Qu’est-ce qui a changé – le soir, le matin, en cours ? »"
+        ],
+        "hintergrund": "Pour les 13–18 ans, l’American Academy of Sleep Medicine recommande 8 à 10 heures de sommeil par 24 heures, de façon régulière (Paruthi et al., 2016) ; le manque de sommeil est associé notamment à des troubles de l’attention et des apprentissages, à une humeur dépressive et à un risque accru d’accidents. À la puberté, le rythme veille-sommeil se décale vers le soir, alors que les cours commencent tôt ; le téléphone en soirée accentue ce décalage. Les objectifs choisis librement sont mieux tenus que ceux qui sont imposés (Deci & Ryan, 2000) – d’où un plan « si … alors » personnel (Gollwitzer, 1999) et un bref relevé qui rend les liens visibles.",
+        "quellen": [
+          "Paruthi, S. et al. (2016). Recommended amount of sleep for pediatric populations: A consensus statement of the American Academy of Sleep Medicine. Journal of Clinical Sleep Medicine, 12(6), 785–786.",
+          "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "differenzierung": {
+          "leichter": "Seulement la tâche 1 et un plan ; tenir le relevé sur trois jours d’école.",
+          "schwerer": "Analyser le relevé : calculer la moyenne en semaine et le week-end, puis comparer."
+        },
+        "impulse": [
+          "Quelle est la dernière chose que tu fais le soir sur ton téléphone ?",
+          "Qu’est-ce qui t’aiderait à le poser plus tôt ?",
+          "À quoi remarques-tu en cours que tu as trop peu dormi ?"
+        ],
+        "tipps": [
+          "Ne pas faire la morale : les jeunes connaissent les conseils. Leur propre observation dans le relevé convainc davantage.",
+          "Convenir avec la classe d’une plage de silence pour le groupe de classe, p. ex. à partir de 21 h."
+        ],
+        "achtung": "Une insomnie persistante, des ruminations nocturnes ou une forte somnolence en journée peuvent signaler une surcharge ou un problème de santé : chercher l’entretien individuel, impliquer le SePAS ou la direction compétente (responsable), conseiller un avis médical."
+      }
+    }
+  },
+  {
+    "id": "bildschirmzeit",
+    "bereich": "alltag",
+    "thema": "medien",
+    "stufen": ["C2"],
+    "sozialform": ["einzeln", "klasse"],
+    "dauer": "30–40 Min.",
+    "eldib": ["K-15", "V-16", "V-17", "K-12"],
+    "schlagworte": ["Bildschirmzeit", "Medien", "Familienabmachung", "Alternativen", "Selbstwahrnehmung"],
+    "bild": "icon:device-tv",
+    "verwandt": ["medien-tagebuch", "mein-handy-und-ich"],
+    "de": {
+      "titel": "Bildschirm – wie viel ist genug?",
+      "untertitel": "Bildschirme machen Spaß. Aber es gibt noch viel mehr.",
+      "bausteine": [
+        { "art": "aufgabe", "text": "Was machst du am Bildschirm? Kreise ein.", "symbole": ["einkreisen"] },
+        {
+          "art": "bilder",
+          "modus": "einkreisen",
+          "spalten": 4,
+          "bilder": [
+            { "bild": "icon:device-tv", "text": "Videos schauen" },
+            { "bild": "icon:device-gamepad-2", "text": "spielen" },
+            { "bild": "icon:device-laptop", "text": "lernen" },
+            { "bild": "icon:device-mobile-message", "text": "telefonieren" }
+          ]
+        },
+        { "art": "aufgabe", "text": "Woran merkst du: Es ist genug? Was machst du dann?", "symbole": ["ankreuzen"] },
+        {
+          "art": "spalten",
+          "links": [
+            { "art": "ankreuzen", "titel": "Es ist genug, wenn …", "items": ["meine Augen müde sind.", "mein Kopf ganz voll ist.", "ich schnell sauer werde.", "ich nicht aufhören will."] }
+          ],
+          "rechts": [
+            { "art": "ankreuzen", "titel": "Dann mache ich lieber …", "items": ["draußen spielen.", "malen oder bauen.", "etwas mit anderen."], "frei": 1 }
+          ]
+        },
+        { "art": "aufgabe", "text": "Macht zu Hause eine Abmachung. Unterschreibt sie zusammen.", "symbole": ["schreiben"] },
+        {
+          "art": "vertrag",
+          "titel": "Unsere Bildschirm-Abmachung",
+          "text": "An Schultagen bin ich höchstens ___ am Bildschirm. Danach mache ich ___. Beim Essen und im Bett bleibt der Bildschirm aus.",
+          "unterschriften": ["Ich", "Erwachsene Person"]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder beschreiben, was sie am Bildschirm tun, erkennen eigene Zeichen für „genug“ und treffen mit ihrer Familie eine einfache Abmachung.",
+        "ablauf": [
+          "Einstieg im Kreis (5 Min.): „Was machst du gern am Bildschirm?“ Ohne Wertung sammeln.",
+          "Aufgabe 1 allein, dann erzählen lassen: „Was machst du da genau? Mit wem?“",
+          "Aufgabe 2: „Wie fühlen sich Augen und Kopf nach langem Spielen an?“ Ideen ohne Bildschirm sammeln.",
+          "Aufgabe 3: Die Abmachung mit einem kurzen Elternbrief mitgeben. Die Minuten legt die Familie fest, nicht die Schule.",
+          "Nach einer Woche nachfragen: „Was hat mit eurer Abmachung geklappt?“"
+        ],
+        "hintergrund": "Für Zwei- bis Vierjährige empfiehlt die WHO höchstens eine Stunde Bildschirmzeit am Tag (WHO, 2019); für das Grundschulalter gibt es keine allgemeingültige Minutenzahl. Die Forschung zu Familien und digitalen Medien rückt deshalb neben der Dauer vor allem Inhalte, Zusammenhänge und das gemeinsame Aushandeln von Regeln in den Mittelpunkt (Livingstone & Blum-Ross, 2020). Selbststeuerung gelingt Kindern leichter, wenn Regeln klar, vorhersehbar und gemeinsam vereinbart sind und wenn sie eigene Zeichen von Überreizung wahrnehmen. Bildschirmfreie Zeiten beim Essen und vor dem Schlafen sind einfache, gut umsetzbare Familienregeln. Material für Eltern bietet BEE SECURE.",
+        "quellen": [
+          "World Health Organization (2019). Guidelines on physical activity, sedentary behaviour and sleep for children under 5 years of age. Genf: WHO.",
+          "Livingstone, S. & Blum-Ross, A. (2020). Parenting for a Digital Future. New York: Oxford University Press.",
+          "BEE SECURE – Initiative der luxemburgischen Regierung für ein sichereres Internet: www.bee-secure.lu"
+        ],
+        "differenzierung": {
+          "leichter": "Aufgabe 1 und 2 mündlich; die Abmachung mit einer erwachsenen Person ausfüllen.",
+          "schwerer": "Eine Woche lang notieren, was und wie lange am Bildschirm gemacht wurde."
+        },
+        "impulse": [
+          "Was machst du am liebsten am Bildschirm?",
+          "Wie fühlst du dich, wenn du lange gespielt hast?",
+          "Was machst du gern, wenn der Bildschirm aus ist?"
+        ],
+        "tipps": [
+          "Nicht werten, welche Familie wie viel erlaubt – Abmachungen dürfen verschieden sein.",
+          "Übergänge erleichtern: vorher ankündigen, z. B. „noch ein Video“ oder eine Sanduhr."
+        ],
+        "achtung": "Erzählt ein Kind von erschreckenden Inhalten oder Kontakten mit Fremden im Netz: ruhig nachfragen, nicht im Plenum vertiefen, Leitung (Responsable) informieren. Beratung: BEE SECURE Helpline 8002 1234.",
+        "material": "Buntstifte, Elternbrief"
+      }
+    }
+  },
+  {
+    "id": "medien-tagebuch",
+    "bereich": "alltag",
+    "thema": "medien",
+    "stufen": ["C3", "C4"],
+    "sozialform": ["einzeln", "gruppe"],
+    "dauer": "2 × 30 Min.",
+    "eldib": ["K-26", "K-29", "V-22", "V-27"],
+    "schlagworte": ["Mediennutzung", "Bildschirmzeit", "Medien-Tagebuch", "Gefühle", "Abmachung"],
+    "bild": "icon:device-gamepad-2",
+    "verwandt": ["bildschirmzeit", "mein-handy-und-ich", "gut-schlafen"],
+    "de": {
+      "titel": "Mein Medien-Tagebuch",
+      "untertitel": "Handy, Tablet, Fernseher, Konsole: Wie viel Zeit verbringst du damit – und wie geht es dir dabei?",
+      "bausteine": [
+        { "art": "aufgabe", "text": "Schätze zuerst: Wie lange bist du am Bildschirm?", "hinweis": "Zähle alles mit: Handy, Tablet, Fernseher, Konsole und Computer.", "symbole": ["nachdenken", "schreiben"] },
+        { "art": "satzanfaenge", "items": ["An einem Schultag etwa …", "An einem Tag am Wochenende etwa …"] },
+        { "art": "aufgabe", "text": "Führe eine Woche lang dein Medien-Tagebuch.", "hinweis": "Schreibe jeden Abend auf: Was hast du gemacht? Wie lange? Wie ging es dir danach?", "symbole": ["schreiben"] },
+        {
+          "art": "tabelle",
+          "spalten": ["Tag", "Was habe ich gemacht?", "Wie lange?", "Danach fühlte ich mich …"],
+          "breiten": [0.6, 2.4, 1, 2],
+          "zeilen": 7,
+          "beispiel": ["Mo", "Minecraft mit Ben, danach Videos", "1 Std. 20 Min.", "zuerst froh, dann müde und genervt"]
+        },
+        { "art": "wortspeicher", "titel": "Wörter für „danach“", "items": ["entspannt", "fröhlich", "zufrieden", "stolz", "gelangweilt", "müde", "genervt", "aufgedreht", "traurig", "gestresst"] },
+        { "art": "aufgabe", "text": "Schau auf deine Woche. Was hat deine Batterie aufgeladen? Was hat sie geleert?", "symbole": ["nachdenken", "schreiben"] },
+        { "art": "batterie", "laden": "Danach ging es mir gut", "leeren": "Danach ging es mir schlechter", "linien": 3 },
+        { "art": "frage", "text": "Vergleiche mit deiner Schätzung aus Aufgabe 1. Was fällt dir auf?", "linien": 2 },
+        { "art": "aufgabe", "text": "Mach eine Abmachung für die nächste Woche.", "symbole": ["schreiben"] },
+        {
+          "art": "vertrag",
+          "titel": "Meine Medien-Abmachung",
+          "text": "Ich, ___, nehme mir für die nächste Woche vor: ___. Statt Bildschirm mache ich dann ___. Wenn es schwierig wird, hilft mir ___.",
+          "unterschriften": ["Ich", "Erwachsene Person"]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder beobachten eine Woche lang ihre Mediennutzung, verbinden sie mit ihrem Befinden und leiten daraus eine eigene Abmachung für die nächste Woche ab.",
+        "ablauf": [
+          "Einstieg (5 Min.): „Welche Bildschirme gibt es bei euch zu Hause?“ Ohne Wertung sammeln.",
+          "Aufgabe 1: Schätzung notieren. Das Tagebuch erklären und die Beispielzeile gemeinsam lesen.",
+          "Während der Woche: Tagebuch zu Hause führen; in der Schule kurz nachfragen, nicht kontrollieren.",
+          "Nach einer Woche: Aufgabe 3 allein, dann zu zweit: „Was lädt deine Batterie, was leert sie?“",
+          "Aufgabe 4: Abmachung formulieren und zu Hause mit einer erwachsenen Person unterschreiben."
+        ],
+        "hintergrund": "Die eigene Bildschirmzeit lässt sich schwer schätzen; ein kurzes Protokoll macht die tatsächliche Nutzung sichtbar. Selbstbeobachtung ist ein Grundbaustein von Selbstmanagement und verändert Verhalten oft schon für sich genommen (Kanfer et al., 2012). Dabei geht es nicht nur um Minuten: Entscheidend ist auch, was Kinder tun, mit wem und wie es ihnen dabei geht (Livingstone & Blum-Ross, 2020). Wer bemerkt, dass manche Nutzung gute Laune macht und andere eher müde oder gereizt, kann bewusster wählen. Eine selbst formulierte, schriftliche Abmachung erhöht die Verbindlichkeit. Informationen für Familien bietet BEE SECURE.",
+        "quellen": [
+          "Kanfer, F. H., Reinecker, H. & Schmelzer, D. (2012). Selbstmanagement-Therapie (5. Aufl.). Berlin: Springer.",
+          "Livingstone, S. & Blum-Ross, A. (2020). Parenting for a Digital Future. New York: Oxford University Press.",
+          "BEE SECURE – Initiative der luxemburgischen Regierung für ein sichereres Internet: www.bee-secure.lu"
+        ],
+        "differenzierung": {
+          "leichter": "Tagebuch nur an drei Tagen führen; Gefühle mit einem Gesicht statt mit Wörtern eintragen.",
+          "schwerer": "Minuten zusammenrechnen und Schultage mit dem Wochenende vergleichen."
+        },
+        "impulse": [
+          "Nach welcher Mediennutzung ging es dir besonders gut?",
+          "Wann hast du länger gemacht als geplant – und warum?",
+          "Was machst du gern, wenn kein Bildschirm da ist?"
+        ],
+        "tipps": [
+          "Keine Rangliste in der Klasse: Die Zahlen gehören den Kindern.",
+          "Eltern vorab informieren, dass es ums Beobachten geht, nicht ums Verbieten."
+        ],
+        "achtung": "Berichtet ein Kind von beängstigenden Inhalten, Kontakten mit Fremden oder Streit im Klassenchat: Einzelgespräch führen, zuständige Leitung (Responsable) informieren. Beratung: BEE SECURE Helpline 8002 1234.",
+        "material": "Optional: Elternbrief"
+      }
+    }
+  },
+  {
+    "id": "mein-handy-und-ich",
+    "bereich": "alltag",
+    "thema": "medien",
+    "stufen": ["ES"],
+    "sozialform": ["einzeln", "gruppe", "klasse"],
+    "dauer": "50 Min.",
+    "eldib": ["V-32", "SOZ-40", "V-31", "KOG-58"],
+    "schlagworte": ["Handy", "Social Media", "Vergleiche", "Benachrichtigungen", "Klassenchat", "BEE SECURE"],
+    "bild": "icon:device-mobile",
+    "verwandt": ["medien-tagebuch", "schlaf-check", "mobbing-cybermobbing"],
+    "de": {
+      "titel": "Mein Handy und ich",
+      "untertitel": "Das Handy verbindet, unterhält und informiert. Ob es dir guttut, hängt davon ab, wie du es nutzt.",
+      "bausteine": [
+        { "art": "aufgabe", "text": "Wie ist das bei dir? Kreuze an." },
+        {
+          "art": "einschaetzung",
+          "optionen": ["oft", "manchmal", "selten"],
+          "items": [
+            "Ich greife zum Handy, ohne es richtig zu merken.",
+            "Nach dem Scrollen fühle ich mich schlechter als vorher.",
+            "Ich vergleiche mich mit anderen – Aussehen, Freizeit, Erfolg.",
+            "Benachrichtigungen reißen mich aus dem Lernen oder aus Gesprächen.",
+            "Nachrichten im Klassenchat stressen mich.",
+            "Ich poste oder teile etwas und bereue es später."
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Was du siehst, ist eine Auswahl",
+          "text": "Profile zeigen meist die besten Momente – ausgewählt, bearbeitet, oft mit Filter. Und Apps sind so gebaut, dass du möglichst lange bleibst: endloses Scrollen, Likes, Benachrichtigungen. Wer das weiß, kann bewusster entscheiden."
+        },
+        { "art": "aufgabe", "text": "Denk an einen Post, nach dem du dich schlechter gefühlt hast. Was war zu sehen – und was nicht?" },
+        {
+          "art": "eisberg",
+          "oben": "Das zeigt der Post",
+          "unten": "Das zeigt er nicht",
+          "beispielOben": "perfektes Foto am Strand, 800 Likes",
+          "beispielUnten": "30 Versuche, ein Filter, Streit kurz vorher, ein ganz normaler Rest des Tages"
+        },
+        { "art": "aufgabe", "text": "Benachrichtigungen im Griff: Kreuze an, was du diese Woche ausprobierst." },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "items": [
+            "Push-Nachrichten nur für wichtige Apps",
+            "„Nicht stören“ beim Lernen und nachts",
+            "Gruppen stummschalten",
+            "einmal pro Woche die Bildschirmzeit ansehen",
+            "ein Limit für die App, die am meisten Zeit frisst",
+            "Handy beim Lernen in einen anderen Raum",
+            "ablenkende Apps vom Startbildschirm in einen Ordner",
+            "Lesebestätigungen ausschalten"
+          ],
+          "frei": 1
+        },
+        { "art": "aufgabe", "text": "Klassenchat: Welche Regeln schlagt ihr vor? Kreuzt die drei wichtigsten an und ergänzt.", "symbole": ["gruppe"] },
+        {
+          "art": "ankreuzen",
+          "items": [
+            "Im Klassenchat nur Schulinfos – Privates gehört in andere Gruppen.",
+            "Keine Nachrichten nach 21 Uhr.",
+            "Keine Fotos oder Videos von anderen ohne deren Erlaubnis.",
+            "Screenshots von privaten Nachrichten werden nicht weitergeleitet.",
+            "Streit klären wir persönlich, nicht im Chat.",
+            "Niemand wird aus der Gruppe geworfen, um ihn auszuschließen.",
+            "Wer etwas Verletzendes sieht, sagt es einer Vertrauensperson."
+          ],
+          "frei": 2
+        },
+        {
+          "art": "notfall",
+          "text": "Hilfe bei Problemen im Netz",
+          "eintraege": [
+            { "name": "BEE SECURE Helpline (anonym, kostenlos): Fragen, Cybermobbing, Sextortion", "nummer": "8002 1234" },
+            { "name": "Kanner- a Jugendtelefon (anonym, kostenlos)", "nummer": "116 111" },
+            { "name": "Polizei (bei Drohungen oder Erpressung)", "nummer": "113" }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen reflektieren ihre Handynutzung, erkennen, wie Social Media Vergleiche und Ablenkung begünstigt, nehmen konkrete Einstellungen vor und entwickeln Regeln für den Klassenchat.",
+        "ablauf": [
+          "Einstieg (5 Min.): „Wofür nutzt ihr euer Handy am meisten?“ Ohne Wertung sammeln. Dann Aufgabe 1 allein.",
+          "Info-Kasten lesen. Aufgabe 2 allein, danach freiwillig Beispiele austauschen – ohne echte Namen.",
+          "Aufgabe 3: Wer mag, zeigt Einstellungen am Handy; jede Person wählt eine für die Woche.",
+          "Aufgabe 4 in Kleingruppen; Vorschläge im Klassenrat zu Chat-Regeln zusammenführen.",
+          "Abschluss: Hilfe-Kasten besprechen – wann wende ich mich an wen?"
+        ],
+        "hintergrund": "Jugendliche nutzen digitale Medien für Freundschaften, Lernen, Kreativität und Unterhaltung. Pauschale Warnungen greifen deshalb zu kurz; hilfreicher ist das Gespräch über konkrete Erfahrungen, Chancen und Risiken (Livingstone & Blum-Ross, 2020). In der Adoleszenz reagiert das Belohnungssystem besonders stark auf soziale Anerkennung, und Gleichaltrige gewinnen an Einfluss (Steinberg, 2014) – Likes, Vergleiche und der Druck, ständig erreichbar zu sein, wirken deshalb besonders stark. Konkrete Einstellungen und gemeinsam vereinbarte Regeln geben mehr Handlungsspielraum als Appelle. Beratung und Schulungen bietet BEE SECURE.",
+        "quellen": [
+          "Livingstone, S. & Blum-Ross, A. (2020). Parenting for a Digital Future. New York: Oxford University Press.",
+          "Steinberg, L. (2014). Age of Opportunity: Lessons from the New Science of Adolescence. Boston: Houghton Mifflin Harcourt.",
+          "BEE SECURE – Initiative der luxemburgischen Regierung für ein sichereres Internet: www.bee-secure.lu"
+        ],
+        "differenzierung": {
+          "leichter": "Nur Aufgabe 1, 3 und 4; beim Eisberg von einem vorgegebenen Beispiel ausgehen.",
+          "schwerer": "Eine Woche lang die Bildschirmzeit-Übersicht notieren und mit der eigenen Schätzung vergleichen."
+        },
+        "impulse": [
+          "Welche App tut dir gut – und welche eher nicht?",
+          "Wie fühlt es sich an, wenn eine Nachricht unbeantwortet bleibt?",
+          "Was sollte im Klassenchat nie passieren?"
+        ],
+        "tipps": [
+          "Keine Handys einsammeln, um Bildschirmzeiten zu kontrollieren: Diese Daten bleiben privat.",
+          "Chat-Regeln sichtbar machen (z. B. als angeheftete Nachricht) und nach einigen Wochen überprüfen."
+        ],
+        "achtung": "Hinweise auf Cybermobbing, Sextortion oder Kontakte mit Fremden nie im Plenum klären: Einzelgespräch, SePAS bzw. Leitung (Responsable) informieren; bei Straftaten nach internem Ablauf handeln.",
+        "material": "Handys (freiwillig), Plakat"
+      }
+    },
+    "fr": {
+      "titel": "Mon téléphone et moi",
+      "untertitel": "Le téléphone relie, divertit et informe. S’il te fait du bien ou non dépend de la façon dont tu t’en sers.",
+      "bausteine": [
+        { "art": "aufgabe", "text": "Qu’en est-il pour toi ? Coche." },
+        {
+          "art": "einschaetzung",
+          "optionen": ["souvent", "parfois", "rarement"],
+          "items": [
+            "Je prends mon téléphone sans vraiment m’en rendre compte.",
+            "Après avoir scrollé, je me sens moins bien qu’avant.",
+            "Je me compare aux autres – apparence, loisirs, réussite.",
+            "Les notifications m’interrompent quand j’apprends ou quand je parle avec quelqu’un.",
+            "Les messages du groupe de classe me stressent.",
+            "Je publie ou partage quelque chose et je le regrette ensuite."
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Ce que tu vois est une sélection",
+          "text": "Les profils montrent surtout les meilleurs moments – choisis, retouchés, souvent filtrés. Et les applis sont conçues pour te garder le plus longtemps possible : scroll infini, likes, notifications. Le savoir aide à choisir plus consciemment."
+        },
+        { "art": "aufgabe", "text": "Pense à une publication après laquelle tu t’es senti·e moins bien. Qu’est-ce qu’on voyait – et qu’est-ce qu’on ne voyait pas ?" },
+        {
+          "art": "eisberg",
+          "oben": "Ce que montre la publication",
+          "unten": "Ce qu’elle ne montre pas",
+          "beispielOben": "photo parfaite à la plage, 800 likes",
+          "beispielUnten": "30 essais, un filtre, une dispute juste avant, une fin de journée tout à fait banale"
+        },
+        { "art": "aufgabe", "text": "Reprends la main sur les notifications : coche ce que tu testes cette semaine." },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "items": [
+            "notifications seulement pour les applis importantes",
+            "« Ne pas déranger » pendant les devoirs et la nuit",
+            "mettre les groupes en sourdine",
+            "regarder son temps d’écran une fois par semaine",
+            "une limite pour l’appli qui prend le plus de temps",
+            "téléphone dans une autre pièce pendant les devoirs",
+            "ranger les applis qui distraient dans un dossier",
+            "désactiver les confirmations de lecture"
+          ],
+          "frei": 1
+        },
+        { "art": "aufgabe", "text": "Groupe de classe : quelles règles proposez-vous ? Cochez les trois plus importantes et complétez.", "symbole": ["gruppe"] },
+        {
+          "art": "ankreuzen",
+          "items": [
+            "Dans le groupe de classe, seulement des infos scolaires – le reste ailleurs.",
+            "Pas de messages après 21 h.",
+            "Pas de photos ni de vidéos des autres sans leur accord.",
+            "On ne transfère pas de captures d’écran de messages privés.",
+            "Les conflits se règlent en face, pas dans le groupe.",
+            "Personne n’est retiré du groupe pour être mis à l’écart.",
+            "Qui voit un message blessant le signale à une personne de confiance."
+          ],
+          "frei": 2
+        },
+        {
+          "art": "notfall",
+          "text": "De l’aide en cas de problème en ligne",
+          "eintraege": [
+            { "name": "BEE SECURE Helpline (anonyme, gratuit) : questions, cyberharcèlement, sextorsion", "nummer": "8002 1234" },
+            { "name": "Kanner- a Jugendtelefon (anonyme, gratuit)", "nummer": "116 111" },
+            { "name": "Police (menaces, chantage)", "nummer": "113" }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes réfléchissent à leur usage du téléphone, comprennent comment les réseaux sociaux favorisent comparaisons et distractions, ajustent des réglages et élaborent des règles pour le groupe de classe.",
+        "ablauf": [
+          "Entrée en matière (5 min) : « À quoi vous sert le plus votre téléphone ? » Recueillir sans jugement. Puis tâche 1 seul·e.",
+          "Lire l’encadré. Tâche 2 seul·e, puis échange volontaire d’exemples – sans vrais noms.",
+          "Tâche 3 : qui le souhaite montre ses réglages ; chacun·e en choisit un pour la semaine.",
+          "Tâche 4 en petits groupes ; réunir les propositions en conseil de classe.",
+          "Pour finir, parler de l’encadré d’aide : à qui s’adresser, et quand ?"
+        ],
+        "hintergrund": "Les jeunes utilisent le numérique pour leurs amitiés, pour apprendre, créer et se divertir. Les mises en garde générales ne suffisent donc pas ; il est plus utile de parler d’expériences concrètes, des chances et des risques (Livingstone & Blum-Ross, 2020). À l’adolescence, le système de récompense réagit fortement à la reconnaissance sociale et les pairs gagnent en influence (Steinberg, 2014) – likes, comparaisons et pression d’être toujours joignable pèsent donc lourd. Des réglages concrets et des règles convenues ensemble donnent plus de prise que des appels à la raison. BEE SECURE propose conseils et formations.",
+        "quellen": [
+          "Livingstone, S. & Blum-Ross, A. (2020). Parenting for a Digital Future. New York: Oxford University Press.",
+          "Steinberg, L. (2014). Age of Opportunity: Lessons from the New Science of Adolescence. Boston: Houghton Mifflin Harcourt.",
+          "BEE SECURE – Initiative der luxemburgischen Regierung für ein sichereres Internet: www.bee-secure.lu"
+        ],
+        "differenzierung": {
+          "leichter": "Seulement les tâches 1, 3 et 4 ; pour l’iceberg, partir d’un exemple donné.",
+          "schwerer": "Noter une semaine le temps d’écran affiché et le comparer à sa propre estimation."
+        },
+        "impulse": [
+          "Quelle appli te fait du bien – et laquelle plutôt pas ?",
+          "Qu’est-ce que ça fait quand un message reste sans réponse ?",
+          "Qu’est-ce qui ne devrait jamais arriver dans le groupe de classe ?"
+        ],
+        "tipps": [
+          "Ne pas ramasser les téléphones pour contrôler le temps d’écran : ces données restent privées.",
+          "Rendre les règles visibles (p. ex. message épinglé) et les revoir après quelques semaines."
+        ],
+        "achtung": "Cyberharcèlement, sextorsion, contacts avec des inconnus : jamais en plénière. Entretien individuel, informer le SePAS ou la direction (responsable) ; en cas d’infraction, suivre la procédure interne.",
+        "material": "Téléphones (facultatif), affiche"
+      }
+    }
+  }
+]

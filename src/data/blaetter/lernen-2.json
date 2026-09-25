@@ -1,0 +1,630 @@
+[
+  {
+    "id": "schritt-fuer-schritt",
+    "bereich": "lernen",
+    "thema": "motivation",
+    "stufen": ["C2"],
+    "sozialform": ["einzeln", "klasse"],
+    "dauer": "30–40 Min.",
+    "eldib": ["V-15", "K-18"],
+    "schlagworte": ["Durchhalten", "Teilschritte", "Selbstgespräch", "Mut-Sätze", "Aufgaben beenden"],
+    "bild": "motiv:berg",
+    "de": {
+      "titel": "Ich schaffe das – Schritt für Schritt",
+      "untertitel": "Eine große Aufgabe sieht oft aus wie ein Berg. Mit kleinen Schritten kommst du nach oben.",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "Das volle Pult",
+          "text": "Jil soll ihr Pult aufräumen. Überall liegen Hefte, Stifte und Papier. Jil denkt: „Das schaffe ich nie.“ Dann sagt sie sich: „Eins nach dem anderen.“ Zuerst die Stifte, dann die Hefte, dann das Papier. Geschafft.",
+          "bild": "figur:lea:besorgt"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Welche große Aufgabe hast du? Teile sie in drei Schritte.",
+          "hinweis": "Fang unten an. Du kannst schreiben oder malen. Zum Beispiel: Ranzen packen, Zimmer aufräumen.",
+          "symbole": ["schreiben", "malen"]
+        },
+        { "art": "linien", "anzahl": 1, "label": "Meine große Aufgabe:" },
+        { "art": "leiter", "stufen": 3, "oben": "Geschafft.", "unten": "Hier fange ich an." },
+        {
+          "art": "aufgabe",
+          "text": "Welcher Mut-Satz hilft dir? Male deine Karte an und schneide sie aus.",
+          "hinweis": "In die leere Karte kannst du einen eigenen Satz schreiben.",
+          "symbole": ["malen", "schneiden"]
+        },
+        {
+          "art": "karten",
+          "spalten": 4,
+          "karten": [
+            { "bild": "icon:thumb-up", "titel": "Ich schaffe das." },
+            { "bild": "icon:stairs-up", "titel": "Eins nach dem anderen." },
+            { "bild": "icon:wind", "titel": "Ich atme und mache weiter." },
+            {}
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder erleben, dass eine große Aufgabe leichter wird, wenn man sie in kleine Schritte teilt. Sie planen eine eigene Aufgabe in drei Schritten und wählen einen Mut-Satz, mit dem sie sich selbst anfeuern.",
+        "ablauf": [
+          "Einstieg (5 Min.): Einen hohen Bücherstapel zeigen: „Wie bekomme ich den ins Regal?“ – „Eins nach dem anderen.“",
+          "Geschichte vorlesen. Fragen: „Was denkt Jil zuerst? Was hilft ihr dann?“",
+          "Aufgabe 1 zuerst an der Tafel üben (z. B. Ranzen packen), dann plant jedes Kind eine eigene Aufgabe.",
+          "Aufgabe 2: Mut-Sätze gemeinsam sprechen – laut, dann flüsternd, dann nur im Kopf. Jedes Kind wählt eine Karte.",
+          "Die Karte auf das Pult legen. In den nächsten Tagen fragen: „Was ist dein erster Schritt?“"
+        ],
+        "hintergrund": "Kinder im Grundschulalter geben bei umfangreichen Aufgaben oft auf, bevor sie richtig angefangen haben: Die Aufgabe wirkt als Ganzes zu groß, und mehrere Teilschritte gleichzeitig im Kopf zu behalten, überfordert das Arbeitsgedächtnis (Diamond, 2013). Sichtbare Teilschritte entlasten. Jeder erledigte Schritt ist eine kleine Erfolgserfahrung – nach Bandura (1977) die wichtigste Quelle von Selbstwirksamkeit. Die Mut-Sätze greifen das Selbstinstruktionstraining auf (Meichenbaum & Goodman, 1971): Erwachsene sprechen hilfreiche Sätze laut vor, die Kinder sprechen sie nach, erst laut, dann flüsternd, schließlich innerlich.",
+        "quellen": [
+          "Diamond, A. (2013). Executive functions. Annual Review of Psychology, 64, 135–168.",
+          "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
+          "Meichenbaum, D. & Goodman, J. (1971). Training impulsive children to talk to themselves. Journal of Abnormal Psychology, 77(2), 115–126."
+        ],
+        "differenzierung": {
+          "leichter": "Nur zwei Schritte, gemalt; die Lehrperson schreibt auf Zuruf mit.",
+          "schwerer": "Vier Schritte planen und abhaken; einen eigenen Mut-Satz erfinden."
+        },
+        "impulse": ["Was sah am Anfang riesig aus und war dann machbar?", "Was sagst du dir, wenn etwas schwer wird?", "Was ist dein allererster Schritt?"],
+        "tipps": [
+          "Lautes Denken vormachen: „Zuerst … dann … Ich schaffe das.“ Kinder übernehmen Selbstgespräche am leichtesten vom Vorbild.",
+          "Erledigte Schritte abhaken oder anmalen lassen – so wird Fortschritt sichtbar."
+        ],
+        "achtung": "Wenn ein Kind fast immer aufgibt oder sich stark abwertet („Ich bin zu dumm“): das Gespräch mit den Eltern suchen und die zuständige Leitung (Responsable) informieren.",
+        "material": "Buntstifte, Schere, ein Stapel Bücher"
+      }
+    }
+  },
+  {
+    "id": "motivations-plan",
+    "bereich": "lernen",
+    "thema": "motivation",
+    "stufen": ["C3", "C4"],
+    "sozialform": ["einzeln", "gruppe"],
+    "dauer": "45 Min.",
+    "eldib": ["V-15", "K-24", "SOZ-26"],
+    "schlagworte": ["Motivation", "Selbstbestimmung", "Durchhalten", "Wenn-dann-Plan", "Lernfreude"],
+    "bild": "icon:flame",
+    "de": {
+      "titel": "Mein Motivations-Plan",
+      "untertitel": "Manche Aufgaben machst du gern, andere sind zäh wie Kaugummi. Du kannst selbst etwas tun, damit es leichter geht.",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "Noah und die Achterreihe",
+          "text": "Noah soll die Achterreihe üben. „Langweilig“, sagt er und schiebt es seit Tagen auf. Da hat seine Schwester Ana eine Idee. Noah darf wählen: Würfelspiel oder Karten. Jede Rechnung, die sitzt, malt er auf einer Liste grün an. Beim Tischdecken fragt Ana ihn ab. Nach einer Woche ist die Liste fast ganz grün.",
+          "bild": "figur:noah:gelangweilt"
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Drei Dinge, die dich antreiben",
+          "punkte": [
+            "Selbst entscheiden: Du darfst mitbestimmen, wie, wann oder womit du lernst.",
+            "Etwas können: Du merkst, dass du besser wirst.",
+            "Dazugehören: Andere machen mit, helfen dir oder freuen sich mit dir."
+          ]
+        },
+        { "art": "aufgabe", "text": "Was hat Noah geholfen? Verbinde.", "symbole": ["lesen", "verbinden"] },
+        {
+          "art": "zuordnen",
+          "titel": ["Das hat Noah geholfen", "Antreiber"],
+          "links": ["Er darf das Spiel wählen.", "Er malt, was sitzt, grün an.", "Ana fragt ihn ab."],
+          "rechts": ["Dazugehören", "Selbst entscheiden", "Etwas können"]
+        },
+        { "art": "aufgabe", "text": "Was treibt dich an? Kreuze an, was für dich stimmt.", "symbole": ["ankreuzen"] },
+        {
+          "art": "einschaetzung",
+          "optionen": ["stimmt", "teils", "stimmt nicht"],
+          "items": [
+            "Ich lerne lieber, wenn ich mitbestimmen darf.",
+            "Ich freue mich, wenn ich merke: Das kann ich jetzt.",
+            "Mit anderen zusammen lerne ich lieber.",
+            "Ich strenge mich an, wenn ich weiß, wozu es gut ist.",
+            "Wenn etwas zu schwer ist, will ich schnell aufhören.",
+            "Wenn etwas zu leicht ist, wird mir langweilig."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Plane eine zähe Aufgabe mit den drei Antreibern.",
+          "hinweis": "Schreibe zu jedem Schritt eine Idee auf.",
+          "symbole": ["schreiben"]
+        },
+        {
+          "art": "schritte",
+          "linien": 2,
+          "items": [
+            { "titel": "Meine zähe Aufgabe", "text": "Zum Beispiel: Lesen üben, Wörter lernen, Hausaufgaben in Französisch" },
+            { "titel": "Selbst entscheiden", "text": "Das bestimme ich selbst, zum Beispiel Ort, Uhrzeit oder Reihenfolge:" },
+            { "titel": "Etwas können", "text": "Daran sehe ich, dass ich besser werde:" },
+            { "titel": "Dazugehören", "text": "Mit dieser Person übe ich oder erzähle ihr davon:" }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Und wenn du trotzdem keine Lust hast? Schreibe einen Wenn-dann-Plan.",
+          "hinweis": "Ein Wenn-dann-Plan legt vorher fest, was du in genau diesem Moment tust.",
+          "symbole": ["schreiben"]
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 2,
+          "beispiele": [
+            {
+              "wenn": "Wenn ich beim Lesen nach einer Seite keine Lust mehr habe,",
+              "dann": "lese ich noch eine halbe Seite und mache danach fünf Minuten Pause."
+            }
+          ]
+        },
+        { "art": "rueckblick" }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder lernen drei Quellen von Lernmotivation kennen – selbst entscheiden, etwas können, dazugehören – und nutzen sie für eine zähe Aufgabe. Für Momente ohne Lust legen sie einen Wenn-dann-Plan fest.",
+        "ablauf": [
+          "Einstieg (5 Min.): „Was lernst du gern – und was schiebst du vor dir her?“ In zwei Spalten an der Tafel sammeln, ohne zu werten.",
+          "Geschichte und Info-Kasten lesen. Aufgabe 1 zu zweit lösen und vergleichen.",
+          "Aufgabe 2 allein. Freiwillig berichten: „Welcher Antreiber ist dir am wichtigsten?“",
+          "Aufgabe 3 mit einer echten Aufgabe der nächsten Tage. Ideen vorher im Kreis sammeln.",
+          "Aufgabe 4: Pläne zu zweit prüfen – ist klar, wann er gilt und was genau ich dann tue?",
+          "Nach einer Woche nachfragen: Was hat geholfen? Welcher Antreiber hat gefehlt?"
+        ],
+        "hintergrund": "Die Selbstbestimmungstheorie (Deci & Ryan, 2000) beschreibt drei psychologische Grundbedürfnisse: Autonomie, Kompetenzerleben und soziale Eingebundenheit. Werden sie erfüllt, lernen Kinder eher aus eigenem Antrieb und bleiben länger dran; fehlen sie, bleibt oft nur Lernen unter Druck oder für eine Belohnung. Auch ungeliebte Aufgaben werden leichter, wenn Kinder mitbestimmen, ihren Fortschritt sehen und nicht allein üben. Für schwierige Momente helfen Wenn-dann-Pläne: Sie verknüpfen eine vorhersehbare Situation mit einer konkreten Handlung und verbessern nachweislich die Umsetzung von Vorsätzen (Gollwitzer, 1999).",
+        "quellen": [
+          "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "differenzierung": {
+          "leichter": "Aufgabe 1 mündlich lösen. In Aufgabe 3 nur einen Antreiber gemeinsam mit der Lehrperson ausfüllen.",
+          "schwerer": "Notieren, welcher Antreiber in der Schule oft fehlt, und dazu im Klassenrat Vorschläge machen."
+        },
+        "impulse": [
+          "Wobei hast du zuletzt die Zeit vergessen? Was war da anders?",
+          "Wobei möchtest du gern mitbestimmen?",
+          "Woran merkst du, dass du besser wirst?"
+        ],
+        "tipps": [
+          "Echte, auch kleine Wahlmöglichkeiten anbieten: Reihenfolge der Aufgaben, Partnerin oder Partner, Arbeitsplatz.",
+          "Fortschritt sichtbar machen (Listen, Lesepass) – Kinder unterschätzen oft, was sie schon können."
+        ],
+        "achtung": "Wenn einem Kind über längere Zeit alles gleichgültig ist, es sich zurückzieht oder traurig wirkt, steckt mehr dahinter als fehlende Motivation: das Gespräch suchen und die zuständige Leitung (Responsable) informieren."
+      }
+    }
+  },
+  {
+    "id": "fehler-sind-helfer",
+    "bereich": "lernen",
+    "thema": "fehler",
+    "stufen": ["C2"],
+    "sozialform": ["einzeln", "klasse"],
+    "dauer": "30 Min.",
+    "eldib": ["K-16", "V-18", "K-15"],
+    "schlagworte": ["Fehler", "Lernhaltung", "Frustration", "Selbstgespräch", "Durchhalten"],
+    "bild": "icon:bulb",
+    "de": {
+      "titel": "Fehler sind Helfer",
+      "untertitel": "Alle machen Fehler. Ein Fehler zeigt dir, was du noch üben kannst.",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "Der Turm",
+          "text": "Aylin baut einen hohen Turm. Plötzlich kracht er zusammen. Aylin ist wütend. Dann schaut sie genau hin: Unten war der Turm zu schmal. Jetzt baut sie unten breiter – und der Turm hält.",
+          "bild": "figur:amira:enttaeuscht"
+        },
+        { "art": "aufgabe", "text": "Was hilft Aylin weiter? Kreuze an.", "symbole": ["lesen", "ankreuzen"] },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "items": [
+            "Was ist passiert?",
+            "Ich bin schlecht im Bauen.",
+            "Ich baue nie wieder.",
+            "Ich probiere es anders.",
+            "Aus Fehlern lerne ich.",
+            "Das ist blöd. Ich höre auf."
+          ]
+        },
+        { "art": "aufgabe", "text": "Das sind deine drei Fehler-Helfer. Sprich sie laut nach.", "symbole": ["zuhoeren", "sprechen"] },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 0,
+          "items": [
+            { "titel": "Stopp", "text": "Ärgern darf sein. Ich atme tief." },
+            { "titel": "Hinschauen", "text": "Was ist passiert?" },
+            { "titel": "Neu probieren", "text": "Ich mache es anders." }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was kannst du heute, was am Anfang schiefging? Male es.",
+          "hinweis": "Zum Beispiel: Fahrrad fahren, schwimmen, Schuhe binden, lesen.",
+          "symbole": ["malen", "schreiben"]
+        },
+        { "art": "feld", "hoehe": 4, "zeichnen": true },
+        { "art": "satzanfaenge", "items": ["Am Anfang ging es schief: …", "Das habe ich daraus gelernt: …"] }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder erfahren, dass Fehler zum Lernen dazugehören. Sie lernen drei Schritte für den Moment nach einem Fehler kennen – Stopp, Hinschauen, Neu probieren – und erinnern sich an etwas, das sie durch Üben gelernt haben.",
+        "ablauf": [
+          "Einstieg (5 Min.): Die Lehrperson erzählt von einem eigenen kleinen Missgeschick und was sie daraus gelernt hat.",
+          "Geschichte vorlesen. Fragen: „Wie fühlt sich Aylin, als der Turm fällt? Was macht sie dann?“",
+          "Aufgabe 1: Sätze vorlesen, die Kinder kreuzen an. Besprechen: Welche Sätze helfen weiter, welche machen mutlos?",
+          "Aufgabe 2 mit Gesten einüben: Hand hoch (Stopp), Hand über die Augen (Hinschauen), Daumen hoch (Neu probieren).",
+          "Aufgabe 3: Wer mag, erzählt im Sitzkreis: „Was ging am Anfang schief – und was kannst du heute?“"
+        ],
+        "hintergrund": "Wie Kinder mit Fehlern umgehen, hängt stark davon ab, wie Erwachsene darauf reagieren. Nach Dweck (2006) nutzen Kinder, die Fähigkeiten für veränderbar halten, Fehler eher als Hinweis zum Weiterlernen; Kinder, die Fehler als Beweis fehlender Begabung erleben, meiden eher Herausforderungen. Rückmeldungen helfen am meisten, wenn sie sich auf die Aufgabe und das Vorgehen beziehen und zeigen, wie es weitergeht – Lob oder Tadel der Person bringt wenig (Hattie & Timperley, 2007). Eine fehlerfreundliche Klasse braucht deshalb beides: gelassene Reaktionen auf Fehler und konkrete Hinweise für den nächsten Versuch.",
+        "quellen": [
+          "Dweck, C. S. (2006). Mindset: The New Psychology of Success. New York: Random House.",
+          "Hattie, J. & Timperley, H. (2007). The power of feedback. Review of Educational Research, 77(1), 81–112."
+        ],
+        "differenzierung": {
+          "leichter": "Die Sätze in Aufgabe 1 mit Daumen hoch oder runter beantworten. In Aufgabe 3 nur malen.",
+          "schwerer": "Erzählen oder aufschreiben, wie oft geübt werden musste und wer dabei geholfen hat."
+        },
+        "impulse": [
+          "Was machst du, wenn dir etwas misslingt?",
+          "Welcher Fehler hat dir schon einmal geholfen?",
+          "Wie reagieren wir, wenn jemandem etwas schiefgeht?"
+        ],
+        "tipps": [
+          "Eigene Fehler gelassen kommentieren – Kinder lernen den Umgang mit Fehlern am Vorbild.",
+          "Die drei Fehler-Helfer als Plakat aufhängen und im Alltag darauf verweisen."
+        ],
+        "achtung": "Wenn ein Kind bei kleinen Fehlern sehr heftig reagiert, sich selbst beschimpft oder Aufgaben aus Angst vor Fehlern verweigert: das Gespräch mit den Eltern suchen und die zuständige Leitung (Responsable) informieren.",
+        "material": "Buntstifte; optional Bauklötze"
+      }
+    }
+  },
+  {
+    "id": "noch-nicht",
+    "bereich": "lernen",
+    "thema": "fehler",
+    "stufen": ["C3", "C4"],
+    "sozialform": ["einzeln", "gruppe"],
+    "dauer": "45 Min.",
+    "eldib": ["V-22", "K-24", "V-18"],
+    "schlagworte": ["Lernhaltung", "Selbstgespräch", "Fortschritt", "Selbstwirksamkeit", "Durchhalten"],
+    "bild": "icon:seedling",
+    "de": {
+      "titel": "Noch nicht!",
+      "untertitel": "Ein kleines Wort mit großer Wirkung. „Noch“ erinnert dich daran, dass du dazulernen kannst.",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "Das Rad",
+          "text": "In der Turnhalle üben alle das Rad. Samuel landet schon wieder auf dem Po. „Ich kann das nicht“, sagt er und setzt sich auf die Bank. Seine Lehrerin setzt sich zu ihm: „Du kannst es noch nicht. Vor zwei Wochen hast du dich nicht getraut, die Hände aufzusetzen. Heute kommst du schon fast herum.“ Samuel überlegt – dann probiert er es noch einmal.",
+          "bild": "figur:sami:enttaeuscht"
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Warum „noch“ so viel ändert",
+          "text": "„Ich kann das nicht“ klingt, als wäre es für immer. „Ich kann das noch nicht“ heißt: Ich bin auf dem Weg. Beim Üben lernt dein Gehirn dazu. Was heute schwer ist, wird mit Übung leichter."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Welche Stopp-Sätze kennst du von dir? Kreuze an.",
+          "hinweis": "Stopp-Sätze bremsen dich beim Lernen. Fast alle Menschen kennen solche Sätze.",
+          "symbole": ["ankreuzen"]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "frei": 2,
+          "items": [
+            "Ich kann das nicht.",
+            "Das ist viel zu schwer.",
+            "Das lerne ich nie.",
+            "Die anderen sind viel schneller.",
+            "Ich bin einfach schlecht in Mathe.",
+            "Ich mache sowieso alles falsch."
+          ]
+        },
+        { "art": "aufgabe", "text": "Mach aus Stopp-Sätzen Weiter-Sätze. Verbinde.", "symbole": ["verbinden"] },
+        {
+          "art": "zuordnen",
+          "titel": ["Stopp-Satz", "Weiter-Satz"],
+          "links": ["Ich kann das nicht.", "Das ist viel zu schwer.", "Ich habe einen Fehler gemacht.", "Die anderen sind schneller."],
+          "rechts": ["Ich kann von den anderen lernen.", "Ich kann das noch nicht.", "Ich übe es in kleinen Schritten.", "Aus Fehlern lerne ich."]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was konntest du früher noch nicht – und heute schon?",
+          "hinweis": "Denk an Sport, Musik, Spiele, Lesen oder Dinge zu Hause.",
+          "symbole": ["schreiben"]
+        },
+        {
+          "art": "tabelle",
+          "spalten": ["Das konnte ich früher noch nicht", "So habe ich es gelernt", "Das kann ich heute"],
+          "breiten": [1.1, 1.6, 1.1],
+          "zeilen": 3,
+          "beispiel": ["Schwimmen", "Jeden Mittwoch geübt, auch wenn ich Wasser geschluckt habe", "25 Meter ohne Pause"]
+        },
+        { "art": "aufgabe", "text": "Was lernst du gerade? Plane deinen nächsten kleinen Schritt.", "symbole": ["schreiben"] },
+        { "art": "satzanfaenge", "items": ["Das kann ich noch nicht: …", "Mein nächster kleiner Schritt: …", "Dabei hilft mir: …"] },
+        { "art": "aufgabe", "text": "Was sagst du dir beim nächsten Stopp-Satz? Schreibe einen Wenn-dann-Plan.", "symbole": ["schreiben"] },
+        {
+          "art": "wennDann",
+          "zeilen": 2,
+          "beispiele": [
+            {
+              "wenn": "Wenn ich bei den Rechenaufgaben denke: „Das schaffe ich nie“,",
+              "dann": "sage ich mir: „Noch nicht“ und löse erst einmal eine einzige Aufgabe."
+            }
+          ]
+        },
+        { "art": "rueckblick" }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder erkennen entmutigende Stopp-Sätze beim Lernen und formulieren sie in ermutigende Weiter-Sätze um. Sie sammeln Belege aus dem eigenen Leben dafür, dass sie durch Üben dazulernen.",
+        "ablauf": [
+          "Einstieg (5 Min.): „Ich kann das nicht.“ an die Tafel schreiben. Fragen: „Wie fühlt sich der Satz an?“ Dann „noch“ einfügen und dieselbe Frage stellen.",
+          "Geschichte und Info-Kasten lesen. Fragen: „Was sagt die Lehrerin anders? Warum hilft das Samuel?“",
+          "Aufgabe 1 und 2 allein, danach Aufgabe 2 vergleichen. Weitere Weiter-Sätze auf einem Plakat sammeln.",
+          "Aufgabe 3: Erst Beispiele sammeln (Fahrrad fahren, lesen, ein Instrument). Betonen, wie viel Übung dahintersteckt.",
+          "Aufgabe 4 und 5: einen echten nächsten Schritt und einen Wenn-dann-Plan festlegen. Im Alltag auf „Ich kann das nicht“ freundlich antworten: „… noch nicht.“"
+        ],
+        "hintergrund": "Dweck (2006) unterscheidet zwei Denkhaltungen: Wer Fähigkeiten für festgelegt hält, erlebt Fehler und Anstrengung als Zeichen mangelnder Begabung und weicht Herausforderungen eher aus. Wer sie für veränderbar hält, sieht Anstrengung als Weg zum Können. Das Wort „noch“ macht diese zweite Haltung im Alltag hörbar. Ein Satz allein verändert aber keine Haltung: Entscheidend ist, dass Kinder erleben, wie sie durch Üben besser werden. Solche Erfahrungen eigener Bewältigung sind nach Bandura (1977) die stärkste Quelle von Selbstwirksamkeit – deshalb sammeln die Kinder in Aufgabe 3 eigene Belege. Der Wenn-dann-Plan verankert den neuen Satz in der Situation, in der er gebraucht wird (Gollwitzer, 1999).",
+        "quellen": [
+          "Dweck, C. S. (2006). Mindset: The New Psychology of Success. New York: Random House.",
+          "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "differenzierung": {
+          "leichter": "Aufgabe 2 mit ausgeschnittenen Satzstreifen legen. In Aufgabe 3 nur ein Beispiel, gern gemalt.",
+          "schwerer": "Eigene Stopp-Sätze sammeln und zu jedem einen passenden Weiter-Satz erfinden."
+        },
+        "impulse": ["Was konntest du vor einem Jahr noch nicht?", "Welcher Stopp-Satz kommt bei dir am häufigsten?", "Wer hilft dir, wenn du beim Üben hängst?"],
+        "tipps": [
+          "Anstrengung und Vorgehen loben, nicht Begabung: „Du hast drei Wege ausprobiert“ statt „Du bist so schlau“.",
+          "„Noch“ ehrlich verwenden: Es soll Mut machen, nicht Druck aufbauen."
+        ],
+        "achtung": "Wenn ein Kind sich dauerhaft abwertet („Ich bin dumm“) oder sehr niedergeschlagen wirkt, reicht ein Arbeitsblatt nicht: das Gespräch mit den Eltern suchen und die zuständige Leitung (Responsable) einbeziehen."
+      }
+    }
+  },
+  {
+    "id": "aus-rueckschlaegen-lernen",
+    "bereich": "lernen",
+    "thema": "fehler",
+    "stufen": ["ES"],
+    "sozialform": ["einzeln", "gruppe"],
+    "dauer": "45–50 Min.",
+    "eldib": ["V-33", "V-27", "SOZ-40"],
+    "schlagworte": ["Misserfolg", "Feedback", "Fehleranalyse", "Selbstreflexion", "Noten"],
+    "bild": "icon:route",
+    "de": {
+      "titel": "Aus Rückschlägen lernen",
+      "untertitel": "Eine schlechte Note fühlt sich mies an. Sie ist aber kein Urteil über dich, sondern eine Information: Was hat dieses Mal gefehlt?",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "22 von 60 Punkten",
+          "text": "Diogo bekommt seinen Devoir in Französisch zurück: 22 von 60 Punkten. Dabei hat er gelernt – am Abend vorher, zwei Stunden lang. Sein erster Gedanke: „Ich bin einfach zu blöd für Französisch.“ Er stopft das Blatt in die Tasche, ohne die Kommentare zu lesen. Zu Hause erzählt er nichts. Vor dem nächsten Devoir ist er noch nervöser als sonst.",
+          "bild": "figur:ben:enttaeuscht"
+        },
+        { "art": "aufgabe", "text": "Welche Erklärungen helfen Diogo weiter, welche blockieren ihn? Kreuze an." },
+        {
+          "art": "einschaetzung",
+          "optionen": ["hilft weiter", "blockiert"],
+          "items": [
+            "Ich bin einfach zu blöd für Französisch.",
+            "Ich habe erst am Abend vorher gelernt.",
+            "Die Lehrerin kann mich nicht leiden.",
+            "Ich habe die Vokabeln nur gelesen, nicht abgefragt.",
+            "Bei der Textaufgabe wusste ich nicht genau, was verlangt war.",
+            "Das werde ich nie können."
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Drei Fragen, die weiterhelfen",
+          "text": "Hilfreich sind Erklärungen, die konkret sind und die du beeinflussen kannst. Werte die Rückmeldung zu deiner Arbeit mit drei Fragen aus:",
+          "punkte": [
+            "Wo will ich hin? Was genau wurde verlangt?",
+            "Wo stehe ich? Was konnte ich schon, was fehlte noch?",
+            "Wie geht es weiter? Was ist mein nächster Schritt?"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Analysiere deinen letzten Test oder eine Aufgabe, die schiefging.",
+          "hinweis": "Mögliche Gründe: Wissen fehlte – Aufgabe falsch verstanden – Flüchtigkeitsfehler – Zeit zu knapp – Nervosität."
+        },
+        {
+          "art": "tabelle",
+          "spalten": ["Aufgabe", "Was lief schief?", "Warum?", "Nächstes Mal …"],
+          "breiten": [0.7, 1.4, 1.4, 1.8],
+          "zeilen": 3,
+          "beispiel": ["Nr. 3", "7 von 12 Verben falsch", "être und avoir verwechselt", "Die être-Verben auf Karteikarten, jeden Tag 5 Minuten abfragen"]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Mach einen Plan für die nächsten zwei Wochen.",
+          "hinweis": "Nachfragen lohnt sich. Die meisten Lehrpersonen erklären gern, wenn du konkret fragst: „Können Sie mir zeigen, was in Aufgabe 3 gefehlt hat?“"
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Meine Frage an die Lehrperson: …",
+            "Das übe ich bis zum nächsten Test: …",
+            "Wann und wie oft: …",
+            "Daran merke ich, dass es besser wird: …"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Die ersten Minuten nach einer schlechten Note",
+          "text": "Ärger, Enttäuschung oder Scham sind normal. Triff im ersten Frust keine großen Entscheidungen („Ich gebe Französisch auf“). Sieh dir den Test an, wenn du ruhiger bist – spätestens am nächsten Tag."
+        },
+        { "art": "aufgabe", "text": "Und beim nächsten Rückschlag? Plane die ersten 24 Stunden." },
+        {
+          "art": "wennDann",
+          "zeilen": 2,
+          "beispiele": [
+            {
+              "wenn": "Wenn ich eine schlechte Note zurückbekomme,",
+              "dann": "atme ich erst durch, lese am selben Tag die Kommentare und suche mir eine Aufgabe aus, zu der ich nachfrage."
+            }
+          ]
+        },
+        {
+          "art": "skala",
+          "frage": "Wie zuversichtlich bist du, dass dein Plan dir beim nächsten Test hilft?",
+          "von": "gar nicht",
+          "bis": "sehr",
+          "stufen": 11
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen unterscheiden lähmende von hilfreichen Erklärungen für einen Misserfolg, werten eine eigene Prüfung systematisch aus und leiten daraus einen konkreten nächsten Schritt ab.",
+        "ablauf": [
+          "Einstieg (5 Min.): „Was denkt ihr als Erstes bei einer schlechten Note?“ Antworten anonym auf Zetteln sammeln und vorlesen.",
+          "Fallbeispiel und Aufgabe 1: Hilfreiche Erklärungen sind konkret und veränderbar.",
+          "Info-Kasten besprechen und die drei Fragen an einem Beispiel durchspielen.",
+          "Aufgabe 2 mit einem echten, korrigierten Test (ca. 15 Min.). Aufgabe 3 und 4 zu zweit prüfen: Ist der nächste Schritt konkret genug?",
+          "Nach dem nächsten Test nachfragen: Was hat sich verändert?"
+        ],
+        "hintergrund": "Wie Jugendliche einen Misserfolg erklären, beeinflusst, ob sie dranbleiben. Wer Fähigkeiten für festgelegt hält, deutet eine schlechte Note als Beweis fehlender Begabung und meidet ähnliche Aufgaben; wer sie für entwickelbar hält, sucht nach Ursachen und Strategien (Dweck, 2006). Feedback wirkt vor allem, wenn es drei Fragen beantwortet: Wohin soll es gehen? Wo stehe ich? Was ist der nächste Schritt? (Hattie & Timperley, 2007). Viele Lernende lesen Kommentare aber gar nicht. Die strukturierte Fehleranalyse übt die Selbstreflexion, die im Modell des selbstregulierten Lernens den nächsten Lernzyklus vorbereitet (Zimmerman, 2002).",
+        "quellen": [
+          "Dweck, C. S. (2006). Mindset: The New Psychology of Success. New York: Random House.",
+          "Hattie, J. & Timperley, H. (2007). The power of feedback. Review of Educational Research, 77(1), 81–112.",
+          "Zimmerman, B. J. (2002). Becoming a self-regulated learner: An overview. Theory Into Practice, 41(2), 64–70."
+        ],
+        "differenzierung": {
+          "leichter": "Aufgabe 2 nur für eine einzige Aufgabe; Gründe aus dem Hinweis auswählen.",
+          "schwerer": "Zwei Tests vergleichen: Wiederholen sich die Fehlerarten?"
+        },
+        "impulse": [
+          "Was hilft dir direkt nach einer schlechten Note?",
+          "Welche Rückmeldung hat dir wirklich geholfen?",
+          "Rückschlag oder Scheitern – wo liegt der Unterschied?"
+        ],
+        "tipps": [
+          "Die Analyse erst am Tag nach der Rückgabe verlangen, nicht sofort.",
+          "Fehleranalysen nie öffentlich besprechen; Beispiele nur anonym verwenden."
+        ],
+        "achtung": "Große Angst vor Reaktionen zu Hause oder starke Niedergeschlagenheit: Einzelgespräch anbieten, SePAS und zuständige Leitung (Responsable) einbeziehen. Bei Hinweisen auf Gewalt sofort nach dem internen Ablauf handeln.",
+        "material": "Ein korrigierter Test"
+      }
+    },
+    "fr": {
+      "titel": "Rebondir après un échec",
+      "untertitel": "Une mauvaise note, ça fait mal. Mais ce n’est pas un jugement sur toi : c’est une information sur ce qui a manqué cette fois-ci.",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "22 sur 60",
+          "text": "Diogo récupère son devoir de français : 22 sur 60. Pourtant, il avait révisé – la veille au soir, pendant deux heures. Sa première pensée : « Je suis vraiment nul en français. » Il fourre la feuille dans son sac sans lire les commentaires. À la maison, il n’en parle pas. Avant le devoir suivant, il est encore plus stressé que d’habitude.",
+          "bild": "figur:ben:enttaeuscht"
+        },
+        { "art": "aufgabe", "text": "Quelles explications aident Diogo à avancer, lesquelles le bloquent ? Coche." },
+        {
+          "art": "einschaetzung",
+          "optionen": ["ça aide", "ça bloque"],
+          "items": [
+            "Je suis vraiment nul en français.",
+            "Je n’ai révisé que la veille au soir.",
+            "La prof ne m’aime pas.",
+            "J’ai seulement relu le vocabulaire, sans me tester.",
+            "Pour la production écrite, je ne savais pas exactement ce qui était demandé.",
+            "Je n’y arriverai jamais."
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Trois questions pour avancer",
+          "text": "Les explications utiles sont concrètes et portent sur ce que tu peux changer. Exploite les retours sur ton travail avec trois questions :",
+          "punkte": [
+            "Où est-ce que je veux aller ? Qu’est-ce qui était demandé exactement ?",
+            "Où est-ce que j’en suis ? Qu’est-ce que je savais déjà, qu’est-ce qui manquait ?",
+            "Et maintenant ? Quelle est ma prochaine étape ?"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Analyse ton dernier devoir ou un exercice qui s’est mal passé.",
+          "hinweis": "Causes possibles : connaissances manquantes – consigne mal comprise – erreur d’inattention – manque de temps – stress."
+        },
+        {
+          "art": "tabelle",
+          "spalten": ["Exercice", "Qu’est-ce qui n’a pas marché ?", "Pourquoi ?", "La prochaine fois …"],
+          "breiten": [0.7, 1.4, 1.4, 1.8],
+          "zeilen": 3,
+          "beispiel": ["n° 3", "7 verbes sur 12 faux", "confusion entre être et avoir", "Mettre les verbes avec être sur des fiches, 5 minutes par jour"]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Fais un plan pour les deux prochaines semaines.",
+          "hinweis": "Demander vaut la peine. La plupart des enseignant·e·s expliquent volontiers si ta question est précise : « Pouvez-vous me montrer ce qui manquait à l’exercice 3 ? »"
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Ma question pour l’enseignant·e : …",
+            "Ce que je travaille d’ici le prochain devoir : …",
+            "Quand et à quel rythme : …",
+            "À quoi je verrai que ça progresse : …"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Les premières minutes après une mauvaise note",
+          "text": "Colère, déception ou honte : c’est normal. Ne prends pas de grande décision sous le coup de la frustration (« J’arrête le français »). Regarde ta copie quand tu es plus calme – au plus tard le lendemain."
+        },
+        { "art": "aufgabe", "text": "Et au prochain coup dur ? Prévois les premières 24 heures." },
+        {
+          "art": "wennDann",
+          "zeilen": 2,
+          "beispiele": [
+            {
+              "wenn": "Si je reçois une mauvaise note,",
+              "dann": "je souffle d’abord, je lis les commentaires le jour même et je choisis un exercice sur lequel poser une question."
+            }
+          ]
+        },
+        {
+          "art": "skala",
+          "frage": "À quel point es-tu confiant·e que ton plan t’aidera au prochain devoir ?",
+          "von": "pas du tout",
+          "bis": "tout à fait",
+          "stufen": 11
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes distinguent les explications paralysantes des explications utiles après un échec, analysent méthodiquement un de leurs devoirs et en tirent une prochaine étape concrète.",
+        "ablauf": [
+          "Entrée en matière (5 min) : « Quelle est votre première pensée face à une mauvaise note ? » Recueillir les réponses de façon anonyme, puis les lire.",
+          "Cas et exercice 1 : les explications utiles sont concrètes et modifiables.",
+          "Discuter l’encadré et appliquer les trois questions à un exemple.",
+          "Exercice 2 avec un vrai devoir corrigé (env. 15 min). Vérifier à deux les exercices 3 et 4 : l’étape est-elle assez concrète ?",
+          "Après le devoir suivant, demander ce qui a changé."
+        ],
+        "hintergrund": "La façon dont les jeunes expliquent un échec influence leur persévérance. Qui croit ses capacités figées voit dans une mauvaise note la preuve d’un manque de talent et évite les tâches semblables ; qui les croit évolutives cherche des causes et des stratégies (Dweck, 2006). Un retour est surtout utile s’il répond à trois questions : Où vais-je ? Où en suis-je ? Quelle est la prochaine étape ? (Hattie & Timperley, 2007). Or beaucoup d’élèves ne lisent même pas les commentaires. L’analyse structurée des erreurs exerce l’autoréflexion qui, dans le modèle de l’apprentissage autorégulé, prépare le cycle suivant (Zimmerman, 2002).",
+        "quellen": [
+          "Dweck, C. S. (2006). Mindset: The New Psychology of Success. New York: Random House.",
+          "Hattie, J. & Timperley, H. (2007). The power of feedback. Review of Educational Research, 77(1), 81–112.",
+          "Zimmerman, B. J. (2002). Becoming a self-regulated learner: An overview. Theory Into Practice, 41(2), 64–70."
+        ],
+        "differenzierung": {
+          "leichter": "Exercice 2 pour un seul exercice ; choisir les causes dans la liste.",
+          "schwerer": "Comparer deux devoirs : les mêmes types d’erreurs reviennent-ils ?"
+        },
+        "impulse": [
+          "Qu’est-ce qui t’aide juste après une mauvaise note ?",
+          "Quel retour t’a vraiment fait progresser ?",
+          "Revers ou échec : où est la différence ?"
+        ],
+        "tipps": [
+          "Demander l’analyse le lendemain de la remise, pas sur le moment.",
+          "Ne jamais discuter les analyses d’erreurs en public ; exemples uniquement anonymes."
+        ],
+        "achtung": "Forte peur des réactions à la maison ou grand abattement : proposer un entretien individuel, impliquer le SePAS et la direction compétente (responsable). En cas d’indices de violence, agir immédiatement selon la procédure interne.",
+        "material": "Un devoir corrigé"
+      }
+    }
+  }
+]

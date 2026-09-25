@@ -1,0 +1,1046 @@
+[
+  {
+    "id": "mein-koerper-veraendert-sich",
+    "bereich": "alltag",
+    "thema": "koerper",
+    "stufen": ["C4"],
+    "sozialform": ["klasse", "einzeln"],
+    "dauer": "45 Min.",
+    "eldib": ["SOZ-31", "K-21", "V-26", "K-12"],
+    "schlagworte": ["Pubertät", "Körper", "Veränderung", "Vielfalt", "Gefühle", "Vertrauensperson"],
+    "bild": "icon:butterfly",
+    "de": {
+      "titel": "Mein Körper verändert sich",
+      "untertitel": "Irgendwann zwischen 8 und 14 Jahren beginnt die Pubertät. Sie kommt bei allen – aber jeder Körper hat seinen eigenen Zeitplan.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Was in der Pubertät passiert",
+          "text": "Der Körper wird nach und nach erwachsen. Botenstoffe im Körper, die Hormone, geben dafür das Startsignal. Man wächst schneller, Haut und Stimme verändern sich, an neuen Stellen wachsen Haare. Auch Gefühle können stärker werden und schneller wechseln."
+        },
+        { "art": "aufgabe", "text": "Stimmt das oder stimmt das nicht? Kreuze an.", "hinweis": "Danach besprecht ihr die Lösungen gemeinsam.", "symbole": ["lesen", "ankreuzen"] },
+        {
+          "art": "einschaetzung",
+          "optionen": ["stimmt", "stimmt nicht"],
+          "items": [
+            "Alle Kinder kommen im gleichen Alter in die Pubertät.",
+            "Bei manchen beginnt die Pubertät mit 8 Jahren, bei anderen mit 14.",
+            "Pickel bekommt man, weil man sich zu wenig wäscht.",
+            "In der Pubertät schwitzt man mehr. Tägliches Waschen hilft.",
+            "Witze über den Körper von anderen sind harmlos.",
+            "Fragen zur Pubertät darf man stellen – auch peinliche."
+          ]
+        },
+        {
+          "art": "geschichte",
+          "titel": "In der Umkleide",
+          "text": "Nora ist in einem Jahr zehn Zentimeter gewachsen. Jetzt ist sie die Größte in der Klasse. In der Umkleide ruft Pol: „Hey, Riesin, wie ist das Wetter da oben?“ Alle lachen, auch Nora. Aber in ihrem Bauch fühlt es sich eng an. Mathis steht daneben. Er ist einer der Kleinsten und denkt: „Wann wachse ich endlich?“",
+          "bild": "figur:jana:verlegen"
+        },
+        { "art": "aufgabe", "text": "Nora lacht mit. Wie fühlt sie sich wohl innen drin? Kreise ein.", "symbole": ["nachdenken", "einkreisen"] },
+        { "art": "gefuehle", "gefuehle": ["froh", "verlegen", "traurig", "wuetend", "stolz", "besorgt"], "modus": "einkreisen", "spalten": 6 },
+        { "art": "aufgabe", "text": "Was könnte Nora zu Pol sagen? Und was würdest du Mathis sagen?", "symbole": ["schreiben"] },
+        { "art": "satzanfaenge", "items": ["Nora könnte zu Pol sagen: …", "Zu Mathis würde ich sagen: …"], "linien": 2 },
+        { "art": "aufgabe", "text": "Mit Fragen musst du nicht allein bleiben. Wen kannst du fragen?", "hinweis": "Schreibe nur auf, was du möchtest. Dieses Blatt musst du niemandem zeigen.", "symbole": ["schreiben"] },
+        { "art": "hand", "finger": ["Zuhause", "In der Schule", "Ärztin oder Arzt", "Noch jemand", "Anonym am Telefon: Kanner- a Jugendtelefon 116 111"] },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "So kannst du anfangen",
+          "punkte": ["„Hast du kurz Zeit? Ich möchte dich etwas fragen.“", "„Es ist mir ein bisschen peinlich, aber …“", "„Ist es normal, dass …?“"]
+        },
+        { "art": "rueckblick" }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder wissen: Die Pubertät kommt bei allen, aber zu unterschiedlichen Zeiten. Sie benennen Gefühle dazu, üben eine Antwort auf abwertende Sprüche und kennen Ansprechpersonen für ihre Fragen.",
+        "ablauf": [
+          "Vorbereitung: Eine Fragen-Box für anonyme Zettel aufstellen; die Eltern vorab über das Thema informieren.",
+          "Einstieg (5 Min.): Regeln vereinbaren – niemand muss Persönliches erzählen, niemand wird ausgelacht, jede Frage ist erlaubt.",
+          "Aufgabe 1 einzeln, dann gemeinsam auflösen (10 Min.). Lösung: 1, 3 und 5 stimmen nicht; 2, 4 und 6 stimmen.",
+          "Geschichte vorlesen, Aufgaben 2 und 3 (15 Min.). Fragen: „Warum lacht Nora mit?“ „Ist das noch Spaß?“ Antworten für Nora im Rollenspiel ausprobieren.",
+          "Aufgabe 4 einzeln; die Hand wird nicht eingesammelt.",
+          "In der nächsten Stunde die Fragen aus der Box sachlich und ohne Namen beantworten; Offenes an die Médecine scolaire weitergeben."
+        ],
+        "hintergrund": "Die Pubertät beginnt heute früher als noch vor einigen Generationen, und ihr Beginn schwankt von Kind zu Kind um mehrere Jahre (Steinberg, 2014). Wer deutlich früher oder später dran ist als die Klasse, fühlt sich oft besonders beobachtet. Zugleich gewinnt das Urteil der Gleichaltrigen an Gewicht – abwertende Sprüche über den Körper treffen in dieser Zeit besonders. Sachliche Informationen nehmen Sorgen, ein respektvoller Umgangston schützt vor Beschämung. Wer Gefühle wie Unsicherheit oder Scham benennen kann, kann sie leichter mitteilen und sich Hilfe holen (Brackett, 2019).",
+        "quellen": [
+          "Steinberg, L. (2014). Age of Opportunity: Lessons from the New Science of Adolescence. Boston: Houghton Mifflin Harcourt.",
+          "Brackett, M. A. (2019). Permission to Feel. New York: Celadon."
+        ],
+        "differenzierung": {
+          "leichter": "Aufgabe 1 gemeinsam lesen und mit Daumen hoch oder runter beantworten. Bei Aufgabe 3 nur einen Satz für Nora formulieren.",
+          "schwerer": "Regeln für einen respektvollen Umgang in der Umkleide formulieren und im Klassenrat vorschlagen."
+        },
+        "impulse": [
+          "Woran merkt man, ob ein Spruch noch Spaß ist oder schon verletzt?",
+          "Was wünschst du dir von deiner Klasse, wenn du dich veränderst?"
+        ],
+        "tipps": [
+          "Sachliche Wörter verwenden, bei Kichern gelassen bleiben – Verlegenheit gehört dazu.",
+          "In kleineren Gruppen fragen manche Kinder freier."
+        ],
+        "achtung": "Persönliches nicht im Plenum vertiefen, sondern im Einzelgespräch aufgreifen und die zuständige Leitung (Responsable) informieren. Bei Hinweisen auf Grenzverletzungen oder ungewollte Berührungen: sofort nach dem internen Ablauf handeln, das Kind nicht allein lassen.",
+        "material": "Schachtel als Fragen-Box, kleine Zettel"
+      }
+    }
+  },
+  {
+    "id": "koerperbild",
+    "bereich": "alltag",
+    "thema": "koerper",
+    "stufen": ["ES"],
+    "sozialform": ["einzeln", "klasse"],
+    "dauer": "45–50 Min.",
+    "eldib": ["SOZ-40", "KOG-58", "V-29"],
+    "schlagworte": ["Körperbild", "soziale Medien", "Filter", "Vergleiche", "Selbstwert", "Medienkompetenz"],
+    "bild": "icon:camera",
+    "verwandt": ["mein-koerper-veraendert-sich"],
+    "de": {
+      "titel": "Körperbild: Filter, Vergleiche und ich",
+      "untertitel": "Auf dem Handy sehen wir täglich Hunderte Körper. Viele Bilder sind ausgewählt, gestellt oder bearbeitet – vergleichen tun wir uns trotzdem.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Was ein Bild nicht zeigt",
+          "text": "Hinter einem Bild im Netz steckt oft viel Arbeit: Licht, Winkel und Pose sind geplant, aus vielen Versuchen wird das beste ausgewählt. Filter glätten die Haut, machen Augen größer oder die Taille schmaler – manche schon beim Fotografieren. Viele Beiträge sind außerdem Werbung. Wer sich damit vergleicht, vergleicht seinen Alltag mit den besten, bearbeiteten Momenten anderer."
+        },
+        { "art": "aufgabe", "text": "Wie oft trifft das auf dich zu?", "hinweis": "Nur für dich – niemand sammelt das ein." },
+        {
+          "art": "einschaetzung",
+          "optionen": ["oft", "manchmal", "selten"],
+          "items": [
+            "Ich vergleiche meinen Körper mit Bildern im Netz.",
+            "Nach dem Scrollen fühle ich mich schlechter als vorher.",
+            "Ich bearbeite Fotos von mir, bevor ich sie teile.",
+            "Ich lösche Fotos, auf denen ich mir nicht gefalle.",
+            "Kommentare zu meinem Aussehen gehen mir lange nach.",
+            "Ich folge Kanälen, nach denen ich mich gut fühle."
+          ]
+        },
+        { "art": "aufgabe", "text": "Prüfe harte Gedanken: Was würdest du einer guten Freundin oder einem guten Freund sagen?", "hinweis": "Du kannst auch typische Gedanken aus deinem Alter nehmen – es muss nicht um dich gehen." },
+        {
+          "art": "tabelle",
+          "spalten": ["Harter Gedanke über den Körper", "Was ich einer Freundin oder einem Freund sagen würde"],
+          "breiten": [1, 1.25],
+          "zeilen": 2,
+          "beispiel": ["„Mit meiner Haut kann ich mich nicht zeigen.“", "„Pickel haben die meisten in unserem Alter. Auf Bildern im Netz sind sie oft nur wegretuschiert.“"]
+        },
+        { "art": "aufgabe", "text": "Schau auf das, was dein Körper kann – nicht nur darauf, wie er aussieht." },
+        { "art": "satzanfaenge", "items": ["Diese Woche hat mein Körper mir ermöglicht, …", "Meinem Körper tut gut, wenn …"], "linien": 2 },
+        { "art": "aufgabe", "text": "Was du siehst, kannst du mitbestimmen. Wähle zwei Schritte für diese Woche." },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "items": [
+            "Kanälen entfolgen, nach denen ich mich schlechter fühle",
+            "Kanälen folgen, die ganz unterschiedliche Körper zeigen",
+            "Schönheitsfilter in der Kamera-App ausschalten",
+            "Abends eine feste Handy-Pause einlegen",
+            "Keine Kommentare über das Aussehen anderer schreiben",
+            "Mit jemandem über ein Bild reden, das mich beschäftigt"
+          ],
+          "frei": 2
+        },
+        { "art": "aufgabe", "text": "Dein Plan für den Moment, in dem der Vergleich kommt." },
+        {
+          "art": "wennDann",
+          "zeilen": 2,
+          "beispiele": [{ "wenn": "Wenn ich beim Scrollen merke, dass ich mich vergleiche,", "dann": "lege ich das Handy weg und schreibe einer Freundin." }]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "text": "Vergleichen ist menschlich. Entscheidend ist, womit du dich vergleichst – und wie du danach mit dir selbst sprichst."
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "text": "Wenn Gedanken über Aussehen, Essen oder Gewicht viel Raum einnehmen: Sprich mit jemandem, dem du vertraust – zum Beispiel beim SePAS deines Lycée. Anonym und kostenlos: Kanner- a Jugendtelefon 116 111."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen verstehen, wie Bilder in sozialen Medien entstehen, beobachten ihre eigenen Vergleiche und üben einen fairen, freundlichen Blick auf den eigenen Körper.",
+        "ablauf": [
+          "Einstieg (5 Min.): Ein Werbebild neben dem unbearbeiteten Original zeigen (z. B. von BEE SECURE oder klicksafe). Frage: „Was wurde verändert – und warum?“",
+          "Info-Kasten lesen; weitere Tricks sammeln, die die Klasse kennt.",
+          "Aufgabe 1 einzeln (5 Min.); nicht einsammeln, nicht vorlesen lassen.",
+          "Aufgabe 2 (10 Min.): Beispiel besprechen. Der faire Satz muss nicht jubeln, sondern stimmen.",
+          "Aufgaben 3 bis 5 einzeln (15 Min.); wer mag, stellt seinen Plan vor.",
+          "Nach einer Woche nachfragen: Was hat sich beim Scrollen verändert?"
+        ],
+        "hintergrund": "Im Jugendalter reagiert das Gehirn besonders stark auf Anerkennung und Bewertung durch Gleichaltrige (Steinberg, 2014). Soziale Medien liefern dafür ständig Vergleichsbilder, die ausgewählt, gestellt und oft bearbeitet sind – ein Vergleich, bei dem man fast zwangsläufig schlechter abschneidet. Hilfreich sind drei Ansätze: wissen, wie Bilder entstehen; harte Gedanken prüfen, etwa mit der Frage „Was würde ich einer Freundin sagen?“ (Beck, 2011); und den Blick auf das lenken, was der Körper kann. Schulungen und Materialien für Schulen bietet BEE SECURE.",
+        "quellen": [
+          "Steinberg, L. (2014). Age of Opportunity: Lessons from the New Science of Adolescence. Boston: Houghton Mifflin Harcourt.",
+          "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
+          "BEE SECURE – Initiative der luxemburgischen Regierung für ein sichereres Internet: www.bee-secure.lu"
+        ],
+        "differenzierung": {
+          "leichter": "Für Aufgabe 2 typische Gedanken an der Tafel vorgeben; Aufgabe 5 weglassen.",
+          "schwerer": "Einen Werbebeitrag analysieren: Was wird verkauft? Welche Tricks werden genutzt? Wer verdient daran, wenn ich mich unwohl fühle?"
+        },
+        "impulse": [
+          "Warum fühlt man sich nach dem Scrollen oft schlechter, obwohl man um die Filter weiß?",
+          "Wer verdient an unserer Unzufriedenheit?"
+        ],
+        "tipps": [
+          "Nicht über Körper oder Gewicht von Anwesenden sprechen – auch nicht lobend.",
+          "Eigene Bemerkungen über Aussehen oder Essen vermeiden; sie wirken lange nach."
+        ],
+        "achtung": "Bei starkem Gewichtsverlust, ausgelassenen Mahlzeiten, übermäßigem Sport oder Rückzug wegen des Aussehens: im Einzelgespräch ansprechen, SePAS und zuständige Leitung (Responsable) informieren. Bei Hinweisen auf Selbstverletzung sofort nach dem internen Ablauf handeln.",
+        "material": "Optional: Werbebild mit Original"
+      }
+    },
+    "fr": {
+      "titel": "Image du corps : filtres, comparaisons et moi",
+      "untertitel": "Chaque jour, des centaines de corps défilent sur nos écrans. Beaucoup d’images sont choisies, posées ou retouchées – on s’y compare quand même.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Ce qu’une image ne montre pas",
+          "text": "Derrière une image en ligne, il y a souvent beaucoup de travail : la lumière, l’angle et la pose sont étudiés, et on garde la meilleure photo parmi de nombreux essais. Les filtres lissent la peau, agrandissent les yeux ou affinent la taille – certains dès la prise de vue. Beaucoup de publications sont aussi de la publicité. En se comparant à ces images, on compare son quotidien aux meilleurs moments, retouchés, des autres."
+        },
+        { "art": "aufgabe", "text": "À quelle fréquence est-ce vrai pour toi ?", "hinweis": "Rien que pour toi – personne ne ramasse la fiche." },
+        {
+          "art": "einschaetzung",
+          "optionen": ["souvent", "parfois", "rarement"],
+          "items": [
+            "Je compare mon corps aux images que je vois en ligne.",
+            "Après un moment sur les réseaux, je me sens moins bien qu’avant.",
+            "Je retouche mes photos avant de les partager.",
+            "Je supprime les photos sur lesquelles je ne me plais pas.",
+            "Les commentaires sur mon apparence me restent longtemps en tête.",
+            "Je suis des comptes qui me font du bien."
+          ]
+        },
+        { "art": "aufgabe", "text": "Mets à l’épreuve les pensées dures : que dirais-tu à un·e ami·e ?", "hinweis": "Tu peux aussi prendre des pensées typiques à ton âge – il ne s’agit pas forcément de toi." },
+        {
+          "art": "tabelle",
+          "spalten": ["Pensée dure sur le corps", "Ce que je dirais à un·e ami·e"],
+          "breiten": [1, 1.25],
+          "zeilen": 2,
+          "beispiel": ["« Avec ma peau, je ne peux pas me montrer. »", "« La plupart des jeunes de notre âge ont des boutons. Sur les photos en ligne, ils sont souvent simplement effacés. »"]
+        },
+        { "art": "aufgabe", "text": "Regarde ce que ton corps te permet de faire – pas seulement son apparence." },
+        { "art": "satzanfaenge", "items": ["Cette semaine, mon corps m’a permis de …", "Mon corps se sent bien quand …"], "linien": 2 },
+        { "art": "aufgabe", "text": "Ce que tu vois, tu peux en partie le choisir. Choisis deux actions pour cette semaine." },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "items": [
+            "Ne plus suivre les comptes qui me font me sentir moins bien",
+            "Suivre des comptes qui montrent des corps très différents",
+            "Désactiver les filtres beauté de l’appareil photo",
+            "Faire chaque soir une pause fixe sans téléphone",
+            "Ne pas commenter l’apparence des autres",
+            "Parler à quelqu’un d’une image qui me travaille"
+          ],
+          "frei": 2
+        },
+        { "art": "aufgabe", "text": "Ton plan pour le moment où la comparaison arrive." },
+        {
+          "art": "wennDann",
+          "wenn": "Si …",
+          "dann": "… alors",
+          "zeilen": 2,
+          "beispiele": [{ "wenn": "Si je remarque, en faisant défiler mon fil, que je me compare,", "dann": "je pose le téléphone et j’écris à une amie." }]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "text": "Se comparer, c’est humain. Ce qui compte, c’est à quoi tu te compares – et comment tu te parles ensuite."
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "text": "Si les pensées sur l’apparence, la nourriture ou le poids prennent beaucoup de place, parles-en à une personne de confiance – par exemple au SePAS de ton lycée. Anonyme et gratuit : Kanner- a Jugendtelefon 116 111."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes comprennent comment naissent les images sur les réseaux sociaux, observent leurs propres comparaisons et s’exercent à porter un regard juste et bienveillant sur leur corps.",
+        "ablauf": [
+          "Entrée en matière (5 min) : montrer une publicité et son original non retouché (p. ex. BEE SECURE, klicksafe). Question : « Qu’est-ce qui a changé – et pourquoi ? »",
+          "Lire l’encadré, puis recueillir d’autres astuces que la classe connaît.",
+          "Exercice 1 individuellement (5 min), sans ramasser ni faire lire les réponses.",
+          "Exercice 2 (10 min) : discuter l’exemple. La phrase juste n’a pas à être enthousiaste, elle doit être vraie.",
+          "Exercices 3 à 5 individuellement (15 min), puis présentation volontaire des plans.",
+          "Une semaine plus tard : qu’est-ce qui a changé devant le fil d’actualité ?"
+        ],
+        "hintergrund": "À l’adolescence, le cerveau réagit particulièrement fort à la reconnaissance et au jugement des pairs (Steinberg, 2014). Les réseaux sociaux fournissent en continu des images de comparaison, choisies, mises en scène et souvent retouchées – une comparaison que l’on perd presque à coup sûr. Trois approches aident : savoir comment les images sont fabriquées, mettre à l’épreuve les pensées dures – par exemple avec la question « Que dirais-je à une amie ? » (Beck, 2011) – et regarder ce que le corps permet de faire. BEE SECURE propose des supports pour les écoles.",
+        "quellen": [
+          "Steinberg, L. (2014). Age of Opportunity: Lessons from the New Science of Adolescence. Boston: Houghton Mifflin Harcourt.",
+          "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
+          "BEE SECURE – Initiative der luxemburgischen Regierung für ein sichereres Internet: www.bee-secure.lu"
+        ],
+        "differenzierung": {
+          "leichter": "Noter au tableau des pensées typiques pour l’exercice 2 et laisser de côté l’exercice 5.",
+          "schwerer": "Analyser une publicité : que vend-elle ? Quelles astuces utilise-t-elle ? À qui profite mon malaise ?"
+        },
+        "impulse": [
+          "Pourquoi se sent-on souvent moins bien après les réseaux, alors qu’on connaît les filtres ?",
+          "À qui profite notre insatisfaction ?"
+        ],
+        "tipps": [
+          "Ne pas parler du corps ou du poids des personnes présentes – même pour complimenter.",
+          "Éviter ses propres remarques sur l’apparence ou la nourriture : elles marquent longtemps."
+        ],
+        "achtung": "Forte perte de poids, repas sautés, sport excessif ou repli à cause de l’apparence : en parler en entretien individuel, informer le SePAS et la direction compétente (responsable). Signes d’automutilation : agir immédiatement selon la procédure interne.",
+        "material": "En option : publicité et original"
+      }
+    }
+  },
+  {
+    "id": "das-kann-ich-schon",
+    "bereich": "alltag",
+    "thema": "staerken",
+    "stufen": ["C1"],
+    "sozialform": ["einzeln", "gruppe"],
+    "dauer": "20–30 Min.",
+    "eldib": ["V-6", "V-14", "SOZ-9", "K-18"],
+    "schlagworte": ["Selbstständigkeit", "Stolz", "Selbstwirksamkeit", "Können", "Spielschule"],
+    "bild": "figur:tom:stolz:jubeln",
+    "verwandt": ["staerken-sterne"],
+    "de": {
+      "titel": "Das kann ich schon",
+      "anleitung": "Die Bilder gemeinsam benennen. Das Kind kreist ein, was es schon kann, und malt dann links etwas, das es gut kann, rechts etwas, das es gerade lernt. Dabei beschreiben, was es geschafft hat: „Du hast deine Jacke ganz allein zugemacht.“",
+      "bausteine": [
+        { "art": "aufgabe", "text": "Was kannst du schon? Kreise ein.", "symbole": ["zeigen", "einkreisen"] },
+        {
+          "art": "bilder",
+          "modus": "einkreisen",
+          "spalten": 3,
+          "bilder": [
+            { "bild": "icon:shirt", "text": "mich anziehen" },
+            { "bild": "icon:droplet", "text": "Hände waschen" },
+            { "bild": "icon:basket", "text": "aufräumen" },
+            { "bild": "icon:tools-kitchen-2", "text": "Tisch decken" },
+            { "bild": "icon:palette", "text": "malen" },
+            { "bild": "icon:heart", "text": "trösten" }
+          ]
+        },
+        {
+          "art": "spalten",
+          "links": [
+            { "art": "aufgabe", "text": "Das kann ich schon.", "symbole": ["malen"] },
+            { "art": "feld", "zeichnen": true, "hoehe": 4.5 }
+          ],
+          "rechts": [
+            { "art": "aufgabe", "text": "Das lerne ich gerade.", "symbole": ["malen"] },
+            { "art": "feld", "zeichnen": true, "hoehe": 4.5 }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder erinnern sich an Dinge, die sie schon selbstständig können, zeigen sie anderen und erleben: Was ich gerade übe, kann ich bald.",
+        "ablauf": [
+          "Einstieg im Sitzkreis (5 Min.): Die Lehrperson erzählt, was sie als Kind lange üben musste, z. B. eine Schleife binden.",
+          "Die Bilder gemeinsam benennen. Jedes Kind kreist ein, was es schon kann. Nachfragen: „Wie machst du das? Zeig mal.“",
+          "Ich-kann-Runde: Jedes Kind zeigt eine Sache vor – die Jacke zumachen, einen Turm bauen, ein Lied singen.",
+          "Aufgaben 2 und 3: Die Kinder malen. Auf Wunsch schreibt die Lehrperson einen Satz dazu, den das Kind diktiert.",
+          "Die Bilder aufhängen oder ins Portfolio legen. Nach einigen Wochen nachschauen: Was vom rechten Bild kann das Kind jetzt?"
+        ],
+        "hintergrund": "Etwas selbst geschafft zu haben, ist die stärkste Quelle für Selbstwirksamkeit – das Vertrauen, auch Neues bewältigen zu können (Bandura, 1977). Kleine Kinder erleben das vor allem im Alltag: beim Anziehen, Aufräumen oder Helfen. Wirksamer als allgemeines Lob ist eine Rückmeldung, die das Tun beschreibt, etwa „Du hast alle Stifte in die Dose geräumt“ (Hattie & Timperley, 2007). Das Wort „noch“ hilft, Dinge, die noch nicht klappen, als Lernschritt zu sehen und nicht als Mangel (Dweck, 2006).",
+        "quellen": [
+          "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
+          "Hattie, J. & Timperley, H. (2007). The power of feedback. Review of Educational Research, 77(1), 81–112.",
+          "Dweck, C. S. (2006). Mindset: The New Psychology of Success. New York: Random House."
+        ],
+        "differenzierung": {
+          "leichter": "Echte Gegenstände statt Bilder zeigen (Jacke, Korb, Pinsel). Das Kind zeigt nur und malt frei.",
+          "schwerer": "Das Kind erzählt, wie es etwas gelernt hat und wer ihm dabei geholfen hat."
+        },
+        "impulse": [
+          "Was kannst du schon ganz allein?",
+          "Was war am Anfang schwer?",
+          "Wem hast du heute schon geholfen?"
+        ],
+        "tipps": [
+          "Beschreibend loben: sagen, was das Kind getan hat, statt nur „gut gemacht“.",
+          "Kinder, die wenig einkreisen, an Alltagsmomente erinnern: „Heute hast du deine Hausschuhe selbst angezogen.“"
+        ],
+        "achtung": "Wenn ein Kind sagt, es könne gar nichts, oder sich stark abwertet: nicht widersprechen, sondern im Alltag kleine Erfolge sichtbar machen. Hält die Entmutigung an, mit den Eltern sprechen und die zuständige Leitung (Responsable) informieren.",
+        "material": "Buntstifte; optional Jacke, Korb und Pinsel zum Zeigen"
+      }
+    }
+  },
+  {
+    "id": "staerken-sterne",
+    "bereich": "alltag",
+    "thema": "staerken",
+    "stufen": ["C2"],
+    "sozialform": ["einzeln", "gruppe"],
+    "dauer": "30 Min.",
+    "eldib": ["K-19", "K-20", "K-18"],
+    "schlagworte": ["Stärken", "Selbstwert", "Rückmeldung", "Charakterstärken", "Stolz"],
+    "bild": "icon:star",
+    "verwandt": ["das-kann-ich-schon", "staerken-karten"],
+    "de": {
+      "titel": "Meine Stärken-Sterne",
+      "untertitel": "Jeder Mensch kann etwas gut. Manche Stärken sieht man sofort. Andere entdeckt man erst beim genauen Hinsehen.",
+      "bausteine": [
+        { "art": "aufgabe", "text": "Was kannst du gut? Kreuze an.", "symbole": ["ankreuzen"] },
+        {
+          "art": "bilder",
+          "modus": "ankreuzen",
+          "spalten": 4,
+          "bilder": [
+            { "bild": "icon:heart-handshake", "text": "helfen" },
+            { "bild": "icon:ear", "text": "zuhören" },
+            { "bild": "icon:shield", "text": "mutig sein" },
+            { "bild": "icon:bulb", "text": "Ideen haben" },
+            { "bild": "icon:hourglass", "text": "warten können" },
+            { "bild": "icon:mood-happy", "text": "lustig sein" },
+            { "bild": "icon:palette", "text": "malen" },
+            { "bild": "icon:run", "text": "schnell laufen" }
+          ]
+        },
+        { "art": "aufgabe", "text": "Frag ein anderes Kind: Was kann ich gut?", "hinweis": "Sag dem anderen Kind danach auch eine Stärke.", "symbole": ["partner", "schreiben"] },
+        { "art": "satzanfaenge", "items": ["Das andere Kind sagt: Du kannst gut …"], "linien": 2 },
+        { "art": "aufgabe", "text": "Schreibe eine Stärke auf die Linie. Zeigst du sie, malst du einen Stern an.", "symbole": ["schreiben", "malen"] },
+        { "art": "plan", "zeilen": [""], "symbol": "stern" },
+        { "art": "rueckblick" }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder benennen eigene Stärken, erfahren, was andere an ihnen schätzen, und zeigen eine Stärke eine Woche lang bewusst.",
+        "ablauf": [
+          "Einstieg (5 Min.): Einen Stern an die Tafel malen. Frage: „Was können Menschen gut, das man nicht sofort sieht?“ Sammeln: zuhören, warten, trösten.",
+          "Aufgabe 1 (5 Min.): Die Bilder gemeinsam benennen, dann kreuzt jedes Kind an.",
+          "Aufgabe 2 (10 Min.): Paare bilden. Jedes Kind nennt dem anderen eine Stärke. Satzanfang an der Tafel: „Ich finde, du kannst gut …“",
+          "Aufgabe 3: Jedes Kind wählt eine Stärke; die Lehrperson hilft beim Aufschreiben.",
+          "Die Woche über nachfragen: „Wo hast du heute deine Stärke gezeigt?“ Am Freitag die Sterne gemeinsam anschauen."
+        ],
+        "hintergrund": "Peterson und Seligman (2004) beschreiben 24 Charakterstärken wie Freundlichkeit, Mut, Humor oder Selbstkontrolle, die in vielen Kulturen geschätzt werden. Kinder nennen zuerst meist sichtbare Fähigkeiten wie Malen oder Rennen; das Blatt lenkt den Blick auch auf Stärken des Charakters. Rückmeldungen von Gleichaltrigen haben dabei besonderes Gewicht. Wer seine Stärken kennt und im Alltag einsetzt, erlebt sich als wirksam – eine wichtige Grundlage für Selbstwert und Widerstandskraft (Masten, 2014).",
+        "quellen": [
+          "Peterson, C. & Seligman, M. E. P. (2004). Character Strengths and Virtues. New York: Oxford University Press.",
+          "Masten, A. S. (2014). Ordinary Magic: Resilience in Development. New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Die Stärke in die Planzeile malen statt schreiben; Aufgabe 2 nur mündlich.",
+          "schwerer": "Zwei Stärken wählen und aufschreiben, wo man sie zeigen kann: in der Pause, in der Maison Relais, zu Hause."
+        },
+        "impulse": [
+          "Welche Stärke sieht man bei dir nicht sofort?",
+          "Wie fühlt es sich an, wenn jemand etwas Gutes über dich sagt?",
+          "Wo brauchst du deine Stärke am meisten?"
+        ],
+        "tipps": [
+          "Paare bewusst zusammenstellen, damit jedes Kind eine ernst gemeinte Rückmeldung bekommt; bei Bedarf selbst einspringen.",
+          "Rückmeldungen zum Aussehen („Du hast schöne Haare“) freundlich umlenken: „Und was kann sie gut?“"
+        ],
+        "achtung": "Wenn ein Kind keine Stärke nennen kann oder Rückmeldungen abwehrt: nicht drängen, sondern im Einzelgespräch konkrete Beobachtungen nennen. Bei anhaltend negativem Selbstbild die zuständige Leitung (Responsable) informieren.",
+        "material": "Buntstifte (Gelb für die Sterne)"
+      }
+    }
+  },
+  {
+    "id": "staerken-karten",
+    "bereich": "alltag",
+    "thema": "staerken",
+    "stufen": ["C3", "C4"],
+    "sozialform": ["einzeln", "gruppe", "klasse"],
+    "dauer": "45–60 Min.",
+    "eldib": ["K-19", "K-20", "K-28"],
+    "schlagworte": ["Charakterstärken", "Stärken", "Selbstwert", "Wertschätzung", "Karten", "Klassenklima"],
+    "bild": "figur:amira:froh:geben",
+    "verwandt": ["staerken-sterne", "mein-staerkenprofil"],
+    "de": {
+      "titel": "Stärken-Karten",
+      "untertitel": "Stärken sind mehr als Tore oder gute Noten. Auch Mut, Geduld oder Humor sind Stärken – und jeder Mensch hat seine eigene Mischung.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "text": "Forschende haben in vielen Kulturen nachgeschaut, welche Eigenschaften Menschen aneinander schätzen. Sie beschreiben 24 solche Stärken. 16 davon findest du auf den Karten auf Seite 2."
+        },
+        { "art": "aufgabe", "text": "Schneide die Karten aus. Suche die drei, die am besten zu dir passen.", "hinweis": "Schreibe zu jeder Stärke ein Beispiel: Wann zeigst du sie?", "symbole": ["schneiden", "schreiben"] },
+        {
+          "art": "tabelle",
+          "spalten": ["Meine Stärke", "Da zeige ich sie"],
+          "breiten": [1, 2.6],
+          "zeilen": 3,
+          "beispiel": ["Ausdauer", "Beim Seilspringen übe ich so lange, bis es klappt."]
+        },
+        { "art": "aufgabe", "text": "Stärken-Detektiv: Schenke zwei Kindern eine Karte, die gut zu ihnen passt.", "hinweis": "Sag dazu, wann du diese Stärke bei ihm oder ihr gesehen hast.", "symbole": ["gruppe", "sprechen"] },
+        {
+          "art": "tabelle",
+          "spalten": ["Für wen?", "Welche Stärke?", "Da habe ich sie gesehen"],
+          "breiten": [1, 1.2, 2.4],
+          "zeilen": 2,
+          "beispiel": ["Chiara", "Freundlichkeit", "Sie hat mir in der Pause ihre Jacke geliehen."]
+        },
+        { "art": "aufgabe", "text": "Welche Stärke möchtest du diese Woche öfter zeigen? Mach einen Plan.", "symbole": ["schreiben"] },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [{ "wenn": "Wenn in der Pause jemand allein herumsteht,", "dann": "frage ich: „Willst du mitspielen?“ (Freundlichkeit)" }]
+        },
+        { "art": "seitenumbruch" },
+        {
+          "art": "karten",
+          "spalten": 4,
+          "hoehe": 136,
+          "karten": [
+            { "titel": "Mut", "text": "Ich traue mich, auch wenn ich Angst habe.", "bild": "icon:shield" },
+            { "titel": "Ausdauer", "text": "Ich gebe nicht so schnell auf.", "bild": "icon:mountain" },
+            { "titel": "Ehrlichkeit", "text": "Ich bin ehrlich, auch wenn es schwerfällt.", "bild": "icon:circle-check" },
+            { "titel": "Freundlichkeit", "text": "Ich bin nett zu anderen und helfe gern.", "bild": "icon:heart" },
+            { "titel": "Fairness", "text": "Ich sorge dafür, dass alle mitmachen dürfen.", "bild": "motiv:waage" },
+            { "titel": "Teamgeist", "text": "In der Gruppe mache ich gut mit.", "bild": "icon:users-group" },
+            { "titel": "Neugier", "text": "Ich will wissen, wie Dinge funktionieren.", "bild": "icon:search" },
+            { "titel": "Kreativität", "text": "Ich habe eigene Ideen und probiere sie aus.", "bild": "icon:bulb" },
+            { "titel": "Humor", "text": "Ich mache Witze, aber ich lache niemanden aus.", "bild": "icon:mood-happy" },
+            { "titel": "Dankbarkeit", "text": "Ich merke, wenn mir jemand etwas Gutes tut.", "bild": "icon:gift" },
+            { "titel": "Verzeihen", "text": "Ich kann verzeihen, wenn sich jemand entschuldigt.", "bild": "icon:heart-handshake" },
+            { "titel": "Selbstkontrolle", "text": "Ich kann warten und mich bremsen.", "bild": "motiv:schildkroete" },
+            { "titel": "Mitgefühl", "text": "Ich merke, wie es anderen geht.", "bild": "icon:user-heart" },
+            { "titel": "Begeisterung", "text": "Ich mache Dinge mit viel Schwung.", "bild": "icon:rocket" },
+            { "titel": "Zuversicht", "text": "Ich glaube daran, dass es gut wird.", "bild": "icon:rainbow" },
+            { "titel": "Sinn für Schönes", "text": "Ich staune über Natur, Musik und Bilder.", "bild": "icon:flower" }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder lernen Charakterstärken in Kindersprache kennen, belegen ihre drei wichtigsten Stärken mit Beispielen aus dem Alltag und entdecken Stärken bei anderen.",
+        "ablauf": [
+          "Vorbereitung: Seite 2 einseitig, möglichst auf festes Papier kopieren.",
+          "Einstieg (5 Min.): „Was ist eine Stärke?“ Antworten sammeln und ergänzen: Stärken zeigen sich auch darin, wie wir mit anderen umgehen.",
+          "Karten ausschneiden und gemeinsam lesen (10 Min.); Wörter wie Zuversicht oder Selbstkontrolle klären.",
+          "Aufgabe 1 (10 Min.): Drei Stapel legen – „Das bin ich sehr“, „manchmal“, „das übe ich noch“ – und die Top 3 mit einem Beispiel aufschreiben.",
+          "Aufgabe 2 im Sitzkreis (15 Min.): Karten verschenken mit dem Satz „Ich schenke dir …, weil ich gesehen habe, wie du …“ Darauf achten, dass jedes Kind Karten bekommt.",
+          "Aufgabe 3: Plan für die Woche; am Freitag im Klassenrat nachfragen."
+        ],
+        "hintergrund": "Peterson und Seligman (2004) beschreiben 24 Charakterstärken, die sechs Tugenden zugeordnet sind, etwa Mut, Menschlichkeit und Gerechtigkeit. Die Karten zeigen 16 davon in Kindersprache. In einer Studie mit Erwachsenen steigerte es das Wohlbefinden über Monate, die eigenen Hauptstärken bewusst und auf neue Weise einzusetzen (Seligman et al., 2005). Für Kinder ist entscheidend, dass Stärken an konkretem Verhalten festgemacht werden: nicht „Du bist nett“, sondern „Du hast Jang geholfen, als er sein Heft vergessen hatte“.",
+        "quellen": [
+          "Peterson, C. & Seligman, M. E. P. (2004). Character Strengths and Virtues. New York: Oxford University Press.",
+          "Seligman, M. E. P., Steen, T. A., Park, N. & Peterson, C. (2005). Positive psychology progress: Empirical validation of interventions. American Psychologist, 60(5), 410–421."
+        ],
+        "differenzierung": {
+          "leichter": "Nur acht Karten verwenden und vorlesen; die Top 3 aufkleben statt aufschreiben.",
+          "schwerer": "Zu jeder Top-Stärke notieren, wann sie zu viel werden kann (z. B. Mut wird zu Leichtsinn) und was dann hilft."
+        },
+        "impulse": [
+          "Welche Stärke hast du bei jemandem entdeckt, die dir vorher nicht aufgefallen war?",
+          "Welche Stärken braucht unsere Klasse, damit sich alle wohlfühlen?"
+        ],
+        "tipps": [
+          "Die Lehrperson verschenkt am Ende selbst Karten – gezielt an Kinder, die wenige bekommen haben.",
+          "Die Karten in einem Umschlag aufbewahren; sie eignen sich auch für den Klassenrat oder Elterngespräche."
+        ],
+        "achtung": "Wenn Karten spöttisch verschenkt werden oder ein Kind leer ausgeht, sofort eingreifen. Kinder mit sehr negativem Selbstbild nicht vor der Gruppe drängen, sondern im Einzelgespräch begleiten; bei Bedarf die zuständige Leitung (Responsable) informieren.",
+        "material": "Schere, festes Papier für Seite 2, Umschläge"
+      }
+    }
+  },
+  {
+    "id": "mein-staerkenprofil",
+    "bereich": "alltag",
+    "thema": "staerken",
+    "stufen": ["ES"],
+    "sozialform": ["einzeln", "gruppe"],
+    "dauer": "45 Min.",
+    "eldib": ["SOZ-40", "K-34", "V-29"],
+    "schlagworte": ["Charakterstärken", "Signaturstärken", "Selbstbild", "Fremdbild", "Selbstwert", "Positive Psychologie"],
+    "bild": "icon:compass",
+    "verwandt": ["staerken-karten", "balance-finden"],
+    "de": {
+      "titel": "Mein Stärkenprofil",
+      "untertitel": "Stärken sind nicht nur Talente wie Zeichnen oder Fußball. Es geht auch darum, wie du denkst, handelst und mit anderen umgehst.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Charakterstärken",
+          "text": "Forschende haben untersucht, welche Eigenschaften in vielen Kulturen als wertvoll gelten, und 24 Charakterstärken beschrieben. Jeder Mensch hat alle – aber unterschiedlich stark. Die drei bis fünf stärksten nennt man Signaturstärken: Sie fühlen sich ‚typisch ich‘ an, und es gibt Energie, sie einzusetzen. Stärken sind nicht festgelegt: Wer sie nutzt, baut sie aus."
+        },
+        { "art": "aufgabe", "text": "Wie sehr beschreibt dich das?", "hinweis": "Denk an dein Verhalten in den letzten Wochen – in der Schule, zu Hause, in der Freizeit. Niemand hat alles." },
+        {
+          "art": "einschaetzung",
+          "optionen": ["passt genau", "teils", "kaum"],
+          "items": [
+            "Neugier – Ich frage nach, bis ich etwas verstehe.",
+            "Kreativität – Mir fallen oft neue Lösungen ein.",
+            "Urteilsvermögen – Ich prüfe Argumente, bevor ich urteile.",
+            "Mut – Ich stehe für etwas ein, auch gegen Widerstand.",
+            "Ausdauer – Was ich anfange, bringe ich zu Ende.",
+            "Ehrlichkeit – Ich bin ehrlich, auch wenn es unbequem ist.",
+            "Freundlichkeit – Ich helfe, ohne dass man mich bittet.",
+            "Einfühlungsvermögen – Ich spüre, wie es anderen geht.",
+            "Teamgeist – In Gruppen übernehme ich meinen Teil.",
+            "Fairness – Ich bin fair, auch zu Leuten, die ich nicht mag.",
+            "Führung – Ich kann eine Gruppe gut organisieren.",
+            "Vergeben – Ich gebe anderen eine zweite Chance.",
+            "Selbstkontrolle – Ich kann mich bremsen, wenn es nötig ist.",
+            "Dankbarkeit – Ich merke, was andere für mich tun.",
+            "Zuversicht – Ich glaube, dass sich Einsatz lohnt.",
+            "Humor – Ich sehe auch die lustige Seite der Dinge."
+          ]
+        },
+        { "art": "aufgabe", "text": "Wähle drei Stärken mit „passt genau“: deine Top 3. Woran sieht man sie im Alltag?" },
+        {
+          "art": "tabelle",
+          "spalten": ["Meine Stärke", "Ein Beispiel aus den letzten Wochen"],
+          "breiten": [1, 3],
+          "zeilen": 3,
+          "beispiel": ["Ausdauer", "Beim Training bin ich drangeblieben, obwohl ich wochenlang nur auf der Bank saß."]
+        },
+        { "art": "aufgabe", "text": "Frag eine Person, die dich gut kennt: „Welche Stärken siehst du bei mir?“", "hinweis": "Zum Beispiel eine Freundin, einen Trainer oder jemanden aus der Familie." },
+        { "art": "satzanfaenge", "items": ["Diese Person sieht bei mir: …", "Überrascht hat mich: …"], "linien": 2 },
+        { "art": "aufgabe", "text": "Setze eine deiner Top-Stärken eine Woche lang jeden Tag auf neue Weise ein.", "hinweis": "Kleine Schritte reichen. Das Beispiel zeigt, wie es gemeint ist." },
+        {
+          "art": "tabelle",
+          "spalten": ["Tag", "So habe ich meine Stärke neu eingesetzt"],
+          "breiten": [0.55, 4],
+          "zeilen": 5,
+          "beispiel": ["Mo", "Neugier: In der Kantine jemanden aus der Parallelklasse nach seinem Hobby gefragt."]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen schätzen ihre Charakterstärken ein, belegen die wichtigsten mit Beispielen aus dem Alltag, vergleichen Selbst- und Fremdbild und setzen eine Stärke eine Woche lang bewusst neu ein.",
+        "ablauf": [
+          "Einstieg (5 Min.): „Denkt an jemanden, den ihr bewundert – nicht wegen Aussehen oder Geld. Welche Eigenschaft ist es?“ Sammeln und den Begriff Charakterstärke einführen.",
+          "Info-Kasten lesen. Klären: Stärken zeigen sich im Verhalten und lassen sich entwickeln.",
+          "Aufgabe 1 einzeln (10 Min.): nach dem Verhalten der letzten Wochen ankreuzen, nicht nach dem Wunschbild.",
+          "Aufgabe 2 (10 Min.): Top 3 mit Beispielen; wer mag, tauscht sich zu zweit aus.",
+          "Aufgabe 3 bis zur nächsten Stunde: eine Person befragen, die einen gut kennt.",
+          "Aufgabe 4 starten; nach einer Woche kurz austauschen: Was war neu, was hat Energie gegeben?"
+        ],
+        "hintergrund": "Peterson und Seligman (2004) haben Philosophie, Religionen und Psychologie vieler Kulturen gesichtet und 24 Charakterstärken beschrieben, die sechs Tugenden zugeordnet sind. Stärken gelten nicht als feste Eigenschaften, sondern als Muster im Denken, Fühlen und Handeln, die sich entwickeln lassen. In einer randomisierten Studie verbesserte es Wohlbefinden und Stimmung über sechs Monate, eine Signaturstärke jeden Tag auf neue Weise einzusetzen (Seligman et al., 2005). Der Vergleich von Selbst- und Fremdbild stützt ein realistisches Selbstbild – gerade im Jugendalter, in dem die eigene Identität stark in Bewegung ist (Steinberg, 2014).",
+        "quellen": [
+          "Peterson, C. & Seligman, M. E. P. (2004). Character Strengths and Virtues. New York: Oxford University Press.",
+          "Seligman, M. E. P., Steen, T. A., Park, N. & Peterson, C. (2005). Positive psychology progress: Empirical validation of interventions. American Psychologist, 60(5), 410–421.",
+          "Steinberg, L. (2014). Age of Opportunity: Lessons from the New Science of Adolescence. Boston: Houghton Mifflin Harcourt."
+        ],
+        "differenzierung": {
+          "leichter": "Nur acht Aussagen bearbeiten; Beispiele gemeinsam an der Tafel sammeln.",
+          "schwerer": "Zu jeder Top-Stärke notieren, wann sie zu viel wird (z. B. Ehrlichkeit ohne Taktgefühl) und was dann hilft."
+        },
+        "impulse": [
+          "Welche Stärke zeigst du in der Schule – und welche eher außerhalb?",
+          "Wo unterscheidet sich dein Selbstbild von dem, was andere sehen?"
+        ],
+        "tipps": [
+          "Selbst ein Beispiel geben: die eigene Top-Stärke nennen und erzählen, wo sie im Unterricht sichtbar wird.",
+          "Das Profil in Gesprächen zur Berufsorientierung wieder aufgreifen."
+        ],
+        "achtung": "Jugendliche mit sehr negativem Selbstbild kreuzen oft fast überall „kaum“ an. Nicht vor der Gruppe darauf eingehen, sondern im Einzelgespräch konkrete Beobachtungen spiegeln. Bei Hinweisen auf anhaltende Niedergeschlagenheit den SePAS oder die zuständige Leitung (Responsable) einbeziehen."
+      }
+    },
+    "fr": {
+      "titel": "Mon profil de forces",
+      "untertitel": "Les forces ne sont pas seulement des talents comme le dessin ou le foot. Elles disent aussi comment tu penses, agis et te comportes avec les autres.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Les forces de caractère",
+          "text": "Des chercheurs ont étudié quelles qualités sont jugées précieuses dans de nombreuses cultures et ont décrit 24 forces de caractère. Chacun·e les possède toutes – mais à des degrés différents. Les trois à cinq plus fortes s’appellent forces signatures : elles donnent le sentiment d’être « vraiment moi », et les utiliser donne de l’énergie. Les forces ne sont pas figées : on les développe en s’en servant."
+        },
+        { "art": "aufgabe", "text": "Dans quelle mesure cela te décrit-il ?", "hinweis": "Pense à ton comportement des dernières semaines – à l’école, à la maison, pendant tes loisirs. Personne n’a tout." },
+        {
+          "art": "einschaetzung",
+          "optionen": ["tout à fait", "en partie", "peu"],
+          "items": [
+            "Curiosité – Je pose des questions jusqu’à ce que je comprenne.",
+            "Créativité – Je trouve souvent de nouvelles solutions.",
+            "Esprit critique – Je vérifie les arguments avant de juger.",
+            "Courage – Je défends mes convictions, même face à la résistance.",
+            "Persévérance – Ce que je commence, je le termine.",
+            "Honnêteté – Je reste honnête, même quand c’est inconfortable.",
+            "Gentillesse – J’aide sans qu’on me le demande.",
+            "Intelligence sociale – Je sens comment vont les autres.",
+            "Esprit d’équipe – Dans un groupe, je fais ma part.",
+            "Équité – Je suis juste, même avec ceux que je n’aime pas.",
+            "Leadership – Je sais bien organiser un groupe.",
+            "Pardon – Je laisse une deuxième chance aux autres.",
+            "Maîtrise de soi – Je sais me freiner quand il le faut.",
+            "Gratitude – Je remarque ce que les autres font pour moi.",
+            "Espoir – Je crois que l’effort en vaut la peine.",
+            "Humour – Je vois aussi le côté drôle des choses."
+          ]
+        },
+        { "art": "aufgabe", "text": "Choisis trois forces cochées « tout à fait » : ton top 3. À quoi les voit-on au quotidien ?" },
+        {
+          "art": "tabelle",
+          "spalten": ["Ma force", "Un exemple des dernières semaines"],
+          "breiten": [1, 3],
+          "zeilen": 3,
+          "beispiel": ["Persévérance", "À l’entraînement, j’ai tenu bon, même si je suis resté·e des semaines sur le banc."]
+        },
+        { "art": "aufgabe", "text": "Demande à une personne qui te connaît bien : « Quelles forces vois-tu chez moi ? »", "hinweis": "Par exemple une amie, un entraîneur ou quelqu’un de ta famille." },
+        { "art": "satzanfaenge", "items": ["Cette personne voit chez moi : …", "Ce qui m’a surpris·e : …"], "linien": 2 },
+        { "art": "aufgabe", "text": "Pendant une semaine, utilise chaque jour une de tes forces principales d’une nouvelle manière.", "hinweis": "De petits pas suffisent. L’exemple montre comment faire." },
+        {
+          "art": "tabelle",
+          "spalten": ["Jour", "Comment j’ai utilisé ma force autrement"],
+          "breiten": [0.55, 4],
+          "zeilen": 5,
+          "beispiel": ["Lu", "Curiosité : à la cantine, j’ai demandé à un·e élève d’une autre classe quel était son passe-temps."]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes évaluent leurs forces de caractère, les illustrent par des exemples du quotidien, comparent image de soi et regard des autres, puis utilisent une force autrement pendant une semaine.",
+        "ablauf": [
+          "Entrée en matière (5 min) : « Pensez à quelqu’un que vous admirez – pas pour son apparence. Quelle qualité est-ce ? » Introduire la notion de force de caractère.",
+          "Lire l’encadré. Préciser : les forces se voient dans le comportement et peuvent se développer.",
+          "Exercice 1 individuellement (10 min) : cocher d’après le comportement réel, pas d’après l’image idéale.",
+          "Exercice 2 (10 min) : top 3 avec exemples, puis échange à deux pour qui le souhaite.",
+          "Exercice 3 pour la séance suivante : interroger une personne qui nous connaît bien.",
+          "Lancer l’exercice 4. Une semaine plus tard, bref échange : qu’est-ce qui était nouveau, qu’est-ce qui a donné de l’énergie ?"
+        ],
+        "hintergrund": "Peterson et Seligman (2004) ont passé en revue la philosophie, les religions et la psychologie de nombreuses cultures et décrit 24 forces de caractère, regroupées en six vertus. Les forces ne sont pas des traits figés, mais des manières de penser, de ressentir et d’agir qui peuvent se développer. Dans une étude randomisée, utiliser chaque jour une force signature d’une nouvelle manière a amélioré le bien-être et l’humeur pendant six mois (Seligman et al., 2005). Comparer l’image de soi à celle que renvoient les autres favorise une image de soi réaliste – surtout à l’adolescence, quand l’identité est en pleine construction (Steinberg, 2014).",
+        "quellen": [
+          "Peterson, C. & Seligman, M. E. P. (2004). Character Strengths and Virtues. New York: Oxford University Press.",
+          "Seligman, M. E. P., Steen, T. A., Park, N. & Peterson, C. (2005). Positive psychology progress: Empirical validation of interventions. American Psychologist, 60(5), 410–421.",
+          "Steinberg, L. (2014). Age of Opportunity: Lessons from the New Science of Adolescence. Boston: Houghton Mifflin Harcourt."
+        ],
+        "differenzierung": {
+          "leichter": "Ne traiter que huit affirmations et recueillir des exemples ensemble au tableau.",
+          "schwerer": "Pour chaque force principale, noter quand elle devient excessive (p. ex. l’honnêteté sans tact) et ce qui aide alors."
+        },
+        "impulse": [
+          "Quelle force montres-tu à l’école – et laquelle plutôt en dehors ?",
+          "En quoi ton image de toi diffère-t-elle de ce que voient les autres ?"
+        ],
+        "tipps": [
+          "Donner soi-même un exemple : nommer sa propre force principale et dire où elle se voit en classe.",
+          "Reprendre le profil lors des entretiens d’orientation professionnelle."
+        ],
+        "achtung": "Les jeunes qui ont une image très négative d’eux-mêmes cochent souvent « peu » presque partout. Ne pas le relever devant le groupe, mais refléter des observations concrètes en entretien individuel. En cas de signes d’abattement durable, impliquer le SePAS ou la direction compétente (responsable)."
+      }
+    }
+  },
+  {
+    "id": "was-tut-mir-gut",
+    "bereich": "alltag",
+    "thema": "wohlbefinden",
+    "stufen": ["C2"],
+    "sozialform": ["einzeln", "klasse"],
+    "dauer": "30 Min.",
+    "eldib": ["K-15", "V-13", "K-26"],
+    "schlagworte": ["Wohlbefinden", "Selbstfürsorge", "Bewegung", "Ruhe", "Schlaf", "Kraftquellen"],
+    "bild": "icon:user-heart",
+    "verwandt": ["energie-batterie"],
+    "de": {
+      "titel": "Was tut mir gut?",
+      "untertitel": "Jeder Mensch braucht Dinge, die ihm guttun. Manches macht froh, manches macht ruhig.",
+      "bausteine": [
+        { "art": "aufgabe", "text": "Was tut dir gut? Kreise ein.", "symbole": ["einkreisen"] },
+        {
+          "art": "bilder",
+          "modus": "einkreisen",
+          "spalten": 4,
+          "bilder": [
+            { "bild": "icon:run", "text": "rennen" },
+            { "bild": "icon:tree", "text": "draußen sein" },
+            { "bild": "icon:pillow", "text": "ausruhen" },
+            { "bild": "icon:bed", "text": "schlafen" },
+            { "bild": "icon:puzzle", "text": "spielen" },
+            { "bild": "icon:friends", "text": "Freunde" },
+            { "bild": "icon:apple", "text": "Obst essen" },
+            { "bild": "icon:bottle", "text": "Wasser trinken" }
+          ]
+        },
+        { "art": "aufgabe", "text": "Deine Wohlfühl-Hand: Was tut dir gut?", "hinweis": "Schreibe oder male zu jedem Finger etwas. Kreise dann ein, was du heute noch machst.", "symbole": ["schreiben", "malen"] },
+        { "art": "hand", "finger": ["Bewegung", "Ruhe", "Menschen", "Essen und Trinken", "Spielen"] }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder lernen fünf Bereiche kennen, die zum Wohlbefinden beitragen – Bewegung, Ruhe, Menschen, Essen und Trinken, Spielen – und legen eine eigene Liste an, was ihnen guttut.",
+        "ablauf": [
+          "Einstieg im Sitzkreis (5 Min.): „Denk an einen schönen Nachmittag. Was hat dir gutgetan?“ Einige Antworten sammeln.",
+          "Aufgabe 1: Die Bilder gemeinsam benennen; jedes Kind kreist ein, was ihm guttut. Nachfragen: „Wann tut dir das gut – nach der Schule, am Wochenende, wenn du traurig bist?“",
+          "Die fünf Bereiche an die Tafel schreiben und zu jedem ein Beispiel aus der Klasse notieren.",
+          "Aufgabe 2 (10 Min.): Jedes Kind füllt seine Wohlfühl-Hand aus – schreibend oder malend.",
+          "Abschluss: Jedes Kind kreist einen Finger ein, den es heute noch umsetzt. Am nächsten Tag kurz nachfragen."
+        ],
+        "hintergrund": "Wohlbefinden entsteht nicht nur, wenn Belastungen fehlen, sondern auch durch Kraftquellen, die ein Mensch kennt und nutzen kann – ein Grundgedanke der Salutogenese (Antonovsky, 1987). Für Kinder im Grundschulalter sind das vor allem Bewegung, Spiel, verlässliche Beziehungen und genug Schlaf: Kinder zwischen 6 und 12 Jahren brauchen 9 bis 12 Stunden pro Nacht (Paruthi et al., 2016). Wer früh lernt, eigene Kraftquellen zu benennen, kann sie später gezielter nutzen, wenn es schwierig wird.",
+        "quellen": [
+          "Antonovsky, A. (1987). Unraveling the Mystery of Health. San Francisco: Jossey-Bass.",
+          "Paruthi, S. et al. (2016). Recommended amount of sleep for pediatric populations: A consensus statement of the American Academy of Sleep Medicine. Journal of Clinical Sleep Medicine, 12(6), 785–786."
+        ],
+        "differenzierung": {
+          "leichter": "Zu jedem Finger ein kleines Bild malen; die Lehrperson schreibt ein Wort dazu.",
+          "schwerer": "Zu jedem Finger notieren, wann es besonders hilft, z. B. „Rennen, wenn ich wütend bin“."
+        },
+        "impulse": [
+          "Was tut dir gut, wenn du traurig bist?",
+          "Was tut dir gut, wenn du wütend bist?",
+          "Was kannst du in der Pause tun, damit es dir gut geht?"
+        ],
+        "tipps": [
+          "Die Hand in der Klasse aufhängen und in schwierigen Momenten darauf zeigen: „Was davon brauchst du jetzt?“",
+          "Nicht bewerten, was einem Kind guttut (z. B. Fernsehen), aber gemeinsam Ideen ohne Bildschirm ergänzen."
+        ],
+        "achtung": "Wenn ein Kind kaum etwas findet, das ihm guttut, oft müde oder hungrig wirkt oder von Sorgen zu Hause erzählt: nicht im Plenum vertiefen, sondern im Einzelgespräch nachfragen und die zuständige Leitung (Responsable) informieren.",
+        "material": "Buntstifte"
+      }
+    }
+  },
+  {
+    "id": "energie-batterie",
+    "bereich": "alltag",
+    "thema": "wohlbefinden",
+    "stufen": ["C3", "C4"],
+    "sozialform": ["einzeln", "klasse"],
+    "dauer": "45 Min.",
+    "eldib": ["K-29", "V-18", "V-29"],
+    "schlagworte": ["Energie", "Erholung", "Ausgleich", "Schlaf", "Wochenplan", "Wohlbefinden"],
+    "bild": "motiv:batterie",
+    "verwandt": ["was-tut-mir-gut", "balance-finden"],
+    "de": {
+      "titel": "Meine Energie-Batterie",
+      "untertitel": "Wie ein Handy braucht auch dein Körper Energie. Manches lädt dich auf, anderes kostet Kraft. Wer beides kennt, kann gut für sich sorgen.",
+      "bausteine": [
+        { "art": "aufgabe", "text": "Lies die Geschichte. Unterstreiche rot, was Diogo Kraft kostet, und grün, was ihn auflädt.", "symbole": ["lesen"] },
+        {
+          "art": "geschichte",
+          "titel": "Ein langer Montag",
+          "text": "Am Montag hat Diogo bis 16 Uhr Schule, danach Fußballtraining. Abends spielt er noch lange am Tablet und schläft erst um zehn ein. Am Dienstag ist er schon in der ersten Stunde müde. In der Pause streitet er mit Luca wegen einer Kleinigkeit. Nach der Schule geht er mit seinem Hund in den Wald. Abends liest er einen Comic und geht früh schlafen. Am Mittwoch fühlt er sich wieder fit.",
+          "bild": "figur:noah:muede"
+        },
+        { "art": "aufgabe", "text": "Wie voll ist deine Batterie heute? Kreise ein.", "symbole": ["einkreisen"] },
+        {
+          "art": "bilder",
+          "modus": "einkreisen",
+          "spalten": 3,
+          "bilder": [
+            { "bild": "motiv:batterie-leer", "text": "fast leer" },
+            { "bild": "motiv:batterie", "text": "halb voll" },
+            { "bild": "motiv:batterie-voll", "text": "voll" }
+          ]
+        },
+        { "art": "aufgabe", "text": "Was lädt dich auf? Was kostet dich Kraft?", "hinweis": "Denk an Schule, Pause, Maison Relais, zu Hause und Freizeit.", "symbole": ["schreiben"] },
+        { "art": "batterie", "laden": "Das lädt mich auf", "leeren": "Das kostet mich Kraft", "linien": 4 },
+        { "art": "aufgabe", "text": "Schnell aufladen: Was hilft dir, wenn deine Batterie fast leer ist? Kreuze an.", "symbole": ["ankreuzen"] },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "items": [
+            "ein Glas Wasser trinken",
+            "kurz an die frische Luft gehen",
+            "fünf Minuten einfach nichts tun",
+            "etwas Kleines essen, z. B. einen Apfel",
+            "mit jemandem reden oder lachen",
+            "mich strecken und bewegen",
+            "Musik hören",
+            "heute früher ins Bett gehen"
+          ],
+          "frei": 2
+        },
+        { "art": "aufgabe", "text": "Plane deine Woche: Wo wird es anstrengend? Was lädt dich danach wieder auf?", "hinweis": "Trage zuerst die anstrengenden Dinge ein, dann den Ausgleich.", "symbole": ["schreiben"] },
+        {
+          "art": "tabelle",
+          "spalten": ["Tag", "Das wird anstrengend", "Das lädt mich danach auf"],
+          "breiten": [0.8, 2, 2],
+          "zeilen": 5,
+          "beispiel": ["Montag", "Schule bis 16 Uhr, danach Training", "Tablet um 19 Uhr weglegen, um 20.30 Uhr ins Bett"]
+        },
+        { "art": "rueckblick" }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder erkennen, was ihnen Energie gibt und was Kraft kostet, kennen schnelle Wege zum Aufladen und planen für eine Woche Ausgleich nach anstrengenden Tagen.",
+        "ablauf": [
+          "Einstieg (5 Min.): Ein Handy mit fast leerem Akku zeigen. Frage: „Woran merkst du, dass deine eigene Batterie leer wird?“ Sammeln: müde, gereizt, unkonzentriert, Kopfweh.",
+          "Geschichte lesen, Aufgabe 1 (5 Min.). Besprechen: Das Training kann Energie geben und kosten – beides ist möglich.",
+          "Aufgaben 2 und 3 einzeln (10 Min.).",
+          "Aufgabe 4: Ideen vergleichen; jedes Kind übernimmt eine neue Idee von einem anderen Kind.",
+          "Aufgabe 5 (10 Min.): Wochenplan ausfüllen – zuerst die anstrengenden Termine, dann den Ausgleich.",
+          "Nach einer Woche nachfragen: Was hat geklappt? Wer musste den Plan ändern?"
+        ],
+        "hintergrund": "Das Bild der Batterie macht einen Grundgedanken der Salutogenese greifbar: Wie es uns geht, hängt nicht nur von Belastungen ab, sondern auch von den Kraftquellen, mit denen wir sie ausgleichen (Antonovsky, 1987). Für Kinder zählen dazu vor allem Schlaf, Bewegung, Spiel und gute Beziehungen. Kinder zwischen 6 und 12 Jahren brauchen 9 bis 12 Stunden Schlaf (Paruthi et al., 2016); spätes Spielen am Bildschirm kann das Einschlafen verzögern. Angenehme Tätigkeiten bewusst einzuplanen, statt auf gute Laune zu warten, ist auch ein Baustein der dialektisch-behavioralen Therapie (Linehan, 2015).",
+        "quellen": [
+          "Antonovsky, A. (1987). Unraveling the Mystery of Health. San Francisco: Jossey-Bass.",
+          "Paruthi, S. et al. (2016). Recommended amount of sleep for pediatric populations: A consensus statement of the American Academy of Sleep Medicine. Journal of Clinical Sleep Medicine, 12(6), 785–786.",
+          "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Die Batterie mit Bildern statt Wörtern füllen; den Wochenplan nur für zwei Tage ausfüllen.",
+          "schwerer": "Zusätzlich notieren: Woran merke ich früh, dass meine Batterie leer wird – im Körper, in der Laune, in den Gedanken?"
+        },
+        "impulse": [
+          "Kann etwas gleichzeitig Energie geben und kosten?",
+          "Was lädt dich in fünf Minuten auf – und was braucht einen ganzen Nachmittag?",
+          "Was lädt dich auf, ganz ohne Bildschirm?"
+        ],
+        "tipps": [
+          "Die Batterie als kurzes Ritual nutzen: morgens und nach der Pause mit den Fingern zeigen lassen, wie voll sie ist (1 bis 5).",
+          "Bildschirmzeit nicht verteufeln: Es geht um Ausgleich, nicht um Verbote."
+        ],
+        "achtung": "Wenn ein Kind dauerhaft erschöpft wirkt oder von zu wenig Schlaf, Hunger oder großen Belastungen zu Hause erzählt: nicht im Plenum vertiefen, sondern das Einzelgespräch suchen und die zuständige Leitung (Responsable) informieren.",
+        "material": "Rote und grüne Stifte"
+      }
+    }
+  },
+  {
+    "id": "balance-finden",
+    "bereich": "alltag",
+    "thema": "wohlbefinden",
+    "stufen": ["ES"],
+    "sozialform": ["einzeln", "klasse"],
+    "dauer": "45–50 Min.",
+    "eldib": ["V-33", "V-29", "K-26"],
+    "schlagworte": ["Stress", "Ausgleich", "Ressourcen", "Warnsignale", "Salutogenese", "Selbstfürsorge", "Schlaf"],
+    "bild": "motiv:waage",
+    "verwandt": ["energie-batterie", "mein-staerkenprofil"],
+    "de": {
+      "titel": "Balance finden: Stress und Ausgleich",
+      "untertitel": "Stress gehört zum Leben – vor Prüfungen, bei Streit, wenn vieles gleichzeitig kommt. Entscheidend ist, ob genug Ausgleich da ist.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Belastungen und Ressourcen",
+          "text": "Gesundheit ist kein Entweder-oder. Wir bewegen uns ständig zwischen ‚Mir geht es gut‘ und ‚Mir geht es schlecht‘. Belastungen ziehen in die eine Richtung, Ressourcen in die andere: Schlaf, Bewegung, Menschen, die zu dir halten, Hobbys, Humor – und das Gefühl, die Dinge im Griff zu haben. Schwierig wird Stress vor allem, wenn er lange anhält und der Ausgleich fehlt."
+        },
+        { "art": "aufgabe", "text": "Was belastet dich zurzeit? Was gibt dir Kraft?", "hinweis": "Stichworte reichen. Schreib nur auf, was du aufschreiben möchtest." },
+        { "art": "waage", "links": "Das belastet mich", "rechts": "Das gibt mir Kraft", "zeilen": 4 },
+        { "art": "aufgabe", "text": "Woran merkst du, dass es zu viel wird? Kreuze deine Warnsignale an." },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "items": [
+            "Ich schlafe schlecht.",
+            "Ich bin ständig müde.",
+            "Ich habe öfter Kopf- oder Bauchweh.",
+            "Ich bin schnell gereizt.",
+            "Ich kann mich kaum konzentrieren.",
+            "Ich grüble viel und komme nicht zur Ruhe.",
+            "Ich ziehe mich von anderen zurück.",
+            "Ich esse viel mehr oder weniger als sonst.",
+            "Ich hänge mehr am Handy, um abzuschalten.",
+            "Mir macht kaum noch etwas Spaß."
+          ],
+          "frei": 2
+        },
+        { "art": "aufgabe", "text": "Deine Stress-Ampel: Was tust du in welchem Bereich?", "hinweis": "Fang unten bei Grün an." },
+        {
+          "art": "ampel",
+          "stufen": [
+            { "titel": "Rot: Es ist zu viel.", "text": "Warnsignale halten an, nichts hilft mehr. Ich spreche mit:" },
+            { "titel": "Gelb: Es wird eng.", "text": "Erste Warnsignale. Das hilft mir, wieder runterzukommen:" },
+            { "titel": "Grün: Ich bin im Gleichgewicht.", "text": "Das tue ich, damit es so bleibt:" }
+          ],
+          "linien": 2
+        },
+        { "art": "aufgabe", "text": "Plane eine Woche mit Ausgleich. Hake jeden Abend ab, was geklappt hat." },
+        {
+          "art": "plan",
+          "tage": ["Mo", "Di", "Mi", "Do", "Fr", "Sa", "So"],
+          "zeilen": ["Mindestens 8 Stunden geschlafen", "30 Minuten bewegt", "Zeit mit jemandem, der mir guttut", "Handy eine Stunde vor dem Schlafen weg", ""],
+          "symbol": "kasten"
+        },
+        { "art": "notfall" }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen unterscheiden Belastungen und Ressourcen, erkennen ihre persönlichen Warnsignale, legen für jeden Bereich ihrer Stress-Ampel Schritte fest und planen eine Woche mit Ausgleich.",
+        "ablauf": [
+          "Einstieg (5 Min.): „Was stresst Jugendliche in eurem Alter am meisten?“ Anonym auf Zettel schreiben und vorlesen lassen.",
+          "Info-Kasten lesen, die Waage erklären: Stress lässt sich nicht immer vermeiden, aber ausgleichen.",
+          "Aufgaben 1 und 2 einzeln (10 Min.); niemand muss vorlesen.",
+          "Aufgabe 3 (10 Min.): Ampel ausfüllen; beim roten Bereich klären, wo es im Lycée Hilfe gibt (SePAS, Vertrauenslehrkraft).",
+          "Aufgabe 4 starten; nach einer Woche zu zweit austauschen.",
+          "Auf die Hilfenummern hinweisen; wer mag, speichert sie im Handy."
+        ],
+        "hintergrund": "Die Salutogenese fragt nicht nur, was krank macht, sondern was gesund hält (Antonovsky, 1987). Menschen bewegen sich auf einem Kontinuum zwischen Gesundheit und Krankheit. Widerstandsressourcen wie soziale Unterstützung, Schlaf und Bewegung sowie das Gefühl, Anforderungen verstehen, bewältigen und als sinnvoll erleben zu können, halten die Balance. Jugendliche brauchen 8 bis 10 Stunden Schlaf (Paruthi et al., 2016). Die Stress-Ampel verbindet frühe Warnsignale mit vorab geplanten Schritten – wie Fertigkeitentrainings für Jugendliche, die Selbstfürsorge über Schlaf, Ernährung und Bewegung stärken (Rathus & Miller, 2015).",
+        "quellen": [
+          "Antonovsky, A. (1987). Unraveling the Mystery of Health. San Francisco: Jossey-Bass.",
+          "Paruthi, S. et al. (2016). Recommended amount of sleep for pediatric populations: A consensus statement of the American Academy of Sleep Medicine. Journal of Clinical Sleep Medicine, 12(6), 785–786.",
+          "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Statt der Waage zwei kurze Listen mit je drei Einträgen; die Ampel mündlich besprechen.",
+          "schwerer": "Zur Waage ergänzen: Welche Belastung kann ich verändern, welche nicht? Für eine veränderbare einen ersten Schritt planen."
+        },
+        "impulse": [
+          "Welche Warnsignale bemerken andere bei dir früher als du selbst?",
+          "Welche Kraftquelle hast du zuletzt vernachlässigt?"
+        ],
+        "tipps": [
+          "Vor Prüfungsphasen die Ampel wieder hervorholen.",
+          "Eigene Ausgleichsstrategien kurz erwähnen – das macht das Thema normal."
+        ],
+        "achtung": "Anhaltende Überlastung, Rückzug, Schlaf- oder Essprobleme, Hoffnungslosigkeit: im Einzelgespräch ansprechen, SePAS und zuständige Leitung (Responsable) informieren. Hinweise auf Selbstverletzung oder Suizidgedanken: sofort nach dem internen Ablauf handeln, die Person nicht allein lassen."
+      }
+    },
+    "fr": {
+      "titel": "Trouver l’équilibre : stress et ressources",
+      "untertitel": "Le stress fait partie de la vie : examens, disputes, trop de choses à la fois. L’essentiel, c’est d’avoir de quoi compenser.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Tensions et ressources",
+          "text": "La santé n’est pas une question de tout ou rien. Nous nous déplaçons sans cesse entre « ça va bien » et « ça ne va pas ». Les tensions tirent d’un côté, les ressources de l’autre : le sommeil, le mouvement, des personnes qui te soutiennent, tes loisirs, l’humour – et le sentiment de maîtriser les choses. Le stress devient surtout un problème quand il dure longtemps sans compensation."
+        },
+        { "art": "aufgabe", "text": "Qu’est-ce qui te pèse en ce moment ? Qu’est-ce qui te donne de la force ?", "hinweis": "Des mots-clés suffisent. N’écris que ce que tu veux bien écrire." },
+        { "art": "waage", "links": "Ce qui me pèse", "rechts": "Ce qui me donne de la force", "zeilen": 4 },
+        { "art": "aufgabe", "text": "À quoi remarques-tu que c’est trop ? Coche tes signaux d’alerte." },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "items": [
+            "Je dors mal.",
+            "Je suis tout le temps fatigué·e.",
+            "J’ai souvent mal à la tête ou au ventre.",
+            "Je suis vite irritable.",
+            "J’ai du mal à me concentrer.",
+            "Je rumine et je n’arrive pas à me calmer.",
+            "Je me replie sur moi-même.",
+            "Je mange beaucoup plus ou moins que d’habitude.",
+            "Je suis plus sur mon téléphone pour décrocher.",
+            "Presque plus rien ne me fait plaisir."
+          ],
+          "frei": 2
+        },
+        { "art": "aufgabe", "text": "Ton feu tricolore du stress : que fais-tu dans chaque zone ?", "hinweis": "Commence en bas, par le vert." },
+        {
+          "art": "ampel",
+          "stufen": [
+            { "titel": "Rouge : c’est trop.", "text": "Les signaux durent, plus rien n’aide. J’en parle à :" },
+            { "titel": "Orange : ça devient serré.", "text": "Premiers signaux. Ce qui m’aide à redescendre :" },
+            { "titel": "Vert : je suis en équilibre.", "text": "Ce que je fais pour que ça dure :" }
+          ],
+          "linien": 2
+        },
+        { "art": "aufgabe", "text": "Planifie une semaine équilibrée. Coche chaque soir ce qui a marché." },
+        {
+          "art": "plan",
+          "tage": ["Lu", "Ma", "Me", "Je", "Ve", "Sa", "Di"],
+          "zeilen": ["Dormi au moins 8 heures", "Bougé 30 minutes", "Du temps avec quelqu’un qui me fait du bien", "Téléphone rangé une heure avant de dormir", ""],
+          "symbol": "kasten"
+        },
+        { "art": "notfall" }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes distinguent tensions et ressources, repèrent leurs signaux d’alerte, définissent des actions pour chaque zone de leur feu tricolore du stress et planifient une semaine équilibrée.",
+        "ablauf": [
+          "Entrée en matière (5 min) : « Qu’est-ce qui stresse le plus les jeunes de votre âge ? » Faire écrire les réponses anonymement, puis les lire.",
+          "Lire l’encadré, expliquer la balance : on ne peut pas toujours éviter le stress, mais on peut le compenser.",
+          "Exercices 1 et 2 individuellement (10 min), sans lecture à voix haute.",
+          "Exercice 3 (10 min) : remplir le feu tricolore. Pour la zone rouge, préciser où trouver de l’aide au lycée (SePAS, enseignant·e de confiance).",
+          "Lancer l’exercice 4, puis échanger à deux une semaine plus tard.",
+          "Présenter les numéros d’aide – qui le souhaite les enregistre dans son téléphone."
+        ],
+        "hintergrund": "La salutogenèse ne se demande pas seulement ce qui rend malade, mais aussi ce qui maintient en bonne santé (Antonovsky, 1987). Nous nous situons sur un continuum entre santé et maladie. Des ressources de résistance comme le soutien social, le sommeil et l’activité physique, ainsi que le sentiment de pouvoir comprendre les exigences, y faire face et leur donner un sens, maintiennent l’équilibre. Les adolescent·e·s ont besoin de 8 à 10 heures de sommeil (Paruthi et al., 2016). Le feu tricolore relie les premiers signaux à des actions prévues à l’avance – comme les entraînements aux compétences pour adolescent·e·s qui renforcent sommeil, alimentation et activité physique (Rathus & Miller, 2015).",
+        "quellen": [
+          "Antonovsky, A. (1987). Unraveling the Mystery of Health. San Francisco: Jossey-Bass.",
+          "Paruthi, S. et al. (2016). Recommended amount of sleep for pediatric populations: A consensus statement of the American Academy of Sleep Medicine. Journal of Clinical Sleep Medicine, 12(6), 785–786.",
+          "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Remplacer la balance par deux listes de trois éléments et discuter du feu tricolore à l’oral.",
+          "schwerer": "Compléter la balance : quelle tension puis-je changer, laquelle non ? Planifier une première étape pour une tension modifiable."
+        },
+        "impulse": [
+          "Quels signaux d’alerte les autres remarquent-ils chez toi avant toi ?",
+          "Quelle ressource as-tu négligée ces derniers temps ?"
+        ],
+        "tipps": [
+          "Ressortir le feu tricolore avant les périodes d’examens.",
+          "Évoquer brièvement ses propres stratégies de récupération – cela rend le sujet normal."
+        ],
+        "achtung": "Surcharge durable, repli, troubles du sommeil ou de l’alimentation, désespoir : en parler en entretien individuel, informer le SePAS et la direction compétente (responsable). Signes d’automutilation ou idées suicidaires : agir immédiatement selon la procédure interne, ne pas laisser la personne seule."
+      }
+    }
+  }
+]

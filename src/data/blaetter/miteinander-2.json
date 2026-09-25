@@ -1,0 +1,2591 @@
+[
+  {
+    "id": "das-ist-nicht-fair",
+    "bereich": "miteinander",
+    "thema": "mobbing",
+    "stufen": [
+      "C2"
+    ],
+    "sozialform": [
+      "klasse",
+      "einzeln"
+    ],
+    "dauer": "30 Min.",
+    "eldib": [
+      "SOZ-21",
+      "K-12",
+      "V-18"
+    ],
+    "schlagworte": [
+      "Petzen",
+      "Hilfe holen",
+      "Ärgern",
+      "Mobbing",
+      "Vertrauensperson"
+    ],
+    "bild": "icon:hand-stop",
+    "de": {
+      "titel": "Das ist nicht fair – Hilfe holen",
+      "untertitel": "Wird ein Kind immer wieder geärgert, darfst du Hilfe holen.",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "Die Mütze",
+          "text": "Jeden Morgen im Schulbus nimmt Tiago die Mütze von Inês. Er wirft sie nach hinten, und alle lachen. Inês sagt: „Hör auf!“ Aber Tiago macht weiter. Inês denkt: „Wenn ich es sage, bin ich eine Petze.“",
+          "bild": "figur:mia:traurig"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Inês erzählt es der Lehrerin. Was meinst du? Kreuze an.",
+          "symbole": [
+            "lesen",
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "items": [
+            "Das ist Petzen.",
+            "Das ist Hilfe holen."
+          ],
+          "spalten": 2
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Petzen oder Hilfe holen?",
+          "text": "Petzen: Du willst, dass jemand Ärger bekommt. Hilfe holen: Du willst, dass es aufhört. Hol immer Hilfe bei einem Erwachsenen, wenn …",
+          "punkte": [
+            "es immer wieder passiert.",
+            "jemand verletzt ist oder Angst hat.",
+            "du es allein nicht schaffst."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Hilfe holen oder selbst klären? Kreuze an.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "Hilfe holen",
+            "selbst klären"
+          ],
+          "items": [
+            "Ein Kind drängelt sich einmal vor.",
+            "Ein Kind wird jeden Tag ausgelacht.",
+            "Dein Freund will nicht tauschen.",
+            "Große nehmen einem Kleinen den Ball weg."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wem kannst du es sagen? Schreibe Namen auf.",
+          "hinweis": "So kannst du es sagen: „Das passiert jeden Tag. Bitte hilf mir.“",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "spalten",
+          "links": [
+            {
+              "art": "satzanfaenge",
+              "items": [
+                "In der Schule:"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "satzanfaenge",
+              "items": [
+                "Zu Hause:"
+              ]
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder unterscheiden Petzen von Hilfe holen, erkennen, wann ein Erwachsener gebraucht wird, und benennen Menschen, denen sie sich anvertrauen können.",
+        "ablauf": [
+          "Einstieg (5 Min.): Die Geschichte vorlesen. Fragen: „Wie geht es Inês? Warum sagt sie niemandem etwas?“",
+          "Aufgabe 1 per Handzeichen, ohne zu bewerten. Dann den Merke-Kasten gemeinsam lesen.",
+          "Aufgabe 2 zu zweit. Im Plenum begründen: „Woran merkst du, dass ein Erwachsener helfen muss?“",
+          "Aufgabe 3: Namen aufschreiben. Den Satz aus dem Hinweis gemeinsam laut üben – leise und mit fester Stimme.",
+          "Abschluss: Zusagen, dass jede Meldung ernst genommen wird – und das im Alltag einlösen."
+        ],
+        "hintergrund": "Viele Kinder schweigen, wenn sie oder andere geärgert werden – aus Angst, als „Petze“ zu gelten, oder weil danach nichts passiert ist. Olweus (1993) beschreibt Mobbing als wiederholte, absichtliche Angriffe auf ein Kind, das sich kaum wehren kann. An diesen Merkmalen erkennen schon jüngere Kinder, wann Erwachsene gebraucht werden. Die Regel „Petzen will Ärger machen, Hilfe holen will, dass es aufhört“ nimmt ihnen die Scheu. Entscheidend ist die Reaktion der Erwachsenen: Wird eine Meldung als Petzen abgetan, lernen Kinder zu schweigen. Weil Mobbing in der Gruppe geschieht (Salmivalli et al., 1996), sollen gerade Zuschauende ermutigt werden, Hilfe zu holen.",
+        "quellen": [
+          "Olweus, D. (1993). Bullying at School: What We Know and What We Can Do. Oxford: Blackwell.",
+          "Salmivalli, C., Lagerspetz, K., Björkqvist, K., Österman, K. & Kaukiainen, A. (1996). Bullying as a group process: Participant roles and their relations to social status within the group. Aggressive Behavior, 22(1), 1–15."
+        ],
+        "differenzierung": {
+          "leichter": "Aufgabe 2 mündlich mit Daumen hoch oder runter lösen; in Aufgabe 3 zeichnen statt schreiben.",
+          "schwerer": "Eigene Beispiele für beide Spalten erfinden und der Klasse als Rätsel stellen."
+        },
+        "impulse": [
+          "Was kannst du selbst sagen, bevor du Hilfe holst?",
+          "Was tust du, wenn der erste Erwachsene keine Zeit hat?",
+          "Wie fühlt sich ein Kind, das jeden Tag geärgert wird?"
+        ],
+        "tipps": [
+          "Ein Zeichen vereinbaren, mit dem Kinder zeigen: „Es ist ernst, ich brauche Hilfe.“",
+          "Bei Kleinigkeiten fragen: „Was hast du schon versucht?“ Bei Wiederholung oder Gefahr immer selbst eingreifen."
+        ],
+        "achtung": "Erzählt ein Kind, dass es selbst immer wieder geärgert oder verletzt wird: nicht im Plenum vertiefen, im Einzelgespräch nachfragen und die zuständige Leitung (Responsable) informieren. Bei Hinweisen auf Gewalt sofort nach dem internen Ablauf handeln.",
+        "material": "Stifte; optional eine Mütze zum Nachspielen der Geschichte"
+      }
+    }
+  },
+  {
+    "id": "hinschauen",
+    "bereich": "miteinander",
+    "thema": "mobbing",
+    "stufen": [
+      "C3",
+      "C4"
+    ],
+    "sozialform": [
+      "einzeln",
+      "gruppe",
+      "klasse"
+    ],
+    "dauer": "45 Min.",
+    "eldib": [
+      "SOZ-21",
+      "K-21",
+      "V-18"
+    ],
+    "schlagworte": [
+      "Mobbing",
+      "Zuschauen",
+      "Rollen",
+      "Zivilcourage",
+      "Pause"
+    ],
+    "bild": "icon:eye",
+    "de": {
+      "titel": "Hinschauen statt wegschauen",
+      "untertitel": "Beim Mobbing schauen fast immer andere Kinder zu. Genau sie können viel verändern.",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "In der Pause",
+          "text": "Seit Wochen nennen Mathis und Diogo Jil in der Pause nur „Schnecke“. Heute nimmt Mathis ihr den Ball weg und wirft ihn Diogo zu. Jil rennt hin und her. Pol lacht laut und klatscht. Aylin und Finn schauen weg und reden weiter. Chiara geht zu Jil und sagt: „Komm, du spielst bei uns mit.“ Samuel läuft zur Pausenaufsicht.",
+          "bild": "figur:lea:traurig"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wer tut was? Verbinde.",
+          "symbole": [
+            "lesen",
+            "verbinden"
+          ]
+        },
+        {
+          "art": "zuordnen",
+          "titel": [
+            "Kinder",
+            "Was sie tun"
+          ],
+          "links": [
+            "Mathis und Diogo",
+            "Pol",
+            "Aylin und Finn",
+            "Chiara",
+            "Samuel"
+          ],
+          "rechts": [
+            "wegschauen",
+            "Hilfe holen",
+            "Jil ärgern",
+            "zu Jil halten",
+            "lachen und anfeuern"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Mobbing braucht Zuschauer",
+          "text": "Beim Mobbing gibt es viele Rollen: anfangen, mitmachen, lachen, wegschauen, helfen. Wer lacht oder wegschaut, macht das Ärgern oft stärker – auch ohne es zu wollen. Wer hilft, kann es stoppen."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Stell dir vor, du bist Jil. Was denkst du über Aylin und Finn?",
+          "symbole": [
+            "nachdenken",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "linien",
+          "anzahl": 3
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was kannst du tun, wenn du zuschaust? Kreuze an, was du dir zutraust.",
+          "hinweis": "Du musst dich nicht allein dazwischenstellen. Hilfe holen ist auch mutig.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "items": [
+            "Ich lache nicht mit.",
+            "Ich sage: „Hört auf damit.“",
+            "Ich hole die Pausenaufsicht.",
+            "Ich frage: „Willst du bei uns mitspielen?“",
+            "Ich frage später: „Wie geht es dir?“",
+            "Ich hole Freunde, die mithelfen."
+          ],
+          "spalten": 2,
+          "frei": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schreibe deinen Plan fürs Hinschauen.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Wenn in der Pause ein Kind immer wieder ausgelacht wird,",
+              "dann": "lache ich nicht mit und gehe zur Pausenaufsicht."
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Vier Regeln für unsere Klasse",
+          "punkte": [
+            "Wir ärgern niemanden immer wieder.",
+            "Wir helfen Kindern, die geärgert werden.",
+            "Wir lassen niemanden allein stehen.",
+            "Wir sagen es einem Erwachsenen, wenn jemand gemobbt wird."
+          ]
+        },
+        {
+          "art": "rueckblick"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder erkennen die Rollen beim Mobbing, verstehen, dass Zuschauende das Ärgern verstärken oder stoppen können, und legen fest, wie sie selbst helfen wollen.",
+        "ablauf": [
+          "Einstieg (5 Min.): Die Geschichte vorlesen. Fragen: „Wer ist alles beteiligt – und wer tut gar nichts?“",
+          "Aufgabe 1 allein lösen, danach den Info-Kasten lesen. Betonen: Rollen beschreiben ein Verhalten, keinen Menschen. Man kann sie wechseln.",
+          "Aufgabe 2: Einige Antworten freiwillig vorlesen lassen. Herausarbeiten: Schweigen wirkt auf Jil wie Zustimmung.",
+          "Aufgabe 3 in Kleingruppen: Was ist sicher, was braucht Mut? Festhalten, dass Hilfe holen immer richtig ist.",
+          "Aufgabe 4: Jedes Kind schreibt seinen Plan. Die vier Regeln als Klassenregeln besprechen, aushängen und nach zwei Wochen im Klassenrat überprüfen."
+        ],
+        "hintergrund": "Mobbing ist ein Gruppenprozess. In der Studie von Salmivalli et al. (1996) ließ sich den meisten Kindern einer Klasse eine Rolle zuordnen: Täter, Assistenten, Verstärker, Außenstehende, Verteidiger oder Opfer. Wer lacht, anfeuert oder schweigt, verschafft dem Täter Aufmerksamkeit und Ansehen; wer verteidigt, schützt die Betroffenen. Programme gegen Mobbing setzen deshalb bei der ganzen Klasse an – etwa mit gemeinsamen Klassenregeln – und nehmen die Zuschauenden in die Pflicht (Olweus, 1993). Geübt werden sollen sichere Handlungen: nicht mitlachen, Hilfe holen, Betroffene einbeziehen oder trösten. Kein Kind soll sich allein dazwischenstellen müssen.",
+        "quellen": [
+          "Salmivalli, C., Lagerspetz, K., Björkqvist, K., Österman, K. & Kaukiainen, A. (1996). Bullying as a group process: Participant roles and their relations to social status within the group. Aggressive Behavior, 22(1), 1–15.",
+          "Olweus, D. (1993). Bullying at School: What We Know and What We Can Do. Oxford: Blackwell."
+        ],
+        "differenzierung": {
+          "leichter": "Die Geschichte mit Namensschildern nachstellen. Aufgabe 3 mündlich besprechen.",
+          "schwerer": "Die Geschichte neu schreiben: Was passiert, wenn Aylin und Finn nicht wegschauen?"
+        },
+        "impulse": [
+          "Warum lachen manche mit, obwohl sie es nicht gut finden?",
+          "Was ist schwerer: Hilfe holen oder „Hört auf“ sagen?",
+          "Woran merkt Jil, dass jemand auf ihrer Seite ist?"
+        ],
+        "tipps": [
+          "Rollen nie mit Kindern aus der eigenen Klasse besetzen – immer mit erfundenen Figuren arbeiten.",
+          "Hilfe-Wege sichtbar machen: Wer hat heute Pausenaufsicht, und wo steht sie?"
+        ],
+        "achtung": "Erzählen Kinder von Mobbing in der eigenen Klasse: nicht im Plenum vertiefen und keine Namen sammeln. Im Einzelgespräch nachfragen und die zuständige Leitung (Responsable) informieren. Bei Gewalt sofort nach dem internen Ablauf handeln.",
+        "material": "Optional Namensschilder zum Nachstellen der Geschichte"
+      }
+    }
+  },
+  {
+    "id": "mobbing-cybermobbing",
+    "bereich": "miteinander",
+    "thema": "mobbing",
+    "stufen": [
+      "ES"
+    ],
+    "sozialform": [
+      "einzeln",
+      "gruppe",
+      "klasse"
+    ],
+    "dauer": "45–50 Min.",
+    "eldib": [
+      "SOZ-37",
+      "SOZ-39",
+      "V-31"
+    ],
+    "schlagworte": [
+      "Mobbing",
+      "Cybermobbing",
+      "Beweise sichern",
+      "Zivilcourage",
+      "BEE SECURE",
+      "Hilfe"
+    ],
+    "bild": "icon:device-mobile-message",
+    "de": {
+      "titel": "Mobbing und Cybermobbing",
+      "untertitel": "Streit gehört zum Leben, Mobbing nicht. Wer den Unterschied kennt, kann früher handeln – für sich und für andere.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Woran man Mobbing erkennt",
+          "text": "Von Mobbing spricht man, wenn drei Dinge zusammenkommen:",
+          "punkte": [
+            "Wiederholt: Es passiert immer wieder, oft über Wochen.",
+            "Absichtlich: Jemand will verletzen, bloßstellen oder ausgrenzen.",
+            "Ungleiche Kräfte: Die betroffene Person kann sich kaum wehren – weil die anderen mehr, stärker oder beliebter sind.",
+            "Online (Cybermobbing) kommt dazu: Es hört nach der Schule nicht auf, erreicht in Minuten viele Menschen und bleibt gespeichert."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Konflikt oder Mobbing? Entscheide. Kreuze „unsicher“ an, wenn du zögerst, und besprecht diese Fälle danach."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "Konflikt",
+            "Mobbing",
+            "unsicher"
+          ],
+          "items": [
+            "Zwei Freundinnen streiten über ein Referat und reden einen Tag nicht miteinander.",
+            "Seit Wochen wird im Klassenchat über Leonors Aussehen gelästert.",
+            "Liam und Yusuf beschimpfen sich nach einem Foul. Am nächsten Tag ist es vorbei.",
+            "Mehmet wird im Bus jeden Morgen von drei Älteren angerempelt und ausgelacht.",
+            "Jemand hat ein bearbeitetes Foto von Nora in mehreren Gruppen geteilt.",
+            "Rafael wird aus dem Gruppenchat entfernt, sobald er etwas schreibt."
+          ]
+        },
+        {
+          "art": "geschichte",
+          "titel": "Der Sticker",
+          "text": "Seit drei Wochen kursiert im Klassenchat ein Sticker mit Leonors Gesicht. Unter jede ihrer Nachrichten posten einige nur noch diesen Sticker, andere reagieren mit Lach-Smileys. Leonor hat zweimal „Hört auf“ geschrieben – seitdem wird es schlimmer. Abends liest sie alles wieder und wieder. Morgens hat sie Bauchschmerzen und will nicht ins Lycée.",
+          "bild": "figur:jana:traurig"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was können die anderen im Klassenchat tun? Notiere zwei Dinge, die du dir selbst zutrauen würdest."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Im Chat könnte ich …",
+            "Leonor gegenüber könnte ich …"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Leonor will etwas unternehmen. Was rätst du ihr? Kreuze an."
+        },
+        {
+          "art": "ankreuzen",
+          "items": [
+            "zurückschreiben und drohen",
+            "alles löschen, um es nicht mehr zu sehen",
+            "Screenshots mit Datum und Namen machen",
+            "die Absender blockieren und melden",
+            "mit einer Vertrauensperson reden",
+            "abwarten, bis es von allein aufhört"
+          ],
+          "spalten": 2
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Beweise sichern – so geht’s",
+          "punkte": [
+            "Screenshots machen: Nachricht, Profilname, Datum und Uhrzeit müssen zu sehen sein.",
+            "Links und Gruppennamen notieren, alles an einem sicheren Ort speichern.",
+            "Erst sichern, dann blockieren und in der App melden.",
+            "Nacktbilder oder Drohungen nie weiterleiten – auch nicht als Beweis. Sofort einer erwachsenen Vertrauensperson oder der Polizei Bescheid sagen.",
+            "Im Lycée helfen dir der SePAS, deine Klassenlehrerin oder dein Klassenlehrer und die Educateurs."
+          ]
+        },
+        {
+          "art": "notfall"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen unterscheiden Konflikt und Mobbing anhand klarer Merkmale, kennen die Rollen in der Gruppe und wissen, wie sie bei Cybermobbing Beweise sichern und Hilfe holen.",
+        "ablauf": [
+          "Einstieg (5 Min.): „Wann wird aus Streit Mobbing?“ Antworten sammeln, dann den Info-Kasten lesen.",
+          "Aufgabe 1 allein, dann zu zweit vergleichen. Unsichere Fälle im Plenum klären, z. B. das geteilte Foto: einmal gepostet, aber immer wieder gesehen.",
+          "Fallvignette lesen. Aufgabe 2: Schritte sammeln, die wenig Mut brauchen (nicht mitlachen, nichts weiterleiten, Leonor privat schreiben).",
+          "Aufgabe 3 und den Tipp-Kasten gemeinsam besprechen.",
+          "Abschluss: Hilfenummern und Ansprechpersonen im Lycée zeigen. Alle tragen eine Vertrauensperson ein."
+        ],
+        "hintergrund": "Olweus (1993) bestimmt Mobbing über drei Merkmale: wiederholte, absichtlich schädigende Handlungen und ein Ungleichgewicht der Kräfte. Das unterscheidet es von Konflikten, in denen sich beide Seiten wehren können. Mobbing ist ein Gruppenprozess: Neben Tätern und Betroffenen gibt es Assistenten, Verstärker, Außenstehende und Verteidiger (Salmivalli et al., 1996). Online verschärfen Reichweite, Dauer und Anonymität die Wirkung; wer liked oder weiterleitet, wirkt als Verstärker. Betroffenen hilft: nicht antworten, Beweise sichern, blockieren, melden und Unterstützung holen – etwa bei der BEE SECURE Helpline (kostenlos, vertraulich).",
+        "quellen": [
+          "Olweus, D. (1993). Bullying at School: What We Know and What We Can Do. Oxford: Blackwell.",
+          "Salmivalli, C., Lagerspetz, K., Björkqvist, K., Österman, K. & Kaukiainen, A. (1996). Bullying as a group process: Participant roles and their relations to social status within the group. Aggressive Behavior, 22(1), 1–15.",
+          "BEE SECURE – Initiative der luxemburgischen Regierung für ein sichereres Internet: www.bee-secure.lu"
+        ],
+        "differenzierung": {
+          "leichter": "Aufgabe 1 mit drei Fällen beginnen. Aufgabe 2 als Auswahl aus vorgegebenen Handlungen anbieten.",
+          "schwerer": "Einen kurzen Leitfaden „Beweise sichern“ für jüngere Schülerinnen und Schüler schreiben."
+        },
+        "impulse": [
+          "Ab wann ist ein Witz kein Witz mehr?",
+          "Warum schweigen in Gruppenchats so viele?",
+          "Was bräuchtest du, um einzugreifen?"
+        ],
+        "tipps": [
+          "Nie in der Klasse nach aktuellen Fällen fragen – mit der Vignette arbeiten.",
+          "Vorab mit dem SePAS klären, wie Meldungen im Lycée ablaufen."
+        ],
+        "achtung": "Bei Hinweisen auf aktuelles Mobbing: nicht im Plenum vertiefen, ein Einzelgespräch anbieten, die zuständige Leitung (Responsable) informieren. Bei Drohungen, Nacktbildern oder Suizidgedanken sofort nach dem internen Ablauf handeln und nicht allein lassen."
+      }
+    },
+    "fr": {
+      "titel": "Harcèlement et cyberharcèlement",
+      "untertitel": "Les disputes font partie de la vie, le harcèlement non. Savoir faire la différence permet d’agir plus tôt – pour soi et pour les autres.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Comment reconnaître le harcèlement",
+          "text": "On parle de harcèlement quand trois éléments se cumulent :",
+          "punkte": [
+            "Répété : cela se reproduit encore et encore, souvent pendant des semaines.",
+            "Intentionnel : quelqu’un veut blesser, humilier ou exclure.",
+            "Rapport de force inégal : la personne visée peut à peine se défendre – parce que les autres sont plus nombreux, plus forts ou plus populaires.",
+            "En ligne (cyberharcèlement), s’y ajoute ceci : cela ne s’arrête pas après l’école, touche beaucoup de monde en quelques minutes et reste enregistré."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Conflit ou harcèlement ? Décide. Coche « pas sûr·e » quand tu hésites, puis discutez de ces cas."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "conflit",
+            "harcèlement",
+            "pas sûr·e"
+          ],
+          "items": [
+            "Deux amies se disputent à propos d’un exposé et ne se parlent plus pendant une journée.",
+            "Depuis des semaines, on se moque du physique de Leonor dans le groupe de la classe.",
+            "Liam et Yusuf s’insultent après une faute au foot. Le lendemain, c’est oublié.",
+            "Chaque matin dans le bus, Mehmet est bousculé et moqué par trois élèves plus âgés.",
+            "Quelqu’un a partagé une photo retouchée de Nora dans plusieurs groupes.",
+            "Rafael est retiré du groupe de discussion dès qu’il écrit quelque chose."
+          ]
+        },
+        {
+          "art": "geschichte",
+          "titel": "Le sticker",
+          "text": "Depuis trois semaines, un sticker avec le visage de Leonor circule dans le groupe de la classe. Sous chacun de ses messages, certains ne postent plus que ce sticker, d’autres réagissent avec des smileys qui rient. Leonor a écrit deux fois « Arrêtez » – depuis, c’est pire. Le soir, elle relit tout encore et encore. Le matin, elle a mal au ventre et ne veut plus aller au lycée.",
+          "bild": "figur:jana:traurig"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Que peuvent faire les autres membres du groupe ? Note deux choses que tu oserais faire toi-même."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Dans le groupe, je pourrais …",
+            "Auprès de Leonor, je pourrais …"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Leonor veut réagir. Que lui conseilles-tu ? Coche."
+        },
+        {
+          "art": "ankreuzen",
+          "items": [
+            "répondre et menacer",
+            "tout effacer pour ne plus le voir",
+            "faire des captures d’écran avec la date et les noms",
+            "bloquer et signaler les auteurs",
+            "en parler à une personne de confiance",
+            "attendre que ça passe tout seul"
+          ],
+          "spalten": 2
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Garder des preuves : comment faire",
+          "punkte": [
+            "Faire des captures d’écran : le message, le nom du profil, la date et l’heure doivent être visibles.",
+            "Noter les liens et le nom des groupes, tout garder dans un endroit sûr.",
+            "D’abord sauvegarder, ensuite bloquer et signaler dans l’application.",
+            "Ne jamais transférer des photos dénudées ou des menaces, même comme preuve. En parler tout de suite à un adulte de confiance ou à la police.",
+            "Au lycée, tu peux t’adresser au SePAS, à ton ou ta régent·e et aux éducateur·rice·s."
+          ]
+        },
+        {
+          "art": "notfall"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes distinguent conflit et harcèlement à l’aide de critères clairs, connaissent les rôles dans le groupe et savent comment garder des preuves et demander de l’aide en cas de cyberharcèlement.",
+        "ablauf": [
+          "Entrée en matière (5 min) : « Quand une dispute devient-elle du harcèlement ? » Recueillir les réponses, puis lire l’encadré.",
+          "Exercice 1 seul·e, puis comparer à deux. Clarifier en classe les cas incertains, p. ex. la photo partagée : publiée une fois, mais vue sans cesse.",
+          "Lire la vignette. Exercice 2 : chercher des gestes qui demandent peu de courage (ne pas rire, ne rien transférer, écrire à Leonor en privé).",
+          "Discuter ensemble l’exercice 3 et l’encadré.",
+          "Clôture : montrer les numéros d’aide et les personnes-ressources du lycée. Chacun·e note une personne de confiance."
+        ],
+        "hintergrund": "Olweus (1993) définit le harcèlement par trois critères : des actions répétées, intentionnellement blessantes, et un déséquilibre des forces. C’est ce qui le distingue des conflits où chaque partie peut se défendre. Le harcèlement est un processus de groupe : à côté des auteurs et des victimes, il y a des assistants, des renforçateurs, des témoins passifs et des défenseurs (Salmivalli et al., 1996). En ligne, la portée, la durée et l’anonymat aggravent l’effet. Qui like ou transfère joue le rôle de renforçateur. Ce qui aide les victimes : ne pas répondre, garder des preuves, bloquer, signaler et chercher du soutien – par exemple auprès de la BEE SECURE Helpline (gratuite et confidentielle).",
+        "quellen": [
+          "Olweus, D. (1993). Bullying at School: What We Know and What We Can Do. Oxford: Blackwell.",
+          "Salmivalli, C., Lagerspetz, K., Björkqvist, K., Österman, K. & Kaukiainen, A. (1996). Bullying as a group process: Participant roles and their relations to social status within the group. Aggressive Behavior, 22(1), 1–15.",
+          "BEE SECURE – Initiative der luxemburgischen Regierung für ein sichereres Internet: www.bee-secure.lu"
+        ],
+        "differenzierung": {
+          "leichter": "Commencer l’exercice 1 avec trois cas. Proposer l’exercice 2 sous forme de choix parmi des actions données.",
+          "schwerer": "Rédiger un court guide « Garder des preuves » pour des élèves plus jeunes."
+        },
+        "impulse": [
+          "Quand une blague n’en est-elle plus une ?",
+          "Pourquoi tant de gens se taisent-ils dans les groupes ?",
+          "De quoi aurais-tu besoin pour intervenir ?"
+        ],
+        "tipps": [
+          "Ne jamais demander en classe des cas actuels – travailler avec la vignette.",
+          "Clarifier au préalable avec le SePAS comment se passent les signalements au lycée."
+        ],
+        "achtung": "En cas d’indices de harcèlement actuel : ne pas approfondir en classe, proposer un entretien individuel, informer la direction compétente (responsable). En cas de menaces, de photos dénudées ou d’idées suicidaires : agir tout de suite selon la procédure interne et ne pas laisser la personne seule."
+      }
+    }
+  },
+  {
+    "id": "wie-fuehlt-sich-das-an",
+    "bereich": "miteinander",
+    "thema": "empathie",
+    "stufen": [
+      "C2"
+    ],
+    "sozialform": [
+      "einzeln",
+      "gruppe",
+      "klasse"
+    ],
+    "dauer": "30 Min.",
+    "eldib": [
+      "K-21",
+      "KOG-38",
+      "K-28"
+    ],
+    "schlagworte": [
+      "Gefühle erkennen",
+      "Empathie",
+      "Trösten",
+      "Bildgeschichte",
+      "Mitgefühl"
+    ],
+    "bild": "icon:heart-handshake",
+    "de": {
+      "titel": "Wie fühlt sich das an?",
+      "untertitel": "Gesicht und Körper verraten, wie es jemandem geht.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Schau die Bilder an. Wie fühlt sich Amira? Kreise ein.",
+          "symbole": [
+            "zeigen",
+            "einkreisen"
+          ]
+        },
+        {
+          "art": "comic",
+          "spalten": 3,
+          "felder": [
+            {
+              "figuren": [
+                "figur:amira:froh:zeigen"
+              ],
+              "requisit": "icon:palette",
+              "blase": "keine",
+              "untertitel": "Amira hat lange gemalt."
+            },
+            {
+              "figuren": [
+                "figur:amira:ueberrascht"
+              ],
+              "requisit": "icon:droplet",
+              "blase": "keine",
+              "untertitel": "Der Wasserbecher kippt um."
+            },
+            {
+              "figuren": [
+                "figur:amira:traurig:haende-gesicht"
+              ],
+              "blase": "keine",
+              "untertitel": "Das Bild ist nass."
+            }
+          ]
+        },
+        {
+          "art": "gefuehle",
+          "gefuehle": [
+            "froh",
+            "traurig",
+            "wuetend",
+            "enttaeuscht"
+          ],
+          "modus": "einkreisen"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Noah sieht Amira. Was hilft ihr? Kreuze an.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "items": [
+            "fragen: „Was ist passiert?“",
+            "laut lachen",
+            "ein Taschentuch geben",
+            "sagen: „Ist doch egal.“",
+            "sich zu Amira setzen",
+            "beim neuen Bild helfen"
+          ],
+          "spalten": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was sagt Noah zu Amira? Schreibe in die Blase.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "dialog",
+          "zeilen": [
+            {
+              "wer": "Amira",
+              "text": "Mein Bild ist kaputt."
+            },
+            {
+              "wer": "Noah"
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder erkennen an Gesicht, Körperhaltung und Situation, wie sich ein anderes Kind fühlt, und probieren passende Worte und Gesten zum Trösten aus.",
+        "ablauf": [
+          "Einstieg (5 Min.): Die Bildgeschichte gemeinsam anschauen. Fragen: „Was passiert? Woran siehst du, wie es Amira geht?“",
+          "Aufgabe 1: Mehrere Gefühle sind richtig. Begründen lassen: Tränen, Hände vor dem Gesicht, das nasse Bild.",
+          "Aufgabe 2: Vorschläge vorlesen, die Kinder zeigen Daumen hoch oder runter. Besprechen, warum „Ist doch egal“ nicht tröstet.",
+          "Aufgabe 3: Zu zweit nachspielen – ein Kind ist Amira, eines Noah. Danach den Trost-Satz aufschreiben.",
+          "Abschluss: „Was hilft dir, wenn du traurig bist?“ Antworten als Trost-Ideen sammeln und aufhängen."
+        ],
+        "hintergrund": "Gefühle anderer zu erkennen, gehört zu den Grundlagen emotionaler Kompetenz. Kinder nutzen dafür Gesichtsausdruck, Körperhaltung und die Situation; mit dem Schulalter lernen sie, diese Hinweise zu verbinden (Denham, 1998). Kinder mit gutem Gefühlswissen kommen mit Gleichaltrigen besser zurecht und reagieren angemessener auf deren Kummer (Petermann & Wiedebusch, 2016). Trösten braucht keinen perfekten Satz: Hinschauen, nachfragen und da sein wirken oft mehr als Ratschläge. Die Bildgeschichte bietet einen geschützten Rahmen, weil über die Gefühle einer erfundenen Figur gesprochen wird.",
+        "quellen": [
+          "Denham, S. A. (1998). Emotional Development in Young Children. New York: Guilford.",
+          "Petermann, F. & Wiedebusch, S. (2016). Emotionale Kompetenz bei Kindern (3. Aufl.). Göttingen: Hogrefe."
+        ],
+        "differenzierung": {
+          "leichter": "Nur zwei Gefühle zur Wahl stellen. Den Trost-Satz mündlich sagen, die Lehrperson schreibt mit.",
+          "schwerer": "Ein viertes Bild malen: Wie geht die Geschichte weiter, nachdem Noah getröstet hat?"
+        },
+        "impulse": [
+          "Woran erkennst du Traurigkeit, auch ohne Tränen?",
+          "Was tust du, wenn jemand gerade allein sein möchte?",
+          "Wann hat dich schon einmal jemand getröstet?"
+        ],
+        "tipps": [
+          "Gefühle vor dem Spiegel nachmachen: „Zeig mir traurig – und jetzt enttäuscht.“",
+          "Trösten nicht erzwingen: Manche Kinder brauchen erst einen Moment für sich."
+        ],
+        "achtung": "Reagiert ein Kind beim Thema Traurigkeit sehr betroffen oder erzählt es von großem Kummer zu Hause: nicht im Plenum vertiefen, später allein nachfragen und bei Bedarf die zuständige Leitung (Responsable) informieren.",
+        "material": "Buntstifte; optional ein kleiner Spiegel"
+      }
+    }
+  },
+  {
+    "id": "in-den-schuhen-des-anderen",
+    "bereich": "miteinander",
+    "thema": "empathie",
+    "stufen": [
+      "C3",
+      "C4"
+    ],
+    "sozialform": [
+      "einzeln",
+      "gruppe",
+      "klasse"
+    ],
+    "dauer": "45 Min.",
+    "eldib": [
+      "KOG-38",
+      "K-21",
+      "SOZ-33"
+    ],
+    "schlagworte": [
+      "Perspektivwechsel",
+      "Empathie",
+      "Missverständnis",
+      "Streit",
+      "Kantine"
+    ],
+    "bild": "icon:shoe",
+    "de": {
+      "titel": "In den Schuhen des anderen",
+      "untertitel": "Dieselbe Situation kann für zwei Menschen ganz anders aussehen. Wer beide Seiten kennt, versteht mehr.",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "Emma erzählt",
+          "text": "In der Kantine will ich mich neben Zoé setzen, wie jeden Tag. Aber auf meinem Platz sitzt der Neue, Elias. Ich sage laut: „Das ist mein Platz.“ Elias schaut nicht mal hoch. So ein Angeber, denke ich. Ich setze mich woandershin und bin den ganzen Nachmittag sauer.",
+          "bild": "figur:mia:wuetend"
+        },
+        {
+          "art": "geschichte",
+          "titel": "Elias erzählt",
+          "text": "Ich bin erst seit einer Woche an der Schule und kenne kaum jemanden. In der Kantine hat Zoé gesagt: „Setz dich doch zu uns.“ Plötzlich steht ein Mädchen vor mir und sagt laut: „Das ist mein Platz.“ Alle schauen her. Mein Gesicht wird heiß, ich starre auf meinen Teller. Ich wusste nicht, dass das ihr Platz ist.",
+          "bild": "figur:noah:verlegen"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Vergleiche die beiden Seiten. Ergänze die Sätze.",
+          "symbole": [
+            "lesen",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "spalten",
+          "links": [
+            {
+              "art": "satzanfaenge",
+              "items": [
+                "Emma denkt:",
+                "Emma fühlt sich …",
+                "Emma wünscht sich …"
+              ],
+              "linien": 2
+            }
+          ],
+          "rechts": [
+            {
+              "art": "satzanfaenge",
+              "items": [
+                "Elias denkt:",
+                "Elias fühlt sich …",
+                "Elias wünscht sich …"
+              ],
+              "linien": 2
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "So schlüpfst du in die Schuhe des anderen",
+          "punkte": [
+            "Was weiß ich nicht über den anderen?",
+            "Was denkt er oder sie vielleicht gerade?",
+            "Wie würde ich mich an seiner oder ihrer Stelle fühlen?"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Emma will die Sache klären. Wie geht das Gespräch weiter? Schreibe.",
+          "symbole": [
+            "schreiben",
+            "partner"
+          ]
+        },
+        {
+          "art": "dialog",
+          "zeilen": [
+            {
+              "wer": "Emma",
+              "text": "Du, Elias, wegen vorhin in der Kantine …"
+            },
+            {
+              "wer": "Elias"
+            },
+            {
+              "wer": "Emma"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Denk an einen Streit, den du erlebt hast. Wie hat ihn die andere Person vielleicht erlebt?",
+          "hinweis": "Du musst keine Namen aufschreiben.",
+          "symbole": [
+            "nachdenken",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Ich habe gedacht:",
+            "Die andere Person hat vielleicht gedacht:",
+            "Vielleicht hat sie sich … gefühlt."
+          ],
+          "linien": 2
+        },
+        {
+          "art": "rueckblick"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder vergleichen zwei Sichtweisen derselben Situation, erkennen, dass Missverständnisse oft aus fehlendem Wissen entstehen, und üben, sich in die andere Person hineinzuversetzen.",
+        "ablauf": [
+          "Einstieg (5 Min.): Nur Emmas Sicht vorlesen. Fragen: „Was denkst du über Elias?“ Meinungen sammeln, nicht bewerten.",
+          "Dann Elias’ Sicht vorlesen. Fragen: „Was hat sich für dich verändert? Was wusste Emma nicht?“",
+          "Aufgabe 1 allein; danach die beiden Spalten im Plenum vergleichen.",
+          "Merke-Kasten lesen. Aufgabe 2 zu zweit schreiben und mit verteilten Rollen vorspielen.",
+          "Aufgabe 3 allein. Nur wer möchte, erzählt davon."
+        ],
+        "hintergrund": "Perspektivübernahme heißt, eine Situation mit den Augen eines anderen zu sehen: Was weiß, denkt und fühlt er? Diese Fähigkeit entwickelt sich im Grundschulalter deutlich weiter; ob Kinder sie im Streit nutzen, hängt aber stark von Übung ab. Programme zur Gewaltprävention wie Faustlos beginnen deshalb mit Empathie: Gefühle erkennen, Gründe verstehen, die eigene Reaktion darauf abstimmen (Cierpka, 2005). Auch im PATHS-Programm verbesserten regelmäßige Übungen zu Gefühlen und Sichtweisen das Gefühlsverständnis von Grundschulkindern (Greenberg et al., 1995). Eine Geschichte aus zwei Sichten zeigt anschaulich: Viele Konflikte entstehen aus fehlendem Wissen, nicht aus böser Absicht.",
+        "quellen": [
+          "Cierpka, M. (Hrsg.) (2005). Faustlos – Wie Kinder Konflikte gewaltfrei lösen lernen. Freiburg: Herder.",
+          "Greenberg, M. T., Kusché, C. A., Cook, E. T. & Quamma, J. P. (1995). Promoting emotional competence in school-aged children: The effects of the PATHS curriculum. Development and Psychopathology, 7(1), 117–136."
+        ],
+        "differenzierung": {
+          "leichter": "Die Geschichte mit zwei Stühlen nachspielen: Wer auf Emmas Stuhl sitzt, spricht als Emma.",
+          "schwerer": "Die Szene aus Zoés Sicht erzählen: Was hat sie gesehen und gedacht?"
+        },
+        "impulse": [
+          "Wann hast du jemanden falsch eingeschätzt?",
+          "Woran merkst du, dass dir Informationen fehlen?",
+          "Was hilft mehr: nachfragen oder vermuten?"
+        ],
+        "tipps": [
+          "Die Zwei-Stühle-Methode auch bei echten Konflikten nutzen: Jede Seite erzählt, die andere hört nur zu.",
+          "Die drei Fragen aus dem Merke-Kasten gut sichtbar im Klassenraum aufhängen."
+        ],
+        "achtung": "Erzählt ein Kind in Aufgabe 3 von einem belastenden Konflikt, etwa zu Hause: nicht im Plenum vertiefen, sondern später allein nachfragen und bei Bedarf die zuständige Leitung (Responsable) informieren.",
+        "material": "Optional zwei Stühle für das Rollenspiel"
+      }
+    }
+  },
+  {
+    "id": "drei-sichtweisen",
+    "bereich": "miteinander",
+    "thema": "empathie",
+    "stufen": [
+      "ES"
+    ],
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "45–50 Min.",
+    "eldib": [
+      "SOZ-37",
+      "K-33",
+      "K-31"
+    ],
+    "schlagworte": [
+      "Perspektivwechsel",
+      "Konflikt",
+      "Bedürfnisse",
+      "Gewaltfreie Kommunikation",
+      "Ich-Botschaft"
+    ],
+    "bild": "icon:masks-theater",
+    "de": {
+      "titel": "Eine Situation – drei Sichtweisen",
+      "untertitel": "Hinter jedem Verhalten stehen Gedanken und Bedürfnisse. Wer sie kennt, findet leichter einen Ausweg.",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "Donnerstag, zweite Stunde",
+          "text": "Ana und Luca sollen heute ihre Präsentation halten. Luca hat seinen Teil nicht geschickt. Als Frau Kremer fragt, ob die beiden bereit sind, sagt Ana vor der ganzen Klasse: „Frag Luca, der hat wie immer nichts gemacht.“ Luca springt auf, sein Stuhl kippt um. „Halt einfach die Klappe“, ruft er. Frau Kremer schickt beide vor die Tür."
+        },
+        {
+          "art": "geschichte",
+          "titel": "Ana",
+          "text": "Ich habe seit zwei Wochen alles organisiert und Luca fünfmal geschrieben. Nie kam eine Antwort. Ich hatte Angst, dass wir wegen ihm eine schlechte Note bekommen.",
+          "bild": "figur:jana:wuetend"
+        },
+        {
+          "art": "geschichte",
+          "titel": "Luca",
+          "text": "Meine Mutter liegt seit zehn Tagen im Krankenhaus, abends passe ich auf meine kleine Schwester auf. Das wollte ich vor der Klasse nicht erzählen. Als Ana das vor allen gesagt hat, habe ich mich bloßgestellt gefühlt.",
+          "bild": "figur:ben:traurig"
+        },
+        {
+          "art": "geschichte",
+          "titel": "Frau Kremer",
+          "text": "Ich hatte heute noch vier Präsentationen geplant. Wenn zwei sich anschreien und ein Stuhl umfällt, muss ich schnell für Ruhe sorgen – auch für die anderen. Was dahintersteckt, wusste ich in dem Moment nicht.",
+          "bild": "figur:lehrerin:besorgt"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wessen Verhalten verstehst du am besten? Kreuze an und begründe in einem Satz."
+        },
+        {
+          "art": "ankreuzen",
+          "items": [
+            "das von Ana",
+            "das von Luca",
+            "das von Frau Kremer"
+          ],
+          "spalten": 3
+        },
+        {
+          "art": "linien",
+          "anzahl": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was denkt, fühlt und braucht jede Person? Fülle die Tabelle aus.",
+          "hinweis": "Ein Bedürfnis ist das, was einem Menschen wichtig ist – nicht das, was der andere tun soll."
+        },
+        {
+          "art": "wortspeicher",
+          "titel": "Bedürfnisse",
+          "items": [
+            "Anerkennung",
+            "Fairness",
+            "Verlässlichkeit",
+            "Respekt",
+            "Ruhe",
+            "Sicherheit",
+            "Unterstützung",
+            "Verständnis",
+            "Privatsphäre",
+            "Ordnung",
+            "Zugehörigkeit"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Person",
+            "denkt",
+            "fühlt",
+            "braucht"
+          ],
+          "breiten": [
+            1,
+            2.2,
+            1.5,
+            1.7
+          ],
+          "zeilen": 2,
+          "beispiel": [
+            "Ana",
+            "„Ich mache alles allein.“",
+            "gestresst, wütend",
+            "Verlässlichkeit, Fairness"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Luca will mit Ana darüber reden. Hilf ihm, ohne Vorwurf zu sprechen."
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Ohne Vorwurf sprechen – Anas Beispiel",
+          "text": "„Du hast auf meine Nachrichten nicht geantwortet. Ich war gestresst und hatte Angst um unsere Note. Mir ist wichtig, dass ich mich auf dich verlassen kann. Sagst du mir nächstes Mal Bescheid, wenn du etwas nicht schaffst?“"
+        },
+        {
+          "art": "schritte",
+          "items": [
+            {
+              "titel": "Was ist passiert?",
+              "text": "beschreiben, nicht bewerten"
+            },
+            {
+              "titel": "Wie ging es mir damit?"
+            },
+            {
+              "titel": "Was ist mir wichtig?"
+            },
+            {
+              "titel": "Worum bitte ich?"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Denk an einen Konflikt, den du erlebt hast. Wie hat ihn die andere Seite vielleicht erlebt?",
+          "hinweis": "Du musst keine Namen nennen."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Die Situation:",
+            "Ich brauchte:",
+            "Die andere Person brauchte vielleicht:"
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen betrachten einen Konflikt aus drei Perspektiven, unterscheiden Verhalten von Gedanken, Gefühlen und Bedürfnissen und formulieren ein Anliegen ohne Vorwurf.",
+        "ablauf": [
+          "Einstieg (5 Min.): Nur die Situation lesen und fragen: „Wer ist schuld?“ Antworten stehen lassen, nicht diskutieren.",
+          "Die drei Sichtweisen lesen, gern mit verteilten Rollen. Aufgabe 1 spontan beantworten.",
+          "Aufgabe 2 zu zweit. Klären: „Ruhe“ ist ein Bedürfnis, „Halt die Klappe“ eine Forderung.",
+          "Aufgabe 3: Anas Beispiel gemeinsam den vier Schritten zuordnen, dann Lucas Sätze allein schreiben. Einige vorlesen lassen.",
+          "Aufgabe 4 allein. Abschluss: „Hat sich eure Antwort auf die Einstiegsfrage verändert?“"
+        ],
+        "hintergrund": "Konflikte eskalieren oft, weil jede Seite nur das Verhalten der anderen sieht, nicht deren Gründe. Fisher und Ury (1981) unterscheiden deshalb Positionen von den Interessen dahinter: Lösungen werden möglich, wenn die Interessen aller Beteiligten auf dem Tisch liegen. Ähnlich beschreibt Rosenberg (2001) Vorwürfe als Ausdruck unerfüllter Bedürfnisse, etwa nach Verlässlichkeit, Respekt oder Ruhe. Wer Beobachtung, Gefühl, Bedürfnis und Bitte ausspricht, statt zu bewerten, macht es dem Gegenüber leichter zuzuhören. Die dritte Sichtweise zeigt, dass auch Erwachsene unter Druck handeln und eigene Bedürfnisse haben.",
+        "quellen": [
+          "Fisher, R. & Ury, W. (1981). Getting to Yes. Boston: Houghton Mifflin.",
+          "Rosenberg, M. B. (2001). Gewaltfreie Kommunikation. Paderborn: Junfermann."
+        ],
+        "differenzierung": {
+          "leichter": "Nur Ana und Luca bearbeiten. Die Bedürfnisse aus dem Wortspeicher auswählen lassen.",
+          "schwerer": "Eine vierte Sichtweise schreiben: die einer Mitschülerin, die alles beobachtet hat."
+        },
+        "impulse": [
+          "Welche Information hat deine Sicht am stärksten verändert?",
+          "Wann ist es richtig, etwas Privates für sich zu behalten?",
+          "Was hätte Frau Kremer tun können, ohne die Klasse zu verlieren?"
+        ],
+        "tipps": [
+          "Die vier Schritte zuerst an einem harmlosen Beispiel vormachen.",
+          "Ohne Vorwurf sprechen heißt nicht, Ärger zu verschweigen – er wird nur anders gesagt."
+        ],
+        "achtung": "Lucas Lage kann Jugendliche berühren, die selbst kranke Angehörige pflegen oder zu Hause viel Verantwortung tragen. Nicht im Plenum vertiefen, ein Einzelgespräch anbieten und bei Bedarf die zuständige Leitung (Responsable) oder den SePAS einbeziehen."
+      }
+    },
+    "fr": {
+      "titel": "Une situation, trois regards",
+      "untertitel": "Derrière chaque comportement, il y a des pensées et des besoins. Les connaître aide à trouver une issue.",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "Jeudi, deuxième heure",
+          "text": "Ana et Luca doivent présenter leur exposé aujourd’hui. Luca n’a pas envoyé sa partie. Quand Madame Kremer demande s’ils sont prêts, Ana lance devant toute la classe : « Demande à Luca, comme d’habitude il n’a rien fait. » Luca se lève d’un bond, sa chaise tombe. « Ferme-la », crie-t-il. Madame Kremer les envoie tous les deux dans le couloir."
+        },
+        {
+          "art": "geschichte",
+          "titel": "Ana",
+          "text": "Depuis deux semaines, j’organise tout et j’ai écrit cinq fois à Luca. Jamais de réponse. J’avais peur qu’on ait une mauvaise note à cause de lui.",
+          "bild": "figur:jana:wuetend"
+        },
+        {
+          "art": "geschichte",
+          "titel": "Luca",
+          "text": "Ma mère est à l’hôpital depuis dix jours. Le soir, je garde ma petite sœur. Je ne voulais pas en parler devant la classe. Quand Ana a dit ça devant tout le monde, je me suis senti humilié.",
+          "bild": "figur:ben:traurig"
+        },
+        {
+          "art": "geschichte",
+          "titel": "Madame Kremer",
+          "text": "J’avais encore prévu quatre exposés aujourd’hui. Quand deux élèves se crient dessus et qu’une chaise tombe, je dois vite ramener le calme – aussi pour les autres. Ce qu’il y avait derrière, je ne le savais pas à ce moment-là.",
+          "bild": "figur:lehrerin:besorgt"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Quel comportement comprends-tu le mieux ? Coche et justifie en une phrase."
+        },
+        {
+          "art": "ankreuzen",
+          "items": [
+            "celui d’Ana",
+            "celui de Luca",
+            "celui de Mme Kremer"
+          ],
+          "spalten": 3
+        },
+        {
+          "art": "linien",
+          "anzahl": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Que pense, que ressent et de quoi a besoin chaque personne ? Complète le tableau.",
+          "hinweis": "Un besoin, c’est ce qui compte pour quelqu’un – pas ce que l’autre doit faire."
+        },
+        {
+          "art": "wortspeicher",
+          "titel": "Besoins",
+          "items": [
+            "reconnaissance",
+            "équité",
+            "fiabilité",
+            "respect",
+            "calme",
+            "sécurité",
+            "soutien",
+            "compréhension",
+            "intimité",
+            "ordre",
+            "appartenance"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Personne",
+            "pense",
+            "ressent",
+            "a besoin de"
+          ],
+          "breiten": [
+            1,
+            2.2,
+            1.5,
+            1.7
+          ],
+          "zeilen": 2,
+          "beispiel": [
+            "Ana",
+            "« Je fais tout toute seule. »",
+            "stressée, en colère",
+            "fiabilité, équité"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Luca veut en reparler avec Ana. Aide-le à s’exprimer sans reproche."
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Parler sans reproche : l’exemple d’Ana",
+          "text": "« Tu n’as pas répondu à mes messages. J’étais stressée et j’avais peur pour notre note. C’est important pour moi de pouvoir compter sur toi. La prochaine fois, tu peux me prévenir si tu n’y arrives pas ? »"
+        },
+        {
+          "art": "schritte",
+          "items": [
+            {
+              "titel": "Ce qui s’est passé",
+              "text": "décrire, sans juger"
+            },
+            {
+              "titel": "Ce que j’ai ressenti"
+            },
+            {
+              "titel": "Ce qui compte pour moi"
+            },
+            {
+              "titel": "Ce que je demande"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Pense à un conflit que tu as vécu. Comment l’autre l’a-t-il peut-être vécu ?",
+          "hinweis": "Tu n’es pas obligé·e de citer des noms."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "La situation :",
+            "J’avais besoin de :",
+            "L’autre avait peut-être besoin de :"
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes examinent un conflit sous trois angles, distinguent le comportement des pensées, des émotions et des besoins, et formulent une demande sans reproche.",
+        "ablauf": [
+          "Entrée en matière (5 min) : lire seulement la situation et demander : « Qui est en tort ? » Laisser les réponses telles quelles, sans débat.",
+          "Lire les trois points de vue, si possible en se répartissant les rôles. Répondre spontanément à l’exercice 1.",
+          "Exercice 2 à deux. Clarifier : « le calme » est un besoin, « Ferme-la » est une exigence.",
+          "Exercice 3 : relier ensemble l’exemple d’Ana aux quatre étapes, puis écrire seul·e les phrases de Luca. En faire lire quelques-unes.",
+          "Exercice 4 seul·e. Clôture : « Votre réponse à la première question a-t-elle changé ? »"
+        ],
+        "hintergrund": "Les conflits s’enveniment souvent parce que chacun ne voit que le comportement de l’autre, pas ses raisons. Fisher et Ury (1981) distinguent donc les positions des intérêts qui se cachent derrière : une solution devient possible quand les intérêts de chacun sont sur la table. De même, Rosenberg (2001) décrit les reproches comme l’expression de besoins non satisfaits, par exemple de fiabilité, de respect ou de calme. Exprimer une observation, un sentiment, un besoin et une demande plutôt que juger aide l’autre à écouter. Le troisième regard montre que les adultes aussi agissent sous pression et ont leurs propres besoins.",
+        "quellen": [
+          "Fisher, R. & Ury, W. (1981). Getting to Yes. Boston: Houghton Mifflin.",
+          "Rosenberg, M. B. (2001). Gewaltfreie Kommunikation. Paderborn: Junfermann."
+        ],
+        "differenzierung": {
+          "leichter": "Ne travailler que sur Ana et Luca. Choisir les besoins dans la liste proposée.",
+          "schwerer": "Écrire un quatrième point de vue : celui d’une élève qui a tout observé."
+        },
+        "impulse": [
+          "Quelle information a le plus changé ton regard ?",
+          "Quand est-il juste de garder quelque chose pour soi ?",
+          "Qu’aurait pu faire Mme Kremer sans perdre la classe ?"
+        ],
+        "tipps": [
+          "Montrer d’abord les quatre étapes sur un exemple anodin.",
+          "Parler sans reproche ne veut pas dire taire sa colère – elle s’exprime autrement."
+        ],
+        "achtung": "La situation de Luca peut toucher des jeunes qui s’occupent eux-mêmes d’un proche malade ou portent beaucoup de responsabilités à la maison. Ne pas approfondir en classe, proposer un entretien individuel et, si besoin, impliquer la direction compétente (responsable) ou le SePAS."
+      }
+    }
+  },
+  {
+    "id": "ich-bin-dran-du-bist-dran",
+    "bereich": "miteinander",
+    "thema": "zusammenarbeit",
+    "stufen": [
+      "C1"
+    ],
+    "sozialform": [
+      "gruppe",
+      "klasse"
+    ],
+    "dauer": "20–25 Min.",
+    "eldib": [
+      "SOZ-14",
+      "SOZ-16",
+      "SOZ-19"
+    ],
+    "schlagworte": [
+      "Abwechseln",
+      "Warten",
+      "Teilen",
+      "Bildkarten",
+      "Spielschule"
+    ],
+    "bild": "icon:hourglass",
+    "de": {
+      "titel": "Ich bin dran, du bist dran",
+      "anleitung": "Die Bilder gemeinsam anschauen und mit einem Ball nachspielen: Ein Kind ist dran, das andere wartet, dann wird getauscht. Die Karten ausschneiden und beim Spielen hochhalten.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Schau zu: Erst Mia, dann Noah.",
+          "symbole": [
+            "zeigen"
+          ]
+        },
+        {
+          "art": "comic",
+          "spalten": 3,
+          "felder": [
+            {
+              "figuren": [
+                "figur:mia:froh:jubeln",
+                "figur:noah:ruhig"
+              ],
+              "blase": "keine",
+              "untertitel": "Mia ist dran. Noah wartet."
+            },
+            {
+              "figuren": [
+                "figur:mia:froh:geben",
+                "figur:noah:froh"
+              ],
+              "requisit": "icon:ball-football",
+              "blase": "keine",
+              "untertitel": "Mia: „Du bist dran.“"
+            },
+            {
+              "figuren": [
+                "figur:mia:ruhig",
+                "figur:noah:froh:jubeln"
+              ],
+              "requisit": "icon:ball-football",
+              "blase": "keine",
+              "untertitel": "Noah ist dran. Mia wartet."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was teilst du gern? Male es an.",
+          "symbole": [
+            "malen"
+          ]
+        },
+        {
+          "art": "bilder",
+          "modus": "anmalen",
+          "spalten": 4,
+          "bilder": [
+            {
+              "bild": "icon:ball-football",
+              "text": "Ball"
+            },
+            {
+              "bild": "icon:book",
+              "text": "Buch"
+            },
+            {
+              "bild": "icon:car",
+              "text": "Auto"
+            },
+            {
+              "bild": "icon:puzzle",
+              "text": "Puzzle"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schneide die Karten aus.",
+          "symbole": [
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 3,
+          "hoehe": 112,
+          "karten": [
+            {
+              "bild": "figur:lea:froh:melden",
+              "titel": "Ich bin dran."
+            },
+            {
+              "bild": "figur:lea:froh:zeigen",
+              "titel": "Du bist dran."
+            },
+            {
+              "bild": "icon:hourglass",
+              "titel": "Ich warte."
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder üben mit Bildern und Karten, abzuwechseln, zu warten und zu teilen, und erleben, dass jedes Kind wieder an die Reihe kommt.",
+        "ablauf": [
+          "Einstieg (5 Min.): Im Sitzkreis einen Ball weitergeben. Wer den Ball hat, darf etwas sagen – die anderen warten.",
+          "Die Bildfolge anschauen. Fragen: „Wer ist dran? Was macht Noah, während er wartet?“",
+          "Die Szene zu zweit mit einem echten Ball nachspielen und dabei „Du bist dran“ sagen.",
+          "Aufgabe 2: Spielsachen anmalen. Fragen: „Was teilst du gern? Was ist schwer zu teilen?“",
+          "Die Karten ausschneiden (Erwachsene helfen) und in der nächsten Spielzeit nutzen: Wer dran ist, hält „Ich bin dran“ hoch."
+        ],
+        "hintergrund": "Abwechseln, Warten und Teilen gehören zu den ersten Freundschaftsfertigkeiten im Vorschulalter. Sie verlangen, einen Wunsch kurz aufzuschieben – das fällt Drei- bis Fünfjährigen noch schwer und gelingt mit klaren Signalen und viel Übung im Spiel besser. Das Dina-Dinosaurier-Programm übt solche Fertigkeiten deshalb in kurzen Spielsequenzen mit Vormachen, Nachspielen und Lob (Webster-Stratton & Reid, 2003). Bildkarten machen den Wechsel sichtbar: Visuelle Hilfen erleichtern gerade jüngeren Kindern und Kindern mit Sprachschwierigkeiten, Abläufe zu verstehen und sich daran zu halten (Hodgdon, 1995).",
+        "quellen": [
+          "Webster-Stratton, C. & Reid, M. J. (2003). Treating conduct problems and strengthening social and emotional competence in young children: The Dina Dinosaur treatment program. Journal of Emotional and Behavioral Disorders, 11(3), 130–143.",
+          "Hodgdon, L. A. (1995). Visual Strategies for Improving Communication. Troy, MI: QuirkRoberts."
+        ],
+        "differenzierung": {
+          "leichter": "Nur mit zwei Karten arbeiten („Ich bin dran“, „Du bist dran“) und die Wartezeit sehr kurz halten.",
+          "schwerer": "Zu dritt abwechseln und die Reihenfolge selbst festlegen."
+        },
+        "impulse": [
+          "Wie fühlt es sich an, zu warten?",
+          "Was kannst du machen, während du wartest?",
+          "Was teilst du gern – und was lieber nicht?"
+        ],
+        "tipps": [
+          "Eine Sanduhr nutzen: So sehen die Kinder, wann gewechselt wird.",
+          "Gelungenes Warten sofort und konkret loben: „Du hast gewartet, bis Noah fertig war.“"
+        ],
+        "material": "Schere, Buntstifte, ein Ball; optional eine Sanduhr"
+      }
+    }
+  },
+  {
+    "id": "gut-zusammenarbeiten",
+    "bereich": "miteinander",
+    "thema": "zusammenarbeit",
+    "stufen": [
+      "C3",
+      "C4"
+    ],
+    "sozialform": [
+      "gruppe",
+      "klasse"
+    ],
+    "dauer": "45–60 Min.",
+    "eldib": [
+      "SOZ-23",
+      "SOZ-22",
+      "SOZ-29"
+    ],
+    "schlagworte": [
+      "Gruppenarbeit",
+      "Rollen",
+      "Kooperation",
+      "Abmachung",
+      "Rückblick"
+    ],
+    "bild": "icon:users-group",
+    "de": {
+      "titel": "Gut zusammenarbeiten",
+      "untertitel": "In einer guten Gruppe hat jedes Kind eine Aufgabe. So wird niemand übersehen, und die Arbeit wird fertig.",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "Das Plakat",
+          "text": "Sofia, Yusuf, Léa und Finn sollen ein Plakat über den Wald machen. Sofia und Yusuf schreiben gleichzeitig darauf. Finn sucht zehn Minuten lang den Kleber. Léa hat eine gute Idee, aber keiner hört ihr zu. Als die Stunde vorbei ist, ist das Plakat halb leer.",
+          "bild": "figur:lea:enttaeuscht"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was hätte der Gruppe geholfen? Schreibe zwei Ideen auf.",
+          "symbole": [
+            "lesen",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "linien",
+          "anzahl": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Lest die Rollenkarten. Schneidet sie aus und verteilt die Rollen in eurer Gruppe.",
+          "hinweis": "Jede Rolle hat eine besondere Aufgabe. Mitdenken und Ideen sagen dürfen alle.",
+          "symbole": [
+            "gruppe",
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 4,
+          "hoehe": 150,
+          "karten": [
+            {
+              "bild": "icon:clock",
+              "titel": "Zeitwächter",
+              "text": "achtet auf die Uhr: „Noch fünf Minuten.“"
+            },
+            {
+              "bild": "icon:pencil",
+              "titel": "Schreiberin",
+              "text": "schreibt die Ideen auf: „Soll ich das so notieren?“"
+            },
+            {
+              "bild": "icon:microphone",
+              "titel": "Sprecher",
+              "text": "stellt das Ergebnis vor: „Unsere Gruppe hat …“"
+            },
+            {
+              "bild": "icon:scissors",
+              "titel": "Materialchefin",
+              "text": "holt das Material und räumt auf: „Ich hole die Scheren.“"
+            }
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Meine Rolle heute:"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Trefft eure Abmachung und unterschreibt.",
+          "hinweis": "Zum Beispiel: … hören wir zu, bis sie fertig ist. … stimmen wir ab. … fragen wir, was los ist.",
+          "symbole": [
+            "gruppe",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "vertrag",
+          "titel": "Unsere Gruppen-Abmachung",
+          "text": "Wenn jemand spricht, ___. Wenn wir verschiedene Ideen haben, ___. Wenn jemand nicht mitmacht, ___.",
+          "unterschriften": [
+            "Name",
+            "Name",
+            "Name",
+            "Name"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Nach der Arbeit: Wie hat es geklappt? Kreuzt gemeinsam an.",
+          "symbole": [
+            "gruppe",
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "gut",
+            "teils",
+            "noch nicht"
+          ],
+          "items": [
+            "Jeder hat seine Rolle erfüllt.",
+            "Wir haben einander zugehört.",
+            "Alle konnten ihre Ideen sagen.",
+            "Wir sind rechtzeitig fertig geworden.",
+            "Wir haben uns an die Abmachung gehalten."
+          ]
+        },
+        {
+          "art": "linien",
+          "anzahl": 2,
+          "label": "Das machen wir nächstes Mal anders:"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder lernen vier Gruppenrollen kennen, verteilen sie, treffen Abmachungen für die Zusammenarbeit und schauen danach gemeinsam zurück.",
+        "ablauf": [
+          "Einstieg (5 Min.): Die Geschichte vorlesen. Aufgabe 1 im Plenum sammeln: Was hat der Gruppe gefehlt?",
+          "Die Rollenkarten vorstellen, die Beispielsätze einmal laut sprechen. Klären: Jede Rolle arbeitet auch inhaltlich mit.",
+          "In Vierergruppen die Rollen verteilen (bei Uneinigkeit losen), die Abmachung ausfüllen und unterschreiben.",
+          "Eine echte Gruppenaufgabe bearbeiten, z. B. ein Plakat oder ein Rätsel (15–20 Min.).",
+          "Aufgabe 4 direkt danach in der Gruppe ausfüllen. Jede Gruppe nennt einen Punkt für das nächste Mal."
+        ],
+        "hintergrund": "Zusammenarbeit gelingt Kindern nicht von selbst: Sind Aufgaben und Regeln unklar, zerfallen Gruppen oft in Vielredner und Stille. Feste Rollen geben jedem Kind eine sichtbare Verantwortung und machen die Beiträge aller notwendig. Das stärkt zwei Grundbedürfnisse, die nach der Selbstbestimmungstheorie Motivation tragen: sich kompetent und zugehörig zu fühlen (Deci & Ryan, 2000). Wirksame Programme zum sozialen Lernen üben solche Fertigkeiten ausdrücklich, aktiv und in aufeinander aufbauenden Schritten, statt sie nur zu erwarten (Durlak et al., 2011). Der gemeinsame Rückblick macht Fortschritte sichtbar und liefert die nächste Abmachung.",
+        "quellen": [
+          "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268.",
+          "Durlak, J. A., Weissberg, R. P., Dymnicki, A. B., Taylor, R. D. & Schellinger, K. B. (2011). The impact of enhancing students’ social and emotional learning: A meta-analysis of school-based universal interventions. Child Development, 82(1), 405–432."
+        ],
+        "differenzierung": {
+          "leichter": "Mit zwei Rollen beginnen (Zeitwächter, Materialchefin). Die Abmachung mündlich treffen.",
+          "schwerer": "Eine fünfte Rolle erfinden, etwa „Streitschlichterin“, und eine Karte dazu gestalten."
+        },
+        "impulse": [
+          "Welche Rolle liegt dir, welche möchtest du üben?",
+          "Was macht ihr, wenn jemand seine Rolle vergisst?",
+          "Worauf ist eure Gruppe heute stolz?"
+        ],
+        "tipps": [
+          "Gruppen selbst zusammenstellen, damit kein Kind übrig bleibt.",
+          "Die Rollen bei jeder Gruppenarbeit wechseln und die Karten laminiert im Klassenraum aufbewahren."
+        ],
+        "material": "Schere; Material für die Gruppenaufgabe"
+      }
+    }
+  },
+  {
+    "id": "feedback-geben",
+    "bereich": "miteinander",
+    "thema": "zusammenarbeit",
+    "stufen": [
+      "ES"
+    ],
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "45–50 Min.",
+    "eldib": [
+      "K-32",
+      "K-28",
+      "SOZ-40"
+    ],
+    "schlagworte": [
+      "Feedback",
+      "Rückmeldung",
+      "Kritik",
+      "Präsentation",
+      "Zusammenarbeit"
+    ],
+    "bild": "icon:messages",
+    "de": {
+      "titel": "Feedback geben und annehmen",
+      "untertitel": "Gutes Feedback bewertet nicht die Person, sondern die Arbeit – und zeigt, wie es weitergehen kann.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Was gutes Feedback ausmacht",
+          "text": "Hilfreiches Feedback bezieht sich auf die Arbeit, nicht auf die Person. Es beantwortet drei Fragen:",
+          "punkte": [
+            "Was war das Ziel? – Woran wird die Arbeit gemessen?",
+            "Wo stehst du? – Was gelingt schon, was noch nicht?",
+            "Wie geht es weiter? – Was ist der nächste Schritt?"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Welche Rückmeldung hilft weiter? Entscheide."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "hilft",
+            "hilft kaum"
+          ],
+          "items": [
+            "„Voll gut.“",
+            "„Deine Folien sind gut lesbar. Du hast oft auf den Boden geschaut – schau nächstes Mal öfter in die Klasse.“",
+            "„Du bist einfach nicht der Typ für Präsentationen.“",
+            "„Die Einleitung hat mich neugierig gemacht. Im Mittelteil fehlte mir ein Beispiel.“",
+            "„Das war langweilig.“",
+            "„Alle Quellen sind angegeben. Auf Folie 4 ist die Schrift für die letzte Reihe zu klein.“"
+          ]
+        },
+        {
+          "art": "spalten",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Feedback geben",
+              "punkte": [
+                "Konkret: Sag genau, was dir aufgefallen ist.",
+                "Zur Sache: Sprich über die Arbeit, nicht über die Person.",
+                "Ich-Form: „Mir ist aufgefallen …“ statt „Du bist …“",
+                "Erst, was gelingt – dann ein oder zwei Tipps."
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Feedback annehmen",
+              "punkte": [
+                "Zuhören und ausreden lassen.",
+                "Nachfragen: „Kannst du ein Beispiel geben?“",
+                "Sich nicht sofort verteidigen.",
+                "Danke sagen – und selbst entscheiden, was du übernimmst."
+              ]
+            }
+          ]
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Formuliere die Rückmeldungen um, die kaum helfen."
+        },
+        {
+          "art": "wortspeicher",
+          "titel": "Satzanfänge",
+          "items": [
+            "Mir ist aufgefallen, dass …",
+            "Gut gelungen ist …",
+            "Klarer wäre es, wenn …",
+            "Mein Tipp für nächstes Mal: …",
+            "Was meinst du genau mit …?"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "So hilft es kaum",
+            "So hilft es weiter"
+          ],
+          "breiten": [
+            1,
+            2.2
+          ],
+          "zeilen": 2,
+          "beispiel": [
+            "„Das war langweilig.“",
+            "„Bei den vielen Zahlen konnte ich nicht folgen. Ein Diagramm hätte mir geholfen.“"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Übt zu zweit an einer echten Arbeit, z. B. Heft, Plakat oder Präsentation. Gebt einander Feedback in drei Schritten."
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 2,
+          "items": [
+            {
+              "titel": "Das gelingt schon"
+            },
+            {
+              "titel": "Das ist mir aufgefallen"
+            },
+            {
+              "titel": "Mein Tipp"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Welches Feedback hast du bekommen – und was machst du daraus?"
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Das Feedback, das ich bekommen habe:",
+            "Das nehme ich mir vor:"
+          ],
+          "linien": 2
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen unterscheiden hilfreiches von wenig hilfreichem Feedback, formulieren Rückmeldungen konkret und sachbezogen und üben, Feedback anzunehmen.",
+        "ablauf": [
+          "Einstieg (5 Min.): „Welche Rückmeldung hat euch einmal wirklich weitergebracht – und warum?“ Zwei, drei Beispiele sammeln.",
+          "Info-Kasten lesen, Aufgabe 1 allein. Im Plenum klären, warum „Voll gut“ nett ist, aber kaum hilft.",
+          "Die Regeln zum Geben und Annehmen gemeinsam lesen. Aufgabe 2 mit dem Wortspeicher lösen.",
+          "Aufgabe 3 zu zweit an einer echten Arbeit (10 Min.). Die Lehrperson macht es vorher einmal vor.",
+          "Aufgabe 4 allein. Abschluss: Wer möchte, nennt seinen Vorsatz."
+        ],
+        "hintergrund": "Feedback gehört zu den stärksten Einflüssen auf das Lernen – allerdings nur unter bestimmten Bedingungen. Hattie und Timperley (2007) beschreiben drei Leitfragen: Wohin soll es gehen? Wo stehe ich? Was ist der nächste Schritt? Am wirksamsten ist Feedback zur Aufgabe, zum Vorgehen und zur Selbststeuerung; Rückmeldungen zur Person („Du bist schlau“, „Du kannst das nicht“) helfen kaum. Dweck (2006) zeigt zudem, dass Lob für Anstrengung und Vorgehen eher zum Weiterlernen ermutigt als Lob für Begabung. Feedback anzunehmen ist eine eigene Fähigkeit: Wer nachfragt, statt sich zu verteidigen, kann Rückmeldungen besser nutzen.",
+        "quellen": [
+          "Hattie, J. & Timperley, H. (2007). The power of feedback. Review of Educational Research, 77(1), 81–112.",
+          "Dweck, C. S. (2006). Mindset: The New Psychology of Success. New York: Random House."
+        ],
+        "differenzierung": {
+          "leichter": "Nur Aufgabe 1 und 3 bearbeiten. Die Satzanfänge als Kärtchen auf den Tisch legen.",
+          "schwerer": "Vor einer Präsentation eigene Kriterien entwickeln und das Feedback darauf beziehen."
+        },
+        "impulse": [
+          "Warum ist Kritik manchmal so schwer anzunehmen?",
+          "Wo liegt die Grenze zwischen Kritik und Abwertung?",
+          "Von wem nimmst du Feedback am leichtesten an?"
+        ],
+        "tipps": [
+          "Vorher klare Kriterien vereinbaren, auf die sich das Feedback bezieht.",
+          "Als Lehrperson selbst um Feedback bitten und vorleben, wie man es annimmt.",
+          "Verletzende Rückmeldungen sofort stoppen und umformulieren lassen."
+        ],
+        "material": "Pro Person eine eigene Arbeit (Heft, Plakat oder Präsentation)"
+      }
+    },
+    "fr": {
+      "titel": "Donner et recevoir un feedback",
+      "untertitel": "Un bon feedback ne juge pas la personne, mais le travail – et montre comment avancer.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Ce qui fait un bon feedback",
+          "text": "Un feedback utile porte sur le travail, pas sur la personne. Il répond à trois questions :",
+          "punkte": [
+            "Quel était l’objectif ? – À quoi mesure-t-on le travail ?",
+            "Où en es-tu ? – Qu’est-ce qui réussit déjà, qu’est-ce qui manque encore ?",
+            "Et maintenant ? – Quelle est la prochaine étape ?"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Quel retour aide vraiment ? Décide."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "aide",
+            "aide peu"
+          ],
+          "items": [
+            "« Trop bien. »",
+            "« Tes diapos sont faciles à lire. Tu as souvent regardé par terre – la prochaine fois, regarde davantage la classe. »",
+            "« Tu n’es juste pas fait·e pour les exposés. »",
+            "« L’introduction m’a donné envie d’en savoir plus. Dans la partie centrale, il me manquait un exemple. »",
+            "« C’était ennuyeux. »",
+            "« Toutes les sources sont citées. Sur la diapo 4, le texte est trop petit pour le dernier rang. »"
+          ]
+        },
+        {
+          "art": "spalten",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Donner un feedback",
+              "punkte": [
+                "Concret : dis précisément ce que tu as remarqué.",
+                "Sur le fond : parle du travail, pas de la personne.",
+                "À la première personne : « J’ai remarqué … » plutôt que « Tu es … »",
+                "D’abord ce qui réussit – puis un ou deux conseils."
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Recevoir un feedback",
+              "punkte": [
+                "Écouter et laisser l’autre finir.",
+                "Demander : « Tu peux me donner un exemple ? »",
+                "Ne pas se justifier tout de suite.",
+                "Dire merci – et décider soi-même de ce qu’on garde."
+              ]
+            }
+          ]
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Reformule les retours qui aident peu."
+        },
+        {
+          "art": "wortspeicher",
+          "titel": "Débuts de phrase",
+          "items": [
+            "J’ai remarqué que …",
+            "Ce qui est réussi, c’est …",
+            "Ce serait plus clair si …",
+            "Mon conseil pour la prochaine fois : …",
+            "Que veux-tu dire par … ?"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Ça aide peu",
+            "Ça aide vraiment"
+          ],
+          "breiten": [
+            1,
+            2.2
+          ],
+          "zeilen": 2,
+          "beispiel": [
+            "« C’était ennuyeux. »",
+            "« Avec tous ces chiffres, je n’ai pas pu suivre. Un graphique m’aurait aidé·e. »"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Entraînez-vous à deux sur un vrai travail, p. ex. un cahier, une affiche ou un exposé. Donnez-vous un feedback en trois étapes."
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 2,
+          "items": [
+            {
+              "titel": "Ce qui réussit déjà"
+            },
+            {
+              "titel": "Ce que j’ai remarqué"
+            },
+            {
+              "titel": "Mon conseil"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Quel feedback as-tu reçu – et qu’en fais-tu ?"
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Le feedback que j’ai reçu :",
+            "Ce que je décide de faire :"
+          ],
+          "linien": 2
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes distinguent un feedback utile d’un feedback peu utile, formulent des retours concrets et centrés sur le travail, et s’entraînent à recevoir un feedback.",
+        "ablauf": [
+          "Entrée en matière (5 min) : « Quel retour vous a un jour vraiment fait avancer – et pourquoi ? » Recueillir deux ou trois exemples.",
+          "Lire l’encadré, exercice 1 seul·e. En classe, clarifier pourquoi « Trop bien » fait plaisir, mais aide peu.",
+          "Lire ensemble les règles pour donner et recevoir. Faire l’exercice 2 avec les débuts de phrase.",
+          "Exercice 3 à deux sur un vrai travail (10 min). L’enseignant·e montre d’abord un exemple.",
+          "Exercice 4 seul·e. Clôture : qui le souhaite partage sa résolution."
+        ],
+        "hintergrund": "Le feedback fait partie des influences les plus fortes sur l’apprentissage – mais seulement à certaines conditions. Hattie et Timperley (2007) décrivent trois questions : Où vais-je ? Où en suis-je ? Quelle est la prochaine étape ? Le feedback le plus efficace porte sur la tâche, la démarche et l’autorégulation. Les retours sur la personne (« Tu es doué·e », « Tu n’y arriveras pas ») aident peu. Dweck (2006) montre en outre que féliciter l’effort et la démarche encourage davantage à continuer d’apprendre que féliciter le talent. Recevoir un feedback est une compétence à part entière : qui pose des questions au lieu de se défendre en tire davantage profit.",
+        "quellen": [
+          "Hattie, J. & Timperley, H. (2007). The power of feedback. Review of Educational Research, 77(1), 81–112.",
+          "Dweck, C. S. (2006). Mindset: The New Psychology of Success. New York: Random House."
+        ],
+        "differenzierung": {
+          "leichter": "Ne faire que les exercices 1 et 3. Poser les débuts de phrase sur la table sous forme de cartes.",
+          "schwerer": "Avant un exposé, définir ses propres critères et y rattacher le feedback."
+        },
+        "impulse": [
+          "Pourquoi une critique est-elle parfois si difficile à accepter ?",
+          "Où passe la limite entre critique et dévalorisation ?",
+          "De qui acceptes-tu le plus facilement un feedback ?"
+        ],
+        "tipps": [
+          "Fixer au préalable des critères clairs sur lesquels porte le feedback.",
+          "Demander soi-même un feedback aux élèves et montrer comment on l’accueille.",
+          "Arrêter tout de suite les retours blessants et les faire reformuler."
+        ],
+        "material": "Un travail personnel par élève (cahier, affiche ou exposé)"
+      }
+    }
+  },
+  {
+    "id": "wer-hilft-mir",
+    "bereich": "miteinander",
+    "thema": "hilfe",
+    "stufen": [
+      "C1"
+    ],
+    "sozialform": [
+      "gruppe",
+      "klasse"
+    ],
+    "dauer": "20–25 Min.",
+    "eldib": [
+      "SOZ-12",
+      "K-12",
+      "K-6"
+    ],
+    "schlagworte": [
+      "Hilfe holen",
+      "Bezugspersonen",
+      "Erwachsene",
+      "Spielschule",
+      "Sicherheit"
+    ],
+    "bild": "icon:user-heart",
+    "de": {
+      "titel": "Wer hilft mir?",
+      "anleitung": "Die Bildfolge gemeinsam anschauen und nachspielen. Danach zeigt das Kind, wer ihm hilft und wann es Hilfe holt. Den Satz „Kannst du mir bitte helfen?“ mehrmals gemeinsam sprechen.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Schau zu: So holt Noah Hilfe.",
+          "symbole": [
+            "zeigen",
+            "zuhoeren"
+          ]
+        },
+        {
+          "art": "comic",
+          "spalten": 3,
+          "felder": [
+            {
+              "figuren": [
+                "figur:noah:traurig"
+              ],
+              "requisit": "icon:bandage",
+              "blase": "keine",
+              "untertitel": "Noah ist hingefallen."
+            },
+            {
+              "figuren": [
+                "figur:noah:traurig",
+                "figur:lehrerin:ruhig"
+              ],
+              "blase": "keine",
+              "untertitel": "„Kannst du mir bitte helfen?“"
+            },
+            {
+              "figuren": [
+                "figur:noah:froh",
+                "figur:lehrerin:froh"
+              ],
+              "requisit": "icon:bandage",
+              "blase": "keine",
+              "untertitel": "Die Lehrerin hilft ihm."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wer hilft dir? Zeige oder kreise ein.",
+          "symbole": [
+            "zeigen",
+            "einkreisen"
+          ]
+        },
+        {
+          "art": "bilder",
+          "modus": "einkreisen",
+          "spalten": 4,
+          "bilder": [
+            {
+              "bild": "figur:lehrerin:froh:winken",
+              "text": "Lehrerin"
+            },
+            {
+              "bild": "figur:lehrer:froh",
+              "text": "Erzieher"
+            },
+            {
+              "bild": "icon:home",
+              "text": "Familie"
+            },
+            {
+              "bild": "figur:amira:froh",
+              "text": "Freundin"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wann holst du Hilfe? Zeige und erzähle.",
+          "symbole": [
+            "zeigen",
+            "sprechen"
+          ]
+        },
+        {
+          "art": "bilder",
+          "modus": "nur",
+          "spalten": 4,
+          "bilder": [
+            {
+              "bild": "icon:bandage",
+              "text": "wehgetan"
+            },
+            {
+              "bild": "figur:sami:aengstlich",
+              "text": "Angst"
+            },
+            {
+              "bild": "figur:tom:traurig",
+              "text": "traurig"
+            },
+            {
+              "bild": "figur:mia:wuetend:verschraenkt",
+              "text": "Streit"
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder lernen Erwachsene kennen, die ihnen helfen, erkennen Situationen, in denen sie Hilfe holen, und üben einen einfachen Satz, mit dem sie um Hilfe bitten.",
+        "ablauf": [
+          "Einstieg (5 Min.): Die Bildfolge anschauen. Fragen: „Was ist Noah passiert? Was macht er dann?“",
+          "Nachspielen: Ein Kind ist Noah, die Lehrperson hilft. Alle sprechen den Satz „Kannst du mir bitte helfen?“ mit.",
+          "Aufgabe 2: Die Bilder benennen. Jedes Kind zeigt, wer ihm hilft. Die Namen der Erwachsenen in der Spielschule nennen.",
+          "Aufgabe 3: Zu jedem Bild fragen: „Was machst du, wenn …?“ Mit dem geübten Satz antworten lassen.",
+          "Abschluss: Gemeinsam zeigen, wo die Kinder in der Pause einen Erwachsenen finden."
+        ],
+        "hintergrund": "Hilfe holen ist für kleine Kinder eine wichtige Fähigkeit – und eine Frage der Beziehung. Die Resilienzforschung zeigt, dass verlässliche Beziehungen zu fürsorglichen Erwachsenen zu den stärksten Schutzfaktoren in der Entwicklung gehören (Masten, 2014). In der Kauai-Studie fanden viele Kinder, die unter schwierigen Bedingungen aufwuchsen, Halt bei Bezugspersonen außerhalb der Familie, etwa bei Lehrkräften oder Nachbarn (Werner & Smith, 1992). Damit Kinder Hilfe holen, müssen sie wissen, wer ansprechbar ist, und einen einfachen Satz dafür parat haben. Wiederholtes Nachspielen macht diesen Satz auch in aufregenden Momenten abrufbar.",
+        "quellen": [
+          "Masten, A. S. (2014). Ordinary Magic: Resilience in Development. New York: Guilford.",
+          "Werner, E. E. & Smith, R. S. (1992). Overcoming the Odds. Ithaca: Cornell University Press."
+        ],
+        "differenzierung": {
+          "leichter": "Mit Fotos der Erwachsenen aus Spielschule und Maison Relais arbeiten.",
+          "schwerer": "Von einer Situation erzählen oder malen, in der das Kind schon Hilfe geholt hat."
+        },
+        "impulse": [
+          "Wen kannst du hier in der Spielschule fragen?",
+          "Was machst du, wenn die Lehrerin gerade beschäftigt ist?",
+          "Wem hast du schon einmal geholfen?"
+        ],
+        "tipps": [
+          "Jede Bitte um Hilfe freundlich beantworten – auch kleine. So lernen Kinder, dass Fragen sich lohnt.",
+          "Den Satz mit einer Geste verbinden (Hand heben) – das hilft Kindern mit wenig Deutsch."
+        ],
+        "achtung": "Zeigt ein Kind große Angst oder erzählt es, dass ihm jemand wehtut: ernst nehmen, nicht vor der Gruppe nachfragen, allein zuhören und die zuständige Leitung (Responsable) informieren. Bei Hinweisen auf Gewalt sofort nach dem internen Ablauf handeln.",
+        "material": "Optional Fotos der Erwachsenen aus Spielschule und Maison Relais"
+      }
+    }
+  },
+  {
+    "id": "meine-helfer-hand",
+    "bereich": "miteinander",
+    "thema": "hilfe",
+    "stufen": [
+      "C2"
+    ],
+    "sozialform": [
+      "einzeln",
+      "klasse"
+    ],
+    "dauer": "30 Min.",
+    "eldib": [
+      "K-12",
+      "SOZ-12",
+      "SOZ-26"
+    ],
+    "schlagworte": [
+      "Vertrauenspersonen",
+      "Hilfe holen",
+      "Helfer-Hand",
+      "Geheimnisse",
+      "Prävention"
+    ],
+    "bild": "motiv:hand",
+    "de": {
+      "titel": "Meine Helfer-Hand",
+      "untertitel": "Fünf Finger – fünf Menschen, die dir helfen.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Wer hilft dir? Schreibe oder male zu jedem Finger einen Menschen.",
+          "hinweis": "Denk an Menschen zu Hause, in der Schule und in deiner Freizeit.",
+          "symbole": [
+            "schreiben",
+            "malen"
+          ]
+        },
+        {
+          "art": "hand",
+          "finger": [
+            "zu Hause",
+            "in der Schule",
+            "in der Maison Relais",
+            "in der Freizeit",
+            "noch jemand"
+          ],
+          "mitte": "Meine Helfer"
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Hilft einer nicht, frag den nächsten Finger.",
+          "text": "Du darfst immer Hilfe holen. Zum Beispiel, wenn …",
+          "punkte": [
+            "dir etwas wehtut.",
+            "du Angst hast oder traurig bist.",
+            "dich jemand immer wieder ärgert.",
+            "ein Geheimnis dir Bauchweh macht."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Übe den Satz. Schreibe ihn zu Ende.",
+          "symbole": [
+            "sprechen",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Ich brauche Hilfe, weil …",
+            "Zuerst frage ich …"
+          ]
+        },
+        {
+          "art": "rueckblick"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder benennen fünf Vertrauenspersonen aus verschiedenen Lebensbereichen, kennen Anlässe, bei denen sie Hilfe holen dürfen, und üben, um Hilfe zu bitten.",
+        "ablauf": [
+          "Einstieg (5 Min.): Die eigene Hand auf den Tisch legen. Fragen: „Wer hilft euch, wenn etwas schiefgeht?“",
+          "Aufgabe 1: Zu jedem Finger einen Menschen finden. Wer nicht schreiben mag, malt – oder die Lehrperson schreibt mit.",
+          "Den Merke-Kasten vorlesen. Gute Geheimnisse (Überraschungen) von schlechten unterscheiden: Schlechte machen Bauchweh und dürfen immer erzählt werden.",
+          "Aufgabe 2: Den Satz zu zweit üben, einmal leise, einmal laut.",
+          "Abschluss: Die Hand mit nach Hause nehmen oder – wenn das Kind möchte – im Klassenraum aufhängen."
+        ],
+        "hintergrund": "Die Helfer-Hand ist eine verbreitete Methode der Prävention: Kinder benennen fünf Vertrauenspersonen aus verschiedenen Lebensbereichen. Das hat einen guten Grund. Die Resilienzforschung zeigt, dass Kinder in schwierigen Lagen besonders von Erwachsenen profitieren, die zuverlässig ansprechbar sind – auch außerhalb der Familie (Werner & Smith, 1992). Soziale Unterstützung zu suchen, ist zudem eine wichtige Strategie, mit der Kinder belastende Gefühle bewältigen (Petermann & Wiedebusch, 2016). Mehrere Personen sind wichtig: Hört die erste nicht zu, weiß das Kind, wen es als Nächstes fragen kann.",
+        "quellen": [
+          "Werner, E. E. & Smith, R. S. (1992). Overcoming the Odds. Ithaca: Cornell University Press.",
+          "Petermann, F. & Wiedebusch, S. (2016). Emotionale Kompetenz bei Kindern (3. Aufl.). Göttingen: Hogrefe."
+        ],
+        "differenzierung": {
+          "leichter": "Die Namen mündlich sagen lassen und mitschreiben. Zeichnungen statt Schrift sind in Ordnung.",
+          "schwerer": "Zu jeder Person notieren, wobei sie besonders gut helfen kann."
+        },
+        "impulse": [
+          "Wen würdest du zuerst fragen – und warum?",
+          "Was ist ein gutes, was ein schlechtes Geheimnis?",
+          "Was kannst du tun, wenn gerade niemand zuhört?"
+        ],
+        "tipps": [
+          "Darauf achten, dass auf jeder Hand mindestens ein Erwachsener aus der Schule steht.",
+          "Die Hand nach einigen Wochen gemeinsam anschauen und ergänzen."
+        ],
+        "achtung": "Findet ein Kind kaum Vertrauenspersonen, das behutsam im Blick behalten. Erzählt es von einem schlechten Geheimnis oder davon, dass ihm jemand wehtut: nicht im Plenum vertiefen, allein zuhören und die zuständige Leitung (Responsable) informieren. Bei Hinweisen auf Gewalt sofort nach dem internen Ablauf handeln.",
+        "material": "Buntstifte"
+      }
+    }
+  },
+  {
+    "id": "mein-unterstuetzungsnetz",
+    "bereich": "miteinander",
+    "thema": "hilfe",
+    "stufen": [
+      "C3",
+      "C4"
+    ],
+    "sozialform": [
+      "einzeln",
+      "gruppe",
+      "klasse"
+    ],
+    "dauer": "45 Min.",
+    "eldib": [
+      "SOZ-26",
+      "K-27",
+      "K-15"
+    ],
+    "schlagworte": [
+      "Unterstützung",
+      "Nähe-Kreise",
+      "Vertrauenspersonen",
+      "Hilfe holen",
+      "Kanner- a Jugendtelefon"
+    ],
+    "bild": "icon:target",
+    "de": {
+      "titel": "Mein Unterstützungsnetz",
+      "untertitel": "Niemand muss alles allein schaffen. Wer weiß, wen er fragen kann, findet schneller Hilfe.",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "Nora weiß nicht weiter",
+          "text": "Seit einer Woche lachen zwei Kinder aus der Klasse über Noras Brille. Nora hat es noch niemandem erzählt. Ihre Mama arbeitet abends lange, und ihre beste Freundin ist in einer anderen Klasse. Nora denkt: „Es gibt niemanden, den ich fragen kann.“",
+          "bild": "figur:amira:besorgt"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Stimmt das? Wen könnte Nora fragen? Schreibe drei Ideen auf.",
+          "symbole": [
+            "lesen",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "linien",
+          "anzahl": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wen fragst du wofür? Ergänze die Sätze.",
+          "hinweis": "Es dürfen verschiedene Menschen sein – für jede Sorge der passende.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Wenn ich traurig bin, gehe ich zu",
+            "Wenn mich jemand ärgert, sage ich es",
+            "Bei den Hausaufgaben hilft mir",
+            "Wenn ich Streit mit einem Freund habe, rede ich mit",
+            "Wenn ich mir Sorgen um jemanden mache, erzähle ich es"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Hier bekommst du auch Hilfe",
+          "text": "Du magst mit niemandem reden, den du kennst? Beim Kanner- a Jugendtelefon hört dir jemand zu. Es kostet nichts, und du musst deinen Namen nicht sagen. Telefon: 116 111"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wer gehört zu deinem Netz? Schreibe Namen in die Kreise.",
+          "hinweis": "Innen stehen Menschen, die dir ganz nah sind. Weiter außen stehen Menschen, die dir auch helfen können.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "zielscheibe",
+          "ringe": [
+            "Können auch helfen",
+            "Gut bekannt",
+            "Ganz nah"
+          ],
+          "mitte": "Ich"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Du gehörst auch zu anderen Netzen. Für wen bist du da?",
+          "symbole": [
+            "nachdenken",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Ich bin da für",
+            "So helfe ich:"
+          ],
+          "linien": 2
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder machen ihr Unterstützungsnetz sichtbar, überlegen, wen sie bei welchen Sorgen ansprechen können, und kennen das Kanner- a Jugendtelefon.",
+        "ablauf": [
+          "Einstieg (5 Min.): Die Geschichte vorlesen. Fragen: „Stimmt es, dass Nora niemanden hat?“ Ideen aus Aufgabe 1 an der Tafel sammeln.",
+          "Aufgabe 2 allein. Betonen: Für verschiedene Sorgen passen verschiedene Menschen.",
+          "Den Hilfe-Kasten lesen und kurz erklären, wie ein Anruf beim Kanner- a Jugendtelefon abläuft.",
+          "Aufgabe 3: Namen in die Kreise schreiben. Auch Trainer, Nachbarn oder die Pausenaufsicht zählen.",
+          "Aufgabe 4 und kurzer Austausch zu zweit: „Für wen bist du da?“"
+        ],
+        "hintergrund": "Ein tragfähiges Netz aus Beziehungen gehört zu den wichtigsten Schutzfaktoren: Verlässliche Menschen in Familie, Schule und Freizeit helfen Kindern, Belastungen zu bewältigen (Masten, 2014). Antonovsky (1987) beschreibt soziale Unterstützung als zentrale Widerstandsressource: Wer weiß, dass Hilfe verfügbar ist, erlebt schwierige Situationen eher als handhabbar. Gerade in belastenden Momenten fällt Kindern aber oft niemand ein. Das Netz auf Papier sichtbar zu machen, wirkt dem entgegen und klärt, wen man wofür fragen kann. Wichtig ist auch die andere Richtung: Wer selbst hilft, erlebt sich als wertvollen Teil eines Netzes.",
+        "quellen": [
+          "Masten, A. S. (2014). Ordinary Magic: Resilience in Development. New York: Guilford.",
+          "Antonovsky, A. (1987). Unraveling the Mystery of Health. San Francisco: Jossey-Bass."
+        ],
+        "differenzierung": {
+          "leichter": "Nur Aufgabe 2 und 3 bearbeiten. Namen durch kleine Zeichnungen ergänzen.",
+          "schwerer": "Zu den Personen notieren, wann und wie man sie erreicht."
+        },
+        "impulse": [
+          "Wen würdest du bei einem großen Problem zuerst fragen?",
+          "Was tust du, wenn die erste Person keine Zeit hat?",
+          "Woran merkst du, dass jemand deine Hilfe braucht?"
+        ],
+        "tipps": [
+          "Die Netze nicht vergleichen lassen – jedes Netz ist anders groß.",
+          "Die Nummer 116 111 gut sichtbar im Klassenraum aushängen."
+        ],
+        "achtung": "Bleibt der innere Kreis leer oder nennt ein Kind keinen Erwachsenen: behutsam allein nachfragen und die zuständige Leitung (Responsable) informieren. Bei Hinweisen auf Gewalt oder Vernachlässigung sofort nach dem internen Ablauf handeln.",
+        "material": "Stifte"
+      }
+    }
+  },
+  {
+    "id": "wer-ist-fuer-mich-da",
+    "bereich": "miteinander",
+    "thema": "hilfe",
+    "stufen": [
+      "ES"
+    ],
+    "sozialform": [
+      "einzeln",
+      "klasse"
+    ],
+    "dauer": "45 Min.",
+    "eldib": [
+      "V-32",
+      "SOZ-41",
+      "SOZ-40"
+    ],
+    "schlagworte": [
+      "Unterstützung",
+      "Hilfe holen",
+      "SePAS",
+      "Kanner- a Jugendtelefon",
+      "Notfallnummern",
+      "Vertrauensperson"
+    ],
+    "bild": "icon:lifebuoy",
+    "de": {
+      "titel": "Wer ist für mich da?",
+      "untertitel": "Belastungen gehören zum Leben. Wer weiß, an wen er sich wenden kann, muss nicht warten, bis gar nichts mehr geht.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Unterstützung hat viele Formen",
+          "text": "Nicht jede Person hilft bei allem. Oft braucht es verschiedene Menschen:",
+          "punkte": [
+            "Zuhören: jemand, bei dem du einfach reden kannst.",
+            "Rat: jemand, der sich auskennt und Ideen hat.",
+            "Praktische Hilfe: jemand, der mit anpackt oder dich begleitet.",
+            "Ablenkung: jemand, mit dem du lachen und abschalten kannst."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wer ist für dich da – und wofür? Fülle die Tabelle aus.",
+          "hinweis": "Denk an Familie, Freundeskreis, Schule, Verein und Nachbarschaft – und an Fachleute. Die Tabelle bleibt bei dir."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Person",
+            "Dafür ist sie gut",
+            "So erreiche ich sie"
+          ],
+          "breiten": [
+            1.2,
+            2,
+            1.5
+          ],
+          "zeilen": 4,
+          "beispiel": [
+            "meine Tante Rosa",
+            "zuhören, wenn es zu Hause Stress gibt",
+            "Nachricht schreiben, am Wochenende"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Anlaufstellen im Lycée und außerhalb",
+          "punkte": [
+            "SePAS im Lycée: Psychologinnen, Psychologen und Sozialarbeitende hören zu und beraten – vertraulich. Du kannst selbst einen Termin ausmachen.",
+            "Kanner- a Jugendtelefon 116 111: anonym und kostenlos, wenn du lieber mit jemandem sprichst, der dich nicht kennt.",
+            "Vertrauenspersonen in der Schule: deine Klassenlehrerin oder dein Klassenlehrer, Educateurs, andere Lehrpersonen."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was hält dich manchmal davon ab, Hilfe zu holen? Kreuze an, was du kennst."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "kenne ich",
+            "kenne ich nicht"
+          ],
+          "items": [
+            "„Das ist nicht schlimm genug.“",
+            "„Ich will niemandem zur Last fallen.“",
+            "„Dann wissen es gleich alle.“",
+            "„Mir kann sowieso keiner helfen.“",
+            "„Ich sollte das allein schaffen.“"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Du musst nicht warten, bis es „schlimm genug“ ist.",
+          "text": "Gespräche beim SePAS und beim Kanner- a Jugendtelefon sind vertraulich. Hilfe zu holen ist kein Versagen – es ist eine Fähigkeit, die auch Erwachsene brauchen."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schreibe deinen Plan für schwierige Zeiten."
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Wenn ich merke, dass es mir seit Tagen nicht gut geht,",
+              "dann": "spreche ich zuerst mit meiner Schwester und mache einen Termin beim SePAS."
+            }
+          ]
+        },
+        {
+          "art": "notfall"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen machen sich ihr Unterstützungsnetz bewusst, kennen Anlaufstellen in und außerhalb des Lycée und legen fest, an wen sie sich wenden, wenn es ihnen länger nicht gut geht.",
+        "ablauf": [
+          "Einstieg (5 Min.): „Mit wem redet ihr über Schulstress – und mit wem über Liebeskummer?“ Keine Namen nennen lassen.",
+          "Info-Kasten lesen, Aufgabe 1 allein. Betonen: Die Tabelle bleibt privat.",
+          "Anlaufstellen besprechen: Wo ist der SePAS, wie bekommt man einen Termin? Ideal: Jemand vom SePAS stellt sich kurz vor.",
+          "Aufgabe 2 allein; im Plenum sammeln, welche Gedanken viele kennen – ohne persönliche Zuordnung.",
+          "Aufgabe 3 und Notfallkasten: den eigenen Plan schreiben und eine Vertrauensperson eintragen."
+        ],
+        "hintergrund": "Beziehungen zu verlässlichen Menschen gehören zu den stärksten Schutzfaktoren im Jugendalter (Masten, 2014). Trotzdem holen sich viele Jugendliche erst spät Hilfe: Sie halten ihr Problem für nicht schlimm genug, fürchten, dass andere davon erfahren, oder wollen es allein schaffen. Wer vorher weiß, wohin er sich wenden kann, handelt früher. Das Blatt lehnt sich an den Sicherheitsplan an (Stanley & Brown, 2012): vertraute Menschen, professionelle Anlaufstellen, Notrufnummern und ein konkreter erster Schritt – vorbeugend sinnvoll für alle, nicht nur in Krisen.",
+        "quellen": [
+          "Masten, A. S. (2014). Ordinary Magic: Resilience in Development. New York: Guilford.",
+          "Stanley, B. & Brown, G. K. (2012). Safety planning intervention: A brief intervention to mitigate suicide risk. Cognitive and Behavioral Practice, 19(2), 256–264."
+        ],
+        "differenzierung": {
+          "leichter": "Nur zwei Zeilen der Tabelle, Aufgabe 3 und den Notfallkasten bearbeiten.",
+          "schwerer": "Eine Übersicht der Anlaufstellen im eigenen Lycée erstellen: Wer? Wo? Wann erreichbar?"
+        },
+        "impulse": [
+          "Was macht es leichter, um Hilfe zu bitten?",
+          "Wann ist ein Problem zu groß für dich allein?",
+          "Wie kannst du jemanden unterstützen, dem es schlecht geht?"
+        ],
+        "tipps": [
+          "Die Blätter nicht einsammeln – sie gehören den Jugendlichen.",
+          "Vertraulichkeit ehrlich erklären: Sie hat Grenzen, wenn jemand in Gefahr ist."
+        ],
+        "achtung": "Bei Hinweisen auf eine Krise, Selbstverletzung oder Suizidgedanken: sofort nach dem internen Ablauf handeln, nicht allein lassen, die zuständige Leitung (Responsable) und den SePAS einbeziehen – nichts im Plenum vertiefen.",
+        "material": "Kontaktdaten des SePAS im Lycée"
+      }
+    },
+    "fr": {
+      "titel": "Sur qui compter",
+      "untertitel": "Les moments difficiles font partie de la vie. Savoir vers qui se tourner évite d’attendre que plus rien n’aille.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Le soutien prend plusieurs formes",
+          "text": "Personne n’aide pour tout. Souvent, il faut des personnes différentes :",
+          "punkte": [
+            "Écouter : quelqu’un à qui tu peux simplement parler.",
+            "Conseiller : quelqu’un qui s’y connaît et qui a des idées.",
+            "Aider concrètement : quelqu’un qui donne un coup de main ou t’accompagne.",
+            "Changer les idées : quelqu’un avec qui tu peux rire et décrocher."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Qui est là pour toi – et pour quoi ? Complète le tableau.",
+          "hinweis": "Pense à ta famille, à tes ami·e·s, à l’école, à ton club, au voisinage – et aux professionnel·le·s. Le tableau reste chez toi."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Personne",
+            "Elle m’aide pour",
+            "Comment la joindre"
+          ],
+          "breiten": [
+            1.2,
+            2,
+            1.5
+          ],
+          "zeilen": 4,
+          "beispiel": [
+            "ma tante Rosa",
+            "m’écouter quand il y a des tensions à la maison",
+            "message, le week-end"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Où trouver de l’aide, au lycée et ailleurs",
+          "punkte": [
+            "SePAS au lycée : des psychologues et des assistants sociaux écoutent et conseillent, en toute confidentialité. Tu peux prendre rendez-vous toi-même.",
+            "Kanner- a Jugendtelefon 116 111 : anonyme et gratuit, si tu préfères parler à quelqu’un qui ne te connaît pas.",
+            "Personnes de confiance au lycée : ton ou ta régent·e, les éducateur·rice·s, d’autres enseignant·e·s."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Qu’est-ce qui t’empêche parfois de demander de l’aide ? Coche ce que tu connais."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "je connais",
+            "je ne connais pas"
+          ],
+          "items": [
+            "« Ce n’est pas assez grave. »",
+            "« Je ne veux déranger personne. »",
+            "« Tout le monde va le savoir. »",
+            "« De toute façon, personne ne peut m’aider. »",
+            "« Je devrais m’en sortir seul·e. »"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Pas besoin d’attendre que ce soit « assez grave ».",
+          "text": "Les entretiens au SePAS et au Kanner- a Jugendtelefon sont confidentiels. Demander de l’aide n’est pas un échec – c’est une compétence dont les adultes aussi ont besoin."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Écris ton plan pour les périodes difficiles."
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Si je remarque que je ne vais pas bien depuis plusieurs jours,",
+              "dann": "j’en parle d’abord à ma sœur et je prends rendez-vous au SePAS."
+            }
+          ]
+        },
+        {
+          "art": "notfall"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes prennent conscience de leur réseau de soutien, connaissent les services d’aide au lycée et en dehors, et décident vers qui se tourner quand ils ne vont pas bien pendant un certain temps.",
+        "ablauf": [
+          "Entrée en matière (5 min) : « À qui parlez-vous du stress scolaire – et à qui d’un chagrin d’amour ? » Ne pas faire citer de noms.",
+          "Lire l’encadré, exercice 1 seul·e. Le tableau reste privé.",
+          "Présenter les services d’aide : où est le SePAS, comment prendre rendez-vous ? Idéalement, quelqu’un du SePAS se présente.",
+          "Exercice 2 seul·e, puis recueillir, sans attribution personnelle, les pensées que beaucoup connaissent.",
+          "Exercice 3 et encadré d’urgence : écrire son plan, noter une personne de confiance."
+        ],
+        "hintergrund": "Les liens avec des personnes fiables comptent parmi les facteurs de protection les plus forts à l’adolescence (Masten, 2014). Pourtant, beaucoup de jeunes demandent de l’aide tard : leur problème ne leur semble pas assez grave, ils craignent que d’autres l’apprennent ou veulent s’en sortir seuls. Savoir à l’avance vers qui se tourner permet d’agir plus tôt. La fiche s’inspire du plan de sécurité (Stanley & Brown, 2012) : personnes de confiance, services professionnels, numéros d’urgence et une première étape concrète – utile à titre préventif pour tous, pas seulement en cas de crise.",
+        "quellen": [
+          "Masten, A. S. (2014). Ordinary Magic: Resilience in Development. New York: Guilford.",
+          "Stanley, B. & Brown, G. K. (2012). Safety planning intervention: A brief intervention to mitigate suicide risk. Cognitive and Behavioral Practice, 19(2), 256–264."
+        ],
+        "differenzierung": {
+          "leichter": "Ne remplir que deux lignes du tableau, l’exercice 3 et l’encadré d’urgence.",
+          "schwerer": "Faire un aperçu des services d’aide du lycée : qui, où, quand ?"
+        },
+        "impulse": [
+          "Qu’est-ce qui aide à demander de l’aide ?",
+          "Quand un problème est-il trop grand pour toi seul·e ?",
+          "Comment soutenir quelqu’un qui ne va pas bien ?"
+        ],
+        "tipps": [
+          "Ne pas ramasser les fiches : elles appartiennent aux jeunes.",
+          "Expliquer honnêtement les limites de la confidentialité en cas de danger."
+        ],
+        "achtung": "En cas d’indices de crise, d’automutilation ou d’idées suicidaires : agir tout de suite selon la procédure interne, ne pas laisser la personne seule, impliquer la direction compétente (responsable) et le SePAS – sans rien approfondir en classe.",
+        "material": "Coordonnées du SePAS du lycée"
+      }
+    }
+  }
+]
