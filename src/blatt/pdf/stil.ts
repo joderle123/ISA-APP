@@ -6,7 +6,7 @@ import { trennung } from '../../lib/trennung'
 Font.registerHyphenationCallback(trennung)
 
 export const SCHRIFT = {
-  kind: 'CDSE Andika',
+  kind: 'CDSE Kinderschrift',
   jugend: 'CDSE Inter',
   titel: 'CDSE Manrope',
 }
@@ -24,8 +24,8 @@ export function registriereSchriften(quelle: (datei: string) => string): void {
   Font.register({
     family: SCHRIFT.kind,
     fonts: [
-      { src: quelle('Andika-Regular.ttf'), fontWeight: 400 },
-      { src: quelle('Andika-Bold.ttf'), fontWeight: 700 },
+      { src: quelle('Kinderschrift-Regular.ttf'), fontWeight: 400 },
+      { src: quelle('Kinderschrift-Bold.ttf'), fontWeight: 700 },
     ],
   })
   Font.register({
@@ -217,15 +217,34 @@ const NBSP = String.fromCharCode(160)
 const NNBSP = String.fromCharCode(0x202f)
 
 /** Feinsatz: Gedankenstriche, Auslassungspunkte; im Französischen die
- *  geschützten Leerzeichen vor : ; ! ? und in « ». */
+ *  geschützten Leerzeichen vor : ; ! ? und in « » – auch wenn im Text keins
+ *  steht („Exemple:“ → „Exemple :“). Uhrzeiten und Adressen bleiben unberührt. */
 export function typo(text: string, sprache: Sprache): string {
   let t = text.replace(/ - /g, ' – ').replace(/\.\.\./g, '…')
   if (sprache === 'fr') {
     t = t
       .replace(/\s+:/g, NBSP + ':')
+      .replace(/([^\s\d:/(\u00A0\u202F]):(?=\s|$)/g, '$1' + NBSP + ':')
       .replace(/\s+([;!?])/g, NNBSP + '$1')
+      .replace(/([^\s\u00A0\u202F;!?(«])([;!?]+)(?=\s|$|»|\))/g, '$1' + NNBSP + '$2')
       .replace(/«\s*/g, '«' + NBSP)
       .replace(/\s*»/g, NBSP + '»')
   }
   return t
+}
+
+/** Dauer auf der Lehrerseite: im Französischen die üblichen Wörter übersetzen. */
+export function dauerText(dauer: string, sprache: Sprache): string {
+  if (sprache !== 'fr') return dauer
+  const W: [RegExp, string][] = [
+    [/\bMin\./g, 'min'], [/\bMinuten\b/g, 'minutes'], [/\bStd\./g, 'h'],
+    [/\bzweimal täglich\b/g, 'deux fois par jour'], [/\btäglich\b/g, 'chaque jour'], [/\bwöchentlich\b/g, 'chaque semaine'],
+    [/\bpro Woche\b/g, 'par semaine'], [/\beine Woche\b/g, 'une semaine'], [/\b1–2 Wochen\b/g, '1 à 2 semaines'],
+    [/\b(\d+) Wochen\b/g, '$1 semaines'], [/\b1 Woche\b/g, '1 semaine'], [/\bWoche\b/g, 'semaine'],
+    [/\bje Eintrag\b/g, 'par entrée'], [/\bnach Bedarf\b/g, 'selon les besoins'], [/\bnach der Beruhigung\b/g, 'après le retour au calme'],
+    [/\bVorbereitung\b/g, 'Préparation'], [/\bGespräch\b/g, 'entretien'], [/\bEinführung\b/g, 'Introduction'], [/\bPlanung\b/g, 'Planification'],
+    [/\bAuswertung\b/g, 'bilan'], [/Übungszeit/g, 'temps d’entraînement'], [/\bTagebuch\b/g, 'de journal'], [/\bBeobachtung\b/g, 'd’observation'],
+    [/\bPlan\b/g, 'de plan'], [/\bdann\b/g, 'puis'], [/;/g, ' ;'],
+  ]
+  return typo(W.reduce((s, [re, neu]) => s.replace(re, neu), dauer), 'fr')
 }

@@ -11,7 +11,8 @@
     "preview": "vite preview",
     "blaetter:pruefen": "tsx --tsconfig tsconfig.scripts.json scripts/blatt-pruefen.ts",
     "blaetter:render": "tsx --tsconfig tsconfig.scripts.json scripts/blatt-render.tsx",
-    "blaetter:icons": "node scripts/blatt-icons.mjs"
+    "blaetter:icons": "node scripts/blatt-icons.mjs",
+    "blaetter:seiten": "tsx --tsconfig tsconfig.scripts.json scripts/blatt-seiten.tsx"
   },
   "dependencies": {
     "@react-pdf/renderer": "^4.5.1",

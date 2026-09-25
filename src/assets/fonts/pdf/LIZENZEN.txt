@@ -1,7 +1,12 @@
-Schriften für die Arbeitsblätter (PDF), auf Latein-Zeichen reduziert und
-mit zerlegten zusammengesetzten Glyphen (für eine fehlerfreie Einbettung):
+Schriften für die Arbeitsblätter (PDF), auf Latein-Zeichen reduziert, mit
+zerlegten zusammengesetzten Glyphen (für eine fehlerfreie Einbettung) und um
+die Pfeile ← → sowie das schmale geschützte Leerzeichen (U+202F) ergänzt
+(scripts/schriften-ergaenzen.py):
 
-- Andika – Copyright (c) 2004-2022 SIL International. SIL Open Font License 1.1
+- CDSE Kinderschrift (Kinderschrift-*.ttf) – geänderte Fassung von Andika.
+  Copyright (c) 2004-2022 SIL International (https://www.sil.org), with Reserved
+  Font Names "Andika" and "SIL". SIL Open Font License 1.1. Weil die Schrift
+  geändert ist, trägt sie den reservierten Namen nicht (OFL, Bedingung 3).
 - Inter – Copyright (c) 2016 The Inter Project Authors. SIL Open Font License 1.1
 - Manrope – Copyright (c) 2018 The Manrope Project Authors. SIL Open Font License 1.1
 

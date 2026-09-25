@@ -47,9 +47,9 @@ Gestaltung nach Stufe (automatisch aus der niedrigsten Stufe):
 
 | Stufe | Gestaltung | Schrift | Hinweise |
 |---|---|---|---|
-| C1 (Spielschule) | `bild` | Andika, sehr groß | Bildblatt. Kaum Text für das Kind. **Pflicht: `anleitung`** (1–3 Sätze für Erwachsene). Aufgaben mit Symbolen. |
-| C2 | `gross` | Andika, groß | Kurze Sätze (max. 10 Wörter), weite Linien, viel Bild. |
-| C3–C4 | `mittel` | Andika | Geschichten, Tabellen, Denkmodelle. |
+| C1 (Spielschule) | `bild` | Kinderschrift (Andika), sehr groß | Bildblatt. Kaum Text für das Kind. **Pflicht: `anleitung`** (1–3 Sätze für Erwachsene). Aufgaben mit Symbolen. |
+| C2 | `gross` | Kinderschrift (Andika), groß | Kurze Sätze (max. 10 Wörter), weite Linien, viel Bild. |
+| C3–C4 | `mittel` | Kinderschrift (Andika) | Geschichten, Tabellen, Denkmodelle. |
 | ES | `jugend` | Inter | Sachlich, respektvoll, nie kindlich. **Französische Fassung Pflicht.** |
 
 Stufen nicht zu breit mischen: gut sind `["C1"]`, `["C2"]`, `["C3","C4"]`, `["C4","ES"]`, `["ES"]`.

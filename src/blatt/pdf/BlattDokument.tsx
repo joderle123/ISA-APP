@@ -10,7 +10,8 @@ import { bereichById, layoutFuer, stufenText, themaLabel } from '../katalog'
 import { NEUTRAL, palette, type Palette } from '../zeichnung'
 import { eldibDomainById, eldibGoalById } from '../../data/taxonomy'
 import { Bausteine, nummerieren, Plakette, Fliess, type Ctx } from './bausteine'
-import { LEHRER_MASSE, MASSE, SCHRIFT, SEITE, TEXTE, typo, type Masse } from './stil'
+import { LEHRER_MASSE, MASSE, SCHRIFT, SEITE, TEXTE, dauerText, typo, type Masse } from './stil'
+import { ELDIB_FR } from '../eldib-fr'
 
 const BREITE = 595.28 - SEITE.rand * 2
 
@@ -52,13 +53,28 @@ function NameFeld({ label, breite, m }: { label: string; breite: number; m: Mass
 function Kopfzeile({ blatt, nr, sprache, p, m, lehrer }: { blatt: Blatt; nr?: string; sprache: Sprache; p: Palette; m: Masse; lehrer?: boolean }) {
   const bereich = bereichById.get(blatt.bereich)!
   const tx = TEXTE[sprache]
-  const meta = [nr ? `${tx.arbeitsblatt} ${nr}` : null, themaLabel(blatt.bereich, blatt.thema, sprache), stufenText(blatt.stufen)].filter(Boolean).join('  ·  ')
+  const nummer = [nr ? `${tx.arbeitsblatt} ${nr}` : null, stufenText(blatt.stufen)].filter(Boolean).join('  ·  ')
+  const thema = themaLabel(blatt.bereich, blatt.thema, sprache)
+  const reiter = lehrer ? tx.lehrer : bereich[sprache]
+  // Passt die Meta-Zeile neben Reiter, Name und Datum? Breiten je Zeichen an Inter 7,4 pt und
+  // Manrope 7 pt (Versalien) gemessen – obere Werte, damit nie eine Zeile ungewollt umbricht.
+  const felder = lehrer ? 0 : m.layout === 'bild' ? 14 + 27 + 150 : 14 + 27 + 118 + 14 + 27 + 62
+  const frei = BREITE - (reiter.length * 5.85 + 12) - 8 - felder
+  const eineZeile = [nummer, thema].join('  ·  ').length * 3.95 <= frei
   return (
     <View style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 14 }}>
-      <Reiter text={lehrer ? tx.lehrer : bereich[sprache]} farbe={lehrer ? NEUTRAL.tinte : p.tief} />
-      <View style={{ marginLeft: 8, flex: 1 }}>
-        <Meta>{meta}</Meta>
-      </View>
+      <Reiter text={reiter} farbe={lehrer ? NEUTRAL.tinte : p.tief} />
+      {eineZeile ? (
+        <View style={{ marginLeft: 8, flex: 1 }}>
+          <Meta>{[nummer, thema].join('  ·  ')}</Meta>
+        </View>
+      ) : (
+        // zu lang für eine Zeile: bewusst zwei Zeilen statt eines zufälligen Umbruchs
+        <View style={{ marginLeft: 8, flex: 1 }}>
+          <Meta>{nummer}</Meta>
+          <Meta>{thema}</Meta>
+        </View>
+      )}
       {!lehrer ? (
         <>
           <NameFeld label={tx.name} breite={m.layout === 'bild' ? 150 : 118} m={m} />
@@ -166,7 +182,7 @@ function Lehrerseite({ blatt, inhalt, sprache, p, nr }: { blatt: Blatt; inhalt: 
   const fakten: [string, string][] = [
     [tx.stufe, stufenText(blatt.stufen)],
     [tx.sozialform, sozial],
-    [tx.dauer, blatt.dauer],
+    [tx.dauer, dauerText(blatt.dauer, sprache)],
   ]
   if (L.material) fakten.push([tx.material, ty(L.material)])
   return (
@@ -220,7 +236,7 @@ function Lehrerseite({ blatt, inhalt, sprache, p, nr }: { blatt: Blatt; inhalt: 
                       <View style={{ borderRadius: 4, backgroundColor: farbe, paddingHorizontal: 4, paddingVertical: 1, marginRight: 5 }}>
                         <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 7, color: '#FFFFFF' }}>{code}</Text>
                       </View>
-                      <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 8.4, color: NEUTRAL.text }}>{g?.label ?? ''}</Text>
+                      <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 8.4, color: NEUTRAL.text }}>{(sprache === 'fr' ? ELDIB_FR[code] : null) ?? g?.label ?? ''}</Text>
                     </View>
                   )
                 })}
@@ -242,14 +258,14 @@ function Lehrerseite({ blatt, inhalt, sprache, p, nr }: { blatt: Blatt; inhalt: 
           <View style={{ marginTop: 6 }}>
             {L.quellen.map((q, i) => (
               <Text key={i} style={{ fontFamily: SCHRIFT.jugend, fontSize: 7.4, lineHeight: 1.4, color: NEUTRAL.leise, marginBottom: 1.5 }}>
-                {ty(q)}
+                {typo(q, 'de')}
               </Text>
             ))}
           </View>
         ) : null}
       </View>
       {L.impulse?.length || L.tipps?.length ? (
-        <View style={{ flexDirection: 'row' }}>
+        <View wrap={false} style={{ flexDirection: 'row' }}>
           {L.impulse?.length ? (
             <View style={{ flex: 1, paddingRight: L.tipps?.length ? 18 : 0 }}>
               <Abschnitt titel={tx.impulse}>{punkte(L.impulse)}</Abschnitt>

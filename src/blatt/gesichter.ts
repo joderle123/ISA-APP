@@ -200,12 +200,13 @@ function extras(e: Extra[]): Form[] {
   for (const x of e) {
     switch (x) {
       case 'wangen':
-        out.push({ t: 'ellipse', cx: 26, cy: 60, rx: 7, ry: 4.5, f: 'mittel', s: 'none', o: 0.9 })
-        out.push({ t: 'ellipse', cx: 74, cy: 60, rx: 7, ry: 4.5, f: 'mittel', s: 'none', o: 0.9 })
+        // Wangen immer warm rosa – nie in der Bereichsfarbe (sonst grüne Wangen im Bereich Alltag)
+        out.push({ t: 'ellipse', cx: 26, cy: 60, rx: 7, ry: 4.5, f: '#F4A9A0', s: 'none', o: 0.8 })
+        out.push({ t: 'ellipse', cx: 74, cy: 60, rx: 7, ry: 4.5, f: '#F4A9A0', s: 'none', o: 0.8 })
         break
       case 'rot':
-        out.push({ t: 'ellipse', cx: 26, cy: 59, rx: 8, ry: 5, f: 'tief', s: 'none', o: 0.28 })
-        out.push({ t: 'ellipse', cx: 74, cy: 59, rx: 8, ry: 5, f: 'tief', s: 'none', o: 0.28 })
+        out.push({ t: 'ellipse', cx: 26, cy: 59, rx: 8, ry: 5, f: '#D9483B', s: 'none', o: 0.3 })
+        out.push({ t: 'ellipse', cx: 74, cy: 59, rx: 8, ry: 5, f: '#D9483B', s: 'none', o: 0.3 })
         break
       case 'traene':
         out.push({ t: 'path', d: 'M31 52 Q26 61 28.5 64.5 Q31 67.5 33.5 64.5 Q36 61 31 52 Z', f: '#A9D2EE', s: 'tinte', w: 1.8 })

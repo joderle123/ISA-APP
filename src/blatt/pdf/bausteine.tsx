@@ -326,7 +326,7 @@ function Feld({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'feld' }> }) {
       ) : null}
       {b.beispiel ? (
         <Fliess c={c} klein farbe={NEUTRAL.sehrLeise} style={{ marginTop: 2 }}>
-          {tx(c).beispiel + ': ' + t(c, b.beispiel)}
+          {t(c, tx(c).beispiel + ': ' + b.beispiel)}
         </Fliess>
       ) : null}
       {b.zeichnen ? (
@@ -619,7 +619,7 @@ function Einschaetzung({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'einschae
   const optB = Math.min(64, (c.breite * 0.46) / n)
   return (
     <View style={{ borderWidth: 0.8, borderColor: NEUTRAL.rahmen, borderRadius: 8 }}>
-      <View wrap={false} style={{ flexDirection: 'row', backgroundColor: c.p.zart, borderTopLeftRadius: 8, borderTopRightRadius: 8, paddingVertical: 5 }}>
+      <View wrap={false} style={{ flexDirection: 'row', backgroundColor: c.p.zart, borderTopLeftRadius: 7.2, borderTopRightRadius: 7.2, paddingVertical: 5 }}>
         <View style={{ flex: 1 }} />
         {b.optionen.map((o, i) => (
           <View key={i} style={{ width: optB, paddingHorizontal: 2 }}>
@@ -630,7 +630,22 @@ function Einschaetzung({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'einschae
         ))}
       </View>
       {b.items.map((x, r) => (
-        <View key={r} wrap={false} style={{ flexDirection: 'row', alignItems: 'center', borderTopWidth: 0.8, borderTopColor: NEUTRAL.haarlinie, paddingVertical: 5, backgroundColor: r % 2 ? '#FBFCFD' : '#FFFFFF' }}>
+        <View
+          key={r}
+          wrap={false}
+          style={{
+            flexDirection: 'row',
+            alignItems: 'center',
+            borderTopWidth: 0.8,
+            borderTopColor: NEUTRAL.haarlinie,
+            paddingTop: 5,
+            paddingBottom: r === b.items.length - 1 ? 7 : 5,
+            backgroundColor: r % 2 ? '#FBFCFD' : '#FFFFFF',
+            // letzte Zeile: Ecken des Rahmens frei lassen
+            borderBottomLeftRadius: r === b.items.length - 1 ? 7.2 : 0,
+            borderBottomRightRadius: r === b.items.length - 1 ? 7.2 : 0,
+          }}
+        >
           <View style={{ flex: 1, paddingLeft: 8, paddingRight: 6 }}>
             <Fliess c={c}>{t(c, x)}</Fliess>
           </View>
@@ -836,7 +851,7 @@ function Eisberg({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'eisberg' }> })
       </Fliess>
       {bsp ? (
         <Fliess c={c} klein farbe={NEUTRAL.leise}>
-          {tx(c).beispiel + ': ' + t(c, bsp)}
+          {t(c, tx(c).beispiel + ': ' + bsp)}
         </Fliess>
       ) : null}
       <Linien c={c} n={zeilen} hoehe={c.m.zeile * 0.9} />
@@ -1176,7 +1191,7 @@ function Plan({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'plan' }> }) {
       {b.ziel !== undefined ? (
         <View style={{ flexDirection: 'row', alignItems: 'flex-end', backgroundColor: c.p.zart, borderRadius: 9, padding: 9, marginBottom: 8 }}>
           <Fliess c={c} fett farbe={c.p.tief}>
-            {tx(c).meinZiel + ':'}
+            {t(c, tx(c).meinZiel + ':')}
           </Fliess>
           <View style={{ flex: 1, marginLeft: 8, minHeight: c.m.zeile * 0.8, justifyContent: 'flex-end', borderBottomWidth: b.ziel ? 0 : 0.8, borderBottomColor: NEUTRAL.linie }}>
             {b.ziel ? <Fliess c={c}>{t(c, b.ziel)}</Fliess> : null}

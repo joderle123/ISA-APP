@@ -5,8 +5,8 @@ import { slug } from './slug'
 import { BlattDokument, MappeDokument, type BlattOptionen } from '../blatt/pdf/BlattDokument'
 import { registriereSchriften } from '../blatt/pdf/stil'
 import type { Blatt } from '../blatt/typen'
-import andikaRegular from '../assets/fonts/pdf/Andika-Regular.ttf?url'
-import andikaBold from '../assets/fonts/pdf/Andika-Bold.ttf?url'
+import kinderRegular from '../assets/fonts/pdf/Kinderschrift-Regular.ttf?url'
+import kinderBold from '../assets/fonts/pdf/Kinderschrift-Bold.ttf?url'
 import interRegular from '../assets/fonts/pdf/Inter-Regular.ttf?url'
 import interSemiBold from '../assets/fonts/pdf/Inter-SemiBold.ttf?url'
 import manropeBold from '../assets/fonts/pdf/Manrope-Bold.ttf?url'
@@ -49,8 +49,8 @@ export async function downloadWorksheetPdf(material: Material): Promise<string> 
 // --- Arbeitsblätter (Toolbox v2) ----------------------------------------------
 
 const SCHRIFT_DATEIEN: Record<string, string> = {
-  'Andika-Regular.ttf': andikaRegular,
-  'Andika-Bold.ttf': andikaBold,
+  'Kinderschrift-Regular.ttf': kinderRegular,
+  'Kinderschrift-Bold.ttf': kinderBold,
   'Inter-Regular.ttf': interRegular,
   'Inter-SemiBold.ttf': interSemiBold,
   'Manrope-Bold.ttf': manropeBold,

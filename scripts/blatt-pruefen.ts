@@ -3,6 +3,7 @@
 //   npx tsx --tsconfig tsconfig.scripts.json scripts/blatt-pruefen.ts [datei.json …] [--streng]
 // Fehler → Exit-Code 1. Hinweise (Stil) werden nur gezeigt; mit --streng zählen sie als Fehler.
 import { readFileSync, readdirSync } from 'node:fs'
+import { createRequire } from 'node:module'
 import { join, dirname, basename } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import type { Baustein, Blatt, BlattInhalt, Sprache } from '../src/blatt/typen'
@@ -53,10 +54,17 @@ const FLOSKELN: [RegExp, string][] = [
   [/\.\.\./, 'drei Punkte statt … '],
 ]
 const EMOJI = /\p{Extended_Pictographic}/u
-/** Zeichen, die die eingebetteten Schriften enthalten. */
-const ZEICHEN = /^[\u0020-\u007E\u00A0-\u00FF\u0152\u0153\u0178\u2010-\u2027\u202F\u2030\u2039\u203A\u20AC\u2190-\u2193\u2212\u00AD]*$/
+/** Zeichen, die ALLE eingebetteten Schriften enthalten – direkt aus den Schriftdateien gelesen
+ *  (weiches Trennzeichen U+00AD wird vor dem Setzen entfernt). */
+const fontkit = createRequire(import.meta.url)('fontkit') as { openSync(pfad: string): { characterSet: number[] } }
+const SCHRIFTEN = join(ROOT, 'src/assets/fonts/pdf')
+const ZEICHEN = readdirSync(SCHRIFTEN)
+  .filter((d) => d.endsWith('.ttf'))
+  .map((d) => new Set(fontkit.openSync(join(SCHRIFTEN, d)).characterSet))
+  .reduce((a, b) => new Set([...a].filter((c) => b.has(c))))
+ZEICHEN.add(0xad)
 function fremdeZeichen(x: string): string {
-  return [...new Set([...x].filter((ch) => !ZEICHEN.test(ch)))].join(' ')
+  return [...new Set([...x].filter((ch) => ch !== '\n' && !ZEICHEN.has(ch.codePointAt(0) ?? 0)))].join(' ')
 }
 
 function melde(art: 'F' | 'H', wo: string, text: string) {
@@ -188,7 +196,7 @@ function pruefeBausteine(wo: string, liste: Baustein[], blatt: Blatt, sprache: S
       if (EMOJI.test(x)) melde('F', w, `Emoji im Text: „${x.slice(0, 40)}“`)
       else if (fremdeZeichen(x)) melde('F', w, `Zeichen fehlt in der Schrift: ${fremdeZeichen(x)} – „${x.slice(0, 40)}“`)
       for (const [re, name] of FLOSKELN) if (re.test(x)) melde(sprache === 'fr' && name.startsWith('gerade') ? 'H' : 'H', w, `${name}: „${x.slice(0, 60)}“`)
-      if (blatt.stufen.includes('C1') && x.length > 90 && b.art !== 'text') melde('H', w, 'Spielschule: Text über 90 Zeichen')
+      if (blatt.stufen.includes('C1') && blatt.bereich !== 'werkzeuge' && x.length > 90 && b.art !== 'text') melde('H', w, 'Spielschule: Text über 90 Zeichen')
     }
   })
   return aufgaben
