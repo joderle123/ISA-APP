@@ -1,0 +1,2006 @@
+{
+  "einheiten": [
+    {
+      "id": "j1-j01",
+      "nr": 1,
+      "jahr": 1,
+      "modul": "joker",
+      "joker": true,
+      "passt": "nach Einheit 8, über zwei Termine",
+      "titel": "Filmeinheit „Alles steht Kopf“",
+      "kurz": "Die Gruppe sieht an zwei Terminen den ganzen Film, beobachtet, welches Gefühl gerade am Steuer sitzt, und spielt danach selbst eine Konferenz der Gefühle.",
+      "dauer": 200,
+      "ziele": [
+        "verfolgen im ganzen Film, welches Gefühl gerade am Steuer sitzt und was es bei Riley auslöst",
+        "erklären, wozu Kummer im Film gebraucht wird und dass Gefühle gleichzeitig da sein können",
+        "übertragen das Bild vom Steuerpult in einer Improvisation auf eigene Alltagssituationen"
+      ],
+      "material": [
+        "Film „Alles steht Kopf“ (Teil 1 oder 2) als DVD, Blu-ray oder über einen Zugang mit geklärter Vorführlizenz",
+        "Beamer, Lautsprecher, Verdunkelung",
+        "Beobachtungsbogen „Mein Paten-Gefühl“ je Person, Klemmbretter, Stifte",
+        "Gefühlskarten aus Einheit 8 als Paten-Gefühle (die Karte Traurigkeit steht für Kummer); für Teil 2 Zweifel, Neid, Peinlich und Ennui auf leere Karten schreiben",
+        "Namensschilder mit den Gefühlen aus dem Film zum Umhängen",
+        "Ein Stuhl als Pult, Situationen für die Konferenz der Gefühle (Liste in Schritt 12)",
+        "Plakat mit der Hauptbotschaft aus Einheit 8, dicke Stifte",
+        "Popcorn und Getränke für Termin 1, Imbiss für Termin 2 (Allergien vorher abfragen)",
+        "Gefühlsrad (A3), Skills-Pässe, Stempel"
+      ],
+      "vorbereitung": [
+        "Vorführrechte klären: Die Leitung (Responsable) prüft, ob eine Schul- oder Vorführlizenz vorliegt. Die Altersfreigabe des gewählten Teils vorab prüfen lassen.",
+        "Mit der Gruppe entscheiden, welcher Teil gezeigt wird. Teil 2 spricht mit Zweifel, Pubertät und Selbstbild ältere Jugendliche oft stärker an.",
+        "Den Film vorher ganz ansehen, die Stoppstellen aus Schritt 3 festlegen und ihre Zeitmarken auf der eigenen Kopie notieren.",
+        "Technik vor der Einheit testen; Raum verdunkeln, Stühle im Halbkreis, vorn Platz für eine kleine Spielfläche lassen."
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-film-steuerpult",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Wer sitzt heute bei dir am Steuer?"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Paten-Gefühle und Beobachtungsauftrag"
+        },
+        {
+          "min": "15–50",
+          "phase": "input",
+          "titel": "Film, erster Teil"
+        },
+        {
+          "min": "50–65",
+          "phase": "pause",
+          "titel": "Pause mit Popcorn"
+        },
+        {
+          "min": "65–95",
+          "phase": "input",
+          "titel": "Film bis zur Stoppstelle"
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Blitzlicht und Skills-Pass"
+        },
+        {
+          "min": "100–110",
+          "phase": "ankommen",
+          "titel": "Termin 2: Check-in mit dem Gefühlsrad"
+        },
+        {
+          "min": "110–115",
+          "phase": "bruecke",
+          "titel": "Wo waren wir? Die Paten-Gefühle berichten"
+        },
+        {
+          "min": "115–145",
+          "phase": "input",
+          "titel": "Film bis zum Schluss"
+        },
+        {
+          "min": "145–160",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "160–175",
+          "phase": "uebung",
+          "titel": "Die Botschaft des Films"
+        },
+        {
+          "min": "175–190",
+          "phase": "aktiv",
+          "titel": "Konferenz der Gefühle am Pult"
+        },
+        {
+          "min": "190–195",
+          "phase": "skill",
+          "titel": "Skill: Wer steht gerade an meinem Pult?"
+        },
+        {
+          "min": "195–200",
+          "phase": "abschluss",
+          "titel": "Réckbléck und Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: Wer sitzt heute bei dir am Steuer?",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Stühle im Halbkreis vor der Leinwand, das Gefühlsrad liegt in der Mitte. Reihum zeigt jede Person auf das Gefühl, das heute bei ihr am Steuer sitzen würde, und sagt einen Satz dazu; die Leitung beginnt. Das Bild vom Steuerpult aus Einheit 8 hilft: Wer heute wie Freude drauf ist, zeigt vielleicht auf ‚gut gelaunt‘ oder ‚begeistert‘. Wird der Joker nach Einheit 11 eingesetzt, kommt die Anspannung von 0 bis 100 dazu.",
+          "sagen": [
+            "Stellt euch vor, in eurem Kopf gibt es so eine Zentrale wie bei Riley. Wer sitzt heute am Steuer?",
+            "Ein Wort reicht. Das „weil“ ist freiwillig."
+          ],
+          "tipp": "Die Leitung macht es ehrlich vor, etwa: Bei mir sitzt heute die Vorfreude am Steuer – und ein bisschen die Angst, dass der Beamer streikt.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Paten-Gefühle und Beobachtungsauftrag",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "Kurz an Einheit 8 erinnern: Dort gab es Ausschnitte, heute kommt der ganze Film. Jede Person zieht verdeckt eine Karte mit einem Gefühl aus dem Film; das ist ihr Paten-Gefühl. Beim Schauen achtet sie besonders darauf, wann es am Steuer sitzt und was Riley dann tut. Die Beobachtungsbögen auf Klemmbrettern austeilen: Im Dunkeln reichen Stichworte, ausgefüllt wird nach dem Film.",
+          "sagen": [
+            "Ihr habt heute einen Spezialauftrag: Jede und jeder passt auf ein Gefühl besonders auf.",
+            "Wer den Film schon kennt, verrät bitte nichts. Ihr seid heute unsere Geheimnisträger."
+          ],
+          "tipp": "Bei Teil 2 kommen Zweifel, Neid, Peinlich und Ennui dazu. In kleinen Gruppen bekommt eine Person zwei Paten-Gefühle; wer den Film kennt, bekommt Kummer oder Zweifel – diese Rollen lohnen beim zweiten Sehen am meisten.",
+          "blatt": "skills-film-steuerpult"
+        },
+        {
+          "titel": "Film, erster Teil",
+          "dauer": 35,
+          "phase": "input",
+          "text": "Licht aus, Film starten. Die Leitung sitzt so, dass sie die Gruppe im Blick hat. Wer zwischendurch raus muss, geht leise und kommt allein zurück; das wird vorher gesagt. Handys bleiben in der Tasche. Gestoppt wird an den vorab festgelegten Stellen: Die Minuten im Ablauf sind Richtwerte, die Szene entscheidet.",
+          "punkte": [
+            "Teil 1, Pause: nach der Szene im Klassenzimmer, wenn Freude und Kummer mitsamt den Kernerinnerungen aus der Zentrale gesaugt worden sind.",
+            "Teil 1, Ende von Termin 1: an einer ruhigen Stelle, nachdem Wut die Idee ins Pult gesteckt hat, nach Minnesota abzuhauen.",
+            "Teil 2, Pause: nachdem Zweifel die alten Gefühle aus der Zentrale entfernt hat.",
+            "Teil 2, Ende von Termin 1: an einer ruhigen Stelle vor dem letzten großen Hockeyspiel."
+          ],
+          "tipp": "Untertitel nur einschalten, wenn jemand sie braucht. So bleibt der Blick auf den Gesichtern der Figuren – und genau dort erkennt man die Gefühle.",
+          "wennEsKippt": "Wird während des Films geredet oder gealbert, einmal kurz anhalten, Licht an und fragen: Wer sitzt gerade bei Riley am Steuer – und wer bei euch? Dann ohne weitere Worte weiterschauen; diskutiert wird in Termin 2."
+        },
+        {
+          "titel": "Pause mit Popcorn",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Licht an, Fenster auf, Popcorn und Getränke. Die Leitung fragt nebenbei, welche Figur bisher am witzigsten war, und lässt Vermutungen zu, wie es weitergeht."
+        },
+        {
+          "titel": "Film bis zur Stoppstelle",
+          "dauer": 30,
+          "phase": "input",
+          "text": "Weiterschauen bis zur zweiten Stoppstelle. Lieber etwas früher an einer ruhigen Stelle stoppen als mitten in einer Szene, damit das Blitzlicht nicht ausfällt. Die Zeitmarke notieren, damit Termin 2 genau dort weitergeht.",
+          "wennEsKippt": "Wirkt jemand bei einer Szene betroffen, etwa wenn Riley vor der Klasse weint oder mit den Eltern streitet, nicht vor der Gruppe darauf eingehen. Nach dem Termin kurz unter vier Augen nachfragen."
+        },
+        {
+          "titel": "Blitzlicht und Skills-Pass",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Im Kreis antwortet jede Person mit einem Wort: Welches Gefühl hatte bei Riley bisher am meisten zu tun? Danach ein kurzer Eintrag in den Skills-Pass und der Stempel. Die Beobachtungsbögen bleiben im Raum, damit sie in Termin 2 wieder da sind.",
+          "sagen": [
+            "Ein Wort: Welches Gefühl hatte bei Riley bisher am meisten zu tun?",
+            "Und ohne Spoiler: Wie geht es weiter?"
+          ],
+          "blatt": "skills-pass"
+        },
+        {
+          "titel": "Termin 2: Check-in mit dem Gefühlsrad",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Gefühlsrad in die Mitte. Reihum zeigt jede Person, wie es ihr heute geht, und nennt dazu ein Gefühl aus dem Film, das ihr seit dem letzten Mal im Kopf geblieben ist. Zeigen reicht, „weiter“ ist erlaubt. Ab Einheit 11 gehört die Anspannung von 0 bis 100 dazu.",
+          "sagen": [
+            "Wie geht es euch heute – und welches Gefühl aus dem Film ist euch hängen geblieben?"
+          ],
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Wo waren wir? Die Paten-Gefühle berichten",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "Jede Person sagt in einem Satz, was ihr Paten-Gefühl bisher getan hat, zum Beispiel: Wut hat beim Abendessen das Steuer übernommen. Aus den Sätzen entsteht die Zusammenfassung von selbst, und alle sind wieder im Film. Die Leitung ergänzt nur, was für den Schluss wichtig ist.",
+          "sagen": [
+            "Was hat euer Gefühl bis jetzt angestellt? Ein Satz reicht."
+          ]
+        },
+        {
+          "titel": "Film bis zum Schluss",
+          "dauer": 30,
+          "phase": "input",
+          "text": "Ab der notierten Zeitmarke bis zum Ende schauen; den Abspann nicht abwarten. Nach der letzten Szene einen Moment Ruhe lassen, bevor das Licht angeht. Viele Jugendliche sind vom Schluss berührt und wollen das nicht sofort zeigen.",
+          "wennEsKippt": "Lacht jemand bei einer traurigen Szene, nicht ermahnen: Lachen ist oft Verlegenheit. In der Auswertung darf das aufgegriffen werden – welches Gefühl stand in diesem Moment bei euch am Steuer?"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Pause mit Imbiss, Fenster auf, kurz nach draußen. Der Film darf nachklingen; die Leitung fragt höchstens, welche Szene hängen geblieben ist."
+        },
+        {
+          "titel": "Die Botschaft des Films",
+          "dauer": 15,
+          "phase": "uebung",
+          "text": "Die Beobachtungsbögen in Ruhe fertig ausfüllen, etwa fünf Minuten. Dann im Kreis vom Film zu den Jugendlichen: Welche Gefühle kamen vor, wer saß am Anfang, in der Mitte und am Ende am Steuer? Wozu wurde das Gefühl gebraucht, das Freude so lange vom Pult fernhalten wollte? Zum Schluss die Hauptbotschaft in zwei, drei Sätzen festhalten und mit dem Plakat aus Einheit 8 vergleichen: Stimmt es noch, fehlt etwas?",
+          "sagen": [
+            "Freude wollte Kummer die ganze Zeit vom Pult fernhalten. Hatte sie recht?",
+            "Was hat dieser Film verstanden, was Erwachsene manchmal vergessen?"
+          ],
+          "punkte": [
+            "Kummer ist kein Störenfried: Wer traurig ist, zeigt anderen, dass er Trost braucht – und bekommt ihn.",
+            "Freude muss nicht immer gewinnen. Am Ende entstehen Erinnerungen, die froh und traurig zugleich sind.",
+            "Wer Gefühle wegdrückt, wird nicht ruhiger, sondern taub – in Teil 1 wird das Pult grau.",
+            "Teil 2: Zweifel will Riley schützen und übertreibt dabei. Zum Selbstbild gehören helle und dunkle Seiten."
+          ],
+          "tipp": "Die Frage, mit welcher Figur man sich identifiziert, bleibt freiwillig. Wer sich in Kummer oder Zweifel wiedererkennt, erzählt damit schon viel – das nicht vor der Gruppe vertiefen.",
+          "wennEsKippt": "Kommt nur „war gut“ oder „weiß nicht“, auf eine Szene zurückgehen statt auf die Botschaft: Welche Szene würdet ihr jemandem zeigen, der glaubt, Traurigsein sei Schwäche? Aus der Antwort ergibt sich die Botschaft fast von selbst.",
+          "blatt": "skills-film-steuerpult"
+        },
+        {
+          "titel": "Konferenz der Gefühle am Pult",
+          "dauer": 15,
+          "phase": "aktiv",
+          "text": "Wie bei der Aufstellung in Einheit 8, nur bekommen die Gefühle jetzt eine Stimme. Vorn steht ein Stuhl, das Pult. Fünf Freiwillige hängen sich je ein Namensschild um – bei Teil 2 dürfen die neuen Gefühle mitspielen –, eine weitere Person ist Riley. Die Leitung liest eine Situation vor, und die Gefühle beraten eine Minute lang laut, jedes aus seiner Sicht. Dann entscheidet das Publikum, wer ans Pult darf: Dieses Gefühl setzt sich, und Riley sagt den Satz, den sie jetzt sagen würde. Nach zwei, drei Situationen werden die Rollen getauscht.",
+          "sagen": [
+            "Angst, was sagst du dazu? Und du, Wut?",
+            "Wer sollte jetzt ans Pult – und wer darf trotzdem mitreden?"
+          ],
+          "punkte": [
+            "Im Klassenchat taucht ein Foto von dir auf, auf dem du komisch aussiehst.",
+            "Deine beste Freundin sagt das Treffen kurzfristig ab – schon zum dritten Mal.",
+            "Du sollst morgen vor der Klasse ein Referat halten.",
+            "Beim Fußball im Park wirst du als Letzter gewählt.",
+            "Jemand drängelt sich in der Kantine vor dich.",
+            "Der Ausflug, auf den du dich seit Wochen freust, fällt wegen Regen aus."
+          ],
+          "tipp": "Die Leitung spielt beim ersten Durchgang selbst mit, am besten Ekel oder Wut, und übertreibt ruhig. Mit nur zwei Jugendlichen übernimmt sie die übrigen Gefühle, und die beiden wechseln zwischen Riley und einem Gefühl.",
+          "wennEsKippt": "Will niemand nach vorn, zuerst als Hörspiel spielen: Alle bleiben sitzen, die Leitung nennt ein Gefühl, und wer eine Idee hat, ruft dessen Satz herein. Nach zwei Runden stehen die Ersten meist freiwillig auf."
+        },
+        {
+          "titel": "Skill: Wer steht gerade an meinem Pult?",
+          "dauer": 5,
+          "phase": "skill",
+          "text": "Im Sitzen, Augen offen oder geschlossen. Langsam anleiten: dreimal ruhig ausatmen, dann nach innen schauen, welches Gefühl gerade da ist, ohne es zu bewerten oder wegzuschieben. Vielleicht stehen zwei Gefühle am Pult; beide dürfen bleiben. Danach erklären: Das ist ein Skill, um Gefühle zu bemerken, bevor sie das Steuer übernehmen.",
+          "sagen": [
+            "Schau nur hin, wer gerade da ist. Du musst nichts ändern.",
+            "Wenn es zwei Gefühle sind, ist das in Ordnung – wie bei Riley am Schluss."
+          ]
+        },
+        {
+          "titel": "Réckbléck und Skills-Pass",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Blitzlicht zur Frage, welche Szene die Jugendlichen mitnehmen. Danach Eintrag in den Skills-Pass und Stempel. Kurzer Ausblick: Die Erinnerung am Schluss, die froh und traurig zugleich ist, führt direkt zum Thema gemischte Gefühle.",
+          "sagen": [
+            "Eine Szene, die ihr mitnehmt – und warum gerade die?"
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "hintergrund": "„Alles steht Kopf“ macht Gefühle als Figuren sichtbar und liegt dabei nah an der Forschung. Die Emotionsforscher Dacher Keltner und Paul Ekman, die das Filmteam beraten haben, betonen zwei Botschaften: Gefühle ordnen unser Denken und unser Zusammenleben, statt beides zu stören, und Traurigkeit ist ein Signal, das Trost und Nähe herbeiholt (Keltner & Ekman, 2015). Die fünf Figuren entsprechen Grundgefühlen nach Ekman (1992); die Überraschung fehlt. Am Schluss stehen Erinnerungen, die froh und traurig zugleich sind – dass Menschen beides gleichzeitig empfinden können, haben Larsen et al. (2001) gezeigt. Der Beobachtungsauftrag macht aus Zuschauen aktives Beobachten, und die Konferenz der Gefühle überträgt das Bild vom Steuerpult auf den Alltag der Jugendlichen.",
+      "quellen": [
+        "Keltner, D. & Ekman, P. (2015, 3. Juli). The science of “Inside Out”. The New York Times.",
+        "Ekman, P. (1992). An argument for basic emotions. Cognition and Emotion, 6(3–4), 169–200.",
+        "Larsen, J. T., McGraw, A. P. & Cacioppo, J. T. (2001). Can people feel happy and sad at the same time? Journal of Personality and Social Psychology, 81(4), 684–696."
+      ],
+      "achtung": "Vorführrechte (Schullizenz) und Altersfreigabe vor der Einheit durch die Leitung prüfen lassen. Der Film berührt Umzug, Verlust und Heimweh; Teil 2 zeigt eine Panikattacke. Jugendliche mit ähnlichen Erfahrungen – etwa nach einem Wechsel in eine Wohngruppe oder Pflegefamilie – können davon stark angesprochen sein: nicht vor der Gruppe nachfragen, niemanden am Rausgehen hindern, später ein Einzelgespräch anbieten. Die Frage, mit welcher Figur man sich identifiziert, bleibt freiwillig. Erzählt jemand von Gewalt, Selbstverletzung oder Suizidgedanken, das nicht in der Gruppe vertiefen, sondern nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) informieren."
+    },
+    {
+      "id": "j1-j02",
+      "nr": 2,
+      "jahr": 1,
+      "modul": "joker",
+      "joker": true,
+      "passt": "nach Einheit 19, über zwei Termine",
+      "titel": "Filmeinheit „Das Streben nach Glück“",
+      "kurz": "An zwei Terminen sieht die Gruppe, wie Chris Gardner einen Rückschlag nach dem anderen erlebt, und untersucht, welche Gedanken, Menschen und Skills ihn weitermachen lassen.",
+      "dauer": 200,
+      "ziele": [
+        "beschreiben Rückschläge, Gefühle und Gedanken einer Filmfigur genau",
+        "formulieren zu bremsenden Gedanken realistische Gegensätze, wie in den Einheiten 18 und 19 geübt",
+        "erkennen, welche Menschen, Stärken und Skills in schweren Zeiten tragen",
+        "prüfen kritisch, was der Film über Glück, Erfolg und Anstrengung erzählt"
+      ],
+      "material": [
+        "Film „Das Streben nach Glück“ als DVD, Blu-ray oder über einen Zugang mit geklärter Vorführlizenz",
+        "Beamer, Lautsprecher, Verdunkelung",
+        "Beobachtungsbogen „Was hält ihn am Laufen?“ je Person, Klemmbretter, Stifte",
+        "Glaubenssatz-Kärtchen aus Einheit 18 und einige leere Karten",
+        "Tafel oder Plakat mit drei Spalten: Rückschläge – Gedanken – Kraftquellen",
+        "Imbiss und Getränke für beide Termine (Allergien vorher abfragen)",
+        "Gefühlsrad (A3), Anspannungsskala, Skills-Pässe, Stempel"
+      ],
+      "vorbereitung": [
+        "Vorführrechte (Schullizenz) und Altersfreigabe vorab durch die Leitung (Responsable) prüfen lassen.",
+        "Den Film vorher ganz ansehen, die Pause und das Ende von Termin 1 an ruhigen Stellen festlegen (Vorschläge in Schritt 3) und die Zeitmarken notieren.",
+        "Technik testen, Raum verdunkeln, Stühle im Halbkreis.",
+        "Folgt der Joker direkt auf Einheit 19, die Jugendlichen bitten, ihr Blatt zur Beweis-Challenge mitzubringen."
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-film-rueckschlaege",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in mit Anspannung und Beweis-Challenge"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Beobachtungsaufträge verteilen"
+        },
+        {
+          "min": "15–50",
+          "phase": "input",
+          "titel": "Film, erster Teil"
+        },
+        {
+          "min": "50–65",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "65–95",
+          "phase": "input",
+          "titel": "Film bis zur Stoppstelle"
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Blitzlicht und Skills-Pass"
+        },
+        {
+          "min": "100–105",
+          "phase": "ankommen",
+          "titel": "Termin 2: Wort und Zahl"
+        },
+        {
+          "min": "105–150",
+          "phase": "input",
+          "titel": "Film bis zum Schluss"
+        },
+        {
+          "min": "150–165",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "165–180",
+          "phase": "uebung",
+          "titel": "Rückschläge, Gedanken, Kraftquellen"
+        },
+        {
+          "min": "180–190",
+          "phase": "aktiv",
+          "titel": "Standbilder mit zwei Gedankenstimmen"
+        },
+        {
+          "min": "190–195",
+          "phase": "skill",
+          "titel": "Skill: ein Satz für schwere Tage"
+        },
+        {
+          "min": "195–200",
+          "phase": "abschluss",
+          "titel": "Réckbléck und Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in mit Anspannung und Beweis-Challenge",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Gefühlsrad und Anspannung von 0 bis 100 wie gewohnt. Danach die Beweis-Challenge aus Einheit 19 aufgreifen: Wer hat für seinen neuen Satz einen Beweis im Alltag gefunden? Freiwillig, ein Satz reicht. Die Leitung würdigt jeden Beweis, auch den kleinsten, und leitet über: Heute sehen wir einem Mann zu, der sehr viele Gründe hätte, an sich zu zweifeln.",
+          "sagen": [
+            "Hat euer neuer Satz diese Woche einmal gestimmt? Auch ganz kleine Beweise zählen.",
+            "Wer nichts gefunden hat: Auch das ist eine ehrliche Antwort. Die Beweis-Challenge läuft weiter."
+          ],
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Beobachtungsaufträge verteilen",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "Den Film kurz einführen: eine wahre Geschichte aus San Francisco Anfang der 1980er-Jahre, ein Vater und sein kleiner Sohn. Die Gruppe teilt die Beobachtung auf – Rückschläge, Gedanken und Glaubenssätze, Kraftquellen –, je zwei Personen pro Schwerpunkt. Beobachtungsbögen auf Klemmbrettern austeilen; im Dunkeln nur Stichworte.",
+          "sagen": [
+            "Chris bekommt in diesem Film richtig viel ab. Euer Auftrag: Findet heraus, was ihn trotzdem weitermachen lässt.",
+            "Stichworte reichen. Ausgefüllt wird nach dem Film."
+          ],
+          "tipp": "Mit nur zwei Jugendlichen übernimmt jede Person einen Schwerpunkt und die Leitung den dritten; so kommen im Gespräch alle drei Blickwinkel vor.",
+          "blatt": "skills-film-rueckschlaege"
+        },
+        {
+          "titel": "Film, erster Teil",
+          "dauer": 35,
+          "phase": "input",
+          "text": "Licht aus, Film starten; die Leitung sitzt so, dass sie die Gruppe sieht. Wer raus muss, geht leise und kommt allein zurück. Gestoppt wird an ruhigen Stellen, nie direkt nach einer belastenden Szene: Wer eine Woche bis zum nächsten Termin wartet, soll nicht mit dem schwersten Bild im Kopf nach Hause gehen. Die Minuten im Ablauf sind Richtwerte, die Szene entscheidet.",
+          "punkte": [
+            "Pause: nach dem Vorstellungsgespräch, zu dem Chris in farbverschmierter Kleidung erscheint.",
+            "Ende von Termin 1: nach gut der Hälfte des Films an einer ruhigen Stelle, zum Beispiel wenn Chris und sein Sohn in ein Motel ziehen müssen.",
+            "Nicht stoppen direkt nach der Nacht, die Vater und Sohn in der Toilette einer U-Bahn-Station verbringen."
+          ],
+          "wennEsKippt": "Wird es unruhig, einmal anhalten und fragen: Was würde Chris jetzt am meisten helfen? Die Antworten nicht diskutieren, sondern gleich weiterschauen – die Frage kommt in Termin 2 wieder."
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Pause mit Imbiss. Die Leitung fragt nebenbei, was bisher am meisten überrascht hat, und lässt Vermutungen zu, wie es weitergeht."
+        },
+        {
+          "titel": "Film bis zur Stoppstelle",
+          "dauer": 30,
+          "phase": "input",
+          "text": "Weiterschauen bis zur vereinbarten Stoppstelle und die Zeitmarke notieren. Ist die Stelle früher erreicht als geplant, bleibt die Zeit für ein erstes Sammeln an der Tafel: Welche Rückschläge hat Chris bis jetzt erlebt?",
+          "wennEsKippt": "Wirkt jemand still oder blass, ohne Aufsehen danebensetzen und nach dem Termin unter vier Augen fragen, wie es geht."
+        },
+        {
+          "titel": "Blitzlicht und Skills-Pass",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Blitzlicht mit einem Wort oder einem Satz: Welcher Rückschlag war bisher der härteste für Chris? Danach ein kurzer Eintrag in den Skills-Pass und der Stempel. Die Beobachtungsbögen bleiben im Raum.",
+          "sagen": [
+            "Welcher Rückschlag war für Chris bisher der härteste?"
+          ],
+          "blatt": "skills-pass"
+        },
+        {
+          "titel": "Termin 2: Wort und Zahl",
+          "dauer": 5,
+          "phase": "ankommen",
+          "text": "Check-in im Schnelldurchgang: ein Wort vom Gefühlsrad und die Anspannung als Zahl. Danach fasst die Gruppe mit Hilfe der Beobachtungsbögen in drei, vier Sätzen zusammen, wo der Film stehen geblieben ist.",
+          "sagen": [
+            "Heute nur Wort und Zahl – der Film braucht die Zeit.",
+            "Wo stand Chris beim letzten Mal?"
+          ],
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Film bis zum Schluss",
+          "dauer": 45,
+          "phase": "input",
+          "text": "Ab der Zeitmarke bis zum Ende schauen, den Abspann nicht abwarten. Die Leitung behält die Gruppe im Blick: Die Szenen um Wohnungslosigkeit und die Nacht in der U-Bahn-Station können Jugendliche treffen, die Ähnliches kennen. Nach der letzten Szene einen Moment Stille lassen.",
+          "wennEsKippt": "Wird bei der Szene in der U-Bahn-Toilette gelacht, nicht schimpfen: Lachen ist oft Abwehr, wenn etwas zu nahe geht. Wirkt jemand still und blass, ohne Aufsehen danebensetzen und nach dem Film unter vier Augen fragen, wie es geht."
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Pause mit Imbiss, kurz nach draußen. Der Film darf nachwirken; die Leitung fragt höchstens, welche Szene hängen geblieben ist."
+        },
+        {
+          "titel": "Rückschläge, Gedanken, Kraftquellen",
+          "dauer": 15,
+          "phase": "uebung",
+          "text": "Die Beobachtungsbögen fertig ausfüllen, etwa fünf Minuten. Dann trägt jede Beobachtungsgruppe ihre Stichworte in die drei Spalten an der Tafel ein. Im Gespräch die Spalten verbinden: Welcher Gedanke hätte Chris nach einem Rückschlag gebremst, welcher hat ihn weitergebracht? Welche Skills aus dem eigenen Skills-Koffer erkennt ihr bei ihm? Die Beispiele unten helfen, wenn der Gruppe wenig einfällt. Zum Schluss die kritische Frage: Hat Chris es nur durch Willen geschafft – oder auch durch andere Menschen und durch Glück?",
+          "sagen": [
+            "Was hätte Chris in der Nacht in der U-Bahn-Station über sich denken können?",
+            "Und welcher Satz hat ihn am nächsten Morgen trotzdem wieder losgeschickt?"
+          ],
+          "tabelle": {
+            "spalten": [
+              "Rückschlag",
+              "Gedanke, der bremst",
+              "Gedanke, der trägt"
+            ],
+            "zeilen": [
+              [
+                "Die Wohnung ist weg.",
+                "„Ich bin ein schlechter Vater.“",
+                "„Heute Nacht finden wir einen Platz. Morgen geht es weiter.“"
+              ],
+              [
+                "Nur einer von zwanzig bekommt die Stelle.",
+                "„Warum sollte gerade ich das schaffen?“",
+                "„Ich gebe alles, was ich beeinflussen kann.“"
+              ],
+              [
+                "Die Nacht in der U-Bahn-Station",
+                "„Es ist sowieso alles verloren.“",
+                "„Mein Sohn schläft. Wir sind zusammen.“"
+              ]
+            ]
+          },
+          "tipp": "Die Regeln aus Einheit 18 danebenhängen: realistisch bleiben, auf das Beeinflussbare schauen, Wachstum betonen. Die tragenden Sätze sollen so klingen, dass Chris sie wirklich glauben könnte.",
+          "blatt": "skills-film-rueckschlaege"
+        },
+        {
+          "titel": "Standbilder mit zwei Gedankenstimmen",
+          "dauer": 10,
+          "phase": "aktiv",
+          "text": "Zu zweit oder zu dritt eine Szene wählen, in der Chris fast aufgibt, und sie als Standbild bauen. Die Leitung tippt nacheinander zwei Personen aus dem Publikum an: Die eine spricht hinter Chris den Gedanken, der bremst, die andere den Gedanken, der trägt. Die Zuschauer sagen, welcher Satz stärker war und warum. Wer nicht spielen möchte, führt Regie oder liefert die Gedankensätze.",
+          "sagen": [
+            "Stellt euch hinter Chris und sprecht seinen Gedanken. Erst den, der bremst – dann den, der trägt."
+          ],
+          "tipp": "Ein Standbild braucht keinen Text; Haltung und Blick reichen. Das entlastet Jugendliche, die ungern vor anderen sprechen.",
+          "wennEsKippt": "Wird das Standbild albern, einfrieren lassen und fragen: Was fühlt Chris in genau diesem Moment? Meist reicht die Frage, damit die Szene ernst wird – ohne Ermahnung."
+        },
+        {
+          "titel": "Skill: ein Satz für schwere Tage",
+          "dauer": 5,
+          "phase": "skill",
+          "text": "Jede Person schreibt für sich einen tragenden Satz auf die Rückseite ihres Glaubenssatz-Kärtchens aus Einheit 18 oder auf eine neue Karte. Dann dreimal langsam ausatmen und den Satz innerlich sagen. Erklären: Sich selbst mit einem ruhigen Satz anzuleiten, ist ein Kopf-Skill für Momente, in denen man alles hinschmeißen will.",
+          "sagen": [
+            "Ein Satz, den ihr euch an einem richtig schlechten Tag sagen würdet – ehrlich, nicht kitschig."
+          ]
+        },
+        {
+          "titel": "Réckbléck und Skills-Pass",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Blitzlicht zur Frage, was die Jugendlichen von Chris mitnehmen und was sie anders machen würden. Danach Eintrag in den Skills-Pass und Stempel. Wer mag, legt seine Karte zu den Skills-Kärtchen aus Einheit 15.",
+          "sagen": [
+            "Was nehmt ihr von Chris mit – und was würdet ihr anders machen?"
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "hintergrund": "„Das Streben nach Glück“ erzählt die wahre Geschichte von Chris Gardner und passt ans Ende des Moduls über Gedanken: An einer fremden Figur sehen die Jugendlichen, wie das Bild von sich selbst unter Rückschlägen wankt und was dagegenhält. Die Resilienzforschung zeigt, dass Widerstandskraft keine seltene Heldeneigenschaft ist, sondern aus gewöhnlichen Quellen entsteht: verlässlichen Beziehungen, Selbststeuerung, Hoffnung und Sinn (Masten, 2014). Schon die Kauai-Studie fand, dass vor allem eine zugewandte Bezugsperson Kindern hilft, schwierige Umstände zu überstehen (Werner & Smith, 1992). Wer Fähigkeiten für entwickelbar hält, deutet Rückschläge eher als Lernanlass (Dweck, 2006). Die kritische Frage gehört dazu: Jugendliche in schwierigen Lagen sollen aus einer Aufstiegsgeschichte nicht schließen, wer es nicht schaffe, habe sich zu wenig angestrengt.",
+      "quellen": [
+        "Masten, A. S. (2014). Ordinary Magic: Resilience in Development. New York: Guilford.",
+        "Werner, E. E. & Smith, R. S. (1992). Overcoming the Odds. Ithaca: Cornell University Press.",
+        "Dweck, C. S. (2006). Mindset: The New Psychology of Success. New York: Random House."
+      ],
+      "achtung": "Vorführrechte (Schullizenz) und Altersfreigabe vorab durch die Leitung prüfen lassen. Der Film zeigt Armut, Wohnungslosigkeit, die Trennung der Eltern und eine Festnahme. Beobachtungsaufträge und Fragen beziehen sich immer auf die Filmfigur; niemand wird nach eigenen Erfahrungen gefragt. Die Botschaft „Wer sich anstrengt, schafft alles“ nicht stehen lassen: Umstände, Zufall und die Hilfe anderer gehören dazu. Wer betroffen wirkt, bekommt ein Einzelgespräch; bei Hinweisen auf eine Gefährdung nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) informieren."
+    },
+    {
+      "id": "j1-j03",
+      "nr": 3,
+      "jahr": 1,
+      "modul": "joker",
+      "joker": true,
+      "passt": "nach Einheit 27",
+      "titel": "Doku „Das Dilemma mit den sozialen Medien“",
+      "kurz": "Die Gruppe sieht ausgewählte Ausschnitte der Doku, stoppt viermal und prüft mit kurzen Übungen, wie Apps Aufmerksamkeit binden, Vergleiche anheizen und Meinungsblasen bauen.",
+      "dauer": 100,
+      "ziele": [
+        "erklären, wie Apps mit Benachrichtigungen, endlosem Scrollen und Empfehlungen Aufmerksamkeit binden",
+        "erleben in einem Bewegungsspiel, wie eine Meinungsblase entsteht",
+        "prüfen die Doku selbst kritisch: Wo informiert sie, wo spitzt sie zu?",
+        "planen ein eigenes Handy-Experiment für eine Woche"
+      ],
+      "material": [
+        "Doku „Das Dilemma mit den sozialen Medien“ über einen Zugang mit geklärter Vorführlizenz, Beamer, Lautsprecher",
+        "Stopp-Bogen „Was macht die App mit mir?“ je Person, Stifte",
+        "Themenkarten für das Blasen-Spiel: sechs Themen (etwa Fußball, Gaming, Tiere, Mode, Musik, Schlagzeilen) mit je fünf Karten",
+        "Gleich große Zettel und gleiche Stifte für die anonyme Runde, eine Box oder Mütze",
+        "Imbiss und Getränke",
+        "Gefühlsrad (A3), Anspannungsskala, Skills-Pässe, Stempel"
+      ],
+      "vorbereitung": [
+        "Vorführrechte vorab mit der Leitung (Responsable) klären: Schullizenz oder Bedingungen des Anbieters. Die Altersfreigabe prüfen lassen.",
+        "Die Doku vorher ganz ansehen, die vier Ausschnitte aus Schritt 3 auswählen und ihre Zeitmarken notieren.",
+        "Den Abschnitt mit Zahlen zu Selbstverletzung und Suizid bei Mädchen vorher ansehen und bewusst entscheiden, ob er gezeigt wird (siehe Achtung).",
+        "Themenkarten schreiben und nach Themen sortiert bereitlegen."
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-doku-stoppbogen",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Gefühlsrad und Anspannung"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Rückblick auf Einheit 27 und Sehauftrag"
+        },
+        {
+          "min": "15–30",
+          "phase": "input",
+          "titel": "Ausschnitt 1 und Stopp: Was weiß die App über mich?"
+        },
+        {
+          "min": "30–45",
+          "phase": "uebung",
+          "titel": "Ausschnitt 2 und Stopp: Was hält mich fest?"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–70",
+          "phase": "uebung",
+          "titel": "Ausschnitt 3 und anonyme Runde zu Likes"
+        },
+        {
+          "min": "70–85",
+          "phase": "aktiv",
+          "titel": "Ausschnitt 4 und das Blasen-Spiel"
+        },
+        {
+          "min": "85–90",
+          "phase": "uebung",
+          "titel": "Mein Handy-Experiment für eine Woche"
+        },
+        {
+          "min": "90–95",
+          "phase": "skill",
+          "titel": "Skill: der Handy-Stopp, zweite Stufe"
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Réckbléck und Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: Gefühlsrad und Anspannung",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Gefühlsrad und Anspannung von 0 bis 100 wie gewohnt. Danach eine zweite, kurze Runde mit Blick auf Einheit 27: Jede Person zeigt auf das Wort im Rad, das nach einer halben Stunde Scrollen meistens passt. Die Antworten nicht bewerten; die Leitung hält nur fest, wie verschieden sie sind.",
+          "sagen": [
+            "Wie geht es euch gerade – und welches Wort passt meistens nach einer halben Stunde Scrollen?",
+            "Gut unterhalten, leer, neidisch, entspannt – alles darf hier stehen."
+          ],
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Rückblick auf Einheit 27 und Sehauftrag",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "An Einheit 27 erinnern: Apps sind so gebaut, dass wir bleiben. Heute erzählen Menschen, die solche Apps selbst mitentwickelt haben. Erklären, dass die Doku echte Interviews mit gespielten Szenen einer Familie mischt, und den Sehauftrag geben: Achtet darauf, wo die Doku informiert und wo sie mit Musik und Spielszenen Stimmung macht. Stopp-Bögen austeilen.",
+          "sagen": [
+            "Auch diese Doku will etwas von euch. Wir schauen ihr genauso auf die Finger wie jedem Post.",
+            "Viermal halten wir an und probieren etwas aus."
+          ],
+          "blatt": "skills-doku-stoppbogen"
+        },
+        {
+          "titel": "Ausschnitt 1 und Stopp: Was weiß die App über mich?",
+          "dauer": 15,
+          "phase": "input",
+          "text": "Ausschnitt 1 zeigen, etwa zehn Minuten. Stopp. Auf dem Stopp-Bogen trägt jede Person ein, was ihre meistgenutzte App über sie weiß: links, was sie bewusst angibt, rechts, was nebenbei gesammelt wird – Standort, Uhrzeit, wie lange sie bei einem Video bleibt. Danach sammelt die Leitung einige Beispiele an der Tafel, ohne App-Namen zu bewerten.",
+          "sagen": [
+            "Was weiß eure Lieblings-App über euch, ohne dass ihr es ihr je gesagt habt?",
+            "Wie lange ihr bei einem Video bleibt, bevor ihr weiterwischt – auch das ist eine Information."
+          ],
+          "punkte": [
+            "Ausschnitt 1: der Anfang – die Interviewten zögern bei der Frage, was eigentlich das Problem ist; ein früherer Google-Mitarbeiter erzählt, wie Aufmerksamkeit zum Geschäft wurde.",
+            "Ausschnitt 2: die Spielszenen im Kontrollraum, in dem der Algorithmus als drei Männer den Feed des Sohnes Ben steuert und ihn mit Benachrichtigungen zurück ans Handy lockt; dazu das Abendessen, bei dem die Mutter die Handys in eine Box mit Zeitschloss legt.",
+            "Ausschnitt 3: die jüngere Tochter wartet auf Likes für ein Foto von sich und liest einen abwertenden Kommentar über ihr Aussehen.",
+            "Ausschnitt 4: Bens Feed wird immer einseitiger, bis er in eine erfundene politische Bewegung hineingezogen wird – ein oder zwei Szenen reichen."
+          ],
+          "tipp": "Die Zeitmarken der Ausschnitte auf einem Zettel neben dem Laptop bereithalten; langes Suchen während der Einheit kostet mehr Aufmerksamkeit als jede App.",
+          "blatt": "skills-doku-stoppbogen"
+        },
+        {
+          "titel": "Ausschnitt 2 und Stopp: Was hält mich fest?",
+          "dauer": 15,
+          "phase": "uebung",
+          "text": "Ausschnitt 2 zeigen: den Kontrollraum und das Abendessen mit der Handy-Box. Stopp. Auf dem Bogen kreuzt jede Person an, welche Tricks bei ihr wirken. Dann nehmen Paare eine App auseinander: Was genau sorgt dafür, dass man länger bleibt als geplant? Jedes Paar stellt einen Trick in einem Satz vor.",
+          "sagen": [
+            "Welcher Trick wirkt bei euch am zuverlässigsten?",
+            "Wer hat etwas davon, dass ihr zehn Minuten länger bleibt?"
+          ],
+          "tipp": "Handys bleiben bei dieser Übung in der Tasche: Die Tricks kennen alle auswendig. Wer nachschauen möchte, tut das nach der Einheit.",
+          "wennEsKippt": "Verteidigt jemand seine Lieblings-App heftig, nicht dagegenhalten. Zustimmen, dass sie auch Gutes bringt, und nachfragen, was an ihr so gebaut ist, dass man länger bleibt als gewollt: Es geht um das Design, nicht um die Person.",
+          "blatt": "skills-doku-stoppbogen"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Pause mit Imbiss. Die Gruppe entscheidet vorher mit, ob die Handys auch in der Pause in der Tasche bleiben – als kleiner Selbstversuch, über den beim Réckbléck kurz gesprochen wird."
+        },
+        {
+          "titel": "Ausschnitt 3 und anonyme Runde zu Likes",
+          "dauer": 10,
+          "phase": "uebung",
+          "text": "Ausschnitt 3 zeigen: die jüngere Tochter, ihr Foto und der Kommentar. Danach beantwortet jede Person anonym auf einem Zettel eine der beiden Fragen: Wie fühle ich mich, wenn ein Post wenige Likes bekommt? Womit vergleiche ich mich am meisten? Die Zettel kommen gefaltet in eine Box; die Leitung mischt und liest sie vor, ohne zu kommentieren. Danach nur eine Frage an alle: Was fällt euch auf?",
+          "sagen": [
+            "Niemand erfährt, welcher Zettel von wem ist – auch ich nicht.",
+            "Was fällt euch auf, wenn ihr das alles zusammen hört?"
+          ],
+          "tipp": "Gleiche Zettel und gleiche Stifte verwenden und selbst auch einen Zettel schreiben; so bleibt die Runde wirklich anonym.",
+          "wennEsKippt": "Steht auf einem Zettel etwas Belastendes, etwa „Ich hasse mich“ oder ein Hinweis auf Selbstverletzung, den Zettel nicht vorlesen. Der ganzen Gruppe sagen, dass die Leitung für Gespräche da ist, und nach der Einheit mit der zuständigen Leitung (Responsable) das weitere Vorgehen besprechen."
+        },
+        {
+          "titel": "Ausschnitt 4 und das Blasen-Spiel",
+          "dauer": 15,
+          "phase": "aktiv",
+          "text": "Ausschnitt 4 zeigen: Bens Feed wird immer einseitiger. Dann das Blasen-Spiel: Eine Person ist Nutzerin oder Nutzer, die anderen sind der Algorithmus und halten je eine Themenkarte gut sichtbar vor sich. Die Nutzerin geht langsam die Reihe entlang und bleibt bei ein, zwei Karten stehen. Wer nicht beachtet wurde, tauscht seine Karte gegen das Thema, bei dem sie stehen geblieben ist. Nach drei, vier Runden zeigen fast alle Karten dasselbe – die Blase ist fertig. Danach die Rolle wechseln und fragen, wann die Auswahl kleiner wurde.",
+          "sagen": [
+            "Wann hast du gemerkt, dass du fast nur noch Fußball siehst?",
+            "Was passiert, wenn auf den Karten keine Hobbys stehen, sondern Schlagzeilen, die wütend machen?"
+          ],
+          "tipp": "Mit harmlosen Themen beginnen und erst im Gespräch auf Nachrichten und Meinungen übertragen. Dann ist die Einsicht die eigene Entdeckung der Gruppe.",
+          "wennEsKippt": "Rennt die Gruppe nur noch herum, die Rolle der Nutzerin selbst übernehmen und das Tempo vorgeben: langsam gehen, laut sagen, wo man stehen bleibt. Mit zwei Jugendlichen spielt die Leitung einen Teil des Algorithmus mit."
+        },
+        {
+          "titel": "Mein Handy-Experiment für eine Woche",
+          "dauer": 5,
+          "phase": "uebung",
+          "text": "Kurz fragen, was aus dem Social-Media-Plan aus Einheit 27 geworden ist. Dann liest die Leitung einige Tipps vor, die die Interviewten im Abspann über ihr eigenes Handy erzählen, oder zeigt den Abspann kurz. Jede Person wählt auf dem Stopp-Bogen ein neues Experiment für eine Woche und schreibt es als Wenn-dann-Satz auf; im nächsten Check-in wird nachgefragt.",
+          "punkte": [
+            "Benachrichtigungen nur für Menschen, nicht für Apps",
+            "kein Video starten, das die App vorschlägt – selbst suchen",
+            "das Handy nachts nicht im Schlafzimmer laden",
+            "vor dem Teilen prüfen, woher eine Nachricht stammt",
+            "auch Accounts folgen, die anders denken als ich"
+          ],
+          "blatt": "skills-doku-stoppbogen"
+        },
+        {
+          "titel": "Skill: der Handy-Stopp, zweite Stufe",
+          "dauer": 5,
+          "phase": "skill",
+          "text": "An den Skill aus Einheit 27 anknüpfen, die drei Atemzüge vor dem Griff zum Handy. Heute die schwierigere Stufe: Jede Person nimmt ihr Handy in die Hand, ohne es zu entsperren, legt den Daumen auf das Display, atmet einmal langsam aus und fragt sich, was sie jetzt eigentlich will. Erst dann entsperren oder das Handy wieder weglegen. Zwei Durchgänge üben und erklären: Dieser kleine Stopp holt die Entscheidung zurück, bevor die App sie trifft.",
+          "sagen": [
+            "Ausatmen. Daumen drauf. Was will ich eigentlich – schreiben, nachschauen oder nur weg von etwas?",
+            "Wenn die Antwort „nur weg von etwas“ ist, ist das eine wichtige Information."
+          ],
+          "wennEsKippt": "Schauen alle sofort aufs Display, lachen und das Ergebnis würdigen – genau das ist der Autopilot. Dann die Übung mit dem Handy auf dem Tisch wiederholen, Display nach unten. Wer kein Handy dabeihat oder es nicht zeigen will, nimmt einen Stift."
+        },
+        {
+          "titel": "Réckbléck und Skills-Pass",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Blitzlicht zur Frage, wo die Doku überzeugt hat und wo die Jugendlichen widersprechen wollten; dazu ein Satz zum Pausen-Selbstversuch. Danach Eintrag in den Skills-Pass, zum Beispiel das eigene Handy-Experiment, und Stempel. Auf die Hilfenummern am Ende des Stopp-Bogens hinweisen.",
+          "sagen": [
+            "Wo hat euch die Doku überzeugt – und wo wolltet ihr widersprechen?"
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "hintergrund": "Die Doku lässt frühere Mitarbeiter großer Tech-Firmen erklären, wie Apps auf Aufmerksamkeit optimiert werden, und verbindet das mit gespielten Szenen einer Familie. Sie ist anschaulich, aber zugespitzt. Die Forschung ist nüchterner: In großen Datensätzen hängt die Nutzung digitaler Medien nur schwach mit dem Wohlbefinden Jugendlicher zusammen (Orben & Przybylski, 2019). Wichtiger als die reine Zeit ist, wie und wofür Medien genutzt werden, und Jugendliche profitieren mehr von Begleitung als von Verboten (Livingstone & Blum-Ross, 2020). Soziale Vergleiche mit bearbeiteten Bildern können Stimmung und Körperbild dagegen spürbar beeinträchtigen (Fardouly et al., 2015). Die Einheit nutzt die Doku deshalb doppelt: als Anstoß, die eigenen Gewohnheiten zu prüfen, und als Übung, eine Quelle selbst kritisch zu lesen.",
+      "quellen": [
+        "Orben, A. & Przybylski, A. K. (2019). The association between adolescent well-being and digital technology use. Nature Human Behaviour, 3(2), 173–182.",
+        "Livingstone, S. & Blum-Ross, A. (2020). Parenting for a Digital Future. New York: Oxford University Press.",
+        "Fardouly, J., Diedrichs, P. C., Vartanian, L. R. & Halliwell, E. (2015). Social comparisons on social media: The impact of Facebook on young women’s body image concerns and mood. Body Image, 13, 38–45."
+      ],
+      "achtung": "Vorführrechte (Schullizenz, Bedingungen des Anbieters) und Altersfreigabe vorab durch die Leitung klären lassen. Die Doku enthält einen Abschnitt mit Zahlen zu Selbstverletzung und Suizid bei jugendlichen Mädchen: ihn vorher ansehen und in belasteten Gruppen weglassen. Niemand muss sein Handy, seine Bildschirmzeit oder seine Accounts vor anderen zeigen. Kommen in der anonymen Runde oder im Gespräch Hinweise auf Cybermobbing, Erpressung mit Bildern oder Selbstverletzung, das nicht im Plenum vertiefen: Einzelgespräch anbieten, nach dem internen Schutzkonzept handeln, die zuständige Leitung (Responsable) informieren und auf BEE SECURE (8002 1234) und das Kanner- a Jugendtelefon (116 111) hinweisen."
+    },
+    {
+      "id": "j1-j04",
+      "nr": 4,
+      "jahr": 1,
+      "modul": "joker",
+      "joker": true,
+      "passt": "jederzeit, am besten im Frühling",
+      "titel": "Naturtag mit Achtsamkeits-Parcours",
+      "kurz": "Ein halber Tag draußen: Zu zweit durchläuft die Gruppe einen Parcours mit sechs Sinnes-Stationen, picknickt, baut ein gemeinsames Land-Art-Bild und schließt mit einer Gefühlsrad-Runde im Gras.",
+      "dauer": 200,
+      "ziele": [
+        "nehmen an sechs Stationen die Umgebung mit jeweils einem Sinn bewusst wahr",
+        "vergleichen, wie ruhig sie vor und nach dem Parcours sind, und wählen eine Übung für den Alltag",
+        "gestalten als Gruppe ein Land-Art-Bild und erleben sich dabei als Team"
+      ],
+      "material": [
+        "Achtsamkeits-Parcours (Schülerblatt): Seite 1 einmal, Karten ausgeschnitten und in Klarsichthüllen; Seite 2 je Person",
+        "Klemmbretter, Bleistifte, ein Würfel",
+        "Decken oder Isomatten, Handtücher für den Barfußpfad",
+        "Klangschale oder Pfeife als Sammelsignal",
+        "Gefühlsrad (A3, laminiert oder in einer Klarsichthülle), Skills-Pässe, Stempel",
+        "Picknick, Wasser, Müllbeutel; Sonnencreme und Regenjacken",
+        "Erste-Hilfe-Tasche mit Zeckenzange, Notfallmedikamente der Jugendlichen, Liste der Notfallnummern, geladenes Diensthandy",
+        "Kamera oder Tablet der Einrichtung für die Naturfotos"
+      ],
+      "vorbereitung": [
+        "Den Ausflug nach den Regeln des Hauses anmelden: Einverständnis der Eltern, Begleitperson, Treffpunkt und Rückkehrzeit.",
+        "Den Ort vorher begehen: Wiese, Bäume und Schatten in Sichtweite zueinander; die Barfußstrecke auf Scherben, spitze Steine, Hundekot und Bienen im Klee prüfen.",
+        "Allergien (Pollen, Insektenstiche, Lebensmittel) und nötige Notfallmedikamente abfragen.",
+        "Jugendliche und Eltern bitten, lange Hosen und festes Schuhwerk zu tragen; nach dem Tag auf Zecken absuchen lassen.",
+        "Die Stationskarten am Morgen auslegen und mit einem Stein beschweren."
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-achtsamkeits-parcours",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–15",
+          "phase": "ankommen",
+          "titel": "Ankommen draußen: Gefühlsrad im Gras"
+        },
+        {
+          "min": "15–25",
+          "phase": "bruecke",
+          "titel": "Regeln, Signal und Parcours erklären"
+        },
+        {
+          "min": "25–35",
+          "phase": "aktiv",
+          "titel": "Schweigend zum Parcours gehen"
+        },
+        {
+          "min": "35–100",
+          "phase": "aktiv",
+          "titel": "Achtsamkeits-Parcours: sechs Stationen zu zweit"
+        },
+        {
+          "min": "100–130",
+          "phase": "pause",
+          "titel": "Picknick"
+        },
+        {
+          "min": "130–145",
+          "phase": "aktiv",
+          "titel": "Verstecken als Sardinen-Spiel"
+        },
+        {
+          "min": "145–175",
+          "phase": "uebung",
+          "titel": "Land-Art: ein Bild der Gruppe"
+        },
+        {
+          "min": "175–190",
+          "phase": "skill",
+          "titel": "Skill: zehn Minuten an meinem Platz"
+        },
+        {
+          "min": "190–200",
+          "phase": "abschluss",
+          "titel": "Gefühlsrad-Runde und Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Ankommen draußen: Gefühlsrad im Gras",
+          "dauer": 15,
+          "phase": "ankommen",
+          "text": "Am Treffpunkt im Kreis ankommen, Rucksäcke ablegen, einmal gemeinsam tief durchatmen. Das Gefühlsrad liegt in der Mitte auf dem Boden; jede Person legt einen Stein, ein Blatt oder einen Zapfen auf ihr Wort und sagt einen Satz dazu. Ab Einheit 11 kommt die Anspannung von 0 bis 100 dazu. Zum Schluss trägt jede Person auf Seite 2 des Blatts ein, wie ruhig sie gerade ist; am Ende des Tages wird noch einmal geschätzt.",
+          "sagen": [
+            "Legt euer Naturding auf das Wort, das heute passt. Das Rad bleibt den ganzen Vormittag hier liegen.",
+            "Wie ruhig ist es gerade in euch, von 0 bis 10? Kreuzt die Zahl an – am Ende schauen wir noch einmal."
+          ],
+          "tipp": "Das Rad in eine Klarsichthülle stecken und an den Ecken mit Steinen beschweren; draußen fliegt sonst alles davon.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Regeln, Signal und Parcours erklären",
+          "dauer": 10,
+          "phase": "bruecke",
+          "text": "Kurz erklären, worum es heute geht: sechs Stationen, an denen jeweils ein Sinn im Mittelpunkt steht, zu zweit und im eigenen Tempo. Die Regeln vorlesen und das Sammelsignal einmal ausprobieren. Paare bilden, Klemmbretter austeilen und zeigen, wo die Stationen liegen und an welcher jedes Paar startet.",
+          "sagen": [
+            "Heute gibt es keine Punkte und kein Tempo. Wer als Erster fertig ist, hat nichts gewonnen – außer weniger gesehen.",
+            "Hört ihr die Klangschale, kommt ihr sofort zurück. Wir probieren das einmal."
+          ],
+          "punkte": [
+            "Immer in Sichtweite der Leitung bleiben.",
+            "Beim Signal kommen alle sofort zum Treffpunkt.",
+            "Nichts in den Mund nehmen, nichts abreißen, kein Tier stören.",
+            "Stopp-Recht: Wer eine Station nicht machen möchte, wartet dort oder geht weiter.",
+            "Handys bleiben im Rucksack; fotografiert wird mit der Kamera der Gruppe."
+          ],
+          "wennEsKippt": "Wollen zwei nur quatschen, die Paare neu mischen, bevor es losgeht. Wer sehr unruhig ist, geht mit der Leitung als Dreierteam.",
+          "blatt": "skills-achtsamkeits-parcours"
+        },
+        {
+          "titel": "Schweigend zum Parcours gehen",
+          "dauer": 10,
+          "phase": "aktiv",
+          "text": "Den Weg zum Parcours als achtsamen Spaziergang gehen: fünf Minuten nicht sprechen, langsamer als sonst, auf Schritte, Geräusche und Gerüche achten. Die Leitung geht vorn und gibt das Tempo vor. Am Parcours kurz stehen bleiben und fragen, was unterwegs anders war als sonst.",
+          "sagen": [
+            "Fünf Minuten ohne Worte. Zählt, wie viele verschiedene Geräusche ihr hört.",
+            "Was habt ihr unterwegs bemerkt, das ihr sonst überhört oder übersehen hättet?"
+          ],
+          "wennEsKippt": "Hält jemand das Schweigen nicht aus und macht Geräusche, nicht ermahnen, sondern die Aufgabe ändern: Die Person zählt mit den Fingern, wie viele Vögel sie hört. Eine Aufgabe für die Hände hilft oft mehr als eine Regel."
+        },
+        {
+          "titel": "Achtsamkeits-Parcours: sechs Stationen zu zweit",
+          "dauer": 65,
+          "phase": "aktiv",
+          "text": "Die Paare starten an verschiedenen Stationen und wechseln im Uhrzeigersinn, wenn die Leitung das Signal gibt, etwa alle neun Minuten. An jeder Station liest eine Person die Karte vor, dann machen beide die Übung ohne zu reden. Danach notiert jede Person in der Tabelle ein Stichwort. Die Leitung geht herum, hört zu und stellt höchstens eine Frage pro Station; bei zwei Leitungen bleibt eine am Barfußpfad.",
+          "punkte": [
+            "Barfußpfad: über Gras, Moos, Erde und Sand gehen und die Unterschiede spüren.",
+            "Klanglandkarte: zwei Minuten mit geschlossenen Augen lauschen, dann alle Geräusche rund um ein Kreuz für den eigenen Platz einzeichnen.",
+            "Sinneswürfel: würfeln und drei Minuten nur auf den gewürfelten Sinn achten, dann noch einmal.",
+            "Ein Baum aus der Nähe: Rinde, Geruch, Farben und kleine Tiere erkunden.",
+            "Ruhe-Foto: ein Foto machen, das zeigt, wie Ruhe aussieht – ohne Menschen im Bild.",
+            "Wolken oder Blätterdach: drei Minuten auf dem Rücken liegen und nur nach oben schauen."
+          ],
+          "tipp": "Mit einer Station weniger und dafür je elf Minuten wird es ruhiger. Lieber Zeit zum Nachspüren als ein vollständiger Parcours. Mit nur zwei Jugendlichen geht die Leitung als Dritte mit und macht selbst mit.",
+          "wennEsKippt": "Wird an einer Station herumgealbert, das Paar für die nächste Station trennen oder selbst mitgehen. Bei Regen die Liegestation streichen: stattdessen unter einem Baum Tropfen zählen, den Geruch nasser Erde beschreiben, die Hände in den Regen halten.",
+          "blatt": "skills-achtsamkeits-parcours"
+        },
+        {
+          "titel": "Picknick",
+          "dauer": 30,
+          "phase": "pause",
+          "text": "Gemeinsames Picknick auf den Decken. Die Leitung isst mit, lässt das Thema ruhen und achtet darauf, wer allein sitzt. Den Müll sammelt die Gruppe gemeinsam ein."
+        },
+        {
+          "titel": "Verstecken als Sardinen-Spiel",
+          "dauer": 15,
+          "phase": "aktiv",
+          "text": "Nach dem Essen kommt Bewegung. Das Spielgebiet vorher gemeinsam abgehen und klar begrenzen. Eine Person versteckt sich, alle anderen suchen einzeln; wer sie findet, versteckt sich still dazu, bis am Ende alle eng im Versteck sitzen und die letzte Person sucht. Zwei, drei Runden spielen.",
+          "sagen": [
+            "Wer findet, sagt nichts – einfach dazusetzen und leise sein. Das ist schwerer, als es klingt."
+          ],
+          "tipp": "Sardinen passt auch für Jugendliche, die klassisches Verstecken zu kindisch finden: Am Ende sitzen alle zusammen, und niemand bleibt übrig.",
+          "wennEsKippt": "Ist jemand nicht mehr zu sehen oder geht zu weit weg, sofort das Sammelsignal geben und das Gebiet verkleinern. Sicherheit geht vor Spiel."
+        },
+        {
+          "titel": "Land-Art: ein Bild der Gruppe",
+          "dauer": 30,
+          "phase": "uebung",
+          "text": "Die Gruppe legt aus Naturmaterial ein gemeinsames Bild auf den Boden, etwa einen großen Kreis, in dem jede Person ein eigenes Feld gestaltet, oder ein Gefühlsrad aus Blättern, Steinen und Zweigen. Gesammelt wird nur, was lose herumliegt. Zum Schluss geht die Gruppe einmal schweigend um das Bild herum, dann erklärt jede Person ihren Teil in einem Satz. Das Bild wird ohne Gesichter fotografiert und bleibt draußen liegen.",
+          "sagen": [
+            "Was muss in das Bild, damit man sieht: Das sind wir?",
+            "Nehmt nur, was schon am Boden liegt. Der Baum braucht seine Blätter noch."
+          ],
+          "tipp": "Ein Rahmen aus Stöcken gibt dem Bild eine Grenze und hilft Gruppen, die sich sonst zerstreuen.",
+          "wennEsKippt": "Streiten zwei um die Gestaltung, bekommt jede Person ein eigenes Feld im Rahmen. Was in der Mitte entsteht, entscheidet die Gruppe am Ende gemeinsam."
+        },
+        {
+          "titel": "Skill: zehn Minuten an meinem Platz",
+          "dauer": 15,
+          "phase": "skill",
+          "text": "Wie in der ersten Einheit sucht sich jede Person einen Platz in Sichtweite, allein und ohne Handy. Zehn Minuten nur sitzen, schauen und hören. Danach im Kreis: Wie war es heute im Vergleich zum ersten Mal? Zum Schluss schätzt jede Person noch einmal, wie ruhig sie jetzt ist, und kreuzt die Zahl an.",
+          "sagen": [
+            "Wie waren die zehn Minuten heute – im Vergleich zur allerersten Einheit?"
+          ]
+        },
+        {
+          "titel": "Gefühlsrad-Runde und Skills-Pass",
+          "dauer": 10,
+          "phase": "abschluss",
+          "text": "Zurück zum Gefühlsrad im Gras: Jede Person legt ihr Naturding auf das Wort, das jetzt passt – vielleicht dasselbe, vielleicht ein anderes. Wer mag, nennt die beiden Ruhe-Zahlen. Jede Person wählt die Station, die sie in den Alltag mitnimmt, und trägt sie in den Skills-Pass ein. Stempel, Material einsammeln, den Platz so verlassen, wie die Gruppe ihn vorgefunden hat.",
+          "sagen": [
+            "Liegt euer Stein noch auf demselben Wort?",
+            "Welche Station würdet ihr auch an einem normalen Schultag machen – im Pausenhof, im Bus, zu Hause?"
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "hintergrund": "Nach der Aufmerksamkeitserholungstheorie entlastet Natur, weil sie die Aufmerksamkeit sanft anzieht, ohne sie zu fordern; die willentliche Konzentration kann sich dabei erholen (Kaplan, 1995). Achtsamkeit bedeutet, den gegenwärtigen Moment absichtlich und ohne Bewertung wahrzunehmen (Kabat-Zinn, 1990). Einzelne Sinne nacheinander in den Mittelpunkt zu stellen, macht dieses Prinzip für Jugendliche greifbar: Sie merken, wie viel sie wahrnehmen, wenn sie nur hören oder nur tasten. Eine Meta-Analyse schulischer Achtsamkeitsprogramme fand positive Effekte, vor allem auf kognitive Leistungen und den Umgang mit Stress (Zenner et al., 2014). Der Vergleich der Ruhe-Zahlen vor und nach dem Parcours macht die Wirkung für die Jugendlichen selbst sichtbar, und die Übertragungsfrage am Ende macht aus dem besonderen Tag einen Skill für den Alltag.",
+      "quellen": [
+        "Kaplan, S. (1995). The restorative benefits of nature: Toward an integrative framework. Journal of Environmental Psychology, 15(3), 169–182.",
+        "Kabat-Zinn, J. (1990). Full Catastrophe Living. New York: Delacorte.",
+        "Zenner, C., Herrnleben-Kurz, S. & Walach, H. (2014). Mindfulness-based interventions in schools – a systematic review and meta-analysis. Frontiers in Psychology, 5, 603."
+      ],
+      "achtung": "Den Ausflug nur nach den Regeln des Hauses durchführen (Einverständnis, Begleitung, Erreichbarkeit). Allergien und Notfallmedikamente vorher klären; bei einer Insektenstichallergie gehört das Notfallset in die Tasche der Leitung. Nach dem Tag auf Zecken absuchen lassen und die Eltern informieren. Barfußgehen, Liegen und Augenschließen sind freiwillig – Jugendliche mit belastenden Erfahrungen fühlen sich mit geschlossenen Augen oder auf dem Rücken liegend oft unsicher. Fotos zeigen nur Natur, keine Personen. Kommt beim Alleinsein etwas Belastendes hoch, nicht in der Runde vertiefen, sondern ein Einzelgespräch anbieten; bei Hinweisen auf eine Gefährdung nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) informieren."
+    },
+    {
+      "id": "j1-j05",
+      "nr": 5,
+      "jahr": 1,
+      "modul": "joker",
+      "joker": true,
+      "passt": "nach Modul 5 oder 6, über zwei Termine",
+      "titel": "Unser Stück – Theater oder Video",
+      "kurz": "Die Gruppe entwickelt in zwei Terminen ein kurzes Theaterstück oder Video zu einem Thema aus dem Jahr, probt es und führt es auf – auf Wunsch mit einem dritten Termin vor Publikum.",
+      "dauer": 200,
+      "ziele": [
+        "wählen ein Thema aus dem Kursjahr und formulieren eine klare Botschaft für ein Publikum",
+        "entwickeln gemeinsam Szenen und Rollen und übernehmen eine Aufgabe vor oder hinter der Bühne",
+        "spielen ein Verhalten aus dem Kurs – Nein sagen, Stopp, Ich-Botschaft, Zivilcourage – vor anderen durch",
+        "geben einander wertschätzende Rückmeldungen und legen Rollen bewusst wieder ab"
+      ],
+      "material": [
+        "Plakat für die Botschaft, dicke Stifte, Klebepunkte, Klebezettel",
+        "Szenenplan „Unser Stück“ (Schülerblatt) für die Gruppe, in A3",
+        "Namensschilder oder Tücher als Rollenzeichen, einfache Requisiten (Stühle, Taschen, ein Handy als Attrappe)",
+        "Für ein Video: Tablet oder Kamera der Einrichtung, Stativ, wenn vorhanden ein externes Mikrofon",
+        "Einverständniserklärungen für Aufnahmen nach den Regeln des Hauses",
+        "Imbiss und Getränke für beide Termine",
+        "Gefühlsrad (A3), Anspannungsskala, Skills-Pässe, Stempel"
+      ],
+      "vorbereitung": [
+        "Mit der Leitung (Responsable) klären, ob gefilmt werden darf und wer die Einverständniserklärungen einholt. Aufnahmen nur auf Geräten der Einrichtung.",
+        "Einen Raum mit freier Spielfläche reservieren, für Termin 2 zusätzlich einen ruhigen Ort zum Filmen.",
+        "Themenkarten aus dem Jahr schreiben (Liste in Schritt 3).",
+        "Soll vor Publikum gespielt werden, Termin, Gäste und Ort früh mit der Leitung und der Gruppe absprechen."
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-unser-stueck",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Gefühlsrad, Anspannung, Lust auf Bühne"
+        },
+        {
+          "min": "10–20",
+          "phase": "aktiv",
+          "titel": "Aufwärmen: Gehen, Einfrieren, Standbilder"
+        },
+        {
+          "min": "20–45",
+          "phase": "uebung",
+          "titel": "Thema und Botschaft finden"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–90",
+          "phase": "uebung",
+          "titel": "Szenen und Rollen entwickeln"
+        },
+        {
+          "min": "90–95",
+          "phase": "skill",
+          "titel": "Skill: Rolle abschütteln"
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Réckbléck und Skills-Pass"
+        },
+        {
+          "min": "100–110",
+          "phase": "ankommen",
+          "titel": "Termin 2: Check-in mit Lampenfieber-Zahl"
+        },
+        {
+          "min": "110–120",
+          "phase": "aktiv",
+          "titel": "Aufwärmen für Stimme und Körper"
+        },
+        {
+          "min": "120–145",
+          "phase": "uebung",
+          "titel": "Proben mit Regie-Stopps"
+        },
+        {
+          "min": "145–160",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "160–180",
+          "phase": "aktiv",
+          "titel": "Aufführung oder Dreh"
+        },
+        {
+          "min": "180–190",
+          "phase": "uebung",
+          "titel": "Nachgespräch: Was ist angekommen?"
+        },
+        {
+          "min": "190–195",
+          "phase": "skill",
+          "titel": "Skill: Rolle ablegen und gemeinsam atmen"
+        },
+        {
+          "min": "195–200",
+          "phase": "abschluss",
+          "titel": "Réckbléck und Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: Gefühlsrad, Anspannung, Lust auf Bühne",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Gefühlsrad und Anspannung von 0 bis 100 wie gewohnt. Dazu eine zweite Frage mit den Fingern: Wie viel Lust auf Bühne habt ihr heute, von 0 bis 10? Die Zahlen nicht kommentieren. Die Leitung merkt sich, wer wenig Lust hat, und denkt für diese Personen schon an Aufgaben hinter der Bühne oder hinter der Kamera.",
+          "sagen": [
+            "Wie geht es euch – und wie viel Lust habt ihr heute auf Bühne, von 0 bis 10 Finger?",
+            "Eine Null ist völlig in Ordnung. Ein Stück braucht auch Regie, Kamera und Ton."
+          ],
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Aufwärmen: Gehen, Einfrieren, Standbilder",
+          "dauer": 10,
+          "phase": "aktiv",
+          "text": "Alle gehen kreuz und quer durch den Raum. Die Leitung ruft Gefühle, und alle gehen so, wie sich das Gefühl anfühlt: wütend, ängstlich, stolz, gelangweilt. Auf „Freeze!“ frieren alle ein. Danach zu dritt: Die Leitung nennt eine Situation, und die Gruppe baut in fünf Sekunden ein Standbild dazu, etwa „Jemand wird in der Pause ausgelacht“ oder „Das Tor in letzter Sekunde“.",
+          "sagen": [
+            "Geht, als wärt ihr richtig stolz. Und jetzt, als hättet ihr gerade etwas verbockt.",
+            "Freeze! Nur die Augen dürfen sich bewegen: Wer steht wie da?"
+          ],
+          "tipp": "Die Leitung macht mit und übertreibt zuerst – das senkt die Scham schneller als jede Erklärung.",
+          "wennEsKippt": "Stehen Einzelne nur am Rand, bekommen sie eine Aufgabe: Sie rufen die Gefühle aus oder geben das Kommando zum Einfrieren. Wer die Kommandos gibt, spielt schon mit."
+        },
+        {
+          "titel": "Thema und Botschaft finden",
+          "dauer": 25,
+          "phase": "uebung",
+          "text": "Die Themenkarten auslegen; die Jugendlichen dürfen eigene ergänzen. Mit Klebepunkten wählt die Gruppe ein Thema. Dann gemeinsam die Botschaft in einem Satz formulieren: Was soll das Publikum danach denken oder anders machen? Die Botschaft kommt groß auf ein Plakat. Zum Schluss entscheiden: Theater oder Video – und ob es einen dritten Termin mit Publikum geben soll.",
+          "sagen": [
+            "Was habt ihr dieses Jahr gelernt, das andere Jugendliche auch wissen sollten?",
+            "Stellt euch vor, jemand sieht unser Stück und macht danach etwas anders. Was genau?"
+          ],
+          "punkte": [
+            "Ein Gefühl übernimmt das Steuer (wie in „Alles steht Kopf“)",
+            "Nein sagen, wenn alle Ja sagen",
+            "Stopp – jemand überschreitet eine Grenze",
+            "Ein Streit, der mit der Konflikt-Treppe anders ausgeht",
+            "Mobbing und die Macht der Zuschauenden",
+            "Ein Gerücht im Klassenchat",
+            "ein eigenes Thema der Gruppe"
+          ],
+          "tipp": "Das Plakat mit der Botschaft hängt in beiden Terminen. Jede Szene muss zu ihr passen, sonst fliegt sie raus.",
+          "wennEsKippt": "Einigt sich die Gruppe nicht, zwei Themen in einer Geschichte verbinden, etwa ein Gerücht im Klassenchat, bei dem am Ende jemand Nein sagt. Kommen nur Witzvorschläge, einen davon ernst nehmen: Auch eine Komödie kann eine klare Botschaft haben.",
+          "blatt": "skills-unser-stueck"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Pause mit Imbiss. Wer eine Idee für eine Szene hat, schreibt sie auf einen Klebezettel und klebt ihn neben die Botschaft."
+        },
+        {
+          "titel": "Szenen und Rollen entwickeln",
+          "dauer": 30,
+          "phase": "uebung",
+          "text": "Die Geschichte in vier bis sechs Szenen aufteilen und im Szenenplan skizzieren: Wer ist da, was passiert, welcher Satz ist wichtig? Dann die Aufgaben verteilen, auch hinter Bühne und Kamera: Regie, Kamera, Ton, Requisite, Erzählstimme. Die gemeinsamen Abmachungen auf dem Blatt ankreuzen, bevor gespielt wird. Jede Szene wird einmal grob angespielt, noch ohne Perfektion. Niemand spielt sich selbst oder eine erkennbare echte Person.",
+          "sagen": [
+            "Welche Szene muss unbedingt rein, damit man die Botschaft versteht?",
+            "Wer möchte lieber hinter der Kamera stehen? Ohne euch gibt es keinen Film."
+          ],
+          "tipp": "Belastende Rollen, etwa die Person, die ausgelacht wird, werden angeboten, nicht verteilt, und dürfen jederzeit abgegeben werden. Die Rollen derer, die angreifen, wechseln, damit niemand darauf festgelegt wird. Mit nur zwei Jugendlichen lieber ein Video drehen; die Leitung übernimmt Nebenrollen oder die Kamera.",
+          "wennEsKippt": "Will jemand nur die coole Rolle, fragen, was die Szene braucht: Oft ist die Figur, die am Ende Stopp sagt, die stärkste Rolle. Wird aus einer Szene echtes Schubsen oder Beleidigen, sofort unterbrechen – Gewalt wird nur angedeutet, in Zeitlupe oder als Standbild.",
+          "blatt": "skills-unser-stueck"
+        },
+        {
+          "titel": "Skill: Rolle abschütteln",
+          "dauer": 5,
+          "phase": "skill",
+          "text": "Im Kreis stehen. Jede Person schüttelt ihre Rolle mit Armen, Beinen und Schultern ab, dann sagt sie laut ihren eigenen Namen und etwas, das sie wirklich mag. Erklären: Nach einem Rollenspiel bleibt die Rolle auf der Bühne; wer eine unangenehme Figur gespielt hat, lässt sie so bewusst zurück.",
+          "sagen": [
+            "Schüttelt die Rolle ab – und jetzt: Wer seid ihr wirklich?",
+            "Ich bin …, und ich mag Pizza mit Oliven. Wer macht weiter?"
+          ]
+        },
+        {
+          "titel": "Réckbléck und Skills-Pass",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Blitzlicht zu zwei Fragen: Auf welche Szene freut ihr euch, und welche macht euch noch Sorgen? Danach Eintrag in den Skills-Pass und Stempel. Szenenplan und Plakat bleiben im Raum.",
+          "sagen": [
+            "Auf welche Szene freut ihr euch – und welche braucht noch Arbeit?"
+          ],
+          "blatt": "skills-pass"
+        },
+        {
+          "titel": "Termin 2: Check-in mit Lampenfieber-Zahl",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Gefühlsrad und Anspannung von 0 bis 100; heute ist die Zahl auch eine Lampenfieber-Zahl. Erklären, dass etwas Aufregung beim Spielen hilft, weil sie wach macht. Wer über 70 liegt, sucht sich jetzt schon einen Skill aus seinem Skills-Koffer aus, der vor dem Auftritt hilft.",
+          "sagen": [
+            "Wie hoch ist eure Anspannung, wenn ihr an den Auftritt denkt?",
+            "Über 70? Dann nehmt euch jetzt einen Skill aus eurem Koffer vor. Wir nutzen ihn kurz vor dem Spielen."
+          ],
+          "tipp": "Auch die Leitung nennt ihre Lampenfieber-Zahl. Zu hören, dass Erwachsene aufgeregt sind, entlastet.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Aufwärmen für Stimme und Körper",
+          "dauer": 10,
+          "phase": "aktiv",
+          "text": "Im Kreis: Schultern kreisen, das Gesicht knautschen und loslassen, herzhaft gähnen. Dann die Stimme: Jede Person sagt ihren wichtigsten Satz aus dem Stück erst flüsternd, dann normal, dann so laut, dass er die hintere Wand erreicht. Zum Schluss ein schneller Klatsch-Impuls, der im Kreis weitergegeben wird und die Richtung wechseln darf, bis alle wach sind.",
+          "sagen": [
+            "Sagt euren wichtigsten Satz so, dass ihn die Wand ganz hinten versteht."
+          ]
+        },
+        {
+          "titel": "Proben mit Regie-Stopps",
+          "dauer": 25,
+          "phase": "uebung",
+          "text": "Jede Szene wird zweimal geprobt. Die Regie – eine oder einer der Jugendlichen – darf „Stopp!“ rufen und genau einen Hinweis geben: lauter, langsamer, zum Publikum drehen. Die Leitung achtet darauf, dass die Botschaft in jeder Szene sichtbar bleibt. Beim Video wird jede Szene einmal gefilmt, gemeinsam angeschaut und dann entschieden, ob sie noch einmal gedreht wird.",
+          "sagen": [
+            "Ein Hinweis pro Stopp – mehr kann niemand auf einmal umsetzen.",
+            "Sieht man in dieser Szene, worum es uns geht?"
+          ],
+          "tipp": "Rückmeldungen nach der Regel „ein Lob, ein Tipp“ geben. Das hält die Stimmung, auch wenn eine Szene zum dritten Mal nicht klappt.",
+          "wennEsKippt": "Streitet die Gruppe über eine Regie-Entscheidung, abstimmen lassen und die unterlegene Idee einmal als Alternative durchspielen. Oft entscheidet sich die Frage beim Zuschauen von selbst.",
+          "blatt": "skills-unser-stueck"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Pause mit Imbiss. Vor der Aufführung Wasser trinken, Requisiten bereitlegen und den Skill aus dem Check-in kurz anwenden."
+        },
+        {
+          "titel": "Aufführung oder Dreh",
+          "dauer": 20,
+          "phase": "aktiv",
+          "text": "Theater: Das Stück wird einmal ganz gespielt, vor der Gruppe oder vor eingeladenen Gästen. Danach eine Szene als Stopp-Theater wiederholen: Das Publikum darf „Stopp!“ rufen und vorschlagen, was eine Figur anders machen könnte; wer möchte, übernimmt die Rolle und spielt es vor. Video: die fehlenden Szenen drehen und alle Aufnahmen in der richtigen Reihenfolge einmal gemeinsam anschauen.",
+          "sagen": [
+            "Stopp! Was könnte die Freundin jetzt anders machen – wer zeigt es uns?"
+          ],
+          "tipp": "Beim Stopp-Theater nie die Person ersetzen, die in der Szene angegriffen wird, sondern die Zuschauenden oder Freunde. So wird Zivilcourage geübt, ohne dass jemand die Rolle der Betroffenen zeigen muss."
+        },
+        {
+          "titel": "Nachgespräch: Was ist angekommen?",
+          "dauer": 10,
+          "phase": "uebung",
+          "text": "Im Kreis, noch im Nachklang: Was war die Botschaft, und ist sie angekommen? Jede Person sagt, was ihr an einer anderen Person heute gefallen hat – am Spiel, nicht am Aussehen. Zum Schluss die Frage, was die Gruppe beim Spielen über das Thema gemerkt hat, das man beim bloßen Reden nicht merkt.",
+          "sagen": [
+            "Was habt ihr beim Spielen über das Thema gemerkt, was man beim bloßen Reden nicht merkt?"
+          ],
+          "wennEsKippt": "Macht sich jemand über das Spiel eines anderen lustig, auf den Gruppenvertrag zeigen: Wir lachen miteinander, nicht übereinander. Dann die Person selbst fragen, was an ihrer eigenen Rolle schwer war."
+        },
+        {
+          "titel": "Skill: Rolle ablegen und gemeinsam atmen",
+          "dauer": 5,
+          "phase": "skill",
+          "text": "Die Rollenzeichen – Tücher, Namensschilder – bewusst ablegen. Dann gemeinsam atmen wie in Einheit 3: vier Sekunden ein, vier aus; eine Person aus der Gruppe gibt den Rhythmus vor. Wer eine schwere Rolle hatte, bekommt von der Leitung einen persönlichen Dank.",
+          "sagen": [
+            "Danke, dass du diese Rolle gespielt hast. Jetzt bist du wieder du."
+          ]
+        },
+        {
+          "titel": "Réckbléck und Skills-Pass",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Blitzlicht: Worauf seid ihr stolz? Danach Eintrag in den Skills-Pass und Stempel. Gemeinsam festhalten, was mit dem Video passiert: Es bleibt in der Einrichtung, wird nicht geteilt und nach der vereinbarten Zeit gelöscht.",
+          "sagen": [
+            "Worauf seid ihr heute stolz – bei euch selbst oder bei der Gruppe?"
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "hintergrund": "Wer ein Verhalten nicht nur bespricht, sondern selbst ausprobiert und vor anderen damit Erfolg hat, erlebt sich als wirksam. Nach Bandura (1977) sind solche eigenen Erfolgserlebnisse die stärkste Quelle von Selbstwirksamkeit; wer anderen dabei zuschaut, lernt zusätzlich am Modell. Programme zum sozial-emotionalen Lernen wirken besonders, wenn sie aktive Übungsformen nutzen und offen benennen, was geübt wird (Durlak et al., 2011). Beim Thema Mobbing zeigt die Forschung, dass es sich um einen Gruppenprozess handelt, in dem Zuschauende, Verstärkende und Verteidigende eine große Rolle spielen (Salmivalli et al., 1996). Das Stopp-Theater setzt genau dort an: Geübt wird die Rolle der Zuschauenden, nicht die der Betroffenen. Das bewusste Ablegen der Rollen schützt davor, dass eine gespielte Figur an einem Jugendlichen hängen bleibt.",
+      "quellen": [
+        "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
+        "Durlak, J. A., Weissberg, R. P., Dymnicki, A. B., Taylor, R. D. & Schellinger, K. B. (2011). The impact of enhancing students’ social and emotional learning: A meta-analysis of school-based universal interventions. Child Development, 82(1), 405–432.",
+        "Salmivalli, C., Lagerspetz, K., Björkqvist, K., Österman, K. & Kaukiainen, A. (1996). Bullying as a group process: Participant roles and their relations to social status within the group. Aggressive Behavior, 22(1), 1–15."
+      ],
+      "achtung": "Keine echten Vorfälle, Personen oder Namen aus der Schule nachspielen. Rollen, in denen jemand ausgelacht, bedroht oder ausgegrenzt wird, nur freiwillig und abwechselnd vergeben; Jugendliche, die selbst Mobbing erleben oder erlebt haben, nicht in diese Rolle drängen. Gewalt nur andeuten, Berührungen nur nach Absprache, Stopp-Recht für alle. Filmen nur mit Einverständnis nach den Regeln des Hauses und nur auf Geräten der Einrichtung; kein Hochladen, kein Weiterschicken. Wird im Spiel deutlich, dass jemand Gewalt oder Mobbing erlebt, das nicht in der Gruppe vertiefen, sondern ein Einzelgespräch anbieten, nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) informieren."
+    },
+    {
+      "id": "j1-j06",
+      "nr": 6,
+      "jahr": 1,
+      "modul": "joker",
+      "joker": true,
+      "passt": "jederzeit, wenn die Gruppe aufgedreht oder müde ist",
+      "titel": "Dampf ablassen, Akku laden",
+      "kurz": "Ein Reserveprogramm für Tage, an denen der Plan nicht trägt: Die Gruppe schätzt ihre Energie ein, bewegt sich, spielt und baut gemeinsam – und merkt dabei, was ihre Energie verändert.",
+      "dauer": 100,
+      "ziele": [
+        "schätzen ihre Energie ein und erleben, wie Bewegung und Spiel sie verändern",
+        "arbeiten in Spielen mit Geduld und Absprache zusammen",
+        "benennen am Ende, was ihnen geholfen hat, runterzukommen oder wach zu werden"
+      ],
+      "material": [
+        "Spielkiste: Gefühls-Memory, Dobble, Mikado, Emotionswürfel (Würfel mit sechs Gefühlen)",
+        "Augenbinden und ein weicher Ball für Blindfußball",
+        "Dominosteine oder Holzklötze für die Kettenreaktion, so viele wie möglich",
+        "Eine lange Bahn Packpapier (mindestens 2 m), Wachsmalstifte oder Kreiden",
+        "Musik und Lautsprecher, Klangschale",
+        "Imbiss und Getränke",
+        "Gefühlsrad (A3), Skills-Pässe, Stempel, Plakat „Was sind Skills?“"
+      ],
+      "vorbereitung": [
+        "Die Spielkiste fertig gepackt im Raum lagern, damit der Joker ohne Vorlauf einsetzbar ist.",
+        "Einen Platz draußen oder die Turnhalle für Blindfußball im Blick haben."
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Energie-Check: Finger von 0 bis 10 und Gefühlsrad"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Neuer Plan: Dampf ablassen oder Akku laden"
+        },
+        {
+          "min": "15–40",
+          "phase": "aktiv",
+          "titel": "Bewegung: Blindfußball oder Memory-Staffel"
+        },
+        {
+          "min": "40–45",
+          "phase": "skill",
+          "titel": "Durchatmen und Energie neu schätzen"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss, Dobble und Mikado"
+        },
+        {
+          "min": "60–85",
+          "phase": "uebung",
+          "titel": "Kettenreaktion oder gemeinsames Kunstwerk"
+        },
+        {
+          "min": "85–95",
+          "phase": "skill",
+          "titel": "Skill passend zur Energie"
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Réckbléck: Was hat unsere Energie verändert?"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Energie-Check: Finger von 0 bis 10 und Gefühlsrad",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Im Kreis zeigt jede Person mit den Fingern, wie viel Energie sie gerade hat: 0 heißt leer, 10 heißt, ich könnte die Wände hochgehen. Dazu ein Wort aus dem Gefühlsrad; ab Einheit 11 auch die Anspannung. Die Leitung schaut, wo die Mehrheit liegt, und benennt es ohne Wertung: Heute ist viel Energie im Raum – oder: Heute sind die Akkus leer.",
+          "sagen": [
+            "Zeigt mit den Fingern: Wie viel Energie habt ihr gerade?",
+            "Viel oder wenig – beides ist in Ordnung. Wir machen etwas daraus."
+          ],
+          "wennEsKippt": "Ist die Gruppe so aufgedreht, dass keine Runde möglich ist, den Check-in verschieben: sofort raus, zuerst bewegen und die Finger danach im Stehen zeigen lassen.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Neuer Plan: Dampf ablassen oder Akku laden",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "Offen sagen, dass der geplante Inhalt heute nicht passt und stattdessen ein anderes Programm kommt; das ist weder Strafe noch Ausfall. Die zwei Wege vorstellen: Dampf ablassen bei viel Energie, Akku laden bei wenig Energie. Die Gruppe entscheidet mit; ist die Lage gemischt, beginnt die Einheit mit Bewegung. Das eigentliche Thema wird beim nächsten Mal nachgeholt.",
+          "sagen": [
+            "Heute passt unser Plan nicht zu eurer Energie. Also ändern wir den Plan, nicht euch.",
+            "Das Thema holen wir nächstes Mal nach."
+          ],
+          "tipp": "Den Wechsel nicht als Belohnung oder Strafe darstellen, sondern als Skill: Wer merkt, dass die eigene Energie nicht passt, darf den Plan anpassen."
+        },
+        {
+          "titel": "Bewegung: Blindfußball oder Memory-Staffel",
+          "dauer": 25,
+          "phase": "aktiv",
+          "text": "Dampf ablassen: draußen oder in der Turnhalle Blindfußball – zu zweit spielt eine Person mit Augenbinde, die andere lotst nur mit der Stimme. Danach als ruhigere Runde Blind führen, bei der nur noch geflüstert wird. Akku laden: Gefühls-Memory als Staffel, die Karten liegen verdeckt am anderen Ende des Raums; zwei Teams laufen abwechselnd hin und decken zwei Karten auf. Wer ein Paar findet, darf es mitnehmen, wenn er eine Situation zu dem Gefühl nennt.",
+          "sagen": [
+            "Nur mit der Stimme lotsen – keine Hände. Links, rechts, stopp.",
+            "Paar gefunden? Dann sag uns schnell eine Situation, in der man sich so fühlt."
+          ],
+          "punkte": [
+            "Emotionswürfel im Stehen: würfeln, eine Bewegung zum Gefühl zeigen, alle machen sie nach.",
+            "Dobble im Stehen: Wer ein Paar findet, läuft einmal um den Kreis.",
+            "Bei wenig Platz: Gefühle im Raum – ein Gefühl nur mit Gang und Haltung zeigen, die anderen raten."
+          ],
+          "tipp": "Beim Dampfablassen zuerst toben lassen und dann bewusst leiser werden: Nach dem Blindfußball kommt Blind führen, bei dem nur geflüstert wird.",
+          "wennEsKippt": "Wird es beim Blindfußball grob, sofort unterbrechen und die Regel verschärfen: nur passen, nicht schießen, halbes Tempo. Wer die Augen nicht verbinden möchte, schließt sie nur oder lotst."
+        },
+        {
+          "titel": "Durchatmen und Energie neu schätzen",
+          "dauer": 5,
+          "phase": "skill",
+          "text": "Alle setzen sich oder legen sich auf den Boden. Drei ruhige Atemzüge, dann zeigt jede Person noch einmal mit den Fingern ihre Energie. Die Leitung fragt, was sich verändert hat und wodurch, und sammelt die Antworten, ohne sie zu bewerten.",
+          "sagen": [
+            "Was zeigen eure Finger jetzt – mehr, weniger, gleich?"
+          ]
+        },
+        {
+          "titel": "Pause mit Imbiss, Dobble und Mikado",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Pause mit Imbiss. Dobble und Mikado liegen auf dem Tisch: Wer mag, spielt, wer nicht mag, isst in Ruhe. Mikado nach dem Toben ist ein guter Test für ruhige Hände."
+        },
+        {
+          "titel": "Kettenreaktion oder gemeinsames Kunstwerk",
+          "dauer": 25,
+          "phase": "uebung",
+          "text": "Die Gruppe wählt. Kettenreaktion: Aus Dominosteinen oder Holzklötzen entsteht eine Kette durch den Raum, die am Ende mit einem einzigen Anstoß fällt; jede Person baut einen Abschnitt, die Übergänge werden abgesprochen. Gemeinsames Kunstwerk: Auf einer langen Bahn Packpapier malen alle gleichzeitig zu Musik; alle zwei Minuten rückt jede Person einen Platz weiter und malt am Bild der Nachbarin weiter.",
+          "sagen": [
+            "Bevor wir anstoßen: Wer prüft noch einmal seinen Übergang?",
+            "Beim Weiterrücken gilt: nichts übermalen, nur weitermalen."
+          ],
+          "tipp": "Fällt die Kette zu früh um, ist das kein Scheitern, sondern ein guter Moment: fragen, wie es der Person geht, die angestoßen hat, und wie die Gruppe reagiert. Gelassenheit ist hier der Skill.",
+          "wennEsKippt": "Stößt jemand die Kette absichtlich um, nicht vor der Gruppe schimpfen, sondern kurz unter vier Augen fragen, was los ist; oft steckt Frust oder Müdigkeit dahinter. Die Gruppe baut mit Sicherheitslücken weiter, damit nie alles auf einmal fällt."
+        },
+        {
+          "titel": "Skill passend zur Energie",
+          "dauer": 10,
+          "phase": "skill",
+          "text": "Runterkommen: Die Klangschale anschlagen; alle hören mit geschlossenen oder gesenkten Augen zu und heben die Hand, wenn der Ton verklungen ist. Danach vier Sekunden ein- und sechs Sekunden ausatmen, fünf Runden. Wach werden: Fenster auf, strecken, Schultern kreisen, Hände ausschütteln, zehn Sekunden kaltes Wasser über die Handgelenke. Zum Schluss sagt jede Person, ob der Skill sie eher beruhigt oder eher geweckt hat.",
+          "sagen": [
+            "Hand hoch, wenn ihr den Ton nicht mehr hört.",
+            "Hat euch das eher runtergebracht oder eher geweckt?"
+          ]
+        },
+        {
+          "titel": "Réckbléck: Was hat unsere Energie verändert?",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Ein letztes Mal die Finger: Wie viel Energie ist jetzt da? Mit dem Anfang vergleichen. Jede Person trägt in den Skills-Pass ein, was ihr heute geholfen hat, runterzukommen oder wach zu werden; die Gruppe ergänzt das Plakat „Was sind Skills?“ um eine Idee. Stempel.",
+          "sagen": [
+            "Was hat heute eure Energie verändert – und würdet ihr das auch allein hinkriegen?"
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "hintergrund": "Eine unruhige oder erschöpfte Gruppe kann keinen neuen Inhalt aufnehmen: Unter Stress, Müdigkeit oder Einsamkeit leiden die exekutiven Funktionen – Aufmerksamkeit, Arbeitsgedächtnis, Selbstkontrolle – zuerst und am stärksten (Diamond, 2013). Statt gegen die Energie der Gruppe anzuarbeiten, nutzt diese Einheit sie. Bewegung ist ein schneller Weg, das Erregungsniveau zu verändern; Siegel und Bryson (2011) beschreiben, wie körperliche Aktivität hilft, nach starker Aufregung wieder ins Gleichgewicht zu kommen. Gemeinsames Spielen und Lachen erzeugt positive Gefühle, die nach Fredrickson (2001) die Aufmerksamkeit weiten und soziale Ressourcen aufbauen. Der Vergleich der Energie-Zahlen am Anfang und am Ende zeigt den Jugendlichen: Energie lässt sich steuern – und genau das ist ein Skill.",
+      "quellen": [
+        "Diamond, A. (2013). Executive functions. Annual Review of Psychology, 64, 135–168.",
+        "Siegel, D. J. & Bryson, T. P. (2011). The Whole-Brain Child. New York: Delacorte.",
+        "Fredrickson, B. L. (2001). The role of positive emotions in positive psychology: The broaden-and-build theory of positive emotions. American Psychologist, 56(3), 218–226."
+      ],
+      "achtung": "Unruhe oder Müdigkeit einer ganzen Gruppe hat manchmal einen Grund: ein Streit in der Pause, ein Vorfall in der Schule, eine schlechte Nachricht. Vor dem Spielen kurz nachfragen; steckt ein belastendes Ereignis dahinter, passt eher Joker 8. Bei Blindfußball und Blind führen gilt das Stopp-Recht, und niemand muss sich die Augen verbinden lassen. Beim Emotionswürfel und beim Gefühls-Memory darf jede Person „weiter“ sagen. Wirkt eine einzelne Person über Wochen erschöpft oder gereizt, das im Einzelgespräch aufgreifen und mit der zuständigen Leitung (Responsable) besprechen; bei Hinweisen auf eine Gefährdung nach dem internen Schutzkonzept handeln."
+    },
+    {
+      "id": "j1-j07",
+      "nr": 7,
+      "jahr": 1,
+      "modul": "joker",
+      "joker": true,
+      "passt": "in der ersten Einheit, in der jemand neu dazukommt",
+      "titel": "Neu in der Gruppe",
+      "kurz": "Eine neue Person kommt dazu: Die Gruppe erklärt ihre Rituale selbst, erneuert den Gruppenvertrag, lernt sich ohne Bloßstellen kennen, und die neue Person bekommt eine Patin oder einen Paten.",
+      "dauer": 100,
+      "ziele": [
+        "erklären einer neuen Person die Rituale und Regeln der Gruppe mit eigenen Worten",
+        "prüfen den Gruppenvertrag gemeinsam und unterschreiben ihn neu",
+        "lernen sich in Spielen kennen, bei denen niemand etwas Persönliches preisgeben muss",
+        "vereinbaren eine Patenschaft für die ersten Wochen"
+      ],
+      "material": [
+        "Gruppenvertrag aus Einheit 1 und eine frische Kopie des Schülerblatts",
+        "Schülerblatt „Willkommen in der Gruppe“ für die neue Person, Klemmbrett",
+        "Karten mit den Ritualen der Gruppe: Gefühlsrad, Anspannungsskala, Skills-Pass, Réckbléck, Glas der Bedürfnisse, Baum der Stärke, Plakat „Was sind Skills?“",
+        "Das Material zu den Ritualen zum Zeigen: Glas der Bedürfnisse, Bäume der Stärke, Plakat",
+        "Neuer Skills-Pass und ein Platz in der Box für die neue Person",
+        "Klebeband für eine Linie am Boden, Zettel, Stifte",
+        "Imbiss und Getränke",
+        "Gefühlsrad (A3), Stempel"
+      ],
+      "vorbereitung": [
+        "Vorab mit der Leitung (Responsable) klären, was die Gruppe über die neue Person erfährt (in der Regel nur den Namen) und ob es bekannte Konflikte mit Gruppenmitgliedern gibt.",
+        "Vor der Einheit ein kurzes Gespräch mit der neuen Person führen: Ablauf zeigen, Fragen beantworten, sagen, dass sie heute nichts Persönliches erzählen muss.",
+        "Die Gruppe in der Einheit davor vorbereiten: Nächstes Mal kommt jemand dazu. Wer möchte Patin oder Pate sein?",
+        "Die Ritual-Karten schreiben; jede Karte bekommt eine Person aus der Gruppe, die das Ritual erklärt."
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-neu-in-der-gruppe",
+        "skills-gruppenvertrag",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Namensrunde mit Geste und Gefühlsrad"
+        },
+        {
+          "min": "10–25",
+          "phase": "input",
+          "titel": "Die Gruppe erklärt ihre Rituale"
+        },
+        {
+          "min": "25–45",
+          "phase": "uebung",
+          "titel": "Der Gruppenvertrag: prüfen, ergänzen, unterschreiben"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–80",
+          "phase": "aktiv",
+          "titel": "Kennenlernen ohne Bloßstellen"
+        },
+        {
+          "min": "80–90",
+          "phase": "uebung",
+          "titel": "Ich zeige dir einen Skill"
+        },
+        {
+          "min": "90–95",
+          "phase": "skill",
+          "titel": "Skill: gemeinsam atmen"
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Skills-Pass, Patenschaft, Blitzlicht"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Namensrunde mit Geste und Gefühlsrad",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Wie in der ersten Einheit: Alle stehen im Kreis, sagen ihren Namen und machen eine Geste dazu, die Gruppe wiederholt beides. Die neue Person kommt nicht zuerst und nicht zuletzt dran, sondern irgendwo in der Mitte. Danach der gewohnte Check-in am Gefühlsrad; die neue Person darf auch nur zeigen. Ab Einheit 11 nennt die Gruppe die Anspannung, die neue Person, wenn sie mag.",
+          "sagen": [
+            "Heute machen wir eine Runde vom Anfang des Jahres noch einmal – damit alle mit denselben Voraussetzungen starten.",
+            "Zeigen reicht völlig. Das gilt hier für alle."
+          ],
+          "tipp": "Die Leitung wählt eine Geste, über die man lachen kann. Wer neu ist, merkt so: Hier muss niemand cool wirken.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Die Gruppe erklärt ihre Rituale",
+          "dauer": 15,
+          "phase": "input",
+          "text": "Die Ritual-Karten verteilen: Jede Person aus der Gruppe erklärt ein Ritual in zwei, drei Sätzen und zeigt dazu das Material – das Gefühlsrad, den Skills-Pass, das Glas der Bedürfnisse, den eigenen Baum der Stärke, das Plakat „Was sind Skills?“. Die Leitung ergänzt nur, was fehlt. Die neue Person hakt auf ihrem Blatt ab, was sie verstanden hat, und darf jederzeit nachfragen.",
+          "sagen": [
+            "Ihr seid heute die Fachleute. Erklärt es so, wie ihr es einem Freund erklären würdet.",
+            "Was hat euch selbst am Anfang geholfen, hier anzukommen?"
+          ],
+          "tipp": "Wer ein Ritual erklärt, wiederholt es zugleich für sich selbst: Die Einheit ist auch für die Gruppe ein Rückblick auf das bisherige Jahr.",
+          "wennEsKippt": "Wird die neue Person mit Fragen bestürmt, etwa „Warum bist du hier?“ oder „Von welcher Schule kommst du?“, freundlich stoppen und auf die Regel verweisen: Jede Person entscheidet selbst, was sie erzählt – das galt am Anfang für alle.",
+          "blatt": "skills-neu-in-der-gruppe"
+        },
+        {
+          "titel": "Der Gruppenvertrag: prüfen, ergänzen, unterschreiben",
+          "dauer": 20,
+          "phase": "uebung",
+          "text": "Den Vertrag aus der ersten Einheit aufhängen und Regel für Regel von den Jugendlichen vorlesen lassen. Zu jeder Regel zwei Fragen: Gilt sie noch, und wie sieht sie bei uns im Alltag aus? Die neue Person darf eine Regel vorschlagen oder etwas fragen. Was fehlt, wird ergänzt; dann unterschreiben alle neu, auch die Leitung – auf dem alten Vertrag oder auf einer frischen Kopie.",
+          "sagen": [
+            "Welche Regel hat bei uns am besten funktioniert – und welche vergessen wir manchmal?",
+            "Stimmt es noch: Was hier erzählt wird, bleibt hier?"
+          ],
+          "tipp": "Die Schweigepflicht und ihre Grenze noch einmal offen erklären: Wenn jemand in Gefahr ist, holt die Leitung Hilfe und sagt vorher, was sie tut. Für die neue Person ist das neu, für die Gruppe eine Erinnerung.",
+          "wennEsKippt": "Nutzt jemand die Runde, um alte Konflikte aufzuwärmen, etwa mit „Aber du hältst dich ja nie dran“, das Thema stoppen und für später vormerken. Heute geht es um die Regeln, nicht um einzelne Personen.",
+          "blatt": "skills-gruppenvertrag"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Pause mit Imbiss. Die Patin oder der Pate sitzt neben der neuen Person. Die Leitung isst mit und sorgt dafür, dass das Gespräch nicht nur zwischen den Alten läuft, etwa mit einer leichten Frage an alle: Welche Serie lohnt sich gerade?"
+        },
+        {
+          "titel": "Kennenlernen ohne Bloßstellen",
+          "dauer": 20,
+          "phase": "aktiv",
+          "text": "Zuerst „Ein Schritt nach vorn“ mit leichten Sätzen: Alle stehen auf einer Linie, wer sich angesprochen fühlt, macht einen Schritt nach vorn, schaut sich um und geht zurück. Niemand muss etwas erklären. Danach Gemeinsamkeiten finden: In Dreiergruppen, die neue Person in einer davon, sucht jede Gruppe drei Dinge, die alle drei gemeinsam haben und die man nicht sieht. Jede Gruppe stellt ihr überraschendstes Ergebnis vor.",
+          "sagen": [
+            "Niemand muss etwas erklären: Schritt nach vorn, umschauen, zurück.",
+            "Sucht Gemeinsamkeiten, die man nicht sieht – „wir haben alle zwei Arme“ zählt nicht."
+          ],
+          "punkte": [
+            "Mach einen Schritt nach vorn, wenn du …",
+            "… heute schon gelacht hast.",
+            "… mehr als zwei Sprachen sprichst.",
+            "… am Wochenende am liebsten bis mittags schläfst.",
+            "… ein Haustier hast oder gern eins hättest.",
+            "… schon einmal ein Tor, einen Korb oder einen Punkt gemacht hast, auf den du stolz warst.",
+            "… schon einmal irgendwo neu warst und niemanden kanntest."
+          ],
+          "tipp": "Den Satz über das Neusein bewusst ans Ende stellen: Fast alle gehen nach vorn, und die neue Person sieht, dass sie damit nicht allein ist.",
+          "wennEsKippt": "Macht sich jemand über einen Schritt lustig, die Runde kurz anhalten und an den Vertrag erinnern, den alle gerade unterschrieben haben. Wirkt die neue Person überfordert, sucht sie die Gemeinsamkeiten nur zu zweit mit ihrer Patin oder ihrem Paten."
+        },
+        {
+          "titel": "Ich zeige dir einen Skill",
+          "dauer": 10,
+          "phase": "uebung",
+          "text": "Zwei, drei Jugendliche leiten ihren Lieblings-Skill aus dem Jahr für alle an, jeweils ein bis zwei Minuten: etwa 5-4-3-2-1, die Kastenatmung oder das Gedankenschiffchen. Die neue Person probiert mit und sagt am Ende, welcher Skill am ehesten zu ihr passt. Steht die Gruppe noch am Anfang des Jahres, leitet die Leitung 5-4-3-2-1 an und erklärt kurz, was Skills sind.",
+          "sagen": [
+            "Wer zeigt uns seinen Lieblings-Skill? Ihr habt zwei Minuten und die volle Aufmerksamkeit.",
+            "Welcher davon würde zu dir passen?"
+          ]
+        },
+        {
+          "titel": "Skill: gemeinsam atmen",
+          "dauer": 5,
+          "phase": "skill",
+          "text": "Im Kreis sitzen. Die Leitung gibt den Rhythmus vor: vier Sekunden ein, vier Sekunden aus; alle versuchen, im gleichen Rhythmus zu atmen. Nach einer Minute übernimmt die Patin oder der Pate den Rhythmus und zum Schluss, wenn sie möchte, die neue Person.",
+          "sagen": [
+            "Vier ein, vier aus. Ihr müsst nicht perfekt im Takt sein."
+          ]
+        },
+        {
+          "titel": "Skills-Pass, Patenschaft, Blitzlicht",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Die neue Person bekommt ihren eigenen Skills-Pass und einen Platz in der Box; erster Eintrag, erster Stempel. Die Patenschaft wird ausgesprochen: Die Patin oder der Pate ist in den nächsten drei, vier Wochen Ansprechperson für Fragen und sitzt beim Imbiss daneben. Zum Schluss ein Blitzlicht der ganzen Gruppe mit einem Wort zu heute.",
+          "sagen": [
+            "Willkommen. Dein erster Eintrag darf ganz kurz sein.",
+            "Ein Wort zu heute – von allen."
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "hintergrund": "Kommt jemand Neues dazu, verändert sich die ganze Gruppe. Nach Tuckman (1965) entwickeln Gruppen ihre Arbeitsfähigkeit über Phasen: vorsichtiges Kennenlernen, Reibung, gemeinsame Normen, schließlich produktives Arbeiten. Ein neues Mitglied bringt Rollen und Regeln erfahrungsgemäß wieder in Bewegung; das kann Unruhe erzeugen, ist aber auch eine Chance, den Rahmen bewusst zu erneuern. Wer die Rituale selbst erklärt, erlebt sich als kompetent, und das Bedürfnis nach Zugehörigkeit wird für alle gestärkt – für die neue Person wie für die Gruppe (Deci & Ryan, 2000). Die Kennenlernspiele sind so gewählt, dass niemand etwas preisgeben muss: Gerade Jugendliche, die nach einer schwierigen Zeit in eine neue Gruppe kommen, brauchen zuerst Sicherheit und Vorhersehbarkeit. Die Patenschaft gibt ihnen eine feste Ansprechperson unter Gleichaltrigen.",
+      "quellen": [
+        "Tuckman, B. W. (1965). Developmental sequence in small groups. Psychological Bulletin, 63(6), 384–399.",
+        "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268."
+      ],
+      "achtung": "Nicht nach dem Grund für den Wechsel fragen und auch die Gruppe nicht fragen lassen: Viele Jugendliche kommen nach einer Krise, einem Schulwechsel oder einem Umzug in eine Wohngruppe. Die neue Person entscheidet selbst, was sie erzählt. Vorher klären, ob es bekannte Konflikte mit Gruppenmitgliedern gibt. Die Schweigepflicht und ihre Grenze werden der neuen Person ausdrücklich erklärt und gelten ab dem ersten Tag. Erzählt sie von Gewalt, Mobbing an der alten Schule oder anderen Belastungen, das nicht in der Gruppe vertiefen, sondern ein Einzelgespräch anbieten; bei Hinweisen auf eine Gefährdung nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) informieren."
+    },
+    {
+      "id": "j1-j08",
+      "nr": 8,
+      "jahr": 1,
+      "modul": "joker",
+      "joker": true,
+      "passt": "nach einem belastenden Ereignis, nach Absprache mit der Leitung",
+      "titel": "Wenn uns etwas beschäftigt",
+      "kurz": "Nach einem Streit, einem Vorfall in der Schule, einer schlimmen Nachricht oder einem Verlust gibt die Einheit Halt: klare Informationen, Raum ohne Druck, Skills zum Stabilisieren und den Weg zu Hilfe.",
+      "dauer": 100,
+      "ziele": [
+        "unterscheiden, was sie über das Ereignis sicher wissen und was Gerücht ist",
+        "erfahren, dass ihre Reaktionen – auch widersprüchliche oder scheinbar gar keine – normal sind",
+        "wenden Skills zum Stabilisieren an und planen, was ihnen in den nächsten Tagen hilft",
+        "wissen, an wen sie sich wenden können, wenn es nicht besser wird"
+      ],
+      "material": [
+        "Mit der Leitung abgestimmte Sätze zum Ereignis, schriftlich",
+        "Drei Plakate für das stille Gespräch, dicke Stifte in mehreren Farben",
+        "Schülerblatt „Was mir jetzt hilft“ je Person",
+        "Skills-Koffer und Skills-Kärtchen der Jugendlichen (ab Einheit 15)",
+        "Taschentücher, Wasser, Imbiss",
+        "Klangschale",
+        "Liste der Anlaufstellen im Haus und außerhalb mit aktuellen Nummern",
+        "Gefühlsrad (A3), Skills-Pässe, Stempel"
+      ],
+      "vorbereitung": [
+        "Vor der Einheit mit der Leitung (Responsable) klären: Was ist passiert, was ist gesichert und darf gesagt werden? Wer ist besonders betroffen – Freunde, Angehörige, Zeuginnen und Zeugen? Sind die Eltern informiert, sind SePAS, Psychologin oder Krisenteam eingebunden?",
+        "Die ersten Sätze zum Ereignis mit der Leitung abstimmen und aufschreiben.",
+        "Wenn möglich zu zweit leiten und einen ruhigen Nebenraum für Einzelgespräche bereithalten.",
+        "Entscheiden, wie viel Zeit das Ereignis braucht: Bei einer Nachricht aus der Welt reicht oft die erste Hälfte, danach geht es mit dem geplanten Inhalt weiter."
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-was-mir-jetzt-hilft",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Ruhig ankommen: zeigen, was gerade da ist"
+        },
+        {
+          "min": "10–20",
+          "phase": "input",
+          "titel": "Was wir wissen – und was nicht"
+        },
+        {
+          "min": "20–45",
+          "phase": "uebung",
+          "titel": "Stilles Gespräch: Raum ohne Druck"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss, wie immer"
+        },
+        {
+          "min": "60–75",
+          "phase": "aktiv",
+          "titel": "Bewegen und stabilisieren: drei Skills"
+        },
+        {
+          "min": "75–90",
+          "phase": "uebung",
+          "titel": "Mein Plan für die nächsten Tage"
+        },
+        {
+          "min": "90–95",
+          "phase": "skill",
+          "titel": "Klangschale oder eine Minute Stille"
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Leiser Réckbléck und Hilfe zeigen"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Ruhig ankommen: zeigen, was gerade da ist",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Stühle im Kreis, Raum und Licht wie immer: Vertrautes gibt Halt. Die Leitung sagt in zwei, drei Sätzen, warum heute anders ist, und dass niemand etwas erzählen muss. Check-in am Gefühlsrad ohne „weil“: Jede Person zeigt auf ein oder zwei Wörter oder sagt „weiter“. Ab Einheit 11 nennt sie auch die Anspannung, wenn sie mag.",
+          "sagen": [
+            "Ihr habt alle mitbekommen, was passiert ist. Heute machen wir unser Programm anders, damit dafür Platz ist.",
+            "Ihr müsst nichts erzählen. Zeigt einfach, was gerade da ist – zwei Gefühle gleichzeitig sind völlig normal."
+          ],
+          "tipp": "Auch „nichts“ oder „egal“ ernst nehmen: Nach einer schlimmen Nachricht fühlen sich viele erst einmal wie betäubt. Die Leitung sagt das laut, damit sich niemand falsch fühlt.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Was wir wissen – und was nicht",
+          "dauer": 10,
+          "phase": "input",
+          "text": "Die mit der Leitung abgestimmten Sätze ruhig vortragen: was passiert ist, was die Schule oder das Haus tut, was noch unklar ist. Dann Fragen zulassen und ehrlich beantworten; „Das weiß ich nicht“ ist eine gute Antwort. Gerüchte und Videos aus dem Netz nicht wiederholen, sondern einordnen: Was davon ist gesichert? Bei einer Nachricht aus der Welt vereinbaren, heute keine Videos davon anzusehen.",
+          "sagen": [
+            "Das wissen wir sicher. Alles andere sind Vermutungen, und die helfen gerade niemandem.",
+            "Das weiß ich nicht. Wenn ich mehr erfahre und es sagen darf, sage ich es euch."
+          ],
+          "tipp": "Kurze Sätze, ruhiges Tempo, keine Fachbegriffe. Nach einem Schock nehmen Jugendliche weniger auf als sonst; Wiederholen ist erlaubt.",
+          "wennEsKippt": "Will jemand Einzelheiten, Bilder oder Videos zeigen oder beschreiben, freundlich und klar stoppen: Bilder bleiben im Kopf, auch wenn man sie nicht sehen wollte. Das Handy weglegen lassen und nach der Einheit mit der Person sprechen."
+        },
+        {
+          "titel": "Stilles Gespräch: Raum ohne Druck",
+          "dauer": 25,
+          "phase": "uebung",
+          "text": "Drei Plakate liegen auf Tischen, auf jedem steht eine Frage. Alle gehen schweigend herum und schreiben oder malen, was sie möchten; man darf auch auf das Geschriebene anderer antworten. Nichts ist Pflicht, Herumgehen und Lesen zählt auch. Nach etwa zehn Minuten liest die Leitung einige Punkte vor, ohne Namen zu nennen, und sagt, was sie darin hört: Menschen reagieren sehr verschieden, und das ist normal. Bei einem Verlust kann ein viertes Plakat dazukommen, auf dem die Gruppe sammelt, was sie der Familie oder der Person sagen möchte – nur nach Absprache mit der Leitung.",
+          "sagen": [
+            "Ihr könnt schreiben, malen, antworten – oder einfach lesen. Geredet wird nicht.",
+            "Was ich hier lese: Ihr reagiert ganz verschieden. Genau so ist es nach so etwas."
+          ],
+          "punkte": [
+            "Plakat 1: Was geht mir durch den Kopf?",
+            "Plakat 2: Was hilft mir gerade – oder hat mir früher geholfen?",
+            "Plakat 3: Was wünsche ich mir von den anderen hier?"
+          ],
+          "tipp": "Normale Reaktionen ruhig benennen: schlecht schlafen, immer wieder daran denken, gereizt sein, nichts fühlen, lachen und sich dann schuldig fühlen. Wer das hört, muss sich nicht mehr fragen, ob mit ihm etwas nicht stimmt. Was auf Plakat 2 steht, kann später als Zettel ins Glas der Bedürfnisse.",
+          "wennEsKippt": "Weint jemand, nicht die Aufmerksamkeit der Gruppe darauf lenken: Taschentücher hinlegen, ruhig dableiben, fragen, ob die Person kurz rausgehen möchte – bei zwei Leitungen geht eine mit. Lacht jemand, nicht ermahnen: Lachen ist nach einem Schock oft eine Entlastung."
+        },
+        {
+          "titel": "Pause mit Imbiss, wie immer",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Pause mit Imbiss wie an jedem anderen Tag. Die Routine sagt: Das Leben geht weiter, und wir sind da. Die Leitung bleibt ansprechbar und achtet darauf, wer sich zurückzieht."
+        },
+        {
+          "titel": "Bewegen und stabilisieren: drei Skills",
+          "dauer": 15,
+          "phase": "aktiv",
+          "text": "Zuerst zwei Minuten zügig gehen, draußen oder auf der Treppe, damit die Anspannung aus dem Körper kann. Dann drei Skills, die den Kopf ins Hier und Jetzt holen, jeweils zwei, drei Minuten: 5-4-3-2-1; die Füße fest in den Boden drücken und die Stuhllehne im Rücken spüren; länger aus- als einatmen, vier ein, sechs aus. Nach jedem Skill zeigt jede Person mit dem Daumen, ob er hilft.",
+          "sagen": [
+            "Diese Skills machen nichts ungeschehen. Sie helfen, wenn die Gedanken immer wieder zu dem Ereignis springen.",
+            "Daumen hoch, Mitte oder runter: Hat das gerade geholfen?"
+          ],
+          "tipp": "Heute keine Traumreise und keine Übung mit langem Augenschließen: Nach einem Schock fühlen sich viele mit offenen Augen sicherer.",
+          "wennEsKippt": "Will jemand nicht mitmachen, darf die Person zusehen oder etwas malen. Wird die Gruppe albern, das nicht unterbinden, solange niemand verletzt wird: Albernheit ist nach einer schweren Stunde oft ein Ventil."
+        },
+        {
+          "titel": "Mein Plan für die nächsten Tage",
+          "dauer": 15,
+          "phase": "uebung",
+          "text": "Jede Person füllt das Blatt für sich aus: was ihr hilft, wenn es sie wieder einholt, und bei wem sie sich melden kann. Der eigene Skills-Koffer aus Einheit 15 liegt dabei, wenn es ihn schon gibt. Die Leitung geht herum und hilft einzeln. Niemand liest vor; das Blatt gehört der Person und geht mit nach Hause.",
+          "sagen": [
+            "Was machst du heute Abend, wenn dir das Ganze beim Einschlafen wieder durch den Kopf geht?",
+            "Wer ist die erste Person, die du anrufen oder ansprechen würdest?"
+          ],
+          "tipp": "Darauf achten, dass jede Person mindestens eine erreichbare erwachsene Person einträgt, nicht nur Freunde aus der Gruppe.",
+          "blatt": "skills-was-mir-jetzt-hilft"
+        },
+        {
+          "titel": "Klangschale oder eine Minute Stille",
+          "dauer": 5,
+          "phase": "skill",
+          "text": "Die Klangschale anschlagen; alle hören zu, bis der Ton verklungen ist, die Augen offen oder gesenkt. Bei einem Verlust kann die Gruppe stattdessen eine Minute gemeinsam still sein, wenn sie das möchte. Die Leitung fragt vorher und respektiert, wenn jemand dabei lieber hinausgeht.",
+          "sagen": [
+            "Wir hören zu, bis der Ton ganz weg ist. Wer mag, denkt dabei an etwas, das ihm Halt gibt."
+          ]
+        },
+        {
+          "titel": "Leiser Réckbléck und Hilfe zeigen",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Kurzes Blitzlicht mit einem Wort oder einem „weiter“. Die Leitung nennt noch einmal die Anlaufstellen, sagt, wann sie selbst erreichbar ist, und bleibt nach der Einheit noch eine Viertelstunde im Raum. Der Eintrag in den Skills-Pass ist heute freiwillig.",
+          "sagen": [
+            "Ich bin nach der Einheit noch eine Viertelstunde hier. Ihr könnt dableiben oder später wiederkommen.",
+            "Nächstes Mal fragen wir kurz nach, wie es euch geht, und machen dann mit unserem Plan weiter."
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "hintergrund": "Nach einem belastenden Ereignis brauchen Jugendliche vor allem Sicherheit, Beruhigung, Verbundenheit, das Gefühl, selbst etwas tun zu können, und Hoffnung. Die Einheit folgt diesen Grundsätzen der psychosozialen Ersten Hilfe (Hobfoll et al., 2007): vertraute Rituale, klare Informationen statt Gerüchten, Raum ohne Druck. Ein ausführliches Nacherzählen des Ereignisses in der Gruppe wird bewusst vermieden, weil es die Belastung eher verstärken kann; einmaliges Nachbesprechen schützt nicht vor späteren Folgen (Rose et al., 2002). Die meisten Kinder und Jugendlichen bewältigen schwere Erfahrungen mit Hilfe gewöhnlicher Schutzfaktoren wie verlässlicher Beziehungen, Routinen und Selbstregulation (Masten, 2014). Wie belastend ein Ereignis wirkt, hängt auch davon ab, welche Bewältigungsmöglichkeiten jemand für sich sieht (Lazarus & Folkman, 1984). Die Skills zur Stresstoleranz aus dem Kurs (Rathus & Miller, 2015) geben den Jugendlichen solche Möglichkeiten in die Hand.",
+      "quellen": [
+        "Masten, A. S. (2014). Ordinary Magic: Resilience in Development. New York: Guilford.",
+        "Lazarus, R. S. & Folkman, S. (1984). Stress, Appraisal, and Coping. New York: Springer.",
+        "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford.",
+        "Hobfoll, S. E., Watson, P., Bell, C. C., Bryant, R. A., Brymer, M. J., Friedman, M. J., Friedman, M., Gersons, B. P. R., de Jong, J. T. V. M., Layne, C. M., Maguen, S., Neria, Y., Norwood, A. E., Pynoos, R. S., Reissman, D., Ruzek, J. I., Shalev, A. Y., Solomon, Z., Steinberg, A. M. & Ursano, R. J. (2007). Five essential elements of immediate and mid-term mass trauma intervention: Empirical evidence. Psychiatry, 70(4), 283–315.",
+        "Rose, S. C., Bisson, J., Churchill, R. & Wessely, S. (2002). Psychological debriefing for preventing post traumatic stress disorder (PTSD). Cochrane Database of Systematic Reviews, (2), CD000560."
+      ],
+      "achtung": "Diese Einheit nur nach Absprache mit der Leitung (Responsable) halten; sie ersetzt keine Krisenintervention. Besonders Betroffene – enge Freunde, Angehörige, Zeuginnen und Zeugen – bekommen vorher ein Einzelgespräch und entscheiden selbst, ob sie teilnehmen. Keine Einzelheiten, Bilder oder Videos des Ereignisses, keine Spekulationen über Ursachen oder Schuld. Bei einem Suizid im Umfeld weder Methode noch Ort besprechen, nichts vereinfachend erklären und das Vorgehen mit dem Krisenteam abstimmen. Trauer, Wut, Schuldgefühle, Lachen oder scheinbare Gleichgültigkeit werden nicht bewertet. Wer sehr stark reagiert, sich zurückzieht oder über Tage nicht schläft, bekommt zeitnah ein Einzelgespräch und Unterstützung durch SePAS oder Psychologin. Äußert jemand Gedanken, nicht mehr leben zu wollen, oder gibt es Hinweise auf Gewalt oder Gefährdung, sofort nach dem internen Schutzkonzept handeln, die Person nicht allein lassen und die zuständige Leitung informieren. Nach der Einheit das Wichtigste dokumentieren und die nächste Einheit mit einem kurzen Nachfragen beginnen."
+    },
+    {
+      "id": "j1-j09",
+      "nr": 9,
+      "jahr": 1,
+      "modul": "joker",
+      "joker": true,
+      "passt": "zwei bis drei Wochen vor einer Prüfungsphase",
+      "titel": "Ruhig durch die Prüfungszeit",
+      "kurz": "Vor einer Prüfungsphase klärt die Gruppe, woher Prüfungsstress kommt, plant das Lernen rückwärts vom Prüfungstag, prüft typische Prüfungsgedanken und übt Skills, die im Prüfungsraum niemand bemerkt.",
+      "dauer": 100,
+      "ziele": [
+        "erklären, wie Anspannung beim Lernen und in der Prüfung wirkt, und ordnen ihre eigene auf der Skala von 0 bis 100 ein",
+        "planen das Lernen für eine echte Prüfung rückwärts und mit Selbsttests",
+        "prüfen typische Prüfungsgedanken und formulieren realistische Gegensätze",
+        "üben einen Blackout-Plan und unauffällige Skills für den Prüfungsraum"
+      ],
+      "material": [
+        "Schülerblatt „Mein Prüfungs-Countdown“ je Person",
+        "Prüfungstermine der Jugendlichen (Devoirs, Präsentationen, Abschlussprüfungen)",
+        "Zettel für die anonyme Anspannungs-Zahl, Klebeband für eine Linie von 0 bis 100 am Boden",
+        "Zwei Tafelhälften oder zwei Plakate für die Gedanken-Staffel",
+        "Mini-Quiz: zehn leichte Fragen, eine davon absichtlich unlösbar; Stoppuhr",
+        "Ein Glas Wasser je Person, Imbiss",
+        "Gefühlsrad (A3), Anspannungsskala aus Einheit 11, Skills-Pässe, Stempel"
+      ],
+      "vorbereitung": [
+        "Bei den Jugendlichen oder den Klassenlehrkräften erfragen, welche Prüfungen in den nächsten Wochen anstehen.",
+        "Das Mini-Quiz vorbereiten: zehn leichte Fragen aus dem Alltag, eine davon absichtlich unlösbar.",
+        "Die Anspannungsskala aus Einheit 11 aufhängen; ist sie noch nicht eingeführt, die drei Bereiche aus Schritt 3 an die Tafel zeichnen."
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-pruefungs-countdown",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Anspannung beim Gedanken an die Prüfung"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Welche Prüfungen stehen an?"
+        },
+        {
+          "min": "15–30",
+          "phase": "input",
+          "titel": "Prüfungsstress verstehen"
+        },
+        {
+          "min": "30–45",
+          "phase": "uebung",
+          "titel": "Mein Lernplan rückwärts"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–75",
+          "phase": "aktiv",
+          "titel": "Gedanken-Staffel: Prüfungsgedanken auf dem Prüfstand"
+        },
+        {
+          "min": "75–85",
+          "phase": "uebung",
+          "titel": "Blackout-Probe mit Mini-Quiz"
+        },
+        {
+          "min": "85–95",
+          "phase": "skill",
+          "titel": "Unsichtbare Skills für den Prüfungsraum"
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Réckbléck: mein Prüfungs-Skill"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: Anspannung beim Gedanken an die Prüfung",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Gefühlsrad wie gewohnt, dann die Anspannung zweimal: einmal jetzt und einmal beim Gedanken an die nächste Prüfung. Die zweite Zahl schreibt jede Person verdeckt auf einen Zettel. Die Leitung sammelt ein und legt die Zettel ohne Namen auf die Linie am Boden. So wird sichtbar, dass niemand mit seiner Aufregung allein ist – ohne dass jemand sie vor den anderen zugeben muss.",
+          "sagen": [
+            "Wie hoch ist eure Anspannung jetzt – und wie hoch, wenn ihr an die nächste Prüfung denkt?",
+            "Schaut euch die Zettel an: Mit eurer Aufregung seid ihr nicht allein."
+          ],
+          "tipp": "Die Leitung legt einen eigenen Zettel dazu, etwa mit der Zahl vor ihrer Führerscheinprüfung, und erzählt in einem Satz davon.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Welche Prüfungen stehen an?",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "Kurz sammeln, welche Prüfungen in den nächsten Wochen kommen: Devoirs en classe, Präsentationen, Abschlussprüfungen. Jede Person wählt eine davon für die heutige Arbeit und trägt Fach und Datum oben auf dem Blatt ein. Wer gerade keine Prüfung hat, nimmt die letzte, die schwierig war.",
+          "sagen": [
+            "Nehmt eine Prüfung, die euch wirklich beschäftigt – nicht die leichteste."
+          ],
+          "blatt": "skills-pruefungs-countdown"
+        },
+        {
+          "titel": "Prüfungsstress verstehen",
+          "dauer": 15,
+          "phase": "input",
+          "text": "An die Anspannungsskala aus Einheit 11 anknüpfen und an der Tafel zeigen, was in den drei Bereichen beim Lernen und in der Prüfung passiert. Dann gemeinsam sammeln, woran man Prüfungsstress merkt: im Körper, in den Gedanken, im Verhalten. Erklären: Stress entsteht, wenn eine Aufgabe größer wirkt als die eigenen Mittel. Deshalb gibt es zwei Hebel – die Aufgabe kleiner machen, indem man plant, und die Mittel größer machen, mit Skills und Hilfe.",
+          "sagen": [
+            "Woran merkt ihr am Abend vor einer Prüfung, dass ihr gestresst seid – im Bauch, im Kopf, am Handy?",
+            "Etwas Aufregung ist kein Fehler. Sie macht wach. Zu viel davon blockiert."
+          ],
+          "tabelle": {
+            "spalten": [
+              "Anspannung",
+              "Beim Lernen und in der Prüfung",
+              "Was hilft"
+            ],
+            "zeilen": [
+              [
+                "0–30",
+                "Klar im Kopf; manchmal fehlt nur der Anstoß zum Anfangen.",
+                "Startzeit festlegen, mit einer kleinen Aufgabe beginnen"
+              ],
+              [
+                "30–70",
+                "Wach und angespannt – gut für den Endspurt, bis die Gedanken eng werden.",
+                "Pausen, Selbsttest statt Lesen, Bewegung zwischen den Lernblöcken"
+              ],
+              [
+                "70–100",
+                "Blackout: Der Kopf ist leer, der Körper übernimmt.",
+                "Erst mit einem Körper-Skill runter, dann zur nächsten Aufgabe"
+              ]
+            ]
+          },
+          "wennEsKippt": "Kommt nur „Prüfungen sind mir egal“, das nicht widerlegen. Nachfragen, wie es am Morgen einer Präsentation aussieht: Gleichgültigkeit schützt Jugendliche oft vor Enttäuschung, und das darf so stehen bleiben."
+        },
+        {
+          "titel": "Mein Lernplan rückwärts",
+          "dauer": 15,
+          "phase": "uebung",
+          "text": "Auf dem Blatt vom Prüfungstag aus rückwärts planen: Wie viele Lerntage bleiben, was kommt an welchem Tag dran? Zwei Befunde aus der Lernforschung erklären: lieber mehrere kurze Lerneinheiten an verschiedenen Tagen als eine lange am Abend davor, und sich selbst testen statt nur durchlesen. Jede Lerneinheit bekommt deshalb einen Eintrag in der Spalte „So teste ich mich“. Die Leitung geht herum und hilft, zu große Brocken in kleine zu teilen. Zum Schluss ergänzt jede Person den Countdown für die letzten Stunden vor der Prüfung.",
+          "sagen": [
+            "Dreimal durchlesen fühlt sich gut an, bringt aber wenig. Heft zu und aufschreiben, was noch da ist – das wirkt.",
+            "Welcher Brocken ist so groß, dass ihr ihn vor euch herschiebt? Den teilen wir jetzt."
+          ],
+          "tipp": "Wer keine Unterlagen dabeihat, plant mit dem, was er weiß, und ergänzt zu Hause. Wichtiger als ein perfekter Plan ist der erste Termin: Wann genau geht es los?",
+          "blatt": "skills-pruefungs-countdown"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Pause mit Imbiss. Wer mag, erzählt von einer Prüfung, die ganz anders lief als gedacht; die Leitung beginnt mit einer eigenen Geschichte."
+        },
+        {
+          "titel": "Gedanken-Staffel: Prüfungsgedanken auf dem Prüfstand",
+          "dauer": 15,
+          "phase": "aktiv",
+          "text": "Eine Variante des Gedankenstopp-Spiels aus Einheit 18: zwei Teams, zwei Tafelhälften. Die Leitung liest einen typischen Prüfungsgedanken vor; aus jedem Team läuft eine Person zur Tafel und schreibt einen Gegensatz, der realistisch ist und hilft. Die Gruppe prüft wie in Einheit 18: Ist der Satz realistisch, und schaut er auf das, was ich beeinflussen kann? Für jeden Satz, der beide Fragen besteht, gibt es einen Punkt – „Ich bin der Beste“ zählt nicht.",
+          "sagen": [
+            "Nicht schönreden, sondern prüfen: Würdet ihr den Satz am Morgen der Prüfung wirklich glauben?",
+            "Stopp! Ist das realistisch – oder nur das Gegenteil?"
+          ],
+          "punkte": [
+            "„Ich falle sowieso durch.“",
+            "„Alle anderen haben mehr gelernt.“",
+            "„Wenn ich einen Blackout habe, ist alles vorbei.“",
+            "„Wenn diese Note schlecht ist, bin ich dumm.“",
+            "„Ich muss alles wissen.“",
+            "„Ich habe zu spät angefangen, jetzt lohnt es sich nicht mehr.“"
+          ],
+          "tipp": "Gute Gegensätze auf Kärtchen schreiben lassen: Sie passen zu den Glaubenssatz-Kärtchen aus Einheit 18 und in jede Federmappe.",
+          "wennEsKippt": "Wird das Rennen wichtiger als die Sätze, das Tempo herausnehmen: Beide Teams schreiben zuerst in Ruhe, dann wird gemeinsam bewertet. Mit wenigen Jugendlichen spielt die Gruppe gegen die Uhr statt gegeneinander."
+        },
+        {
+          "titel": "Blackout-Probe mit Mini-Quiz",
+          "dauer": 10,
+          "phase": "uebung",
+          "text": "Zuerst den Blackout-Plan besprechen und auf dem Blatt als Wenn-dann-Satz festhalten: bemerken, ausatmen, Aufgabe markieren, zur nächsten, später zurück. Dann das Mini-Quiz mit Stoppuhr: drei Minuten, zehn leichte Fragen, eine davon absichtlich unlösbar. Geübt wird, an dieser Frage nicht hängen zu bleiben. Danach auflösen: Wer ist hängen geblieben, wer hat den Plan genutzt?",
+          "sagen": [
+            "Eine Frage in diesem Quiz ist nicht zu lösen, mit Absicht. Eure Aufgabe ist, trotzdem weiterzumachen.",
+            "Wie hat es sich angefühlt, eine Frage einfach stehen zu lassen?"
+          ],
+          "tipp": "Das Quiz bekommt keine Noten und wird nicht eingesammelt. Es geht nur um den Moment, in dem man hängen bleibt.",
+          "wennEsKippt": "Ärgert sich jemand über die unlösbare Frage, den Ärger würdigen: Genau dieses Gefühl kommt in der echten Prüfung auch. Dann fragen, was geholfen hat weiterzumachen – oder was geholfen hätte.",
+          "blatt": "skills-pruefungs-countdown"
+        },
+        {
+          "titel": "Unsichtbare Skills für den Prüfungsraum",
+          "dauer": 10,
+          "phase": "skill",
+          "text": "Alle sitzen wie in einer Prüfung am Tisch, den Stift in der Hand. Die Leitung leitet vier Skills an, die im Raum niemand bemerkt, jeweils etwa eine Minute. Danach wählt jede Person ihren Favoriten und trägt ihn im Blackout-Plan auf dem Blatt ein.",
+          "sagen": [
+            "Niemand im Raum darf merken, dass ihr gerade einen Skill macht.",
+            "Welcher würde bei euch in der echten Prüfung funktionieren?"
+          ],
+          "punkte": [
+            "Füße fest in den Boden drücken, fünf Sekunden halten, lösen.",
+            "Vier Sekunden ein-, sechs Sekunden ausatmen.",
+            "Den Stift fest drücken, bis die Hand warm wird, dann loslassen.",
+            "Lautlos fünf Dinge im Raum sehen, vier hören, drei spüren."
+          ],
+          "tipp": "Ein Schluck Wasser gibt eine kurze Pause und ist in jeder Prüfung erlaubt – auch das kann ein Skill sein."
+        },
+        {
+          "titel": "Réckbléck: mein Prüfungs-Skill",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Blitzlicht zur Frage, welcher Skill mit in die nächste Prüfung kommt. Danach Eintrag in den Skills-Pass und Stempel. Ankündigen, dass nach der Prüfungsphase kurz nachgefragt wird, was geholfen hat – unabhängig von der Note; die letzte Aufgabe auf dem Blatt füllt jede Person nach ihrer Prüfung aus.",
+          "sagen": [
+            "Welcher Skill kommt mit in die nächste Prüfung?",
+            "Nach den Prüfungen fragen wir nach, was geholfen hat. Nicht nach der Note."
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "hintergrund": "Prüfungsangst hat zwei Seiten: sorgenvolle Gedanken wie „Ich falle durch“ und körperliche Aufregung. Vor allem die Sorgen binden Aufmerksamkeit, die dann für die Aufgaben fehlt (Zeidner, 1998). Nach dem Stressmodell von Lazarus und Folkman (1984) entsteht Stress, wenn eine Anforderung die eigenen Möglichkeiten zu übersteigen scheint; die Einheit setzt deshalb an beiden Stellen an – an der Einschätzung der Aufgabe und an den eigenen Mitteln. Beim Lernen haben sich in einer großen Übersichtsarbeit zwei Methoden als besonders wirksam erwiesen: sich selbst abfragen und das Lernen über mehrere Tage verteilen (Dunlosky et al., 2013). Der Blackout-Plan ist als Wenn-dann-Satz formuliert, weil solche Vorsätze im entscheidenden Moment fast automatisch abgerufen werden (Gollwitzer, 1999).",
+      "quellen": [
+        "Zeidner, M. (1998). Test Anxiety: The State of the Art. New York: Plenum.",
+        "Lazarus, R. S. & Folkman, S. (1984). Stress, Appraisal, and Coping. New York: Springer.",
+        "Dunlosky, J., Rawson, K. A., Marsh, E. J., Nathan, M. J. & Willingham, D. T. (2013). Improving students’ learning with effective learning techniques. Psychological Science in the Public Interest, 14(1), 4–58.",
+        "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+      ],
+      "achtung": "Prüfungsdruck kann zu Hause oder in der Schule sehr hoch sein. Nicht nach Noten, Zeugnissen oder Reaktionen der Eltern fragen; wer davon erzählt, tut es freiwillig. Hinter starker Prüfungsangst stecken manchmal Schlafprobleme, Druck in der Familie oder anhaltende Niedergeschlagenheit: das im Einzelgespräch aufgreifen und auf SePAS oder Klassenlehrkraft hinweisen. Das Mini-Quiz bleibt ohne Bewertung. Sagt jemand, er halte den Druck nicht mehr aus, oder deutet an, nicht mehr leben zu wollen, sofort nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) informieren."
+    }
+  ]
+}

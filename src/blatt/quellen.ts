@@ -176,6 +176,13 @@ export const QUELLEN: Record<string, string> = {
   unesco2023: 'UNESCO (2023). Guidance for Generative AI in Education and Research. Paris: UNESCO.',
   foshee2004: 'Foshee, V. A., Bauman, K. E., Ennett, S. T., Linder, G. F., Benefield, T. & Suchindran, C. (2004). Assessing the long-term effects of the Safe Dates program and a booster in preventing and reducing adolescent dating violence victimization and perpetration. American Journal of Public Health, 94(4), 619–624.',
   wolfe2009: 'Wolfe, D. A., Crooks, C., Jaffe, P., Chiodo, D., Hughes, R., Ellis, W., Stitt, L. & Donner, A. (2009). A school-based program to prevent adolescent dating violence: A cluster randomized trial. Archives of Pediatrics & Adolescent Medicine, 163(8), 692–699.',
+
+  // Skills-Kurs, Jahr 1: Gruppe, Stabilisierung, Krisen
+  yalomLeszcz2005: 'Yalom, I. D. & Leszcz, M. (2005). The Theory and Practice of Group Psychotherapy (5th ed.). New York: Basic Books.',
+  reddemann2001: 'Reddemann, L. (2001). Imagination als heilsame Kraft. Zur Behandlung von Traumafolgen mit ressourcenorientierten Verfahren. Stuttgart: Pfeiffer bei Klett-Cotta.',
+  senninger2000: 'Senninger, T. (2000). Abenteuer leiten – in Abenteuern lernen. Münster: Ökotopia.',
+  hobfoll2007: 'Hobfoll, S. E., Watson, P., Bell, C. C., Bryant, R. A., Brymer, M. J., Friedman, M. J., Friedman, M., Gersons, B. P. R., de Jong, J. T. V. M., Layne, C. M., Maguen, S., Neria, Y., Norwood, A. E., Pynoos, R. S., Reissman, D., Ruzek, J. I., Shalev, A. Y., Solomon, Z., Steinberg, A. M. & Ursano, R. J. (2007). Five essential elements of immediate and mid-term mass trauma intervention: Empirical evidence. Psychiatry, 70(4), 283–315.',
+  rose2002: 'Rose, S. C., Bisson, J., Churchill, R. & Wessely, S. (2002). Psychological debriefing for preventing post traumatic stress disorder (PTSD). Cochrane Database of Systematic Reviews, (2), CD000560.',
 }
 
 export const QUELLEN_TEXTE = new Set(Object.values(QUELLEN))

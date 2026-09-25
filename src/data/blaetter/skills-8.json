@@ -1,0 +1,672 @@
+[
+  {
+    "id": "skills-stress-rucksack",
+    "bereich": "skills",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "thema": "gesund",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "15 Min.",
+    "eldib": [
+      "V-33",
+      "K-26",
+      "V-29"
+    ],
+    "schlagworte": [
+      "Stress",
+      "Belastungen",
+      "Ressourcen",
+      "Selbstfürsorge",
+      "Skills-Koffer",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:backpack",
+    "verwandt": [
+      "balance-finden",
+      "stress-werkzeugkoffer"
+    ],
+    "kurs": [
+      "j1-e29"
+    ],
+    "de": {
+      "titel": "Mein Stress-Rucksack",
+      "untertitel": "Was macht ihn schwer – und was macht ihn wieder leichter?",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Warum ein Rucksack?",
+          "text": "Jeden Tag trägst du einen unsichtbaren Rucksack. Prüfungen, Streit, zu wenig Schlaf oder Sorgen machen ihn schwerer. Ist er voll, reicht schon eine Kleinigkeit, und die Anspannung springt auf Rot. Man kann aber auch etwas herausnehmen: mit Skills für den Moment und mit dem, was auf Dauer guttut."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was steckt gerade in deinem Rucksack? Kreuze an und ergänze.",
+          "hinweis": "Nur für dich – schreib nur auf, was du aufschreiben möchtest."
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "frei": 2,
+          "items": [
+            "Prüfungen und Noten",
+            "Hausaufgaben und Termine",
+            "Streit mit Freundinnen oder Freunden",
+            "Stress zu Hause",
+            "zu wenig Schlaf",
+            "Handy bis spät in die Nacht",
+            "Druck, dazuzugehören",
+            "Ärger mit Lehrpersonen",
+            "Sorgen um jemanden",
+            "Kommentare im Netz"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wie schwer ist dein Rucksack diese Woche? Kreise eine Zahl ein."
+        },
+        {
+          "art": "skala",
+          "von": "federleicht",
+          "bis": "kaum zu tragen",
+          "stufen": 11
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was nimmt Gewicht heraus? Schreib auf, was dir hilft.",
+          "hinweis": "Schau dafür in deinen Skills-Koffer aus Einheit 15."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "feld",
+              "label": "Sofort – wenn es akut wird",
+              "hoehe": 4.5,
+              "beispiel": "kaltes Wasser, 5-4-3-2-1, Musik"
+            }
+          ],
+          "rechts": [
+            {
+              "art": "feld",
+              "label": "Auf Dauer – damit er leichter bleibt",
+              "hoehe": 4.5,
+              "beispiel": "früher schlafen, Training am Mittwoch"
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Koffer und Rucksack",
+          "text": "Der Skills-Koffer hilft, wenn es akut wird. Schlaf, Bewegung, Essen, Pausen und Menschen, die dir guttun, sorgen dafür, dass der Rucksack gar nicht erst so schwer wird."
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Du entscheidest, was du teilst.",
+          "text": "Das Blatt gehört dir. Bleibt dein Rucksack über Wochen sehr schwer, sprich mit jemandem, dem du vertraust – oder ruf anonym und kostenlos das Kanner- a Jugendtelefon an: 116 111."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen benennen, was sie belastet und entlastet, schätzen ihre Belastung ein und unterscheiden Skills für akute Momente von dem, was auf Dauer entlastet.",
+        "ablauf": [
+          "Rucksack in der Gruppe (7 Min.): Für jede genannte Belastung kommt ein Buch in einen echten Rucksack, das Stichwort links aufs Plakat. Jemand trägt ihn eine Runde.",
+          "Entlasten (3 Min.): Für jede hilfreiche Idee wird etwas herausgenommen, das Stichwort kommt rechts aufs Plakat.",
+          "Einzelarbeit (5 Min.): Aufgaben 1 bis 3 still ausfüllen, die Skills-Koffer aus Einheit 15 liegen bereit. Nicht einsammeln.",
+          "Übergang: Aus dem rechten Feld wählen die Jugendlichen gleich ihren Schritt für den Gesund-Plan."
+        ],
+        "hintergrund": "Stress entsteht, wenn Anforderungen die eigenen Möglichkeiten zu übersteigen scheinen; entscheidend sind die Bewertung der Lage und die verfügbaren Bewältigungswege (Lazarus & Folkman, 1984). Der Rucksack macht diese Bilanz anschaulich. Die Salutogenese fragt zusätzlich, was gesund hält: Schlaf, Bewegung und verlässliche Beziehungen wirken als Widerstandsressourcen (Antonovsky, 1987). Im Skillstraining für Jugendliche gilt die Sorge für Körper, Schlaf und Ernährung als eigener Baustein, der die Anfälligkeit für starke Gefühle senkt (Rathus & Miller, 2015).",
+        "quellen": [
+          "Lazarus, R. S. & Folkman, S. (1984). Stress, Appraisal, and Coping. New York: Springer.",
+          "Antonovsky, A. (1987). Unraveling the Mystery of Health. San Francisco: Jossey-Bass.",
+          "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Nur Aufgabe 1 und 2 schriftlich, die Entlastungen mündlich sammeln.",
+          "schwerer": "Zu jeder Belastung notieren: änderbar, teilweise oder gar nicht? Für eine änderbare einen ersten Schritt planen."
+        },
+        "impulse": [
+          "Was wiegt in eurem Alter am schwersten – und was davon sieht man von außen gar nicht?",
+          "Was nimmt bei euch am schnellsten Gewicht heraus?"
+        ],
+        "tipps": [
+          "Den Rucksack mit höchstens etwa fünf Kilo packen und niemanden zum Tragen drängen.",
+          "Die Skala aus Aufgabe 2 taugt auch als Check-in: Wie schwer ist dein Rucksack heute?"
+        ],
+        "achtung": "Viele Kreuze, ein Rucksack dauerhaft bei 9 oder 10, Andeutungen über Sorgen zu Hause: nicht in der Gruppe nachfragen, Einzelgespräch anbieten, die zuständige Leitung (Responsable) informieren. Bei Gefährdung nach dem internen Schutzkonzept handeln.",
+        "material": "Rucksack, einige Bücher, Plakat, Stifte"
+      }
+    }
+  },
+  {
+    "id": "skills-gesund-plan",
+    "bereich": "skills",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "thema": "gesund",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "20 Min., danach zwei Wochen",
+    "eldib": [
+      "V-29",
+      "V-32",
+      "V-22"
+    ],
+    "schlagworte": [
+      "Gesundheit",
+      "Schlaf",
+      "Bewegung",
+      "Wenn-dann-Plan",
+      "Gewohnheiten",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:seedling",
+    "verwandt": [
+      "schlaf-check",
+      "woop-plan"
+    ],
+    "kurs": [
+      "j1-e29"
+    ],
+    "de": {
+      "titel": "Mein Gesund-Plan",
+      "untertitel": "Ein kleiner Schritt für die nächsten zwei Wochen – so klein, dass er wirklich klappt",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Wie läuft es gerade bei dir? Kreuze in jeder Zeile an."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "läuft gut",
+            "geht so",
+            "da will ich ran"
+          ],
+          "items": [
+            "Schlaf",
+            "Bewegung",
+            "Essen und Trinken",
+            "Handy und Bildschirm",
+            "Pausen und Erholung",
+            "Menschen, die mir guttun"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wähle einen Bereich und such dir einen kleinen Schritt aus – oder erfinde einen eigenen."
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Ideen für kleine Schritte",
+          "punkte": [
+            "Schlaf: das Handy um 22 Uhr zum Laden in die Küche legen.",
+            "Bewegung: eine Haltestelle früher aussteigen und laufen.",
+            "Essen und Trinken: eine Flasche Wasser in die Schultasche packen.",
+            "Handy und Bildschirm: beim Essen das Handy weglegen.",
+            "Pausen: in der großen Pause zehn Minuten nach draußen gehen.",
+            "Menschen: einmal pro Woche etwas mit jemandem machen, der mir guttut."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Leg deinen Schritt genau fest – und deinen Plan für das größte Hindernis.",
+          "hinweis": "Erste Zeile: wann und wo du es tust. Zweite Zeile: was du tust, wenn etwas dazwischenkommt."
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 2,
+          "beispiele": [
+            {
+              "wenn": "Wenn es 22 Uhr ist,",
+              "dann": "lege ich mein Handy zum Laden in die Küche."
+            },
+            {
+              "wenn": "Wenn dann noch jemand schreibt,",
+              "dann": "antworte ich morgen früh im Bus."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wie sicher bist du, dass du es schaffst? Kreise eine Zahl ein.",
+          "hinweis": "Unter 7? Dann mach den Schritt kleiner – so klein, dass er fast sicher klappt."
+        },
+        {
+          "art": "skala",
+          "von": "gar nicht sicher",
+          "bis": "ganz sicher",
+          "stufen": 11
+        },
+        {
+          "art": "aufgabe",
+          "text": "Hake jeden Tag ab, an dem dein Schritt geklappt hat.",
+          "hinweis": "Ein verpasster Tag ist kein Scheitern. Mach am nächsten Tag einfach weiter."
+        },
+        {
+          "art": "plan",
+          "ziel": "",
+          "tage": [
+            "Mo",
+            "Di",
+            "Mi",
+            "Do",
+            "Fr",
+            "Sa",
+            "So"
+          ],
+          "zeilen": [
+            "1. Woche",
+            "2. Woche"
+          ],
+          "symbol": "kasten"
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Mein Buddy aus der Gruppe: …",
+            "Wir fragen einander am … nach, wie es läuft."
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Nach zwei Wochen: Wie ist es gelaufen?"
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Geholfen hat mir …",
+            "Schwierig war …",
+            "Das mache ich weiter: …"
+          ],
+          "linien": 2
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Wenn es nicht klappt",
+          "text": "Dann war der Schritt zu groß – nicht du zu schwach. Mach ihn kleiner und fang neu an. Große Vorsätze halten selten; kleine, genau geplante Schritte werden zur Gewohnheit."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen schätzen ihre Gesundheit in sechs Bereichen ein, wählen einen kleinen, machbaren Schritt und sichern ihn mit Wenn-dann-Plan, Zuversichtsskala und Abhakliste ab.",
+        "ablauf": [
+          "Einstieg (2 Min.): „Wer hatte schon mal einen Vorsatz, der nach einer Woche vergessen war?“ Dann: Heute planen wir so, dass es klappt.",
+          "Aufgabe 1 und 2 (6 Min.) allein, die Ideen vorlesen. Kleiner ist besser.",
+          "Aufgabe 3 (5 Min.): Wenn-dann-Sätze zu zweit prüfen – sind Zeit, Ort und Handlung klar?",
+          "Aufgabe 4 (2 Min.): Liegt die Zuversicht unter 7, den Schritt gemeinsam verkleinern.",
+          "Aufgabe 5 (5 Min.): Buddy wählen, Schritt in den Skills-Pass, Blatt mit nach Hause. Aufgabe 6 nach zwei Wochen."
+        ],
+        "hintergrund": "Vorsätze scheitern selten am Wissen, sondern an der Umsetzung. Wenn-dann-Pläne, die festlegen, wann, wo und wie gehandelt wird, erhöhen die Umsetzung deutlich – auch bei Hindernissen (Gollwitzer, 1999). Die Zuversichtsskala aus der motivierenden Gesprächsführung hilft, den Schritt so zu bemessen, dass er gelingt (Miller & Rollnick, 2013). Zur Orientierung: Jugendliche brauchen 8 bis 10 Stunden Schlaf (Paruthi et al., 2016) und im Durchschnitt mindestens 60 Minuten Bewegung am Tag (World Health Organization, 2020). Maßstab für das Blatt ist aber der erste machbare Schritt.",
+        "quellen": [
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503.",
+          "Miller, W. R. & Rollnick, S. (2013). Motivational Interviewing (3rd ed.). New York: Guilford.",
+          "Paruthi, S. et al. (2016). Recommended amount of sleep for pediatric populations: A consensus statement of the American Academy of Sleep Medicine. Journal of Clinical Sleep Medicine, 12(6), 785–786.",
+          "World Health Organization (2020). WHO Guidelines on Physical Activity and Sedentary Behaviour. Genf: WHO."
+        ],
+        "differenzierung": {
+          "leichter": "Die Leitung schlägt zwei, drei passende Schritte vor, die Person wählt.",
+          "schwerer": "Einen zweiten Hindernis-Plan schreiben und nach zwei Wochen auswerten, was geholfen hat."
+        },
+        "impulse": [
+          "Welcher Schritt wäre so klein, dass er fast lächerlich wirkt – und trotzdem etwas ändert?",
+          "Wer oder was erinnert dich an deinen Plan?"
+        ],
+        "tipps": [
+          "Nicht moralisieren: Hilfreicher als Ratschläge ist die Frage, was gerade machbar ist.",
+          "Den Plan als Sperrbildschirm fotografieren lassen."
+        ],
+        "achtung": "Ziele rund um Gewicht oder weniger Essen nicht bestärken, sondern behutsam umlenken; bei Hinweisen auf gestörtes Essverhalten die zuständige Leitung (Responsable) informieren. Fehlt es zu Hause an Essen oder Schlafplatz: Gespräch nach dem internen Ablauf.",
+        "material": "Blatt je Person, Skills-Pass; optional Schlaf-Check"
+      }
+    }
+  },
+  {
+    "id": "skills-mein-jahr",
+    "bereich": "skills",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "thema": "abschluss",
+    "sozialform": [
+      "einzeln"
+    ],
+    "dauer": "15 Min.",
+    "eldib": [
+      "K-18",
+      "K-24",
+      "SOZ-40"
+    ],
+    "schlagworte": [
+      "Jahresrückblick",
+      "Skills-Pass",
+      "Stolz",
+      "Entwicklung",
+      "Abschluss",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:timeline",
+    "kurs": [
+      "j1-e30"
+    ],
+    "de": {
+      "titel": "Mein Jahr",
+      "untertitel": "Ein Schuljahr Skills-Kurs: Was war, was bleibt?",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Blättere zuerst in Ruhe durch deinen Skills-Pass und markiere die drei Sätze, die dir heute am meisten bedeuten."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Zeichne deine Jahreskurve: Kreuze für jeden Monat an, wie es dir ging, und verbinde die Kreuze zu einer Linie."
+        },
+        {
+          "art": "plan",
+          "tage": [
+            "Sep",
+            "Okt",
+            "Nov",
+            "Dez",
+            "Jan",
+            "Feb",
+            "Mär",
+            "Apr",
+            "Mai",
+            "Jun",
+            "Jul"
+          ],
+          "zeilen": [
+            "richtig gut",
+            "gut",
+            "gemischt",
+            "schwer",
+            "richtig schwer"
+          ],
+          "symbol": "kasten"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Such dir zwei oder drei Hoch- und Tiefpunkte aus. Was war da los – und was hast du daraus gelernt?",
+          "hinweis": "Schreib nur auf, was du aufschreiben möchtest."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Monat",
+            "Was war da los?",
+            "Was habe ich daraus gelernt?"
+          ],
+          "breiten": [
+            0.7,
+            2.2,
+            2.2
+          ],
+          "zeilen": 3,
+          "beispiel": [
+            "Nov.",
+            "viel Streit in der Klasse",
+            "Erst runterkommen, dann reden."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ergänze die Sätze."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Darauf bin ich dieses Jahr stolz: …",
+            "Mein wichtigster Skill – und wann er mir geholfen hat: …",
+            "Das weiß ich heute über mich, was ich im September noch nicht wusste: …"
+          ],
+          "linien": 2
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Du entscheidest, was du teilst.",
+          "text": "Kurve und Antworten gehören dir. In der Gruppe erzählst du nur, was du erzählen möchtest."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen blicken mit Skills-Pass und Jahreskurve auf ihr Jahr zurück, benennen Hoch- und Tiefpunkte und halten fest, was sie gelernt haben und worauf sie stolz sind.",
+        "ablauf": [
+          "Skills-Pass (5 Min.): still durchblättern, drei Sätze markieren, die heute noch wichtig sind.",
+          "Jahreskurve (4 Min.): pro Monat ein Kästchen ankreuzen und die Kreuze verbinden. Vorher eine eigene Beispielkurve an der Tafel zeigen.",
+          "Hoch- und Tiefpunkte (3 Min.) in die Tabelle eintragen – nur, was die Person aufschreiben möchte.",
+          "Satzanfänge (3 Min.). Wer mag, erzählt jemandem von einem Hochpunkt. Das Blatt geht mit dem Pass nach Hause."
+        ],
+        "hintergrund": "Rückblicke machen Entwicklung sichtbar, die im Alltag untergeht. Die Jahreskurve ist eine vereinfachte Lebenslinie, wie sie in der Biografiearbeit verbreitet ist: Sie zeigt, dass auf Tiefpunkte wieder andere Zeiten folgten. Über eigene Erfahrungen zu schreiben, hilft, sie zu ordnen (Pennebaker, 1997). Wer erkennt, dass er schwierige Phasen bewältigt hat, macht eine Bewältigungserfahrung – die wichtigste Quelle von Selbstwirksamkeit (Bandura, 1977) und ein Baustein von Resilienz (Masten, 2014).",
+        "quellen": [
+          "Pennebaker, J. W. (1997). Writing about emotional experiences as a therapeutic process. Psychological Science, 8(3), 162–166.",
+          "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
+          "Masten, A. S. (2014). Ordinary Magic: Resilience in Development. New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Nur drei Monate markieren: den besten, den schwersten, den heutigen. Satzanfänge mündlich.",
+          "schwerer": "Zu jedem Tiefpunkt notieren, welcher Skill oder welche Person geholfen hat."
+        },
+        "impulse": [
+          "Welcher Satz in eurem Skills-Pass überrascht euch heute?",
+          "Was wisst ihr heute über euch, was ihr im September noch nicht wusstet?"
+        ],
+        "tipps": [
+          "Wer im Lauf des Jahres dazugekommen ist, beginnt mit seinem ersten Monat in der Gruppe.",
+          "Die Kurve nicht deuten und nicht bewerten – sie gehört der Person."
+        ],
+        "achtung": "Tiefpunkte können an Schweres erinnern: nicht nachfragen, bei Tränen oder Stocken ein Gespräch nach der Einheit anbieten. Bei Hinweisen auf Gefährdung nach dem internen Schutzkonzept handeln, die zuständige Leitung (Responsable) informieren.",
+        "material": "Skills-Pass, Blatt je Person, Buntstifte"
+      }
+    }
+  },
+  {
+    "id": "skills-brief-an-mich",
+    "bereich": "skills",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "thema": "abschluss",
+    "sozialform": [
+      "einzeln"
+    ],
+    "dauer": "15 Min.",
+    "eldib": [
+      "K-26",
+      "K-15",
+      "SOZ-40"
+    ],
+    "schlagworte": [
+      "Brief an mich",
+      "Ausblick",
+      "Wünsche",
+      "Rückblick",
+      "Abschluss",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:mail",
+    "kurs": [
+      "j1-e30"
+    ],
+    "de": {
+      "titel": "Brief an mich",
+      "untertitel": "Zu öffnen in einem Jahr",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Du entscheidest, was du teilst.",
+          "text": "Der Brief kommt in einen verschlossenen Umschlag. Niemand liest ihn – auch die Leitung nicht. In einem Jahr bekommst du ihn zurück."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schreib dir selbst einen Brief. Die Satzanfänge helfen – du musst sie nicht benutzen."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Hallo …, heute ist der …",
+            "Gerade beschäftigt mich …",
+            "In diesem Jahr habe ich gelernt …",
+            "Darauf bin ich stolz: …",
+            "Dieser Skill soll dich begleiten: …",
+            "Wenn es mal schwer wird, denk daran: …",
+            "In einem Jahr wünsche ich dir …"
+          ],
+          "linien": 3
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Viele Grüße von mir – aus diesem Sommer"
+          ],
+          "linien": 1
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen halten in einem Brief an sich selbst fest, was sie aus dem Jahr mitnehmen und was sie sich wünschen. In einem Jahr lesen sie ihn wieder.",
+        "ablauf": [
+          "Vorher im Team klären: Wer bewahrt die Umschläge auf, wo (verschlossen), wann werden sie zurückgegeben, und was passiert, wenn jemand die Einrichtung verlässt?",
+          "Rahmen nennen (2 Min.): Niemand liest die Briefe, auch die Leitung nicht. Datum und Ort der Rückgabe sagen.",
+          "Schreiben (10 Min.): leise Musik; die Satzanfänge sind ein Angebot, keine Pflicht.",
+          "Verschließen (3 Min.): Brief falten, in den Umschlag, zukleben; außen Name und Rückgabedatum. Die Umschläge sichtbar in eine verschließbare Box legen.",
+          "Rückgabe nach einem Jahr: persönlich, am besten in einem kurzen Einzelkontakt – manche Briefe lösen Gefühle aus."
+        ],
+        "hintergrund": "Ein Brief an das eigene spätere Ich verbindet Rückblick und Ausblick: Das Erlebte wird in Worte gefasst, und der Blick richtet sich auf Wünsche und Werte. Über persönliche Erfahrungen zu schreiben, hilft, sie zu ordnen und zu verarbeiten (Pennebaker, 1997). Die Perspektive eines späteren Ichs schafft Abstand; aus dieser Distanz fällt es leichter, klug und freundlich mit sich selbst zu sprechen (Kross & Ayduk, 2017). Kommt der Brief ein Jahr später an, wird das Gelernte noch einmal wachgerufen – zu einem Zeitpunkt, an dem der Kurs längst vorbei ist.",
+        "quellen": [
+          "Pennebaker, J. W. (1997). Writing about emotional experiences as a therapeutic process. Psychological Science, 8(3), 162–166.",
+          "Kross, E. & Ayduk, O. (2017). Self-distancing: Theory, research, and current directions. Advances in Experimental Social Psychology, 55, 81–136."
+        ],
+        "differenzierung": {
+          "leichter": "Nur drei Satzanfänge auswählen. Wer nicht gern schreibt, legt Stichworte und eine Zeichnung in den Umschlag.",
+          "schwerer": "Ohne Satzanfänge frei schreiben und am Ende drei Fragen an das spätere Ich stellen, die es beim Lesen beantworten soll."
+        },
+        "impulse": [
+          "Was würdet ihr euch in einem Jahr gern sagen lassen?",
+          "Welcher Skill soll mit ins nächste Schuljahr?"
+        ],
+        "tipps": [
+          "Das Rückgabedatum gleich in den Teamkalender eintragen, damit es nicht untergeht.",
+          "Bei der Rückgabe niemanden drängen, den Brief vor anderen zu öffnen – er ist privat."
+        ],
+        "achtung": "Die Briefe bleiben ungelesen; das vorher klar sagen und einhalten. Wird jemand beim Schreiben sehr traurig oder deutet an, in einem Jahr „nicht mehr da“ sein zu wollen, das ernst nehmen: noch am selben Tag das Gespräch suchen, nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) informieren.",
+        "material": "Blatt je Person, Umschläge, Stifte, verschließbare Box, leise Musik"
+      }
+    }
+  },
+  {
+    "id": "skills-staerken-ruecken",
+    "bereich": "skills",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "thema": "abschluss",
+    "sozialform": [
+      "gruppe"
+    ],
+    "dauer": "15 Min.",
+    "eldib": [
+      "K-20",
+      "K-32",
+      "SOZ-32"
+    ],
+    "schlagworte": [
+      "Stärken",
+      "Wertschätzung",
+      "Rückmeldung",
+      "Abschied",
+      "Gruppe",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:user-heart",
+    "kurs": [
+      "j1-e30"
+    ],
+    "de": {
+      "titel": "Das schätzen wir an dir",
+      "untertitel": "Stärken-Rücken zum Abschied",
+      "bausteine": [
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Für:"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "So schreibt ihr",
+          "punkte": [
+            "Ein Satz, der stärkt: eine Stärke, die du an der Person erlebt hast, oder ein Danke.",
+            "Konkret: nicht nur „du bist nett“, sondern wann und wie.",
+            "Nichts über Aussehen, keine Witze auf Kosten der Person.",
+            "Mit Namen oder ohne – wie du magst."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schreibt der Person einen Satz, der stärkt.",
+          "hinweis": "Zum Beispiel: Mir hat gefallen, wie du … · Danke, dass du … · Ich habe an dir erlebt, dass …"
+        },
+        {
+          "art": "feld",
+          "hoehe": 19
+        },
+        {
+          "art": "aufgabe",
+          "text": "Nimm dein Blatt ab und lies es in Ruhe. Kreise den Satz ein, den du dir merken willst."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen geben einander zum Abschied konkrete, wertschätzende Rückmeldungen und nehmen ein Blatt mit, das ihre Stärken aus der Sicht der Gruppe zeigt.",
+        "ablauf": [
+          "Namen eintragen, Regeln vorlesen (2 Min.). Filzstifte oder Kugelschreiber, keine Permanentmarker.",
+          "Schreiben (7 Min.): Blätter mit Malerkrepp auf den Rücken, wer das nicht möchte, legt sein Blatt auf den Stuhl. Leise Musik. Die Leitung schreibt überall mit.",
+          "Durchsehen (1 Min.): Die Leitung sammelt die Blätter ein und liest sie; ein unpassender Satz wird überklebt.",
+          "Lesen (5 Min.): Jede Person liest still und kreist einen Satz ein. Wer mag, liest ihn vor."
+        ],
+        "hintergrund": "Im Jugendalter gewinnt die Anerkennung durch Gleichaltrige für das Selbstbild stark an Gewicht (Harter, 2012). Rückmeldungen aus der Gruppe wirken deshalb besonders – vor allem, wenn sie ein beobachtetes Verhalten benennen: Das ist glaubwürdiger und nützlicher als allgemeines Lob (Hattie & Timperley, 2007). Wer Dankbarkeit ausdrücklich zeigt, profitiert auch selbst davon (Seligman et al., 2005). Die Übung knüpft an die Stärken-Schatzkiste aus Einheit 6 an: Jetzt können die anderen Stärken mit gemeinsamen Erlebnissen belegen.",
+        "quellen": [
+          "Harter, S. (2012). The Construction of the Self (2nd ed.). New York: Guilford.",
+          "Hattie, J. & Timperley, H. (2007). The power of feedback. Review of Educational Research, 77(1), 81–112.",
+          "Seligman, M. E. P., Steen, T. A., Park, N. & Peterson, C. (2005). Positive psychology progress: Empirical validation of interventions. American Psychologist, 60(5), 410–421."
+        ],
+        "differenzierung": {
+          "leichter": "Die drei Satzanfänge aus Aufgabe 1 groß an die Tafel schreiben.",
+          "schwerer": "Zu jeder Stärke ein Erlebnis aus dem Jahr nennen."
+        },
+        "impulse": [
+          "Welcher Satz hat euch überrascht?",
+          "Welche Stärke nehmt ihr mit ins nächste Jahr?"
+        ],
+        "tipps": [
+          "Feste Reihenfolge vorgeben (alle rücken im Uhrzeigersinn weiter), damit niemand ausgelassen wird.",
+          "In einer Klarsichthülle mitgeben – viele heben das Blatt lange auf."
+        ],
+        "achtung": "Die Leitung liest jedes Blatt, bevor es zurückkommt. Abwertende oder zweideutige Sätze überkleben und später mit der Person klären, die sie geschrieben hat – nicht in der Gruppe.",
+        "material": "Malerkrepp, Filzstifte, Musik, Klarsichthüllen"
+      }
+    }
+  }
+]

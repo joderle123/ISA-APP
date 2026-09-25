@@ -1,0 +1,956 @@
+{
+  "einheiten": [
+    {
+      "id": "j1-e20",
+      "nr": 20,
+      "jahr": 1,
+      "modul": "j1-m5",
+      "titel": "Verbal und nonverbal",
+      "kurz": "Worte, Stimme und Körper sagen nicht immer dasselbe: Die Gruppe erlebt, wie viel ohne Worte ankommt, beschreibt Bilder nur mit Sprache und übersetzt Emojis in Sätze.",
+      "dauer": 100,
+      "ziele": [
+        "unterscheiden, was Worte, Stimme und Körper jeweils mitteilen, und nennen Beispiele für jeden Kanal",
+        "erleben im Spiel, wie viel Körpersprache verrät – und wo Worte unverzichtbar sind",
+        "beschreiben ein Bild so genau, dass jemand es nachzeichnen kann, und erfahren, wie Rückfragen das Verstehen verbessern",
+        "erklären, warum Nachrichten und Emojis leicht missverstanden werden, und nennen eine Strategie dagegen"
+      ],
+      "material": [
+        "Gefühlsrad (A3, laminiert) und Anspannungsskala 0–100 aus Einheit 11",
+        "Blatt „Meine Beweis-Challenge“ aus Einheit 19 (bringen die Jugendlichen mit)",
+        "Plakat (A1) mit drei Spalten, dicke Stifte",
+        "kleine Zettel (drei pro Person) und eine Schachtel zum Ziehen",
+        "vier Bildvorlagen aus einfachen Formen (A5, von der Leitung gezeichnet)",
+        "Papier (A4) und Bleistift für jedes Paar",
+        "fünf Emojis, groß ausgedruckt oder am Laptop",
+        "Schülerblatt „Mehr als Worte“ für jede Person",
+        "Skills-Pässe, Stempel oder Sticker",
+        "Imbiss und Getränke"
+      ],
+      "vorbereitung": [
+        "Stühle im Kreis; daneben Platz für Stuhlpaare, die mit den Lehnen aneinanderstehen",
+        "Plakat mit drei Spalten beschriften: Worte – Stimme – Körper",
+        "Vier Bildvorlagen zeichnen, jede aus vier bis sechs einfachen Formen (Beispiele im Schritt „Rücken an Rücken“)",
+        "Fünf Emojis ausdrucken oder als Folie vorbereiten: Gesicht mit Dampf aus der Nase, Augenrollen, bittender Blick mit großen Augen, Grimasse mit zusammengebissenen Zähnen, schmelzendes Gesicht"
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-beweis-challenge",
+        "skills-mehr-als-worte",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: das Gefühl erst ohne Worte zeigen"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Beweise aus der Woche, Start in Modul 5"
+        },
+        {
+          "min": "15–27",
+          "phase": "input",
+          "titel": "Worte, Stimme, Körper: Plakat und kleiner Test"
+        },
+        {
+          "min": "27–45",
+          "phase": "uebung",
+          "titel": "Begriffe erklären: mit Worten, dann ohne"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–78",
+          "phase": "aktiv",
+          "titel": "Rücken an Rücken: ein Bild beschreiben"
+        },
+        {
+          "min": "78–90",
+          "phase": "uebung",
+          "titel": "Emojis und Chat: Was fehlt ohne Körper?"
+        },
+        {
+          "min": "90–95",
+          "phase": "skill",
+          "titel": "Skill: Achtsames Hören"
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Daumenbarometer und Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: erst ohne Worte",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Gefühlsrad und Anspannungsskala in die Mitte legen. Heute zeigt jede Person ihr Gefühl zuerst drei Sekunden lang nur mit Gesicht und Haltung, dann zeigt sie auf das Wort im Rad und nennt ihre Anspannung von 0 bis 100. Die anderen raten nicht laut, sondern prüfen still für sich, ob sie das Gefühl erkannt hätten. Wer nichts vorspielen möchte, zeigt einfach auf das Rad. Die Leitung beginnt und darf ruhig ein wenig übertreiben.",
+          "sagen": [
+            "Heute fangen wir anders an: Zeigt euer Gefühl erst ohne ein Wort, nur mit Gesicht und Körper. Danach sagt ihr Wort und Zahl.",
+            "Hättet ihr es erkannt? Nicht laut raten – nur für euch."
+          ],
+          "tipp": "Nach der Runde fragen, welche Gefühle ohne Worte am leichtesten zu erkennen waren. Oft sind es Freude, Wut und Müdigkeit – das führt direkt zum Thema.",
+          "wennEsKippt": "Lacht jemand über eine Darstellung, kurz unterbrechen und an den Gruppenvertrag erinnern: Wir lachen miteinander, nicht übereinander. Wer danach nichts mehr zeigen will, nennt nur Wort und Zahl.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Brücke: Beweise aus der Woche",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "An die Beweis-Challenge aus Einheit 19 anknüpfen: Wer das Blatt dabeihat, kreuzt an, wie sehr er seinen neuen Satz nach einer Woche glaubt. Wer mag, erzählt einen Beweis in einem Satz; wer keinen gefunden hat, erzählt, was gebremst hat. Beiträge würdigen, nicht bewerten. Dann das neue Modul mit seiner Leitfrage an die Tafel schreiben: Wie sage ich, was ich fühle und brauche?",
+          "sagen": [
+            "Wer hat einen Beweis gefunden, dass sein neuer Satz stimmt? Ein Satz reicht – auch ein kleiner Beweis zählt.",
+            "Wie ich über mich denke, beeinflusst, wie ich mit anderen rede. Deshalb geht es ab heute um Kommunikation – und zwar nicht nur um Worte."
+          ],
+          "blatt": "skills-beweis-challenge"
+        },
+        {
+          "titel": "Worte, Stimme, Körper",
+          "dauer": 12,
+          "phase": "input",
+          "text": "Das Plakat mit den drei Spalten zeigen und mit der Gruppe Beispiele sammeln: Was gehört zu den Worten, was zur Stimme, was zum Körper? Dann der Test: Die Leitung sagt mit trauriger Stimme und hängenden Schultern „Mir geht’s super“ und fragt, was die Gruppe glaubt; weitere Sätze aus der Liste folgen. Den Satz von Watzlawick dazuschreiben: Man kann nicht nicht kommunizieren. Zum Schluss Aufgabe 1 auf dem Blatt „Mehr als Worte“ allein lösen und kurz vergleichen.",
+          "tabelle": {
+            "spalten": [
+              "Worte (verbal)",
+              "Stimme",
+              "Körper (nonverbal)"
+            ],
+            "zeilen": [
+              [
+                "was ich sage",
+                "laut oder leise",
+                "Gesicht (Mimik)"
+              ],
+              [
+                "welche Wörter ich wähle",
+                "schnell oder langsam",
+                "Hände (Gestik)"
+              ],
+              [
+                "ob ich frage oder befehle",
+                "Tonfall: freundlich, genervt, ironisch",
+                "Haltung und Blick"
+              ],
+              [
+                "was ich weglasse",
+                "Pausen, Seufzen, Lachen",
+                "Abstand und Berührung"
+              ]
+            ]
+          },
+          "punkte": [
+            "„Mir geht’s super.“ – traurige Stimme, hängende Schultern",
+            "„Ich bin überhaupt nicht nervös.“ – zitternde Stimme, Blick nach unten, nestelnde Finger",
+            "„Klar, mach ruhig.“ – Augenrollen, verschränkte Arme",
+            "„Schön, dich zu sehen.“ – ohne aufzuschauen, Blick aufs Handy"
+          ],
+          "sagen": [
+            "Was glaubt ihr mir – den Worten oder dem Rest?",
+            "Auch wer schweigt oder wegschaut, sagt etwas. Man kann nicht nicht kommunizieren."
+          ],
+          "tipp": "Körpersprache beschreiben, aber nie bewerten: Blickkontakt ist für manche Jugendliche anstrengend, und in manchen Familien gilt er gegenüber Erwachsenen als unhöflich.",
+          "blatt": "skills-mehr-als-worte"
+        },
+        {
+          "titel": "Begriffe erklären: mit Worten, dann ohne",
+          "dauer": 18,
+          "phase": "uebung",
+          "text": "Jede Person schreibt drei Begriffe auf je einen Zettel: einen Gegenstand, ein Tier, einen Beruf. Die Zettel kommen gefaltet in eine Schachtel. Runde 1: Reihum zieht eine Person einen Zettel und erklärt den Begriff mit Worten, ohne ihn oder Teile davon zu nennen; die anderen raten, höchstens eine Minute lang. Runde 2: Dieselben Begriffe werden nur pantomimisch dargestellt, ohne Laute und ohne auf Dinge im Raum zu zeigen. Danach kurz auswerten.",
+          "sagen": [
+            "Was war leichter – mit Worten oder ohne? Und was war lustiger?",
+            "Wo hat der Körper gereicht, und wo habt ihr die Worte vermisst?"
+          ],
+          "punkte": [
+            "Gegenstände und Berufe gehen mit Worten meist schneller.",
+            "Tätigkeiten und Gefühle erkennt man am Körper oft sofort.",
+            "Ohne Worte wird geraten – mit Worten und Rückfragen wird es genau."
+          ],
+          "tipp": "Die Leitung spielt mit. Wer ungern allein vor der Gruppe steht, spielt zu zweit; bei wenig Energie geht die Pantomime auch im Sitzen, nur mit Gesicht und Händen.",
+          "wennEsKippt": "Stehen auf Zetteln Begriffe, die jemanden bloßstellen oder anzüglich sind, den Zettel kommentarlos weglegen und neu ziehen lassen. Wird es zu albern, die Zeit auf 30 Sekunden pro Begriff verkürzen – Tempo bindet Energie."
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Gemeinsam essen und trinken, Fenster auf oder kurz nach draußen. Die Leitung isst mit, das Thema ruht."
+        },
+        {
+          "titel": "Rücken an Rücken: ein Bild beschreiben",
+          "dauer": 18,
+          "phase": "aktiv",
+          "text": "Paare bilden und je zwei Stühle mit den Lehnen aneinanderstellen, sodass man Rücken an Rücken sitzt, ohne sich zu berühren. A bekommt eine Bildvorlage, B Papier und Bleistift. Runde 1 (3 Min.): A beschreibt, B zeichnet und darf nichts fragen. Dann vergleichen. Runde 2 (3 Min.): Rollen tauschen, neue Vorlage, jetzt sind Rückfragen erlaubt. Wieder vergleichen und im Kreis auswerten, was geholfen hat.",
+          "punkte": [
+            "Vorlage 1: Quadrat mit einem Dreieck als Dach, rechts oben ein Kreis, darunter eine lange waagrechte Linie",
+            "Vorlage 2: drei Kreise nebeneinander, der mittlere größer, darunter eine Wellenlinie",
+            "Vorlage 3: großes Dreieck mit der Spitze nach unten, darin ein kleiner Kreis, links daneben ein Pfeil nach oben",
+            "Vorlage 4: zwei Rechtecke, versetzt wie Treppenstufen, oben rechts ein kleines Kreuz"
+          ],
+          "sagen": [
+            "Was hat das Verstehen leichter gemacht?",
+            "Wo passiert euch das im Alltag – eine Aufgabe, eine Nachricht, eine Wegbeschreibung, die ganz anders ankommt als gemeint?"
+          ],
+          "tipp": "Was geholfen hat, an die Tafel schreiben: erst das Ganze, dann die Teile; Vergleiche wie „sieht aus wie ein Dach“; genaue Wörter für Lage und Größe; zwischendurch nachfragen, ob alles angekommen ist.",
+          "wennEsKippt": "Wird B in Runde 1 ungeduldig, kurz stoppen und verraten, dass es ohne Rückfragen kaum klappen kann – genau darum geht es. Bei ungerader Zahl gibt es eine Dreiergruppe mit einer Person, die beobachtet; bei nur zwei Jugendlichen beschreibt die Leitung in Runde 1 für beide gleichzeitig."
+        },
+        {
+          "titel": "Emojis und Chat: Was fehlt?",
+          "dauer": 12,
+          "phase": "uebung",
+          "text": "Die fünf Emojis nacheinander zeigen. Zu jedem sagt die Gruppe in ganzen Sätzen, was jemand meinen könnte, der das schickt; zwei, drei Deutungen sammeln. Meist gehen sie weit auseinander – das ist die Erkenntnis. Dann Aufgabe 2 und 3 auf dem Blatt „Mehr als Worte“ zu zweit bearbeiten. Zum Schluss die Regeln aus der Liste gemeinsam ergänzen und an die Tafel schreiben.",
+          "sagen": [
+            "Was will jemand sagen, der mir das schickt?",
+            "Im Chat fehlen Stimme und Gesicht. Was macht euer Kopf dann aus einem „ok.“ ohne alles?"
+          ],
+          "punkte": [
+            "Im Zweifel nachfragen statt raten: „Wie meinst du das?“",
+            "Wichtiges und Streit lieber persönlich klären oder per Sprachnachricht – da hört man die Stimme.",
+            "Vor dem Senden einmal so lesen, als wäre man müde und gereizt: Wie klingt es dann?",
+            "Bei hoher Anspannung nichts abschicken: erst runterkommen, dann schreiben."
+          ],
+          "tipp": "Das Gesicht mit Dampf aus der Nase war laut seinem englischen Unicode-Namen als triumphierender Blick gedacht – die meisten lesen es als wütend. Ein gutes Beispiel dafür, dass selbst Bildzeichen nicht eindeutig sind.",
+          "wennEsKippt": "Kommt ein aktueller Streit im Klassenchat oder eine verletzende Nachricht zur Sprache, nicht in der Gruppe auswerten: anerkennen, dass das belastend ist, und ein Gespräch nach der Einheit anbieten.",
+          "blatt": "skills-mehr-als-worte"
+        },
+        {
+          "titel": "Skill: Achtsames Hören",
+          "dauer": 5,
+          "phase": "skill",
+          "text": "Alle sitzen bequem, die Augen geschlossen oder auf einen Punkt am Boden gerichtet. Eine Minute nur auf Geräusche im Raum achten, eine Minute auf Geräusche draußen, eine Minute auf das leiseste Geräusch, das zu finden ist. Danach nennt jede Person ein Geräusch. Kurz erklären: Zuhören ist ein Skill, den man trainieren kann – nächste Woche geht es genau darum.",
+          "sagen": [
+            "Was war das leiseste Geräusch, das ihr gehört habt?"
+          ]
+        },
+        {
+          "titel": "Réckbléck: Daumenbarometer und Skills-Pass",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Passend zum Thema zuerst ohne Worte: Auf drei zeigen alle gleichzeitig mit dem Daumen, wie die Einheit war – hoch, Mitte oder runter. Wer mag, sagt einen Satz dazu. Dann einen Satz in den Skills-Pass eintragen und stempeln; zwei Anregungen stehen an der Tafel.",
+          "sagen": [
+            "Daumen auf drei: eins, zwei, drei. Wer mag, sagt noch einen Satz dazu."
+          ],
+          "punkte": [
+            "Worte und Körper sollen dasselbe sagen.",
+            "Im Chat fehlt die Stimme – im Zweifel frage ich nach."
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Nächstes Mal lernt ihr einen Satz, der Streit oft verhindert: die Ich-Botschaft – und wie man so zuhört, dass sich jemand verstanden fühlt.",
+      "hintergrund": "Kommunikation läuft über mehrere Kanäle: Worte, Stimme und Körper. Watzlawick et al. (1967) prägten den Satz, dass man nicht nicht kommunizieren kann, und beschrieben, dass jede Nachricht einen Inhalts- und einen Beziehungsaspekt hat; die Beziehung wird vor allem über Stimme, Blick und Haltung vermittelt. Schulz von Thun (1981) zeigt, dass eine Nachricht immer auch etwas über die sprechende Person, die Beziehung und einen Wunsch verrät. Widersprechen sich die Kanäle, muss das Gegenüber deuten. Grundgefühle zeigen sich in ähnlichen Gesichtsausdrücken (Ekman, 1992), Blickkontakt und Abstand folgen dagegen kulturellen Regeln. Im Chat fehlen Stimme und Körper, Lesende ergänzen sie mit eigenen Deutungen. Rückfragen sind deshalb das einfachste Mittel gegen Missverständnisse – das zeigt auch die Übung „Rücken an Rücken“.",
+      "quellen": [
+        "Watzlawick, P., Beavin, J. H. & Jackson, D. D. (1967). Pragmatics of Human Communication. New York: Norton.",
+        "Schulz von Thun, F. (1981). Miteinander reden 1: Störungen und Klärungen. Reinbek: Rowohlt.",
+        "Ekman, P. (1992). An argument for basic emotions. Cognition and Emotion, 6(3–4), 169–200."
+      ],
+      "achtung": "Beim Thema Chat können ein aktueller Streit, Cybermobbing oder verletzende Nachrichten zur Sprache kommen. Nicht in der Gruppe auswerten und keine echten Chats oder Screenshots zeigen lassen, sondern ein Einzelgespräch anbieten; bei Cybermobbing auf die BEE SECURE Helpline (8002 1234) hinweisen und die zuständige Leitung (Responsable) informieren. Die Körpersprache einzelner Jugendlicher nie vor der Gruppe deuten oder bewerten. Erzählt jemand von Gewalt, Missbrauch, Selbstverletzung oder Suizidgedanken, wird das nicht in der Gruppe vertieft, sondern zeitnah im Einzelgespräch aufgegriffen und nach dem internen Schutzkonzept weitergegeben."
+    },
+    {
+      "id": "j1-e21",
+      "nr": 21,
+      "jahr": 1,
+      "modul": "j1-m5",
+      "titel": "Ich-Botschaften und Zuhören",
+      "kurz": "Aus Vorwürfen werden Ich-Botschaften: Die Gruppe lernt die Formel „Ich fühle mich …, wenn …, weil … Ich wünsche mir …“ und übt, so zuzuhören, dass sich jemand verstanden fühlt.",
+      "dauer": 100,
+      "ziele": [
+        "unterscheiden Du- und Ich-Botschaften und beschreiben, wie beide auf das Gegenüber wirken",
+        "formulieren Du-Botschaften in Ich-Botschaften um und schreiben eine Ich-Botschaft zu einer eigenen Situation",
+        "hören einer Person zwei Minuten zu, ohne zu unterbrechen, und fassen das Gehörte samt Gefühl zusammen"
+      ],
+      "material": [
+        "Gefühlsrad (A3) und Anspannungsskala 0–100",
+        "Glas der Bedürfnisse aus Einheit 4",
+        "Schülerblätter „Ich-Botschaften“ und „Richtig zuhören“ für jede Person",
+        "Tafel oder Plakat für die Formel",
+        "weicher Ball",
+        "Handy oder kleiner Lautsprecher für leise Musik (optional)",
+        "Uhr oder Handy-Timer",
+        "Skills-Pässe, Stempel oder Sticker",
+        "Imbiss und Getränke"
+      ],
+      "vorbereitung": [
+        "Die Formel groß an die Tafel oder auf ein Plakat schreiben und bis zum Input abdecken",
+        "Für die Einstiegsszene eine zweite Leitung oder vor der Einheit eine jugendliche Person fragen, ob sie beim Erzählen unterbrechen möchte",
+        "Glas der Bedürfnisse gut sichtbar hinstellen",
+        "Für die Übung im Raum eine freie Fläche schaffen, Stühle an die Wand"
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-ich-botschaften",
+        "skills-zuhoeren",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Emoji, Gefühlswort und Anspannung"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Rückblick: Worte, Stimme, Körper"
+        },
+        {
+          "min": "15–27",
+          "phase": "input",
+          "titel": "Du-Botschaft oder Ich-Botschaft?"
+        },
+        {
+          "min": "27–45",
+          "phase": "uebung",
+          "titel": "Ich-Botschaften üben"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–75",
+          "phase": "uebung",
+          "titel": "Aktives Zuhören zu zweit"
+        },
+        {
+          "min": "75–88",
+          "phase": "aktiv",
+          "titel": "Durch den Raum gehen und Ball der Gefühle"
+        },
+        {
+          "min": "88–95",
+          "phase": "skill",
+          "titel": "Skill: Partneratmung ohne Berührung"
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Réckbléck mit Ich-Satz und Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: Emoji, Wort und Zahl",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Anknüpfend an die Emojis der letzten Einheit malt jede Person reihum ein Emoji an die Tafel, das zu ihrer Stimmung passt. Dann zeigt sie auf das Wort im Gefühlsrad und nennt ihre Anspannung von 0 bis 100. Die Leitung beginnt. Wer nicht malen mag, nennt nur Wort und Zahl.",
+          "sagen": [
+            "Malt ein Emoji, das zu euch passt – und sagt das Wort vom Rad dazu. Ein Emoji allein kann man falsch lesen, das wisst ihr seit letzter Woche.",
+            "Und eure Zahl von 0 bis 100?"
+          ],
+          "tipp": "Wer über 70 liegt, bekommt ein kurzes Nicken und die Frage, ob er gerade etwas braucht. Beim Input darauf zurückkommen: Ich-Botschaften gelingen mit ruhigem Kopf – erst runter, dann reden.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Brücke: Worte, Stimme, Körper",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "Kurz an Einheit 20 erinnern: Über welche drei Kanäle läuft eine Nachricht, und wem glauben wir, wenn sie nicht zusammenpassen? Zwei, drei Antworten reichen. Dann das Thema nennen: was man sagt, wenn einen etwas stört – und wie man zuhört, wenn jemand anderes etwas loswerden will.",
+          "sagen": [
+            "Was wisst ihr noch: Wem glauben wir, wenn Worte und Körper Verschiedenes sagen?",
+            "Heute geht es um einen Satz, der Streit oft verhindert."
+          ]
+        },
+        {
+          "titel": "Du-Botschaft oder Ich-Botschaft?",
+          "dauer": 12,
+          "phase": "input",
+          "text": "Eine kurze Szene vorspielen: Die Leitung erzählt etwas und wird mehrmals unterbrochen, von einer zweiten Leitung oder der vorher gefragten Person. Zuerst reagiert sie mit „Du nervst immer.“ Dann wird die Szene wiederholt, und sie sagt: „Ich fühle mich genervt, wenn ich unterbrochen werde, weil ich dann meinen Gedanken verliere. Ich wünsche mir, dass du mich ausreden lässt.“ Die Gruppe beschreibt, wie beide Sätze wirken. Danach die Formel aufdecken und die vier Teile erklären.",
+          "sagen": [
+            "Stellt euch vor, das sagt jemand zu euch. Was wollt ihr nach dem ersten Satz tun – und was nach dem zweiten?",
+            "Hinter einem Vorwurf steckt fast immer ein Wunsch. Die Ich-Botschaft sagt den Wunsch, statt anzugreifen."
+          ],
+          "tabelle": {
+            "spalten": [
+              "Teil",
+              "Frage dazu",
+              "Beispiel"
+            ],
+            "zeilen": [
+              [
+                "Ich fühle mich …",
+                "Welches Gefühl? Das Gefühlsrad hilft.",
+                "Ich fühle mich genervt,"
+              ],
+              [
+                "wenn …",
+                "Was ist passiert – wie eine Kamera, ohne „immer“ und „nie“?",
+                "wenn ich unterbrochen werde,"
+              ],
+              [
+                "weil …",
+                "Was ist mir dabei wichtig?",
+                "weil ich dann meinen Gedanken verliere."
+              ],
+              [
+                "Ich wünsche mir …",
+                "Was genau soll anders werden?",
+                "Ich wünsche mir, dass du mich ausreden lässt."
+              ]
+            ]
+          },
+          "tipp": "Beim „weil“ auf das Glas der Bedürfnisse zeigen: Welches Bedürfnis steckt hinter dem Gefühl – Ruhe, Respekt, Fairness, Zugehörigkeit?",
+          "wennEsKippt": "Findet jemand die Formel gestelzt, zustimmen: So redet im Alltag niemand. Die Formel ist ein Übungsgerüst; später reichen oft zwei Teile, etwa „Mich stresst das. Frag bitte vorher.“"
+        },
+        {
+          "titel": "Ich-Botschaften üben",
+          "dauer": 18,
+          "phase": "uebung",
+          "text": "Das Blatt „Ich-Botschaften“ austeilen. Aufgabe 1 allein: Du- und Ich-Botschaften verbinden und in einer Ich-Botschaft die vier Teile markieren. Aufgabe 2 zu zweit: drei Du-Botschaften mit ihrer Situation in Ich-Botschaften verwandeln, einige Ergebnisse vorlesen und gemeinsam prüfen, ob noch ein Vorwurf darin steckt. Aufgabe 3 allein: eine eigene Situation – sie wird nicht vorgelesen, außer jemand möchte das.",
+          "sagen": [
+            "Lest euren Satz einmal laut. Klingt er noch nach Angriff? Dann steckt irgendwo ein „immer“ oder ein Urteil drin.",
+            "Ein Gefühl ist ein Wort wie enttäuscht oder gestresst. „Ich fühle mich, als wärst du egoistisch“ ist eine verkleidete Du-Botschaft."
+          ],
+          "tipp": "Wer mit dem Schreiben Mühe hat, braucht nur zwei Teile: Gefühl und Wunsch. Die Satzanfänge auf dem Blatt geben das Gerüst.",
+          "wennEsKippt": "Schreiben einige nur Scherzsätze wie „Ich fühle mich hungrig, wenn keine Pizza da ist“, mit Humor aufnehmen – formal stimmt der Satz oft. Dann um eine echte Alltagssituation bitten: Geschwister, Bus, Gruppenchat.",
+          "blatt": "skills-ich-botschaften"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Gemeinsam essen und trinken, Fenster auf oder kurz nach draußen. Die Leitung isst mit, das Thema ruht."
+        },
+        {
+          "titel": "Aktives Zuhören zu zweit",
+          "dauer": 15,
+          "phase": "uebung",
+          "text": "Zuerst eine kurze Negativ-Szene: Eine Person erzählt, die Leitung „hört zu“, schaut dabei aufs Handy, unterbricht und erzählt von sich. Die Gruppe sammelt, was schiefläuft; dann mit dem Blatt „Richtig zuhören“ die vier Schritte besprechen. Übung zu zweit: A erzählt zwei Minuten von etwas, das sie oder ihn am Wochenende gefreut oder geärgert hat. B hört nur zu und fasst danach zusammen, mit dem Gefühl; A bestätigt oder korrigiert. Dann Rollen tauschen und den Zuhör-Check auf dem Blatt ausfüllen.",
+          "sagen": [
+            "Du hörst nur zu – keine eigenen Geschichten, keine Tipps. Am Ende sagst du: Habe ich richtig verstanden, dass …",
+            "Wie hat es sich angefühlt, wirklich gehört zu werden?"
+          ],
+          "tipp": "Mit einem Timer arbeiten, der nach zwei Minuten klingelt. Bei ungerader Zahl entsteht eine Dreiergruppe: Die dritte Person beobachtet mit dem Zuhör-Check und gibt Rückmeldung.",
+          "wennEsKippt": "Fällt niemandem etwas ein, Themen anbieten: das beste Essen der Woche, ein nerviger Moment im Bus, eine Serie, ein Spiel. Erzählt jemand etwas Belastendes, das über das Wochenende hinausgeht, freundlich übernehmen, würdigen und ein Gespräch nach der Einheit anbieten – die zuhörende Person ist dafür nicht zuständig.",
+          "blatt": "skills-zuhoeren"
+        },
+        {
+          "titel": "Durch den Raum gehen und Ball der Gefühle",
+          "dauer": 13,
+          "phase": "aktiv",
+          "text": "Alle gehen kreuz und quer durch den Raum, gern mit leiser Musik. Auf ein Klatschen bleibt jede Person vor jemandem stehen, und die Leitung liest eine Situation vor: Die eine Person sagt eine Ich-Botschaft, die andere fasst sie in einem Satz zusammen. Nach drei, vier Runden in den Kreis: Ein weicher Ball wird von unten geworfen. Wer ihn fängt, beantwortet eine Frage oder sagt „weiter“ und wirft ihn weiter.",
+          "punkte": [
+            "Jemand nimmt ungefragt dein Handy.",
+            "Eine Freundin kommt zum dritten Mal zu spät.",
+            "Im Bus hört jemand neben dir laut Musik ohne Kopfhörer.",
+            "Dein Bruder benutzt dein Ladekabel und bringt es nicht zurück.",
+            "Jemand postet ein Foto von dir, ohne zu fragen.",
+            "In der Gruppenarbeit macht einer nichts."
+          ],
+          "sagen": [
+            "Fragen für den Ball: Was macht dich glücklich? Worüber hast du dich diese Woche gefreut?",
+            "Was ärgert dich am meisten – im Bus, in der Pause, zu Hause? Und wobei wirst du wieder ruhig?"
+          ],
+          "tipp": "Bei wenig Energie im Sitzen spielen: Auf ein Zeichen wechseln alle den Platz und sprechen mit der Person rechts neben sich.",
+          "wennEsKippt": "Werden die Ich-Botschaften zu Beleidigungen, anhalten und eine Situation einmal gemeinsam durchspielen. Wirft jemand den Ball zu hart oder gezielt, den Ball kurz übernehmen und die Regel wiederholen: von unten und so, dass man ihn fangen kann."
+        },
+        {
+          "titel": "Skill: Partneratmung ohne Berührung",
+          "dauer": 7,
+          "phase": "skill",
+          "text": "Zu zweit gegenübersitzen, etwa eine Armlänge Abstand. A führt: Beim Einatmen hebt A langsam eine Hand, beim Ausatmen senkt A sie wieder, und B atmet im selben Rhythmus mit. Nach zwei Minuten wechseln. Wer möchte, probiert es danach Rücken an Rücken – aber nur, wenn beide vorher gefragt und Ja gesagt haben. Zum Schluss fragen, wie es war, sich nach jemandem zu richten.",
+          "sagen": [
+            "Ihr redet nicht, ihr hört euch mit den Augen zu. Führt so langsam, dass die andere Person mitkommt.",
+            "Fragt vorher: Ist Rücken an Rücken okay für dich? Ein Nein ist völlig in Ordnung."
+          ],
+          "tipp": "Die Frage vor dem Rücken-an-Rücken-Atmen ist eine kleine Vorübung für die nächsten Einheiten: Wer fragt, bevor er jemandem nahekommt, achtet Grenzen."
+        },
+        {
+          "titel": "Réckbléck mit Ich-Satz und Skills-Pass",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Blitzlicht mit einer Regel: Jeder Satz beginnt mit „Ich“, etwa „Ich nehme mit …“ oder „Ich fand schwierig …“. Dann den Skills-Pass ausfüllen und stempeln. Zum Schluss einen kleinen Auftrag für die Woche geben: eine Ich-Botschaft ausprobieren, zu Hause, im Bus oder im Chat.",
+          "sagen": [
+            "Ein Satz zu heute, der mit Ich anfängt.",
+            "Probiert bis nächste Woche eine Ich-Botschaft aus. Wo, müsst ihr niemandem sagen."
+          ],
+          "punkte": [
+            "Ich fühle mich …, wenn …, weil … Ich wünsche mir …",
+            "Zusammenfassen zeigt: Ich habe wirklich zugehört."
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Nächstes Mal geht es um Grenzen: Wo fangen meine an, und woran merke ich, dass jemand sie überschreitet?",
+      "hintergrund": "Thomas Gordon (1972) beschrieb zwei Werkzeuge, die zusammengehören: die Ich-Botschaft für Momente, in denen mich etwas stört, und das aktive Zuhören für Momente, in denen die andere Person etwas bewegt. Du-Botschaften enthalten Urteile und lösen meist Verteidigung aus; Ich-Botschaften beschreiben Situation, Gefühl und Wunsch und lassen dem Gegenüber Raum. Mit dem „weil“ nimmt die hier verwendete Formel den Grund auf, den die Gewaltfreie Kommunikation Bedürfnis nennt (Rosenberg, 2001). Aktives Zuhören geht auf Rogers (1951) zurück: Wer ohne Bewertung zusammenfasst und das Gefühl benennt, zeigt Verständnis und klärt zugleich Missverständnisse. Beides gelingt nur mit ruhigem Kopf – deshalb der Bezug zur Anspannungsskala: erst runter, dann reden.",
+      "quellen": [
+        "Gordon, T. (1972). Familienkonferenz. Hamburg: Hoffmann und Campe.",
+        "Rosenberg, M. B. (2001). Gewaltfreie Kommunikation. Paderborn: Junfermann.",
+        "Rogers, C. R. (1951). Client-Centered Therapy. Boston: Houghton Mifflin."
+      ],
+      "achtung": "Ich-Botschaften sind ein Werkzeug für Alltagskonflikte, kein Schutz vor Mobbing oder Gewalt. Wird jemand wiederholt angegriffen, braucht er den Schutz Erwachsener; dann die zuständige Leitung (Responsable) informieren. Die eigene Situation auf dem Blatt wird nicht vorgelesen, außer jemand möchte das. Erzählt jemand beim Zuhören oder beim Ball der Gefühle etwas Belastendes, freundlich stoppen, würdigen und ein Einzelgespräch anbieten. Bei Hinweisen auf Gewalt, Missbrauch, Selbstverletzung oder Suizidgedanken nicht in der Gruppe vertiefen, sondern sofort nach dem internen Schutzkonzept handeln."
+    },
+    {
+      "id": "j1-e22",
+      "nr": 22,
+      "jahr": 1,
+      "modul": "j1-m5",
+      "titel": "Grenzen erkennen",
+      "kurz": "Grenzen sind unsichtbar und bei jedem anders: Die Gruppe sortiert Grenz-Situationen, spürt beim Stopp-Abstand die eigene Wohlfühl-Distanz und sammelt, wie man ohne Worte zeigt, was man will – und was nicht.",
+      "dauer": 100,
+      "ziele": [
+        "unterscheiden körperliche, emotionale und digitale Grenzen und ordnen Alltagssituationen zu",
+        "erleben beim Stopp-Abstand, dass jeder Mensch eine andere Wohlfühl-Distanz hat und dass sie sich je nach Person ändert",
+        "benennen eigene Körpersignale, an denen sie merken, dass eine Grenze erreicht ist",
+        "sammeln Möglichkeiten, Gefühle und ein Nein auch ohne Worte zu zeigen, und erkennen, wo Worte nötig sind"
+      ],
+      "material": [
+        "Gefühlsrad (A3) und Anspannungsskala 0–100",
+        "Plakat (A1) und Stifte für die Mindmap",
+        "Grenz-Karten, ausgeschnitten, je ein Satz pro Kleingruppe in einem Umschlag",
+        "Schülerblatt „Meine Grenzen“ für jede Person",
+        "Kreppband für zwei Linien, Maßband oder Zollstock",
+        "fünf Plakate (A2) mit den Stationsfragen, dicke Stifte",
+        "Blätter „Mein sicherer Ort“ aus Einheit 14 (in den Mappen)",
+        "Skills-Pässe, Stempel oder Sticker",
+        "Imbiss und Getränke"
+      ],
+      "vorbereitung": [
+        "Grenz-Karten einmal pro Kleingruppe ausschneiden und in Umschläge stecken",
+        "Einen freien Streifen von mindestens sechs Metern suchen – Raum, Flur oder Turnhalle – und zwei parallele Linien mit Kreppband kleben",
+        "Fünf Plakate beschriften, jedes geteilt in „ohne Worte“ und „mit Worten oder im Chat“, und in die Ecken hängen"
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-grenz-karten",
+        "skills-meine-grenzen",
+        "skills-sicherer-ort",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Gefühl und wo ich es im Körper spüre"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Wer hat eine Ich-Botschaft ausprobiert?"
+        },
+        {
+          "min": "15–27",
+          "phase": "input",
+          "titel": "Mindmap: Was sind Grenzen?"
+        },
+        {
+          "min": "27–38",
+          "phase": "uebung",
+          "titel": "Grenz-Karten sortieren"
+        },
+        {
+          "min": "38–45",
+          "phase": "uebung",
+          "titel": "Meine Grenzen, Seite 1"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–73",
+          "phase": "aktiv",
+          "titel": "Zwei Linien: der Stopp-Abstand"
+        },
+        {
+          "min": "73–85",
+          "phase": "aktiv",
+          "titel": "Plakat-Stationen: Wie zeige ich …?"
+        },
+        {
+          "min": "85–93",
+          "phase": "skill",
+          "titel": "Skill: Mein sicherer Ort"
+        },
+        {
+          "min": "93–100",
+          "phase": "abschluss",
+          "titel": "Réckbléck, Skills-Pass und Beobachtungsauftrag"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: das Gefühl im Körper",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Gefühlsrad und Anspannungsskala in die Mitte legen. Heute nennt jede Person zu ihrem Wort auch die Stelle im Körper, an der sie das Gefühl spürt – wie bei der Gefühls-Landkarte aus Einheit 9 –, und ihre Zahl von 0 bis 100, etwa „müde, in den Augen, 20“. Wer keine Stelle findet, sagt das; auch das ist eine Auskunft. Die Leitung beginnt.",
+          "sagen": [
+            "Wo sitzt euer Gefühl gerade – im Bauch, in der Brust, in den Schultern, im Kopf? Heute ist das wichtig, ihr werdet gleich sehen, warum."
+          ],
+          "tipp": "Die genannten Körperstellen an der Tafel mitschreiben. Sie werden beim Blatt „Meine Grenzen“ wieder gebraucht: Dort geht es darum, wie der Körper meldet, dass etwas zu viel wird.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Brücke: Ich-Botschaften im Alltag",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "Nach dem Wochenauftrag fragen: Wer hat eine Ich-Botschaft ausprobiert, und wie hat die andere Person reagiert? Zwei, drei Erfahrungen reichen, auch misslungene sind wertvoll. Dann überleiten: Viele Ich-Botschaften drehen sich darum, dass einem etwas zu nah oder zu viel wird – also um Grenzen.",
+          "sagen": [
+            "Hat es jemand ausprobiert? Auch „hat nicht geklappt“ zählt – dann schauen wir, woran es lag.",
+            "Heute geht es um Grenzen: Wo fangen meine an, und woran merke ich, dass jemand sie überschreitet?"
+          ],
+          "wennEsKippt": "Hat niemand etwas ausprobiert, nicht tadeln. Stattdessen fragen, in welcher Situation der Woche eine Ich-Botschaft gepasst hätte, und sie gemeinsam in einem Satz formulieren."
+        },
+        {
+          "titel": "Mindmap: Was sind Grenzen?",
+          "dauer": 12,
+          "phase": "input",
+          "text": "Einstieg über Landesgrenzen: Luxemburg hat drei Nachbarländer, und viele merken die Grenze kaum – bis Schilder oder Sprache wechseln. Menschen haben auch Grenzen, nur sind sie unsichtbar. „Grenzen“ in die Mitte des Plakats schreiben und drei Äste anlegen: körperlich, emotional, digital. Die Gruppe sammelt zu jedem Ast Beispiele, die Leitung ergänzt, was fehlt. Zum Schluss die Merksätze aus der Liste vorlesen und dazuschreiben.",
+          "punkte": [
+            "Körperlich: mein Körper, mein Raum, meine Sachen.",
+            "Emotional: meine Gefühle, meine Meinung, mein Privates.",
+            "Digital: meine Fotos, meine Nachrichten, mein Handy, mein Standort.",
+            "Grenzen sind unsichtbar – deshalb muss man sie zeigen.",
+            "Jeder Mensch hat andere Grenzen, und sie können sich je nach Person, Tag und Stimmung ändern.",
+            "Grenzen gelten in beide Richtungen: meine und die der anderen – online wie offline."
+          ],
+          "sagen": [
+            "Woran merkt ihr, dass ihr über eine Landesgrenze gefahren seid? Und woran merkt man bei einem Menschen, dass man zu weit gegangen ist?"
+          ],
+          "tipp": "Die Mindmap bleibt hängen; sie wird in Einheit 23 bei den Rollenspielen wieder gebraucht."
+        },
+        {
+          "titel": "Grenz-Karten sortieren",
+          "dauer": 11,
+          "phase": "uebung",
+          "text": "Zweier- oder Dreiergruppen bekommen einen Umschlag mit Grenz-Karten und legen die drei Überschriften aus. Sie sortieren die Situationen: Welche Grenze wird hier überschritten? Im Plenum strittige Karten besprechen; manche passen zu zwei Gruppen. Zu drei, vier Karten fragt die Leitung, wie es sich anfühlt, wenn das passiert. Danach eine kurze Daumen-Runde mit geschlossenen Augen: Für wen wäre die Situation klar eine Grenze?",
+          "sagen": [
+            "Welche Grenze wird hier überschritten – körperlich, emotional oder digital? Manchmal ist es mehr als eine.",
+            "Augen zu. Daumen hoch: für mich klar eine Grenze. Daumen zur Seite: kommt drauf an, wer es ist. Ich sage nur, wie es verteilt ist."
+          ],
+          "tipp": "Für die Daumen-Runde nur harmlose Karten nehmen, etwa Umarmung, Hobby oder Unterbrechen. Die Leitung nennt nur die Verteilung („vier so, zwei so“) – so wird sichtbar, dass Grenzen verschieden sind, ohne dass jemand sich zeigen muss.",
+          "wennEsKippt": "Wird über eine Karte gelacht oder etwas verharmlost („ist doch nur Spaß“), die Frage umdrehen: Wie wäre es, wenn das mit deinem Foto oder deinem Handy passiert? Reagiert jemand bei einer Karte sichtbar betroffen, nicht nachfragen, sondern weitermachen und nach der Einheit ein Gespräch anbieten.",
+          "blatt": "skills-grenz-karten"
+        },
+        {
+          "titel": "Meine Grenzen, Seite 1",
+          "dauer": 7,
+          "phase": "uebung",
+          "text": "Jede Person füllt allein Seite 1 des Blatts „Meine Grenzen“ aus: je ein Beispiel für eine körperliche, emotionale und digitale Grenze und die eigenen Warnsignale in der Ampel. Das Blatt ist privat und wird nicht eingesammelt; Seite 2 folgt nach der Übung „Zwei Linien“. Die Leitung geht herum und hilft mit Fragen, nicht mit Antworten.",
+          "sagen": [
+            "Das Blatt gehört euch. Niemand muss es zeigen.",
+            "Wie merkt ihr, dass es euch zu viel wird – noch bevor ihr etwas sagt? Denkt an den Check-in."
+          ],
+          "wennEsKippt": "Fällt jemandem gar nichts ein, die Grenz-Karten danebenlegen: Welche Karte wäre für dich am unangenehmsten? Die darf abgeschrieben werden.",
+          "blatt": "skills-meine-grenzen"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Gemeinsam essen und trinken, Fenster auf oder kurz nach draußen. Die Leitung isst mit, das Thema ruht."
+        },
+        {
+          "titel": "Zwei Linien: der Stopp-Abstand",
+          "dauer": 13,
+          "phase": "aktiv",
+          "text": "Zwei Reihen stellen sich auf den Linien gegenüber, etwa sechs Meter auseinander. Vorher die Regeln klar sagen: Die gehende Reihe geht langsam und schweigend auf ihr Gegenüber zu; wer steht, sagt „Stopp“, sobald es zu nah wird, und wer Stopp hört, bleibt sofort stehen. Niemand berührt jemanden. Den Abstand messen oder in Fußlängen schätzen, dann Rollen tauschen. In einer zweiten Runde die Partner wechseln oder mit Blick auf den Boden gehen lassen. Danach füllt jede Person Seite 2 des Blatts aus, die Nähe-Kreise.",
+          "sagen": [
+            "Wer Stopp hört, bleibt stehen. Sofort und ohne Diskussion. Das ist heute die wichtigste Regel.",
+            "War euer Abstand bei allen gleich? Hat er sich verändert, als ihr die Person gewechselt habt? Bitte ohne Namen antworten."
+          ],
+          "tipp": "Wer nicht mitgehen möchte, übernimmt das Messen und schreibt die Abstände ohne Namen an die Tafel. Die Unterschiede in Zentimetern zeigen, dass es keinen „richtigen“ Abstand gibt.",
+          "wennEsKippt": "Rennt jemand los, bleibt nicht stehen oder macht Faxen, sofort abbrechen, die Regel wiederholen und die Person in der nächsten Runde messen lassen. Bei nur zwei Jugendlichen geht die Leitung zuerst auf beide zu, dann gehen beide auf die Leitung zu.",
+          "blatt": "skills-meine-grenzen"
+        },
+        {
+          "titel": "Plakat-Stationen: Wie zeige ich …?",
+          "dauer": 12,
+          "phase": "aktiv",
+          "text": "In den Ecken hängen fünf Plakate, jedes geteilt in „ohne Worte“ und „mit Worten oder im Chat“. Alle gehen schweigend herum und schreiben oder zeichnen Ideen, etwa fünf Minuten lang. Danach die Plakate gemeinsam anschauen, besonders das letzte: Wie zeige ich klar, dass ich etwas nicht will? Herausarbeiten, dass Zeichen ohne Worte leicht missverstanden werden und ein klares Nein Worte und Körper zusammen braucht.",
+          "punkte": [
+            "Wie zeige ich, dass ich jemanden sehr mag?",
+            "Wie zeige ich, dass ich wütend bin?",
+            "Wie zeige ich, dass ich gekränkt bin?",
+            "Wie zeige ich, dass ich verliebt bin?",
+            "Wie zeige ich, dass ich nichts von jemandem will?"
+          ],
+          "sagen": [
+            "Schaut euch das letzte Plakat an: Was davon würde jemand sicher verstehen – und was könnte man auch falsch lesen?",
+            "Wegschauen, nicht antworten, verlegen lächeln: Das kann alles Mögliche heißen. Ein klares Nein braucht Worte und Körper zusammen. Genau das üben wir nächstes Mal."
+          ],
+          "tipp": "Beim Plakat „verliebt“ wird oft gekichert. Das darf sein; Beiträge mit Namen oder Anspielungen auf Personen im Raum werden nicht vorgelesen.",
+          "wennEsKippt": "Steht auf einem Plakat etwas Verletzendes oder Anzügliches, es kommentarlos abdecken und später unter vier Augen ansprechen. Kommt wenig, schreibt die Leitung selbst zwei Beispiele als Anstoß."
+        },
+        {
+          "titel": "Skill: Mein sicherer Ort",
+          "dauer": 8,
+          "phase": "skill",
+          "text": "Die Gruppe kennt die Vorstellungsübung aus Einheit 14; wer sein Blatt „Mein sicherer Ort“ in der Mappe hat, schaut kurz auf sein Stichwort. Die Übung langsam und mit Pausen anleiten, die Stichworte stehen in der Liste. Vorher sagen: Wer die Augen nicht schließen möchte, schaut auf einen Punkt am Boden, und wer aussteigen möchte, öffnet die Augen und sitzt still weiter. Danach nicht auswerten, nur fragen, wie es jetzt geht. Der Bezug zum Thema: An diesem Ort bestimmt jede Person selbst, wer dazukommen darf.",
+          "punkte": [
+            "Setz dich bequem hin. Schließ die Augen oder schau auf einen Punkt am Boden. Atme ein paarmal langsam aus.",
+            "Stell dir einen Ort vor, an dem du dich sicher und wohl fühlst – einen echten oder einen ausgedachten.",
+            "Schau dich um: Was siehst du, was hörst du, wie riecht es, wie warm ist es?",
+            "Such dir dort einen Platz. Hier bestimmst du, wer dazukommen darf – oder ob du allein bist.",
+            "Merk dir, wie es sich hier anfühlt. In Gedanken kannst du jederzeit zurückkommen.",
+            "Spür wieder den Stuhl und den Boden, beweg Finger und Zehen und öffne langsam die Augen."
+          ],
+          "sagen": [
+            "Ihr entscheidet, wie euer Ort aussieht und wer dort sein darf. Niemand muss erzählen, was er gesehen hat."
+          ],
+          "tipp": "Bei großer Unruhe reicht die kurze Fassung: nur der erste, der vierte und der letzte Satz der Liste.",
+          "wennEsKippt": "Wird jemand bei der Übung sichtbar unruhig oder traurig, die Übung ruhig zu Ende führen, der Person danach Zeit lassen und später ein Gespräch anbieten. Niemand wird gedrängt, die Augen zu schließen.",
+          "blatt": "skills-sicherer-ort"
+        },
+        {
+          "titel": "Réckbléck, Skills-Pass und Beobachtungsauftrag",
+          "dauer": 7,
+          "phase": "abschluss",
+          "text": "Réckbléck mit der Frage: Was hat mir heute gefallen, was nicht? Jede Person antwortet in einem Satz oder sagt „weiter“. Dann den Skills-Pass ausfüllen und stempeln. Zum Schluss einen Beobachtungsauftrag geben: in der kommenden Woche bewusst wahrnehmen, wann der Körper „zu nah“ oder „zu viel“ meldet – nur beobachten, nichts aufschreiben.",
+          "sagen": [
+            "Achtet diese Woche einmal darauf: Wann sagt euer Körper „zu nah“ oder „zu viel“? Nur beobachten. Nächstes Mal fragen wir kurz danach."
+          ],
+          "punkte": [
+            "Mein Körper merkt zuerst, wenn mir etwas zu nah wird.",
+            "Grenzen sind verschieden – und alle zählen."
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Nächstes Mal übt ihr, eine Grenze so zu setzen, dass sie ankommt: mit einem klaren Stopp.",
+      "hintergrund": "Grenzen schützen, was zu einer Person gehört: Körper und Raum, Gefühle und Privates – und zunehmend auch Fotos, Nachrichten und Daten. Hall (1966) beschrieb Distanzzonen, die Menschen je nach Beziehung einhalten: intim bis etwa 45 cm, persönlich bis etwa 1,2 m, sozial bis etwa 3,6 m, dahinter öffentlich. Die Werte schwanken mit Kultur, Situation und Stimmung – die Übung „Zwei Linien“ macht das sichtbar. Dass eine Grenze erreicht ist, meldet oft zuerst der Körper, denn Gefühle gehen mit typischen Körperempfindungen einher (Nummenmaa et al., 2014). Wer diese Signale kennt, kann früher reagieren. Für das Digitale gilt eine klare Regel: Fotos und private Nachrichten anderer werden nur mit deren Einverständnis weitergegeben (BEE SECURE).",
+      "quellen": [
+        "Hall, E. T. (1966). The Hidden Dimension. Garden City, NY: Doubleday.",
+        "Nummenmaa, L., Glerean, E., Hari, R. & Hietanen, J. K. (2014). Bodily maps of emotions. Proceedings of the National Academy of Sciences, 111(2), 646–651.",
+        "BEE SECURE – Initiative der luxemburgischen Regierung für ein sichereres Internet: www.bee-secure.lu"
+      ],
+      "achtung": "Grenzen berühren Erfahrungen, die manche Jugendliche nicht teilen möchten oder können. Für alle Übungen gilt das Stopp-Recht: Wer nicht mitmachen will, beobachtet oder misst. Niemand wird angefasst, und wer näherkommt, bleibt beim ersten Stopp stehen. Erzählt jemand von Übergriffen, Gewalt, Missbrauch oder verbreiteten Bildern: ruhig zuhören, nicht in der Gruppe nachfragen oder vertiefen, keine Geheimhaltung versprechen und zeitnah ein Einzelgespräch führen. Bei Hinweisen auf Gefährdung sofort nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) informieren. Auf stille Signale achten: Wer bei einer Karte erstarrt, den Raum verlässt oder plötzlich albern wird, bekommt nach der Einheit ein Gesprächsangebot."
+    },
+    {
+      "id": "j1-e23",
+      "nr": 23,
+      "jahr": 1,
+      "modul": "j1-m5",
+      "titel": "Grenzen setzen: Stopp!",
+      "kurz": "Ein Stopp wirkt, wenn Worte, Stimme und Körper dasselbe sagen: Die Gruppe vergleicht drei Arten, Stopp zu sagen, verteidigt ihren „Garten“ und setzt in Rollenspielen Grenzen mit Ich-Botschaft und Körper.",
+      "dauer": 100,
+      "ziele": [
+        "beschreiben, was eine Grenze klar macht: Haltung, Blick, Hand, Stimme und kurze Worte ohne Lächeln",
+        "üben ein deutliches Stopp mit Stimme und Körper und steigern die Lautstärke im eigenen Tempo",
+        "setzen in Rollenspielen Grenzen mit Ich-Botschaft und Körper, auch wenn das Gegenüber nachhakt",
+        "notieren einen eigenen Stopp-Satz und eine Situation, in der sie ihn brauchen können"
+      ],
+      "material": [
+        "Gefühlsrad (A3) und Anspannungsskala 0–100",
+        "Plakat „Wie zeige ich, dass ich nichts von jemandem will?“ und Mindmap „Grenzen“ aus Einheit 22",
+        "Seile (etwa 5 m pro Person) oder Straßenkreide für die Gärten",
+        "Grenz-Karten aus Einheit 22",
+        "vier Stationsschilder: Mein Körper, Meine Sachen, Mein Privates, Mein Handy",
+        "Schülerblatt „Mein Stopp“ für jede Person",
+        "Skills-Pässe, Stempel oder Sticker",
+        "Imbiss und Getränke"
+      ],
+      "vorbereitung": [
+        "Plakat und Mindmap aus Einheit 22 aufhängen",
+        "Platz für die Garten-Übung schaffen: für jede Person ein Kreis von etwa anderthalb Metern Durchmesser; bei gutem Wetter draußen mit Kreide",
+        "Grenz-Karten auf vier Stationen verteilen: körperliche Karten zu „Mein Körper“ und „Meine Sachen“, emotionale zu „Mein Privates“, digitale zu „Mein Handy“",
+        "Die drei Stopps einmal für sich laut üben, besonders den Wechsel zwischen Lächeln und ernstem Gesicht"
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-stopp",
+        "skills-grenz-karten",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Wo war es diese Woche zu nah?"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Rückblick: Wie zeige ich klar Nein?"
+        },
+        {
+          "min": "15–25",
+          "phase": "input",
+          "titel": "Was macht eine Grenze klar?"
+        },
+        {
+          "min": "25–45",
+          "phase": "uebung",
+          "titel": "Die drei Stopps"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–72",
+          "phase": "aktiv",
+          "titel": "Die Garten-Übung"
+        },
+        {
+          "min": "72–88",
+          "phase": "aktiv",
+          "titel": "Rollenspiel-Stationen und Stopp-Sätze"
+        },
+        {
+          "min": "88–95",
+          "phase": "skill",
+          "titel": "Skill: Fester Stand"
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Stopp-Satz-Runde und Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: Wo war es zu nah?",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Gefühlsrad und Anspannungsskala wie gewohnt: Wort und Zahl. Dann an den Beobachtungsauftrag anknüpfen: Wer mag, erzählt in einem Satz, wann sein Körper diese Woche „zu nah“ oder „zu viel“ gemeldet hat – ohne Namen und ohne Einzelheiten. Beiträge würdigen, nicht vertiefen.",
+          "sagen": [
+            "Wo hat euer Körper diese Woche Stopp gesagt, bevor ihr es gesagt habt? Ein Satz, ohne Namen."
+          ],
+          "wennEsKippt": "Erzählt jemand von einer Situation, die nach Übergriff, Gewalt oder Bedrohung klingt, freundlich unterbrechen: „Danke, dass du das sagst. Darüber möchte ich nachher in Ruhe mit dir reden.“ Dann weitermachen und das Gespräch direkt nach der Einheit führen; bei Hinweisen auf Gefährdung nach dem internen Schutzkonzept handeln.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Brücke: Wie zeige ich klar Nein?",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "Das Plakat „Wie zeige ich, dass ich nichts von jemandem will?“ aus Einheit 22 noch einmal anschauen. Die Gruppe benennt, welche Zeichen man leicht missverstehen kann und welche eindeutig sind. Dann das Ziel der Einheit nennen: eine Grenze so setzen, dass sie ankommt.",
+          "sagen": [
+            "Letztes Mal habt ihr gesagt: Wegschauen oder nicht antworten kann alles heißen. Heute üben wir die Version, die man nicht missverstehen kann."
+          ]
+        },
+        {
+          "titel": "Was macht eine Grenze klar?",
+          "dauer": 10,
+          "phase": "input",
+          "text": "An der Tafel drei Spalten anlegen – Körper, Stimme, Worte – und gemeinsam sammeln, was ein Stopp klar macht; die Leitung ergänzt, was fehlt. Den Kern unterstreichen: Worte und Körper müssen dasselbe sagen. Das knüpft an Einheit 20 an: Passt beides nicht zusammen, glauben die meisten dem Körper. Zum Schluss offen ansprechen, dass ein Stopp in einer echten Gefahr nicht immer gelingt – und dass dann niemand schuld ist außer der Person, die die Grenze überschreitet.",
+          "tabelle": {
+            "spalten": [
+              "Körper",
+              "Stimme",
+              "Worte"
+            ],
+            "zeilen": [
+              [
+                "gerade stehen, beide Füße am Boden",
+                "laut und ruhig",
+                "„Stopp.“ oder „Nein.“"
+              ],
+              [
+                "Blick zur Person (die Stirn reicht)",
+                "fest statt piepsig",
+                "kurz sagen, was ich nicht will"
+              ],
+              [
+                "Hand heben",
+                "nicht fragend, nicht lachend",
+                "keine Entschuldigung"
+              ],
+              [
+                "einen Schritt zurück",
+                "wenn nötig wiederholen",
+                "Ich-Botschaft: „Ich will das nicht.“"
+              ]
+            ]
+          },
+          "sagen": [
+            "Stellt euch vor, jemand sagt Stopp und lächelt dabei. Welcher Teil gewinnt?",
+            "Und wenn es in einer echten Situation nicht klappt, weil man erstarrt oder keinen Ton herausbringt: Das passiert vielen. Dann ist man nicht schuld – schuld ist, wer die Grenze überschreitet."
+          ]
+        },
+        {
+          "titel": "Die drei Stopps",
+          "dauer": 20,
+          "phase": "uebung",
+          "text": "Die Leitung zeigt drei Arten, Stopp zu sagen, jeweils zu einer gedachten Person: leise mit Lächeln, laut mit Grinsen, laut und klar ohne Grinsen mit gehobener Hand, gerader Haltung und Blick. Die Gruppe zeigt nach jeder Variante mit den Fingern von 0 bis 10, wie ernst sie das Stopp nehmen würde. Danach Aufgabe 1 auf dem Blatt „Mein Stopp“. Dann üben alle Variante 3 zu zweit: B geht langsam auf A zu, A stoppt. Wer sich schwertut, beginnt leise und wird von Runde zu Runde lauter. Zum Schluss mit Aufgabe 2 ankreuzen, was schon gelingt.",
+          "sagen": [
+            "Zeigt mit den Fingern: Wie ernst nehmt ihr dieses Stopp, von 0 bis 10?",
+            "Probiert es so leise, wie es für euch geht – und dann eine Stufe lauter. Ihr bestimmt das Tempo."
+          ],
+          "tipp": "Das Lachen beim Stoppsagen ist meist Verlegenheit, kein fehlender Ernst. Das offen ansprechen: Viele lächeln, weil sie niemanden verletzen wollen – und genau deshalb wird ihr Stopp überhört.",
+          "wennEsKippt": "Wird das Üben zum Brüllwettbewerb, eine Regel einführen: laut, aber ruhig – so, dass die Person es hört, nicht der ganze Flur. Wer nicht vor anderen üben möchte, übt mit der Leitung in einer Ecke oder zuerst nur mit der Hand.",
+          "blatt": "skills-stopp"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Gemeinsam essen und trinken, Fenster auf oder kurz nach draußen. Die Leitung isst mit, das Thema ruht."
+        },
+        {
+          "titel": "Die Garten-Übung",
+          "dauer": 12,
+          "phase": "aktiv",
+          "text": "Jede Person legt mit einem Seil oder mit Kreide einen Garten um sich – so groß, wie es sich für sie richtig anfühlt. Nacheinander steht immer eine Person in ihrem Garten, die anderen versuchen langsam und ohne Körpereinsatz hineinzukommen – mit Worten, Tricks und Freundlichkeit. Die Gartenperson setzt die Grenze klar mit Worten und Körper. Ein klares Stopp gilt sofort; im Zweifel entscheidet die Leitung. Nach jeder Runde sagen die Besucher, was sie gestoppt hat.",
+          "sagen": [
+            "Ihr kommt nur mit Worten und Schritten, niemand fasst jemanden an. Bei einem klaren Stopp bleibt ihr stehen.",
+            "Was hat euch gestoppt – die Worte, die Stimme oder der Blick?"
+          ],
+          "tipp": "Die Besucher dürfen es der Gartenperson schwer machen, etwa mit „Ich will doch nur kurz …“ oder „Wir sind doch Freunde“. So wird geübt, was im Alltag am schwersten ist: ein Nein zu netten Menschen.",
+          "wennEsKippt": "Übergeht jemand ein klares Stopp oder drängelt, sofort abbrechen und fragen, was die Person gerade gehört hat. Wer nicht in den Garten möchte, entscheidet als Schiedsrichter, ob ein Stopp klar war. Bei nur zwei Jugendlichen spielt die Leitung den Besuch."
+        },
+        {
+          "titel": "Rollenspiel-Stationen und Stopp-Sätze",
+          "dauer": 16,
+          "phase": "aktiv",
+          "text": "An vier Stationen liegen Grenz-Karten aus Einheit 22. Paare ziehen an jeder Station eine Karte und spielen sie zweimal, in jeder Rolle einmal, zusammen etwa drei Minuten: A spielt die Person, die die Grenze überschreitet, und hakt einmal nach; B setzt die Grenze mit Ich-Botschaft und Körper. Dann weiterziehen; reicht die Zeit nicht, genügen drei Stationen. Danach die Rollen abschütteln: Hände ausschütteln und den eigenen Namen sagen. Zum Schluss auf dem Blatt „Mein Stopp“ Sätze ankreuzen, das Gespräch mit Luca schreiben und den eigenen Stopp-Satz notieren.",
+          "punkte": [
+            "„Ich möchte das nicht.“",
+            "„Bitte fass mich nicht an.“",
+            "„Das ist für mich ein sensibles Thema.“",
+            "„Danke, aber das passt für mich gerade nicht.“",
+            "„Lösch das Foto bitte. Ich will das nicht online sehen.“",
+            "Dazu: einen Schritt zurück, Hand heben, Blick zur Person."
+          ],
+          "sagen": [
+            "A hakt einmal nach, zum Beispiel: Stell dich nicht so an. B bleibt dabei, ruhig und klar. Nach dem zweiten Stopp ist Schluss.",
+            "Nach dem Spiel schüttelt ihr die Rolle ab – so ist hier niemand wirklich."
+          ],
+          "tipp": "An der Station „Mein Handy“ gehört zum klaren Stopp auch das Handeln: Screenshot machen, blockieren, melden und einer erwachsenen Person Bescheid sagen. Das auf das Stationsschild schreiben.",
+          "wennEsKippt": "Spielt jemand die übergriffige Rolle zu echt oder wird körperlich, sofort stoppen: In diesen Rollenspielen gibt es nur Worte, Abstand und ein einziges Nachhaken. Bei wenig Energie die Stationen im Sitzen spielen; bei nur zwei Jugendlichen übernimmt die Leitung die Rolle A.",
+          "blatt": "skills-grenz-karten"
+        },
+        {
+          "titel": "Skill: Fester Stand",
+          "dauer": 7,
+          "phase": "skill",
+          "text": "Alle stehen, die Füße hüftbreit, die Knie locker. Langsam anleiten: das Gewicht auf beiden Füßen spüren; sich vorstellen, dass Wurzeln in den Boden wachsen wie beim Baum der Stärke; den Rücken aufrichten, die Schultern sinken lassen, dreimal langsam ausatmen. Zum Schluss leise, aber fest sagen: „Ich stehe hier.“ Erklären: Diese Haltung ist der Boden für jedes klare Stopp, und sie beruhigt nach einer aufregenden Übung.",
+          "sagen": [
+            "Spürt eure Füße. Das ist euer Platz, niemand schiebt euch weg.",
+            "Wer mag, sagt leise: Ich stehe hier."
+          ],
+          "tipp": "Den festen Stand vor schwierigen Momenten nutzen – im Bus, vor der Klassentür, bevor man Nein sagt. Er dauert zehn Sekunden und fällt niemandem auf."
+        },
+        {
+          "titel": "Stopp-Satz-Runde und Skills-Pass",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Réckbléck als Ritual: Wer mag, sagt reihum seinen Stopp-Satz laut und klar in die Runde, und die Gruppe antwortet gemeinsam: „Okay.“ So übt die Gruppe zum Schluss auch die andere Seite – ein Nein annehmen, ohne zu diskutieren. Wer nicht mag, sagt „weiter“. Dann den Skills-Pass ausfüllen und stempeln.",
+          "sagen": [
+            "Sagt euren Satz so, wie ihr ihn meint. Und wir antworten alle: Okay."
+          ],
+          "punkte": [
+            "Ein klares Stopp: Hand hoch, Blick, feste Stimme, kein Lächeln.",
+            "Wer Stopp hört, hört auf."
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Ihr wisst jetzt, wie man Grenzen setzt – ab nächster Woche geht es darum, was ihr tut, wenn andere Druck machen oder es richtig kracht.",
+      "hintergrund": "Eine Grenze wirkt, wenn Worte, Stimme und Körper dasselbe sagen. Nach Watzlawick et al. (1967) bestimmt die Beziehungsebene, wie ein Inhalt verstanden wird: Ein Lächeln beim Stopp sagt „nicht so ernst gemeint“ und schwächt die Botschaft, auch wenn es meist nur Verlegenheit ist. Das Skillstraining der Dialektisch-Behavioralen Therapie für Jugendliche übt, ein Anliegen klar zu sagen, bei Bedarf zu wiederholen und dabei selbstsicher aufzutreten – mit aufrechter Haltung, Blickkontakt und fester Stimme (Rathus & Miller, 2015). Rollenspiele sind dabei keine Spielerei: Wer ein Verhalten mehrmals erfolgreich ausprobiert, traut es sich im Ernstfall eher zu (Bandura, 1977). Ebenso wichtig ist die Gegenseite, ein Nein anzunehmen. Ein Stopp ist kein Schutz vor Gewalt: Wer in einer bedrohlichen Situation erstarrt, trägt keine Schuld.",
+      "quellen": [
+        "Watzlawick, P., Beavin, J. H. & Jackson, D. D. (1967). Pragmatics of Human Communication. New York: Norton.",
+        "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford.",
+        "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215."
+      ],
+      "achtung": "Rollenspiele zu Grenzverletzungen können Erinnerungen wecken. Für alle Übungen gilt das Stopp-Recht: Wer nicht mitspielen möchte, beobachtet oder entscheidet als Schiedsrichter, ob ein Stopp klar war. Niemand wird angefasst; es gibt nur Worte, Abstand und ein einziges Nachhaken, und die übergriffige Rolle ist nie eine reale Person aus der Gruppe. Den Jugendlichen ausdrücklich sagen: Wer in einer echten Situation erstarrt und nichts sagen konnte, ist nicht schuld. Erzählt jemand von Übergriffen, Gewalt, Missbrauch, Erpressung oder verbreiteten Bildern: nicht in der Gruppe vertiefen, keine Geheimhaltung versprechen, zeitnah ein Einzelgespräch führen und bei Hinweisen auf Gefährdung sofort nach dem internen Schutzkonzept handeln; die zuständige Leitung (Responsable) informieren."
+    }
+  ]
+}

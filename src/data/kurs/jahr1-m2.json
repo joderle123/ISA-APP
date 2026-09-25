@@ -1,0 +1,879 @@
+{
+  "einheiten": [
+    {
+      "id": "j1-e07",
+      "nr": 7,
+      "jahr": 1,
+      "modul": "j1-m2",
+      "titel": "Was sind Gefühle – und wozu sind sie gut?",
+      "kurz": "Die Gruppe sammelt, welche Gefühle sie kennt, ordnet sie sechs Grundgefühlen zu und entdeckt, dass jedes Gefühl eine Botschaft hat – auch die unangenehmen.",
+      "dauer": 100,
+      "ziele": [
+        "benennen sechs Grundgefühle und ordnen ihnen weitere Gefühlswörter zu",
+        "erklären an Beispielen, welche Botschaft ein Gefühl hat und wozu auch unangenehme Gefühle gut sind",
+        "erkennen Gefühle an Gesicht und Haltung und stellen sie ohne Worte dar",
+        "üben, mit allen Sinnen im Hier und Jetzt anzukommen"
+      ],
+      "material": [
+        "Gefühlsrad in A3 (laminiert)",
+        "Glas der Bedürfnisse aus Einheit 4",
+        "Plakat (A1) und dicke Stifte in sechs Farben",
+        "Schülerblatt „Wozu sind Gefühle gut?“ je Person",
+        "Gefühlskarten, ausgeschnitten (Blatt „Gefühlskarten“, Seite 1 und 2)",
+        "Dixit-Karten oder etwa 30 Postkarten und Fotos",
+        "Skills-Pässe, Stempel",
+        "Imbiss und Getränke"
+      ],
+      "vorbereitung": [
+        "Stühle im Kreis, in der Mitte Platz für das Plakat",
+        "Gefühlskarten ausschneiden; die Karten von Seite 2 getrennt halten",
+        "An der Tafel die Tabelle „Gefühl – Botschaft – Was es uns tun lässt“ vorbereiten: die ersten beiden Spalten ausfüllen und abdecken, die dritte leer lassen",
+        "Für den Spaziergang eine ruhige Runde von etwa zehn Minuten in Sichtweite festlegen, bei Regen einen Weg durchs Schulhaus"
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-gefuehle-botschaften",
+        "skills-gefuehlskarten",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: das genauere Wort aus dem äußeren Ring"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Vom Glas der Bedürfnisse zu den Gefühlen"
+        },
+        {
+          "min": "15–30",
+          "phase": "uebung",
+          "titel": "Mindmap: Welche Gefühle kennt ihr?"
+        },
+        {
+          "min": "30–45",
+          "phase": "input",
+          "titel": "Wozu sind Gefühle gut?"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–80",
+          "phase": "aktiv",
+          "titel": "Gefühle-Pantomime"
+        },
+        {
+          "min": "80–92",
+          "phase": "skill",
+          "titel": "Skill: Spaziergang mit allen Sinnen"
+        },
+        {
+          "min": "92–100",
+          "phase": "abschluss",
+          "titel": "Réckbléck mit Bildkarten und Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: das genauere Wort",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Stühle im Kreis, das Gefühlsrad in A3 liegt in der Mitte. Heute gilt eine Zusatzregel: Jede Person wählt ein Wort aus dem äußeren Ring, nicht aus der Mitte, und sagt einen Satz dazu. Die Leitung beginnt und zeigt, dass ein genaues Wort mehr verrät als „gut“ oder „schlecht“. Wer kein passendes Wort findet, darf eines aus der Mitte nehmen.",
+          "sagen": [
+            "Heute bitte nicht nur „fröhlich“ oder „traurig“ – such dir ein Wort von außen, das es genauer trifft.",
+            "Ich nehme „gereizt“: Der Bus war voll, und ich bin noch nicht ganz angekommen."
+          ],
+          "tipp": "Wer zwei Wörter passend findet, darf beide nennen – das ist eine kleine Vorschau auf Einheit 10.",
+          "wennEsKippt": "Sagt jemand „keine Ahnung“, das Rad in die Hand geben und fragen, welches Wort gar nicht passt; über das Ausschließen fällt die Wahl oft leichter. Wer nichts sagen möchte, zeigt nur auf ein Wort.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Vom Glas der Bedürfnisse zu den Gefühlen",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "Das Glas der Bedürfnisse aus Einheit 4 in die Mitte stellen und kurz an den Baum der Stärke aus Einheit 6 erinnern. Dann den Übergang erklären: Wenn ein Bedürfnis leer ist, meldet sich ein Gefühl. Zwei Beispiele nennen und das Thema der nächsten vier Einheiten ankündigen: Gefühle verstehen – nicht wegmachen.",
+          "sagen": [
+            "Wer zu wenig geschlafen hat, ist schneller gereizt. Wer sich ausgeschlossen fühlt, wird traurig oder wütend. Das Gefühl zeigt: Hier ist ein Tank leer.",
+            "In den nächsten vier Wochen geht es darum, eure Gefühle besser zu verstehen. Nicht darum, sie loszuwerden."
+          ]
+        },
+        {
+          "titel": "Mindmap: Welche Gefühle kennt ihr?",
+          "dauer": 15,
+          "phase": "uebung",
+          "text": "„Gefühle“ in die Mitte des Plakats schreiben. Die Gruppe ruft Gefühle zu, die Leitung schreibt mit; zu jedem Gefühl nennt jemand eine Situation, in der man sich so fühlt. Fehlen wichtige Wörter, ergänzt die Leitung sie mit einer Situation aus der Liste. Nach etwa sieben Minuten die sechs Grundgefühle in sechs Farben an den Rand schreiben: Freude, Traurigkeit, Angst, Wut, Ekel, Überraschung. Dann gemeinsam jedes Wort mit der passenden Farbe umkreisen; passt ein Wort zu zwei Grundgefühlen, bekommt es zwei Kreise.",
+          "sagen": [
+            "Welche Gefühle kennt ihr? Alles zählt, auch Wörter aus der Jugendsprache.",
+            "Wann fühlt man sich so – im Bus, in der Pause, beim Zocken, zu Hause?",
+            "Zu welchem Grundgefühl gehört „genervt“? Und wohin kommt „erleichtert“?"
+          ],
+          "punkte": [
+            "Stolz – nach dem Tor in der letzten Minute",
+            "Scham – wenn alle sehen, wie man im Flur stolpert",
+            "Neid – wenn der Sitznachbar das neue Handy auspackt",
+            "Eifersucht – wenn die beste Freundin plötzlich nur noch mit einer anderen abhängt",
+            "Erleichterung – wenn der Test doch erst nächste Woche ist",
+            "Enttäuschung – wenn ein Treffen kurzfristig abgesagt wird",
+            "Einsamkeit – wenn in der Pause alle in Gruppen stehen"
+          ],
+          "tipp": "Wörter mit zwei Kreisen stehen lassen, statt sie aufzulösen: Sie zeigen, dass sich Gefühle mischen – darauf kommt Einheit 10 zurück.",
+          "wennEsKippt": "Kommen nur wenige Wörter, die Gefühlskarten verdeckt austeilen: Jede Person liest ihre Karte vor und legt sie aufs Plakat. Werden Wörter albern oder beleidigend, ruhig nachfragen, welches Gefühl dahintersteckt – hinter „cringe“ steckt zum Beispiel oft Fremdscham."
+        },
+        {
+          "titel": "Wozu sind Gefühle gut?",
+          "dauer": 15,
+          "phase": "input",
+          "text": "Fragen, ob wir ohne Gefühle besser dran wären, zwei, drei Meinungen hören und nicht auflösen. Dann das Schülerblatt austeilen: Aufgabe 1 zu zweit, danach die Botschaften gemeinsam an der Tafel aufdecken und die dritte Spalte mit der Gruppe füllen. Aufgabe 2 und 3 bearbeitet jede Person für sich; die Tabelle wird nicht vorgelesen. Zum Schluss den Merksatz groß unter das Tafelbild schreiben.",
+          "sagen": [
+            "Stellt euch vor, ihr hättet nie wieder Angst. Klingt gut – oder?",
+            "Welches Gefühl wärt ihr am liebsten los? Und was würde euch dann fehlen?",
+            "Es gibt keine falschen Gefühle. Aber es gibt hilfreiche und weniger hilfreiche Arten, mit ihnen umzugehen."
+          ],
+          "tabelle": {
+            "spalten": [
+              "Gefühl",
+              "Botschaft",
+              "Was es uns tun lässt"
+            ],
+            "zeilen": [
+              [
+                "Angst",
+                "Achtung, Gefahr. Pass auf dich auf.",
+                "vorsichtig sein, ausweichen, Hilfe holen"
+              ],
+              [
+                "Wut",
+                "Das ist unfair. Hier ist eine Grenze.",
+                "sich wehren, Stopp sagen"
+              ],
+              [
+                "Traurigkeit",
+                "Mir fehlt etwas. Ich brauche Trost.",
+                "sich zurückziehen, Nähe und Trost suchen"
+              ],
+              [
+                "Freude",
+                "Das tut mir gut. Davon will ich mehr.",
+                "weitermachen, teilen, Neues ausprobieren"
+              ],
+              [
+                "Ekel",
+                "Das ist schlecht für mich. Abstand.",
+                "wegschieben, sich abwenden"
+              ],
+              [
+                "Überraschung",
+                "Moment – was ist da los?",
+                "innehalten, genau hinschauen"
+              ]
+            ]
+          },
+          "tipp": "Das Tafelbild als Plakat neben das Gefühlsrad hängen: In Einheit 8 wird es beim Film wieder gebraucht.",
+          "wennEsKippt": "Findet jemand, Angst oder Traurigkeit seien „nur schwach“, nicht dagegenhalten, sondern nach einem Beispiel fragen: Wann hat dich Angst schon einmal vor etwas bewahrt? Fast allen fällt etwas ein – beim Radfahren, im Schwimmbad, auf dem Heimweg im Dunkeln.",
+          "blatt": "skills-gefuehle-botschaften"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Gemeinsam essen, Fenster auf oder kurz nach draußen. Die Leitung isst mit und lässt das Thema ruhen. Allergien und Unverträglichkeiten beim Imbiss berücksichtigen."
+        },
+        {
+          "titel": "Gefühle-Pantomime",
+          "dauer": 20,
+          "phase": "aktiv",
+          "text": "Alle stehen im Kreis. Reihum zieht jede Person verdeckt eine Gefühlskarte und stellt das Gefühl ohne Worte dar – erst zehn Sekunden als Statue, dann in Bewegung. Die anderen raten; nach jeder Runde kurz fragen, woran die Gruppe es erkannt hat: Gesicht, Schultern, Hände, Tempo. Nach etwa zehn Minuten die schwierigeren Karten von Seite 2 dazunehmen. Wer nicht allein vor der Gruppe spielen möchte, spielt zu zweit. Die Übung schärft den Blick für Körpersprache – bei anderen und bei sich selbst.",
+          "sagen": [
+            "Erst als Statue, dann in Bewegung – und kein einziges Wort.",
+            "Woran habt ihr es erkannt? Am Gesicht, an den Schultern, an den Händen?",
+            "Neid ohne Worte, das ist die Profistufe. Wer traut sich?"
+          ],
+          "tipp": "Die Leitung spielt die erste Karte selbst und übertreibt ruhig; das senkt die Hemmschwelle. Bei wenig Energie im Sitzen spielen, nur mit Gesicht und Händen; bei nur zwei Jugendlichen spielt die Leitung mit.",
+          "wennEsKippt": "Lacht jemand über eine Darstellung, kurz unterbrechen und an den Gruppenvertrag erinnern: Wir lachen miteinander, nicht übereinander. Kippt die Runde ins Alberne, als Nächstes gezielt leise Gefühle wie Erleichterung, Hoffnung oder Zufriedenheit austeilen – sie bringen Ruhe hinein.",
+          "blatt": "skills-gefuehlskarten"
+        },
+        {
+          "titel": "Skill: Spaziergang mit allen Sinnen",
+          "dauer": 12,
+          "phase": "skill",
+          "text": "Schweigend und ohne Handy nach draußen gehen. Die Leitung gibt nacheinander vier Sinne vor und lässt jeweils etwa zwei Minuten Zeit; dazwischen kurz stehen bleiben, wer mag, nennt eine Sache. Zurück im Raum in einem Satz erklären: Wer die Sinne einschaltet, holt sich aus dem Gedankenkarussell ins Hier und Jetzt. Das ist ein Skill, der in Modul 3 wiederkommt.",
+          "sagen": [
+            "Die nächsten zehn Minuten ohne Worte und ohne Handy. Ich sage an, auf welchen Sinn ihr achtet.",
+            "Was ist dir aufgefallen, das du sonst übersiehst?"
+          ],
+          "punkte": [
+            "Sehen: Such drei Dinge in einer Farbe, die dir sonst nicht auffallen.",
+            "Hören: Welches Geräusch ist am weitesten weg?",
+            "Riechen: Wonach riecht es hier – Gras, Asphalt, Kantine?",
+            "Spüren: Wie fühlt sich der Boden unter deinen Schuhen an? Wind, Sonne, Kälte auf der Haut?"
+          ],
+          "tipp": "Bei Regen durchs Schulhaus gehen oder am offenen Fenster stehen: Das Spüren gilt dann für Hände, Füße und die Luft am Fenster.",
+          "wennEsKippt": "Reden zwei trotzdem, freundlich dazwischengehen und die nächste Sinnesfrage direkt an sie richten. Wer nicht still sein kann, bekommt eine Aufgabe: die zwei Minuten stoppen und das Zeichen zum Weitergehen geben."
+        },
+        {
+          "titel": "Réckbléck mit Bildkarten und Skills-Pass",
+          "dauer": 8,
+          "phase": "abschluss",
+          "text": "Die Dixit-Karten oder Postkarten offen auf den Boden legen. Jede Person wählt eine Karte, die zu ihrer Stimmung jetzt passt, und sagt einen Satz dazu. Danach der Eintrag in den Skills-Pass und der Stempel; zum Schluss die Brücke zur nächsten Einheit.",
+          "sagen": [
+            "Such dir eine Karte, die zu dir jetzt passt. Ein Satz dazu reicht – oder du zeigst sie einfach nur.",
+            "Für den Pass: Welches Gefühl verstehst du heute ein bisschen besser als vorher?"
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Nächstes Mal lernt ihr fünf Gefühle persönlich kennen: Freude, Kummer, Angst, Wut und Ekel – im Film „Alles steht Kopf“.",
+      "hintergrund": "Gefühle sind kurze, organisierte Reaktionen auf Ereignisse, die für uns bedeutsam sind: Sie lenken die Aufmerksamkeit, bereiten den Körper auf eine Handlung vor und zeigen anderen, was in uns vorgeht. Ekman (1992) beschreibt Grundgefühle, deren Gesichtsausdruck in vielen Kulturen erkannt wird; Plutchik (2001) ordnet jedem Grundgefühl eine Funktion zu – Angst sorgt für Schutz, Wut räumt Hindernisse aus dem Weg, Traurigkeit sucht verlorene Nähe. Auch angenehme Gefühle haben eine Aufgabe: Sie erweitern Denken und Handeln und bauen auf Dauer Ressourcen auf (Fredrickson, 2001). Im Skillstraining für Jugendliche steht das Verstehen der Gefühle vor ihrer Regulation: Wer die Botschaft kennt, muss dem Handlungsdrang nicht blind folgen (Rathus & Miller, 2015).",
+      "quellen": [
+        "Ekman, P. (1992). An argument for basic emotions. Cognition and Emotion, 6(3–4), 169–200.",
+        "Plutchik, R. (2001). The nature of emotions. American Scientist, 89(4), 344–350.",
+        "Fredrickson, B. L. (2001). The role of positive emotions in positive psychology: The broaden-and-build theory of positive emotions. American Psychologist, 56(3), 218–226.",
+        "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford."
+      ],
+      "achtung": "Gefühle sind ein persönliches Thema. Niemand muss erzählen, wann er ein Gefühl zuletzt hatte; die Tabelle auf dem Schülerblatt bleibt privat, „weiter“ ist immer erlaubt. Wird ein Beitrag zu persönlich, freundlich stoppen und ein Einzelgespräch anbieten. Beim Spaziergang bleiben alle in Sichtweite. Deuten Äußerungen auf Gewalt, Missbrauch, Selbstverletzung oder Suizidgedanken hin, nicht in der Gruppe vertiefen, sondern nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) informieren."
+    },
+    {
+      "id": "j1-e08",
+      "nr": 8,
+      "jahr": 1,
+      "modul": "j1-m2",
+      "titel": "Alles steht Kopf",
+      "kurz": "Ausschnitte aus den Filmen „Alles steht Kopf“ 1 und 2 zeigen, wie Gefühle das Steuer übernehmen; die Gruppe erarbeitet, warum jedes Gefühl seinen Platz hat – auch Kummer.",
+      "dauer": 100,
+      "ziele": [
+        "erkennen Gefühle in Filmszenen und beschreiben, woran sie sie erkennen",
+        "unterscheiden angenehme und unangenehme Gefühle und begründen, wozu auch unangenehme gut sind",
+        "beschreiben mit dem Bild vom Steuerpult, welches Gefühl in einer Situation ihr Handeln bestimmt"
+      ],
+      "material": [
+        "„Alles steht Kopf“ (2015) und „Alles steht Kopf 2“ (2024) auf DVD, Blu-ray oder im Stream – mit geklärten Vorführrechten",
+        "Beamer oder großer Bildschirm, Lautsprecher",
+        "Schülerblatt „Wer sitzt am Steuer?“ je Person, Klemmbretter",
+        "Plakat mit den Botschaften aus Einheit 7, ein leeres Plakat (A1), dicke Stifte",
+        "Gefühlskarten: fünf Karten für das Steuerpult; für das Memory Seite 1 zweimal auf festes Papier kopiert (oder ein gekauftes Gefühls-Memory)",
+        "Gefühlsrad (A3), Skills-Pässe, Stempel",
+        "Imbiss, gern Popcorn"
+      ],
+      "vorbereitung": [
+        "Vorführrechte mit der Direktion oder der zuständigen Leitung (Responsable) klären (Schul- oder Einrichtungslizenz) und die Altersfreigabe beider Filme prüfen lassen",
+        "Die vier Szenen aus Schritt 3 vorher ansehen und Anfang und Ende jeder Szene auf dem Abspielgerät notieren",
+        "Technik testen: Bild, Ton, Verdunkelung, Untertitel",
+        "Für die Aufstellung fünf Gefühlskarten im Halbkreis auf den Boden legen – das Steuerpult: Freude, Traurigkeit (für Kummer), Angst, Wut, Ekel"
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-wer-sitzt-am-steuer",
+        "skills-gefuehlskarten",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Welches Gefühl war heute zuerst wach?"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Rückblick und Beobachtungsauftrag"
+        },
+        {
+          "min": "15–45",
+          "phase": "uebung",
+          "titel": "Filmausschnitte und Beobachtungsbogen"
+        },
+        {
+          "min": "45–52",
+          "phase": "aktiv",
+          "titel": "Aufstellung: Wer stünde bei euch am Pult?"
+        },
+        {
+          "min": "52–60",
+          "phase": "uebung",
+          "titel": "Die Hauptbotschaft des Films"
+        },
+        {
+          "min": "60–75",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "75–90",
+          "phase": "aktiv",
+          "titel": "Gefühls-Memory"
+        },
+        {
+          "min": "90–95",
+          "phase": "skill",
+          "titel": "Skill: Achtsames Hören"
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Réckbléck und Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: Welches Gefühl war heute zuerst wach?",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Check-in mit dem Gefühlsrad wie gewohnt, heute mit einer Zusatzfrage: Welches Gefühl war heute Morgen als Erstes da – beim Aufwachen, im Bad, im Bus? Jede Person zeigt auf ein Wort für jetzt und nennt, wenn sie mag, das Gefühl vom Morgen. Die Leitung beginnt.",
+          "sagen": [
+            "Welches Gefühl war heute als Erstes wach? Bei mir war es „müde“, und dann kurz „gestresst“, weil ich meinen Schlüssel gesucht habe.",
+            "Und jetzt, hier im Kreis – welches Wort passt?"
+          ],
+          "tipp": "Die Zusatzfrage führt direkt zum Film: Dort ist Freude das erste Gefühl, das in Rileys Kopf auftaucht.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Rückblick und Beobachtungsauftrag",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "Auf das Plakat mit den Botschaften aus Einheit 7 zeigen und zwei, drei Botschaften von der Gruppe wiederholen lassen. Den Film in zwei Sätzen vorstellen: Riley ist elf und zieht mit ihren Eltern in eine neue Stadt; in ihrem Kopf arbeiten fünf Gefühle an einem Steuerpult. Das Schülerblatt austeilen und Aufgabe 1 erklären: Während der Szenen wird nur angekreuzt.",
+          "sagen": [
+            "Letzte Woche habt ihr herausgefunden, welche Botschaft jedes Gefühl hat. Wer weiß noch die von Angst? Und die von Wut?",
+            "Heute schaut ihr zu, was passiert, wenn ein Gefühl das Steuer übernimmt. Während des Films nur ankreuzen – schreiben könnt ihr danach."
+          ],
+          "wennEsKippt": "Kennt jemand den Film und verrät das Ende, freundlich bremsen und eine Rolle geben: Du bist heute Filmexperte und darfst nach jeder Szene ergänzen, was davor passiert ist – nur das Ende bleibt geheim, bis die ganze Gruppe den Film gesehen hat.",
+          "blatt": "skills-wer-sitzt-am-steuer"
+        },
+        {
+          "titel": "Filmausschnitte und Beobachtungsbogen",
+          "dauer": 30,
+          "phase": "uebung",
+          "text": "Die vier vorbereiteten Szenen zeigen, zusammen etwa 15 bis 20 Minuten. Nach jeder Szene anhalten und die Frage aus der Tabelle stellen; zwei, drei Antworten genügen. Danach Aufgabe 1 im Plenum vergleichen und Aufgabe 2 zu zweit bearbeiten; Aufgabe 3 füllt jede Person für sich aus. Die Frage nach der witzigsten Figur zuerst stellen – sie lockert, bevor es persönlich wird.",
+          "tabelle": {
+            "spalten": [
+              "Szene",
+              "Was passiert",
+              "Frage danach"
+            ],
+            "zeilen": [
+              [
+                "1 · Die Zentrale (Teil 1, Filmanfang)",
+                "Riley wird geboren, Freude ist zuerst da, kurz danach Kummer. Angst, Ekel und Wut werden mit ihren Aufgaben vorgestellt.",
+                "Wozu braucht Riley Angst, Ekel und Wut?"
+              ],
+              [
+                "2 · Der erste Schultag (Teil 1)",
+                "Freude malt einen Kreis, in dem Kummer bleiben soll. In der neuen Klasse berührt Kummer trotzdem eine glückliche Erinnerung, und Riley weint vor allen.",
+                "Was passiert, wenn man ein Gefühl wegsperren will?"
+              ],
+              [
+                "3 · Bing Bong (Teil 1)",
+                "Rileys früherer Fantasiefreund verliert etwas, das ihm viel bedeutet. Freude will ihn aufheitern; erst als Kummer sich zu ihm setzt und zuhört, kann er weitergehen.",
+                "Warum hilft Kummer hier mehr als Freude?"
+              ],
+              [
+                "4 · Neue Gefühle (Teil 2)",
+                "Riley ist 13. Nachts wird die Zentrale umgebaut, bald darauf ziehen Zweifel, Neid, Peinlich und Ennui ein.",
+                "Welches der neuen Gefühle kennt ihr von euch?"
+              ]
+            ]
+          },
+          "sagen": [
+            "Stopp. Wer stand gerade am Pult – und was hat Riley deshalb gemacht?",
+            "Freude will, dass Kummer in ihrem Kreis bleibt. Kennt ihr das, ein Gefühl wegsperren zu wollen?"
+          ],
+          "tipp": "Die Szenen vorher selbst ansehen und Anfang und Ende notieren; über das Kapitelmenü oder die Zeitleiste springt man schnell. In gemischtsprachigen Gruppen hilft die französische Fassung „Vice-versa“ oder der deutsche Ton mit Untertiteln.",
+          "wennEsKippt": "Findet jemand den Film „für Kinder“, das ernst nehmen und eine Expertenrolle anbieten: Du achtest darauf, was der Film über Gefühle richtig und was er falsch darstellt. Wird jemand bei den Szenen über Umzug oder Weinen still oder traurig, nicht vor der Gruppe ansprechen, sondern in der Pause kurz nachfragen.",
+          "blatt": "skills-wer-sitzt-am-steuer"
+        },
+        {
+          "titel": "Aufstellung: Wer stünde bei euch am Pult?",
+          "dauer": 7,
+          "phase": "aktiv",
+          "text": "Die fünf Gefühlskarten liegen im Halbkreis auf dem Boden – das Steuerpult; die Karte Traurigkeit steht für Kummer. Die Leitung liest eine Alltagssituation vor, und alle stellen sich zu dem Gefühl, das bei ihnen wahrscheinlich am Pult stünde; zwischen zwei Karten stehen ist erlaubt. Nach jeder Situation kurz nachfragen, freiwillig und ohne zu bewerten.",
+          "punkte": [
+            "Die Lehrerin kündigt für morgen einen Test an, von dem niemand wusste.",
+            "Im Bus setzt sich jemand neben dich, der stark nach Rauch riecht.",
+            "Dein bester Freund sagt euer Treffen zum dritten Mal kurzfristig ab.",
+            "Du wirfst beim Handballturnier das entscheidende Tor.",
+            "Du wartest abends allein an der Bushaltestelle, und hinter dir raschelt es.",
+            "Deine Lieblingsserie wird mitten in der Geschichte abgesetzt."
+          ],
+          "sagen": [
+            "Stellt euch zu dem Gefühl, das bei euch jetzt am Pult stünde. Dazwischen ist erlaubt.",
+            "Gleiche Situation, drei verschiedene Gefühle am Pult. Wer mag sagen, warum er hier steht?"
+          ],
+          "tipp": "Bei wenig Platz oder nur zwei Jugendlichen liegen die Karten auf dem Tisch, und alle zeigen mit dem Finger darauf.",
+          "wennEsKippt": "Rennen alle aus Spaß zur selben Karte, die nächste Situation mit geschlossenen Augen hören lassen; erst auf ein Zeichen gehen alle los. Bleibt jemand immer zwischen den Karten stehen, das gelten lassen: Auch Unentschlossenheit ist eine Auskunft.",
+          "blatt": "skills-gefuehlskarten"
+        },
+        {
+          "titel": "Die Hauptbotschaft des Films",
+          "dauer": 8,
+          "phase": "uebung",
+          "text": "Im Kreis sitzen. Fragen, was der Film über Gefühle zeigt, und die Antworten in der Sprache der Gruppe auf ein Plakat schreiben. Fehlt einer der drei Sätze unten, mit einer Frage darauf hinführen, statt ihn vorzugeben. Zum Schluss die persönliche Frage stellen; antworten darf, wer möchte.",
+          "punkte": [
+            "Jedes Gefühl hat seinen Platz und passt zu bestimmten Situationen – auch Kummer.",
+            "Je nachdem, welches Gefühl am Steuer sitzt, handeln wir anders.",
+            "Mit der Zeit lernt man, welches Gefühl man wann ans Steuer lässt."
+          ],
+          "sagen": [
+            "Was will uns der Film über Gefühle sagen – in einem Satz?",
+            "Welches Gefühl sitzt bei dir oft am Steuer? Du kannst auch sagen: in der Schule eher das eine, zu Hause eher das andere."
+          ],
+          "tipp": "Das Plakat neben das Botschaften-Plakat hängen. Der dritte Satz ist die Brücke zu Modul 3: Dort geht es darum, wie man das Steuer zurückbekommt, wenn ein Gefühl zu stark wird."
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Pause mit Imbiss, gern mit Popcorn wie im Kino; Allergien und Unverträglichkeiten vorher abfragen. Die Leitung isst mit, das Thema ruht – über Lieblingsfilme und Serien darf trotzdem geredet werden."
+        },
+        {
+          "titel": "Gefühls-Memory",
+          "dauer": 15,
+          "phase": "aktiv",
+          "text": "Die Memory-Karten verdeckt auf einem Tisch oder dem Boden auslegen. Reihum deckt jede Person zwei Karten auf; wer ein Paar findet, nennt eine Situation, in der man sich so fühlt, und ist noch einmal dran. Nach der Hälfte der Zeit die Regel wechseln: Wer ein Paar findet, stellt das Gefühl pantomimisch dar, und die anderen nennen eine passende Situation. Es geht nicht ums Gewinnen, sondern darum, Gefühlswörter mit Alltagssituationen zu verbinden.",
+          "sagen": [
+            "Paar gefunden? Dann brauchen wir eine Situation – aus der Schule, dem Bus, von zu Hause oder aus einem Film.",
+            "Dir fällt nichts ein? Gib die Frage an die Gruppe weiter."
+          ],
+          "tipp": "Ab sechs Jugendlichen zwei Gruppen mit je einem Kartensatz bilden, sonst wird die Wartezeit lang. Bei nur zwei Jugendlichen spielt die Leitung mit.",
+          "wennEsKippt": "Wird daraus ein Wettrennen um Punkte, die Punkte abschaffen und gemeinsam gegen die Uhr spielen: Schafft ihr alle Paare in zwölf Minuten? Nennt jemand eine Situation, die nach eigenem, belastendem Erleben klingt, ruhig würdigen, weiterspielen und später unter vier Augen nachfragen.",
+          "blatt": "skills-gefuehlskarten"
+        },
+        {
+          "titel": "Skill: Achtsames Hören",
+          "dauer": 5,
+          "phase": "skill",
+          "text": "Alle sitzen bequem, Augen zu oder Blick auf einen Punkt am Boden. Die Leitung stellt langsam drei Fragen und lässt nach jeder etwa eine Minute Stille. Danach kurz austauschen, welche Geräusche aufgefallen sind. Erklären: Beim Hören gibt es kein Richtig oder Falsch – die Aufmerksamkeit ist einfach im Jetzt.",
+          "sagen": [
+            "Macht es euch bequem. Ihr müsst nichts tun, nur hören."
+          ],
+          "punkte": [
+            "Welche Geräusche hörst du ganz nah – im Raum, an deinem Stuhl, bei dir selbst?",
+            "Welche Geräusche kommen von weiter weg – aus dem Flur, von der Straße, von draußen?",
+            "Welches ist das leiseste Geräusch, das du gerade hören kannst?"
+          ],
+          "wennEsKippt": "Kichert jemand, nicht ermahnen: Auch das Kichern ist ein Geräusch. Einfach ruhig weitersprechen – meist wird es nach der ersten Minute still."
+        },
+        {
+          "titel": "Réckbléck und Skills-Pass",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Blitzlicht mit dem Bild aus dem Film: Jede Person sagt in einem Wort, welches Gefühl heute in der Einheit bei ihr am meisten am Steuer saß. Danach der Eintrag in den Skills-Pass und der Stempel; zum Schluss die Brücke zur nächsten Einheit.",
+          "sagen": [
+            "Ein Wort: Wer saß heute bei dir am Steuer?",
+            "Für den Pass: Was nimmst du aus dem Film für dich mit?"
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Gefühle passieren nicht nur im Kopf, sondern im ganzen Körper – nächstes Mal sucht ihr, wo genau.",
+      "hintergrund": "Das Studio Pixar ließ sich für „Alles steht Kopf“ von den Emotionsforschern Dacher Keltner und Paul Ekman beraten. Sie heben zwei Einsichten hervor, die der Film anschaulich macht: Gefühle stören das Denken nicht, sondern ordnen es, und sie regeln unser Zusammenleben – Kummer zeigt anderen, dass jemand Trost braucht, und holt so Hilfe herbei (Keltner & Ekman, 2015). Die fünf Figuren entsprechen fünf der Grundgefühle, die Ekman (1992) beschreibt. Das Bild vom Steuerpult passt zur Emotionsregulation: Gefühle lassen sich nicht abschalten, aber man kann beeinflussen, wie stark und wie lange sie das Handeln bestimmen (Gross, 1998). Filmszenen schaffen dabei Abstand – über Rileys Gefühle zu sprechen, fällt leichter als über die eigenen.",
+      "quellen": [
+        "Keltner, D. & Ekman, P. (2015, 3. Juli). The science of “Inside Out”. The New York Times.",
+        "Ekman, P. (1992). An argument for basic emotions. Cognition and Emotion, 6(3–4), 169–200.",
+        "Gross, J. J. (1998). The emerging field of emotion regulation: An integrative review. Review of General Psychology, 2(3), 271–299."
+      ],
+      "achtung": "Vorführrechte vorab klären lassen (Schul- oder Einrichtungslizenz) und die Altersfreigabe beider Filme prüfen; keine Angaben aus dem Gedächtnis übernehmen. Der Film erzählt von Umzug, Heimweh und Streit mit den Eltern. Für Jugendliche, die nicht bei ihrer Familie leben oder gerade eine Trennung oder einen Verlust erleben, kann das stark wirken: vorher überlegen, wen es betrifft, und nach dem Film ansprechbar sein. Persönliches aus der Aufstellung und aus Aufgabe 3 nicht im Plenum vertiefen. Bei Hinweisen auf eine Gefährdung nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) informieren."
+    },
+    {
+      "id": "j1-e09",
+      "nr": 9,
+      "jahr": 1,
+      "modul": "j1-m2",
+      "titel": "Wo spüre ich Gefühle?",
+      "kurz": "Die Jugendlichen zeichnen ihre Gefühls-Landkarte, finden ihr erstes Warnsignal für Wut und Angst und drücken Gefühle mit Haltung, Bewegung und Musik aus.",
+      "dauer": 100,
+      "ziele": [
+        "nehmen Gefühle als Signale im Körper wahr und zeichnen ihre Gefühls-Landkarte",
+        "benennen ihr erstes Warnsignal für Wut und für Angst",
+        "drücken Gefühle mit Haltung und Bewegung aus und erleben, wie Musik die Stimmung verändert"
+      ],
+      "material": [
+        "Schülerblatt „Meine Gefühls-Landkarte“ je Person",
+        "Buntstifte in Rot, Lila, Gelb und Blau",
+        "Packpapier mit einem großen Körperumriss, Klebepunkte in vier Farben (optional)",
+        "Lautsprecher und vier kurze Musikstücke in verschiedenen Stimmungen",
+        "Isomatten oder Decken für den Bodyscan",
+        "Gefühlsrad (A3), Skills-Pässe, Stempel",
+        "Imbiss und Getränke"
+      ],
+      "vorbereitung": [
+        "Tische an die Wand, freie Fläche für Bewegung",
+        "Vier Musikstücke von je ein bis zwei Minuten auswählen und in eine Reihenfolge bringen (Vorschläge in Schritt 6); Liedtexte vorher prüfen",
+        "Einen großen Körperumriss frei auf Packpapier zeichnen",
+        "Das Plakat „Wer sitzt am Steuer?“ aus Einheit 8 aufhängen"
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-gefuehls-landkarte",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Gefühl und Ort im Körper"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Vom Steuerpult zum Körper"
+        },
+        {
+          "min": "15–35",
+          "phase": "uebung",
+          "titel": "Meine Gefühls-Landkarte"
+        },
+        {
+          "min": "35–50",
+          "phase": "aktiv",
+          "titel": "Situationen nachspielen: Gefühlsstatuen"
+        },
+        {
+          "min": "50–65",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "65–85",
+          "phase": "aktiv",
+          "titel": "Musik und Bewegung"
+        },
+        {
+          "min": "85–95",
+          "phase": "skill",
+          "titel": "Skill: kurzer Bodyscan"
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Réckbléck und Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: Gefühl und Ort im Körper",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Check-in mit dem Gefühlsrad, heute als Körper-Check: Jede Person zeigt auf ein Wort und sagt dazu, wo sie das Gefühl gerade spürt – oder dass sie es nirgends spürt. Die Leitung beginnt und zeigt dabei auf die Stelle am eigenen Körper. Nicht nachfragen und nicht deuten.",
+          "sagen": [
+            "Ich bin gerade „angespannt“. Das sitzt bei mir im Nacken, der ist ganz fest.",
+            "Wo spürst du dein Gefühl gerade? „Nirgends“ ist auch eine Antwort."
+          ],
+          "tipp": "Wer nichts spürt, macht nichts falsch – Spüren lässt sich üben. Oft hilft die Frage, wo es sich gerade warm, kalt, eng oder weit anfühlt.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Vom Steuerpult zum Körper",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "Auf das Plakat aus Einheit 8 zeigen und den dritten Satz vorlesen: Mit der Zeit lernt man, welches Gefühl man wann ans Steuer lässt. Dann fragen, woran man merkt, dass ein Gefühl das Steuer übernimmt – noch bevor man es denkt. Das Thema nennen: Gefühle passieren im ganzen Körper.",
+          "sagen": [
+            "Riley merkt im Film nicht, wer in ihrem Kopf gerade am Pult steht. Woran merkt ihr es bei euch?",
+            "Heute sucht ihr, wo eure Gefühle im Körper wohnen – und welches Signal als Erstes kommt."
+          ]
+        },
+        {
+          "titel": "Meine Gefühls-Landkarte",
+          "dauer": 20,
+          "phase": "uebung",
+          "text": "Einstieg mit der Frage, woran man merkt, dass man wütend wird, noch bevor man etwas sagt; die Antworten rund um einen schnell skizzierten Körperumriss an die Tafel schreiben. Dann malt jede Person auf dem Schülerblatt in den Farben des Gefühlsrads ein, wo sie Wut, Angst, Freude und Traurigkeit spürt, und bearbeitet Aufgabe 2 und 3. Zum Schluss legt, wer mag, sein Blatt in die Mitte oder setzt Klebepunkte auf den großen Umriss, und die Gruppe vergleicht. Aufgabe 4 ist ein Beobachtungsauftrag bis zur nächsten Einheit.",
+          "sagen": [
+            "Woran merkst du, dass du wütend wirst – noch bevor du etwas sagst oder tust?",
+            "Wo sind wir uns ähnlich? Und wo ist jede Landkarte anders?",
+            "Aufgabe 4 nehmt ihr mit: Achtet bis nächste Woche darauf, wann sich euer Warnsignal meldet."
+          ],
+          "tipp": "Die Blätter in der Mappe lassen: Die Warnsignale für Wut und Angst werden in Einheit 11 und für den Ampelplan in Einheit 15 wieder gebraucht.",
+          "wennEsKippt": "Findet jemand das Ausmalen kindisch, eine sachliche Variante anbieten: Kreuze statt Flächen oder Stichworte neben dem Umriss. Wer kein eigenes Beispiel nehmen will, zeichnet die Landkarte einer Figur aus dem Film vom letzten Mal.",
+          "blatt": "skills-gefuehls-landkarte"
+        },
+        {
+          "titel": "Situationen nachspielen: Gefühlsstatuen",
+          "dauer": 15,
+          "phase": "aktiv",
+          "text": "Alle stehen verteilt im Raum, in den ersten beiden Runden mit Blick zur Wand, damit niemand beobachtet wird. Die Leitung liest eine Situation vor; auf „Los“ zeigen alle gleichzeitig ohne Worte mit dem ganzen Körper, wie sie sich fühlen würden, und frieren als Statue ein. Ab der dritten Situation stehen alle im Kreis und schauen sich die Statuen gegenseitig an. Nach jeder Situation eine kurze Frage: Was macht der Körper bei diesem Gefühl – Schultern, Kopf, Hände, Atem?",
+          "punkte": [
+            "Du hast lange gelernt – und in der Prüfung ist dein Kopf plötzlich leer.",
+            "Deine beste Freundin schenkt dir etwas, das du dir schon lange gewünscht hast.",
+            "Du musst gleich vor der Klasse präsentieren und bist nicht vorbereitet.",
+            "Nach Wochen Training gewinnt deine Mannschaft das entscheidende Spiel.",
+            "Du stolperst in der Kantine mit dem Tablett, und alle schauen her.",
+            "Die letzte Stunde vor den Ferien will einfach nicht enden."
+          ],
+          "sagen": [
+            "Auf „Los“ zeigt ihr ohne Worte, wie ihr euch fühlen würdet – und bleibt als Statue stehen.",
+            "Wie fühlt sich dein Körper bei Enttäuschung an? Und wie bei Stolz?"
+          ],
+          "tipp": "Nach der Stolz-Statue die Haltung einen Moment halten lassen und fragen, ob sie etwas mit der Stimmung macht. Manche merken einen Unterschied, andere nicht – beides ist in Ordnung.",
+          "wennEsKippt": "Wird es albern, kurz mitlachen und die nächste Situation leiser und langsamer vorlesen. Wer nicht mitmachen möchte, bekommt eine Beobachterrolle und beschreibt nach jeder Runde eine Statue, ohne zu bewerten."
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Gemeinsam essen, Fenster auf oder kurz nach draußen. Die Leitung isst mit und lässt das Thema ruhen. Nebenbei die Musik für den nächsten Schritt bereitlegen und die Lautstärke testen."
+        },
+        {
+          "titel": "Musik und Bewegung",
+          "dauer": 20,
+          "phase": "aktiv",
+          "text": "Vier kurze Musikstücke in verschiedenen Stimmungen nacheinander abspielen, je ein bis zwei Minuten. Alle bewegen sich frei im Raum, so wie sich die Musik anfühlt: gehen, schlendern, stampfen, schweben. Nach jedem Stück stehen bleiben und fragen, welches Gefühl die Musik ausgelöst hat und wo im Körper. Zum Schluss im Kreis die Frage stellen, ob Musik ein Gefühl verändern kann.",
+          "tabelle": {
+            "spalten": [
+              "Stimmung",
+              "Vorschlag (instrumental)"
+            ],
+            "zeilen": [
+              [
+                "fröhlich",
+                "Vivaldi, „Der Frühling“ aus „Die vier Jahreszeiten“, 1. Satz"
+              ],
+              [
+                "traurig",
+                "Barber, „Adagio für Streicher“"
+              ],
+              [
+                "wütend, aufgewühlt",
+                "Grieg, „In der Halle des Bergkönigs“ – wird immer schneller und lauter"
+              ],
+              [
+                "ruhig",
+                "Satie, „Gymnopédie Nr. 1“"
+              ]
+            ]
+          },
+          "sagen": [
+            "Beweg dich so, wie die Musik klingt. Niemand schaut zu, alle sind beschäftigt.",
+            "Welches Gefühl hat das Stück bei dir ausgelöst? Und wo im Körper?",
+            "Kann Musik ein Gefühl verändern? Welches Lied hörst du, wenn du runterkommen willst?"
+          ],
+          "tipp": "Die Jugendlichen dürfen eigene Stücke vorschlagen, die Leitung prüft die Texte vorab. Die Runterkomm-Lieder notieren: In Einheit 13 entsteht daraus eine Skills-Playlist.",
+          "wennEsKippt": "Will jemand nicht tanzen, gibt es zwei Alternativen: im Tempo der Musik durch den Raum gehen oder am Tisch zur Musik malen, Farben und Linien so, wie das Stück klingt. Wird die Gruppe beim wütenden Stück zu wild, leiser drehen und direkt zum ruhigen Stück wechseln. Bei wenig Energie im Sitzen zuhören und nur mit Händen und Schultern mitgehen."
+        },
+        {
+          "titel": "Skill: kurzer Bodyscan",
+          "dauer": 10,
+          "phase": "skill",
+          "text": "Die Kurzversion des Bodyscans aus Einheit 6, diesmal mit dem Blick auf Brust und Bauch, wo viele ihre Gefühle spüren. Liegen oder sitzen, Augen zu oder Blick auf einen Punkt am Boden. Langsam vorlesen und zwischen den Sätzen Pausen lassen. Danach nur eine Frage stellen: Hat sich im Körper etwas verändert?",
+          "sagen": [
+            "Ihr dürft jederzeit die Augen öffnen oder euch hinsetzen. Ihr müsst nichts Besonderes spüren – alles, was da ist, ist in Ordnung."
+          ],
+          "punkte": [
+            "Such dir eine bequeme Position, liegend oder sitzend. Schließ die Augen, wenn es angenehm ist. Atme einmal tief ein und langsam aus.",
+            "Geh mit deiner Aufmerksamkeit zur Stirn, zu den Augen, zum Kiefer. Lass die Zähne ein wenig auseinander. Spür deinen Nacken und deine Schultern.",
+            "Wandere zu Brust und Bauch. Spür, wie sie sich beim Atmen bewegen. Vielleicht spürst du hier ein Gefühl von heute – schau es nur an, ohne etwas zu ändern.",
+            "Spür deine Hände: warm oder kalt, ruhig oder kribbelig?",
+            "Wandere zu den Beinen und zu den Füßen. Spür, wo sie den Boden berühren.",
+            "Spür jetzt den ganzen Körper. Beweg langsam Finger und Zehen. Öffne die Augen, wenn du so weit bist."
+          ],
+          "tipp": "Vorher sagen, dass jede Person jederzeit die Augen öffnen und sich aufsetzen darf. Die Leitung bleibt sitzen und liest, statt herumzugehen – das gibt Sicherheit.",
+          "wennEsKippt": "Wird jemand beim Spüren unruhig, traurig oder angespannt, die Übung für diese Person freundlich beenden: Augen auf, Füße fest auf den Boden, fünf Dinge im Raum benennen. Später in Ruhe und ohne Druck nachfragen."
+        },
+        {
+          "titel": "Réckbléck und Skills-Pass",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Daumenbarometer: Jede Person zeigt mit dem Daumen, wie die Einheit für sie war – hoch, Mitte oder runter – und sagt, wenn sie mag, einen Satz dazu. Danach der Eintrag in den Skills-Pass und der Stempel. Zum Schluss an den Beobachtungsauftrag aus Aufgabe 4 erinnern.",
+          "sagen": [
+            "Daumen hoch, Mitte oder runter – und wenn du magst: Was hat dein Körper dir heute erzählt?",
+            "Für den Pass: Welches Warnsignal willst du dir merken?"
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Im echten Leben fühlen wir selten nur ein Gefühl – nächstes Mal geht es um gemischte Gefühle und darum, wie stark ein Gefühl werden kann.",
+      "hintergrund": "Gefühle sind Zustände des ganzen Körpers: Herzschlag, Atmung, Muskelspannung und Verdauung verändern sich mit. Nummenmaa und Kollegen (2014) ließen über 700 Personen einzeichnen, wo sie bei verschiedenen Gefühlen etwas spüren. Die Körperkarten unterschieden sich je nach Gefühl deutlich und ähnelten sich in westeuropäischen und ostasiatischen Stichproben: Wut zeigte sich etwa in Kopf, Brust und Armen, Traurigkeit als verminderte Aktivität in Armen und Beinen. Für die Regulation sind diese Signale wertvoll, denn sie kommen oft früher als der Gedanke „Ich bin wütend“ – und je früher man eingreift, desto leichter gelingt es (Gross, 1998). Der Bodyscan aus der achtsamkeitsbasierten Stressreduktion übt, den Körper wahrzunehmen, ohne zu bewerten (Kabat-Zinn, 1990).",
+      "quellen": [
+        "Nummenmaa, L., Glerean, E., Hari, R. & Hietanen, J. K. (2014). Bodily maps of emotions. Proceedings of the National Academy of Sciences, 111(2), 646–651.",
+        "Gross, J. J. (1998). The emerging field of emotion regulation: An integrative review. Review of General Psychology, 2(3), 271–299.",
+        "Kabat-Zinn, J. (1990). Full Catastrophe Living. New York: Delacorte."
+      ],
+      "achtung": "Körperübungen und der Bodyscan können bei Jugendlichen mit belastenden Erfahrungen Unruhe oder Angst auslösen. Vorher das Stopp-Recht nennen: Augen offen, sitzen statt liegen und Aussetzen sind jederzeit erlaubt; keine Übung mit Berührung. Niemand muss seine Landkarte zeigen oder erklären, und beim Tanzen gibt es immer eine Alternative. Zeigen sich Hinweise auf Verletzungen, Gewalt oder Selbstverletzung, nicht in der Gruppe nachfragen, sondern nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) informieren."
+    },
+    {
+      "id": "j1-e10",
+      "nr": 10,
+      "jahr": 1,
+      "modul": "j1-m2",
+      "titel": "Gemischte Gefühle",
+      "kurz": "Mehrere Gefühle können gleichzeitig da sein und verschieden stark sein: Die Gruppe untersucht gemischte Gefühle und übt, ihre Stärke von 0 bis 10 einzuschätzen.",
+      "dauer": 100,
+      "ziele": [
+        "erkennen, dass mehrere Gefühle gleichzeitig da sein können, auch widersprüchliche",
+        "schätzen die Stärke eines Gefühls auf einer Skala von 0 bis 10 ein und begründen ihre Zahl",
+        "erleben, dass dieselbe Situation bei verschiedenen Menschen verschiedene Gefühle auslöst"
+      ],
+      "material": [
+        "Schülerblatt „Gemischte Gefühle“ je Person",
+        "Klebeband und elf Zettel mit den Zahlen 0 bis 10 für die Linie im Raum",
+        "Emotionswürfel: großer Schaumstoffwürfel mit Einstecktaschen oder ein Pappwürfel, beklebt mit den sechs Grundgefühlen aus dem Blatt „Gefühlskarten“",
+        "Dobble und Mikado für die Pause",
+        "Gefühlsrad (A3), Skills-Pässe, Stempel",
+        "Imbiss und Getränke"
+      ],
+      "vorbereitung": [
+        "Mit Klebeband eine gerade Linie von etwa fünf Metern auf den Boden kleben und die Zahlenzettel daneben legen",
+        "Den Emotionswürfel basteln oder bereitlegen",
+        "Die Plakate aus den Einheiten 7 bis 9 für den Modulabschluss sichtbar aufhängen"
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-gemischte-gefuehle",
+        "skills-gefuehlskarten",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: zwei Gefühle gleichzeitig"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Rückblick: Warnsignale aus der Woche"
+        },
+        {
+          "min": "15–40",
+          "phase": "uebung",
+          "titel": "Gemischte Gefühle"
+        },
+        {
+          "min": "40–55",
+          "phase": "aktiv",
+          "titel": "Gefühle skalieren: die Linie von 0 bis 10"
+        },
+        {
+          "min": "55–70",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss, Dobble und Mikado"
+        },
+        {
+          "min": "70–88",
+          "phase": "aktiv",
+          "titel": "Emotionswürfel"
+        },
+        {
+          "min": "88–95",
+          "phase": "skill",
+          "titel": "Skill: Luftballon-Atem"
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Réckbléck als Gefühls-Mix und Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: zwei Gefühle gleichzeitig",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Check-in mit dem Gefühlsrad, heute mit zwei Fingern: Jede Person zeigt auf zwei Gefühle, die gerade gleichzeitig da sind, und sagt, welches davon stärker ist. Die Leitung beginnt mit einem ehrlichen, alltäglichen Beispiel. Wem nur ein Gefühl einfällt, der bleibt bei einem.",
+          "sagen": [
+            "Bei mir ist gerade „zufrieden“ da, weil Freitag ist, und ein bisschen „gestresst“, weil noch einiges liegen geblieben ist. Das Zufriedene ist stärker.",
+            "Welche zwei Gefühle sind bei dir gerade gleichzeitig da – und welches ist lauter?"
+          ],
+          "tipp": "Oft kommt das zweite Gefühl, wenn man fragt: Und was ist noch ein kleines bisschen da?",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Rückblick: Warnsignale aus der Woche",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "An die Gefühls-Landkarten aus Einheit 9 erinnern und fragen, wer sein Warnsignal in der Woche bemerkt hat; zwei, drei kurze Berichte genügen. Dann auf den Check-in zurückkommen: Fast alle haben zwei Gefühle gefunden. Genau das ist das Thema heute.",
+          "sagen": [
+            "Hat jemand in der Woche sein Warnsignal bemerkt? Wo war das – und was hast du dann gemacht?",
+            "Gerade haben fast alle zwei Gefühle gefunden. Kann das eigentlich sein, zwei auf einmal?"
+          ]
+        },
+        {
+          "titel": "Gemischte Gefühle",
+          "dauer": 25,
+          "phase": "uebung",
+          "text": "Die Einstiegsfrage stellen und das Beispiel mit der Party an die Tafel schreiben: Welche Gefühle sind da? Dann bearbeitet jede Person Aufgabe 1 des Schülerblatts allein. Danach zwei, drei Situationen gemeinsam auswerten: per Handzeichen zählen, wer welches Gefühl angekreuzt hat, und die Zahlen an die Tafel schreiben. Aufgabe 2 füllt jede Person still aus; geteilt wird nur freiwillig.",
+          "sagen": [
+            "Kann man sich gleichzeitig freuen und traurig sein?",
+            "Stellt euch vor: Ihr seid auf eine Party eingeladen – und habt euch am selben Tag mit eurem besten Freund gestritten. Was ist da alles los?",
+            "Schaut auf die Zahlen: gleiche Situation, und trotzdem hat fast jeder etwas anderes angekreuzt. Was sagt uns das?"
+          ],
+          "tipp": "Das Wort „bittersüß“ an die Tafel schreiben: Die meisten kennen es aus Liedern oder vom Abschied nach einem Ferienlager – es ist ein Name für eine Mischung.",
+          "wennEsKippt": "Streiten zwei darüber, welches Gefühl in einer Situation „richtig“ ist, die Frage zurückgeben: Beide haben recht – für sich. Genau das zeigt die Übung. Berührt eine Situation jemanden sichtlich, etwa das Gerücht oder das Geheimnis, nicht vertiefen, sondern nach der Einheit das Gespräch anbieten.",
+          "blatt": "skills-gemischte-gefuehle"
+        },
+        {
+          "titel": "Gefühle skalieren: die Linie von 0 bis 10",
+          "dauer": 15,
+          "phase": "aktiv",
+          "text": "Auf dem Boden liegt die Linie aus Klebeband, an einem Ende die 0, am anderen die 10. Die Leitung nennt eine Situation und ein Gefühl; alle stellen sich an die Stelle, die für sie passt. Zwei Personen an verschiedenen Stellen fragen, was ihre Zahl bestimmt – freiwillig und ohne zu bewerten. Zum Schluss ankündigen: Ab nächster Woche gibt es eine Skala von 0 bis 100 für die Anspannung.",
+          "punkte": [
+            "Der Bus fährt dir vor der Nase weg. – Wie genervt?",
+            "In der Kantine gibt es dein Lieblingsessen. – Wie froh?",
+            "Dein Akku ist bei 2 Prozent, und du wartest auf eine wichtige Nachricht. – Wie nervös?",
+            "Jemand verbreitet ein falsches Gerücht über dich. – Wie wütend?",
+            "Morgen hältst du ein Referat vor der Klasse. – Wie aufgeregt?",
+            "Ein guter Freund zieht in ein anderes Land. – Wie traurig?",
+            "Die Lehrerin bittet dich, nach der Stunde zu bleiben, und sagt nicht, warum. – Wie besorgt?"
+          ],
+          "sagen": [
+            "Stellt euch dahin, wo es für euch passt. Es gibt keine richtige Zahl.",
+            "Du stehst bei 2 und du bei 9 – was macht den Unterschied?"
+          ],
+          "tipp": "Die Zahlenzettel aufheben: In Einheit 11 wird aus der Linie von 0 bis 10 die Anspannungsskala von 0 bis 100.",
+          "wennEsKippt": "Stellen sich alle aus Spaß an dieselbe Stelle, das gelten lassen und die nächste Situation mit geschlossenen Augen hören lassen; erst auf ein Zeichen gehen alle los. Bei Enge im Raum oder nur zwei Jugendlichen zeigt jede Person ihre Zahl mit den Fingern."
+        },
+        {
+          "titel": "Pause mit Imbiss, Dobble und Mikado",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Gemeinsam essen. Dobble und Mikado liegen bereit: Wer mag, spielt, wer nicht mag, isst in Ruhe. Die Leitung spielt mit – Mikado ist nebenbei eine kleine Übung in Ruhe und Geduld."
+        },
+        {
+          "titel": "Emotionswürfel",
+          "dauer": 18,
+          "phase": "aktiv",
+          "text": "Im Kreis stehen oder sitzen, der Würfel geht reihum. Wer würfelt, wählt: von sich erzählen, wann das Gefühl zuletzt da war und was er dann gemacht hat – oder eine Situation aus einem Film, einer Serie oder einem Buch nennen. Dazu kommen zwei Fragen: Wie stark war das Gefühl, von 0 bis 10? Und war noch ein zweites Gefühl dabei? So üben alle beides auf einmal – Stärke einschätzen und Mischungen entdecken. „Weiter“ ist jederzeit erlaubt.",
+          "sagen": [
+            "Du hast Angst gewürfelt. Du kannst von dir erzählen oder von einer Figur – beides zählt.",
+            "Wie stark war das, zwischen 0 und 10? Und war noch ein zweites Gefühl dabei?"
+          ],
+          "tipp": "Die Leitung würfelt in der ersten Runde selbst und erzählt etwas Kleines – etwa Wut, als der Drucker kurz vor einer Sitzung gestreikt hat. Das setzt den Rahmen: kurz, alltäglich, nicht zu privat.",
+          "wennEsKippt": "Erzählt jemand etwas Belastendes, ruhig danken, nicht nachfragen und die Runde weitergehen lassen; nach der Einheit ein Einzelgespräch anbieten. Sagen alle nur noch „weiter“, auf Filmfiguren umstellen: Die Gruppe würfelt für Riley aus „Alles steht Kopf“.",
+          "blatt": "skills-gefuehlskarten"
+        },
+        {
+          "titel": "Skill: Luftballon-Atem",
+          "dauer": 7,
+          "phase": "skill",
+          "text": "Sitzen, beide Hände auf dem Bauch. Beim Einatmen durch die Nase füllt sich der Bauch wie ein Luftballon, beim langsamen Ausatmen durch den Mund lässt man die Luft wieder hinaus. Fünf Wiederholungen, das Ausatmen jedes Mal etwas länger als das Einatmen. Vorher und nachher schätzt jede Person still ein, wie angespannt sie ist, von 0 bis 10.",
+          "sagen": [
+            "Wie viel Anspannung ist gerade in dir, zwischen 0 und 10? Merk dir die Zahl.",
+            "Und jetzt? Hat sich die Zahl verändert – nach oben, nach unten oder gar nicht? Alles ist eine gute Beobachtung."
+          ],
+          "tipp": "Wer „Luftballon“ kindisch findet, nennt es Bauchatmung. Entscheidend ist das lange Ausatmen: Es bremst den Körper."
+        },
+        {
+          "titel": "Réckbléck als Gefühls-Mix und Skills-Pass",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Jede Person nennt zwei Gefühle, mit denen sie heute geht, und zu jedem eine Zahl von 0 bis 10. Danach der Eintrag in den Skills-Pass und der Stempel. Zum Abschluss des Moduls kurz auf die Plakate aus den Einheiten 7 bis 9 zeigen – Botschaften, Steuerpult, Körperumriss – und fragen, was davon hängen geblieben ist.",
+          "sagen": [
+            "Zwei Gefühle und zwei Zahlen – womit gehst du heute nach Hause?",
+            "Für den Pass: Was weißt du jetzt über Gefühle, das du vor vier Wochen noch nicht wusstest?"
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Gefühle können stark werden – bis 10 oder sogar bis 100. Ab nächster Woche lernt ihr, was man tun kann, wenn die Welle hochgeht: Das sind die Skills.",
+      "hintergrund": "Gefühle treten selten einzeln auf. Larsen, McGraw und Cacioppo (2001) zeigten, dass Menschen in bittersüßen Momenten wie einem Abschied tatsächlich gleichzeitig Freude und Traurigkeit empfinden – nicht nur im schnellen Wechsel. Plutchik (2001) beschreibt Gefühle wie Farben, die sich zu neuen Mischungen verbinden. Wer gemischte Gefühle als normal erkennt, muss sich nicht für eine Seite entscheiden und versteht widersprüchliche Reaktionen bei sich und anderen besser. Die Stärke eines Gefühls einzuschätzen, bereitet Modul 3 vor: Die DBT für Jugendliche arbeitet mit einer Anspannungsskala von 0 bis 100, weil je nach Stärke andere Skills helfen (Fleischhaker et al., 2011).",
+      "quellen": [
+        "Larsen, J. T., McGraw, A. P. & Cacioppo, J. T. (2001). Can people feel happy and sad at the same time? Journal of Personality and Social Psychology, 81(4), 684–696.",
+        "Plutchik, R. (2001). The nature of emotions. American Scientist, 89(4), 344–350.",
+        "Fleischhaker, C., Sixt, B. & Schulz, E. (2011). DBT-A: Dialektisch-behaviorale Therapie für Jugendliche. Berlin: Springer."
+      ],
+      "achtung": "Beim Emotionswürfel und bei den Situationen auf dem Schülerblatt können eigene Erlebnisse hochkommen. Niemand muss von sich erzählen; die Wahl zwischen eigenem Erlebnis und Filmfigur gilt für alle, „weiter“ ist immer erlaubt. Persönliches nicht im Plenum vertiefen, sondern ein Einzelgespräch anbieten. Die Situation mit dem Sorgen-Geheimnis bewusst aufgreifen: Geheimnisse, die jemanden in Gefahr bringen, darf und soll man einer Vertrauensperson erzählen. Deutet etwas auf Mobbing, Gewalt, Selbstverletzung oder Suizidgedanken hin, nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) informieren."
+    }
+  ]
+}

@@ -1,0 +1,969 @@
+[
+  {
+    "id": "skills-gedanke-gefuehl-verhalten",
+    "bereich": "skills",
+    "thema": "gedanken",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "15 Min.",
+    "eldib": [
+      "K-29",
+      "K-26",
+      "V-18"
+    ],
+    "schlagworte": [
+      "Gedanken",
+      "Gefühle",
+      "Verhalten",
+      "ABC-Modell",
+      "Bewertung",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:brain",
+    "verwandt": [
+      "skills-glaubenssatz-karten",
+      "skills-kritischer-detektiv"
+    ],
+    "kurs": [
+      "j1-e16"
+    ],
+    "de": {
+      "titel": "Der Gedanke macht den Unterschied",
+      "untertitel": "Dieselbe Situation kann ganz verschieden ausgehen – je nachdem, was du in dem Moment denkst.",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Zwischen dem, was passiert, und dem, was du fühlst, steht ein Gedanke. Er ist oft so schnell, dass du ihn kaum bemerkst. Trotzdem entscheidet er mit, wie es weitergeht."
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 0,
+          "items": [
+            {
+              "titel": "Situation",
+              "text": "Was passiert – so, wie eine Kamera es filmen würde"
+            },
+            {
+              "titel": "Gedanke",
+              "text": "Was mir in dem Moment durch den Kopf geht"
+            },
+            {
+              "titel": "Gefühl",
+              "text": "Was ich spüre, im Kopf und im Körper"
+            },
+            {
+              "titel": "Verhalten",
+              "text": "Was ich dann tue – oder lasse"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dieselbe Situation, zwei Gedanken: Wie fühlt sich Ben jeweils – und was tut er als Nächstes?",
+          "hinweis": "Ben hat Mila am Nachmittag geschrieben. Am Abend steht da: gelesen. Keine Antwort.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "comic",
+          "spalten": 2,
+          "felder": [
+            {
+              "figuren": [
+                "figur:ben:neutral"
+              ],
+              "requisit": "icon:device-mobile-message",
+              "blase": "denken",
+              "text": "Gelesen und keine Antwort. Die hat keinen Bock mehr auf mich."
+            },
+            {
+              "figuren": [
+                "figur:ben:neutral"
+              ],
+              "requisit": "icon:device-mobile-message",
+              "blase": "denken",
+              "text": "Gelesen, keine Antwort. Wahrscheinlich ist sie noch beim Training."
+            }
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "satzanfaenge",
+              "items": [
+                "Gefühl:",
+                "Verhalten:"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "satzanfaenge",
+              "items": [
+                "Gefühl:",
+                "Verhalten:"
+              ]
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Die Lehrerin ruft Yusuf an die Tafel. Welcher Gedanke führt wohin? Verbinde.",
+          "symbole": [
+            "verbinden"
+          ]
+        },
+        {
+          "art": "zuordnen",
+          "titel": [
+            "Yusuf denkt …",
+            "… fühlt und tut"
+          ],
+          "links": [
+            "„Alle warten nur darauf, dass ich mich blamiere.“",
+            "„Schon wieder ich. Die hat was gegen mich.“",
+            "„Nur eine Aufgabe. Wenn ich hänge, frage ich nach.“"
+          ],
+          "rechts": [
+            "wütend – bleibt sitzen und murmelt: „Immer ich.“",
+            "etwas nervös – geht nach vorn und fängt an",
+            "ängstlich, wird rot – sagt „Weiß ich nicht“, obwohl er es weiß"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Jemand lacht, als du in die Klasse kommst. Ein Gedanke steht schon da. Finde zwei andere – und wohin sie führen."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Gedanke",
+            "Gefühl",
+            "Verhalten"
+          ],
+          "breiten": [
+            1.6,
+            1,
+            1.5
+          ],
+          "zeilen": 2,
+          "beispiel": [
+            "„Die lachen über mich.“",
+            "beschämt, wütend",
+            "schaut zu Boden und setzt sich schnell hin"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Und bei dir? Nimm eine Situation aus den letzten Tagen und füll die vier Kästen aus.",
+          "hinweis": "Die Situation darf ganz alltäglich sein: Bus, Pause, Handy, Training.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 4,
+          "items": [
+            {
+              "titel": "Situation"
+            },
+            {
+              "titel": "Gedanke"
+            },
+            {
+              "titel": "Gefühl"
+            },
+            {
+              "titel": "Verhalten"
+            }
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Ein anderer Gedanke, der auch passen könnte:"
+          ],
+          "linien": 2
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Gedanken sind Vermutungen, keine Tatsachen",
+          "text": "Manche Vermutungen stimmen, manche nicht. Welcher Gedanke dir zuerst kommt, hängt auch von Sätzen ab, die du schon lange über dich glaubst – deinen Glaubenssätzen. Wer tief drinnen denkt „Keiner mag mich“, liest aus einer unbeantworteten Nachricht schneller Ablehnung heraus."
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Du entscheidest, was du teilst.",
+          "text": "Deine eigene Situation musst du niemandem zeigen."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen verstehen das Modell Situation – Gedanke – Gefühl – Verhalten und erleben, dass dieselbe Situation je nach Gedanke ganz verschieden ausgehen kann.",
+        "ablauf": [
+          "Modell (2 Min.): die vier Kästen oben erklären – erst was passiert, so wie eine Kamera es sieht, dann was im Kopf passiert.",
+          "Aufgabe 1 gemeinsam (4 Min.): Kästen an die Tafel, Situation und Bens Gedanken eintragen, die Gruppe ergänzt Gefühl und Verhalten. Fragen: „Was ändert sich, wenn nur der Gedanke anders ist?“",
+          "Aufgabe 2 zu zweit (2 Min.), Aufgaben 3 und 4 allein (6 Min.). Die eigene Situation wird nicht vorgelesen, außer jemand möchte das.",
+          "Abschluss (1 Min.): den Merkkasten lesen und zu den Glaubenssätzen überleiten."
+        ],
+        "hintergrund": "Das Blatt folgt dem ABC-Modell von Ellis (1962): Nicht das Ereignis (A) löst Gefühl und Verhalten (C) aus, sondern seine Bewertung (B). Beck (2011) beschreibt dieselbe Kette als kognitives Modell, in dem automatische Gedanken von tiefer liegenden Grundüberzeugungen gefärbt werden – den Glaubenssätzen, um die es im Modul geht. Arbeitsbücher der kognitiven Verhaltenstherapie für Kinder und Jugendliche führen das Modell an alltäglichen, harmlosen Situationen ein, bevor eigene Themen folgen (Stallard, 2019).",
+        "quellen": [
+          "Ellis, A. (1962). Reason and Emotion in Psychotherapy. New York: Lyle Stuart.",
+          "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
+          "Stallard, P. (2019). Think Good, Feel Good: A Cognitive Behavioural Therapy Workbook for Children and Young People (2nd ed.). Chichester: Wiley."
+        ],
+        "differenzierung": {
+          "leichter": "Aufgabe 3 mündlich zu zweit lösen; die Leitung schreibt mit.",
+          "schwerer": "Zur eigenen Situation einen dritten Gedanken finden, der realistisch ist und trotzdem hilft."
+        },
+        "impulse": [
+          "Welcher Gedanke kommt euch bei einer unbeantworteten Nachricht zuerst?",
+          "Woran merkt man, dass ein Gedanke gerade das Steuer übernimmt?"
+        ],
+        "tipps": [
+          "Mit harmlosen Beispielen beginnen; persönliche Themen folgen erst in den nächsten Einheiten.",
+          "Gefühle mit Wörtern aus dem Gefühlsrad benennen lassen."
+        ],
+        "achtung": "Nennt jemand bei der eigenen Situation etwas Belastendes, nicht im Plenum vertiefen, sondern ein Einzelgespräch anbieten. Bei Hinweisen auf Gefährdung nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) informieren.",
+        "material": "Blatt je Person, Tafel oder Flipchart"
+      }
+    }
+  },
+  {
+    "id": "skills-glaubenssatz-karten",
+    "bereich": "skills",
+    "thema": "gedanken",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "gruppe"
+    ],
+    "dauer": "15 Min. (Sortierspiel)",
+    "eldib": [
+      "SOZ-40",
+      "K-19",
+      "SOZ-36"
+    ],
+    "schlagworte": [
+      "Glaubenssätze",
+      "Selbstbild",
+      "Kartenspiel",
+      "Sortieren",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:bubble",
+    "verwandt": [
+      "skills-gedanke-gefuehl-verhalten",
+      "skills-kritischer-detektiv"
+    ],
+    "kurs": [
+      "j1-e16",
+      "j1-e17",
+      "j1-e18",
+      "j1-e19"
+    ],
+    "de": {
+      "titel": "Glaubenssatz-Karten",
+      "untertitel": "Sätze, die Menschen über sich glauben – zum Ausschneiden, Sortieren und Weiterverwenden",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Schneidet die Karten aus und sortiert sie auf drei Felder: Der Satz hilft – kommt drauf an – bremst.",
+          "hinweis": "Nicht jede Karte ist eindeutig. Wer eine Karte legt, sagt kurz, warum.",
+          "symbole": [
+            "schneiden",
+            "gruppe"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 3,
+          "hoehe": 62,
+          "karten": [
+            {
+              "titel": "Ich bin nicht gut genug."
+            },
+            {
+              "titel": "Es gibt Menschen, die mich mögen."
+            },
+            {
+              "titel": "Ich brauche niemanden."
+            },
+            {
+              "titel": "Ich probiere es. Wenn ich Hilfe brauche, frage ich."
+            },
+            {
+              "titel": "Ich bin dumm."
+            },
+            {
+              "titel": "Meine Gefühle zählen genauso wie die der anderen."
+            },
+            {
+              "titel": "Keiner mag mich."
+            },
+            {
+              "titel": "Ich gebe mein Bestes. Fehler gehören dazu."
+            },
+            {
+              "titel": "Die anderen sind besser als ich."
+            },
+            {
+              "titel": "Mir ist alles egal."
+            },
+            {
+              "titel": "Ich bin okay, so wie ich bin – und ich lerne dazu."
+            },
+            {
+              "titel": "Ich bin immer schuld."
+            },
+            {
+              "titel": "Ich habe schon einiges geschafft."
+            },
+            {
+              "titel": "Wenn ich Nein sage, mag mich keiner mehr."
+            },
+            {
+              "titel": "Manches fällt mir schwer, anderes kann ich gut."
+            },
+            {
+              "titel": "Das schaffe ich eh nicht."
+            },
+            {
+              "titel": "Einmal hat es nicht geklappt. Das sagt nichts über später."
+            },
+            {
+              "titel": "Meine Gefühle sind nicht wichtig."
+            },
+            {
+              "titel": "Ich übernehme Verantwortung für meinen Teil."
+            },
+            {
+              "titel": "Ich bin anders als alle anderen."
+            },
+            {
+              "titel": "Mir hilft sowieso keiner."
+            },
+            {
+              "titel": "Ich muss perfekt sein."
+            },
+            {
+              "titel": "Jeder hat andere Stärken – ich auch."
+            },
+            {
+              "titel": "Ich bin zu schwach."
+            },
+            {
+              "titel": "Ich kann mir Hilfe holen."
+            },
+            {
+              "titel": "Ich werde nie eine Beziehung haben."
+            },
+            {
+              "titel": "Echte Freunde halten ein Nein aus."
+            }
+          ]
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Legt diese drei Karten als Felder auf den Boden oder auf einen großen Tisch.",
+          "symbole": [
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 3,
+          "hoehe": 150,
+          "karten": [
+            {
+              "titel": "Hilft",
+              "text": "macht Mut und stimmt",
+              "bild": "icon:thumb-up"
+            },
+            {
+              "titel": "Kommt drauf an",
+              "text": "hilft manchmal, bremst manchmal",
+              "bild": "icon:arrows-shuffle"
+            },
+            {
+              "titel": "Bremst",
+              "text": "macht klein und hält zurück",
+              "bild": "icon:hand-stop"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Woher könnte ein bremsender Satz kommen? Legt eine dieser Karten daneben."
+        },
+        {
+          "art": "karten",
+          "spalten": 3,
+          "hoehe": 88,
+          "karten": [
+            {
+              "titel": "Eine einzige Situation",
+              "text": "Einmal ging etwas schief – daraus wurde „immer“."
+            },
+            {
+              "titel": "Sprüche von anderen",
+              "text": "Jemand hat es oft genug gesagt."
+            },
+            {
+              "titel": "Vergleiche",
+              "text": "Die anderen scheinen alles besser zu können."
+            },
+            {
+              "titel": "Social Media",
+              "text": "Perfekte Bilder, perfekte Leben – aber nur der Ausschnitt."
+            },
+            {
+              "titel": "Wiederholte Erfahrungen",
+              "text": "Es ist mehrmals ähnlich passiert."
+            },
+            {
+              "titel": "Früher ein Schutz",
+              "text": "Der Satz hat einmal vor Enttäuschung bewahrt."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schreibt eigene Sätze auf die leeren Karten – bremsende oder hilfreiche."
+        },
+        {
+          "art": "karten",
+          "spalten": 3,
+          "hoehe": 62,
+          "karten": [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Karten machen Glaubenssätze greifbar: sortieren, nach der Herkunft fragen, Gegenstücke finden – später auch im Gedankenstopp-Spiel und für den Glaubenssatz-Baum.",
+        "ablauf": [
+          "Vorbereitung: auf festes Papier drucken und ausschneiden. Seite 1 enthält 12 bremsende Sätze, ihre 12 hilfreichen Gegenstücke und 3 Sätze zum Diskutieren.",
+          "Einheit 16 (15 Min.): Legekarten auf den Boden. Reihum eine Karte ziehen, vorlesen, ablegen, kurz begründen. Verschieben ist mit Begründung erlaubt.",
+          "Dann zwei, drei bremsende Karten nehmen: „Woher könnte jemand so einen Satz haben?“ Herkunftskarten danebenlegen.",
+          "Zum Schluss die Gegenstücke zuordnen. Später: Rückblick in Einheit 17, Gedankenstopp-Spiel in Einheit 18, Glaubenssatz-Baum in Einheit 19."
+        ],
+        "hintergrund": "Glaubenssätze sind verallgemeinerte Annahmen über sich selbst, andere und die Welt; sie entstehen aus Erfahrungen und wirken oft unbemerkt als Filter für neue Erlebnisse (Beck, 2011). Auf Karten werden sie zu einem Gegenstand, über den man sprechen kann, ohne Persönliches preiszugeben. Die Sätze zum Diskutieren („Mir ist alles egal“) klingen stark und bremsen trotzdem – oft haben sie früher geschützt. Im Jugendalter prägen Vergleiche mit Gleichaltrigen das Selbstbild besonders (Harter, 2012); die Herkunftskarten machen solche Einflüsse sichtbar.",
+        "quellen": [
+          "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
+          "Harter, S. (2012). The Construction of the Self (2nd ed.). New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Mit acht Satzkarten und nur zwei Feldern spielen: hilft, bremst.",
+          "schwerer": "Zu jeder Karte im Feld „Kommt drauf an“ eine Situation finden, in der sie hilft, und eine, in der sie bremst."
+        },
+        "impulse": [
+          "Welcher Satz war am schwersten einzuordnen?",
+          "Warum glauben Menschen Sätze, die ihnen nicht guttun?"
+        ],
+        "tipps": [
+          "Zweimal drucken: ein Satz für das Spiel, einer für das Plakat in Einheit 19.",
+          "Beim Legen nur über Sätze sprechen, nie über Personen."
+        ],
+        "achtung": "Einzelne Sätze können Jugendliche treffen, die gerade Ausgrenzung erleben: auf Rückzug oder auffällige Witze achten und ein Einzelgespräch anbieten. Bei Hinweisen auf Gefährdung nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) informieren.",
+        "material": "Festes Papier (160 g), Scheren, Umschlag zum Aufbewahren"
+      }
+    }
+  },
+  {
+    "id": "skills-meine-glaubenssaetze",
+    "bereich": "skills",
+    "thema": "gedanken",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln"
+    ],
+    "dauer": "30 Min.",
+    "eldib": [
+      "SOZ-40",
+      "K-19",
+      "V-33"
+    ],
+    "schlagworte": [
+      "Glaubenssätze",
+      "Selbstbild",
+      "Selbstreflexion",
+      "Schreiben",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:lock",
+    "verwandt": [
+      "skills-glaubenssatz-karten",
+      "skills-kritischer-detektiv"
+    ],
+    "kurs": [
+      "j1-e17",
+      "j1-e18"
+    ],
+    "de": {
+      "titel": "Meine Glaubenssätze",
+      "untertitel": "Nur für dich – niemand muss lesen, was du hier schreibst.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Du entscheidest, was du teilst.",
+          "text": "Das Blatt kommt am Ende in einen Umschlag, den nur du öffnest. Vorlesen ist freiwillig – auch einzelne Sätze."
+        },
+        {
+          "art": "text",
+          "text": "Glaubenssätze sind Sätze, die du über dich denkst – oft schon so lange, dass sie sich wie Tatsachen anfühlen. Viele sind aus einer einzigen Erfahrung entstanden oder aus Sprüchen, die du oft gehört hast. Manche haben dich früher geschützt. Ob sie heute noch stimmen, ist eine andere Frage."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schreib bis zu fünf Sätze auf, die du manchmal über dich denkst und die dich bremsen. Beantworte die Fragen in Stichworten.",
+          "hinweis": "Du kannst eigene Sätze nehmen oder dir einen aus dem Kasten leihen.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "wortspeicher",
+          "titel": "Sätze, die viele kennen",
+          "items": [
+            "Ich bin nicht gut genug.",
+            "Das schaffe ich eh nicht.",
+            "Die anderen sind besser als ich.",
+            "Ich muss perfekt sein.",
+            "Keiner versteht mich.",
+            "Ich bin immer schuld.",
+            "Wenn ich Nein sage, mag mich keiner mehr.",
+            "Mir hilft sowieso keiner."
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Mein Glaubenssatz",
+            "Woher kommt er? Seit wann?",
+            "Stimmt er heute noch? (0–100 %)",
+            "Wo bremst er mich?"
+          ],
+          "breiten": [
+            1.3,
+            1.35,
+            0.95,
+            1.3
+          ],
+          "zeilen": 5,
+          "beispiel": [
+            "Ich bin schlecht in Sprachen.",
+            "Seit ich im Cycle 3 beim Vorlesen ausgelacht wurde.",
+            "50 % – in Englisch bin ich inzwischen okay.",
+            "Ich melde mich in Französisch nie."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Welcher Satz bremst dich am meisten? Schau unter die Wasseroberfläche.",
+          "hinweis": "Andere sehen nur, was du tust. Was darunter liegt, weißt nur du."
+        },
+        {
+          "art": "eisberg",
+          "oben": "Was andere sehen: So verhalte ich mich, wenn der Satz da ist",
+          "unten": "Was keiner sieht: Was ich dann fühle – und was der Satz mir einredet",
+          "beispielOben": "Ich sage im Unterricht fast nichts.",
+          "beispielUnten": "Ich schäme mich schnell. Der Satz sagt: „Wenn du etwas Falsches sagst, lachen alle.“"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Stell dir vor, deine beste Freundin oder dein bester Freund würde so über sich denken. Was würdest du ihr oder ihm sagen?"
+        },
+        {
+          "art": "linien",
+          "anzahl": 3
+        },
+        {
+          "art": "notfall",
+          "text": "Wenn dich ein Satz sehr runterzieht: Hier bekommst du Hilfe"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen notieren eigene bremsende Glaubenssätze, fragen nach deren Herkunft, schätzen ein, ob sie heute noch stimmen, und erkennen, wo sie bremsen. Das Blatt bleibt privat.",
+        "ablauf": [
+          "Rahmen vor dem Austeilen: „Was ihr schreibt, gehört euch. Ich lese es nicht, außer ihr zeigt es mir.“ Auch sagen, wo die Vertraulichkeit endet.",
+          "Aufgabe 1 (15 Min.): Beispielzeile vorlesen. Stichworte reichen, schon eine Zeile ist viel. Nur auf Nachfrage helfen.",
+          "Aufgabe 2 (7 Min.) ist ein Angebot. Aufgabe 3 (5 Min.) machen alle – sie endet mit einem freundlichen Blick auf sich selbst.",
+          "Blatt in den Umschlag, Namen darauf, zukleben, in die persönliche Mappe. In Einheit 18 wird der Umschlag wieder ausgeteilt."
+        ],
+        "hintergrund": "In der kognitiven Verhaltenstherapie entsprechen solche Sätze den Grundüberzeugungen: früh gelernten, stark verallgemeinerten Annahmen, etwa hilflos, nicht liebenswert oder wertlos zu sein, die später kaum noch überprüft werden (Beck, 2011). Herkunft und Prozentwert schaffen Abstand: Aus einer Tatsache wird eine prüfbare Annahme. Im Jugendalter wird das Selbstbild abstrakter und oft selbstkritischer (Harter, 2012). Private Schreibaufgaben helfen, Belastendes zu ordnen, ohne es preiszugeben (Pennebaker, 1997).",
+        "quellen": [
+          "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
+          "Harter, S. (2012). The Construction of the Self (2nd ed.). New York: Guilford.",
+          "Pennebaker, J. W. (1997). Writing about emotional experiences as a therapeutic process. Psychological Science, 8(3), 162–166."
+        ],
+        "differenzierung": {
+          "leichter": "Ein oder zwei Sätze aus dem Kasten nehmen; die Fragen leise mit der Leitung besprechen.",
+          "schwerer": "Zu jedem Satz notieren, wer ihn heute noch bestätigt – und wer ihm widerspricht."
+        },
+        "impulse": [
+          "Welche Frage war am schwersten?",
+          "Hat sich beim Schreiben etwas verändert – der Satz, das Gefühl?"
+        ],
+        "tipps": [
+          "Einzelplätze und leise Musik; niemand sitzt so, dass andere mitlesen können.",
+          "Wer nichts schreiben mag, bearbeitet nur Aufgabe 3."
+        ],
+        "achtung": "Fallen Sätze wie „Ich bin nichts wert“ oder „Es wäre besser, wenn es mich nicht gäbe“ – auf dem Blatt oder im Gespräch –, noch in der Einheit ein Einzelgespräch führen, die Person nicht allein lassen, nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) informieren.",
+        "material": "Umschlag je Person, Stifte, leise Musik (optional)"
+      }
+    }
+  },
+  {
+    "id": "skills-kritischer-detektiv",
+    "bereich": "skills",
+    "thema": "gedanken",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "35 Min.",
+    "eldib": [
+      "V-33",
+      "SOZ-36",
+      "V-18"
+    ],
+    "schlagworte": [
+      "Glaubenssätze",
+      "Beweise prüfen",
+      "Fakten prüfen",
+      "Umformulieren",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:search",
+    "verwandt": [
+      "skills-meine-glaubenssaetze",
+      "skills-beweis-challenge"
+    ],
+    "kurs": [
+      "j1-e18"
+    ],
+    "de": {
+      "titel": "Der kritische Detektiv",
+      "untertitel": "Stimmt das wirklich? Ein guter Detektiv glaubt nichts, nur weil es jemand behauptet – auch nicht die eigene innere Stimme.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Schreib den verdächtigen Satz auf. Wie sehr glaubst du ihn gerade?",
+          "hinweis": "Nimm einen Satz von deinem Blatt „Meine Glaubenssätze“ oder eine Karte aus dem Sortierspiel."
+        },
+        {
+          "art": "feld",
+          "label": "Der verdächtige Satz",
+          "hoehe": 2
+        },
+        {
+          "art": "skala",
+          "von": "0 – gar nicht",
+          "bis": "10 – völlig",
+          "stufen": 11,
+          "frage": "So sehr glaube ich ihn vor der Beweisaufnahme:"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Sammle Beweise für beide Seiten – auch wenn du von der zweiten Seite noch nicht überzeugt bist.",
+          "hinweis": "Ein Beweis ist etwas, das wirklich passiert ist. Ein Gefühl oder eine Vermutung zählt nicht."
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Detektivfragen",
+          "punkte": [
+            "Gab es eine Situation, in der der Satz nicht gestimmt hat?",
+            "Was würde eine gute Freundin oder ein guter Freund dazu sagen?",
+            "Würde ich das auch über jemanden sagen, den ich mag?",
+            "Stimmt der Satz immer – oder nur manchmal, nur in einem Bereich?",
+            "Ist das eine Tatsache oder ein Gefühl?"
+          ]
+        },
+        {
+          "art": "waage",
+          "links": "Beweise, dass er stimmt",
+          "rechts": "Beweise, dass er nicht (immer) stimmt",
+          "zeilen": 5
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dein Urteil als Detektiv: Was stimmt wirklich?",
+          "hinweis": "Oft stimmt nur ein kleiner Teil – zum Beispiel nicht „Ich bin dumm“, sondern „Mathe fällt mir schwer“."
+        },
+        {
+          "art": "ankreuzen",
+          "titel": "Der Satz stimmt …",
+          "spalten": 3,
+          "items": [
+            "immer",
+            "manchmal",
+            "selten oder nie"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Genauer gesagt stimmt nur:"
+          ],
+          "linien": 2
+        },
+        {
+          "art": "skala",
+          "von": "0 – gar nicht",
+          "bis": "10 – völlig",
+          "stufen": 11,
+          "frage": "So sehr glaube ich den alten Satz jetzt:"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Bau einen neuen, realistischen Satz nach den sechs Regeln. Hak ab, was dein Satz schon erfüllt.",
+          "hinweis": "Regel 1 hast du schon erledigt: Du hast den alten Satz erkannt und aufgeschrieben.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "items": [
+            "2 · Realistisch bleiben: Ich kann mir den Satz glauben. „Ich bin perfekt“ glaubt keiner.",
+            "3 · Positiv und aktiv: Er sagt, was ich tue – nicht, was ich nicht bin.",
+            "4 · Beeinflussbar: Es geht um etwas, das ich selbst steuern kann.",
+            "5 · Gegenwart: „Ich lerne …“ statt „Irgendwann werde ich …“",
+            "6 · Wachstum: Er lässt Platz zum Besserwerden."
+          ]
+        },
+        {
+          "art": "feld",
+          "label": "Mein neuer Satz",
+          "hoehe": 4,
+          "beispiel": "„Ich bin schlecht in Mathe“ wird zu „Mathe fällt mir schwer, aber wenn ich übe und frage, werde ich besser.“"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wie würdest du dich verhalten, wenn du den neuen Satz glaubst? Plane eine konkrete Situation."
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Wenn ich in Mathe etwas nicht verstehe,",
+              "dann": "melde ich mich und frage nach, statt abzuschalten."
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Und dann?",
+          "text": "Dein neuer Satz kommt auf ein Kärtchen zu deinen Skills-Kärtchen. So hast du ihn dabei, wenn sich der alte Satz meldet."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen prüfen einen eigenen bremsenden Glaubenssatz wie ein Detektiv, schätzen ihn danach neu ein und formulieren nach sechs Regeln einen realistischen, hilfreichen Satz.",
+        "ablauf": [
+          "Zwei Blätter je Person, eines pro Satz. Vormachen (5 Min.): Mit der Karte „Ich bin dumm“ die Waage an der Tafel füllen. 22 von 60 Punkten sind eine Tatsache, „dumm“ ist ein Urteil.",
+          "Seite 1 allein (10 Min.): Die Detektivfragen helfen, wenn die rechte Seite leer bleibt.",
+          "Gemeinsam (5 Min.): Wer mag, nennt einen Satz, und alle suchen Gegenbeweise. Sonst mit einer Karte arbeiten.",
+          "Seite 2 (15 Min.): Urteil, neuer Satz nach den Regeln, Wenn-dann-Zeile. Das Mathe-Beispiel vorher an der Tafel zeigen."
+        ],
+        "hintergrund": "Das Blatt überträgt Techniken der kognitiven Verhaltenstherapie in eine jugendgerechte Form: Belege prüfen, sokratisch nachfragen und die Überzeugung vorher und nachher einschätzen (Beck, 2011). Fragen wie „Was würde eine Freundin sagen?“ schaffen Abstand; solches Selbst-Distanzieren senkt die Belastung beim Nachdenken über Schwieriges (Kross & Ayduk, 2017). Ein neuer Satz wirkt nur, wenn er realistisch ist und nach Lernen klingt statt nach festem Urteil (Dweck, 2006). Im DBT-Skillstraining heißt der verwandte Skill „Fakten prüfen“ (Linehan, 2015).",
+        "quellen": [
+          "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
+          "Kross, E. & Ayduk, O. (2017). Self-distancing: Theory, research, and current directions. Advances in Experimental Social Psychology, 55, 81–136.",
+          "Dweck, C. S. (2006). Mindset: The New Psychology of Success. New York: Random House.",
+          "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Nur Seite 1; den neuen Satz gemeinsam mit der Leitung formulieren.",
+          "schwerer": "Vorhersagen, wo sich der neue Satz in der nächsten Woche bewähren muss."
+        },
+        "impulse": [
+          "Was war leichter zu finden: Beweise dafür oder dagegen?",
+          "Klingt dein neuer Satz nach dir – oder nach einem Poster?"
+        ],
+        "tipps": [
+          "Gedanken prüfen klappt im grünen Bereich; über 70 zuerst ein Körper-Skill.",
+          "Nicht zum Gegenteil springen: „Ich bin super“ überzeugt niemanden."
+        ],
+        "achtung": "Hat ein Satz einen wahren Kern, etwa bei echter Ausgrenzung, nicht wegdiskutieren, sondern ernst nehmen und im Einzelgespräch klären, wer helfen kann. Bei Hinweisen auf Gefährdung nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) informieren.",
+        "material": "Zwei Blätter je Person, Umschläge aus Einheit 17, Tafel"
+      }
+    }
+  },
+  {
+    "id": "skills-beweis-challenge",
+    "bereich": "skills",
+    "thema": "gedanken",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln"
+    ],
+    "dauer": "10 Min., dann täglich 2 Min.",
+    "eldib": [
+      "V-25",
+      "V-24",
+      "V-22"
+    ],
+    "schlagworte": [
+      "Glaubenssätze",
+      "Selbstwirksamkeit",
+      "Transfer",
+      "Wochenauftrag",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:clipboard-check",
+    "verwandt": [
+      "skills-kritischer-detektiv"
+    ],
+    "kurs": [
+      "j1-e19",
+      "j1-e20"
+    ],
+    "de": {
+      "titel": "Meine Beweis-Challenge",
+      "untertitel": "Ein neuer Satz wird stärker, wenn du ihn im Alltag erlebst. Sammle eine Woche lang Beweise dafür, dass er stimmt.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Schreib deinen neuen Satz auf.",
+          "hinweis": "Nimm den Satz von deinem Kärtchen, der dir gerade am wichtigsten ist."
+        },
+        {
+          "art": "feld",
+          "label": "Mein neuer Satz",
+          "hoehe": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wo kannst du den Satz diese Woche testen? Plane eine Situation.",
+          "hinweis": "Je genauer, desto besser: wann, wo, mit wem."
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Wenn ich am Dienstag in Mathe nicht weiterweiß,",
+              "dann": "sage ich mir: „Ich probiere es, Fehler sind okay“ – und frage nach."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Sammle jeden Tag einen Beweis: eine Situation, in der dein neuer Satz gestimmt hat. Auch ein kleiner zählt."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Tag",
+            "Was ist passiert?",
+            "Was zeigt mir das?"
+          ],
+          "breiten": [
+            0.55,
+            2.4,
+            2
+          ],
+          "zeilen": 5,
+          "beispiel": [
+            "Mo",
+            "In Mathe drangekommen. Erst gestockt, dann nachgefragt – am Ende war die Lösung richtig.",
+            "Nachfragen geht. Ich brauche manchmal nur eine Erklärung mehr."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wie sehr glaubst du deinen neuen Satz? Kreuze heute an – und nach einer Woche noch einmal.",
+          "hinweis": "Nächstes Mal darfst du zu Beginn einen Beweis erzählen – oder was dich gebremst hat. Auch das ist eine Beobachtung."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "0–2",
+            "3–4",
+            "5–6",
+            "7–8",
+            "9–10"
+          ],
+          "items": [
+            "Heute glaube ich ihn so sehr:",
+            "Nach einer Woche glaube ich ihn so sehr:"
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen übertragen ihren neuen Glaubenssatz in den Alltag: eine Situation planen, eine Woche lang Belege sammeln und bemerken, ob sich die Überzeugung verändert.",
+        "ablauf": [
+          "Einheit 19 (10 Min.): einen neuen Satz vom Kärtchen abschreiben und das Beispiel für den Wenn-dann-Plan vorlesen. Fragen: „Wann genau wird dein Satz diese Woche gebraucht?“",
+          "Nur eine Situation planen, dann die Einschätzung für heute ankreuzen. Das Blatt geht mit nach Hause.",
+          "Während der Woche: täglich ein Beweis, auch ein kleiner. Notizen im Handy sind erlaubt.",
+          "Einheit 20, zu Beginn: Wer mag, erzählt einen Beweis. Gefragt wird nach Beobachtungen, nicht nach Erfolgen."
+        ],
+        "hintergrund": "Überzeugungen ändern sich eher durch Erfahrungen als durch Argumente: Eigene Bewältigungserlebnisse sind die stärkste Quelle von Selbstwirksamkeit (Bandura, 1977). Ein bremsender Glaubenssatz lenkt den Blick auf Bestätigendes, Gegenbelege werden leicht übersehen (Beck, 2011) – die Challenge dreht das um. Ein konkreter Wenn-dann-Plan erhöht die Chance, dass ein Vorsatz umgesetzt wird (Gollwitzer, 1999). Tägliches Aufschreiben guter Erlebnisse steigerte in einer Studie das Wohlbefinden über Monate (Seligman et al., 2005).",
+        "quellen": [
+          "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
+          "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503.",
+          "Seligman, M. E. P., Steen, T. A., Park, N. & Peterson, C. (2005). Positive psychology progress: Empirical validation of interventions. American Psychologist, 60(5), 410–421."
+        ],
+        "differenzierung": {
+          "leichter": "Nur drei Tage sammeln; Beweise dürfen auch mündlich erzählt werden.",
+          "schwerer": "Notieren, wann sich der alte Satz gemeldet hat und was geholfen hat, ihm nicht zu folgen."
+        },
+        "impulse": [
+          "Wann hast du deinen Satz diese Woche gebraucht?",
+          "Was war der kleinste Beweis – und warum zählt er trotzdem?"
+        ],
+        "tipps": [
+          "Beweise nie bewerten – gerade kleine Belege sind das Ziel.",
+          "Wer nichts gefunden hat, sucht mit der Leitung nach übersehenen Momenten."
+        ],
+        "achtung": "Bestätigt die Woche den alten Satz, etwa durch anhaltende Ausgrenzung, nicht auf Durchhalten drängen: im Einzelgespräch nachfragen, bei Bedarf SePAS oder Responsable einbeziehen.",
+        "material": "Blatt je Person"
+      }
+    }
+  }
+]

@@ -1,0 +1,854 @@
+{
+  "einheiten": [
+    {
+      "id": "j1-e16",
+      "nr": 16,
+      "jahr": 1,
+      "modul": "j1-m4",
+      "titel": "Was sind Glaubenssätze?",
+      "kurz": "Zwischen Situation und Gefühl steht ein Gedanke: Die Gruppe entdeckt Glaubenssätze – Sätze über sich selbst, die helfen oder bremsen – und merkt, dass viele dieselben kennen.",
+      "dauer": 100,
+      "ziele": [
+        "verstehen an Beispielen, dass dieselbe Situation je nach Gedanke zu verschiedenen Gefühlen und Handlungen führt",
+        "erklären, was Glaubenssätze sind, und unterscheiden hilfreiche von bremsenden Sätzen",
+        "nennen mögliche Quellen von Glaubenssätzen: einzelne Erfahrungen, Sprüche anderer, Vergleiche, Social Media",
+        "erleben, dass viele in der Gruppe dieselben bremsenden Sätze kennen"
+      ],
+      "material": [
+        "Gefühlsrad in A3 und Anspannungsskala 0–100 (Plakat oder Tafelbild aus Einheit 11)",
+        "Schülerblatt „Der Gedanke macht den Unterschied“ je Person",
+        "Glaubenssatz-Karten, auf festes Papier gedruckt und ausgeschnitten, dazu ein Umschlag",
+        "Klebeband für eine Linie am Boden",
+        "Tafel oder Flipchart, dicke Stifte",
+        "Skills-Pässe, Stempel",
+        "Imbiss und Getränke"
+      ],
+      "vorbereitung": [
+        "Glaubenssatz-Karten drucken und ausschneiden; die drei Legekarten „Hilft“, „Kommt drauf an“ und „Bremst“ bereitlegen",
+        "Mit Klebeband eine Linie quer durch den Raum kleben, davor zwei Meter frei lassen",
+        "Tafelbild vorbereiten: vier Kästen nebeneinander – Situation, Gedanke, Gefühl, Verhalten"
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-gedanke-gefuehl-verhalten",
+        "skills-glaubenssatz-karten",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Gefühlsrad, Anspannung, Kopf-Lautstärke"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Rückblick auf den Skills-Koffer, neues Modul"
+        },
+        {
+          "min": "15–30",
+          "phase": "input",
+          "titel": "Was sind Glaubenssätze?"
+        },
+        {
+          "min": "30–45",
+          "phase": "uebung",
+          "titel": "Situation – Gedanke – Gefühl – Verhalten"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–72",
+          "phase": "aktiv",
+          "titel": "Ein Schritt nach vorn – mit geschlossenen Augen"
+        },
+        {
+          "min": "72–87",
+          "phase": "aktiv",
+          "titel": "Sortierspiel mit den Glaubenssatz-Karten"
+        },
+        {
+          "min": "87–95",
+          "phase": "skill",
+          "titel": "Skill: Gedankenschiffchen"
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Réckbléck und Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: Gefühlsrad, Anspannung, Kopf-Lautstärke",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Gefühlsrad und Anspannung von 0 bis 100 wie gewohnt; die Leitung beginnt. Heute kommt eine kurze dritte Angabe dazu: Wie laut ist es gerade im Kopf – leise, mittel oder laut? Die Antworten werden nicht kommentiert, höchstens mit einem Nicken bestätigt.",
+          "sagen": [
+            "Gefühl, Zahl und Kopf-Lautstärke – mehr braucht es heute nicht.",
+            "Laut heißt: Da ist viel los, die Gedanken rattern. Leise heißt: eher ruhig da oben."
+          ],
+          "tipp": "Die Frage nach der Kopf-Lautstärke führt ohne Erklärung zum Thema: Gedanken sind immer da, auch wenn niemand über sie spricht.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Rückblick und neues Modul",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "Kurz an die letzte Einheit erinnern: Alle haben jetzt einen Skills-Koffer, einen Ampelplan und Skills-Kärtchen. Dann den Satz aus der letzten Überleitung aufgreifen und das neue Modul ankündigen. Die Leitfrage an die Tafel schreiben: Was denke ich über mich – und stimmt das?",
+          "sagen": [
+            "Ihr habt inzwischen eine Menge Werkzeuge für den Moment, in dem die Welle hochgeht.",
+            "Manchmal macht aber nicht die Situation die Welle, sondern der Gedanke dazu. Den schauen wir uns die nächsten vier Wochen an."
+          ]
+        },
+        {
+          "titel": "Was sind Glaubenssätze?",
+          "dauer": 15,
+          "phase": "input",
+          "text": "Mit der Einstiegsfrage beginnen und zwei, drei Beispiele sammeln. Dann kurz erklären: Glaubenssätze sind Sätze, die wir über uns selbst für wahr halten, oft ohne es zu merken; manche helfen, manche bremsen. Viele entstehen aus einer einzigen Situation und werden danach nie wieder überprüft. Dazu die Geschichte von Luca erzählen und die Gruppe fragen, ob sein Satz stimmt. Zum Schluss an der Tafel zwei Spalten anlegen, hilfreich und bremsend, mit je zwei Beispielen aus der Gruppe.",
+          "sagen": [
+            "Kennt ihr das, wenn ihr euch denkt: Das kann ich nicht, das ist zu schwer für mich? Solche Sätze sagt man sich oft – aber sie stimmen nicht immer.",
+            "Viele Glaubenssätze hatten mal einen guten Grund. Die Frage ist nur, ob sie heute noch passen."
+          ],
+          "punkte": [
+            "Luca war zwölf, als er in der Kantine ein Mädchen ansprechen wollte, in das er verliebt war. Er hat sich nicht getraut. Daraus wurde der Satz: „Ich werde nie eine Beziehung haben.“ Stimmt das? Nein – es war eine einzige Situation, am Anfang der Pubertät, vielleicht an einem schlechten Tag.",
+            "Einmal beim Vorlesen ausgelacht – daraus wird: „Ich kann nicht vor anderen reden.“",
+            "In der Pause beim Fußball immer als Letzter gewählt – daraus wird: „Ich bin unsportlich.“",
+            "Ein Spruch, den man oft gehört hat („Du bist so chaotisch“), wird irgendwann zu einem Satz, den man sich selbst sagt."
+          ],
+          "tipp": "Selbst einen harmlosen, längst erledigten Glaubenssatz von früher erzählen, etwa „Ich kann nicht singen“ – das macht das Thema greifbar, ohne dass jemand von sich erzählen muss.",
+          "wennEsKippt": "Kommt ein Spruch wie „Ich bin halt dumm, ist so“, nicht widersprechen und nicht belehren. Ruhig antworten, dass viele diesen Satz kennen, und ihn ohne Namen in die Spalte „bremsend“ schreiben: Genau solche Sätze prüft die Gruppe in den nächsten Wochen."
+        },
+        {
+          "titel": "Situation – Gedanke – Gefühl – Verhalten",
+          "dauer": 15,
+          "phase": "uebung",
+          "text": "Das Schülerblatt austeilen und die vier Kästen oben kurz erklären. Aufgabe 1 gemeinsam lösen: Die Leitung trägt die Situation und Bens zwei Gedanken ins vorbereitete Tafelbild ein, die Gruppe ergänzt Gefühl und Verhalten, alle schreiben mit. Aufgabe 2 zu zweit, Aufgaben 3 und 4 allein; die eigene Situation in Aufgabe 4 wird nicht vorgelesen. Zum Schluss die Verbindung zum Thema ziehen: Welcher Gedanke zuerst kommt, hängt oft von einem Glaubenssatz ab.",
+          "sagen": [
+            "Dieselbe Situation, zwei Gedanken – und plötzlich zwei ganz verschiedene Abende.",
+            "Wer tief drinnen glaubt, dass ihn keiner mag, liest aus einer unbeantworteten Nachricht viel schneller Ablehnung heraus."
+          ],
+          "tabelle": {
+            "spalten": [
+              "Situation",
+              "Gedanke",
+              "Gefühl",
+              "Verhalten"
+            ],
+            "zeilen": [
+              [
+                "Ben hat Mila geschrieben: gelesen, keine Antwort.",
+                "„Die hat keinen Bock mehr auf mich.“",
+                "gekränkt, traurig",
+                "schreibt nicht mehr, ist den ganzen Abend mies drauf"
+              ],
+              [
+                "Ben hat Mila geschrieben: gelesen, keine Antwort.",
+                "„Wahrscheinlich ist sie noch beim Training.“",
+                "gelassen, etwas ungeduldig",
+                "macht etwas anderes, fragt morgen nach"
+              ]
+            ]
+          },
+          "tipp": "Gefühle mit Wörtern aus dem Gefühlsrad benennen lassen – so wird sichtbar, wie verschieden sich zwei Gedanken anfühlen.",
+          "wennEsKippt": "Sagt jemand, man könne sich Gedanken nicht aussuchen, zustimmen: Der erste Gedanke kommt von allein. Den zweiten Blick darauf kann man aber üben – genau darum geht es in diesem Modul.",
+          "blatt": "skills-gedanke-gefuehl-verhalten"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Gemeinsam essen, Fenster auf, kurz raus. Das Thema ruht; die Leitung isst mit und ist ansprechbar."
+        },
+        {
+          "titel": "Ein Schritt nach vorn – mit geschlossenen Augen",
+          "dauer": 12,
+          "phase": "aktiv",
+          "text": "Alle stellen sich mit etwas Abstand auf die Klebebandlinie. Anders als in den Einheiten 2 und 11 sind diesmal die Augen geschlossen; wer das nicht mag, schaut auf den Boden. Die Leitung liest die Sätze langsam vor, wartet nach jedem einige Sekunden und sagt dann nur, wie viele ungefähr vorn stehen – ohne Namen, ohne Kommentar. Danach gehen alle zurück auf die Linie. Nach dem letzten Satz öffnen alle die Augen und setzen sich in den Kreis.",
+          "sagen": [
+            "Mach einen Schritt nach vorn, wenn du schon einmal gedacht hast …",
+            "Niemand kontrolliert, ob du gehst. Du darfst auch bei jedem Satz stehen bleiben.",
+            "Was fällt euch auf? Viele von uns kennen dieselben Sätze."
+          ],
+          "punkte": [
+            "… „Heute wird ein guter Tag.“ (zum Ausprobieren)",
+            "… „Das schaffe ich eh nicht.“",
+            "… „Die anderen sind besser als ich.“",
+            "… „Keiner versteht mich.“",
+            "… „Ich muss perfekt sein.“",
+            "… „Ich bin nicht gut genug.“",
+            "… „Ich kann gut mit anderen umgehen.“",
+            "… „Ich bin ein guter Freund oder eine gute Freundin.“",
+            "… „Wenn ich übe, werde ich besser.“"
+          ],
+          "tipp": "Die Rückmeldung bewusst ungenau halten („ziemlich viele“, „fast alle“) – genau das ist die Botschaft: Diese Sätze sind normal, und niemand ist allein damit.",
+          "wennEsKippt": "Wird gekichert oder geblinzelt, kurz unterbrechen und die Regel wiederholen: Augen zu, damit hier alle ehrlich sein können. Bleibt es unruhig, im Sitzen weitermachen: Alle legen den Kopf auf die Arme und heben bei einem Satz nur kurz die Hand. Bei nur zwei oder drei Jugendlichen keine Mengen nennen, sondern nach jedem Satz nur: Diesen Satz kennen sehr viele Menschen."
+        },
+        {
+          "titel": "Sortierspiel mit den Glaubenssatz-Karten",
+          "dauer": 15,
+          "phase": "aktiv",
+          "text": "Die Legekarten „Hilft“, „Kommt drauf an“ und „Bremst“ mit Abstand auf den Boden legen, die Satzkarten gemischt daneben. Reihum zieht jede Person eine Karte, liest sie laut vor, legt sie auf ein Feld und begründet kurz; wer anders denkt, darf sie mit Begründung verschieben. Nach etwa acht Minuten zwei, drei bremsende Karten herausnehmen und mit den Herkunftskarten überlegen, woher so ein Satz kommen könnte. Zum Schluss zu jeder bremsenden Karte das hilfreiche Gegenstück suchen. Alle Karten kommen in den Umschlag; sie werden in den nächsten Einheiten wieder gebraucht.",
+          "sagen": [
+            "Es gibt hier nicht immer eine richtige Lösung. Wichtig ist, dass ihr begründet.",
+            "Mir ist alles egal – klingt stark. Hilft der Satz oder bremst er?",
+            "Woher könnte jemand so einen Satz haben?"
+          ],
+          "tipp": "Die Karten im Feld „Kommt drauf an“ sind die ergiebigsten: Hier merken die Jugendlichen, dass manche Sätze einmal geschützt haben und heute trotzdem bremsen.",
+          "wennEsKippt": "Werden Karten Personen aus der Gruppe zugeschrieben („Das ist Tiagos Satz“), sofort stoppen und an den Gruppenvertrag erinnern: Heute geht es um Sätze, nicht um Personen. Danach mit festen Zügen reihum weiterspielen. Bei wenig Energie am Tisch statt auf dem Boden spielen; bei nur zwei Jugendlichen spielt die Leitung mit.",
+          "blatt": "skills-glaubenssatz-karten"
+        },
+        {
+          "titel": "Skill: Gedankenschiffchen",
+          "dauer": 8,
+          "phase": "skill",
+          "text": "Die Übung aus Einheit 14 kurz anleiten: bequem sitzen, Augen zu oder Blick auf den Boden. Wer mag, setzt einen der bremsenden Sätze von heute auf ein Schiff und schaut ihm nach, wie es den Fluss hinuntertreibt. Nach drei Minuten langsam zurückholen und kurz fragen, wie es war. Dann festhalten: Gedanken sind da, aber man muss nicht auf jedes Schiff aufsteigen.",
+          "sagen": [
+            "Stell dir einen Fluss vor. Jeder Gedanke, der kommt, bekommt ein kleines Schiff und treibt davon. Du schaust nur zu.",
+            "Wenn du merkst, dass du mitgefahren bist: kein Problem. Steig aus und schau wieder vom Ufer aus zu."
+          ],
+          "tipp": "Wer mit geschlossenen Augen unruhig wird, darf die Schiffe mit dem Finger auf den Tisch malen – auch das ist Zuschauen."
+        },
+        {
+          "titel": "Réckbléck und Skills-Pass",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Blitzlicht im Kreis: ein Satz dazu, was heute hängen geblieben ist. Dann trägt jede Person einen Satz in den Skills-Pass ein und bekommt den Stempel. Zum Schluss den Ausblick geben und ausdrücklich sagen, dass nächstes Mal niemand etwas laut vorlesen muss.",
+          "sagen": [
+            "Welcher Satz von heute bleibt bei euch hängen?",
+            "Für den Pass zum Beispiel: Gedanken sind keine Tatsachen."
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Nächstes Mal schaut jede und jeder ganz für sich auf die eigenen Glaubenssätze – und niemand muss sie laut sagen.",
+      "hintergrund": "Die Einheit verbindet zwei Grundideen der kognitiven Verhaltenstherapie. Das ABC-Modell nach Ellis (1962) zeigt, dass nicht ein Ereignis selbst, sondern seine Bewertung Gefühle und Verhalten prägt. Beck (2011) unterscheidet dabei schnelle, situative Gedanken von tiefer liegenden Grundüberzeugungen über die eigene Person – im Kurs heißen sie Glaubenssätze. Sie färben, welche Gedanken in einer Situation überhaupt auftauchen. Im Jugendalter wird das Selbstbild abstrakter, der Vergleich mit Gleichaltrigen wichtiger und die Selbstbewertung oft kritischer (Harter, 2012). Deshalb arbeitet die Gruppe zuerst mit fremden Sätzen und anonymen Formen; die Erfahrung, dass andere dieselben Sätze kennen, entlastet.",
+      "quellen": [
+        "Ellis, A. (1962). Reason and Emotion in Psychotherapy. New York: Lyle Stuart.",
+        "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
+        "Harter, S. (2012). The Construction of the Self (2nd ed.). New York: Guilford."
+      ],
+      "achtung": "Glaubenssätze berühren das Selbstwertgefühl. „Ein Schritt nach vorn“ nur mit geschlossenen Augen und nur mit den vorgegebenen Sätzen; niemand kommentiert, wer wo stand. Eigene Sätze werden heute nicht erfragt. Fallen Äußerungen starker Selbstabwertung („Ich bin nichts wert“, „Ohne mich wären alle besser dran“), nicht in der Gruppe vertiefen, sondern noch am selben Tag ein Einzelgespräch führen. Bei Hinweisen auf Selbstverletzung, Suizidgedanken, Gewalt oder Missbrauch sofort nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) informieren."
+    },
+    {
+      "id": "j1-e17",
+      "nr": 17,
+      "jahr": 1,
+      "modul": "j1-m4",
+      "titel": "Meine Glaubenssätze",
+      "kurz": "Jede Person schaut in Ruhe und nur für sich auf die eigenen bremsenden Glaubenssätze: woher sie kommen, ob sie heute noch stimmen und wo sie im Alltag bremsen.",
+      "dauer": 100,
+      "ziele": [
+        "schreiben eigene bremsende Glaubenssätze auf und fragen nach ihrer Herkunft",
+        "schätzen ein, wie sehr diese Sätze heute noch stimmen, und erkennen, wo sie im Alltag bremsen",
+        "erleben eine Runde, in der die Gruppe zuhört, ohne zu bewerten oder Ratschläge zu geben",
+        "lenken zum Schluss den Blick bewusst auf etwas Gutes"
+      ],
+      "material": [
+        "Gefühlsrad in A3 und Anspannungsskala 0–100",
+        "Glaubenssatz-Karten aus Einheit 16",
+        "Schülerblatt „Meine Glaubenssätze“ je Person",
+        "Umschlag (C5) je Person, Stifte",
+        "Kleine Zettel und eine Schachtel für die anonyme Variante",
+        "Leise Musik ohne Gesang (optional)",
+        "Skills-Pässe, Stempel",
+        "Imbiss und Getränke"
+      ],
+      "vorbereitung": [
+        "Einzelplätze einrichten, an denen niemand mitlesen kann; der Stuhlkreis für den zweiten Teil bleibt stehen",
+        "Namen auf die Umschläge schreiben",
+        "Klären, wer im Haus für ein Einzelgespräch erreichbar ist, falls es nötig wird: zweite Leitung, SePAS, Responsable"
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-glaubenssatz-karten",
+        "skills-meine-glaubenssaetze",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Gefühlsrad und Anspannung"
+        },
+        {
+          "min": "10–20",
+          "phase": "bruecke",
+          "titel": "Rückblick und Rahmen: freiwillig und privat"
+        },
+        {
+          "min": "20–50",
+          "phase": "uebung",
+          "titel": "Meine Glaubenssätze"
+        },
+        {
+          "min": "50–65",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "65–85",
+          "phase": "uebung",
+          "titel": "Freiwillig teilen – die Gruppe hört zu"
+        },
+        {
+          "min": "85–95",
+          "phase": "skill",
+          "titel": "Skill: Luftballon-Atem und Dankbarkeitsblitz"
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Réckbléck mit dem Daumen, Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: Gefühlsrad und Anspannung",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Gefühlsrad und Anspannung von 0 bis 100 wie gewohnt. Heute bewusst ruhig beginnen: Die Leitung nennt ihr Gefühl zuerst und lässt zwischen den Beiträgen Pausen. Wer möchte, ergänzt einen Satz zur vergangenen Woche.",
+          "sagen": [
+            "Wie geht es dir gerade – Wort und Zahl?",
+            "Heute wird ein ruhigerer Tag. Wer nichts sagen mag, zeigt nur auf das Rad."
+          ],
+          "tipp": "Liegt jemand schon beim Ankommen über 70, zuerst einen Skill aus dem Skills-Koffer anbieten: Über Glaubenssätze schreiben klappt nur, wenn der Kopf halbwegs ruhig ist.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Rückblick und Rahmen",
+          "dauer": 10,
+          "phase": "bruecke",
+          "text": "Mit zwei, drei Karten aus dem Sortierspiel an die letzte Einheit erinnern. Dann den Rahmen für heute ruhig und klar erklären: Jede Person schreibt für sich, niemand muss etwas vorlesen, und das Blatt kommt in einen Umschlag, den nur die Person selbst öffnet. Offen sagen, wo die Vertraulichkeit endet, und Fragen dazu ehrlich beantworten. Zum Schluss fragen, was die Gruppe noch braucht, um ehrlich schreiben zu können.",
+          "sagen": [
+            "Heute schreibt jede und jeder für sich. Was ihr aufschreibt, gehört euch.",
+            "Ich lese eure Blätter nicht, außer ihr zeigt sie mir. Wenn ich beim Herumgehen etwas sehe, das mir Sorgen macht, spreche ich euch danach allein an.",
+            "Was braucht ihr noch, damit ihr ehrlich schreiben könnt?"
+          ],
+          "tipp": "Die Grenze der Vertraulichkeit vorher auszusprechen, schafft Vertrauen: Die Jugendlichen wissen, woran sie sind, und fühlen sich später nicht ertappt.",
+          "blatt": "skills-glaubenssatz-karten"
+        },
+        {
+          "titel": "Meine Glaubenssätze",
+          "dauer": 30,
+          "phase": "uebung",
+          "text": "Das Schülerblatt austeilen und die Beispielzeile vorlesen. Jede Person schreibt bis zu fünf bremsende Sätze auf, eigene oder aus dem Kasten, und beantwortet die Fragen in Stichworten. Die Leitung geht herum und hilft leise, wenn jemand fragt; sie liest nicht mit. Nach etwa 20 Minuten auf Aufgabe 3 hinweisen, die alle bearbeiten; Aufgabe 2 ist ein Angebot. Am Ende kommt das Blatt zugeklebt in den Umschlag und der Umschlag in die persönliche Mappe.",
+          "sagen": [
+            "Ein Satz reicht. Fünf sind kein Ziel.",
+            "Wenn du nicht weißt, woher ein Satz kommt, schreib ein Fragezeichen. Auch das ist eine Antwort.",
+            "Stimmt der Satz heute noch? Gib ihm eine Zahl von 0 bis 100, ganz aus dem Bauch."
+          ],
+          "punkte": [
+            "Warum denke ich so?",
+            "Wann habe ich das zum ersten Mal gedacht?",
+            "Liegt es in der Vergangenheit – stimmt es heute noch?",
+            "Wo bremst mich der Satz im Alltag: in der Schule, bei Freunden, zu Hause?"
+          ],
+          "tipp": "Leise Musik ohne Gesang und Plätze mit Blick zur Wand machen ehrliches Schreiben leichter; Handys bleiben weg, auch als Musikquelle.",
+          "wennEsKippt": "Schreibt jemand gar nichts oder macht Witze, nicht drängen: anbieten, einen Satz aus dem Kasten zu nehmen, der vielleicht ein bisschen passt, oder nur Aufgabe 3 zu bearbeiten. Wird jemand traurig oder wütend, darf die Person mit der zweiten Leitung kurz hinausgehen; zurückkommen ist jederzeit möglich. Ist nur eine Leitung da, bleibt die Tür offen und die Person in Sichtweite.",
+          "blatt": "skills-meine-glaubenssaetze"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Pause mit Imbiss, bewusst leicht: Musik, Karten, Gespräche über Alltägliches. Die Leitung achtet darauf, wer still ist, und bietet unauffällig ein kurzes Gespräch an."
+        },
+        {
+          "titel": "Freiwillig teilen – die Gruppe hört zu",
+          "dauer": 20,
+          "phase": "uebung",
+          "text": "Im Stuhlkreis erklären, wie die Runde läuft: Wer möchte, nennt einen oder zwei Sätze und, wenn gewünscht, woher sie kommen. Die Gruppe hört nur zu – keine Ratschläge, keine Bewertung, keine Nachfragen; wer den Satz auch kennt, legt kurz die Hand aufs Knie. Nach jedem Beitrag bedankt sich die Leitung für den Mut. Möchte niemand frei sprechen, die anonyme Variante anbieten: Alle schreiben einen Satz, nicht unbedingt den schwersten, auf einen Zettel, die Leitung legt zwei Sätze von den Karten dazu, mischt und liest vor. So bleibt auch in kleinen Gruppen offen, wer was geschrieben hat.",
+          "sagen": [
+            "Danke, dass du das mit uns teilst.",
+            "Hand aufs Knie heißt: Kenne ich auch. Mehr braucht es nicht.",
+            "Niemand muss heute etwas sagen. Zuhören ist genauso ein Beitrag."
+          ],
+          "tipp": "Wenn es passt, selbst mit einem eigenen, längst erledigten Satz beginnen („Früher dachte ich: Vor Leuten reden kann ich nicht“) – nie mit etwas, das die Leitung heute noch belastet.",
+          "wennEsKippt": "Gibt jemand trotzdem einen Rat („Denk doch einfach positiv“), freundlich unterbrechen und an die Regel erinnern: Heute nur zuhören. Erzählt jemand etwas sehr Belastendes, das würdigen, nicht vertiefen und ein Gespräch direkt nach der Einheit anbieten. Bleibt es still, reicht die anonyme Variante – oder die Runde endet früher mit der Frage, wie sich das Schreiben angefühlt hat, und die gewonnene Zeit geht in den Skill."
+        },
+        {
+          "titel": "Skill: Luftballon-Atem und Dankbarkeitsblitz",
+          "dauer": 10,
+          "phase": "skill",
+          "text": "Nach dem schweren Teil den Blick bewusst auf Gutes lenken. Zuerst drei Runden Luftballon-Atem: Hand auf den Bauch, durch die Nase einatmen, bis der Bauch rund wird, langsam durch den Mund ausatmen. Dann der Dankbarkeitsblitz: 20 Sekunden mit geschlossenen Augen an eine Sache aus dieser Woche denken, für die man dankbar ist – etwas Kleines reicht. Wer mag, nennt sie in der Runde.",
+          "sagen": [
+            "Nach so einer Stunde darf der Kopf wieder etwas Freundliches sehen.",
+            "Denk an eine Sache aus dieser Woche, für die du dankbar bist. Das kann ein gutes Essen sein, ein Lied, ein Mensch."
+          ],
+          "tipp": "Die Reihenfolge ist Absicht: erst der Körper, dann der Kopf. Mit ruhigerem Atem fällt es leichter, etwas Gutes zu finden."
+        },
+        {
+          "titel": "Réckbléck mit dem Daumen, Skills-Pass",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Daumenbarometer: Jede Person zeigt, wie es ihr nach heute geht – Daumen hoch, Mitte oder runter. Dann Eintrag in den Skills-Pass und Stempel. Wer den Daumen unten hat, bekommt einen kurzen Blick und das Angebot, nach der Einheit noch zu bleiben. Zum Schluss den Ausblick auf die Detektivarbeit geben.",
+          "sagen": [
+            "Daumen: Wie geht es dir jetzt, nach dem Schreiben?",
+            "Wer noch kurz reden möchte, bleibt einfach sitzen, wenn die anderen gehen."
+          ],
+          "wennEsKippt": "Zeigen mehrere den Daumen nach unten, nicht einfach schließen: zwei Minuten für eine gemeinsame Atemrunde nehmen und sagen, dass schwere Gefühle nach so einer Stunde normal sind und sich wieder legen. Mit einzelnen Jugendlichen noch vor dem Heimweg sprechen.",
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Nächstes Mal werdet ihr Detektive: Ihr öffnet eure Umschläge und sucht Beweise, ob diese Sätze wirklich stimmen.",
+      "hintergrund": "Glaubenssätze entsprechen in der kognitiven Verhaltenstherapie den Grundüberzeugungen: stark verallgemeinerten Annahmen über die eigene Person, etwa hilflos, nicht liebenswert oder wertlos zu sein. Sie entstehen oft in bestimmten Lebenslagen und werden später kaum noch überprüft (Beck, 2011). Wer sie aufschreibt, nach ihrer Herkunft fragt und in Prozent einschätzt, gewinnt Abstand: Aus einer vermeintlichen Tatsache wird eine Annahme. Private Schreibaufgaben helfen, Belastendes zu ordnen, ohne es preiszugeben (Pennebaker, 1997). Der Dankbarkeitsblitz am Ende ist bewusst gesetzt: Dankbarkeitsübungen verbesserten in Studien Stimmung und Wohlbefinden (Emmons & McCullough, 2003).",
+      "quellen": [
+        "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
+        "Pennebaker, J. W. (1997). Writing about emotional experiences as a therapeutic process. Psychological Science, 8(3), 162–166.",
+        "Emmons, R. A. & McCullough, M. E. (2003). Counting blessings versus burdens: An experimental investigation of gratitude and subjective well-being in daily life. Journal of Personality and Social Psychology, 84(2), 377–389."
+      ],
+      "achtung": "Diese Einheit ist die persönlichste des Moduls. Blätter werden nicht eingesammelt und nicht gelesen, außer jemand zeigt sie von sich aus. Fallen Sätze wie „Ich bin nichts wert“ oder „Es wäre besser, wenn es mich nicht gäbe“ oder wirkt jemand am Ende sehr belastet, noch am selben Tag ein Einzelgespräch führen, die Person nicht allein lassen, nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) informieren. Klingen Sätze nach Abwertung oder Gewalt zu Hause („Ich bin immer schuld“), ebenfalls nicht in der Gruppe nachfragen, sondern im Einzelgespräch."
+    },
+    {
+      "id": "j1-e18",
+      "nr": 18,
+      "jahr": 1,
+      "modul": "j1-m4",
+      "titel": "Der kritische Detektiv",
+      "kurz": "Die Jugendlichen prüfen zwei ihrer Glaubenssätze wie Detektive, formulieren nach sechs Regeln realistische neue Sätze und nehmen sie auf Kärtchen mit in den Alltag.",
+      "dauer": 100,
+      "ziele": [
+        "sammeln Beweise für und gegen einen eigenen bremsenden Glaubenssatz und unterscheiden Tatsachen von Urteilen",
+        "formulieren nach sechs Regeln einen realistischen, hilfreichen neuen Satz",
+        "gestalten Kärtchen mit ihren neuen Sätzen für den Alltag",
+        "antworten im Spiel schnell und realistisch auf bremsende Sätze"
+      ],
+      "material": [
+        "Gefühlsrad in A3 und Anspannungsskala 0–100",
+        "Die Umschläge mit den Blättern aus Einheit 17",
+        "Schülerblatt „Der kritische Detektiv“, zwei je Person",
+        "Glaubenssatz-Karten aus Einheit 16",
+        "Kärtchen aus festem Papier im Kreditkartenformat, Buntstifte, Fineliner",
+        "Laminiergerät und Laminierfolien",
+        "Plakat mit den sechs Regeln, Tafel oder Flipchart",
+        "Skills-Pässe, Stempel",
+        "Imbiss und Getränke"
+      ],
+      "vorbereitung": [
+        "Plakat mit den sechs Regeln schreiben; es hängt bis Einheit 19 im Raum",
+        "An der Tafel eine Waage zeichnen: links „Beweise dafür“, rechts „Beweise dagegen“",
+        "Laminiergerät bereitstellen und in der Pause vorheizen"
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-meine-glaubenssaetze",
+        "skills-kritischer-detektiv",
+        "skills-glaubenssatz-karten",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Gefühlsrad und Anspannung"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Umschläge auf – heute seid ihr Detektive"
+        },
+        {
+          "min": "15–35",
+          "phase": "uebung",
+          "titel": "Beweise sammeln – allein, dann gemeinsam"
+        },
+        {
+          "min": "35–50",
+          "phase": "input",
+          "titel": "Umformulieren mit den sechs Regeln"
+        },
+        {
+          "min": "50–65",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "65–78",
+          "phase": "uebung",
+          "titel": "Kärtchen gestalten und laminieren"
+        },
+        {
+          "min": "78–90",
+          "phase": "aktiv",
+          "titel": "Gedankenstopp-Spiel"
+        },
+        {
+          "min": "90–95",
+          "phase": "skill",
+          "titel": "Skill: Die freundliche Stimme"
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Réckbléck und Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: Gefühlsrad und Anspannung",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Gefühlsrad und Anspannung von 0 bis 100. Dazu eine kleine Detektivfrage: Ist diese Woche einer der Sätze aus dem Sortierspiel irgendwo aufgetaucht – im Kopf, in einem Gespräch, in einem Video? Nur erzählen, nicht analysieren.",
+          "sagen": [
+            "Gefühl und Zahl – und wer mag: Ist euch diese Woche einer der Sätze begegnet?"
+          ],
+          "tipp": "Liegt jemand über 70, zuerst einen Körper-Skill aus dem Skills-Koffer machen: Gedanken prüfen klappt nur im grünen Bereich.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Umschläge auf – heute seid ihr Detektive",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "Die Umschläge aus Einheit 17 verteilen; jede Person öffnet ihren selbst. Dann das Bild des Detektivs einführen: Ein guter Detektiv glaubt nichts, nur weil es jemand behauptet – auch nicht der eigenen inneren Stimme. Er sammelt Beweise für beide Seiten und urteilt erst dann.",
+          "sagen": [
+            "Eure innere Stimme behauptet manchmal Dinge wie: Du bist dumm. Heute prüfen wir, ob sie dafür Beweise hat.",
+            "Ein Detektiv ist weder nett noch gemein. Er will nur wissen, was stimmt."
+          ],
+          "blatt": "skills-meine-glaubenssaetze"
+        },
+        {
+          "titel": "Beweise sammeln – allein, dann gemeinsam",
+          "dauer": 20,
+          "phase": "uebung",
+          "text": "Zuerst an der Tafel mit der Karte „Ich bin dumm“ vormachen: gemeinsam Beweise dafür und dagegen sammeln und dabei klären, was ein Beweis ist – 22 von 60 Punkten im Mathetest sind eine Tatsache, „dumm“ ist ein Urteil. Dann wählt jede Person zwei Sätze aus ihrem Umschlag und bearbeitet für jeden die erste Seite eines Detektivblatts allein. Nach etwa zehn Minuten nennt, wer möchte, einen Satz – sonst nimmt die Gruppe eine Karte –, und alle suchen gemeinsam weitere Gegenbeweise.",
+          "sagen": [
+            "Ist das ein Beweis oder ein Gefühl? Würde das vor Gericht zählen?",
+            "Schreib Gegenbeweise auch dann auf, wenn du selbst noch nicht ganz überzeugt bist.",
+            "Was würde deine beste Freundin oder dein bester Freund dazu sagen?"
+          ],
+          "tabelle": {
+            "spalten": [
+              "Beweise für „Ich bin dumm“",
+              "Beweise dagegen"
+            ],
+            "zeilen": [
+              [
+                "22 von 60 Punkten im letzten Mathetest",
+                "Im Test davor waren es 15 – es wird besser"
+              ],
+              [
+                "Bei langen Texten brauche ich länger als andere",
+                "Ich kenne mich mit Mopeds aus und erkläre das anderen"
+              ],
+              [
+                "",
+                "Ich weiß alle Fußballergebnisse der Saison auswendig"
+              ],
+              [
+                "",
+                "Im Praktikum wurde ich gelobt, weil ich schnell gelernt habe"
+              ]
+            ]
+          },
+          "tipp": "Die Beweise für den Satz ernst nehmen und stehen lassen. Meist stützen sie nur einen kleineren Satz („Mathe fällt mir schwer“) – genau daraus wird später der neue Satz.",
+          "wennEsKippt": "Bleibt die rechte Seite leer („Da gibt es nichts“), nicht überreden, sondern die Detektivfragen einzeln stellen und kleine Belege gelten lassen. Wer mit dem eigenen Satz nicht weiterkommt oder ihn heute nicht anfassen mag, arbeitet mit einer Karte.",
+          "blatt": "skills-kritischer-detektiv"
+        },
+        {
+          "titel": "Umformulieren mit den sechs Regeln",
+          "dauer": 15,
+          "phase": "input",
+          "text": "Das Plakat mit den sechs Regeln zeigen und am Beispiel erklären: Aus „Ich bin schlecht in Mathe“ wird nicht „Ich bin super in Mathe“, sondern „Mathe fällt mir schwer, aber wenn ich übe und frage, werde ich besser.“ Dann bearbeitet jede Person die zweite Seite: Urteil, neue Einschätzung in Zahlen, neuer Satz, Regeln abhaken, Wenn-dann-Zeile. Wer mag, liest den neuen Satz jemandem aus der Gruppe vor und fragt: Klingt er realistisch?",
+          "sagen": [
+            "Ein neuer Satz, den ihr euch selbst nicht glaubt, bringt nichts. Lieber ehrlich und klein als groß und falsch.",
+            "Wie sehr glaubst du den alten Satz jetzt, nach der Beweisaufnahme?"
+          ],
+          "punkte": [
+            "1. Den hinderlichen Satz erkennen und benennen.",
+            "2. Realistisch bleiben: „Ich bin perfekt“ ist genauso falsch – besser: „Ich gebe mein Bestes.“",
+            "3. Positiv und aktiv formulieren: sagen, was ich tue, nicht, was ich nicht bin.",
+            "4. Auf das schauen, was ich beeinflussen kann.",
+            "5. In der Gegenwart sprechen.",
+            "6. Wachstum betonen: „Ich lerne …“, „Ich werde besser in …“"
+          ],
+          "tipp": "Die Zahlen vorher und nachher vergleichen lassen: Schon ein Unterschied von 80 auf 60 ist ein Erfolg und darf so benannt werden.",
+          "wennEsKippt": "Wer nur einen Satz schafft, bleibt bei einem – gründlich ist besser als schnell. Kommt nur „Ich bin der Beste“ heraus, zurückfragen: Glaubst du dir das? Und was davon stimmt wirklich?",
+          "blatt": "skills-kritischer-detektiv"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Pause mit Imbiss. Das Laminiergerät heizt vor; die Leitung legt Kärtchen und Stifte bereit."
+        },
+        {
+          "titel": "Kärtchen gestalten und laminieren",
+          "dauer": 13,
+          "phase": "uebung",
+          "text": "Jede Person schreibt ihre neuen Sätze auf je ein Kärtchen im Kreditkartenformat und gestaltet es mit Farbe, Schrift oder einem Symbol. Die Leitung laminiert die fertigen Kärtchen. Sie kommen zu den Skills-Kärtchen aus Einheit 15 – ins Portemonnaie, in die Handyhülle oder in die Skills-Box. Wer mit dem Satz noch nicht fertig ist, nutzt die Zeit dafür; das Kärtchen kann nächste Woche folgen.",
+          "sagen": [
+            "Gestaltet die Karte so, dass ihr sie gern anschaut – nicht so, dass sie für andere gut aussieht.",
+            "Wo muss der Satz sein, damit er da ist, wenn der alte sich meldet?"
+          ],
+          "tipp": "Wer den Satz nicht offen herumtragen möchte, schreibt ihn auf die Rückseite und gestaltet die Vorderseite mit einem neutralen Motiv."
+        },
+        {
+          "titel": "Gedankenstopp-Spiel",
+          "dauer": 12,
+          "phase": "aktiv",
+          "text": "Alle stehen im Kreis. Die Leitung zieht eine bremsende Karte aus dem Sortierspiel und liest sie laut vor – nie einen Satz aus den persönlichen Blättern. Alle rufen „Stopp!“, und wer zuerst einen hilfreichen, realistischen Gegensatz sagt, bekommt einen Punkt. Die Gruppe entscheidet per Daumen, ob der Gegensatz die Regeln erfüllt: „Ich bin der Beste“ zählt nicht. Nach einigen Runden dürfen die Jugendlichen die Karten ziehen und vorlesen.",
+          "sagen": [
+            "Stopp! Und jetzt: Was sagst du diesem Satz?",
+            "Realistisch, positiv, in der Gegenwart? Daumen hoch oder runter."
+          ],
+          "tipp": "In Gruppen, die schnell in Konkurrenz geraten, und bei nur zwei Jugendlichen kooperativ spielen: Alle sammeln zusammen in 60 Sekunden so viele Gegensätze wie möglich, die Leitung zählt mit.",
+          "wennEsKippt": "Werden Gegensätze absichtlich albern oder gegen andere gerichtet, das Spiel kurz anhalten und die Regel wiederholen: Gegensätze sagen etwas über den Satz, nie über Personen. Bei wenig Energie im Sitzen mit einem Softball spielen: Wer den Ball fängt, antwortet.",
+          "blatt": "skills-glaubenssatz-karten"
+        },
+        {
+          "titel": "Skill: Die freundliche Stimme",
+          "dauer": 5,
+          "phase": "skill",
+          "text": "Eine kurze Übung zum Selbstmitgefühl anleiten, im Sitzen, Augen zu oder Blick auf den Boden. Wer mag, legt eine Hand auf die Brust oder den Unterarm; wer das nicht möchte, lässt die Hände im Schoß. Die drei Sätze langsam vorsprechen, die Jugendlichen sprechen sie innerlich mit. Danach kurz erklären: Das ist die Stimme, mit der ihr mit einem guten Freund reden würdet – ihr dürft sie auch für euch selbst benutzen.",
+          "punkte": [
+            "„Das ist gerade schwer.“",
+            "„So geht es vielen. Ich bin damit nicht allein.“",
+            "„Was brauche ich jetzt? Ich darf freundlich zu mir sein.“"
+          ],
+          "sagen": [
+            "Du musst die Sätze nicht glauben. Probier nur aus, wie sie sich anfühlen."
+          ],
+          "tipp": "Die Hand auf der Brust ist ein Angebot, keine Pflicht – das Stopp-Recht gilt wie bei jeder Körperübung."
+        },
+        {
+          "titel": "Réckbléck und Skills-Pass",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Blitzlicht mit einer Leitfrage, dann Eintrag in den Skills-Pass und Stempel. Die Kärtchen nehmen die Jugendlichen mit; die Detektivblätter kommen zurück in den Umschlag und in die persönliche Mappe.",
+          "sagen": [
+            "Welche Detektivfrage hilft dir am meisten?",
+            "Für den Pass zum Beispiel: Ein Gedanke ist eine Vermutung. Ich kann ihn prüfen."
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Nächstes Mal testet ihr, wie es sich anfühlt, nach den neuen Sätzen zu handeln – bringt eure Kärtchen mit.",
+      "hintergrund": "Die Detektivarbeit überträgt zentrale Techniken der kognitiven Verhaltenstherapie in eine jugendgerechte Form: Belege für und gegen einen Gedanken prüfen, sokratisch nachfragen und die Überzeugung vorher und nachher in Zahlen einschätzen (Beck, 2011). Fragen wie „Was würde eine Freundin sagen?“ schaffen Abstand zum eigenen Erleben; solches Selbst-Distanzieren senkt die Belastung beim Nachdenken über Schwieriges (Kross & Ayduk, 2017). Die Regeln zum Umformulieren verhindern bloßes Schönreden: Hilfreich sind realistische Sätze, die Lernen betonen statt feste Urteile (Dweck, 2006). Das Spiel übt, bremsenden Gedanken zu antworten, statt sie wegzudrücken; die Schlussübung folgt dem Konzept des Selbstmitgefühls (Neff, 2003).",
+      "quellen": [
+        "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
+        "Kross, E. & Ayduk, O. (2017). Self-distancing: Theory, research, and current directions. Advances in Experimental Social Psychology, 55, 81–136.",
+        "Dweck, C. S. (2006). Mindset: The New Psychology of Success. New York: Random House.",
+        "Neff, K. D. (2003). Self-compassion: An alternative conceptualization of a healthy attitude toward oneself. Self and Identity, 2(2), 85–101."
+      ],
+      "achtung": "Beim Beweise-Sammeln kann deutlich werden, dass ein Satz einen wahren Kern hat, etwa wenn jemand tatsächlich ausgegrenzt oder abgewertet wird. Dann nicht wegdiskutieren und nicht zum Umformulieren drängen, sondern das Erlebte ernst nehmen und im Einzelgespräch klären, wer helfen kann. Im Gedankenstopp-Spiel nur Sätze von den Karten verwenden, nie aus persönlichen Blättern. Bei Hinweisen auf starke Selbstabwertung, Selbstverletzung, Suizidgedanken oder Gewalt nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) informieren."
+    },
+    {
+      "id": "j1-e19",
+      "nr": 19,
+      "jahr": 1,
+      "modul": "j1-m4",
+      "titel": "Neue Gedanken ausprobieren",
+      "kurz": "Im Rollenspiel erleben die Jugendlichen, wie ein neuer Satz Haltung und Ausgang einer Szene verändert, verbinden ihn mit ihrem Baum der Stärke und testen ihn eine Woche lang im Alltag.",
+      "dauer": 100,
+      "ziele": [
+        "erleben im Rollenspiel, wie ein anderer Gedanke Körperhaltung, Stimme und Verhalten verändert",
+        "verbinden ihre neuen Sätze mit Stärken und Ressourcen aus ihrem Baum der Stärke",
+        "planen eine Situation, in der sie ihren neuen Satz im Alltag testen, und sammeln eine Woche lang Beweise"
+      ],
+      "material": [
+        "Gefühlsrad in A3 und Anspannungsskala 0–100",
+        "Die Kärtchen mit den neuen Sätzen, die Umschläge mit den Detektivblättern",
+        "Plakat (A1) mit einem großen Baum, Klebestift",
+        "Glaubenssatz-Karten aus Einheit 16",
+        "Die Bäume der Stärke aus Einheit 6 mit dem Blatt „Mein Baum der Stärke“, Stifte in einer neuen Farbe",
+        "Schülerblatt „Meine Beweis-Challenge“ je Person",
+        "Zwei Stühle als Bühne, Klebeband für den Bühnenrand",
+        "Skills-Pässe, Stempel",
+        "Imbiss und Getränke"
+      ],
+      "vorbereitung": [
+        "Die Bäume der Stärke aus der A3-Sammelmappe holen",
+        "Auf das Plakat einen großen Baum zeichnen: unten die Erde, darüber Stamm und Krone mit Ästen",
+        "Bühne markieren: zwei Stühle, davor Platz für die Zuschauenden",
+        "Drei Achtsamkeitsübungen zur Auswahl vorbereiten, etwa Gedankenschiffchen, Bodyscan in der Kurzversion, Klangschale",
+        "Folgt als Nächstes die Joker-Einheit mit dem Film „Das Streben nach Glück“: Vorführrechte und Altersfreigabe jetzt klären lassen"
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-glaubenssatz-karten",
+        "skills-baum-der-staerke",
+        "skills-beweis-challenge",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Gefühlsrad, Anspannung und Kärtchen"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Rückblick: die neuen Sätze"
+        },
+        {
+          "min": "15–45",
+          "phase": "aktiv",
+          "titel": "Rollenspiele: alter Satz, neuer Satz"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–75",
+          "phase": "uebung",
+          "titel": "Glaubenssatz-Baum und Baum der Stärke"
+        },
+        {
+          "min": "75–85",
+          "phase": "uebung",
+          "titel": "Meine Beweis-Challenge"
+        },
+        {
+          "min": "85–95",
+          "phase": "skill",
+          "titel": "Achtsamkeit nach Wahl der Gruppe"
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Réckbléck, Skills-Pass, Ausblick auf Modul 5"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: Gefühlsrad, Anspannung und Kärtchen",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Gefühlsrad und Anspannung von 0 bis 100. Dazu die Frage, ob jemand sein Kärtchen aus der letzten Einheit schon einmal angeschaut oder gebraucht hat. Die Antworten nicht bewerten; auch „vergessen“ ist eine ehrliche Antwort.",
+          "sagen": [
+            "Gefühl, Zahl – und: Hat dein Kärtchen diese Woche schon mal gearbeitet?"
+          ],
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Rückblick: die neuen Sätze",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "Alle legen ihre Kärtchen vor sich oder nehmen die neuen Sätze aus dem Umschlag. Kurz erinnern, wie aus den alten Sätzen neue wurden: Beweise, Urteil, sechs Regeln. Dann das Thema nennen: Heute wird getestet, wie sich ein neuer Satz anfühlt, wenn man nach ihm handelt.",
+          "sagen": [
+            "Ein neuer Satz ist wie neue Schuhe: Am Anfang drückt er ein bisschen. Heute laufen wir ihn ein."
+          ]
+        },
+        {
+          "titel": "Rollenspiele: alter Satz, neuer Satz",
+          "dauer": 30,
+          "phase": "aktiv",
+          "text": "Immer eine Dreiergruppe spielt vor den anderen eine Szene aus der Tabelle zweimal: Eine Person spielt die Hauptrolle, eine die Gegenrolle, die dritte ist die innere Stimme und sagt halblaut den Satz – beim ersten Mal den alten, beim zweiten Mal den neuen. Wo die innere Stimme steht, bestimmt die Hauptrolle, am besten seitlich mit etwas Abstand. Jede Szene dauert höchstens eine Minute; die Zuschauenden achten auf Körperhaltung, Stimme und Ausgang. Nach jeder Szene kurz fragen, was anders war, dann die Rollen wechseln. Am Ende gemeinsam festhalten: Unser Handeln verändert auch unsere Glaubenssätze.",
+          "sagen": [
+            "Danke, Szene aus. Was war anders – Haltung, Stimme, Ergebnis?",
+            "Wer trotz des alten Satzes etwas wagt, sammelt einen Beweis gegen ihn.",
+            "Niemand muss spielen. Zuschauen und genau beobachten ist genauso wichtig."
+          ],
+          "tabelle": {
+            "spalten": [
+              "Szene",
+              "Alter Satz",
+              "Neuer Satz"
+            ],
+            "zeilen": [
+              [
+                "Du sollst an der Tafel eine Aufgabe lösen.",
+                "„Ich blamiere mich sowieso.“",
+                "„Ich probiere es. Fehler sind okay.“"
+              ],
+              [
+                "Du willst in der Pause bei einer neuen Gruppe mitspielen.",
+                "„Die wollen mich eh nicht.“",
+                "„Ich frage einfach.“"
+              ],
+              [
+                "Du bekommst einen Test mit 18 von 60 Punkten zurück.",
+                "„Ich bin dumm.“",
+                "„Diesmal lief es nicht. Ich schaue, was ich ändern kann.“"
+              ],
+              [
+                "Du willst im Klassenrat einen Vorschlag machen.",
+                "„Mich nimmt eh keiner ernst.“",
+                "„Meine Idee zählt genauso.“"
+              ],
+              [
+                "Eine Freundin will, dass du mitkommst, du hast aber keine Lust.",
+                "„Wenn ich Nein sage, mag sie mich nicht mehr.“",
+                "„Echte Freunde halten ein Nein aus.“"
+              ],
+              [
+                "Im Praktikum sollst du eine Kundin ansprechen.",
+                "„Das schaffe ich eh nicht.“",
+                "„Ich probiere es. Wenn ich nicht weiterweiß, frage ich.“"
+              ]
+            ]
+          },
+          "tipp": "Die innere Stimme ist der Schlüssel: Spricht sie den alten Satz, spielen die meisten von selbst kleiner und leiser. Das braucht keine Erklärung – die Gruppe sieht es.",
+          "wennEsKippt": "Wird die Szene albern, mit „Danke, Szene aus“ beenden und mit anderer Besetzung neu beginnen. Mag niemand auf die Bühne, spielt die Leitung die Hauptrolle und die Jugendlichen sind die innere Stimme. Bei nur zwei Jugendlichen übernimmt die Leitung die Gegenrolle; bei wenig Energie die Szenen im Sitzen als Hörspiel sprechen."
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Pause mit Imbiss. Währenddessen das Baum-Plakat aufhängen und die Bäume der Stärke auf die Tische legen."
+        },
+        {
+          "titel": "Glaubenssatz-Baum und Baum der Stärke",
+          "dauer": 15,
+          "phase": "uebung",
+          "text": "Gemeinsam das Plakat füllen: Die bremsenden Glaubenssatz-Karten kommen unten in die Erde, die hilfreichen Gegenstücke in die Krone; wer mag, klebt den eigenen neuen Satz auf einer leeren Karte dazu. Erklären: Die alten Sätze gehören zu unserer Geschichte, aber sie bestimmen nicht mehr, was oben wächst. Dann holt jede Person ihren Baum der Stärke hervor und schreibt den neuen Satz in einer neuen Farbe und mit Datum an den Stamm, dazu auf das Blatt „Mein Baum der Stärke“. Zum Schluss sucht jede Person eine Stärke im Stamm und einen Menschen oder Ort bei den Wurzeln, die den neuen Satz stützen, und verbindet sie mit einer Linie.",
+          "sagen": [
+            "Welcher neue Satz passt zu deinem Stamm?",
+            "Welche Stärke oder welcher Mensch aus deinem Baum ist ein Beweis für deinen neuen Satz?"
+          ],
+          "tipp": "Das Plakat bleibt im Raum hängen. Es erinnert daran, dass sich Sätze verändern können.",
+          "wennEsKippt": "Fehlt jemandem der Baum der Stärke, weil er verloren ging oder die Person in Einheit 6 nicht da war, zeichnet sie heute einen kleinen Baum mit Stamm und einem Ast. Findet jemand keine Stärke, nennt die Leitung selbst eine, die sie beobachtet hat, und fragt, ob sie sie aufschreiben darf.",
+          "blatt": "skills-baum-der-staerke"
+        },
+        {
+          "titel": "Meine Beweis-Challenge",
+          "dauer": 10,
+          "phase": "uebung",
+          "text": "Das Blatt austeilen und das Beispiel gemeinsam lesen. Jede Person schreibt einen neuen Satz ab, plant mit einem Wenn-dann-Satz eine Situation in der kommenden Woche und kreuzt an, wie sehr sie den Satz heute glaubt. Erklären: Jeden Tag ein Beweis, auch ein kleiner; zu Beginn der nächsten Einheit wird danach gefragt – nach Beobachtungen, nicht nach Erfolgen.",
+          "sagen": [
+            "Wann genau wird dein Satz diese Woche gebraucht? Je genauer, desto besser.",
+            "Ein kleiner Beweis zählt: einmal nachgefragt, einmal Nein gesagt, einmal drangeblieben."
+          ],
+          "tipp": "Wer das Blatt nicht mitnehmen will, notiert die Beweise im Handy – wichtig ist nur das Sammeln.",
+          "blatt": "skills-beweis-challenge"
+        },
+        {
+          "titel": "Achtsamkeit nach Wahl der Gruppe",
+          "dauer": 10,
+          "phase": "skill",
+          "text": "Die Gruppe stimmt per Handzeichen zwischen drei Übungen ab, die sie aus den letzten Wochen kennt, etwa Gedankenschiffchen, Bodyscan in der Kurzversion oder Klangschale. Die Leitung leitet die gewählte Übung an. Danach kurz fragen, warum die Gruppe genau diese gewählt hat – so wird sichtbar, welche Skills inzwischen zu ihr gehören.",
+          "sagen": [
+            "Ihr kennt inzwischen einige Übungen. Welche wollt ihr heute?"
+          ],
+          "wennEsKippt": "Ist die Gruppe uneins, entscheidet das Los; die zweitplatzierte Übung kann die Leitung in einer späteren Einheit anbieten."
+        },
+        {
+          "titel": "Réckbléck, Skills-Pass, Ausblick",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Zum Abschluss des Moduls eine kurze Runde mit der Leitfrage, dann Eintrag in den Skills-Pass und Stempel. Die Leitung fasst die vier Wochen in zwei Sätzen zusammen und gibt den Ausblick auf Modul 5 und auf die Beweis-Challenge.",
+          "sagen": [
+            "Was denkst du heute ein kleines bisschen anders über dich als vor vier Wochen? Nur, wenn du magst.",
+            "Wie ich über mich denke, beeinflusst, wie ich mit anderen rede. Darum geht es ab nächster Woche."
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Nächstes Mal geht es um Kommunikation – und gleich zu Beginn fragen wir nach euren Beweisen aus der Challenge, also bringt das Blatt mit.",
+      "hintergrund": "Überzeugungen verändern sich weniger durch Argumente als durch Erfahrungen. Bandura (1977) beschreibt eigene Bewältigungserlebnisse als stärkste Quelle von Selbstwirksamkeit; im Rollenspiel und in der Beweis-Challenge sammeln die Jugendlichen genau solche Erlebnisse. Die innere Stimme im Rollenspiel macht sichtbar, wie ein Gedanke Haltung und Stimme verändert. Die Arbeit mit dem Baum der Stärke folgt dem narrativen Ansatz des Tree of Life (Ncube, 2006): Neue Sätze werden an vorhandene Stärken und Ressourcen gebunden statt an Defizite. Ein konkreter Wenn-dann-Plan erhöht die Wahrscheinlichkeit, dass ein Vorsatz im Alltag umgesetzt wird (Gollwitzer, 1999).",
+      "quellen": [
+        "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
+        "Ncube, N. (2006). The Tree of Life Project: Using narrative ideas in work with vulnerable children. International Journal of Narrative Therapy and Community Work, 1, 3–16.",
+        "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+      ],
+      "achtung": "Rollenspiele nur mit den vorgegebenen Szenen; niemand muss eine eigene Situation spielen, und alle dürfen jederzeit „Stopp“ sagen oder zuschauen. Die Szenen „schlechte Note“ und „Nein sagen“ können Erinnerungen an Druck oder Abwertung wecken: auf Reaktionen achten und ein Einzelgespräch anbieten. Beim Baum der Stärke niemanden bloßstellen, der wenig einträgt. Bei Hinweisen auf starke Selbstabwertung, Gewalt oder Selbstgefährdung nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) informieren."
+    }
+  ]
+}

@@ -1,0 +1,804 @@
+[
+  {
+    "id": "skills-gefuehle-botschaften",
+    "bereich": "skills",
+    "thema": "gefuehle",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "15 Min.",
+    "eldib": [
+      "K-26",
+      "K-16",
+      "K-33"
+    ],
+    "schlagworte": [
+      "Grundgefühle",
+      "Funktion von Gefühlen",
+      "Botschaft",
+      "Handlungsimpuls",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:mail",
+    "verwandt": [
+      "skills-gefuehlsrad",
+      "skills-gefuehlskarten",
+      "gefuehle-genau-benennen"
+    ],
+    "kurs": [
+      "j1-e07"
+    ],
+    "de": {
+      "titel": "Wozu sind Gefühle gut?",
+      "untertitel": "Jedes Gefühl hat eine Botschaft – auch die unangenehmen.",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Gefühle melden sich, wenn etwas passiert, das dir wichtig ist – ähnlich wie eine Nachricht auf dem Handy. Du musst nicht jeder Nachricht sofort folgen. Aber es lohnt sich, sie zu lesen."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Welche Botschaft gehört zu welchem Gefühl? Verbinde.",
+          "symbole": [
+            "verbinden"
+          ]
+        },
+        {
+          "art": "zuordnen",
+          "titel": [
+            "Gefühl",
+            "Seine Botschaft"
+          ],
+          "links": [
+            "Angst",
+            "Wut",
+            "Traurigkeit",
+            "Freude",
+            "Ekel",
+            "Überraschung"
+          ],
+          "rechts": [
+            "Das tut mir gut. Davon will ich mehr.",
+            "Moment – was ist da los?",
+            "Achtung, Gefahr. Pass auf dich auf.",
+            "Das ist schlecht für mich. Abstand.",
+            "Mir fehlt etwas. Ich brauche Trost.",
+            "Das ist unfair. Hier ist eine Grenze."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Denk an drei Momente aus den letzten Wochen: Welches Gefühl war da – und was wollte es dir sagen?",
+          "hinweis": "Du wählst die Gefühle aus. Die Tabelle bleibt bei dir und wird nicht vorgelesen.",
+          "symbole": [
+            "nachdenken",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Gefühl",
+            "Das ist passiert",
+            "Die Botschaft"
+          ],
+          "breiten": [
+            1,
+            2.6,
+            2.2
+          ],
+          "beispiel": [
+            "Wut",
+            "Mein Bruder hat ohne zu fragen mein Ladekabel genommen – schon wieder.",
+            "Das gehört mir. Ich will gefragt werden."
+          ],
+          "zeilen": 3
+        },
+        {
+          "art": "aufgabe",
+          "text": "Welches Gefühl magst du am wenigsten – und wofür ist es trotzdem gut?",
+          "symbole": [
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "linien",
+          "anzahl": 2
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Keine falschen Gefühle",
+          "text": "Jedes Gefühl hat seinen Sinn. Es gibt aber hilfreiche und weniger hilfreiche Arten, damit umzugehen. Wut darf sein – ob du zuschlägst oder klar „Stopp“ sagst, macht den Unterschied."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen ordnen sechs Grundgefühlen ihre Botschaft zu und erkennen, dass auch unangenehme Gefühle eine Aufgabe haben. Sie übertragen das auf eigene Erlebnisse.",
+        "ablauf": [
+          "Einstieg (3 Min.): „Wären wir ohne Gefühle besser dran?“ Meinungen hören, nicht auflösen.",
+          "Aufgabe 1 zu zweit (4 Min.), dann gemeinsam auflösen und zu jeder Botschaft ergänzen, was das Gefühl uns tun lässt (Tafelbild in Einheit 7).",
+          "Aufgabe 2 einzeln (5 Min.): Beispiel vorlesen, mindestens ein unangenehmes Gefühl wählen lassen. Die Tabelle wird nicht eingesammelt.",
+          "Aufgabe 3 (3 Min.): Antworten freiwillig vorlesen, den Merksatz an die Tafel schreiben."
+        ],
+        "hintergrund": "Gefühle sind kurze, organisierte Reaktionen auf Ereignisse, die für uns bedeutsam sind: Sie lenken die Aufmerksamkeit, bereiten eine Handlung vor und zeigen anderen, was in uns vorgeht. Ekman (1992) beschreibt Grundgefühle, deren Ausdruck in vielen Kulturen erkannt wird. Plutchik (2001) ordnet jedem eine Funktion zu: Angst sorgt für Schutz, Wut räumt Hindernisse aus dem Weg, Traurigkeit sucht verlorene Nähe. Wer die Botschaft eines Gefühls versteht, muss seinem Handlungsdrang nicht blind folgen – darauf bauen die Skills in Modul 3 auf (Rathus & Miller, 2015).",
+        "quellen": [
+          "Ekman, P. (1992). An argument for basic emotions. Cognition and Emotion, 6(3–4), 169–200.",
+          "Plutchik, R. (2001). The nature of emotions. American Scientist, 89(4), 344–350.",
+          "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Aufgabe 1 mit den Gefühlskarten legen; in Aufgabe 2 nur eine Zeile ausfüllen.",
+          "schwerer": "Überlegen, wann ein Gefühl übers Ziel hinausschießt – etwa große Angst vor einem harmlosen Referat."
+        },
+        "impulse": [
+          "Wann hat dich Angst schon einmal geschützt?",
+          "Wozu könnte Neid gut sein?"
+        ],
+        "tipps": [
+          "Die Botschaften als Plakat neben das Gefühlsrad hängen – in Einheit 8 werden sie wieder gebraucht.",
+          "Stockt Aufgabe 2, sind Beispiele aus Serien oder Sport erlaubt."
+        ],
+        "achtung": "Schreibt jemand von Belastendem, nicht in der Gruppe nachfragen, sondern ein Einzelgespräch anbieten. Bei Hinweisen auf Gefährdung nach dem Schutzkonzept handeln und die zuständige Leitung (Responsable) informieren.",
+        "material": "Blatt je Person, Plakat"
+      }
+    }
+  },
+  {
+    "id": "skills-gefuehlskarten",
+    "bereich": "skills",
+    "thema": "gefuehle",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "gruppe"
+    ],
+    "dauer": "je 15–20 Min.",
+    "eldib": [
+      "K-10",
+      "K-21",
+      "K-26"
+    ],
+    "schlagworte": [
+      "Gefühlskarten",
+      "Pantomime",
+      "Memory",
+      "Emotionswürfel",
+      "Gefühlswortschatz"
+    ],
+    "bild": "icon:masks-theater",
+    "verwandt": [
+      "skills-gefuehlsrad",
+      "skills-gefuehle-botschaften",
+      "skills-gemischte-gefuehle"
+    ],
+    "kurs": [
+      "j1-e07",
+      "j1-e08",
+      "j1-e10"
+    ],
+    "de": {
+      "titel": "Gefühlskarten",
+      "untertitel": "Karten zum Ausschneiden – für Pantomime, Memory und den Emotionswürfel",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "So könnt ihr spielen",
+          "punkte": [
+            "Pantomime: Eine Karte verdeckt ziehen und das Gefühl ohne Worte zeigen. Die anderen raten.",
+            "Memory: Mit zwei Sätzen dieser Seite spielen. Wer ein Paar findet, nennt eine Situation, in der man sich so fühlt.",
+            "Emotionswürfel: Die sechs Grundgefühle aus den ersten beiden Reihen auf einen Würfel kleben."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schneidet die Karten entlang der gestrichelten Linien aus.",
+          "symbole": [
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 3,
+          "hoehe": 118,
+          "karten": [
+            {
+              "bild": "gesicht:froh",
+              "titel": "Freude"
+            },
+            {
+              "bild": "gesicht:traurig",
+              "titel": "Traurigkeit"
+            },
+            {
+              "bild": "gesicht:wuetend",
+              "titel": "Wut"
+            },
+            {
+              "bild": "gesicht:aengstlich",
+              "titel": "Angst"
+            },
+            {
+              "bild": "gesicht:ueberrascht",
+              "titel": "Überraschung"
+            },
+            {
+              "bild": "gesicht:angeekelt",
+              "titel": "Ekel"
+            },
+            {
+              "bild": "gesicht:stolz",
+              "titel": "Stolz"
+            },
+            {
+              "bild": "gesicht:verlegen",
+              "titel": "Scham"
+            },
+            {
+              "bild": "gesicht:enttaeuscht",
+              "titel": "Enttäuschung"
+            },
+            {
+              "bild": "gesicht:gelangweilt",
+              "titel": "Langeweile"
+            },
+            {
+              "bild": "gesicht:nervoes",
+              "titel": "Nervosität"
+            },
+            {
+              "bild": "gesicht:ruhig",
+              "titel": "Zufriedenheit"
+            }
+          ]
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Für Fortgeschrittene: Diese Gefühle sind schwerer zu zeigen. Die Erklärung hilft beim Spielen. Auf die leeren Karten kommen eure eigenen Wörter.",
+          "symbole": [
+            "schneiden",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 3,
+          "hoehe": 112,
+          "karten": [
+            {
+              "titel": "Neid",
+              "text": "Ich will haben, was jemand anderes hat."
+            },
+            {
+              "titel": "Eifersucht",
+              "text": "Ich habe Angst, jemanden an andere zu verlieren."
+            },
+            {
+              "titel": "Schuld",
+              "text": "Ich habe etwas getan, das jemandem geschadet hat."
+            },
+            {
+              "titel": "Hoffnung",
+              "text": "Ich vertraue darauf, dass es gut wird."
+            },
+            {
+              "titel": "Neugier",
+              "text": "Ich will wissen, was dahintersteckt."
+            },
+            {
+              "titel": "Dankbarkeit",
+              "text": "Jemand hat mir etwas Gutes getan."
+            },
+            {
+              "titel": "Einsamkeit",
+              "text": "Ich fühle mich allein – auch unter anderen."
+            },
+            {
+              "titel": "Zweifel",
+              "text": "Ich bin unsicher, ob es stimmt oder klappt."
+            },
+            {
+              "titel": "Vertrauen",
+              "text": "Bei dieser Person fühle ich mich sicher."
+            },
+            {
+              "titel": "Mitgefühl",
+              "text": "Ich spüre mit, wie es jemand anderem geht."
+            },
+            {
+              "titel": "Erleichterung",
+              "text": "Das Schwere ist vorbei."
+            },
+            {
+              "titel": "Liebe",
+              "text": "Ich mag jemanden sehr und will, dass es ihm gut geht."
+            },
+            {},
+            {},
+            {}
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen erkennen Gefühle an Gesicht und Haltung, stellen sie selbst dar und erweitern ihren Gefühlswortschatz. Der Kartensatz dient für Pantomime (Einheit 7), Memory (Einheit 8) und Emotionswürfel (Einheit 10).",
+        "ablauf": [
+          "Vorbereiten: Seite 1 zweimal, Seite 2 einmal auf festes Papier kopieren, ausschneiden, bei Bedarf laminieren.",
+          "Pantomime (20 Min.): Reihum eine Karte ziehen, das Gefühl erst als Statue, dann in Bewegung zeigen. Fragen: Woran habt ihr es erkannt? Seite 2 erst in der zweiten Hälfte dazunehmen.",
+          "Steuerpult (Einheit 8): Freude, Traurigkeit, Angst, Wut und Ekel im Halbkreis auslegen; bei jeder Situation stellen sich alle zu dem Gefühl, das bei ihnen am Pult stünde.",
+          "Memory (15 Min.): Beide Sätze von Seite 1 verdeckt auslegen. Wer ein Paar findet, nennt eine Situation, in der man sich so fühlt.",
+          "Emotionswürfel: Die sechs Grundgefühle auf einen Pappwürfel oder eine Schachtel ab 7 cm Kantenlänge kleben – oder die Karten verdeckt ziehen lassen.",
+          "Die leeren Karten mit Wörtern aus der Mindmap der Gruppe füllen."
+        ],
+        "hintergrund": "Gefühle an Gesicht und Körper zu erkennen, ist eine Grundlage für Einfühlung. Ekman (1992) beschreibt für Grundgefühle Gesichtsausdrücke, die in vielen Kulturen verstanden werden. Beim Pantomime-Spiel werden Gefühle nicht nur erkannt, sondern selbst dargestellt; so wird der Zusammenhang von Gefühl, Mimik und Haltung erfahrbar. Ein großer Gefühlswortschatz hilft, genauer wahrzunehmen, was in einem vorgeht, und passender zu reagieren (Brackett, 2019). Seite 2 enthält deshalb Gefühle, die im Alltag oft ohne Namen bleiben.",
+        "quellen": [
+          "Ekman, P. (1992). An argument for basic emotions. Cognition and Emotion, 6(3–4), 169–200.",
+          "Brackett, M. A. (2019). Permission to Feel. New York: Celadon."
+        ],
+        "differenzierung": {
+          "leichter": "Nur die sechs Grundgefühle; beim Raten sind Ja-Nein-Fragen erlaubt.",
+          "schwerer": "Zwei Karten ziehen und eine Mischung darstellen, etwa Stolz und Scham."
+        },
+        "impulse": [
+          "Woran habt ihr das Gefühl erkannt?",
+          "Welches Gefühl sieht man anderen oft nicht an?"
+        ],
+        "tipps": [
+          "Die Leitung spielt die erste Pantomime selbst und übertreibt ruhig.",
+          "Wer nicht allein vor der Gruppe spielen möchte, spielt zu zweit."
+        ],
+        "achtung": "Klingt eine Situation im Memory nach eigenem belastendem Erleben: würdigen, weiterspielen und später ein Einzelgespräch anbieten; bei Bedarf die zuständige Leitung (Responsable) informieren.",
+        "material": "Festes Papier, Schere, Pappwürfel, Kleber"
+      }
+    }
+  },
+  {
+    "id": "skills-wer-sitzt-am-steuer",
+    "bereich": "skills",
+    "thema": "gefuehle",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "30 Min. mit Filmausschnitten",
+    "eldib": [
+      "K-21",
+      "K-26",
+      "SOZ-37"
+    ],
+    "schlagworte": [
+      "Alles steht Kopf",
+      "Film",
+      "Grundgefühle",
+      "angenehm und unangenehm",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:device-tv",
+    "verwandt": [
+      "skills-gefuehle-botschaften",
+      "skills-gefuehlskarten"
+    ],
+    "kurs": [
+      "j1-e08"
+    ],
+    "de": {
+      "titel": "Wer sitzt am Steuer?",
+      "untertitel": "Beobachtungsbogen zu den Filmen „Alles steht Kopf“ 1 und 2",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "In Rileys Kopf arbeiten fünf Gefühle an einem Steuerpult: Freude, Kummer, Angst, Wut und Ekel. Wer gerade am Pult steht, bestimmt, wie Riley reagiert. Im zweiten Teil ist Riley 13 – und vier neue Gefühle ziehen ein."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Während der Szenen: Ist das Gefühl angenehm, unangenehm – oder je nachdem? Kreuze an.",
+          "hinweis": "Nur ankreuzen. Schreiben kannst du nach dem Film.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "einschaetzung",
+          "items": [
+            "Freude",
+            "Kummer",
+            "Angst",
+            "Wut",
+            "Ekel",
+            "Zweifel (Teil 2)",
+            "Neid (Teil 2)",
+            "Peinlich (Teil 2)",
+            "Ennui – Langeweile (Teil 2)"
+          ],
+          "optionen": [
+            "angenehm",
+            "unangenehm",
+            "je nachdem"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Nach den Szenen: Wähle zwei unangenehme Gefühle aus dem Film. Wozu sind sie für Riley gut?",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Gefühl",
+            "Was macht es im Film?",
+            "Wozu ist es gut?"
+          ],
+          "breiten": [
+            1,
+            2.4,
+            2.2
+          ],
+          "beispiel": [
+            "Angst",
+            "Sie passt auf, dass Riley sich als kleines Kind nicht verletzt.",
+            "Sie schützt vor Gefahren."
+          ],
+          "zeilen": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Und bei dir? Ergänze die Sätze.",
+          "hinweis": "Du entscheidest, was du davon in der Runde erzählst.",
+          "symbole": [
+            "nachdenken",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Am witzigsten fand ich …, weil …",
+            "Am ehesten erkenne ich mich in …, weil …",
+            "Bei mir sitzt oft … am Steuer, zum Beispiel wenn …"
+          ],
+          "linien": 2
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen erkennen Gefühle in Filmszenen, unterscheiden angenehme und unangenehme Gefühle und begründen, wozu auch die unangenehmen gut sind. Das Steuerpult wird zum gemeinsamen Bild für den Kurs.",
+        "ablauf": [
+          "Vorher: Vorführrechte klären lassen, Altersfreigabe beider Filme prüfen, Szenen heraussuchen (Szenenliste in Einheit 8).",
+          "Vor dem Film (2 Min.): Aufgabe 1 erklären – während der Szenen wird nur angekreuzt.",
+          "Szenen zeigen (15–20 Min.), nach jeder kurz fragen: Wer stand am Pult? Was hat Riley deshalb getan?",
+          "Aufgabe 1 vergleichen (3 Min.): Wann kann Angst angenehm sein, wann Freude unangenehm?",
+          "Aufgabe 2 zu zweit, Aufgabe 3 einzeln (8 Min.); Antworten nur freiwillig teilen."
+        ],
+        "hintergrund": "Für „Alles steht Kopf“ ließ sich Pixar von den Emotionsforschern Dacher Keltner und Paul Ekman beraten. Sie betonen zwei Einsichten, die der Film anschaulich macht: Gefühle stören das Denken nicht, sondern ordnen es, und sie regeln unser Zusammenleben – Kummer zeigt anderen, dass jemand Trost braucht (Keltner & Ekman, 2015). Die fünf Figuren entsprechen fünf der Grundgefühle nach Ekman (1992). Filmszenen schaffen Abstand: Über Rileys Gefühle zu sprechen, fällt leichter als über die eigenen – und doch erkennen sich viele darin wieder.",
+        "quellen": [
+          "Keltner, D. & Ekman, P. (2015, 3. Juli). The science of “Inside Out”. The New York Times.",
+          "Ekman, P. (1992). An argument for basic emotions. Cognition and Emotion, 6(3–4), 169–200."
+        ],
+        "differenzierung": {
+          "leichter": "Nur die fünf Gefühle aus Teil 1; Aufgabe 2 gemeinsam an der Tafel.",
+          "schwerer": "Eine eigene Alltagsszene als Steuerpult-Szene beschreiben: Wer steht am Pult, wer will hin?"
+        },
+        "impulse": [
+          "Warum will Freude Kummer vom Pult fernhalten – und ist das eine gute Idee?",
+          "Was wäre, wenn nur Freude am Pult stünde?"
+        ],
+        "tipps": [
+          "Die französische Fassung heißt „Vice-versa“; die Namen der Gefühle unterscheiden sich, also beide an die Tafel schreiben.",
+          "Den ganzen Film zeigt die Joker-Einheit „Alles steht Kopf“."
+        ],
+        "achtung": "Umzug, Heimweh und Streit mit den Eltern können Jugendliche treffen, die nicht bei ihrer Familie leben oder einen Verlust erleben. Vorher überlegen, wen es betrifft, und nach dem Film ansprechbar sein.",
+        "material": "Filmausschnitte, Beamer, Lautsprecher, Klemmbretter"
+      }
+    }
+  },
+  {
+    "id": "skills-gefuehls-landkarte",
+    "bereich": "skills",
+    "thema": "gefuehle",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "20 Min.",
+    "eldib": [
+      "K-26",
+      "K-16",
+      "V-21"
+    ],
+    "schlagworte": [
+      "Körpersignale",
+      "Gefühls-Landkarte",
+      "Warnsignal",
+      "Wut",
+      "Angst",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:map",
+    "verwandt": [
+      "skills-gefuehlsrad",
+      "wut-verstehen",
+      "angst-verstehen"
+    ],
+    "kurs": [
+      "j1-e09"
+    ],
+    "de": {
+      "titel": "Meine Gefühls-Landkarte",
+      "untertitel": "Wo spüre ich Wut, Angst, Freude und Traurigkeit – und was merke ich zuerst?",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Gefühle passieren nicht nur im Kopf. Oft merkt der Körper zuerst, dass etwas los ist: Das Herz klopft, der Bauch wird eng, das Gesicht wird heiß."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wo spürst du Wut, Angst, Freude und Traurigkeit? Mal die Stellen in der passenden Farbe aus.",
+          "hinweis": "Denk an einen echten Moment, zum Beispiel an den letzten Streit oder den letzten richtig guten Tag. Überschneidungen sind erlaubt.",
+          "symbole": [
+            "malen"
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "koerper",
+              "legende": [
+                {
+                  "farbe": "rot",
+                  "text": "Wut"
+                },
+                {
+                  "farbe": "lila",
+                  "text": "Angst"
+                },
+                {
+                  "farbe": "gelb",
+                  "text": "Freude"
+                },
+                {
+                  "farbe": "blau",
+                  "text": "Traurigkeit"
+                }
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "aufgabe",
+              "text": "Woran merkst du, dass du wütend wirst – noch bevor du etwas sagst oder tust?",
+              "symbole": [
+                "ankreuzen"
+              ]
+            },
+            {
+              "art": "ankreuzen",
+              "items": [
+                "Mein Herz klopft schneller.",
+                "Mein Gesicht wird heiß.",
+                "Ich balle die Fäuste.",
+                "Mein Kiefer wird fest.",
+                "Ich atme schnell und flach.",
+                "Mein Bauch zieht sich zusammen.",
+                "Meine Stimme wird lauter.",
+                "Ich kann nicht mehr still sitzen."
+              ],
+              "frei": 1
+            },
+            {
+              "art": "aufgabe",
+              "text": "Was kommt bei dir zuerst? Das ist dein Warnsignal.",
+              "symbole": [
+                "schreiben"
+              ]
+            },
+            {
+              "art": "satzanfaenge",
+              "items": [
+                "Bei Wut merke ich zuerst …",
+                "Bei Angst merke ich zuerst …"
+              ],
+              "linien": 2
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Achte bis zum nächsten Mal darauf: Wann hat sich dein Warnsignal gemeldet – und was hast du dann gemacht?",
+          "symbole": [
+            "nachdenken",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "linien",
+          "anzahl": 2
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Deine Frühwarnanlage",
+          "text": "Wer das erste Signal bemerkt, hat mehr Zeit zu entscheiden, was er tut. Ab Einheit 11 suchst du Skills, die genau dann helfen. Dein Blatt musst du niemandem zeigen."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen nehmen wahr, wo sie Wut, Angst, Freude und Traurigkeit im Körper spüren, und benennen ihr erstes Warnsignal für Wut und Angst – die Grundlage für den Notfallplan in Modul 3.",
+        "ablauf": [
+          "Einstieg (4 Min.): „Woran merkst du, dass du wütend wirst – noch bevor du etwas sagst?“ Antworten um einen Körperumriss an der Tafel sammeln.",
+          "Aufgabe 1 (8 Min.): Farben wie im Gefühlsrad; ruhig arbeiten lassen.",
+          "Vergleichen (4 Min.): Wer mag, legt sein Blatt in die Mitte. Wo sind wir uns ähnlich, wo verschieden?",
+          "Aufgabe 2 und 3 (4 Min.); Aufgabe 4 ist ein Beobachtungsauftrag bis zur nächsten Einheit."
+        ],
+        "hintergrund": "Gefühle sind Zustände des ganzen Körpers: Herzschlag, Atmung und Muskelspannung verändern sich mit. Nummenmaa und Kollegen (2014) ließen über 700 Personen einzeichnen, wo sie bei verschiedenen Gefühlen etwas spüren. Die Körperkarten unterschieden sich je nach Gefühl deutlich und ähnelten sich in westeuropäischen und ostasiatischen Stichproben – Wut etwa zeigte sich in Kopf, Brust und Armen. Solche Signale kommen oft früher als der Gedanke „Ich bin wütend“, und je früher man eingreift, desto leichter gelingt die Regulation (Gross, 1998).",
+        "quellen": [
+          "Nummenmaa, L., Glerean, E., Hari, R. & Hietanen, J. K. (2014). Bodily maps of emotions. Proceedings of the National Academy of Sciences, 111(2), 646–651.",
+          "Gross, J. J. (1998). The emerging field of emotion regulation: An integrative review. Review of General Psychology, 2(3), 271–299."
+        ],
+        "differenzierung": {
+          "leichter": "Nur Wut und Freude einzeichnen.",
+          "schwerer": "Eine fünfte Farbe für Ruhe ergänzen: Wo spürst du, dass es dir gut geht?"
+        },
+        "impulse": [
+          "Welches Signal kommt bei dir am frühesten?",
+          "Woran merken andere, dass du wütend wirst?"
+        ],
+        "tipps": [
+          "Blätter aufbewahren: Die Warnsignale werden in Einheit 11 und für den Ampelplan in Einheit 15 gebraucht.",
+          "Ein Körperumriss auf Packpapier, auf den alle Klebepunkte setzen, zeigt Gemeinsamkeiten ohne Worte."
+        ],
+        "achtung": "Aufmerksamkeit auf den Körper kann Unbehagen auslösen; niemand muss sein Blatt zeigen. Bei Hinweisen auf Verletzungen oder Gewalt: Einzelgespräch, die zuständige Leitung (Responsable) informieren, nach dem Schutzkonzept handeln.",
+        "material": "Buntstifte in Rot, Lila, Gelb, Blau"
+      }
+    }
+  },
+  {
+    "id": "skills-gemischte-gefuehle",
+    "bereich": "skills",
+    "thema": "gefuehle",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "25 Min.",
+    "eldib": [
+      "K-26",
+      "K-16",
+      "SOZ-31"
+    ],
+    "schlagworte": [
+      "gemischte Gefühle",
+      "Gefühlsstärke",
+      "Skala 0–10",
+      "Sichtweisen",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:palette",
+    "verwandt": [
+      "skills-gefuehlskarten",
+      "gefuehle-viele-namen"
+    ],
+    "kurs": [
+      "j1-e10"
+    ],
+    "de": {
+      "titel": "Gemischte Gefühle",
+      "untertitel": "Selten fühlt man nur eine Sache – und das ist normal.",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Du freust dich auf die Party und bist gleichzeitig sauer auf deinen besten Freund. Das ist kein Widerspruch: Gefühle mischen sich wie Farben, und oft ist eines stärker als die anderen."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Welche Gefühle hättest du? Kreuze alle an, die passen, und kreise das stärkste ein.",
+          "symbole": [
+            "ankreuzen",
+            "einkreisen"
+          ]
+        },
+        {
+          "art": "einschaetzung",
+          "items": [
+            "1. Du hast viel gelernt und trotzdem eine schlechte Note. Dein Sitznachbar hat eine sehr gute.",
+            "2. Du bist zu einer Party eingeladen, hast dich aber am selben Tag mit deinem besten Freund gestritten.",
+            "3. Du wirst vor der Klasse gelobt, und alle schauen dich an.",
+            "4. Du wirst Kapitän deiner Mannschaft, fühlst dich aber noch nicht bereit.",
+            "5. Du gewinnst einen Wettbewerb, aber deine Freunde reagieren neidisch.",
+            "6. Jemand verbreitet ein falsches Gerücht über dich, und viele glauben es.",
+            "7. Eine Freundin erzählt dir ein Geheimnis, das dir Sorgen macht. Du sollst es niemandem sagen.",
+            "8. Deine Familie zieht um. Du bekommst ein größeres Zimmer, aber deine Freunde bleiben zurück."
+          ],
+          "optionen": [
+            "Freude",
+            "Trauer",
+            "Wut",
+            "Angst",
+            "Scham",
+            "Zweifel"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Und bei dir? Denk an einen Moment mit gemischten Gefühlen. Schreib die Gefühle auf und gib jedem eine Zahl von 0 bis 10.",
+          "hinweis": "0 heißt: gar nicht. 10 heißt: so stark wie nie. Du entscheidest, ob du davon erzählst.",
+          "symbole": [
+            "nachdenken",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Der Moment",
+            "Meine Gefühle und wie stark (0–10)"
+          ],
+          "breiten": [
+            2.2,
+            2.6
+          ],
+          "beispiel": [
+            "Mein Cousin zieht zurück nach Portugal.",
+            "traurig 8 · froh für ihn 5 · ein bisschen neidisch 2"
+          ],
+          "zeilen": 2
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen erkennen, dass mehrere, auch widersprüchliche Gefühle gleichzeitig da sein können und dass dieselbe Situation bei verschiedenen Menschen Verschiedenes auslöst. Sie schätzen die Stärke von Gefühlen von 0 bis 10 ein.",
+        "ablauf": [
+          "Einstieg (5 Min.): „Kann man sich gleichzeitig freuen und traurig sein?“ Das Beispiel aus dem Text an die Tafel schreiben.",
+          "Aufgabe 1 einzeln (8 Min.): alle passenden Gefühle ankreuzen, das stärkste einkreisen.",
+          "Auswerten (8 Min.): Zwei, drei Situationen per Handzeichen auszählen und die Zahlen an die Tafel schreiben. Unterschiede sichtbar machen, nicht bewerten.",
+          "Aufgabe 2 still (4 Min.); teilen nur freiwillig."
+        ],
+        "hintergrund": "Gefühle treten selten einzeln auf. Larsen, McGraw und Cacioppo (2001) zeigten, dass Menschen in bittersüßen Momenten wie einem Abschied tatsächlich gleichzeitig Freude und Traurigkeit empfinden – nicht nur abwechselnd. Plutchik (2001) beschreibt Gefühle wie Farben, die sich zu neuen Mischungen verbinden. Wer gemischte Gefühle als normal erkennt, muss sich nicht für eine Seite entscheiden und versteht widersprüchliche Reaktionen bei sich und anderen besser. Die Stärke einzuschätzen, bereitet die Anspannungsskala von 0 bis 100 ab Einheit 11 vor.",
+        "quellen": [
+          "Larsen, J. T., McGraw, A. P. & Cacioppo, J. T. (2001). Can people feel happy and sad at the same time? Journal of Personality and Social Psychology, 81(4), 684–696.",
+          "Plutchik, R. (2001). The nature of emotions. American Scientist, 89(4), 344–350."
+        ],
+        "differenzierung": {
+          "leichter": "Nur die Situationen 1 bis 4 bearbeiten.",
+          "schwerer": "Zu einer Situation notieren, was jedes Gefühl tun möchte – und welches am Ende gewinnt."
+        },
+        "impulse": [
+          "Welche Situation hat die meisten verschiedenen Kreuze bekommen – und warum?",
+          "Kennt ihr Wörter für Mischungen, etwa bittersüß oder Vorfreude?"
+        ],
+        "tipps": [
+          "Situation 7 bewusst aufgreifen: Geheimnisse, die jemanden in Gefahr bringen, darf und soll man einer Vertrauensperson erzählen.",
+          "Als Aufstellung spielbar: Zu jeder Situation stellen sich alle zu den passenden Gefühlskarten."
+        ],
+        "achtung": "Gerücht und Sorgen-Geheimnis können an Eigenes rühren: nicht vertiefen, Einzelgespräch anbieten. Bei Hinweisen auf Mobbing oder Gefährdung nach dem Schutzkonzept handeln und die zuständige Leitung (Responsable) informieren.",
+        "material": "Blatt je Person, Stifte"
+      }
+    }
+  }
+]

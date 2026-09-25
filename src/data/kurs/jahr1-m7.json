@@ -1,0 +1,488 @@
+{
+  "einheiten": [
+    {
+      "id": "j1-e27",
+      "nr": 27,
+      "jahr": 1,
+      "modul": "j1-m7",
+      "titel": "Social Media und ich",
+      "kurz": "Ehrlich, aber ohne erhobenen Zeigefinger: Die Gruppe vergleicht geschätzte und echte Bildschirmzeit, schaut hinter perfekte Bilder und macht einen eigenen Plan für ein Handy, das guttut.",
+      "dauer": 100,
+      "ziele": [
+        "vergleichen geschätzte und gemessene Bildschirmzeit und benennen, wie sie sich nach dem Scrollen fühlen",
+        "erklären, wie Apps Aufmerksamkeit binden und wie Vergleiche mit bearbeiteten Bildern wirken",
+        "erleben, wie ein ehrlich gemeinter positiver Kommentar wirkt, und schreiben selbst welche",
+        "legen einen persönlichen, machbaren Social-Media-Plan fest"
+      ],
+      "material": [
+        "Gefühlsrad (A3, laminiert), Anspannungsskala 0–100, Tafel und Kreide oder Stifte für das Emoji-Check-in",
+        "Mit Internet: Beamer, Laptop und das Kahoot-Quiz „Social Media“ (create.kahoot.it/details/f1ab9bf2-68d1-4651-bd9f-4f9ba5cc7c49), Handys oder Tablets zum Mitspielen",
+        "Ohne Internet: die Quiz-Aussagen aus Schritt 3, je Person eine grüne und eine rote Karte",
+        "Schülerblatt „Mein Social-Media-Check“ für jede Person",
+        "Ein Handy oder Tablet mit Kamera (von der Leitung) für das Foto-Experiment",
+        "Kleine Zettel (je Person so viele, wie die Gruppe Mitglieder hat) und eine Schachtel",
+        "Skills-Pässe, Stempel, Imbiss und Getränke"
+      ],
+      "vorbereitung": [
+        "Das Kahoot vorher mit Beamer und Internet testen und die Offline-Variante trotzdem bereitlegen.",
+        "Die Hausregel der Annexe zum Handy kennen und klären, ob die Jugendlichen ihre Handys heute für zwei Übungen nutzen dürfen. Wer kein Handy hat oder die Bildschirmzeit nicht sehen kann, schätzt nur.",
+        "Den Imbiss so anrichten, dass er in der Pause fotografiert werden kann, bevor gegessen wird."
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-social-media-check",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in mit Emoji und Anspannung"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Von der Zivilcourage zum Handy"
+        },
+        {
+          "min": "15–30",
+          "phase": "uebung",
+          "titel": "Social-Media-Quiz: Kahoot oder offline"
+        },
+        {
+          "min": "30–45",
+          "phase": "uebung",
+          "titel": "Bildschirmzeit: geschätzt und gemessen"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–72",
+          "phase": "aktiv",
+          "titel": "Das perfekte Foto: ein Blick hinter die Kamera"
+        },
+        {
+          "min": "72–82",
+          "phase": "uebung",
+          "titel": "Positive Kommentare"
+        },
+        {
+          "min": "82–90",
+          "phase": "uebung",
+          "titel": "Mein Social-Media-Plan"
+        },
+        {
+          "min": "90–95",
+          "phase": "skill",
+          "titel": "Skill: drei Atemzüge vor dem Griff zum Handy"
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Réckbléck und Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in mit Emoji",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Heute als Emoji-Check-in: Jede Person malt ein Emoji an die Tafel, das zu ihrer Stimmung passt, und nennt dazu ein Wort vom Gefühlsrad und ihre Anspannung von 0 bis 100. Die Leitung beginnt. Danach kurz auf die Tafel schauen: Ein Emoji ist schnell gemalt – aber erst das Wort dazu sagt, was wirklich gemeint ist.",
+          "sagen": [
+            "Ein Emoji an die Tafel, ein Wort vom Rad, eine Zahl.",
+            "Wie oft schickt ihr ein Emoji statt eines Satzes – und wie oft wird es falsch verstanden?"
+          ],
+          "tipp": "Die zweite Frage knüpft an Einheit 20 an: Online fehlen Stimme und Gesicht, deshalb wird dort so viel missverstanden.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Von der Zivilcourage zum Handy",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "An die Zivilcourage-Leiter anknüpfen, besonders an Stufe 5 für das Internet. Dann das Modul „Digitale Welt“ öffnen und die Haltung klarstellen: Hier wird niemandem das Handy schlechtgeredet. Es geht darum, was euch guttut und was nicht – und das weiß jede Person selbst am besten.",
+          "sagen": [
+            "Das Handy ist nicht der Feind. Die Frage ist heute: Wann tut es euch gut – und wann eher nicht?"
+          ]
+        },
+        {
+          "titel": "Social-Media-Quiz",
+          "dauer": 15,
+          "phase": "uebung",
+          "text": "Mit Internet das Kahoot-Quiz spielen; die Jugendlichen machen mit Handy oder Tablet mit, zu zweit an einem Gerät geht auch. Ohne Internet oder Geräte die Aussagen aus der Tabelle vorlesen, und alle halten eine grüne Karte (stimmt) oder eine rote Karte (stimmt nicht) hoch. Nach jeder Frage die Auflösung kurz erklären und bei überraschten Gesichtern nachfragen. Punkte zählen ist erlaubt, wichtiger sind die Gespräche zwischen den Fragen.",
+          "sagen": [
+            "Grün heißt stimmt, rot heißt stimmt nicht. Wer unsicher ist, entscheidet trotzdem.",
+            "Hat euch eine Antwort überrascht?"
+          ],
+          "tabelle": {
+            "spalten": [
+              "Aussage",
+              "Stimmt?",
+              "Kurz erklärt"
+            ],
+            "zeilen": [
+              [
+                "Was ich in einer privaten Gruppe schicke, bleibt privat.",
+                "nein",
+                "Jeder Screenshot kann es weitertragen – auch Jahre später."
+              ],
+              [
+                "Apps entscheiden mit, was ich als Nächstes sehe.",
+                "ja",
+                "Ein Algorithmus zeigt mehr von dem, wobei ich hängen bleibe."
+              ],
+              [
+                "Kostenlose Apps verdienen kein Geld mit mir.",
+                "nein",
+                "Sie verdienen mit Werbung – und damit mit meiner Zeit und meinen Daten."
+              ],
+              [
+                "Ein lustiges Foto von anderen darf ich einfach posten.",
+                "nein",
+                "Vorher fragen: Jede Person entscheidet über Bilder von sich selbst."
+              ],
+              [
+                "Viele Bilder im Netz sind bearbeitet oder oft wiederholt aufgenommen.",
+                "ja",
+                "Licht, Winkel, Filter und viele Versuche gehören oft dazu."
+              ],
+              [
+                "Social Media macht alle Jugendlichen unglücklich.",
+                "nein",
+                "Es kommt darauf an, was, wie lange und in welcher Situation man es nutzt."
+              ],
+              [
+                "Rote Punkte und Push-Nachrichten sollen mich zurück in die App holen.",
+                "ja",
+                "Sie sind so gestaltet, dass man nachschauen will."
+              ],
+              [
+                "Bei Problemen im Netz hilft in Luxemburg die BEE SECURE Helpline.",
+                "ja",
+                "8002 1234, kostenlos und vertraulich."
+              ]
+            ]
+          },
+          "tipp": "Das Quiz ist ein Einstieg, kein Test. Wer viel weiß, darf das zeigen – aber niemand muss sich für eine falsche Antwort rechtfertigen.",
+          "wennEsKippt": "Wird das Kahoot zum reinen Wettrennen und niemand hört mehr auf die Auflösungen, nach der Hälfte auf die Offline-Variante wechseln: Karten hoch, kurz reden, nächste Frage."
+        },
+        {
+          "titel": "Bildschirmzeit: geschätzt und gemessen",
+          "dauer": 15,
+          "phase": "uebung",
+          "text": "Jede Person schätzt zuerst auf dem Blatt ihre tägliche Bildschirmzeit und schaut dann in den Einstellungen ihres Handys nach. Die Zahlen bleiben privat – niemand muss sie nennen oder das Handy zeigen. Im Gespräch geht es um den Unterschied zwischen Schätzung und Messung, um die App, die am meisten Zeit frisst, und um das Gefühl nach 30 Minuten Scrollen; dafür liegt das Gefühlsrad in der Mitte. Dann kurz erklären, warum Aufhören so schwerfällt: endloser Feed, Videos, die von selbst starten, Likes und Benachrichtigungen – und ein Algorithmus, der mehr von dem zeigt, was uns festhält. Zum Schluss die Batterie auf dem Blatt ausfüllen: Was lädt online auf, was kostet Energie?",
+          "sagen": [
+            "Überrascht euch die Zahl – eher nach oben oder nach unten?",
+            "Wie fühlt ihr euch meistens nach einer halben Stunde Scrollen? Nehmt ruhig das Gefühlsrad dazu."
+          ],
+          "tipp": "Die Leitung nennt ihre eigene Zahl als Erste. Das nimmt dem Thema die Schärfe und zeigt, dass es nicht um Jugendliche geht, sondern um alle.",
+          "wennEsKippt": "Rechnet jemand vor, wie viele Stunden andere haben, oder zieht jemanden damit auf, deutlich stoppen: Die Zahlen gehören jeder Person selbst. Wer kein Handy hat oder die Zeit nicht sehen kann, schätzt einen gewöhnlichen Tag – der Vergleich mit dem Gefühl danach funktioniert auch so.",
+          "blatt": "skills-social-media-check"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Vor dem Essen kurz das Foto-Experiment starten: Zwei Freiwillige bekommen das Handy der Leitung und fotografieren den Imbisstisch (siehe nächster Schritt). Danach gemeinsam essen, Fenster auf, das Thema ruhen lassen."
+        },
+        {
+          "titel": "Das perfekte Foto",
+          "dauer": 12,
+          "phase": "aktiv",
+          "text": "Die zwei Freiwilligen haben in der Pause versucht, vom Imbisstisch das perfekteste Foto zu machen: umstellen, Licht suchen, Winkel wechseln, Filter ausprobieren; die anderen haben mitgezählt, wie viele Versuche es gebraucht hat. Jetzt das Ergebnis neben ein schnelles Foto vom echten, halb leer gegessenen Tisch halten und besprechen, was ein Bild zeigt und was es verschweigt. Dann den Bogen zu den Glaubenssätzen aus Modul 4 schlagen: Wer sich täglich mit solchen Bildern vergleicht, landet schnell bei „Ich bin nicht gut genug“.",
+          "sagen": [
+            "Wie viele Versuche hat es gebraucht? Und was sieht man auf dem Bild nicht?",
+            "Wenn schon ein Imbisstisch so viel Arbeit macht – was steckt dann hinter einem perfekten Tag im Netz?"
+          ],
+          "tipp": "Keine Gesichter fotografieren und die Bilder am Ende gemeinsam löschen. So bleibt die Übung beim Thema, und niemand muss sich zeigen. Bei wenig Zeit reicht ein einziges Vorher-nachher-Paar.",
+          "wennEsKippt": "Kippt das Gespräch in Spott über einzelne Influencer oder Plattformen, zurücklenken: Es geht nicht darum, wer etwas postet, sondern darum, was die Bilder mit uns machen, wenn wir uns damit vergleichen."
+        },
+        {
+          "titel": "Positive Kommentare",
+          "dauer": 10,
+          "phase": "uebung",
+          "text": "Jede Person bekommt so viele Zettel, wie es andere in der Gruppe gibt, und schreibt für jede Person einen positiven Kommentar – konkret, ehrlich gemeint, ohne Aussehen. Die Zettel werden gefaltet, außen mit dem Namen der Person beschriftet, für die sie bestimmt sind, und ohne Absender in die Schachtel gelegt. Die Leitung sieht sie beim Verteilen kurz durch und sagt das vorher offen an. Alle lesen still; danach zwei Fragen in die Runde.",
+          "sagen": [
+            "Schreibt so, wie ihr einen Kommentar unter einen Post schreiben würdet – nur ehrlich gemeint.",
+            "Wie fühlt sich das an? Und warum sieht man online so wenig davon?"
+          ],
+          "tipp": "Die Leitung schreibt selbst für alle einen Zettel. So bekommt jede Person mindestens einen Kommentar, der sicher ankommt. Mit nur zwei Jugendlichen schreiben beide für einander und für die Leitung.",
+          "wennEsKippt": "Fällt beim Durchsehen ein abwertender Zettel auf, wird er nicht verteilt und nicht öffentlich gemacht. Die Leitung spricht die Sache später unter vier Augen an, wenn sie sich zuordnen lässt."
+        },
+        {
+          "titel": "Mein Social-Media-Plan",
+          "dauer": 8,
+          "phase": "uebung",
+          "text": "Zurück zum Blatt: Jede Person füllt den Plan aus – wie viel Zeit sie will, welche App weniger, was sie stattdessen macht – und schreibt einen Wenn-dann-Satz für den Moment des Tages, in dem das Handy am meisten zieht. Den Plan klein und machbar halten: lieber eine Änderung, die hält, als drei, die am Mittwoch vergessen sind. Das Blatt geht mit nach Hause; die Wochentabelle wird sieben Tage lang abgehakt und in der nächsten Einheit kurz angesprochen. Wer mag, stellt seinen Wenn-dann-Satz vor.",
+          "sagen": [
+            "Welche eine Sache wollt ihr ab morgen anders machen? Nicht fünf – eine.",
+            "Wann zieht das Handy bei euch am meisten? Abends im Bett, bei den Hausaufgaben, im Bus?"
+          ],
+          "tipp": "Pläne, die an eine konkrete Situation gebunden sind („Wenn ich ins Bett gehe, dann …“), halten deutlich besser als gute Vorsätze.",
+          "blatt": "skills-social-media-check"
+        },
+        {
+          "titel": "Skill: drei Atemzüge vor dem Griff zum Handy",
+          "dauer": 5,
+          "phase": "skill",
+          "text": "Alle legen ihr Handy mit dem Display nach unten vor sich. Die Leitung leitet an: drei ruhige Atemzüge und dabei den Impuls bemerken, nach dem Handy zu greifen, ohne ihm zu folgen. Dann innerlich eine Frage beantworten: Was will ich gerade – Kontakt, Ablenkung, Ruhe? Zum Schluss kurz nachfragen, wie schwer es war, das Handy liegen zu lassen.",
+          "sagen": [
+            "Bemerkt einfach, ob eure Hand zum Handy will. Ihr müsst nichts tun, nur hinschauen.",
+            "Drei Atemzüge und eine Frage: Was will ich gerade wirklich?"
+          ],
+          "tipp": "Der Skill passt überall in den Alltag – vor dem Öffnen einer App, im Bett, bei den Hausaufgaben – und dauert kaum eine halbe Minute."
+        },
+        {
+          "titel": "Réckbléck und Skills-Pass",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Blitzlicht: ein Satz zu heute. Eintrag in den Skills-Pass, zum Beispiel der Wenn-dann-Satz aus dem Plan, und Stempel. Kurz auf den Hilfe-Kasten auf dem Blatt hinweisen, dann den Ausblick geben.",
+          "sagen": [
+            "Ein Satz: Was nehmt ihr heute über euch und euer Handy mit?"
+          ],
+          "tipp": "Zum Vertiefen passt die Joker-Einheit mit dem Film „Das Dilemma mit den sozialen Medien“; sie lässt sich direkt an diese Einheit anschließen, wenn die Vorführrechte geklärt sind.",
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Nächstes Mal testen wir, ob ihr echte Bilder von KI-Bildern unterscheiden könnt – und woran man Fake News erkennt.",
+      "hintergrund": "Pauschale Warnungen vor Social Media greifen zu kurz. In großen Datensätzen hängt die Nutzung digitaler Medien zwar negativ, aber nur sehr schwach mit dem Wohlbefinden Jugendlicher zusammen (Orben & Przybylski, 2019); entscheidend ist, was, wie und wann genutzt wird. Livingstone und Blum-Ross (2020) empfehlen deshalb, statt nur Minuten zu zählen über Inhalte, Zusammenhänge und Beziehungen zu sprechen. Ein spürbarer Mechanismus sind Vergleiche: Junge Frauen, die zehn Minuten in einem sozialen Netzwerk verbrachten, waren danach schlechter gelaunt als eine Vergleichsgruppe; wer dazu neigte, das eigene Aussehen zu vergleichen, war mit Gesicht, Haaren und Haut unzufriedener (Fardouly et al., 2015). Die Einheit setzt auf Selbstbeobachtung, einen Blick hinter die Kulissen und einen kleinen, selbst gewählten Plan. Beratung bei Problemen im Netz bietet in Luxemburg BEE SECURE.",
+      "quellen": [
+        "Orben, A. & Przybylski, A. K. (2019). The association between adolescent well-being and digital technology use. Nature Human Behaviour, 3(2), 173–182.",
+        "Livingstone, S. & Blum-Ross, A. (2020). Parenting for a Digital Future. New York: Oxford University Press.",
+        "Fardouly, J., Diedrichs, P. C., Vartanian, L. R. & Halliwell, E. (2015). Social comparisons on social media: The impact of Facebook on young women’s body image concerns and mood. Body Image, 13, 38–45.",
+        "BEE SECURE – Initiative der luxemburgischen Regierung für ein sichereres Internet: www.bee-secure.lu"
+      ],
+      "achtung": "Bildschirmzeiten, Apps und Chats sind privat: keine Handys einsammeln, keine Zahlen vergleichen, niemanden bloßstellen. Beim Foto-Experiment keine Personen fotografieren und die Bilder danach löschen. Aussehen und Vergleiche können bei manchen viel auslösen. Bei Hinweisen auf Essstörungen, Selbstverletzung, Cybermobbing, Sextortion oder Kontakte zu Fremden nicht im Plenum nachfragen, sondern ein Einzelgespräch anbieten, die zuständige Leitung (Responsable) informieren und bei Gefährdung sofort nach dem internen Schutzkonzept handeln. Beratung: BEE SECURE Helpline 8002 1234."
+    },
+    {
+      "id": "j1-e28",
+      "nr": 28,
+      "jahr": 1,
+      "modul": "j1-m7",
+      "titel": "Echt oder fake? KI und Fake News",
+      "kurz": "Echt oder KI? Die Gruppe testet ihren Blick im Real-or-Fake-Spiel, lernt die wichtigsten Begriffe, prüft Beiträge mit einer Checkliste und diskutiert, wofür KI hilft und wo sie gefährlich wird.",
+      "dauer": 100,
+      "ziele": [
+        "erklären KI, Deepfake, Fake News, Algorithmus und Filterblase in eigenen Worten",
+        "prüfen Bilder und Beiträge mit einer Checkliste und lesen quer, statt sich nur auf das Bild zu verlassen",
+        "wägen Nutzen und Risiken von KI ab und kennen die Grenze: Fälschungen von anderen sind Mobbing und können strafbar sein",
+        "bremsen sich mit einem Skill, bevor sie etwas teilen, das sie aufregt"
+      ],
+      "material": [
+        "Gefühlsrad (A3, laminiert) und Anspannungsskala 0–100",
+        "Mit Internet: Beamer und Laptop, das Real-or-Fake-Spiel (real-or-fake-the-ai-game.onrender.com) und das Video „Can You Spot the Fake? AI Video vs. Real Life Challenge!“",
+        "Ohne Internet: zehn ausgedruckte, nummerierte Bilder (fünf echte Fotos, fünf KI-Bilder) mit Lösungsliste",
+        "Schülerblatt „Echt oder fake?“ für jede Person",
+        "Haftnotizen in zwei Farben für die KI-Diskussion",
+        "Skills-Pässe, Stempel, Imbiss und Getränke"
+      ],
+      "vorbereitung": [
+        "Spiel und Video vorher vollständig ansehen und am Beamer testen. Für das Video klären lassen, ob die Vorführung in der Gruppe erlaubt ist (Nutzungsbedingungen der Plattform, Schullizenz), und die Eignung für das Alter prüfen lassen.",
+        "Für die Offline-Variante nur Bilder ohne erkennbare Menschen wählen: Landschaften, Tiere, Essen, Gebäude. Echte Fotos selbst aufnehmen, KI-Bilder selbst mit einem Bildgenerator erstellen.",
+        "Die Schulregeln zum Einsatz von KI bei Hausaufgaben kennen, um sie in der Diskussion nennen zu können."
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-echt-oder-fake",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Gefühlsrad und Anspannung"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Vom geschönten Foto zum gefälschten"
+        },
+        {
+          "min": "15–32",
+          "phase": "uebung",
+          "titel": "Real-or-Fake-Spiel"
+        },
+        {
+          "min": "32–45",
+          "phase": "input",
+          "titel": "Die wichtigsten Begriffe"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–75",
+          "phase": "uebung",
+          "titel": "KI-Video-Challenge und Checkliste"
+        },
+        {
+          "min": "75–88",
+          "phase": "uebung",
+          "titel": "Diskussion: KI – Chance und Gefahr"
+        },
+        {
+          "min": "88–95",
+          "phase": "skill",
+          "titel": "Skill: die Teilen-Bremse"
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Réckbléck und Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: Welcher Post hat dich aufgeregt?",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Gefühlsrad und Anspannung wie gewohnt. Dazu eine freiwillige Zusatzfrage: Welches Gefühl hattest du zuletzt beim Lesen einer Nachricht oder eines Posts – und war er echt? Die Leitung beginnt mit einem eigenen, harmlosen Beispiel. Die Antworten nicht bewerten; sie werden bei der Checkliste gebraucht, denn starke Gefühle sind ein Warnsignal.",
+          "sagen": [
+            "Gefühl und Zahl – und wenn ihr mögt: Welcher Post hat euch zuletzt richtig aufgeregt?"
+          ],
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Vom geschönten Foto zum gefälschten",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "An die letzte Einheit anknüpfen: das perfekte Foto und der Blick hinter die Kamera. Heute geht es einen Schritt weiter – um Bilder, Videos und Nachrichten, die gar nicht echt sind. Kurz fragen, wer den eigenen Handy-Plan ausprobiert hat, ohne nachzubohren.",
+          "sagen": [
+            "Letzte Woche war das Foto echt, nur geschönt. Heute geht es um Bilder, die es nie gegeben hat.",
+            "Hat jemand seinen Handy-Plan ausprobiert? Ein Satz reicht."
+          ]
+        },
+        {
+          "titel": "Real-or-Fake-Spiel",
+          "dauer": 17,
+          "phase": "uebung",
+          "text": "Mit Internet das Real-or-Fake-Spiel gemeinsam am Beamer spielen: Bei jedem Bild stimmen alle ab, bevor die Lösung kommt – als zwei Teams oder jede Person für sich, Punkte an der Tafel. Ohne Internet die zehn ausgedruckten Bilder auslegen; alle gehen herum, notieren zu jeder Nummer echt oder KI und begründen einmal. Zum Schluss sammeln, woran die Gruppe KI-Bilder erkannt hat – und wo sie sich sicher war und trotzdem falschlag.",
+          "sagen": [
+            "Erst entscheiden, dann begründen: Woran macht ihr das fest?",
+            "Bei welchem Bild wart ihr euch ganz sicher – und lagt trotzdem daneben?"
+          ],
+          "tipp": "Die Erfahrung, sich sicher zu irren, ist der eigentliche Lernmoment. Sie bereitet die Botschaft der Checkliste vor: Auf das Auge allein ist kein Verlass mehr.",
+          "wennEsKippt": "Wird das Spiel zum Streit ums Gewinnen, die Punkte weglassen und nur noch fragen: Woran hast du das erkannt? Wer schnell frustriert ist, darf im Team mit der Leitung raten."
+        },
+        {
+          "titel": "Die wichtigsten Begriffe",
+          "dauer": 13,
+          "phase": "input",
+          "text": "Die fünf Begriffe an die Tafel schreiben (Tabelle) und zuerst die Gruppe erklären lassen, bevor die Leitung ergänzt. Zu jedem Begriff ein Beispiel aus dem Alltag suchen – etwa die Filterblase: Wer oft Videos zu einem Thema anschaut, bekommt bald fast nur noch diese eine Sicht angezeigt. Anschließend auf dem Blatt die Begriffe den Erklärungen zuordnen.",
+          "sagen": [
+            "Wer kann Deepfake in einem Satz erklären – ohne Fachwörter?",
+            "Wo seid ihr selbst schon in einer Filterblase gelandet, beim Sport, bei Musik oder bei einem Thema, das euch aufregt?"
+          ],
+          "tabelle": {
+            "spalten": [
+              "Begriff",
+              "Einfach erklärt"
+            ],
+            "zeilen": [
+              [
+                "KI (künstliche Intelligenz)",
+                "Programme, die aus sehr vielen Daten lernen und Texte, Bilder, Stimmen oder Videos erzeugen können."
+              ],
+              [
+                "Deepfake",
+                "Ein gefälschtes Video, Bild oder eine gefälschte Stimme: Eine echte Person sagt oder tut etwas, das nie passiert ist."
+              ],
+              [
+                "Fake News",
+                "Falsche Nachrichten, die absichtlich verbreitet werden – oft, um Gefühle zu wecken oder Geld zu verdienen."
+              ],
+              [
+                "Algorithmus",
+                "Die Regel, nach der eine App entscheidet, was du als Nächstes siehst."
+              ],
+              [
+                "Filterblase",
+                "Du siehst fast nur noch Inhalte, die deine Meinung bestätigen; andere Sichtweisen kommen kaum noch vor."
+              ]
+            ]
+          },
+          "tipp": "Die Erklärung der Gruppe stehen lassen, wenn sie stimmt, auch wenn sie anders klingt als die Tabelle. Eigene Worte bleiben besser hängen.",
+          "blatt": "skills-echt-oder-fake"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Gemeinsam essen, Bildschirm aus, Fenster auf. Die Leitung lässt das Thema ruhen und nutzt die Zeit, das Video für den nächsten Schritt startklar zu machen."
+        },
+        {
+          "titel": "KI-Video-Challenge und Checkliste",
+          "dauer": 15,
+          "phase": "uebung",
+          "text": "Das Video zeigen und bei jeder Szene vor der Auflösung raten lassen: echt oder KI? Danach die Checkliste auf dem Blatt gemeinsam durchgehen und am erfundenen Beitrag auf dem Blatt ausprobieren; ohne Internet direkt damit beginnen. Besonders betonen: Seltsame Hände oder verwaschene Schrift werden bei KI-Bildern immer seltener – verlässlicher ist der Blick auf die Quelle. Profis lesen deshalb quer: Sie verlassen den Beitrag, starten eine neue Suche und schauen, was andere über die Quelle sagen.",
+          "sagen": [
+            "Bevor ihr auf die Hände im Bild schaut: Wer hat das eigentlich gepostet?",
+            "Quer lesen heißt: raus aus dem Beitrag, rein in eine neue Suche. Was sagen andere über diese Quelle?"
+          ],
+          "tipp": "Die Antworten aus dem Check-in wieder aufgreifen: Beiträge, die sehr wütend oder ängstlich machen, sind oft genau darauf gebaut – und werden deshalb besonders schnell geteilt.",
+          "wennEsKippt": "Kommt die Haltung „Man kann eh nichts mehr glauben“, sie ernst nehmen und umdrehen: Nicht alles ist fake. Wer weiß, wie man prüft, kann echten Quellen wieder vertrauen.",
+          "blatt": "skills-echt-oder-fake"
+        },
+        {
+          "titel": "Diskussion: KI – Chance und Gefahr",
+          "dauer": 13,
+          "phase": "uebung",
+          "text": "Zwei Spalten an die Tafel: Wofür ist KI hilfreich? Wo wird sie gefährlich? Zuerst zwei Minuten stilles Gespräch: Jede Person schreibt zu jeder Spalte mindestens eine Idee auf eine Haftnotiz und klebt sie an. Dann gemeinsam sortieren, fehlende Punkte ergänzen (Liste) und die Waage auf dem Blatt ausfüllen. Ein Punkt wird klar angesprochen: Gefälschte Bilder, Videos oder Stimmen von Mitschülerinnen und Mitschülern zu erstellen oder zu teilen, ist Mobbing und kann strafbar sein – der Bezug zur Zivilcourage-Leiter aus Einheit 26 liegt nahe.",
+          "sagen": [
+            "Wofür habt ihr KI schon benutzt – und wann hat sie euch Unsinn erzählt?",
+            "Wo würdet ihr die Grenze ziehen: Was geht in Ordnung, was nicht mehr?"
+          ],
+          "punkte": [
+            "Hilfreich: sich etwas erklären lassen, Ideen sammeln, übersetzen, eigene Texte überprüfen lassen.",
+            "Gefährlich: Hausaufgaben abgeben, ohne etwas zu lernen.",
+            "Gefährlich: private Daten und Fotos von sich oder anderen in KI-Apps hochladen.",
+            "Gefährlich: KI kann sich irren und klingt dabei trotzdem sehr sicher.",
+            "Gefährlich: Deepfakes von echten Personen, besonders von Mitschülerinnen und Mitschülern.",
+            "Zum Nachdenken: Ein Chatbot kann zuhören, ersetzt aber keine Vertrauensperson."
+          ],
+          "tipp": "Die Schulregeln zu KI erst am Ende nennen. Wenn die Gruppe vorher eigene Grenzen formuliert hat, werden die Regeln eher verstanden als nur hingenommen.",
+          "wennEsKippt": "Erzählt jemand von einem Deepfake oder Bild, das über eine reale Person aus der Schule kursiert, nicht im Plenum vertiefen und nichts zeigen lassen. Nach der Einheit das Gespräch suchen und nach dem internen Schutzkonzept vorgehen.",
+          "blatt": "skills-echt-oder-fake"
+        },
+        {
+          "titel": "Skill: die Teilen-Bremse",
+          "dauer": 7,
+          "phase": "skill",
+          "text": "Die Leitung liest eine erfundene Schlagzeile vor, die auf Empörung gebaut ist (Liste), und sagt erst danach, dass sie erfunden ist. Alle achten auf ihren Körper: Wo steigt die Anspannung? Dann gemeinsam die Teilen-Bremse üben: Hand weg vom Handy, drei ruhige Atemzüge mit langem Ausatmen, die eigene Anspannung schätzen – und erst danach die erste Frage der Checkliste stellen: Wer sagt das? Zwei Durchgänge mit zwei Schlagzeilen.",
+          "sagen": [
+            "Hand weg vom Handy. Drei Atemzüge. Dann erst die Frage: Wer sagt das?",
+            "Wer wütend ist, teilt schneller. Genau darauf sind viele Fake News gebaut."
+          ],
+          "punkte": [
+            "„Ab Montag Handyverbot in allen Bussen – wer erwischt wird, zahlt 300 Euro.“",
+            "„Schule streicht alle Pausen, um mehr Zeit für Prüfungen zu haben.“"
+          ],
+          "tipp": "Der Skill verbindet das Skills-Modul mit der Medienwelt: dieselbe Anspannungsskala, nur ein anderer Auslöser."
+        },
+        {
+          "titel": "Réckbléck und Skills-Pass",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Blitzlicht: Welche Frage der Checkliste nehme ich mit? Eintrag in den Skills-Pass und Stempel. Zum Ausblick auf das nächste Modul überleiten.",
+          "sagen": [
+            "Eine Frage aus der Checkliste, die ihr euch merkt – welche ist es?"
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Handy, Schlaf, Stress, Essen – das hängt alles zusammen. Nächstes Mal geht es darum, wie ihr gut für euch sorgt.",
+      "hintergrund": "Mit jeder neuen Generation von Bildgeneratoren verschwinden typische Fehler wie verformte Hände oder verwaschene Schrift. Verlässlicher als der Blick auf Details ist deshalb die Prüfung der Quelle. Wineburg und McGrew (2019) zeigten, dass professionelle Faktenprüfer eine unbekannte Seite schnell verlassen und in neuen Tabs nachsehen, wer dahintersteht; so kamen sie schneller und häufiger zu richtigen Urteilen als Historiker und Studierende, die die Seite selbst genau lasen. Wer die Tricks von Falschmeldungen kennt – Empörung, falsche Experten, Zeitdruck –, fällt seltener darauf herein: Ein Spiel, in dem man selbst Falschmeldungen baut, verringerte die Anfälligkeit messbar (Roozenbeek & van der Linden, 2019). Weil Falschmeldungen oft auf Wut und Angst setzen, verbindet die Einheit Medienkompetenz mit Emotionsregulation. Aktuelles Material bieten BEE SECURE und klicksafe.",
+      "quellen": [
+        "Wineburg, S. & McGrew, S. (2019). Lateral reading and the nature of expertise: Reading less and learning more when evaluating digital information. Teachers College Record, 121(11), 1–40.",
+        "Roozenbeek, J. & van der Linden, S. (2019). Fake news game confers psychological resistance against online misinformation. Palgrave Communications, 5, 65.",
+        "BEE SECURE – Initiative der luxemburgischen Regierung für ein sichereres Internet: www.bee-secure.lu",
+        "klicksafe – EU-Initiative für mehr Sicherheit im Netz: www.klicksafe.de"
+      ],
+      "achtung": "Keine Deepfakes oder Bearbeitungen echter Personen im Kurs erstellen – auch nicht zur Demonstration. Für die Offline-Variante nur Bilder ohne erkennbare Menschen verwenden. Berichtet jemand von gefälschten oder intimen Bildern einer realen Person, nichts zeigen lassen, nichts weiterleiten oder speichern: Einzelgespräch führen, die zuständige Leitung (Responsable) informieren und nach dem internen Schutzkonzept handeln. Beratung gibt die BEE SECURE Helpline (8002 1234). Video und Spiel vorher prüfen; Vorführrechte und Eignung für das Alter klären lassen."
+    }
+  ]
+}

@@ -1,0 +1,646 @@
+{
+  "einheiten": [
+    {
+      "id": "j1-e04",
+      "nr": 4,
+      "jahr": 1,
+      "modul": "j1-m1",
+      "titel": "Das Glas der Bedürfnisse",
+      "kurz": "Bedürfnisse werden als innere Tanks greifbar: Die Gruppe füllt anonym das Glas der Bedürfnisse, und jede Person schaut, welcher eigene Tank gerade leer ist.",
+      "dauer": 100,
+      "ziele": [
+        "unterscheiden Bedürfnisse von Wünschen und ordnen sie sechs Bereichen zu",
+        "benennen anonym, was sie brauchen, und sehen, was die Gruppe teilt",
+        "schätzen ein, welche eigenen Bedürfnisse gerade gut und welche wenig erfüllt sind",
+        "planen einen kleinen Schritt, der einen leeren Tank etwas auffüllt"
+      ],
+      "material": [
+        "Gefühlsrad in A3 (laminiert)",
+        "Ein großes Schraubglas mit Deckel (etwa 1 Liter, gern aus bruchsicherem Kunststoff) und ein Etikett",
+        "Zettel in einer einzigen Farbe (z. B. gelb, etwa fünf je Person) und gleiche Stifte für alle; für Einheit 15 und 30 je einen Stapel in einer anderen Farbe zurücklegen",
+        "Sechs Karten oder Tafelfelder mit den Bereichen Körper, Sicherheit, Zugehörigkeit, Anerkennung, Selbstbestimmung, Spaß und Neues",
+        "Schülerblatt „Mein Bedürfnis-Pegel“ für jede Person, doppelseitig kopiert",
+        "Eine persönliche Mappe je Person (Schnellhefter), die ab heute mit den Skills-Pässen in der Box bleibt",
+        "Vier Schilder für die Raumecken: Ruhe, Bewegung, Leute, Essen und Schlaf",
+        "Skills-Pässe, Stempel",
+        "Imbiss und Getränke (Allergien beachten)"
+      ],
+      "vorbereitung": [
+        "Das Tafelbild mit den sechs Bereichen vorbereiten (Schritt 3); die Beispiele erst mit der Gruppe eintragen",
+        "Das Etikett schreiben: „Glas der Bedürfnisse – Gruppe …, angelegt am …“",
+        "Einen festen Platz für das Glas bestimmen: sichtbar im Raum, Deckel zu; nutzen andere Gruppen den Raum, im abschließbaren Schrank",
+        "Die Mappen mit Namen beschriften und die vier Eckschilder aufhängen"
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-beduerfnis-pegel",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Gefühlsrad und Tank-Finger"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Vom Wir zum Ich"
+        },
+        {
+          "min": "15–25",
+          "phase": "input",
+          "titel": "Was sind Bedürfnisse?"
+        },
+        {
+          "min": "25–45",
+          "phase": "uebung",
+          "titel": "Das Glas der Bedürfnisse füllen"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–67",
+          "phase": "aktiv",
+          "titel": "Vier Ecken: Was brauchst du nach einem langen Tag?"
+        },
+        {
+          "min": "67–85",
+          "phase": "uebung",
+          "titel": "Mein Bedürfnis-Pegel"
+        },
+        {
+          "min": "85–95",
+          "phase": "skill",
+          "titel": "Skill: Atemübung 4-7-8"
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Réckbléck und Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: Gefühlsrad und Tank-Finger",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Reihum zeigt jede Person auf ein Wort im Gefühlsrad und dazu mit den Fingern, wie voll ihr Tank heute ist – null Finger heißt leer, zehn heißt randvoll. Wer mag, sagt einen Satz dazu. Die Leitung beginnt und erklärt das Bild vom Tank noch nicht; es wird gleich im Input aufgelöst.",
+          "sagen": [
+            "Zeigt auf euer Wort und mit den Fingern, wie voll euer Tank heute ist.",
+            "Was genau ein Tank ist, klären wir gleich."
+          ],
+          "tipp": "Die Zahlen nicht kommentieren. Wer eine sehr niedrige Zahl zeigt, bekommt in der Pause beiläufig Aufmerksamkeit, nicht vor der Gruppe.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Vom Wir zum Ich",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "Kurz auf die ersten drei Einheiten zurückschauen: Was hat die Gruppe geschafft, was steht jetzt im Vertrag? Dann das neue Modul „Wer bin ich?“ ankündigen: In den nächsten drei Einheiten geht es um Bedürfnisse, um die eigene Art und um Stärken. Heute beginnt es mit der Frage, was ein Mensch braucht, damit es ihm gut geht.",
+          "sagen": [
+            "Ihr kennt euch jetzt als Gruppe. Ab heute schaut jede und jeder auf sich selbst.",
+            "Die Frage für heute: Was braucht ihr, damit es euch gut geht?"
+          ]
+        },
+        {
+          "titel": "Was sind Bedürfnisse?",
+          "dauer": 10,
+          "phase": "input",
+          "text": "Die Frage stellen und Antworten ungeordnet sammeln; auch Handy, WLAN und Pizza aufschreiben. Dann gemeinsam den sechs Bereichen an der Tafel zuordnen und das Bild erklären: Jedes Bedürfnis ist wie ein Tank, und ist einer fast leer, meldet sich ein Gefühl – oft, bevor man den Grund kennt. Zum Schluss den Unterschied zwischen Bedürfnis und Wunsch klären: Hinter „Ich will die neuen Sneakers“ kann Dazugehören oder Anerkennung stehen.",
+          "sagen": [
+            "Was braucht ein Mensch, damit es ihm gut geht? Alles zählt, auch WLAN.",
+            "Stellt euch jedes Bedürfnis als Tank vor. Was passiert, wenn der Schlaf-Tank leer ist?",
+            "Und was steckt hinter „Ich will endlich meine Ruhe“?"
+          ],
+          "tabelle": {
+            "spalten": [
+              "Bereich",
+              "Zum Beispiel",
+              "Ist der Tank leer, fühlt es sich oft so an"
+            ],
+            "zeilen": [
+              [
+                "Körper",
+                "Schlaf, Essen, Bewegung, Ruhe",
+                "müde, gereizt, unkonzentriert"
+              ],
+              [
+                "Sicherheit",
+                "Verlässlichkeit, ein sicheres Zuhause, wissen, was kommt",
+                "nervös, angespannt, misstrauisch"
+              ],
+              [
+                "Zugehörigkeit",
+                "Freunde, Familie, dazugehören",
+                "einsam, ausgeschlossen, eifersüchtig"
+              ],
+              [
+                "Anerkennung",
+                "gesehen und ernst genommen werden",
+                "gekränkt, wütend, unsichtbar"
+              ],
+              [
+                "Selbstbestimmung",
+                "selbst entscheiden, Freiraum",
+                "trotzig, eingeengt, wütend"
+              ],
+              [
+                "Spaß und Neues",
+                "lachen, etwas erleben, dazulernen",
+                "gelangweilt, lustlos, leer"
+              ]
+            ]
+          },
+          "tipp": "Nennt jemand Handy oder WLAN, nachfragen, wofür: um Freunden zu schreiben (Zugehörigkeit), um abzuschalten (Ruhe), um mitreden zu können (Anerkennung). So wird der Unterschied zwischen Wunsch und Bedürfnis greifbar.",
+          "wennEsKippt": "Kommt nichts, drei Beispiele vorgeben und nur zuordnen lassen: ausschlafen, ein Freund, der zu einem hält, selbst entscheiden, wann man Hausaufgaben macht. Zuordnen fällt leichter als Erfinden."
+        },
+        {
+          "titel": "Das Glas der Bedürfnisse füllen",
+          "dauer": 20,
+          "phase": "uebung",
+          "text": "Jede Person schreibt drei bis fünf ihrer wichtigsten Bedürfnisse auf Zettel – ein Bedürfnis pro Zettel, ohne Namen. Alle falten ihre Zettel und werfen sie ins Glas. Die Leitung liest die Zettel zuerst still, dann laut vor, und die Gruppe ordnet sie den sechs Bereichen zu. Gemeinsam schauen: Was kommt oft vor, was haben wir gemeinsam? Zum Schluss kommen alle Zettel zurück ins Glas, der Deckel wird geschlossen, das Etikett aufgeklebt, und das Glas bekommt seinen festen Platz.",
+          "sagen": [
+            "Schreibt auf, was ihr wirklich braucht, nicht was gut klingt. Niemand erfährt, von wem welcher Zettel ist.",
+            "Welche Bedürfnisse kommen oft vor? Welche haben wir gemeinsam?",
+            "Das Glas bleibt das ganze Jahr hier. Wir öffnen es wieder in Einheit 15 und am Ende des Jahres."
+          ],
+          "tipp": "Alle schreiben mit denselben Stiften auf Zettel derselben Farbe – das schützt die Anonymität. Kommen in Einheit 15 und 30 neue Zettel in anderen Farben dazu, werden im Glas die Schichten des Jahres sichtbar.",
+          "wennEsKippt": "Steht auf einem Zettel etwas Belastendes oder ein Hinweis auf Gefahr, ihn nicht vorlesen, sondern beiseitelegen und nach der Stunde nach dem Schutzkonzept handeln. Der ganzen Gruppe anbieten: Wer etwas aufgeschrieben hat, worüber er reden möchte, kann nach der Stunde zu mir kommen. Kommen nur Scherzzettel, sie vorlesen und fragen, welches Bedürfnis dahintersteckt – Pizza ist Essen und oft auch Gemeinschaft."
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Gemeinsam essen. Wer beim Check-in einen fast leeren Tank gezeigt hat, bekommt jetzt nebenbei ein Gespräch, keine Befragung."
+        },
+        {
+          "titel": "Vier Ecken: Was brauchst du nach einem langen Tag?",
+          "dauer": 7,
+          "phase": "aktiv",
+          "text": "In jeder Raumecke hängt ein Schild: Ruhe, Bewegung, Leute, Essen und Schlaf. Die Leitung liest eine Frage vor, alle gehen in die passende Ecke, und in jeder Ecke sagt eine Person kurz, warum. Die Fragen bleiben bei Vorlieben, nicht bei Mängeln. So wird sichtbar, dass Menschen Verschiedenes brauchen und dass jede Ecke in Ordnung ist.",
+          "sagen": [
+            "Es gibt keine richtige Ecke. Geht dahin, wo ihr ehrlich hingehört."
+          ],
+          "punkte": [
+            "Nach einem langen Schultag brauchst du am meisten …",
+            "Vor einer Prüfung hilft dir am ehesten …",
+            "Wenn du dich über jemanden geärgert hast, brauchst du …",
+            "Am Wochenende tankst du am besten auf mit …"
+          ],
+          "tipp": "Nach der Pause bringt die Übung Energie zurück. Bei nur zwei Jugendlichen zeigen beide auf Karten auf dem Tisch, statt in Ecken zu gehen.",
+          "wennEsKippt": "Laufen alle einer Person hinterher, die nächste Frage mit geschlossenen Augen beantworten lassen: erst mit dem Finger in die Ecke zeigen, dann Augen auf und hingehen."
+        },
+        {
+          "titel": "Mein Bedürfnis-Pegel",
+          "dauer": 18,
+          "phase": "uebung",
+          "text": "Das Blatt austeilen, die Geschichte lesen und die Beispielzeile der Tabelle besprechen. Jede Person wählt fünf Bedürfnisse und schätzt ein, wie wichtig sie ihr sind und wie voll der Tank gerade ist. Dann das Bedürfnis mit der größten Lücke einkreisen und auf Seite 2 einen kleinen Schritt planen, der in dieser Woche machbar ist. Das Blatt kommt in die persönliche Mappe und wird in Einheit 15 und 30 wieder hervorgeholt. Wer mag, nennt zum Schluss seinen Schritt.",
+          "sagen": [
+            "Sehr wichtig und wenig voll – da ist die Lücke. Dort lohnt sich ein kleiner Schritt am meisten.",
+            "Klein heißt: Ihr schafft ihn diese Woche, ohne dass jemand anderes mitspielen muss.",
+            "Wer mag, nennt seinen Schritt – nur den Schritt, nicht den Grund."
+          ],
+          "tipp": "Die Leitung zeigt ihre eigene Zeile, etwa: Bewegung, wichtig 8, voll 3, Schritt: zweimal pro Woche mit dem Rad zur Arbeit. Ehrlich, aber im Rahmen – das macht die Aufgabe greifbar.",
+          "wennEsKippt": "Schreibt jemand „alles leer“ oder „egal“, nicht diskutieren, sondern fragen: Welcher Tank ist am wenigsten leer? Von dort aus lässt sich ein erster Schritt finden. Deuten Einträge auf ernsten Mangel hin, etwa kein Essen oder keine Sicherheit zu Hause, nach der Stunde das Einzelgespräch suchen.",
+          "blatt": "skills-beduerfnis-pegel"
+        },
+        {
+          "titel": "Skill: Atemübung 4-7-8",
+          "dauer": 10,
+          "phase": "skill",
+          "text": "Aufrecht sitzen, die Hände locker auf den Oberschenkeln. Die Leitung zählt vor: vier Sekunden durch die Nase einatmen, sieben Sekunden die Luft anhalten, acht Sekunden langsam durch den Mund ausatmen, als würde man durch einen Strohhalm pusten. Vier Durchgänge, danach ruhig weiteratmen und nachspüren. Wer das Anhalten unangenehm findet, lässt es weg oder zählt kürzer, etwa drei, vier, sechs. Zum Schluss besprechen, wo im Alltag die Übung helfen könnte.",
+          "sagen": [
+            "Das Ausatmen ist der wichtigste Teil. Langes Ausatmen sagt dem Körper: Du kannst runterfahren.",
+            "Wie fühlt sich euer Körper jetzt an? Wo könntet ihr das brauchen – vor einer Prüfung, im Bus, abends im Bett?"
+          ],
+          "tipp": "Vorher sagen, dass beim ersten Mal manchen leicht schwindlig wird, dass das vergeht und dass man jederzeit normal weiteratmen darf.",
+          "wennEsKippt": "Wird gekichert oder übertrieben laut ausgeatmet, eine Runde mit offenen Augen machen und mit ruhiger, leiser Stimme weiterzählen. Wer nicht mitmachen möchte, sitzt still dabei."
+        },
+        {
+          "titel": "Réckbléck und Skills-Pass",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Blitzlicht: Jede Person nennt eine Idee zum Auftanken, die sie heute von jemand anderem gehört hat und ausprobieren würde. Dann trägt jede Person einen Satz in den Skills-Pass ein und bekommt den Stempel. Die Blätter kommen in die Mappen, das Glas an seinen Platz.",
+          "sagen": [
+            "Welche Idee zum Auftanken habt ihr heute von jemand anderem gehört?",
+            "Für den Pass: dein kleiner Schritt für diese Woche – oder die Atemübung 4-7-8."
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Nächstes Mal geht es darum, wie ihr seid: eher laut oder eher leise – und ob die anderen euch so sehen wie ihr euch selbst.",
+      "hintergrund": "Bedürfnisse sind der Motor hinter Gefühlen und Verhalten. Maslow (1943) beschrieb Stufen von körperlichen Bedürfnissen über Sicherheit, Zugehörigkeit und Anerkennung bis zur Selbstverwirklichung; die strenge Reihenfolge gilt heute als überholt, die Bereiche selbst nicht. Grawe (2004) nennt vier psychologische Grundbedürfnisse – Bindung, Orientierung und Kontrolle, Lustgewinn und Selbstwerterhöhung –, die Selbstbestimmungstheorie Autonomie, Kompetenz und Verbundenheit (Deci & Ryan, 2000). Die sechs Tanks fassen diese Modelle jugendgerecht zusammen; wer merkt, welcher Tank leer ist, versteht die eigenen Gefühle besser. Die Gewaltfreie Kommunikation unterscheidet Bedürfnisse von den Strategien, mit denen man sie erfüllen will (Rosenberg, 2001) – das hilft, hinter Forderungen das Eigentliche zu sehen.",
+      "quellen": [
+        "Maslow, A. H. (1943). A theory of human motivation. Psychological Review, 50(4), 370–396.",
+        "Grawe, K. (2004). Neuropsychotherapie. Göttingen: Hogrefe.",
+        "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268.",
+        "Rosenberg, M. B. (2001). Gewaltfreie Kommunikation. Paderborn: Junfermann."
+      ],
+      "achtung": "Das Thema kann Mangel sichtbar machen: kein sicheres Zuhause, zu wenig Essen, niemand, der zu einem hält. Nichts davon wird in der Gruppe vertieft. Die Zettel im Glas zuerst still lesen; Hinweise auf Gefährdung nicht vorlesen, sondern nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) informieren. Der Bedürfnis-Pegel ist privat und wird weder eingesammelt noch vorgelesen. Bei der Atemübung ist das Luftanhalten freiwillig; wer Asthma hat oder Atemübungen unangenehm findet, atmet nur langsam aus. Erzählt jemand von Gewalt, Missbrauch, Selbstverletzung oder Suizidgedanken, das im Einzelgespräch aufgreifen und sofort nach dem Schutzkonzept handeln."
+    },
+    {
+      "id": "j1-e05",
+      "nr": 5,
+      "jahr": 1,
+      "modul": "j1-m1",
+      "titel": "Zwischen laut und leise",
+      "kurz": "Die Jugendlichen schätzen ein, wo sie zwischen Gegensätzen wie laut und leise stehen, vergleichen das mit dem Blick der Gruppe und erleben Unterschiede als Vielfalt.",
+      "dauer": 100,
+      "ziele": [
+        "schätzen sich auf acht Gegensatzpaaren ein und merken, dass sie je nach Situation anders sind",
+        "vergleichen Selbst- und Fremdbild und benennen, was sie überrascht",
+        "beschreiben Unterschiede in der Gruppe, ohne sie als besser oder schlechter zu bewerten",
+        "probieren den Dankbarkeitsblitz als kurzen Skill aus"
+      ],
+      "material": [
+        "Gefühlsrad in A3 (laminiert)",
+        "Schülerblatt „Zwischen laut und leise“ in A4 für jede Person, dazu Seite 1 in A3 für jede Person",
+        "Klebepunkte in zwei gut unterscheidbaren Farben: je Person 8 in der eigenen Farbe (z. B. blau) und etwa 60 in der Galerie-Farbe (z. B. gelb)",
+        "Kreppband zum Aufhängen",
+        "Skills-Pässe und persönliche Mappen, Stempel",
+        "Imbiss und Getränke (Allergien beachten)"
+      ],
+      "vorbereitung": [
+        "Seite 1 des Blatts für jede Person zusätzlich auf A3 kopieren",
+        "Eine freie Wand oder Tische für die Galerie vorbereiten, mit genug Abstand zwischen den Blättern",
+        "Die Klebepunkte portionieren",
+        "Eine ruhige Strecke für den Spaziergang festlegen (etwa zehn Minuten hin und zurück); bei Regen einen Weg durch das Gebäude"
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-laut-und-leise",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Wie laut bist du heute?"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Rückblick: der kleine Schritt"
+        },
+        {
+          "min": "15–35",
+          "phase": "uebung",
+          "titel": "Wo stehe ich? Selbsteinschätzung"
+        },
+        {
+          "min": "35–55",
+          "phase": "uebung",
+          "titel": "Wie sehen mich die anderen? Galerie"
+        },
+        {
+          "min": "55–70",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "70–90",
+          "phase": "aktiv",
+          "titel": "Ruhiger Spaziergang"
+        },
+        {
+          "min": "90–95",
+          "phase": "skill",
+          "titel": "Skill: Dankbarkeitsblitz"
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Réckbléck und Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: Wie laut bist du heute?",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Reihum zeigt jede Person auf ein Wort im Gefühlsrad und dazu mit der Hand, wie laut oder leise sie sich heute fühlt: Hand am Boden heißt flüsterleise, Hand über dem Kopf heißt Lautsprecher. Die Leitung beginnt. Die Handhöhe wird nicht gedeutet, nur wahrgenommen – sie ist schon der Einstieg ins Thema.",
+          "sagen": [
+            "Zeigt euer Wort – und mit der Hand, wie laut ihr heute drauf seid.",
+            "Ist das bei euch jeden Tag gleich?"
+          ],
+          "tipp": "Beiläufig sagen, dass leise nicht schlecht gelaunt heißt – bevor es jemand so deutet.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Rückblick: der kleine Schritt",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "Auf das Glas der Bedürfnisse zeigen und fragen, wer seinen kleinen Schritt aus der letzten Woche ausprobiert hat – ein Daumen reicht, ein Bericht ist nicht nötig. Dann das Thema nennen: Heute geht es darum, wie man ist, und darum, dass die meisten Menschen irgendwo zwischen den Extremen stehen.",
+          "sagen": [
+            "Wer hat seinen kleinen Schritt ausprobiert? Daumen reicht.",
+            "Heute geht es um die Frage: Wie seid ihr – und sehen die anderen euch genauso?"
+          ],
+          "wennEsKippt": "Hat niemand den Schritt gemacht, das gelassen nehmen: Vorsätze brauchen oft mehrere Anläufe. Wer mag, nimmt sich den Schritt für diese Woche noch einmal vor."
+        },
+        {
+          "titel": "Wo stehe ich? Selbsteinschätzung",
+          "dauer": 20,
+          "phase": "uebung",
+          "text": "Mit einem kurzen Input beginnen: Manche Menschen tanken in Ruhe auf, andere unter Leuten; die meisten liegen dazwischen, und keine Seite ist besser. Leise ist dabei nicht dasselbe wie schüchtern. Dann füllt jede Person Seite 1 des Blatts in A4 aus. Anschließend überträgt sie ihre Kreuze mit Klebepunkten der eigenen Farbe auf die A3-Kopie, schreibt ihren Namen darauf und streicht Linien durch, zu denen sie keine Rückmeldung möchte.",
+          "sagen": [
+            "Leise heißt nicht schüchtern. Schüchtern ist, wer Angst hat, bewertet zu werden. Leise ist, wer in Ruhe auftankt.",
+            "Denkt daran, wie ihr meistens seid – nicht, wie ihr sein wollt.",
+            "Seid ihr in der Klasse genauso wie mit euren Freunden?"
+          ],
+          "tabelle": {
+            "spalten": [
+              "",
+              "eher leise",
+              "eher laut"
+            ],
+            "zeilen": [
+              [
+                "tankt auf durch",
+                "Ruhe, Zeit für sich, ein Gespräch zu zweit",
+                "Leute, Bewegung, viel los"
+              ],
+              [
+                "kann oft gut",
+                "zuhören, beobachten, lange dranbleiben",
+                "auf andere zugehen, etwas anstoßen, mitreißen"
+              ],
+              [
+                "mag es nicht, wenn",
+                "man ständig drängt, etwas zu sagen",
+                "man lange still sitzen muss"
+              ]
+            ]
+          },
+          "tipp": "Ein eigenes Beispiel erzählen: Im Team bin ich eher laut, nach der Arbeit brauche ich eine Stunde Ruhe. Das zeigt, dass beides in einer Person steckt.",
+          "wennEsKippt": "Setzt jemand jedes Kreuz in die Mitte, nicht korrigieren, sondern fragen: Gibt es eine Linie, bei der du dir sicher bist? Wer das Blatt albern findet, darf es zuerst für eine bekannte Person ausfüllen und dann für sich – oft wird es danach ernst.",
+          "blatt": "skills-laut-und-leise"
+        },
+        {
+          "titel": "Wie sehen mich die anderen? Galerie",
+          "dauer": 20,
+          "phase": "uebung",
+          "text": "Vorher die Regeln klar sagen: Es gibt keine gute oder schlechte Seite, geklebt wird schweigend, niemand kommentiert, und auf durchgestrichene Linien kommen keine Punkte. Die A3-Blätter hängen an der Wand, alle gehen herum und kleben in der Galerie-Farbe einen Punkt pro Linie dorthin, wo sie die Person sehen. Wer sein Blatt nicht aufhängen möchte, behält es und klebt nur bei den anderen. Danach holt jede Person ihr Blatt, schaut es in Ruhe an und vergleicht auf Seite 2 Selbst- und Fremdbild. Zum Schluss eine freiwillige Runde: Was hat euch überrascht?",
+          "sagen": [
+            "Ihr kennt euch erst ein paar Wochen. Die Punkte zeigen, wie jemand hier wirkt – nicht, wie er ist.",
+            "Wo liegen eure Kreuze und die Punkte der anderen nah beieinander, wo weit auseinander?",
+            "Was hat euch überrascht? Ihr müsst nicht sagen, wo."
+          ],
+          "tipp": "Bei nur zwei oder drei Jugendlichen klebt die Leitung mit, und statt einer Galerie tauschen alle ihre Blätter direkt am Tisch.",
+          "wennEsKippt": "Beschwert sich jemand über die Punkte, das ernst nehmen und die Unterscheidung wiederholen: Das zeigt, wie du hier wirkst – vielleicht warst du beim Bingo lauter, als du dachtest. Klebt jemand absichtlich alle Punkte an ein Ende, um zu ärgern, das Blatt kurz abnehmen, die Punkte entfernen und mit der Person unter vier Augen sprechen.",
+          "blatt": "skills-laut-und-leise"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Gemeinsam essen. Die Leitung achtet darauf, wer nach der Galerie still geworden ist, und sucht nebenbei das Gespräch."
+        },
+        {
+          "titel": "Ruhiger Spaziergang",
+          "dauer": 20,
+          "phase": "aktiv",
+          "text": "Gemeinsam nach draußen gehen. Die ersten fünf Minuten wird nicht gesprochen: Alle achten nur auf Geräusche, Gerüche und die eigenen Schritte. Auf ein Zeichen gehen die Jugendlichen zu zweit weiter und erzählen sich, was sie heute über sich gelernt haben; die Paare bestimmt die Leitung, damit niemand übrig bleibt. Bei Regen führt der Weg durch Flure und Treppenhaus, oder die Gruppe geht im Raum langsam im Kreis.",
+          "sagen": [
+            "Fünf Minuten nur hören und riechen. Wie viele verschiedene Geräusche könnt ihr zählen?",
+            "Erzählt euch zu zweit: Was habe ich heute über mich gelernt? Oder: Was hat mich an den Punkten überrascht?"
+          ],
+          "tipp": "Leise Jugendliche erzählen im Gehen oft mehr als im Stuhlkreis: Man muss sich nicht anschauen und hat etwas mit den Füßen zu tun.",
+          "wennEsKippt": "Fällt die Stille schwer, eine Aufgabe geben: Geräusche an den Fingern abzählen. Reden die Paare über ganz anderes, ist das in Ordnung – die Leitung geht eine Weile neben einem Paar her und stellt die Frage selbst."
+        },
+        {
+          "titel": "Skill: Dankbarkeitsblitz",
+          "dauer": 5,
+          "phase": "skill",
+          "text": "Am Ende des Spaziergangs stehen bleiben oder im Raum im Kreis sitzen. Alle schließen die Augen oder schauen auf den Boden und denken zwanzig Sekunden an eine Sache, für die sie gerade dankbar sind – klein reicht. Wer mag, teilt sie. Danach erklären, wofür der Skill gut ist: für Tage, an denen der Kopf nur das Schlechte sieht.",
+          "sagen": [
+            "Zwanzig Sekunden: eine Sache, für die ihr gerade dankbar seid. Das Essen in der Pause zählt auch.",
+            "Der Kopf merkt sich Ärger leichter als Gutes. Mit dem Dankbarkeitsblitz gleicht ihr das ein bisschen aus."
+          ],
+          "tipp": "Als Wochenaufgabe anbieten: jeden Abend vor dem Einschlafen ein Dankbarkeitsblitz. Wer mag, erzählt nächstes Mal, wie es war."
+        },
+        {
+          "titel": "Réckbléck und Skills-Pass",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Reihum ein Wort zu heute. Dann trägt jede Person einen Satz in den Skills-Pass ein und bekommt den Stempel. Die A3-Blätter kommen in die persönlichen Mappen oder mit nach Hause; hängen bleiben sie nur mit ausdrücklichem Ja.",
+          "sagen": [
+            "Ein Wort zu heute.",
+            "Für den Pass: etwas, das du an deiner Art magst – oder dein Dankbarkeitsblitz."
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Nächstes Mal geht es um eure Stärken. Und dafür brauchen wir einen Baum.",
+      "hintergrund": "Introversion und Extraversion beschreiben, woher Menschen Energie beziehen: aus Ruhe und Konzentration oder aus Kontakt und Anregung. Cain (2012) grenzt Introversion deutlich von Schüchternheit ab, der Angst vor Bewertung, und zeigt, dass Schulen und Gruppen oft das Laute belohnen, obwohl leise Menschen eigene Stärken wie Zuhören und gründliches Nachdenken mitbringen. Im Jugendalter wird das Selbstbild vielschichtiger: Jugendliche erleben sich je nach Umfeld unterschiedlich, und Widersprüche zwischen diesen Seiten beschäftigen sie stark (Harter, 2012). Das Johari-Fenster (Luft & Ingham, 1955) erklärt, warum ein Fremdbild überraschen kann: Andere sehen Seiten, die man selbst nicht bemerkt. Der Dankbarkeitsblitz geht auf Studien zurück, in denen regelmäßiges Festhalten von Dankbarem das Wohlbefinden steigerte (Emmons & McCullough, 2003).",
+      "quellen": [
+        "Cain, S. (2012). Quiet: The Power of Introverts in a World That Can’t Stop Talking. New York: Crown.",
+        "Harter, S. (2012). The Construction of the Self (2nd ed.). New York: Guilford.",
+        "Luft, J. & Ingham, H. (1955). The Johari window, a graphic model of interpersonal awareness. Proceedings of the Western Training Laboratory in Group Development. Los Angeles: University of California.",
+        "Emmons, R. A. & McCullough, M. E. (2003). Counting blessings versus burdens: An experimental investigation of gratitude and subjective well-being in daily life. Journal of Personality and Social Psychology, 84(2), 377–389."
+      ],
+      "achtung": "Fremdeinschätzungen können kränken, auch wenn beide Seiten jeder Linie neutral formuliert sind. Die Leitung achtet auf Kommentare, auf absichtlich gehäufte Punkte und auf Jugendliche, die nach der Galerie still werden, und bietet ein Einzelgespräch an. Niemand muss sein Blatt aufhängen; Seite 2 ist privat und wird nicht vorgelesen. Die Stille beim Spaziergang kann für ängstliche Jugendliche schwer sein – wer möchte, geht neben der Leitung. Erzählt jemand von Gewalt, Missbrauch, Selbstverletzung oder Suizidgedanken, wird das nicht in der Gruppe vertieft, sondern zeitnah im Einzelgespräch aufgegriffen und nach dem internen Schutzkonzept weitergegeben; die zuständige Leitung (Responsable) wird informiert."
+    },
+    {
+      "id": "j1-e06",
+      "nr": 6,
+      "jahr": 1,
+      "modul": "j1-m1",
+      "titel": "Mein Baum der Stärke",
+      "kurz": "Die Jugendlichen gestalten einen Baum aus dem, was sie hält, was sie können, was in ihnen wächst und worauf sie stolz sind – und bekommen von der Gruppe Stärken zurückgemeldet.",
+      "dauer": 100,
+      "ziele": [
+        "benennen Ressourcen, Stärken und Erfolge und halten sie im eigenen Baum fest",
+        "beschreiben Stärken anderer an einem konkret beobachteten Verhalten",
+        "nehmen Rückmeldungen der Gruppe zu eigenen Stärken an",
+        "probieren den Bodyscan als Übung zum Runterkommen aus"
+      ],
+      "material": [
+        "Gefühlsrad in A3 (laminiert)",
+        "Schülerblatt „Mein Baum der Stärke“ für jede Person, doppelseitig kopiert",
+        "Festes A3-Zeichenpapier für jede Person, Bleistifte, Buntstifte, Filzstifte",
+        "Kleine Haftnotizen in einer Farbe, etwa acht je Person",
+        "Handys der Jugendlichen oder der Leitung für die Baumfotos, alternativ Klemmbretter zum Skizzieren",
+        "Matten oder Decken für den Bodyscan; Stühle für alle, die lieber sitzen",
+        "Eine A3-Sammelmappe mit dem Namen der Gruppe für die Bäume",
+        "Skills-Pässe und persönliche Mappen, Stempel",
+        "Imbiss und Getränke (Allergien beachten)"
+      ],
+      "vorbereitung": [
+        "Einen Ort mit mehreren Bäumen in Sichtweite auswählen; bei Regen Bäume vom Fenster aus oder Baumfotos auf dem Tisch",
+        "Klären, dass das Handy heute für das Baumfoto erlaubt ist – als Ausnahme nach dem Gruppenvertrag",
+        "Den Bodyscan (Schritt 7) einmal laut für sich lesen, um das Tempo zu finden",
+        "Tische so stellen, dass alle Bäume nach der Pause offen nebeneinander liegen können"
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-baum-der-staerke",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Was hat diese Woche geklappt?"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Rückblick: laut, leise – und stark"
+        },
+        {
+          "min": "15–30",
+          "phase": "aktiv",
+          "titel": "Draußen: einen Baum aussuchen"
+        },
+        {
+          "min": "30–55",
+          "phase": "uebung",
+          "titel": "Mein Baum der Stärke"
+        },
+        {
+          "min": "55–70",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "70–85",
+          "phase": "uebung",
+          "titel": "Stärken-Schatzkiste: der kleine Baum"
+        },
+        {
+          "min": "85–95",
+          "phase": "skill",
+          "titel": "Skill: Bodyscan (Kurzversion)"
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Réckbléck und Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: Was hat diese Woche geklappt?",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Reihum zeigt jede Person auf ein Wort im Gefühlsrad und nennt, wenn sie mag, eine Sache, die in der letzten Woche geklappt hat – klein reicht: den Bus erwischt, eine Aufgabe fertig, einen Streit vermieden. Die Leitung beginnt mit einem eigenen kleinen Erfolg. Die Beispiele sind später Stoff für die Früchte des Baums.",
+          "sagen": [
+            "Zeigt euer Wort. Und wer mag: Was hat diese Woche geklappt? Es muss nichts Großes sein.",
+            "Rechtzeitig aufgestanden zählt auch."
+          ],
+          "wennEsKippt": "Sagt jemand „Nichts hat geklappt“, das nicht widerlegen. Kurz anerkennen, dass es eine schwere Woche war, und fragen, was trotzdem gegangen ist – heute hierherzukommen zählt.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Rückblick: laut, leise – und stark",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "Kurz an Einheit 5 anknüpfen: Wer mag, sagt, was ihn an den Punkten der anderen überrascht hat. Dann die Brücke schlagen: Ob laut oder leise, jede Art hat ihre Stärken. Heute geht es darum, diese Stärken sichtbar zu machen – und dafür gehen alle zuerst nach draußen.",
+          "sagen": [
+            "Letzte Woche ging es darum, wie ihr seid. Heute geht es darum, was ihr könnt und was euch hält.",
+            "Dafür braucht jede und jeder einen Baum. Einen echten."
+          ]
+        },
+        {
+          "titel": "Draußen: einen Baum aussuchen",
+          "dauer": 15,
+          "phase": "aktiv",
+          "text": "Draußen sucht sich jede Person einen Baum aus, der ihr gefällt, fotografiert oder skizziert ihn und bleibt eine Minute bei ihm: Rinde anfassen, nach oben schauen, auf die Wurzeln achten. Dann treffen sich alle bei einem Baum, und die Leitung fragt, was einen Baum im Sturm stabil hält. Die Antwort – die Wurzeln – führt direkt zum eigenen Baum. Bei Regen die Bäume vom Fenster aus wählen oder Baumfotos auf dem Tisch auslegen.",
+          "sagen": [
+            "Sucht euch einen Baum aus, der zu euch passt. Ihr müsst nicht erklären, warum.",
+            "Was hält einen Baum stabil, wenn es stürmt?",
+            "Und was hält euch, wenn es stürmt?"
+          ],
+          "tipp": "Das Foto wird gleich beim Zeichnen gebraucht. Das Handy ist dafür ausnahmsweise erlaubt – danach kommt es wieder weg.",
+          "wennEsKippt": "Wird herumgealbert oder auf Bäume geklettert, alle zum Treffpunkt rufen und sofort die Frage nach den Wurzeln stellen: Das holt die Aufmerksamkeit zurück. Wer keinen Baum wählen will, darf den Baum der Leitung ausleihen oder einen aus der Erinnerung zeichnen."
+        },
+        {
+          "titel": "Mein Baum der Stärke",
+          "dauer": 25,
+          "phase": "uebung",
+          "text": "Zurück im Raum das Blatt austeilen und die vier Teile des Baums erklären. Jede Person zeichnet auf A3 einen großen Baum, gern nach ihrem Foto, und füllt ihn aus. Die Stärken-Wörter auf dem Blatt helfen, wenn jemandem nichts einfällt. Am Stamm und in der Krone bleibt Platz frei, weil in Einheit 19 und 30 noch etwas dazukommt, und rechts daneben bleibt Platz für einen kleinen Baum. Die Leitung geht herum und hilft mit Fragen, nicht mit Vorschlägen.",
+          "sagen": [
+            "Wurzeln können auch ein Ort sein, ein Tier, ein Lied oder ein Mensch, der nicht mehr da ist.",
+            "Woran würde jemand, der dich gut kennt, merken, dass du das kannst?",
+            "Lasst am Stamm und oben in der Krone Platz. Euer Baum wächst dieses Jahr noch."
+          ],
+          "punkte": [
+            "Wurzeln: Was hält mich? Menschen, Orte, Tiere, Musik, Erinnerungen",
+            "Stamm: Was kann ich, was macht mich aus?",
+            "Äste: Was lerne ich gerade, was darf noch wachsen?",
+            "Früchte: Worauf bin ich stolz? Große und kleine Erfolge"
+          ],
+          "tipp": "Wer nicht gern zeichnet, zeichnet nur einen einfachen Umriss: Stamm, ein paar Wurzeln, eine Wolke als Krone. Es geht um den Inhalt, nicht um Kunst.",
+          "wennEsKippt": "Bleibt der Stamm leer, die Frage umdrehen: Was würden deine Freunde sagen, was du gut kannst? Was hast du hier in den letzten Wochen gezeigt? Wer seine Wurzeln nicht aufschreiben möchte, darf Zeichen verwenden, die nur er versteht.",
+          "blatt": "skills-baum-der-staerke"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Gemeinsam essen. Die Bäume liegen während der Pause umgedreht auf den Tischen, damit niemand ungefragt hineinschaut."
+        },
+        {
+          "titel": "Stärken-Schatzkiste: der kleine Baum",
+          "dauer": 15,
+          "phase": "uebung",
+          "text": "Jede Person zeichnet neben ihren großen Baum einen kleinen, dann liegen alle Bäume offen auf den Tischen. Alle gehen herum und schreiben jeder Person eine Stärke auf eine Haftnotiz, dazu eine kurze Beobachtung, und kleben sie an den kleinen Baum. Die Leitung schreibt für jede Person mindestens einen Zettel und achtet darauf, dass alle Bäume ähnlich viele bekommen. Danach liest jede Person in Ruhe ihre Zettel und beantwortet auf Seite 2 des Blatts die Fragen zum kleinen Baum.",
+          "sagen": [
+            "Schreibt eine Stärke und woran ihr sie gemerkt habt: geduldig – du hast mir beim Bingo alles zweimal erklärt.",
+            "Nichts über das Aussehen. Es geht darum, was jemand tut.",
+            "Welche Stärke hat euch überrascht? Welche kanntet ihr schon?"
+          ],
+          "tipp": "Bei nur zwei oder drei Jugendlichen schreibt jede Person der anderen zwei oder drei Zettel, und die Leitung ergänzt – so wird der kleine Baum trotzdem voll.",
+          "wennEsKippt": "Taucht ein ironischer oder verletzender Zettel auf, ihn unauffällig abnehmen und später mit dem Schreiber unter vier Augen sprechen. Dreht jemand seinen Baum beim Lesen verlegen um, das zulassen: Anerkennung muss man manchmal erst aushalten lernen. Ein Satz reicht: Du kannst das auch später in Ruhe lesen.",
+          "blatt": "skills-baum-der-staerke"
+        },
+        {
+          "titel": "Skill: Bodyscan (Kurzversion)",
+          "dauer": 10,
+          "phase": "skill",
+          "text": "Liegend auf Matten oder sitzend auf dem Stuhl, wie jede Person möchte. Vorher sagen, dass die Augen offen bleiben dürfen und dass sich jede Person jederzeit leise aufsetzen kann. Den Text langsam vorlesen und zwischen den Sätzen Pausen lassen; das dauert etwa sechs Minuten. Danach kurz nachspüren und fragen, wie sich der Körper jetzt anfühlt. Zum Schluss erklären: Wer seinen Körper spürt, merkt früher, wenn sich ein Gefühl anbahnt – darum geht es im nächsten Modul.",
+          "sagen": [
+            "Beim Bodyscan kann man nichts falsch machen. Auch wenn ihr gar nichts spürt, ist das eine Beobachtung.",
+            "Wie fühlt sich euer Körper jetzt an – schwerer, wärmer, unruhiger?"
+          ],
+          "punkte": [
+            "Mach es dir bequem, liegend oder sitzend. Schließ die Augen, wenn es sich gut anfühlt – oder schau auf einen Punkt am Boden.",
+            "Atme einmal tief ein … und langsam aus. Die Schultern dürfen ein Stück nach unten sinken.",
+            "Wandere mit deiner Aufmerksamkeit zur Stirn. Ist sie angespannt oder locker? Spür deine Augen, deine Wangen, deinen Kiefer.",
+            "Geh weiter zum Nacken und zu den Schultern. Du musst nichts verändern. Bemerk nur, was da ist.",
+            "Spür deinen Rücken: oben, in der Mitte, unten. Wo berührt er die Matte oder die Lehne?",
+            "Wandere durch die Beine nach unten bis zu den Füßen. Spür die Fersen, die Fußsohlen, die Zehen.",
+            "Spür jetzt den ganzen Körper auf einmal, vom Scheitel bis zu den Zehen. Noch ein tiefer Atemzug … und aus.",
+            "Beweg langsam deine Finger und Füße, streck dich, wenn du magst, und öffne die Augen, sobald du bereit bist."
+          ],
+          "tipp": "Leise, gleichmäßig und eher zu langsam lesen. Schläft jemand ein, ist das am Nachmittag ein ehrlicher Hinweis auf den Schlaf-Tank.",
+          "wennEsKippt": "Wird gekichert, nicht ermahnen, sondern ruhig weiterlesen; meist wird es nach einer Minute still. Wirkt jemand unruhig oder ängstlich oder beginnt zu weinen, leise hingehen, anbieten, die Augen zu öffnen und sich aufzusetzen, und die Person nach der Übung kurz ansprechen."
+        },
+        {
+          "titel": "Réckbléck und Skills-Pass",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Wer mag, nennt eine Stärke aus seinem kleinen Baum, die er mitnimmt. Dann trägt jede Person einen Satz in den Skills-Pass ein und bekommt den Stempel. Die Bäume kommen flach in die A3-Sammelmappe der Gruppe, die Blätter in die persönlichen Mappen; beides bleibt im Raum, bis die Bäume in Einheit 19 wieder hervorgeholt werden.",
+          "sagen": [
+            "Eine Stärke aus eurem kleinen Baum, die ihr mitnehmt – wer mag.",
+            "Die Bäume bleiben hier. In Einheit 19 kommt am Stamm etwas dazu und am Ende des Jahres neue Früchte."
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Ihr kennt jetzt eure Bedürfnisse und eure Stärken. Wenn ein Bedürfnis leer ist, meldet sich ein Gefühl – deshalb schauen wir uns ab nächster Woche die Gefühle genauer an.",
+      "hintergrund": "Ressourcenorientierte Arbeit fragt nicht zuerst, was fehlt, sondern was trägt. Die Resilienzforschung zeigt, dass Jugendliche Belastungen besser bewältigen, wenn sie auf verlässliche Beziehungen, eigene Fähigkeiten und Erfahrungen von Wirksamkeit zurückgreifen können – und dass es meist ganz alltägliche Schutzfaktoren sind (Masten, 2014). Das Baum-Bild ist an den „Tree of Life“ angelehnt, eine Methode der narrativen Arbeit mit belasteten Kindern, bei der Wurzeln, Stamm und Früchte unter anderem für Herkunft, Fähigkeiten und Geschenke anderer stehen (Ncube, 2006). Die Äste halten fest, was noch wächst: Fähigkeiten gelten als entwickelbar, nicht als feste Eigenschaft (Dweck, 2006). Der Bodyscan stammt aus dem Achtsamkeitstraining (Kabat-Zinn, 1990) und schult die Körperwahrnehmung, die im nächsten Modul für das Erkennen von Gefühlen gebraucht wird.",
+      "quellen": [
+        "Masten, A. S. (2014). Ordinary Magic: Resilience in Development. New York: Guilford.",
+        "Ncube, N. (2006). The Tree of Life Project: Using narrative ideas in work with vulnerable children. International Journal of Narrative Therapy and Community Work, 1, 3–16.",
+        "Dweck, C. S. (2006). Mindset: The New Psychology of Success. New York: Random House.",
+        "Kabat-Zinn, J. (1990). Full Catastrophe Living. New York: Delacorte."
+      ],
+      "achtung": "Die Frage nach den Wurzeln kann schmerzen, wenn wichtige Menschen fehlen, gestorben sind oder Beziehungen belastet sind. Deshalb ausdrücklich auch Orte, Tiere, Musik und Erinnerungen zulassen und niemanden drängen. Bleiben die Wurzeln leer oder steht dort „niemand“, das nicht in der Gruppe ansprechen, sondern im Einzelgespräch. Beim kleinen Baum ironische oder verletzende Zettel sofort entfernen. Beim Bodyscan dürfen die Augen offen bleiben; wer aufhört, braucht keine Begründung. Erzählt jemand von Gewalt, Missbrauch, Selbstverletzung oder Suizidgedanken, wird das nicht in der Gruppe vertieft, sondern zeitnah im Einzelgespräch aufgegriffen und nach dem internen Schutzkonzept weitergegeben; die zuständige Leitung (Responsable) wird informiert."
+    }
+  ]
+}

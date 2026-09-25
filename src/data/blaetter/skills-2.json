@@ -1,0 +1,975 @@
+[
+  {
+    "id": "skills-finde-jemanden",
+    "bereich": "skills",
+    "thema": "ankommen",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "gruppe"
+    ],
+    "dauer": "25 Min.",
+    "eldib": [
+      "SOZ-12",
+      "K-14",
+      "SOZ-33"
+    ],
+    "schlagworte": [
+      "Kennenlernen",
+      "Menschen-Bingo",
+      "Nachfragen",
+      "Gemeinsamkeiten",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:friends",
+    "kurs": [
+      "j1-e02"
+    ],
+    "de": {
+      "titel": "Finde jemanden, der …",
+      "untertitel": "Herumgehen, fragen, nachhaken – und herausfinden, was ihr gemeinsam habt.",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Zehn Felder, zehn kurze Gespräche. Es zählt nicht, wer zuerst fertig ist, sondern was du über die anderen erfährst."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Geh herum und frag die anderen. Stimmt ein Satz für jemanden, schreibt die Person ihren Namen ins Feld.",
+          "hinweis": "Jeder Name höchstens zweimal. Wer alle Felder voll hat, ruft „Bingo“ und hilft dann den anderen.",
+          "symbole": [
+            "gruppe",
+            "sprechen"
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "feld",
+              "label": "… dich heute schon zum Lachen gebracht hat",
+              "hoehe": 2.7
+            },
+            {
+              "art": "feld",
+              "label": "… im selben Monat Geburtstag hat wie du",
+              "hoehe": 2.7
+            },
+            {
+              "art": "feld",
+              "label": "… gern kocht oder backt",
+              "hoehe": 2.7
+            },
+            {
+              "art": "feld",
+              "label": "… sich mit Musik beruhigt",
+              "hoehe": 2.7
+            },
+            {
+              "art": "feld",
+              "label": "… einen Sport macht, den du noch nie ausprobiert hast",
+              "hoehe": 2.7
+            }
+          ],
+          "rechts": [
+            {
+              "art": "feld",
+              "label": "… ein Haustier hat oder gern eins hätte",
+              "hoehe": 2.7
+            },
+            {
+              "art": "feld",
+              "label": "… am Wochenende am liebsten lange schläft",
+              "hoehe": 2.7
+            },
+            {
+              "art": "feld",
+              "label": "… ein Wort in einer Sprache kann, die du nicht sprichst",
+              "hoehe": 2.7
+            },
+            {
+              "art": "feld",
+              "label": "… dir eine Serie oder ein Spiel empfehlen kann",
+              "hoehe": 2.7
+            },
+            {
+              "art": "feld",
+              "label": "… heute schon jemandem geholfen hat",
+              "hoehe": 2.7
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Nachhaken",
+          "text": "Frag bei jedem Feld eine Sache nach: Was kochst du am liebsten? Welche Musik? Welches Wort? So wird aus einer Unterschrift ein Gespräch."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Nach der Runde: Was hat dich überrascht?",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Überrascht hat mich, dass …",
+            "Mit … habe ich gemeinsam, dass …",
+            "Diese Frage will ich jemandem noch stellen: …"
+          ],
+          "linien": 1
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen kommen in Bewegung ins Gespräch, entdecken Gemeinsamkeiten und üben, bei Antworten nachzufragen. Die Felder sind bewusst harmlos gewählt: Herkunft, Familie und Aussehen kommen nicht vor.",
+        "ablauf": [
+          "Einführung (3 Min.): Blatt und Klemmbretter austeilen. Regel: Die gefragte Person schreibt ihren Namen ins Feld, jeder Name höchstens zweimal, in Gruppen unter fünf Personen dreimal. Die Leitung zählt als Person mit.",
+          "Nachhaken vormachen (2 Min.): Die Leitung fragt eine Person vor allen: „Kochst du gern? – Was denn am liebsten?“ und hört wirklich zu.",
+          "Runde (12–14 Min.): Alle gehen herum. Wer alle Felder voll hat, ruft „Bingo“ und hilft danach anderen, ihre Felder zu füllen.",
+          "Auflösen (6 Min.): Im Kreis einzelne Felder aufrufen: „Wer steht bei Musik – und was hört die Person?“ Dann Aufgabe 2; wer mag, liest einen Satz vor."
+        ],
+        "hintergrund": "Zu Beginn prüfen die Mitglieder einer Gruppe vor allem, ob sie dazugehören und wie sicher der Rahmen ist; Tuckman (1965) beschreibt diese erste Phase als Orientierung. Bewegung und kleine, ungefährliche Fragen senken die Hemmschwelle, weil niemand vor allen sprechen muss. Gemeinsamkeiten zu entdecken, stärkt das Erleben von Verbundenheit, das neben Autonomie und Kompetenz zu den psychologischen Grundbedürfnissen gehört (Deci & Ryan, 2000). Die Nachfrage-Regel verhindert, dass das Spiel zum bloßen Unterschriftensammeln wird: Wer nachfragt, zeigt Interesse – eine Grundfertigkeit für Freundschaften und für die Gesprächsübungen im weiteren Kurs.",
+        "quellen": [
+          "Tuckman, B. W. (1965). Developmental sequence in small groups. Psychological Bulletin, 63(6), 384–399.",
+          "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268."
+        ],
+        "differenzierung": {
+          "leichter": "Nur die linke Spalte spielen; als Nachfrage reicht ein einfaches „Welche?“ oder „Was denn?“.",
+          "schwerer": "Zu jedem Feld die Antwort auf die Nachfrage in Stichworten notieren und beim Auflösen eine Gemeinsamkeit der ganzen Gruppe suchen."
+        },
+        "impulse": [
+          "Welche Antwort hat dich überrascht?",
+          "Mit wem hast du etwas gemeinsam, das du nicht erwartet hättest?",
+          "Wie war es, jemanden anzusprechen, den du noch kaum kennst?"
+        ],
+        "tipps": [
+          "Wer lange am Rand steht, bekommt die Leitung als Tandem: Zu zweit fragt es sich leichter.",
+          "Bei wenig Energie im Sitzen spielen: Die Blätter wandern reihum, jede Person trägt sich dort ein, wo es für sie stimmt."
+        ],
+        "achtung": "Wird ein Feld zum Anlass für Spott, etwa beim Lieblingsessen oder bei einer Sprache, sofort an den Gruppenvertrag erinnern: Wir lachen miteinander, nicht übereinander.",
+        "material": "Blatt für jede Person, Klemmbretter oder feste Unterlagen, Stifte"
+      }
+    }
+  },
+  {
+    "id": "skills-natur-challenges",
+    "bereich": "skills",
+    "thema": "ankommen",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "gruppe"
+    ],
+    "dauer": "30 Min.",
+    "eldib": [
+      "SOZ-18",
+      "SOZ-30",
+      "SOZ-29"
+    ],
+    "schlagworte": [
+      "Teamarbeit",
+      "Kooperation",
+      "Natur",
+      "Draußen",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:trees",
+    "kurs": [
+      "j1-e03"
+    ],
+    "de": {
+      "titel": "Natur-Challenges",
+      "untertitel": "Gemeinsam statt gegeneinander: Es zählt, dass alle mitmachen – nicht, wie viel ihr schafft.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "So spielt ihr",
+          "punkte": [
+            "Bleibt in Sicht- und Rufweite. Beim Sammelsignal kommen alle sofort zum Treffpunkt.",
+            "Pflanzen bleiben ganz – nehmt nur, was schon am Boden liegt.",
+            "Teilt euch auf, aber entscheidet gemeinsam.",
+            "Bei Regen spielt ihr drinnen: Statt Naturmaterial nehmt ihr, was im Raum oder in der Materialkiste liegt, statt Blättern zehn verschiedene Papiersorten."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ihr habt 20 Minuten. Löst so viele Challenges wie möglich.",
+          "hinweis": "Kreuzt „geschafft“ an – und „alle dabei“ nur, wenn wirklich jede Person etwas beigetragen hat.",
+          "symbole": [
+            "gruppe",
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "geschafft",
+            "alle dabei"
+          ],
+          "items": [
+            "Findet drei ganz verschiedene Oberflächen – weich, rau, glatt.",
+            "Baut ein Kunstwerk aus Fundstücken – jede Person legt etwas dazu.",
+            "Findet etwas in jeder Farbe des Regenbogens.",
+            "Baut einen Turm aus fünf Steinen, der zehn Sekunden stehen bleibt.",
+            "Sammelt zehn verschiedene Blätter – nur vom Boden.",
+            "Fotografiert etwas ganz Kleines ganz groß.",
+            "Findet ein Geräusch, das ihr noch nie bewusst gehört habt.",
+            "Seid alle zusammen eine Minute lang komplett still.",
+            "Findet etwas, das älter ist als ihr alle zusammen.",
+            "Erfindet eine Challenge für die Leitung – und schaut zu, wie sie sie löst."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Gebt eurem Kunstwerk einen Namen. Die Leitung fotografiert es."
+        },
+        {
+          "art": "feld",
+          "label": "Unser Kunstwerk heißt",
+          "hoehe": 1.6
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was hat euch als Team geholfen – und was war schwierig?",
+          "symbole": [
+            "gruppe",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "feld",
+              "label": "Das hat uns geholfen",
+              "hoehe": 3
+            }
+          ],
+          "rechts": [
+            {
+              "art": "feld",
+              "label": "Das war schwierig",
+              "hoehe": 3
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Gruppe löst draußen gemeinsam Aufgaben und erlebt, dass sie als Team mehr schafft. Die Spalte „alle dabei“ lenkt den Blick vom Ergebnis auf die Zusammenarbeit.",
+        "ablauf": [
+          "Vorher: Gelände ablaufen, Grenzen und Treffpunkt festlegen, Sammelsignal vereinbaren.",
+          "Start (3 Min.): Den Kasten „So spielt ihr“ vorlesen, das Blatt auf einem Klemmbrett übergeben, 20 Minuten ansagen.",
+          "Challenges (20 Min.): Die Leitung hält sich zurück, macht die Fotos und beobachtet, wie Entscheidungen fallen. Nach zehn Minuten auf die Spalte „alle dabei“ hinweisen.",
+          "Abschluss (7 Min.): Das Kunstwerk gemeinsam anschauen, benennen und fotografieren, dann Aufgabe 3 – sie liefert den Stoff für die Auswertung am Ende der Einheit.",
+          "Bei Regen: dieselben Aufgaben drinnen, mit einer Materialkiste (Becher, Papier, Wäscheklammern, Wollreste, Korken)."
+        ],
+        "hintergrund": "Aufgaben, die nur gemeinsam lösbar sind, stärken den Zusammenhalt, weil jede Person gebraucht wird. Nach Tuckman (1965) bilden Gruppen ihre Normen und Rollen erst, wenn sie gemeinsam handeln und dabei auch Reibung erleben; deshalb lohnt die Frage, was geholfen und was gestört hat. Draußen zu sein, entlastet die gerichtete Aufmerksamkeit und wirkt erholsam (Kaplan, 1995) – ein guter Rahmen für Jugendliche, denen langes Sitzen schwerfällt. Die Spalte „alle dabei“ macht Beteiligung sichtbar, ohne jemanden bloßzustellen: Gezählt wird, ob die Gruppe alle einbezieht, nicht, wer am meisten leistet.",
+        "quellen": [
+          "Tuckman, B. W. (1965). Developmental sequence in small groups. Psychological Bulletin, 63(6), 384–399.",
+          "Kaplan, S. (1995). The restorative benefits of nature: Toward an integrative framework. Journal of Environmental Psychology, 15(3), 169–182."
+        ],
+        "differenzierung": {
+          "leichter": "Fünf Challenges auswählen und die Zeit auf 15 Minuten kürzen; die Leitung liest die Aufgaben vor.",
+          "schwerer": "Vor jeder Challenge bestimmt die Gruppe eine andere Person, die koordiniert; am Ende sagt jede Person, wie es war, zu leiten."
+        },
+        "impulse": [
+          "Wer hatte eine Idee, die ihr umgesetzt habt?",
+          "Bei welcher Challenge wart ihr alle dabei – und woran lag das?"
+        ],
+        "tipps": [
+          "Die Fotos in der nächsten Einheit zeigen: Sie erinnern an ein gemeinsames Erlebnis und stärken das Wir-Gefühl.",
+          "Die Challenge für die Leitung ernsthaft lösen – darauf freuen sich die Jugendlichen am meisten."
+        ],
+        "achtung": "Gelände vorher prüfen (Wasser, Straßen, Abhänge), Erste-Hilfe-Tasche mitnehmen, Allergien kennen (Wespen, Pollen). Nach Aufenthalten im hohen Gras auf Zecken hinweisen. Fotografiert werden Dinge, keine Gesichter.",
+        "material": "Blatt auf Klemmbrett, Stift, Handy der Leitung für Fotos, Pfeife; bei Regen Materialkiste"
+      }
+    }
+  },
+  {
+    "id": "skills-beduerfnis-pegel",
+    "bereich": "skills",
+    "thema": "ich",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln"
+    ],
+    "dauer": "20 Min.; später je 5 Min.",
+    "eldib": [
+      "SOZ-40",
+      "K-33",
+      "K-26",
+      "V-32"
+    ],
+    "schlagworte": [
+      "Bedürfnisse",
+      "Selbstwahrnehmung",
+      "Glas der Bedürfnisse",
+      "Wenn-dann-Plan",
+      "Jahresfaden",
+      "Skills-Kurs"
+    ],
+    "bild": "motiv:wasserglas",
+    "verwandt": [
+      "balance-finden",
+      "klar-sagen-was-ich-brauche"
+    ],
+    "kurs": [
+      "j1-e04",
+      "j1-e15",
+      "j1-e30"
+    ],
+    "de": {
+      "titel": "Mein Bedürfnis-Pegel",
+      "untertitel": "Wie voll sind meine Tanks? Eine Bestandsaufnahme für heute – und für zwei weitere Male in diesem Jahr.",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "Das Warnlicht",
+          "bild": "figur:jana:wuetend:verschraenkt",
+          "text": "Mila ist seit einer Woche gereizt. Sie schnauzt ihren Bruder an, in Mathe kann sie sich kaum konzentrieren, und abends scrollt sie lange durch ihr Handy. Am Wochenende merkt sie, was fehlt: Seit ihre beste Freundin die Klasse gewechselt hat, hat sie in der Pause niemanden mehr zum Reden. Ihr Tank für Zugehörigkeit ist fast leer – die Gereiztheit ist das Warnlicht."
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Sechs Tanks",
+          "text": "Jeder Mensch hat Bedürfnisse wie Tanks. Ist einer fast leer, meldet sich ein Gefühl – oft, bevor du den Grund kennst.",
+          "punkte": [
+            "Körper: Schlaf, Essen, Bewegung, Ruhe",
+            "Sicherheit: Verlässlichkeit, wissen, was kommt",
+            "Zugehörigkeit: Freunde, dazugehören, Menschen, die zu dir halten",
+            "Anerkennung: gesehen und ernst genommen werden",
+            "Selbstbestimmung: selbst entscheiden, Freiraum",
+            "Spaß und Neues: lachen, etwas erleben, dazulernen"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wähl fünf Bedürfnisse, die dir wichtig sind. Wie wichtig sind sie dir – und wie voll ist der Tank gerade?",
+          "hinweis": "0 = gar nicht, 10 = sehr. Die Spalten für Einheit 15 und 30 füllst du später aus."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Mein Bedürfnis",
+            "Wie wichtig? (0–10)",
+            "Wie voll? Einheit 4",
+            "Wie voll? Einheit 15",
+            "Wie voll? Einheit 30"
+          ],
+          "breiten": [
+            3,
+            1,
+            1,
+            1,
+            1
+          ],
+          "zeilen": 5,
+          "beispiel": [
+            "Ruhe nach der Schule",
+            "8",
+            "3",
+            "",
+            ""
+          ]
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Einheit 4: Kreis in der Tabelle das Bedürfnis mit der größten Lücke ein. Plane einen kleinen Schritt, der diesen Tank etwas füllt.",
+          "hinweis": "Größte Lücke heißt: sehr wichtig, aber wenig voll. Klein heißt: in dieser Woche machbar, ohne dass jemand anderes mitspielen muss."
+        },
+        {
+          "art": "wortspeicher",
+          "titel": "Ideen für kleine Schritte",
+          "items": [
+            "früher ins Bett",
+            "zehn Minuten an die Luft",
+            "Handy-Pause",
+            "jemandem schreiben, der mir guttut",
+            "Musik hören",
+            "Sport oder Bewegung",
+            "um Hilfe bitten",
+            "etwas Neues ausprobieren",
+            "etwas selbst entscheiden",
+            "mit jemandem lachen",
+            "Zeit nur für mich"
+          ]
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Wenn ich nach der Schule nach Hause komme,",
+              "dann": "lege ich das Handy 20 Minuten weg und höre Musik. (Tank: Ruhe)"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Einheit 15: Trag in der Tabelle ein, wie voll deine Tanks jetzt sind. Hat dein kleiner Schritt geholfen?"
+        },
+        {
+          "art": "einschaetzung",
+          "items": [
+            "Mein kleiner Schritt aus Einheit 4 …"
+          ],
+          "optionen": [
+            "hat geholfen",
+            "ein bisschen",
+            "kaum",
+            "nicht probiert"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Plane einen neuen kleinen Schritt – für denselben oder einen anderen Tank."
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Einheit 30: Trag die letzten Werte ein und schau auf das ganze Jahr."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Am meisten gefüllt hat sich mein Tank für …",
+            "Geholfen hat mir dabei …",
+            "Im Sommer will ich im Blick behalten: …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Du entscheidest, was du teilst.",
+          "text": "Das Blatt bleibt in deiner Mappe. Niemand sammelt es ein oder liest es ohne dich."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen schätzen ein, wie wichtig ihnen Bedürfnisse sind und wie voll die Tanks sind, und planen einen kleinen Schritt. In Einheit 15 und 30 kommen neue Werte dazu.",
+        "ablauf": [
+          "Einheit 4 (5 Min.): Die Geschichte lesen: Was hat Milas Gereiztheit mit einem leeren Tank zu tun? Den Kasten „Sechs Tanks“ mit dem Tafelbild verbinden.",
+          "Einheit 4 (13 Min.): Beispielzeile besprechen, Tabelle ausfüllen, größte Lücke einkreisen, Aufgabe 2 schreiben. Geteilt wird nur der Schritt, nie der Grund.",
+          "Aufbewahren: in der persönlichen Mappe im Raum, nicht zu Hause.",
+          "Einheit 15 (5 Min.): Nach dem Öffnen des Glases die Spalte „Einheit 15“ und Aufgabe 3 und 4; der grüne Bereich des Ampelplans knüpft daran an.",
+          "Einheit 30 (5 Min.): Letzte Spalte und Aufgabe 5, dann das Glas ein letztes Mal öffnen. Danach geht das Blatt mit nach Hause."
+        ],
+        "hintergrund": "Bedürfnisse sind der Motor hinter Gefühlen und Verhalten. Grawe (2004) nennt vier psychologische Grundbedürfnisse: Bindung, Orientierung und Kontrolle, Lustgewinn sowie Selbstwerterhöhung; die Selbstbestimmungstheorie betont Autonomie, Kompetenz und Verbundenheit (Deci & Ryan, 2000). Die sechs Tanks fassen diese Modelle zusammen und ergänzen die körperlichen Grundbedürfnisse. Wenn-dann-Pläne verknüpfen einen Vorsatz mit einer konkreten Situation und erhöhen deutlich die Wahrscheinlichkeit, dass er umgesetzt wird (Gollwitzer, 1999).",
+        "quellen": [
+          "Grawe, K. (2004). Neuropsychotherapie. Göttingen: Hogrefe.",
+          "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "differenzierung": {
+          "leichter": "Nur drei Bedürfnisse wählen und nur den Füllstand einschätzen; die Leitung hilft beim Schritt.",
+          "schwerer": "Notieren, welches Gefühl sich meldet, wenn der Tank mit der größten Lücke leer ist – wie bei Mila."
+        },
+        "impulse": [
+          "Welcher Tank meldet sich bei euch zuerst, wenn er leer ist – und wie?",
+          "Was füllt einen Tank schnell, was eher langsam?"
+        ],
+        "tipps": [
+          "Die eigene Zeile der Leitung als Beispiel zeigen – ehrlich, aber im Rahmen.",
+          "Wird das Glas geöffnet, kommen auch die Blätter aus den Mappen."
+        ],
+        "achtung": "Hinweise auf ernsten Mangel nur im Einzelgespräch aufgreifen. Bei Gefährdung nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) informieren.",
+        "material": "Blatt (doppelseitig), persönliche Mappen, Glas der Bedürfnisse"
+      }
+    }
+  },
+  {
+    "id": "skills-laut-und-leise",
+    "bereich": "skills",
+    "thema": "ich",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "40 Min.",
+    "eldib": [
+      "K-19",
+      "K-20",
+      "SOZ-31",
+      "SOZ-40"
+    ],
+    "schlagworte": [
+      "Selbstbild",
+      "Fremdbild",
+      "Introversion",
+      "Vielfalt",
+      "Johari-Fenster",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:speakerphone",
+    "kurs": [
+      "j1-e05"
+    ],
+    "de": {
+      "titel": "Zwischen laut und leise",
+      "untertitel": "Wo stehst du – und wo sehen dich die anderen? Keine Seite ist besser.",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Die meisten Menschen sind nicht nur laut oder nur leise, sondern irgendwo dazwischen – und je nach Situation mal so, mal so. Beide Enden jeder Linie haben ihre Stärken."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wo siehst du dich? Kreuz auf jeder Linie einen Kreis an.",
+          "hinweis": "Denk daran, wie du meistens bist. Linien, zu denen du keine Punkte der anderen möchtest, streichst du durch.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "skala",
+          "von": "laut",
+          "bis": "leise",
+          "stufen": 5
+        },
+        {
+          "art": "skala",
+          "von": "spontan",
+          "bis": "plane gern",
+          "stufen": 5
+        },
+        {
+          "art": "skala",
+          "von": "gern unter Leuten",
+          "bis": "gern für mich",
+          "stufen": 5
+        },
+        {
+          "art": "skala",
+          "von": "zeige meine Gefühle",
+          "bis": "behalte Gefühle für mich",
+          "stufen": 5
+        },
+        {
+          "art": "skala",
+          "von": "rede gern",
+          "bis": "höre gern zu",
+          "stufen": 5
+        },
+        {
+          "art": "skala",
+          "von": "probiere gleich aus",
+          "bis": "schaue erst zu",
+          "stufen": 5
+        },
+        {
+          "art": "skala",
+          "von": "brauche Ordnung",
+          "bis": "komme mit Chaos klar",
+          "stufen": 5
+        },
+        {
+          "art": "skala",
+          "von": "entscheide schnell",
+          "bis": "überlege lange",
+          "stufen": 5
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Galerie",
+          "punkte": [
+            "Die anderen kleben schweigend einen Punkt pro Linie dorthin, wo sie dich sehen.",
+            "Keine Kommentare, keine Punkte auf durchgestrichenen Linien.",
+            "Die Punkte zeigen, wie du hier wirkst – nicht, wie du bist."
+          ]
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Vergleiche deine Kreuze mit den Punkten der anderen. Wo liegen sie nah beieinander, wo weit auseinander?"
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Linie",
+            "So sehe ich mich",
+            "So sehen mich die anderen",
+            "Mein Gedanke dazu"
+          ],
+          "breiten": [
+            1.25,
+            1.15,
+            1.25,
+            2.1
+          ],
+          "zeilen": 3,
+          "beispiel": [
+            "laut – leise",
+            "eher leise",
+            "eher laut",
+            "Beim Bingo war ich wohl lauter, als ich dachte."
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Das Johari-Fenster",
+          "text": "Manches über dich wissen du und die anderen. Manches weißt nur du. Und manches sehen andere, bevor du es selbst bemerkst – den blinden Fleck. Ein Fremdbild ist keine Wahrheit, aber ein Hinweis darauf, wie du wirkst."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Bist du überall gleich? Kreuz an, wie laut oder leise du dort bist."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "2:1",
+          "links": [
+            {
+              "art": "comic",
+              "spalten": 2,
+              "felder": [
+                {
+                  "figuren": [
+                    "figur:jana:nervoes"
+                  ],
+                  "blase": "denken",
+                  "text": "Nicht drankommen …",
+                  "untertitel": "In der Klasse"
+                },
+                {
+                  "figuren": [
+                    "figur:jana:froh:jubeln"
+                  ],
+                  "text": "Noch eine Runde!",
+                  "untertitel": "Mit Freunden"
+                }
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "skala",
+              "von": "laut",
+              "bis": "leise",
+              "stufen": 5,
+              "frage": "In der Klasse"
+            },
+            {
+              "art": "skala",
+              "von": "laut",
+              "bis": "leise",
+              "stufen": 5,
+              "frage": "Mit meinen Freunden"
+            },
+            {
+              "art": "skala",
+              "von": "laut",
+              "bis": "leise",
+              "stufen": 5,
+              "frage": "In einer neuen Gruppe"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was nimmst du mit?"
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Überrascht hat mich …",
+            "An meiner Art mag ich …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Du entscheidest, was du teilst.",
+          "text": "Diese Seite gehört nur dir. Niemand muss vorlesen, was hier steht."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen schätzen sich auf acht Gegensatzpaaren ein, vergleichen ihr Selbstbild mit dem Blick der Gruppe und erleben Unterschiede als Vielfalt.",
+        "ablauf": [
+          "Input (5 Min.): Introversion und Extraversion kurz erklären; leise ist nicht dasselbe wie schüchtern, keine Seite ist besser.",
+          "Selbsteinschätzung (10 Min.): Seite 1 in A4 ausfüllen, die Kreuze mit Punkten der eigenen Farbe auf die A3-Kopie übertragen, Linien ohne Rückmeldung durchstreichen.",
+          "Galerie (10 Min.): A3-Blätter aufhängen; alle kleben schweigend einen Punkt pro Linie bei den anderen. Wer nicht aufhängen möchte, behält sein Blatt.",
+          "Vergleich und Runde (13 Min.): Seite 2 ausfüllen, danach freiwillig: Was hat euch überrascht? Nicht: Wer hat mich falsch eingeschätzt?"
+        ],
+        "hintergrund": "Introversion und Extraversion beschreiben, woher Menschen Energie beziehen: aus Ruhe oder aus Kontakt und Anregung. Cain (2012) grenzt Introversion von Schüchternheit ab, der Angst vor Bewertung, und zeigt, dass Gruppen oft das Laute belohnen. Im Jugendalter wird das Selbstbild vielschichtiger: Jugendliche erleben sich je nach Umfeld unterschiedlich und fragen sich, welche Seite die echte ist (Harter, 2012). Das Johari-Fenster (Luft & Ingham, 1955) erklärt, warum Rückmeldungen überraschen können. Deshalb sind alle Pole neutral formuliert, und die Rückmeldung läuft anonym über Punkte.",
+        "quellen": [
+          "Cain, S. (2012). Quiet: The Power of Introverts in a World That Can’t Stop Talking. New York: Crown.",
+          "Harter, S. (2012). The Construction of the Self (2nd ed.). New York: Guilford.",
+          "Luft, J. & Ingham, H. (1955). The Johari window, a graphic model of interpersonal awareness. Proceedings of the Western Training Laboratory in Group Development. Los Angeles: University of California."
+        ],
+        "differenzierung": {
+          "leichter": "Nur die ersten vier Linien bearbeiten und Seite 2 mündlich mit der Leitung besprechen.",
+          "schwerer": "Eine Linie mit großem Abstand zwischen Kreuz und Punkten wählen: In welchen Situationen zeige ich die Seite, die die anderen sehen?"
+        },
+        "impulse": [
+          "In welcher Situation seid ihr ganz anders als hier?",
+          "Was mögt ihr an eurer Art – auch wenn andere sie manchmal anstrengend finden?"
+        ],
+        "tipps": [
+          "Klebepunkte in zwei deutlich verschiedenen Farben nehmen, etwa blau für das eigene Kreuz, gelb für die anderen.",
+          "Hängen bleibt ein A3-Blatt nur, wenn die Person das ausdrücklich möchte."
+        ],
+        "achtung": "Fremdeinschätzungen können kränken. Kommentare sofort unterbinden, gehäufte Punkte entfernen und stillen Jugendlichen ein Einzelgespräch anbieten.",
+        "material": "A4 je Person, Seite 1 in A3, Klebepunkte in zwei Farben"
+      }
+    }
+  },
+  {
+    "id": "skills-baum-der-staerke",
+    "bereich": "skills",
+    "thema": "ich",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "40 Min.; später je 5–10 Min.",
+    "eldib": [
+      "K-18",
+      "K-19",
+      "K-32",
+      "SOZ-9"
+    ],
+    "schlagworte": [
+      "Stärken",
+      "Ressourcen",
+      "Resilienz",
+      "Selbstwert",
+      "Baum der Stärke",
+      "Jahresfaden",
+      "Skills-Kurs"
+    ],
+    "bild": "motiv:baum",
+    "verwandt": [
+      "mein-staerkenprofil"
+    ],
+    "kurs": [
+      "j1-e06",
+      "j1-e19",
+      "j1-e30"
+    ],
+    "de": {
+      "titel": "Mein Baum der Stärke",
+      "untertitel": "Was mich hält, was ich kann, was in mir wächst – und was die anderen in mir sehen.",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Ein Baum übersteht einen Sturm, weil seine Wurzeln ihn halten. Dein Baum zeigt, was dich hält und stark macht – und er wächst das ganze Jahr weiter."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Zeichne auf A3 einen großen Baum, gern nach deinem Foto, und füll die vier Teile aus.",
+          "hinweis": "Lass am Stamm und oben in der Krone Platz frei – in Einheit 19 und 30 kommt noch etwas dazu. Rechts daneben ist Platz für einen kleinen Baum.",
+          "symbole": [
+            "malen",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:2",
+          "links": [
+            {
+              "art": "bild",
+              "bild": "motiv:baum",
+              "groesse": "l"
+            }
+          ],
+          "rechts": [
+            {
+              "art": "schritte",
+              "linien": 0,
+              "items": [
+                {
+                  "titel": "Wurzeln – was mich hält",
+                  "text": "Menschen, Orte, Tiere, Musik, Erinnerungen, die dir Halt geben. Zum Beispiel: mein Trainer, der Fußballplatz, mein Hund, ein bestimmtes Lied."
+                },
+                {
+                  "titel": "Stamm – was ich kann",
+                  "text": "Deine Stärken: was du gut kannst und was dich ausmacht. Zum Beispiel: gebe nicht auf, kann gut zuhören."
+                },
+                {
+                  "titel": "Äste – was noch wächst",
+                  "text": "Was du gerade lernst oder üben willst. Zum Beispiel: ruhig bleiben, wenn mich jemand ärgert."
+                },
+                {
+                  "titel": "Früchte – worauf ich stolz bin",
+                  "text": "Erfolge, große und kleine. Zum Beispiel: die Probe geschafft, jemandem geholfen, ein Tor im Finale."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dir fällt keine Stärke ein? Such dir hier Wörter aus.",
+          "hinweis": "Stärken zeigen sich überall: in der Pause, im Verein, beim Zocken, zu Hause."
+        },
+        {
+          "art": "wortspeicher",
+          "titel": "Stärken-Wörter",
+          "items": [
+            "hilfsbereit",
+            "ehrlich",
+            "mutig",
+            "kreativ",
+            "sportlich",
+            "geduldig",
+            "kann gut zuhören",
+            "zuverlässig",
+            "fair",
+            "handwerklich geschickt",
+            "musikalisch",
+            "ruhig",
+            "neugierig",
+            "kann gut erklären",
+            "tierlieb",
+            "gibt nicht auf",
+            "bringt andere zum Lachen",
+            "loyal",
+            "hat gute Ideen",
+            "kann trösten",
+            "organisiert gern",
+            "spricht mehrere Sprachen",
+            "technisch fit",
+            "hilft Jüngeren"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Du entscheidest, was auf deinen Baum kommt.",
+          "text": "Die Wurzeln darfst du auch mit Zeichen festhalten, die nur du verstehst."
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Der kleine Baum: Die anderen kleben dir Zettel mit Stärken an, die sie bei dir sehen. Lies sie in Ruhe.",
+          "hinweis": "Wenn du für andere schreibst: eine Stärke und woran du sie gemerkt hast – nie etwas über das Aussehen."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Überrascht hat mich …",
+            "Gewusst habe ich schon …",
+            "Diese Stärke will ich öfter zeigen: …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Einheit 19: Welcher neue, hilfreiche Satz passt zu deinem Stamm? Schreib ihn an deinen Baum – und hier auf."
+        },
+        {
+          "art": "feld",
+          "label": "Mein neuer Satz für den Stamm",
+          "hoehe": 2.2,
+          "beispiel": "Ich habe schon Schwierigeres geschafft."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Diese Stärke aus meinem Stamm hilft mir, den Satz zu glauben: …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Einheit 30: Was hast du dieses Jahr geschafft? Häng neue Früchte an deinen Baum."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Neue Frucht",
+            "Das hat mir dabei geholfen"
+          ],
+          "breiten": [
+            1.5,
+            2
+          ],
+          "zeilen": 4,
+          "beispiel": [
+            "Ich habe mich im Klassenrat zu Wort gemeldet.",
+            "mein Mut – und die Atemübung vorher"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Wenn ich meinen Baum jetzt mit dem vom Herbst vergleiche, sehe ich: …"
+          ],
+          "linien": 2
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "text": "Nimm für jede Ergänzung eine neue Farbe und schreib das Datum dazu. So siehst du am Ende, wie dein Baum gewachsen ist."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen halten Ressourcen, Stärken, Entwicklungsfelder und Erfolge in einem Baum fest und bekommen von der Gruppe Stärken zurückgemeldet. In Einheit 19 und 30 wächst der Baum weiter.",
+        "ablauf": [
+          "Einheit 6 (40 Min.): Draußen einen Baum wählen, Seite 1 besprechen, auf A3 zeichnen und füllen. Platz am Stamm, in der Krone und für einen kleinen Baum lassen.",
+          "Kleiner Baum (15 Min.): Alle kleben jeder Person eine Stärke mit Beobachtung an den kleinen Baum; die Leitung schreibt für jede Person mindestens einen Zettel. Dann Aufgabe 3.",
+          "Aufbewahren: Bäume flach in der A3-Sammelmappe der Gruppe, Blätter in den persönlichen Mappen im Raum.",
+          "Einheit 19: einen neuen hilfreichen Satz in neuer Farbe an den Stamm schreiben, Aufgabe 4. Einheit 30: neue Früchte ergänzen, Aufgabe 5; danach gehen Baum und Blatt mit nach Hause."
+        ],
+        "hintergrund": "Das Bild ist an den „Tree of Life“ angelehnt: In der narrativen Arbeit erzählen belastete Kinder und Jugendliche ihre Geschichte über Wurzeln, Stamm, Äste und Früchte, ohne zuerst über Probleme sprechen zu müssen (Ncube, 2006). Die Resilienzforschung zeigt, dass meist alltägliche Schutzfaktoren tragen: verlässliche Beziehungen, eigene Fähigkeiten, Erfahrungen von Wirksamkeit (Masten, 2014). Eigene Stärken bewusst neu einzusetzen, steigerte in einer kontrollierten Studie das Wohlbefinden über Monate (Seligman et al., 2005). Rückmeldungen der Gruppe wirken, wenn sie an beobachtetem Verhalten festgemacht sind.",
+        "quellen": [
+          "Ncube, N. (2006). The Tree of Life Project: Using narrative ideas in work with vulnerable children. International Journal of Narrative Therapy and Community Work, 1, 3–16.",
+          "Masten, A. S. (2014). Ordinary Magic: Resilience in Development. New York: Guilford.",
+          "Seligman, M. E. P., Steen, T. A., Park, N. & Peterson, C. (2005). Positive psychology progress: Empirical validation of interventions. American Psychologist, 60(5), 410–421."
+        ],
+        "differenzierung": {
+          "leichter": "Einen einfachen Umriss vorgeben; pro Teil reicht ein Stichwort, Stärken-Wörter dürfen ausgeschnitten werden.",
+          "schwerer": "Zu jeder Stärke im Stamm eine Situation notieren, in der sie sichtbar wurde."
+        },
+        "impulse": [
+          "Was hält einen Baum im Sturm – und was hält dich?",
+          "Woran würde jemand merken, dass du das kannst?"
+        ],
+        "tipps": [
+          "Für jede Ergänzung eine neue Farbe und das Datum: So sieht man, wie der Baum wächst.",
+          "Bäume flach lagern, nicht rollen."
+        ],
+        "achtung": "Die Frage nach den Wurzeln kann schmerzen. Orte, Tiere, Musik und Erinnerungen ausdrücklich zulassen, niemanden drängen, bei leeren Wurzeln das Einzelgespräch suchen. Ironische Zettel sofort entfernen.",
+        "material": "Blatt (doppelseitig), A3-Papier, Stifte, Haftnotizen, A3-Sammelmappe"
+      }
+    }
+  }
+]

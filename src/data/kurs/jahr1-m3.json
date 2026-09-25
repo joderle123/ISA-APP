@@ -1,0 +1,1044 @@
+{
+  "einheiten": [
+    {
+      "id": "j1-e11",
+      "nr": 11,
+      "jahr": 1,
+      "modul": "j1-m3",
+      "titel": "Skills und die Anspannungsskala",
+      "kurz": "Alle haben schon Skills – heute bekommen sie eine Ordnung: Die Anspannungsskala von 0 bis 100 zeigt, welche Skills bei welcher Zahl noch helfen.",
+      "dauer": 100,
+      "ziele": [
+        "erkennen, dass alle Momente ohne Kontrolle kennen und dass sie selbst schon Skills besitzen",
+        "erklären mit der Anspannungsskala, was bei 0–30, 30–70 und 70–100 in Kopf und Körper passiert",
+        "schätzen Alltagssituationen auf der Skala ein und ordnen passende Arten von Skills zu",
+        "messen ihre Anspannung vor und nach einem Spaziergang ohne Worte"
+      ],
+      "material": [
+        "Plakat „Was sind Skills?“ aus Einheit 1",
+        "Malerkrepp für eine Bodenlinie von 4–5 m, dazu vier Karten mit 0, 30, 70 und 100",
+        "Klebepunkte in Grün, Gelb und Rot (je Person drei von jeder Farbe)",
+        "Tafel oder Flipchart, Stifte in Grün, Gelb und Rot",
+        "Schülerblatt „Mein Anspannungs-Thermometer“ für jede Person",
+        "Gefühlsrad in A3 und Wäscheklammern",
+        "Skills-Pässe und Stempel",
+        "Imbiss und Getränke"
+      ],
+      "vorbereitung": [
+        "Die Bodenlinie mit Malerkrepp kleben, mit Platz davor und dahinter; die Karten 0, 30, 70 und 100 daneben legen. Die Linie bleibt die ganze Einheit liegen.",
+        "Das Plakat aus Einheit 1 gut sichtbar aufhängen",
+        "Ein leeres Thermometer mit drei Zonen an die Tafel zeichnen",
+        "Einen Weg für den Spaziergang festlegen: draußen in Sichtweite oder bei Regen durch Flur und Treppenhaus"
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-anspannungsthermometer",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Gefühlsrad und die erste Zahl"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Von 0–10 zu 0–100"
+        },
+        {
+          "min": "15–30",
+          "phase": "uebung",
+          "titel": "Ein Schritt nach vorn: Wenn es zu viel wird"
+        },
+        {
+          "min": "30–45",
+          "phase": "input",
+          "titel": "Die Anspannungsskala und das Handmodell"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–80",
+          "phase": "aktiv",
+          "titel": "Auf der Linie: Situationen einschätzen"
+        },
+        {
+          "min": "80–95",
+          "phase": "skill",
+          "titel": "Spaziergang ohne Worte: vorher und nachher"
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Réckbléck mit Zahl und Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: Gefühlsrad und die erste Zahl",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Check-in wie gewohnt mit dem Gefühlsrad: Wäscheklammer an ein Wort, ein Satz dazu. Neu ist eine Zahl von 0 bis 100 für die Anspannung. Die Skala mit zwei Bildern verankern: 0 ist völlig entspannt, kurz vor dem Einschlafen, 100 ist so aufgewühlt, wie man es sich nur vorstellen kann. Die Leitung beginnt mit einer ehrlichen Zahl. Wer mag, stellt sich dazu an die passende Stelle der Bodenlinie.",
+          "sagen": [
+            "Ab heute gibt es zum Gefühl noch eine Zahl: Wie angespannt seid ihr gerade, von 0 bis 100?",
+            "Bei mir ist es eine 40. Der Morgen war hektisch, und ich bin noch nicht ganz angekommen.",
+            "Es gibt keine falsche Zahl. Eure Zahl ist eure Zahl."
+          ],
+          "tipp": "Zahlen nicht kommentieren und nicht vergleichen. Wer eine sehr hohe Zahl nennt, bekommt ein kurzes „Danke“ und nach der Runde leise das Angebot, später kurz zu reden.",
+          "wennEsKippt": "Nennen alle aus Spaß 100 oder 0, das mit Humor aufnehmen und nachfragen: Wie sähe eine echte 100 aus, und woran merkt ihr, dass heute keine ist? Daraus entsteht oft schon das Gespräch, um das es gleich geht.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Von 0–10 zu 0–100",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "An „Gefühle skalieren“ aus Einheit 10 erinnern: Dort ging es darum, wie stark ein Gefühl ist, von 0 bis 10. Die neue Skala ist feiner und hat eine neue Aufgabe: Sie zeigt, was man bei welcher Zahl noch tun kann. Dann das Modul ankündigen: fünf Treffen, in denen Skills für Körper, Sinne und Kopf getestet werden; am Ende packt jede Person ihren eigenen Skills-Koffer.",
+          "sagen": [
+            "Letztes Mal ging es darum, wie stark ein Gefühl ist. Ab heute geht es darum, was man macht, wenn es zu stark wird.",
+            "Die nächsten fünf Treffen sind so etwas wie ein Trainingslager. Am Ende hat jede und jeder einen Koffer mit Skills, die wirklich passen."
+          ]
+        },
+        {
+          "titel": "Ein Schritt nach vorn: Wenn es zu viel wird",
+          "dauer": 15,
+          "phase": "uebung",
+          "text": "Alle stehen nebeneinander hinter der Bodenlinie. Die Sätze langsam vorlesen; wer sich angesprochen fühlt, macht einen Schritt nach vorn, schaut kurz, wer noch vorne steht, und geht zurück. Niemand erklärt etwas, und niemand muss gehen. Die Leitung macht mit und geht bei den ersten Sätzen ehrlich selbst nach vorn. Zum Schluss die Auswertungsfragen stellen und die genannten Skills ohne Namen an die Tafel schreiben.",
+          "sagen": [
+            "Was ist euch aufgefallen? Bei welchen Sätzen standen fast alle vorne?",
+            "Das, was euch hilft, wenn es zu viel wird, nennen wir Skills. Ihr habt also schon welche – ihr wusstet es vielleicht nur nicht.",
+            "Was hilft euch? Ich schreibe mit, ohne Namen."
+          ],
+          "punkte": [
+            "Mach einen Schritt nach vorn, wenn du …",
+            "… heute schon einmal genervt warst.",
+            "… schon einmal wegen einer Kleinigkeit richtig sauer geworden bist, etwa weil ein Spiel abgestürzt ist.",
+            "… schon einmal so wütend warst, dass du etwas gesagt hast, was dir hinterher leidtat.",
+            "… schon einmal so nervös warst, dass dir in einer Prüfung nichts mehr eingefallen ist.",
+            "… schon einmal das Gefühl hattest, dass dein Körper schneller war als dein Kopf.",
+            "… schon einmal etwas getan hast, das dich wieder beruhigt hat.",
+            "… etwas kennst, das dir hilft, wenn es dir schlecht geht.",
+            "… schon einmal jemandem geholfen hast, wieder runterzukommen."
+          ],
+          "tipp": "Auch Antworten wie „jemanden anschreien“ oder „Tür knallen“ notieren, ohne sie zu bewerten. Beim Thermometer wird von selbst klar, was kurz entlastet und hinterher Ärger macht.",
+          "wennEsKippt": "Wird gekichert oder jemand nach vorn geschubst, kurz anhalten und an den Gruppenvertrag erinnern: Jede Person entscheidet allein über ihren Schritt. Nennt jemand etwas, das schadet – sich verletzen, Alkohol –, ruhig bleiben, nicht vertiefen und nach der Übung ein Einzelgespräch führen. Bei nur zwei Jugendlichen im Sitzen mit Daumen hoch antworten; die Leitung antwortet mit."
+        },
+        {
+          "titel": "Die Anspannungsskala und das Handmodell",
+          "dauer": 15,
+          "phase": "input",
+          "text": "Zuerst das Plakat aus Einheit 1 und die Liste von eben anschauen: Welche Ideen sind Skills? Dann das Thermometer an der Tafel gemeinsam füllen: Was passiert bei 0–30, 30–70 und 70–100 im Kopf und im Körper, und was hilft dort? Mit dem Handmodell zeigen, warum bei hoher Anspannung Reden nicht mehr hilft. Zum Schluss kleben die Jugendlichen grüne, gelbe und rote Punkte an die Skills auf dem Plakat: Bis zu welcher Zahl hilft das noch?",
+          "sagen": [
+            "Macht eine Faust und legt den Daumen hinein. Der Daumen ist euer Alarmsystem, die Finger sind der Teil, der nachdenkt und bremst.",
+            "Bei 90 klappen die Finger hoch – der Deckel ist weg. Dann kann niemand vernünftig mit euch reden, auch ihr selbst nicht.",
+            "Deshalb gilt ab heute: Erst runter, dann reden."
+          ],
+          "tabelle": {
+            "spalten": [
+              "Anspannung",
+              "Was passiert?",
+              "Was hilft?"
+            ],
+            "zeilen": [
+              [
+                "0–30 (grün)",
+                "Ich kann klar denken, zuhören und reden.",
+                "Reden, nachdenken, Probleme lösen – und Skills üben"
+              ],
+              [
+                "30–70 (gelb)",
+                "Die Gedanken werden eng, ich werde gereizt, unruhig oder ziehe mich zurück.",
+                "Ablenken: Kopf-Skills, Sinne, Musik, Bewegung"
+              ],
+              [
+                "70–100 (rot)",
+                "Denken geht kaum noch, der Körper übernimmt: Herzrasen, Hitze, Tunnelblick.",
+                "Starke Körper- und Sinnes-Skills, raus aus der Situation, Hilfe holen"
+              ]
+            ]
+          },
+          "tipp": "„Erst runter, dann reden“ groß neben das Thermometer schreiben. Der Satz hilft auch der Leitung im Konflikt: Wir reden, wenn du wieder unter 50 bist.",
+          "wennEsKippt": "Wird es zu theoretisch, das Thermometer mit Beispielen aus der Gruppe füllen: Wie sieht eine 20 aus, wie eine 60, wie eine 95? Wer mag, spielt eine Zone kurz vor, die anderen raten die Zahl."
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Gemeinsam essen und trinken. Die Bodenlinie bleibt liegen. Das Thema ruht; hier darf es um alles andere gehen."
+        },
+        {
+          "titel": "Auf der Linie: Situationen einschätzen",
+          "dauer": 20,
+          "phase": "aktiv",
+          "text": "Zuerst kreuzt jede Person auf dem Schülerblatt allein an, in welche Zone die Situationen für sie fallen. Dann liest die Leitung einige Situationen vor, und alle stellen sich gleichzeitig an ihre Zahl auf der Bodenlinie. Zwei oder drei Personen sagen, warum sie dort stehen; die anderen fragen: Was würde dir bei dieser Zahl helfen? Zum Schluss trägt jede Person auf dem Blatt eine eigene Situation ein, allein und ohne sie vorzulesen.",
+          "sagen": [
+            "Stellt euch dahin, wo ihr wirklich wärt – nicht, wo ihr gern wärt.",
+            "Dieselbe Situation ist für den einen eine 20 und für die andere eine 80. Keiner liegt falsch.",
+            "Du stehst bei 80. Was würde dir da helfen – und was würde es schlimmer machen?"
+          ],
+          "punkte": [
+            "Jemand drängelt sich in der Kantine vor dir in die Schlange.",
+            "Die Lehrerin fragt nach den Hausaufgaben, die du vergessen hast.",
+            "Du sollst gleich vor der Klasse ein Referat halten.",
+            "Jemand teilt ein peinliches Foto von dir in der Klassengruppe.",
+            "Du wirst für etwas beschuldigt, das du nicht getan hast.",
+            "Dein Bus fährt dir vor der Nase weg."
+          ],
+          "tipp": "Bei großen Unterschieden nachfragen statt bewerten: Was macht die Situation für dich so groß oder so klein? Das bereitet das Modul „Meine Gedanken“ vor, ohne es vorwegzunehmen.",
+          "wennEsKippt": "Stellt sich jemand aus Trotz immer auf 100, das gelten lassen und fragen, was in so einer Situation bei ihm los ist. Geht es nur noch um Lacher, die Linie verlassen und die restlichen Situationen im Sitzen mit dem Blatt besprechen.",
+          "blatt": "skills-anspannungsthermometer"
+        },
+        {
+          "titel": "Spaziergang ohne Worte: vorher und nachher",
+          "dauer": 15,
+          "phase": "skill",
+          "text": "Jede Person trägt ihre Zahl vorher auf dem Schülerblatt ein. Dann gehen alle fünf Minuten schweigend hintereinander, draußen oder bei Regen durch Flur und Treppenhaus, und achten nur auf Schritte, Geräusche und Gerüche. Zurück im Kreis trägt jede Person ihre Zahl nachher ein und nennt beide Zahlen. Kurz auswerten: Bei wem ist die Zahl gesunken, bei wem nicht, und woran könnte das liegen?",
+          "sagen": [
+            "Schreibt eure Zahl auf, ohne bei den anderen zu schauen.",
+            "Fünf Minuten nur gehen. Kein Handy, kein Reden. Achtet auf eure Schritte und darauf, was ihr hört.",
+            "Bei wem ist die Zahl runtergegangen? Und bei wem nicht – das ist genauso ein Ergebnis."
+          ],
+          "tipp": "Ein Skill wirkt nicht bei allen gleich und nicht an jedem Tag gleich. Genau deshalb testet die Gruppe in den nächsten Einheiten, statt Rezepte zu verteilen.",
+          "wennEsKippt": "Macht jemand Faxen oder redet, ruhig dazugehen und leise erinnern: nur fünf Minuten. Wer nicht mitgehen kann oder will, sitzt in Sichtweite am Fenster und macht die Übung im Sitzen: fünf Minuten nur hören.",
+          "blatt": "skills-anspannungsthermometer"
+        },
+        {
+          "titel": "Réckbléck mit Zahl und Skills-Pass",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Blitzlicht: Jede Person nennt ihre Zahl jetzt und einen Skill, den sie schon vor heute hatte. Dann der Eintrag in den Skills-Pass mit Stempel. Das Thermometer-Blatt kommt in die Mappe; ab jetzt gehört die Zahl zu jedem Check-in und wird im Verlauf auf dem Blatt eingetragen.",
+          "sagen": [
+            "Eure Zahl jetzt – und ein Skill, den ihr schon hattet, bevor ihr wusstet, dass es einer ist."
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Nächstes Mal testen wir die stärksten Skills, die es gibt: die über den Körper – zieht Schuhe an, in denen ihr euch bewegen könnt.",
+      "hintergrund": "Das Skillstraining der Dialektisch-Behavioralen Therapie wurde für Jugendliche adaptiert (Rathus & Miller, 2015); im deutschsprachigen Raum gehört die Anspannungsskala von 0 bis 100 zu seinen Grundwerkzeugen (Fleischhaker et al., 2011). Sie macht einen Zusammenhang greifbar, den Linehan (2015) beschreibt: Bei sehr hoher emotionaler Erregung versagen Fertigkeiten, die Nachdenken voraussetzen. Dann helfen Skills, die direkt am Körper und an den Sinnen ansetzen; erst danach sind Gespräch und Problemlösen wieder möglich. Das Handmodell des Gehirns veranschaulicht das jugendgerecht (Siegel & Bryson, 2011). Nach dem Prozessmodell der Emotionsregulation lässt sich an verschiedenen Stellen eingreifen – über die Situation, die Aufmerksamkeit, die Bewertung oder die körperliche Reaktion (Gross, 1998). Wer seine Zahl kennt, kann den passenden Weg wählen.",
+      "quellen": [
+        "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford.",
+        "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford.",
+        "Fleischhaker, C., Sixt, B. & Schulz, E. (2011). DBT-A: Dialektisch-behaviorale Therapie für Jugendliche. Berlin: Springer.",
+        "Siegel, D. J. & Bryson, T. P. (2011). The Whole-Brain Child. New York: Delacorte.",
+        "Gross, J. J. (1998). The emerging field of emotion regulation: An integrative review. Review of General Psychology, 2(3), 271–299."
+      ],
+      "achtung": "„Ein Schritt nach vorn“ und die eigene Situation auf dem Blatt berühren Erlebnisse mit Kontrollverlust. Nichts davon im Plenum vertiefen; Stehenbleiben und „weiter“ sind immer erlaubt, das Blatt wird nicht eingesammelt. Nennt jemand Selbstverletzung, Gewalt oder Suizidgedanken als „Skill“ oder als Situation, ruhig bleiben, nicht nachbohren, zeitnah ein Einzelgespräch führen und nach dem internen Schutzkonzept handeln; die zuständige Leitung (Responsable) informieren. Nennt jemand im Check-in immer wieder Zahlen über 80, nach der Einheit behutsam nachfragen."
+    },
+    {
+      "id": "j1-e12",
+      "nr": 12,
+      "jahr": 1,
+      "modul": "j1-m3",
+      "titel": "Skills über Körper und Atem",
+      "kurz": "Atem, Bewegung und Muskeln: Die Jugendlichen testen Körper-Skills wie in einem Experiment – Zahl vorher, Skill, Zahl nachher – und finden heraus, was bei ihnen wirkt.",
+      "dauer": 100,
+      "ziele": [
+        "probieren fünf Atem-Skills aus und bewerten sie auf dem Skills-Tester",
+        "erleben im Experiment, dass kurze, intensive Bewegung die Anspannung senkt",
+        "üben Anspannen und Loslassen so, dass es auch unauffällig im Unterricht geht",
+        "wählen einen Favoriten und legen fest, bis zu welcher Zahl er hilft"
+      ],
+      "material": [
+        "Skills-Tester für jede Person, dazu das Thermometer-Blatt aus Einheit 11",
+        "Eine Feder pro Person (Bastelfedern)",
+        "Timer oder Handy mit Stoppuhr",
+        "Lautsprecher und ein Lied mit schnellem Beat, etwa drei Minuten lang",
+        "Springseile (optional) und Wasser zum Trinken",
+        "Gefühlsrad in A3 und Wäscheklammern",
+        "Skills-Pässe, Stempel, Imbiss"
+      ],
+      "vorbereitung": [
+        "Platz für Bewegung schaffen: Stühle an den Rand, eine Treppe oder den Hof in der Nähe einplanen",
+        "Die Atem-Skills vorher selbst einmal durchgehen, vor allem die Zählweise von Kasten- und 4-7-8-Atmung",
+        "Klären, ob jemand Asthma, Herz-Kreislauf-Probleme oder eine Verletzung hat; diese Jugendlichen bewegen sich in eigenem Tempo"
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-anspannungsthermometer",
+        "skills-tester",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Gefühlsrad, Zahl und Körper-Check"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Erst runter, dann reden: heute der Körper"
+        },
+        {
+          "min": "15–35",
+          "phase": "uebung",
+          "titel": "Atem-Skills im Test"
+        },
+        {
+          "min": "35–45",
+          "phase": "aktiv",
+          "titel": "Experiment: Bewegung senkt Anspannung"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–75",
+          "phase": "uebung",
+          "titel": "Anspannen und Loslassen"
+        },
+        {
+          "min": "75–85",
+          "phase": "skill",
+          "titel": "Partneratmung: im gleichen Takt"
+        },
+        {
+          "min": "85–95",
+          "phase": "uebung",
+          "titel": "Skills-Tester: mein Favorit"
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Réckbléck und Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: Gefühlsrad, Zahl und Körper-Check",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Gefühlsrad und Zahl wie in Einheit 11, dazu eine Frage aus dem Körper-Check: Wo im Körper sitzt die Zahl gerade – in den Schultern, im Bauch, im Kiefer, in den Händen? Die Leitung beginnt. Wer nichts spürt, sagt einfach das; auch das ist eine Beobachtung. Die Zahlen tragen alle im Verlauf auf dem Thermometer-Blatt ein, denn heute wird immer wieder gemessen.",
+          "sagen": [
+            "Gefühl, Zahl – und wo im Körper sitzt die Zahl gerade?",
+            "Bei mir 35, und ich merke sie im Nacken."
+          ],
+          "tipp": "Den Körper wahrzunehmen, fällt vielen schwer und wird heute geübt. „Weiß nicht“ ist deshalb eine gute Antwort, keine Verweigerung.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Erst runter, dann reden: heute der Körper",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "Das Thermometer-Blatt hochhalten und an den Satz aus Einheit 11 erinnern: Erst runter, dann reden. Kurz nachfragen, wem der Spaziergang geholfen hat. Dann das Vorgehen erklären: Heute werden Skills getestet, die direkt beim Körper ansetzen – Atem, Bewegung, Muskeln. Jeder Skill wird wie ein Experiment gemacht und danach auf dem Skills-Tester bewertet.",
+          "sagen": [
+            "Letztes Mal hieß es: Erst runter, dann reden. Heute geht es um das Runter.",
+            "Ihr seid heute Versuchspersonen und Forschende zugleich. Bewertet ehrlich – auch „hilft kaum“ ist ein wichtiges Ergebnis."
+          ],
+          "blatt": "skills-anspannungsthermometer"
+        },
+        {
+          "titel": "Atem-Skills im Test",
+          "dauer": 20,
+          "phase": "uebung",
+          "text": "Im Stuhlkreis fünf Atem-Skills nacheinander anleiten, jeden etwa zwei Minuten. Nach jedem Skill 30 Sekunden nachspüren, dann kreuzt jede Person auf dem Skills-Tester an, wie gut er geholfen hat. Langsam sprechen, selbst mitmachen und die Sekunden leise vorzählen. Zum Schluss erklären, warum Atmen wirkt: Langes Ausatmen tritt im Körper auf die Bremse, das Herz schlägt langsamer.",
+          "sagen": [
+            "Wird euch schwindelig, hört ihr auf und atmet normal weiter. Das ist kein Wettbewerb.",
+            "Kurz nachspüren: Hat sich eure Zahl bewegt? Dann ankreuzen."
+          ],
+          "punkte": [
+            "4-7-8-Atmung (aus Einheit 4): 4 Sekunden durch die Nase ein, 7 halten, 8 durch den Mund aus. Wer das Halten unangenehm findet, atmet zweimal kurz durch die Nase ein und lang durch den Mund aus.",
+            "Fingeratmung: mit dem Zeigefinger an der anderen Hand entlangfahren – am Finger hoch einatmen, runter ausatmen. Fünf Finger, fünf Atemzüge.",
+            "Luftballon-Atem (aus Einheit 10): Hände auf den Bauch, beim Einatmen wird der Bauch rund, beim langsamen Ausatmen wieder flach.",
+            "Atem-Feder: die Feder in die Luft werfen und durch langsames Pusten so lange wie möglich oben halten.",
+            "Kastenatmung: 4 Sekunden ein, 4 halten, 4 aus, 4 halten. Drei Runden."
+          ],
+          "tipp": "Die Atem-Feder als vierte Übung einsetzen: Es wird gelacht, die Konzentration kommt zurück, und danach gelingt die ruhige Kastenatmung besser.",
+          "wennEsKippt": "Kichern bei Atemübungen ist normal, weil sie sich ungewohnt anfühlen. Nicht ermahnen, sondern selbst ruhig weitermachen und anbieten, die Augen offen zu lassen und auf einen Punkt am Boden zu schauen. Wer nicht mag, schaut zu und steigt bei der nächsten Übung wieder ein.",
+          "blatt": "skills-tester"
+        },
+        {
+          "titel": "Experiment: Bewegung senkt Anspannung",
+          "dauer": 10,
+          "phase": "aktiv",
+          "text": "Alle stehen auf und schätzen ihre Anspannung ein. Dann drei Minuten Bewegung mit voller Kraft zu schneller Musik: Hampelmänner, auf der Stelle rennen, Treppen steigen oder Seilspringen, jede Person in ihrem Tempo. Danach zwei Minuten ruhig sitzen, eine Hand auf dem Bauch, und die Anspannung neu einschätzen. Ergebnisse vergleichen und erklären: Bei Wut oder Angst stellt der Körper Energie für Kampf oder Flucht bereit, und Bewegung verbraucht sie.",
+          "sagen": [
+            "Drei Minuten Vollgas. Ihr müsst nicht schneller sein als die anderen, nur schneller als sonst.",
+            "Jetzt ganz ruhig sitzen. Was macht euer Herz, was macht eure Zahl?"
+          ],
+          "tipp": "Viele merken: Die Zahl steigt während der Bewegung kurz und fällt danach deutlich. Genau darum ist Bewegung ein Skill für Rot – sie verbraucht den Alarm, statt ihn wegzudrücken.",
+          "wennEsKippt": "Dreht die Gruppe danach auf, die zwei Minuten Sitzen konsequent einhalten und leise die Kastenatmung vorzählen. Wer aus gesundheitlichen Gründen nicht rennen soll, macht langsame Kniebeugen oder drückt die Handflächen fest gegeneinander. Bei wenig Energie mit einer Minute lockerem Gehen beginnen.",
+          "blatt": "skills-tester"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Wasser trinken, gemeinsam essen, Fenster auf. Das Thema ruht; hier darf es um alles andere gehen."
+        },
+        {
+          "titel": "Anspannen und Loslassen",
+          "dauer": 15,
+          "phase": "uebung",
+          "text": "Eine Kurzform der Muskelentspannung anleiten, erst im Sitzen, dann im Stehen. Jede Muskelgruppe fünf Sekunden fest anspannen, ohne dass es wehtut, dann lösen und zehn Sekunden nachspüren. Danach gemeinsam sammeln, welche Varianten unauffällig im Unterricht, im Bus oder bei Streit auf dem Pausenhof gehen. Zum Schluss auf dem Skills-Tester ankreuzen.",
+          "sagen": [
+            "Achtet auf den Moment, in dem ihr loslasst. Genau diesen Unterschied soll euer Körper lernen.",
+            "Wo könntet ihr das machen, ohne dass es jemand merkt?"
+          ],
+          "punkte": [
+            "Hände: beide Fäuste ballen, als würdest du eine Zitrone auspressen – halten – loslassen.",
+            "Schultern: hochziehen bis zu den Ohren – halten – fallen lassen.",
+            "Bauch: fest machen, als würde gleich ein Ball dagegen fliegen – halten – weich werden lassen.",
+            "Beine und Füße: Zehen in den Boden drücken, Oberschenkel fest – halten – locker.",
+            "Unauffällig: Fäuste unter dem Tisch, Zehen im Schuh, Hände fest gegeneinanderdrücken."
+          ],
+          "tipp": "Nicht bis zum Zittern anspannen lassen, halbe Kraft reicht. Verletzte oder schmerzende Stellen auslassen.",
+          "wennEsKippt": "Wird aus dem Anspannen ein Kräftemessen, die Übung im Sitzen weiterführen und nur noch Hände und Füße anspannen lassen. Wer die Augen nicht schließen möchte, schaut auf seine Hände.",
+          "blatt": "skills-tester"
+        },
+        {
+          "titel": "Partneratmung: im gleichen Takt",
+          "dauer": 10,
+          "phase": "skill",
+          "text": "Zu zweit gegenübersitzen oder Rücken an Rücken, je nachdem, was sich besser anfühlt. Eine Person atmet ruhig und etwas langsamer als sonst, die andere passt sich ihrem Rhythmus an. Nach zwei Minuten wechseln. Danach kurz auswerten und den Bogen schlagen: Ruhige Menschen helfen uns, selbst ruhiger zu werden – das gehört später ins Fach „Menschen“ im Skills-Koffer.",
+          "sagen": [
+            "Ihr müsst nicht perfekt gleich atmen. Lasst euch vom ruhigen Atem des anderen mitnehmen.",
+            "War es leichter, ruhig zu atmen – allein oder zu zweit?"
+          ],
+          "tipp": "Paare vorher selbst festlegen, damit niemand übrig bleibt oder sich jemandem aufgedrängt fühlt.",
+          "wennEsKippt": "Ist Rücken an Rücken zu nah, reicht Gegenübersitzen mit Blick auf die Schultern des anderen. Bei ungerader Zahl atmet die Leitung mit. Wer nicht zu zweit arbeiten will, atmet im Takt der Leitung, die für alle leise zählt."
+        },
+        {
+          "titel": "Skills-Tester: mein Favorit",
+          "dauer": 10,
+          "phase": "uebung",
+          "text": "Alle schauen auf ihre Kreuze im Skills-Tester und markieren ihren Favoriten. Jede Person nennt ihn, und die Leitung macht an der Tafel eine Strichliste. Dann der Wochenauftrag: den Favoriten bis zum nächsten Mal einmal im Alltag testen und in der Tabelle auf dem Tester Zahl vorher und nachher notieren.",
+          "sagen": [
+            "Welcher Skill war euer Favorit – und bei welcher Zahl würdet ihr ihn benutzen?",
+            "Bis nächste Woche: Probiert ihn einmal im echten Leben aus. Zahl vorher, Zahl nachher, mehr nicht."
+          ],
+          "tipp": "Die Strichliste zeigt, wie verschieden die Favoriten sind. Das entlastet: Es gibt nicht den einen richtigen Skill.",
+          "wennEsKippt": "Sagt jemand, nichts habe geholfen, das ernst nehmen: Auch das ist ein Ergebnis. Nachfragen, was am ehesten ging, und darauf hinweisen, dass nächstes Mal ganz andere Skills kommen.",
+          "blatt": "skills-tester"
+        },
+        {
+          "titel": "Réckbléck und Skills-Pass",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Daumenbarometer: Wie war es heute, den eigenen Körper zu testen – Daumen hoch, Mitte oder runter? Dann der Eintrag in den Skills-Pass mit Stempel: der Favorit und die Zahl, bis zu der er hilft. Zuletzt die Zahl am Ende im Verlauf auf dem Thermometer-Blatt eintragen.",
+          "sagen": [
+            "Daumen hoch, Mitte, runter – wie war heute für euch?"
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Nächstes Mal geht es um eure Sinne – es wird gut riechen, und ihr dürft zwei Songs mitbringen, die euch runterbringen.",
+      "hintergrund": "Die Übungen folgen den Körper-Skills, die Linehan (2015) für Momente extremer Anspannung beschreibt: intensive Bewegung, langsames Atmen und Muskelentspannung, dazu Kälte (Einheit 13). Sie wirken über den Körper, nicht über das Nachdenken, und eignen sich deshalb für Gelb und Rot. Langsames Atmen mit langer Ausatmung stärkt den beruhigenden Teil des Nervensystems und geht mit mehr Ruhe und weniger Angst und Ärger einher (Zaccaro et al., 2018). In einer Studie hoben schon fünf Minuten strukturierte Atmung täglich die Stimmung und senkten die Atemfrequenz; am deutlichsten wirkte doppeltes Einatmen mit langem Ausatmen (Balban et al., 2023). Das Anspannen und Lösen geht auf die progressive Relaxation zurück (Jacobson, 1929). Entscheidend ist das Üben in ruhigen Zeiten: Nur ein vertrauter Skill ist bei Rot abrufbar.",
+      "quellen": [
+        "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford.",
+        "Zaccaro, A., Piarulli, A., Laurino, M., Garbella, E., Menicucci, D., Neri, B. & Gemignani, A. (2018). How breath-control can change your life: A systematic review on psycho-physiological correlates of slow breathing. Frontiers in Human Neuroscience, 12, 353.",
+        "Balban, M. Y., Neri, E., Kogon, M. M., Weed, L., Nouriani, B., Jo, B., Holl, G., Zeitzer, J. M., Spiegel, D. & Huberman, A. D. (2023). Brief structured respiration practices enhance mood and reduce physiological arousal. Cell Reports Medicine, 4(1), 100895.",
+        "Jacobson, E. (1929). Progressive Relaxation. Chicago: University of Chicago Press."
+      ],
+      "achtung": "Körperübungen sind freiwillig; jede Person darf aussetzen oder in eigenem Tempo mitmachen. Bei Asthma, Herz-Kreislauf-Problemen oder Verletzungen die Bewegung anpassen und die Luft nicht anhalten lassen. Wird jemandem bei einer Atemübung schwindelig, sofort aufhören und normal weiteratmen lassen. Manche Jugendliche erleben es als unangenehm, den eigenen Körper zu spüren oder die Augen zu schließen, etwa nach belastenden Erfahrungen: mit offenen Augen arbeiten lassen und nichts erzwingen. Wirkt jemand danach aufgewühlt, ein Einzelgespräch anbieten; bei Hinweisen auf Gefährdung nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) informieren."
+    },
+    {
+      "id": "j1-e13",
+      "nr": 13,
+      "jahr": 1,
+      "modul": "j1-m3",
+      "titel": "Skills über die Sinne",
+      "kurz": "Düfte, Tasten, Kälte, Musik und Klang: Die Jugendlichen testen Sinnes-Skills, finden ihren Duft und stellen eine Skills-Playlist zum Runterkommen und Aufladen zusammen.",
+      "dauer": 100,
+      "ziele": [
+        "leiten 5-4-3-2-1 zu zweit an und erklären, warum die Sinne ins Hier und Jetzt zurückholen",
+        "testen Düfte auf Riechstreifen und ordnen sie Situationen wie Wut, Angst oder Müdigkeit zu",
+        "finden in der Sinneskiste einen Gegenstand für die Hosentasche und probieren einen Kälte-Skill aus",
+        "stellen eine Skills-Playlist mit Songs zum Runterkommen und zum Aufladen zusammen"
+      ],
+      "material": [
+        "Vier bis fünf ätherische Öle in guter Qualität, etwa Lavendel, Orange, Pfefferminze, Zitrone und Zedernholz",
+        "Riechstreifen aus der Apotheke, je Person und Duft einer, dazu ein Becher zum Hineinstellen",
+        "Zip-Beutel, je Person einer",
+        "Sinneskiste: Stoffbeutel oder Schuhkarton mit Loch, darin Feder, glatter Stein, Knetball, Igelball, weicher Stoff, Tannenzapfen",
+        "Kühlpack aus dem Kühlschrank oder Eiswürfel im Gefrierbeutel, dazu ein Geschirrtuch",
+        "Knetbälle oder Handschmeichler zum Ausprobieren",
+        "Klangschale mit Klöppel, ersatzweise ein langer Gong-Ton vom Handy",
+        "Lautsprecher",
+        "Schülerblätter „Meine Sinnes-Skills“ und Skills-Tester, Gefühlsrad, Thermometer-Blatt",
+        "Skills-Pässe, Stempel, Imbiss"
+      ],
+      "vorbereitung": [
+        "Rechtzeitig vorher Allergien, Asthma und Duftempfindlichkeiten klären – mit den Jugendlichen selbst und bei Bedarf mit den Eltern",
+        "Die Öle mit den Nummern 1 bis 5 bekleben und die Namen abdecken; das Fenster zum Lüften freihalten",
+        "Die Sinneskiste packen, ohne dass die Jugendlichen den Inhalt sehen",
+        "Kühlpack oder Eiswürfel rechtzeitig kühlen",
+        "Eine kleine Reserve-Playlist bereithalten, falls niemand Songs dabeihat"
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-anspannungsthermometer",
+        "skills-tester",
+        "skills-sinne",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Gefühlsrad, Zahl und ein Sinneseindruck"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Rückblick: der Skill im Alltag"
+        },
+        {
+          "min": "15–25",
+          "phase": "uebung",
+          "titel": "5-4-3-2-1 zu zweit"
+        },
+        {
+          "min": "25–45",
+          "phase": "uebung",
+          "titel": "Duft-Check"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–85",
+          "phase": "aktiv",
+          "titel": "Sinneskiste, Kälte und Skills-Playlist"
+        },
+        {
+          "min": "85–95",
+          "phase": "skill",
+          "titel": "Klangschale: hören, bis es still ist"
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Réckbléck und Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: Gefühlsrad, Zahl und ein Sinneseindruck",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Gefühlsrad und Zahl wie gewohnt, die Zahl kommt in den Verlauf auf dem Thermometer-Blatt. Zusätzlich nennt jede Person einen Sinneseindruck vom Weg hierher: etwas, das sie gesehen, gehört oder gerochen hat. Die Leitung beginnt mit einem eigenen Beispiel. So öffnet sich das Thema, ohne dass jemand etwas Persönliches erzählen muss.",
+          "sagen": [
+            "Gefühl, Zahl – und eine Sache, die ihr heute auf dem Weg hierher gerochen, gehört oder gesehen habt.",
+            "Bei mir: 30, und im Bus hat es nach nassen Jacken gerochen."
+          ],
+          "tipp": "Wer nichts bemerkt hat, darf jetzt kurz aus dem Fenster schauen und etwas nennen. Genau darum geht es heute.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Rückblick: der Skill im Alltag",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "Nach dem Wochenauftrag fragen: Wer hat seinen Favoriten im Alltag getestet, und was hat die Zahl gemacht? Zwei oder drei Beispiele reichen; wer es vergessen hat, bekommt keinen Kommentar. Dann das Thema nennen: Körper-Skills verbrauchen den Alarm, Sinnes-Skills lenken die Aufmerksamkeit mit starken Reizen um – ein Duft, Kälte oder ein Ton holt das Gehirn aus dem Gedankenkarussell.",
+          "sagen": [
+            "Wer hat seinen Skill ausprobiert? Zahl vorher, Zahl nachher – mehr will ich gar nicht wissen.",
+            "Heute geht es um Skills, die über Nase, Hände und Ohren funktionieren."
+          ],
+          "wennEsKippt": "Hat niemand etwas ausprobiert, nicht belehren, sondern fragen, was es schwer gemacht hat: vergessen, keine Gelegenheit, peinlich? Daraus eine kleine Erinnerungshilfe ableiten, etwa einen farbigen Punkt auf der Handyhülle.",
+          "blatt": "skills-tester"
+        },
+        {
+          "titel": "5-4-3-2-1 zu zweit",
+          "dauer": 10,
+          "phase": "uebung",
+          "text": "Die Übung aus Einheit 1 wiederholen, diesmal laut und zu zweit: Eine Person leitet an, die andere nennt ihre Dinge halblaut, dann wird gewechselt. Danach erklären: Wenn die Gedanken rasen, holen die Sinne die Aufmerksamkeit ins Hier und Jetzt zurück, denn wer bewusst hinsieht und hinhört, kann nicht gleichzeitig grübeln. Auf dem Skills-Tester ankreuzen.",
+          "sagen": [
+            "Wer anleitet, spricht langsam und lässt Zeit. Wer übt, nennt die Dinge halblaut.",
+            "Bis zu welcher Zahl würde das bei euch funktionieren?"
+          ],
+          "punkte": [
+            "5 Dinge, die du siehst",
+            "4 Dinge, die du hörst",
+            "3 Dinge, die du spürst",
+            "2 Dinge, die du riechst",
+            "1 Sache, die du schmeckst"
+          ],
+          "tipp": "Für unterwegs reicht die Kurzform: drei Dinge sehen, drei hören, drei spüren. Die geht auch im Bus oder vor einer Prüfung.",
+          "blatt": "skills-tester"
+        },
+        {
+          "titel": "Duft-Check",
+          "dauer": 20,
+          "phase": "uebung",
+          "text": "Die Öle sind nummeriert, die Namen verdeckt. Einen Tropfen auf je einen Riechstreifen geben und herumreichen; nie direkt aus der Flasche riechen lassen und nichts auf die Haut geben. Jede Person riecht mit etwas Abstand, beschreibt den Duft auf dem Blatt mit Wörtern aus dem Wortspeicher und vergibt Punkte. Erst nach dem letzten Duft die Namen aufdecken und besprechen, wobei welcher Duft helfen könnte: bei Wut, Angst, Müdigkeit oder zum Einschlafen. Zwischendurch das Fenster kurz öffnen.",
+          "sagen": [
+            "Riecht mit Abstand und haltet die Streifen nicht direkt an die Nase. Wem ein Duft unangenehm ist, gibt ihn einfach weiter.",
+            "Gar nicht so leicht, einen Geruch zu beschreiben. Nehmt Wörter aus dem Kasten oder erfindet eigene.",
+            "Pfefferminze macht viele wach. Bei wem wirkt sie eher beruhigend?"
+          ],
+          "tipp": "Zum Schluss darf jede Person ihren Lieblingsduft auf einen frischen Streifen tropfen und im Zip-Beutel mitnehmen – der erste Gegenstand für die Skills-Box in Einheit 15.",
+          "wennEsKippt": "Wird mit den Streifen herumgealbert oder jemandem ein Streifen unter die Nase gehalten, sofort unterbinden: Düfte können Kopfschmerzen oder Atemnot auslösen. Klagt jemand über Kopfschmerzen, Übelkeit oder Atemnot, den Streifen wegnehmen, das Fenster öffnen und die Person an die frische Luft begleiten.",
+          "blatt": "skills-sinne"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Gemeinsam essen, das Fenster bleibt offen, damit sich die Düfte verziehen. Das Thema ruht."
+        },
+        {
+          "titel": "Sinneskiste, Kälte und Skills-Playlist",
+          "dauer": 25,
+          "phase": "aktiv",
+          "text": "Sinneskiste: Reihum greift jede Person mit geschlossenen Augen hinein, beschreibt einen Gegenstand und rät erst dann. Danach hält jede Person, die möchte, das Kühlpack oder einen eingewickelten Eiswürfel 30 Sekunden in der Hand und vergleicht die Zahl vorher und nachher. Dann die Skills-Playlist auf dem Blatt: je drei Songs zum Runterkommen und zum Aufladen. Wer möchte, spielt 30 Sekunden eines Songs vor, und zu den Songs zum Aufladen bewegt sich die Gruppe.",
+          "sagen": [
+            "Erst beschreiben, dann raten: warm oder kalt, glatt oder rau, schwer oder leicht?",
+            "Kälte ist einer der stärksten Sinnes-Skills. Er ist für Rot gedacht, wenn sonst nichts mehr geht.",
+            "Ein Song zum Runterkommen muss nicht langsam sein. Er muss euch runterbringen."
+          ],
+          "punkte": [
+            "Sinneskiste (8 Min.): Feder, Stein, Knetball, Igelball, Stoff – was beruhigt, was macht wach?",
+            "Kälte (7 Min.): Kühlpack oder Eiswürfel im Tuch, 30 Sekunden, nur in der Hand, freiwillig.",
+            "Skills-Playlist (10 Min.): drei Songs zum Runterkommen, drei zum Aufladen, ein Ausschnitt pro Person."
+          ],
+          "tipp": "Knetbälle oder Handschmeichler, die gut ankommen, gleich mitgeben oder günstig nachkaufen: Ein Skill in der Hosentasche wird eher benutzt als einer, der nur auf dem Blatt steht.",
+          "wennEsKippt": "Werden Songs mit Beleidigungen oder Gewalt vorgeschlagen, nicht über Geschmack streiten: Auf dem Blatt darf alles stehen, laut läuft nur, was für alle im Raum in Ordnung ist. Ist die Gruppe beim Tasten zu aufgedreht, die Kiste von Hand zu Hand geben, statt sie in die Mitte zu stellen.",
+          "blatt": "skills-sinne"
+        },
+        {
+          "titel": "Klangschale: hören, bis es still ist",
+          "dauer": 10,
+          "phase": "skill",
+          "text": "Alle sitzen bequem, Augen zu oder Blick auf einen Punkt am Boden. Die Klangschale einmal anschlagen; jede Person hebt still die Hand, wenn sie den Ton nicht mehr hört. Drei Durchgänge, dann die Frage, was der Kopf beim Zuhören gemacht hat. Zum Schluss die Sinnes-Skills auf dem Skills-Tester bewerten.",
+          "sagen": [
+            "Hört dem Ton hinterher, bis er ganz weg ist. Dann hebt ihr leise die Hand.",
+            "Was hat euer Kopf gemacht, während ihr zugehört habt?"
+          ],
+          "tipp": "Der Ton ist länger hörbar, als die meisten denken. Das zu bemerken, ist Teil der Übung: Wer genau hinhört, ist ganz im Moment.",
+          "wennEsKippt": "Hebt jemand sofort die Hand, um fertig zu sein, das nicht kommentieren. Beim nächsten Durchgang leiser anschlagen und die Gruppe bitten, auch nach dem Handheben weiterzuhören.",
+          "blatt": "skills-tester"
+        },
+        {
+          "titel": "Réckbléck und Skills-Pass",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Blitzlicht mit einer Frage: Welcher Sinn hat dir heute am meisten geholfen? Dann der Eintrag in den Skills-Pass, etwa der Lieblingsduft oder der wichtigste Song, und der Stempel. Die Zahl am Ende kommt in den Verlauf auf dem Thermometer-Blatt.",
+          "sagen": [
+            "Nase, Hände oder Ohren – was hat euch heute am meisten gebracht?"
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Nächstes Mal wird es ganz ruhig: Ihr lernt, Gedanken vorbeiziehen zu lassen – und ein paar Tricks für einen vollen Kopf.",
+      "hintergrund": "Sinnes-Skills nutzen starke, angenehme oder überraschende Reize, um die Aufmerksamkeit aus kreisenden Gedanken zu lösen. Im DBT-Skillstraining gehören sie zu den Fertigkeiten, mit denen sich Krisen überstehen lassen, ohne die Lage zu verschlimmern: sich mit allen Sinnen beruhigen und bei sehr hoher Anspannung intensive Reize wie Kälte nutzen (Linehan, 2015). Auch das Skillstraining für Jugendliche arbeitet mit dem Beruhigen über die Sinne (Rathus & Miller, 2015). Nach dem Prozessmodell der Emotionsregulation wirken diese Skills vor allem über die Lenkung der Aufmerksamkeit (Gross, 1998). Welche Reize helfen, ist sehr persönlich: Ein Duft kann beruhigen, weil er an etwas Gutes erinnert, oder stören, weil er an etwas Schweres erinnert. Deshalb wird getestet und bewertet, nicht verordnet.",
+      "quellen": [
+        "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford.",
+        "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford.",
+        "Gross, J. J. (1998). The emerging field of emotion regulation: An integrative review. Review of General Psychology, 2(3), 271–299."
+      ],
+      "achtung": "Vor dem Duft-Check Allergien, Asthma und Duftempfindlichkeiten klären; Öle nur auf Riechstreifen, nie auf die Haut, nie direkt aus der Flasche und nicht in Augennähe. Bei Kopfschmerzen, Übelkeit oder Atemnot sofort Streifen weg, Fenster auf, an die frische Luft. Kälte nur kurz, freiwillig und mit Tuch; nicht bei Herz-, Kreislauf- oder Durchblutungsproblemen. Düfte und Musik können unerwartet Erinnerungen wecken, auch belastende: Aussteigen ist ohne Begründung erlaubt. Wirkt jemand danach aufgewühlt, ein Einzelgespräch anbieten; bei Hinweisen auf Gefährdung nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) informieren."
+    },
+    {
+      "id": "j1-e14",
+      "nr": 14,
+      "jahr": 1,
+      "modul": "j1-m3",
+      "titel": "Achtsamkeit und Kopf-Skills",
+      "kurz": "Mit dem Gedankenschiffchen lassen die Jugendlichen Gedanken vorbeiziehen, testen Kopf-Skills für mittlere Anspannung und gestalten nach einer Traumreise ihren sicheren Ort.",
+      "dauer": 100,
+      "ziele": [
+        "beschreiben nach dem Gedankenschiffchen, wie es ist, Gedanken zu beobachten, statt ihnen zu folgen",
+        "testen Kopf-Skills und erklären, warum sie bei Gelb helfen und bei Rot kaum",
+        "essen ein kleines Stück Obst oder Schokolade achtsam mit allen Sinnen",
+        "gestalten nach einer Traumreise einen sicheren Ort, den sie in Gedanken aufsuchen können"
+      ],
+      "material": [
+        "Pro Person ein kleines Stück Schokolade oder Obst, etwa Mandarinenschnitz, Traube oder Apfelstück",
+        "Schülerblätter „Mein sicherer Ort“ und Skills-Tester, Gefühlsrad, Thermometer-Blatt",
+        "Buntstifte, Filzstifte oder Wachsmalkreiden",
+        "Timer; einige Sudoku- oder Rätselkarten (optional)",
+        "Kissen oder Decken für die Traumreise (optional)",
+        "Leise Instrumentalmusik zum Malen",
+        "Skills-Pässe, Stempel, Imbiss"
+      ],
+      "vorbereitung": [
+        "Die Traumreise einmal laut lesen und das Tempo üben",
+        "Allergien, Unverträglichkeiten und Speisevorschriften für den achtsamen Imbiss klären",
+        "Den Raum abdunkeln können; ein Schild „Bitte nicht stören“ an die Tür hängen"
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-anspannungsthermometer",
+        "skills-tester",
+        "skills-sicherer-ort",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in in Stille: erst spüren, dann sagen"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Notbremse und Lenkung: heute der Kopf"
+        },
+        {
+          "min": "15–30",
+          "phase": "uebung",
+          "titel": "Gedankenschiffchen"
+        },
+        {
+          "min": "30–45",
+          "phase": "aktiv",
+          "titel": "Kopf-Skills im Test, auch unter Störung"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit achtsamem Imbiss"
+        },
+        {
+          "min": "60–72",
+          "phase": "skill",
+          "titel": "Traumreise: Mein sicherer Ort"
+        },
+        {
+          "min": "72–85",
+          "phase": "uebung",
+          "titel": "Den sicheren Ort gestalten"
+        },
+        {
+          "min": "85–95",
+          "phase": "uebung",
+          "titel": "Bilanz: meine drei besten Skills"
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Réckbléck: Dankbarkeitsblitz und Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in in Stille: erst spüren, dann sagen",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Der Check-in beginnt mit einer Minute Stille: Augen zu oder Blick auf den Boden, nur spüren, welches Gefühl und welche Zahl gerade da sind, ohne sie zu bewerten. Dann die gewohnte Runde mit Gefühlsrad und Zahl; die Zahl kommt in den Verlauf auf dem Thermometer-Blatt. Kurz fragen, ob die Zahl nach der Minute anders war als davor. So wird schon der Einstieg zu einer Achtsamkeitsübung.",
+          "sagen": [
+            "Eine Minute nur wahrnehmen. Ihr müsst nichts ändern, nur bemerken.",
+            "Gefühl und Zahl – und war die Zahl vor der Minute eine andere?"
+          ],
+          "tipp": "Die Stille mit einem leisen Ton beenden, etwa mit der Klangschale aus Einheit 13. Das wird schnell zum Ritual.",
+          "wennEsKippt": "Ist eine Minute Stille für die Gruppe zu lang, mit 30 Sekunden beginnen und die Zeit in den nächsten Einheiten langsam verlängern.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Notbremse und Lenkung: heute der Kopf",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "Kurz auf die Einheiten 12 und 13 schauen: Körper- und Sinnes-Skills wirken auch bei Rot. Nachfragen, wer einen Sinnes-Skill im Alltag benutzt hat. Dann das Thema nennen: Achtsamkeit, also Gedanken bemerken, ohne ihnen zu folgen, und Kopf-Skills, die bei Gelb ablenken. Auf dem Thermometer-Blatt zeigen, wo die heutigen Skills hingehören.",
+          "sagen": [
+            "Körper und Sinne sind eure Notbremse. Heute trainieren wir das Lenken – für Momente, in denen der Kopf noch mitspielt."
+          ],
+          "blatt": "skills-anspannungsthermometer"
+        },
+        {
+          "titel": "Gedankenschiffchen",
+          "dauer": 15,
+          "phase": "uebung",
+          "text": "Kurz erklären: Der Kopf produziert ständig Gedanken, und niemand muss jedem folgen. Dann die Übung etwa fünf Minuten lang anleiten, mit ruhiger Stimme und langen Pausen zwischen den Sätzen. Danach im Kreis fragen, wie viele Schiffe vorbeigefahren sind und ob es schwer war, nicht mitzufahren. Betonen: Abschweifen ist kein Fehler; das Zurückkommen ist die eigentliche Übung. Auf dem Skills-Tester ankreuzen.",
+          "sagen": [
+            "Ihr müsst nicht an nichts denken. Das kann niemand.",
+            "Wer hat gemerkt, dass er plötzlich mitgefahren ist? Genau das Bemerken ist der Skill."
+          ],
+          "punkte": [
+            "Setz dich bequem hin. Schließ die Augen oder schau auf einen Punkt am Boden.",
+            "Stell dir einen ruhigen Fluss vor. Auf dem Wasser treiben kleine Schiffe vorbei.",
+            "Jeder Gedanke, der kommt, wird auf ein Schiff gesetzt – ein Wort, ein Bild, ein Geräusch im Raum, egal was.",
+            "Du schaust dem Schiff nach, bis es aus deinem Blick treibt. Du musst nichts festhalten und nichts wegschieben.",
+            "Wenn du merkst, dass du auf ein Schiff gestiegen bist und mitfährst: kein Problem. Steig aus und setz dich wieder ans Ufer.",
+            "Noch ein paar Atemzüge am Ufer. Dann öffne langsam die Augen."
+          ],
+          "tipp": "Die Übung hat einen ernsten Kern für den Alltag: Ein Gedanke wie „Alle lachen über mich“ ist ein Schiff, kein Beweis. Darauf baut das nächste Modul auf.",
+          "wennEsKippt": "Wird die Stille für jemanden unerträglich oder kommen belastende Gedanken, darf die Person die Augen öffnen, aufstehen oder ans Fenster gehen. Kichert jemand, ruhig weiterlesen und nach der Übung ansprechen, dass Lachen oft eine Reaktion auf Ungewohntes ist.",
+          "blatt": "skills-tester"
+        },
+        {
+          "titel": "Kopf-Skills im Test, auch unter Störung",
+          "dauer": 15,
+          "phase": "aktiv",
+          "text": "Die Kopf-Skills kurz vorstellen und jeden eine Minute ausprobieren lassen, allein und leise. In der zweiten Runde zu zweit: Eine Person wählt einen Kopf-Skill, die andere stört freundlich, indem sie vom Wochenende erzählt oder Zahlen dazwischenruft. Nach einer Minute tauschen, dann auf dem Skills-Tester bewerten. Auswerten: Kopf-Skills binden so viel Aufmerksamkeit, dass für Grübeln wenig Platz bleibt; bei Rot reicht die Denkkraft dafür meist nicht mehr.",
+          "sagen": [
+            "Wer schafft es bis unter 50, ohne sich zu verzählen? Und wer hat zwischendurch vergessen, worüber er sich geärgert hat?",
+            "Stört freundlich: nur mit Worten, keine Beleidigungen, kein Anfassen."
+          ],
+          "punkte": [
+            "Von 100 in Siebener-Schritten rückwärts zählen: 100, 93, 86 …",
+            "ABC-Spiel: zu jedem Buchstaben ein Tier, eine Stadt oder einen Fußballverein",
+            "Farben zählen: alle blauen Dinge im Raum finden und leise zählen",
+            "Rätsel oder Sudoku von einer Karte",
+            "Mit mir reden wie mit einem Freund, mit dem eigenen Namen: „Noah, du schaffst die nächsten zehn Minuten.“"
+          ],
+          "tipp": "Mit sich selbst wie mit einem Freund zu reden, wirkt überraschend gut: Wer sich mit dem eigenen Namen anspricht, bekommt Abstand. Vorher ein Beispiel geben, damit es nicht albern wirkt.",
+          "wennEsKippt": "Wird aus dem Stören ein Ärgern, die Runde sofort beenden und die Regel wiederholen: nur Worte, nur freundlich. Bei wenig Energie die zweite Runde weglassen und stattdessen gemeinsam die blauen Dinge im Raum zählen.",
+          "blatt": "skills-tester"
+        },
+        {
+          "titel": "Pause mit achtsamem Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Zu Beginn der Pause bekommt jede Person ein kleines Stück Obst oder Schokolade. Zwei Minuten lang wird es mit allen Sinnen gegessen: anschauen, riechen, auf der Zunge liegen lassen, langsam kauen. Danach kurz fragen, ob jemand schon einmal so bewusst gegessen hat. Dann normale Pause mit Imbiss.",
+          "sagen": [
+            "Schaut euch das Stück an, als hättet ihr so etwas noch nie gesehen. Wie sieht es aus, wie riecht es?",
+            "Legt es auf die Zunge und kaut noch nicht. Was passiert?"
+          ],
+          "tipp": "Eine Alternative ohne Allergierisiko bereithalten, etwa Apfelstücke; Schokolade kann Milch, Nüsse oder Gelatine enthalten.",
+          "wennEsKippt": "Wer das Stück sofort isst, bekommt keinen Kommentar und macht die Übung mit dem nächsten Bissen oder einem Schluck Wasser. Ekelt sich jemand, darf die Person nur schauen und riechen."
+        },
+        {
+          "titel": "Traumreise: Mein sicherer Ort",
+          "dauer": 12,
+          "phase": "skill",
+          "text": "Den Raum etwas abdunkeln, alle sitzen oder liegen bequem. Vorher ankündigen: Wer die Augen nicht schließen möchte, schaut auf einen Punkt am Boden, und wer aussteigen will, öffnet einfach die Augen. Die Traumreise langsam vorlesen, mit Pausen, etwa acht Minuten. Danach behutsam zurückholen: Finger und Zehen bewegen, strecken, Augen öffnen.",
+          "sagen": [
+            "Ihr entscheidet, wie weit ihr euch darauf einlasst. Augen auf ist völlig in Ordnung."
+          ],
+          "punkte": [
+            "Mach es dir bequem und schließ die Augen, wenn du magst. Atme ein paarmal tief ein und langsam aus.",
+            "Stell dir eine Tür vor. Dahinter liegt ein Ort, an dem du dich sicher und wohl fühlst. Das kann ein echter Ort sein oder ein erfundener.",
+            "Öffne die Tür und geh hinein. Schau dich um: Was siehst du? Welche Farben gibt es? Ist es hell oder gemütlich dunkel?",
+            "Was hörst du? Vielleicht Wellen, Vögel, Musik – oder angenehme Stille.",
+            "Wie riecht es hier? Wie warm ist es? Spür den Boden unter deinen Füßen.",
+            "Such dir einen Platz, an dem du sitzen oder liegen kannst. Hier kann dir nichts passieren. Hier darfst du einfach sein.",
+            "Wenn du willst, ist jemand bei dir – ein Mensch oder ein Tier, das dir guttut. Oder du bist allein. Du entscheidest.",
+            "Bleib noch einen Moment. Merk dir, wie es sich hier anfühlt. Du kannst jederzeit zurückkommen – in Gedanken.",
+            "Geh jetzt langsam zurück zur Tür und schließ sie hinter dir. Spür den Stuhl und den Boden. Beweg Finger und Zehen. Öffne langsam die Augen."
+          ],
+          "tipp": "Nicht zu schnell lesen: Nach jeder Zeile zwei, drei Atemzüge warten. Die Pausen machen die Wirkung aus.",
+          "wennEsKippt": "Findet jemand keinen sicheren Ort oder wird unruhig, nicht drängen: Ein erfundener Ort, ein Ort aus einem Film oder Spiel oder einfach ein bequemes Zimmer ist genauso gut. Bei großer Unruhe in der Gruppe die Traumreise auf vier Minuten kürzen und im Sitzen mit offenen Augen durchführen."
+        },
+        {
+          "titel": "Den sicheren Ort gestalten",
+          "dauer": 13,
+          "phase": "uebung",
+          "text": "Jede Person gestaltet ihren Ort auf dem Schülerblatt: malen, beschreiben oder beides. Die Fragen zu den Sinnen machen den Ort genauer, und ein Stichwort hilft, ihn später schnell aufzurufen. Wer möchte, zeigt seinen Ort; niemand muss. Erklären: Den Ort kann man in Gedanken jederzeit besuchen – am besten erst bei Grün üben, damit er bei Gelb funktioniert.",
+          "sagen": [
+            "Ihr müsst nicht malen können. Farben, Formen oder Wörter reichen völlig.",
+            "Wer mag uns seinen Ort zeigen? Ihr entscheidet, was ihr erzählt."
+          ],
+          "tipp": "Leise Musik ohne Gesang hilft beim Malen und nimmt der Stille die Schwere.",
+          "wennEsKippt": "Malt jemand etwas Bedrohliches oder bleibt das Blatt leer, nicht deuten und nicht in der Gruppe nachfragen; nach der Einheit ein kurzes Einzelgespräch anbieten.",
+          "blatt": "skills-sicherer-ort"
+        },
+        {
+          "titel": "Bilanz: meine drei besten Skills",
+          "dauer": 10,
+          "phase": "uebung",
+          "text": "Alle schauen auf ihren Skills-Tester: Jetzt sind alle drei Blöcke ausgefüllt. Jede Person trägt ihre drei besten Skills in die Tabelle „Meine Favoriten“ ein, mit der Zahl, bis zu der sie helfen. Kurze Runde: Was hat dir heute am meisten geholfen? Die Tester bleiben in der Mappe im Raum, denn nächstes Mal werden sie gebraucht.",
+          "sagen": [
+            "Ihr habt jetzt mehr als 15 Skills getestet. Welche drei würdet ihr mitnehmen, wenn ihr nur drei dürftet?"
+          ],
+          "tipp": "Wer in einer der drei Einheiten gefehlt hat, lässt die Zeilen frei; die Leitung zeigt die wichtigsten Skills nächstes Mal kurz mit den Skills-Kärtchen.",
+          "blatt": "skills-tester"
+        },
+        {
+          "titel": "Réckbléck: Dankbarkeitsblitz und Skills-Pass",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Dankbarkeitsblitz: 20 Sekunden mit geschlossenen Augen an etwas denken, wofür man gerade dankbar ist; wer möchte, sagt es. Dann der Eintrag in den Skills-Pass mit Stempel und die Zahl am Ende im Verlauf auf dem Thermometer-Blatt.",
+          "sagen": [
+            "20 Sekunden: Wofür seid ihr heute dankbar? Teilen ist freiwillig."
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Ihr habt jetzt über 15 Skills ausprobiert – nächstes Mal packt jede und jeder den eigenen Skills-Koffer.",
+      "hintergrund": "Achtsamkeit bedeutet, die Aufmerksamkeit bewusst und ohne Bewertung auf den gegenwärtigen Moment zu richten (Kabat-Zinn, 1990). Achtsamkeitsprogramme in Schulen verbessern nach einer Meta-Analyse vor allem Aufmerksamkeit und den Umgang mit Stress (Zenner et al., 2014). Das Gedankenschiffchen ist eine Variante einer Übung aus der Akzeptanz- und Commitment-Therapie: Gedanken werden als vorüberziehende Ereignisse beobachtet, statt als Wahrheit behandelt zu werden (Hayes et al., 2012). Kopf-Skills wie Rückwärtszählen lenken die Aufmerksamkeit um; im Prozessmodell der Emotionsregulation setzen sie an, bevor sich ein Gefühl voll entfaltet (Gross, 1998). Weil sie Denkkapazität brauchen, eignen sie sich vor allem für mittlere Anspannung. Mit sich selbst wie mit einer anderen Person zu sprechen, schafft Abstand und dämpft das Grübeln (Kross & Ayduk, 2017).",
+      "quellen": [
+        "Kabat-Zinn, J. (1990). Full Catastrophe Living. New York: Delacorte.",
+        "Zenner, C., Herrnleben-Kurz, S. & Walach, H. (2014). Mindfulness-based interventions in schools – a systematic review and meta-analysis. Frontiers in Psychology, 5, 603.",
+        "Hayes, S. C., Strosahl, K. D. & Wilson, K. G. (2012). Acceptance and Commitment Therapy: The Process and Practice of Mindful Change (2nd ed.). New York: Guilford.",
+        "Gross, J. J. (1998). The emerging field of emotion regulation: An integrative review. Review of General Psychology, 2(3), 271–299.",
+        "Kross, E. & Ayduk, O. (2017). Self-distancing: Theory, research, and current directions. Advances in Experimental Social Psychology, 55, 81–136."
+      ],
+      "achtung": "Achtsamkeits- und Vorstellungsübungen können bei manchen Jugendlichen belastende Gedanken oder Erinnerungen hervorrufen, besonders nach schwierigen Erfahrungen. Deshalb gilt immer: Augen offen ist erlaubt, Aussteigen ist erlaubt, niemand muss seinen Ort beschreiben. Findet jemand keinen sicheren Ort, ist das ein Hinweis, behutsam im Einzelgespräch nachzufragen – nicht in der Gruppe. Beim achtsamen Essen Allergien, Unverträglichkeiten und Speisevorschriften beachten. Bei Hinweisen auf Gefährdung nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) informieren."
+    },
+    {
+      "id": "j1-e15",
+      "nr": 15,
+      "jahr": 1,
+      "modul": "j1-m3",
+      "titel": "Mein Skills-Koffer und Ampelplan",
+      "kurz": "Das Glas der Bedürfnisse wird wieder geöffnet, dann packt jede Person ihren Skills-Koffer, erstellt einen Ampelplan für Grün, Gelb und Rot und gestaltet eine Notfallkarte.",
+      "dauer": 100,
+      "ziele": [
+        "verbinden leere Bedürfnis-Tanks aus Einheit 4 mit Anspannung und passenden Skills",
+        "stellen aus ihren Testergebnissen einen persönlichen Skills-Koffer mit fünf Fächern zusammen",
+        "erstellen einen Ampelplan mit Warnsignalen, Skills und mindestens einer erreichbaren erwachsenen Person",
+        "leiten der Gruppe ihren Lieblings-Skill an"
+      ],
+      "material": [
+        "Glas der Bedürfnisse aus Einheit 4",
+        "Ausgefüllte Skills-Tester, Skills-Pässe, Thermometer-Blätter und Bedürfnis-Pegel aus der Mappe",
+        "Gefühls-Landkarten aus Einheit 9 (Mappe)",
+        "Schülerblatt „Mein Skills-Koffer und Ampelplan“ für jede Person",
+        "Schülerblatt „Skills-Kärtchen“ auf festem Papier (160 g), Scheren",
+        "Laminiergerät und Laminierfolien, ersatzweise breites Klebeband",
+        "Optional: kleine Dosen, Knetbälle, Riechstreifen in Zip-Beuteln, Pfefferminzbonbons",
+        "Kontaktdaten der Ansprechpersonen im Annexe und des SePAS",
+        "Stempel „Skills-Profi“ oder ein besonderer Sticker, Imbiss"
+      ],
+      "vorbereitung": [
+        "Die Zettel im Glas der Bedürfnisse vorher durchsehen und zu Persönliches beiseitelegen",
+        "Nachsehen, wer in den Einheiten 12 bis 14 gefehlt hat; diesen Jugendlichen die Skills-Kärtchen als Übersicht geben",
+        "Laminiergerät testen und vorheizen"
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-anspannungsthermometer",
+        "skills-beduerfnis-pegel",
+        "skills-tester",
+        "skills-koffer-ampelplan",
+        "skills-kaertchen",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Welche Farbe hat deine Ampel?"
+        },
+        {
+          "min": "10–20",
+          "phase": "bruecke",
+          "titel": "Das Glas der Bedürfnisse wird geöffnet"
+        },
+        {
+          "min": "20–45",
+          "phase": "uebung",
+          "titel": "Skills-Koffer und Ampelplan"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–80",
+          "phase": "uebung",
+          "titel": "Notfallkarte und Skills-Kärtchen"
+        },
+        {
+          "min": "80–95",
+          "phase": "aktiv",
+          "titel": "Ich bringe euch einen Skill bei"
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Réckbléck: Stempel „Skills-Profi“"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: Welche Farbe hat deine Ampel?",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Gefühlsrad und Zahl wie gewohnt, dazu die Ampelfarbe, die zur Zahl passt; die Zahl kommt in den Verlauf auf dem Thermometer-Blatt. Die Leitung beginnt. Wer bei Gelb oder Rot ist, wird gefragt, ob er gerade einen Skill braucht, und darf ihn sofort anwenden, bevor es weitergeht. So wird der Ampelplan schon im Check-in praktisch.",
+          "sagen": [
+            "Gefühl, Zahl und Farbe: Wo steht eure Ampel heute?",
+            "Du bist bei Gelb. Brauchst du jetzt kurz einen Skill? Dann mach ihn – wir warten."
+          ],
+          "tipp": "Die Frage nach dem Skill ab jetzt in jedem Check-in stellen: So wird aus dem Modul eine Gewohnheit.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Das Glas der Bedürfnisse wird geöffnet",
+          "dauer": 10,
+          "phase": "bruecke",
+          "text": "Das Glas aus Einheit 4 in die Mitte stellen, einige Zettel ziehen und vorlesen lassen. Dann fragen, was ein leerer Tank mit der Anspannung zu tun hat: Wer müde, hungrig, einsam oder nicht ernst genommen ist, landet schneller bei Gelb. Daraus den Gedanken für Grün ableiten: Bedürfnisse auffüllen ist der beste Schutz vor Rot. Die Jugendlichen schauen dazu kurz in ihren Bedürfnis-Pegel aus Einheit 4.",
+          "sagen": [
+            "Was hat es mit Gefühlen zu tun, wenn ein Tank leer ist?",
+            "Stellt euch vor: kaum geschlafen, nichts gegessen, Streit am Morgen. Bei welcher Zahl startet ihr in den Tag?",
+            "Skills helfen, wenn es brennt. Bedürfnisse auffüllen hilft, dass es seltener brennt."
+          ],
+          "tipp": "Die Zettel sind anonym. Trotzdem nur allgemein klingende vorlesen; alles, was nach einer bestimmten Person klingt, bleibt im Glas.",
+          "wennEsKippt": "Wird über Zettel gelacht oder geraten, wer was geschrieben hat, sofort anhalten und an die Anonymität erinnern. Danach liest nur noch die Leitung vor.",
+          "blatt": "skills-beduerfnis-pegel"
+        },
+        {
+          "titel": "Skills-Koffer und Ampelplan",
+          "dauer": 25,
+          "phase": "uebung",
+          "text": "Mit Skills-Tester, Skills-Pass, Thermometer-Blatt und Gefühls-Landkarte füllt jede Person das Blatt aus: erst den Koffer mit seinen Fächern, dann die Warnsignale und den Ampelplan. Die Leitung geht herum, fragt nach und achtet darauf, dass bei Rot Körper- und Sinnes-Skills stehen, keine Kopf-Skills. Bei der Frage, zu wem man gehen kann, trägt jede Person mindestens eine erreichbare erwachsene Person ein. Die Blätter bleiben bei den Jugendlichen; wer mag, zeigt seinen Plan der Leitung.",
+          "sagen": [
+            "Packt nur ein, was bei euch wirklich gewirkt hat. Ein kleiner Koffer, den ihr benutzt, ist besser als ein großer, der im Schrank steht.",
+            "Bei Rot könnt ihr nicht mehr nachdenken. Was steht da, das auch dann noch funktioniert?",
+            "Wer ist eine erwachsene Person, die du wirklich erreichen kannst – auch am Wochenende?"
+          ],
+          "punkte": [
+            "Körper: Atem, Bewegung, Anspannen und Loslassen",
+            "Sinne: Duft, Kälte, Knetball, Musik, Klang",
+            "Kopf: Rückwärtszählen, ABC-Spiel, Gedankenschiffchen, sicherer Ort",
+            "Menschen: wem ich schreibe, mit wem ich rede, bei wem ich einfach sein darf",
+            "Aktivitäten: was mir guttut, etwa Sport, zeichnen, Musik machen, mit dem Hund raus"
+          ],
+          "tipp": "Findet jemand keine erwachsene Person, gemeinsam überlegen: Educatrice oder Educateur im Annexe, Klassenlehrerin, SePAS, Trainer im Verein. Notfalls steht zunächst das Kanner- a Jugendtelefon da – und die Leitung greift das Thema im Einzelgespräch auf.",
+          "wennEsKippt": "Schreibt jemand demonstrativ „nichts hilft“ oder „Zocken“ in jedes Fach, nicht streiten: Zocken kann bei Gelb tatsächlich ablenken. Nachfragen, was bei Rot hilft, wenn kein Handy da ist, und auf die eigenen Kreuze im Skills-Tester zeigen.",
+          "blatt": "skills-koffer-ampelplan"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Gemeinsam essen, während das Laminiergerät vorheizt. Die Pläne bleiben liegen; das Thema ruht."
+        },
+        {
+          "titel": "Notfallkarte und Skills-Kärtchen",
+          "dauer": 20,
+          "phase": "uebung",
+          "text": "Jede Person gestaltet ihre Notfallkarte im Kreditkartenformat: vorne die drei bis fünf wichtigsten Skills für Rot, hinten die Menschen, zu denen sie gehen kann. Beide Hälften werden ausgeschnitten, Rücken an Rücken zusammen laminiert und kommen ins Portemonnaie oder in die Handyhülle. Wer fertig ist, schneidet passende Skills-Kärtchen aus und packt eine kleine Skills-Box mit Kärtchen, Knetball, Duftstreifen und Pfefferminz. Wer keine Box möchte, fotografiert die Notfallkarte zusätzlich mit dem Handy.",
+          "sagen": [
+            "Schreibt so, dass ihr es bei 90 noch lesen könnt: kurz, groß, klar.",
+            "Wo ist die Karte, wenn ihr sie braucht? In der Tasche, die ihr immer dabeihabt."
+          ],
+          "tipp": "Die Karte zweimal machen lassen – eine für die Schultasche, eine für zu Hause. Wer mag, gibt eine Kopie des Ampelplans einer Vertrauensperson.",
+          "wennEsKippt": "Findet jemand Basteln kindisch, die Box weglassen: Die Notfallkarte als Foto auf dem Sperrbildschirm oder in der Notizen-App ist genauso gut.",
+          "blatt": "skills-kaertchen"
+        },
+        {
+          "titel": "Ich bringe euch einen Skill bei",
+          "dauer": 15,
+          "phase": "aktiv",
+          "text": "Jede Person wählt ihren Lieblings-Skill, nimmt bei Bedarf das passende Kärtchen und leitet ihn für die Gruppe ein bis zwei Minuten an. Die vier Schritte auf dem Blatt helfen: sagen, wann er hilft, vormachen, zusammen üben, nachfragen. Die Leitung hilft höchstens mit einem Stichwort. So werden die Jugendlichen von Lernenden zu Profis.",
+          "sagen": [
+            "Ihr seid jetzt die Trainerinnen und Trainer. Erklärt kurz, wann der Skill hilft, und macht ihn mit uns.",
+            "Nicht perfekt, sondern so, dass wir es nachmachen können."
+          ],
+          "tipp": "Wer nervös ist, darf zu zweit anleiten oder vom Kärtchen ablesen. Die Aufregung ist eine gute Gelegenheit, den eigenen Skill gleich zu nutzen.",
+          "wennEsKippt": "Will jemand nicht vor der Gruppe sprechen, macht die Person den Skill nur vor, und die Leitung spricht die Worte. Bei nur zwei Jugendlichen leitet jede Person zwei Skills an, und die Leitung macht mit.",
+          "blatt": "skills-kaertchen"
+        },
+        {
+          "titel": "Réckbléck: Stempel „Skills-Profi“",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Blitzlicht: Welcher Skill liegt in deinem Koffer ganz oben? Dann der Eintrag in den Skills-Pass und der besondere Stempel „Skills-Profi“ zum Abschluss des Moduls. Pläne und Karten nehmen die Jugendlichen mit; die Tester bleiben in der Mappe.",
+          "sagen": [
+            "Ein Skill, der in eurem Koffer ganz oben liegt – und damit seid ihr offiziell Skills-Profis."
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Ihr habt jetzt viele Werkzeuge gegen starke Gefühle. Aber manchmal macht nicht die Situation die Welle, sondern der Gedanke dazu – ab nächster Woche schauen wir uns eure Gedanken an.",
+      "hintergrund": "Der Skills-Koffer – in der Praxis oft Notfallkoffer genannt – bündelt, was in den Einheiten 11 bis 14 getestet wurde: eine kleine Auswahl, die bei hoher Anspannung sofort greifbar ist. Er folgt dem Grundgedanken des DBT-Skillstrainings für Jugendliche, erprobte Fertigkeiten für Krisen bereitzuhalten (Fleischhaker et al., 2011). Der Ampelplan ordnet die Skills der Anspannung zu und verknüpft sie mit frühen Warnsignalen, damit gehandelt wird, bevor Rot erreicht ist (Rathus & Miller, 2015). Er übernimmt Bausteine des Sicherheitsplans nach Stanley und Brown (2012): Warnzeichen, eigene Bewältigung, vertraute Menschen, Hilfenummern. Konkrete Wenn-dann-Verknüpfungen erhöhen die Wahrscheinlichkeit, dass ein Vorsatz in der Situation umgesetzt wird (Gollwitzer, 1999). Wer einen Skill vor der Gruppe anleitet, festigt ihn und stärkt die Selbstwirksamkeit (Bandura, 1977).",
+      "quellen": [
+        "Fleischhaker, C., Sixt, B. & Schulz, E. (2011). DBT-A: Dialektisch-behaviorale Therapie für Jugendliche. Berlin: Springer.",
+        "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford.",
+        "Stanley, B. & Brown, G. K. (2012). Safety planning intervention: A brief intervention to mitigate suicide risk. Cognitive and Behavioral Practice, 19(2), 256–264.",
+        "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503.",
+        "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215."
+      ],
+      "achtung": "Der Ampelplan berührt Krisen. Pläne und Notfallkarten werden nicht eingesammelt, nicht vorgelesen und nicht bewertet. Stehen bei Rot Selbstverletzung, Weglaufen oder Drogen, findet jemand keine einzige erreichbare Person oder deutet Suizidgedanken an: zeitnah ein Einzelgespräch führen, die zuständige Leitung (Responsable) informieren und nach dem internen Schutzkonzept handeln. In einer akuten Krise ersetzt der Ampelplan keinen Sicherheitsplan mit einer Fachperson (Toolbox-Blatt „Mein Sicherheitsplan“). Beim Glas der Bedürfnisse bleiben die Zettel anonym."
+    }
+  ]
+}

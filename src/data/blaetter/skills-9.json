@@ -1,0 +1,1521 @@
+[
+  {
+    "id": "skills-film-steuerpult",
+    "bereich": "skills",
+    "thema": "gefuehle",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "15 Min., verteilt auf zwei Termine",
+    "eldib": [
+      "K-26",
+      "K-21",
+      "K-16",
+      "SOZ-37"
+    ],
+    "schlagworte": [
+      "Alles steht Kopf",
+      "Film",
+      "Grundgefühle",
+      "Beobachtungsbogen",
+      "Gefühle am Steuer"
+    ],
+    "bild": "icon:player-play",
+    "kurs": [
+      "j1-j01"
+    ],
+    "verwandt": [
+      "skills-wer-sitzt-am-steuer",
+      "skills-gefuehlskarten"
+    ],
+    "de": {
+      "titel": "Mein Paten-Gefühl",
+      "untertitel": "Beobachtungsbogen für den ganzen Film „Alles steht Kopf“ (Teil 1 oder 2)",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "In Einheit 8 habt ihr Ausschnitte gesehen. Jetzt verfolgst du ein Gefühl durch den ganzen Film: dein Paten-Gefühl."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Kreuze dein Paten-Gefühl an.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 3,
+          "items": [
+            "Freude",
+            "Kummer",
+            "Angst",
+            "Wut",
+            "Ekel",
+            "Zweifel (Teil 2)",
+            "Neid (Teil 2)",
+            "Peinlich (Teil 2)",
+            "Ennui (Teil 2)"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Beim Schauen oder in der Pause: Wann sitzt dein Paten-Gefühl am Steuer – und was tut Riley dann?",
+          "hinweis": "Stichworte reichen. Im Dunkeln muss niemand schön schreiben.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Szene (Stichwort)",
+            "Wer sitzt am Steuer?",
+            "Was tut Riley dann?"
+          ],
+          "breiten": [
+            2.2,
+            1.4,
+            2.2
+          ],
+          "zeilen": 3,
+          "beispiel": [
+            "Riley stellt sich in der neuen Klasse vor.",
+            "Kummer",
+            "Sie fängt vor allen an zu weinen."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Rileys Weg durch den Film: Wer sitzt am Anfang, in der Mitte und am Ende am Steuer?",
+          "hinweis": "Schreib in jedes Feld ein Gefühl und ein Stichwort zur Szene.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 2,
+          "items": [
+            {
+              "titel": "Am Anfang",
+              "text": "Rileys Leben läuft rund."
+            },
+            {
+              "titel": "In der Mitte",
+              "text": "Alles gerät durcheinander."
+            },
+            {
+              "titel": "Am Ende",
+              "text": "Etwas hat sich verändert."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Freude will ein anderes Gefühl lange vom Pult fernhalten. Welches – und wozu wird es am Ende doch gebraucht?"
+        },
+        {
+          "art": "linien",
+          "anzahl": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dein Paten-Gefühl und du: Ergänze die Sätze.",
+          "hinweis": "Was du über dich schreibst, liest niemand vor, wenn du es nicht willst.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Mein Paten-Gefühl hilft Riley, wenn …",
+            "Schwierig wird es, wenn es ganz allein am Steuer sitzt, weil …",
+            "Die wichtigste Botschaft des ganzen Films ist für mich …"
+          ],
+          "linien": 1
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen verfolgen ein Gefühl durch den ganzen Film und formulieren danach seine Botschaft: Welches Gefühl sitzt wann am Steuer, und wozu wird Kummer gebraucht?",
+        "ablauf": [
+          "Termin 1, vor dem Film (5 Min.): Paten-Gefühle per Karte verteilen und in Aufgabe 1 ankreuzen lassen.",
+          "Während des Films und in der Pause: Stichworte zu höchstens drei, vier Szenen (Aufgabe 2).",
+          "Termin 2, nach dem Film (10 Min.): Aufgaben 3 und 4 allein, dann im Kreis Rileys Weg vergleichen.",
+          "Aufgabe 5 ist freiwillig. Die Botschaften mit dem Plakat aus Einheit 8 vergleichen."
+        ],
+        "hintergrund": "Der Film zeigt Gefühle als Figuren, die Denken und Handeln lenken. Die Emotionsforscher Keltner und Ekman, die das Filmteam beraten haben, betonen, dass Traurigkeit hier als soziales Signal erscheint: Sie holt Trost und Nähe herbei (Keltner & Ekman, 2015). Die fünf Figuren entsprechen Grundgefühlen nach Ekman (1992). Am Ende stehen Erinnerungen, die froh und traurig zugleich sind – dass Menschen beides gleichzeitig empfinden, haben Larsen et al. (2001) gezeigt. Der Beobachtungsauftrag macht aus Zuschauen aktives Beobachten.",
+        "quellen": [
+          "Keltner, D. & Ekman, P. (2015, 3. Juli). The science of “Inside Out”. The New York Times.",
+          "Ekman, P. (1992). An argument for basic emotions. Cognition and Emotion, 6(3–4), 169–200.",
+          "Larsen, J. T., McGraw, A. P. & Cacioppo, J. T. (2001). Can people feel happy and sad at the same time? Journal of Personality and Social Psychology, 81(4), 684–696."
+        ],
+        "differenzierung": {
+          "leichter": "Nur Aufgaben 1 und 3; die Leitung nennt nach dem Film drei Schlüsselszenen zur Auswahl.",
+          "schwerer": "Den Weg eines zweiten Gefühls verfolgen und mit dem eigenen Paten-Gefühl vergleichen."
+        },
+        "impulse": [
+          "Welches Gefühl hätte Riley in dieser Szene gebraucht?",
+          "Was passiert, wenn am Pult nichts mehr funktioniert?"
+        ],
+        "tipps": [
+          "Die Bögen auf Klemmbretter legen; im abgedunkelten Raum schreibt es sich so leichter."
+        ],
+        "achtung": "Der Film berührt Umzug, Verlust und Heimweh, Teil 2 zeigt eine Panikattacke. Wer sich stark mit Kummer oder Zweifel identifiziert, wird nicht vor der Gruppe befragt; ein Einzelgespräch anbieten. Vorführrechte und Altersfreigabe vorab klären lassen.",
+        "material": "Klemmbretter, Stifte, Gefühlskarten aus Einheit 8"
+      }
+    }
+  },
+  {
+    "id": "skills-film-rueckschlaege",
+    "bereich": "skills",
+    "thema": "gedanken",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "20 Min., verteilt auf zwei Termine",
+    "eldib": [
+      "SOZ-40",
+      "K-33",
+      "SOZ-36",
+      "SOZ-37"
+    ],
+    "schlagworte": [
+      "Das Streben nach Glück",
+      "Film",
+      "Rückschläge",
+      "Glaubenssätze",
+      "Resilienz"
+    ],
+    "bild": "icon:mountain",
+    "kurs": [
+      "j1-j02"
+    ],
+    "de": {
+      "titel": "Was hält ihn am Laufen?",
+      "untertitel": "Beobachtungsbogen zum Film „Das Streben nach Glück“",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Chris Gardner verliert fast alles – und macht trotzdem weiter. Du findest heraus, was ihn bremst und was ihn trägt."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Kreuze an, worauf du beim Schauen besonders achtest.",
+          "hinweis": "Die anderen Aufgaben füllst du nach dem Film aus.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 3,
+          "items": [
+            "Rückschläge",
+            "Gedanken und Glaubenssätze",
+            "Kraftquellen: Menschen und Dinge"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Welche Rückschläge erlebt Chris? Was fühlt er, und was tut er dann?",
+          "hinweis": "Das Gefühlsrad hilft, Gefühle genau zu benennen.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Rückschlag",
+            "Was er fühlt",
+            "Was er dann tut"
+          ],
+          "breiten": [
+            2.1,
+            1.5,
+            2.2
+          ],
+          "zeilen": 4,
+          "beispiel": [
+            "Er muss mit seinem Sohn aus der Wohnung ausziehen.",
+            "Scham, Angst",
+            "Er sucht sofort einen neuen Schlafplatz."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was gibt Chris Kraft – und was kostet ihn Kraft?"
+        },
+        {
+          "art": "batterie",
+          "laden": "Das gibt ihm Kraft",
+          "leeren": "Das kostet ihn Kraft",
+          "linien": 3
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Welche Gedanken könnte Chris in schweren Momenten haben? Finde zu jedem Gedanken, der bremst, einen, der trägt."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Moment im Film",
+            "Gedanke, der bremst",
+            "Gedanke, der trägt"
+          ],
+          "breiten": [
+            1.8,
+            1.9,
+            2.1
+          ],
+          "zeilen": 3,
+          "beispiel": [
+            "Er sitzt nachts mit seinem Sohn in der U-Bahn-Station.",
+            "„Ich bin ein schlechter Vater.“",
+            "„Heute Nacht sind wir zusammen. Morgen suche ich weiter.“"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Welche Skills nutzt Chris? Kreuze an, was du im Film gesehen hast, und ergänze.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "frei": 1,
+          "items": [
+            "aus einer schlimmen Nacht ein Spiel machen",
+            "die Zeit genau einteilen, einen Plan haben",
+            "Hilfe annehmen, zum Beispiel in der Notunterkunft",
+            "weitermachen, obwohl er Angst hat",
+            "Gefühle zulassen – auch weinen",
+            "ruhig bleiben, wenn er ungerecht behandelt wird"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Der Film heißt „Das Streben nach Glück“. Und du? Ergänze die Sätze.",
+          "hinweis": "Der letzte Satz ist nur für dich. Niemand muss ihn vorlesen.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Glück bedeutet für Chris am Ende des Films …",
+            "Glück bedeutet für mich …",
+            "An einem schlechten Tag hält mich am Laufen: …"
+          ],
+          "linien": 2
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen beobachten an einer Filmfigur, wie Rückschläge, Gedanken und Kraftquellen zusammenhängen, und übertragen die Arbeit mit Glaubenssätzen auf eine fremde Geschichte.",
+        "ablauf": [
+          "Termin 1, vor dem Film (5 Min.): Schwerpunkte verteilen (Aufgabe 1), je zwei Personen pro Schwerpunkt.",
+          "Während des Films: nur Stichworte, am besten in der Pause.",
+          "Termin 2, nach dem Film (10 Min.): Aufgaben 2 bis 4 allein, dann an der Tafel in drei Spalten sammeln.",
+          "Aufgaben 5 und 6 im Gespräch: Welche Skills nutzt Chris, und ist Glück dasselbe wie Geld? Der letzte Satz bleibt privat."
+        ],
+        "hintergrund": "Widerstandskraft entsteht aus gewöhnlichen Quellen: verlässlichen Beziehungen, Selbststeuerung, Hoffnung und dem Erleben, etwas bewirken zu können (Masten, 2014). Im Film ist der Sohn für Chris Grund und Kraftquelle zugleich. Die Arbeit mit bremsenden und tragenden Gedanken folgt der Idee, dass nicht das Ereignis allein, sondern seine Bewertung bestimmt, wie wir fühlen und handeln (Ellis, 1962). Wer Fähigkeiten für entwickelbar hält, deutet Rückschläge eher als Lernanlass (Dweck, 2006). Die Frage nach dem Glück schützt vor dem Fehlschluss, alles hänge nur am Willen.",
+        "quellen": [
+          "Masten, A. S. (2014). Ordinary Magic: Resilience in Development. New York: Guilford.",
+          "Ellis, A. (1962). Reason and Emotion in Psychotherapy. New York: Lyle Stuart.",
+          "Dweck, C. S. (2006). Mindset: The New Psychology of Success. New York: Random House."
+        ],
+        "differenzierung": {
+          "leichter": "Nur Aufgaben 2 und 3; die Leitung nennt drei Rückschläge zur Auswahl.",
+          "schwerer": "Einen tragenden Gedanken mit den sechs Regeln aus Einheit 18 prüfen und verbessern."
+        },
+        "impulse": [
+          "Ist Glück am Ende des Films dasselbe wie Geld?",
+          "Wer hat Chris geholfen – und hätte er es allein geschafft?"
+        ],
+        "tipps": [
+          "Tragende Gedanken sollen so klingen, dass Chris sie glauben könnte – nicht wie ein Kalenderspruch."
+        ],
+        "achtung": "Der Film zeigt Armut, Wohnungslosigkeit und die Trennung der Eltern. Alle Aufgaben beziehen sich auf die Filmfigur; niemand wird nach eigenen Erfahrungen gefragt. Wirkt jemand betroffen, ein Einzelgespräch anbieten.",
+        "material": "Klemmbretter, Stifte"
+      }
+    }
+  },
+  {
+    "id": "skills-doku-stoppbogen",
+    "bereich": "skills",
+    "thema": "digital",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "20 Min., verteilt auf vier Stopps",
+    "eldib": [
+      "KOG-51",
+      "KOG-58",
+      "V-29"
+    ],
+    "schlagworte": [
+      "Soziale Medien",
+      "Doku",
+      "Algorithmus",
+      "Meinungsblase",
+      "Aufmerksamkeit"
+    ],
+    "bild": "icon:player-pause",
+    "kurs": [
+      "j1-j03"
+    ],
+    "verwandt": [
+      "skills-social-media-check",
+      "mein-handy-und-ich"
+    ],
+    "de": {
+      "titel": "Was macht die App mit mir?",
+      "untertitel": "Stopp-Bogen zur Doku „Das Dilemma mit den sozialen Medien“",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Die Doku mischt Interviews mit Menschen, die Apps mitentwickelt haben, und gespielte Szenen. Achte auch darauf, wo sie selbst mit Musik und Spielszenen Stimmung macht."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Stopp 1: Was weiß deine meistgenutzte App über dich?",
+          "hinweis": "Links, was du bewusst angibst. Rechts, was sie nebenbei sammelt.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "feld",
+              "label": "Das gebe ich bewusst an",
+              "beispiel": "Name, Geburtstag, meine Fotos",
+              "hoehe": 3
+            }
+          ],
+          "rechts": [
+            {
+              "art": "feld",
+              "label": "Das sammelt sie nebenbei",
+              "beispiel": "wo ich bin, wann ich online bin, wie lange ich bei einem Video bleibe",
+              "hoehe": 3
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Stopp 2: Welche Tricks halten dich in einer App? Kreuze an, was bei dir wirkt.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "items": [
+            "endloses Scrollen ohne Ende der Seite",
+            "Videos, die von selbst weiterlaufen",
+            "Serien oder Flammen, die ich nicht verlieren will",
+            "Benachrichtigungen mit Namen von Freunden",
+            "Likes, die nach und nach eintrudeln",
+            "Beiträge, die nach 24 Stunden verschwinden"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Stopp 3: So entsteht eine Meinungsblase."
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 0,
+          "items": [
+            {
+              "titel": "Ich schaue länger hin",
+              "text": "Ein Video über ein Thema fesselt mich."
+            },
+            {
+              "titel": "Die App merkt es",
+              "text": "Sie zeigt mir mehr davon."
+            },
+            {
+              "titel": "Mehr vom Gleichen",
+              "text": "Andere Themen tauchen seltener auf."
+            },
+            {
+              "titel": "Die Blase ist fertig",
+              "text": "Es wirkt, als sähen alle die Welt wie ich."
+            }
+          ]
+        },
+        {
+          "art": "frage",
+          "text": "Was kannst du tun, damit deine Blase nicht zu eng wird?",
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Stopp 4: Dein nächstes Handy-Experiment für eine Woche – als Wenn-dann-Satz.",
+          "hinweis": "Was ist aus deinem Plan aus Einheit 27 geworden? Im nächsten Check-in erzählst du, wie es lief.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Wenn ich abends ins Bett gehe,",
+              "dann": "lege ich das Handy zum Laden in die Küche."
+            }
+          ]
+        },
+        {
+          "art": "notfall",
+          "text": "Hilfe bei Problemen im Netz",
+          "eintraege": [
+            {
+              "name": "BEE SECURE Helpline (anonym, kostenlos): Cybermobbing, Erpressung mit Bildern",
+              "nummer": "8002 1234"
+            },
+            {
+              "name": "Kanner- a Jugendtelefon (anonym, kostenlos)",
+              "nummer": "116 111"
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen prüfen an vier Stopps der Doku, wie Apps Daten sammeln, Aufmerksamkeit binden und Meinungsblasen bauen, und planen ein Handy-Experiment für eine Woche.",
+        "ablauf": [
+          "Vor Ausschnitt 1: Sehauftrag – „Wo informiert die Doku, wo macht sie Stimmung?“",
+          "Stopps 1 und 2 (je 5 Min.): allein ausfüllen, dann Beispiele im Plenum oder zu zweit.",
+          "Nach Ausschnitt 3 eine anonyme Zettelrunde, bewusst nicht auf dem Bogen; Stopp 3 nach dem Blasen-Spiel.",
+          "Stopp 4 (5 Min.): kurz auf den Plan aus Einheit 27 schauen, dann ein neues Experiment als Wenn-dann-Satz; im nächsten Check-in nachfragen."
+        ],
+        "hintergrund": "Die Doku ist anschaulich, aber zugespitzt. Große Auswertungen finden nur einen schwachen Zusammenhang zwischen digitaler Mediennutzung und dem Wohlbefinden Jugendlicher (Orben & Przybylski, 2019). Vergleiche mit bearbeiteten Bildern können Stimmung und Körperbild aber beeinträchtigen (Fardouly et al., 2015). Begleitung und eigene Regeln wirken besser als Verbote (Livingstone & Blum-Ross, 2020) – deshalb endet der Bogen mit einem selbst gewählten Experiment.",
+        "quellen": [
+          "Orben, A. & Przybylski, A. K. (2019). The association between adolescent well-being and digital technology use. Nature Human Behaviour, 3(2), 173–182.",
+          "Fardouly, J., Diedrichs, P. C., Vartanian, L. R. & Halliwell, E. (2015). Social comparisons on social media: The impact of Facebook on young women’s body image concerns and mood. Body Image, 13, 38–45.",
+          "Livingstone, S. & Blum-Ross, A. (2020). Parenting for a Digital Future. New York: Oxford University Press."
+        ],
+        "differenzierung": {
+          "leichter": "Stopps 1 und 2 mündlich; nur das Handy-Experiment wird aufgeschrieben.",
+          "schwerer": "Prüfen, wie die Doku selbst Stimmung macht: Wer kommt zu Wort, wer nicht, welche Musik läuft wann?"
+        },
+        "impulse": [
+          "Wer verdient Geld daran, dass ihr länger bleibt?",
+          "Was würdet ihr an eurer Lieblings-App behalten, wenn ihr sie neu erfinden dürftet?"
+        ],
+        "tipps": [
+          "Handys bleiben beim Ausfüllen in der Tasche; die Tricks kennen alle auswendig."
+        ],
+        "achtung": "Niemand muss Handy oder Accounts zeigen. Den Abschnitt zu Selbstverletzung und Suizid vorher sichten, bei belasteten Gruppen weglassen. Bei Hinweisen auf Cybermobbing ein Einzelgespräch führen und die Leitung (Responsable) informieren.",
+        "material": "Stifte, Themenkarten"
+      }
+    }
+  },
+  {
+    "id": "skills-achtsamkeits-parcours",
+    "bereich": "skills",
+    "thema": "regulieren",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "60–70 Min. (Parcours)",
+    "eldib": [
+      "V-1",
+      "V-3",
+      "V-24",
+      "K-26"
+    ],
+    "schlagworte": [
+      "Naturtag",
+      "Achtsamkeit",
+      "Sinne",
+      "Parcours",
+      "Draußen"
+    ],
+    "bild": "icon:trees",
+    "kurs": [
+      "j1-j04"
+    ],
+    "de": {
+      "titel": "Achtsamkeits-Parcours",
+      "untertitel": "Sechs Stationen draußen – an jeder steht ein Sinn im Mittelpunkt",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "An jeder Station liest einer von euch die Karte vor. Dann macht ihr die Übung, ohne zu reden. Gesprochen wird erst danach."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Stationskarten: einmal ausschneiden und an den Stationen auslegen.",
+          "hinweis": "Für die Leitung: in Klarsichthüllen stecken und mit einem Stein beschweren.",
+          "symbole": [
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 2,
+          "karten": [
+            {
+              "bild": "icon:shoe",
+              "titel": "1 · Barfußpfad",
+              "text": "Schuhe aus. Geht langsam über Gras, Moos, Erde und Sand. Wo ist es kalt, weich, pieksig? Wer mag, schließt die Augen und lässt sich am Arm führen."
+            },
+            {
+              "bild": "icon:ear",
+              "titel": "2 · Klanglandkarte",
+              "text": "Setzt euch, Augen zu, zwei Minuten nur lauschen. Dann zeichnet jede Person ein Kreuz für sich und trägt alle Geräusche drumherum ein: nah, fern, links, rechts."
+            },
+            {
+              "bild": "icon:dice-5",
+              "titel": "3 · Sinneswürfel",
+              "text": "Würfelt: 1 sehen, 2 hören, 3 riechen, 4 mit den Händen tasten, 5 mit den Füßen spüren, 6 freie Wahl. Drei Minuten nur dieser Sinn, dann noch einmal würfeln."
+            },
+            {
+              "bild": "icon:tree",
+              "titel": "4 · Ein Baum aus der Nähe",
+              "text": "Sucht euch einen Baum. Wie fühlt sich die Rinde an, wie riecht sie? Welche Farben, welche kleinen Tiere entdeckt ihr, wenn ihr ganz nah herangeht?"
+            },
+            {
+              "bild": "icon:camera",
+              "titel": "5 · Ruhe-Foto",
+              "text": "Macht mit der Kamera der Gruppe ein Foto, das zeigt, wie Ruhe für euch aussieht. Keine Menschen im Bild. Erst lange schauen, dann einmal abdrücken."
+            },
+            {
+              "bild": "icon:cloud",
+              "titel": "6 · Wolken oder Blätterdach",
+              "text": "Legt euch auf die Decke und schaut drei Minuten nur nach oben. Was bewegt sich, was verändert sich? Die Augen bleiben offen."
+            }
+          ]
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wie ruhig bist du vor dem Start – und am Ende des Tages?",
+          "hinweis": "Kreuze jeweils eine Zahl an: 0 heißt gar nicht ruhig, 10 heißt ganz ruhig.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "skala",
+          "frage": "Vor dem Parcours",
+          "von": "gar nicht ruhig",
+          "bis": "ganz ruhig",
+          "stufen": 11
+        },
+        {
+          "art": "skala",
+          "frage": "Am Ende des Tages",
+          "von": "gar nicht ruhig",
+          "bis": "ganz ruhig",
+          "stufen": 11
+        },
+        {
+          "art": "aufgabe",
+          "text": "Nach jeder Station: Was hast du wahrgenommen? Ein Stichwort reicht.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Station",
+            "Das habe ich wahrgenommen",
+            "Das hat mich überrascht"
+          ],
+          "breiten": [
+            0.8,
+            2.4,
+            2.4
+          ],
+          "zeilen": 6,
+          "nummern": 1,
+          "beispiel": [
+            "z. B.",
+            "Das Moos war wärmer als das Gras.",
+            "Wie viele Vögel ich höre, wenn ich still bin."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Welche Übung nimmst du mit in den Alltag? Schreib einen Wenn-dann-Plan.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Wenn mein Kopf nach der Schule voll ist,",
+              "dann": "setze ich mich zwei Minuten auf eine Bank und zähle alle Geräusche."
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Warum draußen?",
+          "text": "Natur zieht die Aufmerksamkeit sanft an, ohne sie anzustrengen. So kann sich der Kopf erholen – viele merken das schon nach zehn Minuten."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen richten an sechs Stationen die Aufmerksamkeit auf jeweils einen Sinn, vergleichen ihre Ruhe vor und nach dem Parcours und wählen eine Übung für den Alltag.",
+        "ablauf": [
+          "Vorbereitung: Seite 1 einmal drucken, Karten ausschneiden und in Klarsichthüllen auslegen; Seite 2 für jede Person.",
+          "Start (5 Min.): erste Ruhe-Zahl, Paare bilden, Startstationen verteilen.",
+          "Parcours (60 Min.): etwa neun Minuten pro Station, Wechsel auf ein Signal, danach je eine Zeile in der Tabelle.",
+          "Am Ende des Tages: zweite Ruhe-Zahl und Wenn-dann-Plan. „Welche Station geht auch im Pausenhof?“"
+        ],
+        "hintergrund": "Nach der Aufmerksamkeitserholungstheorie zieht Natur die Aufmerksamkeit sanft an, ohne sie zu beanspruchen; die willentliche Konzentration kann sich dabei erholen (Kaplan, 1995). Achtsamkeit heißt, den Moment absichtlich und ohne Bewertung wahrzunehmen (Kabat-Zinn, 1990); einzelne Sinne nacheinander in den Mittelpunkt zu stellen, macht das greifbar. Schulische Achtsamkeitsprogramme zeigen positive Effekte, besonders auf Konzentration und Stressbewältigung (Zenner et al., 2014). Die beiden Ruhe-Zahlen machen die Wirkung für die Jugendlichen selbst sichtbar.",
+        "quellen": [
+          "Kaplan, S. (1995). The restorative benefits of nature: Toward an integrative framework. Journal of Environmental Psychology, 15(3), 169–182.",
+          "Kabat-Zinn, J. (1990). Full Catastrophe Living. New York: Delacorte.",
+          "Zenner, C., Herrnleben-Kurz, S. & Walach, H. (2014). Mindfulness-based interventions in schools – a systematic review and meta-analysis. Frontiers in Psychology, 5, 603."
+        ],
+        "differenzierung": {
+          "leichter": "Nur vier Stationen; die Tabelle mündlich statt schriftlich.",
+          "schwerer": "An einer Station die Übung für die ganze Gruppe selbst anleiten."
+        },
+        "impulse": [
+          "An welcher Station war es am schwersten, still zu bleiben?",
+          "Wo findest du im Alltag einen Ort für so eine Übung?"
+        ],
+        "tipps": [
+          "Bei Regen die Liegestation streichen: unter einem Baum Tropfen zählen und den Geruch nasser Erde beschreiben."
+        ],
+        "achtung": "Barfußgehen, Augenschließen und Liegen sind freiwillig. Die Barfußstrecke vorher prüfen, Allergien und Notfallmedikamente klären, nach dem Tag auf Zecken absuchen lassen. Fotos zeigen nur Natur.",
+        "material": "Klarsichthüllen, Klemmbretter, Stifte, Würfel, Decken, Kamera der Einrichtung"
+      }
+    }
+  },
+  {
+    "id": "skills-unser-stueck",
+    "bereich": "skills",
+    "thema": "schwierig",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "gruppe"
+    ],
+    "dauer": "55 Min. Planung, dazu Proben",
+    "eldib": [
+      "SOZ-18",
+      "SOZ-38",
+      "K-23"
+    ],
+    "schlagworte": [
+      "Theater",
+      "Video",
+      "Rollenspiel",
+      "Zivilcourage",
+      "Gruppenprojekt"
+    ],
+    "bild": "icon:masks-theater",
+    "kurs": [
+      "j1-j05"
+    ],
+    "de": {
+      "titel": "Unser Stück",
+      "untertitel": "Szenenplan für ein Theaterstück oder Video zu einem Thema aus dem Kurs",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Legt Thema und Botschaft fest.",
+          "hinweis": "Die Botschaft passt in einen Satz. Jede Szene muss zu ihr passen.",
+          "symbole": [
+            "gruppe",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Unser Thema: …",
+            "Unsere Botschaft in einem Satz: …",
+            "Nach dem Stück soll das Publikum …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Plant eure Szenen: ein Feld pro Szene. Zeichnet Strichfiguren oder schreibt Stichworte, darunter den wichtigsten Satz.",
+          "hinweis": "Vier bis sechs Szenen reichen.",
+          "symbole": [
+            "malen",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "comic",
+          "spalten": 3,
+          "felder": [
+            {
+              "leer": true,
+              "untertitel": ""
+            },
+            {
+              "leer": true,
+              "untertitel": ""
+            },
+            {
+              "leer": true,
+              "untertitel": ""
+            },
+            {
+              "leer": true,
+              "untertitel": ""
+            },
+            {
+              "leer": true,
+              "untertitel": ""
+            },
+            {
+              "leer": true,
+              "untertitel": ""
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Verteilt die Aufgaben – vor und hinter der Bühne oder Kamera.",
+          "hinweis": "Regie, Kamera, Ton, Requisite und Erzählstimme sind genauso wichtig wie die Rollen."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Rolle oder Aufgabe",
+            "Was will die Figur? Was ist zu tun?",
+            "Wer?"
+          ],
+          "breiten": [
+            1.6,
+            3,
+            1.1
+          ],
+          "zeilen": 5,
+          "beispiel": [
+            "Freundin von Ana",
+            "Sie will dazugehören – und traut sich am Ende, Stopp zu sagen.",
+            "Léa"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Unsere Abmachungen fürs Spielen und Filmen: Kreuzt an und ergänzt.",
+          "symbole": [
+            "gruppe",
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 1,
+          "frei": 1,
+          "items": [
+            "Niemand spielt sich selbst oder eine echte Person aus der Schule.",
+            "Wer eine schwere Rolle hat, darf sie jederzeit abgeben.",
+            "Gewalt wird nur angedeutet – in Zeitlupe oder als Standbild.",
+            "Berührungen nur nach Absprache. Stopp heißt Stopp.",
+            "Aufnahmen bleiben in der Einrichtung und werden nicht geteilt.",
+            "Nach dem Spielen legen wir die Rollen bewusst ab."
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "So geht Stopp-Theater",
+          "text": "Nach der Aufführung wird eine Szene noch einmal gespielt. Wer im Publikum „Stopp!“ ruft, schlägt vor, was eine Figur anders machen könnte – oder spielt es gleich selbst. Ersetzt werden die Zuschauenden und die Freunde in der Szene, nie die Person, die angegriffen wird."
+        },
+        {
+          "art": "frage",
+          "text": "Nach der Aufführung: Was ist beim Publikum angekommen – und woran habt ihr das gemerkt?",
+          "linien": 3
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Gruppe plant ein kurzes Stück oder Video: Botschaft, vier bis sechs Szenen, Aufgaben vor und hinter der Bühne und Abmachungen, die das Spielen sicher machen.",
+        "ablauf": [
+          "Termin 1 (25 Min.): Thema wählen und die Botschaft in einem Satz festhalten (Aufgabe 1), zusätzlich groß auf ein Plakat.",
+          "Termin 1 (30 Min.): Szenen skizzieren (Aufgabe 2), Aufgaben verteilen (Aufgabe 3), jede Szene grob anspielen.",
+          "Vor dem ersten Spielen: die Abmachungen gemeinsam ankreuzen und ergänzen (Aufgabe 4).",
+          "Termin 2: Proben, Aufführung oder Dreh, dann Stopp-Theater und die Schlussfrage."
+        ],
+        "hintergrund": "Wer ein Verhalten selbst spielt und damit Erfolg hat, erlebt sich als wirksam; wer zuschaut, lernt am Modell (Bandura, 1977). Programme zum sozial-emotionalen Lernen wirken besonders mit aktiven Übungsformen (Durlak et al., 2011). Beim Thema Mobbing lohnt der Blick auf die Zuschauenden, denn Mobbing ist ein Gruppenprozess mit verteilten Rollen (Salmivalli et al., 1996). Wer belastende Rollen freiwillig übernimmt und am Ende bewusst ablegt, bleibt nicht an der Figur hängen.",
+        "quellen": [
+          "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
+          "Durlak, J. A., Weissberg, R. P., Dymnicki, A. B., Taylor, R. D. & Schellinger, K. B. (2011). The impact of enhancing students’ social and emotional learning: A meta-analysis of school-based universal interventions. Child Development, 82(1), 405–432.",
+          "Salmivalli, C., Lagerspetz, K., Björkqvist, K., Österman, K. & Kaukiainen, A. (1996). Bullying as a group process: Participant roles and their relations to social status within the group. Aggressive Behavior, 22(1), 1–15."
+        ],
+        "differenzierung": {
+          "leichter": "Statt eines Stücks drei Standbilder: vorher – der Moment der Entscheidung – nachher.",
+          "schwerer": "Eine Szene zweimal zeigen: wie es oft läuft, und mit einem Skill aus dem Kurs."
+        },
+        "impulse": [
+          "Welche Szene muss hinein, damit man die Botschaft versteht?",
+          "Wer im Publikum soll sich angesprochen fühlen?"
+        ],
+        "tipps": [
+          "Die Aufgaben hinter der Kamera ausdrücklich gleich wichtig nennen – so finden auch Zurückhaltende ihren Platz."
+        ],
+        "achtung": "Keine echten Vorfälle oder Personen nachspielen. Wer selbst Mobbing erlebt, wird nicht in die Rolle der Betroffenen gedrängt. Filmen nur mit Einverständnis, auf Geräten der Einrichtung; nichts hochladen.",
+        "material": "Szenenplan in A3, Stifte, Plakat"
+      }
+    }
+  },
+  {
+    "id": "skills-neu-in-der-gruppe",
+    "bereich": "skills",
+    "thema": "ankommen",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "20 Min., verteilt über die Einheit",
+    "eldib": [
+      "SOZ-27",
+      "SOZ-15",
+      "SOZ-26",
+      "SOZ-29"
+    ],
+    "schlagworte": [
+      "Neu in der Gruppe",
+      "Patenschaft",
+      "Rituale",
+      "Ankommen",
+      "Gruppenvertrag"
+    ],
+    "bild": "icon:door-enter",
+    "kurs": [
+      "j1-j07"
+    ],
+    "verwandt": [
+      "skills-gruppenvertrag",
+      "skills-pass"
+    ],
+    "de": {
+      "titel": "Willkommen in der Gruppe",
+      "untertitel": "Für dich und deine Patin oder deinen Paten: So läuft es hier",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Du kommst in eine Gruppe, die sich schon kennt. Das ist am Anfang ungewohnt – für dich und für die anderen. Deine Patin oder dein Pate geht das Blatt mit dir durch."
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "So läuft eine Einheit",
+          "punkte": [
+            "Check-in: ein Wort am Gefühlsrad, später auch die Anspannung von 0 bis 100",
+            "kurzer Rückblick auf das letzte Mal, dann das Thema von heute",
+            "eine Übung, oft mit einem Blatt – danach Pause mit Imbiss",
+            "etwas Aktives: Bewegung, Spiel, oft draußen",
+            "ein Skill zum Runterkommen",
+            "Réckbléck: ein Satz in den Skills-Pass, dafür gibt es einen Stempel"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Die Gruppe erklärt dir ihre Rituale. Hake ab, was du verstanden hast.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "items": [
+            "das Gefühlsrad",
+            "die Anspannung von 0 bis 100",
+            "der Skills-Pass",
+            "der Réckbléck",
+            "das Glas der Bedürfnisse",
+            "der Baum der Stärke",
+            "unser Gruppenvertrag",
+            "„Weiter“ ist immer erlaubt."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Unsere drei wichtigsten Regeln – in deinen Worten.",
+          "hinweis": "Deine Patin oder dein Pate erklärt dir, wie die Regeln im Alltag aussehen.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Nr.",
+            "Regel",
+            "So sieht das bei uns aus"
+          ],
+          "breiten": [
+            0.45,
+            2.3,
+            2.6
+          ],
+          "zeilen": 3,
+          "nummern": 1,
+          "beispiel": [
+            "z. B.",
+            "Was hier erzählt wird, bleibt hier.",
+            "Wir erzählen draußen nicht weiter, wer was gesagt hat."
+          ]
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was möchtest du wissen? Und was dürfen die anderen über dich wissen?",
+          "hinweis": "Ein Hobby oder dein Lieblingsessen reicht völlig. Warum du hier bist, musst du nicht erzählen.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "feld",
+              "label": "Meine Fragen an die Gruppe",
+              "hoehe": 4
+            }
+          ],
+          "rechts": [
+            {
+              "art": "feld",
+              "label": "Das dürfen die anderen über mich wissen",
+              "hoehe": 4
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wie gut bist du angekommen? Kreuze heute an – und noch einmal in drei Wochen.",
+          "hinweis": "Deine Patin oder dein Pate fragt dann nach.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "skala",
+          "frage": "Heute",
+          "von": "noch ganz fremd",
+          "bis": "schon zu Hause",
+          "stufen": 11
+        },
+        {
+          "art": "skala",
+          "frage": "In drei Wochen",
+          "von": "noch ganz fremd",
+          "bis": "schon zu Hause",
+          "stufen": 11
+        },
+        {
+          "art": "vertrag",
+          "titel": "Unsere Patenschaft",
+          "text": "___ ist in den ersten Wochen meine Patin oder mein Pate. Wir sitzen beim Imbiss zusammen, und ich kann alles fragen. Am ___ schauen wir, ob ich die Patenschaft noch brauche.",
+          "unterschriften": [
+            "Neu in der Gruppe",
+            "Patin oder Pate"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Du entscheidest, was du teilst.",
+          "text": "Niemand muss erzählen, warum er hier ist. Das gilt für dich genauso wie für alle anderen."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die neue Person lernt Ablauf, Rituale und Regeln der Gruppe kennen, ohne etwas Persönliches preisgeben zu müssen, und bekommt eine Patin oder einen Paten als feste Ansprechperson.",
+        "ablauf": [
+          "Vor der Einheit (10 Min.): das Blatt mit der neuen Person anschauen, den Ablauf erklären, erste Fragen sammeln.",
+          "In der Einheit erklärt die Gruppe ihre Rituale; die neue Person hakt ab (Aufgabe 1).",
+          "Nach dem Gruppenvertrag: die drei wichtigsten Regeln mit der Patin oder dem Paten in eigenen Worten notieren (Aufgabe 2).",
+          "In der Pause: Aufgabe 3 zu zweit; vorgelesen wird nur, was die neue Person teilen möchte.",
+          "Zum Schluss Aufgabe 4 und die Patenschaft; nach drei Wochen die zweite Skala gemeinsam ausfüllen."
+        ],
+        "hintergrund": "Ein neues Mitglied verändert die Gruppe: Nach Tuckman (1965) entwickeln Gruppen ihre Arbeitsfähigkeit über Phasen des Kennenlernens, der Reibung und der Normbildung, und ein Neuzugang bringt Rollen und Regeln erfahrungsgemäß wieder in Bewegung. Zugehörigkeit ist ein psychologisches Grundbedürfnis (Deci & Ryan, 2000); eine feste Ansprechperson unter Gleichaltrigen erleichtert das Ankommen. Das Blatt trennt bewusst, was die neue Person wissen möchte, von dem, was sie über sich preisgibt: Sie bestimmt das Tempo.",
+        "quellen": [
+          "Tuckman, B. W. (1965). Developmental sequence in small groups. Psychological Bulletin, 63(6), 384–399.",
+          "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268."
+        ],
+        "differenzierung": {
+          "leichter": "Die Patin oder der Pate schreibt; die neue Person diktiert oder zeigt nur.",
+          "schwerer": "Nach zwei Wochen ergänzt die neue Person eine Regel oder einen Brauch, der ihr in der Gruppe aufgefallen ist."
+        },
+        "impulse": [
+          "Was hat euch selbst am Anfang geholfen, hier anzukommen?",
+          "Woran merkt jemand Neues, dass er hier willkommen ist?"
+        ],
+        "tipps": [
+          "Als Patin oder Pate eignet sich nicht unbedingt die redegewandteste Person, sondern eine verlässliche.",
+          "Das Blatt nach drei, vier Wochen noch einmal mit beiden anschauen."
+        ],
+        "achtung": "Nicht nach dem Grund für den Wechsel fragen und auch die Gruppe nicht fragen lassen. Gibt es Hinweise auf Belastungen oder eine Gefährdung, nicht in der Gruppe vertiefen, sondern ein Einzelgespräch führen und die zuständige Leitung (Responsable) informieren.",
+        "material": "Stifte, Klemmbrett; Skills-Pass für die neue Person"
+      }
+    }
+  },
+  {
+    "id": "skills-was-mir-jetzt-hilft",
+    "bereich": "skills",
+    "thema": "schwierig",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln"
+    ],
+    "dauer": "15 Min.",
+    "eldib": [
+      "K-26",
+      "V-21",
+      "SOZ-26",
+      "V-6"
+    ],
+    "schlagworte": [
+      "Belastendes Ereignis",
+      "Stabilisieren",
+      "Skills",
+      "Hilfe holen",
+      "Trauer"
+    ],
+    "bild": "icon:lifebuoy",
+    "kurs": [
+      "j1-j08"
+    ],
+    "verwandt": [
+      "wer-ist-fuer-mich-da",
+      "wenn-es-laenger-schwer-ist"
+    ],
+    "de": {
+      "titel": "Was mir jetzt hilft",
+      "untertitel": "Nach etwas Schwerem: dein Plan für die nächsten Tage",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Nach etwas Schwerem reagiert jeder anders",
+          "text": "Das sind normale Reaktionen auf etwas, das nicht normal ist. Meist werden sie nach einigen Tagen oder Wochen schwächer.",
+          "punkte": [
+            "immer wieder daran denken müssen",
+            "schlecht einschlafen oder nachts aufwachen",
+            "gereizt sein oder schnell weinen",
+            "sich wie betäubt fühlen, gar nichts spüren",
+            "lachen und sich danach schlecht fühlen",
+            "sich Sorgen um andere machen"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was hilft dir, wenn es dich wieder einholt? Kreuze an und ergänze.",
+          "hinweis": "Nimm, was dir schon früher geholfen hat. In deinem Skills-Koffer findest du weitere Ideen.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "frei": 2,
+          "items": [
+            "mich bewegen: gehen, Rad fahren, Sport",
+            "5-4-3-2-1: sehen, hören, spüren",
+            "länger aus- als einatmen",
+            "kaltes Wasser über die Hände",
+            "Musik, die mir guttut",
+            "etwas mit den Händen tun: malen, kneten, bauen",
+            "mit jemandem reden – oder einfach zusammen sein",
+            "etwas Normales tun: kochen, zocken, Hausaufgaben",
+            "aufschreiben, was mir durch den Kopf geht",
+            "Nachrichten und Videos dazu eine Weile meiden"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Plane einen schwierigen Moment der nächsten Tage.",
+          "hinweis": "Zum Beispiel den Abend im Bett, den Weg zur Schule oder den Moment, in dem alle darüber reden.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Wenn mir das Ganze abends im Bett wieder durch den Kopf geht,",
+              "dann": "höre ich meine Ruhe-Playlist und atme vier ein, sechs aus."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wer ist für dich da? Trag mindestens eine erwachsene Person ein.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Person",
+            "Dafür ist sie gut",
+            "So erreiche ich sie"
+          ],
+          "breiten": [
+            1.5,
+            2.3,
+            1.7
+          ],
+          "zeilen": 3,
+          "beispiel": [
+            "mein großer Bruder",
+            "mit mir rausgehen, wenn ich nicht reden will",
+            "anrufen oder klopfen"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "achtung",
+          "titel": "Wann du dir mehr Hilfe holst",
+          "text": "Sprich mit einer erwachsenen Person deines Vertrauens oder mit dem SePAS, oder ruf eine der Nummern unten an, wenn …",
+          "punkte": [
+            "es nach einigen Wochen nicht besser wird,",
+            "du kaum noch schläfst, isst oder zur Schule gehen kannst,",
+            "du denkst, nicht mehr leben zu wollen – dann sofort, noch heute."
+          ]
+        },
+        {
+          "art": "notfall"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen erfahren, dass ihre Reaktionen auf ein belastendes Ereignis normal sind, wählen Skills für schwierige Momente der nächsten Tage und tragen erreichbare Ansprechpersonen ein.",
+        "ablauf": [
+          "Nach dem stillen Gespräch den Kasten zu den normalen Reaktionen gemeinsam lesen (3 Min.): „Vielleicht erkennt ihr euch in einem Punkt wieder, vielleicht in keinem. Beides ist normal.“",
+          "Aufgabe 1 allein (5 Min.); wer möchte, probiert einen Skill gleich aus.",
+          "Aufgaben 2 und 3 allein (7 Min.); die Leitung geht herum und achtet darauf, dass jede Person eine erreichbare erwachsene Person einträgt.",
+          "Die Hilfenummern zeigen; wer mag, speichert sie im Handy. Das Blatt geht mit nach Hause und wird nicht eingesammelt."
+        ],
+        "hintergrund": "Nach belastenden Ereignissen helfen vor allem Sicherheit, Beruhigung, Verbundenheit, das Gefühl, selbst etwas tun zu können, und Hoffnung. Die meisten Kinder und Jugendlichen erholen sich mit Hilfe gewöhnlicher Schutzfaktoren wie verlässlicher Beziehungen und Routinen (Masten, 2014). Wie sehr ein Ereignis belastet, hängt auch davon ab, welche Bewältigungsmöglichkeiten jemand für sich sieht (Lazarus & Folkman, 1984). Das Blatt macht solche Möglichkeiten konkret: Skills zur Stresstoleranz aus dem Kurs (Rathus & Miller, 2015), ein Plan für absehbar schwierige Momente und Menschen, die erreichbar sind.",
+        "quellen": [
+          "Masten, A. S. (2014). Ordinary Magic: Resilience in Development. New York: Guilford.",
+          "Lazarus, R. S. & Folkman, S. (1984). Stress, Appraisal, and Coping. New York: Springer.",
+          "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Nur Aufgabe 1 und die Tabelle; die Leitung hilft beim Eintragen.",
+          "schwerer": "Zusätzlich überlegen, was man für eine Freundin oder einen Freund tun kann, der es gerade schwerer hat – und wann man dafür Erwachsene dazuholt."
+        },
+        "impulse": [
+          "Was hat dir früher schon einmal geholfen, als etwas Schweres passiert ist?",
+          "Wer würde merken, wenn es dir nicht gut geht?"
+        ],
+        "tipps": [
+          "Die Skills vor dem Ausfüllen kurz ausprobieren lassen; angekreuzt wird, was sich bewährt hat, nicht was gut klingt."
+        ],
+        "achtung": "Das Blatt ersetzt keine Krisenintervention. Äußert jemand Gedanken, nicht mehr leben zu wollen, oder gibt es Hinweise auf Gewalt oder Gefährdung, sofort nach dem internen Schutzkonzept handeln, die Person nicht allein lassen und die zuständige Leitung (Responsable) informieren.",
+        "material": "Stifte; Liste der Anlaufstellen im Haus"
+      }
+    }
+  },
+  {
+    "id": "skills-pruefungs-countdown",
+    "bereich": "skills",
+    "thema": "regulieren",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln"
+    ],
+    "dauer": "30 Min., verteilt über die Einheit",
+    "eldib": [
+      "V-21",
+      "V-25",
+      "V-32",
+      "K-26"
+    ],
+    "schlagworte": [
+      "Prüfungen",
+      "Prüfungsangst",
+      "Lernplan",
+      "Blackout",
+      "Skills"
+    ],
+    "bild": "icon:hourglass",
+    "kurs": [
+      "j1-j09"
+    ],
+    "verwandt": [
+      "pruefungsangst",
+      "clever-lernen"
+    ],
+    "de": {
+      "titel": "Mein Prüfungs-Countdown",
+      "untertitel": "Vom Lernplan bis zum Blackout-Plan: ruhig durch die nächste Prüfung",
+      "bausteine": [
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Meine Prüfung (Fach und Datum): …"
+          ],
+          "linien": 0
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wie wirkt Anspannung bei dir? Trag für jeden Bereich einen Skill ein.",
+          "hinweis": "Die Skala kennst du aus dem Kurs: 0 ist völlig ruhig, 100 ist das Maximum.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "thermometer",
+          "linien": 1,
+          "stufen": [
+            {
+              "titel": "0–30: klar im Kopf",
+              "text": "Manchmal fehlt nur der Anstoß zum Anfangen. Das hilft mir beim Start:"
+            },
+            {
+              "titel": "30–70: wach und angespannt",
+              "text": "Gut zum Lernen, bis die Gedanken eng werden. Das hilft mir dann:"
+            },
+            {
+              "titel": "70–100: Blackout-Gefahr",
+              "text": "Der Kopf ist leer, der Körper übernimmt. Mein Notfall-Skill:"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Plane rückwärts vom Prüfungstag. Jede Lerneinheit beginnt mit einem Selbsttest.",
+          "hinweis": "Mehrere kurze Einheiten an verschiedenen Tagen bringen mehr als ein langer Abend davor.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Tag",
+            "Was ich lerne",
+            "So teste ich mich",
+            "Erledigt"
+          ],
+          "breiten": [
+            1,
+            2,
+            2.4,
+            0.8
+          ],
+          "zeilen": 4,
+          "beispiel": [
+            "Mo, 4 Tage vorher",
+            "Vokabeln Kapitel 3",
+            "Heft zu, 20 Wörter aufschreiben, dann vergleichen",
+            ""
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dein Countdown für die letzten Stunden: Lies die Tipps und schreib in jedes Feld, was du selbst tust.",
+          "symbole": [
+            "lesen",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 2,
+          "items": [
+            {
+              "titel": "Am Abend davor",
+              "text": "Tasche packen, Handy weg, rechtzeitig schlafen."
+            },
+            {
+              "titel": "Am Morgen",
+              "text": "Frühstücken, früh genug losgehen."
+            },
+            {
+              "titel": "Vor der Tür",
+              "text": "Nicht über den Stoff reden, wenn es nervös macht."
+            },
+            {
+              "titel": "In der Prüfung",
+              "text": "Erst alles überfliegen, mit einer leichten Aufgabe beginnen."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Prüfe einen Prüfungsgedanken wie ein Detektiv.",
+          "hinweis": "Ein guter Gegensatz ist realistisch und schaut auf das, was du beeinflussen kannst.",
+          "symbole": [
+            "nachdenken",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Prüfungsgedanke",
+            "Was spricht dagegen?",
+            "Mein hilfreicher Satz"
+          ],
+          "breiten": [
+            1.7,
+            2.2,
+            2.1
+          ],
+          "zeilen": 2,
+          "beispiel": [
+            "„Ich falle sowieso durch.“",
+            "Beim letzten Devoir hatte ich 34 von 60 – und diesmal fange ich früher an.",
+            "„Ich muss nicht alles wissen. Ich zeige, was ich kann.“"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Mein Blackout-Plan für die Prüfung",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Wenn mir bei einer Aufgabe nichts einfällt,",
+              "dann": "atme ich zweimal lange aus, markiere die Aufgabe und mache mit der nächsten weiter."
+            }
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Mein unsichtbarer Skill im Prüfungsraum: …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Nach der Prüfung: Ergänze die Sätze erst, wenn die Prüfung vorbei ist.",
+          "hinweis": "Im Check-in fragen wir, was geholfen hat – nicht nach der Note.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Das sage ich mir, egal wie es gelaufen ist: …",
+            "Geholfen hat mir: …",
+            "Beim nächsten Mal mache ich anders: …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Wenn die Angst zu groß wird",
+          "text": "Kannst du wegen der Prüfungen kaum noch schlafen oder lernen, sprich mit dem SePAS, deiner Klassenlehrerin oder deinem Klassenlehrer – oder ruf das Kanner- a Jugendtelefon an: 116 111, anonym und kostenlos."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen ordnen ihre Prüfungsanspannung auf der Skala aus dem Kurs ein, planen das Lernen rückwärts mit Selbsttests, prüfen einen Prüfungsgedanken und legen einen Blackout-Plan fest.",
+        "ablauf": [
+          "Zu Beginn Fach und Datum eintragen; Aufgabe 1 nach dem Input zur Anspannung (5 Min.).",
+          "Aufgaben 2 und 3 (15 Min.): rückwärts planen bis zu den letzten Stunden; einzeln helfen, große Brocken zu teilen.",
+          "Aufgabe 4 nach der Gedanken-Staffel (5 Min.): einen eigenen Gedanken prüfen.",
+          "Aufgabe 5 nach der Blackout-Probe und den unsichtbaren Skills (5 Min.); Aufgabe 6 erst nach der Prüfung."
+        ],
+        "hintergrund": "Prüfungsangst besteht aus Sorgengedanken und körperlicher Aufregung; vor allem die Sorgen binden Aufmerksamkeit, die dann für die Aufgaben fehlt (Zeidner, 1998). Deshalb verbindet das Blatt Körper-Skills mit dem Prüfen von Gedanken. Für das Lernen empfiehlt eine große Übersichtsarbeit vor allem zwei Methoden: sich selbst testen und verteilt lernen (Dunlosky et al., 2013). Wenn-dann-Pläne werden im entscheidenden Moment leichter abgerufen als gute Vorsätze (Gollwitzer, 1999).",
+        "quellen": [
+          "Zeidner, M. (1998). Test Anxiety: The State of the Art. New York: Plenum.",
+          "Dunlosky, J., Rawson, K. A., Marsh, E. J., Nathan, M. J. & Willingham, D. T. (2013). Improving students’ learning with effective learning techniques. Psychological Science in the Public Interest, 14(1), 4–58.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "differenzierung": {
+          "leichter": "Nur Aufgaben 1 und 5; den Lernplan mit der Leitung für zwei Tage machen.",
+          "schwerer": "Mit dem Toolbox-Blatt „Clever lernen“ einen ausführlichen Wiederholungsplan erstellen."
+        },
+        "impulse": [
+          "Woran merkst du, dass du von 50 auf 80 rutschst?",
+          "Was sagst du dir, wenn eine Prüfung nicht gut gelaufen ist?"
+        ],
+        "tipps": [
+          "Den Blackout-Plan abfotografieren oder als Kärtchen in die Federmappe legen."
+        ],
+        "achtung": "Nicht nach Noten oder Reaktionen der Eltern fragen. Wirkt die Angst über Wochen lähmend, ein Einzelgespräch anbieten und auf SePAS oder Klassenlehrkraft hinweisen; bei Hinweisen auf eine Gefährdung die zuständige Leitung (Responsable) informieren.",
+        "material": "Stifte, Prüfungstermine der Jugendlichen"
+      }
+    }
+  }
+]

@@ -1,0 +1,993 @@
+[
+  {
+    "id": "skills-mehr-als-worte",
+    "bereich": "skills",
+    "thema": "kommunikation",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "15 Min.",
+    "eldib": [
+      "K-21",
+      "K-17",
+      "SOZ-37"
+    ],
+    "schlagworte": [
+      "Körpersprache",
+      "nonverbale Kommunikation",
+      "Chat",
+      "Missverständnisse",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:messages",
+    "kurs": [
+      "j1-e20"
+    ],
+    "de": {
+      "titel": "Mehr als Worte",
+      "untertitel": "Was Gesicht, Stimme und Haltung mitsagen – und was im Chat fehlt",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Wer spricht, sagt mehr als Worte: Gesicht, Stimme und Haltung reden mit. Man kann nicht nicht kommunizieren – auch wer schweigt oder wegschaut, sendet eine Botschaft."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Passen Worte und Körper zusammen? Schreib unter jedes Bild, was der Körper sagt."
+        },
+        {
+          "art": "comic",
+          "spalten": 3,
+          "felder": [
+            {
+              "figuren": [
+                "figur:ben:wuetend:verschraenkt"
+              ],
+              "text": "Ist mir doch egal.",
+              "untertitel": ""
+            },
+            {
+              "figuren": [
+                "figur:jana:traurig:stehen"
+              ],
+              "text": "Alles gut, echt.",
+              "untertitel": ""
+            },
+            {
+              "figuren": [
+                "figur:jana:froh:jubeln"
+              ],
+              "text": "Endlich geschafft.",
+              "untertitel": ""
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Drei Kanäle",
+          "text": "Passen die drei nicht zusammen, glauben die meisten der Stimme und dem Körper.",
+          "punkte": [
+            "Worte: was du sagst.",
+            "Stimme: wie du es sagst – laut oder leise, schnell oder langsam, freundlich oder genervt.",
+            "Körper: Gesicht, Blick, Haltung, Hände, Abstand."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Im Chat fehlen Stimme und Gesicht. Was kann eine Nachricht heißen – und wie kann sie ankommen?",
+          "hinweis": "Nimm diese Nachrichten: „Aha.“ – „Wie du meinst.“ – „Wir müssen reden.“"
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Nachricht",
+            "So kann sie gemeint sein",
+            "So kann sie ankommen"
+          ],
+          "breiten": [
+            1.1,
+            2,
+            2
+          ],
+          "zeilen": 3,
+          "beispiel": [
+            "„ok.“",
+            "Passt, bin einverstanden.",
+            "Die ist sauer auf mich."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wie findest du heraus, was gemeint ist? Ergänze die Sätze."
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 1,
+          "items": [
+            "Wenn ich nicht weiß, wie eine Nachricht gemeint ist, …",
+            "Etwas Wichtiges kläre ich lieber …"
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen unterscheiden Worte, Stimme und Körper als Kanäle einer Nachricht, erkennen Widersprüche zwischen ihnen und entwickeln Strategien gegen Missverständnisse im Chat.",
+        "ablauf": [
+          "Einheit 20, nach dem Plakat (4 Min.): Die Leitung sagt mit trauriger Stimme „Mir geht’s super“. Frage: „Was glaubt ihr mir?“ Dann Aufgabe 1 allein und kurz vergleichen.",
+          "Den Kasten „Drei Kanäle“ gemeinsam lesen und mit den Beispielen vom Plakat verbinden.",
+          "Nach den Emojis (5 Min.): Aufgabe 2 zu zweit. Frage: „Warum lesen wir ein ‚ok.‘ oft schlechter, als es gemeint ist?“",
+          "Aufgabe 3 allein (2 Min.); zwei, drei Sätze vorlesen lassen und als Chat-Regeln an die Tafel schreiben."
+        ],
+        "hintergrund": "Nach Watzlawick et al. (1967) kann man nicht nicht kommunizieren, und jede Nachricht hat einen Inhalts- und einen Beziehungsaspekt; die Beziehung wird vor allem über Stimme, Blick und Haltung vermittelt. Passen Worte und Körper nicht zusammen, entsteht eine widersprüchliche Botschaft, die das Gegenüber deuten muss. Schulz von Thun (1981) zeigt, dass jede Nachricht zugleich etwas über die Sache, die sprechende Person, die Beziehung und einen Wunsch aussagt. Im Chat fehlen Stimme und Körper; Lesende füllen die Lücke mit eigenen Deutungen, die zur Absicht nicht passen müssen. Nachfragen ist deshalb die einfachste Strategie gegen Missverständnisse.",
+        "quellen": [
+          "Watzlawick, P., Beavin, J. H. & Jackson, D. D. (1967). Pragmatics of Human Communication. New York: Norton.",
+          "Schulz von Thun, F. (1981). Miteinander reden 1: Störungen und Klärungen. Reinbek: Rowohlt."
+        ],
+        "differenzierung": {
+          "leichter": "Aufgabe 2 gemeinsam an der Tafel lösen und nur die Spalte „So kann sie ankommen“ schreiben lassen.",
+          "schwerer": "Eine eigene missverständliche Nachricht erfinden und von jemandem deuten lassen: Stimmt die Deutung mit der Absicht überein?"
+        },
+        "impulse": [
+          "Wann habt ihr eine Nachricht ganz anders verstanden, als sie gemeint war?",
+          "Was ändert eine Sprachnachricht im Vergleich zu einer Textnachricht?"
+        ],
+        "tipps": [
+          "Keine echten Chats aus der Klasse zeigen lassen; die Beispiele auf dem Blatt reichen.",
+          "Körpersprache beschreiben, aber nie bewerten – Blickkontakt und Abstand sind kulturell und persönlich verschieden."
+        ],
+        "achtung": "Kommen aktuelle Chat-Konflikte oder Cybermobbing zur Sprache: nicht in der Gruppe auswerten, ein Einzelgespräch anbieten, auf die BEE SECURE Helpline (8002 1234) hinweisen und die zuständige Leitung (Responsable) informieren.",
+        "material": "Blatt je Person, Stifte; Plakat mit drei Spalten"
+      }
+    }
+  },
+  {
+    "id": "skills-ich-botschaften",
+    "bereich": "skills",
+    "thema": "kommunikation",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "20 Min.",
+    "eldib": [
+      "K-26",
+      "K-30",
+      "V-26"
+    ],
+    "schlagworte": [
+      "Ich-Botschaft",
+      "Du-Botschaft",
+      "Konflikte",
+      "Gefühle ausdrücken",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:message-circle",
+    "kurs": [
+      "j1-e21"
+    ],
+    "de": {
+      "titel": "Ich-Botschaften",
+      "untertitel": "Sagen, was ich fühle – ohne anzugreifen",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "„Du nervst immer.“ Solche Du-Botschaften klingen nach Angriff – die andere Person verteidigt sich oder schlägt zurück. Eine Ich-Botschaft sagt, was bei dir passiert und was du dir wünschst. Dann kann die andere Person zuhören, statt sich zu wehren."
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 0,
+          "items": [
+            {
+              "titel": "Ich fühle mich …",
+              "text": "das Gefühl: ein Wort vom Gefühlsrad"
+            },
+            {
+              "titel": "wenn …",
+              "text": "die Situation: wie eine Kamera, ohne „immer“ und „nie“"
+            },
+            {
+              "titel": "weil …",
+              "text": "der Grund: was dir wichtig ist"
+            },
+            {
+              "titel": "Ich wünsche mir …",
+              "text": "der Wunsch: konkret und machbar"
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "So klingt das",
+          "text": "„Ich fühle mich genervt, wenn ich unterbrochen werde, weil ich dann meinen Gedanken verliere. Ich wünsche mir, dass du mich ausreden lässt.“"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Welche Ich-Botschaft gehört zu welcher Du-Botschaft? Verbinde.",
+          "hinweis": "Markiere danach in einer Ich-Botschaft das Gefühl, die Situation, den Grund und den Wunsch."
+        },
+        {
+          "art": "zuordnen",
+          "titel": [
+            "Du-Botschaft",
+            "Ich-Botschaft"
+          ],
+          "links": [
+            "„Du nervst immer.“",
+            "„Du hörst mir nie zu.“",
+            "„Du nimmst immer meine Sachen.“",
+            "„Du bist so unfair.“"
+          ],
+          "rechts": [
+            "„Ich ärgere mich, wenn mein Ladekabel weg ist, weil ich es abends brauche. Frag bitte vorher.“",
+            "„Ich bin sauer, wenn nur ich aufräume, weil wir abwechseln wollten. Ich wünsche mir einen Plan.“",
+            "„Ich bin genervt, wenn du mich unterbrichst, weil ich den Faden verliere. Lass mich bitte ausreden.“",
+            "„Ich bin enttäuscht, wenn du beim Erzählen aufs Handy schaust, weil mir das wichtig ist. Leg es bitte kurz weg.“"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "achtung",
+          "titel": "Vorsicht, verkleidete Du-Botschaft",
+          "text": "„Ich finde, du bist egoistisch“ oder „Ich fühle mich, als wärst du total unfair“ beginnen mit „Ich“ – und greifen trotzdem an. Eine echte Ich-Botschaft beschreibt dein Gefühl, nicht die andere Person."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Jetzt du: Verwandle die Du-Botschaften in Ich-Botschaften.",
+          "hinweis": "Die Situation hilft dir. Gefühlswörter findest du im Kasten."
+        },
+        {
+          "art": "wortspeicher",
+          "titel": "Gefühlswörter",
+          "items": [
+            "genervt",
+            "gestresst",
+            "enttäuscht",
+            "verletzt",
+            "traurig",
+            "wütend",
+            "unsicher",
+            "besorgt",
+            "überfordert",
+            "eifersüchtig"
+          ]
+        },
+        {
+          "art": "frage",
+          "linien": 3,
+          "text": "„Lass mich in Ruhe.“ – Dein Bruder kommt zum dritten Mal in dein Zimmer, während du lernst."
+        },
+        {
+          "art": "frage",
+          "linien": 3,
+          "text": "„Immer kommst du zu spät.“ – Du wartest schon wieder zwanzig Minuten an der Bushaltestelle auf deine Freundin."
+        },
+        {
+          "art": "frage",
+          "linien": 3,
+          "text": "„Hör auf, meine Nachrichten zu lesen.“ – Deine große Schwester liest mit, während du chattest."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Deine eigene Ich-Botschaft: Denk an eine Situation, die dich stört oder gestört hat.",
+          "hinweis": "Du entscheidest, was du teilst. Niemand muss den Satz vorlesen."
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 1,
+          "items": [
+            "Ich fühle mich …",
+            "wenn …",
+            "weil …",
+            "Ich wünsche mir …"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "text": "Ich-Botschaften gelingen mit ruhigem Kopf. Liegt deine Anspannung über 70, hol dich zuerst mit einem Skill runter – dann rede."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen kennen die vier Teile einer Ich-Botschaft, unterscheiden Ich- von Du-Botschaften und formulieren Vorwürfe und eine eigene Situation als Ich-Botschaft.",
+        "ablauf": [
+          "Einheit 21, Einstieg (12 Min.): Eine Szene mit Unterbrechen zweimal spielen – mit „Du nervst immer“ und mit der Ich-Botschaft aus dem Kasten. Frage: „Was wollt ihr nach dem ersten Satz tun, was nach dem zweiten?“",
+          "Die vier Teile der Kette an der Tafel zeigen; beim „weil“ auf das Glas der Bedürfnisse verweisen.",
+          "Aufgabe 1 allein (4 Min.), dann vergleichen: Woran erkennt man die Ich-Botschaft?",
+          "Aufgabe 2 zu zweit (8 Min.); einige Sätze vorlesen und prüfen: Steckt noch ein Vorwurf darin?",
+          "Aufgabe 3 allein (4 Min.); die Sätze werden nicht vorgelesen, außer jemand möchte das."
+        ],
+        "hintergrund": "Die Ich-Botschaft geht auf Thomas Gordon (1972) zurück: Du-Botschaften enthalten Urteile und lösen Verteidigung aus, Ich-Botschaften beschreiben das Verhalten, das eigene Gefühl und die Folgen für die sprechende Person. Die hier verwendete Form mit „weil“ und Wunsch verbindet Gordons Modell mit der Gewaltfreien Kommunikation nach Rosenberg (2001), in der hinter jedem Gefühl ein Bedürfnis steht und das Anliegen als erfüllbare Bitte formuliert wird. Die Formel ist ein Übungsgerüst; im Alltag reichen oft zwei Teile. Voraussetzung ist ein ruhiger Kopf: Bei hoher Anspannung kommt zuerst ein Skill, dann das Gespräch.",
+        "quellen": [
+          "Gordon, T. (1972). Familienkonferenz. Hamburg: Hoffmann und Campe.",
+          "Rosenberg, M. B. (2001). Gewaltfreie Kommunikation. Paderborn: Junfermann."
+        ],
+        "differenzierung": {
+          "leichter": "Nur Gefühl und Wunsch verlangen („Ich bin genervt. Bitte klopf vorher.“) und die Gefühlswörter vorlesen.",
+          "schwerer": "Aufschreiben, was die andere Person antworten könnte, und eine zweite, ruhige Antwort darauf formulieren."
+        },
+        "impulse": [
+          "Warum sind „immer“ und „nie“ im Streit so gefährlich?",
+          "Bei wem fällt euch eine Ich-Botschaft leichter – bei Freunden, in der Familie oder bei Erwachsenen in der Schule?"
+        ],
+        "tipps": [
+          "Selbst Ich-Botschaften verwenden, etwa: „Ich werde unruhig, wenn alle durcheinanderreden, weil ich niemanden verstehe. Ich wünsche mir, dass ihr euch meldet.“",
+          "Nicht auf dem genauen Wortlaut bestehen: Es geht um die Haltung, nicht um eine Formel."
+        ],
+        "achtung": "Ich-Botschaften helfen nicht gegen Mobbing oder Gewalt. Schreibt jemand in Aufgabe 3 von wiederholten Angriffen, Bedrohung oder Kontrolle, ein Einzelgespräch anbieten und die zuständige Leitung (Responsable) informieren.",
+        "material": "Blatt je Person, Stifte, Gefühlsrad, Glas der Bedürfnisse"
+      }
+    }
+  },
+  {
+    "id": "skills-zuhoeren",
+    "bereich": "skills",
+    "thema": "kommunikation",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "gruppe",
+      "einzeln"
+    ],
+    "dauer": "15 Min.",
+    "eldib": [
+      "K-17",
+      "SOZ-37",
+      "K-21"
+    ],
+    "schlagworte": [
+      "aktives Zuhören",
+      "Zusammenfassen",
+      "Empathie",
+      "Gespräch",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:ear",
+    "kurs": [
+      "j1-e21"
+    ],
+    "de": {
+      "titel": "Richtig zuhören",
+      "untertitel": "Zuhören ist mehr als still sein: Es zeigt der anderen Person, dass sie dir wichtig ist.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Was läuft hier schief – und was läuft gut? Schreib es unter die Bilder."
+        },
+        {
+          "art": "comic",
+          "spalten": 2,
+          "felder": [
+            {
+              "figuren": [
+                "figur:jana:traurig:stehen",
+                "figur:ben:gelangweilt:stehen"
+              ],
+              "requisit": "icon:device-mobile",
+              "text": "… und dann hat sie nicht mehr geantwortet. Hörst du mir überhaupt zu?",
+              "sprecher": 0,
+              "untertitel": ""
+            },
+            {
+              "figuren": [
+                "figur:jana:traurig:stehen",
+                "figur:ben:besorgt:stehen"
+              ],
+              "text": "Du warst also enttäuscht, weil sie nicht mehr geantwortet hat?",
+              "sprecher": 1,
+              "untertitel": ""
+            }
+          ]
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 0,
+          "items": [
+            {
+              "titel": "Zuwenden",
+              "text": "Körper und Blick zur Person – die Stirn reicht. Handy weg."
+            },
+            {
+              "titel": "Dranbleiben",
+              "text": "Nicken, „mhm“, ausreden lassen."
+            },
+            {
+              "titel": "Nachfragen",
+              "text": "„Wie war das genau?“"
+            },
+            {
+              "titel": "Zusammenfassen",
+              "text": "„Habe ich richtig verstanden, dass …?“ – mit dem Gefühl."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Nach der Übung zu zweit: Wie gut ist dir das Zuhören gelungen? Kreuze an."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "gelungen",
+            "teilweise",
+            "noch nicht"
+          ],
+          "items": [
+            "Ich habe die Person ausreden lassen.",
+            "Ich habe nicht von mir selbst erzählt.",
+            "Ich habe keine Tipps gegeben, um die niemand gebeten hat.",
+            "Ich habe nachgefragt.",
+            "Ich habe zusammengefasst, was ich verstanden habe.",
+            "Ich habe das Gefühl der Person benannt."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Und andersherum: Wie hat es sich angefühlt, als dir jemand so zugehört hat?"
+        },
+        {
+          "art": "linien",
+          "anzahl": 2
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen kennen vier Schritte des aktiven Zuhörens, üben sie zu zweit und schätzen ein, was ihnen schon gelingt.",
+        "ablauf": [
+          "Einheit 21, Negativ-Szene (3 Min.): Die Leitung „hört zu“, schaut dabei aufs Handy, unterbricht und erzählt von sich. Frage: „Was läuft schief?“",
+          "Aufgabe 1 allein, dann die vier Schritte gemeinsam lesen (3 Min.).",
+          "Übung zu zweit (8 Min.): A erzählt zwei Minuten von etwas, das sie oder ihn am Wochenende gefreut oder geärgert hat; B hört zu und fasst mit dem Gefühl zusammen. A bestätigt oder korrigiert, dann Rollen tauschen.",
+          "Aufgabe 2 und 3 allein (3 Min.). Frage in die Runde: „Wie war es, wirklich gehört zu werden?“"
+        ],
+        "hintergrund": "Aktives Zuhören geht auf Carl Rogers (1951) zurück: Wer verstehen will, hört zu, ohne zu bewerten, und gibt wieder, was er verstanden hat – einschließlich des Gefühls. Thomas Gordon (1972) machte daraus ein Werkzeug für Familie und Schule und stellte es neben die Ich-Botschaft: Die Ich-Botschaft passt, wenn mich etwas stört, das aktive Zuhören, wenn die andere Person ein Anliegen hat. Ratschläge, Bewertungen und eigene Geschichten wirken dagegen oft wie eine Sperre, auch wenn sie gut gemeint sind. Das Zusammenfassen zeigt Interesse, klärt Missverständnisse früh und senkt oft die Anspannung im Gespräch.",
+        "quellen": [
+          "Rogers, C. R. (1951). Client-Centered Therapy. Boston: Houghton Mifflin.",
+          "Gordon, T. (1972). Familienkonferenz. Hamburg: Hoffmann und Campe."
+        ],
+        "differenzierung": {
+          "leichter": "Nur zwei Schritte üben: ausreden lassen und mit „Du meinst also …“ zusammenfassen.",
+          "schwerer": "Zu dritt üben: Die dritte Person beobachtet mit Aufgabe 2 und gibt Rückmeldung."
+        },
+        "impulse": [
+          "Woran merkt ihr, dass euch jemand wirklich zuhört?",
+          "Wann fällt euch Zuhören schwer – und warum?"
+        ],
+        "tipps": [
+          "Die Erzählthemen harmlos halten: Wochenende, Serie, Spiel, Essen.",
+          "Einen Timer benutzen; zwei Minuten fühlen sich für Zuhörende länger an, als sie sind.",
+          "Blickkontakt nicht verlangen: Für manche Jugendliche ist er anstrengend. Auf die Stirn zu schauen oder sich nur zuzuwenden, reicht."
+        ],
+        "achtung": "Erzählt jemand in der Übung etwas Belastendes, übernimmt die Leitung: freundlich unterbrechen, würdigen und ein Einzelgespräch anbieten. Die zuhörende Person ist dafür nicht zuständig.",
+        "material": "Blatt je Person, Stifte, Uhr oder Handy-Timer"
+      }
+    }
+  },
+  {
+    "id": "skills-grenz-karten",
+    "bereich": "skills",
+    "thema": "kommunikation",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "gruppe"
+    ],
+    "dauer": "15–20 Min.",
+    "eldib": [
+      "SOZ-32",
+      "SOZ-31",
+      "K-21"
+    ],
+    "schlagworte": [
+      "Grenzen",
+      "Grenzverletzung",
+      "Privatsphäre",
+      "digitale Grenzen",
+      "Situationskarten",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:hand-off",
+    "kurs": [
+      "j1-e22",
+      "j1-e23"
+    ],
+    "de": {
+      "titel": "Grenz-Karten",
+      "untertitel": "Situationen zum Sortieren und Nachspielen: Welche Grenze wird hier überschritten?",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Schneidet die Karten aus und legt die drei Überschriften nebeneinander. Sortiert: Welche Grenze wird überschritten?",
+          "hinweis": "Manche Karten passen zu zwei Gruppen – begründet eure Wahl. Eigene Situationen schreibt ihr auf leere Zettel."
+        },
+        {
+          "art": "karten",
+          "spalten": 3,
+          "hoehe": 82,
+          "karten": [
+            {
+              "titel": "Körperlich",
+              "text": "mein Körper, mein Raum, meine Sachen",
+              "bild": "icon:user"
+            },
+            {
+              "titel": "Emotional",
+              "text": "meine Gefühle, meine Meinung, mein Privates",
+              "bild": "icon:heart"
+            },
+            {
+              "titel": "Digital",
+              "text": "meine Fotos, Nachrichten und Daten",
+              "bild": "icon:device-mobile"
+            },
+            {
+              "titel": "Weitergeleitet",
+              "text": "Jemand leitet ein Foto von dir weiter, ohne dich zu fragen."
+            },
+            {
+              "titel": "Ohne zu fragen",
+              "text": "Jemand berührt dich, ohne zu fragen."
+            },
+            {
+              "titel": "Ausgelacht",
+              "text": "Jemand lacht über deine Gefühle."
+            },
+            {
+              "titel": "Die Umarmung",
+              "text": "Bei der Begrüßung wirst du zu einer Umarmung gedrängt."
+            },
+            {
+              "titel": "Das Passwort",
+              "text": "Jemand will dein Passwort: „Wenn du mir vertraust, gibst du es mir.“"
+            },
+            {
+              "titel": "Ausgefragt",
+              "text": "Du wirst gedrängt, Privates zu erzählen."
+            },
+            {
+              "titel": "Die Tasche",
+              "text": "Jemand durchsucht deine Tasche."
+            },
+            {
+              "titel": "Das Hobby",
+              "text": "Jemand macht sich über dein Hobby lustig."
+            },
+            {
+              "titel": "Der Screenshot",
+              "text": "Deine private Nachricht landet als Screenshot in der Klassengruppe."
+            },
+            {
+              "titel": "Zu dicht",
+              "text": "Im Bus steht jemand ganz dicht an dir, obwohl Platz ist."
+            },
+            {
+              "titel": "Unterbrochen",
+              "text": "Du wirst ständig unterbrochen."
+            },
+            {
+              "titel": "Der Standort",
+              "text": "Jemand verlangt, dass du deinen Standort teilst, damit er immer weiß, wo du bist."
+            },
+            {
+              "titel": "Weitererzählt",
+              "text": "Jemand erzählt Privates von dir weiter."
+            },
+            {
+              "titel": "Das Handy",
+              "text": "Jemand nimmt dir das Handy aus der Hand, ohne zu fragen."
+            },
+            {
+              "titel": "Die Lästergruppe",
+              "text": "Du wirst ungefragt in eine Chatgruppe geholt, in der über andere gelästert wird."
+            },
+            {
+              "titel": "Nicht weinen",
+              "text": "Du wirst kritisiert, weil du weinst oder wütend bist."
+            },
+            {
+              "titel": "Nachts",
+              "text": "Jemand schreibt dir nachts immer wieder, obwohl du nicht antwortest."
+            },
+            {
+              "titel": "Die Tür",
+              "text": "Jemand kommt in dein Zimmer, ohne anzuklopfen."
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen ordnen Alltagssituationen körperlichen, emotionalen und digitalen Grenzen zu, begründen ihre Wahl und erleben, dass Grenzen unterschiedlich empfunden werden. In Einheit 23 dienen die Karten als Rollenspiel-Situationen.",
+        "ablauf": [
+          "Vorher: Karten einmal pro Kleingruppe auf festem Papier ausschneiden und in Umschläge stecken.",
+          "Einheit 22 (11 Min.): Überschriften auslegen, zu zweit oder zu dritt sortieren, strittige Karten im Plenum klären. Frage: „Wie fühlt es sich an, wenn das passiert?“",
+          "Daumen-Runde mit geschlossenen Augen zu harmlosen Karten (Umarmung, Hobby, Unterbrochen); die Leitung nennt nur die Verteilung.",
+          "Einheit 23: Karten auf vier Stationen verteilen (Mein Körper, Meine Sachen, Mein Privates, Mein Handy) und als Rollenspiele nutzen."
+        ],
+        "hintergrund": "Grenzen schützen, was zu einer Person gehört: ihren Körper und Raum, ihre Gefühle und ihr Privates – und zunehmend auch Fotos, Nachrichten und Daten. Wie nah jemand kommen darf, hängt von Beziehung, Situation und Kultur ab (Hall, 1966); deshalb gibt es bei vielen Karten kein eindeutiges Richtig. Eindeutig ist dagegen die Regel im Digitalen: Fotos und private Nachrichten anderer werden nur mit deren Einverständnis weitergegeben, und wer kontrolliert oder bedrängt wird, kann sich Hilfe holen (BEE SECURE). Das Sortieren schafft eine gemeinsame Sprache, bevor persönliche Grenzen Thema werden.",
+        "quellen": [
+          "Hall, E. T. (1966). The Hidden Dimension. Garden City, NY: Doubleday.",
+          "BEE SECURE – Initiative der luxemburgischen Regierung für ein sichereres Internet: www.bee-secure.lu"
+        ],
+        "differenzierung": {
+          "leichter": "Nur zwei Überschriften verwenden (körperlich und emotional) und die digitalen Karten gemeinsam besprechen.",
+          "schwerer": "Zu jeder Karte einen Satz aufschreiben, mit dem man die Grenze setzen könnte."
+        },
+        "impulse": [
+          "Welche Karte wäre für euch am unangenehmsten – und warum?",
+          "Warum sind digitale Grenzen oft schwerer zu verteidigen als körperliche?"
+        ],
+        "tipps": [
+          "Die Karten nach Einheit 22 einsammeln; sie werden in Einheit 23 wieder gebraucht.",
+          "Eigene Situationen der Jugendlichen auf leere Zettel schreiben lassen, ohne Namen."
+        ],
+        "achtung": "Wirkt jemand bei einer Karte betroffen, nach der Einheit ein Gespräch anbieten. Bei Hinweisen auf Übergriffe, verbreitete Bilder oder Kontrolle nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) informieren.",
+        "material": "Schere, Umschläge, festes Papier"
+      }
+    }
+  },
+  {
+    "id": "skills-meine-grenzen",
+    "bereich": "skills",
+    "thema": "kommunikation",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln"
+    ],
+    "dauer": "10 Min.",
+    "eldib": [
+      "K-26",
+      "SOZ-40",
+      "SOZ-32"
+    ],
+    "schlagworte": [
+      "Grenzen",
+      "Nähe und Distanz",
+      "Körpersignale",
+      "Selbstwahrnehmung",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:target",
+    "kurs": [
+      "j1-e22"
+    ],
+    "de": {
+      "titel": "Meine Grenzen",
+      "untertitel": "Wo meine Grenzen liegen und woran ich merke, dass es mir zu viel wird",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Du entscheidest, was du teilst.",
+          "text": "Dieses Blatt gehört dir. Niemand muss es lesen."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was ist für dich eine Grenze? Schreib für jede Art ein Beispiel auf.",
+          "hinweis": "Die Grenz-Karten helfen dir. Eigene Beispiele sind noch besser."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Körperlich",
+            "Emotional",
+            "Digital"
+          ],
+          "zeilen": 3,
+          "beispiel": [
+            "Jemand setzt sich im Bus auf meinen Rucksack.",
+            "Jemand lacht, wenn ich von meinem Hund erzähle.",
+            "Jemand postet ein Foto von mir, ohne zu fragen."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Woran merkst du, dass eine Grenze erreicht ist? Schreib auf, was du spürst, denkst oder tust.",
+          "hinweis": "Denk an den Check-in und an deine Gefühls-Landkarte: Wo im Körper meldet sich ein Gefühl zuerst?"
+        },
+        {
+          "art": "ampel",
+          "linien": 2,
+          "stufen": [
+            {
+              "titel": "Stopp – Grenze überschritten",
+              "text": "zum Beispiel: Herz rast, ich will nur weg oder werde laut"
+            },
+            {
+              "titel": "Achtung – es wird mir zu viel",
+              "text": "zum Beispiel: Bauch zieht sich zusammen, ich lächle gequält"
+            },
+            {
+              "titel": "Passt – ich fühle mich wohl",
+              "text": "zum Beispiel: Schultern locker, ich lache und bleibe gern"
+            }
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 1,
+          "items": [
+            "Wenn meine Ampel auf Gelb springt, kann ich …"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Nach der Übung „Zwei Linien“: Wer darf dir wie nah kommen? Schreib Namen oder Gruppen in die Kreise.",
+          "hinweis": "Die Abstände sind Richtwerte nach dem Forscher Edward T. Hall. Deine Kreise dürfen sich ändern."
+        },
+        {
+          "art": "zielscheibe",
+          "ringe": [
+            "öffentlich: mehr als 3,6 m",
+            "sozial: 1,2 bis 3,6 m",
+            "persönlich: 45 cm bis 1,2 m",
+            "ganz nah: unter 45 cm"
+          ],
+          "mitte": "Ich"
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 1,
+          "items": [
+            "Mehr Abstand brauche ich, wenn …",
+            "Nähe ist für mich in Ordnung, wenn …"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Grenzen sind verschieden – und alle zählen.",
+          "text": "Auch wer dir ganz nah ist, muss dein Nein beachten. Und wer Stopp hört, hört auf – online wie offline."
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Du musst das nicht allein lösen.",
+          "text": "Überschreitet jemand deine Grenzen immer wieder oder ist dir etwas passiert, das sich falsch anfühlt: Das ist nicht deine Schuld. Sprich mit einer Vertrauensperson, zum Beispiel beim SePAS. Anonym und kostenlos: Kanner- a Jugendtelefon 116 111."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen halten eigene körperliche, emotionale und digitale Grenzen fest, beschreiben ihre Körpersignale in drei Stufen und tragen ein, wer ihnen wie nah kommen darf.",
+        "ablauf": [
+          "Einheit 22, nach dem Sortieren der Grenz-Karten (7 Min.): Seite 1 allein. Frage: „Wie merkt ihr, dass es euch zu viel wird – noch bevor ihr etwas sagt?“",
+          "Die Leitung geht herum und hilft mit Fragen, nicht mit Antworten. Das Blatt wird nicht eingesammelt.",
+          "Nach der Übung „Zwei Linien“ (3 Min.): Seite 2 mit Nähe-Kreisen und Satzanfängen. Die Kreise bleiben privat.",
+          "Zum Schluss den Hilfe-Kasten vorlesen und die Ansprechpersonen im Haus nennen."
+        ],
+        "hintergrund": "Wer Grenzen setzen will, muss sie zuerst wahrnehmen. Gefühle gehen mit typischen Körperempfindungen einher (Nummenmaa et al., 2014) – Enge in der Brust, ein flaues Gefühl im Bauch, angespannte Schultern. Diese Signale melden oft früher als der Verstand, dass etwas zu viel wird; die Ampel ordnet sie in drei Stufen, passend zur Anspannungsskala. Die Nähe-Kreise beruhen auf den Distanzzonen von Hall (1966): intim bis etwa 45 cm, persönlich bis etwa 1,2 m, sozial bis etwa 3,6 m, dahinter öffentlich. Die Werte schwanken mit Kultur, Beziehung und Stimmung – es gibt keinen richtigen Abstand, nur einen, der für die Person passt.",
+        "quellen": [
+          "Nummenmaa, L., Glerean, E., Hari, R. & Hietanen, J. K. (2014). Bodily maps of emotions. Proceedings of the National Academy of Sciences, 111(2), 646–651.",
+          "Hall, E. T. (1966). The Hidden Dimension. Garden City, NY: Doubleday."
+        ],
+        "differenzierung": {
+          "leichter": "Nur Aufgabe 2 und 3; in den Kreisen genügen Anfangsbuchstaben oder Symbole.",
+          "schwerer": "Zu jeder Ampelstufe notieren, was man in diesem Moment tun oder sagen könnte."
+        },
+        "impulse": [
+          "Woran merkt ihr bei anderen, dass ihnen etwas zu nah ist?",
+          "Ist euer Abstand zu Freunden immer gleich – oder hängt er vom Tag ab?"
+        ],
+        "tipps": [
+          "Die Kreise nicht einsammeln und nicht vorlesen lassen.",
+          "Die Ampel mit dem Ampelplan aus Einheit 15 verbinden: Bei Rot helfen die Notfall-Skills und eine Person, zu der man gehen kann."
+        ],
+        "achtung": "Deutet jemand Übergriffe, Gewalt oder Missbrauch an: ruhig zuhören, nicht ausfragen, keine Geheimhaltung versprechen. Bei Gefährdung sofort nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) informieren.",
+        "material": "Blatt je Person, Stifte, Grenz-Karten zum Nachschauen"
+      }
+    }
+  },
+  {
+    "id": "skills-stopp",
+    "bereich": "skills",
+    "thema": "kommunikation",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "20 Min.",
+    "eldib": [
+      "V-26",
+      "SOZ-39",
+      "SOZ-32"
+    ],
+    "schlagworte": [
+      "Grenzen setzen",
+      "Stopp sagen",
+      "Selbstbehauptung",
+      "Nein sagen",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:hand-stop",
+    "kurs": [
+      "j1-e23"
+    ],
+    "de": {
+      "titel": "Mein Stopp",
+      "untertitel": "Klar und deutlich – mit Körper und Stimme",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Drei Arten, Stopp zu sagen. Welches Stopp nimmt man ernst? Kreise es ein und schreib auf, warum."
+        },
+        {
+          "art": "comic",
+          "spalten": 3,
+          "felder": [
+            {
+              "figuren": [
+                "figur:jana:verlegen:stehen"
+              ],
+              "text": "Ähm … stopp vielleicht?",
+              "untertitel": "leise, mit Lächeln"
+            },
+            {
+              "figuren": [
+                "figur:jana:froh:stopp"
+              ],
+              "text": "Stopp, hör auf, haha.",
+              "untertitel": "laut, mit Grinsen"
+            },
+            {
+              "figuren": [
+                "figur:jana:neutral:stopp"
+              ],
+              "text": "Stopp. Das will ich nicht.",
+              "untertitel": "laut, ernst, Hand hoch, Blick zur Person"
+            }
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 1,
+          "items": [
+            "Dieses Stopp wirkt am stärksten, weil …"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "So wird ein Stopp klar. Probiere es zu zweit aus und kreuze an, was dir schon gelingt."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "gelingt schon",
+            "übe ich noch"
+          ],
+          "items": [
+            "Ich stehe gerade, beide Füße fest am Boden.",
+            "Ich schaue die Person an – die Stirn reicht.",
+            "Ich hebe die Hand.",
+            "Ich gehe einen Schritt zurück.",
+            "Meine Stimme ist laut und ruhig.",
+            "Ich lächle nicht und entschuldige mich nicht.",
+            "Ich sage kurz, was ich nicht will."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Welche Sätze passen zu dir? Kreuze an oder ergänze eigene."
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "frei": 2,
+          "items": [
+            "„Stopp. Das will ich nicht.“",
+            "„Bitte fass mich nicht an.“",
+            "„Das ist für mich ein sensibles Thema.“",
+            "„Danke, aber das passt für mich nicht.“",
+            "„Ich brauche gerade Abstand.“",
+            "„Lösch das Foto bitte. Ich will das nicht.“",
+            "„Nein. Und dabei bleibt es.“",
+            "„Darüber rede ich nicht.“"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Luca hört nicht auf. Was sagst du beim ersten und beim zweiten Mal?",
+          "hinweis": "Bleib ruhig und klar. Du musst dich nicht rechtfertigen."
+        },
+        {
+          "art": "dialog",
+          "zeilen": [
+            {
+              "wer": "Luca",
+              "text": "„Zeig mal dein Handy, ich will die Fotos sehen.“"
+            },
+            {
+              "wer": "Du"
+            },
+            {
+              "wer": "Luca",
+              "text": "„Stell dich nicht so an. Ist doch nur Spaß.“"
+            },
+            {
+              "wer": "Du"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dein eigener Stopp-Satz"
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 1,
+          "items": [
+            "Mein Stopp-Satz: …",
+            "Dazu mache ich mit dem Körper: …",
+            "Eine Situation, in der ich ihn brauchen könnte: …"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Wer Stopp hört, hört auf.",
+          "text": "Das gilt auch für dich – beim Spaß, in der Pause und im Chat. Ein Nein braucht keine Begründung."
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Wenn ein Stopp nicht reicht",
+          "text": "Geh weg und hol dir Hilfe – das ist kein Petzen. Und wenn du in einem Moment nichts sagen konntest: Du bist nicht schuld. Schuld hat, wer die Grenze überschreitet."
+        },
+        {
+          "art": "notfall"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen erkennen, was ein Stopp glaubwürdig macht, üben es mit Körper und Stimme, wählen passende Stopp-Sätze und bereiten sich darauf vor, dass jemand nachhakt.",
+        "ablauf": [
+          "Einheit 23, nach der Vorführung der drei Stopps (5 Min.): Aufgabe 1 allein. Frage: „Warum wirkt das Stopp mit Lächeln so schwach?“",
+          "Übung zu zweit (8 Min.): B geht langsam auf A zu, A stoppt mit Variante 3. Wer sich schwertut, beginnt leise und wird lauter. Danach Aufgabe 2 ankreuzen.",
+          "Nach den Rollenspielen (5 Min.): Aufgabe 3 und 4 allein oder zu zweit. Frage: „Was sagt ihr, wenn jemand nachhakt?“",
+          "Aufgabe 5 allein. In der Abschlussrunde sagt, wer mag, den Satz laut, und die Gruppe antwortet mit „Okay“. Die Kästen am Ende gemeinsam lesen und die Ansprechpersonen im Haus nennen."
+        ],
+        "hintergrund": "Das Skillstraining der Dialektisch-Behavioralen Therapie für Jugendliche übt, ein Anliegen klar zu sagen, bei Bedarf zu wiederholen und dabei selbstsicher aufzutreten: aufrechte Haltung, Blickkontakt, feste Stimme, kein Rückzug (Rathus & Miller, 2015). Ein Lächeln beim Stopp ist meist Verlegenheit, schwächt aber die Botschaft. Rollenspiele sind dabei keine Spielerei: Wer ein Verhalten mehrmals erfolgreich ausprobiert, traut es sich im Ernstfall eher zu (Bandura, 1977). Ebenso wichtig ist die Gegenseite – ein Nein zu hören und anzunehmen. Ein Stopp ist kein Schutz vor Gewalt: Viele Menschen erstarren in bedrohlichen Situationen, und wer nichts sagen konnte, trägt keine Schuld.",
+        "quellen": [
+          "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford.",
+          "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215."
+        ],
+        "differenzierung": {
+          "leichter": "Nur Aufgabe 1, 2 und 5; die Stopp-Sätze an die Tafel schreiben und einen davon übernehmen lassen.",
+          "schwerer": "Das Gespräch mit Luca weiterschreiben: Was tust du, wenn er ein drittes Mal nachhakt?"
+        },
+        "impulse": [
+          "Wem gegenüber fällt euch ein Stopp schwerer – Fremden oder Freunden?",
+          "Wie reagiert ihr, wenn jemand zu euch Stopp sagt?"
+        ],
+        "tipps": [
+          "Kurz und klar wirkt stärker als höflich und lang – die Sätze nicht „schön“ formulieren lassen.",
+          "Wer ungern vor anderen übt, beginnt nur mit der Hand oder übt zuerst mit der Leitung."
+        ],
+        "achtung": "Nur mit Worten und Abstand üben. Deutet jemand Übergriffe, Gewalt oder Erpressung an: nicht in der Gruppe vertiefen, Einzelgespräch führen, nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) informieren.",
+        "material": "Blatt je Person, Stifte"
+      }
+    }
+  }
+]

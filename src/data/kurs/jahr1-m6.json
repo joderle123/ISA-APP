@@ -1,0 +1,679 @@
+{
+  "einheiten": [
+    {
+      "id": "j1-e24",
+      "nr": 24,
+      "jahr": 1,
+      "modul": "j1-m6",
+      "titel": "Konflikte lösen",
+      "kurz": "Welches Tier bin ich im Streit? Die Gruppe entdeckt ihre Konfliktstile, lernt die Konflikt-Treppe kennen und spielt Alltagsstreits zweimal – so, wie sie oft laufen, und Stufe für Stufe.",
+      "dauer": 100,
+      "ziele": [
+        "erkennen den eigenen Konfliktstil und merken, dass er vom Gegenüber abhängt",
+        "beschreiben die fünf Stufen der Konflikt-Treppe und verbinden sie mit Skills aus den Modulen 3 und 5",
+        "wenden die Treppe im Rollenspiel auf einen Alltagskonflikt an",
+        "erleben im Schreiduell, warum niemand etwas versteht, wenn alle gleichzeitig reden"
+      ],
+      "material": [
+        "Gefühlsrad (A3, laminiert) und Anspannungsskala 0–100 (Plakat aus Einheit 11)",
+        "Fünf Tierschilder (A4): Schildkröte, Hai, Teddybär, Fuchs, Eule – jeweils Name und eine einfache Skizze",
+        "Plakat „Die Konflikt-Treppe“ (A2) mit fünf Stufen, zunächst abgedeckt",
+        "Schülerblätter „Mein Konfliktstil“ und „Die Konflikt-Treppe“ für jede Person",
+        "Situationskarten K1–K6 (Blatt „Situationskarten“), ausgeschnitten",
+        "Sechs Zettel mit den Sätzen für das Schreiduell (Schritt 7)",
+        "Ampelpläne und Skills-Kärtchen der Jugendlichen aus Einheit 15, einige leere Skills-Karten",
+        "Skills-Pässe, Stempel, Imbiss und Getränke"
+      ],
+      "vorbereitung": [
+        "Die Tierschilder an vier Wände und in die Raummitte hängen oder legen.",
+        "Das Treppen-Plakat zeichnen: fünf Stufen von unten nach oben, jede mit Titel; bis Schritt 4 abdecken.",
+        "Für das Schreiduell eine Strecke von rund 10 Metern suchen (Flur, Turnhalle, Hof) und die Nachbarräume vorwarnen, dass es kurz laut wird.",
+        "Die Ampelpläne aus Einheit 15 bereitlegen."
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-konfliktstil",
+        "skills-konflikt-treppe",
+        "skills-situationskarten",
+        "skills-koffer-ampelplan",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Gefühlsrad, Anspannung und Streit-Grenze"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Vom Stopp zum Streit"
+        },
+        {
+          "min": "15–32",
+          "phase": "uebung",
+          "titel": "Welches Tier bin ich im Streit?"
+        },
+        {
+          "min": "32–45",
+          "phase": "input",
+          "titel": "Die Konflikt-Treppe"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–82",
+          "phase": "aktiv",
+          "titel": "Rollenspiele: zweimal derselbe Streit"
+        },
+        {
+          "min": "82–90",
+          "phase": "aktiv",
+          "titel": "Schreiduell"
+        },
+        {
+          "min": "90–95",
+          "phase": "skill",
+          "titel": "Skill: runter unter 70"
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Réckbléck und Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in mit der Streit-Grenze",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Stühle im Kreis, Gefühlsrad und Anspannungsskala in der Mitte. Reihum zeigt jede Person auf ein Gefühlswort und nennt ihre Anspannung von 0 bis 100. Dazu kommt heute eine freiwillige Zusatzfrage: Ab welcher Zahl wird es für dich in einem Streit schwer, noch zuzuhören? Die Leitung beginnt mit einer ehrlichen eigenen Zahl. Die genannten Zahlen ohne Namen an der Tafel neben der Skala sammeln – sie werden bei der Konflikt-Treppe wieder gebraucht.",
+          "sagen": [
+            "Gefühl, Zahl – und wenn ihr mögt: Ab welcher Zahl ist bei euch im Streit Schluss mit Zuhören?",
+            "Bei mir liegt die Grenze ungefähr bei 60. Darüber höre ich vor allem mich selbst."
+          ],
+          "tipp": "Dass die Zahlen weit auseinanderliegen, ist das eigentliche Ergebnis: Jede Person kippt an einer anderen Stelle. Darauf baut die Treppe später auf.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Vom Stopp zum Streit",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "Kurz an die letzte Einheit anknüpfen: die Garten-Übung und das klare Stopp. Dann das neue Modul öffnen: In den nächsten drei Treffen geht es um Situationen, in denen es schwierig wird – Streit, Druck von außen und Mobbing. Heute zuerst der ganz normale Streit mit Freunden, Geschwistern oder in der Gruppenarbeit.",
+          "sagen": [
+            "Letztes Mal ging es ums Stopp-Sagen. Hat das jemand im Alltag ausprobiert?",
+            "Streit gehört zum Leben. Die Frage ist nicht, ob es kracht, sondern wie ihr wieder rauskommt."
+          ]
+        },
+        {
+          "titel": "Welches Tier bin ich im Streit?",
+          "dauer": 17,
+          "phase": "uebung",
+          "text": "Die fünf Tierschilder vorstellen und die Beschreibungen vorlesen (Liste). Dann eine Streitsituation nennen; alle gehen zu dem Tier, das am ehesten zu ihrer Reaktion passt. Drei Runden mit verschiedenen Gegenübern spielen und nach jeder Runde fragen, wer freiwillig einen Satz zu seiner Wahl sagen mag. Anschließend füllt jede Person das Blatt aus. Die Tabelle „Hilft, wenn … – wird schwierig, wenn …“ an der Beispielzeile gemeinsam besprechen, dann zwei weitere Tiere allein ausfüllen.",
+          "sagen": [
+            "Runde eins: Deine beste Freundin hat etwas weitererzählt, das nur für sie bestimmt war. Welches Tier bist du?",
+            "Runde zwei: Deine Eltern wollen, dass du am Samstag mitkommst – du bist aber schon verabredet. Runde drei: Eine Lehrkraft gibt dir eine Note, die du ungerecht findest.",
+            "Wann ist die Schildkröte eigentlich klug? Und wann macht sie alles schlimmer?"
+          ],
+          "punkte": [
+            "Schildkröte: zieht sich zurück, weicht aus, sagt lieber nichts.",
+            "Hai: will gewinnen – egal, was es kostet.",
+            "Teddybär: gibt nach, damit wieder Ruhe ist.",
+            "Fuchs: sucht einen Kompromiss, bei dem beide ein Stück nachgeben.",
+            "Eule: sucht eine Lösung, mit der beide wirklich zufrieden sind."
+          ],
+          "tipp": "Viele merken hier zum ersten Mal, dass sie je nach Gegenüber ein anderes Tier sind. Das ausdrücklich würdigen: Wer den Stil wechseln kann, hat mehr Möglichkeiten.",
+          "wennEsKippt": "Rennen alle aus Spaß zum Hai oder immer in dieselbe Ecke wie die Beliebtesten, gelassen bleiben und nachfragen, was am Hai eigentlich so attraktiv ist. Die nächste Runde dann mit geschlossenen Augen spielen: Alle zeigen nur mit dem Arm in Richtung ihres Tiers, die Leitung zählt und nennt das Ergebnis.",
+          "blatt": "skills-konfliktstil"
+        },
+        {
+          "titel": "Die Konflikt-Treppe",
+          "dauer": 13,
+          "phase": "input",
+          "text": "Das Plakat aufdecken und die Stufen von unten nach oben erklären (Tabelle). Bei jeder Stufe fragen, woher die Gruppe sie schon kennt: Stufe 1 aus dem Skills-Modul, Stufe 2 und 3 aus der Einheit zu Ich-Botschaften und Zuhören. Dann auf die Zahlen aus dem Check-in zeigen: Oberhalb der eigenen Grenze gelingt Stufe 2 kaum – deshalb steht das Runterkommen ganz unten. Anschließend auf dem Blatt zu jeder Stufe einen Satz für die Geschichte formulieren, am besten zu zweit.",
+          "sagen": [
+            "Warum steht Runterkommen ganz unten und nicht irgendwo in der Mitte?",
+            "Welche Stufe überspringt ihr im echten Leben am häufigsten?"
+          ],
+          "tabelle": {
+            "spalten": [
+              "Stufe",
+              "Was passiert",
+              "So kann es klingen"
+            ],
+            "zeilen": [
+              [
+                "1 Stopp und runterkommen",
+                "Anspannung unter 70 bringen – mit einem Skill aus dem Koffer",
+                "„Ich brauch kurz fünf Minuten.“"
+              ],
+              [
+                "2 Ich-Botschaft",
+                "Sagen, was mich stört, ohne Vorwurf",
+                "„Ich ärgere mich, weil ich fast alles allein gemacht habe.“"
+              ],
+              [
+                "3 Zuhören",
+                "Die Sicht der anderen Person verstehen und zusammenfassen",
+                "„Du meinst also, du wusstest nicht, was du machen sollst?“"
+              ],
+              [
+                "4 Lösungen sammeln",
+                "Alle Ideen aufschreiben, noch nicht bewerten",
+                "„Was könnten wir noch machen?“"
+              ],
+              [
+                "5 Einigen",
+                "Eine Lösung wählen, mit der beide leben können, und abmachen, wann man nachschaut",
+                "„Okay, wir probieren das bis Freitag.“"
+              ]
+            ]
+          },
+          "tipp": "Die Treppe als Geländer vorstellen, nicht als Pflichtprogramm: Wer merkt, dass es wieder kippt, geht zurück auf Stufe 1. Das ist kein Scheitern, sondern der Weg, der funktioniert.",
+          "wennEsKippt": "Kommt der Einwand „So redet doch keiner“, zustimmen und fragen, wie derselbe Gedanke in der eigenen Sprache klingen würde. Die Sätze der Jugendlichen ersetzen die Beispielsätze – Hauptsache, die Stufe bleibt erkennbar.",
+          "blatt": "skills-konflikt-treppe"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Imbiss und frische Luft. Die Leitung isst mit und lässt das Thema ruhen. Erzählt jemand in der Pause von einem aktuellen Streit, zuhören, nicht schlichten und ein Gespräch nach der Einheit anbieten."
+        },
+        {
+          "titel": "Rollenspiele: zweimal derselbe Streit",
+          "dauer": 22,
+          "phase": "aktiv",
+          "text": "Zu zweit oder zu dritt eine Situationskarte ziehen (K1–K6) und fünf Minuten vorbereiten. Jede Gruppe spielt ihre Szene zweimal: zuerst so, wie ein solcher Streit oft läuft (höchstens eine Minute), danach mit der Konflikt-Treppe. Wer zuschaut, achtet auf zwei Dinge: Welche Stufe war zu sehen, und welcher Satz hat etwas verändert? Nach jeder Szene aus der Rolle aussteigen lassen – aufstehen, ausschütteln, den eigenen Namen sagen. Bei mehr als drei Gruppen proben zwei Gruppen gleichzeitig in verschiedenen Ecken, und nur ausgewählte Szenen kommen ins Plenum.",
+          "sagen": [
+            "Erst die Version, die ihr aus dem echten Leben kennt – gern übertrieben, aber ohne echte Namen.",
+            "Stopp. Wo genau ist es gerade gekippt?",
+            "Was hat Stufe 3 bei euch verändert?"
+          ],
+          "tipp": "Die erste Version kurz halten und die meiste Zeit in die zweite stecken. Hängt eine Szene fest, friert die Leitung sie ein und fragt das Publikum, welche Stufe gerade fehlt. Mit nur zwei Jugendlichen spielen beide zusammen, und die Leitung ist das Publikum.",
+          "wennEsKippt": "Wird eine Szene zu echt – jemand wird persönlich oder spielt einen realen Streit aus der Gruppe nach –, freundlich abbrechen, aus der Rolle holen und die Karte wechseln. Echte Konflikte zwischen Gruppenmitgliedern werden nicht im Rollenspiel gelöst, sondern später in einem begleiteten Gespräch.",
+          "blatt": "skills-situationskarten"
+        },
+        {
+          "titel": "Schreiduell",
+          "dauer": 8,
+          "phase": "aktiv",
+          "text": "Zwei Teams bilden. Aus jedem Team stellt sich eine Person auf die eine Seite, der Rest des Teams steht rund 10 Meter entfernt gegenüber. Beide Rufenden bekommen einen anderen Satz (Liste) und rufen ihn auf ein Zeichen gleichzeitig dem eigenen Team zu; das Team, das seinen Satz zuerst richtig wiederholt, holt einen Punkt. Nach jeder Runde wechseln die Rufenden. Zum Schluss fragen, was geholfen hat, damit ein Satz ankommt: Die Antworten – abwechseln, näher kommen, nachfragen, leiser werden – sind genau Stufe 3 der Treppe.",
+          "sagen": [
+            "Beide gleichzeitig – auf drei. Eins, zwei, drei.",
+            "Was hat geholfen, dass euer Satz trotzdem angekommen ist?"
+          ],
+          "punkte": [
+            "Die Eule sucht ihre Brille im Kühlschrank.",
+            "Drei Schildkröten spielen Tischtennis im Regen.",
+            "Der Hai hat Zahnschmerzen und isst nur noch Pudding.",
+            "Der Fuchs verkauft Pizza mit Ananas an der Tankstelle.",
+            "Der Teddybär hat seinen Schlüssel im Bus vergessen.",
+            "Morgen regnet es Popcorn über der Kantine."
+          ],
+          "tipp": "Bei Regen im Flur oder in der Turnhalle spielen. Wer Lärm schlecht aushält, übernimmt das Punktezählen. Mit nur zwei Jugendlichen rufen beide gleichzeitig der Leitung zu – die merkt dann selbst, wie schwer Zuhören bei zwei Stimmen ist."
+        },
+        {
+          "titel": "Skill: runter unter 70",
+          "dauer": 5,
+          "phase": "skill",
+          "text": "Nach dem Lärm bewusst leise werden. Alle setzen sich; jede Person schaut auf ihren Ampelplan aus Einheit 15 und sucht den Skill, der sie in einem Streit von 70 wieder nach unten bringt – einen, der auch funktioniert, wenn man nicht einfach weggehen kann. Dann gemeinsam eine Minute Quadrat-Atmen: vier Sekunden ein, vier halten, vier aus, vier halten; die Leitung zählt leise mit. Zum Schluss nennt, wer mag, seinen Streit-Skill in einem Wort.",
+          "sagen": [
+            "Von 100 auf 0 schafft niemand in einer Minute. Von 80 auf 60 reicht für Stufe 2.",
+            "Welcher Skill aus eurem Koffer geht auch mitten im Streit, ohne dass es die anderen merken?"
+          ],
+          "tipp": "Wer seinen Ampelplan nicht dabeihat, schreibt den Skill auf eine leere Skills-Karte und legt sie später zu den anderen.",
+          "blatt": "skills-koffer-ampelplan"
+        },
+        {
+          "titel": "Réckbléck und Skills-Pass",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Blitzlicht mit einer Frage: Welche Stufe der Treppe fällt mir am schwersten – und was könnte mir dabei helfen? Wer mag, notiert die Antwort vorher als Aufgabe 2 auf dem Treppen-Blatt. Danach trägt jede Person einen Satz in den Skills-Pass ein und bekommt ihren Stempel. Zum Schluss den Ausblick geben.",
+          "sagen": [
+            "Ein Satz: Welche Stufe fällt euch am schwersten – und welche nehmt ihr mit in die nächste Woche?"
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Nächstes Mal geht es um Druck von außen: Was macht ihr, wenn alle etwas wollen, das ihr selbst nicht wollt?",
+      "hintergrund": "Konflikte gehören zum Jugendalter; entscheidend ist, wie sie ausgetragen werden. Thomas und Kilmann (1974) ordnen Konfliktverhalten nach zwei Achsen: wie stark jemand die eigenen Anliegen verfolgt und wie stark die der anderen. So entstehen fünf Stile – Konkurrieren (Hai), Vermeiden (Schildkröte), Entgegenkommen (Teddybär), Kompromiss (Fuchs) und Zusammenarbeiten (Eule). Keiner ist immer richtig; hilfreich ist, wählen zu können. Konflikte eskalieren in Stufen, und je früher die Beteiligten aussteigen, desto eher gelingt eine Lösung, bei der beide gewinnen (Glasl, 1980). Die Konflikt-Treppe stellt deshalb die Regulation an den Anfang und folgt dann der niederlagelosen Methode von Gordon (1972): Ich-Botschaft, Zuhören, gemeinsam Lösungen suchen. Beim Sammeln hilft der Blick auf die Interessen hinter den Forderungen (Fisher & Ury, 1981).",
+      "quellen": [
+        "Thomas, K. W. & Kilmann, R. H. (1974). Thomas-Kilmann Conflict Mode Instrument. Tuxedo, NY: Xicom.",
+        "Glasl, F. (1980). Konfliktmanagement. Bern: Haupt.",
+        "Gordon, T. (1972). Familienkonferenz. Hamburg: Hoffmann und Campe.",
+        "Fisher, R. & Ury, W. (1981). Getting to Yes. Boston: Houghton Mifflin."
+      ],
+      "achtung": "Konflikte zwischen Gruppenmitgliedern nicht im Rollenspiel nachspielen und nicht im Plenum verhandeln; dafür ein begleitetes Gespräch außerhalb der Einheit anbieten. Rollenspiele nur mit den erfundenen Situationen der Karten und ohne echte Namen. Erzählt jemand von Streit, der in Gewalt übergeht – zu Hause, in einer Beziehung oder unter Gleichaltrigen –, nicht in der Gruppe vertiefen: Einzelgespräch anbieten, die zuständige Leitung (Responsable) informieren und bei Gefährdung sofort nach dem internen Schutzkonzept handeln. Beim Schreiduell auf Jugendliche achten, denen Lärm schnell zu viel wird."
+    },
+    {
+      "id": "j1-e25",
+      "nr": 25,
+      "jahr": 1,
+      "modul": "j1-m6",
+      "titel": "Gruppendruck und Nein sagen",
+      "kurz": "Wo fängt Mut an? Die Gruppe steckt ihre Komfortzonen ab, lernt vier Arten, Nein zu sagen, und probiert sie in typischen Druck-Situationen aus – vom Supermarkt bis zum Gruppenchat.",
+      "dauer": 100,
+      "ziele": [
+        "erkennen Situationen mit lautem und leisem Gruppendruck",
+        "erleben, dass Komfort-, Lern- und Panikzone bei jeder Person woanders liegen",
+        "kennen vier Arten, Nein zu sagen, und formulieren einen eigenen Nein-Satz",
+        "üben ein Nein unter Druck im Rollenspiel und erfahren, wie stark ein zweites Nein wirkt"
+      ],
+      "material": [
+        "Gefühlsrad (A3, laminiert) und Anspannungsskala 0–100",
+        "Drei Seile oder Straßenkreide für drei ineinanderliegende Kreise, drei Schilder: Komfortzone, Lernzone, Panikzone",
+        "Schülerblatt „Nein sagen – vier Wege“ für jede Person",
+        "Situationskarten D1–D6 (Blatt „Situationskarten“), ausgeschnitten",
+        "Skills-Kärtchen der Jugendlichen aus Einheit 15",
+        "Skills-Pässe, Stempel, Imbiss und Getränke"
+      ],
+      "vorbereitung": [
+        "Die drei Kreise auslegen: innen etwa 2 Meter Durchmesser, die Ringe darum je gut einen Meter breit, damit alle Platz finden. Bei trockenem Wetter geht das auch draußen mit Kreide.",
+        "Die Karten D1–D6 durchsehen und weglassen, was einer aktuellen Situation in der Gruppe zu sehr ähnelt."
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-nein-sagen",
+        "skills-situationskarten",
+        "skills-kaertchen",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Gefühlsrad und Anspannung"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Vom Streit zum Druck von außen"
+        },
+        {
+          "min": "15–35",
+          "phase": "uebung",
+          "titel": "Komfortzone, Lernzone, Panikzone"
+        },
+        {
+          "min": "35–50",
+          "phase": "input",
+          "titel": "Vier Arten, Nein zu sagen"
+        },
+        {
+          "min": "50–65",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "65–88",
+          "phase": "aktiv",
+          "titel": "Druck-Situationen besprechen und spielen"
+        },
+        {
+          "min": "88–93",
+          "phase": "skill",
+          "titel": "Skill: der Anker vor dem Nein"
+        },
+        {
+          "min": "93–100",
+          "phase": "abschluss",
+          "titel": "Wenn-dann-Plan, Réckbléck und Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: Alle schauen dich an",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Gefühlsrad und Anspannungsskala in die Mitte, reihum Gefühlswort und Zahl. Dazu eine freiwillige Zusatzfrage, die nur mit einer Zahl beantwortet wird: Wie hoch geht deine Anspannung, wenn alle dich anschauen und auf deine Antwort warten? Die Leitung beginnt. Die Zahlen nicht kommentieren, nur aufnehmen – für viele ist genau dieser Moment der schwierigste, und um ihn geht es heute.",
+          "sagen": [
+            "Gefühl, Zahl – und wie hoch geht es bei euch, wenn alle gleichzeitig auf eure Antwort warten?"
+          ],
+          "tipp": "Wer auf die Zusatzfrage nicht antworten mag, sagt „weiter“. Gerade bei diesem Thema zählt, dass auch ein Nein im Check-in in Ordnung ist.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Vom Streit zum Druck von außen",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "An die Konflikt-Treppe erinnern: Beim Streit stehen zwei Seiten gegeneinander. Heute geht es um eine andere Lage – die Gruppe will etwas, und man selbst will es nicht. Kurz das Glas der Bedürfnisse aus Einheit 4 ins Gedächtnis rufen: Zugehörigkeit ist eines der stärksten Bedürfnisse, deshalb wirkt Gruppendruck so stark. Klarstellen, dass niemand erzählen muss, wo er schon einmal mitgemacht hat.",
+          "sagen": [
+            "Heute geht es um Momente, in denen alle Ja sagen und ihr eigentlich Nein meint.",
+            "Dazugehören ist ein echtes Bedürfnis, kein Zeichen von Schwäche. Genau deshalb ist ein Nein in der Gruppe so schwer."
+          ]
+        },
+        {
+          "titel": "Komfortzone, Lernzone, Panikzone",
+          "dauer": 20,
+          "phase": "uebung",
+          "text": "Die drei Kreise erklären: innen die Komfortzone (fühlt sich sicher an), in der Mitte die Lernzone (aufregend, aber machbar), außen die Panikzone (zu viel). Die Leitung liest Situationen vor (Liste), und alle stellen sich in die Zone, die für sie passt. Nach jeder Situation kurz schauen, wie sich die Gruppe verteilt, und pro Zone eine Person fragen, ob sie etwas dazu sagen mag. Zum Schluss festhalten: Die Zonen sind bei jeder Person anders, und wachsen kann man nur in der Lernzone – nicht in der Panikzone.",
+          "sagen": [
+            "Schaut euch um: Wo stehen die anderen? Das ist die wichtigste Beobachtung heute.",
+            "Was müsste passieren, damit diese Situation für dich einen Ring nach innen rutscht?"
+          ],
+          "punkte": [
+            "Vor der Klasse ein Lied singen",
+            "In der Pause eine neue Person ansprechen",
+            "Allein mit dem Bus in eine fremde Stadt fahren",
+            "Nein sagen, wenn alle anderen Ja sagen",
+            "Auf eine Party gehen, auf der du niemanden kennst",
+            "Im Gruppenchat als Einzige oder Einziger schreiben: Das finde ich nicht okay.",
+            "Vor der Klasse nachfragen, wenn du etwas nicht verstanden hast",
+            "Einer Freundin sagen, dass du auf ihren Plan keine Lust hast"
+          ],
+          "tipp": "Die Leitung stellt sich mit auf und steht ruhig auch einmal in der Panikzone. Bei wenig Energie oder wenig Platz geht die Übung im Sitzen: Alle zeigen mit einem, zwei oder drei Fingern ihre Zone.",
+          "wennEsKippt": "Stellen sich alle dorthin, wo die Beliebtesten stehen, das ruhig ansprechen – genau das ist Gruppendruck, live. Die nächsten beiden Situationen dann mit geschlossenen Augen: Alle zeigen mit einem, zwei oder drei Fingern ihre Zone, die Leitung zählt und nennt das Ergebnis. Meist verteilt sich die Gruppe dann ganz anders."
+        },
+        {
+          "titel": "Vier Arten, Nein zu sagen",
+          "dauer": 15,
+          "phase": "input",
+          "text": "Die vier Arten an die Tafel schreiben und jede kurz vorspielen; die Leitung übernimmt dabei selbst die drängelnde Rolle, eine freiwillige Person sagt Nein. Danach auf dem Blatt die eigenen Zonen eintragen (Aufgabe 1), die passende Art einkreisen und einen eigenen Nein-Satz formulieren (Aufgabe 2) und zu zweit Anas Antworten im Comic schreiben (Aufgabe 3). Zum Abschluss den Satz an die Tafel schreiben, der für alle vier Arten gilt: Ein echter Freund akzeptiert ein Nein. Kurz sammeln, woran man das im Alltag merkt.",
+          "sagen": [
+            "Welche dieser vier Arten habt ihr schon einmal benutzt – vielleicht, ohne es zu merken?",
+            "Ein Nein braucht keine lange Begründung. Je länger die Erklärung, desto mehr Angriffsfläche."
+          ],
+          "punkte": [
+            "Kaputte Schallplatte: ruhig immer wieder denselben Satz sagen – „Nein, ich will nicht.“",
+            "Nein plus Vorschlag: „Nein. Aber wir könnten stattdessen …“",
+            "Mit Humor: „Nee, dafür bin ich heute echt zu faul.“",
+            "Einfach gehen: Man muss sich nicht rechtfertigen."
+          ],
+          "tipp": "Den Glaubenssatz aus Modul 4 aufgreifen: „Wenn ich Nein sage, mag mich keiner mehr.“ Die hilfreiche Antwort darauf kennt die Gruppe schon – echte Freunde akzeptieren mein Nein.",
+          "wennEsKippt": "Kommt der Einwand „Dann bin ich raus aus der Gruppe“, ihn ernst nehmen und nicht wegreden. Fragen: Was kostet ein Nein – und was kostet ein Ja, das man eigentlich nicht will? Beides gehört auf den Tisch.",
+          "blatt": "skills-nein-sagen"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Imbiss und frische Luft. Die Leitung lässt das Thema ruhen. Erzählt jemand in der Pause eine eigene Druck-Geschichte, zuhören, nicht bewerten und ein Gespräch nach der Einheit anbieten."
+        },
+        {
+          "titel": "Druck-Situationen besprechen und spielen",
+          "dauer": 23,
+          "phase": "aktiv",
+          "text": "Die Karten D1–D6 verdeckt auslegen. Zu zweit oder zu dritt eine Karte ziehen und mit drei Fragen besprechen: Wie würdest du dich fühlen? Was würdest du tun? Was wäre mutig? Danach spielen ein bis zwei Gruppen ihre Situation vor; die Person, die Nein sagt, nutzt eine der vier Arten. Die drängelnde Rolle übernimmt beim ersten Mal die Leitung, danach nur Freiwillige. Jede Szene ein zweites Mal spielen, diesmal mit einer weiteren Person, die ebenfalls Nein sagt.",
+          "sagen": [
+            "Wie würdest du dich fühlen? Was würdest du tun? Und was wäre hier mutig?",
+            "Was hat sich verändert, als eine zweite Person auch Nein gesagt hat?"
+          ],
+          "tipp": "Das zweite Nein ist der stärkste Moment der Einheit: Fast jede Szene kippt, sobald jemand zur Seite der Person wechselt, die Nein sagt. Das ausdrücklich benennen – es bereitet die Zivilcourage in der nächsten Einheit vor.",
+          "wennEsKippt": "Bei Karten zu Alkohol oder Diebstahl erzählen manche von eigenen Erlebnissen oder prahlen damit. Nicht vertiefen und nicht bewerten, sondern zur Karte zurückführen: Heute geht es um die Person auf der Karte. Wer eine Geschichte loswerden will, bekommt ein Gespräch nach der Einheit angeboten.",
+          "blatt": "skills-situationskarten"
+        },
+        {
+          "titel": "Skill: der Anker vor dem Nein",
+          "dauer": 5,
+          "phase": "skill",
+          "text": "Jede Person nimmt ihre Skills-Kärtchen aus Einheit 15 und sucht den Skill heraus, der in einem Druck-Moment helfen könnte. Dann gemeinsam im Stehen den Anker üben, der auf dem festen Stand aus Einheit 23 aufbaut: Füße fest auf den Boden, einmal lang ausatmen, dann den eigenen Nein-Satz vom Blatt sagen – erst leise, dann in normaler Lautstärke. Drei Durchgänge; zum Schluss nachfragen, was sich beim dritten Mal anders angefühlt hat.",
+          "sagen": [
+            "Füße spüren. Lang ausatmen. Dann erst der Satz.",
+            "Ein ruhiger Atemzug vor dem Nein gibt euch zwei Sekunden – oft reichen genau die."
+          ],
+          "tipp": "Wer nicht laut sprechen mag, sagt den Satz innerlich; der Anker wirkt trotzdem. Mit nur zwei Jugendlichen üben beide gegenüber der Leitung, die kurz und freundlich drängelt.",
+          "blatt": "skills-kaertchen"
+        },
+        {
+          "titel": "Wenn-dann-Plan, Réckbléck und Skills-Pass",
+          "dauer": 7,
+          "phase": "abschluss",
+          "text": "Zuerst schreibt jede Person auf dem Blatt „Nein sagen – vier Wege“ ihren Wenn-dann-Plan für einen Moment, den sie kennt (Aufgabe 4). Dann Blitzlicht mit dem Daumen: Wie sicher fühlt sich mein Nein jetzt an – Daumen hoch, Mitte oder runter? Wer mag, sagt einen Satz dazu. Eintrag in den Skills-Pass, etwa der eigene Nein-Satz, und Stempel. Dann den Ausblick geben.",
+          "sagen": [
+            "Daumen: Wie sicher fühlt sich euer Nein heute an? Wer mag, sagt, was es noch sicherer machen würde."
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Nächstes Mal geht es um ein Thema, das viele betrifft: Mobbing – und was jede und jeder dagegen tun kann.",
+      "hintergrund": "Im Jugendalter gewinnt die Meinung Gleichaltriger stark an Gewicht. In einem Experiment gingen Jugendliche in einem Fahrspiel am Computer deutlich mehr Risiken ein, wenn Gleichaltrige zuschauten; bei Erwachsenen war dieser Effekt viel schwächer (Gardner & Steinberg, 2005). Schon Asch (1956) zeigte, dass sich viele Menschen einer eindeutig falschen Mehrheit anschließen – hatte eine Person nur einen einzigen Verbündeten, sank diese Anpassung deutlich. Das Bild von Komfort-, Lern- und Panikzone (Senninger, 2000) hilft, zwischen Mut und Überforderung zu unterscheiden. Für die Gruppe folgen daraus zwei Botschaften: Gruppendruck ist kein Charakterfehler, sondern eine erwartbare Herausforderung dieses Alters, und ein zweites Nein wirkt stark. Das Fertigkeitentraining der DBT für Jugendliche übt dafür kurze, wiederholbare Sätze (die „kaputte Schallplatte“) und ein selbstsicheres Auftreten (Rathus & Miller, 2015).",
+      "quellen": [
+        "Gardner, M. & Steinberg, L. (2005). Peer influence on risk taking, risk preference, and risky decision making in adolescence and adulthood: An experimental study. Developmental Psychology, 41(4), 625–635.",
+        "Asch, S. E. (1956). Studies of independence and conformity: I. A minority of one against a unanimous majority. Psychological Monographs: General and Applied, 70(9), 1–70.",
+        "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford.",
+        "Senninger, T. (2000). Abenteuer leiten – in Abenteuern lernen. Münster: Ökotopia."
+      ],
+      "achtung": "Karten zu Alkohol, Diebstahl oder Mutproben können eigene Erfahrungen berühren. Persönliche Erlebnisse mit Substanzen oder Straftaten nicht in der Gruppe vertiefen und nicht bewerten; ein Einzelgespräch anbieten. Rollenspiele nur mit den Situationen der Karten, nie mit echten Konflikten aus der Gruppe; die drängelnde Rolle zuerst von der Leitung spielen lassen. Wird deutlich, dass jemand erpresst, bedroht oder zu etwas gedrängt wird – auch online oder mit sexuellem Druck –, die zuständige Leitung (Responsable) informieren und bei Gefährdung sofort nach dem internen Schutzkonzept handeln."
+    },
+    {
+      "id": "j1-e26",
+      "nr": 26,
+      "jahr": 1,
+      "modul": "j1-m6",
+      "titel": "Mobbing und Zivilcourage",
+      "kurz": "Wann ist ein Spaß kein Spaß mehr? Die Gruppe unterscheidet Spaß, Konflikt und Mobbing, versteht die Macht der Zuschauenden und baut Stufe für Stufe ihre Zivilcourage-Leiter.",
+      "dauer": 100,
+      "ziele": [
+        "unterscheiden Spaß, Konflikt und Mobbing anhand von vier Merkmalen",
+        "beschreiben die Rollen im Mobbing und erkennen, dass Zuschauende es beenden können",
+        "kennen sichere Handlungsmöglichkeiten auf der Zivilcourage-Leiter und wählen eine eigene Stufe",
+        "wissen, wo sie in Luxemburg und in der Schule Hilfe bekommen"
+      ],
+      "material": [
+        "Gefühlsrad (A3, laminiert) und Anspannungsskala 0–100",
+        "Drei Schilder für die Ecken: Spaß, Konflikt, Mobbing",
+        "Sechs Stühle und sechs Rollenkarten (A5): Täter, Helfer, Verstärker, Außenstehende, Verteidiger, Betroffene Person",
+        "Sechs A4-Blätter mit den Stufen der Zivilcourage-Leiter (groß geschrieben)",
+        "Schülerblätter „Spaß, Konflikt oder Mobbing?“ und „Die Zivilcourage-Leiter“ für jede Person",
+        "Situationskarten M1–M6 (Blatt „Situationskarten“), ausgeschnitten",
+        "Plakat mit den Anlaufstellen zum Aushängen: Kanner- a Jugendtelefon 116 111, BEE SECURE Helpline 8002 1234, SePAS und Vertrauenspersonen der Schule",
+        "Skills-Pässe, Stempel, Imbiss und Getränke"
+      ],
+      "vorbereitung": [
+        "Vorab im Team klären, ob es in der Gruppe aktuell Hinweise auf Mobbing gibt. Wenn ja, die Einheit mit der zuständigen Leitung (Responsable) abstimmen und Beispiele weglassen, die der realen Lage ähneln.",
+        "Namen in den Beispielen austauschen, falls jemand in der Gruppe so heißt.",
+        "Ecken beschriften, Stühle und Rollenkarten bereitstellen, die Leiter-Blätter griffbereit legen.",
+        "Die Nummern der Anlaufstellen und die Ansprechpersonen der Schule prüfen und auf das Plakat schreiben."
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-mobbing-erkennen",
+        "skills-zivilcourage-leiter",
+        "skills-situationskarten",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Gefühlsrad, Anspannung, Zugehörigkeit"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Rückblick Nein sagen, Rahmen für heute"
+        },
+        {
+          "min": "15–30",
+          "phase": "uebung",
+          "titel": "Spaß, Konflikt oder Mobbing?"
+        },
+        {
+          "min": "30–45",
+          "phase": "input",
+          "titel": "Die Rollen im Mobbing"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–85",
+          "phase": "aktiv",
+          "titel": "Die Zivilcourage-Leiter und Situationen"
+        },
+        {
+          "min": "85–93",
+          "phase": "skill",
+          "titel": "Positivitätskette"
+        },
+        {
+          "min": "93–100",
+          "phase": "abschluss",
+          "titel": "Anlaufstellen, Réckbléck und Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: Wo gehörst du dazu?",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Gefühlsrad und Anspannungsskala wie gewohnt. Als Zusatzfrage heute etwas Stärkendes, freiwillig: Wo oder mit wem fühlst du dich so richtig zugehörig? Ein Wort reicht – ein Ort, ein Hobby, eine Person ohne Nachnamen. Die Leitung beginnt.",
+          "sagen": [
+            "Gefühl, Zahl und ein Wort: Wo gehört ihr so richtig dazu?"
+          ],
+          "tipp": "Die Frage nach Zugehörigkeit ist bewusst stärkend gewählt: Sie gibt Halt, bevor es um ein schweres Thema geht, und zeigt, worum es bei Mobbing im Kern geht – um Ausschluss.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Rückblick und Rahmen",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "Kurz an das Nein unter Druck erinnern, besonders an das zweite Nein, das jede Szene verändert hat. Dann das Thema nennen und den Rahmen ausdrücklich klären: Niemand wird heute nach eigenen Erfahrungen gefragt, alle Beispiele sind erfunden, und wer eine Pause braucht, darf kurz rausgehen. Auf das Angebot hinweisen, nach der Einheit unter vier Augen zu sprechen.",
+          "sagen": [
+            "Heute geht es um Mobbing. Ihr müsst hier nichts von euch erzählen – wir arbeiten mit erfundenen Geschichten.",
+            "Wenn euch etwas nahegeht, dürft ihr jederzeit kurz raus. Und nach der Stunde habe ich Zeit, falls jemand reden möchte."
+          ]
+        },
+        {
+          "titel": "Spaß, Konflikt oder Mobbing?",
+          "dauer": 15,
+          "phase": "uebung",
+          "text": "Drei Ecken beschriften: Spaß, Konflikt, Mobbing. Die Leitung liest die Situationen aus der Tabelle vor, und alle stellen sich in die passende Ecke; wer unsicher ist, stellt sich zwischen zwei Ecken. Nach jeder Situation eine Person pro Ecke fragen, woran sie es festmacht, und aus den Begründungen die vier Merkmale von Mobbing ableiten (Liste). Den Unterschied zur Konflikt-Treppe benennen: Die Treppe setzt zwei ungefähr Gleichstarke voraus – bei Mobbing braucht es Schutz und Hilfe von außen. Zum Schluss Aufgabe 1 auf dem Blatt allein bearbeiten.",
+          "sagen": [
+            "Woran habt ihr das festgemacht?",
+            "Ein Spaß ist nur dann ein Spaß, wenn alle lachen können – auch die Person, um die es geht."
+          ],
+          "punkte": [
+            "Es passiert wiederholt und über längere Zeit.",
+            "Es gibt ein Ungleichgewicht: Eine Seite ist stärker – mehr Leute, älter, beliebter.",
+            "Es ist absichtlich.",
+            "Die betroffene Person kann sich allein nicht wehren."
+          ],
+          "tabelle": {
+            "spalten": [
+              "Situation",
+              "Eher …",
+              "Woran man es erkennt"
+            ],
+            "zeilen": [
+              [
+                "Zwei Freunde ziehen sich mit Spitznamen auf, beide lachen.",
+                "Spaß",
+                "Beide machen mit, beide können aufhören."
+              ],
+              [
+                "Nach einem Foul beschimpfen sich zwei Spieler, am nächsten Tag ist es vorbei.",
+                "Konflikt",
+                "Einmalig, beide wehren sich."
+              ],
+              [
+                "Seit Wochen macht eine Gruppe Geräusche, sobald Elias etwas sagt.",
+                "Mobbing",
+                "Wiederholt, mehrere gegen einen."
+              ],
+              [
+                "Mila und Zoé streiten, wer das Referat vortragen darf.",
+                "Konflikt",
+                "Ungefähr gleich stark, ein Streitpunkt."
+              ],
+              [
+                "Über Samuels Schuhe gibt es jeden Tag einen Witz. Er lacht mit, geht aber inzwischen allein in die Pause.",
+                "Grenzfall, eher Mobbing",
+                "Ein Spaß hört auf, wenn eine Seite nicht mehr lacht."
+              ]
+            ]
+          },
+          "tipp": "Für den Grenzfall am Ende Zeit lassen: An ihm lernt die Gruppe mehr als an den eindeutigen Beispielen. Mit nur zwei Jugendlichen die Ecken durch drei Karten auf dem Tisch ersetzen, auf die beide zeigen.",
+          "wennEsKippt": "Nennt jemand eine Situation aus der eigenen Klasse oder zeigt auf ein Gruppenmitglied, freundlich stoppen: Heute bleiben wir bei den erfundenen Beispielen. Danach im Blick behalten, wie es der genannten Person geht, und nach der Einheit das Gespräch suchen.",
+          "blatt": "skills-mobbing-erkennen"
+        },
+        {
+          "titel": "Die Rollen im Mobbing",
+          "dauer": 15,
+          "phase": "input",
+          "text": "Sechs Stühle im Halbkreis aufstellen und je eine Rollenkarte darauflegen (Liste). Der Stuhl der betroffenen Person steht etwas abseits und bleibt leer – niemand setzt sich darauf. Die Geschichte „Die Sprachnachricht“ vom Blatt vorlesen und gemeinsam klären, wer auf welchen Stuhl gehört; danach Aufgabe 2 auf dem Blatt. Dann die Leitfrage stellen: Wer hat die meiste Macht, das zu stoppen? Die Stühle der Verstärker und der Außenstehenden nacheinander zum leeren Stuhl drehen und fragen, was sich für den Täter jetzt ändert. Die eigene Antwort schreibt jede Person als Aufgabe 3 auf das Blatt.",
+          "sagen": [
+            "Wer von diesen Personen könnte das Ganze am leichtesten stoppen?",
+            "Mobbing braucht Publikum. Wenn das Publikum die Seite wechselt, fällt die Bühne weg.",
+            "Rollen beschreiben, was jemand tut – nicht, wer jemand ist. Man kann die Rolle jeden Tag wechseln."
+          ],
+          "punkte": [
+            "Täter: fängt an und bestimmt, was passiert",
+            "Helfer: macht mit, sobald es losgeht",
+            "Verstärker: lacht, feuert an, liked",
+            "Außenstehende: schauen weg oder lesen nur mit",
+            "Verteidiger: halten zur betroffenen Person oder holen Hilfe",
+            "Betroffene Person: wird immer wieder angegriffen und kann sich allein nicht wehren"
+          ],
+          "tipp": "Hier den Gruppenvertrag aus Einheit 1 zeigen: „Wir lachen miteinander, nicht übereinander.“ Die Regel bekommt jetzt ein Gesicht.",
+          "wennEsKippt": "Wird es still und bedrückt, nicht darüber hinweggehen. Kurz benennen, dass das Thema schwer ist, eine Minute Pause anbieten (Fenster auf, Wasser trinken) und dann mit der Frage weitermachen, was Zuschauende tun können – das gibt Handlungsspielraum zurück.",
+          "blatt": "skills-mobbing-erkennen"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Imbiss und frische Luft. Die Leitung bleibt ansprechbar und achtet darauf, ob sich jemand zurückzieht oder auffällig still ist. Wer das Gespräch sucht, bekommt es jetzt oder direkt nach der Einheit."
+        },
+        {
+          "titel": "Die Zivilcourage-Leiter",
+          "dauer": 25,
+          "phase": "aktiv",
+          "text": "Die sechs Leiter-Blätter als Sprossen auf den Boden legen, Stufe 1 vorne (Liste). Die Stufen gemeinsam durchgehen: vom Einfachen zum Mutigen, und immer so, dass man sich selbst nicht gefährdet. Dann liest die Leitung eine Situationskarte (M1–M6) vor, und alle stellen sich auf die Stufe, die sie sich in dieser Lage zutrauen; zwei oder drei Personen sagen, was sie genau tun würden. Nach drei Karten füllen alle ihr Blatt aus: einkreisen, was sie schon können, einen Stern an die Stufe setzen, die sie üben wollen, und einen konkreten ersten Schritt planen.",
+          "sagen": [
+            "Jede Stufe zählt. Wer auf Stufe 1 steht, hat schon aufgehört, Publikum zu sein.",
+            "Was ist der Unterschied zwischen Petzen und Hilfe holen?"
+          ],
+          "punkte": [
+            "1 Nicht mitlachen, nichts weiterleiten.",
+            "2 Der betroffenen Person zeigen: Ich bin auf deiner Seite – auch später, unter vier Augen oder per Nachricht.",
+            "3 Andere dazuholen: Zu zweit oder zu dritt ist es leichter.",
+            "4 Einer erwachsenen Person Bescheid sagen. Das ist Hilfe holen, kein Petzen.",
+            "5 Online: Beweise sichern, melden, nicht liken und nicht teilen.",
+            "6 Direkt „Stopp“ sagen – nur, wenn es für dich sicher ist."
+          ],
+          "tipp": "Die Petzen-Frage kommt fast immer. Eine klare Antwort hilft: Petzen will jemandem schaden, Hilfe holen will jemanden schützen. Bei wenig Platz die Leiter auf einen Tisch legen; dann zeigen alle mit einem Stift auf ihre Stufe.",
+          "wennEsKippt": "Behauptet jemand, er würde sich sofort dazwischenwerfen, das nicht belächeln, aber einordnen: Stufe 6 ist nur richtig, wenn sie sicher ist. Wer sich selbst in Gefahr bringt, hilft am Ende niemandem – Hilfe holen ist oft die mutigere Wahl.",
+          "blatt": "skills-zivilcourage-leiter"
+        },
+        {
+          "titel": "Positivitätskette",
+          "dauer": 8,
+          "phase": "skill",
+          "text": "Alle sitzen im Kreis. Reihum sagt jede Person der Person rechts neben sich etwas, das sie an ihr schätzt oder im Kurs an ihr erlebt hat; die angesprochene Person antwortet nur mit Danke. Die Leitung beginnt und zeigt, wie konkret es sein darf. Danach eine Minute Stille mit geschlossenen oder gesenkten Augen: Wie hat sich der Satz angefühlt, den du bekommen hast?",
+          "sagen": [
+            "Etwas, das ihr an der Person neben euch schätzt – und die Antwort ist einfach: Danke.",
+            "Das hier ist das Gegenteil von Mobbing: Eine Person nach der anderen wird gesehen."
+          ],
+          "tipp": "Wem nichts einfällt, sagt etwas, das die Person heute im Kurs gemacht hat. Komplimente zum Aussehen vorher freundlich ausschließen – sie treffen nicht alle gleich.",
+          "wennEsKippt": "Kommt ein ironischer oder abwertender Satz, die Runde kurz anhalten, ruhig die Regel wiederholen und die Person noch einmal ansetzen lassen. Die angesprochene Person bekommt in jedem Fall einen zweiten, echten Satz – notfalls von der Leitung."
+        },
+        {
+          "titel": "Anlaufstellen, Réckbléck und Skills-Pass",
+          "dauer": 7,
+          "phase": "abschluss",
+          "text": "Das Plakat mit den Anlaufstellen zeigen und aufhängen: Kanner- a Jugendtelefon 116 111, BEE SECURE Helpline 8002 1234, SePAS und Vertrauenspersonen in der Schule. Jede Person trägt auf dem Leiter-Blatt eine eigene Vertrauensperson ein. Dann Blitzlicht und Skills-Pass mit Stempel. Zum Schluss das Angebot wiederholen, nach der Einheit unter vier Augen zu sprechen.",
+          "sagen": [
+            "Ein Satz: Welche Stufe der Leiter traut ihr euch ab morgen zu?",
+            "Ich bleibe nach der Stunde noch ein paar Minuten hier – falls jemand etwas loswerden möchte."
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Viel Mobbing passiert heute online. Nächstes Mal schauen wir uns deshalb die digitale Welt genauer an – und fangen bei euch und eurem Handy an.",
+      "hintergrund": "Olweus (1993) beschreibt Mobbing über drei Merkmale: wiederholte, absichtlich verletzende Handlungen und ein Ungleichgewicht der Kräfte, sodass sich die betroffene Person kaum wehren kann. Das unterscheidet Mobbing vom Konflikt zwischen ungefähr Gleichstarken. Mobbing ist zudem ein Gruppenprozess: Salmivalli et al. (1996) konnten den meisten Kindern einer Klasse eine Rolle zuordnen – Täter, Helfer, Verstärker, Außenstehende, Verteidiger oder Betroffene. Wer lacht oder schweigt, sichert dem Täter Publikum. Programme wie KiVa, die gezielt die Zuschauenden stärken, senken Mobbing messbar (Kärnä et al., 2011). Warum Zuschauende oft nicht eingreifen, erklären Latané und Darley (1970): Die Verantwortung verteilt sich auf viele, und wer nicht weiß, was er tun kann, bleibt passiv. Die Zivilcourage-Leiter gibt deshalb konkrete, sichere Schritte vor.",
+      "quellen": [
+        "Olweus, D. (1993). Bullying at School: What We Know and What We Can Do. Oxford: Blackwell.",
+        "Salmivalli, C., Lagerspetz, K., Björkqvist, K., Österman, K. & Kaukiainen, A. (1996). Bullying as a group process: Participant roles and their relations to social status within the group. Aggressive Behavior, 22(1), 1–15.",
+        "Kärnä, A., Voeten, M., Little, T. D., Poskiparta, E., Kaljonen, A. & Salmivalli, C. (2011). A large-scale evaluation of the KiVa antibullying program: Grades 4–6. Child Development, 82(1), 311–330.",
+        "Latané, B. & Darley, J. M. (1970). The Unresponsive Bystander: Why Doesn’t He Help? New York: Appleton-Century-Crofts."
+      ],
+      "achtung": "Mobbing kann in der Gruppe selbst vorkommen – bei Betroffenen, bei Tätern und bei Zuschauenden. Deshalb niemanden nach eigenen Erfahrungen fragen, keine Rollen mit Gruppenmitgliedern besetzen und keine Namen sammeln. Gibt es Hinweise auf Mobbing in der Gruppe oder im Umfeld, nicht öffentlich klären und niemanden im Plenum konfrontieren: zuerst allein mit der betroffenen Person sprechen, ihren Schutz sichern und fragen, was sie braucht; keine Verschwiegenheit versprechen, die nicht gehalten werden kann. Beobachtungen mit Datum notieren, die zuständige Leitung (Responsable) informieren und nach dem internen Schutzkonzept vorgehen; Gespräche mit den übrigen Beteiligten getrennt und erst nach Absprache führen. Bei Gewalt, Drohungen, Nacktbildern oder Suizidgedanken sofort handeln."
+    }
+  ]
+}

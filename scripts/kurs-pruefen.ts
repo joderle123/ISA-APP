@@ -10,6 +10,12 @@ import type { Einheit, KursDatei, Modul, Phase } from '../src/kurs/typen'
 import type { Blatt } from '../src/blatt/typen'
 import { QUELLEN_TEXTE } from '../src/blatt/quellen'
 
+/** Übliche Kurzformen von Institutionen als Autor (im Hintergrundtext). */
+const AUTOR_KURZ: Record<string, string[]> = {
+  'World Health Organization': ['WHO', 'Weltgesundheitsorganisation'],
+  'Council of Europe': ['Europarat'],
+}
+
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..')
 const args = process.argv.slice(2)
 const streng = args.includes('--streng')
@@ -244,9 +250,13 @@ for (const { e, datei } of einheiten.values()) {
   else if (e.hintergrund.length < 300 || e.hintergrund.length > 1000) melde('H', wo, `Hintergrund ${e.hintergrund.length} Zeichen (300–900)`)
   for (const q of e.quellen ?? []) {
     if (!QUELLEN_TEXTE.has(q)) melde('F', wo, `Quelle nicht in src/blatt/quellen.ts: „${q.slice(0, 70)}“`)
-    const autor = q.split(',')[0].replace(/^(de|von|van) /, '').trim()
+    // Autor: Text vor dem Jahr – bei Personen der Nachname vor dem ersten Komma,
+    // bei Institutionen (WHO, Europarat) der ganze Name oder eine übliche Kurzform
+    const vorJahr = q.split(/\s\(\d{4}/)[0]
+    const autor = (vorJahr.includes(',') ? vorJahr.split(',')[0] : vorJahr).replace(/^(de|von|van) /, '').trim()
+    const namen = [autor, ...(AUTOR_KURZ[autor] ?? [])]
     const jahr = /\((\d{4})/.exec(q)?.[1]
-    if (e.hintergrund && jahr && !(e.hintergrund.includes(autor) && e.hintergrund.includes(jahr))) melde('H', wo, `Quelle ${autor} (${jahr}) wird im Hintergrund nicht genannt`)
+    if (e.hintergrund && jahr && !(namen.some((n) => e.hintergrund!.includes(n)) && e.hintergrund.includes(jahr))) melde('H', wo, `Quelle ${autor} (${jahr}) wird im Hintergrund nicht genannt`)
   }
   if (e.hintergrund && !(e.quellen ?? []).length) melde('H', wo, 'Hintergrund ohne Quelle')
   if (!e.achtung) melde('H', wo, '„achtung“ fehlt')

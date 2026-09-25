@@ -1,0 +1,822 @@
+{
+  "grundlagen": [
+    {
+      "id": "kurs",
+      "titel": "So arbeitet der Kurs",
+      "abschnitte": [
+        {
+          "titel": "Worum es geht",
+          "text": "Der Skills-Kurs des CDSE begleitet eine Kleingruppe von vier bis acht Jugendlichen zwischen 12 und 16 Jahren durch ein Schuljahr: 30 Einheiten zu je 100 Minuten, meist einmal pro Woche, mit einer oder zwei Leitungen. Die Jugendlichen lernen Fertigkeiten, mit denen sie besser durch schwierige Momente kommen: Gefühle erkennen und regulieren, hilfreich über sich denken, sagen, was sie brauchen, Grenzen setzen, Konflikte lösen und für sich sorgen.\n\nSkills lernt man wie einen Sport oder ein Instrument – durch Üben, nicht durch Zuhören. Deshalb ist jede Einheit aktiv, viele Übungen kehren wieder, und am Ende jeder Einheit hält jede Person im Skills-Pass fest, was sie mitnimmt. Jede Einheit ist so ausgearbeitet, dass auch eine Kollegin sie halten kann, die den Kurs nicht selbst begonnen hat: mit Ablauf, Anleitung, Beispielsätzen, Material und Schülerblättern."
+        },
+        {
+          "titel": "Haltung der Leitung",
+          "punkte": [
+            "Die Jugendlichen sind Fachleute für ihr eigenes Leben. Die Leitung bringt Werkzeuge mit und fragt, was davon passt.",
+            "Die Leitung macht mit: Sie beginnt den Check-in, probiert jeden Skill selbst aus und zeigt, dass auch Erwachsene üben.",
+            "Beziehung geht vor Methode. Passt eine Übung an einem Tag nicht, wird sie gekürzt oder getauscht – Ersatz steht im Methoden-Pool.",
+            "Zuerst wird gesucht, was schon gelingt. Fehler und schwierige Gefühle gehören dazu und werden nicht bewertet.",
+            "Verlässlichkeit gibt Sicherheit: gleicher Raum, gleiche Uhrzeit, gleiche Rituale, Regeln aus dem Gruppenvertrag.",
+            "Humor ja, Ironie über Jugendliche nein. Keine Diagnosen, keine Belehrung, kein erhobener Zeigefinger."
+          ]
+        },
+        {
+          "titel": "Das Jahr als Treppe",
+          "text": "Das Jahr führt vom Ich über das Wir zur Welt. Jedes Modul baut auf dem vorigen auf: Wer seine Bedürfnisse kennt, versteht seine Gefühle besser; wer Gefühle regulieren kann, bleibt auch in Konflikten klar. In der ersten Einheit wird die Treppe als Jahresweg gezeigt, und sie kommt im Lauf des Jahres wieder, damit die Gruppe sieht, wo sie steht.",
+          "tabelle": {
+            "spalten": [
+              "Modul",
+              "Leitfrage",
+              "Einheiten"
+            ],
+            "zeilen": [
+              [
+                "0 · Ankommen",
+                "Wer sind wir als Gruppe?",
+                "1–3"
+              ],
+              [
+                "1 · Wer bin ich?",
+                "Was brauche ich, was kann ich?",
+                "4–6"
+              ],
+              [
+                "2 · Gefühle verstehen",
+                "Was fühle ich – und wozu?",
+                "7–10"
+              ],
+              [
+                "3 · Gefühle regulieren (Skills)",
+                "Was hilft mir, wenn es zu viel wird?",
+                "11–15"
+              ],
+              [
+                "4 · Meine Gedanken",
+                "Was denke ich über mich – und stimmt das?",
+                "16–19"
+              ],
+              [
+                "5 · Kommunikation & Grenzen",
+                "Wie sage ich, was ich fühle und brauche?",
+                "20–23"
+              ],
+              [
+                "6 · Wenn es schwierig wird",
+                "Was tue ich bei Konflikten, Gruppendruck und Mobbing?",
+                "24–26"
+              ],
+              [
+                "7 · Digitale Welt",
+                "Was macht das Handy mit mir?",
+                "27–28"
+              ],
+              [
+                "8 · Gesund & stark",
+                "Wie sorge ich für mich?",
+                "29"
+              ],
+              [
+                "9 · Abschluss",
+                "Was nehme ich mit?",
+                "30"
+              ]
+            ]
+          }
+        },
+        {
+          "titel": "Aufbau einer Einheit",
+          "text": "Die Minuten sind ein Gerüst. Einzelne Einheiten weichen ab, wenn der Inhalt es verlangt – etwa bei Filmen, Naturtagen oder im Abschluss. Die Reihenfolge bleibt: ankommen, ruhiger arbeiten, nach der Pause in Bewegung kommen und am Ende wieder herunterfahren, damit niemand aufgedreht in den Unterricht zurückgeht.",
+          "tabelle": {
+            "spalten": [
+              "Min.",
+              "Phase",
+              "Was passiert"
+            ],
+            "zeilen": [
+              [
+                "0–10",
+                "Ankommen",
+                "Check-in mit dem Gefühlsrad, ab Einheit 11 zusätzlich Anspannung 0–100"
+              ],
+              [
+                "10–15",
+                "Brücke",
+                "Kurzer Rückblick auf die letzte Einheit, Thema von heute nennen"
+              ],
+              [
+                "15–45",
+                "Hauptteil 1",
+                "Input und erste Übung, eher ruhig, oft mit Schülerblatt"
+              ],
+              [
+                "45–60",
+                "Pause",
+                "Imbiss – bewusst Teil des Programms"
+              ],
+              [
+                "60–85",
+                "Hauptteil 2",
+                "Bewegung, Spiel, Natur oder Rollenspiel"
+              ],
+              [
+                "85–95",
+                "Skill",
+                "Ein Skill oder eine Achtsamkeitsübung zum Runterkommen"
+              ],
+              [
+                "95–100",
+                "Réckbléck",
+                "Blitzlicht, Eintrag in den Skills-Pass, Ausblick"
+              ]
+            ]
+          }
+        },
+        {
+          "titel": "Feste Rituale",
+          "punkte": [
+            "Check-in: Jede Person zeigt auf dem Gefühlsrad, wie es ihr geht, und sagt einen Satz dazu; ab Einheit 11 kommt die Anspannung von 0 bis 100 dazu. Die Leitung beginnt. „Weiter“ ist erlaubt.",
+            "Brücke: ein, zwei Sätze zur letzten Einheit, dann das Thema von heute. So wird sichtbar, dass die Einheiten zusammenhängen.",
+            "Imbiss: gemeinsames Essen als Teil des Programms. Hier entsteht oft am meisten Beziehung; das Thema der Einheit ruht.",
+            "Skill zum Runterkommen: Jede Einheit endet ruhig, mit einer kurzen Übung.",
+            "Réckbléck: ein Blitzlicht oder eine andere kurze Runde, jedes Mal mit einer Leitfrage zum Thema.",
+            "Skills-Pass: Zum Schluss schreibt jede Person einen Satz hinein – das nehme ich mit – und bekommt einen Stempel. Die Pässe bleiben bis zur letzten Einheit in einer Box im Raum.",
+            "Gruppenvertrag: Er hängt in jeder Einheit sichtbar im Raum. Bei Regelverstößen zeigt die Leitung darauf, statt zu schimpfen."
+          ]
+        },
+        {
+          "titel": "Wiederkehrende Fäden",
+          "text": "Was an den Fäden hängt, wird das ganze Jahr aufbewahrt: Glas und Plakat bleiben im Raum, Pässe, Bäume und Bedürfnis-Pegel gehen erst in der letzten Einheit mit nach Hause. Wer eine Einheit vorbereitet, schaut deshalb kurz, welcher Faden heute aufgenommen wird.",
+          "tabelle": {
+            "spalten": [
+              "Faden",
+              "Wann",
+              "Wozu"
+            ],
+            "zeilen": [
+              [
+                "Gefühlsrad",
+                "jede Einheit",
+                "Gefühle genauer benennen; Grundlage des Check-ins"
+              ],
+              [
+                "Anspannung 0–100",
+                "ab Einheit 11 in jedem Check-in",
+                "die eigene Anspannung einschätzen und den passenden Skill wählen"
+              ],
+              [
+                "Skills-Pass",
+                "jede Einheit, Rückblick in Einheit 30",
+                "in einem Satz festhalten, was bleibt"
+              ],
+              [
+                "Gruppenvertrag",
+                "Einheit 1, überprüft in Einheit 3 und bei Bedarf",
+                "Regeln, auf die sich alle berufen können"
+              ],
+              [
+                "Glas der Bedürfnisse",
+                "Einheit 4 → 15 → 30",
+                "Bedürfnisse sichtbar machen und mit Gefühlen und Skills verbinden"
+              ],
+              [
+                "Baum der Stärke",
+                "Einheit 6 → 19 → 30",
+                "Ressourcen und Stärken sammeln und im Lauf des Jahres ergänzen"
+              ],
+              [
+                "Plakat „Was sind Skills?“",
+                "Einheit 1 → 11 → 30",
+                "zeigen, wie das Wissen über Skills wächst"
+              ],
+              [
+                "Skills-Koffer und Ampelplan",
+                "ab Einheit 15",
+                "persönlicher Plan für Grün, Gelb und Rot; aufgegriffen etwa in den Einheiten 24 und 29"
+              ]
+            ]
+          }
+        },
+        {
+          "titel": "Die nächste Einheit vorbereiten",
+          "punkte": [
+            "In der App unter Skills-Kurs die eigene Gruppe wählen – benannt ohne Namen von Jugendlichen, etwa „Montag 14 Uhr“. Oben steht immer die Einheit, die als Nächstes dran ist.",
+            "Zwei, drei Tage vorher die Einheit öffnen und Ziele, Ablauf, Schritte und den Kasten „Achtung“ lesen. Rund 20 Minuten reichen.",
+            "Material in der Seitenleiste abhaken und Fehlendes besorgen, vor allem Imbiss und Verbrauchsmaterial. Die Haken werden je Gruppe gespeichert.",
+            "Erledigen, was unter „Vorbereitung“ steht: Raum, Plakate, Schilder, bei Filmen die Rechte.",
+            "Schülerblätter drucken: „Schülerblätter (PDF)“ erzeugt eine Datei mit allen Blättern der Einheit – für jede Person plus eine Reserve; „Mit Lehrerseiten“ einmal für die Leitung. Was schon in den Mappen liegt, etwa Skills-Pass oder Gefühlsrad, nicht neu drucken.",
+            "Für die Einheit selbst den „Spickzettel“ drucken: eine Seite mit Minuten, Schritten, dem ersten Impuls und dem Material.",
+            "Varianten überlegen: Was, wenn es regnet, die Energie fehlt oder nur zwei Jugendliche kommen? Die Hinweise „Wenn es kippt“ vorher einmal lesen.",
+            "Nach der Einheit „Heute gehalten“ antippen und in den Notizen festhalten, was getragen hat und was nächstes Mal aufgegriffen wird – ohne Namen von Jugendlichen."
+          ]
+        },
+        {
+          "titel": "Joker-Einheiten",
+          "text": "Ein Schuljahr hat mehr Wochen als 30 Einheiten. Die Joker-Einheiten, etwa Filmeinheiten, ein Naturtag oder Spiele für Tage mit wenig Energie, füllen diese Wochen, zum Beispiel vor den Ferien; bei jeder steht, wann sie passt. Fällt eine reguläre Einheit aus, wird sie nachgeholt statt übersprungen, weil die Module aufeinander aufbauen."
+        }
+      ]
+    },
+    {
+      "id": "rahmen",
+      "titel": "Rahmen und Sicherheit",
+      "abschnitte": [
+        {
+          "titel": "Freiwilligkeit und „weiter“",
+          "text": "Niemand muss in der Gruppe etwas Persönliches erzählen. „Weiter“ ist in jeder Runde erlaubt, ohne Begründung und ohne Nachfrage. Mitmachen heißt nicht, sich zu offenbaren: Die Übungen sind so gebaut, dass man dabei sein kann, ohne Privates preiszugeben – mit harmlosen Aussagen, mit geschlossenen Augen, mit anonymen Zetteln. Schreibaufgaben mit persönlichen Inhalten werden nicht eingesammelt und nicht vorgelesen, außer jemand möchte das. Die Leitung sagt das am Anfang des Jahres und immer dann, wenn es persönlich wird."
+        },
+        {
+          "titel": "Keine Tiefenbohrung in der Gruppe",
+          "text": "Wird ein Thema in der Runde zu persönlich, stoppt die Leitung freundlich, würdigt den Beitrag und bietet ein Gespräch zu zweit an. Das schützt die Person, die erzählt – und die Gruppe, die sonst mehr erfährt, als sie tragen kann. Formulierungen, die sich bewährt haben:",
+          "punkte": [
+            "Danke, dass du das erzählst. Darüber möchte ich lieber in Ruhe mit dir reden – hast du nach der Einheit kurz Zeit?",
+            "Ich merke, das ist ein großes Thema. Ich stoppe dich hier nicht, weil es falsch ist, sondern weil es mehr Zeit verdient.",
+            "Du musst dazu nichts weiter sagen. Wir machen mit der Runde weiter."
+          ]
+        },
+        {
+          "titel": "Wenn jemand etwas Belastendes anvertraut",
+          "text": "Erzählt ein Jugendlicher von Gewalt, Missbrauch, Vernachlässigung, Selbstverletzung oder Suizidgedanken – in der Runde, auf einem Blatt oder im Gespräch danach –, gilt:",
+          "punkte": [
+            "Ruhig bleiben, zuhören, ernst nehmen. Nicht ausfragen, keine Details erfragen, keine Suggestivfragen.",
+            "Nichts versprechen, was man nicht halten kann, vor allem keine Geheimhaltung. Stattdessen sagen, was als Nächstes passiert.",
+            "In der Gruppe nicht vertiefen: kurz sagen, dass die Leitung sich kümmert, und mit etwas Ruhigem weitermachen.",
+            "Zeitnah, möglichst noch am selben Tag, ein Gespräch zu zweit führen.",
+            "Nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) informieren. Bei akuter Gefahr die Person nicht allein lassen und den Notruf wählen (112, Polizei 113).",
+            "Im Gespräch darf man direkt fragen, ob jemand daran denkt, sich etwas anzutun. Die Frage bringt niemanden auf die Idee – sie entlastet eher.",
+            "Festhalten, was die Person wörtlich gesagt hat, wann und wer dabei war – ohne eigene Deutungen.",
+            "Sich selbst Unterstützung holen: Solche Gespräche belasten auch die Leitung."
+          ]
+        },
+        {
+          "titel": "Stopp-Recht",
+          "text": "Jede Person darf bei jeder Übung aussetzen, ohne Begründung. Das gilt besonders für Körper- und Vertrauensübungen, für Übungen mit geschlossenen oder verbundenen Augen, für Traumreisen und für alles mit Berührung. Wer aussetzt, bekommt eine andere Rolle: beobachten, die Zeit nehmen, anleiten, die Augen offen lassen. Berührungen kündigt die Leitung vorher an und fragt, ob sie in Ordnung sind. Ein „Stopp“ während einer Übung gilt sofort – auch wenn es scherzhaft klingt."
+        },
+        {
+          "titel": "Schweigepflicht und ihre Grenzen",
+          "text": "Was in der Gruppe erzählt wird, bleibt in der Gruppe. Das steht im Gruppenvertrag und gilt auch in der Pause, in Chats und in sozialen Medien: keine Fotos von Plakaten mit Namen, keine Screenshots. Die Leitung erklärt von Anfang an ehrlich, wo die Regel für sie endet: Ist jemand in Gefahr, muss sie handeln und Hilfe holen. Sie sagt der betroffenen Person vorher, was sie tut und warum. Diese Offenheit schafft eher Vertrauen als Misstrauen.\n\nInformationen über einzelne Jugendliche gibt die Leitung nur weiter, soweit es für deren Schutz oder Förderung nötig ist, und nach den Regeln der Einrichtung. Notizen in der App bleiben ohne Namen."
+        },
+        {
+          "titel": "Gesundheit, Essen und Düfte",
+          "punkte": [
+            "Vor dem ersten Imbiss Allergien, Unverträglichkeiten und Essensregeln erfragen (etwa vegetarisch, kein Schweinefleisch, Fastenzeiten) und die Liste in jeder Einheit dabeihaben.",
+            "Ätherische Öle nur auf Riechstreifen, nie auf die Haut und nicht direkt aus der Flasche; vorher nach Asthma und Allergien fragen.",
+            "Bewegung an die Gruppe anpassen: Wer verletzt ist oder nicht mitmachen kann, übernimmt eine andere Rolle.",
+            "Draußen das Gelände vorher ansehen und Sichtweite vereinbaren; Übungen mit verbundenen Augen nur auf sicherem Gelände.",
+            "Kerzen nur, wenn die Hausordnung es erlaubt, sonst LED-Kerzen."
+          ]
+        },
+        {
+          "titel": "Filme, Musik und Fotos",
+          "punkte": [
+            "Filme und Filmausschnitte nur zeigen, wenn die Vorführrechte geklärt sind (Schullizenz), und die Altersfreigabe vorher prüfen.",
+            "Fotos von Jugendlichen nur mit deren Einverständnis und nach den Regeln der Einrichtung. Plakate, Bäume und Kunstwerke ohne Gesichter fotografieren.",
+            "Blätter mit persönlichen Inhalten gehören den Jugendlichen. Sie werden nicht ohne deren Einverständnis kopiert, weitergegeben oder aufgehängt."
+          ]
+        },
+        {
+          "titel": "Anlaufstellen in Luxemburg",
+          "text": "Die Nummern gut sichtbar im Raum aushängen und bei Krisen- und Mobbingthemen noch einmal zeigen, etwa in Einheit 26. Alle Nummern und Erreichbarkeiten vor Schuljahresbeginn prüfen und um die Kontakte im eigenen Haus ergänzen: SePAS, psychologischer Dienst, Responsable, Vertrauenspersonen. Für Fragen zu Sexualität und Verhütung ist das Planning Familial eine seriöse Anlaufstelle; die aktuellen Kontaktdaten ebenfalls vorab heraussuchen.",
+          "tabelle": {
+            "spalten": [
+              "Anlaufstelle",
+              "Nummer",
+              "Wofür"
+            ],
+            "zeilen": [
+              [
+                "Notruf: Rettung und Feuerwehr",
+                "112",
+                "akute Gefahr, Verletzung"
+              ],
+              [
+                "Polizei",
+                "113",
+                "Gewalt, Bedrohung"
+              ],
+              [
+                "Kanner- a Jugendtelefon",
+                "116 111",
+                "für Kinder und Jugendliche bei Sorgen aller Art; anonym und kostenlos"
+              ],
+              [
+                "SOS Détresse",
+                "45 45 45",
+                "Hilfe am Telefon in Krisen; anonym"
+              ],
+              [
+                "BEE SECURE Helpline",
+                "8002 1234",
+                "Fragen und Probleme im Internet, Cybermobbing; kostenlos"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "material",
+      "titel": "Material für das ganze Jahr",
+      "abschnitte": [
+        {
+          "titel": "So wird die Liste genutzt",
+          "text": "Die Liste zu Beginn des Schuljahres einmal durchgehen und abhaken. Was nur für einzelne Einheiten dazukommt, steht in der jeweiligen Einheit unter „Material“ und lässt sich dort abhaken."
+        },
+        {
+          "titel": "Für jede Einheit",
+          "punkte": [
+            "Gefühlsrad in A3, laminiert, und Wäscheklammern",
+            "Anspannungsskala 0–100 als Plakat (ab Einheit 11)",
+            "Skills-Pässe in einer Box, Stempel oder Sticker",
+            "Gruppenvertrag (hängt im Raum)",
+            "Eine Mappe je Person für Schülerblätter",
+            "Stifte, dicke Filzstifte, Klebezettel, Malerkrepp",
+            "Lautsprecher für leise Musik",
+            "Liste mit Allergien und Essensregeln"
+          ]
+        },
+        {
+          "titel": "Was das ganze Jahr aufbewahrt wird",
+          "punkte": [
+            "Plakat „Was sind Skills?“ aus Einheit 1 (gebraucht in Einheit 11 und 30)",
+            "Glas der Bedürfnisse mit den Zetteln aus Einheit 4 (bis Einheit 30)",
+            "Bäume der Stärke (A3) aus Einheit 6, flach in einer Sammelmappe",
+            "Bedürfnis-Pegel und weitere Blätter in den persönlichen Mappen",
+            "Gruppensatz Skills-Kärtchen aus Einheit 15"
+          ]
+        },
+        {
+          "titel": "Papier und Bastelmaterial",
+          "punkte": [
+            "Plakate (A1) und A3-Papier",
+            "Buntstifte, Wachsmalkreiden, Filzstifte; keine Permanentmarker für Übungen auf dem Rücken",
+            "Klebepunkte in zwei Farben (Einheit 5)",
+            "Scheren, Klebestifte, farbiges Papier",
+            "Karten im Kreditkartenformat, Laminiergerät und Folien",
+            "Ein großes Schraubglas und bunte Zettel (Einheit 4)",
+            "Umschläge und eine verschließbare Box (Einheit 30)"
+          ]
+        },
+        {
+          "titel": "Sinne, Körper und Achtsamkeit",
+          "punkte": [
+            "Ätherische Öle, etwa Lavendel, Zitrone, Pfefferminze und Orange, dazu Riechstreifen",
+            "Sinneskiste: Federn, glatte Steine, Knetbälle, Stoffreste, Tannenzapfen",
+            "Klangschale",
+            "Federn für die Atem-Feder",
+            "Augenbinden (Einheit 3)",
+            "Weicher Ball",
+            "Matten oder Decken für Bodyscan und Traumreise"
+          ]
+        },
+        {
+          "titel": "Spiele für Pausen und Joker-Einheiten",
+          "punkte": [
+            "Gefühls-Memory",
+            "Dixit oder Postkarten mit Bildern (für Check-ins, optional)",
+            "Dobble und Mikado",
+            "Emotionswürfel",
+            "Dominosteine für die Kettenreaktion"
+          ]
+        },
+        {
+          "titel": "Technik",
+          "punkte": [
+            "Laptop und Beamer oder großer Bildschirm",
+            "Lautsprecher",
+            "Internetzugang für Quiz und Medieneinheiten (Einheiten 27 und 28)",
+            "Geklärte Vorführrechte für Filme (Joker-Einheiten)"
+          ]
+        },
+        {
+          "titel": "Imbiss",
+          "punkte": [
+            "Wasser, Becher, Teller, Servietten",
+            "Schneidebretter, Messer, Schüsseln",
+            "Ein fester Betrag pro Einheit, nach den Regeln der Einrichtung",
+            "Etwas Besonderes für die letzte Einheit, nach dem Wunsch der Gruppe"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "methoden",
+      "titel": "Methoden-Pool",
+      "abschnitte": [
+        {
+          "titel": "So wird der Pool genutzt",
+          "text": "Der Pool ergänzt die Einheiten: als Ersatz, wenn eine Übung nicht passt, als Zusatz, wenn Zeit übrig ist, und als Werkzeug, wenn die Energie der Gruppe kippt. Alle Übungen sind kurz, brauchen wenig Material und lassen ein „Weiter“ zu. Bei Übungen mit Berührung oder geschlossenen Augen gilt immer das Stopp-Recht."
+        },
+        {
+          "titel": "Check-in-Varianten",
+          "text": "Das Gefühlsrad liegt immer bereit. Die Variante darf zum Thema der Einheit passen; ab Einheit 11 kommt in jedem Fall die Anspannung von 0 bis 100 dazu.",
+          "tabelle": {
+            "spalten": [
+              "Variante",
+              "So geht es"
+            ],
+            "zeilen": [
+              [
+                "Gefühlsrad",
+                "Jede Person steckt eine Wäscheklammer an das passende Wort und sagt einen Satz dazu. Das „weil“ ist freiwillig."
+              ],
+              [
+                "Anspannung 0–100",
+                "Zahl nennen oder sich an eine Klebeband-Linie am Boden stellen: 0 an der Tür, 100 am Fenster."
+              ],
+              [
+                "Wetterbericht",
+                "„Mein inneres Wetter ist heute …“ – sonnig, bewölkt, Nebel, Gewitter, Regenbogen."
+              ],
+              [
+                "Finger-Skala",
+                "Auf drei zeigen alle gleichzeitig 0 bis 10 Finger. Gut, wenn wenig Zeit ist oder niemand reden mag."
+              ],
+              [
+                "Zwei Gefühle",
+                "Welche zwei Gefühle sind gerade gleichzeitig da? Passt ab Einheit 10."
+              ],
+              [
+                "Körper-Check",
+                "Gefühl nennen und zeigen, wo es im Körper sitzt. Passt ab Einheit 9."
+              ],
+              [
+                "Bildkarte",
+                "Aus Postkarten oder Dixit-Karten eine wählen, die zur Stimmung passt, und einen Satz dazu sagen."
+              ],
+              [
+                "Akkustand",
+                "„Mein Akku steht heute bei … Prozent.“ Wer mag, sagt, was ihn geladen oder geleert hat."
+              ],
+              [
+                "Symbol an der Tafel",
+                "Jede Person zeichnet ein Gesicht oder ein Wettersymbol an die Tafel; die anderen dürfen raten."
+              ]
+            ]
+          }
+        },
+        {
+          "titel": "Réckbléck-Varianten",
+          "text": "Der Skills-Pass ist immer der letzte Schritt. Davor eine kurze Runde, die zum Thema passt:",
+          "tabelle": {
+            "spalten": [
+              "Variante",
+              "So geht es"
+            ],
+            "zeilen": [
+              [
+                "Blitzlicht",
+                "Ein Satz zu heute, reihum, ohne Kommentar der anderen."
+              ],
+              [
+                "Daumen",
+                "Daumen hoch, Mitte oder runter – auf drei alle gleichzeitig."
+              ],
+              [
+                "Ein Wort",
+                "Ein Wort, das die Einheit beschreibt."
+              ],
+              [
+                "Eine Sache",
+                "Was hat mir heute gefallen – was nicht?"
+              ],
+              [
+                "Koffer und Papierkorb",
+                "Was packe ich ein, was lasse ich hier? Je ein Satz."
+              ],
+              [
+                "Dankbarkeitsblitz",
+                "20 Sekunden still an etwas denken, wofür ich heute dankbar bin; wer mag, sagt es."
+              ]
+            ]
+          }
+        },
+        {
+          "titel": "Energizer und Bewegungsspiele",
+          "tabelle": {
+            "spalten": [
+              "Spiel",
+              "So geht es"
+            ],
+            "zeilen": [
+              [
+                "Alle, die …",
+                "Stuhlkreis mit einem Stuhl weniger als Personen. Wer in der Mitte steht, sagt: „Alle, die heute schon Musik gehört haben.“ Wer sich angesprochen fühlt, sucht einen neuen Platz. Nur harmlose Sätze."
+              ],
+              [
+                "Zip Zap Boing",
+                "Im Kreis wird ein Klatschimpuls weitergegeben: „Zip“ zur Person daneben, „Zap“ quer durch den Kreis, „Boing“ schickt ihn zurück. Wer patzt, macht einfach weiter – niemand scheidet aus."
+              ],
+              [
+                "Stein, Papier, Schere mit Fanclub",
+                "Alle spielen gleichzeitig zu zweit. Wer verliert, wird Fan der Person, die gewonnen hat, und feuert sie im nächsten Duell an. Am Ende jubelt die ganze Gruppe zwei Finalisten zu."
+              ],
+              [
+                "Spiegeln",
+                "Zu zweit gegenüber: Eine Person bewegt sich langsam, die andere spiegelt. Nach einer Minute wechseln. Ruhig und konzentrierend."
+              ],
+              [
+                "Drei Minuten Bewegung",
+                "Hampelmänner, Treppe hoch und runter oder Seilspringen, danach die Anspannung neu einschätzen (wie in Einheit 12)."
+              ],
+              [
+                "Atom",
+                "Alle gehen durch den Raum; die Leitung ruft eine Zahl, und es bilden sich Gruppen in dieser Größe. Endet mit der Gruppengröße, die als Nächstes gebraucht wird."
+              ]
+            ]
+          }
+        },
+        {
+          "titel": "Kurze Achtsamkeitsübungen",
+          "tabelle": {
+            "spalten": [
+              "Übung",
+              "So geht es"
+            ],
+            "zeilen": [
+              [
+                "5-4-3-2-1",
+                "5 Dinge sehen, 4 hören, 3 spüren, 2 riechen, 1 schmecken – langsam anleiten, zwischen den Schritten Zeit lassen."
+              ],
+              [
+                "Klangschale",
+                "Schale anschlagen; alle hören mit geschlossenen Augen zu und heben die Hand, wenn der Ton ganz verklungen ist. Drei Durchgänge."
+              ],
+              [
+                "Fingeratmung",
+                "Mit dem Zeigefinger an der anderen Hand entlangfahren: am Finger hoch einatmen, runter ausatmen."
+              ],
+              [
+                "Kastenatmung",
+                "4 Sekunden ein, 4 halten, 4 aus, 4 halten. Wer das Halten unangenehm findet, lässt es weg."
+              ],
+              [
+                "Atem-Feder",
+                "Eine Feder mit langsamem Ausatmen so lange wie möglich in der Luft halten."
+              ],
+              [
+                "Achtsames Hören",
+                "Augen zu: erst die fernsten Geräusche suchen, dann die nahen, zuletzt den eigenen Atem."
+              ],
+              [
+                "Farbsuche",
+                "Eine Farbe wählen und still alles im Raum finden, was diese Farbe hat."
+              ],
+              [
+                "Achtsam essen",
+                "Ein Stück Obst oder Schokolade zwei Minuten lang anschauen, riechen, langsam essen. Allergien beachten."
+              ],
+              [
+                "Gedankenschiffchen",
+                "Gedanken in der Vorstellung auf kleine Schiffe setzen und auf einem Fluss vorbeiziehen lassen, ohne mitzufahren."
+              ],
+              [
+                "Wasserschale",
+                "Die Hände in eine Schale mit lauwarmem Wasser legen und spüren: Temperatur, Gewicht, Bewegung."
+              ],
+              [
+                "Papierknistern",
+                "Ein Blatt ganz langsam zerknüllen und nur auf Geräusch und Gefühl achten."
+              ],
+              [
+                "Sinneswürfel",
+                "Würfeln und zwei Minuten nur auf den gewürfelten Sinn achten: 1 sehen, 2 hören, 3 fühlen, 4 riechen, 5 schmecken, 6 freie Wahl."
+              ],
+              [
+                "Achtsamer Spaziergang",
+                "Fünf Minuten schweigend und langsam gehen, jeden Schritt spüren. Danach: Was habe ich wahrgenommen?"
+              ],
+              [
+                "Draußen schauen",
+                "Wolken, Schatten oder eine Pflanze zwei Minuten genau beobachten: Farben, Formen, Bewegung."
+              ]
+            ]
+          }
+        },
+        {
+          "titel": "Skript: Bodyscan",
+          "text": "Langsam und ruhig vorlesen, nach jedem Satz eine Pause. Liegend oder sitzend; wer die Augen nicht schließen möchte, schaut auf einen Punkt am Boden. Die Langfassung dauert etwa zehn Minuten, die Kurzfassung mit den Teilen 1, 3, 5, 7 und 9 etwa fünf.",
+          "punkte": [
+            "1 Ankommen: Such dir eine bequeme Position, liegend oder sitzend. Schließ die Augen, wenn es für dich angenehm ist. Atme einmal tief ein … und langsam aus. Lass die Schultern schwer werden.",
+            "2 Atem: Spür, wie der Atem von selbst kommt und geht. Du musst nichts machen. Jeder Ausatemzug nimmt ein bisschen Spannung mit.",
+            "3 Kopf, Nacken, Schultern: Geh mit deiner Aufmerksamkeit zur Stirn. Ist sie angespannt oder weich? Spür die Augen, die Wangen, den Kiefer. Lass die Zähne locker auseinander. Wandere zu Nacken und Schultern – vielleicht sinken sie ein kleines Stück nach unten.",
+            "4 Arme und Hände: Wandere über die Oberarme zu den Ellbogen, den Unterarmen, den Händen. Spür das Gewicht, vielleicht ein leichtes Kribbeln.",
+            "5 Brust und Bauch: Spür, wie sich die Brust beim Atmen hebt und senkt. Wandere zum Bauch und lass ihn weich werden. Alles, was du spürst, ist in Ordnung – auch wenn du gerade nichts spürst.",
+            "6 Rücken und Becken: Spür deinen Rücken, oben, in der Mitte, unten. Lass ihn in die Unterlage sinken.",
+            "7 Beine und Füße: Wandere zu den Oberschenkeln, den Knien, den Unterschenkeln – und zu den Füßen: Fersen, Fußsohlen, Zehen. Lass die Füße schwer werden.",
+            "8 Ganzer Körper: Spür jetzt deinen ganzen Körper, vom Kopf bis zu den Füßen. Atme einmal tief ein … und langsam aus.",
+            "9 Zurückkommen: Beweg langsam Finger und Zehen. Wenn du magst, sag innerlich: Ich bin hier. Öffne die Augen, wenn du so weit bist."
+          ]
+        },
+        {
+          "titel": "Skript: Traumreise „Mein sicherer Ort“",
+          "text": "Etwa acht Minuten, langsam vorlesen; eingeführt wird die Übung in Einheit 14. Vorher sagen: Wer die Augen nicht schließen möchte, schaut auf einen Punkt am Boden, und wer aussteigen will, öffnet einfach die Augen und bleibt ruhig sitzen. Für Jugendliche mit belastenden Erfahrungen können Vorstellungsübungen unangenehm sein – wer danach aufgewühlt wirkt, bekommt ein kurzes Gespräch.",
+          "punkte": [
+            "Mach es dir bequem und schließ die Augen, wenn es für dich passt. Atme ein paarmal tief ein und aus. Mit jedem Ausatmen wirst du ein bisschen ruhiger.",
+            "Stell dir vor, du stehst vor einer Tür. Hinter dieser Tür liegt ein Ort, an dem du dich ganz sicher und wohl fühlst. Das kann ein echter Ort sein oder einer, den du dir ausdenkst.",
+            "Öffne die Tür und geh hinein. Schau dich um: Was siehst du? Welche Farben gibt es? Ist es hell oder angenehm dämmrig?",
+            "Was hörst du? Vielleicht Wellen, Vögel, leise Musik – oder angenehme Stille.",
+            "Wie riecht es hier? Wie ist die Temperatur? Spür den Boden unter deinen Füßen.",
+            "Such dir einen Platz, an dem du sitzen oder liegen kannst. Hier kann dir nichts passieren. Hier darfst du einfach sein.",
+            "Wenn du möchtest, ist jemand bei dir – eine Person oder ein Tier, das dir guttut. Oder du bist ganz allein. Du entscheidest.",
+            "Bleib noch einen Moment. Merk dir, wie es sich hier anfühlt. Du kannst in Gedanken jederzeit hierher zurückkommen.",
+            "Geh jetzt langsam zurück zur Tür und schließ sie hinter dir. Spür wieder den Stuhl und den Boden. Beweg Finger und Zehen. Öffne langsam die Augen."
+          ]
+        },
+        {
+          "titel": "Wenn die Gruppe unruhig ist",
+          "text": "Nicht lauter werden, sondern leiser und langsamer. Eine kurze Bewegungsaufgabe vor die nächste Denkaufgabe setzen, die Sitzordnung ändern, kurze und klare Anweisungen geben. Unruhe ist oft Aufregung vor einem persönlichen Thema – dann hilft es, das Thema offen zu benennen.",
+          "tabelle": {
+            "spalten": [
+              "Übung",
+              "So geht es"
+            ],
+            "zeilen": [
+              [
+                "Zählen bis 20",
+                "Die Gruppe zählt gemeinsam bis 20; jede Zahl sagt nur eine Person, ohne Absprache. Sprechen zwei gleichzeitig, geht es bei 1 los. Bündelt die Aufmerksamkeit in zwei Minuten."
+              ],
+              [
+                "Bewegung, dann Stille",
+                "Drei Minuten intensiv bewegen, danach eine Minute still sitzen und die Anspannung schätzen."
+              ],
+              [
+                "Stilles Gespräch",
+                "Eine Frage in die Mitte eines Plakats; alle schreiben schweigend Antworten und Kommentare dazu. Fünf Minuten spricht niemand."
+              ],
+              [
+                "Wortlos ordnen",
+                "Die Gruppe stellt sich ohne zu sprechen nach Geburtstag (Tag und Monat) in eine Reihe; danach auflösen."
+              ],
+              [
+                "Kettenreaktion",
+                "Gemeinsam eine Dominokette bauen und auslösen – braucht Geduld und Absprache."
+              ],
+              [
+                "Klangschale",
+                "Hand heben, wenn der Ton weg ist – wirkt oft schneller als jede Ermahnung."
+              ]
+            ]
+          }
+        },
+        {
+          "titel": "Wenn die Energie fehlt",
+          "text": "Müdigkeit ernst nehmen, statt gegen sie anzuarbeiten: Fenster auf, kurz nach draußen, Wasser trinken. Danach eine leichte Übung im Sitzen, die trotzdem zum Thema führt.",
+          "tabelle": {
+            "spalten": [
+              "Übung",
+              "So geht es"
+            ],
+            "zeilen": [
+              [
+                "Gefühls-Memory",
+                "Paare aus Gefühlswort und Gesicht finden; wer ein Paar hat, nennt eine Situation dazu oder sagt „weiter“."
+              ],
+              [
+                "Emotionswürfel",
+                "Würfeln und erzählen, wann man das Gefühl zuletzt hatte – nur Harmloses, „weiter“ ist erlaubt."
+              ],
+              [
+                "Musikrunde",
+                "Jede Person spielt 30 Sekunden eines Songs, der sie auflädt (Skills-Playlist aus Einheit 13)."
+              ],
+              [
+                "Gemeinsames Kunstwerk",
+                "Alle malen ohne Absprache an einem großen Papier; nach zwei Minuten rückt jede Person einen Platz weiter."
+              ],
+              [
+                "Ball der Gefühle",
+                "Einen weichen Ball zuwerfen; wer fängt, beantwortet eine leichte Frage, etwa: Was hat dich heute gefreut?"
+              ],
+              [
+                "Dobble oder Mikado",
+                "Eine kurze Runde als Pausenspiel; danach mit frischer Aufmerksamkeit weiter."
+              ]
+            ]
+          }
+        },
+        {
+          "titel": "Gruppen bilden",
+          "text": "Paare und Kleingruppen nicht durch freie Wahl bilden, wenn jemand in der Gruppe oft übrig bleibt. Der Zufall entlastet alle; bei Konflikten entscheidet die Leitung.",
+          "tabelle": {
+            "spalten": [
+              "Methode",
+              "So geht es"
+            ],
+            "zeilen": [
+              [
+                "Abzählen",
+                "Reihum 1, 2, 3 … zählen; alle Einsen bilden eine Gruppe, alle Zweien die nächste."
+              ],
+              [
+                "Atom",
+                "Siehe Energizer: Die Leitung ruft zum Schluss die gewünschte Gruppengröße."
+              ],
+              [
+                "Postkarten-Puzzle",
+                "Postkarten in zwei oder drei Teile schneiden und ziehen lassen; wer zusammenpasst, arbeitet zusammen."
+              ],
+              [
+                "Karten ziehen",
+                "Spielkarten mit gleicher Zahl oder gleichem Symbol bilden eine Gruppe."
+              ],
+              [
+                "Geburtstagsreihe",
+                "Nach Geburtstag aufstellen und die Reihe in der Mitte teilen."
+              ],
+              [
+                "Leitung bestimmt",
+                "Bei Streit, großen Unterschieden oder wenn jemand geschützt werden muss – offen sagen, dass die Leitung heute einteilt."
+              ]
+            ]
+          }
+        },
+        {
+          "titel": "Wenn Zeit übrig ist",
+          "tabelle": {
+            "spalten": [
+              "Übung",
+              "So geht es"
+            ],
+            "zeilen": [
+              [
+                "Positivitätskette",
+                "Im Kreis sagt jede Person der Person rechts, was ihr heute an ihr aufgefallen ist – über das, was sie tut, nicht über das Aussehen."
+              ],
+              [
+                "Gefühlsstatue",
+                "Eine Person stellt ein Gefühl als Standbild dar, die anderen raten. Danach: Woran habt ihr es erkannt?"
+              ],
+              [
+                "Gemeinsam atmen",
+                "Im Kreis sitzen; die Leitung gibt vier Sekunden ein, vier aus vor. Nach einer Minute übernimmt jemand aus der Gruppe."
+              ],
+              [
+                "Rücken an Rücken",
+                "Zu zweit Rücken an Rücken: Eine Person beschreibt ein einfaches Bild, die andere zeichnet es, ohne nachzufragen. Dann vergleichen und wechseln."
+              ],
+              [
+                "Skill ziehen",
+                "Ab Einheit 15: Eine Person zieht eine Karte aus dem Gruppensatz Skills-Kärtchen, alle machen den Skill eine Minute lang."
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "eltern",
+      "titel": "Eltern und Team informieren",
+      "abschnitte": [
+        {
+          "titel": "Wer was wissen soll",
+          "text": "Eltern und Kolleginnen und Kollegen sollen wissen, was im Skills-Kurs geschieht – nicht, was einzelne Jugendliche dort erzählen. Ein kurzer, sachlicher Brief zu Beginn des Jahres schafft Transparenz, klärt Allergien und zeigt, wo Eltern nachfragen können. Im Team braucht es zusätzlich Absprachen darüber, wie das Gelernte im Alltag gestützt wird."
+        },
+        {
+          "titel": "Musterbrief an die Eltern",
+          "text": "Liebe Eltern, liebe Erziehungsberechtigte,\n\nin diesem Schuljahr nimmt [Vorname] am Skills-Kurs des CDSE teil. Der Kurs findet in einer kleinen Gruppe von vier bis acht Jugendlichen statt, jeweils am [Wochentag] von [Uhrzeit] bis [Uhrzeit] in [Ort, Raum]. Er umfasst rund 30 Treffen und wird von [Name der Leitung] geleitet.\n\nIm Kurs lernen die Jugendlichen, Gefühle zu erkennen und mit ihnen umzugehen, Stress abzubauen, zu sagen, was sie brauchen, Grenzen zu setzen und Konflikte zu lösen. Wir arbeiten mit Gesprächen, Übungen, Spielen, Bewegung und kurzen Entspannungsübungen. Zu jedem Treffen gehört ein gemeinsamer Imbiss.\n\nWas die Jugendlichen in der Gruppe erzählen, bleibt in der Gruppe, und niemand muss über Persönliches sprechen. Wenn wir uns um die Sicherheit eines Kindes sorgen, handeln wir nach den Regeln unserer Einrichtung.\n\nAm Ende jedes Treffens schreiben die Jugendlichen in ihren Skills-Pass, was sie mitnehmen. Den Pass bekommt [Vorname] am Ende des Schuljahres mit nach Hause. Wenn Sie mögen, fragen Sie zwischendurch: Was habt ihr diese Woche ausprobiert?\n\nBitte geben Sie uns den Abschnitt unten bis zum [Datum] zurück. Bei Fragen erreichen Sie mich unter [Telefon] oder [E-Mail].\n\nMit freundlichen Grüßen\n\n[Name der Leitung]"
+        },
+        {
+          "titel": "Rückmeldeabschnitt zum Brief",
+          "punkte": [
+            "Name der oder des Jugendlichen: ______________________",
+            "Allergien oder Unverträglichkeiten: ______________________",
+            "Essensregeln, etwa vegetarisch oder kein Schweinefleisch: ______________________",
+            "Was wir sonst wissen sollten, etwa Asthma: ______________________",
+            "Datum und Unterschrift einer erziehungsberechtigten Person: ______________________"
+          ]
+        },
+        {
+          "titel": "Hinweise zum Elternbrief",
+          "punkte": [
+            "Vor dem Versand mit der zuständigen Leitung (Responsable) abstimmen und die Vorgaben der Einrichtung zu Einverständniserklärungen beachten.",
+            "Kurz halten: eine Seite. Keine Diagnosen, keine Gründe für die Teilnahme, keine Angaben über andere Jugendliche.",
+            "Wenn möglich in der Familiensprache mitgeben, etwa auf Französisch oder Portugiesisch, oder ein Gespräch anbieten.",
+            "Die Jugendlichen vorher informieren, was im Brief steht – das schützt das Vertrauen in der Gruppe.",
+            "Fragen von Eltern zu Inhalten der Gruppe freundlich auf Ziele und Methoden lenken; Persönliches aus der Gruppe wird nicht weitergegeben."
+          ]
+        },
+        {
+          "titel": "Kurzinfo für Kolleginnen und Kollegen",
+          "text": "Diesen Text kann die Leitung zu Beginn des Jahres an das Team schicken und anpassen:\n\nAb [Datum] nehmen [Gruppe oder Klasse] jeden [Wochentag] von [Uhrzeit] bis [Uhrzeit] am Skills-Kurs teil. Die Jugendlichen lernen dort Fertigkeiten für schwierige Momente: Anspannung auf einer Skala von 0 bis 100 einschätzen, sich mit Skills beruhigen, Ich-Botschaften, Grenzen setzen. Was Sie tun können: Bemerken und kurz bestärken, wenn jemand einen Skill nutzt – etwa tief atmet, sich eine kurze Pause nimmt oder sein Skills-Kärtchen hervorholt. Bei steigender Anspannung ruhig fragen: Wo bist du gerade, von 0 bis 100? Was aus deinem Skills-Koffer hilft jetzt? Und bitte nicht nach Inhalten aus der Gruppe fragen. Rückmeldungen und Fragen gern an [Name]."
+        },
+        {
+          "titel": "Absprachen im Team",
+          "punkte": [
+            "Termin, Raum und Dauer mit Klassenleitung und Stundenplan abstimmen; die Einheit hat Vorrang vor spontanen Terminen.",
+            "Klären, wer bei Krankheit vertritt. Mit der App und dem Material kann eine Kollegin jede Einheit übernehmen.",
+            "Die Ansprechperson für den Kinderschutz und den Ablauf bei Offenbarungen kennen (internes Schutzkonzept, Responsable).",
+            "Vereinbaren, wie Beobachtungen fließen: Was Lehrpersonen im Alltag sehen, darf an die Leitung gehen; was in der Gruppe erzählt wird, bleibt dort.",
+            "Skills-Kärtchen und die Pausenregel aus dem Gruppenvertrag auch im Unterricht erlauben, damit Jugendliche ihre Skills dort nutzen können, wo sie sie brauchen."
+          ]
+        },
+        {
+          "titel": "Zu zweit leiten",
+          "punkte": [
+            "Rollen vorher verteilen: Eine Person leitet den Schritt, die andere beobachtet, hält die Zeit und kümmert sich um Einzelne.",
+            "Die Rollen von Schritt zu Schritt wechseln, damit die Jugendlichen beide Leitungen als ansprechbar erleben.",
+            "Ein stilles Zeichen für „Ich übernehme kurz“ vereinbaren, etwa ein Handzeichen oder einen Blick mit Nicken.",
+            "Nach jeder Einheit zehn Minuten Nachbesprechung: Was lief gut? Wer braucht Aufmerksamkeit? Wer macht was bis zur nächsten Einheit?"
+          ]
+        }
+      ]
+    }
+  ]
+}
