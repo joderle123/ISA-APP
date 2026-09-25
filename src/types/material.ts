@@ -145,6 +145,8 @@ export interface Material {
   source: 'original' | 'cdse' | 'generated'
   /** Uploader name / date for CDSE-uploaded material (source: 'cdse'). */
   uploadedBy?: string
+  /** Kennung der hochladenden Person (Hub-Konto oder Gerät) – für „eigenes Material“. */
+  uploadedById?: string
   uploadedAt?: string
   /**
    * For CDSE-uploaded materials: the real file that lives in the shared

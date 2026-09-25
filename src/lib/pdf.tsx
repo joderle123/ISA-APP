@@ -2,6 +2,15 @@ import { pdf } from '@react-pdf/renderer'
 import { MaterialDocument, WorksheetDocument } from '../pdf/MaterialPdf'
 import type { Material } from '../types/material'
 import { slug } from './slug'
+import { BlattDokument, MappeDokument, type BlattOptionen } from '../blatt/pdf/BlattDokument'
+import { registriereSchriften } from '../blatt/pdf/stil'
+import type { Blatt } from '../blatt/typen'
+import andikaRegular from '../assets/fonts/pdf/Andika-Regular.ttf?url'
+import andikaBold from '../assets/fonts/pdf/Andika-Bold.ttf?url'
+import interRegular from '../assets/fonts/pdf/Inter-Regular.ttf?url'
+import interSemiBold from '../assets/fonts/pdf/Inter-SemiBold.ttf?url'
+import manropeBold from '../assets/fonts/pdf/Manrope-Bold.ttf?url'
+import manropeExtraBold from '../assets/fonts/pdf/Manrope-ExtraBold.ttf?url'
 
 /** Render a material to a PDF Blob entirely in the browser (no server, no API). */
 export async function materialToBlob(material: Material): Promise<Blob> {
@@ -35,4 +44,44 @@ export async function downloadWorksheetPdf(material: Material): Promise<string> 
   const fileName = `ISA-Arbeitsblatt_${slug(material.title)}.pdf`
   saveBlob(await pdf(<WorksheetDocument material={material} />).toBlob(), fileName)
   return fileName
+}
+
+// --- Arbeitsblätter (Toolbox v2) ----------------------------------------------
+
+const SCHRIFT_DATEIEN: Record<string, string> = {
+  'Andika-Regular.ttf': andikaRegular,
+  'Andika-Bold.ttf': andikaBold,
+  'Inter-Regular.ttf': interRegular,
+  'Inter-SemiBold.ttf': interSemiBold,
+  'Manrope-Bold.ttf': manropeBold,
+  'Manrope-ExtraBold.ttf': manropeExtraBold,
+}
+
+function schriften() {
+  registriereSchriften((d) => SCHRIFT_DATEIEN[d])
+}
+
+export function blattDateiname(blatt: Blatt, opt: BlattOptionen = {}): string {
+  const teil = opt.schueler === false ? '_Lehrerseite' : opt.lehrer === false ? '' : '_mit-Lehrerseite'
+  return `${opt.nr ? opt.nr + '_' : ''}${slug(blatt.de.titel)}${opt.sprache === 'fr' ? '_FR' : ''}${teil}.pdf`
+}
+
+/** Ein Arbeitsblatt als PDF-Blob (für Vorschau und Download). */
+export async function blattBlob(blatt: Blatt, opt: BlattOptionen = {}): Promise<Blob> {
+  schriften()
+  return pdf(<BlattDokument blatt={blatt} opt={opt} />).toBlob()
+}
+
+export async function downloadBlatt(blatt: Blatt, opt: BlattOptionen = {}): Promise<string> {
+  const name = blattDateiname(blatt, opt)
+  saveBlob(await blattBlob(blatt, opt), name)
+  return name
+}
+
+/** Mehrere Blätter als eine Mappe. */
+export async function downloadMappe(blaetter: { blatt: Blatt; nr?: string }[], titel: string, opt: BlattOptionen = {}): Promise<string> {
+  schriften()
+  const name = `Mappe_${slug(titel) || 'Arbeitsblaetter'}${opt.sprache === 'fr' ? '_FR' : ''}.pdf`
+  saveBlob(await pdf(<MappeDokument blaetter={blaetter} titel={titel} opt={opt} />).toBlob(), name)
+  return name
 }

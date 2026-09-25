@@ -11,6 +11,7 @@
 // ---------------------------------------------------------------------------
 import type { Material } from '../types/material'
 import { slug } from './slug'
+import { aktuellerNutzer } from './nutzer'
 
 const MANIFEST = 'isa-manifest.json'
 const FILES_DIR = 'blaetter'
@@ -39,6 +40,57 @@ export interface TeamStatus {
   lastBy: string | null
   count: number
   error: string | null
+}
+
+// --- Gemeinsame Bewertungen ----------------------------------------------------
+// Pro Person eine eigene Datei in bewertungen/ – so überschreibt niemand die
+// Bewertungen der anderen, auch wenn mehrere gleichzeitig speichern.
+const RATINGS_DIR = 'bewertungen'
+const RATINGS_FORMAT = 'isa-bewertung-v1'
+const RATINGS_POLL_MS = 30000
+
+export interface EigeneBewertung {
+  /** 1–5 Sterne, 0 = keine */
+  s: number
+  /** kurzer Praxis-Tipp (optional) */
+  notiz?: string
+  /** Zeitpunkt (ms) */
+  t: number
+}
+export interface BewertungsDatei {
+  _format: string
+  name: string
+  stand: string
+  werte: Record<string, EigeneBewertung>
+}
+export interface Gesamtbewertung {
+  schnitt: number
+  anzahl: number
+  notizen: { name: string; text: string; t: number }[]
+}
+type RatingListener = (alle: Map<string, Gesamtbewertung>) => void
+
+let ratingFiles = new Map<string, { mod: number; data: BewertungsDatei }>()
+let ratingTimer: ReturnType<typeof setInterval> | null = null
+let ratingListeners: RatingListener[] = []
+let aggregiert = new Map<string, Gesamtbewertung>()
+
+function aggregieren(): Map<string, Gesamtbewertung> {
+  const summe = new Map<string, { s: number; n: number; notizen: { name: string; text: string; t: number }[] }>()
+  for (const { data } of ratingFiles.values()) {
+    for (const [id, w] of Object.entries(data.werte || {})) {
+      const e = summe.get(id) ?? { s: 0, n: 0, notizen: [] }
+      if (w.s >= 1 && w.s <= 5) {
+        e.s += w.s
+        e.n += 1
+      }
+      if (w.notiz && w.notiz.trim()) e.notizen.push({ name: data.name || 'Kollegin/Kollege', text: w.notiz.trim().slice(0, 400), t: w.t || 0 })
+      summe.set(id, e)
+    }
+  }
+  const out = new Map<string, Gesamtbewertung>()
+  for (const [id, e] of summe) out.set(id, { schnitt: e.n ? e.s / e.n : 0, anzahl: e.n, notizen: e.notizen.sort((a, b) => b.t - a.t) })
+  return out
 }
 
 // --- tiny IndexedDB (handle persistence) ------------------------------------
@@ -97,11 +149,8 @@ const status: TeamStatus = {
 }
 
 function whoAmI(): string {
-  try {
-    return localStorage.getItem('isa_team_user') || 'Unbekannt'
-  } catch {
-    return 'Unbekannt'
-  }
+  const n = aktuellerNutzer()
+  return n.name || 'Unbekannt'
 }
 
 function emit() {
@@ -228,6 +277,40 @@ async function cycle(): Promise<void> {
   }
 }
 
+async function ratingCycle(): Promise<void> {
+  if (!dir) return
+  try {
+    const rd = await dir.getDirectoryHandle(RATINGS_DIR, { create: false }).catch(() => null)
+    if (!rd) return
+    const gesehen = new Set<string>()
+    let geaendert = false
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    for await (const entry of (rd as any).values()) {
+      if (entry.kind !== 'file' || !entry.name.endsWith('.json')) continue
+      gesehen.add(entry.name)
+      const f: File = await entry.getFile()
+      const alt = ratingFiles.get(entry.name)
+      if (alt && alt.mod === f.lastModified) continue
+      try {
+        const data = JSON.parse(await f.text()) as BewertungsDatei
+        if (data && data._format === RATINGS_FORMAT && data.werte) {
+          ratingFiles.set(entry.name, { mod: f.lastModified, data })
+          geaendert = true
+        }
+      } catch {
+        /* halb geschriebene Datei – beim nächsten Mal */
+      }
+    }
+    for (const k of [...ratingFiles.keys()]) if (!gesehen.has(k)) (ratingFiles.delete(k), (geaendert = true))
+    if (geaendert) {
+      aggregiert = aggregieren()
+      for (const l of ratingListeners) l(aggregiert)
+    }
+  } catch {
+    /* Ordner nicht lesbar – später erneut */
+  }
+}
+
 async function afterConnect(): Promise<void> {
   status.connected = true
   status.needsPermission = false
@@ -236,6 +319,9 @@ async function afterConnect(): Promise<void> {
   emit()
   if (timer) clearInterval(timer)
   timer = setInterval(cycle, POLL_MS)
+  await ratingCycle()
+  if (ratingTimer) clearInterval(ratingTimer)
+  ratingTimer = setInterval(ratingCycle, RATINGS_POLL_MS)
 }
 
 export const teamSync = {
@@ -295,6 +381,11 @@ export const teamSync = {
   disconnect() {
     if (timer) clearInterval(timer)
     timer = null
+    if (ratingTimer) clearInterval(ratingTimer)
+    ratingTimer = null
+    ratingFiles = new Map()
+    aggregiert = new Map()
+    for (const l of ratingListeners) l(aggregiert)
     dir = null
     cache = []
     status.connected = false
@@ -305,7 +396,7 @@ export const teamSync = {
   },
 
   /** Add / replace a material with its uploaded file. */
-  async uploadMaterial(meta: Material, file: File): Promise<void> {
+  async uploadMaterial(meta: Material, file: File, von?: string): Promise<void> {
     if (!dir) throw new Error('Nicht mit der Team-Ablage verbunden.')
     const fd = await filesDir(true)
     if (!fd) throw new Error('Datei-Ordner nicht verfügbar.')
@@ -317,7 +408,7 @@ export const teamSync = {
     const rec: TeamRecord = {
       ...meta,
       source: 'cdse',
-      uploadedBy: whoAmI(),
+      uploadedBy: von || whoAmI(),
       uploadedAt: new Date().toISOString(),
       upload: { fileName: file.name, ext, mime: file.type || 'application/octet-stream', size: file.size },
       _ts: Date.now(),
@@ -355,5 +446,47 @@ export const teamSync = {
     }
   },
 
-  _test: { mergeRecords },
+  /** Gemeinsame Bewertungen (Durchschnitt, Anzahl, Praxis-Tipps) abonnieren. */
+  onRatings(cb: RatingListener) {
+    ratingListeners.push(cb)
+    cb(aggregiert)
+    return () => { ratingListeners = ratingListeners.filter((l) => l !== cb) }
+  },
+
+  /** Eigene Bewertungen in die Team-Ablage schreiben (eigene Datei). */
+  async writeOwnRatings(nutzerId: string, name: string, werte: Record<string, EigeneBewertung>): Promise<boolean> {
+    if (!dir) return false
+    try {
+      const rd = await dir.getDirectoryHandle(RATINGS_DIR, { create: true })
+      const datei = slug(nutzerId).slice(0, 60) + '.json'
+      const data: BewertungsDatei = { _format: RATINGS_FORMAT, name, stand: new Date().toISOString(), werte }
+      const fh = await rd.getFileHandle(datei, { create: true })
+      const w = await fh.createWritable()
+      await w.write(JSON.stringify(data))
+      await w.close()
+      const f = await fh.getFile()
+      ratingFiles.set(datei, { mod: f.lastModified, data })
+      aggregiert = aggregieren()
+      for (const l of ratingListeners) l(aggregiert)
+      return true
+    } catch {
+      return false
+    }
+  },
+
+  /** Eigene Datei lesen (um Bewertungen von einem anderen Gerät zu übernehmen). */
+  ownRatings(nutzerId: string): BewertungsDatei | null {
+    return ratingFiles.get(slug(nutzerId).slice(0, 60) + '.json')?.data ?? null
+  },
+
+  /** Angaben eines hochgeladenen Materials ändern (ohne neue Datei). */
+  async editMaterial(id: string, patch: Partial<Material>): Promise<void> {
+    const found = cache.find((r) => r.id === id)
+    if (!found) throw new Error('Material nicht gefunden.')
+    cache = mergeRecords(cache, [{ ...found, ...patch, id, source: 'cdse', upload: found.upload, _ts: Date.now() }])
+    await cycle()
+    emit()
+  },
+
+  _test: { mergeRecords, aggregieren },
 }

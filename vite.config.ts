@@ -2,7 +2,7 @@ import { build, defineConfig, type Plugin } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 import { viteSingleFile } from 'vite-plugin-singlefile'
-import { readFileSync } from 'node:fs'
+import { readFileSync, readdirSync } from 'node:fs'
 import { gzipSync } from 'node:zlib'
 import { fileURLToPath } from 'node:url'
 
@@ -69,6 +69,21 @@ function compactOfflineBundle(): Plugin {
         return (
           `import { inflateJson } from ${JSON.stringify(INFLATE)}\n` +
           `export const ${name} = await inflateJson(${JSON.stringify(gzipBase64(JSON.stringify(list)))})\n`
+        )
+      }
+      // 1b. Arbeitsblätter (src/data/blaetter/*.json): alle Dateien zusammen
+      //     komprimiert einbetten, beim Start entpacken und nummerieren.
+      if (file.endsWith('/src/data/blaetter/index.ts')) {
+        const ordner = file.slice(0, -'index.ts'.length)
+        const dateien: Record<string, unknown> = {}
+        for (const d of readdirSync(ordner).sort()) if (d.endsWith('.json')) dateien['./' + d] = JSON.parse(readFileSync(ordner + d, 'utf8'))
+        const NUMMERN = fileURLToPath(new URL('./src/blatt/nummern.ts', import.meta.url)).replace(/\\/g, '/')
+        return (
+          `import { inflateJson } from ${JSON.stringify(INFLATE)}\n` +
+          `import { nummerieren } from ${JSON.stringify(NUMMERN)}\n` +
+          `const dateien = await inflateJson(${JSON.stringify(gzipBase64(JSON.stringify(dateien)))})\n` +
+          `export const alleBlaetter = nummerieren(dateien)\n` +
+          `export const blattById = new Map(alleBlaetter.map((b) => [b.id, b]))\n`
         )
       }
       // 2. PDF renderer on demand instead of the dynamic import.
