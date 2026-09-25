@@ -146,7 +146,7 @@
           "spalten": ["Wer?", "Was ist für sie oder ihn passiert?", "Wie geht es ihr oder ihm?"],
           "breiten": [1, 2.2, 1.6],
           "zeilen": 4,
-          "beispiel": ["Jil", "Ihr Heft ist zerrissen.", "traurig, sauer auf mich"]
+          "beispiel": ["Kim", "Ihr Heft ist zerrissen.", "traurig, sauer auf mich"]
         },
         {
           "art": "aufgabe",
@@ -531,7 +531,7 @@
         {
           "art": "geschichte",
           "titel": "Mathis will fair spielen",
-          "text": "Mathis spielt in der Pause gern Fußball. Wenn seine Mannschaft verliert, schimpft er und tritt gegen den Ball. Dann wollen die anderen nicht mehr mit ihm spielen. Mathis setzt sich ein Ziel: „Ich spiele fair, auch wenn wir verlieren.“ Seine erste Stufe: In einer Pause bleibt er ruhig, wenn ein Tor gegen ihn fällt. Sein Freund Pol erinnert ihn mit einem Daumen hoch.",
+          "text": "Mathis spielt in der Pause gern Fußball. Wenn seine Mannschaft verliert, schimpft er und tritt gegen den Ball. Dann wollen die anderen nicht mehr mit ihm spielen. Mathis setzt sich ein Ziel: „Ich spiele fair, auch wenn wir verlieren.“ Seine erste Stufe: In einer Pause bleibt er ruhig, wenn ein Tor gegen ihn fällt. Sein Freund Robin erinnert ihn mit einem Daumen hoch.",
           "bild": "figur:tom:ruhig"
         },
         {
@@ -566,7 +566,7 @@
           "spalten": ["Das kann schwierig werden", "Das mache ich dann", "Wer hilft mir?"],
           "breiten": [1.6, 1.8, 1.1],
           "zeilen": 3,
-          "beispiel": ["Wir verlieren, und ich werde sauer.", "Ich atme aus und sage: „Nächstes Mal.“", "Pol zeigt mir den Daumen."]
+          "beispiel": ["Wir verlieren, und ich werde sauer.", "Ich atme aus und sage: „Nächstes Mal.“", "Robin zeigt mir den Daumen."]
         },
         {
           "art": "aufgabe",
@@ -917,8 +917,8 @@
       "bausteine": [
         {
           "art": "geschichte",
-          "titel": "Jils Karte",
-          "text": "Nach der Pause ist es in Jils Klasse oft laut. Dann wird ihr alles zu viel. Früher ist sie einfach aus der Klasse gelaufen. Heute legt sie ihre Karte „Es ist mir zu viel“ auf den Tisch. Ihre Lehrerin nickt ihr zu. Jil setzt ihren Gehörschutz auf und arbeitet in der Leseecke weiter.",
+          "titel": "Kims Karte",
+          "text": "Nach der Pause ist es in Kims Klasse oft laut. Dann wird ihr alles zu viel. Früher ist sie einfach aus der Klasse gelaufen. Heute legt sie ihre Karte „Es ist mir zu viel“ auf den Tisch. Ihre Lehrerin nickt ihr zu. Kim setzt ihren Gehörschutz auf und arbeitet in der Leseecke weiter.",
           "bild": "figur:amira:ruhig"
         },
         { "art": "aufgabe", "text": "Woran merkst du, dass du ein Signal brauchst? Kreuze an.", "symbole": ["ankreuzen", "schreiben"] },
@@ -986,7 +986,7 @@
       "lehrer": {
         "ziel": "Die Kinder erkennen, wann sie ein Signal brauchen, ordnen vier Signalkarten passenden Situationen zu und vereinbaren mit der Lehrperson, was nach dem Zeigen einer Karte geschieht.",
         "ablauf": [
-          "Einstieg (5 Min.): Die Geschichte lesen. Fragen: „Was hat sich für Jil verändert, seit sie die Karte hat?“",
+          "Einstieg (5 Min.): Die Geschichte lesen. Fragen: „Was hat sich für Kim verändert, seit sie die Karte hat?“",
           "Aufgaben 1–2 (10 Min.): Anzeichen ankreuzen und Karten zuordnen. Bei den Anzeichen gibt es kein Richtig oder Falsch.",
           "Aufgabe 3 (10 Min.): Absprachen mit jedem Kind konkret treffen: Wohin darf es gehen, wie lange, wie kommt es zurück?",
           "Aufgabe 4: Karten ausschneiden, eventuell laminieren und am Platz aufbewahren, z. B. im Mäppchen.",

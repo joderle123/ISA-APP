@@ -179,7 +179,7 @@
           "bilder": [
             { "bild": "icon:ear", "text": "Lärm" },
             { "bild": "icon:messages", "text": "Jemand redet" },
-            { "bild": "icon:device-mobile", "text": "Handy" },
+            { "bild": "icon:device-mobile", "text": "Handy, Tablet" },
             { "bild": "icon:puzzle", "text": "Spielsachen" },
             { "bild": "icon:apple", "text": "Hunger" },
             { "bild": "icon:zzz", "text": "müde" },
@@ -289,7 +289,7 @@
           "art": "zuordnen",
           "titel": ["Mathis denkt", "Denk-Satz"],
           "links": ["Was soll ich hier genau tun?", "Erst lesen, dann nummerieren.", "Eins nach dem anderen.", "Stimmt das wirklich?", "Das habe ich geschafft."],
-          "rechts": ["Ich prüfe.", "Was ist meine Aufgabe?", "Ich lobe mich.", "Wie gehe ich vor?", "Schritt für Schritt"]
+          "rechts": ["Ich prüfe.", "Was ist meine Aufgabe?", "Ich lobe mich.", "Wie gehe ich vor?", "Ich arbeite Schritt für Schritt."]
         },
         { "art": "aufgabe", "text": "Übe eine Woche lang. Male einen Stern aus, wenn es geklappt hat.", "symbole": ["malen"] },
         {
@@ -306,7 +306,7 @@
             { "titel": "Meine Denk-Sätze", "text": "Erst denken, dann tun.", "bild": "icon:message-circle" },
             { "titel": "1. Was ist meine Aufgabe?", "bild": "icon:search" },
             { "titel": "2. Wie gehe ich vor?", "bild": "icon:route" },
-            { "titel": "3. Schritt für Schritt", "bild": "icon:stairs-up" },
+            { "titel": "3. Ich arbeite Schritt für Schritt.", "bild": "icon:stairs-up" },
             { "titel": "4. Ich prüfe.", "bild": "icon:clipboard-check" },
             { "titel": "5. Ich lobe mich.", "bild": "icon:thumb-up" }
           ]
@@ -327,7 +327,7 @@
           "Döpfner, M., Schürmann, S. & Frölich, J. (2019). Therapieprogramm für Kinder mit hyperkinetischem und oppositionellem Problemverhalten THOP (6. Aufl.). Weinheim: Beltz."
         ],
         "differenzierung": {
-          "leichter": "Nur drei Sätze nutzen: Was ist meine Aufgabe? – Schritt für Schritt – Ich prüfe.",
+          "leichter": "Nur drei Sätze nutzen: Was ist meine Aufgabe? – Ich arbeite Schritt für Schritt. – Ich prüfe.",
           "schwerer": "Eigene Denk-Sätze für schwierige Momente entwickeln, z. B. bei Ärger oder vor einem Test."
         },
         "impulse": [
@@ -588,7 +588,7 @@
             { "bild": "icon:pencil", "text": "Stifte" },
             { "bild": "icon:book", "text": "Buch" },
             { "bild": "icon:ball-football", "text": "Ball" },
-            { "bild": "icon:shirt", "text": "Pulli" }
+            { "bild": "icon:shirt", "text": "T-Shirt" }
           ]
         },
         { "art": "abstand", "hoehe": 26 },
@@ -617,7 +617,7 @@
       "lehrer": {
         "ziel": "Die Kinder ordnen Alltagsgegenstände ihrem festen Platz zu und lernen mit „Zuerst – dann“ einen klaren Ablauf für das Aufräumen kennen.",
         "ablauf": [
-          "Einstieg: Stift, Buch, Ball und Pulli zeigen. Fragen: „Wo wohnt der Stift bei uns?“ Die Kinder bringen die Dinge an ihren Platz.",
+          "Einstieg: Stift, Buch, Ball und T-Shirt zeigen. Fragen: „Wo wohnt der Stift bei uns?“ Die Kinder bringen die Dinge an ihren Platz.",
           "Aufgabe 1: Bilder benennen. Die Kinder verbinden zuerst mit dem Finger, dann mit dem Stift.",
           "Aufgabe 2: „Zuerst räumen wir auf, dann …“ sagen. Jedes Kind malt, was es danach gern macht.",
           "Kisten und Regale im Raum mit denselben Bildern kennzeichnen.",
@@ -641,7 +641,7 @@
           "Aufräumen immer mit demselben Signal ankündigen, z. B. einem kurzen Lied.",
           "Kleine Aufträge geben („Du räumst die Bälle ein.“) statt „Räum alles auf.“"
         ],
-        "material": "Stift, Buch, Ball und Pulli zum Zeigen; Buntstifte; Bildkarten für Kisten und Regale"
+        "material": "Stift, Buch, Ball und T-Shirt zum Zeigen; Buntstifte; Bildkarten für Kisten und Regale"
       }
     }
   },
@@ -860,7 +860,7 @@
           "art": "info",
           "symbol": "tipp",
           "titel": "Dateinamen, die man wiederfindet",
-          "text": "Datum – Fach – Inhalt, zum Beispiel: 2026-10-12_Geschichte_Referat-Industrialisierung. Steht das Datum in der Reihenfolge Jahr-Monat-Tag, sortieren sich die Dateien von selbst."
+          "text": "Datum – Fach – Inhalt, ohne Umlaute, Akzente und Leerzeichen, zum Beispiel: 2026-10-12_Geschichte_Referat-Industrialisierung. Steht das Datum in der Reihenfolge Jahr-Monat-Tag, sortieren sich die Dateien von selbst."
         },
         {
           "art": "satzanfaenge",
@@ -963,7 +963,7 @@
           "art": "info",
           "symbol": "tipp",
           "titel": "Des noms de fichiers faciles à retrouver",
-          "text": "Date – matière – contenu, par exemple : 2026-10-12_Histoire_Expose-industrialisation. Avec la date dans l’ordre année-mois-jour, les fichiers se classent tout seuls."
+          "text": "Date – matière – contenu, sans accents ni espaces, par exemple : 2026-10-12_Histoire_Expose-industrialisation. Avec la date dans l’ordre année-mois-jour, les fichiers se classent tout seuls."
         },
         {
           "art": "satzanfaenge",
@@ -1129,7 +1129,7 @@
           "art": "info",
           "symbol": "tipp",
           "titel": "Eine gute Reihenfolge",
-          "text": "Fang mit etwas Leichtem an, damit du in Schwung kommst. Dann kommt die schwerste Aufgabe dran, solange du noch frisch bist. Zum Schluss wieder etwas Leichtes."
+          "text": "Fang mit etwas Leichtem an, damit du in Schwung kommst. Dann kommt die schwerste Aufgabe dran, solange du noch frisch bist. Zum Schluss wieder etwas Leichtes. Probier aus, was bei dir besser klappt."
         },
         { "art": "aufgabe", "text": "Plane die Hausaufgaben für heute. Was machst du zuerst?", "symbole": ["schreiben"] },
         {

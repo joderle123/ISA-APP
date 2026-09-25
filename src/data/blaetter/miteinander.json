@@ -306,7 +306,7 @@
           "spalten": ["Das ist mir wichtig", "Daran erkenne ich es im Alltag"],
           "breiten": [1.3, 3],
           "zeilen": 3,
-          "beispiel": ["Loyalität vor anderen", "Wenn in der Gruppe über mich gelästert wird, hält Jil dagegen – auch wenn ich nicht dabei bin."]
+          "beispiel": ["Loyalität vor anderen", "Wenn in der Gruppe über mich gelästert wird, hält Kim dagegen – auch wenn ich nicht dabei bin."]
         },
         {
           "art": "info",
@@ -412,7 +412,7 @@
           "spalten": ["Ce qui compte pour moi", "Je le reconnais au quotidien quand …"],
           "breiten": [1.3, 3],
           "zeilen": 3,
-          "beispiel": ["la loyauté devant les autres", "Quand le groupe se moque de moi, Jil prend ma défense – même quand je ne suis pas là."]
+          "beispiel": ["la loyauté devant les autres", "Quand le groupe se moque de moi, Kim prend ma défense – même quand je ne suis pas là."]
         },
         {
           "art": "info",
@@ -625,14 +625,14 @@
         {
           "art": "geschichte",
           "titel": "Ein Ball, zwei Gruppen",
-          "text": "In der Pause gibt es nur noch einen Basketball. Jil, Mathis und Nora wollen Körbe werfen. Pol, Ana und Elias wollen ein Spiel mit zwei Mannschaften. Beide Gruppen ziehen am Ball. Jil ruft: „Wir waren zuerst da.“ Pol ruft zurück: „Ihr habt ihn doch jeden Tag.“ Dann klingelt es, und alle gehen wütend in die Klasse.",
+          "text": "In der Pause gibt es nur noch einen Basketball. Kim, Mathis und Nora wollen Körbe werfen. Robin, Ana und Elias wollen ein Spiel mit zwei Mannschaften. Beide Gruppen ziehen am Ball. Kim ruft: „Wir waren zuerst da.“ Robin ruft zurück: „Ihr habt ihn doch jeden Tag.“ Dann klingelt es, und alle gehen wütend in die Klasse.",
           "bild": "figur:lea:wuetend"
         },
         { "art": "aufgabe", "text": "Schritt 1: Was wollen die beiden Gruppen – und warum? Wie fühlen sie sich?", "symbole": ["lesen", "schreiben"] },
         {
           "art": "spalten",
-          "links": [{ "art": "satzanfaenge", "items": ["Jils Gruppe will …", "weil …", "Sie fühlt sich …"], "linien": 2 }],
-          "rechts": [{ "art": "satzanfaenge", "items": ["Pols Gruppe will …", "weil …", "Sie fühlt sich …"], "linien": 2 }]
+          "links": [{ "art": "satzanfaenge", "items": ["Kims Gruppe will …", "weil …", "Sie fühlt sich …"], "linien": 2 }],
+          "rechts": [{ "art": "satzanfaenge", "items": ["Robins Gruppe will …", "weil …", "Sie fühlt sich …"], "linien": 2 }]
         },
         {
           "art": "aufgabe",
@@ -656,7 +656,7 @@
         "ziel": "Die Kinder lernen ein Problemlöse-Modell in vier Schritten kennen, versetzen sich in beide Seiten eines Konflikts, sammeln Lösungen, schätzen deren Folgen ab und wählen eine faire Lösung.",
         "ablauf": [
           "Einstieg (5 Min.): Das Brückenbild zeigen: „Zwei Gruppen stehen an verschiedenen Ufern. Was brauchen sie, um zusammenzukommen?“",
-          "Geschichte vorlesen, Aufgabe 1 zu zweit (10 Min.). Nachfragen: „Warum ist es Jils Gruppe so wichtig? Und Pols Gruppe?“",
+          "Geschichte vorlesen, Aufgabe 1 zu zweit (10 Min.). Nachfragen: „Warum ist es Kims Gruppe so wichtig? Und Robins Gruppe?“",
           "Aufgabe 2 in Kleingruppen (15 Min.): Ideen zuerst ohne Bewertung sammeln, dann Folgen und Fairness prüfen.",
           "Aufgabe 3: Jede Gruppe stellt ihre fairste Brücke vor. Die Klasse prüft: Können beide Seiten damit leben?",
           "Aufgabe 4 in Einzelarbeit, Austausch freiwillig. Das Brückenbild für echte Konflikte weiterverwenden, etwa im Klassenrat."

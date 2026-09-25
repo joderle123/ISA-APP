@@ -16,7 +16,7 @@
         {
           "art": "geschichte",
           "titel": "Das volle Pult",
-          "text": "Jil soll ihr Pult aufräumen. Überall liegen Hefte, Stifte und Papier. Jil denkt: „Das schaffe ich nie.“ Dann sagt sie sich: „Eins nach dem anderen.“ Zuerst die Stifte, dann die Hefte, dann das Papier. Geschafft.",
+          "text": "Kim soll ihr Pult aufräumen. Überall liegen Hefte, Stifte und Papier. Kim denkt: „Das schaffe ich nie.“ Dann sagt sie sich: „Eins nach dem anderen.“ Zuerst die Stifte, dann die Hefte, dann das Papier. Geschafft.",
           "bild": "figur:lea:besorgt"
         },
         {
@@ -48,7 +48,7 @@
         "ziel": "Die Kinder erleben, dass eine große Aufgabe leichter wird, wenn man sie in kleine Schritte teilt. Sie planen eine eigene Aufgabe in drei Schritten und wählen einen Mut-Satz, mit dem sie sich selbst anfeuern.",
         "ablauf": [
           "Einstieg (5 Min.): Einen hohen Bücherstapel zeigen: „Wie bekomme ich den ins Regal?“ – „Eins nach dem anderen.“",
-          "Geschichte vorlesen. Fragen: „Was denkt Jil zuerst? Was hilft ihr dann?“",
+          "Geschichte vorlesen. Fragen: „Was denkt Kim zuerst? Was hilft ihr dann?“",
           "Aufgabe 1 zuerst an der Tafel üben (z. B. Ranzen packen), dann plant jedes Kind eine eigene Aufgabe.",
           "Aufgabe 2: Mut-Sätze gemeinsam sprechen – laut, dann flüsternd, dann nur im Kopf. Jedes Kind wählt eine Karte.",
           "Die Karte auf das Pult legen. In den nächsten Tagen fragen: „Was ist dein erster Schritt?“"
@@ -107,7 +107,7 @@
         {
           "art": "zuordnen",
           "titel": ["Das hat Noah geholfen", "Antreiber"],
-          "links": ["Er darf das Spiel wählen.", "Er malt, was sitzt, grün an.", "Ana fragt ihn ab."],
+          "links": ["Er darf das Spiel wählen.", "Er malt, was sitzt, grün an.", "Ana übt mit ihm."],
           "rechts": ["Dazugehören", "Selbst entscheiden", "Etwas können"]
         },
         { "art": "aufgabe", "text": "Was treibt dich an? Kreuze an, was für dich stimmt.", "symbole": ["ankreuzen"] },
@@ -118,7 +118,7 @@
             "Ich lerne lieber, wenn ich mitbestimmen darf.",
             "Ich freue mich, wenn ich merke: Das kann ich jetzt.",
             "Mit anderen zusammen lerne ich lieber.",
-            "Wenn etwas zu schwer ist, will ich schnell aufhören."
+            "Ich strenge mich an, wenn ich weiß, wozu es gut ist."
           ]
         },
         {
@@ -279,7 +279,7 @@
     "stufen": ["C3", "C4"],
     "sozialform": ["einzeln", "gruppe"],
     "dauer": "45 Min.",
-    "eldib": ["V-22", "K-24", "V-18"],
+    "eldib": ["V-22", "K-15", "V-18"],
     "schlagworte": ["Lernhaltung", "Selbstgespräch", "Fortschritt", "Selbstwirksamkeit", "Durchhalten"],
     "bild": "icon:seedling",
     "de": {
@@ -321,7 +321,7 @@
         {
           "art": "zuordnen",
           "titel": ["Stopp-Satz", "Weiter-Satz"],
-          "links": ["Ich kann das nicht.", "Das ist viel zu schwer.", "Ich habe einen Fehler gemacht.", "Die anderen sind schneller."],
+          "links": ["Ich kann das nicht.", "Das ist so viel auf einmal.", "Ich habe einen Fehler gemacht.", "Die anderen sind schneller."],
           "rechts": ["Ich kann von den anderen lernen.", "Ich kann das noch nicht.", "Ich übe es in kleinen Schritten.", "Aus Fehlern lerne ich."]
         },
         {
@@ -409,8 +409,7 @@
             "Ich habe erst am Abend vorher gelernt.",
             "Die Lehrerin kann mich nicht leiden.",
             "Ich habe die Vokabeln nur gelesen, nicht abgefragt.",
-            "Bei der Textaufgabe wusste ich nicht genau, was verlangt war.",
-            "Das werde ich nie können."
+            "Bei der Textaufgabe wusste ich nicht genau, was verlangt war."
           ]
         },
         {
@@ -526,8 +525,7 @@
             "Je n’ai révisé que la veille au soir.",
             "La prof ne m’aime pas.",
             "J’ai seulement relu le vocabulaire, sans me tester.",
-            "Pour la production écrite, je ne savais pas exactement ce qui était demandé.",
-            "Je n’y arriverai jamais."
+            "Pour la production écrite, je ne savais pas exactement ce qui était demandé."
           ]
         },
         {
@@ -551,7 +549,7 @@
           "spalten": ["Exercice", "Qu’est-ce qui n’a pas marché ?", "Pourquoi ?", "La prochaine fois …"],
           "breiten": [0.7, 1.4, 1.4, 1.8],
           "zeilen": 3,
-          "beispiel": ["n° 3", "7 verbes sur 12 faux", "confusion entre être et avoir", "Mettre les verbes avec être sur des fiches, 5 minutes par jour"]
+          "beispiel": ["n° 3", "7 verbes sur 12 faux", "confusion entre être et avoir", "Verbes avec être sur fiches, s’interroger 5 minutes par jour"]
         },
         {
           "art": "aufgabe",
@@ -622,6 +620,626 @@
         ],
         "achtung": "Forte peur des réactions à la maison ou grand abattement : proposer un entretien individuel, impliquer le SePAS et la direction compétente (responsable). En cas d’indices de violence, agir immédiatement selon la procédure interne.",
         "material": "Un devoir corrigé"
+      }
+    }
+  },
+  {
+    "id": "vor-der-probe",
+    "bereich": "lernen",
+    "thema": "pruefungen",
+    "stufen": ["C3", "C4"],
+    "sozialform": ["einzeln", "klasse"],
+    "dauer": "45 Min. + 5 Min. nach der Probe",
+    "eldib": ["K-26", "V-24", "V-22"],
+    "schlagworte": ["Probe", "Lernplan", "Aufregung", "Atemübung", "Mut-Sätze"],
+    "bild": "icon:clipboard-check",
+    "de": {
+      "titel": "Vor der Probe: mein Plan",
+      "untertitel": "Vor einer Probe sind viele aufgeregt. Das ist normal. Mit einem guten Plan bleibst du ruhiger.",
+      "bausteine": [
+        { "art": "aufgabe", "text": "Wie fühlst du dich, wenn eine Probe angekündigt wird? Kreise ein.", "symbole": ["einkreisen"] },
+        { "art": "gefuehle", "modus": "einkreisen", "spalten": 6, "gefuehle": ["ruhig", "froh", "aufgeregt", "nervoes", "besorgt", "aengstlich"] },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Aufregung ist normal",
+          "text": "Ein bisschen Aufregung macht wach. Zu viel Aufregung kann das Denken blockieren. Drei Dinge helfen: verteilt üben, ruhig atmen und dir selbst Mut machen."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Plane dein Üben. Verteile den Stoff auf mehrere Tage.",
+          "hinweis": "Jeden Tag ein bisschen hilft mehr als alles am letzten Abend. Prüfe am Ende: Kann ich es ohne Hilfe?",
+          "symbole": ["schreiben"]
+        },
+        {
+          "art": "tabelle",
+          "spalten": ["Tag", "Das übe ich", "So übe ich", "Geschafft"],
+          "breiten": [0.9, 1.8, 1.8, 0.9],
+          "zeilen": 4,
+          "beispiel": ["Montag", "10 Wörter aus der Wörterliste", "Abdecken, aufschreiben, vergleichen", "x"]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Kurz vor der Probe",
+          "punkte": [
+            "Am Abend nur noch kurz wiederholen, nichts Neues anfangen.",
+            "Mäppchen und alles Nötige einpacken.",
+            "Früh ins Bett gehen – ausgeschlafen denkt es sich leichter.",
+            "Am Morgen in Ruhe frühstücken."
+          ]
+        },
+        { "art": "aufgabe", "text": "Am Tag der Probe: So wirst du ruhig. Probiere es gleich aus.", "symbole": ["zuhoeren"] },
+        { "art": "atmen", "uebung": "blume" },
+        { "art": "aufgabe", "text": "Wähle zwei Mut-Sätze für die Probe. Schreibe einen eigenen dazu.", "symbole": ["ankreuzen", "schreiben"] },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "frei": 2,
+          "items": [
+            "Ich habe geübt. Ich kann schon einiges.",
+            "Ich lese jede Aufgabe in Ruhe.",
+            "Ich fange mit einer leichten Aufgabe an.",
+            "Wenn ich hänge, mache ich erst weiter.",
+            "Aufregung ist normal. Sie macht mich wach.",
+            "Eine Probe zeigt, was ich schon kann."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Nach der Probe: Schau zurück.",
+          "hinweis": "Fülle diesen Teil erst nach der Probe aus.",
+          "symbole": ["schreiben"]
+        },
+        { "art": "satzanfaenge", "linien": 2, "items": ["Gut geklappt hat …", "Geholfen hat mir …", "Beim nächsten Mal mache ich anders: …"] },
+        { "art": "rueckblick" }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder bereiten sich planvoll auf eine Probe vor: Sie verteilen das Üben auf mehrere Tage, lernen eine Atemübung gegen Aufregung, wählen Mut-Sätze und schauen nach der Probe zurück, was geholfen hat.",
+        "ablauf": [
+          "Einstieg (5 Min.): „Was spürt ihr, wenn eine Probe angekündigt wird?“ Aufgabe 1 ausfüllen. Betonen: Alle Gefühle sind in Ordnung.",
+          "Info-Kasten lesen. Aufgabe 2 mit einer echten, angekündigten Probe: an der Tafel zeigen, wie man 40 Wörter auf vier Tage verteilt.",
+          "Tipp-Kasten lesen. Aufgabe 3: Die Atemübung gemeinsam dreimal machen und vereinbaren, sie vor jeder Probe zu wiederholen.",
+          "Aufgabe 4: Mut-Sätze vorlesen lassen, wer mag. Die gewählten Sätze auf einem Zettel ins Mäppchen legen.",
+          "Aufgabe 5 erst nach der Probe (5 Min.): Was hat geholfen? Ideen in der Klasse sammeln."
+        ],
+        "hintergrund": "Aufregung vor Prüfungen hat drei Seiten: Sorgen im Kopf, Anspannung im Körper und oft ungünstiges Verhalten wie Aufschieben oder Pauken am letzten Abend (Zeidner, 1998). Das Blatt setzt an allen drei an. Gegen das Pauken hilft verteiltes Üben mit Selbstabfragen: Wer den Stoff auf mehrere kurze Einheiten verteilt und sich dabei selbst prüft, behält ihn deutlich länger (Dunlosky et al., 2013). Gegen die Anspannung hilft eine vorher eingeübte Atemübung mit langsamem Ausatmen, gegen Sorgen helfen ermutigende Selbstaussagen, wie sie kognitiv-verhaltenstherapeutische Programme für ängstliche Kinder einsetzen (Kendall & Hedtke, 2006).",
+        "quellen": [
+          "Zeidner, M. (1998). Test Anxiety: The State of the Art. New York: Plenum.",
+          "Dunlosky, J., Rawson, K. A., Marsh, E. J., Nathan, M. J. & Willingham, D. T. (2013). Improving students’ learning with effective learning techniques. Psychological Science in the Public Interest, 14(1), 4–58.",
+          "Kendall, P. C. & Hedtke, K. A. (2006). Cognitive-Behavioral Therapy for Anxious Children: Therapist Manual (3rd ed.). Ardmore, PA: Workbook Publishing."
+        ],
+        "differenzierung": {
+          "leichter": "Den Lernplan gemeinsam füllen und nur zwei Tage planen. Einen Mut-Satz auswählen.",
+          "schwerer": "Zu jedem Tag notieren, wie das Kind prüft, ob es den Stoff ohne Hilfe kann."
+        },
+        "impulse": [
+          "Was machst du am Abend vor einer Probe?",
+          "Woran merkst du, dass du gut vorbereitet bist?",
+          "Was sagst du dir, wenn du eine Aufgabe nicht weißt?"
+        ],
+        "tipps": [
+          "Die Atemübung vor jeder Probe gemeinsam machen – so ist sie im Ernstfall abrufbar.",
+          "Den Lernplan den Eltern zeigen: Kurz und regelmäßig üben wirkt besser als langes Abfragen am Vorabend."
+        ],
+        "achtung": "Wenn ein Kind vor Proben regelmäßig Bauch- oder Kopfschmerzen hat, schlecht schläft oder die Schule meidet: das Gespräch mit den Eltern suchen und die zuständige Leitung (Responsable) informieren.",
+        "material": "Optional: Karteikarten"
+      }
+    }
+  },
+  {
+    "id": "pruefungsangst",
+    "bereich": "lernen",
+    "thema": "pruefungen",
+    "stufen": ["ES"],
+    "sozialform": ["einzeln", "gruppe"],
+    "dauer": "50 Min.",
+    "eldib": ["K-26", "V-24", "V-33"],
+    "schlagworte": ["Prüfungsangst", "Stress", "Gedanken prüfen", "Atemübung", "Prüfungsvorbereitung"],
+    "bild": "icon:mood-nervous",
+    "de": {
+      "titel": "Prüfungsangst in den Griff bekommen",
+      "untertitel": "Etwas Aufregung vor einer Prüfung ist normal und macht wach. Wenn die Angst aber das Denken blockiert, helfen gezielte Strategien.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Die drei Seiten der Prüfungsangst",
+          "text": "Prüfungsangst zeigt sich auf drei Ebenen, die sich gegenseitig verstärken können:",
+          "punkte": [
+            "Körper: Herzklopfen, flauer Magen, zitternde Hände, schlechter Schlaf",
+            "Gedanken: „Ich falle sicher durch“, „Alle anderen können es besser“, Leere im Kopf",
+            "Verhalten: Lernen aufschieben, die Nacht durchlernen, sich am liebsten krankmelden"
+          ]
+        },
+        { "art": "aufgabe", "text": "Wie zeigt sich Aufregung vor Prüfungen bei dir? Notiere für jede Ebene ein Beispiel." },
+        {
+          "art": "tabelle",
+          "spalten": ["Körper", "Gedanken", "Verhalten"],
+          "zeilen": 2,
+          "beispiel": ["Ich schlafe schlecht, meine Hände sind kalt.", "„Ich habe alles vergessen.“", "Ich lese dieselbe Seite fünfmal."]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Prüfe deine Angstgedanken.",
+          "hinweis": "Gedanken sind keine Tatsachen. Frag dich: Was spricht dagegen? Welcher Gedanke wäre realistischer und hilfreicher?"
+        },
+        {
+          "art": "tabelle",
+          "spalten": ["Angstgedanke", "Was spricht dagegen?", "Hilfreicher Gedanke"],
+          "zeilen": 2,
+          "beispiel": [
+            "„Ich falle sicher durch.“",
+            "Im letzten Test hatte ich 38 von 60. Diesmal habe ich früher angefangen.",
+            "„Ich bin vorbereitet. Ich muss nicht alles wissen, um zu bestehen.“"
+          ]
+        },
+        { "art": "aufgabe", "text": "Vorbereitung: Was nimmst du dir für die nächste Prüfung vor? Kreuze an." },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "frei": 2,
+          "items": [
+            "Ich verteile das Lernen auf mehrere Tage.",
+            "Ich teste mich selbst, statt nur zu lesen.",
+            "Ich übe mit alten Prüfungen unter Zeitdruck.",
+            "Ich kläre offene Fragen früh mit der Lehrkraft.",
+            "Ich schlafe vor der Prüfung ausreichend.",
+            "Ich packe am Vorabend alles ein, was ich brauche."
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Am Tag der Prüfung",
+          "punkte": [
+            "Normal frühstücken und rechtzeitig losgehen.",
+            "Vor dem Raum keine Gespräche über den Stoff, wenn sie dich nervös machen.",
+            "Erst alle Aufgaben überfliegen, dann mit einer leichten beginnen."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Übe die Quadrat-Atmung jetzt zwei Minuten lang.",
+          "hinweis": "Sie hilft vor dem Prüfungsraum und in der Prüfung, wenn du hängst."
+        },
+        { "art": "atmen", "uebung": "quadrat" },
+        { "art": "aufgabe", "text": "Plane, was du tust, wenn die Angst in der Prüfung hochkommt." },
+        {
+          "art": "wennDann",
+          "zeilen": 2,
+          "beispiele": [
+            {
+              "wenn": "Wenn mir in der Prüfung bei einer Aufgabe nichts einfällt,",
+              "dann": "atme ich zweimal langsam aus, markiere die Aufgabe und mache mit der nächsten weiter."
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "text": "Wenn die Angst so stark ist, dass du kaum noch lernen oder schlafen kannst, musst du da nicht allein durch:",
+          "punkte": [
+            "der SePAS deiner Schule",
+            "deine Klassenlehrerin oder dein Klassenlehrer (Régent)",
+            "Kanner- a Jugendtelefon: 116 111 (anonym, kostenlos)"
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen verstehen Prüfungsangst als Zusammenspiel von Körper, Gedanken und Verhalten, prüfen Angstgedanken und legen Vorbereitung, Beruhigung und einen Notfallplan für den Prüfungstag fest.",
+        "ablauf": [
+          "Einstieg (5 Min.): Skala im Raum von 0 bis 10: „Wie nervös seid ihr vor Prüfungen?“ Nicht kommentieren – nur zeigen, dass es fast alle kennen.",
+          "Info-Kasten lesen, Aufgabe 1 allein; Beispiele freiwillig sammeln.",
+          "Aufgabe 2: das Beispiel gemeinsam prüfen – Gedanken nicht wegdiskutieren, sondern realistisch prüfen.",
+          "Aufgabe 3 für eine anstehende Prüfung; Aufgabe 4 zwei Minuten gemeinsam üben.",
+          "Aufgabe 5 zu zweit vergleichen. Auf den Hilfe-Kasten hinweisen und den SePAS vorstellen."
+        ],
+        "hintergrund": "Nach Zeidner (1998) umfasst Prüfungsangst Sorgen und Katastrophengedanken, körperliche Anspannung und Verhaltensmuster wie Vermeidung. Vor allem die Sorgen binden Aufmerksamkeit, die beim Lösen der Aufgaben fehlt. Wirksame Hilfe setzt deshalb auf mehreren Ebenen an: Angstgedanken werden wie in der kognitiven Verhaltenstherapie auf Belege geprüft (Beck, 2011), verteiltes Lernen mit Selbsttests gibt Sicherheit (Dunlosky et al., 2013), und eine eingeübte Atemübung senkt die körperliche Erregung. Ein mittleres Maß an Anspannung ist normal und muss nicht bekämpft werden.",
+        "quellen": [
+          "Zeidner, M. (1998). Test Anxiety: The State of the Art. New York: Plenum.",
+          "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
+          "Dunlosky, J., Rawson, K. A., Marsh, E. J., Nathan, M. J. & Willingham, D. T. (2013). Improving students’ learning with effective learning techniques. Psychological Science in the Public Interest, 14(1), 4–58."
+        ],
+        "differenzierung": {
+          "leichter": "Aufgabe 1 und 2 mit je einem Beispiel; hilfreiche Gedanken zur Auswahl geben.",
+          "schwerer": "Einen Zwei-Wochen-Plan mit Lernfenstern, Selbsttests und Pausen erstellen."
+        },
+        "impulse": [
+          "Was hat dir früher geholfen, ruhig zu bleiben?",
+          "Welcher Gedanke macht dich am nervösesten?",
+          "Woran merkst du, dass die Angst kleiner wird?"
+        ],
+        "tipps": ["Die Atemübung vor Klassenarbeiten gemeinsam machen.", "Statt „Du schaffst das schon“ gemeinsam klären, was konkret vorbereitet ist."],
+        "achtung": "Bei Panikattacken, Schlafproblemen oder Schulvermeidung: Einzelgespräch führen, SePAS und zuständige Leitung (Responsable) einbeziehen. Bei Hinweisen auf Selbstverletzung sofort nach dem internen Ablauf handeln, nicht allein lassen.",
+        "material": "Optional: alte Prüfungen"
+      }
+    },
+    "fr": {
+      "titel": "Gérer le stress des examens",
+      "untertitel": "Un peu de nervosité avant un examen, c’est normal : ça tient en éveil. Mais quand l’angoisse bloque la réflexion, des stratégies ciblées aident.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Les trois visages du stress d’examen",
+          "text": "Le stress d’examen se manifeste à trois niveaux, qui peuvent se renforcer mutuellement :",
+          "punkte": [
+            "Corps : cœur qui bat vite, ventre noué, mains qui tremblent, mauvais sommeil",
+            "Pensées : « Je vais rater, c’est sûr », « Les autres sont meilleurs », trou noir",
+            "Comportement : repousser les révisions, réviser toute la nuit, avoir envie de se faire porter malade"
+          ]
+        },
+        { "art": "aufgabe", "text": "Comment le stress des examens se manifeste-t-il chez toi ? Note un exemple pour chaque niveau." },
+        {
+          "art": "tabelle",
+          "spalten": ["Corps", "Pensées", "Comportement"],
+          "zeilen": 2,
+          "beispiel": ["Je dors mal, j’ai les mains froides.", "« J’ai tout oublié. »", "Je lis cinq fois la même page."]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Examine tes pensées anxieuses.",
+          "hinweis": "Une pensée n’est pas un fait. Demande-toi : qu’est-ce qui la contredit ? Quelle pensée serait plus réaliste et plus utile ?"
+        },
+        {
+          "art": "tabelle",
+          "spalten": ["Pensée anxieuse", "Ce qui la contredit", "Pensée plus utile"],
+          "zeilen": 2,
+          "beispiel": [
+            "« Je vais rater, c’est sûr. »",
+            "Au dernier devoir, j’avais 38 sur 60. Cette fois, j’ai commencé plus tôt.",
+            "« Je suis préparé·e. Pas besoin de tout savoir pour réussir. »"
+          ]
+        },
+        { "art": "aufgabe", "text": "Préparation : que prévois-tu pour le prochain examen ? Coche." },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "frei": 2,
+          "items": [
+            "Je répartis mes révisions sur plusieurs jours.",
+            "Je me teste au lieu de seulement relire.",
+            "Je m’entraîne sur d’anciens devoirs, en temps limité.",
+            "Je pose mes questions à l’enseignant·e assez tôt.",
+            "Je dors suffisamment avant l’examen.",
+            "La veille, je prépare tout ce dont j’ai besoin."
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Le jour de l’examen",
+          "punkte": [
+            "Prendre un petit-déjeuner normal et partir à temps.",
+            "Devant la salle, éviter les discussions sur la matière si elles te stressent.",
+            "D’abord parcourir toutes les questions, puis commencer par une facile."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Entraîne-toi deux minutes à la respiration carrée.",
+          "hinweis": "Elle aide devant la salle d’examen, et pendant l’examen quand tu bloques."
+        },
+        { "art": "atmen", "uebung": "quadrat" },
+        { "art": "aufgabe", "text": "Prévois ce que tu fais si l’angoisse monte pendant l’examen." },
+        {
+          "art": "wennDann",
+          "zeilen": 2,
+          "beispiele": [
+            {
+              "wenn": "Si je n’ai plus aucune idée pour une question,",
+              "dann": "j’expire lentement deux fois, je marque la question et je passe à la suivante."
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "text": "Si l’angoisse est si forte que tu n’arrives presque plus à réviser ou à dormir, tu n’as pas à t’en sortir seul·e :",
+          "punkte": ["le SePAS de ton lycée", "ton ou ta régent·e", "Kanner- a Jugendtelefon : 116 111 (anonyme, gratuit)"]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes comprennent le stress d’examen comme une interaction entre corps, pensées et comportement, examinent leurs pensées anxieuses et prévoient préparation, stratégie de calme et plan en cas de blocage.",
+        "ablauf": [
+          "Entrée en matière (5 min) : échelle de 0 à 10 dans la salle : « À quel point êtes-vous stressés avant un examen ? » Ne pas commenter – montrer que presque tout le monde connaît cela.",
+          "Lire l’encadré, exercice 1 seul·e ; recueillir des exemples volontaires.",
+          "Exercice 2 : examiner l’exemple ensemble – vérifier les pensées de façon réaliste, sans les balayer.",
+          "Exercice 3 pour un examen à venir ; exercice 4 : deux minutes de respiration ensemble.",
+          "Comparer l’exercice 5 à deux. Signaler l’encadré d’aide et présenter le SePAS."
+        ],
+        "hintergrund": "Selon Zeidner (1998), le stress d’examen comprend des inquiétudes et des pensées catastrophistes, une tension corporelle et des comportements comme l’évitement. Ce sont surtout les inquiétudes qui accaparent l’attention nécessaire aux tâches. Une aide efficace agit donc à plusieurs niveaux : comme en thérapie cognitivo-comportementale, on confronte les pensées anxieuses aux faits (Beck, 2011) ; des révisions espacées avec autotests donnent de l’assurance (Dunlosky et al., 2013) ; un exercice de respiration bien entraîné réduit l’activation corporelle. Un niveau moyen de tension est normal et n’a pas à être combattu.",
+        "quellen": [
+          "Zeidner, M. (1998). Test Anxiety: The State of the Art. New York: Plenum.",
+          "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
+          "Dunlosky, J., Rawson, K. A., Marsh, E. J., Nathan, M. J. & Willingham, D. T. (2013). Improving students’ learning with effective learning techniques. Psychological Science in the Public Interest, 14(1), 4–58."
+        ],
+        "differenzierung": {
+          "leichter": "Exercices 1 et 2 avec un seul exemple ; proposer des pensées utiles au choix.",
+          "schwerer": "Établir un plan sur deux semaines avec plages de travail, autotests et pauses."
+        },
+        "impulse": ["Qu’est-ce qui t’a déjà aidé·e à rester calme ?", "Quelle pensée te stresse le plus ?", "À quoi verrais-tu que l’angoisse diminue ?"],
+        "tipps": [
+          "Faire l’exercice de respiration ensemble avant les devoirs en classe.",
+          "Au lieu de « Tu vas y arriver », clarifier ensemble ce qui est concrètement prêt."
+        ],
+        "achtung": "En cas de crises de panique, de troubles du sommeil ou d’évitement de l’école : entretien individuel, impliquer le SePAS et la direction compétente (responsable). En cas d’indices d’automutilation, agir immédiatement selon la procédure interne et ne pas laisser l’élève seul·e.",
+        "material": "En option : anciens devoirs"
+      }
+    }
+  },
+  {
+    "id": "wie-lerne-ich-am-besten",
+    "bereich": "lernen",
+    "thema": "strategien",
+    "stufen": ["C2"],
+    "sozialform": ["klasse", "einzeln"],
+    "dauer": "2 × 10–15 Min. an zwei Tagen",
+    "eldib": ["KOG-30", "K-15"],
+    "schlagworte": ["Lernmethoden", "Selbst abfragen", "Lern-Experiment", "Gedächtnis", "Wörter lernen"],
+    "bild": "icon:microscope",
+    "de": {
+      "titel": "Wie lerne ich am besten?",
+      "untertitel": "Es gibt viele Arten zu lernen. Probiere aus, was bei dir im Kopf bleibt.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Mach ein Lern-Experiment mit sechs neuen Wörtern.",
+          "hinweis": "Du bekommst sechs neue Wörter mit Bild.",
+          "symbole": ["zuhoeren", "sprechen"]
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 0,
+          "items": [
+            { "titel": "Heute üben", "text": "Drei Wörter nur anschauen. Drei andere abdecken und sagen." },
+            { "titel": "Warten", "text": "Einen Tag nicht üben." },
+            { "titel": "Morgen testen", "text": "Welche Wörter weißt du noch?" }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wie viele Wörter weißt du morgen noch? Male Sterne an.",
+          "hinweis": "Weißt du ein Wort noch? Dann male einen Stern an.",
+          "symbole": ["malen"]
+        },
+        { "art": "plan", "tage": ["Wort 1", "Wort 2", "Wort 3"], "zeilen": ["Nur anschauen", "Abdecken und sagen"], "symbol": "stern" },
+        { "art": "info", "symbol": "merke", "text": "Abdecken und selbst sagen ist anstrengend. Genau das hilft dem Kopf, sich Wörter zu merken." },
+        { "art": "aufgabe", "text": "Wie willst du ab jetzt üben? Kreise ein.", "symbole": ["einkreisen"] },
+        {
+          "art": "bilder",
+          "modus": "einkreisen",
+          "spalten": 3,
+          "bilder": [
+            { "bild": "icon:eye-off", "text": "Abdecken und sagen" },
+            { "bild": "icon:messages", "text": "Jemand fragt mich ab" },
+            { "bild": "icon:calendar", "text": "Jeden Tag ein bisschen" }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder erleben in einem kleinen Experiment, dass sie Wörter besser behalten, wenn sie sie abdecken und selbst aufsagen, statt sie nur anzuschauen. Danach wählen sie, wie sie beim nächsten Mal üben.",
+        "ablauf": [
+          "Vorbereitung: sechs neue Wörter mit Bild auswählen, z. B. französische Tiernamen, und in zwei Gruppen zu je drei teilen.",
+          "Tag 1 (10 Min.): Drei Wörter nur anschauen und vorlesen. Die anderen drei zeigen, abdecken und aufsagen lassen. Beide Gruppen gleich lange üben.",
+          "Tag 2 (10 Min.): ohne Wiederholung abfragen. Die Kinder malen für jedes gewusste Wort einen Stern.",
+          "Besprechen: „Womit weißt du mehr?“ Merke-Kasten lesen. Ruhig sagen, dass es bei einzelnen Kindern auch anders ausgehen kann.",
+          "Aufgabe 3: Jedes Kind kreist ein, wie es ab jetzt üben will. Beim nächsten Wörterlernen daran erinnern."
+        ],
+        "hintergrund": "Auch Kinder im Grundschulalter behalten Neues besser, wenn sie es aktiv aus dem Gedächtnis abrufen, statt es nur erneut anzuschauen. Sich selbst abfragen und das Üben auf mehrere Tage verteilen gehören zu den am besten belegten Lernmethoden (Dunlosky et al., 2013). Abrufen fühlt sich anstrengender an als Anschauen – deshalb wählen Kinder es selten von selbst. Das Experiment macht den Unterschied erlebbar. Zugleich üben die Kinder, ihr eigenes Lernen zu beobachten und zu bewerten, einen Grundbaustein selbstregulierten Lernens (Zimmerman, 2002).",
+        "quellen": [
+          "Dunlosky, J., Rawson, K. A., Marsh, E. J., Nathan, M. J. & Willingham, D. T. (2013). Improving students’ learning with effective learning techniques. Psychological Science in the Public Interest, 14(1), 4–58.",
+          "Zimmerman, B. J. (2002). Becoming a self-regulated learner: An overview. Theory Into Practice, 41(2), 64–70."
+        ],
+        "differenzierung": {
+          "leichter": "Nur Bilder statt Wörter verwenden und die Sterne gemeinsam zählen.",
+          "schwerer": "Das Experiment mit „Jemand fragt mich ab“ als dritter Methode wiederholen."
+        },
+        "impulse": [
+          "Womit hast du mehr Wörter behalten?",
+          "Was war anstrengender – und was hat mehr gebracht?",
+          "Wer kann dich zu Hause oder in der Maison Relais abfragen?"
+        ],
+        "tipps": [
+          "Abdecken und aufsagen zum Ritual machen, z. B. beim Wochenwortschatz.",
+          "Ergebnisse nicht vergleichen oder bewerten: Jedes Kind schaut nur auf sich."
+        ],
+        "achtung": "Wenn ein Kind trotz Übung kaum etwas behält oder beim Lernen sehr schnell aufgibt: genauer beobachten und mit den Eltern und der zuständigen Leitung (Responsable) über Unterstützung sprechen.",
+        "material": "Sechs Wortkarten mit Bild; Buntstifte"
+      }
+    }
+  },
+  {
+    "id": "clever-lernen",
+    "bereich": "lernen",
+    "thema": "strategien",
+    "stufen": ["ES"],
+    "sozialform": ["einzeln", "gruppe"],
+    "dauer": "50 Min.",
+    "eldib": ["V-29", "V-32", "KOG-51"],
+    "schlagworte": ["Lernstrategien", "Selbsttest", "Verteiltes Lernen", "Wiederholungsplan", "Prüfungsvorbereitung"],
+    "bild": "icon:brain",
+    "de": {
+      "titel": "Clever lernen",
+      "untertitel": "Viele lernen lange und behalten wenig. Das liegt selten an fehlendem Fleiß – oft liegt es an der Methode.",
+      "bausteine": [
+        { "art": "aufgabe", "text": "Wie lernst du für Prüfungen? Kreuze an." },
+        {
+          "art": "einschaetzung",
+          "optionen": ["oft", "manchmal", "selten"],
+          "items": [
+            "Ich lese meine Notizen oder das Buch mehrmals durch.",
+            "Ich markiere Wichtiges farbig.",
+            "Ich schreibe Zusammenfassungen.",
+            "Ich teste mich selbst: Karteikarten, Übungsaufgaben, Heft zu und aufschreiben.",
+            "Ich verteile das Lernen auf mehrere Tage.",
+            "Ich lerne vor allem am Abend vor der Prüfung."
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Was die Forschung zeigt",
+          "text": "Eine große Übersichtsstudie hat zehn verbreitete Lernmethoden verglichen. Am besten schnitten zwei ab: sich selbst testen und das Lernen auf mehrere Tage verteilen. Markieren und Wiederlesen brachten wenig – obwohl sie sich gut anfühlen. Beim dritten Lesen kommt dir alles bekannt vor. Das ist aber Wiedererkennen, noch kein Können."
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "So testest du dich selbst",
+          "punkte": [
+            "Heft zu, alles aufschreiben, was du noch weißt – dann vergleichen und Lücken markieren.",
+            "Karteikarten: vorne die Frage, hinten die Antwort. Was sitzt, kommt nach hinten.",
+            "Übungsaufgaben ohne Lösung rechnen, alte Prüfungen mit Zeitlimit bearbeiten.",
+            "Den Stoff jemandem erklären, ohne ins Heft zu schauen."
+          ]
+        },
+        { "art": "aufgabe", "text": "Mach aus deiner üblichen Lernmethode einen Selbsttest." },
+        {
+          "art": "tabelle",
+          "spalten": ["So lerne ich bisher", "So wird ein Selbsttest daraus"],
+          "breiten": [1, 1.6],
+          "zeilen": 2,
+          "beispiel": ["Ich lese die Geschichtsnotizen dreimal.", "Heft zu, die fünf Ursachen aus dem Kopf aufschreiben, dann vergleichen und Lücken markieren."]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Plane deine Wiederholungen für die nächste Prüfung.",
+          "hinweis": "Bei „Mein Ziel“: Prüfung und Datum. Trage links die Themen ein. Wiederhole jedes Thema mit wachsendem Abstand, beginne jede Runde mit einem Selbsttest und hake ab."
+        },
+        { "art": "plan", "ziel": "", "tage": ["Tag 1", "Tag 2", "Tag 4", "Tag 7"], "zeilen": ["", "", "", ""], "symbol": "kasten" },
+        { "art": "aufgabe", "text": "Stell der Lese-Falle eine Falle: Formuliere einen Wenn-dann-Plan." },
+        {
+          "art": "wennDann",
+          "zeilen": 2,
+          "beispiele": [
+            {
+              "wenn": "Wenn ich merke, dass ich eine Seite zum zweiten Mal lese,",
+              "dann": "klappe ich das Heft zu und schreibe auf, was ich noch weiß."
+            }
+          ]
+        },
+        { "art": "aufgabe", "text": "Nach der Prüfung: Werte deinen Plan aus.", "hinweis": "Fülle diesen Teil erst nach der Prüfung aus." },
+        { "art": "satzanfaenge", "items": ["Am meisten gebracht hat mir: …", "Das mache ich beim nächsten Mal anders: …"] }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen vergleichen ihre Lerngewohnheiten mit Befunden zur Wirksamkeit von Lernmethoden, bauen eine gewohnte Methode zu einem Selbsttest um und planen verteilte Wiederholungen für die nächste Prüfung.",
+        "ablauf": [
+          "Einstieg (5 Min.): „Wie habt ihr für die letzte Prüfung gelernt?“ Aufgabe 1 allein ausfüllen.",
+          "Info-Kasten lesen. Wiedererkennen und Abrufen unterscheiden: Gesichter erkennen ist leicht, Namen nennen schwer.",
+          "Aufgabe 2: das Beispiel besprechen, dann zu zweit zwei eigene Methoden umbauen.",
+          "Aufgabe 3 mit einer echten, anstehenden Prüfung; Themen in kleine Einheiten teilen.",
+          "Aufgabe 4 formulieren; Aufgabe 5 nach der Prüfung: Was hat der Plan verändert?"
+        ],
+        "hintergrund": "Dunlosky et al. (2013) haben zehn verbreitete Lernmethoden anhand zahlreicher Studien bewertet. Hohen Nutzen bescheinigen sie dem Üben durch Abrufen (Selbsttests) und dem verteilten Lernen, mittleren Nutzen unter anderem dem Selbsterklären und dem gemischten Üben. Geringen Nutzen haben Markieren, Wiederlesen und Zusammenfassen, zumindest in der üblichen Form. Wiederlesen erzeugt ein trügerisches Gefühl von Vertrautheit; Abrufen ist anstrengender, festigt aber das Gedächtnis und zeigt, was noch fehlt – eine Voraussetzung für selbstreguliertes Lernen (Zimmerman, 2002). Wenn-dann-Pläne helfen, neue Gewohnheiten im Alltag umzusetzen (Gollwitzer, 1999).",
+        "quellen": [
+          "Dunlosky, J., Rawson, K. A., Marsh, E. J., Nathan, M. J. & Willingham, D. T. (2013). Improving students’ learning with effective learning techniques. Psychological Science in the Public Interest, 14(1), 4–58.",
+          "Zimmerman, B. J. (2002). Becoming a self-regulated learner: An overview. Theory Into Practice, 41(2), 64–70.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "differenzierung": {
+          "leichter": "Aufgabe 2 mit einer einzigen Methode; im Plan nur zwei Themen eintragen.",
+          "schwerer": "Den Plan auf drei Wochen strecken und gemischtes Üben einbauen: Aufgabentypen abwechseln statt blockweise üben."
+        },
+        "impulse": [
+          "Kannst du es – oder erkennst du es nur wieder?",
+          "Welche Methode probierst du zum ersten Mal aus?",
+          "Was hindert dich daran, früher anzufangen?"
+        ],
+        "tipps": [
+          "Abrufübungen im Unterricht vormachen: drei Fragen zur letzten Stunde, ohne Heft und ohne Note.",
+          "Markieren nicht verbieten, sondern weiterführen: Markiertes als Frage auf eine Karteikarte übertragen."
+        ],
+        "material": "Karteikarten; optional alte Prüfungen"
+      }
+    },
+    "fr": {
+      "titel": "Apprendre malin",
+      "untertitel": "Beaucoup révisent longtemps et retiennent peu. C’est rarement un manque d’effort – c’est souvent une question de méthode.",
+      "bausteine": [
+        { "art": "aufgabe", "text": "Comment révises-tu pour les examens ? Coche." },
+        {
+          "art": "einschaetzung",
+          "optionen": ["souvent", "parfois", "rarement"],
+          "items": [
+            "Je relis plusieurs fois mes notes ou le manuel.",
+            "Je surligne l’essentiel en couleur.",
+            "J’écris des résumés.",
+            "Je me teste : fiches, exercices, cahier fermé et je note ce que je sais.",
+            "Je répartis mes révisions sur plusieurs jours.",
+            "Je révise surtout la veille de l’examen."
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Ce que montre la recherche",
+          "text": "Une grande synthèse de recherches a comparé dix méthodes de révision répandues. Deux arrivent nettement en tête : se tester et répartir ses révisions sur plusieurs jours. Surligner et relire apportent peu – même si cela donne une bonne impression. À la troisième lecture, tout te semble familier. Mais reconnaître, ce n’est pas encore savoir."
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Comment te tester",
+          "punkte": [
+            "Cahier fermé, écrire tout ce dont tu te souviens – puis comparer et repérer les trous.",
+            "Fiches : la question devant, la réponse derrière. Ce qui est acquis passe à la fin du paquet.",
+            "Faire des exercices sans regarder la solution, d’anciens devoirs en temps limité.",
+            "Expliquer la matière à quelqu’un sans regarder ton cahier."
+          ]
+        },
+        { "art": "aufgabe", "text": "Transforme ta méthode habituelle en autotest." },
+        {
+          "art": "tabelle",
+          "spalten": ["Comment je révise jusqu’ici", "Comment en faire un autotest"],
+          "breiten": [1, 1.6],
+          "zeilen": 2,
+          "beispiel": ["Je relis trois fois mes notes d’histoire.", "Cahier fermé, écrire de mémoire les cinq causes, puis comparer et marquer ce qui manque."]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Planifie tes révisions pour le prochain examen.",
+          "hinweis": "À « Mon objectif » : l’examen et sa date. Note les chapitres à gauche. Révise chacun avec un écart croissant, commence chaque séance par un autotest et coche."
+        },
+        { "art": "plan", "ziel": "", "tage": ["Jour 1", "Jour 2", "Jour 4", "Jour 7"], "zeilen": ["", "", "", ""], "symbol": "kasten" },
+        { "art": "aufgabe", "text": "Tends un piège au piège de la relecture : formule un plan « si … alors »." },
+        {
+          "art": "wennDann",
+          "zeilen": 2,
+          "beispiele": [{ "wenn": "Si je remarque que je lis une page pour la deuxième fois,", "dann": "je ferme mon cahier et j’écris ce dont je me souviens." }]
+        },
+        { "art": "aufgabe", "text": "Après l’examen : fais le bilan de ton plan.", "hinweis": "Ne remplis cette partie qu’après l’examen." },
+        { "art": "satzanfaenge", "items": ["Ce qui m’a le plus aidé·e : …", "La prochaine fois, je ferai autrement : …"] }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes confrontent leurs habitudes de révision aux résultats de la recherche, transforment une méthode habituelle en autotest et planifient des révisions espacées pour le prochain examen.",
+        "ablauf": [
+          "Entrée en matière (5 min) : « Comment avez-vous révisé pour le dernier examen ? » Exercice 1 seul·e.",
+          "Lire l’encadré. Distinguer reconnaître et se rappeler : reconnaître un visage est facile, retrouver le nom l’est moins.",
+          "Exercice 2 : discuter l’exemple, puis transformer à deux ses propres méthodes.",
+          "Exercice 3 avec un vrai examen à venir, en découpant la matière en petites unités.",
+          "Formuler l’exercice 4 ; exercice 5 après l’examen : qu’est-ce que le plan a changé ?"
+        ],
+        "hintergrund": "Dunlosky et al. (2013) ont évalué dix méthodes de révision répandues. Ils attribuent une grande utilité aux autotests et aux révisions espacées, une utilité moyenne notamment à l’auto-explication et à la pratique entrelacée ; surligner, relire et résumer sont peu utiles sous leur forme habituelle. La relecture crée un sentiment trompeur de familiarité ; se rappeler demande plus d’effort, mais consolide la mémoire et révèle les lacunes – une condition de l’apprentissage autorégulé (Zimmerman, 2002). Les plans « si … alors » aident à ancrer de nouvelles habitudes (Gollwitzer, 1999).",
+        "quellen": [
+          "Dunlosky, J., Rawson, K. A., Marsh, E. J., Nathan, M. J. & Willingham, D. T. (2013). Improving students’ learning with effective learning techniques. Psychological Science in the Public Interest, 14(1), 4–58.",
+          "Zimmerman, B. J. (2002). Becoming a self-regulated learner: An overview. Theory Into Practice, 41(2), 64–70.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "differenzierung": {
+          "leichter": "Exercice 2 avec une seule méthode ; ne noter que deux chapitres dans le plan.",
+          "schwerer": "Étendre le plan sur trois semaines et alterner les types d’exercices au lieu de réviser par blocs."
+        },
+        "impulse": [
+          "Sais-tu vraiment – ou reconnais-tu seulement ?",
+          "Quelle méthode vas-tu essayer pour la première fois ?",
+          "Qu’est-ce qui t’empêche de commencer plus tôt ?"
+        ],
+        "tipps": [
+          "Faire en classe de courts exercices de récupération, sans cahier ni note.",
+          "Ne pas interdire le surlignage, mais transformer ce qui est surligné en questions sur fiches."
+        ],
+        "material": "Fiches ; en option anciens devoirs"
       }
     }
   }

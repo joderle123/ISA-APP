@@ -35,13 +35,13 @@
         {
           "art": "geschichte",
           "titel": "In der Umkleide",
-          "text": "Nora ist in einem Jahr zehn Zentimeter gewachsen. Jetzt ist sie die Größte in der Klasse. In der Umkleide ruft Pol: „Hey, Riesin, wie ist das Wetter da oben?“ Alle lachen, auch Nora. Aber in ihrem Bauch fühlt es sich eng an. Mathis steht daneben. Er ist einer der Kleinsten und denkt: „Wann wachse ich endlich?“",
+          "text": "Nora ist in einem Jahr zehn Zentimeter gewachsen. Jetzt ist sie die Größte in der Klasse. In der Umkleide ruft Kim: „Hey, Riesin, wie ist das Wetter da oben?“ Alle lachen, auch Nora. Aber in ihrem Bauch fühlt es sich eng an. Mathis steht daneben. Er ist einer der Kleinsten und denkt: „Wann wachse ich endlich?“",
           "bild": "figur:jana:verlegen"
         },
         { "art": "aufgabe", "text": "Nora lacht mit. Wie fühlt sie sich wohl innen drin? Kreise ein.", "symbole": ["nachdenken", "einkreisen"] },
         { "art": "gefuehle", "gefuehle": ["froh", "verlegen", "traurig", "wuetend", "stolz", "besorgt"], "modus": "einkreisen", "spalten": 6 },
-        { "art": "aufgabe", "text": "Was könnte Nora zu Pol sagen? Und was würdest du Mathis sagen?", "symbole": ["schreiben"] },
-        { "art": "satzanfaenge", "items": ["Nora könnte zu Pol sagen: …", "Zu Mathis würde ich sagen: …"], "linien": 2 },
+        { "art": "aufgabe", "text": "Was könnte Nora zu Kim sagen? Und was würdest du Mathis sagen?", "symbole": ["schreiben"] },
+        { "art": "satzanfaenge", "items": ["Nora könnte zu Kim sagen: …", "Zu Mathis würde ich sagen: …"], "linien": 2 },
         { "art": "aufgabe", "text": "Mit Fragen musst du nicht allein bleiben. Wen kannst du fragen?", "hinweis": "Schreibe nur auf, was du möchtest. Dieses Blatt musst du niemandem zeigen.", "symbole": ["schreiben"] },
         { "art": "hand", "finger": ["Zuhause", "In der Schule", "Ärztin oder Arzt", "Noch jemand", "Anonym am Telefon: Kanner- a Jugendtelefon 116 111"] },
         {

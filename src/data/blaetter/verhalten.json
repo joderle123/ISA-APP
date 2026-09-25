@@ -22,14 +22,14 @@
               "figuren": ["figur:sami:wuetend", "figur:tom:froh:jubeln"],
               "requisit": "icon:ball-football",
               "blase": "keine",
-              "untertitel": "Pol nimmt Yusuf den Ball weg."
+              "untertitel": "Sam nimmt Yusuf den Ball weg."
             },
             {"figuren": ["figur:sami:wuetend:stopp"], "text": "Stopp!", "untertitel": "Yusuf haut nicht. Er sagt: Stopp."},
             {
               "figuren": ["figur:tom:verlegen:geben", "figur:sami:froh"],
               "requisit": "icon:ball-football",
               "blase": "keine",
-              "untertitel": "Pol hört auf. Er gibt den Ball zurück."
+              "untertitel": "Sam gibt den Ball zurück."
             }
           ]
         },
@@ -41,7 +41,7 @@
         "ziel": "Die Kinder lernen ein festes Stopp-Signal (erhobene Hand und das Wort „Stopp“) kennen, setzen es statt Hauen oder Wegnehmen ein und hören auf, wenn ein anderes Kind „Stopp“ sagt.",
         "ablauf": [
           "Einstieg (5 Min.): Ein Stopp-Schild zeigen. Fragen: „Wo habt ihr das schon gesehen? Was macht ein Auto dort?“",
-          "Bildgeschichte (5 Min.): Die Kinder erzählen Bild für Bild. Fragen: „Was macht Yusuf, statt zu hauen? Was macht Pol, als er ‚Stopp‘ hört?“",
+          "Bildgeschichte (5 Min.): Die Kinder erzählen Bild für Bild. Fragen: „Was macht Yusuf, statt zu hauen? Was macht Sam, als er ‚Stopp‘ hört?“",
           "Stopp üben (5 Min.): Alle heben die Hand und sagen „Stopp“ – erst leise, dann mit fester Stimme. Dabei das Gegenüber anschauen.",
           "Stopp-Hand gestalten (10 Min.): Hand umranden, rot anmalen, ausschneiden und auf ein Holzstäbchen kleben.",
           "Stopp-Tanz: Musik läuft, alle bewegen sich. Hebt ein Kind seine Stopp-Hand, erstarren alle. Mit wechselnden Kindern wiederholen."
@@ -292,7 +292,7 @@
         {
           "art": "geschichte",
           "titel": "Zehn Sekunden",
-          "text": "Jil sitzt abends an den Hausaufgaben, als ihr Handy vibriert. In der Gruppe für das Biologie-Projekt schreibt Tiago: „Typisch Jil. Wieder nichts gemacht.“ Dabei hat sie ihren Teil schon gestern hochgeladen. Ihr wird heiß, die Daumen tippen schon eine scharfe Antwort mit ein paar Beleidigungen. Kurz vor dem Senden legt sie das Handy weg und atmet zweimal lang aus. Dann überlegt sie: Was will ich eigentlich erreichen?",
+          "text": "Kim sitzt abends an den Hausaufgaben, als ihr Handy vibriert. In der Gruppe für das Biologie-Projekt schreibt Tiago: „Typisch Kim. Wieder nichts gemacht.“ Dabei hat sie ihren Teil schon gestern hochgeladen. Ihr wird heiß, die Daumen tippen schon eine scharfe Antwort mit ein paar Beleidigungen. Kurz vor dem Senden legt sie das Handy weg und atmet zweimal lang aus. Dann überlegt sie: Was will ich eigentlich erreichen?",
           "bild": "figur:jana:wuetend"
         },
         {"art": "aufgabe", "text": "Die 10-Sekunden-Regel: Spiele sie einmal in Gedanken durch – mit einer Situation aus Aufgabe 1."},
@@ -309,7 +309,7 @@
             {"titel": "Entscheiden: Was bringt mich meinem Ziel näher?", "text": "Erst jetzt handeln – oder bewusst später."}
           ]
         },
-        {"art": "aufgabe", "text": "Was passiert, wenn Jil sofort antwortet – und was, wenn sie erst eine Pause macht? Notiere die Folgen."},
+        {"art": "aufgabe", "text": "Was passiert, wenn Kim sofort antwortet – und was, wenn sie erst eine Pause macht? Notiere die Folgen."},
         {"art": "waage", "links": "Sofort antworten", "rechts": "Erst Pause, dann antworten", "zeilen": 4},
         {
           "art": "aufgabe",
@@ -334,8 +334,8 @@
         "ablauf": [
           "Einstieg (5 Min.): „Welche Nachricht, welcher Satz bringt euch in Sekunden auf hundert?“ Beispiele sammeln, ohne zu werten.",
           "Info-Kasten und Selbsteinschätzung (10 Min.). Betonen: Starke Impulse sind in diesem Alter normal – Bremsen ist trainierbar.",
-          "Fall Jil lesen, dann die 10-Sekunden-Regel an einer erfundenen Provokation gemeinsam durchspielen (10 Min.).",
-          "Folgen vergleichen (10 Min.). Frage: „Was will Jil erreichen – und welcher Weg bringt sie dahin?“",
+          "Fall Kim lesen, dann die 10-Sekunden-Regel an einer erfundenen Provokation gemeinsam durchspielen (10 Min.).",
+          "Folgen vergleichen (10 Min.). Frage: „Was will Kim erreichen – und welcher Weg bringt sie dahin?“",
           "Wenn-dann-Pläne formulieren und zu zweit prüfen (10 Min.): Ist die Situation konkret, die Handlung sofort machbar? Nach einer Woche nachfragen."
         ],
         "hintergrund": "Im Jugendalter reifen die Systeme für Belohnung und Gefühle früher als die Kontrollfunktionen des präfrontalen Kortex. Unter Gleichaltrigen und bei starker Erregung setzen sich Impulse deshalb leichter durch (Steinberg, 2014). Wirksam ist eine kurze, gut eingeübte Unterbrechung zwischen Auslöser und Reaktion. Die dialektisch-behaviorale Therapie für Jugendliche lehrt dafür die STOP-Fertigkeit: anhalten, zurücktreten, beobachten, achtsam weitermachen (Rathus & Miller, 2015). Ein Wenn-dann-Plan koppelt die Pause an typische Situationen und verbessert so die Umsetzung von Vorsätzen deutlich (Gollwitzer, 1999).",
@@ -385,7 +385,7 @@
         {
           "art": "geschichte",
           "titel": "Dix secondes",
-          "text": "Le soir, Jil fait ses devoirs quand son téléphone vibre. Dans le groupe du projet de biologie, Tiago écrit : « Typique de Jil. Encore rien fait. » Pourtant, elle a déposé sa partie hier. Elle sent la chaleur monter, ses pouces tapent déjà une réponse cinglante, avec quelques insultes. Juste avant d’envoyer, elle pose son téléphone et expire deux fois longuement. Puis elle se demande : qu’est-ce que je veux vraiment obtenir ?",
+          "text": "Le soir, Kim fait ses devoirs quand son téléphone vibre. Dans le groupe du projet de biologie, Tiago écrit : « Typique de Kim. Encore rien fait. » Pourtant, elle a déposé sa partie hier. Elle sent la chaleur monter, ses pouces tapent déjà une réponse cinglante, avec quelques insultes. Juste avant d’envoyer, elle pose son téléphone et expire deux fois longuement. Puis elle se demande : qu’est-ce que je veux vraiment obtenir ?",
           "bild": "figur:jana:wuetend"
         },
         {"art": "aufgabe", "text": "La règle des 10 secondes : déroule-la une fois dans ta tête, avec une situation de l’exercice 1."},
@@ -405,7 +405,7 @@
             {"titel": "Décider : qu’est-ce qui me rapproche de mon but ?", "text": "Agir seulement maintenant – ou volontairement plus tard."}
           ]
         },
-        {"art": "aufgabe", "text": "Que se passe-t-il si Jil répond tout de suite – et si elle fait d’abord une pause ? Note les conséquences."},
+        {"art": "aufgabe", "text": "Que se passe-t-il si Kim répond tout de suite – et si elle fait d’abord une pause ? Note les conséquences."},
         {"art": "waage", "links": "Répondre tout de suite", "rechts": "D’abord une pause, puis répondre", "zeilen": 4},
         {
           "art": "aufgabe",
@@ -432,8 +432,8 @@
         "ablauf": [
           "Entrée en matière (5 min) : « Quel message, quelle phrase vous fait monter à cent en quelques secondes ? » Recueillir des exemples sans jugement.",
           "Encadré et auto-évaluation (10 min). Souligner : des impulsions fortes sont normales à cet âge – se freiner, cela s’apprend.",
-          "Lire le cas de Jil, puis dérouler ensemble la règle des 10 secondes sur une provocation inventée (10 min).",
-          "Comparer les conséquences (10 min). Question : « Que veut obtenir Jil – et quel chemin l’y mène ? »",
+          "Lire le cas de Kim, puis dérouler ensemble la règle des 10 secondes sur une provocation inventée (10 min).",
+          "Comparer les conséquences (10 min). Question : « Que veut obtenir Kim – et quel chemin l’y mène ? »",
           "Formuler les plans « si … alors » et les vérifier à deux (10 min) : la situation est-elle précise, l’action faisable tout de suite ? En reparler une semaine plus tard."
         ],
         "hintergrund": "À l’adolescence, les systèmes liés à la récompense et aux émotions mûrissent plus tôt que les fonctions de contrôle du cortex préfrontal. Entre pairs et en cas de forte excitation, les impulsions prennent donc plus facilement le dessus (Steinberg, 2014). Une interruption brève et bien entraînée entre le déclencheur et la réaction est efficace. La thérapie comportementale dialectique pour adolescents enseigne pour cela la compétence STOP : s’arrêter, prendre du recul, observer, continuer en pleine conscience (Rathus & Miller, 2015). Un plan « si … alors » associe la pause à des situations typiques et améliore nettement la réalisation des intentions (Gollwitzer, 1999).",

@@ -175,7 +175,7 @@
         {
           "art": "geschichte",
           "titel": "In der Pause",
-          "text": "Seit Wochen nennen Mathis und Diogo Jil in der Pause nur „Schnecke“. Heute nimmt Mathis ihr den Ball weg und wirft ihn Diogo zu. Jil rennt hin und her. Pol lacht laut und klatscht. Aylin und Finn schauen weg und reden weiter. Chiara geht zu Jil und sagt: „Komm, du spielst bei uns mit.“ Samuel läuft zur Pausenaufsicht.",
+          "text": "Seit Wochen nennen Mathis und Diogo Kim in der Pause nur „Schnecke“. Heute nimmt Mathis ihr den Ball weg und wirft ihn Diogo zu. Kim rennt hin und her. Robin lacht laut und klatscht. Aylin und Finn schauen weg und reden weiter. Chiara geht zu Kim und sagt: „Komm, du spielst bei uns mit.“ Samuel läuft zur Pausenaufsicht.",
           "bild": "figur:lea:traurig"
         },
         {
@@ -194,7 +194,7 @@
           ],
           "links": [
             "Mathis und Diogo",
-            "Pol",
+            "Robin",
             "Aylin und Finn",
             "Chiara",
             "Samuel"
@@ -202,8 +202,8 @@
           "rechts": [
             "wegschauen",
             "Hilfe holen",
-            "Jil ärgern",
-            "zu Jil halten",
+            "Kim ärgern",
+            "zu Kim halten",
             "lachen und anfeuern"
           ]
         },
@@ -215,7 +215,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Stell dir vor, du bist Jil. Was denkst du über Aylin und Finn?",
+          "text": "Stell dir vor, du bist Kim. Was denkst du über Aylin und Finn?",
           "symbole": [
             "nachdenken",
             "schreiben"
@@ -283,7 +283,7 @@
         "ablauf": [
           "Einstieg (5 Min.): Die Geschichte vorlesen. Fragen: „Wer ist alles beteiligt – und wer tut gar nichts?“",
           "Aufgabe 1 allein lösen, danach den Info-Kasten lesen. Betonen: Rollen beschreiben ein Verhalten, keinen Menschen. Man kann sie wechseln.",
-          "Aufgabe 2: Einige Antworten freiwillig vorlesen lassen. Herausarbeiten: Schweigen wirkt auf Jil wie Zustimmung.",
+          "Aufgabe 2: Einige Antworten freiwillig vorlesen lassen. Herausarbeiten: Schweigen wirkt auf Kim wie Zustimmung.",
           "Aufgabe 3 in Kleingruppen: Was ist sicher, was braucht Mut? Festhalten, dass Hilfe holen immer richtig ist.",
           "Aufgabe 4: Jedes Kind schreibt seinen Plan. Die vier Regeln als Klassenregeln besprechen, aushängen und nach zwei Wochen im Klassenrat überprüfen."
         ],
@@ -299,7 +299,7 @@
         "impulse": [
           "Warum lachen manche mit, obwohl sie es nicht gut finden?",
           "Was ist schwerer: Hilfe holen oder „Hört auf“ sagen?",
-          "Woran merkt Jil, dass jemand auf ihrer Seite ist?"
+          "Woran merkt Kim, dass jemand auf ihrer Seite ist?"
         ],
         "tipps": [
           "Rollen nie mit Kindern aus der eigenen Klasse besetzen – immer mit erfundenen Figuren arbeiten.",

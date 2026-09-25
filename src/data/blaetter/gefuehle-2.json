@@ -1064,16 +1064,16 @@
     "verwandt": ["das-macht-mich-froh", "was-diese-woche-gut-war"],
     "de": {
       "titel": "Darauf bin ich stolz",
-      "anleitung": "Die Bildgeschichte gemeinsam erzählen: Erst ist es schwer, Pol übt, dann klappt es – und er ist stolz. Danach malt das Kind etwas, das es schon kann, zeigt sein Bild und erzählt davon.",
+      "anleitung": "Die Bildgeschichte gemeinsam erzählen: Erst ist es schwer, Kim übt, dann klappt es – und er ist stolz. Danach malt das Kind etwas, das es schon kann, zeigt sein Bild und erzählt davon.",
       "bausteine": [
-        { "art": "aufgabe", "text": "Schau die Bilder an. Wie fühlt sich Pol am Ende?", "symbole": ["zeigen", "sprechen"] },
+        { "art": "aufgabe", "text": "Schau die Bilder an. Wie fühlt sich Kim am Ende?", "symbole": ["zeigen", "sprechen"] },
         {
           "art": "comic",
           "spalten": 3,
           "felder": [
             { "figuren": ["figur:tom:besorgt"], "requisit": "icon:bike", "blase": "keine", "untertitel": "1. Rad fahren ist noch schwer." },
-            { "figuren": ["figur:tom:neutral"], "requisit": "icon:bike", "blase": "keine", "untertitel": "2. Pol übt jeden Tag." },
-            { "figuren": ["figur:tom:stolz:jubeln"], "requisit": "icon:bike", "blase": "keine", "untertitel": "3. Geschafft. Pol ist stolz." }
+            { "figuren": ["figur:tom:neutral"], "requisit": "icon:bike", "blase": "keine", "untertitel": "2. Kim übt jeden Tag." },
+            { "figuren": ["figur:tom:stolz:jubeln"], "requisit": "icon:bike", "blase": "keine", "untertitel": "3. Geschafft. Kim ist stolz." }
           ]
         },
         { "art": "aufgabe", "text": "Was kannst du schon? Male, worauf du stolz bist.", "hinweis": "Zeige dein Bild und erzähle davon.", "symbole": ["malen", "zeigen"] },
@@ -1083,7 +1083,7 @@
       "lehrer": {
         "ziel": "Die Kinder erkennen Stolz als Gefühl nach eigener Anstrengung, stellen dar, was sie schon können, und erzählen einem Erwachsenen davon.",
         "ablauf": [
-          "Einstieg im Sitzkreis (5 Min.): Die Bildgeschichte erzählen. Fragen: „Wie fühlt sich Pol am Anfang? Und am Ende?“",
+          "Einstieg im Sitzkreis (5 Min.): Die Bildgeschichte erzählen. Fragen: „Wie fühlt sich Kim am Anfang? Und am Ende?“",
           "Stolz zeigen (3 Min.): Alle stehen auf und zeigen mit dem Körper, wie stolz aussieht: aufrecht, Arme hoch, lächeln.",
           "Aufgabe 2 (10 Min.): Das Kind malt etwas, das es schon kann. Nachfragen: „Wie hast du das gelernt?“",
           "Die Lehrperson schreibt auf, was das Kind erzählt. Wer mag, zeigt sein Bild im Kreis.",

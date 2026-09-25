@@ -226,7 +226,7 @@
         {
           "art": "zuordnen",
           "titel": ["Was ist passiert?", "Gefühl"],
-          "links": ["Jemand schubst Pol.", "Emma hört ein Gewitter.", "Aylin hat Geburtstag.", "Nora vermisst ihre Oma."],
+          "links": ["Jemand schubst Kim.", "Emma hört ein Gewitter.", "Aylin hat Geburtstag.", "Nora vermisst ihre Oma."],
           "rechts": ["froh", "traurig", "wütend", "ängstlich"]
         },
         {
