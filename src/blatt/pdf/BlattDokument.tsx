@@ -272,7 +272,7 @@ export function BlattSeiten({ blatt, opt }: { blatt: Blatt; opt?: BlattOptionen 
   const inhalt = blattInhalt(blatt, sprache)
   const bereich = bereichById.get(blatt.bereich) ?? bereichById.get('werkzeuge')!
   const p = palette(bereich.farben)
-  const m = MASSE[layoutFuer(blatt.stufen, blatt.layout)]
+  const m = MASSE[blatt.layout ?? (blatt.bereich === 'werkzeuge' ? 'jugend' : layoutFuer(blatt.stufen))]
   const c: Ctx = { m, p, sprache, nummern: nummerieren(inhalt.bausteine), breite: BREITE }
   return (
     <>
