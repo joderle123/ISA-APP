@@ -1,0 +1,857 @@
+[
+  {
+    "id": "skills-fakt-oder-mythos",
+    "bereich": "skills",
+    "thema": "risiko",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "35–45 Min.",
+    "eldib": [
+      "KOG-51",
+      "KOG-47",
+      "V-32"
+    ],
+    "schlagworte": [
+      "Alkohol",
+      "Nikotin",
+      "Vapes",
+      "Cannabis",
+      "Mythen",
+      "Soziale Normen",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:brain",
+    "verwandt": [
+      "skills-plan-b",
+      "skills-nebenwirkungen"
+    ],
+    "kurs": [
+      "j2-e27"
+    ],
+    "de": {
+      "titel": "Fakt oder Mythos?",
+      "untertitel": "Was Alkohol, Nikotin und Cannabis im Körper und im Gehirn von Jugendlichen bewirken",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Über Alkohol, Vapes und Cannabis hört man viel – auf Partys, im Netz, von Älteren. Manches stimmt, vieles nicht. Hier prüfst du, was dran ist."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Fakt oder Mythos? Kreuz an, was du vermutest.",
+          "hinweis": "Nach der Auflösung korrigierst du mit einer anderen Farbe. Falsch vermuten gehört dazu."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "Fakt",
+            "Mythos"
+          ],
+          "items": [
+            "1  Vapes sind nur Wasserdampf mit Geschmack.",
+            "2  Kaffee oder eine kalte Dusche machen schnell wieder nüchtern.",
+            "3  Jugendliche vertragen meist weniger Alkohol als Erwachsene.",
+            "4  Cannabis ist eine Pflanze und deshalb harmlos.",
+            "5  Wer jung mit Cannabis anfängt, wird leichter abhängig als jemand, der später anfängt.",
+            "6  Die meisten in meinem Alter trinken jedes Wochenende Alkohol.",
+            "7  Nikotin macht schnell abhängig, Jugendliche besonders schnell.",
+            "8  In Luxemburg ist Cannabis inzwischen für alle erlaubt."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Expertenteams: Lies „Das Gehirn baut um“ und den Kasten deines Teams. Unterstreiche den Satz, den du dir merken willst."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "Das Gehirn baut um",
+              "punkte": [
+                "Bis Mitte zwanzig wird das Gehirn umgebaut. Die Bremse hinter der Stirn – planen, abwägen, stoppen – wird zuletzt fertig.",
+                "Das Belohnungssystem reagiert in der Jugend besonders stark. Kicks und Anerkennung fühlen sich intensiver an.",
+                "Alkohol, Nikotin und Cannabis wirken genau dort. Ein junges Gehirn gewöhnt sich deshalb schneller an sie."
+              ]
+            },
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "Nikotin: Zigarette, Vape, Snus",
+              "punkte": [
+                "Nikotin macht schnell abhängig, Jugendliche besonders schnell.",
+                "Die meisten Vapes enthalten Nikotin, oft viel. Der „Dampf“ ist kein Wasserdampf, sondern ein Nebel aus Nikotin, Aromen und anderen Stoffen.",
+                "Snus und Nikotinbeutel kommen unter die Lippe. Das Nikotin geht über den Mund ins Blut und macht ebenfalls abhängig."
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "Alkohol",
+              "punkte": [
+                "Macht erst locker, dann langsam, unsicher und leichtsinnig. Reaktion und Urteil werden schlechter.",
+                "Jugendliche vertragen weniger als Erwachsene. Eine Alkoholvergiftung kann schnell gehen – bis zur Bewusstlosigkeit.",
+                "Nur Zeit baut Alkohol ab. Häufiges starkes Trinken kann Gedächtnis und Konzentration schaden."
+              ]
+            },
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "Cannabis",
+              "punkte": [
+                "Der Wirkstoff THC stört Gedächtnis, Aufmerksamkeit und Reaktion, oft noch Stunden später.",
+                "Wer jung anfängt, wird leichter abhängig: etwa jede sechste Person, die als Jugendliche oder Jugendlicher beginnt.",
+                "Cannabis kann starke Angst auslösen und bei Menschen mit Veranlagung eine Psychose. Heutiges Cannabis ist oft viel stärker als früher."
+              ]
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schätz mal: Wie viele von 10 Jugendlichen in deinem Alter haben in den letzten 30 Tagen …",
+          "hinweis": "Kreuz deine Schätzung an (von 10). Die Zahl aus der Studie markierst du danach mit der anderen Farbe."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "0–2",
+            "3–4",
+            "5–6",
+            "7–8",
+            "9–10"
+          ],
+          "items": [
+            "… Alkohol getrunken?",
+            "… geraucht oder gevapt?",
+            "… Cannabis genommen?"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ein Satz, den ich ab heute nicht mehr glaube:"
+        },
+        {
+          "art": "linien",
+          "anzahl": 2
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Die anderen machen weniger, als du denkst.",
+          "text": "Die meisten Jugendlichen in deinem Alter rauchen, vapen und kiffen nicht, und die meisten trinken nicht oder nur selten. Wer glaubt, alle machen es, fühlt sich schneller unter Druck – und macht eher mit."
+        },
+        {
+          "art": "notfall",
+          "text": "Fragen oder Sorgen? Hier bekommst du Hilfe",
+          "eintraege": [
+            {
+              "name": "Notruf: Rettung – bei Bewusstlosigkeit oder Vergiftung",
+              "nummer": "112"
+            },
+            {
+              "name": "Kanner- a Jugendtelefon (anonym, kostenlos)",
+              "nummer": "116 111"
+            },
+            {
+              "name": "SePAS im Lycée, Schulärztin oder Schularzt",
+              "nummer": "in der Schule"
+            },
+            {
+              "name": "Fachstelle für Suchtfragen in Luxemburg (trägt die Leitung ein): ______________________",
+              "nummer": "______________"
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen kennen die wichtigsten Wirkungen von Alkohol, Nikotin und Cannabis auf das junge Gehirn, prüfen acht verbreitete Aussagen und vergleichen ihre Schätzungen mit echten Zahlen.",
+        "ablauf": [
+          "Vor dem Input: Aufgabe 1 allein ankreuzen (3 Min.), noch ohne Auflösung.",
+          "Aufgabe 2 in drei Expertenteams (12 Min.): „Das Gehirn baut um“ und ein weiterer Kasten, in drei Sätzen erklären.",
+          "Nach der Pause Aufstellung Fakt – unsicher – Mythos, dann Aufgabe 1 mit dem zweiten Stift korrigieren. Lösung: Fakt 3, 5, 7; Mythos 1, 2, 4, 6, 8.",
+          "Aufgabe 3 an der Schätz-Linie; danach die vorher herausgesuchte Zahl aus der Studie (etwa HBSC Luxemburg) in der zweiten Farbe markieren.",
+          "Aufgabe 4 im Réckbléck, freiwillig vorlesen."
+        ],
+        "hintergrund": "Das Gehirn ist bis Mitte zwanzig im Umbau; starker Alkohol- und Cannabiskonsum hängt in dieser Zeit mit schlechterem Gedächtnis und schlechterer Aufmerksamkeit zusammen (Squeglia et al., 2009). Wer jung mit Cannabis beginnt, wird deutlich häufiger abhängig, etwa jede sechste Person (Volkow et al., 2014). Vape-Aerosol ist kein harmloser Wasserdampf, und Nikotin kann Jugendliche schnell abhängig machen (US Surgeon General, 2016). Wer glaubt, alle tun es, macht eher mit – richtiggestellte Normen senken den Konsum (Perkins, 2002). Schockbilder helfen kaum, solange niemand zeigt, was man selbst tun kann (Peters, Ruiter & Kok, 2013).",
+        "quellen": [
+          "Squeglia, L. M., Jacobus, J. & Tapert, S. F. (2009). The influence of substance use on adolescent brain development. Clinical EEG and Neuroscience, 40(1), 31–38.",
+          "Volkow, N. D., Baler, R. D., Compton, W. M. & Weiss, S. R. B. (2014). Adverse health effects of marijuana use. New England Journal of Medicine, 370(23), 2219–2227.",
+          "U.S. Department of Health and Human Services (2016). E-Cigarette Use Among Youth and Young Adults: A Report of the Surgeon General. Atlanta, GA: Centers for Disease Control and Prevention.",
+          "Perkins, H. W. (2002). Social norms and the prevention of alcohol misuse in collegiate contexts. Journal of Studies on Alcohol, Supplement 14, 164–172.",
+          "Peters, G.-J. Y., Ruiter, R. A. C. & Kok, G. (2013). Threatening communication: A critical re-analysis and a revised meta-analytic test of fear appeal theory. Health Psychology Review, 7(Suppl. 1), S8–S31."
+        ],
+        "differenzierung": {
+          "leichter": "Nur die Aussagen 1 bis 4 und ein Kasten; die Leitung liest vor.",
+          "schwerer": "Zu einem Mythos herausfinden, woher er kommt und wem er nützt."
+        },
+        "impulse": [
+          "Welcher Mythos hält sich am hartnäckigsten – und warum?",
+          "Woher kommen eure Schätzungen?"
+        ],
+        "tipps": [
+          "Keine Bilder von kranken Organen oder Betrunkenen zeigen: Fakten wirken besser als Angst.",
+          "Die Fachstelle vorher im Hilfe-Kasten eintragen."
+        ],
+        "achtung": "Keine Konsumerfahrungen abfragen. Bei Hinweisen auf gefährlichen Konsum oder Sucht in der Familie: Einzelgespräch, die zuständige Leitung (Responsable) am selben Tag informieren.",
+        "material": "Blatt, zwei Stiftfarben, Schilder"
+      }
+    }
+  },
+  {
+    "id": "skills-plan-b",
+    "bereich": "skills",
+    "thema": "risiko",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "30–40 Min.",
+    "eldib": [
+      "V-32",
+      "SOZ-39",
+      "SOZ-26"
+    ],
+    "schlagworte": [
+      "Gruppendruck",
+      "Nein sagen",
+      "Plan B",
+      "Party",
+      "Erste Hilfe",
+      "Stabile Seitenlage",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:arrow-fork",
+    "verwandt": [
+      "skills-nein-sagen",
+      "nein-unter-druck",
+      "skills-fakt-oder-mythos"
+    ],
+    "kurs": [
+      "j2-e28"
+    ],
+    "de": {
+      "titel": "Mein Plan B",
+      "untertitel": "Wie du Nein sagst, rauskommst – und im Notfall hilfst",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Druck kommt selten mit Ansage. Oft reicht ein Becher in der Hand oder eine Vape, die im Kreis herumgeht. Wer vorher weiß, was er sagt und wie er rauskommt, kann entspannter hingehen."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wie schwierig wäre das für dich? Kreuz bei jeder Situation an.",
+          "hinweis": "Du entscheidest, was du teilst. Das Blatt wird nicht eingesammelt."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "leicht",
+            "geht so",
+            "schwer"
+          ],
+          "items": [
+            "Geburtstag bei Mila: Jemand drückt dir einen Becher mit Alkohol in die Hand. „Stell dich nicht so an.“",
+            "Freitagabend im Park: Eine Vape geht im Kreis herum. Jetzt bist du dran, und alle schauen.",
+            "Gruppenchat: „Samstag bei Liam, er bringt was zum Kiffen mit. Wer ist dabei?“ Sieben haben schon zugesagt.",
+            "Auf der Kiermes: Ältere Freunde deines Cousins halten dir einen Joint hin. „Mit 14 war ich auch schon dabei.“",
+            "Nach der Party will deine Freundin allein heimlaufen. Ihr ist schlecht, sie schwankt: „Geht schon.“"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Vier Arten, Nein zu sagen",
+          "punkte": [
+            "Kaputte Schallplatte: ruhig immer wieder denselben Satz – „Nein, danke.“",
+            "Nein plus Vorschlag: „Nee. Aber ich hol mir eine Cola – kommst du mit?“",
+            "Mit Humor: „Lass mal, meine Gehirnzellen brauch ich noch für die Mathearbeit.“",
+            "Einfach gehen: Du musst dich nicht rechtfertigen. Ein echter Freund akzeptiert ein Nein."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dein Satz für die Situation, die für dich am schwierigsten wäre."
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Wenn mir auf einer Party jemand einen Becher in die Hand drückt,",
+              "dann": "sage ich „Nee, ich hab schon was“, stelle ihn ab und hole mir eine Cola."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Drei Wege raus: Kreis ein, was du nutzen willst, und schreib auf, was du vorher klärst."
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 2,
+          "items": [
+            {
+              "titel": "Codewort",
+              "text": "Ein Wort, das nur du und eine Vertrauensperson kennen. Schickst du es, holt sie dich ab – Fragen gibt es erst morgen."
+            },
+            {
+              "titel": "Abholen lassen",
+              "text": "Vorher abmachen, wer dich holt, auch spät. Handy geladen, Nummer gespeichert."
+            },
+            {
+              "titel": "Zusammen hin, zusammen weg",
+              "text": "Mit einer Freundin oder einem Freund: Wir passen aufeinander auf, niemand geht allein."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wenn jemand sehr betrunken ist oder nicht mehr reagiert: die Notfall-Kette"
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 0,
+          "items": [
+            {
+              "titel": "Ansprechen",
+              "text": "Laut ansprechen, vorsichtig an den Schultern rütteln. Keine Reaktion? Laut um Hilfe rufen."
+            },
+            {
+              "titel": "112 rufen",
+              "text": "Sagen, wo ihr seid und was los ist. Am Telefon bleiben, bis du weißt, was zu tun ist."
+            },
+            {
+              "titel": "Stabile Seitenlage",
+              "text": "Atmet die Person normal, drehst du sie auf die Seite. So bleiben die Atemwege frei."
+            },
+            {
+              "titel": "Dableiben",
+              "text": "Zudecken, Atmung beobachten, nie allein lassen – bis Hilfe da ist."
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "achtung",
+          "titel": "Das hilft nicht:",
+          "text": "kalte Dusche, Kaffee, frische Luft, zum Erbrechen bringen oder allein ausschlafen lassen. Und: Wer 112 ruft, tut das Richtige – auch wenn vorher etwas schiefgelaufen ist."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Deine Plan-B-Karte: ausfüllen, beide Hälften ausschneiden, Rücken an Rücken zusammenkleben und immer dabeihaben."
+        },
+        {
+          "art": "karten",
+          "spalten": 2,
+          "hoehe": 138,
+          "karten": [
+            {
+              "titel": "Mein Plan B",
+              "text": "Codewort: ______________\nWer holt mich ab: ______________\nNummer: ______________\nIch gehe zusammen mit: ______________"
+            },
+            {
+              "titel": "Im Notfall",
+              "text": "1  Ansprechen, vorsichtig an den Schultern rütteln\n2  Notruf 112\n3  Atmet die Person? Stabile Seitenlage:\nArm hoch, Hand an die Wange, Knie hoch,\nzu dir drehen, Kopf nach hinten\n4  Dableiben, zudecken, nie allein lassen"
+            }
+          ]
+        },
+        {
+          "art": "notfall",
+          "text": "Hilfe – im Notfall und bei Sorgen",
+          "eintraege": [
+            {
+              "name": "Notruf: Rettung – bei Bewusstlosigkeit oder Vergiftung",
+              "nummer": "112"
+            },
+            {
+              "name": "Polizei – bei Gewalt oder Bedrohung",
+              "nummer": "113"
+            },
+            {
+              "name": "Kanner- a Jugendtelefon (anonym, kostenlos)",
+              "nummer": "116 111"
+            },
+            {
+              "name": "Fachstelle für Suchtfragen in Luxemburg (trägt die Leitung ein): ______________________",
+              "nummer": "______________"
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen schätzen typische Druck-Situationen ein, formulieren einen eigenen Nein-Satz, legen einen Plan B fest und kennen die Notfall-Kette mit stabiler Seitenlage.",
+        "ablauf": [
+          "Situationen vorlesen, Aufgabe 1 allein (3 Min.), nicht vorlesen lassen; dann in Paaren eine Situation besprechen.",
+          "Nein-Arten aus Jahr 1 auffrischen, Aufgabe 2 allein; Aufgabe 3: Codewort und Abholen vorher mit einer erwachsenen Person abmachen.",
+          "Aufgabe 4 bei der Erste-Hilfe-Übung: Seitenlage an der zweiten Fachkraft oder Puppe zeigen, dann freiwillig üben.",
+          "Zum Schluss Aufgabe 5: Plan-B-Karte ausfüllen, ausschneiden, zusammenkleben."
+        ],
+        "hintergrund": "Jugendliche gehen in Gegenwart Gleichaltriger mehr Risiken ein (Gardner & Steinberg, 2005); Druck wirkt deshalb oft leise. Wenn-dann-Pläne helfen, im entscheidenden Moment wie geplant zu handeln (Gollwitzer, 1999), und ein Plan B mit Codewort, Abholen und Begleitung bietet einen Ausweg ohne Gesichtsverlust. Im Notfall zögern Umstehende oft, weil sich die Verantwortung auf alle verteilt (Latané & Darley, 1970); eine eingeübte Notfall-Kette macht klar, was jede Person tun kann. Die stabile Seitenlage folgt den Leitlinien des European Resuscitation Council (Zideman et al., 2021); die Übung ersetzt keinen Erste-Hilfe-Kurs.",
+        "quellen": [
+          "Gardner, M. & Steinberg, L. (2005). Peer influence on risk taking, risk preference, and risky decision making in adolescence and adulthood: An experimental study. Developmental Psychology, 41(4), 625–635.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503.",
+          "Latané, B. & Darley, J. M. (1970). The Unresponsive Bystander: Why Doesn’t He Help? New York: Appleton-Century-Crofts.",
+          "Zideman, D. A., Singletary, E. M., Borra, V., Cassan, P., Cimpoesu, C. D., De Buck, E., Djärv, T., Handley, A. J., Klaassen, B., Meyran, D., Oliver, E. & Poole, K. (2021). European Resuscitation Council Guidelines 2021: First aid. Resuscitation, 161, 270–290."
+        ],
+        "differenzierung": {
+          "leichter": "Nur Aufgabe 1, 3 und die Plan-B-Karte; Nein-Sätze an der Tafel vorgeben.",
+          "schwerer": "Einen Plan B schreiben, wenn der Druck von der besten Freundin kommt."
+        },
+        "impulse": [
+          "Was macht es leichter, als Erste oder Erster Nein zu sagen?",
+          "Warum ruft in einer großen Gruppe oft niemand an?"
+        ],
+        "tipps": [
+          "Die Plan-B-Karte hat Bankkartengröße; mit Klebefolie hält sie lange.",
+          "Die Seitenlage nur mit Einwilligung üben; vorgeführt wird an der zweiten Fachkraft oder an einer Puppe, nie an Jugendlichen."
+        ],
+        "achtung": "Keine Partygeschichten abfragen; Berührung nur freiwillig. Hinweise auf Übergriffe oder gefährlichen Konsum: die zuständige Leitung (Responsable) am selben Tag informieren.",
+        "material": "Blatt, Schere, Klebefolie, Matten"
+      }
+    }
+  },
+  {
+    "id": "skills-nebenwirkungen",
+    "bereich": "skills",
+    "thema": "risiko",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "30–40 Min.",
+    "eldib": [
+      "V-18",
+      "K-33",
+      "K-26"
+    ],
+    "schlagworte": [
+      "Konsum",
+      "Bedürfnisse",
+      "Skills",
+      "Stress",
+      "Hilfe holen",
+      "Sucht in der Familie",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:tools",
+    "verwandt": [
+      "skills-koffer-ampelplan",
+      "stress-werkzeugkoffer",
+      "skills-plan-b"
+    ],
+    "kurs": [
+      "j2-e29"
+    ],
+    "de": {
+      "titel": "Ein Skill mit Nebenwirkungen",
+      "untertitel": "Was Menschen im Konsum suchen – und was dasselbe schafft, ohne zu schaden",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Niemand trinkt, raucht oder kifft ohne Grund. Meist sucht man etwas: Ruhe, Mut, dazugehören, etwas Neues. Die Substanz liefert das schnell – aber sie verlangt einen Preis."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was suchen die vier? Verbinde jede Person mit ihrem Grund.",
+          "symbole": [
+            "verbinden"
+          ]
+        },
+        {
+          "art": "zuordnen",
+          "titel": [
+            "Wer?",
+            "Was sucht die Person?"
+          ],
+          "links": [
+            "Léa trinkt auf Partys zwei Becher, bevor sie tanzt. Nüchtern traut sie sich nicht.",
+            "Samuel vapt in jeder Pause mit, seit er in der neuen Klasse ist – wie alle aus seiner Clique.",
+            "Diogo hat so viel übers Kiffen gehört, dass er wissen will, wie es sich anfühlt.",
+            "Nora raucht abends heimlich am Fenster, wenn es zu Hause wieder laut wird."
+          ],
+          "rechts": [
+            "Neugier",
+            "Stress und Gefühle wegmachen",
+            "sich mutiger fühlen",
+            "dazugehören"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Vergleiche für eine der vier Personen: Was bringt die Substanz – und was schafft dasselbe ohne Nebenwirkungen?"
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Das sucht die Person",
+            "Das bringt die Substanz",
+            "Das kostet es",
+            "Ein Skill, der dasselbe schafft"
+          ],
+          "breiten": [
+            1.3,
+            1.1,
+            1.5,
+            1.5
+          ],
+          "zeilen": 2,
+          "beispiel": [
+            "Nora: Ruhe, wenn es zu Hause laut ist",
+            "Sie wird kurz ruhiger.",
+            "Nikotin macht neue Unruhe, kostet Geld, der Streit bleibt.",
+            "Kopfhörer, raus an die Luft, der Tante schreiben"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Warum Konsum kein guter Skill ist",
+          "punkte": [
+            "Er wirkt schnell, aber nur kurz. Danach kommt das Gefühl oft stärker zurück.",
+            "Das Problem bleibt, und oft kommen neue dazu: Ärger, Geld, Schule, Gesundheit.",
+            "Der Körper gewöhnt sich: Man braucht mehr für dieselbe Wirkung.",
+            "Ein Skill wird mit Übung besser. Konsum wirkt mit der Zeit schwächer."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Welche Station würdest du behalten? Kreuz an und ergänze eigene Ideen."
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "frei": 2,
+          "items": [
+            "Kühlpack oder kaltes Wasser, dann 4 ein, 6 aus",
+            "ein Lied, das mich tröstet",
+            "Füße spüren, ausatmen, ein Gespräch anfangen",
+            "dabeibleiben: „Ich komm mit, aber ohne.“",
+            "mit geschlossenen Augen etwas Neues schmecken",
+            "die Welle reiten: einen Drang nur beobachten"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dein Weg statt Konsum: ein Plan für einen Moment, den du kennst.",
+          "hinweis": "Du entscheidest, was du teilst. Das Blatt gehört dir und wird nicht eingesammelt."
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Wenn ich nach Streit zu Hause nur noch abschalten will,",
+              "dann": "gehe ich eine Runde mit Kopfhörern und schreibe danach meiner Cousine."
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "achtung",
+          "titel": "Wenn es zu viel wird",
+          "text": "Diese Zeichen gelten für Freunde, Geschwister, Erwachsene – und für dich selbst:",
+          "punkte": [
+            "Man braucht immer mehr, damit es wirkt.",
+            "Man denkt oft daran und plant den Tag darum herum.",
+            "Man konsumiert allein oder heimlich, um Gefühle wegzumachen.",
+            "Schule, Freunde oder Hobbys leiden – und man hört trotzdem nicht auf."
+          ]
+        },
+        {
+          "art": "text",
+          "text": "Mit jemandem darüber zu reden, ist kein Verrat, sondern der erste Schritt – auch wenn es um deine Mutter, deinen Vater oder deine Geschwister geht."
+        },
+        {
+          "art": "notfall",
+          "text": "Hilfe – für dich und wenn du dir Sorgen um jemanden machst",
+          "eintraege": [
+            {
+              "name": "Kanner- a Jugendtelefon (anonym, kostenlos)",
+              "nummer": "116 111"
+            },
+            {
+              "name": "SePAS im Lycée – du kannst selbst einen Termin ausmachen",
+              "nummer": "in der Schule"
+            },
+            {
+              "name": "Fachstelle für Suchtfragen, auch für Angehörige (trägt die Leitung ein): ______________________",
+              "nummer": "______________"
+            },
+            {
+              "name": "Notruf: Rettung – bei Bewusstlosigkeit oder Vergiftung",
+              "nummer": "112"
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen verstehen, welche Bedürfnisse hinter Konsum stehen, vergleichen Konsum mit Skills, legen einen eigenen Weg für schwierige Momente fest und kennen Warnzeichen und Hilfe.",
+        "ablauf": [
+          "Aufgabe 1 zu zweit (5 Min.). Lösung: Léa – mutiger fühlen, Samuel – dazugehören, Diogo – Neugier, Nora – Stress und Gefühle wegmachen.",
+          "Tafelbild „Skill mit Nebenwirkungen“, dann Aufgabe 2 allein (8 Min.).",
+          "Nach den vier Stationen Aufgabe 3 ankreuzen (2 Min.).",
+          "Kasten „Wenn es zu viel wird“ lesen, die Fachstelle nennen; Aufgabe 4 zum Schluss allein, nicht vorlesen."
+        ],
+        "hintergrund": "Konsum erfüllt Funktionen: Neugier, Zugehörigkeit, Enthemmung, Gefühle dämpfen. Wer trinkt, um Gefühle zu dämpfen, gerät häufiger in Schwierigkeiten (Cooper, 1994); die Ursache bleibt (Lazarus & Folkman, 1984). Die Unruhe, die eine Zigarette lindert, stammt großenteils aus dem Nikotinentzug (Parrott, 1999). Skills erfüllen dasselbe Bedürfnis ohne Schaden, auch das Wellenreiten (Linehan, 2015), das Rauchenden half, weniger zu rauchen (Bowen & Marlatt, 2009). Kompetenzprogramme wirken besser als reine Information (Faggiano et al., 2014).",
+        "quellen": [
+          "Cooper, M. L. (1994). Motivations for alcohol use among adolescents: Development and validation of a four-factor model. Psychological Assessment, 6(2), 117–128.",
+          "Lazarus, R. S. & Folkman, S. (1984). Stress, Appraisal, and Coping. New York: Springer.",
+          "Parrott, A. C. (1999). Does cigarette smoking cause stress? American Psychologist, 54(10), 817–820.",
+          "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford.",
+          "Bowen, S. & Marlatt, A. (2009). Surfing the urge: Brief mindfulness-based intervention for college student smokers. Psychology of Addictive Behaviors, 23(4), 666–671.",
+          "Faggiano, F., Minozzi, S., Versino, E. & Buscemi, D. (2014). Universal school-based prevention for illicit drug use. Cochrane Database of Systematic Reviews, (12), CD003020."
+        ],
+        "differenzierung": {
+          "leichter": "Aufgabe 1 mündlich; in Aufgabe 2 nur die erste und letzte Spalte.",
+          "schwerer": "Aufschreiben, wie Freunde einer der vier Personen helfen könnten."
+        },
+        "impulse": [
+          "Welches Bedürfnis steckt hinter den meisten Gründen?",
+          "Was würdet ihr Nora sagen, wenn sie eure Freundin wäre?"
+        ],
+        "tipps": [
+          "Die Fachstelle vor dem Kopieren von Hand in den Hilfe-Kasten eintragen.",
+          "Glaubwürdig ist: Konsum bringt kurz etwas und kostet auf Dauer viel."
+        ],
+        "achtung": "Aufgabe 4 nicht einsammeln. Hinweise auf regelmäßigen Konsum oder Sucht in der Familie: Einzelgespräch, die zuständige Leitung (Responsable) am selben Tag informieren.",
+        "material": "Blatt, Material für vier Stationen"
+      }
+    }
+  },
+  {
+    "id": "skills-sorge-um-jemanden",
+    "bereich": "skills",
+    "thema": "resilienz",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "35–45 Min.",
+    "eldib": [
+      "SOZ-37",
+      "K-28",
+      "SOZ-26"
+    ],
+    "schlagworte": [
+      "Krise",
+      "Warnzeichen",
+      "Hilfe holen",
+      "Suizidprävention",
+      "Zuhören",
+      "Freundschaft",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:user-heart",
+    "verwandt": [
+      "wenn-es-laenger-schwer-ist",
+      "wer-ist-fuer-mich-da",
+      "sicherheitsplan"
+    ],
+    "kurs": [
+      "j2-e33"
+    ],
+    "de": {
+      "titel": "Wenn du dir Sorgen um jemanden machst",
+      "untertitel": "Hinschauen, ansprechen, zuhören – und eine erwachsene Person dazuholen",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Oft merken Freundinnen und Freunde als Erste, dass es jemandem richtig schlecht geht. Du musst das nicht allein lösen. Aber du kannst viel tun: hinschauen, ansprechen, zuhören – und Hilfe holen."
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Die Warnzeichen-Ampel",
+          "punkte": [
+            "Grün – ein schlechter Tag: da sein, zuhören, nachfragen.",
+            "Gelb – mehr als ein Durchhänger: ansprechen und dranbleiben.",
+            "Rot – Gefahr: noch heute eine erwachsene Person holen, bei akuter Gefahr 112."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schlechter Tag oder mehr? Kreuz für jede Situation eine Farbe an."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "Grün",
+            "Gelb",
+            "Rot"
+          ],
+          "items": [
+            "Mathis hat das Finale verloren und ist den ganzen Abend mies drauf. Am nächsten Tag lacht er wieder beim Training.",
+            "Zoé sagt seit Wochen alle Treffen ab, sitzt in der Pause allein und wirkt ständig müde.",
+            "Elias schreibt nachts in den Chat: „Ist eh alles sinnlos. Bald ist es euch sowieso egal.“",
+            "Sofia hat sich von ihrem Freund getrennt und weint in der Pause. Abends redet sie mit ihrer Schwester darüber.",
+            "Luca isst kaum noch, seine Noten sacken ab, und er sagt oft: „Mir kann eh keiner helfen.“",
+            "Aylin erzählt dir, dass sie sich manchmal selbst verletzt, wenn alles zu viel wird. Du sollst es niemandem sagen.",
+            "Rafael verschenkt seine Lieblingssachen und sagt: „Brauch ich eh nicht mehr.“"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Vier Schritte, wenn du dir Sorgen machst"
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 0,
+          "items": [
+            {
+              "titel": "Ansprechen",
+              "text": "„Mir ist aufgefallen, dass du … Wie geht es dir wirklich?“"
+            },
+            {
+              "titel": "Zuhören",
+              "text": "Ausreden lassen, nicht bewerten, nicht gleich Tipps geben. „Seit wann ist das so?“"
+            },
+            {
+              "titel": "Hilfe holen",
+              "text": "Gemeinsam zu einer erwachsenen Person gehen – bei Rot noch heute."
+            },
+            {
+              "titel": "Dranbleiben",
+              "text": "Ein paar Tage später wieder nachfragen. Du bleibst Freundin oder Freund – für den Rest sind Fachleute da."
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Du darfst direkt fragen.",
+          "text": "„Denkst du daran, dir etwas anzutun?“ Diese Frage bringt niemanden auf die Idee. Sie zeigt: Ich halte es aus, wenn du Ja sagst. Ist die Antwort Ja, bleib bei der Person und hol sofort eine erwachsene Person dazu."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Das schwerste Gespräch: Jang will ein Versprechen. Was antwortest du?",
+          "hinweis": "Du musst nichts versprechen, was du nicht halten kannst."
+        },
+        {
+          "art": "dialog",
+          "zeilen": [
+            {
+              "wer": "Jang",
+              "text": "Ich erzähl dir was. Aber versprich mir, dass du es keinem sagst."
+            },
+            {
+              "wer": "Du"
+            },
+            {
+              "wer": "Jang",
+              "text": "Dann hätte ich dir gar nichts sagen sollen."
+            },
+            {
+              "wer": "Du"
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "achtung",
+          "titel": "Hilfe holen ist kein Verrat.",
+          "text": "Ein Geheimnis, das jemanden in Gefahr bringt, ist zu schwer für dich allein. Du kannst sagen: „Ich kann das nicht für mich behalten, weil du mir wichtig bist. Aber ich lass dich nicht allein – wir gehen zusammen hin.“"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Zu wem würdest du gehen? Schreib eine erwachsene Person auf, die du wirklich erreichen kannst."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Eine erwachsene Person, zu der ich gehen würde: …",
+            "So erreiche ich sie: …"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Und wenn es dir selbst so geht?",
+          "text": "Dann gelten dieselben Schritte für dich: Du darfst dir Hilfe holen – bei einer Vertrauensperson, beim SePAS oder am Telefon. Du entscheidest, was du teilst; dieses Blatt gehört dir."
+        },
+        {
+          "art": "notfall",
+          "text": "Hilfe – auch wenn du dir Sorgen um jemanden machst",
+          "eintraege": [
+            {
+              "name": "Notruf – wenn jemand in akuter Gefahr ist",
+              "nummer": "112"
+            },
+            {
+              "name": "Kanner- a Jugendtelefon (anonym, kostenlos)",
+              "nummer": "116 111"
+            },
+            {
+              "name": "SOS Détresse – Hilfe am Telefon in Krisen, anonym",
+              "nummer": "45 45 45"
+            },
+            {
+              "name": "SePAS im Lycée – du kannst selbst einen Termin ausmachen",
+              "nummer": "in der Schule"
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen unterscheiden Warnzeichen von einem schlechten Tag, kennen vier Schritte, um einer Freundin oder einem Freund zu helfen, und wissen, dass Hilfe holen kein Verrat ist.",
+        "ablauf": [
+          "Aufgabe 1 allein (4 Min.), dann Aufstellung an den Ampel-Schildern. Lösung: Grün 1 und 4, Gelb 2 und 5 (bei 5 auch Rot vertretbar), Rot 3, 6 und 7.",
+          "Aufgabe 2 und „Du darfst direkt fragen“ (8 Min.): die Frage einmal ruhig vormachen.",
+          "Nach dem Fishbowl – Jang spielt nur die Leitung – Aufgabe 3 allein (4 Min.).",
+          "Aufgabe 4 und Hilfe-Kasten (5 Min.): eine erreichbare erwachsene Person eintragen."
+        ],
+        "hintergrund": "Jugendliche wenden sich in Krisen eher an Gleichaltrige als an Fachleute (Rickwood et al., 2005). Das Blatt folgt der Ersten Hilfe für die Psyche: ansprechen, ohne Urteil zuhören, zu fachlicher Hilfe ermutigen (Kitchener & Jorm, 2002); die Jugendfassung stärkte Hilfeabsichten und Zutrauen (Hart et al., 2018). Direkt nach Suizidgedanken zu fragen, verstärkt sie nicht (Dazzi et al., 2014). Selbstverletzung soll oft unerträgliche Gefühle lindern und ist ein ernstes Warnzeichen (Hawton et al., 2012). Methoden und Einzelfälle werden nicht besprochen (WHO, 2017).",
+        "quellen": [
+          "Rickwood, D., Deane, F. P., Wilson, C. J. & Ciarrochi, J. (2005). Young people’s help-seeking for mental health problems. Australian e-Journal for the Advancement of Mental Health, 4(3), 218–251.",
+          "Kitchener, B. A. & Jorm, A. F. (2002). Mental health first aid training for the public: Evaluation of effects on knowledge, attitudes and helping behavior. BMC Psychiatry, 2, 10.",
+          "Hart, L. M., Morgan, A. J., Rossetto, A., Kelly, C. M., Mackinnon, A. & Jorm, A. F. (2018). Helping adolescents to better support their peers with a mental health problem: A cluster-randomised crossover trial of teen Mental Health First Aid. Australian & New Zealand Journal of Psychiatry, 52(7), 638–651.",
+          "Dazzi, T., Gribble, R., Wessely, S. & Fear, N. T. (2014). Does asking about suicide and related behaviours induce suicidal ideation? What is the evidence? Psychological Medicine, 44(16), 3361–3363.",
+          "Hawton, K., Saunders, K. E. A. & O’Connor, R. C. (2012). Self-harm and suicide in adolescents. The Lancet, 379(9834), 2373–2382.",
+          "World Health Organization (2017). Preventing Suicide: A Resource for Media Professionals (update 2017). Genf: WHO."
+        ],
+        "differenzierung": {
+          "leichter": "Aufgabe 1 mit vier Situationen; in Aufgabe 3 aus zwei Antworten wählen.",
+          "schwerer": "Planen, was man tut, wenn Elias nachts so etwas schreibt."
+        },
+        "impulse": [
+          "Was macht es so schwer, jemanden anzusprechen?",
+          "Wer hilft euch, wenn Helfen zu viel wird?"
+        ],
+        "tipps": [
+          "Die Suizid-Andeutung spricht immer die Leitung.",
+          "Nummern gleich ins Handy speichern lassen."
+        ],
+        "achtung": "Keine Methoden, keine Medienfälle. Bei Suizidgedanken oder Selbstverletzung: direkt nachfragen, nicht allein lassen, sofort die zuständige Leitung (Responsable) und den SePAS informieren; akute Gefahr: 112.",
+        "material": "Blatt, Ampel-Schilder, Plakat"
+      }
+    }
+  }
+]

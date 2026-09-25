@@ -1,0 +1,849 @@
+{
+  "einheiten": [
+    {
+      "id": "j2-e27",
+      "nr": 27,
+      "jahr": 2,
+      "modul": "j2-m8",
+      "titel": "Alkohol, Vapes, Cannabis – Fakten statt Mythen",
+      "kurz": "Was Alkohol, Nikotin und Cannabis im jungen Gehirn bewirken: Expertenteams erarbeiten die Fakten, eine Aufstellung prüft verbreitete Mythen, und die Gruppe vergleicht ihre Schätzungen mit echten Zahlen.",
+      "dauer": 100,
+      "ziele": [
+        "erklären mit dem Bild von Gaspedal und Bremse, warum Alkohol, Nikotin und Cannabis auf ein Gehirn im Umbau stärker wirken",
+        "unterscheiden bei acht verbreiteten Aussagen Fakten von Mythen und begründen ihre Wahl",
+        "vergleichen ihre Schätzung, wie viele Gleichaltrige konsumieren, mit Zahlen aus einer Studie",
+        "stellen Fragen, die sie beschäftigen, anonym über die Fragenbox und kennen die Regeln des Moduls"
+      ],
+      "material": [
+        "Gefühlsrad (A3, laminiert), Wäscheklammern, Anspannungsskala 0–100",
+        "Schülerblatt „Fakt oder Mythos?“ für jede Person, je zwei Stifte in verschiedenen Farben",
+        "Plakat (A2) mit dem Umriss eines Kopfes im Profil für „Gaspedal und Bremse“, dicke Stifte",
+        "Drei Schilder (A4) für die Aufstellung: Fakt, unsicher, Mythos",
+        "Malerkrepp für eine Schätz-Linie am Boden, Zahlenkarten 0, 5 und 10",
+        "Drei verdeckte Karten mit den aktuellen Zahlen aus der Studie (siehe Vorbereitung)",
+        "Fragenbox (Schuhkarton mit Schlitz), gleiche Zettel und gleiche Stifte für alle",
+        "Ein Glas und kaltes Wasser für jede Person",
+        "Imbiss und Getränke (Allergien und Essensregeln beachten)",
+        "Skills-Pässe, Stempel"
+      ],
+      "vorbereitung": [
+        "Elternbrief zum ganzen Modul (Einheiten 27 bis 29) nach der Hausregel der Einrichtung eine Woche vorher mitgeben, mit der zuständigen Leitung (Responsable) abgestimmt. Musterabsatz: „In den nächsten drei Treffen geht es um Alkohol, Vapes und Cannabis. Wir informieren sachlich und ohne Abschreckung, üben, in Drucksituationen Nein zu sagen, und lernen, was im Notfall zu tun ist – dazu gehört freiwillig die stabile Seitenlage. Niemand muss über eigene Erfahrungen sprechen. Bei Fragen erreichen Sie uns unter …“",
+        "Die zuständige Leitung (Responsable) über das Modul informieren; wenn möglich eine zweite Fachkraft einplanen.",
+        "Im Team klären, ob bekannt ist, dass jemand in der Gruppe selbst konsumiert oder in der Familie mit Sucht lebt. Diese Jugendlichen vorher kurz einzeln ansprechen: worum es geht, dass niemand etwas erzählen muss und dass sie jederzeit rausgehen dürfen.",
+        "Einen ruhigen Platz zum Rausgehen festlegen (Nebenraum oder Flur mit Stuhl), in Reichweite der zweiten Fachkraft.",
+        "Aktuelle Zahlen für 13- bis 15-Jährige in Luxemburg heraussuchen, etwa aus der HBSC-Studie für Luxemburg: Wie viele haben in den letzten 30 Tagen Alkohol getrunken, geraucht oder gevapt, Cannabis genommen? Auf „… von 10“ umrechnen und auf die drei Karten schreiben. Keine Zahlen schätzen.",
+        "Den aktuellen Stand der Regeln in Luxemburg zu Alkohol, Tabak, Vapes und Cannabis für Minderjährige prüfen und notieren; in der Einheit nur allgemein darüber sprechen.",
+        "Raum: Stühle im Kreis; an einer Wand die Schilder Fakt – unsicher – Mythos mit Abstand aufhängen, daneben die Schätz-Linie kleben (0 an der Tür, 10 am Fenster)."
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-fakt-oder-mythos",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Gefühlsrad und Anspannung"
+        },
+        {
+          "min": "10–20",
+          "phase": "bruecke",
+          "titel": "Neues Modul, klare Regeln, Fragenbox"
+        },
+        {
+          "min": "20–25",
+          "phase": "uebung",
+          "titel": "Erste Vermutungen: Fakt oder Mythos?"
+        },
+        {
+          "min": "25–33",
+          "phase": "input",
+          "titel": "Gaspedal und Bremse: das Gehirn im Umbau"
+        },
+        {
+          "min": "33–45",
+          "phase": "uebung",
+          "titel": "Expertenteams: Alkohol, Nikotin, Cannabis"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–78",
+          "phase": "aktiv",
+          "titel": "Aufstellung: Fakt oder Mythos?"
+        },
+        {
+          "min": "78–88",
+          "phase": "aktiv",
+          "titel": "Schätz-Linie: Was machen die anderen wirklich?"
+        },
+        {
+          "min": "88–94",
+          "phase": "skill",
+          "titel": "Skill: ein Glas Wasser, ganz bewusst"
+        },
+        {
+          "min": "94–100",
+          "phase": "abschluss",
+          "titel": "Réckbléck, Skills-Pass und Check-out"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: Gefühlsrad und Anspannung",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Stühle im Kreis, Gefühlsrad und Anspannungsskala in der Mitte. Reihum steckt jede Person ihre Klammer an ein Gefühlswort und nennt ihre Anspannung von 0 bis 100; die Leitung beginnt. Heute gibt es keine Zusatzfrage: Das neue Thema wird erst im nächsten Schritt genannt, damit niemand schon im Check-in etwas dazu sagen muss. Die Zahlen ohne Namen am Rand der Tafel notieren – beim Check-out kommt eine zweite Reihe dazu.",
+          "sagen": [
+            "Klammer ans Rad, Zahl dazu – wie immer. Ein Satz ist freiwillig.",
+            "Ich bin heute bei 35: ein bisschen gespannt auf das neue Modul."
+          ],
+          "tipp": "Die beiden Zahlenreihen vom Anfang und vom Ende zeigen, ob das Thema die Gruppe hochgebracht hat – ein wichtiger Hinweis, wem die Leitung nach der Einheit ein Gespräch anbietet.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Neues Modul, klare Regeln, Fragenbox",
+          "dauer": 10,
+          "phase": "bruecke",
+          "text": "Kurz an die letzte Einheit anknüpfen: Games binden über das Belohnungssystem im Gehirn – und genau dort wirken auch Alkohol, Nikotin und Cannabis. Dann das Modul „Riskant oder okay?“ vorstellen: heute Fakten, nächstes Mal Druck-Situationen und Erste Hilfe, danach die Frage, was Menschen im Konsum suchen. Die vier Regeln für diese drei Einheiten (Liste) an die Tafel schreiben, vorlesen und per Handzeichen bestätigen lassen. Zum Schluss die Fragenbox vorstellen: Alle bekommen am Ende einen gleichen Zettel und werfen ihn ein, mit einer Frage oder leer.",
+          "sagen": [
+            "Ihr müsst hier nichts über euch erzählen. Wir reden über Fakten und über ausgedachte Personen – das reicht völlig.",
+            "Ich bin nicht hier, um euch zu sagen, was ihr tun sollt. Ich will, dass ihr gut informiert selbst entscheiden könnt.",
+            "In die Box darf jede Frage, auch eine, die euch peinlich vorkommt. Ich beantworte sie nächste Woche, ohne zu wissen, von wem sie ist."
+          ],
+          "punkte": [
+            "Niemand erzählt von eigenem Konsum – und nicht von dem anderer Leute mit Namen.",
+            "Wir reden über Fakten und über ausgedachte Personen, nicht über Menschen hier im Raum.",
+            "Stopp und Rausgehen sind jederzeit erlaubt. Der ruhige Platz ist dort drüben.",
+            "Was hier gesagt wird, bleibt hier. Wenn jemand in Gefahr ist, muss ich Hilfe holen – und ich sage vorher, was ich tue."
+          ],
+          "tipp": "Gleiche Zettel, gleiche Stifte, und alle werfen einen Zettel ein – auch leere. So erkennt niemand an Schrift oder Verhalten, wer gefragt hat. Die Fragen vor der Beantwortung im Team durchsehen.",
+          "wennEsKippt": "Kommt gleich ein Spruch wie „Ich trink doch jedes Wochenende“, nicht darauf eingehen und nicht bewerten, sondern ruhig auf die erste Regel zeigen: Heute reden wir nicht über uns. Wiederholt sich das, nach der Einheit kurz unter vier Augen nachfragen – hinter solchen Sprüchen steckt mal ein Test, mal eine echte Sorge."
+        },
+        {
+          "titel": "Erste Vermutungen: Fakt oder Mythos?",
+          "dauer": 5,
+          "phase": "uebung",
+          "text": "Das Blatt austeilen. Jede Person kreuzt bei Aufgabe 1 allein und ohne Gespräch an, was sie vermutet, und nimmt dafür den ersten Stift. Klarstellen, dass es hier keine Noten gibt und falsche Vermutungen ausdrücklich erwünscht sind. Die Auflösung kommt erst nach der Pause.",
+          "sagen": [
+            "Kreuzt an, was ihr jetzt glaubt – nicht, was ihr glaubt, dass ich hören will.",
+            "Falsch liegen ist heute ausdrücklich erlaubt. Nach der Pause schauen wir, wer seine Meinung geändert hat."
+          ],
+          "tipp": "Wer nicht gern liest, bekommt die Aussagen von der Leitung leise vorgelesen oder arbeitet mit einer zweiten Person zusammen.",
+          "blatt": "skills-fakt-oder-mythos"
+        },
+        {
+          "titel": "Gaspedal und Bremse: das Gehirn im Umbau",
+          "dauer": 8,
+          "phase": "input",
+          "text": "Auf dem Plakat einen Kopf im Profil zeichnen: in der Mitte ein Gaspedal für das Belohnungssystem, vorn hinter der Stirn eine Bremse für die Steuerzentrale, die plant, abwägt und stoppt. Erklären: Das Gaspedal reagiert in der Jugend besonders stark, die Bremse wird erst bis Mitte zwanzig fertig. Deshalb fühlen sich Kicks, Anerkennung und Gruppen so intensiv an – und deshalb wirken Alkohol, Nikotin und Cannabis in diesem Alter stärker, und das Gehirn gewöhnt sich schneller an sie. Keine Hirnbilder oder kranken Organe zeigen: Das Plakat reicht.",
+          "sagen": [
+            "Euer Gehirn ist gerade eine Baustelle, im guten Sinn: Es lernt so schnell wie nie wieder. Nur lernt es auch Dinge, die man später schwer loswird.",
+            "Kennt ihr das: Im Moment fühlt sich etwas richtig an, und am nächsten Tag denkt man: Warum eigentlich? Das war das Gaspedal, bevor die Bremse da war.",
+            "Das heißt nicht, dass Jugendliche schlecht entscheiden. Mit Zeit zum Nachdenken entscheidet ihr so gut wie Erwachsene – schwierig wird es unter Druck, in der Gruppe und in Aufregung."
+          ],
+          "tabelle": {
+            "spalten": [
+              "Teil",
+              "Was er tut",
+              "In der Jugend"
+            ],
+            "zeilen": [
+              [
+                "Gaspedal (Belohnungssystem)",
+                "sucht Spaß, Kicks und Anerkennung",
+                "besonders empfindlich, vor allem wenn Freunde dabei sind"
+              ],
+              [
+                "Bremse (Steuerzentrale hinter der Stirn)",
+                "plant, wägt Folgen ab, stoppt",
+                "wird bis Mitte zwanzig fertig und kommt unter Druck oft zu spät"
+              ]
+            ]
+          },
+          "tipp": "Das Bild mit dem Körper zeigen: Der rechte Fuß tritt aufs Gas, die linke Hand zieht die Bremse. So bleibt das Modell hängen; Fachwörter wie „präfrontaler Kortex“ nur nennen, wenn jemand fragt."
+        },
+        {
+          "titel": "Expertenteams: Alkohol, Nikotin, Cannabis",
+          "dauer": 12,
+          "phase": "uebung",
+          "text": "Drei Expertenteams bilden (abzählen): Alkohol, Nikotin (Zigarette, Vape, Snus) und Cannabis. Jedes Team liest auf dem Blatt (Aufgabe 2) den Kasten „Das Gehirn baut um“ und seinen eigenen Kasten, klärt unbekannte Wörter und bereitet in fünf Minuten eine Mini-Erklärung vor: drei Sätze, die jede Person aus der Klasse versteht, und eine Sache, die das Team überrascht hat. Dann erklärt jedes Team sein Thema in höchstens zwei Minuten; die anderen unterstreichen auf ihrem Blatt den Satz, den sie sich merken wollen. Die Leitung ergänzt nur, wenn etwas fachlich nicht stimmt.",
+          "sagen": [
+            "Erklärt es so, als würdet ihr es eurem Cousin oder eurer kleinen Schwester erklären: drei Sätze, keine Fachwörter.",
+            "Was hat euch in eurem Kasten überrascht?"
+          ],
+          "tipp": "Mit nur zwei Jugendlichen übernimmt jede Person ein Thema, die Leitung erklärt das dritte. Bei wenig Energie liest die Leitung die Kästen vor, und alle unterstreichen nur.",
+          "wennEsKippt": "Fragt jemand nach Mengen, Wirkungen oder Tricks („Wie viel muss man trinken, bis …?“), nicht beantworten, sondern ruhig umlenken: Hier gibt es keine Anleitungen, nur Fakten zu Risiken. Echte Gesundheitsfragen gehören in die Fragenbox – dort werden sie ernsthaft beantwortet.",
+          "blatt": "skills-fakt-oder-mythos"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Imbiss und frische Luft. Die Leitung lässt das Thema ruhen und bleibt ansprechbar. Erzählt jemand in der Pause von eigenem Konsum oder von Sorgen um jemanden zu Hause, zuhören, nicht bewerten und ein Gespräch nach der Einheit anbieten."
+        },
+        {
+          "titel": "Aufstellung: Fakt oder Mythos?",
+          "dauer": 18,
+          "phase": "aktiv",
+          "text": "Alle stehen in der Raummitte, die Blätter bleiben auf den Stühlen. Die Leitung liest die Aussagen nacheinander vor (Tabelle); alle gehen zu Fakt, unsicher oder Mythos – dorthin, wo sie jetzt stehen, nicht unbedingt dorthin, wo sie vor der Pause angekreuzt haben. Pro Zone begründet eine Person, dann löst die Leitung in zwei, drei Sätzen auf. Nach der letzten Aussage korrigieren alle ihr Blatt mit dem zweiten Stift und schauen, wo sie ihre Meinung geändert haben. Bei Regen oder wenig Platz geht die Aufstellung im Sitzen: Jede Person hält eine von drei Karten hoch.",
+          "sagen": [
+            "Geht dahin, wo ihr jetzt wirklich steht – nicht dahin, wo die meisten stehen.",
+            "Wer unsicher ist, steht richtig. Genau da fängt Nachdenken an.",
+            "Warum hält sich dieser Mythos so hartnäckig? Wem nützt er?"
+          ],
+          "tabelle": {
+            "spalten": [
+              "Aussage",
+              "Auflösung",
+              "Kurz erklärt"
+            ],
+            "zeilen": [
+              [
+                "1 Vapes sind nur Wasserdampf mit Geschmack.",
+                "Mythos",
+                "Die meisten Vapes enthalten Nikotin, oft viel. Eingeatmet wird ein Nebel aus Nikotin, Aromen und weiteren Stoffen, kein Wasserdampf."
+              ],
+              [
+                "2 Kaffee oder eine kalte Dusche machen schnell wieder nüchtern.",
+                "Mythos",
+                "Alkohol baut nur die Zeit ab. Wer sich wacher fühlt, ist genauso betrunken wie vorher."
+              ],
+              [
+                "3 Jugendliche vertragen meist weniger Alkohol als Erwachsene.",
+                "Fakt",
+                "Sie sind oft leichter, ihr Körper ist Alkohol nicht gewohnt, und ihr Gehirn reagiert empfindlicher. Eine Vergiftung kann schneller passieren."
+              ],
+              [
+                "4 Cannabis ist eine Pflanze und deshalb harmlos.",
+                "Mythos",
+                "Pflanzlich heißt nicht harmlos. Heutiges Cannabis ist oft viel stärker als früher und wirkt auf Gedächtnis, Aufmerksamkeit und Stimmung."
+              ],
+              [
+                "5 Wer jung mit Cannabis anfängt, wird leichter abhängig als jemand, der später anfängt.",
+                "Fakt",
+                "Von denen, die als Jugendliche anfangen, wird etwa jede sechste Person abhängig – deutlich mehr als bei einem späteren Beginn."
+              ],
+              [
+                "6 Die meisten in meinem Alter trinken jedes Wochenende Alkohol.",
+                "Mythos",
+                "Die meisten 13- bis 15-Jährigen trinken nicht oder nur selten. Viele schätzen das falsch ein – dazu gleich die Schätz-Linie."
+              ],
+              [
+                "7 Nikotin macht schnell abhängig, Jugendliche besonders schnell.",
+                "Fakt",
+                "Das junge Gehirn reagiert empfindlicher auf Nikotin – egal ob aus Zigarette, Vape, Snus oder Nikotinbeutel."
+              ],
+              [
+                "8 In Luxemburg ist Cannabis inzwischen für alle erlaubt.",
+                "Mythos",
+                "Für Minderjährige ist Cannabis verboten. Für Erwachsene gelten eigene, enge Regeln; die Leitung nennt den aktuellen Stand."
+              ]
+            ]
+          },
+          "tipp": "Nicht bewerten, wer falsch lag, sondern gute Begründungen würdigen. Wer nach einem guten Argument die Zone wechselt, zeigt genau das, worum es geht: prüfen statt glauben.",
+          "wennEsKippt": "Laufen alle den Lautesten hinterher, die nächsten zwei Aussagen mit geschlossenen Augen abfragen: Alle zeigen mit dem Arm in eine Richtung, erst dann Augen auf. Wird mit eigenen Erlebnissen argumentiert („Mein Cousin kifft seit Jahren und …“), freundlich stoppen: Einzelfälle beweisen nichts – in keine Richtung.",
+          "blatt": "skills-fakt-oder-mythos"
+        },
+        {
+          "titel": "Schätz-Linie: Was machen die anderen wirklich?",
+          "dauer": 10,
+          "phase": "aktiv",
+          "text": "Die Leitung stellt drei Schätzfragen, jeweils zu „von 10 Jugendlichen in eurem Alter“: Wie viele haben in den letzten 30 Tagen Alkohol getrunken, wie viele geraucht oder gevapt, wie viele Cannabis genommen? Nach jeder Frage stellen sich alle an ihre Zahl auf der Linie und kreuzen danach auf dem Blatt den passenden Bereich an (Aufgabe 3). Dann deckt die Leitung die Karte mit der Zahl aus der Studie auf; alle markieren sie mit dem zweiten Stift. Meist liegen die Schätzungen deutlich zu hoch – darüber zum Schluss kurz sprechen.",
+          "sagen": [
+            "Nicht, was ihr selbst macht – was glaubt ihr über die anderen?",
+            "Ihr habt geschätzt, dass fast alle trinken. Laut Studie sind es … Woher kommt dieser Unterschied?",
+            "Wer glaubt, alle machen es, macht eher mit. Wer die echten Zahlen kennt, muss sich weniger beweisen."
+          ],
+          "tipp": "Fehlen aktuelle Zahlen, die Kernaussage ohne Zahl nennen: Die meisten Jugendlichen in eurem Alter rauchen, vapen und kiffen nicht, und die meisten trinken nicht oder nur selten. Keine Zahl erfinden – eine falsche Zahl macht die ganze Übung unglaubwürdig.",
+          "wennEsKippt": "Sagt jemand „Bei uns in der Klasse machen es aber alle“, das nicht wegdiskutieren. Nachfragen, woher man das weiß: Meist hört man von den Lauten, und die Stillen fallen nicht auf – genau das ist der Kern der Übung. Mit nur zwei Jugendlichen die Zahlen im Sitzen mit den Fingern zeigen.",
+          "blatt": "skills-fakt-oder-mythos"
+        },
+        {
+          "titel": "Skill: ein Glas Wasser, ganz bewusst",
+          "dauer": 6,
+          "phase": "skill",
+          "text": "Jede Person bekommt ein Glas kaltes Wasser, alle sitzen. Die Leitung leitet langsam an (Liste) und lässt zwischen den Sätzen Zeit. Danach kurz erklären: Kälte und bewusstes Schmecken holen die Aufmerksamkeit in den Körper zurück – ein Sinnes-Skill, der überall funktioniert, auch auf einer Party. Wer mag, sagt in einem Wort, wie es war.",
+          "sagen": [
+            "Ein Glas Wasser ist heute euer Skill. Kein Trick, nur Aufmerksamkeit."
+          ],
+          "punkte": [
+            "Schau dir das Glas an: Tropfen, Licht, wie sich das Wasser bewegt.",
+            "Spür die Kälte in deiner Hand.",
+            "Nimm einen Schluck und behalte ihn kurz im Mund. Wie kalt ist er? Schmeckst du etwas?",
+            "Schluck und spür nach, wie das Wasser nach unten wandert.",
+            "Noch zweimal, ganz langsam."
+          ],
+          "tipp": "Wer Kaltes nicht mag, nimmt Wasser in Zimmertemperatur. Ist die Gruppe unruhig, die Übung im Stehen machen, beide Füße fest auf dem Boden."
+        },
+        {
+          "titel": "Réckbléck, Skills-Pass und Check-out",
+          "dauer": 6,
+          "phase": "abschluss",
+          "text": "Blitzlicht mit dem Satzanfang „Ein Satz, den ich ab heute nicht mehr glaube: …“; wer mag, schreibt ihn als Aufgabe 4 auf das Blatt. Dann Eintrag in den Skills-Pass und Stempel. Zum Check-out nennt jede Person noch einmal ihre Anspannung, die Leitung notiert still die zweite Reihe. Alle werfen einen Zettel in die Fragenbox. Zum Schluss das Angebot machen, nach der Einheit zu zweit zu reden.",
+          "sagen": [
+            "Ein Satz, den ihr ab heute nicht mehr glaubt?",
+            "Eure Zahl jetzt, zum Schluss? Wer höher ist als am Anfang, bleibt gern noch kurz.",
+            "Ich bin nach der Stunde noch zehn Minuten hier – für Fragen, die nicht in die Box sollen."
+          ],
+          "wennEsKippt": "Liegt eine Zahl deutlich höher als am Anfang oder wirkt jemand still und bedrückt, nicht in der Runde nachfragen. Beim Hinausgehen unauffällig ansprechen: Du wirkst nachdenklich – magst du kurz bleiben?",
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Nächstes Mal geht es auf die Party: Was macht ihr, wenn Druck kommt – und was, wenn es jemandem richtig schlecht geht? Zieht bequeme Kleidung an, wir üben auch auf dem Boden.",
+      "hintergrund": "Das Gehirn reift bis Mitte zwanzig: Das Belohnungssystem reagiert in der Pubertät besonders stark, die Steuerzentrale im Stirnhirn, die plant und bremst, wird zuletzt fertig (Steinberg, 2014). In dieser Phase ist das Gehirn für Alkohol und Cannabis besonders empfindlich; starkes Trinken und regelmäßiges Kiffen hängen mit schlechterem Gedächtnis und schlechterer Aufmerksamkeit zusammen (Squeglia et al., 2009). Wer als Jugendlicher mit Cannabis beginnt, wird häufiger abhängig, etwa jede sechste Person (Volkow et al., 2014). Das Aerosol von Vapes ist kein harmloser Wasserdampf, und Nikotin kann in der Jugend schnell abhängig machen und dem Gehirn in der Entwicklung schaden (US Surgeon General, 2016). Die Einheit setzt auf Fakten statt Angst: Furchtappelle ohne Handlungsmöglichkeit verpuffen oder erzeugen Abwehr (Peters, Ruiter & Kok, 2013). Wirksam ist, falsche Normen zu korrigieren: Wer überschätzt, wie viele Gleichaltrige konsumieren, konsumiert eher selbst (Perkins, 2002).",
+      "quellen": [
+        "Steinberg, L. (2014). Age of Opportunity: Lessons from the New Science of Adolescence. Boston: Houghton Mifflin Harcourt.",
+        "Squeglia, L. M., Jacobus, J. & Tapert, S. F. (2009). The influence of substance use on adolescent brain development. Clinical EEG and Neuroscience, 40(1), 31–38.",
+        "Volkow, N. D., Baler, R. D., Compton, W. M. & Weiss, S. R. B. (2014). Adverse health effects of marijuana use. New England Journal of Medicine, 370(23), 2219–2227.",
+        "U.S. Department of Health and Human Services (2016). E-Cigarette Use Among Youth and Young Adults: A Report of the Surgeon General. Atlanta, GA: Centers for Disease Control and Prevention.",
+        "Peters, G.-J. Y., Ruiter, R. A. C. & Kok, G. (2013). Threatening communication: A critical re-analysis and a revised meta-analytic test of fear appeal theory. Health Psychology Review, 7(Suppl. 1), S8–S31.",
+        "Perkins, H. W. (2002). Social norms and the prevention of alcohol misuse in collegiate contexts. Journal of Studies on Alcohol, Supplement 14, 164–172."
+      ],
+      "achtung": "Das Thema kann eigene Erfahrungen berühren: eigenen Konsum, Konsum in der Familie oder im Freundeskreis. Nichts davon in der Gruppe abfragen oder vertiefen; Beiträge freundlich stoppen und ein Gespräch zu zweit anbieten. Keine Schockbilder, keine Videos von Betrunkenen, keine Angaben zu Mengen, Wirkungen oder Bezugsquellen – auch nicht auf Nachfrage. Gibt es Hinweise auf gefährlichen Konsum, auf Sucht in der Familie oder auf Druck durch Ältere, die Substanzen weitergeben: die Person nach der Einheit ruhig ansprechen, nichts versprechen, was man nicht halten kann, nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) am selben Tag informieren. Enthält ein anonymer Zettel solche Hinweise, im Team beraten und die Hilfsangebote in der nächsten Einheit für alle wiederholen. Bei akuter Gefahr, etwa einer Vergiftung: Notruf 112, die Person nicht allein lassen. Beobachtungen nach der Einheit im Team besprechen."
+    },
+    {
+      "id": "j2-e28",
+      "nr": 28,
+      "jahr": 2,
+      "modul": "j2-m8",
+      "titel": "Party, Druck und gute Entscheidungen",
+      "kurz": "Party, Park, Chat, ältere Freunde: Die Gruppe spielt typische Druck-Situationen durch, frischt ihre Nein-Sätze auf, baut sich einen Plan B und übt, was zu tun ist, wenn jemand nicht mehr ansprechbar ist.",
+      "dauer": 100,
+      "ziele": [
+        "erkennen in typischen Situationen (Party, Park, Chat, älterer Freundeskreis), woher der Druck kommt, und antworten mit einem eigenen Nein-Satz",
+        "legen einen persönlichen Plan B fest: Codewort, Abholen lassen, zusammen hin und zusammen weg",
+        "kennen die Notfall-Kette, wenn jemand sehr betrunken oder nicht mehr ansprechbar ist: ansprechen, 112 rufen, stabile Seitenlage, dableiben",
+        "üben die stabile Seitenlage freiwillig – zu zweit, an einer Puppe oder als Beobachtende einer Vorführung"
+      ],
+      "material": [
+        "Gefühlsrad (A3), Wäscheklammern, Anspannungsskala 0–100",
+        "Die Fragen aus der Fragenbox mit den im Team abgestimmten Antworten; Fragenbox, gleiche Zettel und Stifte",
+        "Schülerblatt „Mein Plan B“ für jede Person, Scheren, Klebestifte, Laminierfolie oder breites Klebeband für die Plan-B-Karte",
+        "Plakat „Gute Party“ und dicke Stifte",
+        "Für die Saftbar: zwei, drei Säfte, Sprudelwasser, Limetten oder Zitronen, frische Minze, Eiswürfel, Becher, Schneidebrett und Messer",
+        "Zwei Gymnastikmatten oder Decken, wenn möglich eine Übungspuppe, eine Jacke oder Rettungsdecke zum Zudecken",
+        "Handy der Leitung, um den Notruf zu zeigen (nicht wählen)",
+        "Skills-Pässe, Stempel"
+      ],
+      "vorbereitung": [
+        "Rückmeldungen auf den Elternbrief zum Modul durchsehen: Soll jemand bei der Erste-Hilfe-Übung nicht aktiv mitmachen? Die zuständige Leitung (Responsable) ist seit Einheit 27 informiert.",
+        "Die Fragen aus der Box im Team durchsehen und kurze, sachliche Antworten vorbereiten. Fragen nach Mengen, Mischungen oder Bezugsquellen nicht beantworten, sondern erklären, warum. Deutet eine Frage auf eine Gefährdung hin, mit der zuständigen Leitung klären, wie es weitergeht.",
+        "Die stabile Seitenlage selbst auffrischen (eigener Erste-Hilfe-Kurs, Unterlagen der Einrichtung). Wenn möglich eine Person mit aktueller Erste-Hilfe-Ausbildung dazuholen und eine Übungspuppe ausleihen, etwa über die Schulärztin oder den Schularzt.",
+        "Mit der zweiten Fachkraft die Vorführung absprechen: Die Seitenlage wird an ihr oder an der Puppe gezeigt, nie an einer oder einem Jugendlichen.",
+        "Allergien und Essensregeln für die Saftbar prüfen, Obst und Minze vorher waschen.",
+        "Raum: vorn eine freie Fläche als Bühne, hinten zwei Matten; einen ruhigen Platz zum Rausgehen festlegen."
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-plan-b",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Was macht eine gute Party aus?"
+        },
+        {
+          "min": "10–18",
+          "phase": "bruecke",
+          "titel": "Antworten aus der Fragenbox"
+        },
+        {
+          "min": "18–30",
+          "phase": "uebung",
+          "titel": "Fünf Situationen: Woher kommt der Druck?"
+        },
+        {
+          "min": "30–45",
+          "phase": "uebung",
+          "titel": "Nein-Sätze und Plan B"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Saftbar: Drinks ohne Alkohol mixen"
+        },
+        {
+          "min": "60–72",
+          "phase": "aktiv",
+          "titel": "Szenen-Stopp: Nein sagen, Plan B, Emma"
+        },
+        {
+          "min": "72–88",
+          "phase": "aktiv",
+          "titel": "Erste Hilfe: Notfall-Kette und stabile Seitenlage"
+        },
+        {
+          "min": "88–93",
+          "phase": "skill",
+          "titel": "Skill: erst atmen, dann handeln"
+        },
+        {
+          "min": "93–100",
+          "phase": "abschluss",
+          "titel": "Plan-B-Karte, Réckbléck und Check-out"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: Was macht eine gute Party aus?",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Gefühlsrad und Anspannung wie gewohnt; die Leitung beginnt. Zusatzfrage mit einem Wort: Was macht für dich einen richtig guten Abend mit Freunden aus? Die Antworten ohne Namen auf das Plakat „Gute Party“ schreiben – Musik, Leute, Essen, Tanzen, Lachen. Das Plakat hängt später neben der Saftbar.",
+          "sagen": [
+            "Gefühl, Zahl und ein Wort: Was macht einen richtig guten Abend mit Freunden aus?",
+            "Schaut auf das Plakat: Was davon hat mit Alkohol zu tun – und was nicht?"
+          ],
+          "tipp": "Die Liste zeigt ohne Predigt, dass das Gute an einem Abend selten aus einer Flasche kommt. Auf sie greift der Plan B später zurück.",
+          "wennEsKippt": "Ruft jemand „Wodka“ oder „Kiffen“, das gelassen aufnehmen, aber nicht notieren: Das bringen manche mit – aber was macht den Abend gut? Meist kommen dann Leute, Musik und Lachen.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Antworten aus der Fragenbox",
+          "dauer": 8,
+          "phase": "bruecke",
+          "text": "Die Fragen aus der Box vorlesen, ohne Zettel oder Handschrift zu zeigen, und kurz und sachlich beantworten; ähnliche Fragen zusammenfassen. Fragen nach Mengen, Mischungen oder Bezugsquellen nicht beantworten und offen sagen, warum. Dann auf die Regeln aus Einheit 27 zeigen und das heutige Thema nennen: Druck-Situationen, ein eigener Plan B und Erste Hilfe.",
+          "sagen": [
+            "Eine Frage war: … Die ehrliche Antwort ist: …",
+            "Eine Frage beantworte ich nicht, nämlich wie viel man trinken kann, ohne dass es auffällt. Anleitungen gibt es hier nicht – aber heute lernt ihr, was im Notfall zu tun ist."
+          ],
+          "tipp": "Weiß die Leitung eine Antwort nicht sicher, nicht improvisieren, sondern die Antwort nachreichen. Das zeigt, dass Fakten hier ernst genommen werden."
+        },
+        {
+          "titel": "Fünf Situationen: Woher kommt der Druck?",
+          "dauer": 12,
+          "phase": "uebung",
+          "text": "Die fünf Situationen vorlesen (Liste). Jede Person schätzt auf dem Blatt allein ein, wie schwierig die Situation für sie wäre (Aufgabe 1); niemand liest vor. Dann wählt jedes Paar eine Situation und bespricht drei Fragen: Wer oder was macht hier Druck – laut oder leise? Was will die Person eigentlich? Wie kann sie dabeibleiben, ohne mitzumachen? Kurze Rückmeldung im Plenum.",
+          "sagen": [
+            "Wo ist hier der Druck – laut oder leise?",
+            "Was will die Person eigentlich: dabei sein, cool wirken, niemanden enttäuschen?",
+            "Gibt es einen Weg, bei dem sie dabeibleibt, ohne mitzumachen?"
+          ],
+          "punkte": [
+            "Party: Geburtstag bei Mila. Ältere haben Alkohol mitgebracht. Jemand drückt Tiago einen Becher in die Hand: „Stell dich nicht so an.“",
+            "Park: Freitagabend, alle sitzen auf der Bank. Eine Vape geht im Kreis herum. Jetzt ist Zoé dran, und alle schauen sie an.",
+            "Chat: „Samstag bei Liam, er bringt was zum Kiffen mit. Wer ist dabei?“ Sieben haben schon „bin dabei“ geschrieben, Chiara noch nicht.",
+            "Älterer Freundeskreis: Auf der Kiermes nimmt Noahs Cousin (18) ihn mit zu seinen Freunden. Einer hält Noah einen Joint hin: „Mit 14 war ich auch schon dabei.“",
+            "Freunde nicht allein lassen: Nach der Party will Emma allein nach Hause laufen. Ihr ist schlecht, sie schwankt und sagt: „Geht schon.“"
+          ],
+          "tipp": "Leiser Druck ist oft stärker als lauter: Im Chat sagt niemand „Du musst“, aber sieben „bin dabei“ wirken wie eine Abstimmung. Diese Beobachtung ausdrücklich würdigen, wenn sie aus der Gruppe kommt.",
+          "wennEsKippt": "Sagt jemand „Ich würde einfach mitmachen, ist doch nichts dabei“, nicht dagegenhalten und nicht moralisieren. Nachfragen: Was müsste passieren, damit die Person in der Situation Nein sagen kann, wenn sie Nein meint? Es geht darum, selbst zu entscheiden, statt mitgezogen zu werden.",
+          "blatt": "skills-plan-b"
+        },
+        {
+          "titel": "Nein-Sätze und Plan B",
+          "dauer": 15,
+          "phase": "uebung",
+          "text": "Die vier Arten, Nein zu sagen, aus Jahr 1 auffrischen: Wer sie kennt, erklärt sie den Neuen, die Leitung schreibt mit (Kasten auf dem Blatt). Dann die drei Plan-B-Wege vorstellen (Tabelle) und an Tiagos Party durchspielen. Anschließend schreibt jede Person ihren eigenen Nein-Satz für die Situation, die für sie am schwierigsten wäre (Aufgabe 2), und kreist den Plan-B-Weg ein, den sie nutzen will (Aufgabe 3). Wer mag, liest seinen Satz vor; niemand muss sagen, warum er diese Situation gewählt hat.",
+          "sagen": [
+            "Kennt ihr noch die kaputte Schallplatte? Wer macht sie einmal vor?",
+            "Ein Plan B ist kein Feiglings-Plan. Er ist der Grund, warum ihr entspannt hingehen könnt.",
+            "Mit wem könntet ihr ein Codewort abmachen? Den Namen müsst ihr nicht sagen."
+          ],
+          "tabelle": {
+            "spalten": [
+              "Plan B",
+              "So geht es",
+              "Vorher klären"
+            ],
+            "zeilen": [
+              [
+                "Codewort",
+                "Ein Wort, das nur du und eine erwachsene Vertrauensperson kennen. Schickst du es, holt sie dich ab.",
+                "Das Wort abmachen – und dass es an diesem Abend keine Fragen und keinen Ärger gibt."
+              ],
+              [
+                "Abholen lassen",
+                "Du rufst an oder schreibst, und jemand holt dich ab, auch spät.",
+                "Wer holt dich? Nummer gespeichert, Handy geladen, Adresse bekannt."
+              ],
+              [
+                "Zusammen hin, zusammen weg",
+                "Du machst mit einer Freundin oder einem Freund aus: Wir passen aufeinander auf.",
+                "Eine Uhrzeit oder ein Zeichen fürs Gehen; niemand geht allein."
+              ]
+            ]
+          },
+          "tipp": "Das Codewort wirkt nur, wenn es vorher abgemacht ist und die erwachsene Person zusagt, an diesem Abend nicht zu schimpfen. Einen Satz dafür mitgeben: Wenn ich dir das schreibe, hol mich bitte ab und frag erst morgen.",
+          "wennEsKippt": "Hat jemand niemanden, der ihn abholen würde, nicht in der Gruppe nachbohren. Gemeinsam andere Wege sammeln – mit einer Freundin zusammen gehen, bei ihrer Familie übernachten, den letzten Bus gemeinsam nehmen; wer im Foyer wohnt, macht das Codewort mit der Bezugsbetreuerin oder dem Bezugsbetreuer aus. Nach der Einheit unter vier Augen nachfragen, wie es zu Hause aussieht.",
+          "blatt": "skills-plan-b"
+        },
+        {
+          "titel": "Saftbar: Drinks ohne Alkohol mixen",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Gemeinsam Drinks ohne Alkohol mixen: Saft, Sprudelwasser, Limette, Minze, Eis. Jede Person erfindet eine Mischung und gibt ihr einen Namen, der auf das Plakat „Gute Party“ kommt – aber keinen Namen eines Cocktails mit Alkohol. Die Leitung trinkt mit und lässt das Thema sonst ruhen."
+        },
+        {
+          "titel": "Szenen-Stopp: Nein sagen, Plan B, Emma",
+          "dauer": 12,
+          "phase": "aktiv",
+          "text": "Eine Situation aus Schritt 3 wird kurz gespielt: Die drängelnde Rolle übernimmt die Leitung, die Rolle der Person, die Nein sagt, eine Freiwillige oder ein Freiwilliger. Wer zuschaut, darf jederzeit „Stopp!“ rufen, nach vorn kommen und die Rolle mit einem anderen Satz oder einem Plan B übernehmen. Nach jeder Szene steigen alle aus der Rolle aus: aufstehen, ausschütteln, den eigenen Namen sagen. Zwei bis drei Szenen reichen; die letzte ist Emma, die allein nach Hause laufen will. Sie führt direkt zur Ersten Hilfe: Wie lassen wir Emma nicht allein – und was, wenn sie nicht mehr reagiert?",
+          "sagen": [
+            "Ich spiele heute die nervige Person. Ihr dürft mich jederzeit stoppen und es anders machen als die Person vor euch.",
+            "Stopp. Was hat gerade geholfen – der Satz, der Blick oder dass jemand dazukam?",
+            "Emma sagt: Geht schon. Was macht ihr jetzt?"
+          ],
+          "tipp": "Mit nur zwei Jugendlichen spielen beide abwechselnd die Person, die Nein sagt, und die Leitung drängelt. Bei wenig Energie die Chat-Situation im Sitzen spielen: Die Leitung liest die Nachrichten vor, die Jugendlichen antworten laut.",
+          "wennEsKippt": "Übernimmt eine oder ein Jugendlicher die drängelnde Rolle und wird zu echt – Beleidigungen, Anspielungen auf jemanden im Raum –, die Szene sofort stoppen und die Rolle wieder selbst spielen. Erzählt jemand in der Szene von einer echten Party, freundlich zurück zu den ausgedachten Personen: Heute bleiben wir bei Tiago, Zoé und Emma."
+        },
+        {
+          "titel": "Erste Hilfe: Notfall-Kette und stabile Seitenlage",
+          "dauer": 16,
+          "phase": "aktiv",
+          "text": "Anknüpfen: Emma ist noch ansprechbar – nicht allein lassen, begleiten, Wasser geben, eine erwachsene Person anrufen. Reagiert sie nicht mehr, gilt die Notfall-Kette (Liste und Aufgabe 4 auf dem Blatt); dazu sagen, was nicht hilft: kalte Dusche, Kaffee, zum Erbrechen bringen, allein ausschlafen lassen. Dann zeigt die Leitung die stabile Seitenlage langsam an der zweiten Fachkraft oder an der Puppe und spricht jeden Handgriff mit (Tabelle). Anschließend üben Paare, die das beide wollen, abwechselnd auf der Matte; wer nicht berühren oder berührt werden möchte, übt an der Puppe oder spricht den Notruf. Vorher klar ansagen: Angefasst wird nur an Schulter, Arm, Hand und Knie, den Handgriff am Kopf zeigen alle nur an der Puppe, und „Stopp“ beendet die Übung sofort.",
+          "sagen": [
+            "Nicht wegdrehen und nicht ausschlafen lassen. Wer nicht mehr reagiert, braucht jetzt euch – und die 112.",
+            "Wer 112 ruft, tut das Richtige, auch wenn vorher etwas schiefgelaufen ist. Die Rettung kommt, um zu helfen.",
+            "Ihr entscheidet: zu zweit üben, an der Puppe üben oder zuschauen. Stopp heißt sofort Stopp."
+          ],
+          "punkte": [
+            "1 Ansprechen und anfassen: laut ansprechen, vorsichtig an den Schultern rütteln. Keine Reaktion? Laut um Hilfe rufen.",
+            "2 Atmung prüfen: Kopf vorsichtig nach hinten neigen, Kinn anheben, höchstens zehn Sekunden sehen, hören, fühlen.",
+            "3 Notruf 112: Wo seid ihr, was ist passiert, atmet die Person? Nicht auflegen – die Person am Telefon sagt, was zu tun ist.",
+            "4 Atmet die Person normal: stabile Seitenlage. Atmet sie nicht normal: sofort der 112 sagen, sie leitet an.",
+            "5 Dableiben: zudecken, Atmung weiter beobachten, nie allein lassen, bis Hilfe da ist."
+          ],
+          "tabelle": {
+            "spalten": [
+              "Handgriff",
+              "So geht es"
+            ],
+            "zeilen": [
+              [
+                "1 Arm",
+                "Neben der Person knien. Den Arm auf deiner Seite angewinkelt nach oben legen, Handfläche nach oben."
+              ],
+              [
+                "2 Hand an die Wange",
+                "Den anderen Arm am Handgelenk greifen, über die Brust führen, den Handrücken an die Wange auf deiner Seite legen und festhalten."
+              ],
+              [
+                "3 Knie",
+                "Mit der freien Hand das ferne Bein am Knie fassen und aufstellen."
+              ],
+              [
+                "4 Drehen",
+                "Am Knie zu dir herüberziehen, bis die Person auf der Seite liegt. Das obere Bein so legen, dass Hüfte und Knie rechtwinklig gebeugt sind."
+              ],
+              [
+                "5 Kopf",
+                "Kopf leicht nach hinten neigen, Mund leicht öffnen und die Hand unter der Wange so legen, dass der Kopf so bleibt. So bleiben die Atemwege frei, und Erbrochenes kann abfließen."
+              ]
+            ]
+          },
+          "tipp": "Bei Regen und wenig Platz reichen zwei Matten im Raum. Mit nur zwei Jugendlichen üben beide aneinander, wenn sie das wollen, sonst an der Puppe; fehlen Puppe und zweite Fachkraft, bleibt es bei einer langsamen Erklärung mit Bildern aus den Unterlagen der Einrichtung – vorgeführt wird nie an Jugendlichen.",
+          "wennEsKippt": "Wird beim Üben gekichert oder albern gezogen, kurz unterbrechen und ruhig sagen: Das hier kann eines Tages ein Leben retten. Wer nicht ernsthaft üben mag, spricht stattdessen den Notruf. Reagiert jemand erschrocken oder erzählt von einem echten Notfall, die Übung für diese Person beenden; die zweite Fachkraft begleitet sie an den ruhigen Platz, und nach der Einheit sucht die Leitung das Gespräch."
+        },
+        {
+          "titel": "Skill: erst atmen, dann handeln",
+          "dauer": 5,
+          "phase": "skill",
+          "text": "Nach der Übung bewusst runterkommen. Alle stehen, die Füße fest auf dem Boden, und atmen dreimal lang aus – länger aus als ein. Beim dritten Mal sagt jede Person innerlich ihren ersten Notfall-Satz: „Hallo, hörst du mich?“ oder „Wir brauchen Hilfe, ruf die 112.“ Dann erklären: Im Notfall schießt die Anspannung auf 90; ein langer Ausatem gibt zwei Sekunden Klarheit, und die reichen für den ersten Schritt.",
+          "sagen": [
+            "Füße spüren. Lang ausatmen. Dann erst handeln.",
+            "Wer im Notfall ruhig bleibt, ist nicht kalt – er hat geübt."
+          ],
+          "tipp": "Wer den Anker vor dem Nein aus Jahr 1 kennt, erkennt ihn wieder: Er hilft beim Nein-Sagen genauso wie im Notfall. Neue lernen ihn hier in einer Minute."
+        },
+        {
+          "titel": "Plan-B-Karte, Réckbléck und Check-out",
+          "dauer": 7,
+          "phase": "abschluss",
+          "text": "Jede Person füllt die Plan-B-Karte auf dem Blatt aus (Aufgabe 5), schneidet beide Hälften aus, klebt sie Rücken an Rücken zusammen und steckt die Karte ins Portemonnaie oder in die Handyhülle; wer mag, klebt Folie darüber. Blitzlicht: Welchen Teil deines Plan B würdest du wirklich benutzen? Dann Skills-Pass mit Stempel, Check-out mit der Anspannungszahl und für alle ein Zettel in die Fragenbox. Die Leitung bleibt nach der Einheit noch einige Minuten für Gespräche im Raum.",
+          "sagen": [
+            "Welchen Teil eures Plan B würdet ihr wirklich benutzen?",
+            "Wer mag, macht heute Abend ein Codewort mit jemandem zu Hause aus.",
+            "Eure Zahl zum Schluss?"
+          ],
+          "wennEsKippt": "Hat die Erste Hilfe bei jemandem etwas aufgewühlt – erkennbar an einer hohen Zahl oder an Stille –, nicht in der Runde fragen. Beim Aufräumen unauffällig dazugehen: Du warst vorhin sehr still. Alles okay bei dir?",
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Nächstes Mal geht es um die Frage hinter allem: Warum nehmen Menschen überhaupt Alkohol, Nikotin oder Cannabis – und was hilft stattdessen?",
+      "hintergrund": "Jugendliche gehen in Gegenwart Gleichaltriger deutlich mehr Risiken ein als allein (Gardner & Steinberg, 2005). Druck ist deshalb oft leise: Sieben „bin dabei“ im Chat wirken wie eine Abstimmung, ohne dass jemand drängt. Kurze, vorbereitete Sätze erleichtern das Nein; sie stammen aus dem Fertigkeitentraining der DBT für Jugendliche (Rathus & Miller, 2015). Wenn-dann-Pläne helfen, im entscheidenden Moment wie geplant zu handeln (Gollwitzer, 1999) – ein Plan B mit Codewort, Abholen und Begleitung bietet einen Ausweg ohne Gesichtsverlust. Im Notfall zögern Umstehende oft, weil sich die Verantwortung auf alle verteilt und jede Person denkt, jemand anderes rufe an (Latané & Darley, 1970). Deshalb übt die Gruppe eine feste Notfall-Kette. Die stabile Seitenlage für Menschen, die nicht reagieren, aber normal atmen, folgt den Leitlinien des European Resuscitation Council (Zideman et al., 2021); die Übung ersetzt keinen Erste-Hilfe-Kurs.",
+      "quellen": [
+        "Gardner, M. & Steinberg, L. (2005). Peer influence on risk taking, risk preference, and risky decision making in adolescence and adulthood: An experimental study. Developmental Psychology, 41(4), 625–635.",
+        "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford.",
+        "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503.",
+        "Latané, B. & Darley, J. M. (1970). The Unresponsive Bystander: Why Doesn’t He Help? New York: Appleton-Century-Crofts.",
+        "Zideman, D. A., Singletary, E. M., Borra, V., Cassan, P., Cimpoesu, C. D., De Buck, E., Djärv, T., Handley, A. J., Klaassen, B., Meyran, D., Oliver, E. & Poole, K. (2021). European Resuscitation Council Guidelines 2021: First aid. Resuscitation, 161, 270–290."
+      ],
+      "achtung": "Szenen nur mit den ausgedachten Situationen spielen, nie mit echten Partys oder Personen aus der Gruppe; die drängelnde Rolle übernimmt die Leitung. Eigene Konsum- oder Partygeschichten nicht abfragen und nicht vertiefen. Bei der Ersten Hilfe gilt: Teilnahme freiwillig, Berührung nur nach Zustimmung und nur an Schulter, Arm, Hand und Knie, „Stopp“ beendet sofort; vorgeführt wird an der zweiten Fachkraft oder an einer Puppe, nie an Jugendlichen. Erzählt jemand von einem erlebten Notfall, von Gewalt oder sexuellen Übergriffen auf Partys oder von gefährlichem Konsum: die Person nach der Einheit ruhig ansprechen, nichts versprechen, was man nicht halten kann, nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) am selben Tag informieren. Bei akuter Gefahr: Notruf 112, die Person nicht allein lassen. Beobachtungen nach der Einheit im Team besprechen."
+    },
+    {
+      "id": "j2-e29",
+      "nr": 29,
+      "jahr": 2,
+      "modul": "j2-m8",
+      "titel": "Was Konsum verspricht – und was wirklich hilft",
+      "kurz": "Neugier, dazugehören, Stress wegmachen: Die Gruppe versteht, was Menschen im Konsum suchen, entlarvt ihn als Skill mit Nebenwirkungen, testet Skills für dieselben Bedürfnisse und weiß, wo es Hilfe gibt.",
+      "dauer": 100,
+      "ziele": [
+        "nennen Gründe, warum Menschen Alkohol, Nikotin oder Cannabis nehmen, und das Bedürfnis dahinter",
+        "vergleichen Konsum als „Skill mit Nebenwirkungen“ mit Skills aus ihrem Skills-Koffer und probieren vier Skills für dieselben Bedürfnisse aus",
+        "erkennen Anzeichen, dass Konsum zu viel wird, und wissen, wo sie oder andere Hilfe bekommen",
+        "halten im Skills-Kompass fest, welcher Skill ihnen hilft, wenn Druck oder schwere Gefühle kommen"
+      ],
+      "material": [
+        "Gefühlsrad (A3), Wäscheklammern, Anspannungsskala 0–100",
+        "Antworten auf die Fragen aus der Box von Einheit 28; Fragenbox, gleiche Zettel und Stifte",
+        "Schülerblatt „Ein Skill mit Nebenwirkungen“ für jede Person, mit dem Kontakt der Fachstelle im Hilfe-Kasten",
+        "Plakat „Abschalten“, dicke Stifte, Tafel für das Tafelbild",
+        "Vier Stationsschilder (A4) mit Titel und Anleitung aus Schritt 6",
+        "Station Runterkommen: Kühlpacks aus dem Gefrierfach oder eine Schüssel mit kaltem Wasser, Handtuch",
+        "Station Mut ohne Becher: sechs Kärtchen mit Gesprächsanfängen",
+        "Station Dabeibleiben: sechs Kärtchen mit Alltagssituationen",
+        "Station Neues erleben: drei Schälchen mit sauren Bonbons, kleinen Ingwerstücken und Zitronenschnitzen, Zahnstocher oder Löffel (Allergien beachten)",
+        "Skills-Koffer oder Skills-Kärtchen aus Jahr 1, sonst der Gruppensatz Skills-Kärtchen",
+        "Skills-Kompass jeder Person",
+        "Skills-Pässe, Stempel, Imbiss und Getränke"
+      ],
+      "vorbereitung": [
+        "Der Elternbrief zum Modul ist vor Einheit 27 verschickt, die zuständige Leitung (Responsable) ist informiert. Die Fragen aus der Box von Einheit 28 im Team durchsehen und Antworten vorbereiten wie in Einheit 28.",
+        "Eine Luxemburger Fachstelle für Suchtfragen auswählen, die Jugendliche und Angehörige berät. Name und Nummer prüfen und vor dem Kopieren von Hand in den Hilfe-Kasten des Blatts eintragen. Wenn möglich eine Fachkraft dieser Stelle für den Schritt „Wenn es zu viel wird“ als Gast einladen.",
+        "Vier Stationen aufbauen, jede an einem eigenen Tisch oder in einer Ecke, mit Schild und Material; die Kühlpacks rechtzeitig ins Gefrierfach legen.",
+        "Die Kärtchen schreiben: sechs Gesprächsanfänge für die Station Mut ohne Becher („Welcher Song läuft da eigentlich?“, „Woher kennst du Mila?“, „Warst du auch beim Turnier?“) und sechs Situationen für die Station Dabeibleiben („In der Pause gehen alle zum Vapen raus.“, „Auf der Party stehen alle mit einem Becher in der Küche.“).",
+        "Allergien, Unverträglichkeiten und Essensregeln für die Station Neues erleben prüfen.",
+        "Im Team klären, ob jemand in der Gruppe konsumiert oder in der Familie mit Sucht lebt, und diese Jugendlichen vorher kurz einzeln ansprechen. Einen ruhigen Platz zum Rausgehen festlegen und wenn möglich eine zweite Fachkraft einplanen."
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-nebenwirkungen",
+        "skills-kompass",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Wie schaltest du ab?"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Antworten aus der Fragenbox"
+        },
+        {
+          "min": "15–30",
+          "phase": "uebung",
+          "titel": "Vier Geschichten: Was suchen sie?"
+        },
+        {
+          "min": "30–45",
+          "phase": "input",
+          "titel": "Ein Skill mit Nebenwirkungen"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–78",
+          "phase": "aktiv",
+          "titel": "Stationen: dasselbe Bedürfnis, ein anderer Weg"
+        },
+        {
+          "min": "78–86",
+          "phase": "uebung",
+          "titel": "Wenn es zu viel wird: Warnzeichen und Hilfe"
+        },
+        {
+          "min": "86–91",
+          "phase": "skill",
+          "titel": "Skill: die Welle reiten"
+        },
+        {
+          "min": "91–100",
+          "phase": "abschluss",
+          "titel": "Mein Weg, Skills-Kompass und Check-out"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: Wie schaltest du ab?",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Gefühlsrad und Anspannung wie gewohnt; die Leitung beginnt. Zusatzfrage mit einem Stichwort: Was tust du, wenn du nach einem langen Tag abschalten willst? Die Leitung schreibt alle Antworten ohne Namen auf das Plakat „Abschalten“ – Musik, Zocken, Duschen, Hund, Schlafen. Das Plakat wird in Schritt 4 wieder gebraucht.",
+          "sagen": [
+            "Gefühl, Zahl – und ein Stichwort: Wie schaltet ihr nach einem langen Tag ab?",
+            "Bei mir ist es Kochen mit lauter Musik."
+          ],
+          "tipp": "Die Frage ist bewusst alltäglich: Alle Menschen brauchen Wege zum Abschalten. Offen ist nur, welche – und mit welchen Folgen.",
+          "wennEsKippt": "Kommt als Antwort „ein Bier“ oder „kiffen“, nicht notieren und nicht bewerten, sondern freundlich an die Regel erinnern: Heute keine eigenen Erfahrungen – aber die Frage dahinter ist genau unser Thema. Wirkte es ernst gemeint, die Person nach der Einheit kurz und freundlich ansprechen.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Antworten aus der Fragenbox",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "Die Fragen aus Einheit 28 wie beim letzten Mal kurz und sachlich beantworten und auf die Regeln aus Einheit 27 zeigen. Dann an die Plan-B-Karte erinnern: Hat jemand ein Codewort abgemacht? Nicken reicht. Das Thema nennen: Warum nehmen Menschen überhaupt Alkohol, Nikotin oder Cannabis – und was hilft stattdessen?",
+          "sagen": [
+            "Wer hat ein Codewort abgemacht? Nicken reicht.",
+            "Heute geht es um die Frage hinter allem: Was suchen Menschen, wenn sie trinken, rauchen oder kiffen?"
+          ]
+        },
+        {
+          "titel": "Vier Geschichten: Was suchen sie?",
+          "dauer": 15,
+          "phase": "uebung",
+          "text": "Die vier Kurzgeschichten auf dem Blatt gemeinsam lesen und zu zweit verbinden, was die Person sucht (Aufgabe 1). Im Plenum die Gründe an der Tafel sammeln und ergänzen: Neugier, dazugehören, mutiger oder lockerer werden, Stress oder Gefühle wegmachen, Langeweile, Gewohnheit. Dann die Leitfrage stellen: Welches Bedürfnis steckt dahinter? Wer das Glas der Bedürfnisse aus Jahr 1 kennt, findet die Tanks dahinter wieder: Zugehörigkeit, Ruhe, Sicherheit, Anerkennung, Spaß und Neues.",
+          "sagen": [
+            "Niemand hier ist Léa, Samuel, Diogo oder Nora. Aber die Gründe kennt ihr vielleicht.",
+            "Was sucht Nora eigentlich, wenn sie abends heimlich raucht?",
+            "Kein Grund ist dumm. Jeder zeigt ein echtes Bedürfnis – die Frage ist nur, ob der Weg dahin taugt."
+          ],
+          "tipp": "Die Gründe ernst nehmen, statt sie kleinzureden. Wer sich verstanden fühlt, hört bei den Nebenwirkungen eher zu als jemand, der sich verurteilt fühlt.",
+          "wennEsKippt": "Vergleicht jemand eine Figur mit einer echten Person („Das ist genau wie bei …“), freundlich stoppen: Wir bleiben bei den Figuren. Wirkt jemand dabei betroffen, nach der Einheit das Gespräch anbieten.",
+          "blatt": "skills-nebenwirkungen"
+        },
+        {
+          "titel": "Ein Skill mit Nebenwirkungen",
+          "dauer": 15,
+          "phase": "input",
+          "text": "Das Tafelbild entwickeln (Tabelle): Warum wirkt Konsum wie ein Skill – schnell, zuverlässig, ohne Übung –, und warum ist er trotzdem keiner? Dann das Plakat „Abschalten“ aus dem Check-in daneben hängen und fragen, welche Antworten dieselben Bedürfnisse erfüllen, ohne Nebenwirkungen. Anschließend füllt jede Person die Vergleichstabelle für eine der vier Figuren aus (Aufgabe 2); wer hat, legt seinen Skills-Koffer aus Jahr 1 oder die Skills-Kärtchen daneben.",
+          "sagen": [
+            "Warum greifen Menschen zur Zigarette statt zum Kühlpack? Weil sie sofort wirkt und keine Übung braucht.",
+            "Ein Skill ist wie Training: am Anfang mühsam, mit jeder Wiederholung besser. Konsum ist umgekehrt – er wirkt schwächer, je öfter man ihn braucht.",
+            "Wer raucht, fühlt sich nach der Zigarette ruhiger. Aber die Unruhe davor hat zum großen Teil das Nikotin selbst gemacht."
+          ],
+          "tabelle": {
+            "spalten": [
+              "Frage",
+              "Konsum",
+              "Skill aus dem Koffer"
+            ],
+            "zeilen": [
+              [
+                "Wie schnell wirkt es?",
+                "sehr schnell",
+                "oft etwas langsamer"
+              ],
+              [
+                "Wie lange hält es?",
+                "kurz – danach kommt das Gefühl oft stärker zurück",
+                "unterschiedlich lang, aber ohne Rückschlag"
+              ],
+              [
+                "Was passiert mit dem Problem?",
+                "bleibt oder wird größer",
+                "bleibt – aber du kannst wieder klar denken und etwas tun"
+              ],
+              [
+                "Braucht man mit der Zeit mehr?",
+                "ja, der Körper gewöhnt sich",
+                "nein – mit Übung wirkt er eher besser"
+              ],
+              [
+                "Nebenwirkungen",
+                "Gesundheit, Geld, Ärger, Abhängigkeit",
+                "kalte Hände, Muskelkater"
+              ]
+            ]
+          },
+          "tipp": "Nicht behaupten, Konsum bringe nichts – das stimmt nicht, und die Jugendlichen wissen es. Glaubwürdig ist: Er bringt kurz etwas und kostet auf Dauer viel.",
+          "wennEsKippt": "Hält jemand dagegen („Mein Onkel raucht seit dreißig Jahren und ist gesund“), nicht in einen Faktenstreit einsteigen. Zustimmen, dass nicht jede Person krank wird, und auf die Tabelle zeigen: Es geht nicht nur um Krankheit, sondern darum, was mit dem eigentlichen Problem passiert.",
+          "blatt": "skills-nebenwirkungen"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Imbiss und frische Luft. Die Leitung lässt das Thema ruhen, bleibt ansprechbar und achtet darauf, ob sich jemand zurückzieht. Erzählt jemand von Konsum in der Familie oder im Freundeskreis, zuhören, nicht bewerten und ein Gespräch nach der Einheit anbieten."
+        },
+        {
+          "titel": "Stationen: dasselbe Bedürfnis, ein anderer Weg",
+          "dauer": 18,
+          "phase": "aktiv",
+          "text": "Vier Stationen, eine für jede Figur; die Paare wechseln alle vier Minuten auf ein Signal. Auf jedem Schild steht, welches Bedürfnis die Station bedient und was zu tun ist (Liste). Vor und nach jeder Station schätzt jede Person still, wie es ihr geht, von 0 bis 10. Die Leitung geht mit und probiert selbst aus. Zum Schluss kreuzt jede Person auf dem Blatt an, welche Station sie behalten will (Aufgabe 3).",
+          "sagen": [
+            "Dasselbe Bedürfnis, ein anderer Weg. Ihr müsst nicht alles mögen – sucht euch den Weg, der zu euch passt.",
+            "Welche Station hat euch überrascht?"
+          ],
+          "punkte": [
+            "Runterkommen (Nora): ein Kühlpack in den Nacken oder die Hände eine Minute ins kalte Wasser, danach 4 Sekunden ein, 6 Sekunden aus.",
+            "Mut ohne Becher (Léa): Füße fest auf den Boden, einmal lang ausatmen, dann eine Karte ziehen und das Gespräch anfangen, etwa mit „Welcher Song läuft da eigentlich?“ – danach wird getauscht.",
+            "Dabeibleiben, ohne mitzumachen (Samuel): eine Situationskarte ziehen, etwa „In der Pause gehen alle zum Vapen raus“, und einen Satz finden, mit dem man in der Gruppe bleibt: „Ich komm mit raus, aber ohne.“",
+            "Neues erleben (Diogo): mit geschlossenen Augen probieren und raten – saures Bonbon, Ingwer, Zitrone; wer die Augen nicht schließen mag, schaut weg. Ein Kick für die Sinne, ganz ohne Rausch."
+          ],
+          "tipp": "Bei Regen brauchen die Stationen keinen Hof: Flur, Waschbecken und Ecken im Raum reichen. Mit nur zwei Jugendlichen gehen beide zusammen von Station zu Station, die Leitung ist die dritte Person; bei wenig Energie nur zwei Stationen wählen und dafür länger bleiben.",
+          "wennEsKippt": "Wird an einer Station herumgealbert, kurz dazugehen und die Station einmal selbst vormachen. Findet jemand alles lächerlich, nicht überreden: Die Person wird Zeitnehmerin oder Zeitnehmer und sagt am Ende, welche Station am ehesten im Alltag taugen würde.",
+          "blatt": "skills-nebenwirkungen"
+        },
+        {
+          "titel": "Wenn es zu viel wird: Warnzeichen und Hilfe",
+          "dauer": 8,
+          "phase": "uebung",
+          "text": "Den Kasten „Wenn es zu viel wird“ auf dem Blatt gemeinsam lesen. Klarstellen: Die Warnzeichen gelten für alle – für Freunde, Geschwister, Erwachsene und einen selbst –, und niemand muss hier etwas dazu sagen. Dann den Hilfe-Kasten zeigen: eine Vertrauensperson, der SePAS im Lycée, das Kanner- a Jugendtelefon 116 111 und die Fachstelle, deren Kontakt die Leitung eingetragen hat. Betonen: Man darf sich auch melden, wenn man sich um jemand anderen Sorgen macht, etwa um einen Elternteil.",
+          "sagen": [
+            "Man muss nicht warten, bis jemand ganz unten ist. Schon die Frage „Ist das noch okay?“ ist ein guter Grund, mit jemandem zu reden.",
+            "Die Fachstelle berät auch Jugendliche, deren Mutter, Vater oder Geschwister zu viel trinken oder konsumieren. Das ist kein Petzen – das ist Hilfe für euch."
+          ],
+          "tipp": "Jugendliche aus Familien mit Sucht fallen oft nicht auf. Den Satz über Angehörige deshalb ausdrücklich sagen – er kann für eine Person der wichtigste der ganzen Einheit sein.",
+          "wennEsKippt": "Fragt jemand auffällig genau, wie man einer Mutter oder einem Freund helfen kann, die Frage allgemein beantworten und nach der Einheit das Gespräch anbieten. Wird über „Alkis“ oder „Junkies“ gelästert, ruhig stoppen: Sucht ist eine Krankheit, keine Charakterschwäche – und Betroffene sind oft Menschen, die jemand hier gern hat.",
+          "blatt": "skills-nebenwirkungen"
+        },
+        {
+          "titel": "Skill: die Welle reiten",
+          "dauer": 5,
+          "phase": "skill",
+          "text": "Alle sitzen bequem, die Augen offen oder geschlossen. Die Leitung erklärt: Ein Drang – aufs Handy schauen, etwas Süßes essen, rauchen, weglaufen – steigt an, erreicht einen Höhepunkt und fällt wieder ab, wie eine Welle. Wer ihn beobachtet, statt ihm sofort zu folgen, reitet die Welle. Dann gemeinsam eine Minute üben (Liste) und zum Schluss nachspüren, wie sich der Drang verändert hat.",
+          "sagen": [
+            "Ein Drang ist kein Befehl. Er kommt, wird größer – und geht wieder."
+          ],
+          "punkte": [
+            "Stell dir vor: Dein Handy vibriert in der Tasche. Du schaust nicht nach.",
+            "Wo spürst du den Drang? In den Händen, im Bauch, im Kopf?",
+            "Gib ihm eine Zahl von 0 bis 10. Atme ruhig weiter und schau zu, wie sich die Zahl verändert.",
+            "Du musst den Drang nicht wegmachen. Du beobachtest ihn nur – wie eine Welle, auf der du stehst.",
+            "Wo ist die Zahl jetzt?"
+          ],
+          "tipp": "Das Handy als Beispiel wählen, nicht Zigarette oder Alkohol: Den Drang kennt jede Person, und niemand muss etwas über sich verraten."
+        },
+        {
+          "titel": "Mein Weg und Skills-Kompass",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Jede Person schreibt auf dem Blatt ihren Wenn-dann-Plan für einen Moment, den sie kennt (Aufgabe 4); niemand liest vor. Dann ist das Modul „Riskant oder okay?“ geschafft: Alle tragen in ihren Skills-Kompass im Feld für dieses Modul einen Skill ein, der ihnen hilft, wenn Druck kommt oder sie etwas wegmachen möchten – aus den Stationen, dem Plan B oder dem Skills-Koffer.",
+          "sagen": [
+            "Welcher Skill kommt in euren Kompass – für die Momente, in denen Druck kommt oder ihr etwas wegmachen wollt?",
+            "Das bleibt bei euch. Wer mag, nennt nur den Namen seines Skills."
+          ],
+          "blatt": "skills-kompass"
+        },
+        {
+          "titel": "Réckbléck, Skills-Pass und Check-out",
+          "dauer": 4,
+          "phase": "abschluss",
+          "text": "Kurzes Blitzlicht mit einem Wort zum ganzen Modul. Dann Skills-Pass mit Stempel, Check-out mit der Anspannungszahl und die letzten Zettel in die Fragenbox; die Antworten hängt die Leitung bis zur nächsten Einheit als getippten Aushang auf. Zum Schluss das Angebot für Gespräche zu zweit wiederholen.",
+          "sagen": [
+            "Ein Wort zu den drei Einheiten über Alkohol, Vapes und Cannabis?",
+            "Eure Zahl zum Schluss? Ich bleibe noch zehn Minuten hier."
+          ],
+          "wennEsKippt": "Liegt eine Zahl deutlich höher als am Anfang, nicht in der Runde nachfragen, sondern die Person beim Hinausgehen unauffällig ansprechen. Gibt es aus dem ganzen Modul Beobachtungen, die Sorgen machen, sie noch in dieser Woche im Team besprechen.",
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Nächstes Mal beginnt ein neues Modul über das, was Körper und Kopf jeden Tag stark macht – und wir fangen mit etwas an, das ihr jede Nacht tut: schlafen.",
+      "hintergrund": "Menschen konsumieren aus nachvollziehbaren Gründen: aus Neugier, um dazuzugehören, um lockerer zu werden oder um belastende Gefühle zu dämpfen. Bei Jugendlichen hängt gerade das Trinken, um Gefühle zu dämpfen, am engsten mit Problemen zusammen (Cooper, 1994): Konsum wird dann zur Bewältigung, die schnell wirkt, das Problem aber nur verschiebt (Lazarus & Folkman, 1984). Beim Rauchen stammt die Unruhe, die die Zigarette lindert, großenteils aus dem Nikotinentzug selbst (Parrott, 1999). Die Einheit stellt den Gründen Skills gegenüber, die dasselbe Bedürfnis erfüllen (Rathus & Miller, 2015); das Wellenreiten half rauchenden Studierenden, weniger zu rauchen (Bowen & Marlatt, 2009). Schulprogramme, die nur informieren, wirken kaum, wirksamer ist das Üben sozialer Kompetenzen (Faggiano et al., 2014; Foxcroft & Tsertsvadze, 2011). Statt zu belehren, arbeitet die Einheit mit Fragen und Abwägen (Miller & Rollnick, 2013).",
+      "quellen": [
+        "Cooper, M. L. (1994). Motivations for alcohol use among adolescents: Development and validation of a four-factor model. Psychological Assessment, 6(2), 117–128.",
+        "Lazarus, R. S. & Folkman, S. (1984). Stress, Appraisal, and Coping. New York: Springer.",
+        "Parrott, A. C. (1999). Does cigarette smoking cause stress? American Psychologist, 54(10), 817–820.",
+        "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford.",
+        "Bowen, S. & Marlatt, A. (2009). Surfing the urge: Brief mindfulness-based intervention for college student smokers. Psychology of Addictive Behaviors, 23(4), 666–671.",
+        "Faggiano, F., Minozzi, S., Versino, E. & Buscemi, D. (2014). Universal school-based prevention for illicit drug use. Cochrane Database of Systematic Reviews, (12), CD003020.",
+        "Foxcroft, D. R. & Tsertsvadze, A. (2011). Universal school-based prevention programs for alcohol misuse in young people. Cochrane Database of Systematic Reviews, (5), CD009113.",
+        "Miller, W. R. & Rollnick, S. (2013). Motivational Interviewing (3rd ed.). New York: Guilford."
+      ],
+      "achtung": "Die Gründe für Konsum können eigene Erfahrungen berühren – eigenen Konsum oder Sucht in der Familie. Nichts davon in der Gruppe abfragen oder vertiefen, Beiträge freundlich stoppen und ein Gespräch zu zweit anbieten; abwertende Sprache über Menschen mit Sucht nicht stehen lassen. Gibt es Hinweise auf regelmäßigen oder gefährlichen Konsum, auf Konsum als einzigen Weg, mit Gefühlen fertigzuwerden, oder auf Sucht oder Gewalt in der Familie: die Person nach der Einheit ruhig ansprechen, nichts versprechen, was man nicht halten kann, nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) am selben Tag informieren; die Fachstelle kann beraten, wie es weitergeht. Bei akuter Gefahr: Notruf 112, die Person nicht allein lassen. Beobachtungen aus dem ganzen Modul im Team besprechen."
+    }
+  ]
+}

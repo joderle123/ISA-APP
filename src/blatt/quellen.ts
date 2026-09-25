@@ -183,6 +183,108 @@ export const QUELLEN: Record<string, string> = {
   senninger2000: 'Senninger, T. (2000). Abenteuer leiten – in Abenteuern lernen. Münster: Ökotopia.',
   hobfoll2007: 'Hobfoll, S. E., Watson, P., Bell, C. C., Bryant, R. A., Brymer, M. J., Friedman, M. J., Friedman, M., Gersons, B. P. R., de Jong, J. T. V. M., Layne, C. M., Maguen, S., Neria, Y., Norwood, A. E., Pynoos, R. S., Reissman, D., Ruzek, J. I., Shalev, A. Y., Solomon, Z., Steinberg, A. M. & Ursano, R. J. (2007). Five essential elements of immediate and mid-term mass trauma intervention: Empirical evidence. Psychiatry, 70(4), 283–315.',
   rose2002: 'Rose, S. C., Bisson, J., Churchill, R. & Wessely, S. (2002). Psychological debriefing for preventing post traumatic stress disorder (PTSD). Cochrane Database of Systematic Reviews, (2), CD000560.',
+
+  // Skills-Kurs, Jahr 2 und 3: Liebe, Sexualität, Einvernehmlichkeit
+  whoBzga2010: 'WHO Regional Office for Europe & BZgA (2010). Standards for Sexuality Education in Europe: A Framework for Policy Makers, Educational and Health Authorities and Specialists. Köln: Bundeszentrale für gesundheitliche Aufklärung.',
+  unesco2018: 'UNESCO (2018). International Technical Guidance on Sexuality Education: An Evidence-Informed Approach (revised ed.). Paris: UNESCO.',
+  collins2003: 'Collins, W. A. (2003). More than myth: The developmental significance of romantic relationships during adolescence. Journal of Research on Adolescence, 13(1), 1–24.',
+  beres2007: 'Beres, M. A. (2007). ‘Spontaneous’ sexual consent: An analysis of sexual consent literature. Feminism & Psychology, 17(1), 93–108.',
+  madigan2018: 'Madigan, S., Ly, A., Rash, C. L., Van Ouytsel, J. & Temple, J. R. (2018). Prevalence of multiple forms of sexting behavior among youth: A systematic review and meta-analysis. JAMA Pediatrics, 172(4), 327–335.',
+  wolak2018: 'Wolak, J., Finkelhor, D., Walsh, W. & Treitman, L. (2018). Sextortion of minors: Characteristics and dynamics. Journal of Adolescent Health, 62(1), 72–79.',
+
+  // Skills-Kurs, Jahr 2 und 3: Alkohol, Nikotin, Cannabis
+  squeglia2009: 'Squeglia, L. M., Jacobus, J. & Tapert, S. F. (2009). The influence of substance use on adolescent brain development. Clinical EEG and Neuroscience, 40(1), 31–38.',
+  volkow2014: 'Volkow, N. D., Baler, R. D., Compton, W. M. & Weiss, S. R. B. (2014). Adverse health effects of marijuana use. New England Journal of Medicine, 370(23), 2219–2227.',
+  perkins2002: 'Perkins, H. W. (2002). Social norms and the prevention of alcohol misuse in collegiate contexts. Journal of Studies on Alcohol, Supplement 14, 164–172.',
+  petersRuiterKok2013: 'Peters, G.-J. Y., Ruiter, R. A. C. & Kok, G. (2013). Threatening communication: A critical re-analysis and a revised meta-analytic test of fear appeal theory. Health Psychology Review, 7(Suppl. 1), S8–S31.',
+  faggiano2014: 'Faggiano, F., Minozzi, S., Versino, E. & Buscemi, D. (2014). Universal school-based prevention for illicit drug use. Cochrane Database of Systematic Reviews, (12), CD003020.',
+  foxcroftTsertsvadze2011: 'Foxcroft, D. R. & Tsertsvadze, A. (2011). Universal school-based prevention programs for alcohol misuse in young people. Cochrane Database of Systematic Reviews, (5), CD009113.',
+
+  // Skills-Kurs, Jahr 2 und 3: Krisen, Selbstverletzung, Suizidprävention
+  who2017: 'World Health Organization (2017). Preventing Suicide: A Resource for Media Professionals (update 2017). Genf: WHO.',
+  wasserman2015: 'Wasserman, D., Hoven, C. W., Wasserman, C., Wall, M., Eisenberg, R., Hadlaczky, G. et al. (2015). School-based suicide prevention programmes: The SEYLE cluster-randomised, controlled trial. The Lancet, 385(9977), 1536–1544.',
+  dazzi2014: 'Dazzi, T., Gribble, R., Wessely, S. & Fear, N. T. (2014). Does asking about suicide and related behaviours induce suicidal ideation? What is the evidence? Psychological Medicine, 44(16), 3361–3363.',
+  hawton2012: 'Hawton, K., Saunders, K. E. A. & O’Connor, R. C. (2012). Self-harm and suicide in adolescents. The Lancet, 379(9834), 2373–2382.',
+  kitchenerJorm2002: 'Kitchener, B. A. & Jorm, A. F. (2002). Mental health first aid training for the public: Evaluation of effects on knowledge, attitudes and helping behavior. BMC Psychiatry, 2, 10.',
+
+  // Skills-Kurs: Grundlagen, die mehrere Einheiten nutzen
+  craig2002: 'Craig, A. D. (2002). How do you feel? Interoception: The sense of the physiological condition of the body. Nature Reviews Neuroscience, 3(8), 655–666.',
+  juslinVastfjall2008: 'Juslin, P. N. & Västfjäll, D. (2008). Emotional responses to music: The need to consider underlying mechanisms. Behavioral and Brain Sciences, 31(5), 559–575.',
+  wegner1987: 'Wegner, D. M., Schneider, D. J., Carter, S. R. & White, T. L. (1987). Paradoxical effects of thought suppression. Journal of Personality and Social Psychology, 53(1), 5–13.',
+  padesky1994: 'Padesky, C. A. (1994). Schema change processes in cognitive therapy. Clinical Psychology & Psychotherapy, 1(5), 267–278.',
+  tuckmanJensen1977: 'Tuckman, B. W. & Jensen, M. A. C. (1977). Stages of small-group development revisited. Group & Organization Studies, 2(4), 419–427.',
+  lally2010: 'Lally, P., van Jaarsveld, C. H. M., Potts, H. W. W. & Wardle, J. (2010). How are habits formed: Modelling habit formation in the real world. European Journal of Social Psychology, 40(6), 998–1009.',
+  leavittMueller1951: 'Leavitt, H. J. & Mueller, R. A. H. (1951). Some effects of feedback on communication. Human Relations, 4(4), 401–410.',
+  kruger2005: 'Kruger, J., Epley, N., Parker, J. & Ng, Z.-W. (2005). Egocentrism over e-mail: Can we communicate as well as we think? Journal of Personality and Social Psychology, 89(6), 925–936.',
+
+  // Skills-Kurs, Jahr 2 und 3: Nachträge aus den Einheiten
+  // Freundschaft, Zugehörigkeit, Selbstwert, Selbstmitgefühl
+  zadro2004: 'Zadro, L., Williams, K. D. & Richardson, R. (2004). How low can you go? Ostracism by a computer is sufficient to lower self-reported levels of belonging, control, self-esteem, and meaningful existence. Journal of Experimental Social Psychology, 40(4), 560–567.',
+  newcombBagwell1995: 'Newcomb, A. F. & Bagwell, C. L. (1995). Children’s friendship relations: A meta-analytic review. Psychological Bulletin, 117(2), 306–347.',
+  hutcherson2008: 'Hutcherson, C. A., Seppala, E. M. & Gross, J. J. (2008). Loving-kindness meditation increases social connectedness. Emotion, 8(5), 720–724.',
+  neff2011: 'Neff, K. D. (2011). Self-Compassion: The Proven Power of Being Kind to Yourself. New York: William Morrow.',
+  neffMcGehee2010: 'Neff, K. D. & McGehee, P. (2010). Self-compassion and psychological resilience among adolescents and young adults. Self and Identity, 9(3), 225–240.',
+  breinesChen2012: 'Breines, J. G. & Chen, S. (2012). Self-compassion increases self-improvement motivation. Personality and Social Psychology Bulletin, 38(9), 1133–1143.',
+  crocker2003: 'Crocker, J., Luhtanen, R. K., Cooper, M. L. & Bouvrette, A. (2003). Contingencies of self-worth in college students: Theory and measurement. Journal of Personality and Social Psychology, 85(5), 894–908.',
+  alleva2015: 'Alleva, J. M., Martijn, C., Van Breukelen, G. J. P., Jansen, A. & Karos, K. (2015). Expand Your Horizon: A programme that improves body image and reduces self-objectification by training women to focus on body functionality. Body Image, 15, 81–89.',
+  smetana1988: 'Smetana, J. G. (1988). Adolescents’ and parents’ conceptions of parental authority. Child Development, 59(2), 321–335.',
+  // Identität, Werte, Ziele, Entscheidungen
+  marcia1966: 'Marcia, J. E. (1966). Development and validation of ego-identity status. Journal of Personality and Social Psychology, 3(5), 551–558.',
+  markusNurius1986: 'Markus, H. & Nurius, P. (1986). Possible selves. American Psychologist, 41(9), 954–969.',
+  busch2012: 'Busch, B. (2012). The linguistic repertoire revisited. Applied Linguistics, 33(5), 503–523.',
+  simonHoweKirschenbaum1972: 'Simon, S. B., Howe, L. W. & Kirschenbaum, H. (1972). Values Clarification: A Handbook of Practical Strategies for Teachers and Students. New York: Hart.',
+  duckworth2011: 'Duckworth, A. L., Grant, H., Loew, B., Oettingen, G. & Gollwitzer, P. M. (2011). Self-regulation strategies improve self-discipline in adolescents: Benefits of mental contrasting and implementation intentions. Educational Psychology, 31(1), 17–26.',
+  gollwitzerSheeran2006: 'Gollwitzer, P. M. & Sheeran, P. (2006). Implementation intentions and goal achievement: A meta-analysis of effects and processes. Advances in Experimental Social Psychology, 38, 69–119.',
+  banduraSchunk1981: 'Bandura, A. & Schunk, D. H. (1981). Cultivating competence, self-efficacy, and intrinsic interest through proximal self-motivation. Journal of Personality and Social Psychology, 41(3), 586–598.',
+  grossmannKross2014: 'Grossmann, I. & Kross, E. (2014). Exploring Solomon’s paradox: Self-distancing eliminates the self-other asymmetry in wise reasoning about close relationships in younger and older adults. Psychological Science, 25(8), 1571–1580.',
+  chein2011: 'Chein, J., Albert, D., O’Brien, L., Uckert, K. & Steinberg, L. (2011). Peers increase adolescent risk taking by enhancing activity in the brain’s reward circuitry. Developmental Science, 14(2), F1–F10.',
+  sisk2018: 'Sisk, V. F., Burgoyne, A. P., Sun, J., Butler, J. L. & Macnamara, B. N. (2018). To what extent and under which circumstances are growth mind-sets important to academic achievement? Two meta-analyses. Psychological Science, 29(4), 549–571.',
+  yerkesDodson1908: 'Yerkes, R. M. & Dodson, J. D. (1908). The relation of strength of stimulus to rapidity of habit-formation. Journal of Comparative Neurology and Psychology, 18(5), 459–482.',
+  // Gruppe, Vorurteile, Kommunikation, Beteiligung
+  tajfel1971: 'Tajfel, H., Billig, M. G., Bundy, R. P. & Flament, C. (1971). Social categorization and intergroup behaviour. European Journal of Social Psychology, 1(2), 149–178.',
+  sherif1961: 'Sherif, M., Harvey, O. J., White, B. J., Hood, W. R. & Sherif, C. W. (1961). Intergroup Conflict and Cooperation: The Robbers Cave Experiment. Norman, OK: University Book Exchange.',
+  boal1979: 'Boal, A. (1979). Theatre of the Oppressed. London: Pluto Press.',
+  rogersRoethlisberger1952: 'Rogers, C. R. & Roethlisberger, F. J. (1952). Barriers and gateways to communication. Harvard Business Review, 30(4), 46–52.',
+  palacio2012: 'Palacio, R. J. (2012). Wonder. New York: Alfred A. Knopf.',
+  // Netz, Medien, KI, Gaming
+  suler2004: 'Suler, J. (2004). The online disinhibition effect. CyberPsychology & Behavior, 7(3), 321–326.',
+  przybylski2010: 'Przybylski, A. K., Rigby, C. S. & Ryan, R. M. (2010). A motivational model of video game engagement. Review of General Psychology, 14(2), 154–166.',
+  zendleCairns2018: 'Zendle, D. & Cairns, P. (2018). Video game loot boxes are linked to problem gambling: Results of a large-scale survey. PLOS ONE, 13(11), e0206767.',
+  bakshy2015: 'Bakshy, E., Messing, S. & Adamic, L. A. (2015). Exposure to ideologically diverse news and opinion on Facebook. Science, 348(6239), 1130–1132.',
+  zuiderveenBorgesius2016: 'Zuiderveen Borgesius, F. J., Trilling, D., Möller, J., Bodó, B., de Vreese, C. H. & Helberger, N. (2016). Should we worry about filter bubbles? Internet Policy Review, 5(1).',
+  ji2023: 'Ji, Z., Lee, N., Frieske, R., Yu, T., Su, D., Xu, Y., Ishii, E., Bang, Y. J., Madotto, A. & Fung, P. (2023). Survey of hallucination in natural language generation. ACM Computing Surveys, 55(12), 1–38.',
+  euDsa2022: 'Verordnung (EU) 2022/2065 des Europäischen Parlaments und des Rates vom 19. Oktober 2022 über einen Binnenmarkt für digitale Dienste (Gesetz über digitale Dienste). Amtsblatt der EU, L 277, 1–102.',
+  // Gesundheit: Schlaf, Ernährung, Bewegung, Alltag
+  efsa2015: 'EFSA Panel on Dietetic Products, Nutrition and Allergies (NDA) (2015). Scientific Opinion on the safety of caffeine. EFSA Journal, 13(5), 4102.',
+  scullin2018: 'Scullin, M. K., Krueger, M. L., Ballard, H. K., Pruett, N. & Bliwise, D. L. (2018). The effects of bedtime writing on difficulty falling asleep: A polysomnographic study comparing to-do lists and completed activity lists. Journal of Experimental Psychology: General, 147(1), 139–146.',
+  haleGuan2015: 'Hale, L. & Guan, S. (2015). Screen time and sleep among school-aged children and adolescents: A systematic literature review. Sleep Medicine Reviews, 21, 50–58.',
+  wittmann2006: 'Wittmann, M., Dinich, J., Merrow, M. & Roenneberg, T. (2006). Social jetlag: Misalignment of biological and social time. Chronobiology International, 23(1–2), 497–509.',
+  adolphus2013: 'Adolphus, K., Lawton, C. L. & Dye, L. (2013). The effects of breakfast on behavior and academic performance in children and adolescents. Frontiers in Human Neuroscience, 7, 425.',
+  neumarkSztainer2006: 'Neumark-Sztainer, D., Wall, M., Guo, J., Story, M., Haines, J. & Eisenberg, M. (2006). Obesity, disordered eating, and eating disorders in a longitudinal study of adolescents: How do dieters fare 5 years later? Journal of the American Dietetic Association, 106(4), 559–568.',
+  who2006: 'World Health Organization (2006). Five Keys to Safer Food Manual. Genf: WHO.',
+  eu1169_2011: 'Verordnung (EU) Nr. 1169/2011 des Europäischen Parlaments und des Rates vom 25. Oktober 2011 betreffend die Information der Verbraucher über Lebensmittel. Amtsblatt der EU, L 304, 18–63.',
+  eu2011_83: 'Richtlinie 2011/83/EU des Europäischen Parlaments und des Rates vom 25. Oktober 2011 über die Rechte der Verbraucher. Amtsblatt der EU, L 304, 64–88.',
+  // Alkohol, Nikotin, Konsum, Erste Hilfe
+  cooper1994: 'Cooper, M. L. (1994). Motivations for alcohol use among adolescents: Development and validation of a four-factor model. Psychological Assessment, 6(2), 117–128.',
+  parrott1999: 'Parrott, A. C. (1999). Does cigarette smoking cause stress? American Psychologist, 54(10), 817–820.',
+  bowenMarlatt2009: 'Bowen, S. & Marlatt, A. (2009). Surfing the urge: Brief mindfulness-based intervention for college student smokers. Psychology of Addictive Behaviors, 23(4), 666–671.',
+  usdhhs2016: 'U.S. Department of Health and Human Services (2016). E-Cigarette Use Among Youth and Young Adults: A Report of the Surgeon General. Atlanta, GA: Centers for Disease Control and Prevention.',
+  zideman2021: 'Zideman, D. A., Singletary, E. M., Borra, V., Cassan, P., Cimpoesu, C. D., De Buck, E., Djärv, T., Handley, A. J., Klaassen, B., Meyran, D., Oliver, E. & Poole, K. (2021). European Resuscitation Council Guidelines 2021: First aid. Resuscitation, 161, 270–290.',
+  // Belastung, Hilfe holen, Resilienz, Suizidprävention
+  hart2018: 'Hart, L. M., Morgan, A. J., Rossetto, A., Kelly, C. M., Mackinnon, A. & Jorm, A. F. (2018). Helping adolescents to better support their peers with a mental health problem: A cluster-randomised crossover trial of teen Mental Health First Aid. Australian & New Zealand Journal of Psychiatry, 52(7), 638–651.',
+  stanley2018: 'Stanley, B., Brown, G. K., Brenner, L. A., Galfalvy, H. C., Currier, G. W., Knox, K. L., Chaudhury, S. R., Bush, A. L. & Green, K. L. (2018). Comparison of the Safety Planning Intervention with follow-up vs usual care of suicidal patients treated in the emergency department. JAMA Psychiatry, 75(9), 894–900.',
+  niederkrotenthaler2010: 'Niederkrotenthaler, T., Voracek, M., Herberth, A., Till, B., Strauss, M., Etzersdorfer, E., Eisenwort, B. & Sonneck, G. (2010). Role of media reports in completed and prevented suicide: Werther v. Papageno effects. British Journal of Psychiatry, 197(3), 234–243.',
+  masi2011: 'Masi, C. M., Chen, H.-Y., Hawkley, L. C. & Cacioppo, J. T. (2011). A meta-analysis of interventions to reduce loneliness. Personality and Social Psychology Review, 15(3), 219–266.',
+  gulliver2010: 'Gulliver, A., Griffiths, K. M. & Christensen, H. (2010). Perceived barriers and facilitators to mental health help-seeking in young people: A systematic review. BMC Psychiatry, 10, 113.',
+  grotberg1995: 'Grotberg, E. H. (1995). A Guide to Promoting Resilience in Children: Strengthening the Human Spirit. Den Haag: Bernard van Leer Foundation.',
+  baumeister2001: 'Baumeister, R. F., Bratslavsky, E., Finkenauer, C. & Vohs, K. D. (2001). Bad is stronger than good. Review of General Psychology, 5(4), 323–370.',
+  froh2008: 'Froh, J. J., Sefick, W. J. & Emmons, R. A. (2008). Counting blessings in early adolescents: An experimental study of gratitude and subjective well-being. Journal of School Psychology, 46(2), 213–233.',
+  bryantVeroff2007: 'Bryant, F. B. & Veroff, J. (2007). Savoring: A New Model of Positive Experience. Mahwah, NJ: Lawrence Erlbaum.',
+  jekaLackner1994: 'Jeka, J. J. & Lackner, J. R. (1994). Fingertip contact influences human postural control. Experimental Brain Research, 100(3), 495–502.',
+  // Übergänge nach dem Kurs
+  eccles2011: 'Eccles, J. S. & Roeser, R. W. (2011). Schools as developmental contexts during adolescence. Journal of Research on Adolescence, 21(1), 225–241.',
+  schlossberg1981: 'Schlossberg, N. K. (1981). A model for analyzing human adaptation to transition. The Counseling Psychologist, 9(2), 2–18.',
+  marlattGordon1985: 'Marlatt, G. A. & Gordon, J. R. (Eds.) (1985). Relapse Prevention: Maintenance Strategies in the Treatment of Addictive Behaviors. New York: Guilford.',
 }
 
 export const QUELLEN_TEXTE = new Set(Object.values(QUELLEN))

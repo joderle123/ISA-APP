@@ -1,0 +1,1261 @@
+{
+  "einheiten": [
+    {
+      "id": "j2-e13",
+      "nr": 13,
+      "jahr": 2,
+      "modul": "j2-m4",
+      "titel": "Was macht eine gute Freundschaft aus?",
+      "kurz": "Die Gruppe schreibt Freundschaftsanzeigen, findet die fünf Pfeiler jeder Freundschaft, prüft mit dem Barometer eine eigene Freundschaft und erlebt am Seil, wie Geben und Nehmen zusammengehören.",
+      "dauer": 100,
+      "ziele": [
+        "benennen fünf Pfeiler tragfähiger Freundschaften: Zeit und Spaß, Vertrauen, Unterstützung, Geben und Nehmen, Streit überstehen",
+        "schätzen mit dem Freundschafts-Barometer für sich allein eine Freundschaft ein und unterscheiden wechselhaftes von stürmischem Wetter",
+        "erleben im Seilkreis und im Freundschaftsnetz, dass eine Verbindung nur hält, wenn alle geben und nehmen",
+        "planen einen kleinen Schritt, mit dem sie in der kommenden Woche eine Freundschaft pflegen"
+      ],
+      "material": [
+        "Gefühlsrad (A3, laminiert) und Anspannungsskala 0–100",
+        "Plakat „Modulweg“ mit fünf Stationen: Freundschaft, Streit, Dazugehören, Verliebt, Abschied",
+        "A5-Karten, dicke Stifte, Malerkrepp und Klebepunkte (drei pro Person)",
+        "Tafel oder Plakat für die fünf Pfeiler (Tabelle in Schritt 4)",
+        "Schülerblatt „Das Freundschafts-Barometer“ für jede Person",
+        "Ein festes Seil von 10 bis 12 Metern (Kletter- oder Kernmantelseil), die Enden sicher verknotet",
+        "Ein Knäuel dicke Wolle und ein Luftballon",
+        "Skills-Pässe, Stempel, Imbiss und Getränke"
+      ],
+      "vorbereitung": [
+        "Den Modulweg zeichnen: fünf Stationen als Weg auf einem Plakat. Er hängt bis zum Ende des Moduls im Raum.",
+        "Die Tabelle mit den fünf Pfeilern an die Tafel schreiben, die beiden rechten Spalten zunächst leer lassen.",
+        "Einen Platz für den Seilkreis suchen: Rasen oder Turnhalle ohne Hindernisse, bei Regen ein freigeräumter Raum mit rutschfestem Boden. Seil und Knoten vorher prüfen.",
+        "Den Luftballon aufblasen und die Wolle griffbereit legen."
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-freundschafts-barometer",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Welches Wetter hat dein Tag?"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Neues Modul: Freundschaft, Liebe, Zugehörigkeit"
+        },
+        {
+          "min": "15–30",
+          "phase": "uebung",
+          "titel": "Gesucht: Freundin oder Freund"
+        },
+        {
+          "min": "30–45",
+          "phase": "input",
+          "titel": "Fünf Pfeiler und das Freundschafts-Barometer"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–70",
+          "phase": "aktiv",
+          "titel": "Der Seilkreis: Das Seil trägt"
+        },
+        {
+          "min": "70–85",
+          "phase": "aktiv",
+          "titel": "Das Freundschaftsnetz"
+        },
+        {
+          "min": "85–93",
+          "phase": "skill",
+          "titel": "Skill: gute Wünsche verschicken"
+        },
+        {
+          "min": "93–100",
+          "phase": "abschluss",
+          "titel": "Mein kleiner Schritt, Réckbléck und Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: Welches Wetter hat dein Tag?",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Gefühlsrad und Anspannungsskala in die Mitte, die Leitung beginnt. Reihum nennt jede Person ihr Gefühlswort, ihre Zahl von 0 bis 100 und dazu das Wetter ihres Tages: sonnig, bewölkt, Nebel, Gewitter oder Regenbogen. Das Wetter bleibt heute im Kopf – es kommt beim Freundschafts-Barometer wieder.",
+          "sagen": [
+            "Gefühl, Zahl und Wetter: Wie sieht es heute bei euch aus?",
+            "Bei mir ist es bewölkt mit Aussicht auf Sonne. Der Morgen war hektisch, aber jetzt bin ich hier."
+          ],
+          "tipp": "Die Wetterfrage fällt vielen leichter als ein Gefühlswort. Wer nur das Wetter sagt, hat auch eingecheckt.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Neues Modul: Freundschaft, Liebe, Zugehörigkeit",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "Kurz an die letzte Einheit erinnern: Eine gute Entschuldigung kann eine Freundschaft retten. Dann den Modulweg zeigen: fünf Treffen zu Freundschaft, Streit, Dazugehören, Verliebtsein und dem Ende von Freundschaften. Den Rahmen für das ganze Modul klären: Wir reden über Freundschaft, nicht über eure Freundinnen und Freunde – keine echten Namen, keine Geschichten aus der Klasse.",
+          "sagen": [
+            "Letztes Mal ging es ums Wiedergutmachen. Heute schauen wir, was eine Freundschaft überhaupt zusammenhält.",
+            "Ihr müsst in diesem Modul nichts über eure Freunde erzählen. Wir arbeiten mit erfundenen Beispielen."
+          ]
+        },
+        {
+          "titel": "Gesucht: Freundin oder Freund",
+          "dauer": 15,
+          "phase": "uebung",
+          "text": "Paare durch Abzählen bilden. Die Leitung liest zuerst ihre eigene Beispielanzeige vor (Liste). Dann schreibt jedes Paar auf eine A5-Karte eine Anzeige mit drei Rubriken: Muss sein, Wäre schön, Geht gar nicht. Nach sechs Minuten hängen alle Anzeigen an der Wand; alle gehen herum, lesen und kleben ihre drei Punkte an die Eigenschaften, die ihnen am wichtigsten sind.",
+          "sagen": [
+            "Stellt euch vor, ihr sucht per Anzeige eine Freundin oder einen Freund. Was muss die Person mitbringen – und was geht gar nicht?",
+            "Humor steht bei fast allen drin. Was braucht es noch, damit es auch in einem Jahr noch hält?"
+          ],
+          "punkte": [
+            "Gesucht: Freundin oder Freund für Pausen, Busfahrten und schlechte Tage.",
+            "Muss sein: hält dicht, wenn ich etwas erzähle. Lacht über meine Witze, zumindest über die guten.",
+            "Wäre schön: mag Pizza ohne Ananas und kommt mit zum Skatepark.",
+            "Geht gar nicht: erzählt meine Sachen im Klassenchat herum."
+          ],
+          "tipp": "Die Beispielanzeige ruhig mit einem Augenzwinkern vorlesen: Humor senkt die Schwelle, und die Gruppe sieht, wie konkret es sein darf.",
+          "wennEsKippt": "Kippt es in Albernheiten oder in abwertende Punkte über Aussehen oder Herkunft, das Lachen zulassen und nachfragen: Woran merkst du nach einem Monat, dass jemand wirklich zu dir hält? Abwertende Punkte kommen nicht an die Wand. Bei nur zwei Jugendlichen schreibt jede Person eine eigene Anzeige, die Leitung ebenfalls."
+        },
+        {
+          "titel": "Fünf Pfeiler und das Freundschafts-Barometer",
+          "dauer": 15,
+          "phase": "input",
+          "text": "Die Punkte an der Wand zählen, die meistgewählten Eigenschaften den fünf Pfeilern an der Tafel zuordnen und die rechten Spalten der Tabelle gemeinsam füllen. Kurz erklären, dass die Forschung zu Jugendfreundschaften genau solche Pfeiler findet und dass Streit dazugehört: Entscheidend ist, ob man danach wieder zueinanderfindet. Dann das Blatt austeilen. Jede Person denkt an eine Freundschaft, ohne zu sagen, an welche, und bearbeitet Aufgabe 1 bis 3 allein; wer nicht an eine eigene Freundschaft denken will, nimmt eine aus einer Serie oder einem Buch.",
+          "sagen": [
+            "Gute Freundschaften sind nicht die ohne Streit. Es sind die, die einen Streit überstehen.",
+            "Denkt an eine Freundschaft – ihr müsst niemandem sagen, an welche. Das Blatt bleibt bei euch."
+          ],
+          "tabelle": {
+            "spalten": [
+              "Pfeiler",
+              "Woran man ihn merkt",
+              "Wenn er wackelt"
+            ],
+            "zeilen": [
+              [
+                "Zeit und Spaß",
+                "Ihr macht Dinge zusammen und lacht miteinander.",
+                "Man meldet sich nur noch, wenn man etwas braucht."
+              ],
+              [
+                "Vertrauen",
+                "Was du erzählst, bleibt bei euch.",
+                "Geheimnisse landen im Klassenchat."
+              ],
+              [
+                "Unterstützung",
+                "Die andere Person ist da, wenn es dir schlecht geht.",
+                "Bei Problemen ist sie plötzlich verschwunden."
+              ],
+              [
+                "Geben und Nehmen",
+                "Mal gibt die eine mehr, mal der andere – mit der Zeit gleicht es sich aus.",
+                "Eine Person gibt immer, die andere nimmt nur."
+              ],
+              [
+                "Streit überstehen",
+                "Ihr könnt streiten und euch wieder vertragen.",
+                "Nach jedem Streit herrscht Funkstille, oder es wird nachgetreten."
+              ]
+            ]
+          },
+          "tipp": "Wechselhaftes Wetter ausdrücklich normal nennen: Fast jede Freundschaft hat Wolken. Das Barometer soll keine Freundschaft bewerten, sondern helfen, Warnzeichen früh zu sehen.",
+          "wennEsKippt": "Sagt jemand „Ich hab keine Freunde“ oder wird auffällig still, nicht vor der Gruppe darauf eingehen. Leise anbieten, an eine frühere Freundschaft, eine Person aus der Familie oder eine Serie zu denken, und nach der Einheit das Gespräch suchen.",
+          "blatt": "skills-freundschafts-barometer"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Gemeinsam essen und trinken, Fenster auf oder kurz nach draußen. Die Leitung isst mit, das Thema ruht. Gegen Ende tragen zwei Freiwillige das Seil zum Platz für den Seilkreis."
+        },
+        {
+          "titel": "Der Seilkreis: Das Seil trägt",
+          "dauer": 10,
+          "phase": "aktiv",
+          "text": "Alle stellen sich im Kreis auf, das verknotete Seil liegt vor den Füßen. Alle greifen es mit beiden Händen, stellen die Füße hüftbreit und lehnen sich auf ein Zeichen langsam zurück, bis das Seil alle hält. In weiteren Runden gehen alle gemeinsam in die Hocke und wieder hoch. Zum Schluss kündigt die Leitung an, dass sie auf ihrer Seite etwas nachlässt, ohne loszulassen, und die Gruppe spürt, wie der Kreis wackelt. Danach kurz besprechen, was der Kreis zum Halten gebraucht hat.",
+          "sagen": [
+            "Jede und jeder gibt Gewicht ab – und hält gleichzeitig die anderen. Genau das ist Geben und Nehmen.",
+            "Was hat sich verändert, als ich auf meiner Seite nachgelassen habe?"
+          ],
+          "punkte": [
+            "Langsam zurücklehnen, nur so weit, wie es sich sicher anfühlt.",
+            "Niemand lässt plötzlich los. Wer aufhören will, sagt Stopp, und alle kommen langsam hoch.",
+            "Uhren, Ringe und Armbänder vorher ablegen."
+          ],
+          "tipp": "Auf Rasen oder in der Turnhalle spielen; auf glattem Boden rutscht man mit Socken weg. Bei nur zwei Jugendlichen halten die beiden mit der Leitung ein kürzeres Seil als Dreieck.",
+          "wennEsKippt": "Zieht jemand absichtlich ruckartig, sofort Stopp: Alle kommen langsam hoch. Ruhig erklären, dass das Seil nur trägt, wenn niemand trickst, und neu beginnen. Wer sich nicht zurücklehnen möchte, hält das Seil im Stehen – das zählt genauso."
+        },
+        {
+          "titel": "Das Freundschaftsnetz",
+          "dauer": 15,
+          "phase": "aktiv",
+          "text": "Im Kreis stehen. Die Leitung hält das Ende der Wolle, wirft das Knäuel einer Person zu und sagt dabei, was sie in einer Freundschaft geben kann. Wer fängt, hält den Faden fest, nennt selbst etwas und wirft weiter, bis alle zweimal verbunden sind. Dann den Luftballon auf das Netz legen: Er soll einmal zu jeder Person rollen, ohne herunterzufallen; in der zweiten Runde lassen zwei Freiwillige ihren Faden locker, und der Ballon rollt ins Loch. Zum Schluss wird das Netz rückwärts aufgewickelt, und jede Person sagt beim Zurückwerfen, was sie sich von Freunden wünscht.",
+          "sagen": [
+            "Ich kann in einer Freundschaft etwas geben, zum Beispiel: Ich halte dicht. Oder: Ich melde mich, wenn jemand krank ist.",
+            "Was passiert mit dem Netz, wenn zwei ihren Faden locker lassen?",
+            "Beim Zurückwerfen: Was wünscht ihr euch von einer Freundin oder einem Freund?"
+          ],
+          "tipp": "Wem nichts einfällt, darf einen Satz von den Anzeigen an der Wand nehmen. Bei wenig Energie im Sitzkreis spielen; das Netz hängt dann über den Knien.",
+          "wennEsKippt": "Wird der Ballon zum Wettkampf oder zerrt jemand am Netz, kurz anhalten und fragen, was das Netz zum Halten braucht. Die Antworten – alle halten, keiner zieht allein, keiner lässt los – sind die Botschaft der Übung."
+        },
+        {
+          "titel": "Skill: gute Wünsche verschicken",
+          "dauer": 8,
+          "phase": "skill",
+          "text": "Alle sitzen im Kreis, die Augen geschlossen oder auf einen Punkt am Boden gerichtet. Die Leitung liest die Anleitung langsam vor (Liste) und lässt zwischen den Sätzen Zeit. Danach nur fragen, wie es jetzt geht, nicht, an wen jemand gedacht hat. Erklären, dass der Skill auch nach einem Streit hilft: Er erinnert daran, was einem an einem Menschen liegt.",
+          "punkte": [
+            "Setz dich bequem hin, beide Füße auf dem Boden. Atme dreimal langsam aus.",
+            "Denk an einen Menschen, der dir guttut – eine Freundin, ein Freund, jemand aus der Familie. Auch ein Haustier zählt.",
+            "Stell dir vor, wo die Person gerade ist und was sie macht.",
+            "Schick ihr in Gedanken einen guten Wunsch, zum Beispiel: Ich wünsche dir einen guten Tag.",
+            "Spür nach, was in deinem Körper passiert. Wärme, Ruhe oder gar nichts – alles ist in Ordnung.",
+            "Und jetzt ein guter Wunsch für dich selbst. Atme noch einmal lang aus und öffne die Augen."
+          ],
+          "tipp": "Wer die Übung seltsam findet, darf innerlich grinsen. Es geht nicht um große Gefühle, sondern um eine Minute Freundlichkeit."
+        },
+        {
+          "titel": "Mein kleiner Schritt, Réckbléck und Skills-Pass",
+          "dauer": 7,
+          "phase": "abschluss",
+          "text": "Jede Person schreibt als Aufgabe 4 auf dem Blatt einen kleinen Schritt auf, mit dem sie in der kommenden Woche eine Freundschaft pflegt: eine Nachricht, eine Frage, eine Einladung. Dann Blitzlicht: Welcher Pfeiler ist dir am wichtigsten? Eintrag in den Skills-Pass und Stempel. Das Pfeiler-Plakat bleibt für das ganze Modul hängen.",
+          "sagen": [
+            "Ein Wort: Welcher Pfeiler ist für euch der wichtigste?",
+            "Der Schritt darf klein sein. Eine Nachricht wie „Wie war dein Test?“ zählt schon."
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Nächstes Mal geht es um den Moment, in dem es zwischen Freunden kracht – und um Nachrichten, die ganz anders ankommen, als sie gemeint waren.",
+      "hintergrund": "Im Jugendalter werden Freundschaften zur wichtigsten Beziehung außerhalb der Familie. Bagwell und Schmidt (2011) beschreiben, was sie trägt: gemeinsame Zeit, Vertrauen und gegenseitiges Anvertrauen, Unterstützung, Loyalität und die Fähigkeit, Konflikte zu lösen. Wichtiger als die Zahl der Freunde ist die Qualität der Freundschaften, und Streit gehört auch zu guten dazu – Freunde lösen ihn aber besser als andere Gleichaltrige (Newcomb & Bagwell, 1995). Tragfähige Beziehungen erfüllen zugleich das Bedürfnis nach Verbundenheit und nach Autonomie (Deci & Ryan, 2000); deshalb fragt das Barometer auch, ob ein Nein zählt und ob andere Freunde erlaubt sind. Weil Anerkennung durch Gleichaltrige in diesem Alter besonders stark wirkt (Steinberg, 2014), fällt ein nüchterner Blick auf eine belastende Freundschaft schwer; ein privates Blatt und die Sprache des Wetters erleichtern ihn.",
+      "quellen": [
+        "Bagwell, C. L. & Schmidt, M. E. (2011). Friendships in Childhood and Adolescence. New York: Guilford.",
+        "Newcomb, A. F. & Bagwell, C. L. (1995). Children’s friendship relations: A meta-analytic review. Psychological Bulletin, 117(2), 306–347.",
+        "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268.",
+        "Steinberg, L. (2014). Age of Opportunity: Lessons from the New Science of Adolescence. Boston: Houghton Mifflin Harcourt."
+      ],
+      "achtung": "Freundschaft berührt Einsamkeit, Ausgrenzung und manchmal Beziehungen, die schaden. Das Barometer wird nicht eingesammelt und nicht vorgelesen; niemand muss sagen, an welche Freundschaft er denkt. Sagt jemand, er habe keine Freunde, nicht in der Gruppe nachfragen, sondern ein Gespräch unter vier Augen anbieten. Gibt es Hinweise auf Kontrolle, Drohungen, Erpressung oder Gewalt in einer Freundschaft oder Beziehung: die Person nach der Einheit ruhig ansprechen, nichts versprechen, was nicht zu halten ist, die zuständige Leitung (Responsable) informieren und nach dem internen Schutzkonzept handeln. Beim Seilkreis gilt das Stopp-Recht; wer sich nicht zurücklehnen will, hält das Seil im Stehen."
+    },
+    {
+      "id": "j2-e14",
+      "nr": 14,
+      "jahr": 2,
+      "modul": "j2-m4",
+      "titel": "Streit unter Freunden",
+      "kurz": "Warum kommt „Ok.“ im Chat so oft falsch an? Die Gruppe testet, wie Ironie im Text ankommt, hört eine Nachricht mit vier Ohren, verhandelt im Stuhl-Spiel und übt ein faires Klärungsgespräch.",
+      "dauer": 100,
+      "ziele": [
+        "erleben im Chat-Experiment, dass Ton und Ironie in geschriebenen Nachrichten oft nicht ankommen, und fragen nach, statt zu vermuten",
+        "hören eine Nachricht mit vier Ohren und erkennen, wie das Beziehungs-Ohr einen Streit im Chat anheizt",
+        "wählen für ein Klärungsgespräch den passenden Moment und führen es im Rollenspiel mit Ich-Botschaft, Frage und Vorschlag",
+        "suchen im Stuhl-Spiel und in Alltagsszenen Kompromisse, mit denen beide Seiten leben können"
+      ],
+      "material": [
+        "Gefühlsrad (A3, laminiert) und Anspannungsskala 0–100",
+        "Zwei Schilder für die Ecken: „ernst gemeint“ und „ironisch gemeint“",
+        "Acht Satzkarten für das Chat-Experiment (Liste in Schritt 3), auf der Rückseite jeweils der gemeinte Ton",
+        "Schülerblätter „Wie war das gemeint?“ und „Klären statt kippen“ für jede Person, dazu Seite 2 von „Klären statt kippen“ einmal zusätzlich für die Situationskarten, eine Schere",
+        "Drei Auftragskarten für das Stuhl-Spiel (Schritt 6)",
+        "Skills-Pässe, Stempel, Imbiss und Getränke"
+      ],
+      "vorbereitung": [
+        "Die Satzkarten schreiben, auf der Rückseite den gemeinten Ton notieren und die beiden Ecken beschriften.",
+        "Die neun Situationskarten aus dem zusätzlichen Ausdruck von Seite 2 ausschneiden. Karten weglassen, die einem aktuellen Streit in der Gruppe ähneln.",
+        "Für das Stuhl-Spiel nachsehen, wo Tür und Fenster liegen, und Zerbrechliches aus dem Weg räumen."
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-wie-war-das-gemeint",
+        "skills-klaeren-statt-kippen",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Wie schnell antwortest du?"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Vom Barometer zum Gewitter"
+        },
+        {
+          "min": "15–30",
+          "phase": "uebung",
+          "titel": "Das Chat-Experiment: Kommt der Ton an?"
+        },
+        {
+          "min": "30–45",
+          "phase": "input",
+          "titel": "Ein Chat unter der Lupe: vier Ohren"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–72",
+          "phase": "aktiv",
+          "titel": "Das Stuhl-Spiel"
+        },
+        {
+          "min": "72–87",
+          "phase": "aktiv",
+          "titel": "Klären unter vier Augen: Rollenspiel mit Kompromiss"
+        },
+        {
+          "min": "87–95",
+          "phase": "skill",
+          "titel": "Skill: erst runter, dann senden"
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Réckbléck und Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: Wie schnell antwortest du?",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Gefühlsrad und Anspannungsskala wie gewohnt, die Leitung beginnt. Dazu eine freiwillige Zusatzfrage, die nur mit der Hand beantwortet wird: Wie schnell antwortest du normalerweise, wenn Freunde schreiben? Hand ganz oben heißt sofort, auf Brusthöhe am selben Tag, unten irgendwann. Die Leitung hält fest, wie verschieden die Hände stehen – schon darin liegt ein Grund für viele Missverständnisse.",
+          "sagen": [
+            "Gefühl, Zahl – und eure Hand: Wie schnell antwortet ihr, wenn eine Freundin schreibt?",
+            "Schaut euch um. Wenn die eine sofort antwortet und der andere erst abends, was denkt dann die, die wartet?"
+          ],
+          "tipp": "Die Zusatzfrage bewusst leicht halten: Sie öffnet das Thema, ohne dass jemand von einem echten Streit erzählen muss.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Vom Barometer zum Gewitter",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "An das Freundschafts-Barometer erinnern: Zu guten Freundschaften gehört, dass sie einen Streit überstehen. Kurz fragen, wer seinen kleinen Schritt aus der letzten Woche gemacht hat. Dann das Thema nennen: wie Streit unter Freunden entsteht, warum er im Chat so schnell wächst und wie man ihn fair klärt. Die Regel wiederholen: keine echten Streits aus der Gruppe oder der Klasse, nur erfundene Beispiele.",
+          "sagen": [
+            "Wer hat seinen kleinen Schritt aus der letzten Woche gemacht? Eine Nachricht zählt.",
+            "Streit unter Freunden ist normal. Heute geht es darum, wie man wieder rauskommt, ohne dass etwas kaputtgeht."
+          ]
+        },
+        {
+          "titel": "Das Chat-Experiment: Kommt der Ton an?",
+          "dauer": 15,
+          "phase": "uebung",
+          "text": "Die Ecken „ernst gemeint“ und „ironisch gemeint“ zeigen. Eine freiwillige Person zieht eine Satzkarte, liest still auf der Rückseite, wie der Satz gemeint ist, und schätzt laut, wie viele aus der Gruppe den Ton erraten werden. Dann zeigt sie nur die Vorderseite, ohne ein Wort zu sagen, und alle gehen in die Ecke, die sie für richtig halten; die Treffer kommen an die Tafel. Nach vier Karten folgen vier weitere, die laut vorgelesen werden – mit Stimme, aber ohne Grimassen. Zum Schluss beide Runden vergleichen: geschrieben gegen gesprochen, Schätzung gegen Treffer.",
+          "sagen": [
+            "Bevor wir raten: Wie viele werden merken, wie du es gemeint hast? Schätz mal.",
+            "Warum war es mit Stimme so viel leichter?",
+            "Im Chat fehlen Stimme, Gesicht und Tonfall. Den Rest ergänzt der Kopf – oft mit der eigenen Laune."
+          ],
+          "punkte": [
+            "Na super. (ironisch)",
+            "Klar, mach ruhig. (ernst)",
+            "Wow, danke. (ironisch)",
+            "Ich freu mich für dich. (ernst)",
+            "Sehr lustig. (ironisch)",
+            "Du bist echt die Beste. (ernst)",
+            "Das hast du ja toll hinbekommen. (ironisch)",
+            "Kein Problem. (ernst)"
+          ],
+          "tipp": "Fällt der Unterschied kleiner aus als erwartet, trotzdem fragen: Wie sicher warst du beim Schreiben – und wie sicher waren die anderen beim Lesen? Meist liegen beide Schätzungen zu hoch, und genau darum geht es. Bei wenig Energie bleiben alle sitzen und heben eine von zwei Karten: ernst oder ironisch.",
+          "wennEsKippt": "Wird die Sprechrunde zum Schauspielwettbewerb mit Grimassen, die Regel verschärfen: Die Person dreht sich zur Wand und spricht von dort. So zählt nur die Stimme. Bei nur zwei Jugendlichen raten beide und die Leitung, und alle lesen abwechselnd vor."
+        },
+        {
+          "titel": "Ein Chat unter der Lupe: vier Ohren",
+          "dauer": 15,
+          "phase": "input",
+          "text": "Das Blatt „Wie war das gemeint?“ austeilen und den Chat zwischen Mila und Aylin mit verteilten Rollen vorlesen. An der Tafel die vier Ohren anschreiben (Tabelle) und gemeinsam klären, mit welchem Ohr Mila „Kann nicht.“ hört. Dann Aufgabe 1 und 2 zu zweit: aufschreiben, was Mila herausliest, und eine Nachricht formulieren, die nachfragt statt vermutet. Anschließend die Auflösung von der Lehrerseite vorlesen und fragen, wie Mila es hätte herausfinden können. Aufgabe 3 und 4 allein.",
+          "sagen": [
+            "Mit welchem Ohr hat Mila gelesen?",
+            "Die meisten Streits im Chat beginnen mit dem Beziehungs-Ohr. Was könnte Mila fragen, statt zu vermuten?"
+          ],
+          "tabelle": {
+            "spalten": [
+              "Ohr",
+              "Hört vor allem …",
+              "So kann „Kann nicht.“ ankommen"
+            ],
+            "zeilen": [
+              [
+                "Sach-Ohr",
+                "die Information",
+                "„Sie hat morgen keine Zeit.“"
+              ],
+              [
+                "Selbstkundgabe-Ohr",
+                "wie es der anderen Person geht",
+                "„Sie ist gestresst oder müde.“"
+              ],
+              [
+                "Beziehungs-Ohr",
+                "was sie von mir hält",
+                "„Ich bin ihr nicht mehr wichtig.“"
+              ],
+              [
+                "Appell-Ohr",
+                "was ich tun soll",
+                "„Frag nicht weiter.“"
+              ]
+            ]
+          },
+          "tipp": "Das Modell von Schulz von Thun nicht als Theorie lehren, sondern an einer einzigen Nachricht durchspielen. Die vier Ohren als Bild reichen.",
+          "wennEsKippt": "Zieht jemand das Handy und will einen echten Chat zeigen, freundlich stoppen: Heute bleiben wir bei Mila und Aylin. Echte Chats und Screenshots anderer werden in der Gruppe nicht gezeigt.",
+          "blatt": "skills-wie-war-das-gemeint"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Gemeinsam essen, Fenster auf oder kurz nach draußen. Die Leitung isst mit, das Thema ruht. Danach bleiben die Stühle verteilt im Raum stehen – sie werden gleich gebraucht."
+        },
+        {
+          "titel": "Das Stuhl-Spiel",
+          "dauer": 12,
+          "phase": "aktiv",
+          "text": "Drei Gruppen bilden, bei wenigen Jugendlichen Paare oder Einzelne; alle Stühle stehen verteilt im Raum. Jede Gruppe bekommt verdeckt eine Auftragskarte (Liste) und darf sie den anderen nicht zeigen. Auf ein Zeichen haben alle drei Minuten Zeit, ihren Auftrag zu erfüllen. Danach setzen sich alle, die Aufträge werden vorgelesen, und die Leitung fragt, ob alle drei gleichzeitig möglich gewesen wären – etwa mit einem Stuhlkreis in der Mitte zwischen Tür und Fenster – und was gefehlt hat, um darauf zu kommen.",
+          "sagen": [
+            "Ihr habt drei Minuten. Los.",
+            "Hat irgendwer gefragt, was die anderen für einen Auftrag haben?",
+            "Ein Kreis in der Mitte steht nicht ganz am Fenster und nicht ganz an der Tür – aber alle bekommen etwas. So sieht ein Kompromiss aus."
+          ],
+          "punkte": [
+            "Auftrag A: Alle Stühle sollen in einem Kreis stehen.",
+            "Auftrag B: Alle Stühle sollen nah am Fenster stehen.",
+            "Auftrag C: Alle Stühle sollen nah an der Tür stehen.",
+            "Für alle: Stühle tragen, nicht zerren. Kein Körperkontakt. Bei Stopp lassen alle los."
+          ],
+          "tipp": "Nicht sagen, dass Reden erlaubt ist, es aber auch nicht verbieten. Gerade das macht die Auswertung stark: Fast niemand fragt die anderen. Mit nur zwei Jugendlichen bekommen die beiden die Aufträge B und C, die Leitung spielt A.",
+          "wennEsKippt": "Wird es körperlich oder zu laut, sofort Stopp: Alle lassen die Stühle los und setzen sich. Die Aufträge vorlesen – die Auflösung beruhigt meist sofort. Dann eine zweite Runde mit der Regel, dass jede Gruppe zuerst eine Frage an die anderen stellen muss."
+        },
+        {
+          "titel": "Klären unter vier Augen: Rollenspiel mit Kompromiss",
+          "dauer": 15,
+          "phase": "aktiv",
+          "text": "Das Blatt „Klären statt kippen“ austeilen und die vier Schritte kurz durchgehen; wer Jahr 1 kennt, erkennt die Konflikt-Treppe wieder. Paare ziehen eine Situationskarte und bereiten zwei Minuten vor: Wer spricht an, wo und wann, mit welchem ersten Satz? Dann spielen sie das Gespräch drei Minuten lang, im Stehen und an verschiedenen Orten im Raum, und tragen am Ende ihren Kompromiss in Aufgabe 2 ein. Danach die Rollen tauschen und eine zweite Karte ziehen. Zum Schluss stellen zwei Paare ihren Kompromiss vor, und die anderen prüfen, ob beide Seiten damit leben können.",
+          "sagen": [
+            "Nicht im Gruppenchat, nicht vor allen, nicht bei 80. Wo würdet ihr das klären?",
+            "Ein Kompromiss heißt: Jede Seite gibt ein Stück ab und behält, was ihr wirklich wichtig ist.",
+            "Kann jede Seite mit eurer Lösung leben – auch noch nächste Woche?"
+          ],
+          "tipp": "Paare, die schnell fertig sind, spielen dieselbe Karte mit einer Wendung: Die andere Person blockt zuerst ab. Wie geht es weiter, ohne nachzutreten?",
+          "wennEsKippt": "Spielt jemand einen echten Streit aus der Gruppe nach oder wird persönlich, freundlich abbrechen, aus der Rolle holen – aufstehen, ausschütteln, den eigenen Namen sagen – und die Karte wechseln. Echte Konflikte in der Gruppe werden in einem begleiteten Gespräch außerhalb der Einheit geklärt.",
+          "blatt": "skills-klaeren-statt-kippen"
+        },
+        {
+          "titel": "Skill: erst runter, dann senden",
+          "dauer": 8,
+          "phase": "skill",
+          "text": "Alle legen ihr Handy mit dem Display nach unten vor sich; wer keins dabeihat, stellt es sich vor. Die Leitung liest eine erfundene Nachricht vor, die ärgert (Liste), und alle schätzen still ihre Anspannung. Dann üben alle gemeinsam den Skill in vier Schritten. Zum Schluss die Zahl noch einmal schätzen und mit der ersten vergleichen.",
+          "sagen": [
+            "Merkt ihr, wie der Daumen schon zum Antworten zuckt? Genau dieser Moment ist der wichtigste.",
+            "Welche Zahl habt ihr jetzt – im Vergleich zu vorhin?"
+          ],
+          "punkte": [
+            "Die Nachricht: „Schon gut. Frag halt jemand anderen.“",
+            "1 Das Handy liegen lassen. Der Daumen darf zucken, aber nicht tippen.",
+            "2 Dreimal lang ausatmen, jedes Mal länger aus als ein. Die Schultern sinken lassen.",
+            "3 Fragen: Was könnte die Person noch gemeint haben?",
+            "4 Erst antworten, wenn die Zahl unter 70 ist – oder anrufen und nachfragen."
+          ],
+          "tipp": "Einen Trick mitgeben: Wütende Antworten zuerst in die Notizen-App schreiben statt in den Chat. Wer sie eine Stunde später noch senden will, darf."
+        },
+        {
+          "titel": "Réckbléck und Skills-Pass",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Blitzlicht mit einer Frage: Welcher Satz aus eurem Rollenspiel würde euch im echten Streit am meisten helfen? Wer mag, trägt ihn als Aufgabe 3 auf dem Blatt „Klären statt kippen“ ein. Dann Eintrag in den Skills-Pass und Stempel. Kleiner Auftrag für die Woche: einmal bewusst nachfragen, bevor man eine Nachricht falsch versteht.",
+          "sagen": [
+            "Ein Satz: Was nehmt ihr für den nächsten Streit mit?"
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Nächstes Mal geht es um die, die draußen stehen: wie es sich anfühlt, ausgeschlossen zu werden – und wie man jemanden hereinholt.",
+      "hintergrund": "Konflikte gehören auch zu engen Freundschaften. Entscheidend ist, wie sie ausgehen: Freunde verhandeln eher und bleiben nach einem Streit häufiger in Kontakt (Bagwell & Schmidt, 2011). Ein großer Teil des Streits läuft heute über Nachrichten. Kruger und Kollegen (2005) zeigten, dass Absender deutlich überschätzen, wie gut Ironie und Tonfall in geschriebenen Nachrichten ankommen; gesprochen wird der Ton viel öfter richtig erkannt. Schulz von Thun (1981) erklärt, was dabei passiert: Jede Nachricht hat vier Seiten, und wer gekränkt ist, hört vor allem mit dem Beziehungs-Ohr. Nachfragen statt vermuten ist deshalb ein zentraler Chat-Skill. Für das Gespräch selbst gelten die Stufen der Konflikt-Treppe: erst runterkommen, dann Ich-Botschaft, Zuhören und eine Lösung, mit der beide leben können (Gordon, 1972).",
+      "quellen": [
+        "Bagwell, C. L. & Schmidt, M. E. (2011). Friendships in Childhood and Adolescence. New York: Guilford.",
+        "Kruger, J., Epley, N., Parker, J. & Ng, Z.-W. (2005). Egocentrism over e-mail: Can we communicate as well as we think? Journal of Personality and Social Psychology, 89(6), 925–936.",
+        "Schulz von Thun, F. (1981). Miteinander reden 1: Störungen und Klärungen. Reinbek: Rowohlt.",
+        "Gordon, T. (1972). Familienkonferenz. Hamburg: Hoffmann und Campe."
+      ],
+      "achtung": "Streit kann in der Gruppe selbst gerade Thema sein. Keine echten Konflikte aus der Gruppe oder der Klasse nachspielen oder im Plenum verhandeln; dafür ein begleitetes Gespräch außerhalb der Einheit anbieten. Keine echten Chats, Screenshots oder Namen zeigen lassen. Wird aus einem Streit Mobbing, Bedrohung oder Erpressung – auch im Netz, etwa mit Bildern oder Screenshots –, die betroffene Person nach der Einheit ruhig ansprechen, die zuständige Leitung (Responsable) informieren und nach dem internen Schutzkonzept handeln; bei Problemen im Netz auf die BEE SECURE Helpline 8002 1234 hinweisen. Beim Stuhl-Spiel auf Jugendliche achten, denen Gedränge und Lärm schnell zu viel werden."
+    },
+    {
+      "id": "j2-e15",
+      "nr": 15,
+      "jahr": 2,
+      "modul": "j2-m4",
+      "titel": "Dazugehören und ausgeschlossen sein",
+      "kurz": "Wie fühlt es sich an, wenn der Ball nicht mehr kommt? Nach einem Ballspiel, in dem nur die Leitung draußen steht, übt die Gruppe das Einbeziehen und spricht Eifersucht und Druck ohne Drohung an.",
+      "dauer": 100,
+      "ziele": [
+        "beschreiben nach dem Ballspiel, welche Bedürfnisse Ausgrenzung verletzt: Dazugehören, Selbstwert, Kontrolle und das Gefühl, zu zählen",
+        "holen in kurzen Szenen jemanden mit einem Satz und einer Geste herein – in der Pause, in der Kantine, in der Gruppenarbeit und im Chat",
+        "erkennen Eifersucht als Angst, jemanden zu verlieren, sagen sie als Ich-Botschaft und antworten auf Druck im Freundeskreis mit einem klaren Nein",
+        "planen eine Einbeziehen-Mission für die kommende Woche"
+      ],
+      "material": [
+        "Gefühlsrad (A3, laminiert) und Anspannungsskala 0–100",
+        "Ein weicher Ball und eine Karte mit der Aufschrift „Ab jetzt nicht mehr zu mir“",
+        "Tafel oder Plakat für die vier Bedürfnisse (Tabelle in Schritt 4)",
+        "Schülerblatt „Drinnen oder draußen?“ für jede Person",
+        "Fünf Szenenkarten (Liste in Schritt 6) und eine Rollenkarte „Neu“, dazu Stühle, eine Jacke und eine Brotdose als Requisiten",
+        "Sechs Karten mit den Druck-Sätzen für die Umbau-Staffel (Schritt 7)",
+        "Skills-Pässe, Stempel, Imbiss und Getränke"
+      ],
+      "vorbereitung": [
+        "Vorab im Team klären, ob in der Gruppe oder der Klasse gerade jemand ausgegrenzt wird. Wenn ja, die Einheit mit der zuständigen Leitung (Responsable) abstimmen und Szenen weglassen, die der Lage ähneln.",
+        "Wenn möglich zu zweit leiten: Dann steht im Ballspiel die zweite Leitung draußen, und die erste beobachtet und leitet die Auswertung.",
+        "Die Szenenkarten schreiben und vier Spielorte im Raum vorbereiten: Pausenecke, Kantinentisch, Gruppentisch, Chat-Ecke."
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-drinnen-oder-draussen",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in mit dem Ball"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Von Streit zu drinnen und draußen"
+        },
+        {
+          "min": "15–30",
+          "phase": "aktiv",
+          "titel": "Das Ballspiel: Die Leitung steht draußen"
+        },
+        {
+          "min": "30–45",
+          "phase": "input",
+          "titel": "Was Ausgrenzung trifft"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–74",
+          "phase": "aktiv",
+          "titel": "Einbeziehen in 30 Sekunden"
+        },
+        {
+          "min": "74–85",
+          "phase": "aktiv",
+          "titel": "Die Umbau-Staffel: Eifersucht und Druck"
+        },
+        {
+          "min": "85–93",
+          "phase": "skill",
+          "titel": "Skill: die Mitgefühls-Pause"
+        },
+        {
+          "min": "93–100",
+          "phase": "abschluss",
+          "titel": "Einbeziehen-Mission, Réckbléck und Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in mit dem Ball",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Alle stehen im Kreis. Wer den weichen Ball hat, nennt sein Gefühlswort und seine Anspannung von 0 bis 100 und wirft den Ball dann zu jemandem, der noch nicht dran war. Die Leitung beginnt. Wer „weiter“ sagt, wirft einfach weiter. Der Ball bleibt danach griffbereit – er wird gleich noch einmal gebraucht.",
+          "sagen": [
+            "Gefühl und Zahl – und dann wirf zu jemandem, der noch nicht dran war."
+          ],
+          "tipp": "Die Regel „zu jemandem, der noch nicht dran war“ ist schon die erste Übung im Einbeziehen. Nach der Runde kurz darauf hinweisen.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Von Streit zu drinnen und draußen",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "Kurz an die letzte Einheit erinnern und fragen, wer diese Woche nachgefragt hat, bevor er eine Nachricht falsch verstanden hat. Dann das Thema nennen: wer dazugehört, wie es sich anfühlt, draußen zu stehen, und was Eifersucht damit zu tun hat. Den Rahmen klären: Niemand muss erzählen, wann er selbst ausgeschlossen war, und in keiner Übung wird ein Mitglied der Gruppe ausgeschlossen.",
+          "sagen": [
+            "Wer hat letzte Woche nachgefragt, statt zu vermuten?",
+            "Heute geht es ums Dazugehören. Ihr müsst nichts von euch erzählen – und hier wird niemand ausgeschlossen, auch nicht im Spiel."
+          ]
+        },
+        {
+          "titel": "Das Ballspiel: Die Leitung steht draußen",
+          "dauer": 15,
+          "phase": "aktiv",
+          "text": "Alle stehen locker im Kreis und werfen sich den Ball zu, auch der Leitung. Vorher sagt die Leitung offen, was passiert: Sie hält gleich eine Karte hoch, und ab dann wirft niemand mehr zu ihr – eine Minute lang, egal was sie tut. Die Gruppe beobachtet, was bei ihr passiert. Nach der Minute setzen sich alle, und die Leitung erzählt ehrlich, was in ihr vorging, obwohl sie wusste, dass es nur ein Spiel war. Dann fragt sie, wie es den Werfenden ging.",
+          "sagen": [
+            "Gleich halte ich diese Karte hoch. Ab dann werft ihr nicht mehr zu mir – eine Minute lang. Achtet darauf, was ihr bei mir seht.",
+            "Ich wusste, dass es nur ein Spiel ist. Trotzdem war nach ein paar Sekunden dieser Gedanke da: Was hab ich falsch gemacht?",
+            "Und ihr? Wie war es, nicht zu mir zu werfen?"
+          ],
+          "tipp": "Ehrlich und konkret berichten, auch von kleinen Reaktionen: lauter werden, Witze machen, aufs Handy schauen wollen, sich wegdrehen. Genau diese Reaktionen kommen im nächsten Schritt wieder.",
+          "wennEsKippt": "Will sich eine jugendliche Person freiwillig ausschließen lassen, freundlich ablehnen: In diesem Kurs steht nur die Leitung draußen. Wirft jemand trotzdem heimlich zur Leitung, das würdigen – genau dieser Impuls ist das Einbeziehen, um das es später geht. Mit nur zwei Jugendlichen läuft das Spiel genauso: Die beiden werfen sich den Ball zu, die Leitung steht daneben."
+        },
+        {
+          "titel": "Was Ausgrenzung trifft",
+          "dauer": 15,
+          "phase": "input",
+          "text": "An der Tafel die vier Bedürfnisse anschreiben, die Ausgrenzung trifft (Tabelle), und sie mit den Beobachtungen aus dem Ballspiel verbinden. Dann die drei typischen Reaktionen nennen: sich anpassen und um jeden Preis dazugehören wollen, wütend werden oder sich zurückziehen. Danach das Blatt „Drinnen oder draußen?“: Aufgabe 1 allein, Aufgabe 2 zu zweit. Die besten Einbeziehen-Sätze aus Aufgabe 2 kommen an die Tafel; sie werden nach der Pause gebraucht.",
+          "sagen": [
+            "Ausgeschlossen werden tut weh – auch dann, wenn man weiß, dass es nur ein Spiel ist. Das ist keine Schwäche, so sind Menschen gebaut.",
+            "Was machen Menschen, wenn sie draußen stehen? Manche strengen sich an, um jeden Preis dazuzugehören. Manche werden wütend. Manche ziehen sich zurück."
+          ],
+          "tabelle": {
+            "spalten": [
+              "Bedürfnis",
+              "Was Ausgrenzung daraus macht",
+              "Typischer Gedanke"
+            ],
+            "zeilen": [
+              [
+                "Dazugehören",
+                "Ich stehe draußen.",
+                "„Die wollen mich nicht.“"
+              ],
+              [
+                "Selbstwert",
+                "Mit mir stimmt etwas nicht.",
+                "„Was ist falsch an mir?“"
+              ],
+              [
+                "Kontrolle",
+                "Ich kann nichts tun.",
+                "„Egal, was ich mache, es ändert nichts.“"
+              ],
+              [
+                "Zählen",
+                "Ich bin unsichtbar.",
+                "„Die merken gar nicht, dass ich da bin.“"
+              ]
+            ]
+          },
+          "tipp": "Die Reaktion „um jeden Preis dazugehören“ ausdrücklich mit Druck verbinden: Wer Angst hat, draußen zu stehen, macht eher Dinge mit, die er eigentlich nicht will. Das ist die Brücke zur Umbau-Staffel nach der Pause.",
+          "wennEsKippt": "Nennt jemand eine Person aus der Klasse, die „selbst schuld“ sei, nicht über sie diskutieren, sondern zurück zur Tabelle: Welches Bedürfnis wird bei einem Menschen getroffen, der ausgeschlossen wird – ganz gleich, wie er sich verhält? Namen werden nicht weiter besprochen.",
+          "blatt": "skills-drinnen-oder-draussen"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Imbiss und frische Luft. Die Leitung isst mit und lässt das Thema ruhen. Heute setzt sie sich bewusst zu jemandem, der allein steht oder sitzt – ohne es zu kommentieren."
+        },
+        {
+          "titel": "Einbeziehen in 30 Sekunden",
+          "dauer": 14,
+          "phase": "aktiv",
+          "text": "Die Szenen (Liste) auf vier Orte im Raum verteilen; die Sprach-Szene spielt ebenfalls in der Pausenecke. Zwei oder drei Jugendliche bilden die Gruppe, eine Person nimmt die Rollenkarte „Neu“ und kommt dazu; beim ersten Mal spielt die Leitung die neue Person. Die Gruppe hat 30 Sekunden, um sie mit einem Satz und einer Geste hereinzuholen: den Kreis öffnen, die Jacke vom Stuhl nehmen, eine Frage stellen. Dann ruft die Leitung „Stopp“, die Zuschauenden sagen, was geholfen hat, und die Rollen wechseln, bis alle einmal hereingeholt haben.",
+          "sagen": [
+            "Ihr habt 30 Sekunden. Ein Satz und eine Geste reichen.",
+            "Was hat geholfen – der Satz oder das, was ihr mit dem Körper gemacht habt?",
+            "Lasst im Kreis eine Lücke. Dann sieht jeder, dass er dazukommen darf."
+          ],
+          "punkte": [
+            "Pause: Drei stehen zusammen und reden über ein Spiel. Die Neue kommt mit ihrer Brotdose vorbei.",
+            "Kantine: Am Tisch sind noch zwei Plätze frei, auf einem liegt eine Jacke. Der Neue sucht einen Platz.",
+            "Gruppenarbeit: Die Gruppen sind schon eingeteilt. Eine Person bleibt übrig.",
+            "Sprache: Die Gruppe redet Luxemburgisch. Die Neue ist seit dem Sommer im Land und versteht noch wenig.",
+            "Chat: Ihr plant im Gruppenchat den Samstag. Einer aus eurer Klasse ist nicht in der Gruppe."
+          ],
+          "tipp": "Die offene Lücke im Stehkreis ist die einfachste Geste überhaupt; manche nennen sie die Pac-Man-Regel. Jugendliche merken sie sich sofort und erkennen sie in der nächsten Pause wieder.",
+          "wennEsKippt": "Spielt die Gruppe absichtlich abweisend, kurz einfrieren und die Person mit der Rollenkarte fragen, wie sich das anfühlt. Dann dieselbe Szene noch einmal einbeziehend spielen. Mit nur zwei Jugendlichen bilden beide die Gruppe, und die Leitung kommt jedes Mal als neue Person dazu."
+        },
+        {
+          "titel": "Die Umbau-Staffel: Eifersucht und Druck",
+          "dauer": 11,
+          "phase": "aktiv",
+          "text": "Kurz erklären: Eifersucht ist oft Angst, jemanden zu verlieren, und kommt auch in Freundschaften vor. Schwierig wird es, wenn daraus Druck wird. Zwei Teams bilden; die Leitung liest nacheinander die Druck-Sätze vor (Liste), und aus jedem Team läuft eine Person zur Tafel. Bei den ersten vier Sätzen bauen die Teams den Satz in eine Ich-Botschaft um, bei den letzten beiden schreiben sie eine klare Antwort mit Nein. Die Gruppe prüft jeden Satz: Ist das Gefühl zu erkennen, und steckt ein Wunsch darin statt einer Drohung? Zum Schluss baut jede Person allein den Satz aus Aufgabe 3 auf dem Blatt um.",
+          "sagen": [
+            "Unter der Eifersucht liegt meistens Angst: Ich könnte dich verlieren. Das darf man sagen – aber nicht als Drohung.",
+            "Ist in eurem Satz das Gefühl zu erkennen? Und steckt ein Wunsch drin, keine Drohung?",
+            "Bei den letzten beiden hilft, was ihr schon kennt: Ein echter Freund akzeptiert ein Nein."
+          ],
+          "punkte": [
+            "„Wenn du am Samstag mit denen gehst, brauchst du nicht mehr zu kommen.“",
+            "„Entscheide dich: sie oder ich.“",
+            "„Zeig mal, wem du die ganze Zeit schreibst.“",
+            "„Seit die Neue da ist, bin ich dir wohl egal.“",
+            "Mit Nein antworten: „Wenn du zu uns gehören willst, redest du nicht mehr mit der Neuen.“",
+            "Mit Nein antworten: „Alle haben ihn blockiert. Du auch, oder?“"
+          ],
+          "tipp": "An den Wut-Eisberg aus Einheit 10 anknüpfen: Auch unter Eifersucht liegen oft Angst, Kränkung oder Einsamkeit.",
+          "wennEsKippt": "Wird es ein Wettrennen ohne Inhalt, das Tempo herausnehmen: Die Teams schreiben am Platz, und nur der fertige Satz wird zur Tafel gebracht. Bei wenig Energie im Sitzen zu zweit umbauen und nur vorlesen.",
+          "blatt": "skills-drinnen-oder-draussen"
+        },
+        {
+          "titel": "Skill: die Mitgefühls-Pause",
+          "dauer": 8,
+          "phase": "skill",
+          "text": "Ein Skill für Momente, in denen man selbst draußen steht. Alle sitzen, die Augen geschlossen oder auf den Boden gerichtet. Die Leitung leitet drei Sätze an (Liste); wer mag, legt dazu eine Hand auf die Brust oder den Unterarm, wer nicht mag, lässt die Hände im Schoß. Zwischen den Sätzen je zwei ruhige Atemzüge. Danach erklären: Die drei Sätze passen in jede Pause und jede Busfahrt, und niemand merkt, dass man gerade einen Skill benutzt.",
+          "sagen": [
+            "So würdet ihr mit einer Freundin reden, die gerade draußen steht. Heute redet ihr so mit euch selbst."
+          ],
+          "punkte": [
+            "1 Das ist gerade schwer. Es tut weh, nicht dabei zu sein.",
+            "2 Das kennen viele. Ich bin damit nicht allein.",
+            "3 Was brauche ich jetzt? Wer oder was tut mir gut?"
+          ],
+          "tipp": "Wer Einheit 5 kennt, erkennt die freundliche innere Stimme wieder. Wer die Sätze kitschig findet, darf eigene Worte nehmen – Hauptsache freundlich."
+        },
+        {
+          "titel": "Einbeziehen-Mission, Réckbléck und Skills-Pass",
+          "dauer": 7,
+          "phase": "abschluss",
+          "text": "Jede Person schreibt auf dem Blatt ihre Einbeziehen-Mission für die kommende Woche als Wenn-dann-Plan auf – ohne Namen, nur die Situation. Blitzlicht: Welcher Satz oder welche Geste von heute fällt dir am leichtesten? Dann Eintrag in den Skills-Pass und Stempel. Nächste Woche wird kurz nachgefragt, wie die Mission lief.",
+          "sagen": [
+            "Eure Mission für diese Woche: einmal bewusst jemanden hereinholen. Klein reicht – eine Frage, ein freier Platz, eine Nachricht."
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Nächstes Mal geht es um ein Gefühl, das noch mehr durcheinanderbringen kann als Eifersucht: Verliebtsein – und um Respekt, wenn es einen erwischt.",
+      "hintergrund": "Williams (2007) hat Ausgrenzung mit dem Ballspiel Cyberball untersucht: Schon wenige Minuten, in denen niemand mehr zuspielt, lösen Schmerz und schlechte Stimmung aus – selbst wenn die Teilnehmenden wissen, dass nur ein Computer mitspielt (Zadro et al., 2004). Ausgrenzung bedroht vier Grundbedürfnisse: Zugehörigkeit, Selbstwert, Kontrolle und das Gefühl, zu zählen. Um sie zurückzugewinnen, passen sich viele an, was anfällig für Gruppendruck macht, werden wütend oder ziehen sich zurück. Zugehörigkeit ist ein Grundbedürfnis (Deci & Ryan, 2000), und Einsamkeit, die lange anhält, belastet Stimmung und Gesundheit (Hawkley & Cacioppo, 2010). Die Einheit übt deshalb Einbeziehen als konkrete Handlung. Für Momente, in denen man selbst draußen steht, folgt die Mitgefühls-Pause einer Übung von Neff (2011) und den drei Bausteinen des Selbstmitgefühls (Neff, 2003): den Schmerz wahrnehmen, sich mit anderen verbunden wissen, freundlich zu sich sein.",
+      "quellen": [
+        "Williams, K. D. (2007). Ostracism. Annual Review of Psychology, 58, 425–452.",
+        "Zadro, L., Williams, K. D. & Richardson, R. (2004). How low can you go? Ostracism by a computer is sufficient to lower self-reported levels of belonging, control, self-esteem, and meaningful existence. Journal of Experimental Social Psychology, 40(4), 560–567.",
+        "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268.",
+        "Hawkley, L. C. & Cacioppo, J. T. (2010). Loneliness matters: A theoretical and empirical review of consequences and mechanisms. Annals of Behavioral Medicine, 40(2), 218–227.",
+        "Neff, K. D. (2011). Self-Compassion: The Proven Power of Being Kind to Yourself. New York: William Morrow.",
+        "Neff, K. D. (2003). Self-compassion: An alternative conceptualization of a healthy attitude toward oneself. Self and Identity, 2(2), 85–101."
+      ],
+      "achtung": "Ausgrenzung kann in der Gruppe oder der Klasse gerade stattfinden – bei Betroffenen, bei denen, die ausgrenzen, und bei Zuschauenden. Deshalb steht im Ballspiel nur die Leitung draußen, nie eine jugendliche Person, und niemand wird nach eigenen Erfahrungen gefragt. Wirkt jemand während oder nach dem Spiel sehr betroffen, ruhig ansprechen und ein Gespräch nach der Einheit anbieten. Gibt es Hinweise auf Mobbing, dauerhafte Isolation, Kontrolle in Freundschaften oder Äußerungen wie „Mich würde eh keiner vermissen“, nicht in der Gruppe vertiefen: noch am selben Tag ein Gespräch zu zweit führen, die zuständige Leitung (Responsable) informieren und nach dem internen Schutzkonzept handeln; bei akuter Gefahr die Person nicht allein lassen und den Notruf 112 wählen."
+    },
+    {
+      "id": "j2-e16",
+      "nr": 16,
+      "jahr": 2,
+      "modul": "j2-m4",
+      "titel": "Verliebt – und jetzt?",
+      "kurz": "Verliebtsein ist stark und normal: An erfundenen Figuren klärt die Gruppe, was dabei in Körper und Kopf passiert, übt im Ampel-Lauf Respekt und Einvernehmlichkeit im Alltag, nimmt ein Nein an und fragt anonym.",
+      "dauer": 100,
+      "ziele": [
+        "beschreiben an einer erfundenen Figur, was Verliebtsein und Liebeskummer in Körper, Gedanken und Verhalten auslösen, und erkennen beides als normal",
+        "wenden die Grundregel der Einvernehmlichkeit auf Alltagssituationen an: Umarmen, Hand halten, Fotos, Nachrichten und Gerüchte",
+        "üben, ein Nein ohne Nachhaken anzunehmen, und kennen Skills gegen Liebeskummer",
+        "wissen, dass jede Person selbst entscheidet, wen sie liebt und ob sie darüber spricht, und wo sie Fragen stellen und Hilfe bekommen"
+      ],
+      "material": [
+        "Gefühlsrad (A3, laminiert) und Anspannungsskala 0–100",
+        "Plakat mit den Regeln für heute (Liste in Schritt 2)",
+        "Plakat mit einem großen Körperumriss und dicke Stifte in drei Farben",
+        "Schülerblatt „Verliebt – mit Respekt“ für jede Person",
+        "Fragenbox: verschließbare Schachtel mit Schlitz, gleich große Zettel und gleiche Stifte für alle",
+        "Klebeband in Grün, Gelb und Rot für die drei Felder, Wäscheklammern in zwei Farben als Team-Zeichen",
+        "Situationskarten für den Ampel-Lauf (Liste in Schritt 6)",
+        "Skills-Pässe, Stempel, Imbiss und Getränke"
+      ],
+      "vorbereitung": [
+        "Mindestens eine Woche vorher die Eltern bzw. Erziehungsberechtigten mit einem kurzen Brief nach Hausregel informieren: Thema, Ziele und Methoden der Einheit, ausdrücklich ohne sexuelle Inhalte, dazu eine Ansprechperson für Fragen (Vorlage in den Grundlagen: „Eltern und Team informieren“).",
+        "Die zuständige Leitung (Responsable) über die Einheit informieren und das interne Schutzkonzept griffbereit haben.",
+        "Wenn möglich zu zweit leiten. Einen ruhigen Ort in der Nähe festlegen, an den jemand kurz gehen kann, und ihn der Gruppe zeigen.",
+        "Die Kontaktdaten des Planning Familial und der Schulärztin oder des Schularztes heraussuchen. Überlegen, ob eine Fachkraft des Planning Familial bei den Antworten auf die Fragenbox hilft oder später als Gast kommt.",
+        "Die Situationskarten ausdrucken und Namen austauschen, falls jemand in der Gruppe so heißt."
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-verliebt-mit-respekt",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Gefühl und Zahl"
+        },
+        {
+          "min": "10–20",
+          "phase": "bruecke",
+          "titel": "Brücke, Regeln für heute und die Fragenbox"
+        },
+        {
+          "min": "20–32",
+          "phase": "input",
+          "titel": "Luca ist verliebt: Körper, Kopf, Verhalten"
+        },
+        {
+          "min": "32–45",
+          "phase": "uebung",
+          "titel": "Liebeskummer: was hilft, was nicht"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–80",
+          "phase": "aktiv",
+          "titel": "Der Ampel-Lauf: okay, erst fragen oder Stopp?"
+        },
+        {
+          "min": "80–87",
+          "phase": "aktiv",
+          "titel": "Nein sagen, Nein annehmen"
+        },
+        {
+          "min": "87–93",
+          "phase": "skill",
+          "titel": "Skill: landen nach einem aufregenden Thema"
+        },
+        {
+          "min": "93–100",
+          "phase": "abschluss",
+          "titel": "Fragenbox, Check-out und Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: Gefühl und Zahl",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Gefühlsrad und Anspannungsskala wie gewohnt, die Leitung beginnt. Heute gibt es keine Zusatzfrage. Die Leitung sagt offen, dass bei diesem Thema viele kichern, rot werden oder genervt sind – das ist normal und darf sein. Die Zahlen behält sie für den Check-out am Ende im Kopf.",
+          "sagen": [
+            "Gefühl und Zahl reichen heute. Und wenn ihr beim Thema gleich kichern müsst: Das geht fast allen so."
+          ],
+          "tipp": "Die Zahlen nicht aufschreiben, sondern sich merken; in einer kleinen Gruppe geht das gut. Liegt eine Zahl am Ende deutlich höher, ist das ein Anlass für ein kurzes Gespräch nach der Einheit.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Brücke, Regeln für heute und die Fragenbox",
+          "dauer": 10,
+          "phase": "bruecke",
+          "text": "Kurz an die Einbeziehen-Missionen erinnern; wer mag, erzählt in einem Satz, wie es lief. Dann das Thema nennen und die Regeln für heute vom Plakat vorlesen (Liste); die Gruppe darf ergänzen. Den ruhigen Ort zeigen und die Fragenbox vorstellen: Am Ende wirft jede Person einen Zettel ein, mit Frage oder mit „keine Frage“, damit niemand auffällt; die Antworten kommen in der nächsten Einheit. Offen sagen, wo die Vertraulichkeit endet.",
+          "sagen": [
+            "Heute geht es ums Verliebtsein. Ihr müsst nichts von euch erzählen – dafür gibt es Luca und die anderen auf den Karten.",
+            "Wenn jemand in Gefahr ist, muss ich Hilfe holen. Das sage ich euch vorher, damit es keine Überraschung gibt."
+          ],
+          "punkte": [
+            "Wir reden über erfundene Figuren. Niemand erzählt, ob oder in wen er verliebt ist.",
+            "Keine Namen, kein Raten, kein Verkuppeln – auch nicht nach der Einheit, im Bus oder im Chat.",
+            "Lachen ist erlaubt. Über die Sache, nicht über Personen.",
+            "Stopp-Recht: Wer eine Pause braucht, geht an den ruhigen Ort und sagt kurz Bescheid.",
+            "Was hier gesagt wird, bleibt hier. Wenn jemand in Gefahr ist, muss die Leitung Hilfe holen – und sagt vorher, was sie tut.",
+            "Jede Frage ist erlaubt. Wer sie nicht laut stellen will, nutzt die Fragenbox."
+          ],
+          "tipp": "Die Regel „kein Raten, kein Verkuppeln“ ausdrücklich auf die Zeit nach der Einheit ausdehnen. Viele Verletzungen entstehen nicht im Raum, sondern danach im Bus oder im Chat.",
+          "wennEsKippt": "Fängt jemand an zu raten, wer in wen verliebt ist, sofort und freundlich stoppen und auf die Regeln zeigen. Passiert es wieder, ein kurzes Gespräch unter vier Augen – das Thema ist für manche in der Gruppe ernster, als es von außen aussieht."
+        },
+        {
+          "titel": "Luca ist verliebt: Körper, Kopf, Verhalten",
+          "dauer": 12,
+          "phase": "input",
+          "text": "Die Leitung liest die Geschichte von Luca vor (Liste). Auf dem Plakat mit dem Körperumriss sammelt die Gruppe in drei Farben, was bei Luca passiert: im Körper, im Kopf und im Verhalten. Dann festhalten: Verliebtsein ist ein starkes, normales Gefühl und selten nur eines – Freude, Aufregung, Unsicherheit und Angst vor einem Nein kommen oft zusammen. Und: Manche verlieben sich früh, manche später, manche selten; manche in Jungen, manche in Mädchen, manche in beide, und manche sind sich noch nicht sicher. Wen man liebt, ist persönlich und verdient Respekt.",
+          "sagen": [
+            "Was passiert bei Luca im Körper, im Kopf und im Verhalten?",
+            "Verliebtsein fühlt sich manchmal an wie Achterbahn: rauf, runter, und man kann nicht einfach aussteigen.",
+            "Das ist kein Kinderkram und kein Grund, sich lustig zu machen. Es gehört zu den stärksten Gefühlen überhaupt."
+          ],
+          "punkte": [
+            "Seit drei Wochen ist bei Luca alles anders. Nora aus der Parallelklasse hat in der Kantine über seinen Witz gelacht.",
+            "Seitdem nimmt er den langen Weg über den zweiten Stock, weil dort ihr Klassenzimmer ist.",
+            "Eine Nachricht an sie hat er elfmal umgeschrieben und dann doch nicht abgeschickt.",
+            "Wenn sie ihn anschaut, wird er rot und sagt irgendetwas Komisches über das Wetter.",
+            "Nachts liegt er wach und fragt sich: Mag sie mich? Oder findet sie mich peinlich?"
+          ],
+          "tipp": "Die Geschichte mit Humor lesen, aber nie über Luca lachen lassen: Die Gruppe lacht mit ihm, nicht über ihn – so wie es im Gruppenvertrag steht.",
+          "wennEsKippt": "Kommen anzügliche Sprüche, ruhig und ohne Empörung begrenzen: Heute geht es ums Verliebtsein, nicht um Sex – dazu gibt es im nächsten Kursjahr ein eigenes Modul. Wer eine ernst gemeinte Frage hat, schreibt sie für die Fragenbox auf."
+        },
+        {
+          "titel": "Liebeskummer: was hilft, was nicht",
+          "dauer": 13,
+          "phase": "uebung",
+          "text": "Die Geschichte weitererzählen: Luca fragt Nora, ob sie am Samstag mit zum Skatepark kommt, und sie antwortet freundlich, dass sie ihn mag, aber nicht so. Die Gruppe sammelt, was Luca jetzt fühlt, was ihm guttut und was es schlimmer macht, auch wenn es sich im Moment gut anfühlt (Liste). Dann das Blatt „Verliebt – mit Respekt“ austeilen: Aufgabe 1 und 2 allein, zu Luca, nicht zu sich selbst. Zum Schluss die Liebeskummer-Skills an die Tafel schreiben.",
+          "sagen": [
+            "Nora hat freundlich Nein gesagt. Was fühlt Luca jetzt?",
+            "Was hilft ihm – und was macht es schlimmer, auch wenn es sich im Moment gut anfühlt?"
+          ],
+          "punkte": [
+            "Hilft oft: mit einer Freundin oder einem Freund reden, nicht mit der ganzen Klasse.",
+            "Hilft oft: Bewegung, laute Musik, mitsingen.",
+            "Hilft oft: eine Pause vom Profil der anderen Person.",
+            "Hilft oft: Gefühle aufschreiben oder zeichnen, ohne es abzuschicken.",
+            "Macht es meist schlimmer: nachhaken, betteln, über die andere Person lästern, ihre Freundinnen ausfragen."
+          ],
+          "tipp": "Liebeskummer als echten Schmerz ernst nehmen. Viele Jugendliche hören von Erwachsenen nur: Das wird schon wieder. Das stimmt meistens, hilft im Moment aber nicht.",
+          "wennEsKippt": "Wirkt jemand bei dem Thema sichtbar mitgenommen, nicht nachfragen, sondern leise den ruhigen Ort anbieten und nach der Einheit das Gespräch suchen. Die Gruppe arbeitet derweil am Blatt weiter.",
+          "blatt": "skills-verliebt-mit-respekt"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Gemeinsam essen, Fenster auf oder kurz nach draußen. Die Leitung isst mit, das Thema ruht. Erzählt jemand in der Pause etwas Persönliches, zuhören und ein Gespräch nach der Einheit anbieten – nicht vor den anderen."
+        },
+        {
+          "titel": "Der Ampel-Lauf: okay, erst fragen oder Stopp?",
+          "dauer": 20,
+          "phase": "aktiv",
+          "text": "Drei Felder mit Klebeband auf den Boden kleben: grün für „okay“, gelb für „erst fragen“, rot für „Stopp“. Zwei Teams bilden. Die Leitung liest eine Situationskarte vor (Liste); jedes Team berät zehn Sekunden, eine Person läuft los und legt eine Klammer in das Feld, das das Team für richtig hält. Dann klärt die Gruppe, warum, und die Leitung schreibt die Grundregel an die Tafel (Tabelle). Nach acht bis zehn Karten gibt es keine Sieger, sondern die Frage, welche Karte am schwierigsten war. Zum Schluss liest die Gruppe den Merke-Kasten auf dem Blatt, und jede Person löst Aufgabe 3 allein.",
+          "sagen": [
+            "Einvernehmlich heißt: Alle wollen es – freiwillig und ohne Druck. Und jede Person darf es sich jederzeit anders überlegen.",
+            "Ein Schritt zurück ist auch ein Nein. Dafür braucht es keine Worte.",
+            "Wer in wen verliebt ist, erzählt jede Person selbst – oder gar nicht."
+          ],
+          "punkte": [
+            "Emma will Diogo zur Begrüßung umarmen. Er macht einen Schritt zurück.",
+            "Samuel fragt Jang: „Darf ich dich umarmen?“ Jang sagt: „Ja, gern.“",
+            "Liam fragt Aylin, ob sie Hand in Hand zum Bus gehen. Sie sagt: „Lieber nicht.“ Liam sagt: „Okay.“",
+            "Yusuf will Sofia in der Pause den Arm um die Schulter legen. Er weiß nicht, ob sie das mag.",
+            "Elias will ein Foto von sich und Lena aus dem Park in seine Story stellen.",
+            "Mathis macht heimlich ein Foto von Inês, weil er sie hübsch findet, und zeigt es seinen Freunden.",
+            "Mila hat Tiago fünf Nachrichten hintereinander geschrieben. Er hat alle gelesen und antwortet nicht.",
+            "Ben erzählt in der Klasse herum, dass Zoé in Noah verliebt ist.",
+            "Chiara schickt einen Screenshot von Rafaels Liebesnachricht in den Gruppenchat.",
+            "Léa und Amira sind zusammen. Ein Mitschüler macht jeden Tag Witze darüber.",
+            "Ana hat Nein zum Kino gesagt. Tiago fragt jeden Tag wieder: „Und jetzt?“",
+            "Elias und Sofia sind zusammen. Elias sagt: „Wenn du mich wirklich magst, zeigst du mir deine Chats.“"
+          ],
+          "tabelle": {
+            "spalten": [
+              "Feld",
+              "Grundregel",
+              "Beispiele von den Karten"
+            ],
+            "zeilen": [
+              [
+                "grün – okay",
+                "Alle wollen es, und das ist klar zu sehen oder zu hören.",
+                "„Darf ich dich umarmen?“ – „Ja, gern.“ Ein Nein wird mit „Okay“ angenommen."
+              ],
+              [
+                "gelb – erst fragen",
+                "Unklar, ob die andere Person es will: fragen und die Antwort annehmen.",
+                "Arm um die Schulter, gemeinsames Foto in der Story"
+              ],
+              [
+                "rot – Stopp",
+                "Ein Nein, ein Zögern, Schweigen oder ein Schritt zurück heißt: aufhören. Nie heimlich, nie bloßstellen, nie Druck.",
+                "Nachhaken nach einem Nein, heimliche Fotos, Gerüchte, Screenshots, Kontrolle, Witze über ein Paar"
+              ]
+            ]
+          },
+          "tipp": "Bei gelben Karten sammeln, wie man fragen kann, ohne dass es peinlich wird: „Ist das okay für dich?“, „Darf ich das posten?“ Fragen zur Rechtslage nur allgemein beantworten: Fotos anderer ohne Erlaubnis zu veröffentlichen, kann Folgen haben, und intime Bilder weiterzuleiten ist strafbar – den aktuellen Stand prüft die Leitung vorab.",
+          "wennEsKippt": "Behauptet jemand, Fragen sei unromantisch, nicht belehren, sondern zurückfragen: Was ist unangenehmer – eine kurze Frage oder eine Umarmung, die die andere Person nicht wollte? Bei wenig Platz oder wenig Energie liegen die Felder als drei Karten auf dem Tisch, und alle zeigen im Sitzen. Mit nur zwei Jugendlichen spielen beide als ein Team.",
+          "blatt": "skills-verliebt-mit-respekt"
+        },
+        {
+          "titel": "Nein sagen, Nein annehmen",
+          "dauer": 7,
+          "phase": "aktiv",
+          "text": "Zu zweit gegenüberstehen. A stellt eine harmlose Frage (Liste), B sagt Nein. A antwortet ohne Nachhaken, ohne Beleidigtsein und ohne Warum – etwa „Okay. Schade, aber okay.“ – und wechselt das Thema. Nach zwei Runden die Rollen tauschen; in der letzten Runde antwortet B mit „Weiß nicht“ oder zögert, und A übt, auch das als Nein zu nehmen. Danach schreibt jede Person als Aufgabe 4 auf dem Blatt, wie Luca auf Noras Nein antworten kann.",
+          "sagen": [
+            "Ein Nein annehmen heißt: kein Nachhaken, kein Beleidigtsein, kein Warum.",
+            "Weiß nicht ist kein Ja. Ein echtes Ja ist klar zu hören."
+          ],
+          "punkte": [
+            "„Kommst du nach der Schule mit zum Bäcker?“",
+            "„Leihst du mir dein Ladekabel?“",
+            "„Machen wir das Referat zusammen?“",
+            "„Darf ich ein Foto von uns in meine Story stellen?“"
+          ],
+          "tipp": "Bewusst mit harmlosen Fragen üben: Wer ein Nein beim Ladekabel gelassen annehmen kann, schafft es später auch dann, wenn viel mehr Gefühl dranhängt.",
+          "blatt": "skills-verliebt-mit-respekt"
+        },
+        {
+          "titel": "Skill: landen nach einem aufregenden Thema",
+          "dauer": 6,
+          "phase": "skill",
+          "text": "Alle sitzen, beide Füße auf dem Boden. Die Leitung leitet langsam an: die Füße spüren, die Hände auf die Oberschenkel legen und ihr Gewicht wahrnehmen, dreimal lang ausatmen. Dann sucht jede Person still fünf Dinge im Raum, die blau sind. Zum Schluss erinnert die Leitung an die Liebeskummer-Skills an der Tafel: Welcher davon passt zu dir?",
+          "sagen": [
+            "Spürt eure Füße. Atmet dreimal lang aus, länger aus als ein.",
+            "Sucht jetzt still fünf Dinge im Raum, die blau sind."
+          ],
+          "tipp": "Die Farbsuche holt den Kopf zuverlässig ins Hier und Jetzt – gut nach einem Thema, das bei manchen viel auslöst."
+        },
+        {
+          "titel": "Fragenbox, Check-out und Skills-Pass",
+          "dauer": 7,
+          "phase": "abschluss",
+          "text": "Jede Person bekommt einen Zettel und schreibt eine Frage auf oder „keine Frage“. Alle falten ihren Zettel gleich und werfen ihn in die Box; die Leitung sagt, dass sie die Fragen mit dem Team anschaut und in der nächsten Einheit beantwortet. Dann Check-out: Gefühlswort und Anspannung von 0 bis 100 wie am Anfang. Zum Schluss Eintrag in den Skills-Pass und Stempel, das Angebot für ein Gespräch unter vier Augen und ein Blick auf den Hilfe-Kasten des Blatts.",
+          "sagen": [
+            "Jede Person wirft einen Zettel ein, mit Frage oder mit „keine Frage“. So weiß niemand, wer gefragt hat.",
+            "Gefühl und Zahl zum Schluss: Wie geht es euch jetzt, nach diesem Thema?",
+            "Ich bleibe nach der Stunde noch ein paar Minuten hier, falls jemand etwas loswerden möchte."
+          ],
+          "tipp": "Nach der Einheit mit der zweiten Leitung oder im Team besprechen, was aufgefallen ist, und die Fragenbox gemeinsam öffnen – nie allein und nie vor der Gruppe.",
+          "wennEsKippt": "Will jemand die Box schütteln oder Zettel lesen, freundlich und klar stoppen: Die Box öffnet nur die Leitung, zusammen mit dem Team. Das schützt alle, auch den, der gerade neugierig ist.",
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Nächstes Mal beantworte ich eure Fragen aus der Box – und dann geht es um etwas, das fast allen einmal passiert und über das kaum jemand spricht: wenn eine Freundschaft zu Ende geht.",
+      "hintergrund": "Romantische Gefühle und erste Beziehungen sind im Jugendalter weit verbreitet und keineswegs nebensächlich: Collins (2003) zeigt, dass sie starke Gefühle auslösen – Freude ebenso wie Kummer – und ein wichtiges Übungsfeld für Nähe und respektvollen Umgang sind. Die europäischen Standards verstehen Sexualaufklärung ausdrücklich breit: Gefühle wie Liebe und Eifersucht, Beziehungen, Respekt und Grenzen gehören ebenso dazu wie Wissen über Körper und Sexualität (WHO & BZgA, 2010); Letzteres folgt hier erst im dritten Kursjahr. Die UNESCO (2018) empfiehlt für dieses Alter, Einvernehmlichkeit zu erklären und das Geben und Ablehnen einer Zustimmung zu üben. Schulprogramme, die Respekt, Grenzen und Hilfeholen früh trainieren, senken später Gewalt in Beziehungen (Foshee et al., 2004; Wolfe et al., 2009).",
+      "quellen": [
+        "Collins, W. A. (2003). More than myth: The developmental significance of romantic relationships during adolescence. Journal of Research on Adolescence, 13(1), 1–24.",
+        "WHO Regional Office for Europe & BZgA (2010). Standards for Sexuality Education in Europe: A Framework for Policy Makers, Educational and Health Authorities and Specialists. Köln: Bundeszentrale für gesundheitliche Aufklärung.",
+        "UNESCO (2018). International Technical Guidance on Sexuality Education: An Evidence-Informed Approach (revised ed.). Paris: UNESCO.",
+        "Foshee, V. A., Bauman, K. E., Ennett, S. T., Linder, G. F., Benefield, T. & Suchindran, C. (2004). Assessing the long-term effects of the Safe Dates program and a booster in preventing and reducing adolescent dating violence victimization and perpetration. American Journal of Public Health, 94(4), 619–624.",
+        "Wolfe, D. A., Crooks, C., Jaffe, P., Chiodo, D., Hughes, R., Ellis, W., Stitt, L. & Donner, A. (2009). A school-based program to prevent adolescent dating violence: A cluster randomized trial. Archives of Pediatrics & Adolescent Medicine, 163(8), 692–699."
+      ],
+      "achtung": "Das Thema ist sensibel: In der Gruppe können Jugendliche sein, die gerade verliebt sind, Liebeskummer haben, sich über ihre Orientierung klar werden oder Grenzverletzungen erlebt haben. Deshalb nur mit erfundenen Figuren arbeiten, niemanden nach eigenen Erfahrungen fragen, Raten und Verkuppeln sofort stoppen und niemanden outen. Anzügliche Sprüche ruhig begrenzen; keine Bilder oder Videos zeigen. Gibt es Hinweise auf Übergriffe, Missbrauch, Druck zu Nacktbildern, Erpressung, Gewalt in einer Beziehung oder Selbstverletzung: die Person nach der Einheit ruhig ansprechen, zuhören, nichts versprechen, was nicht zu halten ist, das interne Schutzkonzept anwenden und die zuständige Leitung (Responsable) noch am selben Tag informieren. Bei akuter Gefahr die Person nicht allein lassen und den Notruf 112 oder die Polizei 113 rufen. Fragen zur Rechtslage nur allgemein beantworten, etwa: Intime Bilder weiterzuleiten ist strafbar – den aktuellen Stand prüft die Leitung. Nach der Einheit Beobachtungen im Team besprechen und ein Nachgespräch anbieten."
+    },
+    {
+      "id": "j2-e17",
+      "nr": 17,
+      "jahr": 2,
+      "modul": "j2-m4",
+      "titel": "Wenn Freundschaften enden",
+      "kurz": "Freundschaften verändern sich: Nach den Antworten aus der Fragenbox zeichnet die Gruppe die Kurve einer erfundenen Freundschaft, klärt, wie man fair auseinandergeht, übt neue Kontakte und füllt den Skills-Kompass.",
+      "dauer": 100,
+      "ziele": [
+        "beschreiben an einer erfundenen Freundschaft, warum Freundschaften sich verändern und enden, und benennen die gemischten Gefühle dabei",
+        "unterscheiden faires und unfaires Auseinandergehen und kennen das Pendel zwischen Zurückschauen und Nach-vorn-Schauen",
+        "üben im Kugellager Gesprächsöffner und planen auf der Kontakt-Leiter einen ersten Schritt zu neuen Kontakten",
+        "halten im Skills-Kompass fest, welcher Skill ihnen in Freundschaften hilft und wann sie ihn einsetzen"
+      ],
+      "material": [
+        "Gefühlsrad (A3, laminiert) und Anspannungsskala 0–100",
+        "Die abgetippten Fragen aus der Fragenbox mit vorbereiteten Antworten",
+        "Tafel für die Freundschaftskurve und das Pendel",
+        "Schülerblatt „Wenn Freundschaften enden“ für jede Person",
+        "Für jede Person zwei glatte, etwa daumengroße Steine, dazu eine Schale mit Wasser",
+        "Skills-Kompass jeder Person (aus der Mappe), Plakat „Modulweg“ und Pfeiler-Plakat aus Einheit 13",
+        "Skills-Pässe, Stempel, Imbiss und Getränke"
+      ],
+      "vorbereitung": [
+        "Die Fragen aus der Fragenbox mit dem Team sichten, abtippen und kurze, sachliche Antworten vorbereiten. Fragen zu Sexualität knapp beantworten oder auf das dritte Kursjahr, das Planning Familial oder die Schulärztin verweisen; bei Bedarf das Planning Familial um Unterstützung bitten.",
+        "Fragen, die auf eine Gefährdung hindeuten, nicht in der Gruppe beantworten, sondern nach dem internen Schutzkonzept mit der zuständigen Leitung (Responsable) besprechen.",
+        "Die Zeitachse für die Freundschaftskurve an die Tafel zeichnen: Cycle 2, Cycle 4, Lycée, heute.",
+        "Platz für zwei Kreise freiräumen, Steine und Wasserschale bereitstellen und die Skills-Kompasse aus den Mappen nehmen."
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-wenn-freundschaften-enden",
+        "skills-kompass",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Was hat sich verändert?"
+        },
+        {
+          "min": "10–20",
+          "phase": "bruecke",
+          "titel": "Antworten aus der Fragenbox"
+        },
+        {
+          "min": "20–32",
+          "phase": "input",
+          "titel": "Die Kurve einer Freundschaft"
+        },
+        {
+          "min": "32–45",
+          "phase": "uebung",
+          "titel": "Fair auseinandergehen und das Pendel"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–75",
+          "phase": "aktiv",
+          "titel": "Das Kugellager: neue Kontakte"
+        },
+        {
+          "min": "75–82",
+          "phase": "uebung",
+          "titel": "Meine Kontakt-Leiter"
+        },
+        {
+          "min": "82–90",
+          "phase": "skill",
+          "titel": "Behalten und loslassen"
+        },
+        {
+          "min": "90–96",
+          "phase": "abschluss",
+          "titel": "Skills-Kompass: Was hilft mir in Freundschaften?"
+        },
+        {
+          "min": "96–100",
+          "phase": "abschluss",
+          "titel": "Réckbléck und Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: Was hat sich verändert?",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Gefühlsrad und Anspannungsskala wie gewohnt, die Leitung beginnt. Freiwillige Zusatzfrage: Was hat sich bei dir seit dem letzten Schuljahr verändert – Lieblingsserie, Frisur, Hobby, Schulweg? Ein Wort reicht. Die Leitung hält fest, wie viel sich in einem Jahr ändert: Menschen verändern sich, und mit ihnen ihre Freundschaften.",
+          "sagen": [
+            "Gefühl, Zahl – und ein Wort: Was ist bei dir heute anders als vor einem Jahr?"
+          ],
+          "tipp": "Die Zusatzfrage bewusst auf Äußerliches lenken. Wer mag, geht tiefer, aber niemand muss.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Antworten aus der Fragenbox",
+          "dauer": 10,
+          "phase": "bruecke",
+          "text": "Die Leitung beantwortet die Fragen aus der Fragenbox, die sie vorher mit dem Team gesichtet und abgetippt hat – nie in der Handschrift der Jugendlichen. Sie liest jede Frage vor und antwortet kurz und sachlich; ähnliche Fragen fasst sie zusammen. Fragen, die ins dritte Kursjahr gehören, bekommen eine kurze Antwort und den Hinweis, wo man mehr erfährt: Planning Familial, Schulärztin oder Schularzt, SePAS. Danach die Brücke: Nach dem Verliebtsein geht es heute um das Ende von Freundschaften.",
+          "sagen": [
+            "Ich habe eure Fragen mit dem Team angeschaut. Jede Frage ist eine gute Frage – auch die, die nach Witz klingt.",
+            "Dazu gibt es im nächsten Kursjahr eine ganze Einheit. Heute bekommt ihr schon mal die kurze Antwort."
+          ],
+          "tipp": "Kamen keine Fragen, das sagen und die Box bis zum Ende des Moduls im Raum stehen lassen. Fragen, die auf eine Gefährdung hindeuten, werden nicht in der Gruppe beantwortet, sondern nach dem Schutzkonzept behandelt.",
+          "wennEsKippt": "Rätselt jemand, von wem eine Frage stammt, sofort stoppen und an die Regel erinnern. Wird über eine Frage gelacht, ruhig sagen, dass sie oft gestellt wird, und sachlich antworten – das nimmt dem Lachen den Wind aus den Segeln."
+        },
+        {
+          "titel": "Die Kurve einer Freundschaft",
+          "dauer": 12,
+          "phase": "input",
+          "text": "Die Leitung erzählt die Geschichte von Nora und Emma in Abschnitten (Liste). Nach jedem Abschnitt zeigt die Gruppe mit dem Daumen, ob die Freundschaftskurve steigt oder fällt, und die Leitung zeichnet an der Zeitachse mit. Dann gemeinsam sammeln: Was hat die Freundschaft verändert? Welche Gefühle kann Nora am Ende haben? Festhalten, dass es oft mehrere sind – traurig, wütend, erleichtert, schuldig, manchmal alles an einem Tag.",
+          "sagen": [
+            "Steigt die Kurve oder fällt sie? Daumen.",
+            "Was hat diese Freundschaft verändert – und wer ist schuld? Oder ist die Frage vielleicht falsch gestellt?"
+          ],
+          "punkte": [
+            "Cycle 2: Nora und Emma sitzen nebeneinander, teilen ihr Pausenbrot und haben eine Geheimsprache.",
+            "Cycle 4: Sie übernachten fast jedes Wochenende beieinander. Streit gibt es selten, und er ist schnell vorbei.",
+            "Lycée: Sie kommen in verschiedene Klassen. Emma spielt jetzt Handball, Nora zeichnet Mangas. Sie sehen sich nur noch im Bus.",
+            "Emma hat neue Freundinnen aus dem Verein. Nora fühlt sich im gemeinsamen Gruppenchat wie ein Anhängsel.",
+            "Nach einem Streit erzählt Emma etwas herum, das Nora ihr anvertraut hatte. Seitdem reden die beiden nicht mehr.",
+            "Heute: Nora sieht Emma im Bus. Beide schauen aufs Handy."
+          ],
+          "tipp": "Die Frage nach der Schuld offen lassen. Viele Freundschaften enden ohne Schuldige, weil sich zwei Menschen in verschiedene Richtungen entwickeln; andere enden, weil jemand Vertrauen gebrochen hat. Beides kommt vor, hier sogar beides zugleich.",
+          "wennEsKippt": "Erzählt jemand von einer eigenen zerbrochenen Freundschaft, zuhören, kurz würdigen und nicht vertiefen: Danke, dass du das erzählst – wenn du magst, reden wir nach der Stunde weiter. Dann zurück zu Nora und Emma."
+        },
+        {
+          "titel": "Fair auseinandergehen und das Pendel",
+          "dauer": 13,
+          "phase": "uebung",
+          "text": "Das Blatt „Wenn Freundschaften enden“ austeilen. Das Pendel an der Tafel erklären (Tabelle): Nach einem Ende schwingen viele hin und her zwischen Zurückschauen und Nach-vorn-Schauen, und beides gehört dazu. Dann Aufgabe 1 und 2 allein. Die Ergebnisse von Aufgabe 2 gemeinsam besprechen, vor allem die Aussagen, bei denen die Gruppe uneins ist.",
+          "sagen": [
+            "Traurig sein und trotzdem Neues anfangen – das widerspricht sich nicht. Das Pendel darf schwingen.",
+            "Fair auseinandergehen heißt nicht, dass man befreundet bleibt. Es heißt: Man macht es nicht schlimmer als nötig."
+          ],
+          "tabelle": {
+            "spalten": [
+              "Zurückschauen",
+              "Nach vorn schauen"
+            ],
+            "zeilen": [
+              [
+                "traurig sein, vermissen",
+                "etwas Neues ausprobieren"
+              ],
+              [
+                "wütend sein, nachdenken",
+                "andere Leute treffen"
+              ],
+              [
+                "alte Fotos anschauen",
+                "sich auf etwas freuen"
+              ]
+            ]
+          },
+          "tipp": "Ghosting, also plötzlich nicht mehr zu antworten, bewerten Jugendliche sehr unterschiedlich. Die Diskussion zulassen: Manchmal schützt Abstand, manchmal verletzt Schweigen mehr als ein ehrlicher Satz.",
+          "wennEsKippt": "Findet jemand, man dürfe sich an einer Person rächen, die ein Geheimnis ausgeplaudert hat, das Gefühl ernst nehmen – die Wut ist verständlich – und nach den Folgen fragen: Was macht Rache mit dir, und wer bekommt sie noch mit? Dann auf die Konflikt-Treppe oder eine Vertrauensperson verweisen.",
+          "blatt": "skills-wenn-freundschaften-enden"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Imbiss und frische Luft. Die Leitung isst mit, das Thema ruht. Wer nach der Geschichte von Nora und Emma nachdenklich wirkt, findet bei der Leitung ein offenes Ohr – ohne Nachbohren."
+        },
+        {
+          "titel": "Das Kugellager: neue Kontakte",
+          "dauer": 15,
+          "phase": "aktiv",
+          "text": "Zwei Kreise bilden: Der innere schaut nach außen, der äußere nach innen, sodass sich immer zwei gegenüberstehen. Die Leitung nennt eine Aufgabe (Liste), und die Paare haben 90 Sekunden Zeit. Auf ein Zeichen rückt der äußere Kreis eine Person weiter. Nach fünf Runden bleiben alle stehen und sammeln: Welcher Gesprächsöffner hat gut funktioniert, welcher war schwierig? Die besten Öffner kommen an die Tafel.",
+          "sagen": [
+            "90 Sekunden. Los.",
+            "Welcher Öffner hat funktioniert? Was hat es leicht gemacht, weiterzureden?",
+            "Neue Freundschaften fangen fast immer klein an: mit einer Frage, einem gemeinsamen Thema, einem Nachmittag."
+          ],
+          "punkte": [
+            "Findet drei Dinge, die ihr beide mögt – Essen zählt nicht.",
+            "Stell eine Frage, die mit „Wie“ oder „Was“ beginnt, und frag einmal nach.",
+            "Erzählt euch, was ihr am Wochenende machen würdet, wenn Geld keine Rolle spielt.",
+            "Sag der anderen Person, was dir heute an ihr aufgefallen ist – etwas, das sie gesagt oder getan hat.",
+            "Plant zusammen einen Nachmittag, der beiden gefallen würde."
+          ],
+          "tipp": "Bei ungerader Zahl macht die Leitung mit. Mit nur zwei Jugendlichen gehen die beiden und die Leitung als Dreieck reihum. Bei wenig Energie stehen sich zwei Stuhlreihen gegenüber, und alle bleiben sitzen.",
+          "wennEsKippt": "Stockt ein Paar, darf es eine Joker-Frage von der Tafel nehmen, etwa: Was hörst du gerade für Musik? Wird es albern, eine Runde nur mit Zuhören einschieben: 30 Sekunden erzählt die eine Person, dann fasst die andere zusammen, was sie gehört hat."
+        },
+        {
+          "titel": "Meine Kontakt-Leiter",
+          "dauer": 7,
+          "phase": "uebung",
+          "text": "Zurück an die Plätze. Jede Person schaut auf die Kontakt-Leiter auf dem Blatt: Unten stehen kleine Schritte wie grüßen oder eine Frage stellen, oben größere wie jemanden einladen. Jede Person kreist die Stufe ein, die für sie gerade machbar ist, und schreibt dazu einen Wenn-dann-Plan: wo, bei welcher Gelegenheit und mit welchem Satz – ohne Namen. Wer schon viele Kontakte hat, plant, wen er einbeziehen kann.",
+          "sagen": [
+            "Nicht die höchste Stufe zählt, sondern die, die ihr wirklich macht.",
+            "Wo triffst du Leute, die etwas mögen, das du auch magst? Verein, Jugendhaus, Musikschule, eine Gruppe für ein Spiel?"
+          ],
+          "tipp": "An die Mission aus Einheit 15 anknüpfen: Wer andere einbezieht, knüpft dabei oft selbst neue Kontakte.",
+          "blatt": "skills-wenn-freundschaften-enden"
+        },
+        {
+          "titel": "Behalten und loslassen",
+          "dauer": 8,
+          "phase": "skill",
+          "text": "Alle sitzen im Kreis, in der Mitte stehen die Steine und die Schale mit Wasser. Jede Person nimmt zwei Steine in die Hände: Der eine steht für etwas Gutes aus einer Freundschaft, das sie behalten will, der andere für etwas, das sie ablegen möchte – Ärger, Enttäuschung, einen Satz, der noch wehtut. Die Leitung lässt eine Minute Stille. Dann legt jede Person, wenn sie bereit ist, den zweiten Stein ins Wasser – gelegt, nicht geworfen – und behält den ersten. Niemand sagt, wofür die Steine stehen.",
+          "sagen": [
+            "Ein Stein zum Behalten, einer zum Ablegen. Ihr müsst niemandem sagen, wofür sie stehen.",
+            "Wer gerade keinen Abschied hat, nimmt etwas anderes, das vorbei ist – einen Streit, eine alte Gewohnheit.",
+            "Den Stein zum Behalten dürft ihr mitnehmen, in die Hosentasche oder aufs Fensterbrett."
+          ],
+          "tipp": "Draußen an einer Wiese oder einem Bach wirkt das Ritual stärker; bei Regen reicht die Schale im Raum. Wer nicht mitmachen mag, sitzt einfach mit und atmet ruhig.",
+          "wennEsKippt": "Wird jemand sehr traurig, das stehen lassen, ohne Aufhebens: ein Taschentuch reichen und später ein Gespräch anbieten. Wird gespritzt oder geworfen, das Ritual ruhig beenden und mit dem Skills-Kompass weitermachen."
+        },
+        {
+          "titel": "Skills-Kompass: Was hilft mir in Freundschaften?",
+          "dauer": 6,
+          "phase": "abschluss",
+          "text": "Das Modul ist zu Ende. Die Leitung zeigt noch einmal den Modulweg und das Pfeiler-Plakat und nennt die Skills der letzten fünf Wochen (Liste). Jede Person trägt im Skills-Kompass im Feld „4 · Freundschaft, Liebe und Zugehörigkeit“ ein, welcher Skill ihr in Freundschaften am meisten hilft und wann sie ihn einsetzt. Wer mag, nennt in der Runde nur den Namen seines Skills.",
+          "sagen": [
+            "Welcher Skill aus diesem Modul hilft euch in Freundschaften am meisten? Genau der kommt in den Kompass – und dazu, wann ihr ihn braucht."
+          ],
+          "punkte": [
+            "Das Freundschafts-Barometer: Wie ist das Wetter gerade?",
+            "Nachfragen statt vermuten",
+            "Erst runter, dann senden",
+            "Klären unter vier Augen: Ich-Botschaft, Frage, Kompromiss",
+            "Einbeziehen: ein Satz, eine Lücke im Kreis",
+            "Die Mitgefühls-Pause",
+            "Ein Nein annehmen: „Okay.“",
+            "Fair auseinandergehen und neue Kontakte knüpfen"
+          ],
+          "tipp": "Wer zwischen zwei Skills schwankt, schreibt beide auf. Der Kompass soll im Alltag die Richtung zeigen, nicht vollständig sein.",
+          "blatt": "skills-kompass"
+        },
+        {
+          "titel": "Réckbléck und Skills-Pass",
+          "dauer": 4,
+          "phase": "abschluss",
+          "text": "Blitzlicht zum Abschluss des Moduls: Fünf Wochen Freundschaft, Streit, Dazugehören, Verliebtsein und Abschied – was nehmt ihr mit? Ein Satz pro Person, ohne Kommentar der anderen. Dann Eintrag in den Skills-Pass und Stempel, zum Schluss der Ausblick auf das nächste Modul.",
+          "sagen": [
+            "Ein Satz zu fünf Wochen Freundschaft und Liebe: Was nehmt ihr mit?"
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Nächstes Mal beginnt ein neues Modul: Es geht um Familie – und darum, dass Familien so verschieden sind wie die Menschen darin.",
+      "hintergrund": "Viele Freundschaften im Jugendalter halten kürzer, als es sich anfühlt: Schul- und Klassenwechsel, auseinandergehende Interessen und gebrochenes Vertrauen beenden sie oft (Bagwell & Schmidt, 2011). Das Ende einer Freundschaft kann Trauer auslösen, häufig zusammen mit Wut, Schuld oder Erleichterung; gemischte Gefühle sind bei Abschieden normal (Larsen et al., 2001). Nach dem Modell von Stroebe und Schut (1999) pendeln Menschen nach einem Verlust zwischen der Hinwendung zum Verlust und der Hinwendung zu Neuem, und beides hilft bei der Verarbeitung. Die Einheit gibt beidem Raum: dem Abschied im Ritual mit den Steinen und dem Neuen im Kugellager. Ein Wenn-dann-Plan macht es wahrscheinlicher, dass der erste Schritt auf neue Menschen zu tatsächlich gelingt (Gollwitzer, 1999).",
+      "quellen": [
+        "Bagwell, C. L. & Schmidt, M. E. (2011). Friendships in Childhood and Adolescence. New York: Guilford.",
+        "Larsen, J. T., McGraw, A. P. & Cacioppo, J. T. (2001). Can people feel happy and sad at the same time? Journal of Personality and Social Psychology, 81(4), 684–696.",
+        "Stroebe, M. & Schut, H. (1999). The dual process model of coping with bereavement: Rationale and description. Death Studies, 23(3), 197–224.",
+        "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+      ],
+      "achtung": "Das Ende einer Freundschaft kann an andere Verluste erinnern – einen Umzug, eine Trennung in der Familie, einen Todesfall. Niemand muss erzählen, welche Freundschaft er meint; Blätter und Steine bleiben privat. Wirkt jemand im Ritual oder danach sehr traurig, ein Gespräch unter vier Augen anbieten. Hält Traurigkeit oder Einsamkeit schon länger an, zieht sich jemand ganz zurück oder fallen Sätze wie „Mich würde eh keiner vermissen“: noch am selben Tag ein Gespräch zu zweit führen, die zuständige Leitung (Responsable) informieren und nach dem internen Schutzkonzept handeln; bei akuter Gefahr die Person nicht allein lassen und den Notruf 112 wählen. Fragen aus der Fragenbox, die auf eine Gefährdung hindeuten, nicht im Plenum beantworten, sondern nach dem Schutzkonzept vorgehen."
+    }
+  ]
+}

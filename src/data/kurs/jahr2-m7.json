@@ -1,0 +1,753 @@
+{
+  "einheiten": [
+    {
+      "id": "j2-e24",
+      "nr": 24,
+      "jahr": 2,
+      "modul": "j2-m7",
+      "titel": "Meine Daten, meine Bilder",
+      "kurz": "Die Gruppe verfolgt die Spuren eines erfundenen Profils, prüft Privatsphäre-Einstellungen, baut sichere Passwörter, klärt, was bei Bildern gilt, und übt, was hilft, wenn jemand mit Bildern erpresst.",
+      "dauer": 100,
+      "ziele": [
+        "erklären, wie aus einzelnen Posts ein digitaler Fußabdruck entsteht, und prüfen ihre eigenen Privatsphäre-Einstellungen",
+        "bauen ein langes Passwort aus einem Satz und kennen weitere Regeln für sichere Konten",
+        "wenden drei Bilder-Regeln an: Fotos von anderen nur mit Erlaubnis, zu intimen Bildern darf niemand drängen, intime Bilder werden nie weitergeleitet",
+        "kennen die Schritte bei Erpressung mit Bildern: nicht zahlen, Beweise sichern, sofort einer erwachsenen Vertrauensperson sagen, BEE SECURE Helpline 8002 1234"
+      ],
+      "material": [
+        "Gefühlsrad (A3, laminiert), Wäscheklammern und Anspannungsskala 0–100",
+        "Schülerblätter „Meine Daten im Griff“ und „Bilder: Erlaubnis, Druck, Erpressung“ für jede Person",
+        "Eine Tube Zahnpasta und ein Teller",
+        "Drei Farbkarten (A4) für den Boden: grün, gelb, rot",
+        "Zwei Kartensätze für die Hilfe-Staffel: je zwölf Karten mit den Sätzen aus Schritt 7, ohne die Angabe „hilft“ oder „hilft nicht“",
+        "Eine verschließbare Fragenbox, gleiche Zettel und gleiche Stifte für alle",
+        "Plakat mit den Anlaufstellen: BEE SECURE Helpline 8002 1234, Kanner- a Jugendtelefon 116 111, Polizei 113, Notruf 112, SePAS",
+        "Skills-Pässe, Stempel, Imbiss und Getränke"
+      ],
+      "vorbereitung": [
+        "Die zuständige Leitung (Responsable) informieren und die Eltern bzw. Erziehungsberechtigten vorher mit einem kurzen Brief nach Hausregel informieren (Musterbrief in den Grundlagen): Thema ist der Schutz von Daten und Bildern im Netz, auch Druck und Erpressung mit Bildern; es werden keine Bilder gezeigt, und niemand muss von sich erzählen.",
+        "Wenn möglich zu zweit leiten und einen ruhigen Nebenraum bereithalten, in den sich jemand kurz zurückziehen kann.",
+        "Eine Fachstelle als Gast erwägen, etwa BEE SECURE oder das Planning Familial; die Leitung klärt, was aktuell angeboten wird.",
+        "Vorab klären, wie das interne Schutzkonzept bei Fällen mit Bildern oder Erpressung vorgeht (wer spricht mit der betroffenen Person, wer bezieht die Polizei ein), und den aktuellen rechtlichen Stand in Luxemburg durch die Leitung prüfen lassen.",
+        "Im Team verabreden, wer die Fragen aus der Fragenbox vor Einheit 25 sichtet und die Antworten vorbereitet.",
+        "Die Karten für die Hilfe-Staffel schreiben, Farbkarten und Zahnpasta bereitlegen; das erfundene Profil und die Namen auf dem Blatt mit den Namen in der Gruppe abgleichen."
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-meine-daten",
+        "skills-meine-bilder",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Gefühlsrad, Anspannung, die letzte App"
+        },
+        {
+          "min": "10–17",
+          "phase": "bruecke",
+          "titel": "Neues Modul: Sicher im Netz, Rahmen für heute"
+        },
+        {
+          "min": "17–31",
+          "phase": "uebung",
+          "titel": "Spurensuche: Was verrät Milas Profil?"
+        },
+        {
+          "min": "31–45",
+          "phase": "uebung",
+          "titel": "Privatsphäre-Check und Passwort-Werkstatt"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–72",
+          "phase": "aktiv",
+          "titel": "Zahnpasta und Bilder-Ampel"
+        },
+        {
+          "min": "72–85",
+          "phase": "aktiv",
+          "titel": "Hilfe-Staffel: Wenn jemand mit Bildern droht"
+        },
+        {
+          "min": "85–92",
+          "phase": "skill",
+          "titel": "Skill: lange ausatmen und der erste Satz"
+        },
+        {
+          "min": "92–100",
+          "phase": "abschluss",
+          "titel": "Check-out mit Zahl, Fragenbox und Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: Die letzte App",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Gefühlsrad und Anspannung wie gewohnt. Zusatzfrage: Welche App würdest du als allerletzte von deinem Handy löschen? Die Leitung beginnt. Die Antworten zeigen, wie viel vom Leben inzwischen in Apps steckt – und damit, wie viel es dort zu schützen gibt.",
+          "sagen": [
+            "Gefühl, Zahl – und die App, die ihr als allerletzte löschen würdet.",
+            "Bei mir ist es die Karten-App. Ohne die finde ich nirgendwo hin."
+          ],
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Neues Modul, Rahmen für heute",
+          "dauer": 7,
+          "phase": "bruecke",
+          "text": "Kurz an das letzte Modul anknüpfen: Diskriminierung erkennen und etwas dagegen tun. Dann das Modul „Sicher im Netz“ öffnen: eigene Daten und Bilder, Hass im Netz, Gaming. Weil es heute auch um Bilder geht, die man nie weiterschickt, und um Erpressung, den Rahmen ausdrücklich erneuern (Liste). Die Fragenbox zeigen: Am Ende steckt jede Person einen Zettel hinein, mit einer Frage oder leer, und die Antworten kommen in der nächsten Einheit.",
+          "sagen": [
+            "Heute geht es um eure Daten und eure Bilder – auch um Bilder, die man nie weiterschickt, und darum, was hilft, wenn jemand damit droht.",
+            "Alle Beispiele sind erfunden. Niemand erzählt, was er selbst erlebt hat. Und wenn euch etwas zu nahe geht, dürft ihr jederzeit kurz raus."
+          ],
+          "punkte": [
+            "Stopp-Recht: Wer aussetzen will, setzt aus – ohne Begründung.",
+            "Niemand erzählt Eigenes, niemand zeigt Bilder oder Chats.",
+            "Was hier gesagt wird, bleibt hier. Wenn jemand in Gefahr ist, muss ich Hilfe holen – und ich sage vorher, was ich tue.",
+            "Fragen, die man nicht laut stellen möchte, kommen in die Fragenbox."
+          ],
+          "tipp": "Den Satz zur Grenze der Schweigepflicht wörtlich sagen. Gerade bei diesem Thema entlastet es zu wissen, was die Leitung mit einer Information tun würde."
+        },
+        {
+          "titel": "Spurensuche: Was verrät Milas Profil?",
+          "dauer": 14,
+          "phase": "uebung",
+          "text": "Die Geschichte von Milas Profil auf dem Blatt vorlesen. Zu zweit arbeiten die Jugendlichen als Detektive: Was kann eine fremde Person daraus herausfinden? Sie tragen die Spuren in die Tabelle ein (Aufgabe 1). Im Plenum die Funde zusammensetzen: Aus Schule, Verein, Trainingszeit, Geburtstag und Hundenamen wird ein ziemlich genaues Bild – samt Hinweisen auf mögliche Passwörter. Dann die beiden Kästen lesen: Auch Storys, die verschwinden, können gespeichert werden, und alles Gepostete ergibt zusammen den digitalen Fußabdruck – auch das, worauf man stolz sein kann; die drei Fragen vor dem Posten helfen, selbst zu entscheiden.",
+          "sagen": [
+            "Ihr seid Detektive. Was weiß eine fremde Person nach zwei Minuten über Mila?",
+            "Wo wäre Mila am Dienstag um 18 Uhr zu finden?",
+            "Keine einzelne Spur ist schlimm. Zusammen ergeben sie ein Bild."
+          ],
+          "tipp": "Zum Schluss den Blick drehen: Ein Fußabdruck kann auch gut sein – ein Video vom Konzert, ein Preis im Verein. Es geht nicht um Angst, sondern darum, selbst zu entscheiden, was sichtbar ist.",
+          "wennEsKippt": "Beginnt jemand, echte Profile aus der Klasse zu durchsuchen oder vorzulesen, sofort stoppen: Heute nur Mila. Das Ausspähen echter Personen ist genau das, wovor die Übung schützen soll.",
+          "blatt": "skills-meine-daten"
+        },
+        {
+          "titel": "Privatsphäre-Check und Passwort-Werkstatt",
+          "dauer": 14,
+          "phase": "uebung",
+          "text": "Aufgabe 2 allein: Wer möchte und nach der Hausregel darf, nimmt das eigene Handy und prüft die Einstellungen der Reihe nach; niemand zeigt sein Display, und niemand muss sagen, was er ankreuzt. Wer kein Handy hat, kreuzt an, was er zu Hause prüfen will. Dann die Passwort-Werkstatt: Die Leitung erklärt die Satz-Methode (Liste und Tipp-Kasten auf dem Blatt), und alle bauen zur Übung ein Passwort aus einem ausgedachten Satz, ausdrücklich nicht das echte. Zu zweit prüfen: lang genug, nicht zu erraten, nirgends sonst benutzt?",
+          "sagen": [
+            "Das bleibt alles bei euch. Ich will keine Displays sehen.",
+            "Ein ganzer Satz ist leichter zu merken als k7$Q – und viel schwerer zu knacken.",
+            "Ein Passwort teilt man nicht, auch nicht mit der besten Freundin oder dem Freund. Das ist kein Liebesbeweis."
+          ],
+          "punkte": [
+            "Lang ist stark: am besten ein ganzer Satz, aus dem man Anfangsbuchstaben, Zahlen und Zeichen nimmt.",
+            "Für jedes Konto ein eigenes Passwort, damit ein gestohlenes nicht alle Türen öffnet.",
+            "Zwei-Faktor-Anmeldung einschalten: Neben dem Passwort braucht es einen Code auf dem Handy.",
+            "Passwörter niemandem verraten und nie im Chat verschicken."
+          ],
+          "tipp": "Die Hausregel zum Handy vorher klären. Wer das Handy heute nicht nutzen darf, nimmt das Blatt mit und macht den Check zu Hause, gern zusammen mit einer erwachsenen Person.",
+          "wennEsKippt": "Fangen einige an, gegenseitig Passwörter zu raten oder nach Handys zu greifen, freundlich und klar unterbrechen: Handys bleiben bei ihren Besitzern. Wird die Werkstatt zum Wettbewerb um das verrückteste Passwort, mitlachen und daran erinnern, dass man es sich auch merken können muss.",
+          "blatt": "skills-meine-daten"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Gemeinsam essen, Handys weg, Fenster auf. Das Thema ruht. Die Leitung legt Farbkarten und Hilfe-Karten für die zweite Hälfte bereit und achtet darauf, ob jemand auffällig still ist."
+        },
+        {
+          "titel": "Zahnpasta und Bilder-Ampel",
+          "dauer": 12,
+          "phase": "aktiv",
+          "text": "Zum Einstieg drückt eine freiwillige Person Zahnpasta auf einen Teller und soll sie danach zurück in die Tube bringen. Es gelingt nicht – so ist es mit Bildern, die einmal verschickt sind. Dann liegen die Farbkarten am Boden: grün geht in Ordnung, gelb nur mit Erlaubnis oder mit Vorsicht, rot geht gar nicht. Die Leitung liest Situationen vor (Liste), und alle gehen zu der Farbe, die sie für richtig halten; nach jeder Situation sagen zwei Personen, warum sie dort stehen. Zum Schluss die drei Bilder-Regeln vom zweiten Blatt vorlesen.",
+          "sagen": [
+            "Bekommt ihr das wieder in die Tube? Genauso ist es mit einem Bild, das einmal verschickt ist.",
+            "Grün, gelb oder rot – und warum?",
+            "Nach intimen Bildern zu drängen, ist nie okay. Nein zu sagen, ist immer richtig."
+          ],
+          "punkte": [
+            "Emma postet ein Selfie vom Schwimmbad, ohne Standort.",
+            "Tiago filmt einen Mitschüler, der im Bus eingeschlafen ist, und schickt das Video in die Klassengruppe.",
+            "Aylin will ein Gruppenfoto vom Ausflug posten. Sie fragt vorher alle – Jang möchte nicht drauf.",
+            "Sofia schickt ihrer besten Freundin ein peinliches Selfie. Die Freundin findet es so lustig, dass sie es weiterleiten will.",
+            "Rafael postet ein Foto seiner neuen Schuhe; im Hintergrund ist sein Name auf dem Briefkasten zu lesen.",
+            "Jemand, den Nora seit einer Woche online kennt, schreibt: Schick mir ein Foto, auf dem du wenig anhast – nur für mich. Nora will nicht, er drängt.",
+            "Luca bekommt von einer unbekannten Nummer ein Nacktbild einer Mitschülerin. In der Gruppe heißt es: Schick es weiter.",
+            "Ana und Chiara drehen zusammen ein Tanzvideo und entscheiden gemeinsam, ob sie es posten."
+          ],
+          "tipp": "Bei Luca die Antwort klar geben: nicht weiterleiten, nicht speichern, nicht zeigen – und einer erwachsenen Person Bescheid sagen. Das Weiterleiten intimer Bilder verletzt und ist strafbar; zum Recht nur allgemein sprechen, die Leitung prüft den aktuellen Stand. Bei wenig Platz halten alle eine grüne, gelbe oder rote Karte hoch.",
+          "wennEsKippt": "Kommen Sprüche über das Mädchen auf dem Bild oder über Nora („selbst schuld“), deutlich widersprechen: Schuld hat, wer drängt, verbreitet oder erpresst – nie die Person auf dem Bild. Kichern ist bei diesem Thema oft Verlegenheit; es nicht bestrafen, aber die Aussage klarstellen.",
+          "blatt": "skills-meine-bilder"
+        },
+        {
+          "titel": "Hilfe-Staffel: Wenn jemand mit Bildern droht",
+          "dauer": 13,
+          "phase": "aktiv",
+          "text": "Die Geschichte von Elias auf dem zweiten Blatt vorlesen. Zwei Teams stehen an einer Startlinie; am anderen Ende des Raums liegt für jedes Team ein verdeckter Kartensatz (Liste). Nacheinander läuft je eine Person los, holt eine Karte und legt sie am Start auf „hilft“ oder „hilft nicht“; sind alle Karten geholt, bringt das Team die hilfreichen in eine Reihenfolge. Nicht das schnellste Team gewinnt, sondern der vollständigste Plan. Dann vergleichen beide Teams, und die Leitung ergänzt anhand der fünf Schritte auf dem Blatt. Zum Schluss schreibt jede Person Elias eine kurze Antwort als Freundin oder Freund (Aufgabe 1), und die Leitung weist auf den Kasten „Wenn es einer Freundin oder einem Freund passiert“ hin.",
+          "sagen": [
+            "Was soll Elias tun, und in welcher Reihenfolge? Es zählt nicht das Tempo, sondern der beste Plan.",
+            "Warum hilft Zahlen nicht? Was passiert wohl danach?",
+            "Und wer ist schuld? Nicht Elias. Schuld hat, wer erpresst."
+          ],
+          "punkte": [
+            "Hilft: nicht zahlen und keine weiteren Bilder schicken.",
+            "Hilft: nicht auf Drohungen antworten.",
+            "Hilft: Beweise sichern – Screenshots vom Chat, vom Profil und von der Forderung, nicht vom Bild.",
+            "Hilft: erst sichern, dann blockieren und in der App melden.",
+            "Hilft: sofort einer erwachsenen Vertrauensperson Bescheid sagen.",
+            "Hilft: die BEE SECURE Helpline anrufen, 8002 1234.",
+            "Hilft: zusammen mit der Vertrauensperson die Polizei einschalten.",
+            "Hilft nicht: zahlen, damit Ruhe ist.",
+            "Hilft nicht: alles löschen und niemandem etwas sagen.",
+            "Hilft nicht: noch ein Bild schicken, damit er aufhört.",
+            "Hilft nicht: zurückdrohen oder beleidigen.",
+            "Hilft nicht: abwarten, ob es von allein aufhört."
+          ],
+          "tipp": "Beim Auswerten zwei Punkte betonen: Wer zahlt, bekommt meist neue Forderungen, und die Scham ist das größte Hindernis, sich Hilfe zu holen. Bei nur zwei Jugendlichen sortieren beide gemeinsam, bei wenig Platz oder wenig Energie im Sitzen am Tisch.",
+          "wennEsKippt": "Wird es sehr still, den Blick auf das Handeln lenken: Was ist der erste Schritt, den Elias heute Abend noch tun kann? Fragt jemand auffällig genau nach, was man tun muss, wenn es „einem Freund“ passiert, die Frage sachlich beantworten und nach der Einheit behutsam Gesprächsbereitschaft zeigen.",
+          "blatt": "skills-meine-bilder"
+        },
+        {
+          "titel": "Skill: lange ausatmen und der erste Satz",
+          "dauer": 7,
+          "phase": "skill",
+          "text": "Erklären: Wer erpresst wird, steht unter Schock – die Zahl springt auf 90, und der Kopf will nur, dass es aufhört. Deshalb zuerst den Körper bremsen: Alle üben eine Minute lang, länger aus- als einzuatmen, vier Sekunden ein, sechs aus. Dann der zweite Teil des Skills: Der schwerste Schritt beim Hilfeholen ist der erste Satz. Jede Person schreibt allein auf dem Blatt auf, wem sie sich anvertrauen würde und wie ihr erster Satz lauten könnte (Aufgabe 2); vorgelesen wird nichts.",
+          "sagen": [
+            "Vier ein, sechs aus. Der lange Ausatem ist die Bremse.",
+            "Der erste Satz muss nicht perfekt sein. Zum Beispiel: Mir ist etwas Peinliches passiert, und ich brauche Hilfe. Bitte hör erst zu."
+          ],
+          "tipp": "Den Beispielsatz an die Tafel schreiben; manche übernehmen ihn wörtlich, und das ist gut so.",
+          "blatt": "skills-meine-bilder"
+        },
+        {
+          "titel": "Check-out mit Zahl, Fragenbox und Skills-Pass",
+          "dauer": 8,
+          "phase": "abschluss",
+          "text": "Jede Person nennt ihre Anspannung jetzt; wer über 70 liegt, bekommt nach der Einheit ein kurzes Gespräch angeboten. Dann stecken alle einen gleichen Zettel in die Fragenbox – mit einer Frage oder leer, damit niemand auffällt. Eintrag in den Skills-Pass und Stempel; zum Schluss auf das Plakat mit den Anlaufstellen und die Hilfe-Kästen auf beiden Blättern zeigen und das Nachgespräch anbieten. Nach der Einheit die Beobachtungen im Team besprechen.",
+          "sagen": [
+            "Eure Zahl jetzt, von 0 bis 100.",
+            "Alle stecken einen Zettel in die Box – mit Frage oder ohne. Die Antworten gibt es nächstes Mal.",
+            "Ich bleibe nach der Stunde noch eine Viertelstunde hier, falls jemand reden möchte."
+          ],
+          "tipp": "Die Fragen werden vor der nächsten Einheit im Team gesichtet. Deutet eine Frage auf eine Notlage hin, wird sie nicht im Plenum beantwortet, sondern nach dem Schutzkonzept weiterverfolgt.",
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Nächstes Mal geht es um das, was andere im Netz schreiben: Hass und Mobbing – und wie man dagegenhält, ohne selbst zu hassen.",
+      "hintergrund": "Jugendliche geben online oft mehr preis, als ihnen bewusst ist: Einzelne Spuren wie Schule, Verein und Standort ergeben zusammen ein genaues Bild. Private Konten, lange Passwörter und die Zwei-Faktor-Anmeldung sind einfache Schutzschritte, wie sie BEE SECURE und klicksafe empfehlen. Bei Bildern gilt die Einvernehmlichkeit aus Einheit 16: Gezeigt wird nur, wer zustimmt. Nach einer Meta-Analyse hat die große Mehrheit der Jugendlichen nie ein intimes Bild verschickt, doch etwa jede achte Person hat schon eines ohne Zustimmung weitergeleitet (Madigan et al., 2018) – deshalb stehen Druck und Weiterleiten im Mittelpunkt. Bei Erpressung mit Bildern kennen Betroffene die Täter oft, und viele vertrauen sich aus Scham niemandem an (Wolak et al., 2018). Die Einheit übt darum den ersten Satz beim Hilfeholen und stellt klar: Schuld hat, wer erpresst.",
+      "quellen": [
+        "Madigan, S., Ly, A., Rash, C. L., Van Ouytsel, J. & Temple, J. R. (2018). Prevalence of multiple forms of sexting behavior among youth: A systematic review and meta-analysis. JAMA Pediatrics, 172(4), 327–335.",
+        "Wolak, J., Finkelhor, D., Walsh, W. & Treitman, L. (2018). Sextortion of minors: Characteristics and dynamics. Journal of Adolescent Health, 62(1), 72–79.",
+        "BEE SECURE – Initiative der luxemburgischen Regierung für ein sichereres Internet: www.bee-secure.lu",
+        "klicksafe – EU-Initiative für mehr Sicherheit im Netz: www.klicksafe.de"
+      ],
+      "achtung": "In der Gruppe kann jemand betroffen sein – als Person, deren Bild herumgeht, die bedrängt oder erpresst wird oder die selbst etwas weitergeleitet hat. Deshalb nur erfundene Beispiele, niemand erzählt Eigenes, keine Handys mit Bildern oder Chats zeigen lassen, Stopp-Recht und Rückzugsort. Die Leitung sieht sich nie intime Bilder an, lässt sie sich nicht zeigen oder schicken und speichert oder leitet nichts weiter. Gibt es Hinweise auf Erpressung, Druck, Übergriffe oder ein Bild, das herumgeht: die Person nach der Einheit ruhig ansprechen, nichts versprechen, was nicht zu halten ist – vor allem keine Geheimhaltung –, das interne Schutzkonzept anwenden und die zuständige Leitung (Responsable) am selben Tag informieren; Beratung über die BEE SECURE Helpline 8002 1234, die Polizei (113) über die Leitung einbeziehen. Erpressung ist eine akute Belastung: Wer sehr verzweifelt wirkt oder andeutet, nicht mehr leben zu wollen, wird nicht allein gelassen; bei akuter Gefahr Notruf 112. Danach Check-out mit Zahl, Nachgespräch anbieten und die Beobachtungen im Team besprechen. Rechtliches nur allgemein ansprechen; die Leitung prüft den aktuellen Stand."
+    },
+    {
+      "id": "j2-e25",
+      "nr": 25,
+      "jahr": 2,
+      "modul": "j2-m7",
+      "titel": "Hass im Netz",
+      "kurz": "Meinung, Beleidigung, Hassrede oder Drohung? Die Gruppe lernt zu unterscheiden, schreibt Gegenrede an einer Kommentar-Wand, übt schnelle Antworten ohne Hass und weiß, wie man sichert, meldet und blockiert.",
+      "dauer": 100,
+      "ziele": [
+        "unterscheiden Meinung, Beleidigung, Hassrede und Drohung an erfundenen Kommentaren",
+        "schreiben Gegenrede, die widerspricht, ohne abzuwerten, und stärken Betroffene mit einer privaten Nachricht",
+        "kennen die Schritte Sichern, Melden, Blockieren und wissen, wann sie Erwachsene, BEE SECURE oder die Polizei einschalten",
+        "nutzen die Antwort-Bremse, bevor sie auf einen Kommentar reagieren, der sie wütend macht"
+      ],
+      "material": [
+        "Gefühlsrad (A3, laminiert), Wäscheklammern und Anspannungsskala 0–100",
+        "Antworten auf die Fragen aus der Fragenbox, im Team vorbereitet",
+        "Vier Stimmkarten pro Person: M (Meinung), B (Beleidigung), H (Hassrede), D (Drohung)",
+        "Schülerblatt „Gegenrede statt Schweigen“ für jede Person",
+        "Plakat „Kommentar-Wand“ (A1), vorbereitet wie unter Vorbereitung beschrieben",
+        "Haftnotizen in Gelb und Grün, dicke Stifte, drei Klebepunkte pro Person",
+        "Plakat mit den Anlaufstellen aus Einheit 24",
+        "Skills-Pässe, Stempel, Imbiss und Getränke"
+      ],
+      "vorbereitung": [
+        "Die Fragen aus der Fragenbox im Team sichten und kurze, sachliche Antworten vorbereiten. Fragen, die auf eine Notlage hindeuten, nicht in der Gruppe beantworten, sondern nach dem Schutzkonzept weiterverfolgen.",
+        "Kommentar-Wand: oben ein erfundener Post – das Jugendhaus zeigt ein Video vom Streetdance-Wettbewerb, vier Jugendliche tanzen, einer davon im Rollstuhl. Darunter mit viel Abstand die vier Kommentare aus Schritt 6.",
+        "Die Beispiele mit Blick auf die Gruppe prüfen: Keine Situation soll einer Person im Raum ähneln; im Zweifel Video oder Kommentare ändern.",
+        "Die Melde- und Blockierfunktion in zwei, drei verbreiteten Apps selbst ansehen, um Fragen beantworten zu können.",
+        "Stimmkarten schreiben, vier pro Person.",
+        "Die zuständige Leitung (Responsable) vorab über das Thema informieren; wenn möglich zu zweit leiten und einen ruhigen Ort festlegen, an den jemand kurz gehen kann."
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-gegenrede",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Gefühlsrad, Anspannung, ein Kommentar, der freut"
+        },
+        {
+          "min": "10–18",
+          "phase": "bruecke",
+          "titel": "Antworten aus der Fragenbox"
+        },
+        {
+          "min": "18–32",
+          "phase": "uebung",
+          "titel": "Meinung, Beleidigung, Hassrede oder Drohung?"
+        },
+        {
+          "min": "32–45",
+          "phase": "input",
+          "titel": "Drei Wege: stärken, widersprechen, melden"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–75",
+          "phase": "aktiv",
+          "titel": "Die Kommentar-Wand"
+        },
+        {
+          "min": "75–85",
+          "phase": "aktiv",
+          "titel": "Gegenrede-Pingpong"
+        },
+        {
+          "min": "85–92",
+          "phase": "skill",
+          "titel": "Skill: die Antwort-Bremse"
+        },
+        {
+          "min": "92–100",
+          "phase": "abschluss",
+          "titel": "Réckbléck, Anlaufstellen und Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: Ein Kommentar, der freut",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Gefühlsrad und Anspannung wie gewohnt. Die Zusatzfrage ist vor einem schweren Thema bewusst positiv: Welcher Kommentar oder welche Nachricht hat dich zuletzt gefreut? Die Leitung beginnt. Die Antworten erinnern daran, dass Worte im Netz auch stärken – das wird später gebraucht.",
+          "sagen": [
+            "Gefühl, Zahl – und ein Kommentar oder eine Nachricht, die euch zuletzt gefreut hat.",
+            "Bei mir: Eine frühere Schülerin hat geschrieben, dass sie ihre Prüfung bestanden hat. Ich habe den ganzen Tag gegrinst."
+          ],
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Antworten aus der Fragenbox",
+          "dauer": 8,
+          "phase": "bruecke",
+          "text": "Die Fragen aus der letzten Einheit in eigenen Worten vorlesen, so dass niemand an Schrift oder Wortwahl erkannt wird, und kurz und sachlich beantworten, wie im Team vorbereitet. Keine Rückfragen, wer eine Frage gestellt hat, und keine Diskussion über Einzelfälle; leere Zettel werden nicht erwähnt. Danach die Brücke schlagen: Letztes Mal ging es um eure Daten und Bilder, heute um das, was andere im Netz schreiben. Den Rahmen aus Einheit 24 kurz wiederholen: nur erfundene Beispiele, niemand erzählt Eigenes, Stopp-Recht – und wenn jemand in Gefahr ist, holt die Leitung Hilfe und sagt vorher, was sie tut.",
+          "sagen": [
+            "Ihr habt Fragen in die Box gesteckt. Ich lese sie so vor, dass niemand erkennt, von wem sie sind.",
+            "Wenn noch etwas offen ist: Die Box steht heute wieder da, und ich bin nach der Stunde ansprechbar."
+          ],
+          "tipp": "Fragen, die auf eine konkrete Notlage hindeuten, werden nicht vorgelesen. Stattdessen allgemein sagen, dass Fragen zu Bildern und Erpressung jederzeit unter vier Augen und bei der BEE SECURE Helpline beantwortet werden.",
+          "wennEsKippt": "Rät die Gruppe, wer eine Frage gestellt hat, sofort unterbrechen: Die Box ist anonym, und so bleibt es. Kommen neue Fragen zu Bildern oder Erpressung, kurz beantworten und auf das Einzelgespräch verweisen."
+        },
+        {
+          "titel": "Meinung, Beleidigung, Hassrede oder Drohung?",
+          "dauer": 14,
+          "phase": "uebung",
+          "text": "Jede Person bekommt vier Stimmkarten. Die Leitung liest die sieben Kommentare aus Aufgabe 1 vor, und auf ein Zeichen halten alle gleichzeitig eine Karte hoch. Bei Uneinigkeit begründen zwei Personen, dann folgt die Auflösung (Tabelle); danach kreuzen alle auf dem Blatt an. Den Info-Kasten lesen und festhalten: Meinung darf hart sein, aber sie greift die Sache an, nicht den Menschen. Zum Schluss ein Gedanke aus dem letzten Modul: Vorurteile beginnen oft mit Worten und können sich bis zu Ausgrenzung und Gewalt steigern – deshalb lohnt es sich, schon bei Worten zu widersprechen.",
+          "sagen": [
+            "Auf drei hält jede und jeder eine Karte hoch. Eins, zwei, drei.",
+            "Wo ist die Grenze zwischen einer harten Meinung und einer Beleidigung?",
+            "Mädchen haben beim Fußball nichts verloren – klingt harmlos. Was macht der Satz trotzdem?"
+          ],
+          "tabelle": {
+            "spalten": [
+              "Kommentar",
+              "Einordnung",
+              "Woran man es erkennt"
+            ],
+            "zeilen": [
+              [
+                "1 Video zu lang, weggeklickt",
+                "Meinung",
+                "Kritik an der Sache"
+              ],
+              [
+                "2 Stimme peinlich",
+                "Beleidigung",
+                "greift die Person an"
+              ],
+              [
+                "3 Typisch Ausländer",
+                "Hassrede",
+                "wertet eine ganze Gruppe ab"
+              ],
+              [
+                "4 Mädchen und Fußball",
+                "Hassrede",
+                "abwertendes Vorurteil gegen eine Gruppe – Diskussionsfall"
+              ],
+              [
+                "5 Handyregel falsch",
+                "Meinung",
+                "Kritik an einer Regel"
+              ],
+              [
+                "6 Morgen am Bahnhof bist du dran",
+                "Drohung",
+                "kündigt Gewalt an: sichern, melden, Erwachsene holen"
+              ],
+              [
+                "7 Jeden Tag „Opfer“ unter Samuels Videos",
+                "Beleidigung, wiederholt",
+                "Cybermobbing"
+              ]
+            ]
+          },
+          "tipp": "Kommentar 4 ist bewusst ein Grenzfall. Die Gruppe darf uneinig bleiben; wichtig ist die Einsicht, dass auch harmlos klingende Sätze Menschen wegen ihrer Gruppe kleinmachen können.",
+          "wennEsKippt": "Verteidigt jemand Hassrede als Meinungsfreiheit, das Argument ernst nehmen: Meinungsfreiheit ist ein hohes Gut, und sie endet dort, wo Menschen herabgesetzt oder bedroht werden. Nicht in eine Grundsatzdebatte abrutschen, sondern zur Frage zurückkehren, wie es der Person geht, die so etwas liest.",
+          "blatt": "skills-gegenrede"
+        },
+        {
+          "titel": "Drei Wege: stärken, widersprechen, melden",
+          "dauer": 13,
+          "phase": "input",
+          "text": "An die Rollen beim Mobbing erinnern: Wer mitliest und schweigt oder liked, gibt dem Angriff Publikum; wer widerspricht oder Betroffenen beisteht, nimmt es ihm. Dann drei Wege an die Tafel schreiben (Liste) und mit der Gruppe Beispiele finden. Die Regeln für Gegenrede im Tipp-Kasten gemeinsam lesen und die Schritte Sichern, Melden, Blockieren, Hilfe holen erklären (Aufgabe 3). Klar sagen, wann Erwachsene dazugehören: bei Drohungen, Aufrufen zu Gewalt, Nacktbildern und immer, wenn es einem selbst zu viel wird.",
+          "sagen": [
+            "Wen wollt ihr mit Gegenrede erreichen – den Hater oder die Leute, die mitlesen?",
+            "Ihr müsst nicht jeden Kampf führen. Auch eine private Nachricht an die Person, die angegriffen wird, verändert etwas.",
+            "Bei einer Drohung wird nicht diskutiert. Sichern, melden, Erwachsene holen."
+          ],
+          "punkte": [
+            "Stärken: der betroffenen Person privat schreiben – Ich stehe hinter dir.",
+            "Widersprechen: öffentlich, sachlich, ohne zurückzubeleidigen – für die Mitlesenden.",
+            "Melden: sichern, in der App melden, blockieren, Erwachsene oder die BEE SECURE Helpline einschalten, bei Drohungen die Polizei."
+          ],
+          "tipp": "Wer im letzten Jahr dabei war, kennt die Zivilcourage-Leiter mit ihrer Stufe für das Netz: Beweise sichern, melden, nicht liken und nicht teilen. Heute kommt die Gegenrede dazu. Für alle anderen reicht der Satz: Nicht mitmachen ist schon ein Anfang.",
+          "blatt": "skills-gegenrede"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Gemeinsam essen, Handys weg. Die Leitung hängt die Kommentar-Wand auf, legt Haftnotizen bereit und bleibt ansprechbar – auch für Fragen, die jemand nicht in die Box stecken wollte."
+        },
+        {
+          "titel": "Die Kommentar-Wand",
+          "dauer": 15,
+          "phase": "aktiv",
+          "text": "Die Kommentar-Wand zeigen: das Tanzvideo mit vier Kommentaren (Liste). Zu zweit schreiben die Jugendlichen auf gelbe Haftnotizen Gegenrede unter die Kommentare und auf grüne eine unterstützende Nachricht an die Tanzenden; dabei gehen alle an der Wand entlang, wechseln die Kommentare und lesen, was die anderen geschrieben haben. Dann bekommt jede Person drei Klebepunkte und liked die Antworten, die am stärksten wirken. Die meistgelikten vorlesen und fragen, was sie stark macht. Zum Schluss überträgt jede Person ihre beste öffentliche und private Antwort zum ersten Kommentar auf das Blatt (Aufgabe 2).",
+          "sagen": [
+            "Schreibt so, dass die Leute, die mitlesen, merken: Das ist hier nicht normal.",
+            "Drei Likes pro Person. Welche Antwort würde euch helfen, wenn ihr im Video wärt?",
+            "Was haben die Antworten mit den meisten Punkten gemeinsam?"
+          ],
+          "punkte": [
+            "„Was macht der im Rollstuhl da? Das ist doch kein Tanz.“",
+            "„Die sollen lieber arbeiten gehen, statt rumzuhampeln.“",
+            "„Typisch Ausländer, immer müssen die auffallen.“",
+            "„Mädchen, die so tanzen, wollen doch nur Aufmerksamkeit.“"
+          ],
+          "tipp": "Meist gewinnen ruhige, klare Antworten und Humor ohne Abwertung. Antworten, die zurückbeleidigen, bekommen selten Punkte – das sagt mehr als jede Regel. Bei nur zwei Jugendlichen schreiben beide zu allen vier Kommentaren und vergeben ihre Punkte gegenseitig.",
+          "wennEsKippt": "Schreibt jemand selbst einen abwertenden Kommentar dazu, die Notiz ohne großes Aufheben abnehmen und kurz erinnern: Heute schreiben wir nur Gegenrede. Später unter vier Augen nachfragen, was dahintersteckt."
+        },
+        {
+          "titel": "Gegenrede-Pingpong",
+          "dauer": 10,
+          "phase": "aktiv",
+          "text": "Zwei Reihen stehen sich gegenüber. Die Leitung liest einen kurzen, erfundenen Kommentar vor (Liste), und die Person vorn in Reihe A antwortet innerhalb von fünf Sekunden mit einem Satz Gegenrede, gern aus dem Wortspeicher auf dem Blatt. Dann rückt Reihe A eine Position weiter, und der nächste Kommentar kommt. Nach der Hälfte antwortet Reihe B; die Kommentare liest weiter die Leitung. Wer nichts sagen will, sagt „Pass“.",
+          "sagen": [
+            "Fünf Sekunden, ein Satz, kein Zurückbeleidigen.",
+            "Pass ist erlaubt. Und abgucken beim Wortspeicher auch."
+          ],
+          "punkte": [
+            "„Mit der Frisur würde ich nicht rausgehen.“",
+            "„Jungs, die tanzen, sind peinlich.“",
+            "„Die gehören hier nicht hin.“",
+            "„Wer so redet, ist doch eh dumm.“",
+            "„Rollstuhl und Tanzen? Lächerlich.“",
+            "„Lösch das Video, bevor es noch mehr Leute sehen.“"
+          ],
+          "tipp": "Das Tempo macht Spaß und nimmt die Scheu vor dem ersten Satz. Danach betonen: Im echten Netz darf man sich Zeit lassen – Gegenrede muss nicht schnell sein, sondern klug. Bei wenig Energie im Sitzen im Kreis spielen: Die Leitung wirft einen weichen Ball zu, wer fängt, antwortet.",
+          "wennEsKippt": "Werden die Antworten zu Beleidigungen („Halt die Klappe, Loser“), anhalten und denselben Kommentar noch einmal geben: Wie geht es ohne Abwerten? Wird ein Kommentar auf jemanden in der Gruppe bezogen, das Spiel beenden und mit dem Skill weitermachen."
+        },
+        {
+          "titel": "Skill: die Antwort-Bremse",
+          "dauer": 7,
+          "phase": "skill",
+          "text": "Alle sitzen. Die Leitung liest einen erfundenen, provozierenden Kommentar vor und lässt alle kurz spüren, wo die Anspannung steigt. Dann die Antwort-Bremse üben: Hände weg vom Handy, drei Atemzüge mit langem Ausatmen, die eigene Zahl schätzen und eine Frage stellen – Will ich verletzen oder etwas bewirken? Erst danach wird geantwortet, oder man lässt es bewusst. Zum Schluss ein Wort zur Selbstfürsorge: Wer viel Hass liest, darf wegklicken, sich bewegen und jemandem davon erzählen.",
+          "sagen": [
+            "Hände weg vom Handy. Drei Atemzüge, der Ausatem länger.",
+            "Und jetzt die Frage: Will ich verletzen – oder will ich etwas bewirken?",
+            "Wegklicken ist nicht feige. Es ist Selbstschutz."
+          ],
+          "tipp": "Die Antwort-Bremse ist die Schwester der Teilen-Bremse aus Jahr 1: gleiche Atmung, andere Frage. Ohne Vorkenntnisse funktioniert sie genauso."
+        },
+        {
+          "titel": "Réckbléck, Anlaufstellen und Skills-Pass",
+          "dauer": 8,
+          "phase": "abschluss",
+          "text": "Blitzlicht: Welcher Satz Gegenrede hat dir heute am besten gefallen – und wo liegt deine Anspannung jetzt, von 0 bis 100? Dann das Plakat mit den Anlaufstellen und den Hilfe-Kasten auf dem Blatt zeigen: Kanner- a Jugendtelefon, BEE SECURE Helpline, bei Drohungen die Polizei. Eintrag in den Skills-Pass und Stempel. Die Fragenbox steht wieder bereit, und das Gesprächsangebot nach der Stunde gilt. Beobachtungen danach im Team besprechen.",
+          "sagen": [
+            "Ein Satz Gegenrede, den ihr euch merkt – und eure Zahl jetzt.",
+            "Die Box steht noch da. Und ich bin nach der Stunde ansprechbar."
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Nächstes Mal geht es um Games: was sie gut können, wie sie festhalten – und wie ihr selbst bestimmt, wann Schluss ist.",
+      "hintergrund": "Hassrede wertet Menschen wegen ihrer Herkunft, Religion, Hautfarbe, ihres Geschlechts, ihrer sexuellen Orientierung oder einer Behinderung ab; Cybermobbing greift eine bestimmte Person wiederholt an. Beides wiegt online schwer, weil Beiträge sich schnell verbreiten, rund um die Uhr erreichbar sind und viele mitlesen (Hinduja & Patchin, 2015). Ohne Blickkontakt und oft anonym schreiben Menschen online, was sie niemandem ins Gesicht sagen würden (Suler, 2004) – hier setzt die Antwort-Bremse an. Vorurteile beginnen mit Worten und können sich bis zu Ausgrenzung und Gewalt steigern (Allport, 1954). Wie beim Mobbing in der Klasse haben die Zuschauenden großen Einfluss: Wer schweigt oder liked, stärkt den Angriff, wer widerspricht oder Betroffenen beisteht, schwächt ihn (Salmivalli et al., 1996). Gegenrede zielt deshalb vor allem auf das Publikum. Der Europarat zählt die Arbeit gegen Abwertung zur Menschenrechtsbildung (Europarat, 2012). Beratung bietet die BEE SECURE Helpline.",
+      "quellen": [
+        "Hinduja, S. & Patchin, J. W. (2015). Bullying Beyond the Schoolyard (2nd ed.). Thousand Oaks, CA: Corwin.",
+        "Suler, J. (2004). The online disinhibition effect. CyberPsychology & Behavior, 7(3), 321–326.",
+        "Allport, G. W. (1954). The Nature of Prejudice. Cambridge, MA: Addison-Wesley.",
+        "Salmivalli, C., Lagerspetz, K., Björkqvist, K., Österman, K. & Kaukiainen, A. (1996). Bullying as a group process: Participant roles and their relations to social status within the group. Aggressive Behavior, 22(1), 1–15.",
+        "Council of Europe (2012). Compass: Manual for Human Rights Education with Young People (2nd ed.). Strasbourg: Council of Europe Publishing.",
+        "BEE SECURE – Initiative der luxemburgischen Regierung für ein sichereres Internet: www.bee-secure.lu"
+      ],
+      "achtung": "Hass im Netz trifft oft Jugendliche, die selbst zu einer der genannten Gruppen gehören. Die Beispiele deshalb erfunden und ohne herabsetzende Schimpfwörter für Gruppen lassen, keine echten Posts, Screenshots oder Namen aus Schule und Umfeld zeigen, und niemand muss von eigenen Erfahrungen berichten. An der Kommentar-Wand werden keine eigenen Hasskommentare geschrieben, auch nicht zum Spaß. Wird deutlich, dass jemand aus der Gruppe online angegriffen, bedroht oder bloßgestellt wird – oder selbst mitmacht –, nicht im Plenum klären: die Person nach der Einheit ruhig ansprechen, nichts versprechen, was nicht zu halten ist, Beweise sichern lassen, nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) am selben Tag informieren. Bei Drohungen mit Gewalt, Aufrufen zu Gewalt oder Nacktbildern sofort handeln – von Nacktbildern keinen Screenshot machen lassen, die Leitung lässt sich nichts zeigen oder schicken; Beratung über die BEE SECURE Helpline 8002 1234. Bei akuter Gefahr Polizei 113 oder Notruf 112, die Person nicht allein lassen. Rechtliches nur allgemein ansprechen; die Leitung prüft den aktuellen Stand."
+    },
+    {
+      "id": "j2-e26",
+      "nr": 26,
+      "jahr": 2,
+      "modul": "j2-m7",
+      "titel": "Gaming – Spaß und Grenzen",
+      "kurz": "Die Gruppe würdigt, was Games gut können, enttarnt Tricks, mit denen Spiele festhalten, erlebt ein Lootbox-Experiment mit Spielchips und legt eigene Regeln für Zeit, Geld und das Aufhören fest.",
+      "dauer": 100,
+      "ziele": [
+        "benennen, was Games geben, und verbinden es mit den Bedürfnissen nach Können, Selbstbestimmung und Dazugehören",
+        "erkennen Bindungstricks wie tägliche Belohnungen, Countdowns, Spielwährung und Lootboxen und beschreiben, wie sie wirken",
+        "erleben im Lootbox-Experiment, wie Zufallsbelohnungen zum Weitermachen verleiten, und legen eigene Regeln für Zeit, Geld und das Aufhören fest",
+        "tragen in den Skills-Kompass ein, welcher Skill ihnen im Netz hilft"
+      ],
+      "material": [
+        "Gefühlsrad (A3, laminiert), Wäscheklammern und Anspannungsskala 0–100",
+        "Schülerblatt „Mein Gaming-Check“ für jede Person",
+        "Für das Lootbox-Experiment: zehn Spielchips pro Person, ein undurchsichtiger Beutel mit 30 gleich gefalteten Losen (24 grau, 5 blau, 1 gold), Sticker als Preise und ein Privileg für Gold, etwa die Musik in der nächsten Pause aussuchen",
+        "Für den 24-Stunden-Weg: 24 A4-Blätter und Karten mit Schlaf, Schule und Schulweg, Essen, Hausaufgaben, Freunde, Bewegung, Familie, Gaming, Handy, Ausruhen",
+        "Skills-Kompass und Skills-Pass jeder Person, Stempel",
+        "Imbiss und Getränke"
+      ],
+      "vorbereitung": [
+        "Die Lose vorbereiten: 30 gleich große, gleich gefaltete Zettel, davon 24 grau oder mit „gewöhnlich“ beschriftet, 5 blau („selten“) und 1 gold („legendär“).",
+        "Preise festlegen, die nichts oder kaum etwas kosten; Essbares nur nach der Allergieliste. Am Ende bekommt jede Person einen Sticker.",
+        "Die 24 Blätter und die Karten für den 24-Stunden-Weg bereitlegen; bei gutem Wetter geht der Weg auch mit Kreide draußen.",
+        "Kurz ansehen, wie die PEGI-Alterskennzeichen aussehen – Altersstufen und Hinweise wie „In-Game-Käufe“ –, um Fragen beantworten zu können.",
+        "Die Fachstelle für den Hilfe-Kasten auf dem Blatt vor dem Kopieren eintragen.",
+        "Die Skills-Kompasse aus der Box holen; heute wird das Feld „7 · Sicher im Netz“ ausgefüllt."
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-gaming-check",
+        "skills-kompass",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Gefühlsrad, Anspannung, ein Lieblingsspiel"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Von der Gegenrede zum Gaming"
+        },
+        {
+          "min": "15–28",
+          "phase": "uebung",
+          "titel": "Game-Pitch: Was Games gut können"
+        },
+        {
+          "min": "28–45",
+          "phase": "input",
+          "titel": "Wie Games festhalten: Tricks enttarnen"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–74",
+          "phase": "aktiv",
+          "titel": "Das Lootbox-Experiment"
+        },
+        {
+          "min": "74–86",
+          "phase": "aktiv",
+          "titel": "Der 24-Stunden-Weg und meine Regeln"
+        },
+        {
+          "min": "86–91",
+          "phase": "skill",
+          "titel": "Skill: die Tilt-Bremse"
+        },
+        {
+          "min": "91–96",
+          "phase": "abschluss",
+          "titel": "Skills-Kompass: Sicher im Netz"
+        },
+        {
+          "min": "96–100",
+          "phase": "abschluss",
+          "titel": "Réckbléck und Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: Welches Spiel hast du als Kind geliebt?",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Gefühlsrad und Anspannung wie gewohnt. Zusatzfrage: Welches Spiel hast du als Kind am liebsten gespielt – mit oder ohne Bildschirm? Die Leitung beginnt, gern mit etwas Nostalgischem. So sind auch alle dabei, die heute nicht zocken.",
+          "sagen": [
+            "Gefühl, Zahl – und euer Lieblingsspiel als Kind. Brettspiel, Fangen, Konsole, alles zählt.",
+            "Bei mir war es „Mensch ärgere dich nicht“. Ich habe fast immer verloren und trotzdem jedes Mal wieder mitgespielt."
+          ],
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Von der Gegenrede zum Gaming",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "Kurz an die letzte Einheit anknüpfen: Wer hat die Antwort-Bremse schon gebraucht? Ein Satz reicht. Dann das Thema nennen und die Haltung klarstellen: Hier wird Gaming nicht schlechtgeredet; es geht darum, was Games gut können, wie sie festhalten und wer entscheidet, wann Schluss ist. Wer nicht spielt, ist heute Fachfrau oder Fachmann für den Blick von außen – viele Tricks stecken auch in Apps.",
+          "sagen": [
+            "Hier sagt niemand, dass Zocken Zeitverschwendung ist. Wir schauen genauer hin: Was gibt es euch – und was holt es sich?",
+            "Wer nicht spielt: Denkt an Apps mit Flammen, Serien und Punkten. Dieselben Tricks."
+          ]
+        },
+        {
+          "titel": "Game-Pitch: Was Games gut können",
+          "dauer": 13,
+          "phase": "uebung",
+          "text": "Freiwillige stellen in je einer Minute ein Spiel vor, das sie mögen, und sagen, was daran gut ist; die Leitung fragt nach, was genau Spaß macht. Die Gruppe sammelt an der Tafel, was Games geben, und ordnet es drei Überschriften zu: Können, Selbst entscheiden, Dazugehören – dazu kommen Entspannung, Geschichten und Kreativität. Danach Aufgabe 1: Auf die linke Seite der Waage schreibt jede Person, was ihr Games oder ein anderes Hobby geben.",
+          "sagen": [
+            "Eine Minute: Welches Spiel, und was macht es so gut?",
+            "Was davon ist Können, was Selbstbestimmen, was Dazugehören?",
+            "Wer abends mit dem Cousin in Portugal zockt, hat vielleicht mehr Kontakt als übers Telefon. Auch das zählt."
+          ],
+          "tipp": "Echtes Interesse zeigen und sich Begriffe erklären lassen – hier sind die Jugendlichen die Fachleute. Die rechte Seite der Waage bleibt vorerst leer; sie wird nach dem Lootbox-Experiment ergänzt.",
+          "wennEsKippt": "Wird es zum Wettstreit, welches Spiel das beste ist, mit Humor stoppen: Heute gewinnt kein Spiel, heute gewinnt der genaue Blick. Schwärmen einige für Spiele mit brutalen Inhalten, nicht moralisieren, aber auf das PEGI-Zeichen hinweisen: Es zeigt, ab welchem Alter ein Spiel geeignet ist.",
+          "blatt": "skills-gaming-check"
+        },
+        {
+          "titel": "Wie Games festhalten: Tricks enttarnen",
+          "dauer": 17,
+          "phase": "input",
+          "text": "Die Leitung beschreibt Satz für Satz ein erfundenes Spiel namens „Dragon Rush“ (Liste); bei jedem Trick rufen die Jugendlichen „Trick“ und erklären, wie er auf die Spielenden wirkt. Dann Aufgabe 2 auf dem Blatt: Tricks und Wirkungen verbinden. Im Gespräch sammeln, welche Tricks sie aus eigenen Games oder Apps kennen, ohne Spielzeiten zu nennen. Zum Schluss erklären, warum das in diesem Alter besonders gut wirkt: Das Belohnungssystem im Gehirn reagiert bei Jugendlichen besonders stark, die Bremse reift noch – das ist keine Schwäche, sondern Entwicklung.",
+          "sagen": [
+            "Ruft Trick, sobald ihr einen hört – und sagt, was er mit den Spielenden macht.",
+            "Welche davon kennt ihr aus euren Spielen oder Apps?",
+            "Diese Tricks sind nicht zufällig da. Leute werden dafür bezahlt, dass ihr länger bleibt."
+          ],
+          "punkte": [
+            "Wer jeden Tag einloggt, bekommt ein Geschenk – wer einen Tag fehlt, verliert die Serie.",
+            "Im Shop: Drachen-Skin, 50 Prozent billiger, nur noch 02:59:59.",
+            "Bezahlt wird mit Kristallen, nicht mit Euro: 500 Kristalle kosten 4,99 Euro.",
+            "Truhen mit Zufallsinhalt – mit etwas Glück ist der legendäre Drache drin.",
+            "Die Saison endet in 14 Tagen. Wer genug spielt, bekommt alle Belohnungen.",
+            "Dein Team wartet schon auf das nächste Match.",
+            "Es gibt kein letztes Level. Nach jedem Match startet sofort das nächste."
+          ],
+          "tipp": "Nach der Liste einen Satz an der Tafel stehen lassen: Wer die Tricks kennt, entscheidet selbst. Wer im letzten Jahr dabei war, erkennt vieles aus der Einheit über Social Media wieder – endloser Feed, rote Punkte.",
+          "wennEsKippt": "Fühlen sich Gamer angegriffen („Also sind wir alle süchtig?“), klar verneinen: Die meisten spielen ohne Probleme. Es geht darum, die Tricks zu kennen, nicht darum, Spielende schlechtzumachen.",
+          "blatt": "skills-gaming-check"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Gemeinsam essen, Bildschirme aus. Währenddessen Beutel und Chips für das Lootbox-Experiment vorbereiten und die 24 Blätter bereitlegen."
+        },
+        {
+          "titel": "Das Lootbox-Experiment",
+          "dauer": 14,
+          "phase": "aktiv",
+          "text": "Jede Person bekommt zehn Chips, und die Leitung spielt den Shop: Eine Ziehung aus dem Beutel kostet einen Chip; grau ist gewöhnlich, blau ist selten und bringt einen Sticker, gold ist legendär und bringt ein Privileg. Fünf Minuten lang darf jede Person so oft ziehen, wie sie will; die Lose kommen danach zurück in den Beutel, und die Leitung heizt an wie ein echter Shop (Liste). Danach auswerten: Wie viele Chips sind weg, wie hat es sich angefühlt, wer wollte weitermachen, wer hat aufgehört und warum? Dann die Wahrscheinlichkeit verraten – ein Gold unter dreißig Losen – und ausrechnen, was die Gruppe ausgegeben hätte, wenn jeder Chip zwei Euro gekostet hätte. Zum Schluss ergänzt jede Person die rechte Seite der Waage auf dem Blatt.",
+          "sagen": [
+            "Wie hat es sich angefühlt, als das Gold fast da war?",
+            "Wer hätte mit echtem Geld nachgekauft?",
+            "Ein Gold unter dreißig Losen. Das wusstet ihr vorher nicht – im Spiel steht es meist ganz klein oder gar nicht da."
+          ],
+          "punkte": [
+            "Fast – das Gold war ganz nah.",
+            "Nur jetzt: drei Ziehungen für zwei Chips.",
+            "Die anderen haben schon Blau.",
+            "Nur noch eine Minute, dann ist der Shop zu."
+          ],
+          "tipp": "Kein echtes Geld, keine Wetten, und am Ende bekommt jede Person einen Sticker – niemand geht als Verlierer raus. Den Vergleich mit Glücksspiel ruhig und sachlich ziehen, ohne Angst zu machen. Bei nur zwei Jugendlichen ziehen beide abwechselnd, und die Leitung zählt mit.",
+          "wennEsKippt": "Wird jemand wütend, weil nichts kommt, das als Beobachtung nutzen: Genau dieses Gefühl – noch einmal, dann klappt es – nutzen echte Spiele. Kurz Pause, Zahl nennen lassen und in der Auswertung aufgreifen. Streit um Chips beendet die Leitung, indem sie alle Chips einsammelt: Der Shop hat geschlossen.",
+          "blatt": "skills-gaming-check"
+        },
+        {
+          "titel": "Der 24-Stunden-Weg und meine Regeln",
+          "dauer": 12,
+          "phase": "aktiv",
+          "text": "24 Blätter liegen als Weg am Boden, jedes steht für eine Stunde eines Schultags. Gemeinsam die festen Blöcke belegen: Schlaf – Jugendliche brauchen 8 bis 10 Stunden –, Schule mit Schulweg, Essen und Körperpflege, Hausaufgaben. Die Gruppe sieht, wie viel übrig bleibt, und verteilt die freien Stunden auf Freunde, Bewegung, Familie, Gaming, Handy und Ausruhen. Dann die Frage: Wenn Gaming drei Stunden bekommt, woher kommen sie? Zum Schluss füllt jede Person Aufgabe 3 und 4 aus: die eigenen Warnzeichen und je eine Regel für Zeit und Geld.",
+          "sagen": [
+            "Schlaf, Schule, Essen, Hausaufgaben – wie viele Stunden bleiben übrig?",
+            "Wenn Gaming drei Stunden bekommt: Wo werden sie weggenommen?",
+            "Eine Regel für die Zeit, eine für das Geld. Klein genug, dass ihr sie wirklich haltet."
+          ],
+          "tipp": "Meist wird sichtbar, dass lange Spielabende vom Schlaf abgezogen werden. Das nicht dramatisieren, sondern stehen lassen. Als Beispiel für eine Geld-Regel die 24-Stunden-Regel nennen: vor jedem Kauf einen Tag warten. Bei nur zwei Jugendlichen den Weg mit Haftnotizen auf dem Tisch legen.",
+          "wennEsKippt": "Rechnet jemand vor, wie lange er selbst spielt, oder zieht andere damit auf, freundlich unterbrechen: Die eigenen Zahlen bleiben privat, heute geht es um einen gewöhnlichen Tag. Bei Aufgabe 3 niemandem über die Schulter schauen.",
+          "blatt": "skills-gaming-check"
+        },
+        {
+          "titel": "Skill: die Tilt-Bremse",
+          "dauer": 5,
+          "phase": "skill",
+          "text": "Kurz erklären: Tilt nennen Gamer den Zustand nach ein paar Niederlagen, in dem man wütend wird und immer schlechter spielt. Die Tilt-Bremse gemeinsam im Stehen üben: Controller weglegen, aufstehen und strecken, dreimal vier Sekunden ein- und sechs ausatmen, einen Schluck Wasser trinken, dann entscheiden – Pause oder Schluss, aber keine Revanche, solange die Zahl bei 80 liegt. Zum Schluss nennt, wer mag, sein erstes Tilt-Signal.",
+          "sagen": [
+            "Woran merkt ihr, dass ihr im Tilt seid? Fester Griff, Fluchen, noch eine Runde, dann gewinne ich?",
+            "Controller weg, aufstehen, strecken. Vier ein, sechs aus."
+          ],
+          "tipp": "Die Tilt-Bremse wirkt auch außerhalb von Games – nach einem verlorenen Fußballspiel oder einer schlechten Note. Wer das Wort Tilt nicht kennt, lernt es von den anderen."
+        },
+        {
+          "titel": "Skills-Kompass: Was hilft mir im Netz?",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Das Modul „Sicher im Netz“ endet. Jede Person trägt in ihren Skills-Kompass im Feld „7 · Sicher im Netz“ einen Skill ein, der ihr online hilft, und wann sie ihn einsetzt; eine Auswahl steht an der Tafel (Liste), eigene Skills zählen genauso. Wer mag, nennt den Namen seines Skills.",
+          "sagen": [
+            "Welcher Skill aus diesen drei Einheiten hilft euch im Netz – und wann setzt ihr ihn ein?",
+            "Der Name reicht. Was ihr online erlebt, bleibt bei euch."
+          ],
+          "punkte": [
+            "Privatsphäre-Check und Passwort-Satz",
+            "erst sichern, dann blockieren und melden",
+            "der erste Satz beim Hilfeholen",
+            "ein Gegenrede-Satz aus dem Wortspeicher",
+            "die Antwort-Bremse",
+            "die Tilt-Bremse",
+            "die 24-Stunden-Regel für Käufe"
+          ],
+          "blatt": "skills-kompass"
+        },
+        {
+          "titel": "Réckbléck und Skills-Pass",
+          "dauer": 4,
+          "phase": "abschluss",
+          "text": "Blitzlicht mit einem Satz: Welche Regel für Games oder Apps nehme ich mir vor? Dann Eintrag in den Skills-Pass und Stempel. Zum Schluss auf den Hilfe-Kasten auf dem Blatt zeigen und den Ausblick auf das nächste Modul geben.",
+          "sagen": [
+            "Ein Satz: Welche Regel nehmt ihr euch vor – für die Zeit, das Geld oder das Aufhören?"
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Nächstes Mal beginnt das Modul „Riskant oder okay?“: Es geht um Alkohol, Vapes und Cannabis – mit Fakten statt Mythen.",
+      "hintergrund": "Games befriedigen Bedürfnisse, die Deci und Ryan (2000) als Grundlage von Motivation beschreiben: sich kompetent erleben, selbst entscheiden und mit anderen verbunden sein – gerade das macht sie so fesselnd (Przybylski, Rigby & Ryan, 2010). Maßvolle Spielzeit geht nach einer großen Studie nicht mit schlechterem Wohlbefinden einher, erst sehr lange Zeiten mit etwas geringerem (Przybylski & Weinstein, 2017). Viele Spiele erschweren aber das Aufhören: Serien, befristete Angebote, Spielwährung und Lootboxen, die Fachleute mit Glücksspiel vergleichen (King & Delfabbro, 2018); wer viel für Lootboxen ausgibt, zeigt häufiger Merkmale problematischen Glücksspiels (Zendle & Cairns, 2018). Im Jugendalter reagiert das Belohnungssystem besonders stark (Steinberg, 2014). Die Einheit setzt deshalb auf Durchschauen und selbst gesetzte Regeln statt auf Verbote – auch zugunsten des Schlafs, von dem Jugendliche 8 bis 10 Stunden brauchen (Paruthi et al., 2016).",
+      "quellen": [
+        "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268.",
+        "Przybylski, A. K., Rigby, C. S. & Ryan, R. M. (2010). A motivational model of video game engagement. Review of General Psychology, 14(2), 154–166.",
+        "Przybylski, A. K. & Weinstein, N. (2017). A large-scale test of the Goldilocks hypothesis: Quantifying the relations between digital-screen use and the mental well-being of adolescents. Psychological Science, 28(2), 204–215.",
+        "King, D. L. & Delfabbro, P. H. (2018). Internet Gaming Disorder: Theory, Assessment, Treatment, and Prevention. London: Academic Press.",
+        "Zendle, D. & Cairns, P. (2018). Video game loot boxes are linked to problem gambling: Results of a large-scale survey. PLOS ONE, 13(11), e0206767.",
+        "Steinberg, L. (2014). Age of Opportunity: Lessons from the New Science of Adolescence. Boston: Houghton Mifflin Harcourt.",
+        "Paruthi, S. et al. (2016). Recommended amount of sleep for pediatric populations: A consensus statement of the American Academy of Sleep Medicine. Journal of Clinical Sleep Medicine, 12(6), 785–786."
+      ],
+      "achtung": "Gaming ist für viele Jugendliche ein wichtiger Teil ihres Lebens, ein Ort von Freundschaft und Erfolg; Abwertung („Zeitverschwendung“) beschämt und beendet das Gespräch. Spielzeiten und Ausgaben sind privat: Niemand muss sie nennen, und niemand wird dafür vorgeführt. Beim Lootbox-Experiment kein echtes Geld, keine Wetten, und am Ende bekommen alle einen kleinen Preis. Wirkt jemand stark belastet – spielt bis tief in die Nacht, fehlt in der Schule, gibt viel Geld aus oder leiht es sich, reagiert sehr heftig, wenn das Spiel endet –, nach der Einheit ein Einzelgespräch anbieten, keine Diagnose stellen und mit der zuständigen Leitung (Responsable) klären, ob eine Luxemburger Fachstelle hinzugezogen wird. Bei Hinweisen auf Kontakte zu Fremden über Spiele-Chats, auf Erpressung oder Drohungen nach dem internen Schutzkonzept handeln; Beratung über die BEE SECURE Helpline 8002 1234."
+    }
+  ]
+}

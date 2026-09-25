@@ -1,0 +1,1269 @@
+[
+  {
+    "id": "skills-beziehungs-ampel",
+    "bereich": "skills",
+    "thema": "liebe",
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "25 Min.",
+    "eldib": [
+      "SOZ-41",
+      "SOZ-32",
+      "K-27",
+      "K-28"
+    ],
+    "schlagworte": [
+      "Beziehung",
+      "Respekt",
+      "Eifersucht",
+      "Kontrolle",
+      "Warnzeichen",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:traffic-lights",
+    "verwandt": [
+      "was-mir-in-freundschaften-wichtig-ist",
+      "wer-ist-fuer-mich-da"
+    ],
+    "kurs": [
+      "j3-e27"
+    ],
+    "de": {
+      "titel": "Grün, Gelb, Rot – die Beziehungs-Ampel",
+      "untertitel": "Was eine Beziehung gesund macht – und woran du Warnzeichen erkennst",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Ob Freundschaft oder Liebe: In einer guten Beziehung darfst du du selbst sein, eigene Freunde haben und Nein sagen. Eine Liebesbeziehung sollte sich mindestens so gut anfühlen wie eine gute Freundschaft."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schreib zu jeder Farbe ein Beispiel – aus einer Serie, einem Film oder erfunden.",
+          "hinweis": "Die Ampel beschreibt Verhalten, nicht Menschen.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "ampel",
+          "linien": 2,
+          "stufen": [
+            {
+              "titel": "Rot – Gewalt: Hilfe holen",
+              "text": "drohen, schlagen, zwingen, bloßstellen, mit Bildern erpressen"
+            },
+            {
+              "titel": "Gelb – ungesund: ansprechen",
+              "text": "Eifersucht, die einengt, Handy kontrollieren, Druck, beleidigtes Schweigen"
+            },
+            {
+              "titel": "Grün – gesund: so darf es sein",
+              "text": "Respekt, Vertrauen, eigene Freunde, fair streiten, ein Nein zählt"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Lies die Geschichte und unterstreiche jedes Warnzeichen.",
+          "symbole": [
+            "lesen"
+          ]
+        },
+        {
+          "art": "geschichte",
+          "titel": "Lena und Mathis",
+          "bild": "figur:jana:nervoes",
+          "text": "Lena und Mathis sind seit vier Monaten zusammen. Am Anfang war alles leicht. Inzwischen will Mathis immer wissen, wo Lena ist; er hat ihr gezeigt, wie sie ihren Standort mit ihm teilt. Antwortet sie nicht sofort, kommen zehn Nachrichten hintereinander. Zum Geburtstag ihrer besten Freundin ist Lena nicht gegangen, weil Mathis beleidigt war. Gestern sagte er: „Wenn du nichts zu verbergen hast, gib mir dein Passwort.“ Ihren Freundinnen erklärt Lena: „Er ist halt eifersüchtig. Das zeigt doch, dass er mich liebt.“"
+        },
+        {
+          "art": "frage",
+          "text": "Warum fühlt sich Kontrolle für Lena wie Liebe an – und was stimmt daran nicht?",
+          "linien": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Lena erzählt dir davon. Was antwortest du? Schreib in die leeren Felder.",
+          "hinweis": "Du musst sie nicht retten. Zuhören, glauben und Hilfe anbieten reicht.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "dialog",
+          "zeilen": [
+            {
+              "wer": "Lena",
+              "text": "„Mathis liest jetzt auch meine Nachrichten. Er macht sich halt Sorgen.“"
+            },
+            {
+              "wer": "Du"
+            },
+            {
+              "wer": "Lena",
+              "text": "„Aber sag bloß keinem was, okay?“"
+            },
+            {
+              "wer": "Du"
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Eifersucht ist kein Liebesbeweis.",
+          "text": "Eifersucht kennen viele. Aber wer liebt, lässt dem anderen Luft: eigene Freunde, eigenes Handy, eigene Zeit. Und wer in Gefahr ist, braucht Hilfe – Hilfe holen ist kein Verrat."
+        },
+        {
+          "art": "notfall"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen unterscheiden gesunde, ungesunde und gewaltvolle Beziehungen, erkennen Kontrolle als Warnzeichen und üben, einer Freundin oder einem Freund beizustehen.",
+        "ablauf": [
+          "Ampel an der Tafel erklären, Aufgabe 1 allein (5 Min.): Beispiele aus Serien oder erfunden, nie aus der Gruppe.",
+          "Geschichte vorlesen, Aufgabe 2 (7 Min.). Warnzeichen: Standort auf Druck, Nachrichtenflut, Freundin nicht besuchen, Passwort verlangen, Eifersucht als Liebesbeweis.",
+          "Nach dem Rollenspiel „Lena erzählt“: Aufgabe 3 (5 Min.). Gut: zuhören, glauben, Hilfe anbieten, keine Geheimhaltung versprechen, wenn Lena in Gefahr ist.",
+          "Merke- und Hilfe-Kasten lesen; alle tragen eine Vertrauensperson ein."
+        ],
+        "hintergrund": "Gewalt in jungen Beziehungen beginnt selten mit Schlägen, sondern mit Kontrolle: Handy prüfen, Standort verlangen, Freunde schlechtmachen – und wird oft als Liebe gedeutet. Programme wie Safe Dates (Foshee et al., 2004) und Fourth R (Wolfe et al., 2009) arbeiten mit Merkmalen gesunder Beziehungen, Warnzeichen und Übungen, wie man Freunden hilft, und verringerten Gewalt in Beziehungen über Jahre. Die Ampel beschreibt Verhalten, nicht Menschen: Gelb heißt ansprechen und hinschauen, Rot heißt Hilfe holen.",
+        "quellen": [
+          "Foshee, V. A., Bauman, K. E., Ennett, S. T., Linder, G. F., Benefield, T. & Suchindran, C. (2004). Assessing the long-term effects of the Safe Dates program and a booster in preventing and reducing adolescent dating violence victimization and perpetration. American Journal of Public Health, 94(4), 619–624.",
+          "Wolfe, D. A., Crooks, C., Jaffe, P., Chiodo, D., Hughes, R., Ellis, W., Stitt, L. & Donner, A. (2009). A school-based program to prevent adolescent dating violence: A cluster randomized trial. Archives of Pediatrics & Adolescent Medicine, 163(8), 692–699."
+        ],
+        "differenzierung": {
+          "leichter": "Nur Aufgabe 1 und 3; die Warnzeichen gemeinsam an der Tafel markieren.",
+          "schwerer": "Die Geschichte weiterschreiben: Was müsste passieren, damit es wieder grün wird?"
+        },
+        "impulse": [
+          "Ab wann ist Eifersucht nicht mehr normal?",
+          "Warum verteidigt man manchmal, wer einen kontrolliert?"
+        ],
+        "tipps": [
+          "Paare oder Ex-Paare in der Gruppe mitdenken und Beispiele entsprechend wählen.",
+          "Die Ampel hängen lassen; sie kommt in Einheit 28 und 30 wieder."
+        ],
+        "achtung": "Niemand wird nach eigenen Beziehungen gefragt. Bei Hinweisen auf Gewalt oder Erpressung die Person nach der Einheit ruhig ansprechen, nichts versprechen, nach dem Schutzkonzept handeln, die Responsable am selben Tag informieren; bei akuter Gefahr 112.",
+        "material": "Blatt für jede Person, Tafel"
+      }
+    }
+  },
+  {
+    "id": "skills-situationskarten-liebe",
+    "bereich": "skills",
+    "thema": "liebe",
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "gruppe"
+    ],
+    "dauer": "15–20 Min. je Einheit",
+    "eldib": [
+      "SOZ-38",
+      "SOZ-37",
+      "SOZ-32",
+      "V-18"
+    ],
+    "schlagworte": [
+      "Situationskarten",
+      "Beziehung",
+      "Einvernehmlichkeit",
+      "Sexting",
+      "Rollenspiel",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:masks-theater",
+    "verwandt": [
+      "skills-situationskarten"
+    ],
+    "kurs": [
+      "j3-e27",
+      "j3-e28",
+      "j3-e30"
+    ],
+    "de": {
+      "titel": "Situationskarten: Liebe, Grenzen, Netz",
+      "untertitel": "Erfundene Szenen zum Sortieren, Aufstellen und Entscheiden",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "So arbeiten wir mit den Karten",
+          "punkte": [
+            "Alle Szenen sind erfunden. Niemand spielt sich selbst oder jemanden aus der Gruppe.",
+            "Gespielt wird nur mit Worten und mit Abstand. Wer „Stopp“ sagt, beendet die Szene.",
+            "Verantwortlich ist, wer eine Grenze überschreitet – nie die Person, der es passiert."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "R · Beziehung: Grün, Gelb oder Rot? Entscheidet im Team und begründet.",
+          "symbole": [
+            "schneiden",
+            "gruppe"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 3,
+          "hoehe": 104,
+          "karten": [
+            {
+              "titel": "R1 · Der Standort",
+              "text": "Liam will, dass Chiara ihren Standort immer mit ihm teilt. „Damit ich weiß, dass dir nichts passiert.“"
+            },
+            {
+              "titel": "R2 · Das Turnier",
+              "text": "Aylin und Mila sind seit einem Jahr zusammen. Aylin fährt mit ihrer Handballmannschaft weg. Mila: „Schreib, wenn ihr da seid – und dann genieß es.“"
+            },
+            {
+              "titel": "R3 · Der Arm",
+              "text": "Im Streit packt Ben Nora so fest am Arm, dass es am nächsten Tag noch wehtut."
+            },
+            {
+              "titel": "R4 · Der Streit",
+              "text": "Noah und Samuel sind ein Paar. Im Streit sagt Samuel: „Ich bin gerade zu sauer. Reden wir morgen weiter?“ Am nächsten Tag tun sie es."
+            },
+            {
+              "titel": "R5 · Die Drohung",
+              "text": "Luca zu Zoé: „Wenn du heute mit deinen Freundinnen weggehst, mach ich Schluss. Und alle erfahren, was du mir erzählt hast.“"
+            },
+            {
+              "titel": "R6 · Vor allen",
+              "text": "Sofia liest ihren Freundinnen laut vor, was Tiago ihr privat geschrieben hat. Alle lachen."
+            },
+            {
+              "titel": "R7 · Die Nachrichtenflut",
+              "text": "Emma schreibt Diogo zwanzig Nachrichten, wenn er nicht sofort antwortet: „Warum liest du und schreibst nicht?“"
+            },
+            {
+              "titel": "R8 · Die beste Freundin",
+              "text": "Inês ist beleidigt, wenn ihre beste Freundin Amira etwas mit anderen unternimmt, und redet dann tagelang nicht mit ihr."
+            },
+            {
+              "titel": "R9 · Das Nein",
+              "text": "Elias will Ana zum Abschied küssen. Ana dreht den Kopf weg. Elias nickt: „Alles gut. Bis morgen.“"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Signalkarten zum Zeigen im Sitzen: Schneide sie aus und mal sie grün, gelb und rot an.",
+          "hinweis": "Bei den Karten R heißen sie gesund, ungesund, Gewalt – bei den Karten E klares Ja, unklar, kein Ja.",
+          "symbole": [
+            "schneiden",
+            "malen"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 3,
+          "hoehe": 84,
+          "karten": [
+            {
+              "titel": "Grün",
+              "text": "gesund · klares Ja",
+              "bild": "icon:circle-check"
+            },
+            {
+              "titel": "Gelb",
+              "text": "ungesund · unklar",
+              "bild": "icon:alert-triangle"
+            },
+            {
+              "titel": "Rot",
+              "text": "Gewalt · kein Ja",
+              "bild": "icon:hand-stop"
+            }
+          ]
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "E · Einvernehmlichkeit: klares Ja, unklar oder kein Ja?",
+          "hinweis": "Was könnte die Person fragen oder tun?",
+          "symbole": [
+            "schneiden",
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 3,
+          "hoehe": 90,
+          "karten": [
+            {
+              "titel": "E1 · Die Umarmung",
+              "text": "Nach dem Training breitet Rafael die Arme aus. Chiara lächelt kurz, macht einen Schritt zurück und hebt die Hand zum Abklatschen."
+            },
+            {
+              "titel": "E2 · Wahrheit oder Pflicht",
+              "text": "Auf einer Party soll Léa Yusuf küssen. Alle klatschen und rufen. Léa lacht verlegen und schaut zur Tür."
+            },
+            {
+              "titel": "E3 · Hör auf",
+              "text": "Zoé kitzelt Jang. Er lacht und ruft: „Hör auf!“ Zoé macht weiter: „Du lachst doch.“"
+            },
+            {
+              "titel": "E4 · Das Ja von gestern",
+              "text": "Tiago und Luca haben sich gestern zum ersten Mal geküsst. Heute ist Luca still und setzt sich weiter weg."
+            },
+            {
+              "titel": "E5 · Im Bus",
+              "text": "Diogo setzt sich neben Sofia und legt seine Hand auf ihr Knie. Sofia sagt nichts und schaut aus dem Fenster."
+            },
+            {
+              "titel": "E6 · Nach der Party",
+              "text": "Liam und Emma haben sich geküsst. Emma hat viel getrunken und kann kaum gerade stehen. Liam will mit ihr allein nach draußen."
+            },
+            {
+              "titel": "E7 · Das Selfie",
+              "text": "Aylin macht ein Selfie mit Nora und will es posten. Nora sagt: „Hm. Ich seh da komisch aus.“"
+            },
+            {
+              "titel": "E8 · Der Beweis",
+              "text": "Mathis sagt zu Inês: „Wir sind jetzt drei Monate zusammen. Wenn du mich wirklich liebst, dann …“"
+            },
+            {
+              "titel": "E9 · Die Frage",
+              "text": "Elias fragt Ana: „Darf ich dich küssen?“ – „Ja.“ Kurz danach sagt Ana: „Warte, doch nicht.“ Elias: „Okay.“"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "N · Netz: Was ist jetzt richtig – und wer kann helfen?",
+          "symbole": [
+            "schneiden",
+            "sprechen"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 3,
+          "hoehe": 90,
+          "karten": [
+            {
+              "titel": "N1 · Die Bitte",
+              "text": "Jang schreibt Nora seit Tagen: „Schick mir mal ein Bild. Nur für mich.“ Nora will nicht – und will ihn trotzdem nicht verlieren."
+            },
+            {
+              "titel": "N2 · Im Klassenchat",
+              "text": "Im Klassenchat taucht ein Nacktbild von Léa auf. Einige schreiben Sprüche darunter, andere schicken Lach-Smileys."
+            },
+            {
+              "titel": "N3 · Das fremde Profil",
+              "text": "Ein Profil mit dem Foto eines Mädchens flirtet mit Luca. Nachdem er ein Bild von sich geschickt hat, kommt: „Zahl 200 Euro, sonst sehen es alle deine Kontakte.“"
+            },
+            {
+              "titel": "N4 · Nach der Trennung",
+              "text": "Mathis schreibt Lena nach der Trennung: „Wenn du nicht zurückkommst, sehen alle das Foto von dir.“"
+            },
+            {
+              "titel": "N5 · Das gebastelte Bild",
+              "text": "Mit einer App hat jemand ein Nacktbild erstellt, auf dem Rafaels Gesicht zu sehen ist. Es geht in der Schule herum."
+            },
+            {
+              "titel": "N6 · Der Anruf",
+              "text": "Samuel ruft dich an und weint: Ein Bild von ihm geht herum. „Ich bin so dumm. Ich geh nie wieder in die Schule.“"
+            }
+          ]
+        },
+        {
+          "art": "notfall",
+          "eintraege": [
+            {
+              "name": "Notruf: Rettung und Feuerwehr",
+              "nummer": "112"
+            },
+            {
+              "name": "Polizei",
+              "nummer": "113"
+            },
+            {
+              "name": "Kanner- a Jugendtelefon (anonym, kostenlos)",
+              "nummer": "116 111"
+            },
+            {
+              "name": "BEE SECURE Helpline – Probleme im Netz, auch mit Bildern",
+              "nummer": "8002 1234"
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Erfundene Szenen für das Modul „Liebe, Sexualität und Einvernehmlichkeit“: Beziehung (R, Einheit 27), Einvernehmlichkeit (E, Einheit 28), Bilder im Netz (N, Einheit 30).",
+        "ablauf": [
+          "Auf festes Papier drucken, ausschneiden, laminieren; R1–R9 zweimal, Signalkarten je Person einmal. Karten weglassen oder Namen ändern, wenn sie einer Lage in der Gruppe ähneln.",
+          "R (Ampel-Lauf), Vorschlag: grün R2, R4, R9 – gelb R1, R7, R8 – rot R3, R5, R6. Gelb wird rot, sobald Angst, Drohung oder Zwang dazukommen.",
+          "E (Ja-Linie): klares Ja nur E9, bis Ana es zurücknimmt – danach gilt ihr Nein, und Elias achtet es; unklar, also nachfragen: E4, E7 – kein Ja: E1, E2, E3, E5, E6, E8. Bei E1: Abklatschen ja, Umarmung nein.",
+          "N (Vier Ecken): Möglichkeiten A bis D und Lösungen stehen in Einheit 30."
+        ],
+        "hintergrund": "Erfundene Szenen machen schwierige Themen besprechbar, ohne dass jemand Eigenes preisgeben muss. Fallarbeit und Rollenspiel gehören zum Kern wirksamer Programme gegen Gewalt in jungen Beziehungen (Foshee et al., 2004). Die E-Karten zeigen, wie oft Zustimmung ohne Worte ausgehandelt wird – und wie leicht dabei Missverständnisse und Ausreden entstehen (Beres, 2007). Die N-Karten greifen Formen von Erpressung auf, die Wolak et al. (2018) beschreiben: durch frühere Partner und durch Fremde aus dem Netz.",
+        "quellen": [
+          "Foshee, V. A., Bauman, K. E., Ennett, S. T., Linder, G. F., Benefield, T. & Suchindran, C. (2004). Assessing the long-term effects of the Safe Dates program and a booster in preventing and reducing adolescent dating violence victimization and perpetration. American Journal of Public Health, 94(4), 619–624.",
+          "Beres, M. A. (2007). ‘Spontaneous’ sexual consent: An analysis of sexual consent literature. Feminism & Psychology, 17(1), 93–108.",
+          "Wolak, J., Finkelhor, D., Walsh, W. & Treitman, L. (2018). Sextortion of minors: Characteristics and dynamics. Journal of Adolescent Health, 62(1), 72–79."
+        ],
+        "differenzierung": {
+          "leichter": "Karten vorlesen; je Serie drei oder vier Karten auswählen.",
+          "schwerer": "Zu einer Karte die nächste Szene schreiben: Was ändert sich, wenn jemand eingreift?"
+        },
+        "impulse": [
+          "Welche Karte war am schwersten – und warum?",
+          "Was hätte die Person auf der Karte gebraucht?"
+        ],
+        "tipps": [
+          "Die Karten werden in drei Einheiten gebraucht; laminieren lohnt sich.",
+          "Lieber wenige Karten gründlich als alle im Eiltempo."
+        ],
+        "achtung": "Rollen nie mit echten Namen oder Paaren aus der Gruppe besetzen; Übergriffe und Erpressung nur besprechen, nie spielen. Erzählt jemand Eigenes, ein Einzelgespräch anbieten, nach dem Schutzkonzept handeln und die Responsable informieren.",
+        "material": "Festes Papier, Schere, Laminierfolie"
+      }
+    }
+  },
+  {
+    "id": "skills-ja-heisst-ja",
+    "bereich": "skills",
+    "thema": "liebe",
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "25–30 Min.",
+    "eldib": [
+      "SOZ-32",
+      "SOZ-37",
+      "V-32",
+      "K-21"
+    ],
+    "schlagworte": [
+      "Einvernehmlichkeit",
+      "Konsens",
+      "Grenzen",
+      "Nachfragen",
+      "Nein annehmen",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:heart-handshake",
+    "verwandt": [
+      "skills-stopp",
+      "skills-meine-grenzen",
+      "nein-unter-druck"
+    ],
+    "kurs": [
+      "j3-e28"
+    ],
+    "de": {
+      "titel": "Ja heißt Ja",
+      "untertitel": "Woran du ein echtes Ja erkennst – und was du tust, wenn es fehlt",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Einvernehmlich heißt: Alle wollen, was passiert. Das gilt fürs Umarmen, Küssen und Anfassen genauso wie für Fotos und Nachrichten. Nur ein Ja ist ein Ja."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was macht ein echtes Ja aus? Verbinde jedes Merkmal mit dem passenden Satz.",
+          "symbole": [
+            "verbinden"
+          ]
+        },
+        {
+          "art": "zuordnen",
+          "titel": [
+            "Ein echtes Ja ist …",
+            "Das heißt"
+          ],
+          "links": [
+            "freiwillig",
+            "eindeutig",
+            "jederzeit zurücknehmbar",
+            "bei klarem Kopf",
+            "nur für genau das"
+          ],
+          "rechts": [
+            "Wer sehr betrunken ist, kann nicht zustimmen.",
+            "Ja zum Foto heißt nicht Ja zum Weiterschicken.",
+            "ohne Druck, Überreden oder Drohung",
+            "Wer Ja gesagt hat, darf jederzeit Stopp sagen.",
+            "Schweigen oder Wegschauen ist kein Ja."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ist das ein Ja? Kreuze bei jeder Szene an.",
+          "hinweis": "Unklar heißt: nachfragen – und bis dahin nichts tun.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "klares Ja",
+            "unklar",
+            "kein Ja"
+          ],
+          "items": [
+            "Mila sagt: „Ja, gern“ und lächelt.",
+            "Noah sagt nichts und schaut auf sein Handy.",
+            "Zoé hat gestern Ja gesagt. Heute ist sie still.",
+            "Jang sagt: „Na gut … bevor du wieder beleidigt bist.“",
+            "Nora ist so betrunken, dass sie kaum stehen kann.",
+            "Emma erstarrt und lacht nervös.",
+            "Elias sagt: „Ja – aber das Foto bleibt bei dir.“"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Diogo fragt, Léa zögert. Was sagt Diogo jetzt? Schreib seine Antwort in die leere Blase.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "comic",
+          "spalten": 3,
+          "felder": [
+            {
+              "figuren": [
+                "figur:ben:froh:winken",
+                "figur:jana:neutral"
+              ],
+              "sprecher": 0,
+              "text": "Darf ich dich zum Abschied umarmen?"
+            },
+            {
+              "figuren": [
+                "figur:ben:froh",
+                "figur:jana:verlegen:verschraenkt"
+              ],
+              "sprecher": 1,
+              "text": "Hm … weiß nicht."
+            },
+            {
+              "figuren": [
+                "figur:ben:ruhig",
+                "figur:jana:neutral"
+              ],
+              "sprecher": 0
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Deine eigenen Sätze – so, wie du wirklich redest.",
+          "hinweis": "Niemand muss seine Sätze vorlesen.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 1,
+          "items": [
+            "So frage ich nach: …",
+            "So nehme ich ein Nein an: …",
+            "So sage ich selbst Nein: …"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Verantwortlich ist, wer eine Grenze überschreitet.",
+          "text": "Nicht die Person, der es passiert – auch nicht, wenn sie nichts gesagt, sich nicht gewehrt oder getrunken hat."
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Wenn eine Grenze verletzt wurde",
+          "punkte": [
+            "Geh an einen sicheren Ort oder bleib bei einer vertrauten Person.",
+            "Erzähl es einer Vertrauensperson – auch Tage später geht das noch.",
+            "Bei Gefahr oder Verletzung: Notruf 112. Polizei: 113.",
+            "Beratung: SePAS, Schulärztin oder Schularzt, Planning Familial."
+          ]
+        },
+        {
+          "art": "notfall"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen kennen fünf Merkmale eines echten Ja, unterscheiden Ja, Unklarheit und Nein, finden eigene Sätze und wissen, was nach einer Grenzverletzung hilft.",
+        "ablauf": [
+          "Nach der Jacken-Szene: Aufgabe 1 (4 Min.). Lösung: freiwillig – ohne Druck; eindeutig – Schweigen; zurücknehmbar – Stopp; klarer Kopf – betrunken; genau das – Foto.",
+          "Aufgabe 2 (5 Min.), Unterschiede besprechen. Klares Ja: Mila, Elias (nur fürs Foto); unklar, also nachfragen: Noah, Zoé; kein Ja: Jang, Nora, Emma.",
+          "Aufgabe 3 zu zweit (4 Min.). Gute Antworten nehmen das Zögern ernst: „Okay, dann nicht. Bis morgen.“",
+          "Aufgabe 4 nach der Ja-Linie (3 Min.), Vorlesen nur freiwillig; Merke- und Hilfe-Kasten gemeinsam lesen."
+        ],
+        "hintergrund": "Zustimmung wird im Alltag selten ausgesprochen, sondern aus Blicken, Nähe und Mitmachen gedeutet (Beres, 2007) – das begünstigt Missverständnisse und Ausreden. Deshalb die einfache Regel: Nur ein klares Ja ist ein Ja, alles Unklare heißt nachfragen. Die fünf Merkmale fassen zusammen, was die Standards für Sexualaufklärung (WHO Regional Office for Europe & BZgA, 2010) für dieses Alter vorsehen. Das Erstarren wird eigens benannt, weil sich viele Betroffene später vorwerfen, nichts gesagt zu haben.",
+        "quellen": [
+          "Beres, M. A. (2007). ‘Spontaneous’ sexual consent: An analysis of sexual consent literature. Feminism & Psychology, 17(1), 93–108.",
+          "WHO Regional Office for Europe & BZgA (2010). Standards for Sexuality Education in Europe: A Framework for Policy Makers, Educational and Health Authorities and Specialists. Köln: Bundeszentrale für gesundheitliche Aufklärung."
+        ],
+        "differenzierung": {
+          "leichter": "Aufgabe 2 mit vier Szenen; die Merkmale mit einfachen Zeichen an die Tafel.",
+          "schwerer": "Eine Szene schreiben, in der jemand ein Ja zurücknimmt – und gut darauf reagiert wird."
+        },
+        "impulse": [
+          "Warum ist ein Nein bei jemandem, den man mag, schwerer?",
+          "Wie fragt man nach, ohne dass es komisch klingt?"
+        ],
+        "tipps": [
+          "Wörter auch in den Familiensprachen klären, etwa „consentement“.",
+          "Das Blatt gehört der Person und wird nicht eingesammelt."
+        ],
+        "achtung": "Keine Übergriffe spielen oder schildern. Deutet jemand an, selbst betroffen zu sein: nach der Einheit ruhig ansprechen, nichts versprechen, nach dem Schutzkonzept handeln, die Responsable am selben Tag informieren; bei akuter Gefahr 112.",
+        "material": "Blatt für jede Person, Tafel"
+      }
+    }
+  },
+  {
+    "id": "skills-gut-informiert",
+    "bereich": "skills",
+    "thema": "liebe",
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "25 Min.",
+    "eldib": [
+      "KOG-51",
+      "SOZ-31",
+      "SOZ-40",
+      "KOG-58"
+    ],
+    "schlagworte": [
+      "Sexualaufklärung",
+      "Pubertät",
+      "Verhütung",
+      "Vielfalt",
+      "Mythen",
+      "Informationsquellen",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:info-circle",
+    "verwandt": [
+      "skills-wissens-parcours",
+      "koerperbild"
+    ],
+    "kurs": [
+      "j3-e29"
+    ],
+    "de": {
+      "titel": "Gut informiert",
+      "untertitel": "Wissen über Körper, Sex und Vielfalt – und wo du verlässliche Antworten bekommst",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Über Liebe, Körper und Sex kursiert viel Halbwissen – im Freundeskreis, in Videos und in Pornos. Hier prüfst du, was stimmt, und erfährst, wo du verlässliche Antworten bekommst."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Stimmt das? Kreuze an.",
+          "hinweis": "„Weiß nicht“ ist eine gute Antwort. Aufgelöst wird gemeinsam.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "stimmt",
+            "stimmt nicht",
+            "weiß nicht"
+          ],
+          "items": [
+            "Die Pubertät beginnt bei allen ungefähr gleich früh.",
+            "Beim ersten Mal kann man nicht schwanger werden.",
+            "Die Pille schützt auch vor HIV und anderen Infektionen.",
+            "Pornos zeigen, wie Sex im echten Leben ist.",
+            "Man sieht einem Menschen an, ob er schwul, lesbisch, bi oder hetero ist.",
+            "Die sexuelle Orientierung sucht man sich nicht aus.",
+            "Wer mit 16 noch keinen Sex hatte, ist spät dran.",
+            "Auch in einer festen Beziehung darf man jederzeit Nein sagen."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Verbinde jeden Begriff mit der passenden Erklärung.",
+          "symbole": [
+            "verbinden"
+          ]
+        },
+        {
+          "art": "zuordnen",
+          "titel": [
+            "Begriff",
+            "Erklärung"
+          ],
+          "links": [
+            "sexuelle Orientierung",
+            "geschlechtliche Identität",
+            "trans",
+            "Pubertät",
+            "Verhütung"
+          ],
+          "rechts": [
+            "Zeit, in der sich Körper und Gefühle stark verändern",
+            "welches Geschlecht man selbst ist",
+            "verhindert eine Schwangerschaft",
+            "in wen man sich verliebt",
+            "Das eigene Geschlecht ist ein anderes als das, das bei der Geburt eingetragen wurde."
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Vielfalt ist normal.",
+          "text": "Menschen lieben verschieden, und Geschlecht ist vielfältig. Man sieht es niemandem an, und niemand muss sich dazu äußern. Über andere zu raten oder jemanden zu outen, verletzt."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wem kannst du bei Fragen zu Liebe, Körper und Sex trauen? Kreuze an.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "verlässlich",
+            "teils",
+            "nicht verlässlich"
+          ],
+          "items": [
+            "Pornos",
+            "Videos von Influencern",
+            "Freundinnen und Freunde",
+            "KI-Chatbots",
+            "Planning Familial",
+            "Schulärztin oder Schularzt"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dein Plan: Wo fragst du nach, wenn dir eine Frage peinlich ist?",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 1,
+          "items": [
+            "Wenn mir eine Frage peinlich ist, kann ich …",
+            "Eine Quelle, der ich ab jetzt weniger glaube: …"
+          ]
+        },
+        {
+          "art": "notfall",
+          "text": "Hier bekommst du verlässliche Antworten und Hilfe",
+          "eintraege": [
+            {
+              "name": "Planning Familial – Beratung zu Liebe, Körper, Verhütung und Schwangerschaft",
+              "nummer": "__________"
+            },
+            {
+              "name": "Schulärztin oder Schularzt und SePAS",
+              "nummer": "im Lycée"
+            },
+            {
+              "name": "Kanner- a Jugendtelefon (anonym, kostenlos)",
+              "nummer": "116 111"
+            },
+            {
+              "name": "Notruf: Rettung und Feuerwehr",
+              "nummer": "112"
+            },
+            {
+              "name": "Polizei",
+              "nummer": "113"
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen prüfen verbreitete Mythen zu Körper, Sexualität und Verhütung, klären Begriffe zur Vielfalt und bewerten Informationsquellen.",
+        "ablauf": [
+          "Aufgabe 1 allein (5 Min.), dann mit dem Daumen abstimmen und auflösen. Lösung: 1 bis 5 stimmt nicht, 6 stimmt, 7 stimmt nicht (jede Person hat ihr eigenes Tempo), 8 stimmt.",
+          "Aufgabe 2 zu zweit (4 Min.). Lösung: Orientierung – verliebt; Identität – welches Geschlecht; trans – bei der Geburt eingetragen; Pubertät – Veränderung; Verhütung – Schwangerschaft. Regel an die Tafel: Wir raten nicht über andere, wir outen niemanden.",
+          "Nach dem Parcours: Aufgabe 3 (3 Min.). Verlässlich: Planning Familial, Schulärztin oder Schularzt; teils: Freunde, Influencer, KI-Chatbots; nicht verlässlich: Pornos.",
+          "Aufgabe 4 allein (2 Min.); dann im Hilfe-Kasten die Kontaktdaten von Planning Familial eintragen lassen."
+        ],
+        "hintergrund": "Die Standards für Sexualaufklärung in Europa (WHO Regional Office for Europe & BZgA, 2010) sehen für dieses Alter sachliches Wissen zu Körper, Verhütung und Infektionen, zu Orientierung und Identität sowie zu Anlaufstellen vor. Nach der Auswertung der Studien durch die UNESCO (2018) führt gute Sexualaufklärung nicht zu früherem Sex, sondern eher zu späterem Beginn und mehr Schutz. Weil viel Wissen aus Pornos und Netzvideos stammt, gehört die Prüfung der Quellen dazu.",
+        "quellen": [
+          "WHO Regional Office for Europe & BZgA (2010). Standards for Sexuality Education in Europe: A Framework for Policy Makers, Educational and Health Authorities and Specialists. Köln: Bundeszentrale für gesundheitliche Aufklärung.",
+          "UNESCO (2018). International Technical Guidance on Sexuality Education: An Evidence-Informed Approach (revised ed.). Paris: UNESCO."
+        ],
+        "differenzierung": {
+          "leichter": "Aufgabe 1 mit fünf Aussagen, vorgelesen; Aufgabe 2 mit drei Begriffen.",
+          "schwerer": "Zu einer Aussage eine kurze Antwort schreiben, wie sie in der Fragenbox stehen könnte."
+        },
+        "impulse": [
+          "Welche Aussage hat euch überrascht?",
+          "Woher stammt das meiste, was ihr über Sex wisst?"
+        ],
+        "tipps": [
+          "Fachwörter in den Sprachen der Gruppe klären.",
+          "Fragen zu eigenen Beschwerden an Planning Familial oder die Schulärztin verweisen."
+        ],
+        "achtung": "Niemanden nach Orientierung, Identität oder Erfahrung fragen, niemanden outen, Abwertungen sofort stoppen. Bei Hinweisen auf Übergriffe oder eine ungewollte Schwangerschaft nach der Einheit ansprechen, Schutzkonzept anwenden, die Responsable am selben Tag informieren.",
+        "material": "Blatt für jede Person"
+      }
+    }
+  },
+  {
+    "id": "skills-wissens-parcours",
+    "bereich": "skills",
+    "thema": "liebe",
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "gruppe"
+    ],
+    "dauer": "25 Min.",
+    "eldib": [
+      "KOG-51",
+      "SOZ-18",
+      "SOZ-31"
+    ],
+    "schlagworte": [
+      "Stationen",
+      "Pubertät",
+      "Verhütung",
+      "Vielfalt",
+      "Pornos",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:route",
+    "verwandt": [
+      "skills-gut-informiert"
+    ],
+    "kurs": [
+      "j3-e29"
+    ],
+    "de": {
+      "titel": "Der Wissens-Parcours",
+      "untertitel": "Vier Stationen zu zweit: Körper, Schutz, Vielfalt, Netz",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Station 1 · Körper und Pubertät: Legt zu jeder Frage die passende Antwort.",
+          "symbole": [
+            "partner",
+            "lesen"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 3,
+          "hoehe": 86,
+          "karten": [
+            {
+              "titel": "Frage 1",
+              "text": "Ist es normal, dass die Brüste unterschiedlich groß sind?"
+            },
+            {
+              "titel": "Frage 2",
+              "text": "Warum klingt die Stimme plötzlich anders?"
+            },
+            {
+              "titel": "Frage 3",
+              "text": "Die Periode kommt mal früher, mal später. Ist das in Ordnung?"
+            },
+            {
+              "titel": "Frage 4",
+              "text": "Was ist ein feuchter Traum?"
+            },
+            {
+              "titel": "Frage 5",
+              "text": "Muss man sich die Körperhaare rasieren?"
+            },
+            {
+              "titel": "Frage 6",
+              "text": "Ist Selbstbefriedigung schädlich?"
+            },
+            {
+              "titel": "Antwort A",
+              "text": "Nein. Körperhaare sind normal. Ob man sie entfernt, entscheidet jede Person selbst."
+            },
+            {
+              "titel": "Antwort B",
+              "text": "Der Kehlkopf wächst. Nach einer Weile wird die Stimme tiefer."
+            },
+            {
+              "titel": "Antwort C",
+              "text": "Nein. Sie ist normal und schadet nicht. Man darf es tun oder lassen."
+            },
+            {
+              "titel": "Antwort D",
+              "text": "Ja. Bei den meisten Menschen sind beide Seiten nicht genau gleich."
+            },
+            {
+              "titel": "Antwort E",
+              "text": "Ein Samenerguss im Schlaf. In der Pubertät passiert das oft von selbst."
+            },
+            {
+              "titel": "Antwort F",
+              "text": "Ja. Am Anfang braucht der Körper oft einige Zeit, bis ein Rhythmus da ist."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Station 2 · Schutz und Verhütung: Wovor schützt was? Kreuzt an – auch zwei Kreuze sind möglich.",
+          "symbole": [
+            "partner",
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "Schwanger­schaft",
+            "Infek­tionen",
+            "kein sicherer Schutz"
+          ],
+          "items": [
+            "Kondom",
+            "Pille",
+            "„Aufpassen“ (Rückzieher)",
+            "Pille danach (nur im Notfall)"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "text": "Kondome gibt es ohne Rezept, zum Beispiel in Apotheke und Supermarkt. Zur Verhütung beraten Planning Familial sowie Ärztinnen und Ärzte."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Station 3 · Liebe und Vielfalt: Was brauchen Jugendliche, um so sein zu dürfen, wie sie sind? Schreibt eine Idee auf eine Haftnotiz fürs Plakat.",
+          "symbole": [
+            "partner",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "linien",
+          "anzahl": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Station 4 · Netz und Pornos: Ist das so im echten Leben – oder nur im Porno? Kreuzt an.",
+          "symbole": [
+            "partner",
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "echtes Leben",
+            "nur im Porno"
+          ],
+          "items": [
+            "Alle Körper sehen perfekt aus – ohne Haare, Pickel oder Bauch.",
+            "Niemand fragt, ob der andere das auch will.",
+            "Ein Kondom kommt nicht vor.",
+            "Menschen sind unsicher, lachen zwischendurch oder hören auf.",
+            "Wenn etwas wehtut, gehört das dazu.",
+            "Jeder Körper ist anders."
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "text": "Pornos sind gespielt, geschnitten und für Erwachsene gemacht. Als Aufklärung taugen sie nicht: Echte Sexualität hat mit Nachfragen, Schutz und echten Körpern zu tun – und wenn etwas wehtut, hört man auf."
+        },
+        {
+          "art": "notfall",
+          "text": "Hier bekommst du verlässliche Antworten",
+          "eintraege": [
+            {
+              "name": "Planning Familial – Beratung zu Liebe, Körper und Verhütung",
+              "nummer": "__________"
+            },
+            {
+              "name": "Schulärztin oder Schularzt und SePAS",
+              "nummer": "im Lycée"
+            },
+            {
+              "name": "Kanner- a Jugendtelefon (anonym, kostenlos)",
+              "nummer": "116 111"
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Paare erarbeiten an vier Stationen Wissen zu Körper, Verhütung, Vielfalt und Pornos – ohne vor der ganzen Gruppe antworten zu müssen.",
+        "ablauf": [
+          "Vorbereitung: Station 1 auf festes Papier drucken, ausschneiden, mischen; jedes Paar bekommt ein Blatt. Station 3: Plakat und Haftnotizen.",
+          "Durchlauf (20 Min.): je 5 Min. pro Station, Wechsel auf ein Signal; die Fachkräfte gehen herum.",
+          "Lösung Station 1: 1D, 2B, 3F, 4E, 5A, 6C. Station 2: Kondom – Schwangerschaft und viele Infektionen; Pille – nur Schwangerschaft; „Aufpassen“ – unsicher; Pille danach – nur im Notfall, möglichst früh, kein Infektionsschutz.",
+          "Lösung Station 4: echtes Leben sind unsichere, lachende Menschen und verschiedene Körper, alles andere nur im Porno. Auswertung (5 Min.): das Plakat vorlesen, ohne Namen."
+        ],
+        "hintergrund": "Stationen verteilen die Aufmerksamkeit: Paare lesen in ihrem Tempo und fragen nach, ohne vor der ganzen Gruppe antworten zu müssen – bei peinlichen Themen ein großer Vorteil. Die Inhalte folgen den Standards für Sexualaufklärung (WHO Regional Office for Europe & BZgA, 2010): Pubertät, Schutz vor Schwangerschaft und Infektionen, Vielfalt und Medien. Wirksam ist Aufklärung, wenn sie informiert und zugleich Haltungen und Fertigkeiten übt, etwa Quellen prüfen und Hilfe finden (UNESCO, 2018).",
+        "quellen": [
+          "WHO Regional Office for Europe & BZgA (2010). Standards for Sexuality Education in Europe: A Framework for Policy Makers, Educational and Health Authorities and Specialists. Köln: Bundeszentrale für gesundheitliche Aufklärung.",
+          "UNESCO (2018). International Technical Guidance on Sexuality Education: An Evidence-Informed Approach (revised ed.). Paris: UNESCO."
+        ],
+        "differenzierung": {
+          "leichter": "Nur die Stationen 1, 2 und 4; die Leitung liest die Karten vor.",
+          "schwerer": "An Station 4 aufschreiben, was man einem jüngeren Geschwister über Pornos sagen würde."
+        },
+        "impulse": [
+          "Welche Karte hat euch überrascht?",
+          "Wo würdet ihr zur Verhütung nachfragen?"
+        ],
+        "tipps": [
+          "Ist Planning Familial zu Gast, übernimmt die Fachkraft Station 2.",
+          "Das Plakat nur aufhängen, wenn die Gruppe zustimmt."
+        ],
+        "achtung": "Keine Bilder mit sexuellen Darstellungen. Fragen zu eigenen Beschwerden, einer Schwangerschaft oder Infektion diskret aufnehmen und zu Planning Familial oder zur Schulärztin begleiten; bei Hinweisen auf Übergriffe Schutzkonzept und Responsable.",
+        "material": "Blatt pro Paar, Station 1 auf festem Papier, Plakat, Haftnotizen, Signal"
+      }
+    }
+  },
+  {
+    "id": "skills-nudes-erpressung",
+    "bereich": "skills",
+    "thema": "liebe",
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "25–30 Min.",
+    "eldib": [
+      "V-32",
+      "SOZ-26",
+      "K-28",
+      "SOZ-37"
+    ],
+    "schlagworte": [
+      "Sexting",
+      "Nudes",
+      "Sextortion",
+      "Erpressung",
+      "Druck",
+      "Zivilcourage",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:device-mobile-message",
+    "verwandt": [
+      "skills-nein-sagen",
+      "mobbing-cybermobbing"
+    ],
+    "kurs": [
+      "j3-e30"
+    ],
+    "de": {
+      "titel": "Nudes, Druck und Erpressung – was tun?",
+      "untertitel": "Druck erkennen, Nein sagen, richtig handeln – für dich und für andere",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Die meisten Jugendlichen verschicken keine Nacktbilder. Trotzdem erleben viele Druck, es zu tun – oder sehen, wie Bilder von anderen herumgehen. Hier geht es darum, was dann hilft."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was steckt hinter dem Drucksatz? Verbinde jeden Satz mit der passenden Antwort.",
+          "symbole": [
+            "verbinden"
+          ]
+        },
+        {
+          "art": "zuordnen",
+          "titel": [
+            "Drucksatz",
+            "Was stimmt"
+          ],
+          "links": [
+            "„Alle machen das.“",
+            "„Wenn du mich liebst, dann …“",
+            "„Ich lösch es sofort.“",
+            "„Das löscht sich doch nach ein paar Sekunden.“",
+            "„Ich hab dir auch eins geschickt.“"
+          ],
+          "rechts": [
+            "Ein Screenshot dauert eine Sekunde.",
+            "Du schuldest niemandem ein Bild.",
+            "Stimmt nicht: Die meisten schicken keine.",
+            "Liebe braucht keinen Beweis.",
+            "Was verschickt ist, kannst du nicht mehr kontrollieren."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Zoé drängt Yusuf. Schreib Yusufs Antworten in die leeren Felder.",
+          "hinweis": "Ein Nein braucht keine Begründung. Blockieren ist auch eine Antwort.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "dialog",
+          "zeilen": [
+            {
+              "wer": "Zoé",
+              "text": "„Schick mir mal ein Foto. So eins, du weißt schon. Nur für mich.“"
+            },
+            {
+              "wer": "Yusuf"
+            },
+            {
+              "wer": "Zoé",
+              "text": "„Komm schon, sei nicht so. Ich lösch es auch sofort.“"
+            },
+            {
+              "wer": "Yusuf"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Luca wird mit einem Bild erpresst. Was sollte er tun? Kreuze alles an, was hilft.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "items": [
+            "zahlen, damit es aufhört",
+            "nicht zahlen und nichts mehr schicken",
+            "alles löschen, damit es keiner findet",
+            "Chat, Profilname und Forderung sichern",
+            "blockieren und auf der Plattform melden",
+            "es allein lösen – ist ja peinlich",
+            "sofort einer Vertrauensperson sagen",
+            "die BEE SECURE Helpline anrufen"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Wenn ein Bild von anderen auftaucht",
+          "punkte": [
+            "Nicht weiterleiten, nicht speichern, keinen Screenshot machen – auch nicht als Beweis.",
+            "Im Chat schreiben: „Löscht das.“",
+            "Einer Lehrperson oder dem SePAS sagen, wo das Bild aufgetaucht ist.",
+            "Weiterleiten verletzt – und ist strafbar."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ein Bild von Samuel geht herum. Er sagt: „Ich bin so dumm.“ Was sagst du ihm?",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 2,
+          "items": [
+            "Du bist nicht schuld, weil …",
+            "Ich kann mit dir zusammen …"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dein Plan für einen Moment, in dem dich jemand unter Druck setzt.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Wenn mir jemand schreibt: „Zahl, sonst schick ich dein Bild herum“,",
+              "dann": "zahle ich nicht, sichere den Chat ohne das Bild, blockiere und rufe die BEE SECURE Helpline an."
+            }
+          ]
+        },
+        {
+          "art": "notfall",
+          "eintraege": [
+            {
+              "name": "BEE SECURE Helpline – Probleme im Netz, auch Erpressung mit Bildern",
+              "nummer": "8002 1234"
+            },
+            {
+              "name": "Kanner- a Jugendtelefon (anonym, kostenlos)",
+              "nummer": "116 111"
+            },
+            {
+              "name": "Polizei",
+              "nummer": "113"
+            },
+            {
+              "name": "Notruf: Rettung und Feuerwehr",
+              "nummer": "112"
+            },
+            {
+              "name": "SOS Détresse – Hilfe am Telefon",
+              "nummer": "45 45 45"
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen durchschauen Drucksätze, sagen im Chat Nein, kennen die Schritte bei Erpressung mit Bildern und üben, Betroffenen ohne Vorwurf beizustehen.",
+        "ablauf": [
+          "Nach der Schätzfrage: Aufgabe 1 zu zweit (4 Min.). Lösung: alle – die meisten nicht; lieben – kein Beweis; lösch es – nicht kontrollierbar; löscht sich – Screenshot; auch eins – niemand schuldet ein Bild.",
+          "Aufgabe 2 allein (5 Min.), freiwillig vorlesen: Blockieren ist auch eine Antwort.",
+          "Nach den Vier Ecken: Aufgabe 3 (3 Min.). Richtig: nicht zahlen, sichern, blockieren und melden, Vertrauensperson, Helpline; falsch: zahlen, löschen, allein lösen.",
+          "Aufgabe 4 nach „Beistehen statt beschämen“, Aufgabe 5 zum Abschluss (je 3 Min.); dann den Hilfe-Kasten zeigen."
+        ],
+        "hintergrund": "Nach einer Auswertung von 39 Studien hat etwa jede siebte Person unter 18 schon ein intimes Bild verschickt, rund jede achte eines ohne Zustimmung weitergeleitet (Madigan et al., 2018). Bei Erpressung kennen Minderjährige die Täter oft persönlich, etwa aus einer früheren Beziehung; andere werden von Fremden aus dem Netz angeschrieben. Viele erzählen aus Scham niemandem davon (Wolak et al., 2018). Deshalb zählen klare Schritte, die auch in Panik tragen, und eine Haltung ohne Vorwurf.",
+        "quellen": [
+          "Madigan, S., Ly, A., Rash, C. L., Van Ouytsel, J. & Temple, J. R. (2018). Prevalence of multiple forms of sexting behavior among youth: A systematic review and meta-analysis. JAMA Pediatrics, 172(4), 327–335.",
+          "Wolak, J., Finkelhor, D., Walsh, W. & Treitman, L. (2018). Sextortion of minors: Characteristics and dynamics. Journal of Adolescent Health, 62(1), 72–79.",
+          "BEE SECURE – Initiative der luxemburgischen Regierung für ein sichereres Internet: www.bee-secure.lu"
+        ],
+        "differenzierung": {
+          "leichter": "Aufgabe 1 mit drei Sätzen; für Aufgabe 2 Antworten zur Auswahl an die Tafel.",
+          "schwerer": "Eine Nachricht für den Klassenchat schreiben, die bittet, ein Bild nicht weiterzuleiten."
+        },
+        "impulse": [
+          "Warum schweigen viele, die erpresst werden?",
+          "Was kann eine Klasse tun, damit ein Bild nicht weitergeht?"
+        ],
+        "tipps": [
+          "Die Zahlen als Entlastung bringen, nicht als Warnung.",
+          "Die Helpline-Nummer groß an die Tafel schreiben."
+        ],
+        "achtung": "Intime Bilder nie ansehen, weiterleiten, speichern oder ausdrucken, auch nicht als Beweis; die Responsable sofort informieren, Schutzkonzept anwenden. Erpressung kann eine akute Krise auslösen: Betroffene nicht allein lassen, bei Suizidgedanken oder Gefahr 112.",
+        "material": "Blatt für jede Person, Stifte"
+      }
+    }
+  }
+]

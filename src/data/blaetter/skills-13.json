@@ -1,0 +1,1077 @@
+[
+  {
+    "id": "skills-freundschafts-barometer",
+    "bereich": "skills",
+    "thema": "freundschaft",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "20 Min.",
+    "eldib": [
+      "K-27",
+      "K-35",
+      "SOZ-35",
+      "SOZ-41"
+    ],
+    "schlagworte": [
+      "Freundschaft",
+      "Vertrauen",
+      "Geben und Nehmen",
+      "Freundschafts-Barometer",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:friends",
+    "verwandt": [
+      "was-mir-in-freundschaften-wichtig-ist"
+    ],
+    "kurs": [
+      "j2-e13"
+    ],
+    "de": {
+      "titel": "Das Freundschafts-Barometer",
+      "untertitel": "Kein Freundschaftswetter ist immer sonnig. Hier schaust du genauer hin – nur für dich.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Was Freundschaften tragen",
+          "punkte": [
+            "Zeit und Spaß: Ihr macht Dinge zusammen und lacht miteinander.",
+            "Vertrauen: Was du erzählst, bleibt bei euch.",
+            "Unterstützung: Ihr seid füreinander da, wenn es schwer wird.",
+            "Geben und Nehmen: Mal gibt die eine mehr, mal der andere – mit der Zeit gleicht es sich aus.",
+            "Streit überstehen: Ihr könnt streiten und wieder zueinanderfinden."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Denk an eine Freundschaft – du musst niemandem sagen, an welche. Kreuze an, was meistens, manchmal oder selten stimmt.",
+          "hinweis": "Du kannst auch an eine Freundschaft aus einer Serie oder einem Buch denken."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "meistens",
+            "manchmal",
+            "selten"
+          ],
+          "items": [
+            "Ich kann so sein, wie ich bin.",
+            "Was ich erzähle, bleibt unter uns.",
+            "Wir hören einander zu.",
+            "Geben und Nehmen sind ungefähr ausgeglichen.",
+            "Wenn es mir schlecht geht, ist die Person für mich da.",
+            "Mein Nein wird akzeptiert.",
+            "Ich darf auch andere Freunde haben.",
+            "Nach einem Streit finden wir wieder zueinander."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wie ist das Wetter in dieser Freundschaft gerade? Kreise ein."
+        },
+        {
+          "art": "bilder",
+          "modus": "einkreisen",
+          "spalten": 3,
+          "bilder": [
+            {
+              "bild": "icon:sun",
+              "text": "sonnig: meistens gut"
+            },
+            {
+              "bild": "icon:cloud",
+              "text": "wechselhaft: mal so, mal so"
+            },
+            {
+              "bild": "icon:cloud-storm",
+              "text": "stürmisch: oft belastend"
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Wechselhaft ist normal",
+          "text": "Fast jede Freundschaft hat Wolken. Aufpassen solltest du, wenn es oft stürmt: wenn dein Nein nicht zählt, du kontrolliert wirst, Geheimnisse herumgehen oder du dich nach Treffen meistens schlecht fühlst. Dann sprich mit jemandem, dem du vertraust."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Geben und Nehmen: Was gibst du in Freundschaften – und was brauchst du selbst?"
+        },
+        {
+          "art": "waage",
+          "links": "Das gebe ich",
+          "rechts": "Das brauche ich",
+          "zeilen": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dein kleiner Schritt für diese Woche: Wie pflegst du eine Freundschaft, die dir wichtig ist?",
+          "hinweis": "Zum Beispiel: nachfragen, wie ein Test gelaufen ist, oder jemanden zum Training mitnehmen."
+        },
+        {
+          "art": "linien",
+          "anzahl": 1
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Du entscheidest, was du teilst.",
+          "text": "Das Blatt bleibt bei dir. Niemand muss erzählen, an welche Freundschaft er gedacht hat."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen kennen fünf Pfeiler tragfähiger Freundschaften, schätzen eine Freundschaft für sich allein mit dem Barometer ein und planen einen kleinen Schritt, um sie zu pflegen.",
+        "ablauf": [
+          "Nach der Anzeigen-Übung (3 Min.): den Info-Kasten mit den Punkten an der Wand vergleichen.",
+          "Aufgabe 1 allein (5 Min.): an eine Freundschaft denken, ohne sie zu nennen.",
+          "Aufgabe 2 (2 Min.), dann den Merke-Kasten lesen. Im Plenum nur fragen: „Wer kennt wechselhaftes Wetter?“",
+          "Aufgabe 3 (4 Min.): Über das Geben darf zu zweit gesprochen werden, das Brauchen bleibt privat.",
+          "Aufgabe 4 am Ende der Einheit (2 Min.); nächste Woche kurz nachfragen."
+        ],
+        "hintergrund": "Bagwell und Schmidt (2011) fassen zusammen, was Freundschaften im Jugendalter trägt: gemeinsame Zeit, Vertrauen, Unterstützung, Loyalität und die Fähigkeit, Konflikte zu lösen. Nach einer Meta-Analyse unterscheiden sich Freundschaften von anderen Beziehungen unter Gleichaltrigen durch mehr gemeinsames Tun, mehr Nähe und Gegenseitigkeit und besser gelöste Konflikte (Newcomb & Bagwell, 1995). Wichtiger als die Zahl der Freunde ist die Qualität der Freundschaft. Menschen brauchen zugleich Verbundenheit und Autonomie (Deci & Ryan, 2000); Kontrolle, Schuldgefühle oder ein übergangenes Nein sind deshalb ernst zu nehmende Warnzeichen. Das Barometer übersetzt diese Merkmale in die Sprache des Wetters: Wechselhaft ist normal, dauerhaft stürmisch nicht.",
+        "quellen": [
+          "Bagwell, C. L. & Schmidt, M. E. (2011). Friendships in Childhood and Adolescence. New York: Guilford.",
+          "Newcomb, A. F. & Bagwell, C. L. (1995). Children’s friendship relations: A meta-analytic review. Psychological Bulletin, 117(2), 306–347.",
+          "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268."
+        ],
+        "differenzierung": {
+          "leichter": "Nur Aufgabe 1 und 2; die Leitung liest die Aussagen vor.",
+          "schwerer": "Dazu das Toolbox-Blatt „Was mir in Freundschaften wichtig ist“."
+        },
+        "impulse": [
+          "Kann eine Freundschaft gut sein, obwohl ihr oft streitet?",
+          "Wo endet Loyalität, wo beginnt Kontrolle?"
+        ],
+        "tipps": [
+          "Das Blatt nicht einsammeln; es gehört den Jugendlichen.",
+          "Das Pfeiler-Plakat hängen lassen – es kommt bis Einheit 17 immer wieder vor."
+        ],
+        "achtung": "Berichtet jemand von Kontrolle, Drohungen oder Gewalt in einer Freundschaft: ein Einzelgespräch anbieten, die zuständige Leitung (Responsable) informieren und nach dem Schutzkonzept handeln.",
+        "material": "Blatt für jede Person"
+      }
+    }
+  },
+  {
+    "id": "skills-wie-war-das-gemeint",
+    "bereich": "skills",
+    "thema": "freundschaft",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "20 Min.",
+    "eldib": [
+      "K-21",
+      "K-33",
+      "SOZ-37",
+      "K-17"
+    ],
+    "schlagworte": [
+      "Chat",
+      "Missverständnis",
+      "Vier Ohren",
+      "Nachfragen",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:messages",
+    "verwandt": [
+      "skills-klaeren-statt-kippen"
+    ],
+    "kurs": [
+      "j2-e14"
+    ],
+    "de": {
+      "titel": "Wie war das gemeint?",
+      "untertitel": "Im Chat fehlen Stimme und Blick. Den Rest ergänzt der Kopf – oft mit der eigenen Laune.",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Dienstag, 16:10 Uhr. Mila schreibt ihrer Freundin Aylin."
+        },
+        {
+          "art": "dialog",
+          "zeilen": [
+            {
+              "wer": "Mila",
+              "text": "Kommst du morgen mit ins Kino? Wir gehen um vier."
+            },
+            {
+              "wer": "Aylin",
+              "text": "Kann nicht."
+            },
+            {
+              "wer": "Mila",
+              "text": "Ok."
+            }
+          ]
+        },
+        {
+          "art": "text",
+          "text": "Zwei Stunden später sieht Mila in Aylins Story ein Foto vom Skatepark – mit Chiara."
+        },
+        {
+          "art": "dialog",
+          "zeilen": [
+            {
+              "wer": "Mila",
+              "text": "Aha. Kann nicht. Schon klar."
+            },
+            {
+              "wer": "Aylin",
+              "text": "Was ist denn dein Problem?"
+            },
+            {
+              "wer": "Mila",
+              "text": "Frag doch Chiara."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was liest Mila aus den Nachrichten heraus – und was könnte Aylin gemeint haben? Füll die Tabelle aus."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Nachricht",
+            "Was Mila liest",
+            "Was Aylin vielleicht meint"
+          ],
+          "breiten": [
+            1.3,
+            2,
+            2
+          ],
+          "zeilen": 2,
+          "beispiel": [
+            "„Kann nicht.“",
+            "„Sie hat keine Lust auf mich.“",
+            "„Ich habe morgen keine Zeit.“"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Eine Nachricht – vier Ohren",
+          "text": "Jede Nachricht kann man mit vier Ohren hören. Wer gekränkt ist, hört fast nur mit dem Beziehungs-Ohr.",
+          "punkte": [
+            "Sach-Ohr: Was ist die Information?",
+            "Selbstkundgabe-Ohr: Was sagt die Nachricht über die Person, die schreibt?",
+            "Beziehungs-Ohr: Was hält sie von mir?",
+            "Appell-Ohr: Was soll ich tun?"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Statt „Aha. Kann nicht. Schon klar.“: Schreib für Mila eine Nachricht, die nachfragt, statt zu vermuten."
+        },
+        {
+          "art": "dialog",
+          "zeilen": [
+            {
+              "wer": "Mila"
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Aus der Forschung",
+          "text": "In einem Versuch verschickten Leute Sätze, die ernst oder ironisch gemeint waren. Die Absender waren sicher, dass fast alles richtig ankommt. Tatsächlich wurde der Ton oft falsch verstanden. Wurden dieselben Sätze gesprochen, klappte es viel besser."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Deine Chat-Regeln für Streit: Kreuze an, was dir helfen würde, und ergänze."
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "frei": 1,
+          "items": [
+            "Nachfragen: „Wie meinst du das?“",
+            "Bei Streit anrufen oder treffen statt schreiben",
+            "Nichts im Gruppenchat klären",
+            "Keine Screenshots weiterschicken",
+            "Erst antworten, wenn ich unter 70 bin",
+            "Wütende Antwort erst in die Notizen schreiben",
+            "Sprachnachricht, wenn der Ton wichtig ist",
+            "Nicht jede kurze Antwort als Absage lesen"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dein Plan für die nächste Nachricht, die dich ärgert."
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Wenn mich eine Nachricht ärgert,",
+              "dann": "lege ich das Handy weg, atme dreimal lang aus und frage dann nach, wie sie gemeint war."
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen erkennen, warum Nachrichten im Chat oft anders ankommen als gemeint, hören eine Nachricht mit vier Ohren und fragen nach, statt zu vermuten.",
+        "ablauf": [
+          "Nach dem Chat-Experiment: den Chat mit verteilten Rollen lesen. Frage: „Wer ist hier im Unrecht?“",
+          "Die vier Ohren an „Kann nicht.“ durchspielen (4 Min.), dann Aufgabe 1 und 2 zu zweit (6 Min.).",
+          "Auflösen: Aylin muss morgen auf ihren kleinen Bruder aufpassen; den Skatepark hatte sie längst mit Chiara ausgemacht, für eine Stunde nach der Schule. Frage: „Wie hätte Mila das herausfinden können?“",
+          "Aufgabe 3 allein, Aufgabe 4 als Plan für die Woche (4 Min.)."
+        ],
+        "hintergrund": "Geschriebene Nachrichten tragen den Tonfall schlecht. Kruger et al. (2005) zeigten, dass Absender deutlich überschätzen, wie gut Ironie oder Ernst in einer Nachricht ankommt; gesprochen wird der Ton viel öfter richtig erkannt. Schulz von Thun (1981) beschreibt vier Seiten jeder Nachricht: Sache, Selbstkundgabe, Beziehung und Appell. Wer gekränkt ist, hört vor allem mit dem Beziehungs-Ohr und liest Ablehnung, wo keine gemeint ist. Auch Schweigen wird gelesen: Man kann nicht nicht kommunizieren (Watzlawick et al., 1967).",
+        "quellen": [
+          "Kruger, J., Epley, N., Parker, J. & Ng, Z.-W. (2005). Egocentrism over e-mail: Can we communicate as well as we think? Journal of Personality and Social Psychology, 89(6), 925–936.",
+          "Schulz von Thun, F. (1981). Miteinander reden 1: Störungen und Klärungen. Reinbek: Rowohlt.",
+          "Watzlawick, P., Beavin, J. H. & Jackson, D. D. (1967). Pragmatics of Human Communication. New York: Norton."
+        ],
+        "differenzierung": {
+          "leichter": "Nur Aufgabe 2 und 3; die vier Ohren bleiben an der Tafel stehen.",
+          "schwerer": "Aylins erste Antwort so umschreiben, dass sie nicht falsch ankommt."
+        },
+        "impulse": [
+          "Wann ist eine Sprachnachricht besser als ein Text?",
+          "Was sagt es, wenn jemand eine Nachricht liest und nicht antwortet?"
+        ],
+        "tipps": [
+          "Nachfragen, wie „Ok.“, „k“ oder ein Daumen hoch ankommen – die Jugendlichen kennen die Codes besser.",
+          "Keine echten Chats zeigen lassen, auch nicht ohne Namen."
+        ],
+        "achtung": "Berichtet jemand von Beleidigungen, Drohungen oder Bloßstellung im Chat: ein Einzelgespräch anbieten, die zuständige Leitung (Responsable) informieren und auf die BEE SECURE Helpline 8002 1234 hinweisen.",
+        "material": "Blatt für jede Person, Tafel"
+      }
+    }
+  },
+  {
+    "id": "skills-klaeren-statt-kippen",
+    "bereich": "skills",
+    "thema": "freundschaft",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "20–25 Min.",
+    "eldib": [
+      "K-31",
+      "SOZ-34",
+      "V-28",
+      "K-26"
+    ],
+    "schlagworte": [
+      "Streit",
+      "Klärungsgespräch",
+      "Kompromiss",
+      "Rollenspiel",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:heart-handshake",
+    "verwandt": [
+      "skills-konflikt-treppe",
+      "konflikte-loesen"
+    ],
+    "kurs": [
+      "j2-e14"
+    ],
+    "de": {
+      "titel": "Klären statt kippen",
+      "untertitel": "Ein Streit unter Freunden lässt sich fair klären – mit dem richtigen Moment, klaren Sätzen und einem Kompromiss.",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Streit unter Freunden ist normal. Ob danach etwas kaputt ist, hängt oft davon ab, wann, wo und wie ihr ihn klärt."
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 0,
+          "items": [
+            {
+              "titel": "Runterkommen",
+              "text": "Erst unter 70. Kurz rausgehen ist erlaubt."
+            },
+            {
+              "titel": "Den Moment wählen",
+              "text": "Unter vier Augen – nicht im Gruppenchat, nicht vor Publikum."
+            },
+            {
+              "titel": "Ich-Botschaft und Frage",
+              "text": "„Ich war sauer, weil … Wie war das für dich?“"
+            },
+            {
+              "titel": "Kompromiss suchen",
+              "text": "Jede Seite gibt etwas ab und behält, was ihr wirklich wichtig ist."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Zieht zu zweit eine Karte von Seite 2. Bereitet das Gespräch vor und spielt es.",
+          "hinweis": "Wer spricht an? Wo und wann? Was ist der erste Satz?",
+          "symbole": [
+            "partner",
+            "sprechen"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Wir klären es hier und dann: …",
+            "Unser erster Satz: …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Sucht einen Kompromiss: Was ist jeder Seite wirklich wichtig – und wo kann sie nachgeben?"
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Wer",
+            "Das ist wirklich wichtig",
+            "Da kann nachgegeben werden"
+          ],
+          "breiten": [
+            1.3,
+            2,
+            2
+          ],
+          "zeilen": 2,
+          "beispiel": [
+            "„Der Samstag“: ich",
+            "Zeit mit meiner Freundin",
+            "ob Kino oder Skatepark"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Unser Kompromiss: …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Wenn die andere Person blockt",
+          "text": "Nicht nachsetzen. Sag, dass dir die Freundschaft wichtig ist, und biete ein neues Gespräch an: „Ich will das klären. Sag Bescheid, wann es dir passt.“"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dein Satz für den nächsten echten Streit: Wie fängst du an?"
+        },
+        {
+          "art": "linien",
+          "anzahl": 1
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "text",
+          "text": "Situationskarten: ausschneiden, verdeckt hinlegen und zu zweit eine ziehen. Alle Situationen sind erfunden."
+        },
+        {
+          "art": "karten",
+          "spalten": 3,
+          "karten": [
+            {
+              "titel": "Das Geheimnis",
+              "text": "Du hast deinem besten Freund erzählt, dass du vielleicht die Klasse wiederholen musst. Jetzt wissen es drei aus der Klasse."
+            },
+            {
+              "titel": "Immer zu spät",
+              "text": "Deine Freundin kommt zum dritten Mal eine halbe Stunde zu spät. Heute habt ihr deshalb den Bus verpasst."
+            },
+            {
+              "titel": "Der Samstag",
+              "text": "Ihr wollt am Samstag etwas zusammen machen. Du willst ins Kino, deine Freundin in den Skatepark."
+            },
+            {
+              "titel": "Die Hausaufgaben",
+              "text": "Ein Freund schreibt jeden Morgen deine Hausaufgaben ab. Gestern hat es die Lehrerin gemerkt, und ihr habt beide Ärger bekommen."
+            },
+            {
+              "titel": "Das Foto",
+              "text": "Deine Freundin hat ein Foto von dir gepostet, auf dem du dich unmöglich findest. Vierzig Leute haben es schon gesehen."
+            },
+            {
+              "titel": "Der Voice-Chat",
+              "text": "Ihr zockt online im Team. Dein Freund schreit dich an, weil du einen Fehler gemacht hast. Alle haben es gehört."
+            },
+            {
+              "titel": "Die Absage",
+              "text": "Dein Freund hat euren Kinoabend abgesagt, weil er krank sei. Abends siehst du ihn in einer Story auf einer Party."
+            },
+            {
+              "titel": "Der Spitzname",
+              "text": "Ein Freund nennt dich vor anderen bei einem Spitznamen, den du nicht magst. Er findet ihn lustig."
+            },
+            {
+              "titel": "Das Geld",
+              "text": "Du hast deiner Freundin vor einem Monat 20 Euro geliehen. Seitdem hat sie das Geld nie mehr erwähnt."
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen bereiten ein Klärungsgespräch unter Freunden vor, spielen es mit Ich-Botschaft und Frage und suchen einen Kompromiss, mit dem beide Seiten leben können.",
+        "ablauf": [
+          "Vorher: Seite 2 einmal zusätzlich drucken, die Karten ausschneiden und verdeckt auslegen.",
+          "Die vier Schritte vorstellen (3 Min.); wer Jahr 1 kennt, erkennt die Konflikt-Treppe.",
+          "Paare ziehen eine Karte, bereiten vor (2 Min.), spielen (3 Min.) und tragen den Kompromiss ein. Rollen tauschen.",
+          "Zwei Paare stellen ihren Kompromiss vor. Frage: „Kann jede Seite damit leben?“",
+          "Aufgabe 3 in der Abschlussrunde (2 Min.)."
+        ],
+        "hintergrund": "Die vier Schritte übertragen die Konflikt-Treppe aus Jahr 1 auf Freundschaften. Bei hoher Anspannung gelingt kein faires Gespräch, und vor Publikum oder im Gruppenchat geht es schnell ums Gesicht-Wahren statt um die Sache. Ich-Botschaft und echte Frage folgen der niederlagelosen Methode von Gordon (1972). Ein Kompromiss gelingt leichter, wenn beide unterscheiden, was ihnen wirklich wichtig ist und worauf sie verzichten können (Fisher & Ury, 1981). Er ist nicht immer die beste, aber oft eine faire und schnelle Lösung (Thomas & Kilmann, 1974).",
+        "quellen": [
+          "Gordon, T. (1972). Familienkonferenz. Hamburg: Hoffmann und Campe.",
+          "Fisher, R. & Ury, W. (1981). Getting to Yes. Boston: Houghton Mifflin.",
+          "Thomas, K. W. & Kilmann, R. H. (1974). Thomas-Kilmann Conflict Mode Instrument. Tuxedo, NY: Xicom."
+        ],
+        "differenzierung": {
+          "leichter": "Satzanfänge an die Tafel: „Ich war sauer, weil …“, „Wie war das für dich?“",
+          "schwerer": "Die Karte mit einer Wendung spielen: Die andere Person blockt zuerst ab."
+        },
+        "impulse": [
+          "Wann gibt eine Seite bei einem Kompromiss zu viel nach?",
+          "Was tust du, wenn die andere Person gar nicht reden will?"
+        ],
+        "tipps": [
+          "Karten laminieren; sie passen auch zu Streit im Team oder in der Familie.",
+          "Nach jeder Szene aus der Rolle aussteigen: aufstehen, ausschütteln, den eigenen Namen sagen."
+        ],
+        "achtung": "Karten weglassen, die einem aktuellen Streit in der Gruppe ähneln. Bei Bedrohung, Erpressung oder Gewalt ist ein Klärungsgespräch das falsche Werkzeug: schützen und die zuständige Leitung (Responsable) informieren.",
+        "material": "Blatt für jede Person, Seite 2 einmal extra, Schere"
+      }
+    }
+  },
+  {
+    "id": "skills-drinnen-oder-draussen",
+    "bereich": "skills",
+    "thema": "freundschaft",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "20 Min.",
+    "eldib": [
+      "SOZ-37",
+      "SOZ-15",
+      "SOZ-26",
+      "SOZ-32"
+    ],
+    "schlagworte": [
+      "Ausgrenzung",
+      "Zugehörigkeit",
+      "Einbeziehen",
+      "Eifersucht",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:door-enter",
+    "verwandt": [
+      "nein-unter-druck",
+      "skills-zivilcourage-leiter"
+    ],
+    "kurs": [
+      "j2-e15"
+    ],
+    "de": {
+      "titel": "Drinnen oder draußen?",
+      "untertitel": "Ausgeschlossen werden tut weh. Hereinholen geht oft mit einem einzigen Satz.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Was Ausgrenzung trifft",
+          "text": "Wer ausgeschlossen wird, spürt das sofort – auch bei Kleinigkeiten. Getroffen werden vier Bedürfnisse:",
+          "punkte": [
+            "Dazugehören: Ich stehe draußen.",
+            "Selbstwert: Mit mir stimmt etwas nicht.",
+            "Kontrolle: Ich kann nichts dagegen tun.",
+            "Zählen: Ich bin unsichtbar."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Welche Bedürfnisse werden hier getroffen? Kreuze an – oft sind es mehrere."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "Dazugehören",
+            "Selbstwert",
+            "Kontrolle",
+            "Zählen"
+          ],
+          "items": [
+            "Mila sieht in einer Story, dass ihre ganze Clique auf einem Geburtstag ist. Sie war nicht eingeladen.",
+            "Die Gruppe redet in der Pause nur Luxemburgisch. Inês ist seit dem Sommer im Land und versteht wenig.",
+            "Jedes Mal, wenn Samuel im Gruppenchat etwas schreibt, antwortet niemand.",
+            "Bei der Gruppenarbeit sind alle Gruppen schon voll. Elias bleibt übrig.",
+            "Amiras Freundinnen lachen über einen Insider-Witz und erklären ihn ihr nicht."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Einbeziehen geht oft mit einem Satz und einer Geste. Was könntest du in diesen Situationen sagen oder tun?"
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Situation",
+            "Das könnte ich sagen oder tun"
+          ],
+          "breiten": [
+            1.3,
+            3
+          ],
+          "zeilen": 3,
+          "beispiel": [
+            "Inês in der Pause",
+            "Auf Französisch fragen: „Tu viens avec nous ?“ und im Kreis Platz machen."
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Eifersucht ohne Druck",
+          "text": "Eifersucht ist oft Angst, jemanden zu verlieren. Sag das Gefühl, nicht die Drohung: statt „Entscheide dich: sie oder ich“ lieber „Ich hab Angst, dass ich dir nicht mehr so wichtig bin. Machen wir am Wochenende was?“"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Bau diesen Satz in eine Ich-Botschaft um: „Wenn du am Samstag mit denen gehst, brauchst du nicht mehr zu kommen.“"
+        },
+        {
+          "art": "linien",
+          "anzahl": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Deine Einbeziehen-Mission für diese Woche – ohne Namen, nur die Situation."
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Wenn ich in der Kantine sehe, dass jemand allein sitzt,",
+              "dann": "frage ich, ob wir uns dazusetzen dürfen, oder winke die Person an unseren Tisch."
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "text": "Wenn du selbst oft draußen stehst oder in einer Freundschaft unter Druck gesetzt wirst, sprich mit jemandem, dem du vertraust – zum Beispiel beim SePAS. Anonym und kostenlos: Kanner- a Jugendtelefon 116 111."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen verstehen, welche Bedürfnisse Ausgrenzung trifft, finden Sätze und Gesten zum Einbeziehen und sagen Eifersucht als Gefühl statt als Druck.",
+        "ablauf": [
+          "Nach dem Ballspiel: den Info-Kasten mit den Beobachtungen verbinden (3 Min.).",
+          "Aufgabe 1 allein (4 Min.). Frage: „Welche Situation trifft am meisten – und warum?“",
+          "Aufgabe 2 zu zweit (6 Min.); die Sätze an die Tafel, sie werden für die Szenen nach der Pause gebraucht.",
+          "Nach der Umbau-Staffel Aufgabe 3 (3 Min.), in der Abschlussrunde Aufgabe 4 (2 Min.)."
+        ],
+        "hintergrund": "In Studien mit dem Ballspiel Cyberball reichen wenige Minuten, in denen niemand mehr zuspielt, um Schmerz und schlechte Stimmung auszulösen – selbst wenn nur ein Computer mitspielt (Zadro et al., 2004); bedroht werden Zugehörigkeit, Selbstwert, Kontrolle und das Gefühl, zu zählen (Williams, 2007). Wer ausgeschlossen wird, versucht diese Bedürfnisse zurückzugewinnen – durch Anpassung, Ärger oder Rückzug. Eifersucht hat eine ähnliche Wurzel: die Angst, die Zugehörigkeit zu verlieren. Gute Beziehungen brauchen Verbundenheit und Autonomie zugleich (Deci & Ryan, 2000); Druck und Kontrolle nehmen die Autonomie.",
+        "quellen": [
+          "Zadro, L., Williams, K. D. & Richardson, R. (2004). How low can you go? Ostracism by a computer is sufficient to lower self-reported levels of belonging, control, self-esteem, and meaningful existence. Journal of Experimental Social Psychology, 40(4), 560–567.",
+          "Williams, K. D. (2007). Ostracism. Annual Review of Psychology, 58, 425–452.",
+          "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268."
+        ],
+        "differenzierung": {
+          "leichter": "Nur drei Situationen; für Aufgabe 2 Satzanfänge: „Magst du …?“, „Komm doch …“",
+          "schwerer": "Eine Situation erfinden, in der Ausgrenzung leise passiert, und eine Idee zum Einbeziehen."
+        },
+        "impulse": [
+          "Wann ist es in Ordnung, unter sich zu bleiben – und wann wird es Ausgrenzung?",
+          "Was macht es schwer, jemanden hereinzuholen, wenn die eigene Gruppe nicht will?"
+        ],
+        "tipps": [
+          "Sprache ist in Luxemburg oft der Schlüssel: Ein Wechsel ins Französische oder Deutsche kann schon Einbeziehen sein.",
+          "Die Missionen in der nächsten Einheit kurz aufgreifen."
+        ],
+        "achtung": "Nicht nach eigenen Erfahrungen fragen. Bei Hinweisen auf Mobbing, Isolation oder Kontrolle in Freundschaften: Einzelgespräch, die zuständige Leitung (Responsable) informieren, nach dem Schutzkonzept handeln.",
+        "material": "Blatt für jede Person"
+      }
+    }
+  },
+  {
+    "id": "skills-verliebt-mit-respekt",
+    "bereich": "skills",
+    "thema": "liebe",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "20 Min.",
+    "eldib": [
+      "K-26",
+      "SOZ-32",
+      "SOZ-39",
+      "K-27"
+    ],
+    "schlagworte": [
+      "Verliebtsein",
+      "Liebeskummer",
+      "Einvernehmlichkeit",
+      "Respekt",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:hearts",
+    "verwandt": [
+      "skills-stopp",
+      "was-mir-in-freundschaften-wichtig-ist"
+    ],
+    "kurs": [
+      "j2-e16"
+    ],
+    "de": {
+      "titel": "Verliebt – mit Respekt",
+      "untertitel": "Verliebtsein ist normal. Respekt heißt: Alle wollen, was passiert – und ein Nein gilt.",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "Luca",
+          "bild": "figur:ben:verlegen",
+          "text": "Seit drei Wochen nimmt Luca den langen Weg über den zweiten Stock, weil dort Noras Klassenzimmer ist. Eine Nachricht an sie hat er elfmal umgeschrieben. Am Freitag fragt er sie, ob sie am Samstag mit zum Skatepark kommt. Nora antwortet freundlich: „Ich mag dich, aber nicht so. Sorry.“"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Welche Gefühle kann Luca in diesen Wochen haben? Kreise ein – es dürfen viele sein.",
+          "hinweis": "Es geht um Luca, nicht um dich. Fragen kannst du anonym in die Fragenbox werfen."
+        },
+        {
+          "art": "gefuehle",
+          "modus": "einkreisen",
+          "spalten": 6,
+          "gefuehle": [
+            "froh",
+            "aufgeregt",
+            "nervoes",
+            "verlegen",
+            "traurig",
+            "enttaeuscht"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Liebeskummer: Was hilft Luca jetzt – und was macht es schlimmer? Kreuze an."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "hilft",
+            "macht es schlimmer"
+          ],
+          "items": [
+            "Mit einem guten Freund reden",
+            "Nora jeden Tag wieder fragen",
+            "Laufen gehen oder laut Musik hören",
+            "Stundenlang ihr Profil anschauen",
+            "Gefühle aufschreiben, ohne sie abzuschicken",
+            "Über Nora lästern"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Einvernehmlich heißt",
+          "punkte": [
+            "Alle wollen, was passiert – freiwillig und ohne Druck.",
+            "Im Zweifel fragen: „Ist das okay für dich?“",
+            "Ein Nein gilt, auch ohne Begründung. Zögern, Schweigen oder ein Schritt zurück sind kein Ja.",
+            "Jede Person darf es sich jederzeit anders überlegen.",
+            "Wer in wen verliebt ist, erzählt jede Person selbst – oder gar nicht."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Okay, erst fragen oder Stopp? Kreuze an."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "okay",
+            "erst fragen",
+            "Stopp"
+          ],
+          "items": [
+            "Noah fragt Lena, ob er sich in der Pause zu ihr setzen darf. Sie nickt und rückt zur Seite.",
+            "Diogo will ein Video, auf dem Mila tanzt, in den Klassenchat stellen.",
+            "Sofia hat Rafael gesagt, dass sie nicht mit ihm zusammen sein will. Er schreibt ihr trotzdem jeden Abend.",
+            "Emma erzählt in der Gruppe, dass Samuel in einen Jungen aus der Parallelklasse verliebt ist.",
+            "Elias will Zoé zum Abschied umarmen. Bisher haben sie sich immer nur zugewinkt."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wie kann Luca auf Noras Nein antworten – so, dass er es respektiert und selbst gut dasteht?"
+        },
+        {
+          "art": "dialog",
+          "zeilen": [
+            {
+              "wer": "Nora",
+              "text": "Ich mag dich, aber nicht so. Sorry."
+            },
+            {
+              "wer": "Luca"
+            }
+          ]
+        },
+        {
+          "art": "notfall",
+          "text": "Hilfe und Beratung – auch anonym",
+          "eintraege": [
+            {
+              "name": "Notruf: Rettung und Feuerwehr",
+              "nummer": "112"
+            },
+            {
+              "name": "Polizei",
+              "nummer": "113"
+            },
+            {
+              "name": "Kanner- a Jugendtelefon (anonym, kostenlos)",
+              "nummer": "116 111"
+            },
+            {
+              "name": "SOS Détresse – Hilfe am Telefon",
+              "nummer": "45 45 45"
+            },
+            {
+              "name": "BEE SECURE Helpline (Bilder, Chats, Internet)",
+              "nummer": "8002 1234"
+            },
+            {
+              "name": "SePAS im Lycée, Schulärztin oder Schularzt",
+              "nummer": "vor Ort"
+            },
+            {
+              "name": "Planning Familial (Fragen zu Liebe, Körper, Beziehung)",
+              "nummer": "__________"
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen beschreiben an einer erfundenen Figur Verliebtsein und Liebeskummer, wenden die Grundregel der Einvernehmlichkeit auf Alltagssituationen an und üben, ein Nein anzunehmen.",
+        "ablauf": [
+          "Vorher: Elternbrief, Responsable informiert, Regeln am Plakat, Fragenbox bereit.",
+          "Geschichte lesen, Aufgabe 1 und 2 allein (7 Min.). Betonen: Es geht um Luca, nicht um euch.",
+          "Nach dem Ampel-Lauf: Merke-Kasten, Aufgabe 3 (4 Min.). Auflösung: 1 okay, 2 erst fragen, 3 Stopp, 4 Stopp – niemand outet andere, 5 erst fragen.",
+          "Nach „Nein annehmen“: Aufgabe 4 (3 Min.), zwei, drei Freiwillige lesen vor. Zum Schluss den Hilfe-Kasten zeigen."
+        ],
+        "hintergrund": "Collins (2003) beschreibt romantische Gefühle im Jugendalter als verbreitet und bedeutsam für die Entwicklung: Sie gehen mit starken Gefühlen einher und sind ein Übungsfeld für Nähe und Respekt. Liebeskummer ist deshalb ernst zu nehmen. Einvernehmlichkeit wird hier an Alltagssituationen geübt – Umarmung, Foto, Nachricht, Gerücht. Programme, die solche Fertigkeiten früh trainieren, senken später Gewalt in Beziehungen (Foshee et al., 2004). Das Blatt enthält bewusst keine sexuellen Inhalte; sie folgen im dritten Kursjahr.",
+        "quellen": [
+          "Collins, W. A. (2003). More than myth: The developmental significance of romantic relationships during adolescence. Journal of Research on Adolescence, 13(1), 1–24.",
+          "Foshee, V. A., Bauman, K. E., Ennett, S. T., Linder, G. F., Benefield, T. & Suchindran, C. (2004). Assessing the long-term effects of the Safe Dates program and a booster in preventing and reducing adolescent dating violence victimization and perpetration. American Journal of Public Health, 94(4), 619–624."
+        ],
+        "differenzierung": {
+          "leichter": "Aufgabe 3 gemeinsam lesen und per Handzeichen einschätzen.",
+          "schwerer": "Eine eigene gelbe Situation schreiben – und wie man fragen kann."
+        },
+        "impulse": [
+          "Warum ist ein Nein so schwer anzunehmen, wenn man verliebt ist?",
+          "Ist Nachfragen unromantisch – oder respektvoll?"
+        ],
+        "tipps": [
+          "Die Fragenbox im Team öffnen; Fragen zu Sexualität kurz beantworten oder weiterverweisen.",
+          "Namen austauschen, falls jemand in der Gruppe so heißt."
+        ],
+        "achtung": "Hinweise auf Übergriffe, Druck zu Bildern oder Gewalt in einer Beziehung: nach der Einheit ruhig ansprechen, nichts versprechen, Schutzkonzept anwenden, die zuständige Leitung (Responsable) am selben Tag informieren; bei akuter Gefahr 112.",
+        "material": "Blatt für jede Person, Fragenbox"
+      }
+    }
+  },
+  {
+    "id": "skills-wenn-freundschaften-enden",
+    "bereich": "skills",
+    "thema": "freundschaft",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "20 Min.",
+    "eldib": [
+      "K-26",
+      "SOZ-12",
+      "V-23",
+      "K-35"
+    ],
+    "schlagworte": [
+      "Freundschaft",
+      "Abschied",
+      "Trauer",
+      "Neue Kontakte",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:arrow-fork",
+    "verwandt": [
+      "wer-ist-fuer-mich-da",
+      "skills-freundschafts-barometer"
+    ],
+    "kurs": [
+      "j2-e17"
+    ],
+    "de": {
+      "titel": "Wenn Freundschaften enden",
+      "untertitel": "Freundschaften verändern sich. Manche enden – das darf wehtun. Danach kommt Neues.",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "Nora und Emma",
+          "bild": "figur:jana:traurig",
+          "text": "Nora und Emma waren seit Cycle 2 unzertrennlich. Im Lycée kamen sie in verschiedene Klassen; Emma spielt jetzt Handball, Nora zeichnet Mangas. Nach einem Streit erzählte Emma etwas herum, das Nora ihr anvertraut hatte. Heute sitzen die beiden im selben Bus und schauen aufs Handy."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was hat die Freundschaft von Nora und Emma verändert? Kreuze an – und ergänze, was es sonst noch gibt."
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "frei": 1,
+          "items": [
+            "neue Klasse oder neue Schule",
+            "neue Hobbys oder ein Verein",
+            "neue Freundinnen oder Freunde",
+            "ein Umzug",
+            "ein Streit, der nicht geklärt wurde",
+            "ein Geheimnis, das weitererzählt wurde",
+            "man hat sich weniger zu sagen",
+            "Druck oder Kontrolle"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Das Pendel",
+          "text": "Nach einem Abschied schwingen viele hin und her: Mal ist die Trauer groß, mal geht der Blick nach vorn. Beides gehört dazu, und beides hilft. Traurig, wütend und erleichtert zugleich zu sein, ist normal."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Fair auseinandergehen: Was ist fair, was unfair?"
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "fair",
+            "unfair",
+            "kommt drauf an"
+          ],
+          "items": [
+            "Plötzlich nicht mehr antworten, ohne ein Wort",
+            "Sagen: „Ich merke, wir haben uns auseinandergelebt.“",
+            "Geheimnisse der anderen Person weitererzählen",
+            "Andere gegen sie aufhetzen",
+            "Im Bus oder in der Pause trotzdem grüßen",
+            "Sich zurückziehen, wenn die Freundschaft dir schadet, und mit einer Vertrauensperson reden"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Neue Kontakte fangen klein an. Kreise die Stufe ein, die für dich gerade machbar ist."
+        },
+        {
+          "art": "leiter",
+          "stufen": 5,
+          "unten": "klein",
+          "oben": "mutig",
+          "beispiele": [
+            "grüßen, lächeln, nicken",
+            "eine Frage stellen",
+            "sich in der Pause dazustellen",
+            "etwas zusammen machen: Projekt, Verein, Spiel",
+            "jemanden einladen"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dein erster Schritt als Wenn-dann-Plan – ohne Namen."
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Wenn ich am Mittwoch im Training neben der Neuen stehe,",
+              "dann": "frage ich sie, wie lange sie schon spielt."
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "text": "Wenn du dich nach dem Ende einer Freundschaft lange einsam oder traurig fühlst, bist du damit nicht allein. Sprich mit jemandem, dem du vertraust – zum Beispiel beim SePAS. Anonym und kostenlos: Kanner- a Jugendtelefon 116 111."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen verstehen, warum Freundschaften sich verändern und enden, unterscheiden faires von unfairem Auseinandergehen und planen einen ersten Schritt zu neuen Kontakten.",
+        "ablauf": [
+          "Nach der Freundschaftskurve: Geschichte lesen, Aufgabe 1 allein (3 Min.).",
+          "Das Pendel erklären (2 Min.), dann Aufgabe 2 allein (4 Min.).",
+          "Besprechen, wo die Gruppe uneins ist – etwa beim plötzlichen Nicht-mehr-Antworten.",
+          "Nach dem Kugellager: Aufgabe 3 und 4 allein (7 Min.)."
+        ],
+        "hintergrund": "Freundschaften im Jugendalter halten oft kürzer, als es sich anfühlt; Schulwechsel, neue Interessen und gebrochenes Vertrauen beenden viele von ihnen (Bagwell & Schmidt, 2011). Der Verlust kann echte Trauer auslösen, oft zusammen mit Wut, Schuld oder Erleichterung. Nach Stroebe und Schut (1999) pendeln Menschen nach einem Verlust zwischen Zurückschauen und Neuanfang; beides hilft bei der Verarbeitung. Kleine, konkret geplante Schritte machen es wahrscheinlicher, dass jemand neue Kontakte tatsächlich anspricht (Gollwitzer, 1999).",
+        "quellen": [
+          "Bagwell, C. L. & Schmidt, M. E. (2011). Friendships in Childhood and Adolescence. New York: Guilford.",
+          "Stroebe, M. & Schut, H. (1999). The dual process model of coping with bereavement: Rationale and description. Death Studies, 23(3), 197–224.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "differenzierung": {
+          "leichter": "Nur Aufgabe 2 und 3; die Stufen der Leiter vorlesen.",
+          "schwerer": "Einen fairen Abschiedssatz für Nora schreiben – ohne Vorwurf, ohne Rache."
+        },
+        "impulse": [
+          "Kann eine Freundschaft enden, ohne dass jemand schuld ist?",
+          "Wann ist es richtig, eine Freundschaft zu beenden?"
+        ],
+        "tipps": [
+          "Das Blatt nicht einsammeln; Leiter und Plan nächste Woche kurz aufgreifen.",
+          "Freizeitangebote in der Nähe bereithalten: Vereine, Jugendhaus, Musikschule."
+        ],
+        "achtung": "Ein Ende kann an andere Verluste erinnern. Bei anhaltender Traurigkeit, Rückzug oder Sätzen wie „Mich würde keiner vermissen“: Gespräch am selben Tag, die zuständige Leitung (Responsable) informieren, nach dem Schutzkonzept handeln.",
+        "material": "Blatt für jede Person"
+      }
+    }
+  }
+]

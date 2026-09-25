@@ -133,6 +133,32 @@ function pruefe(bed, text) {
   pruefe(await page.locator('.ku-held').isVisible(), 'Kurs erscheint wieder')
   pruefe(page.url().endsWith('#kurs'), 'Hash #kurs nach Reiterwechsel')
 
+  // Kursjahre 2 und 3: Gruppe umstellen → Jahresweg, Joker, erste Einheit
+  for (const nr of [2, 3]) {
+    const jk = kurs.find((k) => k.jahr && k.jahr.nr === nr)
+    if (!jk) continue
+    const reiheN = jk.module.flatMap((m) => m.einheiten).filter((id) => einheiten.has(id))
+    const jokerN = [...einheiten.values()].filter((e) => e.joker && e.jahr === nr).length
+    await page.goto(DATEI + '#kurs')
+    await page.waitForSelector('.ku-held')
+    await page.click('.ku-gruppenwahl .btn')
+    await page.waitForSelector('dialog .ku-gruppen')
+    await page.selectOption('dialog .ku-gruppen li.aktiv select[aria-label="Kursjahr"]', String(nr))
+    await page.click('dialog .icon-btn[aria-label="Schließen"]')
+    await page.waitForSelector('.ku-held')
+    const erste = einheiten.get(reiheN[0])
+    pruefe((await page.textContent('.ku-held h2')).includes(erste.titel), `Jahr ${nr}: Held zeigt die erste Einheit`)
+    pruefe((await page.locator('.ku-modul').count()) === jk.module.length, `Jahr ${nr}: Jahresweg zeigt alle ${jk.module.length} Module`)
+    pruefe((await page.locator('button.ku-e').count()) === reiheN.length, `Jahr ${nr}: ${reiheN.length} Einheiten im Jahresweg`)
+    pruefe((await page.locator('.ku-joker-karte').count()) === jokerN, `Jahr ${nr}: ${jokerN} Joker`)
+    await page.click('.ku-held-aktionen .btn-primary')
+    await page.waitForSelector('.ku-einheit-kopf')
+    pruefe((await page.locator('.ku-schritt').count()) === erste.schritte.length, `Jahr ${nr}: erste Einheit mit allen Schritten`)
+    pruefe((await page.textContent('.ku-einheit-kopf')).includes('von ' + reiheN.length), `Jahr ${nr}: „Einheit 1 von ${reiheN.length}“`)
+  }
+  await page.goto(DATEI + '#kurs')
+  await page.waitForSelector('.ku-held')
+
   // Schmale Ansicht ohne waagrechtes Scrollen im Inhalt
   await page.setViewportSize({ width: 390, height: 800 })
   const breit = await page.evaluate(() => document.querySelector('.ku-held').scrollWidth <= document.querySelector('.ku-held').clientWidth + 1)

@@ -1,0 +1,991 @@
+{
+  "einheiten": [
+    {
+      "id": "j3-e06",
+      "nr": 6,
+      "jahr": 3,
+      "modul": "j3-m2",
+      "titel": "Gut entscheiden",
+      "kurz": "Bauch oder Kopf? Die Gruppe trifft Blitzentscheidungen, lernt einen Entscheidungsweg in vier Schritten mit Pro und Contra kennen und lässt im inneren Rat Bauch, Kopf und Werte miteinander ringen.",
+      "dauer": 100,
+      "ziele": [
+        "unterscheiden kleine Entscheidungen, bei denen der Bauch reicht, von großen, die Bauch und Kopf brauchen",
+        "wenden den Entscheidungsweg in vier Schritten und die vier Felder von Pro und Contra auf einen Fall an",
+        "erleben im inneren Rat, wie Gefühle, Fakten, Werte und die Meinung anderer an einer Entscheidung ziehen",
+        "nutzen die Freundin-Frage, um bei einer eigenen Entscheidung Abstand zu gewinnen"
+      ],
+      "material": [
+        "Gefühlsrad (A3, laminiert), Wäscheklammern und Anspannungsskala 0–100",
+        "Kreppband für eine Mittellinie quer durch den Raum, zwei Schilder „A“ und „B“ für die Wände",
+        "Tafel oder Flipchart mit dem Tafelbild „Bauch, Kopf und die kluge Mitte“ (Schritt 4)",
+        "Schülerblatt „Gut entscheiden“ für jede Person",
+        "Fallkarten und Stimmen-Schilder vom Blatt „Entscheidungs-Werkstatt“, einmal auf festem Papier ausgedruckt und ausgeschnitten",
+        "Die Top 3 der Jugendlichen aus Einheit 3 (Blatt „Meine Werte“, im Skills-Buch)",
+        "Skills-Pässe, Stempel, Imbiss und Getränke (Allergien beachten)"
+      ],
+      "vorbereitung": [
+        "Eine Linie aus Kreppband quer durch den Raum kleben, links und rechts an die Wand je ein Schild A und B hängen; davor so viel Platz lassen, dass alle schnell hin und her gehen können.",
+        "Das Tafelbild mit leeren Zeilen vorbereiten und bis Schritt 4 abdecken.",
+        "Fallkarten E1–E6 ausschneiden und Karten weglassen, die einer aktuellen Lage in der Gruppe zu sehr ähneln, etwa einem anstehenden Schulwechsel.",
+        "Die vier Stimmen-Schilder (Bauch, Kopf, Werte, Die anderen) ausschneiden, wenn möglich auf Pappe kleben."
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-gut-entscheiden",
+        "skills-entscheidungs-werkstatt",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: die kleinste Entscheidung heute"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Von den Werten zu den Entscheidungen"
+        },
+        {
+          "min": "15–25",
+          "phase": "uebung",
+          "titel": "Blitzentscheidungen: A oder B?"
+        },
+        {
+          "min": "25–45",
+          "phase": "input",
+          "titel": "Bauch, Kopf und der Weg in vier Schritten"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–85",
+          "phase": "aktiv",
+          "titel": "Entscheidungs-Werkstatt: der innere Rat"
+        },
+        {
+          "min": "85–95",
+          "phase": "skill",
+          "titel": "Skill: die Freundin-Frage"
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Réckbléck und Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: die kleinste Entscheidung heute",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Stühle im Kreis, Gefühlsrad und Anspannungsskala in der Mitte. Reihum steckt jede Person ihre Klammer an ein Gefühlswort und nennt ihre Anspannung von 0 bis 100. Dazu kommt die Zusatzfrage: Welche Entscheidung hast du heute schon getroffen – die kleinste oder die größte? Die Leitung beginnt mit einem Beispiel, über das gelacht werden darf.",
+          "sagen": [
+            "Gefühl, Zahl und eine Entscheidung von heute. Die kleinste zählt genauso wie die größte.",
+            "Bei mir war es heute früh: noch fünf Minuten liegen bleiben oder aufstehen. Der Bauch hat gewonnen, deshalb gab es kein Frühstück."
+          ],
+          "tipp": "Die genannten Entscheidungen ohne Namen an der Tafel sammeln. Die meisten hat niemand bewusst getroffen – ein guter Einstieg, wenn es später um Bauch und Kopf geht.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Von den Werten zu den Entscheidungen",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "An das letzte Modul anknüpfen: Dort hat jede Person ihre Top 3 der Werte gefunden und über Zwickmühlen nachgedacht, in denen zwei Werte in verschiedene Richtungen ziehen. Heute kommt das Werkzeug für solche Momente, denn eine gute Entscheidung passt zu dem, was einem wichtig ist. Dann das neue Modul vorstellen: vier Treffen zu Entscheidungen, zu Risiko und Mut, zu Rausch und Risiko und zum Umgang mit Fehlern.",
+          "sagen": [
+            "Letztes Mal ging es darum, was euch wichtig ist. Ab heute geht es darum, was ihr damit macht, wenn ihr euch entscheiden müsst.",
+            "Mit 15 und 16 kommen die ersten großen Entscheidungen: Lycée oder Ausbildung, welcher Stage, wem ihr vertraut. Dafür lohnt sich ein Werkzeug."
+          ],
+          "tipp": "Wer seine Top 3 nicht mehr weiß, schlägt kurz das Skills-Buch auf. Neue Jugendliche nennen einfach zwei Dinge, die ihnen im Leben wichtig sind."
+        },
+        {
+          "titel": "Blitzentscheidungen: A oder B?",
+          "dauer": 10,
+          "phase": "uebung",
+          "text": "Alle stellen sich auf die Mittellinie. Die Leitung nennt zwei Möglichkeiten; wer A wählt, geht zur linken Wand, wer B wählt, zur rechten – und zwar innerhalb von zwei Sekunden. Die Fragen werden von Runde zu Runde größer (Liste). Nach der letzten Frage stehen bleiben und auswerten: Wo ging es leicht, wo hat der Körper gezögert, und wer ist einfach den anderen hinterhergelaufen?",
+          "sagen": [
+            "Zwei Sekunden. Nicht nachdenken, einfach gehen.",
+            "Bei welcher Frage wärt ihr am liebsten auf der Linie stehen geblieben? Was hätte euch da geholfen?",
+            "Welche Fragen darf der Bauch allein entscheiden – und bei welchen sollte der Kopf mitreden?"
+          ],
+          "punkte": [
+            "Pizza oder Pasta?",
+            "Sommer oder Winter?",
+            "Sprachnachricht oder Textnachricht?",
+            "Kino am Freitag oder der Geburtstag deiner Cousine?",
+            "200 Euro geschenkt: sparen oder sofort ausgeben?",
+            "Nächstes Jahr: weiter im Lycée oder eine Ausbildung beginnen?",
+            "Ein Freund bittet dich, eine Tasche für ihn aufzubewahren, und sagt nicht, was drin ist: annehmen oder ablehnen?",
+            "Deine beste Freundin hat beim Devoir abgeschrieben, verdächtigt wird eine andere – du weißt Bescheid: schweigen oder die Wahrheit sagen?"
+          ],
+          "tipp": "Zögern bei den großen Fragen ausdrücklich würdigen: Es ist kein Fehler, sondern ein Zeichen, dass diese Entscheidung mehr braucht als zwei Sekunden. Bei schönem Wetter geht die Runde auch draußen, mit zwei Bäumen als A und B.",
+          "wennEsKippt": "Laufen alle den Beliebtesten hinterher, das kurz benennen und die nächsten Fragen mit geschlossenen Augen spielen: Alle zeigen mit dem Arm nach links oder rechts, die Leitung zählt. Bei wenig Platz oder wenig Energie geht die Runde im Sitzen: Daumen nach links heißt A, nach rechts B."
+        },
+        {
+          "titel": "Bauch, Kopf und der Weg in vier Schritten",
+          "dauer": 20,
+          "phase": "input",
+          "text": "Das Tafelbild aufdecken und mit den Beobachtungen aus der Blitzrunde füllen (Tabelle). Dann den Entscheidungsweg auf dem Blatt erklären und mit Mathis’ Fall vormachen: Die Gruppe geht die vier Schritte an der Tafel durch (Aufgabe 1), sucht mindestens eine dritte Möglichkeit und füllt gemeinsam die ersten Stichworte der vier Felder. Jedes Argument dabei prüfen: Zählt es nur jetzt oder auch noch in einem Jahr? Danach bearbeitet jede Person Aufgabe 2 und 3 allein oder zu zweit, für Mathis oder für einen eigenen Fall.",
+          "sagen": [
+            "Euer Bauch ist nicht dumm. Er hat oft recht – nur nicht, wenn gerade die Wut oder alle anderen für ihn entscheiden.",
+            "Mathis sieht nur Werkstatt oder Hotel. Welche dritte Möglichkeit hat er noch?",
+            "Was spricht jetzt dafür – und was noch in einem Jahr?"
+          ],
+          "tabelle": {
+            "spalten": [
+              "Merkmal",
+              "Bauch",
+              "Kopf",
+              "Kluge Mitte"
+            ],
+            "zeilen": [
+              [
+                "Stärke",
+                "meldet in Sekunden, was sich gut oder falsch anfühlt",
+                "prüft Fakten, Folgen und Möglichkeiten, denkt an morgen",
+                "hört beide an und fragt, was zu den eigenen Werten passt"
+              ],
+              [
+                "Wo es kippt",
+                "bei Wut, Angst, Aufregung oder wenn alle zuschauen",
+                "wenn er sich alles schönredet oder nie fertig wird",
+                "unter Druck schwer zu erreichen – sie braucht einen Moment Ruhe"
+              ],
+              [
+                "So klingt es",
+                "„Mir ist mulmig.“ – „Ich will das unbedingt.“",
+                "„Was kostet das? Was passiert am Montag?“",
+                "„Beides stimmt. Was würde ich einer Freundin raten?“"
+              ]
+            ]
+          },
+          "tipp": "Die Ja-oder-Nein-Falle ausdrücklich benennen: Viele schlechte Entscheidungen entstehen, weil nur zwei Möglichkeiten im Kopf sind. Mathis könnte zum Beispiel im Hotel fragen, ob er einen Tag schnuppern darf, oder offen mit seinem Onkel reden.",
+          "wennEsKippt": "Wird es zu theoretisch, zurück zum Fall und abstimmen lassen: Was würdet ihr Mathis raten? Wer keine eigene Entscheidung aufschreiben will, bleibt bei Mathis – das Blatt funktioniert mit jedem Fall.",
+          "blatt": "skills-gut-entscheiden"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Gemeinsam essen, Fenster auf. Die Leitung lässt das Thema ruhen und hängt in der Zwischenzeit die vier Stimmen-Schilder in die Ecken des Raums."
+        },
+        {
+          "titel": "Entscheidungs-Werkstatt: der innere Rat",
+          "dauer": 25,
+          "phase": "aktiv",
+          "text": "Die Stimmen-Schilder hängen in den vier Ecken: Bauch, Kopf, Werte, Die anderen. Eine freiwillige Person stellt sich in die Mitte, die Leitung liest eine Fallkarte vor, und vier andere übernehmen je eine Stimme unter ihrem Schild (Liste). Reihum sagt jede Stimme einen Satz, der die Person zu sich ziehen soll; die Person geht nach jedem Satz einen Schritt auf die Stimme zu, die sie gerade am meisten überzeugt. Nach zwei Runden liest die Leitung die Wendung von der Karte vor, dann folgt eine dritte Runde, und die Person entscheidet laut mit dem Entscheidungssatz. Danach die Rollen wechseln, bis drei oder vier Fälle gespielt sind.",
+          "sagen": [
+            "Die Stimmen dürfen übertreiben. Der Bauch darf richtig Lust haben, der Kopf richtig pingelig sein.",
+            "Stopp. Welche Stimme zieht dich gerade am stärksten – und welche hast du fast überhört?",
+            "Wie hat die Wendung deine Entscheidung verändert?",
+            "Welche Stimme ist bei euch im Alltag am lautesten? Und welche kommt zu kurz?"
+          ],
+          "punkte": [
+            "Bauch: „Da hab ich richtig Lust drauf.“ – „Mir ist dabei mulmig.“",
+            "Kopf: „Was kostet das?“ – „Was passiert am Montag – und in einem Jahr?“",
+            "Werte: „Du wolltest ehrlich sein.“ – „Was passt zu dir?“",
+            "Die anderen: „Alle machen mit.“ – „Deine Mutter wäre enttäuscht.“",
+            "Entscheidungssatz: „Ich entscheide mich für …, weil … Mein erster Schritt ist …“"
+          ],
+          "tipp": "Sind es weniger als fünf Jugendliche, übernimmt die Leitung die fehlenden Stimmen. Mit nur zwei spricht sie alle Stimmen selbst und wechselt dafür die Ecken; die zweite Person beobachtet und sagt am Ende, welche Stimme gewonnen hat. Bei mehr als sechs übernehmen die Zuschauenden gemeinsam die Stimme „Die anderen“.",
+          "wennEsKippt": "Nutzen die Stimmen den Rat, um die Person in der Mitte vorzuführen, stoppen und die Regel wiederholen: Jede Stimme will der Person helfen, nur eben auf ihre Art. Kommt ein Fall dem echten Leben einer Person zu nah, ruhig eine andere Karte ziehen und später unter vier Augen nachfragen.",
+          "blatt": "skills-entscheidungs-werkstatt"
+        },
+        {
+          "titel": "Skill: die Freundin-Frage",
+          "dauer": 10,
+          "phase": "skill",
+          "text": "Alle sitzen, Füße auf dem Boden, eine Hand auf dem Bauch, drei lange Atemzüge. Dann denkt jede Person an eine kleine Entscheidung, die bei ihr gerade ansteht, und stellt sich beide Möglichkeiten nacheinander vor: Was macht der Bauch bei A, was bei B – wird es eng oder weit? Danach die Freundin-Frage: Was würdest du deiner besten Freundin oder deinem besten Freund raten, wenn sie oder er genau vor dieser Entscheidung stünde? Die Antwort kommt als Aufgabe 4 auf das Blatt und wird nicht vorgelesen.",
+          "sagen": [
+            "Stell dir vor, deine beste Freundin sitzt vor dir und hat genau dein Problem. Was sagst du ihr?",
+            "Für andere sind wir oft klüger als für uns selbst. Diesen Trick dürft ihr euch ausleihen."
+          ],
+          "tipp": "Wer keine eigene Entscheidung nehmen will, nimmt einen Fall aus der Werkstatt. Auch das hilft: über sich in der dritten Person nachdenken, mit dem eigenen Vornamen – etwa: Was sollte Inês jetzt tun?",
+          "blatt": "skills-gut-entscheiden"
+        },
+        {
+          "titel": "Réckbléck und Skills-Pass",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Blitzlicht mit einer Frage: Bin ich eher ein Bauch- oder ein Kopf-Mensch – und welche Stimme will ich öfter fragen? Dann trägt jede Person einen Satz in den Skills-Pass ein, etwa ihren wichtigsten Schritt vom Entscheidungsweg, und bekommt den Stempel. Fallkarten und Schilder sammelt die Leitung ein; sie lassen sich später wieder verwenden.",
+          "sagen": [
+            "Ein Satz: Bauch oder Kopf – und wen fragt ihr ab heute öfter?"
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Nächstes Mal geht es um Entscheidungen, bei denen es kribbelt: Was ist Mut – und wann wird daraus Leichtsinn?",
+      "hintergrund": "Jugendliche entscheiden in ruhigen, „kalten“ Situationen oft erstaunlich vernünftig, in „heißen“ – bei Aufregung, Ärger oder wenn Gleichaltrige zuschauen – deutlich impulsiver (Steinberg, 2014). Ein fester Ablauf hilft, auch dann einen Schritt zurückzutreten. Die Dialektisch-Behaviorale Therapie beschreibt den „weisen Geist“ als Zustand, in dem Gefühl und Verstand zusammenkommen (Linehan, 2015); im Kurs heißt er „kluge Mitte“. Aus dem Fertigkeitentraining für Jugendliche stammen auch die vier Felder von Pro und Contra: Vor- und Nachteile beider Möglichkeiten, kurz- und langfristig betrachtet (Rathus & Miller, 2015). Die Freundin-Frage nutzt Selbstdistanzierung: Wer auf die eigene Lage blickt wie auf die eines anderen Menschen, urteilt ruhiger und klüger (Kross & Ayduk, 2017). Grossmann und Kross (2014) zeigten: Über die Probleme anderer urteilen Menschen weiser als über die eigenen – mit Abstand verschwindet dieser Unterschied.",
+      "quellen": [
+        "Steinberg, L. (2014). Age of Opportunity: Lessons from the New Science of Adolescence. Boston: Houghton Mifflin Harcourt.",
+        "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford.",
+        "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford.",
+        "Kross, E. & Ayduk, O. (2017). Self-distancing: Theory, research, and current directions. Advances in Experimental Social Psychology, 55, 81–136.",
+        "Grossmann, I. & Kross, E. (2014). Exploring Solomon’s paradox: Self-distancing eliminates the self-other asymmetry in wise reasoning about close relationships in younger and older adults. Psychological Science, 25(8), 1571–1580."
+      ],
+      "achtung": "Entscheidungen berühren manchmal Lebenslagen, die nicht in die Gruppe gehören – etwa eine Trennung der Eltern, ein drohender Schulverweis oder Druck durch ältere Freunde. Deshalb wird im inneren Rat nur mit den Fallkarten gearbeitet; eigene Entscheidungen bleiben auf dem Blatt und werden nicht vorgelesen. Wirkt jemand bei einem Fall sichtlich betroffen, die Karte wechseln und später unter vier Augen nachfragen. Wird deutlich, dass jemand zu etwas gedrängt, bedroht oder erpresst wird oder in Gefahr ist, nicht in der Gruppe vertiefen: Einzelgespräch führen, nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) informieren."
+    },
+    {
+      "id": "j3-e07",
+      "nr": 7,
+      "jahr": 3,
+      "modul": "j3-m2",
+      "titel": "Risiko, Mut und Leichtsinn",
+      "kurz": "Warum riskieren Jugendliche mehr, wenn andere zuschauen? Die Gruppe testet es im Würfel-Experiment, lernt Gaspedal und Bremse im Gehirn kennen und unterscheidet auf dem Risiko-Feld Mut von Leichtsinn.",
+      "dauer": 100,
+      "ziele": [
+        "erleben im Würfel-Experiment, wie Zuschauende und Anfeuern die Bereitschaft zum Risiko verändern",
+        "erklären mit dem Bild von Gaspedal und Bremse, warum Risiken im Jugendalter so reizvoll sind – und warum darin auch eine Chance liegt",
+        "unterscheiden Mut und Leichtsinn mit vier Prüffragen und ordnen Situationen auf dem Risiko-Feld ein",
+        "üben den Stopp in einer aufgeheizten Situation und formulieren einen eigenen Ausstiegssatz"
+      ],
+      "material": [
+        "Gefühlsrad (A3, laminiert), Wäscheklammern und Anspannungsskala 0–100",
+        "Für jede Person einen Würfel und einen Zettel, Tafel für die Ergebnisse",
+        "Kreppband für ein großes Kreuz auf dem Boden (zwei Linien von etwa 4 m), bei trockenem Wetter Straßenkreide für draußen",
+        "Zwei Achsen-Schilder „Wie riskant?“ und „Was bringt es mir wirklich?“ und vier Feld-Schilder: Einfach machen, Mut mit Plan, Leichtsinn, Alltag",
+        "Schülerblatt „Mut oder Leichtsinn?“ für jede Person",
+        "Skills-Pässe, Stempel, Imbiss und Getränke (Allergien beachten)"
+      ],
+      "vorbereitung": [
+        "Das Kreuz auf den Boden kleben: Die waagrechte Linie zeigt das Risiko (links klein, rechts groß), die senkrechte den Gewinn (vorn wenig, hinten viel). Die vier Feld-Schilder erst in Schritt 6 hinlegen: hinten links Einfach machen, hinten rechts Mut mit Plan, vorn rechts Leichtsinn, vorn links Alltag.",
+        "Die Situationen für das Risiko-Feld durchsehen und streichen, was einem aktuellen Unfall oder Vorfall im Umfeld der Gruppe ähnelt.",
+        "Tische für das Würfel-Experiment so stellen, dass in Runde 1 jede Person für sich spielen kann."
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-mut-oder-leichtsinn",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: die größte Überwindung"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Vom Entscheidungsweg zum Kribbeln"
+        },
+        {
+          "min": "15–30",
+          "phase": "uebung",
+          "titel": "Das Würfel-Experiment"
+        },
+        {
+          "min": "30–45",
+          "phase": "input",
+          "titel": "Gaspedal, Bremse und der Mut-Check"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–85",
+          "phase": "aktiv",
+          "titel": "Das Risiko-Feld"
+        },
+        {
+          "min": "85–95",
+          "phase": "skill",
+          "titel": "Skill: Stopp und Ausstiegssatz"
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Réckbléck und Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: die größte Überwindung",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Gefühlsrad und Anspannungsskala wie gewohnt, reihum Gefühlswort und Zahl. Dazu eine Zusatzfrage mit drei Möglichkeiten: Was wäre für dich die größte Überwindung – die höchste Achterbahn auf der Schueberfouer, ein Horrorfilm allein im Dunkeln oder vor der ganzen Klasse ein Lied singen? Die Leitung beginnt. Schon diese Runde zeigt, dass sich Risiko für jede Person anders anfühlt.",
+          "sagen": [
+            "Gefühl, Zahl – und: Achterbahn, Horrorfilm oder vor der Klasse singen?",
+            "Was für die eine ein Spaß ist, ist für den anderen das Schlimmste. Merkt euch das für heute."
+          ],
+          "tipp": "Die Leitung darf ruhig zugeben, wovor sie sich drückt. Wer über die eigene Überwindung lachen kann, macht es den Jugendlichen leichter.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Vom Entscheidungsweg zum Kribbeln",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "Kurz an den Entscheidungsweg aus der letzten Einheit erinnern: klären, Möglichkeiten sammeln, abwägen, entscheiden. Dann fragen, wann dieser Weg im Alltag am schwersten fällt – meist dann, wenn es aufregend wird und andere dabei sind. Genau darum geht es heute: um Risiko, Mut und Leichtsinn.",
+          "sagen": [
+            "Auf dem Papier klingt der Entscheidungsweg einfach. Wann vergesst ihr ihn im echten Leben am schnellsten?",
+            "Heute geht es um den Moment, in dem alle rufen: Mach schon."
+          ]
+        },
+        {
+          "titel": "Das Würfel-Experiment",
+          "dauer": 15,
+          "phase": "uebung",
+          "text": "Die Regeln erklären (Liste). Runde 1: Alle spielen gleichzeitig für sich drei Züge und notieren nur, wie oft sie pro Zug gewürfelt haben – niemand schaut zu. Runde 2: Jede Person spielt einen Zug vor der ganzen Gruppe, die anderen feuern an wie im Stadion und rufen „weiter, weiter“. Die Leitung schreibt zwei Spalten an die Tafel – Würfe allein und Würfe mit Publikum – und trägt die Zahlen ohne Namen ein. Dann auswerten.",
+          "sagen": [
+            "Wer hat mit Publikum öfter gewürfelt als allein? Wie hat sich das Anfeuern angefühlt?",
+            "Hättet ihr allein genauso lange weitergemacht?",
+            "Forschende haben das mit einem Fahrspiel am Computer getestet: Jugendliche fuhren riskanter, wenn Freunde zuschauten. Bei Erwachsenen war das kaum so."
+          ],
+          "punkte": [
+            "Wer dran ist, würfelt so oft er will und zählt die Augen zusammen.",
+            "Man darf jederzeit aufhören und die Punkte sichern.",
+            "Wer eine 1 würfelt, verliert alle Punkte dieses Zuges.",
+            "Es geht nur um Punkte – zu gewinnen gibt es nichts."
+          ],
+          "tipp": "Der Effekt zeigt sich nicht in jeder Gruppe gleich deutlich. Dann über das Gefühl sprechen: Wie war es, aufzuhören, während alle „weiter“ rufen? Mit nur zwei Jugendlichen feuern die Leitung und die jeweils andere Person an.",
+          "wennEsKippt": "Wird beim Anfeuern jemand ausgelacht, der früh aufhört, sofort stoppen: Anfeuern ja, auslachen nein. Genau hier lohnt sich die Frage, wie es sich angefühlt hat – aufzuhören, obwohl alle etwas anderes wollen, ist schon ein Stück Mut."
+        },
+        {
+          "titel": "Gaspedal, Bremse und der Mut-Check",
+          "dauer": 15,
+          "phase": "input",
+          "text": "Mit dem Tafelbild erklären, warum das Anfeuern wirkt (Tabelle): Das Gaspedal im Gehirn reagiert in diesem Alter besonders stark auf Kick und Anerkennung, die Bremse reift langsamer, und Zuschauende drücken zusätzlich aufs Gas. Wer das Bild von Gaspedal und Bremse aus Jahr 2 kennt, erklärt es den anderen; neu ist heute das Publikum. Klar sagen, dass das weder Ausrede noch Makel ist: Dasselbe Gaspedal macht Mut, Neugier und schnelles Lernen möglich. Dann auf dem Blatt die beiden Geschichten lesen und mit dem Mut-Check vergleichen (Aufgabe 1 und 2).",
+          "sagen": [
+            "Euer Gehirn ist nicht kaputt, es ist im Umbau. Das Gaspedal ist schon fertig, an der Bremse wird noch gebaut.",
+            "Dasselbe Gaspedal bringt euch dazu, euch etwas zu trauen, das sich lohnt. Die Frage ist nur: wofür?",
+            "Was unterscheidet Luca auf der Brücke von Amira im Chat?"
+          ],
+          "tabelle": {
+            "spalten": [
+              "Teil",
+              "Was es tut",
+              "Mit 15 und 16"
+            ],
+            "zeilen": [
+              [
+                "Gaspedal: das Belohnungssystem",
+                "sucht Neues, Spannung und Anerkennung",
+                "besonders empfindlich – stärker als bei Kindern und bei Erwachsenen"
+              ],
+              [
+                "Bremse: die Steuerung im Stirnhirn",
+                "plant, wägt ab, stoppt Impulse",
+                "reift langsam, bis etwa Mitte 20; in Ruhe gut, unter Aufregung schwächer"
+              ],
+              [
+                "Publikum: die anderen",
+                "macht ein Risiko wertvoller, weil Anerkennung winkt",
+                "drückt aufs Gaspedal – oft ohne ein Wort"
+              ]
+            ]
+          },
+          "tipp": "Nicht bei der Gefahr stehen bleiben: Die Botschaft „ihr seid Risikomaschinen“ kränkt und wirkt nicht. Die Botschaft „ihr habt ein starkes Gaspedal – setzt es für gute Risiken ein“ kommt deutlich besser an.",
+          "wennEsKippt": "Kommt der Einwand „Dann können wir ja nichts dafür“, ruhig widersprechen: Das Gaspedal erklärt, warum es schwerfällt – die Bremse lässt sich trotzdem trainieren, und genau das übt die Gruppe heute noch. Wird es zu theoretisch, sofort zu Luca und Amira auf dem Blatt wechseln.",
+          "blatt": "skills-mut-oder-leichtsinn"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Imbiss und frische Luft. Die Leitung lässt das Thema ruhen und legt in der Zwischenzeit die beiden Achsen-Schilder an das Kreuz auf dem Boden."
+        },
+        {
+          "titel": "Das Risiko-Feld",
+          "dauer": 25,
+          "phase": "aktiv",
+          "text": "Alle stehen am Rand des Kreuzes. Die Leitung liest eine Situation vor (Liste), und jede Person stellt sich dorthin, wo sie sie sieht: nach rechts, je riskanter es ist, nach hinten, je mehr es ihr wirklich bringt. Zwei, drei Personen sagen, warum sie dort stehen. Nach drei Situationen die vier Feld-Schilder hinlegen und fragen, wo Mut und wo Leichtsinn liegen. Bei einer Situation die Zuschauer-Wendung einbauen: dieselbe Szene, aber fünf Leute aus der Klasse filmen – wer bewegt sich wohin? Zum Schluss bei einer Mut-Situation fragen, wie sich das Risiko verkleinern lässt: mit Plan, mit Verbündeten oder mit einer erwachsenen Person.",
+          "sagen": [
+            "Rechts heißt riskant, hinten heißt: Das bringt mir wirklich etwas. Stellt euch dahin, wo ihr die Situation seht.",
+            "Die Achterbahn fühlt sich gefährlich an, ist aber gut gesichert. Das Rennen bei Rot fühlt sich harmlos an. Was sagt euch das über euren Bauch?",
+            "Was ist ein Kick oder ein Like morgen noch wert?"
+          ],
+          "punkte": [
+            "Im Unterricht die eigene Meinung sagen, obwohl die halbe Klasse anders denkt.",
+            "Von einer Brücke in einen Fluss springen, dessen Tiefe niemand kennt.",
+            "Auf der Schueberfouer die höchste Achterbahn fahren.",
+            "Im Klassenchat schreiben: Das Foto ist nicht okay, löscht es.",
+            "Bei Rot über die Straße rennen, weil der Bus gleich abfährt.",
+            "Sich für einen Stage bewerben, obwohl eine Absage wahrscheinlich ist.",
+            "Auf ein Baugerüst klettern, weil jemand ein Video davon drehen will.",
+            "Jemanden fragen, ob er oder sie mit ins Kino kommt – ein Nein ist möglich."
+          ],
+          "tipp": "Bei Regen drinnen mit Kreppband, bei trockenem Wetter draußen mit Kreide. Bei wenig Energie oder wenig Platz zeichnet jede Person das Kreuz auf ein Blatt und setzt für jede Situation einen Punkt; die Leitung vergleicht zwei, drei Blätter. Mit nur zwei Jugendlichen stellt sich die Leitung mit ins Feld.",
+          "wennEsKippt": "Stellen sich alle dorthin, wo die Coolsten stehen, das offen benennen – genau das ist der Publikumseffekt aus dem Würfel-Experiment. Die nächste Situation dann erst geheim auf einem Zettel einordnen und danach aufstellen. Prahlt jemand mit eigenen Mutproben, nicht darauf eingehen, sondern zur Situation zurückführen."
+        },
+        {
+          "titel": "Skill: Stopp und Ausstiegssatz",
+          "dauer": 10,
+          "phase": "skill",
+          "text": "Alle stehen im Kreis. Die Leitung beschreibt langsam eine aufgeheizte Szene, etwa die Brücke, auf der alle deinen Namen rufen. Auf das Wort Stopp frieren alle ein, dann folgen die vier Schritte (Liste), jeweils mit einer kurzen Pause. Drei Durchgänge mit verschiedenen Szenen; im letzten sagt jede Person ihren Ausstiegssatz leise vor sich hin. Danach tragen alle den Satz auf dem Blatt ein (Aufgabe 3).",
+          "sagen": [
+            "Der Schritt zurück ist wörtlich gemeint. Ein Meter Abstand schenkt euch zwei Sekunden für die Bremse.",
+            "Ein guter Ausstiegssatz ist kurz und braucht keine lange Begründung. Witzig darf er auch sein."
+          ],
+          "punkte": [
+            "Stopp: einfrieren – nichts sagen, nichts tun.",
+            "Schritt zurück: einen echten Schritt nach hinten gehen und lang ausatmen.",
+            "Hinschauen: Was passiert hier gerade? Was will ich – und was wollen die anderen?",
+            "Klug weitermachen: den Ausstiegssatz sagen oder gehen."
+          ],
+          "tipp": "Wer die Stopp-Ampel und die Nein-Sätze aus früheren Kursjahren kennt, erkennt beides wieder: Stopp ist Rot, Hinschauen ist Gelb, klug weitermachen ist Grün – und der Ausstiegssatz ist ein Nein-Satz. Zwei Beispiele an die Tafel: „Ohne mich, ich hab morgen Training.“ – „Lass mal, ich brauch meine Knochen noch.“",
+          "blatt": "skills-mut-oder-leichtsinn"
+        },
+        {
+          "titel": "Réckbléck und Skills-Pass",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Blitzlicht: Wofür will ich mein Gaspedal einsetzen – für welches gute Risiko? Wer mag, liest dazu Aufgabe 4 vor, sonst reicht ein Wort; dazu die Anspannungszahl von jetzt. Dann trägt jede Person einen Satz in den Skills-Pass ein, etwa ihren Ausstiegssatz, und bekommt den Stempel. Zum Schluss ankündigen, dass die Eltern vor der nächsten Einheit einen kurzen Brief bekommen, und sagen, was darin steht; wer vorher über das Thema reden möchte, kann die Leitung nach der Stunde ansprechen.",
+          "sagen": [
+            "Ein Wort oder ein Satz: Für welches gute Risiko setzt ihr euer Gaspedal ein? Und eure Zahl jetzt?",
+            "Eure Eltern bekommen vor dem nächsten Treffen einen kurzen Brief. Darin steht nur das Thema – nichts über euch."
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Nächstes Mal geht es um Rausch und Risiko: sachliche Infos zu Alkohol, Cannabis und anderen Drogen – und was ihr tun könnt, wenn es jemandem schlecht geht.",
+      "hintergrund": "Jugendliche schätzen Risiken in Ruhe oft ähnlich gut ein wie Erwachsene und gehen trotzdem mehr davon ein. Steinberg (2014) erklärt das mit zwei Systemen, die unterschiedlich schnell reifen: Das Belohnungssystem reagiert ab der Pubertät besonders stark auf Neues, Spannung und Anerkennung, die Steuerung im Stirnhirn reift bis ins junge Erwachsenenalter. In einem Fahrspiel am Computer gingen Jugendliche deutlich mehr Risiken ein, wenn Gleichaltrige zuschauten, Erwachsene kaum (Gardner & Steinberg, 2005). Im Hirnscanner verstärkten zuschauende Gleichaltrige bei Jugendlichen die Aktivität im Belohnungssystem, bei Erwachsenen nicht (Chein et al., 2011). Steinberg sieht darin zugleich eine Chance: Dieselbe Offenheit macht Lernen, Mut und neue Erfahrungen möglich – deshalb lohnt es sich, gute Risiken zu fördern, statt nur zu warnen. Die STOPP-Fertigkeit aus dem DBT-Skillstraining schafft den kurzen Abstand, den die Bremse unter Druck braucht (Linehan, 2015).",
+      "quellen": [
+        "Steinberg, L. (2014). Age of Opportunity: Lessons from the New Science of Adolescence. Boston: Houghton Mifflin Harcourt.",
+        "Gardner, M. & Steinberg, L. (2005). Peer influence on risk taking, risk preference, and risky decision making in adolescence and adulthood: An experimental study. Developmental Psychology, 41(4), 625–635.",
+        "Chein, J., Albert, D., O’Brien, L., Uckert, K. & Steinberg, L. (2011). Peers increase adolescent risk taking by enhancing activity in the brain’s reward circuitry. Developmental Science, 14(2), F1–F10.",
+        "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford."
+      ],
+      "achtung": "Risiko-Situationen können an echte Unfälle, Verletzungen oder Verluste erinnern. Deshalb vorher Situationen streichen, die einem aktuellen Vorfall ähneln, und niemanden nach eigenen Mutproben fragen. Prahlt jemand mit gefährlichen Aktionen, nicht bewerten und nicht vertiefen, sondern zur Situation zurückführen und später allein nachfragen. Wird deutlich, dass sich jemand immer wieder selbst in Gefahr bringt, zu gefährlichen Mutproben gedrängt wird oder Verletzungen zeigt, die Person nach der Einheit ruhig ansprechen, nichts versprechen, was man nicht halten kann, nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) am selben Tag informieren; bei akuter Gefahr Notruf 112 und die Person nicht allein lassen."
+    },
+    {
+      "id": "j3-e08",
+      "nr": 8,
+      "jahr": 3,
+      "modul": "j3-m2",
+      "titel": "Rausch und Risiko – informiert entscheiden",
+      "kurz": "Sachlich statt mit Angst: Die Gruppe prüft verbreitete Mythen über Alkohol, Cannabis und andere Drogen, klärt Mischkonsum, Mitfahren und Einvernehmlichkeit und übt, was im Notfall zu tun ist.",
+      "dauer": 100,
+      "ziele": [
+        "prüfen verbreitete Aussagen über Alkohol, Cannabis und andere Drogen und begründen, was davon stimmt",
+        "erklären, warum Mischkonsum, berauscht Fahren und Mitfahren besonders riskant sind und warum es im Rausch kein echtes Ja gibt",
+        "erkennen Warnzeichen eines Notfalls und üben den Notruf 112 und die stabile Seitenlage",
+        "kennen Anlaufstellen in Luxemburg und planen, wie sie sicher nach Hause kommen"
+      ],
+      "material": [
+        "Gefühlsrad (A3, laminiert), Wäscheklammern und Anspannungsskala 0–100",
+        "Je Team eine grüne Karte (stimmt) und eine rote Karte (stimmt nicht), Tafel für die Punkte",
+        "Schülerblätter „Faktencheck: Rausch und Risiko“ und „Wenn es jemandem schlecht geht“ für jede Person, mit eingetragener Beratungsstelle",
+        "Fragenbox (Schachtel mit Schlitz), gleiche Zettel und gleiche Stifte für alle",
+        "Zwei Gymnastikmatten oder Decken, eine Jacke zum Zudecken und, wenn möglich, eine Übungspuppe für die Seitenlage",
+        "Drei Stationsschilder (A Seitenlage, B Notruf, C Heimweg) und ein ausgeschaltetes altes Handy oder eine Attrappe für Station B",
+        "Plakat mit den Anlaufstellen: Notruf 112, Polizei 113, Kanner- a Jugendtelefon 116 111, SOS Détresse 45 45 45, SePAS, Schulärztin oder Schularzt, Planning Familial und die Beratungsstelle, die die Leitung einträgt",
+        "Skills-Pässe, Stempel, Imbiss mit Wasser, Saft oder Tee (Allergien beachten, keine Energydrinks)"
+      ],
+      "vorbereitung": [
+        "Eine Woche vorher Eltern und Erziehungsberechtigte mit einem kurzen Elternbrief nach Hausregel informieren, etwa so: „Am [Datum] geht es im Skills-Kurs um Alkohol, Cannabis und andere Drogen – sachlich, ohne Abschreckung und ohne dass jemand von eigenem Konsum erzählt. Die Jugendlichen lernen, Mythen von Fakten zu unterscheiden, im Notfall zu helfen und wo es Beratung gibt. Fragen gern an [Name, Telefon].“",
+        "Die zuständige Leitung (Responsable) vorab informieren und das interne Schutzkonzept griffbereit haben.",
+        "Wenn möglich zu zweit leiten, damit eine Person bei Bedarf mit jemandem hinausgehen kann. Einen ruhigen Ort zum Rausgehen festlegen und der Gruppe zeigen.",
+        "Im Team klären, ob jemand in der Gruppe gerade von Sucht in der Familie, einem Notfall oder einem Verlust betroffen ist; dann die Einheit vorher mit der Person besprechen oder anpassen.",
+        "Eine Luxemburger Fachstelle für Suchtberatung heraussuchen und Namen und Telefonnummer auf beiden Blättern in den Hilfe-Kasten eintragen; wenn möglich eine Fachkraft dieser Stelle als Gast einladen.",
+        "Die Rechtslage in Luxemburg auf den aktuellen Stand prüfen (Altersgrenzen für Alkohol, Tabak und Vapes, Cannabis, Fahren unter Einfluss) und nur Geprüftes sagen. Wenn aktuelle Zahlen zum Konsum Jugendlicher in Luxemburg vorliegen, sie mit Quelle für Aussage 1 bereithalten.",
+        "Die Schritte der stabilen Seitenlage mit einer aktuellen Erste-Hilfe-Anleitung abgleichen und, wenn möglich, eine Übungspuppe ausleihen; vorgeführt wird nur an der zweiten Leitung oder an der Puppe, nie an Jugendlichen. Fehlen beide, werden die Handgriffe langsam erklärt und in der Luft gezeigt. Wer in Erster Hilfe unsicher ist, holt für Station A eine Person dazu, die Erste Hilfe ausbildet."
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-faktencheck-rausch",
+        "skills-notfall-plan",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Gefühlsrad und Anspannung"
+        },
+        {
+          "min": "10–20",
+          "phase": "bruecke",
+          "titel": "Rückblick, Rahmen und Fragenbox"
+        },
+        {
+          "min": "20–45",
+          "phase": "uebung",
+          "titel": "Faktencheck und Sicherheits-Quiz"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–85",
+          "phase": "aktiv",
+          "titel": "Notfall-Training an drei Stationen"
+        },
+        {
+          "min": "85–92",
+          "phase": "skill",
+          "titel": "Skill: anspannen und loslassen"
+        },
+        {
+          "min": "92–100",
+          "phase": "abschluss",
+          "titel": "Fragenbox, Check-out mit Zahl und Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: Gefühlsrad und Anspannung",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Gefühlsrad und Anspannungsskala in der Mitte, reihum Gefühlswort und Zahl. Heute bewusst ohne Zusatzfrage: Beim Thema Rausch sollen gar nicht erst eigene Geschichten entstehen. Die Leitung notiert die Zahlen ohne Namen, denn beim Check-out am Ende kommen sie wieder. Wer schon beim Hereinkommen sehr unruhig oder bedrückt wirkt, wird im Blick behalten.",
+          "sagen": [
+            "Wie immer: ein Gefühl und eine Zahl von 0 bis 100.",
+            "Am Ende frage ich die Zahl noch einmal ab. Heute ist mir das besonders wichtig."
+          ],
+          "tipp": "Eine höhere Zahl zu Beginn ist bei diesem Thema normal; manche sind schon bei der Ankündigung nervös oder aufgedreht. Das ohne Kommentar aufnehmen.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Rückblick, Rahmen und Fragenbox",
+          "dauer": 10,
+          "phase": "bruecke",
+          "text": "Kurz an Gaspedal und Bremse aus der letzten Einheit anknüpfen und das Thema nennen; wer in Jahr 2 dabei war, kennt die Grundlagen und die Plan-B-Karte, heute geht es eine Stufe weiter. Dann die Regeln für heute erneuern und an die Tafel schreiben (Liste). Die Fragenbox zeigen: Am Ende schreibt jede Person einen Zettel – eine Frage oder „keine Frage“ –, damit niemand auffällt; die Antworten gibt es nach Rücksprache im Team in der nächsten Einheit. Zum Schluss den ruhigen Ort zeigen, an den jede Person jederzeit gehen darf.",
+          "sagen": [
+            "Ich halte heute keine Moralpredigt. Ihr bekommt Fakten, damit ihr selbst entscheiden könnt – und damit ihr wisst, was zu tun ist, wenn es jemandem schlecht geht.",
+            "Wenn jemand in Gefahr ist, muss ich Hilfe holen. Das sage ich euch lieber jetzt als hinterher."
+          ],
+          "punkte": [
+            "Stopp-Recht: Wer eine Pause braucht, darf rausgehen, ohne etwas zu erklären.",
+            "Niemand erzählt von sich, von Freunden oder von der Familie. Wir sprechen über erfundene Personen und über Fakten.",
+            "Was hier gesagt wird, bleibt hier – außer jemand ist in Gefahr. Dann hole ich Hilfe und sage vorher, was ich tue.",
+            "Jede Frage ist erlaubt, auch anonym über die Fragenbox.",
+            "Wir lachen über Mythen, nicht über Menschen."
+          ],
+          "tipp": "Die Regel „niemand erzählt von sich“ schützt in zwei Richtungen: Wer angeben will, bekommt keine Bühne, und wer Sorgen hat, muss sie nicht vor der Gruppe zeigen.",
+          "wennEsKippt": "Beginnt jemand trotzdem, von einer Party oder von eigenem Konsum zu erzählen, freundlich unterbrechen: Danke, heute bleiben wir bei den erfundenen Personen – wenn du magst, reden wir nachher zu zweit. Dann ohne Wertung weitermachen."
+        },
+        {
+          "titel": "Faktencheck und Sicherheits-Quiz",
+          "dauer": 25,
+          "phase": "uebung",
+          "text": "Zuerst kreuzt jede Person auf dem Blatt allein an, welche Aussagen sie für richtig hält (5 Min., ohne Austausch). Dann Teams von zwei oder drei Personen bilden; jedes Team hat eine grüne und eine rote Karte und startet mit 10 Punkten. Die Leitung liest Aussage für Aussage vor, die Teams beraten kurz, und auf „drei“ heben alle ihre Karte und zeigen mit einem bis drei Fingern, wie sicher sie sind. Richtig bringt so viele Punkte, wie Finger gezeigt wurden, falsch kostet sie; dann auflösen und kurz begründen (Tabelle). Zum Schluss Aufgabe 2 ergänzen und den Gesetzeskasten auf Seite 2 gemeinsam lesen; Rechtsfragen nur allgemein beantworten (Liste).",
+          "sagen": [
+            "Erst allein ankreuzen, ohne abzuschreiben. Ob ihr richtig liegt, sieht niemand außer euch.",
+            "Karte hoch – und mit den Fingern: Wie sicher seid ihr, eins, zwei oder drei?",
+            "Bei welcher Aussage wart ihr euch ganz sicher und lagt trotzdem daneben? Genau da lohnt sich Nachprüfen."
+          ],
+          "punkte": [
+            "Alkohol, Tabak und Vapes: Für Verkauf und Weitergabe gelten Altersgrenzen. Genaue Grenzen nur nennen, wenn der aktuelle Stand geprüft ist.",
+            "Cannabis ist für Minderjährige verboten. Für Erwachsene gelten in Luxemburg eigene Regeln; die Leitung prüft den aktuellen Stand.",
+            "Drogen weitergeben oder verkaufen ist strafbar – auch unter Freunden.",
+            "Wer berauscht fährt, macht sich strafbar, ob mit Auto, Roller oder Motorrad.",
+            "Wer in einem Notfall nicht hilft, obwohl er könnte, kann sich strafbar machen.",
+            "Sexuelle Handlungen mit jemandem, der nicht einwilligen kann, sind eine Straftat. Intime Bilder weiterzuleiten, ist strafbar."
+          ],
+          "tabelle": {
+            "spalten": [
+              "Aussage",
+              "Auflösung",
+              "Kurz erklärt"
+            ],
+            "zeilen": [
+              [
+                "1 Die meisten Jugendlichen in eurem Alter kiffen nicht.",
+                "stimmt",
+                "Wir überschätzen, was „alle“ tun, weil Rausch auffällt und Nüchternsein nicht. Wenn vorhanden, aktuelle Zahlen für Luxemburg mit Quelle nennen."
+              ],
+              [
+                "2 Mit einem Energydrink dazu ist Alkohol weniger gefährlich.",
+                "stimmt nicht",
+                "Man fühlt sich wacher und merkt den Rausch weniger, ist aber genauso betrunken und trinkt oft mehr."
+              ],
+              [
+                "3 Kiffen macht immer entspannt.",
+                "stimmt nicht",
+                "THC kann auch Angst, Herzrasen, Panik oder Verwirrtheit auslösen, gerade bei starkem Cannabis – und es ist heute oft viel stärker als früher. Wer als Jugendlicher regelmäßig kifft, wird zudem leichter abhängig."
+              ],
+              [
+                "4 Wer viel verträgt, hat sich an Alkohol gewöhnt – ein Warnzeichen.",
+                "stimmt",
+                "Viel vertragen heißt nicht stark sein. Der Körper hat sich gewöhnt, der Schaden entsteht trotzdem."
+              ],
+              [
+                "5 Mischen ist kein Problem, wenn man von allem nur ein bisschen nimmt.",
+                "stimmt nicht",
+                "Wirkungen verstärken oder verdecken sich gegenseitig. Auch kleine Mengen können zusammen gefährlich werden, etwa Alkohol zusammen mit Medikamenten."
+              ],
+              [
+                "6 Einer Pille oder einem Pulver sieht man nicht an, was und wie viel darin ist.",
+                "stimmt",
+                "Weder Farbe noch Form oder Logo verraten Inhalt und Menge. Auch Liquids und Süßigkeiten aus unbekannter Quelle können stark wirkende Stoffe enthalten."
+              ],
+              [
+                "7 Wer sich nach ein paar Bier noch fit fühlt, kann auch fahren.",
+                "stimmt nicht",
+                "Alkohol und Cannabis verlangsamen Reaktion und Einschätzung, bevor man es merkt. Nicht fahren und nicht einsteigen – auch nicht auf den Roller."
+              ],
+              [
+                "8 Im Rausch gibt es kein echtes Ja – auch nicht zu Küssen oder Sex.",
+                "stimmt",
+                "Einvernehmlich ist nur ein klares, freies Ja von jemandem, der bei klarem Verstand ist. Wer unsicher ist, ob die andere Person noch klar ist, hört auf. Wer es ausnutzt, begeht eine Straftat."
+              ],
+              [
+                "9 Wer nicht mehr wach zu kriegen ist, schläft den Rausch am besten aus.",
+                "stimmt nicht",
+                "Lebensgefahr: Die Person kann an Erbrochenem ersticken oder auskühlen. Sofort 112, stabile Seitenlage, nicht allein lassen."
+              ]
+            ]
+          },
+          "tipp": "Bei Aussage 1 kurz innehalten: Dass die meisten Gleichaltrigen nicht kiffen, überrascht viele. Genau diese Überraschung ist der Kern des Ansatzes der sozialen Normen – wer glaubt, „alle“ tun es, fühlt mehr Druck. Wer die Aufstellung aus Jahr 2 kennt, merkt den Unterschied: Heute zählt auch, wie sicher man war, denn ein sicheres Gefühl ist noch kein Beweis. Mit nur zwei Jugendlichen spielen beide als ein Team gegen die Leitung.",
+          "wennEsKippt": "Wird das Quiz zur Bühne für Sprüche wie „Weiß ich, hab ich ausprobiert“, ruhig an die Regel erinnern und die Aussage sachlich auflösen, ohne auf die Person einzugehen. Fragt jemand nach Mengen, Mischungen oder Bezugsquellen, klar sagen: Dazu gibt es hier keine Anleitung – Fragen zu Risiken und Hilfe gehören in die Fragenbox.",
+          "blatt": "skills-faktencheck-rausch"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Imbiss mit Wasser, Saft oder Tee, heute bewusst ohne Energydrinks. Die Leitung bleibt ansprechbar, achtet darauf, wer sich zurückzieht oder auffällig still ist, und bietet ein kurzes Gespräch an. Die drei Stationen werden in der Zwischenzeit aufgebaut, am besten von der zweiten Leitung."
+        },
+        {
+          "titel": "Notfall-Training an drei Stationen",
+          "dauer": 25,
+          "phase": "aktiv",
+          "text": "Zuerst die Warnzeichen und die vier Schritte auf dem Blatt gemeinsam lesen. Dann Kleingruppen von zwei bis drei Personen bilden; jede ist sieben Minuten an einer Station, danach wird gewechselt (Liste). An Station A leitet eine Leitung an: vormachen an der zweiten Leitung oder an der Puppe, dann zu zweit üben, nur wenn beide wollen – wer nicht berührt werden will, übt an der Puppe oder sagt die Schritte an. An Station B spielt ein Paar den Anruf bei 112 mit dem Dialog vom Blatt, an Station C bearbeitet die Kleingruppe die Heimweg-Situationen. Die letzten Minuten gemeinsam auswerten.",
+          "sagen": [
+            "Im Notfall muss niemand perfekt sein. Wichtig ist: nicht wegschauen, 112 anrufen, nicht allein lassen.",
+            "Beim Notruf geht es um Rettung, nicht um Ärger. Hilfe holen ist kein Verrat.",
+            "Wen könntet ihr nachts um zwei anrufen, ohne dass es ein Drama wird?"
+          ],
+          "punkte": [
+            "Station A · Stabile Seitenlage: laut ansprechen, an den Schultern rütteln, Atmung prüfen; nahen Arm im rechten Winkel nach oben legen; fernen Arm über die Brust, Handrücken an die Wange; fernes Bein beugen und die Person zu sich herüberdrehen; Kopf leicht nach hinten neigen, Mund öffnen; zudecken, Atmung weiter prüfen. Angefasst wird nur an Schulter, Arm, Hand und Knie, den Handgriff am Kopf nur an der Puppe oder in der Luft zeigen. Wer die Seitenlage aus Jahr 2 kennt, macht sie ohne Blatt und sagt jeden Schritt laut an.",
+            "Station B · Notruf 112: Wo ist es? Was ist passiert? Wie viele Personen? Ist die Person wach, atmet sie normal? Atmet sie nicht normal, keine Seitenlage – die Leitstelle sagt am Telefon, was zu tun ist. Nicht auflegen, ehrlich sagen, was genommen wurde. Beim Üben wird 112 nur gesagt, nie getippt.",
+            "Station C · Heimweg: Die Person am Steuer hat getrunken. Eine Freundin kann kaum noch stehen, und ein Älterer will mit ihr allein nach draußen. Der letzte Bus ist weg. Zu jeder Situation einen Satz und einen Plan B aufschreiben; wer die Plan-B-Karte aus Jahr 2 hat, prüft, ob sie noch stimmt.",
+            "Auswertung: Was war schwerer als gedacht? Wen könnt ihr anrufen, wenn ihr abgeholt werden müsst?"
+          ],
+          "tipp": "Die Idee eines Codeworts vorstellen: Eine Nachricht mit einem vereinbarten Wort an Eltern, Geschwister oder eine Vertrauensperson heißt „Hol mich bitte ab, Fragen später“ – so kommt man ohne Gesichtsverlust aus einer Lage heraus. Mit nur zwei Jugendlichen die Stationen nacheinander gemeinsam durchlaufen; bei Regen findet ohnehin alles drinnen statt.",
+          "wennEsKippt": "Wird bei der Seitenlage herumgealbert oder jemand gegen seinen Willen angefasst, sofort stoppen: Hier wird nur mit Erlaubnis geübt. Wirkt jemand bei einer Situation sichtlich betroffen, etwa weil er einen Notfall erlebt hat, die Station ruhig wechseln lassen und nach der Einheit das Gespräch anbieten.",
+          "blatt": "skills-notfall-plan"
+        },
+        {
+          "titel": "Skill: anspannen und loslassen",
+          "dauer": 7,
+          "phase": "skill",
+          "text": "Nach einem schweren Thema darf der Körper bewusst herunterfahren. Alle sitzen, Füße auf dem Boden. Die Leitung leitet drei Runden an: Hände zu Fäusten ballen, fünf Sekunden fest halten, loslassen und nachspüren; dann die Schultern zu den Ohren ziehen, halten, fallen lassen; zuletzt das Gesicht zusammenkneifen, halten, lösen. Wer den Skill aus früheren Kursjahren kennt, kann ihn schon – neu ist, ihn gezielt nach einem belastenden Thema einzusetzen. Zum Schluss eine Minute ruhig atmen und still die vier Notfall-Schritte im Kopf durchgehen.",
+          "sagen": [
+            "Fest anspannen – halten – und loslassen. Spürt, wie die Spannung aus den Händen fließt.",
+            "Nach einem schweren Thema darf der Körper wieder runterfahren. Das ist kein Luxus, sondern ein Skill."
+          ],
+          "tipp": "Wer Schmerzen oder eine Verletzung hat, spannt nur leicht an oder lässt die Stelle aus. Wer den Skill nicht mag, atmet einfach langsam mit."
+        },
+        {
+          "titel": "Fragenbox, Check-out mit Zahl und Skills-Pass",
+          "dauer": 8,
+          "phase": "abschluss",
+          "text": "Jede Person bekommt einen gleichen Zettel, schreibt eine Frage oder „keine Frage“ darauf, faltet ihn und wirft ihn in die Box; alle schreiben etwa gleich lang, damit niemand auffällt. Dann der Check-out: Jede Person nennt ihre Anspannung jetzt, von 0 bis 100. Eintrag in den Skills-Pass mit Stempel. Zum Schluss auf die Hilfe-Kästen der Blätter zeigen und sagen, dass die Leitung nach der Einheit noch zehn Minuten da ist.",
+          "sagen": [
+            "Eine Frage oder „keine Frage“ – alle schreiben etwas. Ich lese die Zettel erst später und bespreche sie im Team.",
+            "Eure Zahl jetzt? Wer höher liegt als am Anfang, kann gleich noch kurz mit mir reden.",
+            "Ich bin nach der Stunde noch zehn Minuten hier."
+          ],
+          "tipp": "Die Fragen nach der Einheit im Team durchgehen und die Antworten für den Beginn der nächsten Einheit vorbereiten. Zettel, die auf eine persönliche Notlage hindeuten, nicht in der Gruppe beantworten, sondern nach dem Schutzkonzept vorgehen; Beobachtungen aus der Einheit ebenfalls im Team besprechen.",
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Nächstes Mal beantworten wir eure Fragen aus der Box – und dann geht es um etwas, das allen passiert: Fehler, und was man daraus macht.",
+      "hintergrund": "Abschreckung wirkt in der Prävention kaum: Eine Meta-Analyse zu Furchtappellen zeigt, dass Drohbotschaften nur etwas bewirken, wenn sich Menschen zugleich in der Lage fühlen, wirksam zu handeln (Peters, Ruiter & Kok, 2013). Deshalb setzt die Einheit auf Fakten und geübtes Handlungswissen, etwa die stabile Seitenlage nach den europäischen Erste-Hilfe-Leitlinien (Zideman et al., 2021). Jugendliche überschätzen zudem, wie viel Gleichaltrige konsumieren; wer die tatsächliche Norm kennt, fühlt weniger Druck (Perkins, 2002). Die Risiken sind sachlich begründet: Starkes Trinken im Jugendalter geht mit Veränderungen in Gedächtnis und Aufmerksamkeit einher (Squeglia et al., 2009), und wer als Jugendlicher regelmäßig Cannabis konsumiert, wird deutlich häufiger abhängig als bei späterem Beginn (Volkow et al., 2014). Schulische Programme wirken eher, wenn sie soziale Kompetenzen und den Umgang mit Einflüssen üben, statt nur zu informieren (Faggiano et al., 2014).",
+      "quellen": [
+        "Peters, G.-J. Y., Ruiter, R. A. C. & Kok, G. (2013). Threatening communication: A critical re-analysis and a revised meta-analytic test of fear appeal theory. Health Psychology Review, 7(Suppl. 1), S8–S31.",
+        "Zideman, D. A., Singletary, E. M., Borra, V., Cassan, P., Cimpoesu, C. D., De Buck, E., Djärv, T., Handley, A. J., Klaassen, B., Meyran, D., Oliver, E. & Poole, K. (2021). European Resuscitation Council Guidelines 2021: First aid. Resuscitation, 161, 270–290.",
+        "Perkins, H. W. (2002). Social norms and the prevention of alcohol misuse in collegiate contexts. Journal of Studies on Alcohol, Supplement 14, 164–172.",
+        "Squeglia, L. M., Jacobus, J. & Tapert, S. F. (2009). The influence of substance use on adolescent brain development. Clinical EEG and Neuroscience, 40(1), 31–38.",
+        "Volkow, N. D., Baler, R. D., Compton, W. M. & Weiss, S. R. B. (2014). Adverse health effects of marijuana use. New England Journal of Medicine, 370(23), 2219–2227.",
+        "Faggiano, F., Minozzi, S., Versino, E. & Buscemi, D. (2014). Universal school-based prevention for illicit drug use. Cochrane Database of Systematic Reviews, (12), CD003020."
+      ],
+      "achtung": "Das Thema kann eigene Erfahrungen berühren: eigenen Konsum, Sucht in der Familie, erlebte Notfälle oder Übergriffe unter Alkohol oder Drogen. Deshalb werden keine Konsum- oder Beziehungsgeschichten abgefragt, entsprechende Beiträge freundlich gestoppt, keine Schockbilder oder Videos gezeigt und keine Auskünfte zu Mengen, Mischungen oder Bezugsquellen gegeben. Gibt es Hinweise auf gefährlichen Konsum, Sucht im Umfeld, Selbstverletzung, Suizidgedanken, Missbrauch oder einen Übergriff: die Person nach der Einheit ruhig ansprechen, zuhören, nichts versprechen, was man nicht halten kann – vor allem keine Geheimhaltung –, das interne Schutzkonzept anwenden und die zuständige Leitung (Responsable) noch am selben Tag informieren. Bei akuter Gefahr, etwa wenn jemand berauscht zur Einheit kommt und kaum ansprechbar ist, Notruf 112 wählen und die Person nicht allein lassen. Nach der Einheit Beobachtungen im Team besprechen und die Antworten auf die Fragen aus der Box gemeinsam abstimmen."
+    },
+    {
+      "id": "j3-e09",
+      "nr": 9,
+      "jahr": 3,
+      "modul": "j3-m2",
+      "titel": "Fehler machen – und daraus lernen",
+      "kurz": "Fehler gehören zum Lernen: Die Gruppe sortiert Fehler nach ihrer Art, lernt das Wort „noch“ schätzen, feiert beim Jonglieren jeden Patzer und schließt das Modul mit einer Seite im Skills-Buch ab.",
+      "dauer": 100,
+      "ziele": [
+        "unterscheiden vier Arten von Fehlern und finden zu jeder einen passenden nächsten Schritt",
+        "erklären den Unterschied zwischen einem starren und einem dynamischen Selbstbild und formulieren starre Sätze mit dem Wort „noch“ um",
+        "erleben beim Jonglieren, dass Fehler zum Lernen gehören, und reagieren mit der Ta-da-Regel gelassen darauf",
+        "halten im Skills-Buch fest, was sie aus dem Modul Entscheidungen und Verantwortung mitnehmen"
+      ],
+      "material": [
+        "Gefühlsrad (A3, laminiert), Wäscheklammern und Anspannungsskala 0–100",
+        "Die Zettel aus der Fragenbox der letzten Einheit und die im Team abgestimmten Antworten",
+        "Schülerblatt „Vom Fehler zum nächsten Schritt“ für jede Person",
+        "Je Person drei Jongliertücher, ersatzweise leichte Halstücher oder Chiffontücher",
+        "Die Skills-Bücher der Jugendlichen und für jede Person eine neu kopierte Modulseite (Blatt „Mein Skills-Buch“, Seite 2), Klarsichthüllen",
+        "Skills-Pässe, Stempel, Imbiss und Getränke (Allergien beachten)"
+      ],
+      "vorbereitung": [
+        "Die Zettel aus der Fragenbox im Team durchgehen und kurze, sachliche Antworten vorbereiten. Fragen, die auf eine persönliche Notlage hindeuten, nicht in der Gruppe beantworten, sondern nach dem Schutzkonzept klären.",
+        "Eine eigene kurze Geschichte vom Scheitern und Weitermachen überlegen, die die Leitung ehrlich erzählen kann – nichts, was die Jugendlichen belastet.",
+        "Platz für das Jonglieren schaffen: Tische an die Wand, zwischen den Personen etwa zwei Meter Abstand.",
+        "Die Skills-Bücher bereitlegen, die Modulseite kopieren und an die Tafel die vier Stationen des Moduls schreiben: Entscheidungsweg, Mut-Check, Notfall-Plan, Fehler."
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-fehler-naechster-schritt",
+        "skills-buch",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Was hast du durch Fehler gelernt?"
+        },
+        {
+          "min": "10–20",
+          "phase": "bruecke",
+          "titel": "Antworten aus der Fragenbox"
+        },
+        {
+          "min": "20–30",
+          "phase": "input",
+          "titel": "Das kleine Wort „noch“"
+        },
+        {
+          "min": "30–45",
+          "phase": "uebung",
+          "titel": "Vier Arten von Fehlern"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–80",
+          "phase": "aktiv",
+          "titel": "Jonglier-Labor mit der Ta-da-Regel"
+        },
+        {
+          "min": "80–87",
+          "phase": "skill",
+          "titel": "Skill: der Satz nach dem Fehler"
+        },
+        {
+          "min": "87–97",
+          "phase": "abschluss",
+          "titel": "Skills-Buch: die Seite für Modul 2"
+        },
+        {
+          "min": "97–100",
+          "phase": "abschluss",
+          "titel": "Réckbléck und Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: Was hast du durch Fehler gelernt?",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Gefühlsrad und Anspannungsskala wie gewohnt. Dazu die Zusatzfrage: Was hast du als Kind nur gelernt, weil du es oft falsch gemacht hast – Fahrrad fahren, Schuhe binden, schwimmen, eine Sprache? Die Leitung beginnt mit einem eigenen Beispiel. Die Antworten ohne Namen an der Tafel sammeln; sie zeigen später, dass niemand ohne Fehler lernt.",
+          "sagen": [
+            "Gefühl, Zahl – und etwas, das du nur durch viele Fehler gelernt hast.",
+            "Ich bin beim Radfahrenlernen in eine Hecke gefahren. Mehr als einmal."
+          ],
+          "tipp": "Mehrsprachige Gruppen haben ein starkes Beispiel direkt vor sich: Wer Luxemburgisch, Französisch und Deutsch gelernt hat, hat Tausende Fehler hinter sich – und spricht trotzdem.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Antworten aus der Fragenbox",
+          "dauer": 10,
+          "phase": "bruecke",
+          "text": "Die im Team vorbereiteten Antworten auf die Fragen aus der letzten Einheit vorlesen, ähnliche Fragen zusammenfassen und nie andeuten, von wem eine Frage stammen könnte. Sachlich bleiben und nur beantworten, was im Team geklärt ist; Fragen, die nicht in die Gruppe gehören, mit einem Satz erwähnen und ein Gespräch zu zweit anbieten. Dann die Brücke schlagen: Im ganzen Modul ging es um Entscheidungen – heute geht es darum, was passiert, wenn eine Entscheidung danebengeht.",
+          "sagen": [
+            "Danke für eure Fragen. Es waren gute dabei, und alle haben eine Antwort verdient.",
+            "Ein paar Fragen beantworte ich lieber einzeln. Wer mag, kommt nachher kurz zu mir.",
+            "Wer entscheidet, liegt manchmal daneben. Heute geht es darum, was man danach macht."
+          ],
+          "tipp": "Kamen keine Fragen, das nicht bewerten und die Box noch eine Woche stehen lassen. Manche trauen sich erst, wenn sie sehen, dass Fragen wirklich beantwortet werden.",
+          "wennEsKippt": "Wird beim Vorlesen gerätselt, wer welche Frage gestellt hat, sofort stoppen: Die Box ist anonym, und so bleibt es. Kommen neue Fragen zu Alkohol oder Drogen auf, kurz beantworten oder in die Box verweisen, damit genug Zeit für das heutige Thema bleibt."
+        },
+        {
+          "titel": "Das kleine Wort „noch“",
+          "dauer": 10,
+          "phase": "input",
+          "text": "Zwei Sätze an die Tafel schreiben: „Ich kann das nicht.“ und „Ich kann das noch nicht.“ Die Gruppe beschreibt den Unterschied. Dann mit dem Tafelbild erklären, was ein starres und was ein dynamisches Selbstbild ist (Tabelle). Die Leitung erzählt kurz ihre eigene Geschichte vom Scheitern und Weitermachen, danach liest eine freiwillige Person Chiaras Geschichte vom Blatt vor. Frage an die Gruppe: Was hat Chiara geholfen – und was hätte sie aufhalten können?",
+          "sagen": [
+            "Was ändert das kleine Wort „noch“?",
+            "Niemand denkt immer gleich. Beim Fußball denken viele dynamisch und bei Mathe starr."
+          ],
+          "tabelle": {
+            "spalten": [
+              "Frage",
+              "Starres Selbstbild",
+              "Dynamisches Selbstbild"
+            ],
+            "zeilen": [
+              [
+                "Fähigkeiten sind …",
+                "angeboren und fest",
+                "trainierbar, wie ein Muskel"
+              ],
+              [
+                "Ein Fehler zeigt …",
+                "dass ich es nicht kann",
+                "was ich als Nächstes üben kann"
+              ],
+              [
+                "Bei schweren Aufgaben …",
+                "lieber gar nicht erst anfangen",
+                "anfangen, nachfragen, dranbleiben"
+              ],
+              [
+                "Typischer Satz",
+                "„Ich bin halt schlecht in Mathe.“",
+                "„Brüche kann ich noch nicht sicher.“"
+              ]
+            ]
+          },
+          "tipp": "Ehrlich bleiben: Manches fällt einem schwerer als anderen, und Unterstützung gehört dazu. Das dynamische Selbstbild verspricht nicht, dass alles geht – nur, dass es mit Übung und Hilfe besser wird.",
+          "blatt": "skills-fehler-naechster-schritt"
+        },
+        {
+          "titel": "Vier Arten von Fehlern",
+          "dauer": 15,
+          "phase": "uebung",
+          "text": "Die vier Fehlerarten vorstellen (Liste) und fragen, welche davon eigentlich ein gutes Zeichen ist. Dann liest die Leitung die Beispiele aus der Tabelle vor, und alle zeigen gleichzeitig mit einem bis vier Fingern, welche Art gemeint ist. Danach bearbeitet jede Person auf dem Blatt Aufgabe 1 und 2 und dann Aufgabe 3 mit einem eigenen oder einem erfundenen Fehler; Aufgabe 3 wird nicht vorgelesen.",
+          "sagen": [
+            "Welcher dieser Fehler ist eigentlich ein gutes Zeichen?",
+            "Ein Schusselfehler braucht etwas anderes als ein Fehler, der jemanden verletzt hat."
+          ],
+          "punkte": [
+            "1 Schusselfehler: Ich konnte es, war aber zu schnell oder abgelenkt.",
+            "2 Noch-nicht-Fehler: Mir fehlte Wissen, Übung oder die passende Lernstrategie.",
+            "3 Mut-Fehler: Ich habe etwas Neues gewagt, und es hat noch nicht geklappt.",
+            "4 Fehler mit Folgen: Jemand anderes hat dadurch Schaden."
+          ],
+          "tabelle": {
+            "spalten": [
+              "Beispiel",
+              "Fehlerart",
+              "Nächster Schritt"
+            ],
+            "zeilen": [
+              [
+                "Im Devoir „plus“ statt „minus“ gelesen, obwohl die Aufgabe klar war",
+                "1 Schusselfehler",
+                "langsamer lesen, am Ende kontrollieren"
+              ],
+              [
+                "Die Vokabeln für den Französischtest nur einmal durchgelesen",
+                "2 Noch-nicht-Fehler",
+                "abfragen statt lesen, über mehrere Tage verteilt"
+              ],
+              [
+                "Beim ersten Vorstellungsgespräch vor Aufregung den Namen der Firma vergessen",
+                "3 Mut-Fehler",
+                "auswerten, üben, beim nächsten Mal einen Stichwortzettel mitnehmen"
+              ],
+              [
+                "Eine Nachricht über jemanden weitergeleitet, die nicht für alle bestimmt war",
+                "4 Fehler mit Folgen",
+                "löschen, sich entschuldigen, wiedergutmachen"
+              ],
+              [
+                "Beim neuen Trick mit dem Skateboard hingefallen",
+                "3 Mut-Fehler",
+                "den Trick in kleine Schritte zerlegen, weiter üben"
+              ],
+              [
+                "Den Bus verpasst, weil der Wecker nicht gestellt war",
+                "1 Schusselfehler",
+                "den Wecker schon abends stellen"
+              ]
+            ]
+          },
+          "tipp": "Beim Fehler mit Folgen genügt heute, ihn zu erkennen und den nächsten Schritt zu benennen. Wiedergutmachen ist ein eigener Skill; wer ihn aus früheren Kursjahren kennt, kann hier anknüpfen.",
+          "wennEsKippt": "Will niemand an einen eigenen Fehler denken, ist das in Ordnung: Aufgabe 3 darf für eine erfundene Person ausgefüllt werden. Kommt ein Fehler zur Sprache, der jemanden schwer belastet – etwa ein Unfall oder ein Bruch in der Familie –, nicht vertiefen und nach der Einheit ein Gespräch anbieten.",
+          "blatt": "skills-fehler-naechster-schritt"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Gemeinsam essen, Fenster auf. Die Leitung lässt das Thema ruhen und legt in der Zwischenzeit für jede Person drei Tücher bereit."
+        },
+        {
+          "titel": "Jonglier-Labor mit der Ta-da-Regel",
+          "dauer": 20,
+          "phase": "aktiv",
+          "text": "Alle stehen mit Abstand im Raum, jede Person hat drei Tücher. Vorher die Ta-da-Regel einführen: Fällt etwas herunter, reißt man beide Arme hoch, ruft „Ta-da“ und verbeugt sich wie im Zirkus – dann aufheben und weitermachen. In drei Stufen jonglieren (Liste), je etwa fünf Minuten; die Leitung zeigt jede Stufe vor und jongliert selbst mit. Nach jeder Stufe kurz stoppen: Was hat dir der letzte Fehler verraten? Zum Schluss auswerten, was die Ta-da-Regel mit der Stimmung gemacht hat.",
+          "sagen": [
+            "Hier gilt: Jeder Fehler bekommt ein Ta-da. Arme hoch, verbeugen, aufheben, weiter.",
+            "Was hat dir der letzte Fehler verraten – zu hoch, zu schnell, zu weit nach vorn?",
+            "Wie viele Fehler habt ihr in einer Viertelstunde gemacht? Und was könnt ihr jetzt, was ihr vorher nicht konntet?"
+          ],
+          "punkte": [
+            "Stufe 1: ein Tuch in einem Bogen über Augenhöhe von einer Hand in die andere werfen und fangen.",
+            "Stufe 2: zwei Tücher – das erste werfen, und wenn es oben ist, das zweite hinterher.",
+            "Stufe 3: drei Tücher – zwei in der einen Hand, eines in der anderen; immer dann werfen, wenn das vorige Tuch oben ist.",
+            "Wer schneller ist, wirft ein Tuch unter dem Bein durch oder jongliert zu zweit mit vier Tüchern."
+          ],
+          "tipp": "Die Leitung feiert ihre eigenen Fehler zuerst und am lautesten. Mit nur zwei Jugendlichen klappt die Übung genauso, bei wenig Energie geht sie im Sitzen mit einem oder zwei Tüchern, und bei Regen ist sie ohnehin für drinnen gedacht.",
+          "wennEsKippt": "Wird das Ta-da benutzt, um andere auszulachen, stoppen: Ta-da ruft man nur für sich selbst. Wer frustriert aufgeben will, geht eine Stufe zurück und bekommt Zeit; ein kurzer Hinweis auf das Wort „noch“ hilft hier mehr als jeder Motivationsvortrag."
+        },
+        {
+          "titel": "Skill: der Satz nach dem Fehler",
+          "dauer": 7,
+          "phase": "skill",
+          "text": "Alle setzen sich, das Tempo sinkt. Jede Person denkt an einen kleinen Fehler der letzten Wochen, der sie noch ärgert. Die Leitung leitet ruhig an: eine Hand auf die Brust oder den Bauch legen, zweimal lang ausatmen und innerlich drei Sätze sagen (Liste). Danach fragen, wie sich das anfühlt im Vergleich zu dem, was man sich sonst nach einem Fehler sagt. Wer mag, schreibt die Sätze als Aufgabe 4 auf das Blatt.",
+          "sagen": [
+            "Stell dir vor, deine beste Freundin hätte diesen Fehler gemacht. Du würdest sie nicht anschreien. Warum dann dich selbst?",
+            "Die drei Sätze nehmen den Fehler ernst, aber sie treten nicht nach."
+          ],
+          "punkte": [
+            "Das war ein Fehler, und er ärgert mich.",
+            "So etwas passiert allen Menschen.",
+            "Was würde mir jetzt helfen – und was ist mein nächster Schritt?"
+          ],
+          "tipp": "Freundlich zu sich zu sein, ist keine Ausrede: Wer sich nicht fertigmacht, kann einen Fehler leichter anschauen und etwas daraus machen. Wer den inneren Kritiker und den freundlichen Ton aus Jahr 2 kennt, findet ihn hier wieder.",
+          "blatt": "skills-fehler-naechster-schritt"
+        },
+        {
+          "titel": "Skills-Buch: die Seite für Modul 2",
+          "dauer": 10,
+          "phase": "abschluss",
+          "text": "Das Modul abschließen: Die Leitung zeigt an der Tafel noch einmal die vier Stationen – Entscheidungsweg, Mut-Check, Notfall-Plan, Fehler. Jede Person bekommt eine neue Modulseite für ihr Skills-Buch, trägt „Entscheidungen und Verantwortung“ ein und füllt die Rubriken, die für sie passen (Liste). Blätter aus den vier Einheiten, die jemand behalten will, kommen ins Buch und in den Inhalt auf Seite 1. Das Buch bleibt danach wie immer im Raum.",
+          "sagen": [
+            "Was aus diesen vier Treffen wollt ihr in fünf Jahren noch wissen?",
+            "Lieber ein guter Eintrag als vier halbe."
+          ],
+          "punkte": [
+            "Lieblingsskills: etwa die vier Felder von Pro und Contra, die Freundin-Frage oder der Stopp mit dem Schritt zurück",
+            "Pläne: ein Wenn-dann-Plan für einen riskanten Moment, mit dem eigenen Ausstiegssatz oder dem Codewort",
+            "Sätze, die tragen: ein Satz für Fehler, gern mit dem Wort „noch“, oder einer der drei Sätze nach dem Fehler",
+            "Menschen, die helfen: wen ich anrufe, wenn ich abgeholt werden muss – und im Notfall die 112"
+          ],
+          "tipp": "Den Notfall-Plan aus der letzten Einheit ausdrücklich empfehlen: Er gehört in jedes Buch, auch wenn man hofft, ihn nie zu brauchen. Wer nicht fertig wird, beendet die Seite zu Beginn der nächsten Einheit.",
+          "blatt": "skills-buch"
+        },
+        {
+          "titel": "Réckbléck und Skills-Pass",
+          "dauer": 3,
+          "phase": "abschluss",
+          "text": "Blitzlicht mit einer Frage: Welcher Fehler darf bei dir ab heute ein Ta-da bekommen? Dann ein Satz in den Skills-Pass und der Stempel. Zum Schluss auf Aufgabe 5 hinweisen – wer mag, fragt bis zum nächsten Mal eine vertraute erwachsene Person nach ihrer Geschichte vom Scheitern und Weitermachen – und den Ausblick auf das neue Modul geben.",
+          "sagen": [
+            "Ein Satz zum Schluss: Welcher Fehler darf bei euch ab heute ein Ta-da bekommen?",
+            "Fast jeder Erwachsene hat eine Geschichte vom Scheitern. Fragt mal nach – ihr werdet staunen."
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Nächstes Mal beginnt ein neues Modul, Zukunft und Beruf – und wir fangen bei dem an, was ihr könnt und was euch interessiert.",
+      "hintergrund": "Wie Jugendliche einen Fehler deuten, beeinflusst, ob sie dranbleiben. Dweck (2006) unterscheidet ein starres Selbstbild, in dem Fähigkeiten festgelegt sind und Fehler fehlende Begabung beweisen, von einem dynamischen, in dem Fähigkeiten durch Übung und Unterstützung wachsen; wer so denkt, sucht nach einem Fehler eher nach Ursachen und Strategien. Rückmeldungen helfen, wenn sie klären, wohin es gehen soll, wo man steht und was der nächste Schritt ist (Hattie & Timperley, 2007) – die vier Fehlerarten übersetzen das in konkrete Schritte. Selbstmitgefühl heißt, einem eigenen Fehler achtsam und freundlich zu begegnen (Neff, 2003). Es macht nicht bequem: Nach einem Misserfolg lernten Menschen damit sogar länger für den nächsten Versuch (Breines & Chen, 2012). Eine solche Haltung entsteht nicht in einer Stunde – kurze Trainings zum dynamischen Selbstbild wirken im Mittel nur schwach (Sisk et al., 2018) –, sondern wenn Erwachsene Fehler im Alltag genauso behandeln.",
+      "quellen": [
+        "Dweck, C. S. (2006). Mindset: The New Psychology of Success. New York: Random House.",
+        "Hattie, J. & Timperley, H. (2007). The power of feedback. Review of Educational Research, 77(1), 81–112.",
+        "Neff, K. D. (2003). Self-compassion: An alternative conceptualization of a healthy attitude toward oneself. Self and Identity, 2(2), 85–101.",
+        "Breines, J. G. & Chen, S. (2012). Self-compassion increases self-improvement motivation. Personality and Social Psychology Bulletin, 38(9), 1133–1143.",
+        "Sisk, V. F., Burgoyne, A. P., Sun, J., Butler, J. L. & Macnamara, B. N. (2018). To what extent and under which circumstances are growth mind-sets important to academic achievement? Two meta-analyses. Psychological Science, 29(4), 549–571."
+      ],
+      "achtung": "Fehler berühren Scham, und manche Jugendliche tragen Fehler mit sich, die schwer wiegen – ein Unfall, ein Schulabbruch, etwas, das jemandem geschadet hat. Deshalb werden eigene Fehler nur auf dem Blatt bearbeitet und nicht vorgelesen, und die Leitung erzählt selbst nur eine leichte Geschichte. Wirkt jemand sehr niedergeschlagen oder sagt Sätze wie „Ich mache sowieso alles falsch“ oder „Ich tauge zu nichts“, nach der Einheit behutsam nachfragen. Bei Hinweisen auf Selbstverletzung, Suizidgedanken, Gewalt oder Missbrauch nicht in der Gruppe vertiefen, sondern nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) informieren. Antworten aus der Fragenbox nur so geben, wie sie im Team abgestimmt sind."
+    }
+  ]
+}

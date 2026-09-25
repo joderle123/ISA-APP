@@ -1,0 +1,1911 @@
+[
+  {
+    "id": "skills-widerstandskraft",
+    "bereich": "skills",
+    "thema": "resilienz",
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "gruppe"
+    ],
+    "dauer": "30 Min.",
+    "eldib": [
+      "SOZ-37",
+      "SOZ-36",
+      "K-33",
+      "SOZ-40"
+    ],
+    "schlagworte": [
+      "Resilienz",
+      "Widerstandskraft",
+      "Schutzfaktoren",
+      "Fallgeschichten",
+      "Kauai-Studie",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:seedling",
+    "verwandt": [
+      "skills-baum-der-staerke",
+      "mein-staerkenprofil"
+    ],
+    "kurs": [
+      "j3-e21"
+    ],
+    "de": {
+      "titel": "Geschichten von Widerstandskraft",
+      "untertitel": "Vier Jugendliche, vier schwere Zeiten – und was ihnen wieder auf die Beine geholfen hat",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Die Geschichten sind erfunden. So oder ähnlich erleben es Jugendliche in Luxemburg aber jeden Tag. Keine der vier Personen ist eine Heldin oder ein Held – genau darum geht es."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Lest eure Geschichte und markiert alles, was der Person geholfen hat.",
+          "hinweis": "Achtet auch auf Kleinigkeiten: einen Satz, einen Ort, eine Aufgabe, eine Gewohnheit.",
+          "symbole": [
+            "lesen",
+            "gruppe"
+          ]
+        },
+        {
+          "art": "geschichte",
+          "titel": "Rafael, 16",
+          "bild": "icon:ball-football",
+          "text": "Rafael war zwölf, als er mit seiner Mutter und seiner kleinen Schwester aus Brasilien nach Esch kam. Im Unterricht verstand er kaum etwas, in der Pause stand er oft allein. Seine Mutter arbeitete im Schichtdienst, also holte er nachmittags die Schwester ab und machte ihr Essen. Im Futsal-Verein fragte ihn der Trainer irgendwann, ob er beim Kindertraining helfen wolle. Dort merkte Rafael, dass er gut erklären kann – mit Händen, Füßen und den ersten deutschen Wörtern. Heute sagt er: „Meine Schwester hat mich gebraucht. Das hat mich jeden Morgen aufstehen lassen.“"
+        },
+        {
+          "art": "geschichte",
+          "titel": "Zoé, 15",
+          "bild": "icon:backpack",
+          "text": "Seit der Trennung ihrer Eltern wohnt Zoé eine Woche bei der Mutter in Ettelbruck, eine Woche beim Vater in der Stadt. Irgendetwas fehlt immer: das Ladekabel, das Französischheft, die Sportschuhe. Ihre Noten wurden so schlecht, dass sie die Klasse wiederholen musste. Zu Hause wollte sie niemanden zusätzlich belasten. Ihre Oma merkte es zuerst, beim gemeinsamen Kochen jeden Mittwoch, und ermutigte sie, beim SePAS einen Termin zu machen. Dort machte Zoé einen Plan: feste Lernzeiten in beiden Wohnungen und eine Liste für die Tasche. Heute sagt sie: „Das Wiederholen war kein Absturz. Es war ein Neustart – mit Plan.“"
+        },
+        {
+          "art": "geschichte",
+          "titel": "Mathis, 17",
+          "bild": "icon:bandage",
+          "text": "Mathis spielte Handball, seit er sieben war, und seine Freunde waren seine Mannschaft. Mit fünfzehn riss ihm im Training das Kreuzband. Acht Monate kein Sport, drei Wochen Krücken, und die anderen fuhren ohne ihn zu Turnieren. Er zog sich zurück und war oft gereizt. Sein älterer Bruder nahm ihn trotzdem zu jedem Heimspiel mit. Die Physiotherapeutin setzte ihm kleine Ziele, und Mathis führte eine Liste über jeden Fortschritt. Irgendwann fragte die Trainerin, ob er bei den Spielen die Statistik führen könne. Heute sagt er: „Ich habe gelernt, dass ich auch ohne Ball zur Mannschaft gehöre.“"
+        },
+        {
+          "art": "geschichte",
+          "titel": "Nora, 15",
+          "bild": "icon:notebook",
+          "text": "Noras Mutter ist seit zwei Jahren oft krank. An schlechten Tagen bleibt sie im Bett, und Nora macht ihrem kleinen Bruder Frühstück und bringt ihn zur Schule. Erzählt hat sie das niemandem – aus Scham und aus Angst, dass sich dann alles ändert. Im Unterricht war sie oft müde. Eines Tages fragte ihre Klassenlehrerin nach der Stunde: „Wie geht es dir eigentlich?“ Zum ersten Mal sagte Nora die Wahrheit. Seitdem nimmt ihre Tante den Bruder am Wochenende, und Nora geht freitags ins Jugendhaus, wo sie einfach fünfzehn sein darf. Sie schreibt Songtexte in ein Heft. Heute sagt sie: „Das Schwerste war der erste Satz.“"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Tragt ein, was geholfen hat: zuerst für eure Person, beim Vorstellen dann für die anderen.",
+          "hinweis": "Ich habe: Menschen und Orte. Ich bin: Stärken. Ich kann: Fähigkeiten und Skills. Wendepunkt: der Moment, ab dem es besser wurde.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Person",
+            "Ich habe …",
+            "Ich bin …",
+            "Ich kann …",
+            "Wendepunkt"
+          ],
+          "breiten": [
+            0.8,
+            1.35,
+            1.0,
+            1.15,
+            1.2
+          ],
+          "zeilen": 4,
+          "beispiel": [
+            "Kinder von Kauai",
+            "eine Oma oder einen Lehrer, der zu mir hält",
+            "freundlich, neugierig",
+            "etwas, auf das ich stolz bin",
+            "eine zweite Chance"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Vergleicht: Was kommt in allen vier Geschichten vor?"
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "In allen vier Geschichten gibt es …"
+          ],
+          "linien": 2
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Was die Forschung zeigt",
+          "punkte": [
+            "Widerstandskraft ist keine angeborene Härte. Sie wächst aus gewöhnlichen Dingen: Menschen, Fähigkeiten, guten Orten, Hoffnung.",
+            "Oft reicht ein einziger Mensch, der verlässlich zu einem hält. Das muss nicht die eigene Familie sein.",
+            "Es ist nie zu spät: Viele finden ihren Weg erst als junge Erwachsene, durch eine zweite Chance."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Nur für dich: Welcher Satz aus den Geschichten bleibt dir im Kopf?"
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Mir bleibt im Kopf: …",
+            "Weil …"
+          ],
+          "linien": 1
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen untersuchen in vier erfundenen Fallgeschichten, was Jugendlichen durch schwere Zeiten geholfen hat, und verbinden das mit Befunden der Resilienzforschung.",
+        "ablauf": [
+          "Vorher (10 Min.): die Kauai-Studie erzählen, die Kraftquellen der Kinder von Kauai an die Tafel.",
+          "Aufgabe 1 (8 Min.): Paare oder Dreiergruppen per Zufall, je eine Geschichte. Lesen, markieren, die eigene Zeile ausfüllen.",
+          "Vorstellen (8 Min.): je eine Minute pro Person; die anderen ergänzen die Tabelle, die Leitung sammelt an der Tafel.",
+          "Aufgabe 3 (4 Min.): Was kommt überall vor? Die Antwort der Gruppe abwarten, dann den Merkkasten lesen. Aufgabe 4 bleibt privat."
+        ],
+        "hintergrund": "Die Geschichten übertragen die Befunde der Kauai-Studie in den Alltag Luxemburger Jugendlicher. Werner und Smith (1992) fanden bei Kindern, die sich trotz vieler Risiken gut entwickelten, immer wieder dieselben Schutzfaktoren: eine verlässliche Bezugsperson, oft außerhalb der Familie, eine Fähigkeit, die Stolz gab, die Erfahrung, gebraucht zu werden, und Gemeinschaften wie Schule oder Verein. Masten (2014) beschreibt Resilienz deshalb als etwas Gewöhnliches, das aus Beziehungen, Selbstregulation, Selbstwirksamkeit und Hoffnung entsteht. Die Spalten „Ich habe – Ich bin – Ich kann“ folgen Grotberg (1995): äußere Stützen, innere Stärken, Fähigkeiten. Fallgeschichten erlauben, über Belastung zu sprechen, ohne Eigenes preiszugeben.",
+        "quellen": [
+          "Werner, E. E. & Smith, R. S. (1992). Overcoming the Odds. Ithaca: Cornell University Press.",
+          "Masten, A. S. (2014). Ordinary Magic: Resilience in Development. New York: Guilford.",
+          "Grotberg, E. H. (1995). A Guide to Promoting Resilience in Children: Strengthening the Human Spirit. Den Haag: Bernard van Leer Foundation."
+        ],
+        "differenzierung": {
+          "leichter": "Die Leitung liest vor; die Gruppe füllt nur „Ich habe“ und den Wendepunkt aus.",
+          "schwerer": "Eine fünfte, erfundene Geschichte mit Wendepunkt schreiben."
+        },
+        "impulse": [
+          "Was hat die Person mitgebracht, und was hat sie unterwegs gefunden?",
+          "Wer hat hingeschaut – und woran hat er oder sie etwas gemerkt?"
+        ],
+        "tipps": [
+          "Mögliche Funde: Rafael – Trainer, Schwester; Zoé – Oma, SePAS, Plan; Mathis – Bruder, kleine Ziele; Nora – Lehrerin, Tante, Jugendhaus.",
+          "Noras erster Satz leitet zur nächsten Einheit über."
+        ],
+        "achtung": "Wer sich in einer Geschichte wiedererkennt, muss das nicht zeigen: nicht nachfragen, Einzelgespräch anbieten. Bei Hinweisen auf Gewalt oder eine Krise Schutzkonzept anwenden, Responsable informieren.",
+        "material": "Blatt je Person, Textmarker, Tafel"
+      }
+    }
+  },
+  {
+    "id": "skills-kraftquellen",
+    "bereich": "skills",
+    "thema": "resilienz",
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln"
+    ],
+    "dauer": "10–15 Min.",
+    "eldib": [
+      "K-19",
+      "K-18",
+      "SOZ-40",
+      "V-32"
+    ],
+    "schlagworte": [
+      "Kraftquellen",
+      "Ressourcen",
+      "Resilienz",
+      "Stärken",
+      "Wenn-dann-Plan",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:sunrise",
+    "verwandt": [
+      "skills-baum-der-staerke",
+      "skills-koffer-ampelplan"
+    ],
+    "kurs": [
+      "j3-e21",
+      "j3-e22"
+    ],
+    "de": {
+      "titel": "Meine Kraftquellen",
+      "untertitel": "Was mich hält, wenn es schwer wird – Menschen, Orte, Tun und ich selbst",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Du entscheidest, was du teilst.",
+          "text": "Dieses Blatt gehört dir. Niemand sammelt es ein, und du liest nur vor, was du willst."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wer oder was gibt dir Kraft? Schreib in jedes Feld, was dir einfällt.",
+          "hinweis": "Die Plakate im Raum sind eine Ideenbank. Kleines zählt: ein Lied, ein Geruch, ein Platz am Fenster.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "feld",
+              "label": "Menschen (und Tiere)",
+              "beispiel": "meine Cousine, der Trainer, mein Hund",
+              "hoehe": 6.4
+            },
+            {
+              "art": "feld",
+              "label": "Tun",
+              "beispiel": "Basketball, zeichnen, kochen, Musik laut hören",
+              "hoehe": 6.4
+            }
+          ],
+          "rechts": [
+            {
+              "art": "feld",
+              "label": "Orte",
+              "beispiel": "die Bank am Fluss, mein Zimmer, das Jugendhaus",
+              "hoehe": 6.4
+            },
+            {
+              "art": "feld",
+              "label": "Ich selbst",
+              "beispiel": "mein Humor, ich gebe nicht auf, mein Glaube",
+              "hoehe": 6.4
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Denk an eine schwere Zeit, die hinter dir liegt. Was hat dich damals getragen?",
+          "hinweis": "Nur für dich. Stichworte oder Zeichen, die nur du verstehst, reichen."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Getragen hat mich …",
+            "Diese Stärke habe ich dabei gezeigt: …",
+            "Das würde ich heute wieder so machen: …"
+          ],
+          "linien": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wie oft nutzt du deine Kraftquellen gerade? Kreuz an."
+        },
+        {
+          "art": "einschaetzung",
+          "items": [
+            "Menschen – mit jemandem reden, lachen, Zeit verbringen",
+            "Orte – an einem Platz sein, der mir guttut",
+            "Tun – etwas machen, das mir Freude macht oder mich auspowert",
+            "Ich selbst – mich an meine Stärken erinnern"
+          ],
+          "optionen": [
+            "oft",
+            "manchmal",
+            "kaum"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Such dir eine Kraftquelle aus, die zu kurz gekommen ist. Wann nutzt du sie in der kommenden Woche?"
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Wenn ich am Donnerstag gestresst aus der Schule komme,",
+              "dann": "gehe ich zuerst zwanzig Minuten mit dem Hund raus, bevor ich aufs Handy schaue."
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Kraftquellen wachsen",
+          "text": "Niemand hat alle Kraftquellen gleichzeitig. Neue kann man finden: einen Verein ausprobieren, einen Menschen fragen, einen Skill üben. Wenn dir gerade kaum etwas einfällt, ist das ein guter Grund, mit jemandem zu reden – kein Zeichen, dass mit dir etwas nicht stimmt."
+        },
+        {
+          "art": "notfall"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen halten ihre Kraftquellen in vier Bereichen fest, erinnern sich an eigene Bewältigung und planen, eine Kraftquelle in der kommenden Woche bewusst zu nutzen.",
+        "ablauf": [
+          "Nach der Kraftquellen-Staffel (10 Min.): Plakate als Ideenbank hängen lassen, Aufgabe 1 allein, leise Musik.",
+          "Aufgabe 2 nur für sich; ausdrücklich sagen, dass nichts vorgelesen und nichts eingesammelt wird.",
+          "Aufgabe 3 und 4: Wo ist gerade wenig? Eine Kraftquelle als Wenn-dann-Satz planen.",
+          "In Einheit 22 ist das Blatt die Grundlage für „Mein Netz“."
+        ],
+        "hintergrund": "Ressourcenorientiertes Arbeiten lenkt den Blick zuerst auf das, was trägt (Reddemann, 2001). Die vier Felder entsprechen den Schutzsystemen, die Masten (2014) beschreibt: Beziehungen, gute Orte und Gemeinschaften, eigene Tätigkeiten und Fähigkeiten sowie innere Stärken wie Humor, Hoffnung oder Glaube. Die Erinnerung an eine gemeisterte schwere Zeit stärkt die Selbstwirksamkeit, denn eigene Bewältigungserfahrungen gelten als ihre wichtigste Quelle (Bandura, 1977). Ein Wenn-dann-Plan bindet das Vorhaben an eine konkrete Situation und macht die Umsetzung wahrscheinlicher (Gollwitzer, 1999).",
+        "quellen": [
+          "Reddemann, L. (2001). Imagination als heilsame Kraft. Zur Behandlung von Traumafolgen mit ressourcenorientierten Verfahren. Stuttgart: Pfeiffer bei Klett-Cotta.",
+          "Masten, A. S. (2014). Ordinary Magic: Resilience in Development. New York: Guilford.",
+          "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "differenzierung": {
+          "leichter": "Nur zwei Felder und den Wenn-dann-Satz; Ideen von den Plakaten übernehmen.",
+          "schwerer": "Zu jeder Kraftquelle notieren, wie man sie auch an einem schlechten Tag erreicht."
+        },
+        "impulse": [
+          "Welche Kraftquelle ist immer erreichbar – auch nachts oder im Bus?",
+          "Welche Kraftquelle hast du heute von jemand anderem übernommen?"
+        ],
+        "tipps": [
+          "Bleibt das Feld „Menschen“ leer, vor Einheit 22 ein kurzes Einzelgespräch anbieten.",
+          "Das Blatt fotografieren lassen: Auf dem Handy ist es immer dabei."
+        ],
+        "achtung": "Nicht einsammeln, nicht vorlesen. Bei Hinweisen auf Gewalt, Selbstverletzung oder Suizidgedanken: am selben Tag das Gespräch suchen, Schutzkonzept anwenden, Responsable informieren; akut 112.",
+        "material": "Blatt je Person, Plakate der Staffel"
+      }
+    }
+  },
+  {
+    "id": "skills-erster-satz",
+    "bereich": "skills",
+    "thema": "resilienz",
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "40 Min., verteilt über die Einheit",
+    "eldib": [
+      "SOZ-26",
+      "K-12",
+      "V-32",
+      "K-26"
+    ],
+    "schlagworte": [
+      "Hilfe holen",
+      "Um Hilfe bitten",
+      "Hürden",
+      "Rollenspiel",
+      "Vertrauensperson",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:message-circle",
+    "verwandt": [
+      "wer-ist-fuer-mich-da",
+      "klar-sagen-was-ich-brauche"
+    ],
+    "kurs": [
+      "j3-e22"
+    ],
+    "de": {
+      "titel": "Der erste Satz",
+      "untertitel": "Warum es so schwerfällt, um Hilfe zu bitten – und wie ein Gespräch anfangen kann",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Fast alle kennen das: Es geht einem nicht gut, und trotzdem fragt man niemanden. Das liegt selten daran, dass niemand da ist. Oft steht ein Gedanke im Weg."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Welche Gedanken kennst du? Kreuz an – nur für dich.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "items": [
+            "„So schlimm ist es nicht. Andere haben echte Probleme.“",
+            "„Ich will niemandem zur Last fallen.“",
+            "„Das muss ich allein schaffen.“",
+            "„Wenn ich etwas sage, wissen es bald alle.“",
+            "„Ich weiß nicht, wie ich anfangen soll.“",
+            "„Ich weiß nicht, wen ich fragen soll.“",
+            "„Mir kann sowieso keiner helfen.“",
+            "„Beim letzten Mal hat es auch nichts gebracht.“"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Der Weg zur Hilfe hat vier Schritte",
+          "text": "An jedem Schritt kann man hängen bleiben – und über jeden führt eine Brücke."
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 0,
+          "items": [
+            {
+              "titel": "Merken",
+              "text": "Da stimmt etwas nicht, und es geht nicht von allein weg."
+            },
+            {
+              "titel": "In Worte fassen",
+              "text": "Was ist los? Wie geht es mir? Was brauche ich?"
+            },
+            {
+              "titel": "Wissen, wohin",
+              "text": "Wer hilft wobei? Das steht in deinem Netz."
+            },
+            {
+              "titel": "Sich trauen",
+              "text": "Ein erster Satz reicht. Der Rest kommt im Gespräch."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Nimm die Hürde, die du am besten kennst. Was wäre eine Brücke darüber?",
+          "hinweis": "Eine Brücke ist ein Gedanke oder ein kleiner Schritt. Beispiel: Aus „So schlimm ist es nicht“ wird „Ich muss nicht warten, bis es schlimm ist.“"
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Meine Hürde: …",
+            "Meine Brücke: …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Bau einen ersten Satz aus drei Teilen: Was ist los? Wie geht es dir damit? Was brauchst du?",
+          "hinweis": "Für das Rollenspiel nimmst du eine der Übungssituationen auf Seite 2."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Was ist los?",
+            "Wie geht es mir damit?",
+            "Was brauche ich?"
+          ],
+          "breiten": [
+            1,
+            1,
+            1.25
+          ],
+          "zeilen": 2,
+          "beispiel": [
+            "Zu Hause ist gerade dauernd Streit.",
+            "Ich kann mich in der Schule kaum konzentrieren.",
+            "Können wir heute noch kurz reden? Ich will nur, dass jemand zuhört."
+          ]
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "So kann ein Anfang klingen",
+          "punkte": [
+            "Hast du kurz Zeit? Mir geht es gerade nicht so gut.",
+            "Ich weiß nicht genau, wie ich anfangen soll, aber …",
+            "Du musst nichts lösen. Ich will es nur jemandem erzählen.",
+            "Bleibt das unter uns, oder müssten Sie es weitergeben?"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Übungssituationen für das Rollenspiel",
+          "text": "Gespielt werden nur diese Situationen – nie eigene Probleme.",
+          "punkte": [
+            "Du verstehst in Mathe seit Wochen nichts mehr und traust dich nicht zu fragen.",
+            "Im Gruppenchat wird über dich gelästert.",
+            "Zu Hause ist gerade viel Streit, und du schläfst schlecht.",
+            "Eine Freundin zieht sich zurück und macht dir Sorgen.",
+            "Im Praktikum hast du einen Fehler gemacht und willst am liebsten nicht mehr hin.",
+            "Seit Tagen hast du zu nichts Lust und weißt nicht, warum."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wenn es nicht gleich klappt: Was könnte Nora antworten? Schreib in die leere Blase.",
+          "hinweis": "Ein „Jetzt nicht“ heißt nicht „nie“. Hat die erste Person keine Zeit: nach einem Termin fragen, später noch einmal fragen, jemand anderen fragen oder schreiben statt reden."
+        },
+        {
+          "art": "dialog",
+          "zeilen": [
+            {
+              "wer": "Nora",
+              "text": "Madame, haben Sie kurz Zeit? Mir geht es gerade nicht so gut."
+            },
+            {
+              "wer": "Lehrerin",
+              "text": "Jetzt ist es schlecht, ich muss gleich in die nächste Klasse."
+            },
+            {
+              "wer": "Nora"
+            },
+            {
+              "wer": "Lehrerin",
+              "text": "Morgen in der großen Pause im Lehrerzimmer. Geht das?"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Karten für die Hosentasche: Schneide eine Karte aus oder schreib deine eigene.",
+          "hinweis": "Wenn Reden gerade zu schwer ist, kannst du die Karte zeigen oder den Satz als Nachricht schicken.",
+          "symbole": [
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 4,
+          "hoehe": 96,
+          "karten": [
+            {
+              "bild": "icon:message-circle",
+              "text": "Mir geht es gerade nicht gut. Können wir kurz reden?"
+            },
+            {
+              "bild": "icon:message-circle",
+              "text": "Ich brauche Hilfe und weiß nicht, wie ich anfangen soll."
+            },
+            {
+              "bild": "icon:message-circle",
+              "text": "Kann ich nach der Stunde mit Ihnen sprechen? Es ist mir wichtig."
+            },
+            {
+              "bild": "icon:pencil",
+              "text": "Mein Satz:"
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen erkennen eigene Hürden beim Hilfeholen, finden Brücken darüber, bauen einen ersten Satz für ein Gespräch und üben, nach einem „Jetzt nicht“ dranzubleiben.",
+        "ablauf": [
+          "Hürden (15 Min.): acht Sätze vorlesen, Handzeichen mit geschlossenen Augen, dann Aufgabe 1 still. Weg an die Tafel, Brücken suchen, Aufgabe 2.",
+          "Nach der Pause (3 Min.): Aufgabe 3 – jede Person baut ihren ersten Satz für eine Übungssituation.",
+          "Rollenspiel-Karussell (15 Min.): innen um Hilfe bitten, außen nach Rollenkarte reagieren; alle zwei Minuten weiterrücken. Danach (4 Min.) Aufgabe 4 und ein Anruf beim Kanner- a Jugendtelefon als Beispiel.",
+          "Am Ende der Einheit: Aufgabe 5, die Karte ausschneiden und mitnehmen."
+        ],
+        "hintergrund": "Rickwood et al. (2005) beschreiben Hilfesuche Jugendlicher als Weg in Schritten: eine Belastung bemerken, sie ausdrücken, Hilfe kennen und bereit sein, sich anzuvertrauen. Häufige Hürden sind Scham, der Wunsch, es allein zu schaffen, Sorge um Vertraulichkeit, fehlendes Wissen über Angebote und enttäuschende Vorerfahrungen (Gulliver et al., 2010). Fördernd wirken vertraute Beziehungen und die Fähigkeit, Gefühle und Bedürfnisse zu benennen. Darum baut das Blatt den ersten Satz aus Situation, Gefühl und Bitte, wie im DBT-Skillstraining für Jugendliche (Rathus & Miller, 2015).",
+        "quellen": [
+          "Rickwood, D., Deane, F. P., Wilson, C. J. & Ciarrochi, J. (2005). Young people’s help-seeking for mental health problems. Australian e-Journal for the Advancement of Mental Health, 4(3), 218–251.",
+          "Gulliver, A., Griffiths, K. M. & Christensen, H. (2010). Perceived barriers and facilitators to mental health help-seeking in young people: A systematic review. BMC Psychiatry, 10, 113.",
+          "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Nur Aufgabe 1; einen Satz aus dem Tipp-Kasten auf die Karte übertragen.",
+          "schwerer": "Einen ersten Satz für einen Anruf beim Kanner- a Jugendtelefon formulieren und spielen."
+        },
+        "impulse": [
+          "Welche Hürde ist am höchsten – und was würde sie senken?",
+          "Woran merkt ihr, dass jemand wirklich zuhört?"
+        ],
+        "tipps": [
+          "Die erste Szene spielt die Leitung vor, einmal ungeschickt und einmal gelungen.",
+          "„Bleibt das unter uns?“ ausdrücklich erlauben und ehrlich beantworten, samt der Grenze bei Gefahr."
+        ],
+        "achtung": "Nur die Übungssituationen spielen. Braucht jemand selbst gerade Hilfe: ruhig zuhören, nichts versprechen, Schutzkonzept anwenden, Responsable am selben Tag informieren; bei akuter Gefahr 112, nicht allein lassen.",
+        "material": "Blatt je Person, Rollenkarten, Scheren"
+      }
+    }
+  },
+  {
+    "id": "skills-mein-netz",
+    "bereich": "skills",
+    "thema": "resilienz",
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln"
+    ],
+    "dauer": "25 Min., verteilt auf zwei Einheiten",
+    "eldib": [
+      "SOZ-26",
+      "V-32",
+      "SOZ-41",
+      "SOZ-40"
+    ],
+    "schlagworte": [
+      "Hilfenetz",
+      "Unterstützung",
+      "Anlaufstellen",
+      "SePAS",
+      "Kanner- a Jugendtelefon",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:users-group",
+    "verwandt": [
+      "wer-ist-fuer-mich-da",
+      "sicherheitsplan",
+      "skills-koffer-ampelplan"
+    ],
+    "kurs": [
+      "j3-e22",
+      "j3-e23",
+      "j3-e34"
+    ],
+    "de": {
+      "titel": "Mein Netz",
+      "untertitel": "Menschen, Orte und Skills, die mich halten – aufgeschrieben, bevor ich sie brauche",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Du entscheidest, was du teilst.",
+          "text": "Dein Netz gehört dir, du musst es niemandem zeigen. Ein Foto davon auf dem Handy ist eine gute Idee."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Trag in die Ringe ein, wer für dich da ist.",
+          "hinweis": "Innen: Menschen, die dir nah sind. In der Mitte: Erwachsene, die du wirklich erreichen kannst – mindestens eine Person. Außen: Fachstellen und Telefone aus dem Kasten auf Seite 2.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "zielscheibe",
+          "ringe": [
+            "Fachstellen und Telefone",
+            "Erwachsene, die ich erreiche",
+            "Menschen, die mir nah sind"
+          ],
+          "mitte": "Ich"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was hält dich außer Menschen? Nimm dein Blatt „Meine Kraftquellen“ dazu."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "feld",
+              "label": "Orte, an denen ich zur Ruhe komme",
+              "beispiel": "mein Zimmer mit Musik, die Bank hinter dem Lycée",
+              "hoehe": 3.4
+            }
+          ],
+          "rechts": [
+            {
+              "art": "feld",
+              "label": "Skills, die mir helfen",
+              "beispiel": "Treppe laufen, Kastenatmung, 5-4-3-2-1",
+              "hoehe": 3.4
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Drei Menschen aus deinem Netz genauer: Wobei helfen sie dir, und wie erreichst du sie?",
+          "hinweis": "Je genauer, desto leichter ist der erste Schritt, wenn es darauf ankommt."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Person",
+            "Dabei hilft sie mir",
+            "So und wann erreiche ich sie"
+          ],
+          "breiten": [
+            1.1,
+            1.5,
+            1.5
+          ],
+          "zeilen": 3,
+          "beispiel": [
+            "Educatrice im Annexe",
+            "zuhören, wenn es in der Schule kracht",
+            "morgens im Büro oder per Nachricht"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dein erster Schritt, wenn es dir nicht gut geht:"
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Wenn mich etwas seit Tagen nicht loslässt,",
+              "dann": "schreibe ich meiner Tante und frage im SePAS nach einem Termin."
+            }
+          ]
+        },
+        {
+          "art": "notfall",
+          "text": "Hilfe in Luxemburg – wer hilft wobei?",
+          "eintraege": [
+            {
+              "name": "SePAS: Beratung bei Sorgen, Stress und Streit – vertraulich",
+              "nummer": "im Lycée"
+            },
+            {
+              "name": "Schulärztin oder Schularzt: Fragen zu Körper und Gesundheit",
+              "nummer": "im Lycée"
+            },
+            {
+              "name": "Planning Familial: Beratung zu Liebe, Sexualität und Verhütung",
+              "nummer": ""
+            },
+            {
+              "name": "Kanner- a Jugendtelefon: für alle Sorgen, anonym und kostenlos",
+              "nummer": "116 111"
+            },
+            {
+              "name": "SOS Détresse: Hilfe am Telefon in Krisen, anonym",
+              "nummer": "45 45 45"
+            },
+            {
+              "name": "BEE SECURE Helpline: Probleme im Netz, Bilder, Cybermobbing",
+              "nummer": "8002 1234"
+            },
+            {
+              "name": "Polizei: Gewalt, Bedrohung",
+              "nummer": "113"
+            },
+            {
+              "name": "Notruf: akute Gefahr, Unfall, Rettung",
+              "nummer": "112"
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen schreiben ihr Netz aus Menschen, Orten und Skills auf, kennen die Anlaufstellen in Luxemburg und legen einen ersten Schritt für schwere Tage fest.",
+        "ablauf": [
+          "Einheit 22, Hilfe-Landkarte (15 Min.): Situationen vorlesen, alle gehen zum passenden Schild; dann den Kasten „Wer hilft wobei?“ lesen.",
+          "Nach dem Rollenspiel (8 Min.): Aufgabe 1 bis 4 allein, „Meine Kraftquellen“ daneben. Die Leitung achtet auf eine erreichbare erwachsene Person im mittleren Ring.",
+          "Einheit 23: Orte und Skills ergänzen, die Menschen ins Skills-Buch übertragen.",
+          "Das Blatt kommt ins Skills-Buch; ein Foto auf dem Handy empfehlen."
+        ],
+        "hintergrund": "Verlässliche Beziehungen gehören zu den stärksten Schutzfaktoren im Jugendalter (Masten, 2014). Das Netz ordnet Unterstützung nach Nähe: vertraute Menschen, erreichbare Erwachsene, Fachstellen. Reihenfolge und Grundsatz – Menschen und Wege konkret aufschreiben – stammen aus dem Sicherheitsplan (Stanley & Brown, 2012), den die Gruppe in Einheit 20 kennengelernt hat. Weil Jugendliche sich zuerst an Freunde und Familie wenden und Fachstellen oft nicht kennen, nimmt das Blatt die Anlaufstellen ausdrücklich auf (Rickwood et al., 2005). Orte und Skills geben Halt, auch wenn gerade niemand erreichbar ist.",
+        "quellen": [
+          "Masten, A. S. (2014). Ordinary Magic: Resilience in Development. New York: Guilford.",
+          "Stanley, B. & Brown, G. K. (2012). Safety planning intervention: A brief intervention to mitigate suicide risk. Cognitive and Behavioral Practice, 19(2), 256–264.",
+          "Rickwood, D., Deane, F. P., Wilson, C. J. & Ciarrochi, J. (2005). Young people’s help-seeking for mental health problems. Australian e-Journal for the Advancement of Mental Health, 4(3), 218–251."
+        ],
+        "differenzierung": {
+          "leichter": "Nur innerer und mittlerer Ring und der Wenn-dann-Satz.",
+          "schwerer": "Zu jeder Person in der Tabelle einen zweiten Weg notieren, falls sie gerade nicht erreichbar ist."
+        },
+        "impulse": [
+          "Wen würdest du am Wochenende erreichen – und wen am Abend?",
+          "Welche Stelle aus dem Kasten war dir neu?"
+        ],
+        "tipps": [
+          "Raum und Kontakt des SePAS im eigenen Lycée vorher herausfinden und an die Tafel schreiben.",
+          "Das Netz vor den Ferien noch einmal anschauen: Stimmt es noch?"
+        ],
+        "achtung": "Nicht einsammeln, nicht vergleichen. Bleibt der mittlere Ring leer, zeitnah Einzelgespräch. Bei Hinweisen auf Gefährdung Schutzkonzept, Responsable am selben Tag; akut 112.",
+        "material": "Blatt je Person, „Meine Kraftquellen“, Kontakt des SePAS"
+      }
+    }
+  },
+  {
+    "id": "skills-gute-momente",
+    "bereich": "skills",
+    "thema": "resilienz",
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln"
+    ],
+    "dauer": "40 Min., dann 2 Wochen",
+    "eldib": [
+      "K-32",
+      "K-26",
+      "V-29",
+      "K-35"
+    ],
+    "schlagworte": [
+      "Gute Momente",
+      "Dankbarkeit",
+      "Positive Gefühle",
+      "Genießen",
+      "Gute-Momente-Glas",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:sun",
+    "verwandt": [
+      "was-diese-woche-gut-war",
+      "drei-gute-dinge"
+    ],
+    "kurs": [
+      "j3-e23"
+    ],
+    "de": {
+      "titel": "Gute Momente sammeln",
+      "untertitel": "Ein Ärger bleibt hängen, ein guter Moment rutscht schnell durch – außer du hältst ihn fest.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Warum Schlechtes klebt",
+          "text": "Das Gehirn achtet stärker auf Ärger und Gefahr als auf Gutes. Gute Momente gibt es trotzdem jeden Tag – sie brauchen nur mehr Aufmerksamkeit. Wer sie bemerkt, sieht wieder mehr Möglichkeiten, geht leichter auf andere zu und baut mit der Zeit neue Kraftquellen auf."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Drei gute Dinge aus den letzten Tagen – und warum sie passiert sind.",
+          "hinweis": "Kleines zählt. Frag dich jedes Mal: Was war mein Anteil – und wer oder was hat noch geholfen?",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Was war gut?",
+            "Warum ist es passiert?",
+            "Welches Gefühl?"
+          ],
+          "breiten": [
+            1.35,
+            1.6,
+            0.9
+          ],
+          "zeilen": 3,
+          "beispiel": [
+            "Die Präsentation in Geschichte lief gut.",
+            "Ich habe zweimal geprobt, und Ana hat mir vorher Mut gemacht.",
+            "stolz, erleichtert"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wem möchtest du danke sagen? Schreib einen kurzen Dank.",
+          "hinweis": "Als Nachricht oder als Karte. Ob du ihn abschickst, entscheidest du."
+        },
+        {
+          "art": "feld",
+          "label": "Mein Dank",
+          "beispiel": "Hey Diogo, danke, dass du mir die Hausaufgaben geschickt hast, als ich krank war. Das hat mir den Abend gerettet.",
+          "hoehe": 3.4
+        },
+        {
+          "art": "aufgabe",
+          "text": "Gute-Momente-Jagd draußen: Such fünf kleine gute Dinge und halte sie fest – als Foto ohne Menschen oder hier als Stichwort.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Etwas, das mich zum Lächeln bringt: …",
+            "Etwas Schönes, an dem ich sonst vorbeigehe: …",
+            "Etwas, das gut riecht oder sich gut anfühlt: …",
+            "Etwas, wofür ich dankbar bin: …",
+            "Etwas Lustiges oder Überraschendes: …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Zettel für dein Gute-Momente-Glas: Schneide sie aus. Schreib jeden Abend einen guten Moment auf und leg ihn ins Glas.",
+          "hinweis": "Die Satzanfänge helfen, wenn dir nichts einfällt. Weitere Zettel kannst du aus jedem Papier schneiden.",
+          "symbole": [
+            "schneiden",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 4,
+          "hoehe": 84,
+          "karten": [
+            {
+              "text": "Heute habe ich gelacht über …"
+            },
+            {
+              "text": "Das hat gut geschmeckt: …"
+            },
+            {
+              "text": "Jemand war nett zu mir: …"
+            },
+            {
+              "text": "Darauf bin ich stolz: …"
+            },
+            {
+              "text": "Das war schön draußen: …"
+            },
+            {
+              "text": "Dieser Song hat gepasst: …"
+            },
+            {
+              "text": "Ich habe jemandem geholfen: …"
+            },
+            {
+              "text": "Mein guter Moment: …"
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Einen guten Moment verlängern",
+          "punkte": [
+            "Anhalten: Merk, dass gerade etwas gut ist.",
+            "Hinspüren: Was siehst, hörst, schmeckst du? Wo im Körper spürst du es?",
+            "Festhalten: ein Foto im Kopf, ein Zettel fürs Glas oder jemandem davon erzählen."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Zwei Wochen lang: Mal einen Stern aus, wenn abends ein Zettel ins Glas gewandert ist."
+        },
+        {
+          "art": "plan",
+          "tage": [
+            "Mo",
+            "Di",
+            "Mi",
+            "Do",
+            "Fr",
+            "Sa",
+            "So"
+          ],
+          "zeilen": [
+            "Woche 1",
+            "Woche 2"
+          ],
+          "symbol": "stern"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Nach zwei Wochen: Leer dein Glas aus und lies die Zettel. Was fällt dir auf?"
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Am häufigsten kam vor: …",
+            "Überrascht hat mich: …",
+            "Das will ich öfter machen: …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Wenn gerade nichts Gutes da ist",
+          "text": "Gute Momente machen Schweres nicht weg; beides darf nebeneinander stehen. Wenn du über Wochen nichts Gutes findest, sag es jemandem aus deinem Netz. Das ist kein Versagen, sondern ein wichtiges Zeichen."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen verstehen, warum Gutes leicht untergeht, halten drei gute Dinge und einen Dank fest und führen zwei Wochen lang ein Gute-Momente-Glas.",
+        "ablauf": [
+          "Einstieg (5 Min.): weißes Blatt mit kleinem schwarzem Punkt zeigen, „Was seht ihr?“, dann den Info-Kasten.",
+          "Aufgabe 1 (8 Min.) allein; das Beispiel zeigt eigene und fremde Ursachen. Aufgabe 2 (6 Min.): Dank schreiben, Abschicken freiwillig.",
+          "Gute-Momente-Jagd (20 Min.): Aufgabe 3 draußen, als Foto ohne Menschen oder als Stichwort. Danach Gläser beschriften, Zettel ausschneiden und füllen (Aufgabe 4).",
+          "Zwei Wochen lang Aufgabe 5, dann Aufgabe 6; im Check-in freiwillig berichten."
+        ],
+        "hintergrund": "Schlechtes wirkt stärker als Gutes (Baumeister et al., 2001); gute Momente brauchen deshalb bewusste Aufmerksamkeit. Positive Gefühle erweitern Aufmerksamkeit und Handlungsspielraum und bauen Ressourcen auf (Fredrickson, 2001). Dankbarkeit aufzuschreiben, machte optimistischer (Emmons & McCullough, 2003), Jugendliche auch zufriedener mit der Schule (Froh et al., 2008). Drei gute Dinge mit Ursachen zu notieren, steigerte das Wohlbefinden bis zu sechs Monate (Seligman et al., 2005). Einen guten Moment verlängern, festhalten oder teilen heißt bei Bryant und Veroff (2007) Genießen.",
+        "quellen": [
+          "Baumeister, R. F., Bratslavsky, E., Finkenauer, C. & Vohs, K. D. (2001). Bad is stronger than good. Review of General Psychology, 5(4), 323–370.",
+          "Fredrickson, B. L. (2001). The role of positive emotions in positive psychology: The broaden-and-build theory of positive emotions. American Psychologist, 56(3), 218–226.",
+          "Emmons, R. A. & McCullough, M. E. (2003). Counting blessings versus burdens: An experimental investigation of gratitude and subjective well-being in daily life. Journal of Personality and Social Psychology, 84(2), 377–389.",
+          "Froh, J. J., Sefick, W. J. & Emmons, R. A. (2008). Counting blessings in early adolescents: An experimental study of gratitude and subjective well-being. Journal of School Psychology, 46(2), 213–233.",
+          "Seligman, M. E. P., Steen, T. A., Park, N. & Peterson, C. (2005). Positive psychology progress: Empirical validation of interventions. American Psychologist, 60(5), 410–421.",
+          "Bryant, F. B. & Veroff, J. (2007). Savoring: A New Model of Positive Experience. Mahwah, NJ: Lawrence Erlbaum."
+        ],
+        "differenzierung": {
+          "leichter": "Ein gutes Ding reicht; der Dank darf mündlich bleiben.",
+          "schwerer": "Zu jedem guten Ding notieren, wie sich der Moment verlängern lässt."
+        },
+        "impulse": [
+          "Was hättest du ohne diese Aufgabe von deiner Woche vergessen?",
+          "Wo lag dein Anteil – und wo hattest du Glück?"
+        ],
+        "tipps": [
+          "Die Leitung legt selbst ein Glas an und erzählt davon.",
+          "Kein Druck beim Abhaken: Drei Abende sind auch ein Erfolg."
+        ],
+        "achtung": "Niemand muss vorlesen. Über Wochen nichts Gutes oder starke Selbstabwertung: Gespräch suchen, Responsable informieren.",
+        "material": "Blatt, Scheren, Schraubgläser"
+      }
+    }
+  },
+  {
+    "id": "skills-zwei-feeds",
+    "bereich": "skills",
+    "thema": "digital",
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "gruppe"
+    ],
+    "dauer": "25 Min.",
+    "eldib": [
+      "KOG-51",
+      "KOG-61",
+      "KOG-58",
+      "SOZ-18"
+    ],
+    "schlagworte": [
+      "Algorithmus",
+      "Feed",
+      "Filterblase",
+      "Simulation",
+      "Empfehlungen",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:arrows-shuffle",
+    "verwandt": [
+      "skills-doku-stoppbogen",
+      "skills-mein-feed"
+    ],
+    "kurs": [
+      "j3-e31"
+    ],
+    "de": {
+      "titel": "Zwei Feeds, eine Welt",
+      "untertitel": "Ein Spiel ohne Handy: wie aus denselben Beiträgen zwei ganz verschiedene Feeds werden",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Ihr seid der Algorithmus. Eure einzige Regel: Zeigt mehr von dem, wobei jemand hängen bleibt."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Tiago und Mila: Lest eure Karte. Im Spiel reagiert ihr so, wie diese Person es tun würde – nicht wie ihr selbst.",
+          "symbole": [
+            "lesen"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 2,
+          "hoehe": 92,
+          "karten": [
+            {
+              "titel": "Tiago, 15",
+              "text": "Fußball-Clips schaust du bis zum Ende und kommentierst sie. Bei Streit und Drama bleibst du hängen, auch wenn es dich nervt. Musik wischst du meistens weg, Nachrichten sofort."
+            },
+            {
+              "titel": "Mila, 15",
+              "text": "Tiervideos schaust du zweimal und likest sie. Rezepte speicherst du. Streit-Videos findest du anstrengend: weiter. Nachrichten schaust du nur kurz an, wenn es um Luxemburg geht."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Algorithmus-Teams: So rechnet ihr in jeder Runde.",
+          "symbole": [
+            "gruppe"
+          ]
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 0,
+          "items": [
+            {
+              "titel": "Zeigen",
+              "text": "Fünf Karten als Feed auf den Bildschirm am Boden legen."
+            },
+            {
+              "titel": "Reagieren",
+              "text": "Tiago oder Mila geht entlang und sagt zu jeder Karte: weiter, angeschaut, Like oder kommentiert."
+            },
+            {
+              "titel": "Chips legen",
+              "text": "weiter 0, angeschaut 1, Like 2, kommentiert 3 – neben den Stapel des Themas."
+            },
+            {
+              "titel": "Neu sortieren",
+              "text": "3 Karten aus dem stärksten Thema, 1 aus dem zweitstärksten, 1 zum Entdecken."
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Spielregeln",
+          "punkte": [
+            "Runde 1: fünf zufällige Karten aus fünf verschiedenen Themen.",
+            "Die Karte zum Entdecken kommt aus dem Thema mit den wenigsten Chips. Bei Gleichstand wählt das Team. Gezeigte Karten gehen zurück auf ihren Stapel.",
+            "In Runde 5 ziehen Tiago und Mila je eine Gegenstrategie-Karte; ihr Team wendet sie an."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Gegenstrategien für Runde 5: Jedes Team schneidet einen Satz aus und legt ihn verdeckt hin.",
+          "symbole": [
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 4,
+          "hoehe": 84,
+          "karten": [
+            {
+              "titel": "Nicht interessiert",
+              "text": "Das stärkste Thema verliert alle Chips."
+            },
+            {
+              "titel": "Selbst suchen",
+              "text": "Ein Thema deiner Wahl bekommt 5 Chips."
+            },
+            {
+              "titel": "Folge ich",
+              "text": "Der nächste Feed: fünf Karten aus fünf verschiedenen Themen."
+            },
+            {
+              "titel": "Neuem Account folgen",
+              "text": "Das Thema mit den wenigsten Chips bekommt 3 Chips."
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Nach Runde 4: Legt beide Feeds nebeneinander",
+          "punkte": [
+            "Was sieht Tiago fast nur noch – und was Mila?",
+            "Welche Karte hat keiner von beiden mehr gesehen, obwohl sie beide betrifft?",
+            "Wer hat das entschieden: Tiago, Mila oder die Regel?"
+          ]
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "text",
+          "text": "Die Beiträge: ein Satz Karten für jedes Team, nach Themen in sechs Stapel sortiert.",
+          "klein": true
+        },
+        {
+          "art": "karten",
+          "spalten": 4,
+          "hoehe": 106,
+          "karten": [
+            {
+              "titel": "Fußball",
+              "text": "Das Tor des Monats aus Luxemburgs erster Liga – aus fünf Winkeln",
+              "bild": "icon:ball-football"
+            },
+            {
+              "titel": "Fußball",
+              "text": "Drei Lattentreffer hintereinander: Wer schafft das?",
+              "bild": "icon:ball-football"
+            },
+            {
+              "titel": "Fußball",
+              "text": "Transfer-Gerücht: Wechselt der Stürmer nach Paris?",
+              "bild": "icon:ball-football"
+            },
+            {
+              "titel": "Fußball",
+              "text": "So trainieren Profis den ersten Schritt",
+              "bild": "icon:ball-football"
+            },
+            {
+              "titel": "Tiere",
+              "text": "Hundewelpe sieht zum ersten Mal Schnee",
+              "bild": "icon:paw"
+            },
+            {
+              "titel": "Tiere",
+              "text": "Katze gegen Gurke – das Original",
+              "bild": "icon:paw"
+            },
+            {
+              "titel": "Tiere",
+              "text": "Tierheim in deiner Nähe sucht Leute zum Gassigehen",
+              "bild": "icon:paw"
+            },
+            {
+              "titel": "Tiere",
+              "text": "Warum Kühe beste Freundinnen haben",
+              "bild": "icon:paw"
+            },
+            {
+              "titel": "Musik",
+              "text": "Neuer Song – 30 Sekunden Vorschau",
+              "bild": "icon:headphones"
+            },
+            {
+              "titel": "Musik",
+              "text": "Einen Beat am Handy bauen, in fünf Minuten",
+              "bild": "icon:headphones"
+            },
+            {
+              "titel": "Musik",
+              "text": "Konzert am Samstag: Tickets ab Freitag",
+              "bild": "icon:headphones"
+            },
+            {
+              "titel": "Musik",
+              "text": "Gitarre lernen: der erste Akkord",
+              "bild": "icon:headphones"
+            },
+            {
+              "titel": "Kochen",
+              "text": "Pasta in zehn Minuten – mit drei Zutaten",
+              "bild": "icon:tools-kitchen-2"
+            },
+            {
+              "titel": "Kochen",
+              "text": "Gromperekichelcher wie bei der Oma",
+              "bild": "icon:tools-kitchen-2"
+            },
+            {
+              "titel": "Kochen",
+              "text": "Das Pausenbrot, auf das alle neidisch sind",
+              "bild": "icon:tools-kitchen-2"
+            },
+            {
+              "titel": "Kochen",
+              "text": "Kuchen ganz ohne Backofen",
+              "bild": "icon:tools-kitchen-2"
+            },
+            {
+              "titel": "Drama",
+              "text": "Influencer rastet im Livestream aus",
+              "bild": "icon:flame"
+            },
+            {
+              "titel": "Drama",
+              "text": "Streit im Bus – wer hat angefangen?",
+              "bild": "icon:flame"
+            },
+            {
+              "titel": "Drama",
+              "text": "Sie hat es wirklich gesagt: die Screenshots",
+              "bild": "icon:flame"
+            },
+            {
+              "titel": "Drama",
+              "text": "Schiri-Skandal: Das darf nicht wahr sein",
+              "bild": "icon:flame"
+            },
+            {
+              "titel": "Nachrichten",
+              "text": "Neue Busfahrzeiten ab Montag – auch zu deiner Schule",
+              "bild": "icon:world"
+            },
+            {
+              "titel": "Nachrichten",
+              "text": "Unwetterwarnung für morgen Nachmittag",
+              "bild": "icon:world"
+            },
+            {
+              "titel": "Nachrichten",
+              "text": "Deine Gemeinde plant einen Skatepark: Umfrage bis Freitag",
+              "bild": "icon:world"
+            },
+            {
+              "titel": "Nachrichten",
+              "text": "Ferienjobs für Jugendliche: Anmeldung läuft",
+              "bild": "icon:world"
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen erleben in einer Simulation, wie ein Empfehlungsalgorithmus aus Reaktionen einen Feed baut, vergleichen zwei so entstandene Feeds und prüfen die Wirkung von Gegenstrategien.",
+        "ablauf": [
+          "Vorher: Seite 2 zweimal auf festes Papier drucken und schneiden, je Team sechs Themenstapel im Lager. Zwei Bildschirme (etwa 60 mal 150 cm) mit Kreppband auf den Boden kleben.",
+          "Rollen (3 Min.): Zwei Freiwillige spielen Tiago und Mila, die anderen bilden zwei Teams. Regeln vorlesen.",
+          "Runden 1 bis 4 (12 Min.): zeigen, reagieren, Chips legen, neu sortieren, Karten zurück.",
+          "Vergleich (5 Min.) mit den Fragen im Tipp-Kasten, dann Runde 5 (4 Min.) mit Gegenstrategien."
+        ],
+        "hintergrund": "Empfehlungssysteme lernen aus Verhalten: Was lange angeschaut, wiederholt, geteilt oder kommentiert wird, erscheint häufiger; Inhalte ohne Reaktion verschwinden. Pariser (2011) beschrieb die Folge als Filterblase, eine persönliche Auswahl, deren Grenzen man nicht sieht. Die Simulation macht den Kreislauf sichtbar: Nach wenigen Runden unterscheiden sich die Feeds stark, und Themen, die beide betreffen, fallen heraus. Die Gegenstrategien zeigen, dass Nutzende über ihre Signale mitsteuern. Die Karte „Folge ich“ steht für eine Sortierung ohne persönliches Profil, die sehr große Plattformen in der EU anbieten müssen (Gesetz über digitale Dienste, 2022). Wer Beeinflussungstechniken selbst durchspielt, wird widerstandsfähiger (Roozenbeek & van der Linden, 2019).",
+        "quellen": [
+          "Pariser, E. (2011). The Filter Bubble: What the Internet Is Hiding from You. New York: Penguin Press.",
+          "Verordnung (EU) 2022/2065 des Europäischen Parlaments und des Rates vom 19. Oktober 2022 über einen Binnenmarkt für digitale Dienste (Gesetz über digitale Dienste). Amtsblatt der EU, L 277, 1–102.",
+          "Roozenbeek, J. & van der Linden, S. (2019). Fake news game confers psychological resistance against online misinformation. Palgrave Communications, 5, 65."
+        ],
+        "differenzierung": {
+          "leichter": "Nur drei Runden spielen; die Chips-Regel groß an die Tafel schreiben.",
+          "schwerer": "Eine eigene Regel erfinden, die Vielfalt belohnt, und eine sechste Runde spielen."
+        },
+        "impulse": [
+          "Wer hat entschieden, was Tiago sieht – Tiago oder die Regel?",
+          "Welche Karte hätte beide betroffen und ist trotzdem verschwunden?"
+        ],
+        "tipps": [
+          "Die Busfahrzeiten verschwinden fast immer aus beiden Feeds – diesen Moment festhalten.",
+          "Die Karten laminieren."
+        ],
+        "achtung": "Tiago und Mila sind Figuren; niemand muss eigene Vorlieben verraten. Die Drama-Karten nicht mit echten Vorfällen aus der Schule verknüpfen.",
+        "material": "Seite 2 zweimal auf festem Papier, Scheren, etwa 60 Chips, Kreppband"
+      }
+    }
+  },
+  {
+    "id": "skills-mein-feed",
+    "bereich": "skills",
+    "thema": "digital",
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln"
+    ],
+    "dauer": "30 Min., danach eine Woche",
+    "eldib": [
+      "V-29",
+      "KOG-51",
+      "KOG-58",
+      "V-32"
+    ],
+    "schlagworte": [
+      "Algorithmus",
+      "Feed",
+      "Filterblase",
+      "Medienkompetenz",
+      "Gegenstrategien",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:eye",
+    "verwandt": [
+      "skills-social-media-check",
+      "mein-handy-und-ich",
+      "skills-zwei-feeds"
+    ],
+    "kurs": [
+      "j3-e31"
+    ],
+    "de": {
+      "titel": "Mein Feed unter der Lupe",
+      "untertitel": "Was zeigt mir meine App – und passt das zu dem, was mir wichtig ist?",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "So sortiert ein Feed",
+          "text": "Ein Feed misst, wie lange du hinschaust, ob du bis zum Ende schaust, likest, kommentierst oder teilst – und was Leute mögen, die ähnlich klicken wie du. Daraus rechnet er, wobei du hängen bleibst. Ob etwas stimmt, wichtig ist oder dir guttut, misst er nicht. Das Ziel ist deine Aufmerksamkeit: Je länger du bleibst, desto mehr Werbung siehst du."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Feed-Inventur: Schau dir die ersten 15 Beiträge in deinem Für-dich-Feed an. Mach für jeden einen Strich beim Thema.",
+          "hinweis": "Nichts liken, nichts kommentieren. Ohne Handy trägst du ein, was gestern kam. Die Zahlen bleiben bei dir.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Thema",
+            "Striche",
+            "So wichtig ist mir das (0–10)"
+          ],
+          "breiten": [
+            1.6,
+            1.4,
+            1.4
+          ],
+          "zeilen": 5,
+          "beispiel": [
+            "Fußball",
+            "IIII I",
+            "6"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Mein Feed zeigt vor allem: …",
+            "Kaum oder gar nicht vor kommt: …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Welche Signale sendest du? Kreuz an."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "oft",
+            "manchmal",
+            "nie"
+          ],
+          "items": [
+            "Ich schaue Videos zu Ende, auch wenn sie mich ärgern.",
+            "Ich kommentiere, wenn mich etwas aufregt.",
+            "Ich tippe „Nicht interessiert“, wenn mich etwas nervt.",
+            "Ich suche selbst nach Themen, statt nur zu scrollen.",
+            "Ich folge Accounts, die anders denken als ich.",
+            "Ich nutze die Ansicht „Folge ich“ statt „Für dich“."
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Filterblase",
+          "text": "Fachleute nennen es Filterblase: Jede Person bekommt ihre eigene Auswahl, und was nicht hineinpasst, verschwindet, ohne dass man es merkt. Wie dicht solche Blasen wirklich sind, ist umstritten. Sicher ist: Deine eigenen Signale zählen mit. Du kannst also gegensteuern."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dein Feed-Experiment: Kreuz zwei Gegenstrategien an, die du eine Woche lang ausprobierst."
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "frei": 1,
+          "items": [
+            "„Nicht interessiert“ tippen, wenn mir etwas nicht guttut",
+            "Videos, die mich ärgern, sofort weiterwischen",
+            "bewusst nach einem neuen Thema suchen",
+            "einem Account mit einer anderen Sicht folgen",
+            "die Ansicht „Folge ich“ nutzen",
+            "Nachrichten direkt bei einer seriösen Quelle lesen",
+            "automatisch startende Videos ausschalten",
+            "Verlauf oder Interessen in den Einstellungen zurücksetzen"
+          ]
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Wenn mir ein Video angezeigt wird, in dem sich Leute anschreien,",
+              "dann": "wische ich weiter und tippe „Nicht interessiert“."
+            }
+          ]
+        },
+        {
+          "art": "frage",
+          "text": "Eine Sichtweise, die in meinem Feed fehlt – und wo ich sie finden könnte:",
+          "linien": 2
+        },
+        {
+          "art": "notfall"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen verstehen, nach welchen Signalen ein Feed sortiert, vergleichen die Themen ihres Feeds mit ihren Interessen und planen ein Feed-Experiment mit zwei Gegenstrategien.",
+        "ablauf": [
+          "Input (14 Min.): zehn Signalkarten zu zweit ordnen, auflösen; Info-Kasten und Tafelbild „Was der Feed misst – und was nicht“.",
+          "Aufgabe 1 (8 Min.): Feed-Inventur freiwillig mit dem Handy oder aus dem Gedächtnis; nichts liken, nichts zeigen.",
+          "Aufgabe 2 (3 Min.): Signale einschätzen, dann den Merkkasten zur Filterblase lesen.",
+          "Nach dem Feed-Spiel (5 Min.): Aufgabe 3 – zwei Gegenstrategien und ein Wenn-dann-Satz. Nächstes Mal kurz nachfragen."
+        ],
+        "hintergrund": "Feeds lernen aus Verweildauer, Reaktionen und dem Verhalten ähnlicher Nutzender, was Aufmerksamkeit hält. Pariser (2011) warnte vor unsichtbaren Filterblasen; wie stark sie wirken, ist umstritten (Zuiderveen Borgesius et al., 2016). Bei Nachrichten auf Facebook schränkte die eigene Auswahl die Vielfalt stärker ein als der Algorithmus (Bakshy et al., 2015) – wer seine Signale kennt, kann sie ändern; Livingstone und Blum-Ross (2020) raten, Jugendliche dabei zu begleiten. Ein Wenn-dann-Plan macht das Experiment wahrscheinlicher (Gollwitzer, 1999).",
+        "quellen": [
+          "Pariser, E. (2011). The Filter Bubble: What the Internet Is Hiding from You. New York: Penguin Press.",
+          "Zuiderveen Borgesius, F. J., Trilling, D., Möller, J., Bodó, B., de Vreese, C. H. & Helberger, N. (2016). Should we worry about filter bubbles? Internet Policy Review, 5(1).",
+          "Bakshy, E., Messing, S. & Adamic, L. A. (2015). Exposure to ideologically diverse news and opinion on Facebook. Science, 348(6239), 1130–1132.",
+          "Livingstone, S. & Blum-Ross, A. (2020). Parenting for a Digital Future. New York: Oxford University Press.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503.",
+          "BEE SECURE – Initiative der luxemburgischen Regierung für ein sichereres Internet: www.bee-secure.lu"
+        ],
+        "differenzierung": {
+          "leichter": "Inventur mit fünf Beiträgen und drei Themen; eine Gegenstrategie genügt.",
+          "schwerer": "Die Inventur nach einer Woche wiederholen und vergleichen."
+        },
+        "impulse": [
+          "Was würde dein Feed über dich sagen – und stimmt das?",
+          "Welches Thema ist dir wichtig, taucht aber nie auf?"
+        ],
+        "tipps": [
+          "Die Leitung macht die Inventur mit dem eigenen Feed vor.",
+          "„Folge ich“ und „Nicht interessiert“ vorher selbst suchen."
+        ],
+        "achtung": "Niemand zeigt sein Handy oder nennt Zahlen. Bei Verstörendem, Cybermobbing, Erpressung oder Bedrängen durch Fremde: Einzelgespräch, Responsable informieren.",
+        "material": "Blatt je Person, Handys freiwillig"
+      }
+    }
+  },
+  {
+    "id": "skills-ki-klug",
+    "bereich": "skills",
+    "thema": "digital",
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "25 Min.",
+    "eldib": [
+      "KOG-59",
+      "KOG-51",
+      "V-27",
+      "V-31"
+    ],
+    "schlagworte": [
+      "Künstliche Intelligenz",
+      "Chatbot",
+      "Hausaufgaben",
+      "Datenschutz",
+      "Deepfake",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:robot",
+    "verwandt": [
+      "skills-echt-oder-fake",
+      "skills-ki-werkstatt"
+    ],
+    "kurs": [
+      "j3-e32"
+    ],
+    "de": {
+      "titel": "KI klug nutzen",
+      "untertitel": "Chatbots klingen immer sicher. Klug ist, wer weiß, wann man ihnen trauen kann – und wann nicht.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Wie ein Chatbot antwortet",
+          "text": "Ein Chatbot schlägt nicht in einem Lexikon nach. Er berechnet Wort für Wort, was am wahrscheinlichsten als Nächstes kommt. Deshalb klingt fast alles flüssig und überzeugend, auch Erfundenes. Fachleute sagen dazu: Die KI halluziniert."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Der KI-Check: Prüft die drei Antworten mit diesen drei Fragen.",
+          "symbole": [
+            "partner"
+          ]
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 0,
+          "items": [
+            {
+              "titel": "Fakten?",
+              "text": "Zahlen, Namen und Daten mit einer zweiten, seriösen Quelle prüfen."
+            },
+            {
+              "titel": "Quellen?",
+              "text": "Gibt es die genannte Quelle wirklich? Selbst nachsehen."
+            },
+            {
+              "titel": "Geht es um mich?",
+              "text": "Gesundheit, Recht, Gefühle: mit einem Menschen sprechen, der sich auskennt."
+            }
+          ]
+        },
+        {
+          "art": "geschichte",
+          "titel": "Antwort A",
+          "text": "Frage: Welche Amtssprachen hat Luxemburg? – KI: Luxemburg hat drei Amtssprachen: Luxemburgisch, Französisch und Niederländisch. Niederländisch hört man vor allem im Norden des Landes."
+        },
+        {
+          "art": "geschichte",
+          "titel": "Antwort B",
+          "text": "Frage: Wie viel Schlaf brauchen Jugendliche? – KI: Laut einer Studie des Schlafinstituts Nordstern aus dem Jahr 2019 brauchen Jugendliche genau sieben Stunden Schlaf. Mehr Schlaf macht eher müde."
+        },
+        {
+          "art": "geschichte",
+          "titel": "Antwort C",
+          "text": "Frage: Was heißt „pourtant“? – KI: „Pourtant“ heißt „trotzdem“ oder „dennoch“. Beispiel: Il pleuvait, pourtant nous sommes sortis. – Es regnete, trotzdem gingen wir hinaus."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "stimmt",
+            "stimmt nicht",
+            "erst prüfen"
+          ],
+          "items": [
+            "Antwort A",
+            "Antwort B",
+            "Antwort C"
+          ]
+        },
+        {
+          "art": "frage",
+          "text": "Woran hättest du die Fehler erkennen können – und wo hättest du nachgesehen?",
+          "linien": 2
+        },
+        {
+          "art": "info",
+          "symbol": "achtung",
+          "titel": "Klare Grenze bei Deepfakes",
+          "text": "Deepfakes echter Personen zu machen oder zu teilen, verletzt sie und kann strafbar sein – auch als Spaß. Intime Bilder anderer weiterzuleiten, ist strafbar."
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Lernhilfe statt Lösung: Baut an Station 3 eine Anfrage, bei der die KI euch beim Lernen hilft, statt die Aufgabe zu machen.",
+          "hinweis": "Beispiel: „Du bist mein Nachhilfelehrer für Mathe. Erklär mir in einfachen Worten, wie man Brüche kürzt. Gib mir keine Lösungen. Stell mir drei Übungsfragen und sag mir erst danach, was richtig war.“",
+          "symbole": [
+            "partner",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "feld",
+          "label": "Unsere Lern-Anfrage",
+          "hoehe": 3.4
+        },
+        {
+          "art": "aufgabe",
+          "text": "Grün, gelb, rot: So nutzt du KI bei Hausaufgaben ehrlich.",
+          "hinweis": "Die Regeln deiner Lehrperson gehen immer vor."
+        },
+        {
+          "art": "ampel",
+          "linien": 0,
+          "stufen": [
+            {
+              "titel": "Rot – Schummeln",
+              "text": "Die KI macht die Aufgabe, und ich gebe sie als meine ab. In Proben und Prüfungen nutze ich keine KI."
+            },
+            {
+              "titel": "Gelb – nur mit Erlaubnis und mit Hinweis",
+              "text": "Ideen sammeln, eine Gliederung vorschlagen oder einen eigenen Text übersetzen lassen."
+            },
+            {
+              "titel": "Grün – Lernhilfe",
+              "text": "Mir etwas erklären lassen, mich abfragen lassen, Fehler in meinem Text finden lassen und sie selbst verbessern."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Meine KI-Regeln – für mich und fürs Skills-Buch"
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Ich prüfe eine Antwort, bevor …",
+            "Das gebe ich nie in eine KI ein: …",
+            "Bei Hausaufgaben nutze ich KI so: …",
+            "Wenn ich ein Deepfake sehe, …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "notfall"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen verstehen, warum Chatbots überzeugend klingen, auch wenn sie irren, prüfen KI-Antworten mit drei Fragen, bauen eine Lern-Anfrage und formulieren eigene KI-Regeln.",
+        "ablauf": [
+          "Nach dem Satzende-Spiel (10 Min.): Info-Kasten, KI-Check zu zweit auf die Antworten A bis C anwenden, auflösen.",
+          "Lösungen: A falsch (Deutsch statt Niederländisch). B falsch: erfundene Quelle, Jugendliche brauchen 8 bis 10 Stunden Schlaf (Paruthi et al., 2016). C stimmt.",
+          "KI-Werkstatt, Station 3 (6 Min.): Aufgabe 2; zeigt die Leitung einen Chatbot, tippt nur sie, ohne persönliche Daten.",
+          "Zum Schluss (8 Min.): Aufgabe 3 und 4, die wichtigste Regel ins Skills-Buch."
+        ],
+        "hintergrund": "Sprachmodelle erzeugen Text über Wahrscheinlichkeiten und liefern deshalb auch falsche Fakten und erfundene Quellen in überzeugender Sprache – Fachleute sprechen von Halluzinationen (Ji et al., 2023). Die UNESCO (2023) empfiehlt: Ergebnisse prüfen, Daten schützen, Altersgrenzen beachten, Denken unterstützen statt ersetzen. Weil Wissen vor allem durch eigenes Abrufen hängen bleibt (Roediger & Karpicke, 2006), ist eine Anfrage, die Fragen stellt statt Lösungen liefert, die lernwirksamere Nutzung. Die drei Prüffragen knüpfen an das Quer-Lesen an.",
+        "quellen": [
+          "Ji, Z., Lee, N., Frieske, R., Yu, T., Su, D., Xu, Y., Ishii, E., Bang, Y. J., Madotto, A. & Fung, P. (2023). Survey of hallucination in natural language generation. ACM Computing Surveys, 55(12), 1–38.",
+          "UNESCO (2023). Guidance for Generative AI in Education and Research. Paris: UNESCO.",
+          "Roediger, H. L. & Karpicke, J. D. (2006). Test-enhanced learning: Taking memory tests improves long-term retention. Psychological Science, 17(3), 249–255.",
+          "Paruthi, S. et al. (2016). Recommended amount of sleep for pediatric populations: A consensus statement of the American Academy of Sleep Medicine. Journal of Clinical Sleep Medicine, 12(6), 785–786."
+        ],
+        "differenzierung": {
+          "leichter": "Nur Antwort A und B prüfen; KI-Regeln aus vorgegebenen Sätzen wählen.",
+          "schwerer": "Eine Chatbot-Antwort mit einer seriösen Quelle vergleichen und bewerten."
+        },
+        "impulse": [
+          "Wann macht KI euch schlauer – und wann nur schneller?",
+          "Woran merkt ihr, dass ihr selbst etwas gelernt habt?"
+        ],
+        "tipps": [
+          "Die Regeln des Lycée zu KI vorher erfragen und bei der Ampel nennen.",
+          "Einen Chatbot nur mit einem Dienst zeigen, den die Einrichtung zulässt."
+        ],
+        "achtung": "Niemand muss sagen, wofür er KI nutzt. Keine Deepfakes echter Personen. Gefälschte oder intime Bilder nicht im Plenum vertiefen, Responsable informieren.",
+        "material": "Blatt je Person, Blatt „KI-Werkstatt“"
+      }
+    }
+  },
+  {
+    "id": "skills-ki-werkstatt",
+    "bereich": "skills",
+    "thema": "digital",
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "gruppe"
+    ],
+    "dauer": "30 Min.",
+    "eldib": [
+      "V-27",
+      "V-31",
+      "KOG-55",
+      "SOZ-37"
+    ],
+    "schlagworte": [
+      "Künstliche Intelligenz",
+      "Hausaufgaben",
+      "Datenschutz",
+      "Deepfake",
+      "Stationen",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:tools",
+    "verwandt": [
+      "skills-ki-klug",
+      "skills-zivilcourage-leiter"
+    ],
+    "kurs": [
+      "j3-e32"
+    ],
+    "de": {
+      "titel": "KI-Werkstatt",
+      "untertitel": "Hausaufgaben, Daten, Deepfakes: Wo ist die Grenze?",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Station 1 – Grün, gelb oder rot? Legt jede Karte auf eine Farbe. Umlegen ist erlaubt, aber nur mit Begründung.",
+          "hinweis": "Grün: ehrliche Lernhilfe. Gelb: nur mit Erlaubnis der Lehrperson und mit Hinweis. Rot: Schummeln.",
+          "symbole": [
+            "partner"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 4,
+          "hoehe": 100,
+          "karten": [
+            {
+              "text": "Noah lässt sich erklären, wie Photosynthese funktioniert, und schreibt die Hausaufgabe dann selbst."
+            },
+            {
+              "text": "Léa kopiert den Aufsatz, den die KI geschrieben hat, und gibt ihn als ihren ab."
+            },
+            {
+              "text": "Yusuf lässt sich vor der Probe von der KI abfragen."
+            },
+            {
+              "text": "Chiara lässt sich eine Gliederung für ihr Referat vorschlagen."
+            },
+            {
+              "text": "Ben übersetzt seinen deutschen Text mit KI für die Französisch-Hausaufgabe."
+            },
+            {
+              "text": "Sofia lässt Fehler in ihrem Text markieren und verbessert sie selbst."
+            },
+            {
+              "text": "Liam fragt während der Mathe-Probe heimlich den Chatbot auf dem Handy."
+            },
+            {
+              "text": "Amira lässt sich zehn Ideen für ein Kunstprojekt geben und wählt eine aus."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Station 2 – Das bleibt privat. Sortiert: geht – nur ohne Namen und Fotos – nie.",
+          "hinweis": "Was du eintippst oder hochlädst, kann gespeichert und ausgewertet werden.",
+          "symbole": [
+            "partner"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 4,
+          "hoehe": 100,
+          "karten": [
+            {
+              "text": "„Erklär mir den Unterschied zwischen Wetter und Klima.“"
+            },
+            {
+              "text": "Mein voller Name, meine Adresse und meine Schule"
+            },
+            {
+              "text": "Ein Foto meiner Klasse, damit die KI alle lustig verändert"
+            },
+            {
+              "text": "Mein Aufsatz über die Ferien, damit die KI Fehler findet"
+            },
+            {
+              "text": "Mein Passwort, damit die KI prüft, ob es sicher ist"
+            },
+            {
+              "text": "Ein Screenshot aus dem Klassenchat"
+            },
+            {
+              "text": "Meine Krankheit und meine Medikamente, mit meinem Namen"
+            },
+            {
+              "text": "„Was kann ich gegen Liebeskummer tun?“"
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Station 3 – Lernhilfe statt Lösung",
+          "text": "Diese Station steht auf eurem Blatt „KI klug nutzen“, Aufgabe 2: Baut zu zweit eine Anfrage, bei der die KI erklärt und Fragen stellt, statt die Aufgabe zu lösen."
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Der Fall für alle: Lest die Geschichte. Was hilft Elias, was schadet? Bringt die hilfreichen Karten in eine Reihenfolge.",
+          "symbole": [
+            "gruppe"
+          ]
+        },
+        {
+          "art": "geschichte",
+          "titel": "Im Klassenchat",
+          "bild": "figur:ben:traurig",
+          "text": "Sonntagabend, 21 Uhr: Im Klassenchat taucht ein Video auf. Darin beleidigt Elias angeblich die Französischlehrerin – Stimme und Gesicht wirken echt. Nach einer Stunde haben es zwanzig Leute gesehen, einige haben Lach-Emojis geschickt. Elias schreibt: „Das bin ich nicht. Das habe ich nie gesagt.“ Am Montag muss er in die Schule."
+        },
+        {
+          "art": "karten",
+          "spalten": 4,
+          "hoehe": 92,
+          "karten": [
+            {
+              "text": "Das Video weiterleiten, damit alle Bescheid wissen"
+            },
+            {
+              "text": "Nicht weiterleiten und nichts kommentieren"
+            },
+            {
+              "text": "Den Beitrag in der App melden"
+            },
+            {
+              "text": "Elias schreiben, dass du ihm glaubst"
+            },
+            {
+              "text": "Einer erwachsenen Vertrauensperson Bescheid sagen"
+            },
+            {
+              "text": "Einen wütenden Kommentar schreiben"
+            },
+            {
+              "text": "Herausfinden, wer es war, und die Person bloßstellen"
+            },
+            {
+              "text": "Selbst ein Video bauen, um es heimzuzahlen"
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Hilfe bei Deepfakes und Bildern im Netz",
+          "text": "BEE SECURE Helpline 8002 1234 – kostenlos, auch für Eltern und Lehrpersonen. Bei Drohungen: Polizei 113. Nichts weiterleiten, auch nicht „zum Beweis“."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen ziehen an Stationen Grenzen für ehrliche KI-Nutzung bei Hausaufgaben und für den Schutz von Daten und besprechen gemeinsam, wie man bei einem Deepfake hilft statt schadet.",
+        "ablauf": [
+          "Deepfake-Fall (8 Min., vor der Pause): vorlesen, die acht Karten in die Mitte, gemeinsam sortieren und die hilfreichen ordnen.",
+          "Stationen (18 Min.): Station 1 mit drei farbigen Blättern, Station 2 mit drei Schildern; Paare im Sechs-Minuten-Takt, Umlegen nur mit Klebezettel-Begründung.",
+          "Auswertung (4 Min.): strittige Karten besprechen, dann die Regeln des Lycée nennen.",
+          "Lösungen: Station 1 grün – Noah, Yusuf, Sofia; gelb – Chiara, Amira; rot – Léa, Liam, Ben. Station 2 geht – Wetter, Liebeskummer; ohne Namen – Aufsatz; sonst nie."
+        ],
+        "hintergrund": "Die UNESCO (2023) empfiehlt, Lernende zu einem verantwortlichen Umgang mit generativer KI zu befähigen: offenlegen, wofür KI genutzt wurde, das eigene Denken nicht auslagern, persönliche Daten schützen und die Würde anderer achten. Die Ampel trennt Lernhilfe, die das eigene Üben unterstützt, von Nutzung, die Lernen ersetzt; Gelb markiert Fälle, in denen die Regel der Lehrperson entscheidet. Beim Deepfake-Fall stehen die Zuschauenden im Mittelpunkt: Wie beim Mobbing entscheidet ihr Verhalten mit, ob der Schaden wächst oder begrenzt wird (Salmivalli et al., 1996).",
+        "quellen": [
+          "UNESCO (2023). Guidance for Generative AI in Education and Research. Paris: UNESCO.",
+          "Salmivalli, C., Lagerspetz, K., Björkqvist, K., Österman, K. & Kaukiainen, A. (1996). Bullying as a group process: Participant roles and their relations to social status within the group. Aggressive Behavior, 22(1), 1–15.",
+          "BEE SECURE – Initiative der luxemburgischen Regierung für ein sichereres Internet: www.bee-secure.lu"
+        ],
+        "differenzierung": {
+          "leichter": "Pro Station nur vier Karten; die ersten beiden gemeinsam legen.",
+          "schwerer": "Zu jeder gelben Karte eine Bedingung formulieren, unter der sie grün würde."
+        },
+        "impulse": [
+          "Welche Karte war am strittigsten – und warum?",
+          "Was würde Elias am Montag in der Schule helfen?"
+        ],
+        "tipps": [
+          "Ben ist der beste Streitfall: Im Französischunterricht ist das Übersetzen die Aufgabe selbst.",
+          "Die Karten laminieren und wieder verwenden."
+        ],
+        "achtung": "Keine echten Fälle aus der Schule nachspielen. Berichtet jemand von einem Deepfake oder intimen Bildern einer realen Person: nichts zeigen oder weiterleiten lassen, Responsable informieren, Schutzkonzept.",
+        "material": "Blatt einmal auf festem Papier, Scheren, farbiges Papier, Klebezettel"
+      }
+    }
+  }
+]

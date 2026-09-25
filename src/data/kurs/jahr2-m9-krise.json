@@ -1,0 +1,298 @@
+{
+  "einheiten": [
+    {
+      "id": "j2-e33",
+      "nr": 33,
+      "jahr": 2,
+      "modul": "j2-m9",
+      "titel": "Wenn es jemandem richtig schlecht geht",
+      "kurz": "Was tun, wenn es einer Freundin oder einem Freund richtig schlecht geht? Die Gruppe lernt Warnzeichen kennen, übt ansprechen und zuhören und erlebt, dass Hilfe holen kein Verrat ist.",
+      "dauer": 100,
+      "ziele": [
+        "unterscheiden einen schlechten Tag von Warnzeichen, bei denen jemand Hilfe braucht: Rückzug, Hoffnungslosigkeit, Andeutungen, Selbstverletzung",
+        "üben, eine Freundin oder einen Freund anzusprechen und zuzuhören, ohne zu bewerten",
+        "antworten auf die Bitte um Geheimhaltung, ohne etwas zu versprechen, und üben, eine erwachsene Person einzubeziehen",
+        "kennen Hilfe in Luxemburg und halten im Skills-Kompass fest, was ihnen hilft, wenn es ihnen oder anderen schlecht geht"
+      ],
+      "material": [
+        "Gefühlsrad (A3), Wäscheklammern, Anspannungsskala 0–100",
+        "Schülerblatt „Wenn du dir Sorgen um jemanden machst“ für jede Person",
+        "Drei Ampel-Schilder (A4): Grün – ein schlechter Tag, Gelb – ansprechen, Rot – sofort Hilfe holen; dazu je eine grüne, gelbe und rote Karte pro Person für die Variante im Sitzen",
+        "Zwei Rollenkarten „Jang“ (Text in Schritt 6) und kleine Beobachtungskärtchen „Welcher Satz hat geholfen?“",
+        "Plakat mit den Hilfen in Luxemburg: Notruf 112, Kanner- a Jugendtelefon 116 111, SOS Détresse 45 45 45, SePAS im Lycée mit Raum und Sprechzeiten",
+        "Am ruhigen Platz: Taschentücher, Wasser, eine Decke oder ein Sitzkissen",
+        "Fragenbox, gleiche Zettel und Stifte",
+        "Skills-Kompass jeder Person, Skills-Pässe, Stempel, Imbiss und Getränke"
+      ],
+      "vorbereitung": [
+        "Vorab im Team und mit der zuständigen Leitung (Responsable) klären, ob jemand in der Gruppe gerade in einer Krise ist, sich selbst verletzt, einen Suizidversuch hinter sich hat oder im Umfeld einen Menschen durch Suizid verloren hat. Mit diesen Jugendlichen vorher einzeln sprechen und gemeinsam entscheiden: teilnehmen, einen Teil auslassen oder in dieser Zeit begleitet etwas anderes machen.",
+        "Elternbrief nach der Hausregel eine Woche vorher mitgeben, mit der zuständigen Leitung abgestimmt. Musterabsatz: „Im nächsten Treffen geht es darum, woran Jugendliche erkennen, dass es einer Freundin oder einem Freund sehr schlecht geht, und wie sie Hilfe holen – auch wenn jemand an Selbstverletzung oder Suizid denkt. Wir sprechen sachlich und ohne Details, niemand muss Persönliches erzählen, und wir nennen Hilfsangebote. Wenn Ihr Kind gerade eine schwere Zeit hat oder einen Verlust erlebt hat, sprechen Sie uns bitte vorher an.“",
+        "Den SePAS informieren und fragen, ob eine Fachkraft für den Teil „Hilfe in Luxemburg“ dazukommen kann; eine zweite Fachkraft für die ganze Einheit einplanen.",
+        "Einen ruhigen Raum festlegen, in den jemand mit einer Fachkraft gehen kann; nach der Einheit 30 Minuten für Gespräche freihalten.",
+        "Das Plakat mit den Hilfen erstellen und die Nummern kurz vorher prüfen. Keine Filme, Serienszenen oder Nachrichten über echte Fälle verwenden.",
+        "Die Namen der Beispielfiguren austauschen, falls jemand in der Gruppe so heißt."
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-sorge-um-jemanden",
+        "skills-kompass",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Was hat dir diese Woche gutgetan?"
+        },
+        {
+          "min": "10–18",
+          "phase": "bruecke",
+          "titel": "Rückblick, Thema und Schutzregeln"
+        },
+        {
+          "min": "18–33",
+          "phase": "uebung",
+          "titel": "Schlechter Tag oder mehr? Die Warnzeichen-Ampel"
+        },
+        {
+          "min": "33–45",
+          "phase": "input",
+          "titel": "Vier Schritte – und vier Mythen"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–72",
+          "phase": "aktiv",
+          "titel": "Gehen und reden: ansprechen üben"
+        },
+        {
+          "min": "72–82",
+          "phase": "aktiv",
+          "titel": "Das Versprechen und die Übergabe"
+        },
+        {
+          "min": "82–88",
+          "phase": "uebung",
+          "titel": "Hilfe in Luxemburg"
+        },
+        {
+          "min": "88–93",
+          "phase": "skill",
+          "titel": "Skill: 5-4-3-2-1 zum Ankommen"
+        },
+        {
+          "min": "93–100",
+          "phase": "abschluss",
+          "titel": "Skills-Kompass, Check-out und Nachgespräch"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: Was hat dir diese Woche gutgetan?",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Gefühlsrad und Anspannung wie gewohnt; die Leitung beginnt. Zusatzfrage, freiwillig und mit einem Wort: Wer oder was hat dir diese Woche gutgetan? Die Frage ist bewusst stärkend gewählt: Sie holt die Kraftquellen in den Raum, bevor es um ein schweres Thema geht. Die Zahlen ohne Namen am Rand der Tafel notieren – heute wird beim Check-out besonders genau verglichen.",
+          "sagen": [
+            "Gefühl, Zahl – und wenn ihr mögt: Wer oder was hat euch diese Woche gutgetan?",
+            "Bei mir war es ein langer Spaziergang am Sonntag."
+          ],
+          "tipp": "Schon hier darauf achten, wer auffällig hohe oder sehr niedrige Zahlen nennt, „weiter“ sagt oder zu Wörtern wie leer, einsam oder hilflos greift – ohne es anzusprechen. Das hilft beim Check-out.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Rückblick, Thema und Schutzregeln",
+          "dauer": 8,
+          "phase": "bruecke",
+          "text": "Kurz an die letzte Einheit anknüpfen: Bewegung hebt die Stimmung – aber manchmal reicht das nicht. Dann das Thema offen benennen: Heute geht es darum, was man tun kann, wenn es einer Freundin oder einem Freund richtig schlecht geht, bis hin zu Gedanken, nicht mehr leben zu wollen. Die Regeln für heute vorlesen (Liste), den ruhigen Platz und die zweite Fachkraft zeigen. Ansagen, dass nach der Einheit Zeit für Gespräche ist und die Fragenbox aus Modul 8 wieder bereitsteht.",
+          "sagen": [
+            "Das Thema ist ernst, und trotzdem geht es heute vor allem darum, was ihr tun könnt.",
+            "Ihr müsst niemanden retten und kein Problem allein lösen. Aber ihr könnt der erste Schritt sein."
+          ],
+          "punkte": [
+            "Niemand erzählt von sich oder von anderen mit Namen. Wir arbeiten mit ausgedachten Personen.",
+            "Wir reden über Warnzeichen und Hilfe – nicht über Einzelheiten, wie sich jemand verletzt.",
+            "Wer merkt, dass es zu viel wird, darf jederzeit rausgehen. Jemand von uns kommt mit.",
+            "Was hier gesagt wird, bleibt hier – außer jemand ist in Gefahr. Dann hole ich Hilfe und sage vorher, was ich tue."
+          ],
+          "tipp": "Das Wort Suizid einmal ruhig und sachlich aussprechen. Wer es vermeidet, signalisiert, dass man darüber nicht reden kann – genau das Gegenteil dessen, was die Einheit will.",
+          "wennEsKippt": "Wird gekichert oder ein Witz gemacht, nicht schimpfen: Lachen schützt oft vor einem schweren Thema. Kurz benennen – ich merke, das Thema macht nervös, das ist normal – und ruhig weitermachen. Verlässt jemand den Raum, geht die zweite Fachkraft mit."
+        },
+        {
+          "titel": "Schlechter Tag oder mehr? Die Warnzeichen-Ampel",
+          "dauer": 15,
+          "phase": "uebung",
+          "text": "Die drei Ampel-Schilder in drei Ecken legen und die Farben mit dem Kasten auf dem Blatt erklären. Jede Person bearbeitet Aufgabe 1 allein. Dann liest die Leitung drei Situationen noch einmal vor – Zoé, Elias und Sofia –, alle stellen sich zu ihrer Farbe, und je eine Person pro Farbe begründet. Aus den Begründungen die Warnzeichen an der Tafel sammeln (Tabelle). Bei wenig Platz oder wenig Energie halten alle im Sitzen eine farbige Karte hoch.",
+          "sagen": [
+            "Nicht jede Traurigkeit ist eine Krise. Wenn es aber länger dauert oder jemand Andeutungen macht, lohnt sich Hinschauen.",
+            "Wer steht bei Rot? Was hat euch dorthin gebracht?",
+            "Andeutungen klingen oft wie ein Witz. Nehmt sie trotzdem ernst."
+          ],
+          "tabelle": {
+            "spalten": [
+              "Warnzeichen",
+              "Woran man es merken kann"
+            ],
+            "zeilen": [
+              [
+                "Rückzug",
+                "sagt Treffen ab, sitzt allein, antwortet kaum noch, hört mit Hobbys auf"
+              ],
+              [
+                "Veränderung",
+                "schläft oder isst viel weniger oder mehr, ist ständig müde, die Noten fallen ab"
+              ],
+              [
+                "Hoffnungslosigkeit",
+                "„Ist eh alles sinnlos.“ – „Mir kann keiner helfen.“"
+              ],
+              [
+                "Andeutungen",
+                "„Bald ist es euch egal.“ – „Ohne mich wärt ihr besser dran.“ – verschenkt Lieblingssachen, verabschiedet sich"
+              ],
+              [
+                "Selbstverletzung",
+                "erzählt davon, versteckt Verletzungen, sagt, dass sie oder er sich wehtut, wenn alles zu viel wird"
+              ]
+            ]
+          },
+          "tipp": "Bei Elias, Aylin und Rafael muss am Ende eindeutig Rot stehen, und die Leitung sagt es auch so: Wer so etwas schreibt, erzählt oder tut, braucht noch heute eine erwachsene Person. Bei Luca ist neben Gelb auch Rot vertretbar: Hoffnungslosigkeit ernst nehmen und eine erwachsene Person einbeziehen, wenn sie bleibt. Bei Sofia gibt es kein Falsch – da sein ist immer richtig.",
+          "wennEsKippt": "Stellt sich jemand bei einer Rot-Situation zu Grün („Der will nur Aufmerksamkeit“), das ernst nehmen und ruhig antworten: Wer so um Aufmerksamkeit bittet, braucht sie. Lieber einmal zu viel Hilfe holen als einmal zu wenig. Wird jemand beim Vorlesen sichtbar still oder unruhig, die Aufstellung abkürzen und im Sitzen weitermachen; die zweite Fachkraft behält die Person im Blick.",
+          "blatt": "skills-sorge-um-jemanden"
+        },
+        {
+          "titel": "Vier Schritte – und vier Mythen",
+          "dauer": 12,
+          "phase": "input",
+          "text": "Die vier Schritte auf dem Blatt vorstellen (Aufgabe 2): ansprechen, zuhören, Hilfe holen, dranbleiben. Dann vier Sätze vorlesen (Liste) und per Daumen abstimmen lassen: stimmt oder stimmt nicht. Die Auflösung ist jedes Mal dieselbe – alle vier sind Mythen –, und genau das ist die Botschaft: Ansprechen schadet nicht, und Hilfe holen ist kein Verrat. Zum Schluss den Kasten „Du darfst direkt fragen“ lesen und die Frage einmal ruhig laut vormachen.",
+          "sagen": [
+            "Daumen hoch für stimmt, runter für stimmt nicht – auf drei.",
+            "Ihr dürft direkt fragen: Denkst du daran, dir etwas anzutun? Die Frage bringt niemanden auf die Idee. Sie zeigt: Ich halte es aus, wenn du Ja sagst.",
+            "Und wenn die Antwort Ja ist: nicht allein lassen, noch heute eine erwachsene Person holen, bei akuter Gefahr 112."
+          ],
+          "punkte": [
+            "„Wenn ich jemanden auf Suizid anspreche, bringe ich ihn erst auf die Idee.“ – Stimmt nicht. Nachfragen entlastet eher; niemand bekommt dadurch neue Gedanken.",
+            "„Wer darüber redet, meint es nicht ernst.“ – Stimmt nicht. Viele, die an Suizid denken, deuten es vorher an. Jede Andeutung verdient eine Nachfrage.",
+            "„Wenn ich es weitersage, verrate ich meine Freundin.“ – Stimmt nicht. Hilfe holen schützt sie. Verrat wäre, sie damit allein zu lassen.",
+            "„Ich muss das Problem allein lösen.“ – Stimmt nicht. Deine Aufgabe ist, da zu sein und eine erwachsene Person dazuzuholen. Den Rest machen Fachleute."
+          ],
+          "tipp": "Viele Jugendliche haben die direkte Frage noch nie gehört und erschrecken vor den Worten. Nach dem zweiten ruhigen Hören wirken sie machbar – deshalb die Frage selbst vormachen, statt sie nur vorzulesen.",
+          "blatt": "skills-sorge-um-jemanden"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Imbiss, frische Luft, Fenster auf. Die Leitung bleibt im Raum ansprechbar und lässt das Thema ruhen; die zweite Fachkraft achtet darauf, wer sich zurückzieht oder auffällig aufgedreht wirkt. Wer in der Pause das Gespräch sucht, bekommt es jetzt oder direkt nach der Einheit."
+        },
+        {
+          "titel": "Gehen und reden: ansprechen üben",
+          "dauer": 12,
+          "phase": "aktiv",
+          "text": "Paare bilden (die Leitung teilt ein) und nach draußen oder in den Flur gehen, in Sichtweite der Leitung – nebeneinander zu gehen fällt vielen leichter, als sich gegenüberzusitzen. Eine Person spielt Jang und bleibt bei den Sätzen der Rollenkarte (Liste); die andere spricht ihn an, hört zu und schlägt am Ende vor, gemeinsam mit einer erwachsenen Person zu reden. Nach fünf Minuten auf ein Signal aus der Rolle aussteigen – stehen bleiben, ausschütteln, den eigenen Namen sagen – und tauschen. Zurück im Raum kurz sammeln: Welcher Satz hat Jang zum Reden gebracht?",
+          "sagen": [
+            "Nebeneinander gehen macht es leichter. Ihr müsst euch nicht anschauen.",
+            "Ein guter Anfang ist das, was euch aufgefallen ist, ohne Urteil: Mir ist aufgefallen, dass du … Wie geht es dir wirklich?",
+            "Aussteigen: stehen bleiben, ausschütteln, euren Namen sagen. Jetzt tauscht ihr."
+          ],
+          "punkte": [
+            "Rollenkarte: Du bist Jang, 14. Seit ein paar Wochen ist dir alles zu viel – Stress in der Schule, Streit in der Clique. Du sagst nur diese Sätze:",
+            "„Passt schon. Ist gerade einfach viel.“",
+            "„Keine Ahnung. Ich hab auf nichts mehr Lust.“",
+            "„Bringt eh nichts, darüber zu reden.“",
+            "Wenn die andere Person freundlich dranbleibt: „Na ja … es ist echt nicht so gut gerade.“",
+            "Wenn sie vorschlägt, mit einer erwachsenen Person zu reden: „Mit wem denn?“"
+          ],
+          "tipp": "Jangs Rolle bleibt bewusst bei Rückzug und Frust. Die Andeutung, nicht mehr leben zu wollen, spielt heute nie eine Jugendliche oder ein Jugendlicher, sondern nur die Leitung im nächsten Schritt.",
+          "wennEsKippt": "Spielt ein Paar albern oder weicht vom Text ab, dazugehen und eine Runde selbst Jang spielen. Wirkt jemand in der Jang-Rolle plötzlich echt betroffen, die Übung für das Paar beenden, die Rolle ausdrücklich ablegen lassen und nachfragen; die zweite Fachkraft übernimmt. Bei Regen im Flur gehen; mit nur zwei Jugendlichen bilden beide ein Paar, und die Leitung geht in Hörweite mit."
+        },
+        {
+          "titel": "Das Versprechen und die Übergabe",
+          "dauer": 10,
+          "phase": "aktiv",
+          "text": "Fishbowl im Stuhlkreis, in der Mitte zwei Stühle. Die Leitung kündigt an, dass sie jetzt Jang spielt, setzt sich und sagt den schwersten Satz: „Ich erzähl dir was, aber versprich mir, dass du es keinem sagst. Manchmal denke ich, es wäre besser, wenn ich nicht mehr da wäre.“ Eine freiwillige Person antwortet höchstens eine Minute lang, dann kann eine andere auf „Tausch“ übernehmen. Zum Schluss spielt die zweite Fachkraft eine Educatrice oder den SePAS, und eine freiwillige Person übt die Übergabe: „Ich mache mir Sorgen um jemanden. Ich brauche Hilfe.“ Die Zuschauenden notieren auf dem Beobachtungskärtchen den Satz, der am meisten geholfen hat, und schreiben danach ihre eigene Antwort in Aufgabe 3.",
+          "sagen": [
+            "Ich spiele jetzt Jang. Das bin nicht ich, und es ist niemand von euch.",
+            "Was sagt ihr, wenn jemand ein Versprechen will, das ihr nicht halten könnt?",
+            "Ein Satz, der oft hilft: Ich kann das nicht für mich behalten, weil du mir zu wichtig bist. Aber ich lass dich nicht allein – wir gehen zusammen hin."
+          ],
+          "tipp": "Nach der Szene steht die Leitung auf, geht einmal um ihren Stuhl und sagt laut ihren eigenen Namen: Jang ist wieder weg. Das sichtbare Aussteigen schützt alle, auch die Leitung.",
+          "wennEsKippt": "Will niemand antworten, übernimmt die zweite Fachkraft die helfende Rolle und zeigt ein Beispiel; danach trauen sich oft Jugendliche. Sagt jemand „Ich würde es trotzdem versprechen“, das nicht abwerten – Loyalität ist etwas Gutes. Nachfragen: Und wenn Jang dann etwas passiert – wie ginge es dir mit dem Versprechen?",
+          "blatt": "skills-sorge-um-jemanden"
+        },
+        {
+          "titel": "Hilfe in Luxemburg",
+          "dauer": 6,
+          "phase": "uebung",
+          "text": "Das Plakat mit den Hilfen zeigen und kurz erklären, wann welche Stelle passt (Liste). Ist eine Fachkraft des SePAS dabei, stellt sie sich vor und sagt, wie man einen Termin bekommt. Dann trägt jede Person in Aufgabe 4 und im Hilfe-Kasten eine erwachsene Person ein, zu der sie gehen würde; niemand muss den Namen nennen. Betonen: Alle Stellen helfen auch, wenn man sich um jemand anderen Sorgen macht – und wenn es einem selbst schlecht geht.",
+          "sagen": [
+            "Schreibt eine Person auf, zu der ihr morgen gehen könntet. Nicht die perfekte – eine erreichbare.",
+            "Wer mag, speichert die Nummern gleich im Handy."
+          ],
+          "punkte": [
+            "Notruf 112: wenn jemand in akuter Gefahr ist oder sich gerade etwas antun will. Dableiben, bis Hilfe da ist.",
+            "Kanner- a Jugendtelefon 116 111: anonym und kostenlos, zum Reden – auch wenn man sich Sorgen um jemanden macht.",
+            "SOS Détresse 45 45 45: Hilfe am Telefon in Krisen, anonym.",
+            "SePAS im Lycée: Psychologinnen, Psychologen und Sozialarbeitende; man kann selbst einen Termin ausmachen oder mit einer Freundin zusammen hingehen."
+          ],
+          "tipp": "Wer eine Nummer schon gespeichert hat, ruft im Ernstfall eher an. Zwei Minuten dafür lohnen sich mehr als jede weitere Erklärung.",
+          "blatt": "skills-sorge-um-jemanden"
+        },
+        {
+          "titel": "Skill: 5-4-3-2-1 zum Ankommen",
+          "dauer": 5,
+          "phase": "skill",
+          "text": "Zum Ankommen im Hier und Jetzt die Übung 5-4-3-2-1, im Sitzen; die Augen dürfen offen bleiben. Die Leitung leitet ruhig an und lässt zwischen den Schritten Zeit (Liste). Danach erklären: Nach einem schweren Thema hilft es, die Sinne zurück in den Raum zu holen – das dürft ihr auch nach einem schweren Gespräch mit einer Freundin oder einem Freund tun.",
+          "sagen": [
+            "Wer mag, legt dabei eine Hand auf die Brust oder auf den Bauch."
+          ],
+          "punkte": [
+            "5 Dinge, die du siehst",
+            "4 Dinge, die du hörst",
+            "3 Dinge, die du spürst – Stuhl, Füße, Kleidung",
+            "2 Dinge, die du riechst",
+            "1 Sache, die du schmeckst – oder ein Schluck Wasser"
+          ],
+          "tipp": "Wer helfen will, braucht selbst Halt. Den Gedanken ausdrücklich sagen: Nach einem schweren Gespräch darf man sich selbst etwas Gutes tun und mit einer erwachsenen Person über das eigene Gefühl reden."
+        },
+        {
+          "titel": "Mein Skills-Kompass",
+          "dauer": 3,
+          "phase": "abschluss",
+          "text": "Das Modul „Gesund an Körper und Seele“ endet. Jede Person trägt in ihren Skills-Kompass im Feld für dieses Modul ein: Was hilft mir, wenn es mir oder anderen schlecht geht? Das kann ein Skill sein, ein Mensch, eine Nummer oder ein Satz von heute. Der Eintrag bleibt privat.",
+          "sagen": [
+            "Was hilft euch, wenn es euch oder anderen schlecht geht? Ein Skill, ein Mensch, ein Satz – was euch einfällt.",
+            "Das bleibt bei euch. Ich schaue nicht nach."
+          ],
+          "blatt": "skills-kompass"
+        },
+        {
+          "titel": "Check-out und Nachgespräch",
+          "dauer": 4,
+          "phase": "abschluss",
+          "text": "Blitzlicht mit einem Satz, den jede Person mitnimmt; dann Skills-Pass mit Stempel und Check-out mit der Anspannungszahl. Wer bei 70 oder höher liegt oder deutlich höher als am Anfang, wird gebeten, kurz zu bleiben – so gesagt, dass es für alle normal klingt. Zum Schluss das Gesprächsangebot wiederholen und die Fragenbox herumgeben; die Antworten gibt die Leitung nach Absprache im Team zu Beginn der nächsten Einheit oder als Aushang.",
+          "sagen": [
+            "Eure Zahl zum Schluss? Wer jetzt höher ist als am Anfang, bleibt bitte noch kurz – das ist heute ganz normal.",
+            "Ich bin nach der Stunde noch eine halbe Stunde hier. Und auch nächste Woche könnt ihr jederzeit zu mir kommen."
+          ],
+          "wennEsKippt": "Sagt jemand in der Runde etwas, das nach eigenen Suizidgedanken klingt, ruhig bleiben und nicht in der Gruppe nachfragen: Danke, dass du das sagst – wir reden gleich zu zweit. Die zweite Fachkraft beendet die Runde, die Leitung geht mit der Person an den ruhigen Platz, fragt direkt nach und handelt nach dem Schutzkonzept; bei akuter Gefahr 112 und die Person nicht allein lassen.",
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Nächstes Mal beginnt der Abschluss des Jahres: Wir schauen mit Skills-Pass und Skills-Kompass auf alles zurück, was ihr in diesem Jahr gelernt habt.",
+      "hintergrund": "Jugendliche vertrauen sich in Krisen meist zuerst Gleichaltrigen an und holen sich selten selbst fachliche Hilfe (Rickwood et al., 2005). Deshalb lernen sie hier, was Laienhelferinnen und Laienhelfer tun können – nach dem Muster der Ersten Hilfe für die Psyche: ansprechen, ohne Urteil zuhören, Halt geben, zu fachlicher Hilfe ermutigen. Trainings dieser Art verbessern Wissen, Haltung und Hilfeverhalten (Kitchener & Jorm, 2002); die Jugendfassung, die auf das Einbeziehen Erwachsener zielt, stärkte in einer großen Schulstudie Hilfeabsichten und Zutrauen (Hart et al., 2018). Das Schulprogramm YAM aus der SEYLE-Studie, das mit Rollenspielen über Krisen und Hilfe arbeitet, senkte Suizidversuche und schwere Suizidgedanken bei Jugendlichen um die 15 deutlich (Wasserman et al., 2015). Direkt nach Suizidgedanken zu fragen, verstärkt sie nicht (Dazzi et al., 2014). Über Methoden und einzelne Fälle wird nicht gesprochen, weil Details Nachahmung begünstigen können (WHO, 2017).",
+      "quellen": [
+        "Rickwood, D., Deane, F. P., Wilson, C. J. & Ciarrochi, J. (2005). Young people’s help-seeking for mental health problems. Australian e-Journal for the Advancement of Mental Health, 4(3), 218–251.",
+        "Kitchener, B. A. & Jorm, A. F. (2002). Mental health first aid training for the public: Evaluation of effects on knowledge, attitudes and helping behavior. BMC Psychiatry, 2, 10.",
+        "Hart, L. M., Morgan, A. J., Rossetto, A., Kelly, C. M., Mackinnon, A. & Jorm, A. F. (2018). Helping adolescents to better support their peers with a mental health problem: A cluster-randomised crossover trial of teen Mental Health First Aid. Australian & New Zealand Journal of Psychiatry, 52(7), 638–651.",
+        "Wasserman, D., Hoven, C. W., Wasserman, C., Wall, M., Eisenberg, R., Hadlaczky, G. et al. (2015). School-based suicide prevention programmes: The SEYLE cluster-randomised, controlled trial. The Lancet, 385(9977), 1536–1544.",
+        "Dazzi, T., Gribble, R., Wessely, S. & Fear, N. T. (2014). Does asking about suicide and related behaviours induce suicidal ideation? What is the evidence? Psychological Medicine, 44(16), 3361–3363.",
+        "World Health Organization (2017). Preventing Suicide: A Resource for Media Professionals (update 2017). Genf: WHO."
+      ],
+      "achtung": "Das Thema kann bei Jugendlichen mit eigenen Krisen, Selbstverletzung oder Verlusten viel auslösen. Deshalb vorher im Team klären, wer betroffen ist, und einzeln sprechen; keine eigenen Erfahrungen abfragen; keine Methoden, Details oder Zahlen zu Methoden, keine Filme und keine Fälle aus den Medien; die Rolle mit der Suizid-Andeutung spielt nur die Leitung. Gibt es Hinweise auf Suizidgedanken, Selbstverletzung, Missbrauch oder Gewalt – in der Runde, auf einem Blatt, in der Fragenbox oder im Gespräch –: die Person nach der Einheit ruhig ansprechen, direkt nachfragen, nichts versprechen, was man nicht halten kann, nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) am selben Tag informieren; den SePAS einbeziehen. Bei akuter Gefahr: Notruf 112 und die Person bis zum Eintreffen der Hilfe nicht allein lassen. Erzählt jemand von der Krise einer anderen Person, gilt dasselbe. Ein anonymer Zettel mit solchen Hinweisen wird im Team beraten, und die Hilfen werden in der nächsten Einheit für alle wiederholt. Nach der Einheit Beobachtungen im Team besprechen und sich selbst Unterstützung holen."
+    }
+  ]
+}

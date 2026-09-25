@@ -1,0 +1,760 @@
+{
+  "einheiten": [
+    {
+      "id": "j3-e14",
+      "nr": 14,
+      "jahr": 3,
+      "modul": "j3-m4",
+      "titel": "Geld im Griff",
+      "kurz": "Brauche ich das oder will ich das? Die Gruppe sortiert Wünsche und Bedürfnisse, plant ein Monatsbudget, spielt einen Monat im Zeitraffer durch und lernt den Kauf-Stopp gegen teure Spontankäufe.",
+      "dauer": 100,
+      "ziele": [
+        "unterscheiden Bedürfnisse und Wünsche und erkennen, welche Gefühle zu Spontankäufen verleiten",
+        "planen für eine Beispielperson ein Monatsbudget mit festen Kosten, Sparen und Alltag",
+        "berechnen den Gesamtpreis von Handyvertrag und Ratenkauf und erkennen, warum der Monatspreis täuscht",
+        "formulieren den Kauf-Stopp als Wenn-dann-Plan und wissen, wo sie Hilfe bei Geldsorgen finden"
+      ],
+      "material": [
+        "Gefühlsrad (A3, laminiert) und Anspannungsskala 0–100",
+        "20 Kaufkarten (Karteikarten, beschriftet nach der Liste in Schritt 3)",
+        "Malerkrepp für eine Linie am Boden, zwei Schilder „brauche ich“ und „will ich“",
+        "Schülerblatt „Mein Monatsbudget“ für jede Person",
+        "Schülerblatt „Geld-Parcours“: Ereigniskarten auf festem Papier, ausgeschnitten, dazu ein Kassenbuch je Team",
+        "Spielgeld: 120 Euro je Team in kleinen Scheinen und Münzen, ersatzweise Zettel mit Beträgen",
+        "Taschenrechner oder Handy-Rechner",
+        "Vier Tische oder Stühle als Stationen „Woche 1“ bis „Woche 4“",
+        "Drei Briefumschläge zum Zeigen des Drei-Töpfe-Prinzips",
+        "Skills-Pässe, Stempel, Imbiss und Getränke"
+      ],
+      "vorbereitung": [
+        "Die Kaufkarten beschriften und eine Klebeband-Linie von etwa 5 Metern legen, an die Enden die beiden Schilder.",
+        "Die Ereigniskarten nach Wochen sortiert an die vier Stationen legen und das Spielgeld je Team abzählen.",
+        "Die Beispielbeträge auf den Blättern kurz prüfen und bei Bedarf an die Lebenswelt der Gruppe anpassen; es sind Beispiele, keine Preise, die irgendwo gelten.",
+        "Eine Luxemburger Schuldnerberatung und die Kontakte des SePAS heraussuchen; beides tragen die Jugendlichen im Hilfe-Kasten des Budget-Blatts ein."
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-monatsbudget",
+        "skills-geld-parcours",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Was machst du mit 20 Euro?"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Vom Ziel zum eigenen Geld"
+        },
+        {
+          "min": "15–30",
+          "phase": "uebung",
+          "titel": "Brauche ich das – oder will ich das?"
+        },
+        {
+          "min": "30–45",
+          "phase": "uebung",
+          "titel": "Mein Monatsbudget: die drei Töpfe"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–85",
+          "phase": "aktiv",
+          "titel": "Geld-Parcours: ein Monat im Zeitraffer"
+        },
+        {
+          "min": "85–95",
+          "phase": "skill",
+          "titel": "Skill: der Kauf-Stopp"
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Réckbléck und Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: Was machst du mit 20 Euro?",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Stühle im Kreis, Gefühlsrad und Anspannungsskala in der Mitte. Reihum zeigt jede Person auf ein Gefühlswort und nennt ihre Anspannung von 0 bis 100; die Leitung beginnt. Dazu eine leichte Zusatzfrage: Du findest 20 Euro auf dem Gehweg, und niemand vermisst sie – was machst du damit? Die Antworten ohne Namen in drei Spalten an die Tafel schreiben: sofort ausgeben, sparen, teilen oder verschenken.",
+          "sagen": [
+            "Gefühl, Zahl – und eure 20 Euro: Was passiert mit dem Schein?",
+            "Es gibt keine falsche Antwort. Mich interessiert nur, was euch als Erstes einfällt."
+          ],
+          "tipp": "Die Frage bleibt bewusst beim gefundenen Geld: So muss niemand verraten, ob und wie viel Taschengeld oder Lohn er bekommt.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Vom Ziel zum eigenen Geld",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "An die letzte Einheit anknüpfen: Wer hat an seinem WOOP-Ziel weitergearbeitet, und ist das Hindernis aufgetaucht? Dann das neue Modul öffnen: Drei Treffen lang geht es um Dinge, die man für ein selbstständiges Leben braucht – Geld, Termine und Wege, Kochen. Am Ende des Moduls kommt ein Eintrag ins Skills-Buch. Heute geht es ums Geld, und zwar nicht ums Sparen um jeden Preis, sondern darum, wer entscheidet, wohin es geht.",
+          "sagen": [
+            "Letztes Mal hattet ihr ein Ziel, ein Hindernis und einen Plan. Ist der Plan schon einmal zum Einsatz gekommen?",
+            "Geld ist ein Werkzeug. Heute geht es darum, wer es in der Hand hat – ihr oder die Werbung."
+          ]
+        },
+        {
+          "titel": "Brauche ich das – oder will ich das?",
+          "dauer": 15,
+          "phase": "uebung",
+          "text": "Die Klebeband-Linie zeigen: links „brauche ich“, rechts „will ich“. Jede Person zieht zwei oder drei Kaufkarten, liest sie vor und legt sie an die Stelle der Linie, die für sie passt; eine andere Person darf die Karte einmal verschieben und sagt, warum. Danach gemeinsam klären: Ein Bedürfnis fehlt einem, wenn man es nicht hat, ein Wunsch macht das Leben schöner, aber es geht auch ohne. Viele Karten landen in der Mitte, weil in einer Sache oft beides steckt. Zum Schluss fragen, welche Gefühle Lust aufs Kaufen machen, und die Antworten neben das Gefühlsrad schreiben.",
+          "sagen": [
+            "Legt die Karte dahin, wo sie für euch liegt. Bei euch darf die Jacke woanders liegen als bei mir.",
+            "Wann kauft ihr eher etwas, das ihr nicht braucht: wenn ihr gut drauf seid, gelangweilt oder frustriert?"
+          ],
+          "punkte": [
+            "Winterjacke · Markensneaker · Handyguthaben · neues Handy, obwohl das alte funktioniert",
+            "Pausensnack · Energydrink · Schulhefte · Duschgel und Deo · Friseur",
+            "Kinoabend mit der Clique · Geschenk für den Geburtstag der Schwester · Pizza bestellen",
+            "Skin für ein Game · Streaming-Abo · Kopfhörer · Handyhülle · Parfum · Festival-Ticket",
+            "Fußballschuhe für den Verein · Busticket (Fangfrage: Bus, Tram und Zug in der 2. Klasse sind in Luxemburg kostenlos)"
+          ],
+          "tabelle": {
+            "spalten": [
+              "",
+              "Bedürfnis",
+              "Wunsch"
+            ],
+            "zeilen": [
+              [
+                "Frage",
+                "Was fehlt mir, wenn ich es nicht habe?",
+                "Was wäre schöner, wenn ich es hätte?"
+              ],
+              [
+                "Beispiel",
+                "eine warme Jacke für den Winter",
+                "die Jacke einer bestimmten Marke"
+              ],
+              [
+                "Wenn das Geld knapp ist",
+                "kommt zuerst",
+                "kommt danach – oder später"
+              ]
+            ]
+          },
+          "tipp": "Die Frage nach den Gefühlen ist der Kern der Übung: Wer merkt, dass er bei Frust oder Langeweile einkauft, kennt seinen wichtigsten Kauf-Auslöser – und kann ihn später mit einem Skill aus dem Koffer abfangen.",
+          "wennEsKippt": "Wird mit teuren Marken angegeben oder über günstige Kleidung gelästert, freundlich stoppen: Hier geht es nicht darum, wer was hat, sondern wie man entscheidet. Erzählt jemand, dass zu Hause das Geld knapp ist, das ernst nehmen, nicht vertiefen und ein Gespräch nach der Einheit anbieten."
+        },
+        {
+          "titel": "Mein Monatsbudget: die drei Töpfe",
+          "dauer": 15,
+          "phase": "uebung",
+          "text": "Das Blatt austeilen und die Geschichte von Inês gemeinsam lesen: 60 Euro im Monat aus Taschengeld und Babysitten, ein Sparziel und das Gefühl, dass das Geld nach zwei Wochen weg ist. Die drei Umschläge zeigen und das Prinzip an der Tafel erklären. Zu zweit planen die Jugendlichen den Monat für Inês; die Leitung rechnet bei Bedarf die erste Zeile vor. Danach kann jede Person allein einen eigenen Plan machen, auch einen für später, etwa für den ersten Lohn. Dieser Plan bleibt privat und wird weder vorgelesen noch eingesammelt.",
+          "sagen": [
+            "Was fällt euch auf: Wann spart Inês – am Anfang des Monats oder am Ende?",
+            "Wer am Ende spart, was übrig bleibt, spart meistens nichts. Deshalb kommt der Spar-Topf zuerst.",
+            "Euren eigenen Plan müsst ihr niemandem zeigen. Die Zahlen gehen nur euch etwas an."
+          ],
+          "tabelle": {
+            "spalten": [
+              "Topf",
+              "Was hineinkommt",
+              "Bei Inês"
+            ],
+            "zeilen": [
+              [
+                "1 Feste Kosten",
+                "was jeden Monat sicher kommt: Handy, Abo",
+                "15 Euro"
+              ],
+              [
+                "2 Sparen",
+                "gleich am Monatsanfang zur Seite legen",
+                "15 Euro für die Kopfhörer"
+              ],
+              [
+                "3 Alltag",
+                "der Rest, auf die Wochen verteilt",
+                "30 Euro, also 7,50 Euro pro Woche"
+              ]
+            ]
+          },
+          "tipp": "Mit drei beschrifteten Umschlägen für Bargeld lässt sich das Prinzip sofort ausprobieren; wer ein Konto hat, kann in der Banking-App oft ein Unterkonto als Spar-Topf anlegen.",
+          "wennEsKippt": "Rechnen ist für manche eine Hürde: Taschenrechner erlauben, zu zweit arbeiten lassen, die erste Zeile gemeinsam an der Tafel lösen. Sagt jemand, er bekomme gar kein Geld, genügt der Plan für Inês; der eigene Plan darf ein Plan für später sein.",
+          "blatt": "skills-monatsbudget"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Gemeinsam essen, das Thema ruht. Wer mag, schätzt, was der Imbiss für alle zusammen gekostet hat; die Leitung löst mit dem Kassenbon auf. Die vier Stationen für den Parcours stehen schon."
+        },
+        {
+          "titel": "Geld-Parcours: ein Monat im Zeitraffer",
+          "dauer": 25,
+          "phase": "aktiv",
+          "text": "Teams zu zweit bilden, bei ungerader Zahl ein Dreierteam. Jedes Team bekommt 120 Euro Spielgeld für den ganzen Monat und ein Kassenbuch. Alle Teams gehen gemeinsam von Woche zu Woche: An jeder Station liegen die Karten dieser Woche offen, jedes Team entscheidet für sich, zahlt bei der Leitung, die die Kasse führt, und trägt alles ein; nach vier Minuten geht es zur nächsten Station. Auf manchen Karten muss vor dem Bezahlen gerechnet werden, etwa beim Handy-Angebot oder beim Ratenkauf. Wer ins Minus rutscht, muss eine Lösung finden: verzichten, verkaufen, eine Rate vereinbaren oder leihen, mit allen Folgen. Zum Schluss zählt jedes Team sein Geld, die Leitung löst die Rechenkarten an der Tafel auf (Tabelle), und die Gruppe wertet mit den Fragen aus der Liste aus.",
+          "sagen": [
+            "Ihr habt 120 Euro für diesen Monat. Mehr kommt nur, wenn eine Karte es sagt.",
+            "Bevor ihr zahlt: Rechnet den Gesamtpreis aus. Was kostet das Angebot in zwei Jahren?",
+            "Ihr seid im Minus. Was macht ihr jetzt – und wer würde es im echten Leben als Erstes merken?"
+          ],
+          "punkte": [
+            "Welche Karte war am schwersten zu entscheiden – und warum?",
+            "Wo hat euch ein Gefühl zum Kaufen gedrängt: Zeitdruck, die Gruppe, Frust?",
+            "Welches Angebot sah billig aus und war teuer?",
+            "Was hättet ihr gebraucht, um im Plus zu bleiben?"
+          ],
+          "tabelle": {
+            "spalten": [
+              "Karte",
+              "Rechnung",
+              "Ergebnis"
+            ],
+            "zeilen": [
+              [
+                "Handy A",
+                "1 + 24 × 30",
+                "721 Euro in zwei Jahren"
+              ],
+              [
+                "Handy B",
+                "180 + 24 × 10",
+                "420 Euro in zwei Jahren"
+              ],
+              [
+                "Altes Handy behalten",
+                "24 × 10",
+                "240 Euro für das Prepaid"
+              ],
+              [
+                "Konsole in Raten",
+                "12 × 45",
+                "540 Euro, also 60 Euro mehr als bar"
+              ]
+            ]
+          },
+          "tipp": "Die Leitung führt die Kasse und stellt beim Bezahlen nur eine Frage: Brauchen oder wollen? Das genügt, ohne zu belehren. Beim Super-Shop verrät sie erst in der Auflösung, dass die Jacke nie ankommt – der Überraschungsmoment wirkt länger als jede Warnung.",
+          "wennEsKippt": "Kaufen Teams aus Spaß alles, das Spiel laufen lassen: Das Minus am Ende ist die beste Auswertung, und die Frage, wie sich der Monat mit echtem Geld angefühlt hätte, trifft dann. Mit nur zwei Jugendlichen spielen beide als ein Team, und die Leitung spielt laut denkend ein zweites Team. Bei wenig Platz liegen die Stationen auf vier Tischen; bei wenig Energie bleiben alle sitzen, und die Leitung liest die Karten Woche für Woche vor.",
+          "blatt": "skills-geld-parcours"
+        },
+        {
+          "titel": "Skill: der Kauf-Stopp",
+          "dauer": 10,
+          "phase": "skill",
+          "text": "Zurück in den Kreis und ruhig werden. Den Kauf-Stopp als Skill einführen: Bevor man etwas kauft, das nicht auf dem Plan steht, schläft man eine Nacht darüber und stellt sich die Fragen aus der Liste. Dann eine Minute Kastenatmung, damit alle spüren, wie der Körper vom Kaufrausch auf ruhig umschaltet. Zum Schluss schreibt jede Person auf dem Budget-Blatt ihren Wenn-dann-Plan für den nächsten Spontankauf; wer mag, liest ihn vor.",
+          "sagen": [
+            "Werbung und Shops setzen auf den schnellen Moment. Der Kauf-Stopp holt euch die Zeit zurück.",
+            "Wenn ihr morgen noch genauso wollt, ist es kein Spontankauf mehr, sondern eine Entscheidung."
+          ],
+          "punkte": [
+            "Brauche ich das – oder will ich das?",
+            "Kann ich es bezahlen, ohne dass etwas anderes fehlt?",
+            "Wie geht es mir gerade: Kaufe ich, weil ich mich schlecht fühle, mich langweile oder weil die anderen es haben?",
+            "Will ich es morgen noch? Dann kaufen. Wenn nicht: gespart."
+          ],
+          "tipp": "Wer die Stopp-Ampel aus den letzten Jahren kennt, erkennt das Prinzip wieder: Rot heißt hier Handy weglegen und den Warenkorb stehen lassen. Kaufen aus Frust ist ein Skill mit Nebenwirkungen – im Skills-Koffer gibt es bessere.",
+          "wennEsKippt": "Findet jemand die Regel lächerlich, weil das Angebot dann weg ist, zustimmen: Manchmal ist es weg. Dann fragen, wie oft ein Angebot wirklich einmalig war und wie viele „Nur heute“-Angebote in der Woche darauf wiederkamen.",
+          "blatt": "skills-monatsbudget"
+        },
+        {
+          "titel": "Réckbléck und Skills-Pass",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Blitzlicht: Welche Karte aus dem Parcours bleibt hängen? Danach trägt jede Person einen Satz in den Skills-Pass ein und bekommt den Stempel. Zum Schluss auf den Hilfe-Kasten des Budget-Blatts zeigen: Wer sich wegen Geld oder Schulden Sorgen macht, kann nach der Einheit kurz mit der Leitung reden. Dann den Ausblick geben.",
+          "sagen": [
+            "Ein Satz: Welche Karte hat euch am meisten überrascht – und was nehmt ihr daraus mit?"
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Nächstes Mal geht es um alles, was bisher oft Erwachsene für euch erledigt haben: Termine, Formulare, Wege mit dem Bus – und ein Telefonat, vor dem sich viele drücken.",
+      "hintergrund": "Finanzielle Grundbildung hängt mit weniger Überschuldung und mehr Rücklagen im späteren Leben zusammen; wer Budget, Zinsen und Gesamtkosten versteht, entscheidet im Mittel besser (Lusardi & Mitchell, 2014). Jugendliche reagieren besonders stark auf unmittelbare Belohnungen und auf Gleichaltrige (Steinberg, 2014). Genau dort setzen „nur heute“, „später bezahlen“ und Verträge mit niedrigem Monatspreis an. Die Einheit übt deshalb nicht nur Rechnen, sondern Aufschieben: Belohnungsaufschub gelingt mit konkreten Strategien besser als mit Willenskraft allein (Mischel, 2014). Der Kauf-Stopp ist eine solche Strategie, als Wenn-dann-Plan formuliert, damit er im entscheidenden Moment abrufbar ist (Gollwitzer, 1999).",
+      "quellen": [
+        "Lusardi, A. & Mitchell, O. S. (2014). The economic importance of financial literacy: Theory and evidence. Journal of Economic Literature, 52(1), 5–44.",
+        "Steinberg, L. (2014). Age of Opportunity: Lessons from the New Science of Adolescence. Boston: Houghton Mifflin Harcourt.",
+        "Mischel, W. (2014). The Marshmallow Test. New York: Little, Brown.",
+        "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+      ],
+      "achtung": "Geld ist ein sensibles Thema: Manche Jugendliche bekommen kein Taschengeld, andere tragen zum Familieneinkommen bei, in manchen Familien sind Schulden Alltag. Deshalb arbeitet die Einheit mit Beispielpersonen; niemand nennt eigene Beträge, und der eigene Budgetplan bleibt privat. Werden Hinweise sichtbar auf Schulden eines Jugendlichen, auf Forderungen nach Geld oder Guthabenkarten unter Druck, auch online, auf Glücksspiel oder Sportwetten oder darauf, dass jemand Geld für andere beschaffen muss: nicht in der Gruppe vertiefen, nach der Einheit ein Einzelgespräch anbieten und die zuständige Leitung (Responsable) informieren. Bei Erpressung oder Bedrohung nach dem internen Schutzkonzept handeln."
+    },
+    {
+      "id": "j3-e15",
+      "nr": 15,
+      "jahr": 3,
+      "modul": "j3-m4",
+      "titel": "Alltag organisieren",
+      "kurz": "Einen Termin rückwärts planen, den Weg mit dem Bus finden, französische Formulare verstehen, einen Arztbesuch vorbereiten und ein Telefonat üben, vor dem sich viele drücken.",
+      "dauer": 100,
+      "ziele": [
+        "planen einen Termin rückwärts mit Wegzeit, Bus, Puffer und zwei Erinnerungen im Kalender",
+        "verstehen die wichtigsten französischen Formular-Wörter und füllen ein Formular vollständig aus",
+        "beschreiben Beschwerden für einen Arztbesuch mit Ort, Dauer und Stärke von 0 bis 10",
+        "führen im Rollenspiel Telefonate mit Spickzettel und erleben, wie die Anspannung mit jedem Anruf sinkt"
+      ],
+      "material": [
+        "Gefühlsrad (A3, laminiert) und Anspannungsskala 0–100",
+        "Vier Schilder für die Ecken: telefonieren, Formular ausfüllen, allein zum Arzt, einen neuen Weg finden",
+        "Schülerblatt „Alltag im Griff“ für jede Person",
+        "Schülerblatt „Telefon-Training“: Spickzettel für jede Person, Rollenkarten auf festem Papier, ausgeschnitten",
+        "Handys mit Kalender- und Fahrplan-App (etwa mobiliteit.lu), ersatzweise ausgedruckte Abfahrtszeiten der nächsten Haltestelle",
+        "Je Paar zwei Stühle und ein Telefon als Requisit, auch ein ausgeschaltetes Handy",
+        "Kugelschreiber für das Formular",
+        "Skills-Pässe, Stempel, Imbiss und Getränke"
+      ],
+      "vorbereitung": [
+        "Für das Beispiel an der Tafel eine echte Busverbindung von der Einrichtung zu einem Ort in der Nähe heraussuchen und die Abfahrtszeiten notieren.",
+        "Die Rollenkarten ausschneiden und in zwei Stapel sortieren: Anrufe (T1–T6) und Gegenseite (P1–P6). Die Karten der Gegenseite enthalten die Stolpersteine.",
+        "Klären, ob die Jugendlichen ihre Handys nutzen dürfen, und für Jugendliche ohne Handy einen Ausdruck bereitlegen.",
+        "Für Einheit 16 zwei einfache Gerichte zur Wahl vorbereiten, die zur Allergie- und Essensliste der Gruppe passen, etwa Pasta mit Tomaten-Gemüse-Sauce oder Wraps mit Gemüse und Hähnchen oder Falafel."
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-alltag-im-griff",
+        "skills-telefon-training",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Was kostet dich die meiste Überwindung?"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Vom Kauf-Stopp zu den Erledigungen"
+        },
+        {
+          "min": "15–30",
+          "phase": "uebung",
+          "titel": "Einen Termin rückwärts planen – mit Bus und Kalender"
+        },
+        {
+          "min": "30–45",
+          "phase": "uebung",
+          "titel": "Arztbesuch vorbereiten, Formulare verstehen"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–85",
+          "phase": "aktiv",
+          "titel": "Telefon-Training in drei Runden"
+        },
+        {
+          "min": "85–95",
+          "phase": "skill",
+          "titel": "Skill: erst atmen, dann wählen"
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Réckbléck und Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: Was kostet dich die meiste Überwindung?",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Gefühlsrad und Anspannung wie gewohnt, die Leitung beginnt. Dann die vier Schilder in die Ecken legen: telefonieren, ein Formular ausfüllen, allein zum Arzt gehen, einen neuen Weg mit dem Bus finden. Alle gehen in die Ecke, die sie am meisten Überwindung kostet, und nennen, wer mag, eine Zahl: So angespannt wäre ich dabei. Die Zahlen ohne Namen an der Tafel notieren; sie kommen beim Telefon-Training wieder.",
+          "sagen": [
+            "Gefühl, Zahl – und dann: Welche Erledigung schiebt ihr am liebsten vor euch her?",
+            "In der Telefon-Ecke ist es voll. Das ist in fast jeder Gruppe so, übrigens auch bei vielen Erwachsenen."
+          ],
+          "tipp": "Die Leitung stellt sich selbst in eine Ecke und erzählt kurz, welche Erledigung sie früher gemieden hat. Das nimmt dem Thema die Peinlichkeit.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Vom Kauf-Stopp zu den Erledigungen",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "Kurz nachfragen: Hat jemand den Kauf-Stopp ausprobiert, bei einem Angebot, im Warenkorb, am Kiosk? Dann das Thema nennen: Mit 15 oder 16 erledigen viele zum ersten Mal Dinge selbst, die bisher Eltern, Educateurs oder die Schule übernommen haben. Heute werden vier davon geübt, damit das erste Mal nicht gleich der Ernstfall ist.",
+          "sagen": [
+            "Wer hat seit letzter Woche eine Nacht über einen Kauf geschlafen – und wie ist es ausgegangen?",
+            "Heute übt ihr Dinge, die Erwachsene oft für selbstverständlich halten. Selbstverständlich sind sie nicht: Man lernt sie."
+          ]
+        },
+        {
+          "titel": "Einen Termin rückwärts planen – mit Bus und Kalender",
+          "dauer": 15,
+          "phase": "uebung",
+          "text": "Die Geschichte von Jang auf dem Blatt lesen: Termin beim Zahnarzt im Nachbarort, zum ersten Mal allein. An der Tafel gemeinsam rückwärts planen, vom Termin bis zum Losgehen (Tabelle). Dann suchen die Jugendlichen zu zweit mit der Fahrplan-App eine echte Verbindung von hier zu einem Ort in der Nähe und tragen einen erfundenen Termin mit zwei Erinnerungen in den Handykalender oder aufs Blatt ein; die Regeln dafür stehen in der Liste. Nebenbei klären: Bus, Tram und Zug in der 2. Klasse kosten in Luxemburg nichts, eine Fahrkarte braucht es dafür nicht.",
+          "sagen": [
+            "Wann muss Jang spätestens aus dem Haus? Rechnet von hinten.",
+            "Was ist euer Plan B, wenn der Bus nicht kommt?"
+          ],
+          "tabelle": {
+            "spalten": [
+              "Uhrzeit",
+              "Was",
+              "Warum"
+            ],
+            "zeilen": [
+              [
+                "14:30",
+                "Termin beginnt",
+                "–"
+              ],
+              [
+                "14:20",
+                "in der Praxis sein",
+                "anmelden, Karte zeigen, vielleicht ein Formular ausfüllen"
+              ],
+              [
+                "14:10",
+                "aus dem Bus steigen",
+                "10 Min. Fußweg zur Praxis"
+              ],
+              [
+                "13:45",
+                "Bus fährt ab",
+                "25 Min. Fahrt – der Bus um 13:15 wäre sicherer"
+              ],
+              [
+                "13:35",
+                "los von zu Hause",
+                "5 Min. zur Haltestelle, 5 Min. Puffer"
+              ]
+            ]
+          },
+          "punkte": [
+            "Termin sofort eintragen, noch am Telefon oder am Empfang.",
+            "Zwei Erinnerungen: am Vortag abends und eine Stunde vor dem Losgehen.",
+            "Die Adresse in den Termin schreiben, dann zeigt die Karten-App den Weg.",
+            "In die Notiz: was mitmuss, etwa Sozialversicherungskarte, Ausweis, Unterlagen.",
+            "Plan B notieren: Welcher Bus fährt danach, wen rufe ich an, wenn ich zu spät komme?"
+          ],
+          "tipp": "Wer kein Handy hat oder es nicht nutzen will, plant auf dem Blatt; ein Papierkalender an der Zimmertür erfüllt denselben Zweck. Entscheidend ist ein fester Ort für alle Termine.",
+          "wennEsKippt": "Verschwinden einige in anderen Apps, eine klare Zeit setzen: fünf Minuten Suche, dann liegen die Handys mit dem Display nach unten auf dem Tisch. Ohne Internet die ausgedruckten Abfahrtszeiten nutzen.",
+          "blatt": "skills-alltag-im-griff"
+        },
+        {
+          "titel": "Arztbesuch vorbereiten, Formulare verstehen",
+          "dauer": 15,
+          "phase": "uebung",
+          "text": "Jang sitzt jetzt in der Praxis: Was sagt er? Den Arzt-Spickzettel auf dem Blatt zeigen – Beschwerden kurz beschreiben mit Ort, seit wann, wie stark von 0 bis 10 und was schon versucht wurde. Zu zweit füllen die Jugendlichen ihn für eine harmlose Beispielbeschwerde aus, etwa Halsschmerzen seit drei Tagen. Dann zu den Formularen, die in Luxemburg oft auf Französisch sind: Formular-Wörter allein verbinden, zu zweit vergleichen, das Beispielformular ausfüllen, gern mit erfundenen Angaben. Zum Schluss die typischen Stolperfallen besprechen (Liste).",
+          "sagen": [
+            "Beim Arzt gilt dieselbe Skala wie hier im Check-in: Wie stark ist es von 0 bis 10?",
+            "Nom ist der Nachname, prénom der Vorname. Welches Wort kennt ihr noch nicht?"
+          ],
+          "punkte": [
+            "Erst alles lesen, dann schreiben.",
+            "In Druckbuchstaben (MAJUSCULES) und mit Kugelschreiber, nicht mit Bleistift.",
+            "Das Datum steht auf französischen Formularen oft als JJ/MM/AAAA, also Tag, Monat, Jahr.",
+            "Bei Minderjährigen unterschreibt oft eine erziehungsberechtigte Person mit (représentant légal).",
+            "Nicht raten: Was man nicht versteht, fragt man nach – am Empfang, in der Schule, bei einer Vertrauensperson.",
+            "Vor dem Abgeben ein Foto machen oder eine Kopie behalten."
+          ],
+          "tipp": "Wer Französisch in der Familie spricht, ist hier Expertin oder Experte. Diese Jugendlichen dürfen vorlesen und übersetzen – eine Stärke, die im Schulalltag oft untergeht.",
+          "wennEsKippt": "Ist das Französisch für einige eine große Hürde, zu zweit arbeiten lassen; die Leitung übersetzt Zeile für Zeile mit. Wer sich schämt, weil er etwas nicht versteht, hört von der Leitung: Das ist Wissen, das niemand von allein hat.",
+          "blatt": "skills-alltag-im-griff"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Gemeinsam essen, das Thema ruht. Nebenbei die Stühle für das Telefon-Training paarweise Rücken an Rücken stellen."
+        },
+        {
+          "titel": "Telefon-Training in drei Runden",
+          "dauer": 25,
+          "phase": "aktiv",
+          "text": "Paare bilden, zwei Stühle Rücken an Rücken: Eine Person ruft an, die andere spielt Praxis, Betrieb oder Fundbüro und liest ihre Rollenkarte, ohne die Stolpersteine zu verraten. Vor jedem Anruf füllt die anrufende Person kurz den Spickzettel aus und notiert ihre Anspannung von 0 bis 100, nach dem Gespräch noch einmal. Drei Runden mit steigender Schwierigkeit, nach jedem Gespräch Rollen tauschen: Runde 1 ohne Stolperstein, Runde 2 mit einem, Runde 3 mit zwei. Wer gerade nicht spielt, beobachtet mit der Checkliste. Zum Schluss rufen zwei Freiwillige vor der Gruppe an, die Leitung spielt die Gegenseite.",
+          "sagen": [
+            "Stolpersteine sind geheim. Wer die Gegenseite spielt, bleibt freundlich, aber echt.",
+            "Zahl vor dem Anruf, Zahl danach: Was hat sich verändert?",
+            "Vorhin war die Telefon-Ecke die vollste. Und jetzt?"
+          ],
+          "punkte": [
+            "T1 Arzttermin: seit drei Tagen Halsschmerzen, ein Termin diese Woche wäre gut.",
+            "T2 Krankmeldung: morgen nicht im Praktikum, die Betreuerin muss es wissen.",
+            "T3 Termin verschieben: Termin beim Optiker, aber da ist ein Test.",
+            "T4 Fundbüro: Rucksack im Bus vergessen, Linie und Uhrzeit ungefähr bekannt.",
+            "T5 Nachfragen: Welche Unterlagen braucht man für die Anmeldung im Sportverein?",
+            "T6 Rückruf: Eine Praxis bittet auf der Mailbox um Rückruf, ohne zu sagen, worum es geht."
+          ],
+          "tipp": "Im Stehen zu telefonieren, gibt der Stimme mehr Halt; der erste Satz steht ausformuliert auf dem Spickzettel. Wer schnell sicher ist, bekommt in Runde 3 eine Gegenseite, die zuerst Französisch spricht.",
+          "wennEsKippt": "Blockiert jemand ganz, spielt die Person zuerst die Gegenseite und ruft erst in der nächsten Runde an, den ersten Satz darf sie ablesen. Wird aus dem Rollenspiel eine Blödel-Show, kurz unterbrechen, auf die Zahlen aus dem Check-in zeigen und neu starten: Hier übt jemand etwas, das ihm schwerfällt. Mit nur zwei Jugendlichen spielt die Leitung die Gegenseite, und beide rufen abwechselnd an; bei wenig Energie reichen zwei Runden, die zweite mit der Leitung als Gegenseite.",
+          "blatt": "skills-telefon-training"
+        },
+        {
+          "titel": "Skill: erst atmen, dann wählen",
+          "dauer": 10,
+          "phase": "skill",
+          "text": "Alle setzen sich, die Telefone liegen weg. Die Leitung leitet den Skill an, den man vor jedem schwierigen Anruf nutzen kann (Liste): lang ausatmen, eine Minute Kastenatmung, den ersten Satz halblaut sprechen, Füße fest am Boden. Danach sucht jede Person eine Erledigung, die in den nächsten zwei Wochen wirklich ansteht, und schreibt sie als Wenn-dann-Plan aufs Blatt. Wer mag, nennt nur das Stichwort.",
+          "sagen": [
+            "Aufregung vor einem Anruf verschwindet nicht durch Warten. Sie wird kleiner, wenn man anfängt.",
+            "Welche Erledigung steht bei euch in den nächsten zwei Wochen an? Das Stichwort reicht."
+          ],
+          "punkte": [
+            "Einmal lang ausatmen, länger aus als ein.",
+            "Eine Minute Kastenatmung: 4 Sekunden ein, 4 halten, 4 aus, 4 halten.",
+            "Den ersten Satz einmal halblaut sagen.",
+            "Wählen, solange die Zahl sinkt – nicht warten, bis sie bei 0 ist."
+          ],
+          "tipp": "Den Satz „Wählen, solange die Zahl sinkt“ an die Tafel schreiben: Viele warten, bis sie gar keine Angst mehr haben, und rufen dann nie an.",
+          "blatt": "skills-alltag-im-griff"
+        },
+        {
+          "titel": "Réckbléck und Skills-Pass",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Blitzlicht mit einer Frage: Um wie viel ist deine Zahl beim Telefonieren heute gesunken? Wer mag, nennt nur die Differenz. Dann Eintrag in den Skills-Pass und Stempel. Zum Schluss den Ausblick geben und abstimmen lassen, welches von zwei Gerichten nächstes Mal gekocht wird, damit die Leitung einkaufen kann.",
+          "sagen": [
+            "Vorher, nachher: Um wie viel ist eure Zahl beim Telefonieren gesunken?"
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Nächstes Mal wird gekocht: Ihr plant eine Mahlzeit mit Einkaufsliste und Budget, kocht sie zusammen und esst, was ihr selbst gemacht habt.",
+      "hintergrund": "Termine, Wege und Formulare selbst zu erledigen, verlangt exekutive Funktionen: vorausplanen, Zwischenschritte im Kopf behalten, rechtzeitig umschalten (Diamond, 2013). Bei vielen Jugendlichen mit sozial-emotionalem Förderbedarf sind diese Fähigkeiten noch im Aufbau. Äußere Stützen wie Kalender mit Erinnerungen, Rückwärtsplan und Spickzettel gleichen das aus, weil sie die Planung aus dem Kopf aufs Papier oder ins Handy verlagern (Barkley, 2012). Die Erinnerung am Vortag und der Plan für die nächste Erledigung sind Wenn-dann-Pläne, die die Umsetzung wahrscheinlicher machen (Gollwitzer, 1999). Das Telefon-Training steigert die Schwierigkeit von Runde zu Runde: Wer eine gefürchtete Aufgabe erfolgreich übt, traut sie sich danach eher zu – eigene Erfolgserfahrungen sind die stärkste Quelle von Selbstwirksamkeit (Bandura, 1977).",
+      "quellen": [
+        "Diamond, A. (2013). Executive functions. Annual Review of Psychology, 64, 135–168.",
+        "Barkley, R. A. (2012). Executive Functions: What They Are, How They Work, and Why They Evolved. New York: Guilford.",
+        "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503.",
+        "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215."
+      ],
+      "achtung": "Arztbesuche berühren Gesundheitsthemen, die niemand vor der Gruppe teilen möchte: Die Beispielbeschwerden sind harmlos und erfunden, eigene Beschwerden werden nicht abgefragt. Beim Formular sind erfundene Angaben ausdrücklich erlaubt, damit niemand Adresse, Geburtsdatum oder Matricule vor anderen aufschreiben muss. Nicht alle Jugendlichen leben bei ihren Eltern; bei der Frage, wer unterschreibt, auch Vormund oder Einrichtung nennen, ohne nachzufragen. Telefonieren kann für Jugendliche mit starker sozialer Angst sehr belastend sein: Niemand wird vor der Gruppe zum Anruf gedrängt, zuschauen und die Gegenseite spielen zählen als Mitmachen. Erzählt jemand, dass er dringend ärztliche Hilfe bräuchte und sie nicht bekommt oder dass sich niemand um solche Dinge kümmert, im Einzelgespräch aufgreifen und die zuständige Leitung (Responsable) informieren."
+    },
+    {
+      "id": "j3-e16",
+      "nr": 16,
+      "jahr": 3,
+      "modul": "j3-m4",
+      "titel": "Kochen und versorgen",
+      "kurz": "Nach einem Küchen-Check zu Hygiene, Messern und Allergenen plant die Gruppe ein einfaches Gericht mit Einkaufsliste und Budget, kocht es in Rollen, isst zusammen und räumt auf wie Profis.",
+      "dauer": 100,
+      "ziele": [
+        "kennen die wichtigsten Regeln zu Hygiene, Messer und Herd und finden Allergene auf einer Zutatenliste",
+        "planen ein Gericht für die Gruppe mit Einkaufsliste, Grundpreis und festem Budget",
+        "kochen in Rollen ein einfaches Gericht und räumen die Küche gemeinsam auf",
+        "halten im Skills-Buch fest, was sie aus dem Modul „Selbstständig werden“ mitnehmen, dazu ein Rezept für einen Abend allein"
+      ],
+      "material": [
+        "Gefühlsrad (A3, laminiert) und Anspannungsskala 0–100",
+        "Schülerblätter „Sicher in der Küche“ und „Wir kochen: Plan und Einkauf“ für jede Person",
+        "Zutaten für das Gericht, das die Gruppe in Einheit 15 gewählt hat, dazu der Kassenbon",
+        "Großer Topf, Pfanne, zwei farbige Schneidebretter (eines nur für rohes Fleisch), scharfe Messer, Kochlöffel, frische Löffel zum Probieren",
+        "Schüsseln, Teller, Besteck, Gläser",
+        "Seife, Küchenpapier, saubere Geschirrtücher, Spülmittel, Müllbeutel",
+        "Erste-Hilfe-Kasten mit Pflastern und Einmalhandschuhen, Löschdecke",
+        "Liste mit Allergien, Unverträglichkeiten und Essensregeln der Gruppe",
+        "Dosen für Reste zum Mitnehmen, Taschenrechner",
+        "Skills-Bücher und je Person eine neu kopierte Rubrikenseite, Skills-Pässe, Stempel"
+      ],
+      "vorbereitung": [
+        "Das gewählte Gericht mit der Allergie- und Essensliste abgleichen und einkaufen. Bewährt haben sich Pasta mit Tomaten-Gemüse-Sauce oder Wraps mit Gemüse und Hähnchen oder Falafel; Fleisch halal einkaufen, wenn jemand das braucht, oder gleich die vegetarische Variante wählen.",
+        "Die Küche vorher ansehen: Herd, Löschdecke, Erste-Hilfe-Kasten, genug Arbeitsflächen. Ohne Küche ein kaltes Gericht wählen, etwa Wraps mit Falafel oder Couscous-Salat mit dem Wasserkocher.",
+        "In einer religiösen Fastenzeit vorher unauffällig klären, wer fastet, und eine Portion zum Mitnehmen einplanen.",
+        "Wenn die Einrichtung es erlaubt, zehn Minuten Puffer nach der Einheit freihalten; Kochen dauert beim ersten Mal oft länger."
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-kuechen-check",
+        "skills-kochplan",
+        "skills-buch",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Was kannst du schon allein zubereiten?"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Erledigung geschafft? Der Plan für heute"
+        },
+        {
+          "min": "15–25",
+          "phase": "input",
+          "titel": "Küchen-Check: richtig oder falsch?"
+        },
+        {
+          "min": "25–40",
+          "phase": "uebung",
+          "titel": "Planen und rechnen: Einkaufsliste, Budget, Rollen"
+        },
+        {
+          "min": "40–70",
+          "phase": "aktiv",
+          "titel": "Kochen in Rollen"
+        },
+        {
+          "min": "70–75",
+          "phase": "skill",
+          "titel": "Skill: die ersten drei Bissen achtsam"
+        },
+        {
+          "min": "75–85",
+          "phase": "pause",
+          "titel": "Gemeinsam essen"
+        },
+        {
+          "min": "85–92",
+          "phase": "uebung",
+          "titel": "Aufräumen wie Profis"
+        },
+        {
+          "min": "92–97",
+          "phase": "abschluss",
+          "titel": "Eintrag ins Skills-Buch"
+        },
+        {
+          "min": "97–100",
+          "phase": "abschluss",
+          "titel": "Réckbléck und Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: Was kannst du schon allein zubereiten?",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Gefühlsrad und Anspannung wie gewohnt, die Leitung beginnt. Dazu die Frage: Was kannst du schon allein zubereiten – vom Toast über Nudeln bis zum Lieblingsgericht? Die Antworten ohne Bewertung an der Tafel sammeln, von einfach bis aufwendig. Die Leitung erzählt, was bei ihrem ersten selbst gekochten Essen schiefging.",
+          "sagen": [
+            "Gefühl, Zahl – und euer Küchen-Level: Was bekommt ihr allein hin?",
+            "Tiefkühlpizza zählt. Heute geht es nur einen Schritt weiter."
+          ],
+          "tipp": "Wer noch nie gekocht hat, ist in guter Gesellschaft. Die Missgeschick-Geschichte der Leitung senkt die Hemmschwelle mehr als jede Ermutigung.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Erledigung geschafft? Der Plan für heute",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "An die letzte Einheit anknüpfen: Wer hat seinen Anruf oder seine Erledigung geschafft, und wie hoch war die Zahl davor? Dann den Plan für heute zeigen: erst der Küchen-Check, dann planen und rechnen, dann kochen, gemeinsam essen und aufräumen. Heute endet das Modul „Selbstständig werden“, deshalb gibt es zum Schluss einen Eintrag ins Skills-Buch.",
+          "sagen": [
+            "Wer hat seinen Anruf gemacht? Die Zahl davor reicht, worum es ging, müsst ihr nicht sagen.",
+            "Heute gilt: Alle kochen, alle essen, alle räumen auf."
+          ]
+        },
+        {
+          "titel": "Küchen-Check: richtig oder falsch?",
+          "dauer": 10,
+          "phase": "input",
+          "text": "Die Regeln als Bewegungsquiz: Eine Raumseite heißt „richtig“, die andere „falsch“. Die Leitung liest die Aussagen vom Blatt vor (Liste mit Auflösung), alle entscheiden sich und gehen auf ihre Seite; dann die Auflösung mit einem Satz Begründung. Danach die Messer-Regeln einmal mit einem echten Messer vorführen: Krallengriff, Messer flach ablegen, fallendes Messer nicht fangen, beim Tragen die Spitze nach unten. Alle waschen die Hände, lange Haare werden zusammengebunden.",
+          "sagen": [
+            "Richtig oder falsch? In der Mitte stehen bleiben gilt nicht.",
+            "Wer eben auf der falschen Seite stand, hat gerade etwas gelernt, das in der eigenen Küche viel Ärger erspart."
+          ],
+          "punkte": [
+            "1 Rohes Hähnchen wäscht man vor dem Braten ab. – Falsch: Das Wasser verteilt Keime in der Küche, die Hitze tötet sie ab.",
+            "2 Für rohes Fleisch nimmt man ein eigenes Brett. – Richtig.",
+            "3 Ein Joghurt ist nach dem Mindesthaltbarkeitsdatum sofort verdorben. – Falsch: Oft ist er noch gut; ansehen, riechen, probieren.",
+            "4 Nach dem Verbrauchsdatum isst man Hackfleisch nicht mehr. – Richtig.",
+            "5 Bei einer Nussallergie kann man die Nüsse einfach herauspicken. – Falsch: Schon Spuren können gefährlich sein.",
+            "6 Brennendes Fett löscht man mit Wasser. – Falsch: Deckel drauf, Herd aus.",
+            "7 Ein Messer, das herunterfällt, fängt man nicht auf. – Richtig.",
+            "8 In der EU müssen Allergene in der Zutatenliste hervorgehoben sein. – Richtig.",
+            "9 Auf eine Verbrennung gehört sofort Eis. – Falsch: handwarmes, fließendes Wasser.",
+            "10 Hände waschen dauert so lange wie zweimal „Zum Geburtstag viel Glück“ summen. – Richtig: mindestens 20 Sekunden."
+          ],
+          "tipp": "Bei Aussage 5 länger bleiben: Viele halten Spuren für harmlos. Für manche Menschen reicht ein Löffel, der vorher in der Nusssauce war – deshalb bekommt jedes Gericht seinen eigenen Löffel.",
+          "wennEsKippt": "Wird mit Messern herumgefuchtelt, sofort und ohne Diskussion Messer weg: Die Person bekommt eine andere Aufgabe und kann es später noch einmal versuchen. Das ist keine Strafe, sondern die Regel, die in jeder Restaurantküche gilt.",
+          "blatt": "skills-kuechen-check"
+        },
+        {
+          "titel": "Planen und rechnen: Einkaufsliste, Budget, Rollen",
+          "dauer": 15,
+          "phase": "uebung",
+          "text": "Das Rezept für heute vorstellen; die Leitung hat es mit der Allergie- und Essensliste abgeglichen. Zu zweit füllen die Jugendlichen die Einkaufsliste auf dem Blatt aus: Was braucht die ganze Gruppe, was kostet es mit Eigenmarke, was mit Marke, bleiben wir im Budget? Danach mit dem echten Kassenbon vergleichen und reihum die Packungen auf Allergene prüfen. Zum Schluss die Rollen verteilen (Liste) und die Reihenfolge festlegen: Was am längsten dauert, startet zuerst.",
+          "sagen": [
+            "Was muss als Erstes starten, damit am Ende alles gleichzeitig fertig ist?",
+            "Eigenmarke oder Marke: Wo schmeckt man den Unterschied – und wo nicht?"
+          ],
+          "punkte": [
+            "Schneiden: Gemüse waschen und schneiden, zwei Personen",
+            "Herd: Wasser aufsetzen, Sauce oder Füllung zubereiten",
+            "Tisch und Getränke: decken, Wasser, Servietten",
+            "Spülen: zwischendurch spülen, Arbeitsflächen frei halten",
+            "Allergie-Check: prüft Packungen und achtet auf getrennte Löffel"
+          ],
+          "tipp": "Den Grundpreis zeigen: Auf dem Regaletikett steht oft der Preis pro Kilo oder Liter. Wer ihn vergleicht, merkt schnell, dass die große Packung nicht immer die billigere ist.",
+          "wennEsKippt": "Streiten zwei um den Herd, tauschen sie nach der Hälfte der Kochzeit. Will jemand gar nicht kochen, bekommt die Person eine Rolle ohne Herd: Tisch, Kassenbon prüfen, Zeit und Musik.",
+          "blatt": "skills-kochplan"
+        },
+        {
+          "titel": "Kochen in Rollen",
+          "dauer": 30,
+          "phase": "aktiv",
+          "text": "Alle waschen die Hände und legen los; die Leitung bleibt in der Küche und hat den Herd im Blick. Zuerst das Wasser aufsetzen oder die Füllung vorbereiten, dann schneiden, dann zubereiten. Nach etwa 15 Minuten eine kurze Zwischenrunde: Wie weit sind wir, was fehlt noch? Wer spült, hält die Flächen frei, damit am Ende nicht alles auf einmal kommt. Wenn das Essen fertig ist, wird gemeinsam abgeschmeckt, jede Person mit einem frischen Löffel.",
+          "sagen": [
+            "Krallengriff: Die Fingerkuppen biegen sich nach innen, das Messer gleitet an den Knöcheln entlang.",
+            "Wie weit seid ihr? Was braucht noch am längsten?",
+            "Probieren mit einem sauberen Löffel, nicht mit dem Kochlöffel."
+          ],
+          "tipp": "Die Leitung kocht nicht selbst, sondern behält den Überblick: Sie zeigt einen Handgriff einmal und gibt das Messer dann zurück. Wer heute zum ersten Mal eine Zwiebel schneidet, soll es am Ende selbst gemacht haben.",
+          "wennEsKippt": "Kleine Schnittwunde: Blutung mit einem sauberen Tuch stillen, Pflaster, Einmalhandschuh darüber; bei einer größeren Wunde oder Verbrennung das Kochen unterbrechen, Erste Hilfe leisten, bei Bedarf 112. Brennt Fett in der Pfanne: Deckel drauf, Herd aus, niemals Wasser. Wird es in der Küche zu eng, schneiden zwei Personen am Tisch nebenan weiter. Mit nur zwei Jugendlichen das Rezept halbieren; jede Person übernimmt zwei Rollen, und die Leitung spült mit.",
+          "blatt": "skills-kochplan"
+        },
+        {
+          "titel": "Skill: die ersten drei Bissen achtsam",
+          "dauer": 5,
+          "phase": "skill",
+          "text": "Wenn das Essen auf dem Tisch steht und bevor alle loslegen: eine kurze Achtsamkeitsübung, wie sie viele aus Jahr 1 kennen. Die ersten drei Bissen bewusst essen: anschauen, riechen, langsam kauen, herausschmecken, was drin ist. Danach sagt, wer mag, ein Wort zum Geschmack. Wer fastet oder nicht mitessen möchte, macht nur beim Anschauen und Riechen mit oder hört einfach zu.",
+          "sagen": [
+            "Die ersten drei Bissen gehören euch: langsam, ohne Handy, nur schmecken.",
+            "Was schmeckt ihr heraus – Knoblauch, Paprika, die Sauce?"
+          ],
+          "tipp": "Selbst Gekochtes schmeckt fast immer besser als erwartet. Diesen Moment ausdrücklich benennen: Das habt ihr gemacht."
+        },
+        {
+          "titel": "Gemeinsam essen",
+          "dauer": 10,
+          "phase": "pause",
+          "text": "Zusammen essen, die Leitung isst mit. Niemand kommentiert, wer wie viel oder was isst. Reste dürfen alle mitnehmen, die mögen; die Dosen stehen bereit."
+        },
+        {
+          "titel": "Aufräumen wie Profis",
+          "dauer": 7,
+          "phase": "uebung",
+          "text": "Nach dem Essen räumen alle in ihren Rollen auf: Reste abgedeckt in den Kühlschrank oder in die Dosen, spülen, abtrocknen, Flächen abwischen, Müll trennen. Die Leitung stellt einen Timer auf sieben Minuten; danach steht die Küche so da, wie die Gruppe sie vorgefunden hat. Wer fertig ist, hilft der Person mit der meisten Arbeit.",
+          "sagen": [
+            "Sieben Minuten, dann sieht die Küche aus wie vorher. Wer zuerst fertig ist, hilft den anderen."
+          ],
+          "wennEsKippt": "Verschwinden einige beim Aufräumen, freundlich zurückholen und eine konkrete Aufgabe geben: nicht „hilf mal“, sondern „trockne die Töpfe ab und stell sie in den unteren Schrank“."
+        },
+        {
+          "titel": "Eintrag ins Skills-Buch",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Das Modul „Selbstständig werden“ endet. Jede Person füllt im Skills-Buch eine neue Rubrikenseite aus: bei den Lieblingsskills den Skill, der am meisten gebracht hat, etwa den Kauf-Stopp, die Rückwärtsplanung oder „erst atmen, dann wählen“; bei den Plänen das Rezept für einen Abend allein (Aufgabe 3 auf dem Kochplan); bei den Menschen, die helfen, wen man bei Geld, Formularen oder Arztterminen fragen kann. Wer die Zeit braucht, ergänzt den Rest zu Beginn der nächsten Einheit. Die Leitung liest nur, was gezeigt wird.",
+          "sagen": [
+            "Ein Rezept, das ihr wirklich kochen würdet – nicht das schönste, sondern das, das ihr hinbekommt.",
+            "Welcher Skill aus den letzten drei Wochen hat euch am meisten gebracht?"
+          ],
+          "blatt": "skills-buch"
+        },
+        {
+          "titel": "Réckbléck und Skills-Pass",
+          "dauer": 3,
+          "phase": "abschluss",
+          "text": "Kurzes Blitzlicht: Was traue ich mir jetzt allein zu, das vor drei Wochen noch nicht ging? Eintrag in den Skills-Pass, Stempel, Ausblick auf das nächste Modul. Die Leitung bleibt nach der Einheit noch einige Minuten ansprechbar.",
+          "sagen": [
+            "Ein Satz: Was traut ihr euch jetzt allein zu?"
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Nächstes Mal beginnt ein leiseres Modul: Es geht um Gefühle, über die man selten spricht – und niemand muss dabei etwas Persönliches erzählen.",
+      "hintergrund": "Wer sich eine einfache Mahlzeit planen, einkaufen und kochen kann, ist im Alltag weniger auf andere und auf teure Fertigprodukte angewiesen. Die Hygieneregeln im Küchen-Check folgen den „fünf Schlüsseln“ der WHO (2006); Allergenkennzeichnung und Haltbarkeitsdaten regelt die Verordnung (EU) Nr. 1169/2011. Die Einheit setzt auf echtes Tun statt Erklären, denn eigene Erfolgserfahrungen stärken die Selbstwirksamkeit am meisten (Bandura, 1977). Gemeinsames Kochen spricht zugleich die Grundbedürfnisse nach Kompetenz, Autonomie und Zugehörigkeit an, die Motivation tragen (Deci & Ryan, 2000). Das Rechnen mit Grundpreis und Budget knüpft an die Geldeinheit an; finanzielle Grundbildung zeigt sich gerade in solchen Alltagsentscheidungen (Lusardi & Mitchell, 2014). Die Achtsamkeitsübung beim Essen greift eine klassische Übung auf, bei der ein Lebensmittel mit allen Sinnen wahrgenommen wird (Kabat-Zinn, 1990).",
+      "quellen": [
+        "World Health Organization (2006). Five Keys to Safer Food Manual. Genf: WHO.",
+        "Verordnung (EU) Nr. 1169/2011 des Europäischen Parlaments und des Rates vom 25. Oktober 2011 betreffend die Information der Verbraucher über Lebensmittel. Amtsblatt der EU, L 304, 18–63.",
+        "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
+        "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268.",
+        "Lusardi, A. & Mitchell, O. S. (2014). The economic importance of financial literacy: Theory and evidence. Journal of Economic Literature, 52(1), 5–44.",
+        "Kabat-Zinn, J. (1990). Full Catastrophe Living. New York: Delacorte."
+      ],
+      "achtung": "Vor der Einheit die Liste mit Allergien, Unverträglichkeiten und Essensregeln prüfen und nur Gerichte anbieten, die für alle passen; bei bekannter schwerer Allergie den Notfallplan der Person und den Ort des Notfallsets kennen. Bei Atemnot, Schwellungen im Gesicht oder Kreislaufproblemen nach dem Essen sofort 112 rufen und die Person nicht allein lassen. Essensregeln wie halal, vegetarisch oder kein Schweinefleisch und Fastenzeiten werden selbstverständlich berücksichtigt, ohne dass jemand sie vor der Gruppe begründen muss. Essen kann für Jugendliche mit einem schwierigen Verhältnis zum Essen oder mit wenig Essen zu Hause belastend sein: keine Kommentare zu Portionen, Kalorien oder Körpern. Fallen Hinweise auf Hunger, Vernachlässigung oder ein gestörtes Essverhalten auf, nicht in der Gruppe ansprechen, sondern im Einzelgespräch, und die zuständige Leitung (Responsable) informieren."
+    }
+  ]
+}

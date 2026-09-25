@@ -1,0 +1,791 @@
+{
+  "einheiten": [
+    {
+      "id": "j3-e24",
+      "nr": 24,
+      "jahr": 3,
+      "modul": "j3-m7",
+      "titel": "Meine Meinung zählt",
+      "kurz": "Tatsache oder Meinung? Die Gruppe lernt beides zu unterscheiden, bildet sich in vier Schritten eine eigene Meinung, bezieht auf der Meinungslinie Position und erfährt, dass sie ein Recht hat, gehört zu werden.",
+      "dauer": 100,
+      "ziele": [
+        "unterscheiden Tatsachenbehauptungen, die man prüfen kann, von Meinungen, die man begründen muss",
+        "bilden sich mit dem Meinungs-Check in vier Schritten eine begründete, vorläufige Meinung",
+        "beziehen auf der Meinungslinie Position und bemerken, ob ein Argument oder die Gruppe sie bewegt",
+        "kennen ihr Recht auf freie Meinungsäußerung und darauf, gehört zu werden (UN-Kinderrechtskonvention, Artikel 12 und 13)"
+      ],
+      "material": [
+        "Gefühlsrad (A3, laminiert) und Anspannungsskala 0–100",
+        "Schülerblatt „Fakt oder Meinung?“ für jede Person",
+        "Malerkrepp für eine Linie am Boden (etwa 6 Meter), Schilder „0 – stimme gar nicht zu“ und „100 – stimme voll zu“",
+        "Kleine Zettel und Stifte für die geheime Zahl",
+        "Plakat mit Artikel 12 und 13 der UN-Kinderrechtskonvention (Wortlaut in Schritt 7)",
+        "Leeres Plakat „Wo werdet ihr gehört?“ – es wird in Einheit 26 wieder gebraucht",
+        "Skills-Pässe, Stempel, Imbiss und Getränke"
+      ],
+      "vorbereitung": [
+        "Die Linie am Boden abkleben; sie funktioniert wie die Anspannungsskala, das Prinzip ist der Gruppe vertraut.",
+        "Die Aussagen für die Meinungslinie prüfen: keine, die Herkunft, Religion, Körper oder Familie einzelner Jugendlicher berühren; bei aktuellen Konflikten in der Gruppe ein Thema streichen.",
+        "Den Text zu Artikel 12 und 13 groß auf ein Plakat schreiben."
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-fakt-oder-meinung",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in und Daumen-Umfrage"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Von guten Momenten zur eigenen Stimme"
+        },
+        {
+          "min": "15–30",
+          "phase": "uebung",
+          "titel": "Tatsache oder Meinung?"
+        },
+        {
+          "min": "30–45",
+          "phase": "input",
+          "titel": "Der Meinungs-Check in vier Schritten"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–80",
+          "phase": "aktiv",
+          "titel": "Die Meinungslinie mit geheimer Zahl"
+        },
+        {
+          "min": "80–87",
+          "phase": "input",
+          "titel": "Dein Recht, gehört zu werden"
+        },
+        {
+          "min": "87–95",
+          "phase": "skill",
+          "titel": "Skill: Gedanke oder Tatsache?"
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Réckbléck und Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in und Daumen-Umfrage",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Gefühlsrad und Anspannung wie gewohnt, die Leitung beginnt. Danach drei schnelle Fragen (Liste): Auf drei zeigen alle gleichzeitig den Daumen – hoch, Mitte oder runter. Niemand begründet, es geht nur ums Zeigen. Zum Schluss fragen, wie es sich angefühlt hat, mit dem eigenen Daumen allein zu sein.",
+          "sagen": [
+            "Auf drei alle gleichzeitig: Daumen hoch, Mitte oder runter. Eins, zwei, drei.",
+            "Wer war gerade allein mit seinem Daumen? Wie war das?"
+          ],
+          "punkte": [
+            "Pizza mit Ananas ist in Ordnung.",
+            "Die Sommerferien sind zu lang.",
+            "Sprachnachrichten sind besser als Textnachrichten."
+          ],
+          "tipp": "Die harmlosen Fragen sind Absicht: Die Gruppe erlebt Meinungsverschiedenheit zuerst dort, wo nichts auf dem Spiel steht.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Von guten Momenten zur eigenen Stimme",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "An die letzte Einheit anknüpfen: Wer hat seit letzter Woche einen guten Moment bemerkt oder ins Gute-Momente-Glas gelegt? Dann das neue Modul öffnen: Drei Treffen lang geht es um die eigene Meinung – wie man sie bildet, wie man fair streitet und wie man mitbestimmt, statt nur zu meckern. Heute der erste Schritt: Woher weiß ich eigentlich, was ich denke?",
+          "sagen": [
+            "Ihr habt zu vielen Dingen eine Meinung. Heute geht es darum, wie gut sie gebaut ist.",
+            "Meckern ist leicht. In den nächsten drei Wochen geht es darum, wie man gehört wird."
+          ]
+        },
+        {
+          "titel": "Tatsache oder Meinung?",
+          "dauer": 15,
+          "phase": "uebung",
+          "text": "An der Tafel zwei Sätze gegenüberstellen: „Energydrinks enthalten viel Koffein.“ und „Energydrinks sollten für Jugendliche unter 16 verboten sein.“ Gemeinsam klären: Den ersten Satz kann man prüfen, er ist wahr oder falsch. Der zweite ist eine Bewertung, man kann ihn nicht beweisen, aber gut oder schlecht begründen (Tabelle). Dann bearbeiten alle Aufgabe 1 allein und vergleichen zu zweit; die Auflösung steht auf der Lehrerseite. Bei den Grenzfällen verweilen: Ein Pauschalurteil wie „Alle Gamer sind aggressiv“ klingt nach Meinung, ist aber eine prüfbare – und falsche – Behauptung.",
+          "sagen": [
+            "Kann man den Satz nachprüfen? Wenn ja, ist es eine Tatsachenbehauptung, auch wenn sie falsch ist.",
+            "Eine Meinung ist nicht richtig oder falsch. Aber sie kann stark oder schwach begründet sein."
+          ],
+          "tabelle": {
+            "spalten": [
+              "",
+              "Tatsachenbehauptung",
+              "Meinung"
+            ],
+            "zeilen": [
+              [
+                "Was ist das?",
+                "eine Aussage, die man prüfen kann",
+                "eine Bewertung: gut, schlecht, besser, sollte"
+              ],
+              [
+                "Frage dazu",
+                "Stimmt das? Woher weißt du das?",
+                "Warum findest du das? Was spricht dagegen?"
+              ],
+              [
+                "Typische Wörter",
+                "Zahlen, Orte, Daten, „es gibt“",
+                "finde, sollte, besser, schlimm, schön"
+              ],
+              [
+                "Beispiel",
+                "Energydrinks enthalten viel Koffein.",
+                "Energydrinks sollten für Jugendliche unter 16 verboten sein."
+              ]
+            ]
+          },
+          "tipp": "Den Satz „Das ist doch nur deine Meinung“ aufgreifen: Bei Bewertungen stimmt er, bei Tatsachen ist er eine Ausrede, um nicht nachzuprüfen.",
+          "wennEsKippt": "Rutscht die Gruppe bei einem Beispiel in eine Grundsatzdebatte, freundlich parken: Das Thema kommt auf die Meinungslinie oder in die Debatte nächste Woche. Jetzt geht es nur um die Frage, ob ein Satz prüfbar ist oder eine Bewertung.",
+          "blatt": "skills-fakt-oder-meinung"
+        },
+        {
+          "titel": "Der Meinungs-Check in vier Schritten",
+          "dauer": 15,
+          "phase": "input",
+          "text": "Die vier Schritte auf dem Blatt vorstellen und an einem Beispielthema gemeinsam durchgehen: Sollen Handys in der Pause verboten werden? An der Tafel sammeln, was man weiß, was die verschiedenen Seiten sagen – Schülerinnen und Schüler, Lehrkräfte, Eltern –, was einem selbst wichtig ist, und erst dann eine vorläufige Meinung mit Grund formulieren (Tabelle). Danach wählt jede Person ein Thema vom Blatt oder ein eigenes und macht den Check allein. Wer mag, liest am Ende seine Meinung vor.",
+          "sagen": [
+            "Eine Meinung, die ihr nach Schritt 2 noch nie geändert habt, ist vielleicht nur eine Gewohnheit.",
+            "Vorläufig heißt: Ihr dürft sie ändern, wenn ein besseres Argument kommt. Das ist kein Umfallen, das ist Denken."
+          ],
+          "tabelle": {
+            "spalten": [
+              "Schritt",
+              "Frage",
+              "Beispiel: Handys in der Pause"
+            ],
+            "zeilen": [
+              [
+                "1 Fakten sammeln",
+                "Was weiß ich sicher – und woher?",
+                "Viele sitzen in der Pause am Handy; manchmal wird dabei gefilmt."
+              ],
+              [
+                "2 Seiten hören",
+                "Was sagen die anderen, und warum?",
+                "Lehrkräfte: mehr Bewegung, weniger Filmen. Jugendliche: Musik, Kontakt nach Hause."
+              ],
+              [
+                "3 Mich fragen",
+                "Was ist mir wichtig? Welches Gefühl steckt drin?",
+                "Freiheit ist mir wichtig, gefilmt werden will ich aber nicht."
+              ],
+              [
+                "4 Meinung bilden",
+                "Meine Meinung, vorläufig, mit einem Grund",
+                "Handys ja, Filmen nur mit Erlaubnis, weil beides zählt."
+              ]
+            ]
+          },
+          "tipp": "Schritt 3 nicht überspringen: Gefühle und Werte gehören zu einer Meinung dazu. Hier lässt sich an Modul 1 anknüpfen – welcher der eigenen Werte steckt in dieser Meinung?",
+          "wennEsKippt": "Sagt jemand „Mir ist das egal“, das gelten lassen und fragen, ob es ein Thema gibt, das nicht egal ist. Oft ist es ein ganz anderes, und genau das darf dann der Stoff für den Check sein.",
+          "blatt": "skills-fakt-oder-meinung"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Imbiss, das Thema ruht. Danach die Linie am Boden freiräumen und die Zettel für die geheime Zahl bereitlegen."
+        },
+        {
+          "titel": "Die Meinungslinie mit geheimer Zahl",
+          "dauer": 20,
+          "phase": "aktiv",
+          "text": "Die Linie am Boden erklären: 0 heißt „stimme gar nicht zu“, 100 „stimme voll zu“, dazwischen ist alles erlaubt. Die Leitung liest eine Aussage vor (Liste); jede Person schreibt zuerst ihre Zahl geheim auf einen Zettel und stellt sich dann auf die Linie. Zwei oder drei Freiwillige von verschiedenen Stellen nennen ihren wichtigsten Grund, danach darf sich jede Person neu hinstellen. Nach jeder Runde fragen: Wer hat sich bewegt – und was hat bewegt, ein Argument, eine Tatsache oder die Gruppe? Vier Aussagen reichen; zum Schluss vergleicht jede Person still ihre Zettel mit ihren Positionen.",
+          "sagen": [
+            "Erst die Zahl auf den Zettel, dann auf die Linie. Der Zettel bleibt bei euch.",
+            "Wer hat sich bewegt? Was genau hat euch bewegt?",
+            "Steht ihr jetzt woanders als die Zahl auf eurem Zettel? Keine Antwort nötig, nur merken."
+          ],
+          "punkte": [
+            "Die Schule sollte erst um 9 Uhr beginnen.",
+            "Handys sollten in der Pause verboten sein.",
+            "Mit 16 sollte man bei Wahlen mitwählen dürfen.",
+            "Jede Klasse sollte ein eigenes Budget bekommen, über das sie selbst entscheidet.",
+            "Hausaufgaben sollten abgeschafft werden.",
+            "Soziale Netzwerke sollten erst ab 16 erlaubt sein."
+          ],
+          "tipp": "Der geheime Zettel macht sichtbar, was in Gruppen oft passiert: Viele rücken ein Stück zur Mehrheit, ohne ein neues Argument gehört zu haben. Das ausdrücklich als normal benennen – und als etwas, das man bemerken kann. Mit nur zwei Jugendlichen stellt sich die Leitung mit auf die Linie und vertritt bewusst eine dritte Position.",
+          "wennEsKippt": "Stellt sich die Gruppe immer dorthin, wo die Wortführer stehen, eine Runde mit geschlossenen Augen spielen: Alle zeigen die Zahl nur mit den Fingern, die Leitung nennt das Ergebnis. Wird es persönlich oder abwertend, sofort anhalten und auf die Regel zeigen: Wir streiten über Aussagen, nicht über Menschen. Bei wenig Energie die Aussagen im Sitzen mit der Finger-Skala abfragen.",
+          "blatt": "skills-fakt-oder-meinung"
+        },
+        {
+          "titel": "Dein Recht, gehört zu werden",
+          "dauer": 7,
+          "phase": "input",
+          "text": "Das Plakat mit Artikel 12 und 13 aufhängen und vorlesen (Liste). Kurz erklären: Die UN-Kinderrechtskonvention ist ein Vertrag, den fast alle Staaten der Welt ratifiziert haben, auch Luxemburg; sie gilt für alle Menschen unter 18. Dann zwei Fragen stellen und die Antworten auf dem Plakat „Wo werdet ihr gehört?“ sammeln: Wo werdet ihr schon gehört? Wo würdet ihr gern mehr mitreden? Das Plakat wird aufbewahrt, es ist der Stoff für die Einheit „Mitbestimmen“.",
+          "sagen": [
+            "Mitreden ist kein Geschenk der Erwachsenen. Es ist euer Recht.",
+            "Recht heißt nicht, dass immer passiert, was ihr wollt. Es heißt, dass eure Meinung zählt, wenn entschieden wird."
+          ],
+          "punkte": [
+            "Artikel 12: Du hast das Recht, deine Meinung zu allen Dingen zu sagen, die dich betreffen. Erwachsene müssen sie ernst nehmen und – je nach Alter und Reife – berücksichtigen.",
+            "Artikel 13: Du hast das Recht, dich zu informieren und deine Meinung frei zu sagen, zu schreiben oder zu zeigen, solange du die Rechte und den Ruf anderer achtest."
+          ],
+          "tipp": "Ehrlich bleiben: Gehört werden ist nicht dasselbe wie mitentscheiden. Genau diesen Unterschied untersucht die Einheit „Mitbestimmen“ mit der Beteiligungsleiter.",
+          "blatt": "skills-fakt-oder-meinung"
+        },
+        {
+          "titel": "Skill: Gedanke oder Tatsache?",
+          "dauer": 8,
+          "phase": "skill",
+          "text": "Zum Runterkommen den Blick nach innen richten: Auch der eigene Kopf liefert ständig Meinungen, die sich wie Tatsachen anfühlen, etwa „Ich kann das nicht“ oder „Die finden mich komisch“. Die Leitung leitet an (Liste): Augen schließen oder auf einen Punkt am Boden schauen, einen solchen Gedanken bemerken und innerlich umformulieren: „Ich habe gerade den Gedanken, dass …“. Dann den Gedanken wie das Gedankenschiffchen aus Jahr 1 vorbeiziehen lassen. Zum Schluss die Anspannung neu schätzen.",
+          "sagen": [
+            "Nicht jeder Gedanke ist eine Tatsache – auch nicht die, die ihr über euch selbst habt.",
+            "Ich habe den Gedanken, dass … Merkt ihr, wie viel Abstand dieser eine Satz schafft?"
+          ],
+          "punkte": [
+            "Einen Gedanken bemerken, der gerade da ist.",
+            "Ihn umformulieren: Ich habe den Gedanken, dass …",
+            "Ihn auf ein Schiffchen setzen und vorbeiziehen lassen.",
+            "Drei ruhige Atemzüge. Welche Zahl von 0 bis 100 jetzt?"
+          ],
+          "tipp": "Wer die Übung aus Jahr 1 kennt, darf sie für die Gruppe anleiten. Wer mit Vorstellungsübungen nichts anfangen kann, schaut aus dem Fenster und zählt ruhige Atemzüge.",
+          "wennEsKippt": "Kommen belastende Gedanken hoch, darf die Person die Augen öffnen und nur atmen. Nach der Einheit ein kurzes Gespräch anbieten, ohne vor der Gruppe nachzufragen."
+        },
+        {
+          "titel": "Réckbléck und Skills-Pass",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Blitzlicht mit einer kleinen Herausforderung: eine Tatsache und eine Meinung über heute, etwa „Wir waren sechs Leute.“ und „Die Linie war das Beste.“ Danach Eintrag in den Skills-Pass und Stempel. Zum Schluss den Ausblick geben.",
+          "sagen": [
+            "Eine Tatsache und eine Meinung über heute – wer schafft beides in einem Atemzug?"
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Nächstes Mal wird gestritten – aber fair: Ihr baut Argumente, die halten, und tretet in einer Mini-Debatte gegeneinander an.",
+      "hintergrund": "Meinungsbildung setzt voraus, prüfbare Aussagen von Bewertungen zu unterscheiden; wer Behauptungen über unabhängige Quellen gegenprüft, urteilt treffsicherer (Wineburg & McGrew, 2019). Meinungen entstehen aber auch unter dem Druck der Gruppe: Im klassischen Experiment von Asch (1956) schlossen sich viele Versuchspersonen einem offensichtlich falschen Urteil der Mehrheit an. Die geheime Zahl bei der Meinungslinie macht diesen Sog erfahrbar; das Positionieren mit anschließendem Begründen stammt aus der Menschenrechtsbildung (Council of Europe, 2012). Das Recht, gehört zu werden, ist in der UN-Kinderrechtskonvention verankert (Vereinte Nationen, 1989). Der Skill am Ende überträgt die Unterscheidung nach innen: Gedanken als Gedanken zu bemerken, schafft Abstand (Hayes et al., 2012).",
+      "quellen": [
+        "Wineburg, S. & McGrew, S. (2019). Lateral reading and the nature of expertise: Reading less and learning more when evaluating digital information. Teachers College Record, 121(11), 1–40.",
+        "Asch, S. E. (1956). Studies of independence and conformity: I. A minority of one against a unanimous majority. Psychological Monographs: General and Applied, 70(9), 1–70.",
+        "Council of Europe (2012). Compass: Manual for Human Rights Education with Young People (2nd ed.). Strasbourg: Council of Europe Publishing.",
+        "Vereinte Nationen (1989). Übereinkommen über die Rechte des Kindes. New York: Vereinte Nationen.",
+        "Hayes, S. C., Strosahl, K. D. & Wilson, K. G. (2012). Acceptance and Commitment Therapy: The Process and Practice of Mindful Change (2nd ed.). New York: Guilford."
+      ],
+      "achtung": "Meinungsübungen kippen, wenn Aussagen Menschen in der Gruppe treffen: keine Aussagen zu Herkunft, Religion, Geschlecht, sexueller Orientierung, Körper oder Familie, nur Themen, die alle von außen betrachten können. Abwertende Äußerungen über Gruppen von Menschen sind keine Meinung, die auf der Linie stehen bleiben darf: ruhig benennen, dass sie andere verletzen, und das Gespräch unter vier Augen fortsetzen. Niemand muss seine Position begründen, „weiter“ gilt auch auf der Linie. Werden bei der Frage „Wo werdet ihr gehört?“ Situationen sichtbar, in denen jemand gar nicht gehört wird oder unter Druck steht – zu Hause, in einer Einrichtung, in einer Beziehung –, nicht in der Gruppe vertiefen, sondern ein Einzelgespräch anbieten und die zuständige Leitung (Responsable) informieren."
+    },
+    {
+      "id": "j3-e25",
+      "nr": 25,
+      "jahr": 3,
+      "modul": "j3-m7",
+      "titel": "Streiten, aber fair",
+      "kurz": "Hart in der Sache, fair zur Person: Die Gruppe baut Argumente aus Behauptung, Begründung und Beispiel, vereinbart Debattenregeln und tritt in einer Mini-Debatte an, bei der das Publikum mit den Füßen abstimmt.",
+      "dauer": 100,
+      "ziele": [
+        "bauen ein Argument aus Behauptung, Begründung und Beispiel und reparieren schwache Argumente",
+        "fassen ein Gegenargument zuerst zusammen und antworten dann darauf",
+        "halten in einer Mini-Debatte die vereinbarten Regeln ein, auch auf einer Seite, die sie privat nicht teilen",
+        "unterscheiden Kritik an einem Argument von einem Angriff auf eine Person"
+      ],
+      "material": [
+        "Gefühlsrad (A3, laminiert) und Anspannungsskala 0–100",
+        "Schülerblatt „Mein Argument“ für jede Person",
+        "Schülerblatt „Die Mini-Debatte“: Themen- und Los-Karten ausgeschnitten, Jury-Bogen für jede zuschauende Person",
+        "Malerkrepp für zwei Seiten im Raum (Pro und Contra) und eine Mittellinie",
+        "Stoppuhr oder Handy-Timer, eine Klingel oder ein Glas mit Löffel",
+        "Skills-Pässe, Stempel, Imbiss und Getränke"
+      ],
+      "vorbereitung": [
+        "Die Themenkarten prüfen und streichen, was in der Gruppe gerade Konflikte berührt; keine Themen zu Herkunft, Religion, Körper oder Familie.",
+        "Raum: an zwei gegenüberliegenden Seiten Platz für Pro und Contra, in der Mitte Platz für das Publikum; die Mittellinie am Boden abkleben.",
+        "Den Ablauf der Mini-Debatte mit Zeiten an die Tafel schreiben (siehe Schritt 6)."
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-mein-argument",
+        "skills-debatte",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Worüber könntet ihr endlos streiten?"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Von der Meinung zum Argument"
+        },
+        {
+          "min": "15–35",
+          "phase": "uebung",
+          "titel": "Das Argument in drei Teilen"
+        },
+        {
+          "min": "35–45",
+          "phase": "input",
+          "titel": "Regeln für einen fairen Streit"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–85",
+          "phase": "aktiv",
+          "titel": "Mini-Debatte mit Wanderpublikum"
+        },
+        {
+          "min": "85–95",
+          "phase": "skill",
+          "titel": "Skill: aus der Rolle aussteigen"
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Réckbléck und Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: Worüber könntet ihr endlos streiten?",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Gefühlsrad und Anspannung wie gewohnt, die Leitung beginnt. Dazu die Frage: Worüber könntet ihr stundenlang streiten, ohne dass es wirklich ernst wird – der beste Fußballverein, die beste Pizza, die überschätzteste Serie? Die Themen an der Tafel sammeln; eines davon darf später in die Debatte. Zum Schluss nennt, wer mag, eine zweite Zahl: Ab welcher Anspannung hört ein Streit für dich auf, Spaß zu machen?",
+          "sagen": [
+            "Gefühl, Zahl – und euer Lieblingsstreit, der eigentlich keiner ist.",
+            "Ab welcher Zahl hört ein Streit für euch auf, Spaß zu machen?"
+          ],
+          "tipp": "Die zweite Zahl merken, ohne sie aufzuschreiben: Sie ist die Grenze, an der in der Debatte später eine Auszeit oder der Skill aus Schritt 7 gebraucht wird.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Von der Meinung zum Argument",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "An die letzte Einheit anknüpfen: Tatsache oder Meinung, der Meinungs-Check und die geheime Zahl auf der Linie. Wer hat seitdem bemerkt, dass er sich einer Mehrheit angeschlossen hat, ohne überzeugt zu sein? Dann das Ziel von heute nennen: Eine Meinung wird erst stark, wenn man sie begründen kann – und ein Streit bleibt fair, wenn man das Argument angreift und die Person schont.",
+          "sagen": [
+            "Letzte Woche: Tatsache oder Meinung. Heute: Wie wird aus einer Meinung ein Argument, das andere nicht einfach wegwischen können?",
+            "Heute darf gestritten werden. Aber nur mit Argumenten."
+          ]
+        },
+        {
+          "titel": "Das Argument in drei Teilen",
+          "dauer": 20,
+          "phase": "uebung",
+          "text": "An der Tafel den Aufbau zeigen: Behauptung, Begründung, Beispiel oder Beleg (Tabelle). Ein schwaches Argument vorlesen – „Hausaufgaben sollten abgeschafft werden, weil sie nerven.“ – und gemeinsam verbessern, bis alle drei Teile tragen. Dann bearbeiten die Jugendlichen zu zweit Aufgabe 1 und 2 auf dem Blatt: schwache Argumente erkennen und reparieren. In Aufgabe 3 üben sie das Antworten: erst das Gegenargument mit eigenen Worten zusammenfassen, dann widersprechen. Zwei Paare zeigen zum Schluss ihr bestes repariertes Argument.",
+          "sagen": [
+            "Dass etwas nervt, ist ein Gefühl und noch keine Begründung. Was genau nervt – und wen betrifft es noch?",
+            "Bevor du widersprichst: Fass zusammen, was die andere Seite gesagt hat. Erst wenn sie „ja, genau“ sagt, bist du dran."
+          ],
+          "tabelle": {
+            "spalten": [
+              "Teil",
+              "Frage",
+              "Beispiel"
+            ],
+            "zeilen": [
+              [
+                "Behauptung",
+                "Was meinst du?",
+                "Die Schule sollte um 9 Uhr beginnen."
+              ],
+              [
+                "Begründung",
+                "Warum?",
+                "Jugendliche werden abends später müde und brauchen morgens mehr Schlaf."
+              ],
+              [
+                "Beispiel oder Beleg",
+                "Woran sieht man das?",
+                "Für Jugendliche werden 8 bis 10 Stunden Schlaf empfohlen – bei Schulbeginn um 8 schaffen das viele nicht."
+              ]
+            ]
+          },
+          "tipp": "Die Zusammenfassen-Regel kostet Zeit, wirkt aber stark: Wer das Argument der Gegenseite wiedergeben muss, hört anders zu. Wer Jahr 1 kennt, erkennt Stufe 3 der Konflikt-Treppe wieder.",
+          "wennEsKippt": "Bleiben Paare bei „weil es halt so ist“ hängen, freundlich dreimal hintereinander nach dem Warum fragen; beim dritten Warum kommt meist der eigentliche Grund. Wer schnell fertig ist, sucht das stärkste Gegenargument zu seinem eigenen Argument.",
+          "blatt": "skills-mein-argument"
+        },
+        {
+          "titel": "Regeln für einen fairen Streit",
+          "dauer": 10,
+          "phase": "input",
+          "text": "Die Regeln auf dem Debattenblatt gemeinsam lesen (Liste) und fragen, ob die Gruppe eine eigene ergänzen will; ab jetzt gelten sie für die Debatte. Dann Killerphrasen sammeln, die Diskussionen abwürgen, und zu zweit fair umformulieren (Tabelle). Der Kern kommt groß an die Tafel: hart in der Sache, fair zur Person.",
+          "sagen": [
+            "Hart in der Sache, fair zur Person. Was heißt das, wenn ihr gleich auf der Gegenseite steht?",
+            "Welche Killerphrase habt ihr selbst schon abbekommen? Nicht von wem, nur welche."
+          ],
+          "punkte": [
+            "Wir greifen Argumente an, nie Personen, ihre Herkunft, ihren Glauben oder ihr Aussehen.",
+            "Wer spricht, wird nicht unterbrochen. Die Redezeit ist für alle gleich.",
+            "Wer widerspricht, fasst zuerst zusammen, was die andere Seite gesagt hat.",
+            "Kein Auslachen, kein Augenrollen, keine Killerphrasen.",
+            "Wer eine Pause braucht, bekommt sie – die Debatte wartet."
+          ],
+          "tabelle": {
+            "spalten": [
+              "Killerphrase",
+              "Fair gesagt"
+            ],
+            "zeilen": [
+              [
+                "Das ist doch Quatsch.",
+                "Das sehe ich anders, und zwar weil …"
+              ],
+              [
+                "Du hast doch keine Ahnung.",
+                "Woher hast du das? Ich habe etwas anderes gelesen."
+              ],
+              [
+                "Das war schon immer so.",
+                "Was spricht dafür, es einmal anders zu versuchen?"
+              ],
+              [
+                "Typisch für euch …",
+                "Ich bleibe bei der Sache: Welches Argument meinst du genau?"
+              ]
+            ]
+          },
+          "tipp": "Die Regel zu Herkunft, Glauben und Aussehen ausdrücklich nennen, auch wenn sie selbstverständlich klingt: In hitzigen Momenten rutscht eine abwertende Bemerkung am schnellsten heraus.",
+          "blatt": "skills-debatte"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Imbiss, das Thema ruht. Die Leitung isst mit; die Seiten und die Mittellinie am Boden sind schon abgeklebt."
+        },
+        {
+          "titel": "Mini-Debatte mit Wanderpublikum",
+          "dauer": 25,
+          "phase": "aktiv",
+          "text": "Zwei Teams zu zwei Personen, der Rest ist Publikum mit Jury-Bogen; bei nur vier Jugendlichen ist die Leitung das Publikum. Thema und Seite werden gelost: Wer Pro zieht, vertritt Pro, auch wenn er privat anders denkt. Fünf Minuten Vorbereitung mit Aufgabe 4 auf dem Blatt „Mein Argument“, dann läuft die Debatte nach dem Ablauf an der Tafel (Liste). Das Publikum steht in der Mitte und geht nach jedem starken Argument einen Schritt zu der Seite, die es gerade überzeugt; am Ende zählt, wo die meisten stehen. Danach eine zweite Runde mit neuem Thema und getauschten Rollen.",
+          "sagen": [
+            "Ihr vertretet die Seite, die ihr gezogen habt. Gerade wenn ihr anders denkt, werdet ihr heute besser.",
+            "Publikum: Bewegt euch, sooft euch ein Argument überzeugt. Wer sich nie bewegt, hat vielleicht nicht zugehört.",
+            "Stopp. Bevor du antwortest: Was hat die andere Seite gerade gesagt?"
+          ],
+          "punkte": [
+            "Eröffnung: Pro und Contra je 1 Minute, das stärkste Argument zuerst.",
+            "Schlagabtausch: 4 Minuten frei, mit Zusammenfassen-Regel.",
+            "Schlussworte: je 30 Sekunden – warum unsere Seite überzeugt.",
+            "Publikum: Schritt zur überzeugenden Seite, am Ende wird gezählt."
+          ],
+          "tipp": "Die Leitung moderiert streng und freundlich zugleich: Zeit einhalten, Regelverstöße mit der Klingel markieren, ohne zu schimpfen. Nach der ersten Runde kurz fragen, welches Argument das Publikum bewegt hat – daran sieht die Gruppe, was ein starkes Argument ausmacht.",
+          "wennEsKippt": "Wird es persönlich, sofort klingeln, die Debatte anhalten, auf die Regel zeigen und mit einem neuen Satz weitermachen lassen. Kommt jemand über die Grenze aus dem Check-in, darf die Person eine Auszeit nehmen oder ins Publikum wechseln. Mit nur zwei Jugendlichen debattieren beide gegeneinander, die Leitung ist Publikum und Jury; bei wenig Energie reicht eine Runde mit einem Thema aus dem Check-in.",
+          "blatt": "skills-debatte"
+        },
+        {
+          "titel": "Skill: aus der Rolle aussteigen",
+          "dauer": 10,
+          "phase": "skill",
+          "text": "Nach der Debatte bewusst die Rolle abgeben: Alle stehen auf, schütteln Arme und Beine aus und sagen reihum „Ich bin nicht mehr Pro, ich bin wieder …“ mit dem eigenen Namen. Dann eine Minute Kastenatmung und die Anspannung neu schätzen. Zum Schluss nennt jede Person das stärkste Argument der Gegenseite – die schwierigste und fairste Übung des Tages.",
+          "sagen": [
+            "Ihr habt gut gestritten. Jetzt legt die Rolle ab, sie gehört nicht zu euch.",
+            "Was war das stärkste Argument der anderen Seite? Nur das Argument, ohne Aber."
+          ],
+          "tipp": "Das Argument der Gegenseite zu würdigen, fällt vielen schwer. Die Leitung macht den ersten Satz vor, etwa: Das Argument mit dem Schlaf hat mich ins Grübeln gebracht.",
+          "wennEsKippt": "Ist jemand noch geladen, nicht sofort zur Würdigungsrunde gehen: erst Fenster auf und eine Minute Bewegung, dann die Kastenatmung. Wer nicht würdigen mag, sagt „weiter“."
+        },
+        {
+          "titel": "Réckbléck und Skills-Pass",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Blitzlicht: Welche Debattenregel ist dir heute am schwersten gefallen, und bei welcher warst du richtig gut? Danach Eintrag in den Skills-Pass und Stempel. Das Blatt „Mein Argument“ kommt in die Mappe; es wird wieder gebraucht, falls die Gruppe später ein Debattier-Turnier macht. Ausblick geben.",
+          "sagen": [
+            "Welche Regel war heute am schwersten – und bei welcher wart ihr richtig gut?"
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Nächstes Mal geht es vom Reden zum Verändern: Wo dürft ihr wirklich mitbestimmen – und wie bringt ihr ein eigenes Anliegen so ein, dass es gehört wird?",
+      "hintergrund": "Debattieren trainiert, was faire Konflikte brauchen: eine Position begründen, der Gegenseite zuhören und zwischen Sache und Person trennen. Fisher und Ury (1981) fassen den Kern in der Formel zusammen, hart in der Sache und weich zur Person zu sein. Die Zusammenfassen-Regel – erst die Gegenseite so wiedergeben, dass sie zustimmt, dann widersprechen – geht auf Rogers und Roethlisberger (1952) zurück und entspricht dem aktiven Zuhören nach Gordon (1972): Wer die Aussage der anderen Seite wiedergeben muss, versteht sie genauer und reagiert weniger auf Reizwörter. Dass Jugendliche per Los auch eine Seite vertreten, die sie nicht teilen, ist Absicht: Perspektivwechsel und begründetes Argumentieren gehören zu den Kernmethoden der Menschenrechtsbildung (Council of Europe, 2012). Aus Jahr 1 wird aufgegriffen, dass Streit über Stufen eskaliert, wenn niemand bremst (Glasl, 1980); der Skill am Ende holt alle wieder herunter.",
+      "quellen": [
+        "Fisher, R. & Ury, W. (1981). Getting to Yes. Boston: Houghton Mifflin.",
+        "Rogers, C. R. & Roethlisberger, F. J. (1952). Barriers and gateways to communication. Harvard Business Review, 30(4), 46–52.",
+        "Gordon, T. (1972). Familienkonferenz. Hamburg: Hoffmann und Campe.",
+        "Council of Europe (2012). Compass: Manual for Human Rights Education with Young People (2nd ed.). Strasbourg: Council of Europe Publishing.",
+        "Glasl, F. (1980). Konfliktmanagement. Bern: Haupt."
+      ],
+      "achtung": "Debatten treffen Menschen, wenn Themen zu nah sind: keine Themen zu Herkunft, Religion, Geschlecht, sexueller Orientierung, Körper oder Familie, keine Debatte über einzelne Gruppenmitglieder oder aktuelle Konflikte in der Gruppe. Das Los entlastet, weil niemand seine persönliche Meinung verteidigen muss. Abwertende Aussagen über Gruppen von Menschen sind kein Debattenbeitrag; die Leitung stoppt sie sofort, benennt ruhig, warum, und spricht die Person danach allein an. Jugendliche, die Streit schnell überflutet, etwa weil sie laute Konflikte gut kennen, dürfen jederzeit ins Publikum oder in die Jury wechseln. Wird deutlich, dass jemand Streit mit Gewalt erlebt, im Einzelgespräch aufgreifen und die zuständige Leitung (Responsable) informieren."
+    },
+    {
+      "id": "j3-e26",
+      "nr": 26,
+      "jahr": 3,
+      "modul": "j3-m7",
+      "titel": "Mitbestimmen",
+      "kurz": "Wer entscheidet hier eigentlich? Mit der Beteiligungsleiter nach Hart prüft die Gruppe, wo sie wirklich mitbestimmt, plant ein eigenes Anliegen und trifft in einem Gruppenrat eine echte Entscheidung.",
+      "dauer": 100,
+      "ziele": [
+        "ordnen Beispiele den Stufen der Beteiligungsleiter zu und erkennen Schein-Beteiligung",
+        "kennen Wege der Mitbestimmung in Schule und Gemeinde: Klassenrat, Klassensprecherin oder Klassensprecher, Comité des élèves",
+        "planen ein eigenes Anliegen mit konkretem Vorschlag, Ansprechperson und erstem Schritt",
+        "treffen in einem Gruppenrat mit festen Rollen eine echte Entscheidung für die Gruppe"
+      ],
+      "material": [
+        "Gefühlsrad (A3, laminiert) und Anspannungsskala 0–100",
+        "Malerkrepp für eine Leiter am Boden mit sechs Sprossen, Schilder 1 bis 6",
+        "Acht Situationskarten für die Leiter (Liste in Schritt 3), ausgeschnitten",
+        "Schülerblätter „Die Beteiligungsleiter“ und „Mein Anliegen“ für jede Person",
+        "Toolbox-Blatt „Klassenrat: Protokoll“ mit den Rollenkarten Leitung, Protokoll und Zeit",
+        "Plakat „Wo werdet ihr gehört?“ aus Einheit 24",
+        "Klebepunkte, drei pro Person",
+        "Skills-Bücher und je Person eine neu kopierte Rubrikenseite, Skills-Pässe, Stempel, Imbiss und Getränke"
+      ],
+      "vorbereitung": [
+        "Eine echte Entscheidung für den Gruppenrat vorbereiten, über die die Gruppe tatsächlich bestimmen darf – etwa das Programm einer Joker-Einheit, den Imbiss der letzten Einheit oder eine Regel im Gruppenvertrag – und den Rahmen klären: Budget, Zeit, was nicht geht.",
+        "Herausfinden, welche Gremien es an den Schulen der Jugendlichen gibt (Klassenrat, Klassensprecherinnen und Klassensprecher, Comité des élèves am Lycée) und wer dort ansprechbar ist.",
+        "Die Leiter am Boden abkleben: sechs Sprossen, unten 1, oben 6."
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-beteiligungsleiter",
+        "skills-mein-anliegen",
+        "klassenrat-protokoll",
+        "skills-buch",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Wo hätte man dich fragen können?"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Vom Argument zur Entscheidung"
+        },
+        {
+          "min": "15–30",
+          "phase": "uebung",
+          "titel": "Die Beteiligungsleiter am Boden"
+        },
+        {
+          "min": "30–35",
+          "phase": "input",
+          "titel": "Wo kann ich mitbestimmen?"
+        },
+        {
+          "min": "35–45",
+          "phase": "uebung",
+          "titel": "Mein Anliegen"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–82",
+          "phase": "aktiv",
+          "titel": "Unser Gruppenrat entscheidet"
+        },
+        {
+          "min": "82–87",
+          "phase": "skill",
+          "titel": "Skill: fester Stand, ruhige Stimme"
+        },
+        {
+          "min": "87–95",
+          "phase": "abschluss",
+          "titel": "Eintrag ins Skills-Buch"
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Réckbléck und Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: Wo hätte man dich fragen können?",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Gefühlsrad und Anspannung wie gewohnt, die Leitung beginnt. Dazu eine Frage mit zwei Teilen: Was hast du diese Woche selbst entschieden – und wo hätte man dich fragen können, hat es aber nicht getan? Nur kleine Dinge aus Schule und Freizeit, etwa der Sitzplatz, der Ausflug, die Musik im Bus. Die zweiten Antworten ohne Namen an der Tafel sammeln.",
+          "sagen": [
+            "Gefühl, Zahl – und eine Sache, bei der man euch diese Woche hätte fragen können.",
+            "Nur Kleinigkeiten aus Schule oder Freizeit. Die großen Fragen kommen nachher."
+          ],
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Vom Argument zur Entscheidung",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "An die Debatte anknüpfen: Welches Argument ist hängen geblieben, und wer hat die Zusammenfassen-Regel seitdem benutzt? Dann das Plakat „Wo werdet ihr gehört?“ aus Einheit 24 aufhängen. Heute geht es um den letzten Schritt: Eine Meinung haben und fair streiten reicht nicht, irgendwo wird entschieden – und die Frage ist, ob ihr dabei seid.",
+          "sagen": [
+            "Ihr könnt eure Meinung begründen und fair streiten. Jetzt die Frage: Wo zählt sie, wenn entschieden wird?"
+          ]
+        },
+        {
+          "titel": "Die Beteiligungsleiter am Boden",
+          "dauer": 15,
+          "phase": "uebung",
+          "text": "Die Leiter am Boden zeigen und die sechs Sprossen kurz erklären (Tabelle); die unterste fasst die drei Formen der Schein-Beteiligung zusammen, die Hart beschreibt: Manipulation, Dekoration, Alibi. Jede Person zieht eine Situationskarte (Liste mit Lösung), liest sie vor und stellt sich auf die Sprosse, auf die die Situation gehört; die anderen dürfen widersprechen und eine andere Sprosse begründen. Danach Aufgabe 1 auf dem Blatt allein. Zum Schluss fragen: Muss es immer ganz oben sein?",
+          "sagen": [
+            "Stell dich auf die Sprosse, auf die die Situation gehört. Wer sieht es anders?",
+            "Sprosse 1 fühlt sich oft wie Beteiligung an. Woran merkt man, dass es nur Schein war?",
+            "Braucht jede Entscheidung Sprosse 6 – oder reicht manchmal Sprosse 3, wenn man ehrlich erfährt, was aus der eigenen Meinung wurde?"
+          ],
+          "tabelle": {
+            "spalten": [
+              "Sprosse",
+              "Name",
+              "So sieht es aus"
+            ],
+            "zeilen": [
+              [
+                "6",
+                "Selbst gestartet, gemeinsam entschieden",
+                "Die Idee kommt von euch, ihr holt Erwachsene dazu und entscheidet mit ihnen."
+              ],
+              [
+                "5",
+                "Selbst gestartet und geleitet",
+                "Die Idee kommt von euch, ihr setzt sie selbst um."
+              ],
+              [
+                "4",
+                "Gemeinsam entschieden",
+                "Die Idee kommt von Erwachsenen, entschieden wird zusammen."
+              ],
+              [
+                "3",
+                "Gefragt und informiert",
+                "Eure Meinung wird eingeholt, und ihr erfahrt, was daraus wurde."
+              ],
+              [
+                "2",
+                "Zugewiesen, aber informiert",
+                "Ihr bekommt eine Aufgabe und wisst, wozu sie dient."
+              ],
+              [
+                "1",
+                "Schein-Beteiligung",
+                "Ihr werdet benutzt, seid Dekoration oder dürft etwas sagen, das keine Folgen hat."
+              ]
+            ]
+          },
+          "punkte": [
+            "Ein Foto der Klasse erscheint mit dem Text, die Jugendlichen wünschten sich eine neue Regel. Gefragt wurde niemand. (1 – Manipulation)",
+            "Beim Schulfest tragen alle T-Shirts mit einem Spruch, den die Direktion ausgesucht hat. Worum es geht, weiß niemand. (1 – Dekoration)",
+            "Die Schule macht eine Umfrage zum Pausenhof. Die Ergebnisse sieht nie jemand, der Hof bleibt, wie er ist. (1 – Alibi)",
+            "Die Klasse hilft beim Aufräumen des Schulgartens; vorher erklärt die Lehrerin, wofür er gebraucht wird. (2)",
+            "Die Gemeinde fragt Jugendliche, was im Jugendhaus fehlt, und zeigt später, welche Ideen umgesetzt werden und warum. (3)",
+            "Die Lehrerin schlägt einen Ausflug vor; der Klassenrat entscheidet über Ziel und Programm mit. (4)",
+            "Drei Jugendliche organisieren in der Pause ein Fußballturnier; die Schule stellt nur den Platz. (5)",
+            "Jugendliche haben die Idee für einen Ruheraum und entscheiden gemeinsam mit der Direktion über Regeln und Einrichtung. (6)"
+          ],
+          "tipp": "Hart selbst betont, dass nicht jede Situation die oberste Sprosse braucht; Jugendliche sollen wählen können, wie stark sie sich beteiligen. Das entlastet alle, die nicht überall mitreden wollen.",
+          "wennEsKippt": "Kommen Beispiele, in denen Lehrkräfte oder Erwachsene aus der Einrichtung schlecht wegkommen, nicht verteidigen und nicht mitlästern: bei der Sprosse bleiben und fragen, was nötig wäre, damit es eine Sprosse höher geht. Mit dieser Frage lässt sich etwas verändern. Bei wenig Energie bleiben alle sitzen und legen die Karten nur auf die Sprossen.",
+          "blatt": "skills-beteiligungsleiter"
+        },
+        {
+          "titel": "Wo kann ich mitbestimmen?",
+          "dauer": 5,
+          "phase": "input",
+          "text": "Kurz zeigen, wo Jugendliche regelmäßig mitbestimmen können (Kasten auf dem Blatt): im Klassenrat, als Klassensprecherin oder Klassensprecher, im Comité des élèves am Lycée, in der Gemeinde etwa bei Projekten des Jugendhauses – und hier in der Gruppe. Die Leitung nennt die Ansprechpersonen an den Schulen der Jugendlichen, die sie vorher herausgesucht hat. Dazu die Grundregel für jedes Gremium: Ein Anliegen braucht ein klares Ziel, einen Vorschlag und die richtige Adresse.",
+          "sagen": [
+            "Wer entscheidet an eurer Schule über den Pausenhof, die Kantine, den Ausflug? Wenn ihr es nicht wisst, ist das die erste Frage, die ihr stellen könnt."
+          ],
+          "tipp": "Wer schon Klassensprecherin oder Klassensprecher war, darf erzählen, wie das lief – auch wenn es frustrierend war. Gerade Frust zeigt, auf welcher Sprosse man stand.",
+          "blatt": "skills-beteiligungsleiter"
+        },
+        {
+          "titel": "Mein Anliegen",
+          "dauer": 10,
+          "phase": "uebung",
+          "text": "Jede Person wählt ein Anliegen für Schule, Verein, Gemeinde oder diese Gruppe – etwas Kleines, das sich wirklich ändern ließe (Beispiele in der Liste). Mit dem Blatt „Mein Anliegen“ wird daraus ein Plan: Was genau, warum, wer entscheidet, wen brauche ich, mein Vorschlag, mein erster Schritt. Zu zweit prüfen die Jugendlichen mit der Checkliste, ob das Anliegen konkret genug ist, und bessern nach. Die Pläne bleiben bei den Jugendlichen.",
+          "sagen": [
+            "Dass die Schule besser werden soll, ist ein Wunsch. Ein Wasserspender im zweiten Stock – das ist ein Anliegen.",
+            "Wer entscheidet darüber wirklich? Wenn ihr es nicht wisst, ist Nachfragen euer erster Schritt."
+          ],
+          "punkte": [
+            "Ein Wasserspender im Schulgebäude",
+            "Eine ruhige Ecke für die Mittagspause",
+            "Längere Öffnungszeiten der Bibliothek vor den Prüfungen",
+            "Ein überdachter Fahrradständer am Lycée",
+            "In dieser Gruppe: ein Imbiss, den alle vorher mitbestimmen"
+          ],
+          "tipp": "Anliegen, die sich gegen einzelne Personen richten, zum Beispiel gegen eine Lehrkraft, in ein sachliches Ziel umformulieren lassen: Was soll anders werden? Beschwerden über Personen gehören in ein Gespräch mit einer Vertrauensperson.",
+          "wennEsKippt": "Fällt jemandem nichts ein, auf die Tafel aus dem Check-in und das Plakat aus Einheit 24 schauen: Dort stehen Dinge, bei denen man hätte gefragt werden können. Wer gar nicht will, plant ein Anliegen für diese Gruppe – das lässt sich sofort umsetzen.",
+          "blatt": "skills-mein-anliegen"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Imbiss, das Thema ruht. Danach liegen die Rollenkarten für den Gruppenrat und die Klebepunkte bereit."
+        },
+        {
+          "titel": "Unser Gruppenrat entscheidet",
+          "dauer": 22,
+          "phase": "aktiv",
+          "text": "Die Leitung stellt die echte Entscheidung vor, die sie vorbereitet hat, und nennt ehrlich den Rahmen: Budget, Zeit, was nicht geht. Die Rollen nach dem Toolbox-Blatt „Klassenrat: Protokoll“ verteilen – Sitzungsleitung, Protokoll, Zeit –, dann läuft die Sitzung in fünf Schritten (Liste). Die Leitung sitzt als Beraterin oder Berater dabei und spricht nur, wenn sie gefragt wird. Am Ende liest das Protokoll den Beschluss vor, alle unterschreiben. Kurze Auswertung an der Leiter: Auf welcher Sprosse wart ihr gerade?",
+          "sagen": [
+            "Das ist keine Übung: Was ihr beschließt, wird gemacht – in dem Rahmen, den ich gerade genannt habe.",
+            "Auf welcher Sprosse der Leiter wart ihr gerade, und was hätte gefehlt, um eine höher zu kommen?"
+          ],
+          "punkte": [
+            "1 Eröffnung: Die Sitzungsleitung begrüßt und nennt Thema, Rahmen und Zeit.",
+            "2 Ideen sammeln: Jede Person nennt eine Idee oder sagt „weiter“.",
+            "3 Vorsortieren: drei Klebepunkte pro Person, die zwei Ideen mit den meisten Punkten kommen in die Diskussion.",
+            "4 Diskutieren: nach den Debattenregeln, erst zusammenfassen, dann widersprechen.",
+            "5 Beschließen: abstimmen oder einigen; das Protokoll hält fest, wer was bis wann macht."
+          ],
+          "tipp": "Die Leitung hält Wort: Was im vereinbarten Rahmen beschlossen wird, wird umgesetzt, auch wenn sie selbst anders entschieden hätte. Ein nicht eingelöster Beschluss würde die ganze Einheit zur Schein-Beteiligung machen.",
+          "wennEsKippt": "Reden immer dieselben, führt die Sitzungsleitung eine Rednerliste, und wer zweimal gesprochen hat, wartet. Wird die Abstimmung zum Machtkampf zweier Lager, zurück zu den Interessen: Was ist beiden Seiten wichtig, und gibt es einen Vorschlag, der beides verbindet? Mit nur zwei Jugendlichen übernimmt jede Person mehrere Rollen, und es wird im Konsens entschieden.",
+          "blatt": "klassenrat-protokoll"
+        },
+        {
+          "titel": "Skill: fester Stand, ruhige Stimme",
+          "dauer": 5,
+          "phase": "skill",
+          "text": "Zum Runterkommen und als Vorbereitung für den Ernstfall: Alle stehen, Füße hüftbreit, Knie locker, Blick nach vorn. Die Leitung leitet drei ruhige Atemzüge an, länger aus als ein. Dann sagt jede Person, die mag, den ersten Satz ihres Anliegens einmal in den Raum – so, wie sie ihn im Klassenrat sagen würde. Die anderen hören nur zu, niemand kommentiert.",
+          "sagen": [
+            "Füße fest, Atem ruhig, dann ein Satz. Mehr braucht ein Anliegen am Anfang nicht."
+          ],
+          "tipp": "Wer Jahr 1 kennt, erinnert sich an das Stopp: Worte, Stimme und Körper sagen dasselbe. Wer das bei einem Stopp kann, kann es auch bei einem Anliegen.",
+          "blatt": "skills-mein-anliegen"
+        },
+        {
+          "titel": "Eintrag ins Skills-Buch",
+          "dauer": 8,
+          "phase": "abschluss",
+          "text": "Das Modul „Meinung und Mitbestimmung“ endet. Jede Person füllt im Skills-Buch eine neue Rubrikenseite aus, soweit sie mag: Lieblingsskills, etwa „Tatsache oder Meinung?“ oder die Zusammenfassen-Regel; Sätze, die tragen, etwa „Hart in der Sache, fair zur Person“; Pläne – das eigene Anliegen mit dem ersten Schritt; Menschen, die helfen – wer an der Schule Anliegen weiterträgt. Wer will, heftet die Blätter des Moduls dazu und trägt sie ins Inhaltsverzeichnis ein. Die Leitung hilft beim Formulieren, liest aber nur, was gezeigt wird.",
+          "sagen": [
+            "Was nehmt ihr aus diesem Modul mit für den Moment, in dem ihr anderer Meinung seid als alle anderen?"
+          ],
+          "blatt": "skills-buch"
+        },
+        {
+          "titel": "Réckbléck und Skills-Pass",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Blitzlicht: Bei welcher Sache, die dir wichtig ist, willst du in einem Jahr eine Sprosse höher stehen? Eintrag in den Skills-Pass, Stempel. Zum Schluss den Beschluss des Gruppenrats noch einmal vorlesen und sagen, wann er umgesetzt wird. Dann den Ausblick auf das nächste Modul geben.",
+          "sagen": [
+            "Eine Sache und eine Sprosse: Wo wollt ihr in einem Jahr mitreden?"
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Nächstes Mal beginnt das Modul über Liebe, Beziehungen und Respekt – mit einer Frage, die alle betrifft: Woran merkt man, ob eine Beziehung einem guttut, ob Freundschaft oder mehr?",
+      "hintergrund": "Beteiligung ist mehr als gefragt zu werden. Hart (1992) beschreibt sie als Leiter mit acht Sprossen; die unteren drei – Manipulation, Dekoration und Alibi – sehen aus wie Beteiligung, verändern aber nichts, und sind hier zu einer Sprosse zusammengefasst. Echte Beteiligung beginnt, wo Jugendliche wissen, worum es geht, und ihre Meinung Folgen hat. Das Recht darauf steht in Artikel 12 der UN-Kinderrechtskonvention (Vereinte Nationen, 1989). Mitbestimmung wirkt vor allem, wenn sie echt ist: Autonomie und das Erleben, etwas zu bewirken, stärken Motivation und Verbundenheit (Deci & Ryan, 2000), und gelungene eigene Erfahrungen fördern die Selbstwirksamkeit (Bandura, 1977). Deshalb entscheidet der Gruppenrat über etwas Reales. Der erste Schritt mit Datum wirkt wie ein Wenn-dann-Plan (Gollwitzer, 1999).",
+      "quellen": [
+        "Hart, R. A. (1992). Children’s Participation: From Tokenism to Citizenship. Florenz: UNICEF International Child Development Centre.",
+        "Vereinte Nationen (1989). Übereinkommen über die Rechte des Kindes. New York: Vereinte Nationen.",
+        "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268.",
+        "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
+        "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+      ],
+      "achtung": "Mitbestimmung weckt Frust, wenn Jugendliche erleben, dass sie selten gefragt werden – in der Schule, in einer Einrichtung oder zu Hause. Diese Erfahrungen ernst nehmen, ohne Erwachsene vor der Gruppe schlechtzumachen, und keine Beschwerden über namentlich genannte Personen im Plenum verhandeln. Der Gruppenrat entscheidet nur über das, was vorher als verhandelbar genannt wurde; was die Leitung nicht zusagen kann, sagt sie nicht zu. Erzählt jemand, dass über wichtige Dinge in seinem Leben – Wohnort, Kontakte, Schule – ohne ihn entschieden wird, im Einzelgespräch zuhören und bei Bedarf die zuständige Leitung (Responsable) einbeziehen; Hinweise auf Gefährdung nach dem internen Schutzkonzept weitergeben."
+    }
+  ]
+}

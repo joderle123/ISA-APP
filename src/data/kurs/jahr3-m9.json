@@ -1,0 +1,504 @@
+{
+  "einheiten": [
+    {
+      "id": "j3-e31",
+      "nr": 31,
+      "jahr": 3,
+      "modul": "j3-m9",
+      "titel": "Algorithmen und Filterblasen",
+      "kurz": "Wer entscheidet, was im Feed landet? Die Gruppe lernt die Signale kennen, nach denen Feeds sortieren, baut in einem Spiel ohne Handy zwei Feeds aus denselben Beiträgen und probiert aus, wie man gegensteuert.",
+      "dauer": 100,
+      "ziele": [
+        "erklären, welche Signale ein Feed misst und warum er nach Aufmerksamkeit sortiert, nicht nach Wahrheit oder Wohlbefinden",
+        "erleben in einer Simulation, wie aus denselben Beiträgen zwei verschiedene Feeds entstehen und was dabei verloren geht",
+        "vergleichen die Themen ihres eigenen Feeds mit dem, was ihnen wichtig ist, und beschreiben, was eine Filterblase ist",
+        "wählen zwei Gegenstrategien und planen damit ein Feed-Experiment für eine Woche"
+      ],
+      "material": [
+        "Gefühlsrad (A3, laminiert), Wäscheklammern, Anspannungsskala 0–100",
+        "Die im Team vorbereiteten Antworten auf die Fragen aus der Fragenbox von Einheit 30",
+        "Zehn Signalkarten je Paar (Text in Schritt 4), auf Karten geschrieben",
+        "Schülerblatt „Mein Feed unter der Lupe“ für jede Person",
+        "Schülerblatt „Zwei Feeds, eine Welt“: Seite 1 für jede Person, Seite 2 zweimal auf festem Papier, ausgeschnitten und je Satz nach Themen in sechs Stapel sortiert",
+        "Etwa 60 Spielchips, Muggelsteine oder Büroklammern in zwei Schälchen",
+        "Kreppband für zwei Bildschirme am Boden, zwei Tische als Lager",
+        "Handys der Jugendlichen für die Feed-Inventur (freiwillig)",
+        "Skills-Pässe, Stempel, Imbiss und Getränke"
+      ],
+      "vorbereitung": [
+        "Die Fragen aus der Fragenbox von Einheit 30 im Team sichten und die Antworten abstimmen. Fragen, die nach einer Notlage klingen, werden nicht in der Gruppe beantwortet, sondern sofort nach dem Vorgehen im Kasten „Achtung“ aufgegriffen. Bei Rechtsfragen prüft die Leitung den aktuellen Stand.",
+        "Seite 2 von „Zwei Feeds, eine Welt“ zweimal auf festem Papier drucken, ausschneiden und je Satz in sechs Themenstapel sortieren.",
+        "Zwei Handybildschirme (etwa 60 mal 150 cm) mit Kreppband auf den Boden kleben; die beiden Lager-Tische mit je sechs Stapeln an die gegenüberliegende Wand stellen.",
+        "Die Hausregel zu Handys kennen: Die Feed-Inventur ist freiwillig; wer kein Handy nutzen darf oder will, arbeitet aus dem Gedächtnis.",
+        "In ein, zwei Apps selbst nachsehen, wo die Ansicht „Folge ich“ und die Funktion „Nicht interessiert“ zu finden sind; das ändert sich oft."
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-mein-feed",
+        "skills-zwei-feeds",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Gefühlsrad, Anspannung, ein Wort zum Feed"
+        },
+        {
+          "min": "10–17",
+          "phase": "bruecke",
+          "titel": "Antworten aus der Fragenbox"
+        },
+        {
+          "min": "17–20",
+          "phase": "bruecke",
+          "titel": "Neues Modul: Wer sortiert, was ich sehe?"
+        },
+        {
+          "min": "20–34",
+          "phase": "input",
+          "titel": "Was ein Feed misst – und was nicht"
+        },
+        {
+          "min": "34–45",
+          "phase": "uebung",
+          "titel": "Feed-Inventur: Was zeigt mir mein Feed?"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–85",
+          "phase": "aktiv",
+          "titel": "Zwei Feeds, eine Welt: das Feed-Spiel"
+        },
+        {
+          "min": "85–90",
+          "phase": "uebung",
+          "titel": "Mein Feed-Experiment"
+        },
+        {
+          "min": "90–95",
+          "phase": "skill",
+          "titel": "Skill: Aufmerksamkeit zurückholen"
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Réckbléck, Check-out und Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: Gefühlsrad, Anspannung, ein Wort zum Feed",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Gefühlsrad und Anspannung wie gewohnt, die Leitung beginnt und notiert die Zahlen ohne Namen, weil sie beim Check-out wiederkommen. Dazu eine kurze, freiwillige Runde: ein Wort, welches Thema der eigene Feed in den letzten Tagen am meisten gezeigt hat – Fußball, Schminke, Autos, Nachrichten, Katzen. Die Wörter an der Tafel sammeln, ohne sie zu bewerten; sie werden bei der Feed-Inventur wieder gebraucht.",
+          "sagen": [
+            "Gefühl, Zahl – und ein Wort: Was zeigt euch euer Feed gerade am meisten?",
+            "Bei mir sind es seit Tagen Kochvideos. Ich habe eines bis zum Ende geschaut, und seitdem kommen fast nur noch Kochvideos."
+          ],
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Antworten aus der Fragenbox",
+          "dauer": 7,
+          "phase": "bruecke",
+          "text": "Die im Team vorbereiteten Antworten auf die Fragen aus der Box von Einheit 30 vorlesen. Ähnliche Fragen zusammenfassen und nie andeuten, von wem eine Frage stammen könnte. Sachlich und ohne Moralpredigt antworten, nur das, was im Team geklärt ist; Rechtsfragen nur allgemein, etwa: Das Weiterleiten intimer Bilder ist strafbar. Fragen, die nach einer Notlage klingen, kommen hier nicht vor – sie wurden bereits einzeln nach dem Vorgehen im Kasten „Achtung“ aufgegriffen. Zum Schluss sagen, dass die Leitung nach der Einheit für Gespräche da ist, und auf die BEE SECURE Helpline zeigen.",
+          "sagen": [
+            "Danke für eure Fragen. Ich beantworte sie so, dass niemand erkennen kann, von wem sie sind.",
+            "Ein paar Fragen beantworte ich lieber einzeln. Wer mag, kommt nachher kurz zu mir."
+          ],
+          "tipp": "Die Antworten vorher im Team aufschreiben und bei Bedarf eine Fachstelle wie das Planning Familial oder BEE SECURE zu Rate ziehen. Wer die Fragen ernst nimmt, zeigt der Gruppe, dass auch unangenehme Fragen erlaubt sind.",
+          "wennEsKippt": "Rätselt die Gruppe, von wem eine Frage stammt, freundlich und klar stoppen: Hier wird nicht geraten. Kichern bei Fragen zu Sexualität ist normal – sachlich weitermachen, nicht ermahnen. Wirkt jemand danach aufgewühlt, im Blick behalten und in der Pause ein Gespräch anbieten."
+        },
+        {
+          "titel": "Neues Modul: Wer sortiert, was ich sehe?",
+          "dauer": 3,
+          "phase": "bruecke",
+          "text": "Das neue Modul „Medien und KI“ vorstellen: zwei Treffen, heute Feeds, nächstes Mal künstliche Intelligenz. An das letzte Modul anknüpfen, in dem es oft darum ging, was im Netz passiert und wie man sich schützt. Heute kommt eine Frage dazu, die jeden Tag betrifft: Wer entscheidet eigentlich, was ich sehe?",
+          "sagen": [
+            "Algorithmus und Filterblase – die Wörter kennen viele. Heute schauen wir unter die Motorhaube.",
+            "Wer hat schon mal gedacht, das Handy hört mit, weil plötzlich genau die passende Werbung kam?"
+          ],
+          "tipp": "Die Abhör-Frage löst fast immer eine lebhafte Runde aus. Nicht auflösen, sondern notieren: Die Antwort ergibt sich im Lauf der Einheit, denn oft reichen die Signale, die man selbst sendet."
+        },
+        {
+          "titel": "Was ein Feed misst – und was nicht",
+          "dauer": 14,
+          "phase": "input",
+          "text": "Zu zweit ordnen die Jugendlichen zehn Signalkarten (Punkte) danach, wie stark sie ihrer Meinung nach den Feed beeinflussen; nach vier Minuten vergleichen die Paare ihre Reihenfolgen. Dann auflösen: Plattformen verraten ihr Rezept nicht genau, sagen aber selbst, dass Verhalten stärker zählt als Angaben – was man bis zum Ende schaut, wiederholt, teilt oder kommentiert, wiegt schwer. An die Tafel kommt das Modell „Was der Feed misst – was er nicht misst“ (Tabelle). Zum Schluss erklären, was der Begriff Filterblase meint, den der Autor Eli Pariser 2011 bekannt gemacht hat, und dass Forschende streiten, wie dicht solche Blasen wirklich sind.",
+          "punkte": [
+            "Wie lange ich bei einem Video bleibe",
+            "Ob ich es bis zum Ende oder zweimal schaue",
+            "Like",
+            "Kommentar",
+            "Teilen oder an Freunde schicken",
+            "Speichern",
+            "Wem ich folge",
+            "„Nicht interessiert“ tippen",
+            "Uhrzeit, Sprache und Land",
+            "Was Leute mögen, die ähnlich klicken wie ich"
+          ],
+          "tabelle": {
+            "spalten": [
+              "Das misst der Feed",
+              "Das misst er nicht"
+            ],
+            "zeilen": [
+              [
+                "wie lange ich hinschaue",
+                "ob es mir guttut"
+              ],
+              [
+                "ob ich reagiere: Like, Kommentar, Teilen",
+                "ob es stimmt"
+              ],
+              [
+                "was Leute mögen, die ähnlich klicken",
+                "ob ich es wichtig finde"
+              ],
+              [
+                "wann und wo ich online bin",
+                "was ich eigentlich vorhatte"
+              ]
+            ]
+          },
+          "sagen": [
+            "Stellt euch vor, ihr entwickelt die App: Was würdet ihr messen, wenn Leute möglichst lange bleiben sollen?",
+            "Ein Feed ist keine Zeitung, die entscheidet, was wichtig ist. Er rechnet aus, wobei ihr hängen bleibt."
+          ],
+          "tipp": "Die Frage, wer daran verdient, gehört dazu: Mehr Zeit in der App heißt mehr Werbung. Das erklärt, warum Aufmerksamkeit das Ziel ist, ohne dass jemand böse Absichten haben muss.",
+          "wennEsKippt": "Driftet die Runde ins Unheimliche ab – „Die steuern alles“ –, zurück zu dem, was man beobachten kann: Welche Signale habt ihr heute schon selbst gesendet? Das macht das Thema greifbar und nimmt ihm die Angst."
+        },
+        {
+          "titel": "Feed-Inventur: Was zeigt mir mein Feed?",
+          "dauer": 11,
+          "phase": "uebung",
+          "text": "Jede Person bearbeitet Aufgabe 1 auf dem Blatt „Mein Feed unter der Lupe“: Wer mag, öffnet den Für-dich-Feed einer App und macht bei den ersten fünfzehn Beiträgen für jedes Thema einen Strich – ohne zu liken, ohne zu kommentieren, ohne anderen etwas zu zeigen. Wer kein Handy nutzen will oder darf, trägt aus dem Gedächtnis ein, was gestern kam. Dann bewertet jede Person, wie wichtig ihr jedes Thema wirklich ist, und vergleicht beide Spalten. Danach Aufgabe 2: Welche Signale sende ich selbst?",
+          "sagen": [
+            "Handy nur für diese Aufgabe. Nichts liken, nichts kommentieren – ihr seid heute Beobachtende.",
+            "Schaut auf die zwei Spalten: Passt das, was euer Feed zeigt, zu dem, was euch wichtig ist?"
+          ],
+          "tipp": "Die Leitung macht die Inventur mit dem eigenen Feed vor und sagt ehrlich, was sie überrascht. Die Zahlen der Jugendlichen bleiben privat.",
+          "wennEsKippt": "Scrollt jemand weiter, statt zu zählen, freundlich an die fünfzehn erinnern und das Handy danach wegpacken lassen. Wird es unruhig, alle Handys weg und die Inventur aus dem Gedächtnis machen.",
+          "blatt": "skills-mein-feed"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Pause mit Imbiss, Handys in der Tasche. Die Leitung prüft in der Zeit die Bildschirme am Boden und die Stapel in den Lagern."
+        },
+        {
+          "titel": "Zwei Feeds, eine Welt: das Feed-Spiel",
+          "dauer": 25,
+          "phase": "aktiv",
+          "text": "Zwei Freiwillige spielen die Nutzer Tiago und Mila und lesen ihre Karte vom Blatt; die anderen bilden zwei Algorithmus-Teams. Jedes Team holt fünf zufällige Karten aus seinem Lager und legt sie als Feed auf den Bildschirm am Boden; Tiago oder Mila scrollt, indem er oder sie langsam daran entlanggeht und zu jeder Karte laut reagiert. Das Team legt dafür Chips neben den Stapel des Themas und stellt nach der Regel auf dem Blatt den nächsten Feed zusammen – mit Laufen zum Lager. Nach vier Runden liegen beide Feeds nebeneinander, und alle vergleichen mit den Fragen aus dem Tipp-Kasten. In Runde 5 ziehen Tiago und Mila je eine Gegenstrategie-Karte, ihr Team wendet sie vor dem Sortieren an, und alle beobachten, was sich ändert.",
+          "sagen": [
+            "Ihr seid kein böser Algorithmus. Ihr folgt nur einer Regel: Zeig mehr von dem, wobei jemand hängen bleibt.",
+            "Gleiche Welt, gleiche Karten – und trotzdem sehen die beiden etwas völlig anderes.",
+            "Welche Karte hat keiner der beiden mehr gesehen – und wäre sie wichtig gewesen?"
+          ],
+          "tipp": "Die Nachricht mit den neuen Busfahrzeiten ist der Schlüssel: Sie verschwindet fast immer aus beiden Feeds, obwohl sie beide betrifft. Diesen Moment ausdrücklich festhalten.",
+          "wennEsKippt": "Wird das Laufen zum Wettrennen, gilt: Zum Lager wird gegangen. Mit nur zwei Jugendlichen gibt es einen Feed – eine Person spielt Tiago, die andere den Algorithmus –, und die Leitung baut Milas Feed parallel am Tisch. Bei wenig Energie läuft das Spiel im Sitzen, der Bildschirm ist ein A3-Blatt auf dem Tisch.",
+          "blatt": "skills-zwei-feeds"
+        },
+        {
+          "titel": "Mein Feed-Experiment",
+          "dauer": 5,
+          "phase": "uebung",
+          "text": "Zurück zum Blatt „Mein Feed unter der Lupe“: Jede Person kreuzt zwei Gegenstrategien an, die sie eine Woche lang ausprobiert, und schreibt einen Wenn-dann-Satz dazu (Aufgabe 3). Wer mag, nennt seine Wahl in einem Satz. In der nächsten Einheit wird kurz nachgefragt, ob der Feed etwas gemerkt hat.",
+          "sagen": [
+            "Zwei Strategien, eine Woche. Nächstes Mal erzählt ihr, ob euer Feed es bemerkt hat.",
+            "Welche Sicht fehlt in eurem Feed – und wo könntet ihr sie finden?"
+          ],
+          "tipp": "Wenn Handys erlaubt sind, gemeinsam kurz suchen, wo „Nicht interessiert“ und die Ansicht „Folge ich“ stecken. In der EU müssen sehr große Plattformen inzwischen eine Sortierung anbieten, die nicht auf dem persönlichen Profil beruht; wo sie steckt, prüft die Leitung vorher.",
+          "blatt": "skills-mein-feed"
+        },
+        {
+          "titel": "Skill: Aufmerksamkeit zurückholen",
+          "dauer": 5,
+          "phase": "skill",
+          "text": "Handys weg, bequem sitzen. Die Leitung leitet eine Minute Atembeobachtung an: nur den Atem an der Nase oder am Bauch spüren und jedes Mal, wenn die Gedanken abschweifen, das freundlich bemerken und zurückkommen. Danach fragen, wie oft die Aufmerksamkeit weg war. Den Bogen schlagen: Der Feed ist darauf gebaut, Aufmerksamkeit festzuhalten – mit dieser Übung trainiert man, sie selbst zurückzuholen.",
+          "sagen": [
+            "Abschweifen ist kein Fehler. Jedes Zurückkommen ist eine Wiederholung – wie beim Krafttraining.",
+            "Wer war nach fünf Sekunden in Gedanken schon beim Handy?"
+          ],
+          "tipp": "Bei Unruhe mit offenen Augen üben und die Atemzüge an den Fingern mitzählen lassen: bis zehn, dann von vorn."
+        },
+        {
+          "titel": "Réckbléck, Check-out und Skills-Pass",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Blitzlicht: eine Sache, die ihr heute über euren Feed gelernt habt. Dann nennt jede Person ihre Anspannung jetzt, von 0 bis 100; wer höher liegt als am Anfang, bekommt ein kurzes Gespräch angeboten. Eintrag in den Skills-Pass mit Stempel, zum Beispiel die gewählte Gegenstrategie, und ein Hinweis auf den Hilfe-Kasten auf dem Blatt.",
+          "sagen": [
+            "Was wisst ihr jetzt über euren Feed, was ihr heute Morgen noch nicht wusstet?",
+            "Und eure Zahl jetzt? Ich bin nach der Stunde noch zehn Minuten hier."
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Nächstes Mal geht es um künstliche Intelligenz: wie Chatbots ihre Antworten bauen, wann sie sich Dinge ausdenken und wie man KI ehrlich und klug nutzt.",
+      "hintergrund": "Empfehlungssysteme sortieren Inhalte danach, wie wahrscheinlich eine Person reagiert: Verweildauer, Wiederholen, Teilen, Kommentieren und das Verhalten ähnlicher Nutzender zählen mehr als bewusste Angaben. Ziel ist Aufmerksamkeit, weil sie über Werbung Geld bringt. Pariser (2011) prägte für die Folge den Begriff Filterblase. Wie dicht solche Blasen im Alltag sind, ist umstritten (Zuiderveen Borgesius et al., 2016); bei Nachrichten auf Facebook schränkte die eigene Auswahl die Vielfalt stärker ein als der Algorithmus (Bakshy et al., 2015) – eine gute Nachricht, denn eigene Signale lassen sich ändern. Sehr große Plattformen müssen in der EU zudem eine Sortierung anbieten, die nicht auf dem persönlichen Profil beruht (Gesetz über digitale Dienste, 2022). Livingstone und Blum-Ross (2020) raten, Jugendliche als Beobachtende ihres Medienhandelns zu stärken. Wer Beeinflussungstechniken selbst durchspielt, wird widerstandsfähiger gegen sie (Roozenbeek & van der Linden, 2019).",
+      "quellen": [
+        "Pariser, E. (2011). The Filter Bubble: What the Internet Is Hiding from You. New York: Penguin Press.",
+        "Zuiderveen Borgesius, F. J., Trilling, D., Möller, J., Bodó, B., de Vreese, C. H. & Helberger, N. (2016). Should we worry about filter bubbles? Internet Policy Review, 5(1).",
+        "Bakshy, E., Messing, S. & Adamic, L. A. (2015). Exposure to ideologically diverse news and opinion on Facebook. Science, 348(6239), 1130–1132.",
+        "Verordnung (EU) 2022/2065 des Europäischen Parlaments und des Rates vom 19. Oktober 2022 über einen Binnenmarkt für digitale Dienste (Gesetz über digitale Dienste). Amtsblatt der EU, L 277, 1–102.",
+        "Livingstone, S. & Blum-Ross, A. (2020). Parenting for a Digital Future. New York: Oxford University Press.",
+        "Roozenbeek, J. & van der Linden, S. (2019). Fake news game confers psychological resistance against online misinformation. Palgrave Communications, 5, 65.",
+        "BEE SECURE – Initiative der luxemburgischen Regierung für ein sichereres Internet: www.bee-secure.lu"
+      ],
+      "achtung": "Die Antworten aus der Fragenbox berühren Sexualität und intime Bilder: sachlich antworten, niemanden erraten lassen, keine eigenen Erfahrungen abfragen; Fragen, die nach einer Notlage klingen, nicht in der Gruppe beantworten, sondern wie unten beschrieben vorgehen. Handys und Feeds sind privat: Niemand muss sein Handy zeigen, Zahlen nennen oder Inhalte vorlesen; keine Screenshots, keine Fotos von Personen. Die Feed-Inventur ist freiwillig; wer dabei Verstörendes sieht, legt das Handy weg. Bei Hinweisen auf Cybermobbing, Erpressung mit Bildern, Bedrängen durch Fremde, Selbstverletzung oder Suizidgedanken: die Person nach der Einheit ruhig ansprechen, nichts versprechen, was nicht zu halten ist, nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) am selben Tag informieren; bei akuter Gefahr Notruf 112 und die Person nicht allein lassen. Beratung: BEE SECURE Helpline 8002 1234."
+    },
+    {
+      "id": "j3-e32",
+      "nr": 32,
+      "jahr": 3,
+      "modul": "j3-m9",
+      "titel": "KI klug nutzen",
+      "kurz": "Chatbots klingen sicher, auch wenn sie sich etwas ausdenken. Die Gruppe prüft KI-Antworten, zieht Grenzen bei Hausaufgaben, Daten und Deepfakes und hält eigene KI-Regeln im Skills-Buch fest.",
+      "dauer": 100,
+      "ziele": [
+        "erklären, warum ein Chatbot flüssig und überzeugend klingt, auch wenn eine Antwort erfunden ist, und prüfen KI-Antworten mit drei Fragen",
+        "unterscheiden bei Hausaufgaben zwischen ehrlicher Lernhilfe, Nutzung nach Absprache und Schummeln",
+        "entscheiden, welche Daten und Bilder nie in eine KI-App gehören, und wissen, was bei einem Deepfake hilft",
+        "formulieren eigene KI-Regeln und halten sie im Skills-Buch fest"
+      ],
+      "material": [
+        "Gefühlsrad (A3, laminiert), Wäscheklammern, Anspannungsskala 0–100",
+        "Schülerblatt „KI klug nutzen“ für jede Person",
+        "Schülerblatt „KI-Werkstatt“ einmal auf festem Papier, Karten ausgeschnitten",
+        "Für Station 1 drei farbige Blätter (grün, gelb, rot), für Station 2 drei Schilder: geht – nur ohne Namen und Fotos – nie; Klebezettel",
+        "Mit Internet und Erlaubnis der Einrichtung: ein Laptop mit einem Chatbot für Station 3 – nur die Leitung tippt",
+        "Klangschale oder ein anderes Signal für den Stationswechsel",
+        "Skills-Buch (Seite 2 neu kopiert), Skills-Pässe, Stempel, Imbiss und Getränke"
+      ],
+      "vorbereitung": [
+        "Die Karten der „KI-Werkstatt“ ausschneiden, Station 1 und 2 aufbauen und die Deepfake-Karten für den gemeinsamen Fall bereitlegen.",
+        "Die Regeln des Lycée und der Einrichtung zu KI bei Hausaufgaben und Prüfungen erfragen.",
+        "Wird ein Chatbot gezeigt: vorher prüfen, ob die Einrichtung ihn zulässt und welche Altersgrenze der Anbieter nennt, und eine Beispielanfrage ohne persönliche Daten vorbereiten.",
+        "Die Antworten A bis C auf dem Blatt „KI klug nutzen“ selbst prüfen; die Lösungen stehen auf der Lehrerseite.",
+        "Die Seite 2 des Skills-Buchs für jede Person kopieren."
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-ki-klug",
+        "skills-ki-werkstatt",
+        "skills-buch",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Gefühlsrad, Anspannung, Daumenrunde"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Feed-Experiment und der Schritt zur KI"
+        },
+        {
+          "min": "15–27",
+          "phase": "input",
+          "titel": "Wie ein Chatbot antwortet: das Satzende-Spiel"
+        },
+        {
+          "min": "27–37",
+          "phase": "uebung",
+          "titel": "Der KI-Check"
+        },
+        {
+          "min": "37–45",
+          "phase": "uebung",
+          "titel": "Deepfake – was jetzt?"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–82",
+          "phase": "aktiv",
+          "titel": "KI-Werkstatt: drei Stationen"
+        },
+        {
+          "min": "82–90",
+          "phase": "uebung",
+          "titel": "Meine KI-Regeln im Skills-Buch"
+        },
+        {
+          "min": "90–95",
+          "phase": "skill",
+          "titel": "Skill: achtsames Hören"
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Réckbléck und Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: Gefühlsrad, Anspannung, Daumenrunde",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Gefühlsrad und Anspannung wie gewohnt, die Leitung beginnt. Dazu eine Daumenrunde ohne Worte: Wer hat in der letzten Woche eine KI benutzt – Chatbot, Übersetzer, Bildgenerator, Filter? Wofür, muss niemand sagen. Die Leitung zeigt ihren eigenen Daumen und kommentiert nicht.",
+          "sagen": [
+            "Gefühl und Zahl wie immer. Dann nur mit dem Daumen: Wer hat diese Woche eine KI benutzt? Wofür, bleibt euer Geheimnis.",
+            "Auch Übersetzer und Filter zählen – KI steckt in mehr Apps, als man denkt."
+          ],
+          "tipp": "Die Runde bewusst ohne „wofür“ lassen. Wer fürchtet, beim Schummeln ertappt zu werden, schweigt sonst die ganze Einheit.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Feed-Experiment und der Schritt zur KI",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "Kurz nachfragen, was aus dem Feed-Experiment geworden ist; zwei, drei Antworten reichen. Dann überleiten: Im Feed entscheidet ein Algorithmus, was wir sehen – bei Chatbots schreibt ein Programm sogar die Antworten selbst. Viele kennen Deepfakes und Fake News schon als Gefahr; heute geht es darum, KI selbst klug und ehrlich zu nutzen. Mit dieser Einheit endet das Modul, deshalb gibt es zum Schluss eine Seite im Skills-Buch.",
+          "sagen": [
+            "Hat euer Feed euer Experiment bemerkt? Ein Satz reicht.",
+            "Heute die Frage: Wann macht KI euch schlauer – und wann nur schneller?"
+          ]
+        },
+        {
+          "titel": "Wie ein Chatbot antwortet: das Satzende-Spiel",
+          "dauer": 12,
+          "phase": "input",
+          "text": "Die Gruppe spielt selbst ein Sprachmodell. Die Leitung sagt Satzanfänge (Punkte), alle rufen gleichzeitig das wahrscheinlichste nächste Wort, und die häufigste Antwort kommt an die Tafel. Zum Schluss eine Frage, auf die niemand die Antwort wissen kann: Das Sprachmodell muss trotzdem flüssig antworten, also erfindet die Gruppe Wort für Wort eine überzeugende Antwort. Danach erklären: Genau so entstehen erfundene Antworten, denn ein Chatbot rechnet aus, welches Wort wahrscheinlich folgt, und prüft dabei nicht, ob es stimmt. Dann an der Tafel sammeln, wofür KI trotzdem hilfreich ist und wo sie oft danebenliegt (Tabelle).",
+          "punkte": [
+            "Nach der Schule fahre ich mit dem …",
+            "Luxemburg liegt zwischen Frankreich, Deutschland und …",
+            "Die Hausaufgabe ist bis …",
+            "Frage ohne Antwort: Wer hat 1987 bei den Schulmeisterschaften im Ösling den Weitsprung gewonnen, und wie weit war der Sprung?"
+          ],
+          "tabelle": {
+            "spalten": [
+              "Dafür ist KI hilfreich",
+              "Da liegt KI oft daneben"
+            ],
+            "zeilen": [
+              [
+                "etwas anders erklären, bis ich es verstehe",
+                "Fakten, Zahlen, Namen, Daten"
+              ],
+              [
+                "mich abfragen, bevor ich lerne",
+                "Quellen und Zitate – manche gibt es gar nicht"
+              ],
+              [
+                "Fehler in meinem eigenen Text finden",
+                "Aktuelles und Dinge aus Luxemburg"
+              ],
+              [
+                "Ideen sammeln, wenn ich feststecke",
+                "Fragen zu Gesundheit, Recht und Gefühlen"
+              ]
+            ]
+          },
+          "sagen": [
+            "Ruft das erste Wort, das euch einfällt – alle gleichzeitig.",
+            "Merkt ihr was? Eure Antwort klingt total überzeugend. Gewusst hat sie niemand."
+          ],
+          "tipp": "Das Wort „halluzinieren“ erst nach dem Spiel einführen: Wer selbst eine überzeugende falsche Antwort gebaut hat, glaubt dem nächsten flüssigen Chatbot-Satz weniger schnell.",
+          "wennEsKippt": "Wird das Spiel albern, die Albernheit nutzen: Auch Unsinn kann grammatisch perfekt klingen – genau darum geht es. Mit sehr wenigen Jugendlichen spielt die Leitung mit und nennt absichtlich plausible, aber falsche Wörter."
+        },
+        {
+          "titel": "Der KI-Check",
+          "dauer": 10,
+          "phase": "uebung",
+          "text": "Zu zweit lesen die Jugendlichen die drei KI-Antworten auf dem Blatt und entscheiden mit den drei Fragen des KI-Checks: stimmt, stimmt nicht oder erst prüfen. Mit Internet wird nachgeschaut wie beim Quer-Lesen, ohne Internet löst die Leitung auf (Lehrerseite). Zum Schluss festhalten: Antwort A enthält einen falschen Fakt, Antwort B eine erfundene Quelle und eine falsche Zahl, Antwort C stimmt – und klingt kein bisschen sicherer als die anderen.",
+          "sagen": [
+            "Welche Antwort klingt am sichersten? Und welche stimmt?",
+            "Die erfundene Quelle ist der gemeinste Fehler: Sie sieht aus wie ein Beweis."
+          ],
+          "tipp": "Antworten mit Fehlern überzeugen gerade dann, wenn sie Zahlen und Namen nennen. Das offen sagen, statt die Jugendlichen für ihren Irrtum zu belächeln.",
+          "wennEsKippt": "Kommt „Dann ist KI ja nutzlos“, auf die Tabelle an der Tafel zeigen: KI ist ein gutes Werkzeug zum Lernen und Üben, aber kein Lexikon. Wer das trennt, nutzt sie klüger als viele Erwachsene.",
+          "blatt": "skills-ki-klug"
+        },
+        {
+          "titel": "Deepfake – was jetzt?",
+          "dauer": 8,
+          "phase": "uebung",
+          "text": "Die Leitung liest den Fall vom Blatt „KI-Werkstatt“ vor: Im Klassenchat taucht ein gefälschtes Video von Elias auf. Die acht Handlungskarten liegen offen in der Mitte; die Gruppe sortiert gemeinsam, was hilft und was schadet, und bringt die hilfreichen Karten in eine sinnvolle Reihenfolge. Danach klar benennen: Deepfakes echter Personen zu machen oder zu teilen, verletzt Menschen und kann strafbar sein – auch als Spaß. Zum Schluss auf den Kasten „Klare Grenze“ und die BEE SECURE Helpline zeigen.",
+          "sagen": [
+            "Was würde Elias jetzt am meisten helfen?",
+            "Nicht teilen ist auch eine Handlung. Mit jedem Weiterleiten wird es größer."
+          ],
+          "tipp": "Die Karte „Elias schreiben, dass du ihm glaubst“ wird oft übersehen. Sie ausdrücklich würdigen: Beistand wirkt, auch wenn er das Video nicht löscht.",
+          "wennEsKippt": "Erzählt jemand von einem echten Fall aus der Schule, nicht im Plenum vertiefen und nichts zeigen lassen. Kurz sagen, dass die Leitung sich darum kümmert, und nach der Einheit das Gespräch suchen.",
+          "blatt": "skills-ki-werkstatt"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Pause mit Imbiss, Bildschirme aus. Die Leitung baut die Stationen auf und startet, wenn ein Chatbot gezeigt wird, das Gerät an Station 3."
+        },
+        {
+          "titel": "KI-Werkstatt: drei Stationen",
+          "dauer": 22,
+          "phase": "aktiv",
+          "text": "Paare wandern im Sechs-Minuten-Takt durch drei Stationen; die Klangschale gibt den Wechsel. An Station 1 legen sie acht Hausaufgaben-Fälle auf Grün, Gelb oder Rot, an Station 2 sortieren sie acht Eingaben in geht, nur ohne Namen und Fotos, nie. Wer eine Karte umlegt, die die Gruppe davor gelegt hat, schreibt die Begründung auf einen Klebezettel. An Station 3 bauen die Paare auf ihrem Blatt „KI klug nutzen“ eine Lern-Anfrage, die die Leitung auf Wunsch am Chatbot ausprobiert. In den letzten vier Minuten schauen alle auf die Stationen 1 und 2, besprechen die strittigen Karten, und die Leitung nennt die Regeln des Lycée.",
+          "sagen": [
+            "Ihr dürft umlegen, was die Gruppe vor euch entschieden hat – aber nur mit Begründung.",
+            "Bei Gelb ist die Frage nicht nur: Darf ich? Sondern auch: Lerne ich dabei noch etwas?"
+          ],
+          "tipp": "An Station 3 lohnt sich ein Live-Versuch, wenn die Einrichtung es erlaubt: Eine Anfrage mit der Regel „Gib mir keine Lösung, stell mir Fragen“ verändert die Antwort deutlich. Nur die Leitung tippt, ohne persönliche Daten.",
+          "wennEsKippt": "Mit nur zwei Jugendlichen gehen beide gemeinsam durch die Stationen; die Leitung legt vorher zwei Karten bewusst strittig. Wird es laut, die Zeit pro Station auf vier Minuten kürzen und die Diskussion in die Auswertung verlegen. Bei wenig Energie oder wenig Platz wandern nicht die Menschen, sondern die Karten von Tisch zu Tisch.",
+          "blatt": "skills-ki-werkstatt"
+        },
+        {
+          "titel": "Meine KI-Regeln im Skills-Buch",
+          "dauer": 8,
+          "phase": "uebung",
+          "text": "Das Modul „Medien und KI“ endet mit einer Seite im Skills-Buch. Zuerst liest jede Person die Ampel auf dem Blatt „KI klug nutzen“ (Aufgabe 3), vergleicht sie mit den Karten von Station 1 und schreibt ihre KI-Regeln (Aufgabe 4). Dann überträgt sie ins Skills-Buch, was bleiben soll: einen Lieblingsskill aus dem Modul, einen Satz, der trägt, einen Wenn-dann-Plan, etwa aus dem Feed-Experiment, und bei „Menschen, die helfen“ die BEE SECURE Helpline und eine Vertrauensperson. Wer mag, liest eine Regel vor.",
+          "sagen": [
+            "Schreibt Regeln, die ihr wirklich einhaltet – nicht die, die Erwachsene gern lesen.",
+            "Eine Regel darf auch lauten: Erst selbst nachdenken, dann die KI fragen."
+          ],
+          "tipp": "Regeln, die die Jugendlichen selbst formulieren, halten besser als vorgegebene. Die Regeln der Schule gehören trotzdem dazu und werden ausdrücklich genannt.",
+          "wennEsKippt": "Wer nichts eintragen will, darf einen Satz von der Tafel übernehmen, zum Beispiel: Flüssig heißt nicht wahr. Wer schnell fertig ist, blättert im Skills-Buch zurück und markiert den Skill, der in diesem Jahr am häufigsten geholfen hat.",
+          "blatt": "skills-buch"
+        },
+        {
+          "titel": "Skill: achtsames Hören",
+          "dauer": 5,
+          "phase": "skill",
+          "text": "Nach einem Modul über Bildschirme holt diese Übung die Aufmerksamkeit in den Raum zurück. Handys weg, Augen zu oder Blick auf einen Punkt am Boden. Die Leitung leitet an: erst die fernsten Geräusche suchen, dann die im Raum, zuletzt den eigenen Atem, je etwa eine Minute. Danach fragen, welches Geräusch jemand heute zum ersten Mal bemerkt hat.",
+          "sagen": [
+            "Kein Bildschirm, kein Feed, keine KI – nur das, was gerade wirklich da ist.",
+            "Welches Geräusch habt ihr eben zum ersten Mal gehört?"
+          ],
+          "tipp": "Wer die Augen nicht schließen mag, schaut auf den Boden; die Übung wirkt trotzdem."
+        },
+        {
+          "titel": "Réckbléck und Skills-Pass",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Blitzlicht: Wann macht KI euch schlauer – und wann nur schneller? Eintrag in den Skills-Pass und Stempel. Auf den Hilfe-Kasten auf dem Blatt hinweisen und den Ausblick auf das letzte Modul geben.",
+          "sagen": [
+            "Ein Satz: Wann macht KI euch schlauer – und wann nur schneller?"
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Nächstes Mal beginnt das letzte Modul: Euer Skills-Buch wird fertig – mit allem, was ihr in diesem Jahr gesammelt habt.",
+      "hintergrund": "Große Sprachmodelle erzeugen Text, indem sie Wort für Wort das Wahrscheinlichste berechnen; sie klingen deshalb flüssig und sicher, auch wenn Fakten oder Quellen erfunden sind – Fachleute sprechen von Halluzinationen (Ji et al., 2023). Die UNESCO (2023) empfiehlt für generative KI in der Bildung einen menschenzentrierten Ansatz: Ergebnisse kritisch prüfen, persönliche Daten schützen, Altersgrenzen beachten und Lernende so begleiten, dass KI ihr Denken unterstützt statt ersetzt. Wissen bleibt vor allem durch eigenes Abrufen und Üben hängen (Roediger & Karpicke, 2006) – eine KI, die Aufgaben erledigt, nimmt genau diese Übung weg. Das Prüfen von Antworten knüpft an das Quer-Lesen an (Wineburg & McGrew, 2019). Bei Deepfakes entscheiden die Zuschauenden mit, ob der Schaden wächst: Wie beim Mobbing begrenzen Nicht-Teilen, Melden und Beistand die Wirkung (Salmivalli et al., 1996).",
+      "quellen": [
+        "Ji, Z., Lee, N., Frieske, R., Yu, T., Su, D., Xu, Y., Ishii, E., Bang, Y. J., Madotto, A. & Fung, P. (2023). Survey of hallucination in natural language generation. ACM Computing Surveys, 55(12), 1–38.",
+        "UNESCO (2023). Guidance for Generative AI in Education and Research. Paris: UNESCO.",
+        "Roediger, H. L. & Karpicke, J. D. (2006). Test-enhanced learning: Taking memory tests improves long-term retention. Psychological Science, 17(3), 249–255.",
+        "Wineburg, S. & McGrew, S. (2019). Lateral reading and the nature of expertise: Reading less and learning more when evaluating digital information. Teachers College Record, 121(11), 1–40.",
+        "Salmivalli, C., Lagerspetz, K., Björkqvist, K., Österman, K. & Kaukiainen, A. (1996). Bullying as a group process: Participant roles and their relations to social status within the group. Aggressive Behavior, 22(1), 1–15.",
+        "BEE SECURE – Initiative der luxemburgischen Regierung für ein sichereres Internet: www.bee-secure.lu"
+      ],
+      "achtung": "KI-Nutzung bei Hausaufgaben ist heikel: Niemand muss zugeben, wofür er KI schon benutzt hat, und die Einheit wird nicht zur Anklage. Keine Deepfakes, Stimm- oder Bildbearbeitungen echter Personen erstellen, auch nicht zur Demonstration; zeigt die Leitung einen Chatbot, tippt nur sie, ohne persönliche Daten, und nur mit einem Dienst, den die Einrichtung zulässt. Berichtet jemand von gefälschten oder intimen Bildern einer realen Person, von Erpressung oder davon, dass er sich in einer Krise nur einem Chatbot anvertraut: nichts zeigen oder weiterleiten lassen, die Person nach der Einheit ruhig ansprechen, nichts versprechen, was nicht zu halten ist, nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) am selben Tag informieren; bei akuter Gefahr Notruf 112 und die Person nicht allein lassen. Beratung: BEE SECURE Helpline 8002 1234, Kanner- a Jugendtelefon 116 111. Rechtsfragen nur allgemein beantworten; die Leitung prüft den aktuellen Stand."
+    }
+  ]
+}

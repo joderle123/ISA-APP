@@ -1,0 +1,1009 @@
+[
+  {
+    "id": "skills-kuechenplan",
+    "bereich": "skills",
+    "thema": "ankommen",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "gruppe"
+    ],
+    "dauer": "35 Min., verteilt auf zwei Termine",
+    "eldib": [
+      "SOZ-18",
+      "SOZ-23",
+      "SOZ-31",
+      "V-28"
+    ],
+    "schlagworte": [
+      "Kochen",
+      "Planen",
+      "Allergien",
+      "Budget",
+      "Küchenregeln",
+      "Kooperation"
+    ],
+    "bild": "icon:tools-kitchen-2",
+    "verwandt": [
+      "skills-kuechenrollen"
+    ],
+    "kurs": [
+      "j2-j01"
+    ],
+    "de": {
+      "titel": "Unser Küchenplan",
+      "untertitel": "Ein Essen, bei dem niemand leer ausgeht – geplant, bevor der Herd angeht",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Ein gutes Essen beginnt am Tisch, nicht am Herd: mit einem Plan, der Allergien, Essensregeln, Budget und Zeit ernst nimmt."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Darauf achten wir: Tragt ein, was nicht ins Essen darf oder nur getrennt auf den Tisch kommt – ohne Namen.",
+          "hinweis": "Die Leitung liest die Liste vor. Über Allergien und Essensregeln wird nicht abgestimmt.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "feld",
+          "label": "Nicht ins Essen oder nur getrennt",
+          "hoehe": 2,
+          "beispiel": "keine Nüsse · kein Schweinefleisch · eine Variante ohne Fleisch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Die Menü-Ampel: Zeigt zu jedem Menü gleichzeitig eine Karte. Gewählt wird das Menü mit den wenigsten roten Karten.",
+          "hinweis": "Grün heißt gern, Gelb heißt geht, Rot heißt geht für mich nicht. Wer Rot zeigt, sagt, was sich ändern müsste.",
+          "symbole": [
+            "gruppe"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Menü",
+            "Grün",
+            "Gelb",
+            "Rot",
+            "So können alle mitessen"
+          ],
+          "breiten": [
+            2.1,
+            0.55,
+            0.55,
+            0.55,
+            2.6
+          ],
+          "zeilen": 4,
+          "beispiel": [
+            "Pasta mit Gemüsesoße",
+            "4",
+            "2",
+            "0",
+            "Käse extra in einer Schüssel"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Die Einkaufsliste: Was fehlt, wie viel brauchen wir, und was kostet es ungefähr?",
+          "hinweis": "Salz, Öl und Gewürze vorher in der Küche nachschauen. Zum Schluss die Summe mit dem Budget vergleichen: Was lassen wir weg, was ersetzen wir?",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "tabelle",
+              "spalten": [
+                "Zutat",
+                "Menge",
+                "Euro ca."
+              ],
+              "breiten": [
+                2,
+                1.1,
+                1
+              ],
+              "zeilen": 6,
+              "beispiel": [
+                "Nudeln",
+                "750 g",
+                "2"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "tabelle",
+              "spalten": [
+                "Zutat",
+                "Menge",
+                "Euro ca."
+              ],
+              "breiten": [
+                2,
+                1.1,
+                1
+              ],
+              "zeilen": 7
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Der Zeitplan rückwärts: Schreibt in die erste Zeile, wann ihr esst. Rechnet dann zurück: Was muss wann beginnen, und wer macht es?",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Uhrzeit",
+            "Was passiert?",
+            "Wer?"
+          ],
+          "breiten": [
+            0.9,
+            3.3,
+            1.5
+          ],
+          "zeilen": 6,
+          "beispiel": [
+            "16:40",
+            "Alle sitzen am Tisch, wir fangen zusammen an.",
+            "alle"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Die Küchenregeln: Lest sie gemeinsam. Diese Seite hängt beim Kochen in der Küche.",
+          "symbole": [
+            "lesen"
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Hygiene",
+              "punkte": [
+                "Hände 20 bis 30 Sekunden mit Seife waschen: vor dem Kochen, nach der Toilette, nach dem Naseputzen, nach rohem Fleisch und Eiern.",
+                "Lange Haare zusammenbinden, Ringe und Armbänder ab.",
+                "Probierlöffel nur einmal benutzen.",
+                "Wer Bauchweh oder Fieber hat, hilft heute am Tisch, nicht am Essen."
+              ]
+            },
+            {
+              "art": "info",
+              "symbol": "achtung",
+              "titel": "Hitze",
+              "punkte": [
+                "Topfgriffe nach innen drehen.",
+                "Nur trockene Topflappen – nasse leiten die Hitze.",
+                "„Heiß“ und „Hinter dir“ ansagen.",
+                "Brennt Fett: nie Wasser. Deckel drauf, Herd aus, Leitung rufen."
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Messer",
+              "punkte": [
+                "Krallengriff: Fingerspitzen einrollen, die Knöchel führen die Klinge.",
+                "Brückengriff: Die Hand bildet eine Brücke, geschnitten wird darunter.",
+                "Das Brett liegt auf einem feuchten Tuch.",
+                "Messer nie ins Spülwasser legen. Fällt eines: zurücktreten, nicht fangen."
+              ]
+            },
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Allergien und Respekt",
+              "punkte": [
+                "Zutatenlisten lesen: Allergene sind darin hervorgehoben.",
+                "Für allergiefreie Speisen eigene Bretter, Löffel und Töpfe.",
+                "Probieren ist freiwillig.",
+                "Über das Essen anderer wird nicht gelästert – „ist nicht meins“ reicht."
+              ]
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Gruppe plant ein Essen, das alle mitessen können: Sie klärt Allergien und Essensregeln, wählt mit der Menü-Ampel, schreibt Einkaufsliste und Zeitplan und kennt die Küchenregeln.",
+        "ablauf": [
+          "Termin 1, Menü-Rat (30 Min.): Allergien ohne Namen vorlesen (Aufgabe 1), vier Menüs vorstellen, Ampel-Abfrage (2), Einkaufsliste (3).",
+          "Termin 1, Küchen-Stationen: die Regeln auf Seite 2 lesen (Aufgabe 5).",
+          "Termin 1, Ende: Die Rollen Rezept und Zeit schreiben mit der Leitung den Zeitplan rückwärts (Aufgabe 4).",
+          "Termin 2: Seite 2 in A3 in der Küche aufhängen, den Zeitplan daneben."
+        ],
+        "hintergrund": "Die Menü-Ampel folgt einem einfachen Gedanken: Gewählt wird nicht, was die meisten am liebsten mögen, sondern womit alle leben können. So bekommen auch Stimmen Gewicht, die bei einer Mehrheitsabstimmung untergehen, und die Gruppe übt, Unterschiede – Allergien, religiöse Essensregeln, Vorlieben – als Aufgabe zu sehen statt als Störung. Mitbestimmung stärkt die Bereitschaft, Absprachen einzuhalten (Deci & Ryan, 2000). Rückwärts zu planen entlastet das Arbeitsgedächtnis: Der Plan hängt an der Wand, statt im Kopf gehalten zu werden (Diamond, 2013).",
+        "quellen": [
+          "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268.",
+          "Diamond, A. (2013). Executive functions. Annual Review of Psychology, 64, 135–168."
+        ],
+        "differenzierung": {
+          "leichter": "Die Leitung gibt zwei Menüs und eine fertige Einkaufsliste vor; die Gruppe ergänzt nur die Mengen und prüft das Budget.",
+          "schwerer": "Die Gruppe schlägt ein eigenes Menü vor, rechnet die Mengen auf die Personenzahl um und vergleicht Preise im Prospekt."
+        },
+        "impulse": [
+          "Gibt es ein Menü, bei dem niemand Rot zeigt – und was kostet es uns, es zu wählen?",
+          "Was ist der Unterschied zwischen ‚darf ich nicht essen‘ und ‚mag ich nicht‘?"
+        ],
+        "tipps": [
+          "Seite 2 in A3 kopieren und laminieren; sie hält mehrere Kochtermine.",
+          "Die Allergie-Liste ohne Namen vorlesen; wer die eigene Allergie selbst nennen möchte, darf das."
+        ],
+        "achtung": "Allergien schriftlich bei den Eltern klären, Notfallset bereithalten. Wer auffällig wenig isst, wird nicht vor der Gruppe angesprochen; die zuständige Leitung (Responsable) informieren.",
+        "material": "Ampelkarten je Person, Blatt in A3"
+      }
+    }
+  },
+  {
+    "id": "skills-kuechenrollen",
+    "bereich": "skills",
+    "thema": "ankommen",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "20 Min., verteilt auf zwei Termine",
+    "eldib": [
+      "SOZ-38",
+      "V-27",
+      "V-21",
+      "SOZ-18"
+    ],
+    "schlagworte": [
+      "Kochen",
+      "Rollen",
+      "Frust",
+      "Stopp-Ampel",
+      "Teamarbeit"
+    ],
+    "bild": "icon:users-group",
+    "verwandt": [
+      "skills-kuechenplan"
+    ],
+    "kurs": [
+      "j2-j01"
+    ],
+    "de": {
+      "titel": "Küchenrollen und Frust-Ampel",
+      "untertitel": "Wer macht was – und was tun, wenn in der Küche etwas schiefgeht?",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "In einer guten Küche weiß jede Person, was sie zu tun hat. Und wer fertig ist, fragt: Wo kann ich helfen?"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Rollenkarten: einmal ausschneiden. Jede Person wählt eine Rolle und legt die Karte an ihren Platz.",
+          "hinweis": "Sind es weniger als sechs, übernimmt jemand zwei Rollen; sind es mehr, arbeiten am Brett und am Herd zwei. Beim nächsten Kochen wird getauscht.",
+          "symbole": [
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 2,
+          "karten": [
+            {
+              "bild": "icon:clipboard-list",
+              "titel": "Rezept und Überblick",
+              "text": "Liest das Rezept Schritt für Schritt vor und sagt, was als Nächstes dran ist. Wenn es hakt: erst Stopp sagen, dann erklären, dann entscheiden."
+            },
+            {
+              "bild": "icon:alarm",
+              "titel": "Zeit",
+              "text": "Stellt den Küchenwecker, hat den Zeitplan im Blick und ruft zweimal den Küchen-Stopp aus. Wenn es hakt: sagen, was fehlt, und fragen, was wegfallen kann."
+            },
+            {
+              "bild": "icon:carrot",
+              "titel": "Schnippeln",
+              "text": "Wäscht und schneidet Gemüse mit Krallen- oder Brückengriff. Wenn es hakt: das Messer ablegen, bevor du redest oder dich ärgerst."
+            },
+            {
+              "bild": "icon:flame",
+              "titel": "Herd",
+              "text": "Kocht, brät und schmeckt ab, jedes Mal mit einem frischen Löffel. Wenn es hakt: Topf von der Platte, ausatmen, dann retten, was geht."
+            },
+            {
+              "bild": "icon:shield-check",
+              "titel": "Hygiene und Sicherheit",
+              "text": "Erinnert an Händewaschen und getrennte Bretter, weiß, wo Erste-Hilfe-Kasten und Löschdecke sind. Wenn es hakt: freundlich erinnern statt kontrollieren."
+            },
+            {
+              "bild": "icon:heart-handshake",
+              "titel": "Tisch und Ordnung",
+              "text": "Spült schon beim Kochen, hält die Flächen frei, deckt den Tisch und sorgt dafür, dass alle zusammen anfangen. Wenn es hakt: eine Sache fertig machen, dann die nächste."
+            }
+          ]
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was bringt dich in der Küche am ehesten auf Rot? Kreuze an.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "frei": 1,
+          "items": [
+            "Etwas brennt an oder kocht über.",
+            "Jemand übernimmt meine Aufgabe, ohne zu fragen.",
+            "Ich muss warten und habe Hunger.",
+            "Jemand kritisiert, wie ich schneide oder koche.",
+            "Ich mache alles, andere schauen zu.",
+            "Alle reden durcheinander, es ist hektisch."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Die Frust-Ampel für die Küche: Lies, was auf jeder Stufe hilft.",
+          "symbole": [
+            "lesen"
+          ]
+        },
+        {
+          "art": "ampel",
+          "linien": 0,
+          "stufen": [
+            {
+              "titel": "Rot: Stopp",
+              "text": "Messer ablegen, Topf von der Platte, einmal lang ausatmen."
+            },
+            {
+              "titel": "Gelb: Denken",
+              "text": "Wie schlimm ist es wirklich, von 0 bis 10? Was lässt sich retten? Wer kann helfen?"
+            },
+            {
+              "titel": "Grün: Handeln",
+              "text": "Retten, um Hilfe bitten – oder annehmen, was passiert ist, und weitermachen."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dein Frust-Plan: Was könnte dich in deiner Rolle ärgern – und was tust du dann?",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Wenn die Soße anbrennt,",
+              "dann": "nehme ich den Topf von der Platte, atme aus und frage: Was retten wir?"
+            },
+            {
+              "wenn": "Wenn jemand meine Aufgabe übernimmt,",
+              "dann": "sage ich: Ich mach das gern selbst fertig – magst du den Tisch decken?"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Nach dem Essen: die Küchen-Bilanz. Wie lief es im Team?",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "stimmt",
+            "teils",
+            "stimmt nicht"
+          ],
+          "items": [
+            "Jede Person hatte eine Aufgabe.",
+            "Wir haben geholfen, ohne uns einzumischen.",
+            "Als etwas schiefging, sind wir ruhig geblieben.",
+            "Wir haben die Küchenregeln eingehalten.",
+            "Alle konnten mitessen."
+          ]
+        },
+        {
+          "art": "frage",
+          "text": "Welcher Skill hat dir heute in der Küche geholfen – und wo könntest du ihn noch brauchen?",
+          "linien": 1
+        }
+      ],
+      "lehrer": {
+        "ziel": "Jede Person übernimmt beim Kochen eine klare Rolle und hat einen Plan für Frust-Momente in der Küche. Nach dem Essen schätzt die Gruppe ein, wie die Zusammenarbeit gelaufen ist.",
+        "ablauf": [
+          "Termin 1 (10 Min.): Rollenkarten vorlesen lassen; alle nennen Wunschrolle und zweite Wahl, die Leitung gleicht aus und entscheidet, wer mit Messern arbeitet.",
+          "Termin 1: Aufgaben 2 bis 4 allein – was mich auf Rot bringt, die Frust-Ampel, der eigene Frust-Plan.",
+          "Termin 2, vor dem Kochen: Karten an die Arbeitsplätze legen; die Frust-Ampel hängt neben den Küchenregeln.",
+          "Termin 2, nach dem Aufräumen (7 Min.): Küchen-Bilanz still ausfüllen (Aufgabe 5), dann Danke-Runde; die letzte Frage ist freiwillig."
+        ],
+        "hintergrund": "Klare Rollen senken die Reibung: Wer weiß, wofür er zuständig ist, muss seinen Platz nicht erkämpfen, und Hilfe wird zur Frage statt zum Übergriff. Jede Rollenkarte enthält deshalb einen Satz für den Moment, in dem es hakt. Die Frust-Ampel überträgt die Stopp-Ampel auf die Küche und ähnelt dem STOP-Skill, den Linehan (2015) für Krisenmomente beschreibt: innehalten, zurücktreten, beobachten, bewusst handeln. Wenn-dann-Pläne machen solche Vorsätze wirksamer, weil die Situation selbst zum Auslöser wird (Gollwitzer, 1999).",
+        "quellen": [
+          "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "differenzierung": {
+          "leichter": "Mit wenigen Jugendlichen vier Rollen: Rezept und Zeit zusammenlegen, Hygiene übernimmt die Leitung; den Frust-Plan mit einer Beispielzeile beginnen.",
+          "schwerer": "Eine neue Rollenkarte entwerfen, etwa für Musik oder Fotos, mit Aufgabe und Satz für den Frust-Moment."
+        },
+        "impulse": [
+          "Welche Rolle sieht man kaum – und ohne sie würde trotzdem alles schiefgehen?",
+          "Wie hilft man, ohne jemandem die Arbeit wegzunehmen?"
+        ],
+        "tipps": [
+          "Die Rollenkarten laminieren und mit Wäscheklammern an die Arbeitsplätze hängen."
+        ],
+        "achtung": "Wer gerade sehr angespannt ist oder schon einmal mit Gegenständen gedroht hat, bekommt ohne Aufsehen eine Rolle ohne Messer. Frust-Pläne sind persönlich und werden nicht eingesammelt.",
+        "material": "Seite 1 auf festem Papier, Schere, Laminierfolie, Wäscheklammern; Seite 2 je Person"
+      }
+    }
+  },
+  {
+    "id": "skills-stadt-rallye",
+    "bereich": "skills",
+    "thema": "zukunft",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "etwa zwei Stunden unterwegs",
+    "eldib": [
+      "SOZ-18",
+      "K-12",
+      "V-24",
+      "V-32"
+    ],
+    "schlagworte": [
+      "Stadt-Rallye",
+      "Ansprechen",
+      "Planen",
+      "Selbstständigkeit",
+      "Teamarbeit",
+      "Draußen"
+    ],
+    "bild": "icon:map-pin",
+    "kurs": [
+      "j2-j02"
+    ],
+    "de": {
+      "titel": "Der Rallye-Auftrag",
+      "untertitel": "Sechs Aufträge rund um unser Haus – für einen Guide, der Neuen den Start leichter macht",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Euer Auftrag: Findet heraus, was jemand wissen muss, der neu hierherkommt – wo es Hilfe gibt, wo Ruhe, wo der Bus fährt. Jeder Auftrag beginnt und endet an der Basis."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Lest die Regeln, füllt die Lücken aus und unterschreibt als Team.",
+          "symbole": [
+            "lesen",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "vertrag",
+          "titel": "So sind wir unterwegs",
+          "text": "Wir bleiben die ganze Zeit als Team zusammen. Unsere Basis ist ___. Unser Gebiet endet ___. Nach jedem Auftrag sind wir spätestens nach zwölf Minuten zurück. Die Handynummer der Leitung ist ___. Das Handy nutzen wir für Anrufe mit der Leitung, den Notruf 112, den Fahrplan und für Fotos ohne fremde Menschen; wir posten nichts. Kopfhörer bleiben in der Tasche, und bei Rot warten wir, auch wenn kein Auto kommt. Wird uns etwas unangenehm, gehen wir sofort zur Basis.",
+          "unterschriften": [
+            "",
+            "",
+            "",
+            "Leitung"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Verteilt die Rollen. Nach jedem Auftrag wechselt ihr.",
+          "symbole": [
+            "gruppe"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Rollen im Team",
+          "punkte": [
+            "Karte: kennt den Weg und führt.",
+            "Zeit: achtet darauf, dass ihr nach zwölf Minuten zurück seid.",
+            "Sprechen: spricht Menschen an – wer nicht mag, fragt zu zweit.",
+            "Schreiben und Foto: notiert die Ergebnisse und fotografiert nie fremde Menschen."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Die sechs Aufträge: An der Basis erfahrt ihr, welcher als Nächstes dran ist. Notiert euer Ergebnis in Stichworten.",
+          "hinweis": "Die Leitung zeichnet jedes Ergebnis an der Basis ab.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "schritte",
+          "linien": 1,
+          "items": [
+            {
+              "titel": "Hilfe finden · Skill: Hilfe holen",
+              "text": "Findet die nächste Apotheke und einen Ort, an dem Menschen helfen können, wenn etwas passiert – etwa eine Rezeption oder ein Geschäft mit Personal. Wo genau?"
+            },
+            {
+              "titel": "Nachfragen · Skill: ansprechen",
+              "text": "Fragt eine Person, die hier arbeitet, was Neue in dieser Gegend unbedingt kennen sollten. Nur fragen, wenn gerade niemand wartet – und bedanken."
+            },
+            {
+              "titel": "Weg planen · Skill: planen",
+              "text": "Plant den Weg von der Basis zu dem Ziel, das euch die Leitung nennt: zu Fuß oder mit dem Bus? Haltestelle, Linie, nächste Abfahrt, Dauer. Ihr fahrt nicht, ihr plant nur."
+            },
+            {
+              "titel": "Ruhe-Ort · Skill: runterkommen",
+              "text": "Findet einen Ort, an dem man zur Ruhe kommt, wenn der Kopf voll ist. Probiert dort zwei Minuten einen Skill aus. Anspannung vorher und nachher?"
+            },
+            {
+              "titel": "Sprachen-Jagd · Skill: Vielfalt sehen",
+              "text": "Findet Schilder, Plakate oder Speisekarten in fünf Sprachen und fotografiert sie ohne Menschen. Welche Sprache kommt am häufigsten vor?"
+            },
+            {
+              "titel": "Lieblingsort · Skill: sich einigen",
+              "text": "Einigt euch auf den Ort, den ihr Neuen empfehlt – alle müssen einverstanden sein. Fotografiert dort nur eure Schatten oder Hände."
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Streit im Team?",
+          "text": "Rot: Alle bleiben stehen. Gelb: Jede Person sagt in einem Satz, was sie will. Grün: Ihr entscheidet – Kompromiss, abwechseln oder diesmal die andere Idee."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Zurück im Raum: Wie leicht ist dir das heute gefallen?",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "leicht",
+            "ging so",
+            "schwer"
+          ],
+          "items": [
+            "eine fremde Person ansprechen",
+            "einen Weg oder eine Busverbindung planen",
+            "uns einigen, wenn wir verschiedener Meinung waren",
+            "ruhig bleiben, wenn etwas nicht geklappt hat",
+            "mich an die Absprachen halten, auch ohne Aufsicht"
+          ]
+        },
+        {
+          "art": "frage",
+          "text": "Wo brauchst du einen dieser Skills nächste Woche wieder?",
+          "linien": 1
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen wenden Skills aus dem Kursjahr in der Umgebung an: jemanden ansprechen, einen Weg planen, sich im Team einigen, runterkommen und wissen, wo es Hilfe gibt. Aus den Ergebnissen entsteht ein Guide für neue Jugendliche.",
+        "ablauf": [
+          "Vorher: Gebiet ablaufen, Basis und Ziel für Auftrag 3 festlegen, Einverständnis der Eltern einholen.",
+          "Start (15 Min.): Teams zu zwei oder drei, Regeln lesen, Lücken füllen, unterschreiben, Rollen verteilen.",
+          "Stern-Rallye (70 Min.): verschiedene Startnummern, höchstens zwölf Minuten je Auftrag, Bericht und Abzeichnen an der Basis.",
+          "Danach: Guide-Plakat mit sechs Feldern (20 Min.), Auswertung mit Aufgabe 4 und Punkten an der Tafel (20 Min.)."
+        ],
+        "hintergrund": "Skills, die nur im Gruppenraum geübt werden, bleiben leicht dort. Die Rallye holt sie in den Alltag, aber mit Netz: Die Basis ist nie weit. Eigene Erfolgserlebnisse sind die stärkste Quelle von Selbstwirksamkeit (Bandura, 1977). Man wächst dort, wo es aufregend, aber machbar ist (Senninger, 2000); deshalb dürfen Jugendliche zu zweit fragen und Rollen tauschen. Klare Regeln sind kein Misstrauen: Unter Gleichaltrigen gehen Jugendliche mehr Risiken ein als allein (Gardner & Steinberg, 2005).",
+        "quellen": [
+          "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
+          "Senninger, T. (2000). Abenteuer leiten – in Abenteuern lernen. Münster: Ökotopia.",
+          "Gardner, M. & Steinberg, L. (2005). Peer influence on risk taking, risk preference, and risky decision making in adolescence and adulthood: An experimental study. Developmental Psychology, 41(4), 625–635."
+        ],
+        "differenzierung": {
+          "leichter": "Nur die Aufträge 1, 2, 4 und 6; die Leitung geht mit dem Team und hält Abstand.",
+          "schwerer": "Das Team entwirft einen siebten Auftrag für ein anderes Team; die Leitung prüft ihn auf Sicherheit."
+        },
+        "impulse": [
+          "Was hättet ihr an eurem ersten Tag hier gern gewusst?",
+          "Welcher Auftrag lag für dich in der Lernzone – und welcher schon fast in der Panikzone?"
+        ],
+        "tipps": [
+          "Die Bögen auf Klemmbrettern und in Klarsichthüllen mitnehmen; bei Wind und Regen bleibt so alles lesbar."
+        ],
+        "achtung": "Nur mit Einverständnis der Eltern und nach dem Notfallplan des Hauses. Erleben Jugendliche unterwegs Ablehnung oder Diskriminierung, das in Ruhe aufgreifen.",
+        "material": "Bogen je Team, Seite 2 je Person; Klemmbretter, Plan des Gebiets, Plakat (A2)"
+      }
+    }
+  },
+  {
+    "id": "skills-film-wunder",
+    "bereich": "skills",
+    "thema": "vielfalt",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "20 Min., verteilt auf zwei Termine",
+    "eldib": [
+      "SOZ-37",
+      "SOZ-31",
+      "K-21",
+      "SOZ-32"
+    ],
+    "schlagworte": [
+      "Wunder",
+      "Film",
+      "Perspektivwechsel",
+      "Anderssein",
+      "Mut",
+      "Freundlichkeit"
+    ],
+    "bild": "icon:eye",
+    "verwandt": [
+      "drei-sichtweisen"
+    ],
+    "kurs": [
+      "j2-j03"
+    ],
+    "de": {
+      "titel": "Mein Blickwinkel auf „Wunder“",
+      "untertitel": "Beobachtungsbogen für den Film „Wunder“ (2017): eine Figur, der ganze Film",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Der Film erzählt dieselbe Geschichte aus mehreren Blickwinkeln. Du verfolgst eine Figur durch den ganzen Film und schaust mit ihren Augen."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Kreuze deine Figur an.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 3,
+          "items": [
+            "Auggie",
+            "Via, seine Schwester",
+            "Jack",
+            "Summer",
+            "Julian",
+            "Miranda",
+            "Isabel, die Mutter",
+            "Nate, der Vater",
+            "Mr. Browne, der Lehrer"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Beim Schauen oder in der Pause: Was erlebt deine Figur – und was tut sie dann?",
+          "hinweis": "Stichworte reichen. Im Dunkeln muss niemand schön schreiben.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Szene (Stichwort)",
+            "Was fühlt die Figur?",
+            "Was tut sie?"
+          ],
+          "breiten": [
+            2.2,
+            1.6,
+            2.2
+          ],
+          "zeilen": 3,
+          "beispiel": [
+            "Auggie sitzt in der Kantine allein.",
+            "Summer: Mitgefühl",
+            "Sie setzt sich zu ihm."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Nach dem Film: Was zeigt deine Figur nach außen – und was liegt darunter?",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "eisberg",
+          "oben": "Das sehen die anderen",
+          "unten": "Das fühlt oder braucht die Figur",
+          "beispielOben": "Via sagt, bei ihr sei alles in Ordnung.",
+          "beispielUnten": "Sie fühlt sich übersehen und vermisst ihre Großmutter."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Mut im Film und bei dir: Ergänze die Sätze.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 2,
+          "items": [
+            "Mutig war meine Figur, als …",
+            "Mehr Mut hätte sie gebraucht, als …",
+            "Ein kleiner mutiger Schritt für mich – in der Schule, im Bus oder im Chat – wäre …"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Mr. Browne gibt seiner Klasse Leitsprüche mit. Schreib deinen eigenen.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "feld",
+          "label": "Mein Leitspruch",
+          "hoehe": 3,
+          "beispiel": "Erst fragen, dann urteilen."
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Du entscheidest, was du teilst.",
+          "text": "Was du über dich schreibst, liest niemand vor, wenn du es nicht willst."
+        },
+        {
+          "art": "notfall"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen verfolgen eine Figur durch den ganzen Film, unterscheiden, was sie nach außen zeigt und was darunter liegt, und übertragen die Frage nach Mut und Freundlichkeit auf ihren Alltag.",
+        "ablauf": [
+          "Termin 1, vor dem Film (5 Min.): Figurenkarten verdeckt ziehen, Aufgabe 1 ankreuzen.",
+          "Während des Films und in den Pausen: Stichworte zu höchstens drei Szenen (Aufgabe 2).",
+          "Termin 2, nach dem Film (15 Min.): Eisberg allein (Aufgabe 3), dann jede Figur in zwei Sätzen vorstellen; Tafelbild außen und innen.",
+          "Nach der Mut-Linie: Aufgabe 4 allein und freiwillig; der Leitspruch (Aufgabe 5) kann auch in den Skills-Pass."
+        ],
+        "hintergrund": "„Wunder“ (2017) erzählt nach dem Roman von R. J. Palacio (2012) die Geschichte von Auggie, dessen Gesicht anders aussieht als das der meisten, aus mehreren Blickwinkeln. Allport (1954) beschrieb, wie schnell Menschen andere nach äußeren Merkmalen einordnen; persönlicher Kontakt verringert Vorurteile verlässlich (Pettigrew & Tropp, 2006). Ob Ausgrenzung andauert, hängt stark von den Zuschauenden ab (Salmivalli et al., 1996) – deshalb die Mutproben am Ende. Der Eisberg zeigt, dass fast jede Figur etwas verbirgt.",
+        "quellen": [
+          "Palacio, R. J. (2012). Wonder. New York: Alfred A. Knopf.",
+          "Allport, G. W. (1954). The Nature of Prejudice. Cambridge, MA: Addison-Wesley.",
+          "Pettigrew, T. F. & Tropp, L. R. (2006). A meta-analytic test of intergroup contact theory. Journal of Personality and Social Psychology, 90(5), 751–783.",
+          "Salmivalli, C., Lagerspetz, K., Björkqvist, K., Österman, K. & Kaukiainen, A. (1996). Bullying as a group process: Participant roles and their relations to social status within the group. Aggressive Behavior, 22(1), 1–15."
+        ],
+        "differenzierung": {
+          "leichter": "Nur die Aufgaben 1, 2 und 5; die Leitung nennt nach dem Film drei Schlüsselszenen zur Auswahl.",
+          "schwerer": "Eine zweite Figur verfolgen: Wo sehen die beiden dieselbe Szene ganz verschieden?"
+        },
+        "impulse": [
+          "Welche Figur hat einen Kampf gekämpft, den die anderen nicht gesehen haben?",
+          "Was hätte Auggie am ersten Schultag geholfen?"
+        ],
+        "tipps": [
+          "Die Bögen auf Klemmbretter legen; im abgedunkelten Raum schreibt es sich so leichter."
+        ],
+        "achtung": "Vorführrechte und Altersfreigabe vorab klären lassen. Niemand wird mit Auggie verglichen oder zum Experten gemacht. Hinweise auf aktuelles Mobbing nicht in der Gruppe vertiefen, sondern ein Einzelgespräch anbieten und die zuständige Leitung (Responsable) informieren.",
+        "material": "Klemmbretter, Stifte, neun Figurenkarten"
+      }
+    }
+  },
+  {
+    "id": "skills-kooperations-karten",
+    "bereich": "skills",
+    "thema": "ankommen",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "gruppe"
+    ],
+    "dauer": "je Spiel 10–15 Min.",
+    "eldib": [
+      "SOZ-18",
+      "SOZ-30",
+      "V-23",
+      "V-20"
+    ],
+    "schlagworte": [
+      "Kooperationsspiele",
+      "Teamarbeit",
+      "Unruhe",
+      "Frust",
+      "Auswertung"
+    ],
+    "bild": "icon:puzzle",
+    "kurs": [
+      "j2-j04"
+    ],
+    "de": {
+      "titel": "Kooperations-Karten",
+      "untertitel": "Sechs Aufgaben, die eine Gruppe nur gemeinsam schafft",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Eine Person zieht eine Karte und liest sie vor. Ihr habt zwei Minuten zum Planen, dann geht es los. Gewonnen hat die ganze Gruppe – oder niemand."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Karten einmal ausschneiden und am besten laminieren.",
+          "hinweis": "Für die Leitung: Die Karten gehören in die Kooperationskiste; das Material steht auf jeder Karte.",
+          "symbole": [
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 2,
+          "karten": [
+            {
+              "bild": "icon:ball-basketball",
+              "titel": "Gruppenjonglage",
+              "text": "Werft einen Ball im Kreis, bis jede Person ihn einmal hatte – immer in derselben Reihenfolge, vorher den Namen sagen. Dann kommt ein zweiter Ball dazu. Rekordrunde: Wie schnell schafft ein Ball die Runde? Material: weiche Bälle, Stoppuhr."
+            },
+            {
+              "bild": "icon:droplet",
+              "titel": "Der Fluss",
+              "text": "Alle müssen über den Fluss. Betreten dürft ihr nur die Steine, und ihr habt einen weniger, als ihr seid. Ein Stein, den gerade niemand berührt, wird weggespült. Material: Matten oder Pappen, zwei Seile."
+            },
+            {
+              "bild": "icon:route",
+              "titel": "Die Pipeline",
+              "text": "Bringt die Murmel mit euren Rinnen vom Start in den Becher. Wer die Murmel in der Rinne hat, bleibt stehen. Fällt sie herunter, geht es am Start weiter. Material: Rinnen, Murmel, Becher."
+            },
+            {
+              "bild": "icon:hand-finger",
+              "titel": "Der schwebende Stab",
+              "text": "Der Stab liegt auf euren ausgestreckten Zeigefingern. Legt ihn gemeinsam auf den Boden – jeder Finger berührt ihn immer von unten, niemand hält fest. Material: leichter Stab, zwei bis drei Meter."
+            },
+            {
+              "bild": "icon:balloon",
+              "titel": "Ballonregen",
+              "text": "Haltet alle Ballons in der Luft. Niemand berührt denselben Ballon zweimal hintereinander. Alle 30 Sekunden kommt einer dazu. Wie viele schafft ihr? Material: Luftballons, wenn niemand eine Latexallergie hat."
+            },
+            {
+              "bild": "icon:tools",
+              "titel": "Die Maschine",
+              "text": "Eine Person beginnt mit einer Bewegung und einem Geräusch. Nach und nach docken alle an, bis eine Maschine läuft. Die Leitung steuert: schneller, langsamer, Stromausfall. Material: keins."
+            }
+          ]
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Nach jedem Spiel: drei Fragen, zwei Minuten.",
+          "symbole": [
+            "gruppe",
+            "sprechen"
+          ]
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 0,
+          "items": [
+            {
+              "titel": "Was lief gut?",
+              "text": "Was hat uns geholfen?"
+            },
+            {
+              "titel": "Wo hat es gehakt?",
+              "text": "Den Plan kritisieren, nicht die Person."
+            },
+            {
+              "titel": "Was ändern wir?",
+              "text": "Eine Sache für den nächsten Versuch."
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Wenn der Frust hochgeht",
+          "text": "Rot: Spiel anhalten, Hände weg vom Material. Gelb: Eine Person sagt an, alle anderen hören zu. Grün: neuer Versuch mit einer Änderung."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Am Ende: Wie warst du heute im Team?",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "stimmt",
+            "teils",
+            "noch nicht"
+          ],
+          "items": [
+            "Ich habe zugehört, wenn andere eine Idee hatten.",
+            "Ich habe selbst eine Idee eingebracht.",
+            "Ich bin ruhig geblieben, als etwas nicht geklappt hat.",
+            "Ich habe niemandem die Schuld gegeben.",
+            "Ich habe jemanden ermutigt."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ergänze die Sätze.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 2,
+          "items": [
+            "Eine Team-Regel, die wir heute selbst entdeckt haben: …",
+            "Runtergebracht hat mich heute …"
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Gruppe löst in bewegten Spielen Aufgaben, die nur gemeinsam gelingen, wertet jede Runde kurz aus und hält fest, was ihr als Team geholfen hat.",
+        "ablauf": [
+          "Vorbereitung: Seite 1 einmal ausschneiden, laminieren und mit dem Material in die Kooperationskiste legen; Seite 2 je Person.",
+          "Je nach Stimmung zwei bis drei Karten wählen: bei viel Energie Fluss oder Gruppenjonglage, bei gereizter Stimmung Pipeline und Gruppenjonglage, bei Müdigkeit Ballonregen oder Maschine.",
+          "Nach jedem Spiel die drei Fragen (Aufgabe 2), höchstens zwei Minuten.",
+          "Am Ende: Aufgaben 3 und 4 allein, dann Team-Regeln auf einem Plakat sammeln."
+        ],
+        "hintergrund": "Kooperationsspiele stammen aus der Erlebnispädagogik: Die Aufgabe ist nur gemeinsam lösbar, und wer anderen die Schuld gibt, verliert mit. Solche gemeinsamen Ziele bauten schon im Ferienlager-Experiment von Robbers Cave Feindseligkeit zwischen zwei Gruppen ab (Sherif et al., 1961). Nach dem Lernzonenmodell von Senninger (2000) sollen die Aufgaben fordern, aber nicht überfordern; wer nicht mitspielen möchte, beobachtet oder nimmt die Zeit. Tuckman (1965) beschreibt Reibereien als normale Phase der Gruppenentwicklung, die eine Gruppe hinter sich lässt, wenn sie lernt, Aufgaben gemeinsam zu lösen. Erst die kurze Auswertung macht aus dem Spiel eine Erfahrung, die sich übertragen lässt.",
+        "quellen": [
+          "Sherif, M., Harvey, O. J., White, B. J., Hood, W. R. & Sherif, C. W. (1961). Intergroup Conflict and Cooperation: The Robbers Cave Experiment. Norman, OK: University Book Exchange.",
+          "Senninger, T. (2000). Abenteuer leiten – in Abenteuern lernen. Münster: Ökotopia.",
+          "Tuckman, B. W. (1965). Developmental sequence in small groups. Psychological Bulletin, 63(6), 384–399."
+        ],
+        "differenzierung": {
+          "leichter": "Mit Ballonregen und Maschine beginnen; die Auswertung nur mit Daumen hoch, Mitte oder runter.",
+          "schwerer": "In der zweiten Runde darf die Gruppe nicht sprechen, nur zeigen – oder eine Person leitet das Spiel an."
+        },
+        "impulse": [
+          "Wessen Idee hat die Lösung gebracht – und wurde sie sofort gehört?",
+          "Was habt ihr gemacht, als der Frust hochging?"
+        ],
+        "tipps": [
+          "Die Kiste fertig gepackt lagern; dann ist der Joker ohne Vorlauf einsetzbar."
+        ],
+        "achtung": "Beim Fluss und beim Stab gibt es Nähe: vorher ankündigen, das Stopp-Recht betonen, kontaktarme Varianten anbieten. Luftballons nur ohne Latexallergie. Wird jemand zum Sündenbock gemacht, sofort unterbrechen.",
+        "material": "Festes Papier, Schere, Laminierfolie; Spielmaterial laut Karten"
+      }
+    }
+  }
+]

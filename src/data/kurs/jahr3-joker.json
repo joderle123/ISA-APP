@@ -1,0 +1,1094 @@
+{
+  "einheiten": [
+    {
+      "id": "j3-j01",
+      "nr": 1,
+      "jahr": 3,
+      "modul": "joker",
+      "joker": true,
+      "passt": "in Modul 3, am besten nach Einheit 11; über zwei Termine, mit vier bis sechs Wochen Vorlauf",
+      "titel": "Betriebsbesuch mit Auftrag",
+      "kurz": "Die Gruppe besucht einen echten Betrieb – vorbereitet mit Fragen, Rollen und einem Beobachtungsauftrag – und prüft danach, was sie über Arbeit und über sich selbst erfahren hat.",
+      "dauer": 200,
+      "ziele": [
+        "bereiten einen Betriebsbesuch mit eigenen Fragen, Rollen und Beobachtungsaufträgen vor",
+        "üben im Rollenspiel, sich vorzustellen, zu fragen, nachzufragen und sich zu bedanken",
+        "beobachten im Betrieb Arbeitsabläufe, Umgangston und Anforderungen und führen ein kurzes Interview",
+        "werten aus, was sie gesehen haben, und prüfen, ob der Beruf zu ihren Stärken und Interessen passt"
+      ],
+      "material": [
+        "Gefühlsrad (A3, laminiert) und als Foto auf dem Handy der Leitung für unterwegs, Wäscheklammern, Anspannungsskala 0–100",
+        "Schülerblatt „Betriebsbesuch: unser Forscherauftrag“ je Person, Klemmbretter, Kugelschreiber, Klebezettel",
+        "Informationen über den Betrieb: Name, Branche, Ansprechperson, Adresse, Weg und Fahrplan, Sicherheitsvorgaben",
+        "Einverständniserklärungen der Erziehungsberechtigten nach den Regeln des Hauses",
+        "Liste mit Notfallnummern und den Telefonnummern der Erziehungsberechtigten, Erste-Hilfe-Tasche, geladenes Handy der Leitung",
+        "Eine Dankeskarte für den Betrieb, dazu eine zweite für die Grüße nach dem Besuch",
+        "Für das Rollenspiel: ein Hut oder eine Weste als Rollenzeichen der Fachkraft",
+        "Imbiss und Getränke für beide Termine, für Termin 2 zum Mitnehmen",
+        "Skills-Pässe, Stempel"
+      ],
+      "vorbereitung": [
+        "Vier bis sechs Wochen vorher einen Betrieb anfragen, der zu den Interessen der Gruppe passt – möglichst einen, der ausbildet –, und Termin, Dauer, Ansprechperson und Sicherheitsregeln klären: Kleidung, Schutzausrüstung, Hygiene, Fotos, ein Handgriff zum Ausprobieren.",
+        "Den Besuch mit der zuständigen Leitung (Responsable) abstimmen: Aufsicht, Versicherung, eine zweite erwachsene Begleitperson, Einverständniserklärungen nach den Regeln des Hauses.",
+        "Der Fachkraft im Betrieb vorab erklären, wer kommt: eine Kleingruppe Jugendlicher mit eigenen Fragen – ohne Hintergründe zu einzelnen Jugendlichen.",
+        "Den Weg einmal selbst abgehen oder abfahren, Treffpunkt und Zeiten festlegen. Bei längerer Anfahrt den zweiten Termin verlängern oder die Auswertung in die nächste Einheit legen.",
+        "Allergien und Einschränkungen der Jugendlichen mit den Bedingungen im Betrieb abgleichen: Staub, Mehl, Tiere, Lärm, Höhe."
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-betriebsbesuch",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Gefühlsrad, Anspannung, Besuchs-Zahl"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Vom Berufsprofil zum echten Betrieb"
+        },
+        {
+          "min": "15–40",
+          "phase": "uebung",
+          "titel": "Der Forscherauftrag: Fragen, Beobachtung, Rollen"
+        },
+        {
+          "min": "40–45",
+          "phase": "input",
+          "titel": "Treffpunkt, Kleidung, Regeln"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–85",
+          "phase": "aktiv",
+          "titel": "Probe im Rollenspiel: ankommen, fragen, danken"
+        },
+        {
+          "min": "85–95",
+          "phase": "skill",
+          "titel": "Skill: Der Anker vor der Tür"
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Réckbléck und Skills-Pass"
+        },
+        {
+          "min": "100–110",
+          "phase": "ankommen",
+          "titel": "Termin 2: Check-in am Treffpunkt"
+        },
+        {
+          "min": "110–125",
+          "phase": "aktiv",
+          "titel": "Unterwegs zum Betrieb"
+        },
+        {
+          "min": "125–150",
+          "phase": "aktiv",
+          "titel": "Führung mit Beobachtungsauftrag"
+        },
+        {
+          "min": "150–170",
+          "phase": "uebung",
+          "titel": "Interview und Dank"
+        },
+        {
+          "min": "170–175",
+          "phase": "skill",
+          "titel": "Skill: Fünf Minuten schweigend zurück"
+        },
+        {
+          "min": "175–185",
+          "phase": "pause",
+          "titel": "Rückweg und Imbiss"
+        },
+        {
+          "min": "185–195",
+          "phase": "uebung",
+          "titel": "Auswertung: Passt das zu mir?"
+        },
+        {
+          "min": "195–200",
+          "phase": "abschluss",
+          "titel": "Réckbléck und Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: Gefühlsrad, Anspannung, Besuchs-Zahl",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Gefühlsrad und Anspannung wie gewohnt. Dazu eine zweite Zahl mit den Fingern: Wie nervös macht euch der Gedanke, in zwei Wochen in einen echten Betrieb zu gehen, von 0 bis 10? Die Leitung beginnt und nennt ihre eigene Zahl. Die Zahlen nicht kommentieren; wer hoch liegt, bekommt später eine Rolle, die ihm liegt.",
+          "sagen": [
+            "Gefühl, Zahl – und wie nervös macht euch der Besuch, 0 bis 10 Finger?",
+            "Etwas Aufregung ist normal. Die meisten Erwachsenen sind vor dem ersten Tag in einem neuen Betrieb auch nervös."
+          ],
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Vom Berufsprofil zum echten Betrieb",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "An Modul 3 anknüpfen: Die Gruppe hat Stärken und Interessen gesammelt und Berufe kennengelernt. Dann den Betrieb vorstellen, den die Leitung ausgesucht hat – Name, Branche, was dort gemacht wird –, und erklären, worum es geht: nicht um einen Ausflug, sondern um einen Forscherauftrag. Die Gruppe soll herausfinden, was man im Internet über einen Beruf nicht erfährt.",
+          "sagen": [
+            "Im Internet steht, was ein Elektriker macht. Wie sich ein Tag in so einem Betrieb anfühlt, seht ihr nur vor Ort.",
+            "Ihr kommt nicht als Besuch, sondern als Forscherteam – mit Fragen, die ihr euch selbst ausdenkt."
+          ]
+        },
+        {
+          "titel": "Der Forscherauftrag: Fragen, Beobachtung, Rollen",
+          "dauer": 25,
+          "phase": "uebung",
+          "text": "Zuerst sammeln: Was wollt ihr über diesen Betrieb und diesen Beruf wissen? Alle Fragen kommen auf Klebezettel und werden gemeinsam sortiert – was man sehen kann, in die Spalte „beobachten“, was man fragen muss, in die Spalte „fragen“. Danach wählt jede Person auf dem Blatt eine Rolle und einen Beobachtungsauftrag und schreibt ihre zwei eigenen Fragen auf, jeweils mit einer möglichen Nachfrage. Die Leitung achtet darauf, dass Fragen dabei sind, die über das Internet hinausgehen: nach dem Ton im Team, nach Fehlern, nach dem Weg in den Beruf.",
+          "sagen": [
+            "Was würdet ihr fragen, wenn ihr dort nächste Woche anfangen müsstet?",
+            "Eine gute Frage kann man nicht mit Ja oder Nein beantworten."
+          ],
+          "punkte": [
+            "Wie sieht ein ganz normaler Tag bei Ihnen aus – von morgens bis abends?",
+            "Was passiert, wenn ein Lehrling einen Fehler macht?",
+            "Was können Leute, die hier gut zurechtkommen – außer dem Fachlichen?",
+            "Welche Sprachen sprechen Sie im Betrieb?",
+            "Wie findet man bei Ihnen einen Praktikums- oder Ausbildungsplatz?",
+            "Was gefällt Ihnen an Ihrem Beruf am meisten – und was nervt?"
+          ],
+          "tipp": "Die Rolle „Dank am Schluss“ passt gut zu Jugendlichen, die ungern Fragen stellen: ein vorbereiteter Satz, ein klarer Moment, danach Anerkennung.",
+          "wennEsKippt": "Kommen nur Fragen nach Lohn und Urlaub, sie nicht streichen – sie sind berechtigt –, aber ergänzen lassen: Was muss man können, um hier gern zu arbeiten? Wer gar keine Frage findet, wählt zwei aus der Liste an der Tafel.",
+          "blatt": "skills-betriebsbesuch"
+        },
+        {
+          "titel": "Treffpunkt, Kleidung, Regeln",
+          "dauer": 5,
+          "phase": "input",
+          "text": "Die Leitung nennt Treffpunkt, Uhrzeiten, Weg und Kleidung (feste Schuhe, nichts Weites, das sich verfangen kann) und liest die Regeln für unterwegs und im Betrieb vor; sie stehen auch auf dem Blatt. Die Jugendlichen tragen Treffpunkt, Linie und Kleidung in Aufgabe 3 des Blatts ein. Wer die Einverständniserklärung noch nicht abgegeben hat, bekommt sie jetzt mit. Offene Fragen klären.",
+          "sagen": [
+            "Was davon ist anders als bei uns im Raum?"
+          ],
+          "punkte": [
+            "Wir bleiben zusammen; wer weg muss, sagt es einer Leitung.",
+            "Im Betrieb gelten dessen Sicherheitsregeln: Was wir nicht anfassen sollen, fassen wir nicht an.",
+            "Handys bleiben in der Tasche; Fotos nur mit Erlaubnis und nie von Personen.",
+            "Wir sind Gäste: grüßen, zuhören, ausreden lassen, danken."
+          ],
+          "blatt": "skills-betriebsbesuch"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Gemeinsam essen, das Thema ruht. Wer mag, schaut sich mit der Leitung Fotos des Betriebs auf dessen Internetseite an."
+        },
+        {
+          "titel": "Probe im Rollenspiel: ankommen, fragen, danken",
+          "dauer": 25,
+          "phase": "aktiv",
+          "text": "Die Leitung setzt einen Hut auf und spielt die Fachkraft; der Raum wird zur Werkstatt. Geprobt werden vier Momente nacheinander, jeweils mit wechselnden Jugendlichen: ankommen und sich vorstellen, eine Frage stellen und nachfragen, mit einer unerwarteten Lage umgehen, sich bedanken. Nach jeder Szene sagt die Gruppe, was gut war, und gibt einen Tipp. In der zweiten Hälfte übernimmt eine freiwillige Person die Fachkraft, und die Leitung beobachtet.",
+          "sagen": [
+            "Ein Satz zur Vorstellung reicht: Ich heiße …, ich interessiere mich für …",
+            "Wenn die Antwort kurz ist, fragt nach: Können Sie ein Beispiel geben?",
+            "Und wenn ihr etwas nicht versteht? Nachfragen oder um eine andere Sprache bitten ist höflich, nicht peinlich."
+          ],
+          "punkte": [
+            "Die Fachkraft antwortet nur mit einem Satz und schaut aufs Handy.",
+            "Sie spricht Luxemburgisch, und jemand versteht nicht alles.",
+            "Ein Kollege ruft etwas Unfreundliches durch die Halle.",
+            "Die Fachkraft fragt zurück: Und was willst du mal werden?"
+          ],
+          "tipp": "Die Frage „Und was willst du mal werden?“ vorher üben: „Das weiß ich noch nicht genau, deshalb bin ich hier“ ist eine ehrliche und gute Antwort. Bei nur zwei Jugendlichen spielen beide jede Szene, die Leitung bleibt Fachkraft.",
+          "wennEsKippt": "Wird die Probe zur Klamauknummer, einmal mitlachen und dann ernst zurückführen: Stellt euch vor, das ist nächste Woche echt, und die Fachkraft hat sich für euch Zeit genommen. Traut sich jemand gar nicht, übernimmt er den Dank oder beobachtet mit dem Blatt und gibt der Gruppe Rückmeldung."
+        },
+        {
+          "titel": "Skill: Der Anker vor der Tür",
+          "dauer": 10,
+          "phase": "skill",
+          "text": "Vor neuen Räumen und fremden Erwachsenen sind viele angespannt. Die Leitung zeigt einen kurzen Anker, der vor jeder fremden Tür funktioniert: stehen bleiben, die Füße spüren, einmal lang ausatmen, innerlich einen Satz sagen. Alle üben ihn dreimal an der echten Tür des Raums – Anker, klopfen, eintreten, sich mit einem Satz vorstellen. Danach schätzt jede Person ihre Besuchs-Zahl vom Anfang neu.",
+          "sagen": [
+            "Füße, Atem, Satz – dann klopfen.",
+            "Wie hoch ist eure Zahl jetzt, wenn ihr an den Besuch denkt?"
+          ],
+          "punkte": [
+            "Füße: Ich stehe.",
+            "Atem: einmal lang aus.",
+            "Satz: Ich bin hier, um zu fragen – nicht, um alles zu wissen."
+          ],
+          "tipp": "Den Satz darf jede Person selbst formulieren. Wer schon einen Satz hat, der trägt, nimmt den."
+        },
+        {
+          "titel": "Réckbléck und Skills-Pass",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Blitzlicht: Auf welche Antwort seid ihr am meisten neugierig? Dann Eintrag in den Skills-Pass und Stempel. Die Blätter bleiben bis zum Besuch im Raum; die Leitung erinnert an Treffpunkt, Uhrzeit, Kleidung und die Einverständniserklärung.",
+          "sagen": [
+            "Auf welche Antwort seid ihr am meisten neugierig?"
+          ],
+          "blatt": "skills-pass"
+        },
+        {
+          "titel": "Termin 2: Check-in am Treffpunkt",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Treffpunkt wie vereinbart, Anwesenheit prüfen. Kurzer Check-in im Stehen: Gefühlsrad als Foto auf dem Handy der Leitung, Anspannung mit den Fingern. Dann die Regeln für unterwegs in drei Sätzen wiederholen, Rollen und Fragen kurz durchgehen, Klemmbretter austeilen. Wer über 70 liegt, macht jetzt seinen Anker.",
+          "sagen": [
+            "Gefühl und Zahl, heute im Stehen und kurz.",
+            "Wer hat welche Rolle? Und wer fragt zuerst?"
+          ],
+          "wennEsKippt": "Fehlt jemand am Treffpunkt, wartet nicht die ganze Gruppe: Die zweite Begleitperson klärt nach den Regeln des Hauses telefonisch, die Gruppe geht pünktlich los. Will jemand am Treffpunkt nicht mehr mit, kurz unter vier Augen nachfragen; wer nicht mitkann, bleibt nach Absprache in der Einrichtung betreut.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Unterwegs zum Betrieb",
+          "dauer": 15,
+          "phase": "aktiv",
+          "text": "Zu Fuß oder mit dem Bus zum Betrieb; die Leitung geht vorn, die zweite Begleitperson hinten. Jedes Paar bekommt eine kleine Aufgabe für den Weg: Wie lange braucht man, welche Linie fährt, wo ist die Haltestelle? So wird der Weg selbst Teil des Auftrags – als Lehrling müsste man ihn jeden Morgen allein schaffen; die Antworten kommen auf Seite 2 des Blatts.",
+          "sagen": [
+            "Stellt euch vor, das ist euer Arbeitsweg. Um wie viel Uhr müsstet ihr morgens los?"
+          ],
+          "tipp": "Liegt der Betrieb weiter weg, diesen Schritt verlängern und die Auswertung in die nächste Einheit legen – lieber ruhig ankommen als gehetzt.",
+          "blatt": "skills-betriebsbesuch"
+        },
+        {
+          "titel": "Führung mit Beobachtungsauftrag",
+          "dauer": 25,
+          "phase": "aktiv",
+          "text": "Im Betrieb führt die Fachkraft durch Werkstatt, Küche, Halle oder Büro. Die Jugendlichen achten auf ihren Beobachtungsauftrag und notieren Stichworte auf dem Klemmbrett; wer fotografiert, tut es nur nach Erlaubnis und ohne Personen. Die Leitung hält sich im Hintergrund, erinnert, wenn nötig, an die Sicherheitsregeln und ermutigt leise zum Fragen. Wo der Betrieb es anbietet, dürfen die Jugendlichen einen Handgriff selbst ausprobieren.",
+          "sagen": [
+            "Was seht ihr, das euch niemand erklärt hat?"
+          ],
+          "tipp": "Kleine Aufgaben zum Ausprobieren – ein Kabel abisolieren, Teig abwiegen, eine Schraube eindrehen – bleiben am stärksten hängen. Den Betrieb vorher fragen, ob so etwas möglich ist.",
+          "wennEsKippt": "Hören einige nicht mehr zu oder werden laut, nicht vor der Fachkraft ermahnen, sondern näher herangehen und leise an den Auftrag erinnern. Wird es gefährlich – Maschinen, Hitze, Leitern –, sofort und klar stoppen: Sicherheit geht vor Höflichkeit.",
+          "blatt": "skills-betriebsbesuch"
+        },
+        {
+          "titel": "Interview und Dank",
+          "dauer": 20,
+          "phase": "uebung",
+          "text": "In einem ruhigen Raum oder einer Ecke stellen die Jugendlichen ihre Fragen. Die Interview-Rolle beginnt, dann fragen die anderen reihum, jeweils mit einer Nachfrage; die Protokoll-Rolle notiert Stichworte. Die Zeitwache gibt nach fünfzehn Minuten ein Zeichen. Zum Schluss übergibt die Person mit der Dank-Rolle die Karte und sagt ihren Satz.",
+          "sagen": [
+            "Wer stellt die erste Frage?",
+            "Vielen Dank, dass Sie sich Zeit für uns genommen haben. Wir haben vieles gesehen, das wir so nicht gewusst hätten."
+          ],
+          "tipp": "Die Fachkraft bitten, auch von ihren eigenen Anfängen zu erzählen – von Fehlern, Umwegen, dem ersten Tag. Solche Geschichten machen Jugendlichen mehr Mut als jede Broschüre.",
+          "wennEsKippt": "Stellt keiner eine Frage, stellt die Leitung die erste aus der Liste und gibt das Wort dann an die Interview-Rolle. Kippt das Gespräch ins Unangenehme – abfällige Bemerkungen über Schulformen, Herkunft oder Sprachen –, höflich und klar umlenken und das Thema später in der Gruppe aufgreifen."
+        },
+        {
+          "titel": "Skill: Fünf Minuten schweigend zurück",
+          "dauer": 5,
+          "phase": "skill",
+          "text": "Nach der Verabschiedung vor dem Betrieb gehen die ersten fünf Minuten des Rückwegs schweigend. Jede Person sortiert im Kopf, was sie mitnimmt: ein Bild, einen Satz, ein Gefühl. Dann darf wieder geredet werden. Erklären: Nach vielen Eindrücken hilft kurze Stille, damit das Wichtige hängen bleibt.",
+          "sagen": [
+            "Fünf Minuten nur gehen und sortieren: ein Bild, ein Satz, ein Gefühl."
+          ]
+        },
+        {
+          "titel": "Rückweg und Imbiss",
+          "dauer": 10,
+          "phase": "pause",
+          "text": "Den Rest des Rückwegs frei reden lassen; unterwegs auf einer Bank oder zurück in der Einrichtung gibt es den Imbiss. Die Leitung hört zu, was die Jugendlichen spontan erzählen, und merkt es sich für die Auswertung."
+        },
+        {
+          "titel": "Auswertung: Passt das zu mir?",
+          "dauer": 10,
+          "phase": "uebung",
+          "text": "Im Kreis, das Blatt auf dem Schoß. Jede Person füllt den Teil „Nach dem Besuch“ aus: Skala, Überraschung, Skills, die im Betrieb gebraucht werden, nächster Schritt. Dann eine Runde: Was hat euch überrascht? Zum Schluss sammelt die Leitung an der Tafel, welche Skills aus dem Kurs im Betrieb gebraucht werden – pünktlich sein, mit Kritik umgehen, nachfragen, ruhig bleiben unter Zeitdruck. Wer mag, trägt den Beruf in sein Berufsprofil aus Modul 3 ein.",
+          "sagen": [
+            "Was hat euch überrascht – im Guten oder im Schlechten?",
+            "Welche Skills aus unserem Kurs habt ihr dort gesehen, auch wenn sie keiner so genannt hat?",
+            "Eine Zwei auf der Skala ist genauso wertvoll wie eine Neun: Jetzt wisst ihr mehr."
+          ],
+          "tipp": "Eine niedrige Zahl auf der Skala ausdrücklich würdigen. Herauszufinden, was nicht passt, ist bei der Berufswahl ein echter Fortschritt.",
+          "wennEsKippt": "Wertet die Gruppe den Beruf pauschal ab („Das machen doch nur …“), nachfragen: Was genau habt ihr gesehen, das dagegen spricht? So wird aus einem Urteil eine Beobachtung.",
+          "blatt": "skills-betriebsbesuch"
+        },
+        {
+          "titel": "Réckbléck und Skills-Pass",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Blitzlicht: ein Satz zum Besuch. Dann Eintrag in den Skills-Pass und Stempel. Wer mag, schreibt einen Satz auf die zweite Dankeskarte, die die Leitung an den Betrieb schickt.",
+          "sagen": [
+            "Ein Satz: Was nehmt ihr aus dem Betrieb mit?"
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "hintergrund": "Berufswahl ist im Jugendalter vor allem Erkundung: Super (1980) beschreibt die Jahre ab etwa 15 als Phase, in der Jugendliche Rollen ausprobieren und ihre Vorstellungen an der Wirklichkeit prüfen. Nach Holland (1997) fühlen sich Menschen in Arbeitsumwelten wohl, die zu ihren Interessen passen – ob das so ist, lässt sich vor Ort besser einschätzen als am Bildschirm. Ein Betriebsbesuch liefert zudem Vorbilder: Wer sieht, wie eine Fachkraft mit Fehlern, Zeitdruck und Kollegen umgeht, lernt am Modell, und wer eigene Fragen stellt und Antworten bekommt, macht eine kleine Bewältigungserfahrung (Bandura, 1977). Der Forscherauftrag gibt dem Besuch eine Struktur und lässt die Jugendlichen selbst wählen, was sie wissen wollen; selbst gewählte Ziele werden ausdauernder verfolgt (Deci & Ryan, 2000).",
+      "quellen": [
+        "Super, D. E. (1980). A life-span, life-space approach to career development. Journal of Vocational Behavior, 16(3), 282–298.",
+        "Holland, J. L. (1997). Making Vocational Choices (3rd ed.). Odessa, FL: Psychological Assessment Resources.",
+        "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
+        "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268."
+      ],
+      "achtung": "Aufsicht, Versicherung, Einverständniserklärungen und Begleitung nach den Regeln des Hauses und mit der zuständigen Leitung (Responsable) klären; im Betrieb gelten dessen Sicherheits- und Hygieneregeln. Keine Informationen über einzelne Jugendliche an den Betrieb weitergeben. Fotos nur mit Erlaubnis und ohne Personen. Jugendliche mit großer Angst vor Neuem bekommen eine Rolle ohne Sprechen und dürfen den Besuch mit einer Begleitperson abbrechen; wer nicht mitkommt, wird in der Einrichtung betreut. Abwertende Bemerkungen über Schulformen, Herkunft oder Sprachen – auch von Erwachsenen im Betrieb – ruhig und klar begrenzen und nachbesprechen. Erzählt jemand unterwegs von Belastendem, zuhören, nicht vor der Gruppe vertiefen und ein Gespräch anbieten; bei Hinweisen auf Gefährdung nach dem internen Schutzkonzept handeln."
+    },
+    {
+      "id": "j3-j02",
+      "nr": 2,
+      "jahr": 3,
+      "modul": "joker",
+      "joker": true,
+      "passt": "jederzeit, am besten nach Einheit 16; über zwei Termine im Abstand von ein bis zwei Wochen",
+      "titel": "Ein Menü für unsere Gäste",
+      "kurz": "Die Gruppe plant, budgetiert und kocht ein Menü für eingeladene Gäste – mit Rollen, Zeitplan und Gastgeber-Skills, sicher bei Allergien und Hygiene.",
+      "dauer": 200,
+      "ziele": [
+        "planen für eingeladene Gäste ein Menü, das Allergien und Essensregeln berücksichtigt, und halten ein festes Budget ein",
+        "bauen einen Zeitplan rückwärts und übernehmen feste Rollen in Küche, Service und Empfang",
+        "kochen nach Hygieneregeln und bleiben ruhig, wenn in der Küche etwas schiefgeht",
+        "üben Gastgeber-Skills: begrüßen, das Menü vorstellen, Gespräche führen, verabschieden"
+      ],
+      "material": [
+        "Gefühlsrad (A3, laminiert), Wäscheklammern, Anspannungsskala 0–100",
+        "Schülerblatt „Unser Menü für Gäste“ je Person, dazu eine Ausgabe in A3 für die Gruppe",
+        "Einladungskarten mit Rückmeldeabschnitt für Allergien und Essensregeln",
+        "Kochbücher oder ausgedruckte einfache Rezepte, auch vegetarisch; Taschenrechner",
+        "Das Budget der Einrichtung, Einkaufstaschen, Kühltasche",
+        "Küche mit Herd und Ofen, Schneidebretter in zwei Farben (eines nur für rohes Fleisch oder Fisch), Messer, Töpfe, Schüsseln, Schürzen, Haargummis, Pflaster und Einmalhandschuhe",
+        "Tischdecke, Geschirr und Besteck für alle Gäste, Servietten; Kerzen nur nach Hausordnung, sonst LED",
+        "Klangschale oder Glocke als Küchensignal, eine gut sichtbare Uhr",
+        "Skills-Pässe, Stempel, Imbiss für Termin 1"
+      ],
+      "vorbereitung": [
+        "Mit der zuständigen Leitung (Responsable) Budget, Küche, Termine und Gäste abstimmen. Gäste können Eltern, das Team oder eine andere Gruppe sein; für Jugendliche, deren Familie nicht kommen kann oder soll, von Anfang an Gäste aus dem Team vorsehen.",
+        "Einladungen mit Rückmeldeabschnitt spätestens zwei Wochen vorher verschicken und die Allergien, Unverträglichkeiten und Essensregeln aller Gäste und Jugendlichen in einer Liste sammeln.",
+        "Bei schweren Allergien mit Notfallmedikament Rücksprache mit der Familie halten: Aufbewahrungsort und Anwendung müssen bekannt sein.",
+        "Prüfen, ob ein Supermarkt in wenigen Gehminuten liegt (Variante A in Schritt 6); sonst Prospekte oder Online-Preise bereitlegen (Variante B).",
+        "Die verderblichen Zutaten am Kochtag mit zwei Jugendlichen einkaufen oder selbst besorgen; Kühlkette beachten.",
+        "Die Gäste bitten, beim Essen echte Fragen zu stellen – nach dem Rezept, der Planung, dem schwierigsten Moment in der Küche."
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-menue-plan",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Gefühlsrad, Anspannung, bestes Essen"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Der Auftrag: ein Menü für Gäste"
+        },
+        {
+          "min": "15–35",
+          "phase": "uebung",
+          "titel": "Gäste, Allergien und Menü"
+        },
+        {
+          "min": "35–45",
+          "phase": "uebung",
+          "titel": "Budget und Einkaufsliste"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–80",
+          "phase": "aktiv",
+          "titel": "Preis-Detektive"
+        },
+        {
+          "min": "80–90",
+          "phase": "uebung",
+          "titel": "Rollen und Zeitplan rückwärts"
+        },
+        {
+          "min": "90–95",
+          "phase": "skill",
+          "titel": "Skill: Der Pannen-Stopp"
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Réckbléck und Skills-Pass"
+        },
+        {
+          "min": "100–110",
+          "phase": "ankommen",
+          "titel": "Termin 2: Check-in mit Schürze und Küchenregeln"
+        },
+        {
+          "min": "110–150",
+          "phase": "aktiv",
+          "titel": "Kochen nach Zeitplan"
+        },
+        {
+          "min": "150–155",
+          "phase": "skill",
+          "titel": "Skill: Durchatmen, bevor die Gäste kommen"
+        },
+        {
+          "min": "155–180",
+          "phase": "uebung",
+          "titel": "Gäste empfangen und gemeinsam essen"
+        },
+        {
+          "min": "180–192",
+          "phase": "aktiv",
+          "titel": "Aufräumen im Team"
+        },
+        {
+          "min": "192–200",
+          "phase": "abschluss",
+          "titel": "Auswertung, Réckbléck und Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: Gefühlsrad, Anspannung, bestes Essen",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Gefühlsrad und Anspannung wie gewohnt, dazu eine leichte Frage: Was ist das Beste, was du je gegessen hast – und was würdest du nie kochen? Die Leitung beginnt. Nebenbei hört sie, wer gern kocht und wer eher Respekt vor der Küche hat; das hilft später bei den Rollen.",
+          "sagen": [
+            "Gefühl, Zahl – und das beste Essen, an das ihr euch erinnert.",
+            "Was würdet ihr nie kochen? Ehrliche Antworten sind erlaubt."
+          ],
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Der Auftrag: ein Menü für Gäste",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "An Einheit 16 anknüpfen, in der die Gruppe schon einfach gekocht hat. Dann den Auftrag nennen: In ein bis zwei Wochen kocht die Gruppe ein Menü mit drei Gängen für eingeladene Gäste, mit festem Budget und in fester Zeit. Wer eingeladen wird, entscheidet die Gruppe mit der Leitung. Klar sagen: Die Gäste kommen, weil sie sich auf das Essen freuen, nicht um zu prüfen.",
+          "sagen": [
+            "Beim letzten Mal habt ihr für euch gekocht. Jetzt kocht ihr für andere – das ist eine andere Liga.",
+            "Ihr seid die Gastgeber. Die Gäste kommen, um es sich gut gehen zu lassen, nicht um euch zu bewerten."
+          ],
+          "tipp": "Wer seine Familie nicht einladen möchte oder kann, muss das nicht begründen. Gäste aus dem Team oder einer anderen Gruppe sind von Anfang an gleichwertig eingeplant."
+        },
+        {
+          "titel": "Gäste, Allergien und Menü",
+          "dauer": 20,
+          "phase": "uebung",
+          "text": "Zuerst die Gästeliste festlegen und die Allergien, Unverträglichkeiten und Essensregeln aus den Rückmeldungen in die Tabelle auf dem A3-Blatt übertragen; den Kasten mit den 14 Allergenen gemeinsam lesen. Dann das Menü planen: eine einfache Vorspeise, ein Hauptgang, ein Nachtisch, alles in 40 Minuten machbar und für alle Gäste essbar. Jeder Vorschlag wird an der Allergie-Liste geprüft, bevor er aufs Blatt kommt. Die Leitung bringt Rezepte mit, entscheidet aber nicht.",
+          "sagen": [
+            "Kann jeder Gast alles essen? Wenn nicht: Gibt es eine Variante, die für alle passt?",
+            "Lieber drei einfache Gänge, die gelingen, als einer, der uns über den Kopf wächst."
+          ],
+          "punkte": [
+            "Vorspeise: Gemüsesticks mit Joghurt-Dip, Tomatensalat, Linsensuppe",
+            "Hauptgang: Ofengemüse mit Couscous, Pasta mit Tomatensoße und Gemüse, Wraps zum Selberfüllen",
+            "Nachtisch: Obstsalat, Joghurtcreme mit Früchten, Apfelcrumble"
+          ],
+          "tipp": "Versteckte Allergene sind die eigentliche Falle: Hummus enthält meist Sesam, Pesto oft Nüsse, Brühe manchmal Sellerie. Deshalb beim Einkauf jede Zutatenliste lesen.",
+          "wennEsKippt": "Streitet die Gruppe über das Menü, zwei Vorschläge gegenüberstellen und mit Klebepunkten abstimmen; die unterlegene Seite darf den Nachtisch bestimmen. Wird über die Essensregeln einer Familie gewitzelt, sofort und freundlich stoppen: Hier kocht jeder für alle.",
+          "blatt": "skills-menue-plan"
+        },
+        {
+          "titel": "Budget und Einkaufsliste",
+          "dauer": 10,
+          "phase": "uebung",
+          "text": "Die Leitung nennt das Budget. Die Gruppe schreibt die Einkaufsliste mit Mengen für alle Personen und schätzt die Preise, bevor nachgeschaut wird. Was schon in der Küche vorhanden ist – Öl, Salz, Gewürze –, wird gestrichen. Liegt die Schätzung über dem Budget, sucht die Gruppe selbst, wo sie spart: kleinere Portionen, Eigenmarke, ein Gang weniger aufwendig.",
+          "sagen": [
+            "Was kostet ein Kilo Nudeln? Schätzt erst, dann schauen wir nach.",
+            "Wir liegen drüber. Wo würdet ihr sparen, ohne dass es die Gäste merken?"
+          ],
+          "tipp": "Mengen für Gäste unterschätzen fast alle. Eine Faustregel an die Tafel: lieber etwas mehr als zu wenig – Reste gehen beschriftet in den Kühlschrank oder in die nächste Pause.",
+          "blatt": "skills-menue-plan"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Gemeinsam essen, das Thema ruht. Die Leitung prüft nebenbei, ob die Einkaufsliste für Variante A oder B aufgeteilt werden muss."
+        },
+        {
+          "titel": "Preis-Detektive",
+          "dauer": 20,
+          "phase": "aktiv",
+          "text": "Variante A, wenn ein Supermarkt in wenigen Gehminuten liegt: Die Gruppe geht gemeinsam los, im Laden sucht jedes Paar einen Teil der Liste, trägt die echten Preise ein, vergleicht Eigenmarke und Markenprodukt und prüft auf jeder Packung die Zutatenliste auf Allergene; die haltbaren Zutaten werden gleich gekauft. Variante B: dasselbe mit Prospekten oder Online-Preisen am Tisch, als Staffel – jedes Paar läuft mit einem gefundenen Preis zur Tafel und trägt ihn ein. Zum Schluss rechnet die Gruppe zusammen: Liegen wir im Budget?",
+          "sagen": [
+            "Wo steht auf der Packung, was drin ist? Sucht die hervorgehobenen Wörter in der Zutatenliste.",
+            "Marke oder Eigenmarke – schmeckt man den Unterschied im Crumble?"
+          ],
+          "tipp": "Allergene sind in der Zutatenliste hervorgehoben, meist fett gedruckt. Wer das einmal gesucht hat, liest Packungen danach anders.",
+          "wennEsKippt": "Zerstreut sich die Gruppe im Supermarkt, einen festen Treffpunkt an der Kasse nach zwölf Minuten vereinbaren und jedem Paar nur eine kurze Liste geben. Bei nur zwei Jugendlichen geht die Leitung als dritte Person mit, und die Liste wird zu dritt abgearbeitet.",
+          "blatt": "skills-menue-plan"
+        },
+        {
+          "titel": "Rollen und Zeitplan rückwärts",
+          "dauer": 10,
+          "phase": "uebung",
+          "text": "Die Rollen werden verteilt; jede Person bekommt eine Hauptrolle und eine zweite Aufgabe beim Aufräumen. Dann den Zeitplan rückwärts bauen: Die Gäste kommen zu einer festen Zeit – was muss fünf Minuten vorher fertig sein, was zwanzig, was vierzig? Der Plan kommt groß auf das A3-Blatt und hängt am Kochtag an der Küchenwand.",
+          "sagen": [
+            "Wann kommen die Gäste? Dann rechnen wir von da aus rückwärts.",
+            "Wer übernimmt den Empfang? Das ist die Rolle, die man am meisten sieht."
+          ],
+          "punkte": [
+            "Küchenchefin oder Küchenchef: behält den Zeitplan im Blick und darf den Pannen-Stopp ausrufen",
+            "Vorspeise, Hauptgang, Nachtisch: je ein Team",
+            "Service: deckt den Tisch und bringt die Gänge",
+            "Empfang: begrüßt die Gäste und stellt das Menü vor",
+            "Hygiene-Wache: achtet auf Händewaschen, Bretter und Kühlschrank"
+          ],
+          "tabelle": {
+            "spalten": [
+              "Minute",
+              "Was passiert?",
+              "Wer?"
+            ],
+            "zeilen": [
+              [
+                "0",
+                "Hände waschen, Schürzen, Plan lesen",
+                "alle"
+              ],
+              [
+                "5",
+                "Ofen an, Gemüse schneiden",
+                "Hauptgang"
+              ],
+              [
+                "15",
+                "Nachtisch vorbereiten und kalt stellen",
+                "Nachtisch"
+              ],
+              [
+                "25",
+                "Tisch decken",
+                "Service"
+              ],
+              [
+                "35",
+                "Vorspeise anrichten, Küche grob aufräumen",
+                "Vorspeise, alle"
+              ],
+              [
+                "40",
+                "Durchatmen, Rollen-Check",
+                "alle"
+              ],
+              [
+                "45",
+                "Die Gäste kommen",
+                "Empfang"
+              ]
+            ]
+          },
+          "tipp": "Die Empfangsrolle freiwillig und gern zu zweit vergeben, nicht automatisch an die Lauteste. Wer sonst wenig sichtbar ist, wächst oft genau in dieser Rolle.",
+          "blatt": "skills-menue-plan"
+        },
+        {
+          "titel": "Skill: Der Pannen-Stopp",
+          "dauer": 5,
+          "phase": "skill",
+          "text": "Beim Kochen geht fast immer etwas schief: Etwas brennt an, ein Glas fällt, die Soße wird nichts. Die Leitung führt den Pannen-Stopp ein, den die Küchenchefin oder der Küchenchef ausrufen darf: Stopp – Herd kleiner – einmal lang ausatmen – sagen, was los ist – gemeinsam die nächste Lösung suchen. Alle üben ihn zweimal im Stehen an einem ausgedachten Missgeschick. Erklären: Wer in der Hitze einen Moment stoppt, verhindert, dass aus einem kleinen Fehler ein großer wird.",
+          "sagen": [
+            "Stopp! Herd kleiner. Einmal aus. Was ist los – und was machen wir jetzt?",
+            "Ein angebrannter Topf ist kein Drama. Hektik ist das Drama."
+          ],
+          "tipp": "Hat die Gruppe in Kursjahr 2 im Joker „Kochen im Team“ gekocht, kennt sie Küchenrufe und den Küchen-Stopp als feste Zwischenrunde. Beides darf wieder mit – der Pannen-Stopp kommt für den Moment dazu, in dem etwas schiefgeht."
+        },
+        {
+          "titel": "Réckbléck und Skills-Pass",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Blitzlicht: Worauf freut ihr euch am Kochtag, was macht euch Sorgen? Dann Eintrag in den Skills-Pass und Stempel. Das A3-Blatt bleibt im Raum; die Leitung klärt, wer am Kochtag mit ihr die frischen Zutaten einkauft.",
+          "sagen": [
+            "Worauf freut ihr euch – und was muss bis zum Kochtag noch geklärt werden?"
+          ],
+          "blatt": "skills-pass"
+        },
+        {
+          "titel": "Termin 2: Check-in mit Schürze und Küchenregeln",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Schürzen an, Haare zusammen, Schmuck ab, Hände waschen. Dann im Stehen in der Küche: Gefühlsrad und Anspannung im Schnelldurchlauf, danach liest die Hygiene-Wache die Küchenregeln vom Blatt vor. Die Leitung zeigt die zwei Schneidebretter, den Platz für Rohes und den Kühlschrank und hängt die Allergie-Liste gut sichtbar auf. Der Zeitplan hängt an der Wand.",
+          "sagen": [
+            "Gefühl und Zahl im Schnelldurchlauf – heute ist die Küche unser Kreis.",
+            "Hygiene-Wache, du hast das Wort."
+          ],
+          "tipp": "Kleine Wunden mit Pflaster und Einmalhandschuh abdecken. Wer krank ist oder gerade Magen-Darm hatte, kocht heute nicht, sondern übernimmt Service oder Empfang.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Kochen nach Zeitplan",
+          "dauer": 40,
+          "phase": "aktiv",
+          "text": "Die Teams arbeiten nach Plan; die Küchenchefin oder der Küchenchef fragt alle zehn Minuten den Stand ab: Was ist fertig, was hängt? Die Leitung arbeitet mit, übernimmt heiße und scharfe Arbeitsschritte, wo es nötig ist, und hält sich sonst zurück. Messer, heißes Fett und Ofen bleiben unter Aufsicht. Ab Minute 25 deckt das Service-Team den Tisch, ab Minute 35 wird die Küche grob aufgeräumt.",
+          "sagen": [
+            "Stand-Abfrage: Was ist fertig, wo braucht ihr Hilfe?",
+            "Wenn etwas schiefgeht: Pannen-Stopp. Erst halten, dann retten."
+          ],
+          "tipp": "Bei wenig Energie oder nur zwei Jugendlichen das Menü auf Hauptgang und Nachtisch kürzen; die Vorspeise übernimmt die Leitung oder fällt weg.",
+          "wennEsKippt": "Brennt etwas an oder kippt eine Soße, den Pannen-Stopp ausrufen lassen und erst dann gemeinsam retten. Gerät ein Team in Streit, das Team kurz trennen: Eine Person holt Zutaten, die andere arbeitet weiter. Wer mit einem Messer herumalbert, legt es sofort ab und bekommt eine andere Aufgabe."
+        },
+        {
+          "titel": "Skill: Durchatmen, bevor die Gäste kommen",
+          "dauer": 5,
+          "phase": "skill",
+          "text": "Kurz vor den Gästen versammelt sich die Gruppe im Essraum. Drei ruhige Atemzüge gemeinsam, dann sagt jede Person einen Satz: Heute bin ich zuständig für … Die Empfangsrolle sagt ihren Begrüßungssatz einmal zur Probe, und alle zeigen ihre Anspannung mit den Fingern.",
+          "sagen": [
+            "Drei Atemzüge. Und jetzt: Wofür bist du heute zuständig?",
+            "Ihr habt das vorbereitet. Jetzt dürft ihr es genießen."
+          ]
+        },
+        {
+          "titel": "Gäste empfangen und gemeinsam essen",
+          "dauer": 25,
+          "phase": "uebung",
+          "text": "Die Empfangsrolle begrüßt die Gäste an der Tür, führt sie an den Tisch und stellt das Menü vor – mit einem Satz zu jedem Gang und dem Hinweis auf Allergene. Das Service-Team bringt die Gänge. Beim Essen sitzen die Jugendlichen zwischen den Gästen und nutzen die Gastgeber-Sätze vom Blatt: nachfragen, zuhören, anbieten. Die Leitung hält sich bewusst zurück und überlässt den Jugendlichen die Gastgeberrolle. Zum Schluss verabschiedet die Empfangsrolle die Gäste.",
+          "sagen": [
+            "Herzlich willkommen. Heute haben wir für Sie gekocht: …",
+            "Möchten Sie noch etwas? Der Nachtisch ist ohne Nüsse."
+          ],
+          "punkte": [
+            "Begrüßen: Blickkontakt, Name, ein Satz zum Ablauf",
+            "Das Menü vorstellen: pro Gang ein Satz, Allergene nennen",
+            "Nachfragen: Wie schmeckt es Ihnen? Kennen Sie das Gericht?",
+            "Anbieten statt drängen: Möchten Sie noch etwas?",
+            "Verabschieden: Danke fürs Kommen"
+          ],
+          "tipp": "Gäste, die nach der Planung oder dem schwierigsten Moment in der Küche fragen, sind ein Geschenk: Wer über seine Arbeit erzählen darf, merkt, was er geleistet hat.",
+          "wennEsKippt": "Macht ein Gast eine abfällige Bemerkung über das Essen oder über einen Jugendlichen, freundlich und klar für die Gruppe Partei ergreifen und das Gespräch umlenken. Zieht sich jemand in die Küche zurück, darf er dort den Service übernehmen – auch das ist Gastgeben.",
+          "blatt": "skills-menue-plan"
+        },
+        {
+          "titel": "Aufräumen im Team",
+          "dauer": 12,
+          "phase": "aktiv",
+          "text": "Aufräumen gehört zum Menü: Jede Person hat ihre zweite Aufgabe aus Termin 1 – spülen, abtrocknen, abräumen, Reste verpacken, Küche wischen, Müll trennen. Musik ist erlaubt. Die Leitung macht mit und achtet darauf, dass niemand übrig bleibt. Reste werden beschriftet und gekühlt oder gerecht verteilt.",
+          "sagen": [
+            "Zweite Aufgabe: Wer spült, wer trocknet, wer macht den Tisch?"
+          ],
+          "tipp": "Eine Abwasch-Staffel beschleunigt: Eine Person spült, eine trocknet, eine räumt ein – nach fünf Minuten wird getauscht."
+        },
+        {
+          "titel": "Auswertung, Réckbléck und Skills-Pass",
+          "dauer": 8,
+          "phase": "abschluss",
+          "text": "Im Kreis, ohne Gäste. Drei kurze Fragen: Was hat als Team funktioniert? Wann hat jemand einen Skill gebraucht – den Pannen-Stopp, einen Atemzug, ein freundliches Nein? Was würdet ihr beim nächsten Mal anders machen? Dann Eintrag in den Skills-Pass und Stempel; wer mag, schreibt einen Gastgeber-Satz dazu.",
+          "sagen": [
+            "Was hat als Team funktioniert – und woran habt ihr das gemerkt?",
+            "Wo habt ihr heute einen Skill gebraucht, ohne dass es jemand gemerkt hat?"
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "hintergrund": "Für andere zu kochen verbindet mehrere Lernfelder in einer echten Aufgabe: planen, rechnen, zusammenarbeiten, sich um Gäste kümmern. Nach Deci und Ryan (2000) wird Motivation getragen, wenn Menschen selbst entscheiden, sich als fähig erleben und dazugehören – ein Menü, das die Gruppe selbst plant und für Gäste kocht, spricht alle drei Bedürfnisse an. Das sichtbare Gelingen vor Gästen ist eine Bewältigungserfahrung, die stärkste Quelle von Selbstwirksamkeit (Bandura, 1977). Das Rechnen mit einem echten Budget übt Finanzwissen dort, wo es gebraucht wird; es hängt mit besseren Geldentscheidungen zusammen und ist bei jungen Menschen oft gering (Lusardi & Mitchell, 2014). Programme zum sozial-emotionalen Lernen wirken besonders, wenn Fertigkeiten aktiv geübt werden (Durlak et al., 2011) – hier: ruhig bleiben unter Zeitdruck und sich um andere kümmern.",
+      "quellen": [
+        "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268.",
+        "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
+        "Lusardi, A. & Mitchell, O. S. (2014). The economic importance of financial literacy: Theory and evidence. Journal of Economic Literature, 52(1), 5–44.",
+        "Durlak, J. A., Weissberg, R. P., Dymnicki, A. B., Taylor, R. D. & Schellinger, K. B. (2011). The impact of enhancing students’ social and emotional learning: A meta-analysis of school-based universal interventions. Child Development, 82(1), 405–432."
+      ],
+      "achtung": "Allergien und Unverträglichkeiten von Gästen und Jugendlichen vorher schriftlich sammeln, beim Einkauf jede Zutatenliste prüfen und beim Kochen Kreuzkontakt vermeiden (eigene Bretter, Löffel, Schüsseln). Bei schweren Allergien mit Notfallmedikament vorher mit der Familie klären, wo es liegt und wer es anwenden kann; im Notfall 112. Essensregeln aus Religion oder Überzeugung werden respektiert, nicht kommentiert. Keine Bemerkungen über Portionen, Gewicht oder Kalorien; niemand muss probieren oder aufessen – bei Hinweisen auf Essprobleme später ein Einzelgespräch. Messer, Herd und Ofen nur unter Aufsicht. Wer seine Familie nicht einladen möchte oder kann, muss das nicht begründen, und der Grund wird nicht in der Gruppe besprochen. Fotos nur mit Einverständnis. Werden beim Planen oder Essen familiäre Belastungen sichtbar, ein Gespräch anbieten und bei Hinweisen auf Gefährdung nach dem internen Schutzkonzept handeln."
+    },
+    {
+      "id": "j3-j03",
+      "nr": 3,
+      "jahr": 3,
+      "modul": "joker",
+      "joker": true,
+      "passt": "nach Modul 7, wenn die Debattierregeln aus Einheit 25 bekannt sind",
+      "titel": "Debattier-Turnier",
+      "kurz": "Die Gruppe trägt ein kleines Turnier mit den Debattierregeln aus Einheit 25 aus: mit gelosten Seiten, einer Jury, fairen Rückmeldungen und einem Plan für den Moment, in dem man verliert.",
+      "dauer": 100,
+      "ziele": [
+        "vertreten eine zugeloste Position mit Behauptung, Begründung und Beispiel – auch eine, die nicht ihrer Meinung entspricht",
+        "bewerten als Jury nach vereinbarten Kriterien und geben jeder Seite ein Lob und einen Tipp",
+        "legen vor dem Turnier fest, was sie tun, wenn sie verlieren, und wenden ihren Frust-Plan an"
+      ],
+      "material": [
+        "Gefühlsrad (A3, laminiert), Wäscheklammern, Anspannungsskala 0–100",
+        "Die Debattenregeln vom Blatt „Die Mini-Debatte“ aus Einheit 25, groß auf ein Plakat übertragen",
+        "Schülerblatt „Debattier-Turnier“ je Person; Seite 2 (Jury) zusätzlich einmal je Debatte kopiert; das Blatt „Mein Argument“ aus Einheit 25 aus den Mappen",
+        "Themenkarten (Liste in Schritt 4), Lose für Pro und Contra, Stoppuhr, Klangschale oder Glocke",
+        "Zwei Stehpulte oder zwei Stühle, deren Lehnen als Pult dienen; Kreppband für die Meinungslinie",
+        "Kleine Preise oder Urkunden für das Siegerteam, für Fairplay und für die beste Nachfrage",
+        "Skills-Pässe, Stempel, Imbiss und Getränke"
+      ],
+      "vorbereitung": [
+        "Themen auswählen und prüfen: nichts, was die Lebenslage einer Person in der Gruppe direkt berührt – Herkunft, Aufenthalt, Religion, Familie, Körper. Leichte Themen für das Finale bereithalten.",
+        "Die Debattenregeln aus Einheit 25 auf ein Plakat übertragen; ergänzt wird nur die Regel zur Jury.",
+        "Die Meinungslinie mit Kreppband auf den Boden kleben: ein Ende „Ich bin dafür“, das andere „Ich bin dagegen“.",
+        "Den Turnierplan nach Gruppengröße festlegen (Tabelle in Schritt 3) und an die Tafel schreiben.",
+        "Mit Jugendlichen, die bei Niederlagen schnell hochgehen, vorher kurz unter vier Augen sprechen und ihren Frust-Plan vorbereiten."
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-debattier-turnier",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Gefühlsrad, Anspannung, Verlier-Zahl"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Die Regeln aus Einheit 25"
+        },
+        {
+          "min": "15–25",
+          "phase": "input",
+          "titel": "Turnierplan, Jury und Frust-Plan"
+        },
+        {
+          "min": "25–45",
+          "phase": "uebung",
+          "titel": "Seiten losen, Argumente bauen"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–90",
+          "phase": "aktiv",
+          "titel": "Das Turnier mit Meinungslinie"
+        },
+        {
+          "min": "90–95",
+          "phase": "skill",
+          "titel": "Skill: Frust-Check nach der Siegerehrung"
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Réckbléck und Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: Gefühlsrad, Anspannung, Verlier-Zahl",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Gefühlsrad und Anspannung wie gewohnt. Dazu eine ehrliche Zusatzfrage mit den Fingern: Wie gut könnt ihr verlieren, von 0 (gar nicht) bis 10 (völlig egal)? Die Leitung beginnt und nennt eine ehrliche, nicht zu hohe Zahl. Die Zahlen merken, nicht kommentieren: Sie kommen am Ende wieder.",
+          "sagen": [
+            "Gefühl, Zahl – und wie gut könnt ihr verlieren, 0 bis 10 Finger?",
+            "Wer ehrlich eine Drei zeigt, ist heute genau richtig. Um diese Drei geht es nachher."
+          ],
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Die Regeln aus Einheit 25",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "Das Plakat mit den Debattenregeln aus Einheit 25 aufhängen und zwei Personen bitten, die Regeln in eigenen Worten zu erklären; fehlt etwas Wichtiges, ergänzt die Leitung aus der Liste. Neu ist nur die letzte Regel zur Jury. Dann den Tag ankündigen: Heute wird nicht geübt, heute zählt es – mit Jury, Punkten und einer Siegerehrung.",
+          "sagen": [
+            "Wer erklärt uns die Regeln, ohne aufs Plakat zu schauen?",
+            "Heute gibt es Gewinner. Und es gibt einen Plan für alle, die nicht gewinnen."
+          ],
+          "punkte": [
+            "Wir greifen Argumente an, nie Personen, ihre Herkunft, ihren Glauben oder ihr Aussehen.",
+            "Wer spricht, wird nicht unterbrochen. Die Redezeit ist für alle gleich.",
+            "Wer widerspricht, fasst zuerst zusammen, was die andere Seite gesagt hat.",
+            "Kein Auslachen, kein Augenrollen, keine Killerphrasen.",
+            "Neu im Turnier: Die Jury entscheidet. Über die Wertung wird nicht gestritten, nachfragen ist erlaubt."
+          ]
+        },
+        {
+          "titel": "Turnierplan, Jury und Frust-Plan",
+          "dauer": 10,
+          "phase": "input",
+          "text": "Den Turnierplan an der Tafel erklären: Debattiert wird in Teams zu zweit, die Seite wird gelost, und wer gerade nicht debattiert, bildet die Jury. Dann den Jurybogen auf Seite 2 des Blatts zeigen: Die Jury vergleicht beide Seiten in fünf Punkten und entscheidet mit Mehrheit. Zum Schluss schreibt jede Person ihren Frust-Plan auf das Blatt – vor dem Turnier, nicht danach. Erklären, warum: Einen Plan für den Ärger macht man, solange man noch ruhig ist.",
+          "sagen": [
+            "Ihr sucht euch eure Seite nicht aus. Genau das macht es interessant.",
+            "Wer schon vorher weiß, was er beim Verlieren tut, muss es im Ärger nicht erst erfinden."
+          ],
+          "tabelle": {
+            "spalten": [
+              "Gruppe",
+              "So läuft das Turnier"
+            ],
+            "zeilen": [
+              [
+                "4 Personen",
+                "Zwei Teams, zwei Debatten mit getauschten Seiten; die Leitung ist Jury, dazu zählt die Meinungslinie."
+              ],
+              [
+                "5 Personen",
+                "Zwei Teams und eine Person als Jury-Vorsitz und Zeitwache; zwei Debatten, danach ein Blitz-Finale."
+              ],
+              [
+                "6 Personen",
+                "Drei Teams: A gegen B, B gegen C, C gegen A; das freie Team ist Jury."
+              ],
+              [
+                "7 Personen",
+                "Drei Teams und eine Person als Zeitwache; Ablauf wie bei 6."
+              ],
+              [
+                "8 Personen",
+                "Vier Teams: zwei Halbfinals, die freien Teams sind Jury; die Sieger bestreiten das Blitz-Finale."
+              ]
+            ]
+          },
+          "tipp": "Die Seiten zu losen, ist der Kern des Turniers: Wer eine Meinung vertreten muss, die nicht die eigene ist, lernt die andere Seite von innen kennen – und merkt, dass Argument und Person zweierlei sind.",
+          "wennEsKippt": "Protestiert jemand gegen seine geloste Seite („Das sehe ich total anders“), genau das würdigen: Dann weißt du am besten, was die anderen sagen werden. Tauschen ist nicht erlaubt, ein Joker für eine neue Themenkarte schon – einmal pro Team.",
+          "blatt": "skills-debattier-turnier"
+        },
+        {
+          "titel": "Seiten losen, Argumente bauen",
+          "dauer": 20,
+          "phase": "uebung",
+          "text": "Jedes Team zieht eine Themenkarte und eine Seite; Teams, die zweimal debattieren, ziehen zwei. Die Teams bereiten sich mit dem Blatt vor: drei Argumente nach dem Muster Behauptung – Begründung – Beispiel, dazu das stärkste Argument der Gegenseite und eine Antwort darauf. Wer das Blatt „Mein Argument“ aus Einheit 25 in der Mappe hat, legt es als Spickzettel daneben. Die Leitung geht herum, hilft bei Beispielen aus dem Alltag und achtet darauf, dass im Team beide sprechen werden. In den letzten fünf Minuten probt jedes Team seine Eröffnung einmal leise.",
+          "sagen": [
+            "Behauptung, Begründung, Beispiel. Ohne Beispiel ist es nur eine Meinung.",
+            "Was werden die anderen sagen? Wer das vorher weiß, wird nicht überrascht."
+          ],
+          "punkte": [
+            "Handys sollten in der Pause erlaubt sein.",
+            "Die Schule sollte erst um neun Uhr beginnen.",
+            "Hausaufgaben sollten abgeschafft werden.",
+            "Soziale Netzwerke sollten erst ab 16 erlaubt sein.",
+            "Jede Klasse sollte ein eigenes Budget bekommen, über das der Klassenrat entscheidet.",
+            "Ein Praktikum sollte für alle ab 15 Pflicht sein.",
+            "Für das Blitz-Finale: Pizza mit Ananas ist in Ordnung. – Winter ist besser als Sommer. – Hunde sind bessere Haustiere als Katzen."
+          ],
+          "tipp": "Beispiele aus dem eigenen Alltag überzeugen am meisten: der Bus um 6.40 Uhr, die Pause im Lycée, der Klassenchat.",
+          "wennEsKippt": "Hängt ein Team fest, mit einer Frage helfen statt mit einem Argument: Wem würde das nützen – und wem schaden? Bei nur zwei Jugendlichen debattieren beide gegeneinander, die Leitung ist Jury, und nach der ersten Debatte werden die Seiten getauscht.",
+          "blatt": "skills-debattier-turnier"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Pause mit Imbiss. Die Teams dürfen weiter an ihren Argumenten feilen, müssen aber nicht; die Leitung stellt die Pulte auf und prüft die Meinungslinie."
+        },
+        {
+          "titel": "Das Turnier mit Meinungslinie",
+          "dauer": 30,
+          "phase": "aktiv",
+          "text": "Das Turnier läuft nach dem Plan an der Tafel; jede Debatte dauert mit Jury etwa zehn Minuten, die Zeitwache läutet bei jedem Wechsel. Vor und nach jeder Debatte stellen sich alle, die gerade nicht debattieren, auf der Meinungslinie aus Einheit 24 auf: Wer bewegt sich, und wohin? Die Jury berät zwei Minuten mit dem Jurybogen, verkündet ihre Entscheidung und gibt jeder Seite ein Lob und einen Tipp. Am Ende steht die Siegerehrung: Siegerteam, Fairplay-Preis und Preis für die beste Nachfrage.",
+          "sagen": [
+            "Pro, du hast eine Minute. Los!",
+            "Stellt euch auf: Wo steht ihr jetzt – nach dieser Debatte?",
+            "Die Jury hat entschieden. Erst das Lob, dann der Tipp."
+          ],
+          "punkte": [
+            "Meinungslinie vorher: Das Publikum stellt sich auf (30 Sekunden).",
+            "Eröffnung: Pro 1 Minute, dann Contra 1 Minute.",
+            "Schlagabtausch: 3 Minuten, abwechselnd, jeder Beitrag höchstens 30 Sekunden – wer widerspricht, fasst zuerst zusammen.",
+            "Schluss: Contra 30 Sekunden, dann Pro 30 Sekunden.",
+            "Meinungslinie nachher, dann berät die Jury 2 Minuten und gibt Rückmeldung."
+          ],
+          "tipp": "Die Meinungslinie zeigt, was eine Debatte bewirkt: Wer Zuschauende zum Wandern bringt, hat überzeugt – auch wenn die Jury anders entscheidet.",
+          "wennEsKippt": "Wird es persönlich („Du hast doch keine Ahnung“), sofort mit der Glocke unterbrechen: Argument, nicht Person – die Redezeit geht an die andere Seite. Äußert jemand menschenverachtende Positionen, klar begrenzen: Die Würde von Menschen ist kein Debattenthema; das später unter vier Augen aufgreifen. Beschwert sich ein Team lautstark über die Jury, an die Regel erinnern und eine Nachfrage anbieten: Welcher Tipp hilft euch fürs nächste Mal?",
+          "blatt": "skills-debattier-turnier"
+        },
+        {
+          "titel": "Skill: Frust-Check nach der Siegerehrung",
+          "dauer": 5,
+          "phase": "skill",
+          "text": "Direkt nach der Siegerehrung zeigt jede Person mit den Fingern ihren Frust von 0 bis 10 und vergleicht still mit der Verlier-Zahl vom Anfang. Wer über fünf liegt, nutzt jetzt seinen Frust-Plan vom Blatt; alle anderen machen mit: zweimal lang ausatmen, Schultern hochziehen und fallen lassen, dann ein Satz an ein anderes Team – Gut argumentiert, besonders als ihr … Erklären: Verloren hat eine Position in einer Debatte, nicht eine Person.",
+          "sagen": [
+            "Frust auf den Fingern, 0 bis 10. Wie passt das zu eurer Zahl vom Anfang?",
+            "Wer über fünf liegt: Jetzt ist der Moment für euren Plan."
+          ],
+          "tipp": "Die Leitung erzählt kurz von einer eigenen Niederlage und davon, was ihr danach geholfen hat. Vorzuleben, dass Ärger da sein darf und Fairness trotzdem gewinnt, wirkt mehr als jede Erklärung.",
+          "wennEsKippt": "Geht jemand nach einer Niederlage hoch oder verlässt den Raum, nicht hinterherrufen: Nach ein, zwei Minuten geht eine Leitung nach, fragt nach der Zahl und bietet den Plan an. Kommt die Person zurück, das still würdigen – Zurückkommen ist auch ein Skill."
+        },
+        {
+          "titel": "Réckbléck und Skills-Pass",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Blitzlicht: Welches Argument der Gegenseite hat euch heute am meisten beeindruckt? Dann Eintrag in den Skills-Pass und Stempel – etwa der Satz aus dem eigenen Frust-Plan oder ein neues Argument. Die Jurybögen bekommen die Teams mit.",
+          "sagen": [
+            "Welches Argument der anderen Seite hat euch heute überzeugt – oder wenigstens nachdenklich gemacht?"
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "hintergrund": "Debattieren übt, eine Meinung zu begründen, zuzuhören und auf Gegenargumente einzugehen – Grundlagen demokratischer Beteiligung, wie sie das Handbuch „Compass“ des Europarats für die Menschenrechtsbildung beschreibt (Council of Europe, 2012). Die UN-Kinderrechtskonvention sichert Kindern und Jugendlichen das Recht zu, ihre Meinung frei zu äußern und gehört zu werden (Vereinte Nationen, 1989). Wird die Seite gelost, trennen die Jugendlichen Argument und Person. Wettbewerb bringt Ärger mit sich: Wer eine Niederlage als Hinweis auf Lernbares deutet statt als Urteil über sich, bleibt eher dran (Dweck, 2006). Diese Neubewertung ist eine wirksame Form der Gefühlsregulation (Gross, 1998); ein vorher geschriebener Wenn-dann-Plan hilft, sie im Moment des Ärgers umzusetzen (Gollwitzer, 1999).",
+      "quellen": [
+        "Council of Europe (2012). Compass: Manual for Human Rights Education with Young People (2nd ed.). Strasbourg: Council of Europe Publishing.",
+        "Vereinte Nationen (1989). Übereinkommen über die Rechte des Kindes. New York: Vereinte Nationen.",
+        "Dweck, C. S. (2006). Mindset: The New Psychology of Success. New York: Random House.",
+        "Gross, J. J. (1998). The emerging field of emotion regulation: An integrative review. Review of General Psychology, 2(3), 271–299.",
+        "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+      ],
+      "achtung": "Themen vorher prüfen: nichts, was die Herkunft, den Aufenthalt, die Religion, die Familie oder den Körper einer Person in der Gruppe direkt berührt. Persönliche Angriffe sofort unterbrechen. Menschenverachtende oder diskriminierende Aussagen klar begrenzen, nicht als Meinung stehen lassen und später unter vier Augen aufgreifen. Wettbewerb kann beschämen: Jede Person soll für etwas Anerkennung bekommen, und niemand muss öffentlich sprechen – Zeitwache und Jury sind vollwertige Rollen. Jugendliche, die bei Niederlagen stark reagieren, vorher auf ihren Frust-Plan vorbereiten und nach dem Turnier im Blick behalten. Kommen in der Debatte eigene Belastungen zur Sprache, nicht vertiefen, ein Gespräch anbieten und bei Hinweisen auf Gefährdung nach dem internen Schutzkonzept handeln."
+    },
+    {
+      "id": "j3-j04",
+      "nr": 4,
+      "jahr": 3,
+      "modul": "joker",
+      "joker": true,
+      "passt": "jederzeit, wenn die Gruppe aufgedreht oder erschöpft ist – etwa nach Prüfungen, vor den Ferien oder nach einem unruhigen Schultag",
+      "titel": "Plan B für unruhige und müde Tage",
+      "kurz": "Ein Reserveprogramm ohne Vorbereitung: Die Gruppe schätzt ihre Energie, löst bewegte Team- und Kooperationsaufgaben, lernt einen schnellen Skill zum Runterkommen und wertet aus, was ihre Energie verändert hat.",
+      "dauer": 100,
+      "ziele": [
+        "schätzen ihre Energie und Anspannung ein und vergleichen sie am Ende mit dem Anfang",
+        "lösen bewegte Team- und Kooperationsaufgaben und sprechen sich dabei ab",
+        "lernen den doppelten Atemzug mit langem Ausatmen als schnellen Skill zum Runterkommen",
+        "benennen, was ihre Energie verändert hat und was davon sie allein nutzen können"
+      ],
+      "material": [
+        "Gefühlsrad (A3, laminiert), Wäscheklammern, Anspannungsskala 0–100",
+        "Reservekiste, zu Beginn des Jahres gepackt: sechs Tücher oder Leibchen in zwei Farben, Kreppband, acht Seilstücke von etwa 1 m, ein langes Seil (etwa 15 m, die Enden verknotet), Stoppuhr, Klangschale",
+        "Dobble oder Mikado für die Pause",
+        "Skills-Pässe, Stempel, Imbiss und Getränke"
+      ],
+      "vorbereitung": [
+        "Die Reservekiste zu Beginn des Schuljahres packen und im Raum lagern, damit der Joker ohne Vorlauf einsetzbar ist.",
+        "Einen Platz mit freier Fläche im Blick haben: Raum ohne Tische, Flur, Turnhalle oder draußen."
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Energie-Check: Finger, Zahl, Gefühlsrad"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Plan B: Die Gruppe entscheidet mit"
+        },
+        {
+          "min": "15–40",
+          "phase": "aktiv",
+          "titel": "Bewegt: Tic-Tac-Toe-Staffel und Seil-Knoten"
+        },
+        {
+          "min": "40–45",
+          "phase": "skill",
+          "titel": "Zwischenstopp: eine Minute Stille"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–82",
+          "phase": "aktiv",
+          "titel": "Das Seil-Quadrat mit geschlossenen Augen"
+        },
+        {
+          "min": "82–92",
+          "phase": "skill",
+          "titel": "Skill: Der doppelte Atemzug"
+        },
+        {
+          "min": "92–100",
+          "phase": "abschluss",
+          "titel": "Auswertung: Was hat unsere Energie verändert?"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Energie-Check: Finger, Zahl, Gefühlsrad",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Im Stehen, das Gefühlsrad in der Mitte. Auf drei zeigen alle gleichzeitig mit den Fingern ihre Energie von 0 (leer) bis 10 (ich könnte die Wände hochgehen), dann nennt jede Person ihre Anspannung und, wenn sie mag, ein Gefühlswort. Die Leitung notiert die Energiezahlen unauffällig und benennt ohne Wertung, was sie sieht: viel Energie im Raum – oder leere Akkus. Ist die Gruppe zu aufgedreht für eine Runde, reicht heute die Fingerzahl.",
+          "sagen": [
+            "Auf drei: Energie mit den Fingern. Eins, zwei, drei.",
+            "Viel oder wenig – beides ist eine ehrliche Auskunft. Wir machen etwas daraus."
+          ],
+          "wennEsKippt": "Ist die Unruhe so groß, dass niemand zuhört, den Check-in verschieben und sofort mit der Tic-Tac-Toe-Staffel beginnen; Zahlen und Gefühle kommen im Zwischenstopp dran.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Plan B: Die Gruppe entscheidet mit",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "Offen sagen, dass das geplante Thema heute nicht passt und stattdessen ein anderes Programm kommt – kein Ausfall und keine Belohnung, sondern selbst ein Skill: Wer merkt, dass die eigene Energie nicht zur Aufgabe passt, passt die Aufgabe an. Kurz nachfragen, ob etwas passiert ist. Dann die zwei Wege nennen: Bei viel Energie zuerst bewegen, bei wenig Energie ruhig anfangen und nach der Pause aufdrehen; die Gruppe entscheidet mit. Das eigentliche Thema wird beim nächsten Mal nachgeholt.",
+          "sagen": [
+            "Heute passt unser Plan nicht zu eurer Energie. Also ändern wir den Plan, nicht euch.",
+            "Ist heute etwas passiert, das wir wissen sollten? Ein Satz reicht – oder nachher unter vier Augen."
+          ],
+          "tipp": "Steckt hinter der Unruhe ein Ereignis – ein Streit, ein Vorfall, eine schlechte Nachricht –, passt Spielen oft nicht. Dann lieber ein ruhiges Gespräch nach dem Muster von Joker 8 aus Kursjahr 1 („Wenn uns etwas beschäftigt“)."
+        },
+        {
+          "titel": "Bewegt: Tic-Tac-Toe-Staffel und Seil-Knoten",
+          "dauer": 25,
+          "phase": "aktiv",
+          "text": "Zuerst die Tic-Tac-Toe-Staffel: Am einen Ende des Raums ist mit Kreppband ein Feld aus drei mal drei Kästchen geklebt, am anderen Ende stehen zwei Teams in einer Reihe, jedes mit drei Tüchern in seiner Farbe. Auf das Startsignal läuft je eine Person los, legt ein Tuch in ein freies Kästchen und klatscht die nächste ab; liegen alle drei Tücher, darf jede Läuferin und jeder Läufer ein eigenes Tuch versetzen. Gewonnen hat das Team, das zuerst drei in einer Reihe hat; vor jeder Runde bekommen beide Teams dreißig Sekunden Teamrat. Danach der Seil-Knoten: Alle fassen mit jeder Hand ein Seilstück, dessen anderes Ende jemand anderes hält, und entwirren den Knoten, ohne loszulassen.",
+          "sagen": [
+            "Dreißig Sekunden Teamrat: Wer legt wohin – und was macht ihr, wenn die anderen euch blockieren?",
+            "Wer hatte die Idee – und wer hat sie gehört?"
+          ],
+          "punkte": [
+            "Gelaufen wird erst nach dem Abklatschen.",
+            "Pro Lauf genau ein Tuch legen oder versetzen, nie zwei.",
+            "Wer ein Tuch der anderen Farbe bewegt, läuft zurück, ohne zu legen.",
+            "Die nächste Runde beginnt das Team, das gerade verloren hat."
+          ],
+          "tipp": "Bei wenig Energie mit einer ruhigen Aufgabe aus dem Methoden-Pool beginnen, etwa „Zählen bis 20“ oder „Wortlos ordnen“, und die Staffel nach der Pause spielen. Bei nur zwei Jugendlichen spielen beide gegeneinander, die Leitung ist Schiedsrichterin, und der Knoten entfällt.",
+          "wennEsKippt": "Kippt die Staffel ins Gerangel am Feld, anhalten und eine Regel dazunehmen: Am Feld steht immer nur eine Person je Team. Möchte jemand beim Knoten nicht mitmachen oder wird es zu eng, übernimmt die Person die Regie von außen und sagt Züge an; Stopp gilt sofort."
+        },
+        {
+          "titel": "Zwischenstopp: eine Minute Stille",
+          "dauer": 5,
+          "phase": "skill",
+          "text": "Alle setzen oder legen sich auf den Boden. Die Leitung schlägt die Klangschale an; alle heben die Hand, wenn der Ton verklungen ist, und bleiben dann noch einen Moment still. Danach zeigt jede Person noch einmal ihre Energie mit den Fingern. Die Leitung fragt, was sich verändert hat und wodurch, und sammelt die Antworten ohne Bewertung.",
+          "sagen": [
+            "Hand hoch, wenn ihr den Ton nicht mehr hört.",
+            "Was zeigen eure Finger jetzt – mehr, weniger, gleich?"
+          ]
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Pause mit Imbiss, Fenster auf. Wer mag, spielt eine Runde Dobble oder Mikado; wer nicht mag, isst in Ruhe. Die Leitung lässt das Thema ruhen."
+        },
+        {
+          "titel": "Das Seil-Quadrat mit geschlossenen Augen",
+          "dauer": 22,
+          "phase": "aktiv",
+          "text": "Alle stehen im Kreis und halten das lange, zusammengeknotete Seil mit beiden Händen. Die Aufgabe: Mit geschlossenen Augen oder gesenktem Blick formt die Gruppe aus dem Seil ein Quadrat, ohne loszulassen; sprechen ist erlaubt. Glaubt die Gruppe, fertig zu sein, legt sie das Seil ab, öffnet die Augen und prüft das Ergebnis. In der zweiten Runde folgt eine neue Form, etwa ein Dreieck, und eine Regel mehr: Nur zwei Personen dürfen sprechen, die anderen antworten mit einem leichten Zug am Seil. Zum Schluss kurz auswerten: Was hat euer Team gut gemacht, und wie habt ihr entschieden?",
+          "sagen": [
+            "Augen zu oder Blick auf den Boden. Wer die Augen lieber offen lässt, schaut nur auf seine Hände.",
+            "Was hat euer Team gut gemacht – nicht das Quadrat, das Team?"
+          ],
+          "tipp": "Ein Seil von etwa 15 Metern reicht für acht Personen. Bei viel Energie läuft die Stoppuhr mit, bei wenig Energie reicht eine Runde mit offenen Augen, in der niemand spricht. Bei nur zwei Jugendlichen formt die Leitung mit, und statt des Quadrats wird ein Dreieck gelegt.",
+          "wennEsKippt": "Übernimmt eine Person alles, eine Regel einführen: Jede Person sagt höchstens einen Satz, dann ist die nächste dran. Möchte jemand die Augen nicht schließen, bleibt der Blick gesenkt, oder die Person beobachtet und berichtet am Ende, was sie gesehen hat; Stopp gilt sofort."
+        },
+        {
+          "titel": "Skill: Der doppelte Atemzug",
+          "dauer": 10,
+          "phase": "skill",
+          "text": "Im Sitzen, Füße auf dem Boden. Die Leitung erklärt und zeigt: durch die Nase einatmen, oben noch ein kleines Stück nachatmen, dann langsam und lang durch den Mund aus – länger aus als ein. Alle üben fünf Runden im eigenen Tempo, danach zwei Minuten ruhig weiteratmen und nachspüren. Dann kurz besprechen, wo man diesen Skill unauffällig nutzen kann: vor einer Prüfung, im Bus, bevor man im Streit antwortet.",
+          "sagen": [
+            "Ein – und oben noch ein kleines Stück nach. Und jetzt lang aus, als würdest du durch einen Strohhalm pusten.",
+            "Merkt ihr nach fünf Runden einen Unterschied?"
+          ],
+          "tipp": "Wird jemandem schwindlig, sofort normal weiteratmen; weniger Runden und mehr Pausen sind völlig in Ordnung. Wer mag, verbindet den Skill mit Anspannen und Loslassen: die Fäuste fünf Sekunden ballen und beim langen Ausatmen lösen."
+        },
+        {
+          "titel": "Auswertung: Was hat unsere Energie verändert?",
+          "dauer": 8,
+          "phase": "abschluss",
+          "text": "Ein letztes Mal die Finger: Wie viel Energie ist jetzt da? Die Leitung nennt die Zahlen vom Anfang, die Gruppe vergleicht. Kurze Runde mit zwei Fragen: Was hat eure Energie heute verändert – und was davon könnt ihr auch allein machen? Eintrag in den Skills-Pass und Stempel.",
+          "sagen": [
+            "Was hat heute eure Energie verändert?",
+            "Und was davon kriegt ihr auch ohne Gruppe hin – im Bus, zu Hause, vor einer Prüfung?"
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "hintergrund": "Eine unruhige oder erschöpfte Gruppe kann keinen neuen Inhalt aufnehmen: Unter Stress und Müdigkeit leiden Aufmerksamkeit, Arbeitsgedächtnis und Selbstkontrolle zuerst (Diamond, 2013). Statt gegen die Energie anzuarbeiten, nutzt die Einheit sie. Körperliche Aktivität geht bei Jugendlichen mit besserer Stimmung und weniger Angst einher (Biddle & Asare, 2011); Staffeln in Teams und kooperative Aufgaben aus der Erlebnispädagogik verbinden Bewegung mit Absprache (Senninger, 2000). Gemeinsames Lachen und kleine Erfolge erzeugen positive Gefühle, die nach Fredrickson (2001) die Aufmerksamkeit weiten. Der doppelte Atemzug mit langem Ausatmen hob in einer Studie bei täglich fünf Minuten Übung die Stimmung und senkte die körperliche Erregung (Balban et al., 2023).",
+      "quellen": [
+        "Diamond, A. (2013). Executive functions. Annual Review of Psychology, 64, 135–168.",
+        "Biddle, S. J. H. & Asare, M. (2011). Physical activity and mental health in children and adolescents: A review of reviews. British Journal of Sports Medicine, 45(11), 886–895.",
+        "Senninger, T. (2000). Abenteuer leiten – in Abenteuern lernen. Münster: Ökotopia.",
+        "Fredrickson, B. L. (2001). The role of positive emotions in positive psychology: The broaden-and-build theory of positive emotions. American Psychologist, 56(3), 218–226.",
+        "Balban, M. Y., Neri, E., Kogon, M. M., Weed, L., Nouriani, B., Jo, B., Holl, G., Zeitzer, J. M., Spiegel, D. & Huberman, A. D. (2023). Brief structured respiration practices enhance mood and reduce physiological arousal. Cell Reports Medicine, 4(1), 100895."
+      ],
+      "achtung": "Unruhe oder Müdigkeit einer ganzen Gruppe hat manchmal einen Grund: ein Streit, ein Vorfall, eine schlechte Nachricht. Vorher kurz nachfragen; steckt ein belastendes Ereignis dahinter, passt eher ein Gespräch als ein Spiel. Beim Knoten und beim Seil-Quadrat gilt das Stopp-Recht; die Seile sind dafür da, dass sich niemand an den Händen halten muss, und wer keinen Kontakt oder die Augen nicht schließen möchte, übernimmt die Regie oder beobachtet. Bei der Staffel auf freie Laufwege und rutschfesten Boden achten. Wer verletzt ist, fastet oder nicht rennen kann, bekommt ruhige Aufgaben wie Zeitmessung oder Schiedsrichter. Beim Atem-Skill kann es kurz schwindlig werden: dann normal weiteratmen. Wirkt eine einzelne Person über Wochen erschöpft oder gereizt, das im Einzelgespräch aufgreifen und mit der zuständigen Leitung (Responsable) besprechen; bei Hinweisen auf eine Gefährdung nach dem internen Schutzkonzept handeln."
+    }
+  ]
+}

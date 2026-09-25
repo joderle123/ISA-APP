@@ -1,0 +1,1210 @@
+[
+  {
+    "id": "skills-kompass",
+    "bereich": "skills",
+    "thema": "ankommen",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln"
+    ],
+    "dauer": "10 Min. in Einheit 1, dann 5 Min. je Modul",
+    "eldib": [
+      "V-25",
+      "K-24",
+      "V-32",
+      "SOZ-40"
+    ],
+    "schlagworte": [
+      "Skills-Kompass",
+      "Transfer in den Alltag",
+      "Lebensbereiche",
+      "Rückblick",
+      "Jahresfaden",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:compass",
+    "verwandt": [
+      "skills-pass",
+      "skills-koffer-ampelplan"
+    ],
+    "kurs": [
+      "j2-e01",
+      "j2-e02",
+      "j2-e05",
+      "j2-e09",
+      "j2-e12",
+      "j2-e17",
+      "j2-e20",
+      "j2-e23",
+      "j2-e26",
+      "j2-e29",
+      "j2-e33",
+      "j2-e34",
+      "j2-e35"
+    ],
+    "de": {
+      "titel": "Mein Skills-Kompass",
+      "untertitel": "Elf Bereiche, ein Jahr: Am Ende jedes Moduls hältst du fest, welcher Skill dir in diesem Bereich deines Alltags hilft.",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Nicht jeder Skill passt überall. Der Kompass zeigt dir, welcher Skill dir wo hilft: in der Schule, bei Wut, in Freundschaften, zu Hause, im Netz. Wer in Jahr 1 dabei war, kennt den Skills-Koffer – er sortiert Skills nach der Anspannung. Der Kompass sortiert nach Bereichen deines Alltags."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Am Ende jedes Moduls: Welcher Skill hilft dir in diesem Bereich – und wann setzt du ihn ein? Trag beides ins passende Feld ein.",
+          "hinweis": "Blättere dafür in deinem Skills-Pass. Ein Skill kann eine Übung sein, ein Satz, den du dir sagst, oder etwas, das du tust."
+        },
+        {
+          "art": "wortspeicher",
+          "titel": "Skills, die viele aus Jahr 1 kennen – sie zählen auch",
+          "items": [
+            "Kastenatmung",
+            "4-7-8-Atmung",
+            "Fingeratmung",
+            "Anspannen und Loslassen",
+            "5-4-3-2-1",
+            "Duft oder Kälte",
+            "Musik",
+            "rückwärts zählen",
+            "Gedankenschiffchen",
+            "sicherer Ort",
+            "Ich-Botschaft",
+            "Stopp-Satz",
+            "Nein-Satz",
+            "Erst runter, dann reden"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "So kann ein Eintrag aussehen",
+          "text": "Stress und Schule: Kastenatmung, bevor ich das Blatt umdrehe. Hilft mir, wenn mir in der Prüfung der Kopf leer wird."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "feld",
+              "label": "0 · Wieder ankommen",
+              "hoehe": 5
+            }
+          ],
+          "rechts": [
+            {
+              "art": "feld",
+              "label": "1 · Selbstwert und Körper",
+              "hoehe": 5
+            }
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "feld",
+              "label": "2 · Stress und Schule",
+              "hoehe": 5
+            }
+          ],
+          "rechts": [
+            {
+              "art": "feld",
+              "label": "3 · Wut und Impulse",
+              "hoehe": 5
+            }
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "feld",
+              "label": "4 · Freundschaft, Liebe und Zugehörigkeit",
+              "hoehe": 5
+            }
+          ],
+          "rechts": [
+            {
+              "art": "feld",
+              "label": "5 · Familie und Zuhause",
+              "hoehe": 5
+            }
+          ]
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "feld",
+              "label": "6 · Vielfalt und Respekt",
+              "hoehe": 5
+            }
+          ],
+          "rechts": [
+            {
+              "art": "feld",
+              "label": "7 · Sicher im Netz",
+              "hoehe": 5
+            }
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "feld",
+              "label": "8 · Riskant oder okay?",
+              "hoehe": 5
+            }
+          ],
+          "rechts": [
+            {
+              "art": "feld",
+              "label": "9 · Gesund an Körper und Seele",
+              "hoehe": 5
+            }
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "feld",
+              "label": "10 · Abschluss",
+              "hoehe": 5
+            }
+          ],
+          "rechts": [
+            {
+              "art": "feld",
+              "label": "Mein wichtigster Skill in diesem Jahr",
+              "hoehe": 5
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Am Ende des Jahres: Schau auf deinen ganzen Kompass. Was hat sich verändert?"
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "In diesem Bereich komme ich heute besser zurecht: …",
+            "Diesen Skill nutze ich inzwischen fast von selbst: …",
+            "Hier suche ich noch einen Skill: …"
+          ],
+          "linien": 2
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Du entscheidest, was du teilst.",
+          "text": "Der Kompass gehört dir und bleibt in deiner Mappe. In der Runde reicht es, den Namen deines Skills zu nennen."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen halten am Ende jedes Moduls fest, welcher Skill ihnen in diesem Bereich ihres Alltags hilft und wann. So entsteht eine persönliche Übersicht über das ganze Jahr.",
+        "ablauf": [
+          "Einheit 1 (10 Min.): Blatt austeilen, die elf Bereiche zeigen und erklären: Der Koffer aus Jahr 1 sortiert nach Anspannung, der Kompass nach Lebensbereichen.",
+          "Am Ende jedes Moduls (5 Min., vor dem Skills-Pass): im Skills-Pass zurückblättern. Frage: „Welcher Skill hilft dir in diesem Bereich – und wann?“ Wer noch keinen hat, schreibt „noch offen“.",
+          "Kurze Runde: Jede Person nennt nur den Namen ihres Skills. Gleiche Skills an der Tafel sammeln – das zeigt, was die ganze Gruppe trägt.",
+          "Modul 10: Aufgabe 2 und das Feld „Mein wichtigster Skill in diesem Jahr“ ausfüllen, danach gemeinsamer Rückblick."
+        ],
+        "hintergrund": "Skills werden in der Gruppe gelernt, gebraucht werden sie im Alltag – dieser Transfer ist die schwierigste Stelle jedes Trainings. Das DBT-Skillstraining für Jugendliche verknüpft Skills darum mit konkreten Situationen und hält ihren Einsatz fest (Rathus & Miller, 2015). Wer Gelerntes selbst abruft, statt es nachzulesen, behält es länger (Roediger & Karpicke, 2006) – der Eintrag am Modulende ist so ein Abruf. Die Verbindung von Skill und Situation („hilft mir, wenn …“) wirkt wie ein Wenn-dann-Plan und macht den Einsatz im entscheidenden Moment wahrscheinlicher (Gollwitzer, 1999).",
+        "quellen": [
+          "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford.",
+          "Roediger, H. L. & Karpicke, J. D. (2006). Test-enhanced learning: Taking memory tests improves long-term retention. Psychological Science, 17(3), 249–255.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "differenzierung": {
+          "leichter": "Nur den Namen des Skills eintragen; „Hilft mir, wenn …“ an die Tafel schreiben und die Situation im Gespräch ergänzen.",
+          "schwerer": "Zusätzlich notieren, wann der Skill schon einmal geholfen hat, und im nächsten Check-in davon erzählen."
+        },
+        "impulse": [
+          "In welchem Bereich fehlt dir noch ein Skill?",
+          "Wo hättest du diesen Skill zuletzt brauchen können?"
+        ],
+        "tipps": [
+          "Doppelseitig auf festes Papier drucken – er muss ein Jahr halten.",
+          "Wer gefehlt hat, trägt nach. Lücken sind erlaubt."
+        ],
+        "achtung": "Nicht bewerten, nicht einsammeln. Steht Schädliches im Kompass (etwa Selbstverletzung, Alkohol) oder findet jemand keinen hilfreichen Skill: Einzelgespräch, die zuständige Leitung (Responsable) informieren, bei Gefährdung Schutzkonzept.",
+        "material": "Festes Papier, doppelseitig; Skills-Pass"
+      }
+    }
+  },
+  {
+    "id": "skills-olympiade",
+    "bereich": "skills",
+    "thema": "ankommen",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "75 Min., über die Einheit verteilt",
+    "eldib": [
+      "V-25",
+      "SOZ-18",
+      "K-26",
+      "V-21"
+    ],
+    "schlagworte": [
+      "Skills-Olympiade",
+      "Anspannungsskala 0–100",
+      "Wiederholung",
+      "Teamspiel",
+      "Neue in der Gruppe",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:trophy",
+    "verwandt": [
+      "skills-anspannungsthermometer",
+      "skills-tester",
+      "skills-kompass"
+    ],
+    "kurs": [
+      "j2-e02"
+    ],
+    "de": {
+      "titel": "Mein Olympia-Pass",
+      "untertitel": "Punkte gibt es fürs Team. Am Ende zählt, welcher Skill zu dir passt.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Die Anspannungsskala von 0 bis 100: Lies die drei Zonen. Wo liegt deine Zahl gerade?"
+        },
+        {
+          "art": "thermometer",
+          "linien": 0,
+          "stufen": [
+            {
+              "titel": "Grün (0–30): Ich kann klar denken",
+              "text": "Reden, zuhören, Probleme lösen, Skills üben."
+            },
+            {
+              "titel": "Gelb (30–70): Es wird eng",
+              "text": "Gereizt, unruhig oder still. Es helfen Kopf-Skills, Sinne, Musik, Bewegung."
+            },
+            {
+              "titel": "Rot (70–100): Der Körper übernimmt",
+              "text": "Es helfen Körper- und Sinnes-Skills, raus aus der Situation, Hilfe holen. Erst runter, dann reden."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Deine Zahlen heute: Trag sie an den vier Messpunkten ein.",
+          "hinweis": "Wettkampf treibt die Zahl hoch, auch wenn er Spaß macht. Skills holen sie wieder runter."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Beim Check-in",
+            "In der Halbzeit",
+            "Nach dem Wettkampf",
+            "Nach dem Runterfahren"
+          ],
+          "zeilen": 1,
+          "beispiel": [
+            "z. B. 35",
+            "50",
+            "70",
+            "40"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Nach jeder Disziplin: Wie gut passt dieser Skill zu dir? Kreuz direkt an – „eher nicht“ ist auch ein Ergebnis."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "passt gut",
+            "geht so",
+            "eher nicht"
+          ],
+          "items": [
+            "Atem: Kastenatmung – 4 ein, 4 halten, 4 aus, 4 halten",
+            "Sinne: ein starker Reiz – Duft, Knetball, Kälte",
+            "Kopf: ABC-Spiel – zu jedem Buchstaben ein Wort",
+            "Stopp: Hand hoch, Blick zur Person, feste Stimme, kein Lächeln",
+            "Ich-Botschaft: Ich fühle mich …, wenn …, weil …"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dein Fazit nach der Olympiade"
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 1,
+          "items": [
+            "Am besten runtergeholt hat mich: …",
+            "Mein Joker, wenn ich irgendwo neu bin: …"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Du entscheidest, was du teilst.",
+          "text": "Deine Zahlen und Kreuze sind für dich. Liegt deine Zahl oft über 70, sprich mit der Leitung."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen frischen im Wettkampf die Anspannungsskala und fünf Skills aus Jahr 1 auf und prüfen, welcher Skill zu ihnen passt. Neue lernen die Skills von Gleichaltrigen.",
+        "ablauf": [
+          "Skala (15 Min.): Thermometer am Flipchart füllen, Handmodell zeigen lassen, Situationen auf der Bodenlinie; erste Zahl in Aufgabe 2.",
+          "Eröffnung (5 Min.): Teams aus Alt und Neu, Teamnamen, Fair-Play-Regeln vom Flipchart.",
+          "Jede Disziplin (6 Min.): erklären lassen (2 Bonuspunkte, wenn Neue den Skill vormachen), ausprobieren, Wettkampf, zwei Quizfragen, Kreuz in Aufgabe 3.",
+          "Disziplinen: Feder-Probe, Düfte und Tastbeutel, ABC unter Störung, das Stopp, das ankommt, Übersetzungsbüro. Wertung und Quiz stehen in Einheit 2.",
+          "Runterfahren (8 Min.): Zahl nach dem Wettkampf, drei Minuten Lieblings-Skill, Zahl danach; dann Aufgabe 4 und der Eintrag im Skills-Kompass."
+        ],
+        "hintergrund": "Nach den Ferien sind Skills nicht vergessen, aber schwerer abrufbar. Wer Gelerntes aktiv abruft und anwendet, behält es besser als durch bloßes Wiederholen (Roediger & Karpicke, 2006). Die Anspannungsskala von 0 bis 100 gehört zu den Grundwerkzeugen des DBT-Skillstrainings für Jugendliche (Fleischhaker et al., 2011): Bei hoher Erregung helfen Skills über Körper und Sinne, bei mittlerer auch Kopf-Skills. Wer einen Skill erklärt und vormacht, erlebt sich als kompetent; das stärkt die Selbstwirksamkeit (Bandura, 1977).",
+        "quellen": [
+          "Roediger, H. L. & Karpicke, J. D. (2006). Test-enhanced learning: Taking memory tests improves long-term retention. Psychological Science, 17(3), 249–255.",
+          "Fleischhaker, C., Sixt, B. & Schulz, E. (2011). DBT-A: Dialektisch-behaviorale Therapie für Jugendliche. Berlin: Springer.",
+          "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215."
+        ],
+        "differenzierung": {
+          "leichter": "Nur drei Disziplinen (Atem, Sinne, Stopp); das Quiz mit Daumen hoch oder runter statt mit Karten.",
+          "schwerer": "Die Teams erfinden für eine Disziplin eine eigene Wettkampfregel und begründen, warum sie den Skill trainiert."
+        },
+        "impulse": [
+          "Bei welcher Disziplin ist eure Zahl gestiegen – und warum?",
+          "Welcher Skill ginge unauffällig im Bus oder im Unterricht?"
+        ],
+        "tipps": [
+          "Punkte sofort und groß auf dem Flipchart eintragen – das hält alle bei der Sache.",
+          "Sonderpreise fürs Erklären und für Fairness: So gewinnt nicht nur das schnellste Team."
+        ],
+        "achtung": "Teams mischen, Auslachen kostet Punkte. Bei der Stopp-Station geht nur die Leitung auf Jugendliche zu; wer erstarrt, bricht ab und bekommt später ein Gespräch. Düfte nur auf Riechstreifen, vorher nach Asthma und Allergien fragen.",
+        "material": "Federn, Riechstreifen, Tastbeutel, Ampelkarten, Stoppuhr, Flipchart"
+      }
+    }
+  },
+  {
+    "id": "skills-selbstwert-quellen",
+    "bereich": "skills",
+    "thema": "selbstwert",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln"
+    ],
+    "dauer": "20–25 Min.",
+    "eldib": [
+      "SOZ-40",
+      "K-19",
+      "SOZ-9",
+      "K-18"
+    ],
+    "schlagworte": [
+      "Selbstwert",
+      "Quellen des Selbstwerts",
+      "Vergleich",
+      "Noten und Likes",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:user-heart",
+    "verwandt": [
+      "skills-wert-auktion",
+      "skills-baum-der-staerke",
+      "mein-staerkenprofil"
+    ],
+    "kurs": [
+      "j2-e03"
+    ],
+    "de": {
+      "titel": "Worauf steht mein Selbstwert?",
+      "untertitel": "Dein Wert als Mensch hängt nicht an einer Note. Das Gefühl dafür manchmal schon – je nachdem, worauf es steht.",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Selbstwert ist das Gefühl, als Mensch in Ordnung und wertvoll zu sein. Viele knüpfen es an Dinge, die schnell wackeln: Noten, Likes, Aussehen, Siege. Dann geht es mit jeder Klassenarbeit und jedem Post rauf und runter. Stabiler wird es, wenn es auf mehreren Quellen steht – und auf solchen, die dir ein schlechter Tag nicht wegnehmen kann."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wie stark hängt dein Gefühl, wertvoll zu sein, an diesen Dingen? Kreuz ehrlich an.",
+          "hinweis": "Das Blatt gehört dir. Niemand sammelt es ein, niemand muss etwas vorlesen."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "stark",
+            "etwas",
+            "kaum"
+          ],
+          "items": [
+            "gute Noten und Lob in der Schule",
+            "Likes, Kommentare, Follower",
+            "wie ich aussehe",
+            "ob ich gewinne oder besser bin als andere",
+            "ob die anderen mich cool finden",
+            "Menschen, bei denen ich so sein darf, wie ich bin",
+            "wie ich mit anderen umgehe – fair, ehrlich, hilfsbereit",
+            "was ich gern mache und worin ich besser werde",
+            "dass ich zu dem stehe, was mir wichtig ist"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Was wackelt, was trägt?",
+          "text": "Die ersten fünf Quellen hängen vor allem am Urteil anderer oder am Vergleich. Sie können dir an einem einzigen Tag genommen werden. Die letzten vier hängen mehr an dir: an dem, was du tust, was dir wichtig ist, und an Menschen, die dich nicht nach Noten sortieren. Gute Noten und Siege dürfen dich freuen – sie sollten nur nicht das Einzige sein, worauf du stehst."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Zähl nach: Wie oft hast du bei den wackeligen und wie oft bei den tragenden Quellen „stark“ angekreuzt? Was fällt dir auf?"
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Wackelige Quellen (1–5): „stark“",
+            "Tragende Quellen (6–9): „stark“",
+            "Das fällt mir auf"
+          ],
+          "breiten": [
+            1.2,
+            1.2,
+            2.4
+          ],
+          "zeilen": 1,
+          "beispiel": [
+            "3-mal",
+            "1-mal",
+            "Bei mir hängt viel an Noten und Likes."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dein Selbstwert-Eisberg: Oben steht, was alle sehen und bewerten. Schreib unten auf, was dich trägt – mindestens drei Dinge."
+        },
+        {
+          "art": "eisberg",
+          "oben": "Das sehen und bewerten alle",
+          "beispielOben": "Noten, Aussehen, Likes, Siege",
+          "unten": "Das trägt mich – auch an schlechten Tagen",
+          "beispielUnten": "mein Humor, meine Oma, dass ich zu Freunden halte, Gitarre spielen"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dein Satz für einen schlechten Tag: Was sagst du dir, wenn eine wackelige Quelle wegbricht?"
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 2,
+          "beispiele": [
+            {
+              "wenn": "Wenn ich eine 22 von 60 zurückbekomme und denke: „Ich bin einfach zu dumm“,",
+              "dann": "sage ich mir: Die Note bewertet eine Arbeit, nicht mich. Und ich frage Tiago, ob er mir die Aufgabe erklärt."
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Du entscheidest, was du teilst.",
+          "text": "Wenn die Gedanken über dich selbst oft sehr hart sind, sprich mit jemandem, dem du vertraust – mit der Leitung, beim SePAS oder anonym beim Kanner- a Jugendtelefon (116 111)."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen erkennen, woran sie ihr Gefühl, wertvoll zu sein, knüpfen, unterscheiden wackelige von tragenden Quellen und formulieren einen Satz für schlechte Tage.",
+        "ablauf": [
+          "Einstieg: Noahs Achterbahn auf der Bodenlinie (Einheit 3) oder im Gespräch – wie wertvoll fühlt sich Noah nach 22 von 60, wie nach dem Siegtor? Hat sich sein Wert verändert?",
+          "Text lesen, Aufgabe 1 allein und still (5 Min.). Nicht vorlesen, nicht einsammeln.",
+          "Den Kasten gemeinsam lesen, Beispiele aus Noahs Tag zuordnen, dann Aufgabe 2 allein: auszählen und einen Satz dazu.",
+          "Eisberg (7 Min.): mindestens drei eigene Quellen unter Wasser. Wer nichts findet, bekommt Beispiele, keinen Druck.",
+          "Wenn-dann-Satz für einen schlechten Tag; wer mag, überträgt ihn in den Skills-Pass."
+        ],
+        "hintergrund": "Crocker und Wolfe (2001) beschreiben, dass Menschen ihren Selbstwert an Bedingungen knüpfen – an Aussehen, Anerkennung, Schulleistung und Wettbewerb, aber auch an Werte oder Rückhalt in der Familie; Crocker et al. (2003) erfassen sieben solcher Bereiche mit einem Fragebogen. Je stärker der Selbstwert an äußeren Bedingungen hängt, desto mehr schwankt er mit Erfolgen und Misserfolgen. Im Jugendalter gliedert sich das Selbstbild in viele unterschiedlich wichtige Bereiche (Harter, 2012). Rosenberg (1965) verstand Selbstwert als die Haltung, sich selbst zu achten – nicht als Überzeugung, besser zu sein als andere.",
+        "quellen": [
+          "Crocker, J. & Wolfe, C. T. (2001). Contingencies of self-worth. Psychological Review, 108(3), 593–623.",
+          "Crocker, J., Luhtanen, R. K., Cooper, M. L. & Bouvrette, A. (2003). Contingencies of self-worth in college students: Theory and measurement. Journal of Personality and Social Psychology, 85(5), 894–908.",
+          "Harter, S. (2012). The Construction of the Self (2nd ed.). New York: Guilford.",
+          "Rosenberg, M. (1965). Society and the Adolescent Self-Image. Princeton, NJ: Princeton University Press."
+        ],
+        "differenzierung": {
+          "leichter": "Aufgabe 1 nur mit den ersten fünf Aussagen; den Eisberg im Gespräch füllen.",
+          "schwerer": "Zu einer wackeligen Quelle notieren, welche tragende Quelle einspringt, wenn sie an einem Tag wegfällt."
+        },
+        "impulse": [
+          "Was kann dir ein einziger schlechter Tag wegnehmen – und was nicht?",
+          "Wer mag dich, auch wenn du verlierst?"
+        ],
+        "tipps": [
+          "Selbst eine tragende Quelle nennen – etwas Alltägliches, nichts Heldenhaftes.",
+          "Wer aus Jahr 1 kommt, darf den Baum der Stärke dazunehmen."
+        ],
+        "achtung": "Harte Selbsturteile nicht in der Gruppe aufgreifen. Sagt jemand, es wäre besser, es gäbe ihn nicht: am selben Tag ansprechen, nach Suizidgedanken fragen, Schutzkonzept, Responsable informieren; akute Gefahr: 112.",
+        "material": "Stifte; für den Einstieg Malerkrepp"
+      }
+    }
+  },
+  {
+    "id": "skills-wert-auktion",
+    "bereich": "skills",
+    "thema": "selbstwert",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "gruppe"
+    ],
+    "dauer": "20–25 Min.",
+    "eldib": [
+      "SOZ-35",
+      "SOZ-21",
+      "KOG-55",
+      "SOZ-18"
+    ],
+    "schlagworte": [
+      "Werte",
+      "Selbstwert",
+      "Auktion",
+      "Spiel",
+      "Prioritäten",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:coin",
+    "verwandt": [
+      "skills-selbstwert-quellen"
+    ],
+    "kurs": [
+      "j2-e03"
+    ],
+    "de": {
+      "titel": "Die Wert-Auktion",
+      "untertitel": "Zwölf Lose, 1000 Taler pro Team: Was ist euch am meisten wert – und was davon kann man wirklich kaufen?",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "So läuft die Auktion",
+          "punkte": [
+            "Jedes Team hat 1000 Taler auf seinem Konto. Mehr gibt es nicht, auch nicht geliehen.",
+            "Die Leitung versteigert die Lose einzeln. Mindestgebot 50 Taler, erhöht wird in 50er-Schritten.",
+            "Geboten wird nur mit erhobener Hand. Das höchste Gebot bekommt das Los und zahlt sofort."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Plant vor der Auktion: Welche drei Lose wollt ihr unbedingt – und wie viel bietet ihr höchstens?",
+          "symbole": [
+            "gruppe"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Los Nr.",
+            "Warum wir es wollen",
+            "Höchstgebot"
+          ],
+          "breiten": [
+            0.8,
+            3.4,
+            1.2
+          ],
+          "zeilen": 3,
+          "beispiel": [
+            "7",
+            "Ohne jemanden, der zu dir hält, bringt dir der Rest wenig.",
+            "400 Taler"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Während der Auktion: Führt euer Konto. Was ihr ersteigert, zieht ihr sofort ab."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Los Nr.",
+            "Bezahlt",
+            "Noch auf dem Konto"
+          ],
+          "breiten": [
+            1,
+            1.5,
+            2
+          ],
+          "zeilen": 3,
+          "beispiel": [
+            "Start",
+            "–",
+            "1000 Taler"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Nach der Auktion: Sortiert alle Lose gemeinsam auf zwei Felder. Notiert die Nummern.",
+          "hinweis": "Auch die Lose, die niemand wollte. Ihr müsst euch nicht einig werden – dann wird geredet."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "feld",
+              "label": "Kann mir ein schlechter Tag wegnehmen",
+              "hoehe": 3
+            }
+          ],
+          "rechts": [
+            {
+              "art": "feld",
+              "label": "Bleibt, auch an einem schlechten Tag",
+              "hoehe": 3
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Euer Fazit"
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 1,
+          "items": [
+            "Wirklich kaufen kann man davon: …",
+            "Vielleicht haben wir davon schon: …"
+          ]
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Die Lose: einmal ausschneiden und verdeckt bereitlegen.",
+          "symbole": [
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 3,
+          "hoehe": 150,
+          "karten": [
+            {
+              "titel": "Los 1",
+              "text": "Nie wieder eine schlechte Note – in jedem Fach die oder der Beste"
+            },
+            {
+              "titel": "Los 2",
+              "text": "100.000 Follower, die jeden Post liken"
+            },
+            {
+              "titel": "Los 3",
+              "text": "Aussehen wie auf den bearbeiteten Fotos – aber in echt"
+            },
+            {
+              "titel": "Los 4",
+              "text": "Immer gewinnen – in jedem Spiel und jedem Wettkampf"
+            },
+            {
+              "titel": "Los 5",
+              "text": "Ein Talent, für das dich alle bewundern"
+            },
+            {
+              "titel": "Los 6",
+              "text": "Nie wieder peinlich sein, egal was passiert"
+            },
+            {
+              "titel": "Los 7",
+              "text": "Eine Freundin oder ein Freund, die oder der immer zu dir hält"
+            },
+            {
+              "titel": "Los 8",
+              "text": "Menschen, bei denen du so sein darfst, wie du bist"
+            },
+            {
+              "titel": "Los 9",
+              "text": "Den Mut, zu sagen, was du denkst – auch wenn alle anders denken"
+            },
+            {
+              "titel": "Los 10",
+              "text": "Dass andere dich als fair und ehrlich kennen"
+            },
+            {
+              "titel": "Los 11",
+              "text": "In den Spiegel schauen und denken: Passt."
+            },
+            {
+              "titel": "Los 12",
+              "text": "Mit dir selbst so freundlich reden wie mit deinem besten Freund"
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Im Spiel entscheiden die Jugendlichen, was ihnen wichtig ist, und merken beim Sortieren, welche Quellen des Selbstwerts wackeln und welche tragen – und dass man keine davon kaufen kann.",
+        "ablauf": [
+          "Vorher: Lose einmal ausschneiden, einen Hammer oder eine Glocke bereitlegen. Das Konto führen die Teams auf dem Blatt; Spielgeld ist nicht nötig.",
+          "Planung (3 Min.): Teams zu zweit oder zu dritt wählen drei Lose und legen Höchstgebote fest (Aufgabe 1).",
+          "Auktion (10 Min.): Lose in beliebiger Reihenfolge versteigern, schnell und mit Lust an der Übertreibung: „Zum Ersten, zum Zweiten, zum Dritten.“ Die Teams führen ihr Konto (Aufgabe 2).",
+          "Sortieren (5 Min.): alle Lose in die Mitte, gemeinsam auf zwei Felder legen (Aufgabe 3).",
+          "Auswertung (4 Min.): „Was habt ihr gekauft und warum? Welches Los kann man wirklich kaufen? Welches habt ihr vielleicht schon?“ Dann Aufgabe 4."
+        ],
+        "hintergrund": "Crocker und Wolfe (2001) zeigen, dass ein Selbstwert, der an äußere Bedingungen wie Aussehen, Anerkennung oder Siege geknüpft ist, stärker schwankt als einer, der auf Werten und tragenden Beziehungen ruht. Deci und Ryan (2000) beschreiben einen verwandten Unterschied bei Lebenszielen: Wer vor allem nach Ruhm, Image und Reichtum strebt, ist im Schnitt weniger zufrieden als jemand, dem Beziehungen, persönliches Wachstum und Gemeinschaft wichtig sind. Die Auktion macht diese Unterscheidung spielerisch erfahrbar – ohne dass jemand über sich selbst sprechen muss.",
+        "quellen": [
+          "Crocker, J. & Wolfe, C. T. (2001). Contingencies of self-worth. Psychological Review, 108(3), 593–623.",
+          "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268."
+        ],
+        "differenzierung": {
+          "leichter": "Nur acht Lose versteigern (1–4 und 7–10); die Leitung rechnet mit.",
+          "schwerer": "Jedes Team begründet, welches Los es heute anders ersteigern würde."
+        },
+        "impulse": [
+          "Welches Los würdet ihr nicht einmal geschenkt nehmen?",
+          "Welche Lose hängen am Urteil anderer?"
+        ],
+        "tipps": [
+          "Je lebendiger die Versteigerung, desto ernster wird das Gespräch danach.",
+          "Nicht bewerten, was ein Team gekauft hat – das Sortieren macht die Arbeit."
+        ],
+        "achtung": "Los 7 und 8 können wehtun, wenn jemand solche Menschen gerade nicht hat. Beobachten, wer still wird, und nach der Einheit nachfragen. Über echte Freundschaften und Familien der Jugendlichen wird nicht gesprochen.",
+        "material": "Hammer oder Glocke, Schere; Spielgeld nicht nötig"
+      }
+    }
+  },
+  {
+    "id": "skills-koerper-kommentare",
+    "bereich": "skills",
+    "thema": "selbstwert",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "gruppe",
+      "einzeln"
+    ],
+    "dauer": "25 Min.",
+    "eldib": [
+      "SOZ-32",
+      "SOZ-37",
+      "V-26",
+      "SOZ-26"
+    ],
+    "schlagworte": [
+      "Körperbild",
+      "Bodyshaming",
+      "Kommentare über Körper",
+      "Rückendeckung",
+      "Respekt",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:messages",
+    "verwandt": [
+      "koerperbild",
+      "skills-stopp",
+      "skills-zivilcourage-leiter"
+    ],
+    "kurs": [
+      "j2-e04"
+    ],
+    "de": {
+      "titel": "Über Körper reden – mit Respekt",
+      "untertitel": "Kommentare über Körper sind schnell gesagt und bleiben lange hängen. Vier Wege, wie du reagieren kannst – für dich und für andere.",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Ein Spruch über die Beine, ein Lach-Emoji unter einem Foto, ein „Du hast aber zugenommen“ beim Familienfest: Solche Sätze treffen, auch wenn sie als Spaß gemeint sind. Und oft steht jemand daneben und weiß nicht, was er sagen soll."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Vier Wege: Lies sie und überleg, welcher dir am leichtesten fällt."
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 0,
+          "items": [
+            {
+              "titel": "Grenze setzen",
+              "text": "„Über meinen Körper redest du nicht.“ Kurz, ruhig, ohne Lächeln."
+            },
+            {
+              "titel": "Nicht mitmachen",
+              "text": "Nicht mitlachen, nicht mitbewerten, Thema wechseln oder gehen."
+            },
+            {
+              "titel": "Rückendeckung geben",
+              "text": "„Hör auf, das ist nicht witzig.“ Oder später privat: „Alles okay?“"
+            },
+            {
+              "titel": "Nach dem Gefühl fragen",
+              "text": "Statt „Du bist doch nicht dick“: „Klingt nach einem miesen Tag. Was ist los?“"
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Komplimente gehen auch ohne Körper",
+          "text": "„Mit dir kann man über alles reden.“ „Du bist echt fair.“ Solche Sätze halten länger – und niemand muss sich danach im Spiegel prüfen."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Zieht zu zweit eine Situationskarte. Was würdet ihr sagen oder tun? Spielt die Szene kurz vor.",
+          "hinweis": "Den Kommentar spricht die Leitung. Gespielt wird nur, was auf der Karte steht.",
+          "symbole": [
+            "partner",
+            "sprechen"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Deine Sätze: Was sagst oder tust du, wenn jemand über Körper redet?"
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 2,
+          "items": [
+            "Wenn jemand über meinen Körper redet, sage ich: …",
+            "Wenn jemand über den Körper anderer lästert, sage oder tue ich: …",
+            "Ein Kompliment ohne Körper, das ich diese Woche verschenke: …"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Hier bekommst du Hilfe",
+          "text": "Wenn Gedanken über Aussehen, Essen oder Gewicht viel Raum einnehmen oder dich jemand wegen deines Körpers fertigmacht: Sprich mit jemandem, dem du vertraust – beim SePAS, bei der Schulärztin oder dem Schularzt, anonym beim Kanner- a Jugendtelefon (116 111). Bei Problemen im Netz: BEE SECURE Helpline (8002 1234)."
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Die Situationskarten: einmal ausschneiden und verdeckt auslegen.",
+          "symbole": [
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 2,
+          "hoehe": 150,
+          "karten": [
+            {
+              "titel": "1 Familienfest",
+              "text": "Eine Tante sagt vor allen zu Nora: „Na, du bist aber in die Breite gegangen.“ Alle schauen Nora an. Was kann Nora sagen?"
+            },
+            {
+              "titel": "2 Umkleide",
+              "text": "Nach dem Sport ruft jemand einem Mitschüler einen Spruch über seine dünnen Arme zu. Zwei lachen. Was tust du?"
+            },
+            {
+              "titel": "3 Klassenchat",
+              "text": "Unter Léas Foto vom Schulfest macht sich jemand über ihre Beine lustig. Drei Lach-Reaktionen. Was schreibst du – öffentlich oder privat?"
+            },
+            {
+              "titel": "4 Pause",
+              "text": "Zwei aus deiner Klasse geben Mädchen aus der Parallelklasse Punkte von 1 bis 10. Sie fragen dich: „Und, welche Zahl?“"
+            },
+            {
+              "titel": "5 Vor der Party",
+              "text": "Zoé zieht sich zum dritten Mal um: „Ich bin so fett. Ich esse heute nichts mehr.“ Was sagst du ihr?"
+            },
+            {
+              "titel": "6 Nach dem Training",
+              "text": "Rafael trainiert jeden Tag zwei Stunden: „Ich bin viel zu schmächtig. Ich brauche unbedingt dieses Pulver.“ Was sagst du?"
+            },
+            {
+              "titel": "7 Gut gemeint",
+              "text": "Ein Onkel sagt zu deiner Cousine: „Super, du hast abgenommen. Jetzt siehst du endlich gut aus.“ Was ist daran schwierig?"
+            },
+            {
+              "titel": "8 Kompliment gesucht",
+              "text": "Du willst Samuel sagen, dass er dir wichtig ist. Dir fällt nur „coole Schuhe“ ein. Was könntest du stattdessen sagen?"
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen kennen vier Wege, auf Kommentare über Körper zu reagieren, und üben sie an Situationen – als Betroffene, als Zuschauende und als Freundin oder Freund.",
+        "ablauf": [
+          "Die vier Wege vorstellen und zu jedem einen Satz vormachen (5 Min.).",
+          "Karten einmal ausschneiden. Paare ziehen eine Karte und überlegen zwei Minuten.",
+          "Szenen (15 Min.): Den Kommentar spricht immer die Leitung, nur mit dem Text der Karte. Das Publikum sagt, welcher Weg das war und was noch ginge.",
+          "Bei Karte 5 und 6 klären, warum „Du bist doch gar nicht dick“ wenig hilft: Es bestätigt, dass dick schlecht wäre, und bleibt beim Körper stehen.",
+          "Aufgabe 3 allein: eigene Sätze. Danach die Rollen abschütteln – Hände ausschütteln, den eigenen Namen sagen."
+        ],
+        "hintergrund": "Weil das wahrgenommene Aussehen im Jugendalter eng mit dem allgemeinen Selbstwertgefühl verknüpft ist (Harter, 2012), treffen Kommentare über Körper besonders – auch wenn sie als Spaß gemeint sind. Aus der Forschung zu Mobbing ist bekannt, dass Zuschauende eine Schlüsselrolle haben: Wer mitlacht, verstärkt, wer sich auf die Seite der Betroffenen stellt, kann den Verlauf verändern (Salmivalli et al., 1996). Bei abwertenden Aussagen über den eigenen Körper hilft bloßes Widersprechen wenig; hilfreicher ist die Frage nach dem Gefühl dahinter. So fühlt sich die Person gesehen, und das Gespräch bleibt nicht beim Körper hängen.",
+        "quellen": [
+          "Harter, S. (2012). The Construction of the Self (2nd ed.). New York: Guilford.",
+          "Salmivalli, C., Lagerspetz, K., Björkqvist, K., Österman, K. & Kaukiainen, A. (1996). Bullying as a group process: Participant roles and their relations to social status within the group. Aggressive Behavior, 22(1), 1–15."
+        ],
+        "differenzierung": {
+          "leichter": "Nur Karte 1, 3 und 5; die Antworten gemeinsam an der Tafel sammeln, statt zu spielen.",
+          "schwerer": "Zu Karte 3 eine öffentliche und eine private Antwort schreiben und besprechen, wann welche besser ist."
+        },
+        "impulse": [
+          "Warum lachen so viele mit, obwohl sie es nicht witzig finden?",
+          "Was würde dir helfen, wenn du Léa wärst?"
+        ],
+        "tipps": [
+          "Die Kommentare immer selbst sprechen – knapp und ohne Übertreibung.",
+          "Nie echte Vorfälle aus der Gruppe nachspielen."
+        ],
+        "achtung": "Wer selbst Bodyshaming erlebt, kann stark reagieren: Beobachtungen im Einzelgespräch aufgreifen. Bei Hinweisen auf Essstörungen oder Mobbing die zuständige Leitung (Responsable) informieren und den SePAS einbeziehen.",
+        "material": "Schere; Karten einmal ausschneiden"
+      }
+    }
+  },
+  {
+    "id": "skills-innerer-freund",
+    "bereich": "skills",
+    "thema": "selbstwert",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "30 Min., verteilt über die Einheit",
+    "eldib": [
+      "K-26",
+      "SOZ-40",
+      "V-21",
+      "K-19"
+    ],
+    "schlagworte": [
+      "Selbstmitgefühl",
+      "innerer Kritiker",
+      "Selbstgespräch",
+      "Selbstwert",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:heart",
+    "verwandt": [
+      "skills-kritischer-detektiv",
+      "skills-selbstwert-quellen",
+      "skills-kompass"
+    ],
+    "kurs": [
+      "j2-e05"
+    ],
+    "de": {
+      "titel": "Mein innerer Freund",
+      "untertitel": "Fast alle reden mit sich selbst härter als mit jedem anderen. Das lässt sich ändern – mit einem Ton, den du auch einer Freundin gönnen würdest.",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Wenn etwas schiefgeht, meldet sich oft der innere Kritiker: „Typisch. Du kriegst nichts hin.“ Er will dich vor Fehlern schützen – aber er übertreibt und macht dich klein. Der innere Freund sieht dieselbe Panne. Er sagt die Wahrheit, nur freundlich: „Das ist ärgerlich. Was hilft dir jetzt?“"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Nora hat zum zweiten Mal ihr Sportzeug vergessen. Was würde ihr innerer Freund sagen? Schreib es in die leere Blase."
+        },
+        {
+          "art": "comic",
+          "spalten": 3,
+          "felder": [
+            {
+              "figuren": [
+                "figur:jana:verlegen",
+                "figur:lehrer:neutral"
+              ],
+              "sprecher": 1,
+              "text": "Schon wieder ohne Sportzeug, Nora?",
+              "untertitel": "Die Panne"
+            },
+            {
+              "figuren": [
+                "figur:jana:traurig:haende-gesicht"
+              ],
+              "blase": "denken",
+              "text": "Typisch. Du kriegst echt gar nichts auf die Reihe.",
+              "untertitel": "Der innere Kritiker"
+            },
+            {
+              "figuren": [
+                "figur:jana:ruhig"
+              ],
+              "blase": "denken",
+              "untertitel": "Der innere Freund"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dein Kritiker, dein Freund: Schreib zwei Sätze deines Kritikers auf – eigene oder aus dem Kasten – und was dein innerer Freund antwortet.",
+          "hinweis": "Nichts davon wird vorgelesen, außer du möchtest es."
+        },
+        {
+          "art": "wortspeicher",
+          "titel": "Sätze, die viele Kritiker sagen",
+          "items": [
+            "Typisch du.",
+            "Alle anderen können das.",
+            "Wie peinlich.",
+            "Das wird nie was.",
+            "Stell dich nicht so an.",
+            "Die lachen alle über dich.",
+            "Du hättest es wissen müssen."
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Mein Kritiker sagt …",
+            "Mein innerer Freund antwortet …"
+          ],
+          "breiten": [
+            1,
+            1.3
+          ],
+          "zeilen": 2,
+          "beispiel": [
+            "„Alle anderen haben das kapiert, nur du nicht.“",
+            "„Du hast es noch nicht kapiert. Frag Tiago oder die Lehrerin – das machen andere auch.“"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Freundlich heißt nicht schönreden.",
+          "text": "Der innere Freund sagt nicht „Das war perfekt“. Er sagt: „Das war schwer, und du hast es versucht.“ Und er fragt, was jetzt hilft."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Die Selbstmitgefühls-Pause: Probier die drei Schritte bei einer kleinen Panne aus – im Bus, vor der Arbeit, nach einer blöden Nachricht."
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 0,
+          "items": [
+            {
+              "titel": "Das ist gerade schwer.",
+              "text": "Merken, was los ist – nicht wegdrücken, nicht aufbauschen."
+            },
+            {
+              "titel": "Das kennen viele.",
+              "text": "Pannen gehören zum Leben – nicht nur zu deinem."
+            },
+            {
+              "titel": "Was brauche ich jetzt?",
+              "text": "So mit dir reden wie mit einer guten Freundin."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dein Satz für schwere Momente: Schreib ihn auf das Kärtchen, schneide es aus und steck es ein.",
+          "symbole": [
+            "schreiben",
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 2,
+          "hoehe": 112,
+          "karten": [
+            {
+              "titel": "Mein Satz für schwere Momente",
+              "text": "_______________________________________________\n\n_______________________________________________"
+            },
+            {
+              "titel": "Die Pause in drei Schritten",
+              "text": "Das ist gerade schwer. – Das kennen viele. – Was brauche ich jetzt?"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dein Test in dieser Woche: Probier die Pause einmal aus und halte fest, wie es war.",
+          "hinweis": "Eine kleine Panne reicht. Wer den Test macht, erzählt nächstes Mal im Check-in davon – wenn er mag."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Wann und wo?",
+            "Mein Kritiker sagte …",
+            "Mein innerer Freund sagte …"
+          ],
+          "breiten": [
+            1,
+            1.3,
+            1.5
+          ],
+          "zeilen": 2,
+          "beispiel": [
+            "Dienstag, nach der Mathearbeit",
+            "„Wieder verhauen. Du lernst es nie.“",
+            "„Ärgerlich. Ich frage nach, was ich falsch gemacht habe.“"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Wenn der Kritiker nicht leiser wird",
+          "text": "Manchmal sind die Gedanken über dich selbst so hart und so häufig, dass Freundlichkeit allein nicht reicht. Dann sprich mit jemandem, dem du vertraust – mit der Leitung, beim SePAS oder anonym beim Kanner- a Jugendtelefon (116 111)."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen unterscheiden die Stimme ihres inneren Kritikers von der eines inneren Freundes, üben die Selbstmitgefühls-Pause und nehmen einen eigenen Satz für schwere Momente mit.",
+        "ablauf": [
+          "Einstieg (10 Min.): Milas Referat an der Tafel – was sagt ihre innere Stimme, was ihre beste Freundin? Frage: Würdet ihr so mit einer Freundin reden?",
+          "Aufgabe 1 (3 Min.): Noras inneren Freund schreiben; zwei, drei Sätze freiwillig vorlesen.",
+          "Aufgabe 2 allein (7 Min.): eigene Kritiker-Sätze oder Sätze aus dem Kasten, dazu die Antwort des inneren Freundes. Nicht vorlesen, nicht einsammeln.",
+          "Nach dem Trainer-Duell: Aufgabe 3 mit einer kleinen Panne anleiten; die Hand auf der Brust ist freiwillig.",
+          "Aufgabe 4 und 5: eigenen Satz aufs Kärtchen, ausschneiden, einstecken; den Test für die Woche erklären."
+        ],
+        "hintergrund": "Selbstmitgefühl heißt nach Neff (2003), sich in schwierigen Momenten wie einem guten Freund zu begegnen: freundlich statt verurteilend, im Wissen, dass Scheitern zum Menschsein gehört, und achtsam statt grübelnd. Bei Jugendlichen geht es mit weniger Angst und Niedergeschlagenheit einher (Neff & McGehee, 2010). Es setzt nicht voraus, besser zu sein als andere, und macht nicht bequem: Wer nach einem Misserfolg freundlich mit sich umgeht, will sich eher verbessern (Breines & Chen, 2012). Die Freundesfrage nutzt auch die kognitive Verhaltenstherapie (Beck, 2011); wer mit sich in der zweiten Person oder mit dem eigenen Namen spricht, gewinnt Abstand (Kross & Ayduk, 2017).",
+        "quellen": [
+          "Neff, K. D. (2003). Self-compassion: An alternative conceptualization of a healthy attitude toward oneself. Self and Identity, 2(2), 85–101.",
+          "Neff, K. D. & McGehee, P. (2010). Self-compassion and psychological resilience among adolescents and young adults. Self and Identity, 9(3), 225–240.",
+          "Breines, J. G. & Chen, S. (2012). Self-compassion increases self-improvement motivation. Personality and Social Psychology Bulletin, 38(9), 1133–1143.",
+          "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
+          "Kross, E. & Ayduk, O. (2017). Self-distancing: Theory, research, and current directions. Advances in Experimental Social Psychology, 55, 81–136."
+        ],
+        "differenzierung": {
+          "leichter": "Nur Aufgabe 1 und das Kärtchen; Satzanfänge an die Tafel: „Das ist ärgerlich, aber …“, „Beim nächsten Mal …“.",
+          "schwerer": "Dem eigenen Kritiker einen Namen geben und notieren, wovor er schützen will – und wie er das freundlicher sagen könnte."
+        },
+        "impulse": [
+          "Wovor will euch der Kritiker eigentlich schützen?",
+          "Würdet ihr einem Freund so etwas sagen?"
+        ],
+        "tipps": [
+          "Den Kritiker nicht verteufeln: Er meint es gut und macht es schlecht.",
+          "Die Pause zuerst mit kleinen Pannen üben, dann steht sie bei großen bereit."
+        ],
+        "achtung": "Hoffnungslose Sätze („Ohne mich wären alle besser dran“) sind ein Warnsignal: am selben Tag ansprechen, nach Suizidgedanken fragen, Schutzkonzept, Responsable informieren; akute Gefahr: 112.",
+        "material": "Schere; Laminierfolie (optional)"
+      }
+    }
+  }
+]

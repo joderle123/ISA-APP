@@ -1,0 +1,185 @@
+{
+  "jahr": {
+    "nr": 2,
+    "titel": "Kursjahr 2 · Stark im Alltag",
+    "untertitel": "Ein Schuljahr in 35 Einheiten",
+    "faden": "Im zweiten Jahr werden die Skills alltagstauglich: Selbstwert und Körperbild, Stress und Schule, Wut und Impulse, Freundschaft und Verliebtsein, Familie, Vielfalt, Sicherheit im Netz, Alkohol, Vapes und Cannabis, Gesundheit und Hilfe in Krisen. Die Rituale aus Jahr 1 bleiben (Gefühlsrad mit Anspannung 0–100, Skills-Pass). Neu ist der Skills-Kompass: Am Ende jedes Moduls hält jede Person fest, welcher Skill ihr in diesem Bereich hilft. Mit den Einheiten 1 und 2 kann auch eine neue Gruppe direkt in Jahr 2 einsteigen.",
+    "module": [
+      "j2-m0",
+      "j2-m1",
+      "j2-m2",
+      "j2-m3",
+      "j2-m4",
+      "j2-m5",
+      "j2-m6",
+      "j2-m7",
+      "j2-m8",
+      "j2-m9",
+      "j2-m10"
+    ],
+    "joker": [
+      "j2-j01",
+      "j2-j02",
+      "j2-j03",
+      "j2-j04"
+    ]
+  },
+  "module": [
+    {
+      "id": "j2-m0",
+      "jahr": 2,
+      "nr": 0,
+      "titel": "Wieder ankommen",
+      "leitfrage": "Wer sind wir in diesem Jahr?",
+      "worum": "Die Gruppe findet sich neu, erneuert ihren Vertrag und frischt die wichtigsten Skills aus Jahr 1 spielerisch auf. Neue Jugendliche lernen die Rituale kennen, ohne dass sich jemand abgehängt fühlt.",
+      "zielAmEnde": "Die Gruppe hat einen erneuerten Vertrag, und alle kennen Gefühlsrad, Anspannungsskala und ihre wichtigsten Skills.",
+      "einheiten": [
+        "j2-e01",
+        "j2-e02"
+      ]
+    },
+    {
+      "id": "j2-m1",
+      "jahr": 2,
+      "nr": 1,
+      "titel": "Selbstwert und Körper",
+      "leitfrage": "Was macht mich wertvoll – auch wenn ich mich vergleiche?",
+      "worum": "Selbstwert hängt nicht an Noten, Likes oder Aussehen. Die Jugendlichen unterscheiden Leistung und Wert, prüfen bearbeitete Bilder und üben, freundlich mit sich selbst zu sprechen.",
+      "zielAmEnde": "Die Jugendlichen kennen Quellen ihres Selbstwerts und einen Satz, mit dem sie sich selbst stärken.",
+      "einheiten": [
+        "j2-e03",
+        "j2-e04",
+        "j2-e05"
+      ]
+    },
+    {
+      "id": "j2-m2",
+      "jahr": 2,
+      "nr": 2,
+      "titel": "Stress und Schule",
+      "leitfrage": "Wie komme ich gut durch Schule, Lernen und Prüfungen?",
+      "worum": "Stress verstehen, Lernen, das hängen bleibt, Aufschieben überlisten und Prüfungen ohne Panik: praktische Werkzeuge für den Schulalltag in Cycle 4, Lycée und Praktikum.",
+      "zielAmEnde": "Die Jugendlichen haben einen persönlichen Lern- und Prüfungsplan und zwei Skills gegen Prüfungsstress.",
+      "einheiten": [
+        "j2-e06",
+        "j2-e07",
+        "j2-e08",
+        "j2-e09"
+      ]
+    },
+    {
+      "id": "j2-m3",
+      "jahr": 2,
+      "nr": 3,
+      "titel": "Wut und Impulse",
+      "leitfrage": "Was steckt hinter meiner Wut – und wie bremse ich rechtzeitig?",
+      "worum": "Unter der Wut liegen oft andere Gefühle. Die Jugendlichen lernen die Stopp-Ampel (rot: stopp, gelb: denken, grün: handeln) und wie man nach einem Ausbruch Verantwortung übernimmt und etwas wiedergutmacht.",
+      "zielAmEnde": "Die Jugendlichen kennen ihre Wut-Auslöser, ihre Stopp-Ampel und einen Weg, etwas wiedergutzumachen.",
+      "einheiten": [
+        "j2-e10",
+        "j2-e11",
+        "j2-e12"
+      ]
+    },
+    {
+      "id": "j2-m4",
+      "jahr": 2,
+      "nr": 4,
+      "titel": "Freundschaft, Liebe und Zugehörigkeit",
+      "leitfrage": "Was macht Freundschaft und Liebe aus – und was, wenn es schwierig wird?",
+      "worum": "Gute Freundschaften, Streit unter Freunden, Ausgrenzung und Eifersucht, Verliebtsein mit Respekt und Einvernehmlichkeit, und wie man mit dem Ende einer Freundschaft umgeht.",
+      "zielAmEnde": "Die Jugendlichen wissen, was ihnen in Freundschaften wichtig ist, und können einen Streit fair ansprechen.",
+      "einheiten": [
+        "j2-e13",
+        "j2-e14",
+        "j2-e15",
+        "j2-e16",
+        "j2-e17"
+      ]
+    },
+    {
+      "id": "j2-m5",
+      "jahr": 2,
+      "nr": 5,
+      "titel": "Familie und Zuhause",
+      "leitfrage": "Wie gehen wir zu Hause miteinander um?",
+      "worum": "Familien sind verschieden. Die Jugendlichen sprechen über Rollen, Streit und Freiraum – immer so, dass niemand Familiäres preisgeben muss.",
+      "zielAmEnde": "Die Jugendlichen kennen einen Weg, zu Hause ein Anliegen ruhig anzusprechen und Freiraum auszuhandeln.",
+      "einheiten": [
+        "j2-e18",
+        "j2-e19",
+        "j2-e20"
+      ]
+    },
+    {
+      "id": "j2-m6",
+      "jahr": 2,
+      "nr": 6,
+      "titel": "Vielfalt und Respekt",
+      "leitfrage": "Wie gehen wir mit Unterschieden um?",
+      "worum": "Schubladen im Kopf, Vielfalt in Luxemburg (Sprachen, Herkunft, Religion) und Diskriminierung erkennen und etwas dagegen tun.",
+      "zielAmEnde": "Die Jugendlichen erkennen Vorurteile und wissen, wie sie bei Diskriminierung reagieren können.",
+      "einheiten": [
+        "j2-e21",
+        "j2-e22",
+        "j2-e23"
+      ]
+    },
+    {
+      "id": "j2-m7",
+      "jahr": 2,
+      "nr": 7,
+      "titel": "Sicher im Netz",
+      "leitfrage": "Wie schütze ich mich und andere online?",
+      "worum": "Privatsphäre und digitaler Fußabdruck, Hass im Netz und Gegenrede, Gaming mit Spaß und Grenzen.",
+      "zielAmEnde": "Die Jugendlichen haben ihre Privatsphäre-Einstellungen geprüft und wissen, wie sie Hass im Netz melden.",
+      "einheiten": [
+        "j2-e24",
+        "j2-e25",
+        "j2-e26"
+      ]
+    },
+    {
+      "id": "j2-m8",
+      "jahr": 2,
+      "nr": 8,
+      "titel": "Riskant oder okay?",
+      "leitfrage": "Alkohol, Vapes, Cannabis – was muss ich wissen, und wie entscheide ich?",
+      "worum": "Sachliche Informationen statt Abschreckung, typische Druck-Situationen und eigene Nein-Sätze, Erste Hilfe im Notfall und andere Wege, mit Stress und Gefühlen umzugehen. Niemand erzählt von eigenem Konsum.",
+      "zielAmEnde": "Die Jugendlichen kennen die wichtigsten Fakten, haben einen Plan für Druck-Situationen und wissen, was im Notfall zu tun ist.",
+      "einheiten": [
+        "j2-e27",
+        "j2-e28",
+        "j2-e29"
+      ]
+    },
+    {
+      "id": "j2-m9",
+      "jahr": 2,
+      "nr": 9,
+      "titel": "Gesund an Körper und Seele",
+      "leitfrage": "Was tut mir gut – und was tun, wenn es jemandem richtig schlecht geht?",
+      "worum": "Schlaf, Essen und Trinken, Bewegung – ohne Diät- und Körperdruck, mit Blick auf Stimmung und Konzentration. Zum Schluss: Wie erkenne ich, dass es einer Freundin oder einem Freund richtig schlecht geht, und wie hole ich Hilfe?",
+      "zielAmEnde": "Die Jugendlichen haben eine kleine, machbare Gewohnheit ausprobiert und wissen, wie sie einer Person in einer Krise helfen und wen sie dazuholen.",
+      "einheiten": [
+        "j2-e30",
+        "j2-e31",
+        "j2-e32",
+        "j2-e33"
+      ]
+    },
+    {
+      "id": "j2-m10",
+      "jahr": 2,
+      "nr": 10,
+      "titel": "Abschluss",
+      "leitfrage": "Was hat sich in diesem Jahr verändert?",
+      "worum": "Rückblick mit Skills-Pass und Skills-Kompass, Würdigung jeder Person und ein Stärken-Fest zum Schluss.",
+      "zielAmEnde": "Die Jugendlichen sehen ihre Fortschritte und verabschieden sich gut.",
+      "einheiten": [
+        "j2-e34",
+        "j2-e35"
+      ]
+    }
+  ]
+}

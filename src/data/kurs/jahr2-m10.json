@@ -1,0 +1,394 @@
+{
+  "einheiten": [
+    {
+      "id": "j2-e34",
+      "nr": 34,
+      "jahr": 2,
+      "modul": "j2-m10",
+      "titel": "Mein Jahr in Bildern",
+      "kurz": "Mit Skills-Pass und Skills-Kompass blickt die Gruppe auf ihr Jahr zurück, stellt gemeinsame Momente in Standbildern dar, und jede Person gestaltet ihr Jahr in einer Collage aus sechs Bildern.",
+      "dauer": 100,
+      "ziele": [
+        "blicken mit Skills-Pass und Skills-Kompass auf ihr Jahr zurück und benennen ihren wichtigsten Skill",
+        "stellen gemeinsame Momente des Jahres in Standbildern dar",
+        "gestalten ihr Jahr in einer Collage aus sechs Bildern und geben ihm einen Titel"
+      ],
+      "material": [
+        "Gefühlsrad und Anspannungsskala",
+        "30 bis 40 Bildkarten oder Postkarten ohne Menschen: Landschaften, Wetter, Gegenstände, Tiere",
+        "Skills-Pässe und Skills-Kompasse aller Jugendlichen",
+        "Kärtchen und dicke Stifte für die Skills-Hitparade, Tafel",
+        "Modul-Karten für die Standbilder: je eine für die Module 0 bis 9, mit Titel und einem unverfänglichen Stichwort",
+        "Schülerblatt „Mein Jahr in Bildern“ je Person",
+        "A3-Papier oder Tonkarton, Zeitschriften, farbiges Papier, Scheren, Klebestifte, Bunt- und Filzstifte",
+        "Kleine Ausdrucke von Plakaten, Tafelbildern und Material aus dem Jahr, ohne Gesichter und Namen",
+        "Plakat „Unser Stärken-Fest“ mit den Spalten Wunschspiel und Festessen, Klebepunkte",
+        "Lautsprecher für leise Musik",
+        "Stempel, Imbiss und Getränke (Allergien beachten)"
+      ],
+      "vorbereitung": [
+        "Skills-Pässe und Skills-Kompasse aus Box und Mappen holen und nach Namen sortieren.",
+        "Die Zettel aus der Fragenbox von Einheit 33 im Team sichten und die Antworten als getippten Aushang vorbereiten; Fragen, die auf eine Notlage hindeuten, nicht öffentlich beantworten, sondern nach dem internen Schutzkonzept weiterverfolgen.",
+        "Kleine Ausdrucke vorbereiten: Fotos von Plakaten, Tafelbildern und Material aus dem Jahr; Gesichter und Namen abdecken.",
+        "Die Modul-Karten schreiben, etwa „Stopp-Ampel“ oder „Schlaf-Quiz“. Momente aus sensiblen Einheiten wie Verliebtsein, Substanzen oder Krisen nicht als Karte anbieten.",
+        "Auf das Plakat „Unser Stärken-Fest“ vier bis fünf Spiele aus diesem Jahr schreiben, die der Gruppe gefallen haben, dazu drei Ideen für das Festessen; Platz für eigene Vorschläge lassen.",
+        "Den Materialtisch für die Collage aufbauen und klären, wo die Collagen bis zur nächsten Einheit sicher liegen."
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-kompass",
+        "skills-jahr-in-bildern",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in mit Bildkarten"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Rückblick auf Einheit 33 und Ablauf"
+        },
+        {
+          "min": "15–40",
+          "phase": "uebung",
+          "titel": "Skills-Pass und Skills-Kompass"
+        },
+        {
+          "min": "40–55",
+          "phase": "aktiv",
+          "titel": "Standbilder des Jahres"
+        },
+        {
+          "min": "55–70",
+          "phase": "pause",
+          "titel": "Pause mit Wunschliste fürs Fest"
+        },
+        {
+          "min": "70–90",
+          "phase": "uebung",
+          "titel": "Mein Jahr in Bildern: die Collage"
+        },
+        {
+          "min": "90–95",
+          "phase": "skill",
+          "titel": "Skill: stille Galerie"
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Réckbléck, Skills-Pass und Ausblick aufs Fest"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in mit Bildkarten",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Die Bildkarten liegen offen auf dem Boden in der Kreismitte, daneben das Gefühlsrad. Jede Person sucht sich eine Karte aus, die zu ihrem Jahr in diesem Kurs passt, und sagt einen Satz dazu, außerdem Gefühlswort und Anspannung. Die Leitung beginnt, etwa mit einer Karte, auf der sich Nebel auflöst: „Am Anfang war vieles unklar, inzwischen sehe ich weiter.“ Die Karten bleiben bis zum Ende der Einheit liegen.",
+          "sagen": [
+            "Sucht euch ein Bild, das zu eurem Jahr hier passt. Ein Satz reicht, erklären müsst ihr nichts.",
+            "Und wie geht es euch heute – Gefühl und Zahl?"
+          ],
+          "tipp": "Postkarten, alte Kalenderblätter oder Karten aus Spielen wie Dixit eignen sich gut – Hauptsache, es sind keine Menschen zu sehen, damit sich niemand mit fremden Gesichtern vergleicht.",
+          "wennEsKippt": "Nimmt jemand demonstrativ eine Karte mit Gewitter oder einem Müllberg, das ohne Wertung stehen lassen: Auch ein schweres Jahr ist ein Jahr. Nicht nachbohren, sondern nach der Einheit kurz nachfragen.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Rückblick auf Einheit 33 und Ablauf",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "Kurz an die letzte Einheit anknüpfen, ohne Inhalte zu wiederholen: Wie ging es euch mit dem Thema Hilfe holen? Allen anbieten, nach der Einheit kurz unter vier Augen zu sprechen. Auf den Aushang mit den Antworten aus der Fragenbox zeigen. Dann die Titel der Module dieses Jahres vorlesen: Die Gruppe ist beim letzten angekommen. Den Ablauf nennen: heute zurückschauen, nächstes Mal feiern.",
+          "sagen": [
+            "Letztes Mal ging es um ein ernstes Thema. Wenn euch seitdem etwas beschäftigt, sprecht mich nach der Einheit an.",
+            "Heute schauen wir auf das ganze Jahr – mit euren Pässen, euren Kompassen und mit Bildern. Nächstes Mal wird gefeiert."
+          ],
+          "wennEsKippt": "Möchte jemand über Einheit 33 sprechen, weil ihn etwas belastet, nicht in der Runde vertiefen: kurz würdigen, ein Gespräch direkt nach der Einheit zusagen und mit dem Rückblick weitermachen."
+        },
+        {
+          "titel": "Skills-Pass und Skills-Kompass",
+          "dauer": 25,
+          "phase": "uebung",
+          "text": "Pässe und Kompasse austeilen. Fünf Minuten blättert jede Person still im Skills-Pass und markiert drei Sätze, die ihr heute noch etwas bedeuten. Dann auf dem Kompass die Aufgabe für das Jahresende: das Feld „Mein wichtigster Skill in diesem Jahr“ füllen und die drei Satzanfänge ergänzen (zehn Minuten). Anschließend Skills-Hitparade: Jede Person schreibt ihren wichtigsten Skill groß auf ein Kärtchen, die Kärtchen kommen an die Tafel, gleiche übereinander. Zum Schluss schaut die Gruppe auf die Hitparade und ihre Vielfalt; der Skill an der Spitze wird beim Stärken-Fest noch einmal gebraucht.",
+          "sagen": [
+            "Blättert in eurem Pass. Welcher Satz überrascht euch heute? Welcher stimmt immer noch?",
+            "Schaut auf euren Kompass: In welchem Bereich kommt ihr heute besser zurecht als im Herbst?",
+            "Jeder Skill an dieser Tafel hat mindestens einer Person in diesem Raum geholfen. Das ist euer gemeinsamer Werkzeugkasten."
+          ],
+          "tipp": "Wer spät dazugekommen ist oder viele Lücken im Kompass hat, füllt nur die Bereiche aus, die er erlebt hat. Lücken nicht kommentieren.",
+          "wennEsKippt": "Sagt jemand, nichts habe geholfen, das ernst nehmen und nicht überreden: fragen, was am ehesten ging, oder ob ein Mensch geholfen hat statt eines Skills – auch das gehört in den Kompass.",
+          "blatt": "skills-kompass"
+        },
+        {
+          "titel": "Standbilder des Jahres",
+          "dauer": 15,
+          "phase": "aktiv",
+          "text": "Die Modul-Karten liegen verdeckt aus. Paare oder Dreiergruppen ziehen eine Karte und bauen in drei Minuten ein Standbild zu einem Moment aus diesem Modul: eine Übung, ein Rollenspiel, ein typischer Satz, eingefroren wie ein Foto. Nacheinander zeigen die Gruppen ihr Standbild, die anderen raten Modul und Moment; auf ein Zeichen der Leitung wird das Bild für drei Sekunden lebendig. Fotos werden nicht gemacht. Nach jeder Runde sagt die Gruppe, was ihr an diesem Moment wichtig war.",
+          "sagen": [
+            "Friert einen Moment aus diesem Modul ein, wie auf einem Foto. Die anderen sollen erraten, wo wir waren.",
+            "Drei, zwei, eins – und lebendig. Drei Sekunden. Und wieder einfrieren."
+          ],
+          "tipp": "Wer nicht ins Bild will, führt Regie und stellt die anderen hin oder hält die Modul-Karte als Titel hoch. Mit nur zwei Jugendlichen baut die Leitung mit und rät zuletzt; bei wenig Energie reichen Standbilder im Sitzen, nur mit Gesicht und Händen.",
+          "wennEsKippt": "Wird ein Standbild zur Nachstellung eines echten Streits in der Gruppe oder zum Bloßstellen einer Person, freundlich abbrechen: Heute zeigen wir Momente, keine Personen. Berührungen im Standbild nur, wenn beide einverstanden sind."
+        },
+        {
+          "titel": "Pause mit Wunschliste fürs Fest",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Imbiss und frische Luft, das Thema ruht. Während der Pause hängt das Plakat „Unser Stärken-Fest“: Jede Person klebt einen Punkt beim Wunschspiel und einen beim Festessen und darf eigene Vorschläge dazuschreiben."
+        },
+        {
+          "titel": "Mein Jahr in Bildern: die Collage",
+          "dauer": 20,
+          "phase": "uebung",
+          "text": "Die Regeln für die Bilder auf dem Blatt vorlesen und kurz begründen. Dann skizziert jede Person in fünf Minuten auf dem Blatt, welches Bild in welches Feld kommt. Anschließend überträgt sie die sechs Felder auf A3 und gestaltet sie mit Zeichnungen, Symbolen, Wörtern und Ausschnitten vom Materialtisch; leise Musik läuft. Ein Feld darf eine Klappe bekommen, unter der steht, was nur die Person selbst etwas angeht. Zum Schluss gibt jede Person ihrer Collage einen Titel.",
+          "sagen": [
+            "Ihr müsst nicht malen können. Ein Symbol, ein Wort in großer Schrift oder ein Ausschnitt reichen.",
+            "Fotos von Menschen kommen nicht hinein – auch nicht von euch selbst. Und nichts davon geht ins Netz.",
+            "Welchen Titel hätte euer Jahr, wenn es ein Film wäre?"
+          ],
+          "tipp": "Wer schneller fertig ist, gestaltet den Rand oder schreibt zu jedem Bild einen Satz. Wer nicht fertig wird, bekommt beim Stärken-Fest in der Pause fünf Minuten zum Ergänzen.",
+          "wennEsKippt": "Hängt jemand beim Feld „Ein Moment, der schwer war“ und wird still, ruhig dazusetzen und sagen, dass das Feld leer bleiben oder eine Klappe bekommen darf. Zeichnet jemand etwas Abwertendes über andere, das Blatt kurz beiseitenehmen und unter vier Augen klären.",
+          "blatt": "skills-jahr-in-bildern"
+        },
+        {
+          "titel": "Skill: stille Galerie",
+          "dauer": 5,
+          "phase": "skill",
+          "text": "Die Collagen liegen auf Tischen oder hängen an der Wand; wer seine nicht zeigen möchte, legt sie umgedreht ab. Zwei Minuten gehen alle schweigend und langsam an den Bildern vorbei, spüren bei jedem Schritt den Boden und schauen nur. Dann bleibt jede Person bei einem Bild stehen, das sie berührt, atmet dreimal ruhig und geht zurück an ihren Platz. Erst danach wird wieder gesprochen.",
+          "sagen": [
+            "Nur schauen, nicht kommentieren. Langsam gehen, jeden Schritt spüren."
+          ],
+          "tipp": "Achtsames Gehen ist ein eigener Skill: Wer ihn kennt, kann ihn auf dem Schulweg oder in der Pause nutzen.",
+          "wennEsKippt": "Wird in der Galerie getuschelt oder kommentiert, stehen bleiben und leise erinnern: Hier wird nur geschaut. Wenn nötig, die Galerie abkürzen und direkt zum Abschluss gehen."
+        },
+        {
+          "titel": "Réckbléck, Skills-Pass und Ausblick aufs Fest",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Blitzlicht: ein Wort zu eurem Jahr hier. Dann Eintrag in den Skills-Pass mit Stempel. Die Leitung nennt das Ergebnis der Abstimmung – Wunschspiel und Festessen – und sagt, wo die Collagen bis zum Fest sicher liegen.",
+          "sagen": [
+            "Ein Wort zu eurem Jahr hier.",
+            "Für den Pass: Welcher Moment aus diesem Jahr soll bleiben?"
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Nächstes Mal ist unser Stärken-Fest: mit dem Spiel und dem Essen, das ihr euch gewünscht habt – und mit einem Blick auf Kursjahr 3.",
+      "hintergrund": "Am Ende eines Gruppenjahres lohnt ein bewusster Rückblick. Tuckman und Jensen (1977) ergänzten ihr Modell der Gruppenphasen um das Auseinandergehen als eigene Phase: Wird das Ende gestaltet, können die Mitglieder würdigen, was sie erreicht haben. Wer im Skills-Pass und im Skills-Kompass nachliest, ruft Gelerntes aktiv ab und festigt es damit (Roediger & Karpicke, 2006); zugleich wird sichtbar, was bewältigt wurde – solche Erfahrungen sind die wichtigste Quelle von Selbstwirksamkeit (Bandura, 1977). Bilder helfen, wo Worte fehlen: Narrative Ansätze nutzen Zeichnungen, damit junge Menschen von ihrem Leben erzählen können, ohne sich über ihre Probleme zu definieren (Ncube, 2006). Die Standbilder holen gemeinsame Erinnerungen in den Raum und stärken das Wir, bevor sich die Gruppe verabschiedet.",
+      "quellen": [
+        "Tuckman, B. W. & Jensen, M. A. C. (1977). Stages of small-group development revisited. Group & Organization Studies, 2(4), 419–427.",
+        "Roediger, H. L. & Karpicke, J. D. (2006). Test-enhanced learning: Taking memory tests improves long-term retention. Psychological Science, 17(3), 249–255.",
+        "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
+        "Ncube, N. (2006). The Tree of Life Project: Using narrative ideas in work with vulnerable children. International Journal of Narrative Therapy and Community Work, 1, 3–16."
+      ],
+      "achtung": "Ein Jahresrückblick kann an Schweres erinnern: Konflikte in der Gruppe, Verluste, Einheiten, die belastet haben, zuletzt das Krisenthema aus Einheit 33. Das Feld „Ein Moment, der schwer war“ darf leer bleiben, und niemand muss seine Bilder erklären. In die Collagen kommen keine Fotos, auf denen Personen zu erkennen sind; nichts davon wird ins Netz gestellt, auch keine Fotos von Plakaten mit Namen. Collagen gehören den Jugendlichen und hängen nur mit ihrem Einverständnis. Deutet jemand Belastendes an oder wirkt nach Einheit 33 noch aufgewühlt, am selben Tag ein Gespräch suchen; bei Hinweisen auf Gefährdung nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) informieren."
+    },
+    {
+      "id": "j2-e35",
+      "nr": 35,
+      "jahr": 2,
+      "modul": "j2-m10",
+      "titel": "Das Stärken-Fest",
+      "kurz": "Die letzte Einheit des Jahres ist ein Fest: Die Jugendlichen verschenken einander Stärken-Karten, spielen ihr Wunschspiel, schauen auf Kursjahr 3 und verabschieden sich mit Zertifikat und Wollnetz.",
+      "dauer": 100,
+      "ziele": [
+        "verschenken einander Stärken, die sie im Jahr erlebt haben, und belegen sie mit einer Beobachtung",
+        "nehmen Rückmeldungen der Gruppe an und halten fest, welche Stärken sie mitnehmen",
+        "werfen einen Blick auf Kursjahr 3 und schreiben einen Wunsch oder eine Frage dafür auf",
+        "verabschieden sich mit einem gemeinsamen Ritual voneinander"
+      ],
+      "material": [
+        "Gefühlsrad mit den Namensklammern",
+        "Collagen aus Einheit 34, Malerkrepp",
+        "Schülerblatt „Stärken-Karten zum Verschenken“: Seite 1 je Person, Seite 2 je Person auf festem, farbigem Papier",
+        "Eine Papiertüte oder ein Umschlag je Person, mit Namen beschriftet",
+        "Scheren, Stifte, Lautsprecher für leise Musik",
+        "Festbuffet nach dem Wunsch der Gruppe, Teller, Becher, Servietten (Allergien und Essensregeln beachten)",
+        "Material für das Wunschspiel; für den Ball-Rekord ein weicher Ball und eine Stoppuhr",
+        "Plakat „Kursjahr 3 · Mein Weg“ mit den elf Modulen als Treppe",
+        "Kärtchen und eine verschließbare Box für die Wünsche an Jahr 3",
+        "Skills-Kompasse aller Jugendlichen",
+        "Zertifikate, vorbereitet und auf festem Papier gedruckt",
+        "Ein Wollknäuel in kräftiger Farbe und eine Schere",
+        "Skills-Pässe, Stempel"
+      ],
+      "vorbereitung": [
+        "Für jede Person das Zertifikat vorbereiten: Name, Schuljahr und ein persönlicher Satz der Leitung mit einer konkreten Beobachtung aus dem Jahr.",
+        "Die Stärken-Karten schneiden oder schneiden lassen und je Person einen vollständigen Satz bereitlegen; die Papiertüten mit Namen wie Briefkästen an eine Wand hängen.",
+        "Festbuffet und Wunschspiel nach der Abstimmung aus Einheit 34 organisieren.",
+        "Das Plakat für Kursjahr 3 schreiben: Ankommen, Werte und Identität, Entscheidungen und Verantwortung, Zukunft und Beruf, Selbstständig werden, Schwere Gefühle, Resilienz und Hilfe, Meinung und Mitbestimmung, Liebe, Sexualität und Einvernehmlichkeit, Medien und KI, Abschluss.",
+        "Im Team klären, wer im nächsten Jahr weitermacht; für Jugendliche, die gehen, den Übergang mitdenken: wohin sie wechseln und wer dort ansprechbar ist."
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-staerken-post",
+        "skills-kompass",
+        "skills-zertifikat-jahr2",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: zum letzten Mal in diesem Jahr"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Ausstellung der Collagen, Ablauf des Festes"
+        },
+        {
+          "min": "15–38",
+          "phase": "uebung",
+          "titel": "Stärken-Post"
+        },
+        {
+          "min": "38–53",
+          "phase": "pause",
+          "titel": "Festbuffet"
+        },
+        {
+          "min": "53–71",
+          "phase": "aktiv",
+          "titel": "Das Wunschspiel des Jahres"
+        },
+        {
+          "min": "71–79",
+          "phase": "uebung",
+          "titel": "Blick nach vorn: Kursjahr 3"
+        },
+        {
+          "min": "79–89",
+          "phase": "uebung",
+          "titel": "Zertifikate überreichen"
+        },
+        {
+          "min": "89–93",
+          "phase": "skill",
+          "titel": "Der Skill, der bleibt"
+        },
+        {
+          "min": "93–100",
+          "phase": "abschluss",
+          "titel": "Wollnetz und letzter Stempel"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: zum letzten Mal in diesem Jahr",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Das Gefühlsrad liegt in der Mitte, die Namensklammern daneben. Reihum steckt jede Person ihre Klammer an ein Wort, sagt einen Satz dazu und nennt ihre Anspannung; heute sind zwei Wörter erlaubt, auch solche, die nicht im Rad stehen. Wer mag, sagt zusätzlich, wo die Klammer im September gesteckt hätte. Die Leitung beginnt und zeigt, dass gemischte Gefühle dazugehören, etwa: froh und ein bisschen wehmütig.",
+          "sagen": [
+            "Zwei Wörter sind heute erlaubt. Wo steckt eure Klammer beim letzten Mal – und wo hätte sie im September gesteckt?"
+          ],
+          "tipp": "Die Namensklammern dürfen heute mit nach Hause – ein kleines Andenken an ein Jahr Check-ins. Arbeitet die Gruppe ohne Klammern, reicht ein Klebezettel mit Namen.",
+          "wennEsKippt": "Überspielt jemand den Abschied mit Albernheit oder „endlich vorbei“, das mit Humor stehen lassen. Auch Erleichterung ist ein Gefühl; nicht moralisieren und nicht nachbohren.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Ausstellung der Collagen, Ablauf des Festes",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "Die Collagen aus Einheit 34 hängen als kleine Ausstellung im Raum, nur mit Einverständnis der Jugendlichen. Die Leitung nennt den Ablauf: Stärken verschenken, Festbuffet, Wunschspiel, Blick auf Jahr 3, Zertifikate und ein Abschiedsritual. Kurz sagen, dass heute nichts mehr erarbeitet werden muss: Gefeiert wird, was da ist.",
+          "sagen": [
+            "Heute wird nichts mehr gelernt. Heute wird gefeiert, was ihr in diesem Jahr gezeigt habt."
+          ]
+        },
+        {
+          "titel": "Stärken-Post",
+          "dauer": 23,
+          "phase": "uebung",
+          "text": "An der Wand hängt für jede Person eine Papiertüte mit Namen. Die Leitung liest die Regeln auf dem Blatt vor und gibt ein Beispiel. Dann schreibt jede Person für jede andere eine Stärken-Karte: Stärke auswählen, auf der Rückseite notieren, wann sie diese Stärke erlebt hat, und die Karte in die Tüte stecken; leise Musik läuft, die Leitung schreibt für alle mit. Bevor die Tüten verteilt werden, schaut die Leitung jede kurz durch. Dann liest jede Person still ihre Karten und füllt Aufgabe 2 und 3 aus; wer mag, liest eine Karte vor.",
+          "sagen": [
+            "Nehmt euch Zeit für jede Person. Was habt ihr an ihr erlebt – in einer Übung, in der Pause, beim Spiel?",
+            "Zum Beispiel: Ich schenke dir Geduld, weil du mir beim Rückwärtsrechnen für den Schlaf dreimal geholfen hast. So konkret wie möglich.",
+            "Lest eure Karten in Ruhe. Welche überrascht euch?"
+          ],
+          "tipp": "Anders als beim Stärken-Rücken in Jahr 1 bleiben die Karten beweglich: Wer mag, klebt sie später in den Skills-Pass oder hängt sie über den Schreibtisch. Bei nur zwei, drei Jugendlichen schreibt jede Person zwei Karten für jede andere.",
+          "wennEsKippt": "Fällt jemandem zu einer Person nichts ein, hilft die Leitung mit einer Erinnerung aus dem Jahr, statt die Karte weglassen zu lassen. Nimmt jemand seine Karten sichtbar nicht an („stimmt eh nicht“), nicht diskutieren: Die Karten dürfen erst einmal einfach in der Tüte bleiben.",
+          "blatt": "skills-staerken-post"
+        },
+        {
+          "titel": "Festbuffet",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Das Festbuffet nach dem Wunsch der Gruppe, bei gutem Wetter gern draußen. Die Leitung isst mit, erzählt vielleicht eine lustige Erinnerung aus dem Jahr und achtet auf Allergien und Essensregeln. Wer seine Collage noch ergänzen möchte, hat jetzt fünf Minuten Zeit."
+        },
+        {
+          "titel": "Das Wunschspiel des Jahres",
+          "dauer": 18,
+          "phase": "aktiv",
+          "text": "Die Gruppe spielt das Spiel, das sie in Einheit 34 gewählt hat, etwa das Schlaf-Quiz „Tag und Nacht“ aus Einheit 30, die Hütchen-Wende aus Einheit 32 oder ein Spiel aus dem Herbst. Die Leitung spielt mit und hält sich mit Regeln zurück: Heute bestimmt die Gruppe. Gab es keine klare Wahl, spielt die Gruppe den Ball-Rekord: Alle stehen im Kreis, der Ball wandert in fester Reihenfolge einmal durch alle Hände zurück zum Start, und die Leitung stoppt die Zeit. Nach jedem Versuch darf die Gruppe beraten, wie sie schneller wird; die einzigen Regeln sind, dass jede Person den Ball berührt und die Reihenfolge gleich bleibt.",
+          "sagen": [
+            "Heute ist euer Spiel. Ich spiele mit – und ihr bestimmt.",
+            "Beim Ball-Rekord zählt nur eins: Jede Person berührt den Ball, immer in derselben Reihenfolge. Wie ihr das schafft, entscheidet ihr."
+          ],
+          "tipp": "Der Ball-Rekord endet oft mit einer verblüffenden Lösung, etwa wenn alle ihre Hände zu einer Rutsche formen. Das lässt sich zum Schluss benennen: Zusammen findet diese Gruppe Wege, auf die niemand allein kommt.",
+          "wennEsKippt": "Überdrehen einige, weil der Abschied in der Luft liegt, kurz „Zählen bis 20“ aus dem Methoden-Pool einschieben und dann weiterspielen. Wer nicht mitspielen mag, stoppt die Zeit oder ist Schiedsrichterin."
+        },
+        {
+          "titel": "Blick nach vorn: Kursjahr 3",
+          "dauer": 8,
+          "phase": "uebung",
+          "text": "Das Plakat „Kursjahr 3 · Mein Weg“ zeigen: elf Stufen von Werte und Identität über Zukunft und Beruf bis zum eigenen Skills-Buch; zwei Minuten zum Schauen und Fragen. Dann der letzte Eintrag in den Skills-Kompass, Feld 10: Welcher Skill hilft dir, wenn etwas endet und etwas Neues beginnt? Zum Schluss schreibt jede Person ohne Namen einen Wunsch oder eine Frage für Jahr 3 auf ein Kärtchen und wirft es in die Box; wer im nächsten Jahr nicht dabei ist, schreibt einen Wunsch für sich oder für die Gruppe.",
+          "sagen": [
+            "Im nächsten Jahr geht es um euren eigenen Weg: Was ist mir wichtig, was will ich werden, was hält mich, wenn es schwer wird?",
+            "Die Box öffne ich in der ersten Einheit im Herbst. Wer dann nicht mehr dabei ist: Euer Wunsch gehört trotzdem dazu."
+          ],
+          "tipp": "Wer die Gruppe verlässt, bekommt hier bewusst einen Platz: Die Leitung fragt, wohin die Person wechselt, und nennt, wer dort ansprechbar ist, etwa der SePAS im neuen Lycée.",
+          "wennEsKippt": "Weckt die Frage nach dem nächsten Jahr Sorgen – Schulwechsel, Orientierung, eine unklare Zukunft –, das nicht in der Gruppe vertiefen, sondern ein Gespräch vor den Ferien anbieten.",
+          "blatt": "skills-kompass"
+        },
+        {
+          "titel": "Zertifikate überreichen",
+          "dauer": 10,
+          "phase": "uebung",
+          "text": "Jede Person trägt auf ihrem Zertifikat ihre drei wichtigsten Skills aus dem Kompass und drei Stärken von ihren Karten ein und ergänzt den Blick nach vorn; das Feld mit dem Satz der Leitung ist schon ausgefüllt. Dann ruft die Leitung die Jugendlichen einzeln nach vorn, überreicht das Zertifikat, liest den Satz vor, den sie für diese Person geschrieben hat, und unterschreibt; die Gruppe applaudiert. Wer nicht nach vorn möchte, bekommt das Zertifikat am Platz, und der Satz wird nur überreicht, nicht vorgelesen.",
+          "sagen": [
+            "Dieses Zertifikat ist kein Zeugnis. Es zeigt, was ihr dieses Jahr geübt habt – und was andere an euch sehen.",
+            "Ich lese euch meinen Satz vor. Wer das lieber nicht möchte, sagt es mir vorher kurz."
+          ],
+          "tipp": "Den persönlichen Satz mit einer konkreten Beobachtung schreiben, etwa: „Im Februar hast du im Rollenspiel dreimal Stopp gesagt, obwohl alle gelacht haben.“ Das trägt länger als jedes allgemeine Lob.",
+          "wennEsKippt": "Wird die Übergabe albern oder peinlich, das Tempo herausnehmen und ruhig bleiben; Applaus kann dann auch leises Klopfen auf den Tisch sein. Ist jemand gerührt, nichts kommentieren und einfach weitermachen.",
+          "blatt": "skills-zertifikat-jahr2"
+        },
+        {
+          "titel": "Der Skill, der bleibt",
+          "dauer": 4,
+          "phase": "skill",
+          "text": "Die Gruppe macht zum letzten Mal gemeinsam den Skill, der in Einheit 34 die Hitparade angeführt hat. Eine freiwillige Person leitet ihn an, die Leitung hilft mit Stichworten. Danach einen Moment Stille, bevor das Abschlussritual beginnt.",
+          "sagen": [
+            "Mit diesem Skill konntet ihr dieses Jahr am meisten anfangen. Wer leitet ihn heute an?"
+          ]
+        },
+        {
+          "titel": "Wollnetz und letzter Stempel",
+          "dauer": 7,
+          "phase": "abschluss",
+          "text": "Alle stehen im Kreis. Die Leitung hält das Ende des Wollfadens, sagt einen Satz – „Ich nehme aus diesem Jahr mit …“ – und wirft das Knäuel einer Person zu, die den Faden festhält, ihren Satz sagt und weiterwirft, bis alle einmal dran waren. Die Leitung benennt kurz, was man sieht: Jede Person hält das Netz mit. Dann schneidet sie es auf, jede Person bekommt ein Stück Faden für das Handgelenk oder die Tasche, und es folgen der letzte Eintrag in den Skills-Pass und der letzte Stempel.",
+          "sagen": [
+            "Ich nehme aus diesem Jahr mit … – ein Satz, dann werft ihr weiter.",
+            "Schaut euch das Netz an: Wenn eine Person loslässt, wird es locker. Jede und jeder von euch hat es dieses Jahr mitgehalten.",
+            "Danke für dieses Jahr."
+          ],
+          "tipp": "Den Faden nicht zu fest ums Handgelenk binden und die Schere bereithalten. Wer kein Band tragen möchte, steckt sein Stück in den Skills-Pass.",
+          "wennEsKippt": "Fällt der Abschied schwer – Tränen, Rückzug oder Albernheit als Schutz –, das nicht wegreden: benennen, dass Abschiede gemischte Gefühle machen, und nach der Einheit Zeit für diese Person haben.",
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Das war Kursjahr 2. Eure Skills kommen mit in die Ferien – und wer im Herbst weitermacht, findet seinen Wunsch in der ersten Einheit von Kursjahr 3 wieder.",
+      "hintergrund": "Stärken werden im Alltag leicht übersehen – von den Jugendlichen selbst am meisten. Peterson und Seligman (2004) beschreiben 24 Charakterstärken, etwa Mut, Fairness, Humor und Ausdauer, die sich im Verhalten zeigen und wachsen können; die Stärken-Karten übersetzen sie in die Sprache der Jugendlichen. Im Jugendalter zählt die Anerkennung Gleichaltriger besonders (Harter, 2012), und glaubwürdig wird sie, wenn sie ein beobachtetes Verhalten benennt, statt pauschal zu loben (Hattie & Timperley, 2007). Das Ende einer Gruppe ist eine eigene Phase, in der Abschied und Würdigung Platz brauchen (Tuckman & Jensen, 1977). Für Jugendliche mit Beziehungsabbrüchen ist ein gestalteter Abschied zudem die Erfahrung, dass Beziehungen gut enden können; der Blick auf Jahr 3 verbindet das Ende mit einem Anfang.",
+      "quellen": [
+        "Peterson, C. & Seligman, M. E. P. (2004). Character Strengths and Virtues. New York: Oxford University Press.",
+        "Harter, S. (2012). The Construction of the Self (2nd ed.). New York: Guilford.",
+        "Hattie, J. & Timperley, H. (2007). The power of feedback. Review of Educational Research, 77(1), 81–112.",
+        "Tuckman, B. W. & Jensen, M. A. C. (1977). Stages of small-group development revisited. Group & Organization Studies, 2(4), 419–427."
+      ],
+      "achtung": "Abschiede wecken bei manchen Jugendlichen alte Verluste; Rückzug, Tränen oder Albernheit sind verständlich und werden nicht in der Gruppe vertieft, aber nach der Einheit ist Zeit für ein Gespräch. Die Leitung liest jede Stärken-Karte, bevor die Tüten verteilt werden: Abwertende oder zweideutige Karten nimmt sie heraus und klärt sie später mit der Person, die sie geschrieben hat. Niemand geht leer aus; die Leitung ergänzt Karten, wo nötig. Die Zertifikate haben keine Noten und für alle denselben Wert. Für Jugendliche, die die Gruppe verlassen, den Übergang mitdenken und Ansprechpersonen nennen. Deutet jemand an, im nächsten Jahr „nicht mehr da“ sein zu wollen, oder gibt es andere Hinweise auf Gefährdung: noch am selben Tag das Gespräch suchen, nichts versprechen, was man nicht halten kann, nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) informieren."
+    }
+  ]
+}

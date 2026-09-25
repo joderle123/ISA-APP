@@ -1,0 +1,937 @@
+[
+  {
+    "id": "skills-wenn-etwas-fehlt",
+    "bereich": "skills",
+    "thema": "resilienz",
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "25–30 Min.",
+    "eldib": [
+      "K-26",
+      "K-28",
+      "SOZ-37"
+    ],
+    "schlagworte": [
+      "Trauer",
+      "Verlust",
+      "Trauer-Pendel",
+      "Trauernde unterstützen",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:candle",
+    "verwandt": [
+      "skills-was-mir-jetzt-hilft",
+      "wenn-es-laenger-schwer-ist"
+    ],
+    "kurs": [
+      "j3-e17"
+    ],
+    "de": {
+      "titel": "Wenn etwas fehlt",
+      "untertitel": "Verlust hat viele Formen – und Trauer verläuft bei jedem Menschen anders.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Was können Menschen in deinem Alter verlieren? Ergänze die Sammlung aus der Gruppe.",
+          "hinweis": "Du musst nichts aus deinem eigenen Leben aufschreiben."
+        },
+        {
+          "art": "mindmap",
+          "mitte": "Verlust",
+          "aeste": [
+            "ein Mensch stirbt",
+            "die Eltern trennen sich",
+            "Umzug in ein anderes Land",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "art": "text",
+          "text": "Jeder dieser Verluste kann Trauer auslösen. Niemand muss beweisen, dass sein Verlust „groß genug“ ist."
+        },
+        {
+          "art": "geschichte",
+          "titel": "Tiago",
+          "text": "Im Sommer ist Tiagos Avô gestorben, sein Großvater in Portugal. Tiago (15) konnte nicht zur Beerdigung fahren, weil die Schule schon begonnen hatte. In der Klasse weiß es kaum jemand. Tiago geht zum Training, macht Witze, lernt für die Mathearbeit. Im Bus hört er die alten Sprachnachrichten seines Avô – immer wieder dieselben. Manchmal lacht er beim Training und fühlt sich danach schlecht.",
+          "bild": "figur:ben:traurig"
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Das Trauer-Pendel",
+          "text": "Trauernde pendeln zwischen zwei Seiten: dem Vermissen und dem Alltag. Beides gehört dazu. Wer nur vermisst, erschöpft sich. Wer nur weitermacht, schiebt die Trauer vor sich her. Lachen ist kein Verrat – es ist eine Pause."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was könnte Tiago auf beiden Seiten guttun? Schreib je zwei Ideen auf."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "feld",
+              "label": "Vermissen",
+              "beispiel": "ein Foto seines Avô aufstellen",
+              "hoehe": 3
+            }
+          ],
+          "rechts": [
+            {
+              "art": "feld",
+              "label": "Alltag",
+              "beispiel": "mit Léa zum Training gehen",
+              "hoehe": 3
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Was Trauernden meistens hilft",
+          "punkte": [
+            "da sein, auch ohne die richtigen Worte: „Ich weiß nicht, was ich sagen soll – aber ich bin da.“",
+            "fragen statt raten: „Magst du erzählen – oder lieber etwas anderes machen?“",
+            "kleine, konkrete Hilfe: begleiten, zusammen lernen, etwas Normales unternehmen",
+            "dranbleiben – auch nach Wochen und an schweren Tagen wie Geburtstagen"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Léa hat gerade erfahren, was passiert ist. Schreib ihre erste Nachricht an Tiago – und ihre Antwort auf seine.",
+          "hinweis": "Kurz und ehrlich reicht. Eine gute Nachricht setzt Tiago nicht unter Druck, sofort zu antworten."
+        },
+        {
+          "art": "dialog",
+          "zeilen": [
+            {
+              "wer": "Léa"
+            },
+            {
+              "wer": "Tiago",
+              "text": "Danke. Ist gerade echt schwer."
+            },
+            {
+              "wer": "Léa"
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "achtung",
+          "titel": "Wann Trauer mehr Hilfe braucht",
+          "text": "Trauer ist keine Krankheit. Aber niemand muss sie allein tragen. Sprich mit einer erwachsenen Person, wenn jemand …",
+          "punkte": [
+            "über Wochen kaum schläft, isst oder zur Schule geht,",
+            "Alkohol oder Drogen nimmt, um nichts mehr zu spüren,",
+            "sagt, er wolle nicht mehr leben oder bei der verstorbenen Person sein – dann sofort."
+          ]
+        },
+        {
+          "art": "notfall"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen erkennen viele Formen von Verlust, verstehen das Trauer-Pendel und üben, trauernde Freundinnen und Freunde zu unterstützen.",
+        "ablauf": [
+          "Aufgabe 1 (8 Min.): an der Tafel sammeln, dann übertragen – nur allgemein, nicht aus dem eigenen Leben.",
+          "Geschichte lesen, Tiagos Woche an der Pendel-Linie stellen (Einheit 17, Schritt 4).",
+          "Aufgabe 2 (5 Min.): je zwei Ideen pro Seite. Betonen: Beide Seiten sind gesund.",
+          "Nach Satz-Parcours und Rollenspiel: Tipp-Kasten lesen, Aufgabe 3 allein (5 Min.).",
+          "Kasten „Wann Trauer mehr Hilfe braucht“ lesen, Anlaufstellen zeigen."
+        ],
+        "hintergrund": "Nach dem dualen Prozessmodell von Stroebe und Schut (1999) pendeln Trauernde zwischen dem Verlust (vermissen, erinnern, den Schmerz zulassen) und der Wiederherstellung (Alltag, neue Rollen, Pausen vom Trauern). Gesund ist die Bewegung zwischen beiden Seiten, nicht eine feste Folge von Phasen. Worden (2009) beschreibt Trauer als Aufgaben – bis dahin, eine bleibende Verbindung zu finden und weiterzuleben. Gleichaltrige sind für Jugendliche oft die ersten Ansprechpersonen (Bagwell & Schmidt, 2011); deshalb übt das Blatt konkrete Unterstützung.",
+        "quellen": [
+          "Stroebe, M. & Schut, H. (1999). The dual process model of coping with bereavement: Rationale and description. Death Studies, 23(3), 197–224.",
+          "Worden, J. W. (2009). Grief Counseling and Grief Therapy (4th ed.). New York: Springer.",
+          "Bagwell, C. L. & Schmidt, M. E. (2011). Friendships in Childhood and Adolescence. New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Aufgabe 2 im Gespräch; für Aufgabe 3 einen Satz aus dem Tipp-Kasten nutzen.",
+          "schwerer": "Beschreiben, wie das Pendel nach einem Umzug aussieht."
+        },
+        "impulse": [
+          "Warum fühlt sich Lachen danach oft falsch an?",
+          "Was brauchen Trauernde nach Wochen noch?"
+        ],
+        "tipps": [
+          "Jahrestage sind schwer: Eine Nachricht hilft.",
+          "Trauerformen sind verschieden; alle gelten lassen."
+        ],
+        "achtung": "Nicht nach eigenen Verlusten fragen. Bei anhaltendem Rückzug, Drogen oder Sätzen wie „Ich will bei ihm sein“: am selben Tag Einzelgespräch, nichts versprechen, die zuständige Leitung (Responsable) informieren, Schutzkonzept; bei akuter Gefahr 112, nicht allein lassen.",
+        "material": "Plakat, Malerkrepp, Satzkarten"
+      }
+    }
+  },
+  {
+    "id": "skills-scham-oder-schuld",
+    "bereich": "skills",
+    "thema": "resilienz",
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "30 Min.",
+    "eldib": [
+      "K-26",
+      "V-27",
+      "SOZ-40"
+    ],
+    "schlagworte": [
+      "Scham",
+      "Schuld",
+      "Scham-Spirale",
+      "Wiedergutmachung",
+      "Selbstmitgefühl",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:user-heart",
+    "verwandt": [
+      "verantwortung-uebernehmen"
+    ],
+    "kurs": [
+      "j3-e18"
+    ],
+    "de": {
+      "titel": "Scham oder Schuld?",
+      "untertitel": "Schuld sagt: Ich habe etwas falsch gemacht. Scham sagt: Ich bin falsch. Der Unterschied entscheidet, wie es weitergeht.",
+      "bausteine": [
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "Schuld: „Ich habe …“",
+              "punkte": [
+                "Blick auf die Tat",
+                "Gefühl: Unruhe, schlechtes Gewissen",
+                "Impuls: entschuldigen, reparieren",
+                "Folge: Klärung, Vertrauen"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "Scham: „Ich bin …“",
+              "punkte": [
+                "Blick auf die ganze Person",
+                "Gefühl: heißes Gesicht, klein werden",
+                "Impuls: verstecken – oder angreifen",
+                "Folge: Rückzug, noch mehr Scham"
+              ]
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Passt das Gefühl zu den Fakten?",
+          "punkte": [
+            "Ich habe wirklich jemandem geschadet: Die Schuld passt. Dann hilft Wiedergutmachen – nicht mich fertigmachen.",
+            "Ich wurde ausgelacht, bloßgestellt oder verletzt, habe aber nichts Falsches getan: Die Scham passt nicht, die Schuld liegt bei den anderen. Dann hilft: aufrichten, nicht verstecken, mit jemandem reden.",
+            "Ein Fehler macht mich nicht zu einem schlechten Menschen."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Passt hier die Schuld – oder passt die Scham nicht? Kreuze an, was der Person hilft."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "Schuld passt: wiedergutmachen",
+            "Scham passt nicht: aufrichten"
+          ],
+          "items": [
+            "Yusuf wird wegen seines Akzents ausgelacht und schämt sich.",
+            "Liam hat im Streit die Mutter von Elias beleidigt und bereut es.",
+            "Aylin schämt sich, weil ihre Familie wenig Geld hat.",
+            "Rafael wurde beim Spicken erwischt und schämt sich.",
+            "Zoé stolpert auf der Bühne, ein Video davon geht herum."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Die Scham-Spirale: So dreht sie sich bei Mathis. Wo könnte er aussteigen? Schreib zwei Ausstiege auf."
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 0,
+          "items": [
+            {
+              "titel": "Etwas geht schief",
+              "text": "Mathis stellt einen privaten Chat mit Zoé in die Klassengruppe."
+            },
+            {
+              "titel": "„Ich bin mies.“",
+              "text": "Aus „Ich habe“ wird „Ich bin“."
+            },
+            {
+              "titel": "Verstecken, angreifen",
+              "text": "„War doch nur Spaß.“ Er blockiert Zoé."
+            },
+            {
+              "titel": "Noch mehr allein",
+              "text": "Alle reden über ihn, die Scham wächst."
+            }
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Ausstieg 1: …",
+            "Ausstieg 2: …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Plane Mathis’ Wiedergutmachung in vier Schritten.",
+          "hinweis": "Eine gute Entschuldigung hat kein „aber“ und kein „falls“."
+        },
+        {
+          "art": "schritte",
+          "stil": "liste",
+          "linien": 1,
+          "items": [
+            {
+              "titel": "Benennen",
+              "text": "Was genau habe ich getan?"
+            },
+            {
+              "titel": "Anerkennen",
+              "text": "Was hat es bei Zoé ausgelöst?"
+            },
+            {
+              "titel": "Wiedergutmachen",
+              "text": "Was tue ich konkret – und bis wann?"
+            },
+            {
+              "titel": "Anders machen",
+              "text": "Was mache ich beim nächsten Mal?"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Und für dich: Ein Satz, den du dir sagen kannst, wenn Scham kommt.",
+          "hinweis": "Das bleibt privat. Denk daran, wie du mit einem guten Freund reden würdest."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Ich habe vielleicht einen Fehler gemacht, aber …",
+            "Was ich einer Freundin jetzt sagen würde: …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Scham, die nicht zu dir gehört",
+          "text": "Wenn dir jemand etwas angetan hat – dich bloßgestellt, bedroht oder verletzt –, liegt die Schuld bei dieser Person, nicht bei dir. Darüber zu reden ist schwer, aber es hilft: mit einer Vertrauensperson, dem SePAS oder anonym beim Kanner- a Jugendtelefon."
+        },
+        {
+          "art": "notfall"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen unterscheiden Schuld und Scham, prüfen, ob ein Gefühl zu den Fakten passt, und planen Wiedergutmachung statt Selbstabwertung.",
+        "ablauf": [
+          "Kästen lesen (5 Min.); Beispiele aus der Gruppe, nicht aus dem eigenen Leben.",
+          "Aufgabe 1 (8 Min.). Lösung: Bei Yusuf, Aylin und Zoé passt die Scham nicht, bei Liam und Rafael passt die Schuld.",
+          "Aufgabe 2 nach der Spirale am Boden (Einheit 18, Schritt 6).",
+          "Aufgabe 3 nach dem Rollenspiel „Zurückspulen“ (5 Min.).",
+          "Aufgabe 4 still und privat; nicht vorlesen, nicht einsammeln."
+        ],
+        "hintergrund": "Nach Tangney und Dearing (2002) richtet sich Schuld auf eine Tat, Scham auf die ganze Person. Schuld fördert Einfühlung und Wiedergutmachung; Scham drängt zu Verstecken, Leugnen oder Gegenangriff. Das DBT-Skillstraining fragt, ob ein Gefühl zu den Fakten passt; passt Scham nicht, hilft das Gegenteil des Impulses – aufrichten statt verstecken (Linehan, 2015). Selbstmitgefühl senkt Selbstabwertung, ohne Verantwortung zu verwischen (Neff, 2003). Die Schritte der Wiedergutmachung folgen der restaurativen Praxis (Zehr, 2002).",
+        "quellen": [
+          "Tangney, J. P. & Dearing, R. L. (2002). Shame and Guilt. New York: Guilford.",
+          "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford.",
+          "Neff, K. D. (2003). Self-compassion: An alternative conceptualization of a healthy attitude toward oneself. Self and Identity, 2(2), 85–101.",
+          "Zehr, H. (2002). The Little Book of Restorative Justice. Intercourse, PA: Good Books."
+        ],
+        "differenzierung": {
+          "leichter": "Aufgabe 1 zu zweit; bei Aufgabe 3 nur zwei Schritte.",
+          "schwerer": "Eine Scham-Spirale aus einer Serie beschreiben."
+        },
+        "impulse": [
+          "Warum greifen Menschen an, wenn sie sich schämen?",
+          "Was macht eine Entschuldigung echt?"
+        ],
+        "tipps": [
+          "Die Scham-Version spielt immer die Leitung.",
+          "„Tut mir leid, falls …“ ist keine Entschuldigung."
+        ],
+        "achtung": "Scham hängt oft an Gewalt, Übergriffen, Mobbing oder Armut. Nichts Persönliches erfragen. Bei Andeutungen: Einzelgespräch, nichts versprechen, die zuständige Leitung (Responsable) am selben Tag informieren, Schutzkonzept; bei akuter Gefahr 112, nicht allein lassen.",
+        "material": "Malerkrepp, Gedankenkarten, leere Karten"
+      }
+    }
+  },
+  {
+    "id": "skills-allein-oder-einsam",
+    "bereich": "skills",
+    "thema": "resilienz",
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "25 Min.",
+    "eldib": [
+      "SOZ-12",
+      "SOZ-37",
+      "K-26"
+    ],
+    "schlagworte": [
+      "Einsamkeit",
+      "Alleinsein",
+      "Einsamkeits-Kreislauf",
+      "Einbeziehen",
+      "Kontakt",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:user",
+    "verwandt": [
+      "wer-ist-fuer-mich-da",
+      "was-mir-in-freundschaften-wichtig-ist"
+    ],
+    "kurs": [
+      "j3-e19"
+    ],
+    "de": {
+      "titel": "Allein oder einsam?",
+      "untertitel": "Allein sein ist eine Lage, einsam sein ein Gefühl. Beides lässt sich verändern – für dich und für andere.",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Einsamkeit ist das Gefühl, dass die Nähe fehlt, die man sich wünscht. Man kann mitten in der Klasse einsam sein – und allein am See ganz zufrieden. Einsamkeit ist ein Signal wie Hunger: Sie sagt, dass wir Menschen brauchen. Sie ist kein Makel, und fast jeder kennt sie."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Der Einsamkeits-Kreislauf: So dreht er sich bei Jang. Wo könnte Jang aussteigen? Schreib zu zwei Stellen eine Idee.",
+          "hinweis": "Aussteigen geht beim Gedanken („Vielleicht lachen sie über etwas anderes“) oder beim Verhalten („Kopfhörer runter“)."
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 1,
+          "items": [
+            {
+              "titel": "Ich fühle mich einsam",
+              "text": "In der Schule redet kaum jemand mit Jang."
+            },
+            {
+              "titel": "Ich achte auf Ablehnung",
+              "text": "„Die lachen bestimmt über mich.“"
+            },
+            {
+              "titel": "Ich ziehe mich zurück",
+              "text": "Kopfhörer auf, Blick aufs Handy."
+            },
+            {
+              "titel": "Andere kommen seltener",
+              "text": "Das Gefühl wird bestätigt."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Einsame Gedanken prüfen: Wähle zwei Gedanken. Was könnte noch stimmen – und was wäre ein kleiner Schritt?"
+        },
+        {
+          "art": "wortspeicher",
+          "titel": "Typische einsame Gedanken",
+          "items": [
+            "„Keiner will was mit mir zu tun haben.“",
+            "„Die lachen bestimmt über mich.“",
+            "„Wenn ich frage, sagen sie sowieso Nein.“",
+            "„Ich bin halt anders.“",
+            "„Allen anderen geht es besser.“"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Einsamer Gedanke",
+            "Was könnte noch stimmen?",
+            "Ein kleiner Schritt"
+          ],
+          "breiten": [
+            1.7,
+            1.7,
+            1.9
+          ],
+          "zeilen": 2,
+          "beispiel": [
+            "Keiner will was mit mir zu tun haben.",
+            "Die anderen kennen mich noch kaum.",
+            "Yusuf fragen, ob er auch zum Basketball geht."
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Wege hinaus – kleine Schritte zählen",
+          "punkte": [
+            "dorthin gehen, wo Menschen etwas zusammen tun: Verein, Jugendhaus, Chor, Schülerzeitung",
+            "jemandem eine echte Frage stellen – und nachfragen",
+            "eine alte Freundin oder einen alten Freund anschreiben",
+            "online Kontakt halten, aber auch ein Treffen vorschlagen",
+            "einer erwachsenen Person sagen, dass man sich einsam fühlt"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Brückensätze: Schreib zwei Sätze auf, mit denen du jemanden einbeziehen würdest.",
+          "hinweis": "Ideen findest du auf dem Plakat aus den Stationen."
+        },
+        {
+          "art": "feld",
+          "label": "Meine Brückensätze",
+          "hoehe": 3.5,
+          "beispiel": "„Ist hier noch frei?“"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Mein kleiner Schritt für nächste Woche – für mich oder für jemand anderen.",
+          "hinweis": "Klein und machbar. Das bleibt privat."
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Wenn ich am Dienstag in der Kantine sitze,",
+              "dann": "frage ich Elias, ob er sich zu uns setzen will."
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Wenn Einsamkeit lange bleibt",
+          "text": "Hält Einsamkeit über Wochen an, kommt Hoffnungslosigkeit dazu oder der Gedanke „Mich würde eh keiner vermissen“, dann sprich mit jemandem, dem du vertraust – mit der Leitung, dem SePAS oder anonym mit dem Kanner- a Jugendtelefon. Du entscheidest, was du teilst."
+        },
+        {
+          "art": "notfall"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen verstehen Einsamkeit als Signal, erkennen den Einsamkeits-Kreislauf, prüfen einsame Gedanken und planen kleine Schritte.",
+        "ablauf": [
+          "Text lesen (3 Min.): Einsamkeit ist ein Signal wie Hunger, kein Makel.",
+          "Aufgabe 1 (7 Min.): den Kreislauf an Jangs Beispiel erklären, Ausstiege sammeln.",
+          "Aufgabe 2 (8 Min.): zwei Gedanken prüfen. Stimmt einer wirklich, braucht es Schutz und Hilfe.",
+          "Aufgabe 3 nach den Stationen (Einheit 19, Schritt 7).",
+          "Aufgabe 4 still und privat; den Hilfe-Kasten vorlesen."
+        ],
+        "hintergrund": "Einsamkeit ist wahrgenommene soziale Isolation: die Lücke zwischen gewünschter und erlebter Verbundenheit. Im Jugendalter ist sie weit verbreitet (Qualter et al., 2015). Hawkley und Cacioppo (2010) beschreiben sie als Signal, das zur Wiederverbindung drängt; hält sie an, verstärkt sie sich selbst, weil einsame Menschen mehr auf Zurückweisung achten, neutrale Signale negativer deuten und sich zurückziehen. Am besten wirken Hilfen, die an solchen Denkmustern ansetzen (Masi et al., 2011), verbunden mit kleinen Schritten. Ausgeschlossenwerden schmerzt schon nach kurzer Zeit (Williams, 2007) – kleine Gesten der Einbeziehung zählen.",
+        "quellen": [
+          "Hawkley, L. C. & Cacioppo, J. T. (2010). Loneliness matters: A theoretical and empirical review of consequences and mechanisms. Annals of Behavioral Medicine, 40(2), 218–227.",
+          "Qualter, P., Vanhalst, J., Harris, R., Van Roekel, E., Lodder, G., Bangee, M., Maes, M. & Verhagen, M. (2015). Loneliness across the life span. Perspectives on Psychological Science, 10(2), 250–264.",
+          "Masi, C. M., Chen, H.-Y., Hawkley, L. C. & Cacioppo, J. T. (2011). A meta-analysis of interventions to reduce loneliness. Personality and Social Psychology Review, 15(3), 219–266.",
+          "Williams, K. D. (2007). Ostracism. Annual Review of Psychology, 58, 425–452."
+        ],
+        "differenzierung": {
+          "leichter": "Aufgabe 2 mit einem Gedanken, gemeinsam an der Tafel.",
+          "schwerer": "Ideen sammeln, wie ein Lycée Neue einbeziehen kann."
+        },
+        "impulse": [
+          "Warum gibt kaum jemand zu, einsam zu sein?",
+          "Was macht es leicht, sich dazuzusetzen?"
+        ],
+        "tipps": [
+          "Paare auslosen, damit niemand übrig bleibt.",
+          "Das Plakat „Brückensätze“ hängen lassen."
+        ],
+        "achtung": "Niemanden fragen, ob er einsam ist. Bei anhaltendem Rückzug oder Sätzen wie „Mich würde eh keiner vermissen“: am selben Tag ansprechen, nichts versprechen, die zuständige Leitung (Responsable) informieren, Schutzkonzept; bei akuter Gefahr 112, nicht allein lassen.",
+        "material": "Malerkrepp, Stationskarten, Plakat"
+      }
+    }
+  },
+  {
+    "id": "skills-darueber-reden",
+    "bereich": "skills",
+    "thema": "resilienz",
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "20 Min.",
+    "eldib": [
+      "K-28",
+      "SOZ-26",
+      "SOZ-37"
+    ],
+    "schlagworte": [
+      "Suizidprävention",
+      "Selbstverletzung",
+      "Mythen und Fakten",
+      "Hilfe holen",
+      "Freunde unterstützen",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:messages",
+    "verwandt": [
+      "wenn-es-laenger-schwer-ist",
+      "skills-sicherheitsplan"
+    ],
+    "kurs": [
+      "j3-e20"
+    ],
+    "de": {
+      "titel": "Darüber reden hilft",
+      "untertitel": "Suizidgedanken und Selbstverletzung kommen vor – auch bei Menschen, denen man es nicht ansieht. Und es gibt Hilfe.",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Manchmal werden Gefühle so schwer, dass Menschen daran denken, sich selbst zu verletzen oder nicht mehr leben zu wollen. Darüber zu reden fällt schwer. Aber Schweigen schützt nicht – Reden und Hilfe holen schon."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Stimmt das? Kreuze an. Die Auflösung besprecht ihr gemeinsam."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "stimmt",
+            "stimmt nicht"
+          ],
+          "items": [
+            "Wer über Suizid redet, tut es nicht.",
+            "Wer direkt fragt, ob jemand an Suizid denkt, bringt ihn erst auf die Idee.",
+            "Wer sich selbst verletzt, will nur Aufmerksamkeit.",
+            "Suizidgedanken kommen auch bei Menschen vor, denen man es nicht ansieht.",
+            "Wer einmal nicht mehr leben wollte, fühlt sich für immer so.",
+            "Hilfe holen ist kein Verrat – auch wenn ich versprochen habe, nichts zu sagen.",
+            "Freundinnen und Freunde können nichts tun, nur Fachleute."
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Das Wichtigste",
+          "punkte": [
+            "Darüber reden schadet nicht – es entlastet.",
+            "Krisen kommen oft in Wellen und gehen vorüber. Hilfe wirkt.",
+            "Ein Geheimnis, das jemanden in Gefahr bringt, musst du nicht allein tragen."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wenn du dir Sorgen um jemanden machst: Lies die vier Schritte. Schreib dann das Gespräch mit Nora weiter.",
+          "hinweis": "Die Schritte helfen dir. Du musst nicht alles perfekt sagen – wichtig ist, dass du fragst und Hilfe holst."
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 0,
+          "items": [
+            {
+              "titel": "Ansprechen",
+              "text": "„Ich mache mir Sorgen um dich. Wie geht es dir wirklich?“"
+            },
+            {
+              "titel": "Zuhören",
+              "text": "ernst nehmen, nicht bewerten, nicht ausfragen"
+            },
+            {
+              "titel": "Erwachsene dazuholen",
+              "text": "auch wenn du versprochen hast, nichts zu sagen"
+            },
+            {
+              "titel": "Bei Gefahr: 112",
+              "text": "anrufen und bei der Person bleiben"
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Direkt fragen ist erlaubt",
+          "text": "Wenn du dir große Sorgen machst, darfst du direkt fragen: „Denkst du daran, dir das Leben zu nehmen?“ Die Frage bringt niemanden auf die Idee. Mit der Antwort bleibst du nicht allein – hol sofort eine erwachsene Person dazu."
+        },
+        {
+          "art": "dialog",
+          "zeilen": [
+            {
+              "wer": "Du"
+            },
+            {
+              "wer": "Nora",
+              "text": "Passt schon. Ist gerade einfach viel."
+            },
+            {
+              "wer": "Du"
+            },
+            {
+              "wer": "Nora",
+              "text": "Manchmal will ich einfach nicht mehr."
+            },
+            {
+              "wer": "Du"
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Und wenn es dir selbst so geht?",
+          "text": "Dann bist du damit nicht allein, und es ist kein Zeichen von Schwäche. Sag es jemandem: einer Person, der du vertraust, der Leitung, dem SePAS – oder ruf anonym an. Du entscheidest, was du teilst."
+        },
+        {
+          "art": "notfall"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen korrigieren Mythen über Suizidgedanken und Selbstverletzung und frischen auf, was sie bei Sorge um jemanden tun.",
+        "ablauf": [
+          "Vorher den Rahmen klären: nichts Eigenes, keine Methoden oder Einzelfälle.",
+          "Aufgabe 1 (12 Min.): vorlesen, still einschätzen, Daumen zeigen, auflösen.",
+          "Lösung: 1 nein – Andeutungen ernst nehmen; 2 nein – Fragen entlastet; 3 nein – meist versteckt, ein Zeichen von Not; 4 ja; 5 nein – Krisen gehen vorüber; 6 ja; 7 nein – Freunde können viel tun.",
+          "Aufgabe 2 (7 Min.), etwa: „Danke, dass du es mir sagst. Denkst du daran, dir das Leben zu nehmen? Ich lass dich nicht allein – wir gehen zusammen zum SePAS.“",
+          "Kasten „Und wenn es dir selbst so geht?“ vorlesen, Anlaufstellen zeigen."
+        ],
+        "hintergrund": "Selbstverletzung und Suizidgedanken sind bei Jugendlichen nicht selten; nur wenige kommen mit Fachleuten in Kontakt (Hawton et al., 2012). Oft vertrauen sie sich zuerst Gleichaltrigen an; diese brauchen Wissen und klare Schritte. Direkt nach Suizidgedanken zu fragen, erhöht das Risiko nicht (Dazzi et al., 2014). Die Schritte folgen der Ersten Hilfe bei psychischen Krisen (Kitchener & Jorm, 2002). Methoden und Einzelfälle werden nie besprochen (WHO, 2017); Berichte über bewältigte Krisen gingen mit weniger Suiziden einher (Niederkrotenthaler et al., 2010).",
+        "quellen": [
+          "Hawton, K., Saunders, K. E. A. & O’Connor, R. C. (2012). Self-harm and suicide in adolescents. The Lancet, 379(9834), 2373–2382.",
+          "Dazzi, T., Gribble, R., Wessely, S. & Fear, N. T. (2014). Does asking about suicide and related behaviours induce suicidal ideation? What is the evidence? Psychological Medicine, 44(16), 3361–3363.",
+          "Kitchener, B. A. & Jorm, A. F. (2002). Mental health first aid training for the public: Evaluation of effects on knowledge, attitudes and helping behavior. BMC Psychiatry, 2, 10.",
+          "World Health Organization (2017). Preventing Suicide: A Resource for Media Professionals (update 2017). Genf: WHO.",
+          "Niederkrotenthaler, T., Voracek, M., Herberth, A., Till, B., Strauss, M., Etzersdorfer, E., Eisenwort, B. & Sonneck, G. (2010). Role of media reports in completed and prevented suicide: Werther v. Papageno effects. British Journal of Psychiatry, 197(3), 234–243."
+        ],
+        "differenzierung": {
+          "leichter": "Nur die Sätze 2, 3 und 6; im Gespräch nur die erste Antwort.",
+          "schwerer": "Sammeln, was eine Schule tun kann, damit Hilfe früher kommt."
+        },
+        "impulse": [
+          "Warum sagt man so selten, dass es einem schlecht geht?",
+          "Was macht es leichter, Erwachsene dazuzuholen?"
+        ],
+        "tipps": [
+          "„Suizid“ sagen, nicht „Selbstmord“.",
+          "Offene Fragen über die Fragenbox aufgreifen."
+        ],
+        "achtung": "Hinweise auf eigene Betroffenheit am selben Tag unter vier Augen aufgreifen: direkt nachfragen, nichts versprechen, nicht allein lassen, Schutzkonzept anwenden, Responsable informieren; akut 112.",
+        "material": "Plakat mit Anlaufstellen, Fragenbox"
+      }
+    }
+  },
+  {
+    "id": "skills-sicherheitsplan",
+    "bereich": "skills",
+    "thema": "resilienz",
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln"
+    ],
+    "dauer": "25–30 Min.",
+    "eldib": [
+      "V-32",
+      "SOZ-26",
+      "V-25"
+    ],
+    "schlagworte": [
+      "Sicherheitsplan",
+      "Krise",
+      "Warnzeichen",
+      "Hilfe holen",
+      "Skills-Koffer",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:shield-check",
+    "verwandt": [
+      "skills-koffer-ampelplan",
+      "sicherheitsplan",
+      "skills-darueber-reden"
+    ],
+    "kurs": [
+      "j3-e20",
+      "j3-e34"
+    ],
+    "de": {
+      "titel": "Mein Sicherheitsplan",
+      "untertitel": "Für Momente, in denen es richtig schwer wird. Du packst ihn, wenn es dir gut geht – damit er bereitliegt, wenn du ihn brauchst.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Dieser Plan gehört dir.",
+          "text": "Niemand muss ihn sehen. Schreib in deinen eigenen Worten – kurz und so, dass du es auch in einem schlechten Moment lesen kannst. Geh die Schritte der Reihe nach durch; hilft einer nicht, nimm den nächsten. Bist du in Gefahr, ruf sofort 112 an."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schritt 1 – Meine Warnzeichen: Woran merke ich, dass es mir richtig schlecht geht?",
+          "hinweis": "Gedanken, Gefühle, Körper, Verhalten – zum Beispiel „Alles ist sinnlos“, nicht mehr schlafen, niemandem mehr antworten."
+        },
+        {
+          "art": "linien",
+          "anzahl": 3
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schritt 2 – Was ich selbst tun kann, damit die Welle vorbeigeht",
+          "hinweis": "Skills, die bei dir bei Rot wirken – etwa Kälte, Treppe laufen, Musik, 5-4-3-2-1 oder Ideen aus deinem Skills-Koffer."
+        },
+        {
+          "art": "linien",
+          "anzahl": 3
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schritt 3 – Menschen und Orte, die mich auf andere Gedanken bringen",
+          "hinweis": "Wo und mit wem kann ich einfach sein, ohne über alles reden zu müssen?"
+        },
+        {
+          "art": "linien",
+          "anzahl": 3
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schritt 4 – Menschen, die ich um Hilfe bitten kann",
+          "hinweis": "Mindestens eine erwachsene Person. Denk auch an abends und an das Wochenende."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Name",
+            "Telefon",
+            "Wann erreichbar?"
+          ],
+          "breiten": [
+            2,
+            1.4,
+            1.6
+          ],
+          "zeilen": 3,
+          "beispiel": [
+            "meine Tante",
+            "Handy",
+            "abends und am Wochenende"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schritt 5 – Fachleute und Notruf",
+          "hinweis": "SePAS im Lycée, Psychologin oder Psychologe, Ärztin oder Arzt. Speichere die Nummern auch im Handy."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Stelle, Name",
+            "Telefon",
+            "Wann erreichbar?"
+          ],
+          "breiten": [
+            2,
+            1.4,
+            1.6
+          ],
+          "zeilen": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schritt 6 – Meine Umgebung sicherer machen",
+          "hinweis": "Was ich in einem schweren Moment nicht allein tue – und was ich weglege oder jemandem gebe. Wer hilft mir dabei?"
+        },
+        {
+          "art": "linien",
+          "anzahl": 2
+        },
+        {
+          "art": "feld",
+          "label": "Was mir Halt gibt – wofür es sich lohnt",
+          "hoehe": 4,
+          "beispiel": "meine kleine Schwester, mein Hund, der Sommer bei meiner Oma"
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Mein Plan liegt hier – und als Foto im Handy: …",
+            "Davon weiß (wenn ich will): …",
+            "Ich schaue ihn wieder an am: …"
+          ]
+        },
+        {
+          "art": "notfall",
+          "eintraege": [
+            {
+              "name": "Notruf: Rettung – bei akuter Gefahr, rund um die Uhr",
+              "nummer": "112"
+            },
+            {
+              "name": "Kanner- a Jugendtelefon (anonym, kostenlos)",
+              "nummer": "116 111"
+            },
+            {
+              "name": "SOS Détresse – Hilfe am Telefon (anonym)",
+              "nummer": "45 45 45"
+            },
+            {
+              "name": "Polizei",
+              "nummer": "113"
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Jede Person erstellt privat einen Sicherheitsplan für schwere Momente, der auf Skills-Koffer und Ampelplan aufbaut.",
+        "ablauf": [
+          "Vorher (6 Min.): den Plan als Erste-Hilfe-Kasten erklären. Alle machen einen, niemand muss ihn zeigen.",
+          "Plan-Parcours (25 Min.): sieben Stationen, allein mit Klemmbrett (Einheit 20, Schritt 7).",
+          "Mit Fragen helfen: „Was hat dir früher schon einmal geholfen?“ Mitlesen nur, wenn es angeboten wird.",
+          "Schritt 6 nur allgemein erklären; keine Mittel oder Wege nennen.",
+          "Aufbewahrung klären, Plan fotografieren, freiwillig ins Skills-Buch legen."
+        ],
+        "hintergrund": "Die Safety Planning Intervention von Stanley und Brown (2012) ist eine kurze, strukturierte Maßnahme für Menschen in suizidalen Krisen; mit Nachkontakten senkte sie suizidales Verhalten deutlich (Stanley et al., 2018). Der Plan führt in fester Reihenfolge von innen nach außen: Warnzeichen, eigene Bewältigung, ablenkende Menschen und Orte, Vertraute, Fachstellen und Notruf, eine sicherere Umgebung. Weil Krisen oft in Wellen kommen, hilft ein vorher in eigenen Worten erstellter Plan, den Höhepunkt zu überstehen. Für Schritt 2 eignen sich Skills der Stresstoleranz (Rathus & Miller, 2015). In der Gruppe ist der Plan Vorsorge für alle und ersetzt keinen Plan mit einer Fachperson.",
+        "quellen": [
+          "Stanley, B. & Brown, G. K. (2012). Safety planning intervention: A brief intervention to mitigate suicide risk. Cognitive and Behavioral Practice, 19(2), 256–264.",
+          "Stanley, B., Brown, G. K., Brenner, L. A., Galfalvy, H. C., Currier, G. W., Knox, K. L., Chaudhury, S. R., Bush, A. L. & Green, K. L. (2018). Comparison of the Safety Planning Intervention with follow-up vs usual care of suicidal patients treated in the emergency department. JAMA Psychiatry, 75(9), 894–900.",
+          "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Nur die Schritte 1, 2, 4 und 5; die Leitung schreibt auf Wunsch mit.",
+          "schwerer": "Den Plan einer Vertrauensperson zeigen."
+        },
+        "impulse": [
+          "Was könnte dich hindern, den Plan zu nutzen?",
+          "Wo ist dein Plan, wenn du ihn nachts brauchst?"
+        ],
+        "tipps": [
+          "Eine Kopie an einem zweiten Ort aufbewahren.",
+          "In akuten Krisen: Toolbox-Blatt „Mein Sicherheitsplan“."
+        ],
+        "achtung": "Nicht einsammeln, nicht vorlesen, nicht bewerten. Bleibt der Plan leer oder wirkt jemand aufgewühlt: am selben Tag Einzelgespräch, direkt nachfragen, nicht allein lassen, Schutzkonzept anwenden, Responsable informieren; bei Gefahr 112.",
+        "material": "Klemmbretter, Stationsschilder, Skills"
+      }
+    }
+  }
+]

@@ -1,0 +1,793 @@
+{
+  "einheiten": [
+    {
+      "id": "j2-e21",
+      "nr": 21,
+      "jahr": 2,
+      "modul": "j2-m6",
+      "titel": "Schubladen im Kopf",
+      "kurz": "Wie aus Sortieren Vorurteile werden: Die Gruppe zeichnet Blitzbilder, erlebt, wie schnell aus zufälligen Gruppen ein „wir“ und „die“ wird, und findet heraus, wann Begegnung Schubladen öffnet.",
+      "dauer": 100,
+      "ziele": [
+        "erklären, warum das Gehirn in Schubladen sortiert, und unterscheiden Kategorie, Stereotyp, Vorurteil und Diskriminierung",
+        "erleben im Spiel, wie schnell aus einer zufälligen Einteilung ein Wir-Gefühl gegen andere entsteht",
+        "beschreiben an einem Beispiel, was eine Schublade bei Betroffenen und bei den anderen anrichtet",
+        "nennen die Bedingungen, unter denen Kontakt Vorurteile abbaut, und kennen den Schubladen-Check"
+      ],
+      "material": [
+        "Gefühlsrad (A3, laminiert), Wäscheklammern und Anspannungsskala 0–100",
+        "Schmierpapier (A5) und Stifte für die Blitzbilder, vier Blätter je Person",
+        "Plakat mit einem gezeichneten Schrank mit vier Schubladen, zunächst unbeschriftet, dazu Klebezettel",
+        "Für die Kontakt-Mission je Paar zehn Blätter Papier (A4) und etwa einen Meter Kreppband, ein Maßband",
+        "Je Person eine Zitrone und ein Korb (bei Zitrusallergie Kastanien oder glatte Steine)",
+        "Schülerblatt „Schubladen im Kopf“ für jede Person",
+        "Skills-Pässe und Stempel, Imbiss und Getränke (Allergien beachten)"
+      ],
+      "vorbereitung": [
+        "Den Schubladenschrank auf das Plakat zeichnen; die Beschriftung erst im Input ergänzen",
+        "Die Fragen für die Blitzgruppen durchgehen: nur harmlose Vorlieben, nie Herkunft, Religion, Aussehen, Sprache oder Familie",
+        "Namen in den Beispielen austauschen, falls jemand in der Gruppe so heißt, und Beispiele weglassen, die einer Person in der Gruppe zu nahe kommen",
+        "Die Zitronen bis zur Übung nicht zeigen"
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-schubladen",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Welches Vorurteil über Jugendliche nervt?"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Vom Aushandeln zu den Unterschieden"
+        },
+        {
+          "min": "15–27",
+          "phase": "input",
+          "titel": "Blitzbilder: Wer fliegt das Flugzeug?"
+        },
+        {
+          "min": "27–45",
+          "phase": "uebung",
+          "titel": "Vom Sortieren zum Benachteiligen"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–85",
+          "phase": "aktiv",
+          "titel": "Blitzgruppen und Kontakt-Mission"
+        },
+        {
+          "min": "85–95",
+          "phase": "skill",
+          "titel": "Skill: Die Zitronen-Übung"
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Réckbléck und Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: Welches Vorurteil über Jugendliche nervt?",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Gefühlsrad und Anspannung wie gewohnt. Freiwillige Zusatzfrage: Welches Vorurteil über Jugendliche nervt dich am meisten? Die Leitung beginnt mit einem Vorurteil über ihre eigene Berufsgruppe. Die genannten Vorurteile ohne Namen auf Klebezettel schreiben und in die zweite Schublade des Plakats kleben.",
+          "sagen": [
+            "Gefühl, Zahl – und: Welches Vorurteil über Jugendliche nervt euch am meisten?",
+            "Über Leute wie mich heißt es oft: Die trinken nur Kaffee und reden über Gefühle. Stimmt höchstens zur Hälfte."
+          ],
+          "tipp": "Mit Vorurteilen über Jugendliche anzufangen, hat einen Grund: Alle im Raum stecken in derselben Schublade. So spürt die Gruppe, wie sich das anfühlt, ohne dass jemand wegen seiner Herkunft oder seines Glaubens zum Beispiel wird.",
+          "wennEsKippt": "Nennt jemand ein Vorurteil über eine andere Gruppe („Die … sind doch alle …“), freundlich stoppen: Heute bleiben wir bei uns selbst als Jugendlichen. Den Satz nicht wiederholen und nicht aufschreiben.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Vom Aushandeln zu den Unterschieden",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "Kurz an die letzte Einheit und die Orange erinnern: Freiraum aushandeln geht leichter, wenn man die Interessen der anderen Seite kennt und nicht nur ihre Forderung. Dann das neue Modul öffnen und die Leitfrage an die Tafel schreiben: Wie gehen wir mit Unterschieden um? Die Regeln für das Modul klären: Wir reden über Schubladen, aber niemand spricht für eine Gruppe, niemand wird als Beispiel genommen, und Witze über Gruppen bleiben draußen.",
+          "sagen": [
+            "In den nächsten drei Treffen geht es um Unterschiede: wie Schubladen entstehen, wie vielfältig Luxemburg ist und was man tun kann, wenn jemand wegen eines Merkmals schlecht behandelt wird.",
+            "Niemand muss hier für seine Familie, sein Land oder seinen Glauben sprechen. Ihr sprecht nur für euch."
+          ]
+        },
+        {
+          "titel": "Blitzbilder: Wer fliegt das Flugzeug?",
+          "dauer": 12,
+          "phase": "input",
+          "text": "Jede Person bekommt vier Blätter Schmierpapier. Die Leitung nennt nacheinander vier Rollen, und alle zeichnen in je 20 Sekunden ein Strichmännchen mit ein, zwei Merkmalen, ohne nachzudenken. Dann legen alle ihre Bilder zu jeder Rolle nebeneinander: Welches Geschlecht, welches Alter, welche Kleidung haben die Figuren? Gemeinsam feststellen, dass sich viele Bilder ähneln, obwohl die Menschen in diesen Rollen ganz verschieden sind. Daraus den Gedanken ableiten: Das Gehirn nimmt Abkürzungen und greift in eine Schublade, bevor es nachdenkt.",
+          "sagen": [
+            "Zwanzig Sekunden, nicht nachdenken. Es geht nicht ums schöne Zeichnen.",
+            "Was fällt euch auf, wenn ihr die Bilder nebeneinanderlegt? Wer hat eine Pilotin gezeichnet – und wer einen Mann in der Crèche?",
+            "Das ist kein Fehler von euch. Das Gehirn sortiert, um schnell zu sein. Die Frage ist nur, ob wir die Schublade danach wieder aufmachen."
+          ],
+          "punkte": [
+            "eine Person, die ein Flugzeug fliegt",
+            "eine Person, die in einer Crèche mit Babys arbeitet",
+            "eine Person, die ein Land regiert",
+            "eine Person, die im Krankenhaus Kranke pflegt"
+          ],
+          "tipp": "Die Leitung zeichnet mit und legt ihre Bilder dazu – auch ihre Schubladen werden sichtbar. Das nimmt jeden Verdacht, die Übung solle jemanden vorführen.",
+          "wennEsKippt": "Werden die Bilder zum Anlass für Witze über Gruppen, sofort stoppen und die Regel wiederholen. Dann nachfragen: Woher kommt dieses Bild in eurem Kopf – aus eigener Erfahrung, aus Filmen, aus Sprüchen?"
+        },
+        {
+          "titel": "Vom Sortieren zum Benachteiligen",
+          "dauer": 18,
+          "phase": "uebung",
+          "text": "Am Plakat die vier Schubladen beschriften und mit den Vorurteilen über Jugendliche aus dem Check-in erklären (Tabelle). Dann auf dem Blatt: Aufgabe 1 allein, Sätze den Schubladen zuordnen. Aufgabe 2 zu zweit: die Geschichte von Rafael lesen und aufschreiben, was die Schublade bei ihm anrichtet und was sie bei den anderen verändert. Zum Schluss den Schubladen-Check vom Blatt vorlesen: drei Fragen, die man sich stellen kann, bevor man über einen Menschen urteilt.",
+          "sagen": [
+            "Sortieren an sich ist nicht das Problem. Schwierig wird es, wenn wir einen Menschen nur noch durch die Schublade sehen.",
+            "Was macht die Schublade mit Rafael? Und was tun die anderen, weil sie nur die Schublade sehen?"
+          ],
+          "tabelle": {
+            "spalten": [
+              "Schublade",
+              "Was es ist",
+              "Beispiel"
+            ],
+            "zeilen": [
+              [
+                "Kategorie",
+                "Menschen nach einem Merkmal sortieren – neutral und oft nützlich",
+                "„Das sind Jugendliche.“"
+              ],
+              [
+                "Stereotyp",
+                "Alle in der Schublade sollen gleich sein",
+                "„Jugendliche hängen nur am Handy.“"
+              ],
+              [
+                "Vorurteil",
+                "Stereotyp plus Abwertung – man urteilt, bevor man die Person kennt",
+                "„Jugendliche sind respektlos, mit denen will ich nichts zu tun haben.“"
+              ],
+              [
+                "Diskriminierung",
+                "Jemand wird wegen der Schublade benachteiligt",
+                "„Jugendliche dürfen nur zu zweit in den Laden.“"
+              ]
+            ]
+          },
+          "tipp": "Das Beispiel mit dem Laden kennen viele aus eigener Erfahrung. So wird Diskriminierung greifbar, ohne dass jemand über Herkunft oder Religion sprechen muss; die einzelnen Merkmale kommen in Einheit 23 an die Reihe.",
+          "wennEsKippt": "Behauptet jemand „Aber manche Vorurteile stimmen doch“, nicht abwiegeln: Ja, es gibt Jugendliche, die viel am Handy hängen. Dann fragen: Stimmt es für alle? Und was passiert mit denen, für die es nicht stimmt, wenn alle in dieselbe Schublade kommen?",
+          "blatt": "skills-schubladen"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Gemeinsam essen, Fenster auf. Das Thema ruht. Nebenbei Papier und Kreppband für die Kontakt-Mission abzählen und den Raum für das Laufspiel freiräumen."
+        },
+        {
+          "titel": "Blitzgruppen und Kontakt-Mission",
+          "dauer": 25,
+          "phase": "aktiv",
+          "text": "Teil 1, etwa 8 Min.: Die Leitung stellt schnelle Entweder-oder-Fragen, und alle laufen auf die Seite ihrer Wahl; bei der Frage, die die Gruppe am gleichmäßigsten teilt, bleiben die Gruppen bestehen. Jede Gruppe hat zwei Minuten, sich einen Namen zu geben und drei Gründe zu finden, warum sie besser ist als die andere, dann werden die Gründe vorgetragen. Teil 2, etwa 10 Min.: Je eine Person aus jeder Gruppe bildet ein Paar und baut aus zehn Blättern Papier und Kreppband den höchsten freistehenden Turm; jede Person darf nur eine Hand benutzen. Teil 3, etwa 7 Min.: auswerten, was im ersten und was im zweiten Teil passiert ist, dann Aufgabe 3 auf dem Blatt.",
+          "sagen": [
+            "Drei Gründe, warum eure Gruppe besser ist. Ihr habt zwei Minuten.",
+            "Vor fünf Minuten gab es eure Gruppe noch gar nicht. Wie kann es sein, dass ihr schon Gründe findet, warum ihr besser seid?",
+            "Was hat sich beim Turmbauen verändert? Was hat euch zusammengebracht?"
+          ],
+          "punkte": [
+            "Ketchup oder Mayo?",
+            "Frühaufsteher oder Langschläfer?",
+            "Lieber Meer oder Berge?",
+            "Pizza mit oder ohne Ananas?",
+            "Lieber Serie oder Film?"
+          ],
+          "tipp": "Beim Auswerten die vier Bedingungen an die Tafel schreiben, unter denen Kontakt Vorurteile abbaut: ein gemeinsames Ziel, Augenhöhe, Zusammenarbeit statt Wettkampf und Rückendeckung durch Erwachsene oder Regeln. Die Kontakt-Mission hatte alle vier. Mit nur zwei Jugendlichen bildet jede Person mit der Leitung eine Mini-Gruppe, gebaut wird danach zu dritt; bei wenig Energie beantworten alle die Entweder-oder-Fragen im Sitzen per Handzeichen.",
+          "wennEsKippt": "Werden die Gründe gegen die andere Gruppe verletzend oder persönlich, sofort abbrechen und genau das zum Thema machen: So schnell geht es. Kippt der Wettkampf in echten Ärger, die Gruppen mischen und die Turmaufgabe allen gemeinsam geben.",
+          "blatt": "skills-schubladen"
+        },
+        {
+          "titel": "Skill: Die Zitronen-Übung",
+          "dauer": 10,
+          "phase": "skill",
+          "text": "Jede Person bekommt eine Zitrone und schaut sie zwei Minuten lang genau an: Form, Flecken, Dellen, Geruch, wie sie sich anfühlt. Dann sammelt die Leitung alle Zitronen im Korb, mischt sie und legt sie auf den Tisch. Jede Person sucht ihre Zitrone wieder – fast alle finden sie. Kurz auswerten und den Bogen schlagen: Von Weitem sind alle Zitronen gleich, aus der Nähe ist jede anders.",
+          "sagen": [
+            "Schaut eure Zitrone an, als hättet ihr noch nie eine gesehen. Was macht gerade diese hier aus?",
+            "Vorhin war sie eine von vielen Zitronen. Jetzt ist es eure. Was hat sich geändert?",
+            "Genau das passiert, wenn man einen Menschen kennenlernt: Die Schublade geht auf."
+          ],
+          "tipp": "Die Übung ist zugleich Achtsamkeit: Genau hinschauen, ohne zu bewerten, beruhigt und ist der Gegenpol zum schnellen Sortieren. Bei Zitrusallergie nehmen alle Kastanien oder Steine.",
+          "wennEsKippt": "Wird mit den Zitronen geworfen oder jongliert, ruhig einsammeln und mit geschlossenen Augen weitermachen: Die Zitrone wird nur ertastet. Das beruhigt meist schnell und funktioniert genauso."
+        },
+        {
+          "titel": "Réckbléck und Skills-Pass",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Blitzlicht mit einer Frage: Welche Frage aus dem Schubladen-Check nehmt ihr mit? Dann Eintrag in den Skills-Pass und Stempel. Die Zitronen dürfen mit nach Hause. Aufgabe 4 auf dem Blatt ist freiwillig und bleibt privat: eine Schublade, in die man selbst manchmal gesteckt wird, und eine, die man bei sich selbst bemerkt.",
+          "sagen": [
+            "Ein Satz: Welche Frage aus dem Schubladen-Check nehmt ihr mit?",
+            "Eure Zitrone dürft ihr behalten – als Erinnerung, dass man genauer hinschauen kann."
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Nächstes Mal schauen wir, wie viele Sprachen, Wege und Zugehörigkeiten in Luxemburg zusammenkommen – und in jeder und jedem von euch.",
+      "hintergrund": "Allport (1954) zeigte, dass Vorurteile auf einem normalen Denkvorgang aufbauen: Menschen bilden Kategorien, um die Welt schnell zu ordnen. Zum Problem wird das, wenn aus der Kategorie ein starres Bild aller Mitglieder wird, wenn Abwertung hinzukommt und daraus Handeln folgt. Schon eine zufällige Einteilung genügt, damit Menschen die eigene Gruppe bevorzugen (Tajfel et al., 1971) – das Blitzgruppen-Spiel macht das erlebbar. Allport formulierte auch die Kontakthypothese: Begegnung baut Vorurteile ab, wenn beide Seiten auf Augenhöhe zusammenarbeiten, ein gemeinsames Ziel haben und von Regeln oder Autoritäten unterstützt werden. Eine Metaanalyse mit über 500 Studien bestätigte, dass Kontakt Vorurteile verringert, am deutlichsten unter diesen Bedingungen (Pettigrew & Tropp, 2006). Das Kompass-Handbuch des Europarats empfiehlt, solche Themen über Erfahrung und Reflexion statt über Belehrung zu bearbeiten (Europarat, 2012).",
+      "quellen": [
+        "Allport, G. W. (1954). The Nature of Prejudice. Cambridge, MA: Addison-Wesley.",
+        "Tajfel, H., Billig, M. G., Bundy, R. P. & Flament, C. (1971). Social categorization and intergroup behaviour. European Journal of Social Psychology, 1(2), 149–178.",
+        "Pettigrew, T. F. & Tropp, L. R. (2006). A meta-analytic test of intergroup contact theory. Journal of Personality and Social Psychology, 90(5), 751–783.",
+        "Council of Europe (2012). Compass: Manual for Human Rights Education with Young People (2nd ed.). Strasbourg: Council of Europe Publishing."
+      ],
+      "achtung": "Vorurteile und Diskriminierung können Jugendliche in der Gruppe direkt betreffen – als Betroffene und manchmal auch als Handelnde. Niemand wird wegen seiner Herkunft, Religion, Sprache, Hautfarbe oder Identität als Beispiel genommen oder gebeten, für eine Gruppe zu sprechen; Einteilungen im Spiel nur nach harmlosen Vorlieben. Abwertende Sprüche über Gruppen werden sofort und ruhig gestoppt, nicht wiederholt und nicht aufgeschrieben. Erzählt jemand von eigener Diskriminierung, zuhören, würdigen, nicht in der Gruppe vertiefen und ein Gespräch nach der Einheit anbieten. Bei Hinweisen auf Bedrohung oder Gewalt nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) informieren."
+    },
+    {
+      "id": "j2-e22",
+      "nr": 22,
+      "jahr": 2,
+      "modul": "j2-m6",
+      "titel": "Viele Sprachen, viele Wege",
+      "kurz": "Die Gruppe schätzt Fakten über das vielfältige Luxemburg, lernt eine Figur mit mehreren Zugehörigkeiten kennen, malt ihr Sprachenporträt und findet einen Ruhesatz in der eigenen Herzsprache.",
+      "dauer": 100,
+      "ziele": [
+        "beschreiben die Vielfalt in Luxemburg an Sprachen, Herkunft und Religionen mit einigen gesicherten Fakten",
+        "erkennen an einer Beispielfigur, dass ein Mensch mehrere Zugehörigkeiten hat, die sich nicht ausschließen",
+        "gestalten ihr Sprachenporträt und entscheiden selbst, was sie davon zeigen",
+        "formulieren einen Ruhesatz in der Sprache, die sie am meisten beruhigt, und nutzen ihn in einer Atemübung"
+      ],
+      "material": [
+        "Gefühlsrad (A3, laminiert), Wäscheklammern und Anspannungsskala 0–100",
+        "Kreppband für eine Schätzlinie am Boden, dazu Karten mit 0 %, 50 %, 100 % und 0, 100, 200",
+        "Fünf Karten für den Zeitstrahl „Wege nach Luxemburg“ (Texte in Schritt 3)",
+        "Wortkarten für das Sprachen-Activity (Tabelle in Schritt 6), ein Würfel, eine Sanduhr oder ein Timer, Tafel zum Zeichnen",
+        "Schülerblatt „Mein Sprachenporträt“ für jede Person, Buntstifte in mindestens sechs Farben",
+        "Skills-Pässe und Stempel, Imbiss und Getränke (Allergien und Essensregeln beachten)"
+      ],
+      "vorbereitung": [
+        "Die Schätzlinie kleben und die Auflösungen in Schritt 3 mit den aktuellen Zahlen von STATEC abgleichen; die Werte sind gerundet",
+        "Die Wortkarten schreiben und Wörter streichen, die in der Gruppe heikel sein könnten",
+        "Namen der Beispielfigur austauschen, falls jemand in der Gruppe so heißt",
+        "Überlegen, ob jemand in der Gruppe wenig Deutsch oder Französisch spricht: Das Activity funktioniert dann mit Pantomime und Zeichnen genauso"
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-sprachenportraet",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Ein Wort aus einer anderen Sprache"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Von den Schubladen zu den vielen Wegen"
+        },
+        {
+          "min": "15–30",
+          "phase": "input",
+          "titel": "Luxemburg auf der Schätzlinie und Wege hierher"
+        },
+        {
+          "min": "30–45",
+          "phase": "uebung",
+          "titel": "Inês und mein Sprachenporträt"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–85",
+          "phase": "aktiv",
+          "titel": "Sprachen-Activity"
+        },
+        {
+          "min": "85–95",
+          "phase": "skill",
+          "titel": "Skill: Mein Ruhesatz in der Herzsprache"
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Réckbléck und Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: Ein Wort aus einer anderen Sprache",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Gefühlsrad und Anspannung wie gewohnt. Freiwillige Zusatzfrage: Welches Wort aus einer anderen Sprache benutzt du ständig – aus welcher Sprache auch immer? Die Leitung beginnt, etwa mit „Merci“ oder „Moien“. Die Wörter ohne Namen als Wortwolke an die Tafel schreiben; sie zeigt am Ende, wie viele Sprachen schon in der Gruppe stecken.",
+          "sagen": [
+            "Gefühl, Zahl – und ein Wort aus einer anderen Sprache, das ihr ständig benutzt. Schulfranzösisch zählt, Englisch vom Zocken auch.",
+            "Schaut euch die Tafel an: So viele Sprachen, und wir haben noch gar nicht angefangen."
+          ],
+          "tipp": "Die Frage ist bewusst offen: Sie fragt nicht nach Herkunft oder Familiensprache. Jede Person entscheidet selbst, welches Wort sie nennt.",
+          "wennEsKippt": "Macht sich jemand über ein Wort oder eine Aussprache lustig, sofort und ruhig stoppen: Hier wird niemand für seine Sprache ausgelacht. Wer nichts sagen möchte, zeigt auf ein Wort, das schon an der Tafel steht.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Von den Schubladen zu den vielen Wegen",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "An die Zitronen erinnern: Von Weitem sehen alle gleich aus, aus der Nähe ist jede anders. Dann das Thema nennen: Heute geht es um die Vielfalt in Luxemburg und darum, dass jeder Mensch mehrere Zugehörigkeiten hat. Die Regel wiederholen: Niemand muss sagen, woher er oder seine Familie kommt.",
+          "sagen": [
+            "Letztes Mal ging es um Schubladen. Heute um die Frage: Wie viele Schubladen passen eigentlich in einen einzigen Menschen?",
+            "Ihr erzählt heute nur, was ihr erzählen wollt. Woher jemand kommt, ist seine Sache."
+          ]
+        },
+        {
+          "titel": "Luxemburg auf der Schätzlinie und Wege hierher",
+          "dauer": 15,
+          "phase": "input",
+          "text": "Die Leitung liest die Schätzfragen vor (Tabelle). Bei Zahlen stellen sich alle auf die Schätzlinie, bei den anderen Fragen rufen alle ihre Antwort in die Runde; dann wird aufgelöst. Danach liegen die fünf Karten „Wege nach Luxemburg“ gemischt am Boden, und die Gruppe legt sie gemeinsam in die richtige zeitliche Reihenfolge (Liste). Zum Schluss festhalten: Menschen sind aus vielen Gründen gekommen und gegangen – Arbeit, Liebe, Flucht, Studium –, und Luxemburg war selbst lange ein Auswanderungsland.",
+          "sagen": [
+            "Stellt euch dahin, wo eure Schätzung liegt. Raten ist ausdrücklich erlaubt.",
+            "Wer hätte gedacht, dass früher so viele Menschen aus Luxemburg ausgewandert sind?"
+          ],
+          "punkte": [
+            "19. Jahrhundert: Viele Menschen aus Luxemburg wandern aus, etwa nach Amerika, weil es hier zu wenig Arbeit gibt.",
+            "Um 1900: Für die Stahlindustrie im Süden kommen viele Arbeiter aus Italien.",
+            "Ab den 1960er-Jahren: Viele Familien kommen aus Portugal, später auch von den Kapverdischen Inseln.",
+            "1990er-Jahre: Menschen fliehen vor dem Krieg im ehemaligen Jugoslawien und finden in Luxemburg Schutz.",
+            "Heute: Menschen aus über 170 Ländern leben hier, und jeden Tag pendeln sehr viele aus Frankreich, Belgien und Deutschland zur Arbeit."
+          ],
+          "tabelle": {
+            "spalten": [
+              "Schätzfrage",
+              "Auflösung (gerundet)"
+            ],
+            "zeilen": [
+              [
+                "Wie viele Menschen, die in Luxemburg leben, haben keinen luxemburgischen Pass?",
+                "Fast die Hälfte."
+              ],
+              [
+                "Aus wie vielen Ländern kommen die Menschen, die hier leben?",
+                "Aus über 170 Ländern."
+              ],
+              [
+                "Welche drei Sprachen sind in Luxemburg Amtssprachen?",
+                "Luxemburgisch, Französisch und Deutsch; im Alltag hört man dazu oft Portugiesisch, Englisch, Italienisch und viele andere."
+              ],
+              [
+                "Welche Religionen und Weltanschauungen gibt es in Luxemburg?",
+                "Viele: Christen verschiedener Kirchen, Muslime, Juden, Buddhisten und andere – und viele Menschen ohne Religion."
+              ],
+              [
+                "Kann man zwei Staatsangehörigkeiten gleichzeitig haben, etwa die luxemburgische und eine andere?",
+                "Ja, seit 2009."
+              ]
+            ]
+          },
+          "tipp": "Die Zahlen sind gerundet und ändern sich jedes Jahr. Vorher kurz bei STATEC nachsehen und die Auflösung anpassen; für die Übung reicht die Größenordnung.",
+          "wennEsKippt": "Kommen abwertende Sprüche über eine Gruppe vom Zeitstrahl, ruhig stoppen, an die Regel erinnern und fragen, was man über diese Menschen eigentlich weiß – meistens wenig. Keine Person aus der Gruppe mit einer der Karten in Verbindung bringen."
+        },
+        {
+          "titel": "Inês und mein Sprachenporträt",
+          "dauer": 15,
+          "phase": "uebung",
+          "text": "Die Geschichte von Inês vom Blatt vorlesen; jede Person kreist ein, wozu Inês alles gehört, und schreibt ihre Antwort auf die Frage am Ende. Kurz sammeln: Welche einzelne Schublade würde Inês gerecht? Keine. Dann malt jede Person ihr Sprachenporträt: In den Körperumriss kommen alle Sprachen, die zu ihr gehören, jede in einer eigenen Farbe und an der Stelle, die passt – im Kopf, im Herzen, im Bauch, in den Händen. Auch Sprachen, von denen man nur ein paar Wörter kann, Dialekte und Gebärdensprache zählen. Zum Schluss die Sätze zu Sprachen und Gefühlen ergänzen; wer mag, zeigt einer Person seiner Wahl eine Farbe und erzählt, warum sie dort sitzt.",
+          "sagen": [
+            "Ist Inês Portugiesin oder Luxemburgerin? Oder ist die Frage vielleicht falsch gestellt?",
+            "Malt eure Sprachen dahin, wo sie für euch wohnen. Wo sitzt die Sprache, in der ihr streitet? Wo die, in der euch jemand tröstet?",
+            "Ihr zeigt nur, was ihr zeigen wollt. Das Porträt gehört euch."
+          ],
+          "tipp": "Viele Jugendliche unterschätzen ihre Sprachen, weil sie nur an Schulnoten denken. Ausdrücklich sagen: Wer für seine Eltern beim Arzt übersetzt oder zwischen drei Sprachen hin- und herwechselt, kann etwas, das viele Erwachsene nicht können.",
+          "wennEsKippt": "Hat jemand das Gefühl, nur eine Sprache zu haben, gemeinsam weitersuchen: Welche Wörter kennst du aus Serien, Songs, Games, vom Fußball oder aus den Ferien? Wer nicht malen will, schreibt die Sprachen neben den Umriss und verbindet sie mit Pfeilen.",
+          "blatt": "skills-sprachenportraet"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Gemeinsam essen. Wer mag, sagt „Guten Appetit“ in einer beliebigen Sprache, und die Leitung schreibt die Varianten an die Tafel. Sonst ruht das Thema; nebenbei die Wortkarten mischen und die Teams einteilen."
+        },
+        {
+          "titel": "Sprachen-Activity",
+          "dauer": 25,
+          "phase": "aktiv",
+          "text": "Zwei Teams. Reihum zieht eine Person eine Wortkarte und würfelt, wie sie das Wort erklären muss (Liste); ihr Team hat eine Minute zum Raten. Wer eine Sprache nicht gut kann, darf einmal pro Runde den Joker nehmen und auf Pantomime wechseln, und wer ein Wort nicht kennt, legt die Karte zurück und zieht eine neue. Für jedes erratene Wort gibt es einen Punkt, für ein Gefühlswort zwei. Nach etwa 15 Minuten auswerten: Was hat beim Verstehen geholfen, als die Wörter gefehlt haben?",
+          "sagen": [
+            "Würfelt: Die Zahl entscheidet, wie ihr erklärt. Wer eine Sprache nicht gut kann, nimmt den Joker.",
+            "Fehler zählen hier nicht. Wer sich traut, holt die Punkte.",
+            "Was hat geholfen, als die Wörter gefehlt haben? Zeigen, zeichnen, nachfragen, Geduld?"
+          ],
+          "punkte": [
+            "1 – auf Luxemburgisch",
+            "2 – auf Französisch",
+            "3 – auf Deutsch",
+            "4 – in einer Sprache deiner Wahl",
+            "5 – nur mit Pantomime",
+            "6 – nur mit Zeichnen an der Tafel"
+          ],
+          "tabelle": {
+            "spalten": [
+              "Alltag",
+              "Luxemburg",
+              "Gefühle (zwei Punkte)"
+            ],
+            "zeilen": [
+              [
+                "Bus",
+                "Schueberfouer",
+                "Heimweh"
+              ],
+              [
+                "Kantine",
+                "Buergbrennen",
+                "Stolz"
+              ],
+              [
+                "Hausaufgaben",
+                "Gromperekichelcher",
+                "peinlich"
+              ],
+              [
+                "Geburtstag",
+                "Péckvillchen",
+                "erleichtert"
+              ],
+              [
+                "Stau",
+                "Nationalfeiertag",
+                "eifersüchtig"
+              ],
+              [
+                "Ferien",
+                "Kniddelen",
+                "neugierig"
+              ]
+            ]
+          },
+          "tipp": "Die Auswertung schlägt den Bogen zum Alltag: So fühlt es sich an, neu in einem Land oder einer Klasse zu sein, und Geduld und Zeigen helfen mehr als lauter reden. Mit nur zwei Jugendlichen spielen beide gegen die Leitung; bei Unruhe oder wenig Energie gibt es nur noch Pantomime im Sitzen.",
+          "wennEsKippt": "Wird jemand wegen Aussprache oder Fehlern ausgelacht, das Spiel kurz anhalten und die Regel wiederholen. Merkt die Leitung, dass eine Person mit einer Sprache kämpft, gibt sie den Joker großzügig für alle frei, damit niemand herausgehoben wird."
+        },
+        {
+          "titel": "Skill: Mein Ruhesatz in der Herzsprache",
+          "dauer": 10,
+          "phase": "skill",
+          "text": "Jede Person schreibt auf dem Blatt einen kurzen Satz, der sie beruhigt, in der Sprache, die sich dafür am besten anfühlt – das muss nicht die Sprache sein, die sie am besten kann. Dann setzen sich alle bequem hin und atmen ruhig; beim Ausatmen sagt jede Person ihren Satz innerlich, sechs Atemzüge lang, während die Leitung leise den Rhythmus zählt: vier ein, sechs aus. Wer mag, sagt danach seinen Satz laut – die anderen müssen ihn nicht verstehen, um zu hören, wie ruhig er klingt.",
+          "sagen": [
+            "Ein kurzer Satz, der euch beruhigt: Das wird schon. Tout doux. Calma. In welcher Sprache klingt er für euch am ruhigsten?",
+            "Beim Ausatmen innerlich den Satz. Vier ein – sechs aus."
+          ],
+          "tipp": "Ein Ruhesatz in der Herzsprache wirkt oft stärker als einer in der Schulsprache, weil er mit Menschen und Momenten verbunden ist, die beruhigt haben. Er passt auf die Rückseite eines Skills-Kärtchens.",
+          "wennEsKippt": "Findet jemand keinen Satz, bietet die Leitung eine Auswahl an der Tafel an. Wird beim Laut-Sagen gelacht, die Runde abbrechen und die Sätze nur innerlich sprechen lassen.",
+          "blatt": "skills-sprachenportraet"
+        },
+        {
+          "titel": "Réckbléck und Skills-Pass",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Blitzlicht mit einem Satz: Was hat euch heute überrascht – über Luxemburg, über die Gruppe oder über euch selbst? Dann Eintrag in den Skills-Pass und Stempel; wer mag, schreibt den Ruhesatz hinein. Die Sprachenporträts bleiben in den Mappen und werden nicht aufgehängt, außer jemand möchte es ausdrücklich.",
+          "sagen": [
+            "Ein Satz: Was hat euch heute überrascht?"
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Nächstes Mal geht es um die Kehrseite: Was tun, wenn jemand wegen seiner Herkunft, seines Glaubens, seines Aussehens oder dafür, wen er liebt, schlecht behandelt wird?",
+      "hintergrund": "Im Jugendalter wird die eigene Identität aktiv gebaut: Verschiedene Zugehörigkeiten – Familie, Sprachen, Orte, Freundeskreise, Interessen – müssen zu einem stimmigen Selbstbild zusammenfinden (Erikson, 1968). In einem mehrsprachigen Land wie Luxemburg gehören dazu oft mehrere Sprachen und Familiengeschichten. Wer erlebt, dass diese Vielfalt gesehen und geschätzt wird, muss sich nicht für eine Seite entscheiden. Das Sprachenporträt stammt aus der Mehrsprachigkeitsdidaktik: Es macht das ganze Sprachrepertoire sichtbar, auch Sprachen, die in der Schule wenig zählen, und verbindet sie mit Gefühlen und Menschen (Busch, 2012). Das Kompass-Handbuch des Europarats empfiehlt, Vielfalt über eigene Erfahrung und Reflexion zu erarbeiten statt über Belehrung (Europarat, 2012). Schon Allport (1954) beschrieb, dass Vorurteile schwächer werden, wenn man Menschen als Einzelne mit vielen Merkmalen wahrnimmt statt als Mitglied einer einzigen Kategorie.",
+      "quellen": [
+        "Erikson, E. H. (1968). Identity: Youth and Crisis. New York: Norton.",
+        "Busch, B. (2012). The linguistic repertoire revisited. Applied Linguistics, 33(5), 503–523.",
+        "Council of Europe (2012). Compass: Manual for Human Rights Education with Young People (2nd ed.). Strasbourg: Council of Europe Publishing.",
+        "Allport, G. W. (1954). The Nature of Prejudice. Cambridge, MA: Addison-Wesley."
+      ],
+      "achtung": "Sprachen, Herkunft und Religion berühren Familiengeschichten, zu denen auch Flucht, Trennung, Rassismus oder Sorgen um den Aufenthalt gehören können. Niemand wird nach seiner Herkunft, der Herkunft seiner Familie oder seinem Glauben gefragt oder als Beispiel für eine Gruppe genommen; das Sprachenporträt bleibt privat, gezeigt wird nur freiwillig. Beim Zeitstrahl keine Person aus der Gruppe mit einer Karte in Verbindung bringen. Wirkt jemand bei der Flucht-Karte oder beim Porträt betroffen, später unauffällig nachfragen und ein Gespräch anbieten. Erzählt jemand von Bedrohung, Gewalt oder großer Angst um die eigene Familie: nicht in der Gruppe vertiefen, nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) informieren."
+    },
+    {
+      "id": "j2-e23",
+      "nr": 23,
+      "jahr": 2,
+      "modul": "j2-m6",
+      "titel": "Stopp Diskriminierung",
+      "kurz": "Diskriminierung erkennen, reagieren, Hilfe holen: Die Gruppe prüft Alltagssituationen, sieht, wie aus Sprüchen Ausgrenzung wird, probiert im Forumtheater Reaktionen aus und kennt ihre Anlaufstellen.",
+      "dauer": 100,
+      "ziele": [
+        "erkennen Diskriminierung an drei Merkmalen und unterscheiden sie von fairer Ungleichbehandlung",
+        "beschreiben die Treppe der Abwertung und warum es sich lohnt, schon bei Sprüchen zu reagieren",
+        "probieren im Forumtheater sichere Reaktionen als Zeugin oder Zeuge aus",
+        "wissen, was sie tun und an wen sie sich wenden können, wenn es sie selbst trifft, und halten im Skills-Kompass einen Skill für das Modul fest"
+      ],
+      "material": [
+        "Gefühlsrad (A3, laminiert), Wäscheklammern und Anspannungsskala 0–100",
+        "Kreppband für eine Positionslinie und drei Schilder: „keine Diskriminierung“, „unsicher“, „Diskriminierung“",
+        "Plakat mit der Treppe der Abwertung (vier Stufen, Schritt 4), zunächst abgedeckt",
+        "Drei Szenenkarten für das Forumtheater (Texte in Schritt 6), zwei Stühle mit Schildern „Zuschauende“",
+        "Kleine Karten (A7) und Stifte für die Rückenwind-Karten, ein Korb",
+        "Schülerblatt „Stopp Diskriminierung“ und Skills-Kompass (Blatt „Mein Skills-Kompass“) für jede Person",
+        "Plakat mit den Anlaufstellen: Vertrauensperson und SePAS der Schule, Kanner- a Jugendtelefon 116 111, BEE SECURE Helpline 8002 1234, Polizei 113, Notruf 112",
+        "Skills-Pässe und Stempel, Imbiss und Getränke (Allergien beachten)"
+      ],
+      "vorbereitung": [
+        "Die Situationen für die Positionslinie mit Blick auf die Gruppe durchgehen: Beispiele, die einem sichtbaren Merkmal eines Gruppenmitglieds entsprechen – etwa einem Rollstuhl, einem Kopftuch oder einer bekannten Familiengeschichte –, ersetzen",
+        "Vorab im Team klären, ob es in der Gruppe aktuell Diskriminierungs- oder Mobbingvorfälle gibt; wenn ja, die Einheit mit der zuständigen Leitung (Responsable) abstimmen",
+        "Die Forumtheater-Szenen mit einer zweiten erwachsenen Person proben: Die angreifende und die angegriffene Rolle spielen nur Erwachsene",
+        "Die Namen der Vertrauenspersonen und des SePAS herausfinden und auf das Plakat schreiben"
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-diskriminierung",
+        "skills-kompass",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Fair ist für mich, wenn …"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Rückblick und Rahmen für heute"
+        },
+        {
+          "min": "15–35",
+          "phase": "uebung",
+          "titel": "Diskriminierung oder nicht? Die Positionslinie"
+        },
+        {
+          "min": "35–45",
+          "phase": "input",
+          "titel": "Die Treppe der Abwertung"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–85",
+          "phase": "aktiv",
+          "titel": "Forumtheater: Szene stoppen, anders weiterspielen"
+        },
+        {
+          "min": "85–95",
+          "phase": "skill",
+          "titel": "Rückenwind-Karten und Skills-Kompass"
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Anlaufstellen, Réckbléck und Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: Fair ist für mich, wenn …",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Gefühlsrad und Anspannung wie gewohnt. Freiwillige Zusatzfrage: Wie würdest du den Satz „Fair ist für mich, wenn …“ beenden? Die Leitung beginnt. Die Antworten ohne Namen an die Tafel schreiben; sie zeigen später, woran man erkennt, dass etwas unfair ist.",
+          "sagen": [
+            "Gefühl, Zahl – und: Fair ist für mich, wenn …",
+            "Bei mir: wenn für alle dieselben Regeln gelten und trotzdem jemand schaut, wer gerade mehr Hilfe braucht."
+          ],
+          "tipp": "Die Antwort der Leitung legt nebenbei den Grundstein für den Unterschied zwischen gleich und gerecht, der bei der Positionslinie wichtig wird.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Rückblick und Rahmen für heute",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "An die Sprachenporträts und die vielen Zugehörigkeiten erinnern. Dann das Thema nennen und den Rahmen klar setzen: Heute geht es um Diskriminierung, alle Beispiele sind erfunden, und niemand muss erzählen, ob er selbst betroffen war. Beleidigende Wörter über Gruppen werden auch als Zitat nicht ausgesprochen. Wer eine Pause braucht, darf kurz rausgehen, und nach der Einheit ist Zeit für ein Gespräch unter vier Augen.",
+          "sagen": [
+            "Heute geht es um etwas, das viele kennen – aus eigener Erfahrung oder vom Zuschauen. Ihr müsst hier nichts davon erzählen.",
+            "Schimpfwörter über Gruppen sprechen wir heute nicht aus, auch nicht zum Zitieren. Wir sagen einfach: Er hat ein Schimpfwort über ihre Herkunft benutzt."
+          ]
+        },
+        {
+          "titel": "Diskriminierung oder nicht? Die Positionslinie",
+          "dauer": 20,
+          "phase": "uebung",
+          "text": "Die drei Schilder liegen auf einer Linie am Boden. Die Leitung liest die Situationen aus der Tabelle vor, und alle stellen sich an die Stelle, die für sie passt. Nach jeder Situation fragt die Leitung zwei, drei Personen nach ihrem Grund und sammelt daraus die drei Merkmale von Diskriminierung (Liste). Bei den Situationen ohne Diskriminierung den Unterschied herausarbeiten: Ungleich behandeln ist in Ordnung, wenn es einen sachlichen Grund gibt oder einen Nachteil ausgleicht. Zum Schluss Aufgabe 1 auf dem Blatt allein bearbeiten.",
+          "sagen": [
+            "Stellt euch dahin, wo ihr die Situation seht. Zwischen den Schildern ist erlaubt.",
+            "Was genau macht diese Situation zu Diskriminierung – oder eben nicht?",
+            "Gleich ist nicht immer gerecht: Wenn Elias mehr Zeit bekommt, gleicht das einen Nachteil aus."
+          ],
+          "punkte": [
+            "Nachteil: Jemand wird benachteiligt, ausgeschlossen oder herabgesetzt.",
+            "Merkmal: Der Grund ist die Herkunft, die Hautfarbe, das Aussehen, die Religion, eine Behinderung, das Geschlecht, die sexuelle Orientierung oder das Alter.",
+            "Kein sachlicher Grund: Es gibt keine faire Begründung dafür.",
+            "Es zählt, was es bei der Person auslöst – nicht nur, wie es gemeint war."
+          ],
+          "tabelle": {
+            "spalten": [
+              "Situation",
+              "Eher …",
+              "Woran man es erkennt"
+            ],
+            "zeilen": [
+              [
+                "Amira bekommt am Telefon eine Zusage für ein Praktikum. Als sie mit Kopftuch kommt, ist die Stelle plötzlich vergeben.",
+                "Diskriminierung",
+                "Benachteiligt wegen ihrer Religion, ohne sachlichen Grund"
+              ],
+              [
+                "Samuel sitzt im Rollstuhl. Die Klasse plant einen Ausflug und sagt: Für dich ist das zu kompliziert.",
+                "Diskriminierung",
+                "Ausgeschlossen wegen einer Behinderung – der Ausflug ließe sich anders planen"
+              ],
+              [
+                "Elias bekommt in Prüfungen mehr Zeit, weil er eine Leseschwäche hat.",
+                "keine Diskriminierung",
+                "Ausgleich für einen Nachteil – das ist fair"
+              ],
+              [
+                "Wenn Luca im Klassenchat etwas postet, schreibt jemand „schwul“ als Beleidigung darunter, und andere lachen.",
+                "Diskriminierung",
+                "Herabgesetzt, und zwar egal, ob Luca schwul ist oder nicht"
+              ],
+              [
+                "Zoé ist 13 und kommt nicht in einen Film ab 16.",
+                "keine Diskriminierung",
+                "Jugendschutz ist ein sachlicher Grund und gilt für alle"
+              ],
+              [
+                "Tiago hört von einer Lehrkraft: Bei deiner Herkunft erwarte ich im Deutschtest nicht viel.",
+                "Diskriminierung",
+                "Herabgesetzt wegen seiner Herkunft, bevor er etwas gezeigt hat"
+              ],
+              [
+                "Beim Sport dürfen nur die Jungen Fußball spielen, die Mädchen sollen zuschauen.",
+                "Diskriminierung",
+                "Ausgeschlossen wegen des Geschlechts"
+              ],
+              [
+                "Diogo und Yusuf werden an der Tür einer Party nicht hereingelassen, „heute nur Stammgäste“. Die Gruppe hinter ihnen kommt ohne Frage rein.",
+                "unsicher, eher Diskriminierung",
+                "Von außen schwer zu beweisen – wenn es sich wiederholt, lohnt es sich, es aufzuschreiben"
+              ]
+            ]
+          },
+          "tipp": "Die Grenzfälle brauchen die meiste Zeit. An ihnen lernt die Gruppe, dass man Diskriminierung nicht immer beweisen kann – und dass es trotzdem sinnvoll ist, sie ernst zu nehmen und festzuhalten.",
+          "wennEsKippt": "Stellt sich jemand bei einer eindeutigen Situation demonstrativ auf „keine Diskriminierung“ und macht Sprüche, nicht in eine Grundsatzdebatte einsteigen, sondern die drei Merkmale abfragen: Wird hier jemand benachteiligt? Wegen welchen Merkmals? Gibt es einen sachlichen Grund? Erzählt jemand eine eigene Erfahrung, würdigen, nicht vertiefen und ein Gespräch nach der Einheit anbieten.",
+          "blatt": "skills-diskriminierung"
+        },
+        {
+          "titel": "Die Treppe der Abwertung",
+          "dauer": 10,
+          "phase": "input",
+          "text": "Das Plakat aufdecken und die Treppe von unten nach oben erklären (Tabelle): Es beginnt mit Sprüchen und Witzen, geht über Meiden und Ausgrenzen zum Benachteiligen und endet bei Drohungen und Gewalt. Wer schon auf der untersten Stufe widerspricht, hält die Treppe früh auf. Dann gemeinsam sammeln, was Diskriminierung bei den Betroffenen auslöst – mit Blick auf den Wut-Eisberg aus Modul 3: Kränkung, Scham, Ungerechtigkeit und oft berechtigte Wut. Zum Schluss Aufgabe 2 auf dem Blatt: Beispiele den Stufen zuordnen.",
+          "sagen": [
+            "Kaum jemand steigt oben ein. Fast immer beginnt es unten – bei Sprüchen, über die alle lachen.",
+            "Was löst so ein Spruch bei der Person aus, die gemeint ist? Denkt an den Eisberg.",
+            "Wer schon auf der ersten Stufe nicht mitlacht, nimmt der Treppe ihren Anfang."
+          ],
+          "tabelle": {
+            "spalten": [
+              "Stufe",
+              "Was passiert",
+              "Beispiel"
+            ],
+            "zeilen": [
+              [
+                "1 Sprüche und Witze",
+                "Abwertende Bemerkungen, angeblich „nur Spaß“",
+                "Witze über eine Religion in der Klassengruppe"
+              ],
+              [
+                "2 Meiden und Ausgrenzen",
+                "Jemand wird nicht eingeladen, niemand setzt sich dazu",
+                "In der Kantine bleibt ein Platz immer leer"
+              ],
+              [
+                "3 Benachteiligen",
+                "Schlechtere Chancen wegen eines Merkmals",
+                "Keine Einladung zum Vorstellungsgespräch wegen des Namens"
+              ],
+              [
+                "4 Drohen und Angreifen",
+                "Drohungen, Beschädigung, Gewalt",
+                "Jemand wird wegen seiner Hautfarbe bedroht"
+              ]
+            ]
+          },
+          "tipp": "Die Treppe folgt Allports Skala der Vorurteile, deren oberste Stufe die Vernichtung ganzer Gruppen ist. Ob die Leitung diese Stufe anspricht, etwa mit Blick auf den Geschichtsunterricht, entscheidet sie nach der Gruppe.",
+          "wennEsKippt": "Kommt „Das ist doch nur Spaß“, nicht moralisieren, sondern fragen: Lachen alle – auch die Person, um die es geht? Und was passiert, wenn es jeden Tag so geht?",
+          "blatt": "skills-diskriminierung"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Imbiss und frische Luft. Die Leitung bleibt ansprechbar und achtet darauf, ob sich jemand zurückzieht oder auffällig still ist. Wer das Gespräch sucht, bekommt es jetzt oder direkt nach der Einheit."
+        },
+        {
+          "titel": "Forumtheater: Szene stoppen, anders weiterspielen",
+          "dauer": 25,
+          "phase": "aktiv",
+          "text": "Die beiden Erwachsenen spielen eine Szene einmal ganz durch: Jemand wird wegen eines Merkmals abgewertet, die Zuschauenden in der Szene – zwei leere Stühle – schweigen. Dann wird die Szene wiederholt; wer eine Idee hat, ruft „Stopp!“, setzt sich auf einen der Stühle und probiert von dort aus eine Reaktion. Die angreifende und die angegriffene Rolle bleiben immer bei den Erwachsenen, die Jugendlichen spielen nur Zuschauende, die eingreifen. Nach jedem Versuch fragt die Leitung das Publikum: Was hat sich verändert, und war es für die helfende Person sicher? Pro Szene zwei bis vier Versuche, dann die nächste Szene; zum Schluss die Wege aus der Tabelle an der Tafel festhalten.",
+          "sagen": [
+            "Stopp ruft, wer eine Idee hat. Ihr übernehmt nur Zuschauende – niemand muss die Person spielen, die angegriffen wird.",
+            "Ihr müsst keine Helden sein. Nicht mitlachen, zur Person gehen, jemanden dazuholen – all das zählt.",
+            "War das für dich sicher? Was hättest du gemacht, wenn der andere lauter geworden wäre?"
+          ],
+          "punkte": [
+            "Szene 1, im Bus: Eine Person sagt laut zu einer Frau mit Kopftuch, sie solle „dahin zurückgehen, wo sie herkommt“. In der Reihe dahinter sitzen zwei Jugendliche.",
+            "Szene 2, in der Pause: Ein Mitschüler im Rollstuhl will beim Basketball mitspielen. Einer ruft: Mit dem verlieren wir doch nur. Zwei stehen daneben.",
+            "Szene 3, in der Umkleide: Ein Junge erzählt, dass er in einer Tanzgruppe ist. Ein anderer sagt: Tanzen ist was für Mädchen, du bist doch kein richtiger Junge. Zwei hören zu."
+          ],
+          "tabelle": {
+            "spalten": [
+              "Weg",
+              "So kann es aussehen"
+            ],
+            "zeilen": [
+              [
+                "Nicht mitmachen",
+                "Nicht lachen, nicht filmen, nichts weiterleiten"
+              ],
+              [
+                "Ablenken",
+                "Die angegriffene Person ansprechen und mitnehmen: „Komm, wir setzen uns nach vorn.“"
+              ],
+              [
+                "Hilfe holen",
+                "Busfahrer, Aufsicht oder Lehrkraft – das ist kein Petzen"
+              ],
+              [
+                "Klar widersprechen",
+                "Kurz und ruhig: „Das ist nicht okay.“ Nur, wenn es für dich sicher ist"
+              ],
+              [
+                "Danach da sein",
+                "Zur betroffenen Person gehen: „Alles okay? Das war nicht in Ordnung.“"
+              ],
+              [
+                "Festhalten",
+                "Aufschreiben, was, wann und wo passiert ist; online Screenshot machen und melden"
+              ]
+            ]
+          },
+          "tipp": "Mit nur einer Leitung spielt sie die angreifende Figur und liest deren Sätze von der Karte; die angegriffene Person ist ein Stuhl mit Schild, zu dem die Helfenden sprechen. Bei wenig Energie reicht eine Szene, die mehrmals mit verschiedenen Wegen gespielt wird. Wer in Jahr 1 dabei war, erkennt die Zivilcourage-Leiter wieder; neu ist das Ablenken.",
+          "wennEsKippt": "Will jemand die angreifende Rolle übernehmen oder legt im Spaß nach, sofort abbrechen: Diese Rolle spielen heute nur Erwachsene. Reagiert jemand sichtbar getroffen, weil die Szene etwas Eigenes berührt, die Szene beenden, alle aus der Rolle holen, eine kurze Pause machen und später unter vier Augen nachfragen."
+        },
+        {
+          "titel": "Rückenwind-Karten und Skills-Kompass",
+          "dauer": 10,
+          "phase": "skill",
+          "text": "Zuerst nach dem Theater runterkommen: Füße fest auf den Boden, drei ruhige Atemzüge mit langem Ausatmen. Dann schreibt jede Person auf eine kleine Karte einen Satz, den sie hören möchte, wenn sie selbst einmal schlecht behandelt wird – ohne Namen. Die Karten kommen in einen Korb, werden gemischt, und jede Person zieht eine und liest sie still; wer mag, liest sie laut vor, und alle dürfen ihre Karte behalten. Danach trägt jede Person im Skills-Kompass im Feld für Modul 6 („Vielfalt und Respekt“) ein, welcher Skill ihr in diesem Bereich hilft.",
+          "sagen": [
+            "Welchen Satz würdet ihr hören wollen, wenn euch jemand wegen eines Merkmals fertigmacht? Zum Beispiel: Ich glaube dir. Du bist nicht allein. Das war nicht deine Schuld.",
+            "Für den Kompass: Was hilft euch bei Unterschieden und Diskriminierung – der Schubladen-Check, der Zitronen-Blick, euer Ruhesatz oder ein Weg aus dem Forumtheater?"
+          ],
+          "tipp": "Rückhalt von anderen gehört zu dem, was nach Diskriminierung am meisten schützt. Die Karte ist klein genug für das Portemonnaie oder die Handyhülle.",
+          "wennEsKippt": "Schreibt jemand einen ironischen oder verletzenden Satz, die Karte beim Mischen unauffällig aussortieren und selbst eine ernst gemeinte in den Korb legen. Bei nur zwei Jugendlichen schreibt jede Person zwei Karten, und die Leitung schreibt mit.",
+          "blatt": "skills-kompass"
+        },
+        {
+          "titel": "Anlaufstellen, Réckbléck und Skills-Pass",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Das Plakat mit den Anlaufstellen zeigen und aufhängen; jede Person trägt auf dem Blatt ihre eigene Vertrauensperson ein. Kurz erwähnen, dass Hass im Netz in Einheit 25 ausführlich an die Reihe kommt. Blitzlicht mit einem Satz, dann Skills-Pass und Stempel. Zum Schluss das Angebot wiederholen, nach der Einheit unter vier Augen zu sprechen.",
+          "sagen": [
+            "Ein Satz: Welchen Weg aus dem Forumtheater traut ihr euch ab morgen zu?",
+            "Ich bleibe nach der Stunde noch ein paar Minuten hier – falls jemand etwas loswerden möchte."
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Vieles davon passiert auch im Netz. Ab nächster Woche geht es um eure Daten und Bilder – und darum, wie ihr euch und andere online schützt.",
+      "hintergrund": "Diskriminierung heißt, dass Menschen wegen eines Merkmals wie Herkunft, Hautfarbe, Religion, Behinderung, Geschlecht oder sexueller Orientierung benachteiligt, ausgegrenzt oder herabgesetzt werden; die UN-Kinderrechtskonvention verpflichtet die Staaten, Kinder davor zu schützen (Vereinte Nationen, 1989). Allport (1954) beschrieb eine Skala der Vorurteile, die vom abwertenden Reden über Meiden und Benachteiligen bis zur Gewalt reicht – deshalb lohnt es sich, schon auf der untersten Stufe zu reagieren. Ausgrenzung verletzt die Grundbedürfnisse nach Zugehörigkeit, Selbstwert und Kontrolle (Williams, 2007). Zuschauende greifen oft nicht ein, weil sich die Verantwortung verteilt und sie nicht wissen, was sie tun können (Latané & Darley, 1970); konkrete, sichere Handlungswege senken diese Hürde. Im Forumtheater nach Boal (1979) stoppt das Publikum eine Szene und probiert selbst andere Wege aus; Rollenspiele dieser Art empfiehlt auch das Kompass-Handbuch (Europarat, 2012).",
+      "quellen": [
+        "Vereinte Nationen (1989). Übereinkommen über die Rechte des Kindes. New York: Vereinte Nationen.",
+        "Allport, G. W. (1954). The Nature of Prejudice. Cambridge, MA: Addison-Wesley.",
+        "Williams, K. D. (2007). Ostracism. Annual Review of Psychology, 58, 425–452.",
+        "Latané, B. & Darley, J. M. (1970). The Unresponsive Bystander: Why Doesn’t He Help? New York: Appleton-Century-Crofts.",
+        "Boal, A. (1979). Theatre of the Oppressed. London: Pluto Press.",
+        "Council of Europe (2012). Compass: Manual for Human Rights Education with Young People (2nd ed.). Strasbourg: Council of Europe Publishing."
+      ],
+      "achtung": "Diskriminierung kann Jugendliche in der Gruppe unmittelbar betreffen – durch Rassismus oder Anfeindungen wegen ihres Glaubens, einer Behinderung, ihres Geschlechts oder ihrer sexuellen Orientierung. Niemand wird nach eigenen Erfahrungen gefragt oder als Beispiel genommen; Situationen, die einem sichtbaren Merkmal eines Gruppenmitglieds entsprechen, werden ersetzt. Im Forumtheater spielen die angreifende und die angegriffene Rolle nur Erwachsene. Niemanden outen: Vertraut jemand an, lesbisch, schwul, bi, trans oder unsicher zu sein, bleibt das vertraulich – auch gegenüber den Eltern –, solange keine Gefährdung besteht. Erzählt jemand von Diskriminierung, Bedrohung oder Gewalt: zuhören und glauben, nicht in der Gruppe vertiefen, die Person nach der Einheit ruhig ansprechen, nichts versprechen, was man nicht halten kann, nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) am selben Tag informieren. Bei akuter Bedrohung Polizei 113 oder Notruf 112."
+    }
+  ]
+}

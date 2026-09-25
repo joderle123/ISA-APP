@@ -1,0 +1,1206 @@
+{
+  "einheiten": [
+    {
+      "id": "j3-e17",
+      "nr": 17,
+      "jahr": 3,
+      "modul": "j3-m5",
+      "titel": "Trauer und Verlust",
+      "kurz": "Verlust hat viele Formen – vom Tod eines Menschen bis zum Umzug. Die Gruppe versteht, warum Trauer zwischen Vermissen und Alltag hin- und hergeht, und übt, was Trauernden wirklich hilft.",
+      "dauer": 100,
+      "ziele": [
+        "erkennen, dass Verlust viele Formen hat – Tod, Trennung, Umzug, das Ende einer Freundschaft – und dass jede Trauer berechtigt ist",
+        "beschreiben am Trauer-Pendel, dass Trauer zwischen Vermissen und Alltag hin- und hergeht und beides dazugehört",
+        "üben Sätze und kleine Taten, mit denen sie trauernde Freundinnen und Freunde unterstützen",
+        "wissen, wann Trauer mehr Hilfe braucht und wo es sie gibt"
+      ],
+      "material": [
+        "Gefühlsrad (A3, laminiert), Wäscheklammern, Anspannungsskala 0–100",
+        "Plakat (A1) und dicke Stifte für die Sammlung „Verlust“",
+        "Malerkrepp für die Pendel-Linie, zwei A4-Schilder: „Vermissen“ und „Alltag“",
+        "Zehn Satzkarten (A5) mit den Sätzen aus Schritt 6, dazu drei Tücher oder Reifen als Felder: „hilft eher“, „hilft eher nicht“, „kommt drauf an“",
+        "Schülerblatt „Wenn etwas fehlt“ für jede Person",
+        "Anonyme Fragenbox (Karton mit Schlitz) und kleine Zettel",
+        "Taschentücher und Wasser, auch am Ruheplatz",
+        "Plakat mit den Anlaufstellen, Kontaktdaten des SePAS",
+        "Skills-Pässe, Stempel, Imbiss und Getränke"
+      ],
+      "vorbereitung": [
+        "Spätestens zwei Wochen vorher einen kurzen Elternbrief zum Modul nach Hausregel verschicken, mit der zuständigen Leitung (Responsable) abgestimmt und wenn möglich in der Familiensprache, etwa so: „In den nächsten vier Wochen geht es im Skills-Kurs um schwere Gefühle: Trauer, Scham, Einsamkeit und darum, was hilft, wenn es einem richtig schlecht geht – auch bei Gedanken, sich selbst zu verletzen oder nicht mehr leben zu wollen. Wir sprechen sachlich darüber und zeigen, wo es Hilfe gibt; niemand muss etwas Persönliches erzählen. Jede Person erstellt einen privaten Plan für schwere Momente. Wenn es in Ihrer Familie gerade einen Verlust oder eine Krise gibt, sagen Sie uns bitte Bescheid.“ Dazu Hilfenummern und Ansprechperson.",
+        "Die Responsable über das Modul informieren. Im Team klären, wer gerade einen Verlust erlebt hat – einen Todesfall, eine Trennung, einen Umzug, eine Unterbringung – und mit diesen Jugendlichen vorher kurz sprechen: Sie entscheiden, ob und wie sie teilnehmen.",
+        "Gab es kürzlich einen Todesfall in der Gruppe oder einen Suizid im Umfeld, die Einheit nur nach Absprache mit der Responsable halten und keine Beispiele wählen, die der echten Lage ähneln.",
+        "Wenn möglich zu zweit leiten. Einen ruhigen Ort zum Rausgehen festlegen, etwa einen Nebenraum oder eine Bank im Flur in Sichtweite.",
+        "Die Pendel-Linie kleben, die Satzkarten schreiben, die Fragenbox neben die Tür stellen."
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-wenn-etwas-fehlt",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Gefühlsrad, Anspannung, ein Trostwort"
+        },
+        {
+          "min": "10–20",
+          "phase": "bruecke",
+          "titel": "Rückblick und Rahmen für das Modul"
+        },
+        {
+          "min": "20–30",
+          "phase": "input",
+          "titel": "Verlust hat viele Formen"
+        },
+        {
+          "min": "30–45",
+          "phase": "uebung",
+          "titel": "Das Trauer-Pendel: Tiagos Woche"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–72",
+          "phase": "aktiv",
+          "titel": "Satz-Parcours: Was hilft Trauernden?"
+        },
+        {
+          "min": "72–85",
+          "phase": "aktiv",
+          "titel": "Rollenspiel: Tiago in der Pause"
+        },
+        {
+          "min": "85–95",
+          "phase": "skill",
+          "titel": "Skill: Die Welle kommen und gehen lassen"
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Réckbléck, Anspannung, Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: Gefühlsrad, Anspannung, ein Trostwort",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Stühle im Kreis, das Gefühlsrad in der Mitte. Wie gewohnt zeigt jede Person auf ein Wort und nennt ihre Anspannung von 0 bis 100; die Leitung beginnt. Dazu heute eine stärkende Frage, freiwillig: Was tröstet dich, wenn es dir nicht gut geht? Ein Wort reicht – ein Ort, ein Lied, ein Tier, ein Essen. Die Leitung schreibt die Wörter ohne Namen an den Rand eines Plakats; sie kommen im Skill am Ende wieder.",
+          "sagen": [
+            "Gefühl, Zahl und ein Wort: Was tröstet dich, wenn es dir nicht gut geht?",
+            "Ein Lied, ein Ort, eine Person, eine Pizza – alles zählt. Und „weiter“ auch."
+          ],
+          "tipp": "Die Trostfrage steht bewusst vor dem Thema: Wer zuerst an etwas denkt, das ihm guttut, geht mit mehr Halt in eine Einheit über Verlust.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Rückblick und Rahmen für das Modul",
+          "dauer": 10,
+          "phase": "bruecke",
+          "text": "An die letzte Einheit anknüpfen: Dort ging es darum, sich selbst zu versorgen. Dann das neue Modul vorstellen – Trauer, Scham und Schuld, Einsamkeit und zum Schluss ein eigener Plan für richtig schwere Momente. Den Rahmen für alle vier Einheiten ausdrücklich klären (Liste), jeden Punkt kurz begründen und den Ruheplatz zeigen. Die Fragenbox vorstellen: Fragen ohne Namen werden in der nächsten Einheit beantwortet, nachdem das Team sie besprochen hat.",
+          "sagen": [
+            "Letzte Woche ging es darum, wie man für sich sorgt – mit Einkaufen und Kochen. In den nächsten vier Wochen geht es darum, wie man für sich sorgt, wenn Gefühle schwer werden.",
+            "Ihr müsst hier nichts von euch erzählen. Wir arbeiten mit ausgedachten Personen. Trotzdem kann euch etwas nahegehen – dann dürft ihr jederzeit kurz raus."
+          ],
+          "punkte": [
+            "Niemand erzählt Eigenes. Wir sprechen über ausgedachte Personen.",
+            "„Weiter“ ist immer erlaubt, ohne Begründung.",
+            "Wer raus muss, geht zum Ruheplatz. Nach ein paar Minuten schaut eine Leitung vorbei – nicht zur Kontrolle, sondern damit niemand allein bleibt.",
+            "Was hier gesagt wird, bleibt hier. Wenn ich mir Sorgen mache, dass jemand in Gefahr ist, hole ich Hilfe – und sage es der Person vorher.",
+            "Fragen, die ihr nicht laut stellen wollt, kommen ohne Namen in die Fragenbox."
+          ],
+          "tipp": "Den Rahmen nicht herunterlesen, sondern jeden Punkt begründen. Jugendliche nehmen Regeln ernster, wenn sie merken, dass die Regeln sie schützen.",
+          "wennEsKippt": "Kommen Sprüche wie „Wird das hier jetzt Therapie?“, gelassen bleiben: Nein, es geht um Wissen und Werkzeuge, nicht um eure Geschichten. Oft ist das die Aufregung vor einem ernsten Thema; ein kurzer Lacher darf sein, dann geht es ruhig weiter."
+        },
+        {
+          "titel": "Verlust hat viele Formen",
+          "dauer": 10,
+          "phase": "input",
+          "text": "„Verlust“ in die Mitte des Plakats schreiben. Die Gruppe sammelt, was Menschen in ihrem Alter verlieren können – allgemein, nicht aus dem eigenen Leben. Die Leitung ergänzt, was fehlt (Liste), und hält fest: Jeder dieser Verluste kann Trauer auslösen, und niemand muss beweisen, dass sein Verlust groß genug ist. Danach übertragen alle die Sammlung in Aufgabe 1 auf dem Blatt.",
+          "sagen": [
+            "Was können Menschen in eurem Alter verlieren? Nicht nur Menschen – denkt auch an Orte, Tiere, Pläne.",
+            "Wer umzieht, verliert auch etwas: die Straße, die Freunde, manchmal die Sprache. Auch darum darf man trauern."
+          ],
+          "punkte": [
+            "Ein Mensch stirbt: Großeltern, ein Elternteil, eine Freundin oder ein Freund",
+            "Ein Haustier stirbt",
+            "Die Eltern trennen sich, ein Elternteil zieht aus",
+            "Umzug, Schulwechsel, Auswandern oder Flucht: Freunde, ein Zuhause, eine Sprache bleiben zurück",
+            "Eine Freundschaft oder eine Beziehung geht zu Ende",
+            "Ein Plan platzt: die Verletzung vor der Saison, die Ausbildung, die nicht klappt",
+            "Nicht bei der eigenen Familie leben können"
+          ],
+          "tipp": "Leben Jugendliche der Gruppe in einem Foyer oder einer Pflegefamilie, den letzten Punkt nur nennen, wenn er von selbst passt – und nie mit Blick auf eine Person.",
+          "wennEsKippt": "Beginnt jemand, vom eigenen Verlust zu erzählen, nicht abwürgen und nicht vertiefen: kurz würdigen („Danke, dass du das sagst. Das klingt schwer.“), ein Gespräch nach der Einheit anbieten und mit der Sammlung weitermachen.",
+          "blatt": "skills-wenn-etwas-fehlt"
+        },
+        {
+          "titel": "Das Trauer-Pendel: Tiagos Woche",
+          "dauer": 15,
+          "phase": "uebung",
+          "text": "Die Geschichte von Tiago vom Blatt vorlesen. Dann stellen sich alle an die Pendel-Linie: links das Schild „Vermissen“, rechts „Alltag“. Die Leitung liest Tiagos Woche Tag für Tag vor (Tabelle), und alle gehen auf die Seite, auf der Tiago gerade ist; wer unsicher ist, bleibt auf der Linie. Nach jedem Tag kurz fragen, woran man es erkennt. Danach das Modell benennen: Trauer geht hin und her, und beide Seiten gehören dazu. Zum Schluss Aufgabe 2 allein.",
+          "sagen": [
+            "Wo ist Tiago gerade – beim Vermissen oder im Alltag?",
+            "Ist Tiago ein schlechter Enkel, weil er beim Training lacht? Nein. Er macht eine Pause vom Trauern – die braucht jeder.",
+            "Wer nur vermisst, erschöpft sich. Wer nur weitermacht, schiebt die Trauer vor sich her. Gesund ist das Hin und Her."
+          ],
+          "tabelle": {
+            "spalten": [
+              "Tiagos Woche",
+              "Seite",
+              "Woran man es erkennt"
+            ],
+            "zeilen": [
+              [
+                "Montag: Im Bus hört er die alten Sprachnachrichten seines Avô.",
+                "Vermissen",
+                "Erinnern tut weh und tut gut."
+              ],
+              [
+                "Dienstag: Beim Training lacht er über einen Witz und fühlt sich danach schlecht.",
+                "Alltag",
+                "Lachen ist kein Verrat. Schuldgefühle danach sind häufig."
+              ],
+              [
+                "Mittwoch: Er lernt für die Mathearbeit und denkt zwei Stunden an nichts anderes.",
+                "Alltag",
+                "Ablenkung ist eine Pause, kein Vergessen."
+              ],
+              [
+                "Donnerstag: Seine Mutter weint in der Küche; er setzt sich einfach dazu.",
+                "Vermissen",
+                "Zusammen trauern verbindet."
+              ],
+              [
+                "Freitag: Er schreit seinen Bruder wegen einer Kleinigkeit an.",
+                "Vermissen",
+                "Trauer zeigt sich oft als Gereiztheit oder Müdigkeit."
+              ],
+              [
+                "Samstag: Mit Léa plant er, im Sommer das Grab zu besuchen.",
+                "beides",
+                "Die Verbindung bleibt – und das Leben geht weiter."
+              ],
+              [
+                "Sonntag: Er kocht das Lieblingsgericht seines Avô, mit Musik und viel Chaos.",
+                "beides",
+                "Erinnern und Leben passen zusammen."
+              ]
+            ]
+          },
+          "tipp": "Die Linie in der Mitte ist gewollt: Viele Tage gehören auf beide Seiten, genau das ist die Botschaft. Mit nur zwei Jugendlichen zeigen beide auf zwei Karten auf dem Tisch, statt zu gehen; bei gutem Wetter geht die Übung auch draußen auf einem Weg.",
+          "wennEsKippt": "Wird es albern und alle rennen zwischen den Seiten hin und her, das Tempo herausnehmen: bei jedem Tag erst still überlegen, dann auf ein Zeichen langsam gehen.",
+          "blatt": "skills-wenn-etwas-fehlt"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Gemeinsam essen, das Thema ruht. Die Leitung bleibt ansprechbar und achtet darauf, wer still wird oder sich zurückzieht. Die zweite Leitung legt in der Zeit die Satzkarten und die drei Felder aus."
+        },
+        {
+          "titel": "Satz-Parcours: Was hilft Trauernden?",
+          "dauer": 12,
+          "phase": "aktiv",
+          "text": "Die zehn Satzkarten liegen verteilt im Raum, in der Mitte drei Felder: „hilft eher“, „hilft eher nicht“, „kommt drauf an“. Zu zweit gehen die Jugendlichen von Karte zu Karte, lesen sie laut und legen sie in ein Feld; ein anderes Paar darf eine Karte umlegen, wenn es gute Gründe hat (7 Min.). Danach gemeinsam auf die Felder schauen, vor allem auf „kommt drauf an“. Die Leitung fasst zusammen, was fast immer hilft: da sein, ehrlich sein, nicht wegschauen, dranbleiben.",
+          "sagen": [
+            "Es gibt nicht den perfekten Satz. Was fast immer hilft: da sein, ehrlich sein, nicht aus dem Weg gehen.",
+            "Warum kann derselbe Satz die eine trösten und den anderen verletzen?"
+          ],
+          "tabelle": {
+            "spalten": [
+              "Satzkarte",
+              "Eher …",
+              "Warum"
+            ],
+            "zeilen": [
+              [
+                "Es tut mir so leid. Ich weiß nicht, was ich sagen soll – aber ich bin da.",
+                "hilft",
+                "Ehrlich und ohne Druck."
+              ],
+              [
+                "Ich weiß genau, wie du dich fühlst.",
+                "hilft eher nicht",
+                "Niemand weiß das genau. Besser: fragen."
+              ],
+              [
+                "Kopf hoch, das wird schon wieder.",
+                "hilft eher nicht",
+                "Klingt, als solle die Trauer schnell verschwinden."
+              ],
+              [
+                "Magst du erzählen, wie er so war?",
+                "kommt drauf an",
+                "Manche erzählen gern, andere noch nicht. Die Frage lässt die Wahl."
+              ],
+              [
+                "Soll ich dich nach dem Training ein Stück begleiten?",
+                "hilft",
+                "Kleine, konkrete Hilfe."
+              ],
+              [
+                "Er ist jetzt an einem besseren Ort.",
+                "kommt drauf an",
+                "Tröstet manche, andere glauben das nicht. Besser fragen, was Halt gibt."
+              ],
+              [
+                "Jetzt ist aber mal gut, das ist doch schon Monate her.",
+                "hilft eher nicht",
+                "Trauer hat keine Frist."
+              ],
+              [
+                "Ich hab heute an dich gedacht.",
+                "hilft",
+                "Zeigt: Du bist nicht vergessen – auch Wochen später."
+              ],
+              [
+                "Hast du Lust, am Samstag was zu machen? Einfach so.",
+                "kommt drauf an",
+                "Ablenkung tut gut, wenn ein Nein erlaubt ist."
+              ],
+              [
+                "(Gar nichts sagen und ihm aus dem Weg gehen.)",
+                "hilft eher nicht",
+                "Fühlt sich für Trauernde oft wie Ausschluss an."
+              ]
+            ]
+          },
+          "tipp": "Bei Regen oder wenig Platz liegen die Karten auf Tischen im Flur. Bei wenig Energie reicht der Parcours; das Rollenspiel wird dann durch Aufgabe 3 auf dem Blatt ersetzt."
+        },
+        {
+          "titel": "Rollenspiel: Tiago in der Pause",
+          "dauer": 13,
+          "phase": "aktiv",
+          "text": "Die Leitung spielt Tiago: Er sitzt in der Pause allein auf der Treppe, Kopfhörer auf. Die Jugendlichen sind Mitschülerinnen und Mitschüler, die gerade erfahren haben, dass sein Avô gestorben ist. Nacheinander gehen sie allein oder zu zweit auf ihn zu und probieren einen Einstieg; wer zuschaut, darf „Stopp“ sagen und die Szene übernehmen. Tiago reagiert echt, mal ausweichend („Passt schon“), mal dankbar, und sagt nach jeder Szene, was ihm gutgetan hat. Am Ende legt die Leitung die Rolle sichtbar ab: aufstehen, Kopfhörer weg, einen Satz als sie selbst. Danach schreibt jede Person in Aufgabe 3 ihre eigene erste Nachricht an Tiago.",
+          "sagen": [
+            "Ihr habt gerade erfahren, dass Tiagos Avô gestorben ist. Tiago sitzt allein auf der Treppe. Was macht ihr?",
+            "Als Tiago hat mir gutgetan, dass du dich einfach neben mich gesetzt hast. Du musstest gar nicht viel sagen."
+          ],
+          "tipp": "Tiago spielt bewusst die Leitung: So muss kein Jugendlicher eine trauernde Person darstellen. Mit nur zwei Jugendlichen probiert jede Person zwei Einstiege; bei zwei Leitungen spielt die zweite eine Mitschülerin, die dazukommt.",
+          "wennEsKippt": "Wird im Rollenspiel gelacht, nicht schimpfen: Unsicherheit macht oft albern. Kurz anhalten, Tiago fragen, wie sich das gerade anfühlt, und ernsthaft neu beginnen. Wirkt jemand still betroffen, das Mitspielen ausdrücklich freiwillig halten und nach der Einheit nachfragen.",
+          "blatt": "skills-wenn-etwas-fehlt"
+        },
+        {
+          "titel": "Skill: Die Welle kommen und gehen lassen",
+          "dauer": 10,
+          "phase": "skill",
+          "text": "Erklären: Trauer und andere schwere Gefühle kommen oft in Wellen – ausgelöst durch ein Lied, einen Geruch, einen Jahrestag. Wer gegen eine Welle ankämpft, verliert viel Kraft; man kann lernen, sie kommen und gehen zu lassen. Dann die Übung ruhig anleiten, die Augen offen oder gesenkt (Liste). Zum Schluss die Trostwörter vom Anfang vorlesen: Sie sind Ideen für die Zeit nach der Welle.",
+          "punkte": [
+            "Füße auf den Boden, Hände auf die Oberschenkel. Spür den Stuhl unter dir.",
+            "Denk an ein Gefühl von heute, etwa Müdigkeit oder Ärger über den Bus. Stell es dir als Welle vor, die auf den Strand zurollt.",
+            "Du musst sie nicht stoppen. Atme ruhig: vier Zählzeiten ein, sechs aus. Die Welle steigt – und flacht wieder ab.",
+            "Sag dir innerlich, was da ist: Das ist Müdigkeit, Ärger, Traurigkeit. Es darf da sein. Es geht auch wieder.",
+            "Spür zum Schluss die Füße, den Stuhl, den Raum. Heb den Blick."
+          ],
+          "sagen": [
+            "Eine Welle geht vorbei, auch wenn es sich im Moment nicht so anfühlt.",
+            "Und wenn eine Welle sehr hoch wird, holt ihr euch jemanden an den Strand."
+          ],
+          "tipp": "Bewusst mit einem leichten Gefühl üben lassen. Niemand soll sich absichtlich an etwas Trauriges erinnern; der Skill wird geübt, solange das Meer ruhig ist."
+        },
+        {
+          "titel": "Réckbléck, Anspannung, Skills-Pass",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Blitzlicht: ein Satz, den ihr Tiago sagen würdet – oder „weiter“. Dann der Check-out: Alle nennen noch einmal ihre Anspannung von 0 bis 100. Eintrag in den Skills-Pass mit Stempel. Zum Schluss auf das Plakat mit den Anlaufstellen zeigen und sagen, dass die Leitung nach der Einheit noch eine Viertelstunde da ist.",
+          "sagen": [
+            "Ein Satz für Tiago – was würdet ihr ihm sagen?",
+            "Und eure Zahl jetzt, zum Schluss? Ich bleibe noch eine Viertelstunde hier, falls jemand reden möchte."
+          ],
+          "tipp": "Die Zahl am Ende still mit der vom Anfang vergleichen. Wer deutlich angespannter geht, als er gekommen ist, bekommt vor dem Gehen noch ein kurzes Wort unter vier Augen.",
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Nächstes Mal geht es um zwei Gefühle, die man am liebsten versteckt: Scham und Schuld – und darum, wie man aus einer Scham-Spirale wieder herauskommt.",
+      "hintergrund": "Trauer ist die normale Antwort auf einen Verlust – nicht nur auf einen Todesfall, auch auf eine Trennung, einen Umzug oder das Ende einer Freundschaft. Stroebe und Schut (1999) zeigen mit dem dualen Prozessmodell, dass Trauernde zwischen zwei Seiten pendeln: dem Verlust (vermissen, erinnern, weinen) und der Wiederherstellung (Alltag bewältigen, Neues beginnen, Pausen vom Trauern). Dieses Hin und Her gilt als gesund; schwierig wird es, wenn jemand dauerhaft auf einer Seite festsitzt. Worden (2009) beschreibt Trauer nicht als feste Folge von Phasen, sondern als Aufgaben – dazu gehört, eine bleibende innere Verbindung zu finden und zugleich weiterzuleben. Für Jugendliche sind Freundinnen und Freunde dabei eine wichtige Stütze (Bagwell & Schmidt, 2011). Die Welle ist eine Achtsamkeitsübung aus dem DBT-Skillstraining (Linehan, 2015).",
+      "quellen": [
+        "Stroebe, M. & Schut, H. (1999). The dual process model of coping with bereavement: Rationale and description. Death Studies, 23(3), 197–224.",
+        "Worden, J. W. (2009). Grief Counseling and Grief Therapy (4th ed.). New York: Springer.",
+        "Bagwell, C. L. & Schmidt, M. E. (2011). Friendships in Childhood and Adolescence. New York: Guilford.",
+        "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford."
+      ],
+      "achtung": "Verluste sind in dieser Gruppe häufig und oft nicht bekannt. Niemanden nach eigenen Verlusten fragen und keine Erinnerungsübung mit persönlichen Inhalten machen. Wer gerade trauert, entscheidet nach einem Vorgespräch selbst über die Teilnahme und darf jederzeit zum Ruheplatz. Erzählt jemand von einem eigenen Verlust, würdigen, nicht vertiefen und noch am selben Tag ein Gespräch anbieten. Mehr Hilfe braucht es, wenn Trauer über Monate den Alltag lähmt, jemand kaum schläft oder isst, Alkohol oder Drogen nimmt, um nichts zu spüren, oder sagt, er wolle bei der verstorbenen Person sein: die Person ruhig ansprechen, nichts versprechen, was man nicht halten kann, SePAS oder Psychologin einbeziehen und die zuständige Leitung (Responsable) am selben Tag informieren. Bei Hinweisen auf Suizidgedanken sofort nach dem Schutzkonzept handeln; bei akuter Gefahr Notruf 112 und die Person nicht allein lassen. Nach der Einheit die Beobachtungen im Team besprechen und die Fragen aus der Box gemeinsam beantworten."
+    },
+    {
+      "id": "j3-e18",
+      "nr": 18,
+      "jahr": 3,
+      "modul": "j3-m5",
+      "titel": "Scham und Schuld",
+      "kurz": "Schuld sagt: Ich habe etwas falsch gemacht. Scham sagt: Ich bin falsch. Die Gruppe unterscheidet beides, findet Ausstiege aus der Scham-Spirale und übt Wiedergutmachung statt Selbstabwertung.",
+      "dauer": 100,
+      "ziele": [
+        "unterscheiden Schuld (Blick auf die Tat) und Scham (Blick auf die ganze Person) an Beispielen",
+        "prüfen, ob ein Gefühl zu den Fakten passt, und wissen, was dann jeweils hilft",
+        "finden Ausstiege aus der Scham-Spirale und spielen Wiedergutmachung statt Verstecken oder Angriff",
+        "üben eine freundliche innere Stimme für Momente, in denen Scham kommt"
+      ],
+      "material": [
+        "Gefühlsrad (A3), Wäscheklammern, Anspannungsskala 0–100",
+        "Zehn Satzkarten mit den Sätzen aus Schritt 3 und zwei Überschriftskarten: „Ich habe …“ und „Ich bin …“",
+        "Malerkrepp für die Spirale (draußen Kreide), sechs Gedankenkarten (Schritt 6) und leere Karten",
+        "Schülerblatt „Scham oder Schuld?“ für jede Person",
+        "Fragenbox mit den Fragen der letzten Einheit, im Team vorbesprochen",
+        "Taschentücher, Wasser, Plakat mit den Anlaufstellen",
+        "Skills-Pässe, Stempel, Imbiss und Getränke"
+      ],
+      "vorbereitung": [
+        "Die Fragen aus der Box im Team besprechen und kurze, sachliche Antworten vorbereiten. Fragen, die auf eine persönliche Not hindeuten, nicht in der Gruppe beantworten, sondern mit der zuständigen Leitung (Responsable) besprechen.",
+        "Rückmeldungen auf den Elternbrief durchsehen und wissen, wer heute besonders geschützt werden muss – etwa nach Mobbing, einer Bloßstellung im Netz oder einem Vorfall in der Schule. Beispiele, die einer echten Lage ähneln, austauschen.",
+        "Zweite Leitung und Ruheplatz wie in Einheit 17.",
+        "Satz- und Gedankenkarten schreiben; die Spirale erst in der Pause kleben."
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-scham-oder-schuld",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Gefühlsrad, Anspannung, ein kleiner Erfolg"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Rückblick, Fragen aus der Box, Rahmen"
+        },
+        {
+          "min": "15–27",
+          "phase": "input",
+          "titel": "Ich habe oder ich bin? Sätze sortieren"
+        },
+        {
+          "min": "27–45",
+          "phase": "uebung",
+          "titel": "Passt das Gefühl zu den Fakten?"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–72",
+          "phase": "aktiv",
+          "titel": "Die Scham-Spirale am Boden"
+        },
+        {
+          "min": "72–85",
+          "phase": "aktiv",
+          "titel": "Zurückspulen: wiedergutmachen statt verstecken"
+        },
+        {
+          "min": "85–95",
+          "phase": "skill",
+          "titel": "Skill: Aufrichten und die freundliche Stimme"
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Réckbléck, Anspannung, Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: Gefühlsrad, Anspannung, ein kleiner Erfolg",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Check-in wie gewohnt: Gefühlsrad und Anspannung von 0 bis 100, die Leitung beginnt. Wer mag, sagt dazu, was seit der letzten Einheit gut gelaufen ist – ein kleiner Erfolg reicht, etwa ein geschaffter Test oder ein gutes Training. Die Runde bleibt kurz, und niemand kommentiert die Zahlen der anderen.",
+          "sagen": [
+            "Gefühl, Zahl und, wenn ihr mögt, eine Sache, die diese Woche geklappt hat."
+          ],
+          "tipp": "Die Frage nach einem kleinen Erfolg ist in einer Einheit über Scham bewusst gewählt: Sie stärkt, bevor es um Fehler und Bloßstellung geht.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Rückblick, Fragen aus der Box, Rahmen",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "In zwei Sätzen an die Trauer-Einheit erinnern: Trauer pendelt, und beide Seiten gehören dazu. Dann die Fragen aus der Box vorlesen und so beantworten, wie es im Team vorbereitet wurde. Den Rahmen kurz erneuern – niemand erzählt Eigenes, „weiter“ ist erlaubt, der Ruheplatz ist offen, und wenn jemand in Gefahr ist, holt die Leitung Hilfe – und das Thema nennen.",
+          "sagen": [
+            "Heute geht es um zwei Gefühle, die fast jeder kennt und über die kaum jemand spricht: Scham und Schuld.",
+            "Wie immer gilt: Wir arbeiten mit ausgedachten Personen. Von euch muss niemand etwas erzählen."
+          ],
+          "tipp": "Liegt keine Frage in der Box, das gelassen sagen und die Box wieder hinstellen. Oft kommen Fragen erst, wenn die Gruppe gesehen hat, dass sie ernsthaft beantwortet werden."
+        },
+        {
+          "titel": "Ich habe oder ich bin? Sätze sortieren",
+          "dauer": 12,
+          "phase": "input",
+          "text": "Zwei Überschriftskarten auf den Tisch: „Ich habe …“ und „Ich bin …“. Reihum zieht jede Person eine Satzkarte (Liste), liest sie vor und legt sie unter eine Überschrift; die anderen dürfen widersprechen. Danach das Modell an die Tafel (Tabelle): Beide Gefühle tun weh, aber Schuld schaut auf eine Tat und Scham auf die ganze Person. Wer Schuld spürt, will etwas reparieren; wer Scham spürt, will verschwinden – oder schlägt um sich.",
+          "punkte": [
+            "Ich habe vergessen, meiner Mutter zu helfen, obwohl ich es versprochen hatte.",
+            "Ich bin so peinlich. Ich sollte gar nichts mehr sagen.",
+            "Ich habe den Ball ins Fenster der Turnhalle geschossen.",
+            "Ich bin einfach zu dumm für diese Schule.",
+            "Ich habe im Streit etwas Gemeines über Liams Mutter gesagt.",
+            "Ich bin hässlich auf dem Foto. Alle werden lachen.",
+            "Ich habe Samuel versetzt und nicht einmal abgesagt.",
+            "Ich bin eine Enttäuschung für meine Familie.",
+            "Ich habe im Praktikum einen Termin vergessen.",
+            "Ich bin halt der, der immer alles kaputtmacht."
+          ],
+          "tabelle": {
+            "spalten": [
+              "Merkmal",
+              "Schuld",
+              "Scham"
+            ],
+            "zeilen": [
+              [
+                "Blick",
+                "auf die Tat: „Ich habe …“",
+                "auf die ganze Person: „Ich bin …“"
+              ],
+              [
+                "Im Körper",
+                "Unruhe, schlechtes Gewissen, Stein im Magen",
+                "Hitze im Gesicht, klein werden, Blick nach unten"
+              ],
+              [
+                "Impuls",
+                "sich entschuldigen, etwas reparieren",
+                "verstecken, verschwinden – oder angreifen"
+              ],
+              [
+                "Führt oft zu",
+                "Klärung, Vertrauen, Lernen",
+                "Rückzug, Streit, noch mehr Scham"
+              ]
+            ]
+          },
+          "sagen": [
+            "Ich habe einen Fehler gemacht – oder: Ich bin ein Fehler. Merkt ihr, wie viel schwerer der zweite Satz wiegt?",
+            "Scham ist das Gefühl, das sich am besten versteckt. Manchmal sieht sie aus wie Coolsein oder wie Wut."
+          ],
+          "tipp": "Die Leitung darf ein harmloses eigenes Beispiel erzählen, etwa: „Ich bin einmal vor der ganzen Klasse gestolpert und wollte im Boden versinken.“ Das zeigt, dass Scham alle kennen – ohne dass die Jugendlichen nachziehen müssen.",
+          "wennEsKippt": "Wird gestichelt („Das bist ja du“), sofort und ruhig anhalten: Genau so entsteht Scham. Auf den Gruppenvertrag zeigen und mit der nächsten Karte weitermachen. Mit nur zwei Jugendlichen zieht jede Person mehrere Karten."
+        },
+        {
+          "titel": "Passt das Gefühl zu den Fakten?",
+          "dauer": 18,
+          "phase": "uebung",
+          "text": "Das Blatt austeilen und die beiden Kästen oben gemeinsam lesen. Dann den Merke-Kasten erklären: Schuld passt, wenn man wirklich jemandem geschadet hat – dann hilft Wiedergutmachen, nicht Selbstbestrafung. Scham passt nicht, wenn man nichts Falsches getan hat, etwa nach Auslachen wegen eines Akzents, der Kleidung oder der Familie – dann hilft, sich aufzurichten und nicht zu verstecken. Aufgabe 1 allein, danach zu zweit vergleichen und strittige Fälle in der Gruppe besprechen.",
+          "sagen": [
+            "Yusuf wird wegen seines Akzents ausgelacht. Hat er etwas falsch gemacht? Und was hilft ihm dann?",
+            "Rafael wurde beim Spicken erwischt. Hier passt die Schuld. Was kann er tun, statt sich zu verstecken?"
+          ],
+          "tipp": "Die Frage „Passt das Gefühl zu den Fakten?“ stammt aus dem DBT-Skillstraining. Sie entlastet besonders Jugendliche, die sich für Dinge schämen, für die sie nichts können.",
+          "wennEsKippt": "Sagt jemand „Bei mir passt die Scham immer“, nicht diskutieren, sondern ernst nehmen: „Das klingt nach einem sehr strengen inneren Richter. Darüber reden wir gleich noch.“ Nach der Einheit unter vier Augen nachfragen.",
+          "blatt": "skills-scham-oder-schuld"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Imbiss, das Thema ruht. Die Leitung achtet darauf, wer still ist, und bleibt ansprechbar. Die zweite Leitung klebt in der Zeit die Spirale."
+        },
+        {
+          "titel": "Die Scham-Spirale am Boden",
+          "dauer": 12,
+          "phase": "aktiv",
+          "text": "Mit Malerkrepp ist eine große Spirale auf den Boden geklebt. Die Leitung liest die Geschichte von Mathis (Aufgabe 2) und gibt die sechs Gedankenkarten (Liste) gemischt in die Gruppe; gemeinsam legen die Jugendlichen sie von außen nach innen auf die Spirale. Dann schreiben Paare auf leere Karten Ausstiege – was Mathis an dieser Stelle denken oder tun könnte – und legen sie neben die passende Windung. Zum Schluss geht eine freiwillige Person langsam nach innen und verlässt die Spirale am ersten Ausstieg; alle übertragen zwei Ausstiege in Aufgabe 2.",
+          "punkte": [
+            "Ich hab einen Screenshot aus dem Chat mit Zoé in die Klassengruppe gestellt.",
+            "Zoé schreibt: „Warum machst du so was?“ Alle lesen mit.",
+            "Ich bin echt ein mieser Mensch.",
+            "Egal. War doch nur Spaß. Ich blockier sie einfach.",
+            "Morgen redet keiner mehr mit mir. Ich bleib zu Hause.",
+            "Jetzt reden erst recht alle über mich."
+          ],
+          "sagen": [
+            "Wo dreht sich die Spirale nach innen – und wo könnte Mathis aussteigen?",
+            "Aussteigen heißt nicht, dass alles gut ist. Es heißt: Ich höre auf, mich kleinzumachen, und fange an, etwas zu tun."
+          ],
+          "tipp": "Oft genannte Ausstiege: benennen („Das ist Scham“), Tat und Person trennen („Ich habe Mist gebaut, aber ich bin kein Mist“), mit einer Vertrauensperson reden, Zoé ansprechen, den Screenshot löschen und richtigstellen. Bei wenig Platz liegt die Spirale auf einem Tisch, und eine Spielfigur geht den Weg.",
+          "blatt": "skills-scham-oder-schuld"
+        },
+        {
+          "titel": "Zurückspulen: wiedergutmachen statt verstecken",
+          "dauer": 13,
+          "phase": "aktiv",
+          "text": "Drei kurze Szenen (Tabelle), jede wird zweimal gespielt. Zuerst spielt die Leitung die Scham-Version etwa 30 Sekunden lang: verstecken, angreifen oder sich kleinmachen. Dann ruft die Gruppe „Zurückspulen“, alle machen die Geste einer Rücklauftaste, und zwei Jugendliche spielen die Szene neu – mit einer Schuld, die handelt. Das Gegenüber spielt die zweite Leitung, sonst steht dafür ein leerer Stuhl. Nach jeder Szene kurz fragen, was sich verändert hat; zum Schluss füllen alle Aufgabe 3 für Mathis aus.",
+          "tabelle": {
+            "spalten": [
+              "Szene",
+              "Scham-Version (Leitung)",
+              "Schuld, die handelt"
+            ],
+            "zeilen": [
+              [
+                "Rafael wurde beim Spicken erwischt. Die Lehrerin will nach der Stunde mit ihm reden.",
+                "„Mir doch egal, Ihre Tests sind eh unfair.“ Er geht einfach.",
+                "„Ja, das war ein Spickzettel. Das war unfair. Was kann ich jetzt tun?“"
+              ],
+              [
+                "Mathis hat den Screenshot geteilt. Im Bus setzt sich Zoé neben ihn.",
+                "„Chill mal, war doch nur Spaß.“ Er setzt die Kopfhörer auf.",
+                "„Ich hab ihn gelöscht und schreib in die Gruppe, dass es falsch war. Es tut mir leid.“"
+              ],
+              [
+                "Inês hat im Praktikum einen Kundentermin vergessen. Der Chef ist verärgert.",
+                "„Ich bin zu blöd für alles.“ Am nächsten Tag meldet sie sich krank.",
+                "„Das war mein Fehler. Soll ich die Kundin anrufen? Ab jetzt trage ich Termine sofort ein.“"
+              ]
+            ]
+          },
+          "sagen": [
+            "Was war in der zweiten Version anders – für Rafael und für die Lehrerin?",
+            "Eine gute Entschuldigung hat kein „aber“ und kein „falls“."
+          ],
+          "tipp": "Die Scham-Version spielt bewusst die Leitung: So muss niemand vor der Gruppe das Kleinmachen zeigen. Wer nicht spielen möchte, führt Regie oder ruft „Zurückspulen“. Mit nur zwei Jugendlichen spielt die Leitung das Gegenüber, und beide wechseln sich ab.",
+          "wennEsKippt": "Rutscht eine Szene ins Übertreiben ab, das Lachen zulassen und dann eine dritte, ernsthafte Version spielen lassen. Wirkt eine Szene für jemanden zu nah, sie ohne Aufhebens überspringen oder durch eine andere ersetzen.",
+          "blatt": "skills-scham-oder-schuld"
+        },
+        {
+          "titel": "Skill: Aufrichten und die freundliche Stimme",
+          "dauer": 10,
+          "phase": "skill",
+          "text": "Scham macht klein: Der Kopf sinkt, die Schultern fallen nach vorn, der Blick geht zu Boden. Deshalb beginnt dieser Skill im Körper. Alle stehen auf, nehmen 20 Sekunden lang die Scham-Haltung ein und richten sich dann auf: Füße fest, Rücken lang, Schultern locker nach hinten, Blick nach vorn. Danach im Sitzen die drei Sätze der freundlichen Stimme (Liste); wer mag, legt dabei eine Hand auf den Arm oder auf die Brust. Zum Schluss fragen: Wie fühlt sich die zweite Haltung an – und welcher Satz passt für euch?",
+          "punkte": [
+            "Das ist gerade schwer. – Ich merke, was los ist.",
+            "So etwas passiert anderen auch. – Ich bin damit nicht allein.",
+            "Was würde ich einer Freundin oder einem Freund jetzt sagen? – Genau das sage ich mir."
+          ],
+          "sagen": [
+            "Scham will, dass ihr euch versteckt. Aufrichten ist das Gegenteil – nicht, weil alles egal ist, sondern weil ihr mehr seid als ein Fehler.",
+            "Redet mit euch so, wie ihr mit einem guten Freund reden würdet, dem das passiert ist."
+          ],
+          "tipp": "Die Hand auf der Brust ist freiwillig; manche finden sie unangenehm, und die Sätze wirken auch ohne. Wer den inneren Freund aus Kursjahr 2 kennt, erkennt die Stimme wieder."
+        },
+        {
+          "titel": "Réckbléck, Anspannung, Skills-Pass",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Jede Person ergänzt still Aufgabe 4 auf dem Blatt; das bleibt privat. Dann Blitzlicht: ein Satz gegen die Scham, den man sich selbst sagen kann – oder „weiter“. Check-out mit der Anspannung von 0 bis 100 und Eintrag in den Skills-Pass. Die Fragenbox steht an der Tür, und die Leitung bleibt nach der Einheit noch eine Viertelstunde.",
+          "sagen": [
+            "Ein Satz, den ihr euch sagen könnt, wenn Scham kommt?",
+            "Und eure Zahl zum Schluss? Die Box steht an der Tür, falls euch noch eine Frage einfällt."
+          ],
+          "tipp": "Wer mit einer deutlich höheren Zahl geht, als er gekommen ist, bekommt noch vor dem Gehen ein kurzes Wort unter vier Augen.",
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Nächstes Mal geht es um ein Gefühl, das viele kennen und kaum jemand zugibt: Einsamkeit – und darum, was man dagegen tun kann, für sich und für andere.",
+      "hintergrund": "Tangney und Dearing (2002) unterscheiden zwei selbstbezogene Gefühle: Bei Schuld richtet sich der Blick auf eine bestimmte Tat („Ich habe etwas Schlechtes getan“), bei Scham auf die ganze Person („Ich bin schlecht“). Schuld geht häufiger mit Einfühlung und dem Wunsch einher, etwas wiedergutzumachen. Scham drängt zu Verstecken, Leugnen oder Angriff und hängt stärker mit Rückzug, Niedergeschlagenheit und Aggression zusammen. Ziel ist deshalb nicht, Schuld wegzureden, sondern Scham in handelnde Schuld zu verwandeln. Die Frage, ob ein Gefühl zu den Fakten passt, und das Handeln gegen den Gefühlsimpuls stammen aus dem DBT-Skillstraining (Linehan, 2015). Selbstmitgefühl verringert Selbstabwertung, ohne Fehler zu beschönigen (Neff, 2003). Die Wiedergutmachung folgt den Fragen der restaurativen Praxis: Wer wurde verletzt, was braucht er, wer muss was tun (Zehr, 2002)?",
+      "quellen": [
+        "Tangney, J. P. & Dearing, R. L. (2002). Shame and Guilt. New York: Guilford.",
+        "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford.",
+        "Neff, K. D. (2003). Self-compassion: An alternative conceptualization of a healthy attitude toward oneself. Self and Identity, 2(2), 85–101.",
+        "Zehr, H. (2002). The Little Book of Restorative Justice. Intercourse, PA: Good Books."
+      ],
+      "achtung": "Scham hängt oft an Themen, die nicht in die Gruppe gehören: Gewalt, sexuelle Übergriffe, Mobbing, Bloßstellung im Netz, Armut, Körper, Familiengeheimnisse. Deshalb keine eigenen Beispiele erfragen und nur die vorgegebenen Szenen spielen. Deutet jemand an, sich für etwas zu schämen, das ihm angetan wurde, oder fallen Sätze wie „Ich bin es nicht wert“: nicht in der Gruppe vertiefen, noch am selben Tag ruhig ansprechen, nichts versprechen, was man nicht halten kann, nach dem Schutzkonzept handeln und die zuständige Leitung (Responsable) informieren. Bei anhaltender Selbstabwertung, Selbstbestrafung oder Hinweisen auf Selbstverletzung oder Suizidgedanken die Person nicht allein lassen, die Responsable am selben Tag informieren und bei akuter Gefahr den Notruf 112 wählen. Nach der Einheit die Beobachtungen im Team besprechen."
+    },
+    {
+      "id": "j3-e19",
+      "nr": 19,
+      "jahr": 3,
+      "modul": "j3-m5",
+      "titel": "Einsamkeit",
+      "kurz": "Allein sein ist eine Lage, einsam sein ein Gefühl. Die Gruppe versteht, wie Einsamkeit sich selbst verstärkt, übt, Gespräche anzufangen und andere einzubeziehen, und plant einen kleinen Schritt.",
+      "dauer": 100,
+      "ziele": [
+        "unterscheiden Alleinsein und Einsamkeit und verstehen Einsamkeit als häufiges Signal, nicht als Makel",
+        "beschreiben den Einsamkeits-Kreislauf und prüfen typische einsame Gedanken",
+        "üben, ein Gespräch anzufangen und andere im Alltag einzubeziehen",
+        "planen einen kleinen Schritt aus der Einsamkeit – für sich oder für jemand anderen"
+      ],
+      "material": [
+        "Gefühlsrad (A3), Wäscheklammern, Anspannungsskala 0–100",
+        "Malerkrepp für das Vier-Felder-Kreuz, vier A4-Schilder: „allein“, „mit anderen“, „zufrieden“, „einsam“",
+        "Karten mit den Gesprächsfragen für das Kugellager (Schritt 6)",
+        "Vier Stationskarten (A4) mit den Situationen aus Schritt 7, ein leerer Stuhl je Station",
+        "Plakat „Brückensätze“ und dicke Stifte",
+        "Schülerblatt „Allein oder einsam?“ für jede Person",
+        "Für den Skill: Kopfhörer, Mandarinen (Allergien beachten), Papier und Stifte",
+        "Fragenbox, Plakat mit den Anlaufstellen",
+        "Skills-Pässe, Stempel, Imbiss und Getränke"
+      ],
+      "vorbereitung": [
+        "Die Fragen aus der Box im Team besprechen und Antworten vorbereiten.",
+        "Im Team klären, ob jemand in der Gruppe gerade ausgegrenzt wird, neu in Luxemburg ist oder sich stark zurückzieht. Beispiele austauschen, die einer echten Lage zu nahe kommen, und Paare auslosen statt frei wählen lassen.",
+        "Zweite Leitung und Ruheplatz wie in den Einheiten 17 und 18.",
+        "Das Kreuz kleben und die vier Stationen im Raum oder im Flur vorbereiten."
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-allein-oder-einsam",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Wo bin ich gern allein, wo gern mit anderen?"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Rückblick Scham, Fragen aus der Box"
+        },
+        {
+          "min": "15–27",
+          "phase": "input",
+          "titel": "Allein oder einsam? Das Vier-Felder-Spiel"
+        },
+        {
+          "min": "27–45",
+          "phase": "uebung",
+          "titel": "Der Einsamkeits-Kreislauf und einsame Gedanken"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–70",
+          "phase": "aktiv",
+          "titel": "Kugellager: Gespräche anfangen"
+        },
+        {
+          "min": "70–85",
+          "phase": "aktiv",
+          "titel": "Einbeziehen: vier Alltags-Stationen"
+        },
+        {
+          "min": "85–95",
+          "phase": "skill",
+          "titel": "Skill: Eine Sache ganz – allein, aber gut"
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Mein kleiner Schritt, Anspannung, Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: Wo bin ich gern allein, wo gern mit anderen?",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Check-in mit Gefühlsrad und Anspannung von 0 bis 100, die Leitung beginnt. Dazu eine leichte Frage, freiwillig: Wo bist du gern allein – und wo gern mit anderen? Ein Ort reicht, etwa das eigene Zimmer, der Fußballplatz oder der Bus mit Musik. Die Antworten werden nicht kommentiert.",
+          "sagen": [
+            "Gefühl, Zahl, und wenn ihr mögt: Wo seid ihr gern allein – und wo gern mit anderen?"
+          ],
+          "tipp": "Die Frage macht nebenbei den Unterschied des Tages spürbar: Alleinsein kann guttun. Wer nur einen Ort nennt, hat genug gesagt.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Rückblick Scham, Fragen aus der Box",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "In zwei Sätzen an die letzte Einheit erinnern: Schuld will reparieren, Scham will verstecken – und aus der Scham-Spirale kann man aussteigen. Die Fragen aus der Box kurz beantworten, wie im Team vorbereitet. Den Rahmen in einem Satz erneuern und das Thema nennen.",
+          "sagen": [
+            "Letzte Woche ging es um Scham. Heute geht es um ein Gefühl, für das sich viele schämen, obwohl fast jeder es kennt: Einsamkeit.",
+            "Wie immer: ausgedachte Personen, „weiter“ ist erlaubt, der Ruheplatz ist offen – und wenn jemand in Gefahr ist, hole ich Hilfe."
+          ]
+        },
+        {
+          "titel": "Allein oder einsam? Das Vier-Felder-Spiel",
+          "dauer": 12,
+          "phase": "input",
+          "text": "Mit Malerkrepp ein großes Kreuz auf den Boden kleben und die Felder beschriften: links „allein“, rechts „mit anderen“, vorn „zufrieden“, hinten „einsam“. Die Leitung liest Situationen vor (Tabelle), und alle stellen sich in das Feld, in dem die Person wohl ist; Zwischenpositionen sind erlaubt. Nach jeder Situation fragt die Leitung eine Person, warum sie dort steht. Zum Schluss hält sie fest: Alleinsein beschreibt die Lage, Einsamkeit ein Gefühl – die Lücke zwischen der Nähe, die man sich wünscht, und der Nähe, die man hat.",
+          "tabelle": {
+            "spalten": [
+              "Situation",
+              "Feld"
+            ],
+            "zeilen": [
+              [
+                "Luca zeichnet am Samstag allein am See, Kopfhörer auf. Er hat sich die ganze Woche darauf gefreut.",
+                "allein, zufrieden"
+              ],
+              [
+                "Emma ist auf einer Party mit 30 Leuten. Alle stehen in ihren Gruppen, sie kennt niemanden richtig.",
+                "mit anderen, einsam"
+              ],
+              [
+                "Jang zockt jeden Abend online mit seinem Team. In der Schule redet kaum jemand mit ihm.",
+                "je nach Ort verschieden"
+              ],
+              [
+                "Amira ist vor drei Monaten nach Luxemburg gezogen. In der Pause versteht sie die Witze auf Luxemburgisch noch nicht und lacht einfach mit.",
+                "mit anderen, einsam"
+              ],
+              [
+                "Diogo ist am Wochenende allein zu Hause und telefoniert stundenlang mit seinem besten Freund.",
+                "allein, zufrieden"
+              ],
+              [
+                "Sofia sitzt beim Familienessen, alle reden durcheinander. Sie denkt: Niemand weiß, wie es mir wirklich geht.",
+                "mit anderen, einsam"
+              ]
+            ]
+          },
+          "sagen": [
+            "In welchem Feld steht Emma – obwohl dreißig Leute um sie herum sind?",
+            "Einsamkeit hat nichts damit zu tun, wie viele Kontakte jemand hat. Es geht darum, ob die Nähe reicht, die man hat."
+          ],
+          "tipp": "Die Aufstellung zeigt ohne ein persönliches Wort: Einsamkeit kann jeden treffen, auch in einer vollen Kantine. Mit nur zwei Jugendlichen die vier Felder auf ein A3-Blatt zeichnen und mit Spielfiguren arbeiten.",
+          "wennEsKippt": "Sagt jemand bei einer Situation „Das bin ja ich“, nicht darauf eingehen und freundlich weitermachen; nach der Einheit unter vier Augen nachfragen. Fällt ein Wort wie „Opfer“, die Runde kurz anhalten und fragen, was die Person in der Situation wohl gerade braucht."
+        },
+        {
+          "titel": "Der Einsamkeits-Kreislauf und einsame Gedanken",
+          "dauer": 18,
+          "phase": "uebung",
+          "text": "Das Blatt austeilen und den Text oben lesen: Einsamkeit ist ein Signal wie Hunger, kein Makel. Dann den Kreislauf an Jangs Beispiel durchgehen (Aufgabe 1): Wer sich einsam fühlt, achtet stärker auf Ablehnung, deutet unklare Signale negativ und zieht sich zurück – und die anderen kommen seltener. Gemeinsam überlegen, wo Jang aussteigen könnte; jede Person trägt zwei Ideen ein. Danach Aufgabe 2 allein: zwei einsame Gedanken aus dem Wortspeicher prüfen und anschließend zu zweit vergleichen.",
+          "sagen": [
+            "Hunger sagt: Du brauchst Essen. Einsamkeit sagt: Du brauchst Menschen. Beides ist kein Fehler, sondern ein Signal.",
+            "Wo könnte Jang den Kreis durchbrechen – beim Gedanken oder beim Verhalten?"
+          ],
+          "tipp": "Den Kreislauf nicht als Vorwurf erklären („Du ziehst dich ja selbst zurück“), sondern als Falle, in die jeder geraten kann. Wer sie kennt, kann an einer Stelle aussteigen, statt an allem zu zweifeln.",
+          "wennEsKippt": "Kommt der Einwand „Die anderen sind aber wirklich gemein“, das ernst nehmen: Manchmal stimmt der Gedanke. Dann geht es nicht um Gedanken prüfen, sondern um Schutz und Hilfe – das Thema nach der Einheit einzeln aufgreifen und bei Mobbing nach dem Vorgehen der Schule handeln.",
+          "blatt": "skills-allein-oder-einsam"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Imbiss, das Thema ruht. Die Leitung achtet darauf, dass niemand allein am Rand steht, ohne es zum Thema zu machen – etwa, indem sie selbst eine Frage in die Runde gibt. Die zweite Leitung baut die Stationen auf."
+        },
+        {
+          "titel": "Kugellager: Gespräche anfangen",
+          "dauer": 10,
+          "phase": "aktiv",
+          "text": "Zwei Kreise: Die Hälfte der Gruppe steht innen und schaut nach außen, die andere Hälfte steht ihr gegenüber. Die Leitung liest eine Gesprächsfrage vor (Liste); die Paare haben zwei Minuten und üben dabei den Gesprächsfaden: Frage – Antwort – Nachfrage. Dann rückt der äußere Kreis eine Person weiter, und es gibt eine neue Frage. Nach drei Runden kurz auswerten: Was macht ein Gespräch leicht?",
+          "punkte": [
+            "Was war das Beste an deinem Wochenende?",
+            "Welche Serie, welches Spiel oder welche Musik kannst du gerade empfehlen – und warum?",
+            "Was würdest du im Lycée ändern, wenn du einen Tag lang Direktorin oder Direktor wärst?",
+            "Welches Essen könntest du jeden Tag essen?",
+            "Was kannst du, das man dir nicht sofort ansieht?"
+          ],
+          "sagen": [
+            "Die Nachfrage ist der Faden: „Echt? Wie war das?“ zeigt, dass ihr zuhört.",
+            "Ein Gespräch muss nicht tief sein, um gut zu sein."
+          ],
+          "tipp": "Bei ungerader Zahl macht die Leitung mit. Mit nur zwei Jugendlichen sitzen beide mit den Leitungen im Viereck und wechseln die Partner reihum; bei schönem Wetter geht das Kugellager auch draußen.",
+          "wennEsKippt": "Stockt ein Paar, darf es eine Frage von der Karte ablesen oder die Leitung um einen Anstoß bitten. Wer nicht mitmachen möchte, übernimmt die Zeit und das Signal zum Weiterrücken."
+        },
+        {
+          "titel": "Einbeziehen: vier Alltags-Stationen",
+          "dauer": 15,
+          "phase": "aktiv",
+          "text": "Vier Stationen im Raum oder im Flur, an jeder eine Situationskarte (Tabelle) und ein leerer Stuhl für die Person, die allein ist. Zu zweit gehen die Jugendlichen von Station zu Station (je drei Minuten): Karte lesen, einen ersten Satz oder eine kleine Tat überlegen und die Szene kurz anspielen, zum leeren Stuhl oder zur Leitung. Den besten Einstieg schreibt jedes Paar auf das Plakat „Brückensätze“. Zum Schluss liest die Leitung die Sätze vor, und jede Person überträgt ihre zwei Favoriten in Aufgabe 3.",
+          "tabelle": {
+            "spalten": [
+              "Station",
+              "Situation",
+              "Idee, falls nichts kommt"
+            ],
+            "zeilen": [
+              [
+                "Kantine",
+                "Elias sitzt jeden Mittag allein am Ende des Tisches und schaut aufs Handy.",
+                "„Ist hier noch frei?“ – und eine Frage zum Essen"
+              ],
+              [
+                "Gruppenarbeit",
+                "Die Lehrerin sagt: Bildet Vierergruppen. Chiara bleibt wie immer übrig.",
+                "„Chiara, komm zu uns, wir sind erst drei.“"
+              ],
+              [
+                "Bus",
+                "Amira ist neu und fährt jeden Tag dieselbe Strecke wie du. Sie spricht noch kaum Luxemburgisch.",
+                "Auf Französisch oder Englisch fragen, wo sie aussteigt."
+              ],
+              [
+                "Klassenchat",
+                "Samuel schreibt selten etwas, und wenn, antwortet niemand.",
+                "Ihm direkt antworten oder ihn zum Fußball am Samstag einladen."
+              ]
+            ]
+          },
+          "sagen": [
+            "Es geht nicht um den perfekten Spruch. Ein ernst gemeinter halber Satz reicht.",
+            "Wie hat es sich angefühlt, als Erste oder Erster auf jemanden zuzugehen – und wie wäre es für Elias?"
+          ],
+          "tipp": "Einbeziehen braucht keine große Geste: ein Platz, der frei gemacht wird, eine Antwort im Chat. Bei wenig Energie wird an den Stationen nur gesprochen, nicht gespielt.",
+          "wennEsKippt": "Kommen Sprüche wie „Der ist halt komisch, selber schuld“, das nicht übergehen: fragen, was Elias wohl erlebt hat, bevor er allein saß, und die Station ernsthaft neu beginnen. Mit nur zwei Jugendlichen spielt die Leitung die Person, die allein ist.",
+          "blatt": "skills-allein-oder-einsam"
+        },
+        {
+          "titel": "Skill: Eine Sache ganz – allein, aber gut",
+          "dauer": 10,
+          "phase": "skill",
+          "text": "Alleinsein kann guttun, wenn man es gut gestaltet: zum Auftanken, zum Nachdenken, für eigene Interessen. Jede Person sucht sich einen Platz mit etwas Abstand und macht fünf Minuten lang eine einzige Sache mit ganzer Aufmerksamkeit, ohne Handy (Liste). Schweifen die Gedanken ab, holt man sie freundlich zurück. Danach kurz in der Runde: Wie war das – allein, aber nicht einsam?",
+          "punkte": [
+            "ein Lied mit Kopfhörern hören und nur auf ein Instrument achten",
+            "eine Mandarine langsam schälen und essen: Geruch, Farbe, Geschmack",
+            "aus dem Fenster schauen und alles zeichnen, was sich bewegt",
+            "den eigenen Namen in fünf verschiedenen Schriften schreiben"
+          ],
+          "sagen": [
+            "Eine Sache, ganz. Wenn die Gedanken wandern, holt sie freundlich zurück – das ist die eigentliche Übung.",
+            "Gutes Alleinsein ist ein Skill. Wer ihn kann, muss nicht jede Lücke mit dem Handy füllen."
+          ],
+          "tipp": "Wer mit sich allein unruhig wird, darf die Sache wechseln oder die Übung abkürzen. Das ist kein Scheitern, sondern ein Hinweis, dass Alleinsein Übung braucht."
+        },
+        {
+          "titel": "Mein kleiner Schritt, Anspannung, Skills-Pass",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Jede Person füllt still Aufgabe 4 aus: ein kleiner Schritt für die nächste Woche, für sich oder für jemand anderen; er bleibt privat. Blitzlicht: ein Brückensatz, der euch gefallen hat. Check-out mit der Anspannung und Eintrag in den Skills-Pass. Dann das Thema der nächsten Einheit ruhig und offen ankündigen (Ausblick) und anbieten, vorher schon darüber zu sprechen.",
+          "sagen": [
+            "Welcher Brückensatz vom Plakat gefällt euch am besten?",
+            "Und eure Zahl zum Schluss? Wer vor dem nächsten Mal etwas zum Thema sagen möchte, kann mich jederzeit ansprechen."
+          ],
+          "tipp": "Die Ankündigung gehört zum Schutz: Wer weiß, was kommt, kann sich vorbereiten oder sich vorher melden. Reaktionen darauf aufmerksam wahrnehmen und im Team besprechen.",
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Nächstes Mal schließen wir das Modul ab. Es geht um Momente, in denen es jemandem richtig schlecht geht – auch um Gedanken, sich zu verletzen oder nicht mehr leben zu wollen. Wir reden darüber, weil Reden hilft, und jede Person baut sich einen privaten Plan für schwere Momente.",
+      "hintergrund": "Einsamkeit ist das Gefühl, dass die eigenen Beziehungen nicht so nah oder so zahlreich sind wie gewünscht; Alleinsein beschreibt nur die äußere Lage. Im Jugendalter ist Einsamkeit weit verbreitet, gerade weil Beziehungen zu Gleichaltrigen dann besonders wichtig werden (Qualter et al., 2015). Hawkley und Cacioppo (2010) verstehen sie als Signal, das – ähnlich wie Hunger – dazu drängt, Verbindungen wiederherzustellen. Hält sie an, achten Einsame stärker auf mögliche Zurückweisung, deuten unklare Signale negativer und ziehen sich zurück, was die Einsamkeit verstärkt. Am besten wirken Programme, die an solchen Denkmustern ansetzen (Masi et al., 2011); deshalb verbindet die Einheit das Prüfen einsamer Gedanken mit kleinen Schritten. Schon kurzes Ausgeschlossenwerden schmerzt (Williams, 2007), umgekehrt zählen kleine Zeichen der Einbeziehung. Der Skill folgt der Achtsamkeit „eine Sache zur Zeit“ aus dem DBT-Skillstraining (Linehan, 2015).",
+      "quellen": [
+        "Qualter, P., Vanhalst, J., Harris, R., Van Roekel, E., Lodder, G., Bangee, M., Maes, M. & Verhagen, M. (2015). Loneliness across the life span. Perspectives on Psychological Science, 10(2), 250–264.",
+        "Hawkley, L. C. & Cacioppo, J. T. (2010). Loneliness matters: A theoretical and empirical review of consequences and mechanisms. Annals of Behavioral Medicine, 40(2), 218–227.",
+        "Masi, C. M., Chen, H.-Y., Hawkley, L. C. & Cacioppo, J. T. (2011). A meta-analysis of interventions to reduce loneliness. Personality and Social Psychology Review, 15(3), 219–266.",
+        "Williams, K. D. (2007). Ostracism. Annual Review of Psychology, 58, 425–452.",
+        "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford."
+      ],
+      "achtung": "Einsamkeit hängt oft mit Mobbing, Ausgrenzung, Umzug, Flucht, sozialer Angst oder Niedergeschlagenheit zusammen – und kann in dieser Gruppe selbst spürbar sein. Niemanden fragen, ob er einsam ist, keine Übung, bei der jemand ausgeschlossen wird oder übrig bleibt, Paare auslosen. Wird jemand in der Gruppe selbst ausgegrenzt, nicht öffentlich klären, sondern nach der Einheit mit der Person sprechen und nach dem Vorgehen gegen Mobbing handeln. Bei anhaltendem Rückzug, Hoffnungslosigkeit oder Sätzen wie „Mich würde eh keiner vermissen“: die Person am selben Tag ruhig ansprechen und direkt fragen, wie es ihr geht, nichts versprechen, was man nicht halten kann, nach dem Schutzkonzept handeln und die zuständige Leitung (Responsable) informieren; bei Hinweisen auf Suizidgedanken die Person nicht allein lassen, bei akuter Gefahr Notruf 112. Reaktionen auf die Ankündigung der nächsten Einheit im Team besprechen."
+    },
+    {
+      "id": "j3-e20",
+      "nr": 20,
+      "jahr": 3,
+      "modul": "j3-m5",
+      "titel": "Wenn es mir schlecht geht – mein Sicherheitsplan",
+      "kurz": "Suizidgedanken und Selbstverletzung kommen vor – und es gibt Hilfe. Die Gruppe spricht sachlich darüber, frischt auf, was bei Sorge um andere zu tun ist, und jede Person baut privat ihren Sicherheitsplan.",
+      "dauer": 100,
+      "ziele": [
+        "wissen, dass Suizidgedanken und Selbstverletzung bei Jugendlichen vorkommen, dass Reden darüber nicht schadet und dass Hilfe wirkt",
+        "erstellen privat einen persönlichen Sicherheitsplan in sechs Schritten, aufbauend auf Skills-Koffer und Ampelplan",
+        "kennen die Hilfe in Luxemburg – Kanner- a Jugendtelefon 116 111, SOS Détresse 45 45 45, Notruf 112, SePAS – und haben zwei Nummern im Handy oder auf ihrer Karte",
+        "wissen, was sie tun, wenn sie sich um jemanden Sorgen machen: ansprechen, zuhören, Erwachsene dazuholen, bei Gefahr 112"
+      ],
+      "material": [
+        "Gefühlsrad (A3), Wäscheklammern, Anspannungsskala 0–100, kleine Zettel für die Zahl",
+        "Schülerblätter „Darüber reden hilft“ und „Mein Sicherheitsplan“ für jede Person, dazu Klemmbretter und Umschläge",
+        "Eigene Ampelpläne aus Kursjahr 1, falls vorhanden; für Station 2 zwei Exemplare des Blatts „Mein Skills-Koffer und Ampelplan“ als Ideenquelle",
+        "Sieben Stationsschilder (A4) mit Frage und Ideen aus Schritt 7",
+        "Für Station 2: Kühlpacks, Knetbälle, Igelbälle, starke Pfefferminzbonbons, Kopfhörer (Allergien beachten)",
+        "Karten im Kreditkartenformat mit den Hilfenummern, eine pro Person",
+        "Gleich aussehende Kärtchen für alle und eine verschließbare Box (Schritt 10)",
+        "Fragenbox, Taschentücher, Wasser, vorbereiteter Ruheplatz",
+        "Plakat mit den Anlaufstellen, Kontaktdaten des SePAS und die Zeiten, zu denen die Leitung erreichbar ist",
+        "Skills-Bücher mit einer neuen Modulseite für jede Person, Skills-Pässe, Stempel",
+        "Imbiss und Getränke, leise Musik"
+      ],
+      "vorbereitung": [
+        "Mindestens eine Woche vorher die zuständige Leitung (Responsable) über Tag und Uhrzeit informieren und klären, wer am selben Tag für ein dringendes Gespräch erreichbar ist. SePAS oder Psychologin ebenfalls informieren.",
+        "Prüfen, ob der Elternbrief zum Modul angekommen ist, und Rückmeldungen beachten. Nach Hausregel kann ein kurzer eigener Hinweis zu dieser Einheit dazukommen.",
+        "Im Team klären, ob jemand in der Gruppe gerade in einer Krise ist, sich kürzlich selbst verletzt hat oder einen Suizid im Umfeld erlebt hat. Diese Jugendlichen vorher einzeln ansprechen: Sie entscheiden mit, ob und wie sie teilnehmen. Für sie ist der Sicherheitsplan im Einzelgespräch mit einer Fachperson oft der bessere Rahmen (Toolbox-Blatt „Mein Sicherheitsplan“).",
+        "Zu zweit leiten und die Rollen verteilen: Wer leitet, wer beobachtet und geht mit, wenn jemand den Raum verlässt?",
+        "Den Ruheplatz vorbereiten (Sitzplatz, Wasser, Taschentücher) und nach der Einheit 30 Minuten für Nachgespräche und die Nachbesprechung im Team freihalten.",
+        "Die Stationen aufbauen und die Skills an Station 2 selbst ausprobieren. Die Fragen aus der Box im Team vorbereiten."
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-darueber-reden",
+        "skills-koffer-ampelplan",
+        "skills-sicherheitsplan",
+        "skills-buch",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Ruhig ankommen: Gefühlsrad und Anspannung"
+        },
+        {
+          "min": "10–20",
+          "phase": "bruecke",
+          "titel": "Worum es heute geht – und unser Rahmen"
+        },
+        {
+          "min": "20–32",
+          "phase": "input",
+          "titel": "Darüber reden hilft: Fakten statt Mythen"
+        },
+        {
+          "min": "32–39",
+          "phase": "uebung",
+          "titel": "Wenn ich mir Sorgen um jemanden mache"
+        },
+        {
+          "min": "39–45",
+          "phase": "input",
+          "titel": "Der Sicherheitsplan: ein Erste-Hilfe-Kasten"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–85",
+          "phase": "aktiv",
+          "titel": "Plan-Parcours: sieben Stationen"
+        },
+        {
+          "min": "85–89",
+          "phase": "skill",
+          "titel": "Skill: Standfest"
+        },
+        {
+          "min": "89–95",
+          "phase": "abschluss",
+          "titel": "Was trägt: Milas Geschichte und das Skills-Buch"
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Check-out, Kärtchen-Box, Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Ruhig ankommen: Gefühlsrad und Anspannung",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Raum, Licht und Stühle wie immer; Vertrautes gibt Halt. Check-in mit Gefühlsrad und Anspannung von 0 bis 100, die Leitung beginnt. Wer die Zahl heute nicht laut sagen möchte, schreibt sie auf einen Zettel und gibt ihn der Leitung. Die zweite Leitung behält die Zahlen ohne Kommentar im Blick, denn am Ende wird noch einmal gefragt.",
+          "sagen": [
+            "Gefühl und Zahl wie immer. Wer die Zahl heute lieber nicht laut sagt, schreibt sie auf einen Zettel und gibt ihn mir."
+          ],
+          "tipp": "Die Leitung nennt ihre Zahl ehrlich, auch wenn sie höher ist als sonst: „Ich bin ein bisschen angespannt, weil heute ein ernstes Thema dran ist.“ Das zeigt, dass Anspannung vor schweren Themen normal ist.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Worum es heute geht – und unser Rahmen",
+          "dauer": 10,
+          "phase": "bruecke",
+          "text": "Kurz an das Modul anknüpfen: Trauer, Scham, Einsamkeit – schwere Gefühle, die jeder kennt. Dann das Thema klar und ruhig benennen: Manchmal werden Gefühle so schwer, dass Menschen daran denken, sich selbst zu verletzen oder nicht mehr leben zu wollen. Den Rahmen für heute erklären (Liste), den Ruheplatz zeigen und sagen, welche Leitung mitgeht, wenn jemand rausgeht. Zum Schluss die Fragen aus der Box beantworten.",
+          "sagen": [
+            "Heute reden wir über etwas, über das viele schweigen: wenn es jemandem so schlecht geht, dass er sich selbst verletzt oder nicht mehr leben will. Wir reden darüber, weil Reden hilft – und weil es Hilfe gibt.",
+            "Niemand erzählt heute etwas Eigenes. Und wir reden über Hilfe, nicht darüber, wie man sich etwas antut. Solche Einzelheiten helfen niemandem, sie können sogar schaden."
+          ],
+          "punkte": [
+            "Niemand erzählt Eigenes – weder von sich noch von anderen mit Namen.",
+            "Wir sprechen über Hilfe, nie über Wege oder Mittel, sich etwas anzutun.",
+            "Wer rausgehen möchte, geht zum Ruheplatz. Eine Leitung kommt nach ein paar Minuten nach, damit niemand allein bleibt.",
+            "Der Sicherheitsplan ist privat. Niemand muss ihn zeigen, niemand sammelt ihn ein.",
+            "Wenn ich mir Sorgen mache, dass jemand in Gefahr ist, hole ich Hilfe – und sage es der Person vorher.",
+            "Fragen ohne Namen kommen in die Fragenbox."
+          ],
+          "tipp": "Das Wort „Suizid“ ruhig und sachlich aussprechen und nicht „Selbstmord“ sagen. Wer das Thema klar benennt, zeigt: Hier darf man darüber reden. Umschreibungen wie „so etwas“ machen es eher unheimlich.",
+          "wennEsKippt": "Macht jemand Witze – etwa „Dann bring ich mich halt um“ nach einer schlechten Note –, nicht übergehen und nicht bloßstellen: ruhig sagen, dass solche Sätze hier nicht als Witz stehen bleiben, weil sie für manche sehr ernst sind. Nach der Einheit kurz mit der Person sprechen; hinter Witzen steckt manchmal Unsicherheit, manchmal mehr."
+        },
+        {
+          "titel": "Darüber reden hilft: Fakten statt Mythen",
+          "dauer": 12,
+          "phase": "input",
+          "text": "Das Blatt „Darüber reden hilft“ austeilen. Die sieben Sätze aus Aufgabe 1 einzeln vorlesen; alle überlegen still und zeigen dann gleichzeitig Daumen hoch (stimmt) oder Daumen runter (stimmt nicht). Nach jedem Satz ruhig auflösen (Tabelle), in eigenen Worten und ohne Zahlen. Zum Schluss festhalten, was die Sätze verbindet: Schweigen schützt nicht, Reden und Hilfe holen schon.",
+          "tabelle": {
+            "spalten": [
+              "Satz",
+              "Stimmt?",
+              "So ist es"
+            ],
+            "zeilen": [
+              [
+                "Wer über Suizid redet, tut es nicht.",
+                "nein",
+                "Viele Menschen, die an Suizid denken, deuten es vorher an. Jede Andeutung verdient eine ernste Nachfrage."
+              ],
+              [
+                "Wer direkt fragt, ob jemand an Suizid denkt, bringt ihn erst auf die Idee.",
+                "nein",
+                "Direktes Fragen erhöht das Risiko nicht. Viele sind erleichtert, dass endlich jemand fragt."
+              ],
+              [
+                "Wer sich selbst verletzt, will nur Aufmerksamkeit.",
+                "nein",
+                "Die meisten verstecken es. Selbstverletzung ist oft ein Versuch, unerträglichen Druck auszuhalten – ein Zeichen von Not, das Hilfe braucht."
+              ],
+              [
+                "Suizidgedanken kommen auch bei Menschen vor, denen man es nicht ansieht.",
+                "ja",
+                "Wer lacht, gute Noten schreibt oder viele Freunde hat, kann trotzdem in einer Krise sein."
+              ],
+              [
+                "Wer einmal nicht mehr leben wollte, fühlt sich für immer so.",
+                "nein",
+                "Solche Krisen kommen oft in Wellen und gehen vorüber. Mit Unterstützung finden die meisten wieder heraus."
+              ],
+              [
+                "Hilfe holen ist kein Verrat – auch wenn ich versprochen habe, nichts zu sagen.",
+                "ja",
+                "Ein Geheimnis, das jemanden in Gefahr bringt, muss niemand allein tragen."
+              ],
+              [
+                "Freundinnen und Freunde können nichts tun, nur Fachleute.",
+                "nein",
+                "Freunde können viel tun: hinschauen, fragen, zuhören und eine erwachsene Person dazuholen."
+              ]
+            ]
+          },
+          "sagen": [
+            "Erst still überlegen, dann alle gleichzeitig: Daumen hoch heißt stimmt, Daumen runter heißt stimmt nicht.",
+            "Diese Sätze haben eins gemeinsam: Schweigen macht es schlimmer, Reden macht es besser."
+          ],
+          "tipp": "Keine Zahlen, keine Fälle aus den Medien, keine Geschichten über Einzelne. Fragen, die sich nicht sachlich beantworten lassen, in die Fragenbox verweisen und nächste Woche nach Rücksprache im Team aufgreifen.",
+          "wennEsKippt": "Will jemand wissen, wie etwas funktioniert oder was „wirklich gefährlich“ ist, freundlich und klar stoppen: Darüber sprechen wir nicht, weil solches Wissen Menschen in einer Krise schaden kann; wer sich Sorgen macht, kann nach der Einheit mit mir reden. Erzählt jemand von einem Fall aus dem Netz, nicht nachfragen, sondern zurück zu den Sätzen.",
+          "blatt": "skills-darueber-reden"
+        },
+        {
+          "titel": "Wenn ich mir Sorgen um jemanden mache",
+          "dauer": 7,
+          "phase": "uebung",
+          "text": "Die vier Schritte aus Aufgabe 2 gemeinsam lesen: ansprechen, zuhören, eine erwachsene Person dazuholen, bei Gefahr nicht allein lassen und 112 wählen. Wer in Kursjahr 2 dabei war, kennt sie schon; heute geht es ums Auffrischen. Dann schreibt jede Person das Gespräch mit Nora weiter, und zwei, drei Freiwillige lesen ihre Antworten vor. Die Leitung ergänzt, was bei Noras zweitem Satz zählt: direkt fragen, nicht allein lassen, Hilfe holen.",
+          "sagen": [
+            "Ihr müsst niemanden retten. Eure Aufgabe ist: hinschauen, fragen und eine erwachsene Person dazuholen.",
+            "Nora sagt: Manchmal will ich einfach nicht mehr. Was sagt ihr jetzt?"
+          ],
+          "tipp": "Die direkte Frage „Denkst du daran, dir das Leben zu nehmen?“ einmal ruhig laut aussprechen, damit sie nicht fremd klingt. Viele Jugendliche haben Angst, sie falsch zu stellen – dabei ist das Fragen selbst schon Hilfe.",
+          "wennEsKippt": "Kommt als Antwort „Dann sag ich halt nichts, ist ja ihr Ding“, das nicht bewerten, sondern nachfragen: Was könnte passieren, wenn Nora mit dem Satz allein bleibt? Wird es sehr still, die Übung abkürzen und die Beispielantwort von der Lehrerseite vorlesen.",
+          "blatt": "skills-darueber-reden"
+        },
+        {
+          "titel": "Der Sicherheitsplan: ein Erste-Hilfe-Kasten",
+          "dauer": 6,
+          "phase": "input",
+          "text": "Das Blatt „Mein Sicherheitsplan“ zeigen, noch ohne es auszufüllen, und daneben den Ampelplan aus Kursjahr 1 legen. Erklären: Der Plan ist wie ein Erste-Hilfe-Kasten – man packt ihn, wenn es einem gut geht, damit er im Notfall bereitliegt. Er baut auf dem Skills-Koffer und dem Ampelplan aus Kursjahr 1 auf und geht weiter: sechs Schritte, von dem, was ich selbst tun kann, bis zur Hilfe von außen; reicht ein Schritt nicht, kommt der nächste. Wer den Ampelplan nicht hat, braucht ihn nicht – das Blatt erklärt alles, und an Station 2 liegen Ideen aus.",
+          "sagen": [
+            "Einen Erste-Hilfe-Kasten packt man auch nicht erst, wenn etwas passiert ist. Mit diesem Plan ist es genauso.",
+            "Alle machen heute einen Plan – egal, wie es euch gerade geht. Niemand muss ihn zeigen."
+          ],
+          "tipp": "Betonen, dass alle einen Plan machen: So fällt niemand auf, und der Plan ist Vorsorge für alle, kein Zeichen, dass jemand „ein Problem hat“.",
+          "blatt": "skills-koffer-ampelplan"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Imbiss wie immer; die Routine sagt: Wir sind da, und das Leben geht weiter. Die Leitungen bleiben ansprechbar und achten darauf, wer still wird, sich zurückzieht oder auffällig aufgedreht ist. Die Stationen werden fertig aufgebaut."
+        },
+        {
+          "titel": "Plan-Parcours: sieben Stationen",
+          "dauer": 25,
+          "phase": "aktiv",
+          "text": "Sieben Stationen im Raum oder im Flur, an jeder ein Schild mit Frage und Ideen (Tabelle). Jede Person geht mit Klemmbrett und Blatt allein von Station zu Station, im eigenen Tempo und in freier Reihenfolge, und trägt ein, was für sie passt. An Station 2 werden starke Skills ausprobiert, an Station 5 speichern alle, die ein Handy dabeihaben, zwei Nummern darin. Leise Musik läuft. Die Leitungen gehen herum, helfen auf Nachfrage und lesen nur mit, wenn jemand es anbietet. Wer fertig ist, steckt den Plan in den Umschlag und fotografiert ihn, wenn er mag.",
+          "tabelle": {
+            "spalten": [
+              "Station",
+              "Frage",
+              "Ideen auf dem Schild"
+            ],
+            "zeilen": [
+              [
+                "1 Warnzeichen",
+                "Woran merke ich, dass es mir richtig schlecht geht?",
+                "Gedanken wie „Alles ist sinnlos“, nicht mehr schlafen, niemandem mehr antworten, mich einschließen"
+              ],
+              [
+                "2 Selbst tun",
+                "Was kann ich allein tun, damit die Welle vorbeigeht?",
+                "Kühlpack oder kaltes Wasser, Treppe laufen, starke Pfefferminze, Musik, 5-4-3-2-1 – Ideen aus Skills-Koffer und Ampelplan"
+              ],
+              [
+                "3 Ablenkung",
+                "Wo und mit wem komme ich auf andere Gedanken?",
+                "Menschen, bei denen ich einfach sein kann; Orte mit anderen Menschen wie Training, Jugendhaus, Bibliothek"
+              ],
+              [
+                "4 Fragen",
+                "Wen kann ich um Hilfe bitten?",
+                "Familie, Freundinnen und Freunde, Erwachsene im Lycée, im Annexe, im Verein – mit Nummer"
+              ],
+              [
+                "5 Fachleute",
+                "Wen erreiche ich in einer Krise?",
+                "SePAS, Psychologin oder Psychologe, Kanner- a Jugendtelefon 116 111, SOS Détresse 45 45 45, Notruf 112"
+              ],
+              [
+                "6 Sicherer",
+                "Was macht meine Umgebung sicherer?",
+                "nicht allein bleiben, keinen Alkohol und keine Drogen, Dinge, mit denen ich mir schaden könnte, jemandem geben"
+              ],
+              [
+                "7 Halt",
+                "Was gibt mir Halt?",
+                "Menschen, Tiere, Musik, Glaube, Pläne und Träume – was mir wichtig ist"
+              ]
+            ]
+          },
+          "sagen": [
+            "Ihr entscheidet, was auf euer Blatt kommt. Lieber drei Dinge, die wirklich stimmen, als zehn, die gut klingen.",
+            "An Station 5 holt ihr kurz das Handy raus und speichert zwei Nummern. Das dauert eine Minute und kann viel bedeuten."
+          ],
+          "tipp": "Wer an einer Station hängt, bekommt eine Frage statt eines Vorschlags: „Was hat dir früher schon einmal geholfen, auch nur ein bisschen?“ Mit nur zwei Jugendlichen liegen die Schilder auf einem Tisch; bei wenig Platz reichen drei Stationen, der Rest wird am Tisch ausgefüllt.",
+          "wennEsKippt": "Schreibt jemand demonstrativ „nichts“ oder „keiner“, nicht diskutieren und nicht bohren: ruhig zusammen überlegen, wer im Annexe, im Lycée oder am Telefon erreichbar ist, und beim nächsten Schritt weitermachen. Wirkt jemand aufgewühlt oder sehr still, geht die zweite Leitung unauffällig dazu und fragt, ob er kurz an den Ruheplatz möchte.",
+          "blatt": "skills-sicherheitsplan"
+        },
+        {
+          "titel": "Skill: Standfest",
+          "dauer": 4,
+          "phase": "skill",
+          "text": "Alle kommen zurück in den Kreis. Die Leitung leitet mit offenen Augen an (Liste): Füße in den Boden drücken, Handflächen gegeneinanderpressen und loslassen, länger aus- als einatmen, drei Dinge im Raum suchen. Danach fragen, ob der Skill in den Plan passt; wer mag, trägt ihn bei Schritt 2 nach.",
+          "punkte": [
+            "Drück die Füße fest in den Boden. Spür, wie er dich trägt.",
+            "Press die Handflächen vor der Brust fünf Sekunden gegeneinander, dann lass los. Dreimal.",
+            "Vier Zählzeiten ein, sechs aus. Fünf Atemzüge.",
+            "Such drei Dinge im Raum, die blau sind, und benenne sie leise für dich."
+          ],
+          "sagen": [
+            "Augen bleiben offen. Ihr seid hier, in diesem Raum, mit uns.",
+            "Das könnt ihr überall machen – im Bus, im Unterricht, im Bett. Niemand sieht es."
+          ],
+          "tipp": "Heute keine Übung mit geschlossenen Augen und keine Traumreise: Nach einem schweren Thema geben offene Augen und der Körper mehr Halt."
+        },
+        {
+          "titel": "Was trägt: Milas Geschichte und das Skills-Buch",
+          "dauer": 6,
+          "phase": "abschluss",
+          "text": "Die Leitung liest Milas Geschichte vor (Liste), langsam und ohne sie zu kommentieren, und fragt kurz, was Mila geholfen hat. Dann die Modulseite im Skills-Buch, freiwillig: unter „Lieblingsskills“ ein Skill aus dem Modul, etwa die Welle, Aufrichten oder Standfest, unter „Sätze, die tragen“ ein Satz für schwere Momente. Wer mag, legt den Sicherheitsplan unter „Pläne“ ins Buch oder notiert, wo er liegt. Was heute nicht fertig wird, darf später ergänzt werden.",
+          "punkte": [
+            "Im letzten Winter ging es Mila (16) wochenlang schlecht. Sie schlief kaum, sagte Treffen ab und dachte irgendwann, es wäre besser, nicht mehr da zu sein.",
+            "Sie sagte niemandem etwas, weil sie niemandem zur Last fallen wollte.",
+            "Eines Abends schrieb sie ihrer Cousine: „Mir geht es gar nicht gut.“ Die Cousine rief sofort an und ging am nächsten Tag mit ihr zum SePAS.",
+            "Dort bekam Mila Unterstützung, später auch von einer Psychologin. Es wurde nicht von heute auf morgen besser, und es gab Rückschläge.",
+            "Heute sagt Mila: Das Schwerste war die erste Nachricht. Danach war ich nicht mehr allein."
+          ],
+          "sagen": [
+            "Was hat Mila geholfen?",
+            "Wer mag, schreibt einen Satz, der trägt, ins Skills-Buch – etwa: Wellen gehen vorbei. Oder: Ich darf Hilfe holen."
+          ],
+          "tipp": "Die Geschichte ist ausgedacht und erzählt bewusst keine Einzelheiten der Krise. Geschichten vom Durchkommen stärken; Einzelheiten schaden.",
+          "blatt": "skills-buch"
+        },
+        {
+          "titel": "Check-out, Kärtchen-Box, Skills-Pass",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Check-out: Alle nennen noch einmal ihre Anspannung oder schreiben sie auf einen Zettel für die Leitung. Dann wirft jede Person ein Kärtchen in die Box – leer oder mit Namen und „Ich möchte reden“; weil alle eins einwerfen, sieht niemand, wer um ein Gespräch bittet. Während die Karten mit den Hilfenummern ausgeteilt und die Skills-Pässe ausgefüllt werden, liest die zweite Leitung die Kärtchen am Ruheplatz. Zum Schluss sagen, wann die Leitung heute und in den nächsten Tagen erreichbar ist.",
+          "sagen": [
+            "Alle werfen ein Kärtchen ein. Wer reden möchte, schreibt seinen Namen drauf – wir lesen die Kärtchen gleich, und ich spreche dich noch heute an.",
+            "Ihr habt heute etwas gemacht, das viele Erwachsene nie machen: einen Plan für schwere Zeiten. Ich hoffe, ihr braucht ihn selten. Und wenn doch – ihr wisst, wo er ist, und wir sind da."
+          ],
+          "tipp": "Die Kärtchen liest die zweite Leitung noch in der Einheit; leitet nur eine Person, öffnet sie die Box direkt nach dem Ende, bevor die Jugendlichen gehen. Wer um ein Gespräch bittet oder deutlich angespannter geht, als er gekommen ist, wird noch am selben Tag angesprochen; geht das nicht, übernimmt die Responsable, die für diesen Tag erreichbar ist.",
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Nächstes Mal geht es um das, was Menschen stark macht – um die Kraftquellen, die durch schwere Zeiten tragen.",
+      "hintergrund": "Selbstverletzung und Suizidgedanken sind im Jugendalter häufiger, als viele Erwachsene annehmen; nur ein kleiner Teil der Betroffenen kommt mit Fachleuten in Kontakt (Hawton et al., 2012). Direkt nach Suizidgedanken zu fragen, erhöht das Risiko nicht und kann entlasten (Dazzi et al., 2014). Im SEYLE-Projekt senkte ein Schulprogramm mit Information, Rollenspielen und Gesprächen neue Suizidversuche und schwere Suizidgedanken (Wasserman et al., 2015). Der Sicherheitsplan nach Stanley und Brown (2012) führt von Warnzeichen und eigener Bewältigung über ablenkende Menschen und Orte bis zu Vertrauten, Fachstellen und einer sichereren Umgebung; mit Nachkontakten ging suizidales Verhalten nach einem Notaufnahme-Besuch damit deutlich zurück (Stanley et al., 2018). Methoden und Einzelfälle werden nie besprochen (WHO, 2017); Berichte darüber, wie Menschen eine suizidale Krise überstanden haben, wirken dagegen schützend (Niederkrotenthaler et al., 2010).",
+      "quellen": [
+        "Hawton, K., Saunders, K. E. A. & O’Connor, R. C. (2012). Self-harm and suicide in adolescents. The Lancet, 379(9834), 2373–2382.",
+        "Dazzi, T., Gribble, R., Wessely, S. & Fear, N. T. (2014). Does asking about suicide and related behaviours induce suicidal ideation? What is the evidence? Psychological Medicine, 44(16), 3361–3363.",
+        "Wasserman, D., Hoven, C. W., Wasserman, C., Wall, M., Eisenberg, R., Hadlaczky, G. et al. (2015). School-based suicide prevention programmes: The SEYLE cluster-randomised, controlled trial. The Lancet, 385(9977), 1536–1544.",
+        "Stanley, B. & Brown, G. K. (2012). Safety planning intervention: A brief intervention to mitigate suicide risk. Cognitive and Behavioral Practice, 19(2), 256–264.",
+        "Stanley, B., Brown, G. K., Brenner, L. A., Galfalvy, H. C., Currier, G. W., Knox, K. L., Chaudhury, S. R., Bush, A. L. & Green, K. L. (2018). Comparison of the Safety Planning Intervention with follow-up vs usual care of suicidal patients treated in the emergency department. JAMA Psychiatry, 75(9), 894–900.",
+        "World Health Organization (2017). Preventing Suicide: A Resource for Media Professionals (update 2017). Genf: WHO.",
+        "Niederkrotenthaler, T., Voracek, M., Herberth, A., Till, B., Strauss, M., Etzersdorfer, E., Eisenwort, B. & Sonneck, G. (2010). Role of media reports in completed and prevented suicide: Werther v. Papageno effects. British Journal of Psychiatry, 197(3), 234–243."
+      ],
+      "achtung": "Diese Einheit nur nach Absprache mit der zuständigen Leitung (Responsable) halten, möglichst zu zweit und mit einem ruhigen Ort zum Rausgehen. Keine Methoden, Mittel, Orte oder Einzelheiten nennen – auch nicht auf Nachfrage –, keine Fälle aus Medien oder Umfeld, keine Zahlen zu Methoden (WHO, 2017). Niemand erzählt Eigenes; Pläne werden nicht eingesammelt, nicht vorgelesen und nicht bewertet. Bei jedem Hinweis auf Gefährdung – einer Andeutung, einem Satz auf einem Blatt, einem Kärtchen oder einer Frage in der Box, auffälligem Verhalten, sichtbaren Verletzungen – die Person noch am selben Tag ruhig und unter vier Augen ansprechen, direkt nach Suizidgedanken fragen, zuhören, keine Geheimhaltung versprechen, sagen, was als Nächstes passiert, nach dem Schutzkonzept handeln und die Responsable am selben Tag informieren. Bei akuter Gefahr die Person nicht allein lassen und den Notruf 112 wählen; die Eltern nach dem Schutzkonzept einbeziehen. Anonyme Hinweise auf Gefährdung sofort mit der Responsable besprechen und der Gruppe allgemein Hilfe anbieten. Nach der Einheit Nachgespräche führen, die Check-out-Zahlen vergleichen, Beobachtungen im Team besprechen und dokumentieren und die nächste Einheit mit einer kurzen Nachfrage beginnen. Wer die Einheit leitet, holt sich selbst Unterstützung."
+    }
+  ]
+}

@@ -1,0 +1,641 @@
+{
+  "einheiten": [
+    {
+      "id": "j2-e03",
+      "nr": 3,
+      "jahr": 2,
+      "modul": "j2-m1",
+      "titel": "Was macht mich wertvoll?",
+      "kurz": "Selbstwert ist nicht dasselbe wie gute Noten, Likes oder gutes Aussehen: Die Gruppe verfolgt Noahs Tag, versteigert, was man nicht kaufen kann, und erlebt Wertschätzung ohne Leistung.",
+      "dauer": 100,
+      "ziele": [
+        "unterscheiden das Gefühl, etwas wert zu sein, das mit jedem Ereignis schwankt, vom Wert eines Menschen, der gleich bleibt",
+        "erkennen, woran sie selbst ihr Gefühl von Wert knüpfen, und unterscheiden wackelige von tragenden Quellen",
+        "begründen in der Wert-Auktion, was ihnen wirklich wichtig ist",
+        "hören, was andere an ihnen schätzen – ohne Leistung und Aussehen –, und nehmen es mit einem Danke an"
+      ],
+      "material": [
+        "Gefühlsrad und Anspannungsskala",
+        "Malerkrepp für eine Bodenlinie, zwei Karten mit 0 und 10, ein Schild „So wertvoll fühlt sich Noah“",
+        "Ein Stuhl mit dem Schild „Noahs Wert“",
+        "Schülerblatt „Worauf steht mein Selbstwert?“ für jede Person",
+        "Schülerblatt „Die Wert-Auktion“ für jedes Team; die zwölf Lose einmal ausgeschnitten",
+        "Ein Hammer, ein Holzlöffel oder eine Glocke für die Versteigerung",
+        "Tafel oder Flipchart, Skills-Pässe, Stempel",
+        "Imbiss und Getränke"
+      ],
+      "vorbereitung": [
+        "Eine eigene Bodenlinie für Noahs Tag kleben oder die Linie aus Modul 0 mit den Karten 0 und 10 neu belegen, damit sie nicht mit der Anspannungsskala verwechselt wird; den Stuhl mit dem Schild ans Kopfende stellen.",
+        "Die Lose der Wert-Auktion ausschneiden und verdeckt auf einen Tisch legen.",
+        "Für die Wertschätzungsrunde für jede Person einen eigenen, ehrlichen Satz vorbereiten – besonders für Jugendliche, die in der Gruppe wenig Anerkennung bekommen."
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-selbstwert-quellen",
+        "skills-wert-auktion",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Wort, Zahl und ein netter Satz"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Neues Modul: Selbstwert und Körper"
+        },
+        {
+          "min": "15–30",
+          "phase": "uebung",
+          "titel": "Noahs Achterbahn"
+        },
+        {
+          "min": "30–45",
+          "phase": "uebung",
+          "titel": "Worauf steht mein Selbstwert?"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–82",
+          "phase": "aktiv",
+          "titel": "Die Wert-Auktion"
+        },
+        {
+          "min": "82–95",
+          "phase": "skill",
+          "titel": "Skill: Wertschätzung annehmen"
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Réckbléck und Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: Wort, Zahl und ein netter Satz",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Gefühlsrad und Anspannung wie gewohnt; die Zahl darf wieder an der Linie gezeigt werden. Dazu eine freiwillige Zusatzfrage: Hat dir diese Woche jemand etwas Nettes gesagt – oder du jemandem? Die Leitung beginnt mit einem alltäglichen Beispiel. Wem nichts einfällt oder wer nichts sagen mag, sagt „weiter“; das wird nicht kommentiert.",
+          "sagen": [
+            "Wort, Zahl – und wenn ihr mögt: Was hat euch diese Woche jemand Nettes gesagt? Oder ihr jemandem?",
+            "Bei mir war es der Busfahrer, der gewartet hat, als ich gerannt bin. Hat mir den Morgen gerettet."
+          ],
+          "tipp": "Kommen kaum Beispiele, ist auch das eine Information für heute: Anerkennung ist knapp. Nicht bedauern, einfach weitermachen.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Neues Modul: Selbstwert und Körper",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "Den Kompass kurz zeigen: Das erste Feld ist gefüllt, jetzt beginnt Modul 1. Die Leitfrage an die Tafel schreiben: Was macht mich wertvoll – auch wenn ich mich vergleiche? Ankündigen, was in drei Einheiten kommt: heute der Selbstwert, dann der Körper, dann die Frage, wie man mit sich selbst redet. Dazu die Regel für das ganze Modul: Niemand muss sagen, wie er über sich denkt; alles Persönliche bleibt auf dem eigenen Blatt.",
+          "sagen": [
+            "Drei Wochen lang geht es um eine Frage, die kaum jemand laut stellt: Was macht mich eigentlich wertvoll?",
+            "Ihr müsst hier nicht erzählen, was ihr von euch haltet. Das bleibt auf eurem Blatt."
+          ]
+        },
+        {
+          "titel": "Noahs Achterbahn",
+          "dauer": 15,
+          "phase": "uebung",
+          "text": "Die Karten der Anspannungsskala von der Linie nehmen und durch 0 und 10 ersetzen: Die Linie zeigt jetzt, wie wertvoll sich Noah gerade fühlt. Am Kopfende steht der Stuhl mit dem Schild „Noahs Wert“. Die Leitung liest Noahs Tag Uhrzeit für Uhrzeit vor; nach jeder Uhrzeit stellen sich alle dorthin, wo sie Noahs Gefühl vermuten, und ein, zwei Personen sagen, was Noah jetzt über sich denken könnte. Nach der letzten Uhrzeit auf den Stuhl zeigen: Hat er sich bewegt? Dann das Tafelbild entwickeln – das Gefühl schwankt, der Wert bleibt.",
+          "sagen": [
+            "Stellt euch dahin, wo Noah sich gerade fühlt. Was denkt er in diesem Moment über sich?",
+            "Und jetzt der Stuhl: Wie viel war Noah um 7:45 Uhr wert – und wie viel um 21:40 Uhr?",
+            "Noahs Gefühl ist den ganzen Tag Achterbahn gefahren. Sein Wert hat sich keinen Millimeter bewegt."
+          ],
+          "punkte": [
+            "7:45 Uhr – Die Mathearbeit kommt zurück: 22 von 60.",
+            "10:05 Uhr – Im Sportunterricht schießt Noah das entscheidende Tor, alle jubeln.",
+            "12:30 Uhr – In der Kantine lacht jemand über seine Schuhe, zwei andere lachen mit.",
+            "15:10 Uhr – Sein neues Video hat nach zwei Stunden drei Likes.",
+            "17:30 Uhr – Er hilft seiner kleinen Schwester bei den Hausaufgaben. Sie sagt: Du erklärst besser als die Lehrerin.",
+            "21:40 Uhr – Im Klassenchat sieht er, dass alle zu einer Party eingeladen sind, nur er nicht."
+          ],
+          "tabelle": {
+            "spalten": [
+              "Das Gefühl, wertvoll zu sein",
+              "Der Wert eines Menschen"
+            ],
+            "zeilen": [
+              [
+                "schwankt mit Noten, Likes, Lob und Spott",
+                "bleibt gleich – an guten und an schlechten Tagen"
+              ],
+              [
+                "hängt oft daran, was andere sagen",
+                "hängt nicht an Leistung, Aussehen oder Beliebtheit"
+              ],
+              [
+                "lässt sich stärken – mit Quellen, die tragen",
+                "muss man sich nicht verdienen"
+              ]
+            ]
+          },
+          "tipp": "Noah bleibt eine Beispielfigur, auch wenn jemand sagt: Das bin ja ich. Dann freundlich antworten: Das geht vielen so – genau deshalb reden wir über Noah. Bei wenig Energie oder nur zwei Jugendlichen zeigen alle im Sitzen mit den Fingern, wo Noah steht.",
+          "wennEsKippt": "Behauptet jemand, der Wert hänge doch an Leistung – wer nichts kann, ist nichts wert –, nicht belehren, sondern zurückfragen: Ist ein Baby weniger wert, weil es noch nichts kann? Und deine Oma, wenn sie krank ist? Wird über Noah gelacht, anhalten und fragen, wie sich Noah fühlt, wenn jetzt auch noch diese Gruppe lacht."
+        },
+        {
+          "titel": "Worauf steht mein Selbstwert?",
+          "dauer": 15,
+          "phase": "uebung",
+          "text": "Das Schülerblatt austeilen und den kurzen Text gemeinsam lesen. Aufgabe 1 füllt jede Person allein und still aus; danach den Kasten lesen, zwei, drei Beispiele aus Noahs Tag zuordnen – was wackelt, was trägt? – und die eigenen Kreuze auszählen (Aufgabe 2). Dann den Eisberg erklären – oben, was alle sehen und bewerten, unten, was einen Menschen trägt – und jede Person füllt den unteren Teil mit mindestens drei eigenen Quellen. Zum Schluss der Satz für einen schlechten Tag. Die Leitung geht herum, liest nur, wenn sie gefragt wird, und hilft mit Fragen: Wer mag dich, auch wenn du verlierst? Worauf bist du stolz, das man nicht sieht?",
+          "sagen": [
+            "Kreuzt ehrlich an – das Blatt sieht niemand außer euch.",
+            "Unter Wasser kommt, was bleibt, wenn die Note schlecht ist und das Video floppt."
+          ],
+          "tipp": "Wer unter Wasser nichts findet, bekommt Beispiele statt Druck: Humor, Fairness, jemand, bei dem ich so sein darf, wie ich bin, etwas, das ich gern tue, einmal durchgehalten. Wer aus Jahr 1 kommt, darf in den Baum der Stärke schauen.",
+          "wennEsKippt": "Legt jemand den Stift weg und sagt: Bei mir gibt es nichts, nicht vor der Gruppe widersprechen. Die Leitung setzt sich kurz daneben, fragt leise nach einer einzigen Sache, die heute gut war, und merkt sich, mit der Person nach der Einheit zu reden.",
+          "blatt": "skills-selbstwert-quellen"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Gemeinsam essen, das Thema ruht. Die Leitung legt währenddessen die Lose verdeckt auf einen Tisch und stellt Hammer oder Glocke bereit."
+        },
+        {
+          "titel": "Die Wert-Auktion",
+          "dauer": 22,
+          "phase": "aktiv",
+          "text": "Teams zu zweit oder zu dritt bilden; jedes Team bekommt das Blatt mit 1000 Talern auf dem Konto. In drei Minuten plant jedes Team, welche drei Lose es unbedingt will und wie viel es höchstens bietet. Dann versteigert die Leitung die Lose einzeln, laut und mit Hammer: Mindestgebot 50 Taler, erhöht wird in 50er-Schritten, das höchste Gebot bekommt das Los und zieht den Betrag sofort vom Konto ab. Danach legen alle ihre Lose in die Mitte, dazu die unverkauften, und sortieren sie gemeinsam auf zwei Felder: „Kann mir ein schlechter Tag wegnehmen“ und „Bleibt, auch an einem schlechten Tag“. Zum Schluss die Auswertungsfragen stellen und das Fazit auf dem Blatt schreiben lassen.",
+          "sagen": [
+            "Los Nummer zwei: hunderttausend Follower, die jeden Post liken. Wer bietet fünfzig?",
+            "Was habt ihr gekauft – und warum gerade das?",
+            "Welches dieser Lose kann man in Wirklichkeit kaufen? Und welche habt ihr vielleicht schon, ohne es zu merken?"
+          ],
+          "tipp": "Die Leitung spielt die Auktionatorin mit Lust an der Übertreibung: Hammer, schnelle Sprache, „zum Ersten, zum Zweiten, zum Dritten“. Je lebendiger die Versteigerung, desto ernster wird danach das Gespräch.",
+          "wennEsKippt": "Kauft ein Team nur Follower, Aussehen und Siege, nicht korrigieren – beim Sortieren sieht die Gruppe von selbst, was davon wackelt. Wird es zu laut, gilt: Geboten wird nur mit erhobener Hand, wer ruft, bietet nicht mit. Bei nur zwei Jugendlichen bietet jede Person für sich, und die Leitung bietet als dritte Bieterin mit.",
+          "blatt": "skills-wert-auktion"
+        },
+        {
+          "titel": "Skill: Wertschätzung annehmen",
+          "dauer": 13,
+          "phase": "skill",
+          "text": "Stühle im Kreis, in der Mitte ein freier Stuhl. Nacheinander setzt sich jede Person, die mag, für etwa eine Minute auf den Stuhl, und die anderen sagen ihr reihum einen Satz: was sie an ihr schätzen – nicht, was sie leistet, und nicht, wie sie aussieht. Die Person hört nur zu und sagt am Ende nur ein Wort: Danke. Wer sich unwohl fühlt, darf mit dem Rücken zur Gruppe sitzen; wer gar nicht mag, bekommt die Sätze später von der Leitung auf einem Zettel. Die Leitung spricht immer als Letzte und sorgt so dafür, dass niemand mit einem dünnen Satz nach Hause geht.",
+          "sagen": [
+            "Sagt, was ihr an der Person schätzt und woran ihr es merkt: Du bist fair, auch wenn du verlierst. Mit dir kann man über alles lachen.",
+            "Wer auf dem Stuhl sitzt, sagt nichts außer Danke. Kein „Stimmt doch gar nicht“.",
+            "Wie war es, das zu hören – leichter oder schwerer, als ihr dachtet?"
+          ],
+          "punkte": [
+            "Ich schätze an dir, dass …",
+            "Mir ist aufgefallen, dass du …",
+            "Mit dir ist es leichter, weil …"
+          ],
+          "tipp": "Diese Runde ist die Antwort auf die Auktion: Nichts von dem, was hier gesagt wird, kann man kaufen. Die Leitung darf das am Ende genau so sagen.",
+          "wennEsKippt": "Kommt ein Satz über Aussehen oder Noten, freundlich umlenken: Und was schätzt du an ihm, wenn er keine Tore schießt? Kichert jemand oder macht einen ironischen Kommentar, kurz anhalten: Auf diesem Stuhl gilt die Regel aus dem Vertrag doppelt. Bei nur zwei Jugendlichen sagen sich beide je zwei Sätze, die Leitung einen dritten."
+        },
+        {
+          "titel": "Réckbléck und Skills-Pass",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Blitzlicht mit einer Frage: Was von heute hat gutgetan – Noahs Tag, die Auktion oder der Stuhl? Dann der Eintrag in den Skills-Pass und der Stempel; wer mag, schreibt den Satz für den schlechten Tag vom Blatt ab. Die Blätter kommen in die Mappe.",
+          "sagen": [
+            "Ein Satz: Was nehmt ihr heute mit?",
+            "Für den Pass: Welche Quelle trägt euch auch an einem schlechten Tag?"
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Nächstes Mal geht es um das, womit sich die meisten am häufigsten vergleichen: den eigenen Körper – und warum die Bilder im Netz dabei so selten die Wahrheit zeigen.",
+      "hintergrund": "Crocker und Wolfe (2001) beschreiben, dass Menschen ihren Selbstwert an unterschiedliche Bedingungen knüpfen – an Aussehen, Anerkennung, Schulleistung oder daran, besser zu sein als andere, aber auch an Werte und Rückhalt; Crocker et al. (2003) haben sieben solcher Bereiche mit einem Fragebogen erfasst. Je stärker er an äußeren Bedingungen hängt, desto mehr schwankt er mit guten und schlechten Ereignissen. Im Jugendalter gliedert sich das Selbstbild in viele Bereiche, die unterschiedlich wichtig genommen werden (Harter, 2012). Rosenberg (1965) verstand Selbstwert als die Haltung, sich selbst zu achten und als wertvoll anzunehmen – nicht als Überzeugung, besser zu sein als andere. Die Einheit trennt deshalb das schwankende Gefühl vom Wert eines Menschen und lenkt den Blick auf Quellen, die weniger vom Urteil anderer abhängen. Wertschätzung, die der Person statt ihrer Leistung gilt, nährt das Grundbedürfnis nach Zugehörigkeit (Deci & Ryan, 2000).",
+      "quellen": [
+        "Crocker, J. & Wolfe, C. T. (2001). Contingencies of self-worth. Psychological Review, 108(3), 593–623.",
+        "Crocker, J., Luhtanen, R. K., Cooper, M. L. & Bouvrette, A. (2003). Contingencies of self-worth in college students: Theory and measurement. Journal of Personality and Social Psychology, 85(5), 894–908.",
+        "Harter, S. (2012). The Construction of the Self (2nd ed.). New York: Guilford.",
+        "Rosenberg, M. (1965). Society and the Adolescent Self-Image. Princeton, NJ: Princeton University Press.",
+        "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268."
+      ],
+      "achtung": "Beim Selbstwert kommen schnell sehr harte Sätze über sich selbst zum Vorschein. Das Blatt bleibt privat; es wird nicht eingesammelt und nicht vorgelesen. Sagt jemand, er sei nichts wert, niemand würde ihn vermissen oder es wäre besser, es gäbe ihn nicht, ist das ein Warnsignal: nicht in der Gruppe vertiefen, die Person nach der Einheit ruhig ansprechen und direkt nach Suizidgedanken fragen – die Frage bringt niemanden auf die Idee. Nichts versprechen, was man nicht halten kann, nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) am selben Tag informieren; bei akuter Gefahr Notruf 112 und die Person nicht allein lassen. In der Wertschätzungsrunde darf niemand leer ausgehen, Spott auf dem Stuhl wird sofort gestoppt. Los 7 und 8 der Auktion können wehtun, wenn jemand solche Menschen gerade nicht hat – beobachten, wer still wird."
+    },
+    {
+      "id": "j2-e04",
+      "nr": 4,
+      "jahr": 2,
+      "modul": "j2-m1",
+      "titel": "Mein Körper und ich",
+      "kurz": "Warum Bilder im Netz fast nie die Wirklichkeit zeigen, was der eigene Körper jeden Tag leistet und wie man respektvoll über Körper redet – ohne dass jemand über den eigenen sprechen muss.",
+      "dauer": 100,
+      "ziele": [
+        "erklären, wie Auswahl, Filter und Bearbeitung Körperbilder im Netz verändern und wer daran verdient",
+        "prüfen harte Gedanken über den Körper mit der Frage, was sie einer guten Freundin oder einem guten Freund sagen würden",
+        "üben in Szenen vier Wege, auf Kommentare über Körper zu reagieren – für sich selbst und für andere",
+        "nehmen im Bodyscan wahr, was ihr Körper im Alltag leistet"
+      ],
+      "material": [
+        "Gefühlsrad und Anspannungsskala",
+        "Tablet oder Laptop mit zwei, drei Vorher-nachher-Beispielen bearbeiteter Werbebilder (vorher heraussuchen)",
+        "Toolbox-Blatt „Körperbild: Filter, Vergleiche und ich“ für jede Person",
+        "Schülerblatt „Über Körper reden – mit Respekt“ für jede Person, die Situationskarten einmal ausgeschnitten",
+        "Plakat mit den Regeln für heute",
+        "Matten oder Decken für den Bodyscan, Skills-Pässe, Stempel",
+        "Imbiss und Getränke wie immer – ohne Diät- und Light-Produkte"
+      ],
+      "vorbereitung": [
+        "Zwei, drei Vorher-nachher-Beispiele aus seriösen Quellen heraussuchen, etwa aus den Materialien von BEE SECURE oder klicksafe; keine Fotos von realen Jugendlichen, keine Fotos aus der Gruppe.",
+        "Die Situationskarten durchsehen und weglassen, was einer aktuellen Situation in der Gruppe zu sehr ähnelt.",
+        "Mit dem SePAS oder dem psychologischen Dienst klären, wie im Haus bei Hinweisen auf Essstörungen vorgegangen wird.",
+        "Die zuständige Leitung (Responsable) über die Einheit informieren; wenn möglich zu zweit leiten und einen ruhigen Ort festlegen, an den jemand kurz gehen kann.",
+        "Die eigene Sprache prüfen: heute keine Bemerkungen über Körper, Gewicht oder Essen – auch keine lobenden."
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "koerperbild",
+        "skills-koerper-kommentare",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Gefühlsrad und Anspannung"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Vom Selbstwert zum Körper: Regeln für heute"
+        },
+        {
+          "min": "15–30",
+          "phase": "input",
+          "titel": "Was ein Bild nicht zeigt"
+        },
+        {
+          "min": "30–45",
+          "phase": "uebung",
+          "titel": "Vergleiche und harte Gedanken"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–83",
+          "phase": "aktiv",
+          "titel": "Über Körper reden: Szenen mit Situationskarten"
+        },
+        {
+          "min": "83–95",
+          "phase": "skill",
+          "titel": "Bodyscan: was mein Körper heute getan hat"
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Réckbléck und Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: Gefühlsrad und Anspannung",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Gefühlsrad und Anspannung wie gewohnt, heute bewusst ohne Zusatzfrage, damit niemand schon am Anfang etwas über sich und seinen Körper sagen muss. Die Leitung beginnt; zwischen den Beiträgen wird nicht kommentiert. Wer mag, zeigt nur auf das Rad und hält die Zahl mit den Fingern hoch.",
+          "sagen": [
+            "Wort und Zahl – mehr braucht es heute am Anfang nicht."
+          ],
+          "tipp": "Auf Kleidung, Frisuren oder Aussehen der Jugendlichen nicht eingehen, auch nicht mit einem Kompliment. Das gilt heute für die ganze Einheit.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Vom Selbstwert zum Körper: Regeln für heute",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "An den Eisberg aus der letzten Einheit erinnern: Aussehen stand oben, bei dem, was alle sehen und bewerten. Dann das Thema nennen, die Regeln für heute auf das Plakat schreiben und den ruhigen Ort zeigen. Kurz begründen: Über Körper wird schnell verletzend geredet, auch im Spaß, und viele denken mehr über ihren Körper nach, als sie zeigen.",
+          "sagen": [
+            "Aussehen stand letzte Woche ganz oben auf dem Eisberg. Heute schauen wir, warum es so viel Macht hat.",
+            "Wir reden über Bilder und Beispiele. Über eure Körper redet hier niemand – auch nicht nett."
+          ],
+          "punkte": [
+            "Wir reden über Bilder, Beispiele und Figuren – nicht über die Körper von Menschen hier im Raum.",
+            "Keine Zahlen zu Gewicht, Größe oder Kalorien.",
+            "Keine Kommentare über Aussehen, auch nicht nett gemeinte.",
+            "„Weiter“ ist immer erlaubt, kurz rausgehen auch.",
+            "Was hier gesagt wird, bleibt hier. Wenn jemand in Gefahr ist, muss die Leitung Hilfe holen – und sagt vorher, was sie tut."
+          ]
+        },
+        {
+          "titel": "Was ein Bild nicht zeigt",
+          "dauer": 15,
+          "phase": "input",
+          "text": "Die Vorher-nachher-Beispiele auf dem Tablet zeigen, eines nach dem anderen. Die Gruppe sammelt, was verändert wurde, und die Leitung schreibt mit: Haut, Taille, Beine, Licht, Hintergrund. Dann die Frage, wer an dem Bild verdient – die Marke, die Agentur, die App, die Influencerin. Den Kasten „Was ein Bild nicht zeigt“ auf dem Toolbox-Blatt gemeinsam lesen und ergänzen, welche Tricks die Gruppe noch kennt, etwa den besten von hundert Versuchen, den Winkel von oben, Filter schon in der Kamera. Zum Schluss den Satz aus dem Kasten an die Tafel: Wer sich mit solchen Bildern vergleicht, vergleicht seinen Alltag mit den besten, bearbeiteten Momenten anderer.",
+          "sagen": [
+            "Was hat sich zwischen den beiden Bildern verändert? Seid genau.",
+            "Wer verdient Geld damit, dass ihr euch nach diesem Bild ein bisschen schlechter fühlt?",
+            "Ihr wisst alle, dass Bilder bearbeitet sind. Warum wirken sie trotzdem?"
+          ],
+          "tipp": "Ohne Tablet funktioniert der Einstieg mit Worten: Die Leitung beschreibt, wie ein Werbefoto entsteht – Visagistin, Licht, zweihundert Aufnahmen, Auswahl, Retusche. Wer in Jahr 1 dabei war, erinnert sich an das perfekte Foto vom Imbisstisch.",
+          "wennEsKippt": "Fangen Jugendliche an, die Menschen auf den Beispielbildern zu bewerten, sofort anhalten und auf das Plakat zeigen: Wir reden darüber, was gemacht wurde, nicht über den Menschen. Zeigt jemand Fotos von Mitschülern auf dem Handy, freundlich, aber bestimmt: Handys bleiben heute weg.",
+          "blatt": "koerperbild"
+        },
+        {
+          "titel": "Vergleiche und harte Gedanken",
+          "dauer": 15,
+          "phase": "uebung",
+          "text": "Auf dem Toolbox-Blatt füllt jede Person Aufgabe 1 allein aus: Wie oft vergleiche ich mich, wie geht es mir nach dem Scrollen? Nicht vorlesen, nicht einsammeln. Aufgabe 2 zuerst gemeinsam an der Tafel üben – mit einem harten Gedanken aus der Liste, nicht mit einem eigenen: Was würdest du einer guten Freundin sagen, die so über sich denkt? Dann schreibt jede Person allein. Dazu erklären: Der faire Satz muss nicht jubeln, er muss stimmen.",
+          "sagen": [
+            "Nehmt einen Gedanken, den viele in eurem Alter kennen. Es muss nicht eurer sein.",
+            "Würdet ihr eurer besten Freundin sagen: Mit der Haut kannst du dich nicht zeigen? Was würdet ihr stattdessen sagen?"
+          ],
+          "punkte": [
+            "„Alle anderen sehen besser aus als ich.“",
+            "„Mit diesen Beinen ziehe ich keine kurze Hose an.“",
+            "„Ich bin zu schmächtig, mich nimmt keiner ernst.“",
+            "„Auf Fotos sehe ich immer schrecklich aus.“"
+          ],
+          "tipp": "Aufgabe 3 des Blatts kommt nach dem Bodyscan, Aufgabe 4 und 5 sind ein freiwilliger Plan für die Woche. Heute nicht alles auf einmal.",
+          "wennEsKippt": "Schreibt jemand nichts und starrt auf das Blatt, nicht drängen – Aufgabe 1 reicht heute. Macht sich jemand über die Sätze lustig, etwa mit „Nur Mädchen denken so“, sachlich widersprechen: Jungen vergleichen sich genauso, oft mit Muskeln statt mit der Taille, und reden seltener darüber.",
+          "blatt": "koerperbild"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Gemeinsam essen, Fenster auf. Die Leitung kommentiert heute kein Essen – weder gesund noch ungesund, weder „so viel?“ noch „so wenig?“. Wer beim Imbiss auffällig nichts isst, wird nicht vor der Gruppe darauf angesprochen; die Leitung merkt es sich."
+        },
+        {
+          "titel": "Über Körper reden: Szenen mit Situationskarten",
+          "dauer": 23,
+          "phase": "aktiv",
+          "text": "Die vier Wege vom Schülerblatt vorstellen und zu jedem einen Satz vormachen. Dann ziehen Paare eine Situationskarte, lesen sie und überlegen zwei Minuten, was sie sagen oder tun würden. Jedes Paar spielt seine Szene kurz vor: Den Kommentar spricht immer die Leitung, knapp und nur mit dem Text der Karte; die Antwort gibt eine Person aus dem Paar. Nach jeder Szene fragt die Leitung das Publikum: Welcher der vier Wege war das, und was hätte noch funktioniert? Zum Schluss schreibt jede Person ihre eigenen Sätze auf das Blatt, und alle schütteln die Rollen ab: Hände ausschütteln, einmal den eigenen Namen sagen.",
+          "sagen": [
+            "Auf Zoés Satz „Ich bin so fett“ kommt schnell: Bist du doch gar nicht. Warum hilft das nicht wirklich?",
+            "Ihr müsst nicht die Heldin sein. Manchmal reicht eine private Nachricht: Das war daneben, alles okay bei dir?",
+            "Die Kommentare spreche ich als Rolle, nicht als ich. Danach bin ich wieder ich."
+          ],
+          "tipp": "Die Karten mit Kommentaren über andere – Klassenchat, Punkte vergeben, Umkleide – eignen sich besonders für den Anfang, weil niemand für sich selbst antworten muss. Bei wenig Energie die Karten im Sitzen besprechen und nur zwei Szenen spielen; bei nur zwei Jugendlichen antworten beide abwechselnd.",
+          "wennEsKippt": "Wird im Spiel etwas ausgeschmückt oder gegen jemanden im Raum gerichtet, sofort abbrechen: Gespielt wird nur, was auf der Karte steht. Erzählt jemand, dass ihm so etwas selbst passiert, würdigen, nicht vertiefen und ein Gespräch nach der Einheit anbieten.",
+          "blatt": "skills-koerper-kommentare"
+        },
+        {
+          "titel": "Bodyscan: was mein Körper heute getan hat",
+          "dauer": 12,
+          "phase": "skill",
+          "text": "Die Kurzfassung des Bodyscans aus dem Methoden-Pool anleiten, sitzend oder liegend, Augen offen oder zu. Heute mit einem anderen Blick: bei jedem Körperteil nicht auf das Aussehen achten, sondern darauf, was er heute schon getan hat. Danach schreibt jede Person auf dem Toolbox-Blatt die Satzanfänge in Aufgabe 3. Wer mag, sagt einen Satz in die Runde.",
+          "sagen": [
+            "Deine Füße haben dich heute schon ein paar tausend Schritte getragen. Spür sie einen Moment.",
+            "Du musst deinen Körper nicht toll finden. Es reicht, ihn für einen Moment zu bemerken."
+          ],
+          "punkte": [
+            "Füße: Sie haben dich heute zum Bus, durch die Schule und hierher getragen.",
+            "Beine und Rücken: Sie halten dich aufrecht, ohne dass du daran denkst.",
+            "Bauch und Brust: Der Atem kommt und geht, auch jetzt, ganz von selbst.",
+            "Hände und Arme: Sie haben heute geschrieben, getragen, gewunken, getippt.",
+            "Gesicht: Es hat heute schon gelacht oder gegähnt – beides zählt."
+          ],
+          "tipp": "„Du musst deinen Körper nicht lieben“ entlastet viele Jugendliche mehr als jede Aufforderung zur Selbstliebe. Ihn neutral wahrzunehmen, ist ein realistisches Ziel.",
+          "wennEsKippt": "Wird jemand beim Bodyscan unruhig oder wirkt bedrückt, darf er jederzeit die Augen öffnen, sich aufsetzen oder ans Fenster gehen. Danach kurz und unauffällig nachfragen, nicht vor der Gruppe.",
+          "blatt": "koerperbild"
+        },
+        {
+          "titel": "Réckbléck und Skills-Pass",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Blitzlicht: ein Satz zu heute – über Bilder, Worte oder den Körper, was jede Person möchte – und die Anspannung von 0 bis 100. Dann der Eintrag in den Skills-Pass und der Stempel. Zum Schluss auf die Hilfe-Kästen der beiden Blätter zeigen: Wenn Gedanken über Aussehen, Essen oder Gewicht viel Raum einnehmen, gibt es Menschen, die zuhören – hier, beim SePAS und am Kanner- a Jugendtelefon. Die Leitung bietet ein Gespräch nach der Einheit an und bespricht ihre Beobachtungen danach im Team.",
+          "sagen": [
+            "Für den Pass: Welcher Satz über Körper – über deinen oder den von anderen – soll bleiben?",
+            "Und eure Zahl zum Schluss? Ich bin nach der Stunde noch ein paar Minuten hier, falls jemand reden möchte."
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Nächstes Mal geht es um die Stimme im Kopf, die am härtesten urteilt – eure eigene – und darum, wie man mit sich redet wie mit einem guten Freund.",
+      "hintergrund": "Im Jugendalter hängt das allgemeine Selbstwertgefühl enger mit dem wahrgenommenen Aussehen zusammen als mit jedem anderen Bereich (Harter, 2012), und die Bewertung durch Gleichaltrige wiegt besonders schwer (Steinberg, 2014). Soziale Medien liefern dafür ständig Vergleichsbilder: In einem Experiment verschlechterte schon ein kurzer Aufenthalt auf Facebook die Stimmung junger Frauen, und wer sich häufig vergleicht, war danach unzufriedener mit Gesicht, Haaren und Haut (Fardouly et al., 2015). Die Einheit setzt an drei Stellen an: verstehen, wie Bilder entstehen und wer daran verdient; harte Gedanken mit der Freundesfrage prüfen (Beck, 2011); den Blick vom Aussehen auf das lenken, was der Körper tut – kurze Schreibübungen dazu steigerten bei jungen Frauen die Wertschätzung des eigenen Körpers (Alleva et al., 2015). Der Bodyscan stammt aus achtsamkeitsbasierten Programmen (Kabat-Zinn, 1990) und wird hier bewusst neutral angeleitet: bemerken statt bewerten.",
+      "quellen": [
+        "Harter, S. (2012). The Construction of the Self (2nd ed.). New York: Guilford.",
+        "Steinberg, L. (2014). Age of Opportunity: Lessons from the New Science of Adolescence. Boston: Houghton Mifflin Harcourt.",
+        "Fardouly, J., Diedrichs, P. C., Vartanian, L. R. & Halliwell, E. (2015). Social comparisons on social media: The impact of Facebook on young women’s body image concerns and mood. Body Image, 13, 38–45.",
+        "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
+        "Alleva, J. M., Martijn, C., Van Breukelen, G. J. P., Jansen, A. & Karos, K. (2015). Expand Your Horizon: A programme that improves body image and reduces self-objectification by training women to focus on body functionality. Body Image, 15, 81–89.",
+        "Kabat-Zinn, J. (1990). Full Catastrophe Living. New York: Delacorte."
+      ],
+      "achtung": "Körperbild berührt Essstörungen, Mobbingerfahrungen und Scham. In der Gruppe wird über niemandes Körper gesprochen, Zahlen zu Gewicht, Größe oder Kalorien fallen nicht – auch nicht von der Leitung. Warnzeichen für eine Essstörung sind etwa auffälliger Gewichtsverlust, ausgelassene Mahlzeiten, sehr strenge Essensregeln, übermäßiger Sport, Verschwinden nach dem Essen oder ständige abwertende Aussagen über den eigenen Körper. Dann nicht in der Gruppe ansprechen und keine Diagnose stellen, sondern die Person nach der Einheit ruhig und mit eigenen Beobachtungen ansprechen („Mir ist aufgefallen …, ich mache mir Sorgen“), nichts versprechen, was man nicht halten kann, die zuständige Leitung (Responsable) am selben Tag informieren und mit dem SePAS oder der Schulärztin bzw. dem Schularzt das weitere Vorgehen abstimmen; die Eltern werden nach Hausregel einbezogen. Bei Hinweisen auf Selbstverletzung oder Suizidgedanken nach dem internen Schutzkonzept handeln; bei akuter Gefahr, etwa Kreislaufproblemen oder Ohnmacht, Notruf 112 und die Person nicht allein lassen. Bodyshaming in der Gruppe wird sofort gestoppt."
+    },
+    {
+      "id": "j2-e05",
+      "nr": 5,
+      "jahr": 2,
+      "modul": "j2-m1",
+      "titel": "Freundlich mit mir selbst",
+      "kurz": "Die meisten reden mit sich härter als mit jedem anderen: Die Gruppe lernt den inneren Kritiker kennen, erlebt im Trainer-Duell, was ein freundlicher Ton bewirkt, und findet einen Satz für schwere Momente.",
+      "dauer": 100,
+      "ziele": [
+        "beschreiben, wie der innere Kritiker spricht und warum er oft härter ist als zu jedem Freund",
+        "erleben im Spiel, wie ein abwertender und ein freundlich-klarer Ton auf Gefühl und Motivation wirken",
+        "wenden die Selbstmitgefühls-Pause in drei Schritten an: Das ist gerade schwer – Das kennen viele – Was brauche ich jetzt?",
+        "formulieren einen Satz, mit dem sie sich in schweren Momenten stärken, und tragen einen Skill in den Kompass ein"
+      ],
+      "material": [
+        "Gefühlsrad und Anspannungsskala",
+        "Tafel mit zwei Spalten: „Der innere Kritiker sagt …“ und „Der innere Freund sagt …“",
+        "Schülerblatt „Mein innerer Freund“ für jede Person, Scheren",
+        "Für das Trainer-Duell: ein Papierkorb oder Eimer, zehn Bälle aus zerknülltem Altpapier oder Sockenbälle, Kreppband für eine Wurflinie",
+        "Zwei Schilder oder Kappen: „Coach Brüll“ und „Coach Klar“",
+        "Kleine Zettel für den Kritiker-Wurf",
+        "Laminierfolie oder breites Klebeband für die Kärtchen (optional)",
+        "Skills-Kompass, Skills-Pässe, Stempel, Imbiss und Getränke"
+      ],
+      "vorbereitung": [
+        "Die Wurflinie etwa vier Meter vor dem Korb kleben und die Papierbälle knüllen.",
+        "Die Rolle von Coach Brüll einmal laut üben: übertrieben und erkennbar gespielt, gegen den Wurf und nie gegen die Person, ohne Schimpfwörter. Nachbarräume vorwarnen, dass es kurz laut wird."
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-innerer-freund",
+        "skills-kompass",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Was sagst du, wenn dir das Handy runterfällt?"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Vom Körper zur Stimme im Kopf"
+        },
+        {
+          "min": "15–30",
+          "phase": "input",
+          "titel": "Mila und der doppelte Maßstab"
+        },
+        {
+          "min": "30–45",
+          "phase": "uebung",
+          "titel": "Mein innerer Kritiker, mein innerer Freund"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–82",
+          "phase": "aktiv",
+          "titel": "Trainer-Duell: Coach Brüll gegen Coach Klar"
+        },
+        {
+          "min": "82–92",
+          "phase": "skill",
+          "titel": "Skill: die Selbstmitgefühls-Pause"
+        },
+        {
+          "min": "92–100",
+          "phase": "abschluss",
+          "titel": "Kompass, Réckbléck und Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: Was sagst du, wenn dir das Handy runterfällt?",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Gefühlsrad und Anspannung wie gewohnt. Dazu eine kleine, freiwillige Frage: Was sagt ihr zu euch selbst, wenn euch das Handy runterfällt – nur ein Wort oder ein Laut, ohne Erklärung? Die Leitung beginnt ehrlich. Die Antworten werden nicht gedeutet; sie sind der Einstieg in das Thema.",
+          "sagen": [
+            "Wort, Zahl – und wenn ihr mögt: Was sagt ihr zu euch, wenn euch das Handy runterfällt?",
+            "Bei mir kommt meistens: Na toll, typisch. Mal sehen, ob ich damit allein bin."
+          ],
+          "tipp": "Antworten wie „Du Idiot“ kommen oft mit einem Lachen. Nicht ernster machen, als es ist, aber merken: Um genau diesen Ton geht es heute.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Vom Körper zur Stimme im Kopf",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "Kurz auf die letzten zwei Einheiten schauen: Der Wert hängt nicht an Noten, und Bilder im Netz zeigen fast nie die Wirklichkeit. Trotzdem gibt es eine Stimme, die weiter urteilt – die eigene. An Jahr 1 anknüpfen, ohne es vorauszusetzen: Damals wurden Gedanken geprüft wie von Detektiven, ob sie überhaupt stimmen. Heute geht es um etwas anderes: Wie rede ich mit mir, wenn wirklich etwas schiefgegangen ist?",
+          "sagen": [
+            "Manchmal stimmt der Gedanke ja: Ich habe die Arbeit wirklich verhauen. Dann ist die Frage nicht mehr, ob es stimmt, sondern wie ihr mit euch redet.",
+            "Heute geht es um den Ton im eigenen Kopf."
+          ]
+        },
+        {
+          "titel": "Mila und der doppelte Maßstab",
+          "dauer": 15,
+          "phase": "input",
+          "text": "Die Situation vorlesen: Mila hält in Französisch ein Referat, bleibt nach zwei Sätzen hängen, wird rot, zwei in der letzten Reihe lachen. Die Gruppe sammelt an der Tafel, was Milas innere Stimme auf dem Heimweg zu ihr sagen könnte, und danach, was ihre beste Freundin ihr sagen würde. Beide Spalten vergleichen: Würdet ihr so mit einer Freundin reden wie Mila mit sich selbst? Die Spalten benennen – links der innere Kritiker, rechts der innere Freund – und die drei Teile von Selbstmitgefühl neben die rechte Spalte schreiben.",
+          "sagen": [
+            "Wenn Chiara nach dem Referat so rot geworden wäre: Hättet ihr gesagt, wie peinlich, du Versagerin?",
+            "Der innere Kritiker will euch oft schützen – vor Blamage, vor Fehlern. Er macht es nur mit den falschen Mitteln.",
+            "Freundlich heißt nicht schönreden. Der innere Freund sagt nicht: Das war perfekt. Er sagt: Das war schwer, und du hast es versucht."
+          ],
+          "tabelle": {
+            "spalten": [
+              "Der innere Kritiker sagt …",
+              "Der innere Freund sagt …"
+            ],
+            "zeilen": [
+              [
+                "„Wie peinlich. Alle haben es gesehen.“",
+                "„Das war ein unangenehmer Moment. Das darf wehtun.“"
+              ],
+              [
+                "„Du bist die Einzige, die so was nicht kann.“",
+                "„Hängen bleiben passiert fast allen einmal.“"
+              ],
+              [
+                "„Nie wieder meldest du dich.“",
+                "„Was hilft dir beim nächsten Mal? Vorher laut üben, mit Chiara als Publikum?“"
+              ]
+            ]
+          },
+          "punkte": [
+            "Achtsam: merken, was los ist – „Das ist gerade schwer.“ Nicht wegdrücken, nicht aufbauschen.",
+            "Menschlich: „Das kennen viele.“ Pannen gehören zum Leben, nicht nur zu meinem.",
+            "Freundlich: „Was brauche ich jetzt?“ So mit mir reden, wie ich mit einer guten Freundin rede."
+          ],
+          "tipp": "Den Kritiker nicht zum Feind erklären. Jugendliche können mehr damit anfangen, wenn man ihn als übereifrigen Trainer beschreibt, der es gut meint und schlecht macht – das bereitet das Trainer-Duell vor.",
+          "wennEsKippt": "Kommt der Einwand „Wenn ich nett zu mir bin, werde ich faul“, ernst nehmen und zurückfragen: Welcher Trainer holt aus einer Mannschaft mehr raus – der, der brüllt, oder der, der klar sagt, was besser werden muss? Genau das wird nach der Pause getestet."
+        },
+        {
+          "titel": "Mein innerer Kritiker, mein innerer Freund",
+          "dauer": 15,
+          "phase": "uebung",
+          "text": "Das Schülerblatt austeilen. Aufgabe 1 gemeinsam anschauen: Nora hat ihr Sportzeug vergessen, ihr Kritiker legt los, und jede Person schreibt in die leere Denkblase, was Noras innerer Freund sagen würde; zwei, drei lesen freiwillig vor. Aufgabe 2 allein: zwei Sätze des eigenen Kritikers und die Antwort des inneren Freundes – eigene Sätze oder typische aus dem Kasten. Wer mag, gibt dem eigenen Kritiker einen Namen; das hilft, ihn zu erkennen, wenn er wieder loslegt. Aus Aufgabe 2 wird nichts vorgelesen, außer jemand möchte.",
+          "sagen": [
+            "Schreibt, was eine gute Freundin Nora sagen würde – ehrlich, nicht schönredend.",
+            "Wie heißt euer Kritiker? Manche nennen ihn den Meckerer, andere den Chef. Den Namen müsst ihr niemandem sagen."
+          ],
+          "tipp": "Den Kasten mit typischen Kritiker-Sätzen ausdrücklich anbieten: Viele können eigene Sätze erst aufschreiben, wenn sie sehen, dass andere sie auch kennen.",
+          "wennEsKippt": "Findet jemand keinen freundlichen Satz, die Frage drehen: Was würdest du deinem kleinen Bruder, deiner Cousine, deinem besten Kumpel sagen? Schreibt jemand erschreckend harte Sätze, nicht vor der Gruppe reagieren, sondern nach der Einheit behutsam nachfragen.",
+          "blatt": "skills-innerer-freund"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Gemeinsam essen, das Thema ruht. Die Leitung baut währenddessen die Wurfstation auf: Linie, Korb, Papierbälle, die beiden Schilder."
+        },
+        {
+          "titel": "Trainer-Duell: Coach Brüll gegen Coach Klar",
+          "dauer": 22,
+          "phase": "aktiv",
+          "text": "Jede Person wirft dreimal einen Papierball aus vier Metern in den Korb, zuerst mit Coach Brüll, dann mit Coach Klar – beide spielt die Leitung mit Schild oder Kappe. Vorher ankündigen: Coach Brüll ist eine übertriebene Rolle, er schimpft über den Wurf und nie über die Person, und wer ihn nicht hören will, wirft in dieser Runde ohne Coach. Nach beiden Runden fragen: Bei welchem Coach wart ihr ruhiger, bei welchem würdet ihr weitertrainieren? In der dritten Runde coacht sich jede Person selbst als Coach Klar, halblaut oder im Kopf, gern mit dem eigenen Namen. Zum Schluss der Kritiker-Wurf: Wer mag, schreibt einen Satz seines Kritikers auf einen Zettel, knüllt ihn und wirft ihn in den Korb; die Zettel werden danach ungelesen vernichtet.",
+          "sagen": [
+            "Coach Brüll ist eine Rolle. Er meckert über den Wurf, nie über euch – und wer ihn nicht hören will, wirft ohne ihn.",
+            "Bei welchem Coach wollt ihr nächste Woche wieder trainieren?",
+            "Und welcher von beiden redet meistens in eurem Kopf?"
+          ],
+          "punkte": [
+            "Coach Brüll: „Was war das denn? Das kann meine Oma besser.“ – „Daneben. Wie immer.“ – „Streng dich mal an.“",
+            "Coach Klar: „Knapp. Etwas weniger Kraft.“ – „Passiert. Nächster Wurf.“ – „Den Arm hast du schon besser gestreckt. Genau so.“",
+            "Selbst-Coaching: „Ruhig, Noah. Weniger Kraft. Du hast Zeit.“ – mit dem eigenen Namen, wie mit einem Freund."
+          ],
+          "tipp": "Ob mit Coach Klar wirklich mehr Treffer fallen, ist nicht entscheidend; oft ist der Unterschied klein. Wichtig ist, wie es sich angefühlt hat und bei wem man weitermachen will – wer das auswertet, landet von selbst bei der Frage, wie man mit sich selbst redet. Bei wenig Energie wird im Sitzen geworfen.",
+          "wennEsKippt": "Macht die Gruppe Coach Brüll nach und beschimpft sich gegenseitig, sofort stoppen: Brüllen darf nur die Leitung, und nur über Würfe. Wirkt jemand bei Coach Brüll getroffen, die Runde für ihn beenden und ihn Punkte zählen lassen. Bei Regen oder wenig Platz geht das Spiel mit einem Eimer auf dem Tisch aus zwei Metern; bei nur zwei Jugendlichen wirft die Leitung mit, und die beiden coachen sie als Coach Klar."
+        },
+        {
+          "titel": "Skill: die Selbstmitgefühls-Pause",
+          "dauer": 10,
+          "phase": "skill",
+          "text": "Im Sitzen, Augen zu oder Blick auf den Boden. Die Leitung bittet, an eine kleine, alltägliche Panne zu denken – kein großes Drama – und leitet die Schritte aus der Liste langsam an, mit Pausen dazwischen. Wer mag, legt dabei eine Hand auf die Brust oder die Faust in die andere Hand; wer nicht mag, lässt die Hände im Schoß. Danach schreibt jede Person ihren eigenen Satz für schwere Momente auf das Kärtchen und schneidet es aus. Kurz erklären: Die Pause dauert keine Minute und geht überall – im Bus, vor der Klassenarbeit, nach einer blöden Nachricht.",
+          "sagen": [
+            "Nur eine kleine Panne – ein vergessenes Heft, eine blöde Nachricht. Wir üben mit Kleinem, damit es bei Großem klappt.",
+            "Eure Hand darf euch zeigen, dass ihr auf eurer Seite steht. Wem das komisch vorkommt: Hände in den Schoß, das wirkt auch."
+          ],
+          "punkte": [
+            "Denk an eine kleine Panne dieser Woche. Merk, wie es sich anfühlt – vielleicht im Bauch, vielleicht im Hals.",
+            "Sag innerlich: Das ist gerade schwer.",
+            "Sag innerlich: Das kennen viele. Ich bin damit nicht allein.",
+            "Frag dich: Was brauche ich jetzt? Was würde ich einer guten Freundin sagen?",
+            "Atme einmal lang aus. Öffne die Augen, wenn du so weit bist."
+          ],
+          "tipp": "Wer aus Jahr 1 kommt, kennt eine ähnliche Übung als „freundliche Stimme“. Das ruhig sagen: Wiederholen ist Training, kein Rückschritt.",
+          "wennEsKippt": "Kichern gehört bei Übungen mit der Hand auf der Brust dazu; nicht ermahnen, ruhig weitersprechen. Wird jemand von einer Erinnerung überrollt, darf er die Augen öffnen und etwas anderes tun, etwa 5-4-3-2-1 im Raum; nach der Einheit kurz nachfragen.",
+          "blatt": "skills-innerer-freund"
+        },
+        {
+          "titel": "Kompass, Réckbléck und Skills-Pass",
+          "dauer": 8,
+          "phase": "abschluss",
+          "text": "Das Modul ist geschafft: Jede Person schlägt den Skills-Kompass auf und schreibt ins Feld „1 · Selbstwert und Körper“ den Skill, der ihr hilft, wenn sie an sich zweifelt – vielleicht die Selbstmitgefühls-Pause, der Satz auf dem Kärtchen oder die Quellen aus dem Eisberg –, und wann sie ihn einsetzt. Dann ein Blitzlicht: Welcher Coach hat heute gewonnen? Zum Schluss der Satz im Skills-Pass und der Stempel; die Kärtchen kommen ins Portemonnaie oder in die Handyhülle, und die Leitung erklärt den Test für die Woche auf dem Blatt.",
+          "sagen": [
+            "Welcher Skill hilft dir, wenn du an dir zweifelst – und wann setzt du ihn ein?",
+            "Ein Wort: Welcher Coach hat heute gewonnen?"
+          ],
+          "blatt": "skills-kompass"
+        }
+      ],
+      "bruecke": "Nächstes Mal beginnt Modul 2: Stress und Schule – wie ihr gut durch Lernen, Prüfungen und volle Wochen kommt. Und wer mag, erzählt im Check-in von seinem Test mit der Selbstmitgefühls-Pause.",
+      "hintergrund": "Selbstmitgefühl heißt nach Neff (2003), sich in schwierigen Momenten so zu begegnen wie einem guten Freund. Es verbindet drei Teile: Freundlichkeit statt harter Selbstverurteilung, das Wissen, dass Scheitern zum Menschsein gehört, statt sich damit allein zu fühlen, und achtsames Wahrnehmen statt Grübeln; die Selbstmitgefühls-Pause nach Neff (2011) greift sie auf. Bei Jugendlichen geht es mit weniger Angst und Niedergeschlagenheit einher (Neff & McGehee, 2010). Anders als Selbstwert setzt es nicht voraus, besser zu sein als andere, und bequem macht es nicht: Nach einem Misserfolg lernten Studierende, die freundlich mit sich umgingen, sogar länger (Breines & Chen, 2012). Die Frage, was man einem Freund sagen würde, nutzt auch die kognitive Verhaltenstherapie (Beck, 2011). Wer mit sich in der zweiten Person oder mit dem eigenen Namen spricht, gewinnt Abstand und reagiert weniger heftig (Kross & Ayduk, 2017); das Selbst-Coaching im Spiel nutzt diesen Effekt.",
+      "quellen": [
+        "Neff, K. D. (2003). Self-compassion: An alternative conceptualization of a healthy attitude toward oneself. Self and Identity, 2(2), 85–101.",
+        "Neff, K. D. (2011). Self-Compassion: The Proven Power of Being Kind to Yourself. New York: William Morrow.",
+        "Neff, K. D. & McGehee, P. (2010). Self-compassion and psychological resilience among adolescents and young adults. Self and Identity, 9(3), 225–240.",
+        "Breines, J. G. & Chen, S. (2012). Self-compassion increases self-improvement motivation. Personality and Social Psychology Bulletin, 38(9), 1133–1143.",
+        "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
+        "Kross, E. & Ayduk, O. (2017). Self-distancing: Theory, research, and current directions. Advances in Experimental Social Psychology, 55, 81–136."
+      ],
+      "achtung": "Ein sehr harter innerer Kritiker kann Teil einer Depression sein. Werden auf dem Blatt oder in der Runde Sätze sichtbar wie „Ich bin nichts wert“ oder „Ohne mich wären alle besser dran“ oder gibt es Hinweise auf Selbstverletzung oder Suizidgedanken: nicht in der Gruppe vertiefen, die Person nach der Einheit ruhig ansprechen und direkt nachfragen, nichts versprechen, was man nicht halten kann, nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) am selben Tag informieren; bei akuter Gefahr Notruf 112 und die Person nicht allein lassen. Coach Brüll ist nur eine Rolle der Leitung: keine Schimpfwörter, keine Bemerkungen über Körper, Herkunft oder Schulleistung, und wer ihn nicht hören will, wirft ohne ihn. Jugendliche, die zu Hause viel Abwertung erleben, können beim Spiel stark reagieren; das im Blick behalten und später nachfragen. Die Zettel vom Kritiker-Wurf werden ungelesen vernichtet."
+    }
+  ]
+}

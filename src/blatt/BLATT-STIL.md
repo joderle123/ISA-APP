@@ -106,7 +106,7 @@ dem Baustein, zu dem sie gehört, und bleibt mit ihm auf einer Seite.
 | `leiter` | `stufen` (3–7), `oben?`, `unten?`, `beispiele?` | Mut-Leiter, Ziel-Treppe (Stufe 1 unten). |
 | `zielscheibe` | `ringe` (2–4, außen → innen), `mitte?` | Nähe-Kreise, Wichtigkeit. |
 | `hand` | `finger?` (5 Hinweise), `mitte?` | Fünf Helfer, fünf Stärken. |
-| `mindmap` | `mitte`, `aeste?` ('' = leer), `anzahl?` | Sammeln (max. 8 Äste). |
+| `mindmap` | `mitte`, `aeste?` ('' = leer), `anzahl?` | Sammeln (max. 6 Äste; ab 7 überlappen sich die Kästen). |
 | `schritte` | `items: [{titel, text?}]`, `stil?` (liste/kette), `linien?` | Abläufe. `kette` = waagrecht, max. 4, Titel ≤ 26 Zeichen. |
 | `plan` | `ziel?` ('' = Linie), `zeilen`, `tage?`, `symbol?` (gesicht/kasten/stern) | Wochen-Tracker. |
 | `tagesplan` | `zeilen: [{zeit?, text?, bild?}]`, `leer?` | Tagesablauf. |

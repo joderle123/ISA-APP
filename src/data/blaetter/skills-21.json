@@ -1,0 +1,2172 @@
+[
+  {
+    "id": "skills-monatsbudget",
+    "bereich": "skills",
+    "thema": "zukunft",
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "25 Min.",
+    "eldib": [
+      "KOG-52",
+      "V-32",
+      "V-20",
+      "KOG-60"
+    ],
+    "schlagworte": [
+      "Budget",
+      "Taschengeld",
+      "Sparen",
+      "Bedürfnisse und Wünsche",
+      "Kauf-Stopp",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:pig-money",
+    "verwandt": [
+      "skills-geld-parcours"
+    ],
+    "kurs": [
+      "j3-e14"
+    ],
+    "de": {
+      "titel": "Mein Monatsbudget",
+      "untertitel": "Wohin geht mein Geld – und wer entscheidet das: ich oder die Werbung?",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Brauche ich das – oder will ich das? Kreuze an. Manches ist beides."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "brauche ich",
+            "beides",
+            "will ich"
+          ],
+          "items": [
+            "Winterjacke",
+            "Markensneaker",
+            "Handyguthaben",
+            "Pausensnack",
+            "Skin für ein Game",
+            "Geschenk für die Schwester",
+            "Streaming-Abo",
+            "Schulhefte"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Bedürfnis oder Wunsch?",
+          "text": "Ein Bedürfnis fehlt dir, wenn du es nicht hast: Essen, warme Kleidung, erreichbar sein, Schulsachen. Ein Wunsch macht das Leben schöner, aber es geht auch ohne. Oft steckt beides in einer Sache: Eine Jacke brauchst du, die Markenjacke willst du."
+        },
+        {
+          "art": "geschichte",
+          "titel": "Inês plant ihren Monat",
+          "bild": "figur:jana:verwirrt",
+          "text": "Inês ist 15. Sie bekommt jeden Monat 40 Euro Taschengeld und verdient mit Babysitten etwa 20 Euro dazu. Ihr Handyguthaben kostet 10 Euro im Monat, ihr Anteil am Streaming-Abo der Familie 5 Euro. Sie spart auf Kopfhörer für 60 Euro. Letzten Monat war ihr Geld nach zwei Wochen weg – und sie wusste nicht genau, wofür. (Alle Beträge sind Beispiele.)"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Plane den Monat für Inês mit den drei Töpfen: erst die festen Kosten, dann das Sparen, dann den Alltag.",
+          "hinweis": "Die Kopfhörer will Inês in vier Monaten haben."
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 1,
+          "items": [
+            "Topf 1 – feste Kosten: … Euro für …",
+            "Topf 2 – Sparen: … Euro im Monat, damit …",
+            "Topf 3 – Alltag: … Euro im Monat, also … Euro pro Woche"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Die drei Töpfe",
+          "punkte": [
+            "Feste Kosten: Was jeden Monat sicher kommt, plant man zuerst ein.",
+            "Sparen: gleich am Monatsanfang zur Seite legen – nicht am Ende, was übrig bleibt.",
+            "Alltag: Der Rest wird auf die Wochen verteilt. Wer den Wochenbetrag kennt, merkt früh, wenn es knapp wird."
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "achtung",
+          "titel": "Der Monatspreis täuscht",
+          "text": "Bei Abos, Handyverträgen und Ratenkäufen zählt der Gesamtpreis: Monatspreis mal Anzahl der Monate, dazu alles, was man einmal zahlt. Ein Abo für 9,99 Euro im Monat kostet im Jahr fast 120 Euro."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dein eigener Plan – nur für dich. Du kannst auch für später planen, etwa für deinen ersten Lohn."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Einnahmen",
+            "Feste Kosten",
+            "Sparen",
+            "Alltag"
+          ],
+          "zeilen": 3,
+          "beispiel": [
+            "Taschengeld: 30",
+            "Handy: 10",
+            "Fahrrad: 5",
+            "15, pro Woche 3,75"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Du entscheidest, was du teilst.",
+          "text": "Dein eigener Plan bleibt bei dir. In der Gruppe reden wir nur über Inês."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Der Kauf-Stopp: Plane, was du beim nächsten Spontankauf machst."
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Wenn ich im Warenkorb auf „Kaufen“ tippen will, obwohl es nicht auf meinem Plan steht,",
+              "dann": "lasse ich ihn eine Nacht liegen und frage mich morgen: Brauche ich das – oder will ich das?"
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Wenn das Geld nicht reicht",
+          "punkte": [
+            "Früh reden: mit deinen Eltern, einer Vertrauensperson oder dem SePAS.",
+            "Keine neuen Schulden machen, um alte zu bezahlen.",
+            "Wirst du unter Druck gesetzt, Geld oder Guthabenkarten zu schicken: nicht zahlen, sofort einer erwachsenen Vertrauensperson Bescheid sagen."
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 1,
+          "items": [
+            "Hilfe bei Schulden in Luxemburg (trägt die Leitung ein): …"
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen unterscheiden Bedürfnisse und Wünsche, planen für eine Beispielperson ein Monatsbudget nach dem Drei-Töpfe-Prinzip, übertragen es auf sich und legen einen Wenn-dann-Plan gegen Spontankäufe fest.",
+        "ablauf": [
+          "Aufgabe 1 (5 Min.) nach der Übung an der Linie: allein ankreuzen, kurz vergleichen.",
+          "Inês (10 Min.): Geschichte lesen, die drei Töpfe mit Umschlägen zeigen, Aufgabe 2 zu zweit. Lösung: 15 Euro feste Kosten, 15 Euro Sparen, 30 Euro Alltag, also 7,50 Euro pro Woche.",
+          "Aufgabe 3 (5 Min.): allein und privat; nicht einsammeln, nicht vorlesen.",
+          "Aufgabe 4 im Skill-Teil (5 Min.): Kauf-Stopp als Wenn-dann-Plan; wer mag, liest vor."
+        ],
+        "hintergrund": "Finanzielle Grundbildung – budgetieren, Gesamtkosten erkennen, sparen – hängt mit weniger Überschuldung und mehr Rücklagen zusammen (Lusardi & Mitchell, 2014). Das Drei-Töpfe-Prinzip ist bewusst einfach: Wer zuerst feste Kosten und Sparen einplant, muss am Monatsende nicht auf einen Rest hoffen. Jugendliche reagieren besonders stark auf unmittelbare Belohnungen (Steinberg, 2014). Der Kauf-Stopp setzt dem eine konkrete Aufschub-Strategie entgegen (Mischel, 2014), als Wenn-dann-Plan formuliert, damit sie in der Situation abrufbar ist (Gollwitzer, 1999).",
+        "quellen": [
+          "Lusardi, A. & Mitchell, O. S. (2014). The economic importance of financial literacy: Theory and evidence. Journal of Economic Literature, 52(1), 5–44.",
+          "Steinberg, L. (2014). Age of Opportunity: Lessons from the New Science of Adolescence. Boston: Houghton Mifflin Harcourt.",
+          "Mischel, W. (2014). The Marshmallow Test. New York: Little, Brown.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "differenzierung": {
+          "leichter": "Die Beträge stehen an der Tafel; gerechnet werden nur Alltags-Topf und Wochenbetrag.",
+          "schwerer": "Im dritten Monat geht das Display von Inês kaputt: 90 Euro. Was ändert sich?"
+        },
+        "impulse": [
+          "Warum ist Geld oft nach zwei Wochen weg, obwohl man nichts Großes gekauft hat?",
+          "Welche Gefühle machen euch Lust aufs Kaufen?"
+        ],
+        "tipps": [
+          "Vorher eine Luxemburger Schuldnerberatung heraussuchen; sie kommt in den Hilfe-Kasten.",
+          "Beispielbeträge an die Gruppe anpassen; die Rechnung bleibt dieselbe."
+        ],
+        "achtung": "Keine eigenen Beträge erfragen. Hinweise auf Schulden, Geldforderungen unter Druck oder Glücksspiel: Einzelgespräch, die zuständige Leitung (Responsable) informieren.",
+        "material": "Blatt für jede Person, Taschenrechner, drei Umschläge"
+      }
+    }
+  },
+  {
+    "id": "skills-geld-parcours",
+    "bereich": "skills",
+    "thema": "zukunft",
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "gruppe"
+    ],
+    "dauer": "25 Min.",
+    "eldib": [
+      "KOG-52",
+      "KOG-60",
+      "V-18",
+      "V-32"
+    ],
+    "schlagworte": [
+      "Planspiel",
+      "Handyvertrag",
+      "Ratenkauf",
+      "Onlinekauf",
+      "Abo-Falle",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:coin",
+    "verwandt": [
+      "skills-monatsbudget"
+    ],
+    "kurs": [
+      "j3-e14"
+    ],
+    "de": {
+      "titel": "Geld-Parcours: ein Monat im Zeitraffer",
+      "untertitel": "Ereigniskarten und Kassenbuch – vier Wochen, 120 Euro, eure Entscheidungen",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "So spielt ihr",
+          "punkte": [
+            "Ihr spielt zu zweit und habt 120 Euro für den ganzen Monat. Mehr kommt nur, wenn eine Karte es sagt.",
+            "Alle Teams gehen gemeinsam von Woche zu Woche. An jeder Station lest ihr die Karten dieser Woche, entscheidet, bezahlt bei der Leitung und tragt alles ins Kassenbuch ein.",
+            "Wo gerechnet werden muss, rechnet ihr, bevor ihr zahlt.",
+            "Wer ins Minus rutscht, braucht eine Lösung: verzichten, verkaufen, eine Rate vereinbaren oder leihen – mit allen Folgen.",
+            "Alle Beträge sind Beispiele."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ereigniskarten: ausschneiden und nach Wochen an die vier Stationen legen.",
+          "symbole": [
+            "schneiden",
+            "gruppe"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 3,
+          "karten": [
+            {
+              "titel": "Woche 1 · Das Handy-Angebot",
+              "text": "A: neues Handy für 1 Euro, dazu 30 Euro im Monat, 24 Monate Vertrag. B: gebrauchtes Handy für 180 Euro, dazu Prepaid für 10 Euro im Monat. Was kostet jedes in zwei Jahren? Oder ihr behaltet das alte Handy."
+            },
+            {
+              "titel": "Woche 1 · Geburtstag",
+              "text": "Deine beste Freundin wird 16. Die anderen legen zusammen, 10 Euro pro Person. Oder du machst selbst ein Geschenk – das kostet Zeit, aber kaum Geld."
+            },
+            {
+              "titel": "Woche 2 · Nur heute",
+              "text": "Die Sneaker, die du seit Wochen anschaust: heute 60 statt 100 Euro. Das Angebot endet um Mitternacht. Kaufen oder Kauf-Stopp?"
+            },
+            {
+              "titel": "Woche 2 · Das Probeabo",
+              "text": "Vor einem Monat hast du eine App gratis getestet. Heute wurden 12 Euro abgebucht, weil du nicht gekündigt hast. Zahlen und kündigen – oder weiterlaufen lassen?"
+            },
+            {
+              "titel": "Woche 3 · Die Konsole",
+              "text": "Die Konsole kostet 480 Euro – oder 12 Raten zu 45 Euro, die erste sofort. Was zahlst du insgesamt? Wenn ihr kauft, steht die Rate ab jetzt jeden Monat im Kassenbuch."
+            },
+            {
+              "titel": "Woche 3 · Der Super-Shop",
+              "text": "Ein Shop in den sozialen Netzwerken verkauft Markenjacken für 25 statt 200 Euro. Bezahlen nur per Überweisung vorab, kein Impressum, keine Bewertungen auf anderen Seiten. Kaufen?"
+            },
+            {
+              "titel": "Woche 4 · Display kaputt",
+              "text": "Dein Handy fällt runter, das Display ist gesprungen. Die Reparatur kostet 90 Euro. Oder du lebst mit dem Sprung, bis wieder Geld da ist."
+            },
+            {
+              "titel": "Woche 4 · Leihst du mir was?",
+              "text": "Ein Freund fragt, ob du ihm 20 Euro leihst. Anfang nächsten Monats gibt er sie zurück, sagt er. Was machst du – und wie haltet ihr es fest?"
+            },
+            {
+              "titel": "Woche 4 · Glück gehabt",
+              "text": "Deine Oma steckt dir 20 Euro zu. Sofort ausgeben, in den Spar-Topf oder ein Loch im Budget stopfen?"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Führt euer Kassenbuch. Jede Zahlung und jede Einnahme bekommt eine eigene Zeile."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Woche",
+            "Karte",
+            "Unsere Entscheidung",
+            "Plus / Minus",
+            "Stand"
+          ],
+          "breiten": [
+            0.7,
+            1.4,
+            2.4,
+            1,
+            0.9
+          ],
+          "zeilen": 9,
+          "beispiel": [
+            "Start",
+            "Monatsgeld",
+            "–",
+            "+ 120",
+            "120"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Nach dem Spiel: Rechnet nach und beantwortet die Fragen."
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 1,
+          "items": [
+            "Handy A kostet in zwei Jahren … Euro, Handy B … Euro.",
+            "Die Konsole in Raten kostet … Euro, also … Euro mehr als bar.",
+            "Ein Angebot, das billig aussah und teuer war: …",
+            "Am schwersten zu entscheiden war …, weil …"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Vor dem Kaufen oder Unterschreiben",
+          "punkte": [
+            "Gesamtpreis ausrechnen: Monatspreis mal Laufzeit, dazu alles, was man einmal zahlt.",
+            "Laufzeit und Kündigung prüfen: Wie lange bin ich gebunden, und wie komme ich wieder raus?",
+            "Unter 18 braucht man für einen Vertrag in der Regel die Unterschrift der Eltern.",
+            "Onlinekauf bei einem Händler in der EU: meist 14 Tage Widerrufsrecht. Beim Kauf von Privatpersonen gilt das nicht.",
+            "Unbekannter Shop? Erst auf anderen Seiten nachsehen, wer dahintersteht – und nie nur per Vorkasse zahlen."
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen erleben im Planspiel, wie Angebote, Verträge, Raten und Abos ein Budget unter Druck setzen, berechnen Gesamtpreise und erkennen einen Fake-Shop.",
+        "ablauf": [
+          "Vorbereitung: Karten auf festes Papier drucken, nach Wochen an vier Stationen legen; 120 Euro Spielgeld je Team.",
+          "Start (3 Min.): Regeln vorlesen, Teams zu zweit, Geld ausgeben.",
+          "Stationen (16 Min.): je Woche 4 Min.; die Leitung führt die Kasse und fragt nur: „Brauchen oder wollen?“",
+          "Auflösung (6 Min.): Rechenkarten an der Tafel, dann Aufgabe 3.",
+          "Lösungen: Handy A 721 Euro, B 420 Euro, altes Handy mit Prepaid 240 Euro. Konsole 540 Euro, 60 Euro mehr als bar. Der Super-Shop ist ein Fake-Shop: Die 25 Euro sind weg."
+        ],
+        "hintergrund": "Verträge, Raten und Abos verschieben Kosten in die Zukunft: Der niedrige Monatspreis steht vorn, der Gesamtpreis verschwindet. Wer versteht, wie sich Beträge summieren, verschuldet sich seltener (Lusardi & Mitchell, 2014). Jugendliche sind für sofortige Belohnungen und für Gleichaltrige besonders empfänglich (Steinberg, 2014); „nur heute“ und Gruppendruck sind typische Verkaufshebel. Im Planspiel werden sie ohne Risiko erlebt und nachgerechnet. Bei Onlinekäufen bei Händlern in der EU gilt in der Regel ein Widerrufsrecht von 14 Tagen, beim Kauf von Privatpersonen nicht (Richtlinie 2011/83/EU). Bei unbekannten Shops hilft der Blick in unabhängige Quellen (Wineburg & McGrew, 2019); bei Betrug im Netz hilft die BEE SECURE Helpline (8002 1234).",
+        "quellen": [
+          "Lusardi, A. & Mitchell, O. S. (2014). The economic importance of financial literacy: Theory and evidence. Journal of Economic Literature, 52(1), 5–44.",
+          "Steinberg, L. (2014). Age of Opportunity: Lessons from the New Science of Adolescence. Boston: Houghton Mifflin Harcourt.",
+          "Richtlinie 2011/83/EU des Europäischen Parlaments und des Rates vom 25. Oktober 2011 über die Rechte der Verbraucher. Amtsblatt der EU, L 304, 64–88.",
+          "Wineburg, S. & McGrew, S. (2019). Lateral reading and the nature of expertise: Reading less and learning more when evaluating digital information. Teachers College Record, 121(11), 1–40.",
+          "BEE SECURE – Initiative der luxemburgischen Regierung für ein sichereres Internet: www.bee-secure.lu"
+        ],
+        "differenzierung": {
+          "leichter": "Nur die Wochen 1, 2 und 4; die Rechenkarten löst die Leitung mit dem Team.",
+          "schwerer": "Vorab ein Sparziel festlegen und am Ende begründen, warum es gehalten hat oder nicht."
+        },
+        "impulse": [
+          "Wo hat euch Zeitdruck zum Kaufen gedrängt?",
+          "Was hätte euch im Plus gehalten?"
+        ],
+        "tipps": [
+          "Spielgeld aus einem Brettspiel reicht.",
+          "Den Fake-Shop erst in der Auflösung verraten."
+        ],
+        "achtung": "Nur mit dem Beispielbudget spielen. Hinweise auf echte Schulden oder Geldforderungen: Einzelgespräch, die zuständige Leitung (Responsable) informieren.",
+        "material": "Karten auf festem Papier, Schere, Spielgeld, Taschenrechner"
+      }
+    }
+  },
+  {
+    "id": "skills-alltag-im-griff",
+    "bereich": "skills",
+    "thema": "zukunft",
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "30 Min.",
+    "eldib": [
+      "V-32",
+      "V-8",
+      "KOG-39",
+      "K-12"
+    ],
+    "schlagworte": [
+      "Termine planen",
+      "Kalender",
+      "Bus",
+      "Formulare",
+      "Arztbesuch",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:calendar-event",
+    "verwandt": [
+      "skills-telefon-training"
+    ],
+    "kurs": [
+      "j3-e15"
+    ],
+    "de": {
+      "titel": "Alltag im Griff",
+      "untertitel": "Termine, Wege, Formulare und Arztbesuch – selbst erledigt",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "Jangs Termin",
+          "bild": "figur:ben:nervoes",
+          "text": "Jang hat am Donnerstag um 14:30 Uhr einen Termin beim Zahnarzt im Nachbarort – zum ersten Mal geht er allein. Der Bus fährt um 13:15, 13:45 und 14:15 Uhr und braucht 25 Minuten. Von der Haltestelle sind es 10 Minuten zu Fuß, bis zu seiner Haltestelle 5 Minuten. Jang will 10 Minuten vor dem Termin da sein."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Plane rückwärts: Welchen Bus nimmt Jang, und wann muss er spätestens los?",
+          "hinweis": "Fang beim Termin an und rechne Schritt für Schritt zurück."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Uhrzeit",
+            "Was passiert?"
+          ],
+          "breiten": [
+            1,
+            4.4
+          ],
+          "zeilen": 3,
+          "beispiel": [
+            "14:30",
+            "Der Termin beginnt."
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Termine im Griff",
+          "punkte": [
+            "Sofort eintragen, mit Adresse – dann zeigt die Karten-App den Weg.",
+            "Zwei Erinnerungen: am Vortag abends und eine Stunde vor dem Losgehen.",
+            "Plan B notieren: der nächste Bus und wen ich anrufe, wenn ich zu spät komme.",
+            "Bus, Tram und Zug in der 2. Klasse sind in Luxemburg kostenlos. Verbindungen zeigt eine Fahrplan-App, etwa mobiliteit.lu.",
+            "Zum Arzt mitnehmen: Sozialversicherungskarte, Ausweis, Liste deiner Medikamente und Allergien."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Arzt-Spickzettel: Was sagt Jang in der Praxis? Nimm ein Beispiel, etwa Halsschmerzen seit drei Tagen."
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 1,
+          "items": [
+            "Was stimmt nicht, und wo? …",
+            "Seit wann, und wie stark von 0 bis 10? …",
+            "Was habe ich schon versucht? …",
+            "Meine Frage an die Ärztin oder den Arzt: …"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Formular-Wörter: Viele Formulare in Luxemburg sind auf Französisch. Verbinde.",
+          "symbole": [
+            "verbinden"
+          ]
+        },
+        {
+          "art": "zuordnen",
+          "titel": [
+            "Auf dem Formular",
+            "Das heißt"
+          ],
+          "links": [
+            "nom",
+            "prénom",
+            "date de naissance",
+            "matricule",
+            "représentant légal",
+            "signature"
+          ],
+          "rechts": [
+            "Unterschrift",
+            "Nachname",
+            "erziehungsberechtigte Person",
+            "Vorname",
+            "Geburtsdatum",
+            "Sozialversicherungsnummer (13 Ziffern)"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Füll die Anmeldung für einen Sommerkurs aus. Du darfst erfundene Angaben benutzen.",
+          "hinweis": "Druckbuchstaben, Kugelschreiber, Datum als JJ/MM/AAAA: Tag, Monat, Jahr."
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 1,
+          "items": [
+            "Nom et prénom (en majuscules)",
+            "Date de naissance (JJ/MM/AAAA)",
+            "Adresse, code postal, localité",
+            "Téléphone et courriel",
+            "Signature du représentant légal"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Stolperfallen bei Formularen",
+          "punkte": [
+            "Erst alles lesen, dann schreiben.",
+            "Unter 18 unterschreibt oft eine erziehungsberechtigte Person mit.",
+            "Nicht raten, sondern nachfragen – und vor dem Abgeben ein Foto machen."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Welche Erledigung steht bei dir in den nächsten zwei Wochen an? Mach einen Plan."
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Wenn ich am Montag um 16 Uhr zu Hause bin,",
+              "dann": "rufe ich als Erstes bei der Praxis an und mache den Termin aus – noch vor dem Handy."
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen planen einen Termin rückwärts, verstehen französische Formular-Wörter, füllen ein Formular aus und bereiten einen Arztbesuch mit einem Spickzettel vor.",
+        "ablauf": [
+          "Jang (8 Min.) zu zweit. Lösung: um 14:20 in der Praxis, also spätestens 14:10 aus dem Bus; der Bus um 13:45 passt genau, der um 13:15 lässt Puffer. Los spätestens 13:40.",
+          "Echte Verbindung (5 Min.): in der App suchen, Termin mit zwei Erinnerungen eintragen.",
+          "Arzt (5 Min.): Aufgabe 2 nur mit einem harmlosen Beispiel.",
+          "Formulare (10 Min.): Aufgabe 3 und 4. Lösung 3: Nachname, Vorname, Geburtsdatum, Sozialversicherungsnummer, erziehungsberechtigte Person, Unterschrift.",
+          "Aufgabe 5 im Skill-Teil der Einheit."
+        ],
+        "hintergrund": "Termine, Wege und Formulare verlangen exekutive Funktionen: vorausplanen, Zwischenschritte behalten, rechtzeitig umschalten (Diamond, 2013). Äußere Stützen wie Kalender mit Erinnerung, Rückwärtsplan und Spickzettel verlagern diese Arbeit aus dem Kopf und gleichen Schwächen der Selbststeuerung aus (Barkley, 2012). In Luxemburg kommt die Sprache hinzu: Viele Formulare sind französisch, und wer die Schlüsselwörter kennt, traut sich eher, sie selbst auszufüllen. Der Wenn-dann-Plan am Schluss macht die Umsetzung wahrscheinlicher (Gollwitzer, 1999).",
+        "quellen": [
+          "Diamond, A. (2013). Executive functions. Annual Review of Psychology, 64, 135–168.",
+          "Barkley, R. A. (2012). Executive Functions: What They Are, How They Work, and Why They Evolved. New York: Guilford.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "differenzierung": {
+          "leichter": "Die Formular-Wörter mit Übersetzung an die Tafel; im Formular nur Name, Datum, Unterschrift.",
+          "schwerer": "Ein echtes französisches Formular eines Vereins mit erfundenen Angaben ausfüllen."
+        },
+        "impulse": [
+          "Welche Erledigung wollt ihr als Nächstes selbst machen?",
+          "Was ist euer Plan B, wenn der Bus nicht kommt?"
+        ],
+        "tipps": [
+          "Wer Französisch in der Familie spricht, darf übersetzen.",
+          "Den Kasten „Termine im Griff“ ins Skills-Buch übernehmen."
+        ],
+        "achtung": "Keine echten Adressen, Geburtsdaten oder Matricules vor der Gruppe. Hinweise, dass jemand nötige Arztbesuche nicht bekommt: Einzelgespräch, die zuständige Leitung (Responsable) informieren.",
+        "material": "Blatt, Handys mit Fahrplan-App oder Ausdruck"
+      }
+    }
+  },
+  {
+    "id": "skills-telefon-training",
+    "bereich": "skills",
+    "thema": "zukunft",
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "gruppe",
+      "einzeln"
+    ],
+    "dauer": "25 Min.",
+    "eldib": [
+      "K-12",
+      "K-17",
+      "SOZ-38",
+      "V-32"
+    ],
+    "schlagworte": [
+      "Telefonieren",
+      "Rollenspiel",
+      "Anspannung",
+      "Termine",
+      "Selbstständigkeit",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:phone",
+    "verwandt": [
+      "skills-alltag-im-griff"
+    ],
+    "kurs": [
+      "j3-e15"
+    ],
+    "de": {
+      "titel": "Telefon-Training",
+      "untertitel": "Für Anrufe, vor denen man sich gern drückt",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Dein Spickzettel: Füll ihn vor dem Anruf aus. Dann steht der erste Satz schon."
+        },
+        {
+          "art": "schritte",
+          "linien": 1,
+          "items": [
+            {
+              "titel": "Begrüßen und Namen sagen",
+              "text": "Guten Tag, mein Name ist … (Vor- und Nachname)."
+            },
+            {
+              "titel": "Das Anliegen in einem Satz",
+              "text": "Ich rufe an, weil …"
+            },
+            {
+              "titel": "Zuhören und notieren",
+              "text": "Datum, Uhrzeit, Ort, was ich mitbringen soll."
+            },
+            {
+              "titel": "Wiederholen",
+              "text": "Also am … um … Uhr. Stimmt das?"
+            },
+            {
+              "titel": "Verabschieden",
+              "text": "Vielen Dank, auf Wiederhören."
+            }
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "tipp",
+              "titel": "Wenn es schwierig wird",
+              "punkte": [
+                "Nicht verstanden? „Können Sie das bitte wiederholen?“",
+                "Zu schnell? „Können Sie bitte langsamer sprechen?“",
+                "Auf Französisch: „Pardon, pouvez-vous répéter, s’il vous plaît ?“"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Erst atmen, dann wählen",
+              "punkte": [
+                "Eine Minute Kastenatmung: 4 ein, 4 halten, 4 aus, 4 halten.",
+                "Den ersten Satz einmal halblaut sagen.",
+                "Wählen, solange die Zahl sinkt – nicht warten, bis sie bei 0 ist."
+              ]
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Deine Anspannung vor und nach jedem Anruf, von 0 bis 100."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Runde",
+            "Vorher",
+            "Nachher",
+            "Was hat geholfen?"
+          ],
+          "breiten": [
+            0.8,
+            0.9,
+            0.9,
+            3.4
+          ],
+          "zeilen": 3,
+          "nummern": 1,
+          "beispiel": [
+            "z. B.",
+            "70",
+            "40",
+            "Der erste Satz stand auf dem Zettel."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Rollenkarten: ausschneiden. Wer anruft, bekommt eine T-Karte, wer die Gegenseite spielt, die passende P-Karte.",
+          "symbole": [
+            "schneiden",
+            "partner"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 3,
+          "hoehe": 92,
+          "karten": [
+            {
+              "titel": "T1 · Arzttermin",
+              "text": "Du hast seit drei Tagen Halsschmerzen und brauchst einen Termin bei deinem Hausarzt, am besten diese Woche nach der Schule."
+            },
+            {
+              "titel": "T2 · Krankmeldung",
+              "text": "Du bist krank und kannst morgen nicht zu deinem Praktikum im Supermarkt. Ruf deine Praktikumsbetreuerin an."
+            },
+            {
+              "titel": "T3 · Termin verschieben",
+              "text": "Du hast morgen um 10 Uhr einen Termin beim Optiker, aber da schreibst du einen Test. Verschieb den Termin."
+            },
+            {
+              "titel": "T4 · Fundbüro",
+              "text": "Du hast gestern deinen Rucksack im Bus liegen lassen: schwarz, mit Schlüsselanhänger. Linie und Uhrzeit weißt du ungefähr."
+            },
+            {
+              "titel": "T5 · Nachfragen",
+              "text": "Du willst dich im Sportverein anmelden und fragst, welche Unterlagen du brauchst und was es kostet."
+            },
+            {
+              "titel": "T6 · Rückruf",
+              "text": "Auf deiner Mailbox bittet eine Praxis um Rückruf. Worum es geht, sagt sie nicht."
+            },
+            {
+              "titel": "P1 · Praxis",
+              "text": "Diese Woche ist alles voll, erst nächsten Dienstag um 8:15 Uhr. Stolperstein: Frag nach der Matricule-Nummer."
+            },
+            {
+              "titel": "P2 · Supermarkt",
+              "text": "Du bist freundlich und fragst, wie lange die Krankheit dauert. Stolperstein: Sprich zuerst Französisch."
+            },
+            {
+              "titel": "P3 · Optiker",
+              "text": "Du bietest zwei neue Termine an, beide während der Schulzeit. Stolperstein: Sprich sehr schnell."
+            },
+            {
+              "titel": "P4 · Fundbüro",
+              "text": "Du brauchst Farbe, Marke, Inhalt, Linie und Uhrzeit. Stolperstein: Bitte, kurz zu warten – die Warteschleife dauert."
+            },
+            {
+              "titel": "P5 · Sportverein",
+              "text": "Nenne drei Unterlagen: Formular, Foto, Unterschrift der Eltern. Stolperstein: Lass dir den Namen buchstabieren."
+            },
+            {
+              "titel": "P6 · Praxis",
+              "text": "Der Termin am Freitag fällt aus und muss verschoben werden. Stolperstein: Frag zuerst nach Name und Geburtsdatum."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Beobachten: Kreuze an, was dir bei der anrufenden Person aufgefallen ist."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "ja",
+            "teils",
+            "noch nicht"
+          ],
+          "items": [
+            "Name und Anliegen gleich am Anfang gesagt",
+            "Laut und deutlich gesprochen",
+            "Nachgefragt, als etwas unklar war",
+            "Datum und Uhrzeit wiederholt",
+            "Notizen gemacht",
+            "Freundlich verabschiedet"
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen üben mit Spickzettel und Rollenkarten typische Alltagsanrufe, erleben, wie die Anspannung durch Üben sinkt, und geben einander mit einer Checkliste Rückmeldung.",
+        "ablauf": [
+          "Vorbereitung: Karten ausschneiden; die P-Karten enthalten Stolpersteine und werden nicht gezeigt.",
+          "Runde 1 (6 Min.): Spickzettel, Zahl notieren, Anruf ohne Stolperstein, Rollen tauschen.",
+          "Runde 2 und 3 (12 Min.): neue Karte, erst ein, dann zwei Stolpersteine.",
+          "Vorführen (5 Min.): zwei Freiwillige, die Leitung spielt die Gegenseite. Frage: „Welcher Satz hat geholfen?“"
+        ],
+        "hintergrund": "Viele Jugendliche meiden Telefonate: Eine Nachricht lässt sich planen, ein Anruf nicht. Vermeiden hält die Angst aufrecht, schrittweises Üben senkt sie – deshalb steigen die Stolpersteine von Runde zu Runde. Eigene Erfolgserfahrungen sind die stärkste Quelle von Selbstwirksamkeit (Bandura, 1977); die Zahl vorher und nachher macht sie sichtbar. Der Spickzettel entlastet das Arbeitsgedächtnis, das unter Aufregung schnell an Grenzen stößt (Diamond, 2013), und langsames Ausatmen vor dem Wählen beruhigt nachweislich (Zaccaro et al., 2018).",
+        "quellen": [
+          "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
+          "Diamond, A. (2013). Executive functions. Annual Review of Psychology, 64, 135–168.",
+          "Zaccaro, A., Piarulli, A., Laurino, M., Garbella, E., Menicucci, D., Neri, B. & Gemignani, A. (2018). How breath-control can change your life: A systematic review on psycho-physiological correlates of slow breathing. Frontiers in Human Neuroscience, 12, 353."
+        ],
+        "differenzierung": {
+          "leichter": "Nur T5 oder T1 ohne Stolperstein; der erste Satz darf abgelesen werden.",
+          "schwerer": "Den Anruf auf Französisch führen oder eine eigene Karte schreiben."
+        },
+        "impulse": [
+          "Was war schwerer: der erste Satz oder die unerwartete Frage?",
+          "Um wie viel ist eure Zahl gesunken?"
+        ],
+        "tipps": [
+          "Im Stehen telefonieren: Die Stimme klingt fester.",
+          "Karten laminieren, dann halten sie mehrere Durchgänge."
+        ],
+        "achtung": "Niemand wird zum Anruf vor der Gruppe gedrängt; zuschauen und die Gegenseite spielen zählen als Mitmachen. Bleibt die Angst sehr hoch: Einzelgespräch, mit der zuständigen Leitung (Responsable) klären.",
+        "material": "Karten auf festem Papier, Schere, Stühle"
+      }
+    }
+  },
+  {
+    "id": "skills-kochplan",
+    "bereich": "skills",
+    "thema": "zukunft",
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "gruppe",
+      "einzeln"
+    ],
+    "dauer": "15 Min. plus Kochen",
+    "eldib": [
+      "V-6",
+      "SOZ-18",
+      "KOG-52",
+      "V-8"
+    ],
+    "schlagworte": [
+      "Kochen",
+      "Einkaufsliste",
+      "Budget",
+      "Grundpreis",
+      "Selbstversorgung",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:tools-kitchen-2",
+    "verwandt": [
+      "skills-kuechen-check"
+    ],
+    "kurs": [
+      "j3-e16"
+    ],
+    "de": {
+      "titel": "Wir kochen: Plan und Einkauf",
+      "untertitel": "Ein Gericht für die Gruppe, ein fester Betrag, klare Rollen – und ein Rezept für dich allein",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Die Leitung hat ein Gericht ausgesucht, das für alle in der Gruppe passt, auch mit Blick auf Allergien und Essensregeln. Ihr plant, rechnet und verteilt die Arbeit."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Unsere Einkaufsliste für die ganze Gruppe: Tragt die Zutaten ein und prüft jede Packung auf Allergene.",
+          "hinweis": "Die Beispielzeile rechnet mit sechs Personen, ihre Preise sind Beispiele. Die echten Preise nennt die Leitung oder der Kassenbon."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Zutat",
+            "Menge",
+            "Allergene",
+            "Eigenmarke",
+            "Marke"
+          ],
+          "breiten": [
+            1.7,
+            0.9,
+            1.5,
+            1,
+            0.9
+          ],
+          "zeilen": 7,
+          "beispiel": [
+            "Pasta",
+            "600 g",
+            "Gluten (Weizen)",
+            "1,00 Euro",
+            "2,30 Euro"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 1,
+          "items": [
+            "Summe mit Eigenmarken: … Euro – mit Marken: … Euro",
+            "Unser Budget: … Euro. Wir bleiben im Budget, wenn …",
+            "Pro Person kostet unser Essen: … Euro"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Grundpreis vergleichen",
+          "text": "Auf dem Regaletikett steht oft der Preis pro Kilo oder Liter. Nur damit lassen sich verschiedene Packungsgrößen fair vergleichen – die große Packung ist nicht immer die billigere."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wer macht was – und in welcher Reihenfolge?",
+          "hinweis": "Was am längsten dauert, startet zuerst: Wasser für Pasta braucht rund zehn Minuten, bis es kocht."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Rolle",
+            "Wer?",
+            "Was genau?",
+            "Start"
+          ],
+          "breiten": [
+            1.2,
+            1,
+            2.8,
+            0.8
+          ],
+          "zeilen": 4,
+          "beispiel": [
+            "Herd",
+            "Mathis",
+            "Wasser aufsetzen, dann die Sauce",
+            "zuerst"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Mein Rezept für einen Abend allein: ein einfaches Gericht, das du wirklich kochen würdest.",
+          "hinweis": "Es kommt in dein Skills-Buch."
+        },
+        {
+          "art": "wortspeicher",
+          "titel": "Ideen, die fast immer klappen",
+          "items": [
+            "Rührei mit Brot",
+            "Pasta mit Tomatensauce",
+            "Wrap mit Gemüse und Käse",
+            "Reis mit Gemüse und Ei",
+            "Omelett",
+            "Couscous-Salat",
+            "Linsensuppe",
+            "Ofenkartoffeln mit Quark"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 1,
+          "items": [
+            "Mein Gericht: …",
+            "Meine Einkaufsliste: …",
+            "Das kostet ungefähr: … Euro",
+            "So geht es in drei Schritten: …"
+          ]
+        },
+        {
+          "art": "linien",
+          "anzahl": 1
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Grundrezept: Tomatensauce für zwei",
+          "text": "1 Zwiebel und 1 Knoblauchzehe fein schneiden und in 1 Esslöffel Öl glasig dünsten. 1 Paprika oder 1 Zucchini in Würfeln 3 Minuten mitbraten. 500 g passierte Tomaten dazugeben und mit Salz, Pfeffer und Oregano 10 Minuten köcheln lassen. Dazu 200 g Pasta nach Packungsangabe kochen."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen planen ein Gericht für die Gruppe mit Einkaufsliste, Allergen-Check und Budget, verteilen Rollen und Reihenfolge und halten ein eigenes Rezept für einen Abend allein fest.",
+        "ablauf": [
+          "Vorher: Rezept mit der Allergie- und Essensliste abgleichen, einkaufen, Kassenbon aufheben. Bewährt: Pasta mit Tomaten-Gemüse-Sauce oder Wraps mit Gemüse und Hähnchen oder Falafel.",
+          "Aufgabe 1 (8 Min.) zu zweit: Zutaten, Allergene, Preise; mit dem Kassenbon vergleichen.",
+          "Aufgabe 2 (5 Min.): Rollen und Reihenfolge festlegen.",
+          "Aufgabe 3 (5 Min.) beim Eintrag ins Skills-Buch."
+        ],
+        "hintergrund": "Wer eine einfache Mahlzeit planen, einkaufen und kochen kann, ist weniger auf Fertigprodukte und auf andere angewiesen. Die Planung verbindet drei Fertigkeiten: mit Budget und Grundpreis rechnen, Zutaten auf Allergene prüfen – in der EU sind die Hauptallergene in der Zutatenliste hervorgehoben (Verordnung (EU) Nr. 1169/2011) – und Arbeitsschritte ordnen. Echtes Tun wirkt stärker als Erklären: Eigene Erfolgserfahrungen stärken die Selbstwirksamkeit (Bandura, 1977), und alltagsnahe Geldentscheidungen sind der Ort, an dem sich finanzielle Grundbildung zeigt (Lusardi & Mitchell, 2014).",
+        "quellen": [
+          "Verordnung (EU) Nr. 1169/2011 des Europäischen Parlaments und des Rates vom 25. Oktober 2011 betreffend die Information der Verbraucher über Lebensmittel. Amtsblatt der EU, L 304, 18–63.",
+          "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
+          "Lusardi, A. & Mitchell, O. S. (2014). The economic importance of financial literacy: Theory and evidence. Journal of Economic Literature, 52(1), 5–44."
+        ],
+        "differenzierung": {
+          "leichter": "Die Zutatenliste ist vorausgefüllt; ergänzt werden Preise und Allergene.",
+          "schwerer": "Das Gericht für 2 Euro pro Person umplanen: Was wird ersetzt?"
+        },
+        "impulse": [
+          "Eigenmarke oder Marke: Wo schmeckt man den Unterschied?",
+          "Was kocht ihr, wenn nur noch 5 Euro da sind?"
+        ],
+        "tipps": [
+          "Die Beispielpreise durch die Preise vom Kassenbon ersetzen.",
+          "Ohne Küche: Wraps mit Falafel oder Couscous-Salat."
+        ],
+        "achtung": "Die Allergie- und Essensliste vor dem Einkauf prüfen; niemand muss eine Allergie oder Essensregel vor der Gruppe begründen.",
+        "material": "Blatt, Kassenbon, Taschenrechner, Packungen"
+      }
+    }
+  },
+  {
+    "id": "skills-kuechen-check",
+    "bereich": "skills",
+    "thema": "zukunft",
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "15 Min.",
+    "eldib": [
+      "V-6",
+      "V-31",
+      "V-27",
+      "KOG-39"
+    ],
+    "schlagworte": [
+      "Küchenhygiene",
+      "Messer",
+      "Allergene",
+      "Haltbarkeit",
+      "Erste Hilfe",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:shield-check",
+    "verwandt": [
+      "skills-kochplan"
+    ],
+    "kurs": [
+      "j3-e16"
+    ],
+    "de": {
+      "titel": "Sicher in der Küche",
+      "untertitel": "Hygiene, Messer, Allergene und Haltbarkeit – das Wichtigste vor dem ersten Schnitt",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Richtig oder falsch? Kreuze an. Die Auflösung gibt es in der Gruppe."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "richtig",
+            "falsch"
+          ],
+          "items": [
+            "Rohes Hähnchen wäscht man vor dem Braten ab.",
+            "Für rohes Fleisch nimmt man ein eigenes Brett.",
+            "Ein Joghurt ist nach dem Mindesthaltbarkeitsdatum sofort verdorben.",
+            "Nach dem Verbrauchsdatum isst man Hackfleisch nicht mehr.",
+            "Bei einer Nussallergie kann man die Nüsse einfach herauspicken.",
+            "Brennendes Fett löscht man mit Wasser.",
+            "Ein Messer, das herunterfällt, fängt man nicht auf.",
+            "In der EU müssen Allergene in der Zutatenliste hervorgehoben sein.",
+            "Auf eine Verbrennung gehört sofort Eis.",
+            "Hände waschen dauert so lange wie zweimal „Zum Geburtstag viel Glück“ summen."
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Hygiene",
+              "punkte": [
+                "Hände mindestens 20 Sekunden mit Seife waschen – vorher und nach rohem Fleisch.",
+                "Lange Haare zusammenbinden, Ringe ablegen.",
+                "Für rohes Fleisch eigenes Brett und eigenes Messer.",
+                "Abschmecken nur mit einem frischen Löffel."
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "achtung",
+              "titel": "Messer und Herd",
+              "punkte": [
+                "Krallengriff: Fingerkuppen nach innen.",
+                "Messer flach ablegen, nie ins Spülwasser.",
+                "Ein fallendes Messer nicht auffangen.",
+                "Topfgriffe nach innen drehen.",
+                "Brennendes Fett: Deckel drauf, Herd aus."
+              ]
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Wenn etwas passiert",
+          "punkte": [
+            "Kleiner Schnitt: mit einem sauberen Tuch drücken, Pflaster und Einmalhandschuh, der Leitung Bescheid sagen.",
+            "Verbrennung: sofort unter fließendes, handwarmes Wasser halten – kein Eis.",
+            "Atemnot oder Schwellungen im Gesicht nach dem Essen: sofort 112 rufen, die Person nicht allein lassen."
+          ]
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Allergene finden: Welche Allergene stecken in diesem Pizzateig? Kreuze an."
+        },
+        {
+          "art": "text",
+          "text": "Zutaten: WEIZENMEHL, Wasser, Tomaten, Sonnenblumenöl, Käse (MILCH), Zucker, Salz, SELLERIE, Hefe. Kann Spuren von SESAM enthalten."
+        },
+        {
+          "art": "text",
+          "klein": true,
+          "text": "Allergene sind in der Zutatenliste hervorgehoben – hier in Großbuchstaben, auf Packungen meist fett gedruckt."
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 3,
+          "items": [
+            "Gluten",
+            "Milch",
+            "Ei",
+            "Sellerie",
+            "Senf",
+            "Nüsse",
+            "Sesam (als Spur)",
+            "Soja",
+            "Fisch"
+          ]
+        },
+        {
+          "art": "wortspeicher",
+          "titel": "Die 14 Hauptallergene, die in der EU gekennzeichnet werden müssen",
+          "items": [
+            "glutenhaltiges Getreide",
+            "Krebstiere",
+            "Eier",
+            "Fisch",
+            "Erdnüsse",
+            "Soja",
+            "Milch (auch Laktose)",
+            "Schalenfrüchte (Nüsse)",
+            "Sellerie",
+            "Senf",
+            "Sesam",
+            "Schwefeldioxid und Sulfite",
+            "Lupinen",
+            "Weichtiere"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Zwei Daten auf der Packung",
+          "punkte": [
+            "„Mindestens haltbar bis“: Danach ist vieles noch gut – ansehen, riechen, probieren. Wegwerfen ist oft unnötig.",
+            "„Zu verbrauchen bis“, etwa bei Hackfleisch oder frischem Fisch: Danach nicht mehr essen.",
+            "Reste abgedeckt in den Kühlschrank und bald aufessen."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Welche Küchenregel nimmst du mit nach Hause?"
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 1,
+          "items": [
+            "Zu Hause achte ich ab jetzt auf …",
+            "Das erkläre ich jemandem, der mit mir kocht: …"
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen kennen die wichtigsten Regeln zu Hygiene, Messer und Herd, finden Allergene auf einer Zutatenliste, unterscheiden die zwei Haltbarkeitsdaten und wissen, was bei kleinen Unfällen zu tun ist.",
+        "ablauf": [
+          "Bewegungsquiz (8 Min.): Aussagen vorlesen, alle gehen auf die Seite „richtig“ oder „falsch“. Richtig sind 2, 4, 7, 8 und 10, falsch 1, 3, 5, 6 und 9.",
+          "Messer-Regeln (2 Min.) mit einem echten Messer vorführen.",
+          "Aufgabe 2 (3 Min.). Lösung: Gluten, Milch, Sellerie; Sesam nur als mögliche Spur.",
+          "Aufgabe 3 am Ende der Einheit oder zu Hause."
+        ],
+        "hintergrund": "Viele Lebensmittelinfektionen im Haushalt gehen auf wenige, vermeidbare Fehler zurück: ungewaschene Hände, rohes Fleisch auf demselben Brett wie Salat, zu kurz gegartes Geflügel, Speisen, die lange warm stehen. Die Regeln folgen den „fünf Schlüsseln“ für sichere Lebensmittel der WHO (2006) und ergänzen Messer- und Herdsicherheit. In der EU müssen die 14 Hauptallergene in der Zutatenliste hervorgehoben sein, und „mindestens haltbar bis“ und „zu verbrauchen bis“ sind klar unterschieden (Verordnung (EU) Nr. 1169/2011). Das Quiz ist bewusst gewählt: Wer eine Regel abruft, statt sie nur zu lesen, behält sie besser (Roediger & Karpicke, 2006), und aktive, klar benannte Übungsschritte machen Trainings wirksamer (Durlak et al., 2011).",
+        "quellen": [
+          "World Health Organization (2006). Five Keys to Safer Food Manual. Genf: WHO.",
+          "Verordnung (EU) Nr. 1169/2011 des Europäischen Parlaments und des Rates vom 25. Oktober 2011 betreffend die Information der Verbraucher über Lebensmittel. Amtsblatt der EU, L 304, 18–63.",
+          "Roediger, H. L. & Karpicke, J. D. (2006). Test-enhanced learning: Taking memory tests improves long-term retention. Psychological Science, 17(3), 249–255.",
+          "Durlak, J. A., Weissberg, R. P., Dymnicki, A. B., Taylor, R. D. & Schellinger, K. B. (2011). The impact of enhancing students’ social and emotional learning: A meta-analysis of school-based universal interventions. Child Development, 82(1), 405–432."
+        ],
+        "differenzierung": {
+          "leichter": "Nur die Aussagen 1 bis 6; die Kästen gemeinsam lesen.",
+          "schwerer": "Eine echte Packung für eine Person mit Nussallergie prüfen."
+        },
+        "impulse": [
+          "Welche Regel war neu für euch?",
+          "Was macht ihr zu Hause schon genauso?"
+        ],
+        "tipps": [
+          "Das Blatt passt auch zu Joker-Einheiten mit Kochen.",
+          "Die Kästen laminiert in der Küche aufhängen."
+        ],
+        "achtung": "Bei bekannter schwerer Allergie vorher den Notfallplan und den Ort des Notfallsets kennen. Bei Atemnot oder Schwellungen sofort 112, die Person nicht allein lassen.",
+        "material": "Blatt, Messer und Brett, eine Lebensmittelpackung"
+      }
+    }
+  },
+  {
+    "id": "skills-fakt-oder-meinung",
+    "bereich": "skills",
+    "thema": "mitbestimmung",
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "30 Min.",
+    "eldib": [
+      "KOG-58",
+      "KOG-47",
+      "KOG-51",
+      "KOG-62"
+    ],
+    "schlagworte": [
+      "Tatsache und Meinung",
+      "Meinungsbildung",
+      "Gruppendruck",
+      "Kinderrechte",
+      "Beteiligung",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:bulb",
+    "verwandt": [
+      "skills-mein-argument"
+    ],
+    "kurs": [
+      "j3-e24"
+    ],
+    "de": {
+      "titel": "Fakt oder Meinung?",
+      "untertitel": "Was man prüfen kann, was man begründen muss – und wie du dir eine eigene Meinung bildest",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Tatsache oder Meinung?",
+          "punkte": [
+            "Eine Tatsachenbehauptung kann man prüfen. Sie ist wahr oder falsch – auch wenn man es gerade nicht weiß.",
+            "Eine Meinung ist eine Bewertung: gut, schlecht, besser, sollte. Man kann sie nicht beweisen, aber gut oder schlecht begründen.",
+            "Vorsicht bei Sätzen wie „Alle … sind …“: Sie klingen nach Meinung, sind aber prüfbare Behauptungen – und meistens falsch."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Tatsachenbehauptung oder Meinung? Kreuze an. Bei manchen Sätzen lohnt sich ein zweiter Blick."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "Tatsache",
+            "Meinung"
+          ],
+          "items": [
+            "Bus, Tram und Zug in der 2. Klasse sind in Luxemburg kostenlos.",
+            "Der Bus ist das beste Verkehrsmittel.",
+            "Energydrinks enthalten viel Koffein.",
+            "Energydrinks sollten für Jugendliche unter 16 verboten sein.",
+            "Jugendliche brauchen mehr Schlaf als Erwachsene.",
+            "Die Schule sollte erst um 9 Uhr beginnen.",
+            "Alle Gamer sind aggressiv.",
+            "Das neue Album ist langweilig.",
+            "Die UN-Kinderrechtskonvention gilt auch in Luxemburg.",
+            "Luxemburg hat mehr Einwohner als Belgien."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Der Meinungs-Check: Wähle ein Thema und geh die vier Schritte durch.",
+          "hinweis": "Themen: Handys in der Pause, Schulbeginn um 9 Uhr, ein eigenes Budget für jede Klasse – oder dein eigenes Thema."
+        },
+        {
+          "art": "schritte",
+          "linien": 1,
+          "items": [
+            {
+              "titel": "Fakten sammeln",
+              "text": "Was weiß ich sicher – und woher weiß ich es?"
+            },
+            {
+              "titel": "Seiten hören",
+              "text": "Was sagen die anderen? Wen betrifft es, und warum sehen sie es anders?"
+            },
+            {
+              "titel": "Mich fragen",
+              "text": "Was ist mir wichtig? Welches Gefühl steckt in meiner Meinung?"
+            },
+            {
+              "titel": "Meinung bilden – vorläufig",
+              "text": "Ich finde …, weil …"
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Meinung ändern ist kein Umfallen",
+          "text": "Wer seine Meinung ändert, weil ein besseres Argument kommt, denkt. Wer sie ändert, nur weil alle anderen woanders stehen, fragt sich besser kurz: Was hat mich eigentlich überzeugt?"
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Dein Recht, gehört zu werden",
+          "punkte": [
+            "Artikel 12 der UN-Kinderrechtskonvention: Du hast das Recht, deine Meinung zu allem zu sagen, was dich betrifft. Erwachsene müssen sie ernst nehmen und – je nach Alter und Reife – berücksichtigen.",
+            "Artikel 13: Du darfst dich informieren und deine Meinung frei sagen, schreiben oder zeigen, solange du die Rechte und den Ruf anderer achtest."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wo wirst du schon gehört – und wo würdest du gern mehr mitreden?"
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "feld",
+              "label": "Hier werde ich gehört",
+              "hoehe": 3
+            }
+          ],
+          "rechts": [
+            {
+              "art": "feld",
+              "label": "Hier würde ich gern mehr mitreden",
+              "hoehe": 3
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Du entscheidest, was du teilst.",
+          "text": "In der Runde reicht ein Stichwort. Was du aufschreibst, bleibt bei dir."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen unterscheiden Tatsachenbehauptungen von Meinungen, bilden sich in vier Schritten eine vorläufige Meinung und kennen Artikel 12 und 13 der Kinderrechtskonvention.",
+        "ablauf": [
+          "Tafel (3 Min.): zwei Sätze zu Energydrinks gegenüberstellen – prüfbar oder Bewertung?",
+          "Aufgabe 1 (7 Min.): allein, dann zu zweit. Tatsachenbehauptungen: 1, 3, 5, 7, 9, 10 – davon falsch 7 (Pauschalurteil) und 10. Meinungen: 2, 4, 6, 8.",
+          "Aufgabe 2 (12 Min.): ein Beispiel an der Tafel, dann allein mit eigenem Thema.",
+          "Nach der Meinungslinie: Artikel 12 und 13 vorlesen, Aufgabe 3 allein; wer mag, nennt ein Stichwort fürs Plakat."
+        ],
+        "hintergrund": "Wer Informationen beurteilen will, muss unterscheiden, ob eine Aussage prüfbar ist oder eine Bewertung enthält. Pauschalurteile klingen nach Meinung, sind aber falsche Tatsachenbehauptungen. Geübte Prüferinnen und Prüfer suchen unabhängige Quellen (Wineburg & McGrew, 2019). Meinungsbildung ist zudem sozial: Viele passen ihr Urteil einer Mehrheit an, selbst wenn es offensichtlich falsch ist (Asch, 1956); der Vier-Schritte-Check verlangsamt diesen Sog. Das Recht auf Gehör steht in Artikel 12 der Konvention (Vereinte Nationen, 1989).",
+        "quellen": [
+          "Wineburg, S. & McGrew, S. (2019). Lateral reading and the nature of expertise: Reading less and learning more when evaluating digital information. Teachers College Record, 121(11), 1–40.",
+          "Asch, S. E. (1956). Studies of independence and conformity: I. A minority of one against a unanimous majority. Psychological Monographs: General and Applied, 70(9), 1–70.",
+          "Vereinte Nationen (1989). Übereinkommen über die Rechte des Kindes. New York: Vereinte Nationen."
+        ],
+        "differenzierung": {
+          "leichter": "Aufgabe 1 mit den Sätzen 1 bis 6; beim Check ein vorgegebenes Thema.",
+          "schwerer": "Zu jeder Tatsache notieren, wo man sie prüfen kann; zu jeder Meinung das stärkste Gegenargument."
+        },
+        "impulse": [
+          "Wann ist „nur deine Meinung“ eine Ausrede?",
+          "Was hat euch auf der Linie bewegt?"
+        ],
+        "tipps": [
+          "Satz 7 genau besprechen: So tarnen sich Vorurteile.",
+          "Das Plakat für Einheit 26 aufbewahren."
+        ],
+        "achtung": "Keine Themen zu Herkunft, Religion oder Familie. Hinweise auf Druck oder Gefährdung: Einzelgespräch, die zuständige Leitung (Responsable) informieren.",
+        "material": "Blatt, Plakat „Wo werdet ihr gehört?“"
+      }
+    }
+  },
+  {
+    "id": "skills-mein-argument",
+    "bereich": "skills",
+    "thema": "mitbestimmung",
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "25 Min.",
+    "eldib": [
+      "K-30",
+      "K-17",
+      "KOG-58",
+      "SOZ-32"
+    ],
+    "schlagworte": [
+      "Argumentieren",
+      "Begründen",
+      "Zuhören",
+      "Debatte",
+      "fair streiten",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:message-2",
+    "verwandt": [
+      "skills-debatte",
+      "skills-fakt-oder-meinung"
+    ],
+    "kurs": [
+      "j3-e25"
+    ],
+    "de": {
+      "titel": "Mein Argument",
+      "untertitel": "Behauptung, Begründung, Beispiel – und fair antworten, wenn jemand widerspricht",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Ein Argument hat drei Teile. Fehlt einer, ist es leicht wegzuwischen."
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 0,
+          "items": [
+            {
+              "titel": "Behauptung",
+              "text": "Was meinst du? Die Schule sollte um 9 Uhr beginnen."
+            },
+            {
+              "titel": "Begründung",
+              "text": "Warum? Jugendliche werden abends später müde und brauchen morgens mehr Schlaf."
+            },
+            {
+              "titel": "Beispiel oder Beleg",
+              "text": "Woran sieht man das? Empfohlen sind 8 bis 10 Stunden Schlaf – mit Schulbeginn um 8 schaffen das viele nicht."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Stark oder schwach? Kreuze an. Überlege bei den schwachen: Was fehlt?"
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "stark",
+            "schwach"
+          ],
+          "items": [
+            "Hausaufgaben sollten abgeschafft werden, weil sie nerven.",
+            "Handys sollten in der Pause erlaubt sein, weil das alle so sehen.",
+            "Jede Klasse sollte ein eigenes Budget bekommen, weil sie so planen lernt – etwa beim Klassenausflug.",
+            "Tiere gehören nicht in den Zoo, weil Zoos doof sind.",
+            "Die Bibliothek sollte vor Prüfungen länger offen sein, weil viele zu Hause keinen ruhigen Platz zum Lernen haben – im Klassenrat haben das zwölf Leute gesagt.",
+            "Wer gegen die Vier-Tage-Woche ist, hat keine Ahnung."
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Drei typische Schwachstellen",
+          "punkte": [
+            "Nur ein Gefühl: „… weil es nervt.“ Das Gefühl ist echt, aber noch kein Grund für andere.",
+            "Nur die Mehrheit: „… weil das alle so sehen.“ Viele können sich auch irren.",
+            "Angriff auf die Person: „Wer das denkt, hat keine Ahnung.“ Das trifft den Menschen, nicht die Sache."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Repariere ein schwaches Argument: Behalte die Behauptung und baue Begründung und Beispiel dazu."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Schwach",
+            "Stark gemacht"
+          ],
+          "breiten": [
+            1.7,
+            3.3
+          ],
+          "zeilen": 2,
+          "beispiel": [
+            "Hausaufgaben sollten weg, weil sie nerven.",
+            "Hausaufgaben sollten in der Schule gemacht werden, weil dort jemand helfen kann – zu Hause bleiben viele an derselben Aufgabe hängen."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Fair antworten: Fass das Gegenargument zuerst zusammen, dann widersprich."
+        },
+        {
+          "art": "dialog",
+          "zeilen": [
+            {
+              "wer": "Contra",
+              "text": "Wenn die Schule erst um 9 beginnt, ist sie auch später aus. Dann bleibt am Nachmittag keine Zeit für Training und Verein."
+            },
+            {
+              "wer": "Pro"
+            }
+          ]
+        },
+        {
+          "art": "wortspeicher",
+          "titel": "Satzanfänge für faire Antworten",
+          "items": [
+            "Du meinst also …",
+            "Wenn ich dich richtig verstehe …",
+            "Da stimme ich dir zu, aber …",
+            "Das sehe ich anders, weil …",
+            "Woher weißt du das?"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Vorbereitung für die Debatte: Thema und Seite hat das Los entschieden."
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 1,
+          "items": [
+            "Unser Thema und unsere Seite: …",
+            "Unser stärkstes Argument: … weil … zum Beispiel …",
+            "Das wird die andere Seite sagen: …",
+            "Darauf antworten wir: Ihr meint also … Aber …"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Nach der Debatte: aus der Rolle aussteigen und fair zurückschauen."
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 1,
+          "items": [
+            "Das stärkste Argument der Gegenseite war: …",
+            "Beim nächsten Mal mache ich anders: …"
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen bauen Argumente aus Behauptung, Begründung und Beispiel, erkennen und reparieren schwache Argumente und üben, ein Gegenargument erst zusammenzufassen und dann zu beantworten.",
+        "ablauf": [
+          "Tafel (5 Min.): das Beispiel in drei Teilen; ein schwaches Argument gemeinsam verbessern.",
+          "Aufgabe 1 und 2 zu zweit (8 Min.). Lösung 1: stark sind 3 und 5; schwach 1 und 4 (nur Gefühl), 2 (nur Mehrheit), 6 (Angriff auf die Person).",
+          "Aufgabe 3 (5 Min.): zwei Paare lesen ihre Antwort vor.",
+          "Aufgabe 4 in der Vorbereitungszeit der Mini-Debatte, Aufgabe 5 im Skill-Teil danach."
+        ],
+        "hintergrund": "Das Muster Behauptung – Begründung – Beispiel macht sichtbar, was einer Meinung fehlt. Typische Schwachstellen sind Gefühle ohne Grund, der Verweis auf die Mehrheit und der Angriff auf die Person statt auf die Sache; Fisher und Ury (1981) setzen dem die Formel entgegen, hart in der Sache und weich zur Person zu sein. Die Zusammenfassen-Regel – erst die Gegenseite wiedergeben, dann widersprechen – schlugen Rogers und Roethlisberger (1952) vor; sie entspricht dem aktiven Zuhören (Gordon, 1972): Wer die Gegenseite wiedergibt, prüft sein Verständnis und entschärft den Streit. Das Beispiel nutzt einen belegten Befund: Für Jugendliche werden 8 bis 10 Stunden Schlaf empfohlen (Paruthi et al., 2016).",
+        "quellen": [
+          "Fisher, R. & Ury, W. (1981). Getting to Yes. Boston: Houghton Mifflin.",
+          "Rogers, C. R. & Roethlisberger, F. J. (1952). Barriers and gateways to communication. Harvard Business Review, 30(4), 46–52.",
+          "Gordon, T. (1972). Familienkonferenz. Hamburg: Hoffmann und Campe.",
+          "Paruthi, S. et al. (2016). Recommended amount of sleep for pediatric populations: A consensus statement of the American Academy of Sleep Medicine. Journal of Clinical Sleep Medicine, 12(6), 785–786."
+        ],
+        "differenzierung": {
+          "leichter": "Bei Aufgabe 3 reicht der erste Satz: „Du meinst also …“",
+          "schwerer": "Zum eigenen Argument das stärkste Gegenargument formulieren und beantworten."
+        },
+        "impulse": [
+          "Welches Argument hat euch heute überzeugt?",
+          "Warum wirkt ein Angriff auf die Person oft stark?"
+        ],
+        "tipps": [
+          "Handzeichen: ein, zwei, drei Finger für die drei Teile.",
+          "Das Blatt für ein Debattier-Turnier aufbewahren."
+        ],
+        "achtung": "Keine Argumente zu Herkunft, Religion, Körper oder Familie üben. Abwertungen von Gruppen sofort stoppen, die Person danach allein ansprechen.",
+        "material": "Blatt für jede Person"
+      }
+    }
+  },
+  {
+    "id": "skills-debatte",
+    "bereich": "skills",
+    "thema": "mitbestimmung",
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "gruppe"
+    ],
+    "dauer": "35 Min.",
+    "eldib": [
+      "K-17",
+      "SOZ-32",
+      "SOZ-27",
+      "SOZ-38"
+    ],
+    "schlagworte": [
+      "Debatte",
+      "Debattenregeln",
+      "Killerphrasen",
+      "Jury",
+      "fair streiten",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:podium",
+    "verwandt": [
+      "skills-mein-argument"
+    ],
+    "kurs": [
+      "j3-e25"
+    ],
+    "de": {
+      "titel": "Die Mini-Debatte",
+      "untertitel": "Ablauf, Regeln, Themenkarten und Jury-Bogen für einen fairen Schlagabtausch",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "So läuft eine Runde, etwa zehn Minuten lang:"
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 0,
+          "items": [
+            {
+              "titel": "Eröffnung",
+              "text": "Pro, dann Contra: je 1 Minute für das stärkste Argument."
+            },
+            {
+              "titel": "Schlagabtausch",
+              "text": "4 Minuten frei – erst zusammenfassen, dann widersprechen."
+            },
+            {
+              "titel": "Schlussworte",
+              "text": "Je 30 Sekunden: Warum unsere Seite überzeugt."
+            },
+            {
+              "titel": "Publikum",
+              "text": "Geht nach jedem starken Argument einen Schritt zur Seite, die überzeugt."
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Unsere Regeln – hart in der Sache, fair zur Person",
+          "punkte": [
+            "Wir greifen Argumente an, nie Personen, ihre Herkunft, ihren Glauben oder ihr Aussehen.",
+            "Wer spricht, wird nicht unterbrochen. Die Redezeit ist für alle gleich.",
+            "Wer widerspricht, fasst zuerst zusammen, was die andere Seite gesagt hat.",
+            "Kein Auslachen, kein Augenrollen, keine Killerphrasen.",
+            "Wer eine Pause braucht, bekommt sie – die Debatte wartet."
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 1,
+          "items": [
+            "Unsere eigene Regel: …"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Killerphrasen würgen jede Diskussion ab. Wähle zwei und sag dasselbe fair."
+        },
+        {
+          "art": "wortspeicher",
+          "titel": "Killerphrasen",
+          "items": [
+            "Das ist doch Quatsch.",
+            "Du hast doch keine Ahnung.",
+            "Das war schon immer so.",
+            "Typisch für euch …",
+            "Frag mal jemanden, der sich auskennt.",
+            "Das ist doch lächerlich."
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Killerphrase",
+            "Fair gesagt"
+          ],
+          "breiten": [
+            1.7,
+            3.3
+          ],
+          "zeilen": 2,
+          "beispiel": [
+            "Das ist doch Quatsch.",
+            "Das sehe ich anders, und zwar weil …"
+          ]
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Themen- und Los-Karten: ausschneiden. Jedes Team zieht ein Thema und eine Seite.",
+          "symbole": [
+            "schneiden",
+            "gruppe"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 4,
+          "hoehe": 78,
+          "karten": [
+            {
+              "titel": "Thema 1",
+              "text": "Die Schule sollte um 9 Uhr beginnen."
+            },
+            {
+              "titel": "Thema 2",
+              "text": "Hausaufgaben sollten abgeschafft werden."
+            },
+            {
+              "titel": "Thema 3",
+              "text": "Handys sollten in der Pause erlaubt sein."
+            },
+            {
+              "titel": "Thema 4",
+              "text": "Jede Klasse sollte ein eigenes Budget bekommen."
+            },
+            {
+              "titel": "Thema 5",
+              "text": "Kürzere Sommerferien, dafür mehr Ferien im Jahr."
+            },
+            {
+              "titel": "Thema 6",
+              "text": "E-Sport sollte an der Schule als Sport zählen."
+            },
+            {
+              "titel": "Thema 7",
+              "text": "Tiere gehören nicht in den Zoo."
+            },
+            {
+              "titel": "Thema 8",
+              "text": "Jede Schule braucht einen Raum nur für Jugendliche."
+            },
+            {
+              "titel": "Pro",
+              "text": "Ihr seid dafür."
+            },
+            {
+              "titel": "Pro",
+              "text": "Ihr seid dafür."
+            },
+            {
+              "titel": "Contra",
+              "text": "Ihr seid dagegen."
+            },
+            {
+              "titel": "Contra",
+              "text": "Ihr seid dagegen."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Jury-Bogen: Achte während der Debatte auf diese Punkte."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "text",
+              "text": "Team Pro"
+            },
+            {
+              "art": "satzanfaenge",
+              "linien": 1,
+              "items": [
+                "Stärkstes Argument: …",
+                "Fairster Moment: …",
+                "Regel verletzt? Welche: …"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "text",
+              "text": "Team Contra"
+            },
+            {
+              "art": "satzanfaenge",
+              "linien": 1,
+              "items": [
+                "Stärkstes Argument: …",
+                "Fairster Moment: …",
+                "Regel verletzt? Welche: …"
+              ]
+            }
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 1,
+          "items": [
+            "Bewegt hat mich das Argument: …"
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Gruppe führt eine Mini-Debatte mit festem Ablauf, gelosten Seiten und klaren Regeln; das Publikum beobachtet mit dem Jury-Bogen und stimmt mit den Füßen ab.",
+        "ablauf": [
+          "Vorher: Karten ausschneiden, Themen streichen, die in der Gruppe Konflikte berühren. Boden: Pro links, Contra rechts, Publikum in der Mitte.",
+          "Regeln (5 Min.): vorlesen, eine eigene ergänzen; Aufgabe 1 zu zweit.",
+          "Los und Vorbereitung (5 Min.) mit dem Blatt „Mein Argument“.",
+          "Debatte (etwa 8 Min.) nach dem Ablauf oben, danach Jury-Bogen vorlesen; zweite Runde mit getauschten Rollen."
+        ],
+        "hintergrund": "Feste Redezeiten, geloste Positionen und eine Jury geben einer Debatte Struktur. Die geloste Seite entlastet: Niemand muss seine private Meinung verteidigen, und eine fremde Position zu vertreten, übt Perspektivwechsel – ein Kernanliegen der Menschenrechtsbildung (Council of Europe, 2012). Die Zusammenfassen-Regel – erst wiedergeben, dann widersprechen – geht auf Rogers und Roethlisberger (1952) zurück und entspricht dem aktiven Zuhören (Gordon, 1972); sie verlangsamt den Schlagabtausch und verhindert Aneinander-vorbei-Reden. Die wichtigste Regel ist die Trennung von Sache und Person (Fisher & Ury, 1981). Das Wanderpublikum zeigt, dass Argumente wirken und man sich umentscheiden darf.",
+        "quellen": [
+          "Council of Europe (2012). Compass: Manual for Human Rights Education with Young People (2nd ed.). Strasbourg: Council of Europe Publishing.",
+          "Rogers, C. R. & Roethlisberger, F. J. (1952). Barriers and gateways to communication. Harvard Business Review, 30(4), 46–52.",
+          "Gordon, T. (1972). Familienkonferenz. Hamburg: Hoffmann und Campe.",
+          "Fisher, R. & Ury, W. (1981). Getting to Yes. Boston: Houghton Mifflin."
+        ],
+        "differenzierung": {
+          "leichter": "Nur Eröffnung und Schlussworte; die Leitung stellt Zwischenfragen.",
+          "schwerer": "Nach zwei Minuten Seitenwechsel: Die Teams argumentieren für die andere Seite weiter."
+        },
+        "impulse": [
+          "Welches Argument hat das Publikum bewegt?",
+          "Wie war es, eine fremde Seite zu vertreten?"
+        ],
+        "tipps": [
+          "Eine Klingel für Regelverstöße spart Ermahnungen.",
+          "Das Blatt eignet sich auch für ein Debattier-Turnier."
+        ],
+        "achtung": "Keine Themen zu Herkunft, Religion, Geschlecht, Körper oder Familie, keine Debatten über Gruppenmitglieder. Wird es persönlich, sofort unterbrechen.",
+        "material": "Karten, Schere, Malerkrepp, Timer, Klingel"
+      }
+    }
+  },
+  {
+    "id": "skills-beteiligungsleiter",
+    "bereich": "skills",
+    "thema": "mitbestimmung",
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "20 Min.",
+    "eldib": [
+      "KOG-62",
+      "SOZ-39",
+      "KOG-47",
+      "V-32"
+    ],
+    "schlagworte": [
+      "Beteiligung",
+      "Mitbestimmung",
+      "Beteiligungsleiter",
+      "Kinderrechte",
+      "Klassenrat",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:ladder",
+    "verwandt": [
+      "skills-mein-anliegen",
+      "klassenrat-protokoll"
+    ],
+    "kurs": [
+      "j3-e26"
+    ],
+    "de": {
+      "titel": "Die Beteiligungsleiter",
+      "untertitel": "Wann wirst du wirklich beteiligt – und wann sieht es nur so aus?",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Der Forscher Roger Hart hat Beteiligung als Leiter beschrieben. Unten sieht es nach Mitbestimmung aus, verändert wird aber nichts. Je weiter oben, desto mehr bestimmen Jugendliche mit."
+        },
+        {
+          "art": "leiter",
+          "stufen": 6,
+          "oben": "echte Mitbestimmung",
+          "unten": "keine echte Beteiligung",
+          "beispiele": [
+            "Schein-Beteiligung: benutzt werden, Dekoration sein, reden ohne Folgen.",
+            "Zugewiesen, aber informiert: eine Aufgabe, und ihr wisst, wozu.",
+            "Gefragt und informiert: Ihr erfahrt, was aus eurer Meinung wurde.",
+            "Gemeinsam entschieden: Erwachsene starten, alle entscheiden.",
+            "Selbst gestartet und geleitet: eure Idee, ihr setzt sie um.",
+            "Selbst gestartet, gemeinsam entschieden: mit Erwachsenen."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Auf welche Sprosse gehört das? Kreuze die Zahl an."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"
+          ],
+          "items": [
+            "Die Lehrerin schlägt einen Ausflug vor; der Klassenrat entscheidet über Ziel und Programm mit.",
+            "Die Schule macht eine Umfrage zum Pausenhof. Die Ergebnisse sieht nie jemand, der Hof bleibt, wie er ist.",
+            "Jugendliche haben die Idee für einen Ruheraum und entscheiden mit der Direktion über Regeln und Einrichtung.",
+            "Die Gemeinde fragt Jugendliche, was im Jugendhaus fehlt, und zeigt später, welche Ideen umgesetzt werden und warum.",
+            "Drei Jugendliche organisieren in der Pause ein Fußballturnier; die Schule stellt nur den Platz.",
+            "Die Klasse hilft beim Aufräumen des Schulgartens; vorher erklärt die Lehrerin, wofür er gebraucht wird."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Und bei dir? Wo stehst du in Schule, Freizeit oder dieser Gruppe?"
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Wo?",
+            "Worum geht es?",
+            "Sprosse",
+            "Was bräuchte es für eine Sprosse höher?"
+          ],
+          "breiten": [
+            0.9,
+            1.8,
+            0.8,
+            2.6
+          ],
+          "zeilen": 3,
+          "beispiel": [
+            "Klasse",
+            "Sitzordnung",
+            "1",
+            "Die Klasse schlägt Varianten vor und wählt mit der Lehrerin aus."
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "Muss es immer ganz oben sein?",
+              "text": "Nein. Nicht jede Entscheidung braucht Sprosse 6, und nicht jede Person will überall mitreden. Aber du solltest wissen, wo du stehst – und Schein-Beteiligung erkennen."
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "tipp",
+              "titel": "Wo du mitbestimmen kannst",
+              "punkte": [
+                "im Klassenrat",
+                "als Klassensprecherin oder Klassensprecher",
+                "im Comité des élèves am Lycée",
+                "in der Gemeinde und im Jugendhaus",
+                "in dieser Gruppe"
+              ]
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Vier Fragen gegen Schein-Beteiligung",
+          "punkte": [
+            "Weiß ich, worum es geht und wozu?",
+            "Weiß ich, wer entscheidet – und warum so?",
+            "Hat meine Meinung eine Folge, oder wird nur gefragt?",
+            "Mache ich freiwillig mit, nachdem mir alles erklärt wurde?"
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen kennen die Beteiligungsleiter nach Hart in einer vereinfachten Fassung, ordnen Situationen zu, erkennen Schein-Beteiligung und prüfen, wo sie selbst mitbestimmen.",
+        "ablauf": [
+          "Leiter am Boden (8 Min.): sechs Sprossen; Situationskarten ziehen und sich auf die passende Sprosse stellen.",
+          "Aufgabe 1 (4 Min.). Lösung, von oben nach unten: 4, 1, 6, 3, 5, 2.",
+          "Aufgabe 2 (5 Min.) allein; wer mag, nennt ein Beispiel und was eine Sprosse höher bräuchte.",
+          "Den Kasten „Wo du mitbestimmen kannst“ mit Ansprechpersonen an den Schulen der Jugendlichen ergänzen."
+        ],
+        "hintergrund": "Hart (1992) beschreibt Beteiligung als Leiter mit acht Sprossen. Die unteren drei – Manipulation, Dekoration und Alibi-Beteiligung – nennt er ausdrücklich Nicht-Beteiligung; auf dem Blatt sind sie zur untersten Sprosse zusammengefasst. Darüber wachsen Information, Mitsprache und Entscheidungsmacht bis zu Projekten, die Jugendliche selbst anstoßen und mit Erwachsenen entscheiden. Nicht jede Situation braucht die oberste Sprosse; wichtig ist, dass Jugendliche wählen können und Schein-Beteiligung vermieden wird. Rechtlich stützt sich Beteiligung auf Artikel 12 der UN-Kinderrechtskonvention (Vereinte Nationen, 1989).",
+        "quellen": [
+          "Hart, R. A. (1992). Children’s Participation: From Tokenism to Citizenship. Florenz: UNICEF International Child Development Centre.",
+          "Vereinte Nationen (1989). Übereinkommen über die Rechte des Kindes. New York: Vereinte Nationen."
+        ],
+        "differenzierung": {
+          "leichter": "Aufgabe 1 nur mit drei Situationen; die Leiter vorher gemeinsam lesen.",
+          "schwerer": "Eine Schein-Beteiligung erfinden und so umbauen, dass sie Sprosse 3 erreicht."
+        },
+        "impulse": [
+          "Woran erkennt man eine Alibi-Frage?",
+          "Was bräuchte eure Schule für eine Sprosse mehr?"
+        ],
+        "tipps": [
+          "Die Leiter am Boden für den Gruppenrat liegen lassen.",
+          "Beschwerden über Personen in Sachfragen umformen."
+        ],
+        "achtung": "Keine Beschwerden über namentlich genannte Personen im Plenum. Wird über wichtige Dinge im Leben eines Jugendlichen ohne ihn entschieden: Einzelgespräch, bei Bedarf die zuständige Leitung (Responsable) einbeziehen.",
+        "material": "Blatt, Malerkrepp, Situationskarten"
+      }
+    }
+  },
+  {
+    "id": "skills-mein-anliegen",
+    "bereich": "skills",
+    "thema": "mitbestimmung",
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "15 Min.",
+    "eldib": [
+      "SOZ-34",
+      "K-25",
+      "V-32",
+      "KOG-62"
+    ],
+    "schlagworte": [
+      "Anliegen",
+      "Mitbestimmung",
+      "Klassenrat",
+      "Vorschlag",
+      "Wenn-dann-Plan",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:speakerphone",
+    "verwandt": [
+      "skills-beteiligungsleiter",
+      "klassenrat-protokoll"
+    ],
+    "kurs": [
+      "j3-e26"
+    ],
+    "de": {
+      "titel": "Mein Anliegen",
+      "untertitel": "Aus Meckern wird ein Vorschlag: So bringst du ein Anliegen dorthin, wo entschieden wird",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "Aylins Anliegen",
+          "bild": "figur:jana:ruhig:zeigen",
+          "text": "Aylin ärgert sich seit Wochen: Im zweiten Stock ihres Lycée gibt es nur einen Getränkeautomaten, und Wasser kostet dort Geld. Erst meckert sie mit ihrer Freundin. Dann schreibt sie auf, was genau sie will: einen Wasserspender im zweiten Stock. Sie fragt ihre Klassensprecherin, wer darüber entscheidet, und bringt das Anliegen in den Klassenrat. Zwei Wochen später liegt es beim Comité des élèves."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Plane dein Anliegen: etwas Kleines, das sich wirklich ändern ließe."
+        },
+        {
+          "art": "schritte",
+          "linien": 1,
+          "items": [
+            {
+              "titel": "Was genau?",
+              "text": "Nicht „alles soll besser werden“, sondern: Was soll sich ändern, wo, ab wann?"
+            },
+            {
+              "titel": "Warum?",
+              "text": "Welches Interesse steckt dahinter? Wen betrifft es außer dir?"
+            },
+            {
+              "titel": "Wer entscheidet?",
+              "text": "Lehrkraft, Klassenrat, Direktion, Comité des élèves, Gemeinde, diese Gruppe?"
+            },
+            {
+              "titel": "Wen brauche ich?",
+              "text": "Wer unterstützt dich? Wer könnte dagegen sein – und warum?"
+            },
+            {
+              "titel": "Mein Vorschlag",
+              "text": "Ein Satz, den du sagen oder aufschreiben kannst."
+            },
+            {
+              "titel": "Mein erster Schritt",
+              "text": "Was machst du bis wann – und bei wem?"
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "So klingt ein Anliegen",
+          "punkte": [
+            "„Mir ist aufgefallen, dass …“",
+            "„Das betrifft …, weil …“",
+            "„Ich schlage vor, dass …“",
+            "„Wer kann darüber entscheiden, und bis wann bekomme ich eine Antwort?“"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Prüft euch zu zweit: Ist das Anliegen konkret genug?"
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "ja",
+            "noch nicht"
+          ],
+          "items": [
+            "Man versteht in einem Satz, was sich ändern soll.",
+            "Es geht um eine Sache, nicht gegen eine Person.",
+            "Ich weiß, wer darüber entscheidet.",
+            "Es gibt einen Vorschlag, nicht nur eine Beschwerde.",
+            "Der erste Schritt hat ein Datum."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Leg fest, wann du den ersten Schritt machst."
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Wenn am Donnerstag der Klassenrat beginnt,",
+              "dann": "melde ich mich als Erste und lese meinen Vorschlag vor."
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Wenn es um eine Person geht",
+          "text": "Geht es um das Verhalten einer bestimmten Person, etwa einer Lehrkraft oder eines Mitschülers, gehört das nicht in den Klassenrat, sondern in ein Gespräch mit einer Vertrauensperson, dem SePAS oder der Leitung."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen formulieren ein eigenes Anliegen als konkreten Vorschlag, klären, wer entscheidet und wen sie brauchen, prüfen es mit einer Checkliste und legen einen ersten Schritt mit Datum fest.",
+        "ablauf": [
+          "Geschichte (2 Min.) vorlesen. Frage: „Was hat Aylin anders gemacht als Meckern?“",
+          "Aufgabe 1 (6 Min.) allein; die Leitung hilft, aus Beschwerden Vorschläge zu machen.",
+          "Aufgabe 2 (3 Min.) zu zweit, bei „noch nicht“ nachbessern.",
+          "Aufgabe 3 im Skill-Teil; wer mag, sagt den Vorschlag mit fester Stimme.",
+          "Einige Wochen später nachfragen, was aus den Anliegen geworden ist."
+        ],
+        "hintergrund": "Wirksame Beteiligung braucht mehr als Mut: ein konkretes Ziel, die richtige Adresse und einen Vorschlag, der die Interessen anderer mitdenkt. Der Plan übernimmt dafür das Denken in Interessen statt Positionen (Fisher & Ury, 1981). Der erste Schritt mit Datum wirkt wie ein Wenn-dann-Plan und macht die Umsetzung wahrscheinlicher (Gollwitzer, 1999). Wer erlebt, dass ein Anliegen Folgen hat, gewinnt Selbstwirksamkeit (Bandura, 1977); Schein-Beteiligung entmutigt dagegen.",
+        "quellen": [
+          "Fisher, R. & Ury, W. (1981). Getting to Yes. Boston: Houghton Mifflin.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503.",
+          "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215."
+        ],
+        "differenzierung": {
+          "leichter": "Ein Anliegen für diese Gruppe wählen; Schritte 1, 3, 5 und 6 reichen.",
+          "schwerer": "Das Anliegen als kurze Nachricht an die zuständige Person formulieren."
+        },
+        "impulse": [
+          "Was unterscheidet eine Beschwerde von einem Anliegen?",
+          "Wer entscheidet an eurer Schule über den Pausenhof?"
+        ],
+        "tipps": [
+          "Ein Foto des Plans passt ins Skills-Buch.",
+          "Anliegen für die Gruppe gleich im Gruppenrat aufgreifen."
+        ],
+        "achtung": "Anliegen, die auf Konflikte mit Personen, Mobbing oder Gewalt hinweisen, nicht im Plenum besprechen: Einzelgespräch, die zuständige Leitung (Responsable) informieren.",
+        "material": "Blatt für jede Person"
+      }
+    }
+  }
+]

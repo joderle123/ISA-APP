@@ -1,0 +1,1166 @@
+[
+  {
+    "id": "skills-stress-barometer",
+    "bereich": "skills",
+    "thema": "schule",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "20 Min., dazu 5 Min. beim Skill",
+    "eldib": [
+      "K-26",
+      "K-16",
+      "V-33"
+    ],
+    "schlagworte": [
+      "Stress",
+      "Stress-Barometer",
+      "guter Stress",
+      "Stressoren",
+      "Kraftquellen",
+      "Seufzer-Atmung",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:cloud-storm",
+    "kurs": [
+      "j2-e06"
+    ],
+    "verwandt": [
+      "skills-anspannungsthermometer",
+      "skills-stress-rucksack",
+      "balance-finden",
+      "stress-werkzeugkoffer"
+    ],
+    "de": {
+      "titel": "Mein Stress-Barometer",
+      "untertitel": "Etwas Druck macht wach, zu viel Druck blockiert. Woran merkst du, wo du gerade stehst – und was dir Kraft gibt?",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Stress ist die Antwort deines Körpers auf eine Anforderung: Das Herz schlägt schneller, die Muskeln spannen sich an, der Blick wird eng. Das macht dich bereit. Zum Problem wird es, wenn es zu viel wird oder zu lange dauert."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Woran merkst du, auf welcher Stufe du bist? Schreib in jede Stufe, was dann bei dir passiert.",
+          "hinweis": "Denk an Körper, Gedanken und Verhalten. Die Tafel aus dem Kurztest hilft dir.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "thermometer",
+          "linien": 1,
+          "stufen": [
+            {
+              "titel": "Ruhig: kaum Druck",
+              "text": "Erholung tut gut. Steht etwas an, geht aber oft nichts voran. So ist es bei mir:"
+            },
+            {
+              "titel": "Guter Stress: wach und bereit",
+              "text": "Herz etwas schneller, Kopf klar, ich bin ganz bei der Sache. So ist es bei mir:"
+            },
+            {
+              "titel": "Es wird eng",
+              "text": "Gereizt, die Gedanken kreisen, ich schiebe auf oder werde laut. So ist es bei mir:"
+            },
+            {
+              "titel": "Zu viel: nichts geht mehr",
+              "text": "Kopf leer oder Tunnelblick, Bauchweh, schlecht schlafen, nur noch weg. So ist es bei mir:"
+            }
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Auf der Anspannungsskala von 0 bis 100 kippt guter Stress bei mir ungefähr bei: …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Deine Stress-Waage für diese Woche: Was setzt dich unter Druck, was gibt dir Kraft?",
+          "hinweis": "Nur für dich. Schreib auf, was du aufschreiben möchtest.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "waage",
+          "links": "Das setzt mich unter Druck",
+          "rechts": "Das gibt mir Kraft",
+          "zeilen": 3
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Zwei Seiten, zwei Wege",
+          "text": "Stress kippt, wenn die linke Seite schwerer wirkt als die rechte. Du kannst an beiden Seiten drehen: Anforderungen kleiner machen – planen, aufteilen, um Hilfe bitten – und Kraftquellen stärken: Schlaf, Bewegung, Menschen, Skills."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Skill-Test: Seufzer-Atmung. Schätz deine Anspannung vorher und nachher.",
+          "hinweis": "Zweimal durch die Nase einatmen, einmal lang durch den Mund aus. Das Ausatmen dauert länger als das Einatmen."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Zahl vorher",
+            "So lange geübt",
+            "Zahl nachher",
+            "Hier kann ich sie nutzen"
+          ],
+          "breiten": [
+            1,
+            1.2,
+            1,
+            3
+          ],
+          "zeilen": 2,
+          "beispiel": [
+            "55",
+            "3 Minuten",
+            "40",
+            "vor einem Devoir, im Bus nach einem Streit"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Deine Barometer-Woche bis zum nächsten Treffen: Kreuz jeden Abend an, auf welcher Stufe dein Tag war.",
+          "hinweis": "Im nächsten Check-in fragen wir nach deiner Woche – eine Zahl reicht.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "einschaetzung",
+          "items": [
+            "Montag",
+            "Dienstag",
+            "Mittwoch",
+            "Donnerstag",
+            "Freitag",
+            "Samstag",
+            "Sonntag"
+          ],
+          "optionen": [
+            "ruhig",
+            "guter Stress",
+            "eng",
+            "zu viel"
+          ]
+        },
+        {
+          "art": "plan",
+          "tage": [
+            "Mo",
+            "Di",
+            "Mi",
+            "Do",
+            "Fr",
+            "Sa",
+            "So"
+          ],
+          "zeilen": [
+            "Seufzer-Atmung geübt"
+          ],
+          "symbol": "kasten"
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Du entscheidest, was du teilst.",
+          "text": "Das Blatt gehört dir. Steht dein Barometer über Wochen auf „zu viel“, sprich mit jemandem, dem du vertraust, mit dem SePAS oder anonym und kostenlos mit dem Kanner- a Jugendtelefon: 116 111."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen beschreiben ihre Stressreaktion auf vier Stufen, bestimmen, wo guter Stress bei ihnen in zu viel kippt, stellen Anforderungen und Kraftquellen gegenüber und testen die Seufzer-Atmung.",
+        "ablauf": [
+          "Nach dem Kurztest: Anzeichen in drei Spalten an der Tafel sammeln – Körper, Gedanken, Verhalten.",
+          "Aufgabe 1 (6 Min.): Barometer an die Tafel, mit Beispielen füllen, dann allein. Frage: „Bei welcher Zahl kippt es bei dir?“",
+          "Aufgabe 2 (8 Min.): Karten in Rot und Grün verdeckt schreiben, vorlesen, an die Waage kleben; dann die eigene Waage allein.",
+          "Nach dem Gruppenjonglieren: die Kurve „zu wenig – genau richtig – zu viel“ zeichnen und mit dem Barometer verbinden.",
+          "Aufgabe 3 in der Skill-Phase; Aufgabe 4 als Wochenauftrag bis Einheit 7."
+        ],
+        "hintergrund": "Nach dem transaktionalen Stressmodell entsteht Stress, wenn eine Person eine Anforderung als größer bewertet als ihre Möglichkeiten; reichen die Mittel, wird dieselbe Lage eher als Herausforderung erlebt (Lazarus & Folkman, 1984). Das Barometer trennt deshalb guten Stress von zu viel Stress, und die Waage macht beide Seiten der Bewertung sichtbar. Was auf der rechten Seite steht, nennt die Salutogenese Widerstandsressourcen (Antonovsky, 1987). Die Seufzer-Atmung – zweimal einatmen, lange ausatmen – verbesserte bei fünf Minuten täglicher Übung über einen Monat die Stimmung und senkte die Atemfrequenz in Ruhe stärker als eine Achtsamkeitsmeditation (Balban et al., 2023).",
+        "quellen": [
+          "Lazarus, R. S. & Folkman, S. (1984). Stress, Appraisal, and Coping. New York: Springer.",
+          "Antonovsky, A. (1987). Unraveling the Mystery of Health. San Francisco: Jossey-Bass.",
+          "Balban, M. Y., Neri, E., Kogon, M. M., Weed, L., Nouriani, B., Jo, B., Holl, G., Zeitzer, J. M., Spiegel, D. & Huberman, A. D. (2023). Brief structured respiration practices enhance mood and reduce physiological arousal. Cell Reports Medicine, 4(1), 100895."
+        ],
+        "differenzierung": {
+          "leichter": "Im Barometer nur zwei Stufen ausfüllen: guter Stress und zu viel. Die Waage mündlich mit der Leitung.",
+          "schwerer": "Zu jeder Anforderung notieren, ob sie sich ändern lässt, und für eine davon einen ersten Schritt planen."
+        },
+        "impulse": [
+          "Woran merkt ihr als Erstes, dass guter Stress kippt?",
+          "Was steht bei euch auf der rechten Seite der Waage, das ihr zu selten nutzt?"
+        ],
+        "tipps": [
+          "Das Barometer taugt als Check-in in den Einheiten 7 bis 9.",
+          "Die Seufzer-Atmung täglich üben lassen – in Einheit 9 wird sie gebraucht."
+        ],
+        "achtung": "Die Waage nicht vorlesen, nicht einsammeln. Bei anhaltender Überlastung, Rückzug oder Sorgen zu Hause: Einzelgespräch, SePAS, zuständige Leitung (Responsable). Bei Gefährdung Schutzkonzept.",
+        "material": "Karten in Rot und Grün, Timer"
+      }
+    }
+  },
+  {
+    "id": "skills-lern-wortkarten",
+    "bereich": "skills",
+    "thema": "schule",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln"
+    ],
+    "dauer": "6 Min. (zweimal 3 Min.)",
+    "eldib": [
+      "KOG-30",
+      "KOG-3"
+    ],
+    "schlagworte": [
+      "Lernen",
+      "Vokabeln",
+      "Selbsttest",
+      "Wiederlesen",
+      "Experiment",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:alphabet-latin",
+    "kurs": [
+      "j2-e07"
+    ],
+    "verwandt": [
+      "skills-lern-experiment",
+      "clever-lernen"
+    ],
+    "de": {
+      "titel": "Wortkarten zum Lern-Experiment",
+      "untertitel": "Zwanzig Wörter Swahili, zwei Listen, zwei Methoden. Lern jede Liste genau so, wie es auf deinem Protokoll steht.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Lern jede Liste drei Minuten lang mit deiner Methode. Danach gibst du die Liste ab.",
+          "hinweis": "Die Leitung sagt die Zeit an. Nicht abfotografieren, nicht mitnehmen.",
+          "symbole": [
+            "lesen"
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "Wiederlesen",
+              "text": "Lies die Liste immer wieder durch, leise oder halblaut. Nichts abdecken, nichts aufschreiben."
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "Selbsttest",
+              "text": "Lies die Liste eine halbe Minute. Falte dann die deutsche Seite nach hinten, sag dir jede Bedeutung, klapp auf und prüf. Wieder von vorn."
+            }
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "text",
+              "text": "Liste 1 – links Swahili, rechts Deutsch"
+            },
+            {
+              "art": "karten",
+              "spalten": 2,
+              "hoehe": 40,
+              "karten": [
+                {
+                  "titel": "kisu"
+                },
+                {
+                  "titel": "Messer"
+                },
+                {
+                  "titel": "mlango"
+                },
+                {
+                  "titel": "Tür"
+                },
+                {
+                  "titel": "jicho"
+                },
+                {
+                  "titel": "Auge"
+                },
+                {
+                  "titel": "ndizi"
+                },
+                {
+                  "titel": "Banane"
+                },
+                {
+                  "titel": "wingu"
+                },
+                {
+                  "titel": "Wolke"
+                },
+                {
+                  "titel": "kiti"
+                },
+                {
+                  "titel": "Stuhl"
+                },
+                {
+                  "titel": "maziwa"
+                },
+                {
+                  "titel": "Milch"
+                },
+                {
+                  "titel": "upepo"
+                },
+                {
+                  "titel": "Wind"
+                },
+                {
+                  "titel": "mbwa"
+                },
+                {
+                  "titel": "Hund"
+                },
+                {
+                  "titel": "kijiko"
+                },
+                {
+                  "titel": "Löffel"
+                }
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "text",
+              "text": "Liste 2 – links Swahili, rechts Deutsch"
+            },
+            {
+              "art": "karten",
+              "spalten": 2,
+              "hoehe": 40,
+              "karten": [
+                {
+                  "titel": "viatu"
+                },
+                {
+                  "titel": "Schuhe"
+                },
+                {
+                  "titel": "mkate"
+                },
+                {
+                  "titel": "Brot"
+                },
+                {
+                  "titel": "sikio"
+                },
+                {
+                  "titel": "Ohr"
+                },
+                {
+                  "titel": "nyota"
+                },
+                {
+                  "titel": "Stern"
+                },
+                {
+                  "titel": "mvua"
+                },
+                {
+                  "titel": "Regen"
+                },
+                {
+                  "titel": "mti"
+                },
+                {
+                  "titel": "Baum"
+                },
+                {
+                  "titel": "chakula"
+                },
+                {
+                  "titel": "Essen"
+                },
+                {
+                  "titel": "jiwe"
+                },
+                {
+                  "titel": "Stein"
+                },
+                {
+                  "titel": "paka"
+                },
+                {
+                  "titel": "Katze"
+                },
+                {
+                  "titel": "barabara"
+                },
+                {
+                  "titel": "Straße"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Material für das Lern-Experiment in Einheit 7: zwei gleich schwere Listen mit je zehn Wortpaaren Swahili–Deutsch. Jede Person lernt eine Liste mit Wiederlesen und eine mit Selbsttest.",
+        "ablauf": [
+          "Vorher: einseitig drucken und zwischen Liste 1 und Liste 2 durchschneiden. Eine Garnitur je Person und eine Reserve.",
+          "Hälften bilden: Hälfte A lernt Liste 1 mit Wiederlesen und Liste 2 mit Selbsttest, Hälfte B umgekehrt; jede Person kreuzt es auf dem Protokoll an.",
+          "Beide Methoden an der Tafel vormachen, vor allem das Falten beim Selbsttest.",
+          "Liste 1 austeilen, drei Minuten nach Timer, einsammeln. Dann Liste 2 ebenso. Beide Listen in einen Umschlag.",
+          "Nach dem Test die Listen zum Prüfen kurz zurückgeben, wieder einsammeln und für den Nachtest in Einheit 8 im Umschlag aufbewahren."
+        ],
+        "hintergrund": "Swahili wurde gewählt, weil in der Gruppe kaum jemand Vorwissen mitbringt. Die Wörter haben keine bekannten Verwandten im Deutschen, Französischen, Portugiesischen oder Englischen; Wörter, die aus Filmen bekannt sind, fehlen bewusst. Beide Listen sind ähnlich lang und mischen Alltag, Natur, Körper und Tiere. Weil jede Person beide Methoden nutzt und die Hälften die Listen tauschen, gleichen sich Unterschiede zwischen den Listen aus. Die Anordnung folgt Roediger und Karpicke (2006): wiederholtes Lesen gegen wiederholtes Abrufen, getestet kurz nach dem Lernen und nach einer Woche.",
+        "quellen": [
+          "Roediger, H. L. & Karpicke, J. D. (2006). Test-enhanced learning: Taking memory tests improves long-term retention. Psychological Science, 17(3), 249–255."
+        ],
+        "differenzierung": {
+          "leichter": "Nur die ersten sechs Wörter jeder Liste lernen und testen; die Leitung spricht die Wörter einmal vor.",
+          "schwerer": "Beim Nachtest zusätzlich die Richtung umdrehen: aus dem Deutschen ins Swahili."
+        },
+        "impulse": [
+          "Warum lernt die Hälfte von euch die Listen andersherum?",
+          "Welche Methode hat sich beim Lernen leichter angefühlt – und warum ist das kein Beweis?"
+        ],
+        "tipps": [
+          "Die Listen nicht vorher austeilen und in der Pause nicht liegen lassen.",
+          "Wer Swahili spricht oder versteht, wird Versuchsleitung: Zeit nehmen, Listen einsammeln, Summen rechnen."
+        ],
+        "achtung": "Wer schlecht liest, bekommt die Wörter einmal vorgesprochen. Ergebnisse bleiben privat; an die Tafel kommen nur Summen der Gruppe.",
+        "material": "Schere oder Schneidemaschine, großer Umschlag, Timer"
+      }
+    }
+  },
+  {
+    "id": "skills-lern-experiment",
+    "bereich": "skills",
+    "thema": "schule",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "30 Min. in Einheit 7, 8 Min. in Einheit 8",
+    "eldib": [
+      "KOG-30",
+      "KOG-61",
+      "V-29",
+      "V-32"
+    ],
+    "schlagworte": [
+      "Lernen",
+      "Lernstrategien",
+      "Selbsttest",
+      "verteiltes Lernen",
+      "Lernort",
+      "Experiment",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:microscope",
+    "kurs": [
+      "j2-e07",
+      "j2-e08"
+    ],
+    "verwandt": [
+      "skills-lern-wortkarten",
+      "clever-lernen",
+      "skills-pruefungs-countdown"
+    ],
+    "de": {
+      "titel": "Das Lern-Experiment",
+      "untertitel": "Wiederlesen oder Selbsttest – was bleibt nach einer halben Stunde, was nach einer Woche?",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Deine Methoden: Kreuz an, wie du die beiden Listen lernst.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 1,
+          "items": [
+            "Hälfte A: Liste 1 mit Wiederlesen, Liste 2 mit Selbsttest",
+            "Hälfte B: Liste 1 mit Selbsttest, Liste 2 mit Wiederlesen"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Deine Vorhersage: Mit welcher Methode wirst du mehr Wörter wissen?",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "einschaetzung",
+          "items": [
+            "nach der Pause",
+            "in einer Woche"
+          ],
+          "optionen": [
+            "Wiederlesen",
+            "Selbsttest",
+            "gleich viele"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Drei Regeln, die hängen bleiben",
+          "punkte": [
+            "Heft zu: abrufen statt wiederlesen.",
+            "Verteilen statt pauken: dreimal 20 Minuten an drei Tagen statt einer Stunde am Abend davor.",
+            "Ein Lernort ohne Handy, möglichst immer derselbe Platz."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Test nach der Pause: Schreib zu jedem Wort die Bedeutung. Rate ruhig, wenn du unsicher bist.",
+          "hinweis": "Du hast vier Minuten. Danach prüfst du mit den Listen und zählst deine Treffer.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "satzanfaenge",
+              "items": [
+                "paka",
+                "wingu",
+                "mkate",
+                "kiti",
+                "jiwe",
+                "kisu",
+                "nyota",
+                "maziwa",
+                "sikio",
+                "mbwa"
+              ],
+              "linien": 1
+            }
+          ],
+          "rechts": [
+            {
+              "art": "satzanfaenge",
+              "items": [
+                "barabara",
+                "jicho",
+                "mvua",
+                "kijiko",
+                "chakula",
+                "mlango",
+                "viatu",
+                "upepo",
+                "mti",
+                "ndizi"
+              ],
+              "linien": 1
+            }
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Meine Treffer: Wiederlesen … von 10 · Selbsttest … von 10",
+            "Die ganze Gruppe: Wiederlesen … · Selbsttest …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Nachtest in einer Woche: Schreib wieder zu jedem Wort die Bedeutung – ohne vorher zu lernen.",
+          "hinweis": "Gleiche Wörter, andere Reihenfolge.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "satzanfaenge",
+              "items": [
+                "mlango",
+                "sikio",
+                "kiti",
+                "chakula",
+                "upepo",
+                "paka",
+                "ndizi",
+                "mkate",
+                "jicho",
+                "mvua"
+              ],
+              "linien": 1
+            }
+          ],
+          "rechts": [
+            {
+              "art": "satzanfaenge",
+              "items": [
+                "kisu",
+                "viatu",
+                "wingu",
+                "nyota",
+                "maziwa",
+                "jiwe",
+                "mbwa",
+                "barabara",
+                "kijiko",
+                "mti"
+              ],
+              "linien": 1
+            }
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Meine Treffer: Wiederlesen … von 10 · Selbsttest … von 10",
+            "Die ganze Gruppe: Wiederlesen … · Selbsttest …",
+            "Mein Fazit nach einer Woche: …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dein Lernplan für den nächsten Test: drei kurze Runden an drei Tagen, jede mit einem Selbsttest.",
+          "hinweis": "Selbsttest-Ideen: Karteikarten, Heft zu und aufschreiben, was du noch weißt, jemandem erklären, alte Aufgaben ohne Lösung rechnen.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Mein Test (Fach und Datum): …",
+            "Mein Lernort: … · Mein Handy liegt dann: …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Runde",
+            "Wann?",
+            "Was lerne ich?",
+            "So teste ich mich"
+          ],
+          "breiten": [
+            0.7,
+            1.3,
+            1.8,
+            2.4
+          ],
+          "zeilen": 3,
+          "nummern": 1,
+          "beispiel": [
+            "z. B.",
+            "Mo, 17 Uhr",
+            "Vokabeln, Unité 3",
+            "Heft zu, 20 Wörter aufschreiben, dann vergleichen"
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen vergleichen Wiederlesen und Selbsttest in einem echten Experiment, prüfen ihre Vorhersage nach der Pause und nach einer Woche und planen damit drei Lernrunden.",
+        "ablauf": [
+          "Einheit 7 (5 Min.): Aufgaben 1 und 2, dann lernen mit den Wortkarten; die Regeln im Merke-Kasten nach dem Münztest.",
+          "Nach der Pause (8 Min.): Aufgabe 3 in vier Minuten, mit den Listen prüfen; nur Summen der Gruppe an die Tafel.",
+          "Ende von Einheit 7 (7 Min.): Aufgabe 5 mit eigenen Unterlagen. Protokoll bleibt in der Mappe.",
+          "Einheit 8 (8 Min.): Aufgabe 4 ohne vorheriges Lernen, prüfen, vergleichen, Fazit in einem Satz."
+        ],
+        "hintergrund": "Wiederlesen erzeugt ein Gefühl von Vertrautheit, das leicht mit Können verwechselt wird. Roediger und Karpicke (2006) fanden: Kurz nach dem Lernen war Wiederlesen gleich gut oder besser, nach einer Woche wussten Personen, die sich selbst abgefragt hatten, deutlich mehr – obwohl die Wiederlesenden ihre Leistung höher einschätzten. Dunlosky et al. (2013) bewerten Abrufen und verteiltes Lernen als die wirksamsten von zehn verbreiteten Methoden. Das Gruppen-Experiment ist klein: Es liefert einen Hinweis, keinen Beweis – auch das ist eine Lernerfahrung.",
+        "quellen": [
+          "Roediger, H. L. & Karpicke, J. D. (2006). Test-enhanced learning: Taking memory tests improves long-term retention. Psychological Science, 17(3), 249–255.",
+          "Dunlosky, J., Rawson, K. A., Marsh, E. J., Nathan, M. J. & Willingham, D. T. (2013). Improving students’ learning with effective learning techniques. Psychological Science in the Public Interest, 14(1), 4–58."
+        ],
+        "differenzierung": {
+          "leichter": "Mit den ersten sechs Wörtern je Liste arbeiten; im Lernplan nur eine Runde genau planen.",
+          "schwerer": "Für die Gruppe Durchschnittswerte ausrechnen und als Säulen an die Tafel zeichnen."
+        },
+        "impulse": [
+          "Warum fühlt sich Wiederlesen sicherer an, als es ist?",
+          "Was müsste passieren, damit ihr den Selbsttest zu Hause wirklich macht?"
+        ],
+        "tipps": [
+          "Wer Einzelergebnisse vergleichen will, wird Versuchsleitung und rechnet die Summen.",
+          "Für eine längere Planung eignet sich das Toolbox-Blatt „Clever lernen“."
+        ],
+        "achtung": "Einzelergebnisse nicht vorlesen oder vergleichen. Lese- und Schreibschwierigkeiten nicht vor der Gruppe ansprechen; Wörter vorsprechen, Hilfe im Einzelgespräch klären.",
+        "material": "Wortkarten, Umschlag, Timer, Unterlagen für einen Test"
+      }
+    }
+  },
+  {
+    "id": "skills-start-plan",
+    "bereich": "skills",
+    "thema": "schule",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "40 Min., verteilt über die Einheit",
+    "eldib": [
+      "V-32",
+      "V-29",
+      "K-26"
+    ],
+    "schlagworte": [
+      "Aufschieben",
+      "Prokrastination",
+      "erster Schritt",
+      "25-Minuten-Methode",
+      "Wenn-dann-Plan",
+      "Selbstmitgefühl",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:player-play",
+    "kurs": [
+      "j2-e08"
+    ],
+    "verwandt": [
+      "aufschieben-ueberlisten",
+      "fokus",
+      "skills-lern-experiment"
+    ],
+    "de": {
+      "titel": "Mein Start-Plan",
+      "untertitel": "Aufschieben ist kein Faulsein, sondern Ausweichen vor einem unangenehmen Gefühl. Ein kleiner Start macht das Gefühl kleiner.",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "Sonntag, 16 Uhr",
+          "bild": "figur:ben:besorgt",
+          "text": "Diogo muss morgen in Französisch präsentieren. Er öffnet den Laptop, sieht die leere Folie und bekommt ein flaues Gefühl im Bauch. „Erst noch das Video fertig schauen.“ Aus einem Video werden sieben. Um 21 Uhr ist der Druck riesig, und die Präsentation fühlt sich noch schlimmer an als um 16 Uhr."
+        },
+        {
+          "art": "aufgabe",
+          "text": "So läuft der Aufschiebe-Kreislauf. Trag ein, wie er bei dir aussieht.",
+          "hinweis": "Nach der vierten Station geht es von vorn los – und die Aufgabe wirkt jedes Mal größer.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 1,
+          "items": [
+            {
+              "titel": "Aufgabe",
+              "text": "Diogo: Präsentation für morgen. Bei mir:"
+            },
+            {
+              "titel": "Mieses Gefühl",
+              "text": "Unsicher, keine Lust, Angst, dass es schlecht wird. Bei mir:"
+            },
+            {
+              "titel": "Ausweichen",
+              "text": "„Nur noch ein Video.“ Bei mir:"
+            },
+            {
+              "titel": "Kurz besser, dann Druck",
+              "text": "Erleichterung, später schlechtes Gewissen. Bei mir:"
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Keine Lust ist ein Gefühl, kein Befehl.",
+          "text": "Das Gefühl vor dem Anfangen ist meist größer als die Arbeit selbst. Deshalb hilft kein Druck, sondern ein Start, der so klein ist, dass er kaum Überwindung kostet."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Deine Aufgabe in Schritten: Mach den ersten Schritt so klein, dass er in fünf Minuten erledigt ist.",
+          "hinweis": "Beispiele für erste Schritte: das Heft aufschlagen und die Aufgabe lesen, drei Stichpunkte notieren, die erste Folie mit Titel anlegen.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Die Aufgabe, die ich vor mir herschiebe: …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "leiter",
+          "stufen": 4,
+          "unten": "Schritt 1: in fünf Minuten erledigt",
+          "oben": "Geschafft"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dein Start als Wenn-dann-Plan: Wann, wo und womit fängst du an?",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Wenn ich am Samstag um 11 Uhr vom Training nach Hause komme,",
+              "dann": "lege ich das Handy in die Küche und schreibe den Titel auf die erste Folie."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Zwei Sätze für dich: einer zum Anfangen, einer für den Neustart, wenn du doch aufgeschoben hast.",
+          "hinweis": "Zum Beispiel: „Nur zehn Minuten, dann darfst du aufhören.“ Oder für den Neustart: „Passiert fast allen. Was ist jetzt der kleinste nächste Schritt?“",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Mein Start-Satz aus der Gewissensgasse: …",
+            "Mein Neustart-Satz: …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Runden mit Timer: Wie unangenehm ist die Aufgabe vorher, wie danach?",
+          "hinweis": "0 = gar nicht, 10 = kaum auszuhalten. Eine Runde: 25 Minuten eine Sache, Handy weg, dann 5 Minuten Pause. Zum Einstieg reichen 10 Minuten.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Tag",
+            "Minuten",
+            "Unlust vorher",
+            "Unlust nachher",
+            "Das habe ich geschafft"
+          ],
+          "breiten": [
+            0.8,
+            0.9,
+            1,
+            1.1,
+            2.6
+          ],
+          "zeilen": 4,
+          "beispiel": [
+            "heute",
+            "10",
+            "7",
+            "3",
+            "Titel und erste Stichpunkte"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Wenn nichts mehr geht",
+          "text": "Blockiert dich das Aufschieben über Wochen oder fühlt sich alles sinnlos an, sprich mit jemandem, dem du vertraust, oder mit dem SePAS. Anonym und kostenlos hilft das Kanner- a Jugendtelefon: 116 111."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen verstehen Aufschieben als Ausweichen vor Gefühlen, finden einen Fünf-Minuten-Schritt, planen den Start mit Wenn-dann und erproben eine Runde mit Timer.",
+        "ablauf": [
+          "Nach dem Nachtest (12 Min.): Geschichte vorlesen, Kreislauf an der Tafel füllen, Aufgabe 1 allein.",
+          "Aufgaben 2 und 3 (15 Min.) mit der mitgebrachten Aufgabe; zu zweit prüfen: Wann, wo, womit?",
+          "Nach der Gewissensgasse: Start-Satz eintragen (Aufgabe 4, erste Zeile).",
+          "Probe-Runde (15 Min.): Unlust vorher, zehn Minuten arbeiten, Unlust nachher (Aufgabe 5).",
+          "Beim Skill den Neustart-Satz eintragen. Die Tabelle läuft als Wochenauftrag weiter."
+        ],
+        "hintergrund": "Aufschieben ist das freiwillige Verschieben einer beabsichtigten Handlung trotz absehbarer Nachteile; es hängt vor allem mit der Unannehmlichkeit der Aufgabe, dem Abstand zur Belohnung und Impulsivität zusammen (Steel, 2007). Sirois und Pychyl (2013) beschreiben es als kurzfristige Stimmungsreparatur – genau das zeigt der Kreislauf. Hilfreich sind ein sehr kleiner erster Schritt, feste Arbeitsfenster von 25 Minuten (Cirillo, 2018) und Wenn-dann-Pläne, die den Start an eine Situation binden (Gollwitzer, 1999). Die Unlust vorher und nachher zeigt vielen: Das Anfangen ist der schwerste Teil.",
+        "quellen": [
+          "Steel, P. (2007). The nature of procrastination: A meta-analytic and theoretical review of quintessential self-regulatory failure. Psychological Bulletin, 133(1), 65–94.",
+          "Sirois, F. & Pychyl, T. (2013). Procrastination and the priority of short-term mood regulation. Social and Personality Psychology Compass, 7(2), 115–127.",
+          "Cirillo, F. (2018). The Pomodoro Technique. New York: Currency.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "differenzierung": {
+          "leichter": "Nur Aufgaben 2 und 3 schriftlich; den Kreislauf mündlich an der Tafel.",
+          "schwerer": "Mit dem Toolbox-Blatt „Fokus“ eine ganze Lernwoche in Arbeitsblöcken planen und auswerten."
+        },
+        "impulse": [
+          "Welches Gefühl kommt bei dir kurz vor dem Anfangen?",
+          "Was war nach der Probe-Runde anders als erwartet?"
+        ],
+        "tipps": [
+          "Der erste Schritt ist richtig, wenn die Jugendlichen über ihn lachen.",
+          "Nächstes Mal nachfragen, was geklappt hat – ohne das Nicht-Geschaffte zu bewerten."
+        ],
+        "achtung": "Hinter dauerhaftem Aufschieben können Niedergeschlagenheit, Überforderung oder Versagensangst stehen: Einzelgespräch, bei Bedarf SePAS und Responsable einbeziehen.",
+        "material": "Mitgebrachte Aufgaben, Timer, Kiste für die Handys"
+      }
+    }
+  },
+  {
+    "id": "skills-pruefungsplan",
+    "bereich": "skills",
+    "thema": "schule",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "35 Min., verteilt über die Einheit",
+    "eldib": [
+      "K-26",
+      "V-21",
+      "V-25"
+    ],
+    "schlagworte": [
+      "Prüfungen",
+      "Prüfungsangst",
+      "Gedanken prüfen",
+      "Aufregung umdeuten",
+      "Prüfungstag",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:pencil-check",
+    "kurs": [
+      "j2-e09"
+    ],
+    "verwandt": [
+      "skills-pruefungs-countdown",
+      "pruefungsangst",
+      "skills-stress-barometer",
+      "skills-start-plan"
+    ],
+    "de": {
+      "titel": "Mein Prüfungsplan",
+      "untertitel": "Aufregung gehört zu Prüfungen dazu. Mit einem Plan wird aus ihr Energie statt Panik.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Zwei Teile der Prüfungsangst",
+          "text": "Sorgen im Kopf, etwa „Ich schaffe das nie“, belegen Platz, der dann für die Aufgaben fehlt. Aufregung im Körper – Herzklopfen, schneller Atem – ist dagegen Energie. Sie muss nicht weg. Weniger werden sollen die Sorgen."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Prüf einen Prüfungsgedanken mit drei Fragen. Schreib unter das dritte Bild, was Inês stattdessen denken könnte.",
+          "hinweis": "Was ist das Schlimmste, das realistisch passieren kann – und wie würdest du damit fertig? Was passiert am wahrscheinlichsten? Was würdest du einer Freundin sagen?",
+          "symbole": [
+            "nachdenken",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "comic",
+          "spalten": 3,
+          "felder": [
+            {
+              "figuren": [
+                "figur:jana:besorgt:haende-gesicht"
+              ],
+              "blase": "denken",
+              "text": "Wenn ich den Devoir verhaue, schaffe ich das Jahr nicht.",
+              "untertitel": "Inês am Abend vor dem Mathe-Devoir"
+            },
+            {
+              "figuren": [
+                "figur:ben:ruhig",
+                "figur:jana:besorgt"
+              ],
+              "sprecher": 0,
+              "text": "Und wenn deine beste Freundin das denken würde?",
+              "untertitel": "Die Frage nach der Freundin"
+            },
+            {
+              "figuren": [
+                "figur:jana:ruhig"
+              ],
+              "blase": "denken",
+              "untertitel": ""
+            }
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Mein Prüfungsgedanke",
+            "Das passiert am wahrscheinlichsten",
+            "Mein Satz, den ich glauben kann"
+          ],
+          "breiten": [
+            2,
+            2,
+            2.2
+          ],
+          "zeilen": 2,
+          "beispiel": [
+            "„Alle anderen haben mehr gelernt.“",
+            "Manche mehr, manche weniger. Ich habe drei Runden mit Selbsttest gemacht.",
+            "„Ich schaue auf mein Blatt, nicht auf die anderen.“"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Herzklopfen umdeuten: Schreib deinen Energie-Satz.",
+          "hinweis": "Beispiel: „Das ist Energie. Mein Körper macht mich bereit.“ Nimm Wörter, die zu dir passen.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Mein Energie-Satz: …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dein Drehbuch für die nächste Prüfung: Lies die Tipps und schreib auf, was du selbst tust.",
+          "symbole": [
+            "lesen",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Meine nächste Prüfung (Fach und Datum): …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "schritte",
+          "stil": "liste",
+          "linien": 1,
+          "items": [
+            {
+              "titel": "Die Tage davor",
+              "text": "Drei kurze Lernrunden mit Selbsttest, der Start mit Wenn-dann-Plan. Meine Termine:"
+            },
+            {
+              "titel": "Der Abend davor",
+              "text": "Tasche packen, nur noch kurz selbst abfragen, nichts Neues mehr, das Handy rechtzeitig weg. Ich:"
+            },
+            {
+              "titel": "Der Morgen",
+              "text": "Frühstücken, was du verträgst, lieber Wasser als Energydrink, früh genug losgehen. Ich:"
+            },
+            {
+              "titel": "Vor der Tür",
+              "text": "Abstand zu denen, die alle nervös machen, zweimal seufzen, Energie-Satz. Ich:"
+            },
+            {
+              "titel": "In der Prüfung",
+              "text": "Alles überfliegen, mit einer leichten Aufgabe anfangen. Bei einem Hänger: markieren, weiter, später zurück. Ich:"
+            },
+            {
+              "titel": "Danach",
+              "text": "Nicht sofort alle Antworten vergleichen, etwas Gutes tun, fragen: Was hat geholfen? Ich:"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Deine zwei Skills für die Prüfung – einer für den Körper, einer für den Kopf. Schreib sie auf die Karte und schneide sie aus.",
+          "hinweis": "Ideen: Seufzer-Atmung, Füße fest in den Boden drücken, Stift fest drücken und loslassen, dein Energie-Satz, dein Satz aus Aufgabe 1.",
+          "symbole": [
+            "schreiben",
+            "schneiden"
+          ]
+        },
+        {
+          "art": "feld",
+          "label": "Meine Prüfungskarte – Körper-Skill, Kopf-Skill, mein Satz",
+          "hoehe": 3.5,
+          "zeichnen": true
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Wenn die Angst zu groß wird",
+          "text": "Kannst du vor Prüfungen tagelang kaum schlafen oder essen, oder fühlt sich der Druck nicht mehr auszuhalten an, sprich mit dem SePAS, deiner Klassenlehrerin oder deinem Klassenlehrer – oder anonym und kostenlos mit dem Kanner- a Jugendtelefon: 116 111."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen prüfen einen Prüfungsgedanken, deuten Aufregung als Energie, planen den Prüfungstag und wählen zwei Skills. Das Blatt schließt das Modul „Stress und Schule“ ab.",
+        "ablauf": [
+          "Nach dem Input (15 Min.): Aufgabe 1 – den Comic gemeinsam, den eigenen Gedanken allein.",
+          "Nach der Bewegungsübung: Aufgabe 2, den Energie-Satz aufschreiben.",
+          "Aufgabe 3 (8 Min.) für eine echte Prüfung, mit Lernplan und Start-Plan aus den Einheiten 7 und 8.",
+          "Aufgabe 4 (4 Min.): Karte ausfüllen, ausschneiden, in der Generalprobe nutzen; dann ein Skill in den Skills-Kompass."
+        ],
+        "hintergrund": "Prüfungsangst hat eine gedankliche Seite (Sorgen) und eine körperliche (Aufgeregtheit); vor allem die Sorgen mindern die Leistung, weil sie Aufmerksamkeit binden (Zeidner, 1998). Die drei Fragen prüfen Katastrophengedanken auf Wahrscheinlichkeit und Bewältigbarkeit, wie in der kognitiven Verhaltenstherapie (Beck, 2011); die Frage nach der Freundin schafft Abstand zum eigenen Problem (Kross & Ayduk, 2017). Jamieson et al. (2010) zeigten: Studierende, denen erklärt wurde, dass Aufregung die Leistung steigern kann, schnitten in einer Mathematikprüfung besser ab.",
+        "quellen": [
+          "Zeidner, M. (1998). Test Anxiety: The State of the Art. New York: Plenum.",
+          "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
+          "Kross, E. & Ayduk, O. (2017). Self-distancing: Theory, research, and current directions. Advances in Experimental Social Psychology, 55, 81–136.",
+          "Jamieson, J. P., Mendes, W. B., Blackstock, E. & Schmader, T. (2010). Turning the knots in your stomach into bows: Reappraising arousal improves performance on the GRE. Journal of Experimental Social Psychology, 46(1), 208–212."
+        ],
+        "differenzierung": {
+          "leichter": "Aufgabe 1 nur mit dem Comic bearbeiten; im Drehbuch drei Stationen auswählen.",
+          "schwerer": "Für jede Station einen Wenn-dann-Satz für den Fall schreiben, dass etwas schiefgeht, etwa wenn der Bus nicht kommt."
+        },
+        "impulse": [
+          "Welche Sorge redet bei dir in Prüfungen am lautesten dazwischen?",
+          "Wie fühlt sich Herzklopfen an, wenn du es Energie nennst?"
+        ],
+        "tipps": [
+          "Die Prüfungskarte auf festes Papier kleben; sie gehört in die Federmappe.",
+          "Nach der Prüfungsphase fragen, welcher Skill geholfen hat – nicht nach der Note."
+        ],
+        "achtung": "Nicht nach Noten fragen, eigene Gedanken nicht vorlesen lassen. Bei Panik, Schulvermeidung oder Niedergeschlagenheit: Einzelgespräch, SePAS, Responsable. Bei Gefährdung Schutzkonzept.",
+        "material": "Scheren, Blätter aus Einheit 7 und 8"
+      }
+    }
+  }
+]

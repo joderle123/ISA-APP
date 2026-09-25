@@ -1,0 +1,1428 @@
+[
+  {
+    "id": "skills-sechs-familien",
+    "bereich": "skills",
+    "thema": "freundschaft",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "30 Min.",
+    "eldib": [
+      "SOZ-31",
+      "SOZ-38",
+      "SOZ-26",
+      "SOZ-37"
+    ],
+    "schlagworte": [
+      "Familie",
+      "Familienformen",
+      "Rollen",
+      "Unterstützung",
+      "Resilienz",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:home",
+    "verwandt": [
+      "wer-ist-fuer-mich-da"
+    ],
+    "kurs": [
+      "j2-e18"
+    ],
+    "de": {
+      "titel": "Sechs Familien, sechs Zuhause",
+      "untertitel": "Was Familien geben können – und wer noch mitträgt",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Zuhause sieht bei allen anders aus: bei beiden Eltern, bei einem Elternteil, bei den Großeltern, in einer Pflegefamilie oder in einem Foyer. Die sechs Jugendlichen auf diesem Blatt sind erfunden."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Lies die Porträts. Unterstreiche, wer in jeder Familie für wen sorgt.",
+          "symbole": [
+            "lesen"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 3,
+          "hoehe": 132,
+          "karten": [
+            {
+              "titel": "Noah, 14",
+              "text": "Lebt mit seiner Mutter und seiner kleinen Schwester in Esch. Nach der Schule ist er bei seiner Oma, bis die Mutter von der Arbeit kommt. Sein Vater wohnt in Portugal; sonntags telefonieren sie per Video."
+            },
+            {
+              "titel": "Aylin, 13",
+              "text": "Hat zwei Zuhause: unter der Woche bei ihrer Mutter und deren Partner, jedes zweite Wochenende beim Vater in Ettelbruck. Dort wartet ihr Halbbruder, drei Jahre alt."
+            },
+            {
+              "titel": "Léa, 14",
+              "text": "Lebt seit zwei Jahren in einem Foyer, zusammen mit sechs anderen Jugendlichen. Mit Samuel, ihrem Erzieher, übt sie für Mathe. An manchen Wochenenden ist sie bei ihrer Tante."
+            },
+            {
+              "titel": "Ben, 14",
+              "text": "Lebt mit seinen zwei Müttern und seinem großen Bruder. Zur Familie gehört ein Hund, um den sich Ben jeden Abend kümmert."
+            },
+            {
+              "titel": "Amira, 15",
+              "text": "Wohnt mit ihren Eltern, drei jüngeren Geschwistern und der Großmutter in einer Vierzimmerwohnung. Beim Arzt übersetzt sie oft für ihren Vater."
+            },
+            {
+              "titel": "Mathis, 13",
+              "text": "Lebt seit seinem sechsten Geburtstag in einer Pflegefamilie mit zwei Pflegegeschwistern. Seine leibliche Mutter trifft er einmal im Monat."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was bekommen die Jugendlichen – und von wem? Wähle drei Porträts.",
+          "hinweis": "Die Wörter im Kasten helfen dir."
+        },
+        {
+          "art": "wortspeicher",
+          "titel": "Was Familien geben können",
+          "items": [
+            "Versorgung",
+            "Schutz",
+            "Trost",
+            "Halt und Regeln",
+            "Unterstützung",
+            "Zugehörigkeit",
+            "Freiraum",
+            "gemeinsame Zeit"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Person",
+            "Das bekommt sie oder er",
+            "Von wem?"
+          ],
+          "breiten": [
+            0.8,
+            2,
+            1.6
+          ],
+          "zeilen": 3,
+          "beispiel": [
+            "Léa",
+            "Unterstützung: Hilfe bei Mathe",
+            "Samuel, Erzieher im Foyer"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Kein Mensch kann alles geben",
+          "text": "Gut ist, wenn es mehrere gibt – in der Familie und außerhalb: Großeltern, eine Tante, eine Trainerin, ein Erzieher, Freundinnen und Freunde. Und jedes Kind hat ein Recht auf Schutz, Versorgung und darauf, gehört zu werden."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Nur für dich: Wer oder was gibt dir Halt? Trag ein, was du magst – innen, wer dir sehr nah ist.",
+          "hinweis": "Menschen aus der Familie und von außerhalb zählen, auch Orte, Tiere oder Musik."
+        },
+        {
+          "art": "zielscheibe",
+          "ringe": [
+            "Das tut mir gut: Orte, Tiere, Dinge",
+            "Diese Menschen helfen mir",
+            "Diese Menschen sind mir nah"
+          ],
+          "mitte": "ich"
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Du entscheidest, was du teilst.",
+          "text": "Das Blatt bleibt bei dir. Und wenn es zu Hause schwer ist: Du musst das nicht allein tragen. Sprich mit einer Vertrauensperson, beim SePAS oder beim Kanner- a Jugendtelefon unter 116 111 – anonym und kostenlos. Bei Gefahr: Notruf 112."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen lernen an sechs erfundenen Familien verschiedene Familienformen kennen, benennen, was Familien geben können, und erkennen, dass auch Menschen außerhalb der Familie mittragen.",
+        "ablauf": [
+          "Galerie (15 Min.): Die Porträts aus einer A3-Kopie hängen im Raum. Zu zweit herumgehen und zu zwei Porträts Haftnotizen kleben: Wer sorgt hier für wen? Frage: „Welche Familie ist die normale?“",
+          "Sammeln (5 Min.): „Was brauchen Jugendliche von den Menschen, bei denen sie leben?“ An der Tafel zu den acht Feldern des Wortspeichers ordnen.",
+          "Aufgabe 2 zu zweit (8 Min.), dann auswerten: Wer gibt was – und wer außer den Eltern?",
+          "Aufgabe 3 still und freiwillig, am Ende der Einheit oder zu Hause. Nicht einsammeln, nicht vorlesen; den Hilfe-Kasten kurz zeigen."
+        ],
+        "hintergrund": "Für die Entwicklung von Jugendlichen zählt weniger die Form der Familie als die Qualität der Beziehungen. In der Kauai-Studie hatten Kinder, die sich trotz schwieriger Bedingungen gut entwickelten, meist mindestens eine verlässliche Bezugsperson – oft auch außerhalb der Kernfamilie, etwa Großeltern, ältere Geschwister oder eine Lehrerin (Werner & Smith, 1992). Masten (2014) spricht deshalb von Widerstandskraft als „gewöhnlicher“ Kraft, die aus tragenden Beziehungen entsteht. Die Zielscheibe macht dieses Netz sichtbar, ohne dass jemand Familiäres preisgeben muss.",
+        "quellen": [
+          "Werner, E. E. & Smith, R. S. (1992). Overcoming the Odds. Ithaca: Cornell University Press.",
+          "Masten, A. S. (2014). Ordinary Magic: Resilience in Development. New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Nur drei Porträts lesen; Aufgabe 2 mit einer Zeile gemeinsam an der Tafel.",
+          "schwerer": "Überlegen, wie sich eine der Familien in fünf Jahren verändert haben könnte – und was dabei gleich bleiben kann."
+        },
+        "impulse": [
+          "Was haben alle sechs Familien gemeinsam?",
+          "Wer außer Eltern kann für Jugendliche wichtig werden?"
+        ],
+        "tipps": [
+          "Namen tauschen, wenn jemand so heißt oder ein Porträt einer realen Lage ähnelt.",
+          "Aufgabe 3 nicht im Vorbeigehen mitlesen – auch nicht aus Interesse."
+        ],
+        "achtung": "Keine Fragen zur eigenen Familie; Aufgabe 3 bleibt privat. Bei Hinweisen auf Gewalt oder Vernachlässigung: Einzelgespräch, nichts versprechen, die zuständige Leitung (Responsable) informieren.",
+        "material": "Blatt, A3-Kopie, Haftnotizen"
+      }
+    }
+  },
+  {
+    "id": "skills-streit-zu-hause",
+    "bereich": "skills",
+    "thema": "freundschaft",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "25 Min.",
+    "eldib": [
+      "V-21",
+      "K-26",
+      "V-18",
+      "SOZ-34"
+    ],
+    "schlagworte": [
+      "Familie",
+      "Streit",
+      "Ich-Botschaft",
+      "Abkühlen",
+      "richtiger Moment",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:door",
+    "verwandt": [
+      "skills-ich-botschaften",
+      "klar-sagen-was-ich-brauche"
+    ],
+    "kurs": [
+      "j2-e19"
+    ],
+    "de": {
+      "titel": "Besser streiten zu Hause",
+      "untertitel": "Worum es eigentlich geht, der richtige Moment und ein Plan zum Abkühlen",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "22 Uhr",
+          "bild": "figur:jana:wuetend:verschraenkt",
+          "text": "Donnerstag, kurz nach 22 Uhr. Mila, 14, liegt im Bett und schreibt mit ihren Freundinnen: Am Samstag ist Party, alle planen gerade, wer was mitbringt. Die Regel zu Hause ist klar: Um 22 Uhr kommt das Handy in die Küche. Ihre Mutter steht in der Tür: „Handy. Jetzt.“ Mila: „Immer machst du alles kaputt!“ Die Tür knallt. Danach liegen beide lange wach."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Worum geht es eigentlich? Oben steht, worüber gestritten wird, unten, was Mila und ihrer Mutter wichtig ist."
+        },
+        {
+          "art": "eisberg",
+          "oben": "Worüber gestritten wird",
+          "unten": "Was beiden wichtig ist",
+          "beispielOben": "das Handy um 22 Uhr",
+          "beispielUnten": "Mutter: dass Mila genug schläft …"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Guter Moment für ein schwieriges Gespräch? Kreuze an."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "eher gut",
+            "eher nicht"
+          ],
+          "items": [
+            "Die Mutter kommt gerade müde von der Spätschicht.",
+            "Samstagvormittag beim Frühstück, niemand hat es eilig.",
+            "Beim Abendessen, die Geschwister hören zu.",
+            "Direkt nachdem die Tür geknallt hat.",
+            "Beim Spazierengehen oder auf einer Autofahrt.",
+            "Per Nachricht: „Können wir morgen nach der Schule reden?“"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Ein guter Moment",
+          "text": "Beide sind unter 50, niemand ist in Eile, niemand schaut zu. Nebeneinander – beim Gehen, im Auto, beim Kochen – redet es sich oft leichter als gegenüber."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Die Zuhause-Formel: Was könnte Mila am nächsten Tag sagen? Schreib zu jedem Teil einen Satz."
+        },
+        {
+          "art": "schritte",
+          "linien": 2,
+          "items": [
+            {
+              "titel": "Verständnis zeigen",
+              "text": "Zeig, dass du die andere Seite verstehst: „Ich weiß, dass du …“"
+            },
+            {
+              "titel": "Ich-Botschaft",
+              "text": "Sag, was dich stört und warum – ohne Vorwurf: „Mich stresst es, wenn …, weil …“"
+            },
+            {
+              "titel": "Vorschlag",
+              "text": "Mach ein Angebot oder frag nach einem: „Können wir …?“"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Mein Abkühl-Plan: Was tust du, wenn deine Zahl über 70 steigt?",
+          "hinweis": "Nur für dich. Abhauen ist nicht dasselbe wie Abkühlen: Wer abkühlt, sagt, wann er wiederkommt."
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 2,
+          "items": [
+            "Mein Stopp-Satz: …",
+            "So fahre ich runter: …",
+            "Wenn ich zurückkomme, sage ich: …"
+          ]
+        },
+        {
+          "art": "notfall",
+          "text": "Streit ist normal – Gewalt nicht. Hier gibt es Hilfe:",
+          "eintraege": [
+            {
+              "name": "Kanner- a Jugendtelefon (anonym, kostenlos)",
+              "nummer": "116 111"
+            },
+            {
+              "name": "Polizei",
+              "nummer": "113"
+            },
+            {
+              "name": "Notruf: Rettung und Feuerwehr",
+              "nummer": "112"
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen erkennen die Anliegen hinter Alltagsstreit, schätzen ein, wann ein Gespräch gelingen kann, formulieren eine Zuhause-Formel und legen einen Abkühl-Plan fest.",
+        "ablauf": [
+          "Geschichte vorlesen, Aufgabe 1 zu zweit (8 Min.): „Was will die Mutter eigentlich – und was will Mila?“ Beide Seiten an der Tafel sammeln.",
+          "Aufgabe 2 allein (3 Min.), vergleichen, Tipp-Kasten lesen. Diskussionsfall Nachricht: gut, wenn sie ein Gespräch vorbereitet, nicht, wenn sie es ersetzt.",
+          "Aufgabe 3 (5 Min.): die Formel an der Tafel vorstellen, dann schreiben; einige Sätze vorlesen lassen, wer mag.",
+          "Aufgabe 4 nach dem Abkühl-Skill (5 Min.), allein, nicht vorlesen. Den Hilfe-Kasten zeigen."
+        ],
+        "hintergrund": "Konflikte zwischen Jugendlichen und Eltern drehen sich meist um Alltägliches wie Mithelfen, Ausgehzeiten, Aussehen oder Schule; die meisten Familien behalten dabei eine warme Beziehung (Steinberg, 2001). Unter der Forderung liegen auf beiden Seiten berechtigte Anliegen – der Eisberg macht sie sichtbar. Ich-Botschaften entschärfen Machtkämpfe (Gordon, 1972); wer zuerst die Sicht der anderen Seite anerkennt, wird eher gehört (Rathus & Miller, 2015). Bei hoher Anspannung hilft kein Argument, deshalb gehören der richtige Moment und ein Abkühl-Plan mit Rückkehrzeit dazu.",
+        "quellen": [
+          "Steinberg, L. (2001). We know some things: Parent–adolescent relationships in retrospect and prospect. Journal of Research on Adolescence, 11(1), 1–19.",
+          "Gordon, T. (1972). Familienkonferenz. Hamburg: Hoffmann und Campe.",
+          "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Bei Aufgabe 3 nur Teil 1 und Teil 3 schreiben; die Ich-Botschaft formuliert die Leitung mit.",
+          "schwerer": "Die Szene aus Sicht der Mutter aufschreiben: Was denkt sie, als die Tür knallt?"
+        },
+        "impulse": [
+          "Was hätte Mila anders machen können, ohne auf ihr Anliegen zu verzichten?",
+          "Woran merkt ihr, dass jemand gerade keinen guten Moment hat?"
+        ],
+        "tipps": [
+          "Die Zuhause-Formel groß an die Wand hängen; sie wird in Einheit 20 wieder gebraucht.",
+          "Beim Abkühl-Plan auf die Rückkehrzeit achten – ohne sie wird aus Abkühlen schnell Abhauen."
+        ],
+        "achtung": "Die Formel ist für Alltagsstreit gedacht. Bei Hinweisen auf Gewalt, Drohungen oder Angst vor dem Nachhausegehen: Einzelgespräch, nichts versprechen, nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) am selben Tag informieren.",
+        "material": "Blatt für jede Person, Tafel"
+      }
+    }
+  },
+  {
+    "id": "skills-zuhause-karten",
+    "bereich": "skills",
+    "thema": "freundschaft",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "gruppe"
+    ],
+    "dauer": "20–25 Min. je Einheit",
+    "eldib": [
+      "SOZ-38",
+      "SOZ-37",
+      "V-28",
+      "SOZ-34"
+    ],
+    "schlagworte": [
+      "Situationskarten",
+      "Rollenspiel",
+      "Forumtheater",
+      "Verhandeln",
+      "Familie",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:masks-theater",
+    "verwandt": [
+      "skills-situationskarten",
+      "konflikte-loesen"
+    ],
+    "kurs": [
+      "j2-e19",
+      "j2-e20"
+    ],
+    "de": {
+      "titel": "Situationskarten: Zuhause",
+      "untertitel": "Zwei Seiten, zwei Karten – für Forumtheater und Verhandlungen",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "So spielen wir",
+          "punkte": [
+            "Alle Situationen sind erfunden. Niemand spielt jemanden aus der eigenen Familie oder dem eigenen Foyer.",
+            "Karte A ist die jugendliche Rolle, Karte B die erwachsene. Wer spielt, liest nur die eigene Karte.",
+            "Die erwachsene Rolle übernimmt zuerst die Leitung.",
+            "Wer „Stopp“ sagt, hält die Szene an. Keine Beleidigungen, keine Berührungen.",
+            "Nach der Szene: aufstehen, ausschütteln, den eigenen Namen sagen."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Streit zu Hause: Spielt die Szene zweimal – erst wie sie oft läuft, dann mit Abkühlen und der Zuhause-Formel.",
+          "symbole": [
+            "schneiden",
+            "gruppe"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 2,
+          "hoehe": 112,
+          "karten": [
+            {
+              "titel": "Z1 A · Handy um 22 Uhr",
+              "text": "Du bist 14. Um 22 Uhr soll dein Handy in die Küche – so ist die Regel. Heute wird im Chat die Party am Samstag geplant. Wichtig ist dir: dazugehören, nichts verpassen, selbst entscheiden."
+            },
+            {
+              "titel": "Z1 B · Handy um 22 Uhr",
+              "text": "Du bist Mutter, Vater oder Erzieher. Dein Kind schreibt nach 22 Uhr noch im Bett. Morgens kommt es kaum hoch, die letzte Mathearbeit war schlecht. Wichtig ist dir: Schlaf, die Schule, dass Absprachen gelten."
+            },
+            {
+              "titel": "Z2 A · Das Zimmer",
+              "text": "Du bist 13. Dein Zimmer ist dein Reich; Ordnung ist dir nicht so wichtig, du findest alles. Es ärgert dich, wenn jemand ohne Anklopfen hereinkommt. Wichtig ist dir: Privatsphäre, dein eigener Raum."
+            },
+            {
+              "titel": "Z2 B · Das Zimmer",
+              "text": "Du bist Mutter, Vater oder Erzieherin. Im Zimmer stehen seit einer Woche Teller und Becher, es riecht. Du gehst hinein, um Wäsche zu holen. Wichtig ist dir: Sauberkeit, dass nichts schimmelt, dass alle mithelfen."
+            },
+            {
+              "titel": "Z3 A · Die Party",
+              "text": "Du bist 14. Chiara feiert am Samstag ihren 15. Geburtstag bis Mitternacht, fast die ganze Klasse geht hin. Du sollst um 22 Uhr zu Hause sein. Wichtig ist dir: bis zum Schluss dabei sein, nicht wie ein Kind wirken."
+            },
+            {
+              "titel": "Z3 B · Die Party",
+              "text": "Du bist Mutter, Vater oder Erzieher. Dein Kind will am Samstag auf eine Party. Du kennst die Familie nicht, der letzte Bus fährt um 22:40, du sorgst dich wegen Alkohol. Wichtig ist dir: Sicherheit, wissen, wo dein Kind ist."
+            },
+            {
+              "titel": "Z4 A · Der kleine Bruder",
+              "text": "Du bist 13. Dein Bruder, 8, nimmt ständig deine Kopfhörer – heute hat er sie kaputt gemacht. Als du laut wirst, heißt es: „Du bist älter, gib nach.“ Wichtig ist dir: Gerechtigkeit, deine Sachen, gehört werden."
+            },
+            {
+              "titel": "Z4 B · Der kleine Bruder",
+              "text": "Du bist Mutter, Vater oder Pflegemutter. Die Kinder streiten zum dritten Mal heute, du bist müde, das Essen brennt an. Das ältere Kind schreit den Kleinen an. Wichtig ist dir: Ruhe, dass sich niemand wehtut, ein gutes Vorbild."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Freiraum aushandeln: Verhandelt zu zweit nach dem Fahrplan, auch mit Z1 und Z3. Danach tauscht ihr die Rollen.",
+          "hinweis": "Z7 schreibt ihr selbst – erfunden und mit beiden Seiten.",
+          "symbole": [
+            "schneiden",
+            "partner"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 2,
+          "hoehe": 128,
+          "karten": [
+            {
+              "titel": "Z5 A · Allein in die Stadt",
+              "text": "Du bist 14. Am Samstag willst du mit zwei Freunden mit dem Zug nach Luxemburg-Stadt: Kino, danach Burger. Bisher warst du dort nur mit Erwachsenen. Wichtig ist dir: zeigen, dass du das kannst, Zeit mit Freunden."
+            },
+            {
+              "titel": "Z5 B · Allein in die Stadt",
+              "text": "Du bist Mutter, Vater oder Erzieher. Dein Kind will mit Freunden allein nach Luxemburg-Stadt. Einen der Freunde kennst du nicht, und der Akku deines Kindes ist oft leer. Wichtig ist dir: Erreichbarkeit, Sicherheit, wissen, mit wem."
+            },
+            {
+              "titel": "Z6 A · Übernachten bei Zoé",
+              "text": "Du bist 14 und lebst im Foyer. Zoé lädt dich am Freitag zum Filmabend mit Übernachten ein. Dafür braucht es eine Absprache mit dem Team. Wichtig ist dir: dabei sein wie alle anderen, nicht jedes Mal lange erklären müssen."
+            },
+            {
+              "titel": "Z6 B · Übernachten bei Zoé",
+              "text": "Du bist Erzieherin oder Erzieher im Foyer. Eine Jugendliche will bei einer Freundin übernachten. Du kennst die Familie nicht und trägst die Verantwortung. Wichtig ist dir: Sicherheit, ein Gespräch mit Zoés Eltern, Vertrauen aufbauen."
+            },
+            {
+              "titel": "Z7 A · Eure Situation",
+              "text": "Du bist … Es geht um … Wichtig ist dir: …"
+            },
+            {
+              "titel": "Z7 B · Eure Situation",
+              "text": "Du bist Mutter, Vater, Erzieherin oder … Es geht um … Wichtig ist dir: …"
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Erfundene Alltagssituationen aus zwei Blickwinkeln für das Forumtheater (Einheit 19) und die Verhandlungen (Einheit 20). Jede Seite hat eigene, berechtigte Anliegen.",
+        "ablauf": [
+          "Vorbereitung: auf festes Papier drucken, ausschneiden, A- und B-Karten getrennt sortieren. Karten weglassen, die der Lage einer Person in der Gruppe zu sehr ähneln.",
+          "Einheit 19: Z1–Z4. Die Leitung spielt Karte B, eine freiwillige Person Karte A; erst wie oft, dann mit Stopps aus dem Publikum.",
+          "Einheit 20: Z1, Z3, Z5 oder Z6. Paare verhandeln nach dem Fahrplan, jede Person kennt nur ihre Karte; danach Rollen tauschen.",
+          "Auswerten: „Welches Anliegen auf der anderen Karte hättet ihr nicht vermutet?“"
+        ],
+        "hintergrund": "Wer die Karte der anderen Seite spielt, erlebt deren Anliegen von innen – ein wirksamer Schritt zum Perspektivwechsel. Die Karten nennen deshalb nicht nur, was jemand will, sondern auch, was ihm wichtig ist: Fisher und Ury (1981) unterscheiden Positionen von den Interessen dahinter und zeigen, dass tragfähige Lösungen erst über die Interessen möglich werden. Programme zum sozial-emotionalen Lernen wirken besonders, wenn sie aktiv üben, etwa im Rollenspiel (Durlak et al., 2011). Erfundene Karten schützen: Niemand muss die eigene Familie darstellen.",
+        "quellen": [
+          "Fisher, R. & Ury, W. (1981). Getting to Yes. Boston: Houghton Mifflin.",
+          "Durlak, J. A., Weissberg, R. P., Dymnicki, A. B., Taylor, R. D. & Schellinger, K. B. (2011). The impact of enhancing students’ social and emotional learning: A meta-analysis of school-based universal interventions. Child Development, 82(1), 405–432."
+        ],
+        "differenzierung": {
+          "leichter": "Nur die A-Karte lesen und einen Satz sagen, mit dem die jugendliche Person anfangen könnte.",
+          "schwerer": "Eine eigene Karte Z7 schreiben – erfunden und mit beiden Seiten."
+        },
+        "impulse": [
+          "Welches Anliegen der anderen Seite hat euch überrascht?",
+          "Wo lagen beide Seiten näher beieinander, als es am Anfang aussah?"
+        ],
+        "tipps": [
+          "Karten laminieren; sie werden in zwei Einheiten gebraucht.",
+          "Z6 spielt bewusst in einem Foyer: Auch dort wird ausgehandelt."
+        ],
+        "achtung": "Rollen nie mit echten Personen besetzen. Wird eine Szene zu nah an eigenen Erfahrungen, abbrechen, aus der Rolle aussteigen lassen und ein Einzelgespräch anbieten; bei Hinweisen auf Gewalt die zuständige Leitung (Responsable) informieren.",
+        "material": "Festes Papier, Schere, eventuell Laminierfolie"
+      }
+    }
+  },
+  {
+    "id": "skills-freiraum-aushandeln",
+    "bereich": "skills",
+    "thema": "freundschaft",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "25 Min.",
+    "eldib": [
+      "V-28",
+      "SOZ-34",
+      "K-31",
+      "V-32"
+    ],
+    "schlagworte": [
+      "Freiraum",
+      "Verhandeln",
+      "Interessen",
+      "Vertrauen",
+      "Vereinbarung",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:key",
+    "verwandt": [
+      "konflikte-loesen",
+      "regeln-fair-aushandeln"
+    ],
+    "kurs": [
+      "j2-e20"
+    ],
+    "de": {
+      "titel": "Freiraum aushandeln",
+      "untertitel": "Interessen statt Positionen – und Vertrauen, das in kleinen Schritten wächst",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Position oder Interesse?",
+          "text": "Eine Position ist, was jemand fordert: „Ich bleibe bis Mitternacht.“ Ein Interesse ist der Grund dafür: dabei sein, nicht wie ein Kind wirken. Über Positionen streitet man. Über Interessen findet man Lösungen."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Die Party von Karte Z3: Was steckt hinter den Forderungen? Ergänze die erwachsene Seite und sammelt Lösungen."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Wer?",
+            "Position: Das wird gefordert",
+            "Interessen: Darum geht es"
+          ],
+          "breiten": [
+            0.9,
+            1.6,
+            2
+          ],
+          "zeilen": 1,
+          "beispiel": [
+            "Jugendliche Seite",
+            "„Ich bleibe bis Mitternacht.“",
+            "dabei sein bis zum Schluss, nicht wie ein Kind wirken"
+          ]
+        },
+        {
+          "art": "feld",
+          "label": "Lösungen, mit denen beide leben können",
+          "hoehe": 3,
+          "beispiel": "abgeholt werden um 23:30"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Das Vertrauenskonto: Was zahlt ein, was hebt ab? Kreuze an."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "zahlt ein",
+            "hebt ab"
+          ],
+          "items": [
+            "Ich schreibe von selbst, wenn ich später komme.",
+            "Ich bin pünktlich – auch wenn niemand kontrolliert.",
+            "Ich sage „bei Zoé“ und bin woanders.",
+            "Ich halte mich an eine Absprache, bis wir sie gemeinsam ändern.",
+            "Ich schalte das Handy aus, damit niemand anruft.",
+            "Ich erzähle von mir aus, wie der Abend war."
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Vertrauen wächst langsam und sinkt schnell",
+          "text": "Nach einer Abhebung hilft nur: ehrlich sagen, was passiert ist, etwas wiedergutmachen und die nächste Absprache halten. Kleine Schritte mit Probezeit machen es beiden Seiten leichter, Ja zu sagen."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Verhandle mit dem Fahrplan – in der Arena und, wenn du magst, zu Hause."
+        },
+        {
+          "art": "schritte",
+          "linien": 0,
+          "items": [
+            {
+              "titel": "Guten Moment wählen",
+              "text": "Beide unter 50, niemand in Eile, niemand schaut zu."
+            },
+            {
+              "titel": "Anliegen klar sagen",
+              "text": "„Ich möchte am Samstag bis Mitternacht bleiben.“"
+            },
+            {
+              "titel": "Interessen klären – auf beiden Seiten",
+              "text": "„Was ist dir dabei wichtig? Wovor hast du Sorge?“"
+            },
+            {
+              "titel": "Lösungen sammeln",
+              "text": "Mindestens drei, auch Zwischenlösungen. Erst sammeln, dann bewerten."
+            },
+            {
+              "titel": "Vereinbaren und ausprobieren",
+              "text": "Konkret, mit Plan B und Probezeit. Dann: halten."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wenn du magst: Halte eine echte Vereinbarung fest – mit deiner Familie oder im Foyer."
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 2,
+          "items": [
+            "Das haben wir vereinbart: …",
+            "Plan B, wenn etwas dazwischenkommt: …"
+          ]
+        },
+        {
+          "art": "vertrag",
+          "titel": "Probezeit und Unterschriften",
+          "text": "Das gilt ab ___ und probeweise bis ___. Am ___ schauen wir gemeinsam, ob es geklappt hat.",
+          "unterschriften": [
+            "ich",
+            "erwachsene Person"
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen unterscheiden Positionen und Interessen, erkennen, was Vertrauen aufbaut, und verhandeln nach einem Fahrplan bis zu einer Vereinbarung mit Probezeit.",
+        "ablauf": [
+          "Nach dem Orangen-Experiment (5 Min.): Info-Kasten lesen, Aufgabe 1 zu zweit; Lösungen an der Tafel sammeln.",
+          "Aufgabe 2 allein (3 Min.), dann den Merke-Kasten besprechen: „Was hilft nach einer Abhebung?“",
+          "Aufgabe 3: den Fahrplan in der Verhandlungs-Arena nutzen, zwei Runden mit Rollentausch.",
+          "Aufgabe 4 ist ein freiwilliges Angebot für zu Hause; nicht einsammeln."
+        ],
+        "hintergrund": "Positionen sind Forderungen, Interessen die Gründe dahinter. Fisher und Ury (1981) zeigen, dass Verhandlungen, die bei den Interessen ansetzen, eher zu Lösungen führen, mit denen beide Seiten leben können. Für Familien gilt: Autonomie entwickelt sich am besten in Beziehungen, die warm bleiben und Regeln schrittweise gemeinsam anpassen (Steinberg, 2001). Eine Probezeit und ein Plan B machen Vereinbarungen überprüfbar; sind sie an konkrete Situationen gebunden, werden sie eher eingehalten (Gollwitzer, 1999).",
+        "quellen": [
+          "Fisher, R. & Ury, W. (1981). Getting to Yes. Boston: Houghton Mifflin.",
+          "Steinberg, L. (2001). We know some things: Parent–adolescent relationships in retrospect and prospect. Journal of Research on Adolescence, 11(1), 1–19.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "differenzierung": {
+          "leichter": "Aufgabe 1 mündlich; die Leitung schreibt die Interessen der erwachsenen Seite an die Tafel.",
+          "schwerer": "Drei Lösungen finden, bei denen beide Seiten mehr bekommen als die Hälfte."
+        },
+        "impulse": [
+          "Was hat die Orange mit Ausgehzeiten zu tun?",
+          "Womit zahlt ihr aufs Vertrauenskonto ein, ohne dass es euch viel kostet?"
+        ],
+        "tipps": [
+          "Die Orange nicht weglassen: Ein echter Gegenstand bleibt länger hängen als ein Tafelbild.",
+          "Einzahlungen im Alltag konkret anerkennen, etwa im Foyer oder in der Schule."
+        ],
+        "achtung": "Im Foyer und in Pflegefamilien gelten zusätzliche Regeln; das offen sagen, ohne Einzelne vorzuführen. Bei Hinweisen auf Gewalt oder Vernachlässigung die zuständige Leitung (Responsable) informieren.",
+        "material": "Blatt, Orange, Karten Z1, Z3, Z5, Z6"
+      }
+    }
+  },
+  {
+    "id": "skills-meine-daten",
+    "bereich": "skills",
+    "thema": "digital",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "25 Min.",
+    "eldib": [
+      "V-32",
+      "KOG-51",
+      "V-27",
+      "KOG-61"
+    ],
+    "schlagworte": [
+      "Datenschutz",
+      "Privatsphäre",
+      "digitaler Fußabdruck",
+      "Passwort",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:lock",
+    "verwandt": [
+      "mein-handy-und-ich",
+      "skills-social-media-check"
+    ],
+    "kurs": [
+      "j2-e24"
+    ],
+    "de": {
+      "titel": "Meine Daten im Griff",
+      "untertitel": "Spuren im Netz erkennen, Einstellungen prüfen, Passwörter bauen",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "Milas Profil",
+          "bild": "figur:jana:froh:winken",
+          "text": "Mila, 14, hat ein öffentliches Profil mit dem Namen mila.balou. In der Beschreibung steht „Esch · Handball · 14“. Das Profilbild zeigt sie im Vereinstrikot mit Logo. Unter den letzten Posts: ein Selfie vor ihrem Lycée, das Schild gut lesbar; ein Foto mit ihrem Hund Balou; „Endlich 14“ mit Torte, gepostet am 12. März; eine Story vom Training am Dienstag um 18 Uhr, mit Standort."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was kann eine fremde Person über Mila herausfinden? Trag mindestens drei Spuren ein.",
+          "symbole": [
+            "partner"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Spur im Profil",
+            "Das verrät sie"
+          ],
+          "breiten": [
+            1.6,
+            2
+          ],
+          "zeilen": 4,
+          "beispiel": [
+            "Story vom Training mit Standort",
+            "wo Mila dienstags um 18 Uhr ist"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Dein digitaler Fußabdruck",
+          "text": "Alles, was du postest, likest oder kommentierst, hinterlässt Spuren. Auch Storys, die nach 24 Stunden verschwinden, können per Screenshot gespeichert werden. Einzeln sind die Spuren meist harmlos – zusammen ergeben sie ein Bild. Auch Gutes gehört dazu: Du entscheidest, was sichtbar ist."
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Drei Fragen vor dem Posten",
+          "punkte": [
+            "Wer kann das sehen – und wer könnte es weiterschicken?",
+            "Was verrät es über mich: Ort, Schule, Uhrzeit, Gewohnheiten?",
+            "Wäre es für mich in Ordnung, wenn es in einem Jahr noch jemand findet?"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Privatsphäre-Check: Prüf deine Einstellungen. Die Antworten bleiben bei dir."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "erledigt",
+            "mache ich",
+            "weiß nicht"
+          ],
+          "items": [
+            "Mein Konto ist privat: Fremde sehen meine Posts nicht.",
+            "Mein Standort ist aus – in Storys, Fotos und Karten-Apps.",
+            "Nur Bekannte können mir Nachrichten schicken.",
+            "Bevor mich jemand markiert, muss ich zustimmen.",
+            "Mein Handy hat eine Bildschirmsperre.",
+            "Für wichtige Konten ist die Zwei-Faktor-Anmeldung an.",
+            "Ich benutze nicht überall dasselbe Passwort."
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Die Satz-Methode",
+          "text": "Denk dir einen Satz aus, den nur du kennst, und nimm Anfangsbuchstaben, Zahlen und Satzzeichen: Aus „Am Samstag esse ich 3 Crêpes mit Tante Ana in Wiltz.“ wird „ASei3CmTAiW.“ Lang ist stark. Für jedes Konto ein eigenes Passwort – und niemandem verraten."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Bau ein Übungs-Passwort nach der Satz-Methode – nicht dein echtes.",
+          "hinweis": "Nimm nie ein Beispiel aus dem Netz oder von diesem Blatt als echtes Passwort."
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 1,
+          "items": [
+            "Mein ausgedachter Satz: …",
+            "Daraus wird: …"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Wenn doch etwas passiert",
+          "punkte": [
+            "Konto gehackt: sofort das Passwort ändern – überall, wo es gleich war – und Freunde warnen.",
+            "Fremde schreiben dir, wollen Fotos oder ein Treffen: nicht antworten, Screenshot, blockieren, einer erwachsenen Person Bescheid sagen."
+          ]
+        },
+        {
+          "art": "notfall",
+          "text": "Hilfe bei Problemen im Netz",
+          "eintraege": [
+            {
+              "name": "BEE SECURE Helpline (anonym, kostenlos): Fragen, gehackte Konten, Cybermobbing",
+              "nummer": "8002 1234"
+            },
+            {
+              "name": "Kanner- a Jugendtelefon (anonym, kostenlos)",
+              "nummer": "116 111"
+            },
+            {
+              "name": "Polizei",
+              "nummer": "113"
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen erkennen, wie aus einzelnen Spuren ein genaues Bild entsteht, prüfen ihre Privatsphäre-Einstellungen und bauen ein langes Passwort nach der Satz-Methode.",
+        "ablauf": [
+          "Geschichte vorlesen, Aufgabe 1 zu zweit (6 Min.): „Ihr seid Detektive.“ Die Funde an der Tafel zusammensetzen.",
+          "Info-Kasten lesen (2 Min.): Auch Gutes gehört zum Fußabdruck.",
+          "Aufgabe 2 allein mit dem eigenen Handy, wenn die Hausregel es erlaubt (6 Min.). Niemand zeigt sein Display.",
+          "Aufgabe 3 (5 Min.): die Satz-Methode erklären, Übungs-Passwort bauen, zu zweit prüfen – lang, nicht zu erraten, nur einmal benutzt."
+        ],
+        "hintergrund": "Einzelne Angaben wie Schule, Verein, Trainingszeit oder Geburtstag wirken harmlos; zusammengesetzt verraten sie, wo sich jemand wann aufhält, und liefern Hinweise auf Passwörter und Sicherheitsfragen. BEE SECURE und klicksafe empfehlen deshalb private Konten, abgeschalteten Standort, Zustimmung vor Markierungen, lange und für jedes Konto eigene Passwörter sowie die Zwei-Faktor-Anmeldung. Die Satz-Methode macht lange Passwörter merkbar. Wichtig ist der Ton: Ziel ist nicht Angst, sondern selbst zu entscheiden, was sichtbar ist.",
+        "quellen": [
+          "BEE SECURE – Initiative der luxemburgischen Regierung für ein sichereres Internet: www.bee-secure.lu",
+          "klicksafe – EU-Initiative für mehr Sicherheit im Netz: www.klicksafe.de"
+        ],
+        "differenzierung": {
+          "leichter": "Aufgabe 1 mit zwei Spuren; in Aufgabe 2 nur die ersten vier Punkte.",
+          "schwerer": "Eine Checkliste für jüngere Geschwister schreiben: fünf Einstellungen, die jedes neue Handy braucht."
+        },
+        "impulse": [
+          "Welche Spur von Mila hat euch am meisten überrascht?",
+          "Was würdet ihr Mila raten, ohne ihr das Posten zu verbieten?"
+        ],
+        "tipps": [
+          "Die Hausregel zum Handy vorher klären; ohne Handy wird Aufgabe 2 als Plan für zu Hause ausgefüllt.",
+          "Keine echten Profile aus Schule oder Umfeld zeigen oder durchsuchen."
+        ],
+        "achtung": "Keine Displays zeigen lassen, keine Handys einsammeln. Bei Kontakten zu Fremden, Druck oder Erpressung: Einzelgespräch, die zuständige Leitung (Responsable) informieren.",
+        "material": "Blatt, Handys nach Hausregel"
+      }
+    }
+  },
+  {
+    "id": "skills-meine-bilder",
+    "bereich": "skills",
+    "thema": "digital",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "25 Min.",
+    "eldib": [
+      "SOZ-39",
+      "V-32",
+      "K-28",
+      "SOZ-26"
+    ],
+    "schlagworte": [
+      "Bilder",
+      "Einvernehmlichkeit",
+      "Sextortion",
+      "Erpressung",
+      "Hilfe holen",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:photo",
+    "verwandt": [
+      "skills-zivilcourage-leiter",
+      "mein-handy-und-ich"
+    ],
+    "kurs": [
+      "j2-e24"
+    ],
+    "de": {
+      "titel": "Bilder: Erlaubnis, Druck, Erpressung",
+      "untertitel": "Was bei Bildern gilt – und was hilft, wenn jemand damit droht",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Drei Regeln für Bilder",
+          "punkte": [
+            "Bilder von anderen nur mit Erlaubnis posten oder weiterleiten. Ein Nein gilt.",
+            "Zu intimen Bildern darf dich niemand drängen – nicht aus Liebe, nicht als Beweis, nicht als Mutprobe. Nein sagen ist immer richtig.",
+            "Intime Bilder von anderen nie weiterleiten, nie speichern, nie zeigen. Das verletzt und ist strafbar. Sag einer erwachsenen Person Bescheid."
+          ]
+        },
+        {
+          "art": "geschichte",
+          "titel": "Eine Stunde",
+          "bild": "figur:ben:aengstlich:haende-gesicht",
+          "text": "Elias, 15, chattet seit zwei Wochen mit einem Profil namens „sunny_16“. Sie ist nett, macht Komplimente, schickt Fotos. Irgendwann bittet sie um ein intimes Bild von ihm, und er schickt eins. Kurz danach ändert sich der Ton: „Zahl 200 Euro, sonst bekommen alle deine Freunde das Bild. Du hast eine Stunde.“ Elias zittert. Er schämt sich so, dass er es niemandem erzählen will."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Elias schreibt dir. Was antwortest du ihm als Freundin oder Freund?"
+        },
+        {
+          "art": "dialog",
+          "zeilen": [
+            {
+              "wer": "Elias",
+              "text": "Ich hab Mist gebaut. Ich kann das niemandem sagen, das ist so peinlich."
+            },
+            {
+              "wer": "Du"
+            }
+          ]
+        },
+        {
+          "art": "text",
+          "text": "Wenn jemand mit Bildern droht, hilft das – in dieser Reihenfolge:"
+        },
+        {
+          "art": "schritte",
+          "linien": 0,
+          "items": [
+            {
+              "titel": "Nicht zahlen, nichts mehr schicken",
+              "text": "Wer zahlt, bekommt meist neue Forderungen. Nicht auf Drohungen antworten."
+            },
+            {
+              "titel": "Beweise sichern",
+              "text": "Screenshots vom Chat, vom Profil und von der Forderung – nicht vom Bild."
+            },
+            {
+              "titel": "Blockieren und melden",
+              "text": "Erst sichern, dann den Kontakt blockieren und in der App melden."
+            },
+            {
+              "titel": "Sofort einer erwachsenen Vertrauensperson sagen",
+              "text": "Du musst das nicht allein lösen. Scham ist normal – und kein Grund zu schweigen."
+            },
+            {
+              "titel": "Hilfe holen",
+              "text": "BEE SECURE Helpline 8002 1234; zusammen mit der Vertrauensperson auch die Polizei, 113."
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Nicht deine Schuld",
+          "text": "Schuld hat, wer drängt, verbreitet oder erpresst – nie die Person auf dem Bild."
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Wenn es einer Freundin oder einem Freund passiert",
+          "punkte": [
+            "Zuhören, nicht auslachen, keine Vorwürfe – auch kein „selbst schuld“.",
+            "Das Bild nicht ansehen, nicht speichern, nicht weiterleiten.",
+            "Gemeinsam eine erwachsene Vertrauensperson suchen. Du musst das nicht allein lösen.",
+            "Hast du selbst etwas weitergeleitet? Hör jetzt auf und sag einer erwachsenen Person Bescheid. Es ist nie zu spät, das Richtige zu tun."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dein erster Satz: Wem würdest du dich anvertrauen – und wie fängst du an?",
+          "hinweis": "Nur für dich. Zum Beispiel: „Mir ist etwas Peinliches passiert, und ich brauche Hilfe. Bitte hör erst zu.“"
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 1,
+          "items": [
+            "Ich würde es … erzählen."
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 2,
+          "items": [
+            "Mein erster Satz: …"
+          ]
+        },
+        {
+          "art": "notfall"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen kennen drei Regeln für Bilder, wissen, was bei Erpressung mit Bildern hilft, und legen fest, wem sie sich anvertrauen würden und wie sie anfangen.",
+        "ablauf": [
+          "Nach der Bilder-Ampel (2 Min.): die drei Regeln vorlesen. Frage: „Was haben alle drei gemeinsam?“ – Es geht um Zustimmung.",
+          "Geschichte vorlesen, dann die Hilfe-Staffel (13 Min.); danach die fünf Schritte auf dem Blatt mit dem Ergebnis der Teams vergleichen.",
+          "Aufgabe 1 allein oder zu zweit (4 Min.); einige Antworten an Elias vorlesen lassen, wer mag.",
+          "Aufgabe 2 nach dem Atem-Skill, allein und ohne Vorlesen (3 Min.). Den Hilfe-Kasten zeigen."
+        ],
+        "hintergrund": "Nach einer Meta-Analyse hat die große Mehrheit der Jugendlichen nie ein intimes Bild verschickt; etwa jede achte Person hat jedoch schon eines ohne Zustimmung weitergeleitet (Madigan et al., 2018). Bei Erpressung mit Bildern kennen Betroffene die Täter oft, und viele vertrauen sich aus Scham niemandem an (Wolak et al., 2018). Das Blatt stärkt deshalb die Regeln der Zustimmung, benennt die Schuld klar und übt den ersten Satz beim Hilfeholen. Beratung in Luxemburg bietet die BEE SECURE Helpline.",
+        "quellen": [
+          "Madigan, S., Ly, A., Rash, C. L., Van Ouytsel, J. & Temple, J. R. (2018). Prevalence of multiple forms of sexting behavior among youth: A systematic review and meta-analysis. JAMA Pediatrics, 172(4), 327–335.",
+          "Wolak, J., Finkelhor, D., Walsh, W. & Treitman, L. (2018). Sextortion of minors: Characteristics and dynamics. Journal of Adolescent Health, 62(1), 72–79.",
+          "BEE SECURE – Initiative der luxemburgischen Regierung für ein sichereres Internet: www.bee-secure.lu"
+        ],
+        "differenzierung": {
+          "leichter": "Die drei Regeln und die Schritte 1 und 4 besprechen; Aufgabe 1 mündlich.",
+          "schwerer": "Eine Nachricht an eine Freundin schreiben, deren Bild herumgeschickt wird: Was sagst du, was tust du?"
+        },
+        "impulse": [
+          "Warum fällt es so schwer, in so einer Lage jemandem Bescheid zu sagen?",
+          "Was kann eine Freundin oder ein Freund tun, damit es leichter wird?"
+        ],
+        "tipps": [
+          "Keine Bilder zeigen, auch keine unscharfen oder gezeichneten.",
+          "Den Beispielsatz aus Aufgabe 2 an der Tafel stehen lassen."
+        ],
+        "achtung": "Keine intimen Bilder ansehen, annehmen oder weiterleiten. Bei Hinweisen auf Erpressung: Einzelgespräch, nichts versprechen, die zuständige Leitung (Responsable) am selben Tag informieren; akut 112.",
+        "material": "Blatt, Karten der Hilfe-Staffel"
+      }
+    }
+  },
+  {
+    "id": "skills-gegenrede",
+    "bereich": "skills",
+    "thema": "digital",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "30 Min.",
+    "eldib": [
+      "SOZ-32",
+      "SOZ-39",
+      "K-28",
+      "V-30"
+    ],
+    "schlagworte": [
+      "Hassrede",
+      "Hate Speech",
+      "Cybermobbing",
+      "Gegenrede",
+      "Zivilcourage",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:message-circle",
+    "verwandt": [
+      "mobbing-cybermobbing",
+      "skills-zivilcourage-leiter"
+    ],
+    "kurs": [
+      "j2-e25"
+    ],
+    "de": {
+      "titel": "Gegenrede statt Schweigen",
+      "untertitel": "Hass im Netz erkennen, widersprechen, melden",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Wo die Grenze liegt",
+          "punkte": [
+            "Meinung: Du darfst Dinge schlecht finden und das sagen, auch deutlich. Sie trifft die Sache.",
+            "Beleidigung: greift die Person an. Passiert es immer wieder, ist es Cybermobbing.",
+            "Hassrede: wertet Menschen wegen ihrer Gruppe ab – Herkunft, Religion, Hautfarbe, Geschlecht, sexuelle Orientierung, Behinderung.",
+            "Drohung: kündigt Gewalt an. Hier wird nicht diskutiert: sichern, melden, Erwachsene holen."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Meinung, Beleidigung, Hassrede oder Drohung? Kreuze an."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "Meinung",
+            "Beleidigung",
+            "Hassrede",
+            "Drohung"
+          ],
+          "items": [
+            "„Das Video ist mir zu lang, nach 20 Sekunden hab ich weggeklickt.“",
+            "„Mit der Stimme würde ich mich nicht trauen zu singen. Peinlich.“",
+            "„Typisch Ausländer, die können sich nicht benehmen.“",
+            "„Mädchen haben beim Fußball nichts verloren.“",
+            "„Ich finde die neue Handyregel an unserer Schule falsch.“",
+            "„Wenn ich dich morgen am Bahnhof sehe, bist du dran.“",
+            "„Opfer“ – jeden Tag, von denselben drei, unter Samuels Videos."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Gegenrede: Antworte öffentlich auf den Kommentar – und schreib Diogo eine private Nachricht."
+        },
+        {
+          "art": "text",
+          "text": "Das Jugendhaus postet ein Video vom Streetdance-Wettbewerb. Diogo, 15, tanzt im Rollstuhl mit. Darunter steht:"
+        },
+        {
+          "art": "dialog",
+          "zeilen": [
+            {
+              "wer": "dancefan_09",
+              "text": "Was macht der im Rollstuhl da? Das ist doch kein Tanz."
+            },
+            {
+              "wer": "Du, öffentlich"
+            },
+            {
+              "wer": "Du an Diogo"
+            }
+          ]
+        },
+        {
+          "art": "wortspeicher",
+          "titel": "So kann Gegenrede anfangen",
+          "items": [
+            "Woher weißt du das?",
+            "Das ist abwertend. Hier nicht.",
+            "Ich sehe das anders: …",
+            "Kritik ja – Beleidigung nein.",
+            "Menschen passen in keine Schublade.",
+            "Autsch. Geht das auch freundlich?",
+            "@Diogo, starkes Video."
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Regeln für Gegenrede",
+          "punkte": [
+            "Du schreibst für die Mitlesenden – nicht, um den Hater zu bekehren.",
+            "Widersprich der Aussage, nicht dem Menschen. Kein Zurückbeleidigen.",
+            "Du musst nicht jeden Kampf führen. Auch ein Like für gute Gegenrede hilft.",
+            "Bei Drohungen nicht diskutieren."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wenn es ernst wird: Was tust du, wenn Hass dich selbst trifft – und was, wenn er andere trifft?"
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 0,
+          "items": [
+            {
+              "titel": "Sichern",
+              "text": "Screenshot mit Name, Datum und Link"
+            },
+            {
+              "titel": "Melden",
+              "text": "in der App oder auf der Seite"
+            },
+            {
+              "titel": "Blockieren",
+              "text": "wenn es dich selbst trifft"
+            },
+            {
+              "titel": "Hilfe holen",
+              "text": "Erwachsene, BEE SECURE, bei Drohungen die Polizei"
+            }
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 1,
+          "items": [
+            "Wenn Hass mich selbst trifft, …",
+            "Wenn ich Hass gegen andere sehe, …"
+          ]
+        },
+        {
+          "art": "notfall"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen unterscheiden Meinung, Beleidigung, Hassrede und Drohung, schreiben Gegenrede ohne Abwertung und kennen die Schritte Sichern, Melden, Blockieren, Hilfe holen.",
+        "ablauf": [
+          "Aufgabe 1 mit Stimmkarten (10 Min.), dann ankreuzen. Lösung: 1 M, 2 B, 3 H, 4 H (Grenzfall), 5 M, 6 D, 7 B – wiederholt, also Cybermobbing.",
+          "Info- und Tipp-Kasten lesen (5 Min.): „Wen erreicht Gegenrede eigentlich?“",
+          "Aufgabe 2 nach der Kommentar-Wand (5 Min.): eine öffentliche und eine private Antwort, der Wortspeicher hilft.",
+          "Aufgabe 3 (4 Min.): die Schritte besprechen, dann allein ergänzen. Den Hilfe-Kasten zeigen."
+        ],
+        "hintergrund": "Cybermobbing greift eine Person wiederholt an; online wiegt es schwer, weil Beiträge sich schnell verbreiten und viele mitlesen (Hinduja & Patchin, 2015). Hassrede wertet Menschen wegen ihrer Gruppenzugehörigkeit ab. Ohne Blickkontakt und oft anonym schreiben Menschen online, was sie nie ins Gesicht sagen würden – Suler (2004) nennt das Online-Enthemmung. Wer schweigt oder liked, stärkt den Angriff; wer widerspricht oder Betroffenen beisteht, schwächt ihn (Salmivalli et al., 1996). Gegenrede richtet sich deshalb vor allem an die Mitlesenden. Beratung in Luxemburg bietet die BEE SECURE Helpline.",
+        "quellen": [
+          "Hinduja, S. & Patchin, J. W. (2015). Bullying Beyond the Schoolyard (2nd ed.). Thousand Oaks, CA: Corwin.",
+          "Suler, J. (2004). The online disinhibition effect. CyberPsychology & Behavior, 7(3), 321–326.",
+          "Salmivalli, C., Lagerspetz, K., Björkqvist, K., Österman, K. & Kaukiainen, A. (1996). Bullying as a group process: Participant roles and their relations to social status within the group. Aggressive Behavior, 22(1), 1–15.",
+          "BEE SECURE – Initiative der luxemburgischen Regierung für ein sichereres Internet: www.bee-secure.lu"
+        ],
+        "differenzierung": {
+          "leichter": "Drei Kategorien: Meinung, verletzend, Drohung. Aufgabe 2 nur privat.",
+          "schwerer": "Eine Gegenrede mit einer Rückfrage und einer Tatsache schreiben, ohne zu belehren."
+        },
+        "impulse": [
+          "Warum schreiben Menschen online Dinge, die sie nie ins Gesicht sagen würden?",
+          "Was würde euch helfen, wenn ihr die Person im Video wärt?"
+        ],
+        "tipps": [
+          "Keine echten Posts oder Screenshots aus dem Umfeld zeigen.",
+          "Die besten Gegenrede-Sätze der Gruppe auf ein Plakat schreiben und hängen lassen."
+        ],
+        "achtung": "Keine echten Posts, keine Schimpfwörter für Gruppen. Wird jemand aus der Gruppe angegriffen oder bedroht: Einzelgespräch, Beweise sichern, die zuständige Leitung (Responsable) informieren.",
+        "material": "Blatt, Stimmkarten, Kommentar-Wand"
+      }
+    }
+  },
+  {
+    "id": "skills-gaming-check",
+    "bereich": "skills",
+    "thema": "digital",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "25 Min.",
+    "eldib": [
+      "V-29",
+      "V-32",
+      "V-20",
+      "KOG-61"
+    ],
+    "schlagworte": [
+      "Gaming",
+      "Lootbox",
+      "Spielzeit",
+      "Medienregeln",
+      "Selbststeuerung",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:device-gamepad-2",
+    "verwandt": [
+      "mein-handy-und-ich",
+      "balance-finden"
+    ],
+    "kurs": [
+      "j2-e26"
+    ],
+    "de": {
+      "titel": "Mein Gaming-Check",
+      "untertitel": "Was Games geben, wie sie festhalten – und wer bestimmt, wann Schluss ist",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Was geben dir Games – oder ein anderes Hobby? Und was kosten sie dich?",
+          "hinweis": "Die rechte Seite füllst du nach dem Lootbox-Experiment aus."
+        },
+        {
+          "art": "waage",
+          "links": "Das geben mir Games",
+          "rechts": "Das kosten mich Games",
+          "zeilen": 3
+        },
+        {
+          "art": "aufgabe",
+          "text": "Bindungstricks: Verbinde jeden Trick mit seiner Wirkung.",
+          "symbole": [
+            "verbinden"
+          ]
+        },
+        {
+          "art": "zuordnen",
+          "titel": [
+            "Trick",
+            "Wirkung"
+          ],
+          "links": [
+            "Tägliche Belohnung",
+            "Countdown im Shop",
+            "Lootbox",
+            "Kristalle statt Euro",
+            "Das Team wartet",
+            "Kein letztes Level"
+          ],
+          "rechts": [
+            "Man merkt kaum, wie viel echtes Geld weg ist.",
+            "Es gibt keinen Moment, an dem es fertig ist.",
+            "Du spielst, damit die Serie nicht reißt.",
+            "Aufhören fühlt sich an, als ließe man andere hängen.",
+            "Wie am Automaten: Der seltene Gewinn lockt.",
+            "Zeitdruck: schnell kaufen, bevor es weg ist."
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Lootboxen und PEGI",
+          "text": "Lootboxen sind Kisten mit zufälligem Inhalt. Ob sich ein Kauf lohnt, entscheidet der Zufall – deshalb vergleichen Fachleute sie mit Glücksspiel. Das PEGI-Zeichen auf Spielen zeigt, ab welchem Alter ein Spiel geeignet ist, und warnt vor In-Game-Käufen."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wann wird es zu viel? Schätze ehrlich ein – nur für dich."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "oft",
+            "manchmal",
+            "nie"
+          ],
+          "items": [
+            "Ich spiele länger, als ich wollte.",
+            "Ich werde gereizt, wenn ich aufhören muss.",
+            "Ich spiele, um schlechte Gefühle nicht zu spüren.",
+            "Schlaf, Schule oder Freunde kommen zu kurz.",
+            "Ich gebe mehr Geld aus, als ich geplant hatte.",
+            "Ich schwindle, wie lange ich gespielt habe."
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Du entscheidest, was du teilst.",
+          "text": "Die Einschätzung bleibt bei dir. Trifft mehreres oft zu, sprich mit jemandem, dem du vertraust – das ist kein Urteil über dich, sondern ein guter nächster Schritt."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Meine Regeln: eine für die Zeit, eine für das Geld."
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 2,
+          "beispiele": [
+            {
+              "wenn": "Wenn es an einem Schultag 21 Uhr ist,",
+              "dann": "spiele ich das Match zu Ende und lege den Controller ins Wohnzimmer."
+            },
+            {
+              "wenn": "Wenn ich im Spiel etwas kaufen will,",
+              "dann": "warte ich 24 Stunden und frage mich dann, ob ich es noch will."
+            }
+          ]
+        },
+        {
+          "art": "notfall",
+          "text": "Wenn Gaming zum Problem wird",
+          "eintraege": [
+            {
+              "name": "Kanner- a Jugendtelefon (anonym, kostenlos)",
+              "nummer": "116 111"
+            },
+            {
+              "name": "BEE SECURE Helpline (Fragen rund ums Netz und um Games)",
+              "nummer": "8002 1234"
+            },
+            {
+              "name": "Fachstelle in Luxemburg (trägt die Leitung ein):",
+              "nummer": "________________"
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen würdigen, was Games geben, erkennen Bindungstricks, schätzen ihr Spielverhalten privat ein und legen je eine Regel für Zeit und Geld fest.",
+        "ablauf": [
+          "Nach dem Game-Pitch (4 Min.): linke Seite der Waage. Frage: „Was davon ist Können, was Selbstbestimmen, was Dazugehören?“",
+          "Aufgabe 2 nach „Dragon Rush“ (5 Min.). Lösung, von oben gezählt: 1–3, 2–6, 3–5, 4–1, 5–4, 6–2.",
+          "Nach dem Lootbox-Experiment: rechte Seite der Waage ergänzen, Info-Kasten lesen.",
+          "Nach dem 24-Stunden-Weg (6 Min.): Aufgabe 3 und 4 allein; nicht einsammeln, nicht vorlesen."
+        ],
+        "hintergrund": "Games befriedigen die Bedürfnisse nach Kompetenz, Selbstbestimmung und Verbundenheit (Deci & Ryan, 2000) und fesseln gerade dadurch (Przybylski, Rigby & Ryan, 2010); maßvolles Spielen schadet dem Wohlbefinden nicht (Przybylski & Weinstein, 2017). Viele Spiele erschweren das Aufhören; Lootboxen vergleichen Fachleute mit Glücksspiel (King & Delfabbro, 2018), und wer viel dafür ausgibt, zeigt häufiger Merkmale problematischen Glücksspiels (Zendle & Cairns, 2018). Aufgabe 3 lehnt sich an bekannte Warnzeichen an – Kontrollverlust, Vorrang vor anderem, Weitermachen trotz Nachteilen – und ist keine Diagnose.",
+        "quellen": [
+          "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268.",
+          "Przybylski, A. K., Rigby, C. S. & Ryan, R. M. (2010). A motivational model of video game engagement. Review of General Psychology, 14(2), 154–166.",
+          "Przybylski, A. K. & Weinstein, N. (2017). A large-scale test of the Goldilocks hypothesis: Quantifying the relations between digital-screen use and the mental well-being of adolescents. Psychological Science, 28(2), 204–215.",
+          "King, D. L. & Delfabbro, P. H. (2018). Internet Gaming Disorder: Theory, Assessment, Treatment, and Prevention. London: Academic Press.",
+          "Zendle, D. & Cairns, P. (2018). Video game loot boxes are linked to problem gambling: Results of a large-scale survey. PLOS ONE, 13(11), e0206767."
+        ],
+        "differenzierung": {
+          "leichter": "Aufgabe 2 mit vier Tricks; in Aufgabe 4 nur eine Regel.",
+          "schwerer": "Einen Trick in einer App finden, die nichts mit Games zu tun hat, und ein Gegenmittel beschreiben."
+        },
+        "impulse": [
+          "Welcher Trick wirkt bei euch am stärksten?",
+          "Woran merkt ihr, dass ein Spiel euch mehr nimmt, als es gibt?"
+        ],
+        "tipps": [
+          "Gaming nicht abwerten; die Jugendlichen sind hier die Fachleute.",
+          "Die Fachstelle im Hilfe-Kasten vor dem Kopieren eintragen."
+        ],
+        "achtung": "Spielzeiten und Ausgaben bleiben privat. Bei starkem Kontrollverlust, Schulden oder Kontakten zu Fremden: Einzelgespräch, keine Diagnose, die zuständige Leitung (Responsable) informieren.",
+        "material": "Blatt, Spielchips, Beutel mit Losen"
+      }
+    }
+  }
+]

@@ -1,0 +1,523 @@
+{
+  "einheiten": [
+    {
+      "id": "j3-e01",
+      "nr": 1,
+      "jahr": 3,
+      "modul": "j3-m0",
+      "titel": "Das letzte Kursjahr beginnt",
+      "kurz": "Die Gruppe erneuert ihren Vertrag für das letzte Kursjahr, sagt anonym, was sie sich wünscht und was sie befürchtet, geht den Jahresweg ab und beginnt ihr eigenes Skills-Buch.",
+      "dauer": 100,
+      "ziele": [
+        "erneuern den Gruppenvertrag und ergänzen Regeln für die persönlicheren Themen dieses Jahres",
+        "halten anonym fest, was im Juni passiert sein soll und was ihnen Bedenken macht",
+        "zeigen auf dem Jahresweg, worauf sie neugierig sind und wo sie Bedenken haben",
+        "legen ihr Skills-Buch an und tragen einen Skill ein, der ihnen schon hilft"
+      ],
+      "material": [
+        "Gefühlsrad (A3, laminiert), Wäscheklammern mit Namen, Plakat Anspannungsskala 0–100",
+        "Gruppenvertrag aus dem letzten Jahr, falls vorhanden, und Schülerblatt „Unser Gruppenvertrag“ in A3",
+        "Karten in zwei Farben (etwa grün und orange), eine Box, ein Umschlag, dicke Stifte",
+        "Eine Fragenbox mit Schlitz, die ab heute das ganze Jahr im Raum steht",
+        "Elf A4-Schilder für den Jahresweg mit Nummer, Titel und Leitfrage jedes Moduls (Tabelle in Schritt 6), Kreppband",
+        "Klebepunkte: je Person drei grüne und einen orangen",
+        "Für jede Person ein Ringbuch oder Schnellhefter (A4) mit Klarsichthüllen, Schülerblatt „Mein Skills-Buch“ (Seite 1 auf festem Papier), Bunt- und Filzstifte, Kleber",
+        "Das eigene Skills-Buch der Leitung als Beispiel",
+        "Neue Skills-Pässe (bei 35 Einheiten zwei Exemplare je Person), Box, Stempel",
+        "Imbiss und Getränke (Allergien und Essensregeln vorher erfragen)"
+      ],
+      "vorbereitung": [
+        "Stühle im Kreis, Tische an die Seite; Gefühlsrad und alter Vertrag hängen sichtbar",
+        "Den Jahresweg auslegen: die elf Schilder in der Reihenfolge der Module als Weg durch Raum, Flur oder Hof, mit ein bis zwei Schritten Abstand",
+        "Das eigene Skills-Buch vorbereiten: Deckblatt gestaltet, eine Rubrikenseite mit einem echten Eintrag",
+        "Mit der zuständigen Leitung (Responsable) klären, wann die Eltern über die Module zu Rausch und Risiko und zu Liebe und Sexualität informiert werden – damit Fragen dazu heute beantwortet werden können",
+        "Wissen, wer neu ist, und eine Person aus der Gruppe fragen, ob sie in den ersten Wochen Ansprechpartnerin oder Ansprechpartner der Neuen sein möchte"
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-gruppenvertrag",
+        "skills-buch",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Gefühlsrad und Anspannung"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Wiedersehen: Was ist neu?"
+        },
+        {
+          "min": "15–35",
+          "phase": "uebung",
+          "titel": "Unser Vertrag für das letzte Jahr"
+        },
+        {
+          "min": "35–45",
+          "phase": "uebung",
+          "titel": "Im Juni will ich sagen können …"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–78",
+          "phase": "aktiv",
+          "titel": "Gang über den Jahresweg"
+        },
+        {
+          "min": "78–90",
+          "phase": "uebung",
+          "titel": "Mein Skills-Buch beginnt"
+        },
+        {
+          "min": "90–95",
+          "phase": "skill",
+          "titel": "Skill: Einer aus dem Koffer"
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Réckbléck und Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: Gefühlsrad und Anspannung",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Stühle im Kreis, das Gefühlsrad liegt in der Mitte, jede Person bekommt ihre Wäscheklammer. Reihum steckt jede Person die Klammer an das Wort, das gerade passt, nennt ihre Anspannung von 0 bis 100 und sagt, wer mag, einen Satz zum Schulstart. Die Leitung beginnt und bleibt ehrlich, etwa: Ich freue mich auf euch und bin ein bisschen wehmütig, weil es unser letztes Jahr ist. Für Neue erklärt jemand aus der Gruppe beide Werkzeuge in zwei Sätzen, ohne dass die Runde stockt.",
+          "sagen": [
+            "Klammer ans Wort, dazu eure Zahl – und wer mag, ein Satz: Wie ist das neue Schuljahr angelaufen?",
+            "0 heißt tiefenentspannt, 100 heißt kurz vorm Platzen. Alles dazwischen ist normal."
+          ],
+          "tipp": "Wer schon zwei Jahre dabei ist, erklärt Gefühlsrad und Skala gern selbst. Das spart Zeit und zeigt den Neuen, dass sie hier auch von Gleichaltrigen lernen.",
+          "wennEsKippt": "Ist die Gruppe nach dem Sommer aufgedreht, zuerst eine Runde Zip Zap Boing aus dem Methoden-Pool spielen und erst dann das Rad. Sagt jemand nur „müde“ oder „weiter“, gilt das – die ersten Wochen nach den Ferien sind für viele anstrengend.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Wiedersehen: Was ist neu?",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "Kurz sammeln, was sich seit dem Sommer verändert hat: neue Klasse, neues Lycée, Ausbildung, Praktikum. Neue Jugendliche werden mit Namen begrüßt, und eine Person aus der Gruppe erklärt in zwei Sätzen, was der Skills-Kurs ist. Dann das Besondere dieses Jahres nennen: Es ist das letzte Kursjahr, und im Juni geht jede Person mit einem eigenen Buch nach Hause. Die drei Punkte von heute an die Tafel: Vertrag, Erwartungen, Skills-Buch.",
+          "sagen": [
+            "Was ist bei euch seit dem Sommer neu – Klasse, Schule, Praktikum? Ein Stichwort reicht.",
+            "Wer erklärt den Neuen in zwei Sätzen, worum es hier geht?",
+            "Das ist unser drittes und letztes Jahr. Im Juni nehmt ihr etwas mit, das ihr selbst geschrieben habt."
+          ]
+        },
+        {
+          "titel": "Unser Vertrag für das letzte Jahr",
+          "dauer": 20,
+          "phase": "uebung",
+          "text": "Den alten Vertrag Regel für Regel vorlesen lassen. Zu jeder Regel zeigt die Gruppe mit dem Daumen: hoch heißt behalten, Mitte ändern, runter streichen; über Mitte und runter wird kurz gesprochen. Dann ankündigen, warum dieses Jahr Ergänzungen nötig sind: Es kommen persönlichere Themen – schwere Gefühle, Rausch und Risiko, Liebe und Sexualität. Die Gruppe formuliert dafür eigene Regeln, die Leitung ergänzt, was von der Liste fehlt. Alles kommt auf das neue A3-Blatt; alle unterschreiben, auch die Leitung und die Neuen.",
+          "sagen": [
+            "Welche Regel hat euch in den letzten zwei Jahren am meisten geholfen?",
+            "Dieses Jahr reden wir über Themen, bei denen man schnell rot wird. Was braucht ihr, damit das hier trotzdem geht?",
+            "Was soll passieren, wenn jemand aus Versehen mehr erzählt, als er wollte?"
+          ],
+          "punkte": [
+            "Wir reden über Themen, nicht über Personen – auch nicht über Leute, die nicht hier sind.",
+            "Niemand erzählt von eigenem Konsum, eigenen Beziehungen oder eigenen Krisen. Fragen dazu gehen anonym in die Fragenbox; die Antwort kommt in der nächsten Einheit.",
+            "„Weiter“ und „Stopp“ gelten immer, ohne Begründung.",
+            "Was hier erzählt wird, bleibt hier: keine Fotos, keine Screenshots, keine Nachrichten darüber.",
+            "Die Leitung behält alles für sich – außer jemand ist in Gefahr. Dann holt sie Hilfe und sagt vorher, was sie tut.",
+            "Handys bleiben in der Tasche, außer eine Übung braucht sie."
+          ],
+          "tipp": "Die Grenze der Schweigepflicht jedes Jahr neu und ehrlich sagen. Neue prüfen genau, ob dieser Satz ernst gemeint ist – und die anderen hören ihn als Bestätigung. Die Fragenbox gleich aufstellen: Fragen daraus beantwortet die Leitung nach Rücksprache im Team in der folgenden Einheit.",
+          "wennEsKippt": "Kommen spöttische Kommentare, sobald das Wort Sexualität fällt, das nicht überhören, sondern ruhig benennen: Genau deshalb machen wir heute die Regeln. Hält jemand Regeln für überflüssig, darf er seine Kritik als eigene Regel formulieren – oft wird daraus die beste.",
+          "blatt": "skills-gruppenvertrag"
+        },
+        {
+          "titel": "Im Juni will ich sagen können …",
+          "dauer": 10,
+          "phase": "uebung",
+          "text": "Jede Person bekommt eine grüne und eine orange Karte. Auf die grüne schreibt sie, was im Juni passiert sein soll, damit sich das letzte Jahr gelohnt hat, auf die orange, was ihr Bedenken macht oder was hier auf keinen Fall passieren soll. Ohne Namen, in Druckbuchstaben, gefaltet in die Box. Die Leitung mischt, liest die Karten vor und sagt zu jeder in einem Satz, was davon im Kurs möglich ist – ehrlich, auch wenn etwas nicht geht. Danach kommen die Karten in einen Umschlag, der bis zum Abschlussmodul im Kursordner bleibt.",
+          "sagen": [
+            "Stellt euch vor, es ist Juni, die letzte Einheit. Was muss passiert sein, damit ihr sagt: Das Jahr hat sich gelohnt?",
+            "Und auf die orange Karte: Was macht euch Bedenken – oder was soll hier auf keinen Fall passieren?"
+          ],
+          "tipp": "Wünsche wie „öfter raus“ oder „besseres Essen“ ernst nehmen: Viele lassen sich einbauen, und die Gruppe merkt, dass ihre Stimme zählt.",
+          "wennEsKippt": "Karten, die nach einer bestimmten Person klingen, nicht vorlesen, sondern zusammenfassen. Deutet eine Karte auf eine Belastung hin, etwa „dass es mir endlich besser geht“, nicht nachforschen, wer sie geschrieben hat; am Ende allgemein anbieten: Wer etwas auf dem Herzen hat, kann jederzeit zu mir kommen."
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Gemeinsam essen. Die Leitung setzt sich zu den Neuen oder bittet die Ansprechperson aus der Gruppe, sie in die Gespräche mitzunehmen. Das Thema ruht."
+        },
+        {
+          "titel": "Gang über den Jahresweg",
+          "dauer": 18,
+          "phase": "aktiv",
+          "text": "Die elf Schilder liegen als Weg durch Raum, Flur oder Hof. Die Gruppe geht ihn gemeinsam ab: An jedem Schild liest eine freiwillige Person Titel und Leitfrage vor, und die Leitung sagt in einem Satz, was dort passiert (Tabelle). Dann bekommt jede Person drei grüne Punkte für „darauf bin ich neugierig“ und einen orangen für „da habe ich Bedenken“ und geht den Weg ein zweites Mal allein und schweigend, um sie zu kleben. Zum Schluss stehen alle am letzten Schild und schauen zurück: Wo kleben viele Punkte, wo keine? Die Leitung fotografiert die Schilder für die Planung des Jahres.",
+          "tabelle": {
+            "spalten": [
+              "Modul",
+              "Leitfrage",
+              "Was dort passiert (zum Vorlesen)"
+            ],
+            "zeilen": [
+              [
+                "0 · Ankommen",
+                "Wo stehe ich?",
+                "Rahmen klären und schauen, wo jede und jeder gerade steht."
+              ],
+              [
+                "1 · Werte und Identität",
+                "Was ist mir wichtig – und wer will ich sein?",
+                "Eine Werte-Auktion, eure Rollen und Sprachen, Vorbilder."
+              ],
+              [
+                "2 · Entscheidungen und Verantwortung",
+                "Wie entscheide ich gut?",
+                "Entscheiden in Schritten, Rausch und Risiko, gut mit Fehlern umgehen."
+              ],
+              [
+                "3 · Zukunft und Beruf",
+                "Was kann ich, was will ich – und wie komme ich dahin?",
+                "Stärken und Interessen, Berufe entdecken, ein Vorstellungsgespräch üben."
+              ],
+              [
+                "4 · Selbstständig werden",
+                "Was brauche ich, um mein Leben selbst zu organisieren?",
+                "Geld, Termine, Formulare, sich selbst versorgen."
+              ],
+              [
+                "5 · Schwere Gefühle",
+                "Was tun mit Trauer, Scham und Einsamkeit?",
+                "Behutsam und freiwillig: was hilft – und wo es Hilfe gibt."
+              ],
+              [
+                "6 · Resilienz und Hilfe",
+                "Was hält mich, wenn es schwer wird?",
+                "Was Menschen stark macht und wie man um Hilfe bittet."
+              ],
+              [
+                "7 · Meinung und Mitbestimmung",
+                "Wie vertrete ich meine Meinung – fair und wirksam?",
+                "Fair debattieren und im Klassenrat etwas bewegen."
+              ],
+              [
+                "8 · Liebe, Sexualität und Einvernehmlichkeit",
+                "Was gehört zu einer guten Beziehung – und wie geht Einvernehmlichkeit?",
+                "Mit klaren Regeln: Niemand erzählt Eigenes, Fragen gehen anonym in eine Box."
+              ],
+              [
+                "9 · Medien und KI",
+                "Wer steuert, was ich sehe – und wie nutze ich KI klug?",
+                "Wie Plattformen steuern und wie man KI ehrlich nutzt."
+              ],
+              [
+                "10 · Abschluss",
+                "Was nehme ich mit auf meinen Weg?",
+                "Euer Skills-Buch, ein Plan für danach und ein würdiger Abschied."
+              ]
+            ]
+          },
+          "sagen": [
+            "Drei grüne Punkte für das, worauf ihr neugierig seid, ein oranger für das, was euch Bedenken macht. Niemand fragt, wer wo geklebt hat.",
+            "Schaut zurück: Wo klebt viel Grün? Wo klebt Orange – und was bräuchtet ihr dort?"
+          ],
+          "tipp": "Bei Regen liegt der Weg im Flur oder einmal rund um die Tische; bei wenig Energie liegen die Schilder auf einem großen Tisch, und die Gruppe geht einmal herum. Bei nur zwei Jugendlichen klebt die Leitung mit und erzählt an zwei Stationen, worauf sie sich selbst freut.",
+          "wennEsKippt": "Löst das Schild zu Liebe und Sexualität Gekicher aus, es kurz zulassen und dann sachlich sagen, wie das Modul abläuft: Eltern werden vorher informiert, niemand erzählt Eigenes, Fragen gehen anonym in eine Box. Das beruhigt meist mehr als jede Ermahnung. Wird jemand an einem Schild still, etwa bei „Schwere Gefühle“, nicht darauf eingehen, sondern später unter vier Augen nachfragen."
+        },
+        {
+          "titel": "Mein Skills-Buch beginnt",
+          "dauer": 12,
+          "phase": "uebung",
+          "text": "Am Ende des Weges zeigt die Leitung ihr eigenes Skills-Buch und erklärt: Hier hinein kommt im Lauf des Jahres nur, was bei euch wirklich wirkt – am Ende jedes Moduls eine Rubrikenseite, dazu Blätter, die ihr behalten wollt. Ringbücher und Blätter austeilen. Jede Person gestaltet Seite 1; den Satz für Juni schreibt sie für sich, er wird nicht vorgelesen. Wer fertig ist, beginnt eine Rubrikenseite für das Modul Ankommen und trägt einen Lieblingsskill ein, der schon hilft – aus dem Skills-Koffer von Jahr 1, dem Skills-Kompass von Jahr 2 oder aus dem eigenen Leben. Die Bücher kommen in eine Box, die im Raum bleibt.",
+          "sagen": [
+            "Das ist euer Buch, nicht meins. Ich lese nur, was ihr mir zeigt.",
+            "Was hilft euch heute schon, wenn es stressig wird? Das darf auch etwas sein, das ihr nie hier gelernt habt – Musik, Basketball, mit dem Hund raus."
+          ],
+          "tipp": "Das Deckblatt darf unfertig bleiben und in den nächsten Wochen wachsen. Wer nicht gern zeichnet, klebt ein Foto, einen Songtext oder ein Muster auf.",
+          "wennEsKippt": "Findet jemand das Buch kindisch, den Zweck nüchtern erklären: Es ist eine Gebrauchsanweisung für schwierige Tage, die ihr selbst schreibt. Es darf schlicht aussehen wie ein Notizbuch – Hauptsache, es ist benutzbar.",
+          "blatt": "skills-buch"
+        },
+        {
+          "titel": "Skill: Einer aus dem Koffer",
+          "dauer": 5,
+          "phase": "skill",
+          "text": "Eine Person, die schon länger dabei ist, leitet ihren Lieblingsskill aus dem Skills-Koffer – ihrem persönlichen Notfall-Set aus Jahr 1 – eine Minute lang für alle an; die Leitung hat das in der Pause kurz mit ihr abgesprochen. Alle machen mit, danach sagt die Person, wann ihr der Skill hilft. Findet sich niemand, leitet die Leitung die Kastenatmung an: 4 Sekunden ein, 4 halten, 4 aus, 4 halten, drei Runden. So erleben die Neuen gleich, was hier mit Skills gemeint ist.",
+          "sagen": [
+            "Wer zeigt uns einen Skill, der bei ihm oder ihr wirklich funktioniert?",
+            "Ein, zwei Sätze reichen: Wann hilft er dir, und wie geht er?"
+          ],
+          "tipp": "Wer anleitet, darf vom Skills-Kärtchen ablesen. Das Anleiten macht die Erfahrenen zu Profis und nimmt den Neuen die Scheu."
+        },
+        {
+          "titel": "Réckbléck und Skills-Pass",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Die neuen Skills-Pässe austeilen: Wie in den letzten Jahren kommt am Ende jeder Einheit ein Satz hinein, dazu ein Stempel. Blitzlicht mit einem Wort: Mit welchem Wort startet ihr ins letzte Kursjahr? Dann der erste Eintrag. Pässe und Bücher kommen in die Box.",
+          "sagen": [
+            "Ein Wort für euer letztes Kursjahr.",
+            "Für den Pass: eine Regel, die euch wichtig ist, oder der Skill, den ihr ins Buch geschrieben habt."
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Nächstes Mal schaut ihr genauer hin: Was könnt ihr schon – und was wollt ihr in diesem Jahr noch lernen? Dafür kleben wir ein Radar auf den Boden.",
+      "hintergrund": "Die Gruppe beginnt nicht bei null: Rituale und Regeln sind bekannt, einige Jugendliche sind neu, und das Ende ist absehbar. Tuckman und Jensen (1977) haben ihr Modell der Gruppenentwicklung um eine Abschlussphase ergänzt; im letzten Jahr lohnt es, dieses Ende von Anfang an mitzudenken. Ein erneuerter Vertrag schafft Sicherheit für die heikleren Themen dieses Jahres, und wer Regeln und Inhalte mitbestimmt, erlebt Autonomie und Zugehörigkeit (Deci & Ryan, 2000). Die Frage, was im Juni passiert sein soll, ist lösungsorientiert gestellt: Sie richtet den Blick auf ein gewünschtes Ergebnis statt auf Probleme (de Shazer, 1985). Das Skills-Buch soll sichern, dass Gelerntes den Kurs überdauert; das Skillstraining der DBT für Jugendliche hält Skills deshalb schriftlich fest und fragt regelmäßig nach ihrem Einsatz (Rathus & Miller, 2015).",
+      "quellen": [
+        "Tuckman, B. W. & Jensen, M. A. C. (1977). Stages of small-group development revisited. Group & Organization Studies, 2(4), 419–427.",
+        "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268.",
+        "de Shazer, S. (1985). Keys to Solution in Brief Therapy. New York: Norton.",
+        "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford."
+      ],
+      "achtung": "Der Jahresweg nennt Trauer, Krisen, Rausch und Sexualität – das kann bei einzelnen Jugendlichen etwas berühren. Wer an einem Schild still wird oder einen orangen Punkt deutlich allein klebt, wird nicht vor der Gruppe angesprochen, sondern später unter vier Augen gefragt, wie es geht. Die Erwartungskarten bleiben anonym; Karten mit Hinweisen auf eine Belastung im Team besprechen. Die Grenze der Schweigepflicht offen sagen. Erzählt jemand von Gewalt, Missbrauch, Selbstverletzung oder Suizidgedanken, wird das nicht in der Gruppe vertieft, sondern zeitnah im Einzelgespräch aufgegriffen und nach dem internen Schutzkonzept weitergegeben; die zuständige Leitung (Responsable) wird am selben Tag informiert."
+    },
+    {
+      "id": "j3-e02",
+      "nr": 2,
+      "jahr": 3,
+      "modul": "j3-m0",
+      "titel": "Wo stehe ich?",
+      "kurz": "Mit einem Skills-Radar auf Papier und am Boden bestimmt jede Person ihren Standort, bekommt einen Blick von außen auf ihre Stärken und legt zwei Ziele für das Jahr fest.",
+      "dauer": 100,
+      "ziele": [
+        "schätzen sich in acht Skill-Bereichen ein und sehen ihr Profil auf einen Blick",
+        "geben einer anderen Person eine Rückmeldung zu ihren Stärken mit einem konkret beobachteten Beispiel",
+        "benennen Stärken und Lernfelder und teilen mit der Gruppe einen Trick, der ihnen hilft",
+        "formulieren zwei Ziele für das Kursjahr, jeweils mit einem Merkmal für Erfolg und einem ersten Schritt"
+      ],
+      "material": [
+        "Gefühlsrad (A3, laminiert), Wäscheklammern, Plakat Anspannungsskala 0–100",
+        "Schülerblatt „Mein Skills-Radar“ für jede Person, Stifte in zwei Farben",
+        "Kreppband (etwa 25 m) für das Radar am Boden, acht A4-Schilder mit den Bereichen des Radars; für draußen Straßenkreide",
+        "Ein Plakat „Tricks aus der Gruppe“ und dicke Stifte",
+        "Das ausgefüllte Radar der Leitung",
+        "Skills-Bücher aus Einheit 1, Skills-Pässe, Stempel",
+        "Imbiss und Getränke (Allergien beachten)"
+      ],
+      "vorbereitung": [
+        "Das Radar am Boden kleben: acht Strahlen von gut 2 m aus einem gemeinsamen Mittelpunkt, gleichmäßig verteilt wie ein Stern; auf jedem Strahl fünf Querstriche im Abstand von etwa 40 cm (1 innen, 5 außen), am Ende das Schild des Bereichs. Das braucht etwa 5 × 5 m; in kleineren Räumen reichen Strahlen von 1,5 m mit Querstrichen alle 30 cm",
+        "Das eigene Radar ausfüllen – mit mindestens einem Bereich, in dem die Leitung selbst bei 2 steht",
+        "Paare für den Blick von außen festlegen: Neue zu Jugendlichen, die freundlich und genau beobachten, oder zur Leitung"
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-radar",
+        "skills-buch",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Gefühlsrad und Anspannung"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Rückblick: Vertrag, Jahresweg, Buch"
+        },
+        {
+          "min": "15–35",
+          "phase": "uebung",
+          "titel": "Mein Skills-Radar auf Papier"
+        },
+        {
+          "min": "35–45",
+          "phase": "uebung",
+          "titel": "Blick von außen, Stärken und Lernfelder"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–78",
+          "phase": "aktiv",
+          "titel": "Das Radar am Boden"
+        },
+        {
+          "min": "78–90",
+          "phase": "uebung",
+          "titel": "Zwei Ziele für mein Jahr"
+        },
+        {
+          "min": "90–95",
+          "phase": "skill",
+          "titel": "Skill: Hand aufs Herz"
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Réckbléck und Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: Gefühlsrad und Anspannung",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Gefühlsrad und Anspannung wie gewohnt: Klammer ans Wort, dazu die Zahl von 0 bis 100 und, wer mag, ein Satz. Die Leitung beginnt. Danach eine Zusatzfrage, die nur mit dem Daumen beantwortet wird: Wie gut wisst ihr, was ihr schon könnt – hoch, Mitte oder runter? Die Daumen nicht kommentieren; die Frage führt direkt ins Thema.",
+          "sagen": [
+            "Wort und Zahl – und wer mag, ein Satz dazu.",
+            "Daumen: Wie gut wisst ihr, was ihr schon könnt?"
+          ],
+          "tipp": "Viele halten den Daumen bei dieser Frage in die Mitte. Das ist die Brücke zum Thema: Heute finden wir es genauer heraus.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Rückblick: Vertrag, Jahresweg, Buch",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "Auf den neuen Vertrag an der Wand zeigen und die Fotos der Jahresweg-Schilder herumgeben. In ein, zwei Sätzen sagen, was die Leitung aus den Punkten mitgenommen hat, etwa: Bei Zukunft und Beruf klebt viel Grün, das nehmen wir ernst. Dann das Thema nennen: Bevor man losgeht, schaut man, wo man steht.",
+          "sagen": [
+            "Beim Jahresweg habt ihr gezeigt, worauf ihr neugierig seid. Heute schauen wir, womit ihr losgeht.",
+            "Ein Navi braucht zwei Dinge: den Standort und das Ziel. Heute gibt es beides."
+          ]
+        },
+        {
+          "titel": "Mein Skills-Radar auf Papier",
+          "dauer": 20,
+          "phase": "uebung",
+          "text": "Blatt austeilen. Die acht Bereiche vorlesen und je mit einem Beispiel aus dem Alltag erklären (Tabelle). Die Leitung zeigt ihr eigenes ausgefülltes Radar und sagt, wo sie selbst bei 2 steht und warum. Dann füllt jede Person Aufgabe 1 allein aus und verbindet die Kreuze zu einer Linie. Wer fertig ist, markiert den Bereich, bei dem die Entscheidung am schwersten fiel.",
+          "tabelle": {
+            "spalten": [
+              "Bereich",
+              "So sieht das im Alltag aus"
+            ],
+            "zeilen": [
+              [
+                "Gefühle erkennen",
+                "Ich merke schon im Bus, dass ich gereizt bin – nicht erst, wenn ich jemanden anschreie."
+              ],
+              [
+                "Runterkommen",
+                "Nach einem Streit in der Pause bin ich zur nächsten Stunde wieder einigermaßen ruhig."
+              ],
+              [
+                "Gedanken prüfen",
+                "Nach einer schlechten Note denke ich nicht nur: Ich bin zu dumm. Ich frage mich auch: Stimmt das?"
+              ],
+              [
+                "Sagen, was ich brauche",
+                "Ich sage der Lehrerin: Ich habe das nicht verstanden. Können Sie es noch einmal erklären?"
+              ],
+              [
+                "Nein sagen",
+                "Im Gruppenchat mache ich beim Lästern nicht mit, auch wenn alle anderen lachen."
+              ],
+              [
+                "Streit klären",
+                "Mit meiner Schwester kann ich nach einem Krach reden, ohne dass es wieder losgeht."
+              ],
+              [
+                "Für mich sorgen",
+                "Unter der Woche bin ich meistens vor Mitternacht offline und frühstücke etwas."
+              ],
+              [
+                "Hilfe holen",
+                "Wenn mich etwas nicht loslässt, rede ich mit jemandem – Freundin, Educateur, SePAS."
+              ]
+            ]
+          },
+          "sagen": [
+            "Kreuzt an, wie es in den letzten Wochen war – nicht, wie es sein sollte.",
+            "Eine 2 ist keine schlechte Note. Sie zeigt nur, wo noch Platz nach oben ist.",
+            "Wer neu ist: Denkt an die Schule, an zu Hause und an eure Freunde."
+          ],
+          "tipp": "Das eigene Radar der Leitung ist der wichtigste Türöffner. Wer sieht, dass auch Erwachsene beim Nein-Sagen bei 2 stehen, kreuzt ehrlicher an.",
+          "wennEsKippt": "Kreuzt jemand überall 5 oder überall 1 an, nicht diskutieren, sondern fragen: Bei welchem Bereich warst du dir am sichersten? Wer das Blatt albern findet, darf es zuerst für eine Figur aus einer Serie ausfüllen und dann für sich.",
+          "blatt": "skills-radar"
+        },
+        {
+          "titel": "Blick von außen, Stärken und Lernfelder",
+          "dauer": 10,
+          "phase": "uebung",
+          "text": "Paare nach Plan der Leitung. Die Blätter werden getauscht: Jede Person malt beim anderen einen Stern neben die zwei Bereiche, in denen sie ihn stark erlebt, und schreibt unter Aufgabe 2 ein konkretes Beispiel. Nur Stärken, keine Kritik. Dann bekommt jede Person ihr Blatt zurück, liest still, vergleicht Sterne und Kreuze und füllt Aufgabe 3 aus.",
+          "sagen": [
+            "Schreibt, was ihr gesehen habt: Du bist ruhig geblieben, als dich jemand provoziert hat. Nicht: Du bist nett.",
+            "Liegt ein Stern dort, wo ihr euch selbst niedrig eingeschätzt habt? Das lohnt einen zweiten Blick."
+          ],
+          "tipp": "Neue und Jugendliche, die sich kaum kennen, bekommen die Leitung als Partner – oder sie schreiben auf, was ihnen heute an der Person aufgefallen ist.",
+          "wennEsKippt": "Kommen ironische Sterne oder Sprüche, das Blatt freundlich zurückgeben und neu schreiben lassen. Bei wiederholter Abwertung übernimmt die Leitung den Blick von außen für die betroffene Person und spricht später unter vier Augen mit dem Schreiber.",
+          "blatt": "skills-radar"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Gemeinsam essen, die Blätter liegen umgedreht auf den Tischen. Die Leitung sucht nebenbei das Gespräch mit Jugendlichen, die auffallend niedrig oder gar nicht angekreuzt haben – ohne das Blatt zu erwähnen."
+        },
+        {
+          "titel": "Das Radar am Boden",
+          "dauer": 18,
+          "phase": "aktiv",
+          "text": "Alle stehen um den Stern aus Kreppband: acht Strahlen, innen 1, außen 5. Die Leitung nennt einen Bereich nach dem anderen; alle stellen sich gleichzeitig auf den Strahl, dorthin, wo sie sich heute sehen – es muss nicht genau das Kreuz vom Blatt sein. Niemand kommentiert, wo andere stehen. Bei jedem Bereich fragt die Leitung eine Person von weiter außen nach ihrem Trick; die Tricks kommen stichwortartig auf das Plakat. Zum Schluss stellt sich jede Person auf ihren Lernfeld-Strahl, an ihren Punkt von heute, und geht so weit nach außen, wie sie bis Juni kommen will.",
+          "sagen": [
+            "Stellt euch dorthin, wo ihr euch heute seht. Schaut euch um – nur schauen, nicht kommentieren.",
+            "Du stehst beim Runterkommen weit außen. Was ist dein Trick?",
+            "Jetzt euer Lernfeld: Geht so weit nach außen, wie ihr bis Juni kommen wollt. Wie fühlt sich der Platz an – und was braucht ihr, um dorthin zu kommen?"
+          ],
+          "tipp": "Bei Regen reicht ein freigeräumter Raum; draußen geht das Radar mit Straßenkreide. Bei wenig Energie liegt das Radar als A1-Plakat auf dem Tisch, alle setzen Klebepunkte, und die Leitung fragt nach Tricks. Bei nur zwei Jugendlichen stellt sich die Leitung mit auf und erzählt selbst von einem Trick.",
+          "wennEsKippt": "Wird gelacht oder kommentiert, wo jemand steht, sofort anhalten und auf den Vertrag zeigen. Wer bei einem Bereich nicht stehen will, stellt sich neben die Leitung an den Rand – ohne Begründung. Laufen alle bei jedem Bereich zur 5, um cool zu wirken, den Zielschritt vorziehen: Da stehen kann man leicht, dahin kommen muss man."
+        },
+        {
+          "titel": "Zwei Ziele für mein Jahr",
+          "dauer": 12,
+          "phase": "uebung",
+          "text": "Zurück an den Tischen füllt jede Person Aufgabe 4 aus: ein Ziel aus dem Lernfeld vom Boden, eines aus dem Jahresweg – Praktikum, Geld, Beruf, die eigene Meinung vertreten. Die Leitung geht herum und prüft mit drei Fragen: Hängt es von dir ab? Kann man sehen, ob es klappt? Ist es bis Juni machbar? Wer fertig ist, schreibt beide Ziele in sein Skills-Buch unter „Pläne“ und heftet das Radar ein.",
+          "punkte": [
+            "Nicht: Ich will nicht mehr ausrasten. Sondern: Wenn ich merke, dass ich laut werde, gehe ich kurz raus.",
+            "Nicht: Mein Lehrer soll mich in Ruhe lassen. Sondern: Ich frage nach, wenn ich etwas nicht verstanden habe.",
+            "Nicht: mehr Geld. Sondern: Ich weiß am Monatsanfang, wie viel ich pro Woche ausgeben kann."
+          ],
+          "sagen": [
+            "Woran würde deine beste Freundin im Juni merken, dass du dein Ziel erreicht hast?",
+            "Was ist der kleinste erste Schritt, den du schon diese Woche machen kannst?"
+          ],
+          "tipp": "Bei großen Zielen wie „meinen Abschluss schaffen“ nach dem Teil fragen, der hier wachsen kann – etwa in Prüfungen ruhig bleiben oder früher um Hilfe bitten.",
+          "wennEsKippt": "Fällt jemandem kein Ziel ein, das Radar gemeinsam anschauen: Welcher Strahl hat dich vorhin am Boden am meisten beschäftigt? Wer sich nicht festlegen will, schreibt ein Ziel für die nächsten vier Wochen statt für das ganze Jahr.",
+          "blatt": "skills-radar"
+        },
+        {
+          "titel": "Skill: Hand aufs Herz",
+          "dauer": 5,
+          "phase": "skill",
+          "text": "Im Sitzen, Augen offen oder geschlossen. Die Leitung leitet eine kurze Übung aus dem Selbstmitgefühl an (Liste): eine Hand auf Brust oder Oberarm, drei ruhige Atemzüge, ein freundlicher Satz. Danach erklären, wofür der Skill gut ist: für Momente, in denen man hart mit sich ins Gericht geht – nach einer schlechten Note, nach einem Streit, nach einer Selbsteinschätzung wie heute.",
+          "punkte": [
+            "Leg eine Hand auf die Brust oder auf den Oberarm – dahin, wo es sich angenehm anfühlt.",
+            "Spür die Wärme deiner Hand. Atme dreimal ruhig ein und aus.",
+            "Sag dir innerlich: Ich muss nicht überall bei 5 sein. Ich bin unterwegs.",
+            "Wenn du magst, such dir einen eigenen Satz – so, wie du mit einer guten Freundin reden würdest."
+          ],
+          "tipp": "Wem die Hand auf der Brust zu nah ist, legt sie aufs Knie oder auf den Tisch. Der Satz wirkt auch ohne Berührung.",
+          "wennEsKippt": "Kichern gehört dazu. Ruhig weitermachen und hinterher sagen: Sich selbst freundlich zu behandeln, fühlt sich für viele erst einmal peinlich an – gerade deshalb lohnt es sich, es zu üben."
+        },
+        {
+          "titel": "Réckbléck und Skills-Pass",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Blitzlicht: Jede Person, die mag, nennt den Bereich, in dem sie im Juni weiter außen stehen will. Dann Eintrag in den Skills-Pass und Stempel. Das Plakat mit den Tricks aus der Gruppe bleibt hängen; wer mag, übernimmt einen Trick in sein Skills-Buch. Bücher und Pässe kommen in die Box.",
+          "sagen": [
+            "Ein Bereich, in dem ihr im Juni weiter außen stehen wollt – wer mag.",
+            "Für den Pass: eine Stärke, die ihr heute entdeckt oder bestätigt bekommen habt."
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Ihr wisst jetzt, wo ihr steht und wohin ihr wollt. Nächstes Mal geht es um die Frage dahinter: Was ist euch eigentlich wichtig? Dafür gibt es eine Auktion – mit viel Geld, das leider nicht echt ist.",
+      "hintergrund": "Eine Standortbestimmung zu Beginn macht Entwicklung später sichtbar und knüpft Ziele an echte Lernfelder. Jugendliche beschreiben sich je nach Umfeld unterschiedlich (Harter, 2012); eine Selbsteinschätzung ist deshalb eine Momentaufnahme, die der Blick anderer ergänzt – andere sehen Seiten, die man selbst übersieht (Luft & Ingham, 1955). Der Blick von außen lässt bewusst nur Stärken zu: Rückmeldungen zu beobachtetem Verhalten sind lernwirksam, Urteile über die Person helfen kaum (Hattie & Timperley, 2007). Das Radar am Boden macht Unterschiede sichtbar, ohne sie zu bewerten, und nutzt die Gruppe als Quelle von Tricks. Selbst gewählte Ziele werden ausdauernder verfolgt (Deci & Ryan, 2000), und ein festgelegter erster Schritt erhöht die Umsetzung (Gollwitzer, 1999). Die Übung zum Selbstmitgefühl setzt der Selbstkritik eine freundliche Haltung zu sich selbst entgegen (Neff, 2003).",
+      "quellen": [
+        "Harter, S. (2012). The Construction of the Self (2nd ed.). New York: Guilford.",
+        "Luft, J. & Ingham, H. (1955). The Johari window, a graphic model of interpersonal awareness. Proceedings of the Western Training Laboratory in Group Development. Los Angeles: University of California.",
+        "Hattie, J. & Timperley, H. (2007). The power of feedback. Review of Educational Research, 77(1), 81–112.",
+        "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268.",
+        "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503.",
+        "Neff, K. D. (2003). Self-compassion: An alternative conceptualization of a healthy attitude toward oneself. Self and Identity, 2(2), 85–101."
+      ],
+      "achtung": "Selbsteinschätzungen können Selbstabwertung verstärken. Wer überall 1 ankreuzt, sich laut schlechtredet oder am Boden sichtbar leidet, wird nicht vor der Gruppe angesprochen, sondern später im Einzelgespräch. Beim Blick von außen sind nur Stärken erlaubt; verletzende Einträge sofort entfernen. Niemand muss am Boden dort stehen, wo sein Kreuz ist. Deuten Ziele auf starke Belastung hin – etwa „nicht mehr so traurig sein“ oder „mir nichts mehr antun“ – oder erzählt jemand von Gewalt, Missbrauch oder Selbstverletzung, wird das nicht in der Gruppe vertieft: am selben Tag das Einzelgespräch führen, nichts versprechen, was nicht zu halten ist, die zuständige Leitung (Responsable) informieren und nach dem internen Schutzkonzept handeln; bei akuter Gefahr die Person nicht allein lassen und den Notruf 112 wählen."
+    }
+  ]
+}

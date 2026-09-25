@@ -1,0 +1,185 @@
+{
+  "jahr": {
+    "nr": 3,
+    "titel": "Kursjahr 3 · Mein Weg",
+    "untertitel": "Ein Schuljahr in 35 Einheiten",
+    "faden": "Im dritten Jahr geht es um den eigenen Weg: Werte und Identität, gute Entscheidungen, Beruf und Zukunft, Selbstständigkeit, schwere Gefühle, Resilienz, Meinung und Mitbestimmung, Liebe, Sexualität und Einvernehmlichkeit, Rausch und Risiko, Medien und KI. Am Ende hat jede Person ihr eigenes Skills-Buch – eine Sammlung der Skills, Pläne und Sätze, die sie mitnehmen will.",
+    "module": [
+      "j3-m0",
+      "j3-m1",
+      "j3-m2",
+      "j3-m3",
+      "j3-m4",
+      "j3-m5",
+      "j3-m6",
+      "j3-m7",
+      "j3-m8",
+      "j3-m9",
+      "j3-m10"
+    ],
+    "joker": [
+      "j3-j01",
+      "j3-j02",
+      "j3-j03",
+      "j3-j04"
+    ]
+  },
+  "module": [
+    {
+      "id": "j3-m0",
+      "jahr": 3,
+      "nr": 0,
+      "titel": "Ankommen",
+      "leitfrage": "Wo stehe ich?",
+      "worum": "Die Gruppe startet ins letzte Kursjahr, klärt Erwartungen und macht eine ehrliche Standortbestimmung: Was kann ich schon, was will ich noch lernen?",
+      "zielAmEnde": "Jede Person hat eine Standortbestimmung und zwei persönliche Ziele für das Jahr.",
+      "einheiten": [
+        "j3-e01",
+        "j3-e02"
+      ]
+    },
+    {
+      "id": "j3-m1",
+      "jahr": 3,
+      "nr": 1,
+      "titel": "Werte und Identität",
+      "leitfrage": "Was ist mir wichtig – und wer will ich sein?",
+      "worum": "Werte, Identität und Rollen (Schule, Familie, Freunde, online, mehrere Sprachen und Kulturen) und Vorbilder.",
+      "zielAmEnde": "Die Jugendlichen kennen drei eigene Werte und wie sie im Alltag sichtbar werden.",
+      "einheiten": [
+        "j3-e03",
+        "j3-e04",
+        "j3-e05"
+      ]
+    },
+    {
+      "id": "j3-m2",
+      "jahr": 3,
+      "nr": 2,
+      "titel": "Entscheidungen und Verantwortung",
+      "leitfrage": "Wie entscheide ich gut?",
+      "worum": "Entscheidungen in Schritten, Risiko und Mut im Jugendalter, Rausch und Risiko informiert einschätzen und ein guter Umgang mit Fehlern.",
+      "zielAmEnde": "Die Jugendlichen können eine Entscheidung strukturiert treffen und aus einem Fehler einen nächsten Schritt machen.",
+      "einheiten": [
+        "j3-e06",
+        "j3-e07",
+        "j3-e08",
+        "j3-e09"
+      ]
+    },
+    {
+      "id": "j3-m3",
+      "jahr": 3,
+      "nr": 3,
+      "titel": "Zukunft und Beruf",
+      "leitfrage": "Was kann ich, was will ich – und wie komme ich dahin?",
+      "worum": "Stärken und Interessen, Berufe entdecken, Bewerbung und Vorstellungsgespräch üben, Ziele planen, die tragen.",
+      "zielAmEnde": "Die Jugendlichen haben ein Berufsprofil und haben ein Vorstellungsgespräch im Rollenspiel geübt.",
+      "einheiten": [
+        "j3-e10",
+        "j3-e11",
+        "j3-e12",
+        "j3-e13"
+      ]
+    },
+    {
+      "id": "j3-m4",
+      "jahr": 3,
+      "nr": 4,
+      "titel": "Selbstständig werden",
+      "leitfrage": "Was brauche ich, um mein Leben selbst zu organisieren?",
+      "worum": "Geld und Konsum, Termine, Formulare und Wege, einfache Selbstversorgung – praktische Skills für den Alltag.",
+      "zielAmEnde": "Die Jugendlichen haben ein Monatsbudget geplant und wissen, wie sie Termine und Formulare selbst erledigen.",
+      "einheiten": [
+        "j3-e14",
+        "j3-e15",
+        "j3-e16"
+      ]
+    },
+    {
+      "id": "j3-m5",
+      "jahr": 3,
+      "nr": 5,
+      "titel": "Schwere Gefühle",
+      "leitfrage": "Was tun mit Trauer, Scham und Einsamkeit?",
+      "worum": "Gefühle, über die man selten spricht: Trauer und Verlust, Scham und Schuld, Einsamkeit – und was hilft, wenn es einem selbst richtig schlecht geht. Behutsam, freiwillig und mit klaren Anlaufstellen.",
+      "zielAmEnde": "Die Jugendlichen kennen Wege, mit schweren Gefühlen umzugehen, haben einen persönlichen Sicherheitsplan und wissen, wo sie Hilfe finden.",
+      "einheiten": [
+        "j3-e17",
+        "j3-e18",
+        "j3-e19",
+        "j3-e20"
+      ]
+    },
+    {
+      "id": "j3-m6",
+      "jahr": 3,
+      "nr": 6,
+      "titel": "Resilienz und Hilfe",
+      "leitfrage": "Was hält mich, wenn es schwer wird?",
+      "worum": "Was Menschen stark macht, wie man um Hilfe bittet (und wo in Luxemburg), und wie man gute Momente bewusst sammelt.",
+      "zielAmEnde": "Jede Person hat ihr persönliches Netz aus Menschen, Orten und Skills aufgeschrieben.",
+      "einheiten": [
+        "j3-e21",
+        "j3-e22",
+        "j3-e23"
+      ]
+    },
+    {
+      "id": "j3-m7",
+      "jahr": 3,
+      "nr": 7,
+      "titel": "Meinung und Mitbestimmung",
+      "leitfrage": "Wie vertrete ich meine Meinung – fair und wirksam?",
+      "worum": "Meinungen bilden, fair streiten und debattieren, im Klassenrat und in der Schülervertretung mitbestimmen.",
+      "zielAmEnde": "Die Jugendlichen können eine Meinung begründen, fair debattieren und ein Anliegen einbringen.",
+      "einheiten": [
+        "j3-e24",
+        "j3-e25",
+        "j3-e26"
+      ]
+    },
+    {
+      "id": "j3-m8",
+      "jahr": 3,
+      "nr": 8,
+      "titel": "Liebe, Sexualität und Einvernehmlichkeit",
+      "leitfrage": "Was gehört zu einer guten Beziehung – und wie geht Einvernehmlichkeit?",
+      "worum": "Respekt und Warnzeichen in Beziehungen, Einvernehmlichkeit (Ja heißt Ja), sachliches Wissen über Körper, Sexualität und Vielfalt und der Umgang mit Nudes und Erpressung im Netz. Freiwillig, ohne persönliche Offenbarungen, mit anonymer Fragenbox und Elternbrief.",
+      "zielAmEnde": "Die Jugendlichen kennen die Regeln der Einvernehmlichkeit, Warnzeichen ungesunder Beziehungen, verlässliche Informationsquellen und wissen, wo sie Hilfe bekommen.",
+      "einheiten": [
+        "j3-e27",
+        "j3-e28",
+        "j3-e29",
+        "j3-e30"
+      ]
+    },
+    {
+      "id": "j3-m9",
+      "jahr": 3,
+      "nr": 9,
+      "titel": "Medien und KI",
+      "leitfrage": "Wer steuert, was ich sehe – und wie nutze ich KI klug?",
+      "worum": "Algorithmen und Filterblasen, künstliche Intelligenz klug und ehrlich nutzen.",
+      "zielAmEnde": "Die Jugendlichen erkennen, wie Plattformen steuern, und nutzen KI mit Blick auf Wahrheit, Ehrlichkeit und Datenschutz.",
+      "einheiten": [
+        "j3-e31",
+        "j3-e32"
+      ]
+    },
+    {
+      "id": "j3-m10",
+      "jahr": 3,
+      "nr": 10,
+      "titel": "Abschluss",
+      "leitfrage": "Was nehme ich mit auf meinen Weg?",
+      "worum": "Das persönliche Skills-Buch, ein Plan für den Übergang und ein würdiger Abschied nach drei Jahren.",
+      "zielAmEnde": "Jede Person geht mit ihrem Skills-Buch und einem Plan für die nächsten Monate.",
+      "einheiten": [
+        "j3-e33",
+        "j3-e34",
+        "j3-e35"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,743 @@
+{
+  "einheiten": [
+    {
+      "id": "j3-e33",
+      "nr": 33,
+      "jahr": 3,
+      "modul": "j3-m10",
+      "titel": "Mein Skills-Buch",
+      "kurz": "Der Umschlag vom September wird geöffnet, ein zweites Skills-Radar zeigt, was gewachsen ist, und das Skills-Buch wird fertig: mit Lieblingsskills, Plänen, Sätzen, die tragen – und einem Skills-Markt.",
+      "dauer": 100,
+      "ziele": [
+        "vergleichen ihre Erwartungen vom September und ihr Skills-Radar mit dem Stand im Juni und benennen, was sich verändert hat",
+        "wählen ihre wichtigsten Skills und die Pläne, die weiter gelten, und halten sie auf einer Übersicht vorn im Skills-Buch fest",
+        "prüfen ihre Sätze, die tragen, mit vier Fragen und nehmen die drei stärksten als Karten mit",
+        "leiten auf dem Skills-Markt einen Skill an und probieren die Skills der anderen aus"
+      ],
+      "material": [
+        "Gefühlsrad (A3, laminiert), Wäscheklammern, Anspannungsskala 0–100",
+        "Der verschlossene Umschlag mit den Erwartungskarten aus Einheit 1",
+        "Skills-Bücher aller Jugendlichen mit dem Skills-Radar aus Einheit 2; frische Kopien des Blatts „Mein Skills-Radar“ für alle, die ihr Radar nicht mehr haben oder später dazugekommen sind",
+        "Stifte in mehreren Farben, damit jede Person eine andere Farbe als im September wählen kann",
+        "Skills-Pässe aus den Jahren 1 bis 3 und die Skills-Kompasse aus Jahr 2, soweit vorhanden; die Skills-Kärtchen aus Jahr 1 als Ideenliste",
+        "Je Person eine frische Rubrikenseite des Skills-Buchs (Seite 2 des Blatts „Mein Skills-Buch“) für die Übersicht",
+        "Schülerblatt „Sätze für die Hosentasche“ je Person, Seite 2 mit den Karten auf festerem Papier, Scheren",
+        "Karteikarten A6 für die Rezeptkarten, dicke Filzstifte, Klebepunkte",
+        "Für den Skills-Markt: Sinneskiste (Knetbälle, Riechstreifen, glatte Steine), Klangschale, Kühlpack, Pfefferminzbonbons, Lautsprecher – und was die Jugendlichen für ihren Skill brauchen",
+        "Klarsichthüllen, Locher, leise Musik",
+        "Skills-Pässe, Stempel, Imbiss und Getränke (Allergien beachten)"
+      ],
+      "vorbereitung": [
+        "Den Umschlag aus Einheit 1 verschlossen mitbringen. Im Team vorher absprechen, wie mit einer Karte umgegangen wird, die auf eine Belastung hinweist: zusammenfassen statt vorlesen, danach allen ein Gespräch anbieten.",
+        "Skills-Bücher, Pässe und Kompasse aus Box und Archiv holen und nach Namen sortieren. Prüfen, wer kein Radar aus Einheit 2 hat, und dafür Kopien bereitlegen.",
+        "Das eigene Radar vom September mit einer zweiten Farbe neu ausfüllen – mit mindestens einem Bereich, der sich nicht verändert hat – und eine eigene Rezeptkarte als Muster schreiben, etwa für die Kastenatmung.",
+        "Den Raum teilen: Stuhlkreis in der Mitte, an den Wänden so viele kleine Stände (ein Tisch oder zwei Stühle) wie Jugendliche, dazu einer für die Leitung.",
+        "Riechstreifen nur mit Ölen vorbereiten, die in der Gruppe vertragen werden; Allergien und Asthma vorher klären."
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-radar",
+        "skills-buch",
+        "skills-saetze-die-tragen",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Gefühlsrad, Anspannung, ein Blick ins Buch"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Was keine KI für euch schreiben kann"
+        },
+        {
+          "min": "15–25",
+          "phase": "uebung",
+          "titel": "Der Umschlag vom September"
+        },
+        {
+          "min": "25–33",
+          "phase": "uebung",
+          "titel": "Mein Radar im Juni"
+        },
+        {
+          "min": "33–45",
+          "phase": "uebung",
+          "titel": "Lieblingsskills und Pläne: die Übersicht"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–80",
+          "phase": "aktiv",
+          "titel": "Skills-Markt"
+        },
+        {
+          "min": "80–90",
+          "phase": "uebung",
+          "titel": "Sätze für die Hosentasche"
+        },
+        {
+          "min": "90–95",
+          "phase": "skill",
+          "titel": "Skill: Mein Satz im Ausatmen"
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Réckbléck und Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: Gefühlsrad, Anspannung, ein Blick ins Buch",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Das Gefühlsrad liegt in der Mitte, jede Person steckt ihre Klammer an und nennt ihre Anspannung von 0 bis 100. Das eigene Skills-Buch liegt dabei schon auf dem Schoß: Wer mag, schlägt die Seite auf, die am meisten benutzt aussieht, und sagt in einem Satz, was darauf steht. Die Leitung beginnt mit ihrem eigenen Buch. Wer das Buch heute nicht aufschlagen möchte, nennt nur Gefühl und Zahl.",
+          "sagen": [
+            "Gefühl, Zahl – und wenn ihr mögt: Welche Seite in eurem Buch sieht am meisten benutzt aus?",
+            "Eine Seite mit Eselsohren ist ein gutes Zeichen. Die hat gearbeitet."
+          ],
+          "tipp": "Wer das Buch vergessen oder verloren hat, hört keinen Vorwurf: Die Pässe liegen in der Box, und fehlende Seiten gibt es heute als Nachdruck.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Was keine KI für euch schreiben kann",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "Kurz an Einheit 32 anknüpfen: Die Gruppe hat besprochen, wie man KI klug und ehrlich nutzt. Dann den Bogen schlagen: Ein Skills-Buch kann keine KI schreiben, weil es aus eigenen Erfahrungen besteht – aus dem, was in drei Jahren wirklich geholfen hat. Den Plan für die letzten drei Einheiten nennen: heute Bilanz ziehen und das Buch fertigstellen, nächstes Mal die Brücke in die Zeit nach dem Sommer, dann der Abschied. Zum Schluss den verschlossenen Umschlag vom September in die Mitte legen.",
+          "sagen": [
+            "Eine KI schreibt euch in zehn Sekunden hundert Tipps gegen Stress. Welche drei davon bei euch funktionieren, wisst nur ihr.",
+            "Heute wird euer Skills-Buch fertig. Nächste Woche kommt das letzte Kapitel dazu, und in zwei Wochen nehmt ihr es mit."
+          ],
+          "tipp": "Den Abschied schon jetzt beiläufig ankündigen. Wer das Ende kommen sieht, kann es besser gestalten, als wenn es plötzlich da ist – das gilt besonders für Jugendliche, denen Abschiede schwerfallen."
+        },
+        {
+          "titel": "Der Umschlag vom September",
+          "dauer": 10,
+          "phase": "uebung",
+          "text": "Die Leitung zeigt den Umschlag, der seit Einheit 1 verschlossen im Kursordner lag, und öffnet ihn vor der Gruppe. Zuerst die grünen Karten: Sie liest jede Karte zuerst still und dann laut vor – was im Juni passiert sein sollte, damit sich das Jahr gelohnt hat. Nach jeder Karte zeigen alle gleichzeitig mit dem Daumen, wie sie es sehen: hoch heißt eingetreten, Mitte zum Teil, runter nicht. Dann die orangen Karten mit den Bedenken, jeweils mit der Frage: Ist das hier passiert? Zum Schluss sammelt die Leitung sichtbar an der Tafel, was noch fehlt und in den letzten zwei Einheiten machbar ist, etwa ein Wunsch für das Abschlussessen oder ein Spiel.",
+          "sagen": [
+            "Dieser Umschlag war seit September zu. Wer seine Karte wiedererkennt, muss nichts dazu sagen.",
+            "Daumen: Ist das eingetreten, zum Teil oder gar nicht?",
+            "Was fehlt noch – und was davon schaffen wir in den letzten zwei Einheiten?"
+          ],
+          "tipp": "Was an der Tafel steht, hält die Leitung dann auch ein: Die Gruppe merkt so ein letztes Mal, dass ihre Stimme zählt. Die Karten kommen danach zurück in den Umschlag; er liegt in der letzten Einheit an der Station „Jahr 3“ auf dem Weg und wird nach dem Kurs vernichtet.",
+          "wennEsKippt": "Karten, die nach einer bestimmten Person klingen, nicht vorlesen, sondern zusammenfassen, wie schon im September. Deutet eine Karte auf eine Belastung hin, etwa „dass es mir endlich besser geht“, allgemein und freundlich zusammenfassen, nicht nachforschen, wer sie geschrieben hat, und am Ende allen ein Gespräch anbieten. Ist eine Befürchtung eingetreten – etwa, dass etwas weitererzählt wurde –, das ehrlich anerkennen, ohne Schuldige zu suchen."
+        },
+        {
+          "titel": "Mein Radar im Juni",
+          "dauer": 8,
+          "phase": "uebung",
+          "text": "Jede Person nimmt ihr Skills-Radar aus Einheit 2 aus dem Buch und setzt mit einer anderen Farbe als im September in jeder Zeile ein neues Kreuz – so, wie es in den letzten Wochen war. Die neuen Kreuze werden zu einer zweiten Linie verbunden. Dann still vergleichen: Wo liegt die Juni-Linie weiter außen, wo gleich, wo weiter innen? Neben die zwei Jahresziele auf Seite 2 und den Satz „Im Juni will ich sagen können …“ vom Deckblatt kommt je ein Zeichen: geschafft, unterwegs oder noch nicht. Das Radar bleibt privat; wer mag, nennt der Gruppe einen Bereich, auf den er stolz ist.",
+          "sagen": [
+            "Kreuzt an, wie es in den letzten Wochen war – nicht, wie ihr es euch im September gewünscht habt.",
+            "Eine Linie, die weiter innen liegt, heißt nicht, dass ihr etwas verlernt habt. Oft schaut man im Juni genauer hin als im September.",
+            "Wer mag: Auf welchen Bereich seid ihr stolz? Nur der Bereich, keine Zahl."
+          ],
+          "tipp": "Wer erst im Lauf des Jahres dazugekommen ist, füllt das Radar heute zum ersten Mal aus und schreibt daneben, was er seit seinem Einstieg gelernt hat. Das zählt genauso.",
+          "wennEsKippt": "Liegt die neue Linie fast überall weiter innen oder wirkt jemand beim Vergleichen getroffen, nicht vor der Gruppe darauf eingehen. Leise fragen, was in diesem Jahr schwer war und was trotzdem gehalten hat, und nach der Einheit ein Gespräch anbieten. Kreuzt jemand demonstrativ überall 5 an, das stehen lassen und später fragen, welcher Bereich wirklich gewachsen ist.",
+          "blatt": "skills-radar"
+        },
+        {
+          "titel": "Lieblingsskills und Pläne: die Übersicht",
+          "dauer": 12,
+          "phase": "uebung",
+          "text": "Jede Person bekommt eine frische Rubrikenseite, schreibt als Modul „Das Wichtigste aus drei Jahren“ darauf und legt sie direkt hinter das Deckblatt. Dafür blättert sie still durch Radar, Skills-Pässe und die Rubrikenseiten der Module 0 bis 9. Ins Feld „Lieblingsskills“ kommen bis zu fünf Skills, die wirklich geholfen haben – oft stecken sie hinter einem Bereich, in dem die Linie gewachsen ist –, ins Feld „Pläne“ zwei Wenn-dann-Pläne, die auch nach dem Sommer gelten; die Felder „Sätze, die tragen“ und „Menschen, die helfen“ bleiben für später frei. Zum Schluss wählt jede Person den Skill, den sie auf dem Skills-Markt zeigt, und schreibt dafür eine Rezeptkarte (A6).",
+          "sagen": [
+            "Nur was euch wirklich geholfen hat, kommt auf die Übersicht – nicht das, was gut klingt.",
+            "Fünf Skills, die ihr ohne Blatt könnt, sind mehr wert als zwanzig, die in der Mappe liegen.",
+            "Welcher Wenn-dann-Plan aus diesem Jahr gilt auch noch nach dem Sommer?",
+            "Die Rezeptkarte so kurz, dass jemand den Skill nach dreißig Sekunden Lesen nachmachen kann."
+          ],
+          "punkte": [
+            "Rezeptkarte, Zeile 1: Name des Skills, zum Beispiel Kastenatmung",
+            "Zeile 2: So geht es – in höchstens drei Schritten",
+            "Zeile 3: Hilft bei – welche Anspannung, welche Lage (Schule, Bus, zu Hause, nachts)",
+            "Zeile 4: Mein Tipp – was man beim ersten Mal leicht falsch macht"
+          ],
+          "tabelle": {
+            "spalten": [
+              "Skill",
+              "So geht er",
+              "Hilft mir bei",
+              "Anspannung"
+            ],
+            "zeilen": [
+              [
+                "Kastenatmung",
+                "4 Sekunden ein, 4 halten, 4 aus, 4 halten",
+                "vor Prüfungen, vor schwierigen Gesprächen",
+                "30–70"
+              ],
+              [
+                "Kaltes Wasser",
+                "Handgelenke 30 Sekunden unter kaltes Wasser",
+                "wenn ich kurz vorm Explodieren bin",
+                "70–100"
+              ]
+            ]
+          },
+          "tipp": "Die Übersicht ist die Seite, die man bei 80 in zehn Sekunden finden muss – deshalb steht sie ganz vorn. Wer kein Buch zum Blättern mag, fotografiert sie zusätzlich. Wer später dazugekommen ist, hat weniger Pässe; auch zwei Skills, die sicher sitzen, ergeben eine gute Übersicht.",
+          "wennEsKippt": "Findet jemand gar keinen Skill, der geholfen hat („Bringt eh nichts“), nicht widersprechen, sondern konkreter fragen: Was machst du, wenn du nach einem schlechten Tag nach Hause kommst? Oft steckt darin ein Skill, der nur noch keinen Namen hat – Musik, Duschen, eine Runde mit dem Hund. Der kommt dann ins Buch.",
+          "blatt": "skills-buch"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Gemeinsam essen. Die Rezeptkarten liegen zum Trocknen oder Nachbessern auf dem Tisch; die Leitung legt das Material für die Stände bereit und lässt das Thema ruhen."
+        },
+        {
+          "titel": "Skills-Markt",
+          "dauer": 20,
+          "phase": "aktiv",
+          "text": "Jede Person baut in drei Minuten ihren Stand auf: Rezeptkarte sichtbar, Material bereit. Dann wird die Gruppe geteilt – die eine Hälfte betreibt die Stände, die andere geht als Kundschaft von Stand zu Stand; bei jedem Klang der Klangschale (alle zwei bis drei Minuten) wird gewechselt, nach der Hälfte der Zeit tauschen die Hälften die Rollen. An jedem Stand wird der Skill nicht erklärt, sondern gemacht: kurz sagen, wann er hilft, vormachen, zusammen ausprobieren, nachfragen. Die Leitung betreibt selbst einen Stand und springt ein, wo die Zahlen nicht aufgehen. Zum Schluss klebt jede Person einen Punkt auf die Rezeptkarte, deren Skill sie in ihr Buch übernehmen will. Die Leitung sammelt alle Rezeptkarten ein und kopiert sie bis zur letzten Einheit für alle – das Rezeptheft der Gruppe.",
+          "sagen": [
+            "Ihr seid heute die Profis. Niemand hält einen Vortrag – ihr macht den Skill mit euren Gästen.",
+            "Kundschaft: Probiert wirklich aus. Und sagt ehrlich, was sich verändert hat.",
+            "Welcher Skill von den anderen kommt in euer Buch?"
+          ],
+          "tipp": "Bei nur zwei Jugendlichen gibt es keine Stände: Beide zeigen einander und der Leitung ihren Skill, die Leitung zeigt einen dritten. Bei wenig Energie wandern nicht die Menschen, sondern Rezeptkarten und Material im Sitzkreis von Platz zu Platz.",
+          "wennEsKippt": "Wird an einem Stand nur geblödelt, dazustellen und als Kundschaft mitmachen: Zeig mir das so, dass ich es morgen im Bus machen kann. Traut sich jemand nicht, allein einen Stand zu betreiben, betreibt er ihn mit der Leitung oder legt nur die Rezeptkarte aus und macht mit, wenn Kundschaft kommt."
+        },
+        {
+          "titel": "Sätze für die Hosentasche",
+          "dauer": 10,
+          "phase": "uebung",
+          "text": "Mit einem Beispiel einsteigen: Die Leitung schreibt zwei Sätze an die Tafel – „Alles wird gut.“ und „Das ist schwer, und ich habe schon Schwereres geschafft.“ – und fragt, welcher in einem schlechten Moment eher trägt. Daraus die vier Fragen des Blatts ableiten: kurz, wahr, meiner, freundlich. Dann blättert jede Person durch die Rubrik „Sätze, die tragen“ ihres Skills-Buchs, prüft die stärksten Sätze mit den vier Fragen und baut, wenn nötig, einen um. Die drei besten kommen auf die Karten zum Ausschneiden und ins Feld „Sätze, die tragen“ der Übersicht.",
+          "sagen": [
+            "Warum tragen manche Sätze, obwohl sie gar nicht fröhlich sind?",
+            "Dass alles gut wird, weiß keiner. Aber „Ich weiß, was ich als Nächstes tun kann“ – das weißt du.",
+            "Wer mag, liest am Ende einen Satz vor. Wer nicht mag, behält ihn für sich – er wirkt trotzdem."
+          ],
+          "tipp": "Die Rubrik im Buch ist die Sammlung, die Karten sind die Auswahl für unterwegs – so doppelt sich nichts. Die Leitung verrät ihren eigenen Satz und erzählt kurz, wann er ihr geholfen hat: echt, aber ohne Privates.",
+          "wennEsKippt": "Kommen nur Sprüche aus dem Internet, sie nicht abwerten, sondern prüfen lassen: Würde der Satz dich bei 80 tragen – oder eher antreiben? Schreibt jemand einen Satz, der nach großer Not klingt, etwa „Ich halte das nicht mehr aus“, nicht vor der Gruppe darauf eingehen, sondern nach der Einheit das Gespräch suchen (siehe Achtung).",
+          "blatt": "skills-saetze-die-tragen"
+        },
+        {
+          "titel": "Skill: Mein Satz im Ausatmen",
+          "dauer": 5,
+          "phase": "skill",
+          "text": "Alle sitzen bequem, Füße auf dem Boden, die Karte mit dem eigenen Satz in der Hand oder im Kopf. Die Leitung zählt langsam: vier Sekunden durch die Nase ein, sechs Sekunden durch den Mund aus. Beim Ausatmen denkt jede Person ihren Satz – oder eine kurze Form davon mit drei, vier Wörtern. Fünf Runden, dann kurz nachspüren. Erklären: Langes Ausatmen bremst den Körper, der Satz gibt dem Kopf etwas zum Festhalten; zusammen ist das ein Skill für unterwegs.",
+          "sagen": [
+            "Ein – zwei – drei – vier. Und aus, langsam, mit deinem Satz.",
+            "Wie war es, den eigenen Satz zu denken statt irgendeinen?"
+          ],
+          "tipp": "Wer mag, legt dabei eine Hand auf das Brustbein. Diese kleine freundliche Geste mit sich selbst verstärkt bei vielen die Wirkung – sie bleibt aber freiwillig."
+        },
+        {
+          "titel": "Réckbléck und Skills-Pass",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Blitzlicht mit einem Wort zum eigenen Buch. Dann trägt jede Person einen Satz in den Skills-Pass ein, etwa den Skill, den sie vom Markt übernimmt, und bekommt den Stempel. Die Leitung sagt kurz, was von der Liste aus dem Umschlag in den letzten zwei Einheiten noch kommt. Die Bücher bleiben bis zur nächsten Einheit im Raum, damit das letzte Kapitel dazukommen kann.",
+          "sagen": [
+            "Ein Wort zu eurem Buch – was fällt euch ein?",
+            "Für den Pass: Welcher Skill vom Markt kommt mit?"
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Nächstes Mal bekommt euer Buch sein letztes Kapitel: Wir bauen Brücken in die Zeit nach dem Sommer – mit einem Plan, mit den Menschen aus eurem Netz und mit einem Ampelplan für den Neustart.",
+      "hintergrund": "Skills helfen nur, wenn sie im entscheidenden Moment greifbar sind. Das DBT-Skillstraining für Jugendliche bündelt erprobte Fertigkeiten deshalb in einer kleinen, persönlichen Sammlung, die man im Notfall schnell findet (Fleischhaker et al., 2011). Die Bilanz folgt drei Fragen, die Rückmeldung wirksam machen: Wo wollte ich hin, wo stehe ich, wie geht es weiter (Hattie & Timperley, 2007) – der Umschlag erinnert an die Erwartungen vom September, das zweite Radar zeigt den Stand im Juni. Wer schwarz auf weiß sieht, was er bewältigt hat, stärkt seine Selbstwirksamkeit (Bandura, 1977); dasselbe gilt für das Anleiten auf dem Skills-Markt. Sätze, die tragen, sind eine Form der Selbstinstruktion (Meichenbaum & Goodman, 1971) und wirken am besten, wenn sie wahr und freundlich sind (Neff, 2003).",
+      "quellen": [
+        "Fleischhaker, C., Sixt, B. & Schulz, E. (2011). DBT-A: Dialektisch-behaviorale Therapie für Jugendliche. Berlin: Springer.",
+        "Hattie, J. & Timperley, H. (2007). The power of feedback. Review of Educational Research, 77(1), 81–112.",
+        "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
+        "Meichenbaum, D. & Goodman, J. (1971). Training impulsive children to talk to themselves. Journal of Abnormal Psychology, 77(2), 115–126.",
+        "Neff, K. D. (2003). Self-compassion: An alternative conceptualization of a healthy attitude toward oneself. Self and Identity, 2(2), 85–101."
+      ],
+      "achtung": "Umschlag, Radar und das Blättern in drei Jahren Skills-Pass können schwere Zeiten wieder hochholen. Die Erwartungskarten bleiben anonym: Karten, die nach einer Person klingen oder auf eine Belastung hinweisen, werden zusammengefasst statt vorgelesen, und niemand forscht nach, wer sie geschrieben hat. Radare, Sätze und Bücher gehören den Jugendlichen: nicht einsammeln, nicht vergleichen, nicht bewerten; wer stockt oder sich zurückzieht, bekommt nach der Einheit ein Gespräch angeboten. Der Sicherheitsplan aus Einheit 20 bleibt privat. Auf dem Skills-Markt Düfte nur auf Riechstreifen und nach Absprache wegen Allergien und Asthma; Kälte-Skills kurz halten. Schreibt jemand Sätze wie „Ich halte das nicht mehr aus“ oder deutet an, sich etwas antun zu wollen: nach der Einheit ruhig ansprechen, nichts versprechen, was man nicht halten kann, noch am selben Tag nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) informieren; bei akuter Gefahr Notruf 112 und die Person nicht allein lassen."
+    },
+    {
+      "id": "j3-e34",
+      "nr": 34,
+      "jahr": 3,
+      "modul": "j3-m10",
+      "titel": "Brücken in die Zukunft",
+      "kurz": "Was kommt nach dem Sommer? Die Jugendlichen planen ihren nächsten Übergang, bringen ihr Netz auf den neuen Stand, erleben im Brückenspiel, was trägt, und bauen einen Ampelplan für den Neustart.",
+      "dauer": 100,
+      "ziele": [
+        "beschreiben ihren nächsten Übergang und unterscheiden, was sich ändert, was bleibt und was sie bewusst mitnehmen",
+        "bringen ihr Netz aus Einheit 22 auf den Stand nach dem Sommer und benennen mindestens eine erreichbare Person am neuen Ort",
+        "erleben beim Brückenspiel, was eine Gruppe über ein Hindernis bringt, und übertragen es auf ihren eigenen Übergang",
+        "legen fest, woran sie merken, dass der neue Alltag ins Rutschen kommt, was sie dann tun und wann ihr Sicherheitsplan gilt"
+      ],
+      "material": [
+        "Gefühlsrad (A3, laminiert), Wäscheklammern, Anspannungsskala 0–100",
+        "Schülerblätter „Meine Brücke“ und „Mein Ampelplan für den Neustart“ je Person",
+        "Skills-Bücher der Jugendlichen mit dem Blatt „Mein Netz“ aus Einheit 22, Stifte in einer zweiten Farbe; frische Kopien von „Mein Netz“ für alle, die es nicht mehr haben",
+        "Einige Kopien des Blatts „Mein Sicherheitsplan“ für Einzelgespräche – nicht zum Austeilen in der Gruppe",
+        "Liste der Anlaufstellen, die die Leitung für die nächsten Stationen der Jugendlichen herausgesucht hat: SePAS, Régent oder Régente, Betreuung im Betrieb, zuständige Berufsberatung",
+        "Für das Brückenspiel: zwei Seile (je 8–10 m) als Ufer, rutschfeste Teppichfliesen oder feste Pappen als Trittsteine (eine weniger als Personen, dazu zwei für das andere Ufer), je Person ein weicher Ball oder ein kleines Kissen als Gepäck, Moderationskarten, dicke Stifte",
+        "Plakat mit den Hilfenummern aus dem Gruppenraum",
+        "Liste der Spiele aus drei Jahren für die Wahl des Lieblingsspiels, Klebepunkte",
+        "Pfefferminzbonbons oder saure Bonbons für den Skill (Allergien und Essensregeln beachten)",
+        "Skills-Pässe, Stempel, Imbiss und Getränke"
+      ],
+      "vorbereitung": [
+        "Im Team klären, welche nächsten Stationen die Jugendlichen selbst schon kennen: Lycée, Klasse, Ausbildung, Praktikum, Ende der Begleitung. In der Gruppe wird nur besprochen, was die Person selbst erzählt.",
+        "Für jede Person die Anlaufstellen am neuen Ort heraussuchen, soweit bekannt; bei offenen Wegen die Stelle, die beim nächsten Schritt hilft (die Leitung trägt ein, welche Berufsberatung zuständig ist).",
+        "Nachsehen, wer in Einheit 20 gefehlt hat und noch keinen Sicherheitsplan hat, und dafür einen Einzeltermin vor den Ferien vorsehen.",
+        "Klären, ob ein Nachtreffen im Herbst möglich ist, und es erst ankündigen, wenn Termin und Ort feststehen.",
+        "Für das Brückenspiel eine freie Fläche von etwa 8 m vorbereiten: Raum mit Teppich, Flur, Turnhalle oder Wiese. Trittsteine auf glattem Boden auf Rutschfestigkeit prüfen; die zweite Leitung oder eine freiwillige Person übernimmt das andere Ufer.",
+        "Mit Jugendlichen, denen Abschiede erfahrungsgemäß schwerfallen, vorher kurz unter vier Augen besprechen, wie die letzten beiden Einheiten ablaufen und was ihnen dabei helfen würde."
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-meine-bruecke",
+        "skills-mein-netz",
+        "skills-ampelplan-schwere-tage",
+        "skills-sicherheitsplan",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: das Wetter für die Zeit nach dem Sommer"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Das Skills-Buch bekommt sein letztes Kapitel"
+        },
+        {
+          "min": "15–25",
+          "phase": "input",
+          "titel": "Vier Übergänge, vier Geschichten"
+        },
+        {
+          "min": "25–38",
+          "phase": "uebung",
+          "titel": "Meine Brücke: Ufer, Etappen, erste Hürde"
+        },
+        {
+          "min": "38–45",
+          "phase": "uebung",
+          "titel": "Mein Netz nach dem Sommer"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–75",
+          "phase": "aktiv",
+          "titel": "Über den Fluss – mit Gepäck und Hilfe vom anderen Ufer"
+        },
+        {
+          "min": "75–87",
+          "phase": "uebung",
+          "titel": "Ampelplan für den Neustart"
+        },
+        {
+          "min": "87–95",
+          "phase": "skill",
+          "titel": "Skill: Skills, die keiner sieht"
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Réckbléck, Skills-Pass und Wahl fürs letzte Mal"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: das Wetter für die Zeit nach dem Sommer",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Gefühlsrad und Anspannung wie gewohnt. Dazu ein Wetterbericht: Wenn ihr an die Zeit nach dem Sommer denkt – welches Wetter seht ihr? Sonnig, wechselhaft, Nebel, Gewitter; auch zwei Wetter gleichzeitig sind erlaubt. Die Leitung beginnt und bleibt ehrlich, etwa: Bei mir ist es wechselhaft – ich freue mich für euch, und ich merke, dass unsere gemeinsame Zeit bald zu Ende geht. Die Wetter nur aufnehmen, nicht kommentieren.",
+          "sagen": [
+            "Gefühl, Zahl – und das Wetter für die Monate nach dem Sommer?",
+            "Nebel ist ein ehrliches Wetter. Viele wissen noch nicht genau, wie es weitergeht."
+          ],
+          "wennEsKippt": "Sagt jemand, es gebe gar keinen Plan – keine Lehrstelle, keine Zusage, kein Lycée –, das nicht in der Runde vertiefen. Kurz würdigen: Dann ist heute dein Plan, herauszufinden, wie es weitergeht, und das ist ein echter Plan. Nach der Einheit ein Gespräch anbieten.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Das Skills-Buch bekommt sein letztes Kapitel",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "Die Skills-Bücher aus Einheit 33 liegen auf dem Tisch; kurz nachfragen, wer einen Satz aus der Hosentasche schon gebraucht hat. Dann das Thema nennen: Heute kommt das letzte Kapitel dazu – Brücken. Das Bild an die Tafel zeichnen: zwei Ufer (hier stehe ich, da gehe ich hin) und Pfeiler dazwischen (Menschen, Pläne, Skills). Eine Brücke hält nicht, weil sie schön ist, sondern weil ihre Pfeiler tragen.",
+          "sagen": [
+            "Hat jemand einen Satz aus der Hosentasche schon gebraucht?",
+            "Eine Brücke braucht zwei Ufer und Pfeiler. Heute schauen wir, welche Pfeiler eure Brücke hat – und welcher noch fehlt."
+          ]
+        },
+        {
+          "titel": "Vier Übergänge, vier Geschichten",
+          "dauer": 10,
+          "phase": "input",
+          "text": "Die Leitung liest die vier Geschichten nacheinander vor. Nach jeder Geschichte zwei schnelle Fragen an die Gruppe: Was ändert sich für die Person – und was bleibt? Die Antworten kommen in zwei Spalten an die Tafel (mögliche Antworten in der Tabelle). Zum Schluss die dritte Frage: Was wird in den ersten Wochen schwer, und wer könnte helfen? Festhalten: Auch Wechsel, auf die man sich freut, sind anstrengend – und bei jedem Wechsel bleibt mehr gleich, als man zuerst denkt.",
+          "sagen": [
+            "Was ändert sich für Tiago – und was nimmt er mit, egal wo er arbeitet?",
+            "Wer könnte Aylin in den ersten Wochen helfen, obwohl sie dort noch niemanden kennt?",
+            "Nora sagt, für sie ändert sich nichts. Stimmt das?"
+          ],
+          "punkte": [
+            "Tiago (16) beginnt im September eine Lehre als Elektriker. An mehreren Tagen der Woche arbeitet er im Betrieb, an den anderen geht er zur Schule. Um halb sieben muss er auf der Baustelle sein.",
+            "Aylin (15) wechselt nach dem Sommer in ein anderes Lycée. Sie kennt dort niemanden, und der Schulweg dauert mit dem Bus fast eine Stunde.",
+            "Mathis (16) macht im Oktober drei Wochen Praktikum in einer Autowerkstatt. Sein Cousin sagt, der Chef sei „ziemlich direkt“.",
+            "Nora (15) bleibt in ihrer Klasse. Aber der Skills-Kurs endet, und ihre Educatrice wechselt in ein anderes Team. „Für mich ändert sich eigentlich nichts“, sagt sie."
+          ],
+          "tabelle": {
+            "spalten": [
+              "Wer",
+              "Das ändert sich",
+              "Das bleibt"
+            ],
+            "zeilen": [
+              [
+                "Tiago",
+                "früh aufstehen, Chef statt Lehrerin, Arbeitskleidung, neue Kollegen",
+                "seine Skills, sein Humor, Fußball am Samstag, seine Schwester"
+              ],
+              [
+                "Aylin",
+                "neue Klasse, langer Busweg, neue Regeln, niemand kennt sie",
+                "ihre Sprachen, ihre Freundin aus der alten Klasse, ihr Zeichnen"
+              ],
+              [
+                "Mathis",
+                "ein Chef mit anderem Ton, lange Tage, Werkstattlärm",
+                "sein Interesse an Autos, sein Stopp-Satz, seine Familie"
+              ],
+              [
+                "Nora",
+                "keine Gruppe mehr, eine neue Ansprechperson",
+                "ihre Klasse, ihr Skills-Buch, alles, was sie kann"
+              ]
+            ]
+          },
+          "tipp": "Noras Geschichte ist die wichtigste: Viele Jugendliche übersehen, dass auch das Ende einer Begleitung ein Übergang ist. Wer es benennt, kann dafür vorsorgen.",
+          "wennEsKippt": "Bewertet die Gruppe Wege („Wer eine Lehre macht, hat es nicht geschafft“), sofort und ruhig stoppen: Hier wird kein Weg bewertet. Jeder Weg hat einen nächsten Schritt, und um den geht es heute. Solche Bemerkungen später unter vier Augen ansprechen, weil sie oft jemanden in der Gruppe direkt treffen."
+        },
+        {
+          "titel": "Meine Brücke: Ufer, Etappen, erste Hürde",
+          "dauer": 13,
+          "phase": "uebung",
+          "text": "Jede Person füllt das Blatt aus: zuerst die beiden Ufer – wo stehe ich jetzt, wohin gehe ich –, dann, was sich ändert, was bleibt und was sie bewusst mitnimmt. Danach der Plan für die nächsten Monate in vier Etappen und ein Wenn-dann-Satz für die erste Hürde; Aufgabe 3, die Pfeiler, kommt im nächsten Schritt mit dem Netz dran. Die Leitung geht herum und ergänzt aus ihrer Liste Wege und Anlaufstellen am neuen Ort. Wer noch nicht weiß, wohin es geht, schreibt als Ziel: herausfinden, wie es weitergeht – und plant genau dafür die Schritte.",
+          "sagen": [
+            "Schreibt nicht, was gut klingt, sondern was ihr wirklich tun werdet.",
+            "Was nehmt ihr bewusst mit – einen Skill, einen Menschen, etwas, das ihr hier gelernt habt?",
+            "Die erste Hürde kommt bestimmt. Was tut ihr dann?"
+          ],
+          "tipp": "Die Etappe „nach sechs Wochen“ ernst nehmen: Nach dem ersten Schwung zeigt sich oft, ob jemand angekommen ist. Wer sich dafür gleich einen Tag im Handykalender einträgt, schaut hin, bevor es kippt.",
+          "wennEsKippt": "Will jemand nicht über die Zeit nach dem Sommer nachdenken, nicht drängen: Die Person füllt nur die Spalte „Das bleibt“ und einen ersten Schritt aus, den Rest macht sie später mit der Leitung. Das Thema nach der Einheit im Einzelgespräch aufgreifen.",
+          "blatt": "skills-meine-bruecke"
+        },
+        {
+          "titel": "Mein Netz nach dem Sommer",
+          "dauer": 7,
+          "phase": "uebung",
+          "text": "Jede Person holt ihr Netz aus Einheit 22 aus dem Skills-Buch und bringt es mit einer zweiten Farbe auf den Stand nach dem Sommer, statt ein neues anzulegen: Wer bleibt? Wer fällt weg, weil eine Klasse, eine Betreuung oder dieser Kurs endet? Wer kommt am neuen Ort dazu, etwa der SePAS im neuen Lycée oder die Ausbilderin im Betrieb? Eine Person bekommt einen Stern: die Brücken-Person, die einen schon kennt und auch nach dem Sommer erreichbar bleibt; sie kommt auch auf das Blatt „Meine Brücke“. Zum Schluss wandern die zwei wichtigsten Menschen ins Feld „Menschen, die helfen“ der Übersicht vorn im Skills-Buch.",
+          "sagen": [
+            "Euer Netz muss nicht neu geknüpft werden. Aber nach dem Sommer hängen ein paar Knoten woanders.",
+            "Wer ist am neuen Ort für euch zuständig? Wenn ihr es nicht wisst: Wie findet ihr es in der ersten Woche heraus?",
+            "Eure Brücken-Person kennt euch schon und bleibt auch nach dem Sommer erreichbar."
+          ],
+          "tipp": "Einen Blick auf die Ferien werfen: Wer im mittleren Ring ist im August wirklich erreichbar? Wer das Netz aus Einheit 22 nicht mehr hat, füllt heute nur die Ringe auf einem frischen Blatt aus.",
+          "wennEsKippt": "Findet jemand keinen einzigen Menschen für den mittleren Ring, gemeinsam suchen – Régent oder Régente, SePAS, Ausbilderin, Educateur, Trainer; notfalls steht vorerst das Kanner- a Jugendtelefon im äußeren Ring. Das Thema nach der Einheit im Einzelgespräch aufgreifen und die zuständige Leitung (Responsable) einbeziehen.",
+          "blatt": "skills-mein-netz"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Pause mit Imbiss, wenn möglich draußen. Während die Gruppe isst, legt die Leitung mit ein, zwei Freiwilligen die Seile für das Brückenspiel aus; das Thema ruht."
+        },
+        {
+          "titel": "Über den Fluss – mit Gepäck und Hilfe vom anderen Ufer",
+          "dauer": 15,
+          "phase": "aktiv",
+          "text": "Zwei Seile im Abstand von sechs bis acht Metern sind die Ufer, dazwischen fließt der Fluss. Die ganze Gruppe muss hinüber, nur über Trittsteine – eine weniger als Personen –, und jede Person trägt ein Gepäckstück, das den Boden nicht berühren darf. Am anderen Ufer steht die zweite Leitung oder eine freiwillige Person mit zwei zusätzlichen Steinen: Sie hilft nur, wenn jemand sie mit Namen ruft und genau sagt, was gebraucht wird. Zuerst hat die Gruppe drei Minuten für einen Plan, dann geht es los; die Leitung spielt die Strömung und nimmt jeden Stein mit, den gerade niemand berührt. Danach im Kreis auswerten und übertragen: Jede Person schreibt auf eine Moderationskarte einen Trittstein für ihren eigenen Übergang – einen, den sie schon hat, oder einen, der noch fehlt.",
+          "sagen": [
+            "Was hat euch rübergebracht – und in welchem Moment war es knapp?",
+            "Wann habt ihr das andere Ufer um Hilfe gerufen? Viele Gruppen merken erst spät, dass dort die ganze Zeit jemand stand.",
+            "Welcher Trittstein trägt dich nach dem Sommer? Und welcher fehlt dir noch?"
+          ],
+          "punkte": [
+            "Ein Stein trägt nur, solange jemand ihn berührt – mit Fuß oder Hand. Liegt er frei, nimmt ihn die Strömung mit.",
+            "Wer den Fluss berührt oder sein Gepäck fallen lässt, geht mit dem Gepäck zurück ans Startufer.",
+            "Das andere Ufer hilft nur auf Zuruf: mit Namen und dem, was genau gebraucht wird.",
+            "Gegangen wird, nicht gesprungen. Niemand wird getragen oder huckepack genommen.",
+            "An Händen oder Schultern halten nur, wenn beide einverstanden sind. Stopp gilt sofort.",
+            "Geschafft ist es, wenn alle mit Gepäck drüben sind."
+          ],
+          "tipp": "Kennt die Gruppe den Fluss aus dem Joker „Kooperationsspiele bei Unruhe“ in Kursjahr 2, machen Gepäck und das andere Ufer daraus ein neues Spiel – mit genau den zwei Fragen jedes Übergangs: Was nehme ich mit, und wen frage ich am neuen Ort? Bei nur zwei Jugendlichen den Fluss auf vier Meter verkürzen und mit zwei Steinen spielen; bei Regen im Flur oder in der Turnhalle, bei wenig Energie ohne Gepäck und mit einem Stein mehr.",
+          "wennEsKippt": "Stürmen einige los, während andere noch planen, anhalten und einen Brückenrat einberufen: Niemand bewegt sich, bis jemand den Plan laut gesagt hat. Möchte jemand keinen Körperkontakt, übernimmt er mit der Leitung die Strömung oder spielt das andere Ufer. Kippt die Stimmung nach dem dritten Fehlversuch, einen zusätzlichen Stein ins Spiel geben und benennen: Frust gehört zu jedem Übergang."
+        },
+        {
+          "titel": "Ampelplan für den Neustart",
+          "dauer": 12,
+          "phase": "uebung",
+          "text": "Die Ampel aus Jahr 1 kurz in Erinnerung rufen: Grün, mir geht es gut; Gelb, es wird mehr; Rot, Notfall. Dann erklären, was heute neu ist: Nach einem Wechsel kippt es selten an einem Tag, meist rutscht es über Wochen – weniger Schlaf, Pausen allein, erste Fehltage. Jede Person kreuzt ihre Frühzeichen an, füllt die Ampel aus – was sie bei Grün beibehält, was sie bei Gelb tut und wem sie dann Bescheid sagt – und macht aus Gelb einen Wenn-dann-Satz. Bei Rot steht kein neuer Plan, sondern der Sicherheitsplan aus Einheit 20: Er gilt weiter und bleibt privat; wer ihn ergänzen möchte – neue Nummern, neue Menschen, die Ferien –, tut das allein oder unter vier Augen mit der Leitung. Zum Schluss trägt jede Person den ersten Termin für den Ampel-Check auf Seite 2 ins Handy ein.",
+          "sagen": [
+            "Euer erster Ampelplan war für Momente gebaut, in denen die Anspannung steigt. Der neue ist für die Wochen nach einem Wechsel.",
+            "Woran würden die Leute am neuen Ort merken, dass ihr bei Gelb seid – und woran merkt ihr es selbst zuerst?",
+            "Bei Rot gilt euer Sicherheitsplan. Niemand muss ihn zeigen, und wer ihn ergänzen will, macht das mit mir, nicht vor der Gruppe."
+          ],
+          "tipp": "Zweimal hintereinander Gelb ist die wichtigste Regel des Plans: Dann wird gehandelt, nicht abgewartet. Den Plan fotografieren und eine Kopie einer Vertrauensperson geben – ein Plan, den nur die Schublade kennt, hilft nicht.",
+          "wennEsKippt": "Bleibt das Feld bei Gelb leer oder steht dort etwas, das schadet – sich verletzen, trinken, einfach weg sein –, nicht vor der Gruppe darauf eingehen. Ruhig dazusetzen, fragen, was stattdessen helfen könnte, und nach der Einheit das Gespräch führen (siehe Achtung). Wer in Einheit 20 gefehlt hat und keinen Sicherheitsplan hat, macht ihn in einem Einzeltermin mit der Leitung vor den Ferien – nicht nebenbei in der Gruppe.",
+          "blatt": "skills-ampelplan-schwere-tage"
+        },
+        {
+          "titel": "Skill: Skills, die keiner sieht",
+          "dauer": 8,
+          "phase": "skill",
+          "text": "Die Leitung beschreibt die Lage: Ihr sitzt in der neuen Klasse, in der Werkstatt oder im Bus, die Anspannung steigt – aber niemand soll es merken. Dann an „Standfest“ aus Einheit 20 anknüpfen und die Skills so klein machen, dass sie unsichtbar werden: vier Varianten, je eine Minute, alle gleichzeitig, mit offenen Augen. Danach ein kurzes Suchspiel: Eine freiwillige Person wählt heimlich eine Variante und macht sie eine Minute lang, die anderen raten, welche. Meist rät niemand richtig – genau darum geht es. Wer mag, trägt eine Variante in seinem Ampelplan bei Gelb nach.",
+          "sagen": [
+            "Wer hat gesehen, was sie gemacht hat? Niemand? Dann funktioniert es.",
+            "Welche davon passt in eure neue Klasse oder in euren Betrieb?"
+          ],
+          "punkte": [
+            "Die Zehen in den Schuhen fest einkrallen, fünf Sekunden halten, loslassen.",
+            "Durch die Nase ein und länger durch die Nase aus – ohne dass sich die Schultern heben.",
+            "Unter dem Tisch den Daumen nacheinander gegen jede Fingerkuppe drücken und langsam zählen.",
+            "Ein Pfefferminz- oder saures Bonbon im Mund: eine Minute nur auf den Geschmack achten."
+          ],
+          "tipp": "Kaltes Wasser über die Handgelenke gehört auch dazu: Das geht auf jeder Toilette und fällt niemandem auf."
+        },
+        {
+          "titel": "Réckbléck, Skills-Pass und Wahl fürs letzte Mal",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Blitzlicht: Jede Person nennt einen Trittstein, den sie schon hat. Dann Eintrag in den Skills-Pass und Stempel. Zum Schluss wählt die Gruppe mit Klebepunkten ihr Lieblingsspiel aus drei Jahren für die letzte Einheit und ihren Wunsch für das Abschlussessen; was aus dem Umschlag noch offen war, kommt dazu. Die Leitung kündigt an, wie die letzte Einheit abläuft – und das Nachtreffen, falls es feststeht.",
+          "sagen": [
+            "Ein Trittstein, den ihr schon habt – ein Satz reicht.",
+            "Nächstes Mal ist unser letztes Mal. Welches Spiel aus drei Jahren wollt ihr noch einmal spielen?"
+          ],
+          "punkte": [
+            "Blindfußball (Jahr 1)",
+            "Natur-Challenges (Jahr 1)",
+            "Memory-Staffel (Jahr 1)",
+            "Gruppenjonglieren (Jahr 2)",
+            "Stein, Papier, Schere mit Fanclub",
+            "Kettenreaktion",
+            "Über den Fluss (heute)",
+            "ein Spiel, das die Gruppe selbst vorschlägt"
+          ],
+          "tipp": "Mit Jugendlichen, denen Abschiede schwerfallen, nach der Einheit kurz sprechen: Was würde dir beim letzten Mal helfen – eine feste Aufgabe, ein Platz neben der Leitung, ein kurzer eigener Abschied vorher?",
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Nächstes Mal ist unsere letzte Einheit nach drei Jahren: Wir gehen unseren Weg noch einmal ab, spielen euer Lieblingsspiel und nehmen uns Zeit für einen guten Abschied.",
+      "hintergrund": "Übergänge – ins Lycée, in eine Lehre, in ein Praktikum – gehören zu den verletzlichen Zeiten im Jugendalter: Vertraute Menschen fallen weg, Anforderungen steigen (Eccles & Roeser, 2011). Super (1980) beschreibt Berufsentwicklung als Folge solcher Übergänge, die jeweils neue Aufgaben stellen; nach Schlossberg (1981) entscheiden Lage, Person, Unterstützung und Strategien, wie ein Übergang gelingt. Was trägt, sind vor allem verlässliche Beziehungen und das Wissen, schon Schwieriges bewältigt zu haben (Masten, 2014). Jugendliche holen sich Hilfe eher bei Menschen, die sie kennen (Rickwood et al., 2005) – deshalb wird das Netz aus Einheit 22 fortgeschrieben, und eine Brücken-Person bleibt. Wenn-dann-Sätze machen es wahrscheinlicher, dass ein Vorsatz umgesetzt wird (Gollwitzer, 1999). Der Ampelplan fängt auf, was sich über Wochen anbahnt; für akute Krisen gilt der Sicherheitsplan (Stanley & Brown, 2012). Das Brückenspiel stammt aus der Erlebnispädagogik (Senninger, 2000).",
+      "quellen": [
+        "Super, D. E. (1980). A life-span, life-space approach to career development. Journal of Vocational Behavior, 16(3), 282–298.",
+        "Eccles, J. S. & Roeser, R. W. (2011). Schools as developmental contexts during adolescence. Journal of Research on Adolescence, 21(1), 225–241.",
+        "Schlossberg, N. K. (1981). A model for analyzing human adaptation to transition. The Counseling Psychologist, 9(2), 2–18.",
+        "Masten, A. S. (2014). Ordinary Magic: Resilience in Development. New York: Guilford.",
+        "Rickwood, D., Deane, F. P., Wilson, C. J. & Ciarrochi, J. (2005). Young people’s help-seeking for mental health problems. Australian e-Journal for the Advancement of Mental Health, 4(3), 218–251.",
+        "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503.",
+        "Stanley, B. & Brown, G. K. (2012). Safety planning intervention: A brief intervention to mitigate suicide risk. Cognitive and Behavioral Practice, 19(2), 256–264.",
+        "Senninger, T. (2000). Abenteuer leiten – in Abenteuern lernen. Münster: Ökotopia."
+      ],
+      "achtung": "Der Blick nach vorn kann Ängste wecken: keine Lehrstelle, eine Absage, ein Umzug, das Ende der Begleitung. In der Gruppe nur besprechen, was die Person selbst erzählt, und keine Pläne anderer verraten. Brücke, Netz und Ampelplan werden nicht eingesammelt und nicht vorgelesen. Der Sicherheitsplan aus Einheit 20 bleibt privat: Er wird in der Gruppe weder gezeigt noch neu ausgefüllt, sondern nur freiwillig allein oder unter vier Augen ergänzt. Beim Brückenspiel gilt das Stopp-Recht, Berührung nur mit Einverständnis, niemand wird getragen. Findet jemand keine erreichbare Person, stehen bei Gelb Selbstverletzung, Alkohol oder Drogen oder deutet jemand Suizidgedanken an: nach der Einheit ruhig ansprechen, nichts versprechen, was man nicht halten kann, noch am selben Tag nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) informieren; bei akuter Gefahr Notruf 112 und die Person nicht allein lassen."
+    },
+    {
+      "id": "j3-e35",
+      "nr": 35,
+      "jahr": 3,
+      "modul": "j3-m10",
+      "titel": "Abschied nach drei Jahren",
+      "kurz": "Die letzte Einheit: Die Gruppe geht ihren Weg durch drei Jahre noch einmal ab, spielt ihr Lieblingsspiel, gibt jeder Person Proviant für ihren Weg mit und verabschiedet sich mit einem Ritual.",
+      "dauer": 100,
+      "ziele": [
+        "blicken auf drei Jahre zurück und benennen, was sie gelernt haben und was sich verändert hat",
+        "geben ihre Erfahrung als Rat an eine neue Gruppe weiter",
+        "schreiben jeder Person der Gruppe eine konkrete, wertschätzende Karte mit einem Wunsch für ihren Weg",
+        "verabschieden sich mit einem Ritual voneinander und von der Leitung"
+      ],
+      "material": [
+        "Gefühlsrad (A3, laminiert), Wäscheklammern, Anspannungsskala 0–100",
+        "Seil oder Kreppband (etwa 8 m) für den Weg am Boden, vier Schilder: „Jahr 1 · Ich, wir und die Welt“, „Jahr 2 · Stark im Alltag“, „Jahr 3 · Mein Weg“, „Was kommt“",
+        "Erinnerungsstücke aus drei Jahren, soweit aufbewahrt: Gruppenverträge, Plakat „Was sind Skills?“, Glas der Bedürfnisse, Skills-Kompasse, Fotos von Plakaten und Kunstwerken ohne Gesichter, Szenenpläne, Jurybögen und der Umschlag mit den Erwartungskarten aus Einheit 1",
+        "Schülerblatt „Mein Weg durch drei Jahre“ je Person, Scheren, eine Box mit Schlitz für die Karten „Rat an die Neuen“",
+        "Schülerblatt „Proviant für deinen Weg“ (zwei Seiten, zehn Karten), vorher ausgeschnitten: je Person so viele Karten, wie die Gruppe Mitglieder hat",
+        "Je Person ein Umschlag oder eine kleine Papiertüte mit Namen (Proviantbeutel), dazu einer für die Leitung",
+        "Je Person ein glatter, gewaschener Kieselstein, dazu ein Korb oder Tuch; Klangschale",
+        "Die vorbereiteten Proviant-Karten der Leitung und die kopierten Rezepthefte aus Einheit 33",
+        "Material für das Lieblingsspiel aus der Wahl in Einheit 34",
+        "Abschlussessen nach Wunsch der Gruppe (Allergien und Essensregeln beachten), Lautsprecher für leise Musik",
+        "Skills-Bücher, Skills-Pässe, Stempel; Taschentücher unauffällig in Reichweite"
+      ],
+      "vorbereitung": [
+        "Den Weg am Boden auslegen und die Erinnerungsstücke den drei Jahren zuordnen. Für Jugendliche, die später dazugekommen sind, ein Kärtchen „Hier bin ich eingestiegen“ bereitlegen.",
+        "Für jede Person eine eigene Proviant-Karte schreiben: eine konkrete Beobachtung aus der gemeinsamen Zeit und ein Wunsch für ihren Weg.",
+        "Proviant-Karten ausschneiden, Beutel beschriften, Steine waschen.",
+        "Material für das gewählte Lieblingsspiel bereitlegen und bei Regen eine Ausweichvariante überlegen.",
+        "Im Team klären, was die Jugendlichen heute hören sollen: Wer ist nach dem Sommer Ansprechperson, gibt es ein Nachtreffen, was geschieht mit Mappen und Skills-Büchern?",
+        "Für Jugendliche, die am letzten Tag fehlen – auch das kommt vor, wenn Abschiede schwerfallen –, einen kurzen persönlichen Termin danach einplanen, bei dem Beutel, Buch und Stein übergeben werden; nichts davon per Post.",
+        "Nach der Einheit Zeit für Nachgespräche freihalten – und für eine eigene Nachbesprechung im Team."
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-drei-jahre",
+        "skills-proviant",
+        "skills-buch",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: das Gefühlsrad zum letzten Mal"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Von der Brücke zum Abschied"
+        },
+        {
+          "min": "15–40",
+          "phase": "uebung",
+          "titel": "Unser Weg durch drei Jahre"
+        },
+        {
+          "min": "40–55",
+          "phase": "aktiv",
+          "titel": "Unser Lieblingsspiel – ein letztes Mal"
+        },
+        {
+          "min": "55–70",
+          "phase": "pause",
+          "titel": "Abschlussessen"
+        },
+        {
+          "min": "70–85",
+          "phase": "uebung",
+          "titel": "Proviant für deinen Weg"
+        },
+        {
+          "min": "85–90",
+          "phase": "skill",
+          "titel": "Skill: Der Wegstein"
+        },
+        {
+          "min": "90–100",
+          "phase": "abschluss",
+          "titel": "Abschiedsritual und letzter Stempel"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: das Gefühlsrad zum letzten Mal",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Stühle im Kreis, das Gefühlsrad in der Mitte. Reihum steckt jede Person ihre Klammer an und nennt ihre Anspannung; heute sind zwei Wörter erlaubt, auch solche, die nicht im Rad stehen, etwa erleichtert oder wehmütig. Die Leitung beginnt und zeigt, dass gemischte Gefühle dazugehören, zum Beispiel: dankbar und ein bisschen traurig. Es gibt keine erwartete Antwort – wer „ganz normal“ sagt, liegt genauso richtig.",
+          "sagen": [
+            "Zum letzten Mal: Wo steckt eure Klammer heute? Zwei Wörter sind erlaubt.",
+            "Abschiede fühlen sich bei jedem anders an. Manche merken gar nichts – auch das ist in Ordnung."
+          ],
+          "tipp": "Die Klammern heute nicht einsammeln: Jede Person darf ihre Klammer mit Namen als Erinnerung mitnehmen.",
+          "wennEsKippt": "Kommt „Endlich vorbei“ oder demonstrative Gleichgültigkeit, das mit Humor stehen lassen. Albernheit und Coolness schützen oft vor dem, was ein Abschied auslöst; sie brauchen keine Deutung.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Von der Brücke zum Abschied",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "Kurz an Einheit 34 anknüpfen: Wer hat seinen Ampel-Check schon im Kalender? Dann den Ablauf des letzten Tages nennen, mit Uhrzeit für das Ende, und den Rahmen: Heute gibt es keine neuen Skills, heute geht es um drei Jahre und um jede einzelne Person. Gefühle dürfen sein und müssen nicht; wer kurz rausgehen möchte, sagt Bescheid und kommt wieder.",
+          "sagen": [
+            "Heute lernt ihr nichts Neues. Heute geht es um euch.",
+            "Was ihr heute fühlt, ist richtig – auch wenn es gar nichts Besonderes ist."
+          ],
+          "tipp": "Ablauf und Ende genau ankündigen. Ein Abschied, dessen Ablauf man kennt, ist leichter auszuhalten als einer, der einen überrascht."
+        },
+        {
+          "titel": "Unser Weg durch drei Jahre",
+          "dauer": 25,
+          "phase": "uebung",
+          "text": "Am Boden liegt der Weg aus Seil oder Kreppband, entlang der Jahre die Erinnerungsstücke; an der Station „Jahr 3“ liegt auch der Umschlag vom September. Zuerst gehen alle den Weg in ihrem Tempo ab, schweigend, bei leiser Musik, etwa acht Minuten lang: schauen, lesen, anfassen erlaubt. Dann füllt jede Person das Blatt aus – zu jedem Jahr ein Moment und ein Skill, dann „früher – heute“. An der letzten Station „Was kommt“ schreibt jede Person ihren Rat an eine neue Gruppe und, wenn sie mag, einen Rat an die Leitung auf die Karten des Blatts, schneidet sie ab und wirft sie in die Box. Zum Schluss erzählt, wer mag, im Kreis von einem Moment auf dem Weg; die Leitung erzählt auch einen.",
+          "sagen": [
+            "Geht den Weg in eurem Tempo. Ihr müsst nichts sagen, nur schauen.",
+            "Welcher Moment ist euch geblieben – ein lustiger, ein schwerer, ein überraschender?",
+            "Was würdet ihr einer Zwölfjährigen raten, die im September zum ersten Mal in diesen Raum kommt?"
+          ],
+          "tipp": "Die Karten „Rat an die Neuen“ in der ersten Einheit der nächsten Gruppe vorlesen. Wer das hört, weiß: Die Erfahrenen haben an uns gedacht.",
+          "wennEsKippt": "Wird über alte Plakate gelacht, mitlachen: Über das eigene jüngere Ich zu lachen, ist erlaubt. Wird dagegen geraten, wer welchen anonymen Zettel geschrieben hat, sofort stoppen und an die Regel erinnern. Wird jemand an einer Station still oder traurig, nicht fragen, sondern Zeit lassen und später ein Gespräch anbieten.",
+          "blatt": "skills-drei-jahre"
+        },
+        {
+          "titel": "Unser Lieblingsspiel – ein letztes Mal",
+          "dauer": 15,
+          "phase": "aktiv",
+          "text": "Die Gruppe spielt das Spiel, das sie in Einheit 34 gewählt hat, mit den Regeln aus der ursprünglichen Einheit. Die Leitung erklärt nur kurz; eine Person aus der Gruppe übernimmt die Spielleitung, wenn sie möchte. Nach der Hälfte der Zeit darf die Gruppe eine Regel ändern oder eine Abschiedsrunde erfinden, etwa ein Finale gegen die Leitung. Stopp-Recht und die Regeln für Berührung gelten wie immer.",
+          "sagen": [
+            "Ihr kennt das Spiel. Wer von euch leitet es heute?",
+            "Wollt ihr noch eine Regel ändern? Heute bestimmt ihr."
+          ],
+          "tipp": "Bei „Stein, Papier, Schere mit Fanclub“ endet das Spiel am schönsten mit einem Finale: die ganze Gruppe mit einer gemeinsamen Geste gegen die Leitung. Bei Regen oder nur zwei Jugendlichen ein Spiel wählen, das drinnen und zu dritt funktioniert, etwa die Kettenreaktion.",
+          "wennEsKippt": "Einigt sich die Gruppe nicht oder hat niemand Lust, „Stein, Papier, Schere mit Fanclub“ spielen – das braucht weder Material noch Erklärung – und etwas früher zum Essen gehen."
+        },
+        {
+          "titel": "Abschlussessen",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Gemeinsam essen, was sich die Gruppe gewünscht hat, bei gutem Wetter draußen. Die Leitung isst mit und erzählt, wenn es passt, eine lustige Erinnerung aus den drei Jahren. Fotos nur vom Tisch oder mit Einverständnis aller, die darauf zu sehen sind."
+        },
+        {
+          "titel": "Proviant für deinen Weg",
+          "dauer": 15,
+          "phase": "uebung",
+          "text": "Die Proviantbeutel mit den Namen stehen auf einem Tisch. Jede Person bekommt ihre Karten und schreibt für jedes andere Gruppenmitglied eine: Was habe ich an dir erlebt, und was wünsche ich dir für deinen Weg? Die Karte kommt in den Beutel der Person; die Leitung legt ihre vorbereitete Karte dazu. Wer mag, schreibt auch der Leitung eine Karte – ihr Beutel steht dabei. Vorher die Regeln vorlesen und ankündigen, dass die Leitung einmal quer liest, bevor die Beutel verschlossen werden, damit keine Karte weh tut. Übergeben werden die Beutel erst im Abschiedsritual; geöffnet werden sie nach der Einheit – sofort oder an einem Tag, an dem man Proviant braucht, etwa am ersten Tag am neuen Ort.",
+          "sagen": [
+            "Schreibt so, dass die Person die Karte in einem Jahr noch einmal lesen will.",
+            "Denkt an einen Moment aus drei Jahren: Wann hat diese Person etwas gut gemacht?"
+          ],
+          "punkte": [
+            "Konkret: nicht nur „du bist nett“, sondern wann und wie du die Person erlebt hast.",
+            "Ein Wunsch, der zu ihrem Weg passt – für die Lehre, das neue Lycée, den Sommer.",
+            "Nichts über Aussehen, keine Witze auf Kosten der Person.",
+            "Mit Namen oder ohne – wie du magst."
+          ],
+          "tipp": "Anders als bei der Stärken-Post in Jahr 2 geht es nicht um eine Stärke, sondern um ein gemeinsames Erlebnis und einen Wunsch für den Weg. Bei Jugendlichen, die erst später dazugekommen sind oder oft gefehlt haben, besonders sorgfältig sein: Die Karte der Leitung würdigt, was in der gemeinsamen Zeit sichtbar war. Bei nur zwei Jugendlichen schreibt jede Person der anderen drei Karten, eine für jedes Jahr.",
+          "wennEsKippt": "Will jemand für eine bestimmte Person nichts schreiben, das nicht in der Gruppe klären; leise vorschlagen: Ein Wunsch reicht. Geht auch das nicht, schreibt die Leitung eine zusätzliche Karte, damit kein Beutel dünner ist als die anderen. Unpassende Karten nimmt sie heraus und bespricht sie später unter vier Augen.",
+          "blatt": "skills-proviant"
+        },
+        {
+          "titel": "Skill: Der Wegstein",
+          "dauer": 5,
+          "phase": "skill",
+          "text": "Die Leitung geht mit dem Korb herum, jede Person wählt einen Stein. Dann still eine Minute nur mit dem Stein: anschauen (Farben, Linien), wiegen, die Temperatur spüren, ihn in der Hand warm werden lassen. Erklären: Ein Stein in der Hosentasche ist ein Sinnes-Skill, den keiner sieht. Wer ihn anfasst, ist für einen Moment hier – im Körper und bei dem, was er in drei Jahren gelernt hat. Die Steine bleiben für das Ritual in der Hand.",
+          "sagen": [
+            "Schaut euch euren Stein an, als hättet ihr noch nie einen gesehen. Wie schwer ist er? Wo ist er kalt, wo warm?",
+            "Wenn es nach dem Sommer eng wird, habt ihr einen Skill in der Tasche, der in jede Hand passt."
+          ],
+          "tipp": "Glatte, flache Kiesel aus dem Bastelbedarf liegen gut in der Hand. Wer Steine nicht mag, nimmt eine Murmel oder ein kleines Stück Holz."
+        },
+        {
+          "titel": "Abschiedsritual und letzter Stempel",
+          "dauer": 10,
+          "phase": "abschluss",
+          "text": "Alle stehen im Kreis, jede Person hält ihren eigenen Stein. Auf einen Klang der Klangschale gibt jede Person ihren Stein nach links weiter; wer einen fremden Stein hält, schickt dessen Besitzerin oder Besitzer still einen Wunsch mit, bis zum nächsten Klang. So wandern alle Steine einmal durch den Kreis und kommen mit den Wünschen der Gruppe zurück. Dann sagt reihum jede Person einen Satz – Das nehme ich mit … – oder „weiter“ und bekommt von der Leitung ihren Proviantbeutel, ihr Skills-Buch und das Rezeptheft der Gruppe. Letzter Eintrag in den Skills-Pass, letzter Stempel. Zum Schluss dankt die Leitung der Gruppe mit eigenen Worten und sagt, an wen sich die Jugendlichen nach dem Sommer wenden können.",
+          "sagen": [
+            "Haltet den Stein kurz und schickt der Person still einen Wunsch mit. Niemand muss etwas sagen.",
+            "Das nehme ich mit … – ein Satz reicht.",
+            "Danke für drei Jahre. Ich habe gesehen, wie viel ihr euch getraut habt – und ich nehme auch etwas von euch mit."
+          ],
+          "wennEsKippt": "Fällt der Abschied schwer – Tränen, Rückzug, Albernheit –, das nicht wegreden und nicht vertiefen: kurz benennen, dass Abschiede gemischte Gefühle machen, und nach der Einheit Zeit für diese Person haben. Geht jemand vorher und kommt nicht zurück, geht die Leitung oder die zweite Leitung kurz nach und übergibt Beutel und Stein persönlich.",
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Das war unsere letzte Einheit. Eure Skills, eure Bücher und euer Proviant gehen mit euch – und wenn ihr einmal nicht weiterwisst, wisst ihr jetzt, wo ihr anklopfen könnt.",
+      "hintergrund": "Gruppen brauchen für ihr Ende eine eigene Phase: Tuckman und Jensen (1977) ergänzten das Modell der Gruppenentwicklung um die Auflösung („Adjourning“), in der Beziehungen bewusst abgeschlossen werden. Auch Yalom und Leszcz (2005) sehen im Abschluss einen eigenen Arbeitsschritt, in dem Erreichtes gewürdigt und die Trennung ausgesprochen wird. Für Jugendliche mit Beziehungsabbrüchen ist das besonders wichtig: Sie erleben, dass eine Beziehung auch gut enden kann. Der Rückblick macht Bewältigungserfahrungen sichtbar; zusammen mit verlässlichen Beziehungen gehören sie zu den wichtigsten Schutzfaktoren (Masten, 2014). Rückmeldungen wirken, wenn sie ein beobachtetes Verhalten benennen statt pauschal zu loben (Hattie & Timperley, 2007), und wer Dank ausdrückt, profitiert auch selbst davon (Seligman et al., 2005).",
+      "quellen": [
+        "Tuckman, B. W. & Jensen, M. A. C. (1977). Stages of small-group development revisited. Group & Organization Studies, 2(4), 419–427.",
+        "Yalom, I. D. & Leszcz, M. (2005). The Theory and Practice of Group Psychotherapy (5th ed.). New York: Basic Books.",
+        "Masten, A. S. (2014). Ordinary Magic: Resilience in Development. New York: Guilford.",
+        "Hattie, J. & Timperley, H. (2007). The power of feedback. Review of Educational Research, 77(1), 81–112.",
+        "Seligman, M. E. P., Steen, T. A., Park, N. & Peterson, C. (2005). Positive psychology progress: Empirical validation of interventions. American Psychologist, 60(5), 410–421."
+      ],
+      "achtung": "Ein Abschied nach drei Jahren kann alte Verluste wecken: Beziehungsabbrüche, Wechsel von Einrichtungen, Trennungen, Todesfälle. Tränen, Rückzug, Albernheit oder Provokation sind dann verständlich; nichts davon in der Gruppe vertiefen, aber nach der Einheit Zeit für Gespräche haben. Niemand muss Gefühle zeigen oder etwas Persönliches sagen, „weiter“ gilt auch im Ritual. Wer am letzten Tag fehlt, bekommt seinen Abschied in einem kurzen persönlichen Termin nachgeholt. Die Leitung liest die Proviant-Karten, bevor die Beutel übergeben werden, und nimmt unpassende heraus. Nur ankündigen, was im Team geklärt ist: Ansprechperson, Nachtreffen, Kontakt. Deutet jemand an, nach dem Sommer „nicht mehr da“ sein zu wollen, oder gibt es andere Hinweise auf Gefährdung: noch am selben Tag das Gespräch suchen, nichts versprechen, was man nicht halten kann, nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) informieren. Auch für die Leitung ist der Abschied eine Belastung: Nachbesprechung im Team einplanen."
+    }
+  ]
+}

@@ -14,6 +14,9 @@ import { QUELLEN_TEXTE } from '../src/blatt/quellen'
 const AUTOR_KURZ: Record<string, string[]> = {
   'World Health Organization': ['WHO', 'Weltgesundheitsorganisation'],
   'Council of Europe': ['Europarat'],
+  'WHO Regional Office for Europe & BZgA': ['WHO', 'BZgA'],
+  'EFSA Panel on Dietetic Products': ['EFSA'],
+  'U.S. Department of Health and Human Services': ['Surgeon General', 'US-Gesundheitsministerium'],
 }
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..')

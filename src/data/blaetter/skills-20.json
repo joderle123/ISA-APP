@@ -1,0 +1,1347 @@
+[
+  {
+    "id": "skills-interessen-check",
+    "bereich": "skills",
+    "thema": "zukunft",
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "20 Min. und 5 Min. im Parcours",
+    "eldib": [
+      "K-19",
+      "SOZ-25",
+      "V-24"
+    ],
+    "schlagworte": [
+      "Interessen",
+      "Berufsorientierung",
+      "Interessen-Code",
+      "Holland",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:search",
+    "verwandt": [
+      "skills-berufsprofil",
+      "mein-staerkenprofil"
+    ],
+    "kurs": [
+      "j3-e10"
+    ],
+    "de": {
+      "titel": "Was interessiert mich?",
+      "untertitel": "Sechs Bereiche, ein Code – er zeigt, was dich anzieht, nicht, was du schon kannst.",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Interessen zeigen dir, bei welchen Tätigkeiten die Zeit schnell vergeht. Für die Berufswahl ist das ein guter erster Hinweis. Kreuz ehrlich an – niemand bewertet dein Ergebnis."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Kreuz alles an, was du gern tun würdest – egal, ob du es schon kannst. Zähl dann die Kreuze und schreib die Zahl neben den Bereich.",
+          "hinweis": "Nicht lange überlegen: Das erste Bauchgefühl ist meist das ehrlichste."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "ankreuzen",
+              "titel": "Anpacken",
+              "items": [
+                "ein Moped oder Fahrrad reparieren",
+                "Möbel aufbauen oder aus Holz bauen",
+                "draußen arbeiten, bei jedem Wetter",
+                "mit Maschinen und Werkzeug arbeiten",
+                "mit Tieren oder Pflanzen arbeiten"
+              ]
+            },
+            {
+              "art": "ankreuzen",
+              "titel": "Tüfteln",
+              "items": [
+                "verstehen, wie ein Gerät funktioniert",
+                "Rätsel und knifflige Aufgaben lösen",
+                "am Computer tüfteln oder programmieren",
+                "Experimente machen",
+                "Fragen nachgehen, bis ich sie verstehe"
+              ]
+            },
+            {
+              "art": "ankreuzen",
+              "titel": "Gestalten",
+              "items": [
+                "zeichnen, malen, Graffiti entwerfen",
+                "Musik machen oder Beats bauen",
+                "Fotos oder Videos machen und schneiden",
+                "Haare, Kleidung oder Räume gestalten",
+                "Texte oder Songs schreiben"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "ankreuzen",
+              "titel": "Helfen",
+              "items": [
+                "jemandem etwas erklären, bis er es kann",
+                "auf kleine Kinder aufpassen",
+                "mich um Kranke oder Ältere kümmern",
+                "zuhören, wenn es jemandem schlecht geht",
+                "bei Streit vermitteln"
+              ]
+            },
+            {
+              "art": "ankreuzen",
+              "titel": "Überzeugen",
+              "items": [
+                "andere von einer Idee überzeugen",
+                "verkaufen und Preise aushandeln",
+                "eine Gruppe anführen",
+                "ein eigenes kleines Geschäft starten",
+                "vor anderen etwas präsentieren"
+              ]
+            },
+            {
+              "art": "ankreuzen",
+              "titel": "Ordnen",
+              "items": [
+                "Listen, Tabellen oder Pläne erstellen",
+                "genau mit Zahlen und Geld rechnen",
+                "Termine planen und im Blick behalten",
+                "Ordnung in ein Lager bringen",
+                "Formulare genau ausfüllen"
+              ]
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Ein Hinweis, kein Urteil",
+          "text": "Interessen verändern sich, und die meisten Berufe verbinden zwei oder drei Bereiche. Ob etwas wirklich zu dir passt, merkst du beim Ausprobieren – im Parcours, im Praktikum, im Gespräch mit Menschen, die den Beruf machen."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Trag die Zahl deiner Kreuze ins Sechseck ein. Bereiche, die nebeneinanderliegen, sind sich ähnlich.",
+          "hinweis": "Gegenüberliegende Bereiche kommen seltener zusammen – aber es gibt sie, zum Beispiel in der Physiotherapie: Helfen und Anpacken."
+        },
+        {
+          "art": "mindmap",
+          "mitte": "Mein Code",
+          "aeste": [
+            "Anpacken",
+            "Tüfteln",
+            "Gestalten",
+            "Helfen",
+            "Überzeugen",
+            "Ordnen"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dein Interessen-Code: Das sind deine zwei stärksten Bereiche. Passt das zu dir?"
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Mein Interessen-Code: … und …",
+            "Das passt zu mir, weil …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Im Parcours: Kreuz nach jeder Station an, ob die Aufgabe dir Energie gegeben oder gekostet hat."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "gibt Energie",
+            "neutral",
+            "kostet Energie"
+          ],
+          "items": [
+            "Anpacken – Papierbrücke",
+            "Tüfteln – drei Rätsel",
+            "Gestalten – Logo in drei Minuten",
+            "Helfen – Erklär es mir",
+            "Überzeugen – 30 Sekunden",
+            "Ordnen – Chaos im Kalender"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Test und Parcours passen zusammen / passen nicht zusammen, weil …"
+          ],
+          "linien": 1
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen ermitteln ihre beruflichen Interessen in sechs Bereichen nach Holland, bestimmen ihren Interessen-Code und prüfen ihn an sechs kurzen Arbeitsproben.",
+        "ablauf": [
+          "Aufgabe 1 allein (10 Min.): ankreuzen, was man gern täte – nicht, was man kann –, dann die Kreuze pro Bereich zählen.",
+          "Aufgabe 2 (5 Min.): Zahlen ins Sechseck; an der Tafel zeigen, dass Nachbarn sich ähneln.",
+          "Aufgabe 3 (3 Min.): Interessen-Code mit Begründung, bei Gleichstand drei Bereiche.",
+          "Aufgabe 4 im Parcours: nach jeder Station ein Kreuz, am Ende Test und Parcours vergleichen."
+        ],
+        "hintergrund": "Holland (1997) beschreibt sechs Interessentypen – praktisch-technisch, forschend, künstlerisch, sozial, unternehmerisch, ordnend-verwaltend – und ordnet sie in einem Sechseck an: Nachbarn ähneln einander, Gegenüber am wenigsten. Wer eine Arbeit findet, die zu den eigenen Interessen passt, ist eher zufrieden. Die Bereiche sind für Jugendliche vereinfacht und ersetzen keinen standardisierten Test. Nach Super (1980) werden Interessen mit 15 durch Erkundung klarer – deshalb folgt auf das Ankreuzen die Probe im Parcours.",
+        "quellen": [
+          "Holland, J. L. (1997). Making Vocational Choices (3rd ed.). Odessa, FL: Psychological Assessment Resources.",
+          "Super, D. E. (1980). A life-span, life-space approach to career development. Journal of Vocational Behavior, 16(3), 282–298."
+        ],
+        "differenzierung": {
+          "leichter": "Die Leitung liest die Tätigkeiten vor, alle kreuzen gleichzeitig an; nur der Bereich mit den meisten Kreuzen zählt.",
+          "schwerer": "Einen Code aus drei Bereichen bilden und zwei Berufe suchen, die alle drei verbinden."
+        },
+        "impulse": [
+          "Wann vergeht dir die Zeit wie im Flug – und was machst du dann gerade?",
+          "Hat dich ein Ergebnis überrascht – im Test oder im Parcours?"
+        ],
+        "tipps": [
+          "Gleichstand und flache Ergebnisse sind häufig. Dann hilft die Frage, welchen Bereich man am wenigsten gern hergeben würde.",
+          "Rollenbilder ansprechen, wenn sie auftauchen: Der Code gehört der Person, nicht ihrem Geschlecht."
+        ],
+        "achtung": "Wer kaum etwas ankreuzt, ist oft eher mutlos als desinteressiert. Nicht vor der Gruppe darauf eingehen, im Einzelgespräch nachfragen und bei Bedarf die zuständige Leitung (Responsable) einbeziehen.",
+        "material": "Klemmbretter, Stifte, Parcours-Material"
+      }
+    }
+  },
+  {
+    "id": "skills-berufsprofil",
+    "bereich": "skills",
+    "thema": "zukunft",
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln"
+    ],
+    "dauer": "10–15 Min. in jeder Einheit des Moduls",
+    "eldib": [
+      "SOZ-40",
+      "K-19",
+      "K-20"
+    ],
+    "schlagworte": [
+      "Berufsprofil",
+      "Stärken",
+      "Fremdbild",
+      "Arbeitswerte",
+      "Berufsorientierung",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:user",
+    "verwandt": [
+      "skills-interessen-check",
+      "mein-staerkenprofil",
+      "skills-ziel-plan"
+    ],
+    "kurs": [
+      "j3-e10",
+      "j3-e11",
+      "j3-e12",
+      "j3-e13"
+    ],
+    "de": {
+      "titel": "Mein Berufsprofil",
+      "untertitel": "Was ich mag, was ich kann, was mir wichtig ist – und wohin es gehen könnte.",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Dein Profil wächst in vier Einheiten. Du brauchst es für die Suche nach einem Praktikum, für deinen Lebenslauf und im Vorstellungsgespräch."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Das zieht mich an: Trag deinen Interessen-Code ein."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Mein Interessen-Code: … und …",
+            "Im Parcours hat mir Energie gegeben: …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Mögen und Können: Sortier Tätigkeiten aus Schule, Freizeit und Kurs in die vier Felder.",
+          "hinweis": "Genau ist besser: nicht „Sport“, sondern „Kinder im Verein trainieren“."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "feld",
+              "label": "Mag ich und kann ich – mein Kraftfeld",
+              "hoehe": 4,
+              "beispiel": "Leuten etwas erklären, Fahrräder reparieren"
+            },
+            {
+              "art": "feld",
+              "label": "Mag ich, kann ich noch nicht – mein Lernfeld",
+              "hoehe": 4,
+              "beispiel": "Französisch sprechen, Beats bauen"
+            }
+          ],
+          "rechts": [
+            {
+              "art": "feld",
+              "label": "Kann ich, mag ich aber nicht – kostet Kraft",
+              "hoehe": 4,
+              "beispiel": "Zimmer aufräumen, lange stillsitzen"
+            },
+            {
+              "art": "feld",
+              "label": "Weder noch – nicht mein Feld, jedenfalls nicht jetzt",
+              "hoehe": 4
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Das sieht die Gruppe in mir: Übertrag Sätze aus deiner Stärken-Post."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Die anderen sehen bei mir: …",
+            "Das hat mich überrascht: …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Das ist mir bei einer Arbeit wichtig: Kreuz die drei wichtigsten Punkte an.",
+          "hinweis": "Deine Werte aus Einheit 3 helfen dir dabei."
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 3,
+          "frei": 3,
+          "items": [
+            "mit Menschen zu tun haben",
+            "mit den Händen arbeiten",
+            "draußen sein",
+            "im Team arbeiten",
+            "allein und in Ruhe arbeiten",
+            "viel Abwechslung",
+            "feste Arbeitszeiten",
+            "gut verdienen",
+            "ein sicherer Arbeitsplatz",
+            "anderen helfen",
+            "etwas Sichtbares schaffen",
+            "meine Sprachen nutzen"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Berufe, die mich neugierig machen"
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Beruf oder Berufsfeld",
+            "Was mich daran reizt",
+            "Was ich noch herausfinden will"
+          ],
+          "zeilen": 3,
+          "beispiel": [
+            "Kfz-Mechatronik",
+            "Fehler finden, an Motoren schrauben",
+            "Wie viel Theorie gibt es in der Schule?"
+          ],
+          "breiten": [
+            1.3,
+            1.6,
+            1.7
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Mein möglicher Weg: Wo stehst du jetzt – und wie könnte es weitergehen?",
+          "hinweis": "Umwege sind erlaubt. Kennst du einen Schritt noch nicht, setz ein Fragezeichen und frag im Interview nach."
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 2,
+          "items": [
+            {
+              "titel": "Jetzt",
+              "text": "z. B. 5G im Lycée"
+            },
+            {
+              "titel": "Nächster Schritt",
+              "text": "z. B. Praktikum in einer Werkstatt"
+            },
+            {
+              "titel": "Danach",
+              "text": "z. B. Ausbildung mit Lehrvertrag"
+            },
+            {
+              "titel": "Mein Ziel",
+              "text": "z. B. Kfz-Mechatroniker"
+            }
+          ]
+        },
+        {
+          "art": "skala",
+          "frage": "So klar ist mein Berufswunsch gerade:",
+          "von": "noch ganz offen",
+          "bis": "ganz klar",
+          "stufen": 11
+        },
+        {
+          "art": "text",
+          "klein": true,
+          "text": "Mit 15 ist „noch ganz offen“ völlig normal. Es zählt der nächste Schritt, nicht der perfekte Plan."
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Du entscheidest, was du teilst.",
+          "text": "Das Profil gehört dir. Du zeigst es nur, wem du willst – etwa beim SePAS oder in einem Gespräch über dein Praktikum."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen bündeln, was sie anzieht, was sie können, was andere in ihnen sehen und was ihnen bei der Arbeit wichtig ist – und skizzieren Berufe und einen möglichen Weg.",
+        "ablauf": [
+          "Einheit 10: Aufgabe 1 nach dem Interessen-Check, Aufgabe 2 mit einem Beispiel der Leitung, Aufgabe 3 nach der Stärken-Post.",
+          "Einheit 11: Aufgaben 4 und 5 im Berufe-Markt, Aufgabe 6 nach dem Tafelbild „Viele Wege“.",
+          "Einheit 12: Das Profil liefert Beispiele für Lebenslauf und Vorstellungsgespräch.",
+          "Einheit 13: Es liegt beim Zielplan daneben und kommt danach, wer mag, ins Skills-Buch."
+        ],
+        "hintergrund": "Das Vier-Felder-Schema trennt Mögen und Können: Holland (1997) beschreibt, wie Interessen und Arbeitsumwelt zusammenpassen; ob man einen Beruf gut ausübt, hängt zusätzlich von Fähigkeiten ab, und die lassen sich lernen. Das Lernfeld macht deshalb Mut. Die Stärken-Post nutzt den ‚blinden Fleck‘ des Johari-Fensters: Andere sehen, was man selbst übersieht (Luft & Ingham, 1955). Nach Super (1980) ist ein Berufswunsch mit 15 selten fertig – die Skala in Aufgabe 6 macht Offenheit ausdrücklich normal.",
+        "quellen": [
+          "Holland, J. L. (1997). Making Vocational Choices (3rd ed.). Odessa, FL: Psychological Assessment Resources.",
+          "Luft, J. & Ingham, H. (1955). The Johari window, a graphic model of interpersonal awareness. Proceedings of the Western Training Laboratory in Group Development. Los Angeles: University of California.",
+          "Super, D. E. (1980). A life-span, life-space approach to career development. Journal of Vocational Behavior, 16(3), 282–298."
+        ],
+        "differenzierung": {
+          "leichter": "Die Leitung gibt Tätigkeitskarten vor, die in die vier Felder nur noch sortiert werden.",
+          "schwerer": "Zu jeder Stärke im Kraftfeld ein Beispiel notieren, das man im Vorstellungsgespräch erzählen könnte."
+        },
+        "impulse": [
+          "Was aus deinem Lernfeld würdest du am liebsten in einem Praktikum ausprobieren?",
+          "Welcher Satz aus der Stärken-Post passt zu einem Beruf, den du dir vorstellen kannst?"
+        ],
+        "tipps": [
+          "Das Profil wächst von Einheit zu Einheit – nicht in einer Sitzung fertig machen lassen.",
+          "Eine Kopie für das Gespräch mit dem SePAS anbieten, wenn die Person es möchte."
+        ],
+        "achtung": "Bleibt das Kraftfeld leer: im Einzelgespräch Beobachtungen spiegeln, nicht in der Gruppe. Nicht nach Berufen der Eltern fragen; bei anhaltender Niedergeschlagenheit die zuständige Leitung (Responsable) einbeziehen.",
+        "material": "Modul-Mappe, Stärken-Post"
+      }
+    }
+  },
+  {
+    "id": "skills-profi-karten",
+    "bereich": "skills",
+    "thema": "zukunft",
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "gruppe"
+    ],
+    "dauer": "20 Min.",
+    "eldib": [
+      "K-17",
+      "SOZ-38",
+      "KOG-51"
+    ],
+    "schlagworte": [
+      "Berufe",
+      "Interview",
+      "Rollenspiel",
+      "Umwege",
+      "Berufsorientierung",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:messages",
+    "verwandt": [
+      "skills-berufe-erkunden",
+      "skills-berufsprofil"
+    ],
+    "kurs": [
+      "j3-e11"
+    ],
+    "de": {
+      "titel": "Profi-Karten",
+      "untertitel": "Sechs Menschen, sechs Berufe, kein einziger gerader Weg – für das Interview-Karussell",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "So geht das Karussell",
+          "punkte": [
+            "Innen sitzen die Profis: Karte eine Minute lesen, dann in der Ich-Form sprechen.",
+            "Was nicht auf der Karte steht, darfst du erfinden – so, wie es im echten Beruf sein könnte.",
+            "Außen sitzen die Interviewer: Fragen aus dem Fragen-Speicher stellen und mindestens einmal nachfragen.",
+            "Nach vier Minuten rückt der Außenkreis weiter, nach zwei Runden werden die Rollen getauscht."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schneidet die Karten aus. Wer innen sitzt, zieht eine Karte und wird zu diesem Profi.",
+          "symbole": [
+            "schneiden",
+            "sprechen"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 2,
+          "hoehe": 150,
+          "karten": [
+            {
+              "titel": "Tiago, 23 · Kfz-Mechatroniker",
+              "text": "Ich finde Fehler, die der Diagnose-Computer übersieht. In der Schule saß ich hinten und habe abgeschaltet, eine Klasse habe ich wiederholt. Im ersten Praktikum durfte ich nach zwei Tagen an einen Motor – da wusste ich es. Dann die Ausbildung (DAP): Schule und Werkstatt. Anstrengend: kalte Hände im Winter. Von Praktikanten erwarte ich: pünktlich sein, Handy in den Spind, fragen, bevor du etwas anfasst."
+            },
+            {
+              "titel": "Aylin, 26 · IT-Technikerin",
+              "text": "Ich richte Computer und Netzwerke in Firmen ein und helfe, wenn nichts mehr geht. Als Jugendliche habe ich nächtelang gezockt – eigentlich wollte ich verstehen, wie alles funktioniert. Nach dem Lycée habe ich ein Jahr gejobbt, ohne Plan. Dann die Ausbildung zur Technikerin, später Kurse neben der Arbeit. Anstrengend: Leute, die mir die Schuld geben, wenn ihr Computer spinnt. Mein Tipp: Erzähl, was du selbst herausgefunden hast."
+            },
+            {
+              "titel": "Mila, 22 · Friseurin",
+              "text": "Ich schneide, färbe und berate – jeden Tag andere Menschen, jeden Tag etwas, das man sieht. Eine Ausbildung im Verkauf habe ich nach einem Jahr abgebrochen, weil ich mich gelangweilt habe. Ein Praktikum in einem Salon hat alles geändert. Anstrengend: den ganzen Tag stehen, Kundinnen mit schlechter Laune. Von Praktikanten erwarte ich: freundlich zu den Kundinnen sein, auch wenn du gerade nur fegst."
+            },
+            {
+              "titel": "Samuel, 29 · Pflegehelfer im Altenheim",
+              "text": "Ich helfe alten Menschen beim Aufstehen, Waschen und Essen – und ich höre zu. Mit 16 hatte ich oft Streit in der Schule und keinen Plan. Drei Praktika fand ich furchtbar, im vierten, im Altenheim, hat es klick gemacht. Mit 20 habe ich die Ausbildung angefangen. Anstrengend: Schichtdienst und Abschied nehmen, wenn jemand stirbt. Mein Tipp: Man muss nicht immer gut drauf sein, aber freundlich."
+            },
+            {
+              "titel": "Diogo, 30 · Filialleiter im Supermarkt",
+              "text": "Ich plane, wer wann arbeitet, bestelle Ware und rede mit Kunden, die sich beschweren. Die Schule habe ich ohne Abschluss verlassen, mit 17 war ich Aushilfe an der Kasse. Mein Chef hat gesehen, dass ich gut mit Leuten kann, und mir eine Ausbildung angeboten. Anstrengend: zwei Leute krank, der Laden voll. Von Praktikanten erwarte ich: mit anpacken und ehrlich sagen, wenn du etwas nicht weißt."
+            },
+            {
+              "titel": "Nora, 25 · Büroangestellte in einer Baufirma",
+              "text": "Ich schreibe Rechnungen, plane Termine, ordne Lieferscheine und telefoniere auf Französisch, Deutsch und Portugiesisch. Im Lycée bin ich zweimal sitzen geblieben, dann bin ich in die Berufsausbildung gewechselt – die beste Entscheidung meines Lebens. Anstrengend: wenn alles gleichzeitig kommt. Mein Tipp: Deine Sprachen sind Gold wert. Schreib sie in den Lebenslauf, auch die, die du nur zu Hause sprichst."
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Erfundene Berufstätige mit Umwegen machen Berufe greifbar. Im Interview-Karussell üben die Jugendlichen offene Fragen und Nachfragen und erleben, dass Brüche im Lebenslauf dazugehören.",
+        "ablauf": [
+          "Vorab: auf festes Papier drucken und schneiden, bei mehr als sechs Jugendlichen zwei Sätze.",
+          "Innen- und Außenkreis bilden: innen die Profis, außen die Interviewer mit dem Fragen-Speicher.",
+          "Zwei Runden zu je vier Minuten, dann Rollentausch mit neuen Karten und zwei weitere Runden.",
+          "Auswertung (4 Min.): Was erwarten die Profis von Praktikanten? Welcher Umweg hat überrascht?"
+        ],
+        "hintergrund": "Wer sieht, dass jemand mit ähnlichen Voraussetzungen etwas geschafft hat, traut es sich eher selbst zu – Bandura (1977) nennt das stellvertretende Erfahrung. Die Karten zeigen deshalb wiederholte Klassen, Abbrüche und späte Starts. Solche Wege sind keine Ausnahme: In der Längsschnittstudie von Werner und Smith (1992) fanden viele Jugendliche mit großen Schwierigkeiten als junge Erwachsene über zweite Chancen ihren Platz. Nebenbei übt das Karussell offene Fragen und Nachfragen für das echte Interview.",
+        "quellen": [
+          "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
+          "Werner, E. E. & Smith, R. S. (1992). Overcoming the Odds. Ithaca: Cornell University Press."
+        ],
+        "differenzierung": {
+          "leichter": "Zu zweit einen Profi spielen: Eine Person liest vor, die andere antwortet auf Nachfragen.",
+          "schwerer": "Die Profis stellen am Ende selbst eine Frage zurück: „Und warum interessiert dich mein Beruf?“"
+        },
+        "impulse": [
+          "Welcher Umweg auf den Karten hat dich überrascht?",
+          "Was würdest du einen echten Profi als Erstes fragen?"
+        ],
+        "tipps": [
+          "In der ersten Runde spielt die Leitung selbst einen Profi – so wird sichtbar, wie viel man aus einer Karte machen kann.",
+          "Karten laminieren; sie eignen sich auch, um vor einem Betriebsbesuch oder Praktikum Fragen zu üben."
+        ],
+        "achtung": "Die Umwege können an eigene Brüche erinnern: Wer betroffen wirkt, wird später unter vier Augen angesprochen. Bei Hinweisen auf Gefährdung die zuständige Leitung (Responsable) informieren.",
+        "material": "Festes Papier, Schere, Stoppuhr"
+      }
+    }
+  },
+  {
+    "id": "skills-berufe-erkunden",
+    "bereich": "skills",
+    "thema": "zukunft",
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln"
+    ],
+    "dauer": "15 Min. und das Interview",
+    "eldib": [
+      "K-12",
+      "KOG-51",
+      "V-32"
+    ],
+    "schlagworte": [
+      "Interview",
+      "Praktikum",
+      "Berufsorientierung",
+      "Fragen stellen",
+      "Wenn-dann-Plan",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:microphone",
+    "verwandt": [
+      "skills-profi-karten",
+      "skills-berufsprofil"
+    ],
+    "kurs": [
+      "j3-e11"
+    ],
+    "de": {
+      "titel": "Berufe aus der Nähe",
+      "untertitel": "Wie ein Beruf wirklich ist, erfährst du von Menschen, die ihn machen – im Interview und im Praktikum.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Kreuz fünf Fragen an, die du einem Profi stellen willst – oder schreib eigene dazu.",
+          "hinweis": "Im Interview-Karussell probierst du sie aus."
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "frei": 2,
+          "items": [
+            "Wie sieht ein normaler Arbeitstag bei dir aus?",
+            "Was magst du an deinem Beruf am meisten?",
+            "Was ist anstrengend oder nervt?",
+            "Wie bist du zu diesem Beruf gekommen?",
+            "Gab es Umwege – und was hast du gelernt?",
+            "Welche Schule oder Ausbildung braucht man?",
+            "Was sollte man mitbringen, um gut zu sein?",
+            "Welche Sprachen brauchst du bei der Arbeit?",
+            "Was würdest du mit 15 anders machen?",
+            "Kann man bei euch ein Praktikum machen?"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Nachfragen bringt am meisten",
+          "text": "„Wie meinst du das?“ – „Hast du ein Beispiel?“ – „Und dann?“ Eine Nachfrage macht aus einer kurzen Antwort eine Geschichte."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wen könntest du fragen? Schreib zwei Menschen auf, die einen Beruf haben, der dich interessiert."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Person",
+            "Beruf",
+            "So und wann frage ich"
+          ],
+          "zeilen": 2,
+          "beispiel": [
+            "Trainer im Fußballverein",
+            "Elektriker",
+            "nach dem Training am Donnerstag"
+          ],
+          "breiten": [
+            1.4,
+            1.1,
+            2
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "So fragst du – freundlich und sicher",
+          "punkte": [
+            "„Guten Tag, ich heiße … Ich interessiere mich für Ihren Beruf. Hätten Sie eine Viertelstunde Zeit für ein paar Fragen?“",
+            "Frag Menschen, die du kennst oder die dir die Leitung vermittelt. Triff dich nie allein mit Fremden aus dem Netz.",
+            "Sag einer erwachsenen Person, wann und wo du dein Interview machst.",
+            "Bedank dich am Ende. Eine kurze Nachricht danach kommt gut an."
+          ]
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Nach dem Interview: Was nimmst du mit?"
+        },
+        {
+          "art": "feld",
+          "label": "Das habe ich erfahren",
+          "hoehe": 4
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Überrascht hat mich …",
+            "Der Beruf passt zu mir: ja / vielleicht / eher nicht, weil …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dein Praktikum: Was willst du dort herausfinden?"
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Im Praktikum will ich herausfinden, ob …"
+          ],
+          "linien": 2
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Das zählt im Praktikum",
+          "punkte": [
+            "Lieber zehn Minuten zu früh als eine Minute zu spät.",
+            "Handy weg, außer jemand erlaubt es.",
+            "Fragen ist erwünscht – raten nicht.",
+            "Krank? Vor Arbeitsbeginn im Betrieb anrufen, nicht nur schreiben.",
+            "Einen Fehler sofort sagen. Das zeigt Verantwortung."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Plane für zwei schwierige Momente im Praktikum.",
+          "hinweis": "Die Tipps der Profis aus dem Karussell helfen dir."
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 2,
+          "beispiele": [
+            {
+              "wenn": "Wenn ich merke, dass ich den Bus verpasse,",
+              "dann": "rufe ich sofort im Betrieb an und sage, wann ich da bin."
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen planen ein Interview mit einer berufstätigen Person, werten es aus und bereiten sich mit Wenn-dann-Plänen auf schwierige Momente im Praktikum vor.",
+        "ablauf": [
+          "Vor dem Karussell (3 Min.): In Aufgabe 1 zwei Fragen ankreuzen, die im Karussell ausprobiert werden.",
+          "Nach dem Karussell (10 Min.): fünf Fragen wählen, Aufgabe 2 ausfüllen, Aufgabe 5 mit den Tipps der Profis.",
+          "Bis Einheit 13, freiwillig: Interview führen, Aufgabe 3 ausfüllen, in Einheit 13 kurz berichten.",
+          "Vor einem Praktikum: Aufgabe 4 und den Kasten „Das zählt im Praktikum“ gemeinsam durchgehen."
+        ],
+        "hintergrund": "Nach Super (1980) sammeln Jugendliche in der Phase der Erkundung Informationen über Berufe und über sich selbst und prüfen erste Vorstellungen an der Wirklichkeit. Gespräche mit Berufstätigen liefern, was Broschüren nicht leisten: Alltag, Belastungen, echte Wege. Wer ein solches Gespräch selbst führt, macht eine Bewältigungserfahrung, die das Zutrauen stärkt (Bandura, 1977). Wenn-dann-Pläne verknüpfen eine kritische Situation im Voraus mit einer Handlung und erhöhen so die Chance, dass sie im entscheidenden Moment gelingt (Gollwitzer, 1999).",
+        "quellen": [
+          "Super, D. E. (1980). A life-span, life-space approach to career development. Journal of Vocational Behavior, 16(3), 282–298.",
+          "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "differenzierung": {
+          "leichter": "Die Leitung vermittelt ein Interview im Haus und begleitet die ersten Minuten.",
+          "schwerer": "Zwei Menschen aus verschiedenen Berufen befragen und die Antworten vergleichen."
+        },
+        "impulse": [
+          "Welche Antwort würde dich am meisten interessieren?",
+          "Was könnte im Praktikum schwierig werden – und was tust du dann?"
+        ],
+        "tipps": [
+          "Für Jugendliche ohne Kontakte vorab Erwachsene im Haus fragen, ob sie für ein Interview bereitstehen.",
+          "Das Interview darf in jeder Sprache stattfinden, die beide sprechen."
+        ],
+        "achtung": "Interviews nur mit bekannten oder vermittelten Personen, nie allein mit Fremden aus dem Netz. Nicht nach Arbeit in der Familie fragen. Erzählt jemand von Arbeit, die ihm schadet: Einzelgespräch, zuständige Leitung (Responsable) informieren.",
+        "material": "Liste möglicher Interviewpartner im Haus"
+      }
+    }
+  },
+  {
+    "id": "skills-lebenslauf",
+    "bereich": "skills",
+    "thema": "zukunft",
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln"
+    ],
+    "dauer": "15 Min. und Fertigstellen mit Unterstützung",
+    "eldib": [
+      "K-19",
+      "K-18",
+      "V-32"
+    ],
+    "schlagworte": [
+      "Lebenslauf",
+      "Bewerbung",
+      "Sprachen",
+      "Praktikum",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:file-text",
+    "verwandt": [
+      "skills-vorstellungsgespraech",
+      "skills-berufsprofil"
+    ],
+    "kurs": [
+      "j3-e12"
+    ],
+    "de": {
+      "titel": "Mein erster Lebenslauf",
+      "untertitel": "Ein Entwurf zum Ausfüllen. Später tippst du ihn ab – übersichtlich, ehrlich, auf einer Seite.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Das gehört zu einer Bewerbung",
+          "punkte": [
+            "Das Anschreiben (lettre de motivation): warum dieser Beruf, warum dieser Betrieb, was du mitbringst.",
+            "Der Lebenslauf: Angaben zu dir, Schule, Erfahrungen, Sprachen und Stärken.",
+            "Kopien deiner letzten Zeugnisse und Nachweise über Praktika."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Angaben zu dir",
+          "hinweis": "Eine seriöse E-Mail-Adresse wie vorname.nachname@… lohnt sich – leg lieber eine neue an."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "satzanfaenge",
+              "items": [
+                "Vor- und Nachname: …",
+                "Straße und Nummer: …",
+                "Postleitzahl und Ort: …"
+              ],
+              "linien": 1
+            }
+          ],
+          "rechts": [
+            {
+              "art": "satzanfaenge",
+              "items": [
+                "Geburtsdatum: …",
+                "Telefon: …",
+                "E-Mail: …"
+              ],
+              "linien": 1
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schule: Beginn mit der Schule, die du jetzt besuchst.",
+          "hinweis": "Nur Schulen, Klassen und Jahre – Gründe für einen Wechsel oder eine Wiederholung gehören nicht hinein."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Von – bis",
+            "Schule und Ort",
+            "Klasse oder Abschluss"
+          ],
+          "zeilen": 3,
+          "beispiel": [
+            "2023 – heute",
+            "Lycée in Esch-sur-Alzette",
+            "7G bis 5G"
+          ],
+          "breiten": [
+            1,
+            2.2,
+            1.6
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Praktika, Jobs und Erfahrungen",
+          "hinweis": "Auch Babysitten, Hilfe im Verein oder ein Ferienjob zählen."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Wann",
+            "Wo",
+            "Was ich gemacht habe"
+          ],
+          "zeilen": 2,
+          "beispiel": [
+            "Juli 2025, zwei Wochen",
+            "Bäckerei im Ort",
+            "Verkauf, Kasse, Regale auffüllen"
+          ],
+          "breiten": [
+            1.2,
+            1.4,
+            2.2
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Sprachen: Schreib alle auf, auch die, die du zu Hause sprichst.",
+          "hinweis": "Stufen: Muttersprache – sehr gut – gut – Grundkenntnisse."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Sprache",
+            "So gut kann ich sie"
+          ],
+          "zeilen": 4,
+          "beispiel": [
+            "Portugiesisch",
+            "Muttersprache"
+          ],
+          "breiten": [
+            1.2,
+            2
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Stärken und Interessen: Nimm dein Berufsprofil zu Hilfe."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Meine Stärken: …",
+            "Kenntnisse, etwa Computer oder ein Erste-Hilfe-Kurs: …",
+            "Interessen und Hobbys: …"
+          ],
+          "linien": 2
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Du entscheidest, was du angibst.",
+          "text": "Gesundheit, Diagnosen, Förderung oder deine Familiensituation gehören nicht in den Lebenslauf. Wenn du unsicher bist, frag die Leitung oder den SePAS."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen kennen die Teile einer Bewerbung und erstellen einen ersten Lebenslauf-Entwurf, der ihre Erfahrungen und Sprachen sichtbar macht und Privates schützt.",
+        "ablauf": [
+          "Einstieg (3 Min.): eine Musterbewerbung einer erfundenen Person zeigen und den Kasten lesen.",
+          "Spiel „Rein oder raus?“ (7 Min.), Angaben siehe Einheit 12.",
+          "In der Einheit (5 Min.): Angaben zu sich, Schule und Sprachen; der Rest mit Unterstützung im Alltag.",
+          "Später: den Entwurf am Computer abtippen, von einer erwachsenen Person gegenlesen lassen, als PDF speichern."
+        ],
+        "hintergrund": "Ein erster Lebenslauf ist für Jugendliche mehr als ein Formular: Wer die eigenen Erfahrungen aufschreibt – vom Ferienjob bis zum Verein –, sieht schwarz auf weiß, was er schon kann. Solche Bewältigungserfahrungen sind die stärkste Quelle von Selbstwirksamkeit (Bandura, 1977). In Luxemburg spielen Sprachen bei Bewerbungen eine große Rolle; Familiensprachen vergessen Jugendliche oft, dabei gehören sie ausdrücklich dazu. Brüche in der Schullaufbahn werden im Lebenslauf nicht begründet; eine kurze, ehrliche Antwort für das Gespräch wird auf dem Blatt „Das Vorstellungsgespräch“ vorbereitet.",
+        "quellen": [
+          "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215."
+        ],
+        "differenzierung": {
+          "leichter": "Die Leitung schreibt nach Diktat mit; die Person ergänzt nur Sprachen und Stärken selbst.",
+          "schwerer": "Zusätzlich die ersten drei Sätze des Anschreibens entwerfen: warum dieser Beruf, warum dieser Betrieb, was ich mitbringe."
+        },
+        "impulse": [
+          "Welche Erfahrung hast du vergessen, die eigentlich in den Lebenslauf gehört?",
+          "Welche deiner Sprachen würde ein Betrieb gern hören?"
+        ],
+        "tipps": [
+          "Den Entwurf nicht einsammeln; eine Kopie bleibt nur mit Einverständnis in der Mappe.",
+          "Beim Abtippen hilft eine schlichte Vorlage ohne Grafiken – sie lässt sich überall öffnen."
+        ],
+        "achtung": "Lebensläufe enthalten persönliche Daten: nicht fotografieren, nicht im Gruppenchat teilen, nicht offen liegen lassen. Niemand muss Förderung, Diagnosen oder familiäre Umstände angeben; bei Unsicherheit im Einzelgespräch eine passende Formulierung finden.",
+        "material": "Musterbewerbung einer erfundenen Person, Stifte, später Computer und Drucker"
+      }
+    }
+  },
+  {
+    "id": "skills-vorstellungsgespraech",
+    "bereich": "skills",
+    "thema": "zukunft",
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "40 Min. in Etappen",
+    "eldib": [
+      "K-12",
+      "V-21",
+      "SOZ-38"
+    ],
+    "schlagworte": [
+      "Vorstellungsgespräch",
+      "Bewerbung",
+      "Nervosität",
+      "Rollenspiel",
+      "Rückmeldung",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:door-enter",
+    "verwandt": [
+      "skills-lebenslauf",
+      "pruefungsangst",
+      "skills-berufsprofil"
+    ],
+    "kurs": [
+      "j3-e12"
+    ],
+    "de": {
+      "titel": "Das Vorstellungsgespräch",
+      "untertitel": "Vorbereitet wirkst du ruhiger – auch wenn das Herz klopft.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Stell dich in drei Sätzen vor. Dein Berufsprofil hilft dir."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Ich heiße … und gehe in …",
+            "Ich kann gut …, zum Beispiel …",
+            "Ich möchte … werden, weil …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Beispiel statt Behauptung",
+          "text": "„Ich bin zuverlässig“ kann jeder sagen. „Ich trainiere seit zwei Jahren jeden Samstag die Kleinen im Verein“ zeigt es."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Such dir drei Fragen aus und bereite Antworten mit Beispiel vor."
+        },
+        {
+          "art": "wortspeicher",
+          "titel": "Typische Fragen",
+          "items": [
+            "Erzählen Sie etwas über sich.",
+            "Warum dieser Beruf?",
+            "Warum bei uns?",
+            "Was sind Ihre Stärken?",
+            "Was fällt Ihnen schwer?",
+            "Welche Sprachen sprechen Sie?",
+            "Was machen Sie in Ihrer Freizeit?",
+            "Wie kommen Sie morgens her?",
+            "Haben Sie noch Fragen an uns?"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Frage",
+            "Meine Antwort – mit Beispiel"
+          ],
+          "zeilen": 3,
+          "beispiel": [
+            "Was sind Ihre Stärken?",
+            "Ich bleibe ruhig, wenn es stressig wird. Beim Schulfest habe ich allein die Kasse gemacht."
+          ],
+          "breiten": [
+            1.2,
+            3
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Die Umweg-Frage: „Warum haben Sie die Klasse wiederholt?“ Bau deine Antwort in drei Schritten.",
+          "hinweis": "Was privat ist, bleibt privat: „Es gab damals persönliche Gründe. Heute …“ reicht völlig."
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 2,
+          "items": [
+            {
+              "titel": "Kurz und ehrlich",
+              "text": "„Ich habe die 5e wiederholt.“"
+            },
+            {
+              "titel": "Was ich gelernt habe",
+              "text": "„Mit einem festen Plan schaffe ich viel.“"
+            },
+            {
+              "titel": "Was ich jetzt will",
+              "text": "„Deshalb passt eine Ausbildung mit viel Praxis zu mir.“"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dein Plan gegen Nervosität: Welcher Skill hilft dir im Warteraum, welcher im Gespräch?"
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Skills für den Warteraum",
+          "punkte": [
+            "Zweimal durch die Nase einatmen, dann lange durch den Mund ausatmen – drei- bis fünfmal.",
+            "Füße fest auf den Boden, Schultern sinken lassen.",
+            "Dir selbst mit deinem Namen Mut machen: „Nora, du hast das geübt.“",
+            "Die Aufregung umdeuten: „Mein Körper macht mich bereit.“",
+            "Im Gespräch erlaubt: „Darf ich kurz überlegen?“"
+          ]
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 2,
+          "beispiele": [
+            {
+              "wenn": "Wenn ich im Warteraum sitze und mein Herz rast,",
+              "dann": "atme ich dreimal lang aus und sage mir: Nora, du hast das geübt."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Rückmeldung aus dem Rollenspiel: Die beobachtende Person kreuzt an und schreibt zwei Sätze."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "gelingt schon",
+            "noch üben"
+          ],
+          "items": [
+            "Klopft an, grüßt, sagt den eigenen Namen",
+            "Schaut die Person an – die Stirn reicht",
+            "Sitzt ruhig, die Hände liegen entspannt",
+            "Spricht laut und deutlich genug",
+            "Antwortet mit Beispiel",
+            "Fragt nach, wenn etwas unklar ist",
+            "Stellt am Ende eine eigene Frage",
+            "Bedankt sich und verabschiedet sich"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Das war stark: …",
+            "Mein Tipp für das nächste Mal: …",
+            "Meine Anspannung vor der Tür: … von 100 – nach dem Gespräch: … von 100"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Du entscheidest, was du teilst.",
+          "text": "Deine Antworten gehören dir. Im Rollenspiel sagst du nur, was du auch einem echten Betrieb sagen würdest."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen bereiten Selbstvorstellung, Antworten mit Beispiel, die Umweg-Antwort und einen Plan gegen Nervosität vor und üben das Gespräch im Rollenspiel mit Rückmeldung.",
+        "ablauf": [
+          "Aufgaben 1 und 2 (10 Min.) mit dem Berufsprofil; zu zweit nachfragen: Hast du ein Beispiel?",
+          "Aufgabe 3 (5 Min.): Die Leitung spielt eine schwache und eine starke Umweg-Antwort vor.",
+          "Warteraum-Skills üben, dann Rollenspiel zu dritt; wer beobachtet, füllt Aufgabe 5 auf dem Blatt der Person aus, die sich bewirbt.",
+          "Zum Schluss: Anspannung vorher und nachher vergleichen, Aufgabe 4 als Wenn-dann-Plan."
+        ],
+        "hintergrund": "Mehrmaliges Üben im geschützten Rahmen macht sicherer, und die Nervosität muss dabei nicht verschwinden: Wer körperliche Erregung als Bereitschaft deuten lernte, schnitt in einer Studie im Mathematiktest besser ab (Jamieson et al., 2010). Atemübungen mit betont langem Ausatmen senkten die Erregung und hoben die Stimmung (Balban et al., 2023). Sich selbst mit dem eigenen Namen anzusprechen, schafft Abstand zur Aufregung (Kross & Ayduk, 2017).",
+        "quellen": [
+          "Jamieson, J. P., Mendes, W. B., Blackstock, E. & Schmader, T. (2010). Turning the knots in your stomach into bows: Reappraising arousal improves performance on the GRE. Journal of Experimental Social Psychology, 46(1), 208–212.",
+          "Balban, M. Y., Neri, E., Kogon, M. M., Weed, L., Nouriani, B., Jo, B., Holl, G., Zeitzer, J. M., Spiegel, D. & Huberman, A. D. (2023). Brief structured respiration practices enhance mood and reduce physiological arousal. Cell Reports Medicine, 4(1), 100895.",
+          "Kross, E. & Ayduk, O. (2017). Self-distancing: Theory, research, and current directions. Advances in Experimental Social Psychology, 55, 81–136."
+        ],
+        "differenzierung": {
+          "leichter": "Nur zwei Fragen vorbereiten; im Rollenspiel darf der Spickzettel auf dem Tisch liegen.",
+          "schwerer": "Eine zweite Runde mit einer anspruchsvolleren Chefin, die nach einer Schwäche fragt."
+        },
+        "impulse": [
+          "Wo war deine Anspannung vor der Tür – und wo nach zwei Minuten Gespräch?",
+          "Welche Antwort hat im Rollenspiel am besten funktioniert?"
+        ],
+        "tipps": [
+          "In der ersten Runde spielt die Leitung die Chefin oder den Chef, damit die Rolle freundlich-bestimmt bleibt.",
+          "Wer keine Hand gibt, übt eine freundliche Alternative: Nicken, Hand aufs Herz, ein klares „Guten Tag“."
+        ],
+        "achtung": "Stopp-Recht; niemand muss sich bewerben, die Chef-Rolle bleibt freundlich. Diagnosen, Förderung und Familiäres muss niemand offenlegen. Bei starker Panik aussetzen lassen und später nachfragen.",
+        "material": "Tisch, zwei Stühle, Wasser, Rollenkarten"
+      }
+    }
+  },
+  {
+    "id": "skills-ziel-plan",
+    "bereich": "skills",
+    "thema": "zukunft",
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln"
+    ],
+    "dauer": "25 Min. in Etappen",
+    "eldib": [
+      "V-29",
+      "V-32",
+      "V-22"
+    ],
+    "schlagworte": [
+      "Ziele",
+      "WOOP",
+      "Wenn-dann-Plan",
+      "Rückschläge",
+      "Motivation",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:flag",
+    "verwandt": [
+      "woop-plan",
+      "skills-berufsprofil",
+      "neustart"
+    ],
+    "kurs": [
+      "j3-e13"
+    ],
+    "de": {
+      "titel": "Mein Ziel für die nächsten Monate",
+      "untertitel": "Ein Ziel trägt, wenn es deins ist und du einen Plan für dein Hindernis hast.",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "Yusufs Ziel",
+          "bild": "figur:ben:ruhig",
+          "text": "Yusuf (15) will bis zu den Osterferien einen Praktikumsplatz in einer Werkstatt finden. Das Beste daran: zeigen, was er kann. Sein inneres Hindernis: Vor Anrufen bei Fremden schiebt er alles auf. Sein Plan: „Wenn ich montags aus dem Bus steige, rufe ich einen Betrieb an, bevor ich zum Training gehe.“"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dein WOOP: Nimm dir für jeden Schritt eine Minute – erst vorstellen, dann schreiben."
+        },
+        {
+          "art": "schritte",
+          "linien": 2,
+          "items": [
+            {
+              "titel": "W – Mein Wunsch bis …",
+              "text": "Herausfordernd, aber machbar – und es ist deiner."
+            },
+            {
+              "titel": "O – Das Beste daran",
+              "text": "Wie fühlt es sich an, wenn du es geschafft hast?"
+            },
+            {
+              "titel": "O – Mein inneres Hindernis",
+              "text": "Was in dir könnte dich bremsen: eine Gewohnheit, ein Gedanke, ein Gefühl?"
+            },
+            {
+              "titel": "P – Mein Plan",
+              "text": "Wenn … (dein Hindernis kommt), dann … (das tust du sofort)."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Zerleg dein Ziel in drei Etappen. Unten steht der erste kleine Schritt.",
+          "hinweis": "Bei Yusuf: Lebenslauf fertig machen – drei Betriebe heraussuchen – jeden Montag einen anrufen."
+        },
+        {
+          "art": "leiter",
+          "stufen": 3,
+          "unten": "Start: diese Woche",
+          "oben": "Mein Ziel"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Plan B: Was tust du, wenn etwas schiefgeht?",
+          "hinweis": "Ein Rückschlag ist kein Scheitern. Es zählt, ob du am nächsten Tag weitermachst."
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Wenn ich eine Absage bekomme,",
+              "dann": "ärgere ich mich einen Abend – und rufe am nächsten Tag den nächsten Betrieb an."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wer hilft dir – und wann schaust du nach, wie weit du bist?"
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Zwischenstopp",
+            "Wer schaut mit mir drauf?",
+            "Wie weit bin ich? (0–10)"
+          ],
+          "zeilen": 3,
+          "beispiel": [
+            "in vier Wochen",
+            "meine Educatrice",
+            "3 – Lebenslauf ist fertig"
+          ],
+          "breiten": [
+            1.2,
+            1.7,
+            1.7
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wie wichtig ist dir dein Ziel – und wie zuversichtlich bist du?"
+        },
+        {
+          "art": "skala",
+          "frage": "So wichtig ist mir mein Ziel:",
+          "von": "gar nicht",
+          "bis": "sehr wichtig",
+          "stufen": 11
+        },
+        {
+          "art": "skala",
+          "frage": "So zuversichtlich bin ich:",
+          "von": "gar nicht",
+          "bis": "sehr zuversichtlich",
+          "stufen": 11
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Ich habe keine niedrigere Zahl gewählt, weil …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Wenn es hakt",
+          "punkte": [
+            "Einen Tag verpasst? Morgen weitermachen – das zählt mehr als ein perfekter Start.",
+            "Anpassen ist erlaubt: kleiner, genauer, zu einer anderen Uhrzeit.",
+            "Sprich mit der Person, die von deinem Ziel weiß."
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen machen mit WOOP aus einem Wunsch ein Ziel für die nächsten Monate, zerlegen es in Etappen und planen Rückschläge, Unterstützung und Zwischenstopps.",
+        "ablauf": [
+          "Yusufs Geschichte (3 Min.): Warum liegt sein Hindernis in ihm und nicht beim Betrieb?",
+          "Aufgaben 1 und 2 (14 Min.): je Schritt eine Minute mit geschlossenen Augen vorstellen, dann schreiben; nicht vorlesen lassen.",
+          "Nach dem Hindernis-Ball (7 Min.): Aufgaben 3 bis 5; bei den Skalen fragen: Warum keine niedrigere Zahl?",
+          "Zwischenstopps im Check-in einhalten; im Abschlussmodul kommt der Plan wieder auf den Tisch."
+        ],
+        "hintergrund": "Bloßes Ausmalen eines Ziels kann die Anstrengung senken; wirksamer ist mentales Kontrastieren: Wunsch, bestes Ergebnis, dann das innere Hindernis (Oettingen, 2014). WOOP ergänzt es um einen Wenn-dann-Plan, der eine Situation an eine Handlung koppelt (Gollwitzer, 1999); bei Jugendlichen steigerte diese Kombination die Selbstdisziplin beim Lernen (Duckworth et al., 2011). Nahe Etappen stärken Zutrauen mehr als ein fernes Ziel allein (Bandura & Schunk, 1981), und ein verpasster Tag schadet kaum (Lally et al., 2010). Die Frage „Warum keine niedrigere Zahl?“ (motivierende Gesprächsführung) lenkt auf Gründe, die schon für das Ziel sprechen (Miller & Rollnick, 2013).",
+        "quellen": [
+          "Oettingen, G. (2014). Rethinking Positive Thinking. New York: Current.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503.",
+          "Duckworth, A. L., Grant, H., Loew, B., Oettingen, G. & Gollwitzer, P. M. (2011). Self-regulation strategies improve self-discipline in adolescents: Benefits of mental contrasting and implementation intentions. Educational Psychology, 31(1), 17–26.",
+          "Bandura, A. & Schunk, D. H. (1981). Cultivating competence, self-efficacy, and intrinsic interest through proximal self-motivation. Journal of Personality and Social Psychology, 41(3), 586–598.",
+          "Lally, P., van Jaarsveld, C. H. M., Potts, H. W. W. & Wardle, J. (2010). How are habits formed: Modelling habit formation in the real world. European Journal of Social Psychology, 40(6), 998–1009.",
+          "Miller, W. R. & Rollnick, S. (2013). Motivational Interviewing (3rd ed.). New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Nur Wunsch, Hindernis und Plan ausfüllen; die Leitung schreibt auf Wunsch mit.",
+          "schwerer": "Für zwei Hindernisse je einen Wenn-dann-Plan formulieren und nach vier Wochen vergleichen."
+        },
+        "impulse": [
+          "Woran merkst du als Erstes, dass dein Hindernis kommt?",
+          "Wer sollte von deinem Ziel wissen – und wer lieber nicht?"
+        ],
+        "tipps": [
+          "Für kurze Ziele eignet sich das Toolbox-Blatt „Ziele erreichen mit WOOP“.",
+          "Die Ziele nicht einsammeln; nur mit Einverständnis notieren, wann nachgefragt werden soll."
+        ],
+        "achtung": "Ziele wie „weniger Streit zu Hause“ oder „weniger kiffen“ nicht in der Gruppe vertiefen; Einzelgespräch, bei Bedarf die Responsable einbeziehen.",
+        "material": "Berufsprofil, Skills-Buch"
+      }
+    }
+  }
+]

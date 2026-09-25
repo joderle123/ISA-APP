@@ -1,0 +1,1013 @@
+{
+  "einheiten": [
+    {
+      "id": "j3-e10",
+      "nr": 10,
+      "jahr": 3,
+      "modul": "j3-m3",
+      "titel": "Was kann ich, was will ich?",
+      "kurz": "Ein Interessen-Check nach Holland, sechs kurze Arbeitsproben und der Blick der Gruppe zeigen, was die Jugendlichen anzieht und was sie gut können – der Anfang ihres Berufsprofils.",
+      "dauer": 100,
+      "ziele": [
+        "ermitteln mit einem Interessen-Check ihren Interessen-Code aus den sechs Bereichen nach Holland",
+        "unterscheiden, was sie gern tun, von dem, was sie gut können, und tragen beides ins Berufsprofil ein",
+        "erproben in sechs kurzen Arbeitsproben, welche Tätigkeiten ihnen Energie geben",
+        "bekommen von der Gruppe begründete Rückmeldungen zu ihren Stärken und vergleichen sie mit ihrem Selbstbild"
+      ],
+      "material": [
+        "Gefühlsrad (A3, laminiert), Wäscheklammern mit Namen, Anspannungsskala 0–100 als Plakat",
+        "Schülerblatt „Was interessiert mich?“ für jede Person, dazu ein Klemmbrett",
+        "Schülerblatt „Mein Berufsprofil“ für jede Person und eine Mappe für das Modul „Zukunft und Beruf“",
+        "Sechs Plakate (A3) mit je einem Bereich und einem Symbol: Anpacken, Tüfteln, Gestalten, Helfen, Überzeugen, Ordnen – sie bleiben für Einheit 11 hängen",
+        "Für den Parcours: je Paar fünf Blatt A4-Papier und 30 cm Klebeband, zwei Bücherstapel und eine Schere; eine Rätselkarte; A5-Papier und Filzstifte; ein alter Kugelschreiber; ein Terminzettel und ein leeres Wochenraster; Klangschale oder Stoppuhr",
+        "Kärtchen (A7), je Person so viele, wie andere in der Gruppe sind, und für jede Person ein Umschlag mit ihrem Vornamen",
+        "Skills-Pässe und Stempel, Imbiss und Getränke (Allergien beachten)"
+      ],
+      "vorbereitung": [
+        "Die sechs Plakate in der Reihenfolge des Sechsecks an die Wände hängen: Anpacken, Tüfteln, Gestalten, Helfen, Überzeugen, Ordnen – so hängen verwandte Bereiche nebeneinander",
+        "Sechs Stationen auf Tischen aufbauen und die Aufgaben aus Schritt 6 auf Stationskarten schreiben; die Rätsel-Lösungen auf die Rückseite",
+        "Den Interessen-Check selbst ausfüllen: Die Leitung zeigt in Schritt 3 ihr eigenes Ergebnis",
+        "Die Umschläge beschriften und für jede Person schon eine eigene Karte für die Stärken-Post schreiben"
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-interessen-check",
+        "skills-berufsprofil",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Was wolltest du als Kind werden?"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Vom Umweg zum eigenen Weg: das neue Modul"
+        },
+        {
+          "min": "15–35",
+          "phase": "uebung",
+          "titel": "Interessen-Check und das Sechseck"
+        },
+        {
+          "min": "35–45",
+          "phase": "uebung",
+          "titel": "Mögen und Können: vier Felder"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–80",
+          "phase": "aktiv",
+          "titel": "Parcours: sechs Arbeitsproben"
+        },
+        {
+          "min": "80–90",
+          "phase": "uebung",
+          "titel": "Stärken-Post: der Blick der Gruppe"
+        },
+        {
+          "min": "90–95",
+          "phase": "skill",
+          "titel": "Skill: Gedankenschiffchen für Zukunftssorgen"
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Réckbléck und Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: Was wolltest du als Kind werden?",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Gefühlsrad und Anspannungsskala liegen in der Mitte. Reihum steckt jede Person ihre Klammer an ein Wort, nennt ihre Zahl von 0 bis 100 und beantwortet, wenn sie mag, die Zusatzfrage: Was wolltest du als Kind einmal werden? Die Leitung beginnt, am besten mit einem Kinderwunsch, der mit ihrem heutigen Beruf nichts zu tun hat. Die Wünsche ohne Namen an der Tafel sammeln und nicht kommentieren.",
+          "sagen": [
+            "Gefühl, Zahl – und wenn ihr mögt: Was wolltet ihr als Kind mal werden? Feuerwehrfrau, YouTuber, Dinoforscher, alles zählt.",
+            "Ich fange an: Als Kind wollte ich … werden. Heute mache ich etwas ganz anderes – so viel zum geraden Weg."
+          ],
+          "tipp": "Die Kinderwünsche an der Tafel stehen lassen: Nach dem Interessen-Check lässt sich vergleichen, ob im Wunsch von damals schon ein Bereich von heute steckt.",
+          "wennEsKippt": "Kommen nur Spaßantworten („Millionär“, „Rentner“), mitlachen und kurz nachfragen: Was hätte dir daran gefallen? Hinter „Millionär“ steckt oft Freiheit oder Sicherheit – genau solche Werte zählen bei der Berufswahl.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Vom Umweg zum eigenen Weg: das neue Modul",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "Kurz an Einheit 9 anknüpfen: Fehler und Umwege gehören zum Lernen, und das kleine Wort „noch“ macht aus „Ich kann das nicht“ einen nächsten Schritt. Dann das neue Modul vorstellen und die vier Einheiten an die Tafel schreiben (Tabelle). Am Ende des Moduls hat jede Person ein eigenes Berufsprofil und ein Vorstellungsgespräch im Rollenspiel hinter sich. Klar sagen, dass niemand mit 15 wissen muss, was er werden will.",
+          "sagen": [
+            "Letztes Mal ging es ums Hinfallen und Weitermachen. Das brauchen wir jetzt, denn kaum jemand kommt auf geradem Weg zu seinem Beruf.",
+            "Ihr müsst heute nichts entscheiden. Wir sammeln Hinweise: Was zieht euch an, und was könnt ihr gut?"
+          ],
+          "tabelle": {
+            "spalten": [
+              "Einheit",
+              "Leitfrage"
+            ],
+            "zeilen": [
+              [
+                "10 · Was kann ich, was will ich?",
+                "Was zieht mich an, was kann ich gut?"
+              ],
+              [
+                "11 · Berufe entdecken",
+                "Welche Berufe gibt es – und wie komme ich dahin?"
+              ],
+              [
+                "12 · Bewerben und vorstellen",
+                "Wie zeige ich in Bewerbung und Gespräch, was ich kann?"
+              ],
+              [
+                "13 · Ziele, die tragen",
+                "Wie wird aus einem Wunsch ein Plan?"
+              ]
+            ]
+          }
+        },
+        {
+          "titel": "Interessen-Check und das Sechseck",
+          "dauer": 20,
+          "phase": "uebung",
+          "text": "Das Blatt „Was interessiert mich?“ austeilen. Jede Person kreuzt allein an, was sie gern tun würde – egal, ob sie es schon kann – und zählt die Kreuze pro Bereich (Aufgabe 1, etwa 8 Min.). Dann an der Tafel das Sechseck zeichnen (Tabelle) und erklären: Nachbarn sind einander ähnlich, Gegenüber liegen weit auseinander. Jede Person trägt ihre Zahlen ins Sechseck auf dem Blatt ein und bestimmt ihren Interessen-Code aus den zwei stärksten Bereichen (Aufgaben 2 und 3). Die Leitung zeigt ihr eigenes Ergebnis zuerst.",
+          "sagen": [
+            "Kreuzt nicht an, was ihr könnt, sondern was ihr gern machen würdet. Ob ihr es schon könnt, ist hier egal.",
+            "Liegen eure zwei Bereiche nebeneinander, passen sie gut zusammen. Liegen sie gegenüber, ist das nicht falsch – nur seltener, und oft besonders interessant.",
+            "Stimmt das Ergebnis für euch? Ein Test gibt Hinweise, kein Urteil. Das letzte Wort habt ihr."
+          ],
+          "tabelle": {
+            "spalten": [
+              "Bereich",
+              "Nachbarn im Sechseck",
+              "Gegenüber"
+            ],
+            "zeilen": [
+              [
+                "Anpacken",
+                "Tüfteln, Ordnen",
+                "Helfen"
+              ],
+              [
+                "Tüfteln",
+                "Anpacken, Gestalten",
+                "Überzeugen"
+              ],
+              [
+                "Gestalten",
+                "Tüfteln, Helfen",
+                "Ordnen"
+              ],
+              [
+                "Helfen",
+                "Gestalten, Überzeugen",
+                "Anpacken"
+              ],
+              [
+                "Überzeugen",
+                "Helfen, Ordnen",
+                "Tüfteln"
+              ],
+              [
+                "Ordnen",
+                "Überzeugen, Anpacken",
+                "Gestalten"
+              ]
+            ]
+          },
+          "tipp": "Gleichstand ist häufig und kein Problem: Dann kommen drei Bereiche in den Code. Wer überall wenig ankreuzt, nimmt die zwei Bereiche, die am wenigsten langweilig klingen – auch das ist eine Auskunft.",
+          "wennEsKippt": "Kreuzt jemand demonstrativ nichts an, nicht diskutieren, sondern fragen: Was machst du in deiner Freizeit, wenn dich niemand stört? Daraus zusammen zwei, drei Kreuze ableiten. Fallen Sprüche wie „Helfen ist was für Mädchen“, kurz und klar gegenhalten: In der Pflege arbeiten Männer, in der IT Frauen – der Code gehört der Person, nicht ihrem Geschlecht.",
+          "blatt": "skills-interessen-check"
+        },
+        {
+          "titel": "Mögen und Können: vier Felder",
+          "dauer": 10,
+          "phase": "uebung",
+          "text": "Den Unterschied an der Tafel festhalten: Interessen sind, was mich anzieht; Stärken sind, was mir gelingt. Im Berufsprofil trägt jede Person zuerst ihren Interessen-Code ein (Aufgabe 1) und sortiert dann Tätigkeiten aus Schule, Freizeit und Kurs in die vier Felder (Aufgabe 2). Die Leitung zeichnet das Schema an die Tafel und füllt es zuerst mit eigenen Beispielen, auch mit einer Tätigkeit, die sie kann, aber nicht mag. Die Felder werden nicht vorgelesen; wer mag, zeigt einer Person seiner Wahl sein Kraftfeld.",
+          "sagen": [
+            "Ein Beispiel von mir: Abrechnungen kann ich gut, aber sie kosten mich Kraft. Die gehören bei mir ins Feld oben rechts.",
+            "Das Lernfeld ist kein Makel – denkt an das Wort „noch“ von letzter Woche. Genau dort lohnt sich ein Praktikum."
+          ],
+          "punkte": [
+            "Mag ich und kann ich: mein Kraftfeld – hier liegen Berufe, die Energie geben.",
+            "Mag ich, kann ich noch nicht: mein Lernfeld – hier lohnt sich Üben.",
+            "Kann ich, mag ich aber nicht: kostet Kraft – gut als Teil eines Berufs, schlecht als Hauptsache.",
+            "Weder noch: nicht mein Feld – jedenfalls nicht jetzt."
+          ],
+          "tipp": "Wer im Kraftfeld nichts findet, schaut in den Skills-Pass und in den Skills-Radar aus Einheit 2: Dort stehen meist mehr Stärken, als man gerade im Kopf hat.",
+          "wennEsKippt": "Schreibt jemand nur „Zocken“ ins Kraftfeld, nachfragen, was genau daran gelingt: Taktik planen, sich im Team absprechen, lange dranbleiben. Das sind Stärken, die auch in Berufen zählen, und sie gehören genau so ins Feld.",
+          "blatt": "skills-berufsprofil"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Gemeinsam essen, Fenster auf. Die Leitung lässt das Thema ruhen; wer von sich aus über Berufe oder Sorgen um die Zukunft spricht, bekommt ein offenes Ohr und, wenn nötig, ein Gespräch nach der Einheit."
+        },
+        {
+          "titel": "Parcours: sechs Arbeitsproben",
+          "dauer": 20,
+          "phase": "aktiv",
+          "text": "An jeder der sechs Stationen liegt eine Karte mit einer Aufgabe für drei Minuten (Liste). Die Jugendlichen gehen zu zweit von Station zu Station; auf das Signal der Klangschale wechseln alle im Uhrzeigersinn. Nach jeder Station kreuzt jede Person auf ihrem Blatt an, ob die Aufgabe Energie gegeben oder gekostet hat (Aufgabe 4). Es gibt nichts zu gewinnen: Es zählt, wie sich die Arbeit angefühlt hat, nicht, wie gut sie gelungen ist. Zum Schluss stellen sich alle zu dem Plakat, an dem es sich am besten angefühlt hat.",
+          "sagen": [
+            "Drei Minuten pro Station. Merkt euch, wo die Zeit schnell vergangen ist – das ist ein gutes Zeichen.",
+            "Stellt euch zu dem Plakat, an dem es sich heute am besten angefühlt hat. Passt das zu eurem Test von vorhin?"
+          ],
+          "punkte": [
+            "Anpacken – Papierbrücke: Baut mit fünf Blatt Papier und 30 cm Klebeband eine Brücke zwischen zwei Bücherstapeln im Abstand von 20 cm, die eine Schere trägt.",
+            "Tüfteln – drei Rätsel: Welche Zahl folgt auf 2, 3, 5, 9, 17? Handy und Hülle kosten zusammen 110 Euro, das Handy kostet 100 Euro mehr als die Hülle – was kostet die Hülle? Wie misst du mit einer 3-Liter- und einer 5-Liter-Flasche genau 4 Liter ab?",
+            "Lösungen für die Rückseite: 33, weil sich der Abstand jedes Mal verdoppelt · 5 Euro · die 5-Liter-Flasche füllen, damit die 3-Liter-Flasche füllen, diese leeren, die übrigen 2 Liter hineingießen, die 5-Liter-Flasche erneut füllen und die 3-Liter-Flasche auffüllen: Es bleiben 4 Liter.",
+            "Gestalten – Logo in drei Minuten: Entwerft ein Logo oder einen Spruch für den Skills-Kurs.",
+            "Helfen – Erklär es mir: Erklärt einander einen Skill, den ihr kennt, so, dass die andere Person ihn danach allein vormachen kann.",
+            "Überzeugen – 30 Sekunden: Verkauft einander einen alten Kugelschreiber. Wer kauft, sagt erst nach 30 Sekunden Ja oder Nein.",
+            "Ordnen – Chaos im Kalender: Macht aus dem Terminzettel einen übersichtlichen Wochenplan. Auf dem Zettel: Training Di und Do 18 Uhr · Mathetest am Do · Nachhilfe Di 16 Uhr · Arzt Mi 16.30 Uhr · Referat bis Fr abgeben · Geburtstag einer Freundin am Sa · Bus um 7.12 Uhr."
+          ],
+          "tipp": "Bei nur zwei Jugendlichen laufen beide als Paar, und die Leitung macht an jeder Station mit; bei wenig Energie reichen vier Stationen mit je vier Minuten.",
+          "wennEsKippt": "Wird es zum Wettkampf („Unsere Brücke ist besser“), kurz anhalten und daran erinnern, worum es geht: Nicht die beste Brücke zählt, sondern wie es sich beim Bauen angefühlt hat. Blockiert jemand an einer Station völlig, darf er dort beobachten und notiert, was die andere Person gut macht – Stoff für die Stärken-Post.",
+          "blatt": "skills-interessen-check"
+        },
+        {
+          "titel": "Stärken-Post: der Blick der Gruppe",
+          "dauer": 10,
+          "phase": "uebung",
+          "text": "Jede Person bekommt so viele Kärtchen, wie andere in der Gruppe sind, und schreibt für jede Person einen Satz nach einem der Muster von der Tafel (Liste). Grundlage ist, was sie heute im Parcours oder sonst im Kurs wirklich beobachtet hat – nie das Aussehen. Die Kärtchen kommen verdeckt in die Namens-Umschläge. Während die Gruppe Aufgabe 4 auf dem Interessen-Check abschließt, sieht die Leitung alle Karten durch, legt Ironisches beiseite und steckt in jeden Umschlag ihre eigene Karte. Dann liest jede Person ihre Post still und überträgt den Satz, der sie am meisten überrascht, ins Berufsprofil (Aufgaben 1 und 3).",
+          "sagen": [
+            "Schreibt, was ihr gesehen habt: eine Situation, nicht nur ein Wort. „Du bist nett“ hilft niemandem, „Du hast beim Brückenbau geduldig erklärt“ schon.",
+            "Lest eure Post für euch. Was andere in euch sehen, ist manchmal genau das, was man selbst übersieht."
+          ],
+          "punkte": [
+            "Ich habe gesehen, dass du … gut kannst – zum Beispiel, als du …",
+            "Im Parcours warst du stark bei …, weil …",
+            "Ich kann mir vorstellen, dass dir ein Beruf liegt, in dem man …"
+          ],
+          "tipp": "Mit Neuen in der Gruppe schreibt jede Person nur über den Parcours von heute. Deshalb kommt die Stärken-Post nach dem Parcours und nicht davor.",
+          "wennEsKippt": "Findet die Leitung eine verletzende Karte, wird sie kommentarlos aussortiert und später unter vier Augen mit der schreibenden Person besprochen, nicht vor der Gruppe. Reagiert jemand abwehrend („Stimmt eh nicht“), nicht überreden: Die Karten dürfen im Umschlag bleiben und später gelesen werden.",
+          "blatt": "skills-berufsprofil"
+        },
+        {
+          "titel": "Skill: Gedankenschiffchen für Zukunftssorgen",
+          "dauer": 5,
+          "phase": "skill",
+          "text": "Im Sitzen, Augen zu oder Blick auf einen Punkt am Boden. Die Leitung lädt ein, sich einen ruhigen Fluss vorzustellen, auf dem kleine Schiffe vorbeiziehen. Jeder Gedanke, der auftaucht – auch „Ich finde eh nichts“ oder „Was, wenn ich es nicht schaffe?“ –, wird auf ein Schiff gesetzt und darf weiterfahren, ohne dass man mitfährt. Nach zwei, drei Minuten zurückholen und fragen, wie das war.",
+          "sagen": [
+            "Setzt jeden Gedanken auf ein Schiff. Ihr müsst ihn nicht wegschieben und nicht glauben. Schaut nur zu, wie er weiterfährt.",
+            "Sorgen um die Zukunft sind normal. Es sind Gedanken, keine Vorhersagen."
+          ],
+          "tipp": "Wer die Übung schon kennt, darf sie anleiten; die Leitung ergänzt nur die Beispiele für Zukunftsgedanken."
+        },
+        {
+          "titel": "Réckbléck und Skills-Pass",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Blitzlicht mit einer Frage: Was hat dich heute an dir selbst überrascht? Wer mag, antwortet mit einem Satz, sonst reicht ein Wort. Danach der Eintrag in den Skills-Pass und der Stempel. Interessen-Check und Berufsprofil kommen in die Modul-Mappe; die Umschläge gehören den Jugendlichen und dürfen mit nach Hause.",
+          "sagen": [
+            "Was hat euch heute an euch selbst überrascht – im Test, im Parcours oder in eurer Post?",
+            "Für den Pass: mein Interessen-Code und eine Stärke, die andere in mir sehen."
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Nächstes Mal sucht ihr Berufe zu eurem Code – und trefft ein paar Profis, die alles andere als geradeaus zu ihrem Beruf gekommen sind.",
+      "hintergrund": "Holland (1997) ordnet berufliche Interessen sechs Typen zu – praktisch-technisch, forschend, künstlerisch, sozial, unternehmerisch und ordnend-verwaltend – und beschreibt Arbeitsumwelten nach demselben Muster. Wer eine Umwelt findet, die zu seinen Interessen passt, ist eher zufrieden und bleibt eher dabei. Im Sechseck liegen verwandte Typen nebeneinander; die meisten Menschen und Berufe verbinden zwei oder drei. Für 15-Jährige ist ein solcher Check ein Anstoß, kein Urteil: Nach Super (1980) beginnt in diesem Alter die Phase der Erkundung, in der Interessen durch Ausprobieren klarer werden – deshalb folgt auf den Papiertest ein Parcours mit Arbeitsproben. Das Vier-Felder-Schema trennt Mögen und Können. Die Stärken-Post verkleinert den ‚blinden Fleck‘ des Johari-Fensters (Luft & Ingham, 1955): Andere sehen Stärken, die man selbst übersieht.",
+      "quellen": [
+        "Holland, J. L. (1997). Making Vocational Choices (3rd ed.). Odessa, FL: Psychological Assessment Resources.",
+        "Super, D. E. (1980). A life-span, life-space approach to career development. Journal of Vocational Behavior, 16(3), 282–298.",
+        "Luft, J. & Ingham, H. (1955). The Johari window, a graphic model of interpersonal awareness. Proceedings of the Western Training Laboratory in Group Development. Los Angeles: University of California."
+      ],
+      "achtung": "Selbst- und Fremdbild berühren den Selbstwert. Auf den Karten der Stärken-Post nur konkrete, wohlwollende Beobachtungen zulassen; die Leitung liest alle Karten vor dem Verteilen. Nicht nach Berufen oder Arbeitslosigkeit der Eltern fragen. Äußert jemand Hoffnungslosigkeit über die eigene Zukunft („Aus mir wird eh nichts“), das nicht in der Gruppe diskutieren, sondern ernst nehmen, ein Einzelgespräch anbieten und bei anhaltender Niedergeschlagenheit den SePAS oder die zuständige Leitung (Responsable) einbeziehen. Erzählt jemand von Gewalt, Missbrauch, Selbstverletzung oder Suizidgedanken, wird das nicht in der Gruppe vertieft, sondern zeitnah im Einzelgespräch aufgegriffen und nach dem internen Schutzkonzept weitergegeben; die zuständige Leitung (Responsable) wird am selben Tag informiert."
+    },
+    {
+      "id": "j3-e11",
+      "nr": 11,
+      "jahr": 3,
+      "modul": "j3-m3",
+      "titel": "Berufe entdecken",
+      "kurz": "Die Jugendlichen sammeln Berufe zu ihrem Interessen-Code, lernen die Wege über Lycée und Ausbildung kennen, befragen im Karussell Profis mit Umwegen und planen ein echtes Interview und ihr Praktikum.",
+      "dauer": 100,
+      "ziele": [
+        "finden zu ihrem Interessen-Code mindestens drei Berufe oder Berufsfelder, die sie neugierig machen",
+        "kennen die wichtigsten Wege über Lycée und Berufsausbildung und erleben an Beispielen, dass Umwege dazugehören",
+        "stellen im Interview-Karussell offene Fragen und fragen gezielt nach",
+        "planen ein Interview mit einer berufstätigen Person und bereiten sich auf schwierige Momente im Praktikum vor"
+      ],
+      "material": [
+        "Gefühlsrad (A3, laminiert), Wäscheklammern, Anspannungsskala 0–100",
+        "Modul-Mappen mit Interessen-Check und Berufsprofil aus Einheit 10",
+        "Die sechs Bereichs-Plakate aus Einheit 10, dicke Stifte in zwei Farben",
+        "Schülerblatt „Profi-Karten“ einmal auf festem Papier, ausgeschnitten",
+        "Schülerblatt „Berufe aus der Nähe“ für jede Person",
+        "Eine aktuelle Übersicht über Schul- und Ausbildungswege in Luxemburg, etwa vom SePAS oder von der Maison de l’orientation",
+        "Stühle für einen Innen- und einen Außenkreis, Klangschale oder Stoppuhr",
+        "Skills-Pässe und Stempel, Imbiss und Getränke"
+      ],
+      "vorbereitung": [
+        "Das Tafelbild „Viele Wege“ (Schritt 4) mit dem aktuellen Stand abgleichen, etwa mit dem SePAS des Lycée: Die Leitung prüft Namen der Klassen, Diplome und Fristen für Ausbildungsplätze und ergänzt Angebote vor Ort",
+        "Die Profi-Karten auf festes Papier drucken und schneiden; bei mehr als sechs Jugendlichen zwei Sätze",
+        "Zwei, drei Erwachsene im Haus fragen, ob sie für ein kurzes Interview bereitstehen – aus Küche, Technik, Sekretariat oder Erziehung –, für Jugendliche, die sonst niemanden finden",
+        "Den eigenen Berufsweg mit seinen Kurven in Stichworten notieren, falls die Leitung ihn erzählen möchte"
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-berufsprofil",
+        "skills-profi-karten",
+        "skills-berufe-erkunden",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: ein Beruf für einen Tag"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Vom Interessen-Code zu Berufen"
+        },
+        {
+          "min": "15–30",
+          "phase": "uebung",
+          "titel": "Berufe-Markt an den sechs Plakaten"
+        },
+        {
+          "min": "30–45",
+          "phase": "input",
+          "titel": "Viele Wege: Lycée, Ausbildung, Umwege"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–80",
+          "phase": "aktiv",
+          "titel": "Interview-Karussell mit Profi-Karten"
+        },
+        {
+          "min": "80–90",
+          "phase": "uebung",
+          "titel": "Mein Interview und mein Praktikum planen"
+        },
+        {
+          "min": "90–95",
+          "phase": "skill",
+          "titel": "Skill: der erste Satz mit Anker"
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Réckbléck und Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: ein Beruf für einen Tag",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Gefühlsrad und Anspannungsskala wie gewohnt, die Leitung beginnt. Dazu die freiwillige Zusatzfrage: Welchen Beruf würdest du gern einen einzigen Tag lang ausprobieren – ohne Ausbildung, ohne Risiko? Ergiebiger als der Beruf ist das Warum: Die Leitung fragt einmal nach und notiert die Berufe für den Berufe-Markt.",
+          "sagen": [
+            "Gefühl, Zahl – und: Welchen Beruf würdet ihr gern mal einen Tag lang machen, nur zum Ausprobieren?",
+            "Pilotin, Tierpfleger, Koch im Sternerestaurant – alles erlaubt. Was reizt dich daran?"
+          ],
+          "tipp": "Hinter dem Beruf für einen Tag steckt oft ein Bereich aus dem Sechseck: Wer einen Tag lang Pilot sein will, sucht vielleicht Technik, Verantwortung oder Freiheit.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Vom Interessen-Code zu Berufen",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "Die Modul-Mappen austeilen; jede Person schaut kurz auf ihren Interessen-Code und die Stärken-Post im Berufsprofil. Dann die drei Fragen des Tages an die Tafel schreiben: Welche Berufe gibt es? Wie komme ich dahin? Wie finde ich heraus, wie ein Beruf wirklich ist? An die Kinderwünsche aus Einheit 10 erinnern: Wünsche ändern sich, und das ist gut so.",
+          "sagen": [
+            "Schaut kurz auf euren Code von letzter Woche. Heute sucht ihr Berufe dazu – und Menschen, die sie machen.",
+            "Drei Fragen für heute: Was gibt es? Wie komme ich hin? Und wie ist es wirklich?"
+          ]
+        },
+        {
+          "titel": "Berufe-Markt an den sechs Plakaten",
+          "dauer": 15,
+          "phase": "uebung",
+          "text": "Die sechs Bereichs-Plakate hängen noch vom letzten Mal. Zu zweit fünf Minuten von Plakat zu Plakat gehen und jeden Beruf notieren, der passt – auch Berufe aus Nachbarschaft, Verein oder Serien. Dann ergänzt die Leitung in einer zweiten Farbe Berufe, die niemand genannt hat (Liste), vor allem aus Bereichen, in denen in Luxemburg viele Menschen arbeiten, etwa Handel, Bau, Pflege, Banken und Logistik. Zum Schluss stellt sich jede Person zu den Plakaten ihres Codes, wählt drei Berufe, die sie neugierig machen, und trägt sie mit ihren drei wichtigsten Arbeitswerten ins Berufsprofil ein (Aufgaben 4 und 5).",
+          "sagen": [
+            "Schreibt alles auf, was euch einfällt – auch Berufe, bei denen ihr nicht genau wisst, was man da macht.",
+            "Sucht euch drei Berufe aus, bei denen ihr denkt: Da würde ich gern mal reinschauen. Das ist keine Entscheidung, nur Neugier."
+          ],
+          "punkte": [
+            "Anpacken: Kfz-Mechatronik, Elektrik, Heizung und Sanitär, Maurer, Schreiner, Gärtner, Landwirtschaft, Bäckerei, Küche",
+            "Tüfteln: IT-Technik, Elektronik, Labor, technisches Zeichnen, Vermessung, Informatik mit Studium",
+            "Gestalten: Friseur, Floristik, Mediengestaltung, Fotografie, Dekoration, Malerei und Lackierung, Mode",
+            "Helfen: Pflege, Erziehung, Physiotherapie, Rettungsdienst, Sport und Freizeit, Arztpraxis",
+            "Überzeugen: Verkauf und Handel, Service in Restaurant und Hotel, Versicherung, Immobilien, eigenes Geschäft",
+            "Ordnen: Büro und Verwaltung, Bank, Logistik und Lager, Buchhaltung, öffentlicher Dienst"
+          ],
+          "tipp": "Viele Jugendliche kennen vor allem die Berufe aus ihrem Umfeld. Die zweite Farbe macht sichtbar, wie viel es darüber hinaus gibt – oft der eigentliche Aha-Moment der Übung.",
+          "wennEsKippt": "Schreiben einige nur Traumberufe wie Influencer oder Profi-Gamer, stehen lassen und nachfragen, welche Tätigkeiten dahinterstecken: Videos schneiden, eine Community organisieren, Technik verstehen. Diese Tätigkeiten führen zu echten Berufen im selben Bereich.",
+          "blatt": "skills-berufsprofil"
+        },
+        {
+          "titel": "Viele Wege: Lycée, Ausbildung, Umwege",
+          "dauer": 15,
+          "phase": "input",
+          "text": "Das Tafelbild Schritt für Schritt entwickeln (Tabelle) und nur so genau werden, wie die aktuelle Übersicht es erlaubt; Einzelheiten ergänzt die Leitung aus ihren Unterlagen. Dann neben die gerade Linie von der Schule zum Beruf eine Zickzacklinie zeichnen und erzählen, wie viele Kurven echte Wege haben – gern am eigenen Beispiel. Zum Schluss die Anlaufstellen nennen. Jede Person skizziert im Berufsprofil ihren möglichen Weg in vier Etappen und schätzt ein, wie klar ihr Berufswunsch gerade ist (Aufgabe 6); wer einen Schritt nicht kennt, setzt ein Fragezeichen und fragt im Interview nach.",
+          "sagen": [
+            "Kaum jemand fährt diese gerade Linie. Klassen wiederholen, Schule wechseln, eine Ausbildung abbrechen und neu anfangen – das sind keine Sackgassen, sondern Kurven.",
+            "Ein Abschluss geht auch mit 20 oder 30 noch. Es zählt der nächste Schritt, nicht der perfekte Plan.",
+            "Hilfe gibt es im Lycée beim SePAS, außerdem bei der Maison de l’orientation und bei der Berufsberatung der ADEM."
+          ],
+          "tabelle": {
+            "spalten": [
+              "Weg",
+              "Was dort passiert",
+              "Wohin er führen kann"
+            ],
+            "zeilen": [
+              [
+                "Enseignement secondaire classique (ESC)",
+                "viel Theorie, Sprachen und Mathematik",
+                "Abschluss, mit dem man studieren kann"
+              ],
+              [
+                "Enseignement secondaire général (ESG)",
+                "nach den unteren Klassen weiter im allgemeinen Zweig oder in die Berufsausbildung",
+                "Abschluss für Studium oder Beruf"
+              ],
+              [
+                "Voie de préparation",
+                "mehr Zeit, Unterricht in Modulen, viel Praxis",
+                "Berufsausbildung oder Wechsel in eine Klasse des ESG"
+              ],
+              [
+                "Berufsausbildung: CCP",
+                "sehr praktisch, vor allem im Betrieb",
+                "Arbeit im Beruf oder weiterlernen"
+              ],
+              [
+                "Berufsausbildung: DAP",
+                "Fachkraft werden, meist mit Lehrvertrag: Schule und Betrieb",
+                "Arbeit als Fachkraft, im Handwerk später auch die Meisterprüfung"
+              ],
+              [
+                "Berufsausbildung: DT",
+                "Technikerin oder Techniker, mehr Schule und Praktika",
+                "Arbeit oder weiterlernen"
+              ],
+              [
+                "Später einsteigen",
+                "Abschlüsse nachholen, etwa in Kursen für Erwachsene",
+                "auch mit 20 oder 30 noch ein Abschluss"
+              ]
+            ]
+          },
+          "tipp": "Die Leitung erzählt, wenn sie mag, ihren eigenen Weg mit allen Kurven. Nichts macht die Botschaft glaubwürdiger als eine erwachsene Person, bei der auch nicht alles glatt lief.",
+          "wennEsKippt": "Kommt „Mit meinen Noten wird das eh nichts“, nicht beschwichtigen, sondern auf die Zeile „Später einsteigen“ und auf die Profis nach der Pause verweisen. Wirkt jemand danach bedrückt, in der Pause kurz nachfragen und ein Gespräch mit dem SePAS anbieten.",
+          "blatt": "skills-berufsprofil"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Gemeinsam essen und das Thema ruhen lassen. Gegen Ende der Pause stellt die Leitung mit zwei Freiwilligen die Stühle für Innen- und Außenkreis."
+        },
+        {
+          "titel": "Interview-Karussell mit Profi-Karten",
+          "dauer": 20,
+          "phase": "aktiv",
+          "text": "Innen- und Außenkreis bilden, je zwei Stühle gegenüber. Wer innen sitzt, zieht eine Profi-Karte, liest sie eine Minute und spielt diesen Profi in der Ich-Form; was nicht auf der Karte steht, darf realistisch erfunden werden. Wer außen sitzt, interviewt mit Fragen aus dem Fragen-Speicher (Blatt „Berufe aus der Nähe“, Aufgabe 1) und fragt mindestens einmal nach. Nach vier Minuten rückt der Außenkreis einen Platz weiter; nach zwei Runden werden die Rollen getauscht und neue Karten gezogen. Zum Schluss sammelt die Leitung an der Tafel, was die Profis von Praktikanten erwarten und welcher Umweg überrascht hat.",
+          "sagen": [
+            "Ihr seid jetzt Tiago, Aylin oder Nora. Sprecht in der Ich-Form und bleibt in der Rolle, auch wenn eine Frage schwierig ist.",
+            "Außen: Eine Frage reicht nicht. Fragt mindestens einmal nach – Wie meinst du das? Hast du ein Beispiel?",
+            "Was erwarten die Profis von Praktikanten? Und welcher Umweg hat euch überrascht?"
+          ],
+          "tipp": "Bei nur zwei Jugendlichen spielt die Leitung selbst einen Profi und wechselt mit ihnen ab. Bei trockenem Wetter lassen sich die Interviews im Gehen führen, eine Runde ums Gebäude pro Interview.",
+          "wennEsKippt": "Wird die Profi-Rolle zur Show („Ich verdiene zehntausend im Monat“), kurz anhalten und fragen: Würde der Profi auf der Karte das so sagen? Stockt ein Interview, gibt die Leitung eine Frage vor, die fast immer trägt: Was war dein schwierigster Tag im Beruf – und warum bist du trotzdem geblieben?",
+          "blatt": "skills-profi-karten"
+        },
+        {
+          "titel": "Mein Interview und mein Praktikum planen",
+          "dauer": 10,
+          "phase": "uebung",
+          "text": "Jede Person arbeitet am Blatt „Berufe aus der Nähe“ weiter: fünf Fragen endgültig auswählen, zwei Menschen aufschreiben, die sie fragen könnte, und festlegen, wie und wann sie fragt (Aufgaben 1 und 2). Dann zwei schwierige Momente im Praktikum mit Wenn-dann-Sätzen planen (Aufgabe 5); die Tipps der Profis von der Tafel helfen dabei. Die Leitung geht herum und hilft vor allem denen, die niemanden zum Fragen finden – mit den Erwachsenen im Haus, die sie vorab gefragt hat.",
+          "sagen": [
+            "Wen kennt ihr, der arbeitet? Die Trainerin, der Nachbar, die Frau aus der Kantine, der Educateur hier im Haus – alle zählen.",
+            "Das Interview bis Einheit 13 ist freiwillig. Wer eins macht, erzählt uns, wenn er mag, was er erfahren hat."
+          ],
+          "tipp": "Ein erstes Interview im vertrauten Rahmen, etwa mit der Köchin oder dem Hausmeister, senkt die Schwelle für das nächste mit einer fremden Person. Plant die Gruppe einen Betriebsbesuch als Joker-Einheit, dienen die ausgewählten Fragen dort als Auftrag.",
+          "wennEsKippt": "Will jemand gar kein Interview planen, nicht drängen: Er trägt ein, was er im Karussell erfahren hat, und plant nur den Praktikumsteil. Nennt jemand Angehörige als Interviewpartner, das annehmen, aber selbst nie danach fragen.",
+          "blatt": "skills-berufe-erkunden"
+        },
+        {
+          "titel": "Skill: der erste Satz mit Anker",
+          "dauer": 5,
+          "phase": "skill",
+          "text": "Alle stehen im Kreis. Zuerst der Anker: Füße fest auf den Boden, Schultern sinken lassen, einmal lang ausatmen. Dann sagt jede Person ihren ersten Satz für das Interview leise vor sich hin, beim zweiten Mal in normaler Lautstärke, beim dritten Mal mit Blick zu einer anderen Person. Zum Schluss nachspüren: Was war beim dritten Mal anders?",
+          "sagen": [
+            "Füße spüren, lang ausatmen – dann erst der Satz. Die zwei Sekunden vorher gehören euch.",
+            "Guten Tag, ich heiße … Ich interessiere mich für Ihren Beruf. Hätten Sie eine Viertelstunde Zeit für ein paar Fragen?"
+          ],
+          "tipp": "Wer den Satz nicht laut sagen mag, sagt ihn innerlich; der Anker wirkt trotzdem. Der Satz kommt aufs Blatt oder ins Handy, damit er beim echten Anruf griffbereit ist."
+        },
+        {
+          "titel": "Réckbléck und Skills-Pass",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Blitzlicht: Welche Antwort aus dem Karussell ist bei dir hängen geblieben? Danach der Eintrag in den Skills-Pass und der Stempel. Die Mappen kommen zurück in die Box; das Blatt „Berufe aus der Nähe“ dürfen die Jugendlichen mitnehmen, um ihr Interview vorzubereiten.",
+          "sagen": [
+            "Ein Satz: Welche Antwort aus dem Karussell ist bei euch hängen geblieben?",
+            "Für den Pass: ein Beruf, in den ich mal reinschauen will – und wen ich dazu fragen könnte."
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Nächstes Mal wird es ernst, aber nur zur Übung: Ihr prüft, was in eine Bewerbung gehört, und übt ein Vorstellungsgespräch – mit Skills gegen das Herzklopfen.",
+      "hintergrund": "Nach Super (1980) ist Berufswahl kein einmaliger Entschluss, sondern ein Prozess über viele Jahre; mit 15 beginnt die Erkundung, in der Jugendliche Berufe kennenlernen, ausprobieren und wieder verwerfen. Was sie dabei erleben, prägt ihre Selbstwirksamkeit: Neben eigenen Erfolgen wirken stellvertretende Erfahrungen – zu sehen, dass jemand „wie ich“ es geschafft hat (Bandura, 1977). Deshalb erzählen die Profi-Karten bewusst von wiederholten Klassen, Abbrüchen und späten Starts. Die Längsschnittstudie von Werner und Smith (1992) zeigt, dass viele Jugendliche mit großen Schwierigkeiten als junge Erwachsene über zweite Chancen wie Weiterbildung ihren Weg fanden. Interviews mit Berufstätigen und Praktika liefern, was kein Test leisten kann: ein realistisches Bild vom Arbeitsalltag. Das Karussell übt dafür offene Fragen und Nachfragen im geschützten Rahmen.",
+      "quellen": [
+        "Super, D. E. (1980). A life-span, life-space approach to career development. Journal of Vocational Behavior, 16(3), 282–298.",
+        "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
+        "Werner, E. E. & Smith, R. S. (1992). Overcoming the Odds. Ithaca: Cornell University Press."
+      ],
+      "achtung": "Umweg-Geschichten können an eigene Brüche erinnern; wer sichtbar betroffen ist, wird nicht vor der Gruppe angesprochen, sondern später. Berufe und Arbeitslosigkeit in der Familie sind privat: nicht danach fragen und niemanden drängen, Angehörige zu interviewen. Für echte Interviews gilt: nur Menschen, die die Jugendlichen kennen oder die die Leitung vermittelt, an Orten mit anderen Menschen in der Nähe, und eine erwachsene Bezugsperson weiß Bescheid; keine Treffen mit Fremden aus dem Netz. Erzählt jemand von Arbeit, zu der er gedrängt wird oder die ihm schadet, das im Einzelgespräch klären und die zuständige Leitung (Responsable) informieren. Erzählt jemand von Gewalt, Missbrauch, Selbstverletzung oder Suizidgedanken, wird das nicht in der Gruppe vertieft, sondern zeitnah im Einzelgespräch aufgegriffen und nach dem internen Schutzkonzept weitergegeben; die zuständige Leitung (Responsable) wird am selben Tag informiert."
+    },
+    {
+      "id": "j3-e12",
+      "nr": 12,
+      "jahr": 3,
+      "modul": "j3-m3",
+      "titel": "Bewerben und vorstellen",
+      "kurz": "Die Gruppe klärt, was in eine Bewerbung gehört, bereitet Antworten mit Beispielen vor und übt das Vorstellungsgespräch im Rollenspiel – mit Skills gegen die Nervosität davor und mittendrin.",
+      "dauer": 100,
+      "ziele": [
+        "kennen die Teile einer Bewerbung und entscheiden, was in einen Lebenslauf gehört und was privat bleibt",
+        "bereiten Antworten mit Beispielen vor, auch auf die Frage nach Lücken und Umwegen",
+        "üben ein Vorstellungsgespräch im Rollenspiel und geben einander konkrete Rückmeldungen zum Auftreten",
+        "wenden Skills gegen Nervosität an und halten sie in einem Wenn-dann-Plan fest"
+      ],
+      "material": [
+        "Gefühlsrad (A3, laminiert), Wäscheklammern, Anspannungsskala 0–100",
+        "Drei Schilder: „rein“ und „raus“ für gegenüberliegende Wände, „kommt drauf an“ für die Mitte",
+        "Eine Musterbewerbung einer erfundenen Person: Anschreiben und Lebenslauf",
+        "Schülerblätter „Mein erster Lebenslauf“ und „Das Vorstellungsgespräch“ für jede Person",
+        "Modul-Mappen mit dem Berufsprofil",
+        "Für das Rollenspiel je Dreiergruppe ein Büro: ein Tisch mit zwei Stühlen, ein Glas Wasser und etwas abseits ein Stuhl als Warteraum; dazu Rollenkarten für Chefinnen und Chefs (Texte in Schritt 6) und eine Stoppuhr",
+        "Skills-Pässe und Stempel, Imbiss und Getränke"
+      ],
+      "vorbereitung": [
+        "Eine Musterbewerbung besorgen, etwa beim SePAS, oder selbst eine für eine erfundene Person schreiben",
+        "Die Rollenkarten auf Karteikarten schreiben",
+        "Für jede Dreiergruppe eine Büro-Ecke einrichten; wenn möglich liegt ein Warteraum im Flur – der Moment vor der Tür gehört zur Übung",
+        "Wenn möglich zu zweit leiten: Eine Leitung spielt in der ersten Runde die Chefin oder den Chef, die andere begleitet die Beobachtenden"
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-berufsprofil",
+        "skills-lebenslauf",
+        "skills-vorstellungsgespraech",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: morgen um 8 Uhr Vorstellungsgespräch"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Vom Karussell zur eigenen Bewerbung"
+        },
+        {
+          "min": "15–30",
+          "phase": "uebung",
+          "titel": "Rein oder raus? Bewerbung und Lebenslauf"
+        },
+        {
+          "min": "30–45",
+          "phase": "uebung",
+          "titel": "Antworten mit Beispiel vorbereiten"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–85",
+          "phase": "aktiv",
+          "titel": "Vorstellungsgespräch im Rollenspiel"
+        },
+        {
+          "min": "85–95",
+          "phase": "skill",
+          "titel": "Skill: runterkommen und Plan gegen Nervosität"
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Réckbléck und Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: morgen um 8 Uhr Vorstellungsgespräch",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Gefühlsrad und Anspannungsskala wie gewohnt, die Leitung beginnt. Danach eine zweite Zahl, nur als Zahl und ohne Erklärung: Stell dir vor, du hast morgen um 8 Uhr ein Vorstellungsgespräch – wo wärst du jetzt? Die zweiten Zahlen ohne Namen an die Tafel schreiben. Sie zeigen, dass Aufregung vor solchen Gesprächen fast alle betrifft, und kommen am Ende der Einheit wieder vor.",
+          "sagen": [
+            "Erst wie immer: Gefühl und Zahl. Dann stellt euch vor: morgen, 8 Uhr, Vorstellungsgespräch. Welche Zahl hättet ihr jetzt?",
+            "Schaut auf die Tafel: Kaum jemand hat eine Null. Aufregung ist normal – heute lernt ihr, was ihr damit macht."
+          ],
+          "tipp": "Die Leitung nennt ihre eigene zweite Zahl ehrlich und erzählt in einem Satz von ihrem ersten Vorstellungsgespräch.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Vom Karussell zur eigenen Bewerbung",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "Kurz an Einheit 11 anknüpfen: Was erwarten die Profis von Praktikanten? Freiwillig fragen, ob schon jemand einen echten Profi angesprochen hat, und jeden Versuch würdigen, auch einen, der mit einem Nein endete. Dann das Thema nennen: die Bewerbung in Grundzügen und das Gespräch, zu dem sie führt. Das Berufsprofil liegt dabei, denn es liefert den Stoff für Lebenslauf und Antworten.",
+          "sagen": [
+            "Hat schon jemand einen Profi gefragt? Auch ein Nein zählt – ihr habt euch getraut.",
+            "Heute übt ihr, damit das echte Gespräch nicht euer erstes ist."
+          ],
+          "blatt": "skills-berufsprofil"
+        },
+        {
+          "titel": "Rein oder raus? Bewerbung und Lebenslauf",
+          "dauer": 15,
+          "phase": "uebung",
+          "text": "An der Musterbewerbung kurz die drei Teile zeigen: Anschreiben (lettre de motivation), Lebenslauf, Kopien von Zeugnissen und Praktikumsnachweisen. Dann das Spiel: Die Leitung liest Angaben vor (Liste), und alle gehen zur Wand „rein“, „raus“ oder in die Mitte „kommt drauf an“; nach jeder Angabe begründet eine Person aus der Gruppe, die Leitung ergänzt. Zum Schluss beginnt jede Person ihren Lebenslauf auf dem Blatt mit den Angaben zu sich, zur Schule und zu den Sprachen. Den Rest füllt sie später mit Unterstützung aus.",
+          "sagen": [
+            "Rein, raus oder kommt drauf an? Geht los, bevor ihr lange überlegt – begründen könnt ihr danach.",
+            "Eure Sprachen gehören weit nach oben. In Luxemburg sind mehrere Sprachen ein echtes Plus."
+          ],
+          "punkte": [
+            "Handynummer und E-Mail-Adresse – rein, aber seriös: vorname.nachname@…",
+            "Die E-Mail-Adresse suesse.maus2010@… – raus, lieber eine neue anlegen",
+            "Alle Sprachen, auch Portugiesisch, Arabisch oder Luxemburgisch, mit ehrlicher Stufe – rein",
+            "Deine Religion – raus",
+            "Ein Foto – kommt drauf an: freiwillig; wenn, dann ruhig und aktuell, kein Selfie vom Strand",
+            "Hobby: Fußball im Verein – rein, das zeigt Ausdauer und Teamgeist",
+            "Hobby: Zocken – kommt drauf an: „Online-Turniere mit meinem Team organisiert“ sagt mehr als „Zocken“",
+            "Alle Schulen und Klassen mit Jahreszahlen – rein",
+            "Dass du eine Klasse wiederholt hast, mit Begründung – raus: Die Klassen stehen drin, die Gründe nicht",
+            "Praktika, Ferienjobs, Babysitten, Hilfe im Verein – rein, das sind Erfahrungen",
+            "Diagnosen, Medikamente, Förderunterricht – raus, das ist privat",
+            "Deine Stärken mit einem Beispiel – rein, vor allem ins Anschreiben"
+          ],
+          "tipp": "Bei wenig Energie im Sitzen spielen: Daumen hoch für rein, runter für raus, zur Seite für kommt drauf an. Den Lebenslauf nicht in der Einheit fertig machen wollen: Mit der Educatrice oder dem Educateur, beim SePAS oder zu Hause wird er in Ruhe vollständig.",
+          "wennEsKippt": "Fragt jemand, ob er angeben muss, dass er Unterstützung bekommt, ruhig antworten: Nein, im Lebenslauf stehen Schulen und Klassen, sonst nichts. Wer unsicher ist, klärt die Formulierung nach der Einheit mit der Leitung. Wird über E-Mail-Adressen gelacht, freundlich stoppen: So eine Adresse hatten viele einmal.",
+          "blatt": "skills-lebenslauf"
+        },
+        {
+          "titel": "Antworten mit Beispiel vorbereiten",
+          "dauer": 15,
+          "phase": "uebung",
+          "text": "Den Grundsatz an die Tafel schreiben: Beispiel statt Behauptung. Mit Hilfe des Berufsprofils schreibt jede Person ihre Vorstellung in drei Sätzen und bereitet drei typische Fragen mit Beispiel vor (Aufgaben 1 und 2). Dann die Umweg-Frage gemeinsam angehen (Aufgabe 3): Die Leitung spielt eine schwache und eine starke Antwort vor (Liste), die Gruppe benennt den Unterschied, danach schreibt jede Person ihre eigene. Zu zweit lesen sich die Jugendlichen ihre Antworten vor und fragen nach: Hast du ein Beispiel?",
+          "sagen": [
+            "Teamfähig sein will jeder. Was habt ihr gemacht, das zeigt, dass es bei euch stimmt?",
+            "Bei der Umweg-Frage zählt nicht, was damals war, sondern was ihr heute daraus macht: kurz, ehrlich, nach vorn.",
+            "Was privat ist, bleibt privat. Der Satz „Es gab damals persönliche Gründe“ reicht völlig."
+          ],
+          "punkte": [
+            "Schwach: „Äh, keine Ahnung. Die Lehrer waren blöd, und dann hatte ich keinen Bock mehr.“",
+            "Stark: „Ich habe die 5e wiederholt. Damals habe ich zu wenig gemacht. Im zweiten Jahr habe ich gemerkt, dass ich mit einem festen Plan viel schaffe. Deshalb will ich jetzt eine Ausbildung, in der ich jeden Tag praktisch arbeite.“"
+          ],
+          "tipp": "Das Muster der Umweg-Antwort hilft allen, auch Jugendlichen ohne Lücke: Die Frage „Warum ist Ihre Note in Französisch so schlecht?“ lässt sich genauso beantworten.",
+          "wennEsKippt": "Findet jemand keine Beispiele („Ich kann nichts“), gemeinsam ins Berufsprofil schauen und eine Karte aus der Stärken-Post vorlesen lassen. Wer sich schämt, eine Lücke zu benennen, formuliert die Antwort allein mit der Leitung.",
+          "blatt": "skills-vorstellungsgespraech"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Gemeinsam essen. Gegen Ende der Pause richtet die Leitung mit zwei Freiwilligen die Büros ein: je ein Tisch, zwei Stühle, ein Glas Wasser und etwas abseits der Stuhl für den Warteraum."
+        },
+        {
+          "titel": "Vorstellungsgespräch im Rollenspiel",
+          "dauer": 25,
+          "phase": "aktiv",
+          "text": "Zuerst drei Minuten Warteraum-Skills für alle (Kasten auf dem Blatt): zweimal einatmen und lange ausatmen, Füße spüren, sich selbst mit Namen Mut zusprechen, die Aufregung umdeuten. Dann Dreiergruppen: Eine Person bewirbt sich, eine spielt mit Rollenkarte die Chefin oder den Chef, eine beobachtet mit dem Rückmeldebogen auf dem Blatt der Person, die sich bewirbt (Aufgabe 5). Jede Runde dauert sieben Minuten: eine Minute Warteraum, vier Minuten Gespräch vom Anklopfen bis zur Verabschiedung – wo keine Tür ist, wird an den Tisch geklopft –, zwei Minuten Rückmeldung. Nach jeder Runde steigen alle aus der Rolle aus und tauschen, bis jede Person einmal dran war.",
+          "sagen": [
+            "Die Chefin ist freundlich, aber sie will etwas wissen. Sie ist nicht gemein, sie ist neugierig.",
+            "Rückmeldung: erst, was stark war, dann ein Tipp für das nächste Mal – nur über das, was ihr gesehen und gehört habt.",
+            "Aufstehen, ausschütteln, den eigenen Namen sagen – raus aus der Rolle."
+          ],
+          "punkte": [
+            "Werkstattleiter, knapp und sachlich: Warum dieser Beruf? Wie kommen Sie morgens her? Ich sehe, Sie haben eine Klasse wiederholt – warum?",
+            "Chefin im Friseursalon, freundlich und gesprächig: Erzählen Sie etwas über sich. Was machen Sie, wenn eine Kundin unzufrieden ist?",
+            "Filialleiterin im Supermarkt, schnell und direkt: Welche Sprachen sprechen Sie? Was sind Ihre Stärken – haben Sie ein Beispiel?",
+            "Leiter einer Maison Relais, ruhig und genau: Warum wollen Sie mit Kindern arbeiten? Zwei Kinder streiten – was tun Sie?",
+            "Alle Rollen enden mit derselben Frage: Haben Sie noch Fragen an uns?"
+          ],
+          "tipp": "In der ersten Runde übernimmt die Leitung in einer Gruppe die Chef-Rolle und zeigt so, wie freundlich-bestimmt sie gemeint ist. Geht die Gruppengröße nicht auf, beobachten in einer Gruppe zwei; bei nur zwei Jugendlichen bleibt die Leitung in der Chef-Rolle.",
+          "wennEsKippt": "Friert jemand im Gespräch ein, unterbricht die Leitung kurz: Jetzt ist der Moment für „Darf ich kurz überlegen?“ – dann geht es weiter. Wer sich nicht bewerben will, beobachtet zweimal; oft kommt der Mut in der letzten Runde. Wird die Chef-Rolle zur Schikane, die Szene sofort beenden und die Rolle neu besetzen.",
+          "blatt": "skills-vorstellungsgespraech"
+        },
+        {
+          "titel": "Skill: runterkommen und Plan gegen Nervosität",
+          "dauer": 10,
+          "phase": "skill",
+          "text": "Alle sitzen, die Füße auf dem Boden. Die Leitung leitet noch einmal langsam das doppelte Einatmen mit langem Ausatmen an, fünf Atemzüge lang. Dann die Runde: Wo war die Anspannung vor der Tür, wo im Gespräch, wo ist sie jetzt – und was hat geholfen? Zum Schluss schreibt jede Person ihren Wenn-dann-Plan gegen Nervosität auf das Blatt (Aufgabe 4).",
+          "sagen": [
+            "Durch die Nase einatmen, oben noch ein kleines Stück nachatmen – und dann lang durch den Mund aus, länger als das Einatmen.",
+            "Wo war eure Zahl vor der Tür, wo im Gespräch, wo jetzt? Bei vielen sinkt sie, sobald das Gespräch läuft.",
+            "Welcher Skill kommt in euren Plan? Wenn ich …, dann …"
+          ],
+          "tipp": "Die Zahlen von jetzt neben die Zahlen aus dem Check-in schreiben: Oft liegen sie deutlich tiefer – eine Erfahrung, an die man sich vor dem echten Gespräch erinnern kann.",
+          "blatt": "skills-vorstellungsgespraech"
+        },
+        {
+          "titel": "Réckbléck und Skills-Pass",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Daumenbarometer: Wie sicher fühlt ihr euch jetzt für ein echtes Gespräch – Daumen hoch, Mitte oder runter? Wer mag, sagt, was noch fehlt. Danach der Eintrag in den Skills-Pass und der Stempel; Lebenslauf und Gesprächsblatt kommen in die Modul-Mappe.",
+          "sagen": [
+            "Daumen auf drei: Wie sicher fühlt ihr euch jetzt für ein echtes Vorstellungsgespräch?",
+            "Für den Pass: mein Skill gegen Nervosität oder mein bester Satz aus dem Gespräch."
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Nächstes Mal macht ihr aus euren Wünschen einen Plan: ein Ziel für die nächsten Monate, das auch dann trägt, wenn es mal hakt.",
+      "hintergrund": "Ein Vorstellungsgespräch ist für viele Jugendliche die erste Prüfung vor einer fremden erwachsenen Person. Wer es im Rollenspiel mehrmals durchläuft, sammelt Bewältigungserfahrungen, die stärkste Quelle von Selbstwirksamkeit (Bandura, 1977). Nervosität muss dabei nicht verschwinden: Wer körperliche Erregung als Zeichen von Bereitschaft deuten lernte, schnitt in einer Studie im Mathematiktest besser ab (Jamieson et al., 2010). Atemübungen mit betont langem Ausatmen hoben in einer anderen Studie die Stimmung und senkten die Erregung (Balban et al., 2023); sich selbst mit dem eigenen Namen anzusprechen, schafft Abstand zur Aufregung (Kross & Ayduk, 2017). Die Rückmeldungen folgen Hattie und Timperley (2007): konkret, auf das Verhalten bezogen, mit einem nächsten Schritt. Die Umweg-Frage wird eigens geübt, weil Jugendliche mit Brüchen in der Schullaufbahn sie besonders fürchten.",
+      "quellen": [
+        "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
+        "Jamieson, J. P., Mendes, W. B., Blackstock, E. & Schmader, T. (2010). Turning the knots in your stomach into bows: Reappraising arousal improves performance on the GRE. Journal of Experimental Social Psychology, 46(1), 208–212.",
+        "Balban, M. Y., Neri, E., Kogon, M. M., Weed, L., Nouriani, B., Jo, B., Holl, G., Zeitzer, J. M., Spiegel, D. & Huberman, A. D. (2023). Brief structured respiration practices enhance mood and reduce physiological arousal. Cell Reports Medicine, 4(1), 100895.",
+        "Kross, E. & Ayduk, O. (2017). Self-distancing: Theory, research, and current directions. Advances in Experimental Social Psychology, 55, 81–136.",
+        "Hattie, J. & Timperley, H. (2007). The power of feedback. Review of Educational Research, 77(1), 81–112."
+      ],
+      "achtung": "Rollenspiele können an Ablehnung und Prüfungsangst erinnern. Das Stopp-Recht gilt, niemand muss sich bewerben, und die Chef-Rolle wird nie bloßstellend gespielt. Niemand muss im Lebenslauf oder im Gespräch Diagnosen, Förderangebote oder familiäre Gründe offenlegen; bei Fragen dazu ein Einzelgespräch anbieten und gemeinsam eine passende Formulierung finden. Lebensläufe enthalten persönliche Daten: nicht einsammeln, nicht fotografieren, nicht im Gruppenchat teilen. Starke Panik vor dem Gespräch nicht übergehen: aussetzen lassen, einen Skill anbieten, später nachfragen. Erzählt jemand von Gewalt, Missbrauch, Selbstverletzung oder Suizidgedanken, wird das nicht in der Gruppe vertieft, sondern zeitnah im Einzelgespräch aufgegriffen und nach dem internen Schutzkonzept weitergegeben; die zuständige Leitung (Responsable) wird am selben Tag informiert."
+    },
+    {
+      "id": "j3-e13",
+      "nr": 13,
+      "jahr": 3,
+      "modul": "j3-m3",
+      "titel": "Ziele, die tragen",
+      "kurz": "Mit WOOP und Wenn-dann-Plänen macht jede Person aus einem Wunsch ein Ziel für die nächsten Monate, übt ihre Pläne im Hindernis-Ball und schließt das Modul mit einer Seite im Skills-Buch ab.",
+      "dauer": 100,
+      "ziele": [
+        "erklären, warum der ehrliche Blick auf das eigene Hindernis mehr hilft als das bloße Ausmalen des Ziels",
+        "formulieren mit WOOP ein eigenes Ziel für die nächsten Monate und zerlegen es in Etappen",
+        "üben Wenn-dann-Pläne, bis sie schnell abrufbar sind, und legen einen Plan B für Rückschläge fest",
+        "halten im Skills-Buch fest, was sie aus dem Modul „Zukunft und Beruf“ mitnehmen"
+      ],
+      "material": [
+        "Gefühlsrad (A3, laminiert), Wäscheklammern, Anspannungsskala 0–100",
+        "Modul-Mappen mit Berufsprofil, Lebenslauf und Gesprächsblatt",
+        "Schülerblatt „Mein Ziel für die nächsten Monate“ für jede Person",
+        "Ein weicher Ball und zwölf Hinderniskarten (Texte in Schritt 6)",
+        "Kreppband für eine Ziel-Linie am Boden (etwa 5 m), zwei Schilder „Start“ und „Ziel“",
+        "Skills-Bücher, für jede Person eine neue Modulseite, Skills-Pässe und Stempel",
+        "Imbiss und Getränke"
+      ],
+      "vorbereitung": [
+        "Die Ziel-Linie auf den Boden kleben: Start, drei Querstriche als Etappen, Ziel; bei trockenem Wetter geht das draußen mit Kreide",
+        "Die Hinderniskarten schreiben",
+        "Einen eigenen kleinen WOOP vorbereiten, den die Leitung in Schritt 3 laut durchdenkt",
+        "Für jede Person eine neue Modulseite des Skills-Buchs kopieren"
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-berufsprofil",
+        "skills-ziel-plan",
+        "skills-buch",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: ein Ziel, das ich schon geschafft habe"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Was das Modul gebracht hat"
+        },
+        {
+          "min": "15–28",
+          "phase": "input",
+          "titel": "Wünschen reicht nicht: WOOP"
+        },
+        {
+          "min": "28–45",
+          "phase": "uebung",
+          "titel": "Mein WOOP für die nächsten Monate"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–78",
+          "phase": "aktiv",
+          "titel": "Hindernis-Ball und Ziel-Linie"
+        },
+        {
+          "min": "78–85",
+          "phase": "uebung",
+          "titel": "Plan B, Helfer und Zwischenstopps"
+        },
+        {
+          "min": "85–90",
+          "phase": "skill",
+          "titel": "Skill: WOOP im Kopf"
+        },
+        {
+          "min": "90–97",
+          "phase": "abschluss",
+          "titel": "Skills-Buch: die Seite für Modul 3"
+        },
+        {
+          "min": "97–100",
+          "phase": "abschluss",
+          "titel": "Réckbléck und Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: ein Ziel, das ich schon geschafft habe",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Gefühlsrad und Anspannungsskala wie gewohnt, die Leitung beginnt. Freiwillige Zusatzfrage: Nenn ein Ziel, das du schon einmal erreicht hast – klein reicht, etwa ein Level, ein Trick mit dem Ball, ein Lied auf der Gitarre, eine bessere Note. Einmal nachfragen, was dabei geholfen hat, und die Antworten als Stichworte ohne Namen an die Tafel schreiben: Sie sind der Stoff für heute.",
+          "sagen": [
+            "Gefühl, Zahl – und ein Ziel, das ihr schon mal geschafft habt. Es darf klein sein.",
+            "Was hat euch damals geholfen dranzubleiben?"
+          ],
+          "tipp": "Die Stichworte an der Tafel stehen lassen: Üben, jemand hat geholfen, ein fester Zeitpunkt – das sind oft schon die Zutaten von WOOP, bevor das Wort fällt.",
+          "wennEsKippt": "Sagt jemand „Ich hab noch nie was geschafft“, nicht widersprechen, sondern klein nachfragen: Hast du schon mal ein Spiel durchgespielt, einen Weg allein gefunden, etwas repariert? Findet sich nichts, bleibt es beim „weiter“, und die Leitung fragt später unter vier Augen nach.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Was das Modul gebracht hat",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "Die Mappen austeilen und die vier Einheiten des Moduls an der Tafel abhaken: Interessen-Code, Berufe und Wege, Bewerbung und Vorstellungsgespräch. Freiwillig fragen, ob jemand ein Interview geführt hat, und kurz davon erzählen lassen. Dann das Thema nennen: Aus dem, was jetzt im Berufsprofil steht, wird ein Ziel für die nächsten Monate – eins, das auch Rückschläge aushält.",
+          "sagen": [
+            "Ihr habt jetzt ein Berufsprofil, einen Lebenslauf-Entwurf und ein geübtes Gespräch. Heute kommt der Plan dazu.",
+            "Hat jemand einen Profi interviewt? Was habt ihr erfahren, das auf keiner Karte stand?"
+          ],
+          "blatt": "skills-berufsprofil"
+        },
+        {
+          "titel": "Wünschen reicht nicht: WOOP",
+          "dauer": 13,
+          "phase": "input",
+          "text": "Zwei Figuren vorstellen (Liste) und die Gruppe schätzen lassen, wer ihr Ziel eher erreicht und warum. Dann erzählen, was die Forschung dazu zeigt: Wer sich ein Ziel nur schön ausmalt, fühlt sich schon halb angekommen und strengt sich weniger an; wer das eigene Hindernis mitdenkt und einen Plan macht, bleibt eher dran. WOOP an die Tafel schreiben (Tabelle), und die Leitung denkt ihren eigenen kleinen WOOP laut durch. Zum Schluss klären, warum das Hindernis in einem selbst gesucht wird.",
+          "sagen": [
+            "Wer von beiden hat die besseren Chancen – Luca oder Zoé? Und warum?",
+            "Das Hindernis sucht ihr bei euch: eine Gewohnheit, ein Gefühl, ein Gedanke. Auf den Bus habt ihr keinen Einfluss, auf euer Aufschieben schon."
+          ],
+          "punkte": [
+            "Luca will bis Ostern einen Praktikumsplatz. Jeden Abend stellt er sich vor, wie er in der Werkstatt steht und alle ihn loben. Er fühlt sich gut dabei – und ruft nirgends an.",
+            "Zoé will dasselbe. Sie stellt sich den Erfolg auch vor und fragt sich dann: Was in mir könnte mich bremsen? Ihre Antwort: Ich schiebe Anrufe auf, weil ich Angst vor einem Nein habe. Ihr Plan: Wenn ich dienstags aus der Schule komme, rufe ich einen Betrieb an, bevor ich am Handy etwas anderes mache."
+          ],
+          "tabelle": {
+            "spalten": [
+              "Schritt",
+              "Frage",
+              "Beispiel"
+            ],
+            "zeilen": [
+              [
+                "W – Wunsch",
+                "Was willst du in den nächsten Monaten erreichen – herausfordernd, aber machbar?",
+                "bis Ostern einen Praktikumsplatz finden"
+              ],
+              [
+                "O – bestes Ergebnis",
+                "Was wäre das Beste daran, und wie fühlt es sich an?",
+                "zeigen, was ich kann; etwas Eigenes für den Lebenslauf"
+              ],
+              [
+                "O – Hindernis",
+                "Was in dir könnte dich bremsen?",
+                "Ich schiebe Anrufe auf, weil ich Angst vor einem Nein habe."
+              ],
+              [
+                "P – Plan",
+                "Wenn das Hindernis kommt, was tust du dann?",
+                "Wenn ich dienstags aus der Schule komme, rufe ich zuerst einen Betrieb an."
+              ]
+            ]
+          },
+          "tipp": "Den eigenen WOOP der Leitung klein und echt halten, etwa früher schlafen oder mehr Bewegung: Das zeigt, dass die Methode nicht nur für Jugendliche gedacht ist.",
+          "wennEsKippt": "Kommt der Einwand „Positiv denken ist doch gut“, recht geben: Das Ausmalen gehört dazu, es ist nur der erste Schritt. Erst mit dem Hindernis und dem Plan wird aus der Vorstellung Energie zum Handeln."
+        },
+        {
+          "titel": "Mein WOOP für die nächsten Monate",
+          "dauer": 17,
+          "phase": "uebung",
+          "text": "Jede Person arbeitet allein am Blatt „Mein Ziel für die nächsten Monate“; das Berufsprofil liegt daneben. Die Leitung führt Schritt für Schritt durch: je eine Minute mit geschlossenen Augen vorstellen, dann schreiben (Aufgabe 1), danach das Ziel in Etappen zerlegen (Aufgabe 2). Das Ziel darf mit Schule, Beruf oder Freizeit zu tun haben, Hauptsache, es ist das eigene und reicht etwa drei Monate weit, zum Beispiel bis Ostern. Beim Herumgehen prüft die Leitung zwei Dinge: Liegt das Hindernis in der Person? Ist das Wenn eine Situation, die sie wiedererkennt?",
+          "sagen": [
+            "Schließt die Augen, wenn es für euch passt. Stellt euch vor, ihr habt es geschafft. Was seht ihr, was spürt ihr?",
+            "Und jetzt ehrlich: Was in euch könnte euch bremsen? Das ist kein Vorwurf, sondern der Teil, der den Plan stark macht."
+          ],
+          "tipp": "Wer kein Berufsziel hat, nimmt eines der zwei Jahresziele aus Einheit 2 – auch das ist ein Ziel, das trägt.",
+          "wennEsKippt": "Sind Ziele sehr groß („Profi-Fußballer werden“), nicht zerreden, sondern fragen: Was wäre bis Ostern ein Schritt in diese Richtung? Nennt jemand ein Ziel, das auf eine Belastung hinweist, nicht in der Gruppe vertiefen, sondern nach der Einheit das Gespräch suchen.",
+          "blatt": "skills-ziel-plan"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Gemeinsam essen, Fenster auf. Gegen Ende der Pause legt die Leitung Ball und Hinderniskarten bereit und prüft, ob die Ziel-Linie noch gut klebt."
+        },
+        {
+          "titel": "Hindernis-Ball und Ziel-Linie",
+          "dauer": 18,
+          "phase": "aktiv",
+          "text": "Zuerst der Hindernis-Ball (7 Min.): Alle stehen im Kreis. Wer den Ball hat, liest eine Hinderniskarte vor (Liste) und wirft einer anderen Person zu; sie antwortet innerhalb von fünf Sekunden mit einem Dann-Satz und liest die nächste Karte. Dann die Ziel-Linie (9 Min.): Zu zweit geht eine Person ihren Weg vom Start bis zum Ziel und nennt an jeder Etappe ihren Schritt; die andere hält ihr an zwei Stellen ein Hindernis entgegen – eine Karte oder das Hindernis vom Blatt, wenn die Person es freigibt –, und es geht erst mit dem Dann-Satz weiter. Danach Wechsel. Zum Schluss wirft die Leitung zwei Rückschläge in die Runde: eine Absage und zwei Wochen, in denen nichts passiert ist.",
+          "sagen": [
+            "Fünf Sekunden, ein Dann-Satz. Er muss nicht perfekt sein, nur machbar.",
+            "Das Hindernis steht dir im Weg. Was ist dein Dann? Erst dann geht es weiter.",
+            "Absage bekommen. Zwei Wochen nichts gemacht. Und jetzt? Ein Ausrutscher ist kein Scheitern – es zählt, ob ihr am nächsten Tag weitermacht."
+          ],
+          "punkte": [
+            "Wenn der Wecker klingelt und du keine Lust hast …",
+            "Wenn ein Freund schreibt: Kommst du zocken? …",
+            "Wenn du Angst hast, am Telefon zu stottern …",
+            "Wenn du eine Absage bekommst …",
+            "Wenn du denkst: Das bringt eh nichts …",
+            "Wenn du nach der Schule nur noch aufs Sofa willst …",
+            "Wenn du einen Termin vergessen hast …",
+            "Wenn dir jemand sagt: Das schaffst du nie …",
+            "Wenn du nicht weißt, wie du anfangen sollst …",
+            "Wenn du dich für einen Fehler schämst …",
+            "Wenn du merkst, dass du schon wieder aufschiebst …",
+            "Wenn du zwei Wochen nichts für dein Ziel getan hast …"
+          ],
+          "tipp": "Bei wenig Energie wird der Ball im Sitzen gerollt statt geworfen; bei trockenem Wetter kommt die Ziel-Linie mit Kreide nach draußen. Bei nur zwei Jugendlichen hält die Leitung die Hindernisse und geht danach ihre eigene Linie.",
+          "wennEsKippt": "Kommen nur Witzantworten („Dann bleib ich halt liegen“), mitlachen und nachlegen: Und was machst du, damit dein Ziel nicht mit liegen bleibt? Will jemand sein eigenes Hindernis nicht preisgeben, arbeitet das Paar nur mit den Karten."
+        },
+        {
+          "titel": "Plan B, Helfer und Zwischenstopps",
+          "dauer": 7,
+          "phase": "uebung",
+          "text": "Zurück am Platz ergänzt jede Person ihr Blatt: einen Plan B für einen Rückschlag (Aufgabe 3), wer ihr hilft und wann sie nachschaut, wie weit sie ist (Aufgabe 4), und zwei Zahlen zu Wichtigkeit und Zuversicht (Aufgabe 5). Die Leitung nennt die Wochen, in denen sie im Check-in kurz nachfragen wird, etwa nach den nächsten Ferien. Zu den Zahlen stellt sie eine Frage, die auf das Positive lenkt: Warum keine niedrigere Zahl?",
+          "sagen": [
+            "Wer schaut mit euch drauf? Eine Person reicht – Hauptsache, sie weiß von eurem Ziel.",
+            "Du hast eine 6. Warum keine 3? Was spricht schon jetzt für dein Ziel?"
+          ],
+          "tipp": "Die Frage nach der niedrigeren Zahl lenkt den Blick auf die Gründe, die schon da sind, statt auf die Zweifel. Wer nur eine 2 oder 3 hat, darf das Ziel verkleinern, bis es sich machbar anfühlt.",
+          "blatt": "skills-ziel-plan"
+        },
+        {
+          "titel": "Skill: WOOP im Kopf",
+          "dauer": 5,
+          "phase": "skill",
+          "text": "Im Sitzen, Augen zu oder Blick auf den Boden. Die Leitung führt langsam durch einen kleinen WOOP für den nächsten Tag, ganz ohne Blatt: einen Wunsch, das Beste daran, das innere Hindernis, der Wenn-dann-Plan. Danach erklären: Mit etwas Übung dauert das fünf Minuten und geht überall – im Bus, vor dem Einschlafen, vor einem schwierigen Gespräch.",
+          "sagen": [
+            "Denkt an morgen. Was wünscht ihr euch für den Tag – etwas Kleines?",
+            "Was wäre das Schönste daran? … Was in euch könnte es verhindern? … Wenn das passiert, dann …"
+          ],
+          "tipp": "Den Kurz-WOOP ab und zu in einen Check-in einbauen: Er dauert zwei Minuten und hält die Methode lebendig."
+        },
+        {
+          "titel": "Skills-Buch: die Seite für Modul 3",
+          "dauer": 7,
+          "phase": "abschluss",
+          "text": "Das Modul abschließen: An der Tafel noch einmal die vier Stationen zeigen – Interessen-Code, Berufe und Wege, Vorstellungsgespräch, Zielplan. Jede Person füllt im Skills-Buch ihre Seite für „Zukunft und Beruf“ aus (Liste); was hineinkommt, entscheidet sie selbst. Wer mag, heftet Berufsprofil und Zielplan dazu und trägt sie im Inhalt ein.",
+          "sagen": [
+            "Blättert zurück: Was aus diesen vier Treffen wollt ihr in einem Jahr noch wissen?"
+          ],
+          "punkte": [
+            "Lieblingsskills: ein Skill gegen Nervosität, etwa das doppelte Einatmen mit langem Ausatmen",
+            "Pläne: der Wenn-dann-Plan für das eigene Ziel",
+            "Sätze, die tragen: zum Beispiel „Umwege sind auch Wege“ oder „Darf ich kurz überlegen?“",
+            "Menschen, die helfen: wer beim Ziel mit draufschaut – und der SePAS für Fragen zu Schule und Beruf"
+          ],
+          "tipp": "Wer nicht fertig wird, beendet die Seite zu Beginn der nächsten Einheit. Die Ziele werden nicht eingesammelt; mit Einverständnis notiert die Leitung nur, wann sie nachfragen soll.",
+          "blatt": "skills-buch"
+        },
+        {
+          "titel": "Réckbléck und Skills-Pass",
+          "dauer": 3,
+          "phase": "abschluss",
+          "text": "Blitzlicht mit einem Wort zum Modul: Was nehmt ihr mit auf euren Weg? Dann ein Satz in den Skills-Pass, der Stempel und der Ausblick auf das neue Modul.",
+          "sagen": [
+            "Ein Wort zum Modul „Zukunft und Beruf“: Was nehmt ihr mit?"
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Nächstes Mal beginnt ein neues Modul: selbstständig werden. Los geht es mit Geld – wie man es plant, damit es bis zum Monatsende reicht.",
+      "hintergrund": "Sich ein Ziel nur schön auszumalen, kann die Anstrengung senken, weil es sich schon halb erreicht anfühlt. Oettingen (2014) verbindet deshalb Wunsch und bestes Ergebnis mit dem ehrlichen Blick auf das innere Hindernis und einem Wenn-dann-Plan: WOOP. Bei Jugendlichen steigerte diese Kombination die Selbstdisziplin beim Lernen (Duckworth et al., 2011). Wenn-dann-Pläne koppeln eine Handlung an eine wiedererkennbare Situation (Gollwitzer, 1999); über viele Studien hinweg zeigen sie deutliche Wirkung (Gollwitzer & Sheeran, 2006). Im Hindernis-Ball wird diese Kopplung geübt, bis sie schnell abrufbar ist. Nahe Etappenziele stärken Können und Zutrauen mehr als ein fernes Ziel allein (Bandura & Schunk, 1981). Selbst gewählte Ziele werden ausdauernder verfolgt als vorgegebene (Deci & Ryan, 2000), und beim Aufbau neuer Gewohnheiten schadete ein einzelner verpasster Tag kaum (Lally et al., 2010) – deshalb gehört ein Plan B zum Zielplan.",
+      "quellen": [
+        "Oettingen, G. (2014). Rethinking Positive Thinking. New York: Current.",
+        "Duckworth, A. L., Grant, H., Loew, B., Oettingen, G. & Gollwitzer, P. M. (2011). Self-regulation strategies improve self-discipline in adolescents: Benefits of mental contrasting and implementation intentions. Educational Psychology, 31(1), 17–26.",
+        "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503.",
+        "Gollwitzer, P. M. & Sheeran, P. (2006). Implementation intentions and goal achievement: A meta-analysis of effects and processes. Advances in Experimental Social Psychology, 38, 69–119.",
+        "Bandura, A. & Schunk, D. H. (1981). Cultivating competence, self-efficacy, and intrinsic interest through proximal self-motivation. Journal of Personality and Social Psychology, 41(3), 586–598.",
+        "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268.",
+        "Lally, P., van Jaarsveld, C. H. M., Potts, H. W. W. & Wardle, J. (2010). How are habits formed: Modelling habit formation in the real world. European Journal of Social Psychology, 40(6), 998–1009."
+      ],
+      "achtung": "Ziele können auf Belastungen hinweisen, etwa „weniger Streit zu Hause“ oder „nicht mehr so traurig sein“, oder auf Konsum, etwa „weniger kiffen“. Solche Ziele nicht in der Gruppe vertiefen, sondern wertschätzen, ein Einzelgespräch anbieten und bei Bedarf den SePAS oder die zuständige Leitung (Responsable) einbeziehen. Niemand muss sein Ziel oder sein Hindernis vorlesen; im Hindernis-Ball reichen die Karten. Jugendliche mit vielen Misserfolgen reagieren auf Zielarbeit mitunter mit Abwehr („bringt eh nichts“) – das ernst nehmen und kleine Ziele anbieten. Erzählt jemand von Gewalt, Missbrauch, Selbstverletzung oder Suizidgedanken, wird das nicht in der Gruppe vertieft, sondern zeitnah im Einzelgespräch aufgegriffen und nach dem internen Schutzkonzept weitergegeben; die zuständige Leitung (Responsable) wird am selben Tag informiert."
+    }
+  ]
+}

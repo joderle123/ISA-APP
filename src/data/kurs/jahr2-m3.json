@@ -1,0 +1,742 @@
+{
+  "einheiten": [
+    {
+      "id": "j2-e10",
+      "nr": 10,
+      "jahr": 2,
+      "modul": "j2-m3",
+      "titel": "Der Wut-Eisberg",
+      "kurz": "Was man von Wut sieht, ist oft nur die Spitze: Die Gruppe schaut darunter, sammelt typische Auslöser und spielt Wut in Zeitlupe, um die ersten Warnzeichen im Körper zu finden.",
+      "dauer": 100,
+      "ziele": [
+        "unterscheiden, was andere von der Wut sehen, und was oft darunter liegt: Kränkung, Angst, Scham oder das Gefühl von Ungerechtigkeit",
+        "benennen ihre typischen Auslöser und erkennen, was ihre Zündschnur verkürzt, etwa Müdigkeit, Hunger oder Stress",
+        "entdecken in Zeitlupen-Szenen frühe, mittlere und späte Warnzeichen im Körper und tragen ihre eigenen ein",
+        "erproben offene Hände und einen lockeren Kiefer als Gegensignal zum ersten Warnzeichen"
+      ],
+      "material": [
+        "Gefühlsrad (A3, laminiert), Wäscheklammern und Anspannungsskala 0–100 als Plakat",
+        "Plakat (A1) mit einem großen Eisberg: Wasserlinie im oberen Drittel, darunter viel Platz",
+        "Acht Karten (A5) für den Bereich unter Wasser: Kränkung, Angst, Scham, Ungerechtigkeit, Enttäuschung, Hilflosigkeit, Ausgeschlossen sein, Leerer Tank",
+        "Vier Fallkarten für die Eisberg-Detektive (Texte in Schritt 4), auf festes Papier geschrieben",
+        "Drei Zahlenkarten für das Publikum: 30 auf gelbem, 50 auf orangem, 70 auf rotem Papier",
+        "Schülerblätter „Der Wut-Eisberg“ und „Meine Auslöser und Warnzeichen“ für jede Person",
+        "Buntstifte in Gelb, Orange und Rot, Klebezettel",
+        "Skills-Pässe und Stempel, Imbiss und Getränke (Allergien beachten)"
+      ],
+      "vorbereitung": [
+        "Das Eisberg-Plakat zeichnen und aufhängen; die Karten für unter Wasser umgedreht bereitlegen",
+        "Die Fallkarten schreiben und Namen austauschen, falls jemand in der Gruppe so heißt",
+        "In der Raummitte eine Spielfläche von etwa drei mal drei Metern freiräumen",
+        "Die Zeitlupen-Szenen einmal selbst durchgehen: An welchen drei Stellen wird eingefroren, lange bevor es zum Ausbruch käme?"
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-wut-eisberg",
+        "skills-wut-signale",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Was bringt dich auf die Palme?"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Rückblick und Start ins Modul Wut"
+        },
+        {
+          "min": "15–30",
+          "phase": "input",
+          "titel": "Der Wut-Eisberg"
+        },
+        {
+          "min": "30–45",
+          "phase": "uebung",
+          "titel": "Eisberg-Detektive und mein Eisberg"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–80",
+          "phase": "aktiv",
+          "titel": "Wut in Zeitlupe"
+        },
+        {
+          "min": "80–87",
+          "phase": "uebung",
+          "titel": "Auslöser und Warnzeichen eintragen"
+        },
+        {
+          "min": "87–95",
+          "phase": "skill",
+          "titel": "Skill: Offene Hände, lockerer Kiefer"
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Réckbléck, Skills-Pass und Wut-Protokoll"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: Was bringt dich auf die Palme?",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Check-in wie gewohnt: Wäscheklammer an das passende Wort im Gefühlsrad, dazu die Anspannung von 0 bis 100. Heute kommt eine freiwillige Zusatzfrage dazu: Was bringt dich im Alltag schnell auf die Palme – eine Sache, keine Person? Die Leitung beginnt mit einem harmlosen, ehrlichen Beispiel. Die genannten Auslöser ohne Namen auf Klebezettel schreiben und neben das Eisberg-Plakat kleben; sie werden später gebraucht.",
+          "sagen": [
+            "Gefühl, Zahl – und wenn ihr mögt: Was bringt euch im Alltag schnell auf die Palme? Eine Sache, keine Person.",
+            "Bei mir ist es der Drucker, der genau dann streikt, wenn ich es eilig habe."
+          ],
+          "tipp": "Kleine Alltagsauslöser – langsames WLAN, die Schlange in der Kantine, jemand kaut laut – machen die Runde leicht. Die großen Themen kommen später auf das Blatt, und zwar ohne Publikum.",
+          "wennEsKippt": "Nennt jemand doch eine Person („meine Schwester“, „der Mathelehrer“), freundlich umlenken: Was genau macht sie, das dich aufregt? So wird aus dem Namen eine Situation. Wird über Abwesende gelästert, auf den Gruppenvertrag zeigen und die Runde weitergeben.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Rückblick und Start ins Modul Wut",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "Kurz an die letzte Einheit erinnern: Welcher Skill gegen Prüfungsstress ist in den Skills-Kompass gewandert? Dann das neue Modul öffnen und die Leitfrage an die Tafel schreiben: Was steckt hinter meiner Wut – und wie bremse ich rechtzeitig? Drei Treffen sind geplant: heute verstehen, nächstes Mal bremsen, danach wiedergutmachen. Den Rahmen klären: Niemand erzählt von eigenen Ausbrüchen, gearbeitet wird mit erfundenen Figuren.",
+          "sagen": [
+            "Wut hat einen schlechten Ruf. Dabei meldet sie oft nur, dass etwas nicht stimmt – schwierig wird meistens erst, was wir dann tun.",
+            "Ihr müsst heute nichts von euch erzählen. Was ihr über eure eigene Wut herausfindet, bleibt auf eurem Blatt."
+          ]
+        },
+        {
+          "titel": "Der Wut-Eisberg",
+          "dauer": 15,
+          "phase": "input",
+          "text": "Die Geschichte vom Blatt vorlesen: Elias und das Heft. Zuerst sammeln, was die anderen in der Klasse gesehen haben, und es oberhalb der Wasserlinie auf das Plakat schreiben. Dann fragen, was Elias gespürt haben könnte, das niemand sieht. Die Karten für unter Wasser nacheinander umdrehen und die vier häufigsten mit der Tabelle erklären: Kränkung, Angst, Scham und Ungerechtigkeit, dazu der leere Tank. Zum Schluss festhalten: Was unter der Wasserlinie liegt, entscheidet, was wirklich hilft.",
+          "sagen": [
+            "Was haben die anderen gesehen? Und was hat Elias gespürt, das keiner gesehen hat?",
+            "Wut ist oft wie ein Leibwächter: Sie springt nach vorn, damit niemand merkt, wie sehr etwas getroffen hat.",
+            "Wenn unter der Wut Scham liegt, macht eine Ansage vor allen es schlimmer. Liegt Ungerechtigkeit darunter, hilft es, gehört zu werden."
+          ],
+          "tabelle": {
+            "spalten": [
+              "Unter Wasser",
+              "Typischer Gedanke",
+              "Was dann eher hilft"
+            ],
+            "zeilen": [
+              [
+                "Kränkung",
+                "„Der nimmt mich nicht ernst.“",
+                "Respekt, ernst genommen werden"
+              ],
+              [
+                "Angst",
+                "„Gleich passiert mir was – oder ich verliere etwas.“",
+                "Sicherheit, Klarheit, Abstand"
+              ],
+              [
+                "Scham",
+                "„Alle haben es gesehen. Ich stehe blöd da.“",
+                "Nicht vor allen, sondern unter vier Augen reden"
+              ],
+              [
+                "Ungerechtigkeit",
+                "„Das ist nicht fair. Immer ich.“",
+                "Gehört werden, eine faire Klärung"
+              ],
+              [
+                "Leerer Tank",
+                "„Ich kann einfach nicht mehr.“",
+                "Essen, Schlaf, Pause – danach reden"
+              ]
+            ]
+          },
+          "tipp": "Das Bild vom Leibwächter kommt gut an, weil es die Wut nicht verurteilt: Sie hat eine Aufgabe, sie übertreibt nur manchmal.",
+          "wennEsKippt": "Kommt der Einwand „Manchmal bin ich einfach nur wütend“, zustimmen: Nicht immer liegt etwas darunter, und Wut über echtes Unrecht ist berechtigt. Der Eisberg ist ein Werkzeug zum Nachschauen, keine Pflicht, etwas zu finden.",
+          "blatt": "skills-wut-eisberg"
+        },
+        {
+          "titel": "Eisberg-Detektive und mein Eisberg",
+          "dauer": 15,
+          "phase": "uebung",
+          "text": "Jedes Paar bekommt eine Fallkarte und legt zwei oder drei Karten für unter Wasser dazu; es darf mehr als ein Gefühl sein. Jedes Paar stellt seinen Fall in einem Satz vor und begründet die Wahl. Danach bearbeitet jede Person allein Aufgabe 1 und 2 auf dem Blatt: die Gedanken zuordnen und einen eigenen Eisberg zu einer Situation füllen, die sie niemandem erzählen muss. Das Blatt wird weder eingesammelt noch vorgelesen.",
+          "sagen": [
+            "Was könnte bei der Person auf eurer Karte unter Wasser liegen? Ihr dürft auch zwei Karten nehmen.",
+            "Für euren eigenen Eisberg: Denkt an eine Situation, in der ihr richtig wütend wart. Ihr schreibt nur für euch."
+          ],
+          "punkte": [
+            "Beim Fußball in der Pause wird Tiago als Letzter gewählt. Er kickt den Ball über den Zaun und geht.",
+            "Mila hat drei Stunden für ihr Referat gelernt. Die Lehrerin sagt vor allen: Das war zu kurz. Mila knallt ihr Heft auf den Tisch.",
+            "Yusuf sollte nach dem Training abgeholt werden, aber es wurde vergessen. Er wartet eine Stunde im Regen. Zu Hause brüllt er seinen kleinen Bruder an, der nur fragen wollte, ob er mitspielt.",
+            "Im Klassenchat wird ein Foto von Léa gepostet, auf dem sie die Augen halb zu hat. Sie schreibt zurück: Löscht das sofort, ihr Idioten."
+          ],
+          "tipp": "Mit nur zwei Jugendlichen gehen beide die Fallkarten gemeinsam mit der Leitung durch, jede Person übernimmt zwei. Wer zum eigenen Eisberg gar nichts schreiben will, füllt ihn für eine Figur aus einer Serie aus.",
+          "wennEsKippt": "Erzählt jemand beim eigenen Eisberg plötzlich laut von einer schweren Situation, etwa von Gewalt zu Hause, freundlich stoppen, danken und ein Gespräch nach der Einheit anbieten. Dann ruhig mit dem nächsten Paar weitermachen.",
+          "blatt": "skills-wut-eisberg"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Gemeinsam essen, Fenster auf. Das Thema ruht. Nebenbei die Spielfläche für die Zeitlupen-Szenen freiräumen und die drei Zahlenkarten bereitlegen."
+        },
+        {
+          "titel": "Wut in Zeitlupe",
+          "dauer": 20,
+          "phase": "aktiv",
+          "text": "Zum Aufwärmen gehen alle durch den Raum und zeigen auf Zuruf mit Gang und Haltung, wie sich 10, 30, 50 und 70 anfühlen; höher geht es nicht. Dann spielen Paare kurze Szenen ohne Worte in Zeitlupe: Die Leitung liest eine Situation vor, eine Person spielt die Figur, die wütend wird, die andere liefert den Auslöser. Dreimal ruft die Leitung „Freeze!“, und das Publikum beschreibt genau, was es am Körper sieht, und hält die Zahlenkarte hoch, die es schätzt. Der Ausbruch selbst wird nie gespielt – die Szene endet beim dritten Einfrieren. Nach jeder Szene steigen beide aus der Rolle aus: ausschütteln und den eigenen Namen sagen.",
+          "sagen": [
+            "Alles in Zeitlupe, ohne Worte und ohne Berührung. Zeigt, was der Körper macht, bevor der Mund aufgeht.",
+            "Freeze! Was seht ihr? Schaut auf Kiefer, Schultern, Hände, Blick und Atem.",
+            "Bei welcher Zahl hätte die Figur auf die Bremse treten müssen, damit es gar nicht so weit kommt?"
+          ],
+          "punkte": [
+            "Im vollen Bus stellt jemand seinen Rucksack auf den letzten freien Platz und schaut weg, als du fragst.",
+            "Beim Zocken verliert dein Team kurz vor Schluss, und einer aus deinem Team schreibt: Wegen dir.",
+            "Zu Hause heißt es zum dritten Mal, du sollst das Handy weglegen – dabei schreibst du gerade etwas Wichtiges.",
+            "In der Kantine drängelt sich jemand vor und grinst.",
+            "Der Trainer lässt dich wieder auf der Bank sitzen, obwohl du bei jedem Training warst."
+          ],
+          "tipp": "Zeitlupe nimmt der Szene die Gefahr und macht sie oft komisch – das ist erwünscht, denn Lachen hilft, die Körpersignale ohne Scham anzuschauen. Bei Regen oder wenig Platz spielt immer nur ein Paar vor der Gruppe; bei wenig Energie spielt die Leitung die wütende Figur, und alle beobachten.",
+          "wennEsKippt": "Wird aus der Zeitlupe echte Wut oder Schubsen, sofort einfrieren lassen, beide aus der Rolle holen und mit einer anderen Karte weitermachen. Wer nicht spielen will, führt Regie: Er ruft das Freeze und stellt die erste Frage ans Publikum."
+        },
+        {
+          "titel": "Auslöser und Warnzeichen eintragen",
+          "dauer": 7,
+          "phase": "uebung",
+          "text": "Zurück an den Tischen füllt jede Person die Aufgaben 1 bis 3 auf dem Blatt „Meine Auslöser und Warnzeichen“ aus: Auslöser ankreuzen, Verstärker markieren und die Warnzeichen in den Körperumriss malen – Gelb für das, was zuerst kommt, Orange für das, was dazukommt, Rot für das, was kurz vor dem Ausbruch passiert. Die Klebezettel vom Check-in helfen beim Ergänzen. Die Leitung geht herum und fragt nach dem allerersten Zeichen, denn darum geht es nächste Woche.",
+          "sagen": [
+            "Welches Zeichen kommt bei dir zuerst – noch bevor du merkst, dass du wütend bist?",
+            "Viele merken es zuerst im Kiefer, im Bauch oder in den Händen. Bei manchen wird es einfach laut im Kopf."
+          ],
+          "tipp": "Wer in Jahr 1 dabei war, kennt die Gefühls-Landkarte. Neu ist heute die Reihenfolge: Was kommt zuerst? Genau dort setzt die Bremse an.",
+          "blatt": "skills-wut-signale"
+        },
+        {
+          "titel": "Skill: Offene Hände, lockerer Kiefer",
+          "dauer": 8,
+          "phase": "skill",
+          "text": "Im Sitzen, beide Füße am Boden. Zuerst zehn Sekunden lang die typischen Wutsignale absichtlich anspannen: Fäuste ballen, Zähne zusammenbeißen, Schultern hochziehen. Dann das Gegenteil: die Hände öffnen und mit den Handflächen nach oben auf die Oberschenkel legen, den Kiefer locker lassen, die Schultern sinken lassen und langsam ausatmen; wer mag, lässt die Mundwinkel ganz leicht nach oben gehen. Dreimal wechseln, danach eine Minute nur offene Hände. Kurz erklären: Der Körper meldet dem Kopf zurück, was er tut – offene Hände sagen dem Alarmsystem, dass gerade kein Kampf ansteht.",
+          "sagen": [
+            "Macht eine Faust, beißt die Zähne zusammen, zieht die Schultern hoch. Spürt ihr, wie sich das anfühlt?",
+            "Und jetzt auf: Hände offen, Kiefer locker, Schultern runter. Was ist anders?",
+            "Das geht auch unauffällig unter dem Tisch – genau dann, wenn ihr euer erstes Warnzeichen bemerkt."
+          ],
+          "tipp": "Offene Hände und ein halbes Lächeln stammen aus dem DBT-Skillstraining. Sie wirken nicht wie ein Schalter, aber sie nehmen dem Körper die Kampfhaltung, und der Wut geht ein Stück Nachschub aus.",
+          "wennEsKippt": "Wird über das halbe Lächeln gekichert, das Lächeln weglassen und nur mit Händen und Kiefer arbeiten. Wer beim Anspannen unruhig wird, macht nur den zweiten Teil."
+        },
+        {
+          "titel": "Réckbléck, Skills-Pass und Wut-Protokoll",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Blitzlicht mit einem Satz: Was liegt bei euch am häufigsten unter der Wasserlinie? Wer das nicht sagen möchte, nennt sein erstes Warnzeichen oder sagt „weiter“. Dann Eintrag in den Skills-Pass und Stempel. Zum Schluss den Beobachtungsauftrag erklären: bis zur nächsten Einheit einmal im Wut-Protokoll auf dem Blatt festhalten, was passiert ist, was darunter lag und welches Zeichen zuerst kam – ohne Namen und Einzelheiten. Wer mag, ergänzt am Ende der Woche die drei Sätze in Aufgabe 5.",
+          "sagen": [
+            "Ein Satz: Was liegt bei euch am häufigsten unter der Wasserlinie – oder welches Zeichen kommt zuerst?",
+            "Bis nächste Woche seid ihr Wut-Forschende: einmal beobachten, eine Zeile ausfüllen, fertig."
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Nächstes Mal geht es um die Sekunden zwischen dem ersten Warnzeichen und dem Ausbruch: Ihr lernt die Stopp-Ampel kennen und spielt viele Szenen aus dem Alltag – bringt euer Wut-Protokoll mit.",
+      "hintergrund": "Wut entsteht meist, wenn Menschen etwas als Kränkung, Bedrohung oder Unrecht bewerten. Novaco (1975) beschreibt sie als Reaktion auf wahrgenommene Provokation, die durch Gedanken, Erwartungen und körperliche Anspannung verstärkt oder gedämpft wird. Unter der sichtbaren Wut liegen oft verletzlichere Gefühle; besonders gut belegt ist, dass Scham leicht in Ärger und Schuldzuweisung umschlägt (Tangney & Dearing, 2002). Das Eisberg-Bild macht diese Schicht besprechbar, ohne dass jemand Eigenes erzählen muss. Wut ist zugleich ein Körperzustand: In den Körperkarten von Nummenmaa et al. (2014) zeigte sie sich vor allem in Kopf, Brust, Armen und Händen. Diese Signale kommen oft früher als der Gedanke „Ich bin wütend“, und je früher man eingreift, desto leichter gelingt die Regulation (Gross, 1998). Offene Hände und ein halbes Lächeln gehören zu den Körper-Skills der DBT (Linehan, 2015).",
+      "quellen": [
+        "Novaco, R. W. (1975). Anger Control: The Development and Evaluation of an Experimental Treatment. Lexington, MA: Lexington Books.",
+        "Tangney, J. P. & Dearing, R. L. (2002). Shame and Guilt. New York: Guilford.",
+        "Nummenmaa, L., Glerean, E., Hari, R. & Hietanen, J. K. (2014). Bodily maps of emotions. Proceedings of the National Academy of Sciences, 111(2), 646–651.",
+        "Gross, J. J. (1998). The emerging field of emotion regulation: An integrative review. Review of General Psychology, 2(3), 271–299.",
+        "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford."
+      ],
+      "achtung": "Wut-Themen berühren manchmal Gewalt – erlebte und ausgeübte. Eigene Ausbrüche werden nicht im Plenum erzählt, das Eisberg-Blatt bleibt privat und wird nicht eingesammelt. In den Zeitlupen-Szenen gilt: keine Berührung, der Ausbruch wird nie gespielt, jede Person darf aussetzen und Regie führen. Deutet jemand an, dass er zu Hause oder anderswo geschlagen, bedroht oder erniedrigt wird oder selbst andere verletzt: in der Gruppe nicht vertiefen, die Person nach der Einheit ruhig ansprechen, nichts versprechen, was man nicht halten kann, nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) am selben Tag informieren. Bei akuter Gefahr Notruf 112 oder Polizei 113 und die Person nicht allein lassen."
+    },
+    {
+      "id": "j2-e11",
+      "nr": 11,
+      "jahr": 2,
+      "modul": "j2-m3",
+      "titel": "Stopp – erst denken, dann handeln",
+      "kurz": "Zwischen Warnzeichen und Ausbruch liegen ein paar Sekunden: Die Gruppe lernt die Stopp-Ampel – runterkommen, abwägen, handeln – und spielt sie in vielen Szenen aus dem Alltag durch.",
+      "dauer": 100,
+      "ziele": [
+        "erklären die drei Farben der Stopp-Ampel und warum das Runterkommen vor dem Nachdenken kommt",
+        "finden zu einer Situation mindestens drei Möglichkeiten und schätzen ihre Folgen für sich und andere ab",
+        "wenden die Ampel im Rollenspiel an, auch wenn das Gegenüber weiter provoziert",
+        "legen ihre persönliche Stopp-Ampel fest: Warnzeichen, Rot-Skill, Gelb-Frage und einen ersten Satz für Grün"
+      ],
+      "material": [
+        "Gefühlsrad (A3, laminiert), Wäscheklammern und Anspannungsskala 0–100",
+        "Drei große Kreise aus Tonpapier in Rot, Gelb und Grün (etwa 40 cm Durchmesser) für den Boden",
+        "Je Person drei Signalkarten (A6) in Rot, Gelb und Grün",
+        "Blatt „Ampel-Szenen“ auf festem Papier, ausgeschnitten",
+        "Schülerblatt „Die Stopp-Ampel“ für jede Person, dazu die Blätter „Meine Auslöser und Warnzeichen“ aus Einheit 10",
+        "Skills-Pässe und Stempel, Imbiss und Getränke (Allergien beachten)"
+      ],
+      "vorbereitung": [
+        "Die drei Kreise mit je einem Schritt Abstand hintereinander auf den Boden legen: Rot, Gelb, Grün",
+        "Die Ampel-Szenen durchsehen und Karten weglassen, die einem aktuellen Konflikt in der Gruppe ähneln",
+        "Das Tafelbild der Ampel aus Schritt 3 vorbereiten, die Spalten noch leer",
+        "Für die Vorführung mit einer zweiten Leitung oder einer vorher gefragten Person absprechen, wer provoziert"
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-wut-signale",
+        "skills-stopp-ampel",
+        "skills-ampel-szenen",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Welches Warnzeichen kam zuerst?"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Vom Warnzeichen zur Bremse"
+        },
+        {
+          "min": "15–30",
+          "phase": "input",
+          "titel": "Die Stopp-Ampel am Boden"
+        },
+        {
+          "min": "30–45",
+          "phase": "uebung",
+          "titel": "Gelb üben: Möglichkeiten und Folgen"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–85",
+          "phase": "aktiv",
+          "titel": "Ampel-Theater mit Signalkarten"
+        },
+        {
+          "min": "85–95",
+          "phase": "skill",
+          "titel": "Rot-Skill und meine persönliche Ampel"
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Réckbléck und Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: Welches Warnzeichen kam zuerst?",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Gefühlsrad und Anspannung wie gewohnt. Dazu eine freiwillige Frage zum Wut-Protokoll aus Einheit 10: Hat jemand diese Woche bemerkt, welches Warnzeichen zuerst kam? Nur das Zeichen nennen, keine Geschichte und keine Namen. Die Leitung beginnt und nennt selbst ein Zeichen, etwa heiße Ohren in der Warteschleife einer Hotline. Die Zeichen ohne Namen neben dem roten Kreis an die Tafel schreiben.",
+          "sagen": [
+            "Gefühl, Zahl – und wenn ihr mögt: Welches Zeichen kam diese Woche bei euch zuerst? Nur das Zeichen, nicht die Geschichte.",
+            "Wer erst hinterher gemerkt hat, dass er wütend war: Das ist der erste Schritt. Rechtzeitig merken kommt mit der Übung."
+          ],
+          "tipp": "Wer das Protokoll vergessen hat, schaut auf seinen Körperumriss vom letzten Mal. Nicht nachhaken, warum es leer ist.",
+          "wennEsKippt": "Fängt jemand an, einen Streit der Woche ausführlich zu erzählen, freundlich unterbrechen: Danke – heute brauchen wir nur das Zeichen. Wer über den Rest reden will, bekommt ein Gespräch nach der Einheit.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Vom Warnzeichen zur Bremse",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "An den Eisberg erinnern: Unter der Wut liegt oft Kränkung, Angst, Scham oder Ungerechtigkeit, und der Körper meldet sich früh. Die Jugendlichen legen ihr Blatt mit den Warnzeichen vor sich. Dann die Frage stellen, um die es heute geht: Was tue ich in den Sekunden zwischen dem ersten Zeichen und dem Ausbruch? Wer in Jahr 1 dabei war, kennt den Satz „Erst runter, dann reden“ – heute bekommt er eine Ampel.",
+          "sagen": [
+            "Zwischen dem Moment, in dem euer Kiefer fest wird, und dem Moment, in dem die Tür knallt, liegen oft nur ein paar Sekunden. Um diese Sekunden geht es heute."
+          ],
+          "blatt": "skills-wut-signale"
+        },
+        {
+          "titel": "Die Stopp-Ampel am Boden",
+          "dauer": 15,
+          "phase": "input",
+          "text": "Die drei Kreise liegen am Boden. Eine freiwillige Person stellt sich auf Rot, die Leitung liest eine kurze Situation vor, und die Person geht Schritt für Schritt über Gelb nach Grün, während die Gruppe sagt, was auf jeder Farbe passiert. Danach das Tafelbild gemeinsam füllen. Den Zusammenhang mit der Anspannung erklären: Über 70 klappt Nachdenken kaum, deshalb steht Runterkommen vorn, und wer auf Gelb merkt, dass die Zahl wieder steigt, geht zurück auf Rot. Wer den Ampelplan aus Jahr 1 kennt: Dort zeigten die Farben die Anspannung, hier zeigen sie den nächsten Schritt. Zum Schluss spielen Leitung und zweite Person dieselbe Situation zweimal, einmal ohne Ampel und einmal mit Ampel und lautem Denken.",
+          "sagen": [
+            "Rot heißt nicht: Wut weg. Rot heißt: Hände weg, Mund zu, Abstand – bis die Zahl wieder unter 70 ist.",
+            "Auf Gelb fragt ihr euch: Was will ich eigentlich? Was könnte ich tun – und was passiert dann?",
+            "Grün heißt: Ich probiere das Beste aus. Und danach schaue ich, ob es geklappt hat."
+          ],
+          "tabelle": {
+            "spalten": [
+              "Farbe",
+              "Was ich tue",
+              "Was ich mir sagen kann"
+            ],
+            "zeilen": [
+              [
+                "Rot: Stopp",
+                "Hände weg, Mund zu, einen Schritt zurück, Handy weg; ein Skill, bis die Zahl unter 70 ist",
+                "„Stopp. Erst runter.“ – „Ich brauch kurz.“"
+              ],
+              [
+                "Gelb: Denken",
+                "Was ist los? Was will ich erreichen? Mindestens drei Möglichkeiten und ihre Folgen",
+                "„Was bringt mich weiter – heute und morgen?“"
+              ],
+              [
+                "Grün: Handeln",
+                "Die beste Möglichkeit ausprobieren und danach prüfen, ob es geklappt hat",
+                "„Ich mach das jetzt so.“ – „Hat es funktioniert?“"
+              ]
+            ]
+          },
+          "tipp": "Die Vorführung mit lautem Denken ist das Herzstück: Die Jugendlichen hören, wie ein innerer Satz klingt, bevor sie ihn selbst sagen. Ruhig ein wenig übertreiben – die Szene darf komisch sein.",
+          "wennEsKippt": "Kommt „Das dauert viel zu lange, bis dahin ist alles vorbei“, zustimmen: Am Anfang ist die Ampel langsam. Mit Übung schrumpft Gelb auf zwei Sekunden – so wie beim Fahrradfahren niemand mehr über das Treten nachdenkt.",
+          "blatt": "skills-stopp-ampel"
+        },
+        {
+          "titel": "Gelb üben: Möglichkeiten und Folgen",
+          "dauer": 15,
+          "phase": "uebung",
+          "text": "Die Geschichte vom Blatt lesen: Aylin und das Handy in der Pause. Gemeinsam die Beispielzeile der Tabelle ansehen, dann suchen die Jugendlichen zu zweit mindestens drei weitere Möglichkeiten und schreiben zu jeder, was gleich danach und was am nächsten Tag passiert. Die Ergebnisse sammeln und fragen, welche Möglichkeit Aylin dem näherbringt, was sie eigentlich will. Zum Schluss wählt jede Person auf dem Blatt die Möglichkeit, die sie nehmen würde, und schreibt Aylins ersten Satz – es gibt mehr als eine gute Lösung.",
+          "sagen": [
+            "Was will Aylin eigentlich? Ihr Handy zurück, keinen Ärger mit der Schule, nicht als Opfer dastehen?",
+            "Was passiert in fünf Minuten – und was morgen früh im Bus?",
+            "Auch zurückschlagen ist eine Möglichkeit. Wir schreiben sie hin und schauen uns die Folgen an."
+          ],
+          "tipp": "Unvernünftige Möglichkeiten nicht verbieten, sondern mit aufschreiben: Wer die Folgen selbst durchdenkt, streicht sie eher als jemand, dem sie verboten werden.",
+          "wennEsKippt": "Fällt einem Paar nichts ein, helfen drei Fragen: Was könntest du sagen? Was könntest du tun, ohne etwas zu sagen? Wen könntest du dazuholen? Bei nur zwei Jugendlichen arbeiten beide mit der Leitung, die selbst eine schlechte Idee beisteuert.",
+          "blatt": "skills-stopp-ampel"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Gemeinsam essen und trinken, Fenster auf. Die Leitung isst mit, das Thema ruht. Nebenbei die Signalkarten verteilen und vor den drei Kreisen Platz zum Spielen schaffen."
+        },
+        {
+          "titel": "Ampel-Theater mit Signalkarten",
+          "dauer": 25,
+          "phase": "aktiv",
+          "text": "Zu zweit eine Szenenkarte ziehen; eine Person spielt die Figur mit der Ampel, die andere liefert den Auslöser. Bei den ersten beiden Szenen übernimmt die Leitung die provozierende Rolle selbst. Die Szene läuft, bis es kritisch wird – dann hebt das Publikum Rot: Die Figur friert ein, tritt auf den roten Kreis und zeigt einen Rot-Skill. Bei Gelb denkt sie laut – der Kasten „Laut denken“ auf dem Blatt hilft beim Formulieren – und nennt zwei, drei Möglichkeiten; das Publikum darf eine ergänzen. Bei Grün spielt sie die gewählte Möglichkeit, und das Gegenüber reagiert so, wie Menschen wirklich reagieren – gern mit einem zweiten Nadelstich. Danach Rollen tauschen und nach jeder Szene aus der Rolle aussteigen: aufstehen, ausschütteln, den eigenen Namen sagen.",
+          "sagen": [
+            "Ihr spielt euch nicht selbst und niemanden aus der Gruppe. Alles ist erfunden.",
+            "Rot. Einfrieren – was macht sie jetzt mit ihrem Körper?",
+            "Gelb: Laut denken, bitte. Was könntest du tun, und was passiert dann?",
+            "Er stichelt weiter. Bleibt die Ampel auf Grün, oder geht sie zurück auf Rot?"
+          ],
+          "tipp": "Das Gegenüber darf nach Grün noch einmal nachlegen: So lernen die Jugendlichen, dass die Ampel nicht nur einmal läuft. Mit nur zwei Jugendlichen spielen beide abwechselnd mit der Leitung; bei wenig Energie reicht eine Szene pro Person im Sitzen, bei der die Signalkarten den Ablauf steuern.",
+          "wennEsKippt": "Wird eine Szene echt – jemand wird laut, persönlich oder spielt einen realen Streit aus der Gruppe nach –, sofort Rot zeigen, beide aus der Rolle holen und die Karte wechseln. Echte Konflikte zwischen Gruppenmitgliedern werden nicht im Rollenspiel gelöst, sondern später in einem begleiteten Gespräch.",
+          "blatt": "skills-ampel-szenen"
+        },
+        {
+          "titel": "Rot-Skill und meine persönliche Ampel",
+          "dauer": 10,
+          "phase": "skill",
+          "text": "Nach dem Theater bewusst runterfahren. Alle sitzen, die Füße am Boden, und schätzen ihre Zahl. Den doppelten Seufzer anleiten: zweimal hintereinander durch die Nase einatmen – ein tiefer Zug und ein kurzer hinterher –, dann lange und langsam durch den Mund ausatmen. Eine Minute lang wiederholen, jede Person in ihrem Tempo, danach die Zahl neu schätzen. Kurz erklären, dass das lange Ausatmen den Herzschlag bremst und der Skill unauffällig im Bus, in der Klasse oder vor dem Absenden einer Nachricht funktioniert. Dann füllt jede Person auf dem Blatt ihre persönliche Stopp-Ampel aus: erstes Warnzeichen und Rot-Skill, die hilfreichste Gelb-Frage und einen Satz für Grün. Wem nichts einfällt, der sucht sich etwas aus dem Kasten „Ideen für deine Ampel“ aus.",
+          "sagen": [
+            "Zweimal ein durch die Nase – lang aus durch den Mund. Und noch einmal.",
+            "Das ist euer Rot-Skill für die Hosentasche. Niemand merkt, dass ihr gerade auf die Bremse tretet."
+          ],
+          "tipp": "Wird jemandem schwindelig, normal weiteratmen lassen. Die Stopp-Ampel nicht einsammeln: Sie gehört in die Mappe oder als Foto aufs Handy.",
+          "wennEsKippt": "Seufzen wird anfangs gern übertrieben und laut – das gehört dazu. Nach drei Runden die Lautstärke herunternehmen: jetzt so, dass es die Person neben euch nicht hört.",
+          "blatt": "skills-stopp-ampel"
+        },
+        {
+          "titel": "Réckbléck und Skills-Pass",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Blitzlicht mit einer Frage: Welche Farbe der Ampel wird für euch am schwersten – und warum? Dann Eintrag in den Skills-Pass, etwa der eigene Rot-Skill, und Stempel. Den Wochenauftrag geben: die Ampel einmal im Alltag ausprobieren, und sei es nur Rot.",
+          "sagen": [
+            "Ein Satz: Welche Farbe wird für euch am schwersten?",
+            "Bis nächste Woche einmal die Ampel. Auch wenn nur Rot klappt, zählt das."
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Und wenn es trotzdem kracht? Nächstes Mal geht es darum, wie man nach einem Ausbruch Verantwortung übernimmt und etwas wiedergutmacht – ohne sich kleinzumachen.",
+      "hintergrund": "Die Ampel stammt aus Programmen zum sozialen Problemlösen. Goleman (1995) beschreibt das Vorgehen: Rot heißt anhalten und sich beruhigen, Gelb heißt Problem und Gefühl benennen, ein Ziel setzen, Lösungen sammeln und die Folgen vorausdenken, Grün heißt den besten Plan ausprobieren. Auch das PATHS-Programm arbeitet mit einem Ampelsignal; in einer Evaluation verbesserte es das Gefühlsverständnis von Schulkindern (Greenberg et al., 1995). Möglichkeiten sammeln und Folgen abschätzen sind Kernfertigkeiten im Problemlöseansatz von Shure (1992). Dass Runterkommen vorn steht, hat einen Grund: Im Jugendalter reifen die bremsenden Funktionen später als die Systeme für Gefühle, und unter Gleichaltrigen setzen sich Impulse leichter durch (Steinberg, 2014). Das laute Denken nutzt die Selbstinstruktion nach Meichenbaum und Goodman (1971). Der doppelte Seufzer hob in einer Studie die Stimmung und senkte die Atemfrequenz (Balban et al., 2023).",
+      "quellen": [
+        "Goleman, D. (1995). Emotional Intelligence. New York: Bantam.",
+        "Greenberg, M. T., Kusché, C. A., Cook, E. T. & Quamma, J. P. (1995). Promoting emotional competence in school-aged children: The effects of the PATHS curriculum. Development and Psychopathology, 7(1), 117–136.",
+        "Shure, M. B. (1992). I Can Problem Solve (ICPS). Champaign, IL: Research Press.",
+        "Steinberg, L. (2014). Age of Opportunity: Lessons from the New Science of Adolescence. Boston: Houghton Mifflin Harcourt.",
+        "Meichenbaum, D. & Goodman, J. (1971). Training impulsive children to talk to themselves. Journal of Abnormal Psychology, 77(2), 115–126.",
+        "Balban, M. Y., Neri, E., Kogon, M. M., Weed, L., Nouriani, B., Jo, B., Holl, G., Zeitzer, J. M., Spiegel, D. & Huberman, A. D. (2023). Brief structured respiration practices enhance mood and reduce physiological arousal. Cell Reports Medicine, 4(1), 100895."
+      ],
+      "achtung": "Rollenspiele nur mit den erfundenen Szenen der Karten, nie mit echten Konflikten aus der Gruppe; die provozierende Rolle übernimmt zuerst die Leitung, Berührungen gibt es nicht, und jede Person darf aussetzen oder Regie führen. Jugendliche mit vielen Konflikterfahrungen reagieren auf Provokation im Spiel manchmal heftiger als erwartet – dann sofort stoppen, aus der Rolle holen und später unter vier Augen nachfragen. Erzählt jemand von Gewalt, Bedrohung oder Erpressung, die er erlebt oder ausübt: nicht in der Gruppe vertiefen, die Person nach der Einheit ruhig ansprechen, nichts versprechen, was man nicht halten kann, nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) am selben Tag informieren. Bei akuter Gefahr Notruf 112 oder Polizei 113."
+    },
+    {
+      "id": "j2-e12",
+      "nr": 12,
+      "jahr": 2,
+      "modul": "j2-m3",
+      "titel": "Wiedergutmachen",
+      "kurz": "Nach einem Ausbruch ist nicht alles verloren: Die Gruppe prüft Entschuldigungen auf Ausreden, beantwortet die Fragen der Wiedergutmachung für beide Seiten und plant, was wieder in Ordnung bringt.",
+      "dauer": 100,
+      "ziele": [
+        "unterscheiden „Ich habe etwas Schlechtes getan“ von „Ich bin schlecht“ und erklären, warum nur der erste Satz beim Wiedergutmachen hilft",
+        "erkennen die vier Teile einer guten Entschuldigung und entlarven Scheinentschuldigungen",
+        "beantworten die Fragen der Wiedergutmachung aus der Sicht beider Beteiligten und planen eine Wiedergutmachung, die zum Schaden passt",
+        "halten im Skills-Kompass fest, welcher Skill ihnen bei Wut und Impulsen hilft"
+      ],
+      "material": [
+        "Gefühlsrad (A3, laminiert), Wäscheklammern und Anspannungsskala 0–100",
+        "Sechs Entschuldigungen auf Karten (A5) für die Bewertungsrunde (Schritt 3)",
+        "Zwölf Karten für die Staffel: sechs Schadenskarten auf rotem, sechs Wiedergutmachungskarten auf grünem Papier (Texte in Schritt 6)",
+        "Schülerblatt „Wiedergutmachen“ für jede Person",
+        "Skills-Kompass jeder Person (Blatt „Mein Skills-Kompass“)",
+        "Skills-Pässe und Stempel, Imbiss und Getränke (Allergien beachten)"
+      ],
+      "vorbereitung": [
+        "Die Staffelkarten schreiben und mischen; eine Laufstrecke von etwa acht Metern festlegen (Flur, Hof oder Turnhalle)",
+        "Für das Kugellager zwei Stuhlkreise stellen, innen und außen, die Stühle einander gegenüber; bei ungerader Zahl spielt die Leitung mit",
+        "Vorab im Team klären, ob es in der Gruppe einen aktuellen, ungeklärten Vorfall gibt. Wenn ja, keine Beispiele wählen, die ihm ähneln, und ein begleitetes Klärungsgespräch außerhalb der Einheit planen"
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-wiedergutmachen",
+        "skills-kompass",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Welche Farbe war am schwersten?"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Und wenn es trotzdem kracht?"
+        },
+        {
+          "min": "15–30",
+          "phase": "input",
+          "titel": "Echte Entschuldigung oder Ausrede?"
+        },
+        {
+          "min": "30–45",
+          "phase": "uebung",
+          "titel": "Die Fragen der Wiedergutmachung"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–72",
+          "phase": "aktiv",
+          "titel": "Wiedergutmachungs-Staffel"
+        },
+        {
+          "min": "72–85",
+          "phase": "aktiv",
+          "titel": "Kugellager: Entschuldigung in 30 Sekunden"
+        },
+        {
+          "min": "85–95",
+          "phase": "skill",
+          "titel": "Freundlich mit mir und Skills-Kompass"
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Réckbléck, Skills-Pass und Modulabschluss"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: Welche Farbe war am schwersten?",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Gefühlsrad und Anspannung wie gewohnt. Freiwillige Zusatzfrage zum Wochenauftrag: Wer hat die Ampel ausprobiert – und welche Farbe war am schwersten? Nur die Farbe und ein Satz dazu, keine Geschichte. Die Leitung beginnt und erzählt, wo bei ihr selbst Gelb gefehlt hat, etwa bei einer zu schnellen Antwort auf eine ärgerliche Nachricht.",
+          "sagen": [
+            "Gefühl, Zahl – und: Welche Farbe der Ampel war diese Woche am schwersten?",
+            "Wer es nicht ausprobiert hat, sagt, welche Farbe er für die schwerste hält."
+          ],
+          "tipp": "Oft sagen Jugendliche, dass sie erst hinterher an die Ampel gedacht haben. Das ausdrücklich würdigen: Hinterher merken ist die Vorstufe von rechtzeitig merken.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Und wenn es trotzdem kracht?",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "An die Ampel anknüpfen und offen sagen: Auch mit Ampel kracht es manchmal, bei Jugendlichen genauso wie bei Erwachsenen. Die Frage ist dann nicht mehr, wie man den Ausbruch verhindert, sondern was danach kommt. Den Rahmen klären: Heute erzählt niemand von eigenen Ausbrüchen, alle Beispiele sind erfunden.",
+          "sagen": [
+            "Nach einem Ausbruch ist nicht alles kaputt. Heute geht es darum, wie man etwas wieder in Ordnung bringt – ohne sich kleinzumachen.",
+            "Wer etwas wiedergutmacht, zeigt Stärke. So tun, als wäre nichts gewesen, ist nur die bequemere Variante."
+          ]
+        },
+        {
+          "titel": "Echte Entschuldigung oder Ausrede?",
+          "dauer": 15,
+          "phase": "input",
+          "text": "Die Geschichte vom Blatt vorlesen: Diogo und das Plakat. Dann die sechs Entschuldigungen einzeln vorlesen; alle zeigen mit 0 bis 10 Fingern, wie sehr sie die Entschuldigung annehmen würden, und nach jeder Karte kurz sagen, was fehlt oder stört. Aus den Antworten die vier Teile einer guten Entschuldigung an die Tafel schreiben (Tabelle). Zum Schluss den Unterschied erklären, der alles leichter macht: „Ich habe etwas Schlechtes getan“ lässt sich wiedergutmachen, „Ich bin schlecht“ nicht.",
+          "sagen": [
+            "Wie viele Finger bekommt diese Entschuldigung? Was fehlt ihr?",
+            "Eine Erklärung ist erlaubt. Eine Rechtfertigung klingt ähnlich, schiebt aber die Schuld weg.",
+            "Ich habe Mist gebaut – das kann ich reparieren. Ich bin Mist – da gibt es nichts zu reparieren. Merkt ihr den Unterschied?"
+          ],
+          "punkte": [
+            "„Sorry.“ – mit Augenrollen, im Vorbeigehen",
+            "„Tut mir leid, aber du hast mich provoziert.“",
+            "„Es tut mir leid, falls du dich verletzt fühlst.“",
+            "„Ich hatte halt schlechte Laune, das weißt du doch.“",
+            "„Ich bin eben so. Ich kann nicht anders.“",
+            "„Es tut mir leid, dass ich dein Plakat zerrissen und dich vor allen angeschrien habe. Das war nicht okay. Ich war wegen meiner Note sauer, aber dafür kannst du nichts. Ich mache morgen ein neues – wenn du willst, zusammen mit dir. Beim nächsten Mal gehe ich raus, bevor ich platze.“"
+          ],
+          "tabelle": {
+            "spalten": [
+              "Teil",
+              "Was es heißt",
+              "So kann es klingen"
+            ],
+            "zeilen": [
+              [
+                "1 Sagen, was ich getan habe",
+                "Konkret, ohne „aber“ und ohne „falls“",
+                "„Ich habe dein Plakat zerrissen.“"
+              ],
+              [
+                "2 Anerkennen, was es ausgelöst hat",
+                "Die Folgen für die andere Person sehen",
+                "„Du hast zwei Stunden daran gearbeitet, und alle haben es gesehen.“"
+              ],
+              [
+                "3 Wiedergutmachung anbieten",
+                "Etwas, das zum Schaden passt – und fragen, was die Person braucht",
+                "„Ich mache ein neues. Was brauchst du noch?“"
+              ],
+              [
+                "4 Sagen, was ich anders mache",
+                "Ein machbarer Plan für das nächste Mal",
+                "„Nächstes Mal gehe ich raus, bevor ich platze.“"
+              ]
+            ]
+          },
+          "tipp": "Dazu gehört auch: Die andere Person muss nicht sofort verzeihen. Eine Entschuldigung ist ein Angebot, keine Rechnung, die bezahlt werden muss.",
+          "wennEsKippt": "Kommt „Entschuldigen ist peinlich“ oder „Dann denken alle, ich bin schwach“, das ernst nehmen und fragen: Wer wirkt auf euch stärker – jemand, der ausweicht, oder jemand, der sagt, das war mein Fehler? Oft kippt die Stimmung, wenn die Leitung von einer eigenen Entschuldigung erzählt, die ihr schwergefallen ist.",
+          "blatt": "skills-wiedergutmachen"
+        },
+        {
+          "titel": "Die Fragen der Wiedergutmachung",
+          "dauer": 15,
+          "phase": "uebung",
+          "text": "Die Gruppe in zwei Hälften teilen: Die eine beantwortet auf dem Blatt die Fragen für Diogo, der das Plakat zerrissen hat, die andere die Fragen für Léa, der es gehört. Dann liest die Leitung die Fragen der Reihe nach vor, und abwechselnd antwortet eine Person aus jeder Hälfte – so entsteht ein Klärungsgespräch, wie es an vielen Schulen geführt wird. Auswerten: Was braucht Léa, damit es wieder gut werden kann? Zum Schluss füllt jede Person den Wiedergutmachungsplan aus, für Diogo oder für eine eigene Situation, die auf dem Blatt bleibt.",
+          "sagen": [
+            "Diogo: Was ist passiert? Was hast du dabei gedacht? Wer ist davon betroffen – und wie?",
+            "Léa: Was hast du gedacht, als es passiert ist? Was war das Schwerste für dich? Was muss passieren, damit es wieder gut wird?",
+            "Merkt ihr, dass niemand fragt, wer schuld ist? Die Fragen schauen nach vorn."
+          ],
+          "tipp": "Diese Fragen werden auch bei echten Klärungsgesprächen benutzt. Wer sie kennt, weiß, was ihn dort erwartet, und kann sich vorbereiten.",
+          "wennEsKippt": "Ergreift die Gruppe Partei („Léa soll sich nicht so anstellen“), nachfragen: Wie wäre es, wenn es dein Plakat gewesen wäre? Bei nur zwei Jugendlichen übernimmt jede Person eine Seite, und die Leitung moderiert.",
+          "blatt": "skills-wiedergutmachen"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Gemeinsam essen, Fenster auf. Das Thema ruht. Nebenbei die grünen Karten am Ende der Laufstrecke auslegen und die Stuhlkreise für das Kugellager vorbereiten."
+        },
+        {
+          "titel": "Wiedergutmachungs-Staffel",
+          "dauer": 12,
+          "phase": "aktiv",
+          "text": "Zwei Teams stehen am Start, am Ende der Strecke liegen die grünen Wiedergutmachungskarten offen. Die Leitung liest eine rote Schadenskarte vor; aus jedem Team läuft eine Person los und bringt die grüne Karte, die am besten zum Schaden passt. Wer die passendste bringt, holt den Punkt – sind sich die Teams uneinig, entscheidet eine kurze Begründung. Danach die Paare gemeinsam auswerten: Welche Wiedergutmachung passt, welche wäre zu klein oder zu groß?",
+          "sagen": [
+            "Passt die Wiedergutmachung zum Schaden? Zu klein, zu groß oder genau richtig?",
+            "Merkt ihr was? Was vor allen passiert ist, braucht oft auch eine Klarstellung vor allen – aber nur, wenn die betroffene Person das möchte."
+          ],
+          "tabelle": {
+            "spalten": [
+              "Schaden (rot)",
+              "Passende Wiedergutmachung (grün)"
+            ],
+            "zeilen": [
+              [
+                "Im Streit ist das Handy der Schwester heruntergefallen, das Display hat einen Sprung.",
+                "Die Reparatur mitbezahlen, notfalls in Raten vom Taschengeld."
+              ],
+              [
+                "Vor der ganzen Klasse wurde jemand angeschrien und beleidigt.",
+                "Sich entschuldigen und – wenn die Person es möchte – vor der Klasse klarstellen, dass es nicht okay war."
+              ],
+              [
+                "Im Wutanfall wurde eine Tür in der Maison des Jeunes beschädigt.",
+                "Mit dem Hausmeister reparieren oder beim Streichen helfen."
+              ],
+              [
+                "Im Klassenchat wurde über einen Mitschüler etwas Falsches behauptet.",
+                "Die Nachricht löschen und im Chat richtigstellen."
+              ],
+              [
+                "Die beste Freundin wurde vor anderen bloßgestellt.",
+                "Unter vier Augen entschuldigen, zuhören und ihr Zeit lassen."
+              ],
+              [
+                "Im Training wurde ein Mitspieler nach einem Foul geschubst.",
+                "Sich bei ihm entschuldigen und die Strafe des Trainers annehmen, ohne zu diskutieren."
+              ]
+            ]
+          },
+          "tipp": "Bei Regen, wenig Platz oder wenig Energie wird aus der Staffel ein Tischspiel: Die grünen Karten liegen auf dem Tisch, und wer zuerst die passende antippt, holt den Punkt.",
+          "wennEsKippt": "Wird die Staffel zum Rempeln, die Teams abwechselnd statt gleichzeitig laufen lassen. Streiten die Teams nur noch um Punkte, die Punkte weglassen und gemeinsam zuordnen."
+        },
+        {
+          "titel": "Kugellager: Entschuldigung in 30 Sekunden",
+          "dauer": 13,
+          "phase": "aktiv",
+          "text": "Zwei Stuhlkreise, innen und außen, je zwei Personen sitzen sich gegenüber. Die Leitung liest eine Situation vor; die Person im Innenkreis entschuldigt sich als Figur dieser Situation in höchstens 30 Sekunden mit den vier Teilen, die Person außen hört zu und zeigt danach mit den Fingern, wie viele Teile sie gehört hat. Dann rückt der Außenkreis einen Platz weiter, und die Rollen wechseln. Vier bis sechs Runden spielen, jede mit einer neuen Situation.",
+          "sagen": [
+            "Dreißig Sekunden, vier Teile: Was habe ich getan? Was hat es ausgelöst? Was biete ich an? Was mache ich nächstes Mal anders?",
+            "Außen: Wie viele Teile habt ihr gehört? Zeigt es mit den Fingern."
+          ],
+          "punkte": [
+            "Du hast deinem Bruder im Streit sein Ladekabel kaputtgemacht.",
+            "Du hast deinen besten Freund in der Pause vor allen „Loser“ genannt.",
+            "Du hast im Wutanfall die Tür zugeknallt, und das Bild daneben ist heruntergefallen.",
+            "Du hast eine Nachricht über eine Freundin weitergeleitet, die nur für dich bestimmt war.",
+            "Du hast zu Hause jemanden angeschrien, der nur nach deiner Note gefragt hat.",
+            "Du hast beim Zocken den Controller gegen die Wand geworfen – es war der von deinem Cousin."
+          ],
+          "tipp": "Mit nur zwei Jugendlichen sitzen sich beide gegenüber, und die Leitung liest für jede Person drei Situationen vor. Wer sich schwertut, darf die vier Teile aus dem Merkkasten auf dem Blatt ablesen.",
+          "wennEsKippt": "Werden die Entschuldigungen albern, setzt sich die Leitung selbst in den Innenkreis und macht eine ernst gemeinte vor. Danach eine Runde, in der die Außenkreis-Personen beim Zuhören die Augen schließen: Wie klingt eine Entschuldigung, wenn man nur die Stimme hört?"
+        },
+        {
+          "titel": "Freundlich mit mir und Skills-Kompass",
+          "dauer": 10,
+          "phase": "skill",
+          "text": "Nach einem Ausbruch meldet sich oft ein harter innerer Satz, und der macht das Wiedergutmachen schwerer. Deshalb eine kurze Übung: Hand aufs Herz oder auf den Oberarm, einmal lang ausatmen und innerlich die drei Sätze sagen, die die Leitung langsam vorspricht. Wer in Einheit 5 dabei war, kennt das: so mit sich reden wie mit einem guten Freund. Danach trägt jede Person im Skills-Kompass im Feld für Modul 3 („Wut und Impulse“) ein, welcher Skill ihr in diesem Bereich am meisten hilft.",
+          "sagen": [
+            "Sagt die Sätze innerlich, nicht laut. Wer die Hand nicht aufs Herz legen mag, legt sie auf den Oberarm oder lässt sie im Schoß.",
+            "Für den Kompass: Welcher Skill aus diesem Modul bleibt bei euch – das erste Warnzeichen, die Ampel, der doppelte Seufzer, die gute Entschuldigung?"
+          ],
+          "punkte": [
+            "Das war ein schwieriger Moment.",
+            "So etwas passiert anderen auch.",
+            "Ich kann dazu stehen – und es wieder in Ordnung bringen."
+          ],
+          "tipp": "Freundlichkeit mit sich selbst ist kein Freispruch. Wer sich nicht selbst fertigmacht, hat mehr Kraft, Verantwortung zu übernehmen.",
+          "wennEsKippt": "Findet jemand die Sätze peinlich, darf er eigene finden, etwa: Okay, das war Mist. Ich kläre das. Wer im Kompass nichts einträgt, bekommt die Frage mit: Welchen Skill aus diesem Modul würdest du einem Freund empfehlen?",
+          "blatt": "skills-kompass"
+        },
+        {
+          "titel": "Réckbléck, Skills-Pass und Modulabschluss",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Kurzer Blick zurück auf das ganze Modul: Eisberg, Ampel, Wiedergutmachen. Blitzlicht mit einem Satz: Was nehmt ihr aus den drei Treffen mit? Dann Eintrag in den Skills-Pass und Stempel. Das Blatt mit dem Wiedergutmachungsplan bleibt in der Mappe; wer den Plan für eine echte Situation nutzen will, bekommt ein Gesprächsangebot.",
+          "sagen": [
+            "Ein Satz: Was nehmt ihr aus diesem Modul mit – vom Eisberg bis zur Entschuldigung?",
+            "Wenn jemand für eine echte Sache Unterstützung beim Wiedergutmachen möchte: Ich bin nach der Stunde noch da."
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Ab nächster Woche geht es um die Menschen, die uns wichtig sind: Was macht eine gute Freundschaft aus – und was hält sie zusammen?",
+      "hintergrund": "Restorative Ansätze verstehen einen Regelverstoß vor allem als Schaden an Menschen und Beziehungen: Wer wurde verletzt, was braucht die Person, und wer muss was tun, damit es wieder gut wird (Zehr, 2002)? Die Fragen, die in Klärungsgesprächen gestellt werden, schauen deshalb nach vorn statt auf die Schuld; Wachtel (2016) beschreibt sie für beide Seiten. Entscheidend ist, wie jemand über sein Fehlverhalten denkt: Nach Tangney und Dearing (2002) geht Schuldgefühl, das sich auf die Tat bezieht, eher mit Empathie und Wiedergutmachung einher, Scham, die die ganze Person abwertet, dagegen mit Rückzug, Abwehr und neuem Ärger. Deshalb trennt die Einheit Tat und Person und endet mit einer freundlichen Selbstansprache (Neff, 2003). Auch die Neue Autorität setzt nach Eskalationen auf Wiedergutmachung statt Strafe, weil sie die Beziehung erhält (Omer & von Schlippe, 2004).",
+      "quellen": [
+        "Zehr, H. (2002). The Little Book of Restorative Justice. Intercourse, PA: Good Books.",
+        "Wachtel, T. (2016). Defining Restorative. Bethlehem, PA: International Institute for Restorative Practices.",
+        "Tangney, J. P. & Dearing, R. L. (2002). Shame and Guilt. New York: Guilford.",
+        "Neff, K. D. (2003). Self-compassion: An alternative conceptualization of a healthy attitude toward oneself. Self and Identity, 2(2), 85–101.",
+        "Omer, H. & von Schlippe, A. (2004). Autorität durch Beziehung. Göttingen: Vandenhoeck & Ruprecht."
+      ],
+      "achtung": "Beim Thema Wiedergutmachung denken viele an eigene Vorfälle, oft mit Schuld- oder Schamgefühlen. Eigene Ausbrüche werden nicht im Plenum erzählt; der Plan für eine eigene Situation bleibt privat. Gibt es in der Gruppe einen ungeklärten Vorfall, wird er nicht in der Einheit verhandelt, sondern in einem begleiteten Gespräch, bei dem die betroffene Person entscheidet, ob und wann sie teilnimmt. Wiedergutmachung ersetzt keinen Schutz: Bei Mobbing, Gewalt oder Bedrohung reicht eine Entschuldigung nicht – dann nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) informieren. Wirkt jemand nach der Einheit sehr beschämt oder niedergeschlagen, behutsam nachfragen und ein Gespräch anbieten."
+    }
+  ]
+}

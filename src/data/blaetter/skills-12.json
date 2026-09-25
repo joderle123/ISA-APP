@@ -1,0 +1,1559 @@
+[
+  {
+    "id": "skills-wut-eisberg",
+    "bereich": "skills",
+    "thema": "wut",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "30 Min.",
+    "eldib": [
+      "K-26",
+      "K-33",
+      "V-33"
+    ],
+    "schlagworte": [
+      "Wut",
+      "Eisberg",
+      "Gefühle unter der Wut",
+      "Scham",
+      "Kränkung",
+      "Skills-Kurs"
+    ],
+    "bild": "motiv:eisberg",
+    "verwandt": [
+      "skills-wut-signale",
+      "wut-verstehen"
+    ],
+    "kurs": [
+      "j2-e10"
+    ],
+    "de": {
+      "titel": "Der Wut-Eisberg",
+      "untertitel": "Was andere sehen, ist nur die Spitze. Darunter liegt oft etwas, das mehr wehtut.",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Wut ist oft wie ein Leibwächter: Sie springt nach vorn, damit niemand merkt, was eigentlich getroffen hat. Wer weiß, was darunter liegt, weiß auch, was wirklich hilft."
+        },
+        {
+          "art": "geschichte",
+          "titel": "Das Heft",
+          "bild": "figur:ben:wuetend",
+          "text": "Elias (14) kommt nach der Pause ins Klassenzimmer. Sein Heft liegt aufgeschlagen auf dem Tisch, jemand hat „Loser“ quer über die Seite geschrieben. Hinten lachen drei. Elias wirft das Heft gegen die Wand und brüllt: „Wer war das?“ In dem Moment kommt die Lehrerin herein – und schickt ihn vor die Tür. Auf dem Flur tritt er gegen seinen Rucksack und denkt: Immer ich."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Welcher Gedanke gehört zu welchem Gefühl unter Wasser? Verbinde.",
+          "hinweis": "Bei Elias kann mehr als ein Gefühl darunterliegen."
+        },
+        {
+          "art": "zuordnen",
+          "titel": [
+            "Gedanke",
+            "Unter Wasser"
+          ],
+          "links": [
+            "„Die lachen mich aus. Alle haben es gesehen.“",
+            "„Der nimmt mich nicht ernst.“",
+            "„Das ist nicht fair. Die anderen kommen davon.“",
+            "„Wenn das so weitergeht, bin ich bald ganz allein.“",
+            "„Ich kann heute einfach nicht mehr.“"
+          ],
+          "rechts": [
+            "Ungerechtigkeit",
+            "Leerer Tank",
+            "Scham",
+            "Angst",
+            "Kränkung"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Was darunter liegt, bestimmt, was hilft",
+          "punkte": [
+            "Scham: nicht vor allen, sondern unter vier Augen reden.",
+            "Kränkung: ernst genommen werden, Respekt einfordern.",
+            "Ungerechtigkeit: gehört werden, eine faire Klärung verlangen.",
+            "Angst: Sicherheit und Abstand schaffen.",
+            "Leerer Tank: erst essen, trinken, schlafen – dann reden."
+          ]
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dein Eisberg: Denk an eine Situation, in der du richtig wütend warst. Was haben andere gesehen – und was lag darunter?",
+          "hinweis": "Das Beispiel zeigt den Eisberg von Elias. Deine Situation musst du niemandem erzählen."
+        },
+        {
+          "art": "eisberg",
+          "oben": "Das haben die anderen gesehen",
+          "unten": "Das lag darunter",
+          "beispielOben": "Heft an die Wand, brüllen, gegen den Rucksack treten",
+          "beispielUnten": "Scham vor der Klasse, Kränkung durch „Loser“, Ungerechtigkeit: Er muss raus, die anderen nicht"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was liegt bei dir am häufigsten unter der Wut? Kreuze an."
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 3,
+          "frei": 1,
+          "items": [
+            "Kränkung",
+            "Angst",
+            "Scham",
+            "Ungerechtigkeit",
+            "Enttäuschung",
+            "Hilflosigkeit",
+            "Ausgeschlossen sein",
+            "Leerer Tank"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was hätte Elias in dem Moment gebraucht? Und was hilft dir, wenn deine Wut so aussieht?"
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Elias hätte gebraucht, dass …",
+            "Wenn bei mir … unter der Wut liegt, hilft mir …"
+          ],
+          "linien": 2
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Du entscheidest, was du teilst.",
+          "text": "Dein Eisberg gehört dir. Im Kurs wird nichts davon vorgelesen oder eingesammelt."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen erkennen, dass unter sichtbarer Wut oft Scham, Kränkung, Ungerechtigkeit, Angst oder ein leerer Tank liegen, und leiten ab, was dann wirklich hilft.",
+        "ablauf": [
+          "Einstieg (5 Min.): Geschichte vorlesen. „Was haben die anderen gesehen? Was hat Elias gespürt?“",
+          "Input (5 Min.): Karten für unter Wasser umdrehen, Merkkasten besprechen, Aufgabe 1 allein.",
+          "Aufgabe 2 und 3 allein (8 Min.): eigener Eisberg. Nicht vorlesen, nicht einsammeln.",
+          "Aufgabe 4 (2 Min.): Wer mag, nennt nur den Satz zu Elias."
+        ],
+        "hintergrund": "Wut entsteht, wenn Menschen eine Situation als Kränkung, Bedrohung oder Unrecht bewerten; Novaco (1975) beschreibt sie als Reaktion auf wahrgenommene Provokation. Oft liegt darunter ein verletzlicheres Gefühl. Gut belegt ist der Zusammenhang mit Scham: Wer sich als ganze Person abgewertet fühlt, reagiert häufig mit Ärger und Schuldzuweisung nach außen (Tangney & Dearing, 2002). Das Eisberg-Bild macht diese Schicht besprechbar, ohne dass jemand Eigenes erzählen muss – und zeigt Erwachsenen, welche Reaktion hilft.",
+        "quellen": [
+          "Novaco, R. W. (1975). Anger Control: The Development and Evaluation of an Experimental Treatment. Lexington, MA: Lexington Books.",
+          "Tangney, J. P. & Dearing, R. L. (2002). Shame and Guilt. New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Aufgabe 1 gemeinsam lösen; den Eisberg für eine Serienfigur füllen.",
+          "schwerer": "Einen zweiten Eisberg für die Lehrerin der Geschichte füllen."
+        },
+        "impulse": [
+          "Warum zeigt man lieber Wut als Scham?",
+          "Was brauchte Elias von der Lehrerin?"
+        ],
+        "tipps": [
+          "Das Eisberg-Plakat hängen lassen – die Stopp-Ampel knüpft daran an.",
+          "Ein harmloses eigenes Beispiel der Leitung senkt die Hemmschwelle."
+        ],
+        "achtung": "Der eigene Eisberg kann Gewalt oder Demütigung berühren. Nicht im Plenum vertiefen; bei Hinweisen nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) informieren.",
+        "material": "Eisberg-Plakat, Karten für unter Wasser"
+      }
+    }
+  },
+  {
+    "id": "skills-wut-signale",
+    "bereich": "skills",
+    "thema": "wut",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln"
+    ],
+    "dauer": "15 Min. und eine Woche",
+    "eldib": [
+      "V-21",
+      "K-26",
+      "V-26"
+    ],
+    "schlagworte": [
+      "Wut",
+      "Auslöser",
+      "Warnzeichen",
+      "Körpersignale",
+      "Wut-Protokoll",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:temperature-plus",
+    "verwandt": [
+      "skills-wut-eisberg",
+      "skills-stopp-ampel",
+      "skills-gefuehls-landkarte"
+    ],
+    "kurs": [
+      "j2-e10",
+      "j2-e11"
+    ],
+    "de": {
+      "titel": "Meine Auslöser und Warnzeichen",
+      "untertitel": "Wut kommt selten aus dem Nichts. Wer seine Auslöser und ersten Zeichen kennt, kann früher bremsen.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Was bringt dich schnell auf die Palme? Kreuze an und ergänze."
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "frei": 1,
+          "items": [
+            "Jemand blamiert mich vor anderen.",
+            "Man beschuldigt mich zu Unrecht.",
+            "Jemand redet schlecht über meine Familie.",
+            "Jemand kommandiert mich herum.",
+            "Ich verliere beim Zocken oder im Sport.",
+            "Jemand nimmt meine Sachen, ohne zu fragen.",
+            "Mir hört niemand zu.",
+            "Ein Kommentar oder Foto im Chat.",
+            "Technik streikt: Akku leer, WLAN weg."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was verkürzt deine Zündschnur? Kreuze an, was deine Wut schneller hochkommen lässt."
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 3,
+          "items": [
+            "müde",
+            "hungrig",
+            "Stress in der Schule",
+            "schon genervt",
+            "zu lange am Handy",
+            "krank oder Schmerzen"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wo und in welcher Reihenfolge meldet sich deine Wut? Male in den Umriss.",
+          "hinweis": "Gelb: das Allererste, was du merkst. Orange: was dazukommt. Rot: was kurz vor dem Ausbruch passiert."
+        },
+        {
+          "art": "koerper",
+          "legende": [
+            {
+              "farbe": "gelb",
+              "text": "ganz früh – etwa bei 30"
+            },
+            {
+              "farbe": "orange",
+              "text": "es wird mehr – etwa bei 50"
+            },
+            {
+              "farbe": "rot",
+              "text": "kurz vor dem Ausbruch – ab 70"
+            }
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Mein allererstes Zeichen ist …",
+            "Das merken andere an mir, bevor ich es selbst merke: …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Warum früh bremsen?",
+          "text": "Bei 30 kannst du noch reden, nachfragen oder weggehen. Bei 80 hilft meist nur noch ein starker Skill. Je früher du dein Zeichen bemerkst, desto mehr Möglichkeiten hast du."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wut-Protokoll: Beobachte dich bis zur nächsten Einheit. Eine Zeile reicht.",
+          "hinweis": "Keine Namen, keine Einzelheiten – nur so viel, dass du dich erinnerst."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Tag",
+            "Was ist passiert?",
+            "Was lag darunter?",
+            "Erstes Zeichen",
+            "Zahl"
+          ],
+          "breiten": [
+            0.55,
+            2,
+            1.45,
+            1.3,
+            0.6
+          ],
+          "zeilen": 5,
+          "beispiel": [
+            "Mo",
+            "Bus verpasst, 20 Min. im Regen gewartet",
+            "leerer Tank, Ungerechtigkeit",
+            "Kiefer fest",
+            "60"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Am Ende der Woche: Schau auf dein Protokoll. Was fällt dir auf?",
+          "hinweis": "Schon ein Eintrag zeigt etwas. Mit mehreren erkennst du dein Muster."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Meine Wut kam vor allem, wenn …",
+            "Darunter lag meistens …",
+            "Meine Zündschnur war am kürzesten, wenn …"
+          ],
+          "linien": 2
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Du entscheidest, was du teilst.",
+          "text": "Das Protokoll ist für dich. In der nächsten Einheit nennst du höchstens dein erstes Zeichen – wenn du willst."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen benennen ihre Auslöser und Verstärker, zeichnen die Reihenfolge ihrer Warnzeichen ein und beobachten sich eine Woche lang mit einem kurzen Protokoll.",
+        "ablauf": [
+          "Aufgabe 1 und 2 allein (3 Min.); die Auslöser-Zettel aus dem Check-in helfen.",
+          "Aufgabe 3 (4 Min.) mit Gelb, Orange, Rot: „Was kommt bei dir zuerst?“",
+          "Aufgabe 4 im Réckbléck erklären: Beispielzeile lesen, Auftrag bis zur nächsten Einheit; Aufgabe 5 freiwillig am Ende der Woche.",
+          "Einheit 11: Das erste Zeichen wird zum Signal für Rot in der Stopp-Ampel."
+        ],
+        "hintergrund": "Wut zeigt sich im Körper, oft bevor sie im Kopf ankommt: In den Körperkarten von Nummenmaa et al. (2014) war sie vor allem in Kopf, Brust, Armen und Händen spürbar. Je früher man in den Ablauf eines Gefühls eingreift, desto leichter gelingt es (Gross, 1998). Wer schon angespannt oder erschöpft ist, reagiert leichter mit Ärger (Novaco, 1975) – hier „kurze Zündschnur“ genannt. Das Protokoll nutzt die Selbstbeobachtung aus dem Selbstmanagement: Notiert man Auslöser und Reaktionen, werden Muster sichtbar (Kanfer et al., 2012).",
+        "quellen": [
+          "Nummenmaa, L., Glerean, E., Hari, R. & Hietanen, J. K. (2014). Bodily maps of emotions. Proceedings of the National Academy of Sciences, 111(2), 646–651.",
+          "Gross, J. J. (1998). The emerging field of emotion regulation: An integrative review. Review of General Psychology, 2(3), 271–299.",
+          "Novaco, R. W. (1975). Anger Control: The Development and Evaluation of an Experimental Treatment. Lexington, MA: Lexington Books.",
+          "Kanfer, F. H., Reinecker, H. & Schmelzer, D. (2012). Selbstmanagement-Therapie (5. Aufl.). Berlin: Springer."
+        ],
+        "differenzierung": {
+          "leichter": "Nur Aufgabe 1 und 3; das Protokoll mündlich nachtragen.",
+          "schwerer": "Im Protokoll notieren, welcher Gedanke die Wut angeheizt hat."
+        },
+        "impulse": [
+          "Was kommt bei dir zuerst: Körper, Gedanke oder Stimme?",
+          "Wann ist deine Zündschnur am kürzesten?"
+        ],
+        "tipps": [
+          "Wer das Protokoll vergisst, trägt zu Beginn der nächsten Einheit eine Situation nach.",
+          "Die Gefühls-Landkarte aus Jahr 1 daneben legen: Neu ist die Reihenfolge."
+        ],
+        "achtung": "Einträge wie „redet schlecht über meine Familie“ können auf Belastungen zu Hause hinweisen. Nicht in der Gruppe nachfragen; bei Hinweisen auf Gewalt die zuständige Leitung (Responsable) informieren.",
+        "material": "Buntstifte in Gelb, Orange und Rot"
+      }
+    }
+  },
+  {
+    "id": "skills-stopp-ampel",
+    "bereich": "skills",
+    "thema": "wut",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "30 Min.",
+    "eldib": [
+      "V-21",
+      "V-18",
+      "V-28"
+    ],
+    "schlagworte": [
+      "Stopp-Ampel",
+      "Impulskontrolle",
+      "Problemlösen",
+      "Folgen abschätzen",
+      "Wut",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:traffic-lights",
+    "verwandt": [
+      "skills-ampel-szenen",
+      "skills-wut-signale",
+      "erst-die-pause"
+    ],
+    "kurs": [
+      "j2-e11"
+    ],
+    "de": {
+      "titel": "Die Stopp-Ampel",
+      "untertitel": "Erst runterkommen, dann nachdenken, dann handeln – in genau dieser Reihenfolge.",
+      "bausteine": [
+        {
+          "art": "ampel",
+          "linien": 0,
+          "stufen": [
+            {
+              "titel": "Rot: Stopp und runterkommen",
+              "text": "Hände weg, Mund zu, einen Schritt zurück, Handy weg. Ein Skill, bis deine Zahl unter 70 ist."
+            },
+            {
+              "titel": "Gelb: Denken",
+              "text": "Was ist los? Was will ich eigentlich? Welche Möglichkeiten habe ich – und was passiert dann?"
+            },
+            {
+              "titel": "Grün: Handeln",
+              "text": "Die beste Möglichkeit ausprobieren. Danach prüfen: Hat es geklappt? Wenn nicht, zurück zu Gelb."
+            }
+          ]
+        },
+        {
+          "art": "geschichte",
+          "titel": "Das Handy",
+          "bild": "figur:jana:wuetend",
+          "text": "In der Pause nimmt Mathis Aylin das Handy aus der Hand, liest laut eine Nachricht vor und hält es hoch, als sie danach greift. Ein paar Leute lachen. Aylins Gesicht wird heiß, ihre Hände zittern, ihre Zahl liegt bei 80. Am liebsten würde sie ihm das Handy aus der Hand reißen und zuschlagen."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Gelb: Finde für Aylin mindestens drei weitere Möglichkeiten und schätze die Folgen ab.",
+          "hinweis": "Auch schlechte Ideen dürfen in die Tabelle – die Folgen zeigen, was sie taugen."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Möglichkeit",
+            "Was passiert gleich?",
+            "Was passiert morgen?",
+            "Bringt mich das weiter?"
+          ],
+          "breiten": [
+            1.7,
+            1.6,
+            1.6,
+            0.95
+          ],
+          "zeilen": 3,
+          "beispiel": [
+            "Handy wegreißen und zuschlagen",
+            "Das Handy fällt vielleicht runter, die Aufsicht kommt.",
+            "Ärger mit der Schule, alle erzählen, Aylin sei ausgerastet.",
+            "nein"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Grün: Welche Möglichkeit würdest du wählen? Schreib den ersten Satz, den Aylin sagt."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Ich würde …, weil …",
+            "Aylins erster Satz: …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Wenn es wieder hochkocht",
+          "text": "Merkst du auf Gelb oder Grün, dass deine Zahl wieder steigt, geh zurück auf Rot. Das ist kein Scheitern – so funktioniert die Ampel."
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Ideen für deine Ampel",
+          "punkte": [
+            "Rot: doppelter Seufzer, offene Hände, einen Schritt zurück, bis zehn zählen, kurz rausgehen.",
+            "Gelb: Was will ich eigentlich? Was passiert morgen? Was würde ich einer Freundin raten?",
+            "Grün: „Ich brauch kurz.“ – „Gib mir das bitte zurück.“ – „Das klären wir nach der Stunde.“"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Deine persönliche Stopp-Ampel: Fülle sie für dich aus.",
+          "hinweis": "Dein erstes Warnzeichen steht auf dem Blatt „Meine Auslöser und Warnzeichen“."
+        },
+        {
+          "art": "ampel",
+          "linien": 2,
+          "stufen": [
+            {
+              "titel": "Mein Rot",
+              "text": "Daran merke ich es – und dieser Skill bringt mich runter:"
+            },
+            {
+              "titel": "Mein Gelb",
+              "text": "Diese Frage hilft mir am meisten beim Nachdenken:"
+            },
+            {
+              "titel": "Mein Grün",
+              "text": "Mit diesem Satz kann ich gut anfangen:"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ampel-Woche: Kreuze an, wenn du eine Farbe geschafft hast. Jede Farbe zählt."
+        },
+        {
+          "art": "plan",
+          "symbol": "kasten",
+          "tage": [
+            "Mo",
+            "Di",
+            "Mi",
+            "Do",
+            "Fr",
+            "Sa",
+            "So"
+          ],
+          "zeilen": [
+            "Rot: Ich habe rechtzeitig gestoppt.",
+            "Gelb: Ich habe erst nachgedacht.",
+            "Grün: Ich habe etwas Kluges ausprobiert."
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Du entscheidest, was du teilst.",
+          "text": "Deine Ampel gehört dir. Wenn du magst, fotografierst du sie und hast sie auf dem Handy dabei."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen kennen die drei Farben der Stopp-Ampel, schätzen Möglichkeiten und Folgen ab und legen ihre persönliche Ampel fest.",
+        "ablauf": [
+          "Einstieg (15 Min.): drei Kreise am Boden, eine Situation von Rot nach Grün gehen, dann Vorführung mit lautem Denken.",
+          "Aufgabe 1 zu zweit (10 Min.): „Was will Aylin eigentlich?“ Aufgabe 2 allein (5 Min.).",
+          "Aufgabe 3 nach dem Rot-Skill am Ende der Einheit (5 Min.). Nicht einsammeln.",
+          "Aufgabe 4 ist der Wochenauftrag; in der nächsten Einheit nur die schwerste Farbe nennen."
+        ],
+        "hintergrund": "Die Ampel stammt aus Programmen zum sozialen Problemlösen: Rot heißt anhalten und beruhigen, Gelb Problem und Ziel benennen, Lösungen sammeln und Folgen vorausdenken, Grün den besten Plan ausprobieren (Goleman, 1995). Möglichkeiten und Folgen abzuwägen, ist der Kern des Ansatzes von Shure (1992). Runterkommen steht vorn, weil sich bei Jugendlichen unter Erregung und vor Gleichaltrigen Impulse besonders leicht durchsetzen (Steinberg, 2014).",
+        "quellen": [
+          "Goleman, D. (1995). Emotional Intelligence. New York: Bantam.",
+          "Shure, M. B. (1992). I Can Problem Solve (ICPS). Champaign, IL: Research Press.",
+          "Steinberg, L. (2014). Age of Opportunity: Lessons from the New Science of Adolescence. Boston: Houghton Mifflin Harcourt."
+        ],
+        "differenzierung": {
+          "leichter": "Zwei Möglichkeiten reichen; die Leitung gibt eine gute und eine schlechte vor.",
+          "schwerer": "Die Folgen auch für Mathis und die Zuschauenden notieren."
+        },
+        "impulse": [
+          "Welche Farbe ist für euch am schwersten?",
+          "Woran merkt ihr, dass ihr zurück auf Rot müsst?"
+        ],
+        "tipps": [
+          "Die drei Kreise liegen lassen und bei echten Konflikten darauf zeigen.",
+          "Mit Übung schrumpft Gelb auf wenige Sekunden."
+        ],
+        "achtung": "Die Ampel ist für Alltagskonflikte gedacht. Bei Bedrohung, Erpressung oder Gewalt geht Sicherheit vor: weggehen, Hilfe holen und die zuständige Leitung (Responsable) informieren.",
+        "material": "Drei Kreise aus Tonpapier in Rot, Gelb und Grün"
+      }
+    }
+  },
+  {
+    "id": "skills-ampel-szenen",
+    "bereich": "skills",
+    "thema": "wut",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "gruppe"
+    ],
+    "dauer": "25 Min.",
+    "eldib": [
+      "V-26",
+      "V-25",
+      "SOZ-38"
+    ],
+    "schlagworte": [
+      "Rollenspiel",
+      "Situationskarten",
+      "Stopp-Ampel",
+      "Provokation",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:masks-theater",
+    "verwandt": [
+      "skills-stopp-ampel",
+      "skills-situationskarten"
+    ],
+    "kurs": [
+      "j2-e11"
+    ],
+    "de": {
+      "titel": "Ampel-Szenen",
+      "untertitel": "Zum Ausschneiden – für das Ampel-Theater mit Signalkarten",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "So spielen wir",
+          "punkte": [
+            "Alle Szenen sind erfunden. Niemand spielt sich selbst oder jemanden aus der Gruppe.",
+            "Keine Berührung. Wer „Stopp“ sagt, beendet die Szene sofort.",
+            "Das Publikum hebt die Karten: Rot – einfrieren, Gelb – laut denken, Grün – handeln.",
+            "Nach jeder Szene aus der Rolle aussteigen: ausschütteln, den eigenen Namen sagen."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Zieht eine Karte, verteilt die Rollen und spielt die Szene mit der Ampel.",
+          "symbole": [
+            "schneiden",
+            "partner"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 3,
+          "hoehe": 108,
+          "karten": [
+            {
+              "titel": "A1 · Die Kantine",
+              "text": "Jemand drängelt sich in der Schlange vor dich und grinst: „Ich hab’s eilig.“"
+            },
+            {
+              "titel": "A2 · Die Note",
+              "text": "Die Lehrkraft gibt dir eine schlechte Note zurück und sagt vor allen: „Hättest du mal gelernt.“ Du hattest gelernt."
+            },
+            {
+              "titel": "A3 · Der Spitzname",
+              "text": "In der Pause ruft dich einer bei einem Spitznamen, den du hasst. Zwei lachen."
+            },
+            {
+              "titel": "A4 · Die Gruppenarbeit",
+              "text": "Morgen ist Abgabe. Dein Partner schreibt: „Mach du das, ich hab keine Zeit.“"
+            },
+            {
+              "titel": "A5 · Das Ladekabel",
+              "text": "Dein Bruder hat schon wieder dein Ladekabel genommen. Dein Akku steht bei 3 %."
+            },
+            {
+              "titel": "A6 · Beim Essen",
+              "text": "Zu Hause heißt es: „Handy weg, sonst ist es eine Woche weg.“ Du schreibst gerade etwas Wichtiges."
+            },
+            {
+              "titel": "A7 · Das Zimmer",
+              "text": "Deine kleine Schwester war in deinem Zimmer und hat deine Sachen durcheinandergebracht."
+            },
+            {
+              "titel": "A8 · Das Foul",
+              "text": "Beim Fußball wirst du gefoult, der Schiedsrichter pfeift nicht. Der Gegner sagt: „Heul doch.“"
+            },
+            {
+              "titel": "A9 · Das Online-Spiel",
+              "text": "Ihr verliert knapp. Einer aus deinem Team schreibt im Chat: „Nur wegen dir.“"
+            },
+            {
+              "titel": "A10 · Der Bus",
+              "text": "Im vollen Bus stellt jemand seinen Rucksack auf den letzten freien Platz und tut, als hätte er dich nicht gehört."
+            },
+            {
+              "titel": "A11 · Das Praktikum",
+              "text": "Im Praktikum sagt der Chef vor Kunden: „Kannst du nicht mal einfache Sachen?“"
+            },
+            {
+              "titel": "A12 · Die Story",
+              "text": "Jemand teilt ein Foto von dir in seiner Story, auf dem du komisch aussiehst. Darunter: Lach-Smileys."
+            }
+          ]
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Laut denken – so kann es klingen",
+          "punkte": [
+            "Rot: „Stopp. Meine Zahl ist bei 70. Erst mal ausatmen.“",
+            "Gelb: „Was will ich eigentlich? Dass er aufhört – und keinen Ärger.“",
+            "Gelb: „Ich könnte … – aber dann … Oder ich …“",
+            "Grün: „Ich mach das jetzt so: …“ – und danach: „Hat es geklappt?“"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Beim Zuschauen: Notiert zu jeder Szene, was geholfen hat.",
+          "symbole": [
+            "zuhoeren",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Szene",
+            "Was hat auf Rot geholfen?",
+            "Welcher Satz auf Grün hat etwas verändert?"
+          ],
+          "breiten": [
+            0.6,
+            2,
+            2.4
+          ],
+          "zeilen": 5,
+          "beispiel": [
+            "A8",
+            "Einen Schritt zurück, einmal lang ausgeatmet",
+            "„Ich spiel weiter. Das klären wir nach dem Spiel.“"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Nach Grün geht es weiter",
+          "text": "Wer den Auslöser spielt, darf nach Grün noch einmal nachlegen – so wie im echten Leben. Dann läuft die Ampel wieder von vorn: Steigt die Zahl, zurück auf Rot."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Eigene Szenen: Schreibt Situationen aus dem Alltag auf – erfunden und ohne echte Namen.",
+          "symbole": [
+            "schreiben",
+            "partner"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 3,
+          "hoehe": 108,
+          "karten": [
+            {
+              "titel": "A13"
+            },
+            {
+              "titel": "A14"
+            },
+            {
+              "titel": "A15"
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Erfundene Alltagsszenen für das Ampel-Theater: Die Jugendlichen üben die Stopp-Ampel unter Provokation, auch wenn das Gegenüber nachlegt.",
+        "ablauf": [
+          "Karten auf festes Papier drucken, ausschneiden und Karten weglassen, die einem aktuellen Konflikt ähneln.",
+          "Je Person Signalkarten in Rot, Gelb, Grün. In den ersten beiden Szenen spielt die Leitung den Auslöser.",
+          "Je Szene 4–5 Min.: Rot – einfrieren und Skill zeigen, Gelb – laut denken (Kasten auf Seite 2), Grün – handeln, einmal nachlegen.",
+          "Auswerten mit dem Beobachtungsbogen; zum Schluss eigene Szenen A13–A15 schreiben."
+        ],
+        "hintergrund": "Wer eine neue Reaktion unter Druck zeigen soll, muss sie vorher geübt haben. Programme zum sozial-emotionalen Lernen wirken besonders, wenn sie aktive Übungsformen wie das Rollenspiel nutzen (Durlak et al., 2011); auch das Training mit aggressiven Kindern erprobt neue Reaktionen in Rollenspielen zu Konfliktsituationen (Petermann & Petermann, 2012). Das Nachlegen nach Grün ist bewusst eingebaut: Im Alltag hört eine Provokation selten nach dem ersten Satz auf. Erfundene Szenen schützen, weil niemand Eigenes zeigen muss.",
+        "quellen": [
+          "Durlak, J. A., Weissberg, R. P., Dymnicki, A. B., Taylor, R. D. & Schellinger, K. B. (2011). The impact of enhancing students’ social and emotional learning: A meta-analysis of school-based universal interventions. Child Development, 82(1), 405–432.",
+          "Petermann, F. & Petermann, U. (2012). Training mit aggressiven Kindern (13. Aufl.). Weinheim: Beltz."
+        ],
+        "differenzierung": {
+          "leichter": "Nur Rot und Grün spielen; Gelb übernimmt das Publikum.",
+          "schwerer": "Das Gegenüber legt zweimal nach, oder eine dritte Person mischt sich ein."
+        },
+        "impulse": [
+          "Welche Szene war am schwersten – und warum?",
+          "Was hat auf Rot unauffällig geholfen?"
+        ],
+        "tipps": [
+          "Karten laminieren; sie passen auch für Joker-Einheiten.",
+          "Mit nur zwei Jugendlichen spielen beide abwechselnd mit der Leitung."
+        ],
+        "achtung": "Nie mit echten Namen oder Konflikten aus der Gruppe spielen. Reagiert jemand heftig, sofort stoppen und später unter vier Augen nachfragen; bei Hinweisen auf Gewalt die zuständige Leitung (Responsable) informieren.",
+        "material": "Festes Papier, Schere, Signalkarten"
+      }
+    }
+  },
+  {
+    "id": "skills-wiedergutmachen",
+    "bereich": "skills",
+    "thema": "wut",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "30 Min.",
+    "eldib": [
+      "V-27",
+      "K-31",
+      "SOZ-37"
+    ],
+    "schlagworte": [
+      "Wiedergutmachung",
+      "Entschuldigung",
+      "Verantwortung",
+      "Restorative Fragen",
+      "Scham",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:bandage",
+    "verwandt": [
+      "verantwortung-uebernehmen",
+      "skills-stopp-ampel"
+    ],
+    "kurs": [
+      "j2-e12"
+    ],
+    "de": {
+      "titel": "Wiedergutmachen",
+      "untertitel": "Nach einem Ausbruch ist nicht alles verloren. Wer dazu steht, kann vieles wieder in Ordnung bringen.",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "Das Plakat",
+          "bild": "figur:ben:besorgt",
+          "text": "Diogo hat in Mathe eine schlechte Note zurückbekommen. In der nächsten Stunde arbeitet er mit Léa an einem Plakat. Léa sagt: „Kannst du wenigstens sauber schreiben?“ Diogo platzt. Er brüllt sie an und reißt das Plakat mitten durch – zwei Stunden Arbeit, und die ganze Klasse schaut zu. Am Abend denkt er: Ich bin echt das Letzte."
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Tat oder Person?",
+          "text": "„Ich habe etwas Schlechtes getan“ lässt sich wiedergutmachen. „Ich bin schlecht“ nicht – dieser Satz führt eher dazu, sich zu verstecken oder wieder wütend zu werden."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schreib Diogos Satz vom Abend so um, dass er über seine Tat urteilt und nicht über sich als Person."
+        },
+        {
+          "art": "linien",
+          "anzahl": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Echte Entschuldigung oder Ausrede? Kreuze an."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "echt",
+            "Ausrede"
+          ],
+          "items": [
+            "„Sorry, aber du hast angefangen.“",
+            "„Es tut mir leid, falls du dich verletzt fühlst.“",
+            "„Ich habe dein Plakat zerrissen. Das war nicht okay.“",
+            "„Ich hatte halt einen schlechten Tag.“",
+            "„Du hast zwei Stunden daran gearbeitet, und alle haben zugeschaut.“",
+            "„Ich mache dir ein neues – wenn du willst, zusammen mit dir.“"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Eine gute Entschuldigung hat vier Teile",
+          "punkte": [
+            "Sagen, was ich getan habe – ohne „aber“ und ohne „falls“.",
+            "Anerkennen, was es beim anderen ausgelöst hat.",
+            "Eine Wiedergutmachung anbieten, die zum Schaden passt, und fragen, was die Person braucht.",
+            "Sagen, was ich beim nächsten Mal anders mache.",
+            "Und: Die andere Person entscheidet selbst, ob und wann sie verzeiht."
+          ]
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Die Fragen der Wiedergutmachung: Beantworte sie für Diogo oder für Léa.",
+          "hinweis": "Mit solchen Fragen werden auch in Schulen Klärungsgespräche geführt."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "Für Diogo",
+              "punkte": [
+                "Was ist passiert?",
+                "Was hast du dabei gedacht?",
+                "Was denkst du heute darüber?",
+                "Wer ist davon betroffen – und wie?",
+                "Was musst du tun, damit es wieder gut wird?"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "Für Léa",
+              "punkte": [
+                "Was hast du gedacht, als es passiert ist?",
+                "Was hat es mit dir gemacht?",
+                "Was war das Schwerste für dich?",
+                "Was muss passieren, damit es für dich wieder gut wird?"
+              ]
+            }
+          ]
+        },
+        {
+          "art": "linien",
+          "anzahl": 6
+        },
+        {
+          "art": "aufgabe",
+          "text": "Plane eine Wiedergutmachung – für Diogo oder für eine eigene Situation.",
+          "hinweis": "Eine eigene Situation bleibt auf deinem Blatt."
+        },
+        {
+          "art": "schritte",
+          "stil": "liste",
+          "linien": 1,
+          "items": [
+            {
+              "titel": "Was habe ich getan?",
+              "text": "Konkret und ohne Ausrede."
+            },
+            {
+              "titel": "Wer ist betroffen – und was braucht die Person?",
+              "text": "Wenn du es nicht weißt: fragen."
+            },
+            {
+              "titel": "Was biete ich an – und bis wann?",
+              "text": "Passt es zum Schaden? Was vor allen passiert ist, braucht oft eine Klarstellung vor allen – wenn die Person das möchte."
+            },
+            {
+              "titel": "Was mache ich nächstes Mal anders?",
+              "text": "Zum Beispiel: Welche Farbe der Stopp-Ampel übe ich?"
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Du entscheidest, was du teilst.",
+          "text": "Wenn du für eine echte Situation Unterstützung beim Wiedergutmachen möchtest, sprich die Leitung nach der Einheit an."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen trennen Tat und Person, erkennen die vier Teile einer guten Entschuldigung, beantworten die Fragen der Wiedergutmachung und planen eine passende Wiedergutmachung.",
+        "ablauf": [
+          "Einstieg (5 Min.): Geschichte vorlesen. „Was hält Diogo davon ab, es wiedergutzumachen?“",
+          "Aufgabe 1 und 2 (10 Min.), dann den Merkkasten an der Tafel festhalten.",
+          "Aufgabe 3 in zwei Hälften (8 Min.): die Leitung liest die Fragen vor, beide Seiten antworten im Wechsel.",
+          "Aufgabe 4 allein (7 Min.): für Diogo oder eine eigene Situation. Nicht einsammeln."
+        ],
+        "hintergrund": "Restorative Ansätze verstehen Fehlverhalten als Schaden an Menschen und Beziehungen und fragen, was die Betroffenen brauchen und wer etwas wiedergutmachen muss (Zehr, 2002). Die Fragen folgen den restorativen Fragen für beide Seiten, wie sie Wachtel (2016) beschreibt: Sie schauen nach vorn statt auf Schuld und Strafe. Schuldgefühl, das sich auf die Tat bezieht, geht eher mit Empathie und Wiedergutmachung einher, Scham über die ganze Person eher mit Rückzug, Abwehr und neuem Ärger (Tangney & Dearing, 2002).",
+        "quellen": [
+          "Zehr, H. (2002). The Little Book of Restorative Justice. Intercourse, PA: Good Books.",
+          "Wachtel, T. (2016). Defining Restorative. Bethlehem, PA: International Institute for Restorative Practices.",
+          "Tangney, J. P. & Dearing, R. L. (2002). Shame and Guilt. New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Nur Aufgabe 2 und 4; die vier Teile an die Tafel schreiben.",
+          "schwerer": "Ergänzend das Toolbox-Blatt „Verantwortung übernehmen“ bearbeiten."
+        },
+        "impulse": [
+          "Warum fällt eine echte Entschuldigung so schwer?",
+          "Was tun, wenn sie nicht angenommen wird?"
+        ],
+        "tipps": [
+          "Die vier Teile passen auf die Rückseite eines Skills-Kärtchens.",
+          "Eine ernst gemeinte Entschuldigung der Leitung wirkt stärker als jede Erklärung."
+        ],
+        "achtung": "Wiedergutmachung ersetzt keinen Schutz: Bei Mobbing, Gewalt oder Machtgefälle nach dem internen Schutzkonzept handeln. Klärungsgespräche zu echten Vorfällen nur begleitet und freiwillig.",
+        "material": "Blatt für jede Person"
+      }
+    }
+  },
+  {
+    "id": "skills-schubladen",
+    "bereich": "skills",
+    "thema": "vielfalt",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "25 Min.",
+    "eldib": [
+      "SOZ-31",
+      "SOZ-32",
+      "SOZ-37"
+    ],
+    "schlagworte": [
+      "Vorurteile",
+      "Stereotype",
+      "Schubladen",
+      "Kontakt",
+      "Vielfalt",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:search",
+    "verwandt": [
+      "skills-diskriminierung",
+      "skills-sprachenportraet"
+    ],
+    "kurs": [
+      "j2-e21"
+    ],
+    "de": {
+      "titel": "Schubladen im Kopf",
+      "untertitel": "Das Gehirn sortiert, um schnell zu sein. Entscheidend ist, ob wir die Schublade wieder aufmachen.",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Wir sortieren ständig: Jugendliche, Lehrkräfte, Fußballfans, Gamer. Das spart Zeit. Schwierig wird es, wenn wir einen Menschen nur noch durch die Schublade sehen – und ihn danach behandeln."
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 0,
+          "items": [
+            {
+              "titel": "Kategorie",
+              "text": "nach einem Merkmal sortieren"
+            },
+            {
+              "titel": "Stereotyp",
+              "text": "alle in der Schublade sollen gleich sein"
+            },
+            {
+              "titel": "Vorurteil",
+              "text": "Stereotyp plus Abwertung"
+            },
+            {
+              "titel": "Diskriminierung",
+              "text": "jemand wird benachteiligt"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "In welche Schublade gehört der Satz? Verbinde."
+        },
+        {
+          "art": "zuordnen",
+          "titel": [
+            "Satz",
+            "Schublade"
+          ],
+          "links": [
+            "„In unserer Klasse sind 18 Jugendliche.“",
+            "„Jugendliche hängen doch nur am Handy.“",
+            "„Jugendliche sind respektlos, mit denen will ich nichts zu tun haben.“",
+            "„Jugendliche dürfen nur zu zweit in den Laden.“"
+          ],
+          "rechts": [
+            "Vorurteil",
+            "Diskriminierung",
+            "Kategorie",
+            "Stereotyp"
+          ]
+        },
+        {
+          "art": "geschichte",
+          "titel": "Der Ruf",
+          "bild": "figur:ben:enttaeuscht:verschraenkt",
+          "text": "Rafael (14) ist vor einem Jahr einmal mit einem Mitschüler aneinandergeraten. Seitdem gilt er als „der Schläger“. Als in der Umkleide ein Handy fehlt, schauen alle zuerst ihn an. In der Gruppenarbeit hört niemand zu, wenn er eine Idee hat, und die Neue in der Klasse wird vor ihm gewarnt, bevor sie ihn kennt. Inzwischen sagt Rafael: „Dann bin ich halt so.“"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was macht die Schublade mit Rafael – und was mit den anderen?"
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "feld",
+              "label": "Mit Rafael",
+              "hoehe": 4
+            }
+          ],
+          "rechts": [
+            {
+              "art": "feld",
+              "label": "Mit den anderen",
+              "hoehe": 4
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Der Schubladen-Check",
+          "punkte": [
+            "Woher weiß ich das – kenne ich die Person oder nur die Schublade?",
+            "Stimmt das für alle in dieser Gruppe? Kenne ich Gegenbeispiele?",
+            "Würde ich das auch sagen, wenn die Person danebensteht?"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Wann Begegnung Schubladen öffnet",
+          "text": "Kontakt baut Vorurteile besonders gut ab, wenn vier Dinge zusammenkommen: ein gemeinsames Ziel, Augenhöhe, Zusammenarbeit statt Wettkampf und Rückendeckung durch Erwachsene oder Regeln."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Baut diese Begegnung eher Schubladen ab? Schätze ein."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "eher ja",
+            "eher nein"
+          ],
+          "items": [
+            "Zwei Klassen sitzen beim Ausflug im selben Bus, reden aber nicht miteinander.",
+            "In einem gemischten Team baut ihr ein Projekt, und jede Person hat eine wichtige Aufgabe.",
+            "Beim Handballturnier spielt ihr gegeneinander, und es geht um den Pokal.",
+            "In der Maison des Jeunes kocht ihr zusammen, und die Betreuerin achtet darauf, dass alle mitreden.",
+            "Eine Person darf in der Gruppenarbeit nur zuschauen, weil die anderen „schneller“ sind."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Nur für dich: Kennst du Schubladen von beiden Seiten?"
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "In diese Schublade werde ich manchmal gesteckt: …",
+            "Diese Schublade bemerke ich manchmal bei mir selbst: …"
+          ],
+          "linien": 2
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Du entscheidest, was du teilst.",
+          "text": "Aufgabe 4 bleibt auf deinem Blatt. Niemand muss sie vorlesen."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen unterscheiden Kategorie, Stereotyp, Vorurteil und Diskriminierung, sehen, was eine Schublade anrichtet, und kennen den Schubladen-Check und die Bedingungen für hilfreichen Kontakt.",
+        "ablauf": [
+          "Einstieg (5 Min.): die Kette mit Vorurteilen über Jugendliche erklären, dann Aufgabe 1 allein.",
+          "Aufgabe 2 zu zweit (8 Min.): „Was macht Rafael, weil alle ihn so sehen?“ Danach den Schubladen-Check lesen.",
+          "Aufgabe 3 nach dem Blitzgruppen-Spiel (5 Min.): erst die vier Bedingungen, dann einschätzen.",
+          "Aufgabe 4 allein und freiwillig (3 Min.), nicht vorlesen."
+        ],
+        "hintergrund": "Allport (1954) zeigte, dass Vorurteile auf einem normalen Denkvorgang aufbauen: Menschen bilden Kategorien, um die Welt schnell zu ordnen. Zum Problem wird das, wenn daraus ein starres Bild aller Mitglieder wird, Abwertung hinzukommt und Handeln folgt. Schon eine bedeutungslose Einteilung in zwei Gruppen reichte, damit 14- und 15-jährige Schüler die eigene Gruppe bevorzugten (Tajfel et al., 1971) – das Blitzgruppen-Spiel macht das erlebbar. Wer immer wieder in dieselbe Schublade gesteckt wird, verhält sich oft irgendwann so, wie es erwartet wird. Nach Allports Kontakthypothese baut Begegnung Vorurteile ab – eine Metaanalyse mit über 500 Studien bestätigte das, am deutlichsten unter den vier Bedingungen auf dem Blatt (Pettigrew & Tropp, 2006).",
+        "quellen": [
+          "Allport, G. W. (1954). The Nature of Prejudice. Cambridge, MA: Addison-Wesley.",
+          "Tajfel, H., Billig, M. G., Bundy, R. P. & Flament, C. (1971). Social categorization and intergroup behaviour. European Journal of Social Psychology, 1(2), 149–178.",
+          "Pettigrew, T. F. & Tropp, L. R. (2006). A meta-analytic test of intergroup contact theory. Journal of Personality and Social Psychology, 90(5), 751–783."
+        ],
+        "differenzierung": {
+          "leichter": "Die Kette an einem Beispiel der Gruppe durchgehen; Aufgabe 3 mündlich.",
+          "schwerer": "Bei Aufgabe 3 notieren, welche Bedingung fehlt und wie man sie herstellt."
+        },
+        "impulse": [
+          "Welche Schubladen über Jugendliche stimmen – und für wen nicht?",
+          "Wann hat Zusammenarbeit bei euch eine Schublade geöffnet?"
+        ],
+        "tipps": [
+          "Mit Vorurteilen über Jugendliche beginnen: Alle stecken in derselben Schublade.",
+          "Den Schubladen-Check als Plakat hängen lassen."
+        ],
+        "achtung": "Niemanden wegen Herkunft, Religion, Sprache, Aussehen oder Identität als Beispiel nehmen. Abwertende Sprüche ruhig stoppen; eigene Erfahrungen nicht vertiefen, sondern ein Gespräch anbieten.",
+        "material": "Blatt für jede Person"
+      }
+    }
+  },
+  {
+    "id": "skills-sprachenportraet",
+    "bereich": "skills",
+    "thema": "vielfalt",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln"
+    ],
+    "dauer": "25 Min.",
+    "eldib": [
+      "SOZ-40",
+      "SOZ-31",
+      "K-26"
+    ],
+    "schlagworte": [
+      "Sprachenporträt",
+      "Mehrsprachigkeit",
+      "Identität",
+      "Zugehörigkeit",
+      "Luxemburg",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:messages",
+    "verwandt": [
+      "skills-schubladen"
+    ],
+    "kurs": [
+      "j2-e22"
+    ],
+    "de": {
+      "titel": "Mein Sprachenporträt",
+      "untertitel": "Jeder Mensch hat viele Sprachen und viele Zugehörigkeiten – und sie haben gut nebeneinander Platz.",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "Inês",
+          "bild": "figur:jana:froh",
+          "text": "Inês (14) ist in Esch geboren und hat zwei Pässe, einen portugiesischen und einen luxemburgischen. Mit ihrer Oma spricht sie Portugiesisch, mit ihren Freundinnen Luxemburgisch, im Lycée Französisch und Deutsch, beim Zocken Englisch. Sie spielt Handball, ist große Schwester und hört Rap. Jeden Sommer fährt sie zur Familie nach Portugal – und freut sich nach zwei Wochen auf zu Hause. Neulich hat sie jemand gefragt: „Bist du jetzt Portugiesin oder Luxemburgerin?“"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Kreise in der Geschichte alles ein, wozu Inês gehört. Was könnte sie auf die Frage am Ende antworten?",
+          "symbole": [
+            "einkreisen",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "linien",
+          "anzahl": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dein Sprachenporträt: Male jede Sprache in einer eigenen Farbe dorthin, wo sie für dich hingehört. Schreib daneben, welche Sprache es ist.",
+          "hinweis": "Kopf, Herz, Bauch, Hände, Füße – du entscheidest. Auch Sprachen, von denen du nur ein paar Wörter kannst, Dialekte und Gebärdensprache zählen."
+        },
+        {
+          "art": "koerper",
+          "legende": [
+            {
+              "farbe": "rot",
+              "text": "……………………………………"
+            },
+            {
+              "farbe": "orange",
+              "text": "……………………………………"
+            },
+            {
+              "farbe": "gelb",
+              "text": "……………………………………"
+            },
+            {
+              "farbe": "gruen",
+              "text": "……………………………………"
+            },
+            {
+              "farbe": "blau",
+              "text": "……………………………………"
+            },
+            {
+              "farbe": "lila",
+              "text": "……………………………………"
+            }
+          ]
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Sprachen und Gefühle: Ergänze die Sätze."
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 2,
+          "items": [
+            "In dieser Sprache fühle ich mich zu Hause: …",
+            "Wenn ich wütend bin, rede ich am liebsten auf …",
+            "Trösten klingt für mich am schönsten auf …",
+            "Diese Sprache würde ich gern besser können: …"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Mehrere Sprachen sind ein Können",
+          "text": "Wer zwischen Sprachen wechselt, für andere übersetzt oder in einer Sprache nur ein paar Wörter kennt, kann mehr, als jede Schulnote zeigt."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Mein Ruhesatz: Schreib einen kurzen Satz, der dich beruhigt – in der Sprache, die sich dafür am besten anfühlt."
+        },
+        {
+          "art": "feld",
+          "hoehe": 2.5,
+          "beispiel": "Das wird schon. – Tout doux. – Calma."
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 0,
+          "items": [
+            {
+              "titel": "Hinsetzen",
+              "text": "beide Füße am Boden"
+            },
+            {
+              "titel": "Vier ein",
+              "text": "ruhig durch die Nase"
+            },
+            {
+              "titel": "Sechs aus",
+              "text": "dabei innerlich deinen Satz"
+            },
+            {
+              "titel": "Sechsmal",
+              "text": "dann nachspüren"
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Du entscheidest, was du teilst.",
+          "text": "Dein Porträt gehört dir. Wenn du magst, zeigst du einer Person deiner Wahl eine Farbe und erzählst, warum sie dort sitzt."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen erkennen an Inês, dass ein Mensch mehrere Zugehörigkeiten hat, gestalten ihr Sprachenporträt, verbinden Sprachen mit Gefühlen und finden einen Ruhesatz.",
+        "ablauf": [
+          "Einstieg (4 Min.): Geschichte lesen, Aufgabe 1. „Ist die Frage am Ende richtig gestellt?“",
+          "Aufgabe 2 (8 Min.): Dialekte, Gebärdensprache, Schul- und Feriensprachen zählen, wenige Wörter reichen.",
+          "Aufgabe 3 (3 Min.); wer mag, zeigt einer Person seiner Wahl eine Farbe.",
+          "Aufgabe 4 im Skill am Ende der Einheit (5 Min.). Porträts nicht aufhängen, nicht einsammeln."
+        ],
+        "hintergrund": "Im Jugendalter müssen verschiedene Zugehörigkeiten – Familie, Sprachen, Orte, Freundeskreise – zu einem stimmigen Selbstbild zusammenfinden (Erikson, 1968). Das Sprachenporträt aus der Mehrsprachigkeitsdidaktik macht das ganze Sprachrepertoire sichtbar, auch Sprachen, die in der Schule wenig zählen, und verbindet sie mit Gefühlen (Busch, 2012). Das Kompass-Handbuch des Europarats empfiehlt, Vielfalt über Erfahrung und Reflexion zu erarbeiten (Europarat, 2012). Schon Allport (1954) beschrieb, dass Vorurteile schwächer werden, wenn man Menschen als Einzelne mit vielen Merkmalen sieht.",
+        "quellen": [
+          "Erikson, E. H. (1968). Identity: Youth and Crisis. New York: Norton.",
+          "Busch, B. (2012). The linguistic repertoire revisited. Applied Linguistics, 33(5), 503–523.",
+          "Council of Europe (2012). Compass: Manual for Human Rights Education with Young People (2nd ed.). Strasbourg: Council of Europe Publishing.",
+          "Allport, G. W. (1954). The Nature of Prejudice. Cambridge, MA: Addison-Wesley."
+        ],
+        "differenzierung": {
+          "leichter": "Die Sprachen neben den Umriss schreiben und mit Pfeilen zuordnen.",
+          "schwerer": "Zu jeder Farbe notieren: Wann und mit wem spreche ich diese Sprache?"
+        },
+        "impulse": [
+          "In welcher Sprache wird bei euch gestritten – und getröstet?",
+          "Welche eurer Sprachen sieht die Schule kaum?"
+        ],
+        "tipps": [
+          "Die Leitung malt ihr eigenes Porträt mit, auch mit Sprachbrocken.",
+          "Wer für Eltern oder Großeltern übersetzt, leistet viel – ausdrücklich würdigen."
+        ],
+        "achtung": "Sprachen berühren Familiengeschichten, auch Flucht oder Verlust. Niemand wird nach seiner Herkunft gefragt, gezeigt wird nur freiwillig; bei Hinweisen auf Gefährdung die zuständige Leitung (Responsable) informieren.",
+        "material": "Buntstifte in mindestens sechs Farben"
+      }
+    }
+  },
+  {
+    "id": "skills-diskriminierung",
+    "bereich": "skills",
+    "thema": "vielfalt",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "30 Min.",
+    "eldib": [
+      "SOZ-32",
+      "SOZ-39",
+      "K-28"
+    ],
+    "schlagworte": [
+      "Diskriminierung",
+      "Zivilcourage",
+      "Rassismus",
+      "Hilfe holen",
+      "Respekt",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:hand-stop",
+    "verwandt": [
+      "skills-zivilcourage-leiter",
+      "skills-schubladen",
+      "mobbing-cybermobbing"
+    ],
+    "kurs": [
+      "j2-e23"
+    ],
+    "de": {
+      "titel": "Stopp Diskriminierung",
+      "untertitel": "Erkennen, reagieren, Hilfe holen – für andere und für dich selbst.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Woran man Diskriminierung erkennt",
+          "punkte": [
+            "Nachteil: Jemand wird benachteiligt, ausgeschlossen oder herabgesetzt.",
+            "Merkmal: Der Grund ist die Herkunft, die Hautfarbe, das Aussehen, die Religion, eine Behinderung, das Geschlecht, die sexuelle Orientierung oder das Alter.",
+            "Kein sachlicher Grund: Es gibt keine faire Begründung dafür.",
+            "Es zählt, was es bei der Person auslöst – nicht nur, wie es gemeint war."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Diskriminierung oder nicht? Kreuze an.",
+          "hinweis": "Bei „unsicher“ lohnt es sich, genauer hinzuschauen."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "ja",
+            "nein",
+            "unsicher"
+          ],
+          "items": [
+            "Amira bekommt am Telefon eine Zusage für ein Praktikum. Als sie mit Kopftuch kommt, ist die Stelle „leider schon vergeben“.",
+            "Wegen seiner Leseschwäche hat Elias in Prüfungen mehr Zeit.",
+            "Unter jedem Post von Luca steht „schwul“ als Beleidigung, und viele liken es.",
+            "Die Klasse plant einen Ausflug und sagt zu Samuel, der im Rollstuhl sitzt: „Für dich ist das zu kompliziert.“",
+            "Tiago hört von einer Lehrkraft: „Bei deiner Herkunft erwarte ich im Deutschtest nicht viel.“"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Die Treppe der Abwertung: Auf welcher Stufe steht das Beispiel? Kreuze an.",
+          "hinweis": "Fast immer beginnt es unten. Wer schon auf Stufe 1 widerspricht, hält die Treppe früh auf."
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 0,
+          "items": [
+            {
+              "titel": "Sprüche und Witze",
+              "text": "angeblich nur Spaß"
+            },
+            {
+              "titel": "Meiden, ausgrenzen",
+              "text": "nicht einladen, wegsetzen"
+            },
+            {
+              "titel": "Benachteiligen",
+              "text": "schlechtere Chancen"
+            },
+            {
+              "titel": "Drohen, angreifen",
+              "text": "Drohungen und Gewalt"
+            }
+          ]
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "items": [
+            "Jemand postet Witze über eine Religion.",
+            "Wegen seines Hörgeräts sitzt keiner neben Yusuf.",
+            "Ana bekommt wegen ihres Namens keine Lehrstelle.",
+            "Jemand wird wegen seiner Hautfarbe bedroht."
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Wenn du es mitbekommst",
+          "punkte": [
+            "Nicht mitmachen: nicht lachen, nicht filmen, nichts weiterleiten.",
+            "Ablenken: die Person ansprechen – „Komm, wir setzen uns nach vorn.“",
+            "Hilfe holen: Busfahrer, Aufsicht, Lehrkraft. Das ist kein Petzen.",
+            "Widersprechen: „Das ist nicht okay.“ – nur, wenn es für dich sicher ist.",
+            "Danach da sein: „Alles okay? Das war nicht in Ordnung.“"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wenn es dich selbst trifft: Was davon passt für dich? Kreuze an und ergänze."
+        },
+        {
+          "art": "ankreuzen",
+          "frei": 1,
+          "items": [
+            "Ich sage „Stopp“ oder gehe weg, wenn das sicher ist.",
+            "Ich suche mir jemanden, der zu mir hält.",
+            "Ich schreibe auf, was, wann und wo es passiert ist. Online mache ich Screenshots.",
+            "Ich erzähle es einer Vertrauensperson, dem SePAS oder dem Kanner- a Jugendtelefon.",
+            "Ich sage mir: Das sagt etwas über die anderen, nicht über mich."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dein Plan: Was tust du, wenn du so etwas das nächste Mal mitbekommst?"
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Wenn im Bus jemand wegen seiner Herkunft beleidigt wird,",
+              "dann": "lache ich nicht mit, setze mich zu der Person und sage dem Busfahrer Bescheid."
+            }
+          ]
+        },
+        {
+          "art": "notfall"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen erkennen Diskriminierung an drei Merkmalen, ordnen Beispiele der Treppe der Abwertung zu und kennen Wege, zu reagieren und Hilfe zu holen.",
+        "ablauf": [
+          "Aufgabe 1 nach der Positionslinie (5 Min.): Grenzfälle besprechen – gleich ist nicht immer gerecht.",
+          "Aufgabe 2 nach dem Input zur Treppe (5 Min.): „Warum lohnt es sich, unten zu reagieren?“",
+          "Tippkasten und Aufgabe 3 nach dem Forumtheater (8 Min.): Welche Wege haben wir ausprobiert?",
+          "Aufgabe 4 und Hilfe-Kasten (5 Min.): Vertrauensperson eintragen, Anlaufstellen zeigen."
+        ],
+        "hintergrund": "Diskriminierung bedeutet, dass Menschen wegen eines Merkmals benachteiligt, ausgegrenzt oder herabgesetzt werden; die UN-Kinderrechtskonvention schützt jedes Kind ausdrücklich davor (Vereinte Nationen, 1989). Allport (1954) beschrieb, wie sich Vorurteile vom abwertenden Reden über Meiden und Benachteiligen bis zur Gewalt steigern können. Ausgrenzung verletzt Zugehörigkeit, Selbstwert und das Gefühl von Kontrolle (Williams, 2007). Zuschauende greifen oft nicht ein, weil sich die Verantwortung verteilt (Latané & Darley, 1970) – konkrete, sichere Wege senken diese Hürde.",
+        "quellen": [
+          "Vereinte Nationen (1989). Übereinkommen über die Rechte des Kindes. New York: Vereinte Nationen.",
+          "Allport, G. W. (1954). The Nature of Prejudice. Cambridge, MA: Addison-Wesley.",
+          "Williams, K. D. (2007). Ostracism. Annual Review of Psychology, 58, 425–452.",
+          "Latané, B. & Darley, J. M. (1970). The Unresponsive Bystander: Why Doesn’t He Help? New York: Appleton-Century-Crofts."
+        ],
+        "differenzierung": {
+          "leichter": "Aufgabe 1 mit drei Situationen; die Merkmale an einem Beispiel klären.",
+          "schwerer": "Einen Plan für die ganze Klasse schreiben: Was können zehn Zuschauende tun?"
+        },
+        "impulse": [
+          "Woran erkennt ihr, ob eine Ungleichbehandlung fair ist?",
+          "Was hilft euch, auf Stufe 1 zu widersprechen?"
+        ],
+        "tipps": [
+          "Die Anlaufstellen der eigenen Schule vorher klären.",
+          "Hass im Netz nur streifen – er ist Thema von Einheit 25."
+        ],
+        "achtung": "Niemanden nach eigenen Erfahrungen fragen, als Beispiel nehmen oder outen. Bei Bedrohung oder Gewalt nach dem Schutzkonzept handeln und die zuständige Leitung (Responsable) informieren; akut 113 oder 112.",
+        "material": "Plakat mit den Anlaufstellen"
+      }
+    }
+  }
+]

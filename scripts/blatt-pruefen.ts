@@ -170,7 +170,7 @@ function pruefeBausteine(wo: string, liste: Baustein[], blatt: Blatt, sprache: S
         if (b.stil === 'kette') b.items.forEach((x) => x.titel.length > 26 && melde('H', w, `Kettenglied-Titel zu lang: „${x.titel}“ (max. 26)`))
         break
       case 'mindmap':
-        if ((b.aeste?.length ?? b.anzahl ?? 6) > 8) melde('F', w, 'höchstens 8 Äste')
+        if ((b.aeste?.length || b.anzahl || 6) > 6) melde('F', w, 'höchstens 6 Äste (ab 7 überlappen sich die Kästen)')
         break
       case 'hand':
         if (b.finger && b.finger.length !== 5) melde('F', w, 'genau 5 Finger')

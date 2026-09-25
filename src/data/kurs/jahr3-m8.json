@@ -1,0 +1,1016 @@
+{
+  "einheiten": [
+    {
+      "id": "j3-e27",
+      "nr": 27,
+      "jahr": 3,
+      "modul": "j3-m8",
+      "titel": "Respekt in Beziehungen",
+      "kurz": "Start ins Modul: Die Gruppe vereinbart ihren Rahmen, sortiert Szenen aus Freundschaft und Liebe nach der Beziehungs-Ampel und übt, jemandem beizustehen, bei dem es gelb oder rot wird.",
+      "dauer": 100,
+      "ziele": [
+        "vereinbaren den Rahmen für das Modul: Stopp-Recht, keine eigenen Geschichten, anonyme Fragenbox",
+        "unterscheiden mit der Beziehungs-Ampel gesundes, ungesundes und gewaltvolles Verhalten in Freundschaft und Liebe",
+        "erkennen Kontrolle über das Handy und besitzergreifende Eifersucht als Warnzeichen, nicht als Liebesbeweis",
+        "üben, einer Freundin oder einem Freund beizustehen, und kennen Anlaufstellen in Luxemburg"
+      ],
+      "material": [
+        "Gefühlsrad (A3, laminiert) und Anspannungsskala 0–100",
+        "Plakat „Unser Rahmen für dieses Modul“ und dicke Stifte",
+        "Fragenbox: ein zugeklebter Karton mit Schlitz, dazu gleiche Zettel und gleiche Stifte für alle",
+        "Schülerblatt „Grün, Gelb, Rot – die Beziehungs-Ampel“ für jede Person",
+        "Situationskarten R1–R9 (Blatt „Situationskarten: Liebe, Grenzen, Netz“), zwei Sätze, ausgeschnitten; dazu die Signalkarten Grün, Gelb, Rot für jede Person",
+        "Sechs Reifen oder Seile in Grün, Gelb und Rot (je Team drei), ersatzweise farbiges Papier",
+        "Skills-Pässe, Stempel, Imbiss und Getränke"
+      ],
+      "vorbereitung": [
+        "Mindestens zwei Wochen vor dieser Einheit einen kurzen Elternbrief nach Hausregel verschicken (Musterbrief in den Grundlagen anpassen): Inhalte der vier Einheiten, anonyme Fragenbox, Besuch einer Fachstelle in Einheit 29, Ansprechperson für Rückfragen. Wenn möglich in der Familiensprache.",
+        "Die zuständige Leitung (Responsable) über das Modul informieren und klären, wie mit Rückfragen oder Einwänden von Eltern umgegangen wird.",
+        "Bei Planning Familial anfragen, ob eine Fachkraft Einheit 29 mitgestaltet; Termin und Inhalte absprechen.",
+        "Wenn möglich eine zweite Fachkraft einplanen, am besten ein gemischtes Team, und einen ruhigen Nebenraum zum Rausgehen freihalten.",
+        "Die Karten R1–R9 durchsehen: Karten weglassen oder Namen ändern, wenn sie einer bekannten Lage in der Gruppe ähneln – etwa wenn zwei Jugendliche ein Paar oder Ex-Paar sind.",
+        "Internes Schutzkonzept und Hilfenummern griffbereit haben.",
+        "Für Jugendliche mit Lern- oder Sprachschwierigkeiten vorsorgen, für das ganze Modul: Karten und Aufgaben vorlesen, kurze Sätze, Antworten auch mit Farbkarten (grün, gelb, rot) oder dem Daumen; Bildsprache nur mit Symbolen und Figuren, nie mit Körperabbildungen.",
+        "Raum: Stuhlkreis; für den Ampel-Lauf die Startlinie an der Tür und die Reifen am anderen Ende des Raums."
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-beziehungs-ampel",
+        "skills-situationskarten-liebe",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Gefühlsrad und Anspannung"
+        },
+        {
+          "min": "10–20",
+          "phase": "bruecke",
+          "titel": "Neues Modul: unser Rahmen und die Fragenbox"
+        },
+        {
+          "min": "20–30",
+          "phase": "input",
+          "titel": "Was eine gute Beziehung ausmacht"
+        },
+        {
+          "min": "30–45",
+          "phase": "uebung",
+          "titel": "Die Beziehungs-Ampel und Lenas Geschichte"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–75",
+          "phase": "aktiv",
+          "titel": "Ampel-Lauf mit Situationskarten"
+        },
+        {
+          "min": "75–85",
+          "phase": "aktiv",
+          "titel": "Rollenspiel: einer Freundin beistehen"
+        },
+        {
+          "min": "85–93",
+          "phase": "skill",
+          "titel": "Skill: der weise Geist"
+        },
+        {
+          "min": "93–100",
+          "phase": "abschluss",
+          "titel": "Réckbléck, Fragenbox und Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: Gefühlsrad und Anspannung",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Gefühlsrad und Anspannungsskala in die Mitte, reihum Gefühlswort und Zahl; die Leitung beginnt. Danach eine zweite, freiwillige Zahl: Wie hoch geht die Anspannung bei dem Satz „In den nächsten vier Einheiten geht es um Liebe und Sexualität“? Die Zahlen nur aufnehmen, nicht kommentieren. Hohe Zahlen, Kichern und Augenrollen sind bei diesem Thema normal und kein Grund zur Sorge.",
+          "sagen": [
+            "Gefühl und Zahl wie immer. Und dann noch eine Zahl: Wie hoch geht es bei euch, wenn ich sage, dass es ab heute um Liebe und Sexualität geht?",
+            "Bei mir ist die Zahl auch höher als sonst. Das darf so sein."
+          ],
+          "tipp": "Wer nicht antworten mag, zeigt die Zahl mit den Fingern oder sagt „weiter“. Schon das zeigt: Hier bestimmt jede Person selbst, was sie teilt.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Neues Modul: unser Rahmen und die Fragenbox",
+          "dauer": 10,
+          "phase": "bruecke",
+          "text": "An das letzte Modul anknüpfen: Dort ging es ums Mitbestimmen, jetzt geht es ums Selbstbestimmen – in Freundschaft, Liebe und im Netz. Die vier Einheiten kurz vorstellen. Dann den Rahmen für das Modul erneuern und auf das Plakat schreiben (Liste). Zum Schluss die Fragenbox zeigen: Am Ende jeder Einheit schreiben alle etwas auf einen Zettel – eine Frage, einen Gedanken oder „keine Frage“ –, damit niemand auffällt. Die Antworten kommen in der nächsten Einheit, nachdem die Leitung die Fragen im Team besprochen hat.",
+          "punkte": [
+            "Stopp-Recht: Wer „Stopp“ oder „weiter“ sagt, muss nichts begründen – bei Fragen, Übungen und Rollenspielen.",
+            "Wir reden über erfundene Personen, nicht über uns. Niemand erzählt von eigenen Beziehungen oder Erfahrungen, und niemand fragt danach.",
+            "Was hier gesagt wird, bleibt hier. Die Grenze: Wenn jemand in Gefahr ist, holt die Leitung Hilfe und sagt vorher, was sie tut.",
+            "Lachen ist erlaubt, auslachen nicht. Niemand wird wegen einer Frage, seines Körpers oder wegen der Person, die er liebt, aufgezogen.",
+            "Wer eine Pause braucht, darf in den Nebenraum gehen und sagt kurz Bescheid."
+          ],
+          "sagen": [
+            "Ihr müsst hier nichts von euch erzählen. Wir reden über erfundene Personen – das macht es für alle leichter.",
+            "In die Box darf jede Frage, auch eine, die euch peinlich ist. Ich öffne sie erst nach der Einheit."
+          ],
+          "tipp": "Die Leitung sagt auch, was für sie gilt: Sie erzählt ebenfalls nichts aus ihrem Privatleben. Das macht die Regel glaubwürdig.",
+          "wennEsKippt": "Kommen anzügliche Sprüche oder Gelächter, nicht empört reagieren, sondern ruhig auf das Plakat zeigen: Das Thema macht viele nervös, das ist in Ordnung – aber über andere machen wir uns hier nicht lustig. Wer sich nicht beruhigen kann, darf kurz rausgehen und wird danach wieder freundlich aufgenommen."
+        },
+        {
+          "titel": "Was eine gute Beziehung ausmacht",
+          "dauer": 10,
+          "phase": "input",
+          "text": "An der Tafel zwei Spalten: „Gute Freundschaft“ und „Gute Liebesbeziehung“. Zuerst nur die linke Spalte füllen: Woran merkt man, dass eine Freundschaft gut ist? Dann fragen, was davon auch für eine Liebesbeziehung gilt, und es mit Pfeilen hinüberziehen – meist wandert fast alles. Festhalten: Eine Liebesbeziehung sollte sich mindestens so gut anfühlen wie eine gute Freundschaft, mit Respekt, Vertrauen, Freiraum und fairem Streit.",
+          "sagen": [
+            "Woran merkt ihr, dass eine Freundschaft gut ist – nicht nur lustig, sondern gut?",
+            "Was davon gilt auch, wenn zwei zusammen sind? Und was kommt vielleicht dazu?"
+          ],
+          "tipp": "Kommen Wörter wie „Treue“ oder „Eifersucht“, nicht bewerten, sondern stehen lassen. Die Eifersucht wird gleich in Lenas Geschichte gebraucht."
+        },
+        {
+          "titel": "Die Beziehungs-Ampel und Lenas Geschichte",
+          "dauer": 15,
+          "phase": "uebung",
+          "text": "Die Ampel an die Tafel zeichnen und die drei Farben erklären (Tabelle); betonen, dass die Ampel Verhalten bewertet, nicht Menschen. Auf dem Blatt füllt jede Person jede Farbe mit einem Beispiel aus einer Serie, einem Film oder erfunden (Aufgabe 1). Dann die Geschichte von Lena und Mathis vorlesen; alle unterstreichen die Warnzeichen und beantworten die Frage darunter (Aufgabe 2). Zum Schluss gemeinsam sammeln, warum sich Kontrolle so oft wie Liebe anfühlt.",
+          "tabelle": {
+            "spalten": [
+              "Farbe",
+              "Was passiert",
+              "Was jetzt hilft"
+            ],
+            "zeilen": [
+              [
+                "Grün – gesund",
+                "Respekt und Vertrauen; beide haben eigene Freunde und Hobbys; Streit ist fair; ein Nein wird akzeptiert",
+                "genießen und pflegen"
+              ],
+              [
+                "Gelb – ungesund",
+                "Eifersucht, die einengt; Handy kontrollieren; ständig „Wo bist du?“; Druck; beleidigtes Schweigen als Strafe",
+                "ansprechen, genauer hinschauen, mit jemandem darüber reden"
+              ],
+              [
+                "Rot – Gewalt",
+                "drohen, schlagen, zwingen, bloßstellen, von Freunden abschneiden, mit Bildern erpressen",
+                "Hilfe holen – das ist nie Verrat"
+              ]
+            ]
+          },
+          "sagen": [
+            "Grün heißt nicht, dass es nie Streit gibt. Grün heißt, dass fair gestritten wird.",
+            "Wo seht ihr in Lenas Geschichte die erste gelbe Stelle?"
+          ],
+          "wennEsKippt": "Verteidigt jemand Mathis heftig („Ist doch normal, das machen alle“), nicht dagegenhalten, sondern die Frage umdrehen: Wie würde es sich anfühlen, wenn Lena das alles mit Mathis machen würde? Oft kippt die Sicht dann von selbst. Die Leitung muss die Diskussion nicht gewinnen – die Ampel bleibt an der Tafel stehen.",
+          "blatt": "skills-beziehungs-ampel"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Imbiss und frische Luft. Die Leitung isst mit und lässt das Thema ruhen. Spricht jemand in der Pause eine eigene Beziehung an, zuhören, nicht vertiefen und ein Gespräch nach der Einheit anbieten."
+        },
+        {
+          "titel": "Ampel-Lauf mit Situationskarten",
+          "dauer": 15,
+          "phase": "aktiv",
+          "text": "Zwei Teams, jedes mit einem verdeckten Kartenstapel R1–R9 an der Startlinie und drei Reifen in Grün, Gelb und Rot am anderen Ende des Raums. Staffel: Eine Person nimmt die oberste Karte und liest sie dem Team laut vor; das Team entscheidet in höchstens 30 Sekunden, dann läuft die Person los und legt die Karte in den passenden Reifen. Zurück an der Startlinie ist die nächste Person dran. Danach vergleichen beide Teams ihre Reifen: Wo sie verschieden entschieden haben, wird nachgefragt, was aus Gelb Rot macht – oder aus Gelb wieder Grün.",
+          "sagen": [
+            "Es gewinnt nicht das schnellste Team, sondern das genaueste. Ihr dürft streiten, aber höchstens 30 Sekunden.",
+            "Hier habt ihr unterschiedlich entschieden. Was müsste auf der Karte stehen, damit ihr euch einig wärt?"
+          ],
+          "tipp": "Die Auflösung auf der Lehrerseite des Kartenblatts ist ein Vorschlag, kein Urteil. Entscheidend ist die Begründung – vor allem bei Gelb: Gelb kann wieder grün werden, wenn beide darüber reden, oder rot, wenn Druck und Angst dazukommen.",
+          "wennEsKippt": "Wird der Lauf zum Rennen und niemand hört mehr zu, das Tempo herausnehmen: Gelaufen wird erst, wenn die Karte vorgelesen und entschieden ist. Bei Regen oder wenig Platz liegen die Reifen auf einem Tisch, und die Karten werden im Sitzen weitergegeben; oder die Leitung liest vor, und alle zeigen ihre Farbe mit den Signalkarten vom Kartenblatt. Mit nur zwei Jugendlichen sortieren beide zusammen, und die Leitung bildet das zweite Team.",
+          "blatt": "skills-situationskarten-liebe"
+        },
+        {
+          "titel": "Rollenspiel: einer Freundin beistehen",
+          "dauer": 10,
+          "phase": "aktiv",
+          "text": "Die Leitung spielt Lena aus der Geschichte, die einer Freundin in der Schulpause erzählt: „Mathis liest jetzt auch meine Nachrichten. Aber sag bloß keinem was.“ Freiwillige treten nacheinander vor und antworten als Freundin oder Freund; nach jeder Antwort zeigt die Gruppe mit dem Daumen, wie sich das für Lena anfühlen würde. Danach füllt jede Person die leeren Felder auf dem Blatt (Aufgabe 3). Zum Schluss die Liste an die Tafel, den Hilfe-Kasten auf dem Blatt zeigen und klarmachen: Wenn Lena in Gefahr ist, ist Hilfe holen kein Verrat.",
+          "punkte": [
+            "Zuhören, ohne sofort Ratschläge zu geben.",
+            "Glauben: „Gut, dass du es mir erzählst.“",
+            "Nicht über Mathis herziehen – sonst verteidigt Lena ihn.",
+            "Hilfe anbieten: „Sollen wir zusammen mit jemandem reden?“",
+            "Nichts versprechen, was man nicht halten kann: „Wenn du in Gefahr bist, hole ich Hilfe.“",
+            "Wohin? SePAS im Lycée, Kanner- a Jugendtelefon 116 111, bei Gefahr Polizei 113 oder Notruf 112."
+          ],
+          "sagen": [
+            "Ihr müsst Lena nicht retten. Es reicht, wenn sie merkt: Jemand hört mir zu und glaubt mir.",
+            "Was sagt ihr, wenn Lena sagt: Versprich mir, dass du keinem etwas erzählst?"
+          ],
+          "tipp": "Sätze wie „Mach doch einfach Schluss“ kommen fast immer zuerst. Sie sind gut gemeint, führen aber oft dazu, dass Betroffene sich zurückziehen. Das offen besprechen, ohne die Person zu korrigieren, die den Satz gesagt hat.",
+          "wennEsKippt": "Will niemand vorspielen, sammelt die Gruppe Sätze, und die Leitung spricht sie der zweiten Fachkraft vor, die Lena spielt. Wirkt jemand bei dieser Übung sehr berührt, nicht nachfragen, sondern eine kurze Pause anbieten und nach der Einheit das Gespräch suchen.",
+          "blatt": "skills-beziehungs-ampel"
+        },
+        {
+          "titel": "Skill: der weise Geist",
+          "dauer": 8,
+          "phase": "skill",
+          "text": "Im Stuhlkreis kurz erklären: In Beziehungen sind Gefühle oft laut – Verliebtheit, Eifersucht, die Angst, jemanden zu verlieren. Der weise Geist ist der Ort, an dem Gefühl und Verstand zusammenkommen. Übung „Der Kieselstein“: ruhig atmen, Augen offen oder geschlossen, sich vorstellen, man sei ein flacher Stein, der langsam durch klares Wasser sinkt und sich auf den weichen Grund legt. Dort unten still fragen: Was weiß ich tief drinnen darüber, was mir guttut? Nach etwa drei Minuten langsam wieder auftauchen.",
+          "sagen": [
+            "Ihr müsst keine Antwort finden. Es reicht, einmal ganz unten anzukommen.",
+            "Der weise Geist wird nicht laut. Man hört ihn, wenn es ruhig wird."
+          ],
+          "tipp": "Die Übung stammt aus dem DBT-Skillstraining. Wer den Stein nicht mag, stellt sich ein Blatt vor, das auf einem See treibt – oder zählt einfach zehn ruhige Atemzüge."
+        },
+        {
+          "titel": "Réckbléck, Fragenbox und Skills-Pass",
+          "dauer": 7,
+          "phase": "abschluss",
+          "text": "Réckbléck als Blitzlicht: Jede Person nennt ein Zeichen, an dem sie eine gute Beziehung erkennt, oder ein Warnzeichen – dazu ihre Anspannungszahl von jetzt. Dann schreibt jede Person einen Zettel für die Fragenbox – eine Frage, einen Gedanken oder „keine Frage“ – und wirft ihn gefaltet ein. Eintrag in den Skills-Pass und Stempel. Zum Schluss sagen, wann die Leitung nach der Einheit für ein kurzes Gespräch da ist.",
+          "sagen": [
+            "Ein Zeichen für eine gute Beziehung oder ein Warnzeichen, das ihr euch merkt – und eure Zahl jetzt.",
+            "Ich bin nach der Einheit noch zehn Minuten hier. Ihr müsst keinen Grund nennen."
+          ],
+          "tipp": "Nach der Einheit die Box zusammen mit der zweiten Fachkraft öffnen, Beobachtungen im Team festhalten und die Antworten für Einheit 28 vorbereiten.",
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Nächstes Mal geht es um eine Regel, die einfach klingt und viel verändert: Nur ein Ja ist ein Ja.",
+      "hintergrund": "Liebesbeziehungen im Jugendalter sind keine Nebensache: Sie prägen Selbstbild und Erwartungen an spätere Partnerschaften (Collins, 2003). Gewalt in jungen Beziehungen beginnt oft leise – mit Kontrolle über das Handy, besitzergreifender Eifersucht und Abschottung von Freunden – und wird häufig als Liebesbeweis gedeutet. Schulische Programme, die gesunde und ungesunde Beziehungen unterscheiden, Warnzeichen benennen und das Helfen unter Freunden üben, wirken: Safe Dates verringerte Gewalt in Beziehungen noch vier Jahre später (Foshee et al., 2004), Fourth R senkte körperliche Gewalt nach zweieinhalb Jahren, vor allem bei Jungen (Wolfe et al., 2009). Weil sich Jugendliche oft zuerst Freundinnen und Freunden anvertrauen (Rickwood et al., 2005), bekommt das Beistehen eigene Übungszeit. Der weise Geist stammt aus dem DBT-Skillstraining für Jugendliche (Rathus & Miller, 2015).",
+      "quellen": [
+        "Collins, W. A. (2003). More than myth: The developmental significance of romantic relationships during adolescence. Journal of Research on Adolescence, 13(1), 1–24.",
+        "Foshee, V. A., Bauman, K. E., Ennett, S. T., Linder, G. F., Benefield, T. & Suchindran, C. (2004). Assessing the long-term effects of the Safe Dates program and a booster in preventing and reducing adolescent dating violence victimization and perpetration. American Journal of Public Health, 94(4), 619–624.",
+        "Wolfe, D. A., Crooks, C., Jaffe, P., Chiodo, D., Hughes, R., Ellis, W., Stitt, L. & Donner, A. (2009). A school-based program to prevent adolescent dating violence: A cluster randomized trial. Archives of Pediatrics & Adolescent Medicine, 163(8), 692–699.",
+        "Rickwood, D., Deane, F. P., Wilson, C. J. & Ciarrochi, J. (2005). Young people’s help-seeking for mental health problems. Australian e-Journal for the Advancement of Mental Health, 4(3), 218–251.",
+        "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford."
+      ],
+      "achtung": "Das Thema kann eigene Erfahrungen berühren – Gewalt in einer Beziehung, zu Hause oder durch Erwachsene. Niemand wird nach eigenen Beziehungen gefragt; persönliche Schilderungen im Plenum freundlich stoppen und ein Gespräch unter vier Augen anbieten. Gibt es Hinweise auf Gewalt, Übergriffe oder Erpressung, die Person nach der Einheit ruhig ansprechen, zuhören, nichts versprechen, was man nicht halten kann (auch keine Geheimhaltung), nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) am selben Tag informieren. Bei akuter Gefahr Notruf 112 und die Person nicht allein lassen. Auch Zettel in der Fragenbox, die nach einer Notlage klingen, im Team nach dem Schutzkonzept besprechen und in der nächsten Einheit allgemein aufgreifen: Hilfe ist möglich, und die Schuld liegt nie bei der betroffenen Person."
+    },
+    {
+      "id": "j3-e28",
+      "nr": 28,
+      "jahr": 3,
+      "modul": "j3-m8",
+      "titel": "Ja heißt Ja – Einvernehmlichkeit",
+      "kurz": "Nur ein Ja ist ein Ja: Die Gruppe klärt, was ein echtes Ja ausmacht, liest Signale, übt Nachfragen und Nein-Annehmen, prüft Mythen und weiß, was nach einer Grenzverletzung hilft.",
+      "dauer": 100,
+      "ziele": [
+        "erklären fünf Merkmale eines echten Ja: freiwillig, eindeutig, jederzeit zurücknehmbar, bei klarem Kopf, nur für genau das",
+        "unterscheiden in Szenen von der Umarmung bis zum Foto zwischen klarem Ja, Unklarheit und Nein",
+        "üben Sätze, mit denen man nachfragt, ein Nein annimmt und selbst eine Grenze setzt",
+        "widerlegen Mythen, die Betroffenen die Schuld geben, und kennen die Schritte nach einer Grenzverletzung"
+      ],
+      "material": [
+        "Gefühlsrad (A3, laminiert) und Anspannungsskala 0–100",
+        "Fragenbox mit den Zetteln aus Einheit 27 und die vorbereiteten Antworten",
+        "Eine Jacke der Leitung für die Szene zu Beginn",
+        "Schülerblatt „Ja heißt Ja“ für jede Person",
+        "Situationskarten E1–E9 und die Signalkarten Grün, Gelb, Rot (Blatt „Situationskarten: Liebe, Grenzen, Netz“)",
+        "Kreppband und drei Schilder für die Ja-Linie: klares Ja – unklar – kein Ja; zwei Schilder „stimmt“ und „stimmt nicht“",
+        "Skills-Pässe, Stempel, Imbiss und Getränke"
+      ],
+      "vorbereitung": [
+        "Die Fragen aus der Box im Team sichten und Antworten vorbereiten: kurz, sachlich, ohne Bewertung. Zettel, die nach einer persönlichen Notlage klingen, nach dem Schutzkonzept besprechen.",
+        "Elternbrief und Information der zuständigen Leitung (Responsable) sind erfolgt (siehe Einheit 27); zweite Fachkraft und ruhiger Nebenraum sind eingeplant.",
+        "Wissen, wie im Haus bei Hinweisen auf sexuelle Übergriffe vorgegangen wird und wer an diesem Tag erreichbar ist.",
+        "Die Karten E1–E9 durchsehen und anpassen, wenn eine Szene einer bekannten Lage in der Gruppe ähnelt.",
+        "Die Ja-Linie mit Kreppband auf den Boden kleben, die drei Schilder an die Enden und in die Mitte legen."
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-ja-heisst-ja",
+        "skills-situationskarten-liebe",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Gefühlsrad und Anspannung"
+        },
+        {
+          "min": "10–20",
+          "phase": "bruecke",
+          "titel": "Antworten aus der Fragenbox"
+        },
+        {
+          "min": "20–32",
+          "phase": "input",
+          "titel": "Die Jacke: fünf Merkmale eines echten Ja"
+        },
+        {
+          "min": "32–45",
+          "phase": "uebung",
+          "titel": "Ist das ein Ja? Signale lesen, nachfragen"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–78",
+          "phase": "aktiv",
+          "titel": "Die Ja-Linie: Szenen von Umarmung bis Foto"
+        },
+        {
+          "min": "78–86",
+          "phase": "aktiv",
+          "titel": "Mythen-Check: Seite wechseln"
+        },
+        {
+          "min": "86–91",
+          "phase": "input",
+          "titel": "Wenn eine Grenze verletzt wurde"
+        },
+        {
+          "min": "91–95",
+          "phase": "skill",
+          "titel": "Skill: mein Raum, dein Raum"
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Réckbléck, Fragenbox und Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: Gefühlsrad und Anspannung",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Gefühlsrad und Anspannungsskala wie gewohnt, die Leitung beginnt. Dazu eine freiwillige Zusatzfrage mit einer Zahl von 0 bis 10: Wie leicht fällt ein klares Nein bei jemandem, den man mag? Die Zahlen nicht kommentieren; wer nicht antworten mag, sagt „weiter“. Die Frage bereitet den Kern der Einheit vor: Ein Nein ist oft gerade dann schwer, wenn einem der andere wichtig ist.",
+          "sagen": [
+            "Gefühl, Zahl – und von 0 bis 10: Wie leicht fällt euch ein klares Nein bei jemandem, den ihr mögt?"
+          ],
+          "tipp": "Die Leitung nennt ihre eigene Zahl zuerst und ehrlich. So wird klar: Auch Erwachsenen fällt ein Nein nicht immer leicht.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Antworten aus der Fragenbox",
+          "dauer": 10,
+          "phase": "bruecke",
+          "text": "Die vorbereiteten Antworten auf die Fragen aus Einheit 27 geben: jede Frage vorlesen, kurz und sachlich antworten; die „keine Frage“-Zettel weder zählen noch erwähnen. Weiß die Leitung etwas nicht sicher, sagt sie das und bringt die Antwort nächstes Mal mit. Dann an die Beziehungs-Ampel erinnern: Rot hieß auch, jemanden zu etwas zu zwingen. Heute geht es darum, woran man ein echtes Ja erkennt; der Rahmen aus Einheit 27 gilt weiter.",
+          "sagen": [
+            "Alle Fragen waren in Ordnung. Wer eine gestellt hat, hat vielen geholfen, die dasselbe wissen wollten.",
+            "Rot hieß letztes Mal auch: jemanden zu etwas zwingen. Heute schauen wir genau hin, woran man ein echtes Ja erkennt.",
+            "Der Rahmen vom letzten Mal gilt weiter: Stopp und weiter sind immer erlaubt, niemand erzählt von sich, und wenn jemand in Gefahr ist, hole ich Hilfe."
+          ],
+          "tipp": "Zettel, die nach einer persönlichen Notlage klingen, nicht einzeln vorlesen. Stattdessen allgemein sagen: Wer so etwas erlebt, ist nicht schuld und kann Hilfe bekommen – und im Team nach dem Schutzkonzept weitergehen.",
+          "wennEsKippt": "Wird geraten, wer welche Frage geschrieben hat, sofort stoppen: Die Box ist anonym, und das bleibt so. Provozierende Fragen nicht übergehen, sondern die ernsthafte Frage dahinter beantworten – das nimmt ihnen die Wirkung."
+        },
+        {
+          "titel": "Die Jacke: fünf Merkmale eines echten Ja",
+          "dauer": 12,
+          "phase": "input",
+          "text": "Mit der zweiten Fachkraft eine kurze Szene spielen: „Darf ich mir deine Jacke leihen?“ – „Ja.“ Dann geht die Szene in kleinen Schritten weiter (Liste). Nach jedem Schritt friert sie ein, und die Gruppe entscheidet: Gilt das Ja noch? Aus den Antworten entstehen an der Tafel die fünf Merkmale eines echten Ja (Tabelle). Anschließend auf dem Blatt die Merkmale mit den passenden Sätzen verbinden (Aufgabe 1).",
+          "punkte": [
+            "Die Leitung greift in die Jackentaschen und liest einen Zettel, der darin steckt.",
+            "Sie gibt die Jacke an jemand anderen weiter.",
+            "Die Besitzerin sagt: „Gib sie bitte zurück.“ – „Du hast doch Ja gesagt.“",
+            "Die Besitzerin döst auf ihrem Stuhl. Die Leitung nimmt die Jacke: „Letzte Woche durfte ich ja auch.“",
+            "Neue Szene: „Leih mir die Jacke, sonst erzähl ich allen, was du mir gesagt hast.“ – „Na gut …“"
+          ],
+          "tabelle": {
+            "spalten": [
+              "Ein echtes Ja ist …",
+              "Das heißt",
+              "Kein Ja ist zum Beispiel"
+            ],
+            "zeilen": [
+              [
+                "freiwillig",
+                "ohne Druck, Drohung, Überreden oder schlechtes Gewissen",
+                "„Na gut, bevor du wieder beleidigt bist.“"
+              ],
+              [
+                "eindeutig",
+                "ein klares Ja in Worten oder deutlichen Zeichen",
+                "Schweigen, Wegschauen, Erstarren"
+              ],
+              [
+                "jederzeit zurücknehmbar",
+                "Wer Ja gesagt hat, darf jederzeit Stopp sagen.",
+                "„Aber du hast doch vorhin Ja gesagt.“"
+              ],
+              [
+                "bei klarem Kopf",
+                "nicht sehr betrunken, bekifft oder im Halbschlaf",
+                "Jemand kann kaum noch gerade stehen."
+              ],
+              [
+                "nur für genau das",
+                "Ein Ja gilt für diese eine Sache und diesen Moment.",
+                "Ja zum Foto heißt nicht Ja zum Weiterschicken."
+              ]
+            ]
+          },
+          "sagen": [
+            "Sie hat Ja gesagt. Darf ich jetzt auch in ihre Taschen schauen?",
+            "Bei einer Jacke findet ihr das alle selbstverständlich. Bei Küssen, Berührungen und Fotos gilt genau dasselbe."
+          ],
+          "tipp": "Die Szene wirkt, weil sie nichts mit Sex zu tun hat: Die Jugendlichen merken selbst, dass sie die Regeln längst kennen, und übertragen sie dann fast von allein. Ohne zweite Fachkraft spielt eine freiwillige Person die Besitzerin – immer mit der Jacke der Leitung, nie mit Sachen der Jugendlichen.",
+          "blatt": "skills-ja-heisst-ja"
+        },
+        {
+          "titel": "Ist das ein Ja? Signale lesen und nachfragen",
+          "dauer": 13,
+          "phase": "uebung",
+          "text": "Aufgabe 2 allein: Bei jeder Szene ankreuzen, ob sie ein klares Ja, Unklarheit oder kein Ja zeigt; danach die Szenen besprechen, bei denen die Kreuze auseinandergehen. Festhalten: Unklar heißt nicht „vielleicht ja“, sondern nachfragen – und bis dahin nichts tun. Dann den Comic ansehen (Aufgabe 3) und gemeinsam Sätze sammeln, mit denen man nachfragen kann, ohne dass es peinlich klingt (Liste). Zum Schluss ergänzen: Wer ein Nein hört, sagt „Okay“ – ohne Beleidigtsein und ohne Nachbohren.",
+          "punkte": [
+            "„Ist das okay für dich?“",
+            "„Willst du das auch?“",
+            "„Sollen wir aufhören?“",
+            "„Alles gut bei dir? Du bist so still.“",
+            "Ein Nein annehmen: „Okay. Danke, dass du es sagst.“"
+          ],
+          "sagen": [
+            "Ist Schweigen ein Ja? Und ein Lachen?",
+            "Wie kann man nachfragen, ohne dass es klingt wie beim Arzt?"
+          ],
+          "tipp": "Das Erstarren eigens erklären: Bei Angst oder Überraschung können Menschen wie eingefroren sein und nichts sagen. Das ist eine normale Schutzreaktion des Körpers – und niemals ein Ja.",
+          "wennEsKippt": "Kommt der Einwand „Nachfragen macht die Stimmung kaputt“, ihn ernst nehmen und an die Gruppe zurückgeben: Was ist schlimmer – eine kurze Frage oder jemandem wehzutun, der nichts gesagt hat? Meist antworten Jugendliche selbst, dass eine Frage auch zeigt, dass einem der andere wichtig ist.",
+          "blatt": "skills-ja-heisst-ja"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Imbiss, Fenster auf, das Thema ruht. Die zweite Fachkraft hat ein Auge darauf, ob jemand still oder aufgewühlt wirkt, und bietet unauffällig ein kurzes Gespräch an."
+        },
+        {
+          "titel": "Die Ja-Linie: Szenen von Umarmung bis Foto",
+          "dauer": 18,
+          "phase": "aktiv",
+          "text": "Auf dem Boden liegt die Ja-Linie: links „klares Ja“, in der Mitte „unklar“, rechts „kein Ja“. Die Leitung liest eine Karte aus E1–E9 vor, alle stellen sich an die Stelle, die sie für richtig halten, und aus jeder besetzten Zone begründet eine Person. Danach die Frage: Was hätte die Person tun oder fragen können? Zwei oder drei Szenen spielen Freiwillige ein zweites Mal – nur mit Worten und mindestens eine Armlänge voneinander entfernt –, sodass daraus ein klares Ja oder ein respektiertes Nein wird. Wer „Stopp“ sagt, beendet die Szene sofort.",
+          "sagen": [
+            "Stellt euch dahin, wo ihr es seht – nicht dahin, wo eure Freunde stehen.",
+            "Was hätte die Person fragen können? Und mit welchem Satz hätte sie gut aufhören können?"
+          ],
+          "tipp": "Mit E9 enden: Ana nimmt ihr Ja zurück, und Elias sagt einfach „Okay“. Die Szene zeigt, wie unspektakulär Respekt aussieht – genau das soll hängen bleiben.",
+          "wennEsKippt": "Stellen sich alle in die Mitte, um sich nicht festzulegen, nachfragen, was sie noch wissen müssten – genau das wäre die Frage an die Person auf der Karte. Fallen anzügliche Bemerkungen, die Karte beenden und ruhig sagen: Hier geht es darum, wie es der Person geht. Bei wenig Energie oder wenig Platz zeigen alle im Sitzen mit den Signalkarten vom Kartenblatt; mit nur zwei Jugendlichen stellt sich die Leitung mit auf.",
+          "blatt": "skills-situationskarten-liebe"
+        },
+        {
+          "titel": "Mythen-Check: Seite wechseln",
+          "dauer": 8,
+          "phase": "aktiv",
+          "text": "Zwei Seiten im Raum: „stimmt“ und „stimmt nicht“. Die Leitung liest einen Satz vor (Liste), alle gehen auf ihre Seite, dann folgt die Auflösung in ein, zwei Sätzen. Viele dieser Sätze kommen aus Filmen, Songs oder dem Freundeskreis, und fast alle schieben die Verantwortung der betroffenen Person zu. Das am Ende ausdrücklich sagen: Verantwortlich ist, wer eine Grenze überschreitet.",
+          "punkte": [
+            "„Wer nicht Nein sagt, will es eigentlich.“ – stimmt nicht: Nur ein Ja ist ein Ja.",
+            "„Wenn man zusammen ist, muss man nicht mehr fragen.“ – stimmt nicht: Auch in einer Beziehung braucht es jedes Mal ein Ja.",
+            "„Jungs wollen immer.“ – stimmt nicht: Auch Jungen dürfen Nein sagen, und auch ihr Nein zählt.",
+            "„Mit knapper Kleidung fordert man es heraus.“ – stimmt nicht: Kleidung ist keine Einladung.",
+            "„Ein Nein kann auch ohne Worte kommen.“ – stimmt: Wegdrehen, Wegschieben oder Erstarren heißt Nein.",
+            "„Wer sehr betrunken ist, kann nicht wirklich zustimmen.“ – stimmt: Im Rausch gibt es kein echtes Ja (siehe Einheit 8).",
+            "„Auch Jungen und Männer können Übergriffe erleben.“ – stimmt: Das kann jedem Menschen passieren."
+          ],
+          "sagen": [
+            "Woher kommen solche Sätze eigentlich?",
+            "Wem nützt es, wenn alle glauben, die betroffene Person sei selbst schuld?"
+          ],
+          "wennEsKippt": "Verteidigt jemand einen Mythos laut („Ist aber so“), nicht in eine Debatte einsteigen, sondern fragen: Wer hätte einen Vorteil, wenn das stimmen würde? Dann weiter. Rechtfertigt jemand Übergriffe, das klar zurückweisen und nach der Einheit das Gespräch suchen."
+        },
+        {
+          "titel": "Wenn eine Grenze verletzt wurde",
+          "dauer": 5,
+          "phase": "input",
+          "text": "Ruhig und ohne Beispiele die Schritte an die Tafel schreiben (Liste) und auf den Hilfe-Kasten des Blatts zeigen. Betonen: Die Schuld liegt nie bei der betroffenen Person – auch nicht, wenn sie nichts gesagt, sich nicht gewehrt oder getrunken hat. Hilfe holen geht auch Tage oder Wochen später noch.",
+          "punkte": [
+            "An einen sicheren Ort gehen oder bei einer vertrauten Person bleiben.",
+            "Einer Vertrauensperson erzählen – Eltern, SePAS, eine Lehrperson oder die Kursleitung.",
+            "Bei akuter Gefahr oder Verletzung: Notruf 112. Die Polizei ist unter 113 erreichbar.",
+            "Anonym reden: Kanner- a Jugendtelefon 116 111.",
+            "Ärztliche Hilfe und Beratung: Schulärztin oder Schularzt, Planning Familial."
+          ],
+          "sagen": [
+            "Wenn so etwas passiert ist, hat die Person nichts falsch gemacht. Niemand hier muss etwas erzählen – aber alle sollen wissen, wo es Hilfe gibt."
+          ],
+          "tipp": "Langsam sprechen und keine Fallgeschichten erzählen. Schon das Wissen, dass Hilfe auch später noch möglich ist, entlastet."
+        },
+        {
+          "titel": "Skill: mein Raum, dein Raum",
+          "dauer": 4,
+          "phase": "skill",
+          "text": "Alle stehen mit Abstand. Füße fest auf den Boden, einmal lang ausatmen. Die Arme langsam ausbreiten und einmal um sich herum einen Kreis in die Luft zeichnen: Das ist mein Raum. Dann die Arme sinken lassen, zu den anderen schauen und denken: Jede und jeder hat so einen Raum. Zweimal ruhig atmen und hinsetzen.",
+          "sagen": [
+            "Mein Raum gehört mir. Und dein Raum gehört dir.",
+            "Wer die Augen schließen mag, darf das. Offen lassen ist genauso gut."
+          ],
+          "tipp": "Die Übung knüpft an den Wohlfühlabstand aus Jahr 1 an. Wer bei Körperübungen unruhig wird, macht sie im Sitzen oder schaut nur zu."
+        },
+        {
+          "titel": "Réckbléck, Fragenbox und Skills-Pass",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Réckbléck mit dem Daumen: Wie sicher fühlt sich Nachfragen und Nein-Sagen jetzt an? Dazu die Anspannungszahl von jetzt. Alle schreiben einen Zettel für die Fragenbox, auch wer keine Frage hat. Eintrag in den Skills-Pass, etwa der eigene Satz zum Nachfragen, und Stempel; zum Schluss ein Nachgespräch anbieten.",
+          "sagen": [
+            "Daumen: Wie sicher fühlt sich ein Nachfragen oder ein Nein jetzt an? Und eure Zahl – wenn sie höher ist als am Anfang, ist das nach so einem Thema in Ordnung.",
+            "Ich bin nach der Einheit noch da, auch für Fragen, die nicht in die Box sollen."
+          ],
+          "blatt": "skills-pass",
+          "tipp": "Die Box nach der Einheit zusammen mit der zweiten Fachkraft öffnen, Beobachtungen im Team besprechen und die Antworten für Einheit 29 vorbereiten."
+        }
+      ],
+      "bruecke": "Nächstes Mal gibt es Wissen ohne Umwege: über Körper, Sexualität und Vielfalt – und darüber, wo ihr verlässliche Antworten bekommt.",
+      "hintergrund": "Einvernehmlichkeit heißt: Alle Beteiligten wollen, was passiert – freiwillig, bei klarem Kopf und mit dem Recht, jederzeit Stopp zu sagen. Beres (2007) zeigt in einer Auswertung der Forschung, dass Zustimmung im Alltag meist indirekt und ohne Worte ausgehandelt wird. Genau dort entstehen Missverständnisse – und Ausreden: Schweigen, Mitgehen oder fehlender Widerstand werden als Ja gedeutet. Die Einheit übt deshalb beides, Signale lesen und bei Unklarheit nachfragen. Die europäischen Standards für Sexualaufklärung (WHO Regional Office for Europe & BZgA, 2010) und die Leitlinien der UNESCO (2018) zählen Einvernehmlichkeit, Körpergrenzen und Hilfe nach Gewalt zu den Kerninhalten in diesem Alter. Mythen, die Betroffenen die Schuld geben, werden ausdrücklich widerlegt, weil sie das Hilfeholen erschweren. Auch das Erstarren wird erklärt: Es ist eine häufige Schutzreaktion und nie eine Zustimmung.",
+      "quellen": [
+        "Beres, M. A. (2007). ‘Spontaneous’ sexual consent: An analysis of sexual consent literature. Feminism & Psychology, 17(1), 93–108.",
+        "WHO Regional Office for Europe & BZgA (2010). Standards for Sexuality Education in Europe: A Framework for Policy Makers, Educational and Health Authorities and Specialists. Köln: Bundeszentrale für gesundheitliche Aufklärung.",
+        "UNESCO (2018). International Technical Guidance on Sexuality Education: An Evidence-Informed Approach (revised ed.). Paris: UNESCO."
+      ],
+      "achtung": "In jeder Gruppe kann jemand sein, der Übergriffe erlebt hat, ohne dass es jemand weiß. Deshalb keine Übergriffe spielen oder schildern und niemanden nach Erfahrungen fragen; Rollenspiele nur mit Worten, mit Abstand und mit Stopp-Recht. Wirkt jemand plötzlich abwesend, erstarrt oder sehr aufgewühlt, ruhig eine Pause im Nebenraum anbieten und die zweite Fachkraft mitgehen lassen. Deutet jemand an, selbst betroffen zu sein – im Gespräch oder auf einem Zettel –, die Person nach der Einheit ruhig ansprechen, zuhören, glauben, nichts versprechen, was man nicht halten kann, nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) am selben Tag informieren. Bei akuter Gefahr Notruf 112 und die Person nicht allein lassen. Äußert jemand übergriffige Haltungen oder erzählt von eigenem übergriffigem Verhalten, wird auch das nicht im Plenum geklärt: nach der Einheit mit der zuständigen Leitung (Responsable) besprechen und nach dem Schutzkonzept vorgehen."
+    },
+    {
+      "id": "j3-e29",
+      "nr": 29,
+      "jahr": 3,
+      "modul": "j3-m8",
+      "titel": "Körper, Sexualität, Vielfalt – gut informiert",
+      "kurz": "Wissen statt Halbwissen: Die Gruppe prüft Mythen zu Körper, Sex und Verhütung, klärt Begriffe zur Vielfalt, lernt im Parcours dazu und weiß, wo es verlässliche Antworten und Beratung gibt.",
+      "dauer": 100,
+      "ziele": [
+        "prüfen verbreitete Mythen zu Pubertät, Sexualität, Schutz und Verhütung und setzen sachliches Wissen dagegen",
+        "erklären den Unterschied zwischen sexueller Orientierung und geschlechtlicher Identität und sprechen respektvoll darüber",
+        "erkennen, warum Pornos und viele Netzvideos kein Bild von echter Sexualität geben",
+        "kennen verlässliche Informationsquellen und Beratung in Luxemburg: Planning Familial, Schulärztin oder Schularzt, SePAS"
+      ],
+      "material": [
+        "Gefühlsrad (A3, laminiert) und Anspannungsskala 0–100",
+        "Fragenbox mit den Zetteln aus Einheit 28 und die vorbereiteten Antworten",
+        "Schülerblatt „Gut informiert“ für jede Person",
+        "Blatt „Der Wissens-Parcours“ für jedes Paar, dazu Station 1 einmal auf festem Papier, ausgeschnitten und gemischt",
+        "Vier Tische mit Stationsschildern, ein Plakat für Station 3, Haftnotizen",
+        "Klangschale oder Timer für den Stationswechsel",
+        "Nach Absprache: Anschauungsmaterial zur Verhütung von Planning Familial",
+        "Skills-Pässe, Stempel, Imbiss und Getränke"
+      ],
+      "vorbereitung": [
+        "Der Elternbrief aus Einheit 27 nennt die Inhalte dieser Einheit ausdrücklich: Körper und Pubertät, Sexualität, Vielfalt, Schutz und Verhütung, verlässliche Anlaufstellen. Rückfragen von Eltern mit der zuständigen Leitung (Responsable) klären.",
+        "Mit Planning Familial absprechen, ob eine Fachkraft kommt und welche Teile sie übernimmt (etwa Station 2 und die Auflösung des Wissens-Checks); dabei auch klären, was im Elternbrief angekündigt ist.",
+        "Die Fragen aus der Box im Team sichten und Antworten vorbereiten. Fragen zur Rechtslage, etwa zu Altersgrenzen, nur mit geprüftem aktuellem Stand beantworten.",
+        "Ohne Körperabbildungen arbeiten: Text und Symbole reichen. Eine Fachstelle bringt nur abgesprochenes Material mit.",
+        "Die vier Stationen aufbauen, das Plakat für Station 3 beschriften: „Was brauchen Jugendliche, um so sein zu dürfen, wie sie sind?“",
+        "Zweite Fachkraft und ruhiger Nebenraum sind eingeplant."
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-gut-informiert",
+        "skills-wissens-parcours",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Gefühlsrad und Anspannung"
+        },
+        {
+          "min": "10–20",
+          "phase": "bruecke",
+          "titel": "Antworten aus der Fragenbox, Wörter klären"
+        },
+        {
+          "min": "20–33",
+          "phase": "uebung",
+          "titel": "Stimmt das? Der Wissens-Check"
+        },
+        {
+          "min": "33–45",
+          "phase": "input",
+          "titel": "Vielfalt: Orientierung und Identität"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–82",
+          "phase": "aktiv",
+          "titel": "Wissens-Parcours an vier Stationen"
+        },
+        {
+          "min": "82–89",
+          "phase": "uebung",
+          "titel": "Auswertung und Quellen-Check"
+        },
+        {
+          "min": "89–95",
+          "phase": "skill",
+          "titel": "Skill: das Gegenteil tun, wenn es peinlich wird"
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Réckbléck, Check-out und Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: Gefühlsrad und Anspannung",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Gefühlsrad und Anspannung wie gewohnt. Dazu eine Zusatzfrage, nur mit dem Daumen: Wie leicht fällt es, über Körper und Sex zu reden – Daumen hoch heißt locker, Mitte geht so, runter heißt richtig peinlich. Die Leitung zeigt ihren Daumen zuerst und hält ihn ruhig in der Mitte. Dann kurz sagen: Peinlich ist normal, und heute muss niemand etwas von sich erzählen.",
+          "sagen": [
+            "Gefühl und Zahl. Und dann der Daumen: Hoch ist locker, runter ist richtig peinlich. Wo steht ihr bei diesem Thema?",
+            "Mir ist es auch nicht völlig egal. Genau deshalb reden wir heute über Wissen und nicht über uns.",
+            "Wie immer: Stopp und weiter sind erlaubt, und wenn jemand in Gefahr ist, hole ich Hilfe."
+          ],
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Antworten aus der Fragenbox, Wörter klären",
+          "dauer": 10,
+          "phase": "bruecke",
+          "text": "Die Antworten auf die Fragen aus Einheit 28 geben, kurz und sachlich. Dann Wörter vereinbaren: Im Kurs benutzen alle die Fachwörter – nicht, weil andere Wörter verboten wären, sondern weil Fachwörter niemanden abwerten und überall verstanden werden, auch in der Arztpraxis. Die Leitung nennt die wichtigsten Wörter einmal ruhig (Liste) und fragt, wie sie in den anderen Sprachen der Gruppe heißen. Wer ein Wort nicht kennt, darf fragen – genau diese Stimmung braucht es heute.",
+          "punkte": [
+            "Pubertät, Hormone, Periode (Menstruation), Samenerguss",
+            "Vulva, Scheide (Vagina), Gebärmutter, Eierstöcke",
+            "Penis, Hoden, Erektion",
+            "sexuelle Orientierung, geschlechtliche Identität",
+            "Verhütung, Kondom, sexuell übertragbare Infektionen"
+          ],
+          "sagen": [
+            "Für fast alles gibt es drei Sorten Wörter: Kinderwörter, Schimpfwörter und Fachwörter. Hier nehmen wir die Fachwörter – die versteht auch die Ärztin.",
+            "Wie heißt das auf Französisch, Luxemburgisch oder Portugiesisch? Das hilft allen."
+          ],
+          "tipp": "Die Fachwörter ohne Zögern aussprechen: Wie die Leitung die Wörter sagt, bestimmt, wie peinlich sie für die Gruppe sind. Für Jugendliche mit Sprachschwierigkeiten jedes Wort mit einfachen Worten erklären und an die Tafel schreiben – ohne Körperbilder.",
+          "wennEsKippt": "Fallen Schimpfwörter oder wird gegrölt, nicht moralisieren, sondern das Fachwort ruhig danebensetzen und weitermachen. Wer ein Wort wie „schwul“ als Beleidigung benutzt, wird sofort und ruhig gestoppt: Das benutzen wir hier nicht als Schimpfwort."
+        },
+        {
+          "titel": "Stimmt das? Der Wissens-Check",
+          "dauer": 13,
+          "phase": "uebung",
+          "text": "Aufgabe 1 auf dem Blatt allein: jede Aussage mit „stimmt“, „stimmt nicht“ oder „weiß nicht“ ankreuzen. Dann die Aussagen nacheinander vorlesen; alle zeigen gleichzeitig mit dem Daumen ihre Antwort, danach folgt die Auflösung in zwei, drei Sätzen (Lösung auf der Lehrerseite des Blatts). Bei der Aussage zu Pornos länger bleiben: Pornos sind gespielt und geschnitten, zeigen selten Nachfragen, Schutz oder echte Körper – als Aufklärung taugen sie nicht.",
+          "sagen": [
+            "Heute ist „weiß nicht“ eine richtig gute Antwort. Dafür sind wir da.",
+            "Woher habt ihr gehört, dass man beim ersten Mal nicht schwanger werden kann? Solche Sätze halten sich hartnäckig."
+          ],
+          "tipp": "Ist eine Fachkraft von Planning Familial da, übernimmt sie die Auflösung, und die Leitung bleibt in der Gruppe. So lernen die Jugendlichen die Beratungsstelle schon einmal persönlich kennen.",
+          "wennEsKippt": "Kommt eine sehr persönliche Frage an die Leitung („Und wie war das bei Ihnen?“), freundlich ablehnen: Persönliches bleibt bei mir – so wie bei euch. Sagt jemand, das Thema passe nicht zu seiner Religion oder Familie, das respektvoll stehen lassen: Wissen ist kein Auftrag, und was jemand damit macht, darf mit den eigenen Werten zu tun haben.",
+          "blatt": "skills-gut-informiert"
+        },
+        {
+          "titel": "Vielfalt: Orientierung und Identität",
+          "dauer": 12,
+          "phase": "input",
+          "text": "Aufgabe 2 zu zweit: Begriffe und Erklärungen verbinden. Dann kurz und sachlich klären (Liste): Die sexuelle Orientierung beschreibt, in wen man sich verliebt; die geschlechtliche Identität beschreibt, welches Geschlecht man selbst ist. Beides sucht man sich nicht aus, man sieht es niemandem an, und niemand muss sich dazu äußern. Zum Schluss die Regel an die Tafel: Wir raten nicht über andere, und wir outen niemanden.",
+          "punkte": [
+            "Sexuelle Orientierung: in wen man sich verliebt und zu wem man sich hingezogen fühlt – etwa hetero, schwul, lesbisch, bi.",
+            "Geschlechtliche Identität: welches Geschlecht man selbst ist. Das weiß nur die Person selbst.",
+            "Trans: Das eigene Geschlecht ist ein anderes als das, das bei der Geburt eingetragen wurde. Nicht-binär: Die Person ordnet sich nicht oder nicht nur als Mädchen oder Junge ein.",
+            "Inter: Der Körper ist von Geburt an nicht eindeutig weiblich oder männlich.",
+            "Coming-out: Wann und wem man etwas erzählt, entscheidet jede Person selbst."
+          ],
+          "sagen": [
+            "Wen jemand liebt, sieht man niemandem an. Und es geht niemanden etwas an, solange die Person es nicht selbst erzählen will.",
+            "Was braucht jemand, um sich in einer Klasse sicher zu fühlen – egal, wen er liebt oder wer er ist?"
+          ],
+          "tipp": "Vielfalt wirkt am stärksten, wenn sie selbstverständlich vorkommt: In den Karten und Geschichten des ganzen Moduls gibt es Paare aller Art, ohne dass das eigens betont wird.",
+          "wennEsKippt": "Fallen abwertende Kommentare über Schwule, Lesben oder trans Personen, klar und ohne Predigt reagieren: Hier wird niemand wegen seiner Liebe oder seines Geschlechts abgewertet – auch dann nicht, wenn scheinbar niemand Betroffenes im Raum ist. Oft sitzt doch jemand da, der es nicht zeigt.",
+          "blatt": "skills-gut-informiert"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Imbiss und frische Luft, das Thema ruht. Ist eine Fachkraft von Planning Familial da, isst sie mit – oft kommen in der Pause die Fragen, die im Plenum niemand stellt."
+        },
+        {
+          "titel": "Wissens-Parcours an vier Stationen",
+          "dauer": 22,
+          "phase": "aktiv",
+          "text": "Zu zweit von Station zu Station, je fünf Minuten, Wechsel auf ein Signal (Tabelle). Jedes Paar trägt sein Blatt „Der Wissens-Parcours“ mit; an Station 1 liegen die Frage- und Antwortkarten, an Station 3 das Plakat. Die Leitung und die zweite Fachkraft – oder die Fachkraft von Planning Familial – gehen herum und beantworten Fragen. Bleibt ein Paar hängen, nicht die Lösung verraten, sondern eine Hilfsfrage stellen.",
+          "tabelle": {
+            "spalten": [
+              "Station",
+              "Aufgabe"
+            ],
+            "zeilen": [
+              [
+                "1 Körper und Pubertät",
+                "Sechs Fragen, die Jugendliche oft stellen, und sechs Antworten: die passenden Paare legen"
+              ],
+              [
+                "2 Schutz und Verhütung",
+                "Ankreuzen, was wovor schützt: Kondom, Pille, „Aufpassen“, Pille danach"
+              ],
+              [
+                "3 Liebe und Vielfalt",
+                "Stilles Plakat: Was brauchen Jugendliche, um so sein zu dürfen, wie sie sind? Haftnotiz dazukleben"
+              ],
+              [
+                "4 Netz und Pornos",
+                "Echtes Leben oder nur im Porno? Sechs Aussagen einordnen"
+              ]
+            ]
+          },
+          "sagen": [
+            "Ihr müsst nicht alles wissen. Schreibt auf, was ihr vermutet – aufgelöst wird am Ende.",
+            "Wechsel. Nehmt euer Blatt mit, die Karten bleiben liegen."
+          ],
+          "tipp": "Ist Planning Familial zu Gast, übernimmt die Fachkraft Station 2 und zeigt dort Verhütungsmittel. Eine Vorführung am Modell nur, wenn sie mit der Fachstelle abgesprochen und im Elternbrief angekündigt ist.",
+          "wennEsKippt": "Mit nur zwei Jugendlichen gehen beide zusammen durch, und die Leitung stellt an jeder Station eine Zusatzfrage. Bei wenig Energie bleiben alle sitzen, und die Stationsmaterialien wandern von Tisch zu Tisch. Albern Paare an Station 1 herum, bleibt die Leitung dort stehen und liest die nächste Karte selbst vor.",
+          "blatt": "skills-wissens-parcours"
+        },
+        {
+          "titel": "Auswertung und Quellen-Check",
+          "dauer": 7,
+          "phase": "uebung",
+          "text": "Im Stuhlkreis jede Station kurz auflösen (Lösungen auf der Lehrerseite des Parcours-Blatts) und das Plakat von Station 3 vorlesen, ohne zu kommentieren, wer was geschrieben hat. Dann auf dem Blatt „Gut informiert“ Aufgabe 3 allein: Welchen Quellen kann man bei Fragen zu Liebe, Körper und Sex trauen? Kurz besprechen, vor allem, warum KI-Chatbots nur teils verlässlich sind: Sie klingen sicher, erfinden aber manchmal Antworten. Zum Schluss schreibt jede Person für sich ihren Plan (Aufgabe 4): Wo frage ich nach, wenn mir eine Frage peinlich ist?",
+          "sagen": [
+            "Welche Station hat euch am meisten überrascht?",
+            "Wo würdet ihr nachfragen, wenn ihr morgen eine Frage hättet, die ihr hier nicht stellen wollt?"
+          ],
+          "blatt": "skills-gut-informiert"
+        },
+        {
+          "titel": "Skill: das Gegenteil tun, wenn es peinlich wird",
+          "dauer": 6,
+          "phase": "skill",
+          "text": "Im Sitzen erklären: Peinlichkeit will, dass wir uns klein machen, wegschauen und schweigen. Der Skill „Gegenteil tun“ aus dem DBT-Skillstraining dreht das um, wenn die Scham nicht zur Lage passt – etwa bei einer ehrlichen Frage. Gemeinsam üben: Füße auf den Boden, aufrecht sitzen, Schultern locker, Blick heben, einmal lang ausatmen. In dieser Haltung schreibt jede Person einen Zettel für die Fragenbox – eine echte Frage oder „keine Frage“.",
+          "sagen": [
+            "Scham sagt: Mach dich klein. Jetzt machen wir das Gegenteil – nur für eine Minute.",
+            "Eine Frage zu stellen, die einem peinlich ist, ist mutig. In der Box sieht niemand, von wem sie kommt."
+          ],
+          "tipp": "Wer die Einheit „Scham und Schuld“ erlebt hat, kennt die Idee schon. Wer die Haltung albern findet, darf das sagen – und probiert sie trotzdem einmal aus."
+        },
+        {
+          "titel": "Réckbléck, Check-out und Skills-Pass",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Réckbléck als Blitzlicht: ein Wort zu heute, dazu die Anspannungszahl von jetzt. Eintrag in den Skills-Pass, etwa eine Quelle, der man vertraut, und Stempel. Auf den Hilfe-Kasten des Blatts zeigen und ein Nachgespräch anbieten, auch für Fragen, die jemand lieber allein stellt. Nach der Einheit im Team besprechen, was aufgefallen ist, und die Fragen aus der Box sichten.",
+          "sagen": [
+            "Ein Wort zu heute – und eure Zahl jetzt.",
+            "Wenn ihr eine Frage lieber nicht in die Box werft: Ich helfe auch dabei, einen Termin bei Planning Familial oder bei der Schulärztin zu finden."
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Nächstes Mal geht es um Bilder im Netz: um Druck, Nudes und darum, was hilft, wenn jemand damit droht.",
+      "hintergrund": "Die europäischen Standards für Sexualaufklärung (WHO Regional Office for Europe & BZgA, 2010) sehen für Jugendliche ab 15 Jahren sachliches Wissen zu Körper, Verhütung und sexuell übertragbaren Infektionen vor, dazu sexuelle Orientierung und geschlechtliche Identität, Rechte und verlässliche Anlaufstellen. Nach der Auswertung der Studienlage durch die UNESCO (2018) führt gute Sexualaufklärung nicht zu früherem Sex; sie geht eher mit späterem Beginn, weniger Risiken und mehr Schutz einher. Weil viele Jugendliche ihr Wissen aus Pornos und Netzvideos beziehen, gehört das Prüfen solcher Quellen dazu. Wer selbstverständlich über Vielfalt spricht, schützt auch Jugendliche, die sich noch nicht geoutet haben. Gegen Peinlichkeit hilft der DBT-Skill „Gegenteil tun“: aufrecht bleiben und die Frage trotzdem stellen, wenn die Scham nicht zur Lage passt (Linehan, 2015).",
+      "quellen": [
+        "WHO Regional Office for Europe & BZgA (2010). Standards for Sexuality Education in Europe: A Framework for Policy Makers, Educational and Health Authorities and Specialists. Köln: Bundeszentrale für gesundheitliche Aufklärung.",
+        "UNESCO (2018). International Technical Guidance on Sexuality Education: An Evidence-Informed Approach (revised ed.). Paris: UNESCO.",
+        "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford."
+      ],
+      "achtung": "Niemanden nach der eigenen Orientierung, Identität oder nach eigenen Erfahrungen fragen und niemanden outen; Vermutungen über andere in der Gruppe sofort stoppen. Abwertende Kommentare klar unterbinden. Handys bleiben in der Tasche; zeigt jemand pornografische Inhalte, ruhig stoppen, nach der Einheit mit der Person reden und es im Team besprechen. Fragen zu eigenen Beschwerden, zu einer möglichen Schwangerschaft oder Infektion diskret aufnehmen und zu Planning Familial oder zur Schulärztin begleiten. Gibt es Hinweise auf Übergriffe, Ausbeutung oder Druck, die Person nach der Einheit ruhig ansprechen, nichts versprechen, was man nicht halten kann, nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) am selben Tag informieren; bei akuter Gefahr Notruf 112 und die Person nicht allein lassen."
+    },
+    {
+      "id": "j3-e30",
+      "nr": 30,
+      "jahr": 3,
+      "modul": "j3-m8",
+      "titel": "Nudes, Sexting und Erpressung im Netz",
+      "kurz": "Zum Modulende: Die Gruppe durchschaut Druck, Bilder zu schicken, handelt richtig, wenn Bilder herumgehen oder jemand damit droht, übt Beistehen statt Beschämen und schreibt ihren Satz für Grenzen ins Skills-Buch.",
+      "dauer": 100,
+      "ziele": [
+        "erkennen typische Drucksätze und antworten mit eigenen Nein-Sätzen",
+        "wissen, dass Weiterleiten intimer Bilder verletzt und strafbar ist, und handeln als Zuschauende richtig",
+        "kennen die Schritte bei Erpressung mit Bildern: nicht zahlen, nichts löschen, Kontakt abbrechen, melden, Hilfe holen",
+        "üben, Betroffenen ohne Vorwurf beizustehen, und halten ihren Satz für Grenzen im Skills-Buch fest"
+      ],
+      "material": [
+        "Gefühlsrad (A3, laminiert) und Anspannungsskala 0–100",
+        "Fragenbox mit den Zetteln aus Einheit 29 und die vorbereiteten Antworten",
+        "Schülerblatt „Nudes, Druck und Erpressung – was tun?“ für jede Person",
+        "Situationskarten N1–N6 (Blatt „Situationskarten: Liebe, Grenzen, Netz“)",
+        "Vier Schilder A, B, C und D für die Ecken des Raums",
+        "Das Skills-Buch jeder Person (Blatt „Mein Skills-Buch“)",
+        "Skills-Pässe, Stempel, Imbiss und Getränke"
+      ],
+      "vorbereitung": [
+        "Die Fragen aus der Box im Team sichten und Antworten vorbereiten.",
+        "Die Leitung prüft den aktuellen Stand der Rechtslage zu intimen Bildern Minderjähriger (Weiterleiten, Besitzen, Erpressen) und das Vorgehen im Haus, falls ein Bild im Umlauf ist.",
+        "Gibt es in der Gruppe oder in der Schule gerade einen Fall mit Bildern, die passenden Karten weglassen und die Einheit vorher mit der zuständigen Leitung (Responsable) absprechen.",
+        "Die Nummer der BEE SECURE Helpline (8002 1234) groß auf ein Plakat schreiben; bei Interesse vorab die Seite der Initiative ansehen (www.bee-secure.lu).",
+        "Zweite Fachkraft und ruhiger Nebenraum sind eingeplant; die vier Ecken des Raums mit A bis D beschriften."
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-nudes-erpressung",
+        "skills-situationskarten-liebe",
+        "skills-buch",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Gefühlsrad und Anspannung"
+        },
+        {
+          "min": "10–18",
+          "phase": "bruecke",
+          "titel": "Antworten aus der Fragenbox, Rahmen für heute"
+        },
+        {
+          "min": "18–33",
+          "phase": "input",
+          "titel": "Wie Druck klingt – und was stimmt"
+        },
+        {
+          "min": "33–43",
+          "phase": "uebung",
+          "titel": "Ein Nein im Chat"
+        },
+        {
+          "min": "43–58",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "58–77",
+          "phase": "aktiv",
+          "titel": "Vier Ecken: Was tun, wenn …?"
+        },
+        {
+          "min": "77–83",
+          "phase": "uebung",
+          "titel": "Beistehen statt beschämen"
+        },
+        {
+          "min": "83–88",
+          "phase": "skill",
+          "titel": "Skill: Tempo rausnehmen"
+        },
+        {
+          "min": "88–100",
+          "phase": "abschluss",
+          "titel": "Skills-Buch, Réckbléck zum Modul, Check-out"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: Gefühlsrad und Anspannung",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Gefühlsrad und Anspannung wie gewohnt; die Leitung beginnt. Heute ohne Zusatzfrage zum Thema – es ist für manche nah genug. Stattdessen darf jede Person, die mag, einen Satz sagen: Was ist mir aus den letzten drei Einheiten hängen geblieben?",
+          "sagen": [
+            "Gefühl und Zahl. Und wer mag: Was ist euch aus den letzten drei Einheiten hängen geblieben?"
+          ],
+          "tipp": "Die Zahlen von heute still mit denen der letzten Einheiten vergleichen. Steigt die Zahl bei jemandem von Mal zu Mal, nach der Einheit das Gespräch suchen.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Antworten aus der Fragenbox, Rahmen für heute",
+          "dauer": 8,
+          "phase": "bruecke",
+          "text": "Die Fragen aus Einheit 29 beantworten. Dann den Rahmen für heute betonen: Niemand erzählt, ob er schon Bilder geschickt, bekommen oder gesehen hat, und niemand fragt danach; Stopp und „weiter“ sind erlaubt, und wenn jemand in Gefahr ist, holt die Leitung Hilfe. Es geht um erfundene Personen – und darum, was man tun kann. Kurz an die Beziehungs-Ampel erinnern: Mit Bildern drohen war rot.",
+          "sagen": [
+            "Heute erzählt niemand, was er selbst schon geschickt oder gesehen hat. Das geht niemanden etwas an – auch mich nicht.",
+            "Wenn euch später etwas einfällt, das ihr loswerden wollt: Ich bin nach der Einheit da."
+          ],
+          "wennEsKippt": "Fangen Jugendliche an, über konkrete Personen aus der Schule zu reden („Das war doch bei …“), sofort und freundlich stoppen: Namen bleiben draußen. Gibt es einen aktuellen Fall, nach der Einheit mit der zuständigen Leitung (Responsable) klären, was die betroffene Person braucht."
+        },
+        {
+          "titel": "Wie Druck klingt – und was stimmt",
+          "dauer": 15,
+          "phase": "input",
+          "text": "Mit einer Schätzfrage beginnen: Wie viele Jugendliche unter 18 haben schon einmal ein intimes Bild von sich verschickt? Schätzungen sammeln, dann die Zahlen aus einer Auswertung von 39 Studien nennen (Tabelle, Quelle im Hintergrund). Die meisten tun es also nicht – der Satz „Alle machen das“ stimmt nicht. Danach auf dem Blatt die Drucksätze mit den passenden Antworten verbinden (Aufgabe 1) und besprechen, warum solche Sätze wirken: Sie spielen mit Zuneigung, schlechtem Gewissen und der Angst, jemanden zu verlieren.",
+          "tabelle": {
+            "spalten": [
+              "Unter 18 Jahren haben schon einmal …",
+              "etwa"
+            ],
+            "zeilen": [
+              [
+                "ein intimes Bild oder Video verschickt",
+                "jede und jeder Siebte"
+              ],
+              [
+                "eines bekommen",
+                "gut jede und jeder Vierte"
+              ],
+              [
+                "eines ohne Zustimmung weitergeleitet",
+                "jede und jeder Achte"
+              ]
+            ]
+          },
+          "sagen": [
+            "Was schätzt ihr: Wie viele in eurem Alter haben schon einmal ein Nacktbild verschickt?",
+            "Die meisten also nicht. Wer sagt „Alle machen das“, erzählt euch etwas, das nicht stimmt."
+          ],
+          "tipp": "Die Zahlen nicht als Schreckensnachricht bringen, sondern als Entlastung: Wer nicht will, ist in bester Gesellschaft. Das wirkt stärker als jede Warnung.",
+          "wennEsKippt": "Kommt „Selbst schuld, wer so was schickt“, nicht sofort widersprechen, sondern fragen: Wer hat das Vertrauen gebrochen – die Person, die einem einzigen Menschen ein Bild geschickt hat, oder die, die es an alle weiterleitet? Beim Beistehen darauf zurückkommen.",
+          "blatt": "skills-nudes-erpressung"
+        },
+        {
+          "titel": "Ein Nein im Chat",
+          "dauer": 10,
+          "phase": "uebung",
+          "text": "Den Chat auf dem Blatt lesen (Aufgabe 2): Zoé drängt Yusuf, ihr ein Bild zu schicken. Jede Person schreibt Yusufs Antworten, mindestens eine davon mit einer Art, Nein zu sagen, die die Gruppe kennt – kaputte Schallplatte, Nein plus Vorschlag, Humor oder den Chat verlassen. Freiwillige lesen ihre Antworten vor. Festhalten: Ein Nein im Chat braucht keine Begründung, und blockieren ist jederzeit erlaubt.",
+          "sagen": [
+            "Ihr müsst nicht höflich bleiben, wenn jemand nicht aufhört. Blockieren ist auch eine Antwort.",
+            "Welche Antwort würde bei euch am ehesten klappen – ehrlich?"
+          ],
+          "tipp": "Dazusagen, dass ein Nein auch dann in Ordnung ist, wenn man den anderen wirklich mag: Wer einen mag, akzeptiert es. Das nimmt die Angst, die Person zu verlieren.",
+          "blatt": "skills-nudes-erpressung"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Imbiss und frische Luft, das Thema ruht. Die zweite Fachkraft achtet darauf, ob jemand still wird oder sich zurückzieht, und bietet unauffällig ein Gespräch an."
+        },
+        {
+          "titel": "Vier Ecken: Was tun, wenn …?",
+          "dauer": 19,
+          "phase": "aktiv",
+          "text": "Die Leitung liest eine Karte aus N1–N6 vor und nennt vier Möglichkeiten A bis D (Liste). Alle gehen in die Ecke, die sie wählen würden, und aus jeder besetzten Ecke begründet eine Person. Danach sagt die Leitung, was nach Einschätzung von Fachleuten am besten hilft; bei N3 und N4 kommen die Schritte bei Erpressung an die Tafel (Tabelle). Bei N4 an Lena und Mathis aus Einheit 27 erinnern: Aus Gelb kann Rot werden. Zum Schluss kreuzt jede Person auf dem Blatt an, was Luca tun sollte (Aufgabe 3).",
+          "punkte": [
+            "N1 · Die Bitte – A: ein Bild schicken, damit Ruhe ist. B: Nein sagen und das Thema wechseln. C: nicht mehr antworten. D: mit einer Freundin darüber reden. (Gut: B, C und D, auch zusammen.)",
+            "N2 · Im Klassenchat – A: nichts tun, es ist ja schon überall. B: nicht weiterleiten und schreiben: „Löscht das.“ C: einen Screenshot machen, um es später zu zeigen. D: einer Lehrperson oder dem SePAS sagen, wo das Bild aufgetaucht ist. (Gut: B und D. Das Bild nie speichern oder weitergeben, auch nicht als Beweis – Weiterleiten intimer Bilder ist strafbar.)",
+            "N3 · Das fremde Profil – A: zahlen, damit es aufhört. B: alles löschen und hoffen. C: nicht zahlen, Chat und Profil sichern, blockieren, melden, einer Vertrauensperson sagen. D: um mehr Zeit bitten und verhandeln. (Gut: C. Wer zahlt, bekommt meist neue Forderungen.)",
+            "N4 · Nach der Trennung – A: zurückkommen, damit das Foto nicht herumgeht. B: die Drohung sichern, nicht mehr antworten, Hilfe holen, Polizei 113. C: zurückdrohen. D: niemandem etwas sagen, weil es peinlich ist. (Gut: B.)",
+            "N5 · Das gebastelte Bild – A: lachen, es ist ja nicht echt. B: nicht weiterleiten, melden, Rafael beistehen. C: sich das Bild genau ansehen, um zu prüfen, ob es echt ist. D: Rafael raten, eine Weile nicht in die Schule zu kommen. (Gut: B. Auch gefälschte Bilder verletzen und dürfen nicht verbreitet werden.)",
+            "N6 · Der Anruf – A: „Warum hast du das auch geschickt?“ B: zuhören, „Du bist nicht schuld“, anbieten, gemeinsam Hilfe zu holen. C: das Bild suchen, um zu sehen, wie schlimm es ist. D: es allen erzählen, damit es jeder weiß. (Gut: B.)"
+          ],
+          "tabelle": {
+            "spalten": [
+              "Schritt bei Erpressung",
+              "Warum"
+            ],
+            "zeilen": [
+              [
+                "Nicht zahlen, nichts mehr schicken",
+                "Wer zahlt oder mehr schickt, bekommt meist neue Forderungen."
+              ],
+              [
+                "Nichts löschen: Chat, Profilname und Forderung sichern",
+                "Das sind die Beweise. Das Bild selbst nicht weiterleiten, auch nicht als Beweis."
+              ],
+              [
+                "Kontakt abbrechen: blockieren und melden",
+                "Erst sichern, dann blockieren und bei der Plattform melden."
+              ],
+              [
+                "Sofort einer Vertrauensperson sagen",
+                "Allein wird der Druck immer größer, mit Hilfe nicht."
+              ],
+              [
+                "BEE SECURE Helpline 8002 1234, Polizei 113",
+                "Fachleute kennen solche Fälle und wissen, was zu tun ist."
+              ]
+            ]
+          },
+          "sagen": [
+            "Geht in die Ecke, die ihr wirklich wählen würdet – nicht in die, von der ihr glaubt, dass ich sie hören will.",
+            "Was macht Ecke A so verlockend? Genau darauf setzen Erpresser."
+          ],
+          "tipp": "Die Ecke A (zahlen, schicken, zurückkommen) nicht belächeln: In Panik wirkt sie wie der schnellste Ausweg. Wer das offen ausspricht, kann erklären, warum sie nicht funktioniert. Lieber vier Karten gründlich als sechs im Eiltempo.",
+          "wennEsKippt": "Rennen alle in dieselbe Ecke, fragt die Leitung: Wer würde es heimlich anders machen? Bei wenig Platz oder wenig Energie zeigen alle im Sitzen mit einem bis vier Fingern, welche Möglichkeit sie wählen. Mit nur zwei Jugendlichen besprechen beide jede Karte mit der Leitung und dürfen ihr auch widersprechen.",
+          "blatt": "skills-situationskarten-liebe"
+        },
+        {
+          "titel": "Beistehen statt beschämen",
+          "dauer": 6,
+          "phase": "uebung",
+          "text": "Zurück zu N6: Samuel sagt „Ich bin so dumm.“ Auf dem Blatt die Satzanfänge ergänzen (Aufgabe 4) und zwei, drei Antworten vorlesen lassen. Festhalten: Verantwortlich ist, wer weiterleitet oder erpresst – nicht, wer einem Menschen vertraut hat. Scham will, dass Betroffene schweigen; ein Satz wie „Du bist nicht schuld“ öffnet den Weg zur Hilfe.",
+          "sagen": [
+            "Was würde Samuel jetzt am meisten helfen – ein Rat oder erst einmal jemand, der da ist?",
+            "Wer „Selbst schuld“ sagt, sorgt dafür, dass die nächste Person niemandem etwas erzählt."
+          ],
+          "tipp": "Wer die Einheit „Scham und Schuld“ erlebt hat, kennt den Unterschied: Schuld sagt „Ich habe etwas falsch gemacht“, Scham sagt „Ich bin falsch“ – und genau die Scham hält Menschen vom Hilfeholen ab.",
+          "blatt": "skills-nudes-erpressung"
+        },
+        {
+          "titel": "Skill: Tempo rausnehmen",
+          "dauer": 5,
+          "phase": "skill",
+          "text": "Erklären: Wer erpresst, macht Zeitdruck („Du hast zehn Minuten“), damit man in Panik handelt. Gegen Panik hilft zuerst der Körper. Gemeinsam üben: vier Sekunden einatmen, sechs Sekunden ausatmen, fünf Runden, dabei die Füße fest in den Boden drücken. Dann den Satz mitgeben, der danach kommt: erst atmen, dann Hilfe holen, dann handeln.",
+          "sagen": [
+            "Länger aus als ein. Das sagt dem Körper: Gerade ist keine Gefahr im Raum.",
+            "Wenn euch jemand Druck macht: erst atmen, dann Hilfe holen, dann handeln."
+          ],
+          "tipp": "An die Anspannungsskala anknüpfen: Bei 80 oder mehr denkt niemand klar. Deshalb kommt der Körper-Skill zuerst und die Entscheidung erst danach – am besten zusammen mit einer Vertrauensperson."
+        },
+        {
+          "titel": "Skills-Buch, Réckbléck zum Modul, Check-out",
+          "dauer": 12,
+          "phase": "abschluss",
+          "text": "Zuerst schreibt jede Person auf dem Blatt ihren Plan für einen Druck-Moment (Aufgabe 5). Dann füllt sie im Skills-Buch die Seite für dieses Modul: Unter „Sätze, die tragen“ kommt ihr Satz für Grenzen – einer, der die eigenen Grenzen schützt oder die von anderen achtet, aus der Liste oder ein eigener; wer mag, überträgt den Plan unter „Pläne“ und ergänzt unter „Menschen, die helfen“ eine Anlaufstelle. Danach der Réckbléck zum ganzen Modul: Jede Person nennt eine Sache aus den vier Einheiten, die sie behalten will. Zum Schluss die Anspannungszahl, der letzte Zettel für die Fragenbox, Skills-Pass mit Stempel und das Angebot für ein Nachgespräch.",
+          "punkte": [
+            "„Mein Körper, meine Bilder, meine Entscheidung.“",
+            "„Nur ein Ja ist ein Ja – bei mir und bei anderen.“",
+            "„Wer mich liebt, akzeptiert mein Nein.“",
+            "„Ich leite nichts weiter, was jemanden bloßstellt.“",
+            "„Hilfe holen ist kein Verrat.“"
+          ],
+          "sagen": [
+            "Schreibt einen Satz auf, den ihr euch in einem Jahr noch sagen wollt – für eure Grenzen oder für die von anderen.",
+            "Was nehmt ihr aus diesen vier Einheiten mit? Ein Satz reicht."
+          ],
+          "tipp": "Die Fragen aus dieser letzten Box zu Beginn der nächsten Einheit kurz beantworten, bevor das neue Modul startet. Nach der Einheit im Team besprechen, ob jemand aus der Gruppe noch ein Gespräch braucht.",
+          "blatt": "skills-buch"
+        }
+      ],
+      "bruecke": "Nächstes Mal geht es darum, wer eigentlich bestimmt, was in eurem Feed auftaucht – und wie ihr selbst mitsteuern könnt.",
+      "hintergrund": "Nach einer Auswertung von 39 Studien hat etwa jede siebte Person unter 18 schon einmal ein intimes Bild verschickt, gut jede vierte eines bekommen und etwa jede achte eines ohne Zustimmung weitergeleitet (Madigan et al., 2018). Die Mehrheit tut es also nicht – dieses Wissen entlastet mehr als Warnungen, zumal Angstappelle Verhalten kaum verändern (Peters, Ruiter & Kok, 2013). Wolak et al. (2018) beschreiben, dass Erpressung mit Bildern bei Minderjährigen oft von Bekannten oder früheren Partnern ausgeht, aber auch von Fremden, die man nur online kennt, und dass viele Betroffene aus Scham niemandem davon erzählen. Scham drängt zum Verstecken, Schuld eher zum Wiedergutmachen (Tangney & Dearing, 2002). Deshalb übt die Einheit, Betroffenen ohne Vorwurf beizustehen, und macht die Schritte bei Erpressung so vertraut, dass sie auch in Panik abrufbar sind.",
+      "quellen": [
+        "Madigan, S., Ly, A., Rash, C. L., Van Ouytsel, J. & Temple, J. R. (2018). Prevalence of multiple forms of sexting behavior among youth: A systematic review and meta-analysis. JAMA Pediatrics, 172(4), 327–335.",
+        "Peters, G.-J. Y., Ruiter, R. A. C. & Kok, G. (2013). Threatening communication: A critical re-analysis and a revised meta-analytic test of fear appeal theory. Health Psychology Review, 7(Suppl. 1), S8–S31.",
+        "Wolak, J., Finkelhor, D., Walsh, W. & Treitman, L. (2018). Sextortion of minors: Characteristics and dynamics. Journal of Adolescent Health, 62(1), 72–79.",
+        "Tangney, J. P. & Dearing, R. L. (2002). Shame and Guilt. New York: Guilford.",
+        "BEE SECURE – Initiative der luxemburgischen Regierung für ein sichereres Internet: www.bee-secure.lu"
+      ],
+      "achtung": "Intime Bilder sind für manche Jugendliche kein theoretisches Thema. Niemand wird gefragt, ob er Bilder geschickt, bekommen oder gesehen hat. Taucht ein intimes Bild einer Person unter 18 auf – im Kurs, in der Schule oder auf einem Handy –, es weder ansehen noch weiterleiten, speichern oder ausdrucken, auch nicht als Beweis; die zuständige Leitung (Responsable) sofort informieren und nach dem internen Schutzkonzept vorgehen, bei Bedarf mit der Polizei (113). Erpressung mit Bildern kann Betroffene in eine akute Krise stürzen: Bei Hinweisen darauf die Person noch am selben Tag ruhig ansprechen, zuhören, nichts versprechen, was man nicht halten kann, sie nicht allein lassen, nach dem Schutzkonzept handeln und die Responsable am selben Tag informieren; bei Hinweisen auf Suizidgedanken oder akuter Gefahr sofort handeln wie in Einheit 20 beschrieben (Notruf 112). Beschämende oder verurteilende Kommentare aus der Gruppe klar stoppen."
+    }
+  ]
+}

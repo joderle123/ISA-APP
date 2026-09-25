@@ -1,0 +1,1132 @@
+[
+  {
+    "id": "skills-buch",
+    "bereich": "skills",
+    "thema": "ankommen",
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln"
+    ],
+    "dauer": "15 Min., dann 10 Min. je Modul",
+    "eldib": [
+      "K-24",
+      "V-25",
+      "V-32"
+    ],
+    "schlagworte": [
+      "Skills-Buch",
+      "Jahresfaden",
+      "Transfer",
+      "Wenn-dann-Pläne",
+      "Unterstützung",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:notebook",
+    "verwandt": [
+      "skills-pass",
+      "skills-koffer-ampelplan",
+      "skills-kaertchen"
+    ],
+    "kurs": [
+      "j3-e01",
+      "j3-e02",
+      "j3-e05",
+      "j3-e09",
+      "j3-e13",
+      "j3-e16",
+      "j3-e20",
+      "j3-e23",
+      "j3-e26",
+      "j3-e30",
+      "j3-e32",
+      "j3-e33",
+      "j3-e35"
+    ],
+    "de": {
+      "titel": "Mein Skills-Buch",
+      "untertitel": "Was bei dir wirklich wirkt – gesammelt für die Zeit nach dem Kurs. Mit jedem Modul kommt eine Seite dazu.",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Im Skills-Kurs probierst du viel aus. In dieses Buch kommt nur, was bei dir wirklich wirkt – in vier Rubriken: Lieblingsskills, Pläne, Sätze, die tragen, und Menschen, die helfen. So findest du es auch nach dem Kurs noch: im Lycée, in der Ausbildung, zu Hause."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Gestalte dein Deckblatt: Gib deinem Buch einen Namen und zeichne ein Zeichen, das zu dir und deinem Weg passt.",
+          "hinweis": "Ein Symbol, ein Wort, ein Muster oder ein aufgeklebtes Foto – es muss nur dir gefallen."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "feld",
+              "label": "Mein Zeichen",
+              "zeichnen": true,
+              "hoehe": 6.4
+            }
+          ],
+          "rechts": [
+            {
+              "art": "satzanfaenge",
+              "items": [
+                "Mein Buch heißt: …"
+              ],
+              "linien": 2
+            },
+            {
+              "art": "satzanfaenge",
+              "items": [
+                "Im Juni will ich sagen können: …"
+              ],
+              "linien": 3
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Inhalt: Trag jedes Blatt aus den Einheiten ein, das du in dein Buch aufnimmst.",
+          "hinweis": "Die Rubrikenseiten brauchen keinen Eintrag – sie stehen nach Modulen sortiert im Buch."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Nr.",
+            "Blatt",
+            "aus dem Modul",
+            "Datum"
+          ],
+          "breiten": [
+            0.45,
+            2.7,
+            1.6,
+            0.85
+          ],
+          "zeilen": 9,
+          "nummern": 1,
+          "beispiel": [
+            "z. B.",
+            "Mein Skills-Radar und zwei Ziele",
+            "Ankommen",
+            "Sept."
+          ]
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Am Ende jedes Moduls: Was davon willst du in fünf Jahren noch wissen? Trag es hier ein.",
+          "hinweis": "Für jedes Modul gibt es eine neue Seite. Nicht jedes Feld muss voll werden – lieber ein guter Eintrag als vier halbe."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Modul: …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "feld",
+              "label": "Lieblingsskills – was mir wirklich hilft und wie es geht",
+              "beispiel": "Kastenatmung: 4 Sekunden ein, 4 halten, 4 aus, 4 halten. Hilft mir vor Tests.",
+              "hoehe": 10.4
+            },
+            {
+              "art": "feld",
+              "label": "Sätze, die tragen – was ich mir in schweren Momenten sage",
+              "beispiel": "Ein schwerer Moment ist noch kein schweres Leben.",
+              "hoehe": 10.4
+            }
+          ],
+          "rechts": [
+            {
+              "art": "feld",
+              "label": "Pläne – Wenn …, dann … für Momente, die ich kenne",
+              "beispiel": "Wenn mich im Praktikum jemand vor allen kritisiert, dann atme ich aus und frage, was ich anders machen soll.",
+              "hoehe": 10.4
+            },
+            {
+              "art": "feld",
+              "label": "Menschen, die helfen – wer, wobei und wie ich sie erreiche",
+              "beispiel": "Tante Sofia, wenn es zu Hause kracht: anrufen, auch abends. Kanner- a Jugendtelefon: 116 111",
+              "hoehe": 10.4
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Du entscheidest, was du teilst.",
+          "text": "Dein Buch gehört dir. Die Leitung liest nur, was du ihr zeigst. Bis Juni bleibt es im Raum, damit nichts verloren geht."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen legen im letzten Kursjahr ein eigenes Skills-Buch an und ergänzen es am Ende jedes Moduls – eine Sammlung aus Skills, Plänen, Sätzen und Menschen, die über den Kurs hinaus trägt.",
+        "ablauf": [
+          "Einheit 1 (15 Min.): Ringbücher austeilen, das Buch der Leitung zeigen, Seite 1 gestalten. Den Juni-Satz nicht vorlesen lassen.",
+          "Die erste Rubrikenseite beginnen: ein Skill, der schon hilft. Neue tragen ein, was ihnen ohne Kurs hilft.",
+          "Am Ende jedes Moduls (10 Min.): Seite 2 neu kopieren und ausfüllen. Nicht jede Rubrik muss voll werden.",
+          "Blätter, die jemand behalten will, kommen dazu und stehen im Inhalt auf Seite 1.",
+          "Abschlussmodul: Buch durchsehen, Lücken füllen, mitnehmen."
+        ],
+        "hintergrund": "Gelerntes muss im Alltag abrufbar sein, sonst verblasst es, wenn die Gruppe endet. Das DBT-Skillstraining für Jugendliche hält Skills deshalb schriftlich fest und fragt regelmäßig nach ihrem Einsatz (Rathus & Miller, 2015). Die Rubrik „Pläne“ nutzt Wenn-dann-Pläne, die die Umsetzung von Vorsätzen deutlich verbessern (Gollwitzer, 1999). „Menschen, die helfen“ folgt dem Sicherheitsplan nach Stanley und Brown (2012): Hilfe wird konkret, mit Namen und Weg. Wer sein Buch selbst füllt, sieht schwarz auf weiß, was er schon kann – eine Quelle von Selbstwirksamkeit (Bandura, 1977).",
+        "quellen": [
+          "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503.",
+          "Stanley, B. & Brown, G. K. (2012). Safety planning intervention: A brief intervention to mitigate suicide risk. Cognitive and Behavioral Practice, 19(2), 256–264.",
+          "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215."
+        ],
+        "differenzierung": {
+          "leichter": "Pro Modul nur eine Rubrik; wer ungern schreibt, diktiert oder klebt Kärtchen ein.",
+          "schwerer": "Zu jedem Skill notieren, bis zu welcher Anspannung (0–100) er wirkt."
+        },
+        "impulse": [
+          "Was aus diesem Modul willst du in fünf Jahren noch wissen?",
+          "Welcher Satz hat dir zuletzt wirklich geholfen?"
+        ],
+        "tipps": [
+          "Seite 1 auf festem Papier, Seite 2 je Modul neu kopieren; Klarsichthüllen helfen.",
+          "Die Leitung führt selbst ein Buch – mit echten, nicht perfekten Einträgen."
+        ],
+        "achtung": "Persönlich: nicht einsammeln, nicht vorlesen, nicht bewerten. Bei Hinweisen auf Selbstverletzung, Gewalt oder Suizidgedanken: Einzelgespräch, Responsable informieren, Schutzkonzept.",
+        "material": "Ringbuch A4, Klarsichthüllen"
+      }
+    }
+  },
+  {
+    "id": "skills-radar",
+    "bereich": "skills",
+    "thema": "ankommen",
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "30–35 Min.",
+    "eldib": [
+      "K-19",
+      "K-20",
+      "V-22"
+    ],
+    "schlagworte": [
+      "Standortbestimmung",
+      "Selbsteinschätzung",
+      "Fremdeinschätzung",
+      "Stärken",
+      "Lernfelder",
+      "Jahresziele",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:map-pin",
+    "verwandt": [
+      "skills-laut-und-leise",
+      "mein-staerkenprofil",
+      "woop-plan"
+    ],
+    "kurs": [
+      "j3-e02",
+      "j3-e33"
+    ],
+    "de": {
+      "titel": "Mein Skills-Radar",
+      "untertitel": "Wo stehe ich – und wohin will ich bis Juni?",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Das Radar zeigt dein Profil: wo du schon sicher bist und wo du noch wachsen kannst. Niemand ist überall bei 5. Es ist eine Momentaufnahme, kein Zeugnis."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wie gut gelingt dir das im Moment? Setz in jeder Zeile ein Kreuz und verbinde die Kreuze zu einer Linie.",
+          "hinweis": "Denk an die letzten Wochen, nicht an deinen besten oder schlechtesten Tag. 1 = gelingt mir kaum, 5 = gelingt mir fast immer."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "items": [
+            "Gefühle erkennen: Ich merke früh, was ich fühle, und finde ein Wort dafür.",
+            "Runterkommen: Wenn es mir zu viel wird, bringe ich meine Anspannung selbst wieder nach unten.",
+            "Gedanken prüfen: Einen fiesen Gedanken über mich prüfe ich, statt ihn einfach zu glauben.",
+            "Sagen, was ich brauche: Ich sage es klar und ruhig, ohne Vorwurf.",
+            "Nein sagen: Ich bleibe bei meinem Nein, auch wenn andere drängen.",
+            "Streit klären: Ich spreche einen Konflikt an, ohne dass er eskaliert.",
+            "Für mich sorgen: Schlaf, Essen, Pausen und Bewegung kriege ich meistens hin.",
+            "Hilfe holen: Wenn ich allein nicht weiterkomme, frage ich jemanden."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Blick von außen: Gib dein Blatt einer Person aus der Gruppe. Sie malt einen Stern neben die zwei Bereiche, in denen sie dich stark erlebt.",
+          "hinweis": "Nur Stärken, keine Kritik. Wer dich noch nicht lange kennt, schreibt auf, was ihm heute an dir aufgefallen ist."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Ich habe gesehen, wie du …"
+          ],
+          "linien": 3
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Stärken und Lernfelder: Was fällt dir auf, wenn du deine Linie und die Sterne anschaust?"
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "feld",
+              "label": "Meine Stärken – hier bin ich schon sicher",
+              "beispiel": "Runterkommen: Ich gehe raus, bevor ich laut werde.",
+              "hoehe": 5.4
+            }
+          ],
+          "rechts": [
+            {
+              "art": "feld",
+              "label": "Meine Lernfelder – hier will ich wachsen",
+              "beispiel": "Nein sagen, vor allem in der Clique",
+              "hoehe": 5.4
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Ein Ziel, das trägt …",
+          "punkte": [
+            "hängt von dir ab – nicht davon, dass andere sich ändern,",
+            "sagt, was du tun willst, nicht, was du lassen willst,",
+            "ist so konkret, dass man sehen kann, ob es klappt,",
+            "ist bis Juni machbar, wenn du dranbleibst."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Zwei Ziele für dein Jahr: eins aus deinen Lernfeldern, eins aus dem Jahresweg.",
+          "hinweis": "Zum Beispiel: im Praktikum nachfragen, wenn ich etwas nicht verstehe – oder einen Monat lang mein Geld einteilen."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "satzanfaenge",
+              "items": [
+                "Ziel 1 – bis Juni will ich …"
+              ],
+              "linien": 3
+            },
+            {
+              "art": "satzanfaenge",
+              "items": [
+                "Daran merke ich es: …",
+                "Mein erster Schritt: …"
+              ],
+              "linien": 2
+            },
+            {
+              "art": "satzanfaenge",
+              "items": [
+                "Dabei hilft mir: …"
+              ],
+              "linien": 1
+            }
+          ],
+          "rechts": [
+            {
+              "art": "satzanfaenge",
+              "items": [
+                "Ziel 2 – bis Juni will ich …"
+              ],
+              "linien": 3
+            },
+            {
+              "art": "satzanfaenge",
+              "items": [
+                "Daran merke ich es: …",
+                "Mein erster Schritt: …"
+              ],
+              "linien": 2
+            },
+            {
+              "art": "satzanfaenge",
+              "items": [
+                "Dabei hilft mir: …"
+              ],
+              "linien": 1
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Du entscheidest, was du teilst.",
+          "text": "Dein Radar gehört dir. Heb es in deinem Skills-Buch auf – am Ende des Jahres lohnt ein zweiter Blick."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen schätzen sich in acht Skill-Bereichen ein, bekommen einen Blick von außen auf ihre Stärken, benennen Stärken und Lernfelder und formulieren zwei Ziele für das Kursjahr.",
+        "ablauf": [
+          "Einführung (6 Min.): die acht Bereiche mit Beispielen erklären, das eigene Radar zeigen – mit einer ehrlichen 2.",
+          "Aufgabe 1 (8 Min.) allein. Neue denken an Schule, Familie und Freunde statt an den Kurs.",
+          "Aufgabe 2 (5 Min.) zu zweit: Paare bestimmt die Leitung, nur Stärken. Bei Neuen übernimmt die Leitung.",
+          "Aufgabe 3 (4 Min.): Linie und Sterne vergleichen.",
+          "Nach dem Radar am Boden: Aufgabe 4 (8 Min.). Prüfen: Hängt es von dir ab? Kann man es sehen? Bis Juni machbar?"
+        ],
+        "hintergrund": "Eine Standortbestimmung am Jahresanfang macht Fortschritt später sichtbar und knüpft Ziele an echte Lernfelder. Selbst- und Fremdbild weichen oft voneinander ab; das Johari-Fenster erklärt, warum andere Seiten sehen, die man selbst übersieht (Luft & Ingham, 1955). Der Blick von außen lässt bewusst nur Stärken zu: Rückmeldungen wirken, wenn sie sich auf beobachtbares Verhalten beziehen, und helfen kaum, wenn sie die Person bewerten (Hattie & Timperley, 2007). Selbst gewählte Ziele werden ausdauernder verfolgt (Deci & Ryan, 2000), und ein festgelegter erster Schritt erhöht die Wahrscheinlichkeit, dass es losgeht (Gollwitzer, 1999).",
+        "quellen": [
+          "Luft, J. & Ingham, H. (1955). The Johari window, a graphic model of interpersonal awareness. Proceedings of the Western Training Laboratory in Group Development. Los Angeles: University of California.",
+          "Hattie, J. & Timperley, H. (2007). The power of feedback. Review of Educational Research, 77(1), 81–112.",
+          "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "differenzierung": {
+          "leichter": "Nur die vier wichtigsten Bereiche einschätzen; ein Ziel statt zwei.",
+          "schwerer": "Zu jedem Ziel ein inneres Hindernis und einen Wenn-dann-Plan notieren (Toolbox-Blatt „Ziele erreichen mit WOOP“)."
+        },
+        "impulse": [
+          "Wo würden dich deine Freunde weiter außen sehen als du dich selbst?",
+          "Welcher Bereich würde dir im Praktikum am meisten helfen?"
+        ],
+        "tipps": [
+          "Ziele, die andere ändern sollen, umformulieren lassen: Was kannst du selbst tun?",
+          "Das Blatt kommt ins Skills-Buch; im Juni lohnt ein zweites Radar zum Vergleich."
+        ],
+        "achtung": "Sehr niedrige Werte oder Selbstabwertung nur unter vier Augen ansprechen. Verletzendes sofort stoppen. Bei anhaltender Niedergeschlagenheit SePAS oder Responsable einbeziehen.",
+        "material": "Stifte in zwei Farben"
+      }
+    }
+  },
+  {
+    "id": "skills-werte-auktion",
+    "bereich": "skills",
+    "thema": "werte",
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "gruppe"
+    ],
+    "dauer": "20–25 Min.",
+    "eldib": [
+      "SOZ-35",
+      "KOG-55",
+      "K-33"
+    ],
+    "schlagworte": [
+      "Werte",
+      "Werte-Auktion",
+      "Prioritäten",
+      "Entscheidungen",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:cash",
+    "verwandt": [
+      "skills-meine-werte"
+    ],
+    "kurs": [
+      "j3-e03"
+    ],
+    "de": {
+      "titel": "Die Werte-Auktion",
+      "untertitel": "1000 Taler, zwölf Lose – wofür bietest du, und worauf verzichtest du?",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "So läuft die Auktion",
+          "punkte": [
+            "Du hast 1000 Taler. Mehr gibt es nicht: keine Kredite, kein Zusammenlegen.",
+            "Jedes Los startet bei 50 Talern. Geboten wird in Schritten von 50 – aufstehen und laut rufen.",
+            "Wer am meisten bietet, bekommt das Los. Die Bank streicht den Preis von deinem Konto."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Lies die zwölf Lose. Kreuze die drei an, die du unbedingt haben willst.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "items": [
+            "1 · Eine Freundschaft, die ein Leben lang hält",
+            "2 · Ein Jahr lang reisen, wohin du willst",
+            "3 · In einer Sache richtig gut sein – und alle wissen es",
+            "4 · 500 000 Euro auf dem Konto",
+            "5 · Eine Familie, auf die du dich immer verlassen kannst",
+            "6 · Eine Welt ohne Rassismus und Ausgrenzung",
+            "7 · Ein Jahr lang nur tun, worauf du Lust hast",
+            "8 · Selbst entscheiden, was du lernst und wie du lebst",
+            "9 · Feste, Sprache und Bräuche deiner Familie weitergeben",
+            "10 · Nie Ärger bekommen – mit Schule, Eltern oder Chef",
+            "11 · 100 000 Follower, die jeden Post feiern",
+            "12 · Gesund bleiben – du und alle, die du liebst"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Plane dein Geld: Wie viel bietest du für deine drei Lose höchstens?",
+          "hinweis": "Zusammen höchstens 1000 Taler. Überleg auch: Was tust du, wenn ein anderes Los plötzlich billig zu haben ist?"
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Los",
+            "Höchstens",
+            "Ersteigert? Für wie viel?"
+          ],
+          "breiten": [
+            0.8,
+            1.2,
+            2.4
+          ],
+          "zeilen": 3,
+          "beispiel": [
+            "Nr. 8",
+            "400 Taler",
+            "ja, für 350 Taler"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Nach der Auktion: Schau auf dein Ergebnis."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Am meisten geboten habe ich für …",
+            "Verzichten musste ich auf …",
+            "Das hat mich an mir überrascht: …",
+            "Hinter meinem teuersten Gebot steckt der Wert …"
+          ],
+          "linien": 1
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen erleben in einem Spiel mit begrenztem Budget, wofür sie sich entscheiden und worauf sie verzichten, und erkennen die Werte hinter ihren Geboten.",
+        "ablauf": [
+          "Vorab eine Bank bestimmen: Flipchart mit allen Namen und je 1000 Talern.",
+          "Planen (3 Min.): Aufgabe 1 und 2 still; die Pläne bleiben geheim.",
+          "Versteigern (12 Min.): Startgebot 50, Schritte von 50, geboten wird im Stehen. Jedes Los kurz wirken lassen.",
+          "Auswerten (6 Min.): Aufgabe 3 allein, dann Runde: Was gekauft, worauf verzichtet?",
+          "Auflösung: 1 Fürsorge, 2 Abwechslung, 3 Erfolg, 4 Macht, 5 Sicherheit, 6 Gerechtigkeit, 7 Genuss, 8 Selbstbestimmung, 9 Tradition, 10 Anpassung, 11 Macht, 12 Sicherheit."
+        ],
+        "hintergrund": "Werte zeigen sich weniger in dem, was man sagt, als darin, wofür man knappe Mittel einsetzt. Mit 1000 Talern lässt sich nicht alles haben – jedes Gebot ist zugleich eine Entscheidung gegen etwas anderes. Nach der Werteklärung wird ein Wert erst durch freie Wahl zwischen Alternativen, Bejahen und Handeln zum eigenen (Simon, Howe & Kirschenbaum, 1972); die Auktion erzwingt diese Wahl. Die Lose decken die zehn Grundwerte nach Schwartz (1992) ab; Macht und Sicherheit kommen zweimal vor, weil Geld, Ansehen und Gesundheit Jugendliche besonders beschäftigen. Oft passen zu einem Los zwei Werte – das ist Stoff für das Gespräch. Für Erikson (1968) gehört es zur Identitätsentwicklung, sich an eigene Werte zu binden, statt sie nur zu übernehmen.",
+        "quellen": [
+          "Simon, S. B., Howe, L. W. & Kirschenbaum, H. (1972). Values Clarification: A Handbook of Practical Strategies for Teachers and Students. New York: Hart.",
+          "Schwartz, S. H. (1992). Universals in the content and structure of values: Theoretical advances and empirical tests in 20 countries. Advances in Experimental Social Psychology, 25, 1–65.",
+          "Erikson, E. H. (1968). Identity: Youth and Crisis. New York: Norton."
+        ],
+        "differenzierung": {
+          "leichter": "Nur acht Lose versteigern; die Leitung erklärt jedes Los.",
+          "schwerer": "Die Gruppe erfindet ein dreizehntes Los, ordnet es einem Wert zu und versteigert es zum Schluss."
+        },
+        "impulse": [
+          "Hast du geboten, weil du das Los wolltest – oder weil du gewinnen wolltest?",
+          "Welches Los hätte vor drei Jahren bei dir gewonnen?"
+        ],
+        "tipps": [
+          "Einen Kochlöffel als Hammer nehmen und den Auktionator mit Schwung spielen.",
+          "Mit nur zwei Jugendlichen bietet die Leitung mit eigenem Konto mit."
+        ],
+        "achtung": "Geld kann ein wunder Punkt sein: nicht nach echten Wünschen oder Verhältnissen fragen. Lösen „Familie“ oder „Gesund bleiben“ etwas aus, später ein Gespräch anbieten; bei Hinweisen auf Belastung Responsable informieren.",
+        "material": "Flipchart für die Bank, Kochlöffel"
+      }
+    }
+  },
+  {
+    "id": "skills-meine-werte",
+    "bereich": "skills",
+    "thema": "werte",
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln"
+    ],
+    "dauer": "20 Min. und eine Woche",
+    "eldib": [
+      "SOZ-35",
+      "K-34",
+      "SOZ-39"
+    ],
+    "schlagworte": [
+      "Werte",
+      "Werte-Kreis",
+      "Top 3",
+      "Identität",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:star",
+    "verwandt": [
+      "skills-werte-auktion",
+      "skills-identitaets-blume"
+    ],
+    "kurs": [
+      "j3-e03"
+    ],
+    "de": {
+      "titel": "Meine Werte",
+      "untertitel": "Zehn Werte, die es in fast allen Kulturen gibt – und welche davon bei dir ganz oben stehen",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Werte sieht man nicht. Man sieht nur, wofür jemand Zeit, Geld und Mut einsetzt. Jeder Mensch trägt alle zehn in sich – nur unterschiedlich stark."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schneide die Karten aus und leg sie in eine Reihe: oben der Wert, der dir am wichtigsten ist, unten der, der dir am wenigsten bedeutet.",
+          "hinweis": "Auf die leeren Karten darfst du Werte schreiben, die dir fehlen – zum Beispiel Humor oder Glaube.",
+          "symbole": [
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 4,
+          "hoehe": 118,
+          "karten": [
+            {
+              "titel": "Selbstbestimmung",
+              "text": "selbst entscheiden, eigene Wege gehen",
+              "bild": "icon:arrow-fork"
+            },
+            {
+              "titel": "Abwechslung",
+              "text": "Neues erleben, etwas wagen, Abenteuer",
+              "bild": "icon:rocket"
+            },
+            {
+              "titel": "Genuss",
+              "text": "Spaß haben, das Leben genießen",
+              "bild": "icon:confetti"
+            },
+            {
+              "titel": "Erfolg",
+              "text": "etwas richtig gut können, Ziele erreichen",
+              "bild": "icon:trophy"
+            },
+            {
+              "titel": "Macht",
+              "text": "Einfluss, Geld, Ansehen, das Sagen haben",
+              "bild": "icon:crown"
+            },
+            {
+              "titel": "Sicherheit",
+              "text": "ein sicheres Zuhause, Gesundheit, Ordnung",
+              "bild": "icon:shield"
+            },
+            {
+              "titel": "Anpassung",
+              "text": "Regeln einhalten, Rücksicht nehmen, nicht anecken",
+              "bild": "icon:traffic-lights"
+            },
+            {
+              "titel": "Tradition",
+              "text": "Bräuche, Glaube und Herkunft ehren und weitergeben",
+              "bild": "icon:candle"
+            },
+            {
+              "titel": "Fürsorge",
+              "text": "für Familie und Freunde da sein, ehrlich und treu",
+              "bild": "icon:heart-handshake"
+            },
+            {
+              "titel": "Gerechtigkeit",
+              "text": "gleiche Rechte für alle, Natur schützen, Toleranz",
+              "bild": "icon:world"
+            },
+            {
+              "titel": "Mein Wert"
+            },
+            {
+              "titel": "Mein Wert"
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Der Werte-Kreis",
+          "text": "Die zehn Werte bilden einen Kreis. Nachbarn vertragen sich, Gegenüber ziehen in verschiedene Richtungen: „Offen für Neues“ gegen „Bewahren“, „Stark sein“ gegen „Für andere da sein“.",
+          "punkte": [
+            "Offen für Neues: Selbstbestimmung, Abwechslung, Genuss",
+            "Stark sein: Erfolg, Macht",
+            "Bewahren: Sicherheit, Anpassung, Tradition",
+            "Für andere da sein: Fürsorge, Gerechtigkeit"
+          ]
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Deine Top 3: Welche drei Werte liegen ganz oben? Woran erkennt man sie in deinem Alltag?",
+          "hinweis": "Schreib auf, was du tust – nicht, was du gut findest."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Nr.",
+            "Mein Wert",
+            "Daran erkennt man ihn bei mir"
+          ],
+          "breiten": [
+            0.45,
+            1.3,
+            3.6
+          ],
+          "zeilen": 3,
+          "nummern": 1,
+          "beispiel": [
+            "z. B.",
+            "Fürsorge",
+            "Ich bringe meinen kleinen Bruder jeden Morgen zum Bus, auch wenn ich spät dran bin."
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Mein Werte-Satz für das Skills-Buch: Mir ist wichtig, dass …"
+          ],
+          "linien": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wenn zwei Werte sich streiten: Denk an eine Zwickmühle, die du kennst.",
+          "hinweis": "Zum Beispiel: Party oder Versprechen? Clique oder Gerechtigkeit?"
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Diese zwei Werte ziehen bei mir in verschiedene Richtungen: …",
+            "Dann hilft mir die Frage: …"
+          ],
+          "linien": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Werte-Woche: Wann handelst du nach einem deiner drei Werte? Mal an diesem Tag einen Stern aus.",
+          "hinweis": "Kleine Momente zählen: jemandem helfen, ehrlich sein, etwas Neues ausprobieren."
+        },
+        {
+          "art": "plan",
+          "tage": [
+            "Mo",
+            "Di",
+            "Mi",
+            "Do",
+            "Fr",
+            "Sa",
+            "So"
+          ],
+          "zeilen": [
+            "",
+            "",
+            ""
+          ],
+          "symbol": "stern"
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Du entscheidest, was du teilst.",
+          "text": "Deine Reihenfolge gehört dir. Karten und Top 3 kommen in dein Skills-Buch."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen lernen zehn Grundwerte nach Schwartz kennen, ordnen sie nach eigener Wichtigkeit, benennen ihre Top 3 mit Beispielen aus dem Alltag und beobachten eine Woche lang, wann sie danach handeln.",
+        "ablauf": [
+          "Seite 1 einseitig kopieren. Während der Werte-Kreis erklärt wird, schneiden alle die Karten aus.",
+          "Nach der Auktion (4 Min.): Karten in eine Reihe legen und mit der Auktion vergleichen.",
+          "Aufgabe 2 (6 Min.): Top 3 mit Beispielen – was tust du, woran man es sieht?",
+          "Aufgabe 3 als Zusatz; Aufgabe 4 läuft bis zur nächsten Einheit.",
+          "Karten im Umschlag ins Skills-Buch."
+        ],
+        "hintergrund": "Schwartz (1992) beschreibt zehn Grundwerte, die in Befragungen aus 20 Ländern wiederkehren und einen Kreis bilden: Benachbarte Werte ergänzen sich, gegenüberliegende stehen in Spannung. Die Karten übersetzen jugendnah: Abwechslung steht für Stimulation, Genuss für Hedonismus, Erfolg für Leistung, Anpassung für Konformität, Fürsorge für Benevolenz, Gerechtigkeit für Universalismus. Werte als selbst gewählte Richtungen zu verstehen, an denen man sein Handeln ausrichtet, stammt aus der Akzeptanz- und Commitment-Therapie (Hayes et al., 2012).",
+        "quellen": [
+          "Schwartz, S. H. (1992). Universals in the content and structure of values: Theoretical advances and empirical tests in 20 countries. Advances in Experimental Social Psychology, 25, 1–65.",
+          "Hayes, S. C., Strosahl, K. D. & Wilson, K. G. (2012). Acceptance and Commitment Therapy: The Process and Practice of Mindful Change (2nd ed.). New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Nur die Top 3 heraussuchen; die Beispiele im Gespräch mit der Leitung finden.",
+          "schwerer": "Reihe, Auktion und eine Entscheidung der letzten Woche vergleichen: Passen Sagen und Tun zusammen?"
+        },
+        "impulse": [
+          "Welcher Wert hätte vor drei Jahren bei dir ganz oben gelegen?",
+          "Woran würde jemand, der dich eine Woche begleitet, deine Top 3 erkennen?"
+        ],
+        "tipps": [
+          "Die Leitung legt ihre eigene Reihe offen – mit einem Wert, der ihr schwerfällt.",
+          "Genuss liegt im Kreis zwischen „Offen für Neues“ und „Stark sein“."
+        ],
+        "achtung": "Die Reihenfolge ist privat. Abwertendes über Religion oder Herkunft sofort stoppen. Bei Hinweisen auf Zwang oder Gewalt in der Familie: Schutzkonzept, Responsable informieren.",
+        "material": "Scheren, Umschläge"
+      }
+    }
+  },
+  {
+    "id": "skills-identitaets-blume",
+    "bereich": "skills",
+    "thema": "werte",
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "25–30 Min.",
+    "eldib": [
+      "SOZ-40",
+      "SOZ-38",
+      "SOZ-31"
+    ],
+    "schlagworte": [
+      "Identität",
+      "Rollen",
+      "Mehrsprachigkeit",
+      "Herkunft",
+      "Zukunft",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:flower",
+    "verwandt": [
+      "skills-meine-werte",
+      "skills-vorbilder"
+    ],
+    "kurs": [
+      "j3-e04"
+    ],
+    "de": {
+      "titel": "Meine Identitäts-Blume",
+      "untertitel": "Wer bin ich – im Lycée, zu Hause, online, in mehreren Sprachen? Und wer will ich sein?",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Identität ist die Antwort auf die Frage: Wer bin ich? Mit 15 oder 16 ist sie nicht fertig – du probierst aus, wählst, verwirfst. Im Lycée bist du anders als zu Hause oder online, und trotzdem bist du immer du."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Deine Identitäts-Blume: Schreib in jedes Blütenblatt, was in diesem Bereich zu dir gehört.",
+          "hinweis": "Stichworte reichen. Die Blätter sind Angebote – lass frei, was du nicht ausfüllen möchtest."
+        },
+        {
+          "art": "mindmap",
+          "mitte": "Ich",
+          "aeste": [
+            "Sprachen und Kulturen",
+            "Menschen, die zu mir gehören",
+            "Lycée, Arbeit, Praktikum",
+            "Freundeskreis",
+            "Online",
+            "Was ich gern mache"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Was sonst noch zu mir gehört: …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Gegeben oder gewählt? Was wurde dir mitgegeben – und was hast du dir selbst ausgesucht?",
+          "hinweis": "Manches ist beides: Die Sprache hast du von deiner Familie – wie du sie benutzt, entscheidest du."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "feld",
+              "label": "Mitgegeben",
+              "beispiel": "meine Sprachen, mein Name, das Dorf meiner Großeltern",
+              "hoehe": 6.4
+            }
+          ],
+          "rechts": [
+            {
+              "art": "feld",
+              "label": "Selbst gewählt",
+              "beispiel": "Basketball, meine Musik, wie ich mich anziehe",
+              "hoehe": 6.4
+            }
+          ]
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ein Tag, viele Rollen: Wer bist du wann – und in welcher Sprache?",
+          "hinweis": "Nimm einen normalen Schultag. Das Symbol im Kästchen darfst du selbst zeichnen."
+        },
+        {
+          "art": "tagesplan",
+          "zeilen": [
+            {
+              "zeit": "7:00",
+              "bild": "icon:home",
+              "text": "Beispiel: große Schwester in der Küche – Portugiesisch"
+            }
+          ],
+          "leer": 5
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wer willst du sein? Ergänze die Sätze."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Das soll an mir so bleiben: …",
+            "Das soll an mir wachsen: …",
+            "Mit 21 möchte ich jemand sein, der …"
+          ],
+          "linien": 2
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Du entscheidest, was du teilst.",
+          "text": "Deine Blume gehört dir. Du erzählst nur, was du erzählen möchtest – ein leeres Blatt ist auch eine Antwort."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen beschreiben mit der Identitäts-Blume, was in verschiedenen Lebensbereichen zu ihnen gehört, unterscheiden Gegebenes und Gewähltes, erkennen ihre Rollen im Tagesverlauf und formulieren, wer sie sein wollen.",
+        "ablauf": [
+          "Einstieg (10 Min.): Tafelbild mit Aylins Tag. Frage: Welche Aylin ist die echte?",
+          "Aufgabe 1 und 2 allein (15 Min.), dann zu zweit von einem selbst gewählten Blütenblatt erzählen (5 Min.).",
+          "Aufgabe 3 als Zusatz für Schnelle oder zu Hause.",
+          "Nach dem kurzen Zeitsprung: Aufgabe 4 (7 Min.), nicht vorlesen lassen. Die Blume kommt ins Skills-Buch."
+        ],
+        "hintergrund": "Nach Erikson (1968) ist die Suche nach Identität die zentrale Aufgabe des Jugendalters: Rollen ausprobieren, Werte prüfen, sich binden. Harter (2012) beschreibt, dass Jugendliche sich je nach Umfeld unterschiedlich erleben und diese Widersprüche in der mittleren Jugend verunsichern. „Gegeben oder gewählt?“ greift Marcia (1966) auf: übernommene oder selbst erkundete Festlegungen. Aufgabe 4 nutzt „mögliche Selbste“, die dem Handeln Richtung geben (Markus & Nurius, 1986). Mehrere Sprachen und Kulturen gehören für viele Jugendliche in Luxemburg dazu; Übungen zu vielfältigen Zugehörigkeiten sind in der Menschenrechtsbildung verbreitet (Council of Europe, 2012).",
+        "quellen": [
+          "Erikson, E. H. (1968). Identity: Youth and Crisis. New York: Norton.",
+          "Harter, S. (2012). The Construction of the Self (2nd ed.). New York: Guilford.",
+          "Marcia, J. E. (1966). Development and validation of ego-identity status. Journal of Personality and Social Psychology, 3(5), 551–558.",
+          "Markus, H. & Nurius, P. (1986). Possible selves. American Psychologist, 41(9), 954–969.",
+          "Council of Europe (2012). Compass: Manual for Human Rights Education with Young People (2nd ed.). Strasbourg: Council of Europe Publishing."
+        ],
+        "differenzierung": {
+          "leichter": "Nur vier Blütenblätter, Stichworte statt Sätze; die Leitung schreibt auf Wunsch mit.",
+          "schwerer": "Zu zwei Blütenblättern notieren, wie sie sich in den letzten drei Jahren verändert haben."
+        },
+        "impulse": [
+          "Welches Blütenblatt würdest du einer neuen Freundin zuerst zeigen – und welches zuletzt?",
+          "In welcher Sprache bist du am meisten du selbst?"
+        ],
+        "tipps": [
+          "Die Leitung zeigt eine eigene Blume mit einem leeren Blatt – das erlaubt Lücken.",
+          "„Menschen, die zu mir gehören“ ausdrücklich für Freunde, Betreuer und Haustiere öffnen."
+        ],
+        "achtung": "Nichts vorlesen, einsammeln oder nachfragen. Bei Hinweisen auf Diskriminierung, Gewalt oder Hoffnungslosigkeit: Einzelgespräch, Responsable informieren, Schutzkonzept.",
+        "material": "Buntstifte"
+      }
+    }
+  },
+  {
+    "id": "skills-vorbilder",
+    "bereich": "skills",
+    "thema": "werte",
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "30–35 Min.",
+    "eldib": [
+      "SOZ-28",
+      "K-34",
+      "V-30"
+    ],
+    "schlagworte": [
+      "Vorbilder",
+      "Social Media",
+      "Influencer",
+      "Medienkompetenz",
+      "Verantwortung",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:users",
+    "verwandt": [
+      "skills-identitaets-blume",
+      "skills-social-media-check",
+      "mein-handy-und-ich"
+    ],
+    "kurs": [
+      "j3-e05"
+    ],
+    "de": {
+      "titel": "Vorbilder – echt oder inszeniert?",
+      "untertitel": "Wer prägt dich, was schaust du dir ab – und für wen bist du selbst ein Vorbild?",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Vorbild heißt nicht perfekt. Ein Vorbild ist jemand, bei dem du dir etwas abschaust: eine Haltung, einen Satz, eine Art, mit Stress umzugehen. Manche kennst du persönlich, andere nur vom Bildschirm."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wer prägt dich? Schreib Menschen in die Ringe: innen, wen du persönlich kennst – außen, wen du nur aus Medien kennst.",
+          "hinweis": "Initialen oder Spitznamen reichen."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "zielscheibe",
+              "ringe": [
+                "kenne ich nur aus Medien",
+                "kenne ich vom Sehen",
+                "kenne ich persönlich"
+              ],
+              "mitte": "ich"
+            }
+          ],
+          "rechts": [
+            {
+              "art": "aufgabe",
+              "text": "Was schaust du dir bei zwei dieser Menschen ab?"
+            },
+            {
+              "art": "satzanfaenge",
+              "items": [
+                "Bei … schaue ich mir ab, wie …",
+                "Bei … schaue ich mir ab, wie …"
+              ],
+              "linien": 3
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Der Vorbild-Check: Nimm ein Vorbild aus dem äußeren Ring und prüfe, was du wirklich über die Person weißt."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "ja",
+            "teils",
+            "nein",
+            "weiß nicht"
+          ],
+          "items": [
+            "Ich kenne die Person auch aus echten Situationen, nicht nur aus Clips.",
+            "Sie zeigt auch Fehler, Mühe und schlechte Tage – nicht nur Ergebnisse.",
+            "Sie verdient kein Geld damit, dass ich ihr folge: keine Werbung, keine Rabattcodes, keine Kurse.",
+            "Was sie sagt, passt zu dem, was sie tut.",
+            "Nach dem Anschauen fühle ich mich eher angespornt als klein.",
+            "Sie behandelt andere mit Respekt – auch Leute, die ihr widersprechen."
+          ]
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dein Fazit: Was schaust du dir bei diesem Vorbild weiter ab – und was lieber nicht?"
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Das schaue ich mir weiter ab: …",
+            "Das lasse ich lieber: …"
+          ],
+          "linien": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Selbst Vorbild sein: Wer schaut sich etwas bei dir ab – und was soll das sein?",
+          "hinweis": "Geschwister, Cousins, Jüngere im Verein oder im Bus, Neue im Kurs – ob du willst oder nicht."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Auf mich schaut: …",
+            "Darin will ich ein Vorbild sein: …",
+            "So zeige ich das diese Woche: …"
+          ],
+          "linien": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Post für die Jüngeren: Schreib einen Entwurf für deine Karte an jemanden, der gerade im ersten Kursjahr anfängt.",
+          "hinweis": "Ein Tipp, ein Skill oder ein Satz, den du mit 12 gebraucht hättest. Nur mit Vornamen oder ohne Namen."
+        },
+        {
+          "art": "feld",
+          "label": "Mein Entwurf",
+          "beispiel": "Wenn dich im Kurs etwas nervt, bleib trotzdem dran. Die Kastenatmung fand ich am Anfang peinlich, heute hilft sie mir vor jeder Prüfung. Noah, 16",
+          "hoehe": 5.2
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "text": "Setzt dich online jemand unter Druck, will dir Geld abnehmen oder macht dir Angst? Sprich mit einer Vertrauensperson oder melde dich bei der BEE SECURE Helpline (8002 1234, kostenlos) oder beim Kanner- a Jugendtelefon (116 111)."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen ordnen Menschen, die sie prägen, nach Nähe, prüfen Vorbilder aus Medien mit sechs Fragen und legen fest, wofür sie selbst Vorbild sein wollen.",
+        "ablauf": [
+          "Aufgabe 1 und 2 (12 Min.): Initialen reichen; in der Runde nur sagen, in welchem Ring die meisten Namen stehen.",
+          "Vorbild-Check (15 Min.): zu zweit an einer erfundenen Profilkarte üben, dann Aufgabe 3 und 4 allein an einem eigenen Vorbild.",
+          "Aufgabe 5 und 6 (10 Min.) vor der Post für die Jüngeren; die Karten liest die Leitung vor dem Weitergeben.",
+          "Das Blatt kommt ins Skills-Buch; Menschen aus dem inneren Ring passen zu „Menschen, die helfen“."
+        ],
+        "hintergrund": "Nach Bandura (1977) ist die stellvertretende Erfahrung – zu sehen, wie eine ähnliche Person etwas schafft – eine wichtige Quelle von Selbstwirksamkeit. Verlässliche Beziehungen zu kompetenten Erwachsenen gehören zu den alltäglichen Schutzfaktoren (Masten, 2014). Vorbilder aus sozialen Medien zeigen dagegen eine Auswahl; Vergleiche mit idealisierten Beiträgen können Stimmung und Selbstbild drücken (Fardouly et al., 2015). Der Vorbild-Check setzt deshalb nicht auf Verbote, sondern lenkt den Blick auf das, was fehlt: Mühe, Fehler, Geschäftsinteressen.",
+        "quellen": [
+          "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
+          "Masten, A. S. (2014). Ordinary Magic: Resilience in Development. New York: Guilford.",
+          "Fardouly, J., Diedrichs, P. C., Vartanian, L. R. & Halliwell, E. (2015). Social comparisons on social media: The impact of Facebook on young women’s body image concerns and mood. Body Image, 13, 38–45."
+        ],
+        "differenzierung": {
+          "leichter": "Nur Aufgabe 1 und die ersten drei Fragen des Checks; die Leitung liest vor.",
+          "schwerer": "Ein Profil erfinden, das alle sechs Fragen besteht – und eines, das überall durchfällt."
+        },
+        "impulse": [
+          "Was würde dein Vorbild tun, wenn keine Kamera läuft?",
+          "Wer hat dir etwas beigebracht, ohne es zu wissen?"
+        ],
+        "tipps": [
+          "Nicht gegen die Idole der Jugendlichen argumentieren; die Frage, was man sich abschaut, trägt weiter.",
+          "Die Leitung nennt selbst ein Vorbild aus dem inneren Ring."
+        ],
+        "achtung": "Einen leeren inneren Ring nur unter vier Augen ansprechen. Folgt jemand Accounts mit Gewalt, Hass oder Extrem-Diäten oder wird online von Erwachsenen umworben: Gespräch, Responsable, Schutzkonzept.",
+        "material": "Profilkarten, Stifte"
+      }
+    }
+  }
+]

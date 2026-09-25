@@ -1,0 +1,1585 @@
+[
+  {
+    "id": "skills-saetze-die-tragen",
+    "bereich": "skills",
+    "thema": "abschluss",
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "10–15 Min.",
+    "eldib": [
+      "V-21",
+      "SOZ-40",
+      "K-26"
+    ],
+    "schlagworte": [
+      "Sätze, die tragen",
+      "Selbstgespräch",
+      "Selbstmitgefühl",
+      "Skills-Buch",
+      "Abschluss",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:message-2",
+    "verwandt": [
+      "skills-buch",
+      "skills-kritischer-detektiv",
+      "skills-meine-glaubenssaetze"
+    ],
+    "kurs": [
+      "j3-e33"
+    ],
+    "de": {
+      "titel": "Sätze für die Hosentasche",
+      "untertitel": "Die stärksten Sätze aus deinem Skills-Buch – geprüft und klein genug zum Mitnehmen.",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Ein Jahr lang hast du in deinem Skills-Buch unter „Sätze, die tragen“ gesammelt, was du dir in schweren Momenten sagen kannst. Jetzt kommt der Feinschliff: Welche Sätze halten wirklich – und welche drei nimmst du mit, wenn das Buch zu Hause liegt?"
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Vier Fragen an einen Satz, der trägt",
+          "punkte": [
+            "Kurz: Du kannst ihn auch bei 80 noch denken.",
+            "Wahr: Er verspricht nichts, was niemand halten kann.",
+            "Meiner: Er klingt nach dir, nicht nach einem Kalenderspruch.",
+            "Freundlich: So würdest du mit einem guten Freund oder einer guten Freundin reden."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Blättere durch die Rubrik „Sätze, die tragen“ in deinem Skills-Buch. Schreib die stärksten Sätze auf und prüf sie mit den vier Fragen.",
+          "hinweis": "Ein Kreuz für jede Frage, die der Satz besteht. Zu wenige eigene Sätze? Die Wörterkiste darunter hilft.",
+          "symbole": [
+            "schreiben",
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Mein Satz",
+            "kurz",
+            "wahr",
+            "meiner",
+            "freundlich"
+          ],
+          "zeilen": 3,
+          "breiten": [
+            3.3,
+            0.62,
+            0.62,
+            0.72,
+            0.9
+          ],
+          "beispiel": [
+            "„Ich muss das nicht jetzt entscheiden.“",
+            "x",
+            "x",
+            "x",
+            "x"
+          ]
+        },
+        {
+          "art": "wortspeicher",
+          "titel": "Sätze, die anderen geholfen haben",
+          "items": [
+            "„Das ist ein Gefühl, kein Befehl.“",
+            "„Erst runter, dann reden.“",
+            "„Ich kann das noch nicht. Noch.“",
+            "„Ein Fehler macht mich nicht zu einem Fehler.“",
+            "„Ich habe schon Schwereres geschafft.“"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Satz-Werkstatt: Ein Satz fällt durch oder zieht dich runter? Bau ihn um, bis er trägt.",
+          "hinweis": "Der kritische Detektiv aus Jahr 1 fragt: Stimmt das wirklich? Was würdest du einem Freund sagen?",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "So klingt der Satz jetzt",
+            "So trägt er"
+          ],
+          "zeilen": 1,
+          "beispiel": [
+            "„Ich bin zu dumm für diese Prüfung.“",
+            "„Ich habe gelernt. Ich fange mit der Aufgabe an, die ich kann.“"
+          ]
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Deine Sätze für die Hosentasche: Schreib deine drei stärksten Sätze auf die Karten und schneide sie aus.",
+          "hinweis": "Drei Karten haben schon eine Überschrift, drei benennst du selbst – für einen weiteren Satz oder eine zweite Kopie. Eine Karte ins Portemonnaie, eine in die Handyhülle; die Sätze kommen auch auf die Übersicht vorn in deinem Skills-Buch.",
+          "symbole": [
+            "schreiben",
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 2,
+          "hoehe": 150,
+          "karten": [
+            {
+              "titel": "Wenn es eng wird"
+            },
+            {
+              "titel": "Wenn ich an mir zweifle"
+            },
+            {
+              "titel": "Wenn ich etwas Neues wage"
+            },
+            {
+              "titel": "Wenn …"
+            },
+            {
+              "titel": "Wenn …"
+            },
+            {
+              "titel": "Mein Satz für …"
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Du entscheidest, was du teilst.",
+          "text": "Deine Sätze gehören dir. Und wenn einmal kein Satz mehr trägt, ist das kein Versagen – dann ist es Zeit für Menschen: deine Vertrauensperson, den SePAS oder das Kanner- a Jugendtelefon (116 111)."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen prüfen die Sätze aus der Rubrik „Sätze, die tragen“ ihres Skills-Buchs mit vier Fragen, bauen einen abwertenden Satz um und nehmen die drei stärksten als Karten mit.",
+        "ablauf": [
+          "Einstieg (2 Min.): „Alles wird gut.“ und „Das ist schwer, und ich habe schon Schwereres geschafft.“ an die Tafel. Welcher trägt eher – und warum?",
+          "Merke-Kasten lesen, dann Aufgabe 1 allein (4 Min.): Sätze aus dem Skills-Buch heraussuchen und prüfen.",
+          "Aufgabe 2 (2 Min.): Wer einen Satz hat, der durchfällt, baut ihn um. Vorlesen nur freiwillig.",
+          "Aufgabe 3 (2 Min.): Karten auf Seite 2 schreiben und ausschneiden, die Sätze auch auf die Übersicht im Skills-Buch.",
+          "Im Skill „Mein Satz im Ausatmen“ wird der eigene Satz gleich geübt."
+        ],
+        "hintergrund": "Selbstgespräche steuern Verhalten: Wer sich in schwierigen Momenten leise selbst anleitet, handelt überlegter (Meichenbaum & Goodman, 1971). Entscheidend ist der Ton: Sätze, die freundlich und zugleich realistisch sind, stützen mehr als Durchhalteparolen; Selbstmitgefühl hängt mit weniger Grübeln und mehr innerer Stabilität zusammen (Neff, 2003). Wer mit sich spricht wie mit einem Freund, gewinnt Abstand und bewertet belastende Lagen gelassener (Kross & Ayduk, 2017). Das Blatt doppelt die Rubrik im Skills-Buch nicht: Das Buch sammelt über das Jahr, das Blatt wählt aus und macht die besten Sätze tragbar.",
+        "quellen": [
+          "Meichenbaum, D. & Goodman, J. (1971). Training impulsive children to talk to themselves. Journal of Abnormal Psychology, 77(2), 115–126.",
+          "Neff, K. D. (2003). Self-compassion: An alternative conceptualization of a healthy attitude toward oneself. Self and Identity, 2(2), 85–101.",
+          "Kross, E. & Ayduk, O. (2017). Self-distancing: Theory, research, and current directions. Advances in Experimental Social Psychology, 55, 81–136."
+        ],
+        "differenzierung": {
+          "leichter": "Zwei Sätze aus der Wörterkiste auswählen und auf die Karten schreiben; die Werkstatt mündlich mit der Leitung.",
+          "schwerer": "Zu jeder Karte notieren, in welcher Lage der Satz schon einmal geholfen hat."
+        },
+        "impulse": [
+          "Welcher Satz trägt dich, obwohl er gar nicht fröhlich ist?",
+          "Was sagst du einer Freundin, die an sich zweifelt – und was dir selbst?"
+        ],
+        "tipps": [
+          "Seite 2 auf festeres Papier drucken; eine Karte fürs Portemonnaie laminieren.",
+          "Sätze anbieten, nicht vorgeben: Ein Satz trägt nur, wenn er nach der Person klingt."
+        ],
+        "achtung": "Sätze wie „Ich halte das nicht mehr aus“ oder „Es wäre besser, wenn ich nicht da wäre“ nicht in der Gruppe aufgreifen: nach der Einheit ruhig ansprechen, noch am selben Tag nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) informieren.",
+        "material": "Skills-Buch, Scheren, festeres Papier"
+      }
+    }
+  },
+  {
+    "id": "skills-meine-bruecke",
+    "bereich": "skills",
+    "thema": "abschluss",
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln"
+    ],
+    "dauer": "20 Min.",
+    "eldib": [
+      "V-24",
+      "V-23",
+      "SOZ-26",
+      "V-32"
+    ],
+    "schlagworte": [
+      "Übergang",
+      "Lycée",
+      "Ausbildung",
+      "Praktikum",
+      "Brücken-Person",
+      "Planen",
+      "Skills-Kurs"
+    ],
+    "bild": "motiv:bruecke",
+    "verwandt": [
+      "skills-mein-netz",
+      "skills-ampelplan-schwere-tage",
+      "neustart",
+      "woop-plan"
+    ],
+    "kurs": [
+      "j3-e34"
+    ],
+    "de": {
+      "titel": "Meine Brücke",
+      "untertitel": "Von hier nach dort: was sich ändert, wer dich trägt und was du als Nächstes tust.",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "An einem neuen Ort fängst du nie bei null an: Skills, Erfahrungen und Menschen kommen mit. Eine Brücke hält, wenn ihre Pfeiler tragen."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Deine zwei Ufer: Wo stehst du jetzt, und wohin gehst du nach dem Sommer?",
+          "hinweis": "Weißt du es noch nicht, schreib: „herausfinden, wie es weitergeht“. Das ist ein echtes Ziel.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "feld",
+              "label": "Hier stehe ich jetzt",
+              "beispiel": "Klasse im Lycée, Skills-Kurs am Montag",
+              "hoehe": 2.4
+            }
+          ],
+          "rechts": [
+            {
+              "art": "feld",
+              "label": "Da gehe ich hin",
+              "beispiel": "Lehre als Elektriker, Betrieb und Schule",
+              "hoehe": 2.4
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was ändert sich – und was bleibt?"
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Das ändert sich",
+            "Das bleibt",
+            "Das nehme ich bewusst mit"
+          ],
+          "zeilen": 1,
+          "beispiel": [
+            "früher aufstehen, neue Leute, ein Chef",
+            "Léa, Fußball am Samstag, mein Humor",
+            "Kastenatmung vor Tests"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Deine Pfeiler: Bring dein Netz aus Einheit 22 auf den Stand nach dem Sommer.",
+          "hinweis": "Mit einer zweiten Farbe: Wer bleibt, wer fällt weg, wer kommt am neuen Ort dazu?"
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Meine Brücken-Person, die mich schon kennt und erreichbar bleibt: …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dein Plan für die nächsten Monate: ein Schritt pro Etappe.",
+          "hinweis": "Klein und machbar. Trag dir die Etappe „nach sechs Wochen“ gleich im Handykalender ein."
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 1,
+          "items": [
+            {
+              "titel": "Im Sommer",
+              "text": "z. B. den Schulweg einmal abfahren"
+            },
+            {
+              "titel": "In der ersten Woche",
+              "text": "z. B. herausfinden, wo der SePAS ist"
+            },
+            {
+              "titel": "Nach sechs Wochen",
+              "text": "z. B. Ampel-Check: Wo stehe ich?"
+            },
+            {
+              "titel": "Bis Weihnachten",
+              "text": "z. B. ein Hobby am neuen Ort"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Die erste Hürde: Was könnte dich bremsen – und was tust du dann?"
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Wenn ich in der Pause allein herumstehe,",
+              "dann": "spreche ich jemanden aus meiner Klasse an."
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Du entscheidest, was du teilst.",
+          "text": "Deine Brücke gehört dir. Sie kommt als letztes Kapitel in dein Skills-Buch."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen planen ihren nächsten Übergang: Sie beschreiben Ausgangs- und Zielpunkt, unterscheiden, was sich ändert und was bleibt, verankern eine Brücken-Person aus ihrem Netz und legen Schritte für die ersten Monate fest.",
+        "ablauf": [
+          "Vorab: für jede Person Anlaufstellen am neuen Ort heraussuchen – SePAS, Régent oder Régente, Ausbilderin, Berufsberatung.",
+          "Einstieg (5 Min.): die vier Übergänge aus der Einheit vorlesen; sammeln, was sich ändert und was bleibt.",
+          "Aufgabe 1 und 2 allein (6 Min.). Wer noch keinen Platz hat, schreibt „herausfinden, wie es weitergeht“.",
+          "Aufgabe 4 und 5 (5 Min.): vier Etappen und ein Wenn-dann-Satz für die erste Hürde.",
+          "Danach Aufgabe 3 (7 Min.) mit dem Blatt „Mein Netz“ aus Einheit 22: aktualisieren statt neu anlegen."
+        ],
+        "hintergrund": "Übergänge bündeln Anforderungen: neue Wege, neue Regeln, neue Menschen – und oft fallen vertraute Bezugspersonen weg. Was dann schützt, sind vor allem verlässliche Beziehungen und die Erfahrung, Schwieriges schon bewältigt zu haben (Masten, 2014). Hilfe holen sich Jugendliche eher bei Menschen, die sie kennen (Rickwood et al., 2005): Deshalb wird das vorhandene Netz fortgeschrieben, und eine Brücken-Person begleitet über den Wechsel. Wenn-dann-Sätze machen es wahrscheinlicher, dass ein Vorsatz in der kritischen Lage umgesetzt wird (Gollwitzer, 1999).",
+        "quellen": [
+          "Masten, A. S. (2014). Ordinary Magic: Resilience in Development. New York: Guilford.",
+          "Rickwood, D., Deane, F. P., Wilson, C. J. & Ciarrochi, J. (2005). Young people’s help-seeking for mental health problems. Australian e-Journal for the Advancement of Mental Health, 4(3), 218–251.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "differenzierung": {
+          "leichter": "Nur die Ufer, die Brücken-Person und einen Schritt für die erste Woche; den Rest im Gespräch.",
+          "schwerer": "Für jede Etappe einen Wenn-dann-Satz schreiben und die Brücken-Person noch vor den Ferien fragen."
+        },
+        "impulse": [
+          "Was nimmst du bewusst mit – und was lässt du hier?",
+          "Wie zuversichtlich bist du, von 0 bis 10 – und was würde eine Zahl mehr bringen?"
+        ],
+        "tipps": [
+          "Anlaufstellen mit echten Namen, Räumen und Wegen ergänzen – „der SePAS“ allein hilft wenig.",
+          "Wer die Einrichtung verlässt, bekommt auf Wunsch eine Kopie für die neue Bezugsperson."
+        ],
+        "achtung": "Nicht einsammeln, nicht vorlesen. Fehlt jede erreichbare Person oder wirkt jemand hoffnungslos: Einzelgespräch, Responsable informieren, bei Gefährdung Schutzkonzept.",
+        "material": "Anlaufstellen, „Mein Netz“, Skills-Buch"
+      }
+    }
+  },
+  {
+    "id": "skills-ampelplan-schwere-tage",
+    "bereich": "skills",
+    "thema": "abschluss",
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln"
+    ],
+    "dauer": "10–15 Min.",
+    "eldib": [
+      "V-32",
+      "V-25",
+      "SOZ-26",
+      "V-21"
+    ],
+    "schlagworte": [
+      "Ampelplan",
+      "Frühwarnzeichen",
+      "Übergang",
+      "Hilfe holen",
+      "Sicherheitsplan",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:traffic-lights",
+    "verwandt": [
+      "skills-koffer-ampelplan",
+      "skills-sicherheitsplan",
+      "skills-meine-bruecke",
+      "skills-mein-netz"
+    ],
+    "kurs": [
+      "j3-e34"
+    ],
+    "de": {
+      "titel": "Mein Ampelplan für den Neustart",
+      "untertitel": "Früh merken, wenn der neue Alltag rutscht – und handeln, solange es noch Gelb ist.",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Dein Ampelplan aus Jahr 1 war für Momente gebaut, in denen die Anspannung steigt. Nach einem Wechsel kippt es selten an einem Tag – meist rutscht es über Wochen. Mit diesem Plan merkst du es früh."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Woran merkst du, dass dein neuer Alltag ins Rutschen kommt? Kreuz deine Frühzeichen an.",
+          "hinweis": "Denk auch an Zeichen, die andere zuerst sehen.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 3,
+          "items": [
+            "schlecht schlafen",
+            "morgens nicht hochkommen",
+            "Pausen allein verbringen",
+            "nachts lange am Handy",
+            "Fehltage sammeln",
+            "schnell gereizt sein",
+            "kaum essen oder viel mehr",
+            "Hobbys ausfallen lassen",
+            "„Ist mir doch egal.“"
+          ],
+          "frei": 3
+        },
+        {
+          "art": "aufgabe",
+          "text": "Deine Ampel für die ersten Monate: Was tust du bei welcher Farbe?",
+          "hinweis": "Fang unten bei Grün an. Bei Gelb zählt: früh handeln und jemandem Bescheid sagen."
+        },
+        {
+          "art": "ampel",
+          "linien": 3,
+          "stufen": [
+            {
+              "titel": "Rot – es geht mir richtig schlecht",
+              "text": "Dann gilt mein Sicherheitsplan aus Einheit 20. Er liegt hier:"
+            },
+            {
+              "titel": "Gelb – es rutscht",
+              "text": "Das tue ich dann – und dieser Person sage ich Bescheid:"
+            },
+            {
+              "titel": "Grün – ich komme an",
+              "text": "Das behalte ich bei: Schlaf, Bewegung, Menschen, etwas, das nur mir gehört."
+            }
+          ]
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Mach aus Gelb einen Wenn-dann-Plan: Bei welchem Zeichen tust du was?",
+          "hinweis": "Je genauer das Zeichen, desto eher merkst du es rechtzeitig.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Wenn ich eine Woche lang schlecht schlafe und die Pausen allein verbringe,",
+              "dann": "schreibe ich meiner Brücken-Person und gehe wieder zum Training."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dein Ampel-Check: Kreuz in den ersten sechs Wochen jeden Sonntag an, wo du stehst.",
+          "hinweis": "Zweimal hintereinander Gelb heißt: Plan für Gelb starten und jemandem Bescheid sagen.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "plan",
+          "tage": [
+            "Woche 1",
+            "Woche 2",
+            "Woche 3",
+            "Woche 4",
+            "Woche 5",
+            "Woche 6"
+          ],
+          "zeilen": [
+            "Grün – ich komme an",
+            "Gelb – es rutscht",
+            "Rot – richtig schlecht"
+          ],
+          "symbol": "kasten"
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Ein Foto oder eine Kopie dieses Plans bekommt: …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Ampelplan oder Sicherheitsplan?",
+          "text": "Der Ampelplan ist für deinen Alltag: Er hilft dir, früh zu merken, wenn es rutscht. Der Sicherheitsplan ist für Momente, in denen es dir richtig schlecht geht. Er bleibt privat – ergänzen kannst du ihn allein, mit der Leitung oder beim SePAS."
+        },
+        {
+          "art": "notfall",
+          "eintraege": [
+            {
+              "name": "Notruf: Rettung – bei akuter Gefahr, rund um die Uhr",
+              "nummer": "112"
+            },
+            {
+              "name": "Kanner- a Jugendtelefon (anonym, kostenlos)",
+              "nummer": "116 111"
+            },
+            {
+              "name": "SOS Détresse – Hilfe am Telefon (anonym)",
+              "nummer": "45 45 45"
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen erneuern ihren Ampelplan für die ersten Monate nach einem Wechsel – mit Frühzeichen, Wenn-dann-Plan und Ampel-Check. Bei Rot verweist er auf den Sicherheitsplan aus Einheit 20.",
+        "ablauf": [
+          "Einstieg (2 Min.): Grün, Gelb, Rot aus Jahr 1 in Erinnerung rufen. Neu ist der Blick auf Wochen statt auf Momente.",
+          "Aufgabe 1 und 2 (6 Min.): Frühzeichen ankreuzen, dann die Ampel von Grün nach Gelb. Bei Rot nur eintragen, wo der Sicherheitsplan liegt.",
+          "Aufgabe 3 (2 Min.): Gelb als Wenn-dann-Satz – mit einem Zeichen, das man wirklich bemerkt.",
+          "Aufgabe 4 (2 Min.): den ersten Ampel-Check im Handy eintragen, den Plan fotografieren.",
+          "Wer keinen Sicherheitsplan hat oder ihn ergänzen möchte: Einzeltermin vor den Ferien."
+        ],
+        "hintergrund": "Nach einem Wechsel fehlen oft die Menschen und Routinen, die bisher getragen haben. Schwierigkeiten zeigen sich dann häufig zuerst im Alltag – im Schlaf, im Rückzug, in Fehlzeiten –, bevor jemand sie bemerkt. Der Ampelplan aus dem DBT-Skillstraining verknüpft frühe Warnzeichen mit Skills, damit gehandelt wird, solange es noch Gelb ist (Rathus & Miller, 2015). Für akute Krisen gilt der Sicherheitsplan nach Stanley und Brown (2012); bei Rot verweist der Ampelplan bewusst auf ihn, statt einen zweiten Krisenplan anzulegen. Weil Jugendliche Hilfe eher bei vertrauten Menschen suchen (Rickwood et al., 2005), gehört zu Gelb immer ein Mensch, dem man Bescheid sagt.",
+        "quellen": [
+          "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford.",
+          "Stanley, B. & Brown, G. K. (2012). Safety planning intervention: A brief intervention to mitigate suicide risk. Cognitive and Behavioral Practice, 19(2), 256–264.",
+          "Rickwood, D., Deane, F. P., Wilson, C. J. & Ciarrochi, J. (2005). Young people’s help-seeking for mental health problems. Australian e-Journal for the Advancement of Mental Health, 4(3), 218–251."
+        ],
+        "differenzierung": {
+          "leichter": "Nur Grün und Gelb ausfüllen und eine erreichbare Person nennen; den Rest im Gespräch.",
+          "schwerer": "Die Brücken-Person fragen, ob sie beim Ampel-Check in Woche 3 nachfragen darf."
+        },
+        "impulse": [
+          "Woran würden andere am neuen Ort merken, dass du bei Gelb bist?",
+          "Wer ist in den Sommerferien erreichbar – und woher weißt du das?"
+        ],
+        "tipps": [
+          "Den Plan fotografieren lassen; eine Kopie bekommt eine Vertrauensperson.",
+          "Den Sicherheitsplan nie in der Gruppe ausfüllen lassen – nur auf ihn verweisen."
+        ],
+        "achtung": "Nicht einsammeln, nicht vorlesen. Bei Hinweisen auf Selbstverletzung, Suizidgedanken oder gefährlichen Konsum: am selben Tag ansprechen, Schutzkonzept anwenden; bei akuter Gefahr 112.",
+        "material": "Ampelplan aus Jahr 1, Handy"
+      }
+    }
+  },
+  {
+    "id": "skills-drei-jahre",
+    "bereich": "skills",
+    "thema": "abschluss",
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln"
+    ],
+    "dauer": "15–20 Min.",
+    "eldib": [
+      "K-24",
+      "K-18",
+      "SOZ-40"
+    ],
+    "schlagworte": [
+      "Rückblick",
+      "drei Jahre",
+      "Entwicklung",
+      "Stolz",
+      "Abschied",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:route",
+    "verwandt": [
+      "skills-mein-jahr",
+      "skills-pass",
+      "skills-proviant"
+    ],
+    "kurs": [
+      "j3-e35"
+    ],
+    "de": {
+      "titel": "Mein Weg durch drei Jahre",
+      "untertitel": "Geh deinen Weg noch einmal ab – und nimm mit, was du findest.",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Drei Jahre, viele Einheiten, ein Weg. Wenn du später dazugekommen bist, beginnt dein Weg dort, wo du eingestiegen bist."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Such dir auf dem Weg zu jedem Jahr einen Moment und einen Skill.",
+          "hinweis": "Schreib nur, was du aufschreiben möchtest.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Jahr",
+            "Ein Moment, der geblieben ist",
+            "Ein Skill, den ich heute noch nutze"
+          ],
+          "zeilen": 3,
+          "nummern": 1,
+          "breiten": [
+            0.55,
+            2.3,
+            2.1
+          ],
+          "beispiel": [
+            "z. B.",
+            "Blindfußball auf der nassen Wiese",
+            "5-4-3-2-1, wenn mein Kopf voll ist"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Früher – heute: Was hat sich verändert?",
+          "symbole": [
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Am Anfang des Kurses dachte ich über mich: …",
+            "Heute weiß ich: …"
+          ],
+          "linien": 2
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Das mache ich heute anders als früher: …",
+            "Darauf bin ich stolz: …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Rat an die Neuen: Was sollte eine Gruppe wissen, die im September anfängt? Schneide die Karten aus und wirf sie in die Box.",
+          "hinweis": "Die Karten sind anonym. Die Karte für die Leitung ist freiwillig.",
+          "symbole": [
+            "schreiben",
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 2,
+          "hoehe": 124,
+          "karten": [
+            {
+              "titel": "Rat an die Neuen",
+              "text": "Das solltet ihr über diesen Kurs wissen:\n\n\n\n\n"
+            },
+            {
+              "titel": "Rat an die Leitung",
+              "text": "Das soll bleiben – und das würde ich ändern:\n\n\n\n\n"
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Du entscheidest, was du teilst.",
+          "text": "Das Blatt gehört dir. Im Kreis erzählst du nur, was du erzählen möchtest."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen blicken auf ihren Weg durch drei Jahre Skills-Kurs zurück, benennen Momente, Skills und Veränderungen und geben ihre Erfahrung als Rat an eine neue Gruppe weiter.",
+        "ablauf": [
+          "Vorab: Weg am Boden auslegen, Erinnerungsstücke den drei Jahren zuordnen, Box mit Schlitz bereitstellen.",
+          "Weg abgehen (8 Min.): schweigend, bei leiser Musik, im eigenen Tempo.",
+          "Aufgabe 1 und 2 (8 Min.) am Rand des Wegs oder im Sitzen. Nicht vorlesen lassen.",
+          "Aufgabe 3 (4 Min.) an der Station „Was kommt“: Karten ausschneiden und in die Box werfen.",
+          "Runde (5 Min.): Wer mag, erzählt von einem Moment; die Leitung erzählt auch einen."
+        ],
+        "hintergrund": "Ein Rückblick über drei Jahre macht Entwicklung sichtbar, die im Alltag untergeht. Wer erkennt, dass er schwierige Phasen bewältigt hat, macht eine Bewältigungserfahrung – die wichtigste Quelle von Selbstwirksamkeit (Bandura, 1977) und ein Baustein von Resilienz (Masten, 2014). Der Vergleich „früher – heute“ schafft zeitlichen Abstand; aus dieser Distanz fällt es leichter, freundlich und klug auf sich selbst zu schauen (Kross & Ayduk, 2017). Mit dem Rat an eine neue Gruppe wechseln die Jugendlichen die Rolle: Jetzt sind sie die Erfahrenen.",
+        "quellen": [
+          "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
+          "Masten, A. S. (2014). Ordinary Magic: Resilience in Development. New York: Guilford.",
+          "Kross, E. & Ayduk, O. (2017). Self-distancing: Theory, research, and current directions. Advances in Experimental Social Psychology, 55, 81–136."
+        ],
+        "differenzierung": {
+          "leichter": "Nur Aufgabe 1 mit einem Jahr nach Wahl und einen Satzanfang aus Aufgabe 2.",
+          "schwerer": "Zu jedem Jahr notieren, welcher Mensch wichtig war; den Rat an die Neuen als kurzen Brief schreiben."
+        },
+        "impulse": [
+          "Was wusstet ihr am ersten Tag noch nicht, was ihr heute wisst?",
+          "Was sollte eine Zwölfjährige über diesen Kurs wissen, bevor sie anfängt?"
+        ],
+        "tipps": [
+          "Wer später dazugekommen ist, bekommt ein Kärtchen „Hier bin ich eingestiegen“.",
+          "Den Rat an die Neuen in der ersten Einheit der nächsten Gruppe vorlesen."
+        ],
+        "achtung": "Tiefpunkte können an Schweres erinnern: nicht nachfragen, bei Tränen oder Stocken später ein Gespräch anbieten. Anonyme Karten nicht zuordnen. Bei Hinweisen auf Gefährdung: Schutzkonzept, Responsable.",
+        "material": "Weg am Boden, Erinnerungsstücke, Scheren, Box"
+      }
+    }
+  },
+  {
+    "id": "skills-proviant",
+    "bereich": "skills",
+    "thema": "abschluss",
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "gruppe"
+    ],
+    "dauer": "15 Min.",
+    "eldib": [
+      "K-20",
+      "K-32",
+      "K-27"
+    ],
+    "schlagworte": [
+      "Wertschätzung",
+      "Abschied",
+      "Rückmeldung",
+      "Wünsche",
+      "Gruppe",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:paper-bag",
+    "verwandt": [
+      "skills-staerken-ruecken",
+      "skills-drei-jahre"
+    ],
+    "kurs": [
+      "j3-e35"
+    ],
+    "de": {
+      "titel": "Proviant für deinen Weg",
+      "untertitel": "Karten zum Abschied: für jede Person aus der Gruppe eine – zum Auspacken unterwegs.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "So schreibt ihr",
+          "punkte": [
+            "Konkret: nicht nur „du bist nett“, sondern wann und wie du die Person erlebt hast.",
+            "Ein Wunsch, der zu ihrem Weg passt – für die Lehre, das neue Lycée, den Sommer.",
+            "Nichts über Aussehen, keine Witze auf Kosten der Person.",
+            "Mit Namen oder ohne – wie du magst."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schreib für jede Person aus der Gruppe eine Karte und steck sie in ihren Proviantbeutel.",
+          "hinweis": "Falls du einen Anfang brauchst: Ich habe erlebt, wie du … · Danke, dass du … · Ich wünsche dir …",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 2,
+          "hoehe": 222,
+          "karten": [
+            {
+              "titel": "Proviant für …",
+              "text": "Das habe ich an dir erlebt:\n\n\n\n\nDas wünsche ich dir für deinen Weg:\n\n\n\n"
+            },
+            {
+              "titel": "Proviant für …",
+              "text": "Das habe ich an dir erlebt:\n\n\n\n\nDas wünsche ich dir für deinen Weg:\n\n\n\n"
+            },
+            {
+              "titel": "Proviant für …",
+              "text": "Das habe ich an dir erlebt:\n\n\n\n\nDas wünsche ich dir für deinen Weg:\n\n\n\n"
+            },
+            {
+              "titel": "Proviant für …",
+              "text": "Das habe ich an dir erlebt:\n\n\n\n\nDas wünsche ich dir für deinen Weg:\n\n\n\n"
+            }
+          ]
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "karten",
+          "spalten": 2,
+          "hoehe": 222,
+          "karten": [
+            {
+              "titel": "Proviant für …",
+              "text": "Das habe ich an dir erlebt:\n\n\n\n\nDas wünsche ich dir für deinen Weg:\n\n\n\n"
+            },
+            {
+              "titel": "Proviant für …",
+              "text": "Das habe ich an dir erlebt:\n\n\n\n\nDas wünsche ich dir für deinen Weg:\n\n\n\n"
+            },
+            {
+              "titel": "Proviant für …",
+              "text": "Das habe ich an dir erlebt:\n\n\n\n\nDas wünsche ich dir für deinen Weg:\n\n\n\n"
+            },
+            {
+              "titel": "Proviant für …",
+              "text": "Das habe ich an dir erlebt:\n\n\n\n\nDas wünsche ich dir für deinen Weg:\n\n\n\n"
+            },
+            {
+              "titel": "Proviant für …",
+              "text": "Das habe ich an dir erlebt:\n\n\n\n\nDas wünsche ich dir für deinen Weg:\n\n\n\n"
+            },
+            {
+              "titel": "Proviant für die Leitung",
+              "text": "Das nehme ich aus drei Jahren mit:\n\n\n\n\nDas wünsche ich dir:\n\n\n\n"
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen schreiben zum Abschied jeder Person der Gruppe eine Karte mit einer konkreten Beobachtung und einem Wunsch für ihren Weg; jede Person geht mit einem Beutel voller Rückmeldungen.",
+        "ablauf": [
+          "Vorab: je Person einen Kartensatz ausschneiden, Beutel mit Namen beschriften, die eigenen Karten schreiben.",
+          "Regeln vorlesen (2 Min.) und ankündigen, dass die Leitung einmal quer liest, bevor die Beutel übergeben werden.",
+          "Schreiben (10 Min.): Jede Person schreibt für jede andere eine Karte und steckt sie in deren Beutel.",
+          "Durchsehen (3 Min.): Die Leitung liest quer und nimmt unpassende Karten heraus.",
+          "Übergabe im Abschiedsritual; geöffnet wird nach der Einheit – sofort oder am ersten Tag am neuen Ort."
+        ],
+        "hintergrund": "Im Jugendalter gewinnt die Anerkennung durch Gleichaltrige für das Selbstbild stark an Gewicht (Harter, 2012). Rückmeldungen wirken besonders, wenn sie ein beobachtetes Verhalten benennen: Das ist glaubwürdiger und nützlicher als allgemeines Lob (Hattie & Timperley, 2007). Wer Dank und Anerkennung ausdrückt, profitiert auch selbst davon (Seligman et al., 2005). Der Wunsch für den Weg verbindet den Rückblick mit dem, was kommt – und die Karte bleibt, wenn die Gruppe längst auseinandergegangen ist.",
+        "quellen": [
+          "Harter, S. (2012). The Construction of the Self (2nd ed.). New York: Guilford.",
+          "Hattie, J. & Timperley, H. (2007). The power of feedback. Review of Educational Research, 77(1), 81–112.",
+          "Seligman, M. E. P., Steen, T. A., Park, N. & Peterson, C. (2005). Positive psychology progress: Empirical validation of interventions. American Psychologist, 60(5), 410–421."
+        ],
+        "differenzierung": {
+          "leichter": "Die Satzanfänge aus dem Hinweis groß an die Tafel schreiben; ein Satz pro Karte reicht.",
+          "schwerer": "Auf jeder Karte ein gemeinsames Erlebnis aus den drei Jahren nennen."
+        },
+        "impulse": [
+          "Wann hast du diese Person erlebt, wie sie etwas gut gemacht hat?",
+          "Was wünschst du ihr für die ersten Wochen nach dem Sommer?"
+        ],
+        "tipps": [
+          "Die Karte der Leitung besonders sorgfältig schreiben – vor allem für Jugendliche, die später dazugekommen sind oder oft gefehlt haben.",
+          "Feste Reihenfolge vorgeben, damit niemand ausgelassen wird; die Leitung zählt am Ende die Karten je Beutel."
+        ],
+        "achtung": "Die Leitung liest jede Karte, bevor die Beutel übergeben werden. Abwertende oder zweideutige Karten herausnehmen und später unter vier Augen klären, nicht in der Gruppe. Kein Beutel darf dünner sein als die anderen.",
+        "material": "Kartensätze, Papiertüten, Stifte, Musik"
+      }
+    }
+  },
+  {
+    "id": "skills-betriebsbesuch",
+    "bereich": "skills",
+    "thema": "zukunft",
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "2 Termine zu 100 Min.",
+    "eldib": [
+      "KOG-51",
+      "SOZ-33",
+      "V-24",
+      "K-17"
+    ],
+    "schlagworte": [
+      "Betriebsbesuch",
+      "Berufsorientierung",
+      "Interview",
+      "Beobachtung",
+      "Praktikum",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:search",
+    "verwandt": [
+      "skills-berufsprofil",
+      "neustart",
+      "mein-staerkenprofil"
+    ],
+    "kurs": [
+      "j3-j01"
+    ],
+    "de": {
+      "titel": "Betriebsbesuch: unser Forscherauftrag",
+      "untertitel": "Im Internet steht, was ein Beruf ist. Wie er sich anfühlt, siehst du nur vor Ort.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Vor dem Besuch: Wähle deine Rolle und deinen Beobachtungsauftrag.",
+          "hinweis": "Jede Rolle wird gebraucht. Wer ungern spricht, ist bei Protokoll, Zeitwache oder Dank genau richtig.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "ankreuzen",
+              "titel": "Meine Rolle",
+              "items": [
+                "Interview: stellt die erste Frage",
+                "Protokoll: notiert die Antworten",
+                "Zeitwache: hat die Uhr im Blick",
+                "Dank: übergibt am Schluss die Karte",
+                "Fotos: nur Arbeitsplätze, nur mit Erlaubnis"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "ankreuzen",
+              "titel": "Mein Beobachtungsauftrag",
+              "items": [
+                "Sicherheit und Kleidung",
+                "Werkzeuge und Geräte",
+                "Ton im Team",
+                "Sprachen im Betrieb",
+                "Zeiten, Tempo, Pausen",
+                "Wege in den Beruf"
+              ]
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Deine zwei Fragen – und je eine Nachfrage, falls die Antwort kurz ist.",
+          "hinweis": "Gute Fragen kann man nicht mit Ja oder Nein beantworten.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Meine Frage",
+            "Antwort in Stichworten",
+            "Meine Nachfrage"
+          ],
+          "zeilen": 2,
+          "breiten": [
+            2,
+            1.8,
+            1.7
+          ],
+          "beispiel": [
+            "Was passiert, wenn ein Lehrling einen Fehler macht?",
+            "(im Betrieb notieren)",
+            "Was war Ihr größter Fehler am Anfang?"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Unterwegs und im Betrieb",
+          "punkte": [
+            "Wir bleiben zusammen. Wer weg muss, sagt es einer Leitung.",
+            "Die Sicherheitsregeln des Betriebs gelten: Was wir nicht anfassen sollen, fassen wir nicht an.",
+            "Handy in der Tasche. Fotos nur mit Erlaubnis und nie von Personen.",
+            "Wir sind Gäste: grüßen, zuhören, ausreden lassen, danken."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Treffpunkt und Weg: Trag ein, was du für den Besuchstag wissen musst.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Treffpunkt und Uhrzeit: …",
+            "Bus oder Zug, Linie und Haltestelle: …",
+            "Das ziehe ich an: …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Während des Besuchs: Notiere, was du siehst und hörst.",
+          "hinweis": "Stichworte reichen. Achte besonders auf deinen Beobachtungsauftrag.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "feld",
+              "label": "Arbeitsplatz, Werkzeuge, Kleidung",
+              "hoehe": 6.8
+            },
+            {
+              "art": "feld",
+              "label": "So reden die Leute miteinander",
+              "hoehe": 6.8
+            }
+          ],
+          "rechts": [
+            {
+              "art": "feld",
+              "label": "Das ist anstrengend an dieser Arbeit",
+              "hoehe": 6.8
+            },
+            {
+              "art": "feld",
+              "label": "Das gefällt mir",
+              "hoehe": 6.8
+            }
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Der Weg zum Betrieb dauerte: …",
+            "Als Lehrling müsste ich morgens losfahren um: …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Nach dem Besuch: Passt das zu dir?",
+          "symbole": [
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "skala",
+          "frage": "Wie gut kannst du dir vorstellen, hier ein Praktikum zu machen?",
+          "von": "gar nicht",
+          "bis": "sehr gut",
+          "stufen": 11
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Überrascht hat mich: …",
+            "Diese Skills braucht man hier, auch wenn sie in keinem Zeugnis stehen: …",
+            "Mein nächster Schritt: …"
+          ],
+          "linien": 1
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen bereiten einen Betriebsbesuch mit Rollen, eigenen Fragen und einem Beobachtungsauftrag vor, halten vor Ort fest, was sie sehen und hören, und prüfen danach, ob der Beruf zu ihnen passt.",
+        "ablauf": [
+          "Vorab: Betrieb, Termin, Sicherheitsregeln, Einverständniserklärungen und Begleitung klären.",
+          "Termin 1 (15 Min.): Fragen auf Klebezetteln sammeln und sortieren, dann Aufgabe 1 und 2.",
+          "Termin 1 (5 Min.): Merke-Kasten vorlesen, Aufgabe 3 mit Treffpunkt, Weg und Kleidung.",
+          "Beim Besuch: Aufgabe 4 in Stichworten auf dem Klemmbrett, die Fragen aus Aufgabe 2 im Interview.",
+          "Danach (10 Min.): Aufgabe 5 allein, dann eine Runde: Was hat überrascht, welche Skills braucht man dort?"
+        ],
+        "hintergrund": "In der Phase der beruflichen Erkundung prüfen Jugendliche ihre Vorstellungen an der Wirklichkeit (Super, 1980). Wie gut Interessen und Arbeitsumwelt zusammenpassen, lässt sich vor Ort besser einschätzen als am Bildschirm (Holland, 1997). Wer Fachkräften bei der Arbeit zusieht, lernt am Modell, und wer selbst Fragen stellt und Antworten bekommt, macht eine Erfahrung von Selbstwirksamkeit (Bandura, 1977). Selbst gewählte Rollen und Fragen erhöhen die Beteiligung (Deci & Ryan, 2000).",
+        "quellen": [
+          "Super, D. E. (1980). A life-span, life-space approach to career development. Journal of Vocational Behavior, 16(3), 282–298.",
+          "Holland, J. L. (1997). Making Vocational Choices (3rd ed.). Odessa, FL: Psychological Assessment Resources.",
+          "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
+          "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268."
+        ],
+        "differenzierung": {
+          "leichter": "Eine Frage aus der Sammlung an der Tafel übernehmen und nur einen Beobachtungsauftrag bearbeiten.",
+          "schwerer": "Nach dem Besuch eine kurze Mail an den Betrieb entwerfen: Dank und eine Frage zum Praktikum."
+        },
+        "impulse": [
+          "Was habt ihr gesehen, das euch niemand erklärt hat?",
+          "Welche Skills aus dem Kurs braucht man dort jeden Tag?"
+        ],
+        "tipps": [
+          "Klemmbretter mitnehmen – im Stehen schreibt es sich sonst schlecht.",
+          "Eine zweite Dankeskarte mit einem Satz jeder Person nach dem Besuch freut Betriebe besonders."
+        ],
+        "achtung": "Keine Informationen über einzelne Jugendliche an den Betrieb; Fotos nur mit Erlaubnis und ohne Personen. Bei Angst vor dem Besuch eine Rolle ohne Sprechen anbieten. Abwertende Bemerkungen ruhig begrenzen und nachbesprechen.",
+        "material": "Klemmbretter, Stifte, Klebezettel, Dankeskarte"
+      }
+    }
+  },
+  {
+    "id": "skills-menue-plan",
+    "bereich": "skills",
+    "thema": "zukunft",
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "gruppe"
+    ],
+    "dauer": "2 Termine zu 100 Min.",
+    "eldib": [
+      "SOZ-18",
+      "SOZ-38",
+      "V-27",
+      "V-6"
+    ],
+    "schlagworte": [
+      "Kochen",
+      "Budget",
+      "Allergien",
+      "Hygiene",
+      "Gastgeber",
+      "Zusammenarbeit",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:tools-kitchen-2",
+    "kurs": [
+      "j3-j02"
+    ],
+    "de": {
+      "titel": "Unser Menü für Gäste",
+      "untertitel": "Planen, rechnen, kochen, Gastgeber sein – mit Blick auf Allergien und ein festes Budget.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Unsere Gäste: Tragt ein, wer kommt und was beim Essen zu beachten ist.",
+          "hinweis": "Die Angaben stehen auf den Rückmeldeabschnitten der Einladungen.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Gast",
+            "Allergien und Unverträglichkeiten",
+            "Essensregeln"
+          ],
+          "zeilen": 3,
+          "breiten": [
+            1.5,
+            2.2,
+            1.6
+          ],
+          "beispiel": [
+            "Educateur Samuel",
+            "Haselnüsse",
+            "vegetarisch"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Diese 14 Allergene müssen in der EU gekennzeichnet werden",
+          "text": "Glutenhaltiges Getreide, Krebstiere, Eier, Fisch, Erdnüsse, Soja, Milch, Schalenfrüchte (Nüsse), Sellerie, Senf, Sesam, Schwefeldioxid und Sulfite, Lupinen, Weichtiere. Auf Packungen sind sie in der Zutatenliste hervorgehoben, meist fett gedruckt."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Unser Menü: drei Gänge, in 40 Minuten machbar, für alle Gäste essbar."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Gang",
+            "Unser Gericht",
+            "Enthält Allergene",
+            "Für alle?"
+          ],
+          "zeilen": 3,
+          "breiten": [
+            1.1,
+            2,
+            1.6,
+            1.3
+          ],
+          "beispiel": [
+            "Nachtisch",
+            "Obstsalat mit Joghurt",
+            "Milch",
+            "ja – eine Schale ohne Joghurt"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Küchenregeln",
+          "punkte": [
+            "Hände waschen: vor dem Kochen, nach der Toilette, nach rohem Fleisch oder Eiern.",
+            "Haare zusammen, Schmuck ab, kleine Wunden mit Pflaster und Handschuh abdecken.",
+            "Rohes Fleisch und Fisch auf ein eigenes Brett; Kühlware zuletzt kaufen und gleich kühlen.",
+            "Messer vom Körper weg führen. Brennendes Fett: Deckel drauf, Herd aus – nie Wasser."
+          ]
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Budget und Einkaufsliste: Erst schätzen, dann die echten Preise eintragen.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Was?",
+            "Menge",
+            "geschätzt",
+            "echt",
+            "Wer kauft?"
+          ],
+          "zeilen": 5,
+          "breiten": [
+            1.9,
+            0.9,
+            0.9,
+            0.9,
+            1.2
+          ],
+          "beispiel": [
+            "Nudeln",
+            "1,5 kg",
+            "3 Euro",
+            "2,70 Euro",
+            "Ana und Liam"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Unser Budget: … Euro  ·  Unsere Summe: … Euro"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Rollen und Zeitplan rückwärts: Rechnet von der Ankunft der Gäste aus zurück."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Minute",
+            "Was passiert?",
+            "Wer?"
+          ],
+          "zeilen": 5,
+          "breiten": [
+            0.8,
+            3,
+            1.4
+          ],
+          "beispiel": [
+            "45",
+            "Die Gäste kommen – Empfang an der Tür",
+            "Aylin und Ben"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Gastgeber-Sätze: Was sagst du zu den Gästen?",
+          "symbole": [
+            "sprechen"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Zur Begrüßung: …",
+            "So stelle ich einen Gang vor: …",
+            "Wenn ein Gast etwas nicht essen darf: …",
+            "Zum Abschied: …"
+          ],
+          "linien": 1
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Gruppe plant für eingeladene Gäste ein Menü, das Allergien und Essensregeln berücksichtigt, rechnet mit einem festen Budget, verteilt Rollen, baut einen Zeitplan rückwärts und bereitet Gastgeber-Sätze vor.",
+        "ablauf": [
+          "Vorab: Rückmeldungen der Gäste auswerten; das Blatt einmal in A3 für die Gruppe kopieren.",
+          "Termin 1, Aufgabe 1 und 2 (20 Min.): Allergie-Liste übertragen, versteckte Allergene besprechen, jeden Gang prüfen.",
+          "Aufgabe 3 (10 Min. plus Preis-Detektive): Mengen, Schätzpreise, echte Preise, Summe.",
+          "Aufgabe 4 (10 Min.): Rollen verteilen, Zeitplan rückwärts; das A3-Blatt hängt am Kochtag in der Küche.",
+          "Termin 2: Die Hygiene-Wache liest die Küchenregeln vor; Aufgabe 5 vor dem Empfang proben."
+        ],
+        "hintergrund": "Ein Menü für Gäste verbindet Planung, Rechnen, Zusammenarbeit und Fürsorge in einer echten Aufgabe mit sichtbarem Ergebnis. Selbst gewählte Aufgaben, das Erleben von Können und die Zugehörigkeit zu einer Gruppe tragen Motivation (Deci & Ryan, 2000); das Gelingen vor Gästen ist eine Bewältigungserfahrung, die stärkste Quelle von Selbstwirksamkeit (Bandura, 1977). Finanzwissen hängt mit besseren Geldentscheidungen zusammen und ist bei jungen Menschen oft gering (Lusardi & Mitchell, 2014) – ein echtes Budget macht das Rechnen konkret.",
+        "quellen": [
+          "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268.",
+          "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
+          "Lusardi, A. & Mitchell, O. S. (2014). The economic importance of financial literacy: Theory and evidence. Journal of Economic Literature, 52(1), 5–44."
+        ],
+        "differenzierung": {
+          "leichter": "Nur zwei Gänge planen; die Einkaufsliste mit vorgegebenen Mengen und Preisen ergänzen.",
+          "schwerer": "Eine Variante für eine Allergie mitplanen und die Kosten pro Person ausrechnen."
+        },
+        "impulse": [
+          "Kann jeder Gast alles essen – und woher wisst ihr das?",
+          "Wo würdet ihr sparen, ohne dass es die Gäste merken?"
+        ],
+        "tipps": [
+          "Die Empfangsrolle freiwillig und zu zweit vergeben.",
+          "Beim Einkauf jede Zutatenliste lesen – auch bei Produkten, die man zu kennen glaubt."
+        ],
+        "achtung": "Allergien schriftlich sammeln, Zutatenlisten prüfen, Kreuzkontakt vermeiden; bei schweren Allergien vorher mit der Familie sprechen. Keine Bemerkungen über Portionen oder Gewicht. Bei Hinweisen auf Essprobleme oder familiäre Belastung: Einzelgespräch, Responsable informieren.",
+        "material": "A3-Kopie, Rezepte, Taschenrechner"
+      }
+    },
+    "verwandt": [
+      "skills-kochplan",
+      "skills-kuechen-check",
+      "skills-kuechenplan"
+    ]
+  },
+  {
+    "id": "skills-debattier-turnier",
+    "bereich": "skills",
+    "thema": "mitbestimmung",
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "gruppe"
+    ],
+    "dauer": "100 Min.",
+    "eldib": [
+      "KOG-58",
+      "K-25",
+      "SOZ-32",
+      "V-20"
+    ],
+    "schlagworte": [
+      "Debattieren",
+      "Argumentieren",
+      "Jury",
+      "Feedback",
+      "Frust",
+      "Fairness",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:podium",
+    "kurs": [
+      "j3-j03"
+    ],
+    "de": {
+      "titel": "Debattier-Turnier",
+      "untertitel": "Überzeugen, fair bleiben – und wissen, was du tust, wenn die Jury gegen dich entscheidet.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "So läuft eine Debatte",
+          "punkte": [
+            "Meinungslinie vorher: Das Publikum stellt sich auf.",
+            "Eröffnung: Pro 1 Minute, dann Contra 1 Minute.",
+            "Schlagabtausch: 3 Minuten, jeder Beitrag höchstens 30 Sekunden – wer widerspricht, fasst zuerst zusammen.",
+            "Schluss: Contra 30 Sekunden, dann Pro 30 Sekunden.",
+            "Meinungslinie nachher, dann entscheidet die Jury."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Vor dem Turnier: Dein Frust-Plan für den Moment, in dem ihr verliert. Kreuz an, was dir hilft.",
+          "hinweis": "Einen Plan für den Ärger macht man, solange man noch ruhig ist.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "frei": 2,
+          "items": [
+            "zweimal lang ausatmen",
+            "Schultern hochziehen und fallen lassen",
+            "Wasser trinken",
+            "kurz rausgehen und Bescheid sagen",
+            "dem anderen Team die Hand geben",
+            "nach einem Tipp fragen"
+          ]
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Wenn die Jury gegen uns entscheidet und ich merke, dass ich wütend werde,",
+              "dann": "atme ich zweimal lang aus, gebe die Hand und frage später nach einem Tipp."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Vorbereitung: Baut drei Argumente für eure Seite.",
+          "hinweis": "Behauptung, Begründung, Beispiel. Ohne Beispiel ist es nur eine Meinung.",
+          "symbole": [
+            "partner",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Unser Thema: …",
+            "Unsere Seite (Pro oder Contra): …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Behauptung",
+            "Begründung",
+            "Beispiel"
+          ],
+          "zeilen": 3,
+          "beispiel": [
+            "Pausen sind zum Erholen da.",
+            "Mit Musik oder einer Nachricht an Freunde schalten viele schneller ab.",
+            "Wer in der Pause Musik hört, sitzt danach oft ruhiger im Unterricht."
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Das stärkste Argument der Gegenseite: …",
+            "Unsere Antwort darauf: …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Jury: Welche Seite war besser? Kreuzt für jeden Punkt an und entscheidet mit Mehrheit.",
+          "hinweis": "Bewertet die Argumente, nicht die Personen – und nicht eure eigene Meinung zum Thema.",
+          "symbole": [
+            "ankreuzen",
+            "gruppe"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Debatte Nr. …  ·  Thema: …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "Pro",
+            "gleich",
+            "Contra"
+          ],
+          "items": [
+            "Sachkenntnis: Wer wusste, wovon er spricht?",
+            "Überzeugungskraft: Wer hatte die besseren Gründe und Beispiele?",
+            "Eingehen auf die anderen: Wer hat auf Gegenargumente geantwortet?",
+            "Auftreten: Wer sprach klar und verständlich?",
+            "Fairness: Wer blieb bei der Sache und ließ ausreden?"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Gewonnen hat: …",
+            "Die Meinungslinie hat sich bewegt – Richtung: …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Rückmeldung: für jede Seite ein Lob und ein Tipp.",
+          "symbole": [
+            "sprechen"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Seite",
+            "Lob: Stark war, wie …",
+            "Tipp: Nächstes Mal …"
+          ],
+          "zeilen": 2,
+          "breiten": [
+            0.8,
+            2.3,
+            2.3
+          ],
+          "beispiel": [
+            "Pro",
+            "… ihr das Beispiel mit dem Bus gebracht habt.",
+            "… direkt auf das Argument mit dem Lärm antworten."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Nach dem Turnier: Wie groß war dein Frust – und was hat geholfen?"
+        },
+        {
+          "art": "skala",
+          "von": "kein Frust",
+          "bis": "riesiger Frust",
+          "stufen": 11
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Geholfen hat mir: …"
+          ],
+          "linien": 1
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen bereiten eine zugeloste Position mit Behauptung, Begründung und Beispiel vor, bewerten als Jury nach Kriterien, geben Rückmeldung mit Lob und Tipp und legen vorab fest, wie sie mit einer Niederlage umgehen.",
+        "ablauf": [
+          "Vorab: Themen prüfen, Turnierplan nach Gruppengröße an die Tafel, Seite 2 einmal je Debatte kopieren.",
+          "Input (10 Min.): Ablauf im Merke-Kasten erklären; Aufgabe 1 allein – der Frust-Plan entsteht vor dem Turnier.",
+          "Vorbereitung (20 Min.): Seiten losen, Aufgabe 2 im Team, die Eröffnung einmal leise proben.",
+          "Turnier (30 Min.): je Debatte etwa zehn Minuten mit Meinungslinie; die Jury nutzt Aufgabe 3 und 4.",
+          "Danach (5 Min.): Siegerehrung, dann Aufgabe 5 und den Frust-Plan anwenden."
+        ],
+        "hintergrund": "Debattieren übt, eine Meinung zu begründen, zuzuhören und auf Gegenargumente einzugehen – Grundlagen demokratischer Beteiligung, wie sie der Europarat für die Menschenrechtsbildung beschreibt (Council of Europe, 2012). Rückmeldungen wirken, wenn sie konkret sagen, was gelungen ist und was als Nächstes besser werden kann (Hattie & Timperley, 2007). Wer eine Niederlage als Hinweis auf Lernbares deutet statt als Urteil über sich, bleibt eher dran (Dweck, 2006); ein vorher geschriebener Wenn-dann-Plan hilft im Ärger (Gollwitzer, 1999).",
+        "quellen": [
+          "Council of Europe (2012). Compass: Manual for Human Rights Education with Young People (2nd ed.). Strasbourg: Council of Europe Publishing.",
+          "Hattie, J. & Timperley, H. (2007). The power of feedback. Review of Educational Research, 77(1), 81–112.",
+          "Dweck, C. S. (2006). Mindset: The New Psychology of Success. New York: Random House.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "differenzierung": {
+          "leichter": "Nur ein Argument mit Begründung und Beispiel vorbereiten; als Jury zunächst nur drei Punkte bewerten.",
+          "schwerer": "Die Schlussrede ohne Zettel halten und darin zwei Argumente der Gegenseite aufgreifen."
+        },
+        "impulse": [
+          "Welches Argument der Gegenseite hat euch überzeugt?",
+          "Was ist schwerer: eine Meinung vertreten, die nicht die eigene ist – oder verlieren?"
+        ],
+        "tipps": [
+          "Fairplay-Preis und Preis für die beste Nachfrage vergeben – so bekommt nicht nur das Siegerteam Anerkennung.",
+          "Leichte Themen für das Finale senken den Druck."
+        ],
+        "achtung": "Themen ohne Bezug zur Lebenslage Einzelner wählen. Persönliche Angriffe sofort stoppen, menschenverachtende Aussagen klar begrenzen. Nach einer Niederlage nachgehen.",
+        "material": "Themenkarten, Lose, Stoppuhr, Glocke"
+      }
+    },
+    "verwandt": [
+      "skills-mein-argument",
+      "skills-debatte"
+    ]
+  }
+]

@@ -1,0 +1,594 @@
+{
+  "einheiten": [
+    {
+      "id": "j2-e01",
+      "nr": 1,
+      "jahr": 2,
+      "modul": "j2-m0",
+      "titel": "Neustart als Gruppe",
+      "kurz": "Nach dem Sommer findet sich die Gruppe neu: Alte und Neue lernen sich kennen, prüfen gemeinsam den Gruppenvertrag und bekommen den Skills-Kompass, der sie durch das Jahr begleitet.",
+      "dauer": 100,
+      "ziele": [
+        "kommen nach den Ferien als Gruppe wieder an und lernen neue Mitglieder kennen, ohne Persönliches preisgeben zu müssen",
+        "erklären einander die Rituale – Gefühlsrad, Anspannung von 0 bis 100 und Skills-Pass – oder lernen sie neu kennen",
+        "prüfen den Gruppenvertrag Regel für Regel und passen ihn an das neue Jahr an",
+        "lernen die Bereiche des Jahres und den Skills-Kompass kennen"
+      ],
+      "material": [
+        "Gefühlsrad in A3, laminiert, und Wäscheklammern mit Namen – auch für die Neuen",
+        "Malerkrepp für eine Bodenlinie von 4–5 m und vier Karten mit 0, 30, 70 und 100",
+        "Namensschilder aus Kreppband und ein dicker Stift",
+        "Der Gruppenvertrag aus Jahr 1; für eine neue Gruppe die Regeln aus dem Schritt „Der Gruppenvertrag auf dem Prüfstand“ auf Karten",
+        "Ampelkarten: für jede Person eine grüne, eine gelbe und eine rote Karte (A6, Tonpapier) – sie werden in Einheit 2 wieder gebraucht",
+        "Schülerblatt „Unser Gruppenvertrag“ in A3 und dicke Stifte",
+        "Elf Bereichskarten (A5) mit Nummer, Titel und Leitfrage der Module (Tabelle im Schritt „Die Kompass-Rose“)",
+        "Schülerblatt „Mein Skills-Kompass“ auf festem Papier für jede Person, dazu eine Mappe für jede neue Person",
+        "Neue Skills-Pässe für das Jahr, Box, Stempel",
+        "Imbiss und Getränke (Allergien und Essensregeln der Neuen vorher erfragen)"
+      ],
+      "vorbereitung": [
+        "Klären, wer neu dazukommt und wer nicht mehr dabei ist. Absprechen, was die Gruppe über Jugendliche erfahren darf, die gegangen sind – mehr wird nicht gesagt.",
+        "Neue Jugendliche und ihre Eltern vorab informieren (Elternbrief nach Hausregel); Allergien und Essensregeln erfragen.",
+        "Für jede neue Person eine verlässliche Person aus Jahr 1 als Tandem vorsehen – nicht unbedingt die redegewandteste.",
+        "Die elf Bereichskarten schreiben. Stühle im Kreis, die Bodenlinie kleben, den alten Gruppenvertrag aufhängen.",
+        "Für die Kompass-Rose eine freie Fläche von etwa 4 × 4 m einplanen; bei wenig Platz den Flur oder die Turnhalle nutzen."
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-gruppenvertrag",
+        "skills-kompass",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Wort, Zahl und etwas Neues"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Ein Jahr später: was bleibt, was neu ist"
+        },
+        {
+          "min": "15–27",
+          "phase": "uebung",
+          "titel": "Kugellager: wiedersehen und kennenlernen"
+        },
+        {
+          "min": "27–45",
+          "phase": "uebung",
+          "titel": "Der Gruppenvertrag auf dem Prüfstand"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–78",
+          "phase": "aktiv",
+          "titel": "Die Kompass-Rose: ein Jahr in elf Karten"
+        },
+        {
+          "min": "78–88",
+          "phase": "uebung",
+          "titel": "Mein Skills-Kompass"
+        },
+        {
+          "min": "88–95",
+          "phase": "skill",
+          "titel": "Skill: 5-4-3-2-1 mit Zahl vorher und nachher"
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Réckbléck und der neue Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: Wort, Zahl und etwas Neues",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Stühle im Kreis, das Gefühlsrad liegt in der Mitte, daneben die Bodenlinie mit 0, 30, 70 und 100. Zuerst bitten, dass zwei aus Jahr 1 den Neuen das Ritual in eigenen Worten erklären: Klammer an das passende Wort, dann die Anspannung als Zahl. Danach reihum: Klammer anstecken, Zahl nennen oder sich an die Linie stellen und, wer mag, sagen, was seit dem Sommer neu ist – eine Klasse, ein Bus, ein Hobby, eine Frisur. Die Leitung beginnt; die Neuen kommen irgendwo in der Mitte dran, nicht zuerst und nicht zuletzt.",
+          "sagen": [
+            "Wer war letztes Jahr dabei und erklärt den Neuen, wie unser Check-in geht? Heute seid ihr die Profis.",
+            "Wort, Zahl – und wenn ihr mögt: Was ist bei euch seit dem Sommer neu? Es darf etwas ganz Kleines sein.",
+            "0 heißt tiefenentspannt, kurz vorm Einschlafen. 100 heißt so aufgewühlt, wie es nur geht."
+          ],
+          "tipp": "Bei einer ganz neuen Gruppe erklärt die Leitung Rad und Zahl selbst, in zwei Sätzen und mit der eigenen Klammer als Beispiel. Mehr Theorie braucht es heute nicht; die Skala kommt nächstes Mal ausführlich.",
+          "wennEsKippt": "Reden die Alten nur untereinander oder machen Insider-Witze, freundlich unterbrechen: Das versteht gerade nicht jeder hier – erklärst du es kurz? Fragt jemand die Neuen, warum sie hier sind, sofort stoppen: Das erzählt hier niemand, auch ihr habt es nicht erzählt.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Ein Jahr später: was bleibt, was neu ist",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "Kurz zurückschauen, ohne Vortrag: Die Leitung nennt drei Dinge, die bleiben – Check-in, Imbiss, Skills-Pass – und zwei, die neu sind: der Skills-Kompass und Themen, die mit dem Älterwerden zu tun haben, von Schule und Wut bis Freundschaft, Liebe und Alkohol. Dann den Plan für heute nennen: kennenlernen, Regeln prüfen, das Jahr anschauen. Fehlt jemand aus dem letzten Jahr, sagt die Leitung nur, was vorher abgesprochen wurde, und beantwortet Nachfragen ruhig mit: Mehr kann ich dazu nicht sagen.",
+          "sagen": [
+            "Ihr seid ein Jahr älter, und das merkt man an den Themen: Schule, Wut, Freundschaft und Liebe, Familie, Netz, Alkohol, Gesundheit.",
+            "Wer letztes Jahr dabei war: Was ist euch aus dem Kurs hängen geblieben? Ein Wort reicht."
+          ]
+        },
+        {
+          "titel": "Kugellager: wiedersehen und kennenlernen",
+          "dauer": 12,
+          "phase": "uebung",
+          "text": "Zwei Stuhlkreise bilden: einen inneren mit Blick nach außen und einen äußeren mit Blick nach innen, sodass sich immer zwei gegenübersitzen; bei ungerader Zahl macht die Leitung mit. Die Leitung liest eine Frage vor, beide antworten je eine Minute, dann rückt der äußere Kreis einen Platz weiter. Die Tandems aus Alt und Neu so setzen, dass sie sich in einer Runde begegnen. Nach vier Fragen aus der Liste stellt jede Person im großen Kreis ihr letztes Gegenüber mit einem Satz vor – nur mit dem, was diese Person erzählen lassen möchte.",
+          "sagen": [
+            "Wer bei einer Frage nicht antworten mag, sagt „weiter“ und stellt dem anderen eine eigene Frage.",
+            "Bevor ihr euer Gegenüber vorstellt, fragt kurz: Was darf ich von dir erzählen?"
+          ],
+          "punkte": [
+            "Was hast du im Sommer zum ersten Mal gemacht – oder zum ersten Mal seit Langem? Ein neues Rezept zählt auch.",
+            "Was ist in diesem Schuljahr anders als im letzten: Klasse, Schule, Weg, Hobby?",
+            "Welches Lied, welche Serie oder welches Essen gehört für dich zu diesem Sommer?",
+            "Worauf freust du dich in diesem Schuljahr – und worauf eher nicht?",
+            "Was könntest du den anderen hier beibringen: einen Trick, ein Spiel, ein Rezept, ein Wort in einer anderen Sprache?"
+          ],
+          "tipp": "Bei nur zwei oder drei Jugendlichen gibt es kein Kugellager: Alle sitzen im Kreis, jede Frage geht reihum, und die Leitung antwortet mit. Bei viel Unruhe im Stehen spielen, bei wenig Energie reichen drei Fragen.",
+          "wennEsKippt": "Kommen nur Ein-Wort-Antworten, die Zeit auf 30 Sekunden kürzen und eine Nachfrage vorgeben: Und wie war das? Kichern zwei Alte die ganze Zeit miteinander, die Paare für die nächste Runde von der Leitung einteilen lassen."
+        },
+        {
+          "titel": "Der Gruppenvertrag auf dem Prüfstand",
+          "dauer": 18,
+          "phase": "uebung",
+          "text": "Den Vertrag aus Jahr 1 aufhängen; eine Person aus dem letzten Jahr liest ihn vor. Vorher sagen, welche drei Regeln nicht zur Abstimmung stehen: Vertraulichkeit mit ihrer Grenze, „weiter“ ist erlaubt, niemand wird ausgelacht. Zu jeder anderen Regel halten alle auf drei gleichzeitig eine Ampelkarte hoch – Grün heißt „bleibt so“, Gelb „anders formulieren“, Rot „brauchen wir nicht mehr“ –, und nur über Gelb und Rot wird kurz gesprochen. Dann fragt die Leitung, was im neuen Jahr fehlt, und ergänzt aus der Liste, was die Gruppe nicht selbst nennt. Eine freiwillige Person schreibt drei bis fünf Regeln auf das neue Blatt in A3, alle unterschreiben, auch die Leitung, und die Gruppe legt das Datum fest, an dem sie den Vertrag wieder prüft.",
+          "sagen": [
+            "Drei Regeln sind nicht verhandelbar, weil sie euch schützen. Über alles andere entscheidet ihr.",
+            "Welche Regel hat letztes Jahr wirklich funktioniert – und welche stand nur auf dem Papier?",
+            "Was braucht ihr jetzt, wo ihr älter seid und neue Leute dabei sind?"
+          ],
+          "punkte": [
+            "Was hier erzählt wird, bleibt hier – außer jemand ist in Gefahr. Dann holt die Leitung Hilfe und sagt vorher, was sie tut.",
+            "„Weiter“ ist immer erlaubt, ohne Begründung.",
+            "Wir lachen miteinander, nicht übereinander.",
+            "Keine Fotos, Videos oder Screenshots aus der Gruppe.",
+            "Wir reden nicht über Leute, die nicht da sind.",
+            "Bei Themen wie Liebe, Alkohol oder Krisen erzählt niemand Eigenes – wir reden über Beispielfiguren."
+          ],
+          "tipp": "Für eine neue Gruppe ohne Vertrag die Regeln aus der Liste auf Karten schreiben und mit denselben Ampelkarten abstimmen: Was nehmen wir, was formulieren wir um, was fehlt? Die drei geschützten Regeln kommen in jedem Fall hinein.",
+          "wennEsKippt": "Hält jemand bei allem Rot hoch, nachfragen statt diskutieren: Welche Regel stört dich am meisten – und was würde sie besser machen? Kommen nur Scherzregeln, eine davon mit Humor aufnehmen und die ernste Frage dahinter stellen: Was wollt ihr eigentlich damit sagen?",
+          "blatt": "skills-gruppenvertrag"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Gemeinsam essen, Fenster auf oder kurz nach draußen. Die Tandems sitzen nebeneinander. Die Leitung isst mit und sorgt mit einer leichten Frage an alle dafür, dass die Gespräche nicht nur zwischen den Alten laufen – etwa: Was ist das Beste an eurer Kantine, und was das Schlimmste?"
+        },
+        {
+          "titel": "Die Kompass-Rose: ein Jahr in elf Karten",
+          "dauer": 18,
+          "phase": "aktiv",
+          "text": "Die Karten 1 bis 9 liegen in einem großen Kreis auf dem Boden, Karte 0 an der Tür (hier steht die Gruppe heute), Karte 10 am Fenster (dort kommt sie am Ende des Schuljahres an). Alle gehen zuerst still herum und lesen die Karten. Dann stellt die Leitung nacheinander die Fragen aus der Liste; alle stellen sich zu der Karte, die für sie passt, und schauen, wo die anderen stehen. Nach jeder Runde dürfen zwei, drei Personen sagen, warum sie dort stehen – niemand muss. Zum Schluss stellen sich alle in die Mitte, und die Leitung erklärt: Zu jedem dieser Bereiche sucht ihr euch in diesem Jahr einen Skill.",
+          "sagen": [
+            "Stellt euch dahin, wo ihr wirklich steht – nicht dahin, wo eure Freunde stehen.",
+            "Beim Stress stehen fast alle bei der Schule. Was glaubt ihr, woran das liegt?",
+            "Das hier ist euer Jahr. In jedem Bereich braucht man etwas anderes – deshalb heißt das Ganze Kompass."
+          ],
+          "punkte": [
+            "Auf welchen Bereich bist du am meisten neugierig?",
+            "In welchem Bereich haben Jugendliche in eurem Alter den meisten Stress?",
+            "Wo, glaubst du, wird in diesem Jahr am meisten gelacht?",
+            "Über welchen Bereich wissen Erwachsene am wenigsten Bescheid?",
+            "In welchem Bereich hast du schon einen Skill, der dir hilft?"
+          ],
+          "tabelle": {
+            "spalten": [
+              "Karte",
+              "Bereich",
+              "Leitfrage"
+            ],
+            "zeilen": [
+              [
+                "0",
+                "Wieder ankommen",
+                "Wer sind wir in diesem Jahr?"
+              ],
+              [
+                "1",
+                "Selbstwert und Körper",
+                "Was macht mich wertvoll – auch wenn ich mich vergleiche?"
+              ],
+              [
+                "2",
+                "Stress und Schule",
+                "Wie komme ich gut durch Schule, Lernen und Prüfungen?"
+              ],
+              [
+                "3",
+                "Wut und Impulse",
+                "Was steckt hinter meiner Wut – und wie bremse ich rechtzeitig?"
+              ],
+              [
+                "4",
+                "Freundschaft, Liebe und Zugehörigkeit",
+                "Was macht Freundschaft und Liebe aus – und was, wenn es schwierig wird?"
+              ],
+              [
+                "5",
+                "Familie und Zuhause",
+                "Wie gehen wir zu Hause miteinander um?"
+              ],
+              [
+                "6",
+                "Vielfalt und Respekt",
+                "Wie gehen wir mit Unterschieden um?"
+              ],
+              [
+                "7",
+                "Sicher im Netz",
+                "Wie schütze ich mich und andere online?"
+              ],
+              [
+                "8",
+                "Riskant oder okay?",
+                "Alkohol, Vapes, Cannabis – was muss ich wissen, und wie entscheide ich?"
+              ],
+              [
+                "9",
+                "Gesund an Körper und Seele",
+                "Was tut mir gut – und was tun, wenn es jemandem richtig schlecht geht?"
+              ],
+              [
+                "10",
+                "Abschluss",
+                "Was hat sich in diesem Jahr verändert?"
+              ]
+            ]
+          },
+          "tipp": "Nach der Einheit notieren, wo sich die Gruppe gesammelt hat – ohne Namen. Das zeigt früh, welche Module Zeit brauchen und wo ein Joker passt. Die Karten danach an die Wand hängen; sie bleiben das ganze Jahr als Wegweiser.",
+          "wennEsKippt": "Rennen alle geschlossen zur selben Karte, ist das Gruppendruck in Reinform – mit einem Augenzwinkern benennen und die nächste Frage mit geschlossenen Augen stellen: Alle zeigen mit dem Arm in die Richtung ihrer Karte, dann Augen auf. Wird es albern, eine Frage auslassen und direkt zur letzten springen; bei nur zwei Jugendlichen dafür bei jeder Karte länger nachfragen."
+        },
+        {
+          "titel": "Mein Skills-Kompass",
+          "dauer": 10,
+          "phase": "uebung",
+          "text": "Das Blatt austeilen, Namen eintragen lassen und die elf Felder mit den Karten auf dem Boden vergleichen: Es sind dieselben Bereiche. Erklären, wie der Kompass funktioniert: Am Ende jedes Moduls kommt in das passende Feld ein Skill, der in diesem Bereich hilft, dazu eine Situation. Dann den Wortspeicher lesen: Wer aus Jahr 1 kommt, zeigt auf zwei Skills, die er noch benutzt, und erklärt einen davon in einem Satz. Die Neuen dürfen bei jedem Wort fragen, was das ist; ausprobiert wird nächstes Mal bei der Olympiade. Das Blatt kommt in die Mappe, das erste Feld wird am Ende der nächsten Einheit gefüllt.",
+          "sagen": [
+            "Der Skills-Koffer aus Jahr 1 sortiert eure Skills danach, wie hoch die Anspannung ist. Der Kompass sortiert danach, wo ihr gerade seid: Schule, Streit, Familie, Handy.",
+            "Welchen Skill aus dieser Liste habt ihr in den Ferien benutzt – vielleicht, ohne es zu merken?"
+          ],
+          "tipp": "Den Kompass nie als Hausaufgabe ausfüllen lassen. Er wird immer gemeinsam in der letzten Einheit eines Moduls ergänzt – so bleibt er ein Ritual und kein Arbeitsblatt.",
+          "wennEsKippt": "Sagt jemand, er brauche keine Skills, das stehen lassen und neugierig bleiben: Dann bin ich gespannt, was du dir aussuchst. Wirken die Neuen bei den vielen Namen verloren, ausdrücklich sagen, dass nächste Woche alle Skills mit allen ausprobiert werden.",
+          "blatt": "skills-kompass"
+        },
+        {
+          "titel": "Skill: 5-4-3-2-1 mit Zahl vorher und nachher",
+          "dauer": 7,
+          "phase": "skill",
+          "text": "Alle schätzen still ihre Anspannung. Dann leitet die Leitung langsam 5-4-3-2-1 an, mit Pausen zwischen den Schritten; die Augen dürfen offen bleiben. Danach die Zahl noch einmal schätzen und reihum beide Zahlen nennen, ohne Kommentar. Kurz erklären: Mit dieser Übung hat der Kurs im letzten Jahr begonnen, und sie ist gleichzeitig ein Test – Zahl vorher, Skill, Zahl nachher. So wird das ganze Jahr geprüft, ob ein Skill wirkt.",
+          "sagen": [
+            "Eure Zahl jetzt – nur für euch, im Kopf.",
+            "Und nach drei Minuten? Wenn sie gleich geblieben ist, ist das auch ein Ergebnis."
+          ],
+          "punkte": [
+            "5 Dinge, die du siehst",
+            "4 Dinge, die du hörst",
+            "3 Dinge, die du spürst – Stuhl, Füße, Kleidung",
+            "2 Dinge, die du riechst",
+            "1 Sache, die du schmeckst"
+          ],
+          "tipp": "Wer die Übung aus Jahr 1 kennt, darf sie heute anleiten; die Leitung übernimmt nur, wenn es stockt. Das zeigt den Neuen nebenbei, dass Skills hier allen gehören."
+        },
+        {
+          "titel": "Réckbléck und der neue Skills-Pass",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Die neuen Skills-Pässe für dieses Jahr austeilen und Namen eintragen lassen. Erster Eintrag: ein Satz zu heute, dazu der Stempel. Blitzlicht mit einem Wort: Wie fühlt sich der Neustart an? Pässe kommen in die Box, die Kompass-Blätter in die Mappen; der Vertrag in A3 bleibt hängen.",
+          "sagen": [
+            "Ein Wort: Wie fühlt sich der Neustart an?",
+            "Für den Pass: Woran hast du heute gemerkt, dass diese Gruppe funktionieren kann – oder was brauchst du noch?"
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Nächstes Mal wird es sportlich: Bei der Skills-Olympiade tretet ihr in Teams gegeneinander an – zieht Kleidung an, in der ihr euch bewegen könnt.",
+      "hintergrund": "Nach einer langen Pause und mit neuen Mitgliedern fängt eine Gruppe ein Stück weit von vorn an: Sie klärt wieder, wer dazugehört und welche Regeln gelten. Tuckman (1965) beschrieb die Entwicklung kleiner Gruppen in Phasen, die mit Orientierung beginnen; Tuckman und Jensen (1977) ergänzten später die Phase der Auflösung. Ein Neubeginn nach dem Sommer verbindet beides – Abschied von der alten Gruppe und Orientierung in der neuen. Zusammenhalt ist nach Yalom und Leszcz (2005) eine Grundbedingung dafür, dass Gruppen wirken; er wächst, wenn Alte und Neue früh etwas miteinander tun. Regeln, die die Gruppe selbst prüft und neu formuliert, nehmen das Bedürfnis nach Selbstbestimmung und Zugehörigkeit ernst (Deci & Ryan, 2000). Die Kompass-Rose zeigt von Anfang an, worum es im Jahr geht; offen benannte Ziele gehören zu den Merkmalen wirksamer Programme (Durlak et al., 2011).",
+      "quellen": [
+        "Tuckman, B. W. (1965). Developmental sequence in small groups. Psychological Bulletin, 63(6), 384–399.",
+        "Tuckman, B. W. & Jensen, M. A. C. (1977). Stages of small-group development revisited. Group & Organization Studies, 2(4), 419–427.",
+        "Yalom, I. D. & Leszcz, M. (2005). The Theory and Practice of Group Psychotherapy (5th ed.). New York: Basic Books.",
+        "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268.",
+        "Durlak, J. A., Weissberg, R. P., Dymnicki, A. B., Taylor, R. D. & Schellinger, K. B. (2011). The impact of enhancing students’ social and emotional learning: A meta-analysis of school-based universal interventions. Child Development, 82(1), 405–432."
+      ],
+      "achtung": "Nach den Ferien kann viel passiert sein – eine Trennung, ein Umzug, ein Todesfall, ein Schulwechsel, der nicht freiwillig war. Im Check-in und im Kugellager ist „weiter“ immer erlaubt, und die Fragen sind so gewählt, dass auch „nichts Besonderes“ eine gute Antwort ist. Neue werden weder von der Leitung noch von der Gruppe nach dem Grund ihrer Teilnahme gefragt. Über Jugendliche, die nicht mehr dabei sind, sagt die Leitung nur, was vorher abgesprochen wurde. Wirkt jemand sichtbar belastet, nicht vor der Gruppe nachfragen, sondern nach der Einheit unter vier Augen. Erzählt jemand von Gewalt, Missbrauch, Selbstverletzung oder Suizidgedanken, wird das nicht in der Gruppe vertieft: die Person nach der Einheit ruhig ansprechen, nichts versprechen, was man nicht halten kann, nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) am selben Tag informieren; bei akuter Gefahr Notruf 112 und die Person nicht allein lassen."
+    },
+    {
+      "id": "j2-e02",
+      "nr": 2,
+      "jahr": 2,
+      "modul": "j2-m0",
+      "titel": "Die Skills-Olympiade",
+      "kurz": "In Teams treten die Jugendlichen in fünf Disziplinen gegeneinander an – Atem, Sinne, Kopf, Stopp, Ich-Botschaft – und frischen die Anspannungsskala auf; Neue lernen die Skills von den anderen.",
+      "dauer": 100,
+      "ziele": [
+        "schätzen ihre Anspannung von 0 bis 100 ein und erklären, welche Art von Skill bei Grün, Gelb und Rot noch hilft",
+        "wenden fünf Skills aus Jahr 1 im Wettkampf an und beantworten Quizfragen dazu",
+        "erklären Neuen einen Skill so, dass sie ihn vormachen können",
+        "wählen den Skill, der zu ihnen passt, und tragen ihn als ersten Eintrag in den Skills-Kompass ein"
+      ],
+      "material": [
+        "Gefühlsrad mit Namensklammern, Bodenlinie aus Einheit 1 mit den Karten 0, 30, 70 und 100",
+        "Flipchart: das Anspannungs-Thermometer mit drei Zonen, die Fair-Play-Regeln und eine Punktetafel (Teams × Disziplinen)",
+        "Schülerblatt „Mein Olympia-Pass“ für jede Person, Klemmbretter oder feste Unterlagen",
+        "Atem: für jede Person eine Daunenfeder (Bastelbedarf), eine Stoppuhr (Handy)",
+        "Sinne: vier nummerierte Riechstreifen in Zip-Beuteln – Zitrone, Pfefferminze, Lavendel, Orange – und ein blickdichter Stoffbeutel mit fünf Gegenständen, etwa Kastanie, Knetball, Schlüssel, Tannenzapfen, Radiergummi",
+        "Stopp: Kreppband für eine Startlinie in 5 m Abstand",
+        "Ich-Botschaft: vier Kärtchen mit den Du-Botschaften aus dem Schritt „Disziplinen 2 bis 5“",
+        "Ampelkarten aus Einheit 1, je Team eine grüne und eine rote",
+        "Skills-Kompass, Skills-Pässe, Stempel; kleine Preise ohne Essen, etwa Sticker oder Medaillen aus Pappe",
+        "Imbiss und Getränke (Allergien beachten)"
+      ],
+      "vorbereitung": [
+        "Die fünf Stationen im Raum oder in der Turnhalle aufbauen und mit einem Schild markieren; bei gutem Wetter geht alles auch draußen, nur die Riechstreifen brauchen Windschatten.",
+        "Vorher nach Asthma und Duftallergien fragen; wer betroffen ist, lässt die Duftprobe aus und nimmt die Zeit.",
+        "Teams planen: bei vier bis sechs Jugendlichen zwei Teams, bei sieben oder acht drei. Neue gleichmäßig verteilen, Konfliktpaare trennen.",
+        "Thermometer, Fair-Play-Regeln und Punktetafel auf das Flipchart zeichnen."
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-olympiade",
+        "skills-kompass",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in an der Linie"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Rückblick: unser Vertrag – heute die Olympiade"
+        },
+        {
+          "min": "15–30",
+          "phase": "input",
+          "titel": "Die Anspannungsskala auffrischen"
+        },
+        {
+          "min": "30–45",
+          "phase": "aktiv",
+          "titel": "Eröffnung und Disziplin 1: Atem"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Halbzeit mit Imbiss"
+        },
+        {
+          "min": "60–85",
+          "phase": "aktiv",
+          "titel": "Disziplinen 2 bis 5: Sinne, Kopf, Stopp, Ich-Botschaft"
+        },
+        {
+          "min": "85–93",
+          "phase": "skill",
+          "titel": "Skill: runterfahren nach dem Wettkampf"
+        },
+        {
+          "min": "93–100",
+          "phase": "abschluss",
+          "titel": "Siegerehrung, Kompass und Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in an der Linie",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Gefühlsrad und Klammern wie in Einheit 1. Dann stellt sich jede Person zu ihrer Zahl an die Bodenlinie und nennt dort Wort und Zahl. Die Leitung beginnt und steht ehrlich, zum Beispiel bei 35. Wer nicht an die Linie will, nennt die Zahl vom Platz aus. Zum Schluss einmal auf die Linie schauen: Wo steht die Gruppe heute?",
+          "sagen": [
+            "Klammer ans Rad, dann an die Linie: Wo steht ihr gerade?",
+            "Die Zahl bleibt eure. Niemand kommentiert, niemand vergleicht."
+          ],
+          "tipp": "Die Linie nicht abkleben: Sie wird gleich für die Skala und nach dem Wettkampf noch einmal gebraucht.",
+          "wennEsKippt": "Drängeln sich alle auf der 0, weil es lässig aussieht, das stehen lassen – nach der Olympiade stellen sich alle noch einmal an dieselbe Linie, dann wird ehrlich verglichen.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Rückblick: unser Vertrag – heute die Olympiade",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "Auf den neuen Gruppenvertrag zeigen und eine Person bitten, die Regel vorzulesen, die heute besonders zählt: Wir lachen miteinander, nicht übereinander. Dann den Tag ankündigen: fünf Disziplinen, fünf Skills aus Jahr 1, Punkte fürs Team. Für die Neuen gilt: Niemand muss die Skills schon können – wer sie kennt, bekommt Punkte fürs Erklären.",
+          "sagen": [
+            "Heute zählt diese Regel doppelt – auch wenn jemand die Feder nach zwei Sekunden verliert.",
+            "Wer neu ist, muss nichts können. Die anderen müssen es euch erklären, und dafür gibt es Punkte."
+          ]
+        },
+        {
+          "titel": "Die Anspannungsskala auffrischen",
+          "dauer": 15,
+          "phase": "input",
+          "text": "Am Flipchart das Thermometer mit drei Zonen zeigen und von der Gruppe füllen lassen: Was passiert bei Grün, Gelb und Rot in Kopf und Körper, und was hilft dort noch? Eine Person aus Jahr 1 zeigt das Handmodell; die Leitung ergänzt nur, was fehlt. Dann liest die Leitung Situationen aus der Liste vor, und alle stellen sich an ihre Zahl auf der Linie. Nach jeder Situation zwei Fragen an Freiwillige: Warum stehst du hier? Was würde dir bei dieser Zahl helfen? Die Antworten sind oft schon Skills, die gleich in der Olympiade vorkommen. Zum Schluss den Olympia-Pass austeilen: Die Zonen stehen dort noch einmal, und jede Person trägt ihre Zahl vom Check-in ein.",
+          "sagen": [
+            "Macht eine Faust mit dem Daumen innen. Die Finger sind der Teil, der nachdenkt und bremst. Bei Rot klappen sie hoch – dann denkt der Alarm, nicht ihr.",
+            "Erst runter, dann reden: Das gilt für euch, für eure Freunde und übrigens auch für Erwachsene.",
+            "Dieselbe Situation ist für die eine eine 20 und für den anderen eine 80. Keiner liegt falsch."
+          ],
+          "tabelle": {
+            "spalten": [
+              "Anspannung",
+              "Was passiert?",
+              "Was hilft?"
+            ],
+            "zeilen": [
+              [
+                "0–30 (grün)",
+                "Ich kann klar denken, zuhören und reden.",
+                "Reden, Probleme lösen, Skills üben"
+              ],
+              [
+                "30–70 (gelb)",
+                "Es wird eng: gereizt, unruhig oder ganz still.",
+                "Ablenken: Kopf-Skills, Sinne, Musik, Bewegung"
+              ],
+              [
+                "70–100 (rot)",
+                "Der Körper übernimmt: Herzrasen, Hitze, Tunnelblick.",
+                "Körper- und Sinnes-Skills, raus aus der Situation, Hilfe holen"
+              ]
+            ]
+          },
+          "punkte": [
+            "Du bekommst die Mathearbeit zurück: 22 von 60.",
+            "Im Klassenchat taucht ein Foto von dir auf, das du nicht kennst.",
+            "Im Praktikum sollst du zum ersten Mal allein ans Telefon gehen.",
+            "Deine Mutter schreibt: Wir müssen heute Abend reden.",
+            "Dein Akku ist bei 2 Prozent, und du weißt nicht, wann der letzte Bus fährt.",
+            "Dein Team verliert in der letzten Minute."
+          ],
+          "tipp": "Für die Neuen die drei Zonen auf dem Olympia-Pass zeigen; dort stehen sie noch einmal. Wer aus Jahr 1 kommt, erklärt heute die Zonen – das festigt sie mehr als jede Wiederholung durch die Leitung.",
+          "wennEsKippt": "Wird es zu theoretisch, sofort an die Linie gehen: Wie sieht eine 20 aus, wie eine 60, wie eine 95? Wer mag, spielt eine Zahl kurz vor, die anderen raten.",
+          "blatt": "skills-olympiade"
+        },
+        {
+          "titel": "Eröffnung und Disziplin 1: Atem",
+          "dauer": 15,
+          "phase": "aktiv",
+          "text": "Die Leitung teilt die Teams ein und sagt offen, dass sie heute einteilt, damit Alt und Neu gemischt sind. Jedes Team gibt sich in zwei Minuten einen Namen, dann lesen alle gemeinsam die Fair-Play-Regeln vom Flipchart. Jede Disziplin läuft gleich ab: Eine Person aus Jahr 1 erklärt den Neuen den Skill in höchstens 30 Sekunden, alle probieren ihn eine Minute aus, dann folgt der Wettkampf, danach zwei Quizfragen aus der Tabelle und das Kreuz im Olympia-Pass. Disziplin 1 ist die Feder-Probe: Nach einer Minute Kastenatmung für alle hat jedes Team drei Versuche; wer dran ist, hält eine Daunenfeder nur mit dem Atem von unten in der Luft, höchstens 20 Sekunden, und das andere Team stoppt die Zeit. Die Punkte kommen sofort an die Tafel.",
+          "sagen": [
+            "Nicht fest pusten, sondern lang und gleichmäßig – genau wie beim Ausatmen, wenn ihr runterkommen wollt.",
+            "Grün heißt stimmt, Rot heißt stimmt nicht. Auf drei hebt jedes Team eine Karte."
+          ],
+          "punkte": [
+            "Fair Play: Stopp gilt sofort. Auslachen kostet das eigene Team einen Punkt. Wer nicht mitmachen mag, wird Coach oder nimmt die Zeit. Bei Streit entscheidet die Leitung.",
+            "Erklär-Bonus: 2 Punkte, wenn eine neue Person den Skill danach richtig vormacht. Ohne Neue: 2 Punkte für die klarste Erklärung.",
+            "Atem: je volle 5 Sekunden 1 Punkt, höchstens 4 pro Versuch, drei Versuche pro Team.",
+            "Sinne: je erkannter Duft und je erkannter Gegenstand 1 Punkt.",
+            "Kopf: je Buchstabe in 60 Sekunden 1 Punkt.",
+            "Stopp: je 1 Punkt für Hand hoch, Blick, feste Stimme, kein Lächeln und keine Entschuldigung; zwei Versuche pro Team.",
+            "Ich-Botschaft: je 1 Punkt für Gefühl, Situation, Grund und Wunsch, 1 Bonuspunkt ohne „immer“ und „nie“; zwei Du-Botschaften pro Team.",
+            "Quiz: je richtige Karte 1 Punkt."
+          ],
+          "tabelle": {
+            "spalten": [
+              "Disziplin",
+              "Aussage",
+              "Lösung"
+            ],
+            "zeilen": [
+              [
+                "Atem",
+                "Langes Ausatmen bremst den Körper – das Herz wird langsamer.",
+                "stimmt"
+              ],
+              [
+                "Atem",
+                "Atem-Skills wirken nur mit geschlossenen Augen.",
+                "stimmt nicht"
+              ],
+              [
+                "Sinne",
+                "Ein starker Reiz wie Kälte oder ein kräftiger Duft hilft auch bei hoher Anspannung.",
+                "stimmt"
+              ],
+              [
+                "Sinne",
+                "5-4-3-2-1 geht nur, wenn es ganz still ist.",
+                "stimmt nicht"
+              ],
+              [
+                "Kopf",
+                "Kopf-Skills wie das ABC-Spiel helfen bei Gelb besser als bei Rot.",
+                "stimmt"
+              ],
+              [
+                "Kopf",
+                "Bei 90 hilft es am meisten, gründlich über das Problem nachzudenken.",
+                "stimmt nicht"
+              ],
+              [
+                "Stopp",
+                "Ein Stopp wirkt klarer, wenn man dabei lächelt.",
+                "stimmt nicht"
+              ],
+              [
+                "Stopp",
+                "Wer Stopp hört, hört auf – auch beim Spaß.",
+                "stimmt"
+              ],
+              [
+                "Ich-Botschaft",
+                "„Ich finde, du bist egoistisch“ ist eine echte Ich-Botschaft.",
+                "stimmt nicht"
+              ],
+              [
+                "Ich-Botschaft",
+                "Eine Ich-Botschaft sagt auch, was ich mir wünsche.",
+                "stimmt"
+              ]
+            ]
+          },
+          "tipp": "Jede Person bekommt eine eigene Feder – das ist hygienischer und spart Diskussionen. Wird jemandem beim Pusten schwindelig, hört er sofort auf und atmet normal; der Versuch zählt trotzdem.",
+          "wennEsKippt": "Streiten Teams über Sekunden, entscheidet die Leitung sofort und ohne Diskussion – so steht es in den Fair-Play-Regeln. Pustet jemand so heftig, dass es um Kraft statt um Ruhe geht, kurz anhalten: Punkte gibt es nur, solange die Feder schwebt, nicht, wenn sie davonfliegt.",
+          "blatt": "skills-olympiade"
+        },
+        {
+          "titel": "Halbzeit mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Vor dem Essen trägt jede Person ihre Zahl der Halbzeit in den Olympia-Pass ein. Dann gemeinsam essen und trinken, Fenster auf. Die Punktetafel bleibt sichtbar, das Thema ruht."
+        },
+        {
+          "titel": "Disziplinen 2 bis 5: Sinne, Kopf, Stopp, Ich-Botschaft",
+          "dauer": 25,
+          "phase": "aktiv",
+          "text": "Die Teams ziehen gemeinsam von Station zu Station; jede Disziplin dauert etwa sechs Minuten und folgt demselben Ablauf wie die Feder-Probe. Die Leitung ist Schiedsrichterin und trägt die Punkte sofort ein. Bei der Stopp-Station geht immer die Leitung auf die Person zu, nie ein Jugendlicher; wer nicht stoppen möchte, wird Coach und sagt vorher an, worauf das Team achten soll. Wird die Zeit knapp, entfällt bei der letzten Station der Wettkampf, und jedes Team sagt nur eine Ich-Botschaft. Die Disziplinen im Überblick:",
+          "sagen": [
+            "Wer erklärt den Neuen, wie das geht? Dreißig Sekunden, die Uhr läuft.",
+            "Beim ABC zählt jede Sprache – Lëtzebuergesch, Portugiesisch, Französisch, alles.",
+            "Beim Stopp gibt es Punkte fürs Klarsein, nicht fürs Lautsein."
+          ],
+          "punkte": [
+            "Sinne – Nase und Hände: Das Team riecht an vier nummerierten Riechstreifen und rät die Düfte. Dann greift eine Person in den Beutel, ohne hinzuschauen, und nennt die fünf Gegenstände.",
+            "Kopf – ABC unter Störung: Das Team wählt Tiere, Städte oder Essen und nennt reihum zu jedem Buchstaben ein Wort, von A an. Das andere Team darf freundlich stören – reden und Fragen stellen, nicht schreien und nicht berühren.",
+            "Stopp – das Stopp, das ankommt: Die Leitung geht aus fünf Metern langsam auf eine Person zu, die sie stoppt: Hand hoch, Blick zur Person, feste Stimme, ein kurzer Satz.",
+            "Ich-Botschaft – das Übersetzungsbüro: Die Leitung liest eine Du-Botschaft vor, das Team hat 60 Sekunden für eine Ich-Botschaft, eine Person sagt sie.",
+            "Du-Botschaften: „Immer nimmst du mein Ladekabel.“ – „Du hörst mir nie zu.“ – „Du hast mich im Chat schon wieder ignoriert.“ – „Nie klopfst du, bevor du in mein Zimmer kommst.“"
+          ],
+          "tipp": "Bei nur zwei Jugendlichen gibt es ein Team, das gegen die Rekorde der Leitung antritt: Die Leitung legt bei jeder Disziplin einen Wert vor. Bei Regen und wenig Platz laufen alle Stationen im Sitzkreis nacheinander; bei wenig Energie entfällt das Stören beim ABC.",
+          "wennEsKippt": "Kippt der Ehrgeiz in Auslachen oder Beleidigungen, das Spiel eine Minute anhalten, auf die Fair-Play-Regeln zeigen und den angekündigten Punkt abziehen. Reagiert jemand bei der Stopp-Station erschrocken oder erstarrt, sofort abbrechen, Abstand herstellen und die Person Coach sein lassen; später unter vier Augen nachfragen.",
+          "blatt": "skills-olympiade"
+        },
+        {
+          "titel": "Skill: runterfahren nach dem Wettkampf",
+          "dauer": 8,
+          "phase": "skill",
+          "text": "Alle stellen sich noch einmal an die Linie: Wo ist die Zahl jetzt, nach dem Wettkampf? Meist ist sie höher als beim Check-in – genau das ist heute Thema. Dann wählt jede Person auf ihrem Olympia-Pass den Skill, der am besten gepasst hat, und macht ihn drei Minuten für sich: Kastenatmung, eine Feder, der Knetball, ABC im Kopf. Danach zurück an die Linie, die Zahlen im Pass eintragen und das Fazit schreiben (Aufgabe 4). Kurz auswerten: Was hat die Zahl hochgetrieben, was hat sie gesenkt?",
+          "sagen": [
+            "Wettkampf treibt die Zahl hoch, auch wenn es Spaß macht. Welcher Skill holt euch wieder runter?",
+            "Drei Minuten, jede Person für sich, ohne Reden."
+          ],
+          "tipp": "Die Leitung macht selbst mit und nennt ihre Zahlen zuerst – auch beim Schiedsrichtern bleibt niemand bei 20.",
+          "blatt": "skills-olympiade"
+        },
+        {
+          "titel": "Siegerehrung, Kompass und Skills-Pass",
+          "dauer": 7,
+          "phase": "abschluss",
+          "text": "Die Punkte zusammenzählen und das Siegerteam ehren; dazu vergibt die Leitung zwei Sonderpreise: für die beste Erklärung und für das fairste Team. Dann schlägt jede Person den Skills-Kompass auf und schreibt ins Feld „0 · Wieder ankommen“ ihren Skill für neue Situationen – neue Klasse, neue Gruppe, erster Tag im Praktikum – und wann er hilft. Zum Schluss der Satz im Skills-Pass und der Stempel.",
+          "sagen": [
+            "Welcher Skill ist euer Joker, wenn ihr irgendwo neu seid und die Zahl hochgeht?",
+            "Gewonnen hat heute Team … – und alle haben ihre Skills wieder im Kopf."
+          ],
+          "blatt": "skills-kompass"
+        }
+      ],
+      "bruecke": "Nächstes Mal beginnt das erste große Thema des Jahres: Was macht einen Menschen wertvoll – und was hat das mit Noten, Likes und Aussehen zu tun?",
+      "hintergrund": "Nach den Sommerferien sind Skills nicht verschwunden, aber schwerer abrufbar. Wer Gelerntes aktiv abruft und anwendet, behält es besser als durch bloßes Wiederholen (Roediger & Karpicke, 2006), und Üben mit zeitlichem Abstand festigt nachhaltiger als geballtes Lernen (Cepeda et al., 2006) – die Olympiade nutzt beides. Die Anspannungsskala von 0 bis 100 gehört zu den Grundwerkzeugen des DBT-Skillstrainings für Jugendliche (Fleischhaker et al., 2011): Bei hoher Erregung helfen Skills über Körper und Sinne, bei mittlerer auch Kopf-Skills. Das Handmodell macht anschaulich, warum Nachdenken bei Rot kaum noch gelingt (Siegel & Bryson, 2011). Wer einen Skill anderen erklärt und vormacht, erlebt sich als kompetent; Erfolgserfahrungen und das Lernen am Modell Gleichaltriger stärken die Selbstwirksamkeit (Bandura, 1977).",
+      "quellen": [
+        "Roediger, H. L. & Karpicke, J. D. (2006). Test-enhanced learning: Taking memory tests improves long-term retention. Psychological Science, 17(3), 249–255.",
+        "Cepeda, N. J., Pashler, H., Vul, E., Wixted, J. T. & Rohrer, D. (2006). Distributed practice in verbal recall tasks: A review and quantitative synthesis. Psychological Bulletin, 132(3), 354–380.",
+        "Fleischhaker, C., Sixt, B. & Schulz, E. (2011). DBT-A: Dialektisch-behaviorale Therapie für Jugendliche. Berlin: Springer.",
+        "Siegel, D. J. & Bryson, T. P. (2011). The Whole-Brain Child. New York: Delacorte.",
+        "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215."
+      ],
+      "achtung": "Wettkämpfe können kippen: Wer verliert oder ausgelacht wird, erlebt schnell alte Kränkungen. Die Leitung teilt die Teams ein, kündigt den Punktabzug für Auslachen vorher an und achtet darauf, dass die Neuen nicht als die vorgeführt werden, die nichts können. Bei der Stopp-Station geht immer die Leitung auf die Person zu, langsam und mit Abstand; wer erstarrt oder erschrickt, bricht sofort ab und wird später unter vier Augen gefragt, wie es ihm geht – solche Reaktionen können auf belastende Erfahrungen hinweisen. Vor der Duftprobe nach Asthma und Allergien fragen, Öle nur auf Riechstreifen. Erzählt jemand von Gewalt, Missbrauch, Selbstverletzung oder Suizidgedanken, wird das nicht in der Gruppe vertieft: die Person nach der Einheit ruhig ansprechen, nichts versprechen, was man nicht halten kann, nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) am selben Tag informieren; bei akuter Gefahr Notruf 112 und die Person nicht allein lassen."
+    }
+  ]
+}

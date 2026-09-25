@@ -1,9 +1,9 @@
 # Toolbox (ISA-App) – Offline-Version (zum Doppelklicken)
 
-**`ISA-App.html`** ist die komplette Toolbox in **einer einzigen Datei** – 180
+**`ISA-App.html`** ist die komplette Toolbox in **einer einzigen Datei** – 287
 Arbeitsblätter (Spielschule bis Sekundarschule, jedes mit Seite für die
-Lehrperson), der **Skills-Kurs** (Kursjahr 1: 30 Einheiten und 9 Joker, Schritt für
-Schritt ausgearbeitet, mit 51 Schülerblättern), alle 613 Materialien, Suche und Filter, der Material-Finder, die
+Lehrperson), der **Skills-Kurs** (drei Kursjahre mit 100 Einheiten und 17 Jokern, Schritt für
+Schritt ausgearbeitet, mit 158 Schülerblättern), alle 613 Materialien, Suche und Filter, der Material-Finder, die
 Team-Ablage und der PDF-Export sind eingebettet (auch die Schriften). Es wird **kein Internet und kein Server**
 gebraucht; die Datei stellt keine Netzwerkanfragen.
 
@@ -34,7 +34,7 @@ dem Dateinamen Materialien vor:
 | `#blatt=<id>` | Öffnet das Arbeitsblatt (Reiter „Arbeitsblätter“), z. B. `#blatt=wutvulkan` (ids wie in `toolbox-index.js` → `blaetter`). |
 | `#seite=einheiten` / `#team` | Reiter „Einheiten“ bzw. „Team-Material“. |
 | `#kurs` | Reiter „Skills-Kurs“ mit der nächsten Einheit und dem Jahresweg. |
-| `#kurs=<id>` | Öffnet eine Einheit des Skills-Kurses, z. B. `#kurs=j1-e25` (Joker: `j1-j01` …). |
+| `#kurs=<id>` | Öffnet eine Einheit des Skills-Kurses, z. B. `#kurs=j1-e25` oder `#kurs=j2-e10` (Joker: `j1-j01`, `j3-j02` …). |
 | `#kurs=grundlagen` | Grundlagen des Kurses (Haltung, Aufbau, Rituale). |
 | `#eldib=V-13` | Arbeitsblätter und Materialien zum ELDiB-Ziel V-13. Oben erscheint der entfernbare Filter-Chip „ELDiB-Ziel V-13 Aktivitäten“. |
 | `#eldib=K-16,SOZ-32` | Materialien zu **einem der** Ziele (kommagetrennt, beliebig viele). Ein Chip je Ziel. |

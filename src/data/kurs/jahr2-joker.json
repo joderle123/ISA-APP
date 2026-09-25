@@ -1,0 +1,1162 @@
+{
+  "einheiten": [
+    {
+      "id": "j2-j01",
+      "nr": 1,
+      "jahr": 2,
+      "modul": "joker",
+      "joker": true,
+      "passt": "jederzeit, über zwei Termine; am besten liegt der Kochtermin direkt vor den Ferien",
+      "titel": "Kochen im Team",
+      "kurz": "Die Gruppe plant ein Essen, das alle mitessen können, übt Messer- und Hygieneregeln und kocht beim zweiten Termin mit festen Rollen – samt Skills für die Momente, in denen etwas schiefgeht.",
+      "dauer": 200,
+      "ziele": [
+        "handeln ein Menü aus, das trotz Allergien, Essensregeln und Budget alle mitessen können",
+        "übernehmen eine feste Rolle und stimmen sich beim Kochen mit Küchenrufen und Küchen-Stopps ab",
+        "wenden Hygiene- und Messerregeln sicher an",
+        "nutzen in Frust-Momenten die Stopp-Ampel oder einen anderen Skill und werten die Zusammenarbeit aus"
+      ],
+      "material": [
+        "Schülerblatt „Unser Küchenplan“: ein Exemplar in A3 für die Gruppe, dazu je Person eines in A4",
+        "Schülerblatt „Küchenrollen und Frust-Ampel“: Seite 1 einmal auf festem Papier, Rollenkarten ausgeschnitten; Seite 2 je Person",
+        "Ampelkarten für den Menü-Rat: je Person eine grüne, eine gelbe und eine rote Karte",
+        "Tafelbild „Vier Menüs zur Wahl“ (Schritt 3) auf A3 oder an der Tafel",
+        "Für die Küchen-Stationen: Gurke, Karotten, Äpfel, Bananen, Orangen; vier Schneidebretter, kleine Küchenmesser, feuchte Tücher als Unterlage, eine Schüssel; Öl, Zimt, Seife, Papiertücher; fünf bis sechs verpackte Lebensmittel mit Zutatenliste",
+        "Zutaten nach Einkaufsliste, Geld nach den Regeln der Einrichtung, ein Umschlag für den Kassenzettel",
+        "Küche: Töpfe, Pfanne, Kochlöffel, Messbecher, Küchenwaage, Küchenwecker, trockene Topflappen, Schürzen, Haargummis, Einmalhandschuhe",
+        "Erste-Hilfe-Kasten mit Pflastern, Löschdecke, Notfallsets bei bekannten Allergien, Liste mit Allergien und Essensregeln",
+        "Spülmittel, Geschirrtücher, Müllbeutel, Frischhaltedosen für Reste",
+        "Gefühlsrad (A3), Anspannungsskala, Skills-Pässe, Stempel"
+      ],
+      "vorbereitung": [
+        "Für Termin 2 eine Küche reservieren (Lehrküche oder Küche einer Wohngruppe), mindestens 100 Minuten einschließlich Abwasch; Herd, Backofen und Kühlschrank vorher prüfen. Gibt es keine Küche, kommen nur die Wraps in Frage: Sie gelingen mit einer Kochplatte oder ganz kalt mit Kichererbsen aus der Dose.",
+        "Allergien, Unverträglichkeiten und Essensregeln (vegetarisch, halal, kein Schweinefleisch, Fastenzeiten) nach Hausregel schriftlich bei den Eltern erfragen und für die Gruppe eine Liste ohne Namen vorbereiten. Bei schweren Allergien mit den Eltern klären, wie die Person mitkocht, und das Notfallset bereithalten.",
+        "Budget und Abrechnung mit der Einrichtung klären.",
+        "Standort von Löschdecke, Feuerlöscher, Erste-Hilfe-Kasten und Notausgang kennen; die Messer vor und nach jedem Termin zählen.",
+        "Im Team klären, wer mit Messern arbeitet: Jugendliche, die gerade sehr angespannt sind oder schon einmal mit Gegenständen gedroht haben, bekommen ohne Aufsehen eine Rolle ohne Messer.",
+        "Zwischen den Terminen einkaufen – allein oder mit zwei Jugendlichen aus der Gruppe, wenn Eltern und Einrichtung einverstanden sind."
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-kuechenplan",
+        "skills-kuechenrollen",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Gefühlsrad, Anspannung und Wunschgericht"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Zwei Termine, ein Essen"
+        },
+        {
+          "min": "15–45",
+          "phase": "uebung",
+          "titel": "Menü-Rat mit Ampelkarten und Einkaufsliste"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–80",
+          "phase": "aktiv",
+          "titel": "Küchen-Stationen: Messer, Hände, Etiketten"
+        },
+        {
+          "min": "80–90",
+          "phase": "uebung",
+          "titel": "Rollen wählen, Zeitplan und Frust-Plan"
+        },
+        {
+          "min": "90–95",
+          "phase": "skill",
+          "titel": "Skill: achtsam essen"
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Réckbléck und Skills-Pass"
+        },
+        {
+          "min": "100–105",
+          "phase": "ankommen",
+          "titel": "Termin 2: Wort und Zahl in der Küche"
+        },
+        {
+          "min": "105–115",
+          "phase": "bruecke",
+          "titel": "Hände waschen, Rollen, Küchenrufe"
+        },
+        {
+          "min": "115–155",
+          "phase": "aktiv",
+          "titel": "Kochen im Team mit zwei Küchen-Stopps"
+        },
+        {
+          "min": "155–175",
+          "phase": "pause",
+          "titel": "Gemeinsam essen"
+        },
+        {
+          "min": "175–185",
+          "phase": "aktiv",
+          "titel": "Aufräumen: Jede Rolle hat eine Station"
+        },
+        {
+          "min": "185–190",
+          "phase": "skill",
+          "titel": "Skill am Spülbecken: kaltes Wasser"
+        },
+        {
+          "min": "190–197",
+          "phase": "uebung",
+          "titel": "Küchen-Bilanz und Danke-Runde"
+        },
+        {
+          "min": "197–200",
+          "phase": "abschluss",
+          "titel": "Skills-Pass und Reste verteilen"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: Gefühlsrad, Anspannung und Wunschgericht",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Stühle im Kreis, Gefühlsrad und Anspannungsskala in der Mitte. Reihum zeigt jede Person auf ein Wort und nennt ihre Anspannung von 0 bis 100; die Leitung beginnt. Dazu eine leichte Zusatzfrage: Welches Gericht würdest du gern einmal selbst kochen können? Die Antworten nicht bewerten und nicht notieren – sie sind ein Einstieg, keine Abstimmung.",
+          "sagen": [
+            "Wort, Zahl – und ein Gericht, das du gern einmal selbst hinkriegen würdest.",
+            "Bei mir: neugierig, 30, und ich wollte schon immer eine richtige Bouneschlupp kochen können."
+          ],
+          "tipp": "Wer noch nie gekocht hat, sagt das oft mit einem Scherz. Das gelassen aufnehmen: Genau dafür sind die zwei Termine da.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Zwei Termine, ein Essen",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "Den Plan für beide Termine zeigen: heute planen, üben und Rollen verteilen, beim nächsten Mal kochen, essen und aufräumen. Offen sagen, worum es neben dem Essen geht: In einer Küche wird es eng, heiß und manchmal hektisch – ein guter Ort, um Absprachen und Frust-Skills unter echten Bedingungen zu üben. Wer die Stopp-Ampel aus Modul 3 kennt, erklärt sie den anderen in zwei Sätzen; sonst stellt die Leitung sie kurz vor: rot heißt stopp, gelb heißt denken, grün heißt handeln.",
+          "sagen": [
+            "Heute planen wir, nächstes Mal wird gekocht. Gegessen wird, was wir selbst gemacht haben.",
+            "In jeder Küche geht mal etwas schief. Entscheidend ist, was ihr dann macht."
+          ]
+        },
+        {
+          "titel": "Menü-Rat mit Ampelkarten und Einkaufsliste",
+          "dauer": 30,
+          "phase": "uebung",
+          "text": "Zuerst die Bedingungen klären: Die Leitung liest die Liste mit Allergien und Essensregeln ohne Namen vor, die Gruppe trägt sie in Aufgabe 1 ein; dazu kommen Budget, Zeit und Küche. Dann die vier Menüs vorstellen (Tabelle); ein eigener Vorschlag darf dazukommen, wenn er die Bedingungen erfüllt. Zu jedem Menü zeigen alle gleichzeitig eine Ampelkarte: Grün heißt gern, Gelb heißt geht, Rot heißt geht für mich nicht. Gewählt wird nicht das Menü mit den meisten grünen Karten, sondern das mit den wenigsten roten. Wer Rot zeigt, sagt, was sich ändern müsste; die Änderung kommt in die letzte Spalte. Zum Schluss die Einkaufsliste schreiben und mit dem Budget vergleichen.",
+          "sagen": [
+            "Wir suchen nicht das Lieblingsessen aller, sondern ein Essen, bei dem niemand leer ausgeht.",
+            "Du zeigst Rot? Okay – was müsste anders sein, damit daraus Gelb wird?",
+            "Eine Allergie ist ein Nein, über das wir nicht abstimmen. Ein ‚mag ich nicht‘ ist ein Auftrag, eine Variante zu finden."
+          ],
+          "punkte": [
+            "Wraps für sechs: 12 Weizenwraps, 400 g Hähnchenbrust oder 2 Dosen Kichererbsen, 2 Paprika, 1 Gurke, 4 Tomaten, 1 Salatkopf, 1 kleine Dose Mais, 500 g Naturjoghurt, 1 Knoblauchzehe, 1 Zitrone, Öl, Salz, Pfeffer, Paprikapulver.",
+            "Pasta für sechs: 750 g Nudeln, 1 Zwiebel, 2 Knoblauchzehen, 1 Zucchini, 1 Paprika, 2 Dosen gehackte Tomaten, Olivenöl, Oregano, Salz, Pfeffer, 150 g Reibekäse extra; für den Salat 1 Salatkopf, Essig, Öl.",
+            "Bouneschlupp für sechs: 750 g grüne Bohnen (auch tiefgekühlt), 600 g Kartoffeln, 1 Zwiebel, 1 Stange Lauch, 1,5 l Gemüsebrühe, 200 ml Sahne und 150 g Speckwürfel nach Wunsch, Salz, Pfeffer; dazu 1 bis 2 Baguettes.",
+            "Blechpizza für sechs: 2 Rollen Pizzateig aus dem Kühlregal, 1 Dose passierte Tomaten, 250 g Mozzarella oder Reibekäse, Belag nach Wahl (Paprika, Mais, Pilze, Oliven, Thunfisch, Hähnchenaufschnitt), Oregano."
+          ],
+          "tabelle": {
+            "spalten": [
+              "Menü",
+              "Kochzeit",
+              "Aufpassen bei",
+              "So essen alle mit"
+            ],
+            "zeilen": [
+              [
+                "Wraps zum Selberfüllen: Gemüse, Hähnchen oder Kichererbsen, Joghurt-Dip",
+                "ca. 35 Min.",
+                "Gluten (Wraps), Milch (Dip)",
+                "Alles in Schüsseln, jede Person füllt selbst; Hähnchen halal kaufen oder Kichererbsen nehmen"
+              ],
+              [
+                "Pasta mit Gemüse-Tomatensoße und Salat",
+                "ca. 35 Min.",
+                "Gluten, oft Ei (Nudeln), Milch (Käse)",
+                "Käse extra reichen; glutenfreie Nudeln im eigenen Topf"
+              ],
+              [
+                "Bouneschlupp: Luxemburger Bohnensuppe mit Kartoffeln, dazu Brot",
+                "ca. 45 Min.",
+                "Sellerie (Brühe), Gluten (Brot), Milch (Sahne)",
+                "Speck getrennt anbraten und extra reichen; Brühe ohne Sellerie"
+              ],
+              [
+                "Blechpizza mit Feldern",
+                "ca. 40 Min.",
+                "Gluten (Teig), Milch (Käse)",
+                "Jede Person belegt ein Feld; für Allergien ein eigenes Feld mit eigenem Löffel"
+              ]
+            ]
+          },
+          "tipp": "Die Ampelkarten verhindern, dass die Lautesten entscheiden: Alle zeigen gleichzeitig, und ein begründetes Rot wiegt mehr als drei begeisterte Grün.",
+          "wennEsKippt": "Streiten zwei Lager, etwa Pizza gegen Wraps, nicht abstimmen lassen, sondern fragen, was jede Seite an ihrem Menü eigentlich mag – oft geht es ums Selbermachen oder um Käse, und beides lässt sich verbinden. Macht sich jemand über die Essensregeln anderer lustig, sofort und ruhig stoppen: Über das Essen anderer wird hier nicht gelacht.",
+          "blatt": "skills-kuechenplan"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Gemeinsam essen, Fenster auf. Die Leitung isst mit und lässt das Thema ruhen; wer mag, streitet über die beste Pizzeria in der Gegend."
+        },
+        {
+          "titel": "Küchen-Stationen: Messer, Hände, Etiketten",
+          "dauer": 20,
+          "phase": "aktiv",
+          "text": "Drei Stationen, drei Kleingruppen, Wechsel alle sechs Minuten auf ein Signal; vorher waschen sich alle die Hände. Die Messer-Station betreut die Leitung durchgehend, die beiden anderen laufen nach kurzer Erklärung selbstständig; an jeder Station liegen die Küchenregeln (Küchenplan, Seite 2). An der Messer-Station schneiden die Jugendlichen Gurke, Karotte und Obst mit Krallengriff und Brückengriff; das Obst kommt in eine Schüssel für den Skill am Ende. An der Hände-Station reibt sich jede Person einen Teelöffel Öl mit etwas Zimt in die Hände, wäscht sie fünf Sekunden wie immer und schaut, wo der Zimt kleben bleibt; danach richtig waschen, 20 bis 30 Sekunden mit Seife. An der Etiketten-Station suchen die Jugendlichen auf verpackten Lebensmitteln die Allergene, die in der Zutatenliste hervorgehoben sind, und prüfen sie gegen die Liste aus Aufgabe 1.",
+          "sagen": [
+            "Krallengriff: Fingerspitzen einrollen, die Knöchel führen das Messer. Dann kommt die Klinge nicht an die Finger.",
+            "Wo klebt der Zimt noch? Meistens an den Daumen, zwischen den Fingern und auf dem Handrücken."
+          ],
+          "punkte": [
+            "Krallengriff: Die haltende Hand bildet eine Kralle, die Fingerspitzen sind eingerollt, die Knöchel führen die Klinge.",
+            "Brückengriff: Daumen und Finger bilden eine Brücke über dem Gemüse, geschnitten wird unter der Brücke.",
+            "Das Brett liegt auf einem feuchten Tuch und rutscht nicht.",
+            "Messer nie ins Spülwasser legen; mit der Spitze nach unten tragen und dabei „Messer“ sagen.",
+            "Fällt ein Messer: zurücktreten, nicht danach greifen."
+          ],
+          "tipp": "Mit zwei Leitungen die Messer-Station doppeln; mit nur zwei Jugendlichen laufen alle drei Stationen nacheinander gemeinsam. Beim Zimt-Test nicht ins Gesicht fassen.",
+          "wennEsKippt": "Wird mit einem Messer herumgealbert oder gefuchtelt, sofort ruhig unterbrechen: Messer ablegen, einen Schritt zurück. Die Person wechselt ohne Diskussion an eine andere Station; das Gespräch darüber folgt später unter vier Augen. Bei Messern geht Sicherheit vor guter Stimmung.",
+          "blatt": "skills-kuechenplan"
+        },
+        {
+          "titel": "Rollen wählen, Zeitplan und Frust-Plan",
+          "dauer": 10,
+          "phase": "uebung",
+          "text": "Die Rollenkarten auslegen und vorlesen lassen. Jede Person nennt eine Wunschrolle und eine zweite Wahl; die Leitung gleicht aus und entscheidet, wer mit Messern arbeitet. Wer die Rollen Rezept und Zeit hat, schreibt danach mit der Leitung den Zeitplan rückwärts (Küchenplan, Aufgabe 4). Die anderen lesen die Frust-Ampel und schreiben ihren Frust-Plan: Was könnte mich in meiner Rolle auf 70 bringen – und was tue ich dann?",
+          "sagen": [
+            "Welche Rolle reizt dich – und welche wäre deine zweite Wahl?",
+            "Denk an einen Moment in der Küche, der dich auf 70 bringen könnte. Was machst du dann, bevor du etwas sagst?"
+          ],
+          "tipp": "Rollen ohne Messer nicht als Trostpreis vergeben: Wer den Tisch deckt oder die Zeit im Blick hat, trägt genauso zum Essen bei.",
+          "wennEsKippt": "Wollen alle an den Herd, auslosen und festhalten, dass beim nächsten Kochen getauscht wird. Will jemand gar keine Rolle, eine kleine mit klarem Ende anbieten, etwa Wasser und Gläser auf den Tisch.",
+          "blatt": "skills-kuechenrollen"
+        },
+        {
+          "titel": "Skill: achtsam essen",
+          "dauer": 5,
+          "phase": "skill",
+          "text": "Die Obstschüssel von der Messer-Station in die Mitte stellen. Jede Person nimmt ein Stück und isst es in zwei Minuten, ohne zu reden: erst anschauen, dann riechen, dann langsam kauen und schmecken. Danach kurz sammeln, was anders war als sonst. Erklären: Wer achtsam isst, holt die Aufmerksamkeit in den Moment zurück – ein Skill, der auch nach einem hektischen Tag hilft.",
+          "sagen": [
+            "Schau dir das Stück an, als hättest du so etwas noch nie gesehen.",
+            "Was hast du geschmeckt, das dir sonst entgeht?"
+          ],
+          "tipp": "Das Obst vorher nach der Allergie-Liste auswählen. Wer nicht essen möchte, macht die Übung nur mit Anschauen und Riechen."
+        },
+        {
+          "titel": "Réckbléck und Skills-Pass",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Blitzlicht mit einem Satz: Worauf freust du dich beim Kochen – und was könnte schwierig werden? Danach Eintrag in den Skills-Pass und Stempel. Blätter und Rollenkarten bleiben im Raum; die Leitung nimmt die Einkaufsliste mit.",
+          "sagen": [
+            "Ein Satz: Worauf freust du dich – und was könnte schwierig werden?"
+          ],
+          "blatt": "skills-pass"
+        },
+        {
+          "titel": "Termin 2: Wort und Zahl in der Küche",
+          "dauer": 5,
+          "phase": "ankommen",
+          "text": "Die Gruppe trifft sich in der Küche, Taschen und Jacken bleiben draußen. Im Stehen nennt jede Person ein Wort aus dem Gefühlsrad und ihre Anspannung von 0 bis 100, dazu in einem Satz: Was bringt mich in der Küche am schnellsten auf 70? Die Leitung beginnt und bleibt ehrlich.",
+          "sagen": [
+            "Wort, Zahl – und was dich hier drin auf 70 bringen könnte.",
+            "Bei mir ist es, wenn alle gleichzeitig reden und irgendwo etwas zischt."
+          ],
+          "tipp": "Ist die Energie niedrig oder sind nur zwei Jugendliche da, übernimmt die Leitung die Rolle Zeit, und das Menü wird vereinfacht – Wraps brauchen die wenigsten Arbeitsschritte.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Hände waschen, Rollen, Küchenrufe",
+          "dauer": 10,
+          "phase": "bruecke",
+          "text": "Alle binden lange Haare zusammen, legen Ringe ab, ziehen Schürzen an und waschen die Hände. Jede Person legt ihre Rollenkarte an ihren Platz; Zeitplan, Küchenregeln und Frust-Ampel hängen gut sichtbar. Dann die Küchenrufe einführen und einmal üben: Wer mit etwas Heißem oder einem Messer hinter jemandem vorbeigeht, sagt es an, und die andere Person antwortet. Zum Schluss die Küchen-Stopps erklären: Zweimal ruft die Person mit der Rolle Zeit „Küchen-Stopp“, dann halten alle 30 Sekunden inne, und jede Rolle sagt in einem Satz, wo sie steht.",
+          "sagen": [
+            "Wer mit etwas Heißem hinter euch vorbeigeht, sagt: Heiß, hinter dir. Ihr antwortet: Ja. So reden Profis in jeder Restaurantküche.",
+            "Beim Küchen-Stopp legt ihr kurz alles ab. Wer braucht Hilfe, liegen wir in der Zeit, wie hoch ist die Zahl?"
+          ],
+          "punkte": [
+            "„Heiß“ – ich trage etwas Heißes.",
+            "„Messer“ – ich trage ein Messer, Spitze nach unten.",
+            "„Hinter dir“ – ich gehe hinter dir vorbei.",
+            "Die Antwort ist immer: „Ja“."
+          ],
+          "tipp": "Die Küchenrufe wirken albern, bis sie zum ersten Mal einen Zusammenstoß verhindern. Die Leitung nutzt sie selbst konsequent.",
+          "blatt": "skills-kuechenrollen"
+        },
+        {
+          "titel": "Kochen im Team mit zwei Küchen-Stopps",
+          "dauer": 40,
+          "phase": "aktiv",
+          "text": "Die Gruppe kocht nach Rezept und Zeitplan; wer die Rolle Rezept hat, sagt an, was als Nächstes dran ist. Die Leitung kocht nicht selbst, sondern sichert Herd und Messer und fragt nach, statt einzugreifen: Was sagt das Rezept? Wer kann helfen? Nach etwa 15 Minuten und zehn Minuten vor dem Essen kommt der Küchen-Stopp: Alle legen ab, jede Rolle sagt einen Satz zum Stand, jede Person nennt ihre Zahl. Geht etwas schief, hilft die Frust-Ampel: rot – Messer ablegen, Topf von der Platte; gelb – wie schlimm ist es wirklich; grün – retten, Hilfe holen oder annehmen und weitermachen. Die Leitung merkt sich zwei, drei Momente, in denen die Zusammenarbeit gut geklappt hat.",
+          "sagen": [
+            "Was sagt das Rezept? Lies mal vor.",
+            "Küchen-Stopp: Alles ablegen. Wo steht ihr, wer braucht Hilfe, welche Zahl?",
+            "Angebrannt ist ärgerlich, aber selten ein Drama. Was können wir retten?"
+          ],
+          "tipp": "Viele Pannen lassen sich retten: Brennt etwas am Topfboden an, nicht umrühren, sondern den oberen Teil in einen sauberen Topf geben. Ist eine Soße zu flüssig, länger köcheln lassen.",
+          "wennEsKippt": "Übernimmt jemand die Aufgabe eines anderen, den Küchen-Stopp vorziehen und fragen, was jede Person gerade braucht. Wer nur zuschaut oder am Handy hängt, bekommt eine kleine, klare Aufgabe mit Ende, etwa: Deck bitte in fünf Minuten sechs Plätze. Schneidet sich jemand, sofort versorgen; wer möchte, macht danach mit Handschuh an einer anderen Station weiter. Wird es insgesamt zu laut, Herd klein stellen und eine Minute Stille: nur hören, was zischt und brodelt."
+        },
+        {
+          "titel": "Gemeinsam essen",
+          "dauer": 20,
+          "phase": "pause",
+          "text": "Wer die Rolle Tisch und Ordnung hat, bittet zu Tisch; alle fangen gemeinsam an. Probieren ist freiwillig, Kommentare bleiben fair: „Ist nicht meins“ ist in Ordnung, über das Essen anderer wird nicht gelästert. Die Leitung isst mit und lässt das Thema ruhen. Reste kommen in Dosen."
+        },
+        {
+          "titel": "Aufräumen: Jede Rolle hat eine Station",
+          "dauer": 10,
+          "phase": "aktiv",
+          "text": "Jede Rolle übernimmt eine Aufräum-Station: spülen, abtrocknen, Flächen und Herd wischen, Müll trennen, Boden fegen, Tisch abräumen. Wer die Rolle Hygiene hat, zählt mit der Leitung die Messer. Wer fertig ist, fragt, wo er helfen kann. Die Küche wird so verlassen, wie die Gruppe sie vorgefunden hat.",
+          "sagen": [
+            "Wer fertig ist, fragt, bevor er irgendwo mit anpackt: Wo kann ich helfen?",
+            "Messer zählen: Sind alle wieder da?"
+          ],
+          "wennEsKippt": "Verschwinden einzelne beim Aufräumen, nicht hinterherrufen. In der Bilanz ohne Namen fragen, was beim Aufräumen gefehlt hat; meist regelt die Gruppe das beim nächsten Mal selbst."
+        },
+        {
+          "titel": "Skill am Spülbecken: kaltes Wasser",
+          "dauer": 5,
+          "phase": "skill",
+          "text": "Zum Schluss einen Skill zeigen, den es in jeder Küche gibt: Jede Person schätzt ihre Anspannung, hält die Handgelenke 20 bis 30 Sekunden unter kaltes Wasser und achtet darauf, was sich verändert. Danach die Zahl neu schätzen. Erklären: Kälte ist ein schneller Skill für Rot, der auch zu Hause, in der Schule oder im Praktikum funktioniert.",
+          "sagen": [
+            "Zahl vorher? Jetzt die Handgelenke unters kalte Wasser, bis ich Stopp sage.",
+            "Und die Zahl jetzt? Wo könntest du das auch einmal brauchen?"
+          ],
+          "tipp": "Wer Kälte unangenehm findet, nimmt kühles statt kaltes Wasser und atmet dabei langsam aus; es geht um das bewusste Spüren."
+        },
+        {
+          "titel": "Küchen-Bilanz und Danke-Runde",
+          "dauer": 7,
+          "phase": "uebung",
+          "text": "Jede Person füllt still die Küchen-Bilanz aus (Küchenrollen, Seite 2). Dann nennt die Leitung ihre zwei, drei beobachteten Glanzmomente – konkret und so, dass nicht immer dieselben gelobt werden. Danach die Danke-Runde: Jede Person dankt einer anderen für etwas Konkretes aus der Küche, zum Beispiel: Danke, dass du die Zwiebeln geschnitten hast, obwohl dir die Augen getränt haben.",
+          "sagen": [
+            "Einen Dank, ganz konkret: wem, und wofür?",
+            "Mir ist aufgefallen, wie ihr beim zweiten Küchen-Stopp die Aufgaben neu verteilt habt, ohne dass ich etwas sagen musste."
+          ],
+          "tipp": "Damit niemand übrig bleibt, geht der Dank reihum an die Person links; wer mag, dankt danach noch jemand anderem.",
+          "wennEsKippt": "Kommen nur Floskeln wie „Danke für alles“, nachfragen: Wofür genau? Ein einziger Moment reicht.",
+          "blatt": "skills-kuechenrollen"
+        },
+        {
+          "titel": "Skills-Pass und Reste verteilen",
+          "dauer": 3,
+          "phase": "abschluss",
+          "text": "Eintrag in den Skills-Pass: Welcher Skill hat mir in der Küche geholfen? Dazu der Stempel. Die Reste fair verteilen; wer fastet oder heute nicht mitessen konnte, bekommt zuerst eine Portion für zu Hause.",
+          "sagen": [
+            "Ein Satz in den Pass: Welcher Skill hat dir heute in der Küche geholfen?"
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Nächstes Mal geht es im Kurs weiter – und wer mag, erzählt, wo er den Küchen-Stopp oder die Frust-Ampel inzwischen außerhalb der Küche gebraucht hat.",
+      "hintergrund": "Gemeinsames Kochen ist eine Ernstsituation im Kleinen: Am Ende steht ein echtes Ergebnis, und alle merken sofort, ob die Absprachen getragen haben. Solche Erfolgserlebnisse stärken die Selbstwirksamkeit mehr als Zuspruch von außen (Bandura, 1977). Zugleich fordert die Küche genau die exekutiven Funktionen – planen, mehrere Schritte im Kopf behalten, Impulse bremsen –, die unter Zeitdruck und Stress zuerst nachlassen (Diamond, 2013). Gerade deshalb eignet sie sich zum Üben: Frust entsteht hier zuverlässig, bleibt aber meist harmlos. Die Frust-Ampel greift auf, was Linehan (2015) als STOP-Skill für Krisenmomente beschreibt: innehalten, zurücktreten, beobachten, dann bewusst handeln. Das gemeinsame Essen am Ende ist mehr als eine Belohnung; der Zusammenhalt einer Gruppe gehört zu ihren stärksten Wirkfaktoren (Yalom & Leszcz, 2005).",
+      "quellen": [
+        "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
+        "Diamond, A. (2013). Executive functions. Annual Review of Psychology, 64, 135–168.",
+        "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford.",
+        "Yalom, I. D. & Leszcz, M. (2005). The Theory and Practice of Group Psychotherapy (5th ed.). New York: Basic Books."
+      ],
+      "achtung": "Allergien und Essensregeln vorher schriftlich klären und in beiden Terminen dabeihaben; bei schweren Allergien Kreuzkontakt vermeiden (eigene Bretter, Löffel und Töpfe) und das Notfallset griffbereit halten. Religiöse und kulturelle Essensregeln werden respektiert und sind nie Anlass für Witze. Niemand wird zum Essen gedrängt, und Kommentare zu Portionen, Kalorien oder Figur haben in der Küche keinen Platz: Manche Jugendliche haben ein schwieriges Verhältnis zum Essen. Wer auffällig wenig isst oder Essen meidet, wird nicht vor der Gruppe angesprochen, sondern später allein. Die Leitung bleibt immer in der Küche, Messer werden gezählt, Verletzungen nach den Erste-Hilfe-Regeln des Hauses versorgt. Erzählt jemand, dass es zu Hause oft nichts zu essen gibt, oder wirkt jemand regelmäßig hungrig, das nicht in der Gruppe vertiefen, sondern die zuständige Leitung (Responsable) informieren; bei Hinweisen auf Vernachlässigung oder eine andere Gefährdung nach dem internen Schutzkonzept handeln."
+    },
+    {
+      "id": "j2-j02",
+      "nr": 2,
+      "jahr": 2,
+      "modul": "joker",
+      "joker": true,
+      "passt": "im Frühling oder Sommer, als halber Tag (zwei Termine am Stück)",
+      "titel": "Stadt-Rallye mit Auftrag",
+      "kurz": "In Teams erkunden die Jugendlichen die Umgebung: Sie fragen nach, planen Wege, einigen sich und testen einen Skill im Alltag – und sammeln dabei alles für einen Guide, der Neuen den Start erleichtert.",
+      "dauer": 200,
+      "ziele": [
+        "sprechen fremde Erwachsene höflich an und halten auch ein Nein aus",
+        "planen einen Weg und halten Absprachen zu Zeit, Treffpunkt und Handy ohne direkte Aufsicht ein",
+        "einigen sich im Team, wenn sie verschiedener Meinung sind, und nutzen dabei die Stopp-Ampel",
+        "benennen, welche Skills aus diesem Jahr ihnen unterwegs geholfen haben"
+      ],
+      "material": [
+        "Schülerblatt „Der Rallye-Auftrag“: je Team ein vollständiges Exemplar für unterwegs, dazu Seite 2 je Person für die Auswertung; Klemmbretter, Klarsichthüllen, Stifte",
+        "Ein Plan oder eine Skizze des Gebiets mit eingezeichneten Grenzen und der Basis, je Team eine Kopie",
+        "Ein Handy je Team (eigenes Gerät mit Einverständnis oder Gerät der Einrichtung); die Liste aller Nummern hat die Leitung",
+        "Diensthandy der Leitung, geladen, dazu eine Powerbank; eine Uhr je Team",
+        "Erste-Hilfe-Tasche, Notfallmedikamente der Jugendlichen, Liste der Notfallnummern",
+        "Picknick und Wasser, Decken, Müllbeutel; Sonnencreme, Kappen oder Regenjacken je nach Wetter",
+        "Plakat (A2) „Unser Guide für Neue“ mit sechs Feldern, dicke Stifte, Klebepunkte in zwei Farben",
+        "Eine rote und eine grüne Karte (A5) für den Skill zum Schluss",
+        "Gefühlsrad (A3), Anspannungsskala, Skills-Pässe, Stempel"
+      ],
+      "vorbereitung": [
+        "Das Einverständnis der Eltern nach Hausregel einholen, ausdrücklich auch dafür, dass Teams im abgesteckten Gebiet ohne direkte Begleitung unterwegs sind. Jugendliche ohne dieses Einverständnis sind im Team, das die Leitung begleitet.",
+        "Das Gebiet vorher ablaufen: höchstens fünf bis sieben Gehminuten um die Basis, klare Grenzen (Straßen, Plätze), keine großen Straßen ohne Ampel. Die Basis gut sichtbar wählen, mit Schatten und einer Toilette in der Nähe.",
+        "Die Aufträge an den Ort anpassen: ein Ziel für Auftrag 3 festlegen und prüfen, wo es Apotheke, Bushaltestelle und ruhige Orte gibt.",
+        "Wenn möglich, zwei, drei Geschäfte oder die Gemeindeverwaltung kurz vorwarnen, dass Jugendliche eine Frage stellen werden; im Haus zwei, drei Kolleginnen und Kollegen für den Probelauf einweihen.",
+        "Im Team einen Notfallplan absprechen: Was geschieht, wenn ein Team nicht zurückkommt oder nicht erreichbar ist, und wer wird informiert?",
+        "Das Wetter prüfen: Bei Gewitter oder großer Hitze die Rallye verschieben."
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-stadt-rallye",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Gefühlsrad, Anspannung und Mut-Zahl"
+        },
+        {
+          "min": "10–25",
+          "phase": "bruecke",
+          "titel": "Der Auftrag, die Teams und die Regeln"
+        },
+        {
+          "min": "25–40",
+          "phase": "aktiv",
+          "titel": "Probelauf im Haus: fragen, finden, melden"
+        },
+        {
+          "min": "40–50",
+          "phase": "aktiv",
+          "titel": "Mit der Ampel-Regel zur Basis"
+        },
+        {
+          "min": "50–120",
+          "phase": "aktiv",
+          "titel": "Stern-Rallye: sechs Aufträge"
+        },
+        {
+          "min": "120–140",
+          "phase": "pause",
+          "titel": "Picknick an der Basis"
+        },
+        {
+          "min": "140–160",
+          "phase": "uebung",
+          "titel": "Unser Guide für Neue"
+        },
+        {
+          "min": "160–170",
+          "phase": "aktiv",
+          "titel": "Rückweg als Lob-Spaziergang"
+        },
+        {
+          "min": "170–190",
+          "phase": "uebung",
+          "titel": "Welche Skills waren unterwegs im Einsatz?"
+        },
+        {
+          "min": "190–195",
+          "phase": "skill",
+          "titel": "Skill: rote Ampel, langer Atem"
+        },
+        {
+          "min": "195–200",
+          "phase": "abschluss",
+          "titel": "Réckbléck und Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: Gefühlsrad, Anspannung und Mut-Zahl",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Stühle im Kreis, Gefühlsrad und Anspannungsskala in der Mitte. Reihum nennt jede Person ein Wort und ihre Anspannung, dazu eine Mut-Zahl von 0 bis 10: Wie leicht fällt es mir heute, eine fremde Person etwas zu fragen? Die Leitung beginnt. Die Mut-Zahlen merkt sie sich für die Rollen: Wer niedrig liegt, muss heute nicht als Erste oder Erster sprechen.",
+          "sagen": [
+            "Wort, Zahl – und wie leicht es dir heute fällt, jemanden Fremdes anzusprechen, von 0 bis 10.",
+            "Bei mir 7. Auf Luxemburgisch vielleicht nur 5."
+          ],
+          "tipp": "Niedrige Mut-Zahlen sind kein Problem, sondern eine gute Auskunft. Heute zählt, was jede Person sich zutraut, nicht was die Mutigsten schaffen.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Der Auftrag, die Teams und die Regeln",
+          "dauer": 15,
+          "phase": "bruecke",
+          "text": "Den Auftrag erklären: Die Gruppe erstellt einen Guide für Jugendliche, die neu in die Einrichtung kommen – was man hier wissen muss und wo man Hilfe, Ruhe und den Bus findet. Die Leitung bildet Teams zu zwei oder drei Personen. Dann das Prinzip der Stern-Rallye erklären: Jeder Auftrag beginnt und endet an der Basis, dort gibt es den nächsten. Die Regeln auf dem Rallye-Bogen gemeinsam lesen, die Lücken füllen, die Handynummern austauschen und unterschreiben. Zum Schluss die Teamrollen verteilen; sie wechseln nach jedem Auftrag.",
+          "sagen": [
+            "Stellt euch vor, nächste Woche kommt jemand Neues. Was hättet ihr an eurem ersten Tag gern gewusst?",
+            "Die Regeln sind nicht dafür da, euch zu kontrollieren. Sie sorgen dafür, dass wir so etwas überhaupt machen können."
+          ],
+          "punkte": [
+            "Wir bleiben als Team zusammen – niemand geht allein los oder zurück.",
+            "Das Handy ist für Anrufe mit der Leitung, den Notruf 112, den Fahrplan und Fotos ohne fremde Menschen; nichts wird gepostet.",
+            "Kopfhörer bleiben in der Tasche.",
+            "Bei Rot wird gewartet, auch wenn kein Auto kommt.",
+            "Kein fremdes Auto, keine fremde Wohnung, kein Hof ohne Erlaubnis.",
+            "Wird uns etwas unangenehm, gehen wir sofort zur Basis oder rufen an."
+          ],
+          "wennEsKippt": "Macht sich jemand über die Regeln lustig oder will nicht unterschreiben, nicht diskutieren, sondern die Wahl lassen: mit Unterschrift im Team unterwegs oder ohne Unterschrift im Team, das die Leitung begleitet. Fast alle unterschreiben dann.",
+          "blatt": "skills-stadt-rallye"
+        },
+        {
+          "titel": "Probelauf im Haus: fragen, finden, melden",
+          "dauer": 15,
+          "phase": "aktiv",
+          "text": "Erst dort üben, wo es sicher ist. In Paaren eine Minute lang durchspielen, wie man jemanden anspricht: Blickkontakt, grüßen, fragen, ob die Person kurz Zeit hat, Frage stellen, bedanken – und einmal bewusst ein Nein bekommen. Dann erledigt jedes Team im Haus einen Mini-Auftrag nach dem Stern-Prinzip: eine eingeweihte Kollegin oder einen Kollegen fragen, was Neue hier wissen sollten, Erste-Hilfe-Kasten und Fluchtplan finden und nach höchstens acht Minuten zurück sein. Kurz auswerten: Was hat beim Ansprechen geholfen?",
+          "sagen": [
+            "Sprecht in der Sprache, in der ihr euch am wohlsten fühlt – Luxemburgisch, Französisch, Deutsch, Portugiesisch oder Englisch.",
+            "Ein Nein oder ‚keine Zeit‘ ist keine Niederlage. Danke sagen, weitergehen, nächste Person."
+          ],
+          "tipp": "Die Paare üben einmal bewusst die Absage: Eine Person sagt freundlich, dass sie keine Zeit hat. Wer das einmal gehört hat, fürchtet es unterwegs weniger.",
+          "wennEsKippt": "Traut sich in einem Team niemand zu fragen, die Rolle nicht erzwingen: Die Leitung geht beim Probelauf mit und stellt die erste Frage selbst, die Jugendlichen stellen die zweite. Unterwegs darf dieses Team zu zweit fragen."
+        },
+        {
+          "titel": "Mit der Ampel-Regel zur Basis",
+          "dauer": 10,
+          "phase": "aktiv",
+          "text": "Gemeinsam zur Basis gehen, die Leitung vorn. Unterwegs gilt die Ampel-Regel: An jeder roten Fußgängerampel wartet die Gruppe, auch wenn kein Auto kommt, und jede Person atmet einmal langsam aus. An der Basis die Grenzen des Gebiets auf dem Plan und in der Wirklichkeit zeigen, die Uhren vergleichen und ein Zeichen für „alle zurück“ vereinbaren, zum Beispiel einen Anruf oder eine Nachricht an alle Teams.",
+          "sagen": [
+            "Rot heißt: stehen bleiben und einmal langsam ausatmen. Genau so funktioniert die Stopp-Ampel im Kopf.",
+            "Das ist unser Gebiet: bis zur Bäckerei, bis zum Kreisverkehr, bis zum Park. Weiter geht heute niemand."
+          ],
+          "tipp": "Die Basis so wählen, dass die Leitung sitzen, die Wege überblicken und im Notfall schnell telefonieren kann: eine Bank am Platz, der Eingang der Bibliothek, der Rand des Parks."
+        },
+        {
+          "titel": "Stern-Rallye: sechs Aufträge",
+          "dauer": 70,
+          "phase": "aktiv",
+          "text": "Jedes Team bekommt an der Basis seinen ersten Auftrag; die Teams starten mit verschiedenen Nummern, damit nicht alle gleichzeitig im selben Geschäft stehen. Für jeden Auftrag gibt es höchstens zwölf Minuten, danach kommt das Team zurück, auch wenn es nicht fertig ist. An der Basis berichtet es in zwei Sätzen, die Leitung zeichnet auf dem Bogen ab und nennt den nächsten Auftrag; die Rollen wechseln. Die Leitung bleibt an der Basis und notiert, welches Team wann losgeht; bei zwei Leitungen geht eine zwischen den Teams hin und her. Ist ein Team fünf Minuten über der Zeit, ruft die Leitung an; ist es nicht erreichbar, gilt der abgesprochene Notfallplan.",
+          "sagen": [
+            "Zwölf Minuten, dann seid ihr zurück – fertig oder nicht. Was nicht geklappt hat, erzählt ihr mir auch.",
+            "Wer hat bei diesem Auftrag gesprochen, wer geschrieben? Beim nächsten wird getauscht."
+          ],
+          "punkte": [
+            "1 · Hilfe finden: die nächste Apotheke und einen Ort, an dem Menschen helfen können – Skill: Hilfe holen.",
+            "2 · Nachfragen: eine Person, die hier arbeitet, fragen, was Neue unbedingt kennen sollten – Skill: ansprechen.",
+            "3 · Weg planen: der Weg von der Basis zu einem Ziel, das die Leitung festlegt, mit Haltestelle, Linie und nächster Abfahrt – Skill: planen.",
+            "4 · Ruhe-Ort: einen Ort finden, an dem man zur Ruhe kommt, und dort zwei Minuten einen Skill ausprobieren – Skill: runterkommen.",
+            "5 · Sprachen-Jagd: Schilder, Plakate oder Speisekarten in fünf Sprachen finden und ohne Menschen fotografieren – Skill: Vielfalt sehen.",
+            "6 · Lieblingsort: sich auf den Ort einigen, den das Team Neuen empfiehlt, und dort Schatten oder Hände fotografieren – Skill: sich einigen."
+          ],
+          "tipp": "Bei wenig Energie oder Hitze nur die Aufträge 1, 2, 4 und 6 und mehr Zeit an der Basis. Mit nur zwei Jugendlichen bilden beide ein Team, und die Leitung folgt in Sichtweite, ohne einzugreifen.",
+          "wennEsKippt": "Kommt ein Team zerstritten zurück, nicht sofort weiterschicken, sondern die Stopp-Ampel an der Basis nutzen: Jede Person sagt in einem Satz, was sie will, dann entscheidet das Team, wie es weitergeht. Wird ein Team unterwegs beleidigt oder unangenehm angesprochen, holt die Leitung alle Teams zurück, bespricht die Lage und entscheidet, ob es weitergeht; das Erlebnis wird später in Ruhe aufgegriffen.",
+          "blatt": "skills-stadt-rallye"
+        },
+        {
+          "titel": "Picknick an der Basis",
+          "dauer": 20,
+          "phase": "pause",
+          "text": "Picknick auf Decken oder Bänken, Wasser trinken, Schatten suchen. Die Leitung isst mit und lässt die Aufträge ruhen; erzählt wird, was die Teams erzählen wollen. Den Müll sammelt die Gruppe gemeinsam ein."
+        },
+        {
+          "titel": "Unser Guide für Neue",
+          "dauer": 20,
+          "phase": "uebung",
+          "text": "Das Plakat mit sechs Feldern auslegen: Hilfe, Tipp von hier, Weg und Bus, Ruhe-Ort, Sprachen, Lieblingsort. Reihum berichten die Teams zu jedem Feld ihr bestes Ergebnis, und gemeinsam wird entschieden, was aufs Plakat kommt; wer schreibt, wechselt bei jedem Feld. Die Fotos druckt die Leitung später aus und klebt sie dazu. Das fertige Plakat hängt im Raum und wird der nächsten neuen Person gezeigt.",
+          "sagen": [
+            "Was davon hätte euch an eurem ersten Tag hier wirklich geholfen?",
+            "Zwei Teams, zwei Lieblingsorte – wie einigen wir uns?"
+          ],
+          "tipp": "Bei Regen oder Wind das Plakat erst zurück im Raum gestalten und die Zeit an der Basis für ein längeres Picknick nutzen.",
+          "wennEsKippt": "Einigen sich die Teams beim Lieblingsort nicht, beide Orte aufnehmen und dazuschreiben, für wen welcher passt, etwa ruhig oder belebt. Auch das ist eine Lösung, mit der alle leben können."
+        },
+        {
+          "titel": "Rückweg als Lob-Spaziergang",
+          "dauer": 10,
+          "phase": "aktiv",
+          "text": "Auf dem Rückweg gehen die Jugendlichen zu zweit mit jemandem aus dem eigenen Team. Jede Person sagt der anderen eine Sache, die diese heute gut gemacht hat – konkret, nicht allgemein. In Dreierteams wechseln die Paare nach der Hälfte des Weges. An Ampeln gilt weiter die Ampel-Regel.",
+          "sagen": [
+            "Sag deiner Teampartnerin oder deinem Teampartner eine Sache, die heute richtig gut war. Konkret, bitte.",
+            "Wie fühlt es sich an, so etwas zu hören?"
+          ]
+        },
+        {
+          "titel": "Welche Skills waren unterwegs im Einsatz?",
+          "dauer": 20,
+          "phase": "uebung",
+          "text": "Zurück im Raum füllt jede Person still die Einschätzung auf dem Rallye-Bogen aus. An der Tafel stehen fünf Spalten: ansprechen, planen, sich einigen, runterkommen, Hilfe holen. Jede Person klebt einen roten Punkt zu dem Skill, der ihr heute am meisten abverlangt hat, und einen grünen zu dem, der am besten geklappt hat. Dann das Lernzonen-Modell zeigen (Tabelle) und fragen: Was war heute schwer und hat trotzdem geklappt? Zum Schluss klären, wo derselbe Skill nächste Woche gebraucht wird; wer mag, ergänzt ihn im Skills-Kompass.",
+          "sagen": [
+            "Was war heute schwer – und hat trotzdem geklappt?",
+            "Wo braucht ihr genau diesen Skill nächste Woche wieder: im Lycée, im Bus, im Praktikum?"
+          ],
+          "tabelle": {
+            "spalten": [
+              "Zone",
+              "So fühlt es sich an",
+              "Beispiel von heute"
+            ],
+            "zeilen": [
+              [
+                "Komfortzone",
+                "vertraut, sicher, wenig Neues",
+                "den Weg zur Basis gehen"
+              ],
+              [
+                "Lernzone",
+                "aufregend, etwas wackelig, aber machbar",
+                "zum ersten Mal eine Verkäuferin ansprechen"
+              ],
+              [
+                "Panikzone",
+                "zu viel, Kopf leer, nur noch weg",
+                "allein und unvorbereitet in ein Büro gehen"
+              ]
+            ]
+          },
+          "tipp": "Die Lernzone liegt für jede Person woanders. Wer heute zum ersten Mal etwas gefragt hat, hat genauso viel geschafft wie jemand, der drei Geschäfte abgeklappert hat.",
+          "wennEsKippt": "Ist die Luft raus, die Einschätzung weglassen und nur die Punkte kleben lassen; das Gespräch auf eine einzige Frage kürzen: Welcher Moment heute war gut?",
+          "blatt": "skills-stadt-rallye"
+        },
+        {
+          "titel": "Skill: rote Ampel, langer Atem",
+          "dauer": 5,
+          "phase": "skill",
+          "text": "Die Leitung hält abwechselnd eine rote und eine grüne Karte hoch: Bei Rot atmen alle langsam und lange aus, bei Grün atmen sie normal weiter; drei Runden. Dann formuliert jede Person für sich einen Wenn-dann-Satz: Wenn ich an einer roten Ampel stehe, dann atme ich zweimal langsam aus. So wird jede rote Ampel auf dem Schulweg zur Erinnerung an die Stopp-Ampel im Kopf.",
+          "sagen": [
+            "Rot: langsam ausatmen, länger, als ihr einatmet. Grün: normal weiter.",
+            "Wie viele rote Ampeln liegen auf eurem Schulweg? So oft könnt ihr üben, ohne dass es jemand merkt."
+          ]
+        },
+        {
+          "titel": "Réckbléck und Skills-Pass",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Blitzlicht mit einem Satz: Welcher Moment der Rallye bleibt? Danach Eintrag in den Skills-Pass, gern der Wenn-dann-Satz zur roten Ampel, und Stempel. Die Leitung dankt allen konkret für das Einhalten der Absprachen und sagt, wann das Plakat mit den Fotos fertig ist.",
+          "sagen": [
+            "Ein Moment von heute, der bleibt?"
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Nächstes Mal geht es im Kurs weiter – zählt bis dahin, wie oft ihr an einer roten Ampel an euren langen Atem gedacht habt.",
+      "hintergrund": "Skills, die nur im Gruppenraum geübt werden, bleiben leicht dort. Die Rallye holt sie in den Alltag, aber mit Netz: Die Basis ist nie weit, und jede Aufgabe ist zeitlich begrenzt. Eigene Erfolgserlebnisse sind die stärkste Quelle von Selbstwirksamkeit (Bandura, 1977). Nach dem Lernzonenmodell von Senninger (2000) wächst man dort, wo es aufregend, aber noch machbar ist; deshalb wählen die Jugendlichen ihre Rollen mit und dürfen zu zweit fragen. Klare Regeln sind kein Misstrauen: In Gegenwart Gleichaltriger gehen Jugendliche deutlich mehr Risiken ein als allein (Gardner & Steinberg, 2005). Der Wenn-dann-Satz zur roten Ampel nutzt einen alltäglichen Auslöser als Erinnerung; solche Vorsätze erhöhen die Wahrscheinlichkeit, dass ein Vorhaben tatsächlich umgesetzt wird (Gollwitzer, 1999).",
+      "quellen": [
+        "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
+        "Senninger, T. (2000). Abenteuer leiten – in Abenteuern lernen. Münster: Ökotopia.",
+        "Gardner, M. & Steinberg, L. (2005). Peer influence on risk taking, risk preference, and risky decision making in adolescence and adulthood: An experimental study. Developmental Psychology, 41(4), 625–635.",
+        "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+      ],
+      "achtung": "Die Rallye nur nach den Regeln des Hauses durchführen: Einverständnis der Eltern, Begleitung, Erreichbarkeit, Notfallplan. Jugendliche, bei denen Weglaufen, eine akute Krise oder Konflikte mit bestimmten Personen im Viertel bekannt sind, gehen ohne Aufsehen im Team der Leitung mit; die Gründe werden in der Gruppe nicht genannt. Fotos zeigen keine fremden Menschen und werden nicht geteilt. Erleben Jugendliche unterwegs Abweisung, Beleidigung oder Diskriminierung – etwa wegen ihrer Sprache, Hautfarbe oder Kleidung –, das ernst nehmen, nicht vor der Gruppe kleinreden und ein Gespräch anbieten. Wird ein Team von Fremden bedrängt, geht es sofort zur Basis, und die Leitung entscheidet, ob die Rallye weiterläuft. Bei einem Unfall oder akuter Gefahr gilt der Notruf 112, bei Bedrohung die Polizei 113; danach die zuständige Leitung (Responsable) informieren."
+    },
+    {
+      "id": "j2-j03",
+      "nr": 3,
+      "jahr": 2,
+      "modul": "joker",
+      "joker": true,
+      "passt": "nach Modul 6, über zwei Termine",
+      "titel": "Filmeinheit „Wunder“",
+      "kurz": "An zwei Terminen sieht die Gruppe den Film „Wunder“, verfolgt je eine Figur mit ihrem Blickwinkel und fragt danach, was Mut im Alltag heißt – gegenüber anderen und gegenüber sich selbst.",
+      "dauer": 200,
+      "ziele": [
+        "verfolgen den Film aus dem Blickwinkel einer Figur und beschreiben, was sie nach außen zeigt und was darunter liegt",
+        "erkennen, wie Blicke, Ausgrenzung und kleine freundliche Handlungen auf Auggie wirken",
+        "schätzen auf der Mut-Linie ein, wie viel Mut Alltagshandlungen brauchen, und sammeln, was Mut leichter macht",
+        "probieren einen Skill aus, mit dem sie freundlich mit sich selbst sprechen"
+      ],
+      "material": [
+        "Film „Wunder“ (2017) als DVD, Blu-ray oder über einen Zugang mit geklärter Vorführlizenz",
+        "Beamer, Lautsprecher, Verdunkelung",
+        "Beobachtungsbogen „Mein Blickwinkel auf ‚Wunder‘“ je Person, Klemmbretter, Stifte",
+        "Neun Figurenkarten: Auggie, Via, Jack, Summer, Julian, Miranda, Isabel (Mutter), Nate (Vater), Mr. Browne",
+        "Malerkrepp für eine Linie von etwa fünf Metern, zwei Schilder „wenig Mut“ und „viel Mut“",
+        "Plakat aus Modul 6 zu den Schubladen im Kopf, falls vorhanden",
+        "Popcorn und Getränke für Termin 1, Imbiss für Termin 2 (Allergien beachten)",
+        "Gefühlsrad (A3), Anspannungsskala, Skills-Pässe, Stempel"
+      ],
+      "vorbereitung": [
+        "Vorführrechte klären: Die Leitung (Responsable) prüft, ob eine Schul- oder Vorführlizenz vorliegt. Die Altersfreigabe vorab prüfen lassen.",
+        "Den Film vorher ganz ansehen, die Stoppstellen aus Schritt 3 festlegen und ihre Zeitmarken auf der eigenen Kopie notieren. Dabei Szenen notieren, die einzelne Jugendliche der Gruppe besonders treffen könnten.",
+        "Hat jemand in der Gruppe eine sichtbare Besonderheit, eine Behinderung oder Mobbingerfahrungen, vorher allein mit der Person sprechen: worum es im Film geht, dass sie jederzeit rausgehen darf und dass niemand sie mit Auggie vergleichen wird.",
+        "Technik vor der Einheit testen; Raum verdunkeln, Stühle im Halbkreis, hinten Platz für die Mut-Linie lassen."
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-film-wunder",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in mit Gefühlsrad, Zahl und freundlichem Moment"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Schubladen im Kopf und die Blickwinkel-Figuren"
+        },
+        {
+          "min": "15–50",
+          "phase": "input",
+          "titel": "Film, erster Teil"
+        },
+        {
+          "min": "50–65",
+          "phase": "pause",
+          "titel": "Pause mit Popcorn"
+        },
+        {
+          "min": "65–95",
+          "phase": "input",
+          "titel": "Film bis zur Stoppstelle"
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Blitzlicht und Skills-Pass"
+        },
+        {
+          "min": "100–105",
+          "phase": "ankommen",
+          "titel": "Termin 2: Wort, Zahl und ein Satz zur Figur"
+        },
+        {
+          "min": "105–150",
+          "phase": "input",
+          "titel": "Film bis zum Schluss"
+        },
+        {
+          "min": "150–165",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "165–180",
+          "phase": "uebung",
+          "titel": "Außen und innen: der Eisberg der Figuren"
+        },
+        {
+          "min": "180–190",
+          "phase": "aktiv",
+          "titel": "Die Mut-Linie"
+        },
+        {
+          "min": "190–195",
+          "phase": "skill",
+          "titel": "Skill: freundlich zu mir"
+        },
+        {
+          "min": "195–200",
+          "phase": "abschluss",
+          "titel": "Réckbléck, Leitspruch und Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in mit Gefühlsrad, Zahl und freundlichem Moment",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Stühle im Halbkreis vor der Leinwand, Gefühlsrad und Anspannungsskala liegen in der Mitte. Reihum nennt jede Person ein Wort und ihre Zahl; die Leitung beginnt. Dazu eine freiwillige Frage: ein kleiner freundlicher Moment aus dieser Woche – selbst erlebt oder nur beobachtet, im Bus, in der Pause, im Chat. Wem nichts einfällt, sagt „weiter“.",
+          "sagen": [
+            "Wort, Zahl – und wenn ihr mögt, ein kleiner freundlicher Moment aus dieser Woche.",
+            "Bei mir: Im Bus hat jemand einer älteren Frau wortlos den Platz überlassen. Hat vielleicht drei Sekunden gedauert."
+          ],
+          "tipp": "Die Frage bewusst klein halten. Große Gesten sind selten, kleine Freundlichkeiten fallen fast allen ein – und genau darum geht es im Film.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Schubladen im Kopf und die Blickwinkel-Figuren",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "Kurz an Modul 6 anknüpfen: Wie schnell stecken wir andere in eine Schublade, nur weil wir sie sehen? Dann den Film vorstellen: Auggie ist zehn, sein Gesicht sieht nach vielen Operationen anders aus als das der meisten, und er geht zum ersten Mal auf eine Schule. Mehrere Abschnitte erzählt der Film aus dem Blickwinkel anderer Figuren. Jede Person zieht verdeckt eine Figurenkarte, kreuzt ihre Figur auf dem Bogen an und achtet beim Schauen besonders auf sie; Stichworte reichen, ausgefüllt wird später.",
+          "sagen": [
+            "Ihr bekommt heute eine Figur zugelost und schaut den ganzen Film mit ihren Augen.",
+            "Wer den Film schon kennt, verrät bitte nichts. Ihr seid heute unsere Geheimnisträger."
+          ],
+          "tipp": "Wer den Film schon kennt, bekommt Via, Jack, Julian oder Miranda; diese Blickwinkel lohnen beim zweiten Sehen am meisten. In kleinen Gruppen bekommt eine Person zwei Figuren.",
+          "blatt": "skills-film-wunder"
+        },
+        {
+          "titel": "Film, erster Teil",
+          "dauer": 35,
+          "phase": "input",
+          "text": "Licht aus, Film starten. Die Leitung sitzt so, dass sie die Gruppe im Blick hat; wer kurz raus muss, geht leise und kommt allein zurück. Handys bleiben in der Tasche. Gestoppt wird an Szenen, nicht an Minuten: Die Zeiten im Ablauf sind Richtwerte.",
+          "sagen": [
+            "Handys in die Tasche. Wer kurz raus muss, geht leise und kommt allein wieder rein – ihr müsst niemanden fragen."
+          ],
+          "punkte": [
+            "Pause in Termin 1: an einer ruhigen Stelle nach etwa einer halben Stunde, zum Beispiel nachdem sich Summer in der Kantine zu Auggie gesetzt hat.",
+            "Ende von Termin 1: an einer ruhigen Stelle etwa in der Mitte des Films, gern an einem Wechsel des Blickwinkels – nicht direkt nach der Halloween-Szene, damit niemand mit Auggies Kummer in die Woche geht.",
+            "Termin 2: ab der notierten Zeitmarke bis zum Ende; den Abspann nicht abwarten."
+          ],
+          "tipp": "Untertitel nur einschalten, wenn jemand sie braucht. So bleibt der Blick auf den Gesichtern, und um Gesichter geht es in diesem Film.",
+          "wennEsKippt": "Lacht jemand über Auggies Gesicht oder macht einen Spruch, nicht übergehen: kurz anhalten, Licht an, ruhig sagen, dass im Film gerade genau das passiert, und fragen, was das mit Auggie macht. Dann weiterschauen. Wiederholt es sich, setzt sich die Person neben die Leitung; das Gespräch folgt nach dem Termin unter vier Augen."
+        },
+        {
+          "titel": "Pause mit Popcorn",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Licht an, Fenster auf, Popcorn und Getränke. Die Leitung fragt nebenbei, welche Figur bisher überrascht hat, und lässt Vermutungen zu, wie es weitergeht."
+        },
+        {
+          "titel": "Film bis zur Stoppstelle",
+          "dauer": 30,
+          "phase": "input",
+          "text": "Weiterschauen bis zur zweiten Stoppstelle. Lieber etwas früher an einer ruhigen Stelle anhalten als mitten in einer Szene. Die Zeitmarke notieren, damit Termin 2 genau dort weitergeht.",
+          "wennEsKippt": "Wirkt jemand bei der Halloween-Szene oder bei Szenen, in denen Auggie ausgeschlossen wird, betroffen, nicht vor der Gruppe darauf eingehen. Nach dem Termin kurz unter vier Augen nachfragen und ein Gespräch anbieten."
+        },
+        {
+          "titel": "Blitzlicht und Skills-Pass",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Im Kreis antwortet jede Person mit einem Wort: Wie geht es deiner Figur gerade? Danach ein kurzer Eintrag in den Skills-Pass und der Stempel. Die Beobachtungsbögen bleiben im Raum, damit sie in Termin 2 wieder da sind.",
+          "sagen": [
+            "Ein Wort: Wie geht es deiner Figur gerade?",
+            "Und ohne Spoiler: Wie geht es weiter?"
+          ],
+          "blatt": "skills-pass"
+        },
+        {
+          "titel": "Termin 2: Wort, Zahl und ein Satz zur Figur",
+          "dauer": 5,
+          "phase": "ankommen",
+          "text": "Gefühlsrad in die Mitte. Reihum nennt jede Person ein Wort und ihre Anspannung, dazu einen Satz: Wo stand meine Figur, als wir gestoppt haben? Aus den Sätzen entsteht die Zusammenfassung von selbst; die Leitung ergänzt nur, was für den Schluss wichtig ist.",
+          "sagen": [
+            "Wort, Zahl – und ein Satz: Wo stand deine Figur, als wir gestoppt haben?"
+          ],
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Film bis zum Schluss",
+          "dauer": 45,
+          "phase": "input",
+          "text": "Ab der notierten Zeitmarke bis zum Ende schauen. Nach der letzten Szene einen Moment Ruhe lassen, bevor das Licht angeht; viele sind vom Schluss berührt und wollen das nicht sofort zeigen. Den Abspann nicht abwarten.",
+          "sagen": [
+            "Wir schauen bis zum Schluss. Danach bleibt das Licht noch einen Moment aus, bevor jemand etwas sagt."
+          ],
+          "wennEsKippt": "Wird bei einer berührenden Szene gelacht, nicht ermahnen: Lachen ist oft Verlegenheit. In der Auswertung darf das aufgegriffen werden, etwa mit der Frage, welche Szene am schwersten auszuhalten war."
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Pause mit Imbiss, Fenster auf, kurz nach draußen. Der Film darf nachklingen; die Leitung fragt höchstens, welche Szene hängen geblieben ist."
+        },
+        {
+          "titel": "Außen und innen: der Eisberg der Figuren",
+          "dauer": 15,
+          "phase": "uebung",
+          "text": "Fünf Minuten füllt jede Person den Eisberg ihrer Figur aus: Was zeigt sie nach außen, was fühlt oder braucht sie darunter? Dann stellt jede Person ihre Figur in zwei Sätzen vor; die Leitung schreibt an die Tafel, links außen, rechts innen. Zum Schluss die Frage, welche Figur einen Kampf gekämpft hat, den die anderen nicht gesehen haben – meist sind es fast alle. So entsteht die Botschaft, mit der der Film endet, sinngemäß: Sei freundlich, denn jeder kämpft einen Kampf, den du nicht siehst.",
+          "sagen": [
+            "Nach außen zeigt meine Figur …, darunter liegt … – zwei Sätze reichen.",
+            "Wer von den Figuren hatte einen Kampf, den die anderen nicht gesehen haben?"
+          ],
+          "tabelle": {
+            "spalten": [
+              "Figur",
+              "Außen: das sehen die anderen",
+              "Innen: das liegt darunter"
+            ],
+            "zeilen": [
+              [
+                "Auggie",
+                "versteckt sich anfangs unter dem Astronautenhelm",
+                "will einfach ganz normal behandelt werden"
+              ],
+              [
+                "Via",
+                "die Vernünftige, die keine Probleme macht",
+                "fühlt sich übersehen und vermisst ihre Großmutter"
+              ],
+              [
+                "Jack",
+                "macht bei Julian mit, um dazuzugehören",
+                "schämt sich für seine Worte und will Auggie als Freund zurück"
+              ],
+              [
+                "Julian",
+                "lacht über Auggie und stachelt andere an",
+                "zeigt der Film kaum – was könnte darunter liegen?"
+              ]
+            ]
+          },
+          "tipp": "Julian nicht als Bösewicht abhaken: Die Frage, was ihn so werden lässt, schützt davor, jemanden aus der eigenen Klasse zum ‚Julian‘ zu machen.",
+          "wennEsKippt": "Kommt nur „war gut“ oder „weiß nicht“, auf eine Szene zurückgehen statt auf die Botschaft: Welche Szene würdet ihr jemandem zeigen, der glaubt, das Aussehen sage etwas über einen Menschen? Aus der Antwort ergibt sich die Botschaft fast von selbst.",
+          "blatt": "skills-film-wunder"
+        },
+        {
+          "titel": "Die Mut-Linie",
+          "dauer": 10,
+          "phase": "aktiv",
+          "text": "Eine Linie aus Malerkrepp auf dem Boden, an einem Ende das Schild „wenig Mut“, am anderen „viel Mut“. Die Leitung liest eine Handlung vor, alle stellen sich gleichzeitig dorthin, wo sie sie einordnen, und zwei, drei sagen, warum. Erst zwei oder drei Handlungen aus dem Film, dann zwei aus dem Alltag; bei diesen stellen sich alle danach auf, wie viel Mut sie selbst bräuchten. Zum Schluss sammeln, was Mut leichter macht: zu zweit sein, einen Satz vorbereitet haben, klein anfangen, eine erwachsene Person einweihen. Wer die Zivilcourage-Leiter aus Kursjahr 1 kennt, findet hier ihre Stufen wieder.",
+          "sagen": [
+            "Stellt euch hin, wie mutig ihr das findet. Es gibt kein Richtig.",
+            "Und jetzt ehrlich für euch selbst: Wie viel Mut bräuchtet ihr dafür?"
+          ],
+          "punkte": [
+            "Film: Summer setzt sich in der Kantine zu Auggie, der allein am Tisch sitzt.",
+            "Film: Jack entschuldigt sich bei Auggie.",
+            "Film: Im Naturcamp stellen sich Mitschüler, die bisher zu Julian gehalten haben, vor Auggie und Jack.",
+            "Film: Miranda überlässt Via bei der Premiere die Hauptrolle.",
+            "Alltag: In der Kantine sitzt ein neuer Mitschüler allein.",
+            "Alltag: Im Klassenchat wird über das Aussehen von jemandem gelästert.",
+            "Alltag: Du hast jemanden verletzt und willst dich entschuldigen."
+          ],
+          "tipp": "Mit nur zwei Jugendlichen oder bei wenig Energie im Sitzen spielen: Alle zeigen mit den Fingern von 0 bis 10, wie viel Mut eine Handlung braucht.",
+          "wennEsKippt": "Stellen sich alle aus Spaß ans selbe Ende, eine Runde mit geschlossenen Augen spielen: Alle zeigen nur mit dem Arm, und die Leitung beschreibt das Bild. Bei den Alltagssituationen niemanden fragen, ob er so etwas selbst erlebt hat."
+        },
+        {
+          "titel": "Skill: freundlich zu mir",
+          "dauer": 5,
+          "phase": "skill",
+          "text": "Im Sitzen, Augen offen oder geschlossen. Die Leitung lädt ein, an etwas zu denken, das gerade ein bisschen schwer ist – etwas Kleines, nicht das Schwerste. Wer mag, legt eine Hand auf die Brust oder auf den Arm. Dann langsam drei Sätze innerlich wiederholen: Das ist gerade schwer. Anderen geht es auch manchmal so. Ich darf freundlich zu mir sein. Zum Schluss drei ruhige Atemzüge und der Hinweis, dass Freundlichkeit nicht nur für andere gilt.",
+          "sagen": [
+            "Sprich mit dir so, wie du mit einer guten Freundin oder einem guten Freund sprechen würdest.",
+            "Wie war das – ungewohnt, angenehm, komisch? Alles darf sein."
+          ],
+          "tipp": "Viele Jugendliche finden das zuerst peinlich. Die Leitung macht es ruhig vor und lässt die Hand weg, wenn die Gruppe das albern findet; die Sätze wirken auch ohne Geste."
+        },
+        {
+          "titel": "Réckbléck, Leitspruch und Skills-Pass",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Mr. Browne gibt seiner Klasse Leitsprüche mit; der erste lautet sinngemäß: Wenn du die Wahl hast, recht zu haben oder freundlich zu sein, entscheide dich für freundlich. Jede Person schreibt einen eigenen Leitspruch auf den Bogen oder direkt in den Skills-Pass; wer mag, liest ihn vor. Stempel und ein kurzer Ausblick auf die nächste Einheit.",
+          "sagen": [
+            "Welcher Satz soll euch durch die nächsten Wochen begleiten? Er darf auch lustig sein."
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Nächstes Mal geht es im Kurs weiter – achtet bis dahin auf einen Moment, in dem jemand lieber freundlich war als recht zu haben.",
+      "hintergrund": "Der Film erzählt nach dem Jugendroman von R. J. Palacio (2012) dieselbe Geschichte aus mehreren Blickwinkeln – ein Angebot zum Perspektivwechsel, das die Jugendlichen selbst entdecken, wenn sie eine Figur durch den ganzen Film verfolgen. Allport (1954) beschrieb, wie schnell Menschen andere nach äußeren Merkmalen in Schubladen stecken; eine Meta-Analyse zeigt, dass persönlicher Kontakt Vorurteile verlässlich verringert (Pettigrew & Tropp, 2006). Genau das geschieht in Auggies Klasse: Wer ihn kennenlernt, sieht ihn anders. Ausgrenzung schmerzt auch dann, wenn niemand zuschlägt (Williams, 2007), und ob sie andauert, hängt stark von den Zuschauenden ab (Salmivalli et al., 1996). Deshalb geht es in der Auswertung um kleine Mutproben im Alltag. Der Skill zum Schluss überträgt die Freundlichkeit auf den Umgang mit sich selbst (Neff, 2003).",
+      "quellen": [
+        "Palacio, R. J. (2012). Wonder. New York: Alfred A. Knopf.",
+        "Allport, G. W. (1954). The Nature of Prejudice. Cambridge, MA: Addison-Wesley.",
+        "Pettigrew, T. F. & Tropp, L. R. (2006). A meta-analytic test of intergroup contact theory. Journal of Personality and Social Psychology, 90(5), 751–783.",
+        "Williams, K. D. (2007). Ostracism. Annual Review of Psychology, 58, 425–452.",
+        "Salmivalli, C., Lagerspetz, K., Björkqvist, K., Österman, K. & Kaukiainen, A. (1996). Bullying as a group process: Participant roles and their relations to social status within the group. Aggressive Behavior, 22(1), 1–15.",
+        "Neff, K. D. (2003). Self-compassion: An alternative conceptualization of a healthy attitude toward oneself. Self and Identity, 2(2), 85–101."
+      ],
+      "achtung": "Vorführrechte (Schullizenz) und Altersfreigabe vor der Einheit durch die Leitung prüfen lassen. Der Film zeigt Ausgrenzung, Blicke und abfällige Worte über Auggies Aussehen, dazu Verlust: Vias Großmutter ist gestorben, und der Familienhund stirbt. Jugendliche mit sichtbaren Besonderheiten, Behinderungen oder Mobbingerfahrungen können davon stark angesprochen sein: vorher allein mit ihnen sprechen, niemanden mit Auggie vergleichen und niemanden zum Experten machen. Niemand wird gefragt, ob er selbst ausgegrenzt wurde oder andere ausgegrenzt hat. Deutet jemand an, gerade gemobbt zu werden, das nicht in der Gruppe vertiefen, sondern ein Einzelgespräch anbieten und die zuständige Leitung (Responsable) informieren; bei Hinweisen auf Gewalt, Selbstverletzung oder Suizidgedanken sofort nach dem internen Schutzkonzept handeln."
+    },
+    {
+      "id": "j2-j04",
+      "nr": 4,
+      "jahr": 2,
+      "modul": "joker",
+      "joker": true,
+      "passt": "jederzeit, wenn die Gruppe aufgedreht, gereizt oder müde ist und der geplante Inhalt nicht ankommt",
+      "titel": "Kooperationsspiele bei Unruhe",
+      "kurz": "Ein Reserveprogramm für schwierige Tage: Die Gruppe löst bewegte Aufgaben, die nur gemeinsam gelingen, wertet jede Runde kurz aus und kommt mit einem Skill wieder zur Ruhe.",
+      "dauer": 100,
+      "ziele": [
+        "lösen in bewegten Spielen Aufgaben, die nur als Gruppe gelingen",
+        "werten nach jedem Spiel kurz aus, was geholfen hat und was sie beim nächsten Versuch ändern",
+        "halten Frust im Spiel aus, ohne anderen die Schuld zu geben",
+        "vergleichen ihre Anspannung am Anfang und am Ende und benennen, was sie heruntergebracht hat"
+      ],
+      "material": [
+        "Kooperations-Karten (Schülerblatt): Seite 1 einmal auf festem Papier, ausgeschnitten und laminiert; Seite 2 je Person",
+        "Drei bis vier weiche Bälle in verschiedenen Farben, eine Stoppuhr",
+        "Ein leichter, gerader Stab von zwei bis drei Metern: Zeltstange, dünnes Kunststoffrohr oder Besenstiel",
+        "Für den Fluss: Teppichfliesen, Gymnastikmatten oder feste Pappen, eine weniger als Personen; zwei Seile oder Malerkrepp für die Ufer",
+        "Für die Pipeline: je Person eine Rinne von etwa 30 Zentimetern (längs halbierte Poolnudel oder gefalteter Karton), eine Murmel oder ein Tischtennisball, ein Becher",
+        "Luftballons für den Ballonregen (vorher nach Latexallergie fragen)",
+        "Ein glatter Stein, Plakat und dicke Stifte",
+        "Gefühlsrad (A3), Anspannungsskala, Skills-Pässe, Stempel, Imbiss"
+      ],
+      "vorbereitung": [
+        "Eine Kooperationskiste mit allem Material fertig gepackt im Raum lagern, damit der Joker ohne Vorlauf einsetzbar ist.",
+        "Einen freien Raum, den Flur, die Turnhalle oder eine Wiese in der Nähe im Blick haben; Stühle und Tische an die Wand.",
+        "Wissen, wer in der Gruppe Berührungen schwer aushält; für diese Jugendlichen kontaktarme Spiele wählen oder eine andere Rolle vorsehen."
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-kooperations-karten",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Gefühlsrad, Anspannung und Gruppenwetter"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Planwechsel: Heute gewinnt die Gruppe oder niemand"
+        },
+        {
+          "min": "15–30",
+          "phase": "aktiv",
+          "titel": "Gruppenjonglage mit Rekordrunde"
+        },
+        {
+          "min": "30–45",
+          "phase": "aktiv",
+          "titel": "Der Fluss oder die Pipeline"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–75",
+          "phase": "aktiv",
+          "titel": "Der schwebende Stab"
+        },
+        {
+          "min": "75–85",
+          "phase": "uebung",
+          "titel": "Was hat uns als Team geholfen?"
+        },
+        {
+          "min": "85–95",
+          "phase": "skill",
+          "titel": "Skill: anspannen, loslassen, Stein reihum"
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Réckbléck: Zahl vorher, Zahl nachher"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: Gefühlsrad, Anspannung und Gruppenwetter",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Im Kreis nennt jede Person ein Wort aus dem Gefühlsrad und ihre Anspannung; die Leitung notiert die Zahlen ohne Namen an der Tafel. Dann die Frage an alle: Wenn unsere Gruppe heute ein Wetter wäre – Sturm, Gewitter, Nebel oder Sonne? Die Leitung benennt ohne Vorwurf, was sie sieht: viel Energie, dicke Luft oder leere Akkus. Davon hängt ab, welche Karten nach der Gruppenjonglage drankommen.",
+          "sagen": [
+            "Wort und Zahl – und wenn wir heute ein Wetter wären, welches?",
+            "Ich sehe heute viel Energie im Raum. Das ist kein Vorwurf, nur eine Wetterlage."
+          ],
+          "tabelle": {
+            "spalten": [
+              "Gruppenwetter",
+              "So zeigt es sich",
+              "Diese Karten passen",
+              "Worauf achten"
+            ],
+            "zeilen": [
+              [
+                "Sturm: aufgedreht",
+                "laut, zappelig, alle reden gleichzeitig",
+                "Gruppenjonglage, Fluss, Stab – gern draußen",
+                "kurze Ansagen, ein klares Stoppsignal"
+              ],
+              [
+                "Gewitter: gereizt",
+                "spitze Bemerkungen, Grüppchen, schnell beleidigt",
+                "Gruppenjonglage, Pipeline, Stab",
+                "wenig Berührung, Teams bestimmt die Leitung"
+              ],
+              [
+                "Nebel: müde",
+                "Gähnen, Köpfe auf dem Tisch, kaum Antworten",
+                "Ballonregen, Maschine, langsame Gruppenjonglage",
+                "Fenster auf, Wasser trinken, kurze Runden"
+              ]
+            ]
+          },
+          "tipp": "Steckt hinter der dicken Luft ein konkreter Streit, zuerst kurz mit den Beteiligten sprechen. Kooperationsspiele helfen bei Stimmungen, nicht bei ungeklärten Konflikten.",
+          "wennEsKippt": "Ist an eine Runde im Sitzen nicht zu denken, den Check-in im Gehen machen: Alle gehen durch den Raum, auf ein Klatschen bleiben alle stehen, und die Leitung fragt reihum nur nach der Zahl.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Planwechsel: Heute gewinnt die Gruppe oder niemand",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "Offen sagen, dass der geplante Inhalt heute nicht passt und stattdessen Spiele kommen, die nur gemeinsam gelingen; das Thema wird nachgeholt. Die drei Regeln für heute nennen und an die Tafel schreiben, dazu die drei Fragen, die nach jedem Spiel kommen. Wer bei einem Spiel nicht mitmachen möchte, bekommt eine Rolle: beobachten, die Zeit nehmen oder auf die Regeln achten.",
+          "sagen": [
+            "Heute ändern wir den Plan, nicht euch.",
+            "Nach jedem Spiel drei Fragen: Was lief gut? Wo hat es gehakt? Was machen wir beim nächsten Versuch anders?"
+          ],
+          "punkte": [
+            "Wir kritisieren den Plan, nicht die Person.",
+            "Stopp gilt sofort – bei Berührung, bei Schmerzen, bei allem, was zu viel wird.",
+            "Wer eine Idee hat, sagt sie; wer eine Idee hört, lässt sie ausreden."
+          ]
+        },
+        {
+          "titel": "Gruppenjonglage mit Rekordrunde",
+          "dauer": 15,
+          "phase": "aktiv",
+          "text": "Alle stehen im Kreis. Ein weicher Ball wird quer durch den Kreis geworfen, bis jede Person ihn einmal hatte und er wieder am Anfang ist; vor jedem Wurf wird der Name der Person gesagt, die ihn bekommt. Die Reihenfolge bleibt, dann kommen ein zweiter und ein dritter Ball dazu. In der Rekordrunde stoppt die Leitung, wie lange ein Ball für die ganze Runde braucht: Alles ist erlaubt, solange jede Person den Ball in der festen Reihenfolge berührt. Meist entdeckt die Gruppe nach einigen Versuchen, dass sie sich umstellen darf, und die Zeit sinkt von zwanzig auf wenige Sekunden. Danach die drei Fragen, zwei Minuten.",
+          "sagen": [
+            "Erst den Namen, dann werfen – und so, dass die andere Person fangen kann.",
+            "Was hat euch schneller gemacht? Und wessen Idee war das – ist sie gleich gehört worden?"
+          ],
+          "tipp": "Die Frage nach der Idee ist der Kern: Oft hatte eine leise Person die Lösung früh, und niemand hat hingehört. Das ohne Vorwurf sichtbar machen.",
+          "wennEsKippt": "Wird hart oder gezielt auf jemanden geworfen, sofort unterbrechen: Ab jetzt wird nur noch von unten geworfen. Passiert es wieder, übernimmt die Person die Stoppuhr, ohne Strafpredigt.",
+          "blatt": "skills-kooperations-karten"
+        },
+        {
+          "titel": "Der Fluss oder die Pipeline",
+          "dauer": 15,
+          "phase": "aktiv",
+          "text": "Je nach Platz und Stimmung eines der beiden Spiele wählen: den Fluss bei viel Energie und Platz, die Pipeline, wenn Berührungen gerade schwierig sind. Beim Fluss liegen die Ufer sechs bis acht Meter auseinander; alle müssen mit Steinen hinüber, es gibt einen weniger als Personen, und ein Stein, den gerade niemand berührt, wird von der Leitung weggenommen. Bei der Pipeline bringt die Gruppe eine Murmel mit Rinnen vom Start in den Becher; wer die Murmel in der Rinne hat, darf die Füße nicht bewegen. Vor dem Start gibt es zwei Minuten zum Planen, danach die drei Fragen.",
+          "sagen": [
+            "Zwei Minuten Planung. Wer hat einen Vorschlag – und wer hört zu?",
+            "Der Stein liegt allein da? Dann ist er weg. Das ist bitter, aber so ist der Fluss."
+          ],
+          "tipp": "Vor dem Fluss fragen, wer Berührungen gerade nicht mag. Dann plant die Gruppe so, dass es ohne geht, und bekommt dafür einen Stein mehr – Rücksicht wird so Teil der Lösung.",
+          "wennEsKippt": "Gibt die Gruppe jemandem die Schuld, weil ein Stein verloren ging, anhalten und die erste Regel zeigen: Wir kritisieren den Plan, nicht die Person. Dann eine Minute Teambesprechung, bevor es weitergeht. Bei Regen und wenig Platz funktioniert die Pipeline auch im Flur.",
+          "blatt": "skills-kooperations-karten"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Pause mit Imbiss und Wasser, Fenster auf. Die Leitung isst mit und lässt die Gruppe einfach ankommen; wer mag, wirft sich nebenbei weiter den Ball zu."
+        },
+        {
+          "titel": "Der schwebende Stab",
+          "dauer": 15,
+          "phase": "aktiv",
+          "text": "Die Gruppe steht in zwei Reihen gegenüber und hält die Zeigefinger auf Brusthöhe ausgestreckt; die Leitung legt den Stab darauf. Die Aufgabe: den Stab gemeinsam auf den Boden legen, wobei jeder Finger ihn immer von unten berührt und niemand ihn festhält. Fast immer steigt der Stab zuerst nach oben, weil alle den Kontakt halten wollen – das sorgt für Lachen und Frust. Nach drei, vier Versuchen eine Minute Besprechung, dann weiter. Zum Schluss die drei Fragen.",
+          "sagen": [
+            "Der Stab geht nach oben? Das passiert fast jeder Gruppe. Was müsstet ihr anders machen?",
+            "Wer hat die Ansage gemacht – und hat es geholfen, dass nur eine Person gesprochen hat?"
+          ],
+          "tipp": "Mit nur zwei Jugendlichen spielt die Leitung mit, und der Stab ist kürzer, etwa ein Meter. Bei wenig Energie statt des Stabs den Ballonregen oder die Maschine von den Karten nehmen.",
+          "wennEsKippt": "Rufen alle gleichzeitig, das Spiel stoppen und die Stopp-Ampel anwenden: rot – Stab ablegen, gelb – eine Person macht die Ansage, grün – neuer Versuch. Die Einsicht, dass Ruhe schneller ans Ziel führt, entsteht meist genau hier.",
+          "blatt": "skills-kooperations-karten"
+        },
+        {
+          "titel": "Was hat uns als Team geholfen?",
+          "dauer": 10,
+          "phase": "uebung",
+          "text": "Jede Person füllt still den Team-Check auf Seite 2 der Karten aus, etwa drei Minuten. Dann sammelt die Gruppe auf einem Plakat Team-Regeln, die sie heute selbst entdeckt hat, zum Beispiel: Einer sagt an, alle hören. Erst planen, dann los. Leise Ideen zählen. Das Plakat hängt ab jetzt neben dem Gruppenvertrag.",
+          "sagen": [
+            "Welche Regel habt ihr heute selbst herausgefunden, ohne dass sie euch jemand gesagt hat?",
+            "Wo könnten wir die im normalen Kurs gebrauchen?"
+          ],
+          "wennEsKippt": "Ist für Schreiben keine Ruhe da, den Team-Check mündlich machen: Die Leitung liest die Sätze vor, und alle zeigen Daumen hoch, Mitte oder runter.",
+          "blatt": "skills-kooperations-karten"
+        },
+        {
+          "titel": "Skill: anspannen, loslassen, Stein reihum",
+          "dauer": 10,
+          "phase": "skill",
+          "text": "Alle sitzen im Kreis. Zuerst eine kurze Muskelentspannung: Fäuste, Schultern und Beine je fünf Sekunden fest anspannen, dann loslassen und zehn Sekunden nachspüren; die Leitung zählt leise. Dann geht ein glatter Stein schweigend reihum: Wer ihn hält, atmet einmal langsam aus und gibt ihn weiter. Zwei Runden, ohne zu reden. Zum Schluss schätzt jede Person still ihre Anspannung neu.",
+          "sagen": [
+            "Anspannen … halten … und loslassen. Spürt den Unterschied.",
+            "Der Stein geht reihum. Einmal ausatmen, weitergeben, kein Wort."
+          ],
+          "tipp": "Nach bewegten Spielen braucht der Körper einen klaren Übergang. Wer die Augen nicht schließen möchte, schaut auf den Boden vor sich."
+        },
+        {
+          "titel": "Réckbléck: Zahl vorher, Zahl nachher",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Die Zahlen vom Anfang stehen an der Tafel. Jede Person nennt ihre Zahl jetzt; wer mag, sagt dazu, was sie verändert hat. Eintrag in den Skills-Pass: Was hat mich heute runtergebracht? Stempel und die Ankündigung, dass das eigentliche Thema beim nächsten Mal nachgeholt wird.",
+          "sagen": [
+            "Eure Zahl jetzt – und was hat sie verändert?"
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Nächstes Mal holen wir das Thema nach, das heute Pause hatte – und die Team-Regeln vom Plakat kommen mit.",
+      "hintergrund": "Unruhe, Gereiztheit und Müdigkeit schwächen genau die Fähigkeiten, die Lernen braucht: Aufmerksamkeit, Arbeitsgedächtnis und Selbstkontrolle (Diamond, 2013). Statt gegen die Stimmung anzuarbeiten, gibt diese Einheit ihr eine Form. Kooperationsspiele haben ein Ziel, das nur gemeinsam erreichbar ist; wer anderen die Schuld gibt, verliert mit. Solche gemeinsamen Ziele bauten schon im Ferienlager-Experiment von Robbers Cave Feindseligkeit zwischen zwei Gruppen ab (Sherif et al., 1961). Tuckman (1965) beschreibt Reibereien als normale Phase der Gruppenentwicklung, die vorübergeht, wenn eine Gruppe lernt, Aufgaben zusammen zu lösen. Nach dem Lernzonenmodell von Senninger (2000) sollen Aufgaben fordern, aber nicht überfordern; deshalb gibt es für jede Person eine Rolle, auch ohne Berührung. Erst die kurze Auswertung macht aus dem Erlebnis eine Erfahrung. Gemeinsames Lachen weitet die Aufmerksamkeit und stärkt die Beziehungen in der Gruppe (Fredrickson, 2001).",
+      "quellen": [
+        "Diamond, A. (2013). Executive functions. Annual Review of Psychology, 64, 135–168.",
+        "Sherif, M., Harvey, O. J., White, B. J., Hood, W. R. & Sherif, C. W. (1961). Intergroup Conflict and Cooperation: The Robbers Cave Experiment. Norman, OK: University Book Exchange.",
+        "Tuckman, B. W. (1965). Developmental sequence in small groups. Psychological Bulletin, 63(6), 384–399.",
+        "Senninger, T. (2000). Abenteuer leiten – in Abenteuern lernen. Münster: Ökotopia.",
+        "Fredrickson, B. L. (2001). The role of positive emotions in positive psychology: The broaden-and-build theory of positive emotions. American Psychologist, 56(3), 218–226."
+      ],
+      "achtung": "Unruhe oder Gereiztheit einer ganzen Gruppe hat manchmal einen Grund: ein Streit, ein Vorfall in der Schule, eine schlechte Nachricht. Vor dem Spielen kurz nachfragen; steckt ein belastendes Ereignis dahinter, passt eher die Einheit „Wenn uns etwas beschäftigt“ (Joker 8 aus Kursjahr 1). Beim Fluss und beim Stab gibt es Nähe und leichte Berührung: vorher ankündigen, das Stopp-Recht betonen, kontaktarme Varianten anbieten. Nur weiche Bälle, genug Platz, keine rutschigen Böden; Luftballons nur, wenn niemand eine Latexallergie hat. Darauf achten, dass niemand zum Sündenbock wird, weil die Gruppe angeblich seinetwegen verliert. Wirkt eine einzelne Person über Wochen gereizt oder erschöpft, das im Einzelgespräch aufgreifen und mit der zuständigen Leitung (Responsable) besprechen; bei Hinweisen auf eine Gefährdung nach dem internen Schutzkonzept handeln."
+    }
+  ]
+}

@@ -1,0 +1,1135 @@
+[
+  {
+    "id": "skills-gut-entscheiden",
+    "bereich": "skills",
+    "thema": "werte",
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "25 Min.",
+    "eldib": [
+      "V-18",
+      "SOZ-35",
+      "V-32"
+    ],
+    "schlagworte": [
+      "Entscheidungen",
+      "Pro und Contra",
+      "Bauch und Kopf",
+      "Werte",
+      "Freundin-Frage",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:arrow-fork",
+    "verwandt": [
+      "erst-die-pause",
+      "skills-meine-werte"
+    ],
+    "kurs": [
+      "j3-e06"
+    ],
+    "de": {
+      "titel": "Gut entscheiden",
+      "untertitel": "Vier Schritte, vier Felder und eine Frage, die fast immer hilft",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Kleine Entscheidungen trifft der Bauch in Sekunden – und das ist gut so. Bei großen lohnt es sich, auch den Kopf zu fragen. Am besten entscheidest du, wenn beide zu Wort kommen und du am Ende weißt, warum."
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Bauch, Kopf und die kluge Mitte",
+          "punkte": [
+            "Der Bauch meldet schnell, was sich gut oder falsch anfühlt. Er täuscht sich leicht, wenn Wut, Angst oder alle anderen mitreden.",
+            "Der Kopf prüft Fakten und Folgen. Er täuscht sich, wenn er sich alles schönredet oder nie fertig wird.",
+            "Die kluge Mitte hört beide an und fragt: Was passt zu mir und meinen Werten?"
+          ]
+        },
+        {
+          "art": "geschichte",
+          "titel": "Der Stage",
+          "bild": "figur:ben:verwirrt",
+          "text": "Mathis (15) muss sich bis Freitag für seinen zweiwöchigen Stage entscheiden. In der Autowerkstatt seines Onkels kennt er alle, der Weg ist kurz, und sein Onkel würde sich freuen. Im Hotel in der Stadt könnte er in der Küche mitarbeiten – das interessiert ihn wirklich. Dort kennt er aber niemanden, und mit dem Bus braucht er fast eine Stunde. Seit Tagen schiebt Mathis die Entscheidung vor sich her."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Geh den Entscheidungsweg mit Mathis durch. Notiere unter jedem Schritt ein Stichwort.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "schritte",
+          "stil": "weg",
+          "linien": 2,
+          "items": [
+            {
+              "titel": "Klären",
+              "text": "Was genau steht an – und bis wann?"
+            },
+            {
+              "titel": "Möglichkeiten sammeln",
+              "text": "Mindestens drei. Nicht nur Ja oder Nein."
+            },
+            {
+              "titel": "Abwägen",
+              "text": "Pro und Contra, jetzt und später. Dann Bauch und Werte fragen."
+            },
+            {
+              "titel": "Entscheiden und starten",
+              "text": "Wählen, ersten Schritt festlegen, später nachschauen."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Die vier Felder: Was spricht für und gegen jede Möglichkeit? Unterstreiche, was in einem Jahr noch zählt.",
+          "hinweis": "Für Mathis oder für eine eigene Entscheidung. A ist die Möglichkeit, zu der du gerade neigst."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "feld",
+              "label": "A – dafür spricht …",
+              "hoehe": 3,
+              "beispiel": "Hotel: Kochen interessiert mich wirklich."
+            }
+          ],
+          "rechts": [
+            {
+              "art": "feld",
+              "label": "A – dagegen spricht …",
+              "hoehe": 3,
+              "beispiel": "Hotel: fast eine Stunde Bus"
+            }
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "feld",
+              "label": "B – dafür spricht …",
+              "hoehe": 3
+            }
+          ],
+          "rechts": [
+            {
+              "art": "feld",
+              "label": "B – dagegen spricht …",
+              "hoehe": 3
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Der Check: Prüfe die Möglichkeit, zu der du neigst.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "ja",
+            "teils",
+            "nein"
+          ],
+          "items": [
+            "Mein Bauch wird dabei eher weit als eng.",
+            "Es passt zu meinen Top 3 der Werte.",
+            "In einem Jahr bin ich wahrscheinlich froh darüber.",
+            "Ich würde es auch so entscheiden, wenn niemand davon erfährt.",
+            "Ich würde es meiner besten Freundin oder meinem besten Freund auch raten."
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "text": "Mehrmals „teils“ oder „nein“? Dann lohnt sich ein zweiter Blick – oder eine Nacht darüber schlafen. Fehlt dir eine Information, frag jemanden, der sich auskennt."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Die Freundin-Frage: Denk an eine kleine Entscheidung, die bei dir ansteht. Was würdest du einer Freundin raten?"
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 2,
+          "items": [
+            "Meine Entscheidung: …",
+            "Einer Freundin würde ich raten: …",
+            "Ich entscheide mich für …, weil …",
+            "Mein erster Schritt – und wann ich nachschaue, wie es läuft: …"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Du entscheidest, was du teilst.",
+          "text": "Aufgabe 4 gehört dir und wird nicht vorgelesen."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen gehen eine Entscheidung in vier Schritten durch, wägen Pro und Contra kurz- und langfristig ab und prüfen ihre Neigung mit Bauch, Werten und der Freundin-Frage.",
+        "ablauf": [
+          "Nach der Blitzrunde (5 Min.): Infokasten lesen. Frage: „Wann hat der Bauch gereicht, wann nicht?“",
+          "Aufgabe 1 an der Tafel (8 Min.): Mathis’ Fall durchgehen, eine dritte Möglichkeit suchen, etwa einen Schnuppertag.",
+          "Aufgabe 2 und 3 allein oder zu zweit (7 Min.), für Mathis oder einen eigenen Fall.",
+          "Am Ende der Einheit (8 Min.): Bauch-Check im Sitzen, dann Aufgabe 4. Das Blatt wird nicht eingesammelt."
+        ],
+        "hintergrund": "Ein fester Ablauf schafft Abstand, gerade wenn Gefühle hochkochen oder andere zuschauen. Die vier Felder stammen aus dem Fertigkeitentraining der DBT für Jugendliche: Vor- und Nachteile beider Möglichkeiten, getrennt nach kurz- und langfristig (Rathus & Miller, 2015). Die „kluge Mitte“ entspricht dem „weisen Geist“, in dem Gefühl und Verstand zusammenkommen (Linehan, 2015). Die Freundin-Frage nutzt Selbstdistanzierung: Wer die eigene Lage wie von außen betrachtet, urteilt ruhiger und ausgewogener (Kross & Ayduk, 2017). Über die Probleme anderer urteilen Menschen weiser als über eigene; mit Abstand verschwindet der Unterschied (Grossmann & Kross, 2014).",
+        "quellen": [
+          "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford.",
+          "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford.",
+          "Kross, E. & Ayduk, O. (2017). Self-distancing: Theory, research, and current directions. Advances in Experimental Social Psychology, 55, 81–136.",
+          "Grossmann, I. & Kross, E. (2014). Exploring Solomon’s paradox: Self-distancing eliminates the self-other asymmetry in wise reasoning about close relationships in younger and older adults. Psychological Science, 25(8), 1571–1580."
+        ],
+        "differenzierung": {
+          "leichter": "Nur Aufgabe 1 und 4; die drei Möglichkeiten für Mathis vorgeben.",
+          "schwerer": "Eine echte Entscheidung durchspielen und notieren, welche Information noch fehlt."
+        },
+        "impulse": [
+          "Bei welchen Entscheidungen darf euer Bauch allein bestimmen?",
+          "Warum fällt ein Rat für andere leichter als für sich selbst?"
+        ],
+        "tipps": [
+          "Die Ja-oder-Nein-Falle benennen: Die dritte Möglichkeit ist oft die beste.",
+          "Unterstreichen macht sichtbar, was in einem Jahr noch zählt."
+        ],
+        "achtung": "Eigene Entscheidungen werden nicht vorgelesen. Deutet eine auf Druck, Gewalt oder eine Notlage hin: Einzelgespräch anbieten und die zuständige Leitung (Responsable) informieren.",
+        "material": "Blatt, Tafel"
+      }
+    }
+  },
+  {
+    "id": "skills-entscheidungs-werkstatt",
+    "bereich": "skills",
+    "thema": "werte",
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "gruppe"
+    ],
+    "dauer": "25 Min.",
+    "eldib": [
+      "SOZ-38",
+      "V-18",
+      "SOZ-35"
+    ],
+    "schlagworte": [
+      "Fallkarten",
+      "Rollenspiel",
+      "Entscheidungen",
+      "innerer Rat",
+      "Werte",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:messages",
+    "verwandt": [
+      "skills-gut-entscheiden",
+      "skills-situationskarten"
+    ],
+    "kurs": [
+      "j3-e06"
+    ],
+    "de": {
+      "titel": "Entscheidungs-Werkstatt",
+      "untertitel": "Sechs Fälle mit Wendung und vier Stimmen für den inneren Rat – zum Ausschneiden",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "So arbeitet der innere Rat",
+          "punkte": [
+            "Alle Fälle sind erfunden. Niemand spielt eine eigene Entscheidung.",
+            "Eine Person stellt sich in die Mitte, die Leitung liest den Fall vor. Vier Stimmen stehen in den Ecken: Bauch, Kopf, Werte, Die anderen.",
+            "Reihum sagt jede Stimme einen Satz. Die Person in der Mitte geht jedes Mal einen Schritt auf die Stimme zu, die sie gerade am meisten überzeugt.",
+            "Nach zwei Runden kommt die Wendung, dann eine dritte Runde.",
+            "Zum Schluss entscheidet die Person laut: „Ich entscheide mich für …, weil … Mein erster Schritt ist …“",
+            "Jede Stimme will der Person helfen – nur eben auf ihre Art."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Fallkarten ausschneiden. Die Wendung liest die Leitung erst nach der zweiten Runde vor.",
+          "symbole": [
+            "schneiden",
+            "gruppe"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 2,
+          "hoehe": 112,
+          "karten": [
+            {
+              "titel": "E1 · Der Samstagsjob",
+              "text": "Inês (15) könnte samstags im Supermarkt im Ort aushelfen. Sie spart auf einen Roller. Dafür müsste sie mit dem Fußball aufhören, denn samstags ist Training. Wendung: Die Trainerin sagt, Inês könnte nächste Saison in die erste Mannschaft kommen."
+            },
+            {
+              "titel": "E2 · Das Konzert",
+              "text": "Tiago (16) kann mit Freunden zum Konzert seiner Lieblingsband fahren – am Sonntagabend. Am Montag schreibt er einen Devoir in Mathe, und das Ticket kostet fast sein ganzes Erspartes. Wendung: Der letzte Zug nach Hause fährt, bevor das Konzert zu Ende ist."
+            },
+            {
+              "titel": "E3 · Der Gruppenchat",
+              "text": "Im Klassenchat wird seit Tagen über eine Mitschülerin gelästert. Samuel (15) findet das nicht in Ordnung. Wenn er etwas schreibt, ist er vielleicht der Nächste. Wendung: Die Mitschülerin schreibt Samuel privat: „Liest du das auch alles?“"
+            },
+            {
+              "titel": "E4 · Das Schwänzen",
+              "text": "Léas (15) beste Freundin schwänzt seit zwei Wochen jeden Montag die ersten Stunden und fälscht die Entschuldigungen. „Du verrätst mich nicht, oder?“ Wendung: Die Klassenlehrerin fragt Léa, ob sie weiß, was mit ihrer Freundin los ist."
+            },
+            {
+              "titel": "E5 · Das Handy",
+              "text": "Rafaels (16) Handy ist kaputt, er hat 300 Euro gespart. Ein Bekannter bietet ihm ein neues Modell für 150 Euro an – ohne Karton, ohne Rechnung. Wendung: Als Rafael nach der Rechnung fragt, sagt der Bekannte: „Stell keine Fragen, sonst ist es weg.“"
+            },
+            {
+              "titel": "E6 · Die Ausbildung",
+              "text": "Nora (16) kann eine Ausbildung als Friseurin beginnen. Ihre Eltern möchten, dass sie weiter zur Schule geht. Nora ist nicht sicher, ob Friseurin wirklich ihr Beruf ist. Wendung: Der Salon sagt, der Platz ist nur noch bis Freitag frei."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Stimmen-Schilder ausschneiden und in die vier Ecken hängen. Die Sätze helfen beim Einstieg.",
+          "symbole": [
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 2,
+          "hoehe": 250,
+          "karten": [
+            {
+              "titel": "Bauch",
+              "bild": "icon:heart",
+              "text": "Ich spüre, was du willst und was dir Angst macht. „Da hab ich richtig Lust drauf.“ – „Mir ist dabei mulmig.“"
+            },
+            {
+              "titel": "Kopf",
+              "bild": "icon:brain",
+              "text": "Ich frage nach Fakten und Folgen. „Was kostet das?“ – „Was passiert am Montag – und in einem Jahr?“"
+            },
+            {
+              "titel": "Werte",
+              "bild": "icon:compass",
+              "text": "Ich erinnere dich an das, was dir wichtig ist. „Du wolltest ehrlich sein.“ – „Was passt zu deinen Top 3?“"
+            },
+            {
+              "titel": "Die anderen",
+              "bild": "icon:users",
+              "text": "Ich sage, was Freunde, Familie oder die Klasse denken. „Alle machen mit.“ – „Deine Mutter wäre enttäuscht.“"
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Mit erfundenen Fällen und vier Stimmen erleben die Jugendlichen im Rollenspiel, wie Gefühle, Fakten, Werte und andere Menschen an einer Entscheidung ziehen.",
+        "ablauf": [
+          "Vorher: einmal auf festes Papier drucken und ausschneiden; Karten weglassen, die einer aktuellen Lage in der Gruppe ähneln.",
+          "Aufbau (3 Min.): Schilder in die Ecken, eine Person in die Mitte, vier Stimmen; die übrigen beobachten.",
+          "Pro Fall (6 Min.): zwei Runden, Wendung, dritte Runde, dann laut entscheiden mit dem Entscheidungssatz.",
+          "Nach jedem Fall fragen: Welche Stimme hat gewonnen, welche kam zu kurz? Drei bis vier Fälle spielen."
+        ],
+        "hintergrund": "Rollenspiele machen innere Abwägungen sichtbar: Was sonst gleichzeitig im Kopf abläuft, verteilt sich auf vier Personen. Bauch und Kopf entsprechen dem emotionalen und dem rationalen Zustand, die im „weisen Geist“ zusammenkommen (Linehan, 2015); die Stimme „Die anderen“ steht für den Einfluss Gleichaltriger, der im Jugendalter besonders stark ist (Steinberg, 2014). Die Wendung zeigt: Umentscheiden ist kein Scheitern. Aktive Übungsformen wie das Rollenspiel machen Programme zum sozial-emotionalen Lernen wirksamer (Durlak et al., 2011).",
+        "quellen": [
+          "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford.",
+          "Steinberg, L. (2014). Age of Opportunity: Lessons from the New Science of Adolescence. Boston: Houghton Mifflin Harcourt.",
+          "Durlak, J. A., Weissberg, R. P., Dymnicki, A. B., Taylor, R. D. & Schellinger, K. B. (2011). The impact of enhancing students’ social and emotional learning: A meta-analysis of school-based universal interventions. Child Development, 82(1), 405–432."
+        ],
+        "differenzierung": {
+          "leichter": "Nur zwei Stimmen, Bauch und Kopf; die Leitung spricht die Werte.",
+          "schwerer": "Vor der Entscheidung zusammenfassen, was jede Stimme gesagt hat, und eine dritte Möglichkeit nennen."
+        },
+        "impulse": [
+          "Welche Stimme ist bei euch im Alltag am lautesten?",
+          "Wann hilft die Stimme „Die anderen“ – und wann nicht?"
+        ],
+        "tipps": [
+          "Die Stimmen dürfen übertreiben; das zeigt die Unterschiede deutlich.",
+          "Karten laminieren – sie passen auch zu späteren Einheiten."
+        ],
+        "achtung": "Nur mit den erfundenen Fällen spielen. Belastet ein Fall jemanden, Karte wechseln und später unter vier Augen nachfragen; bei Hinweisen auf Druck oder Gewalt die zuständige Leitung (Responsable) informieren.",
+        "material": "Festes Papier, Schere, Klebeband"
+      }
+    }
+  },
+  {
+    "id": "skills-mut-oder-leichtsinn",
+    "bereich": "skills",
+    "thema": "werte",
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "25 Min.",
+    "eldib": [
+      "V-21",
+      "V-20",
+      "SOZ-39",
+      "V-24"
+    ],
+    "schlagworte": [
+      "Risiko",
+      "Mut",
+      "Leichtsinn",
+      "Gruppendruck",
+      "Jugendalter",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:mountain",
+    "verwandt": [
+      "nein-unter-druck",
+      "skills-nein-sagen"
+    ],
+    "kurs": [
+      "j3-e07"
+    ],
+    "de": {
+      "titel": "Mut oder Leichtsinn?",
+      "untertitel": "Vier Fragen, bevor es kribbelt – und ein Satz, mit dem du aussteigen kannst",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Gaspedal und Bremse",
+          "text": "Mit 15 und 16 reagiert das Gehirn besonders stark auf Neues, Spannung und Anerkennung – das ist das Gaspedal. Die Bremse, die plant und stoppt, reift langsamer, bis etwa Mitte 20. Schauen andere zu, drückt das Gaspedal noch fester. Das ist keine Schwäche: Dasselbe Gaspedal lässt dich Neues lernen und dir Dinge zutrauen."
+        },
+        {
+          "art": "geschichte",
+          "titel": "Auf der Brücke",
+          "bild": "figur:ben:nervoes",
+          "text": "Samstag an der Sauer. Luca (15) steht mit fünf anderen auf einer Brücke. Zwei sind schon ins Wasser gesprungen, eine filmt. Wie tief der Fluss heute ist, weiß niemand – es hat seit Wochen kaum geregnet. „Jetzt du“, ruft jemand. Alle schauen Luca an."
+        },
+        {
+          "art": "geschichte",
+          "titel": "Im Klassenchat",
+          "bild": "figur:jana:besorgt",
+          "text": "Im Klassenchat taucht ein Foto von Elias auf: Er ist in der Kantine eingeschlafen, darunter stehen gemeine Sprüche. Alle schicken lachende Smileys. Amira (15) überlegt, ob sie schreibt: „Löscht das. Das ist nicht okay.“ Vielleicht ist sie dann die Nächste."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Der Mut-Check: Für wen trifft die Aussage zu – für Luca, für Amira, für beide oder für keinen?",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "Luca",
+            "Amira",
+            "beide",
+            "keiner"
+          ],
+          "items": [
+            "Es geht um etwas, das wirklich wichtig ist.",
+            "Er oder sie würde es auch tun, wenn niemand zuschaut.",
+            "Das Risiko ist bekannt und lässt sich beeinflussen.",
+            "Wenn es schiefgeht, lässt sich der Schaden wiedergutmachen."
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "text": "Mut dient etwas, das dir wichtig ist, und du kennst das Risiko. Leichtsinn setzt viel aufs Spiel für wenig – oft nur für den Moment oder fürs Publikum."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Die Risiko-Skala: Wie riskant ist Lucas Sprung, wie riskant Amiras Nachricht? Schreib L und A über die passende Zahl."
+        },
+        {
+          "art": "skala",
+          "frage": "Wie riskant ist das?",
+          "von": "kein Risiko",
+          "bis": "lebensgefährlich",
+          "stufen": 11
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dein Ausstiegssatz: Wie kommst du aus einer aufgeheizten Lage heraus, ohne dein Gesicht zu verlieren?",
+          "hinweis": "Erst die Bremse, dann der Satz. Kurz, ehrlich oder witzig: „Ohne mich, ich hab morgen Training.“ – „Lass mal, ich brauch meine Knochen noch.“"
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 0,
+          "items": [
+            {
+              "titel": "Stopp",
+              "text": "Einfrieren. Nichts sagen, nichts tun."
+            },
+            {
+              "titel": "Schritt zurück",
+              "text": "Einen Schritt nach hinten, lang ausatmen."
+            },
+            {
+              "titel": "Hinschauen",
+              "text": "Was passiert hier? Was will ich?"
+            },
+            {
+              "titel": "Klug weitermachen",
+              "text": "Den Ausstiegssatz sagen oder gehen."
+            }
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 2,
+          "items": [
+            "Mein Ausstiegssatz: …"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ein gutes Risiko: Was möchtest du dich trauen, weil es dir wichtig ist?"
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 2,
+          "items": [
+            "Etwas Mutiges, das mir wichtig ist: …",
+            "Mein erster kleiner Schritt: …",
+            "Wer mir dabei helfen kann: …"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Du entscheidest, was du teilst.",
+          "text": "Aufgabe 4 gehört dir. Wirst du zu gefährlichen Mutproben gedrängt oder bedroht, auch online, hol dir Hilfe: bei einer Vertrauensperson, beim SePAS oder beim Kanner- a Jugendtelefon (116 111)."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen verstehen, warum Risiken im Jugendalter reizen, unterscheiden mit vier Prüffragen Mut von Leichtsinn, üben den Stopp und formulieren einen Ausstiegssatz und ein gutes Risiko.",
+        "ablauf": [
+          "Nach dem Würfel-Experiment (3 Min.): den Kasten „Gaspedal und Bremse“ lesen und mit dem Erlebten verbinden.",
+          "Aufgabe 1 zu zweit (6 Min.). Lösung: Alle vier Aussagen treffen auf Amira zu, keine auf Luca. Bei Aussage 1 lohnt die Diskussion: Dazugehören ist Luca wichtig – braucht er dafür den Sprung?",
+          "Aufgabe 2 allein (2 Min.). Frage: „Amiras Nachricht ist nicht ohne Risiko – warum ist sie trotzdem Mut?“",
+          "Nach dem Stopp-Training (5 Min.): Aufgabe 3. Im Réckbléck (3 Min.): Aufgabe 4, vorlesen nur freiwillig."
+        ],
+        "hintergrund": "Steinberg (2014) beschreibt das Jugendalter als Zeit, in der das Belohnungssystem besonders empfindlich reagiert, während die Steuerung im Stirnhirn bis ins junge Erwachsenenalter reift. Schauen Gleichaltrige zu, gehen Jugendliche mehr Risiken ein, Erwachsene kaum (Gardner & Steinberg, 2005); ihr Belohnungssystem ist dabei stärker aktiv (Chein et al., 2011). Dieselbe Offenheit ist eine Chance: Wer gute Risiken von leichtsinnigen unterscheidet, kann den Schwung nutzen, statt ihn nur zu bremsen. Die vier Schritte folgen der STOPP-Fertigkeit aus dem DBT-Skillstraining (Linehan, 2015).",
+        "quellen": [
+          "Steinberg, L. (2014). Age of Opportunity: Lessons from the New Science of Adolescence. Boston: Houghton Mifflin Harcourt.",
+          "Gardner, M. & Steinberg, L. (2005). Peer influence on risk taking, risk preference, and risky decision making in adolescence and adulthood: An experimental study. Developmental Psychology, 41(4), 625–635.",
+          "Chein, J., Albert, D., O’Brien, L., Uckert, K. & Steinberg, L. (2011). Peers increase adolescent risk taking by enhancing activity in the brain’s reward circuitry. Developmental Science, 14(2), F1–F10.",
+          "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Den Mut-Check gemeinsam laut durchgehen; Ausstiegssätze an der Tafel zur Auswahl anbieten.",
+          "schwerer": "Für Amira einen Plan schreiben, der ihr Risiko verkleinert: Wen holt sie dazu, was schreibt sie genau?"
+        },
+        "impulse": [
+          "Was macht aus einem Risiko Mut?",
+          "Wann ist Aufhören mutiger als Weitermachen?"
+        ],
+        "tipps": [
+          "Gute Risiken ausdrücklich würdigen: sich bewerben, die eigene Meinung sagen, jemanden ansprechen.",
+          "Ausstiegssätze sammeln und für alle kopieren."
+        ],
+        "achtung": "Nicht nach eigenen Mutproben fragen. Bringt sich jemand wiederholt in Gefahr oder wird zu Mutproben gedrängt: ruhig ansprechen, Schutzkonzept anwenden, Responsable am selben Tag informieren; akut 112.",
+        "material": "Blatt, Stifte"
+      }
+    }
+  },
+  {
+    "id": "skills-faktencheck-rausch",
+    "bereich": "skills",
+    "thema": "risiko",
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "25 Min.",
+    "eldib": [
+      "KOG-51",
+      "V-32",
+      "SOZ-39"
+    ],
+    "schlagworte": [
+      "Alkohol",
+      "Cannabis",
+      "Mythen",
+      "Mischkonsum",
+      "Einvernehmlichkeit",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:list-check",
+    "kurs": [
+      "j3-e08"
+    ],
+    "de": {
+      "titel": "Faktencheck: Rausch und Risiko",
+      "untertitel": "Was stimmt über Alkohol, Cannabis und andere Drogen – und was ist nur ein Mythos?",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Über Alkohol, Cannabis und andere Drogen hört man viele Sätze, die nicht stimmen. Wer die Fakten kennt, lässt sich weniger einreden – und weiß, was zu tun ist, wenn es jemandem schlecht geht."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Stimmt oder stimmt nicht? Kreuze allein an, bevor ihr die Aussagen gemeinsam auflöst.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "stimmt",
+            "stimmt nicht",
+            "weiß nicht"
+          ],
+          "items": [
+            "Die meisten Jugendlichen in deinem Alter kiffen nicht.",
+            "Mit einem Energydrink dazu ist Alkohol weniger gefährlich.",
+            "Kiffen macht immer entspannt.",
+            "Wer viel verträgt, hat sich an Alkohol gewöhnt – ein Warnzeichen.",
+            "Mischen ist kein Problem, wenn man von allem nur ein bisschen nimmt.",
+            "Einer Pille oder einem Pulver sieht man nicht an, was und wie viel darin ist.",
+            "Wer sich nach ein paar Bier noch fit fühlt, kann auch fahren.",
+            "Im Rausch gibt es kein echtes Ja – auch nicht zu Küssen oder Sex.",
+            "Wer nicht mehr wach zu kriegen ist, schläft den Rausch am besten aus."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Welche Antwort hat dich überrascht? Schreib die richtige Antwort in eigenen Worten auf."
+        },
+        {
+          "art": "linien",
+          "anzahl": 3
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "Mischen macht unberechenbar",
+              "text": "Alkohol mit Cannabis, mit Energydrinks, mit Medikamenten oder anderen Drogen: Die Wirkungen verstärken oder verdecken sich. Man merkt weniger, wie viel man schon hat, und der Körper kommt schneller an seine Grenze."
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "tipp",
+              "titel": "Nicht fahren, nicht mitfahren",
+              "text": "Alkohol und Cannabis verlangsamen Reaktion und Einschätzung, oft bevor man es merkt. Steig nicht ein, wenn die Person am Steuer oder am Lenker getrunken oder gekifft hat – auch nicht auf den Roller. Bus und Zug sind in Luxemburg kostenlos."
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Im Rausch gibt es kein echtes Ja",
+          "text": "Ob Küssen, Berühren oder Sex: Einvernehmlich ist es nur mit einem klaren, freien Ja von jemandem, der bei klarem Verstand ist. Wer sehr betrunken oder high ist, kann das nicht geben. Bist du unsicher, ob die andere Person noch klar ist, hör auf. Alkohol ist keine Ausrede – wer den Rausch eines anderen ausnutzt, begeht eine Straftat. Fragen dazu beantwortet auch das Planning Familial."
+        },
+        {
+          "art": "info",
+          "symbol": "achtung",
+          "titel": "Was das Gesetz sagt – ganz allgemein",
+          "text": "Die genauen Regeln erklärt dir deine Leitung.",
+          "punkte": [
+            "Für Alkohol, Tabak und Vapes gelten Altersgrenzen. Cannabis ist für Minderjährige verboten.",
+            "Drogen weitergeben oder verkaufen ist strafbar – auch unter Freunden.",
+            "Wer berauscht fährt, macht sich strafbar.",
+            "Fotos oder Videos von Menschen zu teilen, die betrunken oder hilflos sind, verletzt ihre Rechte und kann strafbar sein."
+          ]
+        },
+        {
+          "art": "notfall",
+          "text": "Hilfe und Beratung",
+          "eintraege": [
+            {
+              "name": "Notruf: Rettung – bei Bewusstlosigkeit, Atemnot oder Krampf",
+              "nummer": "112"
+            },
+            {
+              "name": "Polizei",
+              "nummer": "113"
+            },
+            {
+              "name": "Kanner- a Jugendtelefon (anonym, kostenlos)",
+              "nummer": "116 111"
+            },
+            {
+              "name": "SOS Détresse – Hilfe am Telefon (anonym)",
+              "nummer": "45 45 45"
+            },
+            {
+              "name": "SePAS, Schulärztin oder Schularzt",
+              "nummer": "im Lycée"
+            },
+            {
+              "name": "Beratung zu Alkohol und Drogen (trägt die Leitung ein): ______________________",
+              "nummer": "______________"
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen prüfen Mythen über Alkohol, Cannabis und andere Drogen und behalten drei Botschaften: Mischen macht unberechenbar, nicht berauscht fahren oder mitfahren, im Rausch gibt es kein echtes Ja.",
+        "ablauf": [
+          "Vorher: die Beratungsstelle eintragen und die Rechtslage auf den aktuellen Stand prüfen.",
+          "Aufgabe 1 allein (5 Min.), dann Quiz in Teams (15 Min.): grüne oder rote Karte heben und mit ein bis drei Fingern zeigen, wie sicher das Team ist.",
+          "Auflösung: stimmt – 1, 4, 6, 8; stimmt nicht – 2, 3, 5, 7, 9. Kurz begründen: Energydrinks verdecken den Rausch (2), THC kann auch Angst und Panik auslösen (3), Mischen verstärkt Wirkungen, auch in kleinen Mengen (5), die Reaktion leidet früh (7), wer nicht wach wird, ist in Lebensgefahr (9).",
+          "Aufgabe 2 und die Kästen (5 Min.); Rechtsfragen nur allgemein beantworten."
+        ],
+        "hintergrund": "Drohbotschaften und Schockbilder ändern Verhalten kaum; sie wirken höchstens, wenn Menschen zugleich wissen, was sie tun können (Peters, Ruiter & Kok, 2013). Wirksamer ist es, falsche Normen zu korrigieren: Jugendliche überschätzen, wie viel Gleichaltrige trinken oder kiffen, und richten sich danach (Perkins, 2002). Die Fakten sprechen ohne Übertreibung für sich: Von denen, die als Jugendliche mit Cannabis beginnen, wird etwa jede sechste Person abhängig, insgesamt knapp jede zehnte (Volkow et al., 2014).",
+        "quellen": [
+          "Peters, G.-J. Y., Ruiter, R. A. C. & Kok, G. (2013). Threatening communication: A critical re-analysis and a revised meta-analytic test of fear appeal theory. Health Psychology Review, 7(Suppl. 1), S8–S31.",
+          "Perkins, H. W. (2002). Social norms and the prevention of alcohol misuse in collegiate contexts. Journal of Studies on Alcohol, Supplement 14, 164–172.",
+          "Volkow, N. D., Baler, R. D., Compton, W. M. & Weiss, S. R. B. (2014). Adverse health effects of marijuana use. New England Journal of Medicine, 370(23), 2219–2227."
+        ],
+        "differenzierung": {
+          "leichter": "Nur die Aussagen 1 bis 6; Wörter wie THC oder Mischkonsum vorher klären.",
+          "schwerer": "Eine weitere, oft gehörte Aussage formulieren und prüfen – ohne eigene Erfahrungen."
+        },
+        "impulse": [
+          "Warum halten sich Mythen über Drogen so hartnäckig?",
+          "Woran erkennt ihr verlässliche Informationen?"
+        ],
+        "tipps": [
+          "Zahlen zum Konsum Jugendlicher in Luxemburg nur mit geprüfter Quelle nennen.",
+          "Fragen nach Mengen oder Bezugsquellen nicht beantworten, sondern auf Risiken und Hilfe lenken."
+        ],
+        "achtung": "Keine Konsumgeschichten abfragen. Bei Hinweisen auf gefährlichen Konsum oder einen Übergriff: nach der Einheit ruhig ansprechen, nichts versprechen, Schutzkonzept anwenden, Responsable am selben Tag informieren; bei akuter Gefahr 112, nicht allein lassen.",
+        "material": "Blatt, grüne und rote Karten"
+      }
+    }
+  },
+  {
+    "id": "skills-notfall-plan",
+    "bereich": "skills",
+    "thema": "risiko",
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "25 Min.",
+    "eldib": [
+      "V-27",
+      "SOZ-26",
+      "SOZ-37"
+    ],
+    "schlagworte": [
+      "Notfall",
+      "Erste Hilfe",
+      "stabile Seitenlage",
+      "Notruf 112",
+      "Heimweg",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:phone",
+    "kurs": [
+      "j3-e08"
+    ],
+    "de": {
+      "titel": "Wenn es jemandem schlecht geht",
+      "untertitel": "Notfall erkennen, richtig handeln, sicher nach Hause kommen",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "achtung",
+          "titel": "Das ist ein Notfall – sofort 112",
+          "text": "Im Zweifel immer anrufen. Die Leitstelle sagt dir am Telefon, was du tun sollst.",
+          "punkte": [
+            "Die Person ist nicht wach zu kriegen oder reagiert kaum.",
+            "Sie atmet sehr langsam, unregelmäßig oder röchelt.",
+            "Sie erbricht sich und ist kaum ansprechbar.",
+            "Die Haut ist kalt, blass oder bläulich.",
+            "Krampfanfall, starke Verwirrtheit, Brustschmerzen oder Panik, die nicht nachlässt."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Die vier Schritte im Notfall: Präg sie dir ein."
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 0,
+          "items": [
+            {
+              "titel": "Ansprechen",
+              "text": "Laut ansprechen, an den Schultern rütteln. Atmet sie normal?"
+            },
+            {
+              "titel": "112 anrufen",
+              "text": "Selbst anrufen oder bestimmen: „Du rufst jetzt 112 an.“"
+            },
+            {
+              "titel": "Seitenlage",
+              "text": "Atmet sie normal: Seitenlage. Wenn nicht, leitet dich die 112 an."
+            },
+            {
+              "titel": "Dableiben",
+              "text": "Zudecken, Atmung prüfen, nicht allein lassen."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Station A – die stabile Seitenlage: Hake jeden Schritt ab, wenn du ihn geübt hast.",
+          "hinweis": "Nur mit Erlaubnis und nur an Schulter, Arm, Hand und Knie – sonst an der Puppe üben.",
+          "symbole": [
+            "ankreuzen",
+            "partner"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 1,
+          "items": [
+            "Neben die Person knien, den nahen Arm im rechten Winkel nach oben legen.",
+            "Den fernen Arm über die Brust legen, den Handrücken an ihre Wange halten.",
+            "Das ferne Bein beugen, bis der Fuß auf dem Boden steht.",
+            "Die Person am Knie zu dir herüberdrehen, das obere Bein im rechten Winkel ablegen.",
+            "Den Kopf leicht nach hinten neigen, den Mund öffnen, damit Erbrochenes abfließt.",
+            "Zudecken und die Atmung immer wieder prüfen, bis die Rettung da ist."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Station B – der Notruf: Spielt den Anruf zu zweit. Schreib auf, was du sagst.",
+          "hinweis": "Die Lage: Auf einer Geburtstagsfeier liegt Mila im Garten. Sie reagiert nicht, atmet aber. Sie hat viel getrunken.",
+          "symbole": [
+            "partner",
+            "sprechen"
+          ]
+        },
+        {
+          "art": "dialog",
+          "zeilen": [
+            {
+              "wer": "Leitstelle",
+              "text": "Notruf 112. Wo genau sind Sie, und was ist passiert?"
+            },
+            {
+              "wer": "Du"
+            },
+            {
+              "wer": "Leitstelle",
+              "text": "Ist die Person wach? Atmet sie? Was hat sie genommen?"
+            },
+            {
+              "wer": "Du"
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "text": "Leg nicht auf, bevor die Leitstelle es sagt – sie erklärt dir, was du tun sollst. Beim Notruf geht es um Rettung, nicht um Ärger. Sag ehrlich, was die Person getrunken oder genommen hat. Hilfe holen ist kein Verrat."
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Wenn jemand Panik bekommt",
+          "text": "Ruhig und langsam sprechen, an einen ruhigen Ort gehen, nicht allein lassen, gemeinsam langsam ausatmen. Nichts mehr nehmen lassen. Bei Brustschmerzen, Atemnot, Krampf oder starker Verwirrtheit: 112."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Station C – dein Plan: Was sagst du, was tust du?",
+          "hinweis": "Plan B für den Heimweg: Bus und Zug sind in Luxemburg kostenlos. Schau vorher, wann der letzte fährt, und mach mit jemandem, dem du vertraust, ein Codewort aus."
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 1,
+          "items": [
+            "Die Person, die fahren will, hat getrunken oder gekifft. Ich sage: …",
+            "Stattdessen komme ich so nach Hause: …"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 2,
+          "items": [
+            "Eine Freundin kann kaum noch stehen, und ein Älterer will mit ihr allein nach draußen. Ich …"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 1,
+          "items": [
+            "Unser Codewort für „Hol mich bitte ab, Fragen später“: …"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Du entscheidest, was du teilst.",
+          "text": "Dein Plan gehört dir. Leg ihn in dein Skills-Buch, damit du ihn findest, wenn es darauf ankommt."
+        },
+        {
+          "art": "notfall",
+          "text": "Hilfe und Beratung",
+          "eintraege": [
+            {
+              "name": "Notruf: Rettung – bei Bewusstlosigkeit, Atemnot oder Krampf",
+              "nummer": "112"
+            },
+            {
+              "name": "Polizei",
+              "nummer": "113"
+            },
+            {
+              "name": "Kanner- a Jugendtelefon (anonym, kostenlos)",
+              "nummer": "116 111"
+            },
+            {
+              "name": "SOS Détresse – Hilfe am Telefon (anonym)",
+              "nummer": "45 45 45"
+            },
+            {
+              "name": "SePAS, Schulärztin oder Schularzt",
+              "nummer": "im Lycée"
+            },
+            {
+              "name": "Beratung zu Alkohol und Drogen (trägt die Leitung ein): ______________________",
+              "nummer": "______________"
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen erkennen einen Notfall nach Alkohol oder Drogen, üben Seitenlage und Notruf und planen einen sicheren Heimweg.",
+        "ablauf": [
+          "Vorher: Beratungsstelle eintragen, drei Stationen aufbauen, die Schritte mit einer aktuellen Erste-Hilfe-Anleitung abgleichen.",
+          "Einstieg (3 Min.): Warnzeichen und die vier Schritte gemeinsam lesen.",
+          "Stationen (je 7 Min.): A Seitenlage mit einer Leitung, vorgeführt an der Puppe oder der zweiten Leitung, geübt nur mit Erlaubnis; B Notruf zu zweit, 112 nie tippen; C Heimweg.",
+          "Auswertung (4 Min.): „Wen könnt ihr anrufen, wenn ihr abgeholt werden müsst?“ Die Idee des Codeworts vorstellen."
+        ],
+        "hintergrund": "Im Notfall hilft, wer weiß, was zu tun ist, und es sich zutraut; geübte Handgriffe stärken diese Überzeugung (Bandura, 1977). Reine Warnbotschaften bleiben wirkungslos oder lösen Abwehr aus (Peters, Ruiter & Kok, 2013). Im Mittelpunkt steht das Handeln: Bewusstlose können an Erbrochenem ersticken oder auskühlen – Notruf, Seitenlage und Dableiben retten Leben. Die Handgriffe folgen den europäischen Erste-Hilfe-Leitlinien (Zideman et al., 2021). Wenn-dann-Pläne erleichtern das Handeln im entscheidenden Moment (Gollwitzer, 1999).",
+        "quellen": [
+          "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
+          "Peters, G.-J. Y., Ruiter, R. A. C. & Kok, G. (2013). Threatening communication: A critical re-analysis and a revised meta-analytic test of fear appeal theory. Health Psychology Review, 7(Suppl. 1), S8–S31.",
+          "Zideman, D. A., Singletary, E. M., Borra, V., Cassan, P., Cimpoesu, C. D., De Buck, E., Djärv, T., Handley, A. J., Klaassen, B., Meyran, D., Oliver, E. & Poole, K. (2021). European Resuscitation Council Guidelines 2021: First aid. Resuscitation, 161, 270–290.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "differenzierung": {
+          "leichter": "An Station B mündlich antworten; an Station C nur die ersten beiden Sätze.",
+          "schwerer": "An Station B fragt die Leitstelle nach: Wie heißt die Straße? Wie viel hat die Person getrunken?"
+        },
+        "impulse": [
+          "Was hält Jugendliche davon ab, 112 anzurufen?",
+          "Wen könnt ihr nachts anrufen, ohne dass es ein Drama wird?"
+        ],
+        "tipps": [
+          "Wer selbst unsicher in Erster Hilfe ist, holt für Station A eine Person dazu, die Erste Hilfe ausbildet.",
+          "Das Blatt kommt ins Skills-Buch – es soll auffindbar sein, wenn es darauf ankommt."
+        ],
+        "achtung": "Berührung nur mit Erlaubnis; Stopp-Recht gilt. Hat jemand einen Notfall oder Übergriff erlebt: nicht in der Gruppe vertiefen, nach der Einheit Einzelgespräch, nichts versprechen, Schutzkonzept anwenden, Responsable am selben Tag informieren; akut 112.",
+        "material": "Blatt, Decken, Übungspuppe, Handy"
+      }
+    }
+  },
+  {
+    "id": "skills-fehler-naechster-schritt",
+    "bereich": "skills",
+    "thema": "werte",
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "25 Min.",
+    "eldib": [
+      "V-22",
+      "V-33",
+      "V-27"
+    ],
+    "schlagworte": [
+      "Fehler",
+      "Fehlerkultur",
+      "dynamisches Selbstbild",
+      "Selbstmitgefühl",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:seedling",
+    "verwandt": [
+      "aus-rueckschlaegen-lernen",
+      "verantwortung-uebernehmen"
+    ],
+    "kurs": [
+      "j3-e09"
+    ],
+    "de": {
+      "titel": "Vom Fehler zum nächsten Schritt",
+      "untertitel": "Vier Arten von Fehlern, das Wort „noch“ und drei Sätze, die nicht nachtreten",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Wer etwas Neues lernt, macht Fehler – beim Jonglieren, in einer neuen Sprache, im ersten Stage. Entscheidend ist nicht, ob du Fehler machst, sondern was du danach tust."
+        },
+        {
+          "art": "geschichte",
+          "titel": "Zweiter Anlauf",
+          "bild": "figur:jana:enttaeuscht",
+          "text": "Chiara (16) wollte unbedingt Köchin werden. In ihrem ersten Stage kam sie dreimal zu spät, die Beurteilung war schlecht. Ihr erster Gedanke: „Ich bin einfach nicht dafür gemacht.“ Ihre Tante fragte nur: „Was genau ist schiefgelaufen?“ Zusammen fanden sie es heraus: Der Bus war zu knapp, und Chiara hatte sich nicht getraut, in der Küche nachzufragen. Im nächsten Stage nahm sie den Bus davor und fragte, wenn sie etwas nicht wusste. Am Ende bekam sie einen Ausbildungsplatz angeboten."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Vier Arten von Fehlern: Verbinde jede Art mit dem nächsten Schritt, der am besten passt.",
+          "symbole": [
+            "verbinden"
+          ]
+        },
+        {
+          "art": "zuordnen",
+          "titel": [
+            "Fehlerart",
+            "Nächster Schritt"
+          ],
+          "links": [
+            "Schusselfehler: Ich konnte es, war aber zu schnell.",
+            "Noch-nicht-Fehler: Mir fehlte Wissen oder Übung.",
+            "Mut-Fehler: Ich habe etwas Neues gewagt.",
+            "Fehler mit Folgen: Jemand anderes hat Schaden."
+          ],
+          "rechts": [
+            "Verantwortung übernehmen, entschuldigen, wiedergutmachen",
+            "Tempo raus und am Ende kontrollieren",
+            "Auswerten, anpassen, noch einmal versuchen",
+            "Nachfragen, üben, mir etwas erklären lassen"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Das kleine Wort „noch“: Bau die Sätze so um, dass sie einen Weg nach vorn zeigen.",
+          "hinweis": "Beispiel: „Ich bin halt schlecht in Mathe.“ wird zu „Brüche kann ich noch nicht sicher. Morgen frage ich nach.“"
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 2,
+          "items": [
+            "„Ich kann einfach nicht vor Leuten reden.“ – besser: …",
+            "„Französisch ist nichts für mich.“ – besser: …",
+            "„Ich mache sowieso immer alles falsch.“ – besser: …"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Mach aus einem Fehler einen nächsten Schritt – mit einem eigenen Fehler oder dem einer erfundenen Person."
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 2,
+          "items": [
+            "Was ist passiert? …",
+            "Welche Art von Fehler war es? …",
+            "Was lerne ich daraus? …",
+            "Mein nächster Schritt – und bis wann: …"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Der Satz nach dem Fehler: Was sagst du dir, wenn etwas schiefgeht?"
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 0,
+          "items": [
+            {
+              "titel": "Hinschauen",
+              "text": "„Das war ein Fehler, und er ärgert mich.“"
+            },
+            {
+              "titel": "Nicht allein",
+              "text": "„So etwas passiert allen Menschen.“"
+            },
+            {
+              "titel": "Freundlich weiter",
+              "text": "„Was würde mir jetzt helfen – und was ist mein nächster Schritt?“"
+            }
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 2,
+          "items": [
+            "Mein eigener Satz nach einem Fehler: …"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wenn du magst: Frag eine erwachsene Person, der du vertraust, wann sie einmal gescheitert ist – und wie es weiterging.",
+          "hinweis": "Eltern, Trainerin, Onkel, Nachbar: Fast alle haben so eine Geschichte. Notiere, was ihr geholfen hat."
+        },
+        {
+          "art": "linien",
+          "anzahl": 2
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Du entscheidest, was du teilst.",
+          "text": "Aufgabe 3 und 4 gehören dir und werden nicht vorgelesen. Lässt dich ein Fehler nicht los, sprich mit einer Vertrauensperson, beim SePAS oder beim Kanner- a Jugendtelefon (116 111)."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen ordnen Fehlern passende nächste Schritte zu, formulieren starre Sätze mit „noch“ um, werten einen Fehler aus und üben einen freundlichen Satz für sich selbst.",
+        "ablauf": [
+          "Nach dem Tafelbild (5 Min.): Chiaras Geschichte lesen. Frage: „Welche Art von Fehler war es – und was hat ihr geholfen?“",
+          "Aufgabe 1 zu zweit (3 Min.). Lösung: Schusselfehler – Tempo raus; Noch-nicht-Fehler – nachfragen, üben; Mut-Fehler – auswerten, noch einmal; Fehler mit Folgen – wiedergutmachen.",
+          "Aufgabe 2 und 3 allein (9 Min.); Aufgabe 3 wird nicht vorgelesen, eine erfundene Person ist erlaubt.",
+          "Nach dem Jonglieren (5 Min.): die drei Sätze ruhig anleiten, dann Aufgabe 4. Aufgabe 5 ist ein freiwilliger Auftrag bis zum nächsten Mal."
+        ],
+        "hintergrund": "Wer Fähigkeiten für festgelegt hält, versteckt Fehler und meidet Schweres; wer sie für entwickelbar hält, sucht nach Ursachen und Strategien (Dweck, 2006). Kurze Trainings dieser Haltung wirken allein nur schwach (Sisk et al., 2018) – es braucht den konkreten nächsten Schritt. Rückmeldungen helfen, wenn sie klären, wohin es geht, wo man steht und was als Nächstes kommt (Hattie & Timperley, 2007). Die drei Sätze folgen dem Selbstmitgefühl: Achtsamkeit, geteilte Menschlichkeit, Freundlichkeit mit sich (Neff, 2003). Das macht nicht nachlässig: Nach einem Misserfolg lernten Menschen damit länger für den nächsten Versuch (Breines & Chen, 2012).",
+        "quellen": [
+          "Dweck, C. S. (2006). Mindset: The New Psychology of Success. New York: Random House.",
+          "Sisk, V. F., Burgoyne, A. P., Sun, J., Butler, J. L. & Macnamara, B. N. (2018). To what extent and under which circumstances are growth mind-sets important to academic achievement? Two meta-analyses. Psychological Science, 29(4), 549–571.",
+          "Hattie, J. & Timperley, H. (2007). The power of feedback. Review of Educational Research, 77(1), 81–112.",
+          "Neff, K. D. (2003). Self-compassion: An alternative conceptualization of a healthy attitude toward oneself. Self and Identity, 2(2), 85–101.",
+          "Breines, J. G. & Chen, S. (2012). Self-compassion increases self-improvement motivation. Personality and Social Psychology Bulletin, 38(9), 1133–1143."
+        ],
+        "differenzierung": {
+          "leichter": "Aufgabe 2 mündlich; bei Aufgabe 3 nur die erste und die letzte Zeile.",
+          "schwerer": "Zu einem Mut-Fehler einen Plan für den zweiten Versuch schreiben: Was ändere ich, wer hilft, wann?"
+        },
+        "impulse": [
+          "Welcher Fehler ist eigentlich ein gutes Zeichen?",
+          "Wie reagieren Erwachsene, die ihr kennt, auf Fehler?"
+        ],
+        "tipps": [
+          "Eine eigene, leichte Geschichte vom Scheitern erzählen.",
+          "Das Wort „noch“ sichtbar aufhängen."
+        ],
+        "achtung": "Eigene Fehler werden nicht vorgelesen. Wirkt jemand sehr niedergeschlagen, nach der Einheit nachfragen; bei Hinweisen auf Selbstverletzung oder Suizidgedanken Schutzkonzept anwenden, Responsable am selben Tag informieren.",
+        "material": "Blatt, Stifte"
+      }
+    }
+  }
+]

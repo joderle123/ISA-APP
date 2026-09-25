@@ -1,0 +1,775 @@
+{
+  "einheiten": [
+    {
+      "id": "j2-e18",
+      "nr": 18,
+      "jahr": 2,
+      "modul": "j2-m5",
+      "titel": "Familien sind verschieden",
+      "kurz": "An sechs erfundenen Familien entdeckt die Gruppe, wie verschieden Zuhause aussehen kann, was Familien geben, welche Rollen es darin gibt – und wer außer Eltern noch mitträgt.",
+      "dauer": 100,
+      "ziele": [
+        "beschreiben an erfundenen Porträts verschiedene Familienformen und Lebensorte, ohne sie zu bewerten",
+        "benennen, was Familien Jugendlichen geben können, und erkennen, dass manches auch von Menschen außerhalb der Familie kommt",
+        "stellen Rollen in Familien als Standbild dar und unterscheiden Rollen, die stärken, von Rollen, die zu schwer werden können",
+        "wissen, an wen sie sich wenden können, wenn es zu Hause schwierig ist"
+      ],
+      "material": [
+        "Gefühlsrad (A3, laminiert), Wäscheklammern und Anspannungsskala 0–100",
+        "Schülerblatt „Sechs Familien, sechs Zuhause“ für jede Person, dazu eine Kopie in A3 für die Galerie",
+        "Haftnotizen, Stifte, Malerkrepp",
+        "Sechs Zettel mit den Szenen S1–S6 aus Schritt 6",
+        "Ein Wollknäuel und ein Luftballon",
+        "Tee und Becher für den Skill (freiwillig)",
+        "Skills-Pässe, Stempel, Imbiss und Getränke"
+      ],
+      "vorbereitung": [
+        "Vorab im Team klären, wie die Jugendlichen der Gruppe leben – bei den Eltern, bei einem Elternteil, in einer Pflegefamilie oder im Foyer. Ähnelt ein Porträt oder eine Szene zu sehr der Lage einer Person, Einzelheiten ändern; heißt jemand wie eine Figur, den Namen tauschen.",
+        "Die sechs Porträts aus der A3-Kopie ausschneiden und mit Abstand an Wände und Türen kleben.",
+        "Die Szenen S1–S6 auf Zettel schreiben und eine freie Fläche für die Standbilder schaffen.",
+        "Wasser für Tee bereitstellen, Wollknäuel und Luftballon bereitlegen."
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-sechs-familien",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Gefühlsrad, Anspannung, ein Wohlfühl-Geräusch"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Neues Modul: Familie und Zuhause, Rahmen für heute"
+        },
+        {
+          "min": "15–30",
+          "phase": "uebung",
+          "titel": "Galerie: sechs Familien, sechs Zuhause"
+        },
+        {
+          "min": "30–45",
+          "phase": "input",
+          "titel": "Was Familien geben können – und wer noch"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–80",
+          "phase": "aktiv",
+          "titel": "Rollen-Standbilder"
+        },
+        {
+          "min": "80–87",
+          "phase": "aktiv",
+          "titel": "Das Netz: Was trägt?"
+        },
+        {
+          "min": "87–95",
+          "phase": "skill",
+          "titel": "Skill: sich selbst Halt geben"
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Réckbléck und Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: Gefühlsrad und ein Wohlfühl-Geräusch",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Gefühlsrad und Anspannungsskala liegen in der Mitte. Reihum steckt jede Person eine Wäscheklammer an ein Gefühlswort und nennt ihre Zahl von 0 bis 100. Dazu eine freiwillige Zusatzfrage: Bei welchem Geräusch oder Geruch atmest du auf? Die Leitung beginnt mit einem eigenen Beispiel. Die Frage stimmt auf Geborgenheit ein, ohne nach Familie zu fragen.",
+          "sagen": [
+            "Gefühl, Zahl – und wenn ihr mögt: Bei welchem Geräusch oder Geruch atmet ihr auf?",
+            "Bei mir ist es Regen am Fenster, wenn ich drinnen bin und nirgends mehr hinmuss."
+          ],
+          "tipp": "Antworten wie „das Essen von meiner Oma“ mit einem Nicken aufnehmen, aber nicht nachfragen – heute wird bewusst nicht über die eigene Familie gesprochen.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Neues Modul, klarer Rahmen",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "Kurz an die letzte Einheit erinnern: Freundschaften verändern sich und können enden, und im Skills-Kompass steht jetzt ein Skill für Freundschaften. Dann das Modul „Familie und Zuhause“ öffnen und den Rahmen ausdrücklich nennen: In den nächsten drei Einheiten erzählt niemand von der eigenen Familie, alle Beispiele sind erfunden. Familie meint hier die Menschen, mit denen man zusammenlebt oder die für einen sorgen – in welcher Form auch immer.",
+          "sagen": [
+            "Zuhause sieht bei allen anders aus – bei beiden Eltern, bei einem, bei den Großeltern, in einer Pflegefamilie oder im Foyer. All das ist Zuhause.",
+            "Ihr müsst hier nichts über eure Familie erzählen. Wir arbeiten mit erfundenen Familien, und wer mag, nimmt für sich etwas mit."
+          ],
+          "wennEsKippt": "Kommt ein Spruch wie „Wer im Heim wohnt, hat doch keine Familie“, ruhig und klar antworten: Hier wird keine Familienform schlechtgemacht, auch nicht im Spaß. Dann sachlich weitermachen, nach der Einheit mit der Person sprechen, die den Spruch gemacht hat, und im Blick behalten, wen er getroffen haben könnte."
+        },
+        {
+          "titel": "Galerie: sechs Familien, sechs Zuhause",
+          "dauer": 15,
+          "phase": "uebung",
+          "text": "Die sechs Porträts hängen im Raum. Zu zweit gehen alle fünf Minuten herum und lesen; jedes Paar wählt zwei Porträts und klebt je eine Haftnotiz dazu: Wer sorgt hier für wen? Wer lieber sitzt, liest die Porträts auf dem Blatt. Danach im Kreis sammeln, was auffällt, und gemeinsam festhalten: Es gibt nicht die eine normale Familie, und Familien verändern sich – durch Trennung, Umzug, neue Geschwister oder neue Partner. Zum Schluss unterstreicht jede Person auf dem Blatt, wer in jedem Porträt für wen sorgt (Aufgabe 1).",
+          "sagen": [
+            "Welche dieser Familien ist die normale?",
+            "Was haben alle sechs gemeinsam – trotz aller Unterschiede?",
+            "Wer sorgt bei Léa für was? Und wer bei Noah?"
+          ],
+          "tipp": "Die Frage nach der „normalen“ Familie bewusst stellen und die Stille danach aushalten. Meist sagt jemand: Gibt es nicht. Diesen Satz an die Tafel schreiben – er trägt die ganze Einheit.",
+          "wennEsKippt": "Wird über eine Familienform gelacht, etwa über Bens zwei Mütter, die Galerie kurz anhalten und fragen: Was braucht Ben von seiner Familie – und bekommt er es? Damit rückt in den Blick, was eine Familie leistet, nicht, wie sie aussieht. Bei nur zwei Jugendlichen die Porträts auf den Tisch legen und gemeinsam lesen.",
+          "blatt": "skills-sechs-familien"
+        },
+        {
+          "titel": "Was Familien geben können – und wer noch",
+          "dauer": 15,
+          "phase": "input",
+          "text": "Die Frage an die Tafel schreiben: Was brauchen Jugendliche von den Menschen, bei denen sie leben? Antworten sammeln und gemeinsam zu acht Feldern ordnen (Tabelle). Dann zu zweit Aufgabe 2: Für drei Porträts eintragen, was die Person bekommt und von wem. Beim Auswerten auf die Spalte „Von wem?“ schauen – vieles kommt von Eltern, manches von einer Oma, einer Tante, einem Erzieher im Foyer oder der Pflegefamilie. Zum Schluss den Merksatz vom Blatt vorlesen und auf die Kinderrechte hinweisen: Jedes Kind hat ein Recht auf Schutz, Versorgung und darauf, gehört zu werden, auch wenn es nicht bei seinen Eltern lebt.",
+          "sagen": [
+            "Was braucht ein Mensch in eurem Alter von den Erwachsenen, bei denen er lebt? Denkt an einen ganz normalen Dienstag.",
+            "Schaut auf die Spalte „Von wem?“. Was fällt euch auf?",
+            "Kein Mensch kann alles geben. Gut ist, wenn es mehrere gibt."
+          ],
+          "tabelle": {
+            "spalten": [
+              "Was Familien geben können",
+              "Zum Beispiel"
+            ],
+            "zeilen": [
+              [
+                "Versorgung",
+                "Essen, ein Dach über dem Kopf, Kleidung, Arzttermine"
+              ],
+              [
+                "Schutz",
+                "Sicherheit, jemand passt auf, niemand tut dir weh"
+              ],
+              [
+                "Trost",
+                "jemand hört zu, wenn es dir schlecht geht"
+              ],
+              [
+                "Halt und Regeln",
+                "Absprachen, auf die man sich verlassen kann"
+              ],
+              [
+                "Unterstützung",
+                "Hilfe bei Schule, Formularen und Problemen"
+              ],
+              [
+                "Zugehörigkeit",
+                "dazugehören, gemeinsame Sprache, Feste, Erinnerungen"
+              ],
+              [
+                "Freiraum",
+                "Vertrauen und eigene Entscheidungen, die mit dem Alter wachsen"
+              ],
+              [
+                "Gemeinsame Zeit",
+                "zusammen essen, lachen, etwas unternehmen"
+              ]
+            ]
+          },
+          "tipp": "Die acht Felder auf einem Plakat festhalten und hängen lassen: Sie werden in den nächsten beiden Einheiten wieder gebraucht, wenn es um Streit und um Freiraum geht.",
+          "wennEsKippt": "Sagt jemand bitter „Bei mir gibt’s davon nichts“, nicht vertiefen und nicht übergehen: kurz würdigen – Danke, dass du das sagst, darüber reden wir nachher in Ruhe – und nach der Einheit das Gespräch suchen. Die Aussage nach dem Schutzkonzept einschätzen, ohne die Person vor der Gruppe zu befragen.",
+          "blatt": "skills-sechs-familien"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Gemeinsam essen, Fenster auf, das Thema ruht. Die Leitung bleibt ansprechbar und achtet darauf, ob jemand still geworden ist oder sich zurückzieht – Familie kann viel aufwühlen, auch bei Jugendlichen, die fröhlich wirken."
+        },
+        {
+          "titel": "Rollen-Standbilder",
+          "dauer": 20,
+          "phase": "aktiv",
+          "text": "Kleingruppen zu zweit oder zu dritt ziehen je eine Szene (Liste) und bauen in drei Minuten ein Standbild: Alle erstarren in einer Haltung, die zeigt, wer welche Rolle hat. Die anderen raten, wer wer ist, welche Aufgabe jede Figur hat und wie sie sich fühlt. Dann stellt sich die Leitung hinter eine Figur und hält die Hand über ihren Kopf, ohne sie zu berühren; die Figur sagt einen Satz, den sie gerade denkt. Nach jedem Bild steigen alle aus der Rolle aus: ausschütteln, den eigenen Namen sagen. Zum Schluss die Rollen an die Tafel schreiben und besprechen, wann eine Rolle stark macht und wann sie zu schwer wird (Tabelle).",
+          "sagen": [
+            "Ihr habt drei Minuten. Dann friert ihr ein – wie ein Foto, niemand spricht.",
+            "Welche Rolle hat Noah in diesem Bild? Hat er sie sich ausgesucht?",
+            "Welche Rolle macht stolz – und welche könnte auf Dauer zu schwer werden?",
+            "Rollen sind nicht festgeschrieben. In der Klasse oder im Verein hat man oft eine ganz andere."
+          ],
+          "punkte": [
+            "S1 Samstagmorgen: Amira begleitet ihren Vater zum Arzt und übersetzt. Ihre kleinen Geschwister wollen unbedingt mit.",
+            "S2 Abendessen im Foyer: Léa, zwei andere Jugendliche und Erzieher Samuel planen den Ausflug. Alle reden durcheinander.",
+            "S3 Freitagabend: Aylin kommt mit ihrer Tasche beim Vater an. Ihr kleiner Halbbruder rennt ihr entgegen.",
+            "S4 Nach der Schule: Noah passt auf seine Schwester auf, bis die Mutter von der Arbeit kommt. Die Schwester will keine Hausaufgaben machen.",
+            "S5 Sonntag: Ben und sein Bruder streiten, wer mit dem Hund rausgeht. Eine der beiden Mütter kommt dazu.",
+            "S6 Geburtstag: Die Pflegefamilie von Mathis hat eine Überraschung vorbereitet. Mathis kommt zur Tür herein."
+          ],
+          "tabelle": {
+            "spalten": [
+              "Rolle",
+              "Kann stark machen, wenn …",
+              "Wird zu schwer, wenn …"
+            ],
+            "zeilen": [
+              [
+                "den Überblick behalten",
+                "man dafür gesehen wird",
+                "man an alles denkt und niemand an einen selbst"
+              ],
+              [
+                "übersetzen",
+                "man stolz auf seine Sprachen ist",
+                "man Dinge hört und sagen muss, die für Erwachsene gedacht sind"
+              ],
+              [
+                "auf Jüngere aufpassen",
+                "es ab und zu ist und man gefragt wird",
+                "es jeden Tag ist und keine Zeit für Freunde bleibt"
+              ],
+              [
+                "Streit schlichten",
+                "alle ungefähr gleich stark sind",
+                "man zwischen Erwachsenen steht"
+              ],
+              [
+                "die Stimmung retten",
+                "man gern lustig ist",
+                "man nie traurig sein darf"
+              ],
+              [
+                "nicht auffallen",
+                "man Ruhe braucht",
+                "niemand merkt, wenn es einem schlecht geht"
+              ]
+            ]
+          },
+          "tipp": "Berührungen im Standbild nur, wenn alle Beteiligten einverstanden sind; sonst mit Abstand und Blickrichtung arbeiten. Bei wenig Energie stellt die Gruppe die Szenen mit Stühlen und Taschen als Figuren auf und verschiebt sie nur – das wirkt oft erstaunlich genau.",
+          "wennEsKippt": "Rutscht ein Standbild ins Albern ab, einfrieren lassen und trotzdem ernsthaft auswerten: Auch ein übertriebenes Bild zeigt Rollen. Baut jemand erkennbar eine Szene aus dem eigenen Leben nach oder wird sehr ernst, die Szene freundlich beenden, aus der Rolle aussteigen lassen und später unter vier Augen nachfragen. Bei nur zwei Jugendlichen spielt die Leitung die dritte Figur."
+        },
+        {
+          "titel": "Das Netz: Was trägt?",
+          "dauer": 7,
+          "phase": "aktiv",
+          "text": "Alle stehen im Kreis, die Frage für die Runde lautet: Was kann ein Mensch einem anderen geben, das kein Geld kostet? Die Leitung hält das Fadenende fest, antwortet als Erste und wirft das Knäuel einer anderen Person zu; so geht es weiter, bis ein Netz entsteht. Dann legt die Leitung einen Luftballon auf das Netz, und die Gruppe lässt ihn darüber wandern, ohne dass er herunterfällt. Zum Schluss lässt eine Person ihren Faden los – das Netz hält trotzdem.",
+          "sagen": [
+            "Was kann ein Mensch einem anderen geben, das kein Geld kostet? Zeit, Zuhören, einen Witz – ihr entscheidet.",
+            "Einer lässt los. Hält das Netz noch?",
+            "So ist es auch mit Menschen: Wenn einer fehlt, können andere mittragen. Auch diese Gruppe ist ein Stück Netz."
+          ],
+          "tipp": "Das Netz am Ende nicht mühsam aufwickeln, sondern gemeinsam auf den Boden legen; die Leitung wickelt später auf. Bei gutem Wetter geht die Übung auch draußen."
+        },
+        {
+          "titel": "Skill: sich selbst Halt geben",
+          "dauer": 8,
+          "phase": "skill",
+          "text": "Alle setzen sich, wer mag, mit einer warmen Tasse. Die Leitung leitet an: eine Hand auf die Brust oder den Oberarm legen oder beide Hände um die Tasse, die Wärme spüren, dreimal langsam ausatmen und innerlich einen freundlichen Satz sagen, so wie man ihn einer Freundin sagen würde. Danach kurz erklären: Manches, was wir von Menschen brauchen – Wärme, Trost, ein freundlicher Satz –, können wir uns für einen Moment auch selbst geben. Das ersetzt keine Menschen, hilft aber, bis jemand da ist. Wer mag, arbeitet anschließend zwei Minuten still an Aufgabe 3 oder nimmt das Blatt mit.",
+          "sagen": [
+            "Sucht euch eine Stelle, an der sich eine Hand gut anfühlt – Brust, Oberarm oder einfach die warme Tasse.",
+            "Und jetzt ein Satz nur für euch, so wie ihr ihn zu einer Freundin sagen würdet. Zum Beispiel: Das war eine anstrengende Woche. Du machst das gut."
+          ],
+          "tipp": "Wer die Hand auf dem Körper komisch findet, legt beide Hände flach auf die Oberschenkel oder auf den Tisch. Der Skill knüpft an „Freundlich mit mir selbst“ aus Einheit 5 an.",
+          "blatt": "skills-sechs-familien"
+        },
+        {
+          "titel": "Réckbléck und Skills-Pass",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Blitzlicht mit einem Wort: Was kann ein Mensch einem anderen geben? Wiederholungen sind erlaubt. Dann Eintrag in den Skills-Pass, etwa der Selbst-Halt oder ein Satz aus der Einheit, und Stempel. Zum Schluss auf den Hilfe-Kasten am Ende des Blatts zeigen und anbieten, nach der Einheit noch dazubleiben.",
+          "sagen": [
+            "Ein Wort: Was kann ein Mensch einem anderen geben?",
+            "Falls euch heute etwas beschäftigt: Ich bin nach der Stunde noch zehn Minuten hier."
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Wo Menschen zusammenleben, wird auch gestritten – nächstes Mal geht es darum, wie Streit zu Hause fairer laufen kann.",
+      "hintergrund": "Familie ist heute vielfältig: Jugendliche wachsen bei beiden Eltern, bei einem Elternteil, in Patchwork-, Groß- oder Pflegefamilien oder in einem Foyer auf. Für die Entwicklung zählt weniger die Form als die Qualität der Beziehungen. In der Kauai-Studie hatten Kinder, die sich trotz schwieriger Bedingungen gut entwickelten, meist mindestens eine verlässliche Bezugsperson – oft auch außerhalb der Kernfamilie, etwa Großeltern oder eine Lehrerin (Werner & Smith, 1992). Masten (2014) beschreibt Widerstandskraft deshalb als „gewöhnliche“ Kraft, die vor allem aus tragenden Beziehungen entsteht. Die UN-Kinderrechtskonvention sichert jedem Kind Schutz, Versorgung und Gehör zu, auch wenn es nicht bei seiner Familie leben kann (Vereinte Nationen, 1989). Der Skill am Ende nutzt Selbstmitgefühl: sich selbst so freundlich zu begegnen wie einem guten Freund (Neff, 2003).",
+      "quellen": [
+        "Werner, E. E. & Smith, R. S. (1992). Overcoming the Odds. Ithaca: Cornell University Press.",
+        "Masten, A. S. (2014). Ordinary Magic: Resilience in Development. New York: Guilford.",
+        "Vereinte Nationen (1989). Übereinkommen über die Rechte des Kindes. New York: Vereinte Nationen.",
+        "Neff, K. D. (2003). Self-compassion: An alternative conceptualization of a healthy attitude toward oneself. Self and Identity, 2(2), 85–101."
+      ],
+      "achtung": "Familie berührt bei vielen Jugendlichen Verlust, Trennung, Heimweh oder Loyalitätskonflikte – auch bei denen, die fröhlich wirken. Deshalb keine Fragen zur eigenen Familie, keine Stammbäume, keine Fotos; Porträts und Szenen bleiben erfunden, Aufgabe 3 wird weder eingesammelt noch vorgelesen. Keine Familienform bewerten, auch nicht im Scherz. Wer still wird oder den Raum verlässt, bekommt nach der Einheit ein ruhiges Gesprächsangebot. Gibt es Hinweise auf Gewalt, Vernachlässigung oder Angst, nach Hause zu gehen: nicht in der Gruppe vertiefen, die Person nach der Einheit ruhig ansprechen, nichts versprechen, was nicht zu halten ist, nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) am selben Tag informieren; bei akuter Gefahr Notruf 112 und die Person nicht allein lassen."
+    },
+    {
+      "id": "j2-e19",
+      "nr": 19,
+      "jahr": 2,
+      "modul": "j2-m5",
+      "titel": "Streit zu Hause",
+      "kurz": "Handy, Zimmer, Ausgehen, Geschwister: Die Gruppe schaut hinter typische Streitthemen, prüft, wann ein Gespräch gelingen kann, übt im Forumtheater die Zuhause-Formel und macht einen Abkühl-Plan.",
+      "dauer": 100,
+      "ziele": [
+        "erkennen, dass hinter Alltagsstreit um Handy, Zimmer oder Ausgehzeiten auf beiden Seiten berechtigte Anliegen stehen",
+        "unterscheiden günstige und ungünstige Momente für ein schwieriges Gespräch zu Hause",
+        "formulieren ein Anliegen mit der Zuhause-Formel: Verständnis zeigen, Ich-Botschaft, Vorschlag",
+        "erstellen einen Abkühl-Plan für Momente, in denen die Anspannung über 70 steigt"
+      ],
+      "material": [
+        "Gefühlsrad (A3, laminiert), Wäscheklammern und Anspannungsskala 0–100",
+        "Zwölf Themenkarten (A5): Handy, Zimmer, Ausgehen, Geschwister, Hausaufgaben, Noten, Mithelfen im Haushalt, Kleidung, Essen, Taschengeld, Freunde, Lautstärke",
+        "Malerkrepp für eine Bodenlinie und zwei Schilder: „selten“ und „ständig“",
+        "Schülerblatt „Besser streiten zu Hause“ für jede Person",
+        "Situationskarten: Zuhause, die Karten Z1–Z4 ausgeschnitten",
+        "Für den Skill: eine Schüssel mit kaltem Wasser und Handtücher oder Kühlakkus in Tüchern",
+        "Skills-Pässe, Stempel, Imbiss und Getränke"
+      ],
+      "vorbereitung": [
+        "Themenkarten schreiben und die Bodenlinie kleben.",
+        "Die Karten Z1–Z4 ausschneiden; für das Forumtheater zwei Stühle als Bühne und die übrigen im Halbkreis davor stellen.",
+        "Kühlakkus ins Gefrierfach legen oder kurz vor dem Skill kaltes Wasser bereitstellen; vorher fragen, wer Kälte nicht verträgt.",
+        "Die zuständige Leitung (Responsable) vorab über das Thema informieren; wenn möglich zu zweit leiten und einen ruhigen Ort festlegen, an den jemand kurz gehen kann. Situationskarten weglassen, die der Lage einer Person in der Gruppe zu sehr ähneln.",
+        "Den Beschwerdeweg der Einrichtung und die Ansprechpersonen im Haus kennen, falls Jugendliche aus einem Foyer Kritik äußern."
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-streit-zu-hause",
+        "skills-zuhause-karten",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Gefühlsrad, Anspannung, ein Nerv-Geräusch"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Vom Netz zum Streit"
+        },
+        {
+          "min": "15–25",
+          "phase": "uebung",
+          "titel": "Streit-Hitparade auf der Linie"
+        },
+        {
+          "min": "25–35",
+          "phase": "uebung",
+          "titel": "Worum geht es eigentlich? Der Eisberg"
+        },
+        {
+          "min": "35–45",
+          "phase": "input",
+          "titel": "Der richtige Moment und die Zuhause-Formel"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–83",
+          "phase": "aktiv",
+          "titel": "Forumtheater: Stopp und noch einmal"
+        },
+        {
+          "min": "83–95",
+          "phase": "skill",
+          "titel": "Skill: abkühlen – und mein Abkühl-Plan"
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Réckbléck und Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: Welches Geräusch bringt dich auf die Palme?",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Gefühlsrad und Anspannung wie gewohnt: Wäscheklammer an ein Gefühlswort, dazu die Zahl von 0 bis 100. Zusatzfrage, mit Humor gestellt: Welches Geräusch bringt dich am schnellsten auf die Palme – Schmatzen, Wecker, Kreide an der Tafel? Die Leitung beginnt. Nebenbei wird klar, dass Genervtsein zum Zusammenleben dazugehört.",
+          "sagen": [
+            "Gefühl, Zahl – und ein Geräusch, das euch sofort nervt.",
+            "Bei mir ist es jemand, der beim Essen schmatzt. Da bin ich in zwei Sekunden bei 50."
+          ],
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Vom Netz zum Streit",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "An die letzte Einheit anknüpfen: Familien sind verschieden, und viele Menschen können mittragen. Dann das Thema nennen: Wo Menschen zusammenleben, wird gestritten – in jeder Familie und in jedem Foyer. Den Rahmen wiederholen: Niemand erzählt von eigenem Streit zu Hause, gespielt wird nur mit erfundenen Karten, „weiter“ und kurz rausgehen sind erlaubt. Klarstellen, dass es heute um Alltagsstreit geht; Gewalt ist kein Streit, und dafür gibt es Hilfe. Offen sagen, wo die Vertraulichkeit endet.",
+          "sagen": [
+            "Gestritten wird überall, wo Menschen zusammenleben. Die Frage ist nicht, ob, sondern wie.",
+            "Heute geht es um den ganz normalen Streit. Wenn zu Hause jemand geschlagen oder bedroht wird, ist das kein Streit mehr – dann braucht es Hilfe, und die gibt es.",
+            "Was hier gesagt wird, bleibt hier. Nur wenn jemand in Gefahr ist, muss ich Hilfe holen – und sage vorher, was ich tue."
+          ]
+        },
+        {
+          "titel": "Streit-Hitparade auf der Linie",
+          "dauer": 10,
+          "phase": "uebung",
+          "text": "Die zwölf Themenkarten liegen gemischt in der Mitte. Die Gruppe legt sie gemeinsam auf die Bodenlinie zwischen „selten“ und „ständig“ – nicht nach der eigenen Familie, sondern nach der Frage: Worüber streiten Jugendliche und Erwachsene wohl am häufigsten? Wer eine Karte verschiebt, begründet es. Dann die Auflösung: Nach der Forschung geht es meist um Alltägliches wie Mithelfen, Ausgehzeiten, Aussehen oder Schule – heute kommt oft das Handy dazu –, selten um große Werte. Streit in diesem Alter ist normal und zeigt oft, dass jemand mehr selbst bestimmen will; die meisten Familien bleiben sich dabei nah.",
+          "sagen": [
+            "Nicht, wie es bei euch ist – sondern: Worüber wird wohl in den meisten Familien am häufigsten gestritten?",
+            "Warum wird um so kleine Dinge wie einen Teller im Zimmer so heftig gestritten?"
+          ],
+          "tipp": "Bei der zweiten Frage nicht gleich selbst antworten. Die Antworten der Gruppe – es geht ums Prinzip, die hören nie zu – führen direkt zum Eisberg im nächsten Schritt.",
+          "wennEsKippt": "Sagt jemand „Bei uns gibt es nie Streit“ oder „Bei uns fliegen die Fetzen“, beides freundlich stehen lassen und zur allgemeinen Frage zurückkehren. Klingt eine Bemerkung nach Gewalt, nicht nachfragen, sondern nach der Einheit das Einzelgespräch suchen."
+        },
+        {
+          "titel": "Worum geht es eigentlich? Der Eisberg",
+          "dauer": 10,
+          "phase": "uebung",
+          "text": "Die Geschichte „22 Uhr“ vom Blatt vorlesen: Mila und ihre Mutter streiten um das Handy. Zu zweit Aufgabe 1: Über die Wasserlinie kommt, worüber gestritten wird, darunter, was beiden wichtig ist. Im Plenum Milas Seite und die Seite der Mutter nebeneinander an die Tafel schreiben. Den Kern festhalten: Oben steht eine Forderung, unten stehen Sorgen und Wünsche – und die sind auf beiden Seiten verständlich.",
+          "sagen": [
+            "Worüber streiten Mila und ihre Mutter? Und worum geht es eigentlich – bei beiden?",
+            "Die Mutter will Mila nicht ärgern. Was will sie?",
+            "Wer weiß, was unter der Wasserlinie liegt, kann anders streiten."
+          ],
+          "tipp": "Unter der Wasserlinie tauchen oft die Felder aus Einheit 18 auf: Schutz sowie Halt und Regeln auf der einen Seite, Zugehörigkeit und Freiraum auf der anderen.",
+          "blatt": "skills-streit-zu-hause"
+        },
+        {
+          "titel": "Der richtige Moment und die Zuhause-Formel",
+          "dauer": 10,
+          "phase": "input",
+          "text": "Zuerst Aufgabe 2 allein: Bei sechs Situationen einschätzen, ob der Moment für ein schwieriges Gespräch gut ist; kurz vergleichen und den Tipp-Kasten lesen. Dann die Zuhause-Formel an die Tafel (Tabelle): Sie erweitert die Ich-Botschaft um zwei Teile, die bei Erwachsenen besonders wirken – zuerst Verständnis zeigen, am Ende einen Vorschlag machen. Mit dem Beispiel vorführen, wie Mila am nächsten Tag anfangen könnte. Dann beginnen alle Aufgabe 3; wer nicht fertig wird, schreibt nach der Pause weiter.",
+          "sagen": [
+            "Wann würdet ihr mit einer Mutter, einem Vater oder einem Erzieher über etwas Schwieriges reden – und wann lieber nicht?",
+            "Wer zuerst zeigt, dass er die andere Seite versteht, wird eher gehört. Das ist kein Nachgeben, das ist klug.",
+            "Die Ich-Botschaft kennen einige aus dem letzten Jahr. Hier bekommt sie zwei Extras."
+          ],
+          "tabelle": {
+            "spalten": [
+              "Teil",
+              "So kann es klingen"
+            ],
+            "zeilen": [
+              [
+                "1 Verständnis zeigen",
+                "„Ich weiß, dass du willst, dass ich genug schlafe.“"
+              ],
+              [
+                "2 Ich-Botschaft",
+                "„Mich stresst es, wenn ich um zehn raus bin, während die anderen noch planen.“"
+              ],
+              [
+                "3 Vorschlag",
+                "„Können wir ausmachen, dass ich um Viertel nach zehn Gute Nacht schreibe und das Handy dann in die Küche lege?“"
+              ]
+            ]
+          },
+          "tipp": "Ohne Vorkenntnisse aus Jahr 1 reicht für Teil 2 der Satz „Mich stört …, weil …“. Den Satz „Das ist kein Nachgeben“ ruhig zweimal sagen – Verständnis zeigen wird oft mit Verlieren verwechselt.",
+          "wennEsKippt": "Kommt „Das bringt bei meinen Eltern nichts“, nicht dagegenhalten: Zustimmen, dass kein Satz garantiert wirkt, und fragen, was die Chance erhöhen würde – oft landet die Gruppe dann beim richtigen Moment. Wird deutlich, dass zu Hause Angst im Spiel ist, klar sagen: Die Formel ist für Alltagsstreit gedacht, nicht für Situationen, in denen jemand Angst hat.",
+          "blatt": "skills-streit-zu-hause"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Gemeinsam essen, das Thema ruht. Nebenbei die Bühne für das Forumtheater aufbauen. Erzählt jemand in der Pause von einem aktuellen Streit zu Hause, zuhören, nicht bewerten und ein Gespräch nach der Einheit anbieten."
+        },
+        {
+          "titel": "Forumtheater: Stopp und noch einmal",
+          "dauer": 23,
+          "phase": "aktiv",
+          "text": "Die Spielregeln erklären (Liste). Die Leitung spielt die erwachsene Rolle von Karte Z1, eine freiwillige Person die jugendliche; zuerst läuft die Szene höchstens eine Minute so, wie solche Streits oft laufen. Dann wird dieselbe Szene noch einmal gespielt, und jede Person im Publikum darf „Stopp!“ rufen, den Platz der jugendlichen Rolle übernehmen und etwas anderes ausprobieren – einen anderen Moment, einen Abkühl-Satz, die Zuhause-Formel. Bei jedem Stopp fragt die Leitung beide Spielenden nach ihrer Zahl von 0 bis 100. So nacheinander die Karten Z1 bis Z4 spielen, etwa fünf Minuten pro Karte; nach jeder Szene steigen alle aus der Rolle aus.",
+          "sagen": [
+            "Erst spielen wir, wie es oft läuft. Dann darf jede und jeder Stopp rufen und es anders versuchen.",
+            "Stopp. Wo seid ihr gerade, von 0 bis 100?",
+            "Welcher Satz hat die Zahl auf der anderen Seite nach unten gebracht – und welcher nach oben?"
+          ],
+          "punkte": [
+            "Die erwachsene Rolle spielt die Leitung. Jugendliche spielen nur die jugendliche Rolle, und nur nach Karte.",
+            "Niemand spielt jemanden aus der eigenen Familie oder dem eigenen Foyer.",
+            "Keine Beleidigungen, keine Berührungen, keine Gewalt – auch nicht angedeutet.",
+            "Wer eine Rolle übernehmen will, stellt sich neben den Stuhl; niemand wird angetippt.",
+            "Nach der Szene: aufstehen, ausschütteln, den eigenen Namen sagen."
+          ],
+          "tipp": "Die erwachsene Rolle realistisch spielen: weicher, wenn Verständnis kommt, strenger bei Vorwürfen – genau das macht den Unterschied erlebbar. Bei nur zwei Jugendlichen spielt eine Person, die andere führt Regie und darf jederzeit Stopp rufen; bei wenig Energie im Sitzen als Hörspiel spielen.",
+          "wennEsKippt": "Wird eine Szene laut oder zu echt, sofort Stopp rufen, alle aufstehen und ausschütteln lassen und mit der nächsten Karte weitermachen. Spielt jemand sichtlich eine Szene aus dem eigenen Leben nach oder wird still, die Person aus der Rolle holen, den Beitrag würdigen und nach der Einheit unter vier Augen nachfragen.",
+          "blatt": "skills-zuhause-karten"
+        },
+        {
+          "titel": "Skill: abkühlen – und mein Abkühl-Plan",
+          "dauer": 12,
+          "phase": "skill",
+          "text": "Erklären, warum ab etwa 70 kein Argument mehr ankommt, und den Abkühl-Plan in drei Teilen vorstellen: Stopp-Satz mit Rückkehrzeit, runterfahren, zurückkommen. Dann das Runterfahren gemeinsam ausprobieren: Zahl vorher notieren, eine Minute die Handgelenke in kaltes Wasser halten oder einen Kühlakku im Tuch in den Nacken legen und dabei fünfmal länger aus- als einatmen, dann die Zahl nachher notieren. Zum Schluss füllt jede Person Aufgabe 4 aus – allein und ohne vorzulesen.",
+          "sagen": [
+            "Über 70 hört niemand mehr richtig zu, auch ihr selbst nicht. Deshalb: erst runter, dann reden.",
+            "Der Unterschied zwischen Abhauen und Abkühlen ist ein Satz: Ich komme in 20 Minuten wieder.",
+            "Wie ist eure Zahl nach einer Minute Kälte?"
+          ],
+          "tipp": "Kälte an Handgelenken oder im Gesicht bremst den Körper besonders schnell; manche kennen das von den Sinnes-Skills. Wer Kälte nicht verträgt oder Herzprobleme hat, macht nur die Atmung mit.",
+          "wennEsKippt": "Findet jemand die Kälte albern, nicht überreden: Der Plan braucht nur irgendeinen Weg nach unten – Treppe laufen, Musik, kurz ans Fenster. Sagt jemand, zu Hause dürfe er sein Zimmer nicht verlassen oder werde für einen Stopp-Satz bestraft, das ernst nehmen und nach der Einheit darauf zurückkommen.",
+          "blatt": "skills-streit-zu-hause"
+        },
+        {
+          "titel": "Réckbléck und Skills-Pass",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Blitzlicht: Welcher Teil des Abkühl-Plans passt für dich am besten – Stopp-Satz, Runterfahren oder Zurückkommen? Dazu die Anspannung von 0 bis 100. Dann Eintrag in den Skills-Pass, etwa der eigene Stopp-Satz, und Stempel. Zum Schluss kurz auf den Hilfe-Kasten am Ende des Blatts zeigen und ein Gespräch nach der Einheit anbieten; die Beobachtungen danach im Team besprechen.",
+          "sagen": [
+            "Ein Wort reicht: Stopp-Satz, Runterfahren oder Zurückkommen?",
+            "Und falls es zu Hause einmal mehr ist als Streit: Die Nummern stehen unten auf eurem Blatt.",
+            "Und eure Zahl zum Schluss? Ich bin nach der Stunde noch kurz da, falls jemand reden möchte."
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Hinter vielen Streits steckt der Wunsch, mehr selbst zu bestimmen – nächstes Mal übt ihr, wie man Freiraum so aushandelt, dass beide Seiten zustimmen können.",
+      "hintergrund": "Konflikte zwischen Jugendlichen und Eltern nehmen in der frühen Adoleszenz zu. Meist geht es um Alltägliches wie Mithelfen, Ausgehzeiten, Aussehen oder Schule, und die meisten Familien behalten dabei eine warme Beziehung (Steinberg, 2001). Hinter dem Streit steht oft ein Entwicklungsschritt: Jugendliche wollen mehr selbst bestimmen, Erwachsene fühlen sich für Sicherheit und Gesundheit verantwortlich. Gordon (1972) zeigt in der „Familienkonferenz“, wie Ich-Botschaften und Zuhören Machtkämpfe entschärfen. Das Fertigkeitentraining für Jugendliche und ihre Familien ergänzt das Validieren: Wer zuerst zeigt, dass er die Sicht der anderen Seite versteht, wird eher gehört (Rathus & Miller, 2015). Bei sehr hoher Anspannung hilft kein Argument; deshalb gehören der passende Moment und ein Abkühl-Plan mit Rückkehrzeit dazu.",
+      "quellen": [
+        "Steinberg, L. (2001). We know some things: Parent–adolescent relationships in retrospect and prospect. Journal of Research on Adolescence, 11(1), 1–19.",
+        "Gordon, T. (1972). Familienkonferenz. Hamburg: Hoffmann und Campe.",
+        "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford."
+      ],
+      "achtung": "Streit zu Hause ist für manche Jugendliche mit Angst, Gewalt oder dem Leben in einem Foyer verbunden. Deshalb keine eigenen Streitgeschichten abfragen, im Forumtheater nur die Karten spielen, die erwachsene Rolle übernimmt die Leitung, und niemand spielt jemanden aus der eigenen Familie oder dem eigenen Foyer; keine Szenen mit Gewalt, Drohungen oder Rauswurf. Die Zuhause-Formel ist für Alltagsstreit gedacht, nicht für Situationen, in denen jemand Angst hat – das auch so sagen. Kritik an einem bestimmten Foyer oder an bestimmten Erwachsenen nicht in der Gruppe verhandeln, sondern den Beschwerdeweg der Einrichtung zeigen. Bei Hinweisen auf Gewalt, Vernachlässigung oder Angst, nach Hause zu gehen: die Person nach der Einheit ruhig ansprechen, nichts versprechen, was nicht zu halten ist, nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) am selben Tag informieren; bei akuter Gefahr Notruf 112 oder Polizei 113, die Person nicht allein lassen."
+    },
+    {
+      "id": "j2-e20",
+      "nr": 20,
+      "jahr": 2,
+      "modul": "j2-m5",
+      "titel": "Mehr Freiraum aushandeln",
+      "kurz": "Mit einer Orange, einer Meinungslinie und echten Verhandlungen übt die Gruppe, hinter Forderungen die Interessen zu finden, Vertrauen Schritt für Schritt aufzubauen und Vereinbarungen zu treffen, die halten.",
+      "dauer": 100,
+      "ziele": [
+        "unterscheiden, was Jugendliche selbst entscheiden, was sie aushandeln und was Erwachsene oder Gesetze festlegen",
+        "erkennen hinter Forderungen die Interessen beider Seiten und entwickeln Lösungen, mit denen beide leben können",
+        "verhandeln nach einem Fahrplan und halten das Ergebnis als Vereinbarung mit Probezeit fest",
+        "tragen in den Skills-Kompass ein, welcher Skill ihnen zu Hause hilft"
+      ],
+      "material": [
+        "Gefühlsrad (A3, laminiert), Wäscheklammern und Anspannungsskala 0–100",
+        "Malerkrepp für eine Bodenlinie (4–5 m) und drei Schilder: „entscheide ich selbst“, „handeln wir aus“, „entscheiden Erwachsene“",
+        "Eine Orange und zwei verdeckte Rollenkärtchen für das Orangen-Experiment",
+        "Situationskarten: Zuhause (Z1, Z3, Z5, Z6), ausgeschnitten, möglichst doppelt",
+        "Schülerblatt „Freiraum aushandeln“ für jede Person",
+        "Skills-Kompass und Skills-Pass jeder Person, Stempel",
+        "Imbiss und Getränke; die Orange wird in der Pause geteilt"
+      ],
+      "vorbereitung": [
+        "Die Bodenlinie kleben und die Schilder „entscheide ich selbst“ und „entscheiden Erwachsene“ an die Enden legen; das Schild „handeln wir aus“ erst später in die Mitte legen.",
+        "Zwei Kärtchen schreiben: „Du brauchst den Saft einer ganzen Orange für einen Smoothie.“ und „Du brauchst die abgeriebene Schale einer ganzen Orange für einen Kuchen.“",
+        "Die Karten Z1, Z3, Z5 und Z6 so bereitlegen, dass mehrere Paare gleichzeitig verhandeln können.",
+        "Die acht Felder aus Einheit 18 und die Zuhause-Formel aus Einheit 19 hängen lassen oder kurz anschreiben.",
+        "Die Skills-Kompasse aus der Box holen; heute wird das Feld „5 · Familie und Zuhause“ ausgefüllt."
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-freiraum-aushandeln",
+        "skills-zuhause-karten",
+        "skills-kompass",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Gefühlsrad, Anspannung, etwas, das ich allein kann"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Vom Abkühlen zum Aushandeln"
+        },
+        {
+          "min": "15–28",
+          "phase": "uebung",
+          "titel": "Meinungslinie: Wer entscheidet?"
+        },
+        {
+          "min": "28–45",
+          "phase": "input",
+          "titel": "Die Orange: Interessen statt Positionen"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss und Orange"
+        },
+        {
+          "min": "60–84",
+          "phase": "aktiv",
+          "titel": "Verhandlungs-Arena mit Rollentausch"
+        },
+        {
+          "min": "84–90",
+          "phase": "skill",
+          "titel": "Skill: der Gesprächs-Anker"
+        },
+        {
+          "min": "90–95",
+          "phase": "abschluss",
+          "titel": "Skills-Kompass: Familie und Zuhause"
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Réckbléck und Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: Was kannst du inzwischen allein?",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Gefühlsrad und Anspannung wie gewohnt. Zusatzfrage: Was kannst du inzwischen allein, was du mit zehn noch nicht konntest – Bus fahren, Nudeln kochen, einen Termin ausmachen? Die Leitung beginnt, gern mit etwas Kleinem. Die Antworten zeigen, dass Selbstständigkeit in Schritten wächst und jeder Schritt irgendwann zum ersten Mal erlaubt wurde.",
+          "sagen": [
+            "Gefühl, Zahl – und etwas, das ihr heute allein könnt und mit zehn noch nicht konntet.",
+            "Bei mir: Mit vierzehn durfte ich zum ersten Mal allein Zug fahren. Ich war so stolz, dass ich es allen erzählt habe."
+          ],
+          "tipp": "Die Antworten an der Tafel sammeln. Bei der Meinungslinie wird klar: Das meiste davon musste irgendwann jemand erlauben – und jemand musste Vertrauen haben.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Vom Abkühlen zum Aushandeln",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "Kurz an die letzte Einheit anknüpfen: Eisberg, Zuhause-Formel, Abkühl-Plan. Wer mag, sagt in einem Satz, ob er den Plan ausprobiert hat, ohne Einzelheiten. Dann das Thema nennen: Viele Streits drehen sich um Freiraum – wer darf was, ab wann? Heute geht es darum, mehr Freiraum so auszuhandeln, dass die andere Seite Ja sagen kann. Ankündigen, dass das Modul heute endet und der Skills-Kompass dran ist.",
+          "sagen": [
+            "Hat jemand seinen Abkühl-Plan gebraucht? Ein Satz, ohne zu erzählen, worum es ging.",
+            "Heute geht es um die Frage hinter vielen Streits: Wie bekomme ich mehr Freiraum – und zwar so, dass die andere Seite Ja sagen kann?"
+          ]
+        },
+        {
+          "titel": "Meinungslinie: Wer entscheidet?",
+          "dauer": 13,
+          "phase": "uebung",
+          "text": "Die Leitung liest Aussagen vor (Liste); alle stellen sich auf der Linie zwischen „entscheide ich selbst“ und „entscheiden Erwachsene“ dorthin, wo die Entscheidung für eine 14-jährige Person ihrer Meinung nach hingehört. Nach jeder Aussage erklären eine Person vom einen und eine vom anderen Ende, warum sie dort stehen. Nach der Hälfte das dritte Schild in die Mitte legen: „handeln wir aus“. Zum Schluss festhalten: Manches entscheiden Jugendliche selbst, manches legen Erwachsene oder Gesetze fest, und dazwischen liegt ein großer Bereich zum Aushandeln – er wächst mit dem Alter und mit Vertrauen.",
+          "sagen": [
+            "Nicht, was ihr zu Hause dürft – sondern: Wer sollte das bei einer 14-jährigen Person entscheiden?",
+            "Was müsste passieren, damit du hier einen Schritt Richtung „entscheide ich selbst“ gehen kannst?",
+            "Der mittlere Bereich wächst. Heute geht es darum, wie man ihn größer macht."
+          ],
+          "punkte": [
+            "Welche Musik ich höre.",
+            "Wann ich an einem Schultag schlafen gehe.",
+            "Mit wem ich befreundet bin.",
+            "Ob ich am Samstag bis Mitternacht auf eine Party gehe.",
+            "Wie ich mein Taschengeld ausgebe.",
+            "Ob ich allein mit dem Zug nach Trier fahre.",
+            "Welche Apps ich auf dem Handy habe.",
+            "Ob ich zur Schule gehe."
+          ],
+          "tipp": "Bei „Ob ich zur Schule gehe“ landen fast alle bei den Erwachsenen – ein guter Moment für den Hinweis, dass manches gar nicht verhandelbar ist, weil ein Gesetz gilt. Für Jugendliche im Foyer ergänzen, dass dort zusätzlich Hausregeln gelten, die man etwa in Gruppensitzungen mitgestalten kann. Bei wenig Platz zeigen alle mit dem Daumen: hoch, Mitte, runter.",
+          "wennEsKippt": "Rennen alle bei jeder Aussage ans Ende „entscheide ich selbst“, das mit Humor aufnehmen und nachlegen: Und wenn du elf bist? Und wenn der letzte Bus um 22:40 fährt? Beginnt jemand, die Regeln seiner Familie oder seines Foyers anzuklagen, freundlich zurücklenken: Hier geht es um die allgemeine Frage; über das eigene Zuhause gern nachher unter vier Augen."
+        },
+        {
+          "titel": "Die Orange: Interessen statt Positionen",
+          "dauer": 17,
+          "phase": "input",
+          "text": "Zwei Freiwillige bekommen je ein verdecktes Kärtchen, die Leitung legt eine Orange zwischen sie: Ihr habt zwei Minuten, einigt euch. Meist wird halbiert oder gestritten. Dann lesen beide ihre Kärtchen vor – eine Person braucht den Saft, die andere die Schale; hätten sie nach dem Warum gefragt, hätten beide alles bekommen. Den Unterschied an die Tafel schreiben: Position ist, was jemand fordert, Interesse ist, warum. Dann mit der Party von Karte Z3 an der Tafel üben (Tabelle), Lösungen sammeln (Liste) und anschließend Aufgabe 1 und 2 auf dem Blatt bearbeiten.",
+          "sagen": [
+            "Ihr habt zwei Minuten und eine Orange. Einigt euch.",
+            "Was wäre passiert, wenn einer von euch gefragt hätte: Wofür brauchst du sie eigentlich?",
+            "Position: Ich will bis Mitternacht bleiben. Interesse: Warum ist dir das so wichtig?"
+          ],
+          "tabelle": {
+            "spalten": [
+              "Frage",
+              "Jugendliche Seite",
+              "Erwachsene Seite"
+            ],
+            "zeilen": [
+              [
+                "Position: Was wird gefordert?",
+                "„Ich bleibe bis Mitternacht.“",
+                "„Du bist um 22 Uhr zu Hause.“"
+              ],
+              [
+                "Interessen: Warum?",
+                "dabei sein, nicht wie ein Kind wirken, Spaß",
+                "Sicherheit, wissen, wo das Kind ist, ein sicherer Heimweg"
+              ],
+              [
+                "Was wäre gerade noch okay?",
+                "23:30, wenn ich abgeholt werde",
+                "23 Uhr, wenn ich vorher mit Chiaras Eltern spreche"
+              ]
+            ]
+          },
+          "punkte": [
+            "Abholen um 23:30 – dafür ist man beim Kuchen und beim Tanzen dabei.",
+            "Nachricht um 21 und um 23 Uhr, der Akku ist geladen.",
+            "Ein kurzes Telefonat mit Chiaras Eltern vor der Party.",
+            "Diesmal 23 Uhr als Probe; klappt es, nächstes Mal länger."
+          ],
+          "tipp": "Fragt beim Orangen-Experiment jemand gleich nach dem Warum, umso besser: Dann genau diese Frage würdigen. Vorher klären, ob jemand auf Zitrusfrüchte allergisch ist.",
+          "wennEsKippt": "Hält jemand das Ganze für Spielerei („Meine Eltern verhandeln nicht“), das ernst nehmen: Nicht jede Seite lässt sich auf Verhandlungen ein, und manches bleibt festgelegt. Aber schon die Frage nach dem Warum verändert oft ein Gespräch, und Vertrauen lässt sich auch ohne Verhandlung aufbauen.",
+          "blatt": "skills-freiraum-aushandeln"
+        },
+        {
+          "titel": "Pause mit Imbiss und Orange",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Die Orange wird geteilt und gegessen, zusammen mit dem Imbiss. Das Thema ruht. Die Leitung legt die Situationskarten für die Verhandlungs-Arena bereit."
+        },
+        {
+          "titel": "Verhandlungs-Arena mit Rollentausch",
+          "dauer": 24,
+          "phase": "aktiv",
+          "text": "Paare bilden; jedes Paar zieht eine Situation (Z1, Z3, Z5 oder Z6). Eine Person bekommt Karte A, die andere Karte B, und jede liest nur ihre eigene. Drei Minuten Vorbereitung mit dem Fahrplan auf dem Blatt, dann fünf Minuten verhandeln – im Stehen, jedes Paar in einer anderen Ecke des Raums. Danach eine neue Situation ziehen und die Rollen tauschen, damit alle einmal die erwachsene Seite spielen. Zum Schluss stellen zwei oder drei Paare ihre Vereinbarung vor, und die Gruppe prüft sie mit dem Vereinbarungs-Check (Liste).",
+          "sagen": [
+            "Lest nur eure eigene Karte. Was die andere Seite will, findet ihr im Gespräch heraus.",
+            "Fragt nach dem Warum, bevor ihr Lösungen macht.",
+            "Wie war es, auf der erwachsenen Seite zu stehen?"
+          ],
+          "punkte": [
+            "Konkret: Wer macht was, bis wann?",
+            "Fair: Können beide damit leben?",
+            "Plan B: Was passiert, wenn der Bus ausfällt oder der Akku leer ist?",
+            "Probezeit: Wann schauen wir, ob es klappt?"
+          ],
+          "tipp": "Die Leitung geht herum und hört zu, ohne einzugreifen; nur wenn ein Paar festhängt, eine Frage stellen: Was ist dir eigentlich wichtig? Bei ungerader Zahl beobachtet eine Person mit dem Vereinbarungs-Check; bei nur zwei Jugendlichen verhandeln beide miteinander, und in der zweiten Runde übernimmt die Leitung die erwachsene Seite.",
+          "wennEsKippt": "Wird die erwachsene Rolle als Karikatur gespielt („Nein, weil ich es sage“), kurz anhalten und fragen, was auf Karte B steht – die Anliegen dort sind echt, und um sie geht es. Geraten zwei Jugendliche wirklich aneinander, die Paare neu mischen; die Leitung teilt ein.",
+          "blatt": "skills-zuhause-karten"
+        },
+        {
+          "titel": "Skill: der Gesprächs-Anker",
+          "dauer": 6,
+          "phase": "skill",
+          "text": "Vor einem wichtigen Gespräch hilft ein kurzer Anker, damit man ruhig anfängt. Alle stehen: Füße fest auf den Boden, Schultern sinken lassen, dreimal länger aus- als einatmen, dann innerlich ein Satz – Ich will eine Lösung, die für uns beide passt. Danach sagt jede Person zu zweit ihren Anliegen-Satz aus der Verhandlung in normaler Lautstärke, einmal vor dem Anker und einmal danach. Kurz fragen, was sich verändert hat.",
+          "sagen": [
+            "Füße auf den Boden. Ausatmen, länger als ein. Und jetzt ein Satz nur im Kopf: Ich will eine Lösung für uns beide.",
+            "Wie klang euer Satz nach dem Anker?"
+          ],
+          "tipp": "Wer im letzten Jahr dabei war, kennt den Anker vor dem Nein. Der Gesprächs-Anker ist sein Geschwister: gleicher Stand, anderer Satz."
+        },
+        {
+          "titel": "Skills-Kompass: Was hilft mir zu Hause?",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Das Modul „Familie und Zuhause“ endet. Die Skills-Kompasse austeilen; jede Person trägt in das Feld „5 · Familie und Zuhause“ ein, welcher Skill ihr zu Hause hilft und wann sie ihn einsetzt. Eine Auswahl steht an der Tafel (Liste), eigene Skills zählen genauso. Wer mag, nennt den Namen seines Skills, ohne zu erzählen, wofür.",
+          "sagen": [
+            "Welcher Skill hilft euch zu Hause? Schreibt ihn in den Kompass – und dazu, wann ihr ihn einsetzt.",
+            "Den Namen des Skills zu sagen, reicht völlig. Das Wofür bleibt bei euch."
+          ],
+          "punkte": [
+            "der richtige Moment",
+            "die Zuhause-Formel",
+            "der Abkühl-Plan mit Stopp-Satz",
+            "Kälte und langes Ausatmen",
+            "nach dem Warum fragen",
+            "der Verhandlungs-Fahrplan",
+            "der Gesprächs-Anker",
+            "sich selbst Halt geben"
+          ],
+          "blatt": "skills-kompass"
+        },
+        {
+          "titel": "Réckbléck und Skills-Pass",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Blitzlicht mit einem Satz: Was nehme ich aus diesem Modul mit nach Hause? Dann Eintrag in den Skills-Pass und Stempel. Zum Schluss die Vereinbarung auf dem Blatt als freiwilliges Angebot für zu Hause nennen und den Ausblick auf das neue Modul geben.",
+          "sagen": [
+            "Ein Satz: Was nehmt ihr aus diesen drei Einheiten mit nach Hause?",
+            "Die Vereinbarung auf dem Blatt ist ein Angebot. Wer mag, probiert sie aus – niemand muss."
+          ],
+          "tipp": "In einer der nächsten Einheiten kurz fragen, ob jemand die Vereinbarung ausprobiert hat, ohne nachzubohren.",
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Nächstes Mal beginnt ein neues Modul: Es geht um Schubladen im Kopf – woher Vorurteile kommen und was sie mit Menschen machen.",
+      "hintergrund": "Im Jugendalter wächst der Wunsch, selbst zu entscheiden. Jugendliche und Eltern sind sich meist einig, dass Eltern bei moralischen Fragen und Regeln des Zusammenlebens mitreden; uneins sind sie bei Dingen, die Jugendliche als ihre persönliche Sache sehen (Smetana, 1988) – die Meinungslinie macht diese Grenze sichtbar. Gut gelingt die Entwicklung, wenn Erwachsene zugewandt bleiben und Regeln mit zunehmendem Alter gemeinsam aushandeln (Steinberg, 2001). Die UN-Kinderrechtskonvention verlangt, die Meinung von Kindern nach Alter und Reife zu berücksichtigen (Vereinte Nationen, 1989). Das Harvard-Konzept sucht statt Positionen die Interessen dahinter und Lösungen, die beiden dienen (Fisher & Ury, 1981); die Orange macht das erlebbar. Gordon (1972) beschreibt dasselbe für Familien als Methode, bei der niemand verliert. Konkrete, an Situationen gebundene Vereinbarungen halten besser (Gollwitzer, 1999); eine Probezeit macht Vertrauen in kleinen Schritten überprüfbar.",
+      "quellen": [
+        "Smetana, J. G. (1988). Adolescents’ and parents’ conceptions of parental authority. Child Development, 59(2), 321–335.",
+        "Steinberg, L. (2001). We know some things: Parent–adolescent relationships in retrospect and prospect. Journal of Research on Adolescence, 11(1), 1–19.",
+        "Vereinte Nationen (1989). Übereinkommen über die Rechte des Kindes. New York: Vereinte Nationen.",
+        "Fisher, R. & Ury, W. (1981). Getting to Yes. Boston: Houghton Mifflin.",
+        "Gordon, T. (1972). Familienkonferenz. Hamburg: Hoffmann und Campe.",
+        "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+      ],
+      "achtung": "Freiraum ist nicht in allen Lebenslagen gleich verhandelbar: Im Foyer oder in einer Pflegefamilie gelten zusätzliche Regeln, und manche Entscheidungen treffen nicht die Erziehenden allein. Das offen sagen, ohne Einzelne vorzuführen, und keine Hausregeln einer bestimmten Einrichtung in der Gruppe verhandeln. Niemand muss erzählen, was er zu Hause darf; verhandelt wird nur mit den Karten. Die Vereinbarung auf dem Blatt ist ein freiwilliges Angebot, keine Hausaufgabe. Berichtet jemand, dass zu Hause gar nichts verhandelbar ist, dass er eingesperrt wird oder Angst vor Strafen hat, nach der Einheit ein Einzelgespräch führen; bei Hinweisen auf Gewalt oder Vernachlässigung nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) am selben Tag informieren, bei akuter Gefahr Notruf 112."
+    }
+  ]
+}

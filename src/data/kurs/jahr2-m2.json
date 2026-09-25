@@ -1,0 +1,965 @@
+{
+  "einheiten": [
+    {
+      "id": "j2-e06",
+      "nr": 6,
+      "jahr": 2,
+      "modul": "j2-m2",
+      "titel": "Stress verstehen",
+      "kurz": "Die Gruppe spürt Stress in einem Kurztest, ordnet eigene Anzeichen auf dem Stress-Barometer ein und erlebt beim Gruppenjonglieren, wann guter Stress in zu viel kippt – und was dann hilft.",
+      "dauer": 100,
+      "ziele": [
+        "beschreiben an einem selbst erlebten Kurztest, was Stress in Körper, Gedanken und Verhalten auslöst",
+        "unterscheiden guten Stress von zu viel Stress und tragen ihre eigenen Anzeichen in das Stress-Barometer ein",
+        "erklären mit der Stress-Waage, warum dieselbe Anforderung die eine Person anspornt und die andere überfordert, und benennen eigene Kraftquellen",
+        "probieren die Seufzer-Atmung aus und prüfen ihre Wirkung mit der Anspannungszahl vorher und nachher"
+      ],
+      "material": [
+        "Gefühlsrad (A3, laminiert), Wäscheklammern und Plakat Anspannungsskala 0–100",
+        "Timer, gut sichtbar; A5-Zettel und Stifte für den Kurztest",
+        "Tafel oder Flipchart, Karten (A6) in Rot und Grün, Malerkrepp",
+        "Schülerblatt „Mein Stress-Barometer“ für jede Person",
+        "Sechs weiche Bälle in verschiedenen Farben oder fest zusammengerollte Socken, dazu ein Kuscheltier als Zusatzball",
+        "Skills-Pässe und Stempel",
+        "Imbiss und Getränke, Liste mit Allergien und Essensregeln"
+      ],
+      "vorbereitung": [
+        "An der Tafel drei Spalten vorbereiten: Körper, Gedanken, Verhalten. Daneben Platz für das Barometer und die Stress-Waage lassen.",
+        "Einen Kreis von drei bis vier Metern Durchmesser freiräumen; bei trockenem Wetter geht das Gruppenjonglieren auch draußen.",
+        "Bei den Jugendlichen oder den Klassenlehrkräften erfragen, welche Tests in den nächsten Wochen anstehen: Die Einheiten 7 bis 9 arbeiten mit echten Terminen."
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-stress-barometer",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Gefühlsrad, Anspannung, volle Woche"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Vom Selbstwert zu Stress und Schule"
+        },
+        {
+          "min": "15–30",
+          "phase": "uebung",
+          "titel": "60 Sekunden unter Druck"
+        },
+        {
+          "min": "30–45",
+          "phase": "input",
+          "titel": "Stress-Barometer und Stress-Waage"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–85",
+          "phase": "aktiv",
+          "titel": "Gruppenjonglieren: Wie viele Bälle schaffen wir?"
+        },
+        {
+          "min": "85–95",
+          "phase": "skill",
+          "titel": "Skill: Seufzer-Atmung"
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Réckbléck und Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: Gefühlsrad, Anspannung, volle Woche",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Check-in wie gewohnt: Wäscheklammer an ein Wort im Gefühlsrad, dazu die Anspannung von 0 bis 100. Dann eine Zusatzfrage ohne Worte: Auf drei zeigen alle gleichzeitig mit 0 bis 10 Fingern, wie voll ihre Schulwoche gerade ist. Die Leitung beginnt und nennt eine ehrliche Zahl aus ihrer eigenen Woche. Die Finger nicht kommentieren, nur zusammenfassen, etwa: Bei vielen ist die Woche ziemlich voll. Zum Schluss erzählt, wer mag, in einem Satz vom Test mit der Selbstmitgefühls-Pause aus der letzten Einheit: wo, und was sie verändert hat.",
+          "sagen": [
+            "Gefühl und Zahl wie immer. Und dann alle zusammen: Wie voll ist eure Woche, null bis zehn Finger? Eins, zwei, drei.",
+            "Bei mir sind es sieben: zwei Berichte, ein Elternabend, und das Auto war in der Werkstatt.",
+            "Hat jemand die Selbstmitgefühls-Pause ausprobiert? Ein Satz reicht: wo war das, und hat sie etwas gebracht?"
+          ],
+          "tipp": "Die Fingerzahlen still als Striche an die Tafel schreiben. Beim Barometer lässt sich darauf zurückkommen: Eine volle Woche heißt nicht automatisch zu viel Stress.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Vom Selbstwert zu Stress und Schule",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "In einem Satz an das letzte Modul erinnern: Was eine Person wert ist, hängt nicht an Noten. Dann das neue Modul vorstellen und die Leitfrage an die Tafel schreiben: Wie komme ich gut durch Schule, Lernen und Prüfungen? Vier Treffen sind geplant – Stress, Lernen, Aufschieben, Prüfungen –, und am Ende stehen ein eigener Lern- und Prüfungsplan, zwei Skills gegen Prüfungsstress und ein neuer Eintrag im Skills-Kompass. Klarstellen, dass niemand über Noten oder Zeugnisse sprechen muss.",
+          "sagen": [
+            "Letztes Mal ging es darum, freundlich mit sich selbst zu reden. Das braucht man in der Schule ziemlich oft.",
+            "In den nächsten vier Treffen geht es um Werkzeuge, die ihr am nächsten Schultag benutzen könnt. Noten muss hier niemand verraten."
+          ]
+        },
+        {
+          "titel": "60 Sekunden unter Druck",
+          "dauer": 15,
+          "phase": "uebung",
+          "text": "Einen Kurztest ankündigen: Jede Person schreibt in 60 Sekunden zu möglichst vielen Buchstaben von A bis Z der Reihe nach ein Tier, in jeder Sprache, die sie mag; niemand zeigt seinen Zettel, verglichen wird nicht. Den Timer gut sichtbar stellen, die Restzeit laut ansagen und die letzten zehn Sekunden herunterzählen. Direkt danach Stifte weg und fragen: Was hat euer Körper gemacht, was ging euch durch den Kopf, was habt ihr getan? Die Antworten ohne Namen in die drei Spalten an der Tafel schreiben. Zum Schluss erklären: Der Körper startet bei jeder Anforderung dasselbe uralte Programm und macht sich bereit für Kampf, Flucht oder Erstarren – in der Schule sieht das nur anders aus.",
+          "sagen": [
+            "Gleich kommt ein Test, bei dem es um nichts geht. Ich wette trotzdem, dass euer Körper mitmacht. Achtet darauf.",
+            "Was habt ihr gespürt? Herz, Hände, Bauch, Atem – alles zählt.",
+            "Und im Kopf? Manche denken: Mist, beim F fällt mir nichts ein. Bei anderen ist es plötzlich ganz leer.",
+            "Das war eine Minute ohne Note. Bei einem Devoir sind es fünfzig Minuten, und der Körper macht genau dasselbe."
+          ],
+          "punkte": [
+            "Kampf: gereizt sein, streiten, laut werden – mit der Lehrerin, mit den Geschwistern.",
+            "Flucht: ausweichen, aufschieben, sich krank fühlen, lieber zum Handy greifen.",
+            "Erstarren: Kopf leer, Blackout, nichts geht mehr."
+          ],
+          "tabelle": {
+            "spalten": [
+              "Körper",
+              "Gedanken",
+              "Verhalten"
+            ],
+            "zeilen": [
+              [
+                "Herz schlägt schneller, Atem wird flach",
+                "„Schnell, schnell“, „Das schaffe ich nicht“",
+                "hastig schreiben, Buchstaben überspringen"
+              ],
+              [
+                "Hände schwitzen oder zittern, Muskeln spannen sich",
+                "Tunnelblick: nur noch die Aufgabe",
+                "aufgeben, den Stift weglegen"
+              ],
+              [
+                "Bauch zieht, Hitze im Gesicht",
+                "Kopf ist plötzlich leer",
+                "lachen, reden, stören"
+              ]
+            ]
+          },
+          "tipp": "Die Leitung schreibt selbst mit und erzählt ehrlich, was bei ihr passiert ist. Wer mit dem Schreiben Mühe hat, darf die Tiere im Kopf suchen und mit den Fingern zählen; wer gar nicht mitmachen will, stoppt die Zeit und beobachtet, was man von außen sieht.",
+          "wennEsKippt": "Wird es albern oder schreibt jemand bewusst Unsinn, das gelten lassen: Auch Lachen ist eine typische Reaktion auf Druck. Reagiert jemand deutlich gestresst, mit Rückzug oder Ärger, das kurz würdigen – genau so nimmt der Körper eine Anforderung ernst, auch wenn es nur ein Spiel ist – und die Person nicht vorführen. Bei nur zwei Jugendlichen schreibt die Leitung mit, und die Auswertung wird zum Gespräch zu dritt."
+        },
+        {
+          "titel": "Stress-Barometer und Stress-Waage",
+          "dauer": 15,
+          "phase": "input",
+          "text": "Fragen, ob Stress gut oder schlecht ist, und beide Seiten sammeln. Dann das Barometer vom Blatt an die Tafel zeichnen: vier Stufen von ruhig bis zu viel, mit Beispielen aus dem Kurztest. Die Jugendlichen tragen auf dem Blatt ihre eigenen Anzeichen ein und dazu die Zahl der Anspannungsskala, bei der guter Stress bei ihnen ungefähr kippt. Danach die Stress-Waage: Jede Person schreibt verdeckt eine rote Karte (was Jugendliche in diesem Alter unter Druck setzt) und eine grüne (was Kraft gibt); die Leitung liest vor und klebt sie links und rechts an die Waage. Stress kippt, wenn die linke Seite schwerer wirkt als die rechte – deshalb spornt dieselbe Präsentation die eine an und lähmt den anderen. Zum Schluss füllt jede Person ihre eigene Waage für diese Woche aus, nur für sich.",
+          "sagen": [
+            "Ist Stress eigentlich schlecht? Wer hatte schon mal einen Tag, an dem ein bisschen Druck geholfen hat?",
+            "Ohne Druck fängt kaum jemand mit dem Lernen an. Mit zu viel Druck geht gar nichts mehr. Dazwischen liegt der gute Stress.",
+            "Es kommt nicht nur darauf an, wie schwer eine Aufgabe ist, sondern auch darauf, was ihr dagegenstellen könnt: Menschen, Können, Zeit, Skills."
+          ],
+          "tabelle": {
+            "spalten": [
+              "Stufe",
+              "Typisch",
+              "Was hilft"
+            ],
+            "zeilen": [
+              [
+                "Ruhig",
+                "Erholung – oder, wenn etwas ansteht: Es geht nichts voran.",
+                "Einen Anfang setzen: Zeit festlegen, kleiner erster Schritt"
+              ],
+              [
+                "Guter Stress",
+                "Wach, Herz etwas schneller, ganz bei der Sache",
+                "Dranbleiben, Pausen einplanen"
+              ],
+              [
+                "Es wird eng",
+                "Gereizt, Gedanken kreisen, aufschieben oder laut werden",
+                "Anforderung kleiner machen, Pause, Bewegung, Skills"
+              ],
+              [
+                "Zu viel",
+                "Tunnelblick oder Kopf leer, Bauchweh, schlecht schlafen, nur noch weg",
+                "Erst mit Körper-Skills runter, dann Hilfe holen"
+              ]
+            ]
+          },
+          "tipp": "Die Stress-Waage ist das Modell für das ganze Modul: Die nächsten Einheiten machen die linke Seite leichter, mit Lernmethoden und Plänen, und die rechte schwerer, mit Skills. Wer in Jahr 1 dabei war, darf seinen Skills-Koffer auf die rechte Seite legen.",
+          "wennEsKippt": "Kommt „Mich stresst gar nichts“, das stehen lassen und fragen, woran man merken würde, dass es doch einmal zu viel ist. Stehen auf den roten Karten sehr persönliche Dinge, etwa Streit der Eltern oder Krankheit, allgemein vorlesen („Sorgen zu Hause“), nicht nachfragen und nach der Einheit ein Gespräch anbieten.",
+          "blatt": "skills-stress-barometer"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Imbiss und frische Luft. Das Thema ruht. Wer mag, hilft danach, den Kreis für das Gruppenjonglieren freizuräumen."
+        },
+        {
+          "titel": "Gruppenjonglieren: Wie viele Bälle schaffen wir?",
+          "dauer": 25,
+          "phase": "aktiv",
+          "text": "Alle stehen im Kreis. Mit einem Ball ein festes Wurfmuster bauen: Die Leitung sagt einen Namen und wirft dieser Person zu, jede Person wirft danach an jemanden, der den Ball noch nicht hatte, bis er zurück bei der Leitung ist; das Muster zweimal üben. Dann nach und nach weitere Bälle ins Spiel bringen, bis Chaos entsteht – meist bei vier bis sechs Bällen, zuletzt das Kuscheltier. Nach jedem Durchgang zeigen alle mit einem bis vier Fingern ihre Barometer-Stufe; die Leitung notiert sie und zeichnet danach die Kurve an die Tafel: zu wenig, genau richtig, zu viel. Dann plant die Gruppe zwei Minuten lang, wie sie die höchste Ballzahl schafft, und spielt noch einmal. Zum Schluss den Bogen zur Schule schlagen: Welche Bälle wirft der Alltag Jugendlichen zu, und was hat heute geholfen, mehr zu fangen?",
+          "sagen": [
+            "Immer an dieselbe Person werfen, immer von derselben Person fangen. Erst den Namen sagen, dann werfen – von unten und weich.",
+            "Ein Ball – wie war das? Und bei fünf? Zeigt mir eure Barometer-Stufe.",
+            "Ihr habt zwei Minuten: Wie schafft ihr fünf Bälle, ohne dass alles runterfällt?",
+            "Welche Bälle wirft der Schulalltag euch gerade zu? Und wer oder was fängt mit?"
+          ],
+          "punkte": [
+            "Vor dem Wurf Blickkontakt und den Namen sagen",
+            "Langsamer werden, weich und hoch werfen",
+            "Eine Person gibt den Takt vor",
+            "Wer den Überblick verliert, ruft „Stopp“, und alle halten kurz an",
+            "Einen Ball bewusst aus dem Spiel nehmen"
+          ],
+          "tipp": "Mit einem Ball ist es meist langweilig, bei zwei oder drei wird die Gruppe wach und lacht, ab fünf fällt vieles herunter. Diese Kurve ist der Kern der Einheit – also ruhig Zeit für das Chaos lassen, bevor die Strategierunde kommt.",
+          "wennEsKippt": "Wird hart oder gezielt auf jemanden geworfen, sofort unterbrechen und mit Socken weiterspielen. Wer nicht fangen mag, wird Zähler und zählt laut die gefangenen Bälle. Bei nur zwei Jugendlichen im Dreieck mit der Leitung spielen und höchstens vier Bälle nehmen; bei wenig Energie im Sitzen Gegenstände im Kreis von Hand zu Hand weitergeben, in beide Richtungen und mit immer mehr Dingen."
+        },
+        {
+          "titel": "Skill: Seufzer-Atmung",
+          "dauer": 10,
+          "phase": "skill",
+          "text": "Alle sitzen und tragen ihre Anspannung vorher in die Tabelle auf dem Blatt ein. Die Seufzer-Atmung vormachen: durch die Nase tief einatmen, oben noch einen kurzen zweiten Zug nachschieben, dann langsam und hörbar durch den Mund ausatmen, bis die Luft ganz draußen ist. Drei Minuten gemeinsam im eigenen Tempo üben, dann die Zahl nachher eintragen und vergleichen. Erklären: Das lange Ausatmen bremst den Körper. Im Alltag reichen oft zwei oder drei solcher Seufzer, etwa vor einem Test oder nach einem Streit.",
+          "sagen": [
+            "Zweimal ein durch die Nase, einmal lang aus durch den Mund. Das Ausatmen darf ruhig doppelt so lange dauern.",
+            "Wem schwindlig wird: einfach normal weiteratmen. Das ist kein Wettbewerb.",
+            "Bei wem hat sich die Zahl bewegt? Und bei wem nicht – auch das ist ein Ergebnis."
+          ],
+          "tipp": "Die Seufzer-Atmung fällt kaum auf und geht auch im Klassenraum, dann einfach leise. Wer sie bis Einheit 9 jeden Tag kurz übt, hat sie in der Prüfung sicher parat.",
+          "wennEsKippt": "Wird gekichert, weil das Seufzen komisch klingt, mitlachen und dann leiser weitermachen: Ausatmen geht auch lautlos. Wer Asthma hat oder sich unwohl fühlt, atmet normal weiter und schaut nur zu.",
+          "blatt": "skills-stress-barometer"
+        },
+        {
+          "titel": "Réckbléck und Skills-Pass",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Blitzlicht: Jede Person nennt ihre Barometer-Stufe jetzt und eine Kraftquelle, die sie diese Woche nutzen will – oder sagt „weiter“. Danach Eintrag in den Skills-Pass mit Stempel. Die Barometer-Woche auf dem Blatt als Wochenauftrag erklären: jeden Abend ein Kreuz, dazu die Seufzer-Atmung. Zum Schluss die Bitte, nächstes Mal Unterlagen für einen Test mitzubringen, der bald ansteht.",
+          "sagen": [
+            "Eure Barometer-Stufe jetzt, eins bis vier, und eine Kraftquelle für diese Woche.",
+            "Bringt nächstes Mal Unterlagen für einen Test mit, der bald kommt. Wir planen damit."
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Nächstes Mal wird experimentiert: Ihr lernt zwanzig Wörter Swahili und findet heraus, welche Lernmethode bei euch wirklich hängen bleibt.",
+      "hintergrund": "Stress ist die Antwort des Körpers auf eine Anforderung: Herz und Atem werden schneller, die Muskeln spannen sich an, die Aufmerksamkeit wird eng. Wie stark sie ausfällt, hängt nach Lazarus und Folkman (1984) von der Bewertung ab: Reichen die eigenen Mittel, wirkt eine Lage eher als Herausforderung, sonst als Bedrohung; die Stress-Waage macht das sichtbar. Antonovsky (1987) nennt solche Mittel Widerstandsressourcen, etwa verlässliche Menschen, Wissen und Fähigkeiten. Die Leistungskurve beim Gruppenjonglieren geht auf Yerkes und Dodson (1908) zurück: Mäuse lernten eine schwierige Unterscheidung bei mittelstarken Stromreizen am schnellsten. Die daraus abgeleitete Faustregel – mittlere Anspannung, beste Leistung – ist eine starke Vereinfachung, zeigt aber das Ziel: Stress soll nicht verschwinden, sondern im hilfreichen Bereich bleiben. Die Seufzer-Atmung verlängert das Ausatmen; täglich fünf Minuten davon verbesserten in einer Studie die Stimmung (Balban et al., 2023).",
+      "quellen": [
+        "Lazarus, R. S. & Folkman, S. (1984). Stress, Appraisal, and Coping. New York: Springer.",
+        "Antonovsky, A. (1987). Unraveling the Mystery of Health. San Francisco: Jossey-Bass.",
+        "Yerkes, R. M. & Dodson, J. D. (1908). The relation of strength of stimulus to rapidity of habit-formation. Journal of Comparative Neurology and Psychology, 18(5), 459–482.",
+        "Balban, M. Y., Neri, E., Kogon, M. M., Weed, L., Nouriani, B., Jo, B., Holl, G., Zeitzer, J. M., Spiegel, D. & Huberman, A. D. (2023). Brief structured respiration practices enhance mood and reduce physiological arousal. Cell Reports Medicine, 4(1), 100895."
+      ],
+      "achtung": "Der Kurztest bleibt ein Spiel: keine Punkte, kein Vergleich, niemand zeigt seinen Zettel; wer nicht mitmachen will, stoppt die Zeit. Die eigene Stress-Waage wird nicht vorgelesen und nicht eingesammelt. Deuten Karten oder Bemerkungen auf dauerhafte Überlastung hin – Schlafprobleme, Rückzug, häufige Bauch- oder Kopfschmerzen, Sorgen zu Hause –, nicht in der Gruppe nachfragen, sondern ein Einzelgespräch anbieten und auf SePAS oder Klassenlehrkraft hinweisen. Bei Hinweisen auf Gewalt, Missbrauch, Selbstverletzung oder Suizidgedanken nicht in der Gruppe vertiefen: die Person nach der Einheit ruhig ansprechen, nichts versprechen, was man nicht halten kann, nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) am selben Tag informieren; bei akuter Gefahr Notruf 112 und die Person nicht allein lassen. Beim Gruppenjonglieren und bei der Atemübung gilt das Stopp-Recht."
+    },
+    {
+      "id": "j2-e07",
+      "nr": 7,
+      "jahr": 2,
+      "modul": "j2-m2",
+      "titel": "Lernen, das hängen bleibt",
+      "kurz": "In einem echten Experiment mit Swahili-Wörtern vergleicht die Gruppe Wiederlesen und Selbsttest, lernt drei Regeln für Lernen, das hängen bleibt, und plant damit die nächste Testvorbereitung.",
+      "dauer": 100,
+      "ziele": [
+        "vergleichen in einem Experiment Wiederlesen und Selbsttest und werten das Ergebnis der Gruppe aus",
+        "erklären, warum Abrufen und verteiltes Lernen mehr bringen, obwohl sich Wiederlesen sicherer anfühlt",
+        "prüfen ihren Lernort auf Ablenkungen und legen fest, wo ihr Handy beim Lernen liegt",
+        "planen für einen anstehenden Test drei kurze Lernrunden mit Selbsttest"
+      ],
+      "material": [
+        "Gefühlsrad, Wäscheklammern und Plakat Anspannungsskala 0–100",
+        "Schülerblatt „Wortkarten zum Lern-Experiment“, einseitig gedruckt und zwischen Liste 1 und Liste 2 durchgeschnitten, für jede Person; ein großer Umschlag zum Einsammeln",
+        "Schülerblatt „Das Lern-Experiment“ für jede Person",
+        "Timer, gut sichtbar",
+        "Einige 1-Euro-Münzen für den Münztest",
+        "Die sechs Sätze für das Laufdiktat (Liste im Schritt „Laufdiktat“) in großer Schrift, zweimal ausgedruckt; Klebeband, Papier und Stifte",
+        "Unterlagen der Jugendlichen für einen anstehenden Test (angekündigt in Einheit 6)",
+        "Skills-Pässe, Stempel, Imbiss und Getränke"
+      ],
+      "vorbereitung": [
+        "Die Wortkarten einseitig drucken und zwischen den beiden Listen durchschneiden. Nicht vorher austeilen.",
+        "Die Gruppe für das Experiment in zwei Hälften teilen, Abzählen reicht: Hälfte A lernt Liste 1 mit Wiederlesen und Liste 2 mit Selbsttest, Hälfte B umgekehrt.",
+        "An der Tafel die Ergebnistabelle vorbereiten: Zeilen „nach der Pause“ und „nach einer Woche“, Spalten „Wiederlesen“ und „Selbsttest“.",
+        "Die Sätze für das Laufdiktat am Ende eines Flurs, eines langen Raums oder draußen aufhängen, mindestens zehn Meter vom Schreibplatz entfernt."
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-lern-experiment",
+        "skills-lern-wortkarten",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Gefühlsrad, Anspannung, Barometer der Woche"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Von der Stress-Waage zum Lernen"
+        },
+        {
+          "min": "15–20",
+          "phase": "uebung",
+          "titel": "Experiment: Methoden und Vorhersage"
+        },
+        {
+          "min": "20–33",
+          "phase": "uebung",
+          "titel": "Experiment: zwei Listen, zwei Methoden"
+        },
+        {
+          "min": "33–45",
+          "phase": "input",
+          "titel": "Münztest und drei Regeln fürs Lernen"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–68",
+          "phase": "uebung",
+          "titel": "Experiment: der Test nach der Pause"
+        },
+        {
+          "min": "68–83",
+          "phase": "aktiv",
+          "titel": "Laufdiktat: die Lernregeln in Bewegung"
+        },
+        {
+          "min": "83–90",
+          "phase": "uebung",
+          "titel": "Mein Lernplan für den nächsten Test"
+        },
+        {
+          "min": "90–95",
+          "phase": "skill",
+          "titel": "Skill: Atemzüge zählen"
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Réckbléck: Koffer und Papierkorb"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: Gefühlsrad, Anspannung, Barometer der Woche",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Gefühlsrad und Anspannung wie gewohnt. Dazu zeigen alle auf drei mit einem bis vier Fingern, auf welcher Stufe ihr Stress-Barometer in der letzten Woche meistens stand; wer die Barometer-Woche auf dem Blatt geführt hat, schaut kurz darauf. Die Leitung beginnt. Wer die Seufzer-Atmung oder eine Kraftquelle ausprobiert hat, darf kurz davon erzählen.",
+          "sagen": [
+            "Gefühl, Zahl – und euer Barometer der Woche: eins bis vier Finger, auf drei.",
+            "Hat jemand die Seufzer-Atmung ausprobiert? Wo, und was ist passiert?"
+          ],
+          "tipp": "Stehen viele auf drei oder vier, das kurz aussprechen und ankündigen: Heute geht es um eine Methode, die Lernzeit spart – auch das ist eine Kraftquelle.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Von der Stress-Waage zum Lernen",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "An die Stress-Waage erinnern: Links lagen die Anforderungen, und Lernen gehört für fast alle dazu. Viele lernen lange und behalten trotzdem wenig. Ankündigen, dass die Gruppe heute selbst herausfindet, welche Methode mehr bringt – wie in der Forschung, mit Vorhersage, Versuch und Ergebnis. Wer in Jahr 1 den Skills-Tester kennt, kennt das Prinzip schon: ausprobieren, messen, vergleichen.",
+          "sagen": [
+            "Wer hat schon mal drei Stunden gelernt und im Test trotzdem kaum etwas gewusst? Das liegt selten an euch, oft an der Methode.",
+            "Heute seid ihr Versuchspersonen und Forschungsgruppe gleichzeitig."
+          ]
+        },
+        {
+          "titel": "Experiment: Methoden und Vorhersage",
+          "dauer": 5,
+          "phase": "uebung",
+          "text": "Die zwei Methoden erklären und an drei Beispielwörtern an der Tafel vormachen. Wiederlesen: die Liste immer wieder durchlesen, leise oder halblaut, ohne abzudecken und ohne zu schreiben. Selbsttest: die Liste eine halbe Minute lesen, dann die deutsche Seite nach hinten falten, zu jedem Swahili-Wort die Bedeutung sagen, aufklappen, prüfen und von vorn beginnen. Jede Person kreuzt auf dem Protokoll ihre Hälfte an und trägt ihre Vorhersage ein.",
+          "sagen": [
+            "Hälfte A lernt Liste 1 mit Wiederlesen und Liste 2 mit Selbsttest, Hälfte B genau andersherum. So bleibt es fair, falls eine Liste leichter ist.",
+            "Selbsttest heißt: falten, erinnern, aufklappen, prüfen. Fehler sind dabei erwünscht – sie zeigen euch, was noch fehlt.",
+            "Eure Vorhersage: Mit welcher Methode wisst ihr nach der Pause mehr? Und in einer Woche?"
+          ],
+          "blatt": "skills-lern-experiment"
+        },
+        {
+          "titel": "Experiment: zwei Listen, zwei Methoden",
+          "dauer": 13,
+          "phase": "uebung",
+          "text": "Liste 1 austeilen und den Timer auf drei Minuten stellen; jede Person lernt mit der Methode ihrer Hälfte. Danach Liste 1 einsammeln, Liste 2 austeilen, wieder drei Minuten. Nach 30 Sekunden laut ansagen, dass die Selbsttest-Gruppe jetzt faltet, und die letzte Minute ankündigen. Zum Schluss alle Listen in den Umschlag stecken und kurz sammeln, wie sich die beiden Methoden angefühlt haben.",
+          "sagen": [
+            "Drei Minuten, eure Methode. Los geht es.",
+            "Wie hat sich das angefühlt? Viele sagen: Wiederlesen war angenehm, der Selbsttest anstrengend. Merkt euch das für nachher."
+          ],
+          "tipp": "Das Experiment funktioniert nur, wenn beide Methoden gleich viel Zeit bekommen und in der Pause niemand die Listen hat. Wer Swahili spricht oder versteht, wird Versuchsleitung: Zeit nehmen, Listen einsammeln, später die Summen rechnen.",
+          "wennEsKippt": "Fängt jemand in der Wiederlesen-Zeit an, sich selbst abzufragen, freundlich erinnern: Heute bist du Versuchsperson, und die Regeln gelten für alle. Wer schlecht liest, bekommt die Wörter von der Leitung einmal vorgesprochen und lernt dann mit seiner Methode weiter. Bei nur zwei Jugendlichen lernt jede Person wie vorgesehen beide Listen; das Ergebnis ist dann ein Hinweis, kein Beweis – und genau das lässt sich gut besprechen.",
+          "blatt": "skills-lern-wortkarten"
+        },
+        {
+          "titel": "Münztest und drei Regeln fürs Lernen",
+          "dauer": 12,
+          "phase": "input",
+          "text": "Jede Person zeichnet eine Minute lang aus dem Kopf beide Seiten einer 1-Euro-Münze. Dann echte Münzen herumgeben und vergleichen. Auswerten: Die Münze haben alle schon hundertmal in der Hand gehabt und würden sie sofort erkennen, aufzeichnen kann sie kaum jemand. Genau das passiert beim Wiederlesen: Alles kommt bekannt vor, aber in der Prüfung muss man es selbst hervorholen. Dann die drei Regeln aus dem Merke-Kasten des Protokolls an die Tafel schreiben und mit Beispielen aus der Gruppe füllen, beim Lernort auch mit der Frage, wo das Handy liegt.",
+          "sagen": [
+            "Wiedererkennen fühlt sich an wie Können. Ist es aber nicht – das habt ihr gerade an der Münze gemerkt.",
+            "Jeder Blick aufs Handy kostet mehr als die paar Sekunden. Danach braucht der Kopf eine Weile, bis er wieder drin ist.",
+            "Wo lernt ihr normalerweise, und wo liegt dabei euer Handy? Ehrlich, hier bewertet das niemand."
+          ],
+          "punkte": [
+            "Heft zu: abrufen statt wiederlesen – aufschreiben oder erklären, was man noch weiß, dann vergleichen.",
+            "Verteilen statt pauken: lieber dreimal 20 Minuten an drei Tagen als eine Stunde am Abend davor.",
+            "Ein Lernort ohne Ablenkung: das Handy in einem anderen Raum, nicht nur stumm daneben; möglichst immer derselbe Platz."
+          ],
+          "tipp": "Statt der Münze geht auch ein bekanntes App-Symbol oder das Logo der eigenen Schule. Hauptsache, alle haben es oft gesehen und nie bewusst gelernt.",
+          "wennEsKippt": "Sagt jemand, er lerne mit Musik besser, nicht widersprechen, sondern ein Experiment daraus machen: eine Woche mit und eine ohne Musik mit Text, dann vergleichen. Wer zu Hause keinen ruhigen Platz hat, etwa weil Geschwister im selben Zimmer sind, bekommt Alternativen: Bibliothek oder Lernraum im Lycée, Hausaufgabenhilfe, Kopfhörer ohne Musik, feste ruhige Zeiten. Das sachlich als Planungsfrage behandeln, nicht als Mangel.",
+          "blatt": "skills-lern-experiment"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Gemeinsam essen, Fenster auf. Die Listen bleiben im Umschlag. Die Pause ist Teil des Experiments: Zwischen Lernen und Test soll Zeit vergehen wie im Schulalltag. Sich gegenseitig abfragen ist bis nach dem Test tabu."
+        },
+        {
+          "titel": "Experiment: der Test nach der Pause",
+          "dauer": 8,
+          "phase": "uebung",
+          "text": "Alle schreiben auf dem Protokoll zu jedem der zwanzig Swahili-Wörter die Bedeutung, vier Minuten lang; raten ist erlaubt. Dann die Listen zum Prüfen austeilen: Jede Person zählt ihre Treffer getrennt nach Methode und trägt sie ein, danach kommen die Listen zurück in den Umschlag. Die Leitung sammelt die Summen ohne Namen an der Tafel und rechnet die Werte der Gruppe aus. Mit den Vorhersagen vergleichen und ankündigen, dass derselbe Test in einer Woche ohne neues Lernen noch einmal kommt.",
+          "sagen": [
+            "Schreibt alles hin, was euch einfällt. Ein halbes Wort zählt, wenn klar ist, was gemeint ist.",
+            "Wer hat richtig vorhergesagt? Viele tippen auf Wiederlesen, weil es sich sicherer anfühlt.",
+            "Ob der Unterschied hält, zeigt erst der Nachtest. Ihr lernt ja für den Test in einer Woche, nicht für den in einer halben Stunde."
+          ],
+          "tipp": "Nur Summen an die Tafel schreiben. Niemand nennt sein Einzelergebnis, und niemand wird gefragt, wer am meisten wusste.",
+          "wennEsKippt": "Liegt Wiederlesen heute vorn oder gleichauf, das nicht wegreden: Auch in der Forschung war Wiederlesen kurz nach dem Lernen gleich gut oder besser, der Vorteil des Selbsttests zeigte sich erst nach Tagen. Das ist eine gute Gelegenheit zu erklären, warum sechs Personen nur einen Hinweis liefern und warum der Nachtest entscheidet. Ärgert sich jemand über wenige Treffer, daran erinnern: Getestet wird die Methode, nicht die Person.",
+          "blatt": "skills-lern-experiment"
+        },
+        {
+          "titel": "Laufdiktat: die Lernregeln in Bewegung",
+          "dauer": 15,
+          "phase": "aktiv",
+          "text": "Zu zweit arbeiten: Eine Person geht zum aufgehängten Text, merkt sich so viel wie möglich vom ersten Satz, kommt zurück und diktiert; die andere schreibt. Nach jedem Satz wechseln die Rollen. Fotografieren, Rufen und Mitnehmen des Zettels sind verboten, hingehen so oft wie nötig ist erlaubt. Nach zehn Minuten die Texte abhängen und auf den Tisch legen; die Paare korrigieren ihr Diktat selbst. Auswerten: Wie habt ihr euch die Sätze gemerkt, und welcher Satz trifft auf euch zu – oder gar nicht?",
+          "sagen": [
+            "Ihr dürft so oft hingehen, wie ihr wollt. Aber auf dem Rückweg muss alles aus dem Kopf kommen.",
+            "Wie habt ihr euch das gemerkt? In Stücken, mit einem Bild, halblaut vor euch hin?",
+            "Merkt ihr was? Das Laufdiktat ist ein Selbsttest mit Turnschuhen."
+          ],
+          "punkte": [
+            "Dreimal lesen fühlt sich gut an, aber Wiedererkennen ist noch kein Können.",
+            "Wer das Heft zuklappt und aufschreibt, was er noch weiß, behält mehr.",
+            "Fehler beim Selbsttest sind nützlich, weil sie zeigen, was noch fehlt.",
+            "Dreimal zwanzig Minuten an drei Tagen bringen mehr als eine Stunde am Abend davor.",
+            "Beim Lernen liegt das Handy in einem anderen Raum und nicht nur stumm daneben.",
+            "Ein fester Lernplatz wird mit der Zeit zum Startsignal für den Kopf."
+          ],
+          "tipp": "Wer das Diktat mit wenigen Fehlern schafft, hat die Lernregeln dreimal abgerufen: beim Merken, beim Diktieren und beim Korrigieren. Das darf man der Gruppe genau so sagen.",
+          "wennEsKippt": "Wird gerannt und gerempelt, die Regel klar machen: Es wird gegangen, nicht gerannt. Tut sich jemand mit dem Schreiben schwer, übernimmt er nur das Gehen und Diktieren. Bei Regen im Flur oder Treppenhaus; bei nur zwei Jugendlichen schreibt die Leitung für beide mit oder geht selbst; bei wenig Energie wird aus dem Laufdiktat ein ruhiges Gehdiktat mit nur drei Sätzen."
+        },
+        {
+          "titel": "Mein Lernplan für den nächsten Test",
+          "dauer": 7,
+          "phase": "uebung",
+          "text": "Jede Person nimmt ihre Unterlagen für einen anstehenden Test und plant auf dem Protokoll drei kurze Lernrunden an drei verschiedenen Tagen. Für jede Runde steht fest, wann, was und wie der Selbsttest aussieht: Karteikarten, Heft zu und aufschreiben, jemandem erklären, alte Aufgaben ohne Lösung rechnen. Dazu Lernort und Handyplatz eintragen. Die Leitung geht herum und hilft, zu große Brocken zu teilen.",
+          "sagen": [
+            "Nicht perfekt planen, sondern ehrlich: Wann habt ihr wirklich zwanzig Minuten?",
+            "Wie sieht bei euch der Selbsttest aus? Bei Vokabeln ist es einfach. Bei Geschichte heißt es: Heft zu und die drei Ursachen aus dem Kopf aufschreiben."
+          ],
+          "tipp": "Wer keinen Test in Sicht hat, plant für die nächsten Vokabeln oder das Fach, in dem am meisten gelernt werden muss. Für eine längere Planung eignet sich das Toolbox-Blatt „Clever lernen“.",
+          "blatt": "skills-lern-experiment"
+        },
+        {
+          "titel": "Skill: Atemzüge zählen",
+          "dauer": 5,
+          "phase": "skill",
+          "text": "Alle sitzen aufrecht, Augen zu oder Blick auf den Boden. Jeden Ausatemzug still zählen, von eins bis zehn, dann wieder bei eins beginnen. Wer merkt, dass er abgeschweift ist oder über zehn hinaus zählt, fängt ohne Ärger bei eins an. Nach drei Minuten fragen, wie oft jemand neu begonnen hat, und den Bezug herstellen: Abschweifen passiert allen, das Zurückkommen ist genau die Fähigkeit, die man am Schreibtisch braucht.",
+          "sagen": [
+            "Einatmen, ausatmen – eins. Einatmen, ausatmen – zwei. Bis zehn, dann wieder von vorn.",
+            "Wer bei elf oder bei der Pizza von gestern gelandet ist: kein Problem, wieder bei eins anfangen. Genau das ist die Übung."
+          ],
+          "tipp": "Die ersten drei Atemzüge leise vorzählen, dann die Gruppe allein weiterzählen lassen."
+        },
+        {
+          "titel": "Réckbléck: Koffer und Papierkorb",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Jede Person nennt eine Lernregel, die sie in den Koffer packt, und eine Gewohnheit, die sie hier im Papierkorb lässt – oder sagt „weiter“. Dann Eintrag in den Skills-Pass mit Stempel. Das Protokoll bleibt in der Mappe im Raum, die Wortlisten bleiben im Umschlag: Nächstes Mal kommt der Nachtest. Zum Schluss darum bitten, eine Aufgabe mitzubringen, die gerade aufgeschoben wird.",
+          "sagen": [
+            "Was packt ihr ein, was lasst ihr hier?",
+            "Bringt nächstes Mal eine Aufgabe mit, die ihr gerade vor euch herschiebt. Nur mitbringen – den Rest machen wir hier."
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Nächstes Mal kommt zuerst der Nachtest mit den Swahili-Wörtern – und dann geht es um das, was vor dem Lernen oft am schwersten ist: das Anfangen.",
+      "hintergrund": "Dunlosky et al. (2013) haben zehn verbreitete Lernmethoden verglichen: Den größten Nutzen haben Abrufen und verteiltes Lernen, wenig bringen Wiederlesen und Markieren. Roediger und Karpicke (2006) ließen Studierende einen Text mehrmals lesen oder nach einmaligem Lesen wiederholt aus dem Gedächtnis aufschreiben. Nach fünf Minuten lag Wiederlesen vorn, nach einer Woche wussten die Abrufenden deutlich mehr – obwohl sich die Wiederlesenden sicherer fühlten. Deshalb gehört der Nachtest dazu. Der Vorteil des Verteilens ist über viele Studien stabil (Cepeda et al., 2006). Aufmerksamkeit zu halten und Reizen zu widerstehen, entwickelt sich im Jugendalter noch (Diamond, 2013); leichter, als Ablenkung zu widerstehen, ist es, sie aus der Reichweite zu schaffen. Atemzüge zählen übt, abschweifende Aufmerksamkeit zurückzuholen; Achtsamkeit in Schulen wirkt vor allem auf kognitive Leistungen (Zenner et al., 2014).",
+      "quellen": [
+        "Dunlosky, J., Rawson, K. A., Marsh, E. J., Nathan, M. J. & Willingham, D. T. (2013). Improving students’ learning with effective learning techniques. Psychological Science in the Public Interest, 14(1), 4–58.",
+        "Roediger, H. L. & Karpicke, J. D. (2006). Test-enhanced learning: Taking memory tests improves long-term retention. Psychological Science, 17(3), 249–255.",
+        "Cepeda, N. J., Pashler, H., Vul, E., Wixted, J. T. & Rohrer, D. (2006). Distributed practice in verbal recall tasks: A review and quantitative synthesis. Psychological Bulletin, 132(3), 354–380.",
+        "Diamond, A. (2013). Executive functions. Annual Review of Psychology, 64, 135–168.",
+        "Zenner, C., Herrnleben-Kurz, S. & Walach, H. (2014). Mindfulness-based interventions in schools – a systematic review and meta-analysis. Frontiers in Psychology, 5, 603."
+      ],
+      "achtung": "Lernen und Noten sind für viele Jugendliche mit Scham verbunden, besonders bei Lese-, Schreib- oder Rechenschwierigkeiten. Einzelergebnisse aus dem Experiment werden nicht vorgelesen, nicht verglichen und nicht kommentiert; an die Tafel kommen nur Summen der Gruppe. Wer beim Laufdiktat wegen des Schreibens unsicher ist, übernimmt das Gehen und Diktieren. Beim Lernort nicht nach den Verhältnissen zu Hause fragen; wer von fehlendem Platz, Lärm oder Streit erzählt, bekommt ein Gespräch nach der Einheit. Wirken Lernprobleme sehr belastend oder deutet sich großer Druck zu Hause an, SePAS oder Klassenlehrkraft einbeziehen und die zuständige Leitung (Responsable) informieren. Bei Hinweisen auf Gewalt, Hoffnungslosigkeit, Selbstverletzung oder Suizidgedanken: die Person nach der Einheit ruhig ansprechen, nichts versprechen, was man nicht halten kann, nach dem internen Schutzkonzept handeln und die Responsable am selben Tag informieren; bei akuter Gefahr Notruf 112 und die Person nicht allein lassen."
+    },
+    {
+      "id": "j2-e08",
+      "nr": 8,
+      "jahr": 2,
+      "modul": "j2-m2",
+      "titel": "Aufschieben überlisten",
+      "kurz": "Aufschieben ist kein Faulsein, sondern Ausweichen vor einem unangenehmen Gefühl: Die Gruppe durchschaut den Kreislauf, findet den ersten kleinen Schritt und probiert eine Arbeitsrunde mit Timer.",
+      "dauer": 100,
+      "ziele": [
+        "erklären mit dem Aufschiebe-Kreislauf, warum Aufschieben kurz erleichtert und später mehr Druck macht",
+        "zerlegen eine eigene aufgeschobene Aufgabe und bestimmen einen ersten Schritt, der in fünf Minuten zu schaffen ist",
+        "erproben eine Arbeitsrunde mit Timer und vergleichen ihre Unlust vorher und nachher",
+        "legen ihren Start mit einem Wenn-dann-Plan und einem eigenen Start-Satz fest"
+      ],
+      "material": [
+        "Gefühlsrad, Wäscheklammern und Plakat Anspannungsskala 0–100",
+        "Protokolle „Das Lern-Experiment“ aus Einheit 7 und der Umschlag mit den Wortlisten (Nachtest)",
+        "Schülerblatt „Mein Start-Plan“ für jede Person",
+        "Mitgebrachte Aufgaben der Jugendlichen; als Ersatz Vokabeln aus einem Schulbuch oder ein kurzer Text zum Zusammenfassen",
+        "Timer mit großer Anzeige und eine Kiste für die Handys",
+        "Tafel oder Flipchart",
+        "Skills-Pässe, Stempel, Imbiss und Getränke"
+      ],
+      "vorbereitung": [
+        "Den Aufschiebe-Kreislauf als leeren Kreis mit vier Stationen an die Tafel zeichnen: Aufgabe, mieses Gefühl, Ausweichen, kurz besser – dann Druck.",
+        "Platz für die Gewissensgasse schaffen: zwei Reihen mit etwa eineinhalb Metern Abstand.",
+        "Für die Probe-Runde die Tische so stellen, dass alle mit Blick zur Wand oder zum Fenster arbeiten können.",
+        "Die Protokolle aus Einheit 7 und den Umschlag mit den Wortlisten bereitlegen."
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-lern-experiment",
+        "skills-start-plan",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Gefühlsrad, Anspannung, Aufschiebe-Stapel"
+        },
+        {
+          "min": "10–18",
+          "phase": "bruecke",
+          "titel": "Nachtest: Was ist nach einer Woche noch da?"
+        },
+        {
+          "min": "18–30",
+          "phase": "input",
+          "titel": "Der Aufschiebe-Kreislauf"
+        },
+        {
+          "min": "30–45",
+          "phase": "uebung",
+          "titel": "Der erste Schritt und der Wenn-dann-Plan"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–75",
+          "phase": "aktiv",
+          "titel": "Gewissensgasse: später oder jetzt?"
+        },
+        {
+          "min": "75–90",
+          "phase": "uebung",
+          "titel": "Probe-Runde mit Timer"
+        },
+        {
+          "min": "90–95",
+          "phase": "skill",
+          "titel": "Skill: freundlicher Neustart"
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Réckbléck und Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: Gefühlsrad, Anspannung, Aufschiebe-Stapel",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Gefühlsrad und Anspannung wie gewohnt. Dann eine Frage, die nur mit Fingern beantwortet wird: Wie viele Dinge schiebst du gerade vor dir her – Schule, Zimmer, Nachrichten, Anrufe? Auf drei zeigen alle gleichzeitig. Die Leitung zeigt ehrlich mit und nennt eine Sache, die sie selbst seit Tagen aufschiebt.",
+          "sagen": [
+            "Und jetzt ehrlich, auf drei: Wie viele Sachen schiebt ihr gerade vor euch her?",
+            "Bei mir sind es vier. Eine davon ist ein Formular, das seit zwei Wochen auf meinem Schreibtisch liegt, und jeden Tag finde ich einen guten Grund dagegen."
+          ],
+          "tipp": "Die Runde soll zeigen, dass alle aufschieben, Erwachsene eingeschlossen. Die Zahlen nicht kommentieren und nicht nachfragen, was genau aufgeschoben wird.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Nachtest: Was ist nach einer Woche noch da?",
+          "dauer": 8,
+          "phase": "bruecke",
+          "text": "Die Protokolle aus Einheit 7 austeilen. Alle schreiben in vier Minuten noch einmal zu jedem Swahili-Wort die Bedeutung, diesmal in den Kasten für den Nachtest und ohne vorher zu lernen. Dann die Listen zum Prüfen austeilen, die Treffer nach Methode zählen und die Summen der Gruppe neben die Werte der letzten Woche an die Tafel schreiben. Jede Person hält ihr Fazit in einem Satz fest. Dann die Brücke zum Thema schlagen: Die beste Methode nützt nichts, wenn man nicht anfängt.",
+          "sagen": [
+            "Kein Lernen, kein Spicken – einfach aufschreiben, was noch da ist.",
+            "Vergleicht mit letzter Woche: Welche Liste hat mehr verloren?",
+            "Der Selbsttest ist anstrengender als Lesen. Und was anstrengend wirkt, schieben wir gern auf. Darum geht es heute."
+          ],
+          "wennEsKippt": "Zeigt der Nachtest keinen Unterschied, ehrlich bleiben: Bei wenigen Personen spielt der Zufall mit, die Befunde aus der Forschung beruhen auf Hunderten Versuchspersonen. Die Frage an die Gruppe lautet dann: Was spricht trotzdem dafür, den Selbsttest eine Woche lang auszuprobieren? Wer letzte Woche gefehlt hat, schreibt einfach mit und lässt die Auswertung weg.",
+          "blatt": "skills-lern-experiment"
+        },
+        {
+          "titel": "Der Aufschiebe-Kreislauf",
+          "dauer": 12,
+          "phase": "input",
+          "text": "Die Geschichte von Diogo vom Blatt vorlesen. Dann gemeinsam den Kreislauf an der Tafel füllen: Aufgabe, mieses Gefühl, Ausweichen, kurz besser – dann Druck, und die Aufgabe wirkt beim nächsten Mal noch größer. Fragen, welche Gefühle vor dem Anfangen typisch sind, und sie an den Kreis schreiben. Die Kernbotschaft festhalten: Aufschieben ist ein Versuch, ein unangenehmes Gefühl loszuwerden; deshalb helfen weder Vorwürfe noch mehr Druck, sondern ein leichterer Einstieg. Zum Schluss markieren, wo man den Kreis unterbrechen kann, und jede Person trägt auf dem Blatt ihren eigenen Kreislauf ein.",
+          "sagen": [
+            "Warum hat Diogo das Video angemacht? Weil er faul ist – oder weil sich die leere Folie mies angefühlt hat?",
+            "Welche Gefühle kommen bei euch kurz vor dem Anfangen? Langeweile, Unsicherheit, Angst, dass es schlecht wird?",
+            "Das Handy hilft sofort gegen das Gefühl. Die Aufgabe bleibt aber liegen und wird jeden Tag schwerer."
+          ],
+          "punkte": [
+            "Beim Gefühl: es benennen und aushalten – keine Lust ist ein Gefühl, kein Befehl.",
+            "Bei der Aufgabe: so klein schneiden, dass der erste Schritt kaum Überwindung kostet.",
+            "Beim Ausweichen: das Handy vor dem Start in einen anderen Raum legen.",
+            "Beim schlechten Gewissen: freundlich neu anfangen, statt sich fertigzumachen."
+          ],
+          "tipp": "Viele Jugendliche halten sich für faul. Der Satz „Aufschieben ist ein Ausweichen vor Gefühlen, kein Charakterfehler“ entlastet spürbar – er darf groß an die Tafel.",
+          "wennEsKippt": "Sagt jemand „Unter Druck arbeite ich eben am besten“, das ernst nehmen und nachfragen: Wie fühlt sich der Abend vor der Abgabe an, und wie zufrieden bist du mit dem Ergebnis? Nicht überzeugen wollen; die Gewissensgasse greift den Satz später auf.",
+          "blatt": "skills-start-plan"
+        },
+        {
+          "titel": "Der erste Schritt und der Wenn-dann-Plan",
+          "dauer": 15,
+          "phase": "uebung",
+          "text": "Jede Person nimmt ihre mitgebrachte Aufgabe und trägt sie auf dem Blatt ein. Dann die Aufgabe in Schritte teilen, bis der erste so klein ist, dass er in fünf Minuten erledigt ist: das Heft aufschlagen und die Aufgabe lesen, drei Stichpunkte notieren, die erste Folie mit einem Titel anlegen. Anschließend einen Wenn-dann-Plan für den Start schreiben, mit Tag, Uhrzeit, Ort und erster Handlung. Zu zweit prüfen die Jugendlichen gegenseitig: Weiß ein Fremder genau, wann und womit du anfängst? Die Leitung geht herum und macht zu große erste Schritte kleiner.",
+          "sagen": [
+            "Macht den ersten Schritt so klein, dass es fast lächerlich ist. Wenn ihr lacht, ist er richtig.",
+            "Am Wochenende lernen ist kein Plan. Samstag um 11, am Schreibtisch, Heft auf Seite 42 – das ist einer."
+          ],
+          "tipp": "Wer nichts mitgebracht hat, bekommt eine Ersatzaufgabe oder plant etwas aus dem Alltag, etwa eine Nachricht, die längst beantwortet werden müsste. Es muss nur eine echte Aufgabe sein, keine ausgedachte.",
+          "wennEsKippt": "Sagt jemand, er habe nichts aufzuschieben, fragen, was er sich vornimmt und dann doch nicht tut – Training, Zimmer, ein Gespräch. Bleibt der Plan vage („irgendwann diese Woche“), freundlich nachfragen, bis Tag und Uhrzeit dastehen. Bei nur zwei Jugendlichen prüft die Leitung die Pläne mit.",
+          "blatt": "skills-start-plan"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Imbiss und Pause. Danach gemeinsam den Platz für die Gewissensgasse freiräumen und die Tische für die Probe-Runde schon Richtung Wand drehen."
+        },
+        {
+          "titel": "Gewissensgasse: später oder jetzt?",
+          "dauer": 15,
+          "phase": "aktiv",
+          "text": "Die Gruppe bildet zwei Reihen mit etwa eineinhalb Metern Abstand: auf der einen Seite die Später-Stimmen, auf der anderen die Jetzt-Stimmen. Die Leitung nennt eine Lage aus der Liste. Eine Person geht als diese Figur langsam durch die Gasse; wer auf ihrer Höhe steht, sagt einen Satz, abwechselnd von links und rechts. Am Ende entscheidet die Figur, ob sie anfängt, und sagt, welcher Satz am stärksten gezogen hat. Nach jeder Runde die Seiten wechseln; beim ersten Mal geht die Leitung selbst durch. Die stärksten Jetzt-Sätze kommen an die Tafel, und jede Person wählt einen als Start-Satz für ihr Blatt.",
+          "sagen": [
+            "Ihr sprecht für die Stimme, nicht für euch. Sagt, was so eine Stimme im Kopf wirklich sagt.",
+            "Diogo, du bist durch. Fängst du an? Welcher Satz hat dich am meisten gezogen – und in welche Richtung?",
+            "Welche Jetzt-Sätze waren stark genug gegen ‚Nur noch ein Video‘?"
+          ],
+          "punkte": [
+            "Diogo, Sonntag 16 Uhr: Die Präsentation in Französisch ist morgen, die erste Folie ist leer.",
+            "Ana, Mittwochabend: 30 Vokabeln für den Englischtest am Freitag.",
+            "Samuel: Der Praktikumsbericht ist seit einer Woche fällig, der Betrieb hat schon nachgefragt.",
+            "Léa: Seit Tagen wartet die Nachricht einer Freundin auf Antwort, und mit jedem Tag wird es peinlicher."
+          ],
+          "tipp": "Typische Später-Sätze sind „Nur noch eine Folge“, „Unter Druck bin ich besser“ und „Morgen hab ich mehr Zeit“. Starke Jetzt-Sätze sind oft klein und freundlich: „Nur zehn Minuten, dann darfst du aufhören“ oder „Nur die Aufgabe lesen“.",
+          "wennEsKippt": "Werden Sätze persönlich oder beleidigend („Du bist eh zu dumm“), sofort stoppen und erinnern: Die Stimmen sprechen über die Aufgabe, nie über die Person. Wer nicht durch die Gasse gehen will, spricht nur eine Stimme. Bei nur zwei Jugendlichen zwei Stühle aufstellen, einen für Später und einen für Jetzt: Die Figur steht in der Mitte, die beiden sprechen abwechselnd von ihrem Stuhl aus, und die Figur geht einen Schritt auf den Stuhl zu, der sie überzeugt. Bei wenig Energie geht das auch im Sitzen.",
+          "blatt": "skills-start-plan"
+        },
+        {
+          "titel": "Probe-Runde mit Timer",
+          "dauer": 15,
+          "phase": "uebung",
+          "text": "Die 25-Minuten-Methode erklären: eine Aufgabe, ein Timer, 25 Minuten nur daran arbeiten, auftauchende Gedanken kurz notieren, danach fünf Minuten echte Pause, nach vier Runden eine längere. Heute wird mit zehn Minuten geprobt. Handys in die Kiste; jede Person schätzt auf dem Blatt ein, wie unangenehm sich ihre Aufgabe gerade anfühlt, von 0 bis 10. Dann zehn Minuten Stille am ersten Schritt, die Leitung arbeitet sichtbar mit. Danach die Unlust neu einschätzen und vergleichen.",
+          "sagen": [
+            "Zehn Minuten, eine Sache. Wenn euch etwas einfällt, das ihr noch erledigen müsst: kurz notieren und weiterarbeiten.",
+            "Wie unangenehm war die Aufgabe vorher, und wie ist es jetzt? Wer ist unter seiner Zahl von vorhin gelandet?",
+            "Anfangen ist fast immer das Schwerste. Die Unlust vorher ist meistens größer als die Arbeit selbst."
+          ],
+          "tipp": "Die Leitung arbeitet selbst an etwas Echtem, etwa an Notizen oder einer Mail. Die Stille trägt, wenn die Erwachsene mitmacht, statt aufzupassen.",
+          "wennEsKippt": "Wird es unruhig, nicht ermahnen, sondern auf den Timer zeigen: noch sieben Minuten, dann ist die Runde vorbei. Wer gar nicht anfangen kann, bekommt leise eine noch kleinere Startaufgabe, etwa nur die Überschrift schreiben. Wer vorher fertig ist, macht den nächsten Schritt und notiert ihn.",
+          "blatt": "skills-start-plan"
+        },
+        {
+          "titel": "Skill: freundlicher Neustart",
+          "dauer": 5,
+          "phase": "skill",
+          "text": "An Einheit 5 anknüpfen und fragen, wie die Jugendlichen mit sich reden, wenn sie etwas aufgeschoben haben. Viele sind dann hart zu sich – und genau das macht den nächsten Start schwerer. Alle sitzen, wer mag, legt eine Hand auf Brust oder Unterarm, und die Leitung spricht die drei Sätze langsam vor, die alle still mitsagen. Zweimal durchgehen, dann schreibt jede Person ihren eigenen Neustart-Satz auf das Blatt.",
+          "sagen": [
+            "Stellt euch vor, eure beste Freundin hat ihr Referat aufgeschoben. Würdet ihr sie anschreien oder ihr helfen, anzufangen?",
+            "Ihr müsst es nicht gut finden, dass ihr aufgeschoben habt. Aber Fertigmachen hilft nicht beim Anfangen."
+          ],
+          "punkte": [
+            "Ich habe es aufgeschoben, und das fühlt sich gerade mies an.",
+            "Das passiert fast allen Menschen.",
+            "Was ist jetzt der kleinste nächste Schritt?"
+          ],
+          "tipp": "Die Hand auf der Brust ist freiwillig. Wem die Geste zu nah ist, sagt die Sätze nur innerlich.",
+          "blatt": "skills-start-plan"
+        },
+        {
+          "titel": "Réckbléck und Skills-Pass",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Runde mit Fingern: Wie sicher bist du, dass dein erster Schritt bis übermorgen passiert, von 0 bis 10? Wer unter sieben liegt, macht den Schritt direkt nach der Runde noch kleiner. Dann Eintrag in den Skills-Pass, etwa der eigene Start-Satz, und Stempel. Das Blatt geht mit nach Hause; in der nächsten Einheit wird nachgefragt, was geklappt hat.",
+          "sagen": [
+            "Wie sicher, null bis zehn? Unter sieben? Dann machen wir den Schritt jetzt noch kleiner."
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Nächstes Mal geht es um Prüfungen: was im Kopf passiert, wenn die Angst kommt – und wie Herzklopfen für euch arbeiten kann statt gegen euch.",
+      "hintergrund": "Aufschieben heißt, eine beabsichtigte Handlung freiwillig zu verschieben, obwohl absehbar ist, dass es schadet. Nach einer Meta-Analyse wird umso eher aufgeschoben, je unangenehmer eine Aufgabe erscheint und je weiter die Belohnung entfernt liegt; Impulsivität verstärkt das (Steel, 2007). Sirois und Pychyl (2013) beschreiben Aufschieben als kurzfristige Stimmungsreparatur: Das Ausweichen beseitigt das unangenehme Gefühl sofort, der Preis kommt später. Wirksam sind deshalb Wege, die den Einstieg erleichtern: winzige erste Schritte, feste Arbeitsfenster wie die 25-Minuten-Methode, bekannt als Pomodoro-Technik (Cirillo, 2018), und Wenn-dann-Pläne, die den Start an eine Situation binden (Gollwitzer, 1999). Wer sich nach dem Aufschieben fertigmacht, verstärkt das Gefühl, vor dem er ausgewichen ist; Selbstmitgefühl – freundlich zu sich, im Wissen, dass es allen so geht, ohne zu beschönigen – ist die hilfreichere Haltung (Neff, 2003).",
+      "quellen": [
+        "Steel, P. (2007). The nature of procrastination: A meta-analytic and theoretical review of quintessential self-regulatory failure. Psychological Bulletin, 133(1), 65–94.",
+        "Sirois, F. & Pychyl, T. (2013). Procrastination and the priority of short-term mood regulation. Social and Personality Psychology Compass, 7(2), 115–127.",
+        "Cirillo, F. (2018). The Pomodoro Technique. New York: Currency.",
+        "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503.",
+        "Neff, K. D. (2003). Self-compassion: An alternative conceptualization of a healthy attitude toward oneself. Self and Identity, 2(2), 85–101."
+      ],
+      "achtung": "Hinter starkem Aufschieben steckt manchmal mehr als Unlust: anhaltende Niedergeschlagenheit, Überforderung zu Hause, Angst vor Versagen oder unerkannte Lernschwierigkeiten. Das nicht in der Gruppe ansprechen, sondern im Einzelgespräch, und bei Bedarf SePAS oder Klassenlehrkraft einbeziehen. In der Gewissensgasse sprechen die Stimmen nur über die Aufgabe, nie über Personen; niemand spielt sich selbst. Mitgebrachte Aufgaben werden nicht bewertet und nicht herumgezeigt. Deutet jemand an, dass ihm alles egal ist oder er nicht mehr kann, das ernst nehmen: die Person nach der Einheit ruhig ansprechen und direkt nachfragen, wie es ihr geht, nichts versprechen, was man nicht halten kann, und die zuständige Leitung (Responsable) am selben Tag informieren. Bei Hinweisen auf Selbstverletzung oder Suizidgedanken nach dem internen Schutzkonzept handeln; bei akuter Gefahr Notruf 112 und die Person nicht allein lassen."
+    },
+    {
+      "id": "j2-e09",
+      "nr": 9,
+      "jahr": 2,
+      "modul": "j2-m2",
+      "titel": "Prüfungen ohne Panik",
+      "kurz": "Was Prüfungsangst mit Kopf und Körper macht und was hilft: Gedanken prüfen, Herzklopfen als Energie deuten, den Prüfungstag planen. Zum Abschluss des Moduls kommt ein Skill in den Skills-Kompass.",
+      "dauer": 100,
+      "ziele": [
+        "erklären, wie Sorgen und körperliche Aufregung in einer Prüfung zusammenwirken",
+        "prüfen einen typischen Prüfungsgedanken mit drei Fragen und formulieren einen realistischen Satz",
+        "erleben Herzklopfen nach Bewegung und üben, Aufregung als Energie zu deuten",
+        "legen einen Plan für den Prüfungstag mit zwei Skills fest und tragen einen Skill in den Skills-Kompass ein"
+      ],
+      "material": [
+        "Gefühlsrad, Wäscheklammern und Plakat Anspannungsskala 0–100",
+        "Schülerblatt „Mein Prüfungsplan“ für jede Person, Scheren",
+        "Aus den Mappen: „Das Lern-Experiment“ (Lernplan) und „Mein Start-Plan“ aus den Einheiten 7 und 8",
+        "Skills-Kompass aus Einheit 1 (in den Mappen) und Skills-Pässe mit Stempel",
+        "Tafel oder Flipchart, Musik zum Bewegen, Lautsprecher, Timer",
+        "Für die Mini-Aufgaben: Karten mit fünf leichten Kopfrechenaufgaben, ein Papierkorb, fünf Papierbälle",
+        "Imbiss und Getränke, Wasser für nach der Bewegung"
+      ],
+      "vorbereitung": [
+        "Die Mini-Aufgaben vorbereiten: Kopfrechenkarten (etwa 7 mal 8, 45 plus 38, die Hälfte von 150) und den Papierkorb drei Meter vor einer Wurflinie aus Malerkrepp.",
+        "Für die Generalprobe genügt es, die Stühle in einer Reihe mit Blick zur Tafel aufzustellen; bis dahin Stuhlkreis.",
+        "Kurz nachfragen, wer in den nächsten Wochen eine Prüfung oder Präsentation hat – ohne nach Noten zu fragen."
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-pruefungsplan",
+        "skills-kompass",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Gefühlsrad, Anspannung, Hand-Barometer"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Vom ersten Schritt zur Prüfung"
+        },
+        {
+          "min": "15–30",
+          "phase": "input",
+          "titel": "Was in der Prüfung passiert: Sorgen und Aufregung"
+        },
+        {
+          "min": "30–45",
+          "phase": "uebung",
+          "titel": "Gedanken prüfen mit drei Fragen"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–76",
+          "phase": "aktiv",
+          "titel": "Herzklopfen: Angst oder Energie?"
+        },
+        {
+          "min": "76–88",
+          "phase": "uebung",
+          "titel": "Mein Drehbuch für den Prüfungstag"
+        },
+        {
+          "min": "88–93",
+          "phase": "skill",
+          "titel": "Generalprobe: zwei Skills im Prüfungsraum"
+        },
+        {
+          "min": "93–97",
+          "phase": "abschluss",
+          "titel": "Skills-Kompass: Stress und Schule"
+        },
+        {
+          "min": "97–100",
+          "phase": "abschluss",
+          "titel": "Réckbléck und Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: Gefühlsrad, Anspannung, Hand-Barometer",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Gefühlsrad und Anspannung wie gewohnt. Dann schließen alle die Augen oder schauen auf den Boden und zeigen mit der Hand vor dem Körper, wie nervös sie am Morgen einer Prüfung meistens sind: unten ruhig, auf Brusthöhe aufgeregt, über dem Kopf Panik. Nur die Leitung schaut und beschreibt das Bild ohne Namen. Zum Schluss zeigt sie ihre eigene Hand und erzählt in einem Satz von einer Prüfung, vor der sie sehr nervös war.",
+          "sagen": [
+            "Augen zu. Zeigt mit der Hand, wie nervös ihr am Morgen einer Prüfung seid. Niemand außer mir sieht es.",
+            "Ich sage euch gleich, was ich sehe, ohne Namen. Und ich wette: Mit der Aufregung ist hier niemand allein."
+          ],
+          "tipp": "Wer die Augen nicht schließen mag, schaut auf den Boden. Wer auch das nicht mag, sagt „weiter“.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Vom ersten Schritt zur Prüfung",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "Kurz nachfragen, wer seinen ersten Schritt oder eine Timer-Runde ausprobiert hat, und die Erfahrungen würdigen, auch das Nicht-Geschaffte. Dann das Thema nennen: der Moment, auf den Lernen und Anfangen hinauslaufen – die Prüfung selbst. Ankündigen, dass die Einheit das Modul abschließt: Am Ende hat jede Person einen Prüfungsplan und zwei Skills, und ein Skill kommt in den Skills-Kompass.",
+          "sagen": [
+            "Wer hat seinen ersten Schritt gemacht? Und wer nicht – was kam dazwischen? Beides ist interessant.",
+            "Heute geht es um die fünfzig Minuten, auf die alles hinausläuft."
+          ]
+        },
+        {
+          "titel": "Was in der Prüfung passiert: Sorgen und Aufregung",
+          "dauer": 15,
+          "phase": "input",
+          "text": "Mit einem kurzen Versuch beginnen: Alle sagen halblaut Buchstaben und Zahlen im Wechsel, A1, B2, C3, so weit sie kommen. Nach einer halben Minute spricht die Leitung als Sorgen-Stimme in der Ich-Form dazwischen: Oh nein, die Zeit läuft, was, wenn ich durchfalle, die anderen sind schon viel weiter. Fragen, was passiert ist. Dann an der Tafel zeigen: Prüfungsangst hat zwei Teile, Sorgen im Kopf und Aufregung im Körper. Die Sorgen belegen Platz im Arbeitsspeicher, der dann für die Aufgabe fehlt; die Aufregung dagegen macht wach, solange man sie nicht als Gefahr deutet. Daraus folgen die zwei Wege für heute: Sorgen prüfen und Aufregung nutzen.",
+          "sagen": [
+            "A1, B2, C3 – halblaut, jede und jeder im eigenen Tempo. Ich rede gleich dazwischen, lasst euch nicht stören.",
+            "Was ist passiert, als meine Sorgen-Stimme dazukam? Genau das machen Sorgen in einer Prüfung: Sie reden dazwischen.",
+            "Der Kopf hat nur eine bestimmte Menge Platz. Was die Sorgen belegen, fehlt für die Aufgabe."
+          ],
+          "tabelle": {
+            "spalten": [
+              "Teil",
+              "So zeigt es sich",
+              "Was hilft"
+            ],
+            "zeilen": [
+              [
+                "Sorgen im Kopf",
+                "„Ich falle durch“, „Die anderen können alles“, Grübeln, Kopf leer",
+                "Gedanken prüfen, einen realistischen Satz bereithalten"
+              ],
+              [
+                "Aufregung im Körper",
+                "Herzklopfen, schneller Atem, feuchte Hände, flauer Magen",
+                "Als Energie deuten, Seufzer-Atmung, Füße fest in den Boden"
+              ]
+            ]
+          },
+          "tipp": "Die Unterscheidung entlastet: Viele glauben, sie müssten erst ganz ruhig werden, bevor sie eine gute Prüfung schreiben können. Das Ziel ist nicht null Aufregung, sondern weniger Sorgen.",
+          "wennEsKippt": "Macht der Versuch jemanden sichtlich nervös, sofort abbrechen und benennen: Das war Absicht, und genau so fühlt es sich an, wenn Sorgen dazwischenreden. Sagt jemand, er habe nie Prüfungsangst, darf er beobachten und danach berichten, was er bei den anderen gesehen hat."
+        },
+        {
+          "titel": "Gedanken prüfen mit drei Fragen",
+          "dauer": 15,
+          "phase": "uebung",
+          "text": "Den Comic von Inês auf dem Blatt anschauen: Am Abend vor dem Mathe-Devoir denkt sie, dass sie das Jahr nicht schafft, wenn sie den Devoir verhaut. Gemeinsam die drei Fragen durchgehen: Was ist das Schlimmste, das realistisch passieren kann, und wie würde ich damit fertig? Was passiert am wahrscheinlichsten? Was würde ich einer Freundin sagen, die so denkt? Aus den Antworten einen Satz bauen, den Inês am Morgen wirklich glauben kann, und unter das dritte Bild schreiben. Dann trägt jede Person still einen eigenen Prüfungsgedanken in die Tabelle ein und prüft ihn allein; wer mag, holt sich Hilfe von der Leitung.",
+          "sagen": [
+            "Nicht schönreden. ‚Ich schreibe eine 60‘ glaubt am Morgen der Prüfung niemand. Wir suchen einen Satz, den ihr wirklich glauben könnt.",
+            "Was würdet ihr Inês sagen, wenn sie euch das schreibt? Genau das dürft ihr euch auch sagen.",
+            "Bei anderen sehen wir oft klarer als bei uns selbst. Darum hilft die Frage nach der Freundin."
+          ],
+          "punkte": [
+            "Ich habe sowieso keine Chance.",
+            "Alle anderen haben mehr gelernt.",
+            "Wenn ich einen Hänger habe, ist alles vorbei.",
+            "Die Lehrerin hält mich für dumm, wenn ich das nicht kann.",
+            "Ich muss alles wissen, sonst ist es nichts wert."
+          ],
+          "tipp": "Wer in Jahr 1 dabei war, kennt die Glaubenssätze und den kritischen Detektiv. Die drei Fragen sind die Kurzform für die Prüfungszeit; sie passen auf die Prüfungskarte.",
+          "wennEsKippt": "Nennt jemand einen Gedanken wie „Wenn ich durchfalle, bringen mich meine Eltern um“, nicht im Plenum vertiefen, aber auch nicht übergehen: kurz würdigen, dass der Druck sehr groß klingt, und ein Gespräch nach der Einheit anbieten. Findet jemand keinen eigenen Gedanken, nimmt er einen aus der Liste an der Tafel.",
+          "blatt": "skills-pruefungsplan"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Imbiss und Pause, genug trinken: Gleich wird es körperlich. Wer mag, hilft beim Aufstellen von Wurflinie und Papierkorb."
+        },
+        {
+          "titel": "Herzklopfen: Angst oder Energie?",
+          "dauer": 16,
+          "phase": "aktiv",
+          "text": "Alle stehen. Eine Minute Bewegung mit voller Kraft zur Musik: Hampelmänner, auf der Stelle laufen oder Treppe. Dann die Hand aufs Herz legen und spüren: Herz, Atem, Wärme. Fragen, ob das Angst ist oder Vorfreude, und erklären, dass sich beides im Körper sehr ähnlich anfühlt – was daraus wird, hängt stark davon ab, wie man es deutet. Jede Person formuliert ihren Energie-Satz. Nach einer zweiten Bewegungsminute wählt jede Person eine Mini-Aufgabe, sagt ihren Satz laut oder leise und legt mit klopfendem Herzen los. Zum Schluss auswerten: Wie war es, so zu starten?",
+          "sagen": [
+            "Hand aufs Herz. Was spürt ihr? Kennt ihr das – vor einem Spiel, vor einem Konzert, vor einem Devoir?",
+            "Euer Körper weiß nicht, ob Prüfung oder Endspiel ist. Er macht euch bereit. Die Frage ist, wie ihr es nennt.",
+            "Sagt euren Satz, zum Beispiel: Das ist Energie, mein Körper macht mich bereit. Und dann los."
+          ],
+          "punkte": [
+            "Fünf Kopfrechenaufgaben von den Karten, laut vor der Leitung",
+            "Fünf Papierbälle aus drei Metern in den Papierkorb",
+            "30 Sekunden vor der Gruppe über ein leichtes Thema sprechen, etwa das beste Essen der Welt"
+          ],
+          "tipp": "In einer Studie schnitten Studierende, denen vor einer Prüfung erklärt wurde, dass Aufregung die Leistung steigern kann, in Mathematik besser ab als Studierende ohne diesen Hinweis. Diese Botschaft darf klar ankommen: Das Ziel ist nicht, die Aufregung loszuwerden.",
+          "wennEsKippt": "Wer wegen Asthma, einer Verletzung oder aus gesundheitlichen Gründen nicht intensiv mitmachen kann, geht zügig oder nimmt die Zeit. Will niemand vor der Gruppe sprechen, fällt diese Aufgabe weg; niemand wird zu einer Mini-Aufgabe gedrängt. Bei wenig Energie reichen 30 Sekunden Hampelmänner; bei nur zwei Jugendlichen macht die Leitung selbst eine Mini-Aufgabe vor.",
+          "blatt": "skills-pruefungsplan"
+        },
+        {
+          "titel": "Mein Drehbuch für den Prüfungstag",
+          "dauer": 12,
+          "phase": "uebung",
+          "text": "Zuerst trägt jede Person den Energie-Satz aus der Bewegungsübung auf dem Blatt ein. Dann wählt sie eine echte, anstehende Prüfung und füllt das Drehbuch: die Tage davor, der Abend davor, der Morgen, vor der Tür, in der Prüfung, danach. Die Tipps kurz vorlesen, dann schreibt jede Person in jede Station, was sie selbst tun will; für die Tage davor greifen alle auf ihren Lernplan und ihren Start-Plan zurück. Wer aus Jahr 1 den Prüfungs-Countdown hat, legt ihn daneben und übernimmt, was sich bewährt hat. Zum Schluss zwei Skills für die Prüfung wählen – einen für den Körper, einen für den Kopf – und die Prüfungskarte ausfüllen und ausschneiden.",
+          "sagen": [
+            "Welche Prüfung kommt als Nächstes? Für genau die ist der Plan.",
+            "Vor der Tür stehen oft die, die alle nervös machen: Hast du Kapitel 5 gelernt? Was macht ihr in dem Moment?",
+            "Die Karte kommt in die Federmappe. Dann ist sie da, wenn ihr sie braucht."
+          ],
+          "tipp": "Die Station „Vor der Tür“ unterschätzen viele. Ein einfacher Plan hilft: Kopfhörer, ein paar Schritte Abstand, zweimal seufzen, Energie-Satz.",
+          "wennEsKippt": "Hat jemand gerade keine Prüfung in Sicht, plant er für die nächste Präsentation oder den nächsten Vokabeltest. Wer mit dem Schreiben nicht mitkommt, füllt drei Stationen und die Karte; der Rest kann zu Hause ergänzt werden.",
+          "blatt": "skills-pruefungsplan"
+        },
+        {
+          "titel": "Generalprobe: zwei Skills im Prüfungsraum",
+          "dauer": 5,
+          "phase": "skill",
+          "text": "Alle setzen sich in eine Reihe mit Blick zur Tafel, einen Stift in der Hand, die Prüfungskarte vor sich. Die Leitung spricht wie eine Lehrkraft zu Beginn einer Prüfung und bittet dann darum, still die zwei eigenen Skills anzuwenden. Nach zwei Minuten die Anspannung schätzen lassen und fragen, ob man von außen etwas bemerkt hätte.",
+          "sagen": [
+            "Ihr habt fünfzig Minuten, dreht das Blatt um. – Und jetzt eure zwei Skills. Niemand soll es merken.",
+            "Hätte man es von außen gesehen? Wenn nicht: genau richtig für den Prüfungsraum."
+          ],
+          "tipp": "Unauffällig geht fast alles: Füße fest in den Boden drücken, den Stift fest drücken und wieder loslassen, lautlos seufzen, der Energie-Satz im Kopf.",
+          "blatt": "skills-pruefungsplan"
+        },
+        {
+          "titel": "Skills-Kompass: Stress und Schule",
+          "dauer": 4,
+          "phase": "abschluss",
+          "text": "Das Modul ist geschafft. Alle blättern im Skills-Pass zu den Einheiten 6 bis 9 zurück und tragen im Skills-Kompass im Feld „2 · Stress und Schule“ ein, welcher Skill ihnen in diesem Bereich hilft und wann sie ihn einsetzen. Kurze Runde, in der jede Person nur den Namen ihres Skills nennt; gleiche Skills kommen als Strichliste an die Tafel.",
+          "sagen": [
+            "Welcher Skill hilft euch bei Stress und Schule – und wann setzt ihr ihn ein? Zum Beispiel: Seufzer-Atmung, wenn ich vor dem Prüfungsraum warte.",
+            "Für die Runde reicht der Name eures Skills."
+          ],
+          "blatt": "skills-kompass"
+        },
+        {
+          "titel": "Réckbléck und Skills-Pass",
+          "dauer": 3,
+          "phase": "abschluss",
+          "text": "Blitzlicht mit einem Satz an das eigene Ich am Morgen der nächsten Prüfung, laut oder nur im Kopf. Dann Eintrag in den Skills-Pass und Stempel. Die Prüfungskarte wandert in die Federmappe; nach der nächsten Prüfungsphase fragt die Leitung, was geholfen hat, nicht nach der Note.",
+          "sagen": [
+            "Ein Satz an euch selbst am Morgen der nächsten Prüfung. Laut oder nur für euch."
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Nächstes Mal beginnt ein neues Modul: Es geht um Wut – was unter ihr liegt und woran ihr früh merkt, dass sie kommt.",
+      "hintergrund": "Prüfungsangst besteht aus Sorgen und körperlicher Aufgeregtheit; vor allem die Sorgen mindern die Leistung, weil sie Aufmerksamkeit binden, die der Aufgabe fehlt (Zeidner, 1998). Die drei Fragen stammen aus der kognitiven Verhaltenstherapie: Katastrophengedanken werden nicht schöngeredet, sondern auf Wahrscheinlichkeit und Bewältigbarkeit geprüft (Beck, 2011). Die Frage nach der Freundin nutzt Selbstdistanzierung: Mit etwas Abstand denken Menschen über eigene Probleme weniger aufgewühlt und klarer nach (Kross & Ayduk, 2017). Für die körperliche Seite zeigten Jamieson et al. (2010): Studierende, denen vor einer Prüfung erklärt wurde, dass Aufregung die Leistung steigern kann, schnitten in Mathematik besser ab. Aufregung wird deshalb umgedeutet statt bekämpft. Die Stationen des Drehbuchs wirken wie Wenn-dann-Pläne und machen es wahrscheinlicher, dass die Skills im entscheidenden Moment abgerufen werden (Gollwitzer, 1999).",
+      "quellen": [
+        "Zeidner, M. (1998). Test Anxiety: The State of the Art. New York: Plenum.",
+        "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
+        "Kross, E. & Ayduk, O. (2017). Self-distancing: Theory, research, and current directions. Advances in Experimental Social Psychology, 55, 81–136.",
+        "Jamieson, J. P., Mendes, W. B., Blackstock, E. & Schmader, T. (2010). Turning the knots in your stomach into bows: Reappraising arousal improves performance on the GRE. Journal of Experimental Social Psychology, 46(1), 208–212.",
+        "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+      ],
+      "achtung": "Prüfungsdruck kann zu Hause und in der Schule sehr hoch sein. Nicht nach Noten, Zeugnissen oder Reaktionen der Eltern fragen; wer davon erzählt, tut es freiwillig. Eigene Prüfungsgedanken werden nicht vorgelesen. Bei der Bewegung gilt das Stopp-Recht; wer Asthma oder gesundheitliche Einschränkungen hat, macht im eigenen Tempo oder gar nicht mit. Hinter starker Prüfungsangst können Panikattacken, Schlafprobleme, Schulvermeidung oder anhaltende Niedergeschlagenheit stehen: im Einzelgespräch aufgreifen, auf SePAS oder Klassenlehrkraft hinweisen und die zuständige Leitung (Responsable) informieren. Sagt jemand, er halte den Druck nicht mehr aus, oder deutet an, nicht mehr leben zu wollen: die Person nach der Einheit ruhig ansprechen und direkt nachfragen, nichts versprechen, was man nicht halten kann, nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) am selben Tag informieren; bei akuter Gefahr Notruf 112 und die Person nicht allein lassen."
+    }
+  ]
+}

@@ -1,0 +1,698 @@
+{
+  "einheiten": [
+    {
+      "id": "j3-e03",
+      "nr": 3,
+      "jahr": 3,
+      "modul": "j3-m1",
+      "titel": "Was mir wichtig ist",
+      "kurz": "Mit dem Werte-Kreis nach Schwartz entdeckt die Gruppe die Werte hinter Alltagsentscheidungen, ersteigert bei einer Auktion, was ihr wichtig ist, und legt ihre eigenen Top 3 fest.",
+      "dauer": 100,
+      "ziele": [
+        "kennen zehn Grundwerte und erkennen, welche Werte hinter Entscheidungen im Alltag stehen können",
+        "erleben bei der Werte-Auktion, wofür sie ein begrenztes Budget einsetzen und worauf sie verzichten",
+        "benennen ihre drei wichtigsten Werte mit je einem Beispiel aus ihrem Alltag",
+        "beschreiben eine Zwickmühle, in der zwei Werte in verschiedene Richtungen ziehen"
+      ],
+      "material": [
+        "Gefühlsrad (A3, laminiert), Wäscheklammern, Plakat Anspannungsskala 0–100",
+        "Vier A4-Schilder für die Raumecken: Offen für Neues, Stark sein, Bewahren, Für andere da sein",
+        "Schülerblatt „Meine Werte“ für jede Person (Seite 1 einseitig kopiert, weil die Karten ausgeschnitten werden), Scheren, Umschläge",
+        "Schülerblatt „Die Werte-Auktion“ für jede Person",
+        "Flipchart für die Bank mit allen Namen und je 1000 Talern, ein Kochlöffel als Auktionshammer",
+        "Tafel oder Flipchart für den Werte-Kreis",
+        "Skills-Pässe, Stempel; Imbiss und Getränke (Allergien beachten)"
+      ],
+      "vorbereitung": [
+        "Die vier Schilder so in die Raumecken hängen, dass sich Offen für Neues und Bewahren sowie Stark sein und Für andere da sein diagonal gegenüberliegen",
+        "Den Werte-Kreis an die Tafel zeichnen: ein Kreis, vier Viertel, die zehn Werte darin (Tabelle in Schritt 3)",
+        "Das Kontoblatt der Bank vorbereiten: alle Namen, je 1000 Taler Startguthaben"
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-meine-werte",
+        "skills-werte-auktion",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Was hat sich gelohnt?"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Vom Ziel zum Wert"
+        },
+        {
+          "min": "15–27",
+          "phase": "input",
+          "titel": "Der Werte-Kreis"
+        },
+        {
+          "min": "27–45",
+          "phase": "uebung",
+          "titel": "Werte-Ecken: Werte im Alltag"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–80",
+          "phase": "aktiv",
+          "titel": "Die Werte-Auktion"
+        },
+        {
+          "min": "80–90",
+          "phase": "uebung",
+          "titel": "Meine Top 3"
+        },
+        {
+          "min": "90–95",
+          "phase": "skill",
+          "titel": "Skill: Der Werte-Anker"
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Réckbléck und Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: Was hat sich gelohnt?",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Gefühlsrad und Anspannung wie gewohnt; die Leitung beginnt. Dazu eine leichte Zusatzfrage: Wofür habt ihr diese Woche Zeit oder Geld ausgegeben, und es hat sich gelohnt? Ein Stichwort reicht, „weiter“ ist erlaubt. Die Leitung notiert die Stichworte klein am Rand der Tafel – sie tauchen gleich beim Werte-Kreis wieder auf.",
+          "sagen": [
+            "Wort, Zahl – und wofür habt ihr diese Woche Zeit oder Geld ausgegeben, das sich gelohnt hat?",
+            "Zocken, Training, die Oma besuchen – alles zählt."
+          ],
+          "tipp": "Die Stichworte der Jugendlichen sind die besten Beispiele für den Werte-Kreis: Aus Training wird Erfolg, aus dem Besuch bei der Oma wird Fürsorge.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Vom Ziel zum Wert",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "Kurz an die Ziele aus Einheit 2 erinnern: Ein Ziel sagt, wohin ich will, ein Wert sagt, warum mir das wichtig ist. Die Leitfrage des Moduls an die Tafel: Was ist mir wichtig – und wer will ich sein? Heute geht es um den ersten Teil, nächste Woche um den zweiten.",
+          "sagen": [
+            "Letzte Woche habt ihr Ziele aufgeschrieben. Heute geht es um die Frage dahinter: Warum ist euch das wichtig?",
+            "Werte sieht man nicht. Man sieht nur, wofür jemand Zeit, Geld und Mut einsetzt."
+          ]
+        },
+        {
+          "titel": "Der Werte-Kreis",
+          "dauer": 12,
+          "phase": "input",
+          "text": "Das Blatt „Meine Werte“ austeilen; während der Erklärung schneiden alle ihre Karten aus. Den Werte-Kreis nach Schwartz an der Tafel zeigen: zehn Werte, die in Befragungen in vielen Ländern immer wiederkehren, geordnet in vier Gruppen (Tabelle). Jeden Wert mit einem Stichwort aus dem Check-in erklären. Dann die wichtigste Idee: Nachbarn im Kreis vertragen sich, Gegenüber ziehen in verschiedene Richtungen – etwa Abwechslung und Sicherheit. Zum Schluss auf die Schilder in den Ecken zeigen: Der Raum ist jetzt der Kreis.",
+          "tabelle": {
+            "spalten": [
+              "Raumecke",
+              "Werte",
+              "So klingt das"
+            ],
+            "zeilen": [
+              [
+                "Offen für Neues",
+                "Selbstbestimmung, Abwechslung, Genuss",
+                "Ich entscheide selbst. Ich will was erleben. Das Leben soll Spaß machen."
+              ],
+              [
+                "Stark sein",
+                "Erfolg, Macht",
+                "Ich will in etwas richtig gut sein. Ich will Einfluss, Geld, Ansehen."
+              ],
+              [
+                "Bewahren",
+                "Sicherheit, Anpassung, Tradition",
+                "Mir ist ein sicheres Zuhause wichtig. Ich halte mich an Regeln. Die Bräuche meiner Familie bedeuten mir etwas."
+              ],
+              [
+                "Für andere da sein",
+                "Fürsorge, Gerechtigkeit",
+                "Ich bin für meine Leute da. Niemand soll unfair behandelt werden."
+              ]
+            ]
+          },
+          "sagen": [
+            "Kein Wert ist besser als ein anderer. Jeder Mensch hat alle zehn – nur unterschiedlich stark.",
+            "Was sich gegenüberliegt, zieht in verschiedene Richtungen: Wer viel Abwechslung will, dem sind feste Regeln oft zu eng."
+          ],
+          "tipp": "Genuss liegt im Kreis zwischen Offen für Neues und Stark sein. Im Raum hängt er bei Offen für Neues; wer ihn anders sieht, darf sich gleich zwischen die Ecken stellen.",
+          "blatt": "skills-meine-werte"
+        },
+        {
+          "titel": "Werte-Ecken: Werte im Alltag",
+          "dauer": 18,
+          "phase": "uebung",
+          "text": "Die Leitung liest Situationen vor (Liste). Nach jeder Situation gehen alle in die Ecke, in der sie den Wert dahinter vermuten; aus jeder Ecke begründet eine Person ihre Wahl. Es gibt keine falsche Ecke, oft stecken zwei Werte in einer Handlung. Die letzten beiden Situationen sind Zwickmühlen: Hier darf man sich zwischen zwei Ecken stellen und sagen, welcher Wert bei einem selbst gewinnen würde. Zum Schluss setzen sich alle, und jede Person denkt still an eine eigene Entscheidung der letzten Woche: Welcher Wert hat da gewonnen?",
+          "punkte": [
+            "Diogo gibt sein ganzes Taschengeld für ein Konzertticket aus, obwohl er eigentlich sparen wollte.",
+            "Amira hilft jeden Abend ihrem kleinen Bruder bei den Hausaufgaben, auch wenn sie selbst müde ist.",
+            "Mathis beginnt nach dem Praktikum eine Ausbildung zum Koch, obwohl seine Eltern sich etwas anderes gewünscht haben.",
+            "Sofia übt jeden Tag Gitarre, weil sie beim Schulkonzert das Solo spielen will.",
+            "Jang schreibt im Klassenchat: Hört auf, über Yusuf zu lästern.",
+            "Ana fährt jeden Sommer mit ihrer Familie ins Dorf ihrer Großeltern und hilft dort beim Dorffest.",
+            "Zwickmühle: Lena ist zu einer Party eingeladen, auf die alle gehen. Sie hat ihrer Mutter aber versprochen, an dem Abend auf ihre kleine Schwester aufzupassen.",
+            "Zwickmühle: Tiago sieht, wie sein bester Freund einem Jüngeren das Handy wegnimmt. Sagt er etwas, gibt es Ärger mit der Clique."
+          ],
+          "sagen": [
+            "Welcher Wert steckt dahinter? Geht in die Ecke, die für euch passt.",
+            "Aus jeder Ecke eine Stimme: Warum stehst du hier?",
+            "Bei den Zwickmühlen dürft ihr euch zwischen zwei Ecken stellen. Welcher Wert würde bei dir gewinnen?"
+          ],
+          "tipp": "Die Leitung stellt sich bei einer Situation bewusst allein in eine Ecke und begründet das. Das zeigt: Es geht nicht um die richtige Antwort, sondern ums Hinschauen.",
+          "wennEsKippt": "Laufen alle immer derselben Person hinterher, die nächste Situation mit geschlossenen Augen abstimmen: Jede Person zeigt mit dem Arm in eine Ecke, erst dann öffnen alle die Augen. Wird es bei Religion oder Herkunft hitzig, auf die Situation zurückführen: Wir reden über Ana auf der Karte, nicht über eure Familien."
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Gemeinsam essen, das Thema ruht. Die Leitung fragt eine freiwillige Person, ob sie bei der Auktion die Bank übernimmt, und zeigt ihr das Kontoblatt."
+        },
+        {
+          "titel": "Die Werte-Auktion",
+          "dauer": 20,
+          "phase": "aktiv",
+          "text": "Die Auktionsliste austeilen. Zuerst plant jede Person drei Minuten lang still, welche drei Lose sie unbedingt will und wie viel sie höchstens bietet. Dann versteigert die Leitung die Lose in der Reihenfolge des Blatts: Startgebot 50 Taler, geboten wird in Schritten von 50 – wer bietet, steht auf und ruft sein Gebot. Nach „zum Ersten, zum Zweiten, zum Dritten“ fällt der Kochlöffel, und die Bank streicht den Preis vom Konto. Nach dem letzten Los füllt jede Person Aufgabe 3 aus, dann folgt eine kurze Runde: Was habt ihr gekauft, worauf musstet ihr verzichten?",
+          "sagen": [
+            "Ihr habt 1000 Taler. Mehr gibt es nicht: keine Kredite, kein Zusammenlegen.",
+            "Los 4: 500 000 Euro auf dem Konto. Startgebot 50 – wer bietet?",
+            "Worauf hast du verzichtet, obwohl es dir wichtig war? Wie fühlt sich das an?",
+            "Welcher Wert steckt hinter dem Los, für das du am meisten geboten hast?"
+          ],
+          "tipp": "Den Auktionator mit Schwung spielen, aber jedes Los einen Moment wirken lassen: Stellt euch vor, ihr hättet das wirklich. Bei nur zwei Jugendlichen bietet die Leitung mit einem eigenen Konto mit, damit Konkurrenz entsteht; bei wenig Energie wird im Sitzen mit erhobener Hand geboten.",
+          "wennEsKippt": "Überbieten sich zwei nur, um zu gewinnen, kurz stoppen und fragen: Willst du das Los – oder willst du gewinnen? Auch das sagt etwas über Werte. Setzt jemand alles auf das erste Los, das zulassen: Das Gespräch danach wird dadurch nur ehrlicher.",
+          "blatt": "skills-werte-auktion"
+        },
+        {
+          "titel": "Meine Top 3",
+          "dauer": 10,
+          "phase": "uebung",
+          "text": "Jede Person legt ihre Wertekarten in eine Reihe, von sehr wichtig bis weniger wichtig, und vergleicht mit ihrer Auktion: Passt das, was ich ersteigert habe, zu meiner Reihe? Dann trägt sie ihre drei wichtigsten Werte auf Seite 2 ein, mit je einem Beispiel, woran man sie in ihrem Alltag erkennt, und schreibt ihren Werte-Satz. Wer mag, zeigt seine Top 3 einer Person seiner Wahl. Die Werte-Woche auf dem Blatt läuft bis zur nächsten Einheit.",
+          "sagen": [
+            "Schreibt auf, was ihr tut – nicht, was ihr gut findet. Woran würde jemand, der euch eine Woche begleitet, eure Top 3 erkennen?",
+            "Gab es eine Überraschung zwischen eurer Reihe und dem, was ihr ersteigert habt?"
+          ],
+          "tipp": "Die Leitung legt ihre eigene Reihe offen, mit einem Wert, nach dem sie nicht immer handelt. Das macht es leichter, auch Widersprüche zuzugeben.",
+          "wennEsKippt": "Legt jemand die Karten demonstrativ durcheinander oder sagt, ihm sei alles egal, nicht diskutieren. Fragen: Welche Karte würdest du als Letztes hergeben? Oft ist das der Einstieg in die Top 3.",
+          "blatt": "skills-meine-werte"
+        },
+        {
+          "titel": "Skill: Der Werte-Anker",
+          "dauer": 5,
+          "phase": "skill",
+          "text": "Im Sitzen, Füße auf dem Boden, Augen offen oder geschlossen. Die Leitung leitet langsam an (Liste): an einen Moment denken, in dem man nach einem der eigenen Top-3-Werte gehandelt hat, spüren, wo dieser Moment im Körper sitzt, und mit drei ruhigen Atemzügen eine Frage mitnehmen. Danach erklären: Wer in einer Zwickmühle kurz fragt, was ihm wichtig ist, gewinnt einen Moment Abstand und entscheidet oft klarer.",
+          "punkte": [
+            "Füße auf den Boden. Atme einmal lang aus.",
+            "Denk an einen Moment, in dem du nach einem deiner drei Werte gehandelt hast. Klein reicht.",
+            "Wo spürst du diesen Moment im Körper – in der Brust, im Bauch, in den Schultern?",
+            "Drei ruhige Atemzüge. Nimm dir die Frage mit: Was ist mir hier wichtig?"
+          ],
+          "tipp": "Wem kein eigener Moment einfällt, denkt an einen Menschen, der diesen Wert lebt. Das bereitet nebenbei die Einheit zu Vorbildern vor."
+        },
+        {
+          "titel": "Réckbléck und Skills-Pass",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Blitzlicht: Jede Person, die mag, nennt einen ihrer Top-3-Werte – ein Wort, ohne Begründung; „weiter“ ist erlaubt. Dann Eintrag in den Skills-Pass und Stempel. Die Wertekarten kommen in einem Umschlag ins Skills-Buch.",
+          "sagen": [
+            "Einer eurer drei Werte, ein Wort. Oder weiter.",
+            "Für den Pass: Was hat euch bei der Auktion an euch selbst überrascht?"
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Werte sind ein Teil von dem, wer ihr seid. Nächstes Mal geht es um die anderen Teile: eure Rollen, eure Sprachen – und die Frage, wer ihr sein wollt.",
+      "hintergrund": "Schwartz (1992) hat in Befragungen aus 20 Ländern zehn Grundwerte beschrieben, die in sehr verschiedenen Kulturen wiederkehren. Sie bilden einen Kreis: Benachbarte Werte lassen sich gut zugleich verfolgen, gegenüberliegende stehen in Spannung – Offenheit für Neues gegen Bewahren, sich stark machen gegen für andere da sein. Deshalb tun Entscheidungen oft weh: Meist gewinnt nicht ein guter Wert gegen einen schlechten, sondern ein Wert gegen einen anderen. Die Werte-Ecken übersetzen den Kreis in den Raum, die Auktion macht Prioritäten sichtbar, weil das Geld begrenzt ist. Nach der Werteklärung wird ein Wert erst durch freie Wahl, Bejahen und Handeln zum eigenen (Simon, Howe & Kirschenbaum, 1972) – daher Rangreihe und Werte-Woche. In der Akzeptanz- und Commitment-Therapie geben selbst gewählte Werte auch in schwierigen Momenten die Richtung vor (Hayes et al., 2012). Für Erikson (1968) gehört es zur Identitätsentwicklung, sich an eigene Werte zu binden, statt sie nur zu übernehmen.",
+      "quellen": [
+        "Schwartz, S. H. (1992). Universals in the content and structure of values: Theoretical advances and empirical tests in 20 countries. Advances in Experimental Social Psychology, 25, 1–65.",
+        "Simon, S. B., Howe, L. W. & Kirschenbaum, H. (1972). Values Clarification: A Handbook of Practical Strategies for Teachers and Students. New York: Hart.",
+        "Hayes, S. C., Strosahl, K. D. & Wilson, K. G. (2012). Acceptance and Commitment Therapy: The Process and Practice of Mindful Change (2nd ed.). New York: Guilford.",
+        "Erikson, E. H. (1968). Identity: Youth and Crisis. New York: Norton."
+      ],
+      "achtung": "Werte berühren Religion, Herkunft und Familie. In den Werte-Ecken wird nur über die Personen auf den Karten gesprochen, nicht über die Familien der Jugendlichen; abwertende Bemerkungen über Glauben oder Herkunft sofort stoppen. Geld kann ein wunder Punkt sein – nicht nach echten Wünschen oder Verhältnissen fragen. Lösen Lose wie „Eine Familie, auf die du dich immer verlassen kannst“ oder „Gesund bleiben“ sichtbar etwas aus, nicht in der Runde darauf eingehen, sondern später ein Gespräch anbieten. Erzählt jemand von Gewalt, Zwang oder anderen Gefährdungen in der Familie, wird das nicht in der Gruppe vertieft, sondern zeitnah im Einzelgespräch aufgegriffen; nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) am selben Tag informieren."
+    },
+    {
+      "id": "j3-e04",
+      "nr": 4,
+      "jahr": 3,
+      "modul": "j3-m1",
+      "titel": "Wer bin ich – und wer will ich sein?",
+      "kurz": "Mit einem Tag voller Rollen, der Identitäts-Blume und Gesprächen im Kugellager erkunden die Jugendlichen, was alles zu ihnen gehört – und wer sie in Zukunft sein wollen.",
+      "dauer": 100,
+      "ziele": [
+        "beschreiben mit der Identitäts-Blume, was in verschiedenen Lebensbereichen zu ihnen gehört",
+        "erkennen, dass sie in verschiedenen Rollen und Sprachen unterschiedlich auftreten und trotzdem dieselbe Person bleiben",
+        "unterscheiden, was ihnen mitgegeben wurde und was sie selbst gewählt haben",
+        "formulieren in drei Sätzen, wer sie in Zukunft sein wollen"
+      ],
+      "material": [
+        "Gefühlsrad (A3, laminiert), Wäscheklammern, Plakat Anspannungsskala 0–100",
+        "Schülerblatt „Meine Identitäts-Blume“ für jede Person, Bunt- und Filzstifte",
+        "Tafel oder Flipchart für das Tafelbild „Ein Tag, viele Rollen“",
+        "Die Kategorien und Fragen aus Schritt 6 auf einem Zettel für die Leitung",
+        "Eine Klangschale oder ein anderes Signal zum Wechseln im Kugellager",
+        "Lautsprecher für Musik in der Pause",
+        "Skills-Bücher, Skills-Pässe, Stempel; Imbiss und Getränke (Allergien beachten)"
+      ],
+      "vorbereitung": [
+        "Das Tafelbild mit Aylins Tag an die Tafel schreiben (Schritt 3)",
+        "Die Fragen für das Kugellager mit Blick auf die Gruppe durchgehen und streichen, was gerade heikel ist – etwa nach einem Todesfall, einer Trennung in einer Familie oder bei Jugendlichen mit Fluchterfahrung",
+        "Den Raum so stellen, dass nach der Pause zwei Kreise Platz haben"
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-identitaets-blume",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Gefühl, Zahl und Sprache"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Von den Werten zur Identität"
+        },
+        {
+          "min": "15–25",
+          "phase": "input",
+          "titel": "Ein Tag, viele Rollen"
+        },
+        {
+          "min": "25–45",
+          "phase": "uebung",
+          "titel": "Meine Identitäts-Blume"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–80",
+          "phase": "aktiv",
+          "titel": "Findet euch nach … und Kugellager"
+        },
+        {
+          "min": "80–90",
+          "phase": "uebung",
+          "titel": "Wer will ich sein?"
+        },
+        {
+          "min": "90–95",
+          "phase": "skill",
+          "titel": "Skill: 5-4-3-2-1 in meiner Sprache"
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Réckbléck und Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: Gefühl, Zahl und Sprache",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Gefühlsrad und Anspannung wie gewohnt. Dazu eine Zusatzfrage mit einem Wort: In welcher Sprache habt ihr heute am meisten gesprochen – und in welcher denkt ihr gerade? Die Leitung beginnt, zum Beispiel: Luxemburgisch gesprochen, Deutsch gedacht, auf Französisch über den Stau geschimpft. Die Antworten zeigen schon, worum es heute geht.",
+          "sagen": [
+            "Wort, Zahl – und eure Sprache von heute: Welche habt ihr gesprochen, in welcher denkt ihr gerade?"
+          ],
+          "tipp": "Mehrsprachigkeit ist in Luxemburg normal, für viele Jugendliche aber auch ein Ort von Unsicherheit. Jede Antwort gilt, auch „nur eine“.",
+          "wennEsKippt": "Macht sich jemand über eine Sprache oder einen Akzent lustig, sofort und ruhig stoppen: Hier zählt jede Sprache gleich. Danach die Runde normal fortsetzen.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Von den Werten zur Identität",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "Kurz auf die Werte-Woche schauen: Wer mag, zeigt mit den Fingern, wie viele Sterne er gemalt hat. Dann die Brücke: Werte sind ein Teil der Antwort auf die Frage, wer ich bin – heute kommen die anderen Teile dazu. Die Frage des Tages an die Tafel: Wer bin ich – und wer will ich sein?",
+          "sagen": [
+            "Zeigt mit den Fingern: Wie viele Sterne habt ihr in der Werte-Woche gemalt? Null zählt auch.",
+            "Mit 15 oder 16 stellt sich fast jeder diese Frage. Heute nehmen wir sie ernst."
+          ]
+        },
+        {
+          "titel": "Ein Tag, viele Rollen",
+          "dauer": 10,
+          "phase": "input",
+          "text": "Das Tafelbild mit Aylins Tag zeigen und vorlesen (Tabelle). Fragen, was sich im Lauf des Tages verändert – Sprache, Ton, Kleidung, Haltung – und was gleich bleibt. Dann kurz erklären: Der Psychologe Erik Erikson hat die Suche nach der eigenen Identität als die große Aufgabe dieses Alters beschrieben. Man probiert Rollen aus, wählt, verwirft – das ist kein Durcheinander, sondern Arbeit an sich selbst.",
+          "tabelle": {
+            "spalten": [
+              "Uhrzeit",
+              "Wo?",
+              "Aylin ist …",
+              "Sprache"
+            ],
+            "zeilen": [
+              [
+                "6:45",
+                "Küche",
+                "große Schwester, die ihrem Bruder das Pausenbrot macht",
+                "Türkisch"
+              ],
+              [
+                "8:00",
+                "Lycée",
+                "Schülerin, die in Mathe lieber nichts sagt",
+                "Deutsch, Französisch"
+              ],
+              [
+                "12:15",
+                "Kantine",
+                "die Lustige in der Clique",
+                "Luxemburgisch"
+              ],
+              [
+                "16:30",
+                "Bus",
+                "die Stille mit Kopfhörern",
+                "nur Musik"
+              ],
+              [
+                "18:00",
+                "Basketballhalle",
+                "Kapitänin, die die Jüngeren anfeuert",
+                "Luxemburgisch, Portugiesisch"
+              ],
+              [
+                "21:30",
+                "Handy",
+                "Gamerin im Online-Team",
+                "Englisch"
+              ]
+            ]
+          },
+          "sagen": [
+            "Was verändert sich bei Aylin im Lauf des Tages? Und was bleibt gleich?",
+            "Ist Aylin in der Kantine echter als im Mathe-Unterricht?",
+            "Wie viele Rollen habt ihr an einem normalen Tag?"
+          ],
+          "tipp": "Die Frage, welche Aylin die echte ist, führt fast immer zur wichtigsten Einsicht: Alle sind echt. Diesen Satz an der Tafel stehen lassen."
+        },
+        {
+          "titel": "Meine Identitäts-Blume",
+          "dauer": 20,
+          "phase": "uebung",
+          "text": "Blatt austeilen. Jede Person füllt allein die Blume aus; die Blütenblätter sind Angebote, nicht Pflicht. Dann schreibt sie in Aufgabe 2, was ihr mitgegeben wurde und was sie selbst gewählt hat. Wer schneller fertig ist, beginnt mit dem eigenen Tag in Aufgabe 3. Zum Schluss erzählt jede Person einer anderen von genau einem Blütenblatt – welches, entscheidet sie selbst.",
+          "sagen": [
+            "Ihr entscheidet, was ihr hineinschreibt. Ein leeres Blütenblatt ist auch eine Antwort.",
+            "Was davon habt ihr euch ausgesucht – und was wurde euch mitgegeben?",
+            "Erzählt eurem Gegenüber von einem einzigen Blütenblatt. Ihr sucht aus, welches."
+          ],
+          "tipp": "Das Blütenblatt heißt bewusst „Menschen, die zu mir gehören“. So finden auch Jugendliche einen Platz, die nicht bei ihren Eltern leben oder Verluste erlebt haben: Dort dürfen Freunde, Betreuerinnen, ein Trainer oder ein Haustier stehen.",
+          "wennEsKippt": "Bleibt jemand vor der Blume hängen, mit leichten Blättern anfangen lassen: Was ich gern mache, Online. Reagiert jemand bei Herkunft oder Familie sichtbar belastet, nicht nachfragen, sondern anbieten, das Blatt leer zu lassen, und später ein Gespräch suchen.",
+          "blatt": "skills-identitaets-blume"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Gemeinsam essen, die Blätter liegen umgedreht auf den Tischen. Wer mag, spielt über den Lautsprecher einen Song in seiner Lieblingssprache – die Pause darf mehrsprachig klingen."
+        },
+        {
+          "titel": "Findet euch nach … und Kugellager",
+          "dauer": 20,
+          "phase": "aktiv",
+          "text": "Erster Teil, etwa 7 Minuten: Alle gehen durch den Raum. Die Leitung ruft eine Kategorie, und die Gruppe findet sich ohne Hilfe in Grüppchen zusammen; danach kurz schauen, wer mit wem steht. Zweiter Teil, etwa 13 Minuten, das Kugellager: Die Hälfte bildet einen Innenkreis mit Blick nach außen, die andere Hälfte einen Außenkreis gegenüber. Die Leitung liest eine Frage vor, jede Person hat eine Minute, dann rückt der Außenkreis einen Platz weiter. Jede Frage darf mit „weiter“ beantwortet werden.",
+          "punkte": [
+            "Findet euch nach der Sprache zusammen, in der ihr zählt.",
+            "… nach der Sprache, in der ihr flucht – nur die Sprache, nicht das Wort.",
+            "… nach eurem Lieblingsfrühstück.",
+            "… nach der Musik, die ihr gerade am meisten hört.",
+            "Kugellager: Was kannst du, das man dir nicht ansieht?",
+            "Kugellager: In welcher Sprache fühlst du dich am meisten zu Hause – und warum?",
+            "Kugellager: Welche Rolle spielst du in deiner Clique?",
+            "Kugellager: Was hast du von deiner Familie oder deinen Leuten übernommen, worauf du stolz bist?",
+            "Kugellager: Wo fühlst du dich ganz zu Hause – und wo eher fremd?",
+            "Kugellager: Was an dir soll sich in den nächsten Jahren auf keinen Fall ändern?"
+          ],
+          "sagen": [
+            "Schaut euch um: Mit wem steht ihr hier zusammen, mit dem ihr sonst nie zusammensteht?",
+            "Eine Minute für jede Person. Wer zuhört, hört nur zu – keine Kommentare, keine Ratschläge."
+          ],
+          "tipp": "Bei ungerader Zahl macht die Leitung im Kugellager mit. Bei nur zwei Jugendlichen fällt das Rotieren weg: Die Leitung stellt die Fragen, beide antworten abwechselnd. Bei wenig Energie läuft das Kugellager im Sitzen auf zwei Stuhlreihen.",
+          "wennEsKippt": "Bildet sich bei „Findet euch nach …“ immer dieselbe Clique, eine Kategorie wählen, die sie trennt, etwa den Geburtsmonat. Wird im Kugellager nur geblödelt, die Zeit auf 30 Sekunden kürzen und die nächste Frage leichter wählen; meist wird es ab der dritten Runde ernster."
+        },
+        {
+          "titel": "Wer will ich sein?",
+          "dauer": 10,
+          "phase": "uebung",
+          "text": "Kurzer Zeitsprung: Alle setzen sich, und die Leitung bittet, sich eine Minute lang vorzustellen, sie begegnen sich selbst mit 21 – wie diese Person geht, was ihr wichtig ist, worauf sie stolz ist. Augen offen oder zu, wie jede Person mag. Dann schreiben alle Aufgabe 4: was bleiben soll, was wachsen soll und was für ein Mensch sie mit 21 sein wollen. Niemand liest vor; wer mag, sagt einer Person seiner Wahl einen Satz. Wer einen Satz behalten möchte, schreibt ihn ins Skills-Buch unter „Sätze, die tragen“.",
+          "sagen": [
+            "Stellt euch vor, ihr begegnet euch selbst mit 21. Wie geht diese Person? Was ist ihr wichtig? Worauf ist sie stolz?",
+            "Schreibt es auf, bevor es verfliegt. Niemand liest es vor."
+          ],
+          "tipp": "Wer sich die eigene Zukunft nicht vorstellen kann oder will, denkt an einen Menschen, der so ist, wie er gern wäre, und schreibt auf, was ihn an diesem Menschen beeindruckt.",
+          "wennEsKippt": "Sagt jemand „Ich hab keine Zukunft“ oder „Ich werd eh nicht 21“, das weder übergehen noch in der Gruppe vertiefen: ruhig sagen, dass die Leitung nach der Einheit kurz mit ihm sprechen möchte, und das Gespräch am selben Tag führen.",
+          "blatt": "skills-identitaets-blume"
+        },
+        {
+          "titel": "Skill: 5-4-3-2-1 in meiner Sprache",
+          "dauer": 5,
+          "phase": "skill",
+          "text": "Im Sitzen. Jede Person wählt still eine Sprache: die, in der sie sich am meisten zu Hause fühlt, oder eine, die sie gerade lernt. Die Leitung leitet langsam an, und alle benennen innerlich in ihrer Sprache fünf Dinge, die sie sehen, vier, die sie hören, drei, die sie spüren, zwei, die sie riechen, und eins, das sie schmecken. Danach kurz fragen, in welcher Sprache gezählt wurde. Zum Schluss sagen: Der Skill funktioniert in jeder Sprache – und manchmal beruhigt die Sprache selbst.",
+          "sagen": [
+            "Wählt eine Sprache. Und jetzt: fünf Dinge, die ihr seht – benennt sie still in eurer Sprache.",
+            "In welcher Sprache habt ihr gezählt? Hat das etwas verändert?"
+          ],
+          "tipp": "Wer mag, sagt am Ende ein Wort aus seiner Übung laut in seiner Sprache. So entsteht ein kleiner Sprachenkreis, der die Einheit ruhig abschließt."
+        },
+        {
+          "titel": "Réckbléck und Skills-Pass",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Réckbléck mit Koffer und Papierkorb: Was nehme ich heute mit, was lasse ich hier? Je ein Satz, freiwillig. Dann Eintrag in den Skills-Pass und Stempel. Die Blumen kommen ins Skills-Buch und werden im Inhalt auf Seite 1 eingetragen.",
+          "sagen": [
+            "Koffer: Was nehmt ihr mit? Papierkorb: Was lasst ihr hier?",
+            "Für den Pass: ein Blütenblatt, auf das ihr stolz seid – oder ein Satz von eurem Ich mit 21."
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Nächstes Mal geht es um die Menschen, an denen ihr euch orientiert: Vorbilder – echte und solche, die nur auf dem Bildschirm gut aussehen.",
+      "hintergrund": "Erikson (1968) beschreibt die Suche nach Identität als zentrale Entwicklungsaufgabe des Jugendalters: Rollen ausprobieren, Werte prüfen, sich nach und nach binden. Marcia (1966) unterscheidet, ob Jugendliche Überzeugungen ungeprüft übernehmen oder nach eigenem Erkunden wählen – daher die Frage „gegeben oder gewählt?“. Harter (2012) zeigt, dass sich Jugendliche je nach Umfeld deutlich unterschiedlich beschreiben und dass diese Widersprüche in der mittleren Jugend besonders belasten; Aylins Tag und die Blume entlasten: Alle Rollen sind echt. Mehrere Sprachen gehören für viele Jugendliche in Luxemburg selbstverständlich dazu, und welche Sprache wann passt, ist mit Gefühlen und Zugehörigkeit verbunden (Busch, 2012); Übungen zu vielfältigen Zugehörigkeiten sind in der Menschenrechtsbildung verbreitet (Council of Europe, 2012). Der Zeitsprung arbeitet mit „möglichen Selbsten“: Bilder davon, wer man werden könnte, geben dem Handeln eine Richtung (Markus & Nurius, 1986).",
+      "quellen": [
+        "Erikson, E. H. (1968). Identity: Youth and Crisis. New York: Norton.",
+        "Marcia, J. E. (1966). Development and validation of ego-identity status. Journal of Personality and Social Psychology, 3(5), 551–558.",
+        "Harter, S. (2012). The Construction of the Self (2nd ed.). New York: Guilford.",
+        "Busch, B. (2012). The linguistic repertoire revisited. Applied Linguistics, 33(5), 503–523.",
+        "Council of Europe (2012). Compass: Manual for Human Rights Education with Young People (2nd ed.). Strasbourg: Council of Europe Publishing.",
+        "Markus, H. & Nurius, P. (1986). Possible selves. American Psychologist, 41(9), 954–969."
+      ],
+      "achtung": "Identität berührt Herkunft, Familie, Migration, Glauben und manchmal auch Geschlecht und sexuelle Orientierung. Niemand muss ein Blütenblatt ausfüllen oder erzählen, was darin steht; „Menschen, die zu mir gehören“ lässt Raum für alle Familienformen. Abwertende Bemerkungen über Sprache, Herkunft, Religion oder Identität sofort stoppen. Der Zeitsprung kann bei Jugendlichen ohne Zukunftsbild Angst oder Leere auslösen: Augen offen ist immer erlaubt, wer danach aufgewühlt wirkt, bekommt ein Gespräch. Äußert jemand Hoffnungslosigkeit oder Gedanken, nicht mehr leben zu wollen, am selben Tag das Einzelgespräch führen, nichts versprechen, was nicht zu halten ist, nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) informieren; bei akuter Gefahr die Person nicht allein lassen und den Notruf 112 wählen."
+    },
+    {
+      "id": "j3-e05",
+      "nr": 5,
+      "jahr": 3,
+      "modul": "j3-m1",
+      "titel": "Vorbilder",
+      "kurz": "Die Gruppe schaut, wer sie prägt, prüft Vorbilder aus dem Netz mit einem Vorbild-Check, erlebt im Spiel, wie schnell man nachmacht, und schreibt als Älteste im Kurs Post für Jüngere.",
+      "dauer": 100,
+      "ziele": [
+        "ordnen Menschen, die sie prägen, nach Nähe und benennen, was sie sich bei ihnen abschauen",
+        "prüfen inszenierte Vorbilder mit sechs Fragen und erkennen, was Beiträge verschweigen und verkaufen",
+        "erleben im Spiel, wie schnell Menschen nachmachen, und übertragen das auf Clique und Feed",
+        "legen fest, wofür sie selbst Vorbild sein wollen, und schreiben eine Karte für Jüngere"
+      ],
+      "material": [
+        "Gefühlsrad (A3, laminiert), Wäscheklammern, Plakat Anspannungsskala 0–100",
+        "Schülerblatt „Vorbilder – echt oder inszeniert?“ für jede Person",
+        "Die vier Profilkarten aus Schritt 4, groß ausgedruckt oder auf Karteikarten geschrieben",
+        "Postkarten oder feste Karteikarten (A6), gute Stifte, ein Umschlag für die Post an die Jüngeren",
+        "Skills-Bücher und für jede Person eine neue Rubrikenseite (Seite 2 von „Mein Skills-Buch“)",
+        "Skills-Pässe, Stempel; Imbiss und Getränke (Allergien beachten)"
+      ],
+      "vorbereitung": [
+        "Mit der Leitung einer Jahr-1-Gruppe des Skills-Kurses oder einer anderen jüngeren Gruppe im Haus absprechen, dass die Karten der Jugendlichen dort ankommen dürfen; gibt es keine, gehen sie an Neue im Kurs",
+        "Die vier Profilkarten vorbereiten (Schritt 4)",
+        "Platz für einen Kreis im Stehen schaffen"
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-vorbilder",
+        "skills-buch",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Wer hat dir etwas vorgemacht?"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Von der Identität zu den Vorbildern"
+        },
+        {
+          "min": "15–28",
+          "phase": "uebung",
+          "titel": "Wer prägt mich? Die Vorbild-Kreise"
+        },
+        {
+          "min": "28–45",
+          "phase": "uebung",
+          "titel": "Echt oder inszeniert? Der Vorbild-Check"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–75",
+          "phase": "aktiv",
+          "titel": "Wer gibt den Takt an?"
+        },
+        {
+          "min": "75–85",
+          "phase": "uebung",
+          "titel": "Selbst Vorbild sein: Post für die Jüngeren"
+        },
+        {
+          "min": "85–90",
+          "phase": "skill",
+          "titel": "Skill: Die innere Mentorin"
+        },
+        {
+          "min": "90–100",
+          "phase": "abschluss",
+          "titel": "Modulabschluss: Skills-Buch, Réckbléck, Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: Wer hat dir etwas vorgemacht?",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Gefühlsrad und Anspannung wie gewohnt. Zusatzfrage, freiwillig: Wer hat euch diese Woche etwas vorgemacht, das ihr gut fandet – im echten Leben oder auf dem Bildschirm? Ein Stichwort reicht, Namen sind nicht nötig. Die Leitung beginnt mit einem eigenen Beispiel, etwa dem Busfahrer, der bei einem pöbelnden Fahrgast ruhig geblieben ist.",
+          "sagen": [
+            "Wort, Zahl – und wer hat euch diese Woche etwas vorgemacht, das ihr gut fandet?",
+            "Das kann jemand aus dem Bus sein oder aus einem Video. Ein Stichwort reicht."
+          ],
+          "tipp": "Die Antworten sammeln, ohne sie zu bewerten – ein Fußballprofi zählt genauso wie die große Schwester. Die Unterschiede werden später Thema.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Von der Identität zu den Vorbildern",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "An die Identitäts-Blume anknüpfen: Wer man sein will, erfindet man selten allein – man schaut es sich bei anderen ab. Die Frage des Tages an die Tafel: Wer prägt mich – und wen präge ich? Klarstellen, dass heute niemand für sein Vorbild ausgelacht wird, auch nicht für eines aus dem Netz.",
+          "sagen": [
+            "Letzte Woche ging es darum, wer ihr sein wollt. Heute geht es darum, bei wem ihr euch das abschaut.",
+            "Jedes Vorbild ist heute erlaubt. Wir schauen nur genauer hin."
+          ]
+        },
+        {
+          "titel": "Wer prägt mich? Die Vorbild-Kreise",
+          "dauer": 13,
+          "phase": "uebung",
+          "text": "Blatt austeilen. Jede Person schreibt in die drei Ringe Menschen, die sie prägen: innen, wen sie persönlich kennt, in der Mitte, wen sie vom Sehen kennt, außen, wen sie nur aus Medien kennt; Initialen oder Spitznamen reichen. Dann Aufgabe 2: Was schaue ich mir bei zwei dieser Menschen ab? Zum Schluss eine Runde, in der nur gesagt wird, in welchem Ring die meisten Namen stehen.",
+          "sagen": [
+            "Vorbild heißt nicht perfekt. Es reicht, wenn ihr euch bei jemandem eine Sache abschaut.",
+            "Wo stehen die meisten Namen – innen oder außen? Ihr müsst keine Namen sagen, nur den Ring."
+          ],
+          "tipp": "Die Leitung erzählt von einem eigenen Vorbild aus dem inneren Ring, etwa einer früheren Trainerin, und was sie sich bis heute bei ihr abschaut. Das macht aus dem Wort „Vorbild“ etwas Greifbares.",
+          "wennEsKippt": "Fällt jemandem niemand ein, die Frage verkleinern: Von wem hast du etwas gelernt, das du heute noch machst – kochen, ein Trick beim Fußball, wie man sich entschuldigt? Bleibt der innere Ring leer, das nicht in der Gruppe kommentieren.",
+          "blatt": "skills-vorbilder"
+        },
+        {
+          "titel": "Echt oder inszeniert? Der Vorbild-Check",
+          "dauer": 17,
+          "phase": "uebung",
+          "text": "Die sechs Fragen des Vorbild-Checks an der Tafel kurz erklären. Zu zweit oder zu dritt bekommt jede Gruppe eine der vier erfundenen Profilkarten (Liste) und prüft sie mit den Fragen: Was sehen wir, was nicht, wer verdient woran? Jede Gruppe stellt ihr Ergebnis in zwei Sätzen vor. Danach prüft jede Person still ein eigenes Vorbild aus dem äußeren Ring mit Aufgabe 3 und schreibt ihr Fazit in Aufgabe 4.",
+          "punkte": [
+            "Profil 1 – Fitness-Account „Jeden Tag stärker“: 800 000 Follower, jeden Morgen um 5 Uhr Training und grüne Smoothies, in jeder Story ein Rabattcode für Proteinpulver.",
+            "Profil 2 – ein Gaming-Streamer: spielt jeden Abend sechs Stunden live, ist schlagfertig und witzig, beleidigt ab und zu Zuschauer, bittet um Spenden.",
+            "Profil 3 – Account „Mit 19 reich“: Sportwagen, Hotelpools, Sprüche über Erfolg; wer seinen Kurs für 499 Euro kauft, soll auch reich werden.",
+            "Profil 4 – eine Umweltaktivistin aus Luxemburg: filmt Müllsammelaktionen und Demos, erklärt Zahlen, sagt auch mal, dass sie keine Lust mehr hat und zweifelt."
+          ],
+          "sagen": [
+            "Was seht ihr – und was seht ihr nicht? Wer verdient woran, dass ihr zuschaut?",
+            "Ist inszeniert automatisch schlecht? Welches der vier Profile könnte trotzdem ein gutes Vorbild sein?"
+          ],
+          "tipp": "Nicht gegen die Stars der Jugendlichen argumentieren. Die Frage „Was davon willst du dir abschauen – und was nicht?“ bringt mehr als jede Kritik an einer Person.",
+          "wennEsKippt": "Verteidigt jemand sein Idol heftig, das ernst nehmen: Es geht nicht darum, jemanden schlechtzumachen, sondern um das, was man sieht und was nicht. Wird über echte Personen gelästert, auf die Profilkarten zurückführen.",
+          "blatt": "skills-vorbilder"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Gemeinsam essen, das Thema ruht. Die Leitung legt schon die Postkarten und Stifte auf einen Tisch."
+        },
+        {
+          "titel": "Wer gibt den Takt an?",
+          "dauer": 15,
+          "phase": "aktiv",
+          "text": "Alle stehen im Kreis. Eine Person geht kurz vor die Tür – sie ist Detektivin oder Detektiv. Die Gruppe bestimmt leise eine Person, die den Takt angibt: Sie macht Bewegungen vor – klatschen, stampfen, Schultern kreisen –, und alle machen sofort mit, ohne sie anzustarren. Die Detektivin kommt herein, stellt sich in die Mitte und hat drei Versuche, die Taktgeberin zu finden. Drei bis vier Runden mit wechselnden Rollen, dann im Kreis auswerten.",
+          "sagen": [
+            "Wie habt ihr gemerkt, wem ihr folgen müsst – und wie schnell ging das?",
+            "Wo im Alltag macht ihr nach, ohne es zu merken? In der Clique, im Chat, im Feed?",
+            "Wer gibt bei euch den Takt an – und habt ihr das selbst entschieden?"
+          ],
+          "tipp": "Die erste Runde als Taktgeberin übernimmt die Leitung und wechselt die Bewegungen langsam. Bei wenig Energie geht das Spiel im Sitzen, nur mit Händen und Oberkörper. Bei nur zwei Jugendlichen: Spiegeln aus dem Methoden-Pool – erst führt eine Person, dann die andere, zum Schluss führt niemand, und beide versuchen trotzdem, gleich zu bleiben.",
+          "wennEsKippt": "Macht die Taktgeberin Bewegungen, die jemanden bloßstellen, sofort unterbrechen und die Regel ansagen: Nur Bewegungen, die alle gern mitmachen. Wer nicht in die Mitte will, bleibt im Kreis und wird nie Detektiv."
+        },
+        {
+          "titel": "Selbst Vorbild sein: Post für die Jüngeren",
+          "dauer": 10,
+          "phase": "uebung",
+          "text": "Kurz sammeln: Für wen seid ihr ein Vorbild – ob ihr wollt oder nicht? Geschwister, Cousins, Jüngere im Verein, im Bus, Neue im Kurs. Dann füllt jede Person Aufgabe 5 aus, schreibt in Aufgabe 6 einen Entwurf und danach ihre Karte an jemanden, der gerade im ersten Kursjahr anfängt: einen Tipp, einen Skill oder einen Satz, den man mit 12 gebraucht hätte. Unterschrieben wird nur mit Vornamen oder gar nicht. Die Leitung liest die Karten, bevor sie weitergegeben werden.",
+          "sagen": [
+            "Was hättet ihr mit 12 gern von jemandem gehört, der drei Jahre weiter ist?",
+            "Schreibt so, dass ein Zwölfjähriger es versteht – und dass er es euch glaubt."
+          ],
+          "tipp": "Die Karten wirklich überbringen. Zu wissen, dass ein Jüngerer sie liest, macht aus der Übung einen echten Vorbild-Moment.",
+          "wennEsKippt": "Schreibt jemand nur Witze oder „Geht bloß nicht in diesen Kurs“, nicht schimpfen, sondern fragen: Was hat dir hier wirklich geholfen? Karten mit Verletzendem gehen nicht raus – das offen sagen.",
+          "blatt": "skills-vorbilder"
+        },
+        {
+          "titel": "Skill: Die innere Mentorin",
+          "dauer": 5,
+          "phase": "skill",
+          "text": "Im Sitzen, Augen offen oder geschlossen. Die Leitung leitet langsam an (Liste): an eine Situation denken, die bald kommt und etwas Bauchweh macht, und einen Menschen aus dem inneren Ring neben sich stellen. Was würde diese Person jetzt sagen – und in welchem Ton? Danach erklären: Wer eine Lage mit den Augen eines anderen anschaut, bekommt Abstand. Das ist ein Skill für Momente, in denen man festhängt.",
+          "punkte": [
+            "Denk an eine Situation, die bald kommt und dir etwas Bauchweh macht – eine Prüfung, ein Gespräch, ein Training.",
+            "Stell dir vor, ein Mensch aus deinem inneren Ring steht neben dir.",
+            "Was würde diese Person dir sagen? In welchem Ton?",
+            "Atme dreimal ruhig. Nimm den Satz mit – er gehört jetzt dir."
+          ],
+          "tipp": "Wem kein echter Mensch einfällt, darf eine Figur aus einem Buch, einem Film oder einer Serie nehmen. Wichtig ist nur, dass die Stimme freundlich ist.",
+          "wennEsKippt": "Wird jemand bei der Vorstellung traurig, weil ihm ein Mensch fehlt, das nicht in der Runde aufgreifen, sondern nach der Einheit kurz nachfragen."
+        },
+        {
+          "titel": "Modulabschluss: Skills-Buch, Réckbléck, Pass",
+          "dauer": 10,
+          "phase": "abschluss",
+          "text": "Das Modul Werte und Identität endet. Jede Person bekommt eine neue Rubrikenseite für ihr Skills-Buch und füllt sie aus – etwa den Werte-Satz unter „Sätze, die tragen“, den Satz der inneren Mentorin und einen Menschen aus dem inneren Ring unter „Menschen, die helfen“. Nicht jede Rubrik muss voll werden. Dann ein Blitzlicht mit einem Wort zum Modul, der Eintrag in den Skills-Pass und der Stempel.",
+          "sagen": [
+            "Was aus diesen drei Wochen soll in fünf Jahren noch in eurem Buch stehen?",
+            "Ein Wort zum Modul Werte und Identität."
+          ],
+          "tipp": "Wer die Rubrikenseite schnell füllt, heftet auch Wertekarten, Blume und Vorbild-Blatt ein und trägt sie im Inhalt auf Seite 1 ein.",
+          "blatt": "skills-buch"
+        }
+      ],
+      "bruecke": "Ihr wisst jetzt, was euch wichtig ist, wer ihr seid und von wem ihr lernt. Im nächsten Modul geht es darum, wie man daraus gute Entscheidungen macht – auch dann, wenn es riskant wird.",
+      "hintergrund": "Jugendliche lernen viel durch Beobachtung: Wer sieht, wie eine ähnliche Person eine Aufgabe bewältigt, traut sie sich eher selbst zu – Bandura (1977) nennt diese stellvertretende Erfahrung eine Quelle von Selbstwirksamkeit. Schutzfaktoren für eine gute Entwicklung sind oft alltäglich, allen voran verlässliche Beziehungen zu kompetenten Erwachsenen (Masten, 2014); in der Kauai-Studie hatten widerstandsfähige Jugendliche häufig eine Bezugsperson außerhalb der Familie, etwa eine Lehrerin oder einen Nachbarn (Werner & Smith, 1992). Vorbilder aus sozialen Medien zeigen dagegen eine Auswahl, und Vergleiche mit idealisierten Beiträgen können Stimmung und Selbstbild drücken (Fardouly et al., 2015). Der Vorbild-Check setzt deshalb nicht auf Verbote, sondern auf genaues Hinschauen. Die Karte für Jüngere macht die Jugendlichen selbst zu Vorbildern – eine Rolle, die im letzten Kursjahr gut passt.",
+      "quellen": [
+        "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
+        "Masten, A. S. (2014). Ordinary Magic: Resilience in Development. New York: Guilford.",
+        "Werner, E. E. & Smith, R. S. (1992). Overcoming the Odds. Ithaca: Cornell University Press.",
+        "Fardouly, J., Diedrichs, P. C., Vartanian, L. R. & Halliwell, E. (2015). Social comparisons on social media: The impact of Facebook on young women’s body image concerns and mood. Body Image, 13, 38–45."
+      ],
+      "achtung": "Die Frage nach Vorbildern kann schmerzen, wenn wichtige Erwachsene fehlen oder enttäuscht haben; ein leerer innerer Ring wird nicht in der Gruppe angesprochen, sondern später unter vier Augen. Vorbilder der Jugendlichen nicht lächerlich machen, über echte Personen nicht lästern lassen. Folgt jemand Accounts, die zu Gewalt, Hass, extremen Diäten oder Glücksspiel aufrufen, oder wird jemand online von Erwachsenen umworben oder unter Druck gesetzt, nach der Einheit das Gespräch suchen, auf die BEE SECURE Helpline hinweisen und die zuständige Leitung (Responsable) informieren; bei Hinweisen auf Gefährdung nach dem internen Schutzkonzept handeln. Die Karten an Jüngere vor dem Weitergeben lesen."
+    }
+  ]
+}

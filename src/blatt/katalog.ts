@@ -87,7 +87,7 @@ export const BEREICHE: BereichDef[] = [
     fr: 'Cours de compétences',
     icon: 'stairs',
     farben: { tief: '#6E4A7E', mittel: '#D6C6DE', zart: '#F4EFF7' },
-    beschreibung: 'Schülerblätter zum Skills-Kurs für Jugendliche: Gruppe, Ich, Gefühle, Skills, Gedanken, Kommunikation, schwierige Situationen, digitale Welt, Gesundheit.',
+    beschreibung: 'Schülerblätter zum Skills-Kurs für Jugendliche (drei Kursjahre): Gruppe, Ich, Gefühle, Skills, Gedanken, Kommunikation, Stress und Schule, Wut, Freundschaft und Familie, Vielfalt, digitale Welt, Liebe und Einvernehmlichkeit, Alkohol und Cannabis, Gesundheit, Krisen, Werte, Zukunft, Mitbestimmung.',
   },
 ]
 
@@ -167,6 +167,8 @@ export const THEMEN: ThemaDef[] = [
   T('skills', 'zukunft', 'Zukunft & Selbstständigkeit', 'Avenir et autonomie'),
   T('skills', 'resilienz', 'Schwere Gefühle & Resilienz', 'Émotions difficiles et résilience'),
   T('skills', 'mitbestimmung', 'Meinung & Mitbestimmung', 'Opinion et participation'),
+  T('skills', 'liebe', 'Liebe, Sexualität & Einvernehmlichkeit', 'Amour, sexualité et consentement'),
+  T('skills', 'risiko', 'Alkohol, Vapes & Cannabis', 'Alcool, vapoteuses et cannabis'),
   T('skills', 'abschluss', 'Rückblick & Abschluss', 'Bilan et clôture'),
 ]
 

@@ -1,0 +1,795 @@
+{
+  "einheiten": [
+    {
+      "id": "j3-e21",
+      "nr": 21,
+      "jahr": 3,
+      "modul": "j3-m6",
+      "titel": "Was mich stark macht",
+      "kurz": "Was hilft Menschen durch schwere Zeiten? Die Gruppe hört, was die Resilienzforschung herausgefunden hat, entdeckt Kraftquellen in Geschichten von Jugendlichen und sammelt ihre eigenen.",
+      "dauer": 100,
+      "ziele": [
+        "erklären in eigenen Worten, was Resilienz ist und dass sie aus gewöhnlichen Kraftquellen wächst, nicht aus angeborener Härte",
+        "finden in Fallgeschichten heraus, welche Menschen, Stärken und Fähigkeiten Jugendlichen durch eine schwere Zeit geholfen haben",
+        "erleben im Balance-Experiment, wie viel schon eine kleine Stütze ausmacht",
+        "halten ihre eigenen Kraftquellen fest und planen, eine davon in der kommenden Woche bewusst zu nutzen"
+      ],
+      "material": [
+        "Gefühlsrad (A3, laminiert), Wäscheklammern, Anspannungsskala 0–100, Zettel für Zahlen, die jemand nicht laut sagen möchte",
+        "Die im Team vorbesprochenen Antworten auf die Fragen aus der Fragenbox von Einheit 20",
+        "Einige Karten mit den Hilfenummern aus Einheit 20 zum Nachnehmen",
+        "Ein Schaumstoffball oder Schwamm und eine Kugel Knete",
+        "Schülerblätter „Geschichten von Widerstandskraft“ und „Meine Kraftquellen“ für jede Person, Textmarker",
+        "Vier Plakate (A3) mit den Überschriften Menschen, Orte, Tun, Ich selbst; Haftnotizen, dicke Stifte, Kreppband",
+        "Klebepunkte, drei je Person",
+        "Stoppuhr oder Handy mit Timer, Lautsprecher für leise Musik",
+        "Skills-Pässe, Stempel, Imbiss und Getränke"
+      ],
+      "vorbereitung": [
+        "Die vier Plakate an der gegenüberliegenden Wand oder im Hof aufhängen, Haftnotizen und Stifte an zwei Startpunkte legen. Bei Regen: Flur oder Turnhalle.",
+        "Die vier Geschichten lesen und prüfen, ob eine davon einer aktuellen Lage in der Gruppe zu nahe kommt, etwa eine Krankheit in der Familie; dann nur drei verwenden.",
+        "Die Fragen aus der Fragenbox von Einheit 20 im Team sichten und kurze, sachliche Antworten abstimmen – ohne Methoden, Mittel oder Einzelheiten, wie in Einheit 20. Fragen, die nach einer Notlage klingen, werden nicht in der Gruppe beantwortet, sondern sofort nach dem Vorgehen im Kasten „Achtung“ aufgegriffen.",
+        "Klären, ob alle, die in Einheit 20 ein Kärtchen mit „Ich möchte reden“ eingeworfen haben oder deutlich angespannter gegangen sind, ihr Nachgespräch hatten; offene Gespräche möglichst vor dieser Einheit führen.",
+        "Für das Balance-Experiment eine freie Wand oder stabile Stuhllehnen einplanen, mit genug Abstand zwischen den Personen."
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-widerstandskraft",
+        "skills-kraftquellen",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Wie geht es euch nach der letzten Einheit?"
+        },
+        {
+          "min": "10–16",
+          "phase": "bruecke",
+          "titel": "Antworten aus der Fragenbox"
+        },
+        {
+          "min": "16–20",
+          "phase": "bruecke",
+          "titel": "Vom Sicherheitsplan zur Kraft: Was ist Resilienz?"
+        },
+        {
+          "min": "20–30",
+          "phase": "input",
+          "titel": "Die Kinder von Kauai"
+        },
+        {
+          "min": "30–50",
+          "phase": "uebung",
+          "titel": "Geschichten von Widerstandskraft"
+        },
+        {
+          "min": "50–65",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "65–80",
+          "phase": "aktiv",
+          "titel": "Ein Finger reicht – und die Kraftquellen-Staffel"
+        },
+        {
+          "min": "80–90",
+          "phase": "uebung",
+          "titel": "Meine Kraftquellen"
+        },
+        {
+          "min": "90–95",
+          "phase": "skill",
+          "titel": "Skill: mein Kraft-Moment"
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Réckbléck und Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: Wie geht es euch nach der letzten Einheit?",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Behutsam beginnen: Die Leitung fragt ruhig, wie es allen nach der letzten Einheit zum Sicherheitsplan geht. Ein Wort reicht, „weiter“ ist erlaubt; nicht nachfragen und nichts deuten. Dann Gefühlsrad und Anspannung von 0 bis 100 wie gewohnt, die Leitung beginnt. Wer die Zahl nicht laut sagen möchte, schreibt sie wie in Einheit 20 auf einen Zettel für die Leitung. Wer mehr erzählen möchte, bekommt ein Gespräch nach der Einheit.",
+          "sagen": [
+            "Wie geht es euch nach der letzten Einheit? Ein Wort reicht, und „weiter“ ist auch eine Antwort.",
+            "Bei mir 25. Ich habe unter der Woche noch ein paarmal an unser letztes Treffen gedacht.",
+            "Gefühl und Zahl wie immer. Wer die Zahl lieber nicht laut sagt, schreibt sie mir auf einen Zettel."
+          ],
+          "tipp": "Ehrlich, aber im Rahmen: Wenn die Leitung sagt, dass auch sie das letzte Thema beschäftigt hat, erleben die Jugendlichen Nachklingen als etwas Normales.",
+          "wennEsKippt": "Nennt jemand eine hohe Zahl oder wirkt deutlich belastet, das kurz würdigen, ohne in der Runde nachzufragen, und in der Pause oder direkt nach der Einheit das Gespräch suchen. Bei Hinweisen auf eine akute Krise gilt das Vorgehen aus dem Kasten „Achtung“.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Antworten aus der Fragenbox",
+          "dauer": 6,
+          "phase": "bruecke",
+          "text": "Die im Team vorbesprochenen Antworten auf die Fragen aus der Box von Einheit 20 geben: jede Frage vorlesen oder ähnliche zusammenfassen und kurz, ruhig und sachlich antworten. Nie andeuten, von wem eine Frage stammen könnte. Es gelten dieselben Grenzen wie in Einheit 20: keine Methoden, Mittel oder Einzelheiten, keine Fälle aus Medien oder Umfeld. Fragen, die nach einer Notlage klingen, werden hier nicht beantwortet – sie wurden bereits nach dem Vorgehen im Kasten „Achtung“ aufgegriffen, und die Gruppe hört nur allgemein, wo es Hilfe gibt. Zum Schluss auf die Karten mit den Hilfenummern verweisen, Ersatzkarten anbieten und sagen, wann die Leitung nach der Einheit für Gespräche da ist.",
+          "sagen": [
+            "Danke für eure Fragen. Ich beantworte sie so, dass niemand erkennen kann, von wem sie sind.",
+            "Manche Fragen beantworte ich lieber einzeln. Wer mag, kommt nachher kurz zu mir – oder nutzt die Nummern auf der Karte vom letzten Mal."
+          ],
+          "tipp": "Die Antworten vorher im Team aufschreiben und bei schwierigen Fragen die Responsable oder den SePAS einbeziehen. Weiß die Leitung etwas nicht sicher, sagt sie das und bringt die Antwort nächstes Mal mit.",
+          "wennEsKippt": "Rätselt die Gruppe, von wem eine Frage stammt, freundlich und klar stoppen: Hier wird nicht geraten. Wird es still und schwer, einmal gemeinsam lang ausatmen und ankündigen, dass es jetzt um das geht, was Menschen stark macht. Wer aufgewühlt wirkt, bekommt in der Pause ein Gesprächsangebot."
+        },
+        {
+          "titel": "Vom Sicherheitsplan zur Kraft: Was ist Resilienz?",
+          "dauer": 4,
+          "phase": "bruecke",
+          "text": "Kurz anknüpfen: Der Sicherheitsplan ist für Notfälle, heute geht es um die Frage davor – was Menschen im Alltag stark macht. Das neue Modul „Resilienz und Hilfe“ in einem Satz vorstellen: was stark macht, wie man Hilfe holt, wie man gute Momente sammelt. Den Schaumstoffball fest zusammendrücken und loslassen, danach die Knete: Der Ball findet in seine Form zurück, die Knete nicht. Das Wort Resilienz kommt vom lateinischen resilire, zurückspringen. Gleich dazusagen, wo das Bild hinkt: Auch starke Menschen spüren Schmerz und kommen oft verändert aus einer schweren Zeit – und niemand ist Knete, denn Kraftquellen kann man dazugewinnen.",
+          "sagen": [
+            "Resilienz heißt nicht, dass einem nichts etwas ausmacht. Es heißt, dass man nach einem Schlag wieder aufsteht – manchmal langsam, manchmal mit Hilfe.",
+            "Was glaubt ihr: Ist das angeboren, oder kann man daran etwas tun?"
+          ],
+          "tipp": "Die Frage nicht auflösen, sondern stehen lassen. Die Antwort kommt im nächsten Schritt aus der Forschung und wirkt dann stärker."
+        },
+        {
+          "titel": "Die Kinder von Kauai",
+          "dauer": 10,
+          "phase": "input",
+          "text": "Die Studie als Geschichte erzählen (Punkte). Vor der Auflösung schätzen lassen: Von zehn Kindern, die es von Anfang an schwer hatten – wie vielen ging es mit 18 Jahren gut? Alle zeigen ihre Zahl gleichzeitig mit den Fingern. Dann auflösen und an die Tafel schreiben, was den Kindern von Kauai geholfen hat (Tabelle). Zum Schluss den Kern der Forschung nennen: Widerstandskraft entsteht aus gewöhnlichen Dingen, die man finden, bekommen und üben kann.",
+          "punkte": [
+            "1955 kamen auf der hawaiianischen Insel Kauai 698 Kinder zur Welt. Ein Forschungsteam um Emmy Werner hat sie bis ins Erwachsenenalter begleitet.",
+            "Etwa jedes dritte Kind wuchs mit mehreren Belastungen auf: Armut, Streit oder Trennung der Eltern, Krankheit oder Alkohol in der Familie.",
+            "Viele dieser Kinder hatten als Jugendliche große Schwierigkeiten. Aber etwa jedes dritte von ihnen war mit 18 Jahren gut unterwegs: Schule geschafft, Freunde, Pläne.",
+            "Und von den anderen fanden viele als junge Erwachsene doch noch ihren Weg – durch eine zweite Chance: eine Ausbildung, eine Arbeit, einen Menschen, eine Gemeinschaft."
+          ],
+          "tabelle": {
+            "spalten": [
+              "Was den Kindern von Kauai geholfen hat",
+              "Wie das aussehen kann"
+            ],
+            "zeilen": [
+              [
+                "Mindestens ein Mensch, der verlässlich zu ihnen hielt",
+                "oft nicht die Eltern, sondern eine Oma, ein älterer Bruder, eine Lehrerin, ein Trainer"
+              ],
+              [
+                "Etwas, das sie gut konnten",
+                "ein Hobby oder Talent, auf das sie stolz waren"
+              ],
+              [
+                "Gebraucht werden",
+                "Verantwortung für Geschwister, eine Aufgabe im Verein oder zu Hause"
+              ],
+              [
+                "Das Gefühl: Ich kann etwas bewirken",
+                "Probleme angehen statt nur abwarten, kleine Pläne machen"
+              ],
+              [
+                "Gute Orte außerhalb der Familie",
+                "Schule, Verein, eine Gemeinschaft, in der sie willkommen waren"
+              ],
+              [
+                "Hoffnung und Sinn",
+                "Glaube, ein Ziel, etwas, wofür es sich lohnt"
+              ]
+            ]
+          },
+          "sagen": [
+            "Von zehn Kindern, die es von Anfang an schwer hatten – wie vielen ging es mit 18 gut? Zeigt es mit den Fingern, alle gleichzeitig.",
+            "Schaut euch die Liste an: Da steht nichts Übermenschliches. Das sind Dinge, die man finden, bekommen und üben kann."
+          ],
+          "tipp": "Die zweite Hälfte der Studie nicht weglassen. Dass viele erst später ihren Weg fanden, ist für Jugendliche mit schwerem Start oft die wichtigste Nachricht der ganzen Einheit.",
+          "wennEsKippt": "Sagt jemand „Dann habe ich eben Pech gehabt“, das nicht wegreden. Zustimmen, dass manche Startbedingungen unfair sind, und auf die Liste zeigen: Die meisten Punkte hängen nicht davon ab, wo man anfängt, sondern davon, wen und was man unterwegs findet."
+        },
+        {
+          "titel": "Geschichten von Widerstandskraft",
+          "dauer": 20,
+          "phase": "uebung",
+          "text": "Paare oder Dreiergruppen durch Abzählen bilden; jede Gruppe bekommt eine der vier Geschichten vom Blatt. Die Gruppe liest, markiert, was geholfen hat, und füllt ihre Zeile der Tabelle aus: Ich habe, Ich bin, Ich kann und der Wendepunkt. Nach acht Minuten stellt jede Gruppe ihre Person in einer Minute vor; die anderen ergänzen ihre Tabelle, die Leitung schreibt die Funde in drei Spalten an die Tafel. Zum Schluss gemeinsam Aufgabe 3: Was kommt in allen Geschichten vor? Aufgabe 4 bleibt privat.",
+          "sagen": [
+            "Sucht nicht nach Heldentaten. Sucht nach den kleinen Dingen, die den Unterschied gemacht haben.",
+            "Wo war der Wendepunkt – der Moment, ab dem es besser wurde?"
+          ],
+          "tipp": "Fast immer landet die Gruppe bei derselben Entdeckung wie die Forschung: In jeder Geschichte gibt es mindestens einen Menschen, der hinschaut. Diese Einsicht erst benennen, wenn die Gruppe selbst darauf kommt.",
+          "wennEsKippt": "Erkennt sich jemand in einer Geschichte wieder und wird still oder unruhig, nicht darauf ansprechen, sondern die Gruppe weiterarbeiten lassen und später unter vier Augen nachfragen. Mit nur zwei Jugendlichen zwei Geschichten wählen; die beiden anderen erzählt die Leitung kurz nach.",
+          "blatt": "skills-widerstandskraft"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Gemeinsam essen, Fenster auf oder kurz nach draußen. Das Thema ruht. Die Leitung nutzt die Pause, um beiläufig bei Jugendlichen nachzuhören, die im Check-in belastet wirkten, und bietet bei Bedarf ein Gespräch nach der Einheit an."
+        },
+        {
+          "titel": "Ein Finger reicht – und die Kraftquellen-Staffel",
+          "dauer": 15,
+          "phase": "aktiv",
+          "text": "Zuerst das Balance-Experiment, mit Abstand zueinander: Alle stehen auf einem Bein, schließen die Augen oder schauen auf einen Punkt am Boden und zählen still, wie lange sie stehen bleiben. Im zweiten Durchgang legen sie einen Finger leicht an die Wand oder an eine Stuhllehne – nur berühren, nicht abstützen – und vergleichen. Dann die Staffel in zwei Teams: Nacheinander läuft jede Person zu den vier Plakaten, schreibt eine Kraftquelle auf eine Haftnotiz, klebt sie auf das passende Plakat und läuft zurück; nach vier Minuten wird gezählt, Doppelte zählen nicht. Zum Schluss gehen alle an den Plakaten entlang und kleben drei Punkte auf Kraftquellen, die sie haben oder ausprobieren wollen.",
+          "sagen": [
+            "Ein Bein, Augen zu. Und jetzt nur einen Finger an die Wand – nicht drücken, nur berühren. Merkt ihr den Unterschied?",
+            "Auf Kauai hat oft ein einziger Mensch gereicht. Ein Finger ist nicht viel, aber er verändert das ganze Gleichgewicht.",
+            "Alles zählt: das Lieblingslied, der Hund, die Bank am Fluss, der eigene Dickkopf."
+          ],
+          "tipp": "Der Effekt überrascht fast alle: Schon die leichte Berührung gibt dem Gleichgewicht eine zusätzliche Rückmeldung, und man schwankt viel weniger. Genau so wirken Kraftquellen – sie tragen einen nicht, aber sie geben Halt.",
+          "wennEsKippt": "Wird die Staffel zum reinen Wettrennen mit Scherzzetteln, das Tempo herausnehmen: Jede Notiz wird beim Aufkleben laut vorgelesen. Bei Regen oder wenig Platz läuft die Staffel im Flur; bei wenig Energie wandern die Plakate im Sitzkreis, und jede Person ergänzt eine Notiz. Wer nicht sicher auf einem Bein steht, stellt die Füße eng hintereinander oder stoppt die Zeit."
+        },
+        {
+          "titel": "Meine Kraftquellen",
+          "dauer": 10,
+          "phase": "uebung",
+          "text": "Zurück an die Plätze, leise Musik. Jede Person füllt allein das Blatt „Meine Kraftquellen“ aus: die vier Felder, die Frage nach einer schweren Zeit, die hinter ihr liegt, die Einschätzung und zum Schluss eine Kraftquelle für die kommende Woche als Wenn-dann-Satz. Die Plakate bleiben hängen und dürfen als Ideenbank genutzt werden. Niemand liest vor; das Blatt kommt in die Mappe, weil es nächstes Mal wieder gebraucht wird.",
+          "sagen": [
+            "Was auf den Plakaten steht, darf auf euer Blatt wandern. Ideen klauen ist heute ausdrücklich erlaubt.",
+            "Die Frage nach der schweren Zeit ist nur für euch. Stichworte oder Zeichen, die nur ihr versteht, reichen."
+          ],
+          "tipp": "Wer bei „Menschen“ nichts einträgt, schreibt oft Tiere, Musik oder Orte – das gelten lassen. Ein leeres Menschen-Feld ist trotzdem ein Anlass für ein Einzelgespräch vor der nächsten Einheit.",
+          "wennEsKippt": "Findet jemand gar nichts und wird frustriert, klein anfangen: Was hat dir heute Morgen geholfen aufzustehen? Was machst du, wenn du dich über etwas freust? Aus der Antwort wird die erste Kraftquelle.",
+          "blatt": "skills-kraftquellen"
+        },
+        {
+          "titel": "Skill: mein Kraft-Moment",
+          "dauer": 5,
+          "phase": "skill",
+          "text": "Eine kurze Ressourcen-Übung im Sitzen, Augen offen oder geschlossen. Langsam anleiten (Punkte) und zwischen den Sätzen Zeit lassen. Danach erklären: Die Geste ist ein Anker; wer sie in ruhigen Momenten oft mit dem Kraft-Moment verbindet, kann ihn in schweren Momenten leichter abrufen. Wer mag, sagt ein Wort zu seinem Moment – nicht, was es war.",
+          "punkte": [
+            "Setz dich bequem hin, beide Füße auf dem Boden. Ein ruhiger Atemzug.",
+            "Denk an einen Moment, in dem du etwas geschafft oder dich stark gefühlt hast. Er darf klein sein: ein Tor, eine gute Antwort, ein Tag, den du durchgehalten hast.",
+            "Wo warst du? Was hast du gesehen, gehört? Wer war dabei?",
+            "Wie hat sich dein Körper angefühlt – die Haltung, der Atem, die Schultern?",
+            "Gib dem Moment ein Wort. Nur für dich.",
+            "Drück jetzt Daumen und Zeigefinger zusammen und spür das Gefühl noch einmal. Dann lös die Finger, atme aus und komm zurück in den Raum."
+          ],
+          "sagen": [
+            "Wenn gerade kein Moment kommt, nimm einen aus den Geschichten von heute oder denk an jemanden, der dir etwas zutraut."
+          ],
+          "tipp": "Der Anker braucht Übung: in den nächsten Tagen ein paarmal in ruhigen Momenten wiederholen, damit er in schweren wirkt.",
+          "wennEsKippt": "Holt eine Erinnerung jemanden in etwas Schweres, darf die Person die Augen öffnen und nur Finger und Atem spüren. Das anschließend kurz und freundlich ansprechen, ohne nachzufragen, was los war."
+        },
+        {
+          "titel": "Réckbléck und Skills-Pass",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Blitzlicht: Jede Person nennt eine Kraftquelle von den Plakaten, die sie überrascht hat, oder sagt „weiter“. Eintrag in den Skills-Pass mit Stempel, zum Beispiel die Kraftquelle für die kommende Woche. Die Plakate ohne Namen fotografieren und für die nächste Einheit aufbewahren.",
+          "sagen": [
+            "Welche Kraftquelle von den Plakaten hattet ihr vorher nicht auf dem Schirm?"
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Nächstes Mal geht es um die wichtigste Kraftquelle von Kauai – Menschen, die helfen – und darum, warum es so schwer ist, sie zu fragen.",
+      "hintergrund": "Resilienz meint, dass sich Menschen trotz erheblicher Belastungen gut entwickeln. Die Kauai-Studie begleitete 698 Kinder des Jahrgangs 1955 bis ins Erwachsenenalter: Etwa ein Drittel der Kinder mit vielen Risiken war mit 18 gut unterwegs, viele andere fanden später durch zweite Chancen ihren Weg (Werner & Smith, 1992). Geholfen haben vor allem eine verlässliche Bezugsperson, oft außerhalb der Familie, eine Fähigkeit, die Stolz gab, Verantwortung und Gemeinschaften wie Schule oder Verein. Resilienz entsteht aus gewöhnlichen Schutzsystemen und hängt von der Umgebung ab (Masten, 2014). Grotberg (1995) ordnet solche Quellen in „Ich habe“, „Ich bin“ und „Ich kann“. Schon eine leichte Fingerberührung ohne Abstützen verringert das Schwanken im Stand deutlich (Jeka & Lackner, 1994) – darauf beruht das Balance-Experiment. Der Kraft-Moment nutzt ressourcenorientierte Vorstellungsarbeit (Reddemann, 2001) und erinnerte Bewältigung, die wichtigste Quelle von Selbstwirksamkeit (Bandura, 1977).",
+      "quellen": [
+        "Werner, E. E. & Smith, R. S. (1992). Overcoming the Odds. Ithaca: Cornell University Press.",
+        "Masten, A. S. (2014). Ordinary Magic: Resilience in Development. New York: Guilford.",
+        "Grotberg, E. H. (1995). A Guide to Promoting Resilience in Children: Strengthening the Human Spirit. Den Haag: Bernard van Leer Foundation.",
+        "Jeka, J. J. & Lackner, J. R. (1994). Fingertip contact influences human postural control. Experimental Brain Research, 100(3), 495–502.",
+        "Reddemann, L. (2001). Imagination als heilsame Kraft. Zur Behandlung von Traumafolgen mit ressourcenorientierten Verfahren. Stuttgart: Pfeiffer bei Klett-Cotta.",
+        "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215."
+      ],
+      "achtung": "Geschichten über schwere Zeiten und die Frage nach Kraftquellen können viel auslösen, gerade nach der Einheit zum Sicherheitsplan. Niemand erzählt Eigenes in der Runde; die persönlichen Teile der Blätter werden weder eingesammelt noch vorgelesen. Für die Antworten aus der Fragenbox gelten die Grenzen aus Einheit 20: keine Methoden, Mittel oder Einzelheiten. Fragen, die nach einer Notlage klingen, nicht in der Gruppe beantworten, sondern sofort mit der zuständigen Leitung (Responsable) besprechen und der Gruppe allgemein Hilfe anbieten. Bleibt das Feld „Menschen“ leer, vor der nächsten Einheit ein Einzelgespräch führen. Deutet jemand Gewalt, Vernachlässigung, Selbstverletzung oder Suizidgedanken an: die Person nach der Einheit ruhig ansprechen, nichts versprechen, was nicht zu halten ist, nach dem internen Schutzkonzept handeln und die Responsable am selben Tag informieren; bei akuter Gefahr Notruf 112 und die Person nicht allein lassen. Beim Balance-Experiment auf Abstand achten."
+    },
+    {
+      "id": "j3-e22",
+      "nr": 22,
+      "jahr": 3,
+      "modul": "j3-m6",
+      "titel": "Hilfe holen ist stark",
+      "kurz": "Warum bitten viele erst so spät um Hilfe? Die Gruppe untersucht Hürden, lernt, wer in Luxemburg wofür da ist, übt den ersten Satz im Rollenspiel und schreibt ihr eigenes Netz auf.",
+      "dauer": 100,
+      "ziele": [
+        "benennen typische Hürden, die Jugendliche vom Hilfeholen abhalten, und finden zu jeder eine Brücke",
+        "ordnen Alltagssituationen den passenden Anlaufstellen in Luxemburg zu und wissen, wie man sie erreicht",
+        "üben im Rollenspiel, ein Gespräch mit einem ersten Satz zu beginnen und nach einem „Jetzt nicht“ dranzubleiben",
+        "schreiben ihr persönliches Netz auf, mit mindestens einer erwachsenen Person, die sie wirklich erreichen"
+      ],
+      "material": [
+        "Gefühlsrad (A3, laminiert), Wäscheklammern, Anspannungsskala 0–100",
+        "Schülerblätter „Der erste Satz“ und „Mein Netz“ für jede Person; das Blatt „Meine Kraftquellen“ aus Einheit 21 aus den Mappen",
+        "Acht A4-Schilder für die Hilfe-Landkarte (Tabelle in Schritt 4)",
+        "Fünf Rollenkarten für das Rollenspiel (Text in Schritt 6), auf Karten geschrieben",
+        "Zwei Stühle für das Telefon-Beispiel",
+        "Name, Raum und Kontakt des SePAS im eigenen Lycée",
+        "Fotos der Kraftquellen-Plakate aus Einheit 21",
+        "Skills-Pässe, Stempel, Imbiss und Getränke"
+      ],
+      "vorbereitung": [
+        "Die Hilfenummern im Raum aushängen und vorher prüfen. Beim SePAS des Lycée erfragen, wie Jugendliche dort einen Termin bekommen; ideal ist, wenn sich jemand vom SePAS kurz vorstellt.",
+        "Die acht Schilder im Raum verteilt aufhängen und die fünf Rollenkarten schreiben.",
+        "Mit der zuständigen Leitung (Responsable) klären, wer an diesem Tag für ein Nachgespräch erreichbar ist.",
+        "Wenn möglich zu zweit leiten und einen ruhigen Ort zum Rausgehen festlegen."
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-erster-satz",
+        "skills-mein-netz",
+        "skills-kraftquellen",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Gefühlsrad, Anspannung, zwei Fingerzahlen"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Von den Kraftquellen zu den Menschen, die helfen"
+        },
+        {
+          "min": "15–30",
+          "phase": "uebung",
+          "titel": "Warum wir so spät fragen"
+        },
+        {
+          "min": "30–45",
+          "phase": "uebung",
+          "titel": "Wer hilft wobei? Die Hilfe-Landkarte"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–82",
+          "phase": "aktiv",
+          "titel": "Der erste Satz: Rollenspiel-Karussell"
+        },
+        {
+          "min": "82–90",
+          "phase": "uebung",
+          "titel": "Mein Netz"
+        },
+        {
+          "min": "90–95",
+          "phase": "skill",
+          "titel": "Skill: die Selbstmitgefühl-Pause"
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Réckbléck und Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: Gefühlsrad, Anspannung, zwei Fingerzahlen",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Gefühlsrad und Anspannung wie gewohnt, die Leitung beginnt. Dann eine Zusatzfrage, beantwortet nur mit den Fingern von 0 bis 5: Wie leicht fällt es dir, jemanden nach dem Weg zu fragen? Und wie leicht, jemandem zu sagen, dass es dir nicht gut geht? Alle zeigen beide Zahlen gleichzeitig. Die Leitung kommentiert nur den Unterschied, den fast alle zeigen, nicht einzelne Zahlen.",
+          "sagen": [
+            "Gefühl und Zahl wie immer. Dann mit den Fingern: Nach dem Weg fragen – wie leicht? Sagen, dass es einem schlecht geht – wie leicht?",
+            "Fällt euch was auf? Bei fast allen ist die zweite Zahl kleiner. Genau darum geht es heute."
+          ],
+          "tipp": "Die Leitung zeigt ihre eigenen Zahlen mit. Wenn auch bei ihr die zweite kleiner ist, entlastet das die Gruppe sofort.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Von den Kraftquellen zu den Menschen, die helfen",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "Die Fotos der Kraftquellen-Plakate aus Einheit 21 zeigen und beim Plakat „Menschen“ stehen bleiben: Wer steht dort, wer fehlt noch? Auch im Sicherheitsplan aus Einheit 20 gab es eine Zeile mit Menschen, die man fragen kann. Heute wird geübt, was dazwischen liegt – jemanden tatsächlich zu fragen. Den Titel der Einheit an die Tafel schreiben und fragen, ob der Satz stimmt.",
+          "sagen": [
+            "Hilfe holen ist stark – stimmt das? Oder klingt das nach einem Spruch von Erwachsenen?",
+            "Nora aus den Geschichten hat gesagt: Das Schwerste war der erste Satz. Heute geht es um diesen Satz."
+          ],
+          "tipp": "Widerspruch zum Titel ausdrücklich zulassen. Wer sagt, Hilfe holen fühle sich schwach an, beschreibt genau die Hürde, um die es gleich geht."
+        },
+        {
+          "titel": "Warum wir so spät fragen",
+          "dauer": 15,
+          "phase": "uebung",
+          "text": "Die Leitung liest acht Gedanken vor, die Jugendliche vom Hilfeholen abhalten (Punkte). Alle schauen zu Boden oder schließen die Augen und heben die Hand, wenn sie den Gedanken kennen; die Leitung sagt nur, ob es viele, einige oder wenige waren. Danach kreuzt jede Person still auf dem Blatt an (Aufgabe 1). Dann den Weg zur Hilfe an die Tafel zeichnen: vier Schritte, an jedem kann man hängen bleiben (Tabelle). Gemeinsam für drei, vier Hürden eine Brücke suchen; zum Schluss schreibt jede Person ihre eigene Hürde und Brücke auf (Aufgabe 2).",
+          "punkte": [
+            "„So schlimm ist es nicht. Andere haben echte Probleme.“",
+            "„Ich will niemandem zur Last fallen.“",
+            "„Das muss ich allein schaffen.“",
+            "„Wenn ich etwas sage, wissen es bald alle.“",
+            "„Ich weiß nicht, wie ich anfangen soll.“",
+            "„Ich weiß nicht, wen ich fragen soll.“",
+            "„Mir kann sowieso keiner helfen.“",
+            "„Beim letzten Mal hat es auch nichts gebracht.“"
+          ],
+          "tabelle": {
+            "spalten": [
+              "Schritt",
+              "Typische Hürde",
+              "Mögliche Brücke"
+            ],
+            "zeilen": [
+              [
+                "Merken: Da stimmt etwas nicht.",
+                "„So schlimm ist es nicht.“",
+                "Ich muss nicht warten, bis es schlimm ist. Früh fragen ist leichter."
+              ],
+              [
+                "In Worte fassen: Was ist los, was brauche ich?",
+                "„Ich weiß nicht, wie ich anfangen soll.“",
+                "Ein erster Satz reicht: Mir geht es gerade nicht gut. Hast du kurz Zeit?"
+              ],
+              [
+                "Wissen, wohin",
+                "„Ich weiß nicht, wen ich fragen soll.“",
+                "Das Netz aufschreiben, bevor man es braucht."
+              ],
+              [
+                "Sich trauen",
+                "„Dann wissen es gleich alle.“",
+                "Vorher fragen, was vertraulich bleibt; anonym anrufen geht auch."
+              ]
+            ]
+          },
+          "sagen": [
+            "Augen zu oder Blick auf den Boden. Hand hoch, wenn ihr den Gedanken kennt – ich sage nur, ob es viele oder wenige waren.",
+            "Welche Hürde ist bei euch am höchsten? Ihr müsst es nicht sagen, aber sucht eine Brücke dafür."
+          ],
+          "tipp": "Offen sagen, dass diese Hürden aus Befragungen von Jugendlichen bekannt sind. Es entlastet zu hören, dass die eigene Zurückhaltung weit verbreitet ist und nichts über Schwäche aussagt.",
+          "wennEsKippt": "Kommt der Einwand „Erwachsene erzählen doch alles weiter“, ihn nicht wegreden. Ehrlich erklären, was vertraulich bleibt und wo die Grenze liegt – wenn jemand in Gefahr ist –, und dass man vorher fragen darf. Mit nur zwei Jugendlichen die Handzeichen weglassen und direkt still ankreuzen lassen.",
+          "blatt": "skills-erster-satz"
+        },
+        {
+          "titel": "Wer hilft wobei? Die Hilfe-Landkarte",
+          "dauer": 15,
+          "phase": "uebung",
+          "text": "Acht Schilder hängen im Raum (Tabelle). Die Leitung liest Situationen vor (Punkte), und alle gehen zu dem Schild, das sie wählen würden; oft sind mehrere richtig. Nach jeder Situation kurz fragen, warum, und ergänzen, was die Stelle macht: anonym oder nicht, kostenlos oder nicht, wie man sie erreicht. Zum Schluss auf dem Blatt „Mein Netz“ den Kasten „Hilfe in Luxemburg – wer hilft wobei?“ lesen und klären, wie man beim SePAS im eigenen Lycée einen Termin bekommt.",
+          "tabelle": {
+            "spalten": [
+              "Schild",
+              "Wofür"
+            ],
+            "zeilen": [
+              [
+                "Freundin oder Freund",
+                "zuhören, beistehen, mitgehen – oft der erste Schritt"
+              ],
+              [
+                "Familie",
+                "wer in der Familie ansprechbar ist, ist bei jeder Person anders"
+              ],
+              [
+                "Lehrperson oder Educateur",
+                "Erwachsene im Alltag, die man kennt und erreicht"
+              ],
+              [
+                "SePAS im Lycée",
+                "Beratung bei Sorgen, Stress, Streit und Lernproblemen, vertraulich"
+              ],
+              [
+                "Kanner- a Jugendtelefon 116 111, SOS Détresse 45 45 45",
+                "Hilfe am Telefon, anonym; wann sie erreichbar sind, steht auf dem Aushang"
+              ],
+              [
+                "BEE SECURE Helpline 8002 1234",
+                "Probleme im Netz: Bilder, Cybermobbing, Erpressung"
+              ],
+              [
+                "Planning Familial, Schulärztin oder Schularzt",
+                "Körper, Gesundheit, Liebe, Sexualität, Verhütung"
+              ],
+              [
+                "Notruf 112, Polizei 113",
+                "akute Gefahr, Gewalt, Bedrohung, Unfall"
+              ]
+            ]
+          },
+          "punkte": [
+            "Seit Wochen schläft Jang schlecht und hat zu nichts mehr Lust. Mit seinen Eltern will er nicht darüber reden.",
+            "Jemand hat ein peinliches Foto von Emma in eine Gruppe gestellt und droht, noch mehr zu schicken.",
+            "Tiago hat eine Frage zur Verhütung, die er niemandem aus der Familie stellen will.",
+            "Nach einem heftigen Streit will Sofia heute nicht nach Hause und weiß nicht, wohin.",
+            "Auf einer Party ist ein Freund von Luca nicht mehr ansprechbar.",
+            "Mila liegt nachts wach, die Gedanken drehen sich, und im Haus schlafen alle.",
+            "Ana kommt in Mathe nicht mehr mit und traut sich nicht, es zu sagen.",
+            "Diogo ist verliebt und völlig durcheinander."
+          ],
+          "sagen": [
+            "Geht zu dem Schild, zu dem ihr in dieser Lage gehen würdet. Mehrere Antworten sind oft richtig.",
+            "Wer weiß, wie man beim SePAS in unserem Lycée einen Termin bekommt?"
+          ],
+          "tipp": "Den Unterschied zwischen anonym und vertraulich klären: Beim Kanner- a Jugendtelefon muss man keinen Namen sagen; beim SePAS kennt man sich, aber das Gespräch bleibt vertraulich – mit der Grenze, wenn jemand in Gefahr ist.",
+          "wennEsKippt": "Bei wenig Energie die Landkarte im Sitzen spielen: Die Schilder liegen in der Mitte, und alle legen einen Stift auf ihre Wahl. Witzeln einige über die Nummern, kurz mitlachen und dann ruhig weitermachen – Humor ist hier oft ein Zeichen von Unsicherheit.",
+          "blatt": "skills-mein-netz"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Gemeinsam essen, Fenster auf. Das Thema ruht. Die Leitung stellt in der Zeit die Stühle für das Karussell in zwei Kreise und legt die Rollenkarten bereit."
+        },
+        {
+          "titel": "Der erste Satz: Rollenspiel-Karussell",
+          "dauer": 22,
+          "phase": "aktiv",
+          "text": "Zuerst wählt jede Person eine Übungssituation vom Blatt und baut dafür ihren ersten Satz (Aufgabe 3). Dann spielt die Leitung eine kurze Szene vor: Sie bittet um Hilfe, eine freiwillige Person ist die Lehrerin, die gerade zum Kopierer will – einmal ungeschickt, einmal gelungen. Danach das Karussell: Innen- und Außenkreis sitzen einander paarweise gegenüber, bei ungerader Zahl beobachtet eine Person. Innen beginnt jede Person das Gespräch mit ihrem ersten Satz, außen hat jede Person eine Rollenkarte (Punkte) und reagiert danach; nach zwei Minuten rückt der Außenkreis weiter, nach drei Runden wechseln die Kreise. Anschließend schreibt jede Person in Noras leere Blase, was man sagt, wenn jemand keine Zeit hat (Aufgabe 4). Zum Schluss sitzen Leitung und eine freiwillige Person Rücken an Rücken und spielen einen Anruf beim Kanner- a Jugendtelefon, damit alle hören, wie so ein Gespräch beginnen kann.",
+          "punkte": [
+            "Freundin oder Freund: Du machst erst einen Witz, hörst dann aber richtig zu.",
+            "Klassenlehrerin: Du hast gerade keine Zeit, bietest aber einen Termin an.",
+            "Educateur im Haus: Du fragst nach, was genau die Person braucht.",
+            "Tante: Du erschrickst zuerst und fragst viel, dann wirst du ruhiger.",
+            "Beraterin am Kanner- a Jugendtelefon: Du begrüßt freundlich und sagst, dass man keinen Namen nennen muss."
+          ],
+          "sagen": [
+            "Ihr spielt nur die Situationen vom Blatt – nie eure eigenen.",
+            "Was hat es leichter gemacht, weiterzureden – beim Gegenüber und bei euch selbst?",
+            "Wenn jemand keine Zeit hat: Was sagt ihr dann?"
+          ],
+          "tipp": "Der Anruf zum Schluss nimmt vielen die Angst vor dem Unbekannten. Die Leitung spielt die Beraterin ruhig und freundlich und sagt beiläufig, dass man jederzeit auflegen darf.",
+          "wennEsKippt": "Wird es albern, eine Runde pausieren und die Szene noch einmal ernst vorspielen; Lachen ist bei diesem Thema oft Nervosität. Mit nur zwei Jugendlichen gibt es kein Karussell: Beide spielen nacheinander mit der Leitung, die die Rollenkarten wechselt. Wer nicht spielen mag, beobachtet und achtet auf den ersten Satz.",
+          "blatt": "skills-erster-satz"
+        },
+        {
+          "titel": "Mein Netz",
+          "dauer": 8,
+          "phase": "uebung",
+          "text": "Jede Person legt das Blatt „Meine Kraftquellen“ aus Einheit 21 neben das Blatt „Mein Netz“ und trägt in die Ringe ein: innen Menschen, die ihr nah sind, in der Mitte Erwachsene, die sie erreichen kann, außen Fachstellen und Telefone. Danach folgen Orte und Skills, drei Menschen genauer und der erste Schritt als Wenn-dann-Satz. Die Leitung geht herum und achtet nur auf eines: Steht im mittleren Ring mindestens eine erwachsene Person, die wirklich erreichbar ist? Was heute nicht fertig wird, wird in Einheit 23 ergänzt.",
+          "sagen": [
+            "Schreibt nur Menschen auf, die ihr wirklich erreichen könnt – nicht die, die man eintragen sollte.",
+            "Wer im mittleren Ring niemanden hat: Das ist kein Fehler, sondern ein Auftrag. Sprecht mich nachher an, dann suchen wir zusammen."
+          ],
+          "tipp": "Das fertige Netz fotografieren lassen; im Ernstfall hat man das Handy eher dabei als die Mappe.",
+          "wennEsKippt": "Schreibt jemand demonstrativ „niemand“, das nicht vor der Gruppe kommentieren. Leise fragen, ob es jemanden gibt, der wenigstens ein bisschen in Frage käme, und nach der Einheit ein Gespräch anbieten.",
+          "blatt": "skills-mein-netz"
+        },
+        {
+          "titel": "Skill: die Selbstmitgefühl-Pause",
+          "dauer": 5,
+          "phase": "skill",
+          "text": "Wer sich schämt, holt sich seltener Hilfe – deshalb endet die Einheit mit einem Skill gegen die Scham. Im Sitzen, Augen offen oder zu; wer mag, legt eine Hand auf die Brust oder den Bauch. Die Leitung spricht die drei Sätze langsam vor (Punkte), alle wiederholen sie innerlich. Danach kurz sagen: Die drei Sätze passen in jeden Moment, in dem man denkt, man müsse alles allein schaffen.",
+          "punkte": [
+            "„Das ist gerade schwer.“ – Du bemerkst, was los ist, ohne es kleinzureden.",
+            "„Anderen geht es auch so.“ – Schwierigkeiten gehören zum Menschsein. Du bist damit nicht allein.",
+            "„Was brauche ich jetzt?“ – Du sprichst mit dir wie mit einem guten Freund."
+          ],
+          "sagen": [
+            "Ihr müsst nichts Bestimmtes fühlen. Es reicht, die Sätze innerlich zu sagen und die Hand zu spüren."
+          ],
+          "tipp": "Wer die Hand nicht auf den Körper legen mag, legt sie auf den Tisch oder aufs Knie. Die Wirkung kommt von den Sätzen und vom ruhigen Tempo."
+        },
+        {
+          "titel": "Réckbléck und Skills-Pass",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Blitzlicht: Welcher erste Satz ist für euch machbar – einer von heute oder ein eigener? Dazu nennt jede Person ihre Anspannung von jetzt. Eintrag in den Skills-Pass mit Stempel, zum Beispiel dieser Satz; wer mag, schneidet die Karte für die Hosentasche aus (Aufgabe 5). Zum Schluss sagen, wann und wo die Leitung nach der Einheit für ein kurzes Gespräch da ist.",
+          "sagen": [
+            "Ein Satz, den ihr euch zutraut – laut oder nur für euch. Und eure Zahl jetzt?",
+            "Ich bin nach der Stunde noch zehn Minuten hier."
+          ],
+          "blatt": "skills-pass",
+          "tipp": "Wer deutlich angespannter geht, als er gekommen ist, bekommt vor dem Gehen ein kurzes Wort unter vier Augen. Beobachtungen aus der Einheit danach im Team besprechen."
+        }
+      ],
+      "bruecke": "Nächstes Mal schließen wir das Modul mit etwas Leichtem ab: Wir sammeln gute Momente – und jede Person bekommt ein Glas, in dem sie Platz haben.",
+      "hintergrund": "Jugendliche suchen bei seelischen Belastungen oft spät oder gar keine Hilfe. Rickwood et al. (2005) beschreiben Hilfesuche als Weg in Schritten: Belastung bemerken, sie in Worte fassen, Hilfe kennen und bereit sein, sich anzuvertrauen. Hürden sind vor allem Scham, der Wunsch, es allein zu schaffen, Sorgen um Vertraulichkeit, fehlendes Wissen über Angebote und schlechte Vorerfahrungen (Gulliver et al., 2010); erleichternd wirken vertraute Beziehungen und die Fähigkeit, Gefühle zu benennen. Weil Jugendliche sich zuerst an Freunde und Familie wenden, übt die Einheit den Weg zu Erwachsenen und Fachstellen konkret. Die Selbstmitgefühl-Pause nutzt die drei Elemente nach Neff (2003) – Achtsamkeit, geteilte Menschlichkeit, Freundlichkeit mit sich – und setzt bei der Scham an. Das Netz folgt der Logik des Sicherheitsplans (Stanley & Brown, 2012).",
+      "quellen": [
+        "Rickwood, D., Deane, F. P., Wilson, C. J. & Ciarrochi, J. (2005). Young people’s help-seeking for mental health problems. Australian e-Journal for the Advancement of Mental Health, 4(3), 218–251.",
+        "Gulliver, A., Griffiths, K. M. & Christensen, H. (2010). Perceived barriers and facilitators to mental health help-seeking in young people: A systematic review. BMC Psychiatry, 10, 113.",
+        "Neff, K. D. (2003). Self-compassion: An alternative conceptualization of a healthy attitude toward oneself. Self and Identity, 2(2), 85–101.",
+        "Stanley, B. & Brown, G. K. (2012). Safety planning intervention: A brief intervention to mitigate suicide risk. Cognitive and Behavioral Practice, 19(2), 256–264."
+      ],
+      "achtung": "Beim Thema Hilfe kommen oft eigene Erfahrungen hoch, auch enttäuschende mit Erwachsenen. Nur die Übungssituationen spielen, nie echte Probleme aus der Gruppe; die persönlichen Teile der Blätter werden nicht eingesammelt. Das Thema Suizid aus Einheit 20 wird nicht wiederholt. Sagt jemand, dass er selbst gerade Hilfe braucht, oder fallen Hinweise auf Gewalt, Missbrauch, Selbstverletzung oder Suizidgedanken: die Person nach der Einheit ruhig ansprechen, nichts versprechen, was nicht zu halten ist, nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) am selben Tag informieren; bei akuter Gefahr Notruf 112 und die Person nicht allein lassen. Steht im Netz keine erreichbare erwachsene Person, zeitnah ein Einzelgespräch führen. Nach der Einheit Beobachtungen im Team besprechen."
+    },
+    {
+      "id": "j3-e23",
+      "nr": 23,
+      "jahr": 3,
+      "modul": "j3-m6",
+      "titel": "Gute Momente sammeln",
+      "kurz": "Schlechtes bleibt leichter hängen als Gutes. Die Gruppe erfährt, was positive Gefühle und Dankbarkeit bewirken, sucht draußen gute Momente, beginnt ein Gute-Momente-Glas und schließt das Modul im Skills-Buch ab.",
+      "dauer": 100,
+      "ziele": [
+        "erklären, warum Ärger leichter hängen bleibt als Gutes und was positive Gefühle im Kopf verändern",
+        "schreiben drei gute Dinge der letzten Tage mit ihren Ursachen auf und formulieren einen Dank an eine Person",
+        "nehmen draußen gezielt kleine gute Momente wahr und üben, einen Genuss bewusst zu verlängern",
+        "beginnen ein Gute-Momente-Glas und halten im Skills-Buch fest, was sie hält, wenn es schwer wird"
+      ],
+      "material": [
+        "Gefühlsrad (A3, laminiert), Wäscheklammern, Anspannungsskala 0–100",
+        "Ein weißes A4-Blatt mit einem kleinen schwarzen Punkt in der Mitte",
+        "Schülerblatt „Gute Momente sammeln“ für jede Person, Scheren",
+        "Ein kleines Schraubglas je Person, etwa ein gespültes Marmeladenglas, dazu Etiketten oder buntes Klebeband und Filzstifte",
+        "Handys für die Gute-Momente-Jagd (freiwillig), sonst reicht das Blatt",
+        "Mandarinen oder ein Stück Schokolade je Person für das Genießen – Allergien und Essensregeln beachten",
+        "Skills-Buch (Seite 2 neu kopiert) und die Blätter „Meine Kraftquellen“ und „Mein Netz“ aus den Mappen",
+        "Skills-Pässe, Stempel, Imbiss und Getränke"
+      ],
+      "vorbereitung": [
+        "Gläser sammeln: in der Einheit davor fragen, wer eines mitbringen kann, und einige Reservegläser bereithalten.",
+        "Einen Weg draußen für die Gute-Momente-Jagd festlegen – Park, Schulhof, Uferweg – mit Treffpunkt und Sichtweite. Bei Regen: im Gebäude, an Fensterplätzen oder unter Vordächern.",
+        "Die Hausregel zu Fotos klären: keine Menschen, keine Gesichter, nichts posten.",
+        "Die Seite 2 des Skills-Buchs für jede Person kopieren."
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-gute-momente",
+        "skills-mein-netz",
+        "skills-buch",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Gefühlsrad, Anspannung und ein guter Moment"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Vom Netz zu den kleinen Dingen: der schwarze Punkt"
+        },
+        {
+          "min": "15–28",
+          "phase": "input",
+          "titel": "Warum Schlechtes klebt – und was Gutes bewirkt"
+        },
+        {
+          "min": "28–45",
+          "phase": "uebung",
+          "titel": "Drei gute Dinge und ein Dank"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–80",
+          "phase": "aktiv",
+          "titel": "Draußen: die Gute-Momente-Jagd und das Glas"
+        },
+        {
+          "min": "80–86",
+          "phase": "skill",
+          "titel": "Skill: genießen in Zeitlupe"
+        },
+        {
+          "min": "86–95",
+          "phase": "uebung",
+          "titel": "Modulabschluss im Skills-Buch"
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Réckbléck und Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: Gefühlsrad, Anspannung und ein guter Moment",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Gefühlsrad und Anspannung wie gewohnt. Dazu freiwillig: ein guter Moment seit der letzten Einheit – klein reicht, etwa ein Lied, ein Essen, ein Satz von jemandem. Die Leitung beginnt mit einem wirklich kleinen Beispiel, damit niemand denkt, es müsse etwas Großes sein. Wer nichts findet, sagt „weiter“; das bleibt unkommentiert.",
+          "sagen": [
+            "Gefühl, Zahl – und wenn euch einer einfällt: ein guter Moment seit letzter Woche. Klein reicht.",
+            "Bei mir: Heute Morgen kam der Bus pünktlich, und ich hatte einen Sitzplatz am Fenster."
+          ],
+          "tipp": "Kommen nur Schulterzucken und „nichts“, nicht nachbohren. Dass Gutes schwer einfällt, ist genau das Thema der Einheit – das darf die Leitung so sagen.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Vom Netz zu den kleinen Dingen: der schwarze Punkt",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "Das Netz aus Einheit 22 kurz hochhalten: Menschen, Orte, Skills. Heute kommt der letzte Teil des Moduls dazu – die kleinen guten Momente, die im Alltag Kraft geben. Dann das weiße Blatt mit dem schwarzen Punkt zeigen und fragen, was die Jugendlichen sehen. Fast alle nennen den Punkt, kaum jemand die weiße Fläche.",
+          "sagen": [
+            "Was seht ihr?",
+            "Der Punkt ist winzig, und trotzdem schauen alle darauf. So geht es uns oft mit einem Tag: ein Ärger, und der Rest verschwindet."
+          ]
+        },
+        {
+          "titel": "Warum Schlechtes klebt – und was Gutes bewirkt",
+          "dauer": 13,
+          "phase": "input",
+          "text": "Kurz erklären: Das Gehirn achtet stärker auf Gefahr und Ärger als auf Gutes; das war früher überlebenswichtig. Gute Momente rutschen deshalb schnell durch, wenn man sie nicht bewusst festhält. An der Tafel zeigen, was positive Gefühle bewirken (Tabelle): Sie weiten den Blick, machen offener für Ideen und Menschen und bauen mit der Zeit Kraftquellen auf. Dazu die zwei bekanntesten Übungen aus der Forschung nennen – drei gute Dinge aufschreiben und Danke sagen. Klarstellen, was die Einheit nicht will: Niemand soll sich Schweres schönreden.",
+          "tabelle": {
+            "spalten": [
+              "Wenn es mir schlecht geht",
+              "Wenn ich etwas Gutes erlebe"
+            ],
+            "zeilen": [
+              [
+                "Der Blick wird eng: Ich sehe vor allem das Problem.",
+                "Der Blick wird weit: Ich sehe mehr Möglichkeiten."
+              ],
+              [
+                "Ich ziehe mich zurück oder gehe in Abwehr.",
+                "Ich gehe eher auf andere zu und probiere etwas aus."
+              ],
+              [
+                "Das schützt mich kurzfristig.",
+                "Das baut auf Dauer Kraftquellen auf: Freundschaften, Können, Mut."
+              ]
+            ]
+          },
+          "sagen": [
+            "Gute Momente machen Schweres nicht weg. Aber sie stehen daneben – und man darf beides gleichzeitig fühlen.",
+            "Wer hat schon gemerkt, dass nach einem Lachen plötzlich eine Idee da war, die vorher fehlte?"
+          ],
+          "tipp": "Den Satz „Beides darf gleichzeitig da sein“ ausdrücklich stehen lassen. Er schützt davor, dass die Einheit wie „Denk positiv“ klingt – gerade nach dem schweren Modul davor.",
+          "wennEsKippt": "Kommt „Das ist doch Schönrederei“, zustimmen, dass Schönreden nicht hilft, und den Unterschied erklären: Es geht nicht darum, Schlechtes wegzudenken, sondern Gutes nicht zu übersehen."
+        },
+        {
+          "titel": "Drei gute Dinge und ein Dank",
+          "dauer": 17,
+          "phase": "uebung",
+          "text": "Jede Person füllt allein die Tabelle auf dem Blatt aus: drei gute Dinge der letzten Tage, jeweils mit der Frage, warum es passiert ist und was der eigene Anteil war (Aufgabe 1). Dann Aufgabe 2: Wem möchtest du danke sagen? Jede Person schreibt einen kurzen Dank, als Nachricht oder als Karte. Wer mag, schickt die Nachricht gleich ab oder nimmt sich vor, sie bis morgen zu schicken; niemand muss sie zeigen. Zum Schluss fragen, wie es sich angefühlt hat – nicht, was drinsteht.",
+          "sagen": [
+            "Die Frage nach dem Warum ist der eigentliche Trick: Sie zeigt euch, dass gute Dinge nicht nur Glück sind.",
+            "Danke sagen geht auch für Kleines: der Busfahrerin, die gewartet hat, dem Freund, der dir eine Sprachnachricht geschickt hat."
+          ],
+          "tipp": "Die Leitung schreibt selbst mit und schickt, wenn es passt, ihren Dank in der Runde ab. Das wirkt stärker als jede Erklärung.",
+          "wennEsKippt": "Findet jemand keine drei Dinge, reicht eines. Fällt gar nichts ein, klein anfangen: Was hast du heute gegessen, was hat geschmeckt? Wer niemandem danken mag, darf einem Tier oder einem Ort danken oder die Aufgabe auslassen.",
+          "blatt": "skills-gute-momente"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Gemeinsam essen, Fenster auf. Das Thema ruht. Kurz vor Ende der Pause Jacken holen und den Treffpunkt für draußen ansagen."
+        },
+        {
+          "titel": "Draußen: die Gute-Momente-Jagd und das Glas",
+          "dauer": 20,
+          "phase": "aktiv",
+          "text": "Die Gruppe geht nach draußen; Treffpunkt und Sichtweite sind vereinbart, die Leitung geht mit. Jede Person hat zwölf Minuten, um die fünf Suchaufträge von Aufgabe 3 zu erfüllen – als Foto ohne Menschen oder als Stichwort auf dem Blatt. Zurück im Raum zeigt oder beschreibt jede Person einen Fund. Dann bekommt jede ein Glas, beschriftet es, schneidet die Zettel aus (Aufgabe 4) und schreibt die ersten zwei, drei guten Momente hinein, gern aus der Jagd.",
+          "sagen": [
+            "Ihr sucht nichts Großes. Ein Muster an einer Mauer, ein Hund, der sich freut, Sonne auf einer Bank – das zählt.",
+            "Keine Menschen auf den Fotos, nichts posten. Die Bilder gehören euch."
+          ],
+          "tipp": "Die Jagd trainiert genau den Blick, um den es geht: Wer gezielt nach Gutem sucht, findet es am nächsten Tag leichter. Draußen kommt die erholsame Wirkung von Natur dazu.",
+          "wennEsKippt": "Bei Regen findet die Jagd im Gebäude statt: Flur, Fensterplätze, Pausenhalle. Bei wenig Energie reicht eine kurze Runde um den Block mit drei Funden. Mit nur zwei Jugendlichen geht die Leitung als Dritte mit auf die Suche; wer kein Handy nutzen will, schreibt auf das Blatt.",
+          "blatt": "skills-gute-momente"
+        },
+        {
+          "titel": "Skill: genießen in Zeitlupe",
+          "dauer": 6,
+          "phase": "skill",
+          "text": "Jede Person bekommt ein Stück Mandarine oder Schokolade; Allergien und Essensregeln sind vorher geklärt. Die Leitung leitet langsam an (Punkte). Danach erklären: Genießen heißt, einen guten Moment länger zu machen, als er von allein dauern würde – mit Aufmerksamkeit. Das geht auch mit einem Lied, einer warmen Dusche oder einer Nachricht, über die man sich freut; die drei Schritte stehen im Tipp-Kasten auf dem Blatt.",
+          "punkte": [
+            "Schau es an, als hättest du so etwas noch nie gesehen.",
+            "Riech daran. Was fällt dir auf?",
+            "Leg es in den Mund, ohne zu kauen. Was schmeckst du?",
+            "Kau jetzt ganz langsam. Wann ist der Geschmack am stärksten?"
+          ],
+          "sagen": [
+            "Die meisten essen so etwas in zwei Sekunden. Heute nehmen wir uns eine Minute."
+          ],
+          "tipp": "Eine Alternative ohne Essen: ein Foto von der Jagd eine Minute lang genau anschauen und alle Einzelheiten suchen.",
+          "wennEsKippt": "Kichern ist normal und darf sein. Wer nicht essen mag, macht die Übung mit dem Foto oder mit einem Blatt oder Stein von draußen."
+        },
+        {
+          "titel": "Modulabschluss im Skills-Buch",
+          "dauer": 9,
+          "phase": "uebung",
+          "text": "Das Modul „Resilienz und Hilfe“ endet mit einer Seite im Skills-Buch. Zuerst ergänzt jede Person auf „Mein Netz“, was in Einheit 22 offen blieb, etwa Orte und Skills aus diesem Modul. Dann nimmt sie „Meine Kraftquellen“, „Mein Netz“ und „Gute Momente sammeln“ zur Hand und überträgt, was sie mitnehmen will: einen Lieblingsskill, einen Satz, der trägt, einen Wenn-dann-Plan und aus dem Netz die Menschen, die helfen. „Mein Netz“ wird ins Skills-Buch geheftet und im Inhalt eingetragen. Leise Musik; niemand liest vor.",
+          "sagen": [
+            "Stellt euch vor, ihr schlagt das Buch in einem Jahr an einem schlechten Tag auf. Was soll dann auf dieser Seite stehen?"
+          ],
+          "tipp": "Ein Satz, der trägt, darf aus einer Geschichte von Einheit 21 stammen, zum Beispiel: Das Schwerste war der erste Satz.",
+          "wennEsKippt": "Wer schnell fertig ist, ergänzt im Netz einen Ort oder eine Tätigkeit, die heute gute Momente gebracht hat. Wer nicht weiß, was er eintragen soll, bekommt von der Leitung die Frage: Was aus den drei Treffen hat dir am meisten geholfen?",
+          "blatt": "skills-buch"
+        },
+        {
+          "titel": "Réckbléck und Skills-Pass",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Dankbarkeitsblitz aus dem Methoden-Pool: 20 Sekunden still an etwas denken, wofür man heute dankbar ist; wer mag, sagt es. Eintrag in den Skills-Pass und Stempel. Das Glas geht mit nach Hause, mit dem Auftrag, zwei Wochen lang jeden Abend einen Zettel hineinzulegen und auf dem Blatt abzuhaken (Aufgabe 5); danach wird es ausgeleert und gelesen (Aufgabe 6).",
+          "sagen": [
+            "Zwanzig Sekunden still: Wofür seid ihr heute dankbar? Wer mag, sagt es laut."
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Nächstes Mal beginnt ein neues Modul: Wie bildet ihr euch eine Meinung – und wie vertretet ihr sie so, dass andere zuhören? Wer mag, erzählt im Check-in, was schon im Glas liegt.",
+      "hintergrund": "Negative Erlebnisse ziehen Aufmerksamkeit stärker an als positive (Baumeister et al., 2001); gute Momente gehen deshalb leicht unter, wenn man sie nicht bewusst festhält. Positive Gefühle erweitern kurzfristig Wahrnehmung und Handlungsspielraum und bauen langfristig Ressourcen wie Beziehungen auf (Fredrickson, 2001). Wer über Wochen notierte, wofür er dankbar ist, blickte optimistischer auf sein Leben (Emmons & McCullough, 2003); bei Jugendlichen stieg zudem die Zufriedenheit mit der Schule (Froh et al., 2008). Drei gute Dinge mit ihren Ursachen aufzuschreiben, steigerte das Wohlbefinden über Monate; ein Dankesbrief wirkte kurzfristig am stärksten (Seligman et al., 2005). Bryant und Veroff (2007) nennen das bewusste Verlängern, Festhalten und Teilen eines guten Moments Genießen. Freude und Traurigkeit können gleichzeitig da sein (Larsen et al., 2001) – die Einheit will nichts schönreden. Draußen kommt die erholsame Wirkung von Natur hinzu (Kaplan, 1995).",
+      "quellen": [
+        "Baumeister, R. F., Bratslavsky, E., Finkenauer, C. & Vohs, K. D. (2001). Bad is stronger than good. Review of General Psychology, 5(4), 323–370.",
+        "Fredrickson, B. L. (2001). The role of positive emotions in positive psychology: The broaden-and-build theory of positive emotions. American Psychologist, 56(3), 218–226.",
+        "Emmons, R. A. & McCullough, M. E. (2003). Counting blessings versus burdens: An experimental investigation of gratitude and subjective well-being in daily life. Journal of Personality and Social Psychology, 84(2), 377–389.",
+        "Froh, J. J., Sefick, W. J. & Emmons, R. A. (2008). Counting blessings in early adolescents: An experimental study of gratitude and subjective well-being. Journal of School Psychology, 46(2), 213–233.",
+        "Seligman, M. E. P., Steen, T. A., Park, N. & Peterson, C. (2005). Positive psychology progress: Empirical validation of interventions. American Psychologist, 60(5), 410–421.",
+        "Bryant, F. B. & Veroff, J. (2007). Savoring: A New Model of Positive Experience. Mahwah, NJ: Lawrence Erlbaum.",
+        "Larsen, J. T., McGraw, A. P. & Cacioppo, J. T. (2001). Can people feel happy and sad at the same time? Journal of Personality and Social Psychology, 81(4), 684–696.",
+        "Kaplan, S. (1995). The restorative benefits of nature: Toward an integrative framework. Journal of Environmental Psychology, 15(3), 169–182."
+      ],
+      "achtung": "Wer gerade eine schwere Zeit erlebt, kann Übungen zu guten Momenten als Druck empfinden. Niemand muss etwas Gutes finden oder vorlesen, Danken ist freiwillig, und Schweres wird nicht kleingeredet. Findet jemand über Wochen nichts Gutes, wertet sich stark ab oder deutet an, dass es ihm schlecht geht: nach der Einheit ruhig ansprechen, nichts versprechen, was nicht zu halten ist, nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) informieren, bei Hinweisen auf Selbstverletzung oder Suizidgedanken am selben Tag; bei akuter Gefahr Notruf 112 und die Person nicht allein lassen. Beim Essen Allergien und Essensregeln beachten; Fotos ohne Menschen und ohne Veröffentlichung."
+    }
+  ]
+}

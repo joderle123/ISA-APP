@@ -1,0 +1,1347 @@
+[
+  {
+    "id": "skills-schlaf-experiment",
+    "bereich": "skills",
+    "thema": "gesund",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln"
+    ],
+    "dauer": "20 Min., danach eine Woche",
+    "eldib": [
+      "V-29",
+      "V-32",
+      "KOG-61"
+    ],
+    "schlagworte": [
+      "Schlaf",
+      "innere Uhr",
+      "Abendroutine",
+      "Handy",
+      "Selbstbeobachtung",
+      "Wenn-dann-Plan",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:moon-stars",
+    "verwandt": [
+      "schlaf-check",
+      "skills-gesund-plan",
+      "mein-handy-und-ich"
+    ],
+    "kurs": [
+      "j2-e30",
+      "j2-e31"
+    ],
+    "de": {
+      "titel": "Mein Schlaf-Experiment",
+      "untertitel": "Eine Änderung am Abend, eine Zahl am Morgen – eine Woche lang. Du bist Versuchsperson und Forschungsteam zugleich.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Warum man in der Pubertät spät müde wird",
+          "text": "In der Pubertät stellt sich die innere Uhr später. Das Schlafhormon Melatonin kommt abends später, und man wird erst spät richtig müde – das ist Biologie, keine Faulheit. Der Wecker klingelt trotzdem früh. Mit 13 bis 18 Jahren braucht man 8 bis 10 Stunden Schlaf; viele bekommen unter der Woche deutlich weniger."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Bist du eher Lerche oder Eule? Kreise ein, was am ehesten passt."
+        },
+        {
+          "art": "skala",
+          "von": "Lerche: morgens früh wach, abends früh müde",
+          "bis": "Eule: abends lange wach, morgens schwer aus dem Bett",
+          "stufen": 5
+        },
+        {
+          "art": "aufgabe",
+          "text": "Rechne rückwärts: Wann müsste bei dir das Licht aus sein?",
+          "hinweis": "Rechne mit 9 Stunden Schlaf und etwa 15 Minuten zum Einschlafen."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "An Schultagen klingelt mein Wecker um …",
+            "Für 9 Stunden Schlaf müsste das Licht aus sein um …",
+            "Im Moment schlafe ich an Schultagen meistens ein gegen …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wähl eine einzige Änderung für deine Abende und leg fest, wann und wie du sie machst.",
+          "hinweis": "Nur eine Änderung – so siehst du am Ende, ob genau sie etwas bringt."
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "frei": 2,
+          "items": [
+            "Handy nachts außerhalb des Zimmers laden",
+            "ab einer festen Uhrzeit „Nicht stören“",
+            "die letzte halbe Stunde ohne Bildschirm",
+            "ab 16 Uhr keine Energydrinks, keine Cola",
+            "vor dem Schlafen Gedanken auf einen Zettel schreiben",
+            "feste Runterfahr-Zeit: duschen, Tasche packen, lesen",
+            "morgens gleich ans Tageslicht: Rollladen hoch, kurz raus",
+            "am Wochenende höchstens zwei Stunden später aufstehen"
+          ]
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Wenn ich mir abends die Zähne geputzt habe,",
+              "dann": "schreibe ich auf einen Zettel neben dem Bett, was mir noch im Kopf herumgeht."
+            }
+          ]
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Trag ab morgen jeden Morgen ein: Hat dein Plan geklappt, und wie wach bist du?",
+          "hinweis": "Akku am Morgen: 0 = völlig leer, 10 = hellwach. Tage ohne Plan sind keine Niederlage, sondern dein Vergleich."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Mein Ausgangswert – so wach war ich heute Morgen um acht (0–10): …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Tag",
+            "Plan geklappt?",
+            "Licht aus ca.",
+            "Aufgestanden",
+            "Akku am Morgen (0–10)"
+          ],
+          "breiten": [
+            0.7,
+            1.3,
+            1.2,
+            1.2,
+            1.6
+          ],
+          "zeilen": 7,
+          "beispiel": [
+            "Mo",
+            "ja",
+            "22:30",
+            "6:40",
+            "6"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Nach einer Woche: Vergleiche die Tage mit und ohne Plan.",
+          "hinweis": "Schätzen reicht: Wo lag dein Akku meistens?"
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "An Tagen mit Plan lag mein Akku meistens bei …",
+            "An Tagen ohne Plan lag er bei …",
+            "Mein Ergebnis in einem Satz: …",
+            "Das behalte ich bei: …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Du entscheidest, was du teilst.",
+          "text": "Das Blatt gehört dir. Liegst du über Wochen oft lange wach oder bist ständig müde, sprich mit jemandem, dem du vertraust – zum Beispiel mit der Schulärztin, dem Schularzt oder beim SePAS."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen verstehen, warum sich ihr Schlaf in der Pubertät nach hinten verschiebt, wählen eine Änderung für ihre Abende und prüfen eine Woche lang an ihrer Wachheit am Morgen, ob sie wirkt.",
+        "ablauf": [
+          "Info-Kasten und Aufgabe 1 (4 Min.): Wer ist Lerche, wer Eule? Später müde zu werden, ist in diesem Alter normal.",
+          "Aufgabe 2 (4 Min.): Die Leitung rechnet ihr Beispiel an der Tafel vor; Ergebnisse nicht vergleichen.",
+          "Aufgabe 3 (8 Min.): eine Änderung als Wenn-dann-Satz; zu zweit prüfen, ob Zeitpunkt und Handlung klar sind.",
+          "Aufgabe 4 (täglich 1 Min.): Das Blatt geht mit nach Hause; wer es vergisst, notiert die Zahl im Handy.",
+          "Nächste Einheit (5 Min.): Aufgabe 5, Daumen-Runde, Ergebnisse in einem Satz."
+        ],
+        "hintergrund": "In der Pubertät kommt Melatonin abends später, und der Schlafdruck baut sich langsamer auf; mit frühem Schulbeginn und dem Handy im Zimmer entsteht ein „perfekter Sturm“ (Carskadon, 2011). Empfohlen sind für Jugendliche 8 bis 10 Stunden (Paruthi et al., 2016); Bildschirmzeit geht meist mit späterem und kürzerem Schlaf einher (Hale & Guan, 2015). Verglichen werden Tage mit und ohne Plan, so zeigt auch ein „gescheiterter“ Tag etwas. Der Wenn-dann-Satz macht die Umsetzung wahrscheinlicher (Gollwitzer, 1999).",
+        "quellen": [
+          "Carskadon, M. A. (2011). Sleep in adolescents: The perfect storm. Pediatric Clinics of North America, 58(3), 637–647.",
+          "Paruthi, S. et al. (2016). Recommended amount of sleep for pediatric populations: A consensus statement of the American Academy of Sleep Medicine. Journal of Clinical Sleep Medicine, 12(6), 785–786.",
+          "Hale, L. & Guan, S. (2015). Screen time and sleep among school-aged children and adolescents: A systematic literature review. Sleep Medicine Reviews, 21, 50–58.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "differenzierung": {
+          "leichter": "Nur Aufgabe 3 und 4; drei Schultage Protokoll reichen.",
+          "schwerer": "Einschlafzeit schätzen und Durchschnitte mit und ohne Plan berechnen."
+        },
+        "impulse": [
+          "Was machst du abends als Letztes, bevor du einschläfst?",
+          "Welche Änderung klappt auch an einem stressigen Abend?"
+        ],
+        "tipps": [
+          "Selbst mitmachen und das eigene Ergebnis nennen, auch wenn es durchwachsen ist.",
+          "Nicht nach Zimmer oder Abläufen zu Hause fragen: Nicht alle bestimmen ihre Abende selbst."
+        ],
+        "achtung": "Anhaltende Schlafprobleme, Grübeln oder große Tagesmüdigkeit können auf Belastungen hinweisen: Einzelgespräch, Schulärztin, Schularzt oder SePAS einbeziehen, die zuständige Leitung (Responsable) informieren. Keine Schlafmittel empfehlen.",
+        "material": "Blatt je Person"
+      }
+    }
+  },
+  {
+    "id": "skills-energie-kurve",
+    "bereich": "skills",
+    "thema": "gesund",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "25 Min.",
+    "eldib": [
+      "V-29",
+      "V-32",
+      "KOG-51"
+    ],
+    "schlagworte": [
+      "Energie",
+      "Trinken",
+      "Frühstück",
+      "Koffein",
+      "Energydrinks",
+      "Körpersignale",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:battery-4",
+    "verwandt": [
+      "skills-schlaf-experiment",
+      "skills-pausen-tasche",
+      "skills-gesund-plan"
+    ],
+    "kurs": [
+      "j2-e31"
+    ],
+    "de": {
+      "titel": "Meine Energie über den Tag",
+      "untertitel": "Wann ist dein Akku voll, wann leer – und was haben Schlaf, Trinken und Essen damit zu tun?",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Zeichne deine Energie an einem normalen Schultag: pro Uhrzeit ein Kreuz, dann die Kreuze zu einer Kurve verbinden.",
+          "hinweis": "In der letzten Zeile trägst du ein E ein, wenn du um diese Zeit etwas isst, und ein T, wenn du etwas trinkst."
+        },
+        {
+          "art": "plan",
+          "tage": [
+            "7:00",
+            "9:00",
+            "11:00",
+            "13:00",
+            "15:00",
+            "17:00",
+            "19:00",
+            "21:00"
+          ],
+          "zeilen": [
+            "voll",
+            "gut",
+            "mittel",
+            "wenig",
+            "leer",
+            "E = gegessen, T = getrunken"
+          ],
+          "symbol": "kasten"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schau auf deine Kurve und ergänze die Sätze."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Mein größtes Tief kommt meistens gegen … Uhr.",
+            "In den zwei Stunden davor habe ich meistens …",
+            "Am meisten Energie habe ich …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Was deinen Akku lädt",
+          "punkte": [
+            "Schlaf ist die Grundladung. Was nachts fehlt, holt kein Snack wieder herein.",
+            "Durst fühlt sich oft an wie Müdigkeit oder Kopfweh. Eine Wasserflasche in der Tasche hilft.",
+            "Wer morgens nichts herunterbekommt, packt sich etwas für die erste Pause ein.",
+            "Süßes gibt schnell Energie, die allein nicht lange hält. Mit Brot, Joghurt oder Obst reicht sie länger.",
+            "Ein paar Minuten draußen und in Bewegung machen oft wacher als gedacht."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dosen-Check: Lies das Kleingedruckte auf einer Energydrink-Dose."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Koffein pro 100 ml: …",
+            "Koffein in der ganzen Dose: …",
+            "Dieser Hinweis steht auf der Dose: …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Die Koffein-Falle",
+          "text": "Koffein leiht dir Energie – zurückgezahlt wird abends. Aussteigen kannst du an jeder Stelle: mit Wasser, Tageslicht und Bewegung am Tag und ohne Koffein ab dem Nachmittag."
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 0,
+          "items": [
+            {
+              "titel": "Morgens müde",
+              "text": "Die Nacht war zu kurz."
+            },
+            {
+              "titel": "Energydrink",
+              "text": "Kurz wach, oft aufgedreht."
+            },
+            {
+              "titel": "Abends hellwach",
+              "text": "Koffein wirkt noch Stunden."
+            },
+            {
+              "titel": "Zu wenig Schlaf",
+              "text": "Und morgens wieder müde."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dein Energie-Plan: Was tust du beim nächsten Tief zuerst?",
+          "hinweis": "Erst den Körper fragen: Durst? Hunger? Müde? Zu lange gesessen? Gestresst? Dann passend laden."
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Wenn ich in der dritten Stunde durchhänge,",
+              "dann": "trinke ich zuerst Wasser und gehe in der Pause fünf Minuten raus."
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Du entscheidest, was du teilst.",
+          "text": "Hier geht es nicht um richtig oder falsch essen, sondern darum, was dir Energie gibt. Was du aufschreibst, bleibt bei dir."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen zeichnen ihre Energie über einen Schultag, erkennen Zusammenhänge mit Schlaf, Trinken, Essen und Koffein und legen fest, was sie beim nächsten Tief zuerst tun.",
+        "ablauf": [
+          "Aufgabe 1 (6 Min.): Die Leitung zeichnet ihre eigene Kurve an die Tafel, dann zeichnet jede Person still.",
+          "Aufgabe 2 (4 Min.): Satzanfänge; wer mag, vergleicht zu zweit, wann das Tief kommt.",
+          "Info-Kasten (4 Min.): nicht über gesund und ungesund reden, sondern über lange und kurze Energie.",
+          "Aufgabe 3 (6 Min.) mit leeren Dosen, dann die Koffein-Falle besprechen.",
+          "Aufgabe 4 (4 Min.) nach dem Energie-Check; der Satz kommt auch in den Skills-Pass."
+        ],
+        "hintergrund": "Wachheit hängt vom Schlaf, vom Trinken und von über den Tag verteilten Mahlzeiten ab; das Skillstraining zählt ausgewogenes Essen und Schlafen zu den Skills gegen starke Gefühle (Rathus & Miller, 2015). Ein Frühstück fördert kurzfristig die Aufmerksamkeit im Unterricht (Adolphus et al., 2013). Das Blatt verzichtet auf Kalorien, Gewicht und „gute“ oder „schlechte“ Lebensmittel und übt, Durst und Hunger wahrzunehmen (Craig, 2002). Drohende Botschaften wirken nur, wenn klar ist, was man stattdessen tun kann (Peters, Ruiter & Kok, 2013).",
+        "quellen": [
+          "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford.",
+          "Adolphus, K., Lawton, C. L. & Dye, L. (2013). The effects of breakfast on behavior and academic performance in children and adolescents. Frontiers in Human Neuroscience, 7, 425.",
+          "Craig, A. D. (2002). How do you feel? Interoception: The sense of the physiological condition of the body. Nature Reviews Neuroscience, 3(8), 655–666.",
+          "Peters, G.-J. Y., Ruiter, R. A. C. & Kok, G. (2013). Threatening communication: A critical re-analysis and a revised meta-analytic test of fear appeal theory. Health Psychology Review, 7(Suppl. 1), S8–S31."
+        ],
+        "differenzierung": {
+          "leichter": "Nur Kurve und Wenn-dann-Satz; Dosen-Check in der Gruppe.",
+          "schwerer": "Eine zweite Kurve für einen Wochenendtag zeichnen und vergleichen."
+        },
+        "impulse": [
+          "Woran merkst du, ob du müde, hungrig oder durstig bist?",
+          "Was bringt dich wirklich über ein Tief – und was nur kurz?"
+        ],
+        "tipps": [
+          "Leere, ausgespülte Dosen mitbringen und die Angaben vorher selbst lesen.",
+          "Niemandes Essen kommentieren: Was es zu Hause gibt, entscheiden Jugendliche oft nicht selbst."
+        ],
+        "achtung": "Keine Bemerkungen zu Körper, Gewicht oder Portionen. Hinweise auf gestörtes Essverhalten nicht in der Gruppe ansprechen: Einzelgespräch, die zuständige Leitung (Responsable) am selben Tag informieren. Hunger aus Geldmangel diskret aufgreifen.",
+        "material": "Blatt je Person, leere Dosen"
+      }
+    }
+  },
+  {
+    "id": "skills-pausen-tasche",
+    "bereich": "skills",
+    "thema": "gesund",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "gruppe"
+    ],
+    "dauer": "20 Min.",
+    "eldib": [
+      "SOZ-18",
+      "V-29",
+      "SOZ-34"
+    ],
+    "schlagworte": [
+      "Energie",
+      "Pause",
+      "Essen und Trinken",
+      "Staffel",
+      "Entscheiden im Team",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:paper-bag",
+    "verwandt": [
+      "skills-energie-kurve"
+    ],
+    "kurs": [
+      "j2-e31"
+    ],
+    "de": {
+      "titel": "Pausen-Tasche",
+      "untertitel": "Karten für die Staffel: Was bringt euch gut durch einen langen Tag?",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Packt als Team eine Tasche mit höchstens fünf Karten, die euch gut durch die Lage bringt, die die Leitung nennt.",
+          "hinweis": "Beim Vorstellen zeichnet ihr, wie eure Energie-Kurve mit dieser Tasche aussehen würde.",
+          "symbole": [
+            "gruppe"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "So läuft die Staffel",
+          "punkte": [
+            "Die Karten liegen verdeckt am anderen Ende. Pro Team läuft immer eine Person.",
+            "Karte aufdecken: mitnehmen oder wieder umdrehen und leer zurücklaufen. Dann startet die nächste Person.",
+            "Merkt euch, wo welche Karte liegt, und sagt es eurem Team. Verboten ist keine Karte."
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 4,
+          "hoehe": 100,
+          "karten": [
+            {
+              "titel": "Wasserflasche",
+              "text": "0,5 Liter, zum Nachfüllen",
+              "bild": "icon:bottle"
+            },
+            {
+              "titel": "Energydrink",
+              "text": "500 ml, etwa 160 mg Koffein",
+              "bild": "icon:bolt"
+            },
+            {
+              "titel": "Cola",
+              "text": "330 ml, etwa 30 mg Koffein",
+              "bild": "icon:cup"
+            },
+            {
+              "titel": "Kakao",
+              "text": "heiß oder kalt",
+              "bild": "icon:coffee"
+            },
+            {
+              "titel": "Käsebrötchen",
+              "text": "vom Bäcker oder von zu Hause",
+              "bild": "icon:bread"
+            },
+            {
+              "titel": "Apfel",
+              "text": "oder anderes Obst",
+              "bild": "icon:apple"
+            },
+            {
+              "titel": "Gemüsesticks",
+              "text": "Karotte, Gurke, Paprika",
+              "bild": "icon:carrot"
+            },
+            {
+              "titel": "Nudelsalat",
+              "text": "in der Box, mit Gemüse",
+              "bild": "icon:leaf"
+            },
+            {
+              "titel": "Kekse",
+              "text": "eine Packung",
+              "bild": "icon:cookie"
+            },
+            {
+              "titel": "Chips",
+              "text": "eine kleine Tüte",
+              "bild": "icon:paper-bag"
+            },
+            {
+              "titel": "Muffin",
+              "text": "vom Bäcker",
+              "bild": "icon:cake"
+            },
+            {
+              "titel": "Pizzaschnitte",
+              "text": "vom Bäcker",
+              "bild": "icon:pizza"
+            },
+            {
+              "titel": "Kantine",
+              "text": "warmes Tagesmenü",
+              "bild": "icon:tools-kitchen-2"
+            },
+            {
+              "titel": "Suppe",
+              "text": "in der Thermoskanne",
+              "bild": "icon:soup"
+            },
+            {
+              "titel": "Eis",
+              "text": "am Kiosk",
+              "bild": "icon:ice-cream"
+            },
+            {
+              "titel": "Nichts",
+              "text": "erst zu Hause essen",
+              "bild": "icon:backpack"
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Teams stellen in einer Staffel eine Pausen-Tasche für eine vorgegebene Lage zusammen und begründen mit ihrer Energie-Kurve, was sie wofür gewählt haben.",
+        "ablauf": [
+          "Vorher: Karten je Team auf farbiges Papier drucken und schneiden; Kartenfeld 10 bis 15 m entfernt.",
+          "Lage nennen (1 Min.), etwa: Schultag bis 16 Uhr, danach Training oder Praktikum.",
+          "Staffel (4 Min.): Karten verdeckt; aufdecken, mitnehmen oder umdrehen; höchstens fünf Karten.",
+          "Vorstellen (6 Min.): Jedes Team zeichnet seine erwartete Energie-Kurve und begründet die Wahl.",
+          "Zweite Runde (8 Min.) mit neuer Lage, etwa Prüfung in der ersten Stunde; eine Karte darf getauscht werden."
+        ],
+        "hintergrund": "Die Staffel verbindet Bewegung mit Entscheidungen. Es gibt keine verbotenen Karten und keine Punkte für „gesunde“ Taschen: Wer Jugendlichen die Wahl lässt und nach ihren Gründen fragt, stärkt ihre Motivation (Deci & Ryan, 2000); Belehrung weckt eher Widerstand (Miller & Rollnick, 2013). Zur Orientierung beim Auswerten: Wasser, Brot, Obst, Gemüse, Salat, Suppe und Kantinenessen halten länger vor; Süßes und Chips geben kurz Energie; Energydrink und Cola enthalten Koffein, das noch Stunden später wach hält.",
+        "quellen": [
+          "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268.",
+          "Miller, W. R. & Rollnick, S. (2013). Motivational Interviewing (3rd ed.). New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Im Sitzen: Die Karten liegen offen auf dem Tisch, das Team wählt gemeinsam.",
+          "schwerer": "Zusatzbedingung pro Team, etwa ein vegetarischer Tag oder kein Geld dabei."
+        },
+        "impulse": [
+          "Wo kommt in eurer Kurve das Tief – und welche Karte fängt es auf?",
+          "Was davon ist Genuss, was Energie – und darf beides in die Tasche?"
+        ],
+        "tipps": [
+          "Chips und Kekse sind ausdrücklich erlaubt; die Frage ist nur, wofür sie gut sind.",
+          "Bei nur zwei Jugendlichen packt jede Person ihre eigene Tasche; die Leitung spielt mit."
+        ],
+        "achtung": "Karten nicht als gesund oder ungesund bewerten. Wer sich zurückzieht oder abwertend über sich spricht, später unter vier Augen ansprechen; bei Hinweisen auf gestörtes Essverhalten die zuständige Leitung (Responsable) informieren.",
+        "material": "Karten je Team, zwei Stoffbeutel, Flipchart"
+      }
+    }
+  },
+  {
+    "id": "skills-bewegungs-experiment",
+    "bereich": "skills",
+    "thema": "gesund",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "30 Min., danach eine Woche",
+    "eldib": [
+      "V-29",
+      "V-24",
+      "K-26"
+    ],
+    "schlagworte": [
+      "Bewegung",
+      "Stimmung",
+      "Konzentration",
+      "Selbstbeobachtung",
+      "Gegenteil tun",
+      "Wenn-dann-Plan",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:run",
+    "verwandt": [
+      "skills-gesund-plan",
+      "was-meine-stimmung-beeinflusst",
+      "skills-tester"
+    ],
+    "kurs": [
+      "j2-e32"
+    ],
+    "de": {
+      "titel": "Mein Bewegungs-Experiment",
+      "untertitel": "Was macht Bewegung mit deiner Stimmung und deinem Kopf? Miss es selbst – vorher und nachher.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Trag direkt vor und nach jeder Runde ein, wie deine Stimmung und deine Wachheit sind.",
+          "hinweis": "Beides von 0 bis 10. Zeile 3 und 4 sind für deine eigene Bewegungsidee in der Woche."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Nr.",
+            "Bewegung",
+            "Stimmung vorher → nachher",
+            "Wachheit vorher → nachher"
+          ],
+          "breiten": [
+            0.45,
+            2.1,
+            1.6,
+            1.6
+          ],
+          "zeilen": 4,
+          "nummern": 1,
+          "beispiel": [
+            "z. B.",
+            "3 Min. Treppe laufen",
+            "4 → 6",
+            "3 → 7"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Werte aus: Was hat bei dir mehr bewegt?"
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Am meisten verändert hat sich …",
+            "Überrascht hat mich …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Die Schlapp-Falle: Kennst du das? Was wäre dein Gegenteil?",
+          "hinweis": "Wenn alles in dir „liegen bleiben“ sagt, hilft oft genau das Gegenteil – nicht immer, aber öfter, als man denkt."
+        },
+        {
+          "art": "comic",
+          "spalten": 3,
+          "felder": [
+            {
+              "figuren": [
+                "figur:jana:muede:verschraenkt"
+              ],
+              "requisit": "icon:device-mobile",
+              "blase": "denken",
+              "text": "Keine Energie. Ich bleib einfach hier.",
+              "untertitel": "Der Impuls: sitzen bleiben, scrollen."
+            },
+            {
+              "figuren": [
+                "figur:jana:neutral:stehen"
+              ],
+              "requisit": "icon:shoe",
+              "blase": "denken",
+              "text": "Na gut. Zehn Minuten um den Block.",
+              "untertitel": "Gegenteil tun: raus, auch ohne Lust."
+            },
+            {
+              "figuren": [
+                "figur:jana:ruhig"
+              ],
+              "requisit": "icon:sun",
+              "blase": "denken",
+              "text": "Nicht super. Aber besser als vorhin.",
+              "untertitel": "Danach: Stimmung von 3 auf 5."
+            }
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Die Schlapp-Falle kenne ich, wenn …",
+            "Mein Gegenteil: …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Was Bewegung mit dem Kopf macht",
+          "text": "Forschende haben viele Studien zusammengefasst: Wer sich bewegt, ist danach oft besser gelaunt, weniger ängstlich und kann sich besser konzentrieren. Die Wirkung ist nicht riesig, zeigt sich aber immer wieder. Dafür braucht es keinen Sport – zügig gehen, tanzen, Rad fahren und Treppen zählen auch."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wähl eine Bewegungsidee für die Woche, die dir Spaß macht, und leg fest, wann du sie machst.",
+          "hinweis": "In die zweite Zeile kommt dein Plan für das größte Hindernis, zum Beispiel: Wenn es in Strömen regnet, laufe ich zu Hause dreimal die Treppe hoch."
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "frei": 2,
+          "items": [
+            "eine Haltestelle früher aussteigen und laufen",
+            "mit dem Rad oder zu Fuß zur Schule",
+            "in der großen Pause eine Runde über den Hof",
+            "nach den Hausaufgaben drei Lieder lang tanzen",
+            "Treppe statt Aufzug oder Rolltreppe",
+            "mit jemandem spazieren gehen statt schreiben",
+            "Basketball, Fußball oder Tischtennis in der Pause",
+            "zehn Minuten Dehnen vor dem Schlafen"
+          ]
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 2,
+          "beispiele": [
+            {
+              "wenn": "Wenn der Bus montags an der Post hält,",
+              "dann": "steige ich aus und laufe den Rest bis zur Schule."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Hake jeden Tag ab, an dem du deine Idee gemacht hast.",
+          "hinweis": "Einmal in der Woche misst du vorher und nachher und trägst es oben in Zeile 3 oder 4 ein."
+        },
+        {
+          "art": "plan",
+          "tage": [
+            "Mo",
+            "Di",
+            "Mi",
+            "Do",
+            "Fr",
+            "Sa",
+            "So"
+          ],
+          "zeilen": [
+            "Idee gemacht",
+            "Danach ging es mir besser"
+          ],
+          "symbol": "kasten"
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Bewegung ersetzt keine Hilfe.",
+          "text": "Fühlst du dich über Wochen niedergeschlagen, sprich mit jemandem, dem du vertraust, oder ruf anonym und kostenlos das Kanner- a Jugendtelefon an: 116 111."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen messen, wie zwei Arten von Bewegung ihre Stimmung und Wachheit verändern, lernen das Gegenteil-Tun gegen die Schlapp-Falle kennen und planen eine eigene Bewegungsidee.",
+        "ablauf": [
+          "Check-in (2 Min.): Vorher-Werte für Zeile 1 still eintragen, nicht laut nennen.",
+          "Draußen (25 Min.): zwölf Minuten zügig gehen zu zweit, dann Hütchen-Wende; vor und nach jeder Runde eintragen.",
+          "Auswertung (8 Min.): Daumen-Runde, Aufgabe 2, Info-Kasten.",
+          "Schlapp-Falle (4 Min.): Comic lesen; wann hilft das Gegenteil, ohne zu überfordern?",
+          "Aufgabe 4 und 5 (12 Min.): Idee und Wenn-dann-Satz; Zuversicht unter 7 heißt: kleiner machen."
+        ],
+        "hintergrund": "Eine Übersicht über zahlreiche Reviews fand bei Kindern und Jugendlichen kleine, aber günstige Effekte von Bewegung auf depressive Beschwerden sowie Hinweise auf weniger Ängste, besseren Selbstwert und bessere Konzentration (Biddle & Asare, 2011). Die WHO (2020) empfiehlt Jugendlichen im Schnitt 60 Minuten Bewegung am Tag und betont, dass jede Bewegung besser ist als keine. Das Gegenteil-Tun stammt aus dem Skillstraining: Bei Niedergeschlagenheit aktiv werden, obwohl der Impuls zum Rückzug rät (Linehan, 2015).",
+        "quellen": [
+          "Biddle, S. J. H. & Asare, M. (2011). Physical activity and mental health in children and adolescents: A review of reviews. British Journal of Sports Medicine, 45(11), 886–895.",
+          "World Health Organization (2020). WHO Guidelines on Physical Activity and Sedentary Behaviour. Genf: WHO.",
+          "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Nur Zeile 1 und 2 und eine Idee aus der Liste.",
+          "schwerer": "Zwei eigene Ideen testen und in Zeile 3 und 4 vergleichen."
+        },
+        "impulse": [
+          "Welche Bewegung machst du so gern, dass du sie gar nicht als Bewegung merkst?",
+          "Wann bist du zuletzt in die Schlapp-Falle getappt?"
+        ],
+        "tipps": [
+          "Selbst mitmessen und die eigenen Zahlen nennen, auch wenn sich nichts verändert hat.",
+          "Bewegung, die im Alltag steckt (Schulweg, Pause, Treppe), klappt am zuverlässigsten."
+        ],
+        "achtung": "Keine Kommentare zu Körpern, Fitness oder Gewicht. Asthma und Verletzungen vorher erfragen. Wer über Wochen niedergeschlagen wirkt, braucht ein Gespräch: die zuständige Leitung (Responsable) informieren.",
+        "material": "Blatt je Person, Klemmbretter, Hütchen"
+      }
+    }
+  },
+  {
+    "id": "skills-jahr-in-bildern",
+    "bereich": "skills",
+    "thema": "abschluss",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln"
+    ],
+    "dauer": "25 Min.",
+    "eldib": [
+      "K-24",
+      "K-18",
+      "K-23"
+    ],
+    "schlagworte": [
+      "Jahresrückblick",
+      "Collage",
+      "Bilder",
+      "Stolz",
+      "Entwicklung",
+      "Abschluss",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:photo",
+    "verwandt": [
+      "skills-kompass",
+      "skills-mein-jahr"
+    ],
+    "kurs": [
+      "j2-e34"
+    ],
+    "de": {
+      "titel": "Mein Jahr in Bildern",
+      "untertitel": "Sechs Bilder für ein Jahr Skills-Kurs – gezeichnet, geklebt oder als Symbol",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Regeln für deine Bilder",
+          "punkte": [
+            "Keine Fotos, auf denen Menschen zu erkennen sind – auch nicht von dir. Zeichnen darfst du alles.",
+            "Nichts davon kommt ins Netz, auch kein Foto deiner Collage.",
+            "Gut geeignet: Zeichnungen, Symbole, Wörter, Zeitschriften-Ausschnitte, Fotos von Plakaten und Orten aus dem Kurs."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Skizziere zuerst: Welches Bild passt in welches Feld?",
+          "hinweis": "Ein Bild kann ein Symbol, eine kleine Szene oder ein Wort in großer Schrift sein. Danach überträgst du die Felder auf A3."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "feld",
+              "label": "So bin ich ins Jahr gestartet",
+              "hoehe": 4.3,
+              "zeichnen": true
+            }
+          ],
+          "rechts": [
+            {
+              "art": "feld",
+              "label": "Ein Moment, der schwer war",
+              "hoehe": 4.3,
+              "zeichnen": true
+            }
+          ]
+        },
+        {
+          "art": "abstand",
+          "hoehe": 4
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "feld",
+              "label": "Ein Skill, der mir geholfen hat",
+              "hoehe": 4.3,
+              "zeichnen": true
+            }
+          ],
+          "rechts": [
+            {
+              "art": "feld",
+              "label": "Etwas, das ich geschafft habe",
+              "hoehe": 4.3,
+              "zeichnen": true
+            }
+          ]
+        },
+        {
+          "art": "abstand",
+          "hoehe": 4
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "feld",
+              "label": "Die Gruppe und ich",
+              "hoehe": 4.3,
+              "zeichnen": true
+            }
+          ],
+          "rechts": [
+            {
+              "art": "feld",
+              "label": "Das nehme ich mit",
+              "hoehe": 4.3,
+              "zeichnen": true
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Gib deinem Jahr einen Titel – wie für einen Film oder ein Album."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Mein Titel: …",
+            "Das Bild, das mir am meisten bedeutet, und warum: …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Du entscheidest, was du zeigst.",
+          "text": "Ein Feld darf leer bleiben oder eine Klappe bekommen. In der Galerie hängt nur, was du zeigen willst."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen gestalten ihr Kursjahr in sechs Bildern und geben ihm einen Titel. Die Skizze ist der Plan für die Collage in A3 und steht für sich, wenn die Zeit knapp wird.",
+        "ablauf": [
+          "Vorher: Materialtisch mit Zeitschriften, farbigem Papier, Symbolbildern und kleinen Ausdrucken aus dem Jahr.",
+          "Regeln vorlesen (2 Min.) und begründen: Fotos von Menschen nur mit Einverständnis, im Netz gar nicht.",
+          "Skizze (5 Min.): allein und still; Skills-Pass und Kompass liegen daneben.",
+          "Collage (12 Min.): die sechs Felder auf A3 übertragen – zeichnen, kleben, schreiben.",
+          "Titel und Lieblingsbild (3 Min.), danach die stille Galerie."
+        ],
+        "hintergrund": "Bilder und Symbole helfen, Erfahrungen auszudrücken, für die Worte fehlen oder zu groß sind. Narrative Ansätze nutzen Zeichnungen, damit junge Menschen von ihrem Leben erzählen können, ohne sich über ihre Probleme zu definieren; Stärken und Hoffnungen bekommen denselben Platz wie Schweres (Ncube, 2006). Die sechs Felder geben Halt und lenken den Blick auf Bewältigung: Wer sieht, was er geschafft hat, stärkt seine Selbstwirksamkeit (Bandura, 1977). Die Foto-Regeln schützen die Privatsphäre aller.",
+        "quellen": [
+          "Ncube, N. (2006). The Tree of Life Project: Using narrative ideas in work with vulnerable children. International Journal of Narrative Therapy and Community Work, 1, 3–16.",
+          "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215."
+        ],
+        "differenzierung": {
+          "leichter": "Nur drei Felder wählen; Symbolbilder zum Ausschneiden bereitlegen.",
+          "schwerer": "Die Collage als Zeitstrahl von September bis Juli anlegen."
+        },
+        "impulse": [
+          "Welches Bild würdest du jemandem zeigen, der dich erst seit heute kennt?",
+          "Was sieht man auf deiner Collage, das man dir nicht ansieht?"
+        ],
+        "tipps": [
+          "Bei Ausdrucken von Plakaten aus dem Jahr Gesichter und Namen vorher abdecken.",
+          "Wer nicht gern zeichnet, nimmt Wörter in großer Schrift oder Symbole vom Stapel."
+        ],
+        "achtung": "Der Rückblick kann an Schweres erinnern; kein Feld muss gefüllt werden. Collagen hängen nur mit Einverständnis. Deutet jemand Belastendes an: Einzelgespräch, die zuständige Leitung (Responsable) informieren.",
+        "material": "A3-Papier, Zeitschriften, Scheren, Kleber, Stifte"
+      }
+    }
+  },
+  {
+    "id": "skills-staerken-post",
+    "bereich": "skills",
+    "thema": "abschluss",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "gruppe"
+    ],
+    "dauer": "25 Min.",
+    "eldib": [
+      "K-20",
+      "K-32",
+      "SOZ-32",
+      "K-19"
+    ],
+    "schlagworte": [
+      "Stärken",
+      "Charakterstärken",
+      "Wertschätzung",
+      "Rückmeldung",
+      "Abschied",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:gift",
+    "verwandt": [
+      "skills-zertifikat-jahr2",
+      "mein-staerkenprofil",
+      "skills-staerken-ruecken"
+    ],
+    "kurs": [
+      "j2-e35"
+    ],
+    "de": {
+      "titel": "Stärken-Karten zum Verschenken",
+      "untertitel": "Für jede Person aus der Gruppe eine Stärke, die du an ihr erlebt hast – mit einem Satz, wann das war.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Schneide die Karten von Seite 2 aus. Such für jede Person aus der Gruppe eine Stärke aus, die du an ihr erlebt hast.",
+          "hinweis": "Schreib auf die Rückseite, wann das war: „Ich habe das gesehen, als du …“ Dann kommt die Karte in ihre Tüte.",
+          "symbole": [
+            "schneiden",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "So schreibt ihr",
+          "punkte": [
+            "Konkret statt allgemein: nicht „du bist nett“, sondern was die Person getan hat.",
+            "Nichts über Aussehen, keine Witze auf Kosten der Person.",
+            "Mit Namen oder ohne – wie du magst.",
+            "Fällt dir zu jemandem nichts ein, frag die Leitung nach einer Erinnerung aus dem Jahr."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wenn du deine Tüte bekommen hast: Lies die Karten in Ruhe. Welche drei Stärken nimmst du mit?"
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Stärke",
+            "Das hat jemand an mir erlebt"
+          ],
+          "breiten": [
+            1.1,
+            3
+          ],
+          "zeilen": 3,
+          "beispiel": [
+            "Humor",
+            "Ich habe alle zum Lachen gebracht, als der Ball im Baum hing."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Und eine Stärke, die du selbst an dir siehst – auch wenn sie niemand verschenkt hat:"
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Meine Stärke: …",
+            "Daran merke ich es: …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Du entscheidest, was du teilst.",
+          "text": "Deine Karten gehören dir. In der Runde liest du nur vor, was du vorlesen möchtest."
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "karten",
+          "spalten": 4,
+          "hoehe": 112,
+          "karten": [
+            {
+              "titel": "Mut",
+              "text": "Du traust dich, auch wenn du nervös bist.",
+              "bild": "icon:shield"
+            },
+            {
+              "titel": "Ausdauer",
+              "text": "Du bleibst dran, wenn es zäh wird.",
+              "bild": "icon:mountain"
+            },
+            {
+              "titel": "Ehrlichkeit",
+              "text": "Du sagst, was stimmt – auch wenn es unbequem ist.",
+              "bild": "icon:circle-check"
+            },
+            {
+              "titel": "Humor",
+              "text": "Du bringst andere zum Lachen, ohne jemanden auszulachen.",
+              "bild": "icon:mood-happy"
+            },
+            {
+              "titel": "Fairness",
+              "text": "Du achtest darauf, dass alle eine Chance bekommen.",
+              "bild": "motiv:waage"
+            },
+            {
+              "titel": "Hilfsbereitschaft",
+              "text": "Du packst mit an, ohne dass man fragen muss.",
+              "bild": "icon:heart-handshake"
+            },
+            {
+              "titel": "Zuhören",
+              "text": "Bei dir fühlt man sich verstanden.",
+              "bild": "icon:ear"
+            },
+            {
+              "titel": "Gelassenheit",
+              "text": "Du bleibst ruhig, wenn es hektisch wird.",
+              "bild": "icon:feather"
+            },
+            {
+              "titel": "Teamgeist",
+              "text": "Mit dir wird aus einer Gruppe ein Team.",
+              "bild": "icon:users-group"
+            },
+            {
+              "titel": "Kreativität",
+              "text": "Du hast Ideen, auf die sonst keiner kommt.",
+              "bild": "icon:bulb"
+            },
+            {
+              "titel": "Neugier",
+              "text": "Du fragst nach und willst es genau wissen.",
+              "bild": "icon:search"
+            },
+            {
+              "titel": "Mitgefühl",
+              "text": "Du merkst, wenn es jemandem nicht gut geht.",
+              "bild": "icon:user-heart"
+            },
+            {
+              "titel": "Verlässlichkeit",
+              "text": "Auf dich kann man zählen.",
+              "bild": "icon:shield-check"
+            },
+            {
+              "titel": "Zuversicht",
+              "text": "Du glaubst daran, dass es besser wird.",
+              "bild": "icon:sunrise"
+            },
+            {
+              "titel": "Selbstkontrolle",
+              "text": "Du bremst dich, bevor es knallt.",
+              "bild": "icon:traffic-lights"
+            },
+            {
+              "titel": "Verzeihen",
+              "text": "Du gibst anderen eine zweite Chance.",
+              "bild": "icon:hearts"
+            },
+            {
+              "titel": "Dankbarkeit",
+              "text": "Du merkst, was andere für dich tun, und sagst es.",
+              "bild": "icon:gift"
+            },
+            {
+              "titel": "Begeisterung",
+              "text": "Du steckst andere mit deiner Energie an.",
+              "bild": "icon:rocket"
+            },
+            {
+              "titel": "Offenheit",
+              "text": "Du gehst offen auf Neue und Neues zu.",
+              "bild": "icon:door-enter"
+            },
+            {
+              "titel": "Führung",
+              "text": "Du bringst eine Gruppe in Gang und behältst den Überblick.",
+              "bild": "icon:flag"
+            },
+            {
+              "titel": "Zivilcourage",
+              "text": "Du sagst Stopp, wenn jemand fertiggemacht wird.",
+              "bild": "icon:hand-stop"
+            },
+            {
+              "titel": "Geduld",
+              "text": "Du kannst warten und erklärst auch zweimal.",
+              "bild": "icon:hourglass"
+            },
+            {
+              "titel": "Verantwortung",
+              "text": "Du stehst zu Fehlern und machst etwas wieder gut.",
+              "bild": "icon:bandage"
+            },
+            {
+              "titel": "Sinn für Schönes",
+              "text": "Du siehst das Besondere in Musik, Natur oder Bildern.",
+              "bild": "icon:flower"
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen verschenken einander Stärken, die sie im Lauf des Jahres erlebt haben, belegen sie mit einer Beobachtung und halten fest, welche Stärken sie mitnehmen.",
+        "ablauf": [
+          "Vorher: Seite 2 je Person auf festes, farbiges Papier drucken und schneiden; je Person eine Papiertüte mit Namen an die Wand hängen.",
+          "Regeln vorlesen (3 Min.) und ein Beispiel geben: „Ich schenke dir Geduld, weil du mir beim Schlafrechner dreimal geholfen hast.“",
+          "Schreiben (12 Min.): leise Musik; für jede Person eine Karte mit Satz auf der Rückseite, ab in ihre Tüte. Die Leitung schreibt für alle.",
+          "Durchsehen (2 Min.): Die Leitung schaut jede Tüte durch und ergänzt, wo Karten fehlen.",
+          "Lesen (6 Min.): Tüten verteilen, still lesen, Aufgabe 2 und 3. Wer mag, liest eine Karte vor."
+        ],
+        "hintergrund": "Peterson und Seligman (2004) beschreiben 24 Charakterstärken, etwa Mut, Fairness, Humor und Ausdauer, die sich im Verhalten zeigen und entwickeln lassen; die Karten übersetzen sie in die Sprache Jugendlicher. Im Jugendalter zählt die Anerkennung durch Gleichaltrige für das Selbstbild besonders (Harter, 2012). Glaubwürdig wird sie, wenn sie ein beobachtetes Verhalten benennt, statt pauschal zu loben (Hattie & Timperley, 2007) – deshalb gehört auf jede Karte ein konkreter Moment.",
+        "quellen": [
+          "Peterson, C. & Seligman, M. E. P. (2004). Character Strengths and Virtues. New York: Oxford University Press.",
+          "Harter, S. (2012). The Construction of the Self (2nd ed.). New York: Guilford.",
+          "Hattie, J. & Timperley, H. (2007). The power of feedback. Review of Educational Research, 77(1), 81–112."
+        ],
+        "differenzierung": {
+          "leichter": "Stichworte auf der Rückseite reichen; die Leitung hilft beim Formulieren.",
+          "schwerer": "Zu jeder verschenkten Stärke einen Moment aus dem Herbst und einen aus dem Frühling nennen."
+        },
+        "impulse": [
+          "Welche Karte hat dich überrascht?",
+          "Welche Stärke willst du im nächsten Jahr öfter zeigen?"
+        ],
+        "tipps": [
+          "Bei nur zwei, drei Jugendlichen schreibt jede Person zwei Karten für jede andere.",
+          "Die Karten in einem Umschlag mitgeben – viele heben sie lange auf."
+        ],
+        "achtung": "Die Leitung liest jede Karte, bevor die Tüten verteilt werden. Abwertende oder zweideutige Karten nimmt sie heraus und klärt sie später mit der Person, die sie geschrieben hat – nicht in der Gruppe. Niemand darf leer ausgehen.",
+        "material": "Seite 2 auf festem Papier je Person, Scheren, Stifte, Papiertüten mit Namen, Malerkrepp"
+      }
+    }
+  },
+  {
+    "id": "skills-zertifikat-jahr2",
+    "bereich": "skills",
+    "thema": "abschluss",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln"
+    ],
+    "dauer": "10 Min.",
+    "eldib": [
+      "K-18",
+      "K-24",
+      "SOZ-40"
+    ],
+    "schlagworte": [
+      "Zertifikat",
+      "Würdigung",
+      "Skills",
+      "Stärken",
+      "Abschluss",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:award",
+    "verwandt": [
+      "skills-staerken-post",
+      "skills-kompass"
+    ],
+    "kurs": [
+      "j2-e35"
+    ],
+    "de": {
+      "titel": "Zertifikat Kursjahr 2",
+      "untertitel": "Skills-Kurs „Stark im Alltag“: was du geübt hast und was andere an dir sehen",
+      "bausteine": [
+        {
+          "art": "vertrag",
+          "titel": "Zertifikat",
+          "text": "___ hat im Schuljahr ___ am Skills-Kurs „Stark im Alltag“ teilgenommen und ein Jahr lang Skills geübt: für Schule, Wut und Freundschaft, für Familie und Netz, für gute Entscheidungen und die eigene Gesundheit.",
+          "unterschriften": [
+            "Unterschrift der Leitung"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Deine drei wichtigsten Skills aus diesem Jahr – schau dafür in deinen Skills-Kompass.",
+          "hinweis": "Zum Beispiel: Stopp-Ampel – hilft mir, wenn meine Wut auf Rot springt."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Skill",
+            "Er hilft mir, wenn …"
+          ],
+          "breiten": [
+            1.3,
+            3
+          ],
+          "zeilen": 3
+        },
+        {
+          "art": "aufgabe",
+          "text": "Drei Stärken, die die Gruppe an dir sieht – von deinen Stärken-Karten.",
+          "hinweis": "Zum Beispiel: Geduld – als ich Ana beim Rückwärtsrechnen für den Schlaf geholfen habe."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Stärke",
+            "Erlebt, als …"
+          ],
+          "breiten": [
+            1.3,
+            3
+          ],
+          "zeilen": 3
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dein Blick nach vorn: Was willst du im nächsten Schuljahr ausprobieren?"
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Im nächsten Schuljahr will ich …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "feld",
+          "label": "Das möchte ich dir mitgeben – deine Leitung",
+          "hoehe": 3.4
+        }
+      ],
+      "lehrer": {
+        "ziel": "Jede Person bekommt zum Ende des Kursjahrs ein persönliches Zertifikat mit ihren wichtigsten Skills, den Stärken aus Sicht der Gruppe und einem Satz der Leitung.",
+        "ablauf": [
+          "Vorher: auf festem Papier drucken, Namen und Schuljahr eintragen, den Satz der Leitung schreiben – eine konkrete Beobachtung aus dem Jahr.",
+          "In der Einheit (4 Min.): Skills aus dem Kompass, Stärken von den Karten und den Blick nach vorn eintragen.",
+          "Übergabe (6 Min.): jede Person einzeln aufrufen, den Satz vorlesen oder still überreichen, unterschreiben; die Gruppe applaudiert.",
+          "Das Zertifikat geht mit Pass, Kompass und Stärken-Karten nach Hause."
+        ],
+        "hintergrund": "Ein Zertifikat hält fest, was sonst untergeht: dass jemand ein Jahr lang drangeblieben ist und Fertigkeiten geübt hat. Solche Bewältigungserfahrungen sind die wichtigste Quelle von Selbstwirksamkeit (Bandura, 1977). Anerkennung wirkt, wenn sie konkret ist und ein beobachtetes Verhalten benennt (Hattie & Timperley, 2007). Eigene Auswahl, Rückmeldung der Gruppe und der Satz einer erwachsenen Bezugsperson greifen zwei Schutzfaktoren auf, die Masten (2014) beschreibt: Kompetenzerleben und verlässliche Beziehungen.",
+        "quellen": [
+          "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
+          "Hattie, J. & Timperley, H. (2007). The power of feedback. Review of Educational Research, 77(1), 81–112.",
+          "Masten, A. S. (2014). Ordinary Magic: Resilience in Development. New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Die Leitung trägt die Stärken nach Absprache ein.",
+          "schwerer": "Zu jedem Skill notieren, wann er im nächsten Jahr gebraucht wird."
+        },
+        "impulse": [
+          "Wem würdest du dieses Zertifikat gern zeigen?",
+          "Welcher Skill soll mit ins nächste Jahr?"
+        ],
+        "tipps": [
+          "Keine Noten, keine Anwesenheitsquoten: Alle bekommen dasselbe Zertifikat.",
+          "Von Hand unterschreiben; ob ein Stempel der Einrichtung dazukommt, vorher klären."
+        ],
+        "achtung": "Wer die Übergabe vor der Gruppe nicht möchte, bekommt das Zertifikat ohne Aufruf. Der Satz der Leitung bleibt wertschätzend, ohne Hinweis auf Probleme oder Förderbedarf. Kein offizielles Dokument.",
+        "material": "Zertifikat je Person, festes Papier"
+      }
+    }
+  }
+]

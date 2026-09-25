@@ -1,0 +1,734 @@
+{
+  "einheiten": [
+    {
+      "id": "j2-e30",
+      "nr": 30,
+      "jahr": 2,
+      "modul": "j2-m9",
+      "titel": "Schlaf – der unterschätzte Skill",
+      "kurz": "Die innere Uhr, das Handy und die Abende: Die Gruppe versteht, warum Jugendliche spät müde werden, spielt ein Schlaf-Quiz in Bewegung und startet ein Schlaf-Experiment für eine Woche.",
+      "dauer": 100,
+      "ziele": [
+        "erklären, warum sich die innere Uhr in der Pubertät nach hinten verschiebt und was das für Schultage bedeutet",
+        "erkennen, auf welchen Wegen das Handy Schlaf kostet, und wählen eine Änderung für ihre Abende",
+        "starten ein Schlaf-Experiment mit Wenn-dann-Plan und messen eine Woche lang ihre Wachheit am Morgen",
+        "probieren Kopf-Parkplatz und langes Ausatmen als Skill zum Einschlafen aus"
+      ],
+      "material": [
+        "Gefühlsrad (A3, laminiert) mit Wäscheklammern, Anspannungsskala 0–100",
+        "Schülerblatt „Mein Schlaf-Experiment“ je Person, Stifte",
+        "Kreppband (etwa 6 m) und Kärtchen mit den Uhrzeiten 5 bis 12 Uhr für die Zeitlinie am Boden",
+        "Tafel oder Flipchart mit dem vorbereiteten Tafelbild „Wie das Handy Schlaf stiehlt“",
+        "Aussagen für das Schlaf-Quiz (Schritt 6), ausgedruckt",
+        "Kreppband oder Hütchen für Mittellinien und Schutzzonen; Turnhalle, Hof oder großer, freigeräumter Raum",
+        "Kleine Zettel für den Kopf-Parkplatz",
+        "Skills-Pässe, Stempel",
+        "Imbiss und Getränke (Allergien und Essensregeln beachten)"
+      ],
+      "vorbereitung": [
+        "Die Zeitlinie auf den Boden kleben: 5 Uhr an einem Ende, 12 Uhr am anderen, dazwischen für jede Stunde ein Kärtchen.",
+        "Das Tafelbild aus Schritt 4 vorbereiten; die rechte Spalte bleibt leer, die Gruppe füllt sie.",
+        "Das eigene Beispiel für den Schlafrechner durchrechnen: Weckzeit minus 9 Stunden minus 15 Minuten zum Einschlafen.",
+        "Für das Quiz Turnhalle, Hof oder einen großen Raum organisieren; acht bis zehn Aussagen auswählen und die Reihenfolge festlegen."
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-schlaf-experiment",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Gefühlsrad, Anspannung und Morgen-Akku"
+        },
+        {
+          "min": "10–17",
+          "phase": "bruecke",
+          "titel": "Fragenbox-Aushang, vom Stress-Skill zum Schlaf"
+        },
+        {
+          "min": "17–30",
+          "phase": "input",
+          "titel": "Die innere Uhr: Aufstellung und Schlafrechner"
+        },
+        {
+          "min": "30–45",
+          "phase": "uebung",
+          "titel": "Handy, Abendroutine und meine Änderung"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–82",
+          "phase": "aktiv",
+          "titel": "Tag und Nacht: Schlaf-Quiz in Bewegung"
+        },
+        {
+          "min": "82–92",
+          "phase": "skill",
+          "titel": "Skill: Kopf-Parkplatz und lang ausatmen"
+        },
+        {
+          "min": "92–100",
+          "phase": "abschluss",
+          "titel": "Experiment starten, Réckbléck und Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: Gefühlsrad, Anspannung und Morgen-Akku",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Stühle im Kreis, Gefühlsrad und Anspannungsskala liegen in der Mitte. Reihum nennt jede Person ein Wort aus dem Rad und ihre Anspannung von 0 bis 100. Heute kommt eine dritte Zahl dazu, mit den Fingern gezeigt: Wie wach warst du heute Morgen um acht, von 0 bis 10? Die Leitung beginnt und nennt ihre Zahl ehrlich. Die Morgen-Zahlen ohne Namen als Striche an der Tafel sammeln; jede Person merkt sich ihre eigene, sie kommt später aufs Blatt.",
+          "sagen": [
+            "Gefühl, Anspannung – und heute noch eine Zahl mit den Fingern: Wie wach wart ihr heute Morgen um acht?",
+            "Null heißt: Ich weiß nicht mehr, wie ich in die Schule gekommen bin. Zehn heißt: hellwach, noch bevor der Wecker klingelt."
+          ],
+          "tipp": "Die Striche an der Tafel sprechen für sich. Liegen viele unter 5, reicht ein Satz: Genau darum geht es heute.",
+          "wennEsKippt": "Beginnen einige, mit wenig Schlaf zu prahlen („drei Stunden, kein Problem“), nicht bewerten und nicht nachfragen. Kurz festhalten: Viele kennen das – heute schauen wir, woran es liegt.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Fragenbox-Aushang, vom Stress-Skill zum Schlaf",
+          "dauer": 7,
+          "phase": "bruecke",
+          "text": "Kamen in Einheit 29 Fragen in die Fragenbox, hängt jetzt der getippte Aushang mit den im Team abgestimmten Antworten: zwei Minuten Zeit zum Lesen, Rückfragen nur allgemein beantworten, Persönliches nach der Einheit. Dann kurz anknüpfen: Was hilft bei Stress und schweren Gefühlen, ohne Nebenwirkungen? Zwei, drei Antworten reichen. Anschließend das neue Modul „Gesund an Körper und Seele“ vorstellen: vier Einheiten über Schlaf, Energie, Bewegung und darüber, wie man hilft, wenn es jemandem richtig schlecht geht. Heute geht es um den Skill, den alle jede Nacht üben – mit mehr oder weniger Erfolg.",
+          "sagen": [
+            "Letztes Mal ging es darum, was bei Stress hilft, ohne Nebenwirkungen. Was ist euch davon hängen geblieben?",
+            "Heute geht es um einen Skill, der gar nicht wie einer aussieht: Schlaf. Wer gut geschlafen hat, hat mehr Geduld – mit anderen und mit sich."
+          ],
+          "tipp": "Wer zum Aushang noch eine Frage hat, die er nicht vor der Gruppe stellen möchte, kann sie in die Fragenbox werfen oder nach der Einheit kurz vorbeikommen."
+        },
+        {
+          "titel": "Die innere Uhr: Aufstellung und Schlafrechner",
+          "dauer": 13,
+          "phase": "input",
+          "text": "Alle stellen sich auf der Zeitlinie am Boden dorthin, wo an Schultagen ihr Wecker klingelt. Dann die zweite Frage: Wann würdet ihr in den Ferien von selbst aufwachen, wenn niemand weckt? Alle gehen langsam zu ihrer zweiten Zeit; der Abstand zwischen beiden Punkten ist die Zeitverschiebung, die viele jede Woche erleben. Danach im Kreis erklären, was in der Pubertät mit der inneren Uhr passiert, und die Punkte vorlesen. Zum Schluss rechnet jede Person auf dem Blatt rückwärts, wann bei ihr das Licht aus sein müsste (Aufgabe 1 und 2); die Leitung rechnet ihr eigenes Beispiel vor.",
+          "sagen": [
+            "Stellt euch dahin, wo an Schultagen euer Wecker klingelt. Und jetzt: Wann würdet ihr in den Ferien von selbst aufwachen?",
+            "Wer ist mehr als zwei Stunden gelaufen? Das ist, als würdet ihr jedes Wochenende in eine andere Zeitzone fliegen und montags zurück.",
+            "Später müde werden ist Biologie, keine Faulheit. Der Wecker weiß das nur leider nicht."
+          ],
+          "punkte": [
+            "In der Pubertät stellt sich die innere Uhr später: Das Schlafhormon Melatonin kommt abends später, man wird später müde.",
+            "Mit 13 bis 18 Jahren braucht man 8 bis 10 Stunden Schlaf – mehr, als viele denken.",
+            "Tageslicht am Morgen hilft, abends früher müde zu werden; helles Licht spät am Abend schiebt die Müdigkeit weiter nach hinten.",
+            "Sehr langes Ausschlafen am Wochenende verschiebt die Uhr zusätzlich – der Montag wird dann besonders hart."
+          ],
+          "tipp": "Bei nur zwei, drei Jugendlichen oder wenig Platz geht die Aufstellung auch an der Tafel: Jede Person klebt zwei Klebezettel auf eine gezeichnete Zeitlinie und verbindet sie mit einem Pfeil.",
+          "wennEsKippt": "Stellen sich alle demonstrativ auf 12 Uhr, das mit Humor nehmen und genauer fragen: An einem ganz normalen Ferientag, ohne Party am Abend davor? Wer seine Zeiten nicht zeigen möchte, liest die Uhrzeiten vor und schätzt, wo die meisten landen.",
+          "blatt": "skills-schlaf-experiment"
+        },
+        {
+          "titel": "Handy, Abendroutine und meine Änderung",
+          "dauer": 15,
+          "phase": "uebung",
+          "text": "Das Tafelbild zeigen und zu jeder Zeile der linken Spalte fragen, wer das kennt – von sich oder von anderen. Die rechte Spalte füllt die Gruppe; die Leitung ergänzt nur, was fehlt. Klar sagen: Das Handy ist nicht der Feind, es geht um den Zeitpunkt. Dann eine Abendroutine als Beispiel daneben schreiben (Liste): Dieselbe Reihenfolge jeden Abend wirkt wie ein Signal an den Körper, dass jetzt heruntergefahren wird. Anschließend wählt jede Person auf dem Blatt eine einzige Änderung für ihre Abende und legt sie als Wenn-dann-Satz fest (Aufgabe 3). Zu zweit prüfen: Sind Zeitpunkt und Handlung so klar, dass man sie filmen könnte?",
+          "sagen": [
+            "Welche davon kennt ihr – von euch oder von anderen?",
+            "Eine Änderung, nicht fünf. Nur so seht ihr am Ende, ob genau diese etwas bringt.",
+            "Könnte man euren Plan filmen? „Ich lege es früher weg“ nicht. „Um 21:45 kommt es an die Ladestation im Flur“ schon."
+          ],
+          "punkte": [
+            "21:30 Tasche für morgen packen",
+            "21:45 Handy an die Ladestation im Flur, Wecker stellen",
+            "22:00 duschen, Zähne putzen, Zettel für den Kopf-Parkplatz",
+            "22:10 lesen, Hörbuch oder ruhige Musik",
+            "22:30 Licht aus"
+          ],
+          "tabelle": {
+            "spalten": [
+              "Wie das Handy Schlaf stiehlt",
+              "Was dagegen hilft"
+            ],
+            "zeilen": [
+              [
+                "Zeit: „Nur noch ein Video“ wird zu einer Stunde.",
+                "Feste Uhrzeit, ab der das Handy außerhalb des Betts lädt"
+              ],
+              [
+                "Aufregung: Chat, Streit oder Game drehen den Kopf hoch.",
+                "Die letzte halbe Stunde ohne Chats und Games"
+              ],
+              [
+                "Unterbrechung: Nachrichten und Vibration in der Nacht",
+                "„Nicht stören“ oder das Handy außerhalb des Zimmers"
+              ],
+              [
+                "Licht: Ein helles Display spät am Abend hält wach.",
+                "Display dunkler stellen – besser noch weglegen"
+              ]
+            ]
+          },
+          "tipp": "Wer das Handy als Wecker braucht, kann es mit „Nicht stören“ auf den Schreibtisch legen: Der Weg aus dem Bett weckt morgens zusätzlich.",
+          "wennEsKippt": "Kommt der Einwand „Ohne Handy kann ich nicht einschlafen“, ihn ernst nehmen: Dann heißt der Plan nicht „kein Handy“, sondern etwa ein Hörbuch mit Timer bei dunklem Display. Kippt das Gespräch in Ärger über Regeln zu Hause, nicht Partei ergreifen: Heute geht es um das, was jede Person selbst entscheiden kann.",
+          "blatt": "skills-schlaf-experiment"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Gemeinsam essen, Fenster auf, das Thema ruht. Zwei Freiwillige können in der Zwischenzeit mit der Leitung die Mittellinien und Schutzzonen für das Quiz abkleben."
+        },
+        {
+          "titel": "Tag und Nacht: Schlaf-Quiz in Bewegung",
+          "dauer": 22,
+          "phase": "aktiv",
+          "text": "Zwei Teams, Lerchen und Eulen, stehen sich an zwei Mittellinien gegenüber, etwa zwei Meter auseinander; hinter jedem Team liegt in acht bis zehn Metern seine Schutzzone. Die Leitung liest eine Aussage vor: Stimmt sie, fangen die Lerchen die Eulen, stimmt sie nicht, fangen die Eulen die Lerchen. Wer vor der Schutzzone an Schulter oder Rücken berührt wird, wechselt ins andere Team; niemand scheidet aus. Nach jeder Runde gehen alle zurück an die Linien, und die Leitung löst mit einem Satz auf. Zum Schluss sitzen alle kurz zusammen: Welche Antwort hat euch überrascht?",
+          "sagen": [
+            "Stimmt – die Lerchen fangen. Stimmt nicht – die Eulen fangen. Berührt wird nur an Schulter oder Rücken, niemand wird geschubst.",
+            "Wer lag richtig? Und wer ist in die falsche Richtung gerannt, obwohl er es eigentlich wusste?"
+          ],
+          "tabelle": {
+            "spalten": [
+              "Aussage",
+              "Lösung",
+              "Kurz erklärt"
+            ],
+            "zeilen": [
+              [
+                "In der Pubertät wird man abends später müde als früher.",
+                "stimmt",
+                "Die innere Uhr stellt sich später – Biologie, keine Faulheit."
+              ],
+              [
+                "Mit 14 reichen sieben Stunden Schlaf völlig.",
+                "stimmt nicht",
+                "Gebraucht werden 8 bis 10 Stunden."
+              ],
+              [
+                "Wer am Wochenende bis mittags schläft, holt alles nach.",
+                "stimmt nicht",
+                "Es hilft etwas, verschiebt aber die innere Uhr. Der Montag wird härter."
+              ],
+              [
+                "Ein Energydrink am Nachmittag kann abends noch wach halten.",
+                "stimmt",
+                "Koffein wirkt noch Stunden später."
+              ],
+              [
+                "Wer nicht einschlafen kann, scrollt am besten, bis er müde wird.",
+                "stimmt nicht",
+                "Inhalte und Licht halten wach. Besser: etwas Ruhiges ohne Bildschirm."
+              ],
+              [
+                "Tageslicht am Morgen hilft, abends früher müde zu werden.",
+                "stimmt",
+                "Licht am Morgen stellt die innere Uhr früher."
+              ],
+              [
+                "Im Schlaf festigt das Gehirn, was man tagsüber gelernt hat.",
+                "stimmt",
+                "Wer die Nacht vor der Prüfung durchlernt, spart genau diesen Schlaf ein."
+              ],
+              [
+                "Nach einer kurzen Nacht ist man schneller gereizt.",
+                "stimmt",
+                "Müdigkeit macht die Zündschnur kürzer."
+              ],
+              [
+                "Zwei Stunden Mittagsschlaf sind nach einer kurzen Nacht ideal.",
+                "stimmt nicht",
+                "Etwa 20 Minuten helfen; lange Nickerchen erschweren das Einschlafen am Abend."
+              ],
+              [
+                "Liegt das Handy lautlos neben dem Bett, stört es den Schlaf nicht.",
+                "stimmt nicht",
+                "Aufleuchten, Vibrieren und der Griff danach beim kurzen Aufwachen stören."
+              ],
+              [
+                "Wer zu wenig schläft, merkt das immer selbst.",
+                "stimmt nicht",
+                "An Müdigkeit gewöhnt man sich; viele merken sie nur an Laune und Konzentration."
+              ],
+              [
+                "Lerchen und Eulen gibt es auch bei Menschen.",
+                "stimmt",
+                "Manche werden früh wach, andere spät müde. Jugendliche sind meist Eulen."
+              ]
+            ]
+          },
+          "tipp": "Bei Regen in der Turnhalle oder im freigeräumten Raum spielen. Bei nur zwei, drei Jugendlichen die Sprint-Variante: Bei „stimmt“ rennen alle zur Fensterwand, bei „stimmt nicht“ zur Tür, und die Leitung rennt mit. Bei wenig Platz oder wenig Energie im Sitzen: Bei „stimmt“ aufstehen, bei „stimmt nicht“ sitzen bleiben.",
+          "wennEsKippt": "Wird zu grob gefangen, sofort stoppen, die Berühr-Regel wiederholen und die nächste Runde gehend statt rennend spielen. Streitet die Gruppe hitzig über eine Lösung, ist das ein gutes Zeichen: die Frage notieren und nach dem Spiel in Ruhe klären."
+        },
+        {
+          "titel": "Skill: Kopf-Parkplatz und lang ausatmen",
+          "dauer": 10,
+          "phase": "skill",
+          "text": "Alle sitzen bequem, das Licht ist etwas gedimmt. Jede Person bekommt einen Zettel und schreibt zwei Minuten lang auf, was ihr gerade im Kopf herumgeht – Termine, Sorgen, Ideen, auch Kleinkram. Der Zettel wird gefaltet und eingesteckt: geparkt, nicht vergessen. Dann zählt die Leitung zehn ruhige Atemzüge vor, vier Sekunden ein und sechs aus. Danach kurz erklären: Der Zettel entlastet den Kopf, das lange Ausatmen bremst den Körper – zusammen ein Skill fürs Einschlafen.",
+          "sagen": [
+            "Alles, was euch gerade im Kopf herumfährt, kommt auf den Zettel. Niemand liest ihn. Ihr parkt es nur – morgen ist es noch da.",
+            "Ein – zwei – drei – vier. Aus – zwei – drei – vier – fünf – sechs."
+          ],
+          "tipp": "Wer zu Hause Zettel und Stift neben das Bett legt, hat den Skill sofort griffbereit – das kann auch die Änderung für das Experiment sein.",
+          "wennEsKippt": "Wer nichts aufschreiben mag, schreibt eine Einkaufsliste oder malt – auch das parkt Gedanken. Kichern beim Atmen übergehen und ruhig weiterzählen; wer die Augen nicht schließen möchte, schaut auf einen Punkt am Boden."
+        },
+        {
+          "titel": "Experiment starten, Réckbléck und Skills-Pass",
+          "dauer": 8,
+          "phase": "abschluss",
+          "text": "Aufgabe 4 auf dem Blatt erklären: ab morgen jeden Morgen eine Zeile, auch an Tagen, an denen der Plan nicht geklappt hat – das sind die Vergleichstage. Den Ausgangswert aus dem Check-in gleich eintragen. Blitzlicht: Was ist deine Änderung? Wer sie nicht nennen möchte, sagt nur, ob sie abends oder morgens dran ist. Dann Eintrag in den Skills-Pass mit Stempel; das Blatt geht mit nach Hause.",
+          "sagen": [
+            "Tage, an denen es nicht klappt, sind kein Scheitern. Sie sind euer Vergleich.",
+            "Für den Pass: eure Änderung als Satz – oder das, was ihr heute über euren Schlaf gelernt habt."
+          ],
+          "tipp": "Wer fürchtet, das Blatt zu Hause zu verlieren, fotografiert die Tabelle und trägt die Zahlen im Handy ein.",
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Nächstes Mal schauen wir zuerst auf eure Ergebnisse – bringt das Blatt mit. Danach geht es darum, was Essen, Trinken und Energydrinks mit eurer Energie machen.",
+      "hintergrund": "In der Pubertät verschiebt sich die innere Uhr nach hinten: Melatonin kommt abends später, der Schlafdruck baut sich langsamer auf. Mit frühem Schulbeginn und dem Handy im Zimmer entsteht ein „perfekter Sturm“ (Carskadon, 2011): Viele schlafen unter der Woche weniger als die empfohlenen 8 bis 10 Stunden (Paruthi et al., 2016). Bildschirmzeit hing in rund neun von zehn Studien mit späterem Zubettgehen und kürzerem Schlaf zusammen (Hale & Guan, 2015); der Wechsel zwischen Schultag und Wochenende wirkt wie ein „sozialer Jetlag“ (Wittmann et al., 2006). Müdigkeit macht reizbarer; das Skillstraining für Jugendliche zählt ausgeglichenen Schlaf zu den Skills gegen starke Gefühle (Rathus & Miller, 2015). Wer vor dem Schlafen aufschreibt, was noch zu tun ist, schlief in einer Laborstudie schneller ein (Scullin et al., 2018). Ein Wenn-dann-Plan hilft bei der Umsetzung (Gollwitzer, 1999); bis eine Gewohnheit von selbst läuft, vergehen meist Wochen (Lally et al., 2010).",
+      "quellen": [
+        "Carskadon, M. A. (2011). Sleep in adolescents: The perfect storm. Pediatric Clinics of North America, 58(3), 637–647.",
+        "Paruthi, S. et al. (2016). Recommended amount of sleep for pediatric populations: A consensus statement of the American Academy of Sleep Medicine. Journal of Clinical Sleep Medicine, 12(6), 785–786.",
+        "Hale, L. & Guan, S. (2015). Screen time and sleep among school-aged children and adolescents: A systematic literature review. Sleep Medicine Reviews, 21, 50–58.",
+        "Wittmann, M., Dinich, J., Merrow, M. & Roenneberg, T. (2006). Social jetlag: Misalignment of biological and social time. Chronobiology International, 23(1–2), 497–509.",
+        "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford.",
+        "Scullin, M. K., Krueger, M. L., Ballard, H. K., Pruett, N. & Bliwise, D. L. (2018). The effects of bedtime writing on difficulty falling asleep: A polysomnographic study comparing to-do lists and completed activity lists. Journal of Experimental Psychology: General, 147(1), 139–146.",
+        "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503.",
+        "Lally, P., van Jaarsveld, C. H. M., Potts, H. W. W. & Wardle, J. (2010). How are habits formed: Modelling habit formation in the real world. European Journal of Social Psychology, 40(6), 998–1009."
+      ],
+      "achtung": "Schlaf berührt Privates: Nicht alle haben ein eigenes Zimmer, manche versorgen abends Geschwister, andere liegen wegen Sorgen, Streit oder Lärm wach. Deshalb nicht nach Abläufen zu Hause fragen und keine Schlafzeiten vergleichen oder bewerten. Anhaltende Schlaflosigkeit, Albträume, nächtliches Grübeln oder große Tagesmüdigkeit können auf Belastungen hinweisen: ein Einzelgespräch anbieten, die Schulärztin oder den Schularzt beziehungsweise den SePAS einbeziehen und die zuständige Leitung (Responsable) informieren. Keine Schlafmittel oder Nahrungsergänzungsmittel empfehlen. Erzählt jemand, dass er nachts aus Angst nicht schläft oder zu Hause nicht sicher ist, nach dem internen Schutzkonzept handeln und die Responsable noch am selben Tag informieren."
+    },
+    {
+      "id": "j2-e31",
+      "nr": 31,
+      "jahr": 2,
+      "modul": "j2-m9",
+      "titel": "Essen, Trinken, Energie",
+      "kurz": "Wann ist der Akku voll, wann leer? Die Jugendlichen zeichnen ihre Energie über den Tag, lesen das Kleingedruckte auf Energydrinks und packen im Team eine Pausen-Tasche – ohne Diät- und Körperdruck.",
+      "dauer": 100,
+      "ziele": [
+        "werten ihr Schlaf-Experiment aus und benennen, was ihre Änderung bewirkt hat",
+        "zeichnen ihre Energie über einen Schultag und erkennen Zusammenhänge mit Schlaf, Trinken und Essen",
+        "lesen die Angaben auf Energydrinks und erklären die Koffein-Falle",
+        "üben den Energie-Check und legen fest, was sie beim nächsten Tief zuerst tun"
+      ],
+      "material": [
+        "Gefühlsrad und Anspannungsskala",
+        "Blätter „Mein Schlaf-Experiment“ aus Einheit 30 (bringen die Jugendlichen mit), einige Ersatzblätter",
+        "Schülerblatt „Meine Energie über den Tag“ je Person",
+        "Drei bis fünf leere, ausgespülte Dosen und Flaschen: Energydrink (250 und 500 ml), Cola, Eistee, Wasser",
+        "Karten „Pausen-Tasche“: ein Satz je Team auf farbigem Papier, ausgeschnitten",
+        "Zwei Stoffbeutel als Taschen, Kreppband für die Startlinie, Flipchart und dicke Stifte",
+        "Wasser-Bar: drei Krüge Leitungswasser, Zitronen- und Gurkenscheiben, frische Minze, Becher und Gläser",
+        "Imbiss mit Brot, Obst und Gemüse (Allergien und Essensregeln beachten)",
+        "Skills-Pässe, Stempel"
+      ],
+      "vorbereitung": [
+        "Dosen und Flaschen besorgen, ausspülen und die Angaben zu Koffein und die Warnhinweise vorher selbst lesen.",
+        "Die Karten „Pausen-Tasche“ zweimal auf verschiedenfarbiges Papier drucken und ausschneiden.",
+        "Für die Staffel Flur, Turnhalle oder Hof nutzen: Startlinie und Kartenfelder 10 bis 15 Meter auseinander.",
+        "Allergien, Unverträglichkeiten und Fastenzeiten prüfen; wer fastet, bekommt den Imbiss zum Mitnehmen.",
+        "Die eigene Energie-Kurve eines Schultags für die Tafel vorbereiten."
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-schlaf-experiment",
+        "skills-energie-kurve",
+        "skills-pausen-tasche",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in: Gefühlsrad, Anspannung und Akkustand"
+        },
+        {
+          "min": "10–18",
+          "phase": "bruecke",
+          "titel": "Das Schlaf-Experiment: Ergebnisse"
+        },
+        {
+          "min": "18–32",
+          "phase": "uebung",
+          "titel": "Meine Energie über den Tag"
+        },
+        {
+          "min": "32–45",
+          "phase": "input",
+          "titel": "Was den Akku lädt – und die Koffein-Falle"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Wasser-Bar"
+        },
+        {
+          "min": "60–82",
+          "phase": "aktiv",
+          "titel": "Pausen-Tasche-Staffel"
+        },
+        {
+          "min": "82–90",
+          "phase": "skill",
+          "titel": "Skill: achtsam trinken und Energie-Check"
+        },
+        {
+          "min": "90–95",
+          "phase": "uebung",
+          "titel": "Mein Energie-Plan"
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Réckbléck und Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in: Gefühlsrad, Anspannung und Akkustand",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Gefühlsrad und Anspannungsskala liegen in der Mitte; reihum nennt jede Person ein Gefühlswort und ihre Anspannung. Dazu heute der Akkustand in Prozent: Wie voll ist dein Akku gerade? Wer mag, sagt, was ihn heute geladen oder geleert hat. Die Leitung beginnt, etwa: „Ich bin bei 60 Prozent, der Kaffee von heute Morgen wirkt nicht mehr.“",
+          "sagen": [
+            "Gefühl, Anspannung – und euer Akku gerade in Prozent. Was hat ihn heute geladen, was geleert?"
+          ],
+          "tipp": "Akku und Anspannung sind zwei verschiedene Dinge: Man kann bei 20 Prozent Akku und 70 Anspannung sein. Wem das auffällt, der hat den ersten Punkt von heute schon verstanden.",
+          "wennEsKippt": "Nennt jemand immer wieder 0 Prozent, das nicht als Provokation nehmen: kurz fragen, ob heute etwas los war, und später unter vier Augen nachfragen, wenn es häufiger vorkommt.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Das Schlaf-Experiment: Ergebnisse",
+          "dauer": 8,
+          "phase": "bruecke",
+          "text": "Die Blätter aus Einheit 30 kommen auf den Tisch. Jede Person füllt Aufgabe 5 aus und vergleicht Tage mit und ohne Plan; wer das Blatt vergessen hat, schätzt aus der Erinnerung. Dann Daumen-Runde: Hat die Änderung etwas gebracht? Zwei, drei Freiwillige nennen ihr Ergebnis in einem Satz. Zum Schluss den Bogen schlagen: Schlaf ist die erste von drei Energiequellen, heute kommt die zweite.",
+          "sagen": [
+            "Daumen auf drei: Hat eure Änderung etwas gebracht – hoch, Mitte oder runter?",
+            "Auch „hat nicht geklappt“ ist ein Ergebnis. Was hat dazwischengefunkt – und wäre ein kleinerer Plan machbar?"
+          ],
+          "tipp": "Die Leitung nennt ihr eigenes Ergebnis zuerst, gern auch ein durchwachsenes – das macht es leichter, ehrlich zu sein.",
+          "wennEsKippt": "Hat kaum jemand das Experiment gemacht, nicht moralisieren: kurz fragen, was im Weg war, und anbieten, es diese Woche mit einer kleineren Änderung noch einmal zu versuchen.",
+          "blatt": "skills-schlaf-experiment"
+        },
+        {
+          "titel": "Meine Energie über den Tag",
+          "dauer": 14,
+          "phase": "uebung",
+          "text": "Die Leitung zeichnet ihre eigene Energie-Kurve eines Schultags an die Tafel, mit einem Tief am späten Vormittag und einem Kaffee um acht. Dann zeichnet jede Person still ihre Kurve auf dem Blatt und markiert, wann sie etwas isst oder trinkt (Aufgabe 1). Es geht um einen ganz normalen Schultag, nicht um den besten. Danach Aufgabe 2 ergänzen; wer mag, vergleicht zu zweit, wann das Tief kommt und was davor war. Zum Schluss sammelt die Leitung ohne Namen an der Tafel, zu welchen Uhrzeiten die Tiefs liegen.",
+          "sagen": [
+            "Zeichnet einen ganz normalen Dienstag, nicht euren besten Tag.",
+            "Schaut auf euer Tief: Was war zwei Stunden vorher – eine kurze Nacht, nichts getrunken, nichts gegessen, stundenlang gesessen?"
+          ],
+          "tipp": "Oft liegen viele Tiefs am späten Vormittag und nach dem Mittagessen. Das ist normal und kein persönliches Versagen – der Körper hat einen Rhythmus.",
+          "wennEsKippt": "Sagt jemand, er esse bis zum Abend gar nichts, das nicht vor der Gruppe kommentieren: aufnehmen, weitermachen und später unter vier Augen fragen, ob das oft so ist und woran es liegt.",
+          "blatt": "skills-energie-kurve"
+        },
+        {
+          "titel": "Was den Akku lädt – und die Koffein-Falle",
+          "dauer": 13,
+          "phase": "input",
+          "text": "Den Info-Kasten gemeinsam lesen und an die Kurven anknüpfen: Welche Ladequelle hätte euer Tief abgefedert? Dann die leeren Dosen und Flaschen verteilen; zu zweit lesen die Jugendlichen das Kleingedruckte und füllen Aufgabe 3 aus. Auf Getränken mit viel Koffein steht in der EU ein Hinweis, dass sie für Kinder nicht empfohlen sind – die Gruppe soll ihn selbst finden. Danach die Werte zur Orientierung vorlesen; die Angaben auf den mitgebrachten Dosen gehen vor. Zum Schluss die Koffein-Falle als Kreis an die Tafel zeichnen und fragen, wo man aussteigen kann.",
+          "sagen": [
+            "Findet das Kleingedruckte: Wie viel Koffein steckt in der ganzen Dose, und was steht als Hinweis drauf?",
+            "Ein Energydrink macht euch nicht wacher, als ihr ausgeschlafen wärt. Er leiht euch Energie – und die Rechnung kommt abends."
+          ],
+          "punkte": [
+            "Energydrink, 250 ml: etwa 80 mg Koffein",
+            "Energydrink, 500 ml: etwa 160 mg Koffein",
+            "Espresso: etwa 60 bis 80 mg",
+            "Tasse schwarzer Tee: etwa 30 bis 50 mg",
+            "Cola, 330 ml: etwa 30 mg"
+          ],
+          "tipp": "Nicht über Zucker und Kalorien sprechen, sondern beim Koffein und seiner Wirkung auf den Schlaf bleiben – so bleibt es sachlich und ohne Körperthemen.",
+          "wennEsKippt": "Prahlt jemand damit, wie viele Dosen er schafft, nicht empört reagieren und keine Angst machen: sachlich fragen, wie er danach schläft, und mit der Koffein-Falle weitermachen. Bei auffällig hohem Konsum nach der Einheit ein Gespräch anbieten.",
+          "blatt": "skills-energie-kurve"
+        },
+        {
+          "titel": "Pause mit Wasser-Bar",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Drei Krüge Leitungswasser stehen bereit: pur, mit Zitrone, mit Gurke und Minze. Wer mag, probiert alle drei und stimmt mit einem Strich an der Tafel ab. Dazu ein Imbiss mit Brot, Obst und Gemüse; das Thema ruht, und niemand muss probieren."
+        },
+        {
+          "titel": "Pausen-Tasche-Staffel",
+          "dauer": 22,
+          "phase": "aktiv",
+          "text": "Zwei Teams bekommen je einen Kartensatz in eigener Farbe, der verdeckt am anderen Ende von Flur, Halle oder Hof ausliegt. Die Leitung nennt die Lage: ein langer Schultag bis 16 Uhr, danach Training oder Praktikum. Pro Team rennt immer eine Person los, deckt eine Karte auf und nimmt sie mit – oder dreht sie wieder um und kommt mit leeren Händen zurück; dann startet die nächste. Nach vier Minuten oder fünf Karten ist die Tasche voll. Jedes Team stellt seine Tasche vor und zeichnet die erwartete Energie-Kurve auf das Flipchart; danach folgt eine zweite Runde mit neuer Lage, etwa Prüfung in der ersten Stunde oder heißer Tag mit Sport.",
+          "sagen": [
+            "Es gewinnt nicht, wer am schnellsten ist, sondern die Tasche, mit der ihr am besten bis 16 Uhr kommt.",
+            "Die Karten liegen verdeckt. Merkt euch, wo welche liegt, und sagt es eurem Team.",
+            "Wie sieht eure Kurve mit dieser Tasche aus? Wo kommt das Tief, und was fängt es auf?"
+          ],
+          "tipp": "Chips, Kekse und Eis sind ausdrücklich erlaubt: Die Frage ist nicht, was verboten ist, sondern was wofür gut ist – Genuss zwischendurch oder Energie bis zum Nachmittag. Bei Regen läuft die Staffel im Flur; bei wenig Energie im Sitzen, mit offenen Karten auf dem Tisch; bei nur zwei Jugendlichen packt jede Person ihre eigene Tasche, und die Leitung spielt mit.",
+          "wennEsKippt": "Wird die Staffel zum Rempeln, das Tempo herausnehmen: Die nächste Runde wird gegangen, und im Kartenfeld darf immer nur eine Person pro Team sein. Zieht sich jemand zurück, weil ihn die Karten an eigene Essgewohnheiten erinnern, nicht darauf ansprechen, sondern ihm die Zeitnahme übertragen.",
+          "blatt": "skills-pausen-tasche"
+        },
+        {
+          "titel": "Skill: achtsam trinken und Energie-Check",
+          "dauer": 8,
+          "phase": "skill",
+          "text": "Alle setzen sich, jede Person hat ein Glas Wasser. Zuerst eine Minute achtsam trinken: das Glas anschauen, die Kühle spüren, einen Schluck im Mund halten, langsam schlucken. Dann den Energie-Check anleiten, mit geschlossenen oder offenen Augen und Pausen zwischen den Fragen. Zum Schluss erklären: Wer bei einem Tief zuerst den Körper fragt, greift seltener zur falschen Ladequelle – und bei Stress hilft ein Atem-Skill oft mehr als ein Snack.",
+          "sagen": [
+            "Fragt euren Körper, nicht euren Kopf. Was meldet sich zuerst?"
+          ],
+          "punkte": [
+            "Durst? Wann hast du zuletzt etwas getrunken?",
+            "Hunger? Knurrt der Magen, ist dir flau?",
+            "Müde? Brennen die Augen, wird der Kopf schwer?",
+            "Zu lange gesessen? Wollen die Beine sich bewegen?",
+            "Gestresst? Wo im Körper sitzt die Anspannung?"
+          ],
+          "tipp": "Der Check dauert eine Minute, passt in jede Pause und fällt niemandem auf.",
+          "wennEsKippt": "Findet jemand die Übung komisch, darf er mit offenen Augen einfach sein Wasser trinken und die Fragen still für sich beantworten."
+        },
+        {
+          "titel": "Mein Energie-Plan",
+          "dauer": 5,
+          "phase": "uebung",
+          "text": "Jede Person füllt Aufgabe 4 aus: Was tue ich beim nächsten Tief zuerst? Die Leitung erinnert an die Reihenfolge – erst fragen, dann laden. Wer mag, liest seinen Wenn-dann-Satz vor; die anderen prüfen, ob er im Schulalltag wirklich machbar ist.",
+          "sagen": [
+            "Was tust du beim nächsten Durchhänger in der dritten Stunde – ganz konkret?"
+          ],
+          "blatt": "skills-energie-kurve"
+        },
+        {
+          "titel": "Réckbléck und Skills-Pass",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Blitzlicht mit der Frage: Was lädt meinen Akku am zuverlässigsten? Jede Person nennt eine Sache, gern auch Schlaf, Musik oder Menschen. Dann Eintrag in den Skills-Pass, etwa der Energie-Plan, und Stempel. Zum Schluss an passende Schuhe für nächstes Mal erinnern.",
+          "sagen": [
+            "Ein Wort: Was lädt euren Akku am zuverlässigsten?"
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Nächstes Mal kommt die dritte Energiequelle: Bewegung. Zieht Schuhe an, in denen ihr gut laufen könnt – wir gehen raus.",
+      "hintergrund": "Wach und konzentriert sind Jugendliche, wenn Schlaf, Trinken und über den Tag verteilte Mahlzeiten stimmen; ein Frühstück verbessert kurzfristig die Aufmerksamkeit im Unterricht (Adolphus et al., 2013). Ausgewogenes Essen und Schlafen gehören im Skillstraining zu den Skills gegen starke Gefühle (Rathus & Miller, 2015). Über Kalorien, Gewicht oder gute und schlechte Lebensmittel spricht die Einheit bewusst nicht: Vergleiche und Körperdruck verstärken die Unzufriedenheit mit dem Aussehen (Fardouly et al., 2015), und Diäten schaden eher – wer als Jugendlicher Diät hielt, hatte fünf Jahre später häufiger Essanfälle und gestörtes Essverhalten (Neumark-Sztainer et al., 2006). Geübt wird, Durst, Hunger und Müdigkeit wahrzunehmen – Craig (2002) nennt das Interozeption. Schon etwa 100 mg Koffein am späten Abend können bei manchen das Einschlafen verzögern (EFSA, 2015); Warnungen wirken nur, wenn klar ist, was man stattdessen tun kann (Peters, Ruiter & Kok, 2013).",
+      "quellen": [
+        "Adolphus, K., Lawton, C. L. & Dye, L. (2013). The effects of breakfast on behavior and academic performance in children and adolescents. Frontiers in Human Neuroscience, 7, 425.",
+        "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford.",
+        "Fardouly, J., Diedrichs, P. C., Vartanian, L. R. & Halliwell, E. (2015). Social comparisons on social media: The impact of Facebook on young women’s body image concerns and mood. Body Image, 13, 38–45.",
+        "Neumark-Sztainer, D., Wall, M., Guo, J., Story, M., Haines, J. & Eisenberg, M. (2006). Obesity, disordered eating, and eating disorders in a longitudinal study of adolescents: How do dieters fare 5 years later? Journal of the American Dietetic Association, 106(4), 559–568.",
+        "Craig, A. D. (2002). How do you feel? Interoception: The sense of the physiological condition of the body. Nature Reviews Neuroscience, 3(8), 655–666.",
+        "EFSA Panel on Dietetic Products, Nutrition and Allergies (NDA) (2015). Scientific Opinion on the safety of caffeine. EFSA Journal, 13(5), 4102.",
+        "Peters, G.-J. Y., Ruiter, R. A. C. & Kok, G. (2013). Threatening communication: A critical re-analysis and a revised meta-analytic test of fear appeal theory. Health Psychology Review, 7(Suppl. 1), S8–S31."
+      ],
+      "achtung": "Essen ist ein sensibles Thema. Keine Bemerkungen zu Körpern, Gewicht, Portionen oder Kalorien und keine Einteilung in gesund und ungesund; was es zu Hause gibt, entscheiden Jugendliche oft nicht selbst. Allergien, Unverträglichkeiten, religiöse Essensregeln und Fastenzeiten beachten – niemand muss probieren. Hinweise auf gestörtes Essverhalten (Mahlzeiten konsequent auslassen, Angst vor dem Essen, abwertende Sätze über den eigenen Körper, Sport zum Ausgleich, Erbrechen) nicht in der Gruppe ansprechen: die Person nach der Einheit ruhig und ohne Vorwürfe ansprechen, nichts versprechen, was man nicht halten kann, und die zuständige Leitung (Responsable) am selben Tag informieren. Hunger aus Geldmangel diskret aufgreifen. Bei sehr hohem Koffeinkonsum oder Beschwerden wie Herzrasen ein Gespräch anbieten; bei akuten Beschwerden Notruf 112."
+    },
+    {
+      "id": "j2-e32",
+      "nr": 32,
+      "jahr": 2,
+      "modul": "j2-m9",
+      "titel": "Bewegung für den Kopf",
+      "kurz": "Erst messen, dann erklären: Draußen testet die Gruppe, wie zügiges Gehen und ein schnelles Spiel Stimmung und Wachheit verändern, lernt das Gegenteil-Tun kennen und plant eine eigene Bewegungsidee.",
+      "dauer": 100,
+      "ziele": [
+        "messen in einem Experiment, wie zwei Arten von Bewegung ihre Stimmung und Wachheit verändern",
+        "benennen, was Bewegung für Stimmung, Anspannung und Konzentration bewirken kann – auch ohne Sport",
+        "lernen das Gegenteil-Tun als Skill gegen die Schlapp-Falle kennen",
+        "wählen eine eigene Bewegungsidee für die Woche und sichern sie mit einem Wenn-dann-Plan"
+      ],
+      "material": [
+        "Gefühlsrad und Anspannungsskala",
+        "Schülerblatt „Mein Bewegungs-Experiment“ je Person, Klemmbretter und Stifte",
+        "Gesprächskarten für den Spaziergang (Schritt 3), eine je Paar",
+        "20 bis 30 Markierungshütchen oder Pappteller, die auf einer Seite farbig markiert sind",
+        "Stoppuhr oder Handy, Pfeife",
+        "Wasser, Erste-Hilfe-Tasche, geladenes Handy der Leitung mit den Notfallnummern",
+        "Matten oder Decken für das Dehnen (optional)",
+        "Skills-Pässe, Stempel",
+        "Imbiss und Getränke (Allergien beachten)"
+      ],
+      "vorbereitung": [
+        "Eine Runde für den Spaziergang ablaufen: etwa zehn Minuten zügiges Gehen, gut einsehbar, ohne gefährliche Straßenquerungen, mit festem Treffpunkt.",
+        "Für die Hütchen-Wende eine ebene Fläche auf dem Hof oder die Turnhalle reservieren; bei Regen findet alles drinnen statt.",
+        "Asthma, Herz-Kreislauf-Probleme und Verletzungen erfragen; Asthmaspray und Wasser kommen mit nach draußen.",
+        "Die Gesprächskarten aus Schritt 3 auf Karteikarten schreiben."
+      ],
+      "blaetter": [
+        "skills-gefuehlsrad",
+        "skills-bewegungs-experiment",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in mit Vorher-Zahlen"
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Energie-Plan nachgefragt, heute Bewegung"
+        },
+        {
+          "min": "15–45",
+          "phase": "aktiv",
+          "titel": "Das Bewegungs-Experiment draußen"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–72",
+          "phase": "input",
+          "titel": "Was Bewegung mit dem Kopf macht"
+        },
+        {
+          "min": "72–85",
+          "phase": "uebung",
+          "titel": "Meine Bewegungsidee für die Woche"
+        },
+        {
+          "min": "85–95",
+          "phase": "skill",
+          "titel": "Skill: Dehnen im Atemrhythmus"
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Réckbléck, Skills-Pass und Ausblick"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Check-in mit Vorher-Zahlen",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Gefühlsrad und Anspannungsskala liegen in der Mitte, reihum Gefühlswort und Anspannung. Dann teilt die Leitung das Blatt aus: Jede Person trägt still ihre Vorher-Werte in Zeile 1 ein, Stimmung und Wachheit von 0 bis 10. Diese Zahlen werden nicht laut genannt; sie sind der Ausgangspunkt für das Experiment. Klemmbretter und Stifte kommen mit nach draußen.",
+          "sagen": [
+            "Gefühl und Anspannung wie immer. Dann zwei Zahlen nur für euch aufs Blatt: Wie ist eure Stimmung, wie wach seid ihr – jeweils von null bis zehn?"
+          ],
+          "tipp": "Die Vorher-Werte still eintragen lassen: So vergleicht niemand, und niemand schreibt ab, was die Nachbarin notiert.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Energie-Plan nachgefragt, heute Bewegung",
+          "dauer": 5,
+          "phase": "bruecke",
+          "text": "Kurz an Einheit 31 anknüpfen: Wer hat seinen Energie-Plan beim letzten Tief ausprobiert? Daumen-Runde, zwei Antworten reichen. Dann das Thema nennen: Bewegung als dritte Energiequelle – nicht als Sport und nicht für den Körper, sondern für den Kopf. Ankündigen, dass heute zuerst gemessen und erst danach erklärt wird.",
+          "sagen": [
+            "Heute geht es nicht um Muskeln und nicht um Sport. Es geht darum, was Bewegung mit eurem Kopf macht – und das messt ihr selbst.",
+            "Ihr seid Versuchspersonen. Ehrlich schätzen, auch wenn sich gar nichts ändert."
+          ]
+        },
+        {
+          "titel": "Das Bewegungs-Experiment draußen",
+          "dauer": 30,
+          "phase": "aktiv",
+          "text": "Runde 1, Gehen und Reden: Die Paare gehen zwölf Minuten zügig die vorher festgelegte Runde, so schnell, dass man noch reden, aber nicht mehr singen kann; jedes Paar bekommt eine Gesprächskarte. Am Treffpunkt tragen alle ihre Nachher-Werte in Zeile 1 ein. Runde 2, Hütchen-Wende: Zwei Teams, die Hütchen liegen verteilt auf der Fläche; das eine Team dreht sie auf den Kopf, das andere stellt sie wieder hin, zweimal 90 Sekunden mit einer Minute Pause. Direkt vorher und danach tragen alle Stimmung und Wachheit in Zeile 2 ein. Auf dem Rückweg nur eine Frage: Welche Runde hat bei euch mehr verändert?",
+          "sagen": [
+            "Zügig heißt: Reden geht noch, Singen nicht mehr.",
+            "Hütchen-Wende: Das eine Team dreht um, das andere stellt auf. Niemand hält Hütchen fest oder schützt sie mit dem Körper.",
+            "Erst eintragen, dann reden – sonst übernehmt ihr die Zahlen der anderen."
+          ],
+          "punkte": [
+            "Was war das Beste an deinem letzten Wochenende?",
+            "Welches Lied hörst du gerade rauf und runter?",
+            "Wohin würdest du gern einmal fahren – und warum?",
+            "Was kannst du, wovon die wenigsten wissen?",
+            "Welche App würdest du nie löschen?",
+            "Was war das Lustigste, das dieses Jahr im Kurs passiert ist?"
+          ],
+          "tipp": "Bei Regen findet alles drinnen statt: Runde 1 im Treppenhaus oder in langen Fluren, Runde 2 in der Turnhalle. Bei nur zwei Jugendlichen spielt die Leitung bei der Hütchen-Wende mit, eine Person gegen zwei; bei wenig Energie wird Runde 2 im Gehen gespielt. Nebenbei merken viele, dass Reden im Gehen leichter fällt als am Tisch – daran knüpft Einheit 33 an.",
+          "wennEsKippt": "Trödelt ein Paar oder bleibt stehen, geht die Leitung ein Stück mit und gibt das Tempo vor, ohne zu schimpfen. Wird die Hütchen-Wende ruppig, sofort abpfeifen und die Regel wiederholen: nur Hütchen berühren, keine Menschen. Wer nicht rennen kann oder mag, zählt am Ende die Hütchen und ist Schiedsrichter.",
+          "blatt": "skills-bewegungs-experiment"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Wasser trinken, gemeinsam essen, Fenster auf; das Thema ruht. Die Leitung achtet darauf, dass nach dem Spiel alle genug trinken."
+        },
+        {
+          "titel": "Was Bewegung mit dem Kopf macht",
+          "dauer": 12,
+          "phase": "input",
+          "text": "Zuerst die Ergebnisse sammeln: Auf ein Zeichen zeigt jede Person mit dem Daumen, ob ihre Stimmung nach Runde 1 gestiegen, gleich geblieben oder gefallen ist, dann nach Runde 2; die Leitung macht Striche an der Tafel. Dann Aufgabe 2 ausfüllen und das Tafelbild besprechen: Die Wirkung ist nicht riesig, zeigt sich in Studien aber immer wieder, und sie braucht keinen Sport. Zum Schluss den Comic auf dem Blatt besprechen (Aufgabe 3): Wer niedergeschlagen ist, will liegen bleiben – das Gegenteil zu tun, ist ein Skill. Wer in Jahr 1 dabei war, kennt Bewegung schon als Skill für hohe Anspannung; heute kommt sie als Skill für schlappe Tage dazu.",
+          "sagen": [
+            "Hat sich bei euch etwas bewegt – außer den Beinen?",
+            "Bei manchen macht Gehen mehr als Rennen, bei anderen ist es umgekehrt. Genau das wolltet ihr herausfinden.",
+            "Wenn alles in euch sagt: liegen bleiben – dann ist zehn Minuten raus oft das Gegenteil, das hilft. Nicht immer, aber öfter, als man denkt."
+          ],
+          "tabelle": {
+            "spalten": [
+              "Bereich",
+              "Was Bewegung bewirken kann"
+            ],
+            "zeilen": [
+              [
+                "Stimmung",
+                "hebt sich oft schon nach zehn Minuten"
+              ],
+              [
+                "Anspannung",
+                "Bewegung verbraucht die Energie, die der Körper bei Stress bereitstellt"
+              ],
+              [
+                "Wachheit und Konzentration",
+                "der Kopf ist danach oft klarer"
+              ],
+              [
+                "Schlaf",
+                "wer sich tagsüber bewegt, schläft abends oft leichter ein"
+              ]
+            ]
+          },
+          "tipp": "Wer nach beiden Runden keine Veränderung gemerkt hat, hat trotzdem ein Ergebnis: Vielleicht passt eine andere Bewegung besser – dafür ist die Woche da.",
+          "wennEsKippt": "Kommt „Sport ist nichts für mich“, das stehen lassen und umdeuten: Heute ging es nicht um Sport. Gehen, Tanzen, Treppen oder Rad fahren zählen genauso.",
+          "blatt": "skills-bewegungs-experiment"
+        },
+        {
+          "titel": "Meine Bewegungsidee für die Woche",
+          "dauer": 13,
+          "phase": "uebung",
+          "text": "Den Info-Kasten auf dem Blatt kurz vorlesen. Dann wählt jede Person eine Bewegungsidee, die ihr Freude macht und in den Alltag passt, und legt sie mit einem Wenn-dann-Satz fest, dazu den Plan für das größte Hindernis (Aufgabe 4). Anschließend die Zuversichtsfrage: Wie sicher bist du, von 0 bis 10? Liegt die Zahl unter 7, wird die Idee gemeinsam verkleinert. Wer mag, sucht sich einen Buddy, der in der nächsten Einheit nachfragt; zum Schluss Aufgabe 5 erklären.",
+          "sagen": [
+            "Nehmt etwas, das ihr gern macht – dann bleibt ihr eher dran als bei etwas, das ihr müsst.",
+            "Unter sieben? Dann machen wir es kleiner: fünf Minuten statt zwanzig, zweimal statt jeden Tag."
+          ],
+          "tipp": "Bewegung, die schon im Alltag steckt – Schulweg, Pause, Treppe –, klappt am zuverlässigsten, weil sie keinen zusätzlichen Termin braucht.",
+          "wennEsKippt": "Plant jemand „jeden Tag eine Stunde ins Fitnessstudio“, freundlich nachfragen, was davon auch in einer stressigen Woche klappt. Hat jemand wegen Krankheit oder Verletzung Einschränkungen, gemeinsam eine passende Idee suchen, etwa Dehnen oder ruhiges Gehen.",
+          "blatt": "skills-bewegungs-experiment"
+        },
+        {
+          "titel": "Skill: Dehnen im Atemrhythmus",
+          "dauer": 10,
+          "phase": "skill",
+          "text": "Im Stehen oder auf Matten, mit genug Abstand zueinander. Die Leitung leitet langsam an und macht mit; jede Bewegung folgt dem Atem, nichts tut weh. Zum Schluss einen Moment still stehen und nachspüren: Wie fühlen sich Beine, Schultern und Kopf jetzt an? Kurz erklären: Nach Bewegung hilft ruhiges Dehnen dem Körper, wieder herunterzufahren – auch abends vor dem Schlafen.",
+          "sagen": [
+            "Nur so weit, wie es angenehm ist. Dehnen ist kein Wettbewerb."
+          ],
+          "punkte": [
+            "Einatmen: die Arme seitlich nach oben. Ausatmen: langsam sinken lassen. Dreimal.",
+            "Einatmen: groß machen. Ausatmen: zur Seite neigen, erst rechts, dann links.",
+            "Die Schultern hochziehen, ausatmen und fallen lassen. Dreimal.",
+            "Ausatmen und den Oberkörper locker nach vorn hängen lassen, Knie weich; mit dem Einatmen langsam aufrollen.",
+            "Hände auf den Bauch, drei ruhige Atemzüge."
+          ],
+          "wennEsKippt": "Wird gekichert oder gerangelt, auf Stühle wechseln und nur die Schulter- und Atemübungen im Sitzen machen."
+        },
+        {
+          "titel": "Réckbléck, Skills-Pass und Ausblick",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Blitzlicht: Welche Runde hat bei dir mehr gebracht – Gehen oder Hütchen-Wende? Dann Eintrag in den Skills-Pass, etwa die Bewegungsidee, und Stempel. Zum Schluss ruhig ankündigen, dass nächstes Mal ein ernstes Thema kommt und das Modul mit dem Skills-Kompass abgeschlossen wird.",
+          "sagen": [
+            "Gehen oder Hütchen – was hat bei euch mehr bewegt?",
+            "Überlegt euch bis nächstes Mal, welcher der drei Gesund-Skills – Schlaf, Energie, Bewegung – euch am meisten gebracht hat. Nächstes Mal schließen wir das Modul mit dem Kompass ab."
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Nächstes Mal geht es um etwas Ernstes: Was tun, wenn es einer Freundin oder einem Freund richtig schlecht geht? Wir gehen das ruhig und Schritt für Schritt an.",
+      "hintergrund": "Eine Übersicht über zahlreiche Reviews fand bei Kindern und Jugendlichen kleine, aber günstige Effekte von Bewegung auf depressive Beschwerden sowie Hinweise auf weniger Ängste, besseren Selbstwert und bessere Konzentration (Biddle & Asare, 2011). Die WHO (2020) empfiehlt Jugendlichen im Schnitt 60 Minuten Bewegung am Tag und betont, dass jede Bewegung besser ist als keine. Im Skillstraining gehört Bewegung zu den Skills, die die Anfälligkeit für starke Gefühle senken; bei Niedergeschlagenheit hilft entgegengesetztes Handeln: aktiv werden, obwohl alles nach Rückzug verlangt (Linehan, 2015). Draußen wirkt Bewegung zusätzlich erholsam (Kaplan, 1995). Ob jemand dranbleibt, hängt vor allem davon ab, ob die Bewegung selbst gewählt ist und Freude macht (Deci & Ryan, 2000); deshalb misst die Gruppe zuerst selbst und wählt dann ihre eigene Idee.",
+      "quellen": [
+        "Biddle, S. J. H. & Asare, M. (2011). Physical activity and mental health in children and adolescents: A review of reviews. British Journal of Sports Medicine, 45(11), 886–895.",
+        "World Health Organization (2020). WHO Guidelines on Physical Activity and Sedentary Behaviour. Genf: WHO.",
+        "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford.",
+        "Kaplan, S. (1995). The restorative benefits of nature: Toward an integrative framework. Journal of Environmental Psychology, 15(3), 169–182.",
+        "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268."
+      ],
+      "achtung": "Bewegung ist freiwillig und geschieht im eigenen Tempo; wer aussetzen muss, bekommt eine Rolle (Zeit, Zählen, Schiedsrichter). Asthma, Herz-Kreislauf-Probleme und Verletzungen vorher erfragen und die Bewegung anpassen. Keine Kommentare zu Körpern, Fitness oder Gewicht und keine Vergleiche von Leistungen. Bewegung als Ausgleich fürs Essen oder zwanghaftes Trainieren kann auf gestörtes Essverhalten hinweisen: nicht in der Gruppe ansprechen, sondern im Einzelgespräch, und die zuständige Leitung (Responsable) informieren. Bewegung ersetzt keine Hilfe: Wer über Wochen niedergeschlagen wirkt, braucht ein Gespräch und gegebenenfalls den SePAS; bei Hinweisen auf Gefährdung nach dem internen Schutzkonzept handeln."
+    }
+  ]
+}
