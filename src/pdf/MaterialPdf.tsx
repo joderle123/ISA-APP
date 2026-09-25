@@ -15,10 +15,11 @@ import {
 } from '@react-pdf/renderer'
 import type { ReactNode } from 'react'
 import type { Material, WorksheetBlock } from '../types/material'
+import { trennung } from '../lib/trennung'
 
 // Disable automatic hyphenation so goal ids like "[SOZ-5]" never break into
 // "[-SOZ-5]". Words wrap at spaces only.
-Font.registerHyphenationCallback((word) => [word])
+Font.registerHyphenationCallback(trennung)
 import {
   ageLevels,
   eldibBands,

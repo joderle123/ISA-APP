@@ -1,0 +1,124 @@
+[
+  {
+    "id": "wutvulkan",
+    "bereich": "gefuehle",
+    "thema": "wut",
+    "stufen": ["C3", "C4"],
+    "sozialform": ["einzeln", "gruppe"],
+    "dauer": "30–40 Min.",
+    "eldib": ["V-21", "V-18", "K-26"],
+    "schlagworte": ["Wut", "Frühwarnzeichen", "Selbstkontrolle", "Auslöser", "Plan"],
+    "bild": "icon:volcano",
+    "de": {
+      "titel": "Mein Wutvulkan",
+      "untertitel": "Wut kommt selten aus dem Nichts. Sie baut sich auf – wie in einem Vulkan. Wer die Zeichen früh erkennt, kann handeln, bevor es knallt.",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "Kurz vor dem Ausbruch",
+          "text": "Luca hat in der Pause beim Fußball verloren. Im Klassenzimmer lacht Ben über ein Tor, das Luca verschossen hat. Luca spürt, wie sein Gesicht heiß wird. Seine Hände werden zu Fäusten. Als Ben noch einmal lacht, wirft Luca sein Mäppchen auf den Boden.",
+          "bild": "figur:noah:wuetend"
+        },
+        { "art": "aufgabe", "text": "Woran hättest du merken können, dass Lucas Wut steigt? Kreuze an.", "symbole": ["lesen", "ankreuzen"] },
+        {
+          "art": "ankreuzen",
+          "items": ["Sein Gesicht wird heiß.", "Er macht Fäuste.", "Er gähnt.", "Er atmet schneller.", "Er will nur noch weg.", "Er lacht mit."],
+          "spalten": 2
+        },
+        { "art": "aufgabe", "text": "Fülle deinen eigenen Wutvulkan aus. Beginne unten.", "hinweis": "Unten: was dich wütend macht. Mitte: woran du es merkst. Oben: was du tun kannst, bevor es ausbricht.", "symbole": ["schreiben"] },
+        { "art": "vulkan" },
+        { "art": "aufgabe", "text": "Was hilft dir, wenn es im Vulkan brodelt? Wähle zwei Ideen aus oder schreibe eigene.", "symbole": ["ankreuzen", "schreiben"] },
+        {
+          "art": "ankreuzen",
+          "items": ["Ich zähle langsam bis zehn.", "Ich atme dreimal tief in den Bauch.", "Ich gehe kurz aus der Situation.", "Ich drücke fest meine Hände zusammen und lasse los.", "Ich sage: „Stopp, ich brauche eine Pause.“", "Ich trinke ein Glas Wasser."],
+          "spalten": 2,
+          "frei": 2
+        },
+        { "art": "rueckblick" }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder erkennen, dass Wut in Stufen ansteigt, benennen eigene Auslöser und körperliche Frühwarnzeichen und legen zwei Handlungen fest, die sie vor dem „Ausbruch“ einsetzen.",
+        "ablauf": [
+          "Einstieg (5 Min.): Die Geschichte von Luca vorlesen. Fragen: „Wann hätte Luca noch etwas anderes tun können?“",
+          "Aufgabe 1 gemeinsam besprechen. Die Körpersignale an der Tafel sammeln und ergänzen (Herzklopfen, Zähne zusammenbeißen, laute Stimme).",
+          "Aufgabe 2 in Einzelarbeit: Jedes Kind füllt seinen Vulkan von unten nach oben aus. Wer nicht schreiben mag, darf zeichnen.",
+          "Aufgabe 3: Strategien auswählen und im Sitzkreis kurz vorstellen. Eine Strategie gleich gemeinsam ausprobieren (z. B. Bauchatmung).",
+          "Abschluss: Den Vulkan als persönlichen Plan im Heft oder am Platz aufbewahren und in der nächsten Woche nachfragen, was geklappt hat."
+        ],
+        "hintergrund": "Wut ist ein normales, oft nützliches Gefühl: Sie zeigt an, dass ein Ziel blockiert oder eine Grenze verletzt wurde. Schwierig wird es, wenn die Erregung so hoch ist, dass Denken und Planen kaum noch möglich sind. Nach dem Prozessmodell der Emotionsregulation (Gross, 1998) lässt sich früh im Ablauf am leichtesten eingreifen: Situation erkennen, Aufmerksamkeit umlenken, Erregung senken. Trainingsprogramme für impulsive und aggressive Kinder setzen deshalb auf das Wahrnehmen körperlicher Frühwarnzeichen und auf wenige, gut eingeübte Handlungsalternativen (Petermann & Petermann, 2012). Das Bild des Vulkans macht diesen Ablauf für Kinder greifbar.",
+        "quellen": [
+          "Gross, J. J. (1998). The emerging field of emotion regulation: An integrative review. Review of General Psychology, 2(3), 271–299.",
+          "Petermann, F. & Petermann, U. (2012). Training mit aggressiven Kindern (13. Aufl.). Weinheim: Beltz."
+        ],
+        "differenzierung": {
+          "leichter": "Den Vulkan mündlich besprechen; das Kind zeichnet in jede Stufe ein Bild. Strategien als Bildkarten anbieten.",
+          "schwerer": "Zusätzlich notieren: „Was sagen die anderen, wenn mein Vulkan ausbricht?“ und „Was möchte ich stattdessen erreichen?“"
+        },
+        "impulse": [
+          "Woran merkst du als Erstes, dass du wütend wirst?",
+          "Gibt es Tageszeiten oder Orte, an denen dein Vulkan schneller brodelt?",
+          "Wer kann dir helfen, dich an deinen Plan zu erinnern?"
+        ],
+        "tipps": [
+          "Strategien nicht erst in der Wutsituation einführen: Sie müssen in ruhigen Momenten mehrmals geübt werden.",
+          "Mit dem Kind ein unauffälliges Zeichen vereinbaren, mit dem die Lehrperson an den Plan erinnert."
+        ],
+        "achtung": "Wenn ein Kind sehr häufig und heftig ausbricht, sich oder andere verletzt oder im Vulkan von Gewalt zu Hause erzählt: nicht im Plenum vertiefen, sondern die zuständige Leitung (Responsable) informieren.",
+        "material": "Buntstifte; optional Bildkarten zu den Strategien"
+      }
+    }
+  },
+  {
+    "id": "ballon-atmen",
+    "bereich": "gefuehle",
+    "thema": "beruhigen",
+    "stufen": ["C1"],
+    "sozialform": ["einzeln", "gruppe"],
+    "dauer": "10–15 Min.",
+    "eldib": ["V-8", "V-12", "V-3"],
+    "schlagworte": ["Atmung", "Ruhe", "Beruhigung", "Körper", "Spielschule"],
+    "bild": "motiv:ballon",
+    "de": {
+      "titel": "Ballon-Atmen",
+      "anleitung": "Die Übung zuerst vormachen. Das Kind legt eine Hand auf den Bauch. Beim Einatmen wird der Bauch rund wie ein Ballon, beim Ausatmen wird er wieder klein. Danach malt das Kind den Ballon an.",
+      "bausteine": [
+        { "art": "aufgabe", "text": "Schau zu und mach mit.", "symbole": ["zeigen", "zuhoeren"] },
+        {
+          "art": "comic",
+          "spalten": 3,
+          "felder": [
+            { "figuren": ["figur:lea:ruhig"], "blase": "keine", "untertitel": "Hand auf den Bauch." },
+            { "figuren": ["figur:lea:ueberrascht:jubeln"], "blase": "keine", "untertitel": "Einatmen: Der Ballon wird groß." },
+            { "figuren": ["figur:lea:ruhig"], "blase": "keine", "untertitel": "Ausatmen: Der Ballon wird klein." }
+          ]
+        },
+        { "art": "aufgabe", "text": "Male deinen Ballon an.", "symbole": ["malen"] },
+        { "art": "bilder", "modus": "anmalen", "spalten": 2, "bilder": [{ "bild": "motiv:ballon", "text": "groß" }, { "bild": "motiv:ballon", "text": "klein" }] }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder lernen eine einfache Bauchatmung kennen, mit der sie sich nach Aufregung, Streit oder Bewegung selbst beruhigen können.",
+        "ablauf": [
+          "Einen echten Luftballon zeigen: langsam aufblasen und die Luft langsam wieder herauslassen.",
+          "Die Kinder legen eine Hand auf den Bauch und spüren, wie er sich beim Atmen bewegt.",
+          "Gemeinsam fünfmal langsam „Ballon atmen“: durch die Nase ein, durch den Mund aus. Die Lehrperson zählt ruhig mit.",
+          "Die Kinder malen den Ballon an. Wer mag, zeigt mit den Händen, wie groß sein Ballon beim Einatmen wird.",
+          "Die Übung als Ritual einführen: z. B. nach der Pause oder vor dem Sitzkreis, damit sie in schwierigen Momenten abrufbar ist."
+        ],
+        "hintergrund": "Langsames Atmen mit verlängerter Ausatmung senkt die körperliche Erregung und hilft Kindern, wieder zur Ruhe zu kommen. Kleine Kinder können abstrakte Anweisungen wie „beruhige dich“ kaum umsetzen; ein Bild aus ihrer Erfahrungswelt (der Ballon) und die Hand auf dem Bauch machen die Übung konkret. Entscheidend ist die Wiederholung in ruhigen Momenten: Nur was vorher geübt wurde, steht auch bei Aufregung zur Verfügung. Atemübungen gehören deshalb in vielen Programmen zur sozial-emotionalen Förderung zu den ersten Bausteinen.",
+        "quellen": [
+          "Webster-Stratton, C. & Reid, M. J. (2003). Treating conduct problems and strengthening social and emotional competence in young children: The Dina Dinosaur treatment program. Journal of Emotional and Behavioral Disorders, 11(3), 130–143.",
+          "Siegel, D. J. & Bryson, T. P. (2011). The Whole-Brain Child. New York: Delacorte."
+        ],
+        "differenzierung": {
+          "leichter": "Im Liegen üben und ein Kuscheltier auf den Bauch legen: Es fährt beim Atmen „Aufzug“.",
+          "schwerer": "Beim Einatmen bis drei zählen, beim Ausatmen bis vier."
+        },
+        "tipps": [
+          "Nicht zum Atmen drängen, wenn ein Kind gerade sehr aufgebracht ist – dann zuerst Sicherheit und Nähe anbieten, die Übung später wiederholen.",
+          "Die Bildfolge als Karte in die Ruhe-Ecke hängen."
+        ],
+        "material": "Luftballon zum Zeigen, Buntstifte"
+      }
+    }
+  }
+]

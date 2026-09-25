@@ -1,0 +1,159 @@
+[
+  {
+    "id": "aufschieben-ueberlisten",
+    "bereich": "lernen",
+    "thema": "motivation",
+    "stufen": ["ES"],
+    "sozialform": ["einzeln", "gruppe"],
+    "dauer": "45 Min.",
+    "eldib": ["V-32", "V-27", "V-25"],
+    "schlagworte": ["Aufschieben", "Prokrastination", "Selbstorganisation", "Wenn-dann-Plan", "Hausaufgaben"],
+    "bild": "icon:hourglass",
+    "de": {
+      "titel": "Aufschieben überlisten",
+      "untertitel": "Fast alle schieben manchmal etwas auf. Meist steckt dahinter kein Faulsein, sondern der Wunsch, ein unangenehmes Gefühl zu vermeiden.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Warum wir aufschieben",
+          "text": "Eine Aufgabe fühlt sich langweilig, schwer oder unklar an. Das Handy oder etwas anderes verspricht sofort ein besseres Gefühl. Kurzfristig wirkt das – langfristig wächst der Druck. Hilfreich ist deshalb nicht mehr Druck, sondern ein leichterer Start."
+        },
+        { "art": "aufgabe", "text": "Wie sehr trifft das auf dich zu?" },
+        {
+          "art": "einschaetzung",
+          "optionen": ["stimmt", "teils", "stimmt nicht"],
+          "items": [
+            "Ich fange erst an, wenn es richtig knapp wird.",
+            "Ich weiß oft nicht, womit ich anfangen soll.",
+            "Das Handy lenkt mich ab, sobald ich lerne.",
+            "Ich habe Angst, dass das Ergebnis nicht gut genug wird.",
+            "Ich unterschätze, wie lange eine Aufgabe dauert.",
+            "Wenn ich einmal angefangen habe, geht es meistens gut."
+          ]
+        },
+        { "art": "aufgabe", "text": "Nimm eine Aufgabe, die du gerade vor dir herschiebst. Zerlege sie in kleine Schritte.", "hinweis": "Der erste Schritt sollte so klein sein, dass er in fünf Minuten erledigt ist." },
+        {
+          "art": "tabelle",
+          "spalten": ["Schritt", "Was genau?", "Wie lange?", "Erledigt"],
+          "breiten": [0.8, 3, 1.1, 1],
+          "zeilen": 4,
+          "beispiel": ["1", "Mathe-Heft aufschlagen, Aufgabe 3 lesen", "5 Min.", "x"]
+        },
+        { "art": "aufgabe", "text": "Formuliere deinen Wenn-dann-Plan.", "hinweis": "Wenn-dann-Pläne verbinden eine feste Situation mit einer konkreten Handlung. Sie wirken besser als gute Vorsätze." },
+        {
+          "art": "wennDann",
+          "zeilen": 2,
+          "beispiele": [{ "wenn": "Wenn ich am Dienstag um 16 Uhr nach Hause komme,", "dann": "lege ich das Handy in die Küche und arbeite 25 Minuten an Schritt 1." }]
+        },
+        { "art": "skala", "frage": "Wie sicher bist du, dass du deinen Plan diese Woche umsetzt?", "von": "gar nicht sicher", "bis": "sehr sicher", "stufen": 11 }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen verstehen Aufschieben als Strategie zur kurzfristigen Stimmungsregulation, zerlegen eine konkrete Aufgabe in kleine Schritte und formulieren einen Wenn-dann-Plan für den Start.",
+        "ablauf": [
+          "Einstieg (5 Min.): Frage in die Runde: „Was habt ihr zuletzt aufgeschoben – und was habt ihr stattdessen gemacht?“ Antworten ohne Wertung sammeln.",
+          "Info-Kasten gemeinsam lesen. Betonen: Aufschieben hat mit Gefühlen zu tun, nicht mit Charakter.",
+          "Selbsteinschätzung in Einzelarbeit (5 Min.); danach freiwillig austauschen, welche Aussage am meisten zutrifft.",
+          "Eine echte, anstehende Aufgabe wählen lassen und in Schritte zerlegen. Den ersten Schritt bewusst lächerlich klein machen.",
+          "Wenn-dann-Plan formulieren; Pläne zu zweit prüfen: Sind Zeit, Ort und Handlung konkret?",
+          "Nach einer Woche nachfragen: Was hat geklappt, was muss am Plan geändert werden?"
+        ],
+        "hintergrund": "Aufschieben (Prokrastination) ist das freiwillige Verschieben einer beabsichtigten Handlung, obwohl Nachteile absehbar sind. Eine Meta-Analyse zeigt enge Zusammenhänge mit geringer Aufgabenattraktivität, Impulsivität und großer zeitlicher Distanz zur Belohnung (Steel, 2007). Heute wird Aufschieben vor allem als kurzfristige Stimmungsregulation verstanden: Man weicht dem unangenehmen Gefühl aus, das die Aufgabe auslöst (Sirois & Pychyl, 2013). Wirksam sind deshalb Strategien, die den Einstieg erleichtern: kleine Teilschritte, feste Arbeitsfenster und Wenn-dann-Pläne, die nachweislich die Umsetzung von Zielen verbessern (Gollwitzer, 1999).",
+        "quellen": [
+          "Steel, P. (2007). The nature of procrastination: A meta-analytic and theoretical review of quintessential self-regulatory failure. Psychological Bulletin, 133(1), 65–94.",
+          "Sirois, F. & Pychyl, T. (2013). Procrastination and the priority of short-term mood regulation. Social and Personality Psychology Compass, 7(2), 115–127.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "differenzierung": {
+          "leichter": "Aufgabe gemeinsam mit der Lehrperson zerlegen; nur einen Wenn-dann-Plan formulieren.",
+          "schwerer": "Zusätzlich notieren, welches Gefühl die Aufgabe auslöst und was man sich nach dem ersten Schritt Gutes tun kann."
+        },
+        "impulse": [
+          "Welches Gefühl kommt, kurz bevor du etwas aufschiebst?",
+          "Was ist der kleinste Schritt, den du heute noch schaffen könntest?",
+          "Wer oder was könnte dich an deinen Plan erinnern?"
+        ],
+        "tipps": [
+          "Den Timer (25 Minuten Arbeit, 5 Minuten Pause) im Unterricht einmal gemeinsam ausprobieren.",
+          "Aufschieben nicht moralisch bewerten – Scham verstärkt das Vermeiden."
+        ],
+        "achtung": "Wenn hinter dem Aufschieben dauerhafte Niedergeschlagenheit, starke Angst oder Überforderung zu Hause steht, das Gespräch suchen und die zuständige Leitung (Responsable) einbeziehen.",
+        "material": "Optional: Küchentimer oder Timer-App"
+      }
+    },
+    "fr": {
+      "titel": "Déjouer la procrastination",
+      "untertitel": "Presque tout le monde remet parfois à plus tard. Souvent, ce n’est pas de la paresse, mais l’envie d’éviter un sentiment désagréable.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Pourquoi on remet à plus tard",
+          "text": "Une tâche paraît ennuyeuse, difficile ou floue. Le téléphone ou autre chose promet tout de suite un meilleur ressenti. À court terme, ça marche – à long terme, la pression augmente. Ce qui aide, ce n’est donc pas plus de pression, mais un démarrage plus facile."
+        },
+        { "art": "aufgabe", "text": "Dans quelle mesure est-ce vrai pour toi ?" },
+        {
+          "art": "einschaetzung",
+          "optionen": ["vrai", "en partie", "faux"],
+          "items": [
+            "Je ne commence que quand ça devient vraiment urgent.",
+            "Je ne sais souvent pas par où commencer.",
+            "Le téléphone me distrait dès que j’apprends.",
+            "J’ai peur que le résultat ne soit pas assez bon.",
+            "Je sous-estime le temps que prend une tâche.",
+            "Une fois lancé·e, ça se passe plutôt bien."
+          ]
+        },
+        { "art": "aufgabe", "text": "Choisis une tâche que tu repousses en ce moment. Découpe-la en petites étapes.", "hinweis": "La première étape doit être si petite qu’elle se fait en cinq minutes." },
+        {
+          "art": "tabelle",
+          "spalten": ["Étape", "Quoi exactement ?", "Combien de temps ?", "Fait"],
+          "breiten": [0.8, 3, 1.1, 1],
+          "zeilen": 4,
+          "beispiel": ["1", "Ouvrir le cahier de maths, lire l’exercice 3", "5 min", "x"]
+        },
+        { "art": "aufgabe", "text": "Formule ton plan « si … alors ».", "hinweis": "Un plan « si … alors » relie une situation précise à une action concrète. Il fonctionne mieux que les bonnes résolutions." },
+        {
+          "art": "wennDann",
+          "wenn": "Si …",
+          "dann": "… alors",
+          "zeilen": 2,
+          "beispiele": [{ "wenn": "Si je rentre à la maison mardi à 16 h,", "dann": "je pose mon téléphone dans la cuisine et je travaille 25 minutes sur l’étape 1." }]
+        },
+        { "art": "skala", "frage": "À quel point es-tu sûr·e de mettre ton plan en œuvre cette semaine ?", "von": "pas du tout sûr·e", "bis": "tout à fait sûr·e", "stufen": 11 }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes comprennent la procrastination comme une façon de réguler leur humeur à court terme, découpent une tâche concrète en petites étapes et formulent un plan « si … alors » pour démarrer.",
+        "ablauf": [
+          "Entrée en matière (5 min) : « Qu’avez-vous remis à plus tard récemment – et qu’avez-vous fait à la place ? » Recueillir les réponses sans jugement.",
+          "Lire ensemble l’encadré. Souligner : remettre à plus tard est lié aux émotions, pas au caractère.",
+          "Auto-évaluation individuelle (5 min), puis échange volontaire sur l’affirmation la plus vraie pour chacun·e.",
+          "Faire choisir une vraie tâche à venir et la découper en étapes. Rendre la première étape volontairement minuscule.",
+          "Formuler le plan « si … alors » ; vérifier à deux : le moment, le lieu et l’action sont-ils concrets ?",
+          "Une semaine plus tard : qu’est-ce qui a marché, que faut-il ajuster dans le plan ?"
+        ],
+        "hintergrund": "La procrastination désigne le report volontaire d’une action prévue, alors que les inconvénients sont prévisibles. Une méta-analyse montre des liens étroits avec le peu d’attrait de la tâche, l’impulsivité et l’éloignement de la récompense dans le temps (Steel, 2007). On la comprend aujourd’hui surtout comme une régulation de l’humeur à court terme : on évite le sentiment désagréable que suscite la tâche (Sirois & Pychyl, 2013). Les stratégies efficaces facilitent donc le démarrage : petites étapes, plages de travail fixes et plans « si … alors », qui améliorent de façon démontrée la réalisation des objectifs (Gollwitzer, 1999).",
+        "quellen": [
+          "Steel, P. (2007). The nature of procrastination: A meta-analytic and theoretical review of quintessential self-regulatory failure. Psychological Bulletin, 133(1), 65–94.",
+          "Sirois, F. & Pychyl, T. (2013). Procrastination and the priority of short-term mood regulation. Social and Personality Psychology Compass, 7(2), 115–127.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "differenzierung": {
+          "leichter": "Découper la tâche avec l’enseignant·e ; formuler un seul plan « si … alors ».",
+          "schwerer": "Noter en plus quel sentiment la tâche déclenche et ce que l’on peut s’offrir après la première étape."
+        },
+        "impulse": [
+          "Quel sentiment arrive juste avant que tu remettes quelque chose à plus tard ?",
+          "Quelle est la plus petite étape que tu pourrais encore faire aujourd’hui ?",
+          "Qui ou quoi pourrait te rappeler ton plan ?"
+        ],
+        "tipps": [
+          "Tester une fois en classe le minuteur (25 minutes de travail, 5 minutes de pause).",
+          "Ne pas juger moralement la procrastination – la honte renforce l’évitement."
+        ],
+        "achtung": "Si la procrastination cache un abattement durable, une forte anxiété ou une surcharge à la maison, chercher le dialogue et impliquer la direction compétente (responsable).",
+        "material": "En option : minuteur de cuisine ou application"
+      }
+    }
+  }
+]

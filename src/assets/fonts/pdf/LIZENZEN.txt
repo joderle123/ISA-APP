@@ -1,0 +1,11 @@
+Schriften für die Arbeitsblätter (PDF), auf Latein-Zeichen reduziert und
+mit zerlegten zusammengesetzten Glyphen (für eine fehlerfreie Einbettung):
+
+- Andika – Copyright (c) 2004-2022 SIL International. SIL Open Font License 1.1
+- Inter – Copyright (c) 2016 The Inter Project Authors. SIL Open Font License 1.1
+- Manrope – Copyright (c) 2018 The Manrope Project Authors. SIL Open Font License 1.1
+
+Lizenztext: https://openfontlicense.org
+
+Piktogramme: Tabler Icons – MIT License – Copyright (c) 2020-2024 Paweł Kuna
+(https://tabler.io/icons), Auswahl in src/blatt/bilder/icons.json.

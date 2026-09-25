@@ -8,7 +8,10 @@
     "build": "tsc -b && vite build && npm run index",
     "index": "tsx --tsconfig tsconfig.scripts.json scripts/toolbox-index.mjs",
     "lint": "oxlint",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "blaetter:pruefen": "tsx --tsconfig tsconfig.scripts.json scripts/blatt-pruefen.ts",
+    "blaetter:render": "tsx --tsconfig tsconfig.scripts.json scripts/blatt-render.tsx",
+    "blaetter:icons": "node scripts/blatt-icons.mjs"
   },
   "dependencies": {
     "@react-pdf/renderer": "^4.5.1",
@@ -16,6 +19,7 @@
     "react-dom": "^19.2.7"
   },
   "devDependencies": {
+    "@tabler/icons": "^3.48.0",
     "@tailwindcss/vite": "^4.3.1",
     "@types/node": "^24.13.2",
     "@types/react": "^19.2.17",
