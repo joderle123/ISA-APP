@@ -60,26 +60,40 @@ function Kopfzeile({ blatt, nr, sprache, p, m, lehrer }: { blatt: Blatt; nr?: st
   // Manrope 7 pt (Versalien) gemessen – obere Werte, damit nie eine Zeile ungewollt umbricht.
   const felder = lehrer ? 0 : m.layout === 'bild' ? 14 + 27 + 150 : 14 + 27 + 118 + 14 + 27 + 62
   const frei = BREITE - (reiter.length * 5.85 + 12) - 8 - felder
-  const eineZeile = [nummer, thema].join('  ·  ').length * 3.95 <= frei
+  const metaText = [nummer, thema].join('  ·  ')
+  const eineZeile = metaText.length * 3.95 <= frei
+  // Langer Reiter (z. B. „Lernen & Selbstorganisation“): passt auch zweizeilig nicht daneben –
+  // dann steht die Meta-Zeile vollständig unter dem Kopf statt über vier Zeilen gequetscht.
+  const zweiZeilen = !eineZeile && Math.max(nummer.length, thema.length) * 3.95 <= frei
+  const darunter = !eineZeile && !zweiZeilen
   return (
-    <View style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 14 }}>
-      <Reiter text={reiter} farbe={lehrer ? NEUTRAL.tinte : p.tief} />
-      {eineZeile ? (
-        <View style={{ marginLeft: 8, flex: 1 }}>
-          <Meta>{[nummer, thema].join('  ·  ')}</Meta>
+    <View style={{ marginBottom: 14 }}>
+      <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+        <Reiter text={reiter} farbe={lehrer ? NEUTRAL.tinte : p.tief} />
+        {eineZeile ? (
+          <View style={{ marginLeft: 8, flex: 1 }}>
+            <Meta>{metaText}</Meta>
+          </View>
+        ) : zweiZeilen ? (
+          // zu lang für eine Zeile: bewusst zwei Zeilen statt eines zufälligen Umbruchs
+          <View style={{ marginLeft: 8, flex: 1 }}>
+            <Meta>{nummer}</Meta>
+            <Meta>{thema}</Meta>
+          </View>
+        ) : (
+          <View style={{ flex: 1 }} />
+        )}
+        {!lehrer ? (
+          <>
+            <NameFeld label={tx.name} breite={m.layout === 'bild' ? 150 : 118} m={m} />
+            {m.layout !== 'bild' ? <NameFeld label={tx.datum} breite={62} m={m} /> : null}
+          </>
+        ) : null}
+      </View>
+      {darunter ? (
+        <View style={{ marginTop: 5 }}>
+          <Meta>{metaText}</Meta>
         </View>
-      ) : (
-        // zu lang für eine Zeile: bewusst zwei Zeilen statt eines zufälligen Umbruchs
-        <View style={{ marginLeft: 8, flex: 1 }}>
-          <Meta>{nummer}</Meta>
-          <Meta>{thema}</Meta>
-        </View>
-      )}
-      {!lehrer ? (
-        <>
-          <NameFeld label={tx.name} breite={m.layout === 'bild' ? 150 : 118} m={m} />
-          {m.layout !== 'bild' ? <NameFeld label={tx.datum} breite={62} m={m} /> : null}
-        </>
       ) : null}
     </View>
   )
