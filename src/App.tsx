@@ -1,13 +1,15 @@
 // ---------------------------------------------------------------------------
-// CDSE Toolbox: drei Bereiche unter einem Dach –
-//   Arbeitsblätter (neu, professionell gesetzt), Einheiten (Bibliothek) und
-//   Team-Material (eigenes Material teilen).
-// Deep-Links: #blatt=<id> · #eldib=V-13 · #eldib=V-13&material=<id> · #team
+// CDSE Toolbox: vier Bereiche unter einem Dach –
+//   Arbeitsblätter (neu, professionell gesetzt), Skills-Kurs (Kursjahre mit
+//   Einheiten), Einheiten (Bibliothek) und Team-Material (eigenes Material teilen).
+// Deep-Links: #blatt=<id> · #eldib=V-13 · #eldib=V-13&material=<id> · #team ·
+//   #kurs · #kurs=<einheit-id> · #kurs=grundlagen
 // ---------------------------------------------------------------------------
 import { useCallback, useEffect, useState } from 'react'
 import { Blaetter, leererBlattFilter, type BlattFilter } from './seiten/Blaetter'
 import { Einheiten } from './seiten/Einheiten'
 import { Team } from './seiten/Team'
+import { Kurs } from './seiten/Kurs'
 import { Toaster } from './components/Toaster'
 import { Icon } from './components/Icon'
 import { teamSync } from './lib/teamSync'
@@ -16,7 +18,7 @@ import { alleBlaetter } from './data/blaetter'
 import type { Material } from './types/material'
 import { normaliseEldibCode } from './lib/deeplink'
 
-type Seite = 'blaetter' | 'einheiten' | 'team'
+type Seite = 'blaetter' | 'kurs' | 'einheiten' | 'team'
 
 function hashParameter(hash: string): URLSearchParams {
   return new URLSearchParams(hash.replace(/^#\/?/, ''))
@@ -27,6 +29,7 @@ function seiteAusHash(hash: string): Seite | null {
   const h = hash.replace(/^#\/?/, '')
   if (!h) return null
   if (h === 'team' || h.startsWith('team&')) return 'team'
+  if (h === 'kurs' || h.startsWith('kurs=') || h.startsWith('kurs&')) return 'kurs'
   if (h === 'einheiten') return 'einheiten'
   if (h === 'blaetter') return 'blaetter'
   const p = hashParameter(hash)
@@ -79,6 +82,7 @@ export default function App() {
     setSeite(s)
     setStartBlatt(null)
     if (s === 'team') history.replaceState(null, '', '#team')
+    else if (s === 'kurs') history.replaceState(null, '', '#kurs')
     else if (s === 'blaetter') history.replaceState(null, '', window.location.pathname + window.location.search)
     window.scrollTo({ top: 0 })
   }, [])
@@ -96,6 +100,7 @@ export default function App() {
 
   const reiter: [Seite, string, string, number][] = [
     ['blaetter', 'Arbeitsblätter', 'file', alleBlaetter.length],
+    ['kurs', 'Skills-Kurs', 'stairs', 0],
     ['einheiten', 'Einheiten', 'book', 0],
     ['team', 'Team-Material', 'folder', teamMaterial.length],
   ]
@@ -130,6 +135,7 @@ export default function App() {
 
       <div id="inhalt" tabIndex={-1} className="outline-none">
         <Blaetter aktiv={seite === 'blaetter'} bew={bew} startFilter={blattFilter} startBlatt={startBlatt} onEinheitenZuEldib={zuEinheiten} />
+        <Kurs aktiv={seite === 'kurs'} bew={bew} />
         <Einheiten aktiv={seite === 'einheiten'} bew={bew} teamMaterials={teamMaterial} onBlaetterZuEldib={zuBlaettern} />
         <Team aktiv={seite === 'team'} material={teamMaterial} bew={bew} />
       </div>

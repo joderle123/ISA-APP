@@ -1,0 +1,232 @@
+{
+  "einheiten": [
+    {
+      "id": "j1-e01",
+      "nr": 1,
+      "jahr": 1,
+      "modul": "j1-m0",
+      "titel": "Willkommen – unser Rahmen",
+      "kurz": "Die Gruppe lernt sich kennen, legt gemeinsam ihre Regeln fest und lernt die Rituale kennen, die sie durch das ganze Jahr begleiten.",
+      "dauer": 100,
+      "ziele": [
+        "kennen Ziel und Ablauf des Skills-Kurses",
+        "erarbeiten einen eigenen Gruppenvertrag und unterschreiben ihn",
+        "lernen Gefühlsrad und Skills-Pass kennen",
+        "erleben eine erste Übung, um im Hier und Jetzt anzukommen"
+      ],
+      "material": [
+        "Plakat (A1) und dicke Stifte",
+        "Schülerblatt „Unser Gruppenvertrag“ in A3",
+        "Skills-Pass für jede Person, dazu eine Box zum Aufbewahren",
+        "Gefühlsrad in A3, laminiert",
+        "Stempel oder Sticker",
+        "Imbiss und Getränke"
+      ],
+      "vorbereitung": [
+        "Stühle im Kreis, Tische an die Wand",
+        "Den Jahresweg vorbereiten: die zehn Module als Treppe auf ein Plakat oder an die Tafel",
+        "Einen ruhigen Platz draußen in Sichtweite aussuchen (bei Regen: Fensterplätze)"
+      ],
+      "blaetter": [
+        "skills-gruppenvertrag",
+        "skills-gefuehlsrad",
+        "skills-pass"
+      ],
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Namensrunde mit Geste"
+        },
+        {
+          "min": "10–25",
+          "phase": "input",
+          "titel": "Was sind Skills? Plakat und Jahresweg"
+        },
+        {
+          "min": "25–45",
+          "phase": "uebung",
+          "titel": "Unser Gruppenvertrag"
+        },
+        {
+          "min": "45–60",
+          "phase": "pause",
+          "titel": "Pause mit Imbiss"
+        },
+        {
+          "min": "60–75",
+          "phase": "uebung",
+          "titel": "Das Gefühlsrad und der erste Check-in"
+        },
+        {
+          "min": "75–90",
+          "phase": "aktiv",
+          "titel": "Zehn Minuten allein draußen"
+        },
+        {
+          "min": "90–95",
+          "phase": "skill",
+          "titel": "Skill: 5-4-3-2-1"
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Réckbléck und Skills-Pass"
+        }
+      ],
+      "schritte": [
+        {
+          "titel": "Namensrunde mit Geste",
+          "dauer": 10,
+          "phase": "ankommen",
+          "text": "Alle stehen im Kreis. Reihum sagt jede Person ihren Vornamen und macht eine Geste dazu – winken, ein kurzer Tanzschritt, die Faust auf die Brust. Die Gruppe wiederholt Name und Geste gemeinsam. Selbst beginnen und die eigene Geste ruhig etwas albern wählen: Das nimmt den Druck. In einer zweiten Runde nennt jede Person Namen und Gesten der beiden Personen links neben sich.",
+          "sagen": [
+            "Ich bin …, und so sieht das bei mir aus. Wer macht weiter?",
+            "Ihr müsst euch nichts Besonderes ausdenken. Eine Handbewegung reicht völlig."
+          ],
+          "tipp": "Wer sehr schüchtern ist, darf die Geste der Person davor übernehmen.",
+          "wennEsKippt": "Wenn jemand nicht mitmachen will: nicht drängen, sondern anbieten, später einzusteigen. Die Runde läuft weiter. Oft machen Zögernde in der zweiten Runde von selbst mit."
+        },
+        {
+          "titel": "Was sind Skills? Plakat und Jahresweg",
+          "dauer": 15,
+          "phase": "input",
+          "text": "„Skills“ in die Mitte eines Plakats schreiben und Ideen sammeln, ohne sie zu bewerten; auch Scherzantworten notieren. Dann kurz erklären: Skills sind Fertigkeiten, mit denen man besser durch schwierige Momente kommt – mit Gefühlen, mit Stress, mit anderen Menschen. Man lernt sie wie einen Sport oder ein Instrument: durch Üben, nicht durch Zuhören. Zum Schluss den Jahresweg zeigen. Das Plakat bleibt hängen; es kommt in Einheit 11 und am Ende des Jahres wieder.",
+          "sagen": [
+            "Was glaubt ihr: Was könnte man hier lernen, das man im Alltag wirklich braucht?",
+            "Was macht ihr, wenn ihr richtig sauer seid – und was davon hilft euch hinterher wirklich?"
+          ],
+          "tabelle": {
+            "spalten": [
+              "Stufe",
+              "Leitfrage"
+            ],
+            "zeilen": [
+              [
+                "Ankommen",
+                "Wer sind wir als Gruppe?"
+              ],
+              [
+                "Wer bin ich?",
+                "Was brauche ich, was kann ich?"
+              ],
+              [
+                "Gefühle verstehen",
+                "Was fühle ich – und wozu?"
+              ],
+              [
+                "Gefühle regulieren",
+                "Was hilft mir, wenn es zu viel wird?"
+              ],
+              [
+                "Meine Gedanken",
+                "Was denke ich über mich – und stimmt das?"
+              ],
+              [
+                "Kommunikation & Grenzen",
+                "Wie sage ich, was ich fühle und brauche?"
+              ],
+              [
+                "Wenn es schwierig wird",
+                "Was tue ich bei Konflikten, Druck und Mobbing?"
+              ],
+              [
+                "Digitale Welt",
+                "Was macht das Handy mit mir?"
+              ],
+              [
+                "Gesund & stark",
+                "Wie sorge ich für mich?"
+              ],
+              [
+                "Abschluss",
+                "Was nehme ich mit?"
+              ]
+            ]
+          },
+          "tipp": "Die Treppe von unten nach oben zeichnen: Ich – Wir – Welt. So wird sichtbar, dass jede Stufe auf der vorherigen aufbaut."
+        },
+        {
+          "titel": "Unser Gruppenvertrag",
+          "dauer": 20,
+          "phase": "uebung",
+          "text": "Die Frage stellen und die Antworten auf Zetteln oder direkt auf dem Blatt sammeln. Ähnliches zusammenfassen und gemeinsam drei bis fünf Regeln formulieren – positiv und in der Sprache der Jugendlichen. Die Regeln kommen aus der Gruppe; die Leitung ergänzt nur, was fehlt. Zusätzlich klären, was passiert, wenn eine Regel gebrochen wird. Alle unterschreiben, auch die Leitung. Der Vertrag hängt ab jetzt in jeder Einheit im Raum.",
+          "sagen": [
+            "Was braucht ihr, damit ihr euch hier wohlfühlt und ehrlich sein könnt?",
+            "Was soll hier auf keinen Fall passieren?"
+          ],
+          "punkte": [
+            "Was hier erzählt wird, bleibt hier.",
+            "Niemand muss etwas Persönliches erzählen – „weiter“ ist immer erlaubt.",
+            "Wir lachen miteinander, nicht übereinander.",
+            "Handys bleiben während der Einheit in der Tasche, außer bei Übungen.",
+            "Wer eine Pause braucht, darf kurz rausgehen und sagt Bescheid."
+          ],
+          "tipp": "Die Schweigepflicht ehrlich erklären: Wenn jemand in Gefahr ist, muss die Leitung handeln. Das vorab offen zu sagen, schafft eher Vertrauen als Misstrauen.",
+          "wennEsKippt": "Kommen nur Scherzregeln („jeden Tag Pizza“), mit Humor aufnehmen und nachfragen, was dahintersteckt: Wollt ihr, dass es sich hier nicht wie Unterricht anfühlt? Daraus lässt sich oft eine echte Regel machen.",
+          "blatt": "skills-gruppenvertrag"
+        },
+        {
+          "titel": "Pause mit Imbiss",
+          "dauer": 15,
+          "phase": "pause",
+          "text": "Gemeinsam essen, Fenster auf oder kurz nach draußen. Die Leitung isst mit und lässt das Thema ruhen – hier darf es um Fußball, Serien und Haustiere gehen. Gerade in dieser Zeit entsteht oft am meisten Beziehung."
+        },
+        {
+          "titel": "Das Gefühlsrad und der erste Check-in",
+          "dauer": 15,
+          "phase": "uebung",
+          "text": "Das Gefühlsrad in die Mitte legen und erklären: Innen stehen die Grundgefühle, außen genauere Wörter. Ab heute beginnt jede Einheit mit dem Rad. Dann der erste Check-in: Jede Person zeigt auf ein Wort und sagt einen Satz dazu. Die Leitung beginnt und bleibt ehrlich, aber im Rahmen, etwa: „Ich bin ein bisschen nervös, weil ich euch noch nicht kenne.“",
+          "sagen": [
+            "Ich fühle mich gerade …, weil … – das „weil“ ist freiwillig.",
+            "Es gibt hier keine falschen Gefühle. Müde zählt auch."
+          ],
+          "wennEsKippt": "Sagt jemand „egal“ oder „nichts“, das gelten lassen: Auch das ist eine Auskunft. Nicht nachbohren. Wer gar nichts sagen möchte, zeigt nur auf das Rad.",
+          "blatt": "skills-gefuehlsrad"
+        },
+        {
+          "titel": "Zehn Minuten allein draußen",
+          "dauer": 15,
+          "phase": "aktiv",
+          "text": "Nach draußen gehen. Jede Person sucht sich einen Platz in Sichtweite, allein und ohne Handy. Zehn Minuten nur sitzen, schauen und hören. Danach kurz im Kreis austauschen. Bei Regen am offenen Fenster oder im Flur mit Blick nach draußen.",
+          "sagen": [
+            "Was habt ihr gesehen, gehört, gerochen?",
+            "Wie waren zehn Minuten ohne Handy – lang, kurz, komisch?"
+          ],
+          "tipp": "Es ist in Ordnung, wenn jemand es langweilig fand. Langeweile auszuhalten, ist selbst schon ein Skill – das darf man genau so sagen.",
+          "wennEsKippt": "Bleiben zwei zusammen und reden, freundlich trennen: heute jede und jeder für sich, nächstes Mal geht es gemeinsam weiter. Wer nicht still sitzen kann, darf langsam gehen."
+        },
+        {
+          "titel": "Skill: 5-4-3-2-1",
+          "dauer": 5,
+          "phase": "skill",
+          "text": "Im Kreis, Augen offen oder geschlossen. Langsam anleiten und zwischen den Schritten Zeit lassen. Danach erklären: Das ist ein Skill für Momente, in denen der Kopf voll ist. Er holt die Aufmerksamkeit ins Hier und Jetzt zurück.",
+          "punkte": [
+            "5 Dinge, die du siehst",
+            "4 Dinge, die du hörst",
+            "3 Dinge, die du spürst – Stuhl, Füße, Kleidung",
+            "2 Dinge, die du riechst",
+            "1 Sache, die du schmeckst"
+          ]
+        },
+        {
+          "titel": "Réckbléck und Skills-Pass",
+          "dauer": 5,
+          "phase": "abschluss",
+          "text": "Die Skills-Pässe austeilen und erklären: Am Ende jeder Einheit kommt ein Satz hinein, dazu ein Stempel. Erster Eintrag: Das nehme ich heute mit. Die Pässe bleiben in einer Box im Raum. Zum Schluss ein Blitzlicht mit einem Wort zu heute.",
+          "sagen": [
+            "Ein Wort zu heute – was fällt euch als Erstes ein?"
+          ],
+          "blatt": "skills-pass"
+        }
+      ],
+      "bruecke": "Nächstes Mal lernt ihr euch richtig kennen – und zwar in Bewegung.",
+      "hintergrund": "Gruppen brauchen am Anfang Sicherheit und klare Regeln, bevor persönliche Themen Platz haben. Programme zur Förderung sozial-emotionaler Kompetenzen wirken besonders, wenn sie Schritt für Schritt aufbauen, aktiv üben, auf bestimmte Fertigkeiten fokussieren und offen benennen, was gelernt wird (Durlak et al., 2011). Auch das Skillstraining der Dialektisch-Behavioralen Therapie für Jugendliche arbeitet mit festen Ritualen und beginnt jede Sitzung mit einer kurzen Achtsamkeitsübung (Rathus & Miller, 2015). Deshalb stehen in der ersten Einheit Rahmen, Rituale und eine leichte Übung zum Ankommen im Vordergrund.",
+      "quellen": [
+        "Durlak, J. A., Weissberg, R. P., Dymnicki, A. B., Taylor, R. D. & Schellinger, K. B. (2011). The impact of enhancing students’ social and emotional learning: A meta-analysis of school-based universal interventions. Child Development, 82(1), 405–432.",
+        "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford."
+      ],
+      "achtung": "Beim Gruppenvertrag offen sagen, wo die Schweigepflicht endet. Erzählt jemand von Gewalt, Missbrauch, Selbstverletzung oder Suizidgedanken, wird das nicht in der Gruppe vertieft, sondern zeitnah im Einzelgespräch aufgegriffen und nach dem internen Schutzkonzept weitergegeben; die zuständige Leitung (Responsable) wird informiert."
+    }
+  ]
+}

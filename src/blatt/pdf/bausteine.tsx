@@ -376,7 +376,16 @@ function Tabelle({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'tabelle' }> })
       ) : null}
       {Array.from({ length: b.zeilen }, (_, r) => (
         <View key={r} style={{ flexDirection: 'row', height: zeileH, borderBottomWidth: r < b.zeilen - 1 ? 0.8 : 0, borderBottomColor: NEUTRAL.rahmen }} wrap={false}>
-          {b.spalten.map((_, i) => zelle(i, null))}
+          {b.spalten.map((_, i) =>
+            zelle(
+              i,
+              i === 0 && typeof b.nummern === 'number' ? (
+                <Fliess c={c} klein farbe={NEUTRAL.leise}>
+                  {String(b.nummern + r)}
+                </Fliess>
+              ) : null,
+            ),
+          )}
         </View>
       ))}
     </View>
@@ -480,7 +489,7 @@ function Vertrag({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'vertrag' }> })
       </Text>
       <View style={{ flexDirection: 'row', marginTop: 18, flexWrap: 'wrap' }}>
         {[...b.unterschriften, tx(c).datumUnterschrift].map((u, i) => (
-          <View key={i} style={{ width: `${100 / (b.unterschriften.length + 1)}%`, paddingRight: 12 }}>
+          <View key={i} style={{ width: `${100 / Math.min(b.unterschriften.length + 1, 4)}%`, paddingRight: 12, marginBottom: b.unterschriften.length > 3 ? 10 : 0 }}>
             <View style={{ height: c.m.zeile, borderBottomWidth: 0.9, borderBottomColor: NEUTRAL.tinte }} />
             <Fliess c={c} klein farbe={NEUTRAL.leise} style={{ marginTop: 2 }}>
               {t(c, u)}
@@ -725,6 +734,102 @@ function Gefuehle({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'gefuehle' }> 
           )}
         </View>
       ))}
+    </View>
+  )
+}
+
+type RadFeld = { wort: string; farbe: Farbwort; aussen: string[] }
+/** Standard-Gefühlsrad (nach Willcox, 1982): sechs Grundgefühle, je vier genauere Wörter.
+ *  Reihenfolge im Uhrzeigersinn ab oben – angenehme Gefühle nebeneinander. */
+const RAD: Record<Sprache, RadFeld[]> = {
+  de: [
+    { wort: 'fröhlich', farbe: 'gelb', aussen: ['begeistert', 'gut gelaunt', 'albern', 'hoffnungsvoll'] },
+    { wort: 'stark', farbe: 'orange', aussen: ['stolz', 'mutig', 'selbstsicher', 'wertgeschätzt'] },
+    { wort: 'wütend', farbe: 'rot', aussen: ['genervt', 'gereizt', 'gekränkt', 'eifersüchtig'] },
+    { wort: 'ängstlich', farbe: 'lila', aussen: ['nervös', 'unsicher', 'überfordert', 'hilflos'] },
+    { wort: 'traurig', farbe: 'blau', aussen: ['enttäuscht', 'einsam', 'gelangweilt', 'müde'] },
+    { wort: 'ruhig', farbe: 'gruen', aussen: ['entspannt', 'zufrieden', 'geborgen', 'dankbar'] },
+  ],
+  fr: [
+    { wort: 'joyeux', farbe: 'gelb', aussen: ['enthousiaste', 'de bonne humeur', 'blagueur', 'plein d’espoir'] },
+    { wort: 'fort', farbe: 'orange', aussen: ['fier', 'courageux', 'sûr de moi', 'apprécié'] },
+    { wort: 'en colère', farbe: 'rot', aussen: ['agacé', 'irrité', 'blessé', 'jaloux'] },
+    { wort: 'anxieux', farbe: 'lila', aussen: ['nerveux', 'pas sûr de moi', 'débordé', 'impuissant'] },
+    { wort: 'triste', farbe: 'blau', aussen: ['déçu', 'seul', 'ennuyé', 'fatigué'] },
+    { wort: 'calme', farbe: 'gruen', aussen: ['détendu', 'content', 'en sécurité', 'reconnaissant'] },
+  ],
+}
+
+/** Farbe mit Weiß mischen (anteil 0 = weiß, 1 = volle Farbe). */
+function aufhellen(hex: string, anteil: number): string {
+  const n = parseInt(hex.slice(1), 16)
+  const k = (v: number) => Math.round(255 - (255 - v) * anteil).toString(16).padStart(2, '0')
+  return `#${k((n >> 16) & 255)}${k((n >> 8) & 255)}${k(n & 255)}`
+}
+
+function Gefuehlsrad({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'gefuehlsrad' }> }) {
+  const felder = b.felder ?? RAD[c.sprache]
+  const d = Math.min(c.breite, 440)
+  const R = d / 2
+  const r1 = R * 0.5
+  const r0 = R * 0.14
+  const seg = 360 / felder.length
+  const pkt = (r: number, a: number): [number, number] => [R + r * Math.sin((a * Math.PI) / 180), R - r * Math.cos((a * Math.PI) / 180)]
+  const sektor = (ri: number, ra: number, a0: number, a1: number) => {
+    const [x0, y0] = pkt(ra, a0)
+    const [x1, y1] = pkt(ra, a1)
+    const [x2, y2] = pkt(ri, a1)
+    const [x3, y3] = pkt(ri, a0)
+    const g = a1 - a0 > 180 ? 1 : 0
+    return `M${x0} ${y0} A${ra} ${ra} 0 ${g} 1 ${x1} ${y1} L${x2} ${y2} A${ri} ${ri} 0 ${g} 0 ${x3} ${y3} Z`
+  }
+  const ring = R - r1
+  const wortH = c.m.klein * 1.5
+  return (
+    <View wrap={false} style={{ alignItems: 'center' }}>
+      <View style={{ width: d, height: d }}>
+        <Svg width={d} height={d} viewBox={`0 0 ${d} ${d}`}>
+          {felder.map((f, i) => (
+            <Path key={`i${i}`} d={sektor(r0, r1, i * seg, (i + 1) * seg)} fill={aufhellen(FARBWORT[f.farbe], 0.62)} stroke="#FFFFFF" strokeWidth={2} />
+          ))}
+          {felder.flatMap((f, i) => {
+            const k = Math.max(f.aussen.length, 1)
+            return Array.from({ length: k }, (_, j) => (
+              <Path key={`a${i}-${j}`} d={sektor(r1, R - 1, i * seg + (j * seg) / k, i * seg + ((j + 1) * seg) / k)} fill={aufhellen(FARBWORT[f.farbe], 0.22)} stroke="#FFFFFF" strokeWidth={1.4} />
+            ))
+          })}
+          <Circle cx={R} cy={R} r={r0} fill="#FFFFFF" stroke={NEUTRAL.rahmen} strokeWidth={1} />
+        </Svg>
+        {felder.map((f, i) => {
+          const [x, y] = pkt((r0 + r1) / 2 + 2, (i + 0.5) * seg)
+          const w = 76
+          return (
+            <View key={`k${i}`} style={{ position: 'absolute', left: x - w / 2, top: y - c.m.basis * 0.75, width: w, alignItems: 'center' }}>
+              <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: c.m.basis * 0.95, color: NEUTRAL.text }}>{t(c, f.wort)}</Text>
+            </View>
+          )
+        })}
+        {b.aussenLeer
+          ? null
+          : felder.flatMap((f, i) =>
+              f.aussen.map((wort, j) => {
+                const a = i * seg + ((j + 0.5) * seg) / f.aussen.length
+                const [x, y] = pkt((r1 + R) / 2, a)
+                const w = ring * 0.94
+                const drehung = a > 180 ? a + 90 : a - 90
+                return (
+                  <View key={`w${i}-${j}`} style={{ position: 'absolute', left: x - w / 2, top: y - wortH / 2, width: w, height: wortH, alignItems: 'center', justifyContent: 'center', transform: `rotate(${drehung}deg)` }}>
+                    <Text style={{ fontFamily: c.m.schrift, fontSize: c.m.klein, color: NEUTRAL.text }}>{t(c, wort)}</Text>
+                  </View>
+                )
+              }),
+            )}
+        {b.mitte ? (
+          <View style={{ position: 'absolute', left: R - r0, top: R - c.m.klein * 0.8, width: r0 * 2, alignItems: 'center' }}>
+            <Text style={{ fontFamily: c.m.schrift, fontSize: c.m.klein * 0.9, color: NEUTRAL.leise }}>{t(c, b.mitte)}</Text>
+          </View>
+        ) : null}
+      </View>
     </View>
   )
 }
@@ -1614,6 +1719,8 @@ function EinBaustein({ c, b }: { c: Ctx; b: Baustein }) {
       return <Zuordnen c={c} b={b} />
     case 'gefuehle':
       return <Gefuehle c={c} b={b} />
+    case 'gefuehlsrad':
+      return <Gefuehlsrad c={c} b={b} />
     case 'ampel':
       return <Ampel c={c} b={b} />
     case 'thermometer':
@@ -1668,6 +1775,7 @@ function abstandVor(b: Baustein, vorher: Baustein | undefined, c: Ctx): number {
 const FEST = new Set<Baustein['art']>([
   'info', 'geschichte', 'bild', 'frage', 'feld', 'vertrag', 'wortspeicher', 'skala', 'zuordnen', 'ampel', 'thermometer',
   'vulkan', 'eisberg', 'koerper', 'batterie', 'waage', 'leiter', 'zielscheibe', 'hand', 'mindmap', 'plan', 'atmen', 'notfall', 'linien',
+  'gefuehlsrad',
 ])
 
 /** Kleine Bausteine, die nicht umbrechen sollen (auch wenn sie es könnten). */

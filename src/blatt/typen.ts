@@ -12,7 +12,7 @@ import type { AgeLevel } from '../types/material'
 export type Stufe = AgeLevel
 
 /** Themenbereiche der Blätter (bewusst keine Schulfächer). */
-export type Bereich = 'gefuehle' | 'verhalten' | 'miteinander' | 'lernen' | 'alltag' | 'werkzeuge'
+export type Bereich = 'gefuehle' | 'verhalten' | 'miteinander' | 'lernen' | 'alltag' | 'werkzeuge' | 'skills'
 
 /**
  * Gestaltung nach Alter:
@@ -95,7 +95,7 @@ export type Baustein =
   | { art: 'frage'; text: string; linien?: number }
   | { art: 'satzanfaenge'; items: string[]; linien?: number }
   | { art: 'feld'; label?: string; hoehe?: number; beispiel?: string; zeichnen?: boolean }
-  | { art: 'tabelle'; spalten: string[]; zeilen: number; beispiel?: string[]; breiten?: number[] }
+  | { art: 'tabelle'; spalten: string[]; zeilen: number; beispiel?: string[]; breiten?: number[]; /** Erste Spalte vorab nummerieren, beginnend mit dieser Zahl. */ nummern?: number }
   | { art: 'wennDann'; zeilen: number; beispiele?: { wenn: string; dann: string }[]; wenn?: string; dann?: string }
   | { art: 'dialog'; zeilen: { wer: string; text?: string }[] }
   | { art: 'vertrag'; titel?: string; text: string; unterschriften: string[] }
@@ -107,6 +107,9 @@ export type Baustein =
   | { art: 'einschaetzung'; items: string[]; optionen: string[] }
   | { art: 'zuordnen'; links: string[]; rechts: string[]; titel?: [string, string] }
   | { art: 'gefuehle'; gefuehle: Gefuehl[]; modus?: 'benennen' | 'einkreisen' | 'nur'; leer?: number; spalten?: number }
+  /** Gefühlsrad nach Willcox: innen Grundgefühle, außen genauere Wörter. Ohne `felder` gelten die
+   *  Standardwörter; `aussenLeer` lässt den Außenring zum Selbstausfüllen frei. */
+  | { art: 'gefuehlsrad'; felder?: { wort: string; farbe: Farbwort; aussen: string[] }[]; aussenLeer?: boolean; mitte?: string }
   // --- Denk- und Bildmodelle -------------------------------------------------
   | { art: 'ampel'; stufen: [Stufentext, Stufentext, Stufentext]; linien?: number }
   | { art: 'thermometer'; stufen: Stufentext[]; linien?: number }
@@ -195,6 +198,8 @@ export interface Blatt {
   bild?: BildId
   /** Verwandte Blätter (ids). */
   verwandt?: string[]
+  /** Gehört zum Skills-Kurs: Einheit(en), in denen das Blatt vorkommt (z. B. ['j1-e01']). */
+  kurs?: string[]
   de: BlattInhalt
   fr?: BlattInhalt
 }

@@ -80,6 +80,15 @@ export const BEREICHE: BereichDef[] = [
     farben: { tief: '#2E3A9C', mittel: '#C8CDF0', zart: '#EEF0FB' },
     beschreibung: 'Vorlagen für die Arbeit: Verstärkerpläne, Beobachtung, Gespräche, visuelle Hilfen, Krisenplan.',
   },
+  {
+    id: 'skills',
+    kuerzel: 'S',
+    de: 'Skills-Kurs',
+    fr: 'Cours de compétences',
+    icon: 'stairs',
+    farben: { tief: '#6E4A7E', mittel: '#D6C6DE', zart: '#F4EFF7' },
+    beschreibung: 'Schülerblätter zum Skills-Kurs für Jugendliche: Gruppe, Ich, Gefühle, Skills, Gedanken, Kommunikation, schwierige Situationen, digitale Welt, Gesundheit.',
+  },
 ]
 
 export const bereichById = new Map(BEREICHE.map((b) => [b.id, b]))
@@ -139,6 +148,26 @@ export const THEMEN: ThemaDef[] = [
   T('werkzeuge', 'visuell', 'Visuelle Hilfen', 'Supports visuels'),
   T('werkzeuge', 'krise', 'Krise & Sicherheit', 'Crise et sécurité'),
   T('werkzeuge', 'gruppe', 'Klassenrat & Gruppe', 'Conseil de classe et groupe'),
+
+  T('skills', 'ankommen', 'Ankommen & Gruppe', 'Arriver et former le groupe'),
+  T('skills', 'ich', 'Wer bin ich?', 'Qui suis-je ?'),
+  T('skills', 'gefuehle', 'Gefühle verstehen', 'Comprendre les émotions'),
+  T('skills', 'regulieren', 'Gefühle regulieren', 'Réguler ses émotions'),
+  T('skills', 'gedanken', 'Meine Gedanken', 'Mes pensées'),
+  T('skills', 'kommunikation', 'Kommunikation & Grenzen', 'Communication et limites'),
+  T('skills', 'schwierig', 'Wenn es schwierig wird', 'Quand c’est difficile'),
+  T('skills', 'digital', 'Digitale Welt', 'Monde numérique'),
+  T('skills', 'gesund', 'Gesund & stark', 'En bonne santé'),
+  T('skills', 'selbstwert', 'Selbstwert & Körper', 'Estime de soi et corps'),
+  T('skills', 'schule', 'Stress & Schule', 'Stress et école'),
+  T('skills', 'wut', 'Wut & Impulse', 'Colère et impulsions'),
+  T('skills', 'freundschaft', 'Freundschaft, Familie & Beziehungen', 'Amitié, famille et relations'),
+  T('skills', 'vielfalt', 'Vielfalt & Respekt', 'Diversité et respect'),
+  T('skills', 'werte', 'Werte & Entscheidungen', 'Valeurs et décisions'),
+  T('skills', 'zukunft', 'Zukunft & Selbstständigkeit', 'Avenir et autonomie'),
+  T('skills', 'resilienz', 'Schwere Gefühle & Resilienz', 'Émotions difficiles et résilience'),
+  T('skills', 'mitbestimmung', 'Meinung & Mitbestimmung', 'Opinion et participation'),
+  T('skills', 'abschluss', 'Rückblick & Abschluss', 'Bilan et clôture'),
 ]
 
 export const themaById = new Map(THEMEN.map((t) => [t.bereich + '/' + t.id, t]))

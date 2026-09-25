@@ -155,7 +155,8 @@ function Vorschau({ b, sprache, lehrer }: { b: NummeriertesBlatt; sprache: Sprac
   return <iframe className="bl-vorschau" src={url + '#toolbar=0&navpanes=0&view=FitH'} title={`Vorschau: ${b.de.titel}`} />
 }
 
-function BlattDetail({ b, bew, onSchliessen, onOeffnen, gewaehlt, onWaehlen }: { b: NummeriertesBlatt; bew: Bewertungen; onSchliessen: () => void; onOeffnen: (id: string) => void; gewaehlt: boolean; onWaehlen: () => void }) {
+/** Detail eines Blatts (Vorschau, Download, Bewertung). Auch vom Skills-Kurs benutzt – dort ohne Mappe. */
+export function BlattDetail({ b, bew, onSchliessen, onOeffnen, gewaehlt, onWaehlen }: { b: NummeriertesBlatt; bew: Bewertungen; onSchliessen: () => void; onOeffnen: (id: string) => void; gewaehlt?: boolean; onWaehlen?: () => void }) {
   const [sprache, setSprache] = useState<Sprache>('de')
   const [laedt, setLaedt] = useState<string | null>(null)
   const bereich = bereichById.get(b.bereich)!
@@ -222,10 +223,12 @@ function BlattDetail({ b, bew, onSchliessen, onOeffnen, gewaehlt, onWaehlen }: {
                 Nur Lehrerseite
               </button>
             </div>
-            <button type="button" className="btn btn-quiet justify-center" onClick={onWaehlen}>
-              <Icon name={gewaehlt ? 'check' : 'layers'} />
-              {gewaehlt ? 'In der Mappe' : 'In die Mappe legen'}
-            </button>
+            {onWaehlen ? (
+              <button type="button" className="btn btn-quiet justify-center" onClick={onWaehlen}>
+                <Icon name={gewaehlt ? 'check' : 'layers'} />
+                {gewaehlt ? 'In der Mappe' : 'In die Mappe legen'}
+              </button>
+            ) : null}
           </div>
 
           <dl className="bl-fakten">

@@ -33,7 +33,7 @@ const ARTEN = new Set([
   'aufgabe', 'text', 'info', 'geschichte', 'bild', 'spalten', 'abstand', 'seitenumbruch', 'linien', 'frage', 'satzanfaenge', 'feld', 'tabelle',
   'wennDann', 'dialog', 'vertrag', 'ankreuzen', 'bilder', 'wortspeicher', 'skala', 'einschaetzung', 'zuordnen', 'gefuehle', 'ampel', 'thermometer',
   'vulkan', 'eisberg', 'koerper', 'batterie', 'waage', 'leiter', 'zielscheibe', 'hand', 'mindmap', 'schritte', 'plan', 'tagesplan', 'atmen', 'comic',
-  'karten', 'rueckblick', 'notfall',
+  'karten', 'rueckblick', 'notfall', 'gefuehlsrad',
 ])
 
 /** Formulierungen, die nach Textbaukasten klingen. */
@@ -144,6 +144,16 @@ function pruefeBausteine(wo: string, liste: Baustein[], blatt: Blatt, sprache: S
         break
       case 'gefuehle':
         for (const g of b.gefuehle) if (!(GEFUEHLE as string[]).includes(g)) melde('F', w, `Gefühl „${g}“ gibt es nicht`)
+        break
+      case 'gefuehlsrad':
+        if (b.felder) {
+          if (b.felder.length < 4 || b.felder.length > 8) melde('F', w, '4–8 Grundgefühle nötig')
+          for (const f of b.felder) {
+            if (!FARBWOERTER.includes(f.farbe)) melde('F', w, `Farbe „${f.farbe}“ gibt es nicht`)
+            if (f.aussen.length > 5) melde('F', w, `„${f.wort}“: höchstens 5 Wörter außen`)
+            for (const x of [f.wort, ...f.aussen]) if (x.length > 14) melde('H', w, `„${x}“ ist für das Rad zu lang (max. 14 Zeichen)`)
+          }
+        }
         break
       case 'koerper':
         for (const l of b.legende ?? []) if (!FARBWOERTER.includes(l.farbe)) melde('F', w, `Farbe „${l.farbe}“ gibt es nicht`)
@@ -260,7 +270,7 @@ for (const datei of liste) {
     if (!Array.isArray(b.stufen) || !b.stufen.length || b.stufen.some((s) => !STUFEN_REIHE.includes(s))) melde('F', wo, 'stufen ungültig')
     const werkzeug = b.bereich === 'werkzeuge'
     if (!werkzeug && b.stufen?.includes('C1') && b.stufen.some((s) => s !== 'C1' && s !== 'C2')) melde('F', wo, 'Spielschul-Blätter nur für C1 (höchstens C1–C2)')
-    if (!werkzeug && b.stufen?.includes('ES') && !b.fr) melde('F', wo, 'Sekundarschul-Blatt braucht eine französische Fassung (fr)')
+    if (!werkzeug && b.bereich !== 'skills' && b.stufen?.includes('ES') && !b.fr) melde('F', wo, 'Sekundarschul-Blatt braucht eine französische Fassung (fr)')
     if (!Array.isArray(b.sozialform) || !b.sozialform.length || b.sozialform.some((s) => !['einzeln', 'gruppe', 'klasse'].includes(s))) melde('F', wo, 'sozialform ungültig')
     if (!b.dauer) melde('F', wo, 'dauer fehlt')
     if (!Array.isArray(b.eldib) || !b.eldib.length || b.eldib.length > 4) melde('F', wo, '1–4 ELDiB-Ziele angeben')

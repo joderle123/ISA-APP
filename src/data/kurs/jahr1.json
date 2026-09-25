@@ -1,0 +1,173 @@
+{
+  "jahr": {
+    "nr": 1,
+    "titel": "Kursjahr 1 · Ich, wir und die Welt",
+    "untertitel": "Ein Schuljahr in 30 Einheiten",
+    "faden": "Das Jahr ist wie eine Treppe gebaut: vom Ich (Bedürfnisse, Stärken, Gefühle) über das Wir (Kommunikation, Grenzen, Konflikte) zur Welt (digitale Welt, Gesundheit). Viele Übungen kehren wieder: das Gefühlsrad in jeder Einheit, der Skills-Pass am Ende jeder Einheit, das Glas der Bedürfnisse, der Baum der Stärke und ab Einheit 11 die Anspannungsskala.",
+    "module": [
+      "j1-m0",
+      "j1-m1",
+      "j1-m2",
+      "j1-m3",
+      "j1-m4",
+      "j1-m5",
+      "j1-m6",
+      "j1-m7",
+      "j1-m8",
+      "j1-m9"
+    ],
+    "joker": [
+      "j1-j01",
+      "j1-j02",
+      "j1-j03",
+      "j1-j04",
+      "j1-j05",
+      "j1-j06",
+      "j1-j07",
+      "j1-j08",
+      "j1-j09"
+    ]
+  },
+  "module": [
+    {
+      "id": "j1-m0",
+      "jahr": 1,
+      "nr": 0,
+      "titel": "Ankommen",
+      "leitfrage": "Wer sind wir als Gruppe?",
+      "worum": "Bevor über Gefühle und Persönliches gesprochen werden kann, braucht die Gruppe Sicherheit. Regeln werden gemeinsam vereinbart, die Rituale eingeführt, und die Jugendlichen lernen sich spielerisch kennen – ohne Druck und ohne Tiefgang.",
+      "zielAmEnde": "Die Jugendlichen kennen den Rahmen, fühlen sich in der Gruppe sicher und kennen Gefühlsrad und Skills-Pass.",
+      "einheiten": [
+        "j1-e01",
+        "j1-e02",
+        "j1-e03"
+      ]
+    },
+    {
+      "id": "j1-m1",
+      "jahr": 1,
+      "nr": 1,
+      "titel": "Wer bin ich?",
+      "leitfrage": "Was brauche ich, was kann ich?",
+      "worum": "Die Jugendlichen schauen auf sich selbst: Welche Bedürfnisse habe ich, wie erlebe ich mich zwischen laut und leise, welche Stärken tragen mich? Die Übungen bleiben ressourcenorientiert und freiwillig.",
+      "zielAmEnde": "Die Jugendlichen können eigene Bedürfnisse und Stärken benennen.",
+      "einheiten": [
+        "j1-e04",
+        "j1-e05",
+        "j1-e06"
+      ]
+    },
+    {
+      "id": "j1-m2",
+      "jahr": 1,
+      "nr": 2,
+      "titel": "Gefühle verstehen",
+      "leitfrage": "Was fühle ich – und wozu?",
+      "worum": "Gefühle bekommen Namen, einen Ort im Körper und eine Botschaft. Die Jugendlichen lernen, dass es keine falschen Gefühle gibt, dass Gefühle sich mischen und dass man ihre Stärke einschätzen kann.",
+      "zielAmEnde": "Die Jugendlichen benennen Gefühle genauer, spüren sie im Körper und kennen ihre Funktion.",
+      "einheiten": [
+        "j1-e07",
+        "j1-e08",
+        "j1-e09",
+        "j1-e10"
+      ]
+    },
+    {
+      "id": "j1-m3",
+      "jahr": 1,
+      "nr": 3,
+      "titel": "Gefühle regulieren (Skills)",
+      "leitfrage": "Was hilft mir, wenn es zu viel wird?",
+      "worum": "Herzstück des Jahres: die Anspannungsskala von 0 bis 100 und Skills für jede Stufe – über Körper und Atem, über die Sinne, über Achtsamkeit und Gedanken. Am Ende packt jede Person ihren eigenen Skills-Koffer.",
+      "zielAmEnde": "Die Jugendlichen kennen mehrere Skills, wissen, welche bei welcher Anspannung helfen, und haben einen persönlichen Notfallplan.",
+      "einheiten": [
+        "j1-e11",
+        "j1-e12",
+        "j1-e13",
+        "j1-e14",
+        "j1-e15"
+      ]
+    },
+    {
+      "id": "j1-m4",
+      "jahr": 1,
+      "nr": 4,
+      "titel": "Meine Gedanken",
+      "leitfrage": "Was denke ich über mich – und stimmt das?",
+      "worum": "Situation, Gedanke, Gefühl und Verhalten hängen zusammen. Die Jugendlichen entdecken eigene Glaubenssätze, prüfen sie wie ein Detektiv und probieren hilfreichere Gedanken aus.",
+      "zielAmEnde": "Die Jugendlichen erkennen belastende Gedanken und können sie überprüfen und umformulieren.",
+      "einheiten": [
+        "j1-e16",
+        "j1-e17",
+        "j1-e18",
+        "j1-e19"
+      ]
+    },
+    {
+      "id": "j1-m5",
+      "jahr": 1,
+      "nr": 5,
+      "titel": "Kommunikation & Grenzen",
+      "leitfrage": "Wie sage ich, was ich fühle und brauche?",
+      "worum": "Verbale und nonverbale Kommunikation, Ich-Botschaften und Zuhören – und dann das Thema Grenzen: eigene erkennen, die anderer achten und klar Stopp sagen.",
+      "zielAmEnde": "Die Jugendlichen formulieren Ich-Botschaften und setzen Grenzen klar und respektvoll.",
+      "einheiten": [
+        "j1-e20",
+        "j1-e21",
+        "j1-e22",
+        "j1-e23"
+      ]
+    },
+    {
+      "id": "j1-m6",
+      "jahr": 1,
+      "nr": 6,
+      "titel": "Wenn es schwierig wird",
+      "leitfrage": "Was tue ich bei Konflikten, Gruppendruck und Mobbing?",
+      "worum": "Hier kommen die Skills zusammen: Konflikte in Schritten lösen, Nein sagen trotz Gruppendruck, Mobbing erkennen und mit Zivilcourage handeln.",
+      "zielAmEnde": "Die Jugendlichen kennen Wege aus Konflikten und wissen, wie sie sich und andere schützen.",
+      "einheiten": [
+        "j1-e24",
+        "j1-e25",
+        "j1-e26"
+      ]
+    },
+    {
+      "id": "j1-m7",
+      "jahr": 1,
+      "nr": 7,
+      "titel": "Digitale Welt",
+      "leitfrage": "Was macht das Handy mit mir?",
+      "worum": "Soziale Medien, Bildschirmzeit, perfekte Bilder, Fake News und KI – ohne Panik, mit eigenen Erfahrungen und klaren Prüffragen.",
+      "zielAmEnde": "Die Jugendlichen schätzen ihren Medienumgang ein und prüfen Inhalte kritisch.",
+      "einheiten": [
+        "j1-e27",
+        "j1-e28"
+      ]
+    },
+    {
+      "id": "j1-m8",
+      "jahr": 1,
+      "nr": 8,
+      "titel": "Gesund & stark",
+      "leitfrage": "Wie sorge ich für mich?",
+      "worum": "Schlaf, Bewegung, Essen, Stress und Erholung: Was tut mir gut, was belastet mich, und welcher kleine Schritt ist realistisch?",
+      "zielAmEnde": "Die Jugendlichen haben einen persönlichen, machbaren Gesund-Plan.",
+      "einheiten": [
+        "j1-e29"
+      ]
+    },
+    {
+      "id": "j1-m9",
+      "jahr": 1,
+      "nr": 9,
+      "titel": "Abschluss",
+      "leitfrage": "Was nehme ich mit?",
+      "worum": "Rückblick auf das Jahr mit Skills-Pass, Glas der Bedürfnisse und Baum der Stärke, ein Brief an sich selbst und ein wertschätzender Abschied.",
+      "zielAmEnde": "Die Jugendlichen sehen, was sie gelernt haben, und verabschieden sich gut voneinander.",
+      "einheiten": [
+        "j1-e30"
+      ]
+    }
+  ]
+}

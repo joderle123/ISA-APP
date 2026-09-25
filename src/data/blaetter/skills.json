@@ -1,0 +1,344 @@
+[
+  {
+    "id": "skills-gruppenvertrag",
+    "bereich": "skills",
+    "thema": "ankommen",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "gruppe"
+    ],
+    "dauer": "20 Min.",
+    "eldib": [
+      "SOZ-27",
+      "SOZ-32",
+      "SOZ-29"
+    ],
+    "schlagworte": [
+      "Gruppenregeln",
+      "Vertrauen",
+      "Schweigepflicht",
+      "Gruppenstart",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:heart-handshake",
+    "kurs": [
+      "j1-e01"
+    ],
+    "de": {
+      "titel": "Unser Gruppenvertrag",
+      "untertitel": "Was wir brauchen, damit wir hier offen sein können",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Regeln wirken nur, wenn alle dahinterstehen – deshalb legt ihr sie selbst fest."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Sammelt zuerst: Was braucht ihr, um hier ehrlich sein zu können? Und was soll auf keinen Fall passieren?",
+          "symbole": [
+            "gruppe",
+            "sprechen"
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "feld",
+              "label": "Das brauchen wir",
+              "hoehe": 3
+            }
+          ],
+          "rechts": [
+            {
+              "art": "feld",
+              "label": "Das soll hier nicht passieren",
+              "hoehe": 3
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Einigt euch auf drei bis fünf Regeln. Schreibt dazu, warum sie euch wichtig sind.",
+          "hinweis": "Positiv formulieren hilft: „Wir lassen einander ausreden“ statt „Nicht dazwischenreden“."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Nr.",
+            "Unsere Regel",
+            "Warum sie uns wichtig ist"
+          ],
+          "breiten": [
+            0.45,
+            2.6,
+            2
+          ],
+          "zeilen": 5,
+          "nummern": 1,
+          "beispiel": [
+            "z. B.",
+            "Wir lachen miteinander, nicht übereinander.",
+            "Damit sich niemand bloßgestellt fühlt."
+          ]
+        },
+        {
+          "art": "frage",
+          "text": "Was machen wir, wenn jemand eine Regel bricht?",
+          "linien": 1
+        },
+        {
+          "art": "vertrag",
+          "titel": "Wir halten uns daran",
+          "text": "Wir haben diese Regeln gemeinsam aufgestellt und erinnern einander ruhig daran. Was hier erzählt wird, bleibt hier – außer jemand ist in Gefahr: Dann holt die Leitung Hilfe und sagt vorher, was sie tut. Am ___ prüfen wir, ob die Regeln noch passen.",
+          "unterschriften": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "Leitung"
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Gruppe formuliert zu Beginn des Kurses eigene Regeln, begründet sie und verpflichtet sich darauf. Die Grenzen der Schweigepflicht werden offen besprochen.",
+        "ablauf": [
+          "Impuls (3 Min.): „Was braucht ihr, damit ihr euch hier wohlfühlt und ehrlich sein könnt?“ Antworten in die beiden Felder schreiben lassen.",
+          "Sammeln (7 Min.): Ähnliches zusammenfassen. Scherzantworten ernst nehmen und nachfragen, was dahintersteckt.",
+          "Formulieren (7 Min.): Drei bis fünf Regeln mit Begründung in die Tabelle schreiben. Fehlende Kernregeln ergänzen: Vertraulichkeit, „weiter“ ist erlaubt, miteinander statt übereinander lachen, Handys weg, Pausenregel.",
+          "Vertrag (3 Min.): Den Satz zur Schweigepflicht vorlesen und Fragen ehrlich beantworten. Alle unterschreiben, auch die Leitung; den Vertrag gut sichtbar aufhängen."
+        ],
+        "hintergrund": "Gemeinsam erarbeitete Regeln werden eher eingehalten als vorgegebene, weil sie das Bedürfnis nach Mitbestimmung und Zugehörigkeit ernst nehmen (Deci & Ryan, 2000). Für Gruppen mit belasteten Jugendlichen ist ein klarer, vorhersehbarer Rahmen zugleich eine Schutzbedingung: Erst wenn die Gruppe sicher ist, können persönliche Themen Platz haben. Programme, die sozial-emotionale Fertigkeiten fördern, wirken besonders dann, wenn Ziele und Regeln offen benannt werden (Durlak et al., 2011).",
+        "quellen": [
+          "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268.",
+          "Durlak, J. A., Weissberg, R. P., Dymnicki, A. B., Taylor, R. D. & Schellinger, K. B. (2011). The impact of enhancing students’ social and emotional learning: A meta-analysis of school-based universal interventions. Child Development, 82(1), 405–432."
+        ],
+        "differenzierung": {
+          "leichter": "Die Leitung bringt acht vorformulierte Regelkarten mit; die Gruppe wählt aus und ergänzt die Begründung mündlich.",
+          "schwerer": "Die Gruppe legt zusätzlich fest, wie sie Regelverstöße bespricht – zum Beispiel mit einer Karte, die jede Person einmal pro Einheit hochhalten darf."
+        },
+        "impulse": [
+          "Welche Regel ist euch die wichtigste – und warum gerade die?",
+          "Was soll die Leitung tun, wenn es hier einmal richtig laut wird?"
+        ],
+        "tipps": [
+          "Den Vertrag in der dritten und in der zehnten Einheit kurz wieder anschauen: Passt noch alles?",
+          "Bei Regelverstößen auf den Vertrag zeigen statt zu schimpfen – die Regeln stammen von der Gruppe."
+        ],
+        "achtung": "Wird deutlich, dass jemand Gewalt oder Bedrohung erlebt, nicht in der Gruppe nachfragen: Einzelgespräch anbieten, die zuständige Leitung (Responsable) informieren und bei Gefährdung sofort nach dem internen Schutzkonzept handeln.",
+        "material": "Blatt in A3, Stifte, Klebeband zum Aufhängen"
+      }
+    }
+  },
+  {
+    "id": "skills-pass",
+    "bereich": "skills",
+    "thema": "ankommen",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln"
+    ],
+    "dauer": "5 Min. je Einheit",
+    "eldib": [
+      "K-24",
+      "V-22",
+      "SOZ-40"
+    ],
+    "schlagworte": [
+      "Skills-Pass",
+      "Reflexion",
+      "Rückblick",
+      "Skills-Kurs",
+      "Ritual"
+    ],
+    "bild": "icon:bookmark",
+    "kurs": [
+      "j1-e01"
+    ],
+    "de": {
+      "titel": "Mein Skills-Pass",
+      "untertitel": "Ein Satz pro Einheit – am Ende des Jahres hast du dein ganzes Jahr in der Hand.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Schreib am Ende jeder Einheit einen Satz auf: Was nehme ich heute mit?",
+          "hinweis": "Das kann ein Skill sein, ein Gedanke oder etwas, das dich überrascht hat. Dafür gibt es einen Stempel."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Nr.",
+            "Das nehme ich mit",
+            "Stempel"
+          ],
+          "breiten": [
+            0.45,
+            4,
+            0.85
+          ],
+          "zeilen": 15,
+          "nummern": 1,
+          "beispiel": [
+            "z. B.",
+            "Mit 5-4-3-2-1 werde ich ruhiger, wenn mein Kopf voll ist.",
+            ""
+          ]
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Nr.",
+            "Das nehme ich mit",
+            "Stempel"
+          ],
+          "breiten": [
+            0.45,
+            4,
+            0.85
+          ],
+          "zeilen": 15,
+          "nummern": 16
+        },
+        {
+          "art": "frage",
+          "text": "Am Ende des Jahres: Welcher Skill hat dir am meisten geholfen – und wann?",
+          "linien": 2
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen halten nach jeder Einheit in einem Satz fest, was sie mitnehmen. So wird das Gelernte sichtbar, und am Jahresende entsteht ein persönlicher Rückblick.",
+        "ablauf": [
+          "Einheit 1: Pässe austeilen, Namen eintragen lassen und erklären, dass sie im Raum bleiben (Box oder Mappe).",
+          "Ab dann am Ende jeder Einheit (3–5 Min.): Satz eintragen, Stempel oder Sticker geben. Wer nichts einfällt, darf aus dem Skill der Einheit einen Satz machen.",
+          "Die Einträge nicht korrigieren und nur lesen, wenn die Person es anbietet.",
+          "Einheit 30: Die Pässe gemeinsam durchblättern und die Abschlussfrage beantworten."
+        ],
+        "hintergrund": "Wer am Ende einer Stunde selbst formuliert, was er gelernt hat, verarbeitet das Gelernte ein zweites Mal und kann es später leichter abrufen. Das Skillstraining der Dialektisch-Behavioralen Therapie für Jugendliche nutzt mit der Tagebuchkarte ein ähnliches Werkzeug: Skills werden notiert, damit sie im Alltag präsent bleiben (Rathus & Miller, 2015). Der Stempel ist bewusst ein kleines Ritual – er würdigt die Mitarbeit, nicht die Qualität des Satzes.",
+        "quellen": [
+          "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Satzanfänge an die Tafel: „Heute habe ich gemerkt …“, „Ein Skill, den ich ausprobieren will …“.",
+          "schwerer": "Zusätzlich notieren, wann der Skill in der kommenden Woche passen könnte."
+        },
+        "impulse": [
+          "Was hat euch heute überrascht?",
+          "Welchen Satz würdet ihr euch in einem Monat gern selbst vorlesen?"
+        ],
+        "tipps": [
+          "Den Pass auf festeres Papier drucken oder in einer Klarsichthülle aufbewahren – er soll ein Jahr halten.",
+          "Einen eigenen Stempel für die Gruppe gestalten lassen; das stärkt das Wir-Gefühl."
+        ],
+        "material": "Pass auf festem Papier (A4, doppelseitig), Stempel oder Sticker, Box für die Pässe"
+      }
+    }
+  },
+  {
+    "id": "skills-gefuehlsrad",
+    "bereich": "skills",
+    "thema": "ankommen",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "5–10 Min. je Einheit",
+    "eldib": [
+      "K-26",
+      "K-16",
+      "K-10"
+    ],
+    "schlagworte": [
+      "Gefühlsrad",
+      "Check-in",
+      "Gefühle benennen",
+      "Gefühlswortschatz",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:mood-smile",
+    "kurs": [
+      "j1-e01"
+    ],
+    "de": {
+      "titel": "Das Gefühlsrad",
+      "untertitel": "Innen die Grundgefühle, außen die genaueren Wörter",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "„Schlecht“ kann vieles heißen: enttäuscht, gekränkt, nervös oder einfach müde. Je genauer du ein Gefühl benennst, desto besser kannst du damit umgehen."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Kreise ein, wie es dir gerade geht. Es dürfen auch zwei oder drei Wörter sein.",
+          "symbole": [
+            "einkreisen"
+          ]
+        },
+        {
+          "art": "gefuehlsrad"
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Gerade fühle ich mich …",
+            "Das liegt vielleicht daran, dass …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Du entscheidest, was du teilst.",
+          "text": "Im Check-in reicht es, auf ein Wort zu zeigen. Das „weil“ ist freiwillig."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen lernen ein Werkzeug kennen, mit dem sie Gefühle genauer benennen. Das Rad ist die Grundlage für den Check-in am Anfang jeder Einheit.",
+        "ablauf": [
+          "Einheit 1 (5 Min.): Das Rad in A3 in die Mitte legen – innen sechs Grundgefühle, außen genauere Wörter. Fragen: Was ist der Unterschied zwischen genervt und gekränkt?",
+          "Jede Einheit (5–10 Min.): Reihum zeigt jede Person auf ein Wort und sagt einen Satz dazu. Die Leitung beginnt.",
+          "Einzelblatt: Wörter einkreisen, Satzanfänge ergänzen. Das Blatt wird nicht eingesammelt.",
+          "Ab Einheit 11 kommt die Anspannung von 0 bis 100 dazu."
+        ],
+        "hintergrund": "Das Gefühlsrad geht auf Gloria Willcox (1982) zurück: Innen stehen wenige Grundgefühle, nach außen werden die Wörter feiner. Wer ein Gefühl in Worte fasst, dämpft damit messbar die Reaktion des Gehirns auf belastende Reize (Lieberman et al., 2007). Ein großer Gefühlswortschatz gehört zur emotionalen Kompetenz und hilft Jugendlichen, passend zu handeln, statt nur zu reagieren (Brackett, 2019). „Müde“ und „gelangweilt“ stehen wie bei Willcox beim Grundgefühl traurig: Beides sind Zustände mit wenig Energie.",
+        "quellen": [
+          "Willcox, G. (1982). The Feeling Wheel: A tool for expanding awareness of emotions and increasing spontaneity and intimacy. Transactional Analysis Journal, 12(4), 274–276.",
+          "Lieberman, M. D., Eisenberger, N. I., Crockett, M. J., Tom, S. M., Pfeifer, J. H. & Way, B. M. (2007). Putting feelings into words: Affect labeling disrupts amygdala activity in response to affective stimuli. Psychological Science, 18(5), 421–428.",
+          "Brackett, M. A. (2019). Permission to Feel. New York: Celadon."
+        ],
+        "differenzierung": {
+          "leichter": "Nur die sechs Grundgefühle in der Mitte verwenden; die Leitung liest die äußeren Wörter bei Bedarf vor.",
+          "schwerer": "Die Gruppe sammelt Wörter, die im Rad fehlen – etwa gestresst, peinlich berührt, erleichtert –, und ordnet sie einem Grundgefühl zu."
+        },
+        "impulse": [
+          "Genervt oder gereizt – wo ist für euch der Unterschied?",
+          "Welches Gefühl fehlt euch im Rad?"
+        ],
+        "tipps": [
+          "Das Rad in A3 laminieren: Jede Person steckt eine Wäscheklammer an ihr Wort – so ist die Stimmung auf einen Blick sichtbar.",
+          "Antworten wie „geht so“ oder „egal“ gelten lassen und höchstens fragen, welches Wort im Rad am nächsten dran ist."
+        ],
+        "achtung": "Zeigt jemand immer wieder auf hilflos, einsam oder überfordert: nicht in der Gruppe nachfragen, sondern ein Einzelgespräch anbieten.",
+        "material": "Rad in A3 (laminiert), Blatt in A4 je Person, Wäscheklammern"
+      }
+    }
+  }
+]
