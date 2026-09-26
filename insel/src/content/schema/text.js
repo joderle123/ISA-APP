@@ -60,7 +60,10 @@ function allStrings(def) {
     if (isStr(v)) { if (!teacher) out.push({ path: path.join('.'), text: v }); return; }
     if (Array.isArray(v)) { v.forEach((x, i) => walk(x, path.concat(i), teacher)); return; }
     if (!isObj(v)) return;
-    for (const k of Object.keys(v)) walk(v[k], path.concat(k), teacher || TEACHER_FIELDS.includes(k));
+    for (const k of Object.keys(v)) {
+      if (!teacher && !/^\d+$/.test(k)) out.push({ path: path.concat(k).join('.'), text: k });   // auch Schlüssel (Orts-/ID-Namen)
+      walk(v[k], path.concat(k), teacher || TEACHER_FIELDS.includes(k));
+    }
   };
   walk(def, [], false);
   return out;

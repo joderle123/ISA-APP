@@ -27,6 +27,7 @@
  *     state.on('units', fn)  → fn({ path, value, prev })  (auch für Unterpfade)   state.on('*', fn)  alles
  *   Jede Änderung löst auf game.events 'state:change' {path, value, prev} aus; state.reset(data) löst 'state:reset' aus.
  *   'session.*' wird NICHT gespeichert (Laufzeit: puls, …); 'private.*' und 'baumhaus.glas' gehen NIE in den Export.
+ *   Pfade trennen an '.', daher keine Schlüssel mit Punkt als Pfadsegment (Upgrades wie 'blick.tanks' liegen in Arrays).
  *
  * EREIGNISSE (Konvention für Systeme, damit Debug/Tests sie auslösen können)
  *   'unit:unlock' {id}  'unit:complete' {id}  'ability:grant' {id}  'puls:set' {value}  'mode:change' {mode}

@@ -9,7 +9,7 @@ export default {
       choices: [
         { say: 'Ja.', goto: 'nirgendwo' },
         { say: 'Nein.' },
-        { label: 'Vielleicht doch eher nicht so', goto: 'd' },
+        { label: 'Vielleicht doch eher lieber nicht so', goto: 'd' },
         { say: 'Vier.', goto: 'd' },
         { say: 'Fünf.', goto: 'd' },
       ],

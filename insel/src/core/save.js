@@ -61,7 +61,7 @@ export function defaultState(seed = seedFromEntropy()) {
 export const MIGRATIONS = [];
 export function migrate(data) {
   let d = data;
-  let v = Number(d.v) || 1;
+  let v = typeof d.v === 'number' && Number.isFinite(d.v) ? d.v : 0;   // ohne Version = vor Version 1
   for (const m of MIGRATIONS) {
     if (m.to > v && m.to <= SAVE_VERSION) { d = m.run(d) || d; v = m.to; }
   }
@@ -315,7 +315,7 @@ export function createSave({ state, events = null, storage = null, now = () => D
   };
   if (events) {
     events.on('save:request', (e) => save.request(e && e.reason));
-    for (const ev of ['unit:complete', 'quest:complete']) events.on(ev, () => save.request('force'));
+    for (const ev of ['unit:complete', 'quest:complete']) events.on(ev, () => save.request('force'));   // Meilensteine immer sichern
   }
   return save;
 }

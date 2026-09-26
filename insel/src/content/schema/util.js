@@ -1,5 +1,6 @@
 // Kleine Prüf-Helfer für die Schema-Validatoren (ohne Fremdbibliothek).
 // ctx = { file, kind, id, errors: [], warnings: [], refs: [] }; Fehler: { file, path, msg }
+import { UNIT_IDS } from './consts.js';
 export const isObj = (v) => v !== null && typeof v === 'object' && !Array.isArray(v);
 export const isStr = (v) => typeof v === 'string';
 export const isNum = (v) => typeof v === 'number' && Number.isFinite(v);
@@ -62,6 +63,6 @@ export function checkPos(ctx, path, pos, { allowArray = false } = {}) {
 }
 export function unitRef(ctx, path, id) {
   if (!isStr(id)) return err(ctx, path, 'Einheiten-ID erwartet (z. B. j1-e11)');
-  ref(ctx, path, 'unit', id);
+  if (!UNIT_IDS.includes(id)) return err(ctx, path, `Einheit '${id}' gibt es nicht (j1-e01…e30, j1-j01…j09)`);
   return true;
 }
