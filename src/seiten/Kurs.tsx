@@ -46,6 +46,25 @@ function nrAusId(id: string): number {
   return Number(/(\d+)$/.exec(id)?.[1] ?? 0)
 }
 
+/** Titel eines Kursjahres ohne „Kursjahr N · “ davor. */
+function jahrKurztitel(t: string): string {
+  return t.replace(/^Kursjahr\s*\d+\s*[·:–-]\s*/, '')
+}
+
+/** Von–bis-Minuten jedes Schritts, lückenlos aus den Dauern (wie im Spickzettel). */
+function schrittZeiten(e: Einheit): { von: number; bis: number }[] {
+  let t = 0
+  return e.schritte.map((s) => {
+    const von = t
+    t += s.dauer
+    return { von, bis: t }
+  })
+}
+
+function blaetterText(n: number): string {
+  return n === 1 ? '1 Blatt' : `${n} Blätter`
+}
+
 // --- Ansicht aus dem Hash --------------------------------------------------------------
 
 type Ansicht = { art: 'uebersicht' } | { art: 'einheit'; id: string } | { art: 'grundlagen' }
@@ -76,6 +95,64 @@ function AblaufLeiste({ e, klein }: { e: Einheit; klein?: boolean }) {
         return <span key={i} style={{ width: `${(((b || 0) - (a || 0)) / gesamt) * 100}%`, background: phase(z.phase).farbe }} title={`${z.min} Min. · ${z.titel}`} />
       })}
     </div>
+  )
+}
+
+/** Was die Farben der Ablauf-Leiste bedeuten (nur die Phasen dieser Einheit). */
+function PhasenLegende({ e }: { e: Einheit }) {
+  const gesehen: Phase[] = []
+  e.ablauf.forEach((z) => {
+    if (!gesehen.includes(z.phase)) gesehen.push(z.phase)
+  })
+  return (
+    <ul className="ku-legende" aria-hidden="true">
+      {gesehen.map((p) => (
+        <li key={p}>
+          <i style={{ background: phase(p).farbe }} />
+          {phase(p).name}
+        </li>
+      ))}
+    </ul>
+  )
+}
+
+/** Reiter für die Kursjahre: jedes Jahr lässt sich ansehen, die Gruppe bleibt in ihrem Jahr. */
+function JahrWahl({ sicht, gruppeJahr, onWahl }: { sicht: number; gruppeJahr: number; onWahl: (n: number) => void }) {
+  if (kursjahre.length < 2) return null
+  return (
+    <div className="ku-jahre" role="tablist" aria-label="Kursjahr">
+      {kursjahre.map((j) => (
+        <button key={j.nr} type="button" role="tab" aria-selected={j.nr === sicht} className={`ku-jahr ${j.nr === sicht ? 'an' : ''}`} onClick={() => onWahl(j.nr)}>
+          <span className="ku-jahr-nr">
+            Kursjahr {j.nr}
+            {j.nr === gruppeJahr ? <span className="ku-jahr-gruppe">eure Gruppe</span> : null}
+          </span>
+          <span className="ku-jahr-titel">{jahrKurztitel(j.titel)}</span>
+          <span className="ku-jahr-info">
+            {geplanteEinheiten(j.nr)} Einheiten · {moduleVon(j.nr).length} Module
+          </span>
+        </button>
+      ))}
+    </div>
+  )
+}
+
+/** Hinweis, wenn ein anderes Kursjahr angezeigt wird als das der Gruppe. */
+function SichtInfo({ gruppe, jahrNr, onUmstellen }: { gruppe: Gruppe; jahrNr: number; onUmstellen: (n: number) => void }) {
+  const j = jahrByNr.get(jahrNr)
+  return (
+    <section className="ku-sichtinfo" role="status">
+      <Icon name="info" />
+      <div className="min-w-0 grow">
+        <p>
+          <b>{gruppe.name}</b> ist in Kursjahr {gruppe.jahr}. Hier seht ihr Kursjahr {jahrNr}
+          {j ? ` – ${jahrKurztitel(j.titel)}` : ''} zum Ansehen und Vorbereiten.
+        </p>
+      </div>
+      <button type="button" className="btn btn-sm" onClick={() => onUmstellen(jahrNr)}>
+        Gruppe auf Kursjahr {jahrNr} umstellen
+      </button>
+    </section>
   )
 }
 
@@ -187,7 +264,10 @@ function Naechste({ gruppe, onOeffnen, onGehalten }: { gruppe: Gruppe; onOeffnen
           <Icon name="check" /> {naechste.material.length} Dinge Material
         </span>
       </div>
-      <AblaufLeiste e={naechste} />
+      <div className="ku-leiste-rahmen">
+        <AblaufLeiste e={naechste} />
+        <PhasenLegende e={naechste} />
+      </div>
       <div className="ku-held-aktionen">
         <button type="button" className="btn btn-primary" onClick={() => onOeffnen(naechste.id)}>
           Einheit vorbereiten
@@ -209,10 +289,11 @@ function Naechste({ gruppe, onOeffnen, onGehalten }: { gruppe: Gruppe; onOeffnen
   )
 }
 
-function Jahresweg({ gruppe, onOeffnen }: { gruppe: Gruppe; onOeffnen: (id: string) => void }) {
-  const jahr = jahrByNr.get(gruppe.jahr)
-  const module = moduleVon(gruppe.jahr)
-  const naechsteId = einheitenVon(gruppe.jahr).find((e) => !gruppe.erledigt[e.id])?.id
+/** Der Jahresweg als Treppe: je Modul eine Stufe (Leitfrage, Stand), daneben die Einheiten als Kacheln. */
+function Jahresweg({ jahrNr, gruppe, onOeffnen }: { jahrNr: number; gruppe: Gruppe; onOeffnen: (id: string) => void }) {
+  const jahr = jahrByNr.get(jahrNr)
+  const module = moduleVon(jahrNr)
+  const naechsteId = jahrNr === gruppe.jahr ? einheitenVon(jahrNr).find((e) => !gruppe.erledigt[e.id])?.id : undefined
   if (!jahr) return null
   return (
     <section className="ku-weg" aria-labelledby="ku-weg-titel">
@@ -222,44 +303,57 @@ function Jahresweg({ gruppe, onOeffnen }: { gruppe: Gruppe; onOeffnen: (id: stri
         </h2>
         <p>{jahr.faden}</p>
       </div>
-      <ol className="ku-module">
+      <ol className="ku-treppe">
         {module.map((m) => {
           const fertig = m.einheiten.filter((id) => gruppe.erledigt[id]).length
+          const ganz = m.einheiten.length > 0 && fertig === m.einheiten.length
           const aktuell = naechsteId ? m.einheiten.includes(naechsteId) : false
           return (
-            <li key={m.id} className={`ku-modul ${aktuell ? 'aktuell' : ''} ${fertig === m.einheiten.length ? 'fertig' : ''}`}>
-              <header>
+            <li key={m.id} className={`ku-stufe ${aktuell ? 'aktuell' : ''} ${ganz ? 'fertig' : ''}`}>
+              <div className="ku-stufe-kopf">
                 <span className="ku-modul-nr" aria-hidden="true">
-                  {m.nr}
+                  {ganz ? <Icon name="check" /> : m.nr}
                 </span>
                 <div className="min-w-0">
+                  <p className="ku-stufe-kicker">
+                    Modul {m.nr}
+                    {aktuell ? <span className="ku-stufe-jetzt">jetzt dran</span> : null}
+                  </p>
                   <h3>{m.titel}</h3>
-                  <p>{m.leitfrage}</p>
+                  <p className="ku-stufe-frage">{m.leitfrage}</p>
+                  <div className="ku-stufe-stand">
+                    <span className="ku-mini-balken" aria-hidden="true">
+                      <span style={{ width: `${m.einheiten.length ? (fertig / m.einheiten.length) * 100 : 0}%` }} />
+                    </span>
+                    {fertig} von {m.einheiten.length} gehalten
+                  </div>
                 </div>
-                <span className="ku-modul-stand">
-                  {fertig}/{m.einheiten.length}
-                </span>
-              </header>
-              <ul>
+              </div>
+              <ul className="ku-kacheln">
                 {m.einheiten.map((id) => {
                   const e = einheitById.get(id)
                   if (!e)
                     return (
                       <li key={id}>
-                        <span className="ku-e fehlt">
-                          <span className="ku-e-nr">{nrAusId(id)}</span>
-                          <span className="ku-e-titel">wird ausgearbeitet</span>
+                        <span className="ku-kachel fehlt">
+                          <span className="ku-kachel-nr">{nrAusId(id)}</span>
+                          <span className="ku-kachel-text">
+                            <span className="ku-kachel-titel">wird ausgearbeitet</span>
+                          </span>
                         </span>
                       </li>
                     )
                   const erl = gruppe.erledigt[id]
                   const ist = id === naechsteId
+                  const nb = (e.blaetter ?? []).length
                   return (
                     <li key={id}>
-                      <button type="button" className={`ku-e ${erl ? 'erledigt' : ''} ${ist ? 'naechste' : ''}`} onClick={() => onOeffnen(id)}>
-                        <span className="ku-e-nr">{erl ? <Icon name="check" /> : e.nr}</span>
-                        <span className="ku-e-titel">{e.titel}</span>
-                        <span className="ku-e-status">{erl ? datum(erl, false) : ist ? 'als Nächstes' : ''}</span>
+                      <button type="button" className={`ku-kachel ${erl ? 'erledigt' : ''} ${ist ? 'naechste' : ''}`} onClick={() => onOeffnen(id)}>
+                        <span className="ku-kachel-nr">{erl ? <Icon name="check" /> : e.nr}</span>
+                        <span className="ku-kachel-text">
+                          <span className="ku-kachel-titel">{e.titel}</span>
+                          <span className="ku-kachel-status">{erl ? `gehalten am ${datum(erl, false)}` : ist ? 'als Nächstes' : `${e.dauer} Min.${nb ? ' · ' + blaetterText(nb) : ''}`}</span>
+                        </span>
                       </button>
                     </li>
                   )
@@ -273,8 +367,8 @@ function Jahresweg({ gruppe, onOeffnen }: { gruppe: Gruppe; onOeffnen: (id: stri
   )
 }
 
-function JokerListe({ gruppe, onOeffnen }: { gruppe: Gruppe; onOeffnen: (id: string) => void }) {
-  const joker = jokerVon(gruppe.jahr)
+function JokerListe({ jahrNr, gruppe, onOeffnen }: { jahrNr: number; gruppe: Gruppe; onOeffnen: (id: string) => void }) {
+  const joker = jokerVon(jahrNr)
   if (!joker.length) return null
   return (
     <section className="ku-joker" aria-labelledby="ku-joker-titel">
@@ -306,18 +400,26 @@ function JokerListe({ gruppe, onOeffnen }: { gruppe: Gruppe; onOeffnen: (id: str
 
 // --- Einheit --------------------------------------------------------------------------
 
-function SchrittKarte({ s, i, onBlatt }: { s: Schritt; i: number; onBlatt: (id: string) => void }) {
+function SchrittKarte({ s, i, zeit, onBlatt }: { s: Schritt; i: number; zeit: { von: number; bis: number }; onBlatt: (id: string) => void }) {
   const p = phase(s.phase)
   const blatt = s.blatt ? blattById.get(s.blatt) : undefined
   return (
-    <li className="ku-schritt" style={{ ['--pf' as string]: p.farbe }}>
+    <li id={'ku-s-' + i} data-i={i} className="ku-schritt" style={{ ['--pf' as string]: p.farbe }}>
       <header>
-        <span className="ku-schritt-nr">{i + 1}</span>
+        <span className="ku-schritt-zeit" aria-label={`Minute ${zeit.von} bis ${zeit.bis}`}>
+          <b>
+            {zeit.von}–{zeit.bis}
+          </b>
+          <small>Min.</small>
+        </span>
         <div className="min-w-0">
           <span className="ku-schritt-meta">
-            {s.dauer} Min. · {p.name}
+            <i aria-hidden="true" />
+            {p.name} · {s.dauer} Min.
           </span>
-          <h3>{s.titel}</h3>
+          <h3>
+            <span className="ku-schritt-nr-text">{i + 1}.</span> {s.titel}
+          </h3>
         </div>
       </header>
       <p className="ku-schritt-text">{s.text}</p>
@@ -360,20 +462,26 @@ function SchrittKarte({ s, i, onBlatt }: { s: Schritt; i: number; onBlatt: (id: 
           ))}
         </div>
       ) : null}
-      {s.tipp ? (
-        <div className="ku-hinweis ku-tipp">
-          <Icon name="lightbulb" />
-          <p>
-            <b>Aus der Praxis:</b> {s.tipp}
-          </p>
-        </div>
-      ) : null}
-      {s.wennEsKippt ? (
-        <div className="ku-hinweis ku-kippt">
-          <Icon name="alert" />
-          <p>
-            <b>Wenn es kippt:</b> {s.wennEsKippt}
-          </p>
+      {s.tipp || s.wennEsKippt ? (
+        <div className="ku-hinweise">
+          {s.tipp ? (
+            <div className="ku-hinweis ku-tipp">
+              <Icon name="lightbulb" />
+              <p>
+                <b>Aus der Praxis</b>
+                {s.tipp}
+              </p>
+            </div>
+          ) : null}
+          {s.wennEsKippt ? (
+            <div className="ku-hinweis ku-kippt">
+              <Icon name="alert" />
+              <p>
+                <b>Wenn es kippt</b>
+                {s.wennEsKippt}
+              </p>
+            </div>
+          ) : null}
         </div>
       ) : null}
       {blatt ? (
@@ -470,6 +578,54 @@ function EinheitSeite({ e, gruppe, gruppeAendern, bew, aktiv }: { e: Einheit; gr
   }
 
   const kopfzeile = e.joker ? `Joker ${e.nr}${e.passt ? ' · passt ' + e.passt : ''}` : `${m ? `Modul ${m.nr} · ${m.titel} · ` : ''}Einheit ${e.nr} von ${geplanteEinheiten(e.jahr)}`
+  const zeiten = useMemo(() => schrittZeiten(e), [e])
+
+  /* Fahrplan: markiert ist der Schritt, der gerade oben im Bild beginnt; ein Klick springt hin */
+  const [aktivSchritt, setAktivSchritt] = useState(0)
+  const fahrplan = useRef<HTMLElement>(null)
+  const sperre = useRef(0)
+  useEffect(() => {
+    if (!aktiv) return
+    let rahmen = 0
+    let spaeter = 0
+    function pruefen() {
+      rahmen = 0
+      if (Date.now() < sperre.current) return
+      const kopf = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--kopf-h'), 10) || 61
+      const linie = kopf + (window.innerWidth <= 960 ? 90 : 70)
+      let i = 0
+      document.querySelectorAll<HTMLElement>('.ku-schritt[data-i]').forEach((el, k) => {
+        if (el.getBoundingClientRect().top <= linie) i = k
+      })
+      setAktivSchritt(i)
+    }
+    function beimScrollen() {
+      if (!rahmen) rahmen = requestAnimationFrame(pruefen)
+      window.clearTimeout(spaeter)
+      spaeter = window.setTimeout(pruefen, 950)
+    }
+    window.addEventListener('scroll', beimScrollen, { passive: true })
+    window.addEventListener('resize', beimScrollen)
+    pruefen()
+    return () => {
+      window.removeEventListener('scroll', beimScrollen)
+      window.removeEventListener('resize', beimScrollen)
+      if (rahmen) cancelAnimationFrame(rahmen)
+      window.clearTimeout(spaeter)
+    }
+  }, [e.id, aktiv])
+  useEffect(() => {
+    const nav = fahrplan.current
+    const b = nav?.querySelector<HTMLElement>('button.an')
+    if (!nav || !b) return
+    if (nav.scrollWidth > nav.clientWidth + 2) nav.scrollTo({ left: Math.max(0, b.offsetLeft - 16), behavior: 'smooth' })
+    else if (nav.scrollHeight > nav.clientHeight + 2) nav.scrollTo({ top: Math.max(0, b.offsetTop - nav.clientHeight / 3), behavior: 'smooth' })
+  }, [aktivSchritt])
+  function zuSchritt(i: number) {
+    setAktivSchritt(i)
+    sperre.current = Date.now() + 900   /* während des sanften Scrollens nicht umspringen */
+    document.getElementById('ku-s-' + i)?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  }
 
   return (
     <article className="ku-einheit" aria-labelledby="ku-einheit-titel">
@@ -499,6 +655,26 @@ function EinheitSeite({ e, gruppe, gruppeAendern, bew, aktiv }: { e: Einheit; gr
           {e.titel}
         </h1>
         <p className="ku-einheit-kurz">{e.kurz}</p>
+        <div className="ku-held-fakten">
+          <span>
+            <Icon name="clock" /> {e.dauer} Min.
+          </span>
+          <span>
+            <Icon name="file" /> {bl.length === 1 ? '1 Schülerblatt' : `${bl.length} Schülerblätter`}
+          </span>
+          <span>
+            <Icon name="check" /> {e.material.length} Dinge Material
+          </span>
+          {e.joker && e.passt ? (
+            <span>
+              <Icon name="info" /> Passt {e.passt}
+            </span>
+          ) : null}
+        </div>
+        <div className="ku-leiste-rahmen">
+          <AblaufLeiste e={e} />
+          <PhasenLegende e={e} />
+        </div>
         <div className="ku-einheit-aktionen">
           {erl ? (
             <span className="ku-gehalten">
@@ -538,74 +714,33 @@ function EinheitSeite({ e, gruppe, gruppeAendern, bew, aktiv }: { e: Einheit; gr
         </div>
       </header>
 
-      <section className="ku-ablauf" aria-label="Ablauf">
-        <AblaufLeiste e={e} />
-        <ol className="ku-ablauf-liste">
-          {e.ablauf.map((z, i) => (
-            <li key={i}>
-              <span className="ku-ablauf-min">{z.min}</span>
-              <span className="ku-ablauf-phase" style={{ color: phase(z.phase).farbe }}>
-                <i style={{ background: phase(z.phase).farbe }} />
-                {phase(z.phase).name}
-              </span>
-              <span className="ku-ablauf-titel">{z.titel}</span>
-            </li>
-          ))}
-        </ol>
-      </section>
+      {e.achtung ? (
+        <details className="ku-achtung-band" open>
+          <summary>
+            <Icon name="alert" />
+            <b>Achtung</b>
+            <span>– darauf achtet die Leitung in dieser Einheit</span>
+          </summary>
+          <p>{e.achtung}</p>
+        </details>
+      ) : null}
 
-      <div className="ku-einheit-raster">
-        <div className="min-w-0">
-          <h2 className="ku-zwischen disp">Schritt für Schritt</h2>
-          <ol className="ku-schritte">
-            {e.schritte.map((s, i) => (
-              <SchrittKarte key={i} s={s} i={i} onBlatt={(id) => setOffen(blattById.get(id) ?? null)} />
-            ))}
-          </ol>
-          {e.bruecke ? (
-            <div className="ku-bruecke">
-              <span className="ku-seite-label">Ausblick zum Schluss</span>
-              <p>„{e.bruecke}“</p>
-            </div>
-          ) : null}
-          {e.hintergrund ? (
-            <details className="ku-hintergrund">
-              <summary>Fachlicher Hintergrund{e.quellen?.length ? ' und Quellen' : ''}</summary>
-              <p>{e.hintergrund}</p>
-              {e.quellen?.length ? (
-                <ul>
-                  {e.quellen.map((q, i) => (
-                    <li key={i}>{q}</li>
-                  ))}
-                </ul>
-              ) : null}
-            </details>
-          ) : null}
-          <Notiz
-            wert={gruppe.notizen[e.id] ?? ''}
-            onSpeichern={(t) =>
-              gruppeAendern((g) => {
-                const notizen = { ...g.notizen }
-                if (t.trim()) notizen[e.id] = t
-                else delete notizen[e.id]
-                return { ...g, notizen }
-              })
-            }
-          />
-        </div>
-
-        <aside className="ku-seite" aria-label="Auf einen Blick">
-          <section>
+      <section className="ku-vorb" aria-labelledby="ku-vorb-titel">
+        <h2 id="ku-vorb-titel" className="ku-zwischen disp">
+          Vorbereiten
+        </h2>
+        <div className="ku-vorb-raster">
+          <div className="ku-vorb-karte">
             <span className="ku-seite-label">Ziele</span>
             <ul className="ku-ziele">
               {e.ziele.map((z, i) => (
                 <li key={i}>{z.charAt(0).toUpperCase() + z.slice(1)}</li>
               ))}
             </ul>
-          </section>
-          <section>
+          </div>
+          <div className="ku-vorb-karte">
             <span className="ku-seite-label">
-              Material · {haken.length}/{e.material.length}
+              Material · {haken.length}/{e.material.length} bereit
             </span>
             <ul className="ku-material">
               {e.material.map((x, i) => (
@@ -617,46 +752,110 @@ function EinheitSeite({ e, gruppe, gruppeAendern, bew, aktiv }: { e: Einheit; gr
                 </li>
               ))}
             </ul>
-          </section>
-          {e.vorbereitung?.length ? (
-            <section>
-              <span className="ku-seite-label">Vorbereitung</span>
-              <ul className="ku-liste">
-                {e.vorbereitung.map((x, i) => (
-                  <li key={i}>{x}</li>
-                ))}
-              </ul>
-            </section>
+          </div>
+          {e.vorbereitung?.length || bl.length ? (
+            <div className="ku-vorb-karte">
+              {e.vorbereitung?.length ? (
+                <>
+                  <span className="ku-seite-label">Vorher erledigen</span>
+                  <ul className="ku-liste">
+                    {e.vorbereitung.map((x, i) => (
+                      <li key={i}>{x}</li>
+                    ))}
+                  </ul>
+                </>
+              ) : null}
+              {bl.length ? (
+                <>
+                  <span className="ku-seite-label ku-seite-label-abstand">Schülerblätter</span>
+                  <ul className="ku-blaetter">
+                    {bl.map((b) => (
+                      <li key={b.id}>
+                        <button type="button" onClick={() => setOffen(b)}>
+                          <span className="ku-blatt-nr">{b.nr}</span>
+                          <span className="min-w-0 grow">
+                            <b>{b.de.titel}</b>
+                            <span>{b.dauer}</span>
+                          </span>
+                          <Icon name="arrowRight" />
+                        </button>
+                      </li>
+                    ))}
+                  </ul>
+                </>
+              ) : null}
+            </div>
           ) : null}
-          {bl.length ? (
-            <section>
-              <span className="ku-seite-label">Schülerblätter</span>
-              <ul className="ku-blaetter">
-                {bl.map((b) => (
-                  <li key={b.id}>
-                    <button type="button" onClick={() => setOffen(b)}>
-                      <span className="ku-blatt-nr">{b.nr}</span>
-                      <span className="min-w-0 grow">
-                        <b>{b.de.titel}</b>
-                        <span>{b.dauer}</span>
-                      </span>
-                      <Icon name="arrowRight" />
-                    </button>
-                  </li>
-                ))}
-              </ul>
-            </section>
-          ) : null}
-          {e.achtung ? (
-            <section className="ku-achtung">
-              <span className="ku-seite-label">
-                <Icon name="alert" /> Achtung
-              </span>
-              <p>{e.achtung}</p>
-            </section>
-          ) : null}
-        </aside>
-      </div>
+        </div>
+      </section>
+
+      <section className="ku-durchfuehren" aria-labelledby="ku-ablauf-titel">
+        <h2 id="ku-ablauf-titel" className="ku-zwischen disp">
+          Schritt für Schritt
+        </h2>
+        <div className="ku-durchfuehren-raster">
+          <nav className="ku-fahrplan" ref={fahrplan} aria-label="Ablauf der Einheit">
+            <span className="ku-seite-label">
+              <Icon name="clock" /> Ablauf · {e.dauer} Min.
+            </span>
+            <ol>
+              {e.schritte.map((s, i) => (
+                <li key={i}>
+                  <button
+                    type="button"
+                    className={i === aktivSchritt ? 'an' : ''}
+                    aria-current={i === aktivSchritt ? 'step' : undefined}
+                    onClick={() => zuSchritt(i)}
+                    style={{ ['--pf' as string]: phase(s.phase).farbe }}
+                  >
+                    <span className="ku-fp-zeit">
+                      {zeiten[i].von}–{zeiten[i].bis}
+                    </span>
+                    <span className="ku-fp-titel">{s.titel}</span>
+                  </button>
+                </li>
+              ))}
+            </ol>
+          </nav>
+          <div className="min-w-0">
+            <ol className="ku-schritte">
+              {e.schritte.map((s, i) => (
+                <SchrittKarte key={i} s={s} i={i} zeit={zeiten[i]} onBlatt={(id) => setOffen(blattById.get(id) ?? null)} />
+              ))}
+            </ol>
+            {e.bruecke ? (
+              <div className="ku-bruecke">
+                <span className="ku-seite-label">Ausblick zum Schluss</span>
+                <p>„{e.bruecke}“</p>
+              </div>
+            ) : null}
+            {e.hintergrund ? (
+              <details className="ku-hintergrund">
+                <summary>Fachlicher Hintergrund{e.quellen?.length ? ' und Quellen' : ''}</summary>
+                <p>{e.hintergrund}</p>
+                {e.quellen?.length ? (
+                  <ul>
+                    {e.quellen.map((q, i) => (
+                      <li key={i}>{q}</li>
+                    ))}
+                  </ul>
+                ) : null}
+              </details>
+            ) : null}
+            <Notiz
+              wert={gruppe.notizen[e.id] ?? ''}
+              onSpeichern={(t) =>
+                gruppeAendern((g) => {
+                  const notizen = { ...g.notizen }
+                  if (t.trim()) notizen[e.id] = t
+                  else delete notizen[e.id]
+                  return { ...g, notizen }
+                })
+              }
+            />
+          </div>
+        </div>
+      </section>
 
       {offen && <BlattDetail key={offen.id} b={offen} bew={bew} onSchliessen={() => setOffen(null)} onOeffnen={(id) => setOffen(blattById.get(id) ?? null)} />}
       {aktiv
@@ -886,9 +1085,9 @@ function DruckEinheit({ e, kopfzeile, jahrTitel, notiz }: { e: Einheit; kopfzeil
 
 // --- Grundlagen -----------------------------------------------------------------------
 
-function AbschnittInhalt({ a }: { a: Abschnitt }) {
+function AbschnittInhalt({ a, id }: { a: Abschnitt; id?: string }) {
   return (
-    <section className="ku-gl-abschnitt">
+    <section className="ku-gl-abschnitt" id={id}>
       <h3>{a.titel}</h3>
       {a.text ? a.text.split('\n\n').map((t, i) => <p key={i}>{t}</p>) : null}
       {a.punkte?.length ? (
@@ -960,10 +1159,26 @@ function GrundlagenSeite({ aktiv }: { aktiv: boolean }) {
               </button>
             ))}
           </div>
-          <div className="ku-gl-inhalt">
-            {g.abschnitte.map((a, i) => (
-              <AbschnittInhalt key={i} a={a} />
-            ))}
+          <div className="ku-gl-raster">
+            <div className="ku-gl-inhalt">
+              {g.abschnitte.map((a, i) => (
+                <AbschnittInhalt key={i} a={a} id={`ku-gl-${g.id}-${i}`} />
+              ))}
+            </div>
+            {g.abschnitte.length > 2 ? (
+              <nav className="ku-gl-toc" aria-label="Auf dieser Seite">
+                <span className="ku-seite-label">Auf dieser Seite</span>
+                <ol>
+                  {g.abschnitte.map((a, i) => (
+                    <li key={i}>
+                      <button type="button" onClick={() => document.getElementById(`ku-gl-${g.id}-${i}`)?.scrollIntoView({ behavior: 'smooth', block: 'start' })}>
+                        {a.titel}
+                      </button>
+                    </li>
+                  ))}
+                </ol>
+              </nav>
+            ) : null}
           </div>
           {aktiv
             ? createPortal(
@@ -1084,6 +1299,21 @@ export function Kurs({ aktiv, bew }: { aktiv: boolean; bew: Bewertungen }) {
   const { stand, gruppe, aendern, gruppeAendern, gespeichert } = useKursStand()
   const [ansicht, setAnsicht] = useState<Ansicht>(() => ansichtAusHash(window.location.hash) ?? { art: 'uebersicht' })
   const [gruppenOffen, setGruppenOffen] = useState(false)
+  /* Höhe der festen Kopfleiste (am Handy zweizeilig) – für Fahrplan und Sprungziele */
+  useEffect(() => {
+    const kopf = document.querySelector<HTMLElement>('header.sticky')
+    if (!kopf) return
+    const setzen = () => document.documentElement.style.setProperty('--kopf-h', kopf.offsetHeight + 'px')
+    setzen()
+    if (typeof ResizeObserver === 'undefined') return
+    const ro = new ResizeObserver(setzen)
+    ro.observe(kopf)
+    return () => ro.disconnect()
+  }, [])
+  /* Angezeigtes Kursjahr: das der Gruppe, außer man schaut sich ein anderes an */
+  const [sichtJahr, setSichtJahr] = useState<number | null>(null)
+  useEffect(() => setSichtJahr(null), [gruppe?.id, gruppe?.jahr])
+  const sicht = sichtJahr ?? gruppe?.jahr ?? kursjahre[0]?.nr ?? 1
 
   useEffect(() => {
     function onHash() {
@@ -1098,12 +1328,15 @@ export function Kurs({ aktiv, bew }: { aktiv: boolean; bew: Bewertungen }) {
   }, [])
 
   const einheit = ansicht.art === 'einheit' ? einheitById.get(ansicht.id) : undefined
-  const jahr = gruppe ? jahrByNr.get(gruppe.jahr) : undefined
   const oeffnen = (id: string) => gehe({ art: 'einheit', id })
   const heuteGehalten = (id: string) => {
     gruppeAendern((g) => ({ ...g, erledigt: { ...g.erledigt, [id]: heute() } }))
     const e = einheitById.get(id)
     toast(`Einheit ${e?.nr ?? ''} ist als gehalten eingetragen.`, 'ok')
+  }
+  const jahrUmstellen = (n: number) => {
+    gruppeAendern((g) => ({ ...g, jahr: n }))
+    toast(`${gruppe?.name ?? 'Die Gruppe'} ist jetzt in Kursjahr ${n}.`, 'ok')
   }
 
   const gruppenWahl = useMemo(
@@ -1111,7 +1344,7 @@ export function Kurs({ aktiv, bew }: { aktiv: boolean; bew: Bewertungen }) {
       gruppe ? (
         <div className="ku-gruppenwahl">
           <label>
-            <span className="sr-only">Gruppe wählen</span>
+            <span className="ku-gruppenwahl-label">Gruppe</span>
             <select className="field w-auto py-1.5 pr-8" value={gruppe.id} onChange={(x) => aendern((s) => ({ ...s, aktiv: x.target.value }))}>
               {stand.gruppen.map((g) => (
                 <option key={g.id} value={g.id}>
@@ -1136,11 +1369,11 @@ export function Kurs({ aktiv, bew }: { aktiv: boolean; bew: Bewertungen }) {
   else
     inhalt = (
       <>
-        <div className="mb-5 flex flex-wrap items-end justify-between gap-x-4 gap-y-3">
+        <div className="mb-4 flex flex-wrap items-end justify-between gap-x-4 gap-y-3">
           <div className="min-w-0">
             <h1 className="disp text-[26px] leading-tight text-ink sm:text-[30px]">Skills-Kurs</h1>
             <p className="mt-1 text-[14px] text-muted">
-              {jahr ? `${jahr.titel} · ${jahr.untertitel}` : 'Kursjahr wählen'} · für Kleingruppen von 12 bis 16 Jahren
+              Für Kleingruppen von 12 bis 16 Jahren · {kursjahre.length === 1 ? 'ein Kursjahr' : `${kursjahre.length} Kursjahre`}, je ein Schuljahr mit rund 100 Minuten pro Woche
             </p>
           </div>
           <div className="flex flex-wrap items-center gap-2">
@@ -1151,9 +1384,10 @@ export function Kurs({ aktiv, bew }: { aktiv: boolean; bew: Bewertungen }) {
             </button>
           </div>
         </div>
-        <Naechste gruppe={gruppe} onOeffnen={oeffnen} onGehalten={heuteGehalten} />
-        <Jahresweg gruppe={gruppe} onOeffnen={oeffnen} />
-        <JokerListe gruppe={gruppe} onOeffnen={oeffnen} />
+        <JahrWahl sicht={sicht} gruppeJahr={gruppe.jahr} onWahl={(n) => setSichtJahr(n === gruppe.jahr ? null : n)} />
+        {sicht === gruppe.jahr ? <Naechste gruppe={gruppe} onOeffnen={oeffnen} onGehalten={heuteGehalten} /> : <SichtInfo gruppe={gruppe} jahrNr={sicht} onUmstellen={jahrUmstellen} />}
+        <Jahresweg jahrNr={sicht} gruppe={gruppe} onOeffnen={oeffnen} />
+        <JokerListe jahrNr={sicht} gruppe={gruppe} onOeffnen={oeffnen} />
       </>
     )
 

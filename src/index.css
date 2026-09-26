@@ -1617,6 +1617,31 @@
   .ku-leiste.klein {
     height: 6px;
   }
+  .ku-leiste-rahmen {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+  .ku-legende {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px 14px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 12px;
+    color: var(--muted);
+  }
+  .ku-legende li {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .ku-legende i {
+    width: 9px;
+    height: 9px;
+    border-radius: 3px;
+  }
 
   .ku-fortschritt {
     display: flex;
@@ -1664,149 +1689,298 @@
     line-height: 1.55;
     color: var(--muted);
   }
-  .ku-module {
+  /* Kursjahr-Reiter */
+  .ku-jahre {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr));
-    gap: 12px;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+    gap: 8px;
+    margin: 0 0 18px;
+  }
+  .ku-jahr {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+    padding: 11px 14px 12px;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    background: var(--surface);
+    font: inherit;
+    text-align: left;
+    color: var(--ink);
+    cursor: pointer;
+    transition:
+      border-color 0.15s,
+      box-shadow 0.15s,
+      background 0.15s;
+  }
+  .ku-jahr:hover {
+    border-color: var(--ku-mittel, #d6c6de);
+  }
+  .ku-jahr.an {
+    border-color: var(--ku, #6e4a7e);
+    background: var(--ku-zart, #f4eff7);
+    box-shadow: 0 0 0 3px rgba(110, 74, 126, 0.12);
+  }
+  .ku-jahr-nr {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 11.5px;
+    font-weight: 750;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--ku, #6e4a7e);
+  }
+  .ku-jahr-gruppe {
+    padding: 1px 7px;
+    border-radius: 999px;
+    background: var(--ku, #6e4a7e);
+    color: #fff;
+    font-size: 10.5px;
+    letter-spacing: 0.02em;
+    text-transform: none;
+  }
+  .ku-jahr-titel {
+    font-family: var(--font-display);
+    font-weight: 760;
+    font-size: 16px;
+    line-height: 1.3;
+  }
+  .ku-jahr-info {
+    font-size: 12.5px;
+    color: var(--muted);
+  }
+  .ku-sichtinfo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px 14px;
+    padding: 12px 16px;
+    border: 1px solid var(--accent-line);
+    border-radius: 14px;
+    background: var(--accent-soft);
+    color: var(--accent-strong);
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .ku-sichtinfo > .ic {
+    flex: 0 0 auto;
+    width: 18px;
+    height: 18px;
+  }
+  .ku-sichtinfo p {
+    margin: 0;
+  }
+
+  /* Der Jahresweg als Treppe: je Modul eine Stufe, daneben die Einheiten als Kacheln */
+  .ku-treppe {
+    position: relative;
+    display: grid;
+    gap: 10px;
     margin: 0;
     padding: 0;
     list-style: none;
   }
-  .ku-modul {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    padding: 12px 12px 10px;
+  .ku-stufe {
+    display: grid;
+    grid-template-columns: minmax(0, 250px) minmax(0, 1fr);
+    gap: 16px;
+    padding: 14px 16px;
     border: 1px solid var(--line);
-    border-radius: 14px;
+    border-radius: 16px;
     background: var(--surface);
     box-shadow: var(--shadow-1);
   }
-  .ku-modul.aktuell {
+  .ku-stufe.aktuell {
     border-color: var(--ku-mittel);
+    background:
+      linear-gradient(90deg, var(--ku-zart), rgba(255, 255, 255, 0) 45%),
+      var(--surface);
     box-shadow:
       0 0 0 3px var(--ku-zart),
       var(--shadow-1);
   }
-  .ku-modul header {
+  .ku-stufe-kopf {
     display: flex;
     align-items: flex-start;
-    gap: 10px;
-    padding: 0 2px;
+    gap: 12px;
   }
-  .ku-modul h3 {
+  .ku-stufe-kicker {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0 0 1px;
+    font-size: 11.5px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .ku-stufe-jetzt {
+    padding: 1px 7px;
+    border-radius: 999px;
+    background: var(--ku);
+    color: #fff;
+    font-size: 10.5px;
+    letter-spacing: 0.02em;
+    text-transform: none;
+  }
+  .ku-stufe h3 {
     margin: 0;
     font-family: var(--font-display);
-    font-weight: 760;
-    font-size: 15.5px;
-    line-height: 1.3;
+    font-weight: 780;
+    font-size: 17px;
+    line-height: 1.25;
     color: var(--ink);
   }
-  .ku-modul header p {
-    margin: 1px 0 0;
-    font-size: 13px;
+  .ku-stufe-frage {
+    margin: 3px 0 0;
+    font-size: 13.5px;
+    line-height: 1.45;
+    color: var(--ink-2);
+  }
+  .ku-stufe-stand {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 9px;
+    font-size: 12px;
     color: var(--muted);
+    font-variant-numeric: tabular-nums;
+  }
+  .ku-mini-balken {
+    flex: 0 0 64px;
+    height: 5px;
+    border-radius: 999px;
+    background: var(--bg-2);
+    overflow: hidden;
+  }
+  .ku-mini-balken span {
+    display: block;
+    height: 100%;
+    border-radius: 999px;
+    background: var(--ok-ink);
   }
   .ku-modul-nr {
     display: grid;
     place-items: center;
     flex: 0 0 auto;
-    width: 26px;
-    height: 26px;
-    border-radius: 8px;
+    width: 34px;
+    height: 34px;
+    border-radius: 11px;
     background: var(--ku-zart);
     color: var(--ku);
-    font-weight: 750;
-    font-size: 13px;
+    font-weight: 780;
+    font-size: 15px;
   }
-  .ku-modul.fertig .ku-modul-nr {
+  .ku-modul-nr .ic {
+    width: 17px;
+    height: 17px;
+  }
+  .ku-stufe.fertig .ku-modul-nr {
     background: var(--ok-bg);
     color: var(--ok-ink);
   }
-  .ku-modul-stand {
-    margin-left: auto;
-    font-size: 12px;
-    font-weight: 650;
-    color: var(--muted);
-    font-variant-numeric: tabular-nums;
+  .ku-stufe.aktuell .ku-modul-nr {
+    background: var(--ku);
+    color: #fff;
   }
-  .ku-modul ul {
+  .ku-kacheln {
     display: grid;
-    gap: 2px;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 200px), 1fr));
+    gap: 8px;
     margin: 0;
     padding: 0;
     list-style: none;
+    align-content: start;
   }
-  .ku-e {
+  .ku-kachel {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 10px;
     width: 100%;
-    padding: 6px 8px;
-    border: 1px solid transparent;
-    border-radius: 9px;
-    background: transparent;
+    height: 100%;
+    padding: 10px 12px;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    background: var(--surface);
     font: inherit;
-    font-size: 14px;
-    color: var(--ink-2);
     text-align: left;
+    color: var(--ink);
     cursor: pointer;
+    transition:
+      border-color 0.15s,
+      background 0.15s;
   }
-  button.ku-e:hover {
-    background: var(--surface-2);
-    border-color: var(--line);
+  button.ku-kachel:hover {
+    border-color: var(--ku-mittel);
+    background: var(--ku-zart);
   }
-  .ku-e-nr {
+  .ku-kachel-nr {
     display: grid;
     place-items: center;
     flex: 0 0 auto;
-    width: 24px;
-    height: 24px;
+    width: 26px;
+    height: 26px;
     border-radius: 999px;
     border: 1.5px solid var(--line-2);
-    font-size: 12px;
-    font-weight: 700;
+    font-size: 12.5px;
+    font-weight: 750;
     color: var(--muted);
     font-variant-numeric: tabular-nums;
   }
-  .ku-e-nr .ic {
+  .ku-kachel-nr .ic {
     width: 14px;
     height: 14px;
   }
-  .ku-e-titel {
-    flex: 1 1 auto;
+  .ku-kachel-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
     min-width: 0;
-    line-height: 1.35;
   }
-  .ku-e-status {
-    flex: 0 0 auto;
+  .ku-kachel-titel {
+    font-size: 14px;
+    font-weight: 620;
+    line-height: 1.3;
+  }
+  .ku-kachel-status {
     font-size: 12px;
     color: var(--muted);
-    white-space: nowrap;
   }
-  .ku-e.erledigt .ku-e-nr {
+  .ku-kachel.erledigt {
+    background: var(--surface-2);
+  }
+  .ku-kachel.erledigt .ku-kachel-nr {
     border-color: var(--ok-ink);
     background: var(--ok-ink);
     color: #fff;
   }
-  .ku-e.erledigt .ku-e-titel {
+  .ku-kachel.erledigt .ku-kachel-titel {
     color: var(--muted);
+    font-weight: 560;
   }
-  .ku-e.naechste {
+  .ku-kachel.erledigt .ku-kachel-status {
+    color: var(--ok-ink);
+  }
+  .ku-kachel.naechste {
+    border-color: var(--ku);
     background: var(--ku-zart);
-    border-color: var(--ku-mittel);
+    box-shadow: 0 0 0 3px rgba(110, 74, 126, 0.12);
   }
-  .ku-e.naechste .ku-e-nr {
+  .ku-kachel.naechste .ku-kachel-nr {
     border-color: var(--ku);
     background: var(--ku);
     color: #fff;
   }
-  .ku-e.naechste .ku-e-status {
+  .ku-kachel.naechste .ku-kachel-status {
     color: var(--ku);
-    font-weight: 650;
+    font-weight: 700;
   }
-  .ku-e.fehlt {
+  .ku-kachel.fehlt {
     cursor: default;
+    border-style: dashed;
     color: var(--faint);
   }
 
@@ -1871,6 +2045,16 @@
     display: flex;
     align-items: center;
     gap: 6px;
+  }
+  .ku-gruppenwahl label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .ku-gruppenwahl-label {
+    font-size: 12.5px;
+    font-weight: 650;
+    color: var(--muted);
   }
   .ku-gruppen {
     display: flex;
@@ -1965,55 +2149,146 @@
     padding: 3px 6px;
     font-size: 13px;
   }
-  .ku-ablauf {
+  /* Achtung: sensible Punkte, gleich unter dem Kopf */
+  .ku-achtung-band {
+    margin-top: 16px;
+    padding: 11px 16px;
+    border: 1px solid var(--err-line);
+    border-left: 4px solid var(--err-ink);
+    border-radius: 12px;
+    background: var(--err-bg);
+    color: var(--err-ink);
+    font-size: 13.5px;
+    line-height: 1.6;
+  }
+  .ku-achtung-band summary {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    list-style: none;
+  }
+  .ku-achtung-band summary::-webkit-details-marker {
+    display: none;
+  }
+  .ku-achtung-band summary .ic {
+    flex: 0 0 auto;
+    width: 17px;
+    height: 17px;
+  }
+  .ku-achtung-band summary span {
+    font-weight: 500;
+    opacity: 0.85;
+  }
+  .ku-achtung-band summary::after {
+    content: '';
+    width: 8px;
+    height: 8px;
+    margin-left: auto;
+    border-right: 2px solid currentColor;
+    border-bottom: 2px solid currentColor;
+    transform: rotate(45deg);
+    transition: transform 0.15s;
+  }
+  .ku-achtung-band[open] summary::after {
+    transform: rotate(-135deg);
+  }
+  .ku-achtung-band p {
+    margin: 8px 0 2px 25px;
+    max-width: 900px;
+  }
+
+  /* Vorbereiten: Ziele, Material, Vorbereitung und Blätter nebeneinander */
+  .ku-vorb {
+    margin-top: 24px;
+  }
+  .ku-vorb-raster {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 290px), 1fr));
+    gap: 12px;
+    align-items: start;
+  }
+  .ku-vorb-karte {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    margin: 18px 0 6px;
+    gap: 2px;
+    padding: 14px 16px 16px;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    background: var(--surface);
+    box-shadow: var(--shadow-1);
   }
-  .ku-ablauf-liste {
+  .ku-seite-label-abstand {
+    margin-top: 14px;
+  }
+
+  /* Schritt für Schritt: links der Fahrplan (bleibt stehen), rechts die Schritte */
+  .ku-durchfuehren {
+    margin-top: 28px;
+  }
+  .ku-durchfuehren-raster {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(min(100%, 270px), 1fr));
-    gap: 2px 18px;
+    grid-template-columns: 240px minmax(0, 1fr);
+    gap: 24px;
+    align-items: start;
+  }
+  .ku-fahrplan {
+    position: sticky;
+    top: calc(var(--kopf-h, 61px) + 17px);
+    z-index: 5;
+    max-height: calc(100vh - var(--kopf-h, 61px) - 34px);
+    overflow: auto;
+    padding: 12px 10px 12px 12px;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    background: var(--surface);
+    box-shadow: var(--shadow-1);
+    scrollbar-width: thin;
+  }
+  .ku-fahrplan .ku-seite-label {
+    margin: 0 0 8px 2px;
+  }
+  .ku-fahrplan ol {
+    display: grid;
+    gap: 2px;
     margin: 0;
     padding: 0;
     list-style: none;
   }
-  .ku-ablauf-liste li {
+  .ku-fahrplan button {
     display: grid;
-    grid-template-columns: 52px 86px minmax(0, 1fr);
-    align-items: baseline;
-    gap: 8px;
-    padding: 4px 0;
-    font-size: 13.5px;
-    border-bottom: 1px dashed var(--line);
-  }
-  .ku-ablauf-min {
-    font-weight: 650;
-    color: var(--ink);
-    font-variant-numeric: tabular-nums;
-  }
-  .ku-ablauf-phase {
-    display: inline-flex;
-    align-items: center;
+    grid-template-columns: 52px minmax(0, 1fr);
     gap: 6px;
+    width: 100%;
+    padding: 7px 8px 7px 10px;
+    border: 0;
+    border-left: 3px solid var(--pf);
+    border-radius: 0 9px 9px 0;
+    background: transparent;
+    font: inherit;
+    font-size: 13.5px;
+    line-height: 1.35;
+    text-align: left;
+    color: var(--ink-2);
+    cursor: pointer;
+  }
+  .ku-fahrplan button:hover {
+    background: var(--surface-2);
+  }
+  .ku-fahrplan button.an {
+    background: color-mix(in srgb, var(--pf) 13%, white);
+    color: var(--ink);
+    font-weight: 650;
+  }
+  .ku-fp-zeit {
     font-size: 12.5px;
     font-weight: 650;
+    color: var(--muted);
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
   }
-  .ku-ablauf-phase i {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-  }
-  .ku-ablauf-titel {
-    color: var(--ink-2);
-  }
-  .ku-einheit-raster {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) 330px;
-    gap: 28px;
-    margin-top: 18px;
-    align-items: start;
+  .ku-fahrplan button.an .ku-fp-zeit {
+    color: var(--pf);
   }
   .ku-zwischen {
     margin: 0 0 12px;
@@ -2031,6 +2306,8 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+    min-width: 0;
+    scroll-margin-top: calc(var(--kopf-h, 61px) + 25px);
     padding: 14px 16px 14px 18px;
     border: 1px solid var(--line);
     border-left: 4px solid var(--pf);
@@ -2043,23 +2320,50 @@
     align-items: flex-start;
     gap: 10px;
   }
-  .ku-schritt-nr {
-    display: grid;
-    place-items: center;
+  .ku-schritt header {
+    gap: 14px;
+  }
+  .ku-schritt-zeit {
+    display: flex;
     flex: 0 0 auto;
-    width: 26px;
-    height: 26px;
-    margin-top: 2px;
-    border-radius: 999px;
-    background: color-mix(in srgb, var(--pf) 14%, white);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 66px;
+    padding: 6px 8px;
+    border-radius: 11px;
+    background: color-mix(in srgb, var(--pf) 12%, white);
     color: var(--pf);
-    font-weight: 750;
-    font-size: 13px;
+    line-height: 1.15;
+  }
+  .ku-schritt-zeit b {
+    font-size: 15px;
+    font-weight: 780;
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+  }
+  .ku-schritt-zeit small {
+    font-size: 11px;
+    font-weight: 650;
+    opacity: 0.85;
   }
   .ku-schritt-meta {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
     font-size: 12px;
     font-weight: 650;
     color: var(--pf);
+  }
+  .ku-schritt-meta i {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--pf);
+  }
+  .ku-schritt-nr-text {
+    color: var(--muted);
+    font-weight: 700;
   }
   .ku-schritt h3 {
     margin: 1px 0 0;
@@ -2071,6 +2375,7 @@
   }
   .ku-schritt-text {
     margin: 0;
+    overflow-wrap: anywhere;
     font-size: 14.5px;
     line-height: 1.6;
     color: var(--ink-2);
@@ -2123,8 +2428,20 @@
     font-size: 13.5px;
     line-height: 1.55;
   }
+  .ku-hinweise {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
+    gap: 8px;
+  }
   .ku-hinweis p {
     margin: 0;
+  }
+  .ku-hinweis p b {
+    display: block;
+    margin-bottom: 1px;
+    font-size: 12px;
+    font-weight: 750;
+    letter-spacing: 0.02em;
   }
   .ku-hinweis .ic {
     flex: 0 0 auto;
@@ -2223,16 +2540,6 @@
     flex-direction: column;
     gap: 6px;
     margin-top: 16px;
-  }
-  .ku-seite {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    padding: 16px;
-    border: 1px solid var(--line);
-    border-radius: 14px;
-    background: var(--surface);
-    box-shadow: var(--shadow-1);
   }
   .ku-seite-label {
     display: inline-flex;
@@ -2337,31 +2644,52 @@
     font-size: 11.5px;
     font-weight: 750;
   }
-  .ku-achtung {
-    padding: 10px 12px;
-    border-radius: 10px;
-    background: var(--err-bg);
-    border: 1px solid var(--err-line);
-  }
-  .ku-achtung .ku-seite-label {
-    color: var(--err-ink);
-  }
-  .ku-achtung p {
-    margin: 0;
-    font-size: 13px;
-    line-height: 1.55;
-    color: var(--err-ink);
-  }
   .ku-gl-reiter {
     margin: 18px 0 8px;
     flex-wrap: wrap;
+  }
+  .ku-gl-raster {
+    display: grid;
+    grid-template-columns: minmax(0, 860px) 230px;
+    gap: 40px;
+    align-items: start;
+    margin-top: 10px;
   }
   .ku-gl-inhalt {
     display: flex;
     flex-direction: column;
     gap: 18px;
     max-width: 860px;
-    margin-top: 10px;
+  }
+  .ku-gl-abschnitt {
+    scroll-margin-top: calc(var(--kopf-h, 61px) + 25px);
+  }
+  .ku-gl-toc {
+    position: sticky;
+    top: calc(var(--kopf-h, 61px) + 25px);
+    padding: 4px 0 4px 16px;
+    border-left: 2px solid var(--line);
+  }
+  .ku-gl-toc ol {
+    display: grid;
+    gap: 1px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .ku-gl-toc button {
+    padding: 4px 0;
+    border: 0;
+    background: none;
+    font: inherit;
+    font-size: 13.5px;
+    line-height: 1.35;
+    text-align: left;
+    color: var(--ink-2);
+    cursor: pointer;
+  }
+  .ku-gl-toc button:hover {
+    color: var(--ku, #6e4a7e);
   }
   .ku-gl-abschnitt h3 {
     margin: 0 0 6px;
@@ -2376,20 +2704,98 @@
     line-height: 1.6;
     color: var(--ink-2);
   }
-  @media (max-width: 960px) {
-    .ku-einheit-raster {
-      grid-template-columns: 1fr;
+  @media (max-width: 1100px) {
+    .ku-gl-raster {
+      grid-template-columns: minmax(0, 1fr);
     }
-    .ku-seite {
-      order: -1;
+    .ku-gl-toc {
+      display: none;
+    }
+  }
+  @media (max-width: 960px) {
+    .ku-stufe {
+      grid-template-columns: minmax(0, 1fr);
+      gap: 12px;
+    }
+    /* Fahrplan wird zur Leiste oben, die beim Scrollen stehen bleibt */
+    .ku-durchfuehren-raster {
+      grid-template-columns: minmax(0, 1fr);
+      gap: 12px;
+    }
+    .ku-fahrplan {
+      top: var(--kopf-h, 61px);
+      max-height: none;
+      overflow-x: auto;
+      overflow-y: hidden;
+      padding: 6px;
+      border-radius: 12px;
+    }
+    .ku-fahrplan .ku-seite-label {
+      display: none;
+    }
+    .ku-fahrplan ol {
+      display: flex;
+      gap: 4px;
+      width: max-content;
+    }
+    .ku-fahrplan button {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      width: auto;
+      max-width: 180px;
+      padding: 5px 10px 6px;
+      border-left: 0;
+      border-bottom: 3px solid var(--pf);
+      border-radius: 8px 8px 0 0;
+    }
+    .ku-fp-titel {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .ku-schritt {
+      scroll-margin-top: calc(var(--kopf-h, 61px) + 72px);
     }
   }
   @media (max-width: 560px) {
     .ku-held {
       padding: 18px 16px;
     }
-    .ku-ablauf-liste li {
-      grid-template-columns: 46px 74px minmax(0, 1fr);
+    /* Kursjahr-Reiter nebeneinander statt übereinander */
+    .ku-jahre {
+      grid-template-columns: none;
+      grid-auto-flow: column;
+      grid-auto-columns: minmax(0, 1fr);
+      gap: 6px;
+    }
+    .ku-jahr {
+      padding: 8px 9px 9px;
+      border-radius: 12px;
+    }
+    .ku-jahr-nr {
+      flex-wrap: wrap;
+      gap: 3px 6px;
+      font-size: 10.5px;
+      letter-spacing: 0.03em;
+    }
+    .ku-jahr-gruppe {
+      font-size: 10px;
+      padding: 0 6px;
+    }
+    .ku-jahr-titel {
+      font-size: 13.5px;
+      line-height: 1.25;
+    }
+    .ku-jahr-info {
+      display: none;
+    }
+    .ku-schritt header {
+      gap: 10px;
+    }
+    .ku-schritt-zeit {
+      min-width: 56px;
+      padding: 5px 6px;
     }
   }
 
