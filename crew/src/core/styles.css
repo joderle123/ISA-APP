@@ -22,6 +22,7 @@
   --good: #2ee6c5;
   --good-ink: #03211c;
   --warn: #ffb020;
+  --hot: #ff4d3d;
   --teamA: #3da5ff;
   --teamA-ink: #03182b;
   --teamB: #ff4fa3;
@@ -39,6 +40,7 @@
               radial-gradient(900px 600px at 110% 110%, #5a1f6e 0%, transparent 55%);
 }
 
+*, *::before, *::after { box-sizing: border-box; }
 html, body { height: 100%; margin: 0; }
 body {
   background: var(--bg);
@@ -77,10 +79,12 @@ body {
   --font-body: "Pixelify Sans", "Courier New", monospace;
   --display-case: uppercase;
   --display-track: 0.04em;
+  --warn: #ffb020;
+  --hot: #ff5a4f;
   --bg-image: linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
               linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
 }
-.app[data-look="pixel"] { background-size: 16px 16px, 16px 16px; }
+.app[data-look="pixel"] { background-size: 16px 16px, 16px 16px; font-variant-ligatures: none; }
 
 .app[data-look="neon"] {
   --ink: #000008;
@@ -110,6 +114,8 @@ body {
   --font-body: "Chakra Petch", "Segoe UI", system-ui, sans-serif;
   --display-case: uppercase;
   --display-track: 0.06em;
+  --warn: #ffb020;
+  --hot: #ff2e63;
   --bg-image: radial-gradient(800px 500px at 80% -10%, #2a0f5a 0%, transparent 60%),
               radial-gradient(700px 500px at -10% 110%, #003a4a 0%, transparent 60%);
 }
@@ -558,6 +564,8 @@ textarea { min-height: 120px; font-family: ui-monospace, Menlo, monospace; font-
 .shake { animation: shake 420ms ease both; }
 .pulse { animation: pulse 1.6s ease-in-out infinite; }
 .float { animation: floaty 3s ease-in-out infinite; }
+.attn { animation: attn-glow 1.6s ease-in-out infinite; }
+@keyframes attn-glow { 0%,100% { box-shadow: 0 var(--lift) 0 var(--line), 0 0 0 0 color-mix(in srgb, var(--yellow) 0%, transparent); } 50% { box-shadow: 0 var(--lift) 0 var(--line), 0 0 0 8px color-mix(in srgb, var(--yellow) 45%, transparent); } }
 @keyframes slide-up { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
 @keyframes pop-in { from { opacity: 0; transform: scale(.85); } to { opacity: 1; transform: none; } }
 @keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }

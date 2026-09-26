@@ -295,11 +295,11 @@ export function createVegetation({ island, veil, colliders, quality, scene }) {
   const flowerPalA = ['#ff5d8f', '#ffd23f', '#ffffff', '#ff8c42'];
   const flowerPalB = ['#b17dff', '#6ec6ff', '#ffffff', '#ff5d8f'];
   const SPECIES = {
-    palm: { geos: [palmGeo(rnd, 0), palmGeo(rnd, 1)], mat: matTree, shadow: true, collide: 0.42, kind: 'tree' },
-    tree: { geos: [broadleafGeo(rnd, false), broadleafGeo(rnd, false)], mat: matTree, shadow: true, collide: 0.45, kind: 'tree' },
-    blossom: { geos: [broadleafGeo(rnd, true)], mat: matTree, shadow: true, collide: 0.45, kind: 'tree' },
-    jungle: { geos: [jungleGeo(rnd), jungleGeo(rnd)], mat: matTree, shadow: true, collide: 0.75, kind: 'tree' },
-    pine: { geos: [pineGeo(rnd), pineGeo(rnd)], mat: matTree, shadow: true, collide: 0.4, kind: 'tree' },
+    palm: { geos: [palmGeo(rnd, 0), palmGeo(rnd, 1)], mat: matTree, shadow: true, collide: 0.42, trunk: 7, crown: [3.2, 6.2, 9.2], kind: 'tree' },
+    tree: { geos: [broadleafGeo(rnd, false), broadleafGeo(rnd, false)], mat: matTree, shadow: true, collide: 0.45, trunk: 3.4, crown: [2.7, 2.8, 7.2], kind: 'tree' },
+    blossom: { geos: [broadleafGeo(rnd, true)], mat: matTree, shadow: true, collide: 0.45, trunk: 3.4, crown: [2.7, 2.8, 7.2], kind: 'tree' },
+    jungle: { geos: [jungleGeo(rnd), jungleGeo(rnd)], mat: matTree, shadow: true, collide: 0.75, trunk: 6.5, crown: [4.2, 5.4, 11], kind: 'tree' },
+    pine: { geos: [pineGeo(rnd), pineGeo(rnd)], mat: matTree, shadow: true, collide: 0.4, trunk: 2.2, crown: [2.3, 0.9, 7.6], kind: 'tree' },
     bush: { geos: [bushGeo(rnd, false), bushGeo(rnd, true)], mat: matTree, kind: 'small', far: 1.8 },
     fern: { geos: [fernGeo(rnd)], mat: matSmall, kind: 'small', far: 1.2 },
     flowers: { geos: [flowersGeo(rnd, flowerPalA), flowersGeo(rnd, flowerPalB)], mat: matSmall, kind: 'small', far: 1.0 },
@@ -520,8 +520,10 @@ export function createVegetation({ island, veil, colliders, quality, scene }) {
         for (let i = 0; i < m.count; i++) {
           const it = m.userData.items[i];
           const r = sp.collideRock ? 1.05 * it.s : sp.collide * it.s;
-          const top = island.getHeight(it.x, it.z) + (sp.collideRock ? 1.1 * it.s : 20);
-          colliders.addCircle(it.x, it.z, r, { group: 'vegetation', tag: m.userData.species, yMax: top });
+          const top = island.getHeight(it.x, it.z) + (sp.collideRock ? 1.1 * it.s : (sp.trunk || 5) * it.s);
+          const g = island.getHeight(it.x, it.z);
+          const cr = sp.crown ? { r: sp.crown[0] * it.s, yMin: g + sp.crown[1] * it.s, yMax: g + sp.crown[2] * it.s } : null;
+          colliders.addCircle(it.x, it.z, r, { group: 'vegetation', tag: m.userData.species, yMax: top, canopy: cr });
         }
       }
     }

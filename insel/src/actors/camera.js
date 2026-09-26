@@ -4,14 +4,16 @@ import * as THREE from 'three';
 
 const MIN_DIST = 3.2, MAX_DIST = 22;
 
-export function createCameraRig({ camera, island, input, player, events }) {
+const OCCLUDERS = new Set(['palm', 'tree', 'blossom', 'jungle', 'pine']);
+
+export function createCameraRig({ camera, island, input, player, events, colliders }) {
   const rig = {
     yaw: island.spawn.yaw + Math.PI,
-    pitch: 0.32,
+    pitch: 0.24,
     dist: 8.5,
     targetDist: 8.5,
     focus: new THREE.Vector3(),
-    lookOffsetY: 1.45,
+    lookOffsetY: 1.6,
     autoRotate: true,
     sensitivity: 0.0055,
     intro: null,
@@ -49,7 +51,18 @@ export function createCameraRig({ camera, island, input, player, events }) {
     rig.dist += (rig.targetDist - rig.dist) * (snap ? 1 : 1 - Math.exp(-dt * 6));
     offset(rig.yaw, rig.pitch, rig.dist, tmp);
     desired.copy(rig.focus).add(tmp);
-    const f = collide(rig.focus, desired);
+    let f = collide(rig.focus, desired);
+    // Baumstämme zwischen Figur und Kamera: näher heranrücken
+    if (colliders) {
+      const th = colliders.segmentHit(rig.focus.x, rig.focus.z, desired.x, desired.z, 0.35, rig.focus.y, desired.y, (o) => OCCLUDERS.has(o.tag));
+      // Baumkronen (z. B. Kiefern am Hang) nicht durchfliegen
+      const tc = colliders.segmentHit(rig.focus.x, rig.focus.z, desired.x, desired.z, 0.5, rig.focus.y, desired.y, null, (o) => o.canopy);
+      const tt = Math.min(th, tc);
+      if (tt < 1) {
+        const minF = 1.6 / Math.max(rig.dist, 0.01);
+        f = Math.min(f, Math.max(tt - 0.04, minF));
+      }
+    }
     if (f < 1) desired.copy(rig.focus).addScaledVector(tmp, f);
     // nie unter Gelände oder Wasser
     const gh = Math.max(island.getHeight(desired.x, desired.z), island.waterLevel(desired.x, desired.z) + 0.15) + 0.6;
@@ -140,7 +153,7 @@ export function createCameraRig({ camera, island, input, player, events }) {
       while (d < -Math.PI) d += Math.PI * 2;
       if (Math.abs(d) < 2.3) rig.yaw += d * Math.min(1, dt * 0.9 * (sp / 6));
       // Neigung sanft zum Standard zurück
-      rig.pitch += (0.3 - rig.pitch) * Math.min(1, dt * 0.4);
+      rig.pitch += (0.24 - rig.pitch) * Math.min(1, dt * 0.4);
     }
     place(dt, false);
     player.setCameraYaw(rig.yaw);

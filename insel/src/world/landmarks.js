@@ -183,7 +183,7 @@ export function createLandmarks({ island, veil, colliders, scene }) {
         smokeT += dt;
         while (smokeT > 0.3) {
           smokeT -= 0.3;
-          particles.emit({ x: V.x + (Math.random() - 0.5) * 5, y: V.lavaLevel + 3, z: V.z + (Math.random() - 0.5) * 5, count: 1, speed: 0.3, up: 2.2, vx: 0.6, color: night > 0.5 ? 0x4a4458 : 0x9a93a0, size: 8, life: 10, gravity: 0.2, drag: 0.08, grow: 2.4, alpha: 0.32 });
+          particles.emit({ x: V.x + (Math.random() - 0.5) * 5, y: V.lavaLevel + 3, z: V.z + (Math.random() - 0.5) * 5, count: 1, speed: 0.3, up: 2.2, vx: 0.6, color: night > 0.5 ? 0x2c2733 : 0x9a93a0, size: 8, life: 10, gravity: 0.2, drag: 0.08, grow: 2.4, alpha: night > 0.5 ? 0.22 : 0.32 });
           if (Math.random() < 0.3) particles.emit({ x: V.x + (Math.random() - 0.5) * 8, y: V.lavaLevel + 0.5, z: V.z + (Math.random() - 0.5) * 8, count: 3, spread: 1, speed: 1.2, up: 4, color: 0xffa040, size: 0.5, life: 1.4, gravity: -4, drag: 0.5, additive: true, alpha: 1 });
         }
       }

@@ -88,11 +88,18 @@ try {
   // Zonen
   const zones = await page.evaluate(() => LUMO.debug.zones);
   for (const z of zones) {
-    await page.evaluate((z) => { LUMO.debug.teleport(z); LUMO.debug.advance(0.8); }, z);
+    await page.evaluate((z) => {
+      LUMO.debug.teleport(z);
+      // Leuchtturm steht oben auf der Kuppe: Blick etwas anheben
+      if (z === 'leuchtturm') { LUMO.cameraRig.pitch = -0.02; LUMO.cameraRig.targetDist = 11; }
+      LUMO.debug.advance(0.8);
+      LUMO.cameraRig.snap();
+    }, z);
     await frames(page, 3);
     const info = await page.evaluate(() => ({ zone: LUMO.world.island.zoneAt(LUMO.player.position.x, LUMO.player.position.z), y: LUMO.player.position.y, walk: LUMO.world.island.isWalkable(LUMO.player.position.x, LUMO.player.position.z) }));
     check(`Teleport ${z}`, info.zone === z && info.walk, JSON.stringify(info));
     await shot(page, `10_zone_${z}`);
+    await page.evaluate(() => { LUMO.cameraRig.pitch = 0.24; LUMO.cameraRig.targetDist = 8.5; });
   }
 
   // Tageszeiten (Aussicht vom Hafen)
@@ -130,7 +137,7 @@ try {
   });
   await frames(page, 3);
   await shot(page, '40_figur_nah');
-  await page.evaluate(() => { const r = LUMO.cameraRig; r.targetDist = 8.5; r.lookOffsetY = 1.45; r.pitch = 0.32; LUMO.player.stopAnim(); LUMO.cameraRig.behindPlayer(); LUMO.cameraRig.snap(); });
+  await page.evaluate(() => { const r = LUMO.cameraRig; r.targetDist = 8.5; r.lookOffsetY = 1.6; r.pitch = 0.24; LUMO.player.stopAnim(); LUMO.cameraRig.behindPlayer(); LUMO.cameraRig.snap(); });
 
   // Menü
   await page.tap('.hud-menu-btn');

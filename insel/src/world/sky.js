@@ -13,9 +13,9 @@ const KEYS = [
   [6.5, '#4a78c8', '#ffc08a', '#ffc58a', 2.2, '#9fb8e8', '#7a6a58', 1.5, '#ffb070', 0.9, 1.08, 0],
   [8.5, '#3d8be0', '#bde3f7', '#fff2dc', 3.0, '#bcdcff', '#8a9870', 1.7, '#fff0d0', 0.35, 1.0, 0],
   [12.0, '#2f7fe0', '#b5e0f8', '#ffffff', 3.2, '#c8e4ff', '#8aa070', 1.8, '#fff8e8', 0.3, 1.0, 0],
-  [15.5, '#3582dc', '#c3e2f4', '#fff4dc', 3.1, '#c0dcff', '#90a070', 1.75, '#fff0d0', 0.35, 1.0, 0],
-  [17.0, '#4a78cc', '#ffd49c', '#ffc27a', 3.0, '#a8c0f0', '#b08a68', 1.6, '#ffb566', 0.95, 1.02, 0],
-  [17.8, '#3a5aa8', '#ffa066', '#ff9452', 2.4, '#9098d8', '#a06a58', 1.5, '#ff8040', 1.0, 1.08, 0],
+  [15.5, '#3582dc', '#c3e2f4', '#fff4dc', 3.1, '#c0dcff', '#90a070', 1.8, '#fff0d0', 0.35, 1.04, 0],
+  [17.0, '#4a78cc', '#ffd49c', '#ffc27a', 3.1, '#a8c0f0', '#b08a68', 1.9, '#ffb566', 0.95, 1.12, 0],
+  [17.8, '#3a5aa8', '#ffa066', '#ff9452', 2.5, '#9098d8', '#a06a58', 1.75, '#ff8040', 1.0, 1.16, 0],
   [18.5, '#2a3280', '#e8667a', '#ff7058', 0.6, '#7068b0', '#503848', 1.35, '#ff6a5a', 0.8, 1.2, 0.2],
   [19.4, '#141a52', '#5a3f86', '#a9b8ff', 0.6, '#4a5298', '#22223e', 1.25, '#7a4a8a', 0.4, 1.35, 0.8],
   [20.4, '#070b24', '#1b2352', '#9fb4ff', 0.9, '#4a5aa0', '#1c1f3a', 1.25, '#2a2f66', 0.2, 1.45, 1],
@@ -26,9 +26,9 @@ const KEYV = KEYS.map((k) => k.map((v) => (typeof v === 'string' ? hexToV(v) : v
 
 // Zeitgewicht: langsame goldene Stunde, schnelle Nacht
 function hourWeight(h) {
-  if (h >= 16.3 && h < 18.6) return 2.6;
-  if (h >= 20.5 || h < 4.8) return 0.55;
-  return 1;
+  if (h >= 16.0 && h < 18.6) return 4;      // lange goldene Stunde (~5 Minuten)
+  if (h >= 20.5 || h < 4.8) return 0.45;    // kurze Nacht (~2 Minuten)
+  return 0.8;
 }
 let W_TOTAL = 0;
 for (let h = 0; h < 24; h += 0.01) W_TOTAL += hourWeight(h) * 0.01;
@@ -106,7 +106,7 @@ function makeCloud(rnd, dark) {
       scale: [1.2, 0.7 + rnd() * 0.2, 1],
       jitter: r * 0.25, seed: Math.floor(rnd() * 1000),
       deform: (v) => { if (v.y < -r * 0.15) v.y = -r * 0.15 - (v.y + r * 0.15) * 0.1; },
-      color: dark ? '#5d5a66' : '#ffffff',
+      color: '#ffffff',
     }));
   }
   return merge(parts);
@@ -171,19 +171,40 @@ export function createSky({ scene, renderer, audio, quality, events }) {
 
   // ---- Dauergewitter über den Sturmklippen ----
   const storm = { x: -100, z: -100, r: 55, intensity: 1, flash: 0, next: 3, bolt: null, boltT: 0 };
-  const stormMat = new THREE.MeshLambertMaterial({ vertexColors: true, flatShading: true, emissive: new THREE.Color('#4a4652'), emissiveIntensity: 0.5, fog: false });
-  const stormEmissiveBase = new THREE.Color('#3e3a48'), stormEmissiveFlash = new THREE.Color('#c8ceff');
+  const stormMat = new THREE.MeshLambertMaterial({ vertexColors: true, flatShading: true, emissive: new THREE.Color('#3a3646'), emissiveIntensity: 0.4, fog: false });
+  const stormEmissiveBase = new THREE.Color('#2e2a38'), stormEmissiveFlash = new THREE.Color('#c8ceff');
   const stormGroup = new THREE.Group();
   stormGroup.position.set(storm.x, 0, storm.z);
-  for (let i = 0; i < 13; i++) {
-    const g = makeCloud(rnd, true);
-    const m = new THREE.Mesh(g, stormMat);
-    const a = (i / 13) * Math.PI * 4 + rnd();
-    const r = i === 0 ? 0 : 10 + rnd() * 34;
-    m.position.set(Math.cos(a) * r, 44 + rnd() * 10, Math.sin(a) * r);
-    m.rotation.y = rnd() * 6;
-    m.scale.set(1.5 + rnd() * 0.7, 1.2 + rnd() * 0.5, 1.5 + rnd() * 0.7);
-    stormGroup.add(m);
+  // Gewitterturm: breite dunkle Basis + aufgetürmte, oben hellere Wolkenballen
+  {
+    const parts = [];
+    const dark = new THREE.Color('#3f3b4c'), light = new THREE.Color('#b3adc2');
+    const colFn = (x, y, z, out) => out.copy(dark).lerp(light, THREE.MathUtils.smoothstep(y, 42, 100));
+    for (let i = 0; i < 13; i++) {
+      const a = rnd() * Math.PI * 2, r = 6 + rnd() * 30;
+      const R = 8 + rnd() * 7;
+      parts.push(part(new THREE.IcosahedronGeometry(R, 1), {
+        pos: [Math.cos(a) * r, 43 + rnd() * 7, Math.sin(a) * r], scale: [1.35, 0.8, 1.35], jitter: R * 0.3, seed: 200 + i,
+        deform: (v) => { if (v.y < -R * 0.3) v.y = -R * 0.3; }, color: colFn,
+      }));
+    }
+    for (let i = 0; i < 16; i++) {
+      const t = i / 15;
+      const a = rnd() * Math.PI * 2, r = (1 - t) * 12 + rnd() * 6;
+      const R = 15 - t * 5 + rnd() * 4;
+      parts.push(part(new THREE.IcosahedronGeometry(R, 1), {
+        pos: [Math.cos(a) * r, 52 + t * 34, Math.sin(a) * r], scale: [1.2, 0.9, 1.2], jitter: R * 0.3, seed: 300 + i, color: colFn,
+      }));
+    }
+    // Amboss oben
+    for (let i = 0; i < 6; i++) {
+      const a = (i / 6) * Math.PI * 2 + rnd(), r = 10 + rnd() * 12;
+      parts.push(part(new THREE.IcosahedronGeometry(11 + rnd() * 3, 1), {
+        pos: [Math.cos(a) * r, 90 + rnd() * 4, Math.sin(a) * r], scale: [1.7, 0.45, 1.7], jitter: 3, seed: 400 + i, color: colFn,
+      }));
+    }
+    const tower = new THREE.Mesh(merge(parts), stormMat);
+    stormGroup.add(tower);
   }
   // Regenvorhänge (aus der Ferne sichtbar)
   const curtainMat = new THREE.ShaderMaterial({
@@ -278,7 +299,7 @@ export function createSky({ scene, renderer, audio, quality, events }) {
 
   // ---- Zeit ----
   const time = {
-    hour: 17.3,
+    hour: 16.8,
     speed: 1,
     paused: false,
     cycleSeconds: 720,
@@ -436,7 +457,7 @@ export function createSky({ scene, renderer, audio, quality, events }) {
       storm.flash = Math.max(0, storm.flash - dt * 5);
       const flicker = storm.flash * (0.6 + 0.4 * Math.sin(t * 70));
       stormMat.emissive.copy(stormEmissiveBase).lerp(stormEmissiveFlash, Math.min(1, flicker * storm.intensity));
-      stormMat.emissiveIntensity = 0.45 + flicker * 1.2 * storm.intensity;
+      stormMat.emissiveIntensity = 0.35 + flicker * 1.3 * storm.intensity;
       const near = 1 - Math.min(1, Math.max(0, (camD - storm.r * 0.6) / (storm.r * 0.9)));
       domeU.uFlash.value = flicker * near * 0.25 * storm.intensity;
       hemi.intensity += flicker * near * 1.5 * storm.intensity;

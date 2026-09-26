@@ -198,7 +198,7 @@
       else if (G.now === key) state = ' now';
       return h('div', { class: 'clash-cell ' + side + state, 'data-key': key }, stepIcon(s, big ? 26 : 18), big || side === 'j' ? h('b', { class: 'n' }, String(s)) : null);
     };
-    const steps = h('div', { class: 'clash-stairs' + (big ? ' big' : ''), role: 'img', 'aria-label': 'Friedenstreppe mit fünf Stufen' },
+    const steps = h('div', { class: 'clash-stairs' + (big ? ' big' : ''), role: 'img', 'aria-label': 'Fünf Level zum Frieden' },
       [1, 2, 3, 4, 5].map((s) => h('div', { class: 'clash-col s' + s },
         h('div', { class: 'clash-lanes' }, s <= 3 ? [cell(s + 'A', 'a', s), cell(s + 'B', 'b', s)] : cell(String(s), 'j', s)),
         big ? h('div', { class: 'clash-cap' }, STUFEN[s].kurz) : null)));
@@ -207,7 +207,7 @@
       h('div', { class: 'clash-legend' }, [1, 2, 3, 4, 5].map((s) => h('span', null, h('b', null, String(s)), ' ' + STUFEN[s].kurz))));
   }
   const hud = (G, meter) => h('div', { class: 'clash-hud' },
-    h('div', { class: 'clash-stairs-wrap' }, h('span', { class: 'eyebrow' }, 'Friedenstreppe'), stairs(G)),
+    h('div', { class: 'clash-stairs-wrap' }, h('span', { class: 'eyebrow' }, '5 Level zum Frieden'), stairs(G)),
     (meter || heatMeter(G.heat)).el);
 
   /* ---------- Comic-Bild: zwei Figuren + Sprechblasen ---------- */
@@ -288,7 +288,7 @@
     const readAll = () => sc.intro.map((b) => person(G, b.who).name + ': ' + b.text).join(' ');
     const wrap = ctx.screen([
       h('div', { class: 'clash-hud' },
-        h('div', { class: 'stack clash-title' }, h('span', { class: 'eyebrow' }, G.solo ? 'Solo · Friedenstreppe' : 'Mission Clash'), h('h2', null, sc.title)),
+        h('div', { class: 'stack clash-title' }, h('span', { class: 'eyebrow' }, G.solo ? 'Solo · Clash' : 'Mission Clash'), h('h2', null, sc.title)),
         meter.el),
       cm.el,
       h('div', { class: 'row between clash-foot' }, h('p', { class: 'muted' }, 'Wie schaukelt sich der Streit hoch?'), ui.speakBtn(readAll)),
@@ -311,7 +311,7 @@
     await ctx.sleep(450);
     const r = await ask(G, wrap, [
       { label: 'Andere Szene', value: 'swap', variant: 'ghost', icon: 'shuffle' },
-      { label: 'Zur Friedenstreppe', value: 'go', iconRight: 'right' },
+      { label: 'Clash lösen', value: 'go', iconRight: 'right' },
     ]);
     // X-Karte auf dem Intro: diese Szene lieber nicht – eine andere nehmen
     return r === ctx.SKIP ? 'swap' : r;
@@ -335,7 +335,7 @@
     G.now = '1A';
     const wrap = ctx.screen([
       h('div', { class: 'stack', style: { gap: '4px' } },
-        h('span', { class: 'eyebrow' }, 'Stopp. Friedenstreppe.'),
+        h('span', { class: 'eyebrow' }, 'Stopp. Jetzt wird gelöst.'),
         h('h2', null, G.solo ? 'Du sprichst für beide.' : 'Ihr sprecht jetzt für die beiden.')),
       h('div', { class: 'clash-teams' }, teamCard('A'), teamCard('B')),
       h('div', { class: 'card clash-stairs-card' },
@@ -610,7 +610,7 @@
     const num = h('span', { class: 'display clash-big' }, '0');
     const wrap = ctx.screen([
       h('div', { class: 'stack', style: { alignItems: 'center', textAlign: 'center' } },
-        h('span', { class: 'eyebrow' }, 'Solo · Friedenstreppe'),
+        h('span', { class: 'eyebrow' }, 'Solo · Clash'),
         h('h2', null, 'Beim ersten Versuch cool geblieben'),
         h('div', { class: 'row center' }, num, h('span', { class: 'display', style: { fontSize: '2em' } }, 'von ' + total)),
         best.isNew && cool > 0 ? h('span', { class: 'pill good' }, 'Neuer Bestwert!') : h('span', { class: 'pill' }, 'Dein Bestwert: ' + best.best),
@@ -624,7 +624,7 @@
 
   CREW.registerSolo({
     id: 'clash',
-    title: 'Friedenstreppe',
+    title: 'Clash-Solo',
     desc: 'Ein Streit, zwei Seiten. Bring beide nach oben.',
     icon: 'heart',
     async run(ctx) {

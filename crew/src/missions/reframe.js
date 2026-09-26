@@ -523,8 +523,8 @@
       await intro(ctx, G);
       for (let i = 0; i < battleCards.length; i++) await battle(ctx, G, battleCards[i], i);
       if (speedCards.length) {
-        const r = await speedIntro(ctx, G);
-        if (r !== ctx.SKIP) for (let j = 0; j < speedCards.length; j++) await speed(ctx, G, speedCards[j], j, speedCards.length);
+        await speedIntro(ctx, G); // X-Karte hier überspringt nur die Erklärung
+        for (let j = 0; j < speedCards.length; j++) await speed(ctx, G, speedCards[j], j, speedCards.length);
       }
       await finale(ctx, G);
 
@@ -581,7 +581,7 @@
       played++;
       grid.querySelectorAll('button').forEach((b) => { b.disabled = true; });
       const ok = chosen.ok;
-      if (ok) { hits++; G.blocks.push({ word: card.staerke, team: 'A' }); CREW.sound.play('good'); } else CREW.sound.play('soft');
+      if (ok) { G.blocks.push({ word: card.staerke, team: ['A', 'B', 'C'][hits % 3] }); hits++; CREW.sound.play('good'); } else CREW.sound.play('soft');
       options.forEach((o, idx) => {
         const b = grid.children[idx];
         if (o.ok) { b.classList.add('ok'); b.appendChild(h('span', { class: 'reframe-opt-ic' }, CREW.icon('check', 28))); } else if (o === chosen) b.classList.add('nope'); else b.classList.add('dim');

@@ -106,9 +106,11 @@ export function createInput({ root, events }) {
   function onTouchStart(e) {
     setDevice('touch');
     const w = root.clientWidth;
+    let used = false;
     for (const t of e.changedTouches) {
       const target = t.target;
       if (target && target.closest && target.closest(INTERACTIVE)) continue;
+      used = true;
       if (!state.enabled) continue;
       if (stickId === null && t.clientX < w * 0.45) {
         stickId = t.identifier;
@@ -124,7 +126,8 @@ export function createInput({ root, events }) {
       }
     }
     pinchDist = lookPinchDist();
-    if (e.cancelable) e.preventDefault();
+    // Nur auf der Spielfläche blockieren – Knöpfe brauchen ihren Klick
+    if (used && e.cancelable) e.preventDefault();
   }
   function lookTouches() {
     const arr = [];
@@ -136,9 +139,11 @@ export function createInput({ root, events }) {
     return l.length >= 2 ? Math.hypot(l[0].x - l[1].x, l[0].y - l[1].y) : 0;
   }
   function onTouchMove(e) {
+    let used = false;
     for (const t of e.changedTouches) {
       const rec = touches.get(t.identifier);
       if (!rec) continue;
+      used = true;
       if (rec.role === 'stick') {
         stickUpdate(t);
       } else {
@@ -153,7 +158,7 @@ export function createInput({ root, events }) {
     const pd = lookPinchDist();
     if (pd > 0 && pinchDist > 0) state.zoom += (pinchDist - pd) * 0.035;
     pinchDist = pd;
-    if (e.cancelable) e.preventDefault();
+    if (used && e.cancelable) e.preventDefault();
   }
   function onTouchEnd(e) {
     for (const t of e.changedTouches) {

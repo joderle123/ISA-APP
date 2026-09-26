@@ -45,12 +45,13 @@ vec3 lumoApplyVeil(vec3 col, vec3 p) {
   float v = lumoVeilAmount(p);
   gLumoVeil = v;
   float l = dot(col, vec3(0.299, 0.587, 0.114));
-  vec3 grey = vec3(l) * vec3(0.92, 0.95, 1.04) * 0.86 + uVeilHaze * (0.02 + l * 0.08);
-  col = mix(col, grey, v * 0.84);
+  vec3 grey = vec3(l) * vec3(0.9, 0.93, 1.06) * 0.84 + uVeilHaze * (0.015 + l * 0.1);
+  col = mix(col, grey, v * 0.8);
   if (gLumoRing > 0.002) {
     float a = atan(p.z - uVeilWave.y, p.x - uVeilWave.x);
-    vec3 rb = 0.5 + 0.5 * cos(6.2831 * (a / 6.2831 * 2.0 + uLumoTime * 0.4 + vec3(0.0, 0.33, 0.67)));
-    col += (rb * 0.9 + 0.35) * gLumoRing * 1.4;
+    vec3 rb = 0.5 + 0.5 * cos(6.2831 * (a / 6.2831 * 3.0 + uLumoTime * 0.5 + vec3(0.0, 0.33, 0.67)));
+    rb = rb * rb;
+    col = mix(col, col * 0.6 + rb * 1.6 + 0.08, clamp(gLumoRing, 0.0, 1.0) * 0.85);
   }
   return col;
 }

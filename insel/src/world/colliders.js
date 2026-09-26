@@ -135,6 +135,34 @@ export function createColliders() {
       }
       return hit;
     },
+    // Erste Kreis-Kollision entlang einer Strecke (für die Kamera). Liefert t (0..1) oder 1.
+    // y0/y1: Höhe am Anfang/Ende (Hindernis zählt nur unterhalb yMax). filter(o) optional.
+    // shape(o) → { r, yMin, yMax } | null  (z. B. Baumkronen statt Stamm)
+    segmentHit(x0, z0, x1, z1, pad = 0.3, y0 = 0, y1 = 0, filter = null, shape = null) {
+      const dx = x1 - x0, dz = z1 - z0;
+      const len = Math.hypot(dx, dz);
+      if (len < 1e-4) return 1;
+      tmpSet.clear();
+      const steps = Math.ceil(len / CELL) + 1;
+      for (let i = 0; i <= steps; i++) nearby(grid, x0 + (dx * i) / steps, z0 + (dz * i) / steps, pad + 5, tmpSet);
+      let best = 1;
+      for (const o of tmpSet) {
+        if (o.type !== 'circle' || (filter && !filter(o))) continue;
+        const sh = shape ? shape(o) : o;
+        if (!sh) continue;
+        const fx = x0 - o.x, fz = z0 - o.z;
+        const r = sh.r + pad;
+        const a = dx * dx + dz * dz, b = 2 * (fx * dx + fz * dz), c = fx * fx + fz * fz - r * r;
+        const disc = b * b - 4 * a * c;
+        if (disc < 0) continue;
+        const t = (-b - Math.sqrt(disc)) / (2 * a);
+        if (t < 0 || t >= best) continue;
+        const y = y0 + (y1 - y0) * t;
+        if (y > sh.yMax || y < sh.yMin) continue;
+        best = t;
+      }
+      return best;
+    },
     // Alle Hindernisse im Umkreis
     query(x, z, r) {
       const out = new Set();

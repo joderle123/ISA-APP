@@ -49,9 +49,12 @@ export function createHUD({ root, input, events, audio, game }) {
     }
   }
   const poiEls = new Map(); // id -> {el, x, z}
+  let lastHeading = -999, lastPx = 0, lastPz = 0;
   function updateCompass(camYaw, px, pz) {
     // Blickrichtung → Himmelsrichtung (0° = Norden, im Uhrzeigersinn)
-    const heading = ((-camYaw * 180) / Math.PI + 360 * 4) % 360;
+    const heading = ((((-camYaw * 180) / Math.PI) % 360) + 360) % 360;
+    if (Math.abs(heading - lastHeading) < 0.2 && Math.abs(px - lastPx) + Math.abs(pz - lastPz) < 0.5) return;
+    lastHeading = heading; lastPx = px; lastPz = pz;
     for (const m of markEls) {
       const x = ((+m.dataset.deg - heading) * Math.PI / 180) * PX_PER_RAD;
       m.style.transform = `translate(calc(-50% + ${x.toFixed(1)}px), -50%)`;
@@ -83,7 +86,7 @@ export function createHUD({ root, input, events, audio, game }) {
   bindButton(el.jump, 'jump');
   bindButton(el.action, 'action');
   bindButton(el.power, 'power');
-  el.menuBtn.addEventListener('click', () => { audio.play('click'); ui.toggleMenu(); });
+  el.menuBtn.addEventListener('click', () => { audio.play('click'); el.menuBtn.blur(); ui.toggleMenu(); });
 
   // Touch vs. Tastatur
   function setDeviceClass(d) {
@@ -161,6 +164,8 @@ export function createHUD({ root, input, events, audio, game }) {
   }
   function closeMenu(silent) {
     if (!menuEl) return;
+    // Fokus lösen, sonst löst die Leertaste (Springen) Knöpfe aus
+    if (document.activeElement && document.activeElement.blur) document.activeElement.blur();
     menuEl.remove();
     menuEl = null;
     if (!silent) { game.setPaused(false); events.emit('ui:menu', { open: false }); }
@@ -171,6 +176,7 @@ export function createHUD({ root, input, events, audio, game }) {
   if (debugOn) el.debug.classList.remove('is-hidden');
   let debugT = 0;
   let actionCb = null;
+  let lastJs = '';
 
   const ui = {
     root, el,
@@ -214,6 +220,7 @@ export function createHUD({ root, input, events, audio, game }) {
         poiEls.set(id, p);
       }
       p.x = x; p.z = z; p.el.textContent = symbol; p.el.style.color = color;
+      lastHeading = -999;
     },
     removeMarker(id) { const p = poiEls.get(id); if (p) { p.el.remove(); poiEls.delete(id); } },
     openMenu, closeMenu,
@@ -231,11 +238,14 @@ export function createHUD({ root, input, events, audio, game }) {
     update(dt, g) {
       // Joystick
       const js = input.state.joystick;
-      if (js.active) {
+      const jsKey = js.active ? `${js.x}|${js.y}|${js.kx}|${js.ky}` : 'idle' + root.clientHeight;
+      if (jsKey === lastJs) { /* unverändert */ } else if (js.active) {
+        lastJs = jsKey;
         el.joy.classList.add('is-active'); el.joy.classList.remove('is-idle');
         el.joy.style.left = js.x + 'px'; el.joy.style.top = js.y + 'px';
         el.knob.style.transform = `translate(${js.kx}px, ${js.ky}px)`;
       } else {
+        lastJs = jsKey;
         el.joy.classList.remove('is-active'); el.joy.classList.add('is-idle');
         const h = root.clientHeight;
         el.joy.style.left = '120px'; el.joy.style.top = (h - 130) + 'px';

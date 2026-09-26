@@ -70,7 +70,7 @@ export function createLife({ island, veil, scene, quality }) {
     part(new THREE.BoxGeometry(0.04, 0.04, 0.3), { color: '#2a2230' }),
   ]);
   const bfMat = flapMaterial(veil, 22.0);
-  const BF = 16;
+  const BF = 12;
   const bflies = new THREE.InstancedMesh(bfGeo, bfMat, BF);
   bflies.frustumCulled = false;
   const bfCols = ['#ff9a3c', '#57b8ff', '#ffe14d', '#ff6fa8', '#b58cff'];
@@ -83,7 +83,7 @@ export function createLife({ island, veil, scene, quality }) {
   group.add(bflies);
 
   // ---- Glühwürmchen ----
-  const FF = Math.round(70 * (quality.particles || 1));
+  const FF = Math.round(90 * (quality.particles || 1));
   const ffPos = new Float32Array(FF * 3);
   const ffSeed = new Float32Array(FF);
   for (let i = 0; i < FF; i++) { ffPos.set([(rnd() - 0.5) * 50, rnd(), (rnd() - 0.5) * 50], i * 3); ffSeed[i] = rnd() * 100; }
@@ -102,17 +102,17 @@ export function createLife({ island, veil, scene, quality }) {
         p.z += cos(uTime * 0.27 + aSeed * 1.3) * 3.0;
         vec2 w = mod(p.xz - uCenter.xz + 25.0, 50.0) - 25.0;
         vec3 wp = vec3(uCenter.x + w.x, uGround + 0.6 + p.y * 2.5 + sin(uTime * 0.8 + aSeed) * 0.5, uCenter.z + w.y);
-        vB = pow(0.5 + 0.5 * sin(uTime * (1.5 + fract(aSeed) * 2.0) + aSeed * 7.0), 3.0) * (1.0 - smoothstep(14.0, 25.0, length(w)));
+        vB = pow(0.5 + 0.5 * sin(uTime * (1.5 + fract(aSeed) * 2.0) + aSeed * 7.0), 2.0) * (1.0 - smoothstep(16.0, 25.0, length(w)));
         vec4 mv = viewMatrix * vec4(wp, 1.0);
         gl_Position = projectionMatrix * mv;
-        gl_PointSize = 0.35 * uScale / max(-mv.z, 0.5);
+        gl_PointSize = max(0.5 * uScale / max(-mv.z, 0.5), 3.0);
       }`,
     fragmentShader: /* glsl */`
       uniform float uAmt; varying float vB;
       void main() {
         vec2 p = gl_PointCoord * 2.0 - 1.0;
         float a = exp(-dot(p, p) * 4.0) * vB * uAmt;
-        gl_FragColor = vec4(vec3(0.75, 1.0, 0.35) * a * 1.6, a);
+        gl_FragColor = vec4(vec3(0.8, 1.0, 0.4) * a * 2.2, a);
       }`,
   }));
   fireflies.frustumCulled = false;
@@ -158,7 +158,7 @@ export function createLife({ island, veil, scene, quality }) {
           const yaw = Math.atan2(Math.cos(tt * 0.7) * 3.5, -Math.sin(tt * 0.6) * 3);
           e.set(0, yaw, 0, 'YXZ');
           q.setFromEuler(e);
-          m4.compose(v.set(x, y, z), q, one.setScalar(vis));
+          m4.compose(v.set(x, y, z), q, one.setScalar(vis * 0.6));
           bflies.setMatrixAt(i, m4);
           one.setScalar(1);
         }

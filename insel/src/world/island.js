@@ -16,8 +16,8 @@ export const ZONES = [
   { id: 'dschungel', name: 'Dschungel', x: 82, z: -82, r: 44, spawn: { x: 84, z: -80 }, color: '#4cd964' },
   { id: 'klippen', name: 'Sturmklippen', x: -96, z: -96, r: 46, spawn: { x: -100, z: -90 }, color: '#8fa3ff' },
   { id: 'markt', name: 'Markt-Hügel', x: -118, z: 14, r: 36, spawn: { x: -116, z: 16 }, color: '#ffd166' },
-  { id: 'vulkan', name: 'Vulkan', x: 0, z: -42, r: 50, spawn: { x: 12, z: 30 }, color: '#ff6b3d' },
-  { id: 'leuchtturm', name: 'Leuchtturm', x: -120, z: 122, r: 30, spawn: { x: -110, z: 122 }, color: '#fff3a0' },
+  { id: 'vulkan', name: 'Vulkan', x: 0, z: -42, r: 58, spawn: { x: 19.6, z: 8.3 }, color: '#ff6b3d' },
+  { id: 'leuchtturm', name: 'Leuchtturm', x: -120, z: 122, r: 36, spawn: { x: -88, z: 127 }, color: '#fff3a0' },
 ];
 export const ZONE_INDEX = Object.fromEntries(ZONES.map((z, i) => [z.id, i]));
 
@@ -47,7 +47,7 @@ export const SITES = {
 // Wege (Polylinien, werden eingeebnet und als Pfad gefärbt)
 export const PATHS = [
   { id: 'hafen-strand', pts: [[6, 118], [30, 112], [62, 98], [92, 74], [116, 50], [130, 32]] },
-  { id: 'hafen-leuchtturm', pts: [[4, 118], [-20, 121], [-50, 124], [-80, 126], [-102, 124], [-114, 123]] },
+  { id: 'hafen-leuchtturm', pts: [[4, 118], [-20, 121], [-50, 124], [-80, 126], [-98, 124.5]] },
   { id: 'hafen-markt', pts: [[-4, 106], [-30, 92], [-58, 74], [-84, 52], [-102, 32], [-112, 20]] },
   { id: 'markt-klippen', pts: [[-118, 4], [-116, -18], [-108, -42], [-100, -66], [-100, -88], [-110, -108]] },
   { id: 'strand-dschungel', pts: [[132, 24], [130, -2], [120, -30], [104, -58], [88, -78]] },
@@ -77,6 +77,7 @@ PATHS.push({ id: 'vulkan-serpentine', pts: spiralPoints() });
   const e = sp[sp.length - 1];
   SITES.kraterRand.x = Math.round(e[0] * 10) / 10;
   SITES.kraterRand.z = Math.round(e[1] * 10) / 10;
+
 }
 
 // Gelände-Features, die andere Module brauchen

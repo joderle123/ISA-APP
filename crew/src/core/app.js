@@ -63,7 +63,12 @@
     renderHome();
   }
   function endRun() {
-    if (run) { run.token = -1; if (run.abort) run.abort(); }
+    if (run) {
+      run.token = -1;
+      if (run.abort) run.abort();
+      (run.cleanups || []).forEach((fn) => { try { fn(); } catch (e) { console.error(e); } });
+    }
+    ui.setPaused(false);
     run = null;
     CREW.stopSpeaking();
     renderTopbar();
@@ -84,6 +89,7 @@
   /* Pause mit Atemkreis */
   function showPause() {
     CREW.stopSpeaking();
+    ui.setPaused(true);
     const circle = h('div', { style: { width: 'min(46vmin, 320px)', aspectRatio: '1', borderRadius: '50%', background: 'radial-gradient(circle, var(--good) 0%, color-mix(in srgb, var(--good) 30%, transparent) 70%)', border: 'var(--bw) solid var(--line)', animation: 'breathe 10s ease-in-out infinite' } });
     const label = h('div', { class: 'display', style: { fontSize: '2em' } }, 'Einatmen …');
     let phase = 0;
@@ -93,7 +99,7 @@
         h('span', { class: 'eyebrow' }, 'Pause'),
         circle, label,
         h('p', { class: 'muted' }, 'Kurz durchatmen. Das Spiel wartet.'),
-        ui.btn('Weiter', () => { clearInterval(iv); ov.remove(); }, { big: true, icon: 'play' })));
+        ui.btn('Weiter', () => { clearInterval(iv); ov.remove(); ui.setPaused(false); }, { big: true, icon: 'play' })));
     ui.overlays().appendChild(ov);
   }
 
@@ -222,6 +228,9 @@
         });
       },
       sleep: (ms) => sleep(ms).then(() => { if (!alive()) throw new Abort(); }),
+      // Aufräumen (Animationen, Listener), wenn die Session endet oder abgebrochen wird
+      onCleanup(fn) { if (run && run.token === token) (run.cleanups = run.cleanups || []).push(fn); },
+      isPaused: () => ui.isPaused(),
     };
     return ctx;
   }
@@ -429,7 +438,7 @@
     }
     const r = await run_wait(ui.choice(wrap, [{ label: 'Crew-HQ ansehen', value: 'base', variant: 'ghost', icon: 'base' }, { label: 'Bis morgen!', value: 'home', iconRight: 'home' }]), t);
     endRun();
-    if (r === 'base') renderBase(); else renderHome();
+    if (r === 'base') renderBase(after.level > before.level ? after.level : null); else renderHome();
   }
 
   async function showUnlock(level) {
@@ -539,16 +548,16 @@
   }
 
   /* ---------- Crew-HQ ---------- */
-  function renderBase() {
+  function renderBase(highlight) {
     endRun();
     const li = CREW.levelInfo(S.energy);
-    const scene = CREW.base && CREW.base.renderScene ? CREW.base.renderScene(li.level) : h('div', { class: 'card', style: { minHeight: '240px', display: 'grid', placeItems: 'center' } }, h('p', { class: 'muted' }, 'Das Crew-HQ wird gerade gebaut …'));
+    const scene = CREW.base && CREW.base.renderScene ? CREW.base.renderScene(li.level, typeof highlight === 'number' ? { highlight } : undefined) : h('div', { class: 'card', style: { minHeight: '240px', display: 'grid', placeItems: 'center' } }, h('p', { class: 'muted' }, 'Das Crew-HQ wird gerade gebaut …'));
     const items = CREW.base && CREW.base.items ? CREW.base.items : [];
     ui.screen([
       h('div', { class: 'row between enter' },
         h('div', { class: 'stack', style: { gap: '4px' } }, h('span', { class: 'eyebrow' }, 'Crew-HQ · Saison 1'), h('h1', { class: 'outline-text' }, S.crew.name || 'CREW')),
         h('div', { class: 'stack', style: { alignItems: 'flex-end', gap: '4px' } }, h('span', { class: 'display', style: { fontSize: '2.2em' } }, 'Level ' + li.level), h('span', { class: 'muted' }, S.energy + ' Energie gesammelt'))),
-      h('div', { class: 'enter-2', style: { borderRadius: 'var(--radius)', overflow: 'hidden', border: 'var(--bw) solid var(--line)', boxShadow: '0 var(--lift) 0 var(--line)' } }, scene),
+      h('div', { class: 'enter-2', style: { borderRadius: 'var(--radius)', overflow: 'hidden', border: 'var(--bw) solid var(--line)', boxShadow: '0 var(--lift) 0 var(--line)', width: '100%', maxWidth: 'max(360px, calc((100dvh - 330px) * 16 / 9))', margin: '0 auto' } }, scene),
       h('div', { class: 'card stack enter-3' },
         h('div', { class: 'row between' }, h('b', null, li.max ? 'Alles freigeschaltet!' : 'Nächstes Level'), h('span', { class: 'muted' }, li.max ? '' : 'noch ' + li.toNext + ' Energie')),
         h('div', { class: 'progress' }, h('i', { style: { width: li.pct + '%' } })),
@@ -584,7 +593,7 @@
         return c;
       })));
     let body;
-    if (tab === 'missionen') body = teacherMissions();
+    if (tab === 'missionen') body = h('div', { class: 'stack' }, teacherMissions(), teacherSolo());
     else if (tab === 'inhalte') body = teacherContent();
     else if (tab === 'einstellungen') body = teacherSettings();
     else if (tab === 'fortschritt') body = teacherProgress();
@@ -608,6 +617,16 @@
         m.themes ? h('div', { class: 'row' }, m.themes.map((x) => h('span', { class: 'pill' }, x))) : null,
         m.eldib && m.eldib.length ? h('div', { class: 'small muted' }, h('b', null, 'ELDiB-Bezug (Vorschlag): '), m.eldib.map((e) => e.code + ' ' + e.text).join(' · ')) : null);
     }));
+  }
+
+  function teacherSolo() {
+    return h('div', { class: 'stack' },
+      h('h3', null, 'Solo-Spiele (alleine auf dem iPad)'),
+      h('div', { class: 'list' }, CREW.soloGames.map((g) => h('div', { class: 'li', style: { flexDirection: 'column', alignItems: 'stretch' } },
+        h('div', { class: 'row between' }, h('b', null, g.title), ui.btn('Ausprobieren', () => startSolo(g), { small: true, icon: 'play' })),
+        g.desc ? h('p', { class: 'small muted' }, g.desc) : null,
+        g.themes ? h('div', { class: 'row' }, g.themes.map((x) => h('span', { class: 'pill' }, x))) : null,
+        g.eldib && g.eldib.length ? h('div', { class: 'small muted' }, h('b', null, 'ELDiB-Bezug (Vorschlag): '), g.eldib.map((e) => e.code + ' ' + e.text).join(' · ')) : null))));
   }
 
   function teacherContent() {

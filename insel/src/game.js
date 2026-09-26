@@ -14,7 +14,8 @@ import { createWater } from './world/water.js';
 import { createSky } from './world/sky.js';
 import { createVegetation } from './world/vegetation.js';
 import { createColliders } from './world/colliders.js';
-import { createLandmarks } from './world/landmarks.js';
+import { createLandmarks, lambertVC } from './world/landmarks.js';
+import { part, merge, frond, tint } from './world/geom.js';
 import { createLife } from './world/life.js';
 import { createPlayer } from './actors/player.js';
 import { createCameraRig } from './actors/camera.js';
@@ -64,7 +65,7 @@ export async function createGame({ canvas, root, hudRoot, onProgress = () => {} 
   const life = createLife({ island, veil, scene, quality: q0 });
   particles.setBudget(q0.particles);
   const player = createPlayer({ scene, island, colliders, input, audio, particles, events, look: settings.look });
-  const cameraRig = createCameraRig({ camera, island, input, player, events });
+  const cameraRig = createCameraRig({ camera, island, input, player, events, colliders });
 
   const game = {
     THREE,
@@ -82,7 +83,20 @@ export async function createGame({ canvas, root, hudRoot, onProgress = () => {} 
     },
     zone: null,
     started: false,
-    createHumanoid: (cfg, opts = {}) => createHumanoid(cfg, { veil: opts.veil === false ? null : veil, ...opts }),
+    createHumanoid: (cfg, opts = {}) => createHumanoid(cfg, { ...opts, veil: opts.veil === false ? null : veil }),
+    // Figur erzeugen, auf den Boden stellen, zur Szene hinzufügen und jedes Frame animieren
+    spawnHumanoid(cfg, { x = 0, z = 0, yaw = 0, anim = 'idle', veil: useVeil = true, name } = {}) {
+      const h = createHumanoid(cfg, { veil: useVeil ? veil : null, name });
+      h.group.position.set(x, island.getHeight(x, z), z);
+      h.group.rotation.y = yaw;
+      h.setAnim(anim);
+      scene.add(h.group);
+      const off = game.addUpdate((dt) => h.update(dt));
+      return { humanoid: h, remove() { off(); scene.remove(h.group); h.dispose(); } };
+    },
+    // Helfer für Requisiten: Low-Poly-Teile + Material mit Grauschleier/Nebel
+    geom: { part, merge, frond, tint },
+    materials: { lambertVC: (key, opts) => lambertVC(veil, key, opts) },
     addUpdate(fn, opts) { return game.loop.add(fn, opts); },
     setPaused(p) { game.loop.setPaused(p); if (p) input.releaseAll(); events.emit('pause', !!p); },
     get paused() { return game.loop.paused; },
@@ -100,6 +114,11 @@ export async function createGame({ canvas, root, hudRoot, onProgress = () => {} 
   const interactions = createInteractions({ events, ui, input });
   game.ui = ui;
   game.interactions = interactions;
+  // Beispiel-Interaktion: Boot am Steg (zeigt den Aktion-Knopf)
+  interactions.add({
+    id: 'boot', x: landmarks.boat.position.x, z: landmarks.boat.position.z, radius: 4.2, label: 'Ansehen',
+    onAction: () => { audio.play('chime'); ui.toast('Das Boot der Kapitänin. Damit bist du angekommen!'); },
+  });
 
   // ---- Größe ----
   rr.onResize((size) => {
@@ -142,12 +161,38 @@ export async function createGame({ canvas, root, hudRoot, onProgress = () => {} 
   loop.add((dt, t) => {
     camera.updateMatrixWorld();
     sky.update(dt, t, camera, player.position, veil);
+    water.syncSky(sky);
     water.update(dt, t, particles, camera.position);
     vegetation.update(camera);
     landmarks.update(dt, t, sky.night, particles);
     life.update(dt, t, player.position, sky.night);
     particles.update(dt);
   }, { order: -10, always: true });
+  let moteT = 0;
+  const rainbow = [0xff5d73, 0xffb347, 0xffe14d, 0x7ce36a, 0x4fd6ff, 0xb58cff];
+  loop.add((dt) => {
+    // Funken entlang der Farbwelle
+    const w = veil.wave;
+    if (w && dt > 0) {
+      const n = Math.round(10 * q0.particles);
+      for (let i = 0; i < n; i++) {
+        const a = Math.random() * Math.PI * 2;
+        const x = w.x + Math.cos(a) * w.radius, z = w.z + Math.sin(a) * w.radius;
+        if (Math.hypot(x - camera.position.x, z - camera.position.z) > 110) continue;
+        const y = Math.max(island.getHeight(x, z), island.waterLevel(x, z)) + 0.3;
+        particles.emit({ x, y, z, count: 1, spread: 1.5, speed: 0.6, up: 3 + Math.random() * 3, color: rainbow[i % rainbow.length], size: 0.7, life: 1.6, gravity: -0.6, drag: 0.8, additive: true, alpha: 1 });
+      }
+    }
+    // Graue Schwebeteilchen im Schleier
+    moteT += dt;
+    if (moteT > 0.12 && game.started) {
+      moteT = 0;
+      const p = player.position;
+      if (veil.amountAt(p.x, p.z) > 0.45) {
+        particles.emit({ x: p.x + (Math.random() - 0.5) * 16, y: p.y + 0.5 + Math.random() * 3, z: p.z + (Math.random() - 0.5) * 16, count: 1, speed: 0.2, up: 0.15, color: 0xb9b6c8, size: 0.16, life: 3.5, gravity: 0.05, drag: 0.2, grow: 0.2, alpha: 0.7 });
+      }
+    }
+  }, { order: 5 });
   loop.add((dt) => {
     zoneT += dt;
     if (zoneT > 0.25 && game.started && cameraRig.mode === 'follow') {

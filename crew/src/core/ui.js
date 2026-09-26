@@ -67,7 +67,17 @@
         }));
       });
       container.appendChild(row);
+      revealRow(row);
     });
+  }
+  /* Neue Knopfzeile ins Bild holen, falls sie unter dem Bildrand liegt (Handy, iPad hoch) */
+  function revealRow(el) {
+    setTimeout(() => {
+      try {
+        const r = el.getBoundingClientRect();
+        if (r.bottom > window.innerHeight - 8) el.scrollIntoView({ block: 'end', behavior: 'smooth' });
+      } catch (e) { /* egal */ }
+    }, 380);
   }
   const next = (container, label, opts) => choice(container, [{ label: label || 'Weiter', value: true, iconRight: 'right', variant: (opts && opts.variant) || '' }], opts);
 
@@ -132,6 +142,12 @@
     return { el, get: () => values.slice() };
   }
 
+  /* Globale Pause: Timer (und Module, die SK/CREW.isPaused() abfragen) warten */
+  const TIMERS = new Set();
+  let PAUSED = false;
+  function setPaused(v) { PAUSED = !!v; }
+  function isPaused() { return PAUSED; }
+
   /* Timer-Ring */
   function timer(seconds, o) {
     const opts = o || {};
@@ -141,7 +157,7 @@
     ring.innerHTML = `<circle cx="60" cy="60" r="${R}" fill="none" stroke="currentColor" stroke-opacity=".18" stroke-width="10"/><circle class="arc" cx="60" cy="60" r="${R}" fill="none" stroke="var(--yellow)" stroke-width="10" stroke-linecap="round" stroke-dasharray="${C}" stroke-dashoffset="0"/>`;
     const num = h('div', { class: 'num' }, String(seconds));
     const el = h('div', { class: 'timer', role: 'timer' }, ring, num);
-    let left = seconds, iv = null;
+    let left = seconds, iv = null, paused = false;
     const arc = ring.querySelector('.arc');
     const tick = () => {
       left -= 1;
@@ -150,10 +166,18 @@
       if (left <= 5 && left > 0) CREW.sound.play('tick');
       if (left <= 0) { stop(); if (opts.onDone) opts.onDone(); }
     };
-    const start = () => { if (!iv) iv = setInterval(() => { if (!document.body.contains(el)) return stop(); tick(); }, 1000); };
-    const stop = () => { clearInterval(iv); iv = null; };
+    const start = () => {
+      if (!iv) iv = setInterval(() => {
+        if (!document.body.contains(el)) { TIMERS.delete(api); return stop(); }
+        if (paused || PAUSED) return;
+        tick();
+      }, 1000);
+      TIMERS.add(api);
+    };
+    const stop = () => { clearInterval(iv); iv = null; TIMERS.delete(api); };
+    const api = { el, start, stop, pause: () => { paused = true; }, resume: () => { paused = false; }, left: () => left };
     if (opts.autostart !== false) start();
-    return { el, start, stop };
+    return api;
   }
 
   /* 3 – 2 – 1 – Zeigt her! */
@@ -252,5 +276,6 @@
     return h('div', { class: 'paddle-hint' }, CREW.icon('phone', 22), h('span', null, 'Antwort-Karte: ', h('b', null, PADDLES[type] || type), extra ? ' · ' + extra : ''));
   }
 
-  CREW.ui = { screen, btn, iconBtn, speakBtn, say, choice, next, stepper, tally, valuePad, timer, threeTwoOne, modal, confirm, toast, confetti, countUp, paddleHint, PADDLES, stage, overlays };
+  CREW.isPaused = isPaused;
+  CREW.ui = { setPaused, isPaused, revealRow, screen, btn, iconBtn, speakBtn, say, choice, next, stepper, tally, valuePad, timer, threeTwoOne, modal, confirm, toast, confetti, countUp, paddleHint, PADDLES, stage, overlays };
 })();

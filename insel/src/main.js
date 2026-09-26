@@ -36,6 +36,7 @@ async function boot() {
     if (e) e.preventDefault();
     game.audio.unlock();
     game.audio.play('whoosh', { duration: 2.2 });
+    if (document.activeElement && document.activeElement.blur) document.activeElement.blur();
     bootEl.classList.add('is-leaving');
     setTimeout(() => bootEl.remove(), 1300);
     game.start();

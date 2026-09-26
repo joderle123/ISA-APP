@@ -94,7 +94,7 @@ void main() {
   // Schaum an der Küste
   float n1 = vnoise(vWorld.xz * 0.35 + uTime * 0.15);
   float n2 = vnoise(vWorld.xz * 1.1 - uTime * 0.2);
-  float shore = 1.0 - smoothstep(0.05, 0.32 + n2 * 0.25, depth);
+  float shore = 1.0 - smoothstep(0.02, 0.12 + n2 * 0.14, depth);
   float ph = depth * 1.6 - uTime * 0.3 + n1 * 0.5;
   float fl = fract(ph);
   float line = smoothstep(0.0, 0.04, fl) * (1.0 - smoothstep(0.06, 0.14, fl));
@@ -107,7 +107,7 @@ void main() {
   vec3 foamCol = uFoam * (uAmbient + uSunColor * 0.55);
   col = mix(col, foamCol, foam);
 
-  col = lumoApplyVeil(col, vVeilPos);
+  col = mix(col, lumoApplyVeil(col, vVeilPos), 0.65);
   float alpha = mix(0.5, 0.97, smoothstep(0.1, 3.5, depth));
   alpha = max(alpha, foam);
   gl_FragColor = vec4(col, alpha);
@@ -362,6 +362,15 @@ export function createWater({ island, veil, quality, scene }) {
       const g = oceanGeometry(q.waterSegments);
       ocean.geometry.dispose();
       ocean.geometry = g;
+    },
+    // Licht vom Himmel übernehmen (Sonne/Mond, Umgebung, Himmelsfarben)
+    syncSky(sky) {
+      uniforms.uSunDir.value.copy(sky.lightDir);
+      uniforms.uSunColor.value.copy(sky.sun.color).multiplyScalar(Math.min(1.3, sky.sun.intensity / 3));
+      uniforms.uAmbient.value.copy(sky.colors.ambient).multiplyScalar(1.6 - sky.night * 0.45);
+      uniforms.uSkyColor.value.copy(sky.colors.top);
+      uniforms.uHorizonColor.value.copy(sky.colors.horizon);
+      uniforms.uNight.value = sky.night;
     },
     update(dt, time, particles, cameraPos) {
       uniforms.uTime.value = time;

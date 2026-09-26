@@ -1,0 +1,448 @@
+/* Crew-HQ – Szene als Inline-SVG. Alle Klassen mit Präfix hq-.
+   Farben laufen über Variablen, damit das HQ in Arena, Pixel und Neon passt. */
+
+.hq-scene {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  background: var(--bg);
+  font-family: var(--font-display);
+  /* Raum (Arena) */
+  --hq-ceil: #150f3e;
+  --hq-wall: #35297f;
+  --hq-side: #261c66;
+  --hq-side-r: #221960;
+  --hq-edge: #1a1350;
+  --hq-floor: #4e2f60;
+  --hq-plank: #3a2150;
+  --hq-trim: #1c1448;
+  --hq-pipe: #54479f;
+  --hq-pipe2: #2b2270;
+  --hq-brick: #7a3d68;
+  --hq-brick2: #6a345d;
+  --hq-mortar: #43307a;
+  --hq-plaster: #473a9a;
+  --hq-stroke: #0e0a26;
+  --hq-sw: 4px;
+  --hq-dark: #07041c;
+  --hq-shade: .26;
+  --hq-light: .16;
+}
+
+/* ---------- Pixel: dunkles Schiefer-Blau, harte Kanten ---------- */
+.app[data-look="pixel"] .hq-scene {
+  shape-rendering: crispEdges;
+  --hq-ceil: #0b0f18;
+  --hq-wall: #26344c;
+  --hq-side: #1a2436;
+  --hq-side-r: #172031;
+  --hq-edge: #0b0f18;
+  --hq-floor: #4a3530;
+  --hq-plank: #2f211d;
+  --hq-trim: #0e131d;
+  --hq-pipe: #3f5470;
+  --hq-pipe2: #1b2535;
+  --hq-brick: #86493a;
+  --hq-brick2: #733d31;
+  --hq-mortar: #3a3a48;
+  --hq-plaster: #34455f;
+  --hq-stroke: #05070d;
+  --hq-dark: #03050a;
+}
+.app[data-look="pixel"] .hq-scene .hq-o,
+.app[data-look="pixel"] .hq-scene .hq-o1 { stroke-linejoin: miter; stroke-linecap: square; }
+
+/* ---------- Neon: fast schwarz, Konturen leuchten ---------- */
+.app[data-look="neon"] .hq-scene {
+  --hq-ceil: #05050f;
+  --hq-wall: #0f0f2c;
+  --hq-side: #0a0a22;
+  --hq-side-r: #09091f;
+  --hq-edge: color-mix(in srgb, var(--accent) 55%, transparent);
+  --hq-floor: #0a0a20;
+  --hq-plank: var(--teamB);
+  --hq-trim: #05050f;
+  --hq-pipe: #16163a;
+  --hq-pipe2: #0a0a20;
+  --hq-brick: #1a1440;
+  --hq-brick2: #161238;
+  --hq-mortar: color-mix(in srgb, var(--accent) 35%, #0a0a22);
+  --hq-plaster: color-mix(in srgb, var(--accent) 50%, transparent);
+  --hq-stroke: var(--accent);
+  --hq-sw: 3px;
+  --hq-dark: #000004;
+  --hq-shade: .35;
+  --hq-light: .08;
+}
+
+/* ---------- Raum ---------- */
+.hq-ceil { fill: var(--hq-ceil); }
+.hq-wall { fill: var(--hq-wall); }
+.hq-side { fill: var(--hq-side); }
+.hq-side-r { fill: var(--hq-side-r); }
+.hq-edge { fill: none; stroke: var(--hq-edge); stroke-width: 4px; }
+.hq-floor { fill: var(--hq-floor); }
+.hq-plank { fill: none; stroke: var(--hq-plank); stroke-width: 3px; }
+.hq-grid { display: none; fill: none; }
+.hq-trim { fill: var(--hq-trim); }
+.hq-pipe { fill: var(--hq-pipe); }
+.hq-pipe2 { fill: var(--hq-pipe2); }
+.hq-brick { fill: var(--hq-brick); }
+.hq-brick2 { fill: var(--hq-brick2); }
+.hq-mortar { fill: var(--hq-mortar); }
+.hq-plaster { fill: none; stroke: var(--hq-plaster); stroke-width: 10px; stroke-linejoin: round; }
+.hq-thin { fill: var(--hq-mortar); stroke-width: 5px; }
+.hq-crack { fill: none; stroke: #000; stroke-opacity: .35; stroke-width: 3px; stroke-linejoin: round; }
+.hq-stain { fill: #000; opacity: .12; }
+.hq-plug { fill: #d9d4f2; stroke: var(--hq-stroke); stroke-width: 3px; opacity: .8; }
+.hq-web { fill: none; stroke: #fff; stroke-opacity: .32; stroke-width: 2px; }
+
+.app[data-look="neon"] .hq-plank { stroke-opacity: .5; stroke-width: 2px; }
+.app[data-look="neon"] .hq-grid { display: inline; stroke: var(--teamB); stroke-opacity: .4; stroke-width: 2px; }
+.app[data-look="neon"] .hq-trim { fill: #05050f; stroke: var(--teamB); stroke-width: 2px; stroke-opacity: .7; }
+.app[data-look="neon"] .hq-plug { fill: none; stroke: var(--accent); }
+
+/* ---------- Grundbausteine für alle Teile ---------- */
+.hq-o { stroke: var(--hq-stroke); stroke-width: var(--hq-sw); stroke-linejoin: round; stroke-linecap: round; }
+.hq-o1 { stroke: var(--hq-stroke); stroke-width: 3px; stroke-linejoin: round; stroke-linecap: round; }
+.hq-o2 { stroke: #0b0826; stroke-width: 2px; }
+.hq-f { fill: var(--c); }
+.hq-f2 { fill: var(--c2); }
+.hq-f3 { fill: var(--c3); }
+.hq-f4 { fill: var(--c4); }
+.hq-dk { fill: #000; opacity: var(--hq-shade); }
+.hq-lt { fill: #fff; opacity: var(--hq-light); }
+.hq-shadow { fill: #000; opacity: .34; }
+.hq-nofill { fill: none; }
+
+/* Neon: dunkle Flächen, farbige Leuchtkonturen */
+.app[data-look="neon"] .hq-scene .hq-f { fill: color-mix(in srgb, var(--c) 16%, #07071c); }
+.app[data-look="neon"] .hq-scene .hq-f2 { fill: color-mix(in srgb, var(--c2) 20%, #07071c); }
+.app[data-look="neon"] .hq-scene .hq-f3 { fill: color-mix(in srgb, var(--c3) 20%, #07071c); }
+.app[data-look="neon"] .hq-scene .hq-f4 { fill: color-mix(in srgb, var(--c4) 20%, #07071c); }
+.app[data-look="neon"] .hq-scene .hq-it .hq-o,
+.app[data-look="neon"] .hq-scene .hq-it .hq-o1 { stroke: var(--c, var(--accent)); }
+/* Konturen in der eigenen Farbe der Fläche */
+.app[data-look="neon"] .hq-scene .hq-it .hq-f2.hq-o, .app[data-look="neon"] .hq-scene .hq-it .hq-f2.hq-o1 { stroke: var(--c2); }
+.app[data-look="neon"] .hq-scene .hq-it .hq-f3.hq-o, .app[data-look="neon"] .hq-scene .hq-it .hq-f3.hq-o1 { stroke: var(--c3); }
+.app[data-look="neon"] .hq-scene .hq-it .hq-f4.hq-o, .app[data-look="neon"] .hq-scene .hq-it .hq-f4.hq-o1 { stroke: var(--c4); }
+/* Neon-Teppich: dunkle Ringe mit Leuchtlinien */
+.app[data-look="neon"] .hq-i3 ellipse.hq-f, .app[data-look="neon"] .hq-i3 ellipse.hq-f2, .app[data-look="neon"] .hq-i3 ellipse.hq-f3 { fill: #08081e; stroke-width: 2.5px; }
+.app[data-look="neon"] .hq-i3 ellipse.hq-f { stroke: var(--teamB); }
+.app[data-look="neon"] .hq-i3 ellipse.hq-f2 { stroke: var(--yellow); }
+.app[data-look="neon"] .hq-i3 ellipse.hq-f3 { stroke: var(--accent); stroke-opacity: .6; }
+
+/* ---------- Farben der einzelnen Teile ---------- */
+.hq-door { --c: #5a52a6; --c2: #463e8e; }
+.app[data-look="pixel"] .hq-door { --c: #52627a; --c2: #3e4c62; }
+.app[data-look="neon"] .hq-door { --c: var(--teamA); --c2: var(--teamA); }
+.app[data-look="neon"] .hq-door .hq-o { stroke: color-mix(in srgb, var(--teamA) 70%, transparent); }
+.hq-slat { fill: none; stroke: #000; stroke-opacity: .28; stroke-width: 4px; }
+.app[data-look="neon"] .hq-slat { stroke: var(--teamA); stroke-opacity: .25; stroke-width: 2px; }
+.hq-gap { fill: #ffd98a; opacity: .5; }
+.hq-rust { fill: #a8603f; opacity: .35; }
+.hq-stencil { font-size: 92px; fill: #000; opacity: .22; letter-spacing: 0; }
+.hq-tag path:first-child { fill: none; stroke: var(--teamB); stroke-width: 7px; stroke-linecap: round; stroke-linejoin: round; opacity: .85; }
+.hq-tagstar { fill: var(--yellow); }
+.hq-tagdrip { fill: none; stroke: var(--teamB); stroke-width: 5px; stroke-linecap: round; opacity: .85; }
+
+.hq-i2 { --c: var(--accent); --c2: var(--yellow); --c3: var(--teamA); --c4: var(--teamB); }
+.app[data-look="pixel"] .hq-i2 { --c2: var(--good); }
+.hq-i3 { --c: var(--teamB); --c2: var(--yellow); --c3: color-mix(in srgb, var(--teamB) 55%, #2a0b3a); }
+.hq-i5 { --c: #211a4a; --c2: var(--good); }
+.app[data-look="pixel"] .hq-i5 { --c: #1c2433; }
+.app[data-look="neon"] .hq-i5 { --c: var(--good); }
+.hq-i6 { --c: #3fcf7e; --c2: #25a061; --c3: #e07a4f; }
+.app[data-look="pixel"] .hq-i6 { --c: #5ad17a; --c2: #3a9c55; --c3: #c86a43; }
+.app[data-look="neon"] .hq-i6 { --c: var(--good); --c2: var(--good); --c3: var(--teamB); }
+.hq-i7 { --c: var(--teamA); --c2: #2a2166; --c3: var(--yellow); }
+.app[data-look="pixel"] .hq-i7 { --c2: #1e2a3a; }
+.app[data-look="neon"] .hq-i7 { --c: var(--teamA); --c2: var(--teamA); --c3: var(--yellow); }
+.hq-i8 { --c: var(--good); --c2: #fff; }
+.hq-i9 { --c: #3a2b72; --c2: var(--yellow); }
+.app[data-look="pixel"] .hq-i9 { --c: #3b2f2a; }
+.app[data-look="neon"] .hq-i9 { --c: var(--yellow); }
+.hq-i11 { --c: var(--yellow); --c2: var(--teamB); }
+
+/* Kleinteile */
+.hq-leg { fill: #1b1438; }
+.app[data-look="neon"] .hq-leg { fill: #07071c; stroke: var(--c, var(--accent)); stroke-width: 2px; }
+.hq-seam { fill: none; stroke: #000; stroke-opacity: .2; stroke-width: 4px; stroke-dasharray: 10 8; }
+.hq-fold { fill: none; stroke: #000; stroke-opacity: .2; stroke-width: 4px; stroke-linecap: round; }
+.hq-stripe { fill: none; stroke: #fff; stroke-opacity: .55; stroke-width: 5px; }
+.app[data-look="neon"] .hq-stripe { stroke: var(--teamB); stroke-opacity: .8; stroke-width: 2px; }
+.hq-cy { fill: var(--yellow); --c: var(--yellow); }
+.hq-cp { fill: var(--teamB); --c: var(--teamB); }
+.hq-cg { fill: var(--good); --c: var(--good); }
+.hq-cb { fill: var(--teamA); --c: var(--teamA); }
+.hq-ca { fill: var(--accent); --c: var(--accent); }
+.hq-cap { fill: #e9e6ff; }
+.hq-canl { fill: #fff; opacity: .5; }
+
+/* Gerümpel */
+.hq-card { fill: #c08b55; }
+.hq-card2 { fill: #aa7646; }
+.hq-tape { fill: #e8c995; opacity: .8; }
+.hq-scrib { fill: none; stroke: #2a1a10; stroke-opacity: .5; stroke-width: 4px; stroke-linecap: round; }
+.hq-ladder { fill: none; stroke: #a8a2cc; stroke-width: 10px; stroke-linecap: round; }
+.hq-ladder2 { stroke: #8a84b4; stroke-width: 7px; stroke-linecap: round; }
+.hq-bucket { fill: #d7d3ee; }
+.hq-bucket2 { fill: #a9a2d6; }
+.hq-paintdrip { fill: none; stroke: var(--teamA); stroke-width: 6px; stroke-linecap: round; }
+.hq-broom { fill: none; stroke: #b07a48; stroke-width: 7px; stroke-linecap: round; }
+.hq-broom2 { fill: #d9b25f; }
+.hq-tire { fill: #1c1830; }
+.hq-hub { fill: #8f8ab4; }
+.hq-tread { fill: none; stroke: #45406a; stroke-width: 4px; stroke-linecap: round; }
+.app[data-look="neon"] .hq-junk .hq-o { stroke: color-mix(in srgb, var(--muted) 60%, transparent); }
+.app[data-look="neon"] .hq-card, .app[data-look="neon"] .hq-card2 { fill: #1a1430; }
+.app[data-look="neon"] .hq-tape { fill: var(--accent); opacity: .5; }
+
+/* ---------- Licht ---------- */
+.hq-sy { stop-color: var(--yellow); }
+.hq-sa { stop-color: var(--accent); }
+.hq-sd { stop-color: var(--hq-dark); }
+.hq-wirel { fill: none; stroke: #120d2e; stroke-width: 3px; }
+.app[data-look="neon"] .hq-wirel { stroke: #2a2a55; }
+.hq-bulb { fill: #fff3c2; stroke: var(--yellow); stroke-width: 2px; }
+.hq-cord { stroke: #0c0822; stroke-width: 3px; }
+.app[data-look="neon"] .hq-cord { stroke: #34346a; }
+.hq-socket { fill: #2a2350; }
+.hq-glass { fill: #fff5cc; }
+.hq-filament { fill: none; stroke: #ff9a3c; stroke-width: 2px; }
+.hq-cone-light { fill: var(--yellow); }
+.hq-mote { fill: #fff; opacity: .5; }
+
+/* Fenster & Skyline */
+.hq-frame { fill: none; }
+.hq-frameo { stroke: #120e2c; stroke-width: 12px; }
+.hq-mull { fill: none; stroke: #120e2c; stroke-width: 7px; }
+.app[data-look="neon"] .hq-frameo, .app[data-look="neon"] .hq-mull { stroke: #05050f; }
+.app[data-look="neon"] .hq-frameo { stroke: var(--accent); stroke-width: 5px; }
+.hq-glare { fill: #fff; opacity: .07; }
+.hq-star { fill: #fff; opacity: .85; }
+.hq-moon { fill: #fff3d2; }
+.hq-crater { fill: #e4d6b4; }
+.hq-bld { fill: #1c2256; }
+.hq-bld2 { fill: #232a66; }
+.hq-gold { fill: #b98b43; }
+.hq-gold2 { fill: #a77a36; }
+.hq-goldline { fill: none; stroke: #6e4c1c; stroke-width: 2px; opacity: .8; }
+.hq-antenna { stroke: #5e6090; stroke-width: 3px; }
+.hq-blink { fill: #ff4d5e; }
+.hq-winlit rect { fill: #ffd98a; opacity: .85; }
+.hq-phil { fill: #dcdff5; }
+.hq-philcol { fill: none; stroke: #8a8fb8; stroke-width: 2px; }
+.hq-far { fill: #2a1d5c; }
+.hq-rock { fill: #120e33; }
+.hq-house { fill: #120e33; }
+.hq-cath { fill: #e0b979; }
+.hq-cath2 { fill: #d3a864; }
+.hq-cathwin { fill: #7a4a2a; }
+.hq-rail2 { fill: none; stroke: #8a7fd0; stroke-width: 3px; }
+.hq-lit { fill: #ffd27a; }
+.hq-red { fill: #e2333f; }
+.hq-rail { fill: none; stroke: #ff8a8a; stroke-width: 2px; opacity: .8; }
+.hq-carf { fill: #fff6c8; }
+.hq-carb { fill: #ff5a5a; }
+.hq-stone { fill: #2b2462; }
+.hq-lamp { fill: #ffd98a; }
+.hq-trees { fill: #0d1030; }
+.hq-moonlight { fill: #9fd0ff; opacity: .1; }
+
+/* Graffiti-Wand */
+.hq-g-bg1 { fill: var(--teamA); opacity: .9; }
+.hq-g-bg2 { fill: var(--teamB); opacity: .9; }
+.hq-g-drip { fill: none; stroke: var(--teamA); stroke-width: 9px; stroke-linecap: round; opacity: .9; }
+.hq-g-line { fill: none; stroke: var(--good); stroke-width: 8px; stroke-linecap: round; }
+.hq-i4 text { font-family: var(--font-display); letter-spacing: 0; text-transform: none; }
+.hq-g1 { fill: #fff; stroke: #fff; stroke-width: .34em; stroke-linejoin: round; }
+.hq-g0 { fill: #0b0826; stroke: #0b0826; stroke-width: .16em; stroke-linejoin: round; opacity: .55; }
+.hq-g2 { fill: var(--hq-stroke); stroke: var(--hq-stroke); stroke-width: .15em; stroke-linejoin: round; }
+.app[data-look="pixel"] .hq-g1 { stroke-width: .17em; stroke-linejoin: miter; }
+.app[data-look="pixel"] .hq-g0 { stroke-width: .05em; }
+.app[data-look="pixel"] .hq-g2 { stroke-width: .055em; stroke-linejoin: miter; }
+.hq-g-crown { fill: var(--yellow); stroke: var(--hq-stroke); stroke-width: 4px; stroke-linejoin: round; }
+.hq-g-star { fill: #fff; }
+.hq-g-tag { font-size: 30px; fill: var(--good); }
+.app[data-look="neon"] .hq-g-bg1, .app[data-look="neon"] .hq-g-bg2 { opacity: .22; }
+.app[data-look="neon"] .hq-g1 { fill: none; stroke: var(--teamB); stroke-opacity: .3; stroke-width: .22em; }
+.app[data-look="neon"] .hq-g0 { display: none; }
+.app[data-look="neon"] .hq-g2 { fill: #0a0a1a; stroke: var(--teamB); stroke-width: .08em; }
+.app[data-look="neon"] .hq-g3 { fill: #0a0a1a; stroke: var(--yellow); stroke-width: 3px; }
+.app[data-look="neon"] .hq-g-crown { stroke: var(--yellow); fill: #0a0a1a; }
+
+/* Neonschild */
+.hq-wire { stroke: #0c0822; stroke-width: 2px; opacity: .6; }
+.hq-plate { fill: #fff; fill-opacity: .06; stroke: #fff; stroke-opacity: .2; stroke-width: 3px; }
+.hq-neon-y, .hq-neon-p { fill: none; stroke-width: 9px; stroke-linejoin: round; stroke-linecap: round; }
+.hq-neon-y { stroke: var(--yellow); }
+.hq-neon-p { stroke: var(--teamB); }
+.hq-neon-glow { stroke-width: 18px; }
+.hq-neon-core { fill: none; stroke: #fff; stroke-width: 3px; stroke-opacity: .85; stroke-linejoin: round; }
+.hq-i12 text { font-family: var(--font-display); letter-spacing: 0; }
+
+/* Musikbox */
+.hq-led { opacity: .9; }
+.hq-ring { fill: none; stroke: var(--c2); stroke-width: 6px; }
+.hq-cone { fill: #0e0a24; }
+.hq-cone2 { fill: #2c2457; }
+.hq-cap2 { fill: #5a52a0; }
+.hq-note { fill: var(--yellow); stroke: var(--hq-stroke); stroke-width: 3px; stroke-linejoin: round; }
+.hq-nt2 .hq-note { fill: var(--teamB); }
+.hq-nt3 .hq-note { fill: var(--good); }
+.app[data-look="neon"] .hq-note { fill: #07071c; stroke: var(--yellow); }
+.app[data-look="neon"] .hq-nt2 .hq-note { stroke: var(--teamB); }
+.app[data-look="neon"] .hq-nt3 .hq-note { stroke: var(--good); }
+
+/* Pflanzen */
+.hq-rope { stroke: #d8c9a6; stroke-width: 3px; }
+.hq-potband { fill: none; stroke: #fff; stroke-opacity: .35; stroke-width: 4px; }
+.hq-vine { fill: none; stroke: #2a8c55; stroke-width: 4px; stroke-linecap: round; }
+.hq-stem { fill: none; stroke: #1f7a48; stroke-width: 5px; stroke-linecap: round; }
+.app[data-look="neon"] .hq-vine, .app[data-look="neon"] .hq-stem { stroke: var(--good); stroke-opacity: .7; }
+
+/* Arcade */
+.hq-marq { font-size: 34px; fill: var(--yellow-ink, #2a1c00); letter-spacing: 0; }
+.app[data-look="neon"] .hq-marq { fill: var(--yellow); }
+.hq-bezel { fill: #0d0a24; }
+.hq-screen { fill: #0c1a3c; }
+.hq-inv { fill: var(--good); }
+.hq-ship { fill: var(--yellow); }
+.hq-score { font-size: 13px; fill: var(--yellow); letter-spacing: 0; }
+.hq-scanl { fill: none; stroke: var(--good); stroke-opacity: .35; stroke-width: 2px; }
+.hq-stick { stroke: #0d0a24; stroke-width: 6px; stroke-linecap: round; }
+.hq-coin { fill: var(--accent); opacity: .9; }
+
+/* Kühlschrank */
+.hq-fin { stroke-width: 3px; }
+.app[data-look="neon"] .hq-fin { opacity: .85; }
+.hq-shelf { fill: #9fb7d6; }
+.hq-bot1 { fill: #ff9e3d; opacity: .95; }
+.hq-bot2 { fill: #7fd3ff; opacity: .95; }
+.hq-chipline { fill: none; stroke: #fff; stroke-opacity: .7; stroke-width: 4px; }
+.hq-apple { fill: #5ccf5a; }
+.hq-apple2 { fill: #ff5a5a; }
+.hq-yog { fill: #fff; }
+.hq-yog2 { fill: #ffd6ec; }
+.hq-handle { fill: #e9e6ff; }
+.hq-grill { fill: none; stroke: #3a3470; stroke-width: 3px; }
+.hq-pop { fill: #fff; }
+.hq-popstripe { fill: none; stroke: #ff4d5e; stroke-width: 6px; }
+.hq-corn { fill: #fff2c6; }
+
+/* Kicker */
+.hq-field { fill: #2fa35e; }
+.app[data-look="neon"] .hq-field { fill: #06201a; stroke: var(--good); stroke-width: 2px; }
+.hq-fline { stroke: #fff; stroke-opacity: .7; stroke-width: 2.5px; }
+.hq-ball { fill: #fff; stroke: #0b0826; stroke-width: 1.5px; }
+.hq-rod { stroke: #cfd2ea; stroke-width: 4px; stroke-linecap: round; }
+.hq-grip { stroke: #0d0a24; stroke-width: 9px; stroke-linecap: round; }
+.app[data-look="neon"] .hq-grip { stroke: var(--yellow); stroke-width: 5px; }
+.hq-ta { fill: var(--teamA); --c: var(--teamA); }
+.hq-tb { fill: var(--teamB); --c: var(--teamB); }
+.hq-skin { fill: #f3c9a2; }
+.app[data-look="neon"] .hq-ta, .app[data-look="neon"] .hq-tb { fill: #07071c; }
+.app[data-look="neon"] .hq-skin { fill: #07071c; stroke: var(--text); }
+
+/* Discokugel */
+.hq-beam { opacity: .07; }
+.hq-bp { fill: var(--teamB); }
+.hq-bb { fill: var(--teamA); }
+.hq-by { fill: var(--yellow); }
+.hq-fp { fill: var(--teamB); opacity: .8; }
+.hq-fb { fill: var(--teamA); opacity: .8; }
+.hq-fy { fill: var(--yellow); opacity: .8; }
+.hq-sparkle { fill: #fff; }
+.hq-dy { fill: var(--yellow); }
+.hq-dp { fill: var(--teamB); }
+.hq-db { fill: var(--teamA); }
+.hq-dw { fill: #fff; }
+.hq-dg { fill: var(--good); }
+.hq-dots ellipse { opacity: .55; }
+
+/* Sitzsäcke */
+.hq-dent { fill: none; stroke: #000; stroke-opacity: .22; stroke-width: 7px; stroke-linecap: round; }
+.hq-shine { fill: none; stroke: #fff; stroke-opacity: .45; stroke-width: 6px; stroke-linecap: round; }
+.hq-pad { fill: #1d1742; }
+.app[data-look="neon"] .hq-dent { stroke: var(--c); stroke-opacity: .4; }
+
+/* Glanz beim Freischalten */
+.hq-sparkle2 { fill: var(--yellow); stroke: #fff; stroke-width: 2px; }
+.hq-badgebg { fill: var(--yellow); stroke: var(--hq-stroke); stroke-width: 5px; }
+.hq-badgetx { font-size: 44px; fill: var(--yellow-ink, #2a1c00); letter-spacing: .04em; }
+.app[data-look="neon"] .hq-badgebg { fill: #07071c; stroke: var(--yellow); }
+.app[data-look="neon"] .hq-badgetx { fill: var(--yellow); }
+
+/* ---------- Bewegung (sanft, im Hintergrund) ---------- */
+.hq-tw, .hq-tw2, .hq-spk, .hq-woof, .hq-nt, .hq-mote, .hq-sway, .hq-sway2, .hq-game, .hq-cars, .hq-blink,
+.hq-dots ellipse, .hq-flick, .hq-badge, .hq-new { transform-box: fill-box; }
+
+.hq-halos .hq-tw { animation: hq-twinkle 2.8s ease-in-out infinite; }
+.hq-halos .hq-tw:nth-child(3n+1) { animation-delay: -0.9s; animation-duration: 3.4s; }
+.hq-halos .hq-tw:nth-child(4n+2) { animation-delay: -1.7s; animation-duration: 2.2s; }
+.hq-halos .hq-tw:nth-child(5n) { animation-delay: -2.3s; }
+.hq-star.hq-tw { animation: hq-twinkle 3.2s ease-in-out infinite; }
+.hq-tw2 { animation: hq-glowpulse 4s ease-in-out infinite; }
+
+.hq-woof { transform-origin: center; animation: hq-thump .52s ease-out infinite; }
+.hq-woof + .hq-woof { animation-delay: -.26s; }
+.hq-ring { animation: hq-hue 6s linear infinite; }
+.hq-nt { transform-origin: center; animation: hq-note 3.6s ease-in-out infinite; opacity: 0; }
+.hq-nt2 { animation-delay: -1.2s; }
+.hq-nt3 { animation-delay: -2.4s; }
+
+.hq-mote { animation: hq-drift 7s ease-in-out infinite; }
+.hq-m1 { animation-delay: -2s; animation-duration: 9s; }
+.hq-m2 { animation-delay: -4s; animation-duration: 6s; }
+.hq-m3 { animation-delay: -5.5s; animation-duration: 8s; }
+
+.hq-sway { transform-origin: 50% 0%; animation: hq-sway 6s ease-in-out infinite; }
+.hq-sway2 { transform-origin: 50% 100%; animation: hq-sway 7s ease-in-out infinite; }
+
+.hq-game { transform-origin: center; animation: hq-invader 2.4s steps(6) infinite; }
+.hq-screen { animation: hq-screen 3s steps(3) infinite; }
+
+.hq-cars { animation: hq-car 7s linear infinite; }
+.hq-cars2 { animation: hq-car-back 9s linear infinite; }
+.hq-blink { animation: hq-blink 1.6s steps(1) infinite; }
+
+.hq-spk { transform-origin: center; animation: hq-spark 2.2s ease-in-out infinite; }
+.hq-spk2 { animation-delay: -1.1s; }
+.hq-spk3 { animation-delay: -0.6s; }
+.hq-spk4 { animation-delay: -1.6s; }
+.hq-dots ellipse { animation: hq-dot 3s ease-in-out infinite; }
+.hq-dots ellipse:nth-child(2n) { animation-delay: -1s; animation-duration: 2.4s; }
+.hq-dots ellipse:nth-child(3n) { animation-delay: -2s; animation-duration: 3.6s; }
+
+.hq-flick { animation: hq-flicker 8s steps(1) infinite; }
+
+/* Neu freigeschaltet: Teil ploppt rein, Abzeichen wippt */
+.hq-new { transform-origin: 50% 100%; animation: hq-pop 900ms 250ms cubic-bezier(.2, 1.5, .4, 1) both; }
+.hq-badge { transform-origin: center; animation: hq-bob 1.4s ease-in-out infinite; }
+.hq-spot { animation: hq-fade 700ms ease both; }
+
+@keyframes hq-twinkle { 0%, 100% { opacity: 1; } 50% { opacity: .35; } }
+@keyframes hq-glowpulse { 0%, 100% { opacity: 1; } 50% { opacity: .75; } }
+@keyframes hq-thump { 0% { transform: scale(1.06); } 60%, 100% { transform: scale(1); } }
+@keyframes hq-hue { 0%, 100% { stroke: var(--good); } 33% { stroke: var(--teamB); } 66% { stroke: var(--teamA); } }
+@keyframes hq-note { 0% { opacity: 0; transform: translate(0, 16px) rotate(-8deg); } 25% { opacity: 1; } 80% { opacity: 1; } 100% { opacity: 0; transform: translate(10px, -44px) rotate(8deg); } }
+@keyframes hq-drift { 0%, 100% { transform: translate(0, 0); opacity: .2; } 50% { transform: translate(14px, -26px); opacity: .7; } }
+@keyframes hq-sway { 0%, 100% { transform: rotate(-1.6deg); } 50% { transform: rotate(1.6deg); } }
+@keyframes hq-invader { 0% { transform: translateX(-26px); } 50% { transform: translateX(26px); } 100% { transform: translateX(-26px); } }
+@keyframes hq-screen { 0%, 100% { fill: #0c1a3c; } 50% { fill: #111f48; } }
+@keyframes hq-car { from { transform: translateX(0); } to { transform: translateX(340px); } }
+@keyframes hq-car-back { from { transform: translateX(0); } to { transform: translateX(-340px); } }
+@keyframes hq-blink { 0%, 60% { opacity: 1; } 61%, 100% { opacity: .15; } }
+@keyframes hq-spark { 0%, 100% { transform: scale(.4) rotate(0deg); opacity: .2; } 50% { transform: scale(1.1) rotate(45deg); opacity: 1; } }
+@keyframes hq-dot { 0%, 100% { opacity: .15; } 50% { opacity: .7; } }
+@keyframes hq-flicker { 0%, 88%, 90%, 93%, 100% { opacity: 1; } 89%, 92% { opacity: .35; } }
+@keyframes hq-pop { 0% { opacity: 0; transform: translateY(-30px) scale(.5); } 60% { opacity: 1; transform: translateY(0) scale(1.08); } 100% { opacity: 1; transform: none; } }
+@keyframes hq-bob { 0%, 100% { transform: translateY(0) rotate(-3deg); } 50% { transform: translateY(-8px) rotate(3deg); } }
+@keyframes hq-fade { from { opacity: 0; } to { opacity: 1; } }
+
+@media (prefers-reduced-motion: reduce) {
+  .hq-scene *, .hq-scene *::before, .hq-scene *::after { animation: none !important; }
+  .hq-nt { opacity: .9; }
+}

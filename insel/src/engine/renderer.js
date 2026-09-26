@@ -99,8 +99,8 @@ export function createRenderer({ canvas, quality: qInfo, events }) {
   const monitor = {
     enabled: !qInfo.forced,
     fps: 60, frameMs: 16.7,
-    samples: [], windowStart: 0, frames: 0, lowWindows: 0, graceUntil: 0,
-    downgrades: 0,
+    samples: [], windowStart: 0, frames: 0, lowWindows: 0, highWindows: 0, graceUntil: 0,
+    downgrades: 0, upgraded: false, mobile: qInfo.reason === 'mobile',
   };
   function tickMonitor(realDt) {
     const now = performance.now();
@@ -113,6 +113,15 @@ export function createRenderer({ canvas, quality: qInfo, events }) {
       monitor.frames = 0; monitor.windowStart = now;
       if (!monitor.enabled || document.hidden || now < monitor.graceUntil) return;
       if (monitor.fps < 40) monitor.lowWindows++; else monitor.lowWindows = 0;
+      // Einmal vorsichtig hochstufen, wenn stabil 60 fps (Mobilgeräte höchstens „mittel“)
+      if (monitor.fps >= 57) monitor.highWindows++; else monitor.highWindows = 0;
+      const maxUp = monitor.mobile ? 'medium' : 'high';
+      if (monitor.highWindows >= 4 && !monitor.downgrades && !monitor.upgraded && q.name !== maxUp && q.name !== 'high') {
+        monitor.upgraded = true;
+        monitor.highWindows = 0;
+        r.setQuality(QUALITY_ORDER[QUALITY_ORDER.indexOf(q.name) + 1], { auto: true });
+        return;
+      }
       if (monitor.lowWindows >= 3) {
         monitor.lowWindows = 0;
         const i = QUALITY_ORDER.indexOf(q.name);

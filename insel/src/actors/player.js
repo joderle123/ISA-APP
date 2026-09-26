@@ -11,7 +11,7 @@ const RADIUS = 0.36;
 const MAX_WADE = 1.45;   // tiefer: nicht weiter
 
 export const DEFAULT_PLAYER_LOOK = {
-  skin: '#f0c09a', hair: '#2e2019', hairStyle: 'kurz', top: '#ff5d73', topStyle: 'hoodie',
+  skin: '#f0c09a', hair: '#4a2e1f', hairStyle: 'kurz', top: '#ff5d73', topStyle: 'hoodie',
   bottoms: '#2f4a7a', bottomsStyle: 'lang', shoes: '#ffffff', accessory: 'rucksack', accessoryColor: '#ffd166',
 };
 
