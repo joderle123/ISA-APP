@@ -1,5 +1,28 @@
-{"current":0,"steps":[
- {"name":"Vertical Slice M0-M3","script":"/root/.claude/projects/-home-user-ISA-APP/f6080bde-1b7f-57ff-8c41-9f899e920847/workflows/scripts/lumo-vertical-slice-wf_1ff58668-3f3.js","runId":"wf_1ff58668-3f3"},
- {"name":"Staffel 1 komplett M4-M9","script":"/tmp/claude-0/-home-user/f6080bde-1b7f-57ff-8c41-9f899e920847/scratchpad/lumo-expansion.js","runId":null},
- {"name":"Hub-Vorbereitung","script":"/tmp/claude-0/-home-user/f6080bde-1b7f-57ff-8c41-9f899e920847/scratchpad/lumo-hubprep.js","runId":null}
-]}
+{
+ "current": 0,
+ "steps": [
+  {
+   "name": "Vertical Slice M0-M3",
+   "script": "/root/.claude/projects/-home-user-ISA-APP/f6080bde-1b7f-57ff-8c41-9f899e920847/workflows/scripts/lumo-vertical-slice-wf_1ff58668-3f3.js",
+   "runId": "wf_1ff58668-3f3"
+  },
+  {
+   "name": "Staffel 1 komplett M4-M9",
+   "script": "/tmp/claude-0/-home-user/f6080bde-1b7f-57ff-8c41-9f899e920847/scratchpad/lumo-expansion.js",
+   "runId": null
+  },
+  {
+   "name": "Hub-Vorbereitung",
+   "script": "/tmp/claude-0/-home-user/f6080bde-1b7f-57ff-8c41-9f899e920847/scratchpad/lumo-hubprep.js",
+   "runId": null
+  }
+ ],
+ "extras": [
+  {
+   "name": "Grafik-Upgrade (Premium-Look)",
+   "script": "/tmp/claude-0/-home-user/f6080bde-1b7f-57ff-8c41-9f899e920847/scratchpad/lumo-art.js",
+   "runId": "wf_5275fbde-ae9",
+   "done": false
+  }
+ ]
+}

@@ -4,6 +4,18 @@ S=/tmp/claude-0/-home-user/f6080bde-1b7f-57ff-8c41-9f899e920847/scratchpad
 python3 - "$S" <<'PY'
 import json,sys,os,time
 S=sys.argv[1]; st=json.load(open(f'{S}/nachtschicht.json')); i=st['current']
+def check(rid):
+    j=f'/root/.claude/projects/-home-user/f6080bde-1b7f-57ff-8c41-9f899e920847/subagents/workflows/{rid}/journal.jsonl'
+    if not os.path.exists(j): return 'MISSING'
+    age=(time.time()-os.path.getmtime(j))/60
+    ls=[json.loads(l) for l in open(j) if l.strip().startswith('{')]
+    ends=[l.get('type') for l in ls if l.get('type') in ('result','failed')]
+    if age<20: return 'RUNNING'
+    return 'RESUME' if (ends and ends[-1]=='failed') else 'DONE'
+for k,e in enumerate(st.get('extras',[])):
+    if e.get('done'): continue
+    r=check(e['runId'])
+    print(f"EXTRA {k}: {e['name']} -> {r}" + (f" | Workflow(scriptPath={e['script']}, resumeFromRunId={e['runId']})" if r=='RESUME' else '') + (" | in nachtschicht.json extras[%d].done=true setzen" % k if r=='DONE' else ''))
 if i>=len(st['steps']): print('ALL_DONE'); sys.exit()
 step=st['steps'][i]; rid=step['runId']
 print(f"STEP {i}: {step['name']} | script={step['script']} | runId={rid}")
