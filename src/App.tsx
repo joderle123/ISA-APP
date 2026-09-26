@@ -41,6 +41,12 @@ function seiteAusHash(hash: string): Seite | null {
   return null
 }
 
+/** #blatt=<id> – jedes Mal ein neues Objekt, damit derselbe Link auch ein zweites Mal ausgewertet wird. */
+function blattAusHash(hash: string): { id: string } | null {
+  const id = hashParameter(hash).get('blatt')
+  return id ? { id } : null
+}
+
 function filterAusHash(hash: string): BlattFilter {
   const p = hashParameter(hash)
   const eldib = (p.get('eldib') || '')
@@ -53,7 +59,7 @@ function filterAusHash(hash: string): BlattFilter {
 export default function App() {
   const [seite, setSeite] = useState<Seite>(() => seiteAusHash(window.location.hash) ?? 'blaetter')
   const [blattFilter, setBlattFilter] = useState<BlattFilter>(() => filterAusHash(window.location.hash))
-  const [startBlatt, setStartBlatt] = useState<string | null>(() => hashParameter(window.location.hash).get('blatt'))
+  const [startBlatt, setStartBlatt] = useState<{ id: string } | null>(() => blattAusHash(window.location.hash))
   const [teamMaterial, setTeamMaterial] = useState<Material[]>([])
   const bew = useBewertungen()
 
@@ -73,7 +79,7 @@ export default function App() {
       if (s) setSeite(s)
       if (s === 'blaetter') {
         setBlattFilter(filterAusHash(hash))
-        setStartBlatt(hashParameter(hash).get('blatt'))
+        setStartBlatt(blattAusHash(hash))
       }
     }
     window.addEventListener('hashchange', onHash)

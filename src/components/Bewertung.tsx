@@ -2,6 +2,7 @@
 // Bruchteil), eigene Sterne und kurze Praxis-Tipps.
 import { useEffect, useId, useState } from 'react'
 import type { Gesamtbewertung } from '../lib/teamSync'
+import { toast } from '../lib/toast'
 import { StarRating } from './StarRating'
 import { Icon } from './Icon'
 
@@ -76,6 +77,11 @@ export function BewertungVoll({
   useEffect(() => setEntwurf(notiz), [notiz])
   const tId = useId()
   const n = gesamt?.anzahl ?? 0
+  function speichern() {
+    if (entwurf.trim() === notiz.trim()) return
+    onNotiz(entwurf)
+    toast('Gespeichert.', 'ok')
+  }
   return (
     <section className="bew-voll" aria-label="Bewertung">
       <div className="bew-kopf">
@@ -95,8 +101,8 @@ export function BewertungVoll({
         Tipp für das Team <span className="font-normal text-muted">(optional, z. B. „klappt gut in der Kleingruppe“)</span>
       </label>
       <div className="mt-1.5 flex gap-2">
-        <input id={tId} className="field" maxLength={400} value={entwurf} placeholder="Deine Erfahrung in einem Satz" onChange={(e) => setEntwurf(e.target.value)} onKeyDown={(e) => e.key === 'Enter' && onNotiz(entwurf)} />
-        <button type="button" className="btn" disabled={entwurf.trim() === notiz.trim()} onClick={() => onNotiz(entwurf)}>
+        <input id={tId} className="field" maxLength={400} value={entwurf} placeholder="Deine Erfahrung in einem Satz" onChange={(e) => setEntwurf(e.target.value)} onKeyDown={(e) => e.key === 'Enter' && speichern()} />
+        <button type="button" className="btn" disabled={entwurf.trim() === notiz.trim()} onClick={speichern}>
           Speichern
         </button>
       </div>

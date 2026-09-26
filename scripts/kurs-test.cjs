@@ -2,9 +2,9 @@
 //   npm run build   (oder: npx vite build)
 //   node scripts/kurs-test.cjs
 // Prüft: nächste Einheit, Kursjahr-Reiter, Einheit öffnen, Fahrplan, Material
-// abhaken und Notiz (bleiben nach Neuladen), „Heute gehalten“, Gruppen, Deep-Links,
+// abhaken und Notiz (bleiben nach Neuladen), „Heute gehalten“, Gruppen (Name nie leer), Deep-Links,
 // Reiterwechsel mit offener Einheit („Jahresweg“, Zurück), PDF der Schülerblätter,
-// Grundlagen, Druckansicht, Blatt-Vorschau, Handy-Breite.
+// Grundlagen, Druckansicht, Spickzettel auf einer Seite, Blatt-Vorschau, Handy-Breite.
 const path = require('path')
 const fs = require('fs')
 let chromium
@@ -134,6 +134,18 @@ function pruefe(bed, text) {
   await page.selectOption('.ku-gruppenwahl select', { index: 0 })
   pruefe((await page.textContent('.ku-fortschritt')).includes('1 von'), 'erste Gruppe behält ihren Stand')
 
+  // Gruppenname leeren: nicht erlaubt – der bisherige Name bleibt im Feld und gespeichert, mit Hinweis
+  await page.click('.ku-gruppenwahl .btn')
+  await page.waitForSelector('dialog .ku-gruppen')
+  const namensFeld = page.locator('dialog .ku-gruppen li input').first()
+  const alterName = await namensFeld.inputValue()
+  await namensFeld.fill('')
+  await namensFeld.blur()
+  pruefe((await namensFeld.inputValue()) === alterName, `leerer Gruppenname: im Feld steht wieder „${alterName}“`)
+  pruefe(await page.waitForSelector('.toast:has-text("braucht einen Namen")', { timeout: 5000 }).then(() => true, () => false), 'leerer Gruppenname: Hinweis')
+  await page.click('dialog .icon-btn[aria-label="Schließen"]')
+  pruefe((await page.textContent('.ku-gruppenwahl select option')) === alterName, 'leerer Gruppenname: gespeichert bleibt der bisherige Name')
+
   // Zurücknehmen
   await page.goto(DATEI + '#kurs=' + e1.id)
   await page.waitForSelector('.ku-gehalten')
@@ -162,6 +174,24 @@ function pruefe(bed, text) {
     await page.evaluate(() => window.scrollTo(0, document.getElementById('ku-s-1').getBoundingClientRect().top + window.scrollY - 100))
     await page.waitForTimeout(1100)
     pruefe(await fp.nth(1).evaluate((b) => b.classList.contains('an')), 'beim Scrollen wandert die Markierung mit')
+  }
+
+  // Spickzettel: eine A4-Seite, auch für lange Einheiten (Einheit 20 aus Kursjahr 3 war zweiseitig)
+  for (const id of ['j3-e20', 'j2-e07', e1.id].filter((x) => einheiten.has(x))) {
+    await page.goto(DATEI + '#kurs=' + id)
+    await page.waitForSelector('.ku-einheit-aktionen')
+    await page.evaluate(() => {
+      window.__druck = null
+      window.print = () => (window.__druck = document.documentElement.outerHTML.replace(/<script[\s\S]*?<\/script>/gi, ''))
+    })
+    await page.locator('.ku-einheit-aktionen button', { hasText: 'Spickzettel' }).click()
+    const druck = await ctx.newPage()
+    await druck.setContent(await page.evaluate(() => window.__druck))
+    await druck.emulateMedia({ media: 'print' })
+    const pdf = await druck.pdf({ format: 'A4', preferCSSPageSize: true })
+    await druck.close()
+    const seiten = (pdf.toString('latin1').match(/\/Type\s*\/Page(?![s\w])/g) || []).length
+    pruefe(seiten === 1, `Spickzettel ${id}: eine Seite (${seiten})`)
   }
 
   // Grundlagen

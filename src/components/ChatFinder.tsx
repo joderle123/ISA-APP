@@ -1,5 +1,5 @@
 import { useEffect, useId, useMemo, useRef, useState } from 'react'
-import type { FilterState } from '../lib/filter'
+import { activeFilterCount, applyFilters, type FilterState } from '../lib/filter'
 import type { Material } from '../types/material'
 import { typeLabels } from '../lib/ui'
 import { StarRating } from './StarRating'
@@ -139,14 +139,15 @@ export function ChatFinder({ onClose, onApply, onOpen, onDownload, downloadingId
     const add = parse(text)
     const merged = mergeSignals(signals, add)
     setSignals(merged)
-    const results = rank(materials, merged, ratings)
+    // Nur unter dem, was „Alle Treffer in der Bibliothek anzeigen“ danach zeigt – so stimmen Zahl und Liste überein
+    const results = rank(applyFilters(materials, signalsToFilter(merged), ratings), merged, ratings)
     const understood = describe(merged)
     let botText: string
     if (!hasAnySignal(merged)) {
       botText =
         'Daraus konnte ich noch kein Kriterium erkennen. Nenn mir zum Beispiel das Alter (oder die Klasse), worum es geht (Thema oder Verhalten) und ob es für Einzeln, Gruppe oder Klasse sein soll.'
     } else if (results.length) {
-      botText = `Ich habe ${results.length} passende Materialien gefunden – die besten stehen oben. Du kannst weiter verfeinern, z. B. „lieber ohne Arbeitsblatt“ oder „eher für die ganze Klasse“.`
+      botText = `Ich habe ${results.length} ${results.length === 1 ? 'passendes Material' : 'passende Materialien'} gefunden – die besten stehen oben. Du kannst weiter verfeinern, z. B. „lieber ohne Arbeitsblatt“ oder „eher für die ganze Klasse“.`
     } else {
       botText = 'Dazu habe ich nichts Passendes gefunden. Lockere ein Kriterium oder beschreib es etwas anders.'
     }
@@ -220,10 +221,13 @@ export function ChatFinder({ onClose, onApply, onOpen, onDownload, downloadingId
                       downloading={downloadingId === r.material.id}
                     />
                   ))}
-                  <button type="button" onClick={() => onApply(signalsToFilter(signals))} className="btn w-full">
-                    Alle Treffer in der Bibliothek anzeigen
-                    <Icon name="arrowRight" />
-                  </button>
+                  {/* Nur Stichwörter (kein Alter, Thema …) kann die Bibliothek nicht filtern – sie zeigte dann alles */}
+                  {activeFilterCount(signalsToFilter(signals)) > 0 && (
+                    <button type="button" onClick={() => onApply(signalsToFilter(signals))} className="btn w-full">
+                      Alle Treffer in der Bibliothek anzeigen
+                      <Icon name="arrowRight" />
+                    </button>
+                  )}
                 </div>
               )}
             </div>

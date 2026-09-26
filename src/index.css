@@ -1272,6 +1272,21 @@
   .bl-mappe .icon-btn {
     color: #fff;
   }
+  /* Handy: die beiden Knöpfe in eine zweite Zeile, damit „Mappe leeren“ (×) auf dem Bildschirm bleibt */
+  @media (max-width: 480px) {
+    .bl-mappe {
+      width: calc(100vw - 24px);
+      flex-wrap: wrap;
+      row-gap: 8px;
+    }
+    .bl-mappe > span {
+      flex: 1 1 60%;
+    }
+    .bl-mappe .btn {
+      order: 1;
+      flex: 1 1 auto;
+    }
+  }
 
   /* Bewertung */
   .bew-kurz {
@@ -2931,15 +2946,34 @@
     font-size: 8.5pt;
     color: #444;
   }
+  /* Spickzettel: etwas enger gesetzt und mit schmaleren Rändern, damit er auf eine Seite passt */
+  .ku-spick {
+    page: spick;
+    font-size: 9.5pt;
+    line-height: 1.35;
+  }
+  @page spick {
+    margin: 12mm 14mm;
+  }
+  .ku-spick h1 {
+    font-size: 16pt;
+  }
+  .ku-spick h2 {
+    margin: 8pt 0 3pt;
+    font-size: 11pt;
+  }
+  .ku-spick .ku-druck-klein {
+    font-size: 8.5pt;
+  }
   .ku-spick-tab {
     width: 100%;
     border-collapse: collapse;
-    margin: 6pt 0 8pt;
-    font-size: 9.5pt;
+    margin: 4pt 0 6pt;
+    font-size: 8.5pt;
   }
   .ku-spick-tab th,
   .ku-spick-tab td {
-    padding: 3pt 5pt;
+    padding: 2pt 4pt;
     border: 0.5pt solid #bbb;
     text-align: left;
     vertical-align: top;

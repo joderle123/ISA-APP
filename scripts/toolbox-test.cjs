@@ -1,10 +1,11 @@
 // Browser-Test der Seiten „Arbeitsblätter“ und „Einheiten“ (gebaute Toolbox: dist/index.html).
 //   npm run build   (oder: npx vite build)
 //   node scripts/toolbox-test.cjs
-// Prüft: PDF-Knopf auf der Karte, unbekannter Blatt-Link, Wechsel zu den Einheiten mit ELDiB-Ziel
-// (auch nach Neuladen), Suche (kurze Wörter nur als Wort, Titel zuerst), Einzahl „1 Blatt“,
-// Bereichs-Kacheln ohne Überlauf, voller Titel im Blatt-Dialog am Handy, Mappe (Sprache je Blatt,
-// Dateinamen, Titel, Ladekreis am geklickten Knopf, Hinweis über der Mappe-Leiste).
+// Prüft: PDF-Knopf auf der Karte, unbekannter und wiederholter Blatt-Link, Wechsel zu den Einheiten
+// mit ELDiB-Ziel (auch nach Neuladen), Suche (kurze Wörter nur als Wort, Titel zuerst), Einzahl
+// „1 Blatt“, Bereichs-Kacheln ohne Überlauf, Material-Finder (Zahl wie in der Liste), Tipp für das
+// Team („Gespeichert.“), Seitenumbruch W-03, voller Titel im Blatt-Dialog am Handy, Mappe (Sprache
+// je Blatt, Dateinamen, Titel, Ladekreis am geklickten Knopf, Hinweis über der Leiste, Leiste am Handy).
 const path = require('path')
 let chromium
 try {
@@ -28,6 +29,16 @@ function pruefe(bed, text) {
 /** PDF-Titel steht als UTF-16BE-Text in der Datei. */
 function pdfHatTitel(buf, titel) {
   return buf.includes(Buffer.from(titel, 'utf16le').swap16())
+}
+
+/** Text je Seite einer PDF-Datei (braucht python3 mit PyMuPDF wie scripts/mappe-pruefen.tsx; sonst null). */
+function seitenTexte(datei) {
+  try {
+    const py = 'import json, sys, pymupdf; print(json.dumps([p.get_text() for p in pymupdf.open(sys.argv[1])]))'
+    return JSON.parse(require('child_process').execFileSync('python3', ['-c', py, datei]).toString())
+  } catch {
+    return null
+  }
 }
 
 ;(async () => {
@@ -63,6 +74,23 @@ function pdfHatTitel(buf, titel) {
     const hinweis = await page.waitForSelector(`.toast:has-text("„${id}“ wurde nicht gefunden")`, { timeout: 5000 }).catch(() => null)
     pruefe(!!hinweis, `unbekanntes Blatt ${wie}: Hinweis „nicht gefunden“`)
     pruefe((await page.locator('dialog[open]').count()) === 0, `unbekanntes Blatt ${wie}: kein Dialog`)
+  }
+
+  // Derselbe Link ein zweites Mal (z. B. vom Hub): Dialog bzw. Hinweis erscheinen wieder
+  await page.goto('about:blank')
+  await page.goto(DATEI)
+  await page.waitForSelector('main#blaetter article.bl-karte')
+  for (let i = 1; i <= 2; i++) {
+    await page.evaluate(() => (location.hash = '#blatt=wutvulkan'))
+    pruefe(await page.waitForSelector('dialog[open]', { timeout: 5000 }).then(() => true, () => false), `derselbe Blatt-Link zum ${i}. Mal öffnet den Dialog`)
+    await page.keyboard.press('Escape')
+    await page.waitForSelector('dialog[open]', { state: 'detached', timeout: 5000 }).catch(() => {})
+  }
+  for (let i = 1; i <= 2; i++) {
+    await page.evaluate(() => document.querySelectorAll('.toast button').forEach((b) => b.click()))
+    await page.evaluate(() => (location.hash = '#blatt=gibt-es-nicht'))
+    const hinweis = await page.waitForSelector('.toast:has-text("„gibt-es-nicht“")', { timeout: 5000 }).then(() => true, () => false)
+    pruefe(hinweis, `unbekannter Blatt-Link zum ${i}. Mal: Hinweis „nicht gefunden“`)
   }
 
   // „Auch Einheiten dazu ansehen“ → Einheiten mit dem Ziel, auch nach Neuladen
@@ -138,6 +166,43 @@ function pdfHatTitel(buf, titel) {
   await page.waitForTimeout(300)
   const einheitenKi = Number(/\d+/.exec(await page.evaluate(() => document.querySelector('main#ergebnisse h1').nextElementSibling.textContent))[0])
   pruefe(einheitenKi <= 5, `Einheiten: „KI“ nur als Wort (${einheitenKi} Treffer)`)
+  await page.fill('input[placeholder^="Titel, Thema"]', '')
+
+  // Material-Finder: genannte Zahl = Zahl in der Bibliothek danach; nur Stichwörter → kein Knopf „Alle Treffer …“
+  const finder = async (text) => {
+    await page.locator('button[title^="Situation beschreiben"]').click()
+    await page.fill('dialog[open] textarea', text)
+    await page.keyboard.press('Enter')
+    await page.waitForTimeout(300)
+    return page.evaluate(() => [...document.querySelectorAll('dialog[open] .dlg-body .rounded-bl-md')].pop().textContent)
+  }
+  const genannt = Number((/Ich habe (\d+)/.exec(await finder('Schüler, 10 Jahre, 4. Klasse, oft wütend, soll in der Kleingruppe üben – mit Arbeitsblatt')) || [])[1])
+  await page.locator('dialog[open] button', { hasText: 'Alle Treffer in der Bibliothek anzeigen' }).click()
+  await page.waitForTimeout(400)
+  const inListe = Number(/\d+/.exec(await page.evaluate(() => document.querySelector('main#ergebnisse h1').nextElementSibling.textContent))[0])
+  pruefe(genannt > 0 && genannt === inListe, `Material-Finder nennt dieselbe Zahl wie die Liste danach (${genannt}/${inListe})`)
+  await finder('Interessiert sich für Dinosaurier')
+  pruefe((await page.locator('dialog[open] button', { hasText: 'Alle Treffer in der Bibliothek anzeigen' }).count()) === 0, 'Material-Finder: nur Stichwörter → kein Knopf, der die ganze Bibliothek zeigt')
+  await page.keyboard.press('Escape')
+
+  // Tipp für das Team: kurzer Hinweis „Gespeichert.“
+  await page.goto('about:blank')
+  await page.goto(DATEI + '#blatt=belohnungs-menue')
+  await page.waitForSelector('dialog[open]')
+  await page.fill('dialog[open] input[placeholder="Deine Erfahrung in einem Satz"]', 'Klappt gut mit einem Wochenplan.')
+  await page.locator('dialog[open] button', { hasText: 'Speichern' }).click()
+  pruefe(await page.waitForSelector('.toast:has-text("Gespeichert.")', { timeout: 5000 }).then(() => true, () => false), 'Tipp für das Team: Hinweis „Gespeichert.“')
+
+  // W-03 „Belohnungs-Menü“: Seitenumbruch vor Aufgabe 2 – zwei ausgewogene Schülerseiten
+  const dlW = page.waitForEvent('download', { timeout: 60000 }).catch(() => null)
+  await page.locator('dialog[open] button', { hasText: 'Arbeitsblatt (PDF)' }).click()
+  const w03 = await dlW
+  pruefe(!!w03, 'W-03: Arbeitsblatt als PDF')
+  const w03Seiten = w03 ? seitenTexte(await w03.path()) : null
+  if (w03Seiten) pruefe(w03Seiten.length === 2 && !w03Seiten[0].includes('Stell dein Menü') && w03Seiten[1].includes('Stell dein Menü') && w03Seiten[1].includes('Unsere Abmachung'), 'W-03: Aufgaben 2 und 3 gemeinsam auf Seite 2')
+  else if (w03) console.log('· W-03: Seiten nicht geprüft (python3 mit PyMuPDF fehlt)')
+  await page.evaluate(() => document.querySelectorAll('.toast button').forEach((b) => b.click()))
+  await page.keyboard.press('Escape')
 
   // Mappe: Blatt auf Französisch, Dateinamen, Titel, Ladekreis, Hinweis über der Leiste
   await page.goto('about:blank')
@@ -190,6 +255,14 @@ function pdfHatTitel(buf, titel) {
   pruefe(titel.ganz, `Handy: Blatt-Titel im Dialog ganz zu sehen („${titel.text}“)`)
   await handy.keyboard.press('Escape')
   await handy.locator('main#blaetter article.bl-karte label.bl-wahl').first().click()
+  const leisteGanz = await handy.evaluate(() =>
+    [...document.querySelectorAll('.bl-mappe button')].every((k) => {
+      const q = k.getBoundingClientRect()
+      const h = document.elementFromPoint(q.left + q.width / 2, q.top + q.height / 2)
+      return q.left >= 0 && q.right <= innerWidth && !!h && k.contains(h)
+    }),
+  )
+  pruefe(leisteGanz, 'Handy: alle Knöpfe der Mappe-Leiste (auch „Mappe leeren“) auf dem Bildschirm')
   const dlH = handy.waitForEvent('download', { timeout: 60000 }).catch(() => null)
   await handy.locator('.bl-mappe button', { hasText: 'Als ein PDF' }).click()
   await dlH

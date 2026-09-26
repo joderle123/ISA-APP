@@ -314,12 +314,13 @@ export function Blaetter({
   aktiv: boolean
   bew: Bewertungen
   startFilter: BlattFilter
-  startBlatt: string | null
+  /** Blatt aus einem Link (#blatt=…) – neues Objekt bei jedem Link, auch bei derselben id */
+  startBlatt: { id: string } | null
   onEinheitenZuEldib: (codes: string[]) => void
 }) {
   const [filter, setFilter] = useState<BlattFilter>(startFilter)
   const [sort, setSort] = useState<Sortierung>('nummer')
-  const [offen, setOffen] = useState<NummeriertesBlatt | null>(() => (startBlatt ? (blattById.get(startBlatt) ?? null) : null))
+  const [offen, setOffen] = useState<NummeriertesBlatt | null>(() => (startBlatt ? (blattById.get(startBlatt.id) ?? null) : null))
   // Blätter in der Mappe, je mit der Sprache, in der sie gewählt wurden (ohne Angabe: Deutsch)
   const [mappe, setMappe] = useState<{ id: string; sprache?: Sprache }[]>([])
   const [laedt, setLaedt] = useState<string | null>(null)
@@ -329,9 +330,9 @@ export function Blaetter({
   useEffect(() => setFilter(startFilter), [startFilter])
   useEffect(() => {
     if (!startBlatt) return
-    const b = blattById.get(startBlatt)
+    const b = blattById.get(startBlatt.id)
     setOffen(b ?? null)
-    if (!b) toast(`Das Arbeitsblatt „${startBlatt}“ wurde nicht gefunden.`, 'error')
+    if (!b) toast(`Das Arbeitsblatt „${startBlatt.id}“ wurde nicht gefunden.`, 'error')
   }, [startBlatt])
 
   const q = useDeferredValue(filter)
@@ -388,12 +389,13 @@ export function Blaetter({
     }
   }
 
-  // Deep-Link #blatt=… aktuell halten
+  // Deep-Link #blatt=… aktuell halten – auch nach einem Link auf ein unbekanntes Blatt (startBlatt),
+  // sonst bliebe er im Hash stehen und derselbe Link löste kein hashchange mehr aus
   useEffect(() => {
     if (!aktiv) return
     const h = offen ? '#blatt=' + encodeURIComponent(offen.id) : filter.eldib.length ? '#eldib=' + filter.eldib.map(encodeURIComponent).join(',') : '#'
     if (window.location.hash !== h && !(h === '#' && !window.location.hash)) history.replaceState(null, '', h === '#' ? window.location.pathname + window.location.search : h)
-  }, [aktiv, offen, filter.eldib])
+  }, [aktiv, offen, filter.eldib, startBlatt])
 
   const filterInhalt = (
     <div className="bl-filter">

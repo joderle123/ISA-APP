@@ -1242,7 +1242,10 @@ function GruppenDialog({ onClose, stand, aendern }: { onClose: () => void; stand
                   aria-label="Name der Gruppe"
                   onBlur={(x) => {
                     const name = x.target.value.trim()
-                    if (name && name !== g.name) aendern((s) => ({ ...s, gruppen: s.gruppen.map((y) => (y.id === g.id ? { ...y, name } : y)) }))
+                    if (!name) toast('Eine Gruppe braucht einen Namen – der bisherige bleibt.', 'info')
+                    else if (name !== g.name) aendern((s) => ({ ...s, gruppen: s.gruppen.map((y) => (y.id === g.id ? { ...y, name } : y)) }))
+                    // Im Feld steht immer der gespeicherte Name
+                    x.target.value = name || g.name
                   }}
                 />
                 {kursjahre.length > 1 ? (
