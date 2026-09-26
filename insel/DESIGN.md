@@ -850,6 +850,20 @@ Dazu:
 - **Budgets:** 30 fps auf iPad 9. Gen „mittel“ und auf älteren „niedrig“. Höchstens 12 animierte Figuren in Sicht, Mengen als Impostor. Höchstens 220 Draw-Calls auf „niedrig“. Die gebündelte HTML-Datei bleibt unter 3 MB.
 - **Vertical Slice zuerst:** M0–M3 mit j01 und j06. Sie müssen schon ohne Kurs-Schicht Spaß machen, bevor der Rest entsteht.
 
+## 20a. Mehrspieler-Vorbereitung (Pflicht für alle Arbeitspakete)
+Die Insel soll später ein gemeinsamer Ort werden (siehe ROADMAP.md). Deshalb gilt schon jetzt:
+1. **Ein Zustand, eine Wahrheit:** Aller spielrelevanter Zustand liegt in `game.state` (JSON, serialisierbar). Grafik liest den Zustand, speichert aber nie Spieldaten nur in Meshes.
+2. **Aktionen statt direkter Änderungen:** Jede Änderung durch Spieler:innen läuft über `game.dispatch({ type, actor, payload })`. Handler ändern den Zustand und senden Ereignisse. Die lokale Person ist `actor: 'local'`. Später kann ein Server dieselben Aktionen prüfen und an alle verteilen.
+3. **Pro Person getrennt von der Welt:** `state.players[id]` (Position, Avatar-Konfiguration, Inventar, Puls, Quest-Fortschritt, Kosmetik) ist getrennt von `state.world` (Schleier, Tore, gemeinsame Rätsel, Zeit, Wetter). Heute gibt es nur einen Eintrag in `players`.
+4. **Stabile IDs:** Figuren, Props, Tore, Sammelsachen und Rätsel haben feste IDs aus den Inhaltsdaten, nie abhängig von der Erzeugungsreihenfolge. Zufall kommt nur aus dem seedbaren `rng`.
+5. **Avatare aus Daten:** Jede Figur (auch eine fremde Spielerfigur) entsteht aus ihrer Konfiguration über dieselbe Pipeline. Die Konfiguration ist klein und serialisierbar.
+6. **Absicht vor Bewegung:** Der Spieler-Controller verarbeitet Absichten (move, jump, action, power). Die lokale Eingabe erzeugt sie; später können sie aus dem Netz kommen. Fremde Figuren lassen sich über Position und Animation steuern.
+7. **Rätsel mit n Personen denken:** Wo es passt, funktionieren Rätsel mit 1–n Personen. Im Einzelspieler übernehmen Glimm oder befreundete Figuren die zweite Rolle.
+8. **Zeit und Wetter über einen Dienst:** `game.time` und das Inselwetter kommen aus einem Dienst, der später vom Server synchronisiert werden kann.
+9. **Beobachter-Rolle vorbereiten:** Kamera und Oberfläche dürfen nicht voraussetzen, dass es genau eine spielende Person gibt. Eine freie Beobachter-Kamera (God Mode) soll möglich bleiben.
+10. **Keine Freitext-Eingaben**, die später zu Chat werden könnten. Kommunikation läuft über Emotes, Schnellsätze und Marker.
+11. **Speicherstände getrennt:** Personen-Spielstand und Welt-Spielstand werden getrennt gespeichert und versioniert.
+
 ## 21. Ausblick Staffel 2 und 3
 - Der Spielstand wandert mit: Avatar, Baumhaus, Bindungen, Flaschenpost (öffnet sich beim Start) und Grisel als Lichtfalter-Begleiter.
 - **Staffel 2 (Jahr 2):** Fränz' Boot bringt dich zu einem Archipel, jede Insel ist eine Szene pro Modul:
