@@ -107,9 +107,10 @@ function Fusszeile({ blatt, nr, sprache }: { blatt: Blatt; nr?: string; sprache:
       <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 7, color: NEUTRAL.sehrLeise, marginLeft: 6, flex: 1 }}>
         {[nr ? `${tx.arbeitsblatt} ${nr}` : null, blattInhalt(blatt, sprache).titel].filter(Boolean).join('  ·  ')}
       </Text>
+      {/* Seiten zählen je Blatt (auch in einer Mappe); ein einseitiger Teil braucht keine Seitenzahl */}
       <Text
         style={{ fontFamily: SCHRIFT.jugend, fontSize: 7, color: NEUTRAL.sehrLeise }}
-        render={({ pageNumber, totalPages }) => `${tx.seite} ${pageNumber} / ${totalPages}`}
+        render={({ subPageNumber, subPageTotalPages }) => (subPageTotalPages > 1 ? `${tx.seite} ${subPageNumber} / ${subPageTotalPages}` : '')}
       />
     </View>
   )
@@ -143,19 +144,25 @@ function Titelblock({ blatt, inhalt, sprache, p, m }: { blatt: Blatt; inhalt: Bl
   )
 }
 
-/** Kleiner Kopf auf Folgeseiten. */
+/** Kleiner Kopf auf den Folgeseiten dieses Blatts. In einer Mappe zählt pageNumber das ganze
+ *  Dokument; beim Umbrechen kennt react-pdf aber nur pageNumber, noch nicht subPageNumber.
+ *  Deshalb merkt sich der Kopf die erste Seite seines Blatts – sonst stünde er auch auf der
+ *  ersten Seite jedes weiteren Blatts und schöbe dort Inhalt auf eine neue Seite. */
 function Folgekopf({ inhalt, sprache, p }: { inhalt: BlattInhalt; sprache: Sprache; p: Palette }) {
+  const start = { seite: Number.POSITIVE_INFINITY }
   return (
     <View
       fixed
-      render={({ pageNumber }) =>
-        pageNumber > 1 ? (
+      render={({ pageNumber, subPageNumber }) => {
+        if (subPageNumber === undefined) start.seite = Math.min(start.seite, pageNumber)
+        const folgeseite = subPageNumber === undefined ? pageNumber > start.seite : subPageNumber > 1
+        return folgeseite ? (
           <View style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 12, paddingBottom: 6, borderBottomWidth: 0.6, borderBottomColor: NEUTRAL.haarlinie }}>
             <View style={{ width: 10, height: 3, borderRadius: 2, backgroundColor: p.tief, marginRight: 6 }} />
             <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 9, color: NEUTRAL.text, flex: 1 }}>{typo(inhalt.titel, sprache)}</Text>
           </View>
         ) : null
-      }
+      }}
     />
   )
 }

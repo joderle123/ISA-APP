@@ -21,9 +21,12 @@ Musterblätter zum Anschauen: `gefuehle.json` (Mein Wutvulkan, Ballon-Atmen) und
 3. Rendern: `npx tsx --tsconfig tsconfig.scripts.json scripts/blatt-render.tsx <ordner> <blatt-id> --png --fr`
 4. **Jede Seite als Bild ansehen** und kritisch prüfen: Passt alles? Zu voll? Zu leer? Seitenumbruch sinnvoll? Wirkt es professionell?
 5. Nachbessern, bis es wirklich gut ist.
+6. Seitenzahlen aller Blätter: `npm run blaetter:seiten`. Mappen (mehrere Blätter in einer PDF, z. B. „Alle Blätter“
+   einer Kurs-Einheit): `npm run blaetter:mappe` – jedes Blatt muss dort genauso aussehen wie einzeln.
 
 Umfang: Schülerteil **1 Seite** (Spielschule, C2) bzw. **höchstens 2 Seiten** (C3–ES).
-Die Seite „Für die Lehrperson“ muss auf **eine** Seite passen.
+Die Seite „Für die Lehrperson“ muss auf **eine** Seite passen. Seitenzahlen zählen je Blatt („Seite 1 / 2“), auch in
+einer Mappe; ein einseitiger Teil hat keine Seitenzahl.
 
 ## 2. Aufbau eines Blatts
 

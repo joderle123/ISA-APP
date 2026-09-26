@@ -209,8 +209,11 @@ const s = StyleSheet.create({
     fontSize: 9.5,
     fontFamily: 'Helvetica',
     color: C.ink,
-    lineHeight: 1.4,
   },
+  // Zeilenabstand des Fließtexts – bewusst nicht im Seitenstil: react-pdf rechnet ihn in Punkte
+  // um (9,5 × 1,4 = 13,3 pt) und vererbt ihn so. Größere Texte haben deshalb einen eigenen
+  // lineHeight, und die Seitenzahl der Fußzeile erschiene mit geerbtem Zeilenabstand gar nicht.
+  fliess: { fontSize: 9.5, lineHeight: 1.4 },
   // Visual title banner
   banner: {
     flexDirection: 'row',
@@ -227,15 +230,16 @@ const s = StyleSheet.create({
     justifyContent: 'center',
     marginRight: 12,
   },
-  kicker: { fontSize: 8.5, fontFamily: 'Helvetica-Bold', letterSpacing: 1 },
-  bannerTitle: { fontSize: 18, fontFamily: 'Helvetica-Bold', color: C.ink, marginTop: 1 },
-  badgeRow: { flexDirection: 'row', flexWrap: 'wrap', alignItems: 'center', marginTop: 5 },
+  kicker: { fontSize: 8.5, lineHeight: 1.2, fontFamily: 'Helvetica-Bold', letterSpacing: 1 },
+  bannerTitle: { fontSize: 18, lineHeight: 1.18, fontFamily: 'Helvetica-Bold', color: C.ink, marginTop: 2 },
+  badgeRow: { flexDirection: 'row', flexWrap: 'wrap', alignItems: 'center', marginTop: 6 },
   badge: {
     borderRadius: 7,
     paddingHorizontal: 6,
     paddingVertical: 2,
     marginRight: 5,
     fontSize: 8,
+    lineHeight: 1.25,
     fontFamily: 'Helvetica-Bold',
     color: '#fff',
   },
@@ -245,6 +249,7 @@ const s = StyleSheet.create({
     paddingVertical: 2,
     marginRight: 5,
     fontSize: 8,
+    lineHeight: 1.25,
     borderWidth: 1,
   },
   // Theme chips (with mini icon)
@@ -257,7 +262,7 @@ const s = StyleSheet.create({
     marginRight: 5,
     marginBottom: 3,
   },
-  themeChipText: { fontSize: 8.5, fontFamily: 'Helvetica-Bold', marginLeft: 3 },
+  themeChipText: { fontSize: 8.5, lineHeight: 1.2, fontFamily: 'Helvetica-Bold', marginLeft: 3 },
   // Colored info blocks
   block: { padding: 8, marginBottom: 10, borderRadius: 4 },
   blockBlue: { backgroundColor: C.blue },
@@ -305,6 +310,7 @@ const s = StyleSheet.create({
     paddingHorizontal: 4,
     fontFamily: 'Helvetica-Bold',
     fontSize: 9,
+    lineHeight: 1.25,
     color: '#fff',
     marginRight: 2,
   },
@@ -317,22 +323,24 @@ const s = StyleSheet.create({
   },
   goal: { flexDirection: 'row', alignItems: 'flex-start', marginBottom: 1.5 },
   goalText: { fontSize: 7.5, flex: 1, lineHeight: 1.25 },
-  link: { color: C.blueDeep, fontSize: 9 },
+  link: { color: C.blueDeep, fontSize: 9, lineHeight: 1.35 },
   footer: {
     position: 'absolute',
-    bottom: 20,
+    bottom: 18,
     left: 42,
     right: 42,
     flexDirection: 'row',
-    justifyContent: 'space-between',
-    fontSize: 7.5,
-    color: C.faint,
+    alignItems: 'flex-end',
+    borderTopWidth: 0.6,
+    borderTopColor: '#dfe4ea',
+    paddingTop: 5,
   },
+  footerText: { fontSize: 7.5, lineHeight: 1.25, color: C.faint },
   // Worksheet (student-facing, printable) — child-friendly, age-aware
   wsAccent: { height: 7, borderRadius: 4, marginBottom: 12 },
   wsBand: { flexDirection: 'row', alignItems: 'center' },
-  wsKicker: { fontSize: 9, fontFamily: 'Helvetica-Bold', letterSpacing: 1.5 },
-  wsTitle: { fontFamily: 'Helvetica-Bold', marginTop: 1 },
+  wsKicker: { fontSize: 9, lineHeight: 1.2, fontFamily: 'Helvetica-Bold', letterSpacing: 1.5 },
+  wsTitle: { fontFamily: 'Helvetica-Bold', lineHeight: 1.18, marginTop: 1 },
   wsField: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -355,10 +363,22 @@ const s = StyleSheet.create({
     marginRight: 8,
     marginBottom: 7,
   },
-  wsTileLabel: { fontFamily: 'Helvetica-Bold', marginTop: 6, textAlign: 'center' },
+  wsTileLabel: { fontFamily: 'Helvetica-Bold', lineHeight: 1.2, marginTop: 6, textAlign: 'center' },
   wsCheckItem: { flexDirection: 'row', alignItems: 'center', marginBottom: 8 },
   wsTableCell: { flex: 1, borderWidth: 0.8, borderColor: '#c8cfd8', paddingVertical: 7, paddingHorizontal: 5 },
 })
+
+/** Fußzeile: links Herkunft und Titel, rechts die Seitenzahl. Die frühere, absolut gesetzte
+ *  Text-Zeile mit render erschien in react-pdf 4 gar nicht. */
+function Fuss({ text }: { text: string }) {
+  return (
+    <View style={s.footer} fixed>
+      <Text style={[s.footerText, { flex: 1, marginRight: 12 }]}>{text}</Text>
+      {/* ohne lineHeight – sonst zeichnet react-pdf 4 die Seitenzahl nicht */}
+      <Text style={{ fontSize: 7.5, color: C.faint }} render={({ pageNumber, totalPages }) => `${pageNumber} / ${totalPages}`} />
+    </View>
+  )
+}
 
 function Box({ checked }: { checked: boolean }) {
   return <View style={s.box}>{checked ? <View style={s.boxFill} /> : null}</View>
@@ -378,7 +398,7 @@ function SectionHead({ children, color }: { children: ReactNode; color: string }
   return (
     <View style={s.sectionHead}>
       <View style={[s.sectionAccent, { backgroundColor: color }]} />
-      <Text style={{ fontFamily: 'Helvetica-Bold', fontSize: 12 }}>{children}</Text>
+      <Text style={{ fontFamily: 'Helvetica-Bold', fontSize: 12, lineHeight: 1.25 }}>{children}</Text>
     </View>
   )
 }
@@ -591,14 +611,14 @@ function WsBlock({
     return (
       <View style={[s.wsHeadingRow, { marginTop: sc.gap + 4 }]} wrap={false} minPresenceAhead={70}>
         <View style={[s.wsHeadingBar, { height: sc.head + 3, backgroundColor: tc.deep }]} />
-        <Text style={{ fontSize: sc.head, fontFamily: 'Helvetica-Bold', color: tc.deep }}>{text}</Text>
+        <Text style={{ fontSize: sc.head, lineHeight: 1.25, fontFamily: 'Helvetica-Bold', color: tc.deep }}>{text}</Text>
       </View>
     )
 
   if (kind === 'instruction')
     return (
       <View style={{ backgroundColor: tc.light, borderRadius: 8, paddingVertical: 6, paddingHorizontal: 9, marginTop: 7, marginBottom: 2 }}>
-        <Text style={{ fontSize: sc.q - 0.5, color: tc.deep }}>{text}</Text>
+        <Text style={{ fontSize: sc.q - 0.5, lineHeight: 1.35, color: tc.deep }}>{text}</Text>
       </View>
     )
 
@@ -642,7 +662,7 @@ function WsBlock({
             <View key={i} style={s.wsCheckItem}>
               <BigBox size={sc.box} color={tc.deep} />
               {g ? <View style={{ marginRight: 6 }}>{g}</View> : null}
-              <Text style={{ flex: 1, fontSize: sc.q }}>{it}</Text>
+              <Text style={{ flex: 1, fontSize: sc.q, lineHeight: 1.3 }}>{it}</Text>
             </View>
           )
         })}
@@ -681,7 +701,7 @@ function WsBlock({
         <View style={{ marginTop: 6, borderRadius: 8, overflow: 'hidden', borderWidth: 0.8, borderColor: '#c8cfd8' }}>
           <View style={{ flexDirection: 'row' }}>
             {cols.map((c, i) => (
-              <Text key={i} style={[s.wsTableCell, { backgroundColor: tc.deep, color: '#fff', fontFamily: 'Helvetica-Bold', fontSize: sc.q - 1.5 }]}>
+              <Text key={i} style={[s.wsTableCell, { backgroundColor: tc.deep, color: '#fff', fontFamily: 'Helvetica-Bold', fontSize: sc.q - 1.5, lineHeight: 1.25 }]}>
                 {c}
               </Text>
             ))}
@@ -725,6 +745,7 @@ function WsBlock({
                   color: '#fff',
                   fontFamily: 'Helvetica-Bold',
                   fontSize: sc.q - 1,
+                  lineHeight: 1.25,
                   paddingVertical: 4,
                   paddingHorizontal: 6,
                   textAlign: 'center',
@@ -776,6 +797,7 @@ function WsBlock({
                 marginRight: 5,
                 marginBottom: 5,
                 fontSize: sc.q - 1,
+                lineHeight: 1.25,
                 fontFamily: 'Helvetica-Bold',
               }}
             >
@@ -794,7 +816,7 @@ function WsBlock({
           {(items ?? []).map((st, i) => (
             <View key={i} style={{ marginTop: 7 }}>
               <View style={{ flexDirection: 'row', alignItems: 'flex-end' }}>
-                <Text style={{ fontSize: sc.q, fontFamily: 'Helvetica-BoldOblique', color: tc.deep }}>{st} </Text>
+                <Text style={{ fontSize: sc.q, lineHeight: 1.3, fontFamily: 'Helvetica-BoldOblique', color: tc.deep }}>{st} </Text>
                 <View style={{ flex: 1, borderBottomWidth: 1.4, borderBottomColor: '#cdd5df', height: sc.q + 2 }} />
               </View>
               {Array.from({ length: Math.max(0, (lines ?? 1) - 1) }).map((_, r) => (
@@ -820,6 +842,7 @@ function WsBlock({
                   <Text
                     style={{
                       fontSize: sc.q - 1.5,
+                      lineHeight: 1.25,
                       fontFamily: 'Helvetica-Bold',
                       color: tc.deep,
                       marginBottom: 2,
@@ -877,7 +900,7 @@ function WsBlock({
                   ) : null}
                 </View>
                 <View style={{ flex: 1, paddingBottom: 9, paddingLeft: 6 }}>
-                  {filled ? <Text style={{ fontSize: sc.q, paddingTop: 2 }}>{label}</Text> : null}
+                  {filled ? <Text style={{ fontSize: sc.q, lineHeight: 1.3, paddingTop: 2 }}>{label}</Text> : null}
                   {Array.from({ length: extra }).map((_, r) => (
                     <View key={r} style={{ borderBottomWidth: 1.3, borderBottomColor: '#cdd5df', height: sc.line * 0.8 }} />
                   ))}
@@ -920,7 +943,7 @@ function WsBlock({
           <View style={{ flex: 1, marginLeft: 10 }}>
             {rev.map((lab, i) => (
               <View key={i} style={{ height: rowH, justifyContent: 'center' }}>
-                <Text style={{ fontSize: sc.q - 1, fontFamily: 'Helvetica-Bold' }}>{lab}</Text>
+                <Text style={{ fontSize: sc.q - 1, lineHeight: 1.25, fontFamily: 'Helvetica-Bold' }}>{lab}</Text>
                 <View style={{ borderBottomWidth: 1.2, borderBottomColor: '#cdd5df', height: sc.line * 0.55 }} />
               </View>
             ))}
@@ -959,7 +982,7 @@ function WsBlock({
           </View>
           {items && items.length ? (
             <View style={{ width: 132, marginLeft: 10 }}>
-              <Text style={{ fontSize: sc.q - 1.5, fontFamily: 'Helvetica-Bold', marginBottom: 5 }}>Legende</Text>
+              <Text style={{ fontSize: sc.q - 1.5, lineHeight: 1.25, fontFamily: 'Helvetica-Bold', marginBottom: 5 }}>Legende</Text>
               {items.map((it, i) => (
                 <View key={i} style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 6 }}>
                   <View
@@ -971,7 +994,7 @@ function WsBlock({
                       backgroundColor: LEGEND_COLORS[i % LEGEND_COLORS.length],
                     }}
                   />
-                  <Text style={{ fontSize: sc.q - 1.5, flex: 1 }}>{it}</Text>
+                  <Text style={{ fontSize: sc.q - 1.5, lineHeight: 1.25, flex: 1 }}>{it}</Text>
                 </View>
               ))}
             </View>
@@ -1019,7 +1042,7 @@ function WsBlock({
                     marginRight: 4,
                   }}
                 />
-                <Text style={{ fontSize: sc.q - 2 }}>
+                <Text style={{ fontSize: sc.q - 2, lineHeight: 1.25 }}>
                   {n - i}. {lab}
                 </Text>
               </View>
@@ -1063,7 +1086,7 @@ function WsBlock({
           {/* Centre + branch labels laid over the Svg (SVG text is unreliable
               in react-pdf), so keep labels short. */}
           <View style={{ position: 'absolute', left: cx - 60, width: 120, top: cy - 7, alignItems: 'center' }}>
-            <Text style={{ color: '#fff', fontFamily: 'Helvetica-Bold', fontSize: sc.q - 1 }}>{text || 'Ich'}</Text>
+            <Text style={{ color: '#fff', fontFamily: 'Helvetica-Bold', fontSize: sc.q - 1, lineHeight: 1.2 }}>{text || 'Ich'}</Text>
           </View>
           {branches.map((lab, i) => {
             if (!lab) return null
@@ -1072,7 +1095,7 @@ function WsBlock({
             const by = cy + Math.sin(a) * (H / 2 - bh / 2 - 6)
             return (
               <View key={'t' + i} style={{ position: 'absolute', left: bx - bw / 2, width: bw, top: by - 6, alignItems: 'center' }}>
-                <Text style={{ fontSize: sc.q - 2.5, color: C.ink }}>{lab}</Text>
+                <Text style={{ fontSize: sc.q - 2.5, lineHeight: 1.2, color: C.ink }}>{lab}</Text>
               </View>
             )
           })}
@@ -1090,48 +1113,44 @@ function WorksheetPage({ material: m }: { material: Material }) {
   let task = 0
   return (
     <Page size="A4" style={s.page}>
-      <View style={[s.wsAccent, { backgroundColor: tc.deep }]} />
-      <View style={s.wsBand}>
-        <View style={[s.bannerIcon, { width: 40, height: 40, borderRadius: 20, backgroundColor: tc.deep, marginRight: 11 }]}>
-          <Icon name={themeIconName(m.themes[0])} size={22} color="#fff" />
+      <View style={s.fliess}>
+        <View style={[s.wsAccent, { backgroundColor: tc.deep }]} />
+        <View style={s.wsBand}>
+          <View style={[s.bannerIcon, { width: 40, height: 40, borderRadius: 20, backgroundColor: tc.deep, marginRight: 11 }]}>
+            <Icon name={themeIconName(m.themes[0])} size={22} color="#fff" />
+          </View>
+          <View style={{ flex: 1 }}>
+            <Text style={[s.wsKicker, { color: tc.deep }]}>ARBEITSBLATT</Text>
+            <Text style={[s.wsTitle, { fontSize: sc.head + 4 }]}>{w.title || m.title}</Text>
+          </View>
         </View>
-        <View style={{ flex: 1 }}>
-          <Text style={[s.wsKicker, { color: tc.deep }]}>ARBEITSBLATT</Text>
-          <Text style={[s.wsTitle, { fontSize: sc.head + 4 }]}>{w.title || m.title}</Text>
+
+        {/* Name / Datum fields */}
+        <View style={{ flexDirection: 'row', marginTop: 10, marginBottom: 8 }}>
+          <View style={[s.wsField, { borderColor: tc.deep, flex: 1 }]}>
+            <Text style={{ color: tc.deep, fontFamily: 'Helvetica-Bold', fontSize: sc.q - 0.5 }}>Numm:</Text>
+            <Text> </Text>
+          </View>
+          <View style={[s.wsField, { borderColor: tc.deep, width: 150, marginRight: 0 }]}>
+            <Text style={{ color: tc.deep, fontFamily: 'Helvetica-Bold', fontSize: sc.q - 0.5 }}>Datum:</Text>
+            <Text> </Text>
+          </View>
         </View>
+
+        {w.intro ? (
+          <View style={[s.wsIntro, { backgroundColor: tc.light }]}>
+            <Text style={{ fontSize: sc.q, lineHeight: 1.35, color: C.ink }}>{w.intro}</Text>
+          </View>
+        ) : null}
+
+        {w.blocks.map((b, i) => {
+          const isTask = b.kind !== 'heading' && b.kind !== 'instruction'
+          if (isTask) task += 1
+          return <WsBlock key={i} block={b} sc={sc} tc={tc} num={isTask ? task : null} />
+        })}
       </View>
 
-      {/* Name / Datum fields */}
-      <View style={{ flexDirection: 'row', marginTop: 10, marginBottom: 8 }}>
-        <View style={[s.wsField, { borderColor: tc.deep, flex: 1 }]}>
-          <Text style={{ color: tc.deep, fontFamily: 'Helvetica-Bold', fontSize: sc.q - 0.5 }}>Numm:</Text>
-          <Text> </Text>
-        </View>
-        <View style={[s.wsField, { borderColor: tc.deep, width: 150, marginRight: 0 }]}>
-          <Text style={{ color: tc.deep, fontFamily: 'Helvetica-Bold', fontSize: sc.q - 0.5 }}>Datum:</Text>
-          <Text> </Text>
-        </View>
-      </View>
-
-      {w.intro ? (
-        <View style={[s.wsIntro, { backgroundColor: tc.light }]}>
-          <Text style={{ fontSize: sc.q, color: C.ink }}>{w.intro}</Text>
-        </View>
-      ) : null}
-
-      {w.blocks.map((b, i) => {
-        const isTask = b.kind !== 'heading' && b.kind !== 'instruction'
-        if (isTask) task += 1
-        return <WsBlock key={i} block={b} sc={sc} tc={tc} num={isTask ? task : null} />
-      })}
-
-      <Text
-        style={s.footer}
-        render={({ pageNumber, totalPages }) =>
-          `ISA-App · Arbeitsblatt · ${m.title}                          ${pageNumber} / ${totalPages}`
-        }
-        fixed
-      />
+      <Fuss text={`CDSE Toolbox · Arbeitsblatt · ${m.title}`} />
     </Page>
   )
 }
@@ -1159,195 +1178,195 @@ export function MaterialDocument({ material: m }: { material: Material }) {
     >
       {/* ---------------- Page 1 · Deckblatt ---------------- */}
       <Page size="A4" style={s.page}>
-        {/* Visual title banner with theme icon + badges */}
-        <View style={[s.banner, { backgroundColor: tc.light, borderLeftWidth: 5, borderLeftColor: tc.deep }]}>
-          <View style={[s.bannerIcon, { backgroundColor: tc.deep }]}>
-            <Icon name={themeIconName(m.themes[0])} size={26} color="#fff" />
+        <View style={s.fliess}>
+          {/* Visual title banner with theme icon + badges */}
+          <View style={[s.banner, { backgroundColor: tc.light, borderLeftWidth: 5, borderLeftColor: tc.deep }]}>
+            <View style={[s.bannerIcon, { backgroundColor: tc.deep }]}>
+              <Icon name={themeIconName(m.themes[0])} size={26} color="#fff" />
+            </View>
+            <View style={{ flex: 1 }}>
+              <Text style={[s.kicker, { color: tc.deep }]}>ISA · MATERIAL</Text>
+              <Text style={s.bannerTitle}>{m.title}</Text>
+              <View style={s.badgeRow}>
+                {m.ageLevels.map((a) => (
+                  <Text key={a} style={[s.badge, { backgroundColor: tc.deep }]}>{a}</Text>
+                ))}
+                {m.type.map((t) => (
+                  <Text key={t} style={[s.badgeOutline, { borderColor: tc.deep, color: tc.deep }]}>
+                    {materialTypes.find((x) => x.id === t)?.labelDe ?? t}
+                  </Text>
+                ))}
+                {m.worksheet ? (
+                  <Text style={[s.badge, { backgroundColor: C.greenDeep }]}>+ Arbeitsblatt</Text>
+                ) : null}
+              </View>
+            </View>
           </View>
-          <View style={{ flex: 1 }}>
-            <Text style={[s.kicker, { color: tc.deep }]}>ISA · MATERIAL</Text>
-            <Text style={s.bannerTitle}>{m.title}</Text>
-            <View style={s.badgeRow}>
-              {m.ageLevels.map((a) => (
-                <Text key={a} style={[s.badge, { backgroundColor: tc.deep }]}>{a}</Text>
+
+          {/* Blue block: Titel / Autor / Altersstuf */}
+          <View style={[s.block, s.blockBlue]}>
+            <View style={s.row}>
+              <Text style={s.label}>Titel:</Text>
+              <Text style={[s.value, { fontFamily: 'Helvetica-Bold' }]}>{m.title}</Text>
+            </View>
+            <View style={s.row}>
+              <Text style={s.label}>Duerchgefouert vum</Text>
+              <Text style={s.value}>{m.author || '—'}</Text>
+            </View>
+            <View style={s.row}>
+              <Text style={s.label}>Altersstuf:</Text>
+              <View style={[s.value, s.inlineChecks]}>
+                {ageLevels.map((a) => (
+                  <Check key={a.id} checked={has(m.ageLevels, a.id)} label={a.label} />
+                ))}
+              </View>
+            </View>
+          </View>
+
+          {/* Description */}
+          <Text style={s.sectionLabel}>Kuerz Beschreiwung:</Text>
+          <Text style={s.para}>{m.shortDescription}</Text>
+
+          {/* Gray block: Typ + Participants */}
+          <View style={[s.block, s.blockGray]}>
+            <View style={[s.inlineChecks, { marginBottom: 6 }]}>
+              {materialTypes.map((t) => (
+                <Check key={t.id} checked={has(m.type, t.id)} label={t.id} />
               ))}
-              {m.type.map((t) => (
-                <Text key={t} style={[s.badgeOutline, { borderColor: tc.deep, color: tc.deep }]}>
-                  {materialTypes.find((x) => x.id === t)?.labelDe ?? t}
-                </Text>
-              ))}
-              {m.worksheet ? (
-                <Text style={[s.badge, { backgroundColor: C.greenDeep }]}>+ Arbeitsblatt</Text>
-              ) : null}
+            </View>
+            <View style={s.row}>
+              <Text style={s.labelInk}>Participants:</Text>
+              <View style={s.value}>
+                {participantModes.map((p) => {
+                  const found = m.participants.find((x) => x.mode === p.id)
+                  const lbl = found?.note ? `${p.id} (${found.note})` : p.id
+                  return <Check key={p.id} checked={!!found} label={lbl} />
+                })}
+              </View>
+            </View>
+          </View>
+
+          {/* Salmon block: Tags + Themeberäich (with mini icons) */}
+          <View style={[s.block, s.blockSalmon]}>
+            <View style={s.row}>
+              <Text style={s.labelInk}>Tags:</Text>
+              <Text style={s.value}>
+                {m.tags.length ? m.tags.map((t) => `#${t}`).join(' ') : '—'}
+              </Text>
+            </View>
+            <View style={[s.row, { alignItems: 'center' }]}>
+              <Text style={s.labelInk}>Themeberäich:</Text>
+              <View style={[s.value, { flexDirection: 'row', flexWrap: 'wrap' }]}>
+                {m.themes.length
+                  ? m.themes.map((t) => {
+                      const c = themeColor(t)
+                      return (
+                        <View key={t} style={[s.themeChip, { backgroundColor: c.light, borderWidth: 1, borderColor: c.deep }]}>
+                          <Icon name={themeIconName(t)} size={11} color={c.deep} />
+                          <Text style={[s.themeChipText, { color: c.deep }]}>{themeLabel(t)}</Text>
+                        </View>
+                      )
+                    })
+                  : <Text>—</Text>}
+              </View>
             </View>
           </View>
         </View>
 
-        {/* Blue block: Titel / Autor / Altersstuf */}
-        <View style={[s.block, s.blockBlue]}>
-          <View style={s.row}>
-            <Text style={s.label}>Titel:</Text>
-            <Text style={[s.value, { fontFamily: 'Helvetica-Bold' }]}>{m.title}</Text>
-          </View>
-          <View style={s.row}>
-            <Text style={s.label}>Duerchgefouert vum</Text>
-            <Text style={s.value}>{m.author || '—'}</Text>
-          </View>
-          <View style={s.row}>
-            <Text style={s.label}>Altersstuf:</Text>
-            <View style={[s.value, s.inlineChecks]}>
-              {ageLevels.map((a) => (
-                <Check key={a.id} checked={has(m.ageLevels, a.id)} label={a.label} />
-              ))}
-            </View>
-          </View>
-        </View>
-
-        {/* Description */}
-        <Text style={s.sectionLabel}>Kuerz Beschreiwung:</Text>
-        <Text style={s.para}>{m.shortDescription}</Text>
-
-        {/* Gray block: Typ + Participants */}
-        <View style={[s.block, s.blockGray]}>
-          <View style={[s.inlineChecks, { marginBottom: 6 }]}>
-            {materialTypes.map((t) => (
-              <Check key={t.id} checked={has(m.type, t.id)} label={t.id} />
-            ))}
-          </View>
-          <View style={s.row}>
-            <Text style={s.labelInk}>Participants:</Text>
-            <View style={s.value}>
-              {participantModes.map((p) => {
-                const found = m.participants.find((x) => x.mode === p.id)
-                const lbl = found?.note ? `${p.id} (${found.note})` : p.id
-                return <Check key={p.id} checked={!!found} label={lbl} />
-              })}
-            </View>
-          </View>
-        </View>
-
-        {/* Salmon block: Tags + Themeberäich (with mini icons) */}
-        <View style={[s.block, s.blockSalmon]}>
-          <View style={s.row}>
-            <Text style={s.labelInk}>Tags:</Text>
-            <Text style={s.value}>
-              {m.tags.length ? m.tags.map((t) => `#${t}`).join(' ') : '—'}
-            </Text>
-          </View>
-          <View style={[s.row, { alignItems: 'center' }]}>
-            <Text style={s.labelInk}>Themeberäich:</Text>
-            <View style={[s.value, { flexDirection: 'row', flexWrap: 'wrap' }]}>
-              {m.themes.length
-                ? m.themes.map((t) => {
-                    const c = themeColor(t)
-                    return (
-                      <View key={t} style={[s.themeChip, { backgroundColor: c.light, borderWidth: 1, borderColor: c.deep }]}>
-                        <Icon name={themeIconName(t)} size={11} color={c.deep} />
-                        <Text style={[s.themeChipText, { color: c.deep }]}>{themeLabel(t)}</Text>
-                      </View>
-                    )
-                  })
-                : <Text>—</Text>}
-            </View>
-          </View>
-        </View>
-
-        <Text
-          style={s.footer}
-          render={({ pageNumber, totalPages }) =>
-            `ISA-App · ${m.title}                                    ${pageNumber} / ${totalPages}`
-          }
-          fixed
-        />
+        <Fuss text={`CDSE Toolbox · ${m.title}`} />
       </Page>
 
       {/* ---------------- Page 2 · Oflaf + Ziler ---------------- */}
       <Page size="A4" style={s.page}>
-        <SectionHead color={tc.deep}>Oflaf</SectionHead>
+        <View style={s.fliess}>
+          <SectionHead color={tc.deep}>Oflaf</SectionHead>
 
-        {m.ablauf.map((phase, i) => (
-          <View key={i} style={[s.ablaufBox, { borderLeftColor: tc.deep }]} wrap>
-            {phase.title ? <Text style={s.phaseTitle}>{phase.title}</Text> : null}
-            <Text>{phase.text}</Text>
-          </View>
-        ))}
-
-        {/* Dauer / Material */}
-        <View style={[s.metaRow, { marginTop: 2, marginBottom: 8 }]}>
-          <View style={[s.metaCell, { flex: 1 }]}>
-            <Text style={s.phaseTitle}>Dauer</Text>
-            <Text>{m.duration || '—'}</Text>
-          </View>
-          <View style={[s.metaCell, { flex: 2, borderRightWidth: 0 }]}>
-            <Text style={s.phaseTitle}>Material</Text>
-            <Text>{m.materialsNeeded || '—'}</Text>
-          </View>
-        </View>
-
-        {m.remark ? (
-          <View style={[s.ablaufBox, { marginBottom: 8, borderLeftColor: C.faint }]}>
-            <Text style={s.phaseTitle}>Umierkung</Text>
-            <Text>{m.remark}</Text>
-          </View>
-        ) : null}
-
-        {/* ETEP-Stuf */}
-        <Text style={s.sectionLabel}>Méiglech ETEP-Stuf:</Text>
-        <View style={[s.inlineChecks, { marginBottom: 8 }]}>
-          {etepStufen.map((e) => (
-            <Check key={e.id} checked={has(m.etepStufen, e.id)} label={e.label} />
+          {/* kurze Phasen nie über eine Seite zerteilen, lange dürfen umbrechen */}
+          {m.ablauf.map((phase, i) => (
+            <View key={i} style={[s.ablaufBox, { borderLeftColor: tc.deep }]} wrap={phase.text.length > 700}>
+              {phase.title ? <Text style={s.phaseTitle}>{phase.title}</Text> : null}
+              <Text>{phase.text}</Text>
+            </View>
           ))}
-        </View>
 
-        {/* ELDiB grid */}
-        <Text style={s.sectionLabel}>Méiglech ELDiB-Ziler:</Text>
-        <View style={s.gridHeader}>
-          {eldibDomains.map((d) => (
-            <Text
-              key={d.id}
-              style={[s.gridHeadCell, { backgroundColor: d.color }]}
-            >
-              {d.label}
-            </Text>
-          ))}
-        </View>
-        {eldibBands.map((band, bi) => (
-          <View key={bi} style={s.band} wrap={false}>
-            {eldibDomains.map((d) => (
-              <View key={d.id} style={s.bandCell}>
-                {goalsInBand(band, d.id).map((g) => (
-                  <View key={g.id} style={s.goal}>
-                    <Box checked={goalSet.has(g.id)} />
-                    <Text style={s.goalText}>
-                      {/* geschütztes Leerzeichen: Code bleibt beim Begriff (kein „[-“-Umbruch) */}
-                      {`${g.label}\u00a0[${g.id}]`}
-                    </Text>
+          {/* Dauer / Material */}
+          <View style={[s.metaRow, { marginTop: 2, marginBottom: 8 }]} wrap={false}>
+            <View style={[s.metaCell, { flex: 1 }]}>
+              <Text style={s.phaseTitle}>Dauer</Text>
+              <Text>{m.duration || '—'}</Text>
+            </View>
+            <View style={[s.metaCell, { flex: 2, borderRightWidth: 0 }]}>
+              <Text style={s.phaseTitle}>Material</Text>
+              <Text>{m.materialsNeeded || '—'}</Text>
+            </View>
+          </View>
+
+          {m.remark ? (
+            <View style={[s.ablaufBox, { marginBottom: 8, borderLeftColor: C.faint }]} wrap={m.remark.length > 700}>
+              <Text style={s.phaseTitle}>Umierkung</Text>
+              <Text>{m.remark}</Text>
+            </View>
+          ) : null}
+
+          {/* ETEP-Stuf */}
+          <View wrap={false}>
+            <Text style={s.sectionLabel}>Méiglech ETEP-Stuf:</Text>
+            <View style={[s.inlineChecks, { marginBottom: 8 }]}>
+              {etepStufen.map((e) => (
+                <Check key={e.id} checked={has(m.etepStufen, e.id)} label={e.label} />
+              ))}
+            </View>
+          </View>
+
+          {/* ELDiB grid: Überschrift und Kopfzeile bleiben mit dem ersten Band zusammen */}
+          {eldibBands.map((band, bi) => {
+            const zeile = (
+              <View key={bi} style={s.band} wrap={false}>
+                {eldibDomains.map((d) => (
+                  <View key={d.id} style={s.bandCell}>
+                    {goalsInBand(band, d.id).map((g) => (
+                      <View key={g.id} style={s.goal}>
+                        <Box checked={goalSet.has(g.id)} />
+                        <Text style={s.goalText}>
+                          {/* geschütztes Leerzeichen: Code bleibt beim Begriff (kein „[-“-Umbruch) */}
+                          {`${g.label}\u00a0[${g.id}]`}
+                        </Text>
+                      </View>
+                    ))}
                   </View>
                 ))}
               </View>
-            ))}
-          </View>
-        ))}
+            )
+            if (bi > 0) return zeile
+            return (
+              <View key={bi} wrap={false}>
+                <Text style={s.sectionLabel}>Méiglech ELDiB-Ziler:</Text>
+                <View style={s.gridHeader}>
+                  {eldibDomains.map((d) => (
+                    <Text key={d.id} style={[s.gridHeadCell, { backgroundColor: d.color }]}>
+                      {d.label}
+                    </Text>
+                  ))}
+                </View>
+                {zeile}
+              </View>
+            )
+          })}
 
-        {/* Weider passend Piècen */}
-        {m.attachments?.length ? (
-          <View style={{ marginTop: 10 }}>
-            <Text style={s.sectionLabel}>Weider passend Piècen:</Text>
-            {m.attachments.map((a, i) => (
-              <Text key={i} style={s.link}>
-                • {a.label} — {a.href}
-              </Text>
-            ))}
-          </View>
-        ) : null}
+          {/* Weider passend Piècen */}
+          {m.attachments?.length ? (
+            <View style={{ marginTop: 10 }} wrap={false}>
+              <Text style={s.sectionLabel}>Weider passend Piècen:</Text>
+              {m.attachments.map((a, i) => (
+                <Text key={i} style={s.link}>
+                  • {a.label} — {a.href}
+                </Text>
+              ))}
+            </View>
+          ) : null}
+        </View>
 
-        <Text
-          style={s.footer}
-          render={({ pageNumber, totalPages }) =>
-            `ISA-App · ${m.title}                                    ${pageNumber} / ${totalPages}`
-          }
-          fixed
-        />
+        <Fuss text={`CDSE Toolbox · ${m.title}`} />
       </Page>
 
       {/* ---------------- Page 3 · Arbeitsblatt (optional) ---------------- */}
