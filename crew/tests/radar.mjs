@@ -63,6 +63,8 @@ for (const [vpName, vp, look] of RUNS) {
     // Session starten (Crew-Größe 5 ist Standard)
     await page.evaluate(() => { window.CREW.debug.startMission('radar'); });
     await waitText(page, 'Wie viele spielen heute mit?');
+    // Hochformat: Crew mit 8 Personen (Sitzkreis mit mehr Plätzen prüfen)
+    if (vpName === 'ipadPortrait') for (let i = 0; i < 3; i++) await page.locator('.stepper button').nth(1).click();
     await clickText(page, 'Los geht');
     await waitText(page, 'inneres Wetter');
     await clickText(page, 'Überspringen');
@@ -90,13 +92,13 @@ for (const [vpName, vp, look] of RUNS) {
     await shot(page, tag('04-mix'), 1300);
     await check('mix');
     await clickText(page, 'Wort-Upgrade');
-    await waitText(page, 'Wut hat Stufen', 5000);
+    await waitText(page, 'Wut hat viele Stufen', 5000);
     await page.locator('.radar-word').nth(2).click();
     await shot(page, tag('05-upgrade'));
     await check('upgrade');
     // Anderes Gefühl wählen
     await page.locator('.radar-switch .chip').first().click();
-    await waitText(page, 'Angst hat Stufen', 5000);
+    await waitText(page, 'Angst hat viele Stufen', 5000);
     await clickText(page, 'Weiter');
     await waitText(page, 'Wie stark?', 5000);
     await waitText(page, 'direkt links von der Lehrkraft');

@@ -188,6 +188,12 @@
   }
 
   /* ---------- kleine Bausteine ---------- */
+  // Bildschirm aufbauen + eigene Klasse (für Look-Feinheiten, z. B. Pixel-Schrift ohne Ligaturen)
+  function scr(ctx, children, opts) {
+    const w = ctx.screen(children, opts);
+    w.classList.add('radar-screen');
+    return w;
+  }
   function pips(h, r, total) {
     return h('span', { class: 'radar-pips', 'aria-hidden': 'true' }, Array.from({ length: total }, (_, i) => h('i', { class: i < r ? 'done' : i === r ? 'now' : '' })));
   }
@@ -211,7 +217,7 @@
     const step = (n, title, text, extra) => h('div', { class: 'radar-step card' },
       h('span', { class: 'radar-stepnum' }, String(n)),
       h('div', { class: 'stack', style: { gap: '6px' } }, h('b', { class: 'radar-steptitle' }, title), h('span', { class: 'muted' }, text), extra || null));
-    const w = ctx.screen([
+    const w = scr(ctx, [
       h('div', { class: 'stack enter', style: { gap: '6px' } }, h('span', { class: 'eyebrow' }, 'Mission · Gefühls-Radar'), h('h2', null, 'Gleiche Situation. Gleiches Gefühl?')),
       h('div', { class: 'radar-intro enter-2' },
         h('div', { class: 'radar-dialbox' }, d.el),
@@ -227,7 +233,7 @@
   async function stepFeeling(ctx, card, r, total) {
     const { h, ui } = ctx;
     const N = ctx.crewSize;
-    const w1 = ctx.screen([
+    const w1 = scr(ctx, [
       head(ctx, r, total, 'Welches Gefühl?', ui.paddleHint('emo')),
       ui.say(card.text, { eyebrow: 'Situation', cls: 'radar-sitcard' }),
       h('div', { class: 'radar-legend enter-2', 'aria-hidden': 'true' }, EMOS.map((e) => h('span', { class: 'radar-lg' }, emoBadge(e.id, 30), h('span', null, e.id)))),
@@ -239,7 +245,7 @@
     await ui.threeTwoOne('Zeigt her!');
     const ta = ui.tally(EMOS.map((e) => ({ id: e.id, label: e.id, icon: emoBadge(e.id, 46) })), { max: N });
     ta.el.querySelectorAll('.t-item').forEach((it, i) => { it.classList.add('radar-titem'); it.style.setProperty('--emo', EMOS[i].color); });
-    const w2 = ctx.screen([
+    const w2 = scr(ctx, [
       head(ctx, r, total, 'Was zeigt die Crew?'),
       h('p', { class: 'muted' }, 'Tippe mit, wie oft jedes Gefühl hochgehalten wird.'),
       h('div', { class: 'radar-tally' }, ta.el),
@@ -263,7 +269,7 @@
       return seg;
     });
     const bar = h('div', { class: 'radar-mix', role: 'img', 'aria-label': 'Gefühle-Mix: ' + shown.map((e) => e.id + ' ' + counts[e.id]).join(', ') }, segs);
-    const w3 = ctx.screen([
+    const w3 = scr(ctx, [
       h('div', { class: 'stack enter', style: { alignItems: 'center', textAlign: 'center', gap: '8px' } }, h('span', { class: 'eyebrow' }, 'Gefühle-Mix'), h('h2', null, title)),
       bar,
       h('div', { class: 'row center radar-legend2' }, shown.map((e, i) => h('span', { class: 'radar-lchip pop', style: { animationDelay: 300 + i * 90 + 'ms' } }, emoBadge(e.id, 34), h('span', null, e.id), h('b', null, '× ' + counts[e.id])))),
@@ -304,7 +310,7 @@
       });
       CREW.util.append(area, [
         h('div', { class: 'row between' },
-          h('div', { class: 'row', style: { gap: '14px' } }, emoBadge(cur.id, 60), h('h2', null, cur.id + ' hat Stufen.')),
+          h('div', { class: 'row', style: { gap: '14px' } }, emoBadge(cur.id, 60), h('h2', null, cur.id + ' hat viele Stufen.')),
           options.length > 1 ? h('div', { class: 'row radar-switch' }, options.filter((e) => e !== cur).map((e) => {
             const c = h('button', { type: 'button', class: 'chip', 'aria-label': 'Wörter für ' + e.id }, emoBadge(e.id, 28), e.id);
             c.addEventListener('click', () => { CREW.sound.play('tap'); cur = e; draw(); });
@@ -316,7 +322,7 @@
       area.querySelector('.radar-scale').style.setProperty('--emo', cur.color);
     };
     draw();
-    const w = ctx.screen([
+    const w = scr(ctx, [
       h('div', { class: 'stack enter', style: { gap: '6px' } }, h('span', { class: 'eyebrow' }, 'Gefühls-Wort-Upgrade'), h('p', { class: 'lead' }, 'Welches Wort passt für dich am besten? Wer will, sagt es laut.')),
       area,
     ]);
@@ -332,7 +338,7 @@
     const mini = dial({ needle: false, sweep: false });
     const st = ui.stepper({ value: 5, min: 0, max: 10, onChange: (v) => mini.setPred(v) });
     mini.setPred(5);
-    const w1 = ctx.screen([
+    const w1 = scr(ctx, [
       head(ctx, r, total, 'Wie stark?', ui.paddleHint('zahl', 'Stärke')),
       situationStrip(ctx, card),
       h('div', { class: 'radar-profi enter-2' },
@@ -353,7 +359,7 @@
 
     await ui.threeTwoOne('Zeigt her!');
     const vp = ui.valuePad({ count: N, min: 0, max: 10, placeholder: 'Tippe die gezeigten Zahlen ein …' });
-    const w2 = ctx.screen([
+    const w2 = scr(ctx, [
       head(ctx, r, total, 'Welche Zahlen seht ihr?'),
       h('p', { class: 'muted' }, 'Tippe alle Zahlen ein. Die Reihenfolge ist egal.'),
       h('div', { class: 'card radar-pad' }, vp.el),
@@ -372,7 +378,7 @@
     const avgNum = h('span', { class: 'radar-big' }, '0');
     const verdict = h('div', { class: 'radar-verdict stack' });
     const last = r + 1 >= total;
-    const w3 = ctx.screen([
+    const w3 = scr(ctx, [
       head(ctx, r, total, 'Radar-Check'),
       h('div', { class: 'radar-reveal' },
         h('div', { class: 'radar-dialbox' }, d.el),
@@ -425,13 +431,14 @@
   async function summaryScreen(ctx, stats, summary) {
     const { h, ui } = ctx;
     const emos = EMOS.filter((e) => stats.emoSeen.has(e.id));
-    const tile = (num, label, extra) => h('div', { class: 'card radar-tile pop' }, h('span', { class: 'radar-big' }, String(num)), h('span', { class: 'lbl' }, label), extra || null);
-    const w = ctx.screen([
+    const tile = (num, label) => h('div', { class: 'card radar-tile pop' }, h('span', { class: 'radar-big' }, String(num)), h('span', { class: 'lbl' }, label));
+    const w = scr(ctx, [
       h('div', { class: 'stack enter', style: { alignItems: 'center', textAlign: 'center', gap: '8px' } }, h('span', { class: 'eyebrow' }, 'Radar-Bilanz'), h('h2', null, summary)),
       h('div', { class: 'radar-stats' },
         tile(stats.played, stats.played === 1 ? 'Runde gespielt' : 'Runden gespielt'),
         tile(stats.hits, stats.hits === 1 ? 'Volltreffer' : 'Volltreffer'),
-        tile(emos.length, emos.length === 1 ? 'Gefühl entdeckt' : 'Gefühle entdeckt', emos.length ? h('div', { class: 'row center', style: { gap: '6px' } }, emos.map((e) => emoBadge(e.id, 30))) : null)),
+        tile(emos.length, emos.length === 1 ? 'Gefühl entdeckt' : 'Gefühle entdeckt')),
+      emos.length ? h('div', { class: 'row center radar-found enter-3' }, emos.map((e) => h('span', { class: 'radar-lg' }, emoBadge(e.id, 40), h('span', null, e.id)))) : null,
       h('p', { class: 'lead enter-3', style: { textAlign: 'center' } }, 'Gleiche Situation, anderes Gefühl. Jetzt wisst ihr mehr übereinander.'),
     ], { center: true, narrow: true });
     CREW.sound.play('reveal');

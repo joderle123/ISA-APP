@@ -1,0 +1,423 @@
+/* =========================================================
+   Mission „Clash“ – Friedenstreppe
+   Alle Klassen mit Präfix clash-. Farben nur über Tokens
+   (die SVG-Figuren haben eine eigene Palette).
+   ========================================================= */
+
+/* Eigene Hitze-Farben: warm = Orange, heiß = Pink/Rot (in allen Looks warm) */
+.app { --clash-warm: var(--warn, #ffb020); --clash-hot: var(--teamB); }
+.clash-hud, .clash-hud *, .clash-comic, .clash-comic *, .clash-q, .clash-opts, .clash-opt, .clash-feedback,
+.clash-finale, .clash-finale *, .clash-teams, .clash-teams *, .clash-stairs-card, .clash-stairs-card * { box-sizing: border-box; }
+
+/* ---------- Kopfzeile: Treppe + Hitze-Meter ---------- */
+.clash-hud { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 14px 22px; }
+.clash-stairs-wrap { flex: 1 1 300px; max-width: 520px; display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.clash-hud .clash-heat { flex: 1 1 250px; max-width: 420px; }
+.clash-title { gap: 4px; flex: 1 1 260px; }
+
+/* ---------- Hitze-Meter ---------- */
+.clash-heat { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.clash-heat-head { display: flex; align-items: center; gap: 8px; font-weight: 700; }
+.clash-heat-head .lbl {
+  font-family: var(--font-display); text-transform: var(--display-case); letter-spacing: var(--display-track);
+  font-size: 1.1em;
+}
+.clash-heat-head .word {
+  font-size: 0.72em; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em;
+  padding: 3px 10px; border-radius: 99px; border: 2px solid var(--line);
+  background: var(--good); color: var(--good-ink);
+  transition: background 300ms, color 300ms;
+}
+.clash-heat[data-level="1"] .word { background: var(--yellow); color: var(--yellow-ink); }
+.clash-heat[data-level="2"] .word { background: var(--clash-warm); color: var(--yellow-ink); }
+.clash-heat[data-level="3"] .word { background: var(--clash-hot); color: var(--teamB-ink); }
+.clash-heat-head .num {
+  margin-left: auto; font-family: var(--font-display); font-size: 1.7em; line-height: 1;
+  font-variant-numeric: tabular-nums; min-width: 2ch; text-align: right;
+}
+.clash-flame { color: var(--clash-warm); display: inline-grid; transform-origin: 50% 90%; }
+.clash-heat[data-level="0"] .clash-flame { color: var(--good); }
+.clash-heat[data-level="3"] .clash-flame { color: var(--clash-hot); animation: clash-flicker 0.7s ease-in-out infinite; }
+.clash-heat-track {
+  position: relative; height: 24px; overflow: hidden;
+  border: var(--bw) solid var(--line); border-radius: 99px;
+  background: linear-gradient(90deg, var(--good) 0%, var(--yellow) 40%, var(--clash-warm) 68%, var(--clash-hot) 100%);
+  box-shadow: 0 3px 0 var(--line);
+}
+.clash-heat-track::after {
+  content: ''; position: absolute; inset: 0; pointer-events: none;
+  background: repeating-linear-gradient(90deg, transparent 0 calc(25% - 2px), color-mix(in srgb, var(--ink) 35%, transparent) calc(25% - 2px) 25%);
+}
+.clash-heat-cover {
+  position: absolute; top: 0; right: 0; bottom: 0; display: block;
+  background: var(--panel);
+  transition: width 1000ms cubic-bezier(.2, .8, .2, 1);
+}
+.clash-heat.up .clash-heat-track { animation: clash-jolt 420ms ease both; }
+.clash-heat.down .clash-heat-track { animation: clash-cool 900ms ease both; }
+.app[data-look="pixel"] .clash-heat-track,
+.app[data-look="pixel"] .clash-heat-head .word { border-radius: 0; }
+.app[data-look="neon"] .clash-heat-track { box-shadow: 0 0 16px color-mix(in srgb, var(--clash-hot) 40%, transparent); }
+.app[data-look="neon"] .clash-heat-head .word { background: transparent; color: var(--good); border-color: currentColor; }
+.app[data-look="neon"] .clash-heat[data-level="1"] .word { color: var(--yellow); }
+.app[data-look="neon"] .clash-heat[data-level="2"] .word { color: var(--clash-warm); }
+.app[data-look="neon"] .clash-heat[data-level="3"] .word { color: var(--clash-hot); }
+
+/* ---------- Friedenstreppe ---------- */
+.clash-stairs { display: flex; align-items: flex-end; gap: 6px; }
+.clash-col { flex: 1 1 0; min-width: 0; display: flex; flex-direction: column; gap: 6px; }
+.clash-lanes { display: flex; flex-direction: column; gap: 4px; }
+.clash-col.s1 .clash-lanes { height: 48px; }
+.clash-col.s2 .clash-lanes { height: 56px; }
+.clash-col.s3 .clash-lanes { height: 64px; }
+.clash-col.s4 .clash-lanes { height: 72px; }
+.clash-col.s5 .clash-lanes { height: 80px; }
+.clash-cell {
+  flex: 1; min-height: 0; position: relative;
+  display: flex; align-items: center; justify-content: center; gap: 6px;
+  background: var(--panel2); color: var(--muted);
+  border: 2px solid var(--line); border-radius: var(--radius-sm);
+  transition: background 300ms, color 300ms;
+}
+.clash-cell.a { background: color-mix(in srgb, var(--teamA) 16%, var(--panel2)); }
+.clash-cell.b { background: color-mix(in srgb, var(--teamB) 16%, var(--panel2)); }
+.clash-cell.j { background: color-mix(in srgb, var(--good) 12%, var(--panel2)); }
+.clash-cell.done.a { background: var(--teamA); color: var(--teamA-ink); }
+.clash-cell.done.b { background: var(--teamB); color: var(--teamB-ink); }
+.clash-cell.done.j { background: var(--good); color: var(--good-ink); }
+.clash-cell.skip { background: transparent; border-style: dashed; color: var(--muted); }
+.clash-cell.now {
+  background: var(--yellow); color: var(--yellow-ink);
+  animation: clash-now 1.4s ease-in-out infinite;
+}
+.clash-cell .n { font-family: var(--font-display); font-size: 1.1em; line-height: 1; }
+.clash-cap {
+  text-align: center; font-size: 0.8em; font-weight: 700; color: var(--muted);
+  line-height: 1.1; overflow-wrap: anywhere; hyphens: auto;
+}
+.clash-stairs.big { gap: 8px; }
+.clash-stairs.big .s1 .clash-lanes { height: 100px; }
+.clash-stairs.big .s2 .clash-lanes { height: 122px; }
+.clash-stairs.big .s3 .clash-lanes { height: 144px; }
+.clash-stairs.big .s4 .clash-lanes { height: 166px; }
+.clash-stairs.big .s5 .clash-lanes { height: 188px; }
+.clash-stairs.big .clash-cell { border-width: var(--bw); box-shadow: 0 3px 0 var(--line); }
+.clash-stairs.big .clash-cell.j { flex-direction: column; }
+.clash-stairs-big { display: flex; flex-direction: column; gap: 10px; }
+.clash-legend { display: none; flex-wrap: wrap; gap: 4px 12px; font-size: 0.85em; color: var(--muted); }
+.clash-legend b { color: var(--yellow); font-family: var(--font-display); font-weight: 400; }
+.clash-stairs-card { display: flex; flex-direction: column; gap: 16px; }
+.app[data-look="neon"] .clash-cell.done.a { background: transparent; color: var(--teamA); border-color: var(--teamA); }
+.app[data-look="neon"] .clash-cell.done.b { background: transparent; color: var(--teamB); border-color: var(--teamB); }
+.app[data-look="neon"] .clash-cell.done.j { background: transparent; color: var(--good); border-color: var(--good); }
+.app[data-look="neon"] .clash-cell.now { background: transparent; color: var(--yellow); border-color: var(--yellow); }
+
+/* ---------- Teams ---------- */
+.clash-teams { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 14px; }
+.clash-teamcard { display: flex; align-items: center; gap: 16px; padding: 12px 18px 12px 12px; }
+.clash-teamcard.a { border-left: 10px solid var(--teamA); }
+.clash-teamcard.b { border-left: 10px solid var(--teamB); }
+.clash-teamcard .clash-ava { width: 92px; flex: none; }
+.clash-teamcard-name { font-size: 1.25em; }
+.clash-teamcard-name b { font-family: var(--font-display); font-weight: 400; font-size: 1.2em; }
+
+/* ---------- Comic ---------- */
+.clash-comic {
+  --clash-h: 0;
+  position: relative; overflow: hidden;
+  background-color: var(--bg2);
+  background-image: radial-gradient(color-mix(in srgb, var(--text) 9%, transparent) 1.4px, transparent 1.7px);
+  background-size: 16px 16px;
+  border: var(--bw) solid var(--line);
+  border-radius: calc(var(--radius) + 4px);
+  box-shadow: 0 var(--lift) 0 var(--line), var(--glow);
+  padding: 50px 18px 0;
+}
+.clash-comic::before {
+  content: ''; position: absolute; inset: 0; pointer-events: none;
+  background: radial-gradient(120% 95% at 50% 115%, color-mix(in srgb, var(--clash-hot) 60%, transparent), transparent 62%);
+  opacity: var(--clash-h);
+  transition: opacity 900ms ease;
+}
+.clash-caption {
+  position: absolute; top: 12px; left: 14px; z-index: 2;
+  background: var(--yellow); color: var(--yellow-ink);
+  border: 2px solid var(--line); border-radius: 6px;
+  box-shadow: 0 3px 0 var(--line);
+  font-family: var(--font-display); text-transform: uppercase; letter-spacing: 0.06em;
+  font-size: 0.8em; padding: 4px 12px;
+  transform: rotate(-1.5deg);
+}
+.app[data-look="pixel"] .clash-caption { border-radius: 0; transform: none; }
+.app[data-look="neon"] .clash-caption { background: transparent; color: var(--yellow); border-color: var(--yellow); box-shadow: 0 0 12px color-mix(in srgb, var(--yellow) 45%, transparent); }
+.clash-cast {
+  position: relative; z-index: 1;
+  display: grid; grid-template-columns: minmax(100px, 200px) minmax(0, 1fr) minmax(100px, 200px);
+  gap: 14px; align-items: end;
+}
+.clash-side { display: flex; flex-direction: column; align-items: center; gap: 6px; padding-bottom: 14px; transition: transform 250ms ease; }
+.clash-side.talking { transform: translateY(-6px); }
+.clash-side .clash-ava { width: 100%; max-width: 190px; }
+.clash-ava { aspect-ratio: 160 / 170; }
+.clash-ava svg { display: block; width: 100%; height: 100%; overflow: visible; }
+.clash-ava.bump { animation: clash-bump 420ms cubic-bezier(.2, 1.4, .4, 1) both; }
+.clash-name { display: flex; flex-direction: column; align-items: center; line-height: 1.15; text-align: center; }
+.clash-name b {
+  font-family: var(--font-display); font-weight: 400; font-size: 1.15em;
+  text-transform: var(--display-case); letter-spacing: var(--display-track);
+  padding: 3px 12px; border-radius: 99px; border: 2px solid var(--line);
+}
+.clash-name.a b { background: var(--teamA); color: var(--teamA-ink); }
+.clash-name.b b { background: var(--teamB); color: var(--teamB-ink); }
+.clash-name span { font-size: 0.74em; color: var(--muted); font-weight: 600; margin-top: 3px; }
+.app[data-look="pixel"] .clash-name b { border-radius: 0; }
+.app[data-look="neon"] .clash-name.a b { background: transparent; color: var(--teamA); border-color: var(--teamA); }
+.app[data-look="neon"] .clash-name.b b { background: transparent; color: var(--teamB); border-color: var(--teamB); }
+
+.clash-talk { display: flex; flex-direction: column; justify-content: flex-end; gap: 12px; padding: 4px 0 20px; min-height: 230px; min-width: 0; }
+.clash-bubble {
+  position: relative; max-width: 92%;
+  background: var(--text); color: var(--ink);
+  border: var(--bw) solid var(--line); border-radius: 20px;
+  box-shadow: 0 4px 0 var(--line);
+  padding: 12px 18px;
+  font-weight: 600; line-height: 1.25;
+  font-size: clamp(1em, 0.6vw + 0.82em, 1.3em);
+  overflow-wrap: break-word;
+  animation: clash-bubble-in 340ms cubic-bezier(.2, 1.4, .4, 1) both;
+}
+.clash-bubble.a { align-self: flex-start; border-left: 10px solid var(--teamA); border-bottom-left-radius: 6px; transform-origin: 0 100%; }
+.clash-bubble.b { align-self: flex-end; border-right: 10px solid var(--teamB); border-bottom-right-radius: 6px; transform-origin: 100% 100%; }
+.clash-bubble::after {
+  content: ''; position: absolute; bottom: 8px; width: 0; height: 0;
+  border: 9px solid transparent;
+}
+.clash-bubble.a::after { left: -28px; border-right-color: var(--teamA); }
+.clash-bubble.b::after { right: -28px; border-left-color: var(--teamB); }
+.clash-bubble.typing { padding: 14px 20px; }
+.clash-dots { display: inline-flex; gap: 6px; }
+.clash-dots i { width: 10px; height: 10px; border-radius: 50%; background: currentColor; animation: clash-dots 1s ease-in-out infinite; }
+.clash-dots i:nth-child(2) { animation-delay: 0.15s; }
+.clash-dots i:nth-child(3) { animation-delay: 0.3s; }
+.app[data-look="pixel"] .clash-bubble { border-radius: 0; }
+.app[data-look="pixel"] .clash-dots i { border-radius: 0; }
+.app[data-look="neon"] .clash-bubble { color: var(--text); box-shadow: none; }
+.app[data-look="neon"] .clash-bubble.a { background: color-mix(in srgb, var(--teamA) 16%, var(--panel)); border-color: var(--teamA); }
+.app[data-look="neon"] .clash-bubble.b { background: color-mix(in srgb, var(--teamB) 16%, var(--panel)); border-color: var(--teamB); }
+
+/* „Stopp!“-Stempel am Ende des Intros */
+.clash-comic.stopped .clash-cast { filter: saturate(0.7) brightness(0.8); transition: filter 400ms; }
+.clash-stamp {
+  position: absolute; left: 50%; top: 46%; z-index: 3; pointer-events: none;
+  font-family: var(--font-display); text-transform: uppercase; letter-spacing: 0.04em;
+  font-size: clamp(3em, 7vw, 6em); line-height: 1;
+  color: var(--yellow);
+  -webkit-text-stroke: 3px var(--ink); paint-order: stroke fill;
+  text-shadow: 0 6px 0 var(--ink);
+  transform: translate(-50%, -50%) rotate(-8deg);
+  animation: clash-stamp 460ms cubic-bezier(.2, 1.5, .4, 1) both;
+}
+.clash-stamp.small {
+  left: auto; top: 12px; right: 16px;
+  font-size: clamp(1.4em, 2.4vw, 2.2em);
+  -webkit-text-stroke-width: 2px; text-shadow: 0 3px 0 var(--ink);
+  transform: rotate(-6deg);
+  animation: clash-stamp-small 360ms cubic-bezier(.2, 1.5, .4, 1) both;
+}
+.app[data-look="neon"] .clash-stamp { -webkit-text-stroke: 0; text-shadow: 0 0 28px var(--yellow); }
+.app[data-look="pixel"] .clash-stamp { -webkit-text-stroke: 0; text-shadow: 5px 5px 0 var(--ink); }
+.app[data-look="neon"] .clash-stamp.small { text-shadow: 0 0 16px var(--yellow); }
+.app[data-look="pixel"] .clash-stamp.small { text-shadow: 3px 3px 0 var(--ink); }
+
+/* ---------- Frage + Antworten ---------- */
+.clash-q { position: relative; display: flex; align-items: center; gap: 18px; padding: 14px 20px 14px 14px; }
+.clash-q .clash-speak { position: absolute; top: 12px; right: 12px; }
+.clash-q-top { padding-right: 60px; }
+.clash-q.a { border-left: 10px solid var(--teamA); }
+.clash-q.b { border-left: 10px solid var(--teamB); }
+.clash-q.j { border-left: 10px solid var(--good); }
+.clash-q > .clash-ava { width: clamp(84px, 11vw, 130px); flex: none; }
+.clash-q-main { display: flex; flex-direction: column; gap: 8px; min-width: 0; flex: 1; }
+.clash-q-top { gap: 8px 10px; }
+.clash-q h2 { font-size: clamp(1.3em, 1.3vw + 0.8em, 1.9em); text-transform: none; }
+.clash-starters { display: flex; flex-wrap: wrap; gap: 6px 8px; }
+.clash-starters span {
+  font-size: 0.78em; color: var(--muted); font-style: italic;
+  border: 2px dashed color-mix(in srgb, var(--muted) 45%, transparent);
+  border-radius: 99px; padding: 2px 10px;
+}
+.app[data-look="pixel"] .clash-starters span { border-radius: 0; }
+.clash-duo { display: flex; flex: none; }
+.clash-duo .clash-ava { width: clamp(64px, 8vw, 96px); }
+.clash-duo .clash-ava + .clash-ava { margin-left: -14px; }
+
+.clash-opts { display: flex; flex-direction: column; gap: 12px; }
+.clash-opt {
+  appearance: none; font: inherit; color: var(--text); text-align: left;
+  display: flex; align-items: center; gap: 16px; width: 100%;
+  background: var(--panel);
+  border: var(--bw) solid var(--line); border-radius: var(--radius);
+  box-shadow: 0 var(--lift) 0 var(--line), var(--glow);
+  padding: 8px 18px 8px 8px; min-height: 66px;
+  font-size: clamp(1.02em, 0.5vw + 0.84em, 1.28em); font-weight: 600; line-height: 1.25;
+  cursor: pointer; touch-action: manipulation;
+  transition: transform 90ms ease, box-shadow 90ms ease, background 150ms, opacity 200ms;
+}
+.clash-opt:hover { background: var(--panel2); }
+.clash-opt:active { transform: translateY(var(--lift)); box-shadow: 0 0 0 var(--line); }
+.clash-opt:focus-visible { outline: 3px solid var(--yellow); outline-offset: 3px; }
+.clash-opt[disabled] { cursor: default; }
+.clash-opt[disabled]:not(.picked) { opacity: 0.5; }
+.clash-opt.picked { outline: 5px solid var(--yellow); outline-offset: 2px; background: var(--panel2); }
+.clash-opt.tried { opacity: 0.7; }
+.clash-opt-text { flex: 1; min-width: 0; }
+.clash-letter {
+  flex: none; width: 50px; height: 50px; display: grid; place-items: center;
+  font-family: var(--font-display); font-size: 1.6em; line-height: 1;
+  border: var(--bw) solid var(--line); border-radius: var(--radius-sm);
+}
+.clash-letter.lA { background: var(--teamA); color: var(--teamA-ink); }
+.clash-letter.lB { background: var(--teamB); color: var(--teamB-ink); }
+.clash-letter.lC { background: var(--good); color: var(--good-ink); }
+.clash-letter.lD { background: var(--yellow); color: var(--yellow-ink); }
+.app[data-look="neon"] .clash-letter { background: transparent; }
+.app[data-look="neon"] .clash-letter.lA { color: var(--teamA); border-color: var(--teamA); }
+.app[data-look="neon"] .clash-letter.lB { color: var(--teamB); border-color: var(--teamB); }
+.app[data-look="neon"] .clash-letter.lC { color: var(--good); border-color: var(--good); }
+.app[data-look="neon"] .clash-letter.lD { color: var(--yellow); border-color: var(--yellow); }
+.clash-by {
+  display: inline-block; vertical-align: 0.1em; margin-right: 8px;
+  font-size: 0.7em; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em;
+  padding: 2px 9px; border-radius: 99px; border: 2px solid var(--line);
+}
+.clash-by.a { background: var(--teamA); color: var(--teamA-ink); }
+.clash-by.b { background: var(--teamB); color: var(--teamB-ink); }
+.app[data-look="pixel"] .clash-by { border-radius: 0; }
+.clash-tried {
+  flex: none; display: inline-flex; align-items: center; gap: 4px;
+  font-size: 0.7em; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em;
+}
+.clash-foot { gap: 10px; }
+
+/* ---------- Rückmeldung ---------- */
+.clash-feedback { display: flex; flex-direction: column; gap: 8px; }
+.clash-feedback.good { border-left: 10px solid var(--good); }
+.clash-feedback.hot { border-left: 10px solid var(--accent); }
+.clash-delta {
+  font-family: var(--font-display); font-size: 1.05em; line-height: 1;
+  padding: 6px 12px; border-radius: 99px; border: 2px solid var(--line);
+}
+.clash-delta.down { background: var(--good); color: var(--good-ink); }
+.clash-delta.up { background: var(--accent); color: var(--accent-ink); }
+.app[data-look="pixel"] .clash-delta { border-radius: 0; }
+.app[data-look="neon"] .clash-delta.down { background: transparent; color: var(--good); border-color: var(--good); }
+.app[data-look="neon"] .clash-delta.up { background: transparent; color: var(--accent); border-color: var(--accent); }
+
+/* ---------- Zurückspulen ---------- */
+.clash-rewind { background: color-mix(in srgb, var(--ink) 72%, transparent); overflow: hidden; }
+.clash-rewind::before {
+  content: ''; position: absolute; inset: 0; pointer-events: none;
+  background: repeating-linear-gradient(0deg, color-mix(in srgb, var(--text) 8%, transparent) 0 2px, transparent 2px 6px);
+  animation: clash-scan 300ms linear infinite;
+}
+.clash-rw {
+  display: flex; flex-direction: column; align-items: center; gap: 6px;
+  color: var(--yellow);
+  animation: clash-rw 850ms ease-in-out both;
+}
+.clash-rw b {
+  font-family: var(--font-display); text-transform: uppercase; letter-spacing: 0.06em;
+  font-size: clamp(2.2em, 6vw, 4.4em); line-height: 1;
+  -webkit-text-stroke: 3px var(--ink); paint-order: stroke fill; text-shadow: 0 6px 0 var(--ink);
+}
+.app[data-look="neon"] .clash-rw b { -webkit-text-stroke: 0; text-shadow: 0 0 24px var(--yellow); }
+
+/* ---------- Finale ---------- */
+.clash-finale { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 10px; }
+.clash-peace { font-size: clamp(2.6em, 3.6vw + 1em, 4.4em); color: var(--yellow); animation: pop-in 500ms cubic-bezier(.2, 1.5, .4, 1) both; }
+.clash-top { display: flex; flex-direction: column; align-items: center; width: min(560px, 100%); }
+.clash-summit { display: flex; align-items: flex-end; justify-content: center; gap: 4px; width: 100%; }
+.clash-summit .clash-ava { width: clamp(104px, 13vw, 156px); animation: floaty 3s ease-in-out infinite; }
+.clash-summit .clash-ava + .clash-hands + .clash-ava { animation-delay: -1.5s; }
+.clash-hands { align-self: center; color: var(--yellow); margin: 0 6px 26px; animation: pulse 1.6s ease-in-out infinite; }
+.clash-plate {
+  width: 100%; margin-top: -4px;
+  display: flex; align-items: center; justify-content: center; gap: 10px;
+  padding: 10px 16px;
+  background: var(--good); color: var(--good-ink);
+  border: var(--bw) solid var(--line); border-radius: var(--radius-sm);
+  box-shadow: 0 var(--lift) 0 var(--line), var(--glow);
+  font-family: var(--font-display); text-transform: uppercase; letter-spacing: 0.06em; font-size: 1.05em;
+}
+.app[data-look="neon"] .clash-plate { background: transparent; color: var(--good); border-color: var(--good); }
+.clash-pact { width: min(640px, 100%); display: flex; flex-direction: column; gap: 6px; text-align: left; border-left: 10px solid var(--good); }
+.clash-pact-text { font-family: var(--font-display); font-size: clamp(1.25em, 1vw + 0.9em, 1.7em); line-height: 1.2; text-wrap: balance; }
+.clash-big { font-size: 5em; color: var(--yellow); line-height: 1; }
+
+/* ---------- Animationen ---------- */
+@keyframes clash-bubble-in { from { opacity: 0; transform: scale(0.7) translateY(12px); } to { opacity: 1; transform: none; } }
+@keyframes clash-stamp {
+  0% { opacity: 0; transform: translate(-50%, -50%) rotate(-8deg) scale(2.4); }
+  60% { opacity: 1; transform: translate(-50%, -50%) rotate(-8deg) scale(0.92); }
+  100% { opacity: 1; transform: translate(-50%, -50%) rotate(-8deg) scale(1); }
+}
+@keyframes clash-stamp-small { from { opacity: 0; transform: rotate(-6deg) scale(1.8); } to { opacity: 1; transform: rotate(-6deg) scale(1); } }
+@keyframes clash-now {
+  0%, 100% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--yellow) 70%, transparent); }
+  50% { box-shadow: 0 0 0 6px color-mix(in srgb, var(--yellow) 0%, transparent); }
+}
+@keyframes clash-flicker { 0%, 100% { transform: scale(1) rotate(-4deg); } 50% { transform: scale(1.18) rotate(4deg); } }
+@keyframes clash-jolt { 0%, 100% { transform: none; } 25% { transform: translateX(-5px); } 50% { transform: translateX(5px); } 75% { transform: translateX(-3px); } }
+@keyframes clash-cool { 0% { filter: none; } 30% { filter: brightness(1.25) saturate(1.2); } 100% { filter: none; } }
+@keyframes clash-dots { 0%, 80%, 100% { opacity: 0.25; transform: translateY(0); } 40% { opacity: 1; transform: translateY(-4px); } }
+@keyframes clash-bump { 0% { transform: none; } 40% { transform: scale(1.05) translateY(-4px); } 100% { transform: none; } }
+@keyframes clash-scan { from { background-position: 0 0; } to { background-position: 0 12px; } }
+@keyframes clash-rw { 0% { transform: translateX(40%); opacity: 0; } 20% { opacity: 1; } 80% { opacity: 1; } 100% { transform: translateX(-40%); opacity: 0; } }
+
+/* ---------- Hochformat-iPad: mehr Platz für den Comic ---------- */
+@media (orientation: portrait) and (min-width: 701px) {
+  .clash-talk { min-height: 30vh; }
+  .clash-side .clash-ava { max-width: 210px; }
+  .clash-cast { grid-template-columns: minmax(120px, 220px) minmax(0, 1fr) minmax(120px, 220px); }
+}
+
+/* ---------- Kleine Bildschirme ---------- */
+@media (max-width: 700px) {
+  .clash-cast { grid-template-columns: 1fr 1fr; grid-template-areas: "a b" "t t"; gap: 8px 12px; }
+  .clash-side.a { grid-area: a; }
+  .clash-side.b { grid-area: b; }
+  .clash-talk { grid-area: t; min-height: 0; padding-top: 0; }
+  .clash-side { padding-bottom: 0; }
+  .clash-side .clash-ava { max-width: 120px; }
+  .clash-bubble::after { display: none; }
+  .clash-comic { padding: 48px 12px 0; }
+}
+@media (max-width: 560px) {
+  .clash-hud { gap: 10px; }
+  .clash-col.s1 .clash-lanes { height: 38px; }
+  .clash-col.s2 .clash-lanes { height: 44px; }
+  .clash-col.s3 .clash-lanes { height: 50px; }
+  .clash-col.s4 .clash-lanes { height: 56px; }
+  .clash-col.s5 .clash-lanes { height: 62px; }
+  .clash-heat-head .num { font-size: 1.4em; }
+  .clash-heat-track { height: 20px; }
+  .clash-side .clash-ava { max-width: 104px; }
+  .clash-q { align-items: flex-start; gap: 10px; padding: 12px 12px 12px 10px; }
+  .clash-q > .clash-ava { width: 60px; }
+  .clash-duo { flex-direction: column; }
+  .clash-duo .clash-ava { width: 52px; }
+  .clash-duo .clash-ava + .clash-ava { margin-left: 0; margin-top: -10px; }
+  .clash-q-top { padding-right: 56px; }
+  .clash-starters { display: none; }
+  .clash-cap { display: none; }
+  .clash-legend { display: flex; }
+  .clash-opt { gap: 12px; padding: 8px 12px 8px 8px; min-height: 64px; }
+  .clash-letter { width: 44px; height: 44px; font-size: 1.35em; }
+  .clash-stairs.big .s1 .clash-lanes { height: 70px; }
+  .clash-stairs.big .s2 .clash-lanes { height: 84px; }
+  .clash-stairs.big .s3 .clash-lanes { height: 98px; }
+  .clash-stairs.big .s4 .clash-lanes { height: 112px; }
+  .clash-stairs.big .s5 .clash-lanes { height: 126px; }
+  .clash-teamcard .clash-ava { width: 70px; }
+  .clash-hands { margin-bottom: 20px; }
+}

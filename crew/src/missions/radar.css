@@ -1,5 +1,8 @@
 /* Mission „Gefühls-Radar“ – alle Klassen mit Präfix radar- */
 
+/* Pixel-Schrift: „fi“-Ligatur sieht dort kaputt aus („Profi“) – also aus. */
+.app[data-look="pixel"] .radar-screen { font-variant-ligatures: none; font-feature-settings: "liga" 0, "clig" 0; }
+
 /* ---------- Kopf mit Runden-Anzeige ---------- */
 .radar-head { align-items: flex-end; }
 .radar-pips { display: inline-flex; gap: 6px; align-items: center; }
@@ -292,10 +295,14 @@
 .radar-tile .lbl { color: var(--muted); font-weight: 700; font-size: 0.9em; }
 .radar-tile:nth-child(2) { animation-delay: 120ms; }
 .radar-tile:nth-child(3) { animation-delay: 240ms; }
-.radar-tile .row .radar-emo { border-width: 2px; box-shadow: none; }
+.radar-found { gap: 10px 16px; }
+.radar-found .radar-lg { font-size: 0.95em; color: var(--text); }
 
 /* ---------- Kleinere Bildschirme ---------- */
 @media (max-width: 900px) {
+  /* Zählkacheln: Zeichen, Name, dann − Zahl + untereinander (lange Namen wie „Überraschung“) */
+  .radar-tally .t-item.radar-titem { grid-template-areas: "icon icon icon" "label label label" "minus count plus"; gap: 8px; }
+  .radar-tally .t-item.radar-titem > .t-label { justify-self: center; text-align: center; font-size: 0.95em; }
   .radar-intro { grid-template-columns: 1fr; }
   .radar-intro .radar-dialbox { max-width: 560px; width: 100%; margin: 0 auto; }
   .radar-reveal { grid-template-columns: 1fr; }
@@ -312,11 +319,6 @@
   .radar-tile { flex-direction: row; justify-content: center; flex-wrap: wrap; }
   .radar-legend { gap: 6px 10px; }
   .radar-lg { font-size: 0.75em; }
-  .radar-tally .t-item.radar-titem {
-    grid-template-columns: 48px minmax(0, 1fr) 48px;
-    grid-template-areas: "icon icon icon" "label label label" "minus count plus";
-    padding: 16px 8px 10px; gap: 8px 4px;
-  }
-  .radar-tally .t-item.radar-titem > .t-label { justify-self: center; text-align: center; font-size: 0.95em; }
   .radar-tally .t-item.radar-titem .icon-btn { width: 48px; height: 48px; }
+  .radar-tally .t-item.radar-titem { grid-template-columns: 48px minmax(0, 1fr) 48px; padding: 16px 8px 10px; gap: 8px 4px; }
 }
