@@ -13,7 +13,7 @@ const result = await build({
   bundle: true,
   format: 'iife',
   minify: !watchMode,
-  target: ['es2019', 'safari14'],
+  target: ['es2019', 'safari14.1'],
   write: false,
   legalComments: 'none',
   treeShaking: true,

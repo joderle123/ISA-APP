@@ -65,7 +65,7 @@ export function createTerrain({ island, veil, quality }) {
     if (dv < vol.rimRadius) {
       // Krater: dunkler Lavafels, glüht nach unten hin
       tmp.copy(PAL.lavaRock).lerp(PAL.basaltDark, rnd * 0.5);
-      gl = smoothstep(vol.lavaLevel + 6.5, vol.lavaLevel, h);
+      gl = smoothstep(vol.lavaLevel + 4.5, vol.lavaLevel - 0.5, h);
       return gl;
     }
     if (s === 'water') {
@@ -187,8 +187,12 @@ export function createTerrain({ island, veil, quality }) {
           float caus = pow(clamp(1.0 - abs(ca) * 0.55, 0.0, 1.0), 4.0);
           outgoingLight += vec3(0.55, 0.85, 0.8) * caus * 0.35 * (1.0 - dd) * step(uy, 0.0);
         }
+      }
+    `,
+    afterVeil: /* glsl */`
+      {
         float pulse = 0.75 + 0.25 * sin(uLumoTime * 1.7 + vVeilPos.x * 0.3);
-        outgoingLight += uLavaColor * vGlow * vGlow * 2.2 * pulse;
+        outgoingLight += uLavaColor * vGlow * vGlow * 0.8 * pulse;
       }
     `,
   });

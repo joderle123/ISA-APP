@@ -255,7 +255,7 @@ export function createIsland({ cell = 2.5, seed = 7 } = {}) {
     // Feine Unebenheiten
     if (D > 0) {
       const flat = 1 - 0.7 * smoothstep(40, 20, Math.hypot(x - FEATURES.harbour.x, z - FEATURES.harbour.z));
-      h += fbm(nDet, x / 11, z / 11, 3) * 0.75 * smoothstep(0, 10, D) * flat;
+      h += fbm(nDet, x / 11, z / 11, 3) * (0.12 + 0.6 * smoothstep(bw * 0.6, bw + 12, D)) * smoothstep(0, 4, D) * flat;
     }
     return h;
   }

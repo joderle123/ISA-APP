@@ -222,6 +222,18 @@ export function createAudio() {
       b.f.frequency.exponentialRampToValueAtTime(1400, t + d * 0.5);
       b.f.frequency.exponentialRampToValueAtTime(300, t + d);
     },
+    thunder(o = {}) {
+      const t = ctx.currentTime;
+      const v = o.volume === undefined ? 1 : o.volume;
+      const b = burst(t, 2.8, 'lowpass', 180, 0.7, 0.35 * v);
+      b.g.gain.cancelScheduledValues(t);
+      b.g.gain.setValueAtTime(0.0001, t);
+      b.g.gain.linearRampToValueAtTime(0.4 * v, t + 0.08);
+      b.g.gain.exponentialRampToValueAtTime(0.12 * v, t + 0.6);
+      b.g.gain.exponentialRampToValueAtTime(0.0001, t + 2.8);
+      b.f.frequency.exponentialRampToValueAtTime(70, t + 2.5);
+      burst(t, 0.25, 'bandpass', 900, 0.5, 0.08 * v);
+    },
     error() {
       const t = ctx.currentTime;
       tone('triangle', 330, t, 0.005, 0.08, 0.15);

@@ -46,7 +46,7 @@ vec3 lumoApplyVeil(vec3 col, vec3 p) {
   gLumoVeil = v;
   float l = dot(col, vec3(0.299, 0.587, 0.114));
   vec3 grey = vec3(l) * vec3(0.92, 0.95, 1.04) * 0.86 + uVeilHaze * (0.02 + l * 0.08);
-  col = mix(col, grey, v * 0.9);
+  col = mix(col, grey, v * 0.84);
   if (gLumoRing > 0.002) {
     float a = atan(p.z - uVeilWave.y, p.x - uVeilWave.x);
     vec3 rb = 0.5 + 0.5 * cos(6.2831 * (a / 6.2831 * 2.0 + uLumoTime * 0.4 + vec3(0.0, 0.33, 0.67)));
@@ -82,8 +82,8 @@ export function createVeil({ events, audio } = {}) {
     uVeilStrength: { value: 1 },
     uLumoTime: { value: 0 },
     uVeilHaze: { value: new THREE.Color('#a9a3c8') },
-    uVeilFogColor: { value: new THREE.Color('#9d9aae') },
-    uFogSunColor: { value: new THREE.Color('#ffb070') },
+    uVeilFogColor: { value: new THREE.Color().setRGB(0.62, 0.61, 0.68, THREE.LinearSRGBColorSpace) }, // roh (sRGB)
+    uFogSunColor: { value: new THREE.Color().setRGB(1, 0.69, 0.44, THREE.LinearSRGBColorSpace) }, // roh (sRGB)
     uFogSunDir: { value: new THREE.Vector3(0, 0, -1) },
     uFogSunAmt: { value: 0.8 },
   };
@@ -95,7 +95,7 @@ export function createVeil({ events, audio } = {}) {
   }
   function baseTarget() {
     const m = zones.reduce((s, z) => s + z.veil, 0) / zones.length;
-    return 0.68 * m;
+    return 0.32 * m;
   }
   sync();
   base = baseTarget();
