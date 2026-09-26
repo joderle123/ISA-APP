@@ -85,12 +85,17 @@
   function renderScene(level, opts) {
     const o = opts || {};
     const L = Math.max(0, Math.min(12, Math.floor(Number(level) || 0)));
-    const hl = Number(o.highlight) >= 1 && Number(o.highlight) <= L ? Math.floor(Number(o.highlight)) : 0;
+    // owned: Welche Teile hat die Crew gewählt? (ohne Angabe: Teil 1 bis L)
+    // ghost: Teile, die als dunkle Silhouette angedeutet werden (Vorschau aufs nächste Level)
+    const own = Array.isArray(o.owned) ? o.owned.map(Number) : null;
+    const ghost = Array.isArray(o.ghost) ? o.ghost.map(Number) : [];
+    const owns = (n) => (own ? own.includes(n) : L >= n);
+    const hl = Number(o.highlight) >= 1 && owns(Math.floor(Number(o.highlight))) ? Math.floor(Number(o.highlight)) : 0;
     const appEl = document.getElementById('app');
     const look = (appEl && appEl.dataset.look) || (CREW.state && CREW.state.crew && CREW.state.crew.look) || 'arena';
     const px = look === 'pixel';
     const u = 'hq' + (++uid) + '_';
-    const has = (n) => L >= n;
+    const has = (n) => owns(n) || ghost.includes(n);
     const out = [];
     const add = (s) => { out.push(s); };
 
@@ -606,9 +611,10 @@
     svg.setAttribute('class', 'hq-scene' + (hl ? ' hq-hl' : ''));
     svg.setAttribute('preserveAspectRatio', 'xMidYMid slice');
     svg.setAttribute('role', 'img');
-    const names = ITEMS.slice(0, L).map((it) => it.name);
+    const names = ITEMS.filter((it, i) => owns(i + 1)).map((it) => it.name);
     svg.setAttribute('aria-label', 'Crew-HQ auf Level ' + L + (names.length ? ': ' + names.join(', ') : ': eine leere, staubige Garage'));
     svg.innerHTML = out.join('');
+    ghost.forEach((n) => { if (!owns(n)) svg.querySelectorAll('.hq-i' + n).forEach((e) => e.classList.add('hq-ghost')); });
     return svg;
   }
 

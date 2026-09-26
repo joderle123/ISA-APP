@@ -1,7 +1,7 @@
 /* Test „Clash“ (Friedenstreppe): ganze Mission auf iPad quer + hoch + Handy (drei Looks),
    Zurückspulen, X-Karte mitten in der Mission, Solo-Variante und Inhaltsprüfung.
    Aufruf:  CREW_DIST=… CREW_SHOTS=… node crew/tests/clash.mjs */
-import { launch, shot, clickText, waitText, layoutCheck, fresh, VIEWPORTS } from './lib.mjs';
+import { launch, shot, clickText, waitText, layoutCheck, fresh, VIEWPORTS, closeLevelUp } from './lib.mjs';
 
 const problems = [];
 const RUNS = [
@@ -18,7 +18,7 @@ async function screenType(page, timeout = 10000) {
     if (document.querySelector('#overlays .overlay')) return null; // Countdown/Zurückspulen läuft noch
     const t = w.dataset.clash;
     if (!t) {
-      if (w.textContent.includes('Kurz drüber reden')) return 'debrief';
+      if (w.textContent.includes('Nachspielzeit')) return 'debrief';
       if (w.textContent.includes('Solo-Zone')) return 'solohub';
       return null;
     }
@@ -201,7 +201,7 @@ for (const run of RUNS) {
   // Session starten, Check-in überspringen → Mission startet direkt
   await page.evaluate(() => { window.CREW.debug.startMission('clash'); });
   await clickText(page, 'Los geht');
-  await waitText(page, 'inneres Wetter');
+  await waitText(page, 'Wetter-Check');
   await clickText(page, 'Überspringen');
 
   // Comic-Intro
@@ -256,8 +256,7 @@ for (const run of RUNS) {
     energies.push(last.energy);
     if (last.energy < 5 || last.energy > 10) problems.push(`${tag('energie')}: Energie ${last.energy} nicht in 5–10`);
   }
-  const stark = page.locator('.modal button', { hasText: 'Stark' });
-  if (await stark.count()) await stark.click();
+  await closeLevelUp(page);
   await clickText(page, 'Bis morgen');
 
   // Solo-Variante

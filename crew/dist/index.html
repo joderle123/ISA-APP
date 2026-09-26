@@ -442,6 +442,16 @@ p { margin: 0; }
 .tally .t-count { font-family: var(--font-display); font-size: 2.2em; font-variant-numeric: tabular-nums; }
 .tally .t-label { font-weight: 600; text-align: center; }
 .tally .t-ctrl { display: flex; gap: 8px; }
+.tally .t-item.tap { cursor: pointer; user-select: none; -webkit-user-select: none; touch-action: manipulation; transition: transform 90ms ease; }
+.tally .t-item.tap:active { transform: scale(.97); }
+.tally .t-item.bump .t-count { animation: tally-bump 260ms cubic-bezier(.2,1.6,.4,1); }
+.tally.full .t-item { border-color: var(--good); }
+@keyframes tally-bump { 0% { transform: scale(1); } 45% { transform: scale(1.45); color: var(--yellow); } 100% { transform: scale(1); } }
+.scanbar { position: relative; overflow: hidden; display: flex; align-items: center; gap: 10px; padding: 6px 14px; border-radius: 999px; border: 2px solid var(--line); background: var(--panel); font-weight: 700; font-size: 0.9em; width: fit-content; }
+.scanbar i { position: absolute; inset: 0; background: linear-gradient(90deg, transparent 0%, color-mix(in srgb, var(--good) 45%, transparent) 50%, transparent 100%); transform: translateX(-100%); animation: scan-sweep 1.6s linear infinite; }
+.scanbar-t { position: relative; }
+@keyframes scan-sweep { to { transform: translateX(100%); } }
+@media (prefers-reduced-motion: reduce) { .scanbar i { animation: none; opacity: .4; transform: none; } }
 
 .valuepad { display: grid; grid-template-columns: repeat(auto-fit, minmax(64px, 1fr)); gap: 10px; }
 .valuepad .btn { font-size: 1.4em; min-height: 64px; padding: 10px; }
@@ -617,6 +627,57 @@ textarea { min-height: 120px; font-family: ui-monospace, Menlo, monospace; font-
   .energy-mini { display: none; }
   .topbar .icon-btn { width: 42px; height: 42px; }
 }
+
+/* ---------- Startbildschirm: Held, Haupt-Knopf, Crew-Woche ---------- */
+.home-hero { position: relative; aspect-ratio: 21 / 9; max-height: 38dvh; width: 100%; border-radius: var(--radius); overflow: hidden; border: var(--bw) solid var(--line); box-shadow: 0 var(--lift) 0 var(--line); }
+.home-hero .hq-scene { position: absolute; inset: 0; width: 100%; height: 100%; }
+.home-hero-txt { position: absolute; left: 0; right: 0; bottom: 0; padding: 14px 18px; display: flex; flex-direction: column; gap: 2px; background: linear-gradient(0deg, color-mix(in srgb, var(--bg) 88%, transparent) 0%, transparent 100%); }
+.home-cta {
+  --mc: var(--accent);
+  display: flex; align-items: center; gap: 16px; width: 100%; text-align: left;
+  padding: 18px 22px; border-radius: var(--radius); border: var(--bw) solid var(--line);
+  background: var(--mc); color: #fff; cursor: pointer; font: inherit;
+  box-shadow: 0 var(--lift) 0 var(--line);
+}
+.home-cta:active { transform: translateY(var(--lift)); box-shadow: none; }
+.home-cta-ic { display: grid; place-items: center; width: 64px; height: 64px; flex: none; border-radius: 50%; background: var(--yellow); color: var(--yellow-ink); border: var(--bw) solid var(--line); }
+.home-cta-t { font-family: var(--font-display); font-size: clamp(1.4em, 2.6vw, 2.1em); line-height: 1.05; text-transform: var(--display-case); letter-spacing: var(--display-track); text-shadow: 0 2px 0 rgba(0,0,0,.35); }
+.home-cta-s { font-weight: 600; opacity: .92; }
+.app[data-look="neon"] .home-cta { background: transparent; color: var(--mc); border-color: var(--mc); box-shadow: 0 0 18px color-mix(in srgb, var(--mc) 45%, transparent); }
+.home-next { display: flex; align-items: center; gap: 14px; text-align: left; cursor: pointer; font: inherit; color: inherit; }
+.home-ghost { position: relative; width: 132px; flex: none; aspect-ratio: 16 / 9; border-radius: 10px; overflow: hidden; border: 2px solid var(--line); }
+.home-ghost.big { width: 100%; max-width: 520px; margin: 0 auto; }
+.home-ghost .hq-scene { position: absolute; inset: 0; width: 100%; height: 100%; }
+.home-q { position: absolute; inset: 0; display: grid; place-items: center; font-family: var(--font-display); font-size: 2em; color: var(--yellow); text-shadow: 0 3px 0 var(--ink); pointer-events: none; }
+.home-ghost.big .home-q { font-size: 4em; }
+.home-week { display: flex; align-items: center; }
+.week { display: flex; flex-direction: column; gap: 8px; }
+.week-pips { display: flex; gap: 8px; flex-wrap: wrap; }
+.week-pips .pip { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%; border: 2px solid var(--line); background: var(--panel2, var(--panel)); font-weight: 800; font-size: .9em; color: var(--muted); }
+.week-pips .pip.on { background: var(--good); color: var(--good-ink, #062); }
+.week-pips .pip.today { outline: 3px solid var(--yellow); outline-offset: 2px; }
+.hq-ghost { filter: brightness(0); opacity: .82; }
+.wx-map { gap: 18px; padding: 14px; border-radius: var(--radius); background: linear-gradient(180deg, color-mix(in srgb, var(--teamA) 22%, transparent), transparent); }
+.paddle-private { position: absolute; top: 16px; left: 50%; transform: translateX(-50%); font-size: 1.1em; }
+.unlock-cand .display { color: var(--yellow); }
+
+/* ---------- Wer steht? ---------- */
+.sa-gold { border-color: #e0a100 !important; background: linear-gradient(135deg, color-mix(in srgb, #ffd54a 30%, var(--panel)), var(--panel)) !important; }
+.sa-crowd { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
+.sa-person { appearance: none; font: inherit; width: 84px; height: 110px; border-radius: 18px; border: var(--bw) solid var(--line); background: var(--panel); color: var(--muted); cursor: pointer; display: grid; place-items: end center; padding-bottom: 8px; transform-origin: 50% 100%; transform: scaleY(.72); opacity: .6; transition: transform 220ms cubic-bezier(.2,1.6,.4,1), opacity 160ms; touch-action: manipulation; }
+.sa-person.up { transform: none; opacity: 1; background: var(--yellow); color: var(--yellow-ink); }
+.sa-line { position: relative; display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; gap: 4px; width: 100%; max-width: 900px; margin: 0 auto; padding-top: 70px; border-bottom: 4px solid var(--line); }
+.sa-col { display: flex; flex-direction: column; align-items: center; gap: 6px; padding-bottom: 6px; }
+.sa-col.real .sa-num { background: var(--good); color: var(--good-ink, #062); }
+.sa-chips { display: flex; flex-direction: column-reverse; gap: 4px; min-height: 20px; }
+.sa-chip { width: 26px; height: 16px; border-radius: 6px; background: var(--teamA); border: 2px solid var(--line); animation: pop-in 300ms both; }
+.sa-num { font-family: var(--font-display); font-size: 1.5em; min-width: 40px; text-align: center; border-radius: 10px; padding: 2px 6px; }
+.sa-ball { position: absolute; top: -40px; width: 40px; height: 40px; border-radius: 50%; background: var(--yellow); border: var(--bw) solid var(--line); opacity: 0; }
+.sa-ball.drop { animation: sa-drop 520ms cubic-bezier(.3,1.4,.5,1) forwards; }
+@keyframes sa-drop { 0% { opacity: 1; transform: translateY(-40px); } 70% { transform: translateY(46px); } 100% { opacity: 1; transform: translateY(34px); } }
+.sa-fuse { height: 12px; border-radius: 99px; background: var(--accent); width: 100%; animation: sa-fuse 5s linear forwards; transform-origin: left; }
+@keyframes sa-fuse { to { transform: scaleX(0); } }
+@media (prefers-reduced-motion: reduce) { .sa-ball.drop { animation: none; opacity: 1; transform: translateY(34px); } .sa-fuse { animation: none; } }
 
 /* ---- missions/clash.css ---- */
 /* =========================================================
@@ -3586,6 +3647,8 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
       disabled: [],       // ausgeschaltete Missionen
     },
     solo: {},             // Bestwerte pro Solo-Spiel (ohne Namen)
+    hq: { owned: [] },    // Crew-HQ: freigeschaltete Teile (Nummern 1–12), von der Crew gewählt
+    records: {},          // Crew-Rekord (beste Punkte) pro Mission – nur für die ganze Crew
   });
 
   function deepMerge(base, extra) {
@@ -3631,8 +3694,9 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
   }
 
   /* ---------- Levels der Crew-Basis ---------- */
-  // Schnelle erste Erfolge, später langsamer (ca. 8 Energie pro Tag).
-  const LEVELS = [0, 15, 35, 60, 90, 125, 165, 210, 260, 315, 375, 440, 510];
+  // Schnelle erste Erfolge: Session 1 schaltet immer Level 1 frei, in Woche 1 fast jede Session etwas,
+  // später alle 3–4 Sessions (ca. 10 Wochen pro Saison).
+  const LEVELS = [0, 6, 18, 34, 54, 78, 106, 138, 174, 214, 258, 306, 358];
   function levelInfo(energy) {
     let lvl = 0;
     for (let i = 0; i < LEVELS.length; i++) if (energy >= LEVELS[i]) lvl = i;
@@ -4002,49 +4066,83 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
     return { el, get: () => v, set };
   }
 
-  /* Strichliste: Anzahl pro Option */
+  /* Strichliste: Anzahl pro Option. Die ganze Kachel ist ein Tipp-Ziel (+1), „−“ korrigiert.
+     o.onFull(counts) meldet sich, sobald so viele gezählt sind, wie Leute mitspielen. */
   function tally(options, o) {
+    const oo = o || {};
     const counts = Object.fromEntries(options.map((x) => [x.id, 0]));
-    const max = (o && o.max) || 99;
+    const max = oo.max || 99;
     const total = () => Object.values(counts).reduce((a, b) => a + b, 0);
     const el = h('div', { class: 'tally' });
     options.forEach((opt) => {
       const num = h('div', { class: 't-count' }, '0');
+      let item;
       const set = (n) => {
-        const others = total() - counts[opt.id];
+        const before = counts[opt.id];
+        const others = total() - before;
         counts[opt.id] = Math.max(0, Math.min(n, max - others));
         num.textContent = String(counts[opt.id]);
-        if (o && o.onChange) o.onChange(counts, total());
+        if (counts[opt.id] > before) {
+          CREW.sound.play('tick');
+          item.classList.remove('bump'); void item.offsetWidth; item.classList.add('bump');
+        }
+        el.classList.toggle('full', total() >= max);
+        if (oo.onChange) oo.onChange(counts, total());
+        if (oo.onFull && counts[opt.id] > before && total() >= max) oo.onFull({ ...counts });
       };
-      el.appendChild(h('div', { class: 't-item' },
+      const stop = (fn) => (e) => { if (e) e.stopPropagation(); fn(); };
+      item = h('div', { class: 't-item tap', role: 'button', tabindex: '0', 'aria-label': opt.label + ': eins mehr', 'data-id': opt.id },
         opt.icon || null,
         h('div', { class: 't-label' }, opt.label),
         num,
         h('div', { class: 't-ctrl' },
-          iconBtn('minus', () => set(counts[opt.id] - 1), { label: opt.label + ' weniger' }),
-          iconBtn('plus', () => set(counts[opt.id] + 1), { label: opt.label + ' mehr' }))));
+          iconBtn('minus', stop(() => set(counts[opt.id] - 1)), { label: opt.label + ' weniger' }),
+          iconBtn('plus', stop(() => set(counts[opt.id] + 1)), { label: opt.label + ' mehr' })));
+      item.addEventListener('click', () => set(counts[opt.id] + 1));
+      item.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); set(counts[opt.id] + 1); } });
+      el.appendChild(item);
     });
     return { el, get: () => ({ ...counts }), total };
   }
 
-  /* Gezeigte Zahlen schnell eintippen */
+  /* Gezeigte Zahlen schnell eintippen. o.onFull(values), sobald o.count Zahlen da sind. */
   function valuePad(o) {
     const values = [];
     const chips = h('div', { class: 'valuechips', 'aria-live': 'polite' });
     const render = () => {
       clear(chips);
       if (!values.length) chips.appendChild(h('span', { class: 'muted' }, o.placeholder || 'Tippe die gezeigten Zahlen ein …'));
-      values.forEach((v) => chips.appendChild(h('span', { class: 'v' }, String(v))));
+      values.forEach((v) => chips.appendChild(h('span', { class: 'v pop' }, String(v))));
       if (o.onChange) o.onChange(values.slice());
     };
     const pad = h('div', { class: 'valuepad' });
     for (let n = o.min || 0; n <= (o.max != null ? o.max : 10); n++) {
-      pad.appendChild(btn(String(n), () => { if (!o.count || values.length < o.count) { values.push(n); render(); } }, { variant: 'ghost' }));
+      pad.appendChild(btn(String(n), () => {
+        if (!o.count || values.length < o.count) {
+          values.push(n); render();
+          if (o.onFull && o.count && values.length === o.count) o.onFull(values.slice());
+        }
+      }, { variant: 'ghost' }));
     }
     const undo = btn('Zurück', () => { values.pop(); render(); }, { variant: 'ghost', small: true, icon: 'undo' });
     render();
     const el = h('div', { class: 'stack' }, chips, pad, h('div', { class: 'row end' }, undo));
     return { el, get: () => values.slice() };
+  }
+
+  /* Automatisch weiter, wenn alle gezählt sind: klickt nach kurzer Pause den Knopf mit dieser id.
+     check() prüft vorher, ob immer noch alles voll ist (falls die Lehrkraft korrigiert hat). */
+  function autoNext(id, check, ms) {
+    setTimeout(() => {
+      if (check && !check()) return;
+      const b = document.getElementById(id);
+      if (b && !b.disabled && b.isConnected) b.click();
+    }, ms || 600);
+  }
+
+  /* „Scan läuft …“-Balken: zeigt, dass das Spiel gerade auf die Antworten wartet */
+  function scanBar(text) {
+    return h('div', { class: 'scanbar', role: 'status' }, h('span', { class: 'scanbar-t' }, text || 'Scan läuft …'), h('i', { 'aria-hidden': 'true' }));
   }
 
   /* Globale Pause: Timer (und Module, die SK/CREW.isPaused() abfragen) warten */
@@ -4088,7 +4186,8 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
   /* 3 – 2 – 1 – Zeigt her! */
   async function threeTwoOne(text) {
     const root = overlays();
-    const ov = h('div', { class: 'overlay', style: { background: 'color-mix(in srgb, var(--ink) 55%, transparent)' } });
+    // Klicks gehen durch: X-Karte, Pause und Start bleiben erreichbar
+    const ov = h('div', { class: 'overlay', style: { background: 'color-mix(in srgb, var(--ink) 55%, transparent)', pointerEvents: 'none' } });
     root.appendChild(ov);
     for (const n of ['3', '2', '1']) {
       clear(ov);
@@ -4175,14 +4274,14 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
 
   /* Hinweis, welche Antwort-Karte die Jugendlichen öffnen sollen */
   const PADDLES = {
-    wetter: 'Wetter', zahl: 'Zahl 0–10', janein: 'Ja / Nein', abcd: 'A B C D', team: 'Team', emo: 'Gefühl',
+    wetter: 'Wetter', zahl: 'Zahl 0–10', janein: 'Ja / Nein', abcd: 'A B C D', emo: 'Gefühl',
   };
   function paddleHint(type, extra) {
     return h('div', { class: 'paddle-hint' }, CREW.icon('phone', 22), h('span', null, 'Antwort-Karte: ', h('b', null, PADDLES[type] || type), extra ? ' · ' + extra : ''));
   }
 
   CREW.isPaused = isPaused;
-  CREW.ui = { setPaused, isPaused, revealRow, screen, btn, iconBtn, speakBtn, say, choice, next, stepper, tally, valuePad, timer, threeTwoOne, modal, confirm, toast, confetti, countUp, paddleHint, PADDLES, stage, overlays };
+  CREW.ui = { setPaused, isPaused, revealRow, screen, btn, iconBtn, speakBtn, say, choice, next, stepper, tally, valuePad, autoNext, scanBar, timer, threeTwoOne, modal, confirm, toast, confetti, countUp, paddleHint, PADDLES, stage, overlays };
 })();
 
 /* ---- content/clash.js ---- */
@@ -7579,14 +7678,14 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
     if (a1 === ctx.SKIP) return { skip: 'replace' };
 
     await ui.threeTwoOne('Zeigt her!');
-    const ta = ui.tally(EMOS.map((e) => ({ id: e.id, label: e.id, icon: emoBadge(e.id, 46) })), { max: N });
+    const ta = ui.tally(EMOS.map((e) => ({ id: e.id, label: e.id, icon: emoBadge(e.id, 46) })), { max: N, onFull: () => ui.autoNext('radar-mix', () => ta.total() >= N) });
     ta.el.querySelectorAll('.t-item').forEach((it, i) => { it.classList.add('radar-titem'); it.style.setProperty('--emo', EMOS[i].color); });
     const w2 = scr(ctx, [
       head(ctx, r, total, 'Was zeigt die Crew?'),
-      h('p', { class: 'muted' }, 'Tippe mit, wie oft jedes Gefühl hochgehalten wird.'),
+      h('div', { class: 'row between' }, h('p', { class: 'muted' }, 'Tippe pro Karte einmal auf ihr Gefühl.'), ui.scanBar()),
       h('div', { class: 'radar-tally' }, ta.el),
     ]);
-    const a2 = await ctx.waitFor(ui.choice(w2, [{ label: 'Überspringen', value: 'skip', variant: 'ghost' }, { label: 'Mix zeigen', value: 'go', iconRight: 'right' }], { align: 'end' }));
+    const a2 = await ctx.waitFor(ui.choice(w2, [{ label: 'Überspringen', value: 'skip', variant: 'ghost' }, { label: 'Mix zeigen', value: 'go', iconRight: 'right', id: 'radar-mix' }], { align: 'end' }));
     if (a2 === ctx.SKIP) return { skip: 'round' };
     const counts = ta.get();
     const shown = EMOS.filter((e) => counts[e.id] > 0).sort((x, y) => counts[y.id] - counts[x.id]);
@@ -7616,7 +7715,8 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
     requestAnimationFrame(() => requestAnimationFrame(() => {
       segs.forEach((seg, i) => { seg.style.flexBasis = (counts[shown[i].id] / total2) * 100 + '%'; });
     }));
-    const a3 = await ctx.waitFor(ui.choice(w3, [{ label: 'Wort-Upgrade', value: 'up', variant: 'ghost', icon: 'sparkle' }, { label: 'Wie stark?', value: 'go', iconRight: 'right' }]));
+    // Wort-Upgrade nur in der ersten Runde (spart Zeit)
+    const a3 = await ctx.waitFor(ui.choice(w3, (r === 0 ? [{ label: 'Wort-Upgrade', value: 'up', variant: 'ghost', icon: 'sparkle' }] : []).concat([{ label: 'Wie stark?', value: 'go', iconRight: 'right' }])));
     if (a3 === ctx.SKIP) return { skip: 'round', counts, shown };
     if (a3 === 'up') {
       const more = (card.gefuehle || []).filter((g) => EMO[g] && !shown.some((e) => e.id === g)).map((g) => EMO[g]);
@@ -7694,13 +7794,13 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
     const pred = st.get();
 
     await ui.threeTwoOne('Zeigt her!');
-    const vp = ui.valuePad({ count: N, min: 0, max: 10, placeholder: 'Tippe die gezeigten Zahlen ein …' });
+    const vp = ui.valuePad({ count: N, min: 0, max: 10, placeholder: 'Tippe die gezeigten Zahlen ein …', onFull: () => ui.autoNext('radar-go', () => vp.get().length >= N) });
     const w2 = scr(ctx, [
       head(ctx, r, total, 'Welche Zahlen seht ihr?'),
-      h('p', { class: 'muted' }, 'Tippe alle Zahlen ein. Die Reihenfolge ist egal.'),
+      h('div', { class: 'row between' }, h('p', { class: 'muted' }, 'Tippe alle Zahlen ein. Die Reihenfolge ist egal.'), ui.scanBar()),
       h('div', { class: 'card radar-pad' }, vp.el),
     ]);
-    const b2 = await ctx.waitFor(ui.choice(w2, [{ label: 'Überspringen', value: 'skip', variant: 'ghost' }, { label: 'Radar starten', value: 'go', iconRight: 'right' }], { align: 'end' }));
+    const b2 = await ctx.waitFor(ui.choice(w2, [{ label: 'Überspringen', value: 'skip', variant: 'ghost' }, { label: 'Radar starten', value: 'go', iconRight: 'right', id: 'radar-go' }], { align: 'end' }));
     if (b2 === ctx.SKIP) return { skip: true };
     const values = vp.get();
     if (b2 === 'skip' || !values.length) { if (b2 !== 'skip') ui.toast('Keine Zahlen? Dann geht’s direkt weiter.'); return { skip: true }; }
@@ -7738,8 +7838,8 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
     await Promise.all([tweenNumber(avgNum, avg, 1400), ctx.sleep(1500)]);
 
     let title, text, cls;
-    if (diff <= 1) { title = 'Volltreffer!'; text = 'Der Radar-Profi hat die Crew genau gelesen.'; cls = 'hit'; }
-    else if (diff <= 2) { title = 'Knapp dran!'; text = 'Nur ' + fmt(diff) + ' daneben. Guter Riecher.'; cls = 'near'; }
+    if (diff <= 0.5) { title = diff < 0.2 ? 'Perfekt! Volltreffer!' : 'Volltreffer!'; text = 'Der Radar-Profi hat die Crew genau gelesen.'; cls = 'hit'; }
+    else if (diff <= 1.5) { title = 'Knapp dran!'; text = 'Nur ' + fmt(diff) + ' daneben. Guter Riecher.'; cls = 'near'; }
     else if (avg > pred) { title = 'Stärker als gedacht!'; text = 'Die Crew fühlt das heftiger. Spannend, oder?'; cls = 'miss'; }
     else { title = 'Schwächer als gedacht!'; text = 'Die Crew nimmt das lockerer. Interessant.'; cls = 'miss'; }
     let spread = null;
@@ -7759,26 +7859,8 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
     else if (cls === 'near') CREW.sound.play('good');
     else CREW.sound.play('soft');
 
-    const b3 = await ctx.waitFor(ui.choice(w3, [{ label: last ? 'Zur Radar-Bilanz' : 'Nächste Runde', value: 'go', iconRight: 'right' }], { align: 'end' }));
-    return { skip: false, pred, values, avg, hit: diff <= 1, near: diff > 1 && diff <= 2, skipped: b3 === ctx.SKIP };
-  }
-
-  /* ---------- Bilanz am Ende ---------- */
-  async function summaryScreen(ctx, stats, summary) {
-    const { h, ui } = ctx;
-    const emos = EMOS.filter((e) => stats.emoSeen.has(e.id));
-    const tile = (num, label) => h('div', { class: 'card radar-tile pop' }, h('span', { class: 'radar-big' }, String(num)), h('span', { class: 'lbl' }, label));
-    const w = scr(ctx, [
-      h('div', { class: 'stack enter', style: { alignItems: 'center', textAlign: 'center', gap: '8px' } }, h('span', { class: 'eyebrow' }, 'Radar-Bilanz'), h('h2', null, summary)),
-      h('div', { class: 'radar-stats' },
-        tile(stats.played, stats.played === 1 ? 'Runde gespielt' : 'Runden gespielt'),
-        tile(stats.hits, stats.hits === 1 ? 'Volltreffer' : 'Volltreffer'),
-        tile(emos.length, emos.length === 1 ? 'Gefühl entdeckt' : 'Gefühle entdeckt')),
-      emos.length ? h('div', { class: 'row center radar-found enter-3' }, emos.map((e) => h('span', { class: 'radar-lg' }, emoBadge(e.id, 40), h('span', null, e.id)))) : null,
-      h('p', { class: 'lead enter-3', style: { textAlign: 'center' } }, 'Gleiche Situation, anderes Gefühl. Jetzt wisst ihr mehr übereinander.'),
-    ], { center: true, narrow: true });
-    CREW.sound.play('reveal');
-    await ctx.waitFor(ui.choice(w, [{ label: 'Weiter', value: 'go', iconRight: 'right' }]));
+    const b3 = await ctx.waitFor(ui.choice(w3, [{ label: last ? 'Weiter' : 'Nächste Runde', value: 'go', iconRight: 'right' }], { align: 'end' }));
+    return { skip: false, pred, values, avg, hit: diff <= 0.5, near: diff > 0.5 && diff <= 1.5, skipped: b3 === ctx.SKIP };
   }
 
   CREW.registerMission({
@@ -7786,7 +7868,9 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
     day: 2,
     title: 'Gefühls-Radar',
     tagline: 'Gleiche Situation – wie fühlt sich die Crew?',
-    minutes: 7,
+    hook: '2 Runden · Radar-Profi schätzt',
+    color: '#12a877',
+    minutes: 5,
     themes: ['Gefühle', 'Fremdwahrnehmung', 'Empathie'],
     etep: 'III–IV',
     eldib: [
@@ -7796,7 +7880,7 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
       { code: 'SOZ-31', text: 'merkt, dass andere in derselben Situation anders reagieren' },
       { code: 'SOZ-37', text: 'versteht die Gefühle anderer und nimmt sie ernst' },
     ],
-    teacherNote: 'Zwei Antwort-Karten: „Gefühl“ und „Zahl 0–10“. 4 Runden. Situation vorlesen, alle wählen geheim ein Gefühl und halten auf „Zeigt her!“ hoch. Du zählst mit. Dann schätzt der Radar-Profi laut den Crew-Schnitt (0–10). Der Radar-Profi wechselt reihum, beginnend links von dir. Du stellst den Tipp ein, alle zeigen ihre Stärke, du tippst die Zahlen ein. ±1 = Volltreffer. Das Wort-Upgrade ist freiwillig und nur zum Reden. Es gibt keine falschen Gefühle. X-Karte beim Lesen = neue Situation.',
+    teacherNote: 'Zwei Antwort-Karten: „Gefühl“ und „Zahl 0–10“. 2 Runden. Situation vorlesen, alle wählen geheim ein Gefühl und halten auf „Zeigt her!“ hoch. Du zählst mit. Dann schätzt der Radar-Profi laut den Crew-Schnitt (0–10). Der Radar-Profi wechselt reihum, beginnend links von dir. Du stellst den Tipp ein, alle zeigen ihre Stärke, du tippst die Zahlen ein. ±0,5 = Volltreffer, ±1,5 = knapp. Sind alle Karten eingetippt, geht es von allein weiter. Das Wort-Upgrade (nur Runde 1) ist freiwillig und nur zum Reden. Es gibt keine falschen Gefühle. X-Karte beim Lesen = neue Situation.',
     debrief: [
       'Warum fühlen Menschen in der gleichen Situation so verschieden?',
       'Welche Situation hat die meisten verschiedenen Gefühle ausgelöst? Warum wohl?',
@@ -7809,7 +7893,7 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
     ],
 
     async run(ctx) {
-      const ROUNDS = 4;
+      const ROUNDS = 2;
       const MAX_REPLACE = 4;
       const queue = ctx.pick('radar', ROUNDS);
       const seenIds = new Set(queue.map((c) => c.id));
@@ -7821,6 +7905,7 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
       await intro(ctx);
 
       while (round < ROUNDS) {
+        if (!ctx.roundGate(round, ROUNDS)) break;
         let card = queue.shift();
         if (!card) {
           const extra = ctx.pick('radar', 1, (it) => !seenIds.has(it.id));
@@ -7851,17 +7936,18 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
 
       let summary;
       if (!stats.played) summary = 'Danke fürs Reinschauen, Crew.';
-      else if (stats.hits >= 3) summary = 'Euer Radar ist messerscharf!';
+      else if (stats.hits >= 2) summary = 'Euer Radar ist messerscharf!';
       else if (stats.hits >= 1) summary = 'Starkes Radar, Crew!';
       else if (stats.near >= 1) summary = 'Knapp dran – euer Radar wird besser.';
       else summary = 'Ihr habt heute viel übereinander gelernt.';
-      if (stats.played) await summaryScreen(ctx, stats, summary);
+      // Die Bilanz zeigt jetzt der gemeinsame Abschluss-Bildschirm (spart einen Bildschirm)
 
       // Energie: Mitmachen + Treffer (5–10), nie unter 4
       const energy = stats.played
-        ? Math.max(5, Math.min(10, Math.round(4 + stats.played * 0.75 + stats.hits * 1.25 + stats.near * 0.5)))
+        ? Math.max(5, Math.min(10, Math.round(4 + stats.played * 1.25 + stats.hits * 2 + stats.near)))
         : 4;
-      return { energy, summary };
+      const emos = stats.emoSeen.size;
+      return { energy, summary, points: stats.hits * 2 + stats.near, stats: stats.played ? [[stats.hits, 'Volltreffer'], [emos, emos === 1 ? 'Gefühl entdeckt' : 'Gefühle entdeckt']] : [] };
     },
   });
 })();
@@ -8505,7 +8591,7 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
 })();
 
 /* ---- missions/stehauf.js ---- */
-/* Mission Montag: „Steh auf, wenn …“ + Schätzrunde.
+/* Mission Montag: „Wer steht?“ (Karten „Steh auf, wenn …“) + Schätzrunde.
    Idee aus den ISA-Materialien (Kennenlern-Spiel), erweitert um eine Schätzrunde:
    Wer die Crew richtig einschätzt, bringt Energie. */
 (function () {
@@ -8514,9 +8600,11 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
   CREW.registerMission({
     id: 'stehauf',
     day: 1,
-    title: 'Steh auf, wenn …',
+    title: 'Wer steht?',
     tagline: 'Wie gut kennst du deine Crew?',
-    minutes: 7,
+    hook: 'Schätzen · Goldene Karte · Blitzrunde',
+    color: '#e0a100',
+    minutes: 5,
     themes: ['Zusammenhalt', 'Fremdwahrnehmung', 'Selbstwahrnehmung'],
     etep: 'III–IV',
     eldib: [
@@ -8525,7 +8613,7 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
       { code: 'SOZ-31', text: 'merkt, dass er/sie anders handelt als andere' },
       { code: 'SOZ-32', text: 'hört zu und respektiert andere Meinungen' },
     ],
-    teacherNote: 'Pro Karte: Erst schätzen alle geheim auf der Antwort-Karte (Zahl), wie viele gleich aufstehen. Dann stehen alle auf, für die der Satz stimmt. Du tippst ein, wie viele stehen und wie viele richtig geschätzt haben (±1 zählt). Aufstehen ist freiwillig. Wer steht, darf etwas erzählen, muss aber nicht.',
+    teacherNote: '3 Karten, die dritte ist golden (Punkte ×2), danach eine Blitzrunde ohne Schätzen. Pro Karte: Alle schätzen geheim auf der Antwort-Karte (Zahl), wie viele gleich aufstehen. Auf „Aufstehen!“ stehen alle auf, für die der Satz stimmt. Du tippst so viele Figuren an, wie stehen (keine Namen). Dann zeigen alle ihre Schätzung, du tippst die Zahlen ein. Das Spiel wertet selbst aus: genau = +2, ±1 = +1. Aufstehen ist freiwillig. Wer steht, darf etwas erzählen, muss aber nicht.',
     debrief: [
       'Was hat euch heute überrascht?',
       'Mit wem hattest du heute etwas gemeinsam, das du nicht erwartet hast?',
@@ -8538,65 +8626,134 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
     async run(ctx) {
       const { h, ui } = ctx;
       const N = ctx.crewSize;
-      const ROUNDS = 5;
-      const cards = ctx.pick('stehauf', ROUNDS);
-      let right = 0;
-      let possible = 0;
+      const ROUNDS = 3;
+      const cards = ctx.pick('stehauf', ROUNDS + 3);
+      const main = cards.slice(0, ROUNDS);
+      const blitz = cards.slice(ROUNDS);
+      let pts = 0;
+      let maxPts = 0;
       let played = 0;
+      let hitsAll = 0;
+      const clean = (t) => t.replace(/^…\s*/, '');
 
-      for (let i = 0; i < cards.length; i++) {
-        const card = cards[i];
-        const full = 'Steh auf, wenn du ' + card.text.replace(/^…\s*/, '');
+      for (let i = 0; i < main.length; i++) {
+        if (!ctx.roundGate(i, main.length)) break;
+        const card = main[i];
+        const gold = i === main.length - 1 && main.length > 1;
+        const full = 'Steh auf, wenn du ' + clean(card.text);
 
-        // 1) Schätzen
+        // 1) Karte + geheim schätzen
+        if (gold) CREW.sound.play('unlock');
         const w1 = ctx.screen([
-          h('div', { class: 'row between' }, h('span', { class: 'eyebrow' }, 'Karte ' + (i + 1) + ' von ' + cards.length), ui.paddleHint('zahl', 'Schätzen')),
-          ui.say(h('span', null, h('span', { class: 'muted' }, 'Steh auf, wenn du '), card.text.replace(/^…\s*/, '')), { speakText: full }),
-          h('p', { class: 'lead' }, 'Schätzt heimlich: Wie viele von euch ', h('b', null, N), ' stehen gleich auf?'),
+          h('div', { class: 'row between' }, h('span', { class: 'eyebrow' }, gold ? 'Goldene Karte · Punkte ×2' : 'Karte ' + (i + 1) + ' von ' + main.length), ui.paddleHint('zahl', 'Schätzen')),
+          ui.say(h('span', null, h('span', { class: 'muted' }, 'Steh auf, wenn du '), clean(card.text)), { speakText: full, cls: gold ? 'sa-gold' : '' }),
+          h('p', { class: 'lead' }, 'Schätzt geheim: Wie viele von euch ', h('b', null, N), ' stehen gleich auf?'),
+          h('p', { class: 'muted' }, 'Sitzen bleiben ist immer okay. Keiner muss was erklären.'),
         ]);
         const r1 = await ctx.waitFor(ui.choice(w1, [{ label: 'Alle haben geschätzt', value: 'go', iconRight: 'right' }]));
         if (r1 === ctx.SKIP) continue;
 
-        // 2) Aufstehen
+        // 2) Aufstehen: Lehrkraft tippt die Figuren an, die stehen (nur Anzahl, keine Namen)
         await ui.threeTwoOne('Aufstehen!');
-        const st = ui.stepper({ value: Math.round(N / 2), min: 0, max: N });
+        let standing = 0;
+        const people = Array.from({ length: N }, () => {
+          const b = h('button', { type: 'button', class: 'sa-person', 'aria-pressed': 'false', 'aria-label': 'Figur' }, CREW.icon('user', 48));
+          b.addEventListener('click', () => {
+            const up = b.getAttribute('aria-pressed') !== 'true';
+            b.setAttribute('aria-pressed', String(up));
+            b.classList.toggle('up', up);
+            standing += up ? 1 : -1;
+            CREW.sound.play(up ? 'tick' : 'tap');
+            cnt.textContent = String(standing);
+          });
+          return b;
+        });
+        const cnt = h('b', { class: 'display' }, '0');
         const w2 = ctx.screen([
-          h('span', { class: 'eyebrow' }, 'Wer steht?'),
-          h('h2', null, 'Wie viele stehen gerade?'),
-          st.el,
-        ], { center: true });
-        const r2 = await ctx.waitFor(ui.choice(w2, [{ label: 'Auflösen', value: 'go', iconRight: 'right' }]));
+          h('div', { class: 'row between' }, h('span', { class: 'eyebrow' }, 'Wer steht?'), ui.scanBar()),
+          h('h2', null, 'Tippe so viele Figuren an, wie gerade stehen.'),
+          h('div', { class: 'sa-crowd' }, people),
+          h('p', { class: 'lead', style: { textAlign: 'center' } }, 'Stehen: ', cnt),
+        ]);
+        const r2 = await ctx.waitFor(ui.choice(w2, [{ label: 'Weiter', value: 'go', iconRight: 'right', id: 'sa-standing' }]));
         if (r2 === ctx.SKIP) continue;
-        const standing = st.get();
 
-        // 3) Auflösung
-        const big = h('div', { class: 'countdown-big', style: { animation: 'none' } }, '0');
-        const correct = ui.stepper({ value: 0, min: 0, max: N });
+        // 3) Schätzungen zeigen
+        await ui.threeTwoOne('Zeigt eure Schätzung!');
+        const vp = ui.valuePad({ count: N, min: 0, max: N, placeholder: 'Tippe die gezeigten Zahlen ein …', onFull: () => ui.autoNext('sa-reveal', () => vp.get().length >= N) });
         const w3 = ctx.screen([
+          h('div', { class: 'row between' }, h('span', { class: 'eyebrow' }, 'Schätzungen'), ui.scanBar()),
+          h('h2', null, 'Welche Zahlen seht ihr?'),
+          h('div', { class: 'card' }, vp.el),
+        ]);
+        const r3 = await ctx.waitFor(ui.choice(w3, [{ label: 'Auflösen', value: 'go', iconRight: 'right', id: 'sa-reveal' }]));
+        if (r3 === ctx.SKIP) continue;
+        const guesses = vp.get();
+
+        // 4) Auflösung: Zahlenstrahl mit allen Schätzungen, der Ball fällt auf die echte Zahl
+        const exact = guesses.filter((g) => g === standing).length;
+        const near = guesses.filter((g) => Math.abs(g - standing) === 1).length;
+        const mult = gold ? 2 : 1;
+        const got = (exact * 2 + near) * mult;
+        const cols = Array.from({ length: N + 1 }, (_, v) => h('div', { class: 'sa-col' + (v === standing ? ' real' : '') },
+          h('div', { class: 'sa-chips' }, guesses.filter((g) => g === v).map(() => h('span', { class: 'sa-chip' }))),
+          h('span', { class: 'sa-num' }, String(v))));
+        const ball = h('div', { class: 'sa-ball', style: { left: 'calc(' + ((standing + 0.5) / (N + 1)) * 100 + '% - 20px)' } });
+        const line = h('div', { class: 'sa-line' }, cols, ball);
+        const verdict = h('div', { class: 'stack', style: { alignItems: 'center', textAlign: 'center', visibility: 'hidden' } },
+          h('h2', null, standing + ' von ' + N + ' stehen'),
+          h('div', { class: 'row center' },
+            h('span', { class: 'pill good' }, exact + ' × Volltreffer'),
+            h('span', { class: 'pill' }, near + ' × knapp'),
+            h('span', { class: 'pill accent' }, '+' + got + ' Crew-Punkte' + (gold ? ' (×2)' : ''))),
+          h('p', { class: 'lead' }, standing === 0 ? 'Niemand. Auch das sagt etwas über die Crew.' : standing === N ? 'Alle! Da habt ihr etwas gemeinsam.' : 'Wer steht, darf was sagen. Muss aber nicht.'));
+        const w4 = ctx.screen([
           h('span', { class: 'eyebrow' }, 'Auflösung'),
-          h('div', { class: 'row center' }, big, h('span', { class: 'display', style: { fontSize: '2em' } }, 'von ' + N)),
-          h('p', { class: 'lead' }, standing === 0 ? 'Niemand. Auch das sagt etwas über die Crew.' : standing === N ? 'Alle! Da habt ihr etwas gemeinsam.' : standing === 1 ? 'Nur eine Person. Respekt fürs Aufstehen!' : 'Wer steht, darf kurz etwas dazu sagen. Muss aber nicht.'),
-          h('div', { class: 'card stack', style: { alignItems: 'center' } }, h('b', null, 'Wie viele lagen mit ihrer Schätzung richtig? (±1 zählt)'), correct.el),
+          line,
+          verdict,
         ], { center: true });
         CREW.sound.play('drum');
-        await ctx.sleep(700);
+        await ctx.sleep(900);
+        ball.classList.add('drop');
         CREW.sound.play('reveal');
-        await ui.countUp(big, 0, standing, 700);
-        const r3 = await ctx.waitFor(ui.choice(w3, [{ label: i < cards.length - 1 ? 'Nächste Karte' : 'Fertig', value: 'go', iconRight: 'right' }]));
-        if (r3 === ctx.SKIP) continue;
-        right += correct.get();
-        possible += N;
+        await ctx.sleep(500);
+        verdict.style.visibility = '';
+        verdict.classList.add('pop');
+        if (exact) { CREW.sound.play('great'); ui.confetti(exact * 40); }
+        pts += got;
+        maxPts += 2 * N * mult;
+        hitsAll += exact;
         played++;
-        if (correct.get() >= Math.ceil(N / 2)) { CREW.sound.play('great'); ui.toast('Ihr kennt euch gut!'); }
+        const r4 = await ctx.waitFor(ui.choice(w4, [{ label: i < main.length - 1 ? 'Nächste Karte' : 'Weiter', value: 'go', iconRight: 'right' }]));
+        if (r4 === ctx.SKIP) continue;
       }
 
-      const acc = possible ? right / possible : 0;
-      const energy = played ? 4 + Math.round(6 * acc) : 3;
+      // Blitzrunde: drei Sätze, je 5 Sekunden, ohne Schätzen
+      if (blitz.length && ctx.minutesLeft() > 4) {
+        const w5 = ctx.screen([
+          h('div', { class: 'stack', style: { alignItems: 'center', textAlign: 'center' } }, h('span', { class: 'eyebrow' }, 'Blitzrunde'), h('h2', null, 'Drei Sätze. Je 5 Sekunden. Nur aufstehen.')),
+        ], { center: true });
+        const r5 = await ctx.waitFor(ui.choice(w5, [{ label: 'Los!', value: 'go', iconRight: 'play' }]));
+        if (r5 !== ctx.SKIP) {
+          for (const b of blitz) {
+            ctx.screen([
+              h('span', { class: 'eyebrow' }, 'Blitzrunde'),
+              ui.say(h('span', null, h('span', { class: 'muted' }, 'Steh auf, wenn du '), clean(b.text)), { speakText: 'Steh auf, wenn du ' + clean(b.text) }),
+              h('div', { class: 'sa-fuse' }),
+            ], { center: true });
+            CREW.sound.play('go');
+            await ctx.sleep(5000);
+          }
+        }
+      }
+
+      const acc = maxPts ? pts / maxPts : 0;
+      const energy = played ? 4 + Math.round(6 * Math.min(1, acc * 1.5)) : 3;
       let summary = 'Gut gespielt!';
-      if (acc >= 0.7) summary = 'Ihr kennt euch richtig gut!';
-      else if (acc >= 0.4) summary = 'Ihr kennt euch schon ganz gut.';
+      if (acc >= 0.45) summary = 'Ihr kennt euch richtig gut!';
+      else if (acc >= 0.25) summary = 'Ihr kennt euch schon ganz gut.';
       else if (played) summary = 'Ihr habt heute viel Neues übereinander erfahren.';
-      return { energy, summary };
+      return { energy, summary, points: pts, stats: played ? [[hitsAll, 'Volltreffer']] : [] };
     },
   });
 })();
@@ -9926,12 +10083,17 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
   function renderScene(level, opts) {
     const o = opts || {};
     const L = Math.max(0, Math.min(12, Math.floor(Number(level) || 0)));
-    const hl = Number(o.highlight) >= 1 && Number(o.highlight) <= L ? Math.floor(Number(o.highlight)) : 0;
+    // owned: Welche Teile hat die Crew gewählt? (ohne Angabe: Teil 1 bis L)
+    // ghost: Teile, die als dunkle Silhouette angedeutet werden (Vorschau aufs nächste Level)
+    const own = Array.isArray(o.owned) ? o.owned.map(Number) : null;
+    const ghost = Array.isArray(o.ghost) ? o.ghost.map(Number) : [];
+    const owns = (n) => (own ? own.includes(n) : L >= n);
+    const hl = Number(o.highlight) >= 1 && owns(Math.floor(Number(o.highlight))) ? Math.floor(Number(o.highlight)) : 0;
     const appEl = document.getElementById('app');
     const look = (appEl && appEl.dataset.look) || (CREW.state && CREW.state.crew && CREW.state.crew.look) || 'arena';
     const px = look === 'pixel';
     const u = 'hq' + (++uid) + '_';
-    const has = (n) => L >= n;
+    const has = (n) => owns(n) || ghost.includes(n);
     const out = [];
     const add = (s) => { out.push(s); };
 
@@ -10447,9 +10609,10 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
     svg.setAttribute('class', 'hq-scene' + (hl ? ' hq-hl' : ''));
     svg.setAttribute('preserveAspectRatio', 'xMidYMid slice');
     svg.setAttribute('role', 'img');
-    const names = ITEMS.slice(0, L).map((it) => it.name);
+    const names = ITEMS.filter((it, i) => owns(i + 1)).map((it) => it.name);
     svg.setAttribute('aria-label', 'Crew-HQ auf Level ' + L + (names.length ? ': ' + names.join(', ') : ': eine leere, staubige Garage'));
     svg.innerHTML = out.join('');
+    ghost.forEach((n) => { if (!owns(n)) svg.querySelectorAll('.hq-i' + n).forEach((e) => e.classList.add('hq-ghost')); });
     return svg;
   }
 
@@ -10514,7 +10677,7 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
         h('span', { class: 'name' }, S.crew.name || 'CREW')),
       h('div', { class: 'energy-mini', title: 'Crew-Energie' },
         CREW.icon('bolt', 22),
-        h('span', { class: 'lvl' }, 'Level ' + li.level),
+        h('span', { class: 'lvl' }, li.level ? 'Level ' + li.level : 'Rohbau'),
         h('div', { class: 'bar' }, fill)),
       h('div', { class: 'spacer' }),
       run ? ui.iconBtn(null, onXCard, { text: 'X', cls: 'xcard', label: 'X-Karte: Diese Karte überspringen', id: 'btn-x' }) : null,
@@ -10525,9 +10688,16 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
   }
 
   async function goHome(force) {
-    if (run && run.inMission && !force) {
-      const ok = await ui.confirm('Session beenden?', 'Die Mission wird abgebrochen. Energie aus dieser Runde gibt es dann nicht.', 'Beenden', 'Weiterspielen');
-      if (!ok) return;
+    if (run && !run.solo && !force) {
+      const txt = run.phase === 'after'
+        ? ['Zum Start?', 'Die Energie ist schon gespeichert.', 'Zum Start']
+        : run.inMission
+          ? ['Session beenden?', 'Die Mission wird abgebrochen. Energie aus dieser Runde gibt es dann nicht.', 'Beenden']
+          : ['Session abbrechen?', 'Ihr seid noch vor der Mission.', 'Abbrechen'];
+      const wasPaused = ui.isPaused();
+      ui.setPaused(true);
+      const ok = await ui.confirm(txt[0], txt[1], txt[2], 'Weiterspielen');
+      if (!ok) { ui.setPaused(wasPaused); return; }
     }
     endRun();
     renderHome();
@@ -10544,15 +10714,23 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
     renderTopbar();
   }
 
-  /* X-Karte: jederzeit ohne Begründung überspringen */
+  /* X-Karte: jederzeit ohne Begründung überspringen.
+     Läuft gerade eine Animation, merkt sich das Spiel das X und überspringt die nächste Karte. */
   function onXCard() {
-    if (run && run.skipWaiter) {
+    if (!run) return;
+    if (run.skipWaiter) {
       const w = run.skipWaiter;
       run.skipWaiter = null;
       ui.toast('Übersprungen. Alles gut.');
       w(SKIP);
+    } else if (run.onX) {
+      const f = run.onX;
+      run.onX = null;
+      ui.toast('Übersprungen. Alles gut.');
+      f();
     } else {
-      ui.toast('Okay, wir machen einfach weiter.');
+      run.pendingSkip = true;
+      ui.toast('X-Karte: wird übersprungen.');
     }
   }
 
@@ -10584,8 +10762,48 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
     const body = h('div', { class: 'stack' },
       h('p', { class: 'lead' }, 'Wenn dich etwas belastet: Sprich mit einer erwachsenen Person, der du vertraust. Zum Beispiel hier in der Annexe.'),
       h('div', { class: 'list' }, nums.map(([n, t, d]) => h('div', { class: 'li' }, h('div', null, h('b', null, n), d ? h('div', { class: 'muted small' }, d) : null), h('span', { class: 'display selectable', style: { fontSize: '1.4em' } }, t)))),
-      h('p', { class: 'muted small' }, 'X-Karte: Mit dem X oben rechts darfst du jede Karte überspringen. Ohne Begründung.'));
+      h('p', { class: 'muted small' }, 'X-Karte: Mit dem X oben rechts darfst du jede Karte überspringen. Ohne Begründung.'),
+      h('p', { class: 'muted small' }, 'Antwort-Karte: Deine Wahl wird nirgends gespeichert.'));
     ui.modal({ title: 'Hilfe', body, actions: [{ label: 'Schließen', value: true }] });
+  }
+
+  /* ---------- Crew-Woche & Crew-HQ-Teile ---------- */
+  const isoOf = (d) => d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
+  function weekDays() {
+    const d = new Date();
+    const mon = new Date(d.getFullYear(), d.getMonth(), d.getDate() - ((d.getDay() + 6) % 7));
+    return ['Mo', 'Di', 'Mi', 'Do', 'Fr'].map((label, i) => {
+      const iso = isoOf(new Date(mon.getFullYear(), mon.getMonth(), mon.getDate() + i));
+      return { label, iso, played: S.history.some((x) => x.date === iso), today: iso === todayISO() };
+    });
+  }
+  function weekPips() {
+    const days = weekDays();
+    const n = days.filter((d) => d.played).length;
+    return h('div', { class: 'week', 'aria-label': 'Crew-Woche: ' + n + ' von 5 Tagen gespielt' },
+      h('span', { class: 'eyebrow' }, 'Crew-Woche · ' + n + '/5'),
+      h('div', { class: 'week-pips' }, days.map((d) => h('span', { class: 'pip' + (d.played ? ' on' : '') + (d.today ? ' today' : '') }, d.played ? CREW.icon('check', 18) : d.label))));
+  }
+  // Welche HQ-Teile gehören der Crew? Passt die Liste an das Level an (alte Spielstände, Import, Reset).
+  function ownedItems(level) {
+    const n = CREW.base && CREW.base.items ? CREW.base.items.length : 12;
+    S.hq = S.hq || { owned: [] };
+    let own = (S.hq.owned || []).filter((x, i, a) => x >= 1 && x <= n && a.indexOf(x) === i);
+    if (own.length > level) own = own.slice(0, level);
+    for (let i = 1; own.length < level && i <= n; i++) if (!own.includes(i)) own.push(i);
+    if (JSON.stringify(own) !== JSON.stringify(S.hq.owned)) { S.hq.owned = own; CREW.save(); }
+    return own;
+  }
+  // Die zwei Teile, zwischen denen die Crew beim nächsten Level wählt
+  function candidates(own) {
+    const n = CREW.base && CREW.base.items ? CREW.base.items.length : 12;
+    const out = [];
+    for (let i = 1; i <= n && out.length < 2; i++) if (!own.includes(i)) out.push(i);
+    return out;
+  }
+  function scene(level, opts) {
+    if (!CREW.base || !CREW.base.renderScene) return h('div', { class: 'card', style: { minHeight: '160px' } });
+    return CREW.base.renderScene(level, Object.assign({ owned: ownedItems(level) }, opts || {}));
   }
 
   /* ---------- Startbildschirm ---------- */
@@ -10597,17 +10815,37 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
     const wd = weekday();
     const m = missionForToday();
     const playedToday = S.history.some((x) => x.date === todayISO());
-    ui.screen([
-      h('div', { class: 'stack enter', style: { gap: '6px', paddingTop: '8px' } },
+    const own = ownedItems(li.level);
+    const next = candidates(own);
+    const cta = h('button', { type: 'button', class: 'home-cta enter-2', id: 'tile-session', style: m && m.color ? { '--mc': m.color } : null },
+      h('span', { class: 'home-cta-ic' }, CREW.icon('play', 34)),
+      h('span', { class: 'stack', style: { gap: '2px' } },
+        h('span', { class: 'home-cta-t' }, m ? (playedToday ? 'Noch eine Runde: ' : 'Heute: ') + m.title + ' · Los!' : 'Freie Wahl · Los!'),
+        h('span', { class: 'home-cta-s' }, m ? (m.tagline || '') : 'Sucht euch eine Mission aus.')));
+    cta.addEventListener('click', () => { CREW.sound.play('tap'); startSession(); });
+    const unlock = h('button', { type: 'button', class: 'card home-next enter-3', id: 'tile-base' },
+      next.length && !li.max
+        ? h('div', { class: 'home-ghost' }, scene(li.level, { ghost: next }), h('span', { class: 'home-q' }, '???'))
+        : null,
+      h('div', { class: 'stack', style: { gap: '6px', flex: '1' } },
+        h('b', null, li.max ? 'Crew-HQ voll ausgebaut!' : 'Nächstes HQ-Teil'),
+        h('div', { class: 'progress' }, h('i', { style: { width: li.pct + '%' } })),
+        h('span', { class: 'muted small' }, li.max ? 'Tippen zum Ansehen.' : 'Noch ' + li.toNext + ' Energie. Ihr wählt, was kommt.')));
+    unlock.addEventListener('click', () => { CREW.sound.play('tap'); renderBase(); });
+    const hero = h('div', { class: 'home-hero enter' },
+      scene(li.level),
+      h('div', { class: 'home-hero-txt' },
         h('span', { class: 'eyebrow' }, 'Moien! Heute ist ' + WEEKDAYS[wd]),
-        h('h1', { class: 'outline-text' }, S.crew.name || 'CREW')),
-      h('div', { class: 'grid two enter-2' },
-        tile({ hero: true, icon: 'play', title: playedToday ? 'Noch eine Session' : 'Crew-Session starten', sub: m ? 'Heute: ' + m.title + ' · ca. 10 Minuten' : 'ca. 10 Minuten', onClick: startSession, id: 'tile-session' }),
-        tile({ icon: 'phone', title: 'Antwort-Karte', sub: 'Auf dem eigenen iPad: Zahl, Wetter, Ja/Nein … hochhalten', onClick: renderPaddle, id: 'tile-paddle' })),
-      h('div', { class: 'grid three enter-3' },
-        tile({ icon: 'leaf', title: 'Alleine spielen', sub: 'Chillen und trainieren', onClick: renderSoloHub, id: 'tile-solo' }),
-        tile({ icon: 'base', title: 'Crew-HQ', sub: li.max ? 'Voll ausgebaut!' : 'Level ' + li.level + ' · noch ' + li.toNext + ' Energie bis Level ' + (li.level + 1), onClick: renderBase, id: 'tile-base' }),
-        tile({ icon: 'lock', title: 'Lehrkraft', sub: 'Missionen, Einstellungen, Fortschritt', onClick: renderTeacherGate, id: 'tile-teacher' })),
+        h('h1', { class: 'outline-text' }, S.crew.name || 'CREW')));
+    const teacher = ui.btn('Lehrkraft', renderTeacherGate, { variant: 'ghost', small: true, icon: 'lock', id: 'tile-teacher' });
+    ui.screen([
+      hero,
+      cta,
+      h('div', { class: 'grid two enter-3' }, h('div', { class: 'card home-week' }, weekPips()), unlock),
+      h('div', { class: 'grid two enter-3' },
+        tile({ icon: 'leaf', title: 'Solo-Zone', sub: 'Alleine chillen und trainieren', onClick: renderSoloHub, id: 'tile-solo' }),
+        tile({ icon: 'phone', title: 'Antwort-Karte', sub: 'Für dein iPad', onClick: renderPaddle, id: 'tile-paddle' })),
+      h('div', { class: 'row end' }, teacher),
     ]);
   }
   function tile(o) {
@@ -10642,7 +10880,7 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
       }));
       ui.screen([
         h('div', { class: 'stack enter' }, h('span', { class: 'eyebrow' }, 'Neue Crew'), h('h1', { class: 'outline-text' }, 'Gründet eure Crew'),
-          h('p', { class: 'lead muted' }, 'Stimmt gemeinsam ab. Die Lehrkraft kann alles später im Lehrermodus ändern.')),
+          h('p', { class: 'lead muted' }, 'Stimmt gemeinsam ab. Name und Look gehören der ganzen Crew.')),
         h('div', { class: 'card stack enter-2' }, h('h3', null, '1. Wie heißt eure Crew?'), nameRow, input),
         h('div', { class: 'card stack enter-3' }, h('h3', null, '2. Welcher Look?'), h('p', { class: 'muted small' }, 'Tippt die Looks an, um sie auszuprobieren.'), lookRow),
         h('div', { class: 'row end' }, ui.btn('Crew gründen', async () => {
@@ -10688,6 +10926,8 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
       // Auf eine Eingabe warten; X-Karte liefert ctx.SKIP
       waitFor(promise) {
         if (!alive()) return Promise.reject(new Abort());
+        // X-Karte wurde während einer Animation gedrückt: diese Karte gleich überspringen
+        if (run.pendingSkip) { run.pendingSkip = false; ui.toast('Übersprungen. Alles gut.'); return Promise.resolve(SKIP); }
         return new Promise((resolve, reject) => {
           run.skipWaiter = resolve;
           run.abort = () => reject(new Abort());
@@ -10697,7 +10937,27 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
           }, reject);
         });
       },
-      sleep: (ms) => sleep(ms).then(() => { if (!alive()) throw new Abort(); }),
+      // Warten, das bei Pause anhält und bei gedrückter X-Karte abkürzt
+      async sleep(ms) {
+        let left = ms;
+        while (left > 0) {
+          const step = Math.min(100, left);
+          await sleep(step);
+          if (!alive()) throw new Abort();
+          if (run.pendingSkip) return;
+          if (!ui.isPaused()) left -= step;
+        }
+      },
+      // Sitzungs-Uhr: Die ganze Session soll in etwa 10 Minuten passen
+      minutesLeft: () => (run && run.startedAt ? 10 - (Date.now() - run.startedAt) / 60000 : 10),
+      // Vor jeder weiteren Runde fragen: Reicht die Zeit noch? (false = Mission beenden)
+      roundGate(i, total) {
+        if (i <= 0 || i === ctx._gateAt) return true; // gleiche Runde nochmal (z. B. nach X-Karte): kein neuer Check
+        ctx._gateAt = i;
+        if (ctx._lastRound || ctx.minutesLeft() < 3.5) { ui.toast('Zeit ist um. Stark gespielt!'); return false; }
+        if (i === total - 1 || ctx.minutesLeft() < 5.5) { ctx._lastRound = true; ui.toast('Letzte Runde!'); }
+        return true;
+      },
       // Aufräumen (Animationen, Listener), wenn die Session endet oder abgebrochen wird
       onCleanup(fn) { if (run && run.token === token) (run.cleanups = run.cleanups || []).push(fn); },
       isPaused: () => ui.isPaused(),
@@ -10708,29 +10968,37 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
   /* ---------- Session-Ablauf ---------- */
   async function startSession(forcedMission) {
     endRun();
-    run = { token: ++tokenCounter, skipWaiter: null, inMission: false };
+    run = { token: ++tokenCounter, skipWaiter: null, inMission: false, phase: 'setup', startedAt: Date.now() };
     renderTopbar();
     try {
       // 1) Wer ist da?
       const size = await askCrewSize();
       // 2) Check-in
+      run.phase = 'checkin';
       const checkin = await doCheckin(size);
       // 3) Mission wählen
+      run.phase = 'setup';
       const mission = forcedMission || (await chooseMission());
       if (!mission) return goHome(true);
       // 4) Mission spielen
       run.inMission = true;
+      run.phase = 'mission';
       const ctx = makeCtx(mission, size);
       const result = (await mission.run(ctx)) || {};
+      if (!run || !ctx.alive()) return;
       run.inMission = false;
-      // 5) Nachbesprechung
+      run.pendingSkip = false;
+      // 5) Energie sofort sichern (auch wenn danach jemand auf „Start“ tippt)
+      const gain = commitResult(mission, result, checkin);
+      run.phase = 'after';
+      // 6) Nachspielzeit
       await doDebrief(mission, ctx);
-      // 6) Energie & Belohnung
-      await finish(mission, result, checkin);
+      // 7) Belohnung zeigen
+      await finish(mission, result, gain);
     } catch (e) {
       if (e instanceof Abort) return;
       console.error(e);
-      ui.screen([h('div', { class: 'card stack' }, h('h2', null, 'Ups, da ist etwas schiefgelaufen.'), h('p', { class: 'muted' }, String(e && e.message || e)), ui.btn('Zum Start', () => goHome(true)))]);
+      ui.screen([h('div', { class: 'card stack' }, h('h2', null, 'Kurzer Hänger. Zurück zum Start.'), ui.btn('Zum Start', () => goHome(true), { icon: 'home' }))], { center: true, narrow: true });
       endRun();
     }
   }
@@ -10750,54 +11018,89 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
     return st.get();
   }
   function run_wait(p, t) {
+    if (!run || run.token !== t) return Promise.reject(new Abort());
     return new Promise((res, rej) => {
       run.abort = () => rej(new Abort());
       p.then((v) => { if (!run || run.token !== t) rej(new Abort()); else res(v); });
     });
   }
 
-  /* Check-in: Inneres Wetter, anonym */
+  /* X-Karte während Check-in und Nachspielzeit: löst die Wartestelle mit xValue auf */
+  function waitX(p, t, xValue) {
+    if (!run || run.token !== t) return Promise.reject(new Abort());
+    const r = run;
+    return run_wait(new Promise((res) => {
+      if (r.pendingSkip) { r.pendingSkip = false; res(xValue); return; }
+      r.onX = () => res(xValue);
+      p.then(res);
+    }), t).finally(() => { if (r.onX) r.onX = null; });
+  }
+
+  /* Check-in: Wetter-Check, anonym. Die Karte wird nur zur Lehrkraft gedreht. */
+  const FORECAST = {
+    sonnig: ['Überwiegend sonnig.', 'Gute Aussichten. Nutzt die Energie!'],
+    gemischt: ['Wechselhaft, mal Sonne, mal Wolken.', 'Ganz normal für eine Crew.'],
+    sturm: ['Vereinzelt Gewitter.', 'Heißt: Heute wird niemand provoziert.'],
+    nebel: ['Dichter Nebel.', 'Wir fahren heute auf Sicht.'],
+  };
   async function doCheckin(size) {
     const t = guard();
     const wx = CREW.WEATHER;
-    const legend = h('div', { class: 'grid three' }, wx.map((w) => h('div', { class: 'card soft row', style: { flexWrap: 'nowrap' } }, CREW.weatherIcon(w.id, 60), h('div', null, h('b', null, w.label), h('div', { class: 'muted small' }, w.hint)))));
+    const firstWeek = S.history.length < 5;
+    const legend = h('div', { class: 'grid three' }, wx.map((w) => h('div', { class: 'card soft row', style: { flexWrap: 'nowrap' } }, CREW.weatherIcon(w.id, 60), h('div', null, h('b', null, w.label), firstWeek ? h('div', { class: 'muted small' }, w.hint) : null))));
     const wrap = ui.screen([
-      h('div', { class: 'row between enter' }, h('div', { class: 'stack', style: { gap: '4px' } }, h('span', { class: 'eyebrow' }, 'Check-in · 1 Minute'), h('h2', null, 'Wie ist dein inneres Wetter?')), ui.paddleHint('wetter')),
-      h('p', { class: 'lead muted enter-2' }, 'Stellt es geheim auf eurer Antwort-Karte ein. Oder zeigt es mit der Hand. Niemand muss etwas erklären.'),
+      h('div', { class: 'row between enter' }, h('div', { class: 'stack', style: { gap: '4px' } }, h('span', { class: 'eyebrow' }, 'Crew-Wetterbericht'), h('h2', null, 'Wetter-Check: Wie ist’s heute bei dir?')), ui.paddleHint('wetter')),
+      h('p', { class: 'lead muted enter-2' }, 'Stell es geheim ein. Dreh die Karte nur zur Lehrkraft. Die anderen schauen nach vorn.'),
       h('div', { class: 'enter-2' }, legend),
     ]);
-    const r = await run_wait(ui.choice(wrap, [{ label: 'Überspringen', value: 'skip', variant: 'ghost' }, { label: 'Alle bereit', value: 'go', iconRight: 'right' }]), t);
+    const r = await waitX(ui.choice(wrap, [{ label: 'Überspringen', value: 'skip', variant: 'ghost' }, { label: 'Alle bereit', value: 'go', iconRight: 'right' }]), t, 'skip');
     if (r === 'skip') return { skipped: true };
-    await ui.threeTwoOne('Zeigt her!');
-    // Lehrkraft zählt, was gezeigt wird
-    const ta = ui.tally(wx.map((w) => ({ id: w.id, label: w.label, icon: CREW.weatherIcon(w.id, 56) })), { max: size });
+    await ui.threeTwoOne('Zur Lehrkraft drehen!');
+    if (!run || run.token !== t) throw new Abort();
+    // Schnell: ein Tipp für die ganze Crew. Genauer zählen nur, wenn die Lehrkraft will.
     const w2 = ui.screen([
-      h('div', { class: 'stack' }, h('span', { class: 'eyebrow' }, 'Check-in'), h('h2', null, 'Was zeigt die Crew?')),
-      h('p', { class: 'muted' }, 'Tippt kurz mit, wie oft welches Wetter gezeigt wird. Namen werden nicht gespeichert.'),
-      ta.el,
-    ]);
-    await run_wait(ui.next(w2, 'Crew-Wetter anzeigen'), t);
-    const counts = ta.get();
-    const stormy = (counts.regen || 0) + (counts.gewitter || 0);
-    const sunny = (counts.sonne || 0) + (counts.wolkig || 0);
-    let line;
-    if (!ta.total()) line = 'Danke fürs Mitmachen.';
-    else if (stormy === 0 && sunny >= ta.total() / 2) line = 'Gute Aussichten heute. Nutzt die Energie!';
-    else if (stormy >= Math.max(2, ta.total() / 2)) line = 'Heute ist bei einigen Sturm. Wir nehmen Rücksicht aufeinander.';
-    else if (stormy > 0) line = 'Nicht bei allen scheint die Sonne. Das ist okay. Wir nehmen Rücksicht.';
-    else line = 'Gemischtes Wetter. Ganz normal für eine Crew.';
-    const board = h('div', { class: 'row center', style: { gap: '18px' } }, wx.filter((w) => counts[w.id]).map((w) =>
-      h('div', { class: 'stack pop', style: { alignItems: 'center', gap: '4px' } }, CREW.weatherIcon(w.id, 96), h('span', { class: 'display', style: { fontSize: '2em' } }, '× ' + counts[w.id]))));
+      h('div', { class: 'stack', style: { alignItems: 'center', textAlign: 'center' } }, h('span', { class: 'eyebrow' }, 'Nur für die Lehrkraft'), h('h2', null, 'Was zeigt die Crew?'), ui.scanBar('Wetter-Scan läuft …')),
+    ], { center: true, narrow: true });
+    const quick = await waitX(ui.choice(w2, [
+      { label: 'Alle eher sonnig', value: 'sonnig', icon: 'star', id: 'wx-sonnig' },
+      { label: 'Gemischt', value: 'gemischt', variant: 'yellow', id: 'wx-gemischt' },
+      { label: 'Bei einigen Sturm', value: 'sturm', variant: 'teamB', id: 'wx-sturm' },
+      { label: 'genauer zählen', value: 'count', variant: 'ghost', id: 'wx-count' },
+    ]), t, 'skip');
+    if (quick === 'skip') return { skipped: true };
+    let kind = quick;
+    let counts = null;
+    if (quick === 'count') {
+      const ta = ui.tally(wx.map((w) => ({ id: w.id, label: w.label, icon: CREW.weatherIcon(w.id, 56) })), { max: size, onFull: () => ui.autoNext('wx-show', () => ta.total() >= size) });
+      const w3 = ui.screen([
+        h('div', { class: 'row between' }, h('div', { class: 'stack' }, h('span', { class: 'eyebrow' }, 'Nur für die Lehrkraft'), h('h2', null, 'Wetter zählen')), ui.scanBar('Wetter-Scan läuft …')),
+        h('p', { class: 'muted' }, 'Tippe auf ein Wetter, einmal pro Karte. Namen werden nicht gespeichert.'),
+        ta.el,
+      ]);
+      const r3 = await waitX(ui.choice(w3, [{ label: 'Crew-Wetter anzeigen', value: 'go', iconRight: 'right', id: 'wx-show' }]), t, 'skip');
+      if (r3 === 'skip') return { skipped: true };
+      counts = ta.get();
+      const stormy = (counts.regen || 0) + (counts.gewitter || 0);
+      const sunny = (counts.sonne || 0) + (counts.wolkig || 0);
+      kind = !ta.total() ? 'gemischt' : stormy === 0 && sunny >= ta.total() / 2 ? 'sonnig' : stormy > 0 ? 'sturm' : (counts.nebel || 0) >= ta.total() / 2 ? 'nebel' : 'gemischt';
+    }
+    const icons = { sonnig: ['sonne', 'wolkig'], gemischt: ['wolkig', 'regen', 'sonne'], sturm: ['gewitter', 'regen', 'wolkig'], nebel: ['nebel', 'wolkig'] }[kind].filter((id) => wx.some((w) => w.id === id));
+    // Genaue Zahlen nur ab 6 Leuten – sonst zeigt die Zahl auf eine Person
+    const exact = counts && size >= 6;
+    const shownIcons = counts ? wx.filter((w) => counts[w.id]).map((w) => w.id) : icons;
+    const board = h('div', { class: 'row center wx-map' }, shownIcons.map((id, i) =>
+      h('div', { class: 'stack pop', style: { alignItems: 'center', gap: '4px', animationDelay: 150 + i * 220 + 'ms' } }, CREW.weatherIcon(id, 96), exact ? h('span', { class: 'display', style: { fontSize: '2em' } }, '× ' + counts[id]) : null)));
     CREW.sound.play('reveal');
-    const w3 = ui.screen([
-      h('div', { class: 'stack', style: { alignItems: 'center', textAlign: 'center' } }, h('span', { class: 'eyebrow' }, 'Crew-Wetter'), h('h2', null, line)),
+    const [head, line] = FORECAST[kind];
+    const w4 = ui.screen([
+      h('div', { class: 'stack', style: { alignItems: 'center', textAlign: 'center' } }, h('span', { class: 'eyebrow' }, 'Crew-Wetterbericht'), h('h2', null, head), h('p', { class: 'lead' }, line)),
       board,
     ], { center: true });
     const opts = [{ label: 'Zur Mission', value: 'go', iconRight: 'right' }];
-    if (stormy > 0) opts.unshift({ label: '1 Minute runterkommen', value: 'chill', variant: 'good', icon: 'leaf' });
-    const r2 = await run_wait(ui.choice(w3, opts), t);
+    if (kind === 'sturm') opts.unshift({ label: '1 Minute runterkommen', value: 'chill', variant: 'good', icon: 'leaf' });
+    const r2 = await waitX(ui.choice(w4, opts), t, 'go');
     if (r2 === 'chill') await miniBreathing(t);
-    return { skipped: false, counts };
+    return { skipped: false, kind };
   }
 
   async function miniBreathing(t) {
@@ -10829,8 +11132,10 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
           h('span', { class: 'eyebrow' }, 'Mission des Tages'),
           h('h1', { class: 'outline-text' }, m.title),
           m.tagline ? h('p', { class: 'lead' }, m.tagline) : null,
-          h('div', { class: 'row center' }, h('span', { class: 'pill accent' }, 'ca. ' + (m.minutes || 7) + ' Min'), (m.themes || []).slice(0, 3).map((x) => h('span', { class: 'pill' }, x)))),
+          h('div', { class: 'row center' }, h('span', { class: 'pill accent' }, 'ca. ' + (m.minutes || 5) + ' Min'), m.hook ? h('span', { class: 'pill' }, m.hook) : null)),
       ], { center: true });
+      if (m.color) wrap.style.setProperty('--mc', m.color);
+      CREW.sound.play('reveal');
       const r = await run_wait(ui.choice(wrap, [{ label: 'Andere Mission', value: 'other', variant: 'ghost', icon: 'shuffle' }, { label: 'Start!', value: 'go', iconRight: 'play' }]), t);
       if (r === 'go') return m;
       m = null;
@@ -10851,21 +11156,21 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
     }), t);
   }
 
-  /* Nachbesprechung: kurz, freiwillig */
+  /* Nachspielzeit: kurz, freiwillig */
   async function doDebrief(mission, ctx) {
     const t = guard();
     const qs = mission.debrief && mission.debrief.length ? mission.debrief : ['Was nehmt ihr aus der Runde mit?'];
     let q = pick(qs);
-    const card = ui.say(q, { eyebrow: 'Kurz drüber reden' });
+    const card = ui.say(q, { eyebrow: 'Nachspielzeit', speakText: () => q });
     const tm = ui.timer(90, { autostart: false });
     const wrap = ui.screen([
       card,
       h('div', { class: 'row between' },
-        h('p', { class: 'muted', style: { maxWidth: '46ch' } }, 'Wer will, sagt etwas. Passen ist erlaubt. Die Lehrkraft moderiert.'),
+        h('p', { class: 'muted', style: { maxWidth: '46ch' } }, 'Wer will, sagt was. Passen ist okay.'),
         h('div', { class: 'row' }, tm.el, ui.btn('Timer', () => tm.start(), { variant: 'ghost', small: true, icon: 'timer' }))),
     ]);
     for (;;) {
-      const r = await run_wait(ui.choice(wrap, [{ label: 'Andere Frage', value: 'other', variant: 'ghost', icon: 'shuffle' }, { label: 'Fertig', value: 'done', iconRight: 'right' }]), t);
+      const r = await waitX(ui.choice(wrap, [{ label: 'Andere Frage', value: 'other', variant: 'ghost', icon: 'shuffle' }, { label: 'Fertig', value: 'done', iconRight: 'right' }]), t, 'done');
       if (r === 'done') break;
       const rest = qs.filter((x) => x !== q);
       q = rest.length ? pick(rest) : q;
@@ -10875,47 +11180,106 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
     tm.stop();
   }
 
-  async function finish(mission, result, checkin) {
-    const t = guard();
+  /* Energie sofort speichern, direkt nach der Mission */
+  function commitResult(mission, result, checkin) {
     const base = Math.max(2, Math.min(12, Math.round(result.energy || 5)));
     const bonus = checkin && !checkin.skipped ? 2 : 0;
     const gained = base + bonus;
     const before = CREW.levelInfo(S.energy);
+    ownedItems(before.level);
     S.energy += gained;
     S.history.push({ date: todayISO(), mission: mission.id, energy: gained });
     if (S.history.length > 400) S.history = S.history.slice(-400);
+    // Crew-Rekord (nur Crew-Punkte, nie Einzelne)
+    let record = null;
+    if (typeof result.points === 'number') {
+      S.records = S.records || {};
+      const old = S.records[mission.id];
+      record = { old, isNew: old == null || result.points > old };
+      if (record.isNew) S.records[mission.id] = result.points;
+    }
     CREW.save();
-    const after = CREW.levelInfo(S.energy);
+    return { gained, bonus, before, after: CREW.levelInfo(S.energy), record };
+  }
+
+  function nextMissionTeaser() {
+    const ms = activeMissions();
+    for (let i = 1; i <= 7; i++) {
+      const d = (weekday() + i) % 7;
+      const m = ms.find((x) => x.day === d);
+      if (m) return (i === 1 ? 'Morgen: ' : WEEKDAYS[d] + ': ') + m.title + '. ' + (m.tagline || '');
+    }
+    return null;
+  }
+
+  async function finish(mission, result, gain) {
+    const t = guard();
+    const { gained, bonus, before, after, record } = gain;
+    const alive = () => run && run.token === t;
     const num = h('span', { class: 'display', style: { fontSize: '4em', color: 'var(--yellow)' } }, '0');
     const bar = h('i', { style: { width: before.pct + '%' } });
+    const pts = typeof result.points === 'number';
+    const teaser = nextMissionTeaser();
     const wrap = ui.screen([
       h('div', { class: 'stack', style: { alignItems: 'center', textAlign: 'center' } },
         h('span', { class: 'eyebrow' }, 'Mission geschafft'),
         h('h2', null, result.summary || 'Stark gespielt, Crew!'),
+        pts ? h('div', { class: 'row center' }, h('span', { class: 'pill' }, result.points + ' Crew-Punkte'), h('span', { class: 'display' }, '→')) : null,
         h('div', { class: 'row center' }, CREW.icon('bolt', 54), num, h('span', { class: 'display', style: { fontSize: '1.6em' } }, 'Energie')),
-        bonus ? h('span', { class: 'pill good' }, '+' + bonus + ' Check-in-Bonus') : null),
+        h('div', { class: 'row center' },
+          bonus ? h('span', { class: 'pill good' }, '+' + bonus + ' Check-in-Bonus') : null,
+          record && record.isNew && record.old != null ? h('span', { class: 'pill accent pop' }, 'Crew-Rekord: ' + record.old + ' → NEU: ' + result.points + '!') : null,
+          record && !record.isNew ? h('span', { class: 'pill' }, 'Crew-Rekord: ' + record.old + (record.old - result.points <= 3 ? ' · noch ' + (record.old - result.points + 1) + ' bis zum Rekord' : '')) : null),
+        (result.stats || []).length ? h('div', { class: 'row center' }, result.stats.map(([n, l]) => h('span', { class: 'pill' }, h('b', null, String(n)), ' ' + l))) : null,
+        result.note || null),
       h('div', { class: 'card stack' },
-        h('div', { class: 'row between' }, h('b', null, 'Crew-HQ Level ' + after.level), h('span', { class: 'muted' }, after.max ? 'Maximal ausgebaut' : 'noch ' + after.toNext + ' bis Level ' + (after.level + 1))),
-        h('div', { class: 'progress' }, bar)),
+        h('div', { class: 'row between' }, h('b', null, after.level ? 'Crew-HQ Level ' + after.level : 'Crew-HQ · Rohbau'), h('span', { class: 'muted' }, after.max ? 'Maximal ausgebaut' : 'noch ' + after.toNext + ' bis zum nächsten Teil')),
+        h('div', { class: 'progress' }, bar),
+        weekPips(),
+        teaser ? h('p', { class: 'muted small' }, teaser) : null),
     ], { center: true, narrow: true });
     CREW.sound.play('good');
     await ui.countUp(num, 0, gained, 900);
+    if (!alive()) return;
     renderTopbar();
+    if (record && record.isNew && record.old != null) { CREW.sound.play('great'); ui.confetti(120); }
     requestAnimationFrame(() => { bar.style.width = (after.level > before.level ? 100 : after.pct) + '%'; });
     await sleep(1100);
-    if (after.level > before.level) {
-      await showUnlock(after.level);
+    if (!alive()) return;
+    for (let lv = before.level + 1; lv <= after.level; lv++) {
+      await showUnlock(lv);
+      if (!alive()) return;
     }
     const r = await run_wait(ui.choice(wrap, [{ label: 'Crew-HQ ansehen', value: 'base', variant: 'ghost', icon: 'base' }, { label: 'Bis morgen!', value: 'home', iconRight: 'home' }]), t);
     endRun();
-    if (r === 'base') renderBase(after.level > before.level ? after.level : null); else renderHome();
+    if (r === 'base') renderBase(after.level > before.level ? S.hq.owned[S.hq.owned.length - 1] : null); else renderHome();
   }
 
+  /* Level-up: Die Crew wählt zwischen zwei Teilen (Mehrheit auf der Antwort-Karte A/B) */
   async function showUnlock(level) {
+    const items = CREW.base && CREW.base.items ? CREW.base.items : [];
+    const own = ownedItems(level - 1);
+    const cand = candidates(own);
     CREW.sound.play('unlock');
     ui.confetti(200);
-    const item = CREW.base && CREW.base.items ? CREW.base.items[level - 1] : null;
-    const preview = CREW.base && CREW.base.renderScene ? CREW.base.renderScene(level, { highlight: level }) : null;
+    let chosen = cand[0];
+    if (cand.length > 1) {
+      const card = (n, L) => h('div', { class: 'card stack unlock-cand', style: { alignItems: 'center', textAlign: 'center' } },
+        h('span', { class: 'display', style: { fontSize: '2em' } }, L), h('b', null, items[n - 1].name), h('span', { class: 'muted small' }, items[n - 1].desc || ''));
+      chosen = await ui.modal({
+        title: 'Level ' + level + '! Was kommt ins HQ?',
+        body: h('div', { class: 'stack' },
+          h('p', { class: 'lead' }, 'Zeigt A oder B auf der Antwort-Karte. Die Mehrheit gewinnt.'),
+          h('div', { class: 'grid two' }, card(cand[0], 'A'), card(cand[1], 'B'))),
+        actions: [{ label: 'A: ' + items[cand[0] - 1].name, value: cand[0] }, { label: 'B: ' + items[cand[1] - 1].name, value: cand[1], variant: 'teamB' }],
+        dismissable: false,
+      });
+      CREW.sound.play('drum');
+    }
+    if (chosen && !S.hq.owned.includes(chosen)) { S.hq.owned.push(chosen); CREW.save(); }
+    const item = chosen ? items[chosen - 1] : null;
+    const preview = CREW.base && CREW.base.renderScene ? CREW.base.renderScene(level, { owned: S.hq.owned.slice(), highlight: chosen }) : null;
+    CREW.sound.play('great');
     await ui.modal({
       title: 'Level ' + level + ' freigeschaltet!',
       body: h('div', { class: 'stack' },
@@ -10930,10 +11294,11 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
   function renderPaddle(startTab) {
     endRun();
     let tab = startTab || CREW.store.get('paddleTab', 'zahl');
+    if (tab === 'team') tab = 'zahl';
     let sel = null;
     let hidden = false;
     const tabs = [
-      ['wetter', 'Wetter'], ['zahl', 'Zahl 0–10'], ['janein', 'Ja / Nein'], ['abcd', 'A B C D'], ['team', 'Team'], ['emo', 'Gefühl'],
+      ['wetter', 'Wetter'], ['zahl', 'Zahl 0–10'], ['janein', 'Ja / Nein'], ['abcd', 'A B C D'], ['emo', 'Gefühl'],
     ];
     const EMO = ['Wut', 'Angst', 'Trauer', 'Freude', 'Scham', 'Stolz', 'Ekel', 'Überraschung'];
     const colorFor = (v) => ({ Ja: 'var(--good)', Nein: 'var(--teamB)', A: 'var(--teamA)', B: 'var(--teamB)', C: 'var(--good)', D: 'var(--yellow)', 'Team A': 'var(--teamA)', 'Team B': 'var(--teamB)' }[v] || 'var(--yellow)');
@@ -10954,7 +11319,6 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
       else if (tab === 'wetter') grid = h('div', { class: 'paddle-grid', style: { gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))' } }, CREW.WEATHER.map((w) => { const b = mk(w.id, w.label); b.style.flexDirection = 'column'; b.prepend(CREW.weatherIcon(w.id, 64)); return b; }));
       else if (tab === 'janein') grid = h('div', { class: 'paddle-grid', style: { gridTemplateColumns: '1fr 1fr' } }, mk('Ja'), mk('Nein'));
       else if (tab === 'abcd') grid = h('div', { class: 'paddle-grid', style: { gridTemplateColumns: '1fr 1fr' } }, ['A', 'B', 'C', 'D'].map((x) => mk(x)));
-      else if (tab === 'team') grid = h('div', { class: 'paddle-grid', style: { gridTemplateColumns: '1fr 1fr' } }, mk('Team A'), mk('Team B'));
       else grid = h('div', { class: 'paddle-grid', style: { gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))' } }, EMO.map((x) => mk(x)));
       const status = sel == null
         ? h('p', { class: 'muted' }, 'Wähle deine Antwort. Wenn es heißt „Zeigt her!“, tippe auf ZEIGEN und halte das iPad hoch.')
@@ -10964,7 +11328,7 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
               ui.iconBtn(hidden ? 'eye' : 'eyeOff', () => { hidden = !hidden; draw(); }, { label: hidden ? 'Wahl anzeigen' : 'Wahl verdecken' }),
               ui.btn('Zeigen', showBig, { big: true, variant: 'good', icon: 'eye', id: 'btn-show' })));
       ui.screen([h('div', { class: 'paddle' },
-        h('div', { class: 'row between' }, h('h2', null, 'Antwort-Karte'), h('span', { class: 'muted small' }, 'Wird nirgends gespeichert.')),
+        h('div', { class: 'row between' }, h('h2', null, 'Antwort-Karte')),
         tabRow, h('div', { class: 'paddle-body' }, grid, status))]);
     };
     const labelOf = (v) => { if (tab === 'wetter') { const w = CREW.WEATHER.find((x) => x.id === v); return w ? w.label : v; } return String(v); };
@@ -10975,8 +11339,11 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
       const ov = h('div', { class: 'paddle-show', style: { background: 'var(--bg)' } },
         content,
         tab === 'wetter' ? h('div', { class: 'display', style: { fontSize: '2.4em' } }, labelOf(sel)) : null,
+        tab === 'wetter' ? h('div', { class: 'pill accent paddle-private' }, 'Nur zur Lehrkraft zeigen') : null,
         ui.btn('Zurück', () => { ov.remove(); sel = null; hidden = false; draw(); }, { variant: 'ghost', icon: 'left', id: 'btn-paddle-back' }));
       ui.overlays().appendChild(ov);
+      const note = ov.querySelector('.paddle-private');
+      if (note) setTimeout(() => note.remove(), 5000);
     }
     draw();
   }
@@ -11021,36 +11388,77 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
   function renderBase(highlight) {
     endRun();
     const li = CREW.levelInfo(S.energy);
-    const scene = CREW.base && CREW.base.renderScene ? CREW.base.renderScene(li.level, typeof highlight === 'number' ? { highlight } : undefined) : h('div', { class: 'card', style: { minHeight: '240px', display: 'grid', placeItems: 'center' } }, h('p', { class: 'muted' }, 'Das Crew-HQ wird gerade gebaut …'));
+    const own = ownedItems(li.level);
+    const next = candidates(own);
     const items = CREW.base && CREW.base.items ? CREW.base.items : [];
+    const main = scene(li.level, typeof highlight === 'number' && own.includes(highlight) ? { highlight } : undefined);
+    // Jedes Teil antippen: seine Crew-Regel
+    const pills = own.map((n) => {
+      const it = items[n - 1];
+      const b = h('button', { type: 'button', class: 'chip sel', 'data-item': n }, it.name);
+      b.addEventListener('click', () => { CREW.sound.play('tap'); ui.toast(it.name + ': ' + (it.desc || '')); });
+      return b;
+    });
+    const mystery = next.length && !li.max
+      ? h('div', { class: 'card stack enter-3 hq-mystery' },
+          h('div', { class: 'row between' }, h('b', null, '??? · Nächstes Level'), h('span', { class: 'muted' }, 'noch ' + li.toNext + ' Energie')),
+          h('div', { class: 'progress' }, h('i', { style: { width: li.pct + '%' } })),
+          h('div', { class: 'home-ghost big' }, scene(li.level, { ghost: next }), h('span', { class: 'home-q' }, '???')),
+          h('p', { class: 'muted small' }, next.length > 1 ? 'Zwei Teile warten. Beim nächsten Level wählt ihr eins davon.' : 'Das letzte Teil wartet schon.'))
+      : null;
     ui.screen([
       h('div', { class: 'row between enter' },
         h('div', { class: 'stack', style: { gap: '4px' } }, h('span', { class: 'eyebrow' }, 'Crew-HQ · Saison 1'), h('h1', { class: 'outline-text' }, S.crew.name || 'CREW')),
-        h('div', { class: 'stack', style: { alignItems: 'flex-end', gap: '4px' } }, h('span', { class: 'display', style: { fontSize: '2.2em' } }, 'Level ' + li.level), h('span', { class: 'muted' }, S.energy + ' Energie gesammelt'))),
-      h('div', { class: 'enter-2', style: { borderRadius: 'var(--radius)', overflow: 'hidden', border: 'var(--bw) solid var(--line)', boxShadow: '0 var(--lift) 0 var(--line)', width: '100%', maxWidth: 'max(360px, calc((100dvh - 330px) * 16 / 9))', margin: '0 auto' } }, scene),
+        h('div', { class: 'stack', style: { alignItems: 'flex-end', gap: '4px' } }, h('span', { class: 'display', style: { fontSize: '2.2em' } }, li.level ? 'Level ' + li.level : 'Rohbau'), h('span', { class: 'muted' }, S.energy + ' Energie gesammelt'))),
+      h('div', { class: 'enter-2', style: { borderRadius: 'var(--radius)', overflow: 'hidden', border: 'var(--bw) solid var(--line)', boxShadow: '0 var(--lift) 0 var(--line)', width: '100%', maxWidth: 'max(360px, calc((100dvh - 330px) * 16 / 9))', margin: '0 auto' } }, main),
       h('div', { class: 'card stack enter-3' },
-        h('div', { class: 'row between' }, h('b', null, li.max ? 'Alles freigeschaltet!' : 'Nächstes Level'), h('span', { class: 'muted' }, li.max ? '' : 'noch ' + li.toNext + ' Energie')),
-        h('div', { class: 'progress' }, h('i', { style: { width: li.pct + '%' } })),
-        items.length ? h('div', { class: 'row', style: { marginTop: '6px' } }, items.map((it, i) => h('span', { class: 'pill' + (i < li.level ? ' good' : ''), title: it.desc || '' }, (i < li.level ? '' : '🔒 ') + it.name))) : null),
+        h('b', null, own.length ? 'Euer HQ · antippen für die Crew-Regel' : 'Noch leer. Die erste Session bringt Licht.'),
+        own.length ? h('div', { class: 'row' }, pills) : null),
+      mystery,
     ]);
   }
 
   /* ---------- Lehrermodus ---------- */
+  // Falsche PIN: nach 3 Versuchen 30 Sekunden Sperre (gilt bis zum Neuladen der Seite)
+  const gate = { fails: 0, lockedUntil: 0 };
   function renderTeacherGate() {
     endRun();
     let code = '';
     const dots = h('div', { class: 'display', style: { fontSize: '2.6em', letterSpacing: '0.3em', minHeight: '1.2em' } }, '');
+    const msg = h('p', { class: 'muted', 'aria-live': 'polite' }, 'PIN eingeben.');
     const pad = h('div', { class: 'valuepad', style: { maxWidth: '360px', gridTemplateColumns: 'repeat(3, 1fr)' } });
+    const locked = () => Date.now() < gate.lockedUntil;
     const press = (d) => {
+      if (locked()) { msg.textContent = 'Gesperrt. Noch ' + Math.ceil((gate.lockedUntil - Date.now()) / 1000) + ' Sekunden.'; return; }
       if (d === 'del') code = code.slice(0, -1); else if (code.length < 8) code += d;
       dots.textContent = '•'.repeat(code.length);
-      if (code === String(S.settings.pin)) { CREW.sound.play('good'); renderTeacher('missionen'); }
-      else if (code.length >= String(S.settings.pin).length && code.length >= 4) { dots.classList.add('shake'); CREW.sound.play('soft'); setTimeout(() => { code = ''; dots.textContent = ''; dots.classList.remove('shake'); }, 450); }
+      if (code === String(S.settings.pin)) {
+        gate.fails = 0;
+        CREW.sound.play('good');
+        if (String(S.settings.pin) === '1234') forceNewPin(); else renderTeacher('missionen');
+      } else if (code.length >= String(S.settings.pin).length && code.length >= 4) {
+        gate.fails++;
+        if (gate.fails >= 3) { gate.fails = 0; gate.lockedUntil = Date.now() + 30000; msg.textContent = 'Zu oft falsch. 30 Sekunden warten.'; }
+        dots.classList.add('shake'); CREW.sound.play('soft');
+        setTimeout(() => { code = ''; dots.textContent = ''; dots.classList.remove('shake'); }, 450);
+      }
     };
     ['1', '2', '3', '4', '5', '6', '7', '8', '9', 'del', '0'].forEach((d) => pad.appendChild(ui.btn(d === 'del' ? null : d, () => press(d), { variant: 'ghost', icon: d === 'del' ? 'left' : null, aria: d === 'del' ? 'Löschen' : d })));
     ui.screen([
-      h('div', { class: 'stack', style: { alignItems: 'center' } }, CREW.icon('lock', 48), h('h2', null, 'Lehrermodus'), h('p', { class: 'muted' }, 'PIN eingeben. Am Anfang: 1234. Bitte im Lehrermodus ändern.'), dots, pad),
+      h('div', { class: 'stack', style: { alignItems: 'center' } }, CREW.icon('lock', 48), h('h2', null, 'Lehrermodus'), msg, dots, pad),
     ], { center: true });
+  }
+  // Mit der Start-PIN geht es erst weiter, wenn eine eigene PIN gesetzt ist
+  async function forceNewPin() {
+    const inp = h('input', { type: 'password', id: 't-newpin', inputmode: 'numeric', maxlength: '8', placeholder: 'Neue PIN (4–8 Ziffern)' });
+    const err = h('p', { class: 'muted small', 'aria-live': 'polite' }, 'Die Start-PIN kennen zu viele. Bitte jetzt eine eigene wählen.');
+    for (;;) {
+      const ok = await ui.modal({ title: 'Eigene PIN festlegen', body: h('div', { class: 'stack' }, err, inp), actions: [{ label: 'Abbrechen', value: false, variant: 'ghost' }, { label: 'PIN speichern', value: true, icon: 'check' }], dismissable: false });
+      if (!ok) { renderHome(); return; }
+      const v = inp.value.trim();
+      if (/^\d{4,8}$/.test(v) && v !== '1234') { S.settings.pin = v; CREW.save(); ui.toast('Neue PIN gespeichert.'); renderTeacher('missionen'); return; }
+      err.textContent = 'Bitte 4 bis 8 Ziffern, nicht 1234.';
+    }
   }
 
   function renderTeacher(tab) {
@@ -11081,7 +11489,7 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
       }, { variant: on ? 'good' : 'ghost', small: true });
       return h('div', { class: 'li', style: { flexDirection: 'column', alignItems: 'stretch' } },
         h('div', { class: 'row between' },
-          h('div', null, h('h3', null, m.title), h('div', { class: 'muted small' }, (m.day ? WEEKDAYS[m.day] : 'frei') + ' · ca. ' + (m.minutes || 7) + ' Min' + (m.etep ? ' · ETEP-Stufe ' + m.etep : ''))),
+          h('div', null, h('h3', null, m.title), h('div', { class: 'muted small' }, (m.day ? WEEKDAYS[m.day] : 'frei') + ' · ca. ' + (m.minutes || 5) + ' Min' + (m.etep ? ' · ETEP-Stufe ' + m.etep : ''))),
           h('div', { class: 'row' }, toggle, ui.btn('Jetzt spielen', () => { startSession(m); }, { small: true, icon: 'play' }))),
         m.teacherNote ? h('p', { class: 'small' }, m.teacherNote) : null,
         m.themes ? h('div', { class: 'row' }, m.themes.map((x) => h('span', { class: 'pill' }, x))) : null,
@@ -11167,14 +11575,15 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
       h('div', { class: 'card stack' }, h('h3', null, 'So läuft eine Session (ca. 10 Minuten)'),
         h('ol', { class: 'stack', style: { margin: 0, paddingLeft: '1.2em' } },
           h('li', null, 'CREW am Beamer oder auf dem Lehrer-iPad öffnen. Die Jugendlichen öffnen auf ihren iPads die „Antwort-Karte“.'),
-          h('li', null, 'Check-in (1 Min.): Jede:r stellt geheim das innere Wetter ein. Auf „Zeigt her!“ halten alle gleichzeitig hoch. Du tippst nur die Anzahl mit.'),
-          h('li', null, 'Mission des Tages (6–7 Min.): Jeder Wochentag hat ein eigenes Spiel. Mit „Andere Mission“ kannst du tauschen.'),
-          h('li', null, 'Kurz drüber reden (1–2 Min.): Eine Frage, freiwillig. Das ist der wichtigste Teil.'),
-          h('li', null, 'Energie fließt ins gemeinsame Crew-HQ. Es gibt keine Einzel-Rangliste.'))),
+          h('li', null, 'Wetter-Check (1 Min.): Jede:r stellt geheim das Wetter ein und dreht die Karte nur zu dir. Die anderen schauen nach vorn. Du tippst einmal: sonnig, gemischt oder Sturm. „Genauer zählen“ ist freiwillig; genaue Zahlen erscheinen erst ab 6 Leuten.'),
+          h('li', null, 'Mission des Tages (4–5 Min.): Jeder Wochentag hat ein eigenes Spiel. Mit „Andere Mission“ kannst du tauschen. Eine Sitzungs-Uhr kürzt Runden, wenn die Zeit knapp wird.'),
+          h('li', null, 'Nachspielzeit (1–2 Min.): Eine Frage, freiwillig. Das ist der wichtigste Teil.'),
+          h('li', null, 'Energie fließt ins gemeinsame Crew-HQ und wird sofort nach der Mission gespeichert. Beim Level-up wählt die Crew per A/B ein neues Teil. Es gibt keine Einzel-Rangliste.'))),
       h('div', { class: 'card stack' }, h('h3', null, 'Wochenplan'), h('div', { class: 'list' }, byDay)),
       h('div', { class: 'card stack' }, h('h3', null, 'Sicherheitsregeln im Spiel'),
         h('ul', { class: 'stack', style: { margin: 0, paddingLeft: '1.2em' } },
-          h('li', null, 'X-Karte (oben rechts): Jede:r darf jede Karte ohne Begründung überspringen.'),
+          h('li', null, 'X-Karte (oben rechts): Jede:r darf jede Karte ohne Begründung überspringen. Auch während Animationen: Dann wird die nächste Karte übersprungen.'),
+          h('li', null, 'Start-PIN 1234: Beim ersten Öffnen musst du eine eigene PIN wählen. Nach 3 falschen Versuchen ist der Zugang 30 Sekunden gesperrt.'),
           h('li', null, 'Pause-Knopf mit Atemkreis. Hilfe-Knopf mit Kanner- a Jugendtelefon (116 111), BEE SECURE Helpline (8002 1234), Notruf 112, Polizei 113.'),
           h('li', null, 'Heikle Karten sind aus, bis du sie unter „Inhalte“ einschaltest.'),
           h('li', null, 'Gespeichert wird nur auf diesem Gerät, ohne Namen.'))),
@@ -11201,6 +11610,7 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
     startMission(id) { const m = CREW.missions.find((x) => x.id === id); if (m) startSession(m); return !!m; },
     startSolo(id) { const g = CREW.soloGames.find((x) => x.id === id); if (g) startSolo(g); return !!g; },
     addEnergy(n) { S.energy += n; CREW.save(); renderTopbar(); },
+    xcard: onXCard,
   };
 
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot);

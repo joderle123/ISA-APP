@@ -1,4 +1,4 @@
-/* Rauchtest: Gründung, Start, Session mit „Steh auf, wenn …“, Antwort-Karte, Lehrermodus, HQ, Solo. */
+/* Rauchtest: Gründung, Start, Session mit „Wer steht?“, Antwort-Karte, Lehrermodus, HQ, Solo. */
 import { launch, shot, clickText, waitText, layoutCheck, VIEWPORTS } from './lib.mjs';
 
 const problems = [];
@@ -29,11 +29,15 @@ for (const [vpName, vp] of Object.entries({ ipadLandscape: VIEWPORTS.ipadLandsca
   await waitText(page, 'Wie viele spielen heute mit?');
   await shot(page, tag('04-anzahl'));
   await clickText(page, 'Los geht');
-  await waitText(page, 'inneres Wetter');
+  await waitText(page, 'Wetter-Check');
   await shot(page, tag('05-checkin'));
   problems.push(...await layoutCheck(page, tag('checkin')));
   await clickText(page, 'Alle bereit');
   await waitText(page, 'Was zeigt die Crew?', 8000);
+  await shot(page, tag('06a-checkin-schnell'));
+  problems.push(...await layoutCheck(page, tag('checkin-schnell')));
+  await clickText(page, 'genauer zählen');
+  await waitText(page, 'Wetter zählen', 5000);
   const plus = page.locator('.tally .t-item').nth(0).locator('button').nth(1);
   await plus.click(); await plus.click();
   await page.locator('.tally .t-item').nth(4).locator('button').nth(1).click();
@@ -46,24 +50,36 @@ for (const [vpName, vp] of Object.entries({ ipadLandscape: VIEWPORTS.ipadLandsca
   await waitText(page, 'Karte 1 von');
   await shot(page, tag('08-stehauf-karte'));
   problems.push(...await layoutCheck(page, tag('stehauf-karte')));
-  for (let i = 0; i < 5; i++) {
+  const N = await page.evaluate(() => window.CREW.state.lastCrewSize);
+  for (let i = 0; i < 3; i++) {
+    if (i === 2) await waitText(page, 'Goldene Karte', 5000);
     await clickText(page, 'Alle haben geschätzt');
-    await waitText(page, 'Wie viele stehen gerade?', 8000);
-    if (i === 0) await shot(page, tag('09-stehauf-stehen'));
-    await clickText(page, 'Auflösen');
-    await waitText(page, 'richtig', 5000);
+    await waitText(page, 'Tippe so viele Figuren an', 8000);
+    await page.locator('.sa-person').nth(0).click();
+    await page.locator('.sa-person').nth(1).click();
+    if (i === 0) { await shot(page, tag('09-stehauf-stehen')); problems.push(...await layoutCheck(page, tag('stehen'))); }
+    await clickText(page, 'Weiter');
+    await waitText(page, 'Welche Zahlen seht ihr?', 8000);
+    // Alle Schätzungen eintippen: danach geht es von allein zur Auflösung
+    for (let k = 0; k < N; k++) await page.locator('.valuepad button', { hasText: new RegExp('^' + (k % 2 ? 2 : 1) + '$') }).first().click();
+    await waitText(page, 'Volltreffer', 5000);
     if (i === 0) { await page.waitForTimeout(400); await shot(page, tag('10-stehauf-aufloesung')); problems.push(...await layoutCheck(page, tag('aufloesung'))); }
-    await page.locator('.card .stepper button').nth(1).click();
-    await clickText(page, i < 4 ? 'Nächste Karte' : 'Fertig');
+    await clickText(page, i < 2 ? 'Nächste Karte' : 'Weiter');
   }
-  await waitText(page, 'Kurz drüber reden');
+  await waitText(page, 'Blitzrunde', 5000);
+  await clickText(page, 'Los!');
+  await waitText(page, 'Nachspielzeit', 12000);
   await shot(page, tag('11-debrief'));
   problems.push(...await layoutCheck(page, tag('debrief')));
   await clickText(page, 'Fertig');
   await waitText(page, 'Energie', 5000);
   await page.waitForTimeout(600);
   await shot(page, tag('12-ergebnis'));
-  // Level-Up-Dialog möglich
+  // Level-up: Die Crew wählt A oder B, dann Glanz-Dialog
+  const vote = page.locator('.modal button', { hasText: 'A:' });
+  await vote.waitFor({ timeout: 5000 });
+  await shot(page, tag('12b-wahl'));
+  await vote.click();
   const stark = page.locator('.modal button', { hasText: 'Stark' });
   if (await stark.count()) { await shot(page, tag('13-levelup')); await stark.click(); }
   await clickText(page, 'Bis morgen');
@@ -85,7 +101,10 @@ for (const [vpName, vp] of Object.entries({ ipadLandscape: VIEWPORTS.ipadLandsca
   await page.locator('#btn-home').click();
   await page.locator('#tile-teacher').click();
   for (const d of ['1', '2', '3', '4']) await page.locator('.valuepad button', { hasText: new RegExp('^' + d + '$') }).click();
-  await waitText(page, 'Lehrermodus');
+  // Start-PIN: erst eine eigene PIN festlegen
+  await page.locator('#t-newpin').fill('2468');
+  await page.locator('.modal button', { hasText: 'PIN speichern' }).click();
+  await waitText(page, 'Missionen');
   await shot(page, tag('17-lehrer'));
   problems.push(...await layoutCheck(page, tag('lehrer')));
   for (const t of ['inhalte', 'einstellungen', 'fortschritt', 'anleitung']) {

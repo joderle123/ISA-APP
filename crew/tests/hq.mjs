@@ -169,6 +169,12 @@ for (const [vpName, vp] of RUNS) {
     await page.locator('button:visible', { hasText: 'Los geht' }).first().click();
     await page.locator('button:visible', { hasText: 'Überspringen' }).first().click();
     await page.locator('button:visible', { hasText: 'Fertig' }).first().click();
+    // Die Crew wählt zwischen zwei Teilen (A = Musikbox, B = Pflanzen)
+    const pickA = page.locator('.modal button', { hasText: 'A: Musikbox' });
+    await pickA.waitFor({ state: 'visible', timeout: 8000 });
+    await shot(page, tag('levelup-wahl'), 300);
+    problems.push(...await layoutCheck(page, tag('levelup-wahl')));
+    await pickA.click();
     await page.locator('.modal .hq-scene').waitFor({ state: 'visible', timeout: 8000 });
     const up = await page.evaluate(() => ({
       text: document.querySelector('.modal').textContent,
@@ -180,7 +186,7 @@ for (const [vpName, vp] of RUNS) {
     problems.push(...await layoutCheck(page, tag('levelup-echt')));
     await page.locator('.modal button', { hasText: 'Stark' }).click();
     await page.locator('button:visible', { hasText: 'Crew-HQ ansehen' }).first().click();
-    await page.locator('#stage .hq-scene').waitFor();
+    await page.locator('#stage .hq-scene').first().waitFor();
     const lv5 = await page.evaluate(() => document.querySelector('#stage .hq-scene').getAttribute('aria-label'));
     expect(/Level 5/.test(lv5), 'Nach dem Level-up zeigt das HQ nicht Level 5: ' + lv5);
 

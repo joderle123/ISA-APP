@@ -2,7 +2,7 @@
    alle vier Rundentypen, Eingabe der Lehrkraft, „Alle Wege“, X-Karte mitten in der Mission,
    Ende mit BEE SECURE, Solo-Variante und Inhaltsprüfung.
    Aufruf:  CREW_DIST=… CREW_SHOTS=… node crew/tests/feed.mjs */
-import { launch, shot, layoutCheck, fresh, clickText, waitText, VIEWPORTS } from './lib.mjs';
+import { launch, shot, layoutCheck, fresh, clickText, waitText, VIEWPORTS, closeLevelUp } from './lib.mjs';
 
 const problems = [];
 const RUNS = [
@@ -20,7 +20,7 @@ async function nextStage(page, lastSeq, timeout = 12000) {
     const st = w.dataset.feed;
     const seq = Number(w.dataset.seq || 0);
     if (!st) {
-      if (w.textContent.includes('Kurz drüber reden')) return { stage: 'debrief', seq: last + 1 };
+      if (w.textContent.includes('Nachspielzeit')) return { stage: 'debrief', seq: last + 1 };
       if (w.textContent.includes('Solo-Zone')) return { stage: 'solohub', seq: last + 1 };
       return null;
     }
@@ -292,7 +292,7 @@ for (const run of RUNS) {
   // Session starten, Check-in überspringen → Mission startet direkt
   await page.evaluate(() => { window.CREW.debug.startMission('feed'); });
   await clickText(page, 'Los geht');
-  await waitText(page, 'inneres Wetter');
+  await waitText(page, 'Wetter-Check');
   await clickText(page, 'Überspringen');
 
   const info = await playThrough(page, tag, run, false);
@@ -315,8 +315,7 @@ for (const run of RUNS) {
     energies.push(last.energy);
     if (last.energy < 4 || last.energy > 10) problems.push(`${tag('energie')}: Energie ${last.energy} nicht in 4–10`);
   }
-  const stark = page.locator('.modal button', { hasText: 'Stark' });
-  if (await stark.count()) await stark.click();
+  await closeLevelUp(page);
   await clickText(page, 'Bis morgen');
 
   // Solo-Variante

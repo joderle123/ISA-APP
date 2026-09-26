@@ -3,7 +3,7 @@
    Prüft: Inhalte (Menge, Felder, Satzlänge, Namen, Speed-Match eindeutig), Layout an jedem wichtigen
    Bildschirm (iPad quer/hoch, Handy, Beamer), X-Karte mitten in der Mission und im Solo,
    Timer-Ende, Punkte-Übersteuerung durch die Lehrkraft, Seitenfehler. */
-import { launch, shot, clickText, waitText, layoutCheck, fresh, VIEWPORTS } from './lib.mjs';
+import { launch, shot, clickText, waitText, layoutCheck, fresh, VIEWPORTS, closeLevelUp } from './lib.mjs';
 
 const problems = [];
 function expect(cond, msg) { if (!cond) problems.push(msg); }
@@ -104,7 +104,7 @@ for (const [vpName, vp, look, crew] of RUNS) {
     const diff = crew - 5;
     for (let i = 0; i < Math.abs(diff); i++) await page.locator('.stepper button').nth(diff > 0 ? 1 : 0).click();
     await clickText(page, 'Los geht');
-    await waitText(page, 'inneres Wetter');
+    await waitText(page, 'Wetter-Check');
     await clickText(page, 'Überspringen');
 
     // Intro
@@ -236,7 +236,7 @@ for (const [vpName, vp, look, crew] of RUNS) {
     await check('finale');
     expect(await page.locator('.reframe-roof.on').count() === 1, `${vpName}: Dach fehlt im Finale`);
     await page.click('#rf-done');
-    await waitText(page, 'Kurz drüber reden', 5000);
+    await waitText(page, 'Nachspielzeit', 5000);
     await shot(page, tag('13-debrief'));
     await check('debrief');
     await clickText(page, 'Fertig');
@@ -246,8 +246,7 @@ for (const [vpName, vp, look, crew] of RUNS) {
     const energy = Number(energyTxt);
     expect(energy >= 4 && energy <= 10, `${vpName}: Energie außerhalb 4–10: ${energyTxt}`);
     await shot(page, tag('14-energie'));
-    const stark = page.locator('.modal button', { hasText: 'Stark' });
-    if (await stark.count()) await stark.click();
+    await closeLevelUp(page);
     await clickText(page, 'Bis morgen');
 
     /* ---------- Solo: Reframe-Rush ---------- */

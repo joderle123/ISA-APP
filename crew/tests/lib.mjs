@@ -78,3 +78,13 @@ export async function fresh(page, look = 'arena') {
   await page.evaluate((look) => window.CREW.debug.found('Test Crew', look), look);
   await page.waitForTimeout(150);
 }
+
+// Level-up-Dialoge wegklicken (Wahl A/B, dann „Stark!“), bis „Bis morgen!“ bereit ist
+export async function closeLevelUp(page) {
+  for (let i = 0; i < 40; i++) {
+    const m = page.locator('.overlay .modal button');
+    if (await m.count()) { await m.last().click(); await page.waitForTimeout(150); continue; }
+    if (await page.locator('button:visible', { hasText: 'Bis morgen' }).count()) return;
+    await page.waitForTimeout(200);
+  }
+}

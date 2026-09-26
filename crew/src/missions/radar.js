@@ -243,14 +243,14 @@
     if (a1 === ctx.SKIP) return { skip: 'replace' };
 
     await ui.threeTwoOne('Zeigt her!');
-    const ta = ui.tally(EMOS.map((e) => ({ id: e.id, label: e.id, icon: emoBadge(e.id, 46) })), { max: N });
+    const ta = ui.tally(EMOS.map((e) => ({ id: e.id, label: e.id, icon: emoBadge(e.id, 46) })), { max: N, onFull: () => ui.autoNext('radar-mix', () => ta.total() >= N) });
     ta.el.querySelectorAll('.t-item').forEach((it, i) => { it.classList.add('radar-titem'); it.style.setProperty('--emo', EMOS[i].color); });
     const w2 = scr(ctx, [
       head(ctx, r, total, 'Was zeigt die Crew?'),
-      h('p', { class: 'muted' }, 'Tippe mit, wie oft jedes Gefühl hochgehalten wird.'),
+      h('div', { class: 'row between' }, h('p', { class: 'muted' }, 'Tippe pro Karte einmal auf ihr Gefühl.'), ui.scanBar()),
       h('div', { class: 'radar-tally' }, ta.el),
     ]);
-    const a2 = await ctx.waitFor(ui.choice(w2, [{ label: 'Überspringen', value: 'skip', variant: 'ghost' }, { label: 'Mix zeigen', value: 'go', iconRight: 'right' }], { align: 'end' }));
+    const a2 = await ctx.waitFor(ui.choice(w2, [{ label: 'Überspringen', value: 'skip', variant: 'ghost' }, { label: 'Mix zeigen', value: 'go', iconRight: 'right', id: 'radar-mix' }], { align: 'end' }));
     if (a2 === ctx.SKIP) return { skip: 'round' };
     const counts = ta.get();
     const shown = EMOS.filter((e) => counts[e.id] > 0).sort((x, y) => counts[y.id] - counts[x.id]);
@@ -280,7 +280,8 @@
     requestAnimationFrame(() => requestAnimationFrame(() => {
       segs.forEach((seg, i) => { seg.style.flexBasis = (counts[shown[i].id] / total2) * 100 + '%'; });
     }));
-    const a3 = await ctx.waitFor(ui.choice(w3, [{ label: 'Wort-Upgrade', value: 'up', variant: 'ghost', icon: 'sparkle' }, { label: 'Wie stark?', value: 'go', iconRight: 'right' }]));
+    // Wort-Upgrade nur in der ersten Runde (spart Zeit)
+    const a3 = await ctx.waitFor(ui.choice(w3, (r === 0 ? [{ label: 'Wort-Upgrade', value: 'up', variant: 'ghost', icon: 'sparkle' }] : []).concat([{ label: 'Wie stark?', value: 'go', iconRight: 'right' }])));
     if (a3 === ctx.SKIP) return { skip: 'round', counts, shown };
     if (a3 === 'up') {
       const more = (card.gefuehle || []).filter((g) => EMO[g] && !shown.some((e) => e.id === g)).map((g) => EMO[g]);
@@ -358,13 +359,13 @@
     const pred = st.get();
 
     await ui.threeTwoOne('Zeigt her!');
-    const vp = ui.valuePad({ count: N, min: 0, max: 10, placeholder: 'Tippe die gezeigten Zahlen ein …' });
+    const vp = ui.valuePad({ count: N, min: 0, max: 10, placeholder: 'Tippe die gezeigten Zahlen ein …', onFull: () => ui.autoNext('radar-go', () => vp.get().length >= N) });
     const w2 = scr(ctx, [
       head(ctx, r, total, 'Welche Zahlen seht ihr?'),
-      h('p', { class: 'muted' }, 'Tippe alle Zahlen ein. Die Reihenfolge ist egal.'),
+      h('div', { class: 'row between' }, h('p', { class: 'muted' }, 'Tippe alle Zahlen ein. Die Reihenfolge ist egal.'), ui.scanBar()),
       h('div', { class: 'card radar-pad' }, vp.el),
     ]);
-    const b2 = await ctx.waitFor(ui.choice(w2, [{ label: 'Überspringen', value: 'skip', variant: 'ghost' }, { label: 'Radar starten', value: 'go', iconRight: 'right' }], { align: 'end' }));
+    const b2 = await ctx.waitFor(ui.choice(w2, [{ label: 'Überspringen', value: 'skip', variant: 'ghost' }, { label: 'Radar starten', value: 'go', iconRight: 'right', id: 'radar-go' }], { align: 'end' }));
     if (b2 === ctx.SKIP) return { skip: true };
     const values = vp.get();
     if (b2 === 'skip' || !values.length) { if (b2 !== 'skip') ui.toast('Keine Zahlen? Dann geht’s direkt weiter.'); return { skip: true }; }
@@ -402,8 +403,8 @@
     await Promise.all([tweenNumber(avgNum, avg, 1400), ctx.sleep(1500)]);
 
     let title, text, cls;
-    if (diff <= 1) { title = 'Volltreffer!'; text = 'Der Radar-Profi hat die Crew genau gelesen.'; cls = 'hit'; }
-    else if (diff <= 2) { title = 'Knapp dran!'; text = 'Nur ' + fmt(diff) + ' daneben. Guter Riecher.'; cls = 'near'; }
+    if (diff <= 0.5) { title = diff < 0.2 ? 'Perfekt! Volltreffer!' : 'Volltreffer!'; text = 'Der Radar-Profi hat die Crew genau gelesen.'; cls = 'hit'; }
+    else if (diff <= 1.5) { title = 'Knapp dran!'; text = 'Nur ' + fmt(diff) + ' daneben. Guter Riecher.'; cls = 'near'; }
     else if (avg > pred) { title = 'Stärker als gedacht!'; text = 'Die Crew fühlt das heftiger. Spannend, oder?'; cls = 'miss'; }
     else { title = 'Schwächer als gedacht!'; text = 'Die Crew nimmt das lockerer. Interessant.'; cls = 'miss'; }
     let spread = null;
@@ -423,26 +424,8 @@
     else if (cls === 'near') CREW.sound.play('good');
     else CREW.sound.play('soft');
 
-    const b3 = await ctx.waitFor(ui.choice(w3, [{ label: last ? 'Zur Radar-Bilanz' : 'Nächste Runde', value: 'go', iconRight: 'right' }], { align: 'end' }));
-    return { skip: false, pred, values, avg, hit: diff <= 1, near: diff > 1 && diff <= 2, skipped: b3 === ctx.SKIP };
-  }
-
-  /* ---------- Bilanz am Ende ---------- */
-  async function summaryScreen(ctx, stats, summary) {
-    const { h, ui } = ctx;
-    const emos = EMOS.filter((e) => stats.emoSeen.has(e.id));
-    const tile = (num, label) => h('div', { class: 'card radar-tile pop' }, h('span', { class: 'radar-big' }, String(num)), h('span', { class: 'lbl' }, label));
-    const w = scr(ctx, [
-      h('div', { class: 'stack enter', style: { alignItems: 'center', textAlign: 'center', gap: '8px' } }, h('span', { class: 'eyebrow' }, 'Radar-Bilanz'), h('h2', null, summary)),
-      h('div', { class: 'radar-stats' },
-        tile(stats.played, stats.played === 1 ? 'Runde gespielt' : 'Runden gespielt'),
-        tile(stats.hits, stats.hits === 1 ? 'Volltreffer' : 'Volltreffer'),
-        tile(emos.length, emos.length === 1 ? 'Gefühl entdeckt' : 'Gefühle entdeckt')),
-      emos.length ? h('div', { class: 'row center radar-found enter-3' }, emos.map((e) => h('span', { class: 'radar-lg' }, emoBadge(e.id, 40), h('span', null, e.id)))) : null,
-      h('p', { class: 'lead enter-3', style: { textAlign: 'center' } }, 'Gleiche Situation, anderes Gefühl. Jetzt wisst ihr mehr übereinander.'),
-    ], { center: true, narrow: true });
-    CREW.sound.play('reveal');
-    await ctx.waitFor(ui.choice(w, [{ label: 'Weiter', value: 'go', iconRight: 'right' }]));
+    const b3 = await ctx.waitFor(ui.choice(w3, [{ label: last ? 'Weiter' : 'Nächste Runde', value: 'go', iconRight: 'right' }], { align: 'end' }));
+    return { skip: false, pred, values, avg, hit: diff <= 0.5, near: diff > 0.5 && diff <= 1.5, skipped: b3 === ctx.SKIP };
   }
 
   CREW.registerMission({
@@ -450,7 +433,9 @@
     day: 2,
     title: 'Gefühls-Radar',
     tagline: 'Gleiche Situation – wie fühlt sich die Crew?',
-    minutes: 7,
+    hook: '2 Runden · Radar-Profi schätzt',
+    color: '#12a877',
+    minutes: 5,
     themes: ['Gefühle', 'Fremdwahrnehmung', 'Empathie'],
     etep: 'III–IV',
     eldib: [
@@ -460,7 +445,7 @@
       { code: 'SOZ-31', text: 'merkt, dass andere in derselben Situation anders reagieren' },
       { code: 'SOZ-37', text: 'versteht die Gefühle anderer und nimmt sie ernst' },
     ],
-    teacherNote: 'Zwei Antwort-Karten: „Gefühl“ und „Zahl 0–10“. 4 Runden. Situation vorlesen, alle wählen geheim ein Gefühl und halten auf „Zeigt her!“ hoch. Du zählst mit. Dann schätzt der Radar-Profi laut den Crew-Schnitt (0–10). Der Radar-Profi wechselt reihum, beginnend links von dir. Du stellst den Tipp ein, alle zeigen ihre Stärke, du tippst die Zahlen ein. ±1 = Volltreffer. Das Wort-Upgrade ist freiwillig und nur zum Reden. Es gibt keine falschen Gefühle. X-Karte beim Lesen = neue Situation.',
+    teacherNote: 'Zwei Antwort-Karten: „Gefühl“ und „Zahl 0–10“. 2 Runden. Situation vorlesen, alle wählen geheim ein Gefühl und halten auf „Zeigt her!“ hoch. Du zählst mit. Dann schätzt der Radar-Profi laut den Crew-Schnitt (0–10). Der Radar-Profi wechselt reihum, beginnend links von dir. Du stellst den Tipp ein, alle zeigen ihre Stärke, du tippst die Zahlen ein. ±0,5 = Volltreffer, ±1,5 = knapp. Sind alle Karten eingetippt, geht es von allein weiter. Das Wort-Upgrade (nur Runde 1) ist freiwillig und nur zum Reden. Es gibt keine falschen Gefühle. X-Karte beim Lesen = neue Situation.',
     debrief: [
       'Warum fühlen Menschen in der gleichen Situation so verschieden?',
       'Welche Situation hat die meisten verschiedenen Gefühle ausgelöst? Warum wohl?',
@@ -473,7 +458,7 @@
     ],
 
     async run(ctx) {
-      const ROUNDS = 4;
+      const ROUNDS = 2;
       const MAX_REPLACE = 4;
       const queue = ctx.pick('radar', ROUNDS);
       const seenIds = new Set(queue.map((c) => c.id));
@@ -485,6 +470,7 @@
       await intro(ctx);
 
       while (round < ROUNDS) {
+        if (!ctx.roundGate(round, ROUNDS)) break;
         let card = queue.shift();
         if (!card) {
           const extra = ctx.pick('radar', 1, (it) => !seenIds.has(it.id));
@@ -515,17 +501,18 @@
 
       let summary;
       if (!stats.played) summary = 'Danke fürs Reinschauen, Crew.';
-      else if (stats.hits >= 3) summary = 'Euer Radar ist messerscharf!';
+      else if (stats.hits >= 2) summary = 'Euer Radar ist messerscharf!';
       else if (stats.hits >= 1) summary = 'Starkes Radar, Crew!';
       else if (stats.near >= 1) summary = 'Knapp dran – euer Radar wird besser.';
       else summary = 'Ihr habt heute viel übereinander gelernt.';
-      if (stats.played) await summaryScreen(ctx, stats, summary);
+      // Die Bilanz zeigt jetzt der gemeinsame Abschluss-Bildschirm (spart einen Bildschirm)
 
       // Energie: Mitmachen + Treffer (5–10), nie unter 4
       const energy = stats.played
-        ? Math.max(5, Math.min(10, Math.round(4 + stats.played * 0.75 + stats.hits * 1.25 + stats.near * 0.5)))
+        ? Math.max(5, Math.min(10, Math.round(4 + stats.played * 1.25 + stats.hits * 2 + stats.near)))
         : 4;
-      return { energy, summary };
+      const emos = stats.emoSeen.size;
+      return { energy, summary, points: stats.hits * 2 + stats.near, stats: stats.played ? [[stats.hits, 'Volltreffer'], [emos, emos === 1 ? 'Gefühl entdeckt' : 'Gefühle entdeckt']] : [] };
     },
   });
 })();

@@ -1,7 +1,7 @@
 /* Test: Mission „Gefühls-Radar“ (radar) – komplett durchspielen auf iPad quer/hoch und Handy.
    Aufruf:  CREW_DIST=<ordner> CREW_SHOTS=<ordner> node crew/tests/radar.mjs
    Prüft: Inhalte, Layout an jedem wichtigen Bildschirm, X-Karte mitten in der Mission, Seitenfehler. */
-import { launch, shot, clickText, waitText, layoutCheck, fresh, VIEWPORTS } from './lib.mjs';
+import { launch, shot, clickText, waitText, layoutCheck, fresh, VIEWPORTS, closeLevelUp } from './lib.mjs';
 
 const problems = [];
 const EMO = ['Wut', 'Angst', 'Trauer', 'Freude', 'Scham', 'Stolz', 'Ekel', 'Überraschung'];
@@ -20,6 +20,11 @@ async function eyebrow(page) {
 }
 async function sayText(page) {
   return (await page.locator('.bigcard .say').first().textContent()).trim();
+}
+async function clickIfThere(page, text) {
+  await page.waitForTimeout(200);
+  const b = page.locator('button:visible', { hasText: text });
+  if (await b.count()) await b.first().click().catch(() => {});
 }
 function expect(cond, msg) { if (!cond) problems.push(msg); }
 
@@ -66,7 +71,7 @@ for (const [vpName, vp, look] of RUNS) {
     // Hochformat: Crew mit 8 Personen (Sitzkreis mit mehr Plätzen prüfen)
     if (vpName === 'ipadPortrait') for (let i = 0; i < 3; i++) await page.locator('.stepper button').nth(1).click();
     await clickText(page, 'Los geht');
-    await waitText(page, 'inneres Wetter');
+    await waitText(page, 'Wetter-Check');
     await clickText(page, 'Überspringen');
 
     // Intro
@@ -77,14 +82,14 @@ for (const [vpName, vp, look] of RUNS) {
 
     /* ---------- Runde 1: alles mit Wort-Upgrade, Volltreffer ---------- */
     await waitText(page, 'Welches Gefühl?', 8000);
-    expect((await eyebrow(page)).includes('Runde 1 von 4'), 'Runde 1: falsche Anzeige');
+    expect((await eyebrow(page)).includes('Runde 1 von 2'), 'Runde 1: falsche Anzeige');
     await shot(page, tag('02-situation'));
     await check('situation');
     await clickText(page, 'Alle bereit');
     await waitText(page, 'Was zeigt die Crew?', 8000);
     await tallyPlus(page, 0, 2); // Wut
     await tallyPlus(page, 1, 1); // Angst
-    await tallyPlus(page, 3, 1); // Freude
+    await page.locator('.tally .t-item').nth(3).click(); // Freude: die ganze Kachel zählt +1
     await shot(page, tag('03-tally'));
     await check('tally');
     await clickText(page, 'Mix zeigen');
@@ -109,7 +114,7 @@ for (const [vpName, vp, look] of RUNS) {
     for (const n of [5, 6, 4, 5, 5]) await tapValue(page, n);
     await shot(page, tag('07-werte'));
     await check('werte');
-    await clickText(page, 'Radar starten');
+    await clickIfThere(page, 'Radar starten'); // bei 5 Leuten geht es von allein weiter
     await page.locator('.radar-verdict.on').waitFor({ timeout: 8000 });
     await waitText(page, 'Volltreffer!', 3000);
     await shot(page, tag('08-radar-treffer'), 1900);
@@ -118,78 +123,37 @@ for (const [vpName, vp, look] of RUNS) {
 
     /* ---------- Runde 2: X-Karte beim Lesen → neue Situation, gleiche Runde ---------- */
     await waitText(page, 'Welches Gefühl?', 8000);
-    expect((await eyebrow(page)).includes('Runde 2 von 4'), 'Runde 2: falsche Anzeige');
+    expect((await eyebrow(page)).includes('Runde 2 von 2'), 'Runde 2: falsche Anzeige');
     const before = await sayText(page);
     await page.locator('#btn-x').click();
     await page.waitForTimeout(250);
     await waitText(page, 'Welches Gefühl?', 5000);
     const after = await sayText(page);
     expect(before !== after, 'X-Karte: Situation hat nicht gewechselt');
-    expect((await eyebrow(page)).includes('Runde 2 von 4'), 'X-Karte: Runde sollte gleich bleiben');
+    expect((await eyebrow(page)).includes('Runde 2 von 2'), 'X-Karte: Runde sollte gleich bleiben');
     await shot(page, tag('09-nach-xkarte'));
     await clickText(page, 'Alle bereit');
     await waitText(page, 'Was zeigt die Crew?', 8000);
     await tallyPlus(page, 5, 5); // alle Stolz
-    await clickText(page, 'Mix zeigen');
+    await clickIfThere(page, 'Mix zeigen');
     await waitText(page, 'Alle auf einer Welle', 5000);
     await shot(page, tag('10-mix-welle'), 1300);
+    expect(!(await page.locator('button:visible', { hasText: 'Wort-Upgrade' }).count()), 'Wort-Upgrade nur in Runde 1');
     await clickText(page, 'Wie stark?');
     await waitText(page, 'Die nächste Person links davon', 5000);
     await page.locator('#radar-tipp .stepper button').nth(1).click(); // Tipp 6
     await clickText(page, 'Zeigt her');
     await waitText(page, 'Welche Zahlen seht ihr?', 8000);
-    for (const n of [9, 10, 8, 9, 2]) await tapValue(page, n);
-    await clickText(page, 'Radar starten');
+    for (const n of [7, 7, 6, 8, 6]) await tapValue(page, n);
+    await clickIfThere(page, 'Radar starten');
     await page.locator('.radar-verdict.on').waitFor({ timeout: 8000 });
     await waitText(page, 'Knapp dran', 3000);
     await shot(page, tag('11-radar-knapp'), 1900);
     await check('radar-knapp');
-    await clickText(page, 'Nächste Runde');
-
-    /* ---------- Runde 3: X-Karte mitten in „Wie stark?“ → Runde 4 geht weiter ---------- */
-    await waitText(page, 'Welches Gefühl?', 8000);
-    expect((await eyebrow(page)).includes('Runde 3 von 4'), 'Runde 3: falsche Anzeige');
-    await clickText(page, 'Alle bereit');
-    await waitText(page, 'Was zeigt die Crew?', 8000);
-    await tallyPlus(page, 6, 1); await tallyPlus(page, 7, 2); await tallyPlus(page, 4, 1);
-    await clickText(page, 'Mix zeigen');
-    await clickText(page, 'Wie stark?');
-    await clickText(page, 'Zeigt her');
-    await waitText(page, 'Welche Zahlen seht ihr?', 8000);
-    await tapValue(page, 3);
-    await page.locator('#btn-x').click();
-    await page.waitForTimeout(250);
-
-    /* ---------- Runde 4: Zählen überspringen, schwächer als gedacht ---------- */
-    await waitText(page, 'Welches Gefühl?', 8000);
-    expect((await eyebrow(page)).includes('Runde 4 von 4'), 'Nach X-Karte in Runde 3 sollte Runde 4 kommen');
-    await clickText(page, 'Alle bereit');
-    await waitText(page, 'Was zeigt die Crew?', 8000);
-    await clickText(page, 'Überspringen');
-    await waitText(page, 'Wie stark?', 5000);
-    await shot(page, tag('12-profi-runde4'), 700);
-    await check('profi-runde4');
-    await clickText(page, 'Zeigt her');
-    await waitText(page, 'Welche Zahlen seht ihr?', 8000);
-    for (const n of [1, 0, 2, 1, 1]) await tapValue(page, n);
-    await clickText(page, 'Radar starten');
-    await page.locator('.radar-verdict.on').waitFor({ timeout: 8000 });
-    await waitText(page, 'Schwächer als gedacht', 3000);
-    await shot(page, tag('13-radar-schwaecher'), 1900);
-    await check('radar-schwaecher');
-    await clickText(page, 'Zur Radar-Bilanz');
-
-    // Bilanz
-    await waitText(page, 'Radar-Bilanz', 5000);
-    await shot(page, tag('14-bilanz'), 700);
-    await check('bilanz');
-    const tiles = await page.locator('.radar-tile .radar-big').allTextContents();
-    expect(tiles[0] === '4', 'Bilanz: 4 Runden erwartet, gesehen ' + tiles[0]);
-    expect(tiles[1] === '1', 'Bilanz: 1 Volltreffer erwartet, gesehen ' + tiles[1]);
     await clickText(page, 'Weiter');
 
     // Nachbesprechung & Energie
-    await waitText(page, 'Kurz drüber reden', 5000);
+    await waitText(page, 'Nachspielzeit', 5000);
     await shot(page, tag('15-debrief'));
     await check('debrief');
     await clickText(page, 'Fertig');
@@ -199,8 +163,9 @@ for (const [vpName, vp, look] of RUNS) {
     const hist = await page.evaluate(() => window.CREW.state.history.slice(-1)[0]);
     expect(hist && hist.mission === 'radar', 'Kein Eintrag im Verlauf');
     expect(hist && hist.energy >= 5 && hist.energy <= 10, 'Energie außerhalb 5–10: ' + (hist && hist.energy));
-    const stark = page.locator('.modal button', { hasText: 'Stark' });
-    if (await stark.count()) await stark.click();
+    const bilanz = await page.locator('#stage').textContent();
+    expect(/1 Volltreffer/.test(bilanz), 'Abschluss zeigt die Radar-Bilanz nicht');
+    await closeLevelUp(page);
     await clickText(page, 'Bis morgen');
     await page.locator('#tile-session').waitFor();
   } catch (e) {
