@@ -10,6 +10,8 @@ const ICON = {
 export function createHUD({ root, input, events, audio, game }) {
   const params = new URLSearchParams(location.search);
   root.innerHTML = `
+    <div class="vignette" aria-hidden="true"></div>
+    <div class="flash" aria-hidden="true"></div>
     <div class="hud-top">
       <div class="compass hud-part" aria-hidden="true"><div class="compass-strip"></div><div class="compass-needle"></div></div>
       <button class="hud-round hud-menu-btn" type="button" aria-label="Menü">${ICON.menu}</button>
@@ -32,7 +34,9 @@ export function createHUD({ root, input, events, audio, game }) {
     compassStrip: $('.compass-strip'), banner: $('.zone-banner'), toasts: $('.toasts'), joy: $('.joystick'), knob: $('.joystick-knob'),
     action: $('.hud-btn-action'), actionLbl: $('.hud-btn-action .lbl'), power: $('.hud-btn-power'), powerLbl: $('.hud-btn-power .lbl'),
     jump: $('.hud-btn-jump'), menuBtn: $('.hud-menu-btn'), keys: $('.key-hints'), introTitle: $('.intro-title'), skip: $('.skip-hint'), debug: $('.debug'),
+    vignette: $('.vignette'), flash: $('.flash'),
   };
+  let flashTimer = 0;
 
   // ---- Kompass ----
   const PX_PER_RAD = 90;
@@ -189,6 +193,15 @@ export function createHUD({ root, input, events, audio, game }) {
       if (v && document.documentElement.classList.contains('no-touch') && !keysShown) showKeys();
     },
     toast,
+    // Kurzer weißer Lichtblitz (z. B. Start der Farbwelle); sanft, nie stroboskopisch
+    flash(strength = 0.7) {
+      el.flash.style.setProperty('--flash', String(Math.max(0, Math.min(1, strength))));
+      el.flash.classList.add('is-on');
+      clearTimeout(flashTimer);
+      flashTimer = setTimeout(() => el.flash.classList.remove('is-on'), 60);
+    },
+    // Schleier-Anteil an der Figur (0..1): Randabdunklung wird grau-violett
+    setVeil(v) { root.style.setProperty('--veil', String(Math.max(0, Math.min(1, v)))); },
     // Zonen-Banner: name, Untertitel (z. B. „Der Grauschleier liegt hier“)
     showZone(name, sub = '', small = 'Du entdeckst') {
       el.banner.querySelector('small').textContent = small;

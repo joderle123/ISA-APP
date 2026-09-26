@@ -10,10 +10,11 @@ export function lambertVC(veil, key, opts = {}) {
   return m;
 }
 
-export function createLandmarks({ island, veil, colliders, scene }) {
+export function createLandmarks({ island, veil, colliders, scene, quality }) {
   const group = new THREE.Group();
   group.name = 'landmarks';
   const mat = lambertVC(veil, 'base');
+  const qp = (quality && quality.particles) || 1;
 
   // ---- Anlegesteg ----
   const D = FEATURES.dock;
@@ -160,12 +161,55 @@ export function createLandmarks({ island, veil, colliders, scene }) {
         gl_FragColor = vec4(col, 1.0);
         #include <tonemapping_fragment>
         #include <colorspace_fragment>
+        gl_FragColor.rgb = lumoGrade(gl_FragColor.rgb);
       }`,
   });
   const lava = new THREE.Mesh(new THREE.CircleGeometry(V.lavaRadius, 28).rotateX(-Math.PI / 2), lavaMat);
   lava.position.set(V.x, V.lavaLevel, V.z);
   group.add(lava);
   let smokeT = 0;
+
+  // ---- Rauchsäule: Low-Poly-Ballen, die aufsteigen, wachsen, mit dem Wind abdriften und verblassen ----
+  const PUFFS = Math.round(30 * Math.max(0.5, qp));
+  const puffGeo = part(new THREE.IcosahedronGeometry(1, 1), { jitter: 0.32, seed: 77, faceVar: 0.16, color: '#ffffff' });
+  const puffMat = new THREE.MeshLambertMaterial({ vertexColors: true, flatShading: true, transparent: true, opacity: 0.86, depthWrite: false, emissive: new THREE.Color('#b8481a'), emissiveIntensity: 0 });
+  veil.patch(puffMat, { key: 'smoke', veil: false });
+  const smoke = new THREE.InstancedMesh(puffGeo, puffMat, PUFFS);
+  smoke.frustumCulled = false;
+  smoke.renderOrder = 6;
+  smoke.name = 'vulkan-rauch';
+  const puffs = [];
+  for (let i = 0; i < PUFFS; i++) puffs.push({ ph: (i / PUFFS) * 15, sx: (Math.random() - 0.5) * 3, sz: (Math.random() - 0.5) * 3, rot: Math.random() * 6.28, sw: 0.6 + Math.random() * 0.8 });
+  const SMOKE_LIFE = 15;
+  const _m = new THREE.Matrix4(), _q = new THREE.Quaternion(), _e = new THREE.Euler(), _p = new THREE.Vector3(), _s = new THREE.Vector3();
+  const cDay0 = new THREE.Color('#6a5d5c'), cDay1 = new THREE.Color('#c9c3c8'), cNight0 = new THREE.Color('#2a2028'), cNight1 = new THREE.Color('#4a4452');
+  const _c = new THREE.Color(), _c0 = new THREE.Color(), _c1 = new THREE.Color(), _cLava = new THREE.Color('#ff7a30');
+  group.add(smoke);
+  function updateSmoke(t, night) {
+    _c0.copy(cDay0).lerp(cNight0, night); _c1.copy(cDay1).lerp(cNight1, night);
+    for (let i = 0; i < PUFFS; i++) {
+      const p = puffs[i];
+      const k = ((t * 1.0 + p.ph) % SMOKE_LIFE) / SMOKE_LIFE;
+      const y = V.lavaLevel + 2.5 + k * 42;
+      const drift = k * k * 22;
+      const sway = Math.sin(t * 0.35 + p.ph) * 1.6 * k;
+      _p.set(V.x + p.sx * (1 + k * 2) + drift * 0.75 + sway, y, V.z + p.sz * (1 + k * 2) + drift * 0.35 - sway * 0.5);
+      const grow = (1.6 + k * 5.5) * Math.min(1, k * 14) * (1 - Math.pow(Math.max(0, (k - 0.7) / 0.3), 1.6));
+      _e.set(p.rot + t * 0.1 * p.sw, p.rot * 1.7, 0);
+      _q.setFromEuler(_e);
+      _m.compose(_p, _q, _s.set(grow * 1.15, grow * 0.85, grow * 1.15));
+      smoke.setMatrixAt(i, _m);
+      _c.copy(_c0).lerp(_c1, Math.min(1, k * 2.2)).multiplyScalar(0.92 + p.sw * 0.1);
+      // die untersten Ballen fangen nachts das Lavalicht (rötlich), oben bleibt es dunkel
+      if (night > 0.05) _c.lerp(_cLava, night * Math.max(0, 1 - k * 4) * 0.7);
+      smoke.setColorAt(i, _c);
+    }
+    smoke.instanceMatrix.needsUpdate = true;
+    if (smoke.instanceColor) smoke.instanceColor.needsUpdate = true;
+    // nachts schwacher Schimmer von unten
+    puffMat.emissiveIntensity = night * 0.05;
+  }
+  updateSmoke(0, 0);
 
   scene.add(group);
   let lit = 0, litTarget = 0;
@@ -176,15 +220,17 @@ export function createLandmarks({ island, veil, colliders, scene }) {
     // Leuchtturm leuchtet (Finale)
     setLighthouseLit(v) { litTarget = v ? 1 : 0; },
     get lighthouseLit() { return litTarget > 0.5; },
-    lava,
+    lava, smoke,
     update(dt, t, night, particles) {
       lavaMat.uniforms.uT.value = t;
+      updateSmoke(t, night);
       if (particles && dt > 0) {
         smokeT += dt;
         while (smokeT > 0.3) {
           smokeT -= 0.3;
-          particles.emit({ x: V.x + (Math.random() - 0.5) * 5, y: V.lavaLevel + 3, z: V.z + (Math.random() - 0.5) * 5, count: 1, speed: 0.3, up: 2.2, vx: 0.6, color: night > 0.5 ? 0x2c2733 : 0x9a93a0, size: 8, life: 10, gravity: 0.2, drag: 0.08, grow: 2.4, alpha: night > 0.5 ? 0.22 : 0.32 });
-          if (Math.random() < 0.3) particles.emit({ x: V.x + (Math.random() - 0.5) * 8, y: V.lavaLevel + 0.5, z: V.z + (Math.random() - 0.5) * 8, count: 3, spread: 1, speed: 1.2, up: 4, color: 0xffa040, size: 0.5, life: 1.4, gravity: -4, drag: 0.5, additive: true, alpha: 1 });
+          // Funken und Aschestücke aus dem Krater
+          if (Math.random() < 0.45) particles.emit({ x: V.x + (Math.random() - 0.5) * 8, y: V.lavaLevel + 0.5, z: V.z + (Math.random() - 0.5) * 8, count: 3, spread: 1, speed: 1.2, up: 5, color: 0xffa040, size: 0.5, life: 1.6, gravity: -4, drag: 0.5, additive: true, alpha: 1 });
+          if (Math.random() < 0.35) particles.emit({ x: V.x + (Math.random() - 0.5) * 6, y: V.lavaLevel + 6, z: V.z + (Math.random() - 0.5) * 6, count: 2, spread: 2, speed: 0.4, up: 1.5, vx: 0.8, color: 0x3a3236, size: 0.35, life: 6, gravity: -0.35, drag: 0.4, grow: 0.3, alpha: 0.8 });
         }
       }
       boat.position.y = boatBase.y + Math.sin(t * 1.1) * 0.12;

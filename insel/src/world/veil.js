@@ -1,6 +1,8 @@
 // Grauschleier: entsättigt Zonen per Shader, Farbwelle beim Befreien.
-// Außerdem: gemeinsamer Material-Patch (Schleier + richtungsabhängiger Nebel) für alle Welt-Materialien.
+// Außerdem: gemeinsamer Material-Patch (Schleier + richtungsabhängiger Nebel + Farbkorrektur) für alle Welt-Materialien.
 // Nutzung für neue Materialien: game.world.veil.patch(material, { veil: true, key: 'meinprop' })
+// Eigene ShaderMaterials: veil.glsl einbinden, veil.uniforms übernehmen, am Ende
+//   gl_FragColor.rgb = lumoGrade(lumoFog(gl_FragColor.rgb, ...)) aufrufen.
 import * as THREE from 'three';
 import { ZONES, ZONE_INDEX } from './island.js';
 
@@ -18,10 +20,15 @@ uniform vec3 uVeilFogColor;
 uniform vec3 uFogSunColor;
 uniform vec3 uFogSunDir;
 uniform float uFogSunAmt;
+uniform vec3 uGradeLift;
+uniform vec3 uGradeGain;
+uniform float uGradeSat;
+uniform float uGradeContrast;
 float gLumoVeil = 0.0;
 float gLumoRing = 0.0;
+float gLumoInside = 0.0;
 float lumoVeilAmount(vec3 p) {
-  float cov = 0.0, acc = 0.0, wsum = 0.0, ring = 0.0;
+  float cov = 0.0, acc = 0.0, wsum = 0.0, ring = 0.0, inside = 0.0;
   for (int k = 0; k < ${MAX_ZONES}; k++) {
     vec4 z = uVeilZones[k];
     if (z.z <= 0.0) continue;
@@ -30,14 +37,17 @@ float lumoVeilAmount(vec3 p) {
     float v = z.w;
     if (abs(float(k) - uVeilWave.w) < 0.5 && uVeilWave.z >= 0.0) {
       float dw = distance(p.xz, uVeilWave.xy);
-      float inside = 1.0 - smoothstep(uVeilWave.z - 6.0, uVeilWave.z, dw);
-      v *= 1.0 - inside;
-      float rr = (dw - uVeilWave.z) / 3.2;
+      float ins = 1.0 - smoothstep(uVeilWave.z - 7.0, uVeilWave.z, dw);
+      v *= 1.0 - ins;
+      inside = max(inside, ins * w);
+      // breiter Regenbogenring mit hellem Vorderrand
+      float rr = (dw - uVeilWave.z) / 4.5;
       ring = max(ring, max(w, 0.35) * exp(-rr * rr));
     }
     acc += w * v; wsum += w; cov = max(cov, w);
   }
   gLumoRing = ring;
+  gLumoInside = inside;
   float zv = wsum > 0.0 ? acc / wsum : 0.0;
   return mix(uVeilBase, zv, cov) * uVeilStrength;
 }
@@ -45,14 +55,22 @@ vec3 lumoApplyVeil(vec3 col, vec3 p) {
   float v = lumoVeilAmount(p);
   gLumoVeil = v;
   float l = dot(col, vec3(0.299, 0.587, 0.114));
-  vec3 grey = vec3(l) * vec3(0.9, 0.93, 1.06) * 0.84 + uVeilHaze * (0.015 + l * 0.1);
-  col = mix(col, grey, v * 0.8);
+  // „Verflucht“: Kontrast flach, kalt-violett getönt, dunkle Schatten, träge wandernde Schlieren
+  float lf = 0.07 + l * 0.66;
+  float drift = 0.9 + 0.1 * sin(p.x * 0.11 + uLumoTime * 0.25) * sin(p.z * 0.09 - uLumoTime * 0.19 + p.y * 0.2);
+  vec3 grey = vec3(lf) * vec3(0.86, 0.87, 0.98) * drift + uVeilHaze * (0.03 + l * 0.08);
+  col = mix(col, grey, clamp(v * 0.94, 0.0, 1.0));
   if (gLumoRing > 0.002) {
     float a = atan(p.z - uVeilWave.y, p.x - uVeilWave.x);
-    vec3 rb = 0.5 + 0.5 * cos(6.2831 * (a / 6.2831 * 3.0 + uLumoTime * 0.5 + vec3(0.0, 0.33, 0.67)));
+    vec3 rb = 0.5 + 0.5 * cos(6.2831 * (a / 6.2831 * 3.0 + uLumoTime * 0.6 + vec3(0.0, 0.33, 0.67)));
     rb = rb * rb;
-    col = mix(col, col * 0.6 + rb * 1.6 + 0.08, clamp(gLumoRing, 0.0, 1.0) * 0.85);
+    float r = clamp(gLumoRing, 0.0, 1.0);
+    col = mix(col, col * 0.5 + rb * 1.7 + 0.1, r * 0.9);
+    // heller Vorderrand
+    col += vec3(1.0, 0.98, 0.9) * pow(r, 6.0) * 0.9;
   }
+  // frisch befreite Fläche leuchtet kurz nach (innerhalb der Welle)
+  col += col * gLumoInside * 0.25 * clamp(1.0 - (uVeilWave.z - distance(p.xz, uVeilWave.xy)) / 14.0, 0.0, 1.0);
   return col;
 }
 vec3 lumoFog(vec3 col, float depth, vec3 viewPos, vec3 fogCol, float fogNear, float fogFar) {
@@ -60,9 +78,17 @@ vec3 lumoFog(vec3 col, float depth, vec3 viewPos, vec3 fogCol, float fogNear, fl
   vec3 dir = normalize(viewPos);
   float s = max(dot(dir, uFogSunDir), 0.0);
   vec3 fc = mix(fogCol, uFogSunColor, pow(s, 4.0) * uFogSunAmt);
-  f = max(f, gLumoVeil * 0.3 * smoothstep(6.0, 45.0, depth));
-  fc = mix(fc, uVeilFogColor, gLumoVeil * 0.45 * smoothstep(6.0, 45.0, depth));
+  f = max(f, gLumoVeil * 0.34 * smoothstep(5.0, 40.0, depth));
+  fc = mix(fc, uVeilFogColor, gLumoVeil * 0.5 * smoothstep(5.0, 40.0, depth));
   return mix(col, fc, f);
+}
+// Farbkorrektur (nach Tone-Mapping, im sRGB-Ausgaberaum): Sättigung, Kontrast, warme Lichter / kühle Schatten
+vec3 lumoGrade(vec3 c) {
+  float l = dot(c, vec3(0.299, 0.587, 0.114));
+  c = mix(vec3(l), c, uGradeSat);
+  c = (c - 0.5) * uGradeContrast + 0.5;
+  c = c * uGradeGain + uGradeLift * (1.0 - l);
+  return clamp(c, 0.0, 1.0);
 }
 `;
 
@@ -70,6 +96,7 @@ const FOG_FRAG = /* glsl */`
 #ifdef USE_FOG
   gl_FragColor.rgb = lumoFog(gl_FragColor.rgb, vFogDepth, vFogView, fogColor, fogNear, fogFar);
 #endif
+  gl_FragColor.rgb = lumoGrade(gl_FragColor.rgb);
 `;
 
 export function createVeil({ events, audio } = {}) {
@@ -82,11 +109,16 @@ export function createVeil({ events, audio } = {}) {
     uVeilWave: { value: new THREE.Vector4(0, 0, -1, -1) },
     uVeilStrength: { value: 1 },
     uLumoTime: { value: 0 },
-    uVeilHaze: { value: new THREE.Color('#a9a3c8') },
-    uVeilFogColor: { value: new THREE.Color().setRGB(0.62, 0.61, 0.68, THREE.LinearSRGBColorSpace) }, // roh (sRGB)
+    uVeilHaze: { value: new THREE.Color('#8f86b8') },
+    uVeilFogColor: { value: new THREE.Color().setRGB(0.55, 0.54, 0.63, THREE.LinearSRGBColorSpace) }, // roh (sRGB)
     uFogSunColor: { value: new THREE.Color().setRGB(1, 0.69, 0.44, THREE.LinearSRGBColorSpace) }, // roh (sRGB)
     uFogSunDir: { value: new THREE.Vector3(0, 0, -1) },
     uFogSunAmt: { value: 0.8 },
+    // Farbkorrektur (wird vom Himmel je nach Tageszeit gesetzt)
+    uGradeLift: { value: new THREE.Vector3(0, 0, 0) },
+    uGradeGain: { value: new THREE.Vector3(1, 1, 1) },
+    uGradeSat: { value: 1 },
+    uGradeContrast: { value: 1 },
   };
   let base = 0.55;
   let wave = null; // {index, x, z, radius, maxR, t, duration, onDone}
@@ -140,6 +172,13 @@ export function createVeil({ events, audio } = {}) {
     glsl: VEIL_GLSL,
     zones,
     patch,
+    // Farbkorrektur setzen: { lift:[r,g,b], gain:[r,g,b], sat, contrast }
+    setGrade({ lift, gain, sat, contrast } = {}) {
+      if (lift) uniforms.uGradeLift.value.set(lift[0], lift[1], lift[2]);
+      if (gain) uniforms.uGradeGain.value.set(gain[0], gain[1], gain[2]);
+      if (sat !== undefined) uniforms.uGradeSat.value = sat;
+      if (contrast !== undefined) uniforms.uGradeContrast.value = contrast;
+    },
     // Sofort setzen (0 = farbig, 1 = grau)
     setZone(id, amount) {
       const z = zones[ZONE_INDEX[id]];
@@ -150,13 +189,20 @@ export function createVeil({ events, audio } = {}) {
     veilZone(id) { veil.setZone(id, 1); },
     isVeiled(id) { const z = zones[ZONE_INDEX[id]]; return !!z && z.veil > 0.5; },
     amountAt(x, z) {
-      // CPU-Näherung der Shader-Formel
+      // CPU-Näherung der Shader-Formel (inkl. laufender Welle)
       let cov = 0, acc = 0, ws = 0;
-      for (const Z of zones) {
+      for (let k = 0; k < zones.length; k++) {
+        const Z = zones[k];
         const d = Math.hypot(x - Z.x, z - Z.z);
         const t = Math.max(0, Math.min(1, (d - Z.r * 0.72) / (Z.r * 0.46)));
         const w = 1 - t * t * (3 - 2 * t);
-        acc += w * Z.veil; ws += w; cov = Math.max(cov, w);
+        let v = Z.veil;
+        if (wave && wave.index === k) {
+          const dw = Math.hypot(x - wave.x, z - wave.z);
+          const ti = Math.max(0, Math.min(1, (dw - (wave.radius - 7)) / 7));
+          v *= ti * ti * (3 - 2 * ti);
+        }
+        acc += w * v; ws += w; cov = Math.max(cov, w);
       }
       const zv = ws > 0 ? acc / ws : 0;
       return base + (zv - base) * cov;
@@ -170,10 +216,10 @@ export function createVeil({ events, audio } = {}) {
       const cx = opts.x !== undefined ? opts.x : z.x;
       const cz = opts.z !== undefined ? opts.z : z.z;
       const maxR = Math.hypot(cx - z.x, cz - z.z) + z.r * 1.35;
-      wave = { index, id, x: cx, z: cz, radius: 0, maxR, t: 0, duration: opts.duration || 4.2, onDone: opts.onDone };
+      wave = { index, id, x: cx, z: cz, radius: 0, maxR, t: 0, duration: opts.duration || 4.6, onDone: opts.onDone };
       uniforms.uVeilWave.value.set(cx, cz, 0, index);
       if (audio && opts.sound !== false) audio.play('restore');
-      events && events.emit('veil:restore:start', { id, x: cx, z: cz });
+      events && events.emit('veil:restore:start', { id, x: cx, z: cz, maxR, duration: wave.duration });
       return true;
     },
     // Ganze Insel befreien (Finale)

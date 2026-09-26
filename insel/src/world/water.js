@@ -116,6 +116,7 @@ void main() {
   #ifdef USE_FOG
     gl_FragColor.rgb = lumoFog(gl_FragColor.rgb, vFogDepth, vFogView, fogColor, fogNear, fogFar);
   #endif
+  gl_FragColor.rgb = lumoGrade(gl_FragColor.rgb);
 }
 `;
 
@@ -236,6 +237,7 @@ export function createWater({ island, veil, quality, scene }) {
         #ifdef USE_FOG
           gl_FragColor.rgb = lumoFog(gl_FragColor.rgb, vFogDepth, vFogView, fogColor, fogNear, fogFar);
         #endif
+        gl_FragColor.rgb = lumoGrade(gl_FragColor.rgb);
       }`,
     transparent: true, fog: true,
   });
@@ -315,6 +317,7 @@ export function createWater({ island, veil, quality, scene }) {
         #ifdef USE_FOG
           gl_FragColor.rgb = lumoFog(gl_FragColor.rgb, vFogDepth, vFogView, fogColor, fogNear, fogFar);
         #endif
+        gl_FragColor.rgb = lumoGrade(gl_FragColor.rgb);
       }`,
     transparent: true, side: THREE.DoubleSide, depthWrite: false, fog: true,
   });

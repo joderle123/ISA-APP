@@ -1,8 +1,10 @@
 // Low-Poly-Terrain: nicht indizierte Dreiecke mit Flächen-Normalen und Flächenfarben.
-// Farben nach Höhe, Neigung, Zone; Schleier über veil.patch(); Lava-Glühen im Krater; Kaustik unter Wasser.
+// Wege, Plätze (Pads) und Sand bekommen weich interpolierte Normalen und ruhige Farben, damit sie als
+// glatte Flächen lesen statt als Dreiecks-Mosaik. Farben nach Höhe, Neigung, Zone; Schleier über veil.patch();
+// Lava-Glühen im Krater und Lava-Adern am oberen Kegel; Kaustik unter Wasser.
 import * as THREE from 'three';
-import { ZONES, FEATURES } from './island.js';
-import { hash2, smoothstep, clamp } from './noise.js';
+import { ZONES, FEATURES, SITES } from './island.js';
+import { hash2, smoothstep, clamp, ridged } from './noise.js';
 
 const C = (hex) => new THREE.Color(hex);
 const PAL = {
@@ -35,6 +37,17 @@ export function createTerrain({ island, veil, quality }) {
   const tmp2 = new THREE.Color();
   const grassA = new THREE.Color(), grassB = new THREE.Color();
   const vol = FEATURES.volcano;
+  const pads = Object.values(SITES).filter((s) => s.r > 0);
+  // Ebene Plätze: 1 innerhalb des Pads, weich auslaufend
+  function padWeight(x, z) {
+    let w = 0;
+    for (let i = 0; i < pads.length; i++) {
+      const p = pads[i];
+      const d = Math.hypot(x - p.x, z - p.z);
+      if (d < p.r + 5) w = Math.max(w, smoothstep(p.r + 5, p.r, d));
+    }
+    return w;
+  }
 
   // Zellen zählen (tiefe Meereszellen weglassen)
   const keep = new Uint8Array((n - 1) * (n - 1));
@@ -51,6 +64,16 @@ export function createTerrain({ island, veil, quality }) {
   let t = 0;
   const va = new THREE.Vector3(), vb = new THREE.Vector3(), vc = new THREE.Vector3();
   const e1 = new THREE.Vector3(), e2 = new THREE.Vector3(), fn = new THREE.Vector3();
+  const _sn = { x: 0, y: 1, z: 0 };
+  // Rückgabe von faceColor: Glühen; Nebenwirkung: tmp = Farbe, smoothness = Anteil weicher Normalen
+  let smoothness = 0;
+  // Lava-Adern am oberen Kegel (0..0,6), stetig über Flächen hinweg
+  function veinAt(x, z, h) {
+    const dv = Math.hypot(x - vol.x, z - vol.z);
+    if (dv >= 48 || dv < vol.rimRadius || h <= 24) return 0;
+    const vein = ridged(island.noise.rock, x / 9 + 5, z / 9 - 2, 2);
+    return smoothstep(0.5, 0.64, vein) * 0.6 * smoothstep(24, 33, h) * (1 - smoothstep(38, 48, dv));
+  }
 
   function faceColor(cx, cz, h, ny, fi) {
     const rnd = hash2(fi, 17, 3);
@@ -61,7 +84,10 @@ export function createTerrain({ island, veil, quality }) {
     const wild = Math.max(0, 1 - wsum);
     const wKl = zw[3], wVu = zw[5], wMa = zw[4];
     const dv = Math.hypot(cx - vol.x, cz - vol.z);
+    const pw = padWeight(cx, cz);
+    const pathW = island.pathWeight(cx, cz);
     let gl = 0;
+    smoothness = 0;
     if (dv < vol.rimRadius) {
       // Krater: dunkler Lavafels, glüht nach unten hin
       tmp.copy(PAL.lavaRock).lerp(PAL.basaltDark, rnd * 0.5);
@@ -71,11 +97,16 @@ export function createTerrain({ island, veil, quality }) {
     if (s === 'water') {
       const d = clamp(-h / 9, 0, 1);
       tmp.copy(PAL.under).lerp(PAL.underDeep, d);
+      smoothness = 0.6;
     } else if (s === 'sand') {
       tmp.copy(PAL.sandWet).lerp(PAL.sandDry, smoothstep(0.1, 1.1, h));
       tmp.lerp(PAL.sandWarm, (nz * 0.5 + 0.5) * 0.35);
+      smoothness = 0.85;
     } else if (s === 'path') {
-      tmp.copy(PAL.path).lerp(PAL.pathDark, rnd * 0.45 + nz * 0.2);
+      // ruhige, ortsabhängige Variation statt Zufall pro Dreieck
+      const nd = island.noise.detail(cx / 7 + 3, cz / 7 - 9) * 0.5 + 0.5;
+      tmp.copy(PAL.path).lerp(PAL.pathDark, 0.2 + nd * 0.3 + rnd * 0.06);
+      smoothness = 1;
     } else if (s === 'rock' || s === 'ash') {
       if (s === 'ash' || wVu > 0.5) {
         const top = smoothstep(22, 44, h);
@@ -103,7 +134,7 @@ export function createTerrain({ island, veil, quality }) {
         tw += wild;
       }
       grassA.multiplyScalar(1 / tw); grassB.multiplyScalar(1 / tw);
-      const mix = clamp(nz * 0.6 + 0.5 + (rnd - 0.5) * 0.5, 0, 1);
+      const mix = clamp(nz * 0.6 + 0.5 + (rnd - 0.5) * 0.4, 0, 1);
       tmp.copy(grassA).lerp(grassB, mix);
       // Heidekraut auf den Klippen, Blumenwiese am Markt
       const nh = island.noise.detail(cx / 26 + 40, cz / 26);
@@ -115,9 +146,18 @@ export function createTerrain({ island, veil, quality }) {
       if (h < 3.4) tmp.lerp(PAL.sandWarm, smoothstep(3.4, 1.8, h) * 0.35);
       // steilere Flächen dunkler/felsiger
       tmp.lerp(PAL.rockDark, smoothstep(0.86, 0.74, ny) * 0.35);
+      smoothness = 0.12;
     }
-    // Flächen-Variation
-    const v = 0.93 + rnd * 0.12;
+    // Plätze (Pads) und Wegränder: glatt und ruhig
+    smoothness = Math.max(smoothness, pw, pathW * 0.9);
+    if (pw > 0) tmp.lerp(PAL.path, pw * 0.55);
+    // Lava-Adern am oberen Kegel: Farbe je Fläche, Glühen je Eckpunkt (siehe veinAt)
+    if (dv < 48 && h > 24 && dv >= vol.rimRadius) {
+      const v = veinAt(cx, cz, h);
+      if (v > 0.05) tmp.lerp(PAL.lavaRock, v * 0.6);
+    }
+    // Flächen-Variation (auf glatten Flächen fast keine)
+    const v = 1 + (rnd - 0.5) * (0.12 - 0.09 * smoothness);
     tmp.multiplyScalar(v);
     return gl;
   }
@@ -134,10 +174,19 @@ export function createTerrain({ island, veil, quality }) {
     pos[o + 6] = cx; pos[o + 7] = cy; pos[o + 8] = cz;
     const mx = (ax + bx + cx) / 3, mz = (az + bz + cz) / 3, my = (ay + by + cy) / 3;
     const g = faceColor(mx, mz, my, fn.y, fi++);
+    const sm = smoothness;
     for (let k = 0; k < 3; k++) {
-      nor[o + k * 3] = fn.x; nor[o + k * 3 + 1] = fn.y; nor[o + k * 3 + 2] = fn.z;
+      let nx = fn.x, nyy = fn.y, nzz = fn.z;
+      if (sm > 0.01) {
+        // weiche Normale am Eckpunkt einmischen
+        island.getNormal(pos[o + k * 3], pos[o + k * 3 + 2], true, _sn);
+        nx += (_sn.x - nx) * sm; nyy += (_sn.y - nyy) * sm; nzz += (_sn.z - nzz) * sm;
+        const l = Math.hypot(nx, nyy, nzz) || 1;
+        nx /= l; nyy /= l; nzz /= l;
+      }
+      nor[o + k * 3] = nx; nor[o + k * 3 + 1] = nyy; nor[o + k * 3 + 2] = nzz;
       col[o + k * 3] = tmp.r; col[o + k * 3 + 1] = tmp.g; col[o + k * 3 + 2] = tmp.b;
-      glow[t * 3 + k] = g;
+      glow[t * 3 + k] = Math.max(g, veinAt(pos[o + k * 3], pos[o + k * 3 + 2], pos[o + k * 3 + 1]));
     }
     t++;
   }
@@ -191,8 +240,8 @@ export function createTerrain({ island, veil, quality }) {
     `,
     afterVeil: /* glsl */`
       {
-        float pulse = 0.75 + 0.25 * sin(uLumoTime * 1.7 + vVeilPos.x * 0.3);
-        outgoingLight += uLavaColor * vGlow * vGlow * 0.8 * pulse;
+        float pulse = 0.75 + 0.25 * sin(uLumoTime * 1.7 + vVeilPos.x * 0.3 + vVeilPos.z * 0.2);
+        outgoingLight += uLavaColor * vGlow * vGlow * 0.9 * pulse;
       }
     `,
   });

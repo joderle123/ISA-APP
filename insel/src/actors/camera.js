@@ -1,10 +1,14 @@
 // Third-Person-Kamera: weiches Folgen, Orbit per Wischen/Maus, Zoom (Pinch/Rad), dreht sich beim Laufen
-// hinter die Figur, bleibt über dem Gelände. Dazu der Kino-Anflug vom Meer zum Hafen beim ersten Start.
+// hinter die Figur, bleibt über dem Gelände. Bäume zwischen Figur und Kamera rücken die Kamera nur bis zu
+// einem Mindestabstand heran (nie in den Kopf) und das sanft. Dazu der Kino-Anflug vom Meer zum Hafen.
 import * as THREE from 'three';
 
 const MIN_DIST = 3.2, MAX_DIST = 22;
+const MIN_OCCLUDED = 3.6;   // näher rückt die Kamera wegen Bäumen nie heran
+const OCC_PITCH = 0.4;      // bei Verdeckung hebt sich der Blick (über den Kopf hinweg)
 
-const OCCLUDERS = new Set(['palm', 'tree', 'blossom', 'jungle', 'pine']);
+// Nur dicke Stämme (Dschungelriesen) ziehen die Kamera heran; dünne Stämme dürfen kurz durchs Bild
+const OCCLUDERS = new Set(['jungle']);
 
 export function createCameraRig({ camera, island, input, player, events, colliders }) {
   const rig = {
@@ -18,6 +22,7 @@ export function createCameraRig({ camera, island, input, player, events, collide
     sensitivity: 0.0055,
     intro: null,
     mode: 'follow', // 'follow' | 'intro' | 'free' (für Zwischensequenzen: rig.setShot)
+    occlusion: 1,   // aktueller Verkürzungsfaktor durch Bäume (1 = frei)
   };
   let idleLook = 10;
   const tmp = new THREE.Vector3();
@@ -40,6 +45,16 @@ export function createCameraRig({ camera, island, input, player, events, collide
     }
     return allowed;
   }
+  // Steht der Punkt in einer Baumkrone?
+  function inCanopy(x, z, y) {
+    const list = colliders.query(x, z, 0.5);
+    for (const o of list) {
+      const c = o.canopy;
+      if (!c) continue;
+      if (y >= c.yMin && y <= c.yMax && Math.hypot(x - o.x, z - o.z) < c.r + 0.5) return true;
+    }
+    return false;
+  }
 
   function place(dt, snap) {
     const p = player.position;
@@ -49,20 +64,31 @@ export function createCameraRig({ camera, island, input, player, events, collide
     rig.focus.z += (p.z - rig.focus.z) * k;
     rig.focus.y += (p.y + rig.lookOffsetY - rig.focus.y) * ky;
     rig.dist += (rig.targetDist - rig.dist) * (snap ? 1 : 1 - Math.exp(-dt * 6));
-    offset(rig.yaw, rig.pitch, rig.dist, tmp);
+    // Bei Verdeckung von oben schauen, damit der Kopf nicht das Bild füllt
+    const lift = (1 - rig.occlusion) * OCC_PITCH;
+    offset(rig.yaw, Math.min(1.25, rig.pitch + lift), rig.dist, tmp);
     desired.copy(rig.focus).add(tmp);
-    let f = collide(rig.focus, desired);
-    // Baumstämme zwischen Figur und Kamera: näher heranrücken
+    // Gelände: sofort (nie unter dem Boden)
+    const fTerrain = collide(rig.focus, desired);
+    // Bäume: nur bis MIN_OCCLUDED heran, sanft (schnell hinein, langsam wieder hinaus)
+    let fOcc = 1;
     if (colliders) {
       const th = colliders.segmentHit(rig.focus.x, rig.focus.z, desired.x, desired.z, 0.35, rig.focus.y, desired.y, (o) => OCCLUDERS.has(o.tag));
-      // Baumkronen (z. B. Kiefern am Hang) nicht durchfliegen
-      const tc = colliders.segmentHit(rig.focus.x, rig.focus.z, desired.x, desired.z, 0.5, rig.focus.y, desired.y, null, (o) => o.canopy);
-      const tt = Math.min(th, tc);
-      if (tt < 1) {
-        const minF = 1.6 / Math.max(rig.dist, 0.01);
-        f = Math.min(f, Math.max(tt - 0.04, minF));
+      // Baumkronen zählen nur, wenn die Kamera selbst in einer Krone landen würde
+      let tc = 1;
+      if (inCanopy(desired.x, desired.z, desired.y)) {
+        tc = colliders.segmentHit(rig.focus.x, rig.focus.z, desired.x, desired.z, 0.5, rig.focus.y, desired.y, null, (o) => o.canopy);
       }
+      const tt = Math.min(th, tc);
+      if (tt < 1) fOcc = Math.max(tt - 0.04, MIN_OCCLUDED / Math.max(rig.dist, 0.01));
+      fOcc = Math.min(1, fOcc);
     }
+    if (snap) rig.occlusion = fOcc;
+    else {
+      const rate = fOcc < rig.occlusion ? 10 : 2.2;
+      rig.occlusion += (fOcc - rig.occlusion) * (1 - Math.exp(-dt * rate));
+    }
+    const f = Math.min(fTerrain, rig.occlusion);
     if (f < 1) desired.copy(rig.focus).addScaledVector(tmp, f);
     // nie unter Gelände oder Wasser
     const gh = Math.max(island.getHeight(desired.x, desired.z), island.waterLevel(desired.x, desired.z) + 0.15) + 0.6;

@@ -1,4 +1,17 @@
 // Spiel-Objekt: erzeugt und verbindet alle Module. Auch als window.LUMO verfügbar (Tests, Konsole).
+//
+// API-Kurzüberblick (für weitere Module):
+//   game.world.veil      Grauschleier: setZone/veilZone/restoreZone(id,{x,z,duration,onDone})/amountAt(x,z)/patch(material,opts)
+//                        setGrade({lift,gain,sat,contrast}) – Farbkorrektur (setzt der Himmel je Tageszeit selbst)
+//                        Eigene Shader: veil.glsl einbinden, veil.uniforms übernehmen, am Ende lumoGrade(lumoFog(...)).
+//   game.world.veilFx    Schleier-Schwebeteilchen + Lichtvorhang/Funken/Böe der Farbwelle (Events veil:restore:start/restored)
+//   game.world.sky       time.setTimeOfDay(h) (Sonne 6–19 Uhr), night, golden, grade, setStorm(v), colors
+//   game.world.landmarks Steg, Boot, Leuchtturm (setLighthouseLit), Lava + Rauchsäule (smoke)
+//   game.player          jumpBuffered/coyoteTime (Sprung-Puffer 0,14 s, Kanten-Toleranz 0,12 s), playAnim, setLook, teleport
+//   game.player.humanoid setAnim, setExpression({brows:-1..1, mouth:-1..1, raise:0..1}|null), setEmotionAura, height, headRadius
+//   game.cameraRig       occlusion (1 = frei); nur Dschungelriesen ziehen die Kamera heran (min. 3,6 m, Blick hebt sich)
+//   game.ui              toast, showZone, flash(strength), setVeil(0..1) (Vignette), setAction, setMarker, registerMenuPage
+//   game.debug           teleport, setTimeOfDay, freezeTime, restoreZone, veilZone, setShot, advance(sekunden), stats
 import * as THREE from 'three';
 import { createEvents } from './engine/events.js';
 import { createLoop } from './engine/loop.js';
@@ -13,6 +26,7 @@ import { createTerrain } from './world/terrain.js';
 import { createWater } from './world/water.js';
 import { createSky } from './world/sky.js';
 import { createVegetation } from './world/vegetation.js';
+import { createVeilFx } from './world/veilfx.js';
 import { createColliders } from './world/colliders.js';
 import { createLandmarks, lambertVC } from './world/landmarks.js';
 import { part, merge, frond, tint } from './world/geom.js';
@@ -61,8 +75,9 @@ export async function createGame({ canvas, root, hudRoot, onProgress = () => {} 
   const vegetation = createVegetation({ island, veil, colliders, quality: q0, scene });
   await step(0.66, 'Möwen kreisen …');
   const particles = createParticles(scene);
-  const landmarks = createLandmarks({ island, veil, colliders, scene });
+  const landmarks = createLandmarks({ island, veil, colliders, scene, quality: q0 });
   const life = createLife({ island, veil, scene, quality: q0 });
+  const veilFx = createVeilFx({ scene, veil, island, vegetation, particles, quality: q0, events });
   particles.setBudget(q0.particles);
   const player = createPlayer({ scene, island, colliders, input, audio, particles, events, look: settings.look });
   const cameraRig = createCameraRig({ camera, island, input, player, events, colliders });
@@ -70,7 +85,7 @@ export async function createGame({ canvas, root, hudRoot, onProgress = () => {} 
   const game = {
     THREE,
     scene, camera, renderer, events, input, audio, particles, colliders, settings,
-    world: { island, terrain, water, sky, veil, vegetation, landmarks, life },
+    world: { island, terrain, water, sky, veil, veilFx, vegetation, landmarks, life },
     player, cameraRig,
     ui: null, interactions: null, loop: null,
     time: sky.time,
@@ -126,13 +141,17 @@ export async function createGame({ canvas, root, hudRoot, onProgress = () => {} 
     const h = renderer.domElement.height;
     particles.setViewport(h, camera.fov);
     life.setViewport(h, camera.fov);
+    veilFx.setViewport(h, camera.fov);
   });
+  // Farbwelle: kurzer Lichtblitz
+  events.on('veil:restore:start', () => ui.flash(0.55));
 
   // ---- Qualität ----
   function applyQuality(q) {
     sky.setQuality(q);
     vegetation.setQuality(q);
     water.setQuality(q);
+    veilFx.setQuality(q);
     particles.setBudget(q.particles);
     camera.far = Math.max(900, q.drawDistance * 1.6);
     camera.updateProjectionMatrix();
@@ -166,37 +185,14 @@ export async function createGame({ canvas, root, hudRoot, onProgress = () => {} 
     vegetation.update(camera);
     landmarks.update(dt, t, sky.night, particles);
     life.update(dt, t, player.position, sky.night);
+    veilFx.update(dt, t, player.position, camera);
     particles.update(dt);
   }, { order: -10, always: true });
-  let moteT = 0;
-  const rainbow = [0xff5d73, 0xffb347, 0xffe14d, 0x7ce36a, 0x4fd6ff, 0xb58cff];
-  loop.add((dt) => {
-    // Funken entlang der Farbwelle
-    const w = veil.wave;
-    if (w && dt > 0) {
-      const n = Math.round(10 * q0.particles);
-      for (let i = 0; i < n; i++) {
-        const a = Math.random() * Math.PI * 2;
-        const x = w.x + Math.cos(a) * w.radius, z = w.z + Math.sin(a) * w.radius;
-        if (Math.hypot(x - camera.position.x, z - camera.position.z) > 110) continue;
-        const y = Math.max(island.getHeight(x, z), island.waterLevel(x, z)) + 0.3;
-        particles.emit({ x, y, z, count: 1, spread: 1.5, speed: 0.6, up: 3 + Math.random() * 3, color: rainbow[i % rainbow.length], size: 0.7, life: 1.6, gravity: -0.6, drag: 0.8, additive: true, alpha: 1 });
-      }
-    }
-    // Graue Schwebeteilchen im Schleier
-    moteT += dt;
-    if (moteT > 0.12 && game.started) {
-      moteT = 0;
-      const p = player.position;
-      if (veil.amountAt(p.x, p.z) > 0.45) {
-        particles.emit({ x: p.x + (Math.random() - 0.5) * 16, y: p.y + 0.5 + Math.random() * 3, z: p.z + (Math.random() - 0.5) * 16, count: 1, speed: 0.2, up: 0.15, color: 0xb9b6c8, size: 0.16, life: 3.5, gravity: 0.05, drag: 0.2, grow: 0.2, alpha: 0.7 });
-      }
-    }
-  }, { order: 5 });
   loop.add((dt) => {
     zoneT += dt;
     if (zoneT > 0.25 && game.started && cameraRig.mode === 'follow') {
       zoneT = 0;
+      ui.setVeil(veil.amountAt(player.position.x, player.position.z));
       const z = island.zoneAt(player.position.x, player.position.z);
       if (z !== game.zone) {
         const prev = game.zone;

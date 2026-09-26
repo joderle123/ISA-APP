@@ -9,6 +9,8 @@ const GRAVITY = 28;
 const JUMP_V = 10.2;
 const RADIUS = 0.36;
 const MAX_WADE = 1.45;   // tiefer: nicht weiter
+const JUMP_BUFFER = 0.14; // Sprung kurz vor der Landung gedrückt: wird beim Aufsetzen ausgeführt
+const COYOTE = 0.12;      // Sprung kurz nach dem Verlassen einer Kante: zählt noch
 
 export const DEFAULT_PLAYER_LOOK = {
   skin: '#f0c09a', hair: '#4a2e1f', hairStyle: 'kurz', top: '#ff5d73', topStyle: 'hoodie',
@@ -37,6 +39,7 @@ export function createPlayer({ scene, island, colliders, input, audio, particles
   let customAnim = null, customT = 0;
   let splashT = 0, airTime = 0;
   let cameraYaw = 0;
+  let jumpBufferT = 0, coyoteT = 0;
 
   function groundAt(x, z, feetY) {
     const t = island.getHeight(x, z);
@@ -83,6 +86,8 @@ export function createPlayer({ scene, island, colliders, input, audio, particles
     get surface() { return surface; },
     get speed() { return Math.hypot(vel.x, vel.z); },
     get enabled() { return enabled; },
+    get coyoteTime() { return coyoteT; },
+    get jumpBuffered() { return jumpBufferT > 0; },
     // Kamera meldet ihre Blickrichtung (für kamerabezogene Steuerung)
     setCameraYaw(v) { cameraYaw = v; },
     setEnabled(v) { enabled = !!v; if (!v) { vel.x = 0; vel.z = 0; } },
@@ -125,14 +130,18 @@ export function createPlayer({ scene, island, colliders, input, audio, particles
       vel.z += (mz * target - vel.z) * k;
       if (mag > 0.05) yaw = angleLerp(yaw, Math.atan2(mx, mz), 1 - Math.exp(-dt * 12));
 
-      // ---- Springen / Schwerkraft ----
-      if (enabled && st.jump && grounded) {
+      // ---- Springen / Schwerkraft (mit Eingabepuffer und Kanten-Toleranz, wichtig auf Touch) ----
+      if (enabled && st.jump) jumpBufferT = JUMP_BUFFER;
+      if (grounded) coyoteT = COYOTE; else coyoteT = Math.max(0, coyoteT - dt);
+      if (enabled && jumpBufferT > 0 && (grounded || coyoteT > 0) && vel.y <= 0.01) {
+        jumpBufferT = 0; coyoteT = 0;
         vel.y = JUMP_V * (depth > 0.8 ? 0.7 : 1);
         grounded = false;
         audio.play('jump');
         events.emit('player:jump');
         particles.emit({ x: pos.x, y: pos.y + 0.1, z: pos.z, count: 6, spread: 0.5, speed: 1.4, up: 0.6, color: 0xffffff, size: 0.4, life: 0.5, gravity: -1, drag: 3, alpha: 0.45 });
       }
+      jumpBufferT = Math.max(0, jumpBufferT - dt);
       if (!grounded) { vel.y -= GRAVITY * dt; airTime += dt; } else airTime = 0;
 
       // ---- Horizontal bewegen mit Hang-/Wassergrenze ----
