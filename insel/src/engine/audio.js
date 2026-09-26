@@ -1,27 +1,63 @@
 // WebAudio: alles synthetisch erzeugt (Wind, Wellen, Schritte, Effekte). Start beim ersten Antippen.
-export function createAudio() {
+//
+// Kette: Busse (sfx · amb · music · reverb) → master → Leim-Kompressor → Limiter → weiche Decke (max. −6 dBFS) → Ausgang.
+// Pegelgrenzen (DESIGN §18): keine Spitze über −6 dBFS, keine plötzlich lauten Töne, Donner tief und gedämpft,
+// Herzschlag leise und abschaltbar (audio.heartbeat), Musik wird beim Vorlesen leiser (audio.setDucking).
+//   createAudio({ context?, destination? })  – eigener Kontext z. B. OfflineAudioContext für Pegel-Tests (dann ohne unlock)
+//   audio.play(name, opts) · footstep · setVolume · setMusicVolume · setAmbience · update() · register(name, fn)
+//   audio.buses { sfx, amb, music, reverb } · audio.context · audio.ready · audio.now · audio.limiter { peak }
+//   audio.heartbeat.start(bpm) / setRate(bpm) / stop() / enabled (aus bei „reduzierte Effekte“)
+export const CEILING = 0.5;           // −6,02 dBFS – harte Obergrenze der weichen Decke
+
+// Weiche Decke: linear bis knee, dann tanh-Sättigung, die genau bei CEILING endet
+export function ceilingCurve(n = 2048, knee = 0.36, ceiling = CEILING) {
+  const c = new Float32Array(n);
+  for (let i = 0; i < n; i++) {
+    const x = (i / (n - 1)) * 2 - 1;
+    const a = Math.abs(x);
+    const y = a <= knee ? a : knee + (ceiling - knee) * Math.tanh((a - knee) / (ceiling - knee));
+    c[i] = Math.sign(x) * Math.min(y, ceiling);
+  }
+  return c;
+}
+
+export function createAudio({ context = null, destination = null } = {}) {
   let ctx = null;
-  let master, comp, sfxBus, ambBus, reverbIn, noiseBuf;
-  let wind = null, waves = null, night = null;
+  let master, glue, limiter, ceiling, sfxBus, ambBus, musicBus, reverbIn, noiseBuf;
+  let wind = null, waves = null;
   let nextWave = 0, nextChirp = 0, nextCricket = 0;
   const amb = { wind: 0.6, waves: 0.8, night: 0, day: 1 };
-  const settings = { volume: 0.8 };
+  const settings = { volume: 0.8, music: 0.7 };
+  let duck = 0;                 // 0..1: Musik/Ambiente leiser (Vorlesen, Pause)
+  const heart = { enabled: true, running: false, bpm: 60, next: 0, level: 0.06 };
+  const offline = !!context;
 
   function init() {
     const AC = window.AudioContext || window.webkitAudioContext;
     if (!AC) return false;
     ctx = new AC();
-    comp = ctx.createDynamicsCompressor();
-    comp.threshold.value = -14; comp.ratio.value = 4;
-    comp.connect(ctx.destination);
+    buildGraph();
+    return true;
+  }
+  function buildGraph() {
+    // Decke ganz am Ende: garantiert ≤ −6 dBFS, auch wenn der Kompressor Makeup-Gain hinzufügt
+    ceiling = ctx.createWaveShaper(); ceiling.curve = ceilingCurve(); ceiling.oversample = '2x';
+    ceiling.connect(destination || ctx.destination);
+    limiter = ctx.createDynamicsCompressor();
+    limiter.threshold.value = -9; limiter.knee.value = 2; limiter.ratio.value = 20; limiter.attack.value = 0.002; limiter.release.value = 0.18;
+    limiter.connect(ceiling);
+    glue = ctx.createDynamicsCompressor();
+    glue.threshold.value = -16; glue.knee.value = 8; glue.ratio.value = 3; glue.attack.value = 0.01; glue.release.value = 0.25;
+    glue.connect(limiter);
     master = ctx.createGain();
     master.gain.value = settings.volume;
-    master.connect(comp);
+    master.connect(glue);
     sfxBus = ctx.createGain(); sfxBus.gain.value = 0.9; sfxBus.connect(master);
-    ambBus = ctx.createGain(); ambBus.gain.value = 0; ambBus.connect(master);
-    ambBus.gain.setTargetAtTime(0.9, ctx.currentTime + 0.2, 1.5);
+    ambBus = ctx.createGain(); ambBus.gain.value = offline ? 0.9 : 0; ambBus.connect(master);
+    if (!offline) ambBus.gain.setTargetAtTime(0.9, ctx.currentTime + 0.2, 1.5);
+    musicBus = ctx.createGain(); musicBus.gain.value = settings.music; musicBus.connect(master);
     // Rauschpuffer
-    const len = ctx.sampleRate * 2;
+    const len = Math.floor(ctx.sampleRate * 2);
     noiseBuf = ctx.createBuffer(1, len, ctx.sampleRate);
     const d = noiseBuf.getChannelData(0);
     let b = 0;
@@ -39,7 +75,6 @@ export function createAudio() {
     const wet = ctx.createGain(); wet.gain.value = 0.6;
     reverbIn.connect(conv); conv.connect(wet); wet.connect(master);
     startAmbience();
-    return true;
   }
 
   function noiseSrc() {
@@ -76,14 +111,16 @@ export function createAudio() {
     nextCricket = ctx.currentTime + 1;
   }
 
+  function running() { return !!ctx && (offline || ctx.state === 'running'); }
+
   function update() {
-    if (!ctx || ctx.state !== 'running') return;
+    if (!running()) return;
     const t = ctx.currentTime;
     // Wind-Grundpegel
-    wind.g.gain.setTargetAtTime(0.03 + amb.wind * 0.06, t, 0.8);
+    wind.g.gain.setTargetAtTime((0.03 + amb.wind * 0.06) * (1 - duck * 0.5), t, 0.8);
     // Brandung
     if (t > nextWave - 0.05) {
-      const peak = 0.03 + 0.16 * amb.waves;
+      const peak = (0.03 + 0.16 * amb.waves) * (1 - duck * 0.5);
       const dur = 5.5 + Math.random() * 3.5;
       waves.g.gain.cancelScheduledValues(t);
       waves.g.gain.setValueAtTime(Math.max(waves.g.gain.value, 0.01), t);
@@ -104,6 +141,11 @@ export function createAudio() {
     if (t > nextCricket) {
       if (amb.night > 0.3) cricket();
       nextCricket = t + 0.9 + Math.random() * 1.6;
+    }
+    // Herzschlag (leise, tief; nur wenn erlaubt)
+    if (heart.running && heart.enabled && t > heart.next) {
+      heartBeat(heart.next > 0 ? Math.max(heart.next, t) : t);
+      heart.next = (heart.next > 0 ? Math.max(heart.next, t) : t) + 60 / Math.max(40, Math.min(140, heart.bpm));
     }
   }
 
@@ -141,6 +183,14 @@ export function createAudio() {
     const t = ctx.currentTime;
     for (let i = 0; i < 3; i++) tone('sine', 4200 + Math.random() * 300, t + i * 0.05, 0.005, 0.01 * amb.night, 0.03, ambBus);
   }
+  // Herzschlag: zwei tiefe, weiche Schläge („lub-dub“), sehr leise
+  function heartBeat(t) {
+    const v = heart.level;
+    const a = tone('sine', 58, t, 0.012, v, 0.16, ambBus);
+    a.o.frequency.exponentialRampToValueAtTime(40, t + 0.15);
+    const b = tone('sine', 52, t + 0.19, 0.012, v * 0.7, 0.14, ambBus);
+    b.o.frequency.exponentialRampToValueAtTime(38, t + 0.32);
+  }
 
   const SFX = {
     step(o = {}) {
@@ -174,6 +224,37 @@ export function createAudio() {
       const t = ctx.currentTime;
       tone('triangle', 1400, t, 0.002, 0.08, 0.05);
       tone('sine', 2100, t + 0.02, 0.002, 0.04, 0.04);
+    },
+    // Oberfläche: Blase erscheint, Kachel gewählt, Fenster auf/zu, Aufnäher umdrehen, Glühwürmchen
+    bubble() {
+      const t = ctx.currentTime;
+      const { o } = tone('sine', 620, t, 0.006, 0.05, 0.12);
+      o.frequency.exponentialRampToValueAtTime(880, t + 0.08);
+    },
+    tile() {
+      const t = ctx.currentTime;
+      tone('triangle', 740, t, 0.004, 0.06, 0.09);
+      tone('sine', 1110, t + 0.05, 0.004, 0.05, 0.16);
+    },
+    open() {
+      const t = ctx.currentTime;
+      const { o } = tone('sine', 440, t, 0.01, 0.05, 0.22);
+      o.frequency.exponentialRampToValueAtTime(660, t + 0.12);
+      burst(t, 0.12, 'highpass', 3000, 0.5, 0.012);
+    },
+    close() {
+      const t = ctx.currentTime;
+      const { o } = tone('sine', 620, t, 0.01, 0.05, 0.18);
+      o.frequency.exponentialRampToValueAtTime(400, t + 0.12);
+    },
+    flip() {
+      const t = ctx.currentTime;
+      burst(t, 0.08, 'bandpass', 1800, 1.2, 0.05);
+      tone('triangle', 520, t + 0.05, 0.004, 0.04, 0.12);
+    },
+    firefly() {
+      const t = ctx.currentTime;
+      [880, 1108.7, 1318.5, 1760].forEach((f, i) => tone('sine', f, t + i * 0.09, 0.006, 0.035, 0.5, reverbIn));
     },
     pickup() {
       const t = ctx.currentTime;
@@ -222,17 +303,18 @@ export function createAudio() {
       b.f.frequency.exponentialRampToValueAtTime(1400, t + d * 0.5);
       b.f.frequency.exponentialRampToValueAtTime(300, t + d);
     },
+    // Donner: tief, gedämpft, langsam anschwellend (kein Erschrecken)
     thunder(o = {}) {
       const t = ctx.currentTime;
       const v = o.volume === undefined ? 1 : o.volume;
-      const b = burst(t, 2.8, 'lowpass', 180, 0.7, 0.35 * v);
+      const b = burst(t, 2.8, 'lowpass', 180, 0.7, 0.3 * v);
       b.g.gain.cancelScheduledValues(t);
       b.g.gain.setValueAtTime(0.0001, t);
-      b.g.gain.linearRampToValueAtTime(0.4 * v, t + 0.08);
-      b.g.gain.exponentialRampToValueAtTime(0.12 * v, t + 0.6);
+      b.g.gain.linearRampToValueAtTime(0.3 * v, t + 0.25);
+      b.g.gain.exponentialRampToValueAtTime(0.12 * v, t + 0.9);
       b.g.gain.exponentialRampToValueAtTime(0.0001, t + 2.8);
       b.f.frequency.exponentialRampToValueAtTime(70, t + 2.5);
-      burst(t, 0.25, 'bandpass', 900, 0.5, 0.08 * v);
+      burst(t + 0.05, 0.25, 'bandpass', 700, 0.5, 0.05 * v);
     },
     error() {
       const t = ctx.currentTime;
@@ -241,32 +323,59 @@ export function createAudio() {
     },
   };
 
+  if (context) { ctx = context; buildGraph(); }
+
   const audio = {
     settings,
-    get ready() { return !!ctx && ctx.state === 'running'; },
+    get ready() { return running(); },
     get context() { return ctx; },
+    get now() { return ctx ? ctx.currentTime : 0; },
+    get offline() { return offline; },
+    get buses() { return ctx ? { sfx: sfxBus, amb: ambBus, music: musicBus, reverb: reverbIn, master } : null; },
     // Muss in einer Nutzer-Geste aufgerufen werden (iOS)
     unlock() {
+      if (offline) return;
       try {
         if (!ctx && !init()) return;
         if (ctx.state === 'suspended') ctx.resume();
       } catch (e) { console.warn('[audio]', e); }
     },
     play(name, opts) {
-      if (!ctx || ctx.state !== 'running' || !SFX[name]) return;
+      if (!running() || !SFX[name]) return;
       try { SFX[name](opts); } catch (e) { /* still */ }
     },
+    has(name) { return !!SFX[name]; },
     footstep(surface, volume) { audio.play('step', { surface, volume }); },
     setVolume(v) {
       settings.volume = Math.max(0, Math.min(1, v));
       if (master) master.gain.setTargetAtTime(settings.volume, ctx.currentTime, 0.05);
     },
+    setMusicVolume(v) {
+      settings.music = Math.max(0, Math.min(1, v));
+      if (musicBus) musicBus.gain.setTargetAtTime(settings.music * (1 - duck * 0.7), ctx.currentTime, 0.1);
+    },
+    // Musik und Ambiente leiser (0..1), z. B. während des Vorlesens oder in der Pause – weich, nie abrupt
+    setDucking(v) {
+      duck = Math.max(0, Math.min(1, v));
+      if (musicBus) musicBus.gain.setTargetAtTime(settings.music * (1 - duck * 0.7), ctx.currentTime, 0.25);
+    },
+    get ducking() { return duck; },
     // wind/waves/night/day: 0..1
     setAmbience(o) { Object.assign(amb, o); },
     update,
-    // Eigene Klänge für spätere Module: fn(ctx, sfxBus, reverbIn)
+    heartbeat: {
+      get enabled() { return heart.enabled; },
+      set enabled(v) { heart.enabled = !!v; },
+      get running() { return heart.running; },
+      get bpm() { return heart.bpm; },
+      start(bpm = 60) { heart.bpm = bpm; heart.running = true; heart.next = 0; },
+      setRate(bpm) { heart.bpm = bpm; },
+      stop() { heart.running = false; heart.next = 0; },
+    },
+    limiter: { get ceiling() { return CEILING; }, get node() { return limiter; } },
+    // Eigene Klänge für spätere Module: fn(ctx, sfxBus, reverbIn, opts)
     register(name, fn) { SFX[name] = (o) => fn(ctx, sfxBus, reverbIn, o); },
-    helpers: { tone: (...a) => ctx && tone(...a), burst: (...a) => ctx && burst(...a) },
+    helpers: { tone: (...a) => ctx && tone(...a), burst: (...a) => ctx && burst(...a), noise: () => ctx && noiseSrc(), env: (...a) => ctx && env(...a) },
   };
   return audio;
 }

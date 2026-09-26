@@ -1,15 +1,28 @@
 // Einheitliche Eingabe: Tastatur, Maus und Touch (Multi-Touch).
 // Zustand pro Frame: move {x,y} (-1..1, y=+1 vorwärts), look {dx,dy} (Pixel), zoom (+ = weiter weg),
-// jump/action/power (in diesem Frame gedrückt), *Held (gehalten).
+// jump/action/power (in diesem Frame gedrückt), *Held (gehalten), *Tap (in diesem Frame kurz getippt, < HOLD_TIME),
+// *Hold (in diesem Frame wurde die Halte-Schwelle erreicht), holdTime(name) (Sekunden gehalten).
+// Tasten: WASD/Pfeile laufen, Umschalt gehen, Leertaste springen, E/Enter Aktion, Q/F Kraft, 1–4 Kraft-Slots
+// (Ereignis 'input:slot' {n}), Tab Tagebuch ('input:journal'), Esc/P Menü ('input:menu').
+// Ereignisse: 'input:<name>' (down), 'input:<name>:down', 'input:<name>:up' {seconds}, 'input:<name>:tap',
+// 'input:<name>:hold' (Schwelle erreicht, einmal je Halten), 'input:device'.
+// Absichten: input.state ist die lokale Eingabe; Netz oder Tests können state.move/press()/release() setzen.
 const INTERACTIVE = 'button, input, select, textarea, a, .hud-interactive, .menu, .boot';
+export const HOLD_TIME = 0.25;   // ab hier zählt ein Druck als „halten“ (Kraft-Rad, Segel, Pumpsprung)
+const BUTTONS = ['jump', 'action', 'power'];
 
-export function createInput({ root, events }) {
+export function createInput({ root, events, clock = null }) {
+  // Uhr für Tippen/Halten: Standard Echtzeit; das Spiel setzt input.setClock(() => loop.realTime),
+  // damit Halte-Zeiten auch in Tests (LUMO.debug.advance) stimmen.
+  let now = clock || (() => performance.now() / 1000);
   const state = {
     move: { x: 0, y: 0 },
     look: { dx: 0, dy: 0 },
     zoom: 0,
     jump: false, action: false, power: false,
     jumpHeld: false, actionHeld: false, powerHeld: false,
+    jumpTap: false, actionTap: false, powerTap: false,
+    jumpHold: false, actionHold: false, powerHold: false,
     run: false,          // Tastatur: Umschalt = langsam gehen; Touch: Joystick weit = rennen
     enabled: true,
     lastDevice: 'none',  // 'touch' | 'keyboard' | 'mouse'
@@ -18,6 +31,8 @@ export function createInput({ root, events }) {
   };
   const keys = new Set();
   const touches = new Map(); // id -> {role:'stick'|'look', x, y}
+  const downAt = { jump: 0, action: 0, power: 0 };   // Zeitpunkt des Drucks
+  const holdFired = { jump: false, action: false, power: false };
   let pinchDist = 0;
   let stickId = null;
   let mouseDrag = false;
@@ -34,6 +49,8 @@ export function createInput({ root, events }) {
     if (!state[name + 'Held']) {
       state[name] = true;
       state[name + 'Held'] = true;
+      downAt[name] = now();
+      holdFired[name] = false;
       events.emit('input:' + name, true);
       events.emit('input:' + name + ':down');
     }
@@ -41,19 +58,37 @@ export function createInput({ root, events }) {
   function release(name) {
     if (state[name + 'Held']) {
       state[name + 'Held'] = false;
-      events.emit('input:' + name + ':up');
+      const seconds = now() - downAt[name];
+      // Kurz gedrückt → Tippen (Flanke bleibt bis Frame-Ende sichtbar)
+      if (!holdFired[name] && seconds < HOLD_TIME) { state[name + 'Tap'] = true; events.emit('input:' + name + ':tap', { seconds }); }
+      events.emit('input:' + name + ':up', { seconds, hold: holdFired[name] });
+    }
+  }
+  // Halte-Schwelle prüfen (je Frame)
+  function checkHolds() {
+    const t = now();
+    for (const b of BUTTONS) {
+      if (state[b + 'Held'] && !holdFired[b] && t - downAt[b] >= HOLD_TIME) {
+        holdFired[b] = true;
+        state[b + 'Hold'] = true;
+        events.emit('input:' + b + ':hold', { seconds: t - downAt[b] });
+      }
     }
   }
 
   // ---- Tastatur ----
   const KEYMAP = { Space: 'jump', KeyE: 'action', Enter: 'action', KeyQ: 'power', KeyF: 'power' };
+  const SLOTS = { Digit1: 1, Digit2: 2, Digit3: 3, Digit4: 4, Numpad1: 1, Numpad2: 2, Numpad3: 3, Numpad4: 4 };
   function onKeyDown(e) {
     if (e.target && e.target.closest && e.target.closest('input, textarea')) return;
     setDevice('keyboard');
+    if (e.repeat) { if (e.code === 'Space' || e.code.startsWith('Arrow')) e.preventDefault(); return; }
     keys.add(e.code);
     const b = KEYMAP[e.code];
     if (b) { press(b); e.preventDefault(); }
     if (e.code === 'Escape' || e.code === 'KeyP') events.emit('input:menu');
+    if (e.code === 'Tab') { events.emit('input:journal'); e.preventDefault(); }
+    if (SLOTS[e.code] && state.enabled) { events.emit('input:slot', { n: SLOTS[e.code] }); }
     if (e.code.startsWith('Arrow') || e.code === 'Space') e.preventDefault();
   }
   function onKeyUp(e) {
@@ -74,7 +109,7 @@ export function createInput({ root, events }) {
   }
   function releaseAll() {
     keys.clear();
-    ['jump', 'action', 'power'].forEach(release);
+    BUTTONS.forEach(release);
     touches.clear();
     stickId = null;
     joyMove = { x: 0, y: 0 };
@@ -194,7 +229,7 @@ export function createInput({ root, events }) {
   }
   function onPointerUp(e) { if (e.pointerType !== 'touch') mouseDrag = false; }
   function onWheel(e) {
-    if (e.target && e.target.closest && e.target.closest('.menu')) return;
+    if (e.target && e.target.closest && e.target.closest('.menu, .ov')) return;   // Overlays (WP21) scrollen selbst
     state.zoom += Math.sign(e.deltaY) * Math.min(Math.abs(e.deltaY) * 0.012, 1.4);
     e.preventDefault();
   }
@@ -218,7 +253,7 @@ export function createInput({ root, events }) {
   document.addEventListener('gesturechange', (e) => e.preventDefault(), opt);
   document.addEventListener('dblclick', (e) => e.preventDefault(), opt);
   document.addEventListener('contextmenu', (e) => e.preventDefault());
-  document.addEventListener('touchmove', (e) => { if (e.cancelable && !(e.target.closest && e.target.closest('.menu-panel'))) e.preventDefault(); }, opt);
+  document.addEventListener('touchmove', (e) => { if (e.cancelable && !(e.target.closest && e.target.closest('.menu-panel, .ov-scroll'))) e.preventDefault(); }, opt);   // .ov-scroll: Overlays (WP21)
   let lastTouchEnd = 0;
   document.addEventListener('touchend', (e) => {
     const now = Date.now();
@@ -229,10 +264,12 @@ export function createInput({ root, events }) {
 
   const input = {
     state,
+    HOLD_TIME,
     get move() { return state.move; },
     get look() { return state.look; },
     // Wird zu Beginn jedes Frames aufgerufen (vor Spiel-Updates)
     beginFrame() {
+      checkHolds();
       const k = keyMove();
       if (!state.enabled) { state.move.x = 0; state.move.y = 0; state.run = false; return; }
       if (k.any) { state.move.x = k.x; state.move.y = k.y; state.run = true; }
@@ -241,9 +278,14 @@ export function createInput({ root, events }) {
     // Wird am Ende jedes Frames aufgerufen: Deltas und Klick-Flanken zurücksetzen
     endFrame() {
       state.look.dx = 0; state.look.dy = 0; state.zoom = 0;
-      state.jump = false; state.action = false; state.power = false;
+      for (const b of BUTTONS) { state[b] = false; state[b + 'Tap'] = false; state[b + 'Hold'] = false; }
     },
+    // Sekunden, die ein Knopf gerade gehalten wird (0 = nicht gehalten)
+    holdTime(name) { return state[name + 'Held'] ? now() - downAt[name] : 0; },
+    // Wurde die Halte-Schwelle bei diesem Druck schon erreicht?
+    isHold(name) { return !!(state[name + 'Held'] && holdFired[name]); },
     press, release, releaseAll,
+    setClock(fn) { now = fn; },
     setEnabled(v) { state.enabled = !!v; if (!v) releaseAll(); },
     // Für Tests
     _debug: { keys, touches },

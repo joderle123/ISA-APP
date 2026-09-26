@@ -1,10 +1,12 @@
-// HUD (DOM über dem Canvas): Joystick-Anzeige, Knöpfe (Springen / Aktion / Kraft), Kompass,
-// Zonen-Banner, Toasts, Menü (mit erweiterbaren Seiten), Intro-Titel, Debug-Anzeige.
+// HUD (DOM über dem Canvas): Glimm oben links, Kompass, Pause oben rechts, Joystick-Anzeige, Knöpfe (Springen / Aktion / Kraft),
+// Zonen-Banner, Toasts, Menü-Rückfall (das UI-Plugin src/ui/plugin.js ersetzt Pause/Tagebuch durch Overlays), Intro-Titel, Debug.
+//   ui.setGlimm({ zone: 'neutral'|'gruen'|'gelb'|'rot', muted }) · ui.onMenuKey() (Esc/Pause; das UI-Plugin überschreibt)
+import { icon } from './icons.js';
 const ICON = {
   jump: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V6"/><path d="M6 11l6-6 6 6"/></svg>',
   power: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.6 6.3L21 9l-5 4.4L17.5 20 12 16.6 6.5 20 8 13.4 3 9l6.4-.7z"/></svg>',
   action: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 5h16a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-7l-5 4v-4H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2z"/></svg>',
-  menu: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M5 7h14M5 12h14M5 17h14"/></svg>',
+  menu: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M8 5v14M16 5v14"/></svg>',
 };
 
 export function createHUD({ root, input, events, audio, game }) {
@@ -13,8 +15,9 @@ export function createHUD({ root, input, events, audio, game }) {
     <div class="vignette" aria-hidden="true"></div>
     <div class="flash" aria-hidden="true"></div>
     <div class="hud-top">
+      <button class="glimm-badge hud-part" type="button" aria-label="Glimm" data-zone="neutral">${icon('glimm', { size: 34 })}</button>
       <div class="compass hud-part" aria-hidden="true"><div class="compass-strip"></div><div class="compass-needle"></div></div>
-      <button class="hud-round hud-menu-btn" type="button" aria-label="Menü">${ICON.menu}</button>
+      <button class="hud-round hud-menu-btn" type="button" aria-label="Pause" title="Pause">${ICON.menu}</button>
     </div>
     <div class="zone-banner" role="status"><small>Du entdeckst</small><strong>Hafen-Dorf</strong><span class="zb-state"></span></div>
     <div class="toasts" aria-live="polite"></div>
@@ -34,7 +37,7 @@ export function createHUD({ root, input, events, audio, game }) {
     compassStrip: $('.compass-strip'), banner: $('.zone-banner'), toasts: $('.toasts'), joy: $('.joystick'), knob: $('.joystick-knob'),
     action: $('.hud-btn-action'), actionLbl: $('.hud-btn-action .lbl'), power: $('.hud-btn-power'), powerLbl: $('.hud-btn-power .lbl'),
     jump: $('.hud-btn-jump'), menuBtn: $('.hud-menu-btn'), keys: $('.key-hints'), introTitle: $('.intro-title'), skip: $('.skip-hint'), debug: $('.debug'),
-    vignette: $('.vignette'), flash: $('.flash'),
+    vignette: $('.vignette'), flash: $('.flash'), glimm: $('.glimm-badge'),
   };
   let flashTimer = 0;
 
@@ -123,11 +126,11 @@ export function createHUD({ root, input, events, audio, game }) {
 
   // ---- Menü ----
   const menuPages = [
-    { id: 'tagebuch', label: 'Tagebuch', icon: '📖', render: (p) => { p.innerHTML = '<p class="menu-note">Hier stehen bald deine Aufträge.</p>'; } },
-    { id: 'avatar', label: 'Avatar', icon: '🧢', render: (p) => { p.innerHTML = '<p class="menu-note">Bald kannst du hier dein Aussehen ändern.</p>'; } },
-    { id: 'wochencode', label: 'Wochen-Code', icon: '🔑', render: (p) => { p.innerHTML = '<p class="menu-note">Kommt später.</p>'; } },
-    { id: 'einstellungen', label: 'Einstellungen', icon: '⚙️', render: renderSettings },
-    { id: 'hilfe', label: 'Steuerung', icon: '🎮', render: (p) => { p.innerHTML = '<div class="menu-row">Laufen<span>Joystick links · WASD</span></div><div class="menu-row">Umsehen<span>Wischen rechts · Maus</span></div><div class="menu-row">Zoomen<span>Zwei Finger · Mausrad</span></div><div class="menu-row">Springen<span>Knopf · Leertaste</span></div><div class="menu-row">Aktion<span>Knopf · E</span></div><div class="menu-row">Kraft<span>Knopf · Q</span></div>'; } },
+    { id: 'tagebuch', label: 'Tagebuch', icon: 'buch', render: (p) => { p.innerHTML = '<p class="menu-note">Hier stehen bald deine Aufträge.</p>'; } },
+    { id: 'avatar', label: 'Avatar', icon: 'stil', render: (p) => { p.innerHTML = '<p class="menu-note">Bald kannst du hier dein Aussehen ändern.</p>'; } },
+    { id: 'wochencode', label: 'Code', icon: 'schluessel', render: (p) => { p.innerHTML = '<p class="menu-note">Kommt später.</p>'; } },
+    { id: 'einstellungen', label: 'Einstellungen', icon: 'zahnrad', render: renderSettings },
+    { id: 'hilfe', label: 'Steuerung', icon: 'steuerung', render: (p) => { p.innerHTML = '<div class="menu-row">Laufen<span>Joystick links · WASD</span></div><div class="menu-row">Umsehen<span>Wischen rechts · Maus</span></div><div class="menu-row">Zoomen<span>Zwei Finger · Mausrad</span></div><div class="menu-row">Springen<span>Knopf · Leertaste</span></div><div class="menu-row">Aktion<span>Knopf · E</span></div><div class="menu-row">Kraft<span>Knopf · Q</span></div>'; } },
   ];
   let menuEl = null;
   function renderSettings(p) {
@@ -141,6 +144,7 @@ export function createHUD({ root, input, events, audio, game }) {
     p.querySelectorAll('[data-v]').forEach((b) => b.addEventListener('click', () => { game.setVolume(+b.dataset.v); audio.play('click'); renderSettings(p); }));
   }
   function openMenu(pageId) {
+    if (ui.pauseMenu) return ui.pauseMenu.open(pageId);   // UI-Plugin (Overlays) übernimmt
     closeMenu(true);
     menuEl = document.createElement('div');
     menuEl.className = 'menu';
@@ -149,7 +153,7 @@ export function createHUD({ root, input, events, audio, game }) {
     menuEl.appendChild(panel);
     const page = menuPages.find((m) => m.id === pageId);
     if (!page) {
-      panel.innerHTML = `<h2>Pause</h2><div class="menu-grid"><button class="menu-btn is-primary" data-go="weiter">▶ Weiter spielen</button>${menuPages.map((m) => `<button class="menu-btn" data-go="${m.id}"><span>${m.icon}</span>${m.label}</button>`).join('')}</div>`;
+      panel.innerHTML = `<h2>Pause</h2><div class="menu-grid"><button class="menu-btn is-primary" data-go="weiter">${icon('play', { size: 26 })}<span>Weiter spielen</span></button>${menuPages.map((m) => `<button class="menu-btn" data-go="${m.id}">${icon(m.icon, { size: 26 })}<span>${m.label}</span></button>`).join('')}</div>`;
     } else {
       panel.innerHTML = `<h2>${page.label}</h2><div class="menu-page"></div><button class="menu-btn menu-back" data-go="zurueck">← Zurück</button>`;
       page.render(panel.querySelector('.menu-page'), game);
@@ -167,6 +171,7 @@ export function createHUD({ root, input, events, audio, game }) {
     events.emit('ui:menu', { open: true, page: pageId || 'main' });
   }
   function closeMenu(silent) {
+    if (ui.pauseMenu && !menuEl) { if (ui.overlay) ui.overlay.closeAll('closeMenu'); return; }
     if (!menuEl) return;
     // Fokus lösen, sonst löst die Leertaste (Springen) Knöpfe aus
     if (document.activeElement && document.activeElement.blur) document.activeElement.blur();
@@ -174,7 +179,7 @@ export function createHUD({ root, input, events, audio, game }) {
     menuEl = null;
     if (!silent) { game.setPaused(false); events.emit('ui:menu', { open: false }); }
   }
-  events.on('input:menu', () => { if (ui.visible) ui.toggleMenu(); });
+  events.on('input:menu', () => ui.onMenuKey());
 
   const debugOn = params.has('debug');
   if (debugOn) el.debug.classList.remove('is-hidden');
@@ -237,8 +242,12 @@ export function createHUD({ root, input, events, audio, game }) {
     },
     removeMarker(id) { const p = poiEls.get(id); if (p) { p.el.remove(); poiEls.delete(id); } },
     openMenu, closeMenu,
-    toggleMenu() { if (menuEl) closeMenu(); else openMenu(); },
-    get menuOpen() { return !!menuEl; },
+    toggleMenu() { if (ui.menuOpen) closeMenu(); else openMenu(); },
+    get menuOpen() { return !!menuEl || !!(ui.pauseMenu && (ui.pauseMenu.isOpen || (ui.journal && ui.journal.isOpen))); },
+    // Esc / Pause-Taste (das UI-Plugin ersetzt dies: oberstes Fenster schließen, sonst Pause öffnen)
+    onMenuKey() { if (ui.visible) ui.toggleMenu(); },
+    // Glimm oben links: zone neutral|gruen|gelb|rot (Farbe = Puls, DESIGN §6), muted = stumm
+    setGlimm({ zone = 'neutral', muted = false } = {}) { el.glimm.dataset.zone = zone; el.glimm.classList.toggle('is-muted', !!muted); },
     // Neue Menüseite für spätere Module: { id, label, icon, render(panelEl, game) }
     registerMenuPage(page) {
       const i = menuPages.findIndex((m) => m.id === page.id);

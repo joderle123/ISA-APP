@@ -6,6 +6,7 @@ export function createLoop({ render, maxDt = 1 / 20 } = {}) {
   let rafId = 0;
   const loop = {
     paused: false,
+    timeScale: 1,   // Zeitlupe (Kraft-Rad 0,25, Angst-Segel 0,5): skaliert die Spielzeit, nicht die Echtzeit
     time: 0,        // Spielzeit (steht bei Pause)
     realTime: 0,    // Echtzeit seit Start
     frame: 0,
@@ -30,14 +31,15 @@ export function createLoop({ render, maxDt = 1 / 20 } = {}) {
     step(dt = 1 / 60) { runFrame(dt); },
   };
   function runFrame(rawDt) {
-    const dt = Math.min(Math.max(rawDt, 0), maxDt);
+    const real = Math.min(Math.max(rawDt, 0), maxDt);
+    const dt = real * (loop.timeScale > 0 ? loop.timeScale : 1);
     loop.dt = dt;
-    loop.realTime += dt;
+    loop.realTime += real;
     if (!loop.paused) loop.time += dt;
     for (let i = 0; i < updates.length; i++) {
       const u = updates[i];
       if (loop.paused && !u.always) continue;
-      try { u.fn(loop.paused ? 0 : dt, loop.time, dt); } catch (e) { console.error('[loop]', e); }
+      try { u.fn(loop.paused ? 0 : dt, loop.time, real); } catch (e) { console.error('[loop]', e); }
     }
     if (loop.render) loop.render(dt);
     loop.frame++;
