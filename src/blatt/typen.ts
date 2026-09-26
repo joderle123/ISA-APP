@@ -12,7 +12,7 @@ import type { AgeLevel } from '../types/material'
 export type Stufe = AgeLevel
 
 /** Themenbereiche der Blätter (bewusst keine Schulfächer). */
-export type Bereich = 'gefuehle' | 'verhalten' | 'miteinander' | 'lernen' | 'alltag' | 'werkzeuge' | 'skills'
+export type Bereich = 'gefuehle' | 'verhalten' | 'miteinander' | 'lernen' | 'alltag' | 'werkzeuge' | 'skills' | 'selbstreflexion'
 
 /**
  * Gestaltung nach Alter:
@@ -126,6 +126,17 @@ export type Baustein =
   | { art: 'plan'; ziel?: string; tage?: string[]; zeilen: string[]; symbol?: 'gesicht' | 'kasten' | 'stern' }
   | { art: 'tagesplan'; zeilen: { zeit?: string; text?: string; bild?: BildId }[]; leer?: number }
   | { art: 'atmen'; uebung: 'quadrat' | 'ballon' | 'blume' | 'fuenf-sinne' | 'finger' }
+  // --- Selbstreflexion: Grafiken zum Füllen, Ausmalen und Einzeichnen ---------
+  /** Gläser mit Beschriftung: Strich = so voll soll es sein, ausmalen = so voll ist es jetzt. `leer` = Gläser zum Selbstbeschriften. */
+  | { art: 'glaeser'; items: string[]; leer?: number; spalten?: 3 | 4 | 5 | 6; legende?: [string, string]; skala?: boolean }
+  /** Netz aus Lebensbereichen: jeder Bereich ein Tortenstück mit 5 oder 10 Ringen zum Ausmalen (innen = wenig, außen = viel). */
+  | { art: 'netz'; bereiche: string[]; stufen?: 5 | 10 }
+  /** Leeres Diagramm zum Einzeichnen einer Kurve (Stimmung, Energie, Lebenslinie). */
+  | { art: 'kurve'; x: string[]; oben: string; unten: string; mitte?: string; linien?: [string, string]; hoehe?: number }
+  /** 24-Stunden-Kreise zum Ausmalen (ein oder zwei), darunter die Farblegende. */
+  | { art: 'tageskreis'; titel: string[]; legende: { farbe: Farbwort; text: string }[] }
+  /** Kalender aus Kästchen (Wochentage als Spalten) zum Ausmalen, mit Farblegende. */
+  | { art: 'farbkalender'; wochen?: number; legende: { farbe: Farbwort; text: string }[] }
   // --- Bildgeschichten & Karten ---------------------------------------------
   | { art: 'comic'; felder: ComicFeld[]; spalten?: 2 | 3 }
   | { art: 'karten'; karten: { titel?: string; text?: string; bild?: BildId }[]; spalten?: 2 | 3 | 4; hoehe?: number }

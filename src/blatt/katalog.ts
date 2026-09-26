@@ -89,6 +89,15 @@ export const BEREICHE: BereichDef[] = [
     farben: { tief: '#6E4A7E', mittel: '#D6C6DE', zart: '#F4EFF7' },
     beschreibung: 'Schülerblätter zum Skills-Kurs für Jugendliche (drei Kursjahre): Gruppe, Ich, Gefühle, Skills, Gedanken, Kommunikation, Stress und Schule, Wut, Freundschaft und Familie, Vielfalt, digitale Welt, Liebe und Einvernehmlichkeit, Alkohol und Cannabis, Gesundheit, Krisen, Werte, Zukunft, Mitbestimmung.',
   },
+  {
+    id: 'selbstreflexion',
+    kuerzel: 'R',
+    de: 'Selbstreflexion',
+    fr: 'Réflexion sur soi',
+    icon: 'compass',
+    farben: { tief: '#3E6A85', mittel: '#BDD0DC', zart: '#EDF3F7' },
+    beschreibung: 'Innehalten und sich selbst besser kennen: Bedürfnisse, Lebensbereiche, Werte, Tagesrhythmus, Stimmungen und der eigene Weg – mit Gläsern, Netzen, Kurven und Kreisen zum Ausmalen und Einzeichnen.',
+  },
 ]
 
 export const bereichById = new Map(BEREICHE.map((b) => [b.id, b]))
@@ -170,6 +179,13 @@ export const THEMEN: ThemaDef[] = [
   T('skills', 'liebe', 'Liebe, Sexualität & Einvernehmlichkeit', 'Amour, sexualité et consentement'),
   T('skills', 'risiko', 'Alkohol, Vapes & Cannabis', 'Alcool, vapoteuses et cannabis'),
   T('skills', 'abschluss', 'Rückblick & Abschluss', 'Bilan et clôture'),
+
+  T('selbstreflexion', 'beduerfnisse', 'Bedürfnisse', 'Besoins'),
+  T('selbstreflexion', 'balance', 'Lebensbereiche & Balance', 'Domaines de vie et équilibre'),
+  T('selbstreflexion', 'werte', 'Werte', 'Valeurs'),
+  T('selbstreflexion', 'rhythmus', 'Zeit & Tagesrhythmus', 'Temps et rythme de la journée'),
+  T('selbstreflexion', 'einfluss', 'Einfluss & Gelassenheit', 'Influence et sérénité'),
+  T('selbstreflexion', 'rueckblick', 'Rückblick & Verlauf', 'Bilan et évolution'),
 ]
 
 export const themaById = new Map(THEMEN.map((t) => [t.bereich + '/' + t.id, t]))
