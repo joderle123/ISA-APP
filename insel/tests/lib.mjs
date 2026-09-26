@@ -115,7 +115,9 @@ export async function kraftRad(page, segment) {
 
 // Dialogwahl (WP32): DOM-Konvention [data-choice] (Index oder Textanfang); Fallback: Ereignis 'dialogue:choose' {index|text}
 export async function pickChoice(page, which) {
-  const els = await page.$$('[data-choice]');
+  // nur die aktuell eingeblendeten Kacheln (eine ausblendende Leiste bleibt 220 ms im DOM)
+  let els = await page.$$('.choices:not(.is-out) [data-choice]');
+  if (!els.length) els = await page.$$('[data-choice]');
   if (els.length) {
     if (typeof which === 'number') { await els[which].click({ force: true }); return true; }
     for (const el of els) { const t = (await el.textContent()) || ''; if (t.trim().startsWith(which)) { await el.click({ force: true }); return true; } }

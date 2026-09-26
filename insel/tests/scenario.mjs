@@ -35,7 +35,7 @@ try {
     'expect zone == hafen',
     'expect started == true',
     'code welle',
-    'expect units.j1-e11 == offen',
+    'expect units.j1-e11 == aktiv',   // WP31: eine offene Einheit startet sofort als Hauptauftrag, wenn keine andere läuft
     'expect units.j1-e10 == kurz',
     'expect state.codesUsed ~ unit:j1-e11',
     'complete j1-e11',
