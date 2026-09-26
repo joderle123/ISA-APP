@@ -80,6 +80,8 @@ try {
   check('Szene e11-luc-kante: Kamera „talk“, Luc spricht (Blase mit Vorlesen), Leiste mit Verlassen, Hitze 90', s1.open && s1.cam === 'talk' && s1.bar && s1.who === 'luc' && s1.text.startsWith('Lass mich') && s1.read && s1.hitze >= 85 && s1.hitze <= 90 && s1.actor, JSON.stringify(s1));
   check('Windschatten-Stein nach dem Schrittwechsel weg', !s1.stein);
   await frames(page, 3);
+  const bb = await page.evaluate(() => { const r = document.querySelector('.bubble').getBoundingClientRect(); return { top: Math.round(r.top), left: Math.round(r.left), right: Math.round(r.right), h: Math.round(r.height) }; });
+  check('Verankerte Blase ganz im Bild (Name nicht abgeschnitten)', bb.top >= 0 && bb.left >= 0 && bb.right <= 1180, JSON.stringify(bb));
   await shot(page, '103_szene_luc');
   await pressAction(page);
   await waitFor(page, () => (LUMO.ui.choices.open && document.querySelector('.choices')));
@@ -175,6 +177,35 @@ try {
   const st2 = await page.evaluate(() => !!document.querySelector('.patch[data-patch="j1-e11"] .patch-stitch'));
   check('Skills-Pass zeigt den Stich', st2);
   await page.evaluate(() => LUMO.ui.journal.close());
+
+  // ---- Echos: Figuren zitieren deine Tat beim nächsten Treffen; negatives Echo = „verstimmt“ mit Ursache und Reparatur-Quest ----
+  const ec = await page.evaluate(() => {
+    const E = LUMO.quests.echoes;
+    E.register({ id: 'echo-test-luc', when: { deed: 'luc-leine' }, line: { npc: 'luc', say: 'Du hast die Leine gehalten. Danke.' } });
+    LUMO.content.register('quests', { id: 'rep-test-jolie', title: 'Nachholen am Dorfplatz', region: 'hafen', steps: [{ id: 'hin', label: 'Zum Dorfplatz', template: 'wegTor', params: { to: { site: 'dorfplatz' } } }], onComplete: [], glimm: 'Na also.', patch: { icon: 'muschel', color: '#39d0c8', back: 'Reparatur.' }, echteWelt: 'x', debrief: ['y'] }, { file: 'test', name: 'rep-test-jolie' });
+    E.register({ id: 'echo-test-jolie', when: { flag: 'test.jolie' }, effect: { mood: ['jolie', 'verstimmt'] }, line: { npc: 'jolie', say: 'Du warst nicht am Steg.' }, repair: { quest: 'rep-test-jolie', clears: true } });
+    LUMO.state.set('flags.test.jolie', true);
+    const fired = E.check();
+    return { fired, mood: LUMO.state.get('moods.jolie'), verstimmt: LUMO.npcs.isVerstimmt('jolie'), bond: LUMO.state.get('bonds.jolie') || 0, active: LUMO.quests.active, pendLuc: E.pending('luc').length, pendJolie: E.pending('jolie').length };
+  });
+  check('Echos zünden: Luc-Zeile offen, Jolie verstimmt (Ursache + Reparatur, Bindung bleibt), Reparatur-Quest läuft', ec.fired.length === 2 && ec.pendLuc === 1 && ec.pendJolie === 1 && ec.verstimmt && ec.mood && ec.mood.kind === 'verstimmt' && ec.mood.repair === 'rep-test-jolie' && ec.bond === 0 && ec.active === 'rep-test-jolie', JSON.stringify(ec));
+  await page.evaluate(() => { LUMO.ui.overlay.closeAll('test'); window.__talk = LUMO.npcs.talk('luc'); });
+  await waitFor(page, () => document.querySelector('.bubble[data-who="luc"]') && document.querySelector('.bubble-text').textContent.startsWith('Du hast die Leine'));
+  const el1 = await page.evaluate(() => ({ cam: LUMO.cameraRig.mode, top: Math.round(document.querySelector('.bubble').getBoundingClientRect().top), anchored: document.querySelector('.bubble').classList.contains('is-anchored') }));
+  await frames(page, 2);
+  await shot(page, '109_echo_luc');
+  await pressAction(page);
+  const el2 = await page.evaluate(async () => { await window.__talk; return { open: !!document.querySelector('.bubble:not(.is-out)'), pend: LUMO.quests.echoes.pending('luc').length, cam: LUMO.cameraRig.mode }; });
+  check('Reden mit Luc: Echo-Zeile als Blase (Kamera „talk“, ganz im Bild), danach verbraucht', el1.cam === 'talk' && el1.top >= 0 && el1.anchored && !el2.open && el2.pend === 0 && el2.cam === 'follow', JSON.stringify({ el1, el2 }));
+  await page.evaluate(() => { window.__talk2 = LUMO.npcs.talk('jolie'); });
+  await waitFor(page, () => document.querySelector('.bubble[data-who="jolie"]') && document.querySelector('.bubble-text').textContent.startsWith('Du warst nicht'));
+  const ej = await page.evaluate(() => ({ toast: [...document.querySelectorAll('.toast')].map((t) => t.textContent).join('|') }));
+  await pressAction(page);
+  await page.evaluate(() => window.__talk2);
+  await scen(page, ['site dorfplatz', 'wait 0.5']);
+  await sleep(50);
+  const rep = await page.evaluate(() => ({ status: LUMO.quests.status('rep-test-jolie'), verstimmt: LUMO.npcs.isVerstimmt('jolie'), mood: LUMO.state.get('moods.jolie'), cleared: (LUMO.state.get('echoes') || []).find((e) => e.id === 'echo-test-jolie'), patches: LUMO.state.get('patches') }));
+  check('Jolies Echo nennt die Ursache und die Reparatur; die Reparatur-Quest hebt „verstimmt“ auf', ej.toast.includes('Wiedergutmachen') && rep.status === 'fertig' && !rep.verstimmt && rep.mood === undefined && rep.cleared && rep.cleared.cleared === true, JSON.stringify({ ej, rep }));
 
   // ---- Kurzfassung: Einheit ohne Code → Fähigkeit und Schleier sofort, 3-Minuten-Szene spielbar ----
   await page.evaluate(() => { LUMO.save.newGame(2, { seed: 5, persist: false }); LUMO.debug.freezeTime(true); LUMO.debug.advance(0.2); });

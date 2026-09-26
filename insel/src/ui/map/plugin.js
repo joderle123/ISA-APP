@@ -57,6 +57,19 @@ export default {
       }
       return out;
     }
+    // Wegfähigkeiten aus Bindungen (WP34, DESIGN §9): Noor „farbmarken“ zeigt offene Sammelsachen, Kim „netzreise“ erlaubt Schnellreise aus der Karte
+    const hasWeg = (id) => !!(game.npcs && game.npcs.hasWeg && game.npcs.hasWeg(id));
+    function marks() {
+      const C = game.plugins.collectibles;
+      if (!C || !hasWeg('farbmarken')) return [];
+      return [...C.list('lichtsplitter', { open: true }), ...C.list('muschel', { open: true })].map((it) => ({ x: it.pos.x, z: it.pos.z, type: it.type }));
+    }
+    function travelTargets() {
+      const S = game.session;
+      if (!S || !hasWeg('netzreise')) return [];
+      const p = player.position;
+      return S.signalfeuer.list().filter((f) => f.lit && Math.hypot(f.x - p.x, f.z - p.z) > 12).slice(0, 8);
+    }
     function render(cv) {
       const S = game.session, C = game.plugins.collectibles;
       const counts = {};
@@ -64,7 +77,7 @@ export default {
       const viewpoints = C ? C.list('aussicht').map((it) => ({ x: it.pos.x, z: it.pos.z, found: C.isCollected(it.id) })) : [];
       const ctx = {
         island, veil: world.veil, revealed, player: { x: player.position.x, z: player.position.z, yaw: player.yaw },
-        target: S && S.target ? S.target : null, fires: S ? S.signalfeuer.list() : [], viewpoints, teasers: teasers(), counts,
+        target: S && S.target ? S.target : null, fires: S ? S.signalfeuer.list() : [], viewpoints, teasers: teasers(), counts, marks: marks(),
         baumhaus: island.SITES.baumhaus, zoneNames: ZONE_NAME, redraw: null,
       };
       let pending = false;
@@ -81,10 +94,13 @@ export default {
         const prog = moduleProgress(state.get('units') || {});
         const known = Math.round(revealed.size / (MAP_N * MAP_N) * 100);
         const S = game.session;
+        const travel = travelTargets();
         el.innerHTML = `<div class="map-wrap"></div>
           <p class="jn-lead">${S && S.target ? `Ziel: ${esc(S.target.title || '')}` : 'Geh los. Die Karte füllt sich.'}</p>
-          <p class="jn-note">${known}% entdeckt · Grau = Schleier · Schloss = braucht eine Fähigkeit · ${prog.done} Aufnäher.</p>`;
+          <p class="jn-note">${known}% entdeckt · Grau = Schleier · Schloss = braucht eine Fähigkeit · ${prog.done} Aufnäher.${hasWeg('farbmarken') ? ' Punkte = Noors Farbmarken.' : ''}</p>
+          ${travel.length ? `<p class="jn-note">Netz-Schnellreise (Kim):</p><div class="map-travel" style="display:flex;flex-wrap:wrap;gap:8px">${travel.map((f) => `<button class="btn" type="button" data-map-travel="${esc(f.id)}">${ui.icon ? ui.icon('feuer', { size: 20 }) : ''}<span>${esc(f.name)}</span></button>`).join('')}</div>` : ''}`;
         el.querySelector('.map-wrap').appendChild(cv);
+        el.querySelectorAll('[data-map-travel]').forEach((b) => b.addEventListener('click', () => { const id = b.dataset.mapTravel; ui.journal.close(); setTimeout(() => game.session.signalfeuer.travel(id), 120); }));
       },
     });
 
@@ -98,7 +114,7 @@ export default {
     };
     const D = game.debug || (game.debug = {});
     D.mapReveal = (x, z, r) => reveal(x, z, r);
-    D.mapInfo = () => ({ revealed: revealed.size, of: MAP_N * MAP_N, teasers: teasers().filter((t) => !t.open).map((t) => t.region + ':' + t.ability) });
+    D.mapInfo = () => ({ revealed: revealed.size, of: MAP_N * MAP_N, teasers: teasers().filter((t) => !t.open).map((t) => t.region + ':' + t.ability), marks: marks().length, travel: travelTargets().map((f) => f.id) });
     return api;
   },
 };

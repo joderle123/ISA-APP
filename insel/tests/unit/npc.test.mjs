@@ -4,7 +4,7 @@
 // Aufruf: node --test tests/unit/npc.test.mjs
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { createEmotion, createTanks, createBonds, bondStep, boundaryRadius, streitStilFor, tellFor, bodyFor, auraView, scheduleAt, pickAnimated, displayName, WISH_BOOST, NEED_DAYS, MAX_ANIMATED, TANKS } from '../../src/systems/npc/model.js';
+import { createEmotion, createTanks, createBonds, bondStep, bondRewardsFor, boundaryRadius, streitStilFor, tellFor, bodyFor, auraView, scheduleAt, pickAnimated, displayName, WISH_BOOST, NEED_DAYS, MAX_ANIMATED, TANKS } from '../../src/systems/npc/model.js';
 import { createState } from '../../src/core/state.js';
 import { createEvents } from '../../src/engine/events.js';
 import { defaultState } from '../../src/core/save.js';
@@ -143,4 +143,16 @@ test('Inhalte: 16 Figuren mit Icon, Farbe, Tagesablauf, Tanks, Bindung; Sätze �
   }
   const ids = new Set(entries.map((e) => e.def.id));
   for (const id of ['ilda', 'jolie', 'tun', 'tiago', 'maelle', 'luc', 'jhemp', 'pit', 'noor', 'lucinda', 'mika', 'yara', 'kim', 'senait', 'fraenz', 'grisel']) assert.ok(ids.has(id), id);
+});
+
+test('Bindungs-Belohnungen: Stufe 2 → Wegfähigkeit, Stufe 3 → Jacken-Aufnäher und Lagerfeuer-Geschichte, jede genau einmal', () => {
+  const def = { id: 'tiago', bond: { ability: { level: 2, id: 'surfbrett', say: 'Nimm das Brett. Zum Riff.' }, jacket: 'surfbrett', finale: 'Du hast zugeschaut. Ohne Sieg.' } };
+  assert.deepEqual(bondRewardsFor(def, 1, {}), { weg: null, jacket: null, story: null });
+  assert.deepEqual(bondRewardsFor(def, 2, {}), { weg: { id: 'surfbrett', say: 'Nimm das Brett. Zum Riff.' }, jacket: null, story: null });
+  assert.deepEqual(bondRewardsFor(def, 2, { wege: ['surfbrett'] }), { weg: null, jacket: null, story: null }, 'schon bekommen');
+  const all = bondRewardsFor(def, 3, {});
+  assert.equal(all.weg.id, 'surfbrett'); assert.equal(all.jacket, 'surfbrett'); assert.deepEqual(all.story, { deedId: 'tiago-bindung-3', text: 'Du hast zugeschaut. Ohne Sieg.' });
+  assert.deepEqual(bondRewardsFor(def, 3, { wege: ['surfbrett'], jackePatches: ['surfbrett'], deeds: ['tiago-bindung-3'] }), { weg: null, jacket: null, story: null });
+  assert.deepEqual(bondRewardsFor({ id: 'x' }, 3, {}), { weg: null, jacket: null, story: null }, 'ohne bond nichts');
+  assert.equal(bondRewardsFor({ id: 'y', bond: { ability: { level: 1, id: 'pfad', say: { t: 'Hier lang.' } } } }, 1, {}).weg.say, 'Hier lang.', 'Stufe 1 möglich, Text-Objekt');
 });

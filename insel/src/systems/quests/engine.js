@@ -14,16 +14,18 @@
 import { createRunner } from './templates.js';
 import { createHintLadder, RUECKENWIND_GLIMM } from './hints.js';
 import { createDeeds, createEchoes } from './deeds.js';
-import { evalCond, applyEffects, addDeed } from './dsl.js';
+import { evalCond, applyEffect, applyEffects, addDeed } from './dsl.js';
 
 export const UNIT_RE = /^j1-[ej]\d\d$/;
 export const isUnitQuest = (id) => UNIT_RE.test(String(id));
 
-export function createQuestEngine({ content, state, ctx, dsl, emit = () => {}, session = () => 1, log = console } = {}) {
+export function createQuestEngine({ content, state, ctx, dsl, emit = () => {}, session = () => 1, npcRepair = null, log = console } = {}) {
   const runners = new Map();   // id -> { runner, index, def, kurz }
   const hints = createHintLadder({ onStage: onHintStage });
   const deeds = createDeeds({ state, content, time: () => dsl.time() });
-  const echoes = createEchoes({ state, content, evalCond: (c) => evalCond(c, dsl), time: () => dsl.time(), session, onFire: (def) => { emit('echo:fire', { id: def.id, npc: def.line && def.line.npc, repair: def.repair || null }); if (def.repair && def.repair.quest) api.offer(def.repair.quest); }, applyEffect: (e) => applyEffects([e], dsl) });
+  const echoes = createEchoes({ state, content, evalCond: (c) => evalCond(c, dsl), time: () => dsl.time(), session, repair: npcRepair,
+    onFire: (def) => { emit('echo:fire', { id: def.id, npc: def.line && def.line.npc, repair: def.repair || null }); if (def.repair && def.repair.quest) api.offer(def.repair.quest); },
+    applyEffect: (e) => applyEffect(e, dsl) });
   let mainId = null;
 
   const defOf = (id) => content.get('quests', id) || null;
@@ -281,6 +283,7 @@ export function createQuestEngine({ content, state, ctx, dsl, emit = () => {}, s
       const active = api.defs().find((d) => status(d.id) === 'aktiv');
       if (active) api.start(active.id, { resume: true });
       else startNext();
+      echoes.reload();
       echoes.check();
       return mainId;
     },

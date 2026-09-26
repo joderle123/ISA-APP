@@ -54,6 +54,8 @@ export function createWorldDsl(game) {
       cosmetic(id) { if (game.plugins.cosmetics && game.plugins.cosmetics.refresh) game.plugins.cosmetics.refresh(); return true; },
       tank(v) { if (game.npcs && game.npcs.tank) { game.npcs.tank(v.npc, v.tank, v.add, { kind: v.kind || 'need' }); return true; } return undefined; },
       emotion(v) { if (game.npcs && game.npcs.setEmotion) { game.npcs.setEmotion(v.npc, { primary: v.primary, secondary: v.secondary }); return true; } return undefined; },
+      // Stimmung („verstimmt“ mit Ursache und Reparatur-Quest) führt das Figuren-System (WP34); ohne es schreibt dsl.js dasselbe Format
+      mood(v, e) { if (game.npcs && game.npcs.applyEffect) return game.npcs.applyEffect({ mood: v, cause: e && e.cause, repair: e && e.repair }); return undefined; },
       wait(s) { return new Promise((r) => setTimeout(r, Math.max(0, s) * 1000)); },
     },
   });

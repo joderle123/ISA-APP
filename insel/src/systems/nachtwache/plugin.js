@@ -24,6 +24,8 @@ export default {
     let schedT = 0;
 
     const unlocked = () => params.has('alles') || (state.get('units.j1-e05') || 'gesperrt') !== 'gesperrt';
+    const hasBlick = () => params.has('alles') || (state.get('abilities', []) || []).includes('blick') || (state.get('settings.mode', 'abenteuer') === 'entspannt');
+    events.on('ability:grant', () => { if (active && active.tracks) active.tracks.group.visible = hasBlick(); });
     const isNight = () => (world.sky && world.sky.time && typeof world.sky.time.night === 'number' ? world.sky.time.night > 0.5 : isNightHour(game.time.hour));
     const zoneOfNpc = (npc) => island.zoneAt(npc.position.x, npc.position.z) || (npc.entry && content.resolveSite(npc.entry.site) && island.zoneAt(content.resolveSite(npc.entry.site).x, content.resolveSite(npc.entry.site).z)) || null;
 
@@ -40,15 +42,20 @@ export default {
       if (d.lastDay === day()) return null;
       return pickTonight({ candidates: candidates(), day: day(), lastNpc: d.lastNpc });
     }
-    // Stiller Ort: 12–16 m vom Abendplatz weg, begehbar, vom Zonenzentrum weg
+    // Stiller Ort: 10–16 m vom Abendplatz weg, begehbar, vom Zonenzentrum weg – aber in derselben (befreiten) Zone
     function quietSpot(npc) {
       const p = npc.position;
-      const Z = island.zoneById(zoneOfNpc(npc)) || { x: 0, z: 0 };
+      const zone = zoneOfNpc(npc);
+      const Z = island.zoneById(zone) || { x: 0, z: 0 };
       const a0 = Math.atan2(p.x - Z.x, p.z - Z.z);
-      for (let k = 0; k < 12; k++) {
-        const a = a0 + (k % 2 ? 1 : -1) * Math.ceil(k / 2) * 0.5, r = 14 - (k % 3) * 2;
-        const x = p.x + Math.sin(a) * r, z = p.z + Math.cos(a) * r;
-        if (island.isWalkable(x, z) && island.getHeight(x, z) > 0.3) return { x: +x.toFixed(1), z: +z.toFixed(1) };
+      const ok = (x, z) => island.isWalkable(x, z) && island.getHeight(x, z) > 0.3 && (!zone || island.zoneAt(x, z) === zone);
+      for (let pass = 0; pass < 2; pass++) {
+        for (let k = 0; k < 16; k++) {
+          // zweiter Durchgang: Richtung zum Zonenzentrum, falls außen alles aus der Zone fällt
+          const a = (pass ? a0 + Math.PI : a0) + (k % 2 ? 1 : -1) * Math.ceil(k / 2) * 0.45, r = 14 - (k % 3) * 2;
+          const x = p.x + Math.sin(a) * r, z = p.z + Math.cos(a) * r;
+          if (ok(x, z)) return { x: +x.toFixed(1), z: +z.toFixed(1) };
+        }
       }
       return { x: p.x + 6, z: p.z + 6 };
     }
@@ -92,6 +99,7 @@ export default {
       // Laterne am gewohnten Platz: aus
       const lantern = game.props ? game.props.spawn('laterne', { id: 'nw-laterne-' + npc.id, x: home.x + 1.2, z: home.z - 0.8, variant: 'pfahl', lit: false, dynamic: true }) : null;
       const tracks = (def.clue && def.clue.tracks !== false) ? buildTracks(home, where) : null;
+      if (tracks) tracks.group.visible = hasBlick();   // Spuren „im Blick“ (DESIGN §9): erst mit der Blick-Fähigkeit sichtbar
       active = { def, npc, where, home, lantern, tracks, clueT: far ? 4 : 10, markerOn: false, resolving: false, need };
       if (game.ui && game.ui.setMarker) game.ui.setMarker('nachtwache', home.x, home.z, '☾', '#8fa3ff');
       emit('nachtwache:start', { id: def.id, npc: npc.id, need, where, generated: !!def.generated });

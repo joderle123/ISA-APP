@@ -156,7 +156,7 @@ export default {
         emit('bond:ability', { npc: id, id: plan.weg.id, level: Number(level) || 0, say: plan.weg.say });
         if (live && game.ui.toast) game.ui.toast(`Neuer Weg: ${api.nameOf(id)} zeigt dir was.`);
         if (live && game.audio && game.audio.play) game.audio.play('chime');
-        if (live && game.ui.say && plan.weg.say) { const n = npcs.get(id); try { game.ui.say({ who: id, text: plan.weg.say, anchor: n ? n.group : undefined, wait: false, seconds: 3.2 }).catch(() => {}); } catch (e) { /* egal */ } }
+        if (live && game.ui.say && plan.weg.say) { const n = npcs.get(id); try { game.ui.say({ who: id, text: plan.weg.say, anchor: n ? n.group : undefined, wait: false, lock: false, seconds: 3.2 }).catch(() => {}); } catch (e) { /* egal */ } }
       }
       if (plan.jacket) {
         state.addUnique('jackePatches', plan.jacket);

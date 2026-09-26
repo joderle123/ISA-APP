@@ -114,6 +114,7 @@ try {
     LUMO.debug.setBond('jolie', 0);
     const r1 = LUMO.npcs.boundary('jolie');
     LUMO.debug.setBond('jolie', 2);
+    LUMO.ui.bubbles.clear(); LUMO.debug.advance(0.3);   // Stufe 2 löst Jolies Satz zur Wegfähigkeit aus (Prüfung unten mit Tiago)
     return { r0, r1, lvl, verst, mood, rep };
   });
   check('Bindung bleibt bei negativem Zug (verstimmt mit Ursache), Reparatur hebt auf; Grenz-Radius schrumpft mit Bindung', bd.lvl === 2 && bd.verst && bd.mood && bd.mood.kind === 'verstimmt' && !bd.rep && bd.r1 > bd.r0, J(bd));
@@ -157,8 +158,10 @@ try {
     const cards = document.querySelectorAll('[data-overlay="recap"] .recap-card').length;
     const x = !!document.querySelector('[data-overlay="recap"] .ov-close');
     window.__recap = p;
-    return { marker, target: target && target.title, cards, x, paused: LUMO.paused };
+    const dist = target ? Math.hypot(target.x - LUMO.player.position.x, target.z - LUMO.player.position.z) : Infinity;
+    return { marker, target: target && target.title, dist: +dist.toFixed(0), cards, x, paused: LUMO.paused };
   });
+  check('Hauptziel ist nah: unter 450 m (unter 3 Minuten Fußweg, DESIGN §3)', rc.dist < 450, `${rc.dist} m · ${rc.target}`);
   await frames(page, 3);
   await shot(page, '122_recap');
   await page.click('[data-recap-go]');
@@ -180,7 +183,7 @@ try {
   await frames(page, 3);
   await shot(page, '123_lagerfeuer_satz');
   await page.click('[data-overlay="campfire"] [data-cf-next]');
-  await sleep(350);
+  await sleep(900);   // Karte blendet 0,3 s ein
   const mo = await page.evaluate(() => document.querySelectorAll('[data-overlay="campfire"] [data-moment]').length);
   check('Bester Moment: drei Bilder (im Test auch vor e05)', mo >= 1 && mo <= 3, String(mo));
   await shot(page, '124_lagerfeuer_moment');
@@ -197,6 +200,31 @@ try {
     return { r, day: LUMO.state.get('time.day'), hour: +LUMO.time.hour.toFixed(1), dist: +Math.hypot(LUMO.player.position.x - B.x, LUMO.player.position.z - B.z).toFixed(1), glas: (LUMO.state.get('baumhaus.glas') || []).length, savedDay: raw.time.day, savedRecap: !!raw.recap && raw.recap.zone, savedNpcs: !!raw.npcs && !!raw.npcs.jolie, overlays: LUMO.ui.overlay.count, paused: LUMO.paused };
   });
   check('Nach „Bis morgen“: neuer Tag 7:30 im Baumhaus, Glühwürmchen im Glas, Spielstand mit Tag, Recap und Figuren gespeichert', nd.r && nd.r.moment === 'm-test' && nd.day === 3 && nd.hour === 7.5 && nd.dist < 8 && nd.glas === 1 && nd.savedDay === 3 && nd.savedRecap && nd.savedNpcs && nd.overlays === 0 && !nd.paused, J(nd));
+
+  // ---- Bindungs-Belohnungen (DESIGN §9): Stufe 2 → Wegfähigkeit + Satz der Figur, Stufe 3 → Jacken-Aufnäher + Lagerfeuer-Geschichte ----
+  const br = await page.evaluate(async () => {
+    const ev = [];
+    LUMO.events.on('bond:ability', (e) => ev.push('weg:' + e.npc + ':' + e.id));
+    LUMO.events.on('bond:jacket', (e) => ev.push('jacke:' + e.npc + ':' + e.patch));
+    const w0 = LUMO.debug.wege();
+    LUMO.debug.setBond('tiago', 1);
+    const at1 = LUMO.debug.wege();
+    LUMO.debug.setBond('tiago', 2);
+    await new Promise((r) => setTimeout(r, 80));
+    const bubble = document.querySelector('.bubble');
+    const say = bubble && bubble.querySelector('.bubble-text') && bubble.querySelector('.bubble-text').textContent;
+    LUMO.ui.bubbles.clear();
+    const at2 = LUMO.debug.wege();
+    LUMO.debug.setBond('tiago', 3);
+    const at3 = LUMO.debug.wege();
+    LUMO.debug.setBond('tiago', 3);   // nochmal: keine doppelte Belohnung
+    const deeds = (LUMO.state.get('deedLog') || []).filter((d) => d.id === 'tiago-bindung-3');
+    const cond = LUMO.session.evalCond({ weg: 'surfbrett' }), condNo = LUMO.session.evalCond({ weg: 'nix' });
+    const lines = LUMO.session.campfirePlan().lines;
+    LUMO.debug.setBond('tiago', 0);
+    return { w0, at1, at2, at3, say, ev, deeds: deeds.length, deedText: deeds[0] && deeds[0].text, cond, condNo, campfire: lines.find((l) => l.who === 'tiago') };
+  });
+  check('Bindung Stufe 2: Wegfähigkeit „surfbrett“ in state.wege, Tiago sagt seinen Satz; Stufe 3: Aufnäher + Geschichte, je genau einmal', !br.w0.wege.includes('surfbrett') && !br.at1.wege.includes('surfbrett') && br.at2.wege.includes('surfbrett') && br.say && br.at3.jacke.length === 1 && br.deeds === 1 && !!br.deedText && br.ev.length === 2 && br.cond && !br.condNo && br.campfire && br.campfire.text === br.deedText, J(br));
 
   // ---- Signalfeuer: dunkel im Grau, leuchtet nach der Farbwelle, Schnellreise ----
   const sf = await page.evaluate(async () => {
@@ -251,14 +279,17 @@ try {
   });
   check('Lichtsplitter: nächster liegt nah, wird beim Berühren eingesammelt (Ereignis collect, Zähler im Spielstand)', co.stats0.total === 100 && co.got && co.ev === co.near && co.count === 1, J({ near: co.near, got: co.got, ev: co.ev, count: co.count }));
   check('Aussichtspunkt: 8 s stillstehen mit Ring, dann gefunden; 3 versteckte Splitter erscheinen; Karte deckt auf', co.active === 'ap-steg' && co.half > 0.3 && co.half < 0.7 && co.ring && co.found === 'ap-steg' && co.apDone && co.hidden0 === 0 && co.hidden1 === 3 && co.rev1 > co.rev0 + 8, J({ active: co.active, half: co.half, ring: co.ring, found: co.found, hidden: [co.hidden0, co.hidden1], rev: [co.rev0, co.rev1] }));
-  // Karte im Tagebuch
-  await page.evaluate(() => { LUMO.ui.journal.open('karte'); });
+  // Karte im Tagebuch – mit Noors Farbmarken (Bindung 2) und Kims Netz-Schnellreise (Bindung 2)
+  await page.evaluate(() => { const i0 = LUMO.debug.mapInfo(); window.__map0 = { marks: i0.marks, travel: i0.travel.length }; LUMO.debug.setBond('noor', 2); LUMO.debug.setBond('kim', 2); LUMO.ui.bubbles.clear(); LUMO.debug.advance(0.3); LUMO.ui.journal.open('karte'); });
   await sleep(300);
-  const mp = await page.evaluate(() => { const cv = document.querySelector('canvas[data-map]'); const info = LUMO.debug.mapInfo(); return { canvas: !!cv, w: cv && cv.width, teasers: info.teasers.length, revealed: info.revealed, note: document.querySelector('.jn-page-body .jn-note') && document.querySelector('.jn-page-body .jn-note').textContent }; });
+  const mp = await page.evaluate(() => { const cv = document.querySelector('canvas[data-map]'); const info = LUMO.debug.mapInfo(); return { before: window.__map0, canvas: !!cv, w: cv && cv.width, teasers: info.teasers.length, revealed: info.revealed, marks: info.marks, travel: info.travel.length, buttons: document.querySelectorAll('[data-map-travel]').length, note: document.querySelector('.jn-page-body .jn-note') && document.querySelector('.jn-page-body .jn-note').textContent }; });
   await frames(page, 3);
   await shot(page, '126_karte_nebel');
-  check('Karte: Canvas mit Nebelkacheln, 9 Teaser mit Fähigkeitssymbol, Prozent entdeckt', mp.canvas && mp.w === 640 && mp.teasers === 9 && mp.revealed > 20 && /% entdeckt/.test(mp.note || ''), J(mp));
-  await page.evaluate(() => LUMO.ui.journal.close());
+  check('Karte: Canvas mit Nebelkacheln, 9 Teaser mit Fähigkeitssymbol, Prozent entdeckt', mp.canvas && mp.w === 640 && mp.teasers === 9 && mp.revealed > 20 && /% entdeckt/.test(mp.note || ''), J({ ...mp, before: undefined }));
+  check('Wegfähigkeiten auf der Karte: Noors Farbmarken erst ab Bindung 2, Kims Netz-Schnellreise als Knöpfe zu brennenden Feuern', mp.before.marks === 0 && mp.before.travel === 0 && mp.marks > 50 && mp.travel >= 2 && mp.buttons === mp.travel, J({ before: mp.before, marks: mp.marks, travel: mp.travel, buttons: mp.buttons }));
+  const tr = await page.evaluate(async () => { const id = document.querySelector('[data-map-travel]').dataset.mapTravel; const f = LUMO.session.signalfeuer.get(id); document.querySelector('[data-map-travel]').click(); await new Promise((r) => setTimeout(r, 700)); LUMO.debug.advance(0.3); return { id, journal: LUMO.ui.journal.isOpen, dist: +Math.hypot(LUMO.player.position.x - f.x, LUMO.player.position.z - f.z).toFixed(1) }; });
+  check('Netz-Schnellreise aus der Karte: Tagebuch zu, Spielfigur am gewählten Feuer', !tr.journal && tr.dist < 5, J(tr));
+  await page.evaluate(() => { if (LUMO.ui.journal.isOpen) LUMO.ui.journal.close(); });
 
   // ---- Inselwetter: Ruhewetter halbiert den Puls, 20 Minuten ----
   const we = await page.evaluate(() => {
@@ -314,9 +345,11 @@ try {
   });
   check('Nachtwache startet nur nachts in einer befreiten Region (ab e05): tagsüber nichts, verschleiert nichts, frei → Figur am Hafen', !noUnitOk(nw.noUnit) && nw.veiled.night && nw.veiled.tonight === null && !nw.veiled.active && nw.free.tonight && nw.free.active && nw.zone === 'hafen', J({ noUnit: nw.noUnit, veiled: nw.veiled, free: nw.free && nw.free.active && nw.free.active.npc }));
   check('Nachtwache: Figur weicht vom Ablauf ab, sitzt zusammengesunken am stillen Ort, Laterne aus, Glimm-Hinweis, Marker, Innen anders als außen', nw.override && nw.dist < 2 && nw.anim === 'sit' && nw.slump > 0.5 && nw.lantern === false && nw.ev.includes('clue:' + nw.active.npc) && nw.marker && nw.inner, J({ dist: nw.dist, anim: nw.anim, slump: nw.slump, lantern: nw.lantern, ev: nw.ev, inner: nw.inner, help: nw.active.help }));
-  await page.evaluate(() => { const a = LUMO.plugins.nachtwache.active; const n = LUMO.npcs.get(a.npc); const r = LUMO.cameraRig; LUMO.debug.teleport({ x: n.position.x + 2.4, z: n.position.z + 2.2 }); r.targetDist = 6; r.pitch = 0.14; r.yaw = Math.atan2(LUMO.player.position.x - n.position.x, LUMO.player.position.z - n.position.z); LUMO.debug.advance(0.6); r.snap(); });
+  // Foto von schräg vorn (feste Kamera, sonst verdeckt die stehende Spielfigur die sitzende Figur)
+  await page.evaluate(() => { const a = LUMO.plugins.nachtwache.active; const n = LUMO.npcs.get(a.npc); LUMO.debug.teleport({ x: n.position.x - 2.6, z: n.position.z + 2.4 }); LUMO.debug.advance(0.6); const f = { x: Math.sin(n.yaw), z: Math.cos(n.yaw) }; LUMO.debug.setShot({ x: n.position.x + f.x * 4.2 + f.z * 2.2, y: n.position.y + 2.0, z: n.position.z + f.z * 4.2 - f.x * 2.2 }, { x: n.position.x, y: n.position.y + 0.8, z: n.position.z }); LUMO.debug.advance(0.3); });
   await frames(page, 3);
   await shot(page, '127_nachtwache');
+  await page.evaluate(() => { LUMO.debug.setShot(null); LUMO.cameraRig.snap(); });
   // Gespräch: Kacheln mit vier Hilfen, „Hinsetzen“ wählen
   const help = await page.evaluate(async () => {
     const a = LUMO.plugins.nachtwache.active;
@@ -329,7 +362,8 @@ try {
     const items = [...document.querySelectorAll('[data-choice]')].map((b) => b.textContent.trim());
     const sitzen = [...document.querySelectorAll('[data-choice]')].find((b) => /Hinsetzen/.test(b.textContent));
     if (sitzen) sitzen.click();
-    for (let i = 0; i < 80 && !done; i++) { LUMO.debug.advance(0.1); await new Promise((r) => setTimeout(r, 60)); const nb = document.querySelector('.bubble.is-in [data-next]'); if (nb) nb.click(); }
+    // Die Hilfe dauert ein paar Sekunden Echtzeit (Emote), dann kommt die Dank-Blase: bis zu 20 s warten, Blasen weiterklicken
+    for (let i = 0; i < 250 && !done; i++) { LUMO.debug.advance(0.1); await new Promise((r) => setTimeout(r, 80)); const nb = document.querySelector('.bubble [data-next]'); if (nb) nb.click(); }
     LUMO.debug.advance(0.5);
     const d = LUMO.state.get('nachtwache');
     return { items, done, bond: [bond0, LUMO.npcs.bond(a.npc)], ls: [ls0, LUMO.state.get('lichtsplitter', 0)], lastDay: d && d.lastDay, day: LUMO.state.get('time.day'), doneN: d && d.done.length, deed: (LUMO.state.get('deedLog') || []).slice(-1)[0], active: !!LUMO.plugins.nachtwache.active, tonight: LUMO.plugins.nachtwache.tonight() };

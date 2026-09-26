@@ -116,6 +116,14 @@ export function drawMap(cv, ctx) {
     const im = iconImg('feuer', f.lit ? '#1d1330' : '#c8c2dc', ctx.redraw);
     if (im && im.complete && im.naturalWidth) g.drawImage(im, X - 5, Y - 5, 10, 10);
   }
+  // Farbmarken (Noors Wegfähigkeit, Bindung 2): offene Lichtsplitter und Muscheln in entdeckten Kacheln
+  for (const m of ctx.marks || []) {
+    const t = tileOf(m.x, m.z, N, R);
+    if (!rev.has(t)) continue;
+    const X = px(m.x), Y = py(m.z);
+    g.beginPath(); g.arc(X, Y, m.type === 'muschel' ? 3.6 : 2.8, 0, Math.PI * 2);
+    g.fillStyle = m.type === 'muschel' ? '#ffd0ea' : '#fff3a0'; g.fill(); g.lineWidth = 1; g.strokeStyle = 'rgba(20,12,40,0.8)'; g.stroke();
+  }
   // Aussichtspunkte (gefunden)
   for (const v of ctx.viewpoints || []) {
     if (!v.found) continue;

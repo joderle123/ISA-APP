@@ -4,6 +4,9 @@
 // 8 → Überspringen), Taten-Log, Echos (nur positiv oder mit Reparatur), Kurzfassung, Tagebuch-Seiten.
 //   game.quests = game.plugins.quests → Engine-API (engine.js) + { markers, ctx, dsl }
 //   Ereignisse: siehe engine.js; dazu echteWelt:stitch {unit} · quest:rueckenwind {step} · puls:cap {value}
+//     · echo:fire {id, npc, repair} · echo:shown {id, npc, repair} (Zeile beim Treffen gezeigt) · echo:clear {id, quest}
+//   Echos: npc:talk zeigt offene Echo-Zeilen der Figur (Kamera „talk“), Reparatur-Quest wird beim Zünden angeboten;
+//     Stimmung 'verstimmt' läuft über game.npcs (Format { kind, cause, repair, day }), day:new prüft fällige Echos.
 //   Debug: LUMO.debug.startQuest(id) · startKurz(id) · offerQuest(id) · completeStep() · failStep(reason) · skipStep()
 //     · completeQuest(id) · questInfo() · addDeed(id, npc) · checkEchoes() · questMarker()
 //   Szenario: 'code welle' 'expect state.units.j1-e11 == aktiv' 'call questInfo' 'call failStep sturz' 'call completeStep'
@@ -96,7 +99,8 @@ export default {
       emit,
     };
 
-    const engine = createQuestEngine({ content, state, ctx, dsl, emit, session: () => Number(state.get('sessions', 1)) || 1 });
+    const engine = createQuestEngine({ content, state, ctx, dsl, emit, session: () => Number(state.get('sessions', 1)) || 1,
+      npcRepair: (npc, how) => { const N = npcs(); return !!(N && N.repair && N.repair(npc, how)); } });
     dsl.hooks.quest = (v) => { const [op, id] = v; if (op === 'start') return engine.start(id); if (op === 'offer') return engine.offer(id); if (op === 'complete') return engine.complete(id); return false; };
     dsl.hooks.echo = (def) => engine.echoes.register(def);
     dsl.hooks.patch = (unit) => { state.push('session.newPatches', unit); applyPatches(); };
@@ -126,7 +130,28 @@ export default {
     events.on('quest:complete', (e) => { const d = engine.get(e.id); if (d && ui.toast && !e.kurz) ui.toast(`Aufnäher: ${d.title}`); if (audio && !e.kurz) audio.play('pickup'); });
     events.on('quest:step', () => { if (ui.journal && ui.journal.isOpen && ui.journal.current === 'auftraege') ui.journal.refresh(); });
     events.on('quest:hint', (e) => { if (e.stage === 'rueckenwind' && ui.toast) ui.toast('Rückenwind. Windstille da vorne.', 2200); });
+    // Echos (DESIGN §9): Figuren zitieren beim nächsten Treffen deine Tat – oder nennen ihre Ursache samt Reparatur-Quest
+    events.on('npc:talk', (e) => {
+      if (!e || e.handled || !e.id || game.dialogue.isOpen) return;
+      const pend = engine.echoes.pending(e.id).slice(0, 2);
+      if (!pend.length) return;
+      e.handled = true;
+      (async () => {
+        const n = e.npc || null, cam = game.cameraRig;
+        if (cam && cam.setMode && n && n.group) cam.setMode('talk', { target: n.group, side: 1 });
+        for (const p of pend) {
+          await ui.say({ who: e.id, text: p.line.say, tts: p.line.tts, anchor: n && n.group ? n.group : null });
+          engine.echoes.consume(p.id);
+          emit('echo:shown', { id: p.id, npc: e.id, repair: p.repair });
+          const rep = p.repair && p.repair.quest ? engine.get(p.repair.quest) : null;
+          if (rep && ui.toast && engine.status(rep.id) !== 'fertig') ui.toast(`Wiedergutmachen: ${rep.title}`);
+        }
+        if (cam && cam.setMode) cam.setMode(null);
+        if (n && n.face) n.face(null);
+      })().catch((err) => console.error('[quest] Echo', err));
+    });
     let started = false;
+    events.on('day:new', () => { if (started) engine.echoes.check(); });
     const boot = () => { if (started) return; started = true; state.inc('sessions'); engine.resume(); };
     if (game.started) boot(); else events.on('game:start', boot);
     events.on('state:reset', () => { markers.clear(); ctx.clearRueckenwind(); if (started) engine.resume(); });

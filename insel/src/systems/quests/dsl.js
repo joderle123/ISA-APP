@@ -147,7 +147,18 @@ export function applyEffect(e, ctx) {
     case 'glimm': return hook(ctx, 'glimm', v, e);
     case 'anim': return hook(ctx, 'anim', v, e);
     case 'gate': { const id = v.open || v.close; st.set('gates.' + id, !!v.open); ctx.emit('gate:set', { id, open: !!v.open }); return hook(ctx, 'gate', v, e); }
-    case 'mood': { st.set('moods.' + v[0], v[1] === 'verstimmt' ? undefined : v[1]); ctx.emit('mood:set', { npc: v[0], mood: v[1] }); return hook(ctx, 'mood', v, e); }
+    case 'mood': {
+      // { mood: [npc, 'verstimmt'|'ok'|…, { cause, repair }?] } – Figuren-System (Haken) zuerst, sonst dasselbe Format im Zustand:
+      // moods.<npc> = { kind, cause, repair, day }; 'ok' hebt die Stimmung auf. Verstimmt ist nie dauerhaft (Gesetz 6).
+      const [npc, kind, extra] = v;
+      const r = hook(ctx, 'mood', v, e);
+      if (r === undefined || r === false) {
+        if (kind === 'ok' || !kind) st.remove('moods.' + npc);
+        else st.set('moods.' + npc, { kind, cause: (extra && extra.cause) || e.cause || null, repair: (extra && extra.repair) || e.repair || null, day: ctx.time().day });
+      }
+      ctx.emit('mood:set', { npc, mood: kind });
+      return true;
+    }
     case 'ampel': { st.set('ampel.' + v.zone, v.gadget || null); ctx.emit('ampel:set', v); return true; }
     case 'toast': return hook(ctx, 'toast', v, e);
     case 'say': return hook(ctx, 'say', v, e);

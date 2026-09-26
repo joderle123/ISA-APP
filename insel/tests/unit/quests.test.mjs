@@ -94,6 +94,12 @@ test('DSL: Bedingungen und Wirkungen (Flags, Bindung nie sinkend, Puls/Hitze 0�
   assert.equal(evalCond({ time: 'night' }, dsl), true);
   assert.equal(evalCond({ time: [18, 6] }, dsl), true);
   assert.equal(pulsZone(29), 'gruen'); assert.equal(pulsZone(30), 'gelb'); assert.equal(pulsZone(70), 'rot');
+  // Stimmung: verstimmt nur mit Ursache/Reparatur im Format des Figuren-Systems, 'ok' hebt auf
+  await applyEffects([{ mood: ['luc', 'verstimmt', { cause: 'Du warst nicht da.', repair: 'rep-x' }] }], dsl);
+  assert.deepEqual({ ...state.get('moods.luc'), day: 0 }, { kind: 'verstimmt', cause: 'Du warst nicht da.', repair: 'rep-x', day: 0 });
+  assert.equal(state.get('bonds.luc'), 2, 'Bindung bleibt');
+  await applyEffects([{ mood: ['luc', 'ok'] }], dsl);
+  assert.equal(state.get('moods.luc'), undefined);
 });
 
 test('Beispiel-Quest j1-e11 läuft headless: Code → offen → aktiv → Schritte → fertig mit Teil-Farbwelle, Aufnäher, Glimm', async () => {
@@ -292,8 +298,18 @@ test('Taten-Log und Echos: Lagerfeuer-Sätze, negatives Echo nur mit Reparatur, 
   assert.deepEqual(echoes.check(), [], 'Verzögerung: 1 Tag');
   state.set('time.day', 2);
   assert.deepEqual(echoes.check(), ['echo-tiago-rennen']);
-  assert.equal(state.get('moods.tiago'), 'verstimmt');
+  // Format des Figuren-Systems (WP34): { kind, cause, repair, day } – die Figur nennt beim Gruß die Ursache
+  assert.equal(state.get('moods.tiago').kind, 'verstimmt');
+  assert.equal(state.get('moods.tiago').cause, 'Du warst nicht beim Rennen.');
+  assert.equal(state.get('moods.tiago').repair, 'rep-tiago-surfspot');
+  assert.equal(echoes.isVerstimmt('tiago'), true);
   assert.equal(echoes.pending('tiago')[0].line.say, 'Du warst nicht beim Rennen.');
+  assert.equal(echoes.pending('tiago')[0].repair.quest, 'rep-tiago-surfspot');
+  // Laufzeit-Echos überleben das Neuladen (state.echoDefs), gezündete bleiben gezündet
+  const echoes2 = createEchoes({ state, evalCond: (c) => evalCond(c, dsl), time: () => ({ day: Number(state.get('time.day', 1)) }) });
+  assert.ok(echoes2.defs.some((d) => d.id === 'echo-tiago-rennen'), 'aus dem Spielstand geladen');
+  assert.deepEqual(echoes2.check(), [], 'schon gezündet');
+  assert.equal(echoes2.pending('tiago').length, 1);
   echoes.consume('echo-tiago-rennen');
   assert.equal(echoes.pending('tiago').length, 0);
   assert.deepEqual(echoes.repairFor('rep-tiago-surfspot'), ['echo-tiago-rennen']);
@@ -303,7 +319,8 @@ test('Taten-Log und Echos: Lagerfeuer-Sätze, negatives Echo nur mit Reparatur, 
   engine.echoes.register({ id: 'echo-2', when: { flag: 'e05.tiago-rennen-verpasst' }, effect: { mood: ['tiago', 'verstimmt'] }, line: { npc: 'tiago', say: 'Hm.' }, repair: { quest: 'rep-tiago-surfspot', clears: true } });
   assert.deepEqual(engine.echoes.check(), ['echo-2']);
   assert.equal(engine.active, 'rep-tiago-surfspot');
-  assert.equal(state.get('moods.tiago'), 'verstimmt');
+  assert.equal(state.get('moods.tiago').kind, 'verstimmt', 'über die Effekt-DSL gesetzt');
+  assert.equal(state.get('moods.tiago').cause, 'Hm.');
   player.x = 6; player.z = 138; tick(2); await settle(); await settle();
   assert.equal(engine.status('rep-tiago-surfspot'), 'fertig');
   assert.equal(state.get('moods.tiago'), undefined);
