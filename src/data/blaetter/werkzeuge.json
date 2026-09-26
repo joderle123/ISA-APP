@@ -221,6 +221,7 @@
           ]
         },
         {"art": "satzanfaenge", "items": ["Meine eigenen Ideen:"]},
+        {"art": "seitenumbruch"},
         {
           "art": "aufgabe",
           "text": "Stell dein Menü zusammen.",

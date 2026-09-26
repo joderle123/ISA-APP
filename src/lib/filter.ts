@@ -101,15 +101,34 @@ export function searchTokens(q: string): string[] {
   return fold(q).split(/\s+/).filter(Boolean)
 }
 
+const WORD_CHAR = /[\p{L}\p{N}]/u
+
+/** Does a (folded) search token occur in the (folded) text? Tokens of one or
+ *  two characters only as a whole word („KI“ not in „Skills“ or „Kinder“),
+ *  three characters at a word start („Wut“ → „Wutvulkan“, „ich“ not in
+ *  „nicht“), longer ones anywhere, so German compounds still match
+ *  („Angst“ → „Prüfungsangst“). Also used by the Arbeitsblätter. */
+export function tokenMatch(text: string, t: string): boolean {
+  if (t.length > 3) return text.includes(t)
+  const start = WORD_CHAR.test(t[0])
+  const end = t.length < 3 && WORD_CHAR.test(t[t.length - 1])
+  for (let i = text.indexOf(t); i >= 0; i = text.indexOf(t, i + 1)) {
+    if (start && i > 0 && WORD_CHAR.test(text[i - 1])) continue
+    if (end && i + t.length < text.length && WORD_CHAR.test(text[i + t.length])) continue
+    return true
+  }
+  return false
+}
+
 /** Relevance of a material for the search tokens (0 = no match). Every token
- *  must appear somewhere (AND); title and tag hits weigh more. */
+ *  must appear somewhere (AND, see tokenMatch); title and tag hits weigh more. */
 export function searchScore(m: Material, tokens: string[]): number {
   if (!tokens.length) return 1
   const d = searchDoc(m)
   let score = 0
   for (const t of tokens) {
-    if (!d.all.includes(t)) return 0
-    score += d.title.includes(t) ? 6 : d.tags.includes(t) ? 3 : 1
+    if (!tokenMatch(d.all, t)) return 0
+    score += tokenMatch(d.title, t) ? 6 : tokenMatch(d.tags, t) ? 3 : 1
   }
   return score
 }

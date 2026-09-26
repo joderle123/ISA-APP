@@ -124,12 +124,14 @@ export function Einheiten({
   }, [])
 
   // Keep the URL in sync (without history entries), so a link sent again by
-  // the hub is always recognised as a change.
+  // the hub is always recognised as a change. With "seite=einheiten", because
+  // "#eldib=…" alone opens the Arbeitsblätter (reload, back, App's hashchange).
   const eldibKey = filter.eldibGoals.join(',')
   const selectedId = selected?.id ?? null
   useEffect(() => {
     if (!aktiv) return
-    writeHash(buildHash(eldibKey ? eldibKey.split(',') : [], selectedId))
+    const hash = buildHash(eldibKey ? eldibKey.split(',') : [], selectedId)
+    writeHash(hash ? hash + '&seite=einheiten' : '')
   }, [aktiv, eldibKey, selectedId])
 
   // "/" focuses the search (like in the hub).

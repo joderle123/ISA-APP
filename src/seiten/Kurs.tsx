@@ -13,6 +13,7 @@ import { blattById } from '../data/blaetter'
 import type { NummeriertesBlatt } from '../blatt/typen'
 import { heute, neueGruppe, useKursStand, type Gruppe } from '../kurs/fortschritt'
 import { loadPdfModule } from '../lib/loadPdf'
+import { writeHash } from '../lib/deeplink'
 import { toast } from '../lib/toast'
 import type { Bewertungen } from '../lib/useBewertungen'
 import { BlattDetail } from './Blaetter'
@@ -60,9 +61,17 @@ function ansichtAusHash(hash: string): Ansicht | null {
   return { art: 'uebersicht' }
 }
 
+function hashVon(a: Ansicht): string {
+  return a.art === 'einheit' ? 'kurs=' + a.id : a.art === 'grundlagen' ? 'kurs=grundlagen' : 'kurs'
+}
+
+/** Von der Kurs-Seite gesetzt: stellt die Ansicht direkt um (für gehe(), wenn der Hash schon stimmt). */
+let ansichtSetzen: ((a: Ansicht) => void) | null = null
+
 function gehe(a: Ansicht) {
-  const h = a.art === 'einheit' ? 'kurs=' + a.id : a.art === 'grundlagen' ? 'kurs=grundlagen' : 'kurs'
+  const h = hashVon(a)
   if (window.location.hash.replace(/^#/, '') !== h) window.location.hash = h
+  else ansichtSetzen?.(a)
 }
 
 // --- Kleine Bausteine -------------------------------------------------------------------
@@ -148,7 +157,7 @@ function Naechste({ gruppe, onOeffnen, onGehalten }: { gruppe: Gruppe; onOeffnen
       const name = await pdf.downloadMappe(
         bl.map((b) => ({ blatt: b, nr: b.nr })),
         `Einheit ${naechste!.nr} ${naechste!.titel}`,
-        { lehrer: true },
+        { lehrer: false },
       )
       toast(`Blätter erstellt: ${name}`, 'ok')
     } catch (e) {
@@ -196,7 +205,7 @@ function Naechste({ gruppe, onOeffnen, onGehalten }: { gruppe: Gruppe; onOeffnen
         {bl.length ? (
           <button type="button" className="btn" onClick={mappe} disabled={laedt}>
             {laedt ? <span className="spin" /> : <Icon name="download" />}
-            Alle Blätter (PDF)
+            Schülerblätter (PDF)
           </button>
         ) : null}
         <button type="button" className="btn btn-quiet" onClick={() => onGehalten(naechste.id)}>
@@ -1022,7 +1031,10 @@ function GruppenDialog({ onClose, stand, aendern }: { onClose: () => void; stand
                   aria-label="Name der Gruppe"
                   onBlur={(x) => {
                     const name = x.target.value.trim()
-                    if (name && name !== g.name) aendern((s) => ({ ...s, gruppen: s.gruppen.map((y) => (y.id === g.id ? { ...y, name } : y)) }))
+                    if (!name) toast('Eine Gruppe braucht einen Namen – der bisherige bleibt.', 'info')
+                    else if (name !== g.name) aendern((s) => ({ ...s, gruppen: s.gruppen.map((y) => (y.id === g.id ? { ...y, name } : y)) }))
+                    // Im Feld steht immer der gespeicherte Name
+                    x.target.value = name || g.name
                   }}
                 />
                 {kursjahre.length > 1 ? (
@@ -1093,9 +1105,20 @@ export function Kurs({ aktiv, bew }: { aktiv: boolean; bew: Bewertungen }) {
         window.scrollTo({ top: 0 })
       }
     }
+    ansichtSetzen = (a) => {
+      setAnsicht(a)
+      window.scrollTo({ top: 0 })
+    }
     window.addEventListener('hashchange', onHash)
-    return () => window.removeEventListener('hashchange', onHash)
+    return () => {
+      ansichtSetzen = null
+      window.removeEventListener('hashchange', onHash)
+    }
   }, [])
+  /* Hash zur Ansicht halten (ohne Verlaufseintrag), z. B. nach einem Wechsel des Hauptreiters */
+  useEffect(() => {
+    if (aktiv) writeHash('#' + hashVon(ansicht))
+  }, [aktiv, ansicht])
 
   const einheit = ansicht.art === 'einheit' ? einheitById.get(ansicht.id) : undefined
   const jahr = gruppe ? jahrByNr.get(gruppe.jahr) : undefined

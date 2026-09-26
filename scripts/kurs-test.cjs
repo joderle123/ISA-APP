@@ -2,7 +2,9 @@
 //   npm run build   (oder: npx vite build)
 //   node scripts/kurs-test.cjs
 // Prüft: nächste Einheit, Einheit öffnen, Material abhaken und Notiz (bleiben
-// nach Neuladen), „Heute gehalten“, Gruppen, Deep-Links, Druckansicht, Blatt-Vorschau.
+// nach Neuladen), „Heute gehalten“, Gruppen (Name nie leer), Deep-Links, Reiterwechsel
+// mit offener Einheit („Jahresweg“, Zurück), PDF der Schülerblätter, Grundlagen,
+// Druckansicht, Spickzettel auf einer Seite, Blatt-Vorschau.
 const path = require('path')
 const fs = require('fs')
 let chromium
@@ -21,6 +23,7 @@ const kurs = fs
 const einheiten = new Map(kurs.flatMap((k) => k.einheiten ?? []).map((e) => [e.id, e]))
 const jahr1 = kurs.find((k) => k.jahr && k.jahr.nr === 1)
 const reihe = jahr1.module.flatMap((m) => m.einheiten).filter((id) => einheiten.has(id))
+const jahrZahl = kurs.filter((k) => k.jahr).length
 
 let ok = 0
 let fehlerZahl = 0
@@ -106,6 +109,18 @@ function pruefe(bed, text) {
   await page.selectOption('.ku-gruppenwahl select', { index: 0 })
   pruefe((await page.textContent('.ku-fortschritt')).includes('1 von'), 'erste Gruppe behält ihren Stand')
 
+  // Gruppenname leeren: nicht erlaubt – der bisherige Name bleibt im Feld und gespeichert, mit Hinweis
+  await page.click('.ku-gruppenwahl .btn')
+  await page.waitForSelector('dialog .ku-gruppen')
+  const namensFeld = page.locator('dialog .ku-gruppen li input').first()
+  const alterName = await namensFeld.inputValue()
+  await namensFeld.fill('')
+  await namensFeld.blur()
+  pruefe((await namensFeld.inputValue()) === alterName, `leerer Gruppenname: im Feld steht wieder „${alterName}“`)
+  pruefe(await page.waitForSelector('.toast:has-text("braucht einen Namen")', { timeout: 5000 }).then(() => true, () => false), 'leerer Gruppenname: Hinweis')
+  await page.click('dialog .icon-btn[aria-label="Schließen"]')
+  pruefe((await page.textContent('.ku-gruppenwahl select option')) === alterName, 'leerer Gruppenname: gespeichert bleibt der bisherige Name')
+
   // Zurücknehmen
   await page.goto(DATEI + '#kurs=' + e1.id)
   await page.waitForSelector('.ku-gehalten')
@@ -119,10 +134,33 @@ function pruefe(bed, text) {
     pruefe((await page.textContent('#ku-einheit-titel')).includes(einheiten.get(reihe[1]).titel), 'Blättern zu Einheit 2')
   }
 
+  // Spickzettel: eine A4-Seite, auch für lange Einheiten (Einheit 20 aus Kursjahr 3 war zweiseitig)
+  for (const id of ['j3-e20', 'j2-e07', e1.id].filter((x) => einheiten.has(x))) {
+    await page.goto(DATEI + '#kurs=' + id)
+    await page.waitForSelector('.ku-einheit-aktionen')
+    await page.evaluate(() => {
+      window.__druck = null
+      window.print = () => (window.__druck = document.documentElement.outerHTML.replace(/<script[\s\S]*?<\/script>/gi, ''))
+    })
+    await page.locator('.ku-einheit-aktionen button', { hasText: 'Spickzettel' }).click()
+    const druck = await ctx.newPage()
+    await druck.setContent(await page.evaluate(() => window.__druck))
+    await druck.emulateMedia({ media: 'print' })
+    const pdf = await druck.pdf({ format: 'A4', preferCSSPageSize: true })
+    await druck.close()
+    const seiten = (pdf.toString('latin1').match(/\/Type\s*\/Page(?![s\w])/g) || []).length
+    pruefe(seiten === 1, `Spickzettel ${id}: eine Seite (${seiten})`)
+  }
+
   // Grundlagen
   await page.goto(DATEI + '#kurs=grundlagen')
   await page.waitForSelector('#ku-gl-titel')
   pruefe(true, 'Grundlagen-Seite öffnet')
+  if (jahrZahl === 3) {
+    const anzahl = (nr) => kurs.find((k) => k.jahr && k.jahr.nr === nr).module.flatMap((m) => m.einheiten).length
+    const gl = await page.textContent('.ku-gl-inhalt')
+    pruefe(gl.includes(`${anzahl(1)} Einheiten in Kursjahr 1`) && (anzahl(2) !== anzahl(3) || gl.includes(`je ${anzahl(2)} in Kursjahr 2 und 3`)), 'Grundlagen nennen die Einheiten aller Kursjahre')
+  }
 
   // Reiterwechsel und zurück
   await page.goto(DATEI + '#kurs')
@@ -132,6 +170,43 @@ function pruefe(bed, text) {
   await page.click('.haupt-reiter button:has-text("Skills-Kurs")')
   pruefe(await page.locator('.ku-held').isVisible(), 'Kurs erscheint wieder')
   pruefe(page.url().endsWith('#kurs'), 'Hash #kurs nach Reiterwechsel')
+
+  // Offene Einheit, Reiterwechsel hin und zurück: Einheit bleibt, „Jahresweg“ und Zurück gehen weiter
+  const zeigt = (sel) => page.waitForSelector(sel, { timeout: 5000 }).then(() => true, () => false)
+  await page.goto(DATEI + '#kurs=' + e1.id)
+  await page.waitForSelector('.ku-einheit-kopf')
+  await page.click('.haupt-reiter button:has-text("Arbeitsblätter")')
+  await page.click('.haupt-reiter button:has-text("Skills-Kurs")')
+  pruefe(await page.locator('.ku-einheit-kopf').isVisible(), 'Reiterwechsel: die offene Einheit bleibt')
+  pruefe(page.url().endsWith('#kurs=' + e1.id), 'Reiterwechsel: Hash nennt die offene Einheit')
+  await page.click('.ku-einheit-nav .link-btn')
+  pruefe((await zeigt('.ku-held')) && page.url().endsWith('#kurs'), '„Jahresweg“ nach Reiterwechsel führt zur Übersicht')
+  await page.goBack()
+  pruefe((await zeigt('.ku-einheit-kopf')) && page.url().endsWith('#kurs=' + e1.id), 'Zurück führt wieder zur Einheit')
+  await page.click('.haupt-reiter button:has-text("Skills-Kurs")')
+  pruefe((await zeigt('.ku-held')) && page.url().endsWith('#kurs'), 'Klick auf den offenen Reiter „Skills-Kurs“ führt zur Übersicht')
+  await page.goBack()
+  pruefe((await zeigt('.ku-einheit-kopf')) && page.url().endsWith('#kurs=' + e1.id), 'danach führt Zurück wieder zur Einheit')
+
+  // PDF der Schülerblätter: „Als Nächstes“ wie auf der Seite der Einheit, Dateinamen je Fassung
+  await page.goto(DATEI + '#kurs')
+  await page.waitForSelector('.ku-held')
+  pruefe((await page.locator('.ku-held-aktionen button', { hasText: 'Alle Blätter' }).count()) === 0, '„Als Nächstes“: kein „Alle Blätter (PDF)“ mit Lehrerseiten mehr')
+  const heldPdf = page.locator('.ku-held-aktionen button', { hasText: 'Schülerblätter (PDF)' })
+  if (await heldPdf.count()) {
+    const dl = page.waitForEvent('download', { timeout: 120000 })
+    await heldPdf.click()
+    const name = (await dl).suggestedFilename()
+    pruefe(!name.includes('Lehrerseite'), `„Als Nächstes“: Schülerblätter ohne Lehrerseiten (${name})`)
+  }
+  if (e1.blaetter?.length) {
+    await page.goto(DATEI + '#kurs=' + e1.id)
+    await page.waitForSelector('.ku-einheit-aktionen')
+    const dl = page.waitForEvent('download', { timeout: 120000 })
+    await page.locator('.ku-einheit-aktionen button', { hasText: 'Mit Lehrerseiten' }).click()
+    const name = (await dl).suggestedFilename()
+    pruefe(name.endsWith('_mit-Lehrerseiten.pdf'), `Einheit: „Mit Lehrerseiten“ mit eigenem Dateinamen (${name})`)
+  }
 
   // Kursjahre 2 und 3: Gruppe umstellen → Jahresweg, Joker, erste Einheit
   for (const nr of [2, 3]) {
