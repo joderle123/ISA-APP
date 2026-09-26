@@ -129,8 +129,9 @@ export function createQuestEngine({ content, state, ctx, dsl, emit = () => {}, s
       setQ(id, { step: null, completedDay: dsl.time().day });
       setStatus(id, 'fertig');
       await applyEffects(effects, dsl);
-      // Aufnäher immer (auch ohne explizites patch-Effekt), Teil-Farbwelle aus der Region, wenn die Quest keine eigene setzt
-      if (!(state.get('patches', []) || []).includes(id)) await applyEffects([{ patch: id }], dsl);
+      // Aufnäher je Einheit immer (auch ohne explizites patch-Effekt; Reparatur-/Nebenquests nur mit eigenem {patch}),
+      // Teil-Farbwelle aus der Region, wenn die Quest keine eigene setzt
+      if (isUnitQuest(id) && !(state.get('patches', []) || []).includes(id)) await applyEffects([{ patch: id }], dsl);
       const hasVeil = effects.some((e) => e && e.veil);
       const region = regionOf(def);
       if (!hasVeil && region && region.veil && region.veil.steps && region.veil.steps[id] !== undefined) {

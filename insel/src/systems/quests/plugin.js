@@ -127,7 +127,7 @@ export default {
     });
     events.on('quest:marker', (e) => { if (e && e.target) markers.set(e.target, { color: '#ffd166' }); else markers.clear(); });
     events.on('quest:start', (e) => { const d = engine.get(e.id); if (d && ui.toast && game.started) ui.toast(`${e.kurz ? 'Kurzfassung' : 'Neuer Auftrag'}: ${d.title}`); });
-    events.on('quest:complete', (e) => { const d = engine.get(e.id); if (d && ui.toast && !e.kurz) ui.toast(`Aufnäher: ${d.title}`); if (audio && !e.kurz) audio.play('pickup'); });
+    events.on('quest:complete', (e) => { const d = engine.get(e.id); if (d && ui.toast && !e.kurz) ui.toast(`${engine.isUnitQuest(e.id) ? 'Aufnäher' : 'Geschafft'}: ${d.title}`); if (audio && !e.kurz) audio.play('pickup'); });
     events.on('quest:step', () => { if (ui.journal && ui.journal.isOpen && ui.journal.current === 'auftraege') ui.journal.refresh(); });
     events.on('quest:hint', (e) => { if (e.stage === 'rueckenwind' && ui.toast) ui.toast('Rückenwind. Windstille da vorne.', 2200); });
     // Echos (DESIGN §9): Figuren zitieren beim nächsten Treffen deine Tat – oder nennen ihre Ursache samt Reparatur-Quest

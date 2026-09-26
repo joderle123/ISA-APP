@@ -199,13 +199,15 @@ try {
   check('Reden mit Luc: Echo-Zeile als Blase (Kamera „talk“, ganz im Bild), danach verbraucht', el1.cam === 'talk' && el1.top >= 0 && el1.anchored && !el2.open && el2.pend === 0 && el2.cam === 'follow', JSON.stringify({ el1, el2 }));
   await page.evaluate(() => { window.__talk2 = LUMO.npcs.talk('jolie'); });
   await waitFor(page, () => document.querySelector('.bubble[data-who="jolie"]') && document.querySelector('.bubble-text').textContent.startsWith('Du warst nicht'));
-  const ej = await page.evaluate(() => ({ toast: [...document.querySelectorAll('.toast')].map((t) => t.textContent).join('|') }));
+  await frames(page, 2);
+  await shot(page, '110_echo_jolie');
   await pressAction(page);
-  await page.evaluate(() => window.__talk2);
+  // Nach der Zeile: Hinweis auf die Reparatur-Quest (Toast), danach die Quest erledigen
+  const ej = await page.evaluate(async () => { await window.__talk2; return { toast: [...document.querySelectorAll('.toast')].map((t) => t.textContent).join('|') }; });
   await scen(page, ['site dorfplatz', 'wait 0.5']);
   await sleep(50);
   const rep = await page.evaluate(() => ({ status: LUMO.quests.status('rep-test-jolie'), verstimmt: LUMO.npcs.isVerstimmt('jolie'), mood: LUMO.state.get('moods.jolie'), cleared: (LUMO.state.get('echoes') || []).find((e) => e.id === 'echo-test-jolie'), patches: LUMO.state.get('patches') }));
-  check('Jolies Echo nennt die Ursache und die Reparatur; die Reparatur-Quest hebt „verstimmt“ auf', ej.toast.includes('Wiedergutmachen') && rep.status === 'fertig' && !rep.verstimmt && rep.mood === undefined && rep.cleared && rep.cleared.cleared === true, JSON.stringify({ ej, rep }));
+  check('Jolies Echo nennt die Ursache und die Reparatur; die Reparatur-Quest hebt „verstimmt“ auf, ohne Einheiten-Aufnäher', ej.toast.includes('Wiedergutmachen') && rep.status === 'fertig' && !rep.verstimmt && rep.mood === undefined && rep.cleared && rep.cleared.cleared === true && !rep.patches.includes('rep-test-jolie'), JSON.stringify({ ej, rep }));
 
   // ---- Kurzfassung: Einheit ohne Code → Fähigkeit und Schleier sofort, 3-Minuten-Szene spielbar ----
   await page.evaluate(() => { LUMO.save.newGame(2, { seed: 5, persist: false }); LUMO.debug.freezeTime(true); LUMO.debug.advance(0.2); });
