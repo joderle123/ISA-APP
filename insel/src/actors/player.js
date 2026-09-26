@@ -267,7 +267,7 @@ export function createPlayer({ scene, island, colliders, input, audio, particles
       readIntent();
       ctx.grabCooldown = Math.max(0, ctx.grabCooldown - dt);
       // Halt-Ring lädt außerhalb des Kletterns schnell nach
-      if (stateName !== 'climb') { const h = moves.climb.halt; if (h.current < h.max) { h.regen(dt, 3 * ctx.mod.haltRegen); if (h.current >= h.max - 0.01) { h.fill(); events.emit('halt:change', { current: h.current, max: h.max, ledge: false, sliding: false, climbing: false }); } } }
+      if (stateName !== 'climb' && stateName !== 'air' && stateName !== 'glide') { const h = moves.climb.halt; if (h.current < h.max) { h.regen(dt, 3 * ctx.mod.haltRegen); if (h.current >= h.max - 0.01) { h.fill(); events.emit('halt:change', { current: h.current, max: h.max, ledge: false, sliding: false, climbing: false }); } } }
       // Neustart nach Sturz in Leere/Lava: kurze Blende, dann an die letzte Kante
       if (stateName === 'locked' && respawnReason) {
         respawnT += dt;

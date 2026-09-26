@@ -103,10 +103,13 @@ export default {
     events.on('segel:close', () => kraftrad.setFeathers(null));
     events.on('segel:mode', (e) => kraftrad.setActiveFeather(e.mode));
     game.addUpdate((dt, t, real) => haltring.update(real), { order: 92, always: true });
-    if (ui.registerMenuPage) ui.registerMenuPage({ id: 'foto', label: 'Fotomodus', icon: 'kamera', order: 70, render: (p) => {
+    const fotoPage = { id: 'foto', label: 'Fotomodus', icon: 'kamera', order: 70, render: (p) => {
       p.innerHTML = '<p class="menu-note">Ein Bild von deinem Moment. Bleibt nur auf diesem Gerät.</p><div class="menu-grid"><button class="menu-btn is-primary" type="button" data-foto>Fotomodus starten</button></div>';
       p.querySelector('[data-foto]').addEventListener('click', () => { audio.play('click'); if (ui.overlay && ui.overlay.closeAll) ui.overlay.closeAll(); else if (ui.closeMenu) ui.closeMenu(); setTimeout(() => photomode.enter(), 60); });
-    } });
+    } };
+    if (ui.registerMenuPage) ui.registerMenuPage(fotoPage);
+    // Das UI-Plugin (WP21) tauscht das Menü später gegen das Tagebuch: Seite dort erneut anmelden
+    events.on('plugin:installed', (e) => { if (e.id === 'ui' && ui.registerMenuPage) ui.registerMenuPage(fotoPage); });
 
     // ---- Tragen: Aktion = Absetzen, andere Interaktionen ruhen ----
     events.on('carry:start', () => { if (ui.setAction) ui.setAction('Absetzen'); });
