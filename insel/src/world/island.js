@@ -36,7 +36,7 @@ export const SITES = {
   strandHuette: { x: 128, z: 38, r: 6, zone: 'strand' },
   wasserfall: { x: 91, z: -98, r: 0, zone: 'dschungel' },
   lichtung: { x: 70, z: -70, r: 8, zone: 'dschungel' },
-  klippenGipfel: { x: -116, z: -116, r: 6, zone: 'klippen' },
+  klippenGipfel: { x: -106, z: -106, r: 6, zone: 'klippen' },
   klippenTor: { x: -98, z: -70, r: 5, zone: 'klippen' },
   marktplatz: { x: -118, z: 14, r: 12, zone: 'markt' },
   kraterRand: { x: -12, z: -29, r: 0, zone: 'vulkan' },
@@ -134,7 +134,7 @@ export function createIsland({ cell = 2.5, seed = 7 } = {}) {
     const c = Math.cos(th), s = Math.sin(th);
     let R = 150 + fbm(nCoast, c * 1.6 + 7, s * 1.6 + 7, 4) * 13 + nCoast(c * 6 + 3, s * 6 - 2) * 2.5;
     const dp = angDiff(th, PEN);
-    R += 42 * gauss(dp, 0.105);
+    R += 48 * gauss(dp, 0.1);
     const db = angDiff(th, BAY);
     R -= 20 * gauss(db, 0.15);
     R += 9 * gauss(db - 0.33, 0.09) + 7 * gauss(db + 0.33, 0.09);
@@ -205,7 +205,7 @@ export function createIsland({ cell = 2.5, seed = 7 } = {}) {
       const pm = smoothstep(68, 42, dn);
       if (pm > 0) {
         const u = clamp((dx * -0.7071 + dz * -0.7071) / 42, -1.2, 1.2);
-        const hp = 21 + 11 * u + ridged(nRock, x / 22, z / 22, 3) * 7;
+        const hp = 21 + 11 * u + ridged(nRock, x / 30, z / 30, 3) * 4.5;
         h = smax(h, hp * pm * cf, 3);
       }
       // Felsnadeln im Meer
