@@ -70,9 +70,10 @@ test('Jahreszeit je Modul, Modus-Parameter, Inselwetter', () => {
 test('Bedingungen (Teilmenge der Cond-DSL)', () => {
   const state = createState({ data: defaultState(5) });
   state.set('units.j1-e05', 'fertig'); state.set('units.j1-e06', 'offen'); state.addUnique('abilities', 'blick'); state.addUnique('upgrades', 'blick.tanks');
-  state.set('bonds.jolie', 2); state.set('flags.kodex', 3); state.set('collectibles.ap-gipfel', 2);
+  state.set('bonds.jolie', 2); state.set('flags.kodex', 3); state.set('collectibles.ap-gipfel', 2); state.addUnique('wege', 'spalt');
   const ctx = { state, hour: () => 23, regionFreed: (id) => id === 'hafen' };
   const ok = (c) => evalCond(c, ctx);
+  assert.ok(ok({ weg: 'spalt' }) && !ok({ weg: 'surfbrett' }), 'Wegfähigkeit aus einer Bindung (WP34)');
   assert.ok(ok({ unit: 'j1-e06' }) && ok({ unitDone: 'j1-e05' }) && !ok({ unitDone: 'j1-e06' }) && !ok({ unit: 'j1-e07' }));
   assert.ok(ok({ ability: 'blick' }) && ok({ upgrade: 'blick.tanks' }) && !ok({ upgrade: 'blick.masken' }));
   assert.ok(ok({ bond: ['jolie', 2] }) && !ok({ bond: ['jolie', 3] }));

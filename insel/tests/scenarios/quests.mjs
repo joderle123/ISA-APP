@@ -16,7 +16,7 @@ function check(name, ok, info = '') {
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const scen = (page, steps) => runScenario(page, steps, { log: !!process.env.VERBOSE });
 const info = (page) => page.evaluate(() => LUMO.debug.questInfo());
-const waitFor = (page, fn, ms = 12000) => page.waitForFunction(fn, null, { timeout: ms, polling: 100 });   // Zeit-Polling: rAF ist unter SwiftShader langsam
+const waitFor = (page, fn, ms = 30000) => page.waitForFunction(fn, null, { timeout: ms, polling: 100 });   // Zeit-Polling: rAF ist unter SwiftShader langsam
 const pressAction = (page) => page.evaluate(() => { LUMO.input.press('action'); LUMO.debug.advance(1 / 30); LUMO.input.release('action'); LUMO.debug.advance(0.1); });
 
 const browser = await launch();
@@ -102,7 +102,7 @@ try {
   check('Minispiel-Ersatz „Die Drachenleine“ mit X', mg.title === 'Die Drachenleine' && mg.x, JSON.stringify(mg));
   await shot(page, '105_minispiel');
   await page.click('[data-overlay="minigame"] [data-los]');
-  await waitFor(page, () => !document.querySelector('[data-overlay="minigame"]') && document.querySelector('.bubble[data-who="luc"]'), 8000);
+  await waitFor(page, () => !document.querySelector('[data-overlay="minigame"]') && document.querySelector('.bubble[data-who="luc"]'), 20000);
   const c2a = await page.evaluate(() => ({ text: document.querySelector('.bubble-text').textContent, hitze: LUMO.debug.hitze('luc'), puls: LUMO.state.get('session.puls') }));
   await page.evaluate(() => { window.__lsn = []; LUMO.events.on('dialogue:lauschen', (e) => window.__lsn.push({ ok: e.ok, node: e.node })); });
   await pressAction(page);
@@ -135,7 +135,7 @@ try {
   await pickChoice(page, 1);
   await waitFor(page, () => document.querySelector('[data-overlay="minigame"]'));
   await page.click('[data-overlay="minigame"] [data-los]');
-  await waitFor(page, () => !document.querySelector('[data-overlay="minigame"]') && document.querySelector('.bubble[data-who="luc"]'), 8000);
+  await waitFor(page, () => !document.querySelector('[data-overlay="minigame"]') && document.querySelector('.bubble[data-who="luc"]'), 20000);
   await pressAction(page);
   await waitFor(page, () => document.querySelector('.bubble.is-lauschen') && LUMO.dialogue.current.node === 'b');
   await page.evaluate(() => LUMO.debug.advance(4.6));
