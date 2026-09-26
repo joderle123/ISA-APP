@@ -12,7 +12,13 @@
 //   game.cameraRig       occlusion (1 = frei); nur Dschungelriesen ziehen die Kamera heran (min. 3,6 m, Blick hebt sich)
 //   game.ui              toast, showZone, flash(strength), setVeil(0..1) (Vignette), setAction, setMarker, registerMenuPage
 //   game.debug           teleport, setTimeOfDay, freezeTime, restoreZone, veilZone, setShot, advance(sekunden), stats
+//                        + Debug-Plugin (src/debug/plugin.js): unlockUnit, completeUnit, grantAbility, setPuls, setTime,
+//                        teleportSite, setVeil, setMode, setBond, runScenario(steps), snapshot; Panel nur mit ?debug
+//   game.state / game.save / game.content / game.rng / game.plugins   Kern (src/core/*, Konvention in core/state.js)
 import * as THREE from 'three';
+import { installCore } from './core/index.js';
+import PLUGINS from './_gen/plugins.js';
+import CONTENT from './_gen/content.js';
 import { createEvents } from './engine/events.js';
 import { createLoop } from './engine/loop.js';
 import { createInput } from './engine/input.js';
@@ -288,6 +294,10 @@ export async function createGame({ canvas, root, hudRoot, onProgress = () => {} 
       loop.render = r;
     },
   };
+
+  // ---- Kern (Zustand, Speichern, Inhalte, Zufall) und alle Plugins (src/**/plugin.js, siehe core/state.js) ----
+  await step(0.8, 'Die Insel erinnert sich …');
+  await installCore(game, { plugins: PLUGINS, content: CONTENT, params });
 
   // Shader vorkompilieren (vermeidet Ruckler)
   await step(0.84, 'Farben werden gemischt …');
