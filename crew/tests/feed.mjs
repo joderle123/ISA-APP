@@ -73,14 +73,14 @@ async function playThrough(page, tag, run, solo) {
       case 'fakt-ask': {
         faktAsks++;
         const eb = await eyebrow(page);
-        // X-Karte beim 2. Kommentar: Kommentar wird übersprungen, Spiel läuft weiter
-        if (faktAsks === 2 && !info.xFakt) {
-          if (!/Kommentar 2 von 3/.test(eb)) problems.push(`${tag('x')}: erwartet Kommentar 2, war „${eb}“`);
+        // X-Karte beim 1. Kommentar: Kommentar wird übersprungen, Spiel läuft weiter
+        if (faktAsks === 1 && !info.xFakt) {
+          if (!/Kommentar 1 von 2/.test(eb)) problems.push(`${tag('x')}: erwartet Kommentar 1, war „${eb}“`);
           await page.locator('#btn-x').click();
           const nx = await nextStage(page, seq);
           seq = nx.seq;
           const eb2 = await eyebrow(page);
-          if (nx.stage !== 'fakt-ask' || !/Kommentar 3 von 3/.test(eb2)) problems.push(`${tag('x')}: Nach X-Karte nicht bei Kommentar 3 (${nx.stage}, „${eb2}“)`);
+          if (nx.stage !== 'fakt-ask' || !/Kommentar 2 von 2/.test(eb2)) problems.push(`${tag('x')}: Nach X-Karte nicht bei Kommentar 2 (${nx.stage}, „${eb2}“)`);
           const skipped = await page.locator('.feed-cmt.skipped').count();
           if (!skipped) problems.push(`${tag('x')}: übersprungener Kommentar nicht markiert`);
           await shot(page, tag('xx-nach-x-karte'), 300);
@@ -154,7 +154,7 @@ async function playThrough(page, tag, run, solo) {
           const nx = await nextStage(page, seq);
           seq = nx.seq;
           const after = await eyebrow(page);
-          if (!nx.stage.startsWith('druck') || before === after) problems.push(`${tag('x-kette')}: Nach X-Karte keine neue Runde (${nx.stage}, „${before}“ → „${after}“)`);
+          if (!/^(druck|tun)/.test(nx.stage) || before === after) problems.push(`${tag('x-kette')}: Nach X-Karte keine neue Runde (${nx.stage}, „${before}“ → „${after}“)`);
           await shot(page, tag('xx-nach-x-kette'), 300);
           info.xKette = true;
           await click(page, '#feed-show');
@@ -225,9 +225,10 @@ async function checkContent(page) {
       ids.add(c.id);
       if (c.type === 'fakt') {
         add(w + '.post', c.post && c.post.text);
-        if (!c.items || c.items.length !== 3) out.push(w + ': genau 3 Kommentare nötig');
+        if (!c.items || c.items.length !== 4) out.push(w + ': genau 4 Kommentare nötig (3 + Fake)');
         (c.items || []).forEach((it, i) => { add(w + '.' + i, it.text); add(w + '.' + i + '.why', it.why); if (typeof it.fakt !== 'boolean') out.push(w + '.' + i + ': fakt fehlt'); if (!it.von) out.push(w + '.' + i + ': von fehlt'); });
-        if (!(c.items || []).some((x) => x.fakt) || !(c.items || []).some((x) => !x.fakt)) out.push(w + ': braucht Fakt UND Meinung');
+        if (!(c.items || []).some((x) => x.fakt) || !(c.items || []).some((x) => !x.fakt && !x.fake)) out.push(w + ': braucht Fakt UND Meinung');
+        if ((c.items || []).filter((x) => x.fake).length !== 1) out.push(w + ': braucht genau einen Fake');
       } else if (c.type === 'tun') {
         add(w + '.lage', c.lage); add(w + '.ziel', c.ziel);
         if (!c.zahl || !c.zahl.label || typeof c.zahl.start !== 'number') out.push(w + ': zahl fehlt');
@@ -296,10 +297,11 @@ for (const run of RUNS) {
   await clickText(page, 'Überspringen');
 
   const info = await playThrough(page, tag, run, false);
-  ['fakt', 'tun', 'kette', 'druck'].forEach((t) => { if (!info.types.has(t)) problems.push(`${tag('typen')}: Rundentyp ${t} nicht gespielt`); });
+  // Gruppe: 3 Runden – Echt/Meinung/Fake, Kette, dann Was machst du? oder Gruppendruck
+  ['fakt', 'kette'].forEach((t) => { if (!info.types.has(t)) problems.push(`${tag('typen')}: Rundentyp ${t} nicht gespielt`); });
+  if (!info.types.has('tun') && !info.types.has('druck')) problems.push(`${tag('typen')}: weder tun noch druck gespielt`);
   if (!info.xFakt) problems.push(`${tag('x')}: X-Karte nicht getestet`);
   if (run.xKette && !info.xKette) problems.push(`${tag('x-kette')}: X-Karte in der Kette nicht getestet`);
-  if (!info.endOk) problems.push(`${tag('end')}: Endbildschirm nicht erreicht`);
   if (!info.allWays) problems.push(`${tag('alle-wege')}: „Alle Wege“ nicht getestet`);
 
   // Nachbesprechung + Energie
@@ -309,6 +311,10 @@ for (const run of RUNS) {
   await waitText(page, 'Energie', 5000);
   await page.waitForTimeout(1500);
   await shot(page, tag('91-ergebnis'), 200);
+  // Abschluss: Crew-Punkte und BEE SECURE Helpline (früher eigener End-Bildschirm)
+  const endTxt = await page.locator('#stage').textContent();
+  if (!/BEE SECURE/.test(endTxt) || !/8002 1234/.test(endTxt)) problems.push(`${tag('end')}: BEE SECURE Helpline fehlt`);
+  if (!/Crew-Punkte/.test(endTxt)) problems.push(`${tag('end')}: Crew-Punkte fehlen im Abschluss`);
   const last = await page.evaluate(() => window.CREW.state.history[window.CREW.state.history.length - 1]);
   if (!last || last.mission !== 'feed') problems.push(`${tag('energie')}: kein Verlaufseintrag`);
   else {

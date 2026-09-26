@@ -10,29 +10,32 @@
   const { h, clamp, shuffle } = CREW.util;
   const INK = '#0e0a26';
 
-  /* ---------- Die fünf Stufen (Wortlaut nach den Moderationskarten, jugendgerecht) ---------- */
+  /* ---------- Die fünf Level (im Spiel-Ton; Aufbau nach der Friedenstreppe) ---------- */
   const STUFEN = {
-    1: { kurz: 'Sicht', frage: (p) => p.name + ', was ist aus deiner Sicht passiert?', start: ['Aus meiner Sicht …', 'Ich habe beobachtet, dass …'] },
-    2: { kurz: 'Gefühl', frage: (p) => p.name + ', wie hast du dich dabei gefühlt?', start: ['Ich habe mich … gefühlt.', 'Es ging mir …'] },
-    3: { kurz: 'Bedürfnis', frage: (p) => p.name + ', was brauchst du? Was ist dir wichtig?', start: ['Ich hätte mir gewünscht …', 'Ich brauche …'] },
-    4: { kurz: 'Versöhnen', frage: (a, b) => a.name + ' und ' + b.name + ': Wie könnt ihr euch wieder vertragen?', start: ['Was kann ich tun, damit …?', 'Wäre es okay für dich, wenn …?'] },
-    5: { kurz: 'Abmachen', frage: (a, b) => a.name + ' und ' + b.name + ': Worauf einigt ihr euch für die Zukunft?', start: ['In Zukunft …', 'Können wir uns darauf einigen, dass …?'] },
+    1: { kurz: 'Replay', lang: 'Was ist passiert?', frage: (p) => p.name + ', deine Version?', start: ['Ich hab gesehen, dass …', 'Für mich lief das so: …'] },
+    2: { kurz: 'Innen drin', lang: 'Was geht in dir ab?', frage: (p) => p.name + ', was geht in dir ab?', start: ['Ich war echt …', 'Mich hat das …'] },
+    3: { kurz: 'Was ich brauch', lang: 'Was willst du eigentlich?', frage: (p) => p.name + ', was willst du eigentlich?', start: ['Mir ist wichtig, dass …', 'Ich will …'] },
+    4: { kurz: 'Friedensangebot', lang: 'Wieder klarkommen', frage: (a, b) => a.name + ' und ' + b.name + ': Wie kommt ihr wieder klar?', start: ['Was kann ich tun, damit …?', 'Wäre es okay, wenn …?'] },
+    5: { kurz: 'Deal', lang: 'Der Deal', frage: (a, b) => a.name + ' und ' + b.name + ': Welcher Deal gilt ab jetzt?', start: ['Ab jetzt …', 'Deal: Wenn …, dann …'] },
   };
 
   /* Arten von Antworten: Name + kurze Rückmeldung (nie „falsch“) */
   const KIND = {
-    ich: { label: 'Ich-Botschaft', line: 'Klar gesagt, ohne Angriff. Die Hitze sinkt.', good: true },
-    du: { label: 'Du-Botschaft', line: 'Das klingt wie ein Angriff. Die Hitze steigt.' },
-    weg: { label: 'Ausweichen', line: 'Klingt ruhig. Aber das Problem bleibt.' },
+    ich: { label: 'Klartext', line: 'Klar gesagt, ohne Angriff. Die Hitze sinkt.', good: true },
+    du: { label: 'Angriff', line: 'Das klingt wie ein Angriff. Die Hitze steigt.' },
+    weg: { label: 'Abgetaucht', line: 'Klingt ruhig. Aber das Problem bleibt.' },
+    fake: { label: 'Getarnter Angriff', line: 'Klingt nach Ich. Ist aber ein Vorwurf.' },
     echt: { label: 'Echtes Angebot', line: 'Das kommt an. Die Hitze sinkt.', good: true },
-    halb: { label: '„Sorry, aber …“', line: 'Das „aber“ macht das Sorry kaputt.' },
-    klar: { label: 'Klare Abmachung', line: 'Konkret und fair. Das kann klappen.', good: true },
-    vage: { label: 'Zu vage', line: 'Klingt nett. Hilft beim nächsten Mal aber nicht.' },
+    halb: { label: 'Sorry-aber', line: 'Klingt nach Sorry. Schiebt die Schuld aber rüber.' },
+    klar: { label: 'Deal', line: 'Konkret und fair. Das kann klappen.', good: true },
+    vage: { label: 'Luftnummer', line: 'Klingt nett. Hilft beim nächsten Mal aber nicht.' },
   };
-  const DEFAULT_HEAT = { ich: -12, du: 14, weg: 6, echt: -15, halb: 10, klar: -15, vage: 6 };
+  const DEFAULT_HEAT = { ich: -12, du: 14, weg: 6, fake: 10, echt: -15, halb: 10, klar: -15, vage: 6 };
   const LETTERS = ['A', 'B', 'C', 'D'];
   // Reihenfolge auf Stufe 1–3: abwechselnd, wer zuerst spricht (fair für beide Teams)
   const TURNS = [[1, 'A'], [1, 'B'], [2, 'B'], [2, 'A'], [3, 'A'], [3, 'B']];
+  // In der Gruppe kürzer (Zeit!): drei Züge auf Level 1–3, abwechselnd, dann Level 4 und 5 gemeinsam
+  const TURNS_GROUP = [[1, 'A'], [2, 'B'], [3, 'A']];
 
   /* ---------- Eigene Icons (gleicher Strichstil wie CREW.icon) ---------- */
   const OWN = {
@@ -190,6 +193,8 @@
   }
 
   /* ---------- Friedenstreppe: zwei Wege (A oben, B unten), ab Stufe 4 gemeinsam ---------- */
+  // In der Gruppe spielt pro Level 1–3 nur eine Seite (TURNS_GROUP)
+  const groupLane = (s) => TURNS_GROUP.filter(([st]) => st === s).map(([, sd]) => sd);
   function stairs(G, opts) {
     const big = !!(opts && opts.big);
     const cell = (key, side, s) => {
@@ -200,7 +205,9 @@
     };
     const steps = h('div', { class: 'clash-stairs' + (big ? ' big' : ''), role: 'img', 'aria-label': 'Fünf Level zum Frieden' },
       [1, 2, 3, 4, 5].map((s) => h('div', { class: 'clash-col s' + s },
-        h('div', { class: 'clash-lanes' }, s <= 3 ? [cell(s + 'A', 'a', s), cell(s + 'B', 'b', s)] : cell(String(s), 'j', s)),
+        h('div', { class: 'clash-lanes' }, s <= 3
+          ? (G.solo ? [cell(s + 'A', 'a', s), cell(s + 'B', 'b', s)] : groupLane(s).map((sd) => cell(s + sd, sd.toLowerCase(), s)))
+          : cell(String(s), 'j', s)),
         big ? h('div', { class: 'clash-cap' }, STUFEN[s].kurz) : null)));
     if (!big) return steps;
     return h('div', { class: 'clash-stairs-big' }, steps,
@@ -341,12 +348,12 @@
       h('div', { class: 'card clash-stairs-card' },
         stairs(G, { big: true }),
         h('p', { class: 'lead' }, G.solo
-          ? 'Stufe 1 bis 3: abwechselnd für ' + A.name + ' und ' + B.name + '. Stufe 4 und 5: für beide.'
-          : 'Stufe 1 bis 3: Jedes Team spricht für seine Person. Stufe 4 und 5: alle zusammen.')),
+          ? 'Level 1 bis 3: abwechselnd für ' + A.name + ' und ' + B.name + '. Level 4 und 5: für beide.'
+          : 'Level 1 bis 3: Jedes Team spricht für seine Person. Level 4 und 5: alle zusammen.')),
       G.solo ? null : h('div', { class: 'row' }, ui.paddleHint('abcd', 'Team einigt sich leise')),
     ]);
     wrap.dataset.clash = 'crew';
-    await ask(G, wrap, [{ label: 'Los: Stufe 1', value: 'go', iconRight: 'right' }]);
+    await ask(G, wrap, [{ label: 'Los: Level 1', value: 'go', iconRight: 'right' }]);
   }
 
   // Zwei kleine Figuren für die gemeinsamen Stufen
@@ -387,18 +394,22 @@
       ? h('span', { class: 'pill good' }, G.solo ? 'Beide zusammen' : 'Alle zusammen')
       : h('span', { class: 'pill ' + (cfg.side === 'A' ? 'teamA' : 'teamB') }, G.solo ? 'Du bist ' + speaker.name : ctx.teams[cfg.side].name + ' ist ' + speaker.name);
     const readAll = () => q + ' ' + cfg.list.map((o, i) => LETTERS[i] + ': ' + o.text).join(' ');
+    // Satzanfänge: in der Gruppe hinter „Tipp“ versteckt (wie im Reframe)
+    const starters = h('div', { class: 'clash-starters' }, st.start.map((x) => h('span', null, x)));
+    const tipBtn = G.solo ? null : ui.btn('Tipp', () => { tipBtn.replaceWith(starters); }, { variant: 'ghost', small: true, icon: 'sparkle', id: 'clash-tip' });
     const card = h('div', { class: 'card clash-q ' + sideCls },
       joint ? duo(G) : makeAvatar(speaker, moodFor(G.heat), cfg.side === 'B').el,
       h('div', { class: 'clash-q-main' },
-        h('div', { class: 'row clash-q-top' }, h('span', { class: 'eyebrow' }, 'Stufe ' + cfg.step + ' · ' + st.kurz), tag),
+        h('div', { class: 'row clash-q-top' }, h('span', { class: 'eyebrow' }, 'Level ' + cfg.step + ' · ' + st.lang), tag),
         h('h2', null, q),
-        h('div', { class: 'clash-starters' }, st.start.map((s) => h('span', null, s)))),
+        G.solo ? starters : null),
       ui.speakBtn(readAll, { cls: 'clash-speak' }));
     const foot = G.solo
       ? h('p', { class: 'muted small clash-foot' }, cfg.tried.size ? 'Probier eine andere Antwort.' : 'Was würdest du sagen? Tippe an.')
       : h('div', { class: 'row between clash-foot' },
         ui.paddleHint('abcd', joint ? 'Alle zeigen · Mehrheit zählt' : ctx.teams[cfg.side].name + ' zeigt'),
-        ui.btn('3-2-1', () => ui.threeTwoOne('Zeigt her!'), { variant: 'ghost', small: true, icon: 'timer', id: 'clash-321' }));
+        h('div', { class: 'row' }, tipBtn,
+          ui.btn('3-2-1', () => ui.threeTwoOne('Zeigt her!'), { variant: 'ghost', small: true, icon: 'timer', id: 'clash-321' })));
     const wrap = ctx.screen([hud(G), card, h('div', { class: 'clash-opts' }, btns), foot]);
     wrap.dataset.clash = joint ? 'joint' : 'turn';
     return picked;
@@ -418,7 +429,7 @@
     const cm = comic(G);
     // Tipp aus der Friedenstreppe: „Auch dem anderen gut zuhören und wiederholen.“
     const listenTip = cfg.step === 1 && info.good && !G.solo
-      ? h('p', { class: 'muted small' }, h('b', null, 'Zuhören-Tipp: '), ctx.teams[listenSide].name + ' sagt kurz mit eigenen Worten, was ' + person(G, speakSide).name + ' meint.')
+      ? h('p', { class: 'muted small' }, h('b', null, ctx.teams[listenSide].name + ': '), 'Checkt kurz: Was hat ' + person(G, speakSide).name + ' gemeint?')
       : null;
     const fb = h('div', { class: 'card clash-feedback ' + (info.good ? 'good' : 'hot') },
       h('div', { class: 'row', style: { gap: '10px' } },
@@ -468,7 +479,9 @@
     const { ctx } = G;
     const joint = step >= 4;
     const src = joint ? (step === 4 ? G.scene.versoehnung : G.scene.vereinbarung) : G.scene.steps[step][side];
-    const list = shuffle(src).slice(0, joint ? 4 : 3);
+    // Immer vier Antworten (A–D). Gemeinsam: aus fünf gezogen, mindestens eine gute ist immer dabei.
+    let list = shuffle(src).slice(0, 4);
+    if (!list.some((o) => KIND[o.kind] && KIND[o.kind].good)) list = shuffle([src.find((o) => KIND[o.kind] && KIND[o.kind].good)].concat(list.slice(0, 3)));
     const key = joint ? String(step) : step + side;
     const tried = new Set();
     G.now = key;
@@ -520,7 +533,7 @@
         h('h1', { class: 'outline-text clash-peace' }, 'Frieden!'),
         h('div', { class: 'clash-top' },
           h('div', { class: 'clash-summit' }, makeAvatar(A, 'froh', false).el, h('span', { class: 'clash-hands' }, ownIcon('peace', 64)), makeAvatar(B, 'froh', true).el),
-          h('div', { class: 'clash-plate' }, stepIcon(5, 24), h('span', null, 'Stufe 5 · ganz oben'))),
+          h('div', { class: 'clash-plate' }, stepIcon(5, 24), h('span', null, 'Level 5 · ganz oben'))),
         h('p', { class: 'lead' }, (hot ? 'Der Weg war heiß. Aber ' : '') + A.name + ' und ' + B.name + ' sind oben angekommen.'),
         pact ? h('div', { class: 'card clash-pact' },
           h('span', { class: 'eyebrow' }, 'Der Pakt'),
@@ -551,7 +564,7 @@
       G.scene = other;
     }
     await crewSplit(G);
-    for (const [step, side] of TURNS) await playStep(G, step, side);
+    for (const [step, side] of (G.solo ? TURNS : TURNS_GROUP)) await playStep(G, step, side);
     await playStep(G, 4);
     await playStep(G, 5);
     await finale(G);
@@ -561,7 +574,7 @@
   // Wie cool war der Weg? 0…1 (Überspringen zählt nicht; Zurückspulen ist fast so gut wie direkt)
   function score(G) {
     const played = G.log.filter((x) => !x.skipped);
-    if (!played.length) return 0.5;
+    if (!played.length) return 0;
     const pts = played.reduce((a, x) => a + (KIND[x.kind] && KIND[x.kind].good ? (x.rewound ? 0.85 : 1) : x.kind === 'weg' ? 0.4 : 0.2), 0);
     return pts / played.length;
   }
@@ -571,7 +584,9 @@
     day: 3,
     title: 'Clash',
     tagline: 'Ein Streit, zwei Seiten. Bringt beide nach oben.',
-    minutes: 7,
+    hook: 'Team gegen Streit · 5 Level',
+    color: '#e8532f',
+    minutes: 5,
     themes: ['Konfliktlösung', 'Perspektivenwechsel', 'Gefühle'],
     etep: 'III–IV',
     eldib: [
@@ -581,9 +596,9 @@
       { code: 'K-31', text: 'wählt im Streit beruhigende, versöhnliche Worte' },
       { code: 'SOZ-34', text: 'schlägt bei Streit faire Lösungen vor' },
     ],
-    teacherNote: 'Nach der ISA-Friedenstreppe. Eine Streit-Szene pro Session (Comic mit zwei Fantasiefiguren). Teilt die Crew in zwei Teams: Team A spricht für die linke Person, Team B für die rechte. Stufe 1–3 (Sicht, Gefühl, Bedürfnis): Das Team einigt sich leise auf A, B oder C und zeigt es mit der Antwort-Karte; du tippst die Antwort an. Pro Stufe gibt es drei Antworten in gemischter Reihenfolge: Ich-Botschaft, Vorwurf, Ausweichen. Es gibt kein Falsch: Nach Vorwurf oder Ausweichen könnt ihr zurückspulen. Stufe 4 (Versöhnen) und 5 (Vereinbarung) wählt die ganze Crew, die Mehrheit zählt. Tipp aus dem Material: Das andere Team wiederholt kurz, was es gehört hat. Satzanfänge für echte Streits: „Aus meiner Sicht …“, „Ich habe mich … gefühlt“, „Ich brauche …“, „Wäre es okay für dich, wenn …“, „Können wir uns darauf einigen, dass …“. Passt eine Szene gerade nicht (z. B. echter Streit in der Gruppe): „Andere Szene“ oder X-Karte auf dem ersten Bild.',
+    teacherNote: 'Nach der ISA-Friedenstreppe. Eine Streit-Szene pro Session (Comic mit zwei Fantasiefiguren). Teilt die Crew in zwei Teams: Team A spricht für die linke Person, Team B für die rechte. In der Gruppe drei Züge auf Level 1–3 (Sicht, Gefühl, Bedürfnis; im Spiel „Replay“, „Innen drin“, „Was ich brauch“), abwechselnd Team A, B, A. Das Team einigt sich leise auf A–D und zeigt es mit der Antwort-Karte; du tippst die Antwort an. Pro Level gibt es vier Antworten: Ich-Botschaft („Klartext“), Vorwurf („Angriff“), Ausweichen („Abgetaucht“) und einen getarnten Vorwurf, der wie eine Ich-Botschaft klingt („Getarnter Angriff“). Die Satzanfänge liegen hinter dem Knopf „Tipp“. Es gibt kein Falsch: Nach einer schwachen Antwort könnt ihr zurückspulen. Level 4 (Versöhnen) und 5 (Deal) wählt die ganze Crew, die Mehrheit zählt. Tipp aus dem Material: Das andere Team wiederholt kurz, was es gehört hat. Satzanfänge für echte Streits: „Aus meiner Sicht …“, „Ich habe mich … gefühlt“, „Ich brauche …“, „Wäre es okay für dich, wenn …“, „Können wir uns darauf einigen, dass …“. Passt eine Szene gerade nicht (z. B. echter Streit in der Gruppe): „Andere Szene“ oder X-Karte auf dem ersten Bild.',
     debrief: [
-      'Welche Stufe war heute am schwierigsten? Warum?',
+      'Welches Level war heute am schwierigsten? Warum?',
       'Was hilft dir, erst mal runterzukommen, bevor du redest?',
       'Kennst du so einen Streit? Du musst keine Namen sagen.',
       'Woran merkst du im Körper, dass die Hitze steigt?',
@@ -595,11 +610,14 @@
       const G = await play(ctx);
       if (!G) return { energy: 5, summary: 'Heute gab es keine Szene. Nächstes Mal!' };
       const s = score(G);
+      const playedN = G.log.filter((x) => !x.skipped).length;
+      if (!playedN) return { energy: 3, summary: 'Heute nur reingeschaut.' };
       const energy = clamp(5 + Math.round(5 * s), 5, 10);
+      const cool = G.log.filter((x) => !x.skipped && KIND[x.kind] && KIND[x.kind].good && !x.rewound).length;
       let summary = 'Ihr habt ausprobiert, was passiert. Und seid oben angekommen.';
       if (s >= 0.85) summary = 'Stark! Ihr habt die Hitze richtig cool runtergeholt.';
       else if (s >= 0.6) summary = 'Gut gemacht! Ihr habt den Weg zum Frieden gefunden.';
-      return { energy, summary };
+      return { energy, summary, points: cool, stats: [[cool, 'cool beim ersten Versuch'], [G.rewinds, 'mal zurückgespult']] };
     },
   });
 

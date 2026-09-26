@@ -15,9 +15,9 @@
   const CREW = window.CREW;
   const { h, shuffle, clamp } = CREW.util;
 
-  const BATTLES = 3;
-  const SPEEDS = 2;
-  const THINK = 45;          // Sekunden Bedenkzeit pro Etikett
+  const BATTLES = 2;
+  const SPEEDS = 1;
+  const THINK = 30;          // Sekunden Bedenkzeit pro Etikett
   const SOLO_CARDS = 8;
   const LETTERS = ['A', 'B', 'C', 'D'];
   // Farben wie auf der Antwort-Karte (A blau, B pink, C grün, D gelb)
@@ -88,7 +88,7 @@
   function flipTag(card, o) {
     const opts = o || {};
     const front = h('div', { class: 'reframe-face front' },
-      h('span', { class: 'reframe-face-kicker' }, 'Etikett'),
+      h('span', { class: 'reframe-face-kicker' }, 'Spruch'),
       h('span', { class: 'reframe-face-text' }, quote(card.satz)));
     const back = h('div', { class: 'reframe-face back' },
       h('span', { class: 'reframe-face-kicker' }, 'Stärke'),
@@ -120,14 +120,14 @@
       h('div', { class: 'reframe-base-shape', 'aria-hidden': 'true',
         html: '<svg viewBox="0 0 200 60" preserveAspectRatio="none"><path class="b" d="M16 4 H184 L196 57 H4 Z" vector-effect="non-scaling-stroke"/><path class="d" d="M88 57 V36 A12 12 0 0 1 112 36 V57 Z" vector-effect="non-scaling-stroke"/></svg>' }),
       h('b', { class: 'reframe-base-name' }, G.crewName));
-    return h('div', { class: 'reframe-tower', role: 'img', 'aria-label': 'Stärken-Turm mit ' + n + ' Blöcken' + (n ? ': ' + G.blocks.map((b) => b.word).join(', ') : '') },
+    return h('div', { class: 'reframe-tower', role: 'img', 'aria-label': 'Crew-Tower mit ' + n + ' Blöcken' + (n ? ': ' + G.blocks.map((b) => b.word).join(', ') : '') },
       roof, list, base);
   }
 
   /* Kleiner Turm für die Kopfzeile */
   function miniTower(G, pop) {
     const bars = h('div', { class: 'reframe-mini-bars' }, G.blocks.map((b, i) => h('i', { class: 't' + b.team + (pop && i === G.blocks.length - 1 ? ' fresh' : '') })));
-    return h('div', { class: 'reframe-mini', title: 'Stärken-Turm', 'aria-label': 'Stärken-Turm: ' + G.blocks.length + ' Blöcke' },
+    return h('div', { class: 'reframe-mini', title: 'Crew-Tower', 'aria-label': 'Crew-Tower: ' + G.blocks.length + ' Blöcke' },
       h('div', { class: 'reframe-mini-tower' }, bars, h('i', { class: 'base' })),
       h('span', { class: 'reframe-mini-num' }, h('b', null, String(G.blocks.length)), h('small', null, 'Turm')));
   }
@@ -173,13 +173,12 @@
     const step = (n, title, text) => h('div', { class: 'reframe-step' }, h('span', { class: 'reframe-step-n' }, String(n)), h('div', null, h('b', null, title), h('span', { class: 'muted' }, text)));
     const { acts } = view(ctx, [
       h('div', { class: 'stack enter', style: { gap: '4px' } },
-        h('span', { class: 'eyebrow' }, 'Mission Freitag · Selbstwert'),
-        h('h1', { class: 'outline-text' }, 'Reframe-Battle'),
+        h('span', { class: 'eyebrow' }, 'Freitag · Battle'),
+        h('h1', { class: 'outline-text' }, 'Konter-Battle'),
         h('p', { class: 'lead' }, 'Aus einem blöden Spruch wird eine Stärke.')),
       h('div', { class: 'reframe-split intro enter-2' },
         h('div', { class: 'reframe-demo' },
           flipTag(demoCard, { demo: true }).el,
-          h('p', { class: 'muted small reframe-demo-cap' }, 'Reframe heißt: neu einrahmen. Gleiche Eigenschaft, anderer Blick.'),
           h('div', { class: 'reframe-teams' },
             h('span', { class: 'muted small' }, 'Teilt euch in zwei Teams auf:'),
             h('div', { class: 'reframe-teams-row' },
@@ -187,8 +186,8 @@
               h('span', { class: 'reframe-vs' }, 'vs'),
               teamChip(G, 'B', people(G.size.B))))),
         h('div', { class: 'reframe-steps' },
-          step(1, 'Etikett', 'Jemand bekommt einen Spruch gesagt.'),
-          step(2, 'Umdrehen', 'Euer Team macht in 45 Sekunden eine Stärke daraus.'),
+          step(1, 'Spruch', 'Jemand bekommt einen blöden Spruch gesagt.'),
+          step(2, 'Kontern', 'Euer Team macht in 30 Sekunden eine Stärke daraus.'),
           step(3, 'Überzeugt?', 'Das andere Team stimmt ab. Jedes Ja = 1 Punkt.'))),
     ]);
     await ctx.waitFor(ui.choice(acts, [{ label: 'Battle starten', value: 'go', iconRight: 'play', id: 'rf-start' }]));
@@ -302,7 +301,7 @@
     } else {
       CREW.sound.play('soft');
     }
-    const r4 = await ctx.waitFor(ui.choice(v4.acts, [{ label: 'Profi-Reframes', value: 'go', iconRight: 'right', id: 'rf-profi' }]));
+    const r4 = await ctx.waitFor(ui.choice(v4.acts, [{ label: 'Profi-Konter', value: 'go', iconRight: 'right', id: 'rf-profi' }]));
     if (r4 === SKIP) return;
 
     // e) Zwei Profi-Reframes zur Inspiration
@@ -318,7 +317,7 @@
         h('p', null, h('span', { class: 'reframe-profi-wer' }, card.wer + ', '), h('b', null, card.reframes[k]))))),
       h('div', { class: 'row enter-3' }, h('span', { class: 'muted' }, 'Stärken darin:'), h('span', { class: 'reframe-chip' }, card.staerke), h('span', { class: 'reframe-chip' }, card.staerke2)),
     ]);
-    await ctx.waitFor(ui.choice(v5.acts, [{ label: i < BATTLES - 1 ? 'Nächstes Etikett' : 'Weiter', value: 'go', iconRight: 'right', id: 'rf-next' }]));
+    await ctx.waitFor(ui.choice(v5.acts, [{ label: i < BATTLES - 1 ? 'Nächster Spruch' : 'Weiter', value: 'go', iconRight: 'right', id: 'rf-next' }]));
   }
 
   /* ---------- 2) Speed-Match ---------- */
@@ -329,7 +328,7 @@
       h('div', { class: 'reframe-center enter' },
         h('span', { class: 'reframe-bolt' }, CREW.icon('bolt', 54)),
         h('h1', { class: 'outline-text' }, 'Speed-Match'),
-        h('p', { class: 'lead' }, 'Jetzt andersrum: Ihr seht eine Stärke. Welches Etikett steckt dahinter?'),
+        h('p', { class: 'lead' }, 'Jetzt andersrum: Ihr seht eine Stärke. Welcher Spruch steckt dahinter?'),
         h('p', { class: 'muted' }, 'Schnellstes Team mit der richtigen Karte: +3. Zweiter Versuch: +2.'),
         ui.paddleHint('abcd')),
     ]);
@@ -352,7 +351,7 @@
 
   function questionCard(ctx, card, k, kicker) {
     return h('div', { class: 'reframe-q' },
-      h('div', { class: 'row between', style: { flexWrap: 'nowrap' } }, h('span', { class: 'reframe-face-kicker' }, kicker), ctx.ui.speakBtn('Wer so ist, ' + card.reframes[k] + ' Welches Etikett steckt dahinter?')),
+      h('div', { class: 'row between', style: { flexWrap: 'nowrap' } }, h('span', { class: 'reframe-face-kicker' }, kicker), ctx.ui.speakBtn('Wer so ist, ' + card.reframes[k] + ' Welcher Spruch steckt dahinter?')),
       h('div', { class: 'reframe-q-text' }, '… ' + card.reframes[k]));
   }
 
@@ -367,7 +366,7 @@
     // a) Rennen: Wer hält zuerst die Karte hoch?
     const v1 = view(ctx, [
       hud(G, label),
-      h('div', { class: 'enter' }, questionCard(ctx, card, k, 'Profi-Reframe')),
+      h('div', { class: 'enter' }, questionCard(ctx, card, k, 'Profi-Konter')),
       h('div', { class: 'enter-2' }, optionGrid(options)),
       h('h3', { class: 'reframe-ask enter-3' }, 'Welches Team war zuerst?'),
     ]);
@@ -387,7 +386,7 @@
       const left = LETTERS.filter((L) => !wrong.includes(L));
       const v2 = view(ctx, [
         hud(G, label),
-        questionCard(ctx, card, k, 'Profi-Reframe'),
+        questionCard(ctx, card, k, 'Profi-Konter'),
         optionGrid(options, { wrong }),
         h('h3', { class: 'reframe-ask pop' }, n === 0 ? 'Welche Karte zeigt ' + G.teams[t].name + '?' : 'Nicht ganz! ' + G.teams[t].name + ', eure Chance:'),
       ]);
@@ -410,7 +409,7 @@
     if (winner) award(winner, gain);
     const tag = flipTag(card, { small: true });
     const msg = h('div', { class: 'stack reframe-reveal-msg' },
-      h('h2', null, winner ? 'Richtig! +' + gain + ' für ' + G.teams[winner].name : 'Das Etikett war: ' + card.etikett),
+      h('h2', null, winner ? 'Richtig! +' + gain + ' für ' + G.teams[winner].name : 'Der Spruch war: ' + card.etikett),
       h('p', { class: 'lead' }, h('span', { class: 'muted' }, 'Profi-Satz: '), fullReframe(card, k)));
     const v3 = view(ctx, [
       hud(G, label, { before }),
@@ -453,34 +452,36 @@
     if (n >= 6) headline = n + ' Stärken. Ein Turm. Eine Crew.';
     else if (n >= 1) headline = n === 1 ? 'Eine Stärke im Turm. Gut umgedreht!' : n + ' Stärken im Turm. Gut umgedreht!';
     else headline = 'Der Turm steht. Nächstes Mal wächst er.';
-    const lead = G.score.A === G.score.B ? 'Unentschieden im Battle.' : (G.score.A > G.score.B ? G.teams.A.name : G.teams.B.name) + ' holt das Battle.';
+    const lead = 'Alle Punkte zählen für die ganze Crew.';
     const totalNum = h('b', { class: 'reframe-total-num' }, '0');
     const v = view(ctx, [
       h('div', { class: 'reframe-split final' },
         h('div', { class: 'stack reframe-final-l' },
-          h('span', { class: 'eyebrow enter' }, 'Euer Stärken-Turm'),
+          h('span', { class: 'eyebrow enter' }, 'Euer Crew-Tower'),
           h('h2', { class: 'enter' }, headline),
           h('div', { class: 'reframe-final-scores enter-2' },
             h('div', { class: 'reframe-score tA big' }, h('span', { class: 'reframe-score-name' }, G.teams.A.name), h('b', { class: 'reframe-score-num' }, String(G.score.A))),
             h('div', { class: 'reframe-score tB big' }, h('span', { class: 'reframe-score-name' }, G.teams.B.name), h('b', { class: 'reframe-score-num' }, String(G.score.B)))),
           h('div', { class: 'reframe-total enter-2' }, CREW.icon('bolt', 30), h('span', null, 'Zusammen'), totalNum, h('span', null, 'Punkte')),
           h('p', { class: 'muted enter-3' }, lead + ' Der Turm gehört allen.'),
-          h('p', { class: 'lead enter-3' }, 'Welche Stärke aus dem Turm passt zu dir? Denk sie dir kurz.')),
+          h('p', { class: 'lead enter-3' }, 'Eine Stärke im Turm gehört dir. Welche?')),
         h('div', { class: 'reframe-tower-slot' }, tower(G, { roof: true, roofFresh: true }))),
     ]);
     CREW.sound.play('great');
     if (n >= 3) ui.confetti(120);
     ui.countUp(totalNum, 0, total, 900);
-    await ctx.waitFor(ui.choice(v.acts, [{ label: 'Zur Nachbesprechung', value: 'go', iconRight: 'right', id: 'rf-done' }]));
+    await ctx.waitFor(ui.choice(v.acts, [{ label: 'Weiter', value: 'go', iconRight: 'right', id: 'rf-done' }]));
   }
 
   /* ---------- Mission ---------- */
   CREW.registerMission({
     id: 'reframe',
     day: 5,
-    title: 'Reframe-Battle',
+    title: 'Konter-Battle',
     tagline: 'Aus einem blöden Spruch wird eine Stärke.',
-    minutes: 7,
+    hook: 'Team gegen Team · 2 Battles',
+    color: '#a64dff',
+    minutes: 5,
     themes: ['Selbstwert', 'Stärken', 'Selbst- & Fremdbild'],
     etep: 'III–V',
     eldib: [
@@ -490,14 +491,14 @@
       { code: 'K-28', text: 'macht anderen mit Worten Mut und lobt sie' },
       { code: 'K-32', text: 'würdigt Beiträge anderer und baut auf ihren Ideen auf' },
     ],
-    teacherNote: 'Zwei Teams. Battle (3 Runden): Ein Etikett erscheint („Du bist zu laut.“). 45 Sekunden überlegt jedes Team einen Reframe („Wer laut ist, …“). Beide Teams sagen ihren Satz laut. Dann bewertet jedes Team das ANDERE Team mit der Ja/Nein-Karte, du stimmst immer mit. Tippe die Ja-Stimmen ein: Jedes Ja ist ein Punkt, bei Mehrheit wächst der Stärken-Turm. Danach zeigt das Spiel zwei Profi-Reframes. Speed-Match (2 Runden): Ein Profi-Reframe erscheint, die Teams halten die passende Buchstaben-Karte (A–D) hoch. Du tippst, welches Team zuerst war und welche Karte es zeigt. Bei guter Begründung für eine andere Karte kannst du trotzdem +2 geben. Die Etiketten sind allgemein. Bitte darauf achten, dass niemand sie auf eine Person im Raum bezieht. Eigene Etiketten nennen ist in der Nachbesprechung freiwillig.',
+    teacherNote: 'Im Spiel heißt die Mission „Konter-Battle“, das Etikett „Spruch“ und der Stärken-Turm „Crew-Tower“. Zwei Teams. Battle (2 Runden): Ein Etikett erscheint („Du bist zu laut.“). 30 Sekunden überlegt jedes Team einen Reframe („Wer laut ist, …“). Beide Teams sagen ihren Satz laut. Dann bewertet jedes Team das ANDERE Team mit der Ja/Nein-Karte, du stimmst immer mit. Tippe die Ja-Stimmen ein: Jedes Ja ist ein Punkt, bei Mehrheit wächst der Stärken-Turm. Danach zeigt das Spiel zwei Profi-Reframes. Speed-Match (1 Runde, nur wenn die Zeit reicht): Ein Profi-Reframe erscheint, die Teams halten die passende Buchstaben-Karte (A–D) hoch. Du tippst, welches Team zuerst war und welche Karte es zeigt. Bei guter Begründung für eine andere Karte kannst du trotzdem +2 geben. Die Etiketten sind allgemein. Bitte darauf achten, dass niemand sie auf eine Person im Raum bezieht. Eigene Etiketten nennen ist in der Nachbesprechung freiwillig.',
     debrief: [
-      'Welcher Reframe hat dich heute überrascht?',
-      'Kennst du ein Etikett, das du selbst schon gehört hast? Welche Stärke könnte darin stecken? (Nur wenn du magst.)',
+      'Welcher Konter hat dich heute überrascht?',
+      'Kennst du einen Spruch, den du selbst schon gehört hast? Welche Stärke steckt darin? (Nur wenn du magst.)',
       'Wie fühlt es sich an, wenn dich jemand mit einem einzigen Wort beschreibt?',
       'Welche Stärke aus dem Turm nimmst du heute mit?',
-      'Woher kommen solche Etiketten eigentlich? Wer sagt so etwas?',
-      'Wie kann man Kritik sagen, ohne jemandem ein Etikett zu verpassen?',
+      'Woher kommen solche Sprüche eigentlich? Wer sagt so etwas?',
+      'Wie kann man Kritik sagen, ohne jemandem einen Stempel zu verpassen?',
       'War es leichter, selbst umzudrehen oder das andere Team zu bewerten?',
     ],
 
@@ -521,8 +522,11 @@
       const speedCards = cards.slice(BATTLES);
 
       await intro(ctx, G);
-      for (let i = 0; i < battleCards.length; i++) await battle(ctx, G, battleCards[i], i);
-      if (speedCards.length) {
+      for (let i = 0; i < battleCards.length; i++) {
+        if (!ctx.roundGate(i, battleCards.length)) break;
+        await battle(ctx, G, battleCards[i], i);
+      }
+      if (speedCards.length && ctx.minutesLeft() > 3.5) {
         await speedIntro(ctx, G); // X-Karte hier überspringt nur die Erklärung
         for (let j = 0; j < speedCards.length; j++) await speed(ctx, G, speedCards[j], j, speedCards.length);
       }
@@ -532,11 +536,11 @@
       const ratio = G.maxPoints ? total / G.maxPoints : 0;
       const energy = clamp(4 + Math.round(6 * ratio), 4, 10);
       const n = G.blocks.length;
-      let summary = 'Ihr habt Etiketten umgedreht. Das ist nicht leicht.';
-      if (n >= 6) summary = 'Euer Stärken-Turm ist richtig hoch. Stark umgedreht!';
-      else if (n >= 3) summary = n + ' Stärken im Turm. Gut umgedacht, Crew!';
-      else if (n >= 1) summary = 'Der Stärken-Turm wächst. Gut umgedacht!';
-      return { energy, summary };
+      let summary = 'Ihr habt blöde Sprüche umgedreht. Das ist nicht leicht.';
+      if (n >= 4) summary = 'Euer Crew-Tower ist richtig hoch. Stark gekontert!';
+      else if (n >= 2) summary = n + ' Stärken im Turm. Gut gekontert, Crew!';
+      else if (n >= 1) summary = 'Der Crew-Tower wächst. Gut gekontert!';
+      return { energy, summary, points: total };
     },
   });
 
@@ -552,8 +556,8 @@
     const vi = view(ctx, [
       h('div', { class: 'reframe-center enter' },
         h('span', { class: 'eyebrow' }, 'Solo · Stärken-Training'),
-        h('h1', { class: 'outline-text' }, 'Reframe-Rush'),
-        h('p', { class: 'lead' }, 'Du siehst eine Stärke. Welches Etikett steckt dahinter?'),
+        h('h1', { class: 'outline-text' }, 'Konter-Rush'),
+        h('p', { class: 'lead' }, 'Du siehst eine Stärke. Welcher Spruch steckt dahinter?'),
         h('p', { class: 'muted' }, SOLO_CARDS + ' Karten. Kein Zeitdruck. Jeder Treffer baut deinen Turm.')),
       h('div', { class: 'reframe-solo-demo enter-2' }, flipTag(demoCard, { demo: true, small: true }).el),
     ]);
@@ -575,7 +579,7 @@
       }));
       const feedback = h('div', { class: 'reframe-solo-fb' });
       const hudSlot = h('div', { class: 'reframe-hudslot' }, hud(G, label, { solo: { hits } }));
-      const v = view(ctx, [hudSlot, h('div', { class: 'enter' }, questionCard(ctx, card, k, 'Welches Etikett steckt dahinter?')), h('div', { class: 'enter-2' }, grid), feedback], { top: true });
+      const v = view(ctx, [hudSlot, h('div', { class: 'enter' }, questionCard(ctx, card, k, 'Welcher Spruch steckt dahinter?')), h('div', { class: 'enter-2' }, grid), feedback], { top: true });
       const chosen = await ctx.waitFor(pickP);
       if (chosen === SKIP) continue;
       played++;
@@ -606,10 +610,10 @@
     const v = view(ctx, [
       h('div', { class: 'reframe-split final' },
         h('div', { class: 'stack reframe-final-l' },
-          h('span', { class: 'eyebrow enter' }, 'Dein Stärken-Turm'),
+          h('span', { class: 'eyebrow enter' }, 'Dein Tower'),
           h('h2', { class: 'enter' }, hits + ' von ' + cards.length + ' Treffern'),
           best ? h('p', { class: 'lead enter-2' }, best.isNew && hits > 0 ? 'Neuer Bestwert!' : 'Dein Bestwert: ' + best.best) : null,
-          h('p', { class: 'muted enter-3' }, hits ? 'Jede Stärke im Turm war vorher ein Etikett.' : 'Knifflig heute. Beim nächsten Mal wächst der Turm.')),
+          h('p', { class: 'muted enter-3' }, hits ? 'Jede Stärke im Turm war vorher ein blöder Spruch.' : 'Knifflig heute. Beim nächsten Mal wächst der Turm.')),
         h('div', { class: 'reframe-tower-slot' }, tower(G, { roof: true, roofFresh: true }))),
     ]);
     CREW.sound.play(hits >= cards.length / 2 ? 'great' : 'good');
@@ -620,8 +624,8 @@
 
   CREW.registerSolo({
     id: 'reframe',
-    title: 'Reframe-Rush',
-    desc: 'Du siehst eine Stärke. Welches Etikett steckt dahinter?',
+    title: 'Konter-Rush',
+    desc: 'Du siehst eine Stärke. Welcher Spruch steckt dahinter?',
     icon: 'sparkle',
     async run(ctx) {
       for (;;) {

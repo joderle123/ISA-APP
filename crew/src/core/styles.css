@@ -642,8 +642,8 @@ textarea { min-height: 120px; font-family: ui-monospace, Menlo, monospace; font-
 .sa-crowd { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
 .sa-person { appearance: none; font: inherit; width: 84px; height: 110px; border-radius: 18px; border: var(--bw) solid var(--line); background: var(--panel); color: var(--muted); cursor: pointer; display: grid; place-items: end center; padding-bottom: 8px; transform-origin: 50% 100%; transform: scaleY(.72); opacity: .6; transition: transform 220ms cubic-bezier(.2,1.6,.4,1), opacity 160ms; touch-action: manipulation; }
 .sa-person.up { transform: none; opacity: 1; background: var(--yellow); color: var(--yellow-ink); }
-.sa-line { position: relative; display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; gap: 4px; width: 100%; max-width: 900px; margin: 0 auto; padding-top: 70px; border-bottom: 4px solid var(--line); }
-.sa-col { display: flex; flex-direction: column; align-items: center; gap: 6px; padding-bottom: 6px; }
+.sa-line { position: relative; display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; align-items: end; gap: 4px; width: 100%; max-width: 900px; margin: 0 auto; padding-top: 70px; border-bottom: 4px solid var(--line); }
+.sa-col { display: flex; flex-direction: column; justify-content: flex-end; align-items: center; gap: 6px; padding-bottom: 6px; }
 .sa-col.real .sa-num { background: var(--good); color: var(--good-ink, #062); }
 .sa-chips { display: flex; flex-direction: column-reverse; gap: 4px; min-height: 20px; }
 .sa-chip { width: 26px; height: 16px; border-radius: 6px; background: var(--teamA); border: 2px solid var(--line); animation: pop-in 300ms both; }

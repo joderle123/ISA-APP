@@ -729,7 +729,7 @@
   }
   async function startSolo(g) {
     endRun();
-    run = { token: ++tokenCounter, skipWaiter: null, inMission: false };
+    run = { token: ++tokenCounter, skipWaiter: null, inMission: false, solo: true };
     renderTopbar();
     const ctx = makeCtx(g, 1);
     ctx.solo = true;

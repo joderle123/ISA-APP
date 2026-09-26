@@ -9,7 +9,8 @@ function expect(cond, msg) { if (!cond) problems.push(msg); }
 
 const WORDS = ['Wut', 'Angst', 'Trauer', 'Freude', 'Scham', 'Stolz', 'Ekel', 'Überraschung', 'Ärger', 'Frust', 'Neid', 'Eifersucht',
   'Nervosität', 'Unsicherheit', 'Sorge', 'Schreck', 'Enttäuschung', 'Einsamkeit', 'Erleichterung', 'Vorfreude', 'Dankbarkeit',
-  'Verlegenheit', 'Schuldgefühl', 'Mitgefühl', 'Langeweile'];
+  'Verlegenheit', 'Schuldgefühl', 'Mitgefühl', 'Langeweile',
+  'Traurigkeit', 'Kränkung', 'Aufregung', 'Panik', 'Ungeduld', 'Empörung', 'Zufriedenheit', 'Staunen', 'Abscheu'];
 const NAMES = ['Tiago', 'Lena', 'Aylin', 'Jeff', 'Mia', 'Noah', 'Sara', 'Luca', 'Emir', 'Yara', 'Dylan', 'Inês', 'Lara', 'Milan', 'Jana', 'Rui', 'Amira', 'Kevin', 'Nora', 'Elias'];
 
 const RUNS = [
@@ -122,6 +123,12 @@ for (const [vpName, vp, look, calm] of RUNS) {
     await shot(page, tag('05-atem-gefuehl'), 150);
     await page.locator('#chill-menu').click();
     await waitText(page, 'Such dir etwas aus');
+    // X-Karte in 5-4-3-2-1 beendet die Übung → zurück ins Menü
+    await page.locator('#chill-sinne').click();
+    await page.locator('#sinne-go').click();
+    await page.locator('[data-sense="sehen"]').waitFor({ timeout: 5000 });
+    await page.locator('#btn-x').click();
+    await waitText(page, 'Such dir etwas aus');
 
     // (b) Glitzerglas
     await page.locator('#chill-glas').click();
@@ -175,8 +182,8 @@ for (const [vpName, vp, look, calm] of RUNS) {
     await check('sinne-sehen');
     await page.locator('#sinne-next').click();
     await page.locator('[data-sense="hoeren"]').waitFor();
-    // X-Karte: „Hören“ überspringen → direkt „Spüren“
-    await page.locator('#btn-x').click();
+    await page.waitForTimeout(300);
+    await page.locator('[data-sense="hoeren"] ~ * #sinne-next, #sinne-next').last().click();
     await page.locator('[data-sense="fuehlen"]').waitFor({ timeout: 5000 });
     await page.locator('.solo-dot').nth(0).click();
     await shot(page, tag('11-sinne-spueren'));
@@ -220,6 +227,8 @@ for (const [vpName, vp, look, calm] of RUNS) {
         await page.locator('#btn-x').click();
         continue;
       }
+      let usedClue = false;
+      if (i === 1 && await page.locator('#dec-more').count()) { await page.locator('#dec-more').click(); usedClue = true; }
       let word = sc.answer, lvl = sc.intensity;
       if (i === 6) { word = sc.options.find((w) => w !== sc.answer && !(sc.also || []).includes(w)); lvl = sc.intensity === 3 ? 2 : sc.intensity + 1; }
       await page.locator(`.solo-opt[data-word="${word}"]`).click();
@@ -233,7 +242,8 @@ for (const [vpName, vp, look, calm] of RUNS) {
       await page.locator(`.solo-lv[data-level="${lvl}"]`).click();
       await page.locator('#dec-next').waitFor({ timeout: 5000 });
       played++;
-      expectScore += (word === sc.answer ? 2 : 0) + (lvl === sc.intensity ? 1 : 0);
+      // Ohne Extra-Hinweise: richtig = 3 Punkte (Szene 2: ein Hinweis mehr = 2 Punkte)
+      expectScore += (word === sc.answer ? (usedClue ? 2 : 3) : 0) + (lvl === sc.intensity ? 1 : 0);
       const shown = Number(await page.locator('.solo-score-num').textContent());
       expect(shown === expectScore, `Szene ${i + 1}: Punkte ${shown}, erwartet ${expectScore}`);
       if (i === 0) { await shot(page, tag('23-dec-aufloesung'), 900); await check('dec-aufloesung'); }

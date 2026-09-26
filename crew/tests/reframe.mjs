@@ -118,15 +118,15 @@ for (const [vpName, vp, look, crew] of RUNS) {
 
     /* ---------- Battle 1: Tipp, Abstimmung, ein Team überzeugt ---------- */
     await waitText(page, 'Dreht es um!', 8000);
-    expect((await eyebrow(page)).includes('Battle 1 von 3'), `${vpName}: Battle 1 nicht angezeigt`);
+    expect((await eyebrow(page)).includes('Battle 1 von 2'), `${vpName}: Battle 1 nicht angezeigt`);
     await shot(page, tag('02-etikett'), 700);
     await check('etikett');
-    await page.click('#rf-tip');
-    await waitText(page, 'Stichwort');
     if (vpName === 'phone') {
-      // Timer läuft von selbst ab → Bühne frei
+      // Timer läuft (beschleunigt) von selbst ab → Bühne frei. Bei 30 s Bedenkzeit bleibt keine Zeit für den Tipp.
       await waitText(page, 'Bühne frei!', 8000);
     } else {
+      await page.click('#rf-tip');
+      await waitText(page, 'Stichwort');
       await page.click('#rf-think-done');
       await waitText(page, 'Bühne frei!', 5000);
     }
@@ -155,65 +155,47 @@ for (const [vpName, vp, look, crew] of RUNS) {
     expect(await page.locator('.reframe-profi').count() === 2, `${vpName}: Nicht 2 Profi-Reframes`);
     await page.click('#rf-next');
 
-    /* ---------- Battle 2: X-Karte → Runde wird übersprungen ---------- */
+    /* ---------- Battle 2 ---------- */
     await waitText(page, 'Dreht es um!', 5000);
-    expect((await eyebrow(page)).includes('Battle 2 von 3'), `${vpName}: Battle 2 nicht angezeigt`);
-    await page.locator('#btn-x').click();
-    await page.waitForTimeout(250);
-    expect((await eyebrow(page)).includes('Battle 3 von 3'), `${vpName}: X-Karte hat Battle 2 nicht übersprungen`);
+    expect((await eyebrow(page)).includes('Battle 2 von 2'), `${vpName}: Battle 2 nicht angezeigt`);
+    if (vpName === 'phone') {
+      // X-Karte → Battle wird übersprungen, weiter zum Speed-Match
+      await page.locator('#btn-x').click();
+      await page.waitForTimeout(250);
+    } else {
+      // Beide Teams überzeugen → zwei Blöcke
+      await page.click('#rf-think-done');
+      await page.click('#rf-vote-go');
+      await waitText(page, 'Wie viele Ja?', 8000);
+      await shot(page, tag('04b-abstimmung-b'));
+      await plus(page, 0, 7);
+      await plus(page, 1, 7);
+      await page.click('#rf-vote-done');
+      await page.locator('#rf-profi').waitFor({ timeout: 8000 });
+      await shot(page, tag('05b-ergebnis-doppelt'), 1800);
+      await check('ergebnis-doppelt');
+      const blocks3 = await page.locator('.reframe-tower .reframe-block').count();
+      expect(blocks3 === blocks1 + 2, `${vpName}: Doppel-Block fehlt (${blocks1} → ${blocks3})`);
+      await page.click('#rf-profi');
+      await waitText(page, 'So drehen es Profis um');
+      await page.click('#rf-next');
+    }
 
-    /* ---------- Battle 3: beide Teams überzeugen ---------- */
-    await waitText(page, 'Dreht es um!', 5000);
-    await page.click('#rf-think-done');
-    await page.click('#rf-vote-go');
-    await waitText(page, 'Wie viele Ja?', 8000);
-    await shot(page, tag('04b-abstimmung-b'));
-    await plus(page, 0, 7);
-    await plus(page, 1, 7);
-    await page.click('#rf-vote-done');
-    await page.locator('#rf-profi').waitFor({ timeout: 8000 });
-    await shot(page, tag('05b-ergebnis-doppelt'), 1800);
-    await check('ergebnis-doppelt');
-    const blocks3 = await page.locator('.reframe-tower .reframe-block').count();
-    expect(blocks3 === blocks1 + 2, `${vpName}: Doppel-Block fehlt (${blocks1} → ${blocks3})`);
-    await page.click('#rf-profi');
-    await waitText(page, 'So drehen es Profis um');
-    await page.click('#rf-next');
-
-    /* ---------- Speed-Match ---------- */
+    /* ---------- Speed-Match (1 Runde) ---------- */
     await waitText(page, 'Speed-Match', 5000);
     await shot(page, tag('07-speed-intro'));
     await check('speed-intro');
     await page.click('#rf-speed-go');
-
-    // Runde 1: Team A falsch, Team B richtig (+2)
     await waitText(page, 'Welches Team war zuerst?', 5000);
     await shot(page, tag('08-speed'));
     await check('speed');
     let correct = await page.locator('.reframe-opt[data-ok]').getAttribute('data-letter');
     let wrongL = ['A', 'B', 'C', 'D'].find((l) => l !== correct);
-    await page.click('#rf-first-A');
-    await waitText(page, 'Welche Karte zeigt', 5000);
-    await page.click('#rf-letter-' + wrongL);
-    await waitText(page, 'eure Chance', 5000);
-    await shot(page, tag('09-speed-chance'));
-    await check('speed-chance');
-    await page.click('#rf-letter-' + correct);
-    await page.locator('#rf-speed-next').waitFor({ timeout: 5000 });
-    await shot(page, tag('10-speed-aufloesung'), 1200);
-    await check('speed-aufloesung');
-    await waitText(page, 'Richtig! +2');
-    await page.click('#rf-speed-next');
-
-    // Runde 2: je nach Gerät anders
-    await waitText(page, 'Welches Team war zuerst?', 5000);
     if (vpName === 'phone') {
       // X-Karte mitten im Speed-Match → direkt zum Finale
       await page.locator('#btn-x').click();
     } else if (vpName === 'ipadPortrait') {
       // Team B falsch, Team A passt → Lehrkraft gibt für gute Begründung trotzdem +2
-      correct = await page.locator('.reframe-opt[data-ok]').getAttribute('data-letter');
-      wrongL = ['A', 'B', 'C', 'D'].find((l) => l !== correct);
       await page.click('#rf-first-B');
       await page.click('#rf-letter-' + wrongL);
       await page.click('#rf-pass');
@@ -224,14 +206,23 @@ for (const [vpName, vp, look, crew] of RUNS) {
       await waitText(page, 'Gut begründet');
       await clickText(page, 'Weiter');
     } else {
-      await page.click('#rf-first-none');
+      // Team A falsch, Team B richtig (+2)
+      await page.click('#rf-first-A');
+      await waitText(page, 'Welche Karte zeigt', 5000);
+      await page.click('#rf-letter-' + wrongL);
+      await waitText(page, 'eure Chance', 5000);
+      await shot(page, tag('09-speed-chance'));
+      await check('speed-chance');
+      await page.click('#rf-letter-' + correct);
       await page.locator('#rf-speed-next').waitFor({ timeout: 5000 });
-      expect(await page.locator('[id^="rf-override-"]').count() === 0, `${vpName}: Übersteuerung ohne Versuch angezeigt`);
+      await shot(page, tag('10-speed-aufloesung'), 1200);
+      await check('speed-aufloesung');
+      await waitText(page, 'Richtig! +2');
       await page.click('#rf-speed-next');
     }
 
     /* ---------- Finale ---------- */
-    await waitText(page, 'Euer Stärken-Turm', 6000);
+    await waitText(page, 'Euer Crew-Tower', 6000);
     await shot(page, tag('12-finale'), 1800);
     await check('finale');
     expect(await page.locator('.reframe-roof.on').count() === 1, `${vpName}: Dach fehlt im Finale`);
@@ -275,7 +266,7 @@ for (const [vpName, vp, look, crew] of RUNS) {
       if (i === 0 || i === 1) { await shot(page, tag(i === 0 ? '17-solo-treffer' : '18-solo-daneben'), 1000); await check('solo-feedback-' + i); }
       await clickText(page, i < 7 ? 'Nächste Karte' : 'Fertig');
     }
-    await waitText(page, 'Dein Stärken-Turm', 5000);
+    await waitText(page, 'Dein Tower', 5000);
     await shot(page, tag('19-solo-ende'), 1600);
     await check('solo-ende');
     const endTxt = await page.locator('.reframe-final-l h2').textContent();

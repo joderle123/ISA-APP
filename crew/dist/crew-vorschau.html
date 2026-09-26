@@ -657,8 +657,8 @@ textarea { min-height: 120px; font-family: ui-monospace, Menlo, monospace; font-
 .sa-crowd { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
 .sa-person { appearance: none; font: inherit; width: 84px; height: 110px; border-radius: 18px; border: var(--bw) solid var(--line); background: var(--panel); color: var(--muted); cursor: pointer; display: grid; place-items: end center; padding-bottom: 8px; transform-origin: 50% 100%; transform: scaleY(.72); opacity: .6; transition: transform 220ms cubic-bezier(.2,1.6,.4,1), opacity 160ms; touch-action: manipulation; }
 .sa-person.up { transform: none; opacity: 1; background: var(--yellow); color: var(--yellow-ink); }
-.sa-line { position: relative; display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; gap: 4px; width: 100%; max-width: 900px; margin: 0 auto; padding-top: 70px; border-bottom: 4px solid var(--line); }
-.sa-col { display: flex; flex-direction: column; align-items: center; gap: 6px; padding-bottom: 6px; }
+.sa-line { position: relative; display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; align-items: end; gap: 4px; width: 100%; max-width: 900px; margin: 0 auto; padding-top: 70px; border-bottom: 4px solid var(--line); }
+.sa-col { display: flex; flex-direction: column; justify-content: flex-end; align-items: center; gap: 6px; padding-bottom: 6px; }
 .sa-col.real .sa-num { background: var(--good); color: var(--good-ink, #062); }
 .sa-chips { display: flex; flex-direction: column-reverse; gap: 4px; min-height: 20px; }
 .sa-chip { width: 26px; height: 16px; border-radius: 6px; background: var(--teamA); border: 2px solid var(--line); animation: pop-in 300ms both; }
@@ -1441,11 +1441,13 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
 }
 .feed-stamp.F { background: var(--good); color: var(--good-ink); }
 .feed-stamp.M { background: var(--yellow); color: var(--yellow-ink); }
+.feed-stamp.X { background: var(--teamB); color: #fff; }
 .feed-stamp.big { font-size: 1.5em; padding: 8px 14px; transform: rotate(-4deg); border-width: var(--bw); animation: feed-stamp 420ms cubic-bezier(.2, 1.5, .4, 1) both; }
 .app[data-look="pixel"] .feed-stamp { border-radius: 0; }
 .feed-verdict { display: flex; flex-direction: column; gap: 12px; }
 .feed-verdict.vF { border-color: var(--good); }
 .feed-verdict.vM { border-color: var(--yellow); }
+.feed-verdict.vX { border-color: var(--teamB); }
 .app[data-look="arena"] .feed-verdict.vF, .app[data-look="arena"] .feed-verdict.vM, .app[data-look="pixel"] .feed-verdict.vF, .app[data-look="pixel"] .feed-verdict.vM { border-color: var(--line); }
 .feed-verdict-top { display: flex; align-items: center; gap: 16px; }
 .feed-verdict-top .lead { flex: 1; }
@@ -4278,8 +4280,9 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
    Pro Szene:
      personA / personB: { name, color (Pulli), haut, haar, frisur, extra?, akzent? } – nur Fantasiefiguren
      intro: 3–4 Sprechblasen { who: 'A'|'B', text }, der Streit schaukelt sich hoch
-     steps: Stufe 1 (Sicht), 2 (Gefühl), 3 (Bedürfnis) – je Person 3 Antworten:
-       kind 'ich' = Ich-Botschaft, 'du' = Vorwurf/Angriff, 'weg' = Ausweichen
+     steps: Level 1 (Was ist passiert?), 2 (Was geht in dir ab?), 3 (Was willst du?) – je Person 4 Antworten:
+       kind 'ich' = Ich-Botschaft, 'du' = Vorwurf/Angriff, 'weg' = Ausweichen,
+       'fake' = klingt nach Ich-Botschaft, ist aber ein versteckter Vorwurf
        reaction = was die andere Person darauf sagt, heat = Änderung am Hitze-Meter
      versoehnung (Stufe 4): Angebote { by, text, kind 'echt'|'halb', reaction, heat }
      vereinbarung (Stufe 5): Abmachungen { by, text, kind 'klar'|'vage', reaction, heat }
@@ -4304,11 +4307,13 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
             { kind: 'ich', text: 'Ich hab heute mein Foto in deiner Story gesehen. Ich wusste nichts davon.', reaction: 'Oh. Ich dachte echt, du kennst es schon.', heat: -12 },
             { kind: 'du', text: 'Du willst mich doch nur vor allen blamieren.', reaction: 'Laber nicht. Du machst aus allem ein Drama.', heat: 14 },
             { kind: 'weg', text: 'Egal. Mach halt.', reaction: 'Na also. Dann bleibt es drin.', heat: 6 },
+            { kind: 'fake', text: 'Ich hab halt gesehen, dass du mich mal wieder bloßstellst.', reaction: 'Mal wieder? Was soll das denn heißen?', heat: 10 },
           ],
           B: [
             { kind: 'ich', text: 'Ich hab das Foto auf der Achterbahn gemacht. Ich fand es einfach witzig.', reaction: 'Okay. Für dich war es also nur Spaß.', heat: -12 },
             { kind: 'du', text: 'Du verstehst halt keinen Spaß.', reaction: 'Und du verstehst gar nichts!', heat: 14 },
             { kind: 'weg', text: 'Keine Ahnung, was dein Problem ist.', reaction: 'Echt jetzt? Du hörst mir nicht mal zu.', heat: 6 },
+            { kind: 'fake', text: 'Ich finde, du bist halt empfindlich. Das Foto war witzig.', reaction: 'Ah, jetzt bin ich also das Problem.', heat: 10 },
           ],
         },
         2: {
@@ -4316,11 +4321,13 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
             { kind: 'ich', text: 'Ich hab mich richtig geschämt. Alle haben mich darauf angesprochen.', reaction: 'Oh. Das wollte ich nicht.', heat: -12 },
             { kind: 'du', text: 'Wie soll ich mich fühlen? Du bist einfach nur peinlich.', reaction: 'Ich bin peinlich? Schau mal dein Foto an.', heat: 14 },
             { kind: 'weg', text: 'Gefühlt? Nix. Passt schon.', reaction: 'Okay … dann ist ja alles gut.', heat: 5 },
+            { kind: 'fake', text: 'Ich fühl mich schlecht, weil du immer alles kaputt machst.', reaction: 'Immer? Das ist echt unfair.', heat: 10 },
           ],
           B: [
             { kind: 'ich', text: 'Ich war erst überrascht. Jetzt fühl ich mich ein bisschen mies.', reaction: 'Danke, dass du das sagst.', heat: -12 },
             { kind: 'du', text: 'Genervt. Weil du wegen jedem Foto rumheulst.', reaction: 'Wow. Echt nett von dir.', heat: 14 },
             { kind: 'weg', text: 'Weiß nicht. Ist mir egal.', reaction: 'Merkt man.', heat: 6 },
+            { kind: 'fake', text: 'Ich fühl mich genervt, weil du aus allem ein Drama machst.', reaction: 'Toll. Jetzt bin ich wieder schuld.', heat: 10 },
           ],
         },
         3: {
@@ -4328,11 +4335,13 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
             { kind: 'ich', text: 'Ich will gefragt werden, bevor ein Foto von mir online geht.', reaction: 'Okay. Das ist fair.', heat: -12 },
             { kind: 'du', text: 'Du musst mal dein Hirn einschalten.', reaction: 'Und du mal deine gute Laune.', heat: 14 },
             { kind: 'weg', text: 'Ich brauch gar nichts. Mach, was du willst.', reaction: 'Dann mach ich das auch.', heat: 6 },
+            { kind: 'fake', text: 'Ich will einfach, dass du aufhörst, so rücksichtslos zu sein.', reaction: 'Rücksichtslos? Jetzt reicht es aber.', heat: 10 },
           ],
           B: [
             { kind: 'ich', text: 'Mir ist wichtig, dass wir weiter zusammen Spaß haben können.', reaction: 'Will ich ja auch. Aber nicht so.', heat: -10 },
             { kind: 'du', text: 'Du brauchst mal mehr Humor.', reaction: 'Und du mehr Respekt.', heat: 14 },
             { kind: 'weg', text: 'Ich brauch nix. Können wir das lassen?', reaction: 'Nein. Mir ist das wichtig.', heat: 5 },
+            { kind: 'fake', text: 'Mir ist wichtig, dass du endlich mal lockerer wirst.', reaction: 'Und mir ist wichtig, dass du mich respektierst.', heat: 10 },
           ],
         },
       },
@@ -4341,12 +4350,14 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
         { by: 'A', kind: 'echt', text: 'Sorry, dass ich dich vor allen angeschrien hab.', reaction: 'Passt. Ich hab ja auch Mist gebaut.', heat: -15 },
         { by: 'B', kind: 'echt', text: 'Wir machen ein neues Foto. Du suchst aus, welches.', reaction: 'Haha, okay. Aber ich hab das letzte Wort.', heat: -15 },
         { by: 'B', kind: 'halb', text: 'Sorry. Aber du übertreibst trotzdem.', reaction: 'Das ist keine echte Entschuldigung.', heat: 10 },
+        { by: 'B', kind: 'halb', text: 'Tut mir leid, dass du das so schlimm findest.', reaction: 'Das ist kein Sorry. Das ist ein Vorwurf.', heat: 10 },
       ],
       vereinbarung: [
         { by: 'A', kind: 'klar', text: 'Fotos von uns posten wir nur, wenn wir vorher fragen.', reaction: 'Deal. Gilt auch für dich.', heat: -15 },
         { by: 'B', kind: 'klar', text: 'Wenn uns was stört, schreiben wir es uns direkt.', reaction: 'Ja. Und nicht in die Kommentare.', heat: -15 },
         { by: 'A', kind: 'klar', text: 'Wenn wir sauer sind, erst zehn Minuten Pause. Dann reden.', reaction: 'Klingt fair.', heat: -15 },
         { by: 'B', kind: 'vage', text: 'Wir reden einfach nie wieder darüber.', reaction: 'Und beim nächsten Foto knallt es wieder?', heat: 8 },
+        { by: 'A', kind: 'vage', text: 'Wir passen einfach besser auf. Irgendwie.', reaction: 'Irgendwie? Das klappt nie.', heat: 8 },
       ],
     },
 
@@ -4367,11 +4378,13 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
             { kind: 'ich', text: 'Ich hab dir mein Kabel vor zwei Wochen geliehen. Ich hab es noch nicht zurück.', reaction: 'Stimmt. Ich hab’s echt vergessen.', heat: -12 },
             { kind: 'du', text: 'Du klaust einfach Sachen und tust dann unschuldig.', reaction: 'Klauen?! Spinnst du? Ich hab’s geliehen!', heat: 16 },
             { kind: 'weg', text: 'Vergiss es. Ist ja nur ein Kabel.', reaction: 'Okay, dann behalt ich es noch.', heat: 6 },
+            { kind: 'fake', text: 'Ich hab gemerkt, dass man dir echt nichts leihen kann.', reaction: 'Wow. Einmal vergessen und ich bin unzuverlässig?', heat: 10 },
           ],
           B: [
             { kind: 'ich', text: 'Ich hab das Kabel mitgenommen. Dann lag es zu Hause, und ich hab’s vergessen.', reaction: 'Okay. Also keine Absicht.', heat: -12 },
             { kind: 'du', text: 'Du machst so einen Stress wegen einem Kabel.', reaction: 'Weil es MEIN Kabel ist!', heat: 14 },
             { kind: 'weg', text: 'Weiß nicht, wo das ist.', reaction: 'Das ist genau das Problem.', heat: 6 },
+            { kind: 'fake', text: 'Ich finde, du machst wegen einem Kabel echt Stress.', reaction: 'Weil es mein Kabel ist!', heat: 10 },
           ],
         },
         2: {
@@ -4379,11 +4392,13 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
             { kind: 'ich', text: 'Ich war genervt. Ich hatte das Gefühl, dir ist das egal.', reaction: 'Das ist mir nicht egal. Ehrlich.', heat: -12 },
             { kind: 'du', text: 'Wie ein Idiot. Wegen dir.', reaction: 'Ich hab dich nicht zum Idioten gemacht!', heat: 14 },
             { kind: 'weg', text: 'Passt schon. Bin’s gewohnt.', reaction: 'Okay … wenn du meinst.', heat: 5 },
+            { kind: 'fake', text: 'Ich fühl mich verarscht, weil du so egoistisch bist.', reaction: 'Egoistisch? Du kennst mich doch gar nicht.', heat: 10 },
           ],
           B: [
             { kind: 'ich', text: 'Es war mir peinlich, dass ich es vergessen hab. Deshalb hab ich blöd reagiert.', reaction: 'Ah. Das erklärt einiges.', heat: -14 },
             { kind: 'du', text: 'Du nervst mich einfach nur.', reaction: 'Und du mich erst!', heat: 14 },
             { kind: 'weg', text: 'Gefühlt? Keine Ahnung.', reaction: 'Toll. Danke für nichts.', heat: 6 },
+            { kind: 'fake', text: 'Ich fühl mich angegriffen, weil du immer so rumschreist.', reaction: 'Ich schrei nicht immer! Das ist gemein.', heat: 10 },
           ],
         },
         3: {
@@ -4391,11 +4406,13 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
             { kind: 'ich', text: 'Ich brauche mein Kabel morgen. Und ich will mich auf dich verlassen können.', reaction: 'Kriegst du. Versprochen.', heat: -12 },
             { kind: 'du', text: 'Du musst endlich lernen, Sachen zurückzugeben.', reaction: 'Und du, normal zu reden.', heat: 14 },
             { kind: 'weg', text: 'Ich brauch nix. Ich leih dir halt nie wieder was.', reaction: 'Wow. Okay.', heat: 6 },
+            { kind: 'fake', text: 'Ich will, dass du einmal im Leben zuverlässig bist.', reaction: 'Einmal im Leben? Jetzt übertreibst du.', heat: 10 },
           ],
           B: [
             { kind: 'ich', text: 'Mir ist wichtig, dass du mir sagst, wenn dich was stört. Ohne gleich zu schreien.', reaction: 'Okay. Das kann ich machen.', heat: -12 },
             { kind: 'du', text: 'Du musst mal chillen.', reaction: 'Ich chill, wenn ich mein Kabel hab!', heat: 14 },
             { kind: 'weg', text: 'Ich brauch nichts. Lass mich einfach.', reaction: 'Und mein Kabel?', heat: 6 },
+            { kind: 'fake', text: 'Ich brauche, dass du nicht so ein Theater machst.', reaction: 'Theater? Du hast mein Kabel!', heat: 10 },
           ],
         },
       },
@@ -4404,12 +4421,14 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
         { by: 'B', kind: 'echt', text: 'Heute kannst du mein Ladegerät benutzen. Bis deins wieder da ist.', reaction: 'Oh, nice. Danke.', heat: -15 },
         { by: 'A', kind: 'echt', text: 'Sorry, dass ich so laut geworden bin.', reaction: 'Schon okay. Ich hätte auch dran denken müssen.', heat: -15 },
         { by: 'B', kind: 'halb', text: 'Sorry, aber du hättest mich auch erinnern können.', reaction: 'Hab ich! Fünfmal!', heat: 10 },
+        { by: 'B', kind: 'halb', text: 'Tut mir leid, dass du wegen so was sauer wirst.', reaction: 'Das klingt, als wär ich das Problem.', heat: 10 },
       ],
       vereinbarung: [
         { by: 'A', kind: 'klar', text: 'Wer was leiht, bringt es spätestens nach drei Tagen zurück.', reaction: 'Deal.', heat: -15 },
         { by: 'B', kind: 'klar', text: 'Ich stell mir eine Erinnerung im Handy.', reaction: 'Gute Idee. Dann vergisst du’s nicht.', heat: -15 },
         { by: 'A', kind: 'klar', text: 'Wenn was fehlt, fragen wir erst ruhig nach.', reaction: 'Ja, das ist fair.', heat: -15 },
         { by: 'B', kind: 'vage', text: 'Ab jetzt leiht keiner mehr dem anderen was.', reaction: 'Dann gibt’s keinen Streit. Aber auch keine Hilfe.', heat: 6 },
+        { by: 'A', kind: 'vage', text: 'Wir denken einfach beide mehr dran.', reaction: 'Und wer erinnert wen? Das hält nicht.', heat: 8 },
       ],
     },
 
@@ -4430,11 +4449,13 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
             { kind: 'ich', text: 'Ich sitz jeden Morgen hinten links. Heute war der Platz besetzt.', reaction: 'Ah. Das wusste ich nicht.', heat: -12 },
             { kind: 'du', text: 'Du setzt dich extra da hin, um mich zu nerven.', reaction: 'Ich hab Besseres zu tun, als an dich zu denken.', heat: 14 },
             { kind: 'weg', text: 'Egal. Ich steh halt.', reaction: 'Okay. Dein Ding.', heat: 5 },
+            { kind: 'fake', text: 'Ich hab gesehen, dass du mir absichtlich den Platz klaust.', reaction: 'Absichtlich? Ich wusste das nicht mal!', heat: 10 },
           ],
           B: [
             { kind: 'ich', text: 'Ich bin eingestiegen, und der Platz war frei. Also hab ich mich hingesetzt.', reaction: 'Okay. Für dich war er frei.', heat: -12 },
             { kind: 'du', text: 'Du denkst, dir gehört der ganze Bus.', reaction: 'Und du denkst, du kannst dir alles nehmen.', heat: 14 },
             { kind: 'weg', text: 'Kein Plan, wovon du redest.', reaction: 'Tu nicht so.', heat: 6 },
+            { kind: 'fake', text: 'Ich finde, du glaubst, dir gehört der ganze Bus.', reaction: 'Jetzt wirst du aber frech.', heat: 10 },
           ],
         },
         2: {
@@ -4442,11 +4463,13 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
             { kind: 'ich', text: 'Ich war eh schon müde. Ohne meinen Platz war ich echt gestresst.', reaction: 'Hm. Morgens gestresst, das kenn ich.', heat: -12 },
             { kind: 'du', text: 'Wie ich mich fühl? Du hast mir den Morgen versaut.', reaction: 'Den hast du dir selbst versaut.', heat: 14 },
             { kind: 'weg', text: 'Nix. Ist mir egal.', reaction: 'Sieht aber nicht so aus.', heat: 5 },
+            { kind: 'fake', text: 'Ich fühl mich gestresst, weil du so rücksichtslos bist.', reaction: 'Rücksichtslos? Ich hab mich nur hingesetzt.', heat: 10 },
           ],
           B: [
             { kind: 'ich', text: 'Ich hab mich erschrocken, als du so laut wurdest. Vor allen.', reaction: 'Oh. Das war nicht cool von mir.', heat: -12 },
             { kind: 'du', text: 'Ich bin genervt von Leuten wie dir.', reaction: 'Leute wie ich? Wow.', heat: 14 },
             { kind: 'weg', text: 'Weiß nicht. Mir doch egal.', reaction: 'Mir aber nicht.', heat: 6 },
+            { kind: 'fake', text: 'Ich fühl mich mies, weil du dich wie ein Chef aufführst.', reaction: 'Wie ein Chef? Echt jetzt?', heat: 10 },
           ],
         },
         3: {
@@ -4454,11 +4477,13 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
             { kind: 'ich', text: 'Hinten ist es ruhig. Ich brauch morgens einen ruhigen Platz.', reaction: 'Das versteh ich. Brauch ich auch.', heat: -12 },
             { kind: 'du', text: 'Du musst einfach mal Respekt lernen.', reaction: 'Respekt? Du hast mich angeschrien.', heat: 14 },
             { kind: 'weg', text: 'Ich brauch nix. Setz dich doch, wohin du willst.', reaction: 'Mach ich auch.', heat: 6 },
+            { kind: 'fake', text: 'Ich brauch einen Platz ohne Leute wie dich.', reaction: 'Leute wie mich? Was soll das heißen?', heat: 10 },
           ],
           B: [
             { kind: 'ich', text: 'Mir ist wichtig, dass mich niemand anschreit. Auch nicht wegen einem Platz.', reaction: 'Ja. Das war zu viel von mir.', heat: -12 },
             { kind: 'du', text: 'Du musst lernen, dass du hier nicht der Chef bist.', reaction: 'Und du musst lernen zu fragen.', heat: 14 },
             { kind: 'weg', text: 'Keine Ahnung. Lass mich in Ruhe.', reaction: 'Gern. Aber der Platz …', heat: 5 },
+            { kind: 'fake', text: 'Mir ist wichtig, dass du mal von deinem Thron runterkommst.', reaction: 'Mein Thron? Du machst dich lustig.', heat: 10 },
           ],
         },
       },
@@ -4467,12 +4492,14 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
         { by: 'B', kind: 'echt', text: 'Ich wusste nicht, dass du da immer sitzt. Morgen lass ich ihn frei.', reaction: 'Danke. Voll nett.', heat: -15 },
         { by: 'A', kind: 'echt', text: 'Wir können uns die Bank teilen. Einer Fenster, einer Gang.', reaction: 'Deal. Ich nehm Fenster.', heat: -15 },
         { by: 'A', kind: 'halb', text: 'Sorry, aber das ist halt mein Platz.', reaction: 'Das ist kein Sorry. Das ist ein Befehl.', heat: 10 },
+        { by: 'A', kind: 'halb', text: 'Tut mir leid, dass du das nicht wusstest.', reaction: 'Klingt so, als wär ich dumm.', heat: 10 },
       ],
       vereinbarung: [
         { by: 'A', kind: 'klar', text: 'Wenn einer was will, fragen wir normal. Ohne Schreien.', reaction: 'Abgemacht.', heat: -15 },
         { by: 'B', kind: 'klar', text: 'Montag, Mittwoch, Freitag sitzt du am Fenster. Die anderen Tage ich.', reaction: 'Klingt fair. Ich schreib’s mir auf.', heat: -15 },
         { by: 'A', kind: 'klar', text: 'Wenn der Platz besetzt ist, setz ich mich einfach daneben.', reaction: 'Cool. Dann haben wir beide Ruhe.', heat: -15 },
         { by: 'B', kind: 'vage', text: 'Wir gehen uns im Bus einfach aus dem Weg.', reaction: 'Im vollen Bus? Viel Glück.', heat: 6 },
+        { by: 'B', kind: 'vage', text: 'Wir sind einfach alle ein bisschen netter.', reaction: 'Und morgen früh? Wer sitzt wo?', heat: 8 },
       ],
     },
 
@@ -4493,11 +4520,13 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
             { kind: 'ich', text: 'Der Controller ist runtergefallen. Seitdem klemmt der A-Knopf.', reaction: 'Oh. Das hab ich nicht gemerkt.', heat: -12 },
             { kind: 'du', text: 'Du machst immer alles kaputt.', reaction: 'Immer? Das war ein Mal!', heat: 14 },
             { kind: 'weg', text: 'Egal. Dann zocken wir halt nicht mehr.', reaction: 'Okay … dann geh ich eben.', heat: 6 },
+            { kind: 'fake', text: 'Ich hab gesehen, wie tollpatschig du mit fremden Sachen bist.', reaction: 'Tollpatschig? Das war ein Unfall!', heat: 10 },
           ],
           B: [
             { kind: 'ich', text: 'Ich bin nach dem Tor aufgesprungen. Da ist er mir aus der Hand gefallen.', reaction: 'Okay. Also war es keine Absicht.', heat: -12 },
             { kind: 'du', text: 'Du tust so, als hätte ich das extra gemacht.', reaction: 'Vielleicht hast du das ja!', heat: 14 },
             { kind: 'weg', text: 'Keine Ahnung. Ich hab nix gesehen.', reaction: 'Du hattest ihn doch in der Hand!', heat: 8 },
+            { kind: 'fake', text: 'Ich finde, du tust so, als hätte ich ihn geworfen.', reaction: 'Weil es genau so aussah!', heat: 10 },
           ],
         },
         2: {
@@ -4505,11 +4534,13 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
             { kind: 'ich', text: 'Ich war sauer. Und traurig, weil ich lange für den gespart hab.', reaction: 'Oh. Das wusste ich nicht.', heat: -12 },
             { kind: 'du', text: 'Wie ich mich fühl? Du bist echt ein Loser.', reaction: 'Und du bist ein Geizhals.', heat: 16 },
             { kind: 'weg', text: 'Nix. Ist ja nur ein Controller.', reaction: 'Sicher? Du guckst aber nicht so.', heat: 5 },
+            { kind: 'fake', text: 'Ich fühl mich sauer, weil man dir nichts anvertrauen kann.', reaction: 'Nichts? Jetzt wird es gemein.', heat: 10 },
           ],
           B: [
             { kind: 'ich', text: 'Ich hab mich schlecht gefühlt. Und ich hatte Angst, dass du mich rauswirfst.', reaction: 'Hm. Rauswerfen wollte ich dich nicht.', heat: -12 },
             { kind: 'du', text: 'Genervt, weil du so ein Drama machst.', reaction: 'Drama? Das ist mein Controller!', heat: 14 },
             { kind: 'weg', text: 'Gefühlt? Nichts Besonderes.', reaction: 'Echt jetzt?', heat: 6 },
+            { kind: 'fake', text: 'Ich fühl mich mies, weil du sofort komplett ausrastest.', reaction: 'Ich raste aus? Mein Controller ist kaputt!', heat: 10 },
           ],
         },
         3: {
@@ -4517,11 +4548,13 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
             { kind: 'ich', text: 'Mir ist wichtig, dass wir eine Lösung finden. Und dass du nicht einfach abhaust.', reaction: 'Ich hau nicht ab. Versprochen.', heat: -12 },
             { kind: 'du', text: 'Du musst den bezahlen. Punkt.', reaction: 'Ich zahl gar nix, wenn du so redest.', heat: 14 },
             { kind: 'weg', text: 'Ich brauch nix von dir.', reaction: 'Dann halt nicht.', heat: 6 },
+            { kind: 'fake', text: 'Ich will, dass du endlich mal Verantwortung übernimmst.', reaction: 'Endlich mal? Das ist unfair.', heat: 10 },
           ],
           B: [
             { kind: 'ich', text: 'Ich brauche, dass du mir glaubst. Es war echt keine Absicht.', reaction: 'Okay. Ich glaub dir.', heat: -12 },
             { kind: 'du', text: 'Du musst mal lernen, locker zu bleiben.', reaction: 'Und du, besser aufzupassen.', heat: 14 },
             { kind: 'weg', text: 'Ich brauch gar nix. Ich geh jetzt.', reaction: 'Toll. Einfach abhauen.', heat: 6 },
+            { kind: 'fake', text: 'Ich brauche, dass du nicht so geizig tust wegen einem Knopf.', reaction: 'Geizig? Ich hab lange dafür gespart!', heat: 10 },
           ],
         },
       },
@@ -4530,12 +4563,14 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
         { by: 'B', kind: 'echt', text: 'Sorry. Wenn du einen neuen brauchst, geb ich was dazu.', reaction: 'Danke. Das ist fair.', heat: -15 },
         { by: 'A', kind: 'echt', text: 'Sorry, dass ich so rumgeschrien hab. Ich weiß, es war keine Absicht.', reaction: 'Danke. Mir tut’s auch echt leid.', heat: -15 },
         { by: 'B', kind: 'halb', text: 'Sorry, aber der war eh schon alt.', reaction: 'Das macht es nicht besser.', heat: 10 },
+        { by: 'B', kind: 'halb', text: 'Tut mir leid, dass dir das so wichtig ist.', reaction: 'Das ist kein Sorry.', heat: 10 },
       ],
       vereinbarung: [
         { by: 'A', kind: 'klar', text: 'Beim Jubeln legen wir die Controller vorher weg.', reaction: 'Haha, okay. Deal.', heat: -15 },
         { by: 'B', kind: 'klar', text: 'Wenn was kaputtgeht, sagen wir es sofort. Und suchen zusammen eine Lösung.', reaction: 'Abgemacht.', heat: -15 },
         { by: 'A', kind: 'klar', text: 'Am Samstag schauen wir zusammen ein Reparatur-Video.', reaction: 'Bin dabei.', heat: -15 },
         { by: 'B', kind: 'vage', text: 'Wir zocken einfach nie mehr zusammen.', reaction: 'Dann haben wir beide verloren.', heat: 6 },
+        { by: 'A', kind: 'vage', text: 'Wir sind einfach vorsichtiger. Beide.', reaction: 'Und wer zahlt den Knopf?', heat: 8 },
       ],
     },
 
@@ -4556,11 +4591,13 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
             { kind: 'ich', text: 'Ich bin früher aus dem Atelier gegangen. Danach hatte ich Ärger mit dem Educateur.', reaction: 'Okay. Das ist blöd gelaufen.', heat: -12 },
             { kind: 'du', text: 'Du bist eine Petze. Das weiß jeder.', reaction: 'Und du siehst Gespenster!', heat: 16 },
             { kind: 'weg', text: 'Egal. Mir glaubt eh keiner.', reaction: 'Hä? Was soll das jetzt?', heat: 6 },
+            { kind: 'fake', text: 'Ich hab halt gemerkt, dass du gern petzt.', reaction: 'Gern petzen? Du kennst mich null.', heat: 10 },
           ],
           B: [
             { kind: 'ich', text: 'Der Educateur hat gefragt, wo du bist. Ich hab nur gesagt, dass du weg bist.', reaction: 'Ah. Du wurdest also gefragt.', heat: -12 },
             { kind: 'du', text: 'Du suchst immer einen Schuldigen. Nur nie bei dir.', reaction: 'Wow. Danke auch.', heat: 14 },
             { kind: 'weg', text: 'Kein Plan. Frag doch wen anders.', reaction: 'Ich frag aber dich.', heat: 6 },
+            { kind: 'fake', text: 'Ich finde, du suchst nur einen Schuldigen.', reaction: 'Weil ich Ärger hatte!', heat: 10 },
           ],
         },
         2: {
@@ -4568,11 +4605,13 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
             { kind: 'ich', text: 'Ich hab mich verraten gefühlt. Und ich war echt wütend.', reaction: 'Verstehe. Das ist ein mieses Gefühl.', heat: -12 },
             { kind: 'du', text: 'Wie soll ich mich fühlen? Du hast mich reingeritten.', reaction: 'Du hast dich selbst reingeritten!', heat: 14 },
             { kind: 'weg', text: 'Gefühlt? Nix. Ist halt so.', reaction: 'Na dann.', heat: 5 },
+            { kind: 'fake', text: 'Ich fühl mich verraten, weil du eine Petze bist.', reaction: 'Eine Petze? Jetzt reicht es.', heat: 10 },
           ],
           B: [
             { kind: 'ich', text: 'Ich war geschockt, dass du mir so was zutraust. Das hat wehgetan.', reaction: 'Oh. Das wollte ich nicht.', heat: -12 },
             { kind: 'du', text: 'Genervt. Weil du einfach Leute beschuldigst.', reaction: 'Weil du es warst!', heat: 14 },
             { kind: 'weg', text: 'Weiß nicht. Juckt mich nicht.', reaction: 'Merkt man.', heat: 6 },
+            { kind: 'fake', text: 'Ich fühl mich schlecht, weil du immer anderen die Schuld gibst.', reaction: 'Immer? Das stimmt nicht.', heat: 10 },
           ],
         },
         3: {
@@ -4580,11 +4619,13 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
             { kind: 'ich', text: 'Ich will dir vertrauen können. Das ist mir wichtig.', reaction: 'Kannst du. Ich sag dir ab jetzt Bescheid.', heat: -12 },
             { kind: 'du', text: 'Du musst lernen, deinen Mund zu halten.', reaction: 'Und du, nicht abzuhauen.', heat: 14 },
             { kind: 'weg', text: 'Ich brauch niemanden.', reaction: 'Okay. Wie du willst.', heat: 6 },
+            { kind: 'fake', text: 'Ich will Freunde, die nicht hinter meinem Rücken reden.', reaction: 'Und ich will nicht beschuldigt werden.', heat: 10 },
           ],
           B: [
             { kind: 'ich', text: 'Mir ist wichtig, dass du mich erst fragst, bevor du mich beschuldigst.', reaction: 'Okay. Das ist fair.', heat: -12 },
             { kind: 'du', text: 'Du musst mal aufhören, allen die Schuld zu geben.', reaction: 'Und du mal ehrlich sein.', heat: 14 },
             { kind: 'weg', text: 'Ich brauch gar nichts. Lass mich.', reaction: 'Gern.', heat: 6 },
+            { kind: 'fake', text: 'Mir ist wichtig, dass du mal über dich selbst nachdenkst.', reaction: 'Wow. Jetzt bin ich wieder schuld.', heat: 10 },
           ],
         },
       },
@@ -4593,12 +4634,14 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
         { by: 'B', kind: 'echt', text: 'Sorry, dass ich so blöd reagiert hab. Nächstes Mal sag ich dir Bescheid.', reaction: 'Okay. Das wär gut.', heat: -15 },
         { by: 'B', kind: 'echt', text: 'Ich kann mit dir zum Educateur gehen. Dann klären wir das zusammen.', reaction: 'Echt? Danke.', heat: -15 },
         { by: 'A', kind: 'halb', text: 'Sorry, aber irgendwer muss es ja gewesen sein.', reaction: 'Also glaubst du mir immer noch nicht.', heat: 10 },
+        { by: 'A', kind: 'halb', text: 'Tut mir leid, dass du dich angegriffen fühlst.', reaction: 'Das ist keine Entschuldigung.', heat: 10 },
       ],
       vereinbarung: [
         { by: 'A', kind: 'klar', text: 'Bevor wir jemanden beschuldigen, fragen wir erst nach.', reaction: 'Deal.', heat: -15 },
         { by: 'B', kind: 'klar', text: 'Wenn mich jemand nach dir fragt, sag ich es dir danach.', reaction: 'Okay. Danke.', heat: -15 },
         { by: 'A', kind: 'klar', text: 'Bei Streit reden wir erst unter vier Augen.', reaction: 'Ja. Nicht vor allen.', heat: -15 },
         { by: 'B', kind: 'vage', text: 'Wir reden einfach nicht mehr miteinander.', reaction: 'Im selben Atelier? Das wird schwer.', heat: 6 },
+        { by: 'B', kind: 'vage', text: 'Wir vertrauen uns einfach wieder.', reaction: 'Einfach so? Wie soll das gehen?', heat: 8 },
       ],
     },
 
@@ -4619,11 +4662,13 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
             { kind: 'ich', text: 'Wir wollten die Folien teilen. Bis jetzt hab ich alle acht gemacht.', reaction: 'Stimmt. Ich hab noch nichts.', heat: -12 },
             { kind: 'du', text: 'Du bist so faul. Echt peinlich.', reaction: 'Und du tust immer so perfekt.', heat: 14 },
             { kind: 'weg', text: 'Vergiss es. Ich mach’s halt allein.', reaction: 'Okay, cool. Danke.', heat: 6 },
+            { kind: 'fake', text: 'Ich hab gemerkt, dass du dich immer drückst.', reaction: 'Immer? Du übertreibst total.', heat: 10 },
           ],
           B: [
             { kind: 'ich', text: 'Ich hab die Aufgabe nicht richtig verstanden. Dann hab ich es immer weiter verschoben.', reaction: 'Oh. Warum hast du nichts gesagt?', heat: -12 },
             { kind: 'du', text: 'Du machst eh alles nach deinem Kopf.', reaction: 'Weil du gar nichts machst!', heat: 14 },
             { kind: 'weg', text: 'Keine Ahnung. Mach ich später.', reaction: 'Später ist morgen früh!', heat: 6 },
+            { kind: 'fake', text: 'Ich finde, du bist halt ein Kontrollfreak.', reaction: 'Kontrollfreak? Ich mach alles allein!', heat: 10 },
           ],
         },
         2: {
@@ -4631,11 +4676,13 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
             { kind: 'ich', text: 'Ich war gestresst und allein. Ich hatte Angst, dass wir es nicht schaffen.', reaction: 'Das tut mir leid. Echt.', heat: -12 },
             { kind: 'du', text: 'Wie ich mich fühl? Du bist echt das schlechteste Team ever.', reaction: 'Dann such dir doch wen anders.', heat: 14 },
             { kind: 'weg', text: 'Passt schon. Bin’s gewohnt.', reaction: 'Na dann ist ja gut.', heat: 5 },
+            { kind: 'fake', text: 'Ich fühl mich allein, weil du einfach faul bist.', reaction: 'Faul? Du weißt gar nicht, was los ist.', heat: 10 },
           ],
           B: [
             { kind: 'ich', text: 'Ich hab mich geschämt, weil ich es nicht kapiert hab. Deshalb hab ich nichts gesagt.', reaction: 'Oh. Das wusste ich nicht.', heat: -14 },
             { kind: 'du', text: 'Genervt. Weil du mir ständig schreibst.', reaction: 'Weil du nie antwortest!', heat: 14 },
             { kind: 'weg', text: 'Weiß nicht. Normal halt.', reaction: 'Normal? Echt jetzt?', heat: 6 },
+            { kind: 'fake', text: 'Ich fühl mich gestresst, weil du so perfekt tust.', reaction: 'Ich tu nicht perfekt! Ich will fertig werden.', heat: 10 },
           ],
         },
         3: {
@@ -4643,11 +4690,13 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
             { kind: 'ich', text: 'Ich brauche Hilfe. Ich will, dass wir das als Team schaffen.', reaction: 'Okay. Ich bin dabei.', heat: -12 },
             { kind: 'du', text: 'Du musst endlich mal was machen!', reaction: 'Hör auf, mich rumzukommandieren!', heat: 14 },
             { kind: 'weg', text: 'Ich brauch nix. Ich schaff das auch ohne dich.', reaction: 'Dann halt ohne mich.', heat: 6 },
+            { kind: 'fake', text: 'Ich will, dass du dich einmal nicht drückst.', reaction: 'Einmal? Das ist gemein.', heat: 10 },
           ],
           B: [
             { kind: 'ich', text: 'Ich brauche jemanden, der mir die Aufgabe kurz erklärt. Dann mach ich meinen Teil.', reaction: 'Das krieg ich hin. Zehn Minuten?', heat: -14 },
             { kind: 'du', text: 'Du musst mal chillen. Ist nur ein Projekt.', reaction: 'Für dich vielleicht!', heat: 14 },
             { kind: 'weg', text: 'Ich brauch nix. Wird schon irgendwie.', reaction: 'Irgendwie reicht nicht.', heat: 6 },
+            { kind: 'fake', text: 'Ich brauche, dass du nicht so rumkommandierst.', reaction: 'Ich kommandiere? Ich mach deine Folien!', heat: 10 },
           ],
         },
       },
@@ -4656,12 +4705,14 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
         { by: 'A', kind: 'echt', text: 'Ich erklär dir die Aufgabe in der Pause. Dann schaffen wir das.', reaction: 'Danke. Voll nett.', heat: -15 },
         { by: 'B', kind: 'echt', text: 'Sorry. Morgen übernehm ich das Reden vor der Klasse.', reaction: 'Deal! Das ist genau mein Horror.', heat: -15 },
         { by: 'B', kind: 'halb', text: 'Sorry, aber du hättest mir das auch besser erklären können.', reaction: 'Du hast nie gefragt!', heat: 10 },
+        { by: 'B', kind: 'halb', text: 'Tut mir leid, dass du so gestresst bist.', reaction: 'Und wer hat mich gestresst?', heat: 10 },
       ],
       vereinbarung: [
         { by: 'A', kind: 'klar', text: 'Wir machen einen Plan: Wer macht was, bis wann.', reaction: 'Ja. Mit Häkchen im Chat.', heat: -15 },
         { by: 'B', kind: 'klar', text: 'Wenn ich was nicht verstehe, frag ich sofort nach.', reaction: 'Und ich erklär’s ohne Stress.', heat: -15 },
         { by: 'A', kind: 'klar', text: 'Jeden Dienstag schauen wir kurz, wo wir stehen.', reaction: 'Fünf Minuten. Machbar.', heat: -15 },
         { by: 'B', kind: 'vage', text: 'Beim nächsten Projekt machen wir es einfach besser.', reaction: 'Und wie genau?', heat: 6 },
+        { by: 'A', kind: 'vage', text: 'Wir strengen uns einfach beide mehr an.', reaction: 'Und wer macht welche Folie?', heat: 8 },
       ],
     },
 
@@ -4682,11 +4733,13 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
             { kind: 'ich', text: 'Ich hab heute gehört, dass ihr zur Fouer geht. Ich wusste nichts davon.', reaction: 'Oh. So hast du das erfahren? Blöd.', heat: -12 },
             { kind: 'du', text: 'Du machst das extra, damit ich allein bin.', reaction: 'Das stimmt überhaupt nicht!', heat: 14 },
             { kind: 'weg', text: 'Egal. Ich hab eh keine Zeit.', reaction: 'Ah, okay. Dann passt es ja.', heat: 5 },
+            { kind: 'fake', text: 'Ich hab gemerkt, dass du mich absichtlich ausschließt.', reaction: 'Absichtlich? Das stimmt nicht!', heat: 10 },
           ],
           B: [
             { kind: 'ich', text: 'Ich hab den Chat schnell gemacht. Ich hab nicht an alle gedacht.', reaction: 'Okay. Also nicht extra.', heat: -12 },
             { kind: 'du', text: 'Du bist immer so empfindlich.', reaction: 'Und du merkst nie was.', heat: 14 },
             { kind: 'weg', text: 'Keine Ahnung, wer den gemacht hat.', reaction: 'Du. Ich hab’s gesehen.', heat: 6 },
+            { kind: 'fake', text: 'Ich finde, du bist beleidigt wegen jedem Chat.', reaction: 'Wegen jedem? Das ist das erste Mal!', heat: 10 },
           ],
         },
         2: {
@@ -4694,11 +4747,13 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
             { kind: 'ich', text: 'Ich hab mich allein gefühlt. Und irgendwie vergessen.', reaction: 'Das tut mir echt leid.', heat: -14 },
             { kind: 'du', text: 'Wie soll ich mich fühlen? Ihr seid alle fake.', reaction: 'Alle? Das ist unfair.', heat: 14 },
             { kind: 'weg', text: 'Gefühlt? Nix. Mir egal.', reaction: 'Okay … sicher?', heat: 5 },
+            { kind: 'fake', text: 'Ich fühl mich allein, weil du ein falscher Freund bist.', reaction: 'Ein falscher Freund? Das tut weh.', heat: 10 },
           ],
           B: [
             { kind: 'ich', text: 'Ich fühl mich schlecht. Ich wollte dich nicht verletzen.', reaction: 'Danke, dass du das sagst.', heat: -12 },
             { kind: 'du', text: 'Genervt. Du machst mir voll ein schlechtes Gewissen.', reaction: 'Vielleicht zu Recht?', heat: 12 },
             { kind: 'weg', text: 'Weiß nicht. Ist doch nur ein Chat.', reaction: 'Für dich vielleicht.', heat: 6 },
+            { kind: 'fake', text: 'Ich fühl mich schlecht, weil du so eifersüchtig bist.', reaction: 'Eifersüchtig? Ich will nur dabei sein.', heat: 10 },
           ],
         },
         3: {
@@ -4706,11 +4761,13 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
             { kind: 'ich', text: 'Mir ist wichtig, dass ich dazugehöre. Ich will auch gefragt werden.', reaction: 'Versteh ich. Wirklich.', heat: -12 },
             { kind: 'du', text: 'Du musst mal lernen, an andere zu denken.', reaction: 'Und du, nicht gleich alles schlechtzumachen.', heat: 14 },
             { kind: 'weg', text: 'Ich brauch niemanden. Geht doch auch ohne mich.', reaction: 'So war das doch nicht gemeint.', heat: 5 },
+            { kind: 'fake', text: 'Ich will Freunde, die nicht so hinterhältig sind.', reaction: 'Hinterhältig? Jetzt reicht es.', heat: 10 },
           ],
           B: [
             { kind: 'ich', text: 'Mir ist wichtig, dass du mir sagst, wenn was ist. Nicht erst, wenn du sauer bist.', reaction: 'Okay. Das kann ich versuchen.', heat: -12 },
             { kind: 'du', text: 'Du musst halt selber fragen, ob du mitkannst.', reaction: 'Ich wusste ja nicht mal davon!', heat: 14 },
             { kind: 'weg', text: 'Ich brauch nix. Können wir das lassen?', reaction: 'Mir ist das aber wichtig.', heat: 5 },
+            { kind: 'fake', text: 'Mir ist wichtig, dass du nicht aus allem ein Drama machst.', reaction: 'Drama? Ich war nicht eingeladen!', heat: 10 },
           ],
         },
       },
@@ -4719,12 +4776,14 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
         { by: 'B', kind: 'echt', text: 'Komm Samstag mit. Wir treffen uns um drei am Glacis.', reaction: 'Echt? Ja, ich komm!', heat: -15 },
         { by: 'A', kind: 'echt', text: 'Sorry, dass ich gleich so laut war. Ich war einfach verletzt.', reaction: 'Ist okay. Ich versteh das jetzt.', heat: -15 },
         { by: 'B', kind: 'halb', text: 'Sorry, aber du hättest ja auch selber fragen können.', reaction: 'Wie denn, wenn ich nichts davon weiß?', heat: 10 },
+        { by: 'B', kind: 'halb', text: 'Tut mir leid, dass du dich ausgeschlossen fühlst.', reaction: 'Ich fühl mich nicht nur so. Ich war es.', heat: 10 },
       ],
       vereinbarung: [
         { by: 'A', kind: 'klar', text: 'Wenn wir was planen, fragen wir alle aus der Gruppe.', reaction: 'Ja. Keiner wird vergessen.', heat: -15 },
         { by: 'B', kind: 'klar', text: 'Wenn du dich ausgeschlossen fühlst, schreibst du mir direkt.', reaction: 'Mach ich. Danke.', heat: -15 },
         { by: 'A', kind: 'klar', text: 'Neue Chats machen wir mit allen. Wer nicht will, kann raus.', reaction: 'Fair.', heat: -15 },
         { by: 'B', kind: 'vage', text: 'Wir machen einfach gar keine Chats mehr.', reaction: 'Das löst doch nichts.', heat: 6 },
+        { by: 'A', kind: 'vage', text: 'Wir achten einfach mehr aufeinander.', reaction: 'Und beim nächsten Chat? Wie genau?', heat: 8 },
       ],
     },
 
@@ -4745,11 +4804,13 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
             { kind: 'ich', text: 'Ich hab dir privat was geschrieben. Jetzt haben es ganz viele gesehen.', reaction: 'Oh. So viele? Das wollte ich nicht.', heat: -12 },
             { kind: 'du', text: 'Du bist so ein Lästermaul.', reaction: 'Und du hast null Humor.', heat: 14 },
             { kind: 'weg', text: 'Egal. Ist eh schon rum.', reaction: 'Siehst du. Halb so wild.', heat: 6 },
+            { kind: 'fake', text: 'Ich hab gemerkt, dass man dir nichts erzählen kann.', reaction: 'Nichts? Das ist jetzt zu hart.', heat: 10 },
           ],
           B: [
             { kind: 'ich', text: 'Ich hab den Screenshot an zwei Leute geschickt. Die haben ihn weitergeleitet.', reaction: 'Ah. Also nicht an alle. Trotzdem blöd.', heat: -12 },
             { kind: 'du', text: 'Du schreibst halt komisches Zeug. Selbst schuld.', reaction: 'Selbst schuld?! Das war PRIVAT!', heat: 16 },
             { kind: 'weg', text: 'Weiß nicht, wie das rumgekommen ist.', reaction: 'Hör auf, mich anzulügen.', heat: 8 },
+            { kind: 'fake', text: 'Ich finde, du schreibst halt komische Sachen.', reaction: 'Das war privat! Das geht dich nichts an.', heat: 10 },
           ],
         },
         2: {
@@ -4757,11 +4818,13 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
             { kind: 'ich', text: 'Ich hab mich bloßgestellt gefühlt. Und ich konnte dir nicht mehr vertrauen.', reaction: 'Das versteh ich. Das ist heftig.', heat: -12 },
             { kind: 'du', text: 'Wie ich mich fühl? Mies. Und du bist schuld.', reaction: 'Ey, übertreib nicht.', heat: 14 },
             { kind: 'weg', text: 'Gefühlt? Ist mir doch egal.', reaction: 'Okay … dann ist ja nix.', heat: 5 },
+            { kind: 'fake', text: 'Ich fühl mich bloßgestellt, weil du eine Tratschtante bist.', reaction: 'Tratschtante? Echt jetzt?', heat: 10 },
           ],
           B: [
             { kind: 'ich', text: 'Erst fand ich es lustig. Jetzt schäme ich mich.', reaction: 'Danke, dass du das zugibst.', heat: -14 },
             { kind: 'du', text: 'Genervt, weil du aus allem so ein Ding machst.', reaction: 'Weil es ein Ding IST!', heat: 14 },
             { kind: 'weg', text: 'Keine Ahnung. Nichts.', reaction: 'Echt? Gar nichts?', heat: 6 },
+            { kind: 'fake', text: 'Ich fühl mich blöd, weil du so ein Fass aufmachst.', reaction: 'Ein Fass? Die halbe Klasse hat es!', heat: 10 },
           ],
         },
         3: {
@@ -4769,11 +4832,13 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
             { kind: 'ich', text: 'Ich brauche, dass private Sachen bei dir privat bleiben.', reaction: 'Okay. Das ist klar.', heat: -12 },
             { kind: 'du', text: 'Du musst lernen, die Finger vom Handy zu lassen.', reaction: 'Und du, keine peinlichen Sachen zu schreiben.', heat: 14 },
             { kind: 'weg', text: 'Ich brauch nix. Ich schreib dir einfach nie wieder.', reaction: 'Okay … schade.', heat: 6 },
+            { kind: 'fake', text: 'Ich will, dass du einmal im Leben die Klappe hältst.', reaction: 'Die Klappe halten? Wow.', heat: 10 },
           ],
           B: [
             { kind: 'ich', text: 'Mir ist wichtig, dass wir wieder normal miteinander reden können.', reaction: 'Will ich auch. Aber erst muss das weg.', heat: -10 },
             { kind: 'du', text: 'Du musst mal lockerer werden.', reaction: 'Und du mal nachdenken!', heat: 14 },
             { kind: 'weg', text: 'Ich brauch nix. Ist doch vorbei.', reaction: 'Für mich nicht.', heat: 6 },
+            { kind: 'fake', text: 'Mir ist wichtig, dass du nicht so nachtragend bist.', reaction: 'Nachtragend? Das war gestern!', heat: 10 },
           ],
         },
       },
@@ -4782,12 +4847,14 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
         { by: 'B', kind: 'echt', text: 'Sorry. Das war mies von mir. Ich mach so was nicht mehr.', reaction: 'Okay. Ich nehm das an.', heat: -15 },
         { by: 'A', kind: 'echt', text: 'Sorry, dass ich dich vor allen angeschrien hab.', reaction: 'Schon gut. Ich hab echt Mist gebaut.', heat: -15 },
         { by: 'B', kind: 'halb', text: 'Sorry, aber du hättest es ja nicht schreiben müssen.', reaction: 'Also bin ich schuld? Nein.', heat: 10 },
+        { by: 'B', kind: 'halb', text: 'Tut mir leid, dass es so blöd gelaufen ist.', reaction: 'Gelaufen? Du hast es geschickt.', heat: 10 },
       ],
       vereinbarung: [
         { by: 'A', kind: 'klar', text: 'Private Nachrichten bleiben privat. Keine Screenshots.', reaction: 'Versprochen.', heat: -15 },
         { by: 'B', kind: 'klar', text: 'Wenn ich was weiterschicken will, frag ich vorher.', reaction: 'Deal.', heat: -15 },
         { by: 'A', kind: 'klar', text: 'Wenn was schiefläuft, reden wir erst persönlich. Nicht im Chat.', reaction: 'Ja. Das ist besser.', heat: -15 },
         { by: 'B', kind: 'vage', text: 'Wir schreiben uns einfach nicht mehr.', reaction: 'Dann ist das Problem weg. Und wir auch.', heat: 6 },
+        { by: 'A', kind: 'vage', text: 'Wir sind einfach vorsichtiger mit Handys.', reaction: 'Und was ist mit Screenshots?', heat: 8 },
       ],
     },
   ];
@@ -4818,6 +4885,7 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
         { von: 'mia.sk8', text: 'Der Park hat drei Rampen und eine Bowl.', fakt: true, why: 'Kann man zählen. Einfach hingehen und schauen.' },
         { von: 'jeff_lux', text: 'Das ist der beste Skatepark im ganzen Land.', fakt: false, why: '„Der beste“ ist eine Bewertung. Andere finden andere Parks besser.' },
         { von: 'nora.nr', text: 'Er ist jeden Tag bis 22 Uhr offen.', fakt: true, why: 'Steht auf dem Schild am Eingang. Das kann man prüfen.' },
+        { von: 'skate_news24', text: '87 % aller Skater sagen: Der Park ist gefährlich.', fakt: false, fake: true, why: 'Die Zahl ist erfunden. Keiner weiß, wer gefragt wurde.' },
       ],
     },
     {
@@ -4827,6 +4895,7 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
         { von: 'tiago.10', text: 'Pizza schmeckt einfach besser als Pasta.', fakt: false, why: 'Geschmack ist Geschmack. Da hat jede Person ihre eigene Meinung.' },
         { von: 'amira.a', text: 'Ein Stück kostet 3,50 Euro.', fakt: true, why: 'Der Preis steht auf der Karte. Das kann man prüfen.' },
         { von: 'kevin_k', text: 'Die Kantine ist total überteuert.', fakt: false, why: '„Überteuert“ ist eine Bewertung. Andere finden den Preis okay.' },
+        { von: 'food.fakten', text: 'Studien zeigen: Pizza macht in der Schule schlauer.', fakt: false, fake: true, why: '„Studien zeigen“ ohne echte Studie klingt nur nach Fakt.' },
       ],
     },
     {
@@ -4836,6 +4905,7 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
         { von: 'dylan.gg', text: 'Das Update ist 4 Gigabyte groß.', fakt: true, why: 'Steht im App-Store. Das kann man nachprüfen.' },
         { von: 'yara.plays', text: 'Die neuen Skins sind hässlich.', fakt: false, why: '„Hässlich“ ist Geschmack. Andere finden die Skins super.' },
         { von: 'milan_m', text: 'Es gibt jetzt einen Modus für 50 Leute.', fakt: true, why: 'Das kann man im Spiel sehen und testen.' },
+        { von: 'gratis.skins', text: 'Mit dem Update gibt es 5000 Gratis-Coins. Link in Bio!', fakt: false, fake: true, why: 'Ein Köder. Der Link will nur deine Daten.' },
       ],
     },
     {
@@ -4845,6 +4915,7 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
         { von: 'lena.lux', text: 'Die Fouer geht bis zum 11. September.', fakt: true, why: 'Das Datum steht im Programm. Das kann man prüfen.' },
         { von: 'rui.r', text: 'Die Fouer ist nur was für Kinder.', fakt: false, why: 'Das sieht Rui so. Viele Erwachsene lieben die Fouer.' },
         { von: 'sara.s', text: 'Da gibt es die besten Gromperekichelcher im Land.', fakt: false, why: '„Die besten“ ist Geschmack. Da darf jede Person anders denken.' },
+        { von: 'fouer.leaks', text: 'Dieses Jahr ist die Fouer für Schüler gratis.', fakt: false, fake: true, why: 'Steht nirgends offiziell. Einfach ausgedacht.' },
       ],
     },
     {
@@ -4854,6 +4925,7 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
         { von: 'elias.e', text: 'Man bekommt sie in Schwarz und in Weiß.', fakt: true, why: 'Das sieht man im Shop. Das kann man prüfen.' },
         { von: 'jana.j', text: 'Die sind viel zu teuer für so einen Sound.', fakt: false, why: 'Ob etwas zu teuer ist, findet jede Person anders.' },
         { von: 'tech.tom', text: 'Das sind die besten Kopfhörer der Welt!', fakt: false, why: 'Werbung klingt oft wie ein Fakt. Ist aber eine Meinung.' },
+        { von: 'audio.facts', text: 'Laut Test hält der Akku 300 Stunden.', fakt: false, fake: true, why: 'Kein Test genannt. Die Zahl kommt aus der Werbung.' },
       ],
     },
     {
@@ -4863,6 +4935,7 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
         { von: 'noah.n', text: 'Es kommen 12 Betriebe aus der Region.', fakt: true, why: 'Die Liste hängt am Eingang. Das kann man zählen.' },
         { von: 'aylin.y', text: 'Ein Praktikum im Büro ist öde.', fakt: false, why: 'Manche lieben Büro-Arbeit. Das ist Geschmackssache.' },
         { von: 'luca.l', text: 'Die Börse geht von 9 bis 12 Uhr.', fakt: true, why: 'Die Uhrzeit steht im Post. Das kann man prüfen.' },
+        { von: 'jobs.info.lu', text: 'Wer nicht kommt, bekommt keinen Praktikumsplatz.', fakt: false, fake: true, why: 'Klingt offiziell. Steht aber in keiner Einladung.' },
       ],
     },
     {
@@ -4872,6 +4945,7 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
         { von: 'rui.r', text: 'Portugal gewinnt sowieso. Keine Chance.', fakt: false, why: 'Das ist eine Vermutung. Nach dem Spiel weiß man mehr.' },
         { von: 'jeff_lux', text: 'Das Spiel beginnt um 20:45 Uhr.', fakt: true, why: 'Die Uhrzeit steht auf dem Ticket. Das kann man prüfen.' },
         { von: 'emir.e', text: 'Das Stadion hat über 9000 Plätze.', fakt: true, why: 'Das kann man nachlesen oder nachzählen.' },
+        { von: 'sport.breaking', text: 'Der Kapitän von Portugal spielt heute im Tor.', fakt: false, fake: true, why: 'Kann man prüfen: Die Aufstellung sagt etwas anderes.' },
       ],
     },
     {
@@ -4881,6 +4955,7 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
         { von: 'emir.e', text: 'Der Laden öffnet am 3. Oktober.', fakt: true, why: 'Das Datum steht am Schaufenster. Das kann man prüfen.' },
         { von: 'lara.l', text: 'Da wird bestimmt alles voll teuer.', fakt: false, why: 'Das ist eine Vermutung. Man weiß es erst, wenn er offen ist.' },
         { von: 'dylan.gg', text: 'Wir bräuchten eher ein Kino.', fakt: false, why: 'Das wünscht sich Dylan. Andere wollen etwas anderes.' },
+        { von: 'deals.kirchberg', text: 'Die ersten 100 Leute bekommen ein Handy geschenkt.', fakt: false, fake: true, why: 'Ein erfundenes Angebot, damit alle teilen.' },
       ],
     },
 
@@ -4895,10 +4970,10 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
       ] },
       zahl: { label: 'sehen das Video', start: 24 },
       opts: [
-        { t: 'Weiterleiten. Ist doch nur Spaß.', p: 0, n: 380, feel: 8, line: 'Jetzt kennt die halbe Schule das Video. Mia will morgen nicht kommen.' },
-        { t: 'Nichts tun und weiterscrollen.', p: 1, n: 150, feel: 28, line: 'Du machst nichts Schlimmes. Aber das Video wandert trotzdem weiter.' },
-        { t: 'In den Chat: „Löscht das. Das ist nicht cool.“', p: 3, n: 30, feel: 62, line: 'Zwei andere schreiben „Stimmt“. Kevin löscht das Video.' },
-        { t: 'Mia privat: „Hab das Video gesehen. Soll ich wem Bescheid sagen?“', p: 3, n: 60, feel: 74, line: 'Mia fühlt sich nicht allein. Zusammen gehen sie zur Lehrerin.' },
+        { t: 'Weiterleiten. Mia lacht doch sicher selbst.', p: 0, n: 380, feel: 8, line: 'Jetzt kennt die halbe Schule das Video. Mia will morgen nicht kommen.' },
+        { t: 'In den Chat: „Kevin, du fällst doch selber dauernd.“', p: 1, n: 150, feel: 28, line: 'Kevin kontert. Jetzt streiten alle, und das Video wandert noch weiter.' },
+        { t: 'In den Chat: „Löscht das. Nicht cool.“', p: 3, n: 30, feel: 62, line: 'Zwei andere schreiben „Stimmt“. Kevin löscht das Video.' },
+        { t: 'Mia privat: „Soll ich wem Bescheid sagen?“', p: 3, n: 60, feel: 74, line: 'Mia fühlt sich nicht allein. Zusammen gehen sie zur Lehrerin.' },
       ],
     },
     {
@@ -4907,10 +4982,10 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
       szene: { art: 'post', von: 'lena_ist_peinlich', zeit: 'vor 1 Std', text: 'Lenas peinlichste Momente. Folgt für mehr!', bild: { art: 'meme', text: 'LENA, ABER PEINLICH' }, likes: 41, cmts: 12 },
       zahl: { label: 'folgen dem Account', start: 40 },
       opts: [
-        { t: 'Folgen, um zu sehen, was noch kommt.', p: 0, n: 260, feel: 10, line: 'Mehr Follower, mehr Posts. Der Fake-Account wird immer größer.' },
-        { t: 'Den Account bei Glimmr melden.', p: 2, n: 120, feel: 45, line: 'Gut! Glimmr prüft den Account. Das kann aber ein paar Tage dauern.' },
-        { t: 'Screenshots machen und einer erwachsenen Person zeigen.', p: 3, n: 45, feel: 72, line: 'Die Schule kümmert sich. Nach zwei Tagen ist der Account weg.' },
-        { t: 'Kommentieren: „Wer das macht, ist erbärmlich!“', p: 1, n: 200, feel: 35, line: 'Mutig gemeint. Aber jetzt gibt es Streit, und mehr Leute schauen hin.' },
+        { t: 'Folgen. Nur um zu sehen, was noch kommt.', p: 0, n: 260, feel: 10, line: 'Mehr Follower, mehr Posts. Der Fake-Account wird immer größer.' },
+        { t: 'Den Account bei Glimmr als Fake melden.', p: 2, n: 120, feel: 45, line: 'Gut! Glimmr prüft den Account. Das kann aber ein paar Tage dauern.' },
+        { t: 'Screenshots machen, einer Lehrkraft zeigen.', p: 3, n: 45, feel: 72, line: 'Die Schule kümmert sich. Nach zwei Tagen ist der Account weg.' },
+        { t: 'Kommentieren: „Wer das macht, ist erbärmlich!“', p: 1, n: 200, feel: 35, line: 'Der Account antwortet mit einem neuen Post. Diesmal über dich.' },
       ],
     },
     {
@@ -4923,10 +4998,10 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
       ] },
       zahl: { label: 'sind dafür', start: 3 },
       opts: [
-        { t: 'Daumen hoch. Ist ja nur ein Chat.', p: 0, n: 18, feel: 8, line: 'Yara merkt es am nächsten Tag. Auf der Fahrt sitzt sie allein.' },
-        { t: 'Nichts schreiben.', p: 1, n: 12, feel: 28, line: 'Die neue Gruppe kommt trotzdem. Schweigen wirkt hier wie ein Ja.' },
-        { t: 'Schreiben: „Nö. Wenn es Stress gibt, redet mit ihr.“', p: 3, n: 4, feel: 60, line: 'Zwei andere sagen auch Nein. Die Idee ist vom Tisch.' },
-        { t: 'Yara fragen, ob sie auf der Fahrt neben dir sitzt.', p: 2, n: 12, feel: 70, line: 'Die Gruppe gibt es trotzdem. Aber Yara hat jemanden an ihrer Seite.' },
+        { t: 'Daumen hoch. Ist doch nur ein neuer Chat.', p: 0, n: 18, feel: 8, line: 'Yara merkt es am nächsten Tag. Auf der Fahrt sitzt sie allein.' },
+        { t: 'Nichts schreiben und einfach mitlesen.', p: 1, n: 12, feel: 28, line: 'Die neue Gruppe kommt trotzdem. Schweigen wirkt hier wie ein Ja.' },
+        { t: 'Schreiben: „Nö. Redet lieber mit Yara.“', p: 3, n: 4, feel: 60, line: 'Zwei andere sagen auch Nein. Die Idee ist vom Tisch.' },
+        { t: 'Yara fragen, ob sie im Bus neben dir sitzt.', p: 2, n: 12, feel: 70, line: 'Die Gruppe gibt es trotzdem. Aber Yara hat jemanden an ihrer Seite.' },
       ],
     },
     {
@@ -4939,9 +5014,9 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
       zahl: { label: 'sehen den Post', start: 90 },
       opts: [
         { t: 'Liken und kommentieren: „Wusste ich!“', p: 0, n: 420, feel: 6, line: 'Dein Kommentar macht es glaubwürdiger. Jetzt glauben es noch mehr.' },
-        { t: 'Rui fragen: „Da geht was über dich rum. Alles okay?“', p: 3, n: 150, feel: 70, line: 'Rui kann es erklären. Er merkt: Jemand hält zu ihm.' },
-        { t: 'Den Post melden: Mobbing.', p: 2, n: 160, feel: 45, line: 'Glimmr prüft den Post. Einige haben ihn aber schon gesehen.' },
-        { t: 'Nichts machen.', p: 1, n: 300, feel: 22, line: 'Der Post läuft weiter. Keiner stoppt ihn.' },
+        { t: 'Rui schreiben: „Alles okay bei dir?“', p: 3, n: 150, feel: 70, line: 'Rui kann es erklären. Er merkt: Jemand hält zu ihm.' },
+        { t: 'Den Post bei Glimmr als Mobbing melden.', p: 2, n: 160, feel: 45, line: 'Glimmr prüft den Post. Einige haben ihn aber schon gesehen.' },
+        { t: 'Die Seite roasten: „Feiglinge ohne Namen!“', p: 1, n: 300, feel: 22, line: 'Die Seite postet noch mehr. Jetzt schauen doppelt so viele hin.' },
       ],
     },
     {
@@ -4954,10 +5029,10 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
       ] },
       zahl: { label: 'sehen den Fake-Post', start: 0 },
       opts: [
-        { t: 'Mitlachen und Ideen geben.', p: 0, n: 310, feel: 8, line: 'Der Post geht online. Emir muss sich vor allen erklären.' },
+        { t: 'Mitlachen und ein paar Ideen geben.', p: 0, n: 310, feel: 8, line: 'Der Post geht online. Emir muss sich vor allen erklären.' },
         { t: 'Sagen: „Lasst das. Das ist sein Account.“', p: 3, n: 0, feel: 70, line: 'Jeff legt das Handy weg. Emir merkt nicht mal was.' },
         { t: 'Emir holen: „Dein Handy liegt offen.“', p: 3, n: 0, feel: 78, line: 'Emir sperrt sein Handy. Er ist dir echt dankbar.' },
-        { t: 'Weggehen. Nicht mein Problem.', p: 1, n: 310, feel: 20, line: 'Du bist raus. Aber der Post geht trotzdem online.' },
+        { t: 'Weggehen. Ist ja nicht mein Handy.', p: 1, n: 310, feel: 20, line: 'Du bist raus. Aber der Post geht trotzdem online.' },
       ],
     },
     {
@@ -4969,10 +5044,10 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
       ] },
       zahl: { label: 'fiese Kommentare', start: 6 },
       opts: [
-        { t: 'Auch was Fieses schreiben. Machen ja alle.', p: 0, n: 25, feel: 5, line: 'Noch ein fieser Kommentar mehr. Inês löscht ihr Video.' },
-        { t: 'Einen netten Kommentar schreiben.', p: 3, n: 6, feel: 68, line: 'Andere trauen sich jetzt auch. Plötzlich stehen da viele nette Kommentare.' },
-        { t: 'Die fiesen Kommentare melden.', p: 2, n: 3, feel: 52, line: 'Ein paar Kommentare werden gelöscht. Gute Sache.' },
-        { t: 'Nichts machen, nur mitlesen.', p: 1, n: 15, feel: 25, line: 'Die fiesen Kommentare bleiben stehen. Inês liest sie alle.' },
+        { t: 'Auch was Lustiges schreiben. Machen ja alle.', p: 0, n: 25, feel: 5, line: 'Noch ein fieser Kommentar mehr. Inês löscht ihr Video.' },
+        { t: 'Einen netten Kommentar drunter schreiben.', p: 3, n: 6, feel: 68, line: 'Andere trauen sich jetzt auch. Plötzlich stehen da viele nette Kommentare.' },
+        { t: 'Die fiesen Kommentare bei Glimmr melden.', p: 2, n: 3, feel: 52, line: 'Ein paar Kommentare werden gelöscht. Gute Sache.' },
+        { t: 'Die Hater roasten: „Ihr tanzt noch schlechter!“', p: 1, n: 15, feel: 25, line: 'Die Hater schreiben zurück. Unter dem Clip tobt jetzt ein Streit.' },
       ],
     },
     {
@@ -4988,7 +5063,7 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
         { t: 'Den Screenshot in eine andere Gruppe schicken.', p: 0, n: 140, feel: 6, line: 'Jetzt lachen noch mehr Leute. Jana vertraut niemandem mehr.' },
         { t: 'Luca schreiben: „Das war privat. Lösch das.“', p: 3, n: 24, feel: 62, line: 'Luca löscht es. Ein paar Leute schreiben: „Stimmt.“' },
         { t: 'Jana warnen: „Luca hat deinen Chat geteilt.“', p: 2, n: 40, feel: 48, line: 'Jana ist verletzt. Aber sie weiß Bescheid und ist nicht allein.' },
-        { t: 'Nichts sagen.', p: 1, n: 70, feel: 22, line: 'Der Screenshot bleibt im Chat. Jeder kann ihn weiterschicken.' },
+        { t: 'Nichts sagen. Geht mich ja nichts an.', p: 1, n: 70, feel: 22, line: 'Der Screenshot bleibt im Chat. Jeder kann ihn weiterschicken.' },
       ],
     },
     {
@@ -4997,10 +5072,10 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
       szene: { art: 'post', von: 'lycee.rankings', zeit: 'Story · vor 2 Std', text: 'Wer ist der nervigste Mensch der 9B? Stimmt ab!', bild: { art: 'umfrage', opts: ['Milan', 'Jeff', 'Nora'] }, likes: 38, cmts: 14 },
       zahl: { label: 'Stimmen', start: 38 },
       opts: [
-        { t: 'Mitvoten. Ist nur Spaß.', p: 0, n: 120, feel: 8, line: 'Milan ist auf Platz 1. Er tut so, als wäre es ihm egal.' },
-        { t: 'Die Umfrage melden.', p: 2, n: 60, feel: 45, line: 'Die Story verschwindet bald. Einige haben aber schon abgestimmt.' },
+        { t: 'Mitvoten. Ist doch nur eine Umfrage.', p: 0, n: 120, feel: 8, line: 'Milan ist auf Platz 1. Er tut so, als wäre es ihm egal.' },
+        { t: 'Die Umfrage bei Glimmr melden.', p: 2, n: 60, feel: 45, line: 'Die Story verschwindet bald. Einige haben aber schon abgestimmt.' },
         { t: 'Kommentieren: „Voll daneben. Macht das weg.“', p: 3, n: 45, feel: 65, line: 'Andere schreiben das auch. Die Umfrage wird gelöscht.' },
-        { t: 'Nicht abstimmen, weiterscrollen.', p: 1, n: 100, feel: 25, line: 'Du machst nicht mit. Aber die Umfrage läuft weiter.' },
+        { t: 'Nicht abstimmen und weiterscrollen.', p: 1, n: 100, feel: 25, line: 'Du machst nicht mit. Aber die Umfrage läuft weiter.' },
       ],
     },
     {
@@ -5009,10 +5084,10 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
       szene: { art: 'post', von: 'emir.e', zeit: 'vor 8 Min', text: 'Second-Hand-Queen, lol. Wo kauft sie sowas?', bild: { art: 'foto', motiv: 'jacke' }, likes: 19, cmts: 7 },
       zahl: { label: 'Likes', start: 19 },
       opts: [
-        { t: 'Liken. Ist halt lustig.', p: 0, n: 80, feel: 8, line: 'Mehr Likes, mehr Kommentare. Sara zieht die Jacke nicht mehr an.' },
-        { t: 'Kommentieren: „Die Jacke ist cool. Lass sie in Ruhe.“', p: 3, n: 22, feel: 66, line: 'Andere stimmen zu. Emir löscht den Post.' },
+        { t: 'Liken. Ist halt ein lustiges Foto.', p: 0, n: 80, feel: 8, line: 'Mehr Likes, mehr Kommentare. Sara zieht die Jacke nicht mehr an.' },
+        { t: 'Kommentieren: „Coole Jacke. Lass sie in Ruhe.“', p: 3, n: 22, feel: 66, line: 'Andere stimmen zu. Emir löscht den Post.' },
         { t: 'Sara schreiben: „Achte nicht drauf. Du bist top.“', p: 2, n: 40, feel: 60, line: 'Der Post bleibt online. Aber Sara weiß: Du stehst hinter ihr.' },
-        { t: 'Einfach nichts machen.', p: 1, n: 50, feel: 25, line: 'Der Post bleibt. Sara liest jeden Kommentar.' },
+        { t: 'Zurückroasten: „Emir, schau mal deine Schuhe an.“', p: 1, n: 50, feel: 25, line: 'Emir postet ein Foto von deinen Schuhen. Jetzt seid ihr zu zweit dran.' },
       ],
     },
     {
@@ -5026,9 +5101,9 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
       zahl: { label: 'bekommen die Nachricht', start: 16 },
       opts: [
         { t: 'Schnell an 10 Leute schicken. Sicher ist sicher.', p: 0, n: 900, feel: 20, line: 'Jetzt haben noch mehr Leute Angst. Gehackt wird natürlich niemand.' },
-        { t: 'Schreiben: „Das ist ein Fake. Sowas kommt jedes Jahr.“', p: 3, n: 40, feel: 72, line: 'Tiago ist erleichtert. Die Kette endet hier.' },
-        { t: 'Einfach löschen.', p: 2, n: 200, feel: 40, line: 'Bei dir endet die Kette. Die anderen haben aber noch Angst.' },
-        { t: 'Im Netz suchen, ob das stimmt.', p: 2, n: 120, feel: 50, line: 'Du findest raus: Fake. Gut geprüft! Jetzt noch der Gruppe sagen.' },
+        { t: 'Schreiben: „Fake. Sowas kommt jedes Jahr.“', p: 3, n: 40, feel: 72, line: 'Tiago ist erleichtert. Die Kette endet hier.' },
+        { t: 'Nicht weiterschicken, einfach löschen.', p: 2, n: 200, feel: 40, line: 'Bei dir endet die Kette. Die anderen haben aber noch Angst.' },
+        { t: 'Kurz im Netz suchen, ob das stimmt.', p: 2, n: 120, feel: 50, line: 'Du findest raus: Fake. Gut geprüft! Jetzt noch der Gruppe sagen.' },
       ],
     },
 
@@ -5153,10 +5228,10 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
         { von: 'Dylan', text: 'Du kommst doch, oder? Oder hast du Angst?' },
       ],
       opts: [
-        { t: 'Nee, Krankenhaus steht nicht auf meiner Liste. Döner danach?', k: 'cool', antwort: { von: 'Emir', text: 'Haha okay. Döner geht klar.' }, line: 'Klares Nein. Mit Humor. Und beim Döner bist du trotzdem dabei.' },
+        { t: 'Nee, Krankenhaus ist nicht mein Plan. Döner?', k: 'cool', antwort: { von: 'Emir', text: 'Haha okay. Döner geht klar.' }, line: 'Klares Nein. Mit Humor. Und beim Döner bist du trotzdem dabei.' },
         { t: 'Seid ihr dumm? Das ist voll gefährlich!', k: 'hart', antwort: { von: 'Dylan', text: 'Chill mal, Mama.' }, line: 'Dein Nein ist klar. Aber jetzt fühlen sich alle angegriffen.' },
-        { t: 'Kann heute nicht. Muss zu meiner Oma.', k: 'ausrede', antwort: { von: 'Emir', text: 'Dann machen wir es Samstag!' }, line: 'Heute bist du raus. Aber am Samstag kommt der Druck wieder.' },
-        { t: 'Okay … bin dabei.', k: 'ja', antwort: { von: 'Luca', text: 'Legende!' }, line: 'Du bist dabei. Aber willst du das wirklich? Das Risiko trägst du.' },
+        { t: 'Kann heute nicht. Muss noch zu meiner Oma.', k: 'ausrede', antwort: { von: 'Emir', text: 'Dann machen wir es Samstag!' }, line: 'Heute bist du raus. Aber am Samstag kommt der Druck wieder.' },
+        { t: 'Okay … aber nur kurz. Bin dabei.', k: 'ja', antwort: { von: 'Luca', text: 'Legende!' }, line: 'Du bist dabei. Aber willst du das wirklich? Das Risiko trägst du.' },
       ],
       nein: ['Nee, ich bin raus. Viel Spaß, ich bleib unten.', 'Meine Knochen brauch ich noch.', 'Nicht mein Ding. Wir sehen uns danach.'],
     },
@@ -5170,10 +5245,10 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
         { von: 'Tiago', text: 'Sei kein Langweiler. Du kommst!' },
       ],
       opts: [
-        { t: 'Morgen nicht. Aber Samstag Fouer mit allen? Bin dabei!', k: 'cool', antwort: { von: 'Lena', text: 'Samstag ist eh besser. Deal!' }, line: 'Nein zum Schwänzen. Ja zur Fouer. Das kommt gut an.' },
-        { t: 'Ihr seid so kindisch. Ohne mich.', k: 'hart', antwort: { von: 'Tiago', text: 'Uff. Dann halt nicht, Streber.' }, line: 'Dein Nein ist klar. Aber „kindisch“ kommt als Angriff an.' },
-        { t: 'Mal sehen …', k: 'ausrede', antwort: { von: 'Tiago', text: 'Also ja! 8 Uhr an der Gare.' }, line: '„Mal sehen“ klingt wie Ja. Morgen wird Nein sagen schwerer.' },
-        { t: 'Okay, ich komm mit.', k: 'ja', antwort: { von: 'Lena', text: 'Nice!' }, line: 'Du bist dabei. Morgen gibt es wohl Ärger mit der Schule.' },
+        { t: 'Morgen nicht. Aber Samstag Fouer? Bin dabei!', k: 'cool', antwort: { von: 'Lena', text: 'Samstag ist eh besser. Deal!' }, line: 'Nein zum Schwänzen. Ja zur Fouer. Das kommt gut an.' },
+        { t: 'Ihr seid so kindisch. Macht das ohne mich.', k: 'hart', antwort: { von: 'Tiago', text: 'Uff. Dann halt nicht, Streber.' }, line: 'Dein Nein ist klar. Aber „kindisch“ kommt als Angriff an.' },
+        { t: 'Mal sehen … ich schau morgen, wie es passt.', k: 'ausrede', antwort: { von: 'Tiago', text: 'Also ja! 8 Uhr an der Gare.' }, line: '„Mal sehen“ klingt wie Ja. Morgen wird Nein sagen schwerer.' },
+        { t: 'Okay, ich komm mit. Einmal ist keinmal.', k: 'ja', antwort: { von: 'Lena', text: 'Nice!' }, line: 'Du bist dabei. Morgen gibt es wohl Ärger mit der Schule.' },
       ],
       nein: ['Morgen nicht. Samstag gern.', 'Ich bin raus, aber viel Spaß.', 'Nee, auf Stress mit der Schule hab ich keinen Bock.'],
     },
@@ -5188,9 +5263,9 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
       ],
       opts: [
         { t: 'Nee danke. Ich bleib bei Mango-Eistee.', k: 'cool', antwort: { von: 'Kevin', text: 'Haha, fair.' }, line: 'Klares Nein. Locker gesagt. Keiner hat ein Problem damit.' },
-        { t: 'Ihh, das ist eklig. Ihr seid doch süchtig.', k: 'hart', antwort: { von: 'Aylin', text: 'Okay, dann bleib halt weg.' }, line: 'Dein Nein ist klar. Aber jetzt ist die Stimmung im Keller.' },
-        { t: 'Vielleicht später.', k: 'ausrede', antwort: { von: 'Aylin', text: 'Okay, später dann!' }, line: '„Später“ heißt: Die Frage kommt garantiert wieder.' },
-        { t: 'Okay, einmal ziehen.', k: 'ja', antwort: { von: 'Kevin', text: 'Siehste, easy.' }, line: 'Einmal bleibt oft nicht einmal. Nikotin macht schnell abhängig.' },
+        { t: 'Ihh, eklig. Ihr seid doch alle süchtig.', k: 'hart', antwort: { von: 'Aylin', text: 'Okay, dann bleib halt weg.' }, line: 'Dein Nein ist klar. Aber jetzt ist die Stimmung im Keller.' },
+        { t: 'Vielleicht später. Ich hab grad keine Lust.', k: 'ausrede', antwort: { von: 'Aylin', text: 'Okay, später dann!' }, line: '„Später“ heißt: Die Frage kommt garantiert wieder.' },
+        { t: 'Okay, einmal ziehen. Was soll schon sein.', k: 'ja', antwort: { von: 'Kevin', text: 'Siehste, easy.' }, line: 'Einmal bleibt oft nicht einmal. Nikotin macht schnell abhängig.' },
       ],
       nein: ['Nee, nicht mein Ding.', 'Brauch ich nicht. Aber ich chill trotzdem mit euch.', 'Nein danke. Meine Lunge will noch Fußball spielen.'],
     },
@@ -5204,10 +5279,10 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
         { von: 'Jeff', text: 'Komm schon, sei kein Frosch.' },
       ],
       opts: [
-        { t: 'Nee, ich lass mich nicht erwischen. Holen wir lieber Pizza?', k: 'cool', antwort: { von: 'Rui', text: 'Haha, Pizza ist eh besser.' }, line: 'Nein gesagt, Alternative gezeigt. So bleibt die Stimmung gut.' },
-        { t: 'Ich bin doch nicht euer Dealer!', k: 'hart', antwort: { von: 'Jeff', text: 'Chill, war nur eine Frage.' }, line: 'Das Nein kommt an. Aber etwas zu laut.' },
-        { t: 'Hab grad kein Geld dabei.', k: 'ausrede', antwort: { von: 'Rui', text: 'Wir geben dir doch Geld!' }, line: 'Die Ausrede zieht nicht. Jetzt musst du doch Nein sagen.' },
-        { t: 'Na gut, gebt her.', k: 'ja', antwort: { von: 'Jeff', text: 'Yes! Danke dir!' }, line: 'Wenn du erwischt wirst, hast du den Ärger. Nicht die anderen.' },
+        { t: 'Nee, ich lass mich nicht erwischen. Pizza?', k: 'cool', antwort: { von: 'Rui', text: 'Haha, Pizza ist eh besser.' }, line: 'Nein gesagt, Alternative gezeigt. So bleibt die Stimmung gut.' },
+        { t: 'Ich bin doch nicht euer Dealer, Leute!', k: 'hart', antwort: { von: 'Jeff', text: 'Chill, war nur eine Frage.' }, line: 'Das Nein kommt an. Aber etwas zu laut.' },
+        { t: 'Hab grad echt kein Geld dabei. Sorry.', k: 'ausrede', antwort: { von: 'Rui', text: 'Wir geben dir doch Geld!' }, line: 'Die Ausrede zieht nicht. Jetzt musst du doch Nein sagen.' },
+        { t: 'Na gut, gebt her. Aber nur dieses Mal.', k: 'ja', antwort: { von: 'Jeff', text: 'Yes! Danke dir!' }, line: 'Wenn du erwischt wirst, hast du den Ärger. Nicht die anderen.' },
       ],
       nein: ['Nee, da mach ich nicht mit.', 'Macht das selbst. Ich bin raus.', 'Nee, ich will keinen Stress im Laden.'],
     },
@@ -5221,10 +5296,10 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
         { von: 'Milan', text: 'Los, du sitzt ganz vorne!' },
       ],
       opts: [
-        { t: 'Nee, ich film keine Leute heimlich. Will ich selbst auch nicht.', k: 'cool', antwort: { von: 'Sara', text: 'Hm. Stimmt eigentlich.' }, line: 'Nein mit Begründung. Das bringt die anderen zum Nachdenken.' },
-        { t: 'Ihr seid so peinlich.', k: 'hart', antwort: { von: 'Milan', text: 'Und du bist langweilig.' }, line: 'Dein Nein ist klar. Aber jetzt geht es nur noch um Beleidigungen.' },
-        { t: 'Mein Akku ist leer.', k: 'ausrede', antwort: { von: 'Milan', text: 'Dann nimm mein Handy!' }, line: 'Die Ausrede ist schnell weg. Jetzt stehst du wieder da.' },
-        { t: 'Okay, ich film.', k: 'ja', antwort: { von: 'Sara', text: 'Yesss!' }, line: 'Heimlich filmen und posten ist nicht erlaubt. Das kann richtig Ärger geben.' },
+        { t: 'Nee, ich film keine Leute heimlich.', k: 'cool', antwort: { von: 'Sara', text: 'Hm. Stimmt eigentlich.' }, line: 'Nein mit Begründung. Das bringt die anderen zum Nachdenken.' },
+        { t: 'Ihr seid so peinlich. Echt jetzt.', k: 'hart', antwort: { von: 'Milan', text: 'Und du bist langweilig.' }, line: 'Dein Nein ist klar. Aber jetzt geht es nur noch um Beleidigungen.' },
+        { t: 'Geht nicht, mein Akku ist fast leer.', k: 'ausrede', antwort: { von: 'Milan', text: 'Dann nimm mein Handy!' }, line: 'Die Ausrede ist schnell weg. Jetzt stehst du wieder da.' },
+        { t: 'Okay, ich film. Aber nur ganz kurz.', k: 'ja', antwort: { von: 'Sara', text: 'Yesss!' }, line: 'Heimlich filmen und posten ist nicht erlaubt. Das kann richtig Ärger geben.' },
       ],
       nein: ['Nee, heimlich filmen ist nicht mein Ding.', 'Ich will auch nicht gefilmt werden. Also nein.', 'Lass mal. Der hat auch so schon einen schlechten Tag.'],
     },
@@ -5239,9 +5314,9 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
       ],
       opts: [
         { t: 'Ich pass. Roasten wir lieber den Montag.', k: 'cool', antwort: { von: 'Dylan', text: 'Haha, der Montag hat es verdient.' }, line: 'Nein gesagt, mit Witz. Und Elias bleibt verschont.' },
-        { t: 'Ihr seid voll die Mobber.', k: 'hart', antwort: { von: 'Luca', text: 'Übertreib mal nicht.' }, line: 'Stimmt vielleicht. Aber so machen alle dicht.' },
-        { t: 'Mir fällt grad nichts ein.', k: 'ausrede', antwort: { von: 'Luca', text: 'Dann schreib einfach „Loser“.' }, line: 'Die Ausrede hilft nicht. Jetzt hast du sogar einen Vorschlag bekommen.' },
-        { t: 'Okay, ich schreib auch was.', k: 'ja', antwort: { von: 'Dylan', text: 'Haha, top!' }, line: 'Elias liest alles. Auch deinen Satz.' },
+        { t: 'Ihr seid voll die Mobber. Echt armselig.', k: 'hart', antwort: { von: 'Luca', text: 'Übertreib mal nicht.' }, line: 'Stimmt vielleicht. Aber so machen alle dicht.' },
+        { t: 'Mir fällt grad echt nichts Gutes ein.', k: 'ausrede', antwort: { von: 'Luca', text: 'Dann schreib einfach „Loser“.' }, line: 'Die Ausrede hilft nicht. Jetzt hast du sogar einen Vorschlag bekommen.' },
+        { t: 'Okay, ich schreib auch was Kleines.', k: 'ja', antwort: { von: 'Dylan', text: 'Haha, top!' }, line: 'Elias liest alles. Auch deinen Satz.' },
       ],
       nein: ['Ich pass.', 'Nicht mit mir. Elias hat euch nichts getan.', 'Roasten wir lieber den Montag.'],
     },
@@ -5255,10 +5330,10 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
         { von: 'Kevin', text: 'Du bist dabei, oder?' },
       ],
       opts: [
-        { t: 'Nee, mein Herz soll heute normal schlagen. Pizza zahl ich selbst.', k: 'cool', antwort: { von: 'Emir', text: 'Haha, fair.' }, line: 'Nein mit Humor. Pizza gibt es trotzdem.' },
-        { t: 'Das ist voll dumm. Ihr kriegt einen Herzinfarkt.', k: 'hart', antwort: { von: 'Kevin', text: 'Oh Mann, Spaßbremse.' }, line: 'Dein Nein ist klar. Aber so hört dir keiner zu.' },
-        { t: 'Hab Bauchweh.', k: 'ausrede', antwort: { von: 'Kevin', text: 'Dann nächste Woche!' }, line: 'Heute bist du raus. Nächste Woche kommt die Frage wieder.' },
-        { t: 'Okay, her damit.', k: 'ja', antwort: { von: 'Emir', text: 'Los geht es!' }, line: 'Nach Dose drei rast dein Herz. Dir wird richtig schlecht.' },
+        { t: 'Nee, mein Herz bleibt heute normal. Pizza?', k: 'cool', antwort: { von: 'Emir', text: 'Haha, fair.' }, line: 'Nein mit Humor. Pizza gibt es trotzdem.' },
+        { t: 'Voll dumm. Ihr kriegt noch einen Herzinfarkt.', k: 'hart', antwort: { von: 'Kevin', text: 'Oh Mann, Spaßbremse.' }, line: 'Dein Nein ist klar. Aber so hört dir keiner zu.' },
+        { t: 'Heute nicht, ich hab echt Bauchweh.', k: 'ausrede', antwort: { von: 'Kevin', text: 'Dann nächste Woche!' }, line: 'Heute bist du raus. Nächste Woche kommt die Frage wieder.' },
+        { t: 'Okay, her damit. Wird schon gehen.', k: 'ja', antwort: { von: 'Emir', text: 'Los geht es!' }, line: 'Nach Dose drei rast dein Herz. Dir wird richtig schlecht.' },
       ],
       nein: ['Nee, mein Herz braucht das nicht.', 'Ich mach nicht mit. Aber zur Pizza bleib ich.', 'Nee danke. Ich will heute Nacht schlafen.'],
     },
@@ -5272,10 +5347,10 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
         { von: 'Nora', text: 'Vertraust du mir etwa nicht?' },
       ],
       opts: [
-        { t: 'Mein Passwort kriegt nicht mal meine Katze. Aber danke!', k: 'cool', antwort: { von: 'Nora', text: 'Haha okay, verstehe.' }, line: 'Nein mit Witz. Dein Account bleibt deiner.' },
-        { t: 'Hältst du mich für blöd?', k: 'hart', antwort: { von: 'Nora', text: 'Wow. War nur nett gemeint.' }, line: 'Dein Account ist sicher. Aber Nora ist jetzt sauer.' },
-        { t: 'Hab es vergessen.', k: 'ausrede', antwort: { von: 'Nora', text: 'Dann setz es neu. Dauert eine Minute!' }, line: 'Die Ausrede ist schnell weg. Und Nora bleibt dran.' },
-        { t: 'Okay, hier ist es.', k: 'ja', antwort: { von: 'Nora', text: 'Top! Warte kurz …' }, line: 'Jetzt kann jemand in deinem Namen posten. Ändere es schnell!' },
+        { t: 'Mein Passwort kriegt nicht mal meine Katze.', k: 'cool', antwort: { von: 'Nora', text: 'Haha okay, verstehe.' }, line: 'Nein mit Witz. Dein Account bleibt deiner.' },
+        { t: 'Hältst du mich für komplett blöd, oder was?', k: 'hart', antwort: { von: 'Nora', text: 'Wow. War nur nett gemeint.' }, line: 'Dein Account ist sicher. Aber Nora ist jetzt sauer.' },
+        { t: 'Hab es vergessen. Echt, keine Ahnung mehr.', k: 'ausrede', antwort: { von: 'Nora', text: 'Dann setz es neu. Dauert eine Minute!' }, line: 'Die Ausrede ist schnell weg. Und Nora bleibt dran.' },
+        { t: 'Okay, hier ist es. Aber sag es keinem.', k: 'ja', antwort: { von: 'Nora', text: 'Top! Warte kurz …' }, line: 'Jetzt kann jemand in deinem Namen posten. Ändere es schnell!' },
       ],
       nein: ['Passwörter teile ich mit niemandem.', 'Nee, das bleibt meins.', 'Follower hol ich mir selbst.'],
     },
@@ -5537,7 +5612,7 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
      say       was die Person sagt (optional)
      body      Körpersprache (optional)
      answer    wahrscheinlichstes Gefühl
-     options   4 Wörter, answer ist dabei
+     options   4 Wörter, answer ist dabei – Nachbarn aus derselben Gefühls-Familie (knifflig!)
      also      Wörter aus options, die „auch drin“ sind (halbe Punkte, Serie bleibt)
      intensity 1 = leicht, 2 = mittel, 3 = stark
      clue      kurze Erklärung: woran erkennt man es?
@@ -5547,178 +5622,178 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
   const C = (window.CREW.content = window.CREW.content || {});
   C.decoder = [
     { id: 'dc01', who: 'Mia', text: 'Beim Sport werden Teams gewählt. Mia wird als Letzte gewählt.', say: 'Passt schon.', body: 'Sie sagt es leise und schaut auf den Boden.',
-      answer: 'Enttäuschung', options: ['Enttäuschung', 'Scham', 'Freude', 'Ekel'], also: ['Scham'], intensity: 2,
+      answer: 'Enttäuschung', options: ['Enttäuschung', 'Kränkung', 'Traurigkeit', 'Scham'], also: ['Kränkung'], intensity: 2,
       clue: 'Leise Stimme, Blick nach unten: Das tut weh. „Passt schon“ versteckt das Gefühl nur.', signs: ['koerper', 'worte', 'situation'] },
     { id: 'dc02', who: 'Tiago', text: 'Tiago bekommt seinen Test zurück: 48 von 60 Punkten.', say: 'Ja, Mann! Endlich!', body: 'Er ballt die Faust und grinst breit.',
-      answer: 'Stolz', options: ['Stolz', 'Scham', 'Angst', 'Langeweile'], intensity: 3,
+      answer: 'Stolz', options: ['Stolz', 'Erleichterung', 'Zufriedenheit', 'Überraschung'], also: ['Zufriedenheit'], intensity: 3,
       clue: 'Faust und breites Grinsen: Er feiert sich. Er hat etwas selbst geschafft.', signs: ['koerper', 'worte', 'situation'] },
     { id: 'dc03', who: 'Aylin', text: 'Aylin soll gleich vor der Klasse ein Referat halten.', say: 'Muss ich wirklich als Erste?', body: 'Ihre Hände zittern. Sie zupft an ihrem Ärmel.',
-      answer: 'Nervosität', options: ['Nervosität', 'Wut', 'Freude', 'Ekel'], intensity: 2,
+      answer: 'Nervosität', options: ['Nervosität', 'Angst', 'Unsicherheit', 'Aufregung'], also: ['Aufregung'], intensity: 2,
       clue: 'Zittern und Zupfen zeigen Anspannung. Vor anderen reden macht fast allen etwas Angst.', signs: ['koerper', 'situation'] },
     { id: 'dc04', who: 'Jeff', text: 'Jeff wartet 20 Minuten auf den Bus. Dann fährt der Bus einfach vorbei.', say: 'Das gibt’s doch nicht!', body: 'Er schreit hinterher und tritt gegen einen Mülleimer.',
-      answer: 'Wut', options: ['Wut', 'Trauer', 'Überraschung', 'Stolz'], intensity: 3,
+      answer: 'Wut', options: ['Wut', 'Frust', 'Ärger', 'Enttäuschung'], also: ['Ärger'], intensity: 3,
       clue: 'Schreien und Treten: viel Energie im Körper. Das ist Wut, und zwar stark.', signs: ['koerper', 'worte', 'situation'] },
     { id: 'dc05', who: 'Noah', text: 'Im Klassenchat postet jemand ein altes Kinderfoto von Noah. Alle schicken Lach-Smileys.', say: 'Löscht das. Sofort.', body: 'Sein Gesicht wird rot. Er dreht das Handy um.',
-      answer: 'Scham', options: ['Scham', 'Wut', 'Freude', 'Langeweile'], also: ['Wut'], intensity: 3,
+      answer: 'Scham', options: ['Scham', 'Wut', 'Verlegenheit', 'Kränkung'], also: ['Wut'], intensity: 3,
       clue: 'Rotes Gesicht, Handy weg: Er will sich verstecken. Wut ist auch dabei, aber Scham ist vorne.', signs: ['koerper', 'situation'] },
     { id: 'dc06', who: 'Sara', text: 'Morgen beginnt Saras erstes Praktikum. In einem Friseursalon.', say: 'Ich hab mir schon drei Outfits rausgelegt!', body: 'Sie redet schnell und hüpft fast dabei.',
-      answer: 'Vorfreude', options: ['Vorfreude', 'Nervosität', 'Ekel', 'Trauer'], also: ['Nervosität'], intensity: 3,
+      answer: 'Vorfreude', options: ['Vorfreude', 'Nervosität', 'Aufregung', 'Stolz'], also: ['Aufregung'], intensity: 3,
       clue: 'Hüpfen und viel planen: Sie freut sich auf etwas, das noch kommt. Das heißt Vorfreude.', signs: ['koerper', 'worte'] },
     { id: 'dc07', who: 'Luca', text: 'Luca hat sein Handy im Bus verloren. Eine Schülerin bringt es ihm zurück.', say: 'Echt jetzt? Du rettest mich!', body: 'Er atmet laut aus und lacht.',
-      answer: 'Erleichterung', options: ['Erleichterung', 'Neid', 'Wut', 'Langeweile'], intensity: 3,
+      answer: 'Erleichterung', options: ['Erleichterung', 'Dankbarkeit', 'Freude', 'Überraschung'], also: ['Dankbarkeit'], intensity: 3,
       clue: 'Laut ausatmen heißt oft: Die Sorge fällt ab. Das ist Erleichterung.', signs: ['koerper', 'situation'] },
     { id: 'dc08', who: 'Emir', text: 'Emir wollte mit seinem besten Freund auf die Schueberfouer. Der Freund geht jetzt mit anderen.', say: 'Viel Spaß euch. Echt.', body: 'Er lächelt, aber nur mit dem Mund.',
-      answer: 'Enttäuschung', options: ['Enttäuschung', 'Eifersucht', 'Freude', 'Ekel'], also: ['Eifersucht'], intensity: 2,
+      answer: 'Enttäuschung', options: ['Enttäuschung', 'Eifersucht', 'Traurigkeit', 'Kränkung'], also: ['Eifersucht'], intensity: 2,
       clue: 'Ein Lächeln nur mit dem Mund ist oft nicht echt. Sein Plan ist geplatzt.', signs: ['koerper', 'situation'] },
     { id: 'dc09', who: 'Yara', text: 'Yara soll im Praktikum einen verstopften Abfluss sauber machen.', say: 'Das riecht wie ein drei Wochen alter Döner.', body: 'Sie hält sich die Nase zu und dreht den Kopf weg.',
-      answer: 'Ekel', options: ['Ekel', 'Stolz', 'Trauer', 'Vorfreude'], intensity: 2,
+      answer: 'Ekel', options: ['Ekel', 'Abscheu', 'Überraschung', 'Wut'], also: ['Abscheu'], intensity: 2,
       clue: 'Nase zu, Kopf weg: typisch Ekel. Ihr Witz zeigt aber: Sie kommt damit klar.', signs: ['koerper', 'worte'] },
     { id: 'dc10', who: 'Dylan', text: 'Dylan kommt in die Klasse. Alle springen auf und singen für ihn.', say: 'Was? Woher wisst ihr das?', body: 'Seine Augen werden groß. Er bleibt in der Tür stehen.',
-      answer: 'Überraschung', options: ['Überraschung', 'Freude', 'Angst', 'Ekel'], also: ['Freude'], intensity: 3,
+      answer: 'Überraschung', options: ['Überraschung', 'Freude', 'Schreck', 'Staunen'], also: ['Freude'], intensity: 3,
       clue: 'Große Augen, Stehenbleiben: Das kam völlig unerwartet. Die Freude kommt gleich danach.', signs: ['koerper', 'worte'] },
     { id: 'dc11', who: 'Inês', text: 'Inês wartet seit Stunden auf eine Antwort im Chat. Da steht nur: gelesen.', say: 'Egal. Ist mir doch egal.', body: 'Sie schaut alle zwei Minuten aufs Handy.',
-      answer: 'Unsicherheit', options: ['Unsicherheit', 'Freude', 'Stolz', 'Ekel'], intensity: 2,
+      answer: 'Unsicherheit', options: ['Unsicherheit', 'Nervosität', 'Scham', 'Verlegenheit'], intensity: 2,
       clue: 'Sie sagt „egal“, schaut aber ständig nach. Das Verhalten verrät mehr als die Worte.', signs: ['koerper', 'worte', 'situation'] },
     { id: 'dc12', who: 'Lara', text: 'Lara hat drei Wochen an einem Skate-Trick geübt. Heute klappt er zum ersten Mal.', say: 'Habt ihr das gesehen?!', body: 'Sie reißt beide Arme hoch.',
-      answer: 'Stolz', options: ['Stolz', 'Scham', 'Langeweile', 'Angst'], intensity: 3,
+      answer: 'Stolz', options: ['Stolz', 'Freude', 'Zufriedenheit', 'Erleichterung'], intensity: 3,
       clue: 'Arme hoch, und alle sollen hinschauen: Sie ist stolz auf ihre Leistung.', signs: ['koerper', 'worte', 'situation'] },
     { id: 'dc13', who: 'Milan', text: 'Milan kippt aus Versehen Kaffee über die Blätter der Lehrerin.', say: 'Oh nein. Sorry, sorry, sorry!', body: 'Er wischt hektisch mit dem Ärmel herum.',
-      answer: 'Schuldgefühl', options: ['Schuldgefühl', 'Scham', 'Stolz', 'Langeweile'], also: ['Scham'], intensity: 2,
+      answer: 'Schuldgefühl', options: ['Schuldgefühl', 'Scham', 'Verlegenheit', 'Sorge'], also: ['Scham'], intensity: 2,
       clue: 'Oft „sorry“ sagen und es schnell gutmachen wollen: Er fühlt sich schuldig.', signs: ['koerper', 'worte'] },
     { id: 'dc14', who: 'Jana', text: 'Jana sitzt in der Pause allein auf der Bank. Ihre Freundinnen sind krank.', body: 'Sie scrollt durchs Handy, ohne richtig hinzuschauen.',
-      answer: 'Einsamkeit', options: ['Einsamkeit', 'Langeweile', 'Wut', 'Stolz'], also: ['Langeweile'], intensity: 1,
+      answer: 'Einsamkeit', options: ['Einsamkeit', 'Langeweile', 'Traurigkeit', 'Enttäuschung'], also: ['Langeweile'], intensity: 1,
       clue: 'Allein sein und ziellos scrollen. Es ist eher leise, also leichte Einsamkeit.', signs: ['koerper', 'situation'] },
     { id: 'dc15', who: 'Rui', text: 'Rui fährt zum ersten Mal allein mit dem Zug zur Gare.', say: 'Und wenn ich in den falschen Zug steige?', body: 'Er prüft zum fünften Mal die Fahrplan-App.',
-      answer: 'Nervosität', options: ['Nervosität', 'Angst', 'Stolz', 'Ekel'], also: ['Angst'], intensity: 2,
+      answer: 'Nervosität', options: ['Nervosität', 'Angst', 'Aufregung', 'Unsicherheit'], also: ['Angst'], intensity: 2,
       clue: 'Immer wieder prüfen und „was wenn“ fragen: typisch Nervosität. Etwas Neues steht an.', signs: ['koerper', 'worte', 'situation'] },
     { id: 'dc16', who: 'Amira', text: 'Im Kochatelier ist Amiras Kuchen als Erstes aufgegessen.', say: 'Hab ich doch gesagt, der ist gut!', body: 'Sie strahlt und verschränkt lässig die Arme.',
-      answer: 'Stolz', options: ['Stolz', 'Neid', 'Scham', 'Angst'], intensity: 2,
+      answer: 'Stolz', options: ['Stolz', 'Freude', 'Überraschung', 'Verlegenheit'], intensity: 2,
       clue: 'Strahlen und „hab ich doch gesagt“: Sie ist stolz. Lässig heißt: nicht übertrieben, also mittel.', signs: ['koerper', 'worte', 'situation'] },
     { id: 'dc17', who: 'Kevin', text: 'Kevin will beim Fußball mitspielen. Einer sagt: „Wir sind schon voll.“ Dabei fehlt noch jemand.', say: 'Dann halt nicht.', body: 'Er dreht sich schnell weg und steckt die Hände in die Taschen.',
-      answer: 'Enttäuschung', options: ['Enttäuschung', 'Wut', 'Freude', 'Ekel'], also: ['Wut'], intensity: 2,
+      answer: 'Enttäuschung', options: ['Enttäuschung', 'Wut', 'Frust', 'Traurigkeit'], also: ['Wut'], intensity: 2,
       clue: 'Schnell wegdrehen und „dann halt nicht“: Er ist verletzt. Er zeigt es nur nicht offen.', signs: ['koerper', 'worte', 'situation'] },
     { id: 'dc18', who: 'Nora', text: 'Nora lässt ihr Handy fallen. Das Display ist komplett gesplittert.', say: 'Nein, nein, nein. Bitte nicht.', body: 'Sie hält es mit beiden Händen und starrt drauf.',
-      answer: 'Schreck', options: ['Schreck', 'Langeweile', 'Stolz', 'Vorfreude'], intensity: 3,
+      answer: 'Schreck', options: ['Schreck', 'Angst', 'Überraschung', 'Panik'], intensity: 3,
       clue: 'Erstarren und „nein, nein, nein“: Der Schreck sitzt tief. Ärger kommt oft erst danach.', signs: ['koerper', 'worte', 'situation'] },
     { id: 'dc19', who: 'Elias', text: 'Elias rechnet dieselbe Mathe-Aufgabe zum vierten Mal. Wieder falsch.', say: 'Ich check das nie! Nie!', body: 'Er schiebt das Heft weg und lehnt sich zurück.',
-      answer: 'Frust', options: ['Frust', 'Wut', 'Freude', 'Erleichterung'], also: ['Wut'], intensity: 2,
+      answer: 'Frust', options: ['Frust', 'Wut', 'Ärger', 'Enttäuschung'], also: ['Wut'], intensity: 2,
       clue: 'Es klappt immer wieder nicht. Heft wegschieben heißt: Er hat genug. Das ist Frust.', signs: ['koerper', 'worte', 'situation'] },
     { id: 'dc20', who: 'Lena', text: 'Lenas beste Freundin hängt jetzt ständig mit Sara ab.', say: 'Aha. Schön für euch.', body: 'Sie schaut weg. Ihre Stimme wird kühl.',
-      answer: 'Eifersucht', options: ['Eifersucht', 'Freude', 'Ekel', 'Langeweile'], intensity: 2,
+      answer: 'Eifersucht', options: ['Eifersucht', 'Neid', 'Traurigkeit', 'Wut'], intensity: 2,
       clue: 'Kühle Stimme und „schön für euch“: Sie hat Angst, ihre Freundin zu verlieren.', signs: ['koerper', 'worte', 'situation'] },
     { id: 'dc21', who: 'Tiago', text: 'Tiago hat im Streit seinen Kumpel beleidigt. Jetzt redet der nicht mehr mit ihm.', say: 'Ich hab das nicht so gemeint …', body: 'Er tippt eine Nachricht und löscht sie wieder.',
-      answer: 'Schuldgefühl', options: ['Schuldgefühl', 'Stolz', 'Freude', 'Ekel'], intensity: 2,
+      answer: 'Schuldgefühl', options: ['Schuldgefühl', 'Scham', 'Sorge', 'Verlegenheit'], intensity: 2,
       clue: 'Er will es wiedergutmachen, traut sich aber noch nicht. Das zeigt ein Schuldgefühl.', signs: ['koerper', 'worte', 'situation'] },
     { id: 'dc22', who: 'Aylin', text: 'Aylin gewinnt das Kicker-Turnier im Foyer. Gegen zwei Lehrer!', say: 'Revanche? Jederzeit!', body: 'Sie tanzt einmal um den Tisch.',
-      answer: 'Freude', options: ['Freude', 'Scham', 'Angst', 'Ekel'], intensity: 3,
+      answer: 'Freude', options: ['Freude', 'Stolz', 'Erleichterung', 'Überraschung'], intensity: 3,
       clue: 'Tanzen und Sprüche klopfen: pure Freude. Ein bisschen Stolz ist sicher auch dabei.', signs: ['koerper', 'worte', 'situation'] },
     { id: 'dc23', who: 'Jeff', text: 'Jeff steht an der Kasse. Sein Geld reicht nicht für alles.', say: 'Äh … dann lass ich die Cola weg.', body: 'Er lacht kurz und wird rot.',
-      answer: 'Verlegenheit', options: ['Verlegenheit', 'Stolz', 'Wut', 'Vorfreude'], intensity: 2, heikel: true,
+      answer: 'Verlegenheit', options: ['Verlegenheit', 'Scham', 'Unsicherheit', 'Freude'], intensity: 2, heikel: true,
       clue: 'Kurzes Lachen und rot werden: Die Situation ist ihm unangenehm. Er bleibt aber cool.', signs: ['koerper', 'situation'] },
     { id: 'dc24', who: 'Noah', text: 'Noahs Lieblingsserie ist vorbei. Die allerletzte Folge ist gelaufen.', say: 'Und was mach ich jetzt mit meinem Leben?', body: 'Er grinst dabei ein bisschen.',
-      answer: 'Trauer', options: ['Trauer', 'Wut', 'Ekel', 'Angst'], intensity: 1,
+      answer: 'Trauer', options: ['Trauer', 'Enttäuschung', 'Einsamkeit', 'Wut'], intensity: 1,
       clue: 'Er übertreibt mit Humor. Ein bisschen traurig ist er trotzdem. Also: leicht.', signs: ['koerper', 'worte'] },
     { id: 'dc25', who: 'Sara', text: 'Sara hat ihre Hausaufgaben vergessen. Die Lehrerin sagt: „Heute ist das okay.“', say: 'Puh. Danke!', body: 'Ihre Schultern sinken nach unten.',
-      answer: 'Erleichterung', options: ['Erleichterung', 'Wut', 'Neid', 'Ekel'], intensity: 2,
+      answer: 'Erleichterung', options: ['Erleichterung', 'Freude', 'Dankbarkeit', 'Stolz'], intensity: 2,
       clue: '„Puh“ und lockere Schultern: Die Anspannung ist weg. Das ist Erleichterung.', signs: ['koerper', 'worte'] },
     { id: 'dc26', who: 'Luca', text: 'Lucas Kumpel darf beim Turnier spielen. Luca muss auf die Bank.', say: 'Klar. Der Trainer mag ihn halt.', body: 'Er verdreht die Augen.',
-      answer: 'Neid', options: ['Neid', 'Freude', 'Scham', 'Angst'], intensity: 2,
+      answer: 'Neid', options: ['Neid', 'Eifersucht', 'Frust', 'Enttäuschung'], intensity: 2,
       clue: 'Luca will das haben, was der andere hat. Augenrollen und Spruch zeigen Neid.', signs: ['koerper', 'worte', 'situation'] },
     { id: 'dc27', who: 'Emir', text: 'Die Stunde dauert noch 40 Minuten. Emir schaut zur Uhr.', say: 'Ist die Uhr kaputt oder was?', body: 'Er malt Kreise ins Heft und gähnt.',
-      answer: 'Langeweile', options: ['Langeweile', 'Angst', 'Stolz', 'Ekel'], intensity: 2,
+      answer: 'Langeweile', options: ['Langeweile', 'Frust', 'Ungeduld', 'Traurigkeit'], intensity: 2,
       clue: 'Gähnen und Kritzeln: Der Kopf hat nichts zu tun. Klassische Langeweile.', signs: ['koerper', 'worte'] },
     { id: 'dc28', who: 'Yara', text: 'Yara hört nachts ein lautes Geräusch im Flur.', say: 'Hallo? … Ist da wer?', body: 'Sie zieht die Decke bis zur Nase.',
-      answer: 'Angst', options: ['Angst', 'Freude', 'Langeweile', 'Stolz'], intensity: 2,
+      answer: 'Angst', options: ['Angst', 'Nervosität', 'Sorge', 'Schreck'], intensity: 2,
       clue: 'Leise fragen und sich verstecken: Das ist Angst. Der Körper sucht Schutz.', signs: ['koerper', 'worte', 'situation'] },
     { id: 'dc29', who: 'Dylan', text: 'Dylans Chef im Praktikum lobt ihn vor allen anderen.', say: 'Ach, war nichts Besonderes.', body: 'Er lächelt und kratzt sich am Kopf.',
-      answer: 'Stolz', options: ['Stolz', 'Verlegenheit', 'Wut', 'Ekel'], also: ['Verlegenheit'], intensity: 2,
+      answer: 'Stolz', options: ['Stolz', 'Verlegenheit', 'Freude', 'Überraschung'], also: ['Verlegenheit'], intensity: 2,
       clue: 'Er spielt es runter, lächelt aber. Innen ist er stolz. Lob annehmen ist nicht leicht.', signs: ['koerper', 'worte', 'situation'] },
     { id: 'dc30', who: 'Inês', text: 'Inês und ihre Freundin vertragen sich. Nach einer Woche Streit.', say: 'Ich hab dich echt vermisst.', body: 'Sie umarmt ihre Freundin lange.',
-      answer: 'Freude', options: ['Freude', 'Erleichterung', 'Ekel', 'Wut'], also: ['Erleichterung'], intensity: 3,
+      answer: 'Freude', options: ['Freude', 'Erleichterung', 'Stolz', 'Dankbarkeit'], also: ['Erleichterung'], intensity: 3,
       clue: 'Lange Umarmung, ehrliche Worte: große Freude. Erleichterung ist auch dabei.', signs: ['koerper', 'worte', 'situation'] },
     { id: 'dc31', who: 'Lara', text: 'Jemand hat Laras Zeichnung im Flur mit dickem Stift bekritzelt.', say: 'Wer war das?!', body: 'Sie ballt die Fäuste. Ihre Stimme wird laut.',
-      answer: 'Wut', options: ['Wut', 'Freude', 'Langeweile', 'Scham'], intensity: 3,
+      answer: 'Wut', options: ['Wut', 'Ärger', 'Frust', 'Kränkung'], also: ['Ärger'], intensity: 3,
       clue: 'Fäuste und laute Stimme: starke Wut. Jemand hat etwas kaputt gemacht, das ihr wichtig ist.', signs: ['koerper', 'worte', 'situation'] },
     { id: 'dc32', who: 'Milan', text: 'Milan soll im Schwimmbad vom Drei-Meter-Brett springen. Zum ersten Mal.', say: 'Ich schau erst mal den anderen zu.', body: 'Er stellt sich ganz hinten in die Schlange.',
-      answer: 'Angst', options: ['Angst', 'Ekel', 'Stolz', 'Langeweile'], intensity: 2,
+      answer: 'Angst', options: ['Angst', 'Sorge', 'Nervosität', 'Schreck'], intensity: 2,
       clue: 'Er schiebt es raus und bleibt hinten. So zeigt sich Angst oft: ganz leise.', signs: ['koerper', 'worte', 'situation'] },
     { id: 'dc33', who: 'Jana', text: 'Die Klasse fährt für zwei Tage nach Echternach. Jana darf mit.', say: 'Wann geht’s los? Bitte morgen!', body: 'Sie trommelt mit den Händen auf den Tisch.',
-      answer: 'Vorfreude', options: ['Vorfreude', 'Trauer', 'Ekel', 'Scham'], intensity: 3,
+      answer: 'Vorfreude', options: ['Vorfreude', 'Aufregung', 'Freude', 'Nervosität'], also: ['Aufregung'], intensity: 3,
       clue: 'Trommeln und „bitte morgen“: Sie kann es kaum erwarten. Das ist Vorfreude.', signs: ['koerper', 'worte'] },
     { id: 'dc34', who: 'Rui', text: 'Rui erzählt einen Witz. Niemand lacht. Es ist ganz still.', say: 'Okay … war wohl nix.', body: 'Er lacht kurz allein und schaut zur Seite.',
-      answer: 'Verlegenheit', options: ['Verlegenheit', 'Stolz', 'Wut', 'Vorfreude'], intensity: 1,
+      answer: 'Verlegenheit', options: ['Verlegenheit', 'Scham', 'Freude', 'Unsicherheit'], intensity: 1,
       clue: 'Kurzes Lachen, Blick zur Seite: Es ist ihm etwas peinlich. Aber nur ein bisschen.', signs: ['koerper', 'worte', 'situation'] },
     { id: 'dc35', who: 'Amira', text: 'Amira bekommt eine Nachricht: Sie hat den Praktikumsplatz in der Werkstatt!', say: 'Ich hab ihn! Ich hab den Platz!', body: 'Sie springt auf und zeigt allen das Handy.',
-      answer: 'Freude', options: ['Freude', 'Angst', 'Neid', 'Langeweile'], intensity: 3,
+      answer: 'Freude', options: ['Freude', 'Überraschung', 'Dankbarkeit', 'Stolz'], intensity: 3,
       clue: 'Aufspringen und es allen zeigen: große Freude. Sie hat etwas Wichtiges erreicht.', signs: ['koerper', 'worte', 'situation'] },
     { id: 'dc36', who: 'Kevin', text: 'Die Lehrerin sagt vor allen: „Kevin, schon wieder zu spät?“', say: 'Ja, ja. Der Bus halt.', body: 'Er setzt sich schnell und zieht die Kapuze hoch.',
-      answer: 'Scham', options: ['Scham', 'Ärger', 'Freude', 'Stolz'], also: ['Ärger'], intensity: 2,
+      answer: 'Scham', options: ['Scham', 'Ärger', 'Verlegenheit', 'Kränkung'], also: ['Ärger'], intensity: 2,
       clue: 'Vor allen angesprochen werden ist unangenehm. Kapuze hoch heißt: Er will unsichtbar sein.', signs: ['koerper', 'situation'] },
     { id: 'dc37', who: 'Nora', text: 'Nora sieht, wie ein Junge einem Kleineren die Mütze wegnimmt.', say: 'Hey! Gib die sofort zurück!', body: 'Sie geht schnell hin. Ihr Blick ist hart.',
-      answer: 'Wut', options: ['Wut', 'Freude', 'Langeweile', 'Ekel'], intensity: 2,
+      answer: 'Wut', options: ['Wut', 'Ärger', 'Empörung', 'Frust'], also: ['Empörung'], intensity: 2,
       clue: 'Unfair zu Schwächeren: Das macht wütend. Ihre Wut hilft hier sogar jemandem.', signs: ['koerper', 'worte', 'situation'] },
     { id: 'dc38', who: 'Elias', text: 'Elias probiert im Kochatelier zum ersten Mal Kachkéis.', say: 'Ähm … interessant.', body: 'Er schluckt langsam und greift sofort zum Wasser.',
-      answer: 'Ekel', options: ['Ekel', 'Freude', 'Stolz', 'Angst'], intensity: 1,
+      answer: 'Ekel', options: ['Ekel', 'Abscheu', 'Überraschung', 'Ärger'], also: ['Abscheu'], intensity: 1,
       clue: 'Er bleibt höflich. Aber der Griff zum Wasser verrät ihn: leichter Ekel.', signs: ['koerper', 'worte'] },
     { id: 'dc39', who: 'Milan', text: 'Milans Kumpel schreibt ihm: „Wir müssen reden.“ Sonst nichts.', say: 'Hä? Was hab ich gemacht?', body: 'Er wippt mit dem Fuß und liest die Nachricht immer wieder.',
-      answer: 'Nervosität', options: ['Nervosität', 'Freude', 'Ekel', 'Langeweile'], intensity: 2,
+      answer: 'Nervosität', options: ['Nervosität', 'Angst', 'Aufregung', 'Sorge'], intensity: 2,
       clue: 'Wippen und immer wieder lesen: Er weiß nicht, was kommt. Das macht nervös.', signs: ['koerper', 'worte', 'situation'] },
     { id: 'dc40', who: 'Dylan', text: 'Dylan verliert im Handyspiel zum 50. Mal dasselbe Level.', say: 'Dieses Spiel ist sowas von unfair!', body: 'Er wirft das Handy aufs Sofa.',
-      answer: 'Frust', options: ['Frust', 'Freude', 'Scham', 'Angst'], intensity: 3,
+      answer: 'Frust', options: ['Frust', 'Wut', 'Enttäuschung', 'Ungeduld'], intensity: 3,
       clue: 'Immer wieder scheitern, dann das Handy werfen: starker Frust.', signs: ['koerper', 'worte', 'situation'] },
     { id: 'dc41', who: 'Yara', text: 'Yara ist neu in der Klasse. Alle anderen kennen sich schon.', say: 'Ähm … ist hier noch frei?', body: 'Sie spricht sehr leise und hält ihre Tasche fest.',
-      answer: 'Unsicherheit', options: ['Unsicherheit', 'Wut', 'Stolz', 'Ekel'], intensity: 2,
+      answer: 'Unsicherheit', options: ['Unsicherheit', 'Angst', 'Scham', 'Nervosität'], intensity: 2,
       clue: 'Leise Stimme, Tasche festhalten: Sie weiß noch nicht, ob sie willkommen ist.', signs: ['koerper', 'worte', 'situation'] },
     { id: 'dc42', who: 'Jana', text: 'Vor dem Supermarkt ist ein Hund angebunden. Es regnet stark.', say: 'Du Armer, du bist ja ganz nass.', body: 'Jana geht in die Hocke und hält ihm die Hand hin.',
-      answer: 'Mitgefühl', options: ['Mitgefühl', 'Ekel', 'Stolz', 'Langeweile'], intensity: 2,
+      answer: 'Mitgefühl', options: ['Mitgefühl', 'Traurigkeit', 'Sorge', 'Dankbarkeit'], intensity: 2,
       clue: 'Sie spürt, wie es dem Hund geht, und will helfen. Das ist Mitgefühl.', signs: ['koerper', 'worte', 'situation'] },
     { id: 'dc43', who: 'Emir', text: 'Emir bekommt von seiner Oma genau das Spiel, das er sich gewünscht hat.', say: 'Oma, woher wusstest du das?', body: 'Er drückt das Spiel an sich und umarmt sie.',
-      answer: 'Dankbarkeit', options: ['Dankbarkeit', 'Ekel', 'Angst', 'Langeweile'], intensity: 3,
+      answer: 'Dankbarkeit', options: ['Dankbarkeit', 'Freude', 'Erleichterung', 'Verlegenheit'], intensity: 3,
       clue: 'Umarmung und Staunen: Er freut sich und ist dankbar. Jemand hat an ihn gedacht.', signs: ['koerper', 'worte', 'situation'] },
     { id: 'dc44', who: 'Sara', text: 'Sara merkt: Sie hat zwei Stunden für die falsche Prüfung gelernt.', say: 'Das ist jetzt ein Witz, oder?', body: 'Sie lacht, aber es klingt verzweifelt.',
-      answer: 'Frust', options: ['Frust', 'Überraschung', 'Stolz', 'Langeweile'], also: ['Überraschung'], intensity: 3,
+      answer: 'Frust', options: ['Frust', 'Überraschung', 'Ärger', 'Enttäuschung'], also: ['Überraschung'], intensity: 3,
       clue: 'Viel Mühe für nichts: Das frustriert. Das Lachen ist nicht fröhlich, sondern verzweifelt.', signs: ['worte', 'situation'] },
     { id: 'dc45', who: 'Kevin', text: 'Kevin sieht Fotos von einer Party. Fast die ganze Klasse war da, nur er nicht.', body: 'Er legt das Handy weg und bleibt lange liegen.',
-      answer: 'Einsamkeit', options: ['Einsamkeit', 'Freude', 'Ekel', 'Stolz'], intensity: 3,
+      answer: 'Einsamkeit', options: ['Einsamkeit', 'Traurigkeit', 'Langeweile', 'Enttäuschung'], intensity: 3,
       clue: 'Nicht eingeladen sein tut weh. Lange liegen bleiben zeigt: Das Gefühl ist stark.', signs: ['koerper', 'situation'] },
     { id: 'dc46', who: 'Luca', text: 'Luca soll im Praktikum zum ersten Mal allein die Kasse machen.', say: 'Okay. Ich schaff das. Glaub ich.', body: 'Er atmet tief durch und richtet sich auf.',
-      answer: 'Nervosität', options: ['Nervosität', 'Ekel', 'Langeweile', 'Trauer'], intensity: 1,
+      answer: 'Nervosität', options: ['Nervosität', 'Angst', 'Aufregung', 'Unsicherheit'], intensity: 1,
       clue: 'Tief durchatmen und sich Mut machen: etwas nervös, aber er hat es im Griff.', signs: ['koerper', 'worte', 'situation'] },
     // Kleine Alltagsmomente (eher leichte Gefühle)
     { id: 'dc47', who: 'Mia', text: 'Jemand hat Mias Lieblingsplatz im Bus genommen. Sie setzt sich woanders hin.', say: 'Na super. Danke auch.', body: 'Sie rollt kurz mit den Augen und setzt die Kopfhörer auf.',
-      answer: 'Ärger', options: ['Ärger', 'Angst', 'Freude', 'Scham'], intensity: 1,
+      answer: 'Ärger', options: ['Ärger', 'Wut', 'Frust', 'Enttäuschung'], intensity: 1,
       clue: 'Augenrollen und ein Spruch: Sie ist genervt. Aber sie regt sich nicht lange auf. Also leicht.', signs: ['koerper', 'worte', 'situation'] },
     { id: 'dc48', who: 'Noah', text: 'Noah findet in seiner Jacke noch einen Müsliriegel.', say: 'Ey, nice. Frühstück gerettet.', body: 'Er grinst kurz und isst ihn im Gehen.',
-      answer: 'Freude', options: ['Freude', 'Wut', 'Scham', 'Angst'], intensity: 1,
+      answer: 'Freude', options: ['Freude', 'Stolz', 'Überraschung', 'Erleichterung'], intensity: 1,
       clue: 'Kurzes Grinsen, dann geht der Tag weiter: eine kleine Freude. Also leicht.', signs: ['koerper', 'worte'] },
     { id: 'dc49', who: 'Lara', text: 'Lara wollte in der Pause Pommes kaufen. Heute gibt es keine.', say: 'Schade. Dann halt Nudeln.', body: 'Sie zuckt mit den Schultern.',
-      answer: 'Enttäuschung', options: ['Enttäuschung', 'Wut', 'Angst', 'Stolz'], intensity: 1,
+      answer: 'Enttäuschung', options: ['Enttäuschung', 'Traurigkeit', 'Frust', 'Kränkung'], intensity: 1,
       clue: 'Schulterzucken und „schade“: Sie ist kurz enttäuscht. Aber schnell wieder okay.', signs: ['koerper', 'worte', 'situation'] },
     { id: 'dc50', who: 'Elias', text: 'Elias ist zum ersten Mal im neuen Gebäude. Er findet den Raum nicht.', say: 'Äh, sorry … wo ist Raum 12?', body: 'Er spricht leise, lächelt aber dabei.',
-      answer: 'Unsicherheit', options: ['Unsicherheit', 'Wut', 'Ekel', 'Stolz'], intensity: 1,
+      answer: 'Unsicherheit', options: ['Unsicherheit', 'Nervosität', 'Scham', 'Angst'], intensity: 1,
       clue: 'Leise fragen, aber lächeln: Er ist etwas unsicher. Nur ein bisschen.', signs: ['koerper', 'worte', 'situation'] },
     { id: 'dc51', who: 'Nora', text: 'Nora hat ihr Fahrrad selbst repariert. Der Reifen hält.', say: 'Geht doch.', body: 'Sie nickt kurz und wischt sich die Hände ab.',
-      answer: 'Stolz', options: ['Stolz', 'Trauer', 'Angst', 'Ekel'], intensity: 1,
+      answer: 'Stolz', options: ['Stolz', 'Freude', 'Zufriedenheit', 'Erleichterung'], intensity: 1,
       clue: '„Geht doch“ und ein kurzes Nicken: Sie ist zufrieden mit sich. Leiser Stolz.', signs: ['koerper', 'worte', 'situation'] },
     { id: 'dc52', who: 'Inês', text: 'Inês bekommt im Bus eine Nachricht von einer alten Freundin.', say: 'Oh, die gibt’s ja auch noch!', body: 'Sie hebt die Augenbrauen und lächelt.',
-      answer: 'Überraschung', options: ['Überraschung', 'Wut', 'Ekel', 'Scham'], intensity: 1,
+      answer: 'Überraschung', options: ['Überraschung', 'Freude', 'Schreck', 'Staunen'], also: ['Staunen'], intensity: 1,
       clue: 'Augenbrauen hoch: Das kam unerwartet. Aber ganz entspannt, also leicht.', signs: ['koerper', 'worte', 'situation'] },
     { id: 'dc53', who: 'Amira', text: 'Amira stolpert im Flur fast über ihre Tasche. Keiner hat es gesehen.', say: 'Hoppla. Zum Glück guckt keiner.', body: 'Sie schaut sich schnell um und lacht leise.',
-      answer: 'Verlegenheit', options: ['Verlegenheit', 'Wut', 'Trauer', 'Stolz'], intensity: 1,
+      answer: 'Verlegenheit', options: ['Verlegenheit', 'Scham', 'Freude', 'Stolz'], intensity: 1,
       clue: 'Schnell umschauen, leise lachen: ein kleiner peinlicher Moment. Nichts Großes.', signs: ['koerper', 'worte', 'situation'] },
 
     // Heikel (nur mit Freigabe der Lehrkraft)
     { id: 'dc60', who: 'Tiago', text: 'Tiagos Eltern streiten laut in der Küche. Er sitzt in seinem Zimmer.', body: 'Er macht die Musik lauter und starrt an die Decke.',
-      answer: 'Sorge', options: ['Sorge', 'Freude', 'Langeweile', 'Stolz'], intensity: 2, heikel: true,
+      answer: 'Sorge', options: ['Sorge', 'Angst', 'Traurigkeit', 'Unsicherheit'], intensity: 2, heikel: true,
       clue: 'Musik lauter heißt: Er will es nicht hören. Streit zu Hause macht vielen Sorgen.', signs: ['koerper', 'situation'] },
     { id: 'dc61', who: 'Lena', text: 'Lenas Katze ist gestern gestorben. In der Schule fragt jemand: „Alles okay?“', say: 'Ja. Geht schon.', body: 'Ihre Augen sind rot. Sie spricht sehr leise.',
-      answer: 'Trauer', options: ['Trauer', 'Wut', 'Langeweile', 'Stolz'], intensity: 3, heikel: true,
+      answer: 'Trauer', options: ['Trauer', 'Einsamkeit', 'Enttäuschung', 'Sorge'], intensity: 3, heikel: true,
       clue: 'Rote Augen, leise Stimme: große Trauer. „Geht schon“ heißt hier: Ich will nicht reden.', signs: ['koerper', 'worte', 'situation'] },
     { id: 'dc62', who: 'Aylin', text: 'Jemand kommentiert Aylins neue Frisur nur mit: „Mutig.“', say: 'Wie meinst du das?', body: 'Sie fasst sich an die Haare und checkt die Handykamera.',
-      answer: 'Unsicherheit', options: ['Unsicherheit', 'Freude', 'Langeweile', 'Ekel'], intensity: 2, heikel: true,
+      answer: 'Unsicherheit', options: ['Unsicherheit', 'Nervosität', 'Scham', 'Verlegenheit'], intensity: 2, heikel: true,
       clue: 'Haare anfassen, Kamera checken: Sie zweifelt plötzlich an sich. Ein Wort kann viel auslösen.', signs: ['koerper', 'worte', 'situation'] },
     { id: 'dc63', who: 'Rui', text: 'Jemand fragt Rui zum dritten Mal: „Und woher kommst du wirklich?“', say: 'Aus Esch. Wie schon gesagt.', body: 'Er atmet tief ein und verdreht kurz die Augen.',
-      answer: 'Ärger', options: ['Ärger', 'Freude', 'Angst', 'Ekel'], intensity: 2, heikel: true,
+      answer: 'Ärger', options: ['Ärger', 'Wut', 'Frust', 'Ungeduld'], intensity: 2, heikel: true,
       clue: 'Zum dritten Mal dieselbe Frage nervt. Er bleibt ruhig, aber genervt ist er schon.', signs: ['koerper', 'worte', 'situation'] },
   ];
 })();
@@ -5798,29 +5873,32 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
   const { h, clamp, shuffle } = CREW.util;
   const INK = '#0e0a26';
 
-  /* ---------- Die fünf Stufen (Wortlaut nach den Moderationskarten, jugendgerecht) ---------- */
+  /* ---------- Die fünf Level (im Spiel-Ton; Aufbau nach der Friedenstreppe) ---------- */
   const STUFEN = {
-    1: { kurz: 'Sicht', frage: (p) => p.name + ', was ist aus deiner Sicht passiert?', start: ['Aus meiner Sicht …', 'Ich habe beobachtet, dass …'] },
-    2: { kurz: 'Gefühl', frage: (p) => p.name + ', wie hast du dich dabei gefühlt?', start: ['Ich habe mich … gefühlt.', 'Es ging mir …'] },
-    3: { kurz: 'Bedürfnis', frage: (p) => p.name + ', was brauchst du? Was ist dir wichtig?', start: ['Ich hätte mir gewünscht …', 'Ich brauche …'] },
-    4: { kurz: 'Versöhnen', frage: (a, b) => a.name + ' und ' + b.name + ': Wie könnt ihr euch wieder vertragen?', start: ['Was kann ich tun, damit …?', 'Wäre es okay für dich, wenn …?'] },
-    5: { kurz: 'Abmachen', frage: (a, b) => a.name + ' und ' + b.name + ': Worauf einigt ihr euch für die Zukunft?', start: ['In Zukunft …', 'Können wir uns darauf einigen, dass …?'] },
+    1: { kurz: 'Replay', lang: 'Was ist passiert?', frage: (p) => p.name + ', deine Version?', start: ['Ich hab gesehen, dass …', 'Für mich lief das so: …'] },
+    2: { kurz: 'Innen drin', lang: 'Was geht in dir ab?', frage: (p) => p.name + ', was geht in dir ab?', start: ['Ich war echt …', 'Mich hat das …'] },
+    3: { kurz: 'Was ich brauch', lang: 'Was willst du eigentlich?', frage: (p) => p.name + ', was willst du eigentlich?', start: ['Mir ist wichtig, dass …', 'Ich will …'] },
+    4: { kurz: 'Friedensangebot', lang: 'Wieder klarkommen', frage: (a, b) => a.name + ' und ' + b.name + ': Wie kommt ihr wieder klar?', start: ['Was kann ich tun, damit …?', 'Wäre es okay, wenn …?'] },
+    5: { kurz: 'Deal', lang: 'Der Deal', frage: (a, b) => a.name + ' und ' + b.name + ': Welcher Deal gilt ab jetzt?', start: ['Ab jetzt …', 'Deal: Wenn …, dann …'] },
   };
 
   /* Arten von Antworten: Name + kurze Rückmeldung (nie „falsch“) */
   const KIND = {
-    ich: { label: 'Ich-Botschaft', line: 'Klar gesagt, ohne Angriff. Die Hitze sinkt.', good: true },
-    du: { label: 'Du-Botschaft', line: 'Das klingt wie ein Angriff. Die Hitze steigt.' },
-    weg: { label: 'Ausweichen', line: 'Klingt ruhig. Aber das Problem bleibt.' },
+    ich: { label: 'Klartext', line: 'Klar gesagt, ohne Angriff. Die Hitze sinkt.', good: true },
+    du: { label: 'Angriff', line: 'Das klingt wie ein Angriff. Die Hitze steigt.' },
+    weg: { label: 'Abgetaucht', line: 'Klingt ruhig. Aber das Problem bleibt.' },
+    fake: { label: 'Getarnter Angriff', line: 'Klingt nach Ich. Ist aber ein Vorwurf.' },
     echt: { label: 'Echtes Angebot', line: 'Das kommt an. Die Hitze sinkt.', good: true },
-    halb: { label: '„Sorry, aber …“', line: 'Das „aber“ macht das Sorry kaputt.' },
-    klar: { label: 'Klare Abmachung', line: 'Konkret und fair. Das kann klappen.', good: true },
-    vage: { label: 'Zu vage', line: 'Klingt nett. Hilft beim nächsten Mal aber nicht.' },
+    halb: { label: 'Sorry-aber', line: 'Klingt nach Sorry. Schiebt die Schuld aber rüber.' },
+    klar: { label: 'Deal', line: 'Konkret und fair. Das kann klappen.', good: true },
+    vage: { label: 'Luftnummer', line: 'Klingt nett. Hilft beim nächsten Mal aber nicht.' },
   };
-  const DEFAULT_HEAT = { ich: -12, du: 14, weg: 6, echt: -15, halb: 10, klar: -15, vage: 6 };
+  const DEFAULT_HEAT = { ich: -12, du: 14, weg: 6, fake: 10, echt: -15, halb: 10, klar: -15, vage: 6 };
   const LETTERS = ['A', 'B', 'C', 'D'];
   // Reihenfolge auf Stufe 1–3: abwechselnd, wer zuerst spricht (fair für beide Teams)
   const TURNS = [[1, 'A'], [1, 'B'], [2, 'B'], [2, 'A'], [3, 'A'], [3, 'B']];
+  // In der Gruppe kürzer (Zeit!): drei Züge auf Level 1–3, abwechselnd, dann Level 4 und 5 gemeinsam
+  const TURNS_GROUP = [[1, 'A'], [2, 'B'], [3, 'A']];
 
   /* ---------- Eigene Icons (gleicher Strichstil wie CREW.icon) ---------- */
   const OWN = {
@@ -5978,6 +6056,8 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
   }
 
   /* ---------- Friedenstreppe: zwei Wege (A oben, B unten), ab Stufe 4 gemeinsam ---------- */
+  // In der Gruppe spielt pro Level 1–3 nur eine Seite (TURNS_GROUP)
+  const groupLane = (s) => TURNS_GROUP.filter(([st]) => st === s).map(([, sd]) => sd);
   function stairs(G, opts) {
     const big = !!(opts && opts.big);
     const cell = (key, side, s) => {
@@ -5988,7 +6068,9 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
     };
     const steps = h('div', { class: 'clash-stairs' + (big ? ' big' : ''), role: 'img', 'aria-label': 'Fünf Level zum Frieden' },
       [1, 2, 3, 4, 5].map((s) => h('div', { class: 'clash-col s' + s },
-        h('div', { class: 'clash-lanes' }, s <= 3 ? [cell(s + 'A', 'a', s), cell(s + 'B', 'b', s)] : cell(String(s), 'j', s)),
+        h('div', { class: 'clash-lanes' }, s <= 3
+          ? (G.solo ? [cell(s + 'A', 'a', s), cell(s + 'B', 'b', s)] : groupLane(s).map((sd) => cell(s + sd, sd.toLowerCase(), s)))
+          : cell(String(s), 'j', s)),
         big ? h('div', { class: 'clash-cap' }, STUFEN[s].kurz) : null)));
     if (!big) return steps;
     return h('div', { class: 'clash-stairs-big' }, steps,
@@ -6129,12 +6211,12 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
       h('div', { class: 'card clash-stairs-card' },
         stairs(G, { big: true }),
         h('p', { class: 'lead' }, G.solo
-          ? 'Stufe 1 bis 3: abwechselnd für ' + A.name + ' und ' + B.name + '. Stufe 4 und 5: für beide.'
-          : 'Stufe 1 bis 3: Jedes Team spricht für seine Person. Stufe 4 und 5: alle zusammen.')),
+          ? 'Level 1 bis 3: abwechselnd für ' + A.name + ' und ' + B.name + '. Level 4 und 5: für beide.'
+          : 'Level 1 bis 3: Jedes Team spricht für seine Person. Level 4 und 5: alle zusammen.')),
       G.solo ? null : h('div', { class: 'row' }, ui.paddleHint('abcd', 'Team einigt sich leise')),
     ]);
     wrap.dataset.clash = 'crew';
-    await ask(G, wrap, [{ label: 'Los: Stufe 1', value: 'go', iconRight: 'right' }]);
+    await ask(G, wrap, [{ label: 'Los: Level 1', value: 'go', iconRight: 'right' }]);
   }
 
   // Zwei kleine Figuren für die gemeinsamen Stufen
@@ -6175,18 +6257,22 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
       ? h('span', { class: 'pill good' }, G.solo ? 'Beide zusammen' : 'Alle zusammen')
       : h('span', { class: 'pill ' + (cfg.side === 'A' ? 'teamA' : 'teamB') }, G.solo ? 'Du bist ' + speaker.name : ctx.teams[cfg.side].name + ' ist ' + speaker.name);
     const readAll = () => q + ' ' + cfg.list.map((o, i) => LETTERS[i] + ': ' + o.text).join(' ');
+    // Satzanfänge: in der Gruppe hinter „Tipp“ versteckt (wie im Reframe)
+    const starters = h('div', { class: 'clash-starters' }, st.start.map((x) => h('span', null, x)));
+    const tipBtn = G.solo ? null : ui.btn('Tipp', () => { tipBtn.replaceWith(starters); }, { variant: 'ghost', small: true, icon: 'sparkle', id: 'clash-tip' });
     const card = h('div', { class: 'card clash-q ' + sideCls },
       joint ? duo(G) : makeAvatar(speaker, moodFor(G.heat), cfg.side === 'B').el,
       h('div', { class: 'clash-q-main' },
-        h('div', { class: 'row clash-q-top' }, h('span', { class: 'eyebrow' }, 'Stufe ' + cfg.step + ' · ' + st.kurz), tag),
+        h('div', { class: 'row clash-q-top' }, h('span', { class: 'eyebrow' }, 'Level ' + cfg.step + ' · ' + st.lang), tag),
         h('h2', null, q),
-        h('div', { class: 'clash-starters' }, st.start.map((s) => h('span', null, s)))),
+        G.solo ? starters : null),
       ui.speakBtn(readAll, { cls: 'clash-speak' }));
     const foot = G.solo
       ? h('p', { class: 'muted small clash-foot' }, cfg.tried.size ? 'Probier eine andere Antwort.' : 'Was würdest du sagen? Tippe an.')
       : h('div', { class: 'row between clash-foot' },
         ui.paddleHint('abcd', joint ? 'Alle zeigen · Mehrheit zählt' : ctx.teams[cfg.side].name + ' zeigt'),
-        ui.btn('3-2-1', () => ui.threeTwoOne('Zeigt her!'), { variant: 'ghost', small: true, icon: 'timer', id: 'clash-321' }));
+        h('div', { class: 'row' }, tipBtn,
+          ui.btn('3-2-1', () => ui.threeTwoOne('Zeigt her!'), { variant: 'ghost', small: true, icon: 'timer', id: 'clash-321' })));
     const wrap = ctx.screen([hud(G), card, h('div', { class: 'clash-opts' }, btns), foot]);
     wrap.dataset.clash = joint ? 'joint' : 'turn';
     return picked;
@@ -6206,7 +6292,7 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
     const cm = comic(G);
     // Tipp aus der Friedenstreppe: „Auch dem anderen gut zuhören und wiederholen.“
     const listenTip = cfg.step === 1 && info.good && !G.solo
-      ? h('p', { class: 'muted small' }, h('b', null, 'Zuhören-Tipp: '), ctx.teams[listenSide].name + ' sagt kurz mit eigenen Worten, was ' + person(G, speakSide).name + ' meint.')
+      ? h('p', { class: 'muted small' }, h('b', null, ctx.teams[listenSide].name + ': '), 'Checkt kurz: Was hat ' + person(G, speakSide).name + ' gemeint?')
       : null;
     const fb = h('div', { class: 'card clash-feedback ' + (info.good ? 'good' : 'hot') },
       h('div', { class: 'row', style: { gap: '10px' } },
@@ -6256,7 +6342,9 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
     const { ctx } = G;
     const joint = step >= 4;
     const src = joint ? (step === 4 ? G.scene.versoehnung : G.scene.vereinbarung) : G.scene.steps[step][side];
-    const list = shuffle(src).slice(0, joint ? 4 : 3);
+    // Immer vier Antworten (A–D). Gemeinsam: aus fünf gezogen, mindestens eine gute ist immer dabei.
+    let list = shuffle(src).slice(0, 4);
+    if (!list.some((o) => KIND[o.kind] && KIND[o.kind].good)) list = shuffle([src.find((o) => KIND[o.kind] && KIND[o.kind].good)].concat(list.slice(0, 3)));
     const key = joint ? String(step) : step + side;
     const tried = new Set();
     G.now = key;
@@ -6308,7 +6396,7 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
         h('h1', { class: 'outline-text clash-peace' }, 'Frieden!'),
         h('div', { class: 'clash-top' },
           h('div', { class: 'clash-summit' }, makeAvatar(A, 'froh', false).el, h('span', { class: 'clash-hands' }, ownIcon('peace', 64)), makeAvatar(B, 'froh', true).el),
-          h('div', { class: 'clash-plate' }, stepIcon(5, 24), h('span', null, 'Stufe 5 · ganz oben'))),
+          h('div', { class: 'clash-plate' }, stepIcon(5, 24), h('span', null, 'Level 5 · ganz oben'))),
         h('p', { class: 'lead' }, (hot ? 'Der Weg war heiß. Aber ' : '') + A.name + ' und ' + B.name + ' sind oben angekommen.'),
         pact ? h('div', { class: 'card clash-pact' },
           h('span', { class: 'eyebrow' }, 'Der Pakt'),
@@ -6339,7 +6427,7 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
       G.scene = other;
     }
     await crewSplit(G);
-    for (const [step, side] of TURNS) await playStep(G, step, side);
+    for (const [step, side] of (G.solo ? TURNS : TURNS_GROUP)) await playStep(G, step, side);
     await playStep(G, 4);
     await playStep(G, 5);
     await finale(G);
@@ -6349,7 +6437,7 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
   // Wie cool war der Weg? 0…1 (Überspringen zählt nicht; Zurückspulen ist fast so gut wie direkt)
   function score(G) {
     const played = G.log.filter((x) => !x.skipped);
-    if (!played.length) return 0.5;
+    if (!played.length) return 0;
     const pts = played.reduce((a, x) => a + (KIND[x.kind] && KIND[x.kind].good ? (x.rewound ? 0.85 : 1) : x.kind === 'weg' ? 0.4 : 0.2), 0);
     return pts / played.length;
   }
@@ -6359,7 +6447,9 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
     day: 3,
     title: 'Clash',
     tagline: 'Ein Streit, zwei Seiten. Bringt beide nach oben.',
-    minutes: 7,
+    hook: 'Team gegen Streit · 5 Level',
+    color: '#e8532f',
+    minutes: 5,
     themes: ['Konfliktlösung', 'Perspektivenwechsel', 'Gefühle'],
     etep: 'III–IV',
     eldib: [
@@ -6369,9 +6459,9 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
       { code: 'K-31', text: 'wählt im Streit beruhigende, versöhnliche Worte' },
       { code: 'SOZ-34', text: 'schlägt bei Streit faire Lösungen vor' },
     ],
-    teacherNote: 'Nach der ISA-Friedenstreppe. Eine Streit-Szene pro Session (Comic mit zwei Fantasiefiguren). Teilt die Crew in zwei Teams: Team A spricht für die linke Person, Team B für die rechte. Stufe 1–3 (Sicht, Gefühl, Bedürfnis): Das Team einigt sich leise auf A, B oder C und zeigt es mit der Antwort-Karte; du tippst die Antwort an. Pro Stufe gibt es drei Antworten in gemischter Reihenfolge: Ich-Botschaft, Vorwurf, Ausweichen. Es gibt kein Falsch: Nach Vorwurf oder Ausweichen könnt ihr zurückspulen. Stufe 4 (Versöhnen) und 5 (Vereinbarung) wählt die ganze Crew, die Mehrheit zählt. Tipp aus dem Material: Das andere Team wiederholt kurz, was es gehört hat. Satzanfänge für echte Streits: „Aus meiner Sicht …“, „Ich habe mich … gefühlt“, „Ich brauche …“, „Wäre es okay für dich, wenn …“, „Können wir uns darauf einigen, dass …“. Passt eine Szene gerade nicht (z. B. echter Streit in der Gruppe): „Andere Szene“ oder X-Karte auf dem ersten Bild.',
+    teacherNote: 'Nach der ISA-Friedenstreppe. Eine Streit-Szene pro Session (Comic mit zwei Fantasiefiguren). Teilt die Crew in zwei Teams: Team A spricht für die linke Person, Team B für die rechte. In der Gruppe drei Züge auf Level 1–3 (Sicht, Gefühl, Bedürfnis; im Spiel „Replay“, „Innen drin“, „Was ich brauch“), abwechselnd Team A, B, A. Das Team einigt sich leise auf A–D und zeigt es mit der Antwort-Karte; du tippst die Antwort an. Pro Level gibt es vier Antworten: Ich-Botschaft („Klartext“), Vorwurf („Angriff“), Ausweichen („Abgetaucht“) und einen getarnten Vorwurf, der wie eine Ich-Botschaft klingt („Getarnter Angriff“). Die Satzanfänge liegen hinter dem Knopf „Tipp“. Es gibt kein Falsch: Nach einer schwachen Antwort könnt ihr zurückspulen. Level 4 (Versöhnen) und 5 (Deal) wählt die ganze Crew, die Mehrheit zählt. Tipp aus dem Material: Das andere Team wiederholt kurz, was es gehört hat. Satzanfänge für echte Streits: „Aus meiner Sicht …“, „Ich habe mich … gefühlt“, „Ich brauche …“, „Wäre es okay für dich, wenn …“, „Können wir uns darauf einigen, dass …“. Passt eine Szene gerade nicht (z. B. echter Streit in der Gruppe): „Andere Szene“ oder X-Karte auf dem ersten Bild.',
     debrief: [
-      'Welche Stufe war heute am schwierigsten? Warum?',
+      'Welches Level war heute am schwierigsten? Warum?',
       'Was hilft dir, erst mal runterzukommen, bevor du redest?',
       'Kennst du so einen Streit? Du musst keine Namen sagen.',
       'Woran merkst du im Körper, dass die Hitze steigt?',
@@ -6383,11 +6473,14 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
       const G = await play(ctx);
       if (!G) return { energy: 5, summary: 'Heute gab es keine Szene. Nächstes Mal!' };
       const s = score(G);
+      const playedN = G.log.filter((x) => !x.skipped).length;
+      if (!playedN) return { energy: 3, summary: 'Heute nur reingeschaut.' };
       const energy = clamp(5 + Math.round(5 * s), 5, 10);
+      const cool = G.log.filter((x) => !x.skipped && KIND[x.kind] && KIND[x.kind].good && !x.rewound).length;
       let summary = 'Ihr habt ausprobiert, was passiert. Und seid oben angekommen.';
       if (s >= 0.85) summary = 'Stark! Ihr habt die Hitze richtig cool runtergeholt.';
       else if (s >= 0.6) summary = 'Gut gemacht! Ihr habt den Weg zum Frieden gefunden.';
-      return { energy, summary };
+      return { energy, summary, points: cool, stats: [[cool, 'cool beim ersten Versuch'], [G.rewinds, 'mal zurückgespult']] };
     },
   });
 
@@ -6575,8 +6668,9 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
         h('span', { class: 'feed-grow' }),
         h('span', null, CREW.icon('eye', 18), fmt((p.likes || 10) * 9))));
   }
+  // F = echt (nachprüfbar und stimmt), M = Meinung, X = Fake (klingt nach Fakt, stimmt aber nicht)
   function stampEl(truth, big) {
-    return h('span', { class: 'feed-stamp ' + truth + (big ? ' big' : '') }, truth === 'F' ? 'Fakt' : 'Meinung');
+    return h('span', { class: 'feed-stamp ' + truth + (big ? ' big' : '') }, truth === 'F' ? 'Echt' : truth === 'X' ? 'Fake' : 'Meinung');
   }
   function cmtEl(c, state, stamp) {
     return h('div', { class: 'feed-cmt' + (state ? ' ' + state : '') },
@@ -6870,6 +6964,10 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
   async function roundFakt(G, card) {
     const { ctx } = G;
     const ui = ctx.ui;
+    // Zwei Kommentare pro Runde: der Fake und einer der anderen (Zeit!)
+    const fake = card.items.filter((x) => x.fake);
+    const rest = shuffle(card.items.filter((x) => !x.fake));
+    card = { ...card, items: shuffle(fake.slice(0, 1).concat(rest.slice(0, fake.length ? 1 : 2))) };
     const n = card.items.length;
     const done = [];
     let playedAny = false;
@@ -6879,12 +6977,13 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
         h('div', { class: 'feed-cmts' }, card.items.map((c, j) => cmtEl(c, j === i ? 'cur' : done[j] ? 'done' : j > i ? 'later' : 'skipped', done[j])))], { cls: 'fakt' });
       const holder = h('div', { class: 'feed-holder' });
       G.wrap = ctx.screen(layout(G, 'fakt', ph.el, [
-        question(G, null, 'Kann man das nachprüfen?', () => it.text + '. Kann man das nachprüfen?'),
+        question(G, null, 'Echt, Meinung oder Fake?', () => it.text + '. Echt, Meinung oder Fake?'),
         h('div', { class: 'card feed-quote enter' }, ava(it.von, 46),
           h('div', { class: 'feed-quote-b' }, h('span', { class: 'feed-handle' }, '@' + it.von), h('div', { class: 'feed-quote-t' }, '„' + it.text + '“'))),
         h('div', { class: 'feed-rule' },
-          h('div', null, stampEl('F'), h('span', null, 'kann man nachprüfen')),
-          h('div', null, stampEl('M'), h('span', null, 'jemand findet etwas'))),
+          h('div', null, stampEl('F'), h('span', null, 'nachprüfbar und stimmt')),
+          h('div', null, stampEl('M'), h('span', null, 'jemand findet etwas')),
+          h('div', null, stampEl('X'), h('span', null, 'klingt nach Fakt, ist erfunden'))),
         holder,
       ], 'Kommentar ' + (i + 1) + ' von ' + n));
       // Aktuellen Kommentar im Handy sichtbar halten
@@ -6894,16 +6993,17 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
       });
       let ans;
       if (G.solo) {
-        const r = await soloChoice(G, holder, 'fakt-ask', [{ v: 'F', label: 'Fakt', variant: 'good' }, { v: 'M', label: 'Meinung', variant: 'yellow' }]);
+        const r = await soloChoice(G, holder, 'fakt-ask', [{ v: 'F', label: 'Echt', variant: 'good' }, { v: 'M', label: 'Meinung', variant: 'yellow' }, { v: 'X', label: 'Fake', variant: 'teamB' }]);
         if (r === ctx.SKIP) continue;
         ans = { solo: r };
       } else {
-        const r = await callTeams(G, holder, { stage: 'fakt', paddle: 'janein', hint: 'Ja = Fakt · Nein = Meinung', choices: [{ v: 'F', label: 'Fakt', sub: 'Ja', cls: 'ja' }, { v: 'M', label: 'Meinung', sub: 'Nein', cls: 'nein' }] });
+        const r = await callTeams(G, holder, { stage: 'fakt', paddle: 'abcd', hint: 'A = Echt · B = Meinung · C = Fake', choices: [{ v: 'F', label: 'Echt', sub: 'A', cls: 'ja' }, { v: 'M', label: 'Meinung', sub: 'B', cls: 'lD' }, { v: 'X', label: 'Fake', sub: 'C', cls: 'nein' }] });
         if (r === ctx.SKIP) continue;
         ans = r;
       }
       playedAny = true;
-      const truth = it.fakt ? 'F' : 'M';
+      const truth = it.fake ? 'X' : it.fakt ? 'F' : 'M';
+      const worth = it.fake ? 2 : 1; // Fake erwischt = 2 Punkte
       done[i] = truth;
       // Stempel im Handy
       const cur = ph.body.querySelector('.feed-cmt.cur');
@@ -6912,9 +7012,9 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
       const rows = sides(G).filter((s) => ans[s] != null).map((s) => {
         const ok = ans[s] === truth;
         anyRight = anyRight || ok;
-        score(G, s, ok ? 1 : 0, 1);
-        const txt = G.solo ? (ok ? 'Richtig erkannt!' : 'Diesmal anders. Lies kurz die Begründung.') : (ok ? 'richtig erkannt' : 'anders getippt');
-        return h('div', { class: 'feed-res-row' }, G.solo ? null : teamPill(G, s), h('span', null, txt), h('span', { class: 'feed-grow' }), ptsChip(ok ? 1 : 0));
+        score(G, s, ok ? worth : 0, worth);
+        const txt = G.solo ? (ok ? (it.fake ? 'Fake erwischt!' : 'Richtig erkannt!') : 'Diesmal anders. Lies kurz die Begründung.') : (ok ? (it.fake ? 'Fake erwischt!' : 'richtig erkannt') : 'anders getippt');
+        return h('div', { class: 'feed-res-row' }, G.solo ? null : teamPill(G, s), h('span', null, txt), h('span', { class: 'feed-grow' }), ptsChip(ok ? worth : 0));
       });
       clear(holder);
       holder.appendChild(h('div', { class: 'card feed-verdict pop v' + truth },
@@ -7043,7 +7143,7 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
     const nein = h('div', { class: 'card feed-nein' },
       h('div', { class: 'feed-nein-h' }, CREW.icon('shield', 26), h('b', null, 'Nein-Sätze, die funktionieren')),
       h('div', { class: 'feed-nein-list' }, card.nein.map((s) => h('div', { class: 'feed-nein-l' }, '„' + s + '“'))),
-      h('p', { class: 'muted small' }, 'Welcher passt zu dir?'));
+      null);
     const allBtn = ui.btn('Alle Wege', () => allWays(G, 'Alle Antworten', opts, (o) => [
       h('div', { class: 'row', style: { gap: '8px' } }, h('b', null, '„' + o.t + '“'), kindChip(DRUCK_KIND[o.k])),
       h('span', { class: 'feed-way-meta' }, o.antwort.von + ': „' + o.antwort.text + '“'),
@@ -7301,27 +7401,6 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
     if (r >= 0.55) return solo ? 'Gut gemacht! Dich legt man nicht so leicht rein.' : 'Gut gemacht! Euch legt man nicht so leicht rein.';
     return solo ? 'Du hast ausprobiert, was online passiert. Das zählt.' : 'Ihr habt ausprobiert, was online passiert. Das zählt.';
   }
-  async function ending(G) {
-    const { ctx } = G;
-    const ui = ctx.ui;
-    const total = G.pts.A + G.pts.B;
-    const r = ratioOf(G);
-    const num = h('span', { class: 'display feed-endnum' }, '0');
-    const sc = (side) => h('span', { class: 'feed-sc ' + ctx.teams[side].cls }, h('span', { class: 'dot' }), h('span', { class: 'nm' }, ctx.teams[side].name), h('b', null, String(G.pts[side])));
-    const wrap = ctx.screen([
-      h('div', { class: 'stack feed-end' },
-        h('span', { class: 'eyebrow' }, 'Feed-Check geschafft'),
-        h('h2', null, praise(r)),
-        h('div', { class: 'feed-formula big' }, sc('A'), h('b', null, '+'), sc('B'), h('b', null, '=')),
-        h('div', { class: 'feed-endrow' }, CREW.icon('bolt', 52), num, h('span', { class: 'display feed-endlbl' }, 'Crew-Punkte'))),
-      tipCard(),
-    ], { center: true, narrow: true });
-    G.wrap = wrap;
-    CREW.sound.play('great');
-    if (r >= 0.55) ui.confetti(140);
-    await ui.countUp(num, 0, total, 900);
-    await ask(G, wrap, [{ label: 'Weiter', value: 'go', iconRight: 'right', id: 'feed-next' }], 'end', 'center');
-  }
   async function soloEnd(G, best) {
     const { ctx } = G;
     const ui = ctx.ui;
@@ -7341,9 +7420,11 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
   }
 
   /* ---------- Ablauf ---------- */
-  // Jede Session: alle vier Rundentypen + eine Extra-Runde (Was machst du? oder Gruppendruck)
+  // Gruppe: drei Runden (Echt/Meinung/Fake, Gerücht-Kette, dann Was machst du? oder Gruppendruck).
+  // Solo: alle vier Rundentypen + eine Extra-Runde.
   function planRounds(ctx) {
-    const order = ['fakt', 'tun', 'kette', 'druck', Math.random() < 0.5 ? 'tun' : 'druck'];
+    const extra = Math.random() < 0.5 ? 'tun' : 'druck';
+    const order = ctx.solo ? ['fakt', 'tun', 'kette', 'druck', extra] : ['fakt', 'kette', extra];
     const ids = new Set();
     const cards = [];
     for (const t of order) {
@@ -7360,6 +7441,7 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
     G.total = cards.length;
     await intro(G);
     for (const card of cards) {
+      if (!G.solo && !ctx.roundGate(G.round, cards.length)) break;
       G.round++;
       await splash(G, card.type);
       if (await ROUND[card.type](G, card)) G.played++;
@@ -7372,7 +7454,9 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
     day: 4,
     title: 'Feed-Check',
     tagline: 'Gerüchte, Chats, Gruppendruck. Was macht ihr?',
-    minutes: 7,
+    hook: 'Team gegen Team · 3 Runden',
+    color: '#2f7cf6',
+    minutes: 5,
     themes: ['Medien', 'Zivilcourage', 'Gruppendruck'],
     etep: 'IV–V',
     eldib: [
@@ -7382,7 +7466,7 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
       { code: 'SOZ-37', text: 'versteht, wie es anderen geht, und nimmt Rücksicht' },
       { code: 'SOZ-39', text: 'entscheidet nach eigenen Werten, auch unter Druck' },
     ],
-    teacherNote: 'Zwei Teams, fünf schnelle Runden auf einem erfundenen Handy („Glimmr“). Rundentypen: Fakt oder Meinung? (Antwort-Karte Ja = Fakt, Nein = Meinung), Was machst du? (A–D), Gerücht-Kette (bei jedem Schritt: Ja = wir stoppen hier), Gruppendruck (A–D). Jedes Team einigt sich leise. Auf „Zeigt her!“ hält pro Team eine Person die Karte hoch (oder alle, dann zählt die Mehrheit). Du tippst an, was jedes Team zeigt. Punkte: stark 3, gut 2, okay 1, riskant 0; Fakt/Meinung 1 pro Kommentar; Kette: früh gestoppt 2, später 1, plus 1 für einen starken Weg. Beide Teamkonten zählen am Ende zusammen für die Crew. Es gibt kein „Falsch“: Die Folgen werden nur sichtbar. „Alle Wege“ zeigt, was die anderen Antworten bewirkt hätten – gut zum Nachfragen. Vapes, Familie und Geld sind als heikel markiert. Die X-Karte überspringt einen Kommentar oder eine Runde. Am Ende steht die BEE SECURE Helpline (8002 1234).',
+    teacherNote: 'Zwei Teams, drei schnelle Runden auf einem erfundenen Handy („Glimmr“). Rundentypen: Echt, Meinung oder Fake? (Antwort-Karte A = Echt, B = Meinung, C = Fake; Fake erwischt = 2 Punkte), Was machst du? (A–D), Gerücht-Kette (bei jedem Schritt: Ja = wir stoppen hier), Gruppendruck (A–D). Jedes Team einigt sich leise. Auf „Zeigt her!“ hält pro Team eine Person die Karte hoch (oder alle, dann zählt die Mehrheit). Du tippst an, was jedes Team zeigt. Punkte: stark 3, gut 2, okay 1, riskant 0; Echt/Meinung 1 pro Kommentar, Fake 2; Kette: früh gestoppt 2, später 1, plus 1 für einen starken Weg. Beide Teamkonten zählen am Ende zusammen für die Crew. Es gibt kein „Falsch“: Die Folgen werden nur sichtbar. „Alle Wege“ zeigt, was die anderen Antworten bewirkt hätten – gut zum Nachfragen. Vapes, Familie und Geld sind als heikel markiert. Die X-Karte überspringt einen Kommentar oder eine Runde. Am Ende steht die BEE SECURE Helpline (8002 1234).',
     debrief: [
       'Warum leiten Leute Gerüchte weiter, obwohl sie nicht wissen, ob es stimmt?',
       'Hast du schon mal erlebt, dass online etwas ganz anders war als in echt?',
@@ -7394,13 +7478,13 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
     ],
     async run(ctx) {
       const G = await play(ctx);
-      await ending(G);
+      // Kein eigener End-Bildschirm mehr: Punkte und Helpline zeigt der gemeinsame Abschluss
       const r = ratioOf(G);
       const energy = G.played ? clamp(5 + Math.round(5 * r), 4, 10) : 4;
       let summary = 'Ihr habt ausprobiert, was online passiert. Das zählt.';
       if (r >= 0.8) summary = 'Stark! Ihr habt den Feed voll im Griff.';
       else if (r >= 0.55) summary = 'Gut gemacht! Ihr lasst euch online nicht so leicht reinlegen.';
-      return { energy, summary };
+      return { energy, summary, points: G.pts.A + G.pts.B, note: tipCard() };
     },
   });
 
@@ -7959,9 +8043,9 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
   const CREW = window.CREW;
   const { h, shuffle, clamp } = CREW.util;
 
-  const BATTLES = 3;
-  const SPEEDS = 2;
-  const THINK = 45;          // Sekunden Bedenkzeit pro Etikett
+  const BATTLES = 2;
+  const SPEEDS = 1;
+  const THINK = 30;          // Sekunden Bedenkzeit pro Etikett
   const SOLO_CARDS = 8;
   const LETTERS = ['A', 'B', 'C', 'D'];
   // Farben wie auf der Antwort-Karte (A blau, B pink, C grün, D gelb)
@@ -8032,7 +8116,7 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
   function flipTag(card, o) {
     const opts = o || {};
     const front = h('div', { class: 'reframe-face front' },
-      h('span', { class: 'reframe-face-kicker' }, 'Etikett'),
+      h('span', { class: 'reframe-face-kicker' }, 'Spruch'),
       h('span', { class: 'reframe-face-text' }, quote(card.satz)));
     const back = h('div', { class: 'reframe-face back' },
       h('span', { class: 'reframe-face-kicker' }, 'Stärke'),
@@ -8064,14 +8148,14 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
       h('div', { class: 'reframe-base-shape', 'aria-hidden': 'true',
         html: '<svg viewBox="0 0 200 60" preserveAspectRatio="none"><path class="b" d="M16 4 H184 L196 57 H4 Z" vector-effect="non-scaling-stroke"/><path class="d" d="M88 57 V36 A12 12 0 0 1 112 36 V57 Z" vector-effect="non-scaling-stroke"/></svg>' }),
       h('b', { class: 'reframe-base-name' }, G.crewName));
-    return h('div', { class: 'reframe-tower', role: 'img', 'aria-label': 'Stärken-Turm mit ' + n + ' Blöcken' + (n ? ': ' + G.blocks.map((b) => b.word).join(', ') : '') },
+    return h('div', { class: 'reframe-tower', role: 'img', 'aria-label': 'Crew-Tower mit ' + n + ' Blöcken' + (n ? ': ' + G.blocks.map((b) => b.word).join(', ') : '') },
       roof, list, base);
   }
 
   /* Kleiner Turm für die Kopfzeile */
   function miniTower(G, pop) {
     const bars = h('div', { class: 'reframe-mini-bars' }, G.blocks.map((b, i) => h('i', { class: 't' + b.team + (pop && i === G.blocks.length - 1 ? ' fresh' : '') })));
-    return h('div', { class: 'reframe-mini', title: 'Stärken-Turm', 'aria-label': 'Stärken-Turm: ' + G.blocks.length + ' Blöcke' },
+    return h('div', { class: 'reframe-mini', title: 'Crew-Tower', 'aria-label': 'Crew-Tower: ' + G.blocks.length + ' Blöcke' },
       h('div', { class: 'reframe-mini-tower' }, bars, h('i', { class: 'base' })),
       h('span', { class: 'reframe-mini-num' }, h('b', null, String(G.blocks.length)), h('small', null, 'Turm')));
   }
@@ -8117,13 +8201,12 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
     const step = (n, title, text) => h('div', { class: 'reframe-step' }, h('span', { class: 'reframe-step-n' }, String(n)), h('div', null, h('b', null, title), h('span', { class: 'muted' }, text)));
     const { acts } = view(ctx, [
       h('div', { class: 'stack enter', style: { gap: '4px' } },
-        h('span', { class: 'eyebrow' }, 'Mission Freitag · Selbstwert'),
-        h('h1', { class: 'outline-text' }, 'Reframe-Battle'),
+        h('span', { class: 'eyebrow' }, 'Freitag · Battle'),
+        h('h1', { class: 'outline-text' }, 'Konter-Battle'),
         h('p', { class: 'lead' }, 'Aus einem blöden Spruch wird eine Stärke.')),
       h('div', { class: 'reframe-split intro enter-2' },
         h('div', { class: 'reframe-demo' },
           flipTag(demoCard, { demo: true }).el,
-          h('p', { class: 'muted small reframe-demo-cap' }, 'Reframe heißt: neu einrahmen. Gleiche Eigenschaft, anderer Blick.'),
           h('div', { class: 'reframe-teams' },
             h('span', { class: 'muted small' }, 'Teilt euch in zwei Teams auf:'),
             h('div', { class: 'reframe-teams-row' },
@@ -8131,8 +8214,8 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
               h('span', { class: 'reframe-vs' }, 'vs'),
               teamChip(G, 'B', people(G.size.B))))),
         h('div', { class: 'reframe-steps' },
-          step(1, 'Etikett', 'Jemand bekommt einen Spruch gesagt.'),
-          step(2, 'Umdrehen', 'Euer Team macht in 45 Sekunden eine Stärke daraus.'),
+          step(1, 'Spruch', 'Jemand bekommt einen blöden Spruch gesagt.'),
+          step(2, 'Kontern', 'Euer Team macht in 30 Sekunden eine Stärke daraus.'),
           step(3, 'Überzeugt?', 'Das andere Team stimmt ab. Jedes Ja = 1 Punkt.'))),
     ]);
     await ctx.waitFor(ui.choice(acts, [{ label: 'Battle starten', value: 'go', iconRight: 'play', id: 'rf-start' }]));
@@ -8246,7 +8329,7 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
     } else {
       CREW.sound.play('soft');
     }
-    const r4 = await ctx.waitFor(ui.choice(v4.acts, [{ label: 'Profi-Reframes', value: 'go', iconRight: 'right', id: 'rf-profi' }]));
+    const r4 = await ctx.waitFor(ui.choice(v4.acts, [{ label: 'Profi-Konter', value: 'go', iconRight: 'right', id: 'rf-profi' }]));
     if (r4 === SKIP) return;
 
     // e) Zwei Profi-Reframes zur Inspiration
@@ -8262,7 +8345,7 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
         h('p', null, h('span', { class: 'reframe-profi-wer' }, card.wer + ', '), h('b', null, card.reframes[k]))))),
       h('div', { class: 'row enter-3' }, h('span', { class: 'muted' }, 'Stärken darin:'), h('span', { class: 'reframe-chip' }, card.staerke), h('span', { class: 'reframe-chip' }, card.staerke2)),
     ]);
-    await ctx.waitFor(ui.choice(v5.acts, [{ label: i < BATTLES - 1 ? 'Nächstes Etikett' : 'Weiter', value: 'go', iconRight: 'right', id: 'rf-next' }]));
+    await ctx.waitFor(ui.choice(v5.acts, [{ label: i < BATTLES - 1 ? 'Nächster Spruch' : 'Weiter', value: 'go', iconRight: 'right', id: 'rf-next' }]));
   }
 
   /* ---------- 2) Speed-Match ---------- */
@@ -8273,7 +8356,7 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
       h('div', { class: 'reframe-center enter' },
         h('span', { class: 'reframe-bolt' }, CREW.icon('bolt', 54)),
         h('h1', { class: 'outline-text' }, 'Speed-Match'),
-        h('p', { class: 'lead' }, 'Jetzt andersrum: Ihr seht eine Stärke. Welches Etikett steckt dahinter?'),
+        h('p', { class: 'lead' }, 'Jetzt andersrum: Ihr seht eine Stärke. Welcher Spruch steckt dahinter?'),
         h('p', { class: 'muted' }, 'Schnellstes Team mit der richtigen Karte: +3. Zweiter Versuch: +2.'),
         ui.paddleHint('abcd')),
     ]);
@@ -8296,7 +8379,7 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
 
   function questionCard(ctx, card, k, kicker) {
     return h('div', { class: 'reframe-q' },
-      h('div', { class: 'row between', style: { flexWrap: 'nowrap' } }, h('span', { class: 'reframe-face-kicker' }, kicker), ctx.ui.speakBtn('Wer so ist, ' + card.reframes[k] + ' Welches Etikett steckt dahinter?')),
+      h('div', { class: 'row between', style: { flexWrap: 'nowrap' } }, h('span', { class: 'reframe-face-kicker' }, kicker), ctx.ui.speakBtn('Wer so ist, ' + card.reframes[k] + ' Welcher Spruch steckt dahinter?')),
       h('div', { class: 'reframe-q-text' }, '… ' + card.reframes[k]));
   }
 
@@ -8311,7 +8394,7 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
     // a) Rennen: Wer hält zuerst die Karte hoch?
     const v1 = view(ctx, [
       hud(G, label),
-      h('div', { class: 'enter' }, questionCard(ctx, card, k, 'Profi-Reframe')),
+      h('div', { class: 'enter' }, questionCard(ctx, card, k, 'Profi-Konter')),
       h('div', { class: 'enter-2' }, optionGrid(options)),
       h('h3', { class: 'reframe-ask enter-3' }, 'Welches Team war zuerst?'),
     ]);
@@ -8331,7 +8414,7 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
       const left = LETTERS.filter((L) => !wrong.includes(L));
       const v2 = view(ctx, [
         hud(G, label),
-        questionCard(ctx, card, k, 'Profi-Reframe'),
+        questionCard(ctx, card, k, 'Profi-Konter'),
         optionGrid(options, { wrong }),
         h('h3', { class: 'reframe-ask pop' }, n === 0 ? 'Welche Karte zeigt ' + G.teams[t].name + '?' : 'Nicht ganz! ' + G.teams[t].name + ', eure Chance:'),
       ]);
@@ -8354,7 +8437,7 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
     if (winner) award(winner, gain);
     const tag = flipTag(card, { small: true });
     const msg = h('div', { class: 'stack reframe-reveal-msg' },
-      h('h2', null, winner ? 'Richtig! +' + gain + ' für ' + G.teams[winner].name : 'Das Etikett war: ' + card.etikett),
+      h('h2', null, winner ? 'Richtig! +' + gain + ' für ' + G.teams[winner].name : 'Der Spruch war: ' + card.etikett),
       h('p', { class: 'lead' }, h('span', { class: 'muted' }, 'Profi-Satz: '), fullReframe(card, k)));
     const v3 = view(ctx, [
       hud(G, label, { before }),
@@ -8397,34 +8480,36 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
     if (n >= 6) headline = n + ' Stärken. Ein Turm. Eine Crew.';
     else if (n >= 1) headline = n === 1 ? 'Eine Stärke im Turm. Gut umgedreht!' : n + ' Stärken im Turm. Gut umgedreht!';
     else headline = 'Der Turm steht. Nächstes Mal wächst er.';
-    const lead = G.score.A === G.score.B ? 'Unentschieden im Battle.' : (G.score.A > G.score.B ? G.teams.A.name : G.teams.B.name) + ' holt das Battle.';
+    const lead = 'Alle Punkte zählen für die ganze Crew.';
     const totalNum = h('b', { class: 'reframe-total-num' }, '0');
     const v = view(ctx, [
       h('div', { class: 'reframe-split final' },
         h('div', { class: 'stack reframe-final-l' },
-          h('span', { class: 'eyebrow enter' }, 'Euer Stärken-Turm'),
+          h('span', { class: 'eyebrow enter' }, 'Euer Crew-Tower'),
           h('h2', { class: 'enter' }, headline),
           h('div', { class: 'reframe-final-scores enter-2' },
             h('div', { class: 'reframe-score tA big' }, h('span', { class: 'reframe-score-name' }, G.teams.A.name), h('b', { class: 'reframe-score-num' }, String(G.score.A))),
             h('div', { class: 'reframe-score tB big' }, h('span', { class: 'reframe-score-name' }, G.teams.B.name), h('b', { class: 'reframe-score-num' }, String(G.score.B)))),
           h('div', { class: 'reframe-total enter-2' }, CREW.icon('bolt', 30), h('span', null, 'Zusammen'), totalNum, h('span', null, 'Punkte')),
           h('p', { class: 'muted enter-3' }, lead + ' Der Turm gehört allen.'),
-          h('p', { class: 'lead enter-3' }, 'Welche Stärke aus dem Turm passt zu dir? Denk sie dir kurz.')),
+          h('p', { class: 'lead enter-3' }, 'Eine Stärke im Turm gehört dir. Welche?')),
         h('div', { class: 'reframe-tower-slot' }, tower(G, { roof: true, roofFresh: true }))),
     ]);
     CREW.sound.play('great');
     if (n >= 3) ui.confetti(120);
     ui.countUp(totalNum, 0, total, 900);
-    await ctx.waitFor(ui.choice(v.acts, [{ label: 'Zur Nachbesprechung', value: 'go', iconRight: 'right', id: 'rf-done' }]));
+    await ctx.waitFor(ui.choice(v.acts, [{ label: 'Weiter', value: 'go', iconRight: 'right', id: 'rf-done' }]));
   }
 
   /* ---------- Mission ---------- */
   CREW.registerMission({
     id: 'reframe',
     day: 5,
-    title: 'Reframe-Battle',
+    title: 'Konter-Battle',
     tagline: 'Aus einem blöden Spruch wird eine Stärke.',
-    minutes: 7,
+    hook: 'Team gegen Team · 2 Battles',
+    color: '#a64dff',
+    minutes: 5,
     themes: ['Selbstwert', 'Stärken', 'Selbst- & Fremdbild'],
     etep: 'III–V',
     eldib: [
@@ -8434,14 +8519,14 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
       { code: 'K-28', text: 'macht anderen mit Worten Mut und lobt sie' },
       { code: 'K-32', text: 'würdigt Beiträge anderer und baut auf ihren Ideen auf' },
     ],
-    teacherNote: 'Zwei Teams. Battle (3 Runden): Ein Etikett erscheint („Du bist zu laut.“). 45 Sekunden überlegt jedes Team einen Reframe („Wer laut ist, …“). Beide Teams sagen ihren Satz laut. Dann bewertet jedes Team das ANDERE Team mit der Ja/Nein-Karte, du stimmst immer mit. Tippe die Ja-Stimmen ein: Jedes Ja ist ein Punkt, bei Mehrheit wächst der Stärken-Turm. Danach zeigt das Spiel zwei Profi-Reframes. Speed-Match (2 Runden): Ein Profi-Reframe erscheint, die Teams halten die passende Buchstaben-Karte (A–D) hoch. Du tippst, welches Team zuerst war und welche Karte es zeigt. Bei guter Begründung für eine andere Karte kannst du trotzdem +2 geben. Die Etiketten sind allgemein. Bitte darauf achten, dass niemand sie auf eine Person im Raum bezieht. Eigene Etiketten nennen ist in der Nachbesprechung freiwillig.',
+    teacherNote: 'Im Spiel heißt die Mission „Konter-Battle“, das Etikett „Spruch“ und der Stärken-Turm „Crew-Tower“. Zwei Teams. Battle (2 Runden): Ein Etikett erscheint („Du bist zu laut.“). 30 Sekunden überlegt jedes Team einen Reframe („Wer laut ist, …“). Beide Teams sagen ihren Satz laut. Dann bewertet jedes Team das ANDERE Team mit der Ja/Nein-Karte, du stimmst immer mit. Tippe die Ja-Stimmen ein: Jedes Ja ist ein Punkt, bei Mehrheit wächst der Stärken-Turm. Danach zeigt das Spiel zwei Profi-Reframes. Speed-Match (1 Runde, nur wenn die Zeit reicht): Ein Profi-Reframe erscheint, die Teams halten die passende Buchstaben-Karte (A–D) hoch. Du tippst, welches Team zuerst war und welche Karte es zeigt. Bei guter Begründung für eine andere Karte kannst du trotzdem +2 geben. Die Etiketten sind allgemein. Bitte darauf achten, dass niemand sie auf eine Person im Raum bezieht. Eigene Etiketten nennen ist in der Nachbesprechung freiwillig.',
     debrief: [
-      'Welcher Reframe hat dich heute überrascht?',
-      'Kennst du ein Etikett, das du selbst schon gehört hast? Welche Stärke könnte darin stecken? (Nur wenn du magst.)',
+      'Welcher Konter hat dich heute überrascht?',
+      'Kennst du einen Spruch, den du selbst schon gehört hast? Welche Stärke steckt darin? (Nur wenn du magst.)',
       'Wie fühlt es sich an, wenn dich jemand mit einem einzigen Wort beschreibt?',
       'Welche Stärke aus dem Turm nimmst du heute mit?',
-      'Woher kommen solche Etiketten eigentlich? Wer sagt so etwas?',
-      'Wie kann man Kritik sagen, ohne jemandem ein Etikett zu verpassen?',
+      'Woher kommen solche Sprüche eigentlich? Wer sagt so etwas?',
+      'Wie kann man Kritik sagen, ohne jemandem einen Stempel zu verpassen?',
       'War es leichter, selbst umzudrehen oder das andere Team zu bewerten?',
     ],
 
@@ -8465,8 +8550,11 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
       const speedCards = cards.slice(BATTLES);
 
       await intro(ctx, G);
-      for (let i = 0; i < battleCards.length; i++) await battle(ctx, G, battleCards[i], i);
-      if (speedCards.length) {
+      for (let i = 0; i < battleCards.length; i++) {
+        if (!ctx.roundGate(i, battleCards.length)) break;
+        await battle(ctx, G, battleCards[i], i);
+      }
+      if (speedCards.length && ctx.minutesLeft() > 3.5) {
         await speedIntro(ctx, G); // X-Karte hier überspringt nur die Erklärung
         for (let j = 0; j < speedCards.length; j++) await speed(ctx, G, speedCards[j], j, speedCards.length);
       }
@@ -8476,11 +8564,11 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
       const ratio = G.maxPoints ? total / G.maxPoints : 0;
       const energy = clamp(4 + Math.round(6 * ratio), 4, 10);
       const n = G.blocks.length;
-      let summary = 'Ihr habt Etiketten umgedreht. Das ist nicht leicht.';
-      if (n >= 6) summary = 'Euer Stärken-Turm ist richtig hoch. Stark umgedreht!';
-      else if (n >= 3) summary = n + ' Stärken im Turm. Gut umgedacht, Crew!';
-      else if (n >= 1) summary = 'Der Stärken-Turm wächst. Gut umgedacht!';
-      return { energy, summary };
+      let summary = 'Ihr habt blöde Sprüche umgedreht. Das ist nicht leicht.';
+      if (n >= 4) summary = 'Euer Crew-Tower ist richtig hoch. Stark gekontert!';
+      else if (n >= 2) summary = n + ' Stärken im Turm. Gut gekontert, Crew!';
+      else if (n >= 1) summary = 'Der Crew-Tower wächst. Gut gekontert!';
+      return { energy, summary, points: total };
     },
   });
 
@@ -8496,8 +8584,8 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
     const vi = view(ctx, [
       h('div', { class: 'reframe-center enter' },
         h('span', { class: 'eyebrow' }, 'Solo · Stärken-Training'),
-        h('h1', { class: 'outline-text' }, 'Reframe-Rush'),
-        h('p', { class: 'lead' }, 'Du siehst eine Stärke. Welches Etikett steckt dahinter?'),
+        h('h1', { class: 'outline-text' }, 'Konter-Rush'),
+        h('p', { class: 'lead' }, 'Du siehst eine Stärke. Welcher Spruch steckt dahinter?'),
         h('p', { class: 'muted' }, SOLO_CARDS + ' Karten. Kein Zeitdruck. Jeder Treffer baut deinen Turm.')),
       h('div', { class: 'reframe-solo-demo enter-2' }, flipTag(demoCard, { demo: true, small: true }).el),
     ]);
@@ -8519,7 +8607,7 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
       }));
       const feedback = h('div', { class: 'reframe-solo-fb' });
       const hudSlot = h('div', { class: 'reframe-hudslot' }, hud(G, label, { solo: { hits } }));
-      const v = view(ctx, [hudSlot, h('div', { class: 'enter' }, questionCard(ctx, card, k, 'Welches Etikett steckt dahinter?')), h('div', { class: 'enter-2' }, grid), feedback], { top: true });
+      const v = view(ctx, [hudSlot, h('div', { class: 'enter' }, questionCard(ctx, card, k, 'Welcher Spruch steckt dahinter?')), h('div', { class: 'enter-2' }, grid), feedback], { top: true });
       const chosen = await ctx.waitFor(pickP);
       if (chosen === SKIP) continue;
       played++;
@@ -8550,10 +8638,10 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
     const v = view(ctx, [
       h('div', { class: 'reframe-split final' },
         h('div', { class: 'stack reframe-final-l' },
-          h('span', { class: 'eyebrow enter' }, 'Dein Stärken-Turm'),
+          h('span', { class: 'eyebrow enter' }, 'Dein Tower'),
           h('h2', { class: 'enter' }, hits + ' von ' + cards.length + ' Treffern'),
           best ? h('p', { class: 'lead enter-2' }, best.isNew && hits > 0 ? 'Neuer Bestwert!' : 'Dein Bestwert: ' + best.best) : null,
-          h('p', { class: 'muted enter-3' }, hits ? 'Jede Stärke im Turm war vorher ein Etikett.' : 'Knifflig heute. Beim nächsten Mal wächst der Turm.')),
+          h('p', { class: 'muted enter-3' }, hits ? 'Jede Stärke im Turm war vorher ein blöder Spruch.' : 'Knifflig heute. Beim nächsten Mal wächst der Turm.')),
         h('div', { class: 'reframe-tower-slot' }, tower(G, { roof: true, roofFresh: true }))),
     ]);
     CREW.sound.play(hits >= cards.length / 2 ? 'great' : 'good');
@@ -8564,8 +8652,8 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
 
   CREW.registerSolo({
     id: 'reframe',
-    title: 'Reframe-Rush',
-    desc: 'Du siehst eine Stärke. Welches Etikett steckt dahinter?',
+    title: 'Konter-Rush',
+    desc: 'Du siehst eine Stärke. Welcher Spruch steckt dahinter?',
     icon: 'sparkle',
     async run(ctx) {
       for (;;) {
@@ -9540,8 +9628,8 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
       if (i0 !== 'go') return;
       for (let i = 0; i < SENSES.length; i++) {
         const r = await sinneStep(ctx, i);
-        if (r === 'quit') return;
-        // 'skip' (X-Karte): diesen Sinn einfach auslassen
+        // X-Karte beendet die Übung (so steht es auch im Menü)
+        if (r === 'quit' || r === 'skip') return;
       }
       const o = await outro(ctx, { title: 'Du bist hier. Jetzt.', text: 'Dein Kopf hat gerade Pause gemacht. Das geht überall: im Bus, vor einer Prüfung, beim Warten.' });
       if (o !== 'again') return;
@@ -9604,6 +9692,9 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
     'Enttäuschung': { fam: 'Trauer' }, Einsamkeit: { fam: 'Trauer' },
     Erleichterung: { fam: 'Freude' }, Vorfreude: { fam: 'Freude' }, Dankbarkeit: { fam: 'Freude' },
     Verlegenheit: { fam: 'Scham' }, 'Schuldgefühl': { fam: 'Scham' },
+    Traurigkeit: { fam: 'Trauer' }, 'Kränkung': { mix: ['Trauer', 'Wut'] }, Aufregung: { mix: ['Angst', 'Freude'] },
+    Panik: { fam: 'Angst' }, Ungeduld: { fam: 'Wut' }, 'Empörung': { fam: 'Wut' },
+    Zufriedenheit: { fam: 'Freude' }, Staunen: { fam: 'Überraschung' }, Abscheu: { fam: 'Ekel' },
     'Mitgefühl': { color: '#f08cff', note: 'Ein Gefühl für andere: spüren, wie es jemandem geht.' },
     Langeweile: { color: '#9aa6c4', note: 'Im Kopf ist gerade „nichts los“.' },
   };
@@ -9767,7 +9858,7 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
         h('div', { class: 'card solo-sign-card' }, h('span', { class: 'solo-sign-ic' }, s.icon()), h('div', null, h('b', null, s.label), h('div', { class: 'muted small' }, s.q))))),
       h('div', { class: 'solo-dec-start enter-3' },
         h('div', { class: 'stack', style: { gap: '6px' } },
-          h('span', { class: 'muted small' }, SCENES + ' Szenen · Gefühl +2 · Stärke +1'),
+          h('span', { class: 'muted small' }, SCENES + ' Szenen · Gefühl bis +3 · Stärke +1 · Weniger Hinweise = mehr Punkte'),
           rec != null ? h('span', { class: 'pill', id: 'dec-record' }, CREW.icon('trophy', 18), 'Dein Rekord: ' + rec + ' Punkte') : null),
         h('div', { class: 'row solo-dec-start-btns' },
           ui.btn('Zurück', () => done('back'), { variant: 'ghost', icon: 'left' }),
@@ -9780,9 +9871,25 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
   async function scene(ctx, sc, i, total, run) {
     const { h, ui } = ctx;
     const opts = ctx.util.shuffle(sc.options);
-    const speakText = sc.text + (sc.say ? ' ' + sc.who + ' sagt: ' + sc.say : '') + (sc.body ? ' ' + sc.body : '') + ' Was fühlt ' + sc.who + ' wohl?';
+    const shown = (el) => el && el.style.display !== 'none';
+    const speakText = () => sc.text + (shown(sayEl) ? ' ' + sc.who + ' sagt: ' + sc.say : '') + (shown(bodyEl) ? ' ' + sc.body : '') + ' Was fühlt ' + sc.who + ' wohl?';
     const q = h('h3', { class: 'solo-dec-q' }, 'Was fühlt ' + sc.who + ' wohl am ehesten?');
     const area = h('div', { class: 'solo-dec-answers' });
+    // Clue-Reveal: erst nur die Situation (3 Punkte). „Mehr Hinweise“ zeigt Worte (2) und Körper (1).
+    const sayEl = sc.say ? h('div', { class: 'solo-dec-quote', style: { display: 'none' } }, '„' + sc.say + '“') : null;
+    const bodyEl = sc.body ? h('div', { class: 'solo-dec-line body', style: { display: 'none' } }, h('span', { class: 'solo-dec-tag', html: BODY }), h('p', null, sc.body)) : null;
+    const clues = [sayEl, bodyEl].filter(Boolean);
+    let stage = 0;
+    const moreLabel = () => 'Mehr Hinweise (dann max. ' + (3 - stage - 1) + ' Punkte)';
+    const moreBtn = clues.length ? ctx.ui.btn(moreLabel(), () => {
+      const el = clues[stage];
+      if (!el) return;
+      el.style.display = '';
+      el.classList.add('pop');
+      stage++;
+      if (stage >= clues.length) moreBtn.remove(); else moreBtn.querySelector('span:last-child').textContent = moreLabel();
+    }, { variant: 'ghost', small: true, icon: 'eye', id: 'dec-more' }) : null;
+    const moreRow = moreBtn ? h('div', { class: 'row' }, moreBtn) : null;
     scr(ctx, [
       hud(ctx, run, i, total),
       h('div', { class: 'solo-dec-scene enter', 'data-scene': sc.id },
@@ -9791,9 +9898,8 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
           h('div', { class: 'row center', style: { gap: '8px' } }, h('span', { class: 'solo-dec-name' }, sc.who), ui.speakBtn(speakText))),
         h('div', { class: 'solo-dec-body' },
           h('div', { class: 'solo-dec-line sit' }, h('span', { class: 'solo-dec-tag', html: PIN }), h('p', null, sc.text)),
-          sc.say ? h('div', { class: 'solo-dec-quote' }, '„' + sc.say + '“') : null,
-          sc.body ? h('div', { class: 'solo-dec-line body' }, h('span', { class: 'solo-dec-tag', html: BODY }), h('p', null, sc.body)) : null)),
-      h('div', { class: 'stack enter-2', style: { gap: '12px' } }, q, area),
+          sayEl, bodyEl)),
+      h('div', { class: 'stack enter-2', style: { gap: '12px' } }, q, area, moreRow),
     ]);
 
     // 1) Gefühl
@@ -9806,6 +9912,9 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
       });
     }));
     if (pick === ctx.SKIP) return { skipped: true };
+    // Nach der Wahl alle Hinweise zeigen (für die Stärke)
+    clues.forEach((el) => { el.style.display = ''; });
+    if (moreRow) moreRow.remove();
 
     // 2) Stärke
     await ctx.sleep(180);
@@ -9823,7 +9932,7 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
       area.appendChild(row);
     }));
     if (level === ctx.SKIP) return { skipped: true };
-    return { pick, level };
+    return { pick, level, stage };
   }
 
   /* ---------- Auflösung ---------- */
@@ -9832,7 +9941,7 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
     const right = res.pick === sc.answer;
     const also = !right && (sc.also || []).includes(res.pick);
     const diff = Math.abs(res.level - sc.intensity);
-    const ptsFeel = right ? 2 : also ? 1 : 0;
+    const ptsFeel = right ? 3 - (res.stage || 0) : also ? 1 : 0;
     const ptsLv = diff === 0 ? 1 : 0;
     const pts = ptsFeel + ptsLv;
     run.score += pts;
@@ -9916,7 +10025,7 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
     }
     const b = ctx.best('score', run.score);
     ctx.best('serie', run.maxStreak);
-    const ratio = run.score / (run.played * 3);
+    const ratio = run.score / (run.played * 4);
     const praise = ratio >= 0.8 ? 'Du liest Menschen richtig gut.'
       : ratio >= 0.55 ? 'Starker Blick für Gefühle.'
         : ratio >= 0.3 ? 'Gute Spur! Jede Runde schärft den Blick.'
@@ -11351,7 +11460,7 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
   }
   async function startSolo(g) {
     endRun();
-    run = { token: ++tokenCounter, skipWaiter: null, inMission: false };
+    run = { token: ++tokenCounter, skipWaiter: null, inMission: false, solo: true };
     renderTopbar();
     const ctx = makeCtx(g, 1);
     ctx.solo = true;

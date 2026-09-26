@@ -26,6 +26,9 @@
     'Enttäuschung': { fam: 'Trauer' }, Einsamkeit: { fam: 'Trauer' },
     Erleichterung: { fam: 'Freude' }, Vorfreude: { fam: 'Freude' }, Dankbarkeit: { fam: 'Freude' },
     Verlegenheit: { fam: 'Scham' }, 'Schuldgefühl': { fam: 'Scham' },
+    Traurigkeit: { fam: 'Trauer' }, 'Kränkung': { mix: ['Trauer', 'Wut'] }, Aufregung: { mix: ['Angst', 'Freude'] },
+    Panik: { fam: 'Angst' }, Ungeduld: { fam: 'Wut' }, 'Empörung': { fam: 'Wut' },
+    Zufriedenheit: { fam: 'Freude' }, Staunen: { fam: 'Überraschung' }, Abscheu: { fam: 'Ekel' },
     'Mitgefühl': { color: '#f08cff', note: 'Ein Gefühl für andere: spüren, wie es jemandem geht.' },
     Langeweile: { color: '#9aa6c4', note: 'Im Kopf ist gerade „nichts los“.' },
   };
@@ -189,7 +192,7 @@
         h('div', { class: 'card solo-sign-card' }, h('span', { class: 'solo-sign-ic' }, s.icon()), h('div', null, h('b', null, s.label), h('div', { class: 'muted small' }, s.q))))),
       h('div', { class: 'solo-dec-start enter-3' },
         h('div', { class: 'stack', style: { gap: '6px' } },
-          h('span', { class: 'muted small' }, SCENES + ' Szenen · Gefühl +2 · Stärke +1'),
+          h('span', { class: 'muted small' }, SCENES + ' Szenen · Gefühl bis +3 · Stärke +1 · Weniger Hinweise = mehr Punkte'),
           rec != null ? h('span', { class: 'pill', id: 'dec-record' }, CREW.icon('trophy', 18), 'Dein Rekord: ' + rec + ' Punkte') : null),
         h('div', { class: 'row solo-dec-start-btns' },
           ui.btn('Zurück', () => done('back'), { variant: 'ghost', icon: 'left' }),
@@ -202,9 +205,25 @@
   async function scene(ctx, sc, i, total, run) {
     const { h, ui } = ctx;
     const opts = ctx.util.shuffle(sc.options);
-    const speakText = sc.text + (sc.say ? ' ' + sc.who + ' sagt: ' + sc.say : '') + (sc.body ? ' ' + sc.body : '') + ' Was fühlt ' + sc.who + ' wohl?';
+    const shown = (el) => el && el.style.display !== 'none';
+    const speakText = () => sc.text + (shown(sayEl) ? ' ' + sc.who + ' sagt: ' + sc.say : '') + (shown(bodyEl) ? ' ' + sc.body : '') + ' Was fühlt ' + sc.who + ' wohl?';
     const q = h('h3', { class: 'solo-dec-q' }, 'Was fühlt ' + sc.who + ' wohl am ehesten?');
     const area = h('div', { class: 'solo-dec-answers' });
+    // Clue-Reveal: erst nur die Situation (3 Punkte). „Mehr Hinweise“ zeigt Worte (2) und Körper (1).
+    const sayEl = sc.say ? h('div', { class: 'solo-dec-quote', style: { display: 'none' } }, '„' + sc.say + '“') : null;
+    const bodyEl = sc.body ? h('div', { class: 'solo-dec-line body', style: { display: 'none' } }, h('span', { class: 'solo-dec-tag', html: BODY }), h('p', null, sc.body)) : null;
+    const clues = [sayEl, bodyEl].filter(Boolean);
+    let stage = 0;
+    const moreLabel = () => 'Mehr Hinweise (dann max. ' + (3 - stage - 1) + ' Punkte)';
+    const moreBtn = clues.length ? ctx.ui.btn(moreLabel(), () => {
+      const el = clues[stage];
+      if (!el) return;
+      el.style.display = '';
+      el.classList.add('pop');
+      stage++;
+      if (stage >= clues.length) moreBtn.remove(); else moreBtn.querySelector('span:last-child').textContent = moreLabel();
+    }, { variant: 'ghost', small: true, icon: 'eye', id: 'dec-more' }) : null;
+    const moreRow = moreBtn ? h('div', { class: 'row' }, moreBtn) : null;
     scr(ctx, [
       hud(ctx, run, i, total),
       h('div', { class: 'solo-dec-scene enter', 'data-scene': sc.id },
@@ -213,9 +232,8 @@
           h('div', { class: 'row center', style: { gap: '8px' } }, h('span', { class: 'solo-dec-name' }, sc.who), ui.speakBtn(speakText))),
         h('div', { class: 'solo-dec-body' },
           h('div', { class: 'solo-dec-line sit' }, h('span', { class: 'solo-dec-tag', html: PIN }), h('p', null, sc.text)),
-          sc.say ? h('div', { class: 'solo-dec-quote' }, '„' + sc.say + '“') : null,
-          sc.body ? h('div', { class: 'solo-dec-line body' }, h('span', { class: 'solo-dec-tag', html: BODY }), h('p', null, sc.body)) : null)),
-      h('div', { class: 'stack enter-2', style: { gap: '12px' } }, q, area),
+          sayEl, bodyEl)),
+      h('div', { class: 'stack enter-2', style: { gap: '12px' } }, q, area, moreRow),
     ]);
 
     // 1) Gefühl
@@ -228,6 +246,9 @@
       });
     }));
     if (pick === ctx.SKIP) return { skipped: true };
+    // Nach der Wahl alle Hinweise zeigen (für die Stärke)
+    clues.forEach((el) => { el.style.display = ''; });
+    if (moreRow) moreRow.remove();
 
     // 2) Stärke
     await ctx.sleep(180);
@@ -245,7 +266,7 @@
       area.appendChild(row);
     }));
     if (level === ctx.SKIP) return { skipped: true };
-    return { pick, level };
+    return { pick, level, stage };
   }
 
   /* ---------- Auflösung ---------- */
@@ -254,7 +275,7 @@
     const right = res.pick === sc.answer;
     const also = !right && (sc.also || []).includes(res.pick);
     const diff = Math.abs(res.level - sc.intensity);
-    const ptsFeel = right ? 2 : also ? 1 : 0;
+    const ptsFeel = right ? 3 - (res.stage || 0) : also ? 1 : 0;
     const ptsLv = diff === 0 ? 1 : 0;
     const pts = ptsFeel + ptsLv;
     run.score += pts;
@@ -338,7 +359,7 @@
     }
     const b = ctx.best('score', run.score);
     ctx.best('serie', run.maxStreak);
-    const ratio = run.score / (run.played * 3);
+    const ratio = run.score / (run.played * 4);
     const praise = ratio >= 0.8 ? 'Du liest Menschen richtig gut.'
       : ratio >= 0.55 ? 'Starker Blick für Gefühle.'
         : ratio >= 0.3 ? 'Gute Spur! Jede Runde schärft den Blick.'

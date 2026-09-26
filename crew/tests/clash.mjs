@@ -60,7 +60,7 @@ async function playStairs(page, tag, opts) {
         await page.locator('#btn-x').click();
         const t2 = await screenType(page);
         const after = await nowKey(page);
-        if (t2 !== 'turn' || !after || after === before) problems.push(`${tag('x')}: Nach X-Karte ging es nicht weiter (vorher ${before}, nachher ${t2}/${after})`);
+        if ((t2 !== 'turn' && t2 !== 'joint') || !after || after === before) problems.push(`${tag('x')}: Nach X-Karte ging es nicht weiter (vorher ${before}, nachher ${t2}/${after})`);
         const skipped = await page.locator(`.clash-hud .clash-cell.skip[data-key="${before}"]`).count();
         if (!skipped) problems.push(`${tag('x')}: Übersprungene Stufe ${before} nicht markiert`);
         await shot(page, tag('07-nach-x'), 300);
@@ -70,7 +70,7 @@ async function playStairs(page, tag, opts) {
       let kind;
       if (hasTried) kind = t === 'turn' ? 'ich' : (await page.locator('.clash-opt[data-kind="echt"]').count()) ? 'echt' : 'klar';
       else if (o.mixed && t === 'turn' && info.turns === 1) { kind = 'du'; wantRewind = true; }
-      else if (o.mixed && t === 'turn' && info.turns === 2) kind = 'weg';
+      else if (o.mixed && t === 'turn' && info.turns === 2) kind = 'fake'; // getarnter Angriff
       else if (o.mixed && t === 'joint' && info.joints === 1) { kind = 'halb'; wantRewind = true; }
       else kind = t === 'turn' ? 'ich' : (await page.locator('.clash-opt[data-kind="echt"]').count()) ? 'echt' : 'klar';
       if (!(await page.locator(`.clash-opt[data-kind="${kind}"]`).count())) { problems.push(`${tag(t)}: Keine Antwort der Art ${kind}`); kind = null; }
@@ -79,7 +79,7 @@ async function playStairs(page, tag, opts) {
     } else if (t === 'result') {
       info.results++;
       // X-Karte auf einem Wirkungs-Bildschirm (Stufe 3): zählt als übersprungen, Spiel läuft weiter
-      if (o.pressXResult && info.turns === 5 && !info.xResult) {
+      if (o.pressXResult && info.turns === 2 && !info.xResult) {
         info.xResult = true;
         const key = await page.evaluate(() => { const c = document.querySelector('.clash-hud .clash-cell.now'); return c ? c.dataset.key : null; });
         await page.locator('#btn-x').click();
@@ -156,7 +156,7 @@ async function checkContent(page) {
       [1, 2, 3].forEach((s) => ['A', 'B'].forEach((side) => {
         const list = (sc.steps[s] || {})[side] || [];
         const kinds = list.map((o) => o.kind).sort().join(',');
-        if (kinds !== 'du,ich,weg') out.push(`${w}.steps.${s}.${side}: braucht genau ich/du/weg (hat ${kinds})`);
+        if (kinds !== 'du,fake,ich,weg') out.push(`${w}.steps.${s}.${side}: braucht genau ich/du/weg/fake (hat ${kinds})`);
         list.forEach((o, i) => {
           add(`${w}.${s}${side}${i}`, o.text); add(`${w}.${s}${side}${i}.reaction`, o.reaction);
           if (typeof o.heat !== 'number') out.push(`${w}.${s}${side}${i}: heat fehlt`);
@@ -166,7 +166,7 @@ async function checkContent(page) {
       }));
       [['versoehnung', 'echt', 'halb'], ['vereinbarung', 'klar', 'vage']].forEach(([k, good, weak]) => {
         const list = sc[k] || [];
-        if (!(list.length >= 3 && list.length <= 4)) out.push(w + '.' + k + ': 3–4 Einträge nötig');
+        if (!(list.length >= 4 && list.length <= 5)) out.push(w + '.' + k + ': 4–5 Einträge nötig');
         if (!list.some((o) => o.kind === good)) out.push(w + '.' + k + ': kein ' + good);
         list.forEach((o, i) => {
           if (![good, weak].includes(o.kind)) out.push(`${w}.${k}${i}: kind ${o.kind}`);
@@ -227,7 +227,7 @@ for (const run of RUNS) {
   await shot(page, tag('03-teams'), 500);
   problems.push(...await layoutCheck(page, tag('crew')));
   // 3-2-1 einmal ausprobieren (auf dem ersten Zug)
-  await clickText(page, 'Los: Stufe 1');
+  await clickText(page, 'Los: Level 1');
   if (run.name === 'ipadLandscape') {
     await screenType(page);
     await page.locator('#clash-321').click();
@@ -236,7 +236,7 @@ for (const run of RUNS) {
 
   const info = await playStairs(page, tag, { mixed: true, pressX: true, pressXResult: run.name === 'ipadPortrait' });
   if (run.name === 'ipadPortrait' && !info.xResult) problems.push(`${tag('x-result')}: X auf Wirkung nicht getestet`);
-  if (info.turns < 5) problems.push(`${tag('turns')}: nur ${info.turns} Züge auf Stufe 1–3`);
+  if (info.turns !== 3) problems.push(`${tag('turns')}: ${info.turns} Züge auf Level 1–3 statt 3`);
   if (info.joints !== 2) problems.push(`${tag('joints')}: ${info.joints} gemeinsame Stufen statt 2`);
   if (info.rewinds < 2) problems.push(`${tag('rewind')}: Zurückspulen nur ${info.rewinds}×`);
   if (!info.xDone) problems.push(`${tag('x')}: X-Karte nicht getestet`);
@@ -271,7 +271,7 @@ for (const run of RUNS) {
     await shot(page, tag('13-solo-start'), 400);
     problems.push(...await layoutCheck(page, tag('solo-start')));
     if (await page.locator('.paddle-hint').count()) problems.push(`${tag('solo')}: Antwort-Karten-Hinweis im Solo`);
-    await clickText(page, 'Los: Stufe 1');
+    await clickText(page, 'Los: Level 1');
     await screenType(page);
     await shot(page, tag('14-solo-zug'), 400);
     problems.push(...await layoutCheck(page, tag('solo-zug')));

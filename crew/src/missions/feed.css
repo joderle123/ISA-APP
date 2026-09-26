@@ -343,11 +343,13 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
 }
 .feed-stamp.F { background: var(--good); color: var(--good-ink); }
 .feed-stamp.M { background: var(--yellow); color: var(--yellow-ink); }
+.feed-stamp.X { background: var(--teamB); color: #fff; }
 .feed-stamp.big { font-size: 1.5em; padding: 8px 14px; transform: rotate(-4deg); border-width: var(--bw); animation: feed-stamp 420ms cubic-bezier(.2, 1.5, .4, 1) both; }
 .app[data-look="pixel"] .feed-stamp { border-radius: 0; }
 .feed-verdict { display: flex; flex-direction: column; gap: 12px; }
 .feed-verdict.vF { border-color: var(--good); }
 .feed-verdict.vM { border-color: var(--yellow); }
+.feed-verdict.vX { border-color: var(--teamB); }
 .app[data-look="arena"] .feed-verdict.vF, .app[data-look="arena"] .feed-verdict.vM, .app[data-look="pixel"] .feed-verdict.vF, .app[data-look="pixel"] .feed-verdict.vM { border-color: var(--line); }
 .feed-verdict-top { display: flex; align-items: center; gap: 16px; }
 .feed-verdict-top .lead { flex: 1; }

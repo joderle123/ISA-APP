@@ -143,8 +143,9 @@
         h('span', { class: 'feed-grow' }),
         h('span', null, CREW.icon('eye', 18), fmt((p.likes || 10) * 9))));
   }
+  // F = echt (nachprüfbar und stimmt), M = Meinung, X = Fake (klingt nach Fakt, stimmt aber nicht)
   function stampEl(truth, big) {
-    return h('span', { class: 'feed-stamp ' + truth + (big ? ' big' : '') }, truth === 'F' ? 'Fakt' : 'Meinung');
+    return h('span', { class: 'feed-stamp ' + truth + (big ? ' big' : '') }, truth === 'F' ? 'Echt' : truth === 'X' ? 'Fake' : 'Meinung');
   }
   function cmtEl(c, state, stamp) {
     return h('div', { class: 'feed-cmt' + (state ? ' ' + state : '') },
@@ -438,6 +439,10 @@
   async function roundFakt(G, card) {
     const { ctx } = G;
     const ui = ctx.ui;
+    // Zwei Kommentare pro Runde: der Fake und einer der anderen (Zeit!)
+    const fake = card.items.filter((x) => x.fake);
+    const rest = shuffle(card.items.filter((x) => !x.fake));
+    card = { ...card, items: shuffle(fake.slice(0, 1).concat(rest.slice(0, fake.length ? 1 : 2))) };
     const n = card.items.length;
     const done = [];
     let playedAny = false;
@@ -447,12 +452,13 @@
         h('div', { class: 'feed-cmts' }, card.items.map((c, j) => cmtEl(c, j === i ? 'cur' : done[j] ? 'done' : j > i ? 'later' : 'skipped', done[j])))], { cls: 'fakt' });
       const holder = h('div', { class: 'feed-holder' });
       G.wrap = ctx.screen(layout(G, 'fakt', ph.el, [
-        question(G, null, 'Kann man das nachprüfen?', () => it.text + '. Kann man das nachprüfen?'),
+        question(G, null, 'Echt, Meinung oder Fake?', () => it.text + '. Echt, Meinung oder Fake?'),
         h('div', { class: 'card feed-quote enter' }, ava(it.von, 46),
           h('div', { class: 'feed-quote-b' }, h('span', { class: 'feed-handle' }, '@' + it.von), h('div', { class: 'feed-quote-t' }, '„' + it.text + '“'))),
         h('div', { class: 'feed-rule' },
-          h('div', null, stampEl('F'), h('span', null, 'kann man nachprüfen')),
-          h('div', null, stampEl('M'), h('span', null, 'jemand findet etwas'))),
+          h('div', null, stampEl('F'), h('span', null, 'nachprüfbar und stimmt')),
+          h('div', null, stampEl('M'), h('span', null, 'jemand findet etwas')),
+          h('div', null, stampEl('X'), h('span', null, 'klingt nach Fakt, ist erfunden'))),
         holder,
       ], 'Kommentar ' + (i + 1) + ' von ' + n));
       // Aktuellen Kommentar im Handy sichtbar halten
@@ -462,16 +468,17 @@
       });
       let ans;
       if (G.solo) {
-        const r = await soloChoice(G, holder, 'fakt-ask', [{ v: 'F', label: 'Fakt', variant: 'good' }, { v: 'M', label: 'Meinung', variant: 'yellow' }]);
+        const r = await soloChoice(G, holder, 'fakt-ask', [{ v: 'F', label: 'Echt', variant: 'good' }, { v: 'M', label: 'Meinung', variant: 'yellow' }, { v: 'X', label: 'Fake', variant: 'teamB' }]);
         if (r === ctx.SKIP) continue;
         ans = { solo: r };
       } else {
-        const r = await callTeams(G, holder, { stage: 'fakt', paddle: 'janein', hint: 'Ja = Fakt · Nein = Meinung', choices: [{ v: 'F', label: 'Fakt', sub: 'Ja', cls: 'ja' }, { v: 'M', label: 'Meinung', sub: 'Nein', cls: 'nein' }] });
+        const r = await callTeams(G, holder, { stage: 'fakt', paddle: 'abcd', hint: 'A = Echt · B = Meinung · C = Fake', choices: [{ v: 'F', label: 'Echt', sub: 'A', cls: 'ja' }, { v: 'M', label: 'Meinung', sub: 'B', cls: 'lD' }, { v: 'X', label: 'Fake', sub: 'C', cls: 'nein' }] });
         if (r === ctx.SKIP) continue;
         ans = r;
       }
       playedAny = true;
-      const truth = it.fakt ? 'F' : 'M';
+      const truth = it.fake ? 'X' : it.fakt ? 'F' : 'M';
+      const worth = it.fake ? 2 : 1; // Fake erwischt = 2 Punkte
       done[i] = truth;
       // Stempel im Handy
       const cur = ph.body.querySelector('.feed-cmt.cur');
@@ -480,9 +487,9 @@
       const rows = sides(G).filter((s) => ans[s] != null).map((s) => {
         const ok = ans[s] === truth;
         anyRight = anyRight || ok;
-        score(G, s, ok ? 1 : 0, 1);
-        const txt = G.solo ? (ok ? 'Richtig erkannt!' : 'Diesmal anders. Lies kurz die Begründung.') : (ok ? 'richtig erkannt' : 'anders getippt');
-        return h('div', { class: 'feed-res-row' }, G.solo ? null : teamPill(G, s), h('span', null, txt), h('span', { class: 'feed-grow' }), ptsChip(ok ? 1 : 0));
+        score(G, s, ok ? worth : 0, worth);
+        const txt = G.solo ? (ok ? (it.fake ? 'Fake erwischt!' : 'Richtig erkannt!') : 'Diesmal anders. Lies kurz die Begründung.') : (ok ? (it.fake ? 'Fake erwischt!' : 'richtig erkannt') : 'anders getippt');
+        return h('div', { class: 'feed-res-row' }, G.solo ? null : teamPill(G, s), h('span', null, txt), h('span', { class: 'feed-grow' }), ptsChip(ok ? worth : 0));
       });
       clear(holder);
       holder.appendChild(h('div', { class: 'card feed-verdict pop v' + truth },
@@ -611,7 +618,7 @@
     const nein = h('div', { class: 'card feed-nein' },
       h('div', { class: 'feed-nein-h' }, CREW.icon('shield', 26), h('b', null, 'Nein-Sätze, die funktionieren')),
       h('div', { class: 'feed-nein-list' }, card.nein.map((s) => h('div', { class: 'feed-nein-l' }, '„' + s + '“'))),
-      h('p', { class: 'muted small' }, 'Welcher passt zu dir?'));
+      null);
     const allBtn = ui.btn('Alle Wege', () => allWays(G, 'Alle Antworten', opts, (o) => [
       h('div', { class: 'row', style: { gap: '8px' } }, h('b', null, '„' + o.t + '“'), kindChip(DRUCK_KIND[o.k])),
       h('span', { class: 'feed-way-meta' }, o.antwort.von + ': „' + o.antwort.text + '“'),
@@ -869,27 +876,6 @@
     if (r >= 0.55) return solo ? 'Gut gemacht! Dich legt man nicht so leicht rein.' : 'Gut gemacht! Euch legt man nicht so leicht rein.';
     return solo ? 'Du hast ausprobiert, was online passiert. Das zählt.' : 'Ihr habt ausprobiert, was online passiert. Das zählt.';
   }
-  async function ending(G) {
-    const { ctx } = G;
-    const ui = ctx.ui;
-    const total = G.pts.A + G.pts.B;
-    const r = ratioOf(G);
-    const num = h('span', { class: 'display feed-endnum' }, '0');
-    const sc = (side) => h('span', { class: 'feed-sc ' + ctx.teams[side].cls }, h('span', { class: 'dot' }), h('span', { class: 'nm' }, ctx.teams[side].name), h('b', null, String(G.pts[side])));
-    const wrap = ctx.screen([
-      h('div', { class: 'stack feed-end' },
-        h('span', { class: 'eyebrow' }, 'Feed-Check geschafft'),
-        h('h2', null, praise(r)),
-        h('div', { class: 'feed-formula big' }, sc('A'), h('b', null, '+'), sc('B'), h('b', null, '=')),
-        h('div', { class: 'feed-endrow' }, CREW.icon('bolt', 52), num, h('span', { class: 'display feed-endlbl' }, 'Crew-Punkte'))),
-      tipCard(),
-    ], { center: true, narrow: true });
-    G.wrap = wrap;
-    CREW.sound.play('great');
-    if (r >= 0.55) ui.confetti(140);
-    await ui.countUp(num, 0, total, 900);
-    await ask(G, wrap, [{ label: 'Weiter', value: 'go', iconRight: 'right', id: 'feed-next' }], 'end', 'center');
-  }
   async function soloEnd(G, best) {
     const { ctx } = G;
     const ui = ctx.ui;
@@ -909,9 +895,11 @@
   }
 
   /* ---------- Ablauf ---------- */
-  // Jede Session: alle vier Rundentypen + eine Extra-Runde (Was machst du? oder Gruppendruck)
+  // Gruppe: drei Runden (Echt/Meinung/Fake, Gerücht-Kette, dann Was machst du? oder Gruppendruck).
+  // Solo: alle vier Rundentypen + eine Extra-Runde.
   function planRounds(ctx) {
-    const order = ['fakt', 'tun', 'kette', 'druck', Math.random() < 0.5 ? 'tun' : 'druck'];
+    const extra = Math.random() < 0.5 ? 'tun' : 'druck';
+    const order = ctx.solo ? ['fakt', 'tun', 'kette', 'druck', extra] : ['fakt', 'kette', extra];
     const ids = new Set();
     const cards = [];
     for (const t of order) {
@@ -928,6 +916,7 @@
     G.total = cards.length;
     await intro(G);
     for (const card of cards) {
+      if (!G.solo && !ctx.roundGate(G.round, cards.length)) break;
       G.round++;
       await splash(G, card.type);
       if (await ROUND[card.type](G, card)) G.played++;
@@ -940,7 +929,9 @@
     day: 4,
     title: 'Feed-Check',
     tagline: 'Gerüchte, Chats, Gruppendruck. Was macht ihr?',
-    minutes: 7,
+    hook: 'Team gegen Team · 3 Runden',
+    color: '#2f7cf6',
+    minutes: 5,
     themes: ['Medien', 'Zivilcourage', 'Gruppendruck'],
     etep: 'IV–V',
     eldib: [
@@ -950,7 +941,7 @@
       { code: 'SOZ-37', text: 'versteht, wie es anderen geht, und nimmt Rücksicht' },
       { code: 'SOZ-39', text: 'entscheidet nach eigenen Werten, auch unter Druck' },
     ],
-    teacherNote: 'Zwei Teams, fünf schnelle Runden auf einem erfundenen Handy („Glimmr“). Rundentypen: Fakt oder Meinung? (Antwort-Karte Ja = Fakt, Nein = Meinung), Was machst du? (A–D), Gerücht-Kette (bei jedem Schritt: Ja = wir stoppen hier), Gruppendruck (A–D). Jedes Team einigt sich leise. Auf „Zeigt her!“ hält pro Team eine Person die Karte hoch (oder alle, dann zählt die Mehrheit). Du tippst an, was jedes Team zeigt. Punkte: stark 3, gut 2, okay 1, riskant 0; Fakt/Meinung 1 pro Kommentar; Kette: früh gestoppt 2, später 1, plus 1 für einen starken Weg. Beide Teamkonten zählen am Ende zusammen für die Crew. Es gibt kein „Falsch“: Die Folgen werden nur sichtbar. „Alle Wege“ zeigt, was die anderen Antworten bewirkt hätten – gut zum Nachfragen. Vapes, Familie und Geld sind als heikel markiert. Die X-Karte überspringt einen Kommentar oder eine Runde. Am Ende steht die BEE SECURE Helpline (8002 1234).',
+    teacherNote: 'Zwei Teams, drei schnelle Runden auf einem erfundenen Handy („Glimmr“). Rundentypen: Echt, Meinung oder Fake? (Antwort-Karte A = Echt, B = Meinung, C = Fake; Fake erwischt = 2 Punkte), Was machst du? (A–D), Gerücht-Kette (bei jedem Schritt: Ja = wir stoppen hier), Gruppendruck (A–D). Jedes Team einigt sich leise. Auf „Zeigt her!“ hält pro Team eine Person die Karte hoch (oder alle, dann zählt die Mehrheit). Du tippst an, was jedes Team zeigt. Punkte: stark 3, gut 2, okay 1, riskant 0; Echt/Meinung 1 pro Kommentar, Fake 2; Kette: früh gestoppt 2, später 1, plus 1 für einen starken Weg. Beide Teamkonten zählen am Ende zusammen für die Crew. Es gibt kein „Falsch“: Die Folgen werden nur sichtbar. „Alle Wege“ zeigt, was die anderen Antworten bewirkt hätten – gut zum Nachfragen. Vapes, Familie und Geld sind als heikel markiert. Die X-Karte überspringt einen Kommentar oder eine Runde. Am Ende steht die BEE SECURE Helpline (8002 1234).',
     debrief: [
       'Warum leiten Leute Gerüchte weiter, obwohl sie nicht wissen, ob es stimmt?',
       'Hast du schon mal erlebt, dass online etwas ganz anders war als in echt?',
@@ -962,13 +953,13 @@
     ],
     async run(ctx) {
       const G = await play(ctx);
-      await ending(G);
+      // Kein eigener End-Bildschirm mehr: Punkte und Helpline zeigt der gemeinsame Abschluss
       const r = ratioOf(G);
       const energy = G.played ? clamp(5 + Math.round(5 * r), 4, 10) : 4;
       let summary = 'Ihr habt ausprobiert, was online passiert. Das zählt.';
       if (r >= 0.8) summary = 'Stark! Ihr habt den Feed voll im Griff.';
       else if (r >= 0.55) summary = 'Gut gemacht! Ihr lasst euch online nicht so leicht reinlegen.';
-      return { energy, summary };
+      return { energy, summary, points: G.pts.A + G.pts.B, note: tipCard() };
     },
   });
 

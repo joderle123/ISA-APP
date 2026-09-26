@@ -790,8 +790,8 @@
       if (i0 !== 'go') return;
       for (let i = 0; i < SENSES.length; i++) {
         const r = await sinneStep(ctx, i);
-        if (r === 'quit') return;
-        // 'skip' (X-Karte): diesen Sinn einfach auslassen
+        // X-Karte beendet die Übung (so steht es auch im Menü)
+        if (r === 'quit' || r === 'skip') return;
       }
       const o = await outro(ctx, { title: 'Du bist hier. Jetzt.', text: 'Dein Kopf hat gerade Pause gemacht. Das geht überall: im Bus, vor einer Prüfung, beim Warten.' });
       if (o !== 'again') return;
