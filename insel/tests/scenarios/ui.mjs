@@ -52,6 +52,32 @@ try {
   const dismissed = await page.evaluate(async () => { LUMO.input.press('action'); LUMO.debug.advance(1 / 30); LUMO.input.release('action'); const r = await window.__p1; LUMO.debug.advance(0.5); return { ...r, enabled: LUMO.player.enabled, gone: !document.querySelector('.bubble.is-in') }; });
   check('Aktion blättert weiter, Spieler wieder frei', dismissed.dismissed === 'action' && dismissed.enabled && dismissed.gone, JSON.stringify(dismissed));
 
+  // ---- Verankerte Blase folgt einer Figur, Kontrast der Blase ----
+  const an = await page.evaluate(() => {
+    const P = LUMO.player.position;
+    const npc = LUMO.spawnHumanoid({ skin: '#f0c09a', hairStyle: 'lang', hair: '#6b4a2f', top: '#39d0c8' }, { x: P.x + 1.6, z: P.z - 2.2, yaw: Math.PI, anim: 'idle', name: 'jolie-test' });
+    LUMO.debug.advance(0.2);
+    window.__npc = npc;
+    LUMO.ui.say({ who: 'jolie', text: 'Hier. Neben mir ist Platz.', anchor: npc.humanoid.group });
+    LUMO.ui.bubbles.update();
+    const el = document.querySelector('.bubble.is-anchored');
+    const r = el && el.getBoundingClientRect();
+    const cs = getComputedStyle(el);
+    // Kontrast Weiß auf Blasen-Hintergrund (rgba über hellstem Untergrund gerechnet = schlechtester Fall)
+    const m = cs.backgroundColor.match(/[\d.]+/g).map(Number);
+    const a = m[3] === undefined ? 1 : m[3];
+    const lum = (c) => { const v = c / 255; return v <= 0.03928 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4); };
+    const bg = [0, 1, 2].map((i) => m[i] * a + 255 * (1 - a));
+    const L = 0.2126 * lum(bg[0]) + 0.7152 * lum(bg[1]) + 0.0722 * lum(bg[2]);
+    const contrast = (1 + 0.05) / (L + 0.05);
+    return { anchored: !!el, inView: !!r && r.left >= 0 && r.right <= innerWidth && r.top >= 0 && r.bottom <= innerHeight, contrast: +contrast.toFixed(1) };
+  });
+  check('Verankerte Blase über der Figur, im Bild', an.anchored && an.inView, JSON.stringify(an));
+  check('Kontrast Blasentext ≥ 4,5:1 (schlechtester Untergrund)', an.contrast >= 4.5, an.contrast + ':1');
+  await frames(page, 3);
+  await shot(page, '80b_blase_verankert');
+  await page.evaluate(() => { LUMO.ui.bubbles.clear(); window.__npc.remove(); LUMO.debug.advance(0.3); });
+
   // ---- Glimm ----
   const g1 = await page.evaluate(() => { LUMO.ui.glimm('Regeln. Gähn. Okay, die war gut.'); const el = document.querySelector('.glimm-line'); return { text: el && el.textContent.trim(), badge: document.querySelector('.glimm-badge').dataset.zone }; });
   check('Glimm-Zeile oben links, Glimm-Anzeige neutral vor e11', g1.text === 'Regeln. Gähn. Okay, die war gut.' && g1.badge === 'neutral', JSON.stringify(g1));
@@ -102,7 +128,7 @@ try {
       LUMO.ui.journal.open(id);
       const ov = document.querySelector('[data-overlay="tagebuch"]');
       const bad = [];
-      for (const b of ov.querySelectorAll('button')) { const rc = b.getBoundingClientRect(); if (rc.width === 0 && rc.height === 0) continue; if (rc.width < 64 || rc.height < 64) bad.push(`${id}:${(b.className || '').split(' ')[0]} ${Math.round(rc.width)}×${Math.round(rc.height)}`); }
+      for (const b of ov.querySelectorAll('button')) { const rc = b.getBoundingClientRect(); if (rc.width === 0 && rc.height === 0) continue; if (rc.width < 63.5 || rc.height < 63.5) bad.push(`${id}:${(b.className || '').split(' ')[0]} ${Math.round(rc.width)}×${Math.round(rc.height)}`); }
       const card = ov.querySelector('.ov-card').getBoundingClientRect();
       return { bad, x: !!ov.querySelector('.ov-close'), page: document.querySelector('.jn-page').dataset.pageId, over: card.right > innerWidth + 1 || card.bottom > innerHeight + 1 || document.documentElement.scrollWidth > innerWidth, tab: !!ov.querySelector(`.jn-tab.is-on[data-page="${id}"]`) };
     }, id);

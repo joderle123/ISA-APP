@@ -105,7 +105,7 @@ export function createGround(ctx) {
       safeT += dt;
       if (safeT > 0.4) {
         safeT = 0;
-        if ((wdepth < 0.5 && !ctx.inLava(pos) && ctx.island.isWalkable(pos.x, pos.z)) || g.surf) ctx.markSafe();
+        if (g.surf || ctx.isSafeSpot(pos.x, pos.z)) ctx.markSafe();
       }
 
       footsteps(sp);

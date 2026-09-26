@@ -53,9 +53,10 @@ try {
     return { hNormal, hPump, ratio: hPump / hNormal, charged, ready, events };
   });
   check('Pumpsprung ≥ 2,2× Sprunghöhe', pump.ratio >= 2.2 && pump.charged && pump.ready && pump.events === 1, `normal ${pump.hNormal.toFixed(2)} m · Pump ${pump.hPump.toFixed(2)} m · ×${pump.ratio.toFixed(2)}`);
-  await page.evaluate(() => { LUMO.input.press('jump'); LUMO.debug.advance(1.0); });
-  await snap(page); await frames(page, 2);
+  await page.evaluate(() => { LUMO.input.press('jump'); LUMO.debug.advance(1.4); const r = LUMO.cameraRig; r.yaw = LUMO.player.yaw + Math.PI * 0.6; r.targetDist = 4.5; r.pitch = 0.12; r.snap(); });
+  await frames(page, 2);
   await shot(page, '80_pumpsprung_anspannen');
+  await page.evaluate(() => { const r = LUMO.cameraRig; r.targetDist = 8.5; r.pitch = 0.24; });
   await page.evaluate(() => { LUMO.input.release('jump'); LUMO.debug.advance(1.5); });
 
   // ---- Tragen: Sprint + Landung ≥ 30 % verschüttet, vorsichtiges Gehen < 5 % ----
@@ -210,7 +211,7 @@ try {
       const d = Math.hypot(P.position.x - V.x, P.position.z - V.z);
       if (!entered && d < 7) { entered = true; P.setIntent({ x: 0.75, y: 0, camYaw: yaw + Math.PI, jumpHeld: true }); }
       maxY = Math.max(maxY, P.position.y);
-      if (P.state !== 'glide' || maxY >= 100) break;
+      if ((i > 12 && P.state !== 'glide') || maxY >= 100) break;
     }
     P.setIntent(null);
     return { entered, maxY: +maxY.toFixed(1), t: +t.toFixed(1), state: P.state };
@@ -253,13 +254,13 @@ try {
       const sx = dorn.x + Math.sin(dorn.yaw) * dist, sz = dorn.z + Math.cos(dorn.yaw) * dist;
       D.teleport({ x: sx, z: sz }); D.advance(0.2);
       const yaw = Math.atan2(dorn.x - sx, dorn.z - sz);
-      P.position.y = dorn.y + 2.5; P.yaw = yaw; P.go('air'); D.advance(1 / 30);
+      P.position.y = dorn.y + 5; P.yaw = yaw; P.go('air'); D.advance(1 / 30);
       P.setIntent({ x: 0, y: 0, camYaw: yaw + Math.PI, jump: true, jumpHeld: true }); D.advance(1 / 30);
       P.setIntent({ x: 0, y: 0, camYaw: yaw + Math.PI, jumpHeld: true });
       let blocked = 0, broke = false;
       const o1 = LUMO.events.on('gate:blocked', () => blocked++);
       const o2 = LUMO.events.on('gate:break', () => { broke = true; });
-      for (let i = 0; i < 120 && !broke; i++) { D.advance(1 / 30); if (P.state !== 'glide' && i > 5) break; }
+      for (let i = 0; i < 120 && !broke; i++) { D.advance(1 / 30); if (P.state !== 'glide' && i > 12) break; }
       o1(); o2(); P.setIntent(null);
       return { blocked, broke, broken: dorn.broken };
     }
@@ -271,25 +272,26 @@ try {
   check('Profi: Rune schaltet nicht automatisch', rune.profi.passed === 'tor-freude' && rune.profi.mode === 'neutral', JSON.stringify(rune.profi));
   check('Dornen brechen nur mit Wut', rune.neutral.blocked > 0 && !rune.neutral.broke && rune.wut.broke && rune.wut.broken, JSON.stringify({ neutral: rune.neutral, wut: rune.wut }));
 
-  // ---- Schwimmen: aus dem tiefen Wasser zur Felsnadel ----
+  // ---- Schwimmen: vom Riff (tiefes Wasser vor dem Strand) zurück an den Strand ----
   const swim = await page.evaluate(() => {
     const P = LUMO.player, D = LUMO.debug;
-    D.teleport({ x: -138, z: -104 }); D.advance(0.5);
-    const s0 = P.state;
-    const tx = -150, tz = -112;
-    let arrived = false, t = 0, dolphin = false;
-    for (let i = 0; i < 30 * 30; i++) {
+    D.teleport({ x: 186, z: 40 }); D.advance(0.5);
+    const s0 = P.state, depth0 = +(LUMO.world.island.waterLevel(186, 40) - LUMO.world.island.getHeight(186, 40)).toFixed(1);
+    const tx = 160, tz = 30;
+    let arrived = false, t = 0, dolphin = false, swamMax = 0;
+    for (let i = 0; i < 40 * 30; i++) {
       const yaw = Math.atan2(tx - P.position.x, tz - P.position.z);
       P.setIntent({ x: 0, y: 1, camYaw: yaw + Math.PI, run: true, jump: i === 60, jumpHeld: i === 60 });
       D.advance(1 / 30); t += 1 / 30;
       if (i > 60 && i < 100 && P.state === 'air') dolphin = true;
-      if (Math.hypot(P.position.x - tx, P.position.z - tz) < 7.5) { arrived = true; break; }
+      if (P.state === 'swim') swamMax = Math.max(swamMax, Math.hypot(P.position.x - 186, P.position.z - 40));
+      if (P.state === 'ground' && P.position.y > -0.5 && swamMax > 5) { arrived = true; break; }
     }
     P.setIntent(null);
-    return { s0, arrived, t: +t.toFixed(1), dolphin, end: P.state, pos: { x: +P.position.x.toFixed(1), z: +P.position.z.toFixed(1), y: +P.position.y.toFixed(2) } };
+    return { s0, depth0, arrived, t: +t.toFixed(1), dolphin, swamMax: +swamMax.toFixed(1), end: P.state, pos: { x: +P.position.x.toFixed(1), z: +P.position.z.toFixed(1), y: +P.position.y.toFixed(2) } };
   });
-  check('Schwimmen: tiefes Wasser, Delfinsprung, bis zur Felsnadel', swim.s0 === 'swim' && swim.dolphin && swim.arrived && swim.end === 'swim', JSON.stringify(swim));
-  await page.evaluate(() => { LUMO.debug.teleport({ x: -140, z: -106 }); LUMO.debug.advance(0.6); LUMO.player.setIntent({ x: 0, y: 1, camYaw: 0, run: true }); LUMO.debug.advance(0.6); });
+  check('Schwimmen: tiefes Wasser, Delfinsprung, an den Strand gewatet', swim.s0 === 'swim' && swim.depth0 > 1.25 && swim.dolphin && swim.arrived && swim.end === 'ground', JSON.stringify(swim));
+  await page.evaluate(() => { LUMO.debug.teleport({ x: 184, z: 38 }); LUMO.debug.advance(0.6); LUMO.player.setIntent({ x: 0, y: 1, camYaw: Math.PI / 2, run: true }); LUMO.debug.advance(0.6); });
   await snap(page); await frames(page, 2);
   await shot(page, '85_schwimmen');
   await page.evaluate(() => LUMO.player.setIntent(null));

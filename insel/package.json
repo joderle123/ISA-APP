@@ -12,7 +12,9 @@
     "test:fast": "npm run test:unit && npm run validate && npm run lint:text",
     "test:scenario": "node tests/scenario.mjs",
     "test:perf": "node tests/perf.mjs",
-    "test": "npm run test:fast && node tests/core.mjs && node tests/smoke.mjs && node tests/scenario.mjs"
+    "test:ui": "node tests/scenarios/ui.mjs",
+    "test:moves": "node tests/moves.mjs",
+    "test": "npm run test:fast && node tests/core.mjs && node tests/smoke.mjs && node tests/scenario.mjs && node tests/scenarios/ui.mjs && node tests/moves.mjs"
   },
   "devDependencies": {
     "esbuild": "0.28.2",

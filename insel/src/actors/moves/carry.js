@@ -52,7 +52,7 @@ export function createCarry(ctx) {
   let spillT = 0, spillAcc = 0;
   let sub = 'ground';
   const anchor = new THREE.Group();          // vor der Brust
-  anchor.position.set(0, 0.18, 0.36);
+  anchor.position.set(0, 0.3, 0.4);
   let tilt = 0;
 
   function attach(it) {

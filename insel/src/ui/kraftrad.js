@@ -141,23 +141,22 @@ export function createKraftRad({ root, input, events, game, audio }) {
     el.querySelectorAll('[data-kraft-segment]').forEach((p) => p.addEventListener('click', (e) => { e.stopPropagation(); select(+p.dataset.kraftSegment - 1); }));
     el.querySelectorAll('[data-kraft-feather]').forEach((p) => p.addEventListener('click', (e) => { e.stopPropagation(); selectFeather(p.dataset.kraftFeather); }));
   }
+  // Welches Segment liegt unter dem Finger? → { seg, feather } (null = keins)
   function hotAt(x, y) {
     const dx = x - cx, dy = y - cy;
     const d = Math.hypot(dx, dy);
-    hot = null; hotFeather = null;
-    if (d < R_IN * 0.8) return;
+    const out = { seg: null, feather: null };
+    if (d < R_IN * 0.8) return out;
     const a = Math.atan2(dy, dx);
     if (feathers && d > R_OUT + 6) {
       let k = Math.round((a + Math.PI / 2) / (Math.PI / 3));
-      k = ((k % 6) + 6) % 6;
-      hotFeather = k;
-      return;
+      out.feather = ((k % 6) + 6) % 6;
+      return out;
     }
-    if (d > R_OUT + 24 && !feathers) return;
-    if (d > R_OUT + 6) return;
+    if (d > R_OUT + 24) return out;
     let k = Math.floor((a + Math.PI * 0.75) / (Math.PI / 2));
-    k = ((k % 4) + 4) % 4;
-    hot = k;
+    out.seg = ((k % 4) + 4) % 4;
+    return out;
   }
   function setHot(i, f = null) {
     if (i === hot && f === hotFeather) return;
@@ -218,8 +217,8 @@ export function createKraftRad({ root, input, events, game, audio }) {
     else events.emit('kraftrad:locked', { id: null, reason: 'keine' });
   });
   events.on('input:slot', ({ n }) => { if (!game.started || game.paused) return; if (open) { select(n - 1, 'taste'); } else { const s = segments[n - 1]; if (s && !s.locked) { active = s.id; events.emit('kraftrad:select', { segment: n, id: s.id, source: 'taste' }); events.emit('kraft:active', { id: s.id }); audio.play('click'); if (onSelect) onSelect(s); } else events.emit('kraftrad:locked', { id: s ? s.id : null, segment: n }); } });
-  window.addEventListener('pointermove', (e) => { if (!open) return; hotAt(e.clientX, e.clientY); setHot(hot, hotFeather); }, { passive: true });
-  window.addEventListener('touchmove', (e) => { if (!open || !e.touches.length) return; const t = e.touches[e.touches.length - 1]; hotAt(t.clientX, t.clientY); setHot(hot, hotFeather); }, { passive: true });
+  window.addEventListener('pointermove', (e) => { if (!open) return; const h = hotAt(e.clientX, e.clientY); setHot(h.seg, h.feather); }, { passive: true });
+  window.addEventListener('touchmove', (e) => { if (!open || !e.touches.length) return; const t = e.touches[e.touches.length - 1]; const h = hotAt(t.clientX, t.clientY); setHot(h.seg, h.feather); }, { passive: true });
   window.addEventListener('keydown', (e) => {
     if (!open) return;
     const map = { ArrowUp: 0, ArrowRight: 1, ArrowDown: 2, ArrowLeft: 3, KeyW: 0, KeyD: 1, KeyS: 2, KeyA: 3 };

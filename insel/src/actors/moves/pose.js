@@ -7,10 +7,10 @@ const POSES = {
   // Pumpsprung: Hocke, Arme nach hinten, Blick nach vorn
   charge(p, o) {
     const c = 0.6 + 0.4 * (o.charge || 0);
-    p.bodyY = -0.34 * c;
-    p.hipL = [-1.15 * c, 0, 0.08]; p.hipR = [-1.15 * c, 0, -0.08];
-    p.kneeL = [1.75 * c, 0, 0]; p.kneeR = [1.75 * c, 0, 0];
-    p.spine = [0.42 * c, 0, 0]; p.head = [-0.3 * c, 0, 0];
+    p.bodyY = -0.42 * c;
+    p.hipL = [-1.25 * c, 0, 0.1]; p.hipR = [-1.25 * c, 0, -0.1];
+    p.kneeL = [1.95 * c, 0, 0]; p.kneeR = [1.95 * c, 0, 0];
+    p.spine = [0.6 * c, 0, 0]; p.head = [-0.4 * c, 0, 0];
     p.shL = [0.7 * c, 0, 0.35]; p.shR = [0.7 * c, 0, -0.35];
     p.elL = [-0.5, 0, 0]; p.elR = [-0.5, 0, 0];
     p.w = { hipL: 1, hipR: 1, kneeL: 1, kneeR: 1, spine: 1, head: 1, shL: 1, shR: 1, elL: 1, elR: 1, bodyY: 1 };
@@ -60,7 +60,7 @@ const POSES = {
   // Schwimmen: Bauchlage knapp unter der Oberfläche, Kraularme, Beinschlag
   swim(p, o) {
     const ph = o.phase || 0, s = Math.sin(ph), s2 = Math.sin(ph * 2.2);
-    p.body = [1.28, 0, 0]; p.bodyY = -0.32;
+    p.body = [1.28, 0, 0]; p.bodyY = 0.14;   // Bauchlage: Kopf knapp über, Hüfte knapp unter der Oberfläche
     p.shL = [-1.6 + s * 1.5, 0, 0.35]; p.shR = [-1.6 - s * 1.5, 0, -0.35];
     p.elL = [-0.4 + Math.max(0, s) * 0.6, 0, 0]; p.elR = [-0.4 + Math.max(0, -s) * 0.6, 0, 0];
     p.hipL = [0.12 + s2 * 0.3, 0, 0.06]; p.hipR = [0.12 - s2 * 0.3, 0, -0.06];
@@ -72,7 +72,7 @@ const POSES = {
   dive(p, o) {
     const ph = o.phase || 0, s = Math.sin(ph);
     const vy = o.vy || 0;
-    p.body = [1.35 - vy * 0.12, 0, 0]; p.bodyY = -0.3;
+    p.body = [1.35 - vy * 0.12, 0, 0]; p.bodyY = 0.1;
     p.shL = [-2.9, 0, 0.18]; p.shR = [-2.9, 0, -0.18]; p.elL = [-0.1, 0, 0]; p.elR = [-0.1, 0, 0];
     p.hipL = [0.1 + s * 0.35, 0, 0.04]; p.hipR = [0.1 + s * 0.35, 0, -0.04];
     p.kneeL = [0.2 + Math.max(0, -s) * 0.5, 0, 0]; p.kneeR = [0.2 + Math.max(0, -s) * 0.5, 0, 0];

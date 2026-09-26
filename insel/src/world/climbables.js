@@ -59,7 +59,7 @@ export function createClimbRegistry() {
     grab(pos, mx = 0, mz = 0, { reach = 0.5, grounded = false, vy = 0 } = {}) {
       let best = null, bestD = Infinity;
       for (const e of entries.values()) {
-        if (pos.y < e.yMin - 0.3 || pos.y > e.yMax + 0.3) continue;
+        if (pos.y < e.yMin - 1.2 || pos.y > e.yMax + 0.3) continue;
         const bb = e.type === 'cylinder' ? e.r + 3 : e.hw + 3;
         if (Math.abs(pos.x - e.x) > bb || Math.abs(pos.z - e.z) > bb) continue;
         const l = e.local(pos);

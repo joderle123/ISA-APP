@@ -15,6 +15,8 @@
 //                        + Debug-Plugin (src/debug/plugin.js): unlockUnit, completeUnit, grantAbility, setPuls, setTime,
 //                        teleportSite, setVeil, setMode, setBond, runScenario(steps), snapshot; Panel nur mit ?debug
 //   game.state / game.save / game.content / game.rng / game.plugins   Kern (src/core/*, Konvention in core/state.js)
+//   game.music / game.speech   Musik-Schichten je Region, Leitmotive, Klangmuschel, Orgel, Klarklang, Jukebox · Vorlesen de-DE (src/audio/plugin.js)
+//   game.ui.*  (UI-Plugin src/ui/plugin.js): overlay.open/confirm · say/ask/glimm (bubbles, choices) · settings · journal.registerPage · recap · campfire · lock
 import * as THREE from 'three';
 import { installCore } from './core/index.js';
 import PLUGINS from './_gen/plugins.js';

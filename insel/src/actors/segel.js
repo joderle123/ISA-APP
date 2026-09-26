@@ -38,15 +38,16 @@ export function createSegel({ humanoid, veil, colors = {} } = {}) {
   const group = new THREE.Group();
   group.name = 'segel';
   group.position.set(0, 0.42, -0.2);
-  const mat = new THREE.MeshLambertMaterial({ vertexColors: true, side: THREE.DoubleSide, transparent: true, opacity: 0.95, emissive: new THREE.Color('#ffffff'), emissiveIntensity: 0.08 });
+  // Unbeleuchtet (leuchtende Federn in reinen Gefühlsfarben), aber mit Nebel und Farbkorrektur der Welt
+  const mat = new THREE.MeshBasicMaterial({ vertexColors: true, side: THREE.DoubleSide, transparent: true, opacity: 0.96 });
   if (veil) veil.patch(mat, { key: 'segel', veil: false });
   const feathers = [];
   const N = EMOTION_ORDER.length;
   for (let i = 0; i < N; i++) {
     const em = EMOTION_ORDER[i];
     const t = (i / (N - 1)) - 0.5;              // −0.5 … 0.5
-    const len = 1.55 + (1 - Math.abs(t) * 2) * 0.55;
-    const geo = featherGeo(len, 0.34, cols[em], EMOTION_SYMBOLS[em]);
+    const len = 2.1 + (1 - Math.abs(t) * 2) * 0.7;
+    const geo = featherGeo(len, 0.46, cols[em], EMOTION_SYMBOLS[em]);
     const m = new THREE.Mesh(geo, mat);
     m.castShadow = false;
     m.userData = { emotion: em, angle: t * 2.5, len, base: geo.attributes.color.array.slice() };
@@ -68,13 +69,12 @@ export function createSegel({ humanoid, veil, colors = {} } = {}) {
       const active = em === mode || em === second;
       const dim = mode !== 'neutral' && !active;
       const arr = f.geometry.attributes.color.array, base = f.userData.base;
-      const k = active ? 1.35 : dim ? 0.55 : 1;
-      for (let i = 0; i < arr.length; i++) arr[i] = Math.min(1.6, base[i] * k);
+      const k = active ? 1.25 : dim ? 0.45 : 0.92;
+      for (let i = 0; i < arr.length; i++) arr[i] = Math.min(1.3, base[i] * k);
       f.geometry.attributes.color.needsUpdate = true;
     }
     if (mode === 'neutral') colorHex = 0xfff3d6;
     else { cTmp.set(cols[mode] || '#ffffff'); if (second) cTmp.lerp(new THREE.Color(cols[second]), 0.5); colorHex = cTmp.getHex(); }
-    mat.emissiveIntensity = mode === 'neutral' ? 0.08 : 0.22;
   }
   recolor();
 

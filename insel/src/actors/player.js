@@ -36,7 +36,8 @@ export function createPlayer({ scene, island, colliders, input, audio, particles
   let stateName = 'ground', prevState = null, pending = null;
   let externalIntent = null, extHold = 0;
   const locks = new Set();
-  const safe = { x: island.spawn.x, z: island.spawn.z, yaw: island.spawn.yaw, y: 0 };
+  const safe = { x: island.spawn.x, z: island.spawn.z, yaw: island.spawn.yaw, y: 0, ok: true };
+  const safePrev = { x: island.spawn.x, z: island.spawn.z, yaw: island.spawn.yaw, ok: false };
   let respawnT = 0, respawnReason = null;
   let baseAnim = 'idle', poseName = null, poseOpts = null;
 
@@ -87,6 +88,14 @@ export function createPlayer({ scene, island, colliders, input, audio, particles
       if (d > WORLD_LIMIT - 4) { pos.x -= (pos.x / d) * dt * 3; pos.z -= (pos.z / d) * dt * 3; }
     },
     inLava(p) { return Math.hypot(p.x - V.x, p.z - V.z) < V.lavaRadius + 0.3 && p.y <= V.lavaLevel + 0.25; },
+    // Sicherer Punkt für den Neustart? (nicht am Lavarand, begehbar, kein tiefes Wasser)
+    isSafeSpot(x, z) {
+      const gy = island.getHeight(x, z);
+      const dLava = Math.hypot(x - V.x, z - V.z);
+      if (dLava < V.lavaRadius + 1.6 && gy <= V.lavaLevel + 1.0) return false;
+      if (island.waterLevel(x, z) - gy > 0.5) return false;
+      return island.isWalkable(x, z);
+    },
     // Sprung ausführen (aus Boden/Tragen): → Luft
     jump(v, extra = {}) {
       vel.y = v;
@@ -113,7 +122,8 @@ export function createPlayer({ scene, island, colliders, input, audio, particles
       audio.play('splash');
       particles.emit({ x: pos.x, y: wl + 0.05, z: pos.z, count: Math.round(14 * k), spread: 0.8, speed: 2.4 * k, up: 3.4 * k, color: 0xeafcff, size: 0.45, life: 0.7, gravity: -9, drag: 1, grow: 0.6, alpha: 0.85 });
     },
-    markSafe() { safe.x = pos.x; safe.z = pos.z; safe.y = pos.y; safe.yaw = yaw; },
+    // zwei Kanten merken: der Neustart nimmt die, die weiter vom Sturzpunkt weg liegt (nie direkt wieder hinein)
+    markSafe() { safePrev.x = safe.x; safePrev.z = safe.z; safePrev.yaw = safe.yaw; safePrev.ok = safe.ok; safe.x = pos.x; safe.z = pos.z; safe.y = pos.y; safe.yaw = yaw; safe.ok = true; },
     respawn(reason) {
       if (stateName === 'locked' && respawnReason) return 'locked';
       respawnReason = reason; respawnT = 0;
@@ -248,7 +258,7 @@ export function createPlayer({ scene, island, colliders, input, audio, particles
       else if (stateName === 'ground') { moves.ground.pump.cancel(); }
       humanoid.group.position.copy(pos);
       humanoid.group.rotation.y = yaw;
-      if (!ctx.inLava(pos)) ctx.markSafe();
+      if (ctx.isSafeSpot(x, z) || g.surf) ctx.markSafe();
       events.emit('player:teleport', { x, z });
     },
     update(dt) {
@@ -263,8 +273,10 @@ export function createPlayer({ scene, island, colliders, input, audio, particles
         respawnT += dt;
         if (respawnT >= K.RESPAWN_FADE) {
           const reason = respawnReason; respawnReason = null;
-          const g = ctx.groundAt(safe.x, safe.z, 999);
-          pos.set(safe.x, g.y, safe.z); vel.set(0, 0, 0); yaw = safe.yaw;
+          const dCur = Math.hypot(safe.x - pos.x, safe.z - pos.z);
+          const useSpot = (safePrev.ok && dCur < 2.5 && ctx.isSafeSpot(safePrev.x, safePrev.z)) ? safePrev : safe;
+          const g = ctx.groundAt(useSpot.x, useSpot.z, 999);
+          pos.set(useSpot.x, g.y, useSpot.z); vel.set(0, 0, 0); yaw = useSpot.yaw;
           ctx.grounded = true; ctx.groundY = g.y; ctx.airTime = 0;
           if (ctx.carrying) moves.carry.drop({ place: false });
           transition('ground', { impact: 0 });
@@ -272,10 +284,10 @@ export function createPlayer({ scene, island, colliders, input, audio, particles
           events.emit('player:respawn', { reason, x: pos.x, z: pos.z });
         }
       }
-      // ---- aktueller Zustand ----
-      pending = null;
+      // ---- aktueller Zustand (von außen angeforderte Übergänge zuerst) ----
+      let guard = 4;
+      if (pending) { const p = pending; pending = null; transition(p.name, p.data); }
       move.update(dt);
-      let guard = 3;
       while (pending && guard-- > 0) { const p = pending; pending = null; transition(p.name, p.data); }
       // ---- Sonder-Animation ----
       const sp = Math.hypot(vel.x, vel.z);

@@ -30,11 +30,11 @@ export function createClimb(ctx) {
   let lastNotify = -1;
   const tmp = { x: 0, y: 0, z: 0 };
 
-  function notify(force) {
+  function notify(force, climbing = true) {
     const key = Math.round(halt.current * 20) + (onLedge ? 1000 : 0) + (sliding ? 5000 : 0);
     if (!force && key === lastNotify) return;
     lastNotify = key;
-    ctx.events.emit('halt:change', { current: halt.current, max: halt.max, ledge: !!onLedge, sliding, climbing: ctx.state === 'climb' });
+    ctx.events.emit('halt:change', { current: halt.current, max: halt.max, ledge: !!onLedge, sliding, climbing });
   }
   function snap() {
     entry.place(local, tmp);
@@ -71,7 +71,7 @@ export function createClimb(ctx) {
     exit() {
       ctx.events.emit('climb:end', { id: entry && entry.id });
       entry = null; local = null; onLedge = null; sliding = false;
-      notify(true);
+      notify(true, false);
     },
     update(dt) {
       const { intent } = ctx;

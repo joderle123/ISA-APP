@@ -21,6 +21,7 @@ export function createDive(ctx) {
     surface(reason = 'auto') {
       if (ctx.state !== 'dive' || stage === 'up') return;
       stage = 'up'; t = 0;
+      if (info) info.reason = reason;
       ctx.events.emit('dive:surface', { reason });
     },
     enter(d) {
@@ -91,7 +92,7 @@ export function createDive(ctx) {
         const wl = ctx.waterLevel(entryPos.x, entryPos.z);
         pos.set(entryPos.x, wl - 0.3, entryPos.z);
         vel.set(0, 0, 0);
-        info.reason = 'auf';
+        if (!info.reason) info.reason = 'auf';
         ctx.splash(1.1);
         if (ctx.cameraSnap) ctx.cameraSnap();
         const g = ctx.groundAt(pos.x, pos.z, pos.y);

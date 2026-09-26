@@ -28,8 +28,8 @@ const CSS = `
 .photo-preview img{max-width:min(60vw,520px);max-height:50vh;border-radius:12px;display:block}
 .photo-preview .row{display:flex;gap:8px}
 .photo-preview a,.photo-preview button{min-height:52px;padding:0 18px;border-radius:16px;font:800 16px var(--font,system-ui);color:#fff;background:rgba(255,255,255,.12);border:2px solid rgba(255,255,255,.18);display:flex;align-items:center;text-decoration:none}
-.photo-flash{position:absolute;inset:0;background:#fff;opacity:0;pointer-events:none;z-index:16;transition:opacity .35s ease}
-.photo-flash.is-on{opacity:.85;transition:none}
+.photo-flash{position:absolute;inset:0;background:#fff;opacity:0;pointer-events:none;z-index:16;transition:opacity .2s ease}
+.photo-flash.is-on{opacity:.7;transition:none}
 `;
 
 export function createPhotoMode({ root, game, events, audio }) {
