@@ -1,0 +1,1122 @@
+{
+ "unit_skills": {
+  "j1-j01": [
+   "wer-am-pult"
+  ],
+  "j1-j02": [
+   "satz-fuer-schwere-tage"
+  ],
+  "j1-j03": [
+   "handy-stopp"
+  ],
+  "j1-j04": [
+   "mein-platz"
+  ],
+  "j1-j05": [
+   "rolle-abschuetteln",
+   "gemeinsam-atmen"
+  ],
+  "j1-j06": [
+   "energie-check"
+  ],
+  "j1-j07": [
+   "gemeinsam-atmen"
+  ],
+  "j1-j08": [
+   "minute-stille"
+  ],
+  "j1-j09": [
+   "unsichtbare-skills"
+  ],
+  "j1-e01": [
+   "sinne-54321"
+  ],
+  "j1-e02": [
+   "komplimente"
+  ],
+  "j1-e03": [
+   "gemeinsam-atmen"
+  ],
+  "j1-e04": [
+   "atem-478"
+  ],
+  "j1-e05": [
+   "dankbarkeitsblitz"
+  ],
+  "j1-e06": [
+   "bodyscan-kurz"
+  ],
+  "j1-e07": [
+   "spaziergang-sinne"
+  ],
+  "j1-e08": [
+   "achtsames-hoeren"
+  ],
+  "j1-e09": [
+   "bodyscan-kurz"
+  ],
+  "j1-e10": [
+   "luftballon-atem"
+  ],
+  "j1-e11": [
+   "spaziergang-ohne-worte"
+  ],
+  "j1-e12": [
+   "partneratmung"
+  ],
+  "j1-e13": [
+   "minute-stille"
+  ],
+  "j1-e14": [
+   "sicherer-ort"
+  ],
+  "j1-e15": [],
+  "j1-e16": [
+   "gedankenschiffchen"
+  ],
+  "j1-e17": [
+   "luftballon-atem",
+   "dankbarkeitsblitz"
+  ],
+  "j1-e18": [
+   "freundliche-stimme"
+  ],
+  "j1-e19": [
+   "achtsamkeit-wahl"
+  ],
+  "j1-e20": [
+   "achtsames-hoeren"
+  ],
+  "j1-e21": [
+   "partneratmung"
+  ],
+  "j1-e22": [
+   "sicherer-ort"
+  ],
+  "j1-e23": [
+   "fester-stand"
+  ],
+  "j1-e24": [
+   "runter-unter-70"
+  ],
+  "j1-e25": [
+   "anker-vor-dem-nein"
+  ],
+  "j1-e26": [
+   "positivitaetskette"
+  ],
+  "j1-e27": [
+   "drei-atemzuege-handy"
+  ],
+  "j1-e28": [
+   "teilen-bremse"
+  ],
+  "j1-e29": [
+   "bodyscan-kurz"
+  ],
+  "j1-e30": [
+   "sinne-54321"
+  ],
+  "j2-j01": [
+   "achtsam-essen",
+   "kaltes-wasser"
+  ],
+  "j2-j02": [
+   "rote-ampel-langer-atem"
+  ],
+  "j2-j03": [
+   "freundlich-zu-mir"
+  ],
+  "j2-j04": [
+   "anspannen-loslassen"
+  ],
+  "j2-e01": [
+   "sinne-54321"
+  ],
+  "j2-e02": [
+   "runterfahren-nach-wettkampf"
+  ],
+  "j2-e03": [
+   "wertschaetzung-annehmen"
+  ],
+  "j2-e04": [
+   "bodyscan-dank"
+  ],
+  "j2-e05": [
+   "selbstmitgefuehl-pause"
+  ],
+  "j2-e06": [
+   "seufzer-atmung"
+  ],
+  "j2-e07": [
+   "atemzuege-zaehlen"
+  ],
+  "j2-e08": [
+   "freundlicher-neustart"
+  ],
+  "j2-e09": [
+   "unsichtbare-skills"
+  ],
+  "j2-e10": [
+   "offene-haende"
+  ],
+  "j2-e11": [
+   "rot-skill"
+  ],
+  "j2-e12": [
+   "freundlich-zu-mir"
+  ],
+  "j2-e13": [
+   "gute-wuensche"
+  ],
+  "j2-e14": [
+   "erst-runter-dann-senden"
+  ],
+  "j2-e15": [
+   "mitgefuehl-pause"
+  ],
+  "j2-e16": [
+   "landen"
+  ],
+  "j2-e17": [
+   "behalten-loslassen"
+  ],
+  "j2-e18": [
+   "sich-halt-geben"
+  ],
+  "j2-e19": [
+   "abkuehlen"
+  ],
+  "j2-e20": [
+   "gespraechs-anker"
+  ],
+  "j2-e21": [
+   "zitronen-uebung"
+  ],
+  "j2-e22": [
+   "ruhesatz-herzsprache"
+  ],
+  "j2-e23": [
+   "rueckenwind-karten"
+  ],
+  "j2-e24": [
+   "erster-satz"
+  ],
+  "j2-e25": [
+   "antwort-bremse"
+  ],
+  "j2-e26": [
+   "tilt-bremse"
+  ],
+  "j2-e27": [
+   "achtsam-trinken"
+  ],
+  "j2-e28": [
+   "erst-atmen-dann-handeln"
+  ],
+  "j2-e29": [
+   "welle-reiten"
+  ],
+  "j2-e30": [
+   "kopf-parkplatz"
+  ],
+  "j2-e31": [
+   "achtsam-trinken",
+   "energie-check"
+  ],
+  "j2-e32": [
+   "dehnen-atemrhythmus"
+  ],
+  "j2-e33": [
+   "sinne-54321"
+  ],
+  "j2-e34": [
+   "stille-galerie"
+  ],
+  "j2-e35": [
+   "skill-der-bleibt"
+  ],
+  "j3-j01": [
+   "anker-vor-der-tuer",
+   "spaziergang-ohne-worte"
+  ],
+  "j3-j02": [
+   "pannen-stopp",
+   "durchatmen-vor-gaesten"
+  ],
+  "j3-j03": [
+   "frust-check"
+  ],
+  "j3-j04": [
+   "minute-stille",
+   "seufzer-atmung"
+  ],
+  "j3-e01": [
+   "einer-aus-dem-koffer"
+  ],
+  "j3-e02": [
+   "hand-aufs-herz"
+  ],
+  "j3-e03": [
+   "werte-anker"
+  ],
+  "j3-e04": [
+   "sinne-54321"
+  ],
+  "j3-e05": [
+   "innere-mentorin"
+  ],
+  "j3-e06": [
+   "freundin-frage"
+  ],
+  "j3-e07": [
+   "stopp-ausstiegssatz"
+  ],
+  "j3-e08": [
+   "anspannen-loslassen"
+  ],
+  "j3-e09": [
+   "satz-nach-fehler"
+  ],
+  "j3-e10": [
+   "gedankenschiffchen"
+  ],
+  "j3-e11": [
+   "erster-satz"
+  ],
+  "j3-e12": [
+   "plan-gegen-nervositaet"
+  ],
+  "j3-e13": [
+   "woop"
+  ],
+  "j3-e14": [
+   "kauf-stopp"
+  ],
+  "j3-e15": [
+   "erst-atmen-dann-handeln"
+  ],
+  "j3-e16": [
+   "erste-drei-bissen"
+  ],
+  "j3-e17": [
+   "welle-reiten"
+  ],
+  "j3-e18": [
+   "freundliche-stimme"
+  ],
+  "j3-e19": [
+   "eine-sache-ganz"
+  ],
+  "j3-e20": [
+   "fester-stand"
+  ],
+  "j3-e21": [
+   "kraft-moment"
+  ],
+  "j3-e22": [
+   "selbstmitgefuehl-pause"
+  ],
+  "j3-e23": [
+   "geniessen-zeitlupe"
+  ],
+  "j3-e24": [
+   "gedanke-oder-tatsache"
+  ],
+  "j3-e25": [
+   "aus-der-rolle"
+  ],
+  "j3-e26": [
+   "fester-stand"
+  ],
+  "j3-e27": [
+   "weiser-geist"
+  ],
+  "j3-e28": [
+   "mein-raum-dein-raum"
+  ],
+  "j3-e29": [
+   "gegenteil-tun"
+  ],
+  "j3-e30": [
+   "tempo-rausnehmen"
+  ],
+  "j3-e31": [
+   "aufmerksamkeit-zurueck"
+  ],
+  "j3-e32": [
+   "achtsames-hoeren"
+  ],
+  "j3-e33": [
+   "satz-im-ausatmen"
+  ],
+  "j3-e34": [
+   "unsichtbare-skills"
+  ],
+  "j3-e35": [
+   "wegstein"
+  ]
+ },
+ "canon": [
+  {
+   "id": "sinne-54321",
+   "erste_einheit": "j1-e01",
+   "besitzer_jahr": 1,
+   "einheiten": [
+    "j1-e01",
+    "j1-e30",
+    "j2-e01",
+    "j2-e33",
+    "j3-e04"
+   ]
+  },
+  {
+   "id": "komplimente",
+   "erste_einheit": "j1-e02",
+   "besitzer_jahr": 1,
+   "einheiten": [
+    "j1-e02"
+   ]
+  },
+  {
+   "id": "gemeinsam-atmen",
+   "erste_einheit": "j1-e03",
+   "besitzer_jahr": 1,
+   "einheiten": [
+    "j1-e03",
+    "j1-j05",
+    "j1-j07"
+   ]
+  },
+  {
+   "id": "atem-478",
+   "erste_einheit": "j1-e04",
+   "besitzer_jahr": 1,
+   "einheiten": [
+    "j1-e04"
+   ]
+  },
+  {
+   "id": "dankbarkeitsblitz",
+   "erste_einheit": "j1-e05",
+   "besitzer_jahr": 1,
+   "einheiten": [
+    "j1-e05",
+    "j1-e17"
+   ]
+  },
+  {
+   "id": "bodyscan-kurz",
+   "erste_einheit": "j1-e06",
+   "besitzer_jahr": 1,
+   "einheiten": [
+    "j1-e06",
+    "j1-e09",
+    "j1-e29"
+   ]
+  },
+  {
+   "id": "spaziergang-sinne",
+   "erste_einheit": "j1-e07",
+   "besitzer_jahr": 1,
+   "einheiten": [
+    "j1-e07"
+   ]
+  },
+  {
+   "id": "achtsames-hoeren",
+   "erste_einheit": "j1-e08",
+   "besitzer_jahr": 1,
+   "einheiten": [
+    "j1-e08",
+    "j1-e20",
+    "j3-e32"
+   ]
+  },
+  {
+   "id": "luftballon-atem",
+   "erste_einheit": "j1-e10",
+   "besitzer_jahr": 1,
+   "einheiten": [
+    "j1-e10",
+    "j1-e17"
+   ]
+  },
+  {
+   "id": "spaziergang-ohne-worte",
+   "erste_einheit": "j1-e11",
+   "besitzer_jahr": 1,
+   "einheiten": [
+    "j1-e11",
+    "j3-j01"
+   ]
+  },
+  {
+   "id": "partneratmung",
+   "erste_einheit": "j1-e12",
+   "besitzer_jahr": 1,
+   "einheiten": [
+    "j1-e12",
+    "j1-e21"
+   ]
+  },
+  {
+   "id": "minute-stille",
+   "erste_einheit": "j1-e13",
+   "besitzer_jahr": 1,
+   "einheiten": [
+    "j1-e13",
+    "j1-j08",
+    "j3-j04"
+   ]
+  },
+  {
+   "id": "sicherer-ort",
+   "erste_einheit": "j1-e14",
+   "besitzer_jahr": 1,
+   "einheiten": [
+    "j1-e14",
+    "j1-e22"
+   ]
+  },
+  {
+   "id": "gedankenschiffchen",
+   "erste_einheit": "j1-e16",
+   "besitzer_jahr": 1,
+   "einheiten": [
+    "j1-e16",
+    "j3-e10"
+   ]
+  },
+  {
+   "id": "freundliche-stimme",
+   "erste_einheit": "j1-e18",
+   "besitzer_jahr": 1,
+   "einheiten": [
+    "j1-e18",
+    "j3-e18"
+   ]
+  },
+  {
+   "id": "achtsamkeit-wahl",
+   "erste_einheit": "j1-e19",
+   "besitzer_jahr": 1,
+   "einheiten": [
+    "j1-e19"
+   ]
+  },
+  {
+   "id": "fester-stand",
+   "erste_einheit": "j1-e23",
+   "besitzer_jahr": 1,
+   "einheiten": [
+    "j1-e23",
+    "j3-e20",
+    "j3-e26"
+   ]
+  },
+  {
+   "id": "runter-unter-70",
+   "erste_einheit": "j1-e24",
+   "besitzer_jahr": 1,
+   "einheiten": [
+    "j1-e24"
+   ]
+  },
+  {
+   "id": "anker-vor-dem-nein",
+   "erste_einheit": "j1-e25",
+   "besitzer_jahr": 1,
+   "einheiten": [
+    "j1-e25"
+   ]
+  },
+  {
+   "id": "positivitaetskette",
+   "erste_einheit": "j1-e26",
+   "besitzer_jahr": 1,
+   "einheiten": [
+    "j1-e26"
+   ]
+  },
+  {
+   "id": "drei-atemzuege-handy",
+   "erste_einheit": "j1-e27",
+   "besitzer_jahr": 1,
+   "einheiten": [
+    "j1-e27"
+   ]
+  },
+  {
+   "id": "teilen-bremse",
+   "erste_einheit": "j1-e28",
+   "besitzer_jahr": 1,
+   "einheiten": [
+    "j1-e28"
+   ]
+  },
+  {
+   "id": "wer-am-pult",
+   "erste_einheit": "j1-j01",
+   "besitzer_jahr": 1,
+   "einheiten": [
+    "j1-j01"
+   ]
+  },
+  {
+   "id": "satz-fuer-schwere-tage",
+   "erste_einheit": "j1-j02",
+   "besitzer_jahr": 1,
+   "einheiten": [
+    "j1-j02"
+   ]
+  },
+  {
+   "id": "handy-stopp",
+   "erste_einheit": "j1-j03",
+   "besitzer_jahr": 1,
+   "einheiten": [
+    "j1-j03"
+   ]
+  },
+  {
+   "id": "mein-platz",
+   "erste_einheit": "j1-j04",
+   "besitzer_jahr": 1,
+   "einheiten": [
+    "j1-j04"
+   ]
+  },
+  {
+   "id": "rolle-abschuetteln",
+   "erste_einheit": "j1-j05",
+   "besitzer_jahr": 1,
+   "einheiten": [
+    "j1-j05"
+   ]
+  },
+  {
+   "id": "energie-check",
+   "erste_einheit": "j1-j06",
+   "besitzer_jahr": 1,
+   "einheiten": [
+    "j1-j06",
+    "j2-e31"
+   ]
+  },
+  {
+   "id": "unsichtbare-skills",
+   "erste_einheit": "j1-j09",
+   "besitzer_jahr": 1,
+   "einheiten": [
+    "j1-j09",
+    "j2-e09",
+    "j3-e34"
+   ]
+  },
+  {
+   "id": "runterfahren-nach-wettkampf",
+   "erste_einheit": "j2-e02",
+   "besitzer_jahr": 2,
+   "einheiten": [
+    "j2-e02"
+   ]
+  },
+  {
+   "id": "wertschaetzung-annehmen",
+   "erste_einheit": "j2-e03",
+   "besitzer_jahr": 2,
+   "einheiten": [
+    "j2-e03"
+   ]
+  },
+  {
+   "id": "bodyscan-dank",
+   "erste_einheit": "j2-e04",
+   "besitzer_jahr": 2,
+   "einheiten": [
+    "j2-e04"
+   ]
+  },
+  {
+   "id": "selbstmitgefuehl-pause",
+   "erste_einheit": "j2-e05",
+   "besitzer_jahr": 2,
+   "einheiten": [
+    "j2-e05",
+    "j3-e22"
+   ]
+  },
+  {
+   "id": "seufzer-atmung",
+   "erste_einheit": "j2-e06",
+   "besitzer_jahr": 2,
+   "einheiten": [
+    "j2-e06",
+    "j3-j04"
+   ]
+  },
+  {
+   "id": "atemzuege-zaehlen",
+   "erste_einheit": "j2-e07",
+   "besitzer_jahr": 2,
+   "einheiten": [
+    "j2-e07"
+   ]
+  },
+  {
+   "id": "freundlicher-neustart",
+   "erste_einheit": "j2-e08",
+   "besitzer_jahr": 2,
+   "einheiten": [
+    "j2-e08"
+   ]
+  },
+  {
+   "id": "offene-haende",
+   "erste_einheit": "j2-e10",
+   "besitzer_jahr": 2,
+   "einheiten": [
+    "j2-e10"
+   ]
+  },
+  {
+   "id": "rot-skill",
+   "erste_einheit": "j2-e11",
+   "besitzer_jahr": 2,
+   "einheiten": [
+    "j2-e11"
+   ]
+  },
+  {
+   "id": "freundlich-zu-mir",
+   "erste_einheit": "j2-e12",
+   "besitzer_jahr": 2,
+   "einheiten": [
+    "j2-e12",
+    "j2-j03"
+   ]
+  },
+  {
+   "id": "gute-wuensche",
+   "erste_einheit": "j2-e13",
+   "besitzer_jahr": 2,
+   "einheiten": [
+    "j2-e13"
+   ]
+  },
+  {
+   "id": "erst-runter-dann-senden",
+   "erste_einheit": "j2-e14",
+   "besitzer_jahr": 2,
+   "einheiten": [
+    "j2-e14"
+   ]
+  },
+  {
+   "id": "mitgefuehl-pause",
+   "erste_einheit": "j2-e15",
+   "besitzer_jahr": 2,
+   "einheiten": [
+    "j2-e15"
+   ]
+  },
+  {
+   "id": "landen",
+   "erste_einheit": "j2-e16",
+   "besitzer_jahr": 2,
+   "einheiten": [
+    "j2-e16"
+   ]
+  },
+  {
+   "id": "behalten-loslassen",
+   "erste_einheit": "j2-e17",
+   "besitzer_jahr": 2,
+   "einheiten": [
+    "j2-e17"
+   ]
+  },
+  {
+   "id": "sich-halt-geben",
+   "erste_einheit": "j2-e18",
+   "besitzer_jahr": 2,
+   "einheiten": [
+    "j2-e18"
+   ]
+  },
+  {
+   "id": "abkuehlen",
+   "erste_einheit": "j2-e19",
+   "besitzer_jahr": 2,
+   "einheiten": [
+    "j2-e19"
+   ]
+  },
+  {
+   "id": "gespraechs-anker",
+   "erste_einheit": "j2-e20",
+   "besitzer_jahr": 2,
+   "einheiten": [
+    "j2-e20"
+   ]
+  },
+  {
+   "id": "zitronen-uebung",
+   "erste_einheit": "j2-e21",
+   "besitzer_jahr": 2,
+   "einheiten": [
+    "j2-e21"
+   ]
+  },
+  {
+   "id": "ruhesatz-herzsprache",
+   "erste_einheit": "j2-e22",
+   "besitzer_jahr": 2,
+   "einheiten": [
+    "j2-e22"
+   ]
+  },
+  {
+   "id": "rueckenwind-karten",
+   "erste_einheit": "j2-e23",
+   "besitzer_jahr": 2,
+   "einheiten": [
+    "j2-e23"
+   ]
+  },
+  {
+   "id": "erster-satz",
+   "erste_einheit": "j2-e24",
+   "besitzer_jahr": 2,
+   "einheiten": [
+    "j2-e24",
+    "j3-e11"
+   ]
+  },
+  {
+   "id": "antwort-bremse",
+   "erste_einheit": "j2-e25",
+   "besitzer_jahr": 2,
+   "einheiten": [
+    "j2-e25"
+   ]
+  },
+  {
+   "id": "tilt-bremse",
+   "erste_einheit": "j2-e26",
+   "besitzer_jahr": 2,
+   "einheiten": [
+    "j2-e26"
+   ]
+  },
+  {
+   "id": "achtsam-trinken",
+   "erste_einheit": "j2-e27",
+   "besitzer_jahr": 2,
+   "einheiten": [
+    "j2-e27",
+    "j2-e31"
+   ]
+  },
+  {
+   "id": "erst-atmen-dann-handeln",
+   "erste_einheit": "j2-e28",
+   "besitzer_jahr": 2,
+   "einheiten": [
+    "j2-e28",
+    "j3-e15"
+   ]
+  },
+  {
+   "id": "welle-reiten",
+   "erste_einheit": "j2-e29",
+   "besitzer_jahr": 2,
+   "einheiten": [
+    "j2-e29",
+    "j3-e17"
+   ]
+  },
+  {
+   "id": "kopf-parkplatz",
+   "erste_einheit": "j2-e30",
+   "besitzer_jahr": 2,
+   "einheiten": [
+    "j2-e30"
+   ]
+  },
+  {
+   "id": "dehnen-atemrhythmus",
+   "erste_einheit": "j2-e32",
+   "besitzer_jahr": 2,
+   "einheiten": [
+    "j2-e32"
+   ]
+  },
+  {
+   "id": "stille-galerie",
+   "erste_einheit": "j2-e34",
+   "besitzer_jahr": 2,
+   "einheiten": [
+    "j2-e34"
+   ]
+  },
+  {
+   "id": "skill-der-bleibt",
+   "erste_einheit": "j2-e35",
+   "besitzer_jahr": 2,
+   "einheiten": [
+    "j2-e35"
+   ]
+  },
+  {
+   "id": "achtsam-essen",
+   "erste_einheit": "j2-j01",
+   "besitzer_jahr": 2,
+   "einheiten": [
+    "j2-j01"
+   ]
+  },
+  {
+   "id": "kaltes-wasser",
+   "erste_einheit": "j2-j01",
+   "besitzer_jahr": 2,
+   "einheiten": [
+    "j2-j01"
+   ]
+  },
+  {
+   "id": "rote-ampel-langer-atem",
+   "erste_einheit": "j2-j02",
+   "besitzer_jahr": 2,
+   "einheiten": [
+    "j2-j02"
+   ]
+  },
+  {
+   "id": "anspannen-loslassen",
+   "erste_einheit": "j2-j04",
+   "besitzer_jahr": 2,
+   "einheiten": [
+    "j2-j04",
+    "j3-e08"
+   ]
+  },
+  {
+   "id": "einer-aus-dem-koffer",
+   "erste_einheit": "j3-e01",
+   "besitzer_jahr": 3,
+   "einheiten": [
+    "j3-e01"
+   ]
+  },
+  {
+   "id": "hand-aufs-herz",
+   "erste_einheit": "j3-e02",
+   "besitzer_jahr": 3,
+   "einheiten": [
+    "j3-e02"
+   ]
+  },
+  {
+   "id": "werte-anker",
+   "erste_einheit": "j3-e03",
+   "besitzer_jahr": 3,
+   "einheiten": [
+    "j3-e03"
+   ]
+  },
+  {
+   "id": "innere-mentorin",
+   "erste_einheit": "j3-e05",
+   "besitzer_jahr": 3,
+   "einheiten": [
+    "j3-e05"
+   ]
+  },
+  {
+   "id": "freundin-frage",
+   "erste_einheit": "j3-e06",
+   "besitzer_jahr": 3,
+   "einheiten": [
+    "j3-e06"
+   ]
+  },
+  {
+   "id": "stopp-ausstiegssatz",
+   "erste_einheit": "j3-e07",
+   "besitzer_jahr": 3,
+   "einheiten": [
+    "j3-e07"
+   ]
+  },
+  {
+   "id": "satz-nach-fehler",
+   "erste_einheit": "j3-e09",
+   "besitzer_jahr": 3,
+   "einheiten": [
+    "j3-e09"
+   ]
+  },
+  {
+   "id": "plan-gegen-nervositaet",
+   "erste_einheit": "j3-e12",
+   "besitzer_jahr": 3,
+   "einheiten": [
+    "j3-e12"
+   ]
+  },
+  {
+   "id": "woop",
+   "erste_einheit": "j3-e13",
+   "besitzer_jahr": 3,
+   "einheiten": [
+    "j3-e13"
+   ]
+  },
+  {
+   "id": "kauf-stopp",
+   "erste_einheit": "j3-e14",
+   "besitzer_jahr": 3,
+   "einheiten": [
+    "j3-e14"
+   ]
+  },
+  {
+   "id": "erste-drei-bissen",
+   "erste_einheit": "j3-e16",
+   "besitzer_jahr": 3,
+   "einheiten": [
+    "j3-e16"
+   ]
+  },
+  {
+   "id": "eine-sache-ganz",
+   "erste_einheit": "j3-e19",
+   "besitzer_jahr": 3,
+   "einheiten": [
+    "j3-e19"
+   ]
+  },
+  {
+   "id": "kraft-moment",
+   "erste_einheit": "j3-e21",
+   "besitzer_jahr": 3,
+   "einheiten": [
+    "j3-e21"
+   ]
+  },
+  {
+   "id": "geniessen-zeitlupe",
+   "erste_einheit": "j3-e23",
+   "besitzer_jahr": 3,
+   "einheiten": [
+    "j3-e23"
+   ]
+  },
+  {
+   "id": "gedanke-oder-tatsache",
+   "erste_einheit": "j3-e24",
+   "besitzer_jahr": 3,
+   "einheiten": [
+    "j3-e24"
+   ]
+  },
+  {
+   "id": "aus-der-rolle",
+   "erste_einheit": "j3-e25",
+   "besitzer_jahr": 3,
+   "einheiten": [
+    "j3-e25"
+   ]
+  },
+  {
+   "id": "weiser-geist",
+   "erste_einheit": "j3-e27",
+   "besitzer_jahr": 3,
+   "einheiten": [
+    "j3-e27"
+   ]
+  },
+  {
+   "id": "mein-raum-dein-raum",
+   "erste_einheit": "j3-e28",
+   "besitzer_jahr": 3,
+   "einheiten": [
+    "j3-e28"
+   ]
+  },
+  {
+   "id": "gegenteil-tun",
+   "erste_einheit": "j3-e29",
+   "besitzer_jahr": 3,
+   "einheiten": [
+    "j3-e29"
+   ]
+  },
+  {
+   "id": "tempo-rausnehmen",
+   "erste_einheit": "j3-e30",
+   "besitzer_jahr": 3,
+   "einheiten": [
+    "j3-e30"
+   ]
+  },
+  {
+   "id": "aufmerksamkeit-zurueck",
+   "erste_einheit": "j3-e31",
+   "besitzer_jahr": 3,
+   "einheiten": [
+    "j3-e31"
+   ]
+  },
+  {
+   "id": "satz-im-ausatmen",
+   "erste_einheit": "j3-e33",
+   "besitzer_jahr": 3,
+   "einheiten": [
+    "j3-e33"
+   ]
+  },
+  {
+   "id": "wegstein",
+   "erste_einheit": "j3-e35",
+   "besitzer_jahr": 3,
+   "einheiten": [
+    "j3-e35"
+   ]
+  },
+  {
+   "id": "anker-vor-der-tuer",
+   "erste_einheit": "j3-j01",
+   "besitzer_jahr": 3,
+   "einheiten": [
+    "j3-j01"
+   ]
+  },
+  {
+   "id": "pannen-stopp",
+   "erste_einheit": "j3-j02",
+   "besitzer_jahr": 3,
+   "einheiten": [
+    "j3-j02"
+   ]
+  },
+  {
+   "id": "durchatmen-vor-gaesten",
+   "erste_einheit": "j3-j02",
+   "besitzer_jahr": 3,
+   "einheiten": [
+    "j3-j02"
+   ]
+  },
+  {
+   "id": "frust-check",
+   "erste_einheit": "j3-j03",
+   "besitzer_jahr": 3,
+   "einheiten": [
+    "j3-j03"
+   ]
+  }
+ ]
+}
