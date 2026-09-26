@@ -78,6 +78,16 @@ async function playStairs(page, tag, opts) {
       else await page.locator('.clash-opt').first().click();
     } else if (t === 'result') {
       info.results++;
+      // X-Karte auf einem Wirkungs-Bildschirm (Stufe 3): zählt als übersprungen, Spiel läuft weiter
+      if (o.pressXResult && info.turns === 5 && !info.xResult) {
+        info.xResult = true;
+        const key = await page.evaluate(() => { const c = document.querySelector('.clash-hud .clash-cell.now'); return c ? c.dataset.key : null; });
+        await page.locator('#btn-x').click();
+        const t2 = await screenType(page);
+        if (t2 !== 'turn') problems.push(`${tag('x-result')}: Nach X auf Wirkung kein neuer Zug (${t2})`);
+        if (!(await page.locator(`.clash-hud .clash-cell.skip[data-key="${key}"]`).count())) problems.push(`${tag('x-result')}: Stufe ${key} nicht als übersprungen markiert`);
+        continue;
+      }
       const hot = await page.locator('.clash-feedback.hot').count();
       const name = hot ? (wantRewind ? '05-folge-hitze' : '06-folge-ausweichen') : '08-folge-cool';
       if (!shotOnce.has(name)) {
@@ -224,7 +234,8 @@ for (const run of RUNS) {
     await shot(page, tag('04a-321'), 40);
   }
 
-  const info = await playStairs(page, tag, { mixed: true, pressX: true });
+  const info = await playStairs(page, tag, { mixed: true, pressX: true, pressXResult: run.name === 'ipadPortrait' });
+  if (run.name === 'ipadPortrait' && !info.xResult) problems.push(`${tag('x-result')}: X auf Wirkung nicht getestet`);
   if (info.turns < 5) problems.push(`${tag('turns')}: nur ${info.turns} Züge auf Stufe 1–3`);
   if (info.joints !== 2) problems.push(`${tag('joints')}: ${info.joints} gemeinsame Stufen statt 2`);
   if (info.rewinds < 2) problems.push(`${tag('rewind')}: Zurückspulen nur ${info.rewinds}×`);

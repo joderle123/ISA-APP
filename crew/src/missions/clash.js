@@ -328,14 +328,16 @@
       const t = ctx.teams[side];
       return h('div', { class: 'card clash-teamcard ' + side.toLowerCase() },
         makeAvatar(p, 'genervt', side === 'B').el,
-        h('div', { class: 'stack', style: { gap: '6px' } }, h('span', { class: 'pill ' + t.cls }, t.name), h('div', { class: 'clash-teamcard-name' }, 'spricht für ', h('b', null, p.name))));
+        h('div', { class: 'stack', style: { gap: '6px' } },
+          h('span', { class: 'pill ' + t.cls }, G.solo ? (side === 'A' ? 'Seite 1' : 'Seite 2') : t.name),
+          h('div', { class: 'clash-teamcard-name' }, G.solo ? 'Du bist ' : 'spricht für ', h('b', null, p.name))));
     };
     G.now = '1A';
     const wrap = ctx.screen([
       h('div', { class: 'stack', style: { gap: '4px' } },
         h('span', { class: 'eyebrow' }, 'Stopp. Friedenstreppe.'),
         h('h2', null, G.solo ? 'Du sprichst für beide.' : 'Ihr sprecht jetzt für die beiden.')),
-      G.solo ? null : h('div', { class: 'clash-teams' }, teamCard('A'), teamCard('B')),
+      h('div', { class: 'clash-teams' }, teamCard('A'), teamCard('B')),
       h('div', { class: 'card clash-stairs-card' },
         stairs(G, { big: true }),
         h('p', { class: 'lead' }, G.solo
@@ -579,7 +581,7 @@
       { code: 'K-31', text: 'wählt im Streit beruhigende, versöhnliche Worte' },
       { code: 'SOZ-34', text: 'schlägt bei Streit faire Lösungen vor' },
     ],
-    teacherNote: 'Nach der ISA-Friedenstreppe. Eine Streit-Szene pro Session (Comic mit zwei Fantasiefiguren). Teilt die Crew in zwei Teams: Team A spricht für die linke Person, Team B für die rechte. Stufe 1–3 (Sicht, Gefühl, Bedürfnis): Das Team einigt sich leise auf A, B oder C und zeigt es mit der Antwort-Karte. Du tippst die gezeigte Antwort an. Eine Antwort ist eine Ich-Botschaft, eine ein Vorwurf, eine Ausweichen – gemischt. Es gibt kein Falsch: Nach Vorwurf oder Ausweichen könnt ihr zurückspulen. Stufe 4 (Versöhnen) und 5 (Vereinbarung) wählt die ganze Crew, die Mehrheit zählt. Tipp aus dem Material: Das andere Team wiederholt kurz, was es gehört hat. Satzanfänge für echte Streits: „Aus meiner Sicht …“, „Ich habe mich … gefühlt“, „Ich brauche …“, „Wäre es okay für dich, wenn …“, „Können wir uns darauf einigen, dass …“. Passt eine Szene gerade nicht (z. B. echter Streit in der Gruppe): „Andere Szene“ oder X-Karte auf dem ersten Bild.',
+    teacherNote: 'Nach der ISA-Friedenstreppe. Eine Streit-Szene pro Session (Comic mit zwei Fantasiefiguren). Teilt die Crew in zwei Teams: Team A spricht für die linke Person, Team B für die rechte. Stufe 1–3 (Sicht, Gefühl, Bedürfnis): Das Team einigt sich leise auf A, B oder C und zeigt es mit der Antwort-Karte; du tippst die Antwort an. Pro Stufe gibt es drei Antworten in gemischter Reihenfolge: Ich-Botschaft, Vorwurf, Ausweichen. Es gibt kein Falsch: Nach Vorwurf oder Ausweichen könnt ihr zurückspulen. Stufe 4 (Versöhnen) und 5 (Vereinbarung) wählt die ganze Crew, die Mehrheit zählt. Tipp aus dem Material: Das andere Team wiederholt kurz, was es gehört hat. Satzanfänge für echte Streits: „Aus meiner Sicht …“, „Ich habe mich … gefühlt“, „Ich brauche …“, „Wäre es okay für dich, wenn …“, „Können wir uns darauf einigen, dass …“. Passt eine Szene gerade nicht (z. B. echter Streit in der Gruppe): „Andere Szene“ oder X-Karte auf dem ersten Bild.',
     debrief: [
       'Welche Stufe war heute am schwierigsten? Warum?',
       'Was hilft dir, erst mal runterzukommen, bevor du redest?',
