@@ -219,7 +219,7 @@ for (const run of RUNS) {
     if (t !== 'intro' || title1 === title2) problems.push(`${tag('swap')}: Andere Szene hat nicht gewechselt (${title1} → ${title2})`);
     await shot(page, tag('02-andere-szene'), 600);
   }
-  await clickText(page, 'Zur Friedenstreppe');
+  await clickText(page, 'Clash lösen');
 
   // Crew aufteilen
   t = await screenType(page);
@@ -267,7 +267,7 @@ for (const run of RUNS) {
     if (t !== 'intro') problems.push(`${tag('solo')}: erwartet intro, bekam ${t}`);
     const eyebrow = await page.locator('#stage .eyebrow').first().textContent();
     if (!/Solo/.test(eyebrow)) problems.push(`${tag('solo')}: Kein Solo-Hinweis im Intro`);
-    await clickText(page, 'Zur Friedenstreppe');
+    await clickText(page, 'Clash lösen');
     t = await screenType(page);
     await shot(page, tag('13-solo-start'), 400);
     problems.push(...await layoutCheck(page, tag('solo-start')));
