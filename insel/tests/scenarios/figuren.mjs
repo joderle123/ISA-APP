@@ -3,7 +3,8 @@
 // Bindung (nie dauerhaft sinkend, verstimmt + Reparatur), Grenz-Radius, Gespräch, Tagesablauf; Sitzung: Recap, Hauptmarker,
 // Abend am Feuer mit Tat-Satz, Bester Moment, Cliffhanger, Speichern, neuer Tag; Signalfeuer (anzünden, Schnellreise);
 // Sammelsachen (Lichtsplitter, Aussichtspunkt 8 s, versteckte Splitter, Karte); Karte mit Nebel und Teasern; Ruhewetter
-// halbiert den Puls; Jahreszeit je Modul; Nachtwache nur nachts in befreiten Regionen.
+// halbiert den Puls; Jahreszeit je Modul; Nachtwache nur nachts in befreiten Regionen; Bindungs-Belohnungen (Stufe 2
+// Wegfähigkeit + Satz, Stufe 3 Jacken-Aufnäher + Lagerfeuer-Geschichte); Noors Farbmarken und Kims Netz-Schnellreise auf der Karte.
 // Aufruf: node tests/scenarios/figuren.mjs   (SHOTS=Ordner, Q=low|medium|high, VERBOSE=1)
 import { launch, openGame, startGame, frames, shot, measureFrames, IPAD_LANDSCAPE } from '../lib.mjs';
 

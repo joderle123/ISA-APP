@@ -1,7 +1,9 @@
 // Karte (WP42, DESIGN §17): Tagebuch-Seite „Karte“ mit Nebelkacheln (entdeckt beim Gehen, groß an Aussichtspunkten),
 // gesperrten Teasern samt Fähigkeitssymbol, Hauptziel, Signalfeuern, gefundenen Aussichtspunkten, Sammelzählern je Zone.
+// Wegfähigkeiten (WP34, Bindung 2): 'farbmarken' (Noor) zeigt offene Splitter/Muscheln als Punkte, 'netzreise' (Kim) bietet
+// Schnellreise-Knöpfe zu brennenden Signalfeuern unter der Karte.
 //   game.plugins.karte → { reveal(x, z, r), isRevealed(x, z), revealed (Set), revealedCount(), teasers(), render(canvas), refresh(), N, R }
-//   Ereignisse: map:reveal {tiles} · Spielstand: map.revealed [Kachel-Indizes]
+//   Ereignisse: map:reveal {tiles} · Spielstand: map.revealed [Kachel-Indizes] · Debug: LUMO.debug.mapInfo() {revealed, teasers, marks, travel}
 import { drawMap, tileOf, tilesInRadius, MAP_N, MAP_R, REGION_NEEDS, REGION_CENTER } from './render.js';
 import { ZONE_NAME, moduleProgress, MODULE_REGION } from '../../systems/session/logic.js';
 import { UNIT_MODULE } from '../../content/schema/consts.js';
