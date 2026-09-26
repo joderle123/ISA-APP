@@ -6,6 +6,7 @@
 import { useEffect, useId, useMemo, useRef, useState } from 'react'
 import type { AgeLevel, Material } from '../types/material'
 import { teamSync, type TeamStatus } from '../lib/teamSync'
+import { searchText, searchTokens, tokenMatch } from '../lib/filter'
 import { slug } from '../lib/slug'
 import { toast } from '../lib/toast'
 import { aktuellerNutzer, darfVerwalten, nameMerken, type Nutzer } from '../lib/nutzer'
@@ -348,12 +349,17 @@ export function Team({ aktiv, material, bew }: { aktiv: boolean; material: Mater
     return () => clearInterval(t)
   }, [aktiv])
 
+  // Suchtexte einmal vorbereiten; gesucht wird wie in der Bibliothek (Umlaute, Akzente, Stufen)
+  const suchtexte = useMemo(
+    () => new Map(material.map((m) => [m.id, searchText([m.title, m.author ?? '', m.uploadedBy ?? '', m.shortDescription].join(' '))])),
+    [material],
+  )
   const liste = useMemo(() => {
-    const q = suche.trim().toLowerCase()
+    const q = searchTokens(suche)
     return material
-      .filter((m) => !q || [m.title, m.author ?? '', m.uploadedBy ?? '', m.shortDescription].join(' ').toLowerCase().includes(q))
+      .filter((m) => q.every((t) => tokenMatch(suchtexte.get(m.id) ?? '', t, m.ageLevels)))
       .sort((a, b) => (b.uploadedAt ?? '').localeCompare(a.uploadedAt ?? ''))
-  }, [material, suche])
+  }, [material, suche, suchtexte])
 
   async function verbinden() {
     await teamSync.connect()

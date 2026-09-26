@@ -57,6 +57,12 @@ export type SortMode = 'empfohlen' | 'titel' | 'bewertung'
 export type RatingLookup = Record<string, number>
 
 // --- Search -----------------------------------------------------------------
+// One search for the whole Toolbox (Einheiten, Arbeitsblätter, Material-Finder,
+// filter lists, Team): case and accents don't matter, umlauts match both ways
+// („Gefühle“ = „Gefuehle“, „Glück“ = „Gluck“), ß = ss, ELDiB codes in any
+// spelling („KOG-29“, „kog29“, „KOG 29“) and levels by code or name („C3“,
+// „Cycle 3“, „Spielschule“, „Sekundar“). Texts are prepared once (searchText,
+// cached per material or sheet), not on every keystroke.
 
 /** Lower-case, strip diacritics (é→e, ü→u, ë→e), ß→ss — so „Glecks“ finds
  *  „Glécks“ and „gluck“ finds „Glück“. */
@@ -68,9 +74,95 @@ export function fold(s: string): string {
     .replace(/ß/g, 'ss')
 }
 
+/** Like fold, but German umlauts as two letters: ä→ae, ö→oe, ü→ue. */
+function foldUmlaut(s: string): string {
+  return fold(s.normalize('NFC').replace(/[äÄ]/g, 'ae').replace(/[öÖ]/g, 'oe').replace(/[üÜ]/g, 'ue'))
+}
+
+/** Searchable form of a text, in both spellings of the umlauts (see fold and
+ *  foldUmlaut) – so „Glück“, „Glueck“ and „Gluck“ find each other. */
+export function searchText(s: string): string {
+  const a = fold(s)
+  const b = foldUmlaut(s)
+  return a === b ? a : a + '\n' + b
+}
+
+/** How the levels are called in the app besides their codes (taxonomy and
+ *  filter labels), matched at word starts against an item's levels – so
+ *  „Sekundar“ finds ES, but „Schule“ does not find every C1 or ES item. */
+const LEVEL_WORDS: Record<string, string[]> = {
+  C1: ['cycle', 'precoce', 'spillschoul', 'spielschule'],
+  C2: ['cycle'],
+  C3: ['cycle'],
+  C4: ['cycle'],
+  ES: ['enseignement', 'secondaire', 'sekundarschule'],
+}
+
+export interface SearchToken {
+  /** The word in both spellings (see searchText). */
+  forms: string[]
+  /** Letters as typed (an umlaut counts once) – decides how the word must match. */
+  len: number
+  /** ELDiB code such as „kog-29“: only as a whole word („kog-2“ is not „kog-29“). */
+  code: boolean
+  /** A level (C1–C4, ES): matched against the levels, not the text. */
+  level?: AgeLevel
+}
+
+const LEVEL_CODES: AgeLevel[] = ['C1', 'C2', 'C3', 'C4', 'ES']
+
+export function searchTokens(q: string): SearchToken[] {
+  const s = q
+    .toLowerCase()
+    .normalize('NFC')
+    // ELDiB codes: „KOG 29“, „kog29“, „KOG–29“ → „kog-29“
+    .replace(/(^|[^\p{L}\p{N}])(v|k|soz|kog)\s*[-–_]?\s*(\d{1,2})(?!\p{N})/gu, '$1$2-$3')
+    // levels: „Cycle 3“, „Zyklus 3“, „c 3“ → „c3“
+    .replace(/(^|[^\p{L}\p{N}])(?:cycle|zyklus|c)\s*[-–_]?\s*([1-4])(?!\p{N})/gu, '$1c$2')
+  return s
+    .split(/[\s–—]+/)
+    .filter((w) => /[\p{L}\p{N}]/u.test(w))
+    .map((w) => {
+      const f = fold(w)
+      return {
+        forms: [...new Set([f, foldUmlaut(w)])],
+        len: f.length,
+        code: /^(v|k|soz|kog)-\d{1,2}$/.test(f),
+        level: LEVEL_CODES.find((l) => l.toLowerCase() === f),
+      }
+    })
+}
+
+const WORD_CHAR = /[\p{L}\p{N}]/u
+
+/** One or two letters only as a whole word („KI“ not in „Skills“ or „Kinder“),
+ *  three at a word start („Wut“ → „Wutvulkan“, „ich“ not in „nicht“), longer
+ *  ones anywhere, so German compounds still match („Angst“ →
+ *  „Prüfungsangst“). len 0 = whole word. */
+function wordMatch(text: string, w: string, len: number): boolean {
+  if (len > 3) return text.includes(w)
+  const start = WORD_CHAR.test(w[0])
+  const end = len < 3 && WORD_CHAR.test(w[w.length - 1])
+  for (let i = text.indexOf(w); i >= 0; i = text.indexOf(w, i + 1)) {
+    if (start && i > 0 && WORD_CHAR.test(text[i - 1])) continue
+    if (end && i + w.length < text.length && WORD_CHAR.test(text[i + w.length])) continue
+    return true
+  }
+  return false
+}
+
+/** Does the search token occur in the prepared text (searchText) – or, given
+ *  the item's `levels`, name one of them („C3“, „Cycle 3“, „Spielschule“)?
+ *  Also used by the Arbeitsblätter, the filter lists and the Team page. */
+export function tokenMatch(text: string, t: SearchToken, levels?: readonly string[]): boolean {
+  if (t.level) return !!levels?.includes(t.level)
+  if (levels?.some((l) => LEVEL_WORDS[l]?.some((w) => t.forms.some((f) => (t.len < 3 ? w === f : w.startsWith(f)))))) return true
+  return t.forms.some((w) => wordMatch(text, w, t.code ? 0 : t.len))
+}
+
 interface SearchDoc {
   title: string
-  tags: string
+  meta: string
   all: string
 }
 const docCache = new WeakMap<Material, SearchDoc>()
@@ -78,57 +170,50 @@ const docCache = new WeakMap<Material, SearchDoc>()
 function searchDoc(m: Material): SearchDoc {
   let d = docCache.get(m)
   if (!d) {
-    const title = fold(m.title)
-    const tags = fold([...m.tags, ...m.themes.map(themeLabel)].join(' '))
-    const all = [
-      title,
-      tags,
-      fold(m.author ?? ''),
-      fold(m.shortDescription),
-      fold(m.remark ?? ''),
-      fold(m.materialsNeeded ?? ''),
-      fold(m.ablauf.map((a) => `${a.title ?? ''} ${a.text}`).join(' ')),
-      fold(m.eldibGoals.join(' ')),
-      m.id,
-    ].join(' \n ')
-    d = { title, tags, all }
+    const title = searchText(m.title)
+    // tags, themes, ELDiB codes, short description, author (levels: see tokenMatch)
+    const meta = searchText([...m.tags, ...m.themes.map(themeLabel), ...m.eldibGoals, m.shortDescription, m.author ?? ''].join(' '))
+    // procedure and the tasks of the worksheet – hits only here rank last
+    const ws = m.worksheet
+    const text = searchText(
+      [m.remark ?? '', m.materialsNeeded ?? '', ...m.ablauf.map((a) => `${a.title ?? ''} ${a.text}`), ws?.title ?? '', ws?.intro ?? '', ...(ws?.blocks ?? []).map((b) => b.text ?? ''), m.id].join(' '),
+    )
+    d = { title, meta, all: [title, meta, text].join('\n') }
     docCache.set(m, d)
   }
   return d
 }
 
-export function searchTokens(q: string): string[] {
-  return fold(q).split(/\s+/).filter(Boolean)
+/** Prepare search texts ahead of time in small steps while the browser is idle,
+ *  so the first keystroke is not slower. Returns a function that stops it. */
+export function prepareInIdle<T>(items: readonly T[], prepare: (x: T) => unknown): () => void {
+  const idle = typeof window.requestIdleCallback === 'function'
+  const plan = (cb: () => void) => (idle ? window.requestIdleCallback(cb) : window.setTimeout(cb, 50))
+  let i = 0
+  let id = 0
+  const step = () => {
+    const end = performance.now() + 8
+    while (i < items.length && performance.now() < end) prepare(items[i++])
+    if (i < items.length) id = plan(step)
+  }
+  id = plan(step)
+  return () => (idle ? window.cancelIdleCallback(id) : window.clearTimeout(id))
 }
 
-const WORD_CHAR = /[\p{L}\p{N}]/u
-
-/** Does a (folded) search token occur in the (folded) text? Tokens of one or
- *  two characters only as a whole word („KI“ not in „Skills“ or „Kinder“),
- *  three characters at a word start („Wut“ → „Wutvulkan“, „ich“ not in
- *  „nicht“), longer ones anywhere, so German compounds still match
- *  („Angst“ → „Prüfungsangst“). Also used by the Arbeitsblätter. */
-export function tokenMatch(text: string, t: string): boolean {
-  if (t.length > 3) return text.includes(t)
-  const start = WORD_CHAR.test(t[0])
-  const end = t.length < 3 && WORD_CHAR.test(t[t.length - 1])
-  for (let i = text.indexOf(t); i >= 0; i = text.indexOf(t, i + 1)) {
-    if (start && i > 0 && WORD_CHAR.test(text[i - 1])) continue
-    if (end && i + t.length < text.length && WORD_CHAR.test(text[i + t.length])) continue
-    return true
-  }
-  return false
+export function prepareMaterialSearch(m: Material): void {
+  searchDoc(m)
 }
 
 /** Relevance of a material for the search tokens (0 = no match). Every token
- *  must appear somewhere (AND, see tokenMatch); title and tag hits weigh more. */
-export function searchScore(m: Material, tokens: string[]): number {
+ *  must appear somewhere (AND, see tokenMatch); hits in the title weigh most,
+ *  then tags, levels, codes and short description, last procedure and tasks. */
+export function searchScore(m: Material, tokens: SearchToken[]): number {
   if (!tokens.length) return 1
   const d = searchDoc(m)
   let score = 0
   for (const t of tokens) {
-    if (!tokenMatch(d.all, t)) return 0
-    score += tokenMatch(d.title, t) ? 6 : tokenMatch(d.tags, t) ? 3 : 1
+    if (!tokenMatch(d.all, t, m.ageLevels)) return 0
+    score += tokenMatch(d.title, t) ? 6 : tokenMatch(d.meta, t, m.ageLevels) ? 3 : 1
   }
   return score
 }

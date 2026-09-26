@@ -3,15 +3,16 @@
 // ---------------------------------------------------------------------------
 import { useCallback, useDeferredValue, useEffect, useMemo, useRef, useState } from 'react'
 import { alleBlaetter, blattById } from '../data/blaetter'
-import type { Bereich, NummeriertesBlatt, Sprache, Stufe } from '../blatt/typen'
+import type { Baustein, Bereich, NummeriertesBlatt, Sprache, Stufe } from '../blatt/typen'
 import { BEREICHE, bereichById, STUFEN_REIHE, stufenText, THEMEN, themaLabel } from '../blatt/katalog'
 import { bildZeichnung, iconZeichnung, palette } from '../blatt/zeichnung'
 import { ZeichnungSvg } from '../blatt/ZeichnungSvg'
 import { eldibGoalById } from '../data/taxonomy'
 import { domainStyle, goalText } from '../lib/ui'
-import { tokenMatch } from '../lib/filter'
+import { prepareInIdle, searchText, searchTokens, tokenMatch, type SearchToken } from '../lib/filter'
 import { loadPdfModule } from '../lib/loadPdf'
 import { repositionToasts, toast } from '../lib/toast'
+import { setBlattSprache, useBlattSprache } from '../lib/sprache'
 import type { Bewertungen } from '../lib/useBewertungen'
 import { BewertungKurz, BewertungVoll } from '../components/Bewertung'
 import { Dialog } from '../components/Dialog'
@@ -36,11 +37,48 @@ export function blaetterText(n: number): string {
   return n === 1 ? '1 Blatt' : `${n} Blätter`
 }
 
-function norm(s: string) {
-  return s
-    .toLowerCase()
-    .normalize('NFD')
-    .replace(/[̀-ͯ]/g, '')
+/** Aufgabentexte eines Blatts (Aufgaben mit Hinweis, Fragen), auch in Spalten. */
+function aufgaben(bs: Baustein[]): string[] {
+  return bs.flatMap((x) =>
+    x.art === 'aufgabe' ? [x.text, x.hinweis ?? ''] : x.art === 'frage' ? [x.text] : x.art === 'spalten' ? [...aufgaben(x.links), ...aufgaben(x.rechts)] : [],
+  )
+}
+
+/** Suchtext eines Blatts – einmal vorbereitet, nicht bei jedem Tastendruck. */
+const suchCache = new WeakMap<NummeriertesBlatt, { titel: string; meta: string; alles: string }>()
+function suchtext(b: NummeriertesBlatt) {
+  let d = suchCache.get(b)
+  if (!d) {
+    const titel = searchText(b.de.titel + ' ' + (b.fr?.titel ?? ''))
+    const meta = searchText([b.nr, b.id, b.de.untertitel ?? '', b.schlagworte.join(' '), themaLabel(b.bereich, b.thema), bereichById.get(b.bereich)?.de ?? '', b.eldib.join(' ')].join(' '))
+    const text = searchText([...aufgaben(b.de.bausteine), ...(b.fr ? aufgaben(b.fr.bausteine) : [])].join(' '))
+    d = { titel, meta, alles: [titel, meta, text].join('\n') }
+    suchCache.set(b, d)
+  }
+  return d
+}
+
+/** Punkte eines Blatts für die Suche (0 = kein Treffer): jedes Wort muss vorkommen – im Titel 6,
+ *  in Untertitel, Schlagwörtern, Stufe oder ELDiB 3, nur in den Aufgaben 1. Je Suche nur einmal
+ *  berechnet (die Zahlen an Kacheln und Filtern fragen dieselbe Suche oft ab). */
+let letzteSuche = { q: '', woerter: [] as SearchToken[], punkte: new WeakMap<NummeriertesBlatt, number>() }
+function suchPunkte(b: NummeriertesBlatt, q: string): number {
+  if (letzteSuche.q !== q) letzteSuche = { q, woerter: searchTokens(q), punkte: new WeakMap() }
+  if (!letzteSuche.woerter.length) return 1
+  let p = letzteSuche.punkte.get(b)
+  if (p === undefined) {
+    const d = suchtext(b)
+    p = 0
+    for (const w of letzteSuche.woerter) {
+      if (!tokenMatch(d.alles, w, b.stufen)) {
+        p = 0
+        break
+      }
+      p += tokenMatch(d.titel, w) ? 6 : tokenMatch(d.meta, w, b.stufen) ? 3 : 1
+    }
+    letzteSuche.punkte.set(b, p)
+  }
+  return p
 }
 
 function trifft(b: NummeriertesBlatt, f: BlattFilter): boolean {
@@ -49,14 +87,8 @@ function trifft(b: NummeriertesBlatt, f: BlattFilter): boolean {
   if (f.stufen.length && !b.stufen.some((s) => f.stufen.includes(s))) return false
   if (f.nurFr && !b.fr) return false
   if (f.eldib.length && !b.eldib.some((e) => f.eldib.includes(e))) return false
-  const q = norm(f.suche.trim())
-  if (q) {
-    const text = norm(
-      [b.nr, b.id, b.de.titel, b.de.untertitel ?? '', b.fr?.titel ?? '', b.schlagworte.join(' '), themaLabel(b.bereich, b.thema), bereichById.get(b.bereich)?.de ?? '', b.eldib.join(' '), b.stufen.join(' ')].join(' '),
-    )
-    if (!q.split(/\s+/).every((w) => tokenMatch(text, w))) return false
-  }
-  return true
+  const q = f.suche.trim()
+  return !q || suchPunkte(b, q) > 0
 }
 
 function Leitbild({ b, klein }: { b: NummeriertesBlatt; klein?: boolean }) {
@@ -73,7 +105,7 @@ function Leitbild({ b, klein }: { b: NummeriertesBlatt; klein?: boolean }) {
   )
 }
 
-function BlattKarte({ b, bew, gewaehlt, onOeffnen, onWaehlen, onLaden, laedt }: { b: NummeriertesBlatt; bew: Bewertungen; gewaehlt: boolean; onOeffnen: () => void; onWaehlen: () => void; onLaden: () => void; laedt: boolean }) {
+function BlattKarte({ b, bew, gewaehlt, sprache, onOeffnen, onWaehlen, onLaden, laedt }: { b: NummeriertesBlatt; bew: Bewertungen; gewaehlt: boolean; sprache: Sprache; onOeffnen: () => void; onWaehlen: () => void; onLaden: () => void; laedt: boolean }) {
   const bereich = bereichById.get(b.bereich)!
   return (
     <article className="bl-karte" style={{ ['--bc' as string]: bereich.farben.tief, ['--bz' as string]: bereich.farben.zart }}>
@@ -110,9 +142,9 @@ function BlattKarte({ b, bew, gewaehlt, onOeffnen, onWaehlen, onLaden, laedt }: 
       <div className="flex items-center gap-2 border-t border-line px-4 py-2.5">
         <BewertungKurz gesamt={bew.gesamt.get(b.id)} eigen={bew.eigene[b.id] || 0} />
         <span className="grow" />
-        <button type="button" className="btn btn-sm raise" onClick={onLaden} disabled={laedt} aria-label={`PDF herunterladen: ${b.de.titel}`}>
+        <button type="button" className="btn btn-sm raise" onClick={onLaden} disabled={laedt} aria-label={`PDF herunterladen: ${b.de.titel}${sprache === 'fr' ? ' (französisch)' : ''}`}>
           {laedt ? <span className="spin" /> : <Icon name="download" />}
-          PDF
+          {sprache === 'fr' ? 'PDF · FR' : 'PDF'}
         </button>
       </div>
     </article>
@@ -163,7 +195,9 @@ function Vorschau({ b, sprache, lehrer }: { b: NummeriertesBlatt; sprache: Sprac
 
 /** Detail eines Blatts (Vorschau, Download, Bewertung). Auch vom Skills-Kurs benutzt – dort ohne Mappe. */
 export function BlattDetail({ b, bew, onSchliessen, onOeffnen, gewaehlt, onWaehlen }: { b: NummeriertesBlatt; bew: Bewertungen; onSchliessen: () => void; onOeffnen: (id: string) => void; gewaehlt?: boolean; onWaehlen?: (sprache: Sprache) => void }) {
-  const [sprache, setSprache] = useState<Sprache>('de')
+  // gemerkte Sprache (gilt für alle Blätter); ohne französische Fassung Deutsch
+  const gewaehlteSprache = useBlattSprache()
+  const sprache: Sprache = b.fr ? gewaehlteSprache : 'de'
   const [laedt, setLaedt] = useState<string | null>(null)
   const bereich = bereichById.get(b.bereich)!
   const inhalt = sprache === 'fr' && b.fr ? b.fr : b.de
@@ -197,10 +231,10 @@ export function BlattDetail({ b, bew, onSchliessen, onOeffnen, gewaehlt, onWaehl
         </div>
         {b.fr ? (
           <div className="seg" role="group" aria-label="Sprache">
-            <button type="button" aria-pressed={sprache === 'de'} onClick={() => setSprache('de')}>
+            <button type="button" aria-pressed={sprache === 'de'} onClick={() => setBlattSprache('de')}>
               DE
             </button>
-            <button type="button" aria-pressed={sprache === 'fr'} onClick={() => setSprache('fr')}>
+            <button type="button" aria-pressed={sprache === 'fr'} onClick={() => setBlattSprache('fr')}>
               FR
             </button>
           </div>
@@ -323,11 +357,16 @@ export function Blaetter({
   const [offen, setOffen] = useState<NummeriertesBlatt | null>(() => (startBlatt ? (blattById.get(startBlatt.id) ?? null) : null))
   // Blätter in der Mappe, je mit der Sprache, in der sie gewählt wurden (ohne Angabe: Deutsch)
   const [mappe, setMappe] = useState<{ id: string; sprache?: Sprache }[]>([])
+  // gemerkte Sprache (DE/FR) – für Karten und Mappe wie im Dialog; Blätter ohne Französisch bleiben deutsch
+  const gewaehlteSprache = useBlattSprache()
+  const spracheVon = (b: NummeriertesBlatt): Sprache => (b.fr ? gewaehlteSprache : 'de')
   const [laedt, setLaedt] = useState<string | null>(null)
   const [filterOffen, setFilterOffen] = useState(false)
   const suchRef = useRef<HTMLInputElement>(null)
 
   useEffect(() => setFilter(startFilter), [startFilter])
+  // Suchtexte der Blätter vorbereiten, solange der Browser nichts zu tun hat
+  useEffect(() => prepareInIdle(alleBlaetter, suchtext), [])
   useEffect(() => {
     if (!startBlatt) return
     const b = blattById.get(startBlatt.id)
@@ -341,10 +380,9 @@ export function Blaetter({
     if (sort === 'titel') l.sort((a, b) => a.de.titel.localeCompare(b.de.titel, 'de'))
     else if (sort === 'bewertung') l.sort((a, b) => (bew.gesamt.get(b.id)?.schnitt ?? bew.eigene[b.id] ?? 0) - (bew.gesamt.get(a.id)?.schnitt ?? bew.eigene[a.id] ?? 0))
     else if (q.suche.trim()) {
-      // Beim Suchen: Treffer im Titel zuerst, sonst in der Reihenfolge der Bereiche
-      const woerter = norm(q.suche.trim()).split(/\s+/)
-      const imTitel = new Map(l.map((b) => [b.id, woerter.filter((w) => tokenMatch(norm(b.de.titel + ' ' + (b.fr?.titel ?? '')), w)).length]))
-      l.sort((a, b) => (imTitel.get(b.id) ?? 0) - (imTitel.get(a.id) ?? 0))
+      // Beim Suchen: Treffer im Titel zuerst, Treffer nur in den Aufgaben zuletzt, sonst in der Reihenfolge der Bereiche
+      const s = q.suche.trim()
+      l.sort((a, b) => suchPunkte(b, s) - suchPunkte(a, s))
     }
     return l
   }, [q, sort, bew.gesamt, bew.eigene])
@@ -365,7 +403,7 @@ export function Blaetter({
     setLaedt(b.id)
     try {
       const m = await loadPdfModule()
-      toast(`PDF erstellt: ${await m.downloadBlatt(b, { nr: b.nr, lehrer: false })}`, 'ok')
+      toast(`PDF erstellt: ${await m.downloadBlatt(b, { nr: b.nr, lehrer: false, sprache: spracheVon(b) })}`, 'ok')
     } catch (e) {
       toast(e instanceof Error ? e.message : 'PDF konnte nicht erstellt werden.', 'error')
     } finally {
@@ -545,7 +583,7 @@ export function Blaetter({
             ) : (
               <div className="grid grid-cols-[repeat(auto-fill,minmax(min(100%,280px),1fr))] gap-4">
                 {treffer.map((b) => (
-                  <BlattKarte key={b.id} b={b} bew={bew} gewaehlt={inMappe(b.id)} onOeffnen={() => setOffen(b)} onWaehlen={() => umschalten(b.id)} onLaden={() => laden(b)} laedt={laedt === b.id} />
+                  <BlattKarte key={b.id} b={b} bew={bew} gewaehlt={inMappe(b.id)} sprache={spracheVon(b)} onOeffnen={() => setOffen(b)} onWaehlen={() => umschalten(b.id, spracheVon(b))} onLaden={() => laden(b)} laedt={laedt === b.id} />
                 ))}
               </div>
             )}

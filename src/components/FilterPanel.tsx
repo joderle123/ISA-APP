@@ -1,6 +1,6 @@
-import { useId, useState, type CSSProperties, type ReactNode } from 'react'
+import { useId, useMemo, useState, type CSSProperties, type ReactNode } from 'react'
 import type { FacetCounts, FilterState } from '../lib/filter'
-import { fold } from '../lib/filter'
+import { searchText, searchTokens, tokenMatch } from '../lib/filter'
 import type { EldibDomain } from '../types/material'
 import { StarRating } from './StarRating'
 import { Icon } from './Icon'
@@ -17,6 +17,9 @@ import {
   sources,
   themes,
 } from '../data/taxonomy'
+
+/** Suchtext je ELDiB-Ziel (Code und Bezeichnung), einmal vorbereitet. */
+const GOAL_TEXT = new Map(eldibGoals.map((g) => [g.id, searchText(`${g.id} ${g.label}`)]))
 
 interface Props {
   filter: FilterState
@@ -114,13 +117,15 @@ export function FilterPanel({ filter, update, counts, totals, allTags, allAuthor
   })
   const [tagQuery, setTagQuery] = useState('')
 
-  const q = fold(goalQuery.trim())
-  const goalsToShow = q
-    ? eldibGoals.filter((g) => fold(`${g.id} ${g.label}`).includes(q) || fold(g.id.replace('-', '')).includes(q))
+  // Suche wie in der Bibliothek („kog 29“ findet KOG-29, „Gefuehle“ findet „Gefühle“)
+  const q = searchTokens(goalQuery)
+  const goalsToShow = q.length
+    ? eldibGoals.filter((g) => q.every((t) => tokenMatch(GOAL_TEXT.get(g.id) ?? '', t)))
     : eldibGoals.filter((g) => g.domain === goalDomain)
 
-  const tq = fold(tagQuery.trim())
-  const tagList = (tq ? allTags.filter((t) => fold(t).includes(tq)) : allTags).slice(0, tq ? 40 : 14)
+  const tagTexte = useMemo(() => new Map(allTags.map((t) => [t, searchText(t)])), [allTags])
+  const tq = searchTokens(tagQuery)
+  const tagList = (tq.length ? allTags.filter((t) => tq.every((w) => tokenMatch(tagTexte.get(t) ?? '', w))) : allTags).slice(0, tq.length ? 40 : 14)
   const selectedTagsHidden = filter.tags.filter((t) => !tagList.includes(t))
 
   const themeOrder = themes
@@ -195,7 +200,7 @@ export function FilterPanel({ filter, update, counts, totals, allTags, allAuthor
               key={d.id}
               type="button"
               role="tab"
-              aria-selected={!q && goalDomain === d.id}
+              aria-selected={!q.length && goalDomain === d.id}
               title={d.label}
               style={domainStyle(d.id)}
               onClick={() => {
@@ -240,7 +245,7 @@ export function FilterPanel({ filter, update, counts, totals, allTags, allAuthor
         <div
           className="scroll-slim -mx-1 max-h-64 overflow-y-auto px-1"
           role="group"
-          aria-label={q ? 'Gefundene ELDiB-Ziele' : `ELDiB-Ziele ${eldibDomains.find((d) => d.id === goalDomain)?.label}`}
+          aria-label={q.length ? 'Gefundene ELDiB-Ziele' : `ELDiB-Ziele ${eldibDomains.find((d) => d.id === goalDomain)?.label}`}
         >
           {goalsToShow.map((g) => {
             const n = counts.eldibGoals.get(g.id) ?? 0
@@ -419,7 +424,7 @@ export function FilterPanel({ filter, update, counts, totals, allTags, allAuthor
                   </label>
                 )
               })}
-              {tq && tagList.length === 0 && <p className="px-1.5 py-1 text-[13px] text-muted">Kein Schlagwort gefunden.</p>}
+              {tq.length > 0 && tagList.length === 0 && <p className="px-1.5 py-1 text-[13px] text-muted">Kein Schlagwort gefunden.</p>}
             </div>
           </div>
         </div>
