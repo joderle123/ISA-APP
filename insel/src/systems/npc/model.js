@@ -165,6 +165,24 @@ export function bondStep(level, delta, { cause = null, repair = null } = {}) {
   // Nie dauerhaft sinken: die Stufe bleibt, die Figur ist vorübergehend verstimmt und nennt die Ursache
   return { level: l, verstimmt: { cause: cause || 'verstimmt', repair: repair || null } };
 }
+// Bindungs-Belohnungen (DESIGN §9), rein: was eine Stufe schenkt, das noch fehlt.
+//   bondRewardsFor(def, level, { wege, jackePatches, deeds }) → { weg: {id, say}|null, jacket: id|null, story: {deedId, text}|null }
+//   Stufe def.bond.ability.level (Standard 2): Wegfähigkeit · Stufe 3: Aufnäher der Crew-Jacke und Lagerfeuer-Geschichte (Finale-Satz)
+export function bondRewardsFor(def, level, have = {}) {
+  const b = def && def.bond;
+  const lvl = clamp(Math.round(Number(level) || 0), 0, BOND_MAX);
+  const out = { weg: null, jacket: null, story: null };
+  if (!b) return out;
+  const text = (t) => (t && typeof t === 'object' ? t.t : t) || null;
+  const has = (list, id) => Array.isArray(list) && list.includes(id);
+  if (b.ability && typeof b.ability.id === 'string' && lvl >= (Number(b.ability.level) || 2) && !has(have.wege, b.ability.id)) out.weg = { id: b.ability.id, say: text(b.ability.say) };
+  if (lvl >= BOND_MAX) {
+    if (typeof b.jacket === 'string' && !has(have.jackePatches, b.jacket)) out.jacket = b.jacket;
+    const deedId = `${def.id}-bindung-3`;
+    if (text(b.finale) && !has(have.deeds, deedId)) out.story = { deedId, text: text(b.finale) };
+  }
+  return out;
+}
 // Bindungen aus dem Spielstand (state.bonds = { id: 0–3 }, state.moods = { id: { kind:'verstimmt', cause, repair, day } })
 export function createBonds(state, { day = () => 1, emit = () => {} } = {}) {
   const api = {

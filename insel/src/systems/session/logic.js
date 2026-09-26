@@ -74,6 +74,7 @@ export function evalCond(c, ctx) {
   if (c.upgrade) return st('upgrades', []).includes(c.upgrade);
   if (c.feather) return st('feathers', []).includes(c.feather);
   if (c.item) return st('gadgets', []).includes(c.item) || !!(st('collectibles') || {})[c.item];
+  if (c.weg) return st('wege', []).includes(c.weg);   // Wegfähigkeit aus einer Bindung (Stufe 2, WP34)
   if (c.deed) return st('deeds', []).includes(c.deed);
   if (c.collectible) return !!(st('collectibles') || {})[c.collectible];
   if (c.shard !== undefined) return st('shards', []).includes(c.shard);

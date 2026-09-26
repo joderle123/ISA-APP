@@ -5,16 +5,20 @@
 //   game.npcs = game.plugins.npcs → { list(), get(id), main(), defs, spawn(def), remove(id), nameOf(id), rename(id, name|null),
 //     emotion(id), setEmotion(id, {…}), nudge(id, emotion, ±n), heat(id, ±n), setHeat(id, v), tanks(id), tank(id, tank, add, {kind}),
 //     bond(id), bondAdd(id, ±n, {cause, repair}), repair(id), isVerstimmt(id), boundary(id), streitStil(id, vs), tell(id),
+//     wege(), hasWeg(id), jackePatches(), bondRewards(id, level),
 //     applyEffect(effect), talk(id), deed(npcId, deedId, text?), near(radius), inBoundary(id), stats(), view, MAX_ANIMATED }
+//   Bindung (DESIGN §9): Stufe 2 → NpcDef.bond.ability.id landet in state.wege (Wegfähigkeit, Figur sagt bond.ability.say),
+//     Stufe 3 → bond.jacket in state.jackePatches (Aufnäher der Crew-Jacke) und bond.finale als Lagerfeuer-Satz (Tat <id>-bindung-3).
 //   Ereignisse: npc:spawn {id} · npc:talk {id, npc, handled} · npc:emotion {id, snapshot} · npc:tank {id, tank, value, kind}
-//     bond:change {npc, level, prev} · npc:verstimmt {npc, cause, repair} · npc:repaired {npc} · npc:rename {id, name}
+//     bond:change {npc, level, prev} · bond:ability {npc, id, level, say} · bond:jacket {npc, patch, icon, color}
+//     npc:verstimmt {npc, cause, repair} · npc:repaired {npc} · npc:rename {id, name}
 //     npc:deed {npc, deed} · npc:boundary {id, inside} (Grenz-Radius betreten/verlassen)
-//   Spielstand: npcs.<id> = { emotion, tanks } · names.<id> · bonds.<id> · moods.<id> · deeds[]
+//   Spielstand: npcs.<id> = { emotion, tanks } · names.<id> · bonds.<id> · moods.<id> · deeds[] · wege[] · jackePatches[]
 //   Debug: LUMO.debug.npc(id) · npcList() · setNpcEmotion(id, e, i, e2?, i2?) · npcHeat(id, v) · npcTank(id, tank, add, kind)
-//     · renameNpc(id, name) · npcBond(id, ±n) · npcLod()
+//     · renameNpc(id, name) · npcBond(id, ±n) · npcLod() · wege()
 import * as THREE from 'three';
 import { createNpc } from './npc.js';
-import { createBonds, auraView, pickAnimated, displayName, tellFor, streitStilFor, MAX_ANIMATED, TANKS, HEAT_CAP_OFF } from './model.js';
+import { createBonds, auraView, pickAnimated, displayName, tellFor, streitStilFor, bondRewardsFor, MAX_ANIMATED, TANKS, HEAT_CAP_OFF } from './model.js';
 import { randomConfig } from '../../actors/humanoid/index.js';
 
 // Dorfleute: Rollen statt Namen (keine Namenskollisionen mit Kindern der Gruppe), Icons aus ui/icons.js
@@ -136,6 +140,33 @@ export default {
     state.on('names', () => { for (const n of npcs.values()) n.setName(displayName(n.def, namesOf())); });
     events.on('day:new', (e) => { const d = (e && e.day) || day(); for (const n of npcs.values()) n.tanks.morning(d); });
     events.on('bond:change', (e) => { const n = e && npcs.get(e.npc); if (n) n.tag.set({}); });
+    // Belohnungen bei jeder Änderung von state.bonds.<id> (eigene Züge, Quest-Engine, Debug) – jede genau einmal
+    state.on('bonds', (e) => { const parts = String(e.path).split('.'); if (parts.length === 2 && parts[0] === 'bonds') bondRewards(parts[1], e.value); });
+
+    // ---- Bindungs-Belohnungen (DESIGN §9): Stufe 2 schenkt eine Wegfähigkeit (state.wege), Stufe 3 einen Aufnäher
+    //      für die Crew-Jacke (state.jackePatches) und eine Lagerfeuer-Geschichte (Tat <id>-bindung-3 mit dem Finale-Satz). ----
+    function bondRewards(id, level) {
+      const def = defs.get(id) || content.get('npcs', id);
+      const plan = bondRewardsFor(def, level, { wege: state.get('wege', []), jackePatches: state.get('jackePatches', []), deeds: state.get('deeds', []) });
+      const out = [];
+      const live = game.started && game.ui;
+      if (plan.weg) {
+        state.addUnique('wege', plan.weg.id);
+        out.push('weg');
+        emit('bond:ability', { npc: id, id: plan.weg.id, level: Number(level) || 0, say: plan.weg.say });
+        if (live && game.ui.toast) game.ui.toast(`Neuer Weg: ${api.nameOf(id)} zeigt dir was.`);
+        if (live && game.audio && game.audio.play) game.audio.play('chime');
+        if (live && game.ui.say && plan.weg.say) { const n = npcs.get(id); try { game.ui.say({ who: id, text: plan.weg.say, anchor: n ? n.group : undefined, wait: false, seconds: 3.2 }).catch(() => {}); } catch (e) { /* egal */ } }
+      }
+      if (plan.jacket) {
+        state.addUnique('jackePatches', plan.jacket);
+        out.push('jacke');
+        emit('bond:jacket', { npc: id, patch: plan.jacket, icon: (def && def.icon) || 'stern', color: (def && def.color) || '#ffd166' });
+        if (live && game.ui.toast) game.ui.toast(`Aufnäher für die Crew-Jacke: ${api.nameOf(id)}`);
+      }
+      if (plan.story) { api.deed(id, plan.story.deedId, plan.story.text); out.push('geschichte'); }
+      return out;
+    }
 
     // ---- Blick-Stufen und Modus ----
     function refreshView() {
@@ -280,6 +311,11 @@ export default {
       inBoundary(id) { const n = npcs.get(id); return !!n && n.distTo(player.position) < n.boundary(bonds.get(id)); },
       streitStil(id, vs) { return streitStilFor(defs.get(id), vs); },
       tell(id) { return tellFor(defs.get(id), state.get('settings.mode', 'abenteuer')); },
+      // Wegfähigkeiten aus Bindungen (Stufe 2): state.wege = ['spalt', 'daecher', …]; Inhalte prüfen sie mit {weg:'spalt'}
+      wege() { return (state.get('wege', []) || []).slice(); },
+      hasWeg(wegId) { return (state.get('wege', []) || []).includes(wegId); },
+      jackePatches() { return (state.get('jackePatches', []) || []).slice(); },
+      bondRewards,
       applyEffect, talk,
       // Tat eintragen (für Lagerfeuer und Echos): deeds[] im Spielstand, session.log.deeds für heute
       // Tat eintragen (Format der Quest-Engine WP31: deeds[] + deedLog[{ id, day, t, unit, npc, text }]) – fürs Lagerfeuer und Echos
@@ -312,6 +348,7 @@ export default {
     D.renameNpc = (id, name) => api.rename(id, name);
     D.npcBond = (id, delta) => api.bondAdd(id, Number(delta));
     D.npcLod = () => api.stats();
+    D.wege = () => ({ wege: api.wege(), jacke: api.jackePatches() });
     return api;
   },
 };
