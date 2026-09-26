@@ -336,12 +336,13 @@ export function BlattDokument({ blatt, opt }: { blatt: Blatt; opt?: BlattOptione
   )
 }
 
-/** Mehrere Blätter in einer Datei (z. B. eine Themenmappe). */
-export function MappeDokument({ blaetter, opt, titel }: { blaetter: { blatt: Blatt; nr?: string }[]; opt?: BlattOptionen; titel: string }) {
+/** Mehrere Blätter in einer Datei (z. B. eine Themenmappe). Jedes Blatt in seiner Sprache (sonst opt.sprache). */
+export function MappeDokument({ blaetter, opt, titel }: { blaetter: { blatt: Blatt; nr?: string; sprache?: Sprache }[]; opt?: BlattOptionen; titel: string }) {
+  const fr = blaetter.length > 0 && blaetter.every((x) => (x.sprache ?? opt?.sprache) === 'fr')
   return (
-    <Document title={titel} author="CDSE Toolbox" creator="CDSE Toolbox" producer="CDSE Toolbox" language={opt?.sprache === 'fr' ? 'fr' : 'de'}>
-      {blaetter.map(({ blatt, nr }) => (
-        <BlattSeiten key={blatt.id} blatt={blatt} opt={{ ...opt, nr }} />
+    <Document title={titel} author="CDSE Toolbox" creator="CDSE Toolbox" producer="CDSE Toolbox" language={fr ? 'fr' : 'de'}>
+      {blaetter.map(({ blatt, nr, sprache }) => (
+        <BlattSeiten key={blatt.id} blatt={blatt} opt={{ ...opt, nr, sprache: sprache ?? opt?.sprache }} />
       ))}
     </Document>
   )

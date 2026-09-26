@@ -66,26 +66,36 @@ export default function App() {
 
   // Links vom Hub (oder zurück/vor im Browser)
   useEffect(() => {
-    function onHash() {
-      const s = seiteAusHash(window.location.hash)
+    function onHash(e: HashChangeEvent) {
+      // Der Hash des Links selbst: die Seiten halten den Hash aktuell und können ihn schon umgeschrieben haben
+      const hash = new URL(e.newURL).hash
+      const s = seiteAusHash(hash)
       if (s) setSeite(s)
       if (s === 'blaetter') {
-        setBlattFilter(filterAusHash(window.location.hash))
-        setStartBlatt(hashParameter(window.location.hash).get('blatt'))
+        setBlattFilter(filterAusHash(hash))
+        setStartBlatt(hashParameter(hash).get('blatt'))
       }
     }
     window.addEventListener('hashchange', onHash)
     return () => window.removeEventListener('hashchange', onHash)
   }, [])
 
-  const wechseln = useCallback((s: Seite) => {
-    setSeite(s)
-    setStartBlatt(null)
-    if (s === 'team') history.replaceState(null, '', '#team')
-    else if (s === 'kurs') history.replaceState(null, '', '#kurs')
-    else if (s === 'blaetter') history.replaceState(null, '', window.location.pathname + window.location.search)
-    window.scrollTo({ top: 0 })
-  }, [])
+  const wechseln = useCallback(
+    (s: Seite) => {
+      // Klick auf den offenen Reiter „Skills-Kurs“: zurück zur Übersicht (wie „‹ Jahresweg“, mit Verlaufseintrag)
+      if (s === 'kurs' && seite === 'kurs' && window.location.hash !== '#kurs') {
+        window.location.hash = 'kurs'
+        return
+      }
+      setSeite(s)
+      setStartBlatt(null)
+      // #kurs=… schreibt der Kurs selbst (die zuletzt offene Einheit bleibt)
+      if (s === 'team') history.replaceState(null, '', '#team')
+      else if (s === 'blaetter') history.replaceState(null, '', window.location.pathname + window.location.search)
+      window.scrollTo({ top: 0 })
+    },
+    [seite],
+  )
 
   const zuBlaettern = useCallback((codes: string[]) => {
     setBlattFilter({ ...leererBlattFilter, eldib: codes })
@@ -94,8 +104,10 @@ export default function App() {
     window.scrollTo({ top: 0 })
   }, [])
   const zuEinheiten = useCallback((codes: string[]) => {
-    window.location.hash = '#eldib=' + codes.map(encodeURIComponent).join(',') + '&seite=einheiten'
-    setSeite('einheiten')
+    // Seite und Ziele wechseln zusammen beim hashchange (hier und in „Einheiten“)
+    const h = '#eldib=' + codes.map(encodeURIComponent).join(',') + '&seite=einheiten'
+    if (window.location.hash !== h) window.location.hash = h
+    else setSeite('einheiten')
   }, [])
 
   const reiter: [Seite, string, string, number][] = [

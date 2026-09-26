@@ -31,6 +31,14 @@ export function dismissToast(id: number): void {
   }
 }
 
+/** Offene Hinweise neu setzen (z. B. wenn die Mappe-Leiste erscheint oder verschwindet). */
+export function repositionToasts(): void {
+  if (list.length) {
+    list = [...list]
+    emit()
+  }
+}
+
 export function useToasts(): ToastMsg[] {
   return useSyncExternalStore(
     (cb) => {

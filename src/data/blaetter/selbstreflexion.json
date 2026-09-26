@@ -9,6 +9,7 @@
     "dauer": "30–45 Min.",
     "eldib": ["K-26", "K-33", "SOZ-40", "V-32"],
     "schlagworte": ["Bedürfnisse", "Selbstwahrnehmung", "Wohlbefinden", "Selbstfürsorge", "Wenn-dann-Plan"],
+    "verwandt": ["werte-glaeser", "lebensnetz", "tag-in-24-stunden"],
     "bild": "icon:cup",
     "de": {
       "titel": "Meine Bedürfnis-Gläser",
@@ -210,6 +211,7 @@
     "dauer": "30–40 Min.",
     "eldib": ["SOZ-40", "V-33", "V-32", "K-15"],
     "schlagworte": ["Lebensbereiche", "Zufriedenheit", "Balance", "Ziele", "WOOP"],
+    "verwandt": ["beduerfnis-glaeser", "einfluss-kreise", "werte-glaeser"],
     "bild": "icon:target",
     "de": {
       "titel": "Mein Lebensnetz",
@@ -342,6 +344,7 @@
     "dauer": "täglich 2 Min., Auswertung 25 Min.",
     "eldib": ["K-26", "V-29", "V-33", "SOZ-36"],
     "schlagworte": ["Stimmung", "Energie", "Wochenrückblick", "Selbstbeobachtung", "Muster erkennen"],
+    "verwandt": ["tag-in-24-stunden", "beduerfnis-glaeser"],
     "bild": "icon:mood-smile",
     "de": {
       "titel": "Meine Woche als Kurve",
@@ -468,6 +471,7 @@
     "dauer": "40–50 Min.",
     "eldib": ["K-15", "K-18", "SOZ-24", "SOZ-40"],
     "schlagworte": ["Lebenslinie", "Biografie", "Kraftquellen", "Resilienz", "Identität"],
+    "verwandt": ["werte-glaeser", "einfluss-kreise"],
     "bild": "icon:route",
     "de": {
       "titel": "Meine Lebenslinie",
@@ -590,6 +594,7 @@
     "dauer": "30–40 Min.",
     "eldib": ["V-28", "V-32", "V-23", "KOG-61"],
     "schlagworte": ["Sorgen", "Einfluss", "Gelassenheit", "Problemlösen", "Hilfe holen"],
+    "verwandt": ["lebensnetz", "werte-glaeser", "wochen-kurve"],
     "bild": "icon:hand-grab",
     "de": {
       "titel": "Was liegt in meiner Hand?",
@@ -744,6 +749,7 @@
     "dauer": "35–45 Min.",
     "eldib": ["SOZ-35", "SOZ-39", "K-34", "KOG-55"],
     "schlagworte": ["Werte", "Entscheidungen", "Identität", "Zivilcourage", "Wenn-dann-Plan"],
+    "verwandt": ["beduerfnis-glaeser", "einfluss-kreise", "lebenslinie"],
     "bild": "icon:compass",
     "de": {
       "titel": "Meine Werte-Gläser",
@@ -919,6 +925,7 @@
     "dauer": "30–40 Min.",
     "eldib": ["V-29", "V-32", "V-33"],
     "schlagworte": ["Tagesablauf", "Schlaf", "Bildschirmzeit", "Bewegung", "Balance"],
+    "verwandt": ["monat-in-farben", "wochen-kurve", "beduerfnis-glaeser"],
     "bild": "icon:clock",
     "de": {
       "titel": "Mein Tag in 24 Stunden",
@@ -1058,6 +1065,7 @@
     "dauer": "täglich 1 Min., Auswertung 25 Min.",
     "eldib": ["K-26", "K-16", "V-33", "SOZ-36"],
     "schlagworte": ["Stimmung", "Gefühle", "Stimmungskalender", "Selbstbeobachtung", "Muster erkennen"],
+    "verwandt": ["tag-in-24-stunden", "wochen-kurve"],
     "bild": "icon:palette",
     "de": {
       "titel": "Mein Monat in Farben",

@@ -5,15 +5,19 @@ import { Icon } from './Icon'
 /** Hinweise unten in der Mitte (wie im Hub), für Screenreader angesagt. Ist
  *  gerade ein Dialog offen, erscheinen sie in diesem Dialog – sonst lägen sie
  *  unter der obersten Ebene (top layer) des modalen Dialogs verborgen – und
- *  zwar über dessen Fußleiste, damit die Knöpfe dort klickbar bleiben. */
+ *  zwar über dessen Fußleiste, damit die Knöpfe dort klickbar bleiben. Ebenso
+ *  stehen sie über der Mappe-Leiste der Arbeitsblätter, solange diese zu sehen ist. */
 export function Toaster() {
   const toasts = useToasts()
   const host = typeof document !== 'undefined' ? document.querySelector('dialog[open]') : null
+  const leiste = !host && toasts.length ? document.querySelector('.bl-mappe') : null
+  const ueberLeiste = leiste && leiste.getClientRects().length ? Math.ceil(window.innerHeight - leiste.getBoundingClientRect().top) + 10 : 0
   const list = (
     <div
       className={`pointer-events-none fixed inset-x-0 z-[60] flex flex-col items-center gap-2 px-4 ${
-        host ? 'bottom-[84px]' : 'bottom-5'
+        host ? 'bottom-[84px]' : ueberLeiste ? '' : 'bottom-5'
       }`}
+      style={ueberLeiste ? { bottom: ueberLeiste } : undefined}
       role="status"
       aria-live="polite"
     >

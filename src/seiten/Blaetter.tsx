@@ -9,8 +9,9 @@ import { bildZeichnung, iconZeichnung, palette } from '../blatt/zeichnung'
 import { ZeichnungSvg } from '../blatt/ZeichnungSvg'
 import { eldibGoalById } from '../data/taxonomy'
 import { domainStyle, goalText } from '../lib/ui'
+import { tokenMatch } from '../lib/filter'
 import { loadPdfModule } from '../lib/loadPdf'
-import { toast } from '../lib/toast'
+import { repositionToasts, toast } from '../lib/toast'
 import type { Bewertungen } from '../lib/useBewertungen'
 import { BewertungKurz, BewertungVoll } from '../components/Bewertung'
 import { Dialog } from '../components/Dialog'
@@ -30,6 +31,11 @@ type Sortierung = 'nummer' | 'bewertung' | 'titel'
 
 const SOZIAL: Record<string, string> = { einzeln: 'Einzeln', gruppe: 'Kleingruppe', klasse: 'Klasse' }
 
+/** „1 Blatt“, „3 Blätter“ (auch im Skills-Kurs). */
+export function blaetterText(n: number): string {
+  return n === 1 ? '1 Blatt' : `${n} Blätter`
+}
+
 function norm(s: string) {
   return s
     .toLowerCase()
@@ -48,7 +54,7 @@ function trifft(b: NummeriertesBlatt, f: BlattFilter): boolean {
     const text = norm(
       [b.nr, b.id, b.de.titel, b.de.untertitel ?? '', b.fr?.titel ?? '', b.schlagworte.join(' '), themaLabel(b.bereich, b.thema), bereichById.get(b.bereich)?.de ?? '', b.eldib.join(' '), b.stufen.join(' ')].join(' '),
     )
-    if (!q.split(/\s+/).every((w) => text.includes(w))) return false
+    if (!q.split(/\s+/).every((w) => tokenMatch(text, w))) return false
   }
   return true
 }
@@ -156,7 +162,7 @@ function Vorschau({ b, sprache, lehrer }: { b: NummeriertesBlatt; sprache: Sprac
 }
 
 /** Detail eines Blatts (Vorschau, Download, Bewertung). Auch vom Skills-Kurs benutzt – dort ohne Mappe. */
-export function BlattDetail({ b, bew, onSchliessen, onOeffnen, gewaehlt, onWaehlen }: { b: NummeriertesBlatt; bew: Bewertungen; onSchliessen: () => void; onOeffnen: (id: string) => void; gewaehlt?: boolean; onWaehlen?: () => void }) {
+export function BlattDetail({ b, bew, onSchliessen, onOeffnen, gewaehlt, onWaehlen }: { b: NummeriertesBlatt; bew: Bewertungen; onSchliessen: () => void; onOeffnen: (id: string) => void; gewaehlt?: boolean; onWaehlen?: (sprache: Sprache) => void }) {
   const [sprache, setSprache] = useState<Sprache>('de')
   const [laedt, setLaedt] = useState<string | null>(null)
   const bereich = bereichById.get(b.bereich)!
@@ -185,7 +191,7 @@ export function BlattDetail({ b, bew, onSchliessen, onOeffnen, gewaehlt, onWaehl
           <div className="text-[12.5px] font-semibold text-muted">
             <span style={{ color: bereich.farben.tief }}>{bereich.de}</span> · {themaLabel(b.bereich, b.thema)} · Arbeitsblatt {b.nr}
           </div>
-          <h2 id="bl-detail-titel" className="disp truncate text-[20px] leading-tight">
+          <h2 id="bl-detail-titel" className="disp text-[20px] leading-tight break-words">
             {inhalt.titel}
           </h2>
         </div>
@@ -224,7 +230,7 @@ export function BlattDetail({ b, bew, onSchliessen, onOeffnen, gewaehlt, onWaehl
               </button>
             </div>
             {onWaehlen ? (
-              <button type="button" className="btn btn-quiet justify-center" onClick={onWaehlen}>
+              <button type="button" className="btn btn-quiet justify-center" onClick={() => onWaehlen(sprache)}>
                 <Icon name={gewaehlt ? 'check' : 'layers'} />
                 {gewaehlt ? 'In der Mappe' : 'In die Mappe legen'}
               </button>
@@ -314,14 +320,18 @@ export function Blaetter({
   const [filter, setFilter] = useState<BlattFilter>(startFilter)
   const [sort, setSort] = useState<Sortierung>('nummer')
   const [offen, setOffen] = useState<NummeriertesBlatt | null>(() => (startBlatt ? (blattById.get(startBlatt) ?? null) : null))
-  const [mappe, setMappe] = useState<string[]>([])
+  // Blätter in der Mappe, je mit der Sprache, in der sie gewählt wurden (ohne Angabe: Deutsch)
+  const [mappe, setMappe] = useState<{ id: string; sprache?: Sprache }[]>([])
   const [laedt, setLaedt] = useState<string | null>(null)
   const [filterOffen, setFilterOffen] = useState(false)
   const suchRef = useRef<HTMLInputElement>(null)
 
   useEffect(() => setFilter(startFilter), [startFilter])
   useEffect(() => {
-    if (startBlatt) setOffen(blattById.get(startBlatt) ?? null)
+    if (!startBlatt) return
+    const b = blattById.get(startBlatt)
+    setOffen(b ?? null)
+    if (!b) toast(`Das Arbeitsblatt „${startBlatt}“ wurde nicht gefunden.`, 'error')
   }, [startBlatt])
 
   const q = useDeferredValue(filter)
@@ -329,6 +339,12 @@ export function Blaetter({
     const l = alleBlaetter.filter((b) => trifft(b, q))
     if (sort === 'titel') l.sort((a, b) => a.de.titel.localeCompare(b.de.titel, 'de'))
     else if (sort === 'bewertung') l.sort((a, b) => (bew.gesamt.get(b.id)?.schnitt ?? bew.eigene[b.id] ?? 0) - (bew.gesamt.get(a.id)?.schnitt ?? bew.eigene[a.id] ?? 0))
+    else if (q.suche.trim()) {
+      // Beim Suchen: Treffer im Titel zuerst, sonst in der Reihenfolge der Bereiche
+      const woerter = norm(q.suche.trim()).split(/\s+/)
+      const imTitel = new Map(l.map((b) => [b.id, woerter.filter((w) => tokenMatch(norm(b.de.titel + ' ' + (b.fr?.titel ?? '')), w)).length]))
+      l.sort((a, b) => (imTitel.get(b.id) ?? 0) - (imTitel.get(a.id) ?? 0))
+    }
     return l
   }, [q, sort, bew.gesamt, bew.eigene])
 
@@ -337,8 +353,12 @@ export function Blaetter({
   const set = (p: Partial<BlattFilter>) => setFilter((f) => ({ ...f, ...p }))
   const aktivZahl = (filter.bereich ? 1 : 0) + (filter.thema ? 1 : 0) + filter.stufen.length + (filter.nurFr ? 1 : 0) + filter.eldib.length + (filter.suche ? 1 : 0)
 
-  function umschalten(id: string) {
-    setMappe((m) => (m.includes(id) ? m.filter((x) => x !== id) : [...m, id]))
+  const inMappe = (id: string) => mappe.some((x) => x.id === id)
+  // Offene Hinweise über die Mappe-Leiste heben (bzw. wieder senken), wenn sie erscheint oder verschwindet
+  const mitLeiste = aktiv && mappe.length > 0
+  useEffect(() => repositionToasts(), [mitLeiste])
+  function umschalten(id: string, sprache?: Sprache) {
+    setMappe((m) => (m.some((x) => x.id === id) ? m.filter((x) => x.id !== id) : [...m, { id, sprache }]))
   }
   async function laden(b: NummeriertesBlatt) {
     setLaedt(b.id)
@@ -352,12 +372,15 @@ export function Blaetter({
     }
   }
   async function mappeLaden(lehrer: boolean) {
-    const liste = mappe.map((id) => blattById.get(id)).filter(Boolean) as NummeriertesBlatt[]
+    const liste = mappe.flatMap(({ id, sprache }) => {
+      const b = blattById.get(id)
+      return b ? [{ blatt: b, nr: b.nr, sprache }] : []
+    })
     if (!liste.length) return
-    setLaedt('mappe')
+    setLaedt(lehrer ? 'mappe:lehrer' : 'mappe')
     try {
       const m = await loadPdfModule()
-      toast(`Mappe erstellt: ${await m.downloadMappe(liste.map((b) => ({ blatt: b, nr: b.nr })), 'Arbeitsblaetter', { lehrer })}`, 'ok')
+      toast(`Mappe erstellt: ${await m.downloadMappe(liste, 'Arbeitsblätter', { lehrer })}`, 'ok')
     } catch (e) {
       toast(e instanceof Error ? e.message : 'Mappe konnte nicht erstellt werden.', 'error')
     } finally {
@@ -422,7 +445,7 @@ export function Blaetter({
             <h1 className="disp text-[26px] leading-tight text-ink sm:text-[30px]">Arbeitsblätter</h1>
             <p className="mt-1 text-[14px] text-muted" aria-live="polite">
               <b className="font-semibold text-ink">{treffer.length}</b>
-              {treffer.length !== alleBlaetter.length ? ` von ${alleBlaetter.length}` : ''} Blätter · Spielschule bis Sekundarschule · jedes mit Seite für die Lehrperson
+              {treffer.length !== alleBlaetter.length ? ` von ${alleBlaetter.length} Blättern` : ' Blätter'} · Spielschule bis Sekundarschule · jedes mit Seite für die Lehrperson
             </p>
           </div>
           <div className="flex flex-wrap items-center gap-2">
@@ -453,7 +476,7 @@ export function Blaetter({
             </span>
             <span className="min-w-0">
               <b>Alle</b>
-              <span>{zaehle({ bereich: '', thema: '' })} Blätter</span>
+              <span>{blaetterText(zaehle({ bereich: '', thema: '' }))}</span>
             </span>
           </button>
           {BEREICHE.map((br) => {
@@ -464,8 +487,9 @@ export function Blaetter({
                   <ZeichnungSvg z={{ ...iconZeichnung(br.icon), w: 1.6 }} p={{ ...palette(br.farben), tinte: br.farben.tief }} />
                 </span>
                 <span className="min-w-0">
-                  <b>{br.de}</b>
-                  <span>{zaehle({ bereich: br.id, thema: '' })} Blätter</span>
+                  {/* weiches Trennzeichen: sonst ragt „Selbstorganisation“ aus schmalen Kacheln */}
+                  <b>{br.de.replace('Selbstorganisation', 'Selbst\u00ADorganisation')}</b>
+                  <span>{blaetterText(zaehle({ bereich: br.id, thema: '' }))}</span>
                 </span>
               </button>
             )
@@ -519,7 +543,7 @@ export function Blaetter({
             ) : (
               <div className="grid grid-cols-[repeat(auto-fill,minmax(min(100%,280px),1fr))] gap-4">
                 {treffer.map((b) => (
-                  <BlattKarte key={b.id} b={b} bew={bew} gewaehlt={mappe.includes(b.id)} onOeffnen={() => setOffen(b)} onWaehlen={() => umschalten(b.id)} onLaden={() => laden(b)} laedt={laedt === b.id} />
+                  <BlattKarte key={b.id} b={b} bew={bew} gewaehlt={inMappe(b.id)} onOeffnen={() => setOffen(b)} onWaehlen={() => umschalten(b.id)} onLaden={() => laden(b)} laedt={laedt === b.id} />
                 ))}
               </div>
             )}
@@ -533,11 +557,12 @@ export function Blaetter({
           <span>
             <b>{mappe.length}</b> {mappe.length === 1 ? 'Blatt' : 'Blätter'} in der Mappe
           </span>
-          <button type="button" className="btn btn-sm btn-primary" disabled={laedt === 'mappe'} onClick={() => mappeLaden(false)}>
+          <button type="button" className="btn btn-sm btn-primary" disabled={laedt === 'mappe' || laedt === 'mappe:lehrer'} onClick={() => mappeLaden(false)}>
             {laedt === 'mappe' ? <span className="spin" /> : <Icon name="download" />}
             Als ein PDF
           </button>
-          <button type="button" className="btn btn-sm" disabled={laedt === 'mappe'} onClick={() => mappeLaden(true)}>
+          <button type="button" className="btn btn-sm" disabled={laedt === 'mappe' || laedt === 'mappe:lehrer'} onClick={() => mappeLaden(true)}>
+            {laedt === 'mappe:lehrer' ? <span className="spin" /> : null}
             Mit Lehrerseiten
           </button>
           <button type="button" className="icon-btn" onClick={() => setMappe([])} aria-label="Mappe leeren" title="Mappe leeren">
@@ -546,7 +571,7 @@ export function Blaetter({
         </div>
       )}
 
-      {offen && <BlattDetail key={offen.id} b={offen} bew={bew} onSchliessen={() => setOffen(null)} onOeffnen={(id) => setOffen(blattById.get(id) ?? null)} gewaehlt={mappe.includes(offen.id)} onWaehlen={() => umschalten(offen.id)} />}
+      {offen && <BlattDetail key={offen.id} b={offen} bew={bew} onSchliessen={() => setOffen(null)} onOeffnen={(id) => setOffen(blattById.get(id) ?? null)} gewaehlt={inMappe(offen.id)} onWaehlen={(sprache) => umschalten(offen.id, sprache)} />}
 
       {filterOffen && (
         <Dialog onClose={() => setFilterOffen(false)} labelledBy="bl-filter-titel" className="dlg-mid">
@@ -563,7 +588,7 @@ export function Blaetter({
           </div>
           <footer className="dlg-foot">
             <button type="button" className="btn btn-primary w-full" onClick={() => setFilterOffen(false)}>
-              {treffer.length} Blätter anzeigen
+              {blaetterText(treffer.length)} anzeigen
             </button>
           </footer>
         </Dialog>

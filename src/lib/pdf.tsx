@@ -4,7 +4,7 @@ import type { Material } from '../types/material'
 import { slug } from './slug'
 import { BlattDokument, MappeDokument, type BlattOptionen } from '../blatt/pdf/BlattDokument'
 import { registriereSchriften } from '../blatt/pdf/stil'
-import type { Blatt } from '../blatt/typen'
+import type { Blatt, Sprache } from '../blatt/typen'
 import kinderRegular from '../assets/fonts/pdf/Kinderschrift-Regular.ttf?url'
 import kinderBold from '../assets/fonts/pdf/Kinderschrift-Bold.ttf?url'
 import interRegular from '../assets/fonts/pdf/Inter-Regular.ttf?url'
@@ -78,10 +78,14 @@ export async function downloadBlatt(blatt: Blatt, opt: BlattOptionen = {}): Prom
   return name
 }
 
-/** Mehrere Blätter als eine Mappe. */
-export async function downloadMappe(blaetter: { blatt: Blatt; nr?: string }[], titel: string, opt: BlattOptionen = {}): Promise<string> {
+/** Mehrere Blätter als eine Mappe (Sprache je Blatt, sonst aus opt). Dateiname wie bei einem Blatt:
+ *  _FR (_DE-FR, wenn gemischt) und _mit-Lehrerseiten. */
+export async function downloadMappe(blaetter: { blatt: Blatt; nr?: string; sprache?: Sprache }[], titel: string, opt: BlattOptionen = {}): Promise<string> {
   schriften()
-  const name = `Mappe_${slug(titel) || 'Arbeitsblaetter'}${opt.sprache === 'fr' ? '_FR' : ''}.pdf`
+  const sprachen = new Set(blaetter.map((x) => x.sprache ?? opt.sprache ?? 'de'))
+  const sp = sprachen.has('fr') ? (sprachen.size > 1 ? '_DE-FR' : '_FR') : ''
+  const teil = opt.schueler === false ? '_Lehrerseiten' : opt.lehrer === false ? '' : '_mit-Lehrerseiten'
+  const name = `Mappe_${slug(titel) || 'Arbeitsblaetter'}${sp}${teil}.pdf`
   saveBlob(await pdf(<MappeDokument blaetter={blaetter} titel={titel} opt={opt} />).toBlob(), name)
   return name
 }
