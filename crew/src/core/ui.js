@@ -97,49 +97,83 @@
     return { el, get: () => v, set };
   }
 
-  /* Strichliste: Anzahl pro Option */
+  /* Strichliste: Anzahl pro Option. Die ganze Kachel ist ein Tipp-Ziel (+1), „−“ korrigiert.
+     o.onFull(counts) meldet sich, sobald so viele gezählt sind, wie Leute mitspielen. */
   function tally(options, o) {
+    const oo = o || {};
     const counts = Object.fromEntries(options.map((x) => [x.id, 0]));
-    const max = (o && o.max) || 99;
+    const max = oo.max || 99;
     const total = () => Object.values(counts).reduce((a, b) => a + b, 0);
     const el = h('div', { class: 'tally' });
     options.forEach((opt) => {
       const num = h('div', { class: 't-count' }, '0');
+      let item;
       const set = (n) => {
-        const others = total() - counts[opt.id];
+        const before = counts[opt.id];
+        const others = total() - before;
         counts[opt.id] = Math.max(0, Math.min(n, max - others));
         num.textContent = String(counts[opt.id]);
-        if (o && o.onChange) o.onChange(counts, total());
+        if (counts[opt.id] > before) {
+          CREW.sound.play('tick');
+          item.classList.remove('bump'); void item.offsetWidth; item.classList.add('bump');
+        }
+        el.classList.toggle('full', total() >= max);
+        if (oo.onChange) oo.onChange(counts, total());
+        if (oo.onFull && counts[opt.id] > before && total() >= max) oo.onFull({ ...counts });
       };
-      el.appendChild(h('div', { class: 't-item' },
+      const stop = (fn) => (e) => { if (e) e.stopPropagation(); fn(); };
+      item = h('div', { class: 't-item tap', role: 'button', tabindex: '0', 'aria-label': opt.label + ': eins mehr', 'data-id': opt.id },
         opt.icon || null,
         h('div', { class: 't-label' }, opt.label),
         num,
         h('div', { class: 't-ctrl' },
-          iconBtn('minus', () => set(counts[opt.id] - 1), { label: opt.label + ' weniger' }),
-          iconBtn('plus', () => set(counts[opt.id] + 1), { label: opt.label + ' mehr' }))));
+          iconBtn('minus', stop(() => set(counts[opt.id] - 1)), { label: opt.label + ' weniger' }),
+          iconBtn('plus', stop(() => set(counts[opt.id] + 1)), { label: opt.label + ' mehr' })));
+      item.addEventListener('click', () => set(counts[opt.id] + 1));
+      item.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); set(counts[opt.id] + 1); } });
+      el.appendChild(item);
     });
     return { el, get: () => ({ ...counts }), total };
   }
 
-  /* Gezeigte Zahlen schnell eintippen */
+  /* Gezeigte Zahlen schnell eintippen. o.onFull(values), sobald o.count Zahlen da sind. */
   function valuePad(o) {
     const values = [];
     const chips = h('div', { class: 'valuechips', 'aria-live': 'polite' });
     const render = () => {
       clear(chips);
       if (!values.length) chips.appendChild(h('span', { class: 'muted' }, o.placeholder || 'Tippe die gezeigten Zahlen ein …'));
-      values.forEach((v) => chips.appendChild(h('span', { class: 'v' }, String(v))));
+      values.forEach((v) => chips.appendChild(h('span', { class: 'v pop' }, String(v))));
       if (o.onChange) o.onChange(values.slice());
     };
     const pad = h('div', { class: 'valuepad' });
     for (let n = o.min || 0; n <= (o.max != null ? o.max : 10); n++) {
-      pad.appendChild(btn(String(n), () => { if (!o.count || values.length < o.count) { values.push(n); render(); } }, { variant: 'ghost' }));
+      pad.appendChild(btn(String(n), () => {
+        if (!o.count || values.length < o.count) {
+          values.push(n); render();
+          if (o.onFull && o.count && values.length === o.count) o.onFull(values.slice());
+        }
+      }, { variant: 'ghost' }));
     }
     const undo = btn('Zurück', () => { values.pop(); render(); }, { variant: 'ghost', small: true, icon: 'undo' });
     render();
     const el = h('div', { class: 'stack' }, chips, pad, h('div', { class: 'row end' }, undo));
     return { el, get: () => values.slice() };
+  }
+
+  /* Automatisch weiter, wenn alle gezählt sind: klickt nach kurzer Pause den Knopf mit dieser id.
+     check() prüft vorher, ob immer noch alles voll ist (falls die Lehrkraft korrigiert hat). */
+  function autoNext(id, check, ms) {
+    setTimeout(() => {
+      if (check && !check()) return;
+      const b = document.getElementById(id);
+      if (b && !b.disabled && b.isConnected) b.click();
+    }, ms || 600);
+  }
+
+  /* „Scan läuft …“-Balken: zeigt, dass das Spiel gerade auf die Antworten wartet */
+  function scanBar(text) {
+    return h('div', { class: 'scanbar', role: 'status' }, h('span', { class: 'scanbar-t' }, text || 'Scan läuft …'), h('i', { 'aria-hidden': 'true' }));
   }
 
   /* Globale Pause: Timer (und Module, die SK/CREW.isPaused() abfragen) warten */
@@ -183,7 +217,8 @@
   /* 3 – 2 – 1 – Zeigt her! */
   async function threeTwoOne(text) {
     const root = overlays();
-    const ov = h('div', { class: 'overlay', style: { background: 'color-mix(in srgb, var(--ink) 55%, transparent)' } });
+    // Klicks gehen durch: X-Karte, Pause und Start bleiben erreichbar
+    const ov = h('div', { class: 'overlay', style: { background: 'color-mix(in srgb, var(--ink) 55%, transparent)', pointerEvents: 'none' } });
     root.appendChild(ov);
     for (const n of ['3', '2', '1']) {
       clear(ov);
@@ -270,12 +305,12 @@
 
   /* Hinweis, welche Antwort-Karte die Jugendlichen öffnen sollen */
   const PADDLES = {
-    wetter: 'Wetter', zahl: 'Zahl 0–10', janein: 'Ja / Nein', abcd: 'A B C D', team: 'Team', emo: 'Gefühl',
+    wetter: 'Wetter', zahl: 'Zahl 0–10', janein: 'Ja / Nein', abcd: 'A B C D', emo: 'Gefühl',
   };
   function paddleHint(type, extra) {
     return h('div', { class: 'paddle-hint' }, CREW.icon('phone', 22), h('span', null, 'Antwort-Karte: ', h('b', null, PADDLES[type] || type), extra ? ' · ' + extra : ''));
   }
 
   CREW.isPaused = isPaused;
-  CREW.ui = { setPaused, isPaused, revealRow, screen, btn, iconBtn, speakBtn, say, choice, next, stepper, tally, valuePad, timer, threeTwoOne, modal, confirm, toast, confetti, countUp, paddleHint, PADDLES, stage, overlays };
+  CREW.ui = { setPaused, isPaused, revealRow, screen, btn, iconBtn, speakBtn, say, choice, next, stepper, tally, valuePad, autoNext, scanBar, timer, threeTwoOne, modal, confirm, toast, confetti, countUp, paddleHint, PADDLES, stage, overlays };
 })();

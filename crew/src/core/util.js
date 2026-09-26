@@ -91,6 +91,8 @@
       disabled: [],       // ausgeschaltete Missionen
     },
     solo: {},             // Bestwerte pro Solo-Spiel (ohne Namen)
+    hq: { owned: [] },    // Crew-HQ: freigeschaltete Teile (Nummern 1–12), von der Crew gewählt
+    records: {},          // Crew-Rekord (beste Punkte) pro Mission – nur für die ganze Crew
   });
 
   function deepMerge(base, extra) {
@@ -136,8 +138,9 @@
   }
 
   /* ---------- Levels der Crew-Basis ---------- */
-  // Schnelle erste Erfolge, später langsamer (ca. 8 Energie pro Tag).
-  const LEVELS = [0, 15, 35, 60, 90, 125, 165, 210, 260, 315, 375, 440, 510];
+  // Schnelle erste Erfolge: Session 1 schaltet immer Level 1 frei, in Woche 1 fast jede Session etwas,
+  // später alle 3–4 Sessions (ca. 10 Wochen pro Saison).
+  const LEVELS = [0, 6, 18, 34, 54, 78, 106, 138, 174, 214, 258, 306, 358];
   function levelInfo(energy) {
     let lvl = 0;
     for (let i = 0; i < LEVELS.length; i++) if (energy >= LEVELS[i]) lvl = i;

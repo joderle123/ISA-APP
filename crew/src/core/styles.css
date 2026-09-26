@@ -418,6 +418,16 @@ p { margin: 0; }
 .tally .t-count { font-family: var(--font-display); font-size: 2.2em; font-variant-numeric: tabular-nums; }
 .tally .t-label { font-weight: 600; text-align: center; }
 .tally .t-ctrl { display: flex; gap: 8px; }
+.tally .t-item.tap { cursor: pointer; user-select: none; -webkit-user-select: none; touch-action: manipulation; transition: transform 90ms ease; }
+.tally .t-item.tap:active { transform: scale(.97); }
+.tally .t-item.bump .t-count { animation: tally-bump 260ms cubic-bezier(.2,1.6,.4,1); }
+.tally.full .t-item { border-color: var(--good); }
+@keyframes tally-bump { 0% { transform: scale(1); } 45% { transform: scale(1.45); color: var(--yellow); } 100% { transform: scale(1); } }
+.scanbar { position: relative; overflow: hidden; display: flex; align-items: center; gap: 10px; padding: 6px 14px; border-radius: 999px; border: 2px solid var(--line); background: var(--panel); font-weight: 700; font-size: 0.9em; width: fit-content; }
+.scanbar i { position: absolute; inset: 0; background: linear-gradient(90deg, transparent 0%, color-mix(in srgb, var(--good) 45%, transparent) 50%, transparent 100%); transform: translateX(-100%); animation: scan-sweep 1.6s linear infinite; }
+.scanbar-t { position: relative; }
+@keyframes scan-sweep { to { transform: translateX(100%); } }
+@media (prefers-reduced-motion: reduce) { .scanbar i { animation: none; opacity: .4; transform: none; } }
 
 .valuepad { display: grid; grid-template-columns: repeat(auto-fit, minmax(64px, 1fr)); gap: 10px; }
 .valuepad .btn { font-size: 1.4em; min-height: 64px; padding: 10px; }
