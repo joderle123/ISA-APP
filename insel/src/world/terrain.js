@@ -16,6 +16,8 @@ const PAL = {
   basalt: C('#4b3f3d'), basaltDark: C('#352b2b'), ash: C('#7a6358'),
   lavaRock: C('#5b2618'),
   heather: C('#a77fc8'), meadow: C('#f0cf55'), moss: C('#5d8f3a'),
+  peat: C('#4a3f2e'), peatDark: C('#2f2820'), moorHeather: C('#8a5fb8'),
+  tideRock: C('#3f5f66'), tideAlgae: C('#3c8a6e'), mineral: C('#f1e4c8'), mineralWarm: C('#e7a86a'),
 };
 // Graspaletten pro Zone [hell, dunkel]
 const GRASS = {
@@ -26,6 +28,7 @@ const GRASS = {
   markt: [C('#c8dc5c'), C('#a6cf4c')],
   vulkan: [C('#93b54f'), C('#7c9c45')],
   leuchtturm: [C('#a4d563'), C('#83c052')],
+  moor: [C('#9aa64a'), C('#6b7a3a')],
   wild: [C('#8ccf4e'), C('#68b540')],
 };
 
@@ -37,6 +40,9 @@ export function createTerrain({ island, veil, quality }) {
   const tmp2 = new THREE.Color();
   const grassA = new THREE.Color(), grassB = new THREE.Color();
   const vol = FEATURES.volcano;
+  const moor = FEATURES.moor;
+  const tidePools = island.water ? island.water.byKind('gezeiten') : [];
+  const springs = island.water ? island.water.byKind('quelle') : [];
   const pads = Object.values(SITES).filter((s) => s.r > 0);
   // Ebene Plätze: 1 innerhalb des Pads, weich auslaufend
   function padWeight(x, z) {
@@ -94,10 +100,22 @@ export function createTerrain({ island, veil, quality }) {
       gl = smoothstep(vol.lavaLevel + 4.5, vol.lavaLevel - 0.5, h);
       return gl;
     }
+    const wMo = zw[ZONES.length - 1] || 0;   // Moor (letzte Zone)
     if (s === 'water') {
       const d = clamp(-h / 9, 0, 1);
       tmp.copy(PAL.under).lerp(PAL.underDeep, d);
+      // Gewässer über Meereshöhe: Torf dunkel, Quellen mineralisch hell, Teich moosig
+      const b = island.water ? island.water.bodyAt(cx, cz, 0.6) : null;
+      if (b && b.kind === 'moor') tmp.copy(PAL.peatDark).lerp(PAL.peat, 0.3 + rnd * 0.2);
+      else if (b && b.kind === 'quelle') tmp.copy(PAL.mineralWarm).lerp(PAL.mineral, clamp(1 - (b.level - h) / 1.2, 0, 1) * 0.8);
+      else if (b && b.kind === 'gezeiten') tmp.copy(PAL.tideRock).lerp(PAL.tideAlgae, rnd * 0.5);
       smoothness = 0.6;
+    } else if (s === 'moor') {
+      // Torfboden: dunkel, feucht, mit lila Heidefransen
+      const nm = island.noise.detail(cx / 6 + 70, cz / 6 - 30) * 0.5 + 0.5;
+      tmp.copy(PAL.peat).lerp(PAL.peatDark, nm * 0.5 + rnd * 0.15);
+      if (nm > 0.6) tmp.lerp(PAL.moorHeather, smoothstep(0.6, 0.85, nm) * 0.35);
+      smoothness = 0.5;
     } else if (s === 'sand') {
       tmp.copy(PAL.sandWet).lerp(PAL.sandDry, smoothstep(0.1, 1.1, h));
       tmp.lerp(PAL.sandWarm, (nz * 0.5 + 0.5) * 0.35);
@@ -146,7 +164,25 @@ export function createTerrain({ island, veil, quality }) {
       if (h < 3.4) tmp.lerp(PAL.sandWarm, smoothstep(3.4, 1.8, h) * 0.35);
       // steilere Flächen dunkler/felsiger
       tmp.lerp(PAL.rockDark, smoothstep(0.86, 0.74, ny) * 0.35);
+      // Moorrand: Gras wird zu Torf und lila Heide
+      if (wMo > 0.2) {
+        const dm = Math.hypot(cx - moor.x, cz - moor.z);
+        tmp.lerp(PAL.peat, smoothstep(moor.r + 4, moor.r - 6, dm) * 0.5 * wMo);
+        if (nh > 0.15) tmp.lerp(PAL.moorHeather, smoothstep(0.15, 0.55, nh) * 0.5 * wMo);
+      }
       smoothness = 0.12;
+    }
+    // Gezeitenbecken: dunkler, nasser Fels mit Algen auf der Schale
+    for (let i = 0; i < tidePools.length; i++) {
+      const b = tidePools[i];
+      const t = Math.hypot(cx - b.x, cz - b.z) / b.r;
+      if (t < 1.75 && s !== 'water') { const k = 1 - smoothstep(1.3, 1.75, t); tmp.lerp(PAL.tideRock, k * 0.85).lerp(PAL.tideAlgae, k * (0.15 + rnd * 0.3) * smoothstep(1.35, 0.95, t)); smoothness = Math.max(smoothness, 0.3); }
+    }
+    // Quellen: Mineralterrassen (hell, nach innen warm orange)
+    for (let i = 0; i < springs.length; i++) {
+      const b = springs[i];
+      const d = Math.hypot(cx - b.x, cz - b.z);
+      if (d < b.r + 6 && s !== 'water') { const k = smoothstep(b.r + 6, b.r + 1, d); tmp.lerp(PAL.mineral, k * 0.8).lerp(PAL.mineralWarm, k * smoothstep(b.r + 2, b.r - 0.5, d) * 0.7); smoothness = Math.max(smoothness, 0.6); }
     }
     // Plätze (Pads) und Wegränder: glatt und ruhig
     smoothness = Math.max(smoothness, pw, pathW * 0.9);

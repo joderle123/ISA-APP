@@ -217,6 +217,97 @@ function rockGeo(rnd, big) {
   return merge(parts);
 }
 
+// ---------- Neue Arten (WP11): Schilf, Moorbirke, Heide, Mangrove ----------
+function reedGeo(rnd) {
+  const pos = [], col = [], wind = [];
+  const stem = new THREE.Color('#6f8f3c'), stemDry = new THREE.Color('#b8a860'), head = new THREE.Color('#5a3a22');
+  const push = (x, y, z, c, w) => { pos.push(x, y, z); col.push(c.r, c.g, c.b); wind.push(w); };
+  const n = 9;
+  for (let k = 0; k < n; k++) {
+    const a = (k / n) * Math.PI * 2 + rnd() * 0.7, r = rnd() * 0.3;
+    const bx = Math.cos(a) * r, bz = Math.sin(a) * r;
+    const h = 1.3 + rnd() * 0.9;
+    const lean = 0.1 + rnd() * 0.25;
+    const w = 0.035 + rnd() * 0.02;
+    const px = -Math.sin(a) * w, pz = Math.cos(a) * w;
+    const tx = bx + Math.cos(a) * lean, tz = bz + Math.sin(a) * lean;
+    const c = rnd() < 0.35 ? stemDry : stem;
+    // Halm als langes Dreieck, zweite Fläche gedreht (sichtbar von allen Seiten)
+    push(bx - px, 0, bz - pz, c, 0); push(bx + px, 0, bz + pz, c, 0); push(tx, h, tz, c, 1);
+    push(bx - pz, 0, bz + px, c, 0); push(bx + pz, 0, bz - px, c, 0); push(tx, h, tz, c, 1);
+    // Kolben oben (brauner Zylinder aus 3 Flächen)
+    if (rnd() < 0.6) {
+      const y0 = h - 0.28, y1 = h - 0.02, R = 0.035;
+      for (let f = 0; f < 3; f++) {
+        const a0 = (f / 3) * Math.PI * 2, a1 = ((f + 1) / 3) * Math.PI * 2;
+        const x0 = tx + Math.cos(a0) * R, z0 = tz + Math.sin(a0) * R, x1 = tx + Math.cos(a1) * R, z1 = tz + Math.sin(a1) * R;
+        push(x0, y0, z0, head, 0.85); push(x1, y0, z1, head, 0.85); push(x0, y1, z0, head, 1);
+        push(x1, y0, z1, head, 0.85); push(x1, y1, z1, head, 1); push(x0, y1, z0, head, 1);
+      }
+    }
+  }
+  const g = new THREE.BufferGeometry();
+  g.setAttribute('position', new THREE.Float32BufferAttribute(pos, 3));
+  g.computeVertexNormals();
+  const nr = g.attributes.normal;
+  for (let i = 0; i < nr.count; i++) { const v = new THREE.Vector3(nr.getX(i), nr.getY(i), nr.getZ(i)).multiplyScalar(0.3).add(new THREE.Vector3(0, 1, 0)).normalize(); nr.setXYZ(i, v.x, v.y, v.z); }
+  g.setAttribute('color', new THREE.Float32BufferAttribute(col, 3));
+  g.setAttribute('aWind', new THREE.Float32BufferAttribute(wind.map((w) => w * 0.7), 1));
+  return g;
+}
+
+function birchGeo(rnd) {
+  const parts = [];
+  const h = 5.2 + rnd() * 1.6;
+  const bark = (x, y, z, out) => { const band = Math.sin(y * 9.0 + x * 20.0) > 0.72; out.set(band ? '#2b2b2b' : '#f2f0e8'); };
+  parts.push(part(new THREE.CylinderGeometry(0.11, 0.2, h, 5, 6), { pos: [0, h / 2, 0], color: bark, jitter: 0.03, seed: 61, wind: (x, y) => (y / h) ** 2 * 0.08, deform: (v) => { v.x += Math.sin(v.y * 0.7) * 0.18; } }));
+  for (let k = 0; k < 4; k++) {
+    const a = (k / 4) * Math.PI * 2 + rnd() * 0.8, y = h * (0.55 + k * 0.1);
+    parts.push(part(new THREE.CylinderGeometry(0.03, 0.06, 1.6, 4, 1), { pos: [Math.cos(a) * 0.7, y, Math.sin(a) * 0.7], rot: [Math.sin(a) * 1.0, 0, -Math.cos(a) * 1.0], color: '#3a3a3a', wind: 0.15 }));
+  }
+  // lichte, hängende Krone in gelbgrün
+  const cc = canopyColor('#d9e46a', '#7fa63e', h * 0.5, h + 1.5);
+  for (let k = 0; k < 5; k++) {
+    const a = (k / 5) * Math.PI * 2 + rnd() * 0.6, r = 0.9 + rnd() * 0.5;
+    parts.push(part(new THREE.IcosahedronGeometry(1.05 + rnd() * 0.35, 0), { pos: [Math.cos(a) * r, h * 0.72 + rnd() * 1.3, Math.sin(a) * r], scale: [0.9, 1.25, 0.9], jitter: 0.3, seed: 70 + k, color: cc, wind: 0.22 + k * 0.02, faceVar: 0.16 }));
+  }
+  parts.push(part(new THREE.IcosahedronGeometry(1.2, 0), { pos: [0, h + 0.6, 0], scale: [0.9, 1.2, 0.9], jitter: 0.3, seed: 79, color: cc, wind: 0.28, faceVar: 0.16 }));
+  return merge(parts);
+}
+
+// Heide: graugrüner Zwergstrauch, lila Blüten mit aWind ≥ 0.95 (der Shader lässt sie mit uBloom wachsen: schleierabhängig)
+function heatherGeo(rnd) {
+  const parts = [];
+  const blobs = [[0, 0.22, 0, 0.42], [0.36, 0.18, 0.12, 0.3], [-0.32, 0.16, -0.14, 0.32], [0.05, 0.16, 0.34, 0.26]];
+  blobs.forEach((b, i) => parts.push(part(new THREE.IcosahedronGeometry(b[3], 0), { pos: [b[0], b[1], b[2]], scale: [1.1, 0.7, 1.1], jitter: 0.12, seed: 90 + i, color: canopyColor('#8ea86c', '#5c7448', 0, 0.5), wind: (x, y) => y * 0.15, faceVar: 0.16 })));
+  const cols = ['#b48cff', '#c99cff', '#9d6bd8', '#e0b8ff'];
+  for (let k = 0; k < 14; k++) {
+    const a = rnd() * Math.PI * 2, r = rnd() * 0.5;
+    const y = 0.36 + rnd() * 0.22;
+    parts.push(part(new THREE.ConeGeometry(0.05, 0.22, 4, 1), { pos: [Math.cos(a) * r, y, Math.sin(a) * r], rot: [(rnd() - 0.5) * 0.5, 0, (rnd() - 0.5) * 0.5], color: cols[k % cols.length], wind: 0.97 }));
+  }
+  return merge(parts);
+}
+
+// Mangrovenstrauch: Stelzwurzeln im Flachwasser, dichte dunkelgrüne Krone (Kollider-Tag 'mangrove': kletterbar markiert)
+function mangroveGeo(rnd) {
+  const parts = [];
+  const h = 3.2 + rnd() * 1.2;
+  parts.push(part(new THREE.CylinderGeometry(0.16, 0.22, h * 0.6, 5, 1), { pos: [0, h * 0.7, 0], color: '#5c3d2a', wind: 0.05 }));
+  for (let k = 0; k < 7; k++) {
+    const a = (k / 7) * Math.PI * 2 + rnd() * 0.5, L = 1.4 + rnd() * 0.8;
+    parts.push(part(new THREE.CylinderGeometry(0.05, 0.11, L, 4, 1), { pos: [Math.sin(a) * L * 0.4, h * 0.4 - L * 0.32, Math.cos(a) * L * 0.4], rot: [Math.cos(a) * 0.62, 0, -Math.sin(a) * 0.62], color: '#4a3021' }));
+    parts.push(part(new THREE.CylinderGeometry(0.04, 0.06, L * 0.7, 4, 1), { pos: [Math.sin(a + 0.3) * L * 0.55, L * 0.3, Math.cos(a + 0.3) * L * 0.55], rot: [Math.cos(a + 0.3) * 0.35, 0, -Math.sin(a + 0.3) * 0.35], color: '#4a3021' }));
+  }
+  const cc = canopyColor('#4fae55', '#1f6a34', h * 0.7, h + 2.2);
+  for (let k = 0; k < 6; k++) {
+    const a = (k / 6) * Math.PI * 2 + rnd() * 0.5, r = 1.1 + rnd() * 0.5;
+    parts.push(part(new THREE.IcosahedronGeometry(1.15 + rnd() * 0.3, 0), { pos: [Math.cos(a) * r, h + 0.2 + rnd() * 0.6, Math.sin(a) * r], scale: [1.2, 0.75, 1.2], jitter: 0.3, seed: 100 + k, color: cc, wind: 0.14, faceVar: 0.15 }));
+  }
+  parts.push(part(new THREE.IcosahedronGeometry(1.4, 1), { pos: [0, h + 1.1, 0], scale: [1.2, 0.8, 1.2], jitter: 0.32, seed: 109, color: cc, wind: 0.16, faceVar: 0.15 }));
+  return merge(parts);
+}
+
 function driftwoodGeo() {
   const parts = [];
   parts.push(part(new THREE.CylinderGeometry(0.1, 0.14, 2.4, 5, 2), { rot: [0, 0, Math.PI / 2], pos: [0, 0.1, 0], color: '#d8c2a2', jitter: 0.06, seed: 4, faceVar: 0.1 }));
@@ -239,12 +330,13 @@ function shellsGeo(rnd) {
 }
 
 // ---------- Material mit Wind ----------
-function windMaterial(veil, { fade = false } = {}) {
+function windMaterial(veil, { fade = false, bloom = false } = {}) {
   const mat = new THREE.MeshLambertMaterial({ vertexColors: true, side: THREE.DoubleSide });
   const u = {
     uWindDir: { value: new THREE.Vector2(0.8, 0.6).normalize() },
     uWindStrength: { value: 1 },
     uFadeFar: { value: 100 },
+    uBloom: { value: 1 },
   };
   mat.onBeforeCompile = (shader) => {
     Object.assign(shader.uniforms, u);
@@ -254,9 +346,11 @@ attribute float aWind;
 uniform float uLumoTime;
 uniform vec2 uWindDir;
 uniform float uWindStrength;
-uniform float uFadeFar;`)
+uniform float uFadeFar;
+uniform float uBloom;`)
       .replace('#include <begin_vertex>', `#include <begin_vertex>
 {
+  ${bloom ? 'transformed *= mix(1.0, uBloom, step(0.94, aWind));' : ''}
   vec3 ip = vec3(0.0);
   #ifdef USE_INSTANCING
     ip = instanceMatrix[3].xyz;
@@ -278,9 +372,9 @@ uniform float uFadeFar;`)
   #endif` : ''}
 }`);
   };
-  mat.userData.__lumoKey = fade ? 'windF' : 'wind';
+  mat.userData.__lumoKey = (fade ? 'windF' : 'wind') + (bloom ? 'B' : '');
   mat.customProgramCacheKey = () => mat.userData.__lumoKey;
-  veil.patch(mat, { key: fade ? 'vegF' : 'veg' });
+  veil.patch(mat, { key: (fade ? 'vegF' : 'veg') + (bloom ? 'B' : '') });
   mat.userData.wind = u;
   return mat;
 }
@@ -290,7 +384,9 @@ export function createVegetation({ island, veil, colliders, quality, scene }) {
   const rnd = mulberry32(4242);
   const matTree = windMaterial(veil);
   const matSmall = windMaterial(veil, { fade: true });
+  const matBloom = windMaterial(veil, { fade: true, bloom: true });
   matSmall.userData.wind.uFadeFar.value = quality.grassDistance;
+  matBloom.userData.wind.uFadeFar.value = quality.grassDistance * 1.3;
 
   const flowerPalA = ['#ff5d8f', '#ffd23f', '#ffffff', '#ff8c42'];
   const flowerPalB = ['#b17dff', '#6ec6ff', '#ffffff', '#ff5d8f'];
@@ -308,6 +404,11 @@ export function createVegetation({ island, veil, colliders, quality, scene }) {
     boulder: { geos: [rockGeo(rnd, true)], mat: matTree, shadow: true, kind: 'tree', collideRock: true },
     driftwood: { geos: [driftwoodGeo()], mat: matTree, kind: 'small', far: 1.2 },
     shells: { geos: [shellsGeo(rnd)], mat: matSmall, kind: 'small', far: 0.7 },
+    // WP11: Schilf an Gewässern, Moorbirke und Heide im Moor, Mangroven in der Lagune
+    reed: { geos: [reedGeo(rnd), reedGeo(rnd)], mat: matSmall, kind: 'small', far: 1.3 },
+    birch: { geos: [birchGeo(rnd), birchGeo(rnd)], mat: matTree, shadow: true, collide: 0.22, trunk: 5.5, crown: [1.8, 3.4, 7.4], kind: 'tree' },
+    heather: { geos: [heatherGeo(rnd), heatherGeo(rnd)], mat: matBloom, kind: 'small', far: 1.6 },
+    mangrove: { geos: [mangroveGeo(rnd), mangroveGeo(rnd)], mat: matTree, shadow: true, collide: 0.5, trunk: 3.2, crown: [2.4, 2.8, 6.2], kind: 'tree', tag: 'mangrove' },
   };
 
   // Standort-Infos
@@ -315,9 +416,21 @@ export function createVegetation({ island, veil, colliders, quality, scene }) {
   const _n = { x: 0, y: 1, z: 0 };
   const padSites = Object.values(SITES).filter((s) => s.r > 0);
   const pool = FEATURES.pool, vol = FEATURES.volcano, L = FEATURES.lighthouse, dock = FEATURES.dock;
+  const waterBodies = island.water ? island.water.bodies : [{ x: pool.x, z: pool.z, r: pool.r }];
+  // Abstand zum Rand des nächsten stehenden Gewässers (negativ = drin); Lagune zählt als Ring um die Wurzelinsel
+  function waterEdge(x, z) {
+    let best = Infinity;
+    for (const b of waterBodies) {
+      let d;
+      if (b.sea) { const dl = Math.hypot(x - b.x, z - b.z); d = dl < b.r ? Math.max(dl - (b.r - 3.5), (FEATURES.lagoon.inner + 2.5) - dl) : dl - b.r; }
+      else d = Math.hypot(x - b.x, z - b.z) - b.r;
+      if (d < best) best = d;
+    }
+    return best;
+  }
   function blocked(x, z, extra = 0) {
     for (const s of padSites) if (Math.hypot(x - s.x, z - s.z) < s.r + 1.5 + extra) return true;
-    if (Math.hypot(x - pool.x, z - pool.z) < pool.r + 1.2) return true;
+    for (const b of waterBodies) if (Math.hypot(x - b.x, z - b.z) < b.r + 1.2 + extra) return true;
     if (Math.hypot(x - L.x, z - L.z) < 7 + extra) return true;
     if (Math.abs(x - dock.x) < 4 + extra && z > dock.z0 - 6 && z < dock.z1 + 2) return true;
     if (Math.hypot(x - vol.x, z - vol.z) < vol.rimRadius + 1) return true;
@@ -338,7 +451,7 @@ export function createVegetation({ island, veil, colliders, quality, scene }) {
   Object.keys(SPECIES).forEach((k) => { placed[k] = []; });
   const grassTint = new THREE.Color();
   const GRASS_TINT = {
-    hafen: '#98dc5a', strand: '#c2e066', dschungel: '#4fb04a', klippen: '#93b86c', markt: '#d2e26a', vulkan: '#a3bf5c', leuchtturm: '#ade06a', wild: '#96d657',
+    hafen: '#98dc5a', strand: '#c2e066', dschungel: '#4fb04a', klippen: '#93b86c', markt: '#d2e26a', vulkan: '#a3bf5c', leuchtturm: '#ade06a', moor: '#a8a850', wild: '#96d657',
   };
   const gtc = Object.fromEntries(Object.entries(GRASS_TINT).map(([k, v]) => [k, new THREE.Color(v)]));
 
@@ -459,6 +572,41 @@ export function createVegetation({ island, veil, colliders, quality, scene }) {
     if (I.s !== 'sand' || I.h > 1.5 || I.h < 0.2 || blocked(x, z)) return;
     if (r < 0.14) add('shells', x, z, { s: 0.9 + rnd() * 0.4 });
   });
+  // ---- WP11: Schilf an Ufern (Torfbecken, Teich, Gezeitenbecken, Lagune), nicht auf Wegen ----
+  const M = FEATURES.moor, LG = FEATURES.lagoon;
+  scatter(1.7, (x, z, r) => {
+    const e = waterEdge(x, z);
+    if (e > 2.6 || e < -1.4) return;
+    const I = info(x, z);
+    if (I.path > 0.2 || I.h < -0.4) return;
+    for (const s of padSites) if (Math.hypot(x - s.x, z - s.z) < s.r + 1) return;
+    const p = 0.35 + 0.3 * smoothstep(1.5, -0.5, Math.abs(e)) + 0.25 * zw[ZI.moor];
+    if (r < p) add('reed', x, z, { s: 0.75 + rnd() * 0.5 });
+  });
+  // Moorbirken: licht verteilt in der Senke und am Rand, nie in den Becken
+  scatter(5.5, (x, z, r) => {
+    const I = info(x, z);
+    if ((I.s !== 'grass' && I.s !== 'moor') || I.ny < 0.8 || I.path > 0.1 || blocked(x, z, 1.5)) return;
+    const dm = Math.hypot(x - M.x, z - M.z);
+    const p = 0.22 * zw[ZI.moor] * (dm < M.r - 6 ? 0.8 : 1.3) + 0.03 * zw[ZI.leuchtturm];
+    if (r < p) add('birch', x, z, { s: 0.8 + rnd() * 0.5, tilt: 0.06 });
+  });
+  // Heide: lila Polster im Moor (Blüten wachsen mit dem Schleier-Abzug), sparsam auf den Klippen
+  scatter(2.6, (x, z, r) => {
+    const I = info(x, z);
+    if ((I.s !== 'grass' && I.s !== 'moor') || I.path > 0.3 || blocked(x, z)) return;
+    const nh = smoothstep(0.05, 0.5, island.noise.detail(x / 26 + 40, z / 26));
+    const p = 0.55 * zw[ZI.moor] * (0.4 + 0.6 * nh) + 0.12 * zw[ZI.klippen] * nh;
+    if (r < p) add('heather', x, z, { s: 0.8 + rnd() * 0.6 });
+  });
+  // Mangroven: Stelzwurzeln im Flachwasser der Lagune (Ring um die Riesen-Mangrove)
+  scatter(3.2, (x, z, r) => {
+    const dl = Math.hypot(x - LG.x, z - LG.z);
+    if (dl < LG.inner + 2.2 || dl > LG.r - 2) return;
+    const I = info(x, z);
+    if (I.h > 0.3 || I.h < -1.4 || I.path > 0.2) return;
+    if (r < 0.45) add('mangrove', x, z, { s: 0.75 + rnd() * 0.5, sink: 0.4 });
+  });
 
   // ---- InstancedMeshes pro Art und Block ----
   const group = new THREE.Group();
@@ -531,22 +679,30 @@ export function createVegetation({ island, veil, colliders, quality, scene }) {
   }
   applyDensity(quality);
 
+  let bloomT = 0;
   const vegetation = {
     group, meshes, placed, species: Object.keys(SPECIES),
-    materials: [matTree, matSmall],
+    materials: [matTree, matSmall, matBloom],
     get instanceCount() { return totalInstances; },
+    get bloom() { return matBloom.userData.wind.uBloom.value; },
     setQuality(q) { applyDensity(q); },
     // Wind (0 = still, 1 = normal, 2 = Sturm)
     setWind(strength, dirX, dirZ) {
-      for (const m of [matTree, matSmall]) {
+      for (const m of [matTree, matSmall, matBloom]) {
         m.userData.wind.uWindStrength.value = strength;
         if (dirX !== undefined) m.userData.wind.uWindDir.value.set(dirX, dirZ).normalize();
       }
     },
-    // Distanz-Culling kleiner Pflanzen
+    // Distanz-Culling kleiner Pflanzen; Heideblüte folgt dem Schleier über dem Moor (grau = keine Blüten)
     update(camera) {
       const cx = camera.position.x, cz = camera.position.z;
       const gd = matSmall.userData.wind.uFadeFar.value;
+      if (veil && veil.amountAt && (bloomT++ % 20 === 0)) {
+        const v = veil.amountAt(M.x, M.z);
+        const target = Math.max(0, Math.min(1, 1.15 - v * 1.4));
+        const u = matBloom.userData.wind.uBloom;
+        u.value += (target - u.value) * 0.25;
+      }
       for (const m of meshes) {
         const f = m.userData.far;
         if (!f) continue;

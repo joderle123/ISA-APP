@@ -1,0 +1,142 @@
+// Welt-Plugin (WP10/11/18/43): verbindet Schleier-Flecken, Gewässer, Szenen-System/Raum-Baukasten und die Requisiten
+// zu einer lebendigen Insel. API: game.scenes (Szenenstapel), game.world.rooms (Raum-Baukasten), game.world.decor
+//   (Dekor-Requisiten je Zone: decor.remove(id) / decor.clear(zone) für die Inhalts-WPs), game.world.birds (sechs Vögel).
+// Debug: LUMO.debug.enterRoom(id, spawn) · exitRoom() · rooms() · setTide(id, 0..1) · setPatch(id, v) · relapse(id, to)
+//   · restorePatch(id, to) · propsGallery(on) · titan(on) · grisel(state|null)
+// Speichern: veil.patches (Flecken) und veil.rooms (Schleier je Raum) im Spielstand; Position im Raum = Rückkehrpunkt.
+import { createRoomKit } from './roomkit/index.js';
+import { createScenes } from './scenes.js';
+import { BIRD_EMOTIONS } from '../props/kit/birds.js';
+
+// Standard-Flecken (Slots 8–11): Mangrove (bis j1-e06 grau), Glimmer und Quellen (spätere Module), Rückfall bleibt frei
+const DEFAULT_PATCHES = [
+  { id: 'mangrove', x: 150, z: -8, r: 18, veil: 1 },
+  { id: 'glimmer', x: 20, z: -118, r: 30, veil: 1 },
+  { id: 'quellen', x: 47, z: -23, r: 16, veil: 1 },
+];
+
+export default {
+  id: 'welt', order: 24, deps: ['props'],
+  install(game) {
+    const { events, state, world, player, island, props, scene } = { ...game, island: game.world.island, props: game.props };
+    const veil = world.veil;
+
+    // ---- Schleier-Flecken: Standard + Regionen aus den Inhalten, Zustand im Spielstand ----
+    for (const p of DEFAULT_PATCHES) if (!veil.getPatch(p.id)) veil.addPatch(p);
+    for (const region of game.content.list('regions')) {
+      for (const p of (region.veil && region.veil.patches) || []) if (!veil.getPatch(p.id)) veil.addPatch({ id: p.id, x: p.x, z: p.z, r: p.r, veil: p.start !== undefined ? p.start : 1 });
+    }
+    const savedPatches = state.get('veil.patches');
+    if (savedPatches && Object.keys(savedPatches).length) veil.setState({ patches: savedPatches });
+    game.save.onCapture((d) => { d.veil = { ...(d.veil || {}), patches: veil.getFullState().patches }; });
+    game.save.onApply((d) => { if (d.veil && d.veil.patches) veil.setState({ patches: d.veil.patches }); });
+    events.on('veil:set', (e) => { if (e && e.zone && veil.getPatch(e.zone)) veil.setPatch(e.zone, e.amount); });
+
+    // ---- Szenen-System und Raum-Baukasten ----
+    const rooms = createRoomKit({ veil, props, island, rng: game.rng });
+    for (const def of game.content.list('rooms')) rooms.register(def);
+    const scenes = createScenes({ game, kit: rooms });
+    world.rooms = rooms; world.scenes = scenes; game.scenes = scenes;
+    player.setDiveProvider(scenes.diveProvider);
+    game.addUpdate((dt, t) => scenes.update(dt, t), { order: -8, always: true });
+    events.on('scene:change', (e) => { if (e.scene !== 'welt' && game.music && game.music.setIntensity) game.music.setIntensity(0.85); else if (game.music && game.music.setIntensity) game.music.setIntensity(1); });
+
+    // ---- Dekor für M0–M3 (Requisiten je Zone; Inhalts-WPs dürfen einzelne Stücke entfernen) ----
+    const decorList = new Map();
+    const dec = (zone, id, type, opts) => { const h = props.spawn(type, { id: `dekor-${id}`, ...opts }); h.zone = zone; decorList.set(h.id, h); return h; };
+    const bake = (zone, id, items) => { const h = props.bake(items, { id: `dekor-${id}` }); h.zone = zone; decorList.set(h.id, h); return h; };
+    const S = island.SITES;
+    // Hafen: vier dunkle Signalfeuer um den Dorfplatz, Laternenreihe vom Steg zum Platz, Papierlaternen am Baumhaus
+    bake('hafen', 'signalfeuer', [[18, 118], [-10, 120], [16, 100], [-8, 100]].map(([x, z]) => ({ type: 'signalfeuer', x, z, lit: false })));
+    bake('hafen', 'laternen', [
+      ...[[9.5, 126], [2.5, 126], [9.5, 120], [2.5, 120]].map(([x, z]) => ({ type: 'laterne', x, z, variant: 'pfahl', lit: true })),
+      ...[[-25, 92], [-34, 94], [-36, 102], [-27, 104]].map(([x, z], i) => ({ type: 'laterne', x, z, y: island.getHeight(x, z) + 2.2, variant: 'papier', color: ['#ff7a59', '#ffd23f', '#2de2c9', '#ff5d8f'][i] })),
+    ]);
+    // Strand: sechs Gezeiten-Tanks an der Muschelbucht, Laterne am Höhleneingang
+    const TANKS = ['koerper', 'sicherheit', 'zugehoerigkeit', 'anerkennung', 'selbstbestimmung', 'spass'];
+    bake('strand', 'tanks', TANKS.map((need, i) => ({ type: 'tank', x: 120 + i * 3.1, z: 47.5, yaw: Math.PI, need, fill: [0.7, 0.6, 0.15, 0.4, 0.6, 0.5][i] })).concat([{ type: 'signalfeuer', x: 133, z: 46, lit: false }]));
+    dec('strand', 'laterne-hoehle', 'laterne', { x: 157, z: 3, variant: 'pfahl', lit: true, dynamic: true });
+    // Klippen: Lucs Windräder und Drachen an der Wetterwarte, Signalfeuer
+    bake('klippen', 'wetterwarte', [[-105, -63], [-91, -65], [-97, -79]].map(([x, z], i) => ({ type: 'windrad', x, z, wind: 1.4 + i * 0.3, color: ['#8fa3ff', '#2de2c9', '#ffd166'][i] })).concat([{ type: 'signalfeuer', x: -92, z: -71, lit: false }]));
+    [[-102, -74], [-93, -75]].forEach(([x, z], i) => dec('klippen', 'drachen-' + i, 'drachen', { x, z, wind: 1.4, color: i ? '#ff5d8f' : '#ffd23f', color2: i ? '#2de2c9' : '#ff3b3b' }));
+    // Dschungel: Signalfeuer auf der Lichtung
+    dec('dschungel', 'signalfeuer-dschungel', 'signalfeuer', { x: 76, z: -64, lit: false });
+    // Moor: Menhir-Kreis, Flüstersteine, Bohlenweg von der Trasse zum Steinriesen
+    const M = island.FEATURES.moor;
+    bake('moor', 'menhire', Array.from({ length: 7 }, (_, i) => { const a = (i / 7) * Math.PI * 2; return { type: 'menhir', x: M.x + Math.cos(a) * 9, z: M.z + Math.sin(a) * 9, yaw: -a, height: 2.8 + (i % 3) * 0.5 }; }));
+    bake('moor', 'fluestersteine', [[-126, 66], [-104, 66], [-118, 86], [-100, 80], [-130, 76]].map(([x, z], i) => ({ type: 'fluesterstein', x, z, size: 0.8 + (i % 3) * 0.25, active: true })));
+    dec('moor', 'bohlenweg', 'bohlenweg', { x: 0, z: 0, y: 0, onGround: false, collide: true, pts: [[-95, 45], [-99, 51], [-105, 59], [-110, 65], [-113, 73], [-112, 82]] });
+    // Markt: vier Stände um den Platz, Laternen
+    bake('markt', 'staende', [[-118, 27, 0], [-131, 14, Math.PI / 2], [-118, 1, Math.PI], [-105, 14, -Math.PI / 2]].map(([x, z, yaw]) => ({ type: 'marktstand', x, z, yaw })));
+    bake('markt', 'laternen', [[-124, 22], [-112, 22], [-124, 6], [-112, 6]].map(([x, z]) => ({ type: 'laterne', x, z, variant: 'pfahl', lit: true })));
+    // Quellental: Laternen-Camp, Leuchtturm-Halbinsel: Laterne am Weg
+    bake('vulkan', 'quellen-laternen', [[38, -14], [44, -27], [55, -26]].map(([x, z]) => ({ type: 'laterne', x, z, variant: 'pfahl', lit: true })));
+    // Glimmerwolke: sieben schwebende Inseln über der Nordküste (sichtbar, noch unerreichbar) mit Kugeln
+    const GL = S.glimmerwolke;
+    bake('glimmer', 'inseln', Array.from({ length: 7 }, (_, i) => { const a = (i / 7) * Math.PI * 2, r = i === 0 ? 0 : 26 + (i % 2) * 10; return { type: 'glimmerinsel', x: GL.x + Math.cos(a) * r, z: GL.z + Math.sin(a) * r, y: 72 + i * 5, radius: 5 + (i % 3) * 1.5, onGround: false }; }));
+    for (let i = 0; i < 4; i++) dec('glimmer', 'kugel-' + i, 'glimmerkugel', { x: GL.x + Math.cos(i * 1.6) * 18, z: GL.z + Math.sin(i * 1.6) * 18, y: 90 + i * 4, onGround: false, collide: false, color: ['#ff3b6b', '#ff8cf0', '#5ad8ff', '#ffd23f'][i] });
+    // Grisel: Schatten weit draußen über dem Meer (nachts), Titan über den Sturmklippen (nur per Debug/Quest)
+    const gr = dec('welt', 'grisel', 'grisel', { x: -190, z: -170, y: 58, onGround: false, collide: false, size: 6, state: 'schatten' });
+    const ti = dec('klippen', 'titan', 'titan', { x: S.klippenGipfel.x + 10, z: S.klippenGipfel.z - 18, y: island.getHeight(S.klippenGipfel.x + 10, S.klippenGipfel.z - 18) + 14, onGround: false, collide: false });
+    ti.hidden = true; ti.group.visible = false; ti.far = 600;
+    gr.far = 900;
+    // Sechs Gefühlsvögel: sitzen um die Lichtung, fliegen ab und zu eine Runde (Vorschau; WP52 übernimmt sie mit Regeln)
+    const L = S.lichtung;
+    const birds = BIRD_EMOTIONS.map((emotion, i) => {
+      const a = (i / 6) * Math.PI * 2 + 0.3, px = L.x + Math.cos(a) * 11, pz = L.z + Math.sin(a) * 11;
+      const yaw = Math.atan2(L.x - px, L.z - pz);   // Blick zur Lichtung
+      const h = dec('dschungel', 'vogel-' + emotion, 'vogel', { x: px, z: pz, yaw, emotion, pose: 'sitzen', collide: false, phase: i * 1.1 });
+      h.life = { px, pz, py: h.group.position.y, a, yaw, t: 6 + i * 5, mode: 'sitzen', phase: 0 };
+      return h;
+    });
+    const rngB = game.rng && game.rng.fork ? game.rng.fork('vogelleben') : { float: (a, b) => a + Math.random() * (b - a) };
+    game.addUpdate((dt, t) => {
+      if (scenes.isInterior) return;
+      for (const b of birds) {
+        const l = b.life;
+        l.t -= dt;
+        if (l.mode === 'sitzen') {
+          if (l.t <= 0) { l.mode = 'fliegen'; l.phase = 0; l.t = 999; b.pose('fliegen'); }
+          continue;
+        }
+        // Rundflug: Kreis um den Sitzplatz, Höhe steigt und fällt, dann landen
+        l.phase += dt / 14;
+        const k = Math.min(1, l.phase);
+        const ang = l.a + Math.PI + k * Math.PI * 2 * 1.5;
+        const rad = 7 * Math.sin(k * Math.PI), hgt = 4.5 * Math.sin(k * Math.PI);
+        const x = l.px + Math.cos(ang) * rad, z = l.pz + Math.sin(ang) * rad;
+        b.group.position.set(x, l.py + hgt + 0.3 * Math.sin(t * 3), z);
+        b.group.rotation.y = -ang;   // Flugrichtung = Tangente des Kreises (Schnabel zeigt nach +z)
+        b.group.rotation.z = Math.sin(k * Math.PI * 3) * 0.25;
+        if (k >= 1) { l.mode = 'sitzen'; l.t = rngB.float(8, 22); b.group.position.set(l.px, l.py, l.pz); b.group.rotation.set(0, l.yaw, 0); b.pose('sitzen'); }
+      }
+      // Grisel nur nachts als Silhouette
+      gr.hidden = world.sky.night <= 0.45; gr.group.visible = !gr.hidden;
+    }, { order: -11 });
+    const decor = {
+      list: () => [...decorList.values()],
+      get: (id) => decorList.get(id.startsWith('dekor-') ? id : 'dekor-' + id) || null,
+      // alle Einzel-Requisiten eines Typs (auch innerhalb gebackener Gruppen), z. B. decor.find('signalfeuer').forEach((f) => f.setLit(true))
+      find: (type) => [...decorList.values()].flatMap((h) => (h.type === 'bake' ? h.handles : [h])).filter((h) => h.type === type),
+      remove(id) { const h = decor.get(id); if (h) { h.remove(); decorList.delete(h.id); } return !!h; },
+      clear(zone) { for (const h of [...decorList.values()]) if (!zone || h.zone === zone) { h.remove(); decorList.delete(h.id); } },
+      birds, grisel: gr, titan: ti,
+    };
+    world.decor = decor; world.birds = birds;
+
+    // ---- Debug ----
+    const D = game.debug || (game.debug = {});
+    D.enterRoom = (id, spawn) => scenes.enter(id, { spawn, fade: false }).then((r) => (r ? r.id : null));
+    D.exitRoom = () => scenes.exit({ fade: false });
+    D.rooms = () => scenes.rooms();
+    D.setTide = (id, t) => (id === 'alle' ? world.water.tideAll(Number(t)) : world.water.setTide(id, Number(t)));
+    D.setPatch = (id, v) => veil.setPatch(id, Number(v));
+    D.relapse = (id, to) => veil.relapse(id, { to: to !== undefined ? Number(to) : 1 });
+    D.restorePatch = (id, to) => veil.restoreZone(id, { amount: to !== undefined ? Number(to) : 0 });
+    D.titan = (on = true, phase) => { ti.hidden = !on; ti.group.visible = !!on; if (phase) ti.setPhase(phase); return ti.phase; };
+    D.grisel = (st) => { if (st === null || st === false) { gr.hidden = true; gr.group.visible = false; return null; } gr.hidden = false; gr.group.visible = true; if (st) gr.setState(st); return gr.state; };
+    D.roomTriangles = (id) => { const r = scenes.room(id) || rooms.build(id); return r.triangles(); };
+
+    return { rooms, scenes, decor, birds, patches: DEFAULT_PATCHES.map((p) => p.id) };
+  },
+};

@@ -1,5 +1,7 @@
-// Die Insel: deterministische Höhenkarte mit gestalteten Zonen, Wegen und Orten.
+// Die Insel: deterministische Höhenkarte mit gestalteten Zonen, Wegen, Orten und Gewässern (WP11).
 // Koordinaten: x = Osten, z = Süden (Norden = -z). Meeresspiegel y = 0. Inselradius ~170.
+// Gewässer: WATER_BODIES (Teich, Gezeitenbecken mit Pegel-API, Mangroven-Lagune, Quellen-Terrassen, Torfbecken);
+//   island.water.setLevel('gezeiten-ost', 1.4) · island.water.tide('gezeiten-ost', 0..1) · island.waterLevel(x, z)
 import { createNoise2D, fbm, ridged, smoothstep, clamp, lerp } from './noise.js';
 
 export const SEA_LEVEL = 0;
@@ -10,6 +12,7 @@ export const DEEP_WATER = -1.5;          // tiefer als das: nicht begehbar
 export const SLOPE_LIMIT = 0.62;         // normal.y minimal (≈ 52°)
 
 // Zonen (Mittelpunkt, Radius, deutscher Name). spawn = sicherer Startpunkt für Teleport.
+// Reihenfolge ist Teil der API (Index = Schleier-Slot, terrain.js liest zw[k] positionsabhängig): neue Zonen hinten anfügen.
 export const ZONES = [
   { id: 'hafen', name: 'Hafen-Dorf', x: 6, z: 110, r: 42, spawn: { x: 6, z: 118 }, color: '#ffb347' },
   { id: 'strand', name: 'Palmenstrand', x: 136, z: 28, r: 40, spawn: { x: 132, z: 30 }, color: '#2de2c9' },
@@ -18,11 +21,23 @@ export const ZONES = [
   { id: 'markt', name: 'Markt-Hügel', x: -118, z: 14, r: 36, spawn: { x: -116, z: 16 }, color: '#ffd166' },
   { id: 'vulkan', name: 'Vulkan', x: 0, z: -42, r: 58, spawn: { x: 19.6, z: 8.3 }, color: '#ff6b3d' },
   { id: 'leuchtturm', name: 'Leuchtturm', x: -120, z: 122, r: 36, spawn: { x: -88, z: 127 }, color: '#fff3a0' },
+  { id: 'moor', name: 'Flüstermoor', x: -114, z: 68, r: 26, spawn: { x: -105, z: 59 }, color: '#b48cff' },
 ];
 export const ZONE_INDEX = Object.fromEntries(ZONES.map((z, i) => [z.id, i]));
 
-// Besondere Punkte (für Figuren, Requisiten, Quests). r > 0 = ebene Fläche im Gelände.
+// Gelände-Features, die andere Module brauchen (vor den Orten, weil Orte darauf zeigen)
+const VOLCANO = { x: 0, z: -42, rim: 14, top: 52, base: 86 };
+const RIDGE = { x: 86, z: -112, a: 40, b: 17, rot: -0.35, h: 22 };
+const _rc = Math.cos(RIDGE.rot), _rs = Math.sin(RIDGE.rot);
+const FALL_V = RIDGE.b * 0.83;
+const FALL = { x: RIDGE.x - _rs * FALL_V, z: RIDGE.z + _rc * FALL_V };
+const POOL = { x: FALL.x - _rs * 8.5, z: FALL.z + _rc * 8.5, r: 9, level: 5.2 };
+const MOOR = { x: -114, z: 68, r: 26, floor: 1.9 };
+const LAGOON = { x: 150, z: -8, r: 15, mound: 0.75, floor: -0.9, inner: 4.5 };
+
+// Besondere Punkte (für Figuren, Requisiten, Quests). r > 0 = ebene Fläche im Gelände. y = Höhe über Grund (Luftorte).
 export const SITES = {
+  // M0 Hafen
   steg: { x: 6, z: 138, r: 0, zone: 'hafen' },                 // Anlegesteg (siehe landmarks.js)
   dorfplatz: { x: 4, z: 110, r: 11, zone: 'hafen' },
   kapitaenin: { x: 12, z: 126, r: 3, zone: 'hafen' },
@@ -32,17 +47,67 @@ export const SITES = {
   haus1: { x: 30, z: 100, r: 6, zone: 'hafen' },
   haus2: { x: -18, z: 96, r: 6, zone: 'hafen' },
   haus3: { x: 34, z: 120, r: 5, zone: 'hafen' },
+  hafengrotte: { x: -24, z: 124, r: 0, zone: 'hafen', interior: 'hafengrotte' },
+  // M1 Strand
   surfspot: { x: 172, z: 32, r: 0, zone: 'strand' },            // im Wasser
   strandHuette: { x: 128, z: 38, r: 6, zone: 'strand' },
+  muschelbucht: { x: 128, z: 38, r: 10, zone: 'strand' },
+  gezeitenhoehle: { x: 160, z: 0, r: 0, zone: 'strand', interior: 'gezeitenhoehle' },
+  mangrove: { x: 150, z: -8, r: 0, zone: 'strand' },
+  spiegelbecken: { x: 142, z: 44, r: 0, zone: 'strand' },
+  gezeitenOst: { x: 152, z: 46, r: 0, zone: 'strand' },
+  gezeitenSued: { x: 141, z: 56, r: 0, zone: 'strand' },
+  // M2 Dschungel
   wasserfall: { x: 91, z: -98, r: 0, zone: 'dschungel' },
   lichtung: { x: 70, z: -70, r: 8, zone: 'dschungel' },
+  traenensee: { x: POOL.x, z: POOL.z, r: 0, zone: 'dschungel' },
+  kronendorf: { x: 70, z: -70, r: 0, y: 16, zone: 'dschungel' },
+  federtempel: { x: 100, z: -84, r: 0, zone: 'dschungel', interior: 'federtempel' },
+  muschelgrotte: { x: POOL.x, z: POOL.z, r: 0, zone: 'dschungel', interior: 'muschelgrotte' },
+  // M3 Klippen
   klippenGipfel: { x: -106, z: -106, r: 6, zone: 'klippen' },
   klippenTor: { x: -98, z: -70, r: 5, zone: 'klippen' },
+  wetterwarte: { x: -98, z: -70, r: 5, zone: 'klippen' },
+  kante: { x: -104, z: -96, r: 0, zone: 'klippen' },
+  klangschlucht: { x: -120, z: -110, r: 0, zone: 'klippen' },
+  gedankenschlucht: { x: -84, z: -114, r: 0, zone: 'klippen' },
+  sturmhuette: { x: -106, z: -106, r: 6, zone: 'klippen', interior: 'sturmhuette' },
+  // M4 Moor
+  moorSenke: { x: MOOR.x, z: MOOR.z, r: 0, zone: 'moor' },
+  stilleLichtung: { x: -128, z: 58, r: 4, zone: 'moor' },
+  steinriese: { x: -112, z: 82, r: 0, zone: 'moor' },
+  bohlenweg: { x: -105, z: 59, r: 0, zone: 'moor' },
+  // M5 Markt
   marktplatz: { x: -118, z: 14, r: 12, zone: 'markt' },
+  buehne: { x: -118, z: 2, r: 6, zone: 'markt' },
+  noorsMauer: { x: -132, z: 20, r: 0, zone: 'markt' },
+  lucindasGarten: { x: -106, z: 28, r: 5, zone: 'markt' },
+  // M6 Vulkan
   kraterRand: { x: -12, z: -29, r: 0, zone: 'vulkan' },
   vulkanFuss: { x: 14, z: 36, r: 5, zone: 'vulkan' },
-  leuchtturm: { x: -122, z: 124, r: 0, zone: 'leuchtturm' },
+  friedenstreppe: { x: 14, z: 36, r: 0, zone: 'vulkan' },
+  // M7 Glimmerwolke (Luftorte über der Nordküste)
+  glimmerwolke: { x: 20, z: -118, r: 0, y: 90, zone: 'vulkan' },
+  // M8 Quellental (Vulkan-Nordostflanke)
+  quellental: { x: 47, z: -23, r: 0, zone: 'vulkan' },
+  // M9 Leuchtturm
+  leuchtturm: { x: -122, z: 124, r: 0, zone: 'leuchtturm', interior: 'leuchtturm' },
 };
+
+// Gewässer. level = aktueller Pegel (bei Gezeiten animierbar), floor = tiefster Punkt, rim = Felsrand (Gezeitenbecken).
+// Die Lagune liegt auf Meereshöhe (Teil des Meeres, nur Gelände), deshalb ohne eigenen Pegel.
+export const WATER_BODIES = [
+  { id: 'traenensee', kind: 'teich', zone: 'dschungel', x: POOL.x, z: POOL.z, r: POOL.r, level: POOL.level, floor: POOL.level - 2.0 },
+  { id: 'gezeiten-ost', kind: 'gezeiten', zone: 'strand', x: 152, z: 46, r: 5.5, level: 0.9, min: 0.2, max: 1.8, rim: 2.05, floor: -0.5 },
+  { id: 'gezeiten-sued', kind: 'gezeiten', zone: 'strand', x: 141, z: 56, r: 4.6, level: 0.7, min: 0.2, max: 1.8, rim: 2.0, floor: -0.4 },
+  { id: 'lagune', kind: 'lagune', zone: 'strand', x: LAGOON.x, z: LAGOON.z, r: LAGOON.r, level: SEA_LEVEL, floor: LAGOON.floor, sea: true },
+  { id: 'quelle-1', kind: 'quelle', zone: 'vulkan', x: 42, z: -17, r: 4.2, level: 16.25, floor: 15.1, terrace: 16.4 },
+  { id: 'quelle-2', kind: 'quelle', zone: 'vulkan', x: 47, z: -23, r: 4.8, level: 14.65, floor: 13.4, terrace: 14.8 },
+  { id: 'quelle-3', kind: 'quelle', zone: 'vulkan', x: 51, z: -30, r: 4.0, level: 13.05, floor: 11.9, terrace: 13.2 },
+  { id: 'torf-1', kind: 'moor', zone: 'moor', x: -119, z: 62, r: 6, level: 1.4, floor: 0.75 },
+  { id: 'torf-2', kind: 'moor', zone: 'moor', x: -107, z: 76, r: 5, level: 1.4, floor: 0.8 },
+  { id: 'torf-3', kind: 'moor', zone: 'moor', x: -124, z: 80, r: 4, level: 1.4, floor: 0.85 },
+];
 
 // Wege (Polylinien, werden eingeebnet und als Pfad gefärbt)
 export const PATHS = [
@@ -54,9 +119,10 @@ export const PATHS = [
   { id: 'hafen-vulkan', pts: [[6, 104], [8, 82], [11, 58], [14, 36]] },
   { id: 'dschungel-vulkan', pts: [[80, -78], [60, -66], [44, -58]] },
   { id: 'steg', pts: [[6, 118], [6, 132]] },
+  // Zugang ins Flüstermoor (Bohlenweg-Trasse vom Weg Hafen–Markt in die Senke)
+  { id: 'markt-moor', join: true, pts: [[-93, 42], [-99, 51], [-105, 59], [-111, 66], [-116, 72]] },
 ];
 // Serpentine auf den Vulkan (wird zusätzlich als Weg angelegt)
-const VOLCANO = { x: 0, z: -42, rim: 14, top: 52, base: 86 };
 function spiralPoints() {
   const pts = [];
   const a0 = Math.atan2(36 - VOLCANO.z, 14 - VOLCANO.x);
@@ -77,15 +143,8 @@ PATHS.push({ id: 'vulkan-serpentine', pts: spiralPoints() });
   const e = sp[sp.length - 1];
   SITES.kraterRand.x = Math.round(e[0] * 10) / 10;
   SITES.kraterRand.z = Math.round(e[1] * 10) / 10;
-
 }
 
-// Gelände-Features, die andere Module brauchen
-const RIDGE = { x: 86, z: -112, a: 40, b: 17, rot: -0.35, h: 22 };
-const _rc = Math.cos(RIDGE.rot), _rs = Math.sin(RIDGE.rot);
-const FALL_V = RIDGE.b * 0.83;
-const FALL = { x: RIDGE.x - _rs * FALL_V, z: RIDGE.z + _rc * FALL_V };
-const POOL = { x: FALL.x - _rs * 8.5, z: FALL.z + _rc * 8.5, r: 9, level: 5.2 };
 export const FEATURES = {
   volcano: { x: VOLCANO.x, z: VOLCANO.z, rimRadius: VOLCANO.rim, top: VOLCANO.top, lavaLevel: 41.6, lavaRadius: 7.5 },
   waterfall: {
@@ -95,6 +154,8 @@ export const FEATURES = {
     width: 6,
   },
   pool: POOL,
+  moor: MOOR,
+  lagoon: LAGOON,
   lighthouse: { x: -122, z: 124, y: 0 },
   dock: { x: 6, z0: 128, z1: 152, width: 3.6, deck: 1.45 },
   harbour: { x: 6, z: 112 },
@@ -129,6 +190,12 @@ export function createIsland({ cell = 2.5, seed = 7 } = {}) {
   const PEN = Math.atan2(FEATURES.lighthouse.z, FEATURES.lighthouse.x);
   const EAST = Math.atan2(28, 150);
   const NW = Math.atan2(-100, -100);
+  // Gewässer mit lebendem Pegel (Kopie der Definitionen, damit mehrere Inseln unabhängig bleiben)
+  const bodies = WATER_BODIES.map((b) => ({ ...b }));
+  const bodyById = Object.fromEntries(bodies.map((b) => [b.id, b]));
+  const tidePools = bodies.filter((b) => b.kind === 'gezeiten');
+  const springs = bodies.filter((b) => b.kind === 'quelle');
+  const peat = bodies.filter((b) => b.kind === 'moor');
 
   // Küstenradius nach Winkel
   function coastRadius(th) {
@@ -253,10 +320,49 @@ export function createIsland({ cell = 2.5, seed = 7 } = {}) {
       const w = smoothstep(22, 12, d);
       if (w > 0) h = lerp(h, POOL.level + 0.9 + d * 0.06, w);
     }
+    // Flüstermoor: Senke 1,2–2,4 m mit Torfbecken (WP11)
+    {
+      const d = Math.hypot(x - MOOR.x, z - MOOR.z);
+      if (d < MOOR.r) {
+        const tgt = MOOR.floor + fbm(nDet, x / 9 + 50, z / 9 + 20, 3) * 0.55 + 0.15 * smoothstep(12, 24, d);
+        h = lerp(h, tgt, smoothstep(MOOR.r, MOOR.r - 9, d));
+      }
+    }
+    // Mangroven-Lagune: flacher Meeresarm um eine Wurzelinsel (auf Meereshöhe, Teil des Meeres)
+    {
+      const d = Math.hypot(x - LAGOON.x, z - LAGOON.z);
+      if (d < LAGOON.r) {
+        let tgt;
+        if (d < LAGOON.inner) tgt = LAGOON.mound - Math.pow(d / LAGOON.inner, 2) * 0.12;
+        else if (d < LAGOON.inner + 2.5) tgt = lerp(LAGOON.mound, LAGOON.floor, smoothstep(LAGOON.inner, LAGOON.inner + 2.5, d));
+        else tgt = LAGOON.floor + fbm(nDet, x / 6, z / 6, 2) * 0.12;
+        h = lerp(h, tgt, 1 - smoothstep(LAGOON.r - 3.5, LAGOON.r, d));
+      }
+    }
+    // Gezeitenbecken: Felsschale mit Rand, innen eine Mulde (Pegel animiert zwischen min und max)
+    for (const b of tidePools) {
+      const d = Math.hypot(x - b.x, z - b.z);
+      const t = d / b.r;
+      if (t < 1.9) {
+        const shelf = b.rim * (1 - smoothstep(1.2, 1.9, t)) + fbm(nRock, x / 4, z / 4, 2) * 0.12 * smoothstep(0.9, 1.3, t);
+        h = smax(h, shelf, 0.8);
+        if (t < 1.02) h = smin(h, b.floor + Math.pow(t, 2.2) * (b.rim - 0.15 - b.floor), 0.5);
+      }
+    }
+    // Quellental: drei Terrassen an der Vulkan-Nordostflanke, jede mit warmer Quelle und Mineralrand
+    for (const b of springs) {
+      const d = Math.hypot(x - b.x, z - b.z);
+      if (d < b.r + 7) {
+        const w = smoothstep(b.r + 7, b.r + 2, d);
+        h = lerp(h, b.terrace + 0.28 * smoothstep(b.r + 1.5, b.r - 0.3, d) * smoothstep(b.r - 1.6, b.r - 0.4, d), w);
+        if (d < b.r + 0.6) h = smin(h, b.floor + Math.pow(d / b.r, 2) * (b.terrace - b.floor), 0.4);
+      }
+    }
     // Feine Unebenheiten
     if (D > 0) {
       const flat = 1 - 0.7 * smoothstep(40, 20, Math.hypot(x - FEATURES.harbour.x, z - FEATURES.harbour.z));
-      h += fbm(nDet, x / 11, z / 11, 3) * (0.12 + 0.6 * smoothstep(bw * 0.6, bw + 12, D)) * smoothstep(0, 4, D) * flat;
+      const moorFlat = 1 - 0.6 * smoothstep(MOOR.r, MOOR.r - 8, Math.hypot(x - MOOR.x, z - MOOR.z));
+      h += fbm(nDet, x / 11, z / 11, 3) * (0.12 + 0.6 * smoothstep(bw * 0.6, bw + 12, D)) * smoothstep(0, 4, D) * flat * moorFlat;
     }
     return h;
   }
@@ -286,12 +392,20 @@ export function createIsland({ cell = 2.5, seed = 7 } = {}) {
     }
     pts.push(p.pts[p.pts.length - 1]);
     let hs = pts.map(([x, z]) => applyPads(x, z, heightBase(x, z)));
+    // join: der Anfang liegt auf einem schon gebauten Weg und übernimmt dessen Höhe (keine Stufe an der Abzweigung)
+    let fixed0 = null;
+    if (p.join) {
+      let best = 25;
+      for (const q of pathSamples) { const dq = Math.hypot(q.x - pts[0][0], q.z - pts[0][1]); if (dq < best) { best = dq; fixed0 = q.h; } }
+    }
     for (let pass = 0; pass < 4; pass++) {
+      if (fixed0 !== null) hs[0] = fixed0;
       hs = hs.map((_, i) => {
         let s = 0, c = 0;
         for (let k = -4; k <= 4; k++) { const j = i + k; if (j >= 0 && j < hs.length) { s += hs[j]; c++; } }
         return s / c;
       });
+      if (fixed0 !== null) hs[0] = fixed0;
     }
     pts.forEach(([x, z], i) => pathSamples.push({ x, z, h: Math.max(hs[i], 0.45) }));
     for (let i = start; i < pathSamples.length - 1; i++) pathSegs.push([i, i + 1]);
@@ -332,6 +446,11 @@ export function createIsland({ cell = 2.5, seed = 7 } = {}) {
     // Teich-Mulde
     const dp = Math.hypot(x - POOL.x, z - POOL.z);
     if (dp < POOL.r + 3) h = smin(h, POOL.level - 2.0 + Math.pow(dp / POOL.r, 2) * 2.6, 1.2);
+    // Torfbecken im Moor (flache, dunkle Mulden – man versinkt nicht)
+    for (const b of peat) {
+      const d = Math.hypot(x - b.x, z - b.z);
+      if (d < b.r + 1.5) h = smin(h, b.floor + Math.pow(d / b.r, 2) * (MOOR.floor + 0.2 - b.floor), 0.5);
+    }
     return h;
   }
 
@@ -412,9 +531,20 @@ export function createIsland({ cell = 2.5, seed = 7 } = {}) {
   }
   function zoneById(id) { return ZONES[ZONE_INDEX[id]] || null; }
 
+  // Gewässer am Punkt (ohne Meer/Lagune) → Body oder null
+  function bodyAt(x, z, margin = 1.5) {
+    for (let i = 0; i < bodies.length; i++) {
+      const b = bodies[i];
+      if (b.sea) continue;
+      if (Math.hypot(x - b.x, z - b.z) < b.r + margin) return b;
+    }
+    return null;
+  }
   // Oberfläche für Farben, Schritte und Vegetation
   function surfaceAt(x, z, h = getHeight(x, z), ny = getNormal(x, z, true, _n).y) {
     if (h < 0.05) return 'water';
+    const b = bodyAt(x, z, 0.6);
+    if (b && h < b.level - 0.02) return 'water';
     if (pathWeight(x, z) > 0.45) return 'path';
     const D = coastDist(x, z);
     const th = Math.atan2(z, x);
@@ -423,22 +553,41 @@ export function createIsland({ cell = 2.5, seed = 7 } = {}) {
     if (ny < 0.74) return 'rock';
     const dv = Math.hypot(x - VOLCANO.x, z - VOLCANO.z);
     if (dv < 62 && h > 17 + nZone(x / 14, z / 14) * 5) return 'ash';
+    if (Math.hypot(x - MOOR.x, z - MOOR.z) < MOOR.r - 4 && h < MOOR.floor + 0.35) return 'moor';
     return 'grass';
   }
 
-  // Wasserspiegel an einer Stelle (Meer 0, Teich höher)
+  // Wasserspiegel an einer Stelle (Meer 0, Gewässer nach ihrem Pegel)
   function waterLevel(x, z) {
-    const d = Math.hypot(x - POOL.x, z - POOL.z);
-    if (d < POOL.r + 1.5) return POOL.level;
-    return SEA_LEVEL;
+    const b = bodyAt(x, z, 1.5);
+    return b ? b.level : SEA_LEVEL;
   }
+
+  const water = {
+    bodies,
+    get(id) { return bodyById[id] || null; },
+    levelOf(id) { const b = bodyById[id]; return b ? b.level : SEA_LEVEL; },
+    // Pegel setzen (Gezeitenbecken: zwischen min und max geklemmt). Rückgabe: neuer Pegel oder null.
+    setLevel(id, level) {
+      const b = bodyById[id];
+      if (!b || b.sea) return null;
+      const lo = b.min !== undefined ? b.min : b.floor + 0.1, hi = b.max !== undefined ? b.max : b.level;
+      b.level = clamp(Number(level), Math.min(lo, hi), Math.max(lo, hi));
+      return b.level;
+    },
+    // Gezeiten 0 (Ebbe) … 1 (Flut)
+    tide(id, t) { const b = bodyById[id]; if (!b || b.min === undefined) return null; return water.setLevel(id, lerp(b.min, b.max, clamp(t, 0, 1))); },
+    tideOf(id) { const b = bodyById[id]; return b && b.min !== undefined ? clamp((b.level - b.min) / (b.max - b.min), 0, 1) : null; },
+    bodyAt,
+    byKind(kind) { return bodies.filter((b) => b.kind === kind); },
+  };
 
   const island = {
     cell: c, n, half, heights, flipAt,
-    ZONES, SITES, PATHS, FEATURES,
+    ZONES, SITES, PATHS, FEATURES, WATER_BODIES: bodies,
     spawn: { x: FEATURES.dock.x, z: 146, yaw: Math.PI }, // Blick nach Norden zur Insel
     getHeight, getNormal, isWalkable, zoneAt, zoneWeights, zoneById,
-    coastDist, heightRaw, pathWeight, pathQuery, surfaceAt, waterLevel,
+    coastDist, heightRaw, heightBase, pathWeight, pathQuery, surfaceAt, waterLevel, water,
     noise: { zone: nZone, detail: nDet, rock: nRock },
     siteHeight(id) { const s = SITES[id]; return s ? getHeight(s.x, s.z) : 0; },
   };

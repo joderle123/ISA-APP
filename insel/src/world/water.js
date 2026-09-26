@@ -1,7 +1,17 @@
 // Stilisiertes Wasser: Meer mit Wellen, Tiefenfarben (gebackene Tiefenkarte), Schaumlinien, Glitzern, Fresnel.
-// Dazu Wasserfall im Dschungel und ruhiger Teich darunter.
+// Dazu Wasserfall im Dschungel und die stehenden Gewässer aus island.WATER_BODIES (WP11): Tränensee, leuchtende
+// Gezeitenbecken (Pegel animiert), warme Quellen mit Dampf, dunkle Torfbecken im Moor. Die Mangroven-Lagune ist Teil des Meeres.
+//   water.bodies → [{ def, mesh }] · water.setTide('gezeiten-ost', 0..1) · water.levelAt(x, z) · water.tideAll(0..1)
 import * as THREE from 'three';
 import { FEATURES } from './island.js';
+
+// Farben je Gewässerart: [flach, tief, Glühen (Emission), Schaum]
+const BODY_LOOK = {
+  teich: { a: [0.05, 0.62, 0.55], b: [0.03, 0.3, 0.4], glow: [0, 0, 0], alpha: 0.9, ripple: 1.0 },
+  gezeiten: { a: [0.25, 0.9, 0.82], b: [0.05, 0.45, 0.55], glow: [0.1, 0.5, 0.45], alpha: 0.86, ripple: 0.6 },
+  quelle: { a: [0.62, 0.9, 0.88], b: [0.25, 0.68, 0.72], glow: [0.15, 0.12, 0.05], alpha: 0.8, ripple: 1.6 },
+  moor: { a: [0.14, 0.11, 0.07], b: [0.05, 0.04, 0.03], glow: [0, 0, 0], alpha: 0.96, ripple: 0.35 },
+};
 
 const TEX_HALF = 256;
 
@@ -193,16 +203,10 @@ export function createWater({ island, veil, quality, scene }) {
   ocean.frustumCulled = false;
   scene.add(ocean);
 
-  // ---- Teich im Dschungel ----
+  // ---- Stehende Gewässer (Teich, Gezeitenbecken, Quellen, Torfbecken): ein Shader, je Gewässer eigene Uniforms ----
   const P = FEATURES.pool;
   const W = FEATURES.waterfall;
-  const poolMat = new THREE.ShaderMaterial({
-    uniforms: Object.assign(THREE.UniformsUtils.merge([THREE.UniformsLib.fog]), {
-      uTime: uniforms.uTime, uSunColor: uniforms.uSunColor, uAmbient: uniforms.uAmbient, uSunDir: uniforms.uSunDir,
-      uCenter: { value: new THREE.Vector2(P.x, P.z) }, uRadius: { value: P.r },
-      uImpact: { value: new THREE.Vector2(W.bottom.x, W.bottom.z) },
-    }, veil.uniforms),
-    vertexShader: /* glsl */`
+  const BODY_VERT = /* glsl */`
       varying vec3 vWorld; varying vec3 vFogView;
       #include <fog_pars_vertex>
       void main() {
@@ -214,37 +218,66 @@ export function createWater({ island, veil, quality, scene }) {
         #ifdef USE_FOG
           vFogDepth = -mvPosition.z;
         #endif
-      }`,
-    fragmentShader: /* glsl */`
-      uniform float uTime; uniform vec3 uSunColor; uniform vec3 uAmbient; uniform vec3 uSunDir;
-      uniform vec2 uCenter; uniform float uRadius; uniform vec2 uImpact;
+      }`;
+  const BODY_FRAG = /* glsl */`
+      uniform float uTime; uniform vec3 uSunColor; uniform vec3 uAmbient; uniform vec3 uSunDir; uniform float uNight;
+      uniform vec2 uCenter; uniform float uRadius; uniform vec2 uImpact; uniform float uImpactAmt;
+      uniform vec3 uColA; uniform vec3 uColB; uniform vec3 uGlow; uniform float uAlpha; uniform float uRipple;
       varying vec3 vWorld; varying vec3 vFogView;
       #include <fog_pars_fragment>
       ${veil.glsl}
+      float hb(vec2 p) { return fract(sin(dot(p, vec2(127.1, 311.7))) * 43758.5453); }
+      float nb(vec2 p) { vec2 i = floor(p), f = fract(p); f = f*f*(3.0-2.0*f); return mix(mix(hb(i), hb(i+vec2(1,0)), f.x), mix(hb(i+vec2(0,1)), hb(i+vec2(1,1)), f.x), f.y); }
       void main() {
         float r = distance(vWorld.xz, uCenter) / uRadius;
-        vec3 col = mix(vec3(0.05, 0.62, 0.55), vec3(0.03, 0.3, 0.4), smoothstep(0.1, 0.9, 1.0 - r));
+        vec3 col = mix(uColA, uColB, smoothstep(0.1, 0.9, 1.0 - r));
+        // leise Kräuselung (Quellen blubbern stärker, Torf liegt fast still)
+        float rip = nb(vWorld.xz * 1.6 + vec2(uTime * 0.25, -uTime * 0.2)) * nb(vWorld.xz * 2.7 - uTime * 0.3);
+        col += (rip - 0.25) * 0.12 * uRipple;
+        // Einschlag des Wasserfalls (nur Tränensee)
         float di = distance(vWorld.xz, uImpact);
-        float ring = smoothstep(0.75, 1.0, sin(di * 2.2 - uTime * 4.0) * 0.5 + 0.5) * (1.0 - smoothstep(1.0, 7.0, di));
+        float ring = smoothstep(0.75, 1.0, sin(di * 2.2 - uTime * 4.0) * 0.5 + 0.5) * (1.0 - smoothstep(1.0, 7.0, di)) * uImpactAmt;
         float edge = smoothstep(0.82, 1.0, r);
-        float foam = max(max(ring * 0.6, edge * 0.7), 1.0 - smoothstep(0.8, 2.6, di));
+        float foam = max(max(ring * 0.6, edge * 0.7), (1.0 - smoothstep(0.8, 2.6, di)) * uImpactAmt);
+        vec3 V = normalize(cameraPosition - vWorld);
+        float fres = pow(1.0 - max(V.y, 0.0), 3.0);
         col *= uAmbient + uSunColor * 0.5;
+        col += uSunColor * pow(max(dot(reflect(-V, vec3(0.0, 1.0, 0.0)), uSunDir), 0.0), 40.0) * 0.35;
         col = mix(col, vec3(1.0) * (uAmbient + uSunColor * 0.5), foam);
+        col = mix(col, uAmbient * 1.4, fres * 0.35);
         col = lumoApplyVeil(col, vWorld);
-        gl_FragColor = vec4(col, 0.9);
+        // Glühen (leuchtende Gezeitenbecken: nachts stärker, im Schleier gedämpft)
+        col += uGlow * (0.4 + uNight * 0.9) * (1.0 - gLumoVeil * 0.8) * (0.7 + 0.3 * rip);
+        gl_FragColor = vec4(col, uAlpha);
         #include <tonemapping_fragment>
         #include <colorspace_fragment>
         #ifdef USE_FOG
           gl_FragColor.rgb = lumoFog(gl_FragColor.rgb, vFogDepth, vFogView, fogColor, fogNear, fogFar);
         #endif
         gl_FragColor.rgb = lumoGrade(gl_FragColor.rgb);
-      }`,
-    transparent: true, fog: true,
-  });
-  const pool = new THREE.Mesh(new THREE.CircleGeometry(P.r + 1.4, 40).rotateX(-Math.PI / 2), poolMat);
-  pool.position.set(P.x, P.level, P.z);
-  pool.renderOrder = 2;
-  scene.add(pool);
+      }`;
+  const bodies = [];
+  const bodyDefs = island.water ? island.water.bodies.filter((b) => !b.sea) : [{ id: 'traenensee', kind: 'teich', x: P.x, z: P.z, r: P.r, level: P.level }];
+  for (const b of bodyDefs) {
+    const look = BODY_LOOK[b.kind] || BODY_LOOK.teich;
+    const mat = new THREE.ShaderMaterial({
+      uniforms: Object.assign(THREE.UniformsUtils.merge([THREE.UniformsLib.fog]), {
+        uTime: uniforms.uTime, uSunColor: uniforms.uSunColor, uAmbient: uniforms.uAmbient, uSunDir: uniforms.uSunDir, uNight: uniforms.uNight,
+        uCenter: { value: new THREE.Vector2(b.x, b.z) }, uRadius: { value: b.r },
+        uImpact: { value: new THREE.Vector2(W.bottom.x, W.bottom.z) }, uImpactAmt: { value: b.id === 'traenensee' ? 1 : 0 },
+        uColA: { value: new THREE.Vector3(...look.a) }, uColB: { value: new THREE.Vector3(...look.b) }, uGlow: { value: new THREE.Vector3(...look.glow) },
+        uAlpha: { value: look.alpha }, uRipple: { value: look.ripple },
+      }, veil.uniforms),
+      vertexShader: BODY_VERT, fragmentShader: BODY_FRAG, transparent: true, fog: true,
+    });
+    const mesh = new THREE.Mesh(new THREE.CircleGeometry(b.r + (b.kind === 'moor' ? 1.0 : 1.4), b.kind === 'teich' ? 40 : 28).rotateX(-Math.PI / 2), mat);
+    mesh.position.set(b.x, b.level, b.z);
+    mesh.renderOrder = 2;
+    mesh.name = 'wasser-' + b.id;
+    scene.add(mesh);
+    bodies.push({ def: b, mesh, mat });
+  }
+  const pool = (bodies.find((x) => x.def.id === 'traenensee') || bodies[0]).mesh;
 
   // ---- Wasserfall ----
   const topY = island.getHeight(W.top.x, W.top.z) + 0.35;
@@ -349,15 +382,24 @@ export function createWater({ island, veil, quality, scene }) {
   scene.add(stream);
 
   const splash = { x: W.bottom.x, y: botY + 0.3, z: W.bottom.z, top: topY };
-  let splashT = 0;
+  let splashT = 0, steamT = 0;
+  const springs = bodies.filter((b) => b.def.kind === 'quelle');
+  const tides = bodies.filter((b) => b.def.kind === 'gezeiten');
+  // Gezeiten laufen von allein (ein Zyklus ≈ 4 Minuten), bis jemand den Pegel per API setzt (auto = false)
+  const tide = { auto: true, period: 240, phase: 0 };
 
   return {
-    ocean, pool, waterfall, stream, depthTex, uniforms, splash,
+    ocean, pool, waterfall, stream, depthTex, uniforms, splash, bodies, tide,
     material: mat,
     // Wassertiefe (Meer) an Stelle x,z (positiv = unter Wasser)
     depthAt(x, z) { return Math.max(0, -island.getHeight(x, z)); },
-    // Wasserspiegel (Meer 0, Teich höher)
+    // Wasserspiegel (Meer 0, Gewässer nach Pegel)
     levelAt(x, z) { return island.waterLevel(x, z); },
+    // Pegel eines Gewässers setzen (sichtbar sofort); Gezeitenbecken zwischen min und max
+    setLevel(id, level) { tide.auto = false; return island.water ? island.water.setLevel(id, level) : null; },
+    setTide(id, t) { tide.auto = false; return island.water ? island.water.tide(id, t) : null; },
+    tideAll(t) { tide.auto = false; for (const b of tides) island.water.tide(b.def.id, t); return t; },
+    body(id) { return bodies.find((b) => b.def.id === id) || null; },
     waveHeight(x, z, t = uniforms.uTime.value) {
       return Math.sin(x * 0.11 + z * 0.045 + t * 1.05) * 0.26 + Math.sin(-x * 0.063 + z * 0.12 + t * 0.87) * 0.2;
     },
@@ -377,14 +419,36 @@ export function createWater({ island, veil, quality, scene }) {
     },
     update(dt, time, particles, cameraPos) {
       uniforms.uTime.value = time;
-      // Gischt am Wasserfall
+      // Gezeiten: langsamer Zyklus Ebbe → Flut → Ebbe (nur solange niemand den Pegel von Hand setzt)
+      if (tide.auto && island.water && dt > 0) {
+        tide.phase = (tide.phase + dt / tide.period) % 1;
+        const t = 0.5 - 0.5 * Math.cos(tide.phase * Math.PI * 2);
+        for (const b of tides) island.water.tide(b.def.id, t);
+      }
+      // Pegel der Gewässer auf die Meshes übertragen
+      for (let i = 0; i < bodies.length; i++) {
+        const b = bodies[i];
+        if (b.mesh.position.y !== b.def.level) b.mesh.position.y = b.def.level;
+        if (cameraPos) b.mesh.visible = Math.hypot(cameraPos.x - b.def.x, cameraPos.z - b.def.z) < 240;
+      }
       if (particles && cameraPos) {
+        // Gischt am Wasserfall
         const d = Math.hypot(cameraPos.x - splash.x, cameraPos.z - splash.z);
         if (d < 140) {
           splashT += dt;
           while (splashT > 0.07) {
             splashT -= 0.07;
             particles.emit({ x: splash.x, y: splash.y, z: splash.z, spread: 3.2, speed: 1.6, up: 3.2, count: 2, color: 0xeefcff, size: 1.1, life: 1.3, gravity: -2.5, drag: 1.2, grow: 1.8, alpha: 0.55 });
+          }
+        }
+        // Dampf über den warmen Quellen
+        steamT += dt;
+        if (steamT > 0.16) {
+          steamT = 0;
+          for (const s of springs) {
+            const b = s.def;
+            if (Math.hypot(cameraPos.x - b.x, cameraPos.z - b.z) > 120) continue;
+            particles.emit({ x: b.x + (Math.random() - 0.5) * b.r * 1.4, y: b.level + 0.15, z: b.z + (Math.random() - 0.5) * b.r * 1.4, count: 1, spread: 0.6, speed: 0.25, up: 0.9, color: 0xf2f6f8, size: 1.4, life: 3.2, gravity: 0.15, drag: 0.6, grow: 2.2, alpha: 0.28 });
           }
         }
       }
