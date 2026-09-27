@@ -2,7 +2,7 @@
 // Drei Anfänge je nach Wahl 2 (m0.ilda), Folgen von Wahl 1 (m0.jolie) und Wahl 3 (m0.plakat), docs/STORY.md §6.
 // Spuren (§8): du auf dem Boot mit dem Handy · die rausgerissene Seite · Kratzer am Turmschloss.
 export default {
-  id: 'm0-nach-e02', cast: ['jolie'], camera: 'talk', rewind: false, start: 'a',
+  id: 'm0-nach-e02', cast: ['jolie'], camera: 'talk', rewind: true, start: 'a',
   nodes: {
     a: {
       branch: [{ when: { flag: ['m0.ilda', '==', 'gesagt'] }, goto: 'g0' }, { when: { flag: ['m0.ilda', '==', 'fragselbst'] }, goto: 'f0' }],
@@ -14,7 +14,13 @@ export default {
     },
     b1: { speaker: 'jolie', say: 'Ilda war nicht bei mir. Also hast du dichtgehalten.', anim: 'think', goto: 'b1b' },
     b1b: { speaker: 'jolie', say: '…', anim: 'idle', goto: 'c' },
-    g0: { speaker: 'erzaehler', say: 'Morgen. Jolie wartet unten. Schaut dich nicht an.', goto: 'g1' },
+    g0: {
+      branch: [{ when: { flag: ['m0.jolie', '==', 'versprochen'] }, goto: 'g0v' }, { when: { flag: ['m0.jolie', '==', 'offen'] }, goto: 'g0o' }],
+      speaker: 'erzaehler', say: 'Morgen. Jolie wartet unten. Schaut dich nicht an.', goto: 'g1',
+    },
+    // Preis von Wahl 1: gebrochenes Versprechen oder ehrliches „kann ich nicht versprechen“ – nur der Ton unterscheidet sich.
+    g0v: { speaker: 'jolie', say: 'Du hattest es versprochen.', anim: 'sad', goto: 'g1' },
+    g0o: { speaker: 'jolie', say: 'Du hast ja nichts versprochen. Stimmt.', anim: 'idle', goto: 'g1' },
     g1: {
       speaker: 'jolie', say: 'Ilda war bei mir. Du hast es ihr gesagt.', anim: 'sad',
       choices: [
@@ -34,7 +40,7 @@ export default {
       ],
     },
     f2: { speaker: 'jolie', say: '… Hat sie echt gemacht. Komisch.', anim: 'idle', goto: 'c' },
-    c: { speaker: 'jolie', say: 'Das zeig ich sonst keinem.', anim: 'idle', goto: 'd' },
+    c: { speaker: 'erzaehler', say: 'Sie hält dir das Heft hin. Zieht es fast zurück.', goto: 'd' },
     d: {
       speaker: 'erzaehler', say: 'Seite drei: du, auf dem Boot. Den Daumen überm Handy.',
       choices: [
@@ -58,9 +64,10 @@ export default {
     h: { branch: [{ when: { flag: ['m0.plakat', '==', 'weg'] }, goto: 'h1' }], goto: 'i' },
     h1: { speaker: 'jolie', say: 'Jhemp. Vom Plakat. Hab ihn nachgezeichnet.', anim: 'think', goto: 'h2' },
     h2: { speaker: 'erzaehler', say: 'Ohne Spruch. Er lacht.', goto: 'i' },
-    i: { speaker: 'jolie', say: 'Die Kratzer am Turmschloss. Schon mal gesehen?', anim: 'think', goto: 'i2' },
-    i2: { speaker: 'jolie', say: 'Da hat jemand lange gebraucht.', anim: 'sad', goto: 'j' },
-    j: { speaker: 'glimm', say: 'Kratzer. Spannend. Nicht.', goto: 'k' },
+    i: { speaker: 'erzaehler', say: 'Seite fünf: ein Türschloss. Voller Kratzer. Genau gezeichnet.', goto: 'i2' },
+    i2: { speaker: 'jolie', say: 'Da hat jemand lange gebraucht.', anim: 'sad', goto: 'i3' },
+    // Lebenszeichen (§19): Jhemp lebt in der Sturmhütte (M3) – ohne Namen, nur Rauch.
+    i3: { speaker: 'erzaehler', say: 'Seite sechs: Rauch über den Klippen. Jeden Abend.', goto: 'k' },
     k: { speaker: 'jolie', say: 'Seite sieben: Tun. Mit Möwe auf dem Kopf.', anim: 'cheer', goto: 'k2' },
     k2: { speaker: 'jolie', say: 'Das sieht er nie. Nie.', anim: 'idle', end: true },
   },

@@ -164,16 +164,16 @@ export function buildMoments(moments = [], { max = 3 } = {}) {
 
 // ---- Cliffhanger-Pool (DESIGN §3): ein Satz zum Geheimnis, passend zum Fortschritt, ≤ 12 Wörter ----
 export const CLIFFHANGERS = {
-  0: ['Nachts flackert im Turm ein Licht. Kurz.', 'Ilda schaut zum Turm. Und sagt nichts.', 'Am Steg liegt ein Schlüssel. Verrostet.', 'Jemand hat den Bootsschuppen abgeschlossen. Von innen.'],
+  0: ['Auf einer Kiste am Steg steht ein neuer Name.', 'Ilda schaut zum Turm. Und sagt nichts.', 'Ilda trägt den Brief noch. Zugeklebt.', 'An der Hafenmauer: frische Farbe. WER REDET …', 'Über den Klippen steigt Rauch. Jeden Abend.'],
   1: ['In der Höhle summt etwas im Takt der Flut.', 'Tiago sagt, oben in der Mangrove sieht man alles.', 'Eine Möwe trägt ein Stück Glas. Es glänzt.'],
   2: ['Über dem Wasserfall kreist ein siebter Vogel. Grau.', 'Maëlle träumt von einem Schiff. Ohne Steuer.', 'Im Kronendorf hängt ein Foto. Jemand hat es zerrissen.'],
   3: ['Ein Blitz zeigt eine Gestalt am Gipfel.', 'Luc sagt, die Hütte da oben war mal bewohnt.', 'Im Sturm ruft jemand. Oder ist es der Wind?'],
-  4: ['Ein Stein im Moor flüstert deinen Spielnamen.', 'Der Steinriese hat eine neue Inschrift. Frisch.', 'Pit hat eine Nachricht bekommen. Er zeigt sie keinem.'],
+  4: ['Im Moor liegt ein Stein. Jemand hat ihn poliert.', 'Der Steinriese hat eine neue Inschrift. Frisch.', 'Pit hat eine Nachricht bekommen. Er zeigt sie keinem.'],
   5: ['Auf Noors Mauer steht ein neuer Satz. Über dich.', 'Oma Lucinda sagt: „Ich habe es gesehen. Damals.“', 'Der Markt ist still. Zu still.'],
   6: ['Am Krater brennt ein Feuer, das niemand angezündet hat.', 'Mika hat einen Brief. Er liest ihn nicht.', 'Grisel kommt näher. Jede Nacht ein Stück.'],
-  7: ['Über der Nordküste glimmt ein Netz aus Licht.', 'Kims Spiegel hat dein Gesicht gespeichert. Angeblich.', 'Ein Video geht herum. Vierzig Mal.'],
+  7: ['Über der Nordküste glimmt ein Netz aus Licht.', 'Kims Netz kennt ein altes Video.', 'Ein Video geht herum. Vierzig Mal.'],
   8: ['Im Quellental raucht ein zweites Feuer.', 'Jhemp hat drei Nächte nicht geschlafen. Wieder.'],
-  9: ['Das Herzglas fehlt noch ein Splitter. Wer hat ihn?', 'Grisel wartet im Turm. Sie hat Hunger.'],
+  9: ['Das Herzglas fehlt noch ein Splitter. Wer hat ihn?', 'Grisel wartet im Turm. Sie ist satt von Schweigen.'],
 };
 export function pickCliffhanger({ module = 0, day = 1, pool = CLIFFHANGERS, extra = [] } = {}) {
   const m = clamp(module, 0, 9);

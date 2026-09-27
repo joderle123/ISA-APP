@@ -133,9 +133,9 @@ export default {
       },
       campfire() {
         return campfire.show({
-          lines: [{ who: 'jolie', text: 'Du hast dich einfach neben mich gesetzt.' }, { who: 'tun', text: 'Okay, die Regel war gut. Zugegeben.' }],
+          lines: [{ who: 'jolie', text: 'Zwei Sekunden. Und dann noch mehr.' }, { who: 'tun', text: 'Okay, die Regel war gut. Zugegeben.' }],
           moments: [{ id: 'moewe', icon: 'kamera', title: 'Die Möwe', color: '#ffd23f' }, { id: 'steg', icon: 'muschel', title: 'Am Steg', color: '#39d0c8' }, { id: 'feuer', icon: 'feuer', title: 'Das Feuer', color: '#ff8c42' }],
-          cliffhanger: 'Nachts flackert im Turm ein Licht. Kurz.',
+          cliffhanger: 'Über den Klippen steigt Rauch. Jeden Abend.',
         });
       },
       glimm() { return bubbles.glimm('Regeln. Gähn. Okay, die war gut.'); },

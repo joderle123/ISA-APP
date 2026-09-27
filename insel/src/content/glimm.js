@@ -34,5 +34,5 @@ export default {
   gate: ['Zu. Braucht die Kraft da oben.', 'Symbol lesen. Kommt noch.', 'Später. Mit der richtigen Kraft.'],
   kaelte: ['Eingefroren. Sturm steht.', 'Kalt. Still. Geht durch.'],
   klang: ['Ton trägt. Solange er klingt.', 'Lauf, solange es klingt.'],
-  zyniker: ['Gefühle? Nutzlos. Angeblich.', 'Regeln. Gähn. Okay, die war gut.', 'Ich war nie grau. Fast nie.', 'Die Insel schweigt. Ich meistens auch.', 'Du schaust wieder aufs Handy.'],
+  zyniker: ['Gefühle? Nutzlos. Angeblich.', 'Regeln. Gähn. Okay, die war gut.', 'Ich war nie grau. Fast nie.', 'Die Insel schweigt. Ich meistens auch.'],
 };

@@ -41,7 +41,7 @@ export default {
       ],
     },
     e1: { speaker: 'tun', say: 'Akku. Hab ich doch gesagt.', anim: 'idle', goto: 'e1b' },
-    e1b: { speaker: 'glimm', say: 'Lämpchen. Immer noch grün.', goto: 'f' },
+    e1b: { speaker: 'erzaehler', say: 'Das Lämpchen ist grün. Tun legt den Daumen drauf.', goto: 'f' },
     e2: { speaker: 'tun', say: 'Was guckst du so?', anim: 'angry', goto: 'f' },
     e3: { speaker: 'tun', say: 'Nee. Lieber nicht.', anim: 'sad', goto: 'f' },
     f: { speaker: 'tun', say: 'Weiter. Bevor die Brücke es sich anders überlegt.', anim: 'cheer', goto: 'g' },

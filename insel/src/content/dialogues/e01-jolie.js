@@ -28,16 +28,19 @@ export default {
     },
     d2: { speaker: 'jolie', say: 'Tu ich gerade nicht.', anim: 'idle', goto: 'e' },
     e: {
-      speaker: 'jolie', say: 'Das lag im Turm. Nach dem Knall. Bei dir leuchtet es.', anim: 'think',
+      speaker: 'jolie', say: 'Hab ich gefunden. Bei dir leuchtet es.', anim: 'think',
       effects: [{ shard: 1 }, { deed: 'jolie-dasein' }],
       choices: [
-        { say: 'Du warst im Turm?', icon: 'laterne', goto: 'f' },
+        { say: 'Wo gefunden?', icon: 'laterne', goto: 'f' },
         { say: 'Warum gibst du mir das?', icon: 'frage', goto: 'e2' },
-        { sign: 'nicken', label: 'Nicken', goto: 'f' },
+        { sign: 'nicken', label: 'Nicken', goto: 'f2' },
       ],
     },
-    e2: { speaker: 'jolie', say: 'Bei mir leuchtet es nicht.', anim: 'sad', goto: 'g' },
-    f: { speaker: 'jolie', say: 'Einer musste nachschauen. Gefragt hat mich keiner.', anim: 'idle', goto: 'g' },
+    e2: { speaker: 'jolie', say: 'Bei mir leuchtet es nicht.', anim: 'sad', goto: 'f2' },
+    // Wer nachfragt, bekommt Ort und Zeit – und den Widerspruch „Gefragt hat mich keiner“ (Ilda soll aber nicht fragen).
+    f: { speaker: 'jolie', say: '… Oben. In der Nacht.', anim: 'sad', goto: 'f1' },
+    f1: { speaker: 'jolie', say: 'Gefragt hat mich keiner.', anim: 'idle', goto: 'g' },
+    f2: { speaker: 'jolie', say: 'War im Turm. Egal.', anim: 'idle', goto: 'g' },
     g: {
       speaker: 'jolie', say: 'Sag es keinem. Auch Ilda nicht.', anim: 'sad',
       choices: [
@@ -48,8 +51,8 @@ export default {
     },
     g2: { speaker: 'jolie', say: 'Die fragt dann. Warum ich da war.', anim: 'think', goto: 'g' },
     h1: { speaker: 'jolie', say: '… Danke.', anim: 'idle', goto: 'h1b' },
-    h1b: { speaker: 'glimm', say: 'Versprochen. Mutig. Oder dumm.', end: true },
+    h1b: { speaker: 'glimm', say: 'Versprechen. Wiegen nichts. Angeblich.', end: true },
     h2: { speaker: 'jolie', say: 'Okay. Dann hab ich nichts gesagt.', anim: 'sad', goto: 'h2b' },
-    h2b: { speaker: 'glimm', say: 'Ehrlich. Autsch.', end: true },
+    h2b: { speaker: 'erzaehler', say: 'Sie zieht die Kapuze wieder hoch.', end: true },
   },
 };

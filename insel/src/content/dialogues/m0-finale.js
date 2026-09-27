@@ -1,8 +1,8 @@
 // Story-Beat Demo-Ende nach j1-e03 (am Morgen nach dem Lagerfeuer, Hafen-Plugin), docs/STORY.md §4/§5/§3:
 // Der Hafen leuchtet – und die Kisten stehen trotzdem. Mika an der Hafenmauer (Spitze passt zu m0.plakat).
-// Der Splitter zieht zum Strand. Wer bei Ilda nachfragt, erfährt den Plan. Zuletzt der Entwurf: „Noch nicht.“
+// Die Uhr bekommt ein Gesicht (WAGNER-Kiste). Mika macht ein Angebot (m0.mika = angebot, nur Text). Wer bei Ilda nachfragt, erfährt den Plan. Zuletzt der Entwurf: „Noch nicht.“
 export default {
-  id: 'm0-finale', cast: ['jolie', 'ilda', 'tun', 'mika'], camera: 'talk', rewind: false, start: 'a',
+  id: 'm0-finale', cast: ['jolie', 'ilda', 'tun', 'mika'], camera: 'talk', rewind: true, start: 'a',
   nodes: {
     a: { speaker: 'erzaehler', say: 'Morgen. Der Hafen leuchtet. Zum ersten Mal seit einem Jahr.', goto: 'b' },
     b: {
@@ -12,8 +12,9 @@ export default {
         { label: 'Zum Turm schauen', icon: 'laterne', goto: 'b2' },
       ],
     },
-    b1: { speaker: 'ilda', say: 'Bunt ist schön. Im Sturm sieht man trotzdem nichts.', anim: 'sad', goto: 'd' },
-    b2: { speaker: 'erzaehler', say: 'Der Turm. Dunkel wie immer.', goto: 'd' },
+    b1: { speaker: 'ilda', say: 'Bunt ist schön. Im Sturm sieht man trotzdem nichts.', anim: 'sad', goto: 'b1b' },
+    b1b: { speaker: 'erzaehler', say: 'Auf der obersten Kiste steht: WAGNER.', goto: 'd' },
+    b2: { speaker: 'erzaehler', say: 'Der Turm. Dunkel wie immer.', goto: 'b1b' },
     d: { speaker: 'erzaehler', say: 'Oben auf der Hafenmauer sitzt jemand. Rotes Tuch.', goto: 'e' },
     e: {
       branch: [
@@ -32,14 +33,24 @@ export default {
         { say: 'Und warum sprühst du es dann überall?', icon: 'frage', goto: 'f3' },
       ],
     },
-    f1: { speaker: 'mika', say: 'Frag deinen Kumpel mit der Kamera.', anim: 'idle', goto: 'f1b' },
-    f1b: { speaker: 'tun', say: '…', anim: 'sad', goto: 'g' },
-    f2: { speaker: 'mika', say: 'Klar hab ich recht. Frag rum.', anim: 'idle', goto: 'f2b' },
-    f2b: { speaker: 'glimm', say: 'Er glaubt das. Wirklich.', goto: 'g' },
-    f3: { speaker: 'mika', say: 'Damit keiner vergisst, was Reden anrichtet.', anim: 'idle', goto: 'g' },
+    f1: { speaker: 'mika', say: 'Einer, der nicht mehr hier ist.', anim: 'idle', goto: 'f1b' },
+    f1b: { speaker: 'tun', say: '…', anim: 'sad', goto: 'g0' },
+    f2: { speaker: 'mika', say: 'Nicht vielleicht.', anim: 'idle', goto: 'f2b' },
+    f2b: { speaker: 'mika', say: 'Krater hat Platz. Falls du’s leid wirst.', anim: 'idle', effects: [{ flag: 'm0.mika', set: 'angebot' }], goto: 'g0' },
+    f3: { speaker: 'mika', say: 'Damit keiner vergisst, was Reden anrichtet.', anim: 'idle', goto: 'g0' },
+    // Mikas stärkster Moment: er hat nicht ganz unrecht (STORY §4). Keine Figur widerspricht hier.
+    g0: {
+      speaker: 'mika', say: 'Letzten Sommer haben alle geredet. Frag, wem’s geholfen hat.', anim: 'talk',
+      choices: [
+        { label: 'Schweigen', icon: 'ohr', goto: 'g' },
+        { say: 'Und wem hilft Schweigen?', icon: 'frage', goto: 'g1' },
+      ],
+    },
+    // Der Riss in Mikas Rüstung – ein Wort, dann sofort wieder Spott.
+    g1: { speaker: 'mika', say: '… Mir.', anim: 'idle', goto: 'h' },
     g: { speaker: 'mika', say: 'Bunt steht euch. Hält nur nicht.', anim: 'idle', goto: 'h' },
     h: {
-      speaker: 'jolie', say: 'Der Splitter hat die ganze Nacht geglüht. Richtung Strand.', anim: 'think',
+      speaker: 'jolie', say: 'Der Splitter war die ganze Nacht warm.', anim: 'think',
       choices: [
         { say: 'Zeig mal.', icon: 'splitter', goto: 'i' },
         { sign: 'nicken', label: 'Nicken', goto: 'i' },
@@ -75,7 +86,7 @@ export default {
       speaker: 'erzaehler', say: 'Abends. Der Entwurf. Ein Satz, immer noch.',
       choices: [{ say: 'Noch nicht.', icon: 'uhr', goto: 'p' }],
     },
-    p: { speaker: 'glimm', say: 'Acht Splitter fehlen. Einer am Strand.', goto: 'q' },
+    p: { speaker: 'glimm', say: 'Noch nicht. Hm. Kenn ich.', goto: 'q' },
     q: { speaker: 'erzaehler', say: 'Der nächste Kurs-Code öffnet den Weg.', end: true },
   },
 };

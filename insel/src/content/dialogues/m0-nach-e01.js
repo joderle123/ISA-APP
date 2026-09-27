@@ -2,7 +2,7 @@
 // Ilda an der Glut, der leere Stuhl, ihr zugeklebter Brief, ein abgebrochener Satz – dann fragt sie direkt nach Jolie.
 // Flag m0.ilda = ausgewichen | fragselbst | gesagt. Keine Antwort ist richtig; jede kostet etwas (Folgen: m0-nach-e02, e03-kodex).
 export default {
-  id: 'm0-nach-e01', cast: ['ilda'], camera: 'talk', rewind: false, start: 'a',
+  id: 'm0-nach-e01', cast: ['ilda'], camera: 'talk', rewind: true, start: 'a',
   nodes: {
     a: { speaker: 'erzaehler', say: 'Später. Die anderen sind weg. Ilda sitzt noch an der Glut.', goto: 'b' },
     b: {
@@ -23,7 +23,15 @@ export default {
         { sign: 'kopfschuetteln', label: 'Kopfschütteln', goto: 'f' },
       ],
     },
-    f: { speaker: 'erzaehler', say: 'Sie nickt nur. In ihrer Hand ein Brief. Zugeklebt.', goto: 'g' },
+    f: { speaker: 'erzaehler', say: 'Sie nickt nur. In ihrer Hand ein Brief. Zugeklebt.', goto: 'f2' },
+    f2: {
+      speaker: 'ilda', say: 'Letzten Sommer hab ich …', anim: 'sad',
+      choices: [
+        { label: 'Warten', icon: 'ohr', goto: 'f3' },
+        { say: 'Was hast du?', icon: 'frage', tone: 'ruhig', goto: 'f3' },
+      ],
+    },
+    f3: { speaker: 'erzaehler', say: 'Sie stochert in der Glut. Der Satz bleibt da.', goto: 'g' },
     g: {
       speaker: 'ilda', say: 'Ende der Saison mach ich …', anim: 'sad',
       choices: [
@@ -33,9 +41,9 @@ export default {
     },
     g1: { speaker: 'ilda', say: 'Hab ich das gesagt? Hab ich nicht.', anim: 'idle', goto: 'h' },
     g2: { speaker: 'ilda', say: 'Gut, dass du nicht fragst.', anim: 'idle', goto: 'h' },
-    h: { speaker: 'ilda', say: 'Die Kleine vom Ufer. Jolie.', anim: 'think', goto: 'i' },
+    h: { speaker: 'erzaehler', say: 'Ildas Blick bleibt an deinem Splitter hängen.', goto: 'i' },
     i: {
-      speaker: 'ilda', say: 'Die war am Turm. In der Nacht. Oder?', anim: 'think',
+      speaker: 'ilda', say: 'Das Glas kenn ich. Jolie war am Turm. Oder?', anim: 'think',
       choices: [
         { say: 'Weiß ich nicht.', icon: 'x', effects: [{ flag: 'm0.ilda', set: 'ausgewichen' }], goto: 'i1' },
         { say: 'Frag sie selbst.', icon: 'frage', effects: [{ flag: 'm0.ilda', set: 'fragselbst' }], goto: 'i2' },
@@ -48,7 +56,7 @@ export default {
     i2b: { speaker: 'ilda', say: 'Selbst fragen. … Ja. Das wär mal was.', anim: 'sad', goto: 'j' },
     i3: { speaker: 'ilda', say: 'Danke.', anim: 'sad', goto: 'i3b' },
     i3b: { branch: [{ when: { flag: ['m0.jolie', '==', 'versprochen'] }, goto: 'i3v' }], speaker: 'erzaehler', say: 'Sie schaut lange ins Feuer.', goto: 'j' },
-    i3v: { speaker: 'glimm', say: 'Und das Versprechen?', goto: 'j' },
+    i3v: { speaker: 'erzaehler', say: 'Unten am Ufer brennt noch ein Licht. Bei Jolie.', goto: 'j' },
     j: { speaker: 'ilda', say: 'Geh schlafen. Die Möwen kommen früh.', anim: 'idle', goto: 'k' },
     k: { speaker: 'erzaehler', say: 'Du schläfst am Feuer ein. Der Stuhl bleibt leer.', end: true },
   },

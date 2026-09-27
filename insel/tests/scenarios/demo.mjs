@@ -158,7 +158,7 @@ try {
   const k1 = await page.evaluate(() => ({ lachen: LUMO.state.get('flags.kodex.lachen'), deed: LUMO.state.get('deeds', []).includes('kodex-regel'), bond: LUMO.npcs.bond('tun') }));
   check('Kodex ausgehandelt: Regel „Niemand wird ausgelacht“, Tat, Bindung Tun 1', ok2 && k1.lachen === true && k1.deed && k1.bond >= 1, J(k1));
   await goAndAct(page, 'hafen.ufer', sceneOpen);
-  const ok3 = await playScene(page, ['Dazusetzen', 'Ich hab Zeit', 'Du warst im Turm', 'Versprochen'], { onChoices: async () => { await frames(page, 2); await shot(page, '203_demo_jolie'); } });
+  const ok3 = await playScene(page, ['Dazusetzen', 'Ich hab Zeit', 'Wo gefunden', 'Versprochen'], { onChoices: async () => { await frames(page, 2); await shot(page, '203_demo_jolie'); } });
   const j1 = await page.evaluate(() => ({ jolie: LUMO.state.get('flags.m0.jolie'), deed: LUMO.state.get('deeds', []).includes('jolie-versprochen') }));
   check('Jolie: Kacheln mit „Dazusetzen“ (Zeichen), Szene bis zum Ende, Wahl 1 „Versprochen.“ → flags.m0.jolie', ok3 && playScene.seen.includes('Dazusetzen') && j1.jolie === 'versprochen' && j1.deed, J({ seen: playScene.seen, j1 }));
   await waitFor(page, () => LUMO.state.get('units.j1-e01') === 'fertig', 30000);
@@ -241,7 +241,7 @@ try {
   await waitFor(page, () => LUMO.world.veil.zoneValue('hafen') <= 0.01, 40000);
   const e3 = await page.evaluate(() => ({ zeile: LUMO.state.get('flags.kodex.zeile'), patches: LUMO.state.get('patches', []), veil: LUMO.world.veil.zoneValue('hafen'), fires: LUMO.session.signalfeuer.litIds().filter((id) => id.startsWith('sf-hafen')).length, saved: LUMO.save.slots()[LUMO.save.current].unitsDone }));
   const kd = { d5: await visited('e03-kodex', 'd6'), d3: await visited('e03-kodex', 'd3') };
-  check('e03-Kodex: Ilda merkt das Ausweichen („Schlecht für mich.“), kein Dank an Jolie', kd.d5 && !kd.d3, J(kd));
+  check('e03-Kodex: Ilda merkt das Ausweichen (Blick, „Einer muss ja.“), kein Dank an Jolie', kd.d5 && !kd.d3, J(kd));
   check('e03 fertig: Kodex-Zeile, drei Aufnäher, Hafen ganz bunt (Schleier 0), vier Hafen-Feuer brennen, Spielstand gesichert (3 Einheiten)', ok6 && e3.zeile === 'stopp' && e3.patches.length === 3 && e3.veil <= 0.01 && e3.fires === 4 && e3.saved === 3, J(e3));
   await page.evaluate(() => { LUMO.debug.teleport({ x: 6, z: 128 }, Math.atan2(4 - 6, 106 - 128)); LUMO.debug.advance(0.5); LUMO.cameraRig.behindPlayer(); LUMO.cameraRig.snap(); });
   await frames(page, 4);
@@ -281,9 +281,9 @@ try {
   check('Namensschild klein und elegant: Pille 24–34 px nah wie fern', tNear.vis && tFar.vis && tNear.px >= 24 && tNear.px <= 34 && tFar.px >= 24 && tFar.px <= 34, J({ near: tNear, far: tFar }));
 
   // ---- 6b Demo-Ende (m0-finale, nach den Bild-Prüfungen, weil die Szene Figuren umstellt): Mika an der Hafenmauer mit der Spitze zum umgedrehten Plakat, Ilda auf Nachfrage ----
-  const okF = await playBeat('m0-finale', ['Warum packen', 'Und warum sprühst', 'Zeig mal', 'Was glitzert', 'Klar', 'Und dann?', 'Noch nicht'], '206b_story_mika');
-  const fb = { e2: await visited('m0-finale', 'e2'), l1: await visited('m0-finale', 'l1'), q: await visited('m0-finale', 'q') };
-  check('Demo-Ende: Mika zitiert das umgedrehte Plakat (e2), „Und dann?“ → Ildas Plan (l1), Entwurf „Noch nicht.“ bis zum Schluss', okF && fb.e2 && fb.l1 && fb.q, J(fb));
+  const okF = await playBeat('m0-finale', ['Warum packen', 'Und warum sprühst', 'Und wem hilft', 'Zeig mal', 'Was glitzert', 'Klar', 'Und dann?', 'Noch nicht'], '206b_story_mika');
+  const fb = { e2: await visited('m0-finale', 'e2'), g1: await visited('m0-finale', 'g1'), l1: await visited('m0-finale', 'l1'), q: await visited('m0-finale', 'q') };
+  check('Demo-Ende: Mika zitiert das umgedrehte Plakat (e2), Mikas Riss „… Mir.“ (g1), „Und dann?“ → Ildas Plan (l1), Entwurf „Noch nicht.“ bis zum Schluss', okF && fb.e2 && fb.g1 && fb.l1 && fb.q, J(fb));
 
   // ---- 7 Graue Regionen: freundlicher Hinweis, kein Absturz ----
   await scen(page, ['teleport strand', 'wait 0.5']);

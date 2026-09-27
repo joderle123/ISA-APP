@@ -31,7 +31,7 @@ export default {
     e: { speaker: 'glimm', say: 'Farben über Köpfen. Ernsthaft?', goto: 'f' },
     f: { speaker: 'ilda', say: 'Jeder trägt eine. Die wenigsten merken es.', anim: 'talk', goto: 'g' },
     g: { speaker: 'glimm', say: 'Und grau?', goto: 'h' },
-    h: { speaker: 'ilda', say: 'Grau heißt allein. Davon haben wir genug.', anim: 'sad', goto: 'i' },
-    i: { speaker: 'ilda', say: 'Dein Code aus dem Kurs öffnet den ersten Auftrag.', anim: 'idle', end: true, effects: [{ deed: 'ilda-blick' }] },
+    h: { speaker: 'ilda', say: 'Grau? … Grau sieht man hier oft.', anim: 'sad', goto: 'i' },
+    i: { speaker: 'ilda', say: 'Na dann. Willkommen. Irgendwie.', anim: 'idle', end: true, effects: [{ deed: 'ilda-blick' }] },
   },
 };

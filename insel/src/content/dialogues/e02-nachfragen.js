@@ -1,7 +1,7 @@
 // Szene e02-nachfragen (DESIGN §12 e02): eine Frage bringt nur eine flache Antwort. Erst „Und dann?“ verrät ein
 // harmloses Detail – und zwischen Tun und Jolie erscheint der erste Faden.
 // Story (docs/STORY.md §6 Wahl 3, §8): das alte Festplakat mit Mikas Spruch (m0.plakat = weg | bleibt | umgedreht) ·
-// Tun hat „letzten Sommer“ aufgehört zu filmen, schiebt es auf den Akku – das Lämpchen leuchtet grün.
+// Tun hat „letzten Sommer“ aufgehört zu filmen, schiebt es auf den Akku – an der Kamera leuchtet ein Lämpchen (die Farbe erst in e03).
 export default {
   id: 'e02-nachfragen', unit: 'j1-e02', cast: ['tun', 'jolie'], camera: 'talk', rewind: true, start: 'a',
   nodes: {
@@ -36,7 +36,7 @@ export default {
         { say: 'Okay.', icon: 'check', goto: 'f2' },
       ],
     },
-    f2: { speaker: 'glimm', say: 'Flach. Da ist mehr.', goto: 'f' },
+    f2: { speaker: 'tun', say: 'Was? Mehr gibt’s nicht.', anim: 'idle', goto: 'f' },
     g: { speaker: 'tun', say: 'Möwen. Ich filme Möwen. Die sind komplett irre.', anim: 'talk', goto: 'h' },
     h: {
       speaker: 'tun', say: 'Also … hab ich. Bis letzten Sommer.', anim: 'sad',
@@ -46,9 +46,9 @@ export default {
       ],
     },
     h1: { speaker: 'tun', say: 'Akku kaputt. Seitdem. Blöd, oder?', anim: 'cheer', goto: 'h2' },
-    h2: { speaker: 'glimm', say: 'Das Lämpchen ist grün.', goto: 'i' },
+    h2: { speaker: 'erzaehler', say: 'An der Kamera leuchtet ein kleines Lämpchen.', goto: 'i' },
     i: { speaker: 'jolie', say: 'Ich … zeichne Möwen.', anim: 'think', effects: [{ upgrade: 'blick.faeden' }], goto: 'j' },
-    j: { speaker: 'glimm', say: 'Ein Faden. Zwischen den beiden.', goto: 'k' },
+    j: { speaker: 'glimm', say: 'Hm. Die zwei. Interessant.', goto: 'k' },
     k: { speaker: 'tun', say: 'Echt jetzt? Zeig mal!', anim: 'cheer', effects: [{ deed: 'tun-nachgefragt' }], goto: 'l' },
     l: { speaker: 'jolie', say: 'Dir? Nee.', anim: 'idle', goto: 'l2' },
     l2: { speaker: 'tun', say: 'Autsch. Verdient, aber autsch.', anim: 'sad', goto: 'm' },

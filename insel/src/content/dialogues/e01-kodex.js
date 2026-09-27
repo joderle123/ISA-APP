@@ -1,5 +1,5 @@
 // Szene e01-kodex (DESIGN §12 e01): am dunklen Feuer schlägt Tun „Keine Regeln!“ vor. Du handelst mit Kacheln Regeln aus,
-// die alle unterschreiben. Jede Regel zündet ein Feuer. Demo-Fassung: drei Runden statt vier Feuer.
+// die alle unterschreiben. Jede Regel zündet ein Feuer: deine, Tuns, noch einmal deine = drei. Das vierte zündet e03-kodex.
 // Story (docs/STORY.md §7/§8): Tuns Witz verrät die unausgesprochene Insel-Regel · der leere Stuhl am vierten Feuer
 // („besetzt“ – Jhemp, ohne Namen) · Tun und Jolie: „Mit mir schon gar nicht.“
 export default {
@@ -34,11 +34,12 @@ export default {
     e: {
       speaker: 'tun', say: 'Meine: Alle dürfen mitmachen. Auch Möwen.', anim: 'cheer',
       choices: [
-        { say: 'Nehmen wir.', icon: 'check', goto: 'f' },
+        { say: 'Nehmen wir.', icon: 'check', goto: 'e9' },
         { say: 'Auch die, die nicht wollen?', icon: 'frage', goto: 'e2' },
       ],
     },
-    e2: { speaker: 'tun', say: 'Die dürfen zuschauen. Ohne Spott.', anim: 'idle', goto: 'f' },
+    e2: { speaker: 'ilda', say: 'Zuschauen darf jeder. Ohne Spott. Zweites Feuer.', anim: 'talk', effects: [{ deed: 'kodex-regel' }, { sound: 'chime' }], goto: 'f' },
+    e9: { speaker: 'ilda', say: 'Zweites Feuer.', anim: 'talk', effects: [{ deed: 'kodex-regel' }, { sound: 'chime' }], goto: 'f' },
     f: {
       speaker: 'tun', say: 'Und noch eine: Über den Turm redet keiner.', anim: 'cheer', effects: [{ bond: ['tun', 1] }],
       choices: [
@@ -48,7 +49,32 @@ export default {
       ],
     },
     f1: { speaker: 'tun', say: '…', anim: 'sad', goto: 'f1b' },
-    f1b: { speaker: 'ilda', say: 'Tun.', anim: 'idle', goto: 'g' },
+    // Die Turm-Regel zündet kein Feuer – sie gilt schon, ungeschrieben.
+    f1b: { speaker: 'ilda', say: 'Tun. Die nicht.', anim: 'idle', goto: 'r' },
+    // Dritte Regel: du wählst noch einmal, ohne die schon unterschriebene.
+    r: {
+      branch: [{ when: { flag: 'kodex.lachen' }, goto: 'r1' }, { when: { flag: 'kodex.stopp' }, goto: 'r2' }],
+      speaker: 'ilda', say: 'Noch eine. Deine.', anim: 'talk',
+      choices: [
+        { say: 'Niemand wird ausgelacht.', icon: 'herz', effects: [{ flag: 'kodex.lachen', set: true }], goto: 'r9' },
+        { say: 'Wer Stopp sagt, wird gehört.', icon: 'stopp', effects: [{ flag: 'kodex.stopp', set: true }], goto: 'r9' },
+      ],
+    },
+    r1: {
+      speaker: 'ilda', say: 'Noch eine. Deine.', anim: 'talk',
+      choices: [
+        { say: 'Wer Stopp sagt, wird gehört.', icon: 'stopp', effects: [{ flag: 'kodex.stopp', set: true }], goto: 'r9' },
+        { say: 'Jeder darf Fehler machen.', icon: 'check', effects: [{ flag: 'kodex.fehler', set: true }], goto: 'r9' },
+      ],
+    },
+    r2: {
+      speaker: 'ilda', say: 'Noch eine. Deine.', anim: 'talk',
+      choices: [
+        { say: 'Niemand wird ausgelacht.', icon: 'herz', effects: [{ flag: 'kodex.lachen', set: true }], goto: 'r9' },
+        { say: 'Jeder darf Fehler machen.', icon: 'check', effects: [{ flag: 'kodex.fehler', set: true }], goto: 'r9' },
+      ],
+    },
+    r9: { speaker: 'ilda', say: 'Drittes Feuer.', anim: 'talk', effects: [{ deed: 'kodex-regel' }, { sound: 'chime' }], goto: 'g' },
     f2: { speaker: 'tun', say: 'Siehst du? Die ist gut. Die ist richtig gut.', anim: 'cheer', goto: 'f1b' },
     f3: { speaker: 'tun', say: 'War ein Witz. Möwen-Witz. Lacht doch mal.', anim: 'angry', goto: 'f1b' },
     g: {

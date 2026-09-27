@@ -3,7 +3,7 @@
 //     Danach öffnen die Kurs-Codes (BOJE, DELFIN, OTTER) die Quests j1-e01…e03; jede Quest senkt den Schleier
 //     (RegionDef.veil.steps) als Farbwelle, e03 macht den Hafen ganz bunt.
 //   · Andere Regionen bleiben grau: beim Betreten sagt Glimm einmal je Sitzung „Grau hier. Kommt bald.“
-//     (nach M0 am Strand: „Da glitzert was. Kommt bald.“, am Turm „Zu. Kratzer am Schloss.“ – docs/STORY.md)
+//     (nach M0 am Strand: „Da glitzert was. Kommt bald.“, am Turm „Zu. Kratzer am Schloss. Noch nicht.“ – docs/STORY.md)
 //   · Story-Beats (docs/STORY.md): Ankunft mit dem Boot (erster Start, nach dem Stil-Studio) und je ein kurzer Beat am
 //     Morgen nach dem Lagerfeuer von e01/e02/e03 (m0-nach-e01, m0-nach-e02, m0-finale). Spielstand: story.beat (wartend),
 //     story.seen.<id>. Unter ?test nur mit ?story, damit Szenarien nicht von Szenen unterbrochen werden.
@@ -45,7 +45,7 @@ export default {
       if (v === null || v < 0.5) return false;
       teased.add(zone);
       const m0 = (world.veil.zoneValue ? world.veil.zoneValue('hafen') : 1) <= 0.01;
-      const line = zone === 'leuchtturm' ? 'Zu. Kratzer am Schloss. Kommt bald.' : zone === 'strand' && m0 ? 'Da glitzert was. Kommt bald.' : 'Grau hier. Kommt bald.';
+      const line = zone === 'leuchtturm' ? 'Zu. Kratzer am Schloss. Noch nicht.' : zone === 'strand' && m0 ? 'Da glitzert was. Kommt bald.' : 'Grau hier. Kommt bald.';
       if (ui.glimm) ui.glimm(line, { seconds: 3 });
       return true;
     }
