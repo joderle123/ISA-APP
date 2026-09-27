@@ -7,6 +7,11 @@
 import { createRoomKit } from './roomkit/index.js';
 import { createScenes } from './scenes.js';
 import { BIRD_EMOTIONS } from '../props/kit/birds.js';
+import { HAUS_DIM } from '../props/kit/gebaeude.js';
+import { BUILDINGS, buildingYaw } from './layout.js';
+
+// Wimpel-Farben je Region (§2.2)
+const WIMPEL = { hafen: ['#FF7A59', '#FFD166', '#2FB8A8', '#FFF3D6', '#4F88C8', '#FF5D8F'], markt: ['#D94A3A', '#FFD23F', '#FFF3D6', '#4F88C8', '#FF6B6B', '#E9A83A'] };
 
 // Standard-Flecken (Slots 8–11): Mangrove (bis j1-e06 grau), Glimmer und Quellen (spätere Module), Rückfall bleibt frei
 const DEFAULT_PATCHES = [
@@ -52,6 +57,53 @@ export default {
       ...[[9.5, 126], [2.5, 126], [9.5, 120], [2.5, 120]].map(([x, z]) => ({ type: 'laterne', x, z, variant: 'pfahl', lit: true })),
       ...[[-25, 92], [-34, 94], [-36, 102], [-27, 104]].map(([x, z], i) => ({ type: 'laterne', x, z, y: island.getHeight(x, z) + 2.2, variant: 'papier', color: ['#ff7a59', '#ffd23f', '#2de2c9', '#ff5d8f'][i] })),
     ]);
+    // ---- Häuser (§9.2): je Zone zu einem Mesh je Material gebacken; Türlaternen leuchten, Fenster tags Glas / nachts Bloom ----
+    const houses = new Map();
+    {
+      const byZone = new Map();
+      for (const b of BUILDINGS) { if (!byZone.has(b.zone)) byZone.set(b.zone, []); byZone.get(b.zone).push(b); }
+      for (const [zone, list] of byZone) {
+        const h = bake(zone, 'haeuser-' + zone, list.map((b) => ({ type: b.type || 'haus', x: b.x, z: b.z, yaw: buildingYaw(b), size: b.size, wall: b.wall, accent: b.accent, roof: b.roof, markise: !!b.markise })));
+        h.handles.forEach((hh, i) => houses.set(list[i].id, hh));
+      }
+    }
+    const bDef = (id) => BUILDINGS.find((b) => b.id === id);
+    // Traufpunkt eines Hauses in Richtung eines anderen Punkts (Wimpelketten)
+    const eaveTo = (id, tx, tz, k = 2.3) => {
+      const b = bDef(id), d = Math.hypot(tx - b.x, tz - b.z) || 1;
+      const H = b.type === 'kiosk' ? 2.6 : HAUS_DIM[b.size][1] + 0.35;
+      return [b.x + ((tx - b.x) / d) * k, island.getHeight(b.x, b.z) + H, b.z + ((tz - b.z) / d) * k];
+    };
+    const chain = (zone, from, to, sag) => ({ type: 'wimpelkette', x: 0, z: 0, y: 0, onGround: false, collide: false, from, to, colors: WIMPEL[zone] || WIMPEL.hafen, sag });
+    const lampTop = (x, z) => [x, island.getHeight(x, z) + 2.85, z];
+    game.addUpdate(() => props.materials.setNight(world.sky.night), { order: -11 });
+
+    // Hafen: Wimpelketten zwischen Laternen und Häusern, Dorfplatz mit Pflaster, Brunnen, Bänken und Blumenkübeln,
+    // Kisten/Fässer/Netz/Bojen am Steg, Ruderboot in der Bucht
+    bake('hafen', 'wimpel', [
+      chain('hafen', lampTop(9.5, 126), lampTop(2.5, 126)), chain('hafen', lampTop(9.5, 120), lampTop(2.5, 120)),
+      chain('hafen', eaveTo('hafen-3', 24, 132), eaveTo('hafen-7', 34, 121)), chain('hafen', eaveTo('hafen-1', 44, 112), eaveTo('hafen-9', 30, 100)),
+      chain('hafen', eaveTo('hafen-6', -20, 116), eaveTo('hafen-kiosk', -28, 112)), chain('hafen', eaveTo('hafen-2', -8, 86), eaveTo('hafen-4', -21, 91)),
+      chain('hafen', eaveTo('hafen-5', 30, 100), eaveTo('hafen-1', 22, 88)), chain('hafen', eaveTo('hafen-8', -32, 130), eaveTo('hafen-10', -14, 130)),
+    ]);
+    bake('hafen', 'pflaster', [
+      { type: 'pflaster', x: 0, z: 0, y: 0, onGround: false, collide: false, cx: 1, cz: 111, r: 6.6 },
+      ...[[18, 118], [-10, 120], [16, 100], [-8, 100]].map(([x, z]) => ({ type: 'pflaster', x: 0, z: 0, y: 0, onGround: false, collide: false, cx: x, cz: z, r: 3.3, r0: 1.75 })),
+    ]);
+    const faceTo = (x, z, tx, tz) => Math.atan2(tx - x, tz - z);
+    bake('hafen', 'platz', [
+      { type: 'brunnen', x: -2, z: 112.5, yaw: 0.4 },
+      ...[[11, 114], [-5, 104.5], [9.5, 105.5]].map(([x, z]) => ({ type: 'bank', x, z, yaw: faceTo(x, z, 4, 110) })),
+      ...[[11.4, 126.2], [0.6, 126.2], [11.4, 119.8], [0.6, 119.8], [-22.6, 118.4], [-17.2, 114.2]].map(([x, z]) => ({ type: 'blumenkuebel', x, z })),
+      { type: 'kisten', x: -23.2, z: 115.4, yaw: 0.5, n: 2 },
+      { type: 'kisten', x: 10.4, z: 129.6, yaw: 0.3, n: 3 }, { type: 'fass', x: 12.2, z: 131.2 }, { type: 'fass', x: 12.9, z: 129.8, lying: true, color: '#A8794A' },
+      { type: 'netz', x: 9.6, z: 132.2, yaw: 1.2 }, { type: 'kisten', x: 1.4, z: 130.2, yaw: -0.4, n: 1 }, { type: 'boje', x: 2.6, z: 131.6, lying: true, color: '#FFD166' },
+      { type: 'kisten', x: 27.2, z: 129.4, yaw: 0.9, n: 2 }, { type: 'fass', x: 21.4, z: 134.2 }, { type: 'netz', x: 23.6, z: 135.4 }, { type: 'boje', x: 26.4, z: 135, lying: true },
+    ]);
+    dec('hafen', 'ruderboot', 'ruderboot', { x: -1.6, z: 137.5, y: 0.06, onGround: false, yaw: 0.65, color: '#FF7A59' });
+    dec('hafen', 'boje-1', 'boje', { x: 13.5, z: 140, y: -0.06, onGround: false, collide: false, floating: true });
+    dec('hafen', 'boje-2', 'boje', { x: -4.5, z: 143, y: -0.06, onGround: false, collide: false, floating: true, color: '#FFD166' });
+
     // Strand: sechs Gezeiten-Tanks an der Muschelbucht, Laterne am Höhleneingang
     const TANKS = ['koerper', 'sicherheit', 'zugehoerigkeit', 'anerkennung', 'selbstbestimmung', 'spass'];
     bake('strand', 'tanks', TANKS.map((need, i) => ({ type: 'tank', x: 120 + i * 3.1, z: 47.5, yaw: Math.PI, need, fill: [0.7, 0.6, 0.15, 0.4, 0.6, 0.5][i] })).concat([{ type: 'signalfeuer', x: 133, z: 46, lit: false }]));
@@ -66,9 +118,20 @@ export default {
     bake('moor', 'menhire', Array.from({ length: 7 }, (_, i) => { const a = (i / 7) * Math.PI * 2; return { type: 'menhir', x: M.x + Math.cos(a) * 9, z: M.z + Math.sin(a) * 9, yaw: -a, height: 2.8 + (i % 3) * 0.5 }; }));
     bake('moor', 'fluestersteine', [[-126, 66], [-104, 66], [-118, 86], [-100, 80], [-130, 76]].map(([x, z], i) => ({ type: 'fluesterstein', x, z, size: 0.8 + (i % 3) * 0.25, active: true })));
     dec('moor', 'bohlenweg', 'bohlenweg', { x: 0, z: 0, y: 0, onGround: false, collide: true, pts: [[-95, 45], [-99, 51], [-105, 59], [-110, 65], [-113, 73], [-112, 82]] });
-    // Markt: vier Stände um den Platz, Laternen
-    bake('markt', 'staende', [[-118, 27, 0], [-131, 14, Math.PI / 2], [-118, 1, Math.PI], [-105, 14, -Math.PI / 2]].map(([x, z, yaw]) => ({ type: 'marktstand', x, z, yaw })));
+    // Markt: vier gefüllte Stände um den Platz, Laternen, Pflaster, Wimpelketten zwischen den Häusern, Kisten und Kübel
+    bake('markt', 'staende', [[-118, 27, 0], [-131, 14, Math.PI / 2], [-118, 1, Math.PI], [-105, 14, -Math.PI / 2]].map(([x, z, yaw], i) => ({ type: 'marktstand', x, z, yaw, colors: [['#D94A3A', '#FFF3D6'], ['#4F88C8', '#FFF3D6'], ['#FFD23F', '#5b3a8a'], ['#2FB8A8', '#FFF3D6']][i] })));
     bake('markt', 'laternen', [[-124, 22], [-112, 22], [-124, 6], [-112, 6]].map(([x, z]) => ({ type: 'laterne', x, z, variant: 'pfahl', lit: true })));
+    bake('markt', 'pflaster', [{ type: 'pflaster', x: 0, z: 0, y: 0, onGround: false, collide: false, cx: -118, cz: 14, r: 9.5, color: '#D2B48C' }]);
+    bake('markt', 'wimpel', [
+      chain('markt', lampTop(-124, 22), lampTop(-112, 22)), chain('markt', lampTop(-124, 6), lampTop(-112, 6)),
+      chain('markt', eaveTo('markt-1', -118, 33), eaveTo('markt-4', -132, 26)), chain('markt', eaveTo('markt-3', -100, 14), eaveTo('markt-5', -104, 2)),
+      chain('markt', eaveTo('markt-2', -118, 14), lampTop(-124, 6)),
+    ]);
+    bake('markt', 'kram', [
+      { type: 'kisten', x: -114, z: 28.5, yaw: 0.4, n: 2 }, { type: 'fass', x: -121.5, z: 28.8 }, { type: 'kisten', x: -128.5, z: 10, yaw: 1.2, n: 3 }, { type: 'fass', x: -106.5, z: 18.5, lying: true, color: '#A8794A' },
+      ...[[-125.4, 21.4], [-110.6, 21.4], [-125.4, 6.6], [-110.6, 6.6]].map(([x, z]) => ({ type: 'blumenkuebel', x, z })),
+      ...[[-118, 8, Math.PI], [-124, 14, Math.PI / 2]].map(([x, z, yaw]) => ({ type: 'bank', x, z, yaw })),
+    ]);
     // Quellental: Laternen-Camp, Leuchtturm-Halbinsel: Laterne am Weg
     bake('vulkan', 'quellen-laternen', [[38, -14], [44, -27], [55, -26]].map(([x, z]) => ({ type: 'laterne', x, z, variant: 'pfahl', lit: true })));
     // Glimmerwolke: sieben schwebende Inseln über der Nordküste (sichtbar, noch unerreichbar) mit Kugeln

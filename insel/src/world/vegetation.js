@@ -4,6 +4,7 @@ import * as THREE from 'three';
 import { part, merge, frond } from './geom.js';
 import { mulberry32, smoothstep } from './noise.js';
 import { ZONES, SITES, FEATURES, ZONE_INDEX } from './island.js';
+import { BUILDINGS, blockRadius } from './layout.js';
 
 const CHUNK = 112;
 const ZI = ZONE_INDEX;
@@ -215,7 +216,7 @@ function rockGeo(rnd, big) {
 // ---------- Neue Arten (WP11): Schilf, Moorbirke, Heide, Mangrove ----------
 function reedGeo(rnd) {
   const pos = [], col = [], wind = [];
-  const stem = new THREE.Color('#6f8f3c'), stemDry = new THREE.Color('#b8a860'), head = new THREE.Color('#5a3a22');
+  const stem = new THREE.Color('#86a84e'), stemDry = new THREE.Color('#c9b96e'), head = new THREE.Color('#7a5a3a');
   const push = (x, y, z, c, w) => { pos.push(x, y, z); col.push(c.r, c.g, c.b); wind.push(w); };
   const n = 9;
   for (let k = 0; k < n; k++) {
@@ -341,9 +342,11 @@ uniform float uLumoTime;
 uniform vec2 uWindDir;
 uniform float uWindStrength;
 uniform float uFadeFar;
-uniform float uBloom;`)
+uniform float uBloom;
+varying float vGrassTip;`)
       .replace('#include <begin_vertex>', `#include <begin_vertex>
 {
+  vGrassTip = aWind;
   ${bloom ? 'transformed *= mix(1.0, uBloom, step(0.94, aWind));' : ''}
   vec3 ip = vec3(0.0);
   #ifdef USE_INSTANCING
@@ -368,7 +371,12 @@ uniform float uBloom;`)
   };
   mat.userData.__lumoKey = (fade ? 'windF' : 'wind') + (bloom ? 'B' : '');
   mat.customProgramCacheKey = () => mat.userData.__lumoKey;
-  veil.patch(mat, { key: (fade ? 'vegF' : 'veg') + (bloom ? 'B' : '') });
+  // Im Schleier werden helle Halmspitzen (×1.18) zu weißen Kritzeln (Duotone hebt Lichter): dort auf Boden × 1.05 deckeln
+  veil.patch(mat, {
+    key: (fade ? 'vegF' : 'veg') + (bloom ? 'B' : ''),
+    fragmentPars: 'varying float vGrassTip;\n',
+    afterVeil: 'outgoingLight *= mix(1.0, 0.88, gLumoVeil * vGrassTip);\n',
+  });
   mat.userData.wind = u;
   return mat;
 }
@@ -424,6 +432,7 @@ export function createVegetation({ island, veil, colliders, quality, scene }) {
   }
   function blocked(x, z, extra = 0) {
     for (const s of padSites) if (Math.hypot(x - s.x, z - s.z) < s.r + 1.5 + extra) return true;
+    for (const b of BUILDINGS) if (Math.hypot(x - b.x, z - b.z) < blockRadius(b) + 1.2 + extra) return true;
     for (const b of waterBodies) if (Math.hypot(x - b.x, z - b.z) < b.r + 1.2 + extra) return true;
     if (Math.hypot(x - L.x, z - L.z) < 7 + extra) return true;
     if (Math.abs(x - dock.x) < 4 + extra && z > dock.z0 - 6 && z < dock.z1 + 2) return true;

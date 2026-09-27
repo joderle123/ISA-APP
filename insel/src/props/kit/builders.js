@@ -171,14 +171,21 @@ export function marktstand(o = {}, K) {
     P.push(part(new THREE.BoxGeometry(w / stripes + 0.02, 0.04, d + 1.1), { pos: [x, hA + 0.22, 0.1], rot: [-0.28, 0, 0], color: i % 2 ? pal[0] : pal[1], faceVar: 0.05 }));
     P.push(part(new THREE.BoxGeometry(w / stripes + 0.02, 0.32, 0.04), { pos: [x, hA - 0.32, d / 2 + 0.75], color: i % 2 ? pal[0] : pal[1] }));
   }
-  // Waren: Kisten und bunte Früchte/Krüge
-  const goods = ['#ff5d8f', '#ffd23f', '#45d15a', '#ff8c42', '#b48cff', '#2de2c9'];
+  // Waren (§9.2 „gefüllte Stände“): Tischdecke, Kisten voller Früchte in zwei Reihen, Säcke, Krüge, Girlande am Dach
+  const goods = ['#ff5d8f', '#ffd23f', '#45d15a', '#ff8c42', '#b48cff', '#2de2c9', '#ff4d4d'];
+  P.push(part(new THREE.BoxGeometry(w + 0.1, 0.05, d + 0.16), { pos: [0, hT + 0.07, 0], color: pal[1] === '#fff1dc' ? '#fff3d6' : pal[1] }));
   for (let i = 0; i < 3; i++) {
     const x = -w / 2 + 0.6 + i * (w - 1.2) / 2;
-    P.push(part(new THREE.BoxGeometry(0.7, 0.32, 0.55), { pos: [x, hT + 0.22, 0.1], color: '#c9a26e', faceVar: 0.1 }));
-    for (let k = 0; k < 6; k++) P.push(part(new THREE.IcosahedronGeometry(0.11, 0), { pos: [x + R.float(-0.22, 0.22), hT + 0.42, 0.1 + R.float(-0.16, 0.16)], color: goods[(i * 2 + k) % goods.length] }));
+    for (const [z, y] of [[0.28, hT + 0.24], [-0.34, hT + 0.34]]) {
+      P.push(part(new THREE.BoxGeometry(0.74, 0.3, 0.5, 1, 1, 1), { pos: [x, y, z], rot: [z < 0 ? -0.22 : 0, 0, 0], color: '#c9a26e', faceVar: 0.08 }));
+      for (let k = 0; k < 7; k++) P.push(part(new THREE.IcosahedronGeometry(0.1 + (k % 2) * 0.02, 0), { pos: [x + R.float(-0.24, 0.24), y + 0.2 + (k % 3) * 0.05, z + R.float(-0.14, 0.14)], color: goods[(i * 3 + k) % goods.length] }));
+    }
   }
   P.push(part(new THREE.CylinderGeometry(0.16, 0.12, 0.42, 6, 1), { pos: [w / 2 - 0.35, hT + 0.27, -0.45], color: pal[0] }));
+  P.push(part(new THREE.CylinderGeometry(0.12, 0.1, 0.34, 6, 1), { pos: [w / 2 - 0.62, hT + 0.23, -0.5], color: '#fff3d6' }));
+  for (const [sx, sz] of [[-w / 2 - 0.45, 0.2], [w / 2 + 0.5, -0.1]]) P.push(part(new THREE.SphereGeometry(0.34, 8, 6), { pos: [sx, 0.3, sz], scale: [1, 0.85, 1], smooth: true, color: '#d9c2a0', deform: (v) => { if (v.y > 0.2) v.y = 0.2 + (v.y - 0.2) * 0.5; } }));
+  // Girlande unter der Markise: Zwiebeln/Paprika in Ketten
+  for (let k = 0; k < 8; k++) P.push(part(new THREE.IcosahedronGeometry(0.075, 0), { pos: [-w / 2 + 0.3 + k * ((w - 0.6) / 7), hA - 0.62 - (k % 2) * 0.12, d / 2 + 0.7], color: k % 3 === 0 ? '#ff4d4d' : k % 3 === 1 ? '#ffd23f' : '#f4e9d3' }));
   g.add(mesh(merge(P), M.base));
   return {
     group: g, type: 'marktstand', colors: pal,

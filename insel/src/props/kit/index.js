@@ -6,9 +6,11 @@
 //   kit.gallery({ x, z, spacing }) → alle Typen in einer Reihe (Screenshots)   ·   kit.update(dt, t)   ·   kit.triangles(handle)
 //   Typen: signalfeuer laterne tank marktstand fluesterstein kristall planke bohlenweg windrad drachen menhir orgel
 //          glimmerinsel glimmerkugel vogel grisel titan
+//          haus kiosk wimpelkette kisten fass boje netz ruderboot bank blumenkuebel brunnen pflaster (gebaeude.js, §9.2)
 import * as THREE from 'three';
 import { createMaterials } from './materials.js';
 import * as B from './builders.js';
+import * as GB from './gebaeude.js';
 import { vogel, BIRDS, BIRD_EMOTIONS } from './birds.js';
 import { grisel, titan } from './creatures.js';
 import { mulberry32 } from '../../world/noise.js';
@@ -17,7 +19,10 @@ export const BUILDERS = {
   signalfeuer: B.signalfeuer, laterne: B.laterne, tank: B.tank, marktstand: B.marktstand, fluesterstein: B.fluesterstein,
   kristall: B.kristall, planke: B.planke, bohlenweg: B.bohlenweg, windrad: B.windrad, drachen: B.drachen, menhir: B.menhir,
   orgel: B.orgel, glimmerinsel: B.glimmerinsel, glimmerkugel: B.glimmerkugel, vogel, grisel, titan,
+  haus: GB.haus, kiosk: GB.kiosk, wimpelkette: GB.wimpelkette, kisten: GB.kisten, fass: GB.fass, boje: GB.boje, netz: GB.netz,
+  ruderboot: GB.ruderboot, bank: GB.bank, blumenkuebel: GB.blumenkuebel, brunnen: GB.brunnen, pflaster: GB.pflaster,
 };
+export { HAUS_WAENDE, HAUS_AKZENTE, HAUS_DIM } from './gebaeude.js';
 export const PROP_TYPES = Object.keys(BUILDERS);
 export { BIRDS, BIRD_EMOTIONS };
 export const NEED_COLORS = B.NEED_COLORS;
@@ -112,10 +117,13 @@ export function createPropKit({ veil = null, island = null, colliders = null, pa
     }
     parent.add(group);
     const bid = id || 'bake-' + nextId++;
+    // Mittelpunkt/Radius fürs Distanz-Culling: Requisiten in Weltkoordinaten (Bohlenweg, Pflaster, Wimpelkette) liefern
+    // ihren eigenen Mittelpunkt, sonst zählt die Gruppenposition
+    const cOf = (h) => h.center || h.group.position;
     let cx = 0, cz = 0, rad = 0;
-    for (const h of handles) { cx += h.group.position.x; cz += h.group.position.z; }
+    for (const h of handles) { cx += cOf(h).x; cz += cOf(h).z; }
     cx /= handles.length || 1; cz /= handles.length || 1;
-    for (const h of handles) rad = Math.max(rad, Math.hypot(h.group.position.x - cx, h.group.position.z - cz));
+    for (const h of handles) rad = Math.max(rad, Math.hypot(cOf(h).x - cx, cOf(h).z - cz) + (h.radius || 0));
     const handle = {
       id: bid, group, handles, type: 'bake', center: { x: cx, z: cz }, radius: rad, far: Math.max(...handles.map((h) => (h.far !== undefined ? h.far : 150))),
       update(dt, t, c) { for (const h of handles) if (h.update) h.update(dt, t, c); },
@@ -161,6 +169,10 @@ export function createPropKit({ veil = null, island = null, colliders = null, pa
     put('menhir'); put('orgel', { yaw: Math.PI });
     for (const e of BIRD_EMOTIONS) put('vogel', { emotion: e, pose: 'sitzen' });
     put('glimmerkugel', { y: (y || 0) + 2 }); put('glimmerinsel', { y: (y || 0) + 4 }); put('grisel', { y: (y || 0) + 3 }); put('titan', { size: 0.35 });
+    put('haus', { size: 'S' }); put('haus', { size: 'M', markise: true }); put('haus', { size: 'L' }); put('kiosk'); put('kisten', { n: 3 }); put('fass'); put('boje', { lying: true });
+    put('netz'); put('ruderboot'); put('bank'); put('blumenkuebel'); put('brunnen');
+    put('pflaster', { x: 0, z: 0, y: 0, onGround: false, cx: x + Math.cos(yaw) * spacing * i, cz: z + Math.sin(yaw) * spacing * i, r: 2.5 });
+    put('wimpelkette', { x: 0, z: 0, y: 0, onGround: false, from: [x + Math.cos(yaw) * spacing * i, (y || 0) + 3, z + Math.sin(yaw) * spacing * i], to: [x + Math.cos(yaw) * spacing * (i + 1), (y || 0) + 3, z + Math.sin(yaw) * spacing * (i + 1)] });
     return { handles: list, remove() { list.forEach((h) => h.remove()); } };
   }
 

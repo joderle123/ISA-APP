@@ -160,21 +160,26 @@ float lumoVeilAmount(vec3 p) {
   }
   return amt * uVeilStrength;
 }
+float gLumoVeilReady = 0.0;
 vec3 lumoApplyVeil(vec3 col, vec3 p) {
-  float v = lumoVeilAmount(p);
+  // das Kantenlicht hat den Schleierwert für dieses Fragment meist schon berechnet (lumoVeilAmount setzt auch Ring/Innen)
+  float v = gLumoVeilReady > 0.5 ? gLumoVeil : lumoVeilAmount(p);
   gLumoVeil = v;
   gLumoWorldY = p.y;
   float l = dot(col, vec3(0.299, 0.587, 0.114));
-  // „Verflucht“, nicht „unfertig“: kaltes Duotone (Schatten #2E2A44 · Mitten #7A7691 · Lichter #C9C4D8, Stil-Bibel §2.4),
-  // Kontrast × 0.85, träge wandernde Schlieren. Rechnung wahrnehmungsnah (Gamma), Farben linear.
-  float lp = pow(max(l, 0.0), 0.4545);
-  lp = clamp((lp - 0.5) * 0.85 + 0.5, 0.0, 1.0);
+  // „Verflucht“, nicht „unfertig“: kaltes Duotone (Schatten #2E2A44 · Mitten #7A7691 · Lichter #C9C4D8, Stil-Bibel §2.4).
+  // Luminanz mit pow 0.7 gemappt und Kontrast × 1.15, damit der dunkle Stopp erreicht wird und die Rampen-Bänder
+  // lesbar bleiben (das Hemisphärenlicht hält die Luminanz sonst in den Mitten); Duotone nur zu 0.8 eingemischt,
+  // ein Rest der Eigenfarbe bleibt als „eingefrorene“ Tönung. Träge wandernde Schlieren. Farben linear.
+  float lp = pow(max(l, 0.0), 0.7);
+  lp = clamp((lp - 0.5) * 1.15 + 0.5, 0.0, 1.0);
   float drift = 0.93 + 0.07 * sin(p.x * 0.11 + uLumoTime * 0.25) * sin(p.z * 0.09 - uLumoTime * 0.19 + p.y * 0.2);
   vec3 duo = lp < 0.5
     ? mix(vec3(0.0273, 0.0232, 0.0578), vec3(0.1946, 0.1812, 0.2831), lp * 2.0)
     : mix(vec3(0.1946, 0.1812, 0.2831), vec3(0.5841, 0.5520, 0.6867), (lp - 0.5) * 2.0);
   duo *= drift;
-  col = mix(col, duo, clamp(v * 0.94, 0.0, 1.0));
+  vec3 frozen = mix(vec3(l) * vec3(0.9, 0.86, 1.0), col, 0.35);
+  col = mix(col, mix(frozen, duo, 0.8), clamp(v, 0.0, 1.0));
   if (gLumoRing > 0.002) {
     float r = clamp(gLumoRing, 0.0, 1.0);
     if (uVeilWave2.w < 0.5) {
@@ -204,14 +209,16 @@ vec3 lumoFog(vec3 col, float depth, vec3 viewPos, vec3 fogCol, float fogNear, fl
   // flache Kurve: die Mitteldistanz bleibt kontrastreich, erst die Ferne löst sich im Dunst auf
   float f = smoothstep(fogNear, fogFar, depth);
   f = f * f * (2.0 - f);
-  f = max(f, uFogHeight * smoothstep(3.0, -1.0, gLumoWorldY) * smoothstep(25.0, 90.0, depth));
+  // Höhennebel unter 3 m: 0.08 global, im Schleier 0.35 (Stil-Bibel §10.3) – der Schleier „liegt“ am Boden
+  float hfog = mix(uFogHeight, 0.35, gLumoVeil);
+  f = max(f, hfog * smoothstep(3.0, -1.0, gLumoWorldY) * smoothstep(mix(25.0, 12.0, gLumoVeil), 90.0, depth));
   vec3 dir = normalize(viewPos);
   float s = max(dot(dir, uFogSunDir), 0.0);
   vec3 fc = mix(uFogNearColor, fogCol, f);
   fc = mix(fc, uFogSunColor, pow(s, 4.0) * uFogSunAmt * (0.35 + 0.65 * f));
   float veilF = gLumoVeil * smoothstep(5.0, 40.0, depth);
-  f = max(f, veilF * 0.34);
-  fc = mix(fc, uVeilFogColor, veilF * 0.5);
+  f = max(f, veilF * 0.4);
+  fc = mix(fc, uVeilFogColor, veilF * 0.55);
   if (uLumoPost < 0.5) fc = lumoToOut(fc);
   float l = dot(col, vec3(0.299, 0.587, 0.114));
   col = mix(col, vec3(l), f * uAerial * 0.35);
@@ -284,14 +291,19 @@ void RE_IndirectDiffuse_Toon( const in vec3 irradiance, const in vec3 geometryPo
 // Kantenlicht (§3.3) und Laub-Transluzenz (§3.4) nach der Lichtsumme; im Schleier kühl und schwach, nachts Mondfarbe
 const LUMO_RIM = /* glsl */`
 {
+  // Schleierwert einmal je Fragment (lumoApplyVeil nutzt ihn weiter): im Schleier Rim kühl und schwach (#B9B3CC × 0.25,
+  // §3.3) und kaum Transluzenz – sonst werden Grashalme und Kronen im Gegenlicht zu weißen Kritzeln
+  float lumoVA = lumoVeilAmount( vVeilPos );
+  gLumoVeil = lumoVA; gLumoVeilReady = 1.0;
   vec3 lumoV = normalize( vViewPosition );
   float lumoNdv = 1.0 - saturate( dot( normal, lumoV ) );
   float lumoRimW = smoothstep( 0.58, 0.74, lumoNdv );
   float lumoSunSide = saturate( dot( normal, uSunDirView ) * 0.5 + 0.5 );
   vec3 lumoRim = ( uRimWarm * lumoSunSide + uRimCool * ( 1.0 - lumoSunSide ) * 0.4 ) * lumoRimW * uRimStrength * uRimGlobal;
+  lumoRim = mix( lumoRim, vec3( 0.485, 0.45, 0.60 ) * lumoRimW * uRimStrength * 0.25, lumoVA );
   reflectedLight.directDiffuse += lumoRim * ( 0.35 + 0.65 * diffuseColor.rgb );
   #ifdef LUMO_TRANS
-    float lumoTr = pow( saturate( dot( -lumoV, uSunDirView ) ), 3.0 ) * uTrans * vLumoLeaf;
+    float lumoTr = pow( saturate( dot( -lumoV, uSunDirView ) ), 3.0 ) * uTrans * vLumoLeaf * ( 1.0 - lumoVA * 0.8 );
     reflectedLight.directDiffuse += diffuseColor.rgb * uSunColorLin * 0.28 * lumoTr;
   #endif
 }

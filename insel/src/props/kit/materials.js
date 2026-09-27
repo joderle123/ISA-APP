@@ -5,6 +5,7 @@
 //   flame()         Flammen: Vertexfarben, hell, Flackern im Vertex-Shader (aWind = Höhe 0..1)
 //   flap(o)         Flügelschlag: aWind = Abstand vom Körper, Uniforms uFlapSpeed / uFlapAmp / uPhase je Material
 //   cloud()         Wolkenkörper (Titan): weich, leicht durchscheinend, leuchtende Adern über aWind
+//   window()        Fensterscheiben der Häuser (tags Glas, nachts leuchtend) · setNight(0..1) steuert das Leuchten
 import * as THREE from 'three';
 import { lambertVC } from '../../world/landmarks.js';
 
@@ -87,6 +88,19 @@ export function createMaterials(veil) {
     m.userData.flap = u;
     return m;
   }
+  // Fensterscheiben (§9.2): tags Glas (Vertexfarbe #BFE8FF, flach ohne Rampe), nachts emissiv #FFE7A0 über 1.0 (Bloom).
+  // Ein geteiltes Material für alle Häuser (bake-fähig); die Welt setzt emissiveIntensity je Nachtanteil (materials.setNight).
+  function window_() {
+    if (cache.has('window')) return cache.get('window');
+    const m = new THREE.MeshLambertMaterial({ vertexColors: true, emissive: new THREE.Color('#FFE7A0'), emissiveIntensity: 0 });
+    if (veil) veil.patch(m, { key: 'pwin', ramp: { t1: 0.2, t2: -1, mid: 0.85, soft: 0.1, rim: 0.0 } });
+    cache.set('window', m);
+    return m;
+  }
+  function setNight(night) {
+    const w = cache.get('window');
+    if (w) w.emissiveIntensity = Math.max(0, Math.min(1, (night - 0.15) / 0.6)) * 1.7;
+  }
   function cloud(tint = '#5a5670') {
     const key = 'cloud:' + tint;
     if (cache.has(key)) return cache.get(key);
@@ -95,5 +109,5 @@ export function createMaterials(veil) {
     cache.set(key, m);
     return m;
   }
-  return { base, baseDouble, glow, glass, flame, flap, cloud, cache };
+  return { base, baseDouble, glow, glass, flame, flap, cloud, window: window_, setNight, cache };
 }

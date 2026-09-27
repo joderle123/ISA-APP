@@ -23,7 +23,9 @@ function qhash(x, y, z, seed) {
  * opts: color (hex|Color|fn(x,y,z,c)), wind (Zahl|fn(x,y,z)), jitter (Zahl), seed,
  *       pos [x,y,z], rot [x,y,z], scale [x,y,z]|Zahl, deform fn(v:Vector3),
  *       smooth (true = weiche Normalen: runde Kronen, Wolken, Büsche – Stil-Bibel §5.2/§6),
- *       leaf (0..1 = Laub-Anteil für die Transluzenz im Gegenlicht, Attribut aLeaf)
+ *       leaf (0..1 = Laub-Anteil für die Transluzenz im Gegenlicht, Attribut aLeaf),
+ *       faceColor fn(cx, cy, cz, out, faceIndex) – Farbe je Dreieck aus dem Schwerpunkt (klare Planken-, Ziegel- und
+ *       Steinreihen ohne Verlauf zwischen den Reihen; überstimmt color)
  */
 export function part(geo, opts = {}) {
   let g = geo;
@@ -69,7 +71,13 @@ export function part(geo, opts = {}) {
   const baseC = typeof opts.color === 'function' ? null : _c.set(opts.color !== undefined ? opts.color : 0xffffff).clone();
   for (let i = 0; i < n; i++) {
     const x = pa.getX(i), y = pa.getY(i), z = pa.getZ(i);
-    if (baseC) { col[i * 3] = baseC.r; col[i * 3 + 1] = baseC.g; col[i * 3 + 2] = baseC.b; }
+    if (opts.faceColor) {
+      if (i % 3 === 0) {
+        const f = i / 3;
+        opts.faceColor((x + pa.getX(i + 1) + pa.getX(i + 2)) / 3, (y + pa.getY(i + 1) + pa.getY(i + 2)) / 3, (z + pa.getZ(i + 1) + pa.getZ(i + 2)) / 3, _c, f);
+      }
+      col[i * 3] = _c.r; col[i * 3 + 1] = _c.g; col[i * 3 + 2] = _c.b;
+    } else if (baseC) { col[i * 3] = baseC.r; col[i * 3 + 1] = baseC.g; col[i * 3 + 2] = baseC.b; }
     else { opts.color(x, y, z, _c, Math.floor(i / 3)); col[i * 3] = _c.r; col[i * 3 + 1] = _c.g; col[i * 3 + 2] = _c.b; }
     wind[i] = typeof opts.wind === 'function' ? opts.wind(x, y, z) : (opts.wind || 0);
   }

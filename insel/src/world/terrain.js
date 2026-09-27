@@ -350,20 +350,22 @@ float lumoInk(float v, float th, float w) { float fw = fwidth(v) * 1.2 + w; retu
         float bn = lumoBlotch(bp * 0.16) * 0.6 + lumoBlotch(bp * 0.62 + 3.1) * 0.4;
         vec3 mul = vec3(1.0 + (bn - 0.5) * 0.06);
         // (ohne Verzweigung: fwidth() braucht einheitlichen Kontrollfluss, sonst undefiniert auf Mobil-GPUs)
-        // Wiese: große Farbflecken in zwei Tönen (dunkler Fleck kühler und satter, ~3 m) + feine Halmstriche
-        float g1 = lumoBlotch(bp * 0.34 + 7.0);
-        float g2 = lumoBlotch(bp * 0.9 - 3.0);
-        float gpatch = lumoInk(g1 * 0.75 + g2 * 0.25, 0.5, 0.04);
-        float strokes = lumoInk(lumoBlotch(vec2(bp.x * 4.0 + g1 * 3.0, bp.y * 0.9 + g2)), 0.66, 0.025);
-        vec3 grassMul = mix(vec3(0.87, 0.93, 0.82), vec3(1.0), gpatch) * (1.0 + strokes * 0.08 * gpatch);
+        // Wiese: große Farbflecken in zwei Tönen (~7 m, dezent: 0.95/0.97/0.93 – keine Tarnflecken) + feine Halmstriche bis 15 m
+        float g1 = lumoBlotch(bp * 0.15 + 7.0);
+        float g2 = lumoBlotch(bp * 0.42 - 3.0);
+        float gpatch = lumoInk(g1 * 0.75 + g2 * 0.25, 0.5, 0.05);
+        float strokes = lumoInk(lumoBlotch(vec2(bp.x * 4.0 + g1 * 3.0, bp.y * 0.9 + g2)), 0.66, 0.025) * (1.0 - smoothstep(10.0, 15.0, -vFogView.z));
+        vec3 grassMul = mix(vec3(0.95, 0.97, 0.93), vec3(1.0), gpatch) * (1.0 + strokes * 0.07 * gpatch);
         // Sand: feine Körnung (klar, wie gestupft) + wenige größere helle Flecken + vereinzelte dunkle Körner
         float grain = lumoInk(lumoBlotch(bp * 5.5 + 2.0), 0.5, 0.06);
         float spots = lumoInk(g2, 0.62, 0.05);
         float grains = step(0.965, lumoBlotchH(floor(bp * 3.0) + 0.5));
         vec3 sandMul = (vec3(0.97, 0.955, 0.93) + grain * 0.04 + spots * 0.022) - grains * 0.06;
-        // Weg: Kiesel-Zellen (hell auf dunklem Grund)
+        // Weg: Kiesel-Zellen (hell auf dunklem Grund) und ein sichtbarer 0,4-m-Saum (#BF915A) am Wegrand (§7)
         float peb = lumoBlotch(bp * 2.0 + 11.0);
         vec3 pathMul = mix(vec3(0.935, 0.915, 0.89), vec3(1.0), lumoInk(peb, 0.46, 0.03));
+        float pathRim = lumoInk(vSurf.z, 0.3, 0.05) * (1.0 - lumoInk(vSurf.z, 0.58, 0.05));
+        mul *= mix(vec3(1.0), vec3(0.86, 0.79, 0.74), pathRim * det);
         // Fels/Asche (alles ohne Wiese/Sand/Weg): gemalte Gesteinsschichten – leicht geneigte Bänder mit Rauschversatz
         float rockW = clamp(1.0 - vSurf.x - vSurf.y - vSurf.z, 0.0, 1.0) * step(0.2, vVeilPos.y);
         float strata = lumoInk(sin(vVeilPos.y * 1.7 + g1 * 4.0 + bp.x * 0.05), 0.35, 0.12);
