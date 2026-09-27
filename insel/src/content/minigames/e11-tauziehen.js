@@ -1,5 +1,5 @@
-// Minispiel e11-tauziehen „Die Drachenleine“ (Rhythmus, CONTENT-SCHEMA): bis WP36 die Hülle liefert, spielt die
-// Dialog-Engine eine Ersatzkarte (Start → Bronze) und wendet onHit je Schlag an.
+// Minispiel e11-tauziehen „Die Drachenleine“ (Rhythmus, CONTENT-SCHEMA): Luc steht bei 90 an der Kante, Reden prallt ab.
+// Du packst die Leine und hältst im Takt der Böen; jeder Treffer senkt beide Pulse (onHit), bis das Gespräch aufgeht.
 export default {
   id: 'e11-tauziehen', template: 'rhythmus', title: 'Die Drachenleine', icon: 'seil',
   intro: 'Halten, wenn die Böe kommt. Loslassen, wenn sie geht.',

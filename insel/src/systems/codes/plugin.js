@@ -120,7 +120,7 @@ export default {
         el.innerHTML = `
           <p class="jn-lead">Der Code kommt am Ende der Stunde.</p>
           <form class="code-form" autocomplete="off">
-            <input class="code-input" type="text" inputmode="latin" autocapitalize="characters" autocorrect="off" spellcheck="false" maxlength="20" placeholder="WORT" aria-label="Code-Wort">
+            <input class="code-input" type="text" inputmode="latin" autocapitalize="characters" autocorrect="off" spellcheck="false" maxlength="32" placeholder="WORT" aria-label="Code-Wort">
             <div class="code-dial" data-dial hidden aria-label="Zahlenrad">
               ${['tens', 'ones'].map((d) => `<div class="dial" data-digit="${d}"><button type="button" data-up aria-label="${d === 'tens' ? 'Zehner' : 'Einer'} hoch">${ui.icon('pfeilhoch', { size: 22 })}</button><output aria-live="polite">0</output><button type="button" class="is-down" data-down aria-label="${d === 'tens' ? 'Zehner' : 'Einer'} runter">${ui.icon('pfeilhoch', { size: 22 })}</button></div>`).join('')}
             </div>

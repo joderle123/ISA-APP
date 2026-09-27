@@ -29,6 +29,8 @@ try {
   const weiter = async () => { await waitFor(page, () => document.querySelector('[data-overlay="minigame"] [data-weiter]')); await page.click('[data-overlay="minigame"] [data-weiter]'); };
   // Welt-Spiele: Countdown (Echtzeit + Spielzeit) abwarten, bis der Lauf beginnt
   const lauf = async () => { for (let i = 0; i < 40; i++) { const ph = await page.evaluate(() => { LUMO.debug.advance(0.3); const c = LUMO.minigames.current; return c && c.inst ? c.inst.phase : null; }); if (ph === 'lauf') return true; await sleep(20); } return false; };
+  // Overlay-Bilder: die Karte blendet erst im nächsten Frame ein (is-in), darum vor dem Bild ein paar Frames warten
+  const shotIn = async (name) => { await frames(page, 4); await shot(page, name); };
 
   // ---- Plugin ----
   const api = await page.evaluate(() => ({ plugins: LUMO.plugins.list, failed: LUMO.plugins.failed, api: !!LUMO.minigames && typeof LUMO.minigames.play === 'function', templates: Object.keys(LUMO.minigames.templates), ids: LUMO.content.ids('minigames') }));
