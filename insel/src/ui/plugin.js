@@ -123,7 +123,9 @@ export default {
         return r;
       },
       recap() {
-        return recap.show({ cards: [
+        // 40 s statt 15 s: Tests und Screenshot-Läufe (Software-GL) brauchen mehrere Sekunden je Bild, sonst schließt
+        // sich der Recap, bevor „Los“ gedrückt wird. Echte Recaps (WP42) setzen ihre Dauer selbst.
+        return recap.show({ seconds: 40, cards: [
           { icon: 'anker', color: '#ffb347', title: 'Hafen-Dorf', text: 'Du warst am Steg bei Ilda.' },
           { icon: 'haken', color: '#2de2c9', title: 'Möwe erwischt', text: 'Ildas Schlüssel ist wieder da.' },
           { icon: 'feuer', color: '#ffd166', title: 'Das erste Signalfeuer', text: 'Es wartet am Dorfplatz.' },

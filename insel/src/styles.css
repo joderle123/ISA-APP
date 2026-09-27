@@ -23,7 +23,7 @@
   --ink: #14102a;
   --c-text: #ffffff;
   /* Glas (§11.2) */
-  --glass: rgba(18, 12, 36, 0.62);
+  --glass: rgba(18, 12, 36, 0.7);      /* HUD ohne Backdrop-Blur (Leistung), daher etwas dichter als die 0.62 der Vorgabe */
   --glass-strong: rgba(18, 12, 36, 0.8);
   --glass-line: rgba(255, 255, 255, 0.14);
   --glass-top: inset 0 1px 0 rgba(255, 255, 255, 0.08);
@@ -33,7 +33,7 @@
   --ghost-2: rgba(255, 255, 255, 0.14);
   --hair: rgba(255, 255, 255, 0.1);
   --shadow: 0 10px 30px rgba(6, 2, 20, 0.35);
-  --blur: blur(14px);
+  --blur: blur(10px);                    /* nur für pausierende Overlays (.ov, .menu), nie auf dem laufenden HUD; 10 statt 14 px (Bildzeit) */
   --radius: 18px;
   --radius-l: 24px;
   --touch: 64px;
@@ -272,7 +272,6 @@ button {
   color: #fff;
   background: var(--glass);
   box-shadow: 0 0 0 1px var(--glass-line), var(--glass-top), var(--shadow);
-  -webkit-backdrop-filter: var(--blur); backdrop-filter: var(--blur);
   transition: transform 0.12s ease, filter 0.12s ease, background 0.15s ease;
 }
 .hud-round { width: var(--touch); height: var(--touch); }
@@ -287,8 +286,7 @@ button {
   margin-top: 6px;
   border-radius: 99px;
   overflow: hidden;
-  background: rgba(18, 12, 36, 0.4);
-  -webkit-backdrop-filter: var(--blur); backdrop-filter: var(--blur);
+  background: rgba(18, 12, 36, 0.4);   /* kein Backdrop-Blur: WebKit verträgt Blur + Maske am selben Element nicht */
   -webkit-mask-image: linear-gradient(90deg, transparent, #000 22%, #000 78%, transparent);
   mask-image: linear-gradient(90deg, transparent, #000 22%, #000 78%, transparent);
 }
@@ -332,7 +330,7 @@ button {
 
 /* Toasts: Glas-Pillen */
 .toasts {
-  position: absolute; left: 50%; top: calc(170px + var(--safe-t));
+  position: absolute; left: 50%; top: calc(190px + var(--safe-t));
   transform: translateX(-50%);
   display: flex; flex-direction: column; align-items: center; gap: 8px;
   width: min(560px, 90vw);
@@ -344,7 +342,6 @@ button {
   text-align: center;
   background: var(--glass-strong);
   box-shadow: 0 0 0 1px var(--glass-line), var(--glass-top), var(--shadow);
-  -webkit-backdrop-filter: var(--blur); backdrop-filter: var(--blur);
   animation: toast-in 0.45s cubic-bezier(0.2, 1.3, 0.4, 1);
   transition: opacity 0.4s ease, transform 0.4s ease;
 }
@@ -381,7 +378,6 @@ button {
   border-radius: 50%;
   background: var(--glass);
   box-shadow: 0 0 0 1px var(--glass-line), var(--glass-top), var(--shadow);
-  -webkit-backdrop-filter: var(--blur); backdrop-filter: var(--blur);
   text-shadow: var(--world-shadow);
   transition: transform 0.1s ease, opacity 0.25s ease, filter 0.1s ease;
 }
@@ -403,7 +399,6 @@ button {
   background: linear-gradient(180deg, var(--c-gold), var(--c-gold-2));
   box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.18) inset, var(--shadow);
   text-shadow: none;
-  -webkit-backdrop-filter: none; backdrop-filter: none;
   animation: action-pop 0.35s cubic-bezier(0.2, 1.4, 0.4, 1);
 }
 .hud-btn-action svg { width: 22px; height: 22px; filter: none; }
@@ -425,7 +420,6 @@ button {
   color: rgba(255, 255, 255, 0.9);
   background: var(--glass);
   box-shadow: 0 0 0 1px var(--glass-line), var(--glass-top);
-  -webkit-backdrop-filter: var(--blur); backdrop-filter: var(--blur);
   transition: opacity 1s ease;
 }
 .key-hints b { color: var(--c-gold); }
@@ -440,7 +434,6 @@ button {
   font-size: 15px; font-weight: 800;
   background: var(--glass);
   box-shadow: 0 0 0 1px var(--glass-line), var(--glass-top);
-  -webkit-backdrop-filter: var(--blur); backdrop-filter: var(--blur);
   animation: skip-breathe 2.4s ease-in-out infinite;
 }
 @keyframes skip-breathe { 0%, 100% { opacity: 0.75; } 50% { opacity: 1; } }
@@ -469,7 +462,7 @@ button {
   position: absolute; inset: 0; z-index: 30;
   display: flex; align-items: center; justify-content: center;
   background: rgba(12, 6, 28, 0.55);
-  -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: var(--blur); backdrop-filter: var(--blur);
   pointer-events: auto !important;
   animation: fade-in 0.25s ease;
 }
@@ -562,7 +555,6 @@ html.reduced-fx .ov, html.reduced-fx .ov-card, html.reduced-fx .bubble, html.red
   padding: 11px 18px 11px 14px; border-radius: 18px 18px 18px 6px;
   color: #fff; background: var(--glass-strong);
   box-shadow: 0 0 0 1px rgba(45, 226, 201, 0.55), var(--glass-top), var(--shadow);
-  -webkit-backdrop-filter: var(--blur); backdrop-filter: var(--blur);
   font-size: calc(18px * var(--txt-scale)); font-weight: 800; line-height: 1.25;
   opacity: 0; transform: translateY(-6px); transition: opacity 0.25s ease, transform 0.3s cubic-bezier(0.2, 1.3, 0.4, 1);
   pointer-events: none;
@@ -579,7 +571,7 @@ html.reduced-fx .ov, html.reduced-fx .ov-card, html.reduced-fx .bubble, html.red
   display: flex; align-items: center; justify-content: center;
   padding: calc(12px + var(--safe-t)) calc(12px + var(--safe-r)) calc(12px + var(--safe-b)) calc(12px + var(--safe-l));
   background: rgba(10, 6, 26, 0.5);
-  -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: var(--blur); backdrop-filter: var(--blur);
   opacity: 0; transition: opacity 0.22s ease;
   pointer-events: auto !important;
 }
@@ -592,7 +584,7 @@ html.reduced-fx .ov { -webkit-backdrop-filter: none; backdrop-filter: none; back
   border-radius: var(--radius-l);
   background: var(--glass-strong);
   box-shadow: 0 0 0 1px var(--glass-line), var(--glass-top), 0 10px 30px rgba(6, 2, 20, 0.35), 0 40px 90px rgba(6, 2, 20, 0.45);
-  transform: translateY(12px) scale(0.98);
+  transform: translateY(14px);            /* nur verschieben, nicht skalieren: Maße der Knöpfe bleiben jederzeit exakt */
   transition: transform 0.3s cubic-bezier(0.2, 1.2, 0.4, 1);
   overflow: hidden;
 }
@@ -602,7 +594,7 @@ html.reduced-fx .ov { -webkit-backdrop-filter: none; backdrop-filter: none; back
 .ov-titles { min-width: 0; flex: 1; }
 .ov-title { margin: 0; font-size: calc(24px * var(--txt-scale)); font-weight: 900; letter-spacing: 0.01em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .ov-sub { margin: 2px 0 0; font-size: calc(15px * var(--txt-scale)); font-weight: 700; opacity: 0.75; }
-.ov-close { flex: none; width: var(--touch); height: var(--touch); margin-left: auto; background: var(--ghost); box-shadow: 0 0 0 1px var(--glass-line) inset; -webkit-backdrop-filter: none; backdrop-filter: none; }
+.ov-close { flex: none; width: var(--touch); height: var(--touch); margin-left: auto; background: var(--ghost); box-shadow: 0 0 0 1px var(--glass-line) inset; }
 .ov-close:active { transform: scale(0.94); background: var(--ghost-2); }
 .ov-body { padding: 18px 24px 24px; min-height: 0; }
 .ov-scroll { overflow: auto; -webkit-overflow-scrolling: touch; overscroll-behavior: contain; touch-action: pan-y; }
@@ -640,7 +632,7 @@ html.reduced-fx .ov { -webkit-backdrop-filter: none; backdrop-filter: none; back
 .bubble-name { color: var(--who, var(--c-gold)); }
 .bubble-text { margin: 0; font-size: calc(24px * var(--txt-scale)); font-weight: 800; line-height: 1.28; text-wrap: balance; }
 .bubble-tools { position: absolute; right: 12px; bottom: 12px; display: flex; gap: 8px; align-items: center; }
-.bubble-read, .bubble-next, .choice-read { width: var(--touch); height: var(--touch); -webkit-backdrop-filter: none; backdrop-filter: none; }
+.bubble-read, .bubble-next, .choice-read { width: var(--touch); height: var(--touch); }
 .bubble-read, .choice-read { background: var(--ghost); box-shadow: 0 0 0 1px var(--glass-line) inset; }
 .bubble-next {
   color: var(--ink);

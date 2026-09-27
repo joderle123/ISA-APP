@@ -154,35 +154,36 @@ export function drawMap(cv, ctx) {
   const near = (i) => { if (!rev) return true; const ix = i % N, iz = Math.floor(i / N); for (let dz = -1; dz <= 1; dz++) for (let dx = -1; dx <= 1; dx++) { const jx = ix + dx, jz = iz + dz; if (jx < 0 || jz < 0 || jx >= N || jz >= N) continue; if (rev.has(jz * N + jx)) return true; } return false; };
   const isRev = (i) => !rev || rev.has(i);
   if (rev) {
+    // Wolken auf eine eigene Ebene malen (deckend, damit Überlappungen kein Gitter bilden) und einmal halbdurchsichtig auflegen
+    const fog = document.createElement('canvas'); fog.width = W; fog.height = H;
+    const f = fog.getContext('2d');
     const cloud = (rad, style) => {
-      g.fillStyle = style;
+      f.fillStyle = style;
       for (let i = 0; i < N * N; i++) {
         if (rev.has(i)) continue;
         const ix = i % N, iz = Math.floor(i / N);
-        g.beginPath(); g.arc((ix + 0.5) * ts, (iz + 0.5) * ts, rad, 0, Math.PI * 2); g.fill();
+        f.beginPath(); f.arc((ix + 0.5) * ts, (iz + 0.5) * ts, rad, 0, Math.PI * 2); f.fill();
       }
     };
-    g.save();
-    g.globalAlpha = 0.8;                            // Land scheint schwach durch die Wolken
-    cloud(ts * 0.86, 'rgba(120,100,140,0.32)');   // weicher Rand
+    cloud(ts * 0.88, 'rgba(120,100,140,0.4)');   // weicher Rand um die Wolkenfläche
     cloud(ts * 0.8, PAPER_DARK);
-    g.globalAlpha = 1;
-    // Schraffur, beschnitten auf die Wolken
-    g.beginPath();
-    for (let i = 0; i < N * N; i++) { if (rev.has(i)) continue; const ix = i % N, iz = Math.floor(i / N); g.moveTo((ix + 0.5) * ts + ts * 0.78, (iz + 0.5) * ts); g.arc((ix + 0.5) * ts, (iz + 0.5) * ts, ts * 0.78, 0, Math.PI * 2); }
-    g.clip();
-    g.strokeStyle = 'rgba(90,70,110,0.11)'; g.lineWidth = 1;
-    for (let s = -H; s < W; s += 16) { g.beginPath(); g.moveTo(s, 0); g.lineTo(s + H, H); g.stroke(); }
-    // kleine Wolkenbögen
-    g.strokeStyle = 'rgba(90,70,110,0.28)'; g.lineWidth = 1.2;
+    // Schraffur und Wolkenbögen, beschnitten auf die Wolken
+    f.save();
+    f.beginPath();
+    for (let i = 0; i < N * N; i++) { if (rev.has(i)) continue; const ix = i % N, iz = Math.floor(i / N); f.moveTo((ix + 0.5) * ts + ts * 0.8, (iz + 0.5) * ts); f.arc((ix + 0.5) * ts, (iz + 0.5) * ts, ts * 0.8, 0, Math.PI * 2); }
+    f.clip();
+    f.strokeStyle = 'rgba(90,70,110,0.12)'; f.lineWidth = 1;
+    for (let x = -H; x < W; x += 16) { f.beginPath(); f.moveTo(x, 0); f.lineTo(x + H, H); f.stroke(); }
+    f.strokeStyle = 'rgba(90,70,110,0.3)'; f.lineWidth = 1.2;
     for (let i = 0; i < N * N; i++) {
       if (rev.has(i)) continue;
       const ix = i % N, iz = Math.floor(i / N);
       if ((ix * 7 + iz * 3) % 5) continue;
       const x = (ix + 0.5) * ts, y = (iz + 0.5) * ts;
-      g.beginPath(); g.arc(x - 5, y + 2, 5, Math.PI, 0); g.arc(x + 4, y + 2, 6, Math.PI, 0); g.stroke();
+      f.beginPath(); f.arc(x - 5, y + 2, 5, Math.PI, 0); f.arc(x + 4, y + 2, 6, Math.PI, 0); f.stroke();
     }
-    g.restore();
+    f.restore();
+    g.save(); g.globalAlpha = 0.84; g.drawImage(fog, 0, 0); g.restore();
   }
 
   // ---- Tintenrahmen ----
