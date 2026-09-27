@@ -18,6 +18,7 @@
 //     · renameNpc(id, name) · npcBond(id, ±n) · npcLod() · wege()
 import * as THREE from 'three';
 import { createNpc } from './npc.js';
+import { declutterTags } from '../../actors/humanoid/nametag.js';
 import { createBonds, auraView, pickAnimated, displayName, tellFor, streitStilFor, bondRewardsFor, MAX_ANIMATED, TANKS, HEAT_CAP_OFF } from './model.js';
 import { randomConfig } from '../../actors/humanoid/index.js';
 
@@ -199,6 +200,7 @@ export default {
       for (const n of npcs.values()) n.setLod(r.animated.has(n.id) ? 'full' : r.lite.has(n.id) ? 'lite' : 'hidden');
       return r;
     }
+    const tagPos = [];
     game.addUpdate((dt) => {
       if (!game.started) return;
       if (game.scenes && game.scenes.isInterior) return;
@@ -213,6 +215,21 @@ export default {
         n.update(n.lod === 'hidden' ? hiddenT : dt, { ...ctxBase, bond: bonds.get(id), verstimmt: bonds.isVerstimmt(id) });
       }
       if (doHidden) hiddenT = 0;
+      // Namensschilder entflechten: Aktionsziel zuerst, dann Nähe; überlappende Pillen blenden weich aus
+      const tags = [];
+      const cur = game.interactions && game.interactions.current;
+      const cx = cur && cur.x !== undefined ? (typeof cur.x === 'function' ? cur.x() : cur.x) : null;
+      const cz = cur ? (typeof cur.z === 'function' ? cur.z() : cur.z) : null;
+      for (const n of npcs.values()) {
+        const t = n.tag;
+        if (!t || !t.sprite || !t.eligible || !n.group.visible) continue;
+        n.tag.sprite.getWorldPosition(tagPos[tags.length] || (tagPos[tags.length] = new THREE.Vector3()));
+        const d = n.distTo(player.position);
+        const near = cx !== null && Math.hypot(cx - n.group.position.x, cz - n.group.position.z) < 1.6;
+        tags.push({ tag: t, pos: tagPos[tags.length], dist: d, prio: (near ? 4 : 0) + (n.def.ambient ? 0 : 1) });
+      }
+      if (tags.length > 1) declutterTags(tags, camera, typeof window !== "undefined" ? window.innerWidth : 1180, typeof window !== "undefined" ? window.innerHeight : 820, dt);
+      else for (const x of tags) x.tag.declutter(true, dt);
       // Grenz-Radius: betreten/verlassen (für Quests und Körpersignale)
       saveT += dt;
       if (saveT > 0.3) {
@@ -341,6 +358,24 @@ export default {
     // ---- Debug ----
     const D = game.debug || (game.debug = {});
     D.npc = (id) => { const n = npcs.get(id); if (!n) return null; return { id, name: n.name, lod: n.lod, x: +n.position.x.toFixed(1), z: +n.position.z.toFixed(1), site: n.site, anim: n.anim, emotion: n.emotion.get(), tanks: n.tanks.values(), bond: bonds.get(id), verstimmt: bonds.isVerstimmt(id), boundary: n.boundary(bonds.get(id)), poses: n.humanoid.bodyLanguage.targets }; };
+    // Namensschilder: sichtbare (Deckkraft > 0,5) Paare, die sich auf dem Bildschirm überlappen
+    D.tagOverlaps = () => {
+      const W = innerWidth, H = innerHeight, v = new THREE.Vector3(), boxes = [];
+      for (const n of npcs.values()) {
+        const t = n.tag;
+        if (!t || !t.sprite || !t.sprite.visible || !n.group.visible || t.fade < 0.5) continue;
+        t.sprite.getWorldPosition(v).project(camera);
+        if (v.z >= 1 || Math.abs(v.x) > 1 || Math.abs(v.y) > 1) continue;
+        const b = t.box;
+        boxes.push({ id: n.id, x: (v.x * 0.5 + 0.5) * W, y: (-v.y * 0.5 + 0.5) * H - b.h * 0.62, w: b.w, h: b.h });
+      }
+      const pairs = [];
+      for (let i = 0; i < boxes.length; i++) for (let j = i + 1; j < boxes.length; j++) {
+        const a = boxes[i], c = boxes[j];
+        if (Math.abs(a.x - c.x) < (a.w + c.w) / 2 && Math.abs(a.y - c.y) < (a.h + c.h) / 2) pairs.push(a.id + '/' + c.id);
+      }
+      return { shown: boxes.length, pairs };
+    };
     D.npcList = () => [...npcs.values()].map((n) => ({ id: n.id, name: n.name, lod: n.lod, ambient: !!n.def.ambient, zone: island.zoneAt(n.position.x, n.position.z) }));
     D.setNpcEmotion = (id, e, i, e2, i2) => api.setEmotion(id, { primary: [e, i], secondary: e2 ? [e2, i2 === undefined ? 5 : i2] : null });
     D.npcHeat = (id, v) => api.setHeat(id, v);

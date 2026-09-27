@@ -248,7 +248,7 @@ button {
    ===================================================================================================================== */
 #hud { position: absolute; inset: 0; z-index: 10; pointer-events: none; transition: opacity 0.6s ease; }
 #hud .hud-top, #hud .hud-buttons, #hud .joystick-wrap, #hud .key-hints { transition: opacity 0.6s ease; }
-#hud.is-faded .hud-top, #hud.is-faded .hud-buttons, #hud.is-faded .joystick, #hud.is-faded .key-hints { opacity: 0 !important; }
+#hud.is-faded .hud-top, #hud.is-faded .hud-buttons, #hud.is-faded .joystick, #hud.is-faded .key-hints, #hud.is-faded .quest-obj { opacity: 0 !important; }
 #hud > * { pointer-events: none; }
 #hud button, #hud .hud-interactive { pointer-events: auto; }
 
@@ -811,6 +811,11 @@ html.reduced-fx .ov { -webkit-backdrop-filter: none; backdrop-filter: none; back
 .set-block { margin-bottom: 22px; }
 .set-block h3 { display: flex; align-items: center; gap: 8px; margin: 0 0 10px; color: var(--c-gold); }
 .set-hint { margin: 8px 0 0 4px; font-size: calc(15px * var(--txt-scale)); font-weight: 700; opacity: 0.72; }
+.reset-row { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin-top: 12px; }
+.reset-q { flex-basis: 100%; font-size: calc(17px * var(--txt-scale)); }
+.btn-reset { min-height: var(--touch); padding: 0 20px; border-radius: 999px; border: 2px solid var(--hair); background: rgba(255,255,255,0.08); color: var(--c-text); font: inherit; font-weight: 800; cursor: pointer; }
+.btn-reset.is-danger { border-color: var(--c-coral); background: rgba(255,107,107,0.22); }
+.btn-reset:active { transform: scale(0.97); }
 .row { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: var(--touch); padding: 8px 4px; border-bottom: 1px solid var(--hair); }
 .row-text { flex: 1; min-width: 0; text-align: left; }
 .row-text b { display: block; font-size: calc(19px * var(--txt-scale)); font-weight: 800; }
@@ -918,3 +923,32 @@ html.reduced-fx .ov { -webkit-backdrop-filter: none; backdrop-filter: none; back
   .boot-card { top: 4%; }
   .boot-title { font-size: clamp(64px, 17vmin, 140px); }
 }
+
+/* Ziel-Zeile unter dem Kompass (systems/quests/objective.js): kurz, ruhig, antippbar */
+.quest-obj {
+  position: absolute; left: 50%; top: calc(58px + var(--safe-t));
+  transform: translateX(-50%);
+  display: flex; align-items: center; gap: 8px;
+  max-width: min(460px, calc(100vw - 180px));
+  min-height: 34px; padding: 4px 14px 4px 6px;
+  border: 0; border-radius: 99px;
+  background: rgba(18, 12, 36, 0.55);
+  box-shadow: 0 0 0 1px rgba(255, 209, 102, 0.35);
+  color: #fff; font: inherit; font-weight: 800; font-size: calc(15px * var(--txt-scale));
+  cursor: pointer; pointer-events: auto;
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+.quest-obj.is-off { opacity: 0; pointer-events: none; transform: translate(-50%, -6px); }
+.quest-obj .qo-label { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+.quest-obj .qo-dist { opacity: 0.7; font-size: 0.85em; white-space: nowrap; }
+.quest-obj .qo-dist:empty { display: none; }
+.quest-obj .qo-arrow { display: grid; place-items: center; flex: none; width: 26px; height: 26px; border-radius: 50%; background: var(--c-gold); color: var(--c-ink); transition: transform 0.15s linear; }
+.quest-obj:not(.has-target) .qo-arrow { visibility: hidden; width: 0; margin-right: -8px; }
+.quest-obj.is-code { box-shadow: 0 0 0 1px rgba(45, 226, 201, 0.45); }
+.quest-obj.is-new { animation: qo-new 0.9s ease; }
+.quest-obj.is-nudge { animation: qo-nudge 1.2s ease 2; }
+.quest-obj.is-nudge .qo-arrow { box-shadow: 0 0 0 6px rgba(255, 209, 102, 0.35); }
+@keyframes qo-new { 0% { box-shadow: 0 0 0 1px rgba(255,209,102,0.35), 0 0 0 0 rgba(255,209,102,0.7); } 60% { box-shadow: 0 0 0 1px rgba(255,209,102,0.8), 0 0 0 12px rgba(255,209,102,0); } }
+@keyframes qo-nudge { 0%, 100% { transform: translateX(-50%) scale(1); } 40% { transform: translateX(-50%) scale(1.08); background: rgba(60, 40, 10, 0.75); } }
+@media (max-width: 700px) { .quest-obj { top: calc(56px + var(--safe-t)); max-width: calc(100vw - 32px); } }
+html.reduced-fx .quest-obj.is-new, html.reduced-fx .quest-obj.is-nudge { animation: none; }

@@ -19,7 +19,7 @@ export default {
   tell: { bluff: 'reibt-den-ring', amp: { entspannt: 1, abenteuer: 0.6, profi: 0.3 } },
   lines: {
     greet: ['Moien. Alles an Bord?', 'Der Hafen hält zusammen. Meistens.', 'Frag mich nicht nach dem Turm.'],
-    campfire: { 'ilda-schluessel': 'Der Schlüssel ist zurück. Danke dir.', 'ilda-hilfe-geholt': 'Du hast mich geholt. Richtig so.' },
+    campfire: { 'ilda-blick': 'Du siehst jetzt mehr als die meisten hier.', 'ilda-schluessel': 'Der Schlüssel ist zurück. Danke dir.', 'ilda-hilfe-geholt': 'Du hast mich geholt. Richtig so.' },
     campfireDefault: 'Guter Tag. Du warst da, wo es zählte.',
     capOff: 'Nicht jetzt. Später reden wir.',
   },

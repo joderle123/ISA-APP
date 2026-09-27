@@ -96,6 +96,24 @@ try {
   await page.evaluate(() => { LUMO.debug.teleport({ x: 6, z: 128 }, Math.atan2(4 - 6, 106 - 128)); LUMO.debug.advance(0.5); LUMO.cameraRig.behindPlayer(); LUMO.cameraRig.snap(); });
   await frames(page, 4);
   await shot(page, '200_demo_hafen_grau');
+  // Ziel-Zeile, Namensschilder entflechtet, sanfter Stupser nach 40 s ohne Annäherung
+  await page.evaluate(() => { for (let i = 0; i < 10; i++) LUMO.debug.advance(0.1); });
+  await frames(page, 2);
+  const o0 = await page.evaluate(() => ({ obj: LUMO.debug.objective(), tags: LUMO.debug.tagOverlaps() }));
+  check('Ziel-Zeile sichtbar: „Zur Kapitänin am Steg“', o0.obj.visible && o0.obj.dom && !o0.obj.dom.off && o0.obj.text === 'Zur Kapitänin am Steg', J(o0.obj));
+  check('Namensschilder überlappen nicht (Hafen-Start)', o0.tags.shown >= 2 && o0.tags.pairs.length === 0, J(o0.tags));
+  await page.evaluate(() => { LUMO.debug.teleport({ x: -10, z: 100 }, 0); LUMO.debug.advance(0.3); });
+  await page.evaluate(() => { for (let i = 0; i < 44; i++) LUMO.debug.advance(1); });
+  const o1 = await page.evaluate(() => LUMO.debug.objective());
+  check('Stupser nach 40 s ohne Annäherung (Ziel-Zeile pulsiert, Marker leuchtet)', o1.nudges >= 1 && o1.dist > 20, J(o1));
+  await frames(page, 2);
+  await shot(page, '200b_demo_ziel_stupser');
+  await page.setViewportSize({ width: 820, height: 1180 });
+  await page.evaluate(() => { LUMO.debug.teleport({ x: 6, z: 124 }, Math.atan2(4 - 6, 106 - 124)); LUMO.debug.advance(0.5); LUMO.cameraRig.behindPlayer(); LUMO.cameraRig.snap(); });
+  await frames(page, 3);
+  await shot(page, '200c_demo_hochformat');
+  await page.setViewportSize(IPAD_LANDSCAPE);
+  await frames(page, 2);
 
   // ---- 2 Ankunft: Ilda gibt den Blick ----
   await goAndAct(page, 'hafen.steg', sceneOpen);
@@ -236,6 +254,23 @@ try {
   const r5 = await runScenario(page2, ['code leuchtfeuer-42', 'expect state.session.teacher == true']);
   check('Lehrer-Code LEUCHTFEUER-42 öffnet das Lehrer-Panel', r5.ok, r5.steps.filter((s) => !s.ok).map((s) => s.step + ' · ' + s.info).join(' | '));
   await page2.evaluate(() => { LUMO.codes.endTeacher(); });
+
+  // ---- 10 Neu anfangen: Einstellungen → fragen → löschen (ohne ?debug-Kasten) ----
+  await page2.evaluate(() => { LUMO.ui.overlay.closeAll && LUMO.ui.overlay.closeAll(); LUMO.ui.pauseMenu.open('einstellungen'); });
+  await sleep(500);
+  await page2.click('[data-reset-ask]');
+  await sleep(200);
+  const askShown = await page2.evaluate(() => !!document.querySelector('[data-reset-yes]') && !!document.querySelector('[data-reset-no]'));
+  await shot(page2, '208_demo_neu_anfangen');
+  await page2.click('[data-reset-no]');
+  await sleep(200);
+  const keptAfterNo = await page2.evaluate(() => LUMO.state.get('units.j1-e03') === 'fertig' && !!document.querySelector('[data-reset-ask]'));
+  await page2.click('[data-reset-ask]');
+  await sleep(150);
+  await page2.click('[data-reset-yes]');
+  await sleep(300);
+  const rs = await page2.evaluate(() => { const k = []; for (let i = 0; i < localStorage.length; i++) k.push(localStorage.key(i)); return { e03: LUMO.state.get('units.j1-e03') || null, patches: (LUMO.state.get('patches', []) || []).length, keys: k.filter((x) => x.startsWith('lumo.') && !x.startsWith('lumo.device')) }; });
+  check('Neu anfangen: erst Nachfrage, „Lieber nicht“ behält alles, „Ja“ löscht den Spielstand', askShown && keptAfterNo && rs.e03 !== 'fertig' && rs.patches === 0, J({ askShown, keptAfterNo, rs }));
 
   const allErrors = errors.concat(errors2).filter((e) => !/favicon|AudioContext|WebGL|ResizeObserver/.test(e));
   check('Keine Seitenfehler', allErrors.length === 0, allErrors.slice(0, 3).join(' | '));

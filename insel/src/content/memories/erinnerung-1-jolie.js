@@ -7,5 +7,5 @@ export default {
     figures: [{ npc: 'jolie', pose: 'staunen', facing: 'turm' }, { crowd: 6, pose: 'schauen', facing: 'turm' }],
   },
   caption: 'Laternen. Ein Knall. Dann wird der Turm dunkel.',
-  chain: { step: 'situation', say: 'Eine Nacht, ein Turm, ein Knall. Mehr weiß noch niemand.' },
+  chain: { step: 'situation', say: 'Jolie war danach im Turm. Gefragt hat sie keiner.' },
 };

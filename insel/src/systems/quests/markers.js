@@ -29,7 +29,8 @@ export function createMarkers({ game }) {
   const api = {
     group,
     get target() { return target; },
-    get visible() { return group.visible; },
+    get visible() { return !!target; },   // aktiv (die Säule selbst blendet in der Nähe aus)
+    get shown() { return group.visible; },
     get glow() { return glow; },
     set(pos, { color: c = MARKER_COLOR, symbol = '◆' } = {}) {
       if (!pos || typeof pos.x !== 'number') return api.clear();
@@ -44,7 +45,7 @@ export function createMarkers({ game }) {
     clear() { target = null; group.visible = false; if (ui && ui.removeMarker) ui.removeMarker('quest'); },
     setGlow(v) { glow = !!v; },
     update(dt, t) {
-      if (!group.visible) return;
+      if (!target) return;   // (früher: einmal nah = für immer weg – jetzt kommt die Säule beim Weggehen wieder)
       const k = 0.5 + 0.5 * Math.sin(t * 2.4);
       const g = glow ? 1.8 : 1;
       beam.scale.set(g * (1 + k * 0.12), 1, g * (1 + k * 0.12));

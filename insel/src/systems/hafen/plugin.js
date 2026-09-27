@@ -3,6 +3,10 @@
 //     Danach öffnen die Kurs-Codes (BOJE, DELFIN, OTTER) die Quests j1-e01…e03; jede Quest senkt den Schleier
 //     (RegionDef.veil.steps) als Farbwelle, e03 macht den Hafen ganz bunt.
 //   · Andere Regionen bleiben grau: beim Betreten sagt Glimm einmal je Sitzung „Grau hier. Kommt bald.“
+//     (nach M0 am Strand: „Da glitzert was. Kommt bald.“, am Turm eigener Satz – docs/STORY.md)
+//   · Story-Beats (docs/STORY.md): Ankunft mit dem Boot (erster Start, nach dem Stil-Studio) und je ein kurzer Beat am
+//     Morgen nach dem Lagerfeuer von e01/e02/e03 (m0-nach-e01, m0-nach-e02, m0-finale). Spielstand: story.beat (wartend),
+//     story.seen.<id>. Unter ?test nur mit ?story, damit Szenarien nicht von Szenen unterbrochen werden.
 //   · Autosave läuft im Kern (save.autosave); nach einer fertigen Quest wird sofort gespeichert.
 //   game.plugins.hafen → { started(), teaser(zone) }   Spielstand: flags.hafenStart
 //   Tests (?test): die Ankunft startet nur mit ?demo automatisch, damit ältere Szenarien (Code WELLE → aktiv) gleich bleiben.
@@ -38,7 +42,9 @@ export default {
       const v = world.veil.zoneValue ? world.veil.zoneValue(zone) : null;
       if (v === null || v < 0.5) return false;
       teased.add(zone);
-      if (ui.glimm) ui.glimm('Grau hier. Kommt bald.', { seconds: 3 });
+      const m0 = (world.veil.zoneValue ? world.veil.zoneValue('hafen') : 1) <= 0.01;
+      const line = zone === 'leuchtturm' ? 'Der Turm. Noch zu. Kommt bald.' : zone === 'strand' && m0 ? 'Da glitzert was. Kommt bald.' : 'Grau hier. Kommt bald.';
+      if (ui.glimm) ui.glimm(line, { seconds: 3 });
       return true;
     }
     events.on('zone:change', (e) => { if (game.started && e && e.id) setTimeout(() => teaser(e.id), 1400); });
@@ -50,12 +56,32 @@ export default {
       setTimeout(() => ui.toast('Tagebuch → Code: Dein Kurs-Code öffnet den Auftrag.', 4200), 1500);
     });
 
-    const onStart = () => setTimeout(firstStart, 300);
+    // ---- Story-Beats: erst abspielen, wenn nichts anderes offen ist (Stil-Studio, Lagerfeuer, Recap, Szene) ----
+    const storyOn = !params.has('test') || params.has('story');
+    const BEAT_AFTER = { 'j1-e01': 'm0-nach-e01', 'j1-e02': 'm0-nach-e02', 'j1-e03': 'm0-finale' };
+    let beatTimer = null;
+    const busy = () => !game.started || (ui.overlay && ui.overlay.count) || (game.dialogue && game.dialogue.isOpen) || (game.session && game.session.ending) || (game.scenes && game.scenes.isInterior);
+    function playBeat(id, tries = 0) {
+      if (!storyOn || !id || !content.has('dialogues', id) || state.get('story.seen.' + id)) { if (state.get('story.beat') === id) state.set('story.beat', null); return false; }
+      clearTimeout(beatTimer);
+      if (busy()) { if (tries < 600) beatTimer = setTimeout(() => playBeat(id, tries + 1), 1000); return false; }
+      state.set('story.seen.' + id, true);
+      if (state.get('story.beat') === id) state.set('story.beat', null);
+      if (game.dialogue && game.dialogue.play) game.dialogue.play(id);
+      return true;
+    }
+    events.on('quest:complete', (e) => { if (e && !e.kurz && BEAT_AFTER[e.id]) state.set('story.beat', BEAT_AFTER[e.id]); });
+    events.on('session:ended', () => { const b = state.get('story.beat'); if (b) setTimeout(() => playBeat(b), 1200); });
+
+    const onStart = () => {
+      setTimeout(() => { if (firstStart()) setTimeout(() => playBeat('m0-ankunft-boot'), 2500); else { const b = state.get('story.beat'); if (b) setTimeout(() => playBeat(b), 3000); } }, 300);
+    };
     if (game.started) onStart(); else events.on('game:start', onStart);
     events.on('state:reset', () => { teased.clear(); if (game.started) setTimeout(firstStart, 300); });
 
     const D = game.debug || (game.debug = {});
     D.hafenStart = () => { state.set('flags.hafenStart', false); return firstStart(); };
-    return { started: () => !!state.get('flags.hafenStart'), teaser, firstStart };
+    D.storyBeat = (id) => { if (id) state.set('story.seen.' + id, false); return playBeat(id || state.get('story.beat')); };
+    return { started: () => !!state.get('flags.hafenStart'), teaser, firstStart, playBeat };
   },
 };

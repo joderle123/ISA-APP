@@ -89,6 +89,11 @@ export function createSettings({ game, state, events, speech, audio, icon }) {
       <section class="set-block">
         <h3>${icon('zahnrad', { size: 22 })} Grafik</h3>
         <div class="row"><span class="row-text"><b>Qualität</b></span>${seg('quality', [['auto', 'Auto'], ['low', 'Niedrig'], ['medium', 'Mittel'], ['high', 'Hoch']], dev.quality || 'auto')}</div>
+      </section>
+      <section class="set-block set-reset" data-reset>
+        <h3>${icon('zurueck', { size: 22 })} Neu anfangen</h3>
+        <p class="set-hint">Löscht den Spielstand auf diesem Gerät. Für die nächste Person.</p>
+        <div class="reset-row"><button type="button" class="btn-reset" data-reset-ask>Neu anfangen …</button></div>
       </section>`;
     el.querySelectorAll('[data-set]').forEach((b) => b.addEventListener('click', () => {
       if (audio) audio.play('tile');
@@ -98,6 +103,25 @@ export function createSettings({ game, state, events, speech, audio, icon }) {
       set(key, val);
       render(el);
     }));
+    // Neu anfangen: zweistufig (erst fragen, dann löschen), danach frischer Start ohne ?debug
+    const rs = el.querySelector('[data-reset]');
+    if (rs) rs.addEventListener('click', (ev) => {
+      const b = ev.target.closest('button');
+      if (!b) return;
+      const row = rs.querySelector('.reset-row');
+      if (b.hasAttribute('data-reset-ask')) {
+        if (audio) audio.play('tile');
+        row.innerHTML = `<b class="reset-q">Wirklich? Alles auf diesem Gerät ist dann weg.</b><button type="button" class="btn-reset is-danger" data-reset-yes>Ja, alles löschen</button><button type="button" class="btn-reset" data-reset-no>Lieber nicht</button>`;
+        const no = row.querySelector('[data-reset-no]'); if (no) no.focus();
+      } else if (b.hasAttribute('data-reset-no')) {
+        if (audio) audio.play('tile');
+        render(el);
+      } else if (b.hasAttribute('data-reset-yes')) {
+        if (game && game.save && game.save.wipe) game.save.wipe();
+        if (events) events.emit('ui:reset', {});
+        if (!(typeof location !== 'undefined' && /[?&]test\b/.test(location.search))) setTimeout(() => location.reload(), 60);
+      }
+    });
     el.querySelectorAll('[data-toggle]').forEach((b) => b.addEventListener('click', () => {
       if (audio) audio.play('tile');
       const key = b.dataset.toggle;

@@ -12,6 +12,7 @@
 //   Szenario: 'code welle' 'expect state.units.j1-e11 == aktiv' 'call questInfo' 'call failStep sturz' 'call completeStep'
 import { createQuestEngine } from './engine.js';
 import { createMarkers } from './markers.js';
+import { createObjective } from './objective.js';
 import { installQuestPages, PAGES_CSS } from './pages.js';
 import { evalCond, applyEffects } from './dsl.js';
 import { createWorldDsl } from './worlddsl.js';
@@ -156,7 +157,8 @@ export default {
     if (game.started) boot(); else events.on('game:start', boot);
     events.on('state:reset', () => { markers.clear(); ctx.clearRueckenwind(); if (started) engine.resume(); });
     events.on('save:load', () => { if (started) engine.resume(); });
-    game.addUpdate((dt, t) => { engine.update(dt); markers.update(dt, t); }, { order: 40 });
+    const objective = createObjective({ game, engine, markers });
+    game.addUpdate((dt, t) => { engine.update(dt); markers.update(dt, t); objective.update(dt); }, { order: 40 });
 
     // ---- Tagebuch ----
     installQuestPages({ journal: ui.journal, game, quests: engine, audio, icon: ui.icon, speech: game.speech || null });
@@ -173,6 +175,8 @@ export default {
     D.completeQuest = (id) => engine.complete(id || engine.active);
     D.questInfo = () => { const i = engine.stepInfo(); return { active: engine.active, running: engine.running, step: i && i.step ? i.step.id : null, index: i ? i.index : -1, kurz: !!(i && i.kurz), progress: engine.active ? engine.progress() : null, marker: markers.target, glow: markers.glow, fails: engine.active && i && i.step ? engine.hints.failsOf(i.step.id) : 0 }; };
     D.questMarker = () => markers.target;
+    D.objective = () => ({ ...objective.info, idle: objective.idle, dom: objective.el ? { text: objective.el.textContent, off: objective.el.classList.contains('is-off') } : null });
+    D.nudge = () => objective.nudge();
     D.addDeed = (id, npc) => engine.deeds.add(id, { npc });
     D.checkEchoes = () => engine.echoes.check();
 

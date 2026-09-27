@@ -35,7 +35,7 @@ export function createNameTag({ name = '', icon = 'punkt', color = '#ffd166', pi
   const sprite = new THREE.Sprite(mat);
   sprite.renderOrder = 17;
   sprite.center.set(0.5, 0);
-  const cur = { name, icon, color, drawn: '', pill, text, hidden: false, dist: 0, px: 1 };
+  const cur = { name, icon, color, drawn: '', pill, text, hidden: false, dist: 0, px: 1, dc: 1, dcv: 1 };
   let img = null, usedW = CW;
 
   function draw() {
@@ -99,10 +99,34 @@ export function createNameTag({ name = '', icon = 'punkt', color = '#ffd166', pi
     // Sichtbarkeit nach Abstand: sanfte Einblendung über `fade` Meter vor `far`
     update(dist, { far = 34, fade = 4, near = 0 } = {}) {
       cur.dist = dist;
-      const on = !cur.hidden && dist < far && dist >= near;
+      cur.elig = !cur.hidden && dist < far && dist >= near;
+      const on = cur.elig && cur.dcv > 0.03;
       sprite.visible = on;
-      if (on) mat.opacity = Math.max(0, Math.min(1, (far - dist) / fade));
+      if (on) mat.opacity = Math.max(0, Math.min(1, (far - dist) / fade)) * cur.dcv;
     },
+    // Entflechten (siehe declutterTags): Pillen-Maße in Bildschirm-Pixeln und weiches Aus-/Einblenden bei Überlappung
+    get box() { const h = (26 + 6 * (1 - THREE.MathUtils.smoothstep(cur.dist, 5, 30))) * (cur.pill / 30); return { w: (usedW / S) * (h / 32), h }; },
+    get eligible() { return !!cur.elig; },
+    get fade() { return cur.dcv; },
+    declutter(on, dt) { cur.dc = on ? 1 : 0; cur.dcv += (cur.dc - cur.dcv) * Math.min(1, dt * 8); },
     dispose() { tex.dispose(); mat.dispose(); },
   };
+}
+
+// Namensschilder entflechten: Wer zuerst kommt (Priorität, dann Nähe), bleibt; überlappende Pillen dahinter blenden weich aus.
+//   declutterTags([{ tag, pos: Vector3 (Schildanker), prio }], camera, W, H, dt)
+const _v = new THREE.Vector3();
+export function declutterTags(items, camera, W, H, dt) {
+  const placed = [];
+  const list = items.map((it) => {
+    _v.copy(it.pos).project(camera);
+    const b = it.tag.box;
+    return { it, x: (_v.x * 0.5 + 0.5) * W, y: (-_v.y * 0.5 + 0.5) * H - b.h * 0.62, w: b.w, h: b.h, front: _v.z < 1 };
+  }).sort((a, b) => (b.it.prio - a.it.prio) || (a.it.dist - b.it.dist));
+  for (const r of list) {
+    if (!r.front) { r.it.tag.declutter(true, dt); continue; }
+    const hit = placed.some((p) => Math.abs(p.x - r.x) < (p.w + r.w) / 2 + 4 && Math.abs(p.y - r.y) < (p.h + r.h) / 2 + 2);
+    r.it.tag.declutter(!hit, dt);
+    if (!hit) placed.push(r);
+  }
 }
