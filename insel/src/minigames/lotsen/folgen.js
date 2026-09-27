@@ -37,7 +37,7 @@ export function createFolgen(ctx) {
   function dom() {
     dark = document.createElement('div'); dark.className = 'mg-dark'; dark.dataset.mgDark = '1'; ui.root.appendChild(dark);
     for (let i = 0; i < 2; i++) { const l = document.createElement('div'); l.className = 'mg-light' + (i ? ' is-next' : ''); l.dataset.mgLight = String(i); l.style.display = 'none'; ui.root.appendChild(l); lights.push(l); }
-    requestAnimationFrame(() => dark.classList.add('is-in'));
+    requestAnimationFrame(() => { if (dark) dark.classList.add('is-in'); });   // Spiel kann vor dem Frame schon zu sein
   }
   function project(p, el) {
     _v.set(p.x, p.y + 1.1, p.z).project(camera);

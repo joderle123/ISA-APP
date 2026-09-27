@@ -192,9 +192,22 @@ try {
   await frames(page, 4);
   await shot(page, '206_demo_hafen_bunt');
 
-  // ---- 6 Namensschilder: nah klein, fern größer (Weltmaß), immer lesbar ----
-  const tags = await page.evaluate(() => { const n = LUMO.npcs.get('ilda'); const p = n.group.position; const at = (d) => { LUMO.debug.teleport({ x: p.x + d, z: p.z }, Math.atan2(-d, 0)); LUMO.debug.advance(0.3); return +n.humanoid.group.children.find((c) => c.isSprite).scale.y.toFixed(3); }; return { near: at(1.8), far: at(12) }; });
-  check('Namensschild skaliert mit dem Abstand (nah ≈ 0,15 m, fern 0,48 m)', tags.near < 0.2 && tags.far > 0.45, J(tags));
+  // ---- 6 Namensschilder: klein und elegant, in Bildschirmgröße geklemmt (nah ≈ 32 px, fern ≈ 26 px Pille) ----
+  const tagPx = async (d) => {
+    await page.evaluate((d) => { const p = LUMO.npcs.get('ilda').group.position; LUMO.debug.teleport({ x: p.x + d, z: p.z }, Math.atan2(-d, 0)); LUMO.debug.advance(0.3); LUMO.cameraRig.behindPlayer(); LUMO.cameraRig.snap(); }, d);
+    await frames(page, 2);
+    return page.evaluate(() => {
+      const s = LUMO.npcs.get('ilda').humanoid.group.children.find((c) => c.isSprite);
+      const cam = LUMO.cameraRig.camera || LUMO.camera, H = LUMO.renderer ? LUMO.renderer.domElement.clientHeight : innerHeight;
+      const fov = cam && cam.fov ? cam.fov : 50;
+      // sizeAttenuation aus: Weltmaß bei 1 m Abstand → Bildschirm-Pixel der ganzen Canvas (Pille = 32/40 davon)
+      return { px: +(s.scale.y * H / (2 * Math.tan((fov * Math.PI / 180) / 2)) * 0.8).toFixed(1), vis: s.visible };
+    });
+  };
+  const tNear = await tagPx(1.8);
+  await shot(page, '207_demo_namensschild_nah');
+  const tFar = await tagPx(12);
+  check('Namensschild klein und elegant: Pille 24–34 px nah wie fern', tNear.vis && tFar.vis && tNear.px >= 24 && tNear.px <= 34 && tFar.px >= 24 && tFar.px <= 34, J({ near: tNear, far: tFar }));
 
   // ---- 7 Graue Regionen: freundlicher Hinweis, kein Absturz ----
   await scen(page, ['teleport strand', 'wait 0.5']);

@@ -63,8 +63,10 @@ Sicherheit ist immer an: Pause/X überall, kein Tod, keine Rangliste, Fehler kos
 - Es gibt noch kein Menü für „Neu anfangen“ oder mehrere Spielstände pro Gerät (siehe Zurücksetzen oben).
 - Puls, Skills-Koffer, Baumhaus-Möbel und Chronik sind vorhanden, aber im Hafen noch ohne Rolle.
 - Vorlesen braucht eine deutsche System-Stimme (iPad: Einstellungen → Bedienungshilfen → Gesprochene Inhalte).
+- Namensschilder sind jetzt kleine Pillen in fester Bildschirmgröße (nah wie fern gut lesbar, nie riesig).
 - Grafikstufe stellt sich automatisch ein; ruckelt es, im Pause-Menü „Grafik: niedrig“ wählen.
 
 ## Für Entwickler
 `npm run build` erzeugt `dist/`. Tests: `npm run test:fast` (Inhalte, Texte, Einheiten), `node tests/smoke.mjs`,
-`npm run test:demo` (spielt den ganzen Demo-Pfad headless durch und legt Screenshots ab).
+`npm run test:demo` (spielt den ganzen Demo-Pfad headless durch, 26 Prüfungen, und legt 8 Screenshots `200_…`–`207_…` im
+`SHOTS`-Ordner ab). Dauer mit Software-Grafik: etwa 10–15 Minuten.

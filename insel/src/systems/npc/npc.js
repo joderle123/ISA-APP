@@ -6,7 +6,7 @@
 //   npc.setOverride({ x, z, yaw?, anim?, poses?, lookAt? }) · clearOverride() · npc.face(pos|null) · npc.say → über ui
 import * as THREE from 'three';
 import { createEmotion, createTanks, bodyFor, boundaryRadius, streitStilFor, scheduleAt, displayName, TANKS } from './model.js';
-import { createNameTag } from './nametag.js';
+import { createNameTag } from '../../actors/humanoid/nametag.js';   // Stil-Bibel §11.3: Bildschirmgröße geklemmt
 import { merge } from '../../world/geom.js';
 import { EMOTION_COLORS } from '../../actors/humanoid/aura.js';
 
