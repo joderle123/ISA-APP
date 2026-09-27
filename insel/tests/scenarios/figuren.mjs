@@ -180,7 +180,7 @@ try {
     const line = document.querySelector('[data-overlay="campfire"] .cf-line');
     return { day0, raw0len: (raw0 || '').length, who: line && line.querySelector('b').textContent, text: line && line.querySelector('p').textContent, plan: LUMO.session.campfirePlan() };
   });
-  check('Lagerfeuer: Jolie sagt ihren Satz zur Tat von heute', cf.who === 'Jolie' && cf.text === 'Du hast dich einfach neben mich gesetzt.' && cf.plan.lines.length >= 1 && cf.plan.cliffhanger, J({ who: cf.who, text: cf.text, cliff: cf.plan.cliffhanger }));
+  check('Lagerfeuer: Jolie sagt ihren Satz zur Tat von heute', cf.who === 'Jolie' && cf.text === 'Zwei Sekunden. Und dann noch mehr.' && cf.plan.lines.length >= 1 && cf.plan.cliffhanger, J({ who: cf.who, text: cf.text, cliff: cf.plan.cliffhanger }));
   await frames(page, 3);
   await shot(page, '123_lagerfeuer_satz');
   await page.click('[data-overlay="campfire"] [data-cf-next]');

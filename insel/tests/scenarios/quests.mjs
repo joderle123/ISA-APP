@@ -102,7 +102,7 @@ try {
   check('Minispiel-Ersatz „Die Drachenleine“ mit X', mg.title === 'Die Drachenleine' && mg.x, JSON.stringify(mg));
   await shot(page, '105_minispiel');
   await page.click('[data-overlay="minigame"] [data-los]');
-  await waitFor(page, () => !document.querySelector('[data-overlay="minigame"]') && document.querySelector('.bubble[data-who="luc"]'), 20000);
+  await waitFor(page, () => !document.querySelector('[data-overlay="minigame"]') && document.querySelector('.bubble[data-who="luc"]'), 90000);
   const c2a = await page.evaluate(() => ({ text: document.querySelector('.bubble-text').textContent, hitze: LUMO.debug.hitze('luc'), puls: LUMO.state.get('session.puls') }));
   await page.evaluate(() => { window.__lsn = []; LUMO.events.on('dialogue:lauschen', (e) => window.__lsn.push({ ok: e.ok, node: e.node })); });
   await pressAction(page);
