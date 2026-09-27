@@ -55,7 +55,9 @@ export function createMarkers({ game }) {
       // In der Nähe ausblenden, damit die Säule nicht im Bild steht
       const p = game.player.position;
       const d = Math.hypot(p.x - group.position.x, p.z - group.position.z);
-      group.visible = d > 2.2;
+      // Während eines Gesprächs (auch Nachtszene/Finale) steht keine Säule über den Figuren
+      const talking = !!(game.dialogue && game.dialogue.isOpen);
+      group.visible = d > 2.2 && !talking;
       // Kamera steht in/an der Säule (Ziel hinter der Figur): sonst füllt das additive Licht halb den Bildschirm
       const cam = game.camera;
       if (cam) {

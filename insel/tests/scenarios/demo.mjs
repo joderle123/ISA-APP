@@ -176,6 +176,14 @@ try {
   await page.evaluate(() => LUMO.debug.storyBeat('m0-nach-e01'));
   await waitFor(page, sceneOpen, 15000);
   const night = await page.evaluate(() => LUMO.time.getTimeOfDay());
+  await page.evaluate(() => LUMO.debug.advance(0.3));
+  // Stille Szene: keine Ziel-Säule über den Figuren, keine unbeteiligte Dorf-Figur direkt am Feuer
+  const quiet = await page.evaluate(() => {
+    const I = LUMO.npcs.get('ilda').position;
+    const near = LUMO.npcs.list().filter((o) => o.id !== 'ilda' && !o.hidden && Math.hypot(o.position.x - I.x, o.position.z - I.z) < 10).map((o) => o.id);
+    return { marker: LUMO.quests.markers.group.visible, near };
+  });
+  check('Nachtszene ruhig: keine Ziel-Säule, keine Zaungäste am Feuer', !quiet.marker && quiet.near.length === 0, J(quiet));
   const okN = await playScene(page, ['Dazusetzen', 'Kann sein', 'Schweigen', 'Weiß ich nicht'], { onChoices: async () => { await frames(page, 3); await shot(page, '204b_story_nacht'); } });
   await sleep(300);
   const n0 = await page.evaluate(() => ({ ilda: LUMO.state.get('flags.m0.ilda'), hour: LUMO.time.getTimeOfDay(), seen: !!LUMO.state.get('story.seen.m0-nach-e01') }));
