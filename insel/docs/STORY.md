@@ -49,14 +49,21 @@ Kein Bösewicht, aber eine Haltung mit Gesicht. **Mika Thill** (16) und die Vulk
   Pit nimmt seine Entschuldigung nicht sofort an („Mal sehen.“). Im Finale steht Mika am Rand, nicht im Kreis. Erst in
   der letzten Szene macht er einen Schritt ans Feuer. Mehr nicht.
 - **Saat in M0:** Gerücht (Tun: „Denen widerspricht man nicht.“), Graffiti auf dem alten Festplakat (e02),
-  Auftritt an der Hafenmauer am Morgen nach e03 – mit einer Spitze, die zu deiner Plakat-Wahl passt.
+  Auftritt an der Hafenmauer am Morgen nach e03 – mit einer Spitze, die zu deiner Plakat-Wahl passt. Dort sein stärkster
+  Moment, dem keiner widerspricht: „Letzten Sommer haben alle geredet. Frag, wem’s geholfen hat.“ Wer zurückfragt
+  („Und wem hilft Schweigen?“), bekommt ein einziges Wort: „… Mir.“ – der erste Riss, erst in M6 verstehbar. Wer ihm
+  recht gibt, bekommt ein Angebot: „Krater hat Platz. Falls du’s leid wirst.“ (`m0.mika=angebot`, nur Text; M6 greift es
+  auf: Mika erinnert dich daran, als seine Crew zerfällt). Mika zeigt in M0 **nicht** auf Tun – die Kamera-Spur kommt
+  erst in M4/M6 von ihm.
 
 ## 5. Was auf dem Spiel steht (die Uhr)
-Kein Timer im Bild. Die Uhr läuft in der Welt: gestapelte Kisten mit Namen am Steg, Ildas zugeklebter Brief ans
+Kein Timer im Bild. Die Uhr läuft in der Welt: gestapelte Kisten mit Namen am Steg – auf der obersten steht **WAGNER**
+(M0-Ende; Jolies Familie, keine Figur erklärt es; mild für §19: Umzug, kein Familienstreit), Ildas zugeklebter Brief ans
 Festland, „Die letzte Fähre geht, wenn die Stürme kommen.“ Jedes Modul zeigt einen Schritt: M1 die ersten Kisten sind
 weg · M3 erster Sturm · M5 halber Markt zu · M6 Crew zerfällt · M8 letzte Fähre angekündigt · M9 Sturmnacht.
 **Finale im ersten Herbststurm:** Die Fähre sieht das Licht und legt an. Der Hafen bleibt offen – und Maëlle fährt mit
-genau dieser Fähre weg. Das Licht, das die Insel rettet, nimmt jemanden mit.
+genau dieser Fähre weg. Das Licht, das die Insel rettet, nimmt jemanden mit. Die Wagners bleiben: Jhemps Schlüssel an
+Jolie gibt der Familie einen Grund (der Turm braucht jemanden, der ihn aufschließt).
 
 ## 6. Entscheidungen mit Preis (M0, umgesetzt)
 Keine Option ist „die richtige“, jede kostet etwas, keine gibt weniger Belohnung, nichts blockiert. Zustand nur in
@@ -64,8 +71,8 @@ Keine Option ist „die richtige“, jede kostet etwas, keine gibt weniger Beloh
 
 | Wahl | Wo | Optionen → Flag | Preis | Folgen (subtil) |
 |---|---|---|---|---|
-| **Jolies Geheimnis** | e01-jolie | „Versprochen.“ → `m0.jolie=versprochen` · „Kann ich nicht versprechen.“ → `offen` | Versprechen bindet dich gegen Ilda · Ehrlichkeit kühlt Jolie ab | Lagerfeuer-Satz Jolie; m0-nach-e01 (Glimm erinnert ans Versprechen); m0-nach-e02 (Jolie weiß, ob du dicht gehalten hast) |
-| **Ilda fragt direkt** | m0-nach-e01 (Nacht) | „Weiß ich nicht.“ → `m0.ilda=ausgewichen` · „Frag sie selbst.“ → `fragselbst` · „Ja. War sie.“ → `gesagt` | Lügen: Ilda merkt es · Weitergeben: Jolie merkt es · Zurückgeben: Ilda geht zu Jolie, Jolie verdächtigt dich trotzdem | m0-nach-e02 (drei Fassungen), e03-kodex (Ilda dankt Jolie – oder sagt dir leise „Schlecht für mich.“) |
+| **Jolies Geheimnis** | e01-jolie | „Versprochen.“ → `m0.jolie=versprochen` · „Kann ich nicht versprechen.“ → `offen` | Versprechen bindet dich gegen Ilda · Ehrlichkeit kühlt Jolie ab | Lagerfeuer-Satz Jolie; m0-nach-e01 (bei „gesagt“: „Unten am Ufer brennt noch ein Licht. Bei Jolie.“); m0-nach-e02 (Jolie weiß, ob du dicht gehalten hast; bei „gesagt“ zwei Töne: „Du hattest es versprochen.“ / „Du hast ja nichts versprochen. Stimmt.“) |
+| **Ilda fragt direkt** | m0-nach-e01 (Nacht) | „Weiß ich nicht.“ → `m0.ilda=ausgewichen` · „Frag sie selbst.“ → `fragselbst` · „Ja. War sie.“ → `gesagt` | Lügen: Ilda merkt es · Weitergeben: Jolie merkt es · Zurückgeben: Ilda geht zu Jolie, Jolie verdächtigt dich trotzdem | m0-nach-e02 (drei Fassungen), e03-kodex (Ilda dankt Jolie – oder sieht Jolie an, dann dich: „Hm. Einer muss ja.“ – Respekt oder Vorwurf) |
 | **Das Plakat** | e02-nachfragen | „Abreißen.“ → `m0.plakat=weg` · „Hängen lassen.“ → `bleibt` · „Umdrehen.“ → `umgedreht` | Der Spruch reißt nur mit Jhemps Gesicht ab · Tun lacht zu laut · Umdrehen ist genau das Schweigen der Insel | m0-nach-e02 (Jolie hat Jhemp nachgezeichnet), m0-finale (Mikas Spitze passt zu deiner Wahl) |
 
 Weitere Staffel-Wahlen (Plan): M3 Jhemp bittet, ihn nicht zu verraten · M6 Crew oder Pit · M7 Clip löschen (geht nur
@@ -81,12 +88,14 @@ Thema, statt zu lügen („Setz dich woanders hin. Bitte.“). Schläft schlecht
 sich und schickt ihn nicht ab. Bricht Sätze ab („Ende der Saison mach ich …“). Bogen: vom Schweigen zu „Ich hätte fragen
 sollen.“ (M9). Wenn du fragst, antwortet sie – aber nur einmal.
 
-**Glimm** (Lichtsalamander) – zynisch, ≤ 6 Wörter, oft daneben („Kratzer. Spannend. Nicht.“). Kommentiert, belehrt nie,
-verrät nie die Lösung. Sieht manchmal, was andere verbergen („Lämpchen ist grün.“). War selbst grau („Fast nie.“ →
+**Glimm** (Lichtsalamander) – zynisch, ≤ 6 Wörter, oft daneben („Möwen. Um diese Uhrzeit.“). Kommentiert, belehrt nie,
+verrät nie die Lösung und **bewertet keine Wahl**. Widersprüche benennt er nicht – die zeigt der Erzähler als Bild
+(„Das Lämpchen ist grün. Tun legt den Daumen drauf.“), bemerken muss sie der Spieler. War selbst grau („Fast nie.“ →
 e30 „Ich war auch grau. Jetzt nicht.“).
 
 **Jolie Wagner** (13, Muschel) – still, zeichnet alles. Trockener Humor erst, wenn sie vertraut („Ich rede mit der
-Brücke.“). Geheimnis: ist Jhemp nachgelaufen, war zu langsam, fand das Glas. Widerspruch, den man bemerken kann:
+Brücke.“). Geheimnis: ist Jhemp nachgelaufen, war zu langsam, fand das Glas. In M0 sagt sie nur, dass sie es gefunden hat –
+„Oben. In der Nacht.“ erfährt nur, wer fragt. Erinnerung 1 zeigt „Einer rennt“, nicht wer und nicht, wer hinterherlief. Widerspruch, den man bemerken kann:
 „Gefragt hat mich keiner“ – aber Ilda soll es nicht wissen („Die fragt dann, warum ich da war.“). Ihr ungesagter Satz
 (M9): „Ich war zu langsam. Und hab keinen geholt.“ Ihr „…“ wird kürzer, je länger du bleibst.
 
@@ -96,10 +105,11 @@ Lämpchen leuchtet grün. Hebt die Kamera und senkt sie wieder. Auflösung M7 (s
 nicht okay.“
 
 **Mika Thill** (16, Flamme) – ruhig, spöttisch, nie laut. Sätze wie Urteile. „Bunt steht euch. Hält nur nicht.“ ·
-„Frag deinen Kumpel mit der Kamera.“ · „Damit keiner vergisst, was Reden anrichtet.“
+„Letzten Sommer haben alle geredet. Frag, wem’s geholfen hat.“ · „Damit keiner vergisst, was Reden anrichtet.“ · „… Mir.“
 
 **Jhemp Weber** (~65, Laterne) – taucht erst M3 auf, ist in M0 nur Abwesenheit: das Plakat, der leere Stuhl am vierten
-Feuer, Kratzer am Turmschloss („Da hat jemand lange gebraucht.“). Nimmt den Turm am Ende **nicht** zurück.
+Feuer, Kratzer am Turmschloss („Da hat jemand lange gebraucht.“). **Lebenszeichen in M0** (§19 – Verschwinden darf nicht als
+Tod lesbar sein): Jolies Heft „Rauch über den Klippen. Jeden Abend.“, dazu ein Cliffhanger. Nimmt den Turm am Ende **nicht** zurück.
 
 **Weitere** (Stimmregeln wie bisher, DESIGN §13): Fränz („Pech ist nur Pech. Kein Urteil.“), Senait („Warum heißt das
 Kodex?“), Tiago („Keiner hat geguckt. Alle aufs Handy.“), Maëlle („Ich freu mich. Und ich will nicht weg.“), Luc,
@@ -116,7 +126,10 @@ Kein Satz nennt die Lehre. Die Kette setzt man aus Spuren über Module zusammen;
 | Jolie: „Gefragt hat mich keiner“ / „Die fragt dann …“ | e01 | Jolie hatte einen Grund, dort zu sein | Splitter 1 später, M9 |
 | Kratzer am Turmschloss | Jolies Heft | Zitternde Hände, drei Nächte wach | M3, M8 |
 | Rausgerissene Heftseite („Nichts. Der Turm.“) | Jolies Heft | Jolie hat die Nacht gezeichnet | M9: sie klebt sie wieder ein |
-| Mika: „Frag deinen Kumpel mit der Kamera.“ | M0-Ende | Tun hängt mit drin | M6/M7 |
+| Mika: „Und wem hilft Schweigen?“ – „… Mir.“ | M0-Ende | Mika schützt sich selbst | M6 (er hat den Clip geschnitten) |
+| Rauch über den Klippen, jeden Abend | Jolies Heft, Cliffhanger | Da lebt jemand allein | M3 Sturmhütte (Jhemp) |
+| WAGNER auf der obersten Kiste | M0-Ende | Jolies Familie geht | Finale: sie bleibt |
+| Kamera-Lämpchen (e02) – grün, Daumen drauf (e03) | e02, e03 | selbst verbinden, kein Kommentar | M7 |
 | Ilda: „Ich war an dem Abend auf See.“ vs. Lucinda: „Sie stand an der Bühne.“ | M2 / M5 | Ilda verschweigt ihren Satz | Splitter 6 |
 | Der Clip in Kims Glimmernetz, 40 Kopien | M7 | Man kann nicht alles zurückholen | bleibt |
 
@@ -156,12 +169,12 @@ Feuer + Glocke · Abend am Feuer: drei Figuren nennen deine Tat · Farbwelle, we
 | Steg | `dialogues/ankunft-ilda.js` | „Freiwillig?“, Kisten mit Namen, Blick, „Frag mich nicht nach dem Turm.“ |
 | e01 Kodex | `dialogues/e01-kodex.js` | Tuns Turm-„Witz“, der leere Stuhl („besetzt“), „Mit mir schon gar nicht.“ |
 | e01 Jolie | `dialogues/e01-jolie.js` | Dasein → Splitter 1 · **Wahl 1** Versprechen |
-| Nacht | `dialogues/m0-nach-e01.js` | Ilda an der Glut, Brief, „Ende der Saison mach ich …“ · **Wahl 2** |
+| Nacht | `dialogues/m0-nach-e01.js` | Ilda an der Glut, Brief, zwei Abbrüche („Letzten Sommer hab ich …“, „Ende der Saison mach ich …“) · Blick auf deinen Splitter · **Wahl 2** |
 | e02 | `dialogues/e02-nachfragen.js` | **Wahl 3** Plakat · „Und dann?“ → Akku-Lüge, grünes Lämpchen · Faden |
 | Morgen | `dialogues/m0-nach-e02.js` | Jolies Heft (privat), Folgen von Wahl 1–3, Kratzer, rausgerissene Seite |
 | e03 Brücke | `dialogues/e03-bruecke.js` | „Ich rede mit der Brücke.“ · Kamera hoch, Kamera runter |
-| e03 Kodex | `dialogues/e03-kodex.js` | Jolie unterschreibt zuerst · Herzglas, Herbst-Einsatz · Folge von Wahl 2 |
-| M0-Ende | `dialogues/m0-finale.js` | bunter Hafen, Kisten bleiben · Mika (Folge Wahl 3) · „Und dann?“ → „Dann mach ich den Hafen zu.“ · „Noch nicht.“ |
+| e03 Kodex | `dialogues/e03-kodex.js` | Jolie unterschreibt zuerst (bei „Keiner geht allein ins Dunkel“ zögert sie) · Herzglas, Herbst-Einsatz · Folge von Wahl 2 |
+| M0-Ende | `dialogues/m0-finale.js` | bunter Hafen, Kisten bleiben, WAGNER · Mika (Folge Wahl 3) · „Und dann?“ → „Dann mach ich den Hafen zu.“ · „Noch nicht.“ |
 
 Beats laufen nach dem Lagerfeuer (Hafen-Plugin, `story.beat`), nie bei Kurzfassungen, nie doppelt (`story.seen.<id>`),
 unter `?test` nur mit `?story`. Die Nachtszene stellt die Uhr auf 22:30, setzt dich ans Dorffeuer und Ilda daneben; danach Morgen.
@@ -177,3 +190,10 @@ Nachspielen: `LUMO.debug.storyBeat('m0-nach-e01')`. Verzweigung im Dialog: `{ br
 - **Jhemp gibt Jolie den Schlüssel, Maëlle zieht weg** (DESIGN: „Rückkehr“, „Traumschiff“): bittersüß statt glatt.
 - **M0-Wahlen mit Flags `m0.*` und Dialog-`branch`** (Engine-Erweiterung, klein): Folgen ohne Strafe, DESIGN §6/§20a.
 - **Nachtszene nach e01** (DESIGN: Beat am Morgen): ein ruhiger Moment braucht Dunkelheit.
+- **Alle Szenen mit Wahl haben `rewind: true`** (DESIGN §19): Zurückspulen gilt auch für Story-Beats; die Folgen bleiben
+  gültig, weil jede Option ihren Preis hat.
+- **e01: drei Regeln, drei Feuer** (Spieler, Tun, noch einmal Spieler); Tuns Turm-Regel zündet keins („Tun. Die nicht.“).
+
+**Bewusst nicht übernommen (Kritik-Runde):** Aufnäher-Rückseiten (`patch.back`) und „Echte Welt“ (`echteWelt`) bleiben
+wie in DESIGN (Skillspass-Seite im Tagebuch). Sie sind die gewollte Brücke zum Kurs außerhalb der Erzählung; sie in den
+Lehrer-Modus zu verschieben ist eine Design-Entscheidung für Lehrkraft/Team, keine Story-Frage.
