@@ -1,0 +1,43 @@
+// Szene e01-kodex (DESIGN §12 e01): am dunklen Feuer schlägt Tun „Keine Regeln!“ vor. Du handelst mit Kacheln Regeln aus,
+// die alle unterschreiben. Jede Regel zündet ein Feuer. Demo-Fassung: drei Runden statt vier Feuer.
+export default {
+  id: 'e01-kodex', unit: 'j1-e01', cast: ['tun', 'ilda'], camera: 'talk', rewind: true, start: 'a',
+  nodes: {
+    a: {
+      speaker: 'tun', say: 'Keine Regeln! Regeln sind was für Erwachsene.', anim: 'angry',
+      choices: [
+        { say: 'Eine Regel. Nur eine.', icon: 'hand', tone: 'ruhig', goto: 'b' },
+        { say: 'Was stört dich an Regeln?', icon: 'frage', tone: 'ruhig', goto: 'a2' },
+        { sign: 'nicken', label: 'Nicken', goto: 'a3' },
+      ],
+    },
+    a2: { speaker: 'tun', say: 'Dass sie immer gegen mich sind.', anim: 'sad', goto: 'b' },
+    a3: { speaker: 'ilda', say: 'Ohne Regeln bleibt das Feuer aus. Versucht es.', anim: 'idle', goto: 'b' },
+    b: {
+      speaker: 'ilda', say: 'Vier Feuer, vier Regeln. Wer fängt an?', anim: 'talk',
+      choices: [
+        { say: 'Niemand wird ausgelacht.', icon: 'herz', effects: [{ flag: 'kodex.lachen', set: true }], goto: 'c' },
+        { say: 'Wer Stopp sagt, wird gehört.', icon: 'stopp', effects: [{ flag: 'kodex.stopp', set: true }], goto: 'c' },
+        { say: 'Jeder darf Fehler machen.', icon: 'check', effects: [{ flag: 'kodex.fehler', set: true }], goto: 'c' },
+      ],
+    },
+    c: {
+      speaker: 'tun', say: 'Okay, die geht. Und wenn ich vom Steg falle?', anim: 'think',
+      choices: [
+        { say: 'Dann lacht keiner. Regel.', icon: 'herz', goto: 'd' },
+        { say: 'Dann helfen wir dir hoch.', icon: 'team', goto: 'd' },
+      ],
+    },
+    d: { speaker: 'ilda', say: 'Unterschrieben. Das erste Feuer brennt.', anim: 'talk', effects: [{ deed: 'kodex-regel' }, { sound: 'chime' }], goto: 'e' },
+    e: {
+      speaker: 'tun', say: 'Noch eine, von mir: Alle dürfen mitmachen.', anim: 'cheer',
+      choices: [
+        { say: 'Nehmen wir.', icon: 'check', goto: 'f' },
+        { say: 'Und wer nicht will?', icon: 'frage', goto: 'e2' },
+      ],
+    },
+    e2: { speaker: 'tun', say: 'Darf zuschauen. Ohne Spott.', anim: 'idle', goto: 'f' },
+    f: { speaker: 'ilda', say: 'Drei Feuer brennen. Das vierte fehlt noch.', anim: 'talk', effects: [{ bond: ['tun', 1] }], goto: 'g' },
+    g: { speaker: 'ilda', say: 'Unten am Ufer sitzt jemand ganz grau.', anim: 'think', end: true },
+  },
+};

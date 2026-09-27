@@ -75,11 +75,15 @@ export function createNameTag({ name = '', icon = 'punkt', color = '#ffd166', wi
       if (ic !== undefined && ic !== cur.icon) { cur.icon = ic; loadIcon(); }
       draw();
     },
-    // Sichtbarkeit nach Abstand (nah = groß, fern = aus)
+    // Sichtbarkeit nach Abstand: nah klein und dezent (das Schild wächst mit dem Abstand mit, bleibt also auf dem
+    // Bildschirm etwa gleich groß statt riesig vor der Nase zu hängen), ab 26 m blendet es aus
     update(dist) {
       const on = dist < 34;
       sprite.visible = on;
-      if (on) mat.opacity = Math.max(0, Math.min(1, (34 - dist) / 8));
+      if (!on) return;
+      const k = Math.max(0.3, Math.min(1, dist / 11));
+      sprite.scale.set((width / height) * 0.48 * k, 0.48 * k, 1);
+      mat.opacity = Math.max(0, Math.min(1, (34 - dist) / 8)) * (dist < 3 ? Math.max(0.55, dist / 3) : 1);
     },
     dispose() { tex.dispose(); mat.dispose(); },
   };

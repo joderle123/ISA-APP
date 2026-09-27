@@ -23,7 +23,8 @@
     "test:quests": "node tests/scenarios/quests.mjs",
     "test:minispiele": "node tests/scenarios/minispiele.mjs",
     "test:baumhaus": "node tests/scenarios/baumhaus.mjs",
-    "test:kraefte": "node tests/scenarios/kraefte.mjs"
+    "test:kraefte": "node tests/scenarios/kraefte.mjs",
+    "test:demo": "node tests/scenarios/demo.mjs"
   },
   "devDependencies": {
     "esbuild": "0.28.2",
