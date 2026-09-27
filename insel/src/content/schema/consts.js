@@ -46,7 +46,7 @@ export const BOSS_WINS = ['hilfe-holen', 'zuschauer', 'lauschen', 'fakten'];
 export const ERMITTELN_BOARDS = ['gericht', 'chronik', 'repost'];
 export const LOTSEN_MODES = ['befehle', 'folgen'];
 
-export const MINIGAME_TEMPLATES = ['rennen', 'rhythmus', 'satzbau', 'duell', 'verteidigung', 'lotsen', 'bauen', 'wuerfel'];
+export const MINIGAME_TEMPLATES = ['rennen', 'rhythmus', 'satzbau', 'duell', 'verteidigung', 'lotsen', 'bauen', 'wuerfel', 'leine', 'oberflaeche'];
 export const SATZBAU_RULESETS = ['klarklang', 'schmiede', 'kompliment', 'zusammenfassung', 'kommentar', 'nein-vorschlag'];
 export const MEDALS = ['bronze', 'silber', 'gold', 'stern'];
 

@@ -1,5 +1,5 @@
 // Bewegungs-Zustandsmaschine (WP12): gemeinsamer Kontext, Konstanten und Physik-Helfer für alle Move-Module.
-// Zustände: ground · air · climb · glide · swim · dive · carry · locked  (siehe player.js)
+// Zustände: ground · air · climb · glide · swim · dive · carry · boot · locked  (siehe player.js)
 // Jedes Move-Modul: create<Name>(ctx) → { name, enter(data, from), exit(to), update(dt) }.
 // Übergänge: ctx.go('air', data). Absichten (ctx.intent) kommen vom Player (lokale Eingabe oder Netz).
 import { createGround, createAir } from './ground.js';
@@ -8,6 +8,7 @@ import { createClimb } from './climb.js';
 import { createGlide } from './glide.js';
 import { createSwim } from './swim.js';
 import { createDive } from './dive.js';
+import { createBootMove } from './boot.js';
 
 export const K = {
   RUN_SPEED: 6.4,      // Sprint (Joystick weit / WASD)
@@ -24,7 +25,7 @@ export const K = {
   RESPAWN_FADE: 0.45,  // Sekunden bis zum Teleport (gesamt < 2 s)
 };
 
-export const STATES = ['ground', 'air', 'climb', 'glide', 'swim', 'dive', 'carry', 'locked'];
+export const STATES = ['ground', 'air', 'climb', 'glide', 'swim', 'dive', 'carry', 'boot', 'locked'];
 
 export function angleLerp(a, b, t) {
   let d = b - a;
@@ -83,6 +84,7 @@ export function createMoves(ctx) {
     glide: createGlide(ctx),
     swim: createSwim(ctx),
     dive: createDive(ctx),
+    boot: createBootMove(ctx),
     locked: createLocked(ctx),
   };
   return moves;

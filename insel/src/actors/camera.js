@@ -23,6 +23,7 @@ const VIEWS = {
   climb: { dist: -2.2, pitchMin: -0.35, pitchMax: 0.9, lookY: 1.5, fov: 2, follow: 10, behind: 1.6 },
   swim: { dist: 0.5, pitchMin: 0.22, pitchMax: 1.2, lookY: 0.9, fov: 0, follow: 9, behind: 0.9 },
   dive: { dist: -1.2, pitchMin: -0.7, pitchMax: 1.2, lookY: 0.9, fov: 5, follow: 9, behind: 1.2 },
+  boot: { dist: 3.4, pitchMin: 0.12, pitchMax: 1.15, lookY: 1.2, fov: 4, follow: 10, behind: 1.8 },   // Kielpost (actors/moves/boot.js)
 };
 
 export function createCameraRig({ camera, island, input, player, events, colliders }) {

@@ -8,6 +8,20 @@ export const SEA_LEVEL = 0;
 export const ISLAND_RADIUS = 170;
 export const WORLD_HALF = 240;          // Terrain-Raster deckt [-240, 240] ab
 export const WORLD_LIMIT = 205;          // weiche Grenze im Meer
+// Schären-Sektor vor dem Hafen (BAUPLAN §2.1 A2, Rand-Test §2.0.4): etwa 60° um die Richtung des Stegs reicht die Grenze
+// bis Radius 220 (20 Einheiten Abstand zum Rasterrand ±240; dort liegt nur tiefes Wasser, Meeresboden −22).
+// Am Sektorrand geht die Grenze über 10° weich auf WORLD_LIMIT zurück.
+export const SECTOR = { yaw: Math.atan2(6, 138), half: (32 * Math.PI) / 180, blend: (10 * Math.PI) / 180, limit: 220 };
+export function worldLimitAt(x, z) {
+  let a = Math.atan2(x, z) - SECTOR.yaw;
+  while (a > Math.PI) a -= 2 * Math.PI;
+  while (a < -Math.PI) a += 2 * Math.PI;
+  const d = Math.abs(a);
+  if (d <= SECTOR.half) return SECTOR.limit;
+  if (d >= SECTOR.half + SECTOR.blend) return WORLD_LIMIT;
+  const t = (d - SECTOR.half) / SECTOR.blend;
+  return SECTOR.limit + (WORLD_LIMIT - SECTOR.limit) * t * t * (3 - 2 * t);
+}
 export const DEEP_WATER = -1.5;          // tiefer als das: nicht begehbar
 export const SLOPE_LIMIT = 0.62;         // normal.y minimal (≈ 52°)
 
@@ -51,6 +65,9 @@ export const SITES = {
   haus2: { x: -18, z: 96, r: 6, zone: 'hafen' },
   haus3: { x: 34, z: 120, r: 5, zone: 'hafen' },
   hafengrotte: { x: -24, z: 124, r: 0, zone: 'hafen', interior: 'hafengrotte' },
+  werft: { x: 15.5, z: 131.5, r: 0, zone: 'hafen' },            // Werkbank der Kielpost (systems/werft)
+  moewenklippe: { x: -50, z: 176, r: 0, zone: 'hafen' },         // Schären: Felsinsel mit Vorsprung (world/schaeren.js)
+  wrackbank: { x: 66, z: 186, r: 0, zone: 'hafen' },             // Schären: Wrack hinter der Nebelwand
   // M1 Strand
   surfspot: { x: 172, z: 32, r: 0, zone: 'strand' },            // im Wasser
   strandHuette: { x: 128, z: 38, r: 6, zone: 'strand' },
@@ -509,7 +526,7 @@ export function createIsland({ cell = 2.5, seed = 7 } = {}) {
   }
   const _n = { x: 0, y: 1, z: 0 };
   function isWalkable(x, z) {
-    if (Math.hypot(x, z) > WORLD_LIMIT) return false;
+    if (Math.hypot(x, z) > worldLimitAt(x, z)) return false;
     const h = getHeight(x, z);
     if (h < DEEP_WATER) return false;
     return getNormal(x, z, false, _n).y >= SLOPE_LIMIT;

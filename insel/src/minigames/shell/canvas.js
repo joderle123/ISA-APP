@@ -2,6 +2,8 @@
 // Canvas-Koordinaten (Touch und Maus), rAF-Schleife mit Echtzeit (das Spiel ist im Overlay pausiert).
 //   const cv = createCanvas(parent, { height, aspect, cls }); cv.canvas · cv.ctx · cv.w · cv.h · cv.resize()
 //   cv.onPointer((type, x, y, e) => {})  type: 'down'|'move'|'up'   · cv.loop((now, dt) => {}) · cv.stop() · cv.dispose()
+//   now = Spielzeit der Schleife in s (Summe der gedeckelten dt): Ruckler oder ein langsamer Renderer (Tests mit
+//   Software-WebGL, alte iPads) lassen die Zeit langsamer laufen, statt Takte zu überspringen.
 //   roundRect(ctx, x, y, w, h, r) · circle(ctx, x, y, r)
 export function createCanvas(parent, { height = 300, aspect = null, cls = '' } = {}) {
   const canvas = document.createElement('canvas');
@@ -11,8 +13,12 @@ export function createCanvas(parent, { height = 300, aspect = null, cls = '' } =
   const ctx = canvas.getContext('2d');
   const cv = { canvas, ctx, w: 0, h: 0, dpr: 1, running: false };
   function resize() {
+    if (!canvas.isConnected && cv.w) return;   // schon entfernt (Spiel sofort beendet): nichts mehr messen
     const dpr = Math.min(2, window.devicePixelRatio || 1);
-    const w = Math.max(200, Math.floor(parent.clientWidth || canvas.parentElement.clientWidth || 600));
+    // Innenbreite ohne Polsterung (sonst ragt die Leinwand rechts aus der Karte)
+    const cs = getComputedStyle(parent);
+    const pad = (parseFloat(cs.paddingLeft) || 0) + (parseFloat(cs.paddingRight) || 0);
+    const w = Math.max(200, Math.floor((parent.clientWidth - pad) || (canvas.parentElement && canvas.parentElement.clientWidth) || 600));
     const h = aspect ? Math.round(w / aspect) : height;
     cv.w = w; cv.h = h; cv.dpr = dpr;
     canvas.width = Math.round(w * dpr); canvas.height = Math.round(h * dpr);
@@ -32,13 +38,14 @@ export function createCanvas(parent, { height = 300, aspect = null, cls = '' } =
   canvas.addEventListener('pointermove', move);
   canvas.addEventListener('pointerup', up);
   canvas.addEventListener('pointercancel', up);
-  let raf = 0, last = 0, fn = null;
+  let raf = 0, last = 0, fn = null, clock = 0;
   const tick = (now) => {
     if (!cv.running) return;
     raf = requestAnimationFrame(tick);
     const dt = last ? Math.min(0.05, (now - last) / 1000) : 0;
     last = now;
-    try { fn && fn(now / 1000, dt); } catch (e) { console.error('[minigame canvas]', e); cv.running = false; }
+    clock += dt;
+    try { fn && fn(clock, dt); } catch (e) { console.error('[minigame canvas]', e); cv.running = false; }
   };
   Object.assign(cv, {
     resize,

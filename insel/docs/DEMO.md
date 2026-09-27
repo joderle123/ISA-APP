@@ -60,6 +60,26 @@ Dazu am Ende eine kleine Wahl bei Mika: Wer ihm recht gibt, bekommt ein Angebot 
 aufgegriffen). Wer zurückfragt „Und wem hilft Schweigen?“, hört ein einziges Wort: „… Mir.“
 </details>
 
+## Kostprobe Teil 1: „Die Kielpost fährt“ (nach OTTER)
+Nach dem Demo-Ende (m0-finale) haben Jolie und Tun die alte **Kielpost** aus der Hafengrotte gehoben. Sie liegt am
+**Steg** (Westseite). Mit dem Code HERZGLAS-99 ist sie zum Ausprobieren sofort da.
+1. Am Steg **Einsteigen**. Beim ersten Mal erwischt dich Ilda („Eine Fahrt. Ohne Mist.“) und gibt dir ihre alte
+   **Laterne** („Nimm die. War meine.“) – das ist der Bauplan.
+2. **Fahren:** Joystick zeigt, wohin es geht. **Springen halten** = Segel dicht (in einer Böe gibt es einen kurzen Schub).
+   Gegen Felsen und Ufer prallt das Boot nur sanft ab, eine Möwe fliegt auf. Kein Kentern, kein Schaden.
+3. **Bergen:** 10 feste Kisten (6 treiben vor dem Hafen, 1 liegt auf dem Vorsprung der Möwenklippe, 3 an der Wrackbank).
+   Nah heranfahren (ein Ring leuchtet), **Aktion halten**: Die Leine spannt sich, die Kiste kommt an Bord. Zu früh
+   losgelassen? Die Kiste treibt ein Stück weiter, sonst nichts. Material (Holz, Tau, Tuch, Metall) steht unten im Bild,
+   nur auf dem Boot und an der Werft.
+4. **Werft** (offene Werkbank am Steg): Laterne, Ausleger (weniger Schaukeln), Segel (schneller). Jedes Teil sieht man am Boot.
+5. **Nebelwand** um die Wrackbank: Ohne Laterne dreht das Boot sanft ab („Zu dicht. Licht?“). Mit Laterne löst sie sich auf.
+- Die Ziel-Zeile zeigt ohne Auftrag immer den nächsten Schritt (z. B. „Kisten bergen“, „Zur Werft: Laterne bauen“).
+- **Zurück:** am Steg langsam werden → „Aussteigen“, oder jederzeit Pause → „Zurück zum Steg“.
+- **Zuklappen ist sicher:** Gespeichert wird bei jedem Fund, Bau und Anlegen. Wer auf dem Wasser zuklappt, steht beim
+  nächsten Start am Steg; alle Funde bleiben.
+- Noch nicht drin (nächste Runde): Nest, Mission QUELLE, Spiegel-Station, Bootsfarbe und -name, zweiter Anleger.
+- Test: `flock /tmp/lumo-chrome.lock node tests/scenarios/kostprobe.mjs` · Unit-Tests `tests/unit/bergen.test.mjs`, `werft.test.mjs`.
+
 ## Die Codes
 | Code | Einheit | Quest | Dauer | Was passiert |
 |---|---|---|---|---|

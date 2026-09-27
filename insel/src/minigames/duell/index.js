@@ -13,7 +13,10 @@ export default {
     const seconds = (params.seconds || DEFAULT_SECONDS[ctx.mode] || 4) * ctx.timing;
     const D = createDuel({ rounds, seconds });
     let raf = 0, done = false, keyH = null, t0 = 0, waitT = 0;
-    const now = () => performance.now() / 1000;
+    // Spielzeit statt Wanduhr: je Frame höchstens 0,05 s (Ruckler/langsamer Renderer lassen keine Runde verfallen)
+    let clock = 0, lastReal = 0;
+    const tickClock = () => { const r = performance.now() / 1000; if (lastReal) clock += Math.min(0.05, Math.max(0, r - lastReal)); lastReal = r; };
+    const now = () => clock;
     const attackIcon = def.icon === 'blitz' ? 'wolke' : (params.attacker || 'motte');
 
     function renderRound() {
@@ -49,6 +52,7 @@ export default {
     function step() {
       if (done) return;
       raf = requestAnimationFrame(step);
+      tickClock();
       const t = now();
       if (D.open) {
         const bar = mount.querySelector('[data-time]');

@@ -1,5 +1,6 @@
 // Szenario Demo-Pfad Hafen (Browser, headless): Start → Ankunft (Ilda gibt den Blick) → Code BOJE → Möwen-Rennen, Kodex,
-// Jolie (Dazusetzen, Splitter 1) → Farbwelle → Code DELFIN → Nachfragen, Funken tragen, Komplimente → Code OTTER →
+// Gesprächs-Minispiele der Kostprobe (alle Modi, Falle „Egal.“, X → Kurzfassung, Glimm-Angebot, Neu laden mitten in
+// „Leine halten“) → Jolie (Dazusetzen → Leine halten, Splitter 1) → Farbwelle → Code DELFIN → Nachfragen, Funken tragen, Komplimente → Code OTTER →
 // Brücke, Hafengrotte, Kodex-Zeile → Hafen ganz bunt, Signalfeuer brennen → Speichern und „Weiter“ in einem neuen Tab →
 // graue Regionen: „Kommt bald“ ohne Absturz → Demo-/Lehrer-Code. Aufruf: node tests/scenarios/demo.mjs (Q=low|medium)
 // Story (docs/STORY.md §6): die drei M0-Entscheidungen setzen flags.m0.*; die Beats (Nacht, Heft, Finale) werden per
@@ -157,10 +158,105 @@ try {
   await waitFor(page, () => LUMO.debug.questInfo().step === 'jolie', 20000);
   const k1 = await page.evaluate(() => ({ lachen: LUMO.state.get('flags.kodex.lachen'), deed: LUMO.state.get('deeds', []).includes('kodex-regel'), bond: LUMO.npcs.bond('tun') }));
   check('Kodex ausgehandelt: Regel „Niemand wird ausgelacht“, Tat, Bindung Tun 1', ok2 && k1.lachen === true && k1.deed && k1.bond >= 1, J(k1));
+  // ---- 3a Gesprächs-Minispiele (Kostprobe B): Leine halten + Unter der Oberfläche, direkt über die Hülle ----
+  const mgWait = (fn) => page.waitForFunction(fn, null, { timeout: 30000, polling: 100 });
+  const mgPlay = (id, opts) => page.evaluate(([i, o]) => { window.__mgR = null; LUMO.minigames.play(i, o || {}).then((r) => { window.__mgR = r; }); return true; }, [id, opts || null]);
+  const mgLos = async () => { await mgWait(() => document.querySelector('[data-overlay="minigame"] [data-los]')); await page.click('[data-overlay="minigame"] [data-los]'); await mgWait(() => LUMO.debug.mgInfo() && LUMO.debug.mgInfo().hasInst); };
+  const mgRes = async () => { await mgWait(() => !!window.__mgR); return page.evaluate(() => window.__mgR); };
+  const mgDiag = () => page.evaluate(() => ({ info: LUMO.debug.mgInfo(), ov: LUMO.ui.overlay.count, top: LUMO.ui.overlay.top && LUMO.ui.overlay.top.id, dlg: LUMO.dialogue.isOpen, body: ((document.querySelector('[data-overlay="minigame"] .ov-body') || {}).textContent || '').replace(/\s+/g, ' ').slice(0, 120), r: window.__mgR }));
+  const mgClick = async (sel) => {
+    try { await page.waitForFunction((q) => document.querySelector('[data-overlay="minigame"] ' + q), sel, { timeout: 30000, polling: 100 }); } catch (e) { throw new Error('mgClick ' + sel + ': ' + J(await mgDiag())); }
+    await page.click('[data-overlay="minigame"] ' + sel);
+  };
+  // jeder Modus mit automatischer Eingabe schaffbar
+  const modes = {};
+  for (const id of ['e01-leine-jolie', 'e02-oberflaeche-tun']) {
+    for (const mode of ['entspannt', 'abenteuer', 'profi']) {
+      await mgPlay(id, { mode });
+      await mgLos();
+      const au = await page.evaluate(async () => { try { await LUMO.minigames.current.inst.auto('gold'); return 'ok'; } catch (e) { return String(e && e.stack); } });
+      if (au !== 'ok') throw new Error(`auto ${id} ${mode}: ${au}`);
+      await mgClick('[data-weiter]');
+      const r = await mgRes();
+      modes[id + ':' + mode] = r.ok && r.medal === 'gold' ? 'gold' : J(r);
+    }
+  }
+  check('Gesprächs-Minispiele: Leine und Oberfläche in allen drei Modi automatisch schaffbar (Gold)', Object.values(modes).every((v) => v === 'gold'), J(modes));
+  // Die Falle „Was sagen“: „Egal.“ – kein Abbruch, das Spiel läuft weiter und ist noch schaffbar
+  await mgPlay('e01-leine-jolie', { mode: 'abenteuer' });
+  await mgLos();
+  await page.evaluate(() => LUMO.debug.mgAct('press'));
+  const trap = await page.evaluate(() => ({ said: LUMO.debug.mgAct('sagen'), phase: LUMO.debug.mgInfo().phase, open: !!document.querySelector('[data-overlay="minigame"] [data-mg-sagen]'), gesagt: LUMO.minigames.current.inst.L.gesagt }));
+  await frames(page, 2);
+  await shot(page, '203a_demo_leine_egal');
+  await page.evaluate(() => LUMO.minigames.current.inst.auto('gold'));
+  await mgClick('[data-weiter]');
+  const trapR = await mgRes();
+  check('Falle „Was sagen“ → „Egal.“, kein Abbruch, danach trotzdem geschafft', trap.said === 'Egal.' && trap.phase === 'spiel' && trap.open && trap.gesagt === 1 && trapR.ok && !trapR.cancelled, J({ trap, ok: trapR.ok }));
+  // X überspringt jederzeit: ruhige Kurzfassung, gleiche Belohnung (ok)
+  await mgPlay('e02-oberflaeche-tun', { mode: 'abenteuer' });
+  await mgLos();
+  await mgClick('.ov-close');
+  await mgWait(() => document.querySelector('[data-overlay="minigame"] [data-mg-kurz]'));
+  const kz = await page.evaluate(() => [...document.querySelectorAll('[data-mg-kurz] li')].map((l) => l.textContent));
+  await mgClick('[data-weiter]');
+  const xR = await mgRes();
+  check('X mitten im Spiel → Kurzfassung (kurze Zeilen), Ergebnis ok wie gewonnen', kz.length >= 1 && kz.every((l) => l.split(/\s+/).length <= 12) && xR.ok === true && xR.kurz === true && !xR.cancelled, J({ kz, xR }));
+  // Scheitern = „Später.“ ohne Verlust; nach zwei Fehlversuchen fragt Glimm „Anders probieren?“
+  const medalBefore = await page.evaluate(() => LUMO.state.get('medals.e01-leine-jolie.medal'));
+  await mgPlay('e01-leine-jolie', { mode: 'abenteuer' });
+  await mgLos();
+  await page.evaluate(() => LUMO.minigames.current.inst.auto('fail'));
+  await mgWait(() => document.querySelector('[data-mg-result]'));
+  const g1f = await page.evaluate(() => ({ label: document.querySelector('[data-mg-result] h3').textContent, offer: !!document.querySelector('[data-mg-offer]'), again: !!document.querySelector('[data-mg-result] [data-again]') }));
+  await mgClick('[data-weiter]');
+  const g1R = await mgRes();
+  const medalAfter = await page.evaluate(() => LUMO.state.get('medals.e01-leine-jolie.medal'));
+  check('Scheitern: „Später.“, Nochmal möglich, kein Verlust (Medaille bleibt), noch kein Angebot', g1f.label === 'Später.' && g1f.again && !g1f.offer && g1R.ok === false && !g1R.cancelled && medalAfter === medalBefore, J({ g1f, ok: g1R.ok, medalBefore, medalAfter }));
+  await mgPlay('e01-leine-jolie', { mode: 'abenteuer' });
+  await mgLos();
+  await page.evaluate(() => LUMO.minigames.current.inst.auto('fail'));
+  await mgWait(() => document.querySelector('[data-mg-offer]'));
+  const g2f = await page.evaluate(() => ({ text: document.querySelector('[data-mg-offer] .mg-glimm').textContent, kurz: document.querySelector('[data-mg-offer] [data-kurz]').textContent.trim(), again: document.querySelector('[data-mg-offer] [data-again]').textContent.trim() }));
+  await frames(page, 2);
+  await shot(page, '203b_demo_leine_angebot');
+  await mgClick('[data-kurz]');
+  await mgWait(() => document.querySelector('[data-overlay="minigame"] [data-mg-kurz]'));
+  await mgClick('[data-weiter]');
+  const g2R = await mgRes();
+  check('Nach zwei Fehlversuchen: Glimm „Anders probieren?“ mit „Ja, kurz“ / „Nochmal“ → Kurzfassung, ok', g2f.text === 'Anders probieren?' && g2f.kurz === 'Ja, kurz' && g2f.again === 'Nochmal' && g2R.ok && g2R.kurz, J({ g2f, g2R }));
+
+  // ---- 3b Jolie: Neu laden mitten in „Leine halten“ → wieder vor dem Gespräch, nichts kaputt ----
   await goAndAct(page, 'hafen.ufer', sceneOpen);
+  for (let i = 0; i < 20 && !(await page.evaluate(mgOpen)); i++) {
+    const ch = await page.evaluate(() => (LUMO.ui.choices.open ? [...document.querySelectorAll('.choices:not(.is-out) [data-choice]')].map((e) => e.textContent.trim()) : null));
+    if (ch && ch.some((t) => t.startsWith('Dazusetzen'))) await pickChoice(page, 'Dazusetzen');
+    else if (await page.evaluate(() => !!document.querySelector('.bubble:not(.is-out)'))) await pressAction(page);
+    await page.evaluate(() => LUMO.debug.advance(0.5));
+    await sleep(200);
+  }
+  await mgLos();
+  const inLeine = await page.evaluate(() => ({ id: LUMO.debug.mgInfo().id, dlg: LUMO.dialogue.isOpen }));
+  await page.evaluate(() => { LUMO.debug.mgAct('press'); LUMO.save.save(); });   // schlimmster Fall: Speichern mitten im Spiel
+  await page.reload();
+  await page.waitForFunction(() => window.LUMO && LUMO.loop && LUMO.loop.frame > 1, null, { timeout: 180000 });
+  await startGame(page, { hour: 17.3 });
+  await page.evaluate(() => { window.__nodes = []; LUMO.events.on('dialogue:node', (e) => window.__nodes.push(e.id + ':' + e.node)); });
+  await sleep(600);
+  // Wer nach dem Laden eine andere Szene sieht (z. B. Rückblick/Story-Beat), spielt sie erst durch
+  const other = await page.evaluate(() => (LUMO.dialogue && LUMO.dialogue.isOpen ? { id: LUMO.dialogue.current && LUMO.dialogue.current.id, node: LUMO.dialogue.current && LUMO.dialogue.current.d && LUMO.dialogue.current.d.node } : null));
+  if (other && other.id !== 'e01-jolie') await playScene(page, []);
+  // Steht die Figur nach dem Laden schon bei Jolie, beginnt die Szene (Schritt „jolie“) einfach von vorn – ohne Leine
+  const rl = await page.evaluate(() => ({ scene: LUMO.dialogue && LUMO.dialogue.isOpen ? LUMO.dialogue.current && LUMO.dialogue.current.id : null, dlg: !!(LUMO.dialogue && LUMO.dialogue.isOpen), mg: !!document.querySelector('[data-overlay="minigame"]'), cur: LUMO.minigames.current, step: LUMO.debug.questInfo().step, unit: LUMO.state.get('units.j1-e01'), jolie: LUMO.state.get('flags.m0.jolie') || null, shards: LUMO.state.get('shards', []), enabled: LUMO.player.enabled }));
+  check('Neu laden mitten in „Leine halten“: zurück vor dem Gespräch mit Jolie (Schritt jolie, kein Splitter, kein Flag, Szene beginnt neu)', inLeine.id === 'e01-leine-jolie' && inLeine.dlg && (!rl.dlg ? rl.enabled : rl.scene === 'e01-jolie') && !rl.mg && !rl.cur && rl.step === 'jolie' && rl.unit === 'aktiv' && !rl.jolie && !rl.shards.includes(1), J({ inLeine, other, rl }));
+  await page.evaluate(() => { window.__mgStarts = []; LUMO.events.on('minigame:start', (e) => window.__mgStarts.push(e.id)); });
+
+  if (!(await page.evaluate(sceneOpen))) await goAndAct(page, 'hafen.ufer', sceneOpen);
   const ok3 = await playScene(page, ['Dazusetzen', 'Ich hab Zeit', 'Wo gefunden', 'Versprochen'], { onChoices: async () => { await frames(page, 2); await shot(page, '203_demo_jolie'); } });
   const j1 = await page.evaluate(() => ({ jolie: LUMO.state.get('flags.m0.jolie'), deed: LUMO.state.get('deeds', []).includes('jolie-versprochen') }));
   check('Jolie: Kacheln mit „Dazusetzen“ (Zeichen), Szene bis zum Ende, Wahl 1 „Versprochen.“ → flags.m0.jolie', ok3 && playScene.seen.includes('Dazusetzen') && j1.jolie === 'versprochen' && j1.deed, J({ seen: playScene.seen, j1 }));
+  const mgJ = await page.evaluate(() => window.__mgStarts.slice());
+  check('Jolie: „Dazusetzen“ startet „Leine halten“, danach geht die Szene weiter („Du bist geblieben.“)', mgJ.includes('e01-leine-jolie') && (await visited('e01-jolie', 'd')), J(mgJ));
   await waitFor(page, () => LUMO.state.get('units.j1-e01') === 'fertig', 30000);
   await frames(page, 6);
   await shot(page, '204_demo_farbwelle');
@@ -198,6 +294,8 @@ try {
   const n1 = await page.evaluate(() => ({ faeden: LUMO.state.get('upgrades', []).includes('blick.faeden'), deed: LUMO.state.get('deeds', []).includes('tun-nachgefragt') }));
   const plakat = await page.evaluate(() => LUMO.state.get('flags.m0.plakat'));
   check('Nachfragen: Wahl 3 Plakat „Umdrehen.“, Akku-Lüge mit grünem Lämpchen, Faden-Stufe des Blicks, Tat im Log', ok4 && plakat === 'umgedreht' && n1.faeden && n1.deed && (await visited('e02-nachfragen', 'h2')), J({ n1, plakat }));
+  const mgT = await page.evaluate(() => window.__mgStarts.slice());
+  check('Nachfragen: beim Akku-Witz „Genau hinsehen“ → „Unter der Oberfläche“, dann Tuns echter Satz', mgT.includes('e02-oberflaeche-tun') && (await visited('e02-nachfragen', 'h1a')), J(mgT));
   let delivered = 0;
   for (let i = 0; i < 3; i++) {
     await scen(page, ['site hafen.feuerPlatz', 'wait 0.4']);

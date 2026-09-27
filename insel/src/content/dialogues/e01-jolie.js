@@ -2,6 +2,8 @@
 // einfach dazu und bleibst. Jolie gibt dir Splitter 1.
 // Story (docs/STORY.md §6 Wahl 1): Jolie war nach dem Knall im Turm und bittet dich, es keinem zu sagen – auch Ilda nicht.
 // Widerspruch zum Bemerken: „Gefragt hat mich keiner“ – aber Ilda soll nicht fragen. Flag m0.jolie = versprochen | offen.
+// Kostprobe B1: „Dazusetzen“ startet das Gesprächs-Minispiel „Leine halten“ (minigames/e01-leine-jolie.js). Klappt es
+// noch nicht, sagt Glimm „Später.“ und die Wahl steht wieder da (kein Verlust). X gibt die Kurzfassung (gleicher Weg).
 export default {
   id: 'e01-jolie', unit: 'j1-e01', cast: ['jolie'], camera: 'talk', rewind: true, start: 'a',
   nodes: {
@@ -9,7 +11,7 @@ export default {
     b: {
       speaker: 'jolie', say: '…', anim: 'sad',
       choices: [
-        { sign: 'sitzenNeben', label: 'Dazusetzen', goto: 'c' },
+        { sign: 'sitzenNeben', label: 'Dazusetzen', minigame: 'e01-leine-jolie', goto: 'd', gotoFail: 'bL' },
         { say: 'Alles okay bei dir?', icon: 'frage', tone: 'ruhig', goto: 'b2' },
         { say: 'Komm mit zu den anderen!', icon: 'team', tone: 'fest', goto: 'b3' },
       ],
@@ -17,7 +19,7 @@ export default {
     b2: { speaker: 'jolie', say: 'Klar.', anim: 'sad', goto: 'b' },
     b3: { speaker: 'jolie', say: '…', anim: 'sad', goto: 'b3b' },
     b3b: { speaker: 'glimm', say: 'Tja. Kapuze auf.', goto: 'b' },
-    c: { speaker: 'jolie', say: '…', anim: 'sad', lauschen: { seconds: 4 }, goto: 'd' },
+    bL: { speaker: 'glimm', say: 'Später. Jolie bleibt da.', goto: 'b' },
     d: {
       speaker: 'jolie', say: 'Du bist geblieben. Die meisten gehen nach zwei Sekunden.', anim: 'idle',
       choices: [

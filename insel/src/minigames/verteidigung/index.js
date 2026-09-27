@@ -90,6 +90,8 @@ export default {
         if (cv) cv.stop();
         const keep = { gold: 1, silber: 0.8, bronze: 0.55, fail: 0.2 }[level] ?? 1;
         const total = D.beds.length * PETALS, lose = Math.round(total * (1 - keep));
+        // simulierter Lauf: vom vollen Beet aus (was im echten Lauf schon gefressen wurde, zählt hier nicht)
+        for (const b of D.beds) b.petals = PETALS;
         let k = 0; for (const b of D.beds) while (k < lose && b.petals > 0) { b.petals--; k++; }
         done = true;
         ctx.finish({ score: +(D.petals / total).toFixed(3), stopps: 0, waves: D.waves, fails: 0, petals: D.petals, auto: true });

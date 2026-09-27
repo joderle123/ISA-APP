@@ -164,7 +164,11 @@ export const questBeispiel = {
 // nachtwache { pool:[id] }
 // erinnerung { memory }
 
-// ---- MinigameDef (Vorlagen: rennen|rhythmus|satzbau|duell|verteidigung|lotsen|bauen|wuerfel) ----
+// ---- MinigameDef (Vorlagen: rennen|rhythmus|satzbau|duell|verteidigung|lotsen|bauen|wuerfel|leine|oberflaeche) ----
+// Gesprächs-Vorlagen leine/oberflaeche (Kostprobe B, über choice.minigame): zusätzlich kurz: ['1–3 ruhige Zeilen']
+// (X oder Glimms „Ja, kurz“ → ok ohne Spiel). leine.params { partner, farbe, waves, pause, ab, abLen, nahLen, tests:[Satz],
+// gesten:['schaut'|'stift'|'rueckt'], need, grace, cue } · oberflaeche.params { partner, satz, farbe, frage, need, window,
+// period, duration, words:[{ t, ok?, farbe? }] } – Beispiele: minigames/e01-leine-jolie.js, minigames/e02-oberflaeche-tun.js
 export const minigameBeispiel = {
   id: 'e11-tauziehen', template: 'rhythmus', title: 'Die Drachenleine', icon: 'seil',
   intro: 'Halten, wenn die Böe kommt. Loslassen, wenn sie geht.',

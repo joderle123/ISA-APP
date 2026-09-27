@@ -2,6 +2,8 @@
 // harmloses Detail – und zwischen Tun und Jolie erscheint der erste Faden.
 // Story (docs/STORY.md §6 Wahl 3, §8): das alte Festplakat mit Mikas Spruch (m0.plakat = weg | bleibt | umgedreht) ·
 // Tun hat „letzten Sommer“ aufgehört zu filmen, schiebt es auf den Akku – an der Kamera leuchtet ein Lämpchen (die Farbe erst in e03).
+// Kostprobe B2: Beim Akku-Witz (h1) kann man „Genau hinsehen“ – Minispiel „Unter der Oberfläche“
+// (minigames/e02-oberflaeche-tun.js): unter dem Haha liegt traurig. Klappt es noch nicht: Glimm „Später.“, Wahl erneut.
 export default {
   id: 'e02-nachfragen', unit: 'j1-e02', cast: ['tun', 'jolie'], camera: 'talk', rewind: true, start: 'a',
   nodes: {
@@ -45,7 +47,15 @@ export default {
         { sign: 'nicken', label: 'Nicken', goto: 'i' },
       ],
     },
-    h1: { speaker: 'tun', say: 'Akku kaputt. Seitdem. Blöd, oder?', anim: 'cheer', goto: 'h2' },
+    h1: {
+      speaker: 'tun', say: 'Akku kaputt. Seitdem. Blöd, oder? Haha.', anim: 'cheer',
+      choices: [
+        { label: 'Genau hinsehen', icon: 'blick', minigame: 'e02-oberflaeche-tun', goto: 'h1a', gotoFail: 'h1s' },
+        { sign: 'nicken', label: 'Nicken', goto: 'h2' },
+      ],
+    },
+    h1a: { speaker: 'tun', say: '… Ja. Ist eigentlich nicht lustig.', anim: 'sad', goto: 'h2' },
+    h1s: { speaker: 'glimm', say: 'Später. Er lacht noch.', goto: 'h1' },
     h2: { speaker: 'erzaehler', say: 'An der Kamera leuchtet ein kleines Lämpchen.', goto: 'i' },
     i: { speaker: 'jolie', say: 'Ich … zeichne Möwen.', anim: 'think', effects: [{ upgrade: 'blick.faeden' }], goto: 'j' },
     j: { speaker: 'glimm', say: 'Hm. Die zwei. Interessant.', goto: 'k' },

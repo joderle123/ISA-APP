@@ -10,7 +10,7 @@
 //   jumpBuffered, coyoteTime, sprinting, sprintTime, teleport, playAnim/stopAnim, setLook, setCameraYaw.
 import * as THREE from 'three';
 import { createHumanoid } from './humanoid.js';
-import { SLOPE_LIMIT, WORLD_LIMIT } from '../world/island.js';
+import { SLOPE_LIMIT, worldLimitAt } from '../world/island.js';
 import { K, createMoves } from './moves/index.js';
 import { createPoser } from './moves/pose.js';
 import { createSegel } from './segel.js';
@@ -64,7 +64,7 @@ export function createPlayer({ scene, island, colliders, input, audio, particles
     tooSteep(x, z) { return island.getNormal(x, z, false, _n).y < SLOPE_LIMIT; },
     // Ist der Schritt blockiert? opts.air: ohne Wasser-/Hangsperre (Flug), opts.swim: nur Steilufer
     isBlocked(x, z, fromY, opts = {}) {
-      if (Math.hypot(x, z) > WORLD_LIMIT) return true;
+      if (Math.hypot(x, z) > worldLimitAt(x, z)) return true;
       const g = ctx.groundAt(x, z, fromY);
       const wl = island.waterLevel(x, z);
       if (opts.air) { return !g.surf && g.y > fromY + 0.25 && ctx.tooSteep(x, z); }   // Steilwand im Flug: anhalten, nicht hindurch
@@ -85,7 +85,7 @@ export function createPlayer({ scene, island, colliders, input, audio, particles
     },
     softWorldLimit(dt) {
       const d = Math.hypot(pos.x, pos.z);
-      if (d > WORLD_LIMIT - 4) { pos.x -= (pos.x / d) * dt * 3; pos.z -= (pos.z / d) * dt * 3; }
+      if (d > worldLimitAt(pos.x, pos.z) - 4) { pos.x -= (pos.x / d) * dt * 3; pos.z -= (pos.z / d) * dt * 3; }
     },
     inLava(p) { return Math.hypot(p.x - V.x, p.z - V.z) < V.lavaRadius + 0.3 && p.y <= V.lavaLevel + 0.25; },
     // Sicherer Punkt für den Neustart? (nicht am Lavarand, begehbar, kein tiefes Wasser)
@@ -227,7 +227,7 @@ export function createPlayer({ scene, island, colliders, input, audio, particles
     get dive() { return moves.dive; },
     get pump() { return moves.ground.pump; },
     // Kamera-Modus-Wunsch je Zustand (der Kamera-Rig liest ihn)
-    get cameraMode() { return stateName === 'glide' ? 'glide' : stateName === 'climb' ? 'climb' : stateName === 'swim' ? 'swim' : stateName === 'dive' ? 'dive' : 'follow'; },
+    get cameraMode() { return stateName === 'glide' ? 'glide' : stateName === 'climb' ? 'climb' : stateName === 'swim' ? 'swim' : stateName === 'dive' ? 'dive' : stateName === 'boot' ? 'boot' : 'follow'; },
     go(name, data) { ctx.go(name, data); },
     setAbilities(a) { Object.assign(ctx.abilities, a || {}); events.emit('player:abilities', { ...ctx.abilities }); },
     setModifiers(m) { Object.assign(ctx.mod, m || {}); events.emit('player:modifiers', { ...ctx.mod }); },

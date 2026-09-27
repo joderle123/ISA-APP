@@ -18,7 +18,7 @@ export const MODE_TIMING = { entspannt: 1.3, abenteuer: 1, profi: 0.8 };
 export const RUECKENWIND_TIMING = 1.35;
 export const RUECKENWIND_AFTER = 3;   // Fehlversuche hintereinander, dann wird „Rückenwind?“ leise angeboten
 // Standard-Bestwert je Vorlage, wenn die Def keinen medalKey nennt
-export const TEMPLATE_KEY = { rennen: 'seconds', rhythmus: 'hits', satzbau: 'score', duell: 'hits', verteidigung: 'score', lotsen: 'score', bauen: 'score', wuerfel: 'score' };
+export const TEMPLATE_KEY = { rennen: 'seconds', rhythmus: 'hits', satzbau: 'score', duell: 'hits', verteidigung: 'score', lotsen: 'score', bauen: 'score', wuerfel: 'score', leine: 'hits', oberflaeche: 'score' };
 
 export const timingFor = (mode, rueckenwind = false) => (MODE_TIMING[mode] || 1) * (rueckenwind ? RUECKENWIND_TIMING : 1);
 

@@ -1,4 +1,5 @@
-// Minispiel-Plugin (WP36–39): Hülle + acht Vorlagen (rennen, rhythmus, satzbau, duell, verteidigung, lotsen, bauen, wuerfel).
+// Minispiel-Plugin (WP36–39): Hülle + acht Vorlagen (rennen, rhythmus, satzbau, duell, verteidigung, lotsen, bauen, wuerfel)
+//   + zwei Gesprächs-Vorlagen der Kostprobe (leine, oberflaeche; X → Kurzfassung, siehe shell.js).
 //   game.minigames = game.plugins.minigames → { play(id|def, opts) → Promise<Ergebnis>, lotsen(params), current, bests(id),
 //     medalOf(id), templates, cancel(), formatValue, MEDAL_NAME, MEDAL_COLOR }
 //   Die Dialog-Bühne (WP32) ruft play(id, { choice, node, who }) und play(id, { satzbau: true, who }); die Quest-Vorlagen
@@ -15,12 +16,14 @@ import verteidigung from '../verteidigung/index.js';
 import lotsen from '../lotsen/index.js';
 import bauen from '../bauen/index.js';
 import wuerfel from '../wuerfel/index.js';
+import leine from '../leine/index.js';
+import oberflaeche from '../oberflaeche/index.js';
 
 export default {
   id: 'minigames', order: 63, deps: ['ui'],
   install(game) {
     if (typeof document !== 'undefined') { const st = document.createElement('style'); st.dataset.minigames = '1'; st.textContent = MINIGAME_CSS; document.head.appendChild(st); }
-    const templates = { rennen, rhythmus, satzbau, duell, verteidigung, lotsen, bauen, wuerfel };
+    const templates = { rennen, rhythmus, satzbau, duell, verteidigung, lotsen, bauen, wuerfel, leine, oberflaeche };
     const shell = createShell({ game, templates });
     game.minigames = shell;
 
@@ -45,6 +48,7 @@ export default {
     D.mgList = () => game.content.ids('minigames');
     D.mgBests = () => game.state.get('medals', {});
     D.mgResult = () => D._mgResult || null;
+    D.mgKurz = () => { shell.kurz(); return true; };
     return shell;
   },
 };

@@ -11,6 +11,9 @@
 //   Ereignisse: minigame:start {id, mode, rueckenwind} · minigame:result {id, medal, stern, ok, newBest, mode, result}
 //     · minigame:stern {id} · minigame:end {id, cancelled} · minigame:restart {id}
 //   Spielstand: medals.<id> = { best, key, medal, stern, mode, runs, tries, bests:{modus:wert}, ghost? } · session.mgFails.<id>
+//   Gesprächs-Vorlagen (T.gespraech: leine, oberflaeche; Kostprobe B): X überspringt jederzeit zur ruhigen Kurzfassung
+//     (def.kurz: 1–3 kurze Zeilen) mit derselben Belohnung → { ok: true, kurz: true }; Scheitern heißt „Später.“;
+//     nach zwei Fehlversuchen fragt Glimm „Anders probieren?“ mit „Ja, kurz“ / „Nochmal“. Ereignis minigame:kurz {id, why}
 import { medalFor, primaryKey, updateBest, formatValue, MEDAL_NAME, MEDAL_COLOR, MEDAL_RANK, timingFor, RUECKENWIND_AFTER, medalCriteria } from './medals.js';
 import { esc } from '../../ui/overlay.js';
 import { textOf } from '../../content/schema/util.js';
@@ -19,7 +22,8 @@ import { applyEffects } from '../../systems/quests/dsl.js';
 export const MODE_LABEL = { entspannt: 'Entspannt', abenteuer: 'Abenteuer', profi: 'Profi' };
 export const MODE_ICON = { entspannt: 'ruhe', abenteuer: 'kompass', profi: 'blitz' };
 const KEY_LABEL = { seconds: 'Zeit', hits: 'Treffer', score: 'Wertung', moves: 'Züge', spilled: 'Verschüttet', lost: 'Verloren' };
-const PROG_REASONS = new Set(['los', 'again', 'weiter', 'done', 'replace', 'ende']);
+const PROG_REASONS = new Set(['los', 'again', 'weiter', 'done', 'replace', 'ende', 'kurz']);
+export const KURZ_AFTER = 2;   // Gesprächs-Vorlagen: nach so vielen Fehlversuchen bietet Glimm die Kurzfassung an
 
 export const MINIGAME_CSS = `
 .ov-minigame .ov-card{width:min(900px,100%)}
@@ -35,6 +39,11 @@ export const MINIGAME_CSS = `
 .mg-wind{display:inline-flex;align-items:center;gap:10px;min-height:56px;padding:0 16px;border-radius:18px;border:2px dashed rgba(255,255,255,.3);background:transparent;color:#fff;font:800 calc(16px * var(--txt-scale,1))/1.2 inherit;font-family:inherit;opacity:.85;text-align:left}
 .mg-wind small{display:block;font-size:.78em;font-weight:700;opacity:.75}
 .mg-wind.is-on{border-style:solid;border-color:var(--c-mint,#2de2c9);background:rgba(45,226,201,.14);opacity:1}
+.mg-offer{display:flex;flex-direction:column;align-items:center;gap:10px}
+.mg-offer .mg-glimm{margin:0;padding:10px 18px;border-radius:20px;background:rgba(45,226,201,.14);border:2px solid var(--c-mint,#2de2c9);font-size:calc(20px * var(--txt-scale,1));font-weight:900;color:var(--c-mint,#2de2c9)}
+.mg-kurz .mg-kurz-lines{display:flex;flex-direction:column;gap:8px;margin:0;padding:0;list-style:none}
+.mg-kurz .mg-kurz-lines li{font-size:calc(21px * var(--txt-scale,1));font-weight:800;line-height:1.35;animation:mg-in .5s ease both}
+.mg-kurz .mg-kurz-lines li:nth-child(2){animation-delay:.5s}.mg-kurz .mg-kurz-lines li:nth-child(3){animation-delay:1s}
 .mg-hintline{margin:0;font-size:calc(16px * var(--txt-scale,1));font-weight:800;color:var(--c-mint,#2de2c9)}
 .mg-result .mg-medal{position:relative;width:132px;height:132px;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 35% 30%,rgba(255,255,255,.5),transparent 55%),var(--medal,#6b6480);color:var(--ink,#1d1330);box-shadow:0 12px 30px rgba(0,0,0,.4),inset 0 0 0 6px rgba(0,0,0,.12);animation:mg-pop .5s cubic-bezier(.2,1.4,.4,1)}
 .mg-result .mg-medal.is-none{background:rgba(255,255,255,.1);color:#fff;box-shadow:none;border:3px dashed rgba(255,255,255,.3)}
@@ -54,6 +63,9 @@ export const MINIGAME_CSS = `
 .mg-topline .mg-prog i.is-hit{background:var(--c-mint,#2de2c9)}.mg-topline .mg-prog i.is-fast{background:var(--c-gold,#ffd166)}.mg-topline .mg-prog i.is-miss{background:#ff6b6b}
 .mg-actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:14px}
 .mg-hold{width:min(420px,100%);min-height:84px;border-radius:26px;border:0;background:linear-gradient(180deg,#fff3c4,var(--c-gold,#ffd166) 60%,#ffa94d);color:var(--ink,#1d1330);font:900 calc(24px * var(--txt-scale,1))/1 inherit;font-family:inherit;box-shadow:0 8px 0 #c2621f;touch-action:none;-webkit-user-select:none;user-select:none}
+.mg-hold{font-size:calc(24px * var(--txt-scale,1));font-weight:900}
+.mg-hold.is-los{box-shadow:0 8px 0 #c2621f,0 0 0 6px rgba(45,226,201,.55);animation:mg-los .8s ease-in-out infinite alternate}
+@keyframes mg-los{to{box-shadow:0 8px 0 #c2621f,0 0 0 14px rgba(45,226,201,.15)}}
 .mg-hold.is-down{transform:translateY(6px);box-shadow:0 2px 0 #c2621f;background:linear-gradient(180deg,#d9fff8,var(--c-mint,#2de2c9) 60%,#19b8a0)}
 .mg-tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px}
 .mg-tile{position:relative;display:flex;align-items:center;gap:10px;min-height:72px;padding:8px 10px 8px 14px;border-radius:20px;border:2px solid rgba(255,255,255,.16);background:rgba(255,255,255,.07);color:#fff;font:800 calc(18px * var(--txt-scale,1))/1.2 inherit;font-family:inherit;text-align:left;transition:transform .08s ease,background .15s ease,border-color .15s ease}
@@ -239,6 +251,9 @@ export function createShell({ game, templates }) {
   function onOverlayClose(s, reason) {
     if (PROG_REASONS.has(reason)) return;
     s.overlay = null;
+    // Gesprächs-Vorlagen: X führt nie ins Leere, sondern zur ruhigen Kurzfassung mit derselben Belohnung
+    if (s.phase === 'kurz') { end(s, kurzResult(s)); return; }
+    if (reason === 'x' && s.T.gespraech && !(s.phase === 'ergebnis' && s.result && s.result.ok)) { kurz(s, 'x'); return; }
     if (s.phase === 'ergebnis') end(s, s.result);
     else cancel(s, reason);
   }
@@ -312,26 +327,36 @@ export function createShell({ game, templates }) {
   function renderResult(s, r, prev) {
     const { def } = s;
     const key = r.key;
-    const label = r.stern ? MEDAL_NAME.stern : r.medal ? MEDAL_NAME[r.medal] : 'Noch nicht.';
-    const val = typeof r[key] === 'number' ? `${KEY_LABEL[key] || key}: ${formatValue(key, r[key])}` : '';
+    const gespraech = !!s.T.gespraech;
+    const label = r.stern ? MEDAL_NAME.stern : r.medal ? MEDAL_NAME[r.medal] : gespraech ? 'Später.' : 'Noch nicht.';
+    const offer = gespraech && !r.ok && failsOf(s.id) >= KURZ_AFTER;
+    // Gesprächs-Vorlagen zeigen keine Prozente (kein Schulgefühl), nur den kurzen Satz der Vorlage
+    const val = !s.T.gespraech && typeof r[key] === 'number' ? `${KEY_LABEL[key] || key}: ${formatValue(key, r[key])}` : '';
     const prevBest = prev && typeof prev.best === 'number' ? prev.best : null;
-    const bestTxt = r.newBest ? '<span class="mg-newbest">Neuer Bestwert</span>' : prevBest !== null ? `Bestwert ${esc(formatValue(key, prevBest))}` : '';
+    const bestTxt = s.T.gespraech ? '' : r.newBest ? '<span class="mg-newbest">Neuer Bestwert</span>' : prevBest !== null ? `Bestwert ${esc(formatValue(key, prevBest))}` : '';
     const detail = r.text ? `<p class="mg-text">${esc(r.text)}</p>` : (typeof r.hitCount === 'number' ? `<p class="mg-text">${r.hitCount} von ${r.beats} Böen</p>` : '');
     const html = `<div class="mg-card mg-result" data-mg-result data-medal="${esc(r.medal || 'keine')}"${r.stern ? ' data-stern="1"' : ''}>
       <div class="mg-medal${r.medal ? '' : ' is-none'}${r.stern ? ' is-stern' : ''}" style="--medal:${MEDAL_COLOR[r.stern ? 'stern' : r.medal] || '#6b6480'}">${r.stern ? `<span class="mg-stern">${icon('stern', { size: 184 })}</span>` : ''}${icon(r.medal ? (def.icon || 'medaille') : 'drehen', { size: 60 })}</div>
       <h3>${esc(label)}</h3>
       ${detail}
       <p class="mg-score">${esc(val)}${val && bestTxt ? ' · ' : ''}${bestTxt}</p>
-      <div class="ov-actions">
+      ${offer ? `<div class="mg-offer" data-mg-offer><p class="mg-glimm">Anders probieren?</p><div class="ov-actions">
+        <button class="btn btn-primary btn-big" type="button" data-kurz>${icon('check', { size: 26 })}<span>Ja, kurz</span></button>
+        <button class="btn btn-big" type="button" data-again>${icon('drehen', { size: 26 })}<span>Nochmal</span></button>
+      </div></div>` : `<div class="ov-actions">
         <button class="btn${r.ok ? '' : ' btn-primary'} btn-big" type="button" data-again>${icon('drehen', { size: 26 })}<span>Nochmal</span></button>
         <button class="btn${r.ok ? ' btn-primary' : ''} btn-big" type="button" data-weiter>${icon(r.ok ? 'check' : 'weiter', { size: 26 })}<span>${r.ok ? 'Weiter' : 'Später'}</span></button>
-      </div>
+      </div>`}
     </div>`;
     const mount = (body) => {
       body.classList.remove('mg-body');
       body.innerHTML = html;
       body.querySelector('[data-again]').addEventListener('click', () => { if (audio) audio.play('tile'); restart(s); });
-      body.querySelector('[data-weiter]').addEventListener('click', () => { if (audio) audio.play('tile'); const o = s.overlay; s.overlay = null; if (o) o.close('weiter'); end(s, s.result); });
+      const w = body.querySelector('[data-weiter]');
+      if (w) w.addEventListener('click', () => { if (audio) audio.play('tile'); const o = s.overlay; s.overlay = null; if (o) o.close('weiter'); end(s, s.result); });
+      const k = body.querySelector('[data-kurz]');
+      if (k) k.addEventListener('click', () => { if (audio) audio.play('tile'); kurz(s, 'angebot'); });
+      if (offer && ui.glimm) ui.glimm('Anders probieren?');
     };
     if (s.overlay && s.overlay.open) { mount(s.overlay.body); return; }
     s.overlay = ui.overlay.open({
@@ -346,6 +371,36 @@ export function createShell({ game, templates }) {
     s.phase = 'neu';
     s.restartAt = performance.now();
     startGame(s);
+  }
+  // ---- Kurzfassung (Gesprächs-Vorlagen): ruhig, ohne Aufgabe, dieselbe Belohnung ----
+  function kurzResult(s) {
+    const minMedal = (s.def.story && s.def.story.minMedal) || 'bronze';
+    return { id: s.id, ok: true, medal: minMedal, stern: false, kurz: true, cancelled: false, mode: s.mode, tries: s.tries };
+  }
+  function kurz(s, why) {
+    if (s.phase === 'zu' || s.phase === 'kurz') return;
+    stopInst(s);
+    s.phase = 'kurz';
+    setFails(s.id, 0);
+    emit('minigame:kurz', { id: s.id, why });
+    const lines = (Array.isArray(s.def.kurz) ? s.def.kurz : [s.def.kurz]).map((x) => textOf(x)).filter(Boolean);
+    const html = `<div class="mg-card mg-kurz" data-mg-kurz>
+      <span class="mg-icon" style="--tile:${esc(s.def.color || '#ffd166')}">${icon(s.def.icon || 'herz', { size: 46 })}</span>
+      <ul class="mg-kurz-lines">${lines.map((l) => `<li>${esc(l)}</li>`).join('')}</ul>
+      <div class="ov-actions"><button class="btn btn-primary btn-big" type="button" data-weiter>${icon('check', { size: 26 })}<span>Weiter</span></button></div>
+    </div>`;
+    const mount = (body) => {
+      body.classList.remove('mg-body');
+      body.innerHTML = html;
+      body.querySelector('[data-weiter]').addEventListener('click', () => { if (audio) audio.play('tile'); const o = s.overlay; s.overlay = null; if (o) o.close('weiter'); end(s, kurzResult(s)); });
+      if (speech && speech.settings.autoRead && lines.length) speech.speak(lines.join(' '), { who: 'erzaehler', auto: true });
+    };
+    if (s.overlay && s.overlay.open) { mount(s.overlay.body); return; }
+    s.overlay = ui.overlay.open({
+      id: 'minigame', title: textOf(s.def.title) || s.id, icon: s.def.icon || 'medaille', kind: 'panel', pause: true, cls: 'ov-minigame', backdropClose: false, sound: false,
+      content: mount,
+      onClose: (reason) => onOverlayClose(s, reason),
+    });
   }
   function cancel(s, reason) {
     if (s.phase === 'zu') return;
@@ -394,6 +449,8 @@ export function createShell({ game, templates }) {
       return { ...r, ok: !!r.ok, guide: params.guide, mode: params.mode };
     },
     cancel(reason = 'api') { if (current) cancel(current, reason); },
+    // Gesprächs-Vorlagen: sofort zur Kurzfassung (wie X)
+    kurz() { if (current && current.T.gespraech) kurz(current, 'api'); },
     formatValue, MEDAL_NAME, MEDAL_COLOR, medalFor, medalCriteria, primaryKey,
   };
   events.on('state:reset', () => { if (current) cancel(current, 'reset'); });

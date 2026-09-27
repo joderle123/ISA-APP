@@ -177,7 +177,7 @@ export function dialogues(ctx, d) {
   const ids = new Set(Object.keys(d.nodes));
   if (!isStr(d.start) || !ids.has(d.start)) ok = err(ctx, 'start', `start muss ein Knoten sein (${[...ids].join(', ')})`);
   const reachable = new Set();
-  const visit = (id) => { if (!ids.has(id) || reachable.has(id)) return; reachable.add(id); const n = d.nodes[id]; if (!isObj(n)) return; if (isStr(n.goto)) visit(n.goto); if (isList(n.choices)) n.choices.forEach((c) => isObj(c) && isStr(c.goto) && visit(c.goto)); if (isObj(n.lauschen) && isStr(n.lauschen.abort)) visit(n.lauschen.abort); if (isList(n.branch)) n.branch.forEach((b) => isObj(b) && isStr(b.goto) && visit(b.goto)); };
+  const visit = (id) => { if (!ids.has(id) || reachable.has(id)) return; reachable.add(id); const n = d.nodes[id]; if (!isObj(n)) return; if (isStr(n.goto)) visit(n.goto); if (isList(n.choices)) n.choices.forEach((c) => { if (isObj(c) && isStr(c.goto)) visit(c.goto); if (isObj(c) && isStr(c.gotoFail)) visit(c.gotoFail); }); if (isObj(n.lauschen) && isStr(n.lauschen.abort)) visit(n.lauschen.abort); if (isList(n.branch)) n.branch.forEach((b) => isObj(b) && isStr(b.goto) && visit(b.goto)); };
   if (isStr(d.start)) visit(d.start);
   for (const [id, n] of Object.entries(d.nodes)) {
     const p = ['nodes', id];
@@ -390,6 +390,9 @@ export function minigames(ctx, d) {
     if (!isObj(d.params)) ok = err(ctx, 'params', 'params muss ein Objekt sein');
     else { ok = checkEffects(ctx, 'params.onHit', d.params.onHit) && ok; ok = checkEffects(ctx, 'params.onMiss', d.params.onMiss) && ok; if (d.params.partner !== undefined) { if (!isStr(d.params.partner)) ok = err(ctx, 'params.partner', 'Figuren-ID'); else ref(ctx, 'params.partner', 'npc', d.params.partner); } }
   }
+  // Gesprächs-Vorlagen (Kostprobe B): ruhige Kurzfassung für X / „Ja, kurz“ ist Pflicht (1–3 Zeilen)
+  if (d.template === 'leine' || d.template === 'oberflaeche') ok = arrayOf(ctx, 'kurz', d.kurz, (t) => isText(t), 'Kurzfassung: 1–3 Zeilen', { min: 1 }) && ok;
+  if (d.template === 'oberflaeche' && isObj(d.params)) ok = arrayOf(ctx, 'params.words', d.params.words, (w) => isObj(w) && isText(w.t), 'Wörter {t, ok?}', { min: 2 }) && ok;
   if (d.template === 'satzbau') {
     ok = oneOf(ctx, 'ruleset', d.ruleset, C.SATZBAU_RULESETS, 'Regelset') && ok;
     ok = arrayOf(ctx, 'slots', d.slots, (s, i) => {
@@ -571,4 +574,30 @@ export function units(ctx, d) {
   return ok;
 }
 
-export const VALIDATORS = { regions, npcs, dialogues, quests, minigames, rooms, gadgets, memories, nachtwache, echoes, cosmetics, collectibles, glimm, units };
+// ---- Bergen: feste Fundorte (content/bergen/*.js, Kostprobe „Die Kielpost fährt“) ----
+const BOOT_MATS = ['holz', 'tau', 'tuch', 'metall'];
+const checkMats = (ctx, p, m) => (isObj(m) && Object.keys(m).length && Object.entries(m).every(([k, v]) => BOOT_MATS.includes(k) && Number.isInteger(v) && v > 0)) || err(ctx, p, `Material { ${BOOT_MATS.join(', ')} } mit ganzen Zahlen > 0`);
+export function bergen(ctx, d) {
+  const seen = new Set();
+  return arrayOf(ctx, 'funde', d.funde, (f, i) => {
+    const p = ['funde', i];
+    if (!isObj(f) || !isId(f.id)) return err(ctx, p, 'Fundort {id, kind, x, z, material}');
+    let o = !seen.has(f.id) || err(ctx, sub(p, 'id'), `Fundort ${f.id} doppelt`);
+    seen.add(f.id);
+    o = oneOf(ctx, sub(p, 'kind'), f.kind, ['treibend', 'klippe', 'wrack'], 'Fundart') && o;
+    if (!isNum(f.x) || !isNum(f.z)) o = err(ctx, p, 'x und z (Zahlen) erwartet');
+    return checkMats(ctx, sub(p, 'material'), f.material) && o;
+  }, 'Fundorte', { min: 1 });
+}
+// ---- Boots-Teile (content/boot/teile.js) ----
+export function boot(ctx, d) {
+  if (!d.teile) return true;
+  return arrayOf(ctx, 'teile', d.teile, (t, i) => {
+    const p = ['teile', i];
+    if (!isObj(t) || !isId(t.id)) return err(ctx, p, 'Teil {id, name, icon, kosten}');
+    let o = req(ctx, t, 'name', isStr, 'Name', p) && req(ctx, t, 'icon', isStr, 'Icon-Name', p);
+    return checkMats(ctx, sub(p, 'kosten'), t.kosten) && o;
+  }, 'Boots-Teile', { min: 1 });
+}
+
+export const VALIDATORS = { regions, npcs, dialogues, quests, minigames, rooms, gadgets, memories, nachtwache, echoes, cosmetics, collectibles, glimm, units, bergen, boot };

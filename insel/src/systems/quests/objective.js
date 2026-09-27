@@ -56,13 +56,15 @@ export function createObjective({ game, engine, markers }) {
     const active = engine.active;
     const si = active ? engine.stepInfo() : null;
     const step = si && si.step;
-    const target = markers && markers.visible ? markers.target : null;
+    // Ohne Auftrag darf ein freies Ziel die Zeile füllen (z. B. die Kielpost: systems/kielpost → game.freeGoal)
+    const free = !active && typeof game.freeGoal === 'function' ? game.freeGoal() : null;
+    const target = (markers && markers.visible ? markers.target : null) || (free && free.target) || null;
     const p = game.player && game.player.position;
     textT -= dt;
     if (textT <= 0 || hide !== !info.visible) {
       textT = 0.25;
-      const text = step ? (step.label || '') : active ? '' : 'Neuer Code? Tagebuch → Code';
-      info.mode = step ? 'step' : active ? 'none' : 'code';
+      const text = step ? (step.label || '') : active ? '' : free ? free.text : 'Neuer Code? Tagebuch → Code';
+      info.mode = step ? 'step' : active ? 'none' : free ? 'frei' : 'code';
       info.text = text;
       info.dist = target && p ? Math.hypot(target.x - p.x, target.z - p.z) : null;
       info.visible = !hide && !!text;

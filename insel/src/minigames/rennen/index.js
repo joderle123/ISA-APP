@@ -7,7 +7,7 @@
 import * as THREE from 'three';
 import { createRace, createSampler, loadSamples } from './logic.js';
 import { createGhost } from '../shell/ghost.js';
-import { createBoat } from './boat.js';
+import { createBoat } from '../../actors/boot.js';
 import { medalCriteria, formatValue } from '../shell/medals.js';
 import { EMOTION_ICON, EMOTION_COLOR } from '../../ui/icons.js';
 

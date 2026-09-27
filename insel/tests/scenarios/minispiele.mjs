@@ -34,7 +34,7 @@ try {
 
   // ---- Plugin ----
   const api = await page.evaluate(() => ({ plugins: LUMO.plugins.list, failed: LUMO.plugins.failed, api: !!LUMO.minigames && typeof LUMO.minigames.play === 'function', templates: Object.keys(LUMO.minigames.templates), ids: LUMO.content.ids('minigames') }));
-  check('Plugin minigames installiert, 8 Vorlagen, Beispiel-Configs geladen', api.api && api.templates.length === 8 && api.ids.includes('hafen-daecher') && api.ids.includes('e11-tauziehen') && !api.failed.some((f) => f.id === 'minigames'), J({ templates: api.templates, n: api.ids.length, failed: api.failed }));
+  check('Plugin minigames installiert, 10 Vorlagen (mit leine, oberflaeche), Beispiel-Configs geladen', api.api && api.templates.length === 10 && api.ids.includes('hafen-daecher') && api.ids.includes('e11-tauziehen') && !api.failed.some((f) => f.id === 'minigames'), J({ templates: api.templates, n: api.ids.length, failed: api.failed }));
 
   // ---- Startkarte Hafen-Dächer ----
   await page.evaluate(() => { LUMO.debug.teleport({ x: 6, z: 120 }); LUMO.state.set('settings.mode', 'abenteuer'); });
@@ -190,7 +190,8 @@ try {
   await shot(page, '128_mg_duell');
   const okIdx = await page.evaluate(() => LUMO.minigames.current.inst.D.round.options.findIndex((o) => o.ok));
   await page.click(`[data-opt="${okIdx}"]`);
-  await sleep(900);
+  // Die nächste Runde kommt nach 0,75 s Spielzeit (Spielzeit läuft je Frame; Software-Renderer sind langsam)
+  await waitFor(page, () => document.querySelector('.mg-topline').textContent.includes('2 / 8'), 180000).catch(() => null);
   const du2 = await page.evaluate(() => ({ round: document.querySelector('.mg-topline').textContent, hits: LUMO.minigames.current.inst.D.hits }));
   check('Richtige Karte schnell getippt: Treffer, nächste Runde', du2.hits === 1 && du2.round.includes('2 / 8'), J(du2));
   await auto('gold');
