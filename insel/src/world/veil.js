@@ -58,7 +58,7 @@ export const RAMPS = {
   props:   { t1: 0.55, t2: 0.18, mid: 0.45, soft: 0.04, rim: 0.18 },
   figur:   { t1: 0.32, t2: 0.05, mid: 0.40, soft: 0.03, rim: 0.35 },
   laub:    { t1: 0.35, t2: 0.02, mid: 0.30, soft: 0.06, rim: 0.14, trans: 1 },
-  terrain: { t1: 0.60, t2: 0.22, mid: 0.50, soft: 0.10, rim: 0.0 },
+  terrain: { t1: 0.60, t2: 0.22, mid: 0.50, soft: 0.13, rim: 0.0 },
   fels:    { t1: 0.55, t2: 0.18, mid: 0.45, soft: 0.04, rim: 0.10 },
   wolke:   { t1: 0.35, t2: 0.02, mid: 0.25, soft: 0.08, rim: 0.25, fogCap: 0.55 },
   glow:    { t1: -1.0, t2: -1.0, mid: 1.0, soft: 0.02, rim: 0.0 },   // leuchtend: keine Rampe, kein Rim
@@ -101,15 +101,27 @@ uniform vec3 uRimCool;
 uniform float uRimGlobal;
 uniform vec3 uSunDirView;
 uniform vec3 uSunColorLin;
+uniform float uCloudAmt;
 float gLumoVeil = 0.0;
 float gLumoRing = 0.0;
 float gLumoInside = 0.0;
 float gLumoShadow = 1.0;
 float gLumoWorldY = 100.0;
+float gLumoFogCap = 1.0;
 // linear → Ausgaberaum (sRGB), für Nebelfarben beim Direkt-Rendern ohne Post-Stack
 vec3 lumoToOut(vec3 c) {
   c = max(c, vec3(0.0));
   return mix(c * 12.92, 1.055 * pow(c, vec3(1.0 / 2.4)) - 0.055, step(vec3(0.0031308), c));
+}
+// Wolkenschatten (§5.3 sinngemäß): große, weiche Flecken ziehen langsam über die Insel und nehmen dem Sonnenanteil
+// bis zu uCloudAmt – derselbe Wert für Gelände, Pflanzen, Requisiten, Figuren und Wasser, damit nichts „schwebt“.
+float lumoHash21(vec2 p) { vec3 p3 = fract(vec3(p.xyx) * 0.1031); p3 += dot(p3, p3.yzx + 33.33); return fract((p3.x + p3.y) * p3.z); }
+float lumoVNoise(vec2 p) { vec2 i = floor(p), f = fract(p); f = f * f * (3.0 - 2.0 * f); return mix(mix(lumoHash21(i), lumoHash21(i + vec2(1.0, 0.0)), f.x), mix(lumoHash21(i + vec2(0.0, 1.0)), lumoHash21(i + vec2(1.0, 1.0)), f.x), f.y); }
+float lumoCloudShadow(vec2 p) {
+  if (uCloudAmt < 0.001) return 1.0;
+  vec2 q = p * 0.011 + vec2(uLumoTime * 0.014, uLumoTime * 0.007);
+  float nn = lumoVNoise(q) * 0.62 + lumoVNoise(q * 2.4 + 5.3) * 0.38;
+  return 1.0 - smoothstep(0.5, 0.68, nn) * uCloudAmt;
 }
 // Toon-Rampe: N·L → Sonnenanteil (1 Licht · mid Halbton · 0 Schatten = nur Hemisphärenlicht), weiche Kanten
 float lumoBand(float ndl, vec4 ramp, float soft) {
@@ -184,11 +196,15 @@ vec3 lumoApplyVeil(vec3 col, vec3 p) {
   return col;
 }
 // Luftperspektive statt Nebelwand (Stil-Bibel §5.3): Dunst nah → fern (Uniform → Szenen-Nebelfarbe), Sonnenstreuung,
-// Höhennebel unter 3 m, Ferne entsättigt; Nebel gedeckelt (uFogMax), damit Landmarken als Silhouette lesbar bleiben.
+// Höhennebel unter 3 m (erst ab 25 m Abstand, damit Strand und Steg nahe der Kamera klar bleiben), Ferne entsättigt.
+// Nebel-Deckel: Flächen nahe dem Meeresspiegel (Meer, Strand) gehen ganz in den Dunst über (nahtloser Horizont), hohe
+// Silhouetten (Vulkan, Turm, Gewitterturm) bleiben bis uFogMax lesbar; je Material zusätzlich gLumoFogCap.
 // Farben kommen linear an; ohne Post-Stack (Direkt-Rendern im sRGB-Ausgaberaum) werden sie hier umgerechnet.
 vec3 lumoFog(vec3 col, float depth, vec3 viewPos, vec3 fogCol, float fogNear, float fogFar) {
+  // flache Kurve: die Mitteldistanz bleibt kontrastreich, erst die Ferne löst sich im Dunst auf
   float f = smoothstep(fogNear, fogFar, depth);
-  f = max(f, uFogHeight * smoothstep(3.0, -1.0, gLumoWorldY) * smoothstep(4.0, 30.0, depth));
+  f = f * f * (2.0 - f);
+  f = max(f, uFogHeight * smoothstep(3.0, -1.0, gLumoWorldY) * smoothstep(25.0, 90.0, depth));
   vec3 dir = normalize(viewPos);
   float s = max(dot(dir, uFogSunDir), 0.0);
   vec3 fc = mix(uFogNearColor, fogCol, f);
@@ -199,7 +215,8 @@ vec3 lumoFog(vec3 col, float depth, vec3 viewPos, vec3 fogCol, float fogNear, fl
   if (uLumoPost < 0.5) fc = lumoToOut(fc);
   float l = dot(col, vec3(0.299, 0.587, 0.114));
   col = mix(col, vec3(l), f * uAerial * 0.35);
-  return mix(col, fc, min(f, uFogMax));
+  float cap = 1.0 - (1.0 - uFogMax * gLumoFogCap) * smoothstep(5.0, 40.0, gLumoWorldY);
+  return mix(col, fc, min(f, cap));
 }
 // Farbkorrektur (nach Tone-Mapping, im sRGB-Ausgaberaum): Sättigung, Kontrast, warme Lichter / kühle Schatten.
 // Mit Post-Stack (uLumoPost = 1) übernimmt der Grade-Pass dieselbe Formel für das ganze Bild (auch Sprites/Partikel).
@@ -215,6 +232,7 @@ vec3 lumoGrade(vec3 c) {
 
 const FOG_FRAG = /* glsl */`
   gLumoWorldY = vVeilPos.y;
+  gLumoFogCap = uFogCap;
 #ifdef USE_FOG
   gl_FragColor.rgb = lumoFog(gl_FragColor.rgb, vFogDepth, vFogView, fogColor, fogNear, fogFar);
 #endif
@@ -234,7 +252,7 @@ struct LambertMaterial {
 };
 void RE_Direct_Lambert( const in IncidentLight directLight, const in vec3 geometryPosition, const in vec3 geometryNormal, const in vec3 geometryViewDir, const in vec3 geometryClearcoatNormal, const in LambertMaterial material, inout ReflectedLight reflectedLight ) {
   float dotNL = dot( geometryNormal, directLight.direction );
-  float sh = smoothstep( 0.18, 0.62, gLumoShadow );
+  float sh = smoothstep( 0.18, 0.62, gLumoShadow ) * lumoCloudShadow( vVeilPos.xz );
   gLumoShadow = 1.0;
   float band = lumoBand( dotNL, uRamp, uRampSoft ) * sh;
   reflectedLight.directDiffuse += band * directLight.color * BRDF_Lambert( material.diffuseColor );
@@ -252,7 +270,7 @@ struct ToonMaterial {
   vec3 diffuseColor;
 };
 void RE_Direct_Toon( const in IncidentLight directLight, const in vec3 geometryPosition, const in vec3 geometryNormal, const in vec3 geometryViewDir, const in vec3 geometryClearcoatNormal, const in ToonMaterial material, inout ReflectedLight reflectedLight ) {
-  float sh = smoothstep( 0.18, 0.62, gLumoShadow );
+  float sh = smoothstep( 0.18, 0.62, gLumoShadow ) * lumoCloudShadow( vVeilPos.xz );
   gLumoShadow = 1.0;
   vec3 irradiance = getGradientIrradiance( geometryNormal, directLight.direction ) * directLight.color * sh;
   reflectedLight.directDiffuse += irradiance * BRDF_Lambert( material.diffuseColor );
@@ -301,8 +319,8 @@ export function createVeil({ events, audio, zones: zoneDefs = ZONES } = {}) {
     uFogSunDir: { value: new THREE.Vector3(0, 0, -1) },
     uFogSunAmt: { value: 0.8 },
     uFogNearColor: { value: new THREE.Color('#dcebf6') },   // Dunst nah (fern = scene.fog.color)
-    uFogMax: { value: 0.86 },                                // Nebel-Deckel: Silhouetten bleiben lesbar (§5.3)
-    uFogHeight: { value: 0.12 },                             // Höhennebel unter 3 m
+    uFogMax: { value: 0.72 },                                // Nebel-Deckel für hohe Silhouetten (§5.3); am Meeresspiegel 1.0
+    uFogHeight: { value: 0.08 },                             // Höhennebel unter 3 m
     uAerial: { value: 1 },                                   // Ferne entsättigt
     uLumoPost: { value: 0 },                                 // 1 = Post-Stack aktiv (Grade im Pass, Nebel linear)
     // Farbkorrektur (wird vom Himmel je nach Tageszeit gesetzt)
@@ -317,6 +335,7 @@ export function createVeil({ events, audio, zones: zoneDefs = ZONES } = {}) {
     uRimGlobal: { value: 1 },
     uSunDirView: { value: new THREE.Vector3(0, 1, 0) },
     uSunColorLin: { value: new THREE.Color('#fff4dc') },
+    uCloudAmt: { value: 0.3 },                               // Wolkenschatten-Stärke (setzt der Himmel: tags 0.3, nachts 0)
   };
   let base = 0.55;
   let baseOverride = null;   // Innenräume (WP18): Schleierwert außerhalb aller Zonen, z. B. graue Hafengrotte
@@ -417,9 +436,7 @@ export function createVeil({ events, audio, zones: zoneDefs = ZONES } = {}) {
         .replace(/directLight\.color \*= \( directLight\.visible && receiveShadow \) \? getShadow\(/g, 'gLumoShadow *= ( directLight.visible && receiveShadow ) ? getShadow(')
         .replace('#include <lights_fragment_end>', '#include <lights_fragment_end>\n' + (withRim ? LUMO_RIM : ''))
         .replace('#include <opaque_fragment>', (opts.beforeVeil || '') + (veilOn ? 'outgoingLight = lumoApplyVeil(outgoingLight, vVeilPos);\n' : '') + (opts.afterVeil || '') + '#include <opaque_fragment>')
-        .replace('#include <fog_fragment>', FOG_FRAG.replace('min(f, uFogMax)', 'min(f, uFogMax * uFogCap)'));
-      // Nebel-Deckel je Material (Silhouetten) – lumoFog selbst deckelt mit uFogMax
-      shader.fragmentShader = shader.fragmentShader.replace('return mix(col, fc, min(f, uFogMax));', 'return mix(col, fc, min(f, uFogMax * uFogCap));');
+        .replace('#include <fog_fragment>', FOG_FRAG);
       if (opts.uniforms) Object.assign(shader.uniforms, opts.uniforms);
       if (opts.vertex) shader.vertexShader = opts.vertex(shader.vertexShader);
       if (opts.fragment) shader.fragmentShader = opts.fragment(shader.fragmentShader);

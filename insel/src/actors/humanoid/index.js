@@ -18,7 +18,7 @@ import { merge } from './geo.js';
 import {
   M, SKIN_TONES, HAIR_COLORS, EYE_COLORS, HAIR_STYLES, BROW_STYLES, GLASSES, HEARING_AIDS, PROSTHESES, HEAD_ITEMS, TOP_STYLES,
   BOTTOM_STYLES, SHOE_STYLES, PATTERNS, MASKS, BACK_ITEMS, ACCESSORIES, CLOTH_COLORS, clamp01, buildWidth, heightScale, getMaterial,
-  getGlassMaterial, getOutlineMaterial, attachHull, figureTier, HULL_PX, HULL_PARTS, hasDOM, hash01, setDefaultTier, setFigureRim,
+  getGlassMaterial, getOutlineMaterial, attachHull, detachHull, figureTier, HULL_PX, HULL_PARTS, hasDOM, hash01, setDefaultTier, setFigureRim,
 } from './base.js';
 import { buildHead, buildBrow, buildMouth, buildLids, buildLenses, buildHairTail, mouthAnchor } from './head.js';
 import { buildTorso, buildPelvis, buildThigh, buildShin, buildUpperArm, buildForearm, buildHand } from './body.js';
@@ -167,7 +167,8 @@ export function createHumanoid(config = {}, opts = {}) {
   let cfg = normalizeConfig(config);
   let detail = opts.detail === 'lite' ? 'lite' : 'full';
   const veil = opts.veil || null;
-  const tier = figureTier(opts);
+  // Qualitätsstufe: wird je Bild neu gelesen (window.LUMO gibt es erst nach dem Aufbau, Stufe kann wechseln) – siehe update()
+  let tier = figureTier(opts);
   const seed = Math.floor(hash01(String(opts.name || 'x').length + 7, 3) * 1000);
   const material = getMaterial(veil);
   const group = new THREE.Group();
@@ -175,8 +176,8 @@ export function createHumanoid(config = {}, opts = {}) {
   const body = new THREE.Group(); body.name = 'body'; group.add(body);
   const hips = new THREE.Group(); hips.position.y = M.hipY; body.add(hips);
   const spine = new THREE.Group(); spine.position.y = 0.06; hips.add(spine);
-  const neck = new THREE.Group(); neck.position.y = M.torso + 0.07; spine.add(neck);
-  const headPivot = new THREE.Group(); headPivot.position.y = M.headR * 0.86; neck.add(headPivot);
+  const neck = new THREE.Group(); neck.position.y = M.torso + M.neckY; spine.add(neck);
+  const headPivot = new THREE.Group(); headPivot.position.y = M.headY; neck.add(headPivot);
   const hairPivot = new THREE.Group(); hairPivot.name = 'hair'; headPivot.add(hairPivot);
   const packPivot = new THREE.Group(); packPivot.name = 'pack'; spine.add(packPivot);
   const J = { body, spine, head: neck, hipL: new THREE.Group(), hipR: new THREE.Group(), kneeL: new THREE.Group(), kneeR: new THREE.Group(), shL: new THREE.Group(), shR: new THREE.Group(), elL: new THREE.Group(), elR: new THREE.Group(), wristL: new THREE.Group(), wristR: new THREE.Group(), hair: hairPivot, pack: packPivot };
@@ -201,6 +202,14 @@ export function createHumanoid(config = {}, opts = {}) {
     hullMat = hullPx > 0 ? getOutlineMaterial(veil, hullPx) : null;
     hullMatHand = hullPx > 0 ? getOutlineMaterial(veil, (HULL_PX[tier] || HULL_PX.high).hand) : null;
   }
+  // Hülle für ein Teil nach Stufe/Detail setzen oder entfernen (auch nachträglich beim Stufenwechsel)
+  function hullFor(m, name, { hull = true, thin = false } = {}) {
+    const parts = HULL_PARTS[tier];
+    const want = hull && m.material === material && hullMat && (!parts || parts.has(name));
+    if (want) { if (m.userData.hull && m.userData.hull.material !== (thin ? hullMatHand : hullMat)) detachHull(m); attachHull(m, thin ? hullMatHand : hullMat); }
+    else detachHull(m);
+  }
+  const hullOpts = {};
   function mk(name, geo, parent, mat = material, { hull = true, thin = false, shadow = true } = {}) {
     if (meshes[name]) { meshes[name].parent.remove(meshes[name]); meshes[name].geometry.dispose(); }
     const m = new THREE.Mesh(geo, mat);
@@ -208,9 +217,18 @@ export function createHumanoid(config = {}, opts = {}) {
     m.name = name;
     parent.add(m);
     meshes[name] = m;
-    const parts = HULL_PARTS[tier];
-    if (hull && mat === material && hullMat && (!parts || parts.has(name))) attachHull(m, thin ? hullMatHand : hullMat);
+    hullOpts[name] = { hull, thin };
+    hullFor(m, name, hullOpts[name]);
     return m;
+  }
+  // Stufe neu lesen; bei Wechsel Hüllen aller Teile (und des Impostors) anpassen, ohne die Geometrie neu zu bauen
+  function refreshTier() {
+    const t = figureTier(opts);
+    if (t === tier) return;
+    tier = t;
+    setupHulls();
+    for (const [name, m] of Object.entries(meshes)) hullFor(m, name, hullOpts[name] || {});
+    for (const c of group.children) if (c.isMesh && c.name === 'impostor') { detachHull(c); if (hullMat) attachHull(c, hullMat); }
   }
   function drop(name) { const m = meshes[name]; if (m) { m.parent.remove(m); m.geometry.dispose(); delete meshes[name]; } }
   const face = { browL: null, browR: null, mouths: {}, lids: null, anchors: { browL: null, browR: null, mouth: null } };
@@ -420,6 +438,7 @@ export function createHumanoid(config = {}, opts = {}) {
     },
     stopEmote() { if (emote) { const e = emote; emote = null; blend = 0; cur.body.y = ((cur.body.y + Math.PI) % (Math.PI * 2) + Math.PI * 2) % (Math.PI * 2) - Math.PI; e.resolve({ done: false, cancelled: true }); } },
     update(dt, camera) {
+      refreshTier();
       animT += dt;
       blend = Math.min(1, blend + dt * 5);
       const motion = sensor.update(dt);
@@ -429,6 +448,8 @@ export function createHumanoid(config = {}, opts = {}) {
         if (emote.t >= emote.seconds) { const e = emote; emote = null; blend = 0; cur.body.y = ((cur.body.y + Math.PI) % (Math.PI * 2) + Math.PI * 2) % (Math.PI * 2) - Math.PI; e.resolve({ done: true }); }
       }
       computePose(dt);
+      // Kopf zieht beim Drehen leicht nach (Sekundärbewegung), nicht in Emotes/Blickzielen
+      if (!emote && motion) tgt.head.y -= clamp(motion.yawRate * 0.03, -0.22, 0.22);
       const fast = anim === 'jump' || anim === 'fall';
       const k = 1 - Math.exp(-dt * (fast ? 14 : emote ? 12 : 11));
       cur.bodyY += (tgt.bodyY - cur.bodyY) * k;
@@ -506,15 +527,16 @@ export function createHumanoid(config = {}, opts = {}) {
     }
     const breathe = Math.sin(t * 1.7);
     if (anim === 'idle' || anim === 'think') {
-      // Atmen, Gewichtsverlagerung alle 4–7 s, Kopf schaut sich um
+      // Atmen (Brust hebt sich, Schultern folgen), Gewichtsverlagerung alle 4–7 s, Kopf schaut sich um, Arme pendeln kaum merklich
       shiftT += dt;
       if (shiftT > shiftPeriod) { shiftT = 0; shiftN++; shiftPeriod = 4 + hash01(shiftN + seed, 9) * 3; shiftDir = -shiftDir; }
       shiftCur += (shiftDir - shiftCur) * Math.min(1, dt * 1.6);
-      const sc = shiftCur;
+      const sc = shiftCur, sway = Math.sin(t * 0.9 + seed);
       tgt.bodyY = breathe * 0.012 - Math.abs(sc) * 0.006;
-      set('spine', 0.02 + breathe * 0.02, sc * 0.05, -sc * 0.045);
-      set('head', -breathe * 0.02 + Math.sin(t * 0.37) * 0.04, Math.sin(t * 0.23) * 0.25 - sc * 0.05, sc * 0.03);
-      set('shL', 0.04 + breathe * 0.02, 0, 0.09 + breathe * 0.015 - sc * 0.02); set('shR', 0.04 + breathe * 0.02, 0, -0.09 - breathe * 0.015 - sc * 0.02);
+      set('spine', 0.02 + breathe * 0.02, sc * 0.05 + sway * 0.01, -sc * 0.045);
+      set('head', -breathe * 0.02 + Math.sin(t * 0.37) * 0.04, Math.sin(t * 0.23) * 0.25 - sc * 0.05, sc * 0.03 + sway * 0.01);
+      set('shL', 0.04 + breathe * 0.025 + sway * 0.015, 0, 0.09 + breathe * 0.015 - sc * 0.02); set('shR', 0.04 + breathe * 0.025 - sway * 0.015, 0, -0.09 - breathe * 0.015 - sc * 0.02);
+      set('elL', -0.18 - breathe * 0.01, 0, 0); set('elR', -0.18 + breathe * 0.01, 0, 0);
       set('hipL', 0.01 - sc * 0.02, 0, 0.05 + sc * 0.045); set('hipR', 0.03 + sc * 0.02, 0, -0.03 + sc * 0.045);
       set('kneeL', Math.max(0, sc) * 0.16, 0, 0); set('kneeR', 0.06 + Math.max(0, -sc) * 0.14, 0, 0);
       set('body', 0, 0, sc * 0.035);
@@ -525,17 +547,22 @@ export function createHumanoid(config = {}, opts = {}) {
       const stride = 1.35 + run * 0.95;
       phase += (dt * Math.max(moveSpeed, 0.8) / stride) * Math.PI;
       const s = Math.sin(phase), c = Math.cos(phase);
-      const A = 0.5 + run * 0.4;
-      set('hipL', -s * A + run * 0.1, 0, 0.02); set('hipR', s * A + run * 0.1, 0, -0.02);
-      set('kneeL', Math.max(0, c) * (0.95 + run * 0.7) + Math.max(0, s) * 0.14, 0, 0);
-      set('kneeR', Math.max(0, -c) * (0.95 + run * 0.7) + Math.max(0, -s) * 0.14, 0, 0);
-      const aa = 0.42 + run * 0.5;
-      set('shL', s * aa + run * 0.1, 0, 0.1 + run * 0.06); set('shR', -s * aa + run * 0.1, 0, -0.1 - run * 0.06);
-      set('elL', -0.35 - run * 0.95 - Math.max(0, -s) * 0.35, 0, 0); set('elR', -0.35 - run * 0.95 - Math.max(0, s) * 0.35, 0, 0);
-      set('wristL', -0.1 * run, 0, 0.1); set('wristR', -0.1 * run, 0, -0.1);
-      tgt.bodyY = (0.5 - Math.abs(s)) * (0.045 + run * 0.07) - run * 0.03;
-      set('spine', 0.06 + run * 0.15, s * 0.1, c * 0.03);
-      set('head', -0.05 - run * 0.1, -s * 0.06, -c * 0.02);
+      // längere Standphase: Hüftkurve leicht „eckig“ (Aufsetzen sitzt, Schwung ist schnell)
+      const sh = Math.sign(s) * Math.pow(Math.abs(s), 0.8);
+      const A = 0.5 + run * 0.42;
+      set('hipL', -sh * A + run * 0.12, 0, 0.02 + c * 0.02); set('hipR', sh * A + run * 0.12, 0, -0.02 + c * 0.02);
+      // Knie: beugt sich im Schwung (Ferse hebt), streckt beim Aufsetzen
+      set('kneeL', Math.max(0, c) * (1.0 + run * 0.75) + Math.max(0, s) * 0.12, 0, 0);
+      set('kneeR', Math.max(0, -c) * (1.0 + run * 0.75) + Math.max(0, -s) * 0.12, 0, 0);
+      // Arme: Gehen locker aus der Schulter, Laufen 90° gebeugt und pumpend
+      const aa = 0.4 + run * 0.55;
+      set('shL', s * aa + run * 0.15, 0, 0.1 + run * 0.08); set('shR', -s * aa + run * 0.15, 0, -0.1 - run * 0.08);
+      set('elL', -0.3 - run * 1.1 - Math.max(0, -s) * (0.4 + run * 0.2), 0, run * 0.1); set('elR', -0.3 - run * 1.1 - Math.max(0, s) * (0.4 + run * 0.2), 0, -run * 0.1);
+      set('wristL', -0.12 * run - s * 0.08, 0, 0.1); set('wristR', -0.12 * run + s * 0.08, 0, -0.1);
+      // Hüpfen zweimal je Schritt, Laufen 0.07 m, Oberkörper 12° vor, Hüftschwung ±0.05, Kopf bleibt ruhig
+      tgt.bodyY = (0.5 - Math.abs(s)) * (0.04 + run * 0.07) - run * 0.03;
+      set('spine', 0.05 + run * 0.16, s * 0.1, c * 0.035);
+      set('head', -0.05 - run * 0.12, -s * 0.07, -c * 0.03);
       set('body', 0, -s * 0.07, c * 0.05);
       const half = Math.floor((phase + Math.PI / 2) / Math.PI);
       if (half !== lastStepHalf) { lastStepHalf = half; if (h.onStep) h.onStep(half % 2 ? 'L' : 'R'); }

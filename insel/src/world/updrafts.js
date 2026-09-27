@@ -36,15 +36,31 @@ export function createUpdrafts({ scene, island, particles, veil, quality } = {})
   const reg = createUpdraftRegistry();
   const group = new THREE.Group();
   group.name = 'updrafts';
+  // Säule als stilisierter Schimmer (Stil-Bibel §10): dünne aufsteigende Streifen, am Rand (streifender Blick) stärker wie
+  // ein Glasrohr, in der Fläche fast unsichtbar; nachts gedämpft (uRimGlobal des Schleiers = 1 − Nacht/2 als Nachtmaß).
+  const nightU = veil && veil.uniforms && veil.uniforms.uRimGlobal ? veil.uniforms.uRimGlobal : { value: 1 };
   const mat = new THREE.ShaderMaterial({
-    uniforms: { uT: { value: 0 }, uColor: { value: new THREE.Color('#ffe7b0') } },
-    vertexShader: 'varying vec2 vUv; varying float vH; void main(){ vUv = uv; vH = position.y; gl_Position = projectionMatrix * modelViewMatrix * vec4(position,1.0); }',
-    fragmentShader: /* glsl */`
-      uniform float uT; uniform vec3 uColor; varying vec2 vUv; varying float vH;
+    uniforms: { uT: { value: 0 }, uColor: { value: new THREE.Color('#ffe7b0') }, uRimGlobal: nightU },
+    vertexShader: /* glsl */`
+      varying vec2 vUv; varying vec3 vN; varying vec3 vW;
       void main(){
-        float bands = 0.5 + 0.5 * sin((vUv.y * 9.0 - uT * 1.6) * 6.2831);
-        float edge = smoothstep(0.0, 0.12, vUv.y) * (1.0 - smoothstep(0.75, 1.0, vUv.y));
-        float a = (0.05 + bands * 0.07) * edge;
+        vUv = uv;
+        vN = normalize(mat3(modelMatrix) * normal);
+        vec4 w = modelMatrix * vec4(position, 1.0);
+        vW = w.xyz;
+        gl_Position = projectionMatrix * viewMatrix * w;
+      }`,
+    fragmentShader: /* glsl */`
+      uniform float uT; uniform vec3 uColor; uniform float uRimGlobal;
+      varying vec2 vUv; varying vec3 vN; varying vec3 vW;
+      void main(){
+        vec3 V = normalize(cameraPosition - vW);
+        float rim = pow(1.0 - abs(dot(normalize(vN), V)), 1.6);
+        float s = sin((vUv.y * 7.0 + vUv.x * 2.0 - uT * 1.4) * 6.2831);
+        float streak = smoothstep(0.55, 0.9, s);
+        float edge = smoothstep(0.0, 0.12, vUv.y) * (1.0 - smoothstep(0.7, 1.0, vUv.y));
+        float night = clamp((1.0 - uRimGlobal) * 2.0, 0.0, 1.0);
+        float a = (0.012 + streak * 0.05) * (0.25 + 0.75 * rim) * edge * (1.0 - night * 0.7);
         gl_FragColor = vec4(uColor, a);
       }`,
     transparent: true, depthWrite: false, blending: THREE.AdditiveBlending, side: THREE.DoubleSide, toneMapped: false,
@@ -58,6 +74,7 @@ export function createUpdrafts({ scene, island, particles, veil, quality } = {})
     const geo = new THREE.CylinderGeometry(u.r * 0.85, u.r * 0.55, h, 14, 1, true);
     const m = new THREE.Mesh(geo, mat.clone());
     m.material.uniforms.uColor.value.set(color || '#ffe7b0');
+    m.material.uniforms.uRimGlobal = nightU;   // clone() kopiert Uniforms – der Nachtwert muss live bleiben
     m.position.set(u.x, u.yMin + h / 2, u.z);
     m.renderOrder = 7;
     m.frustumCulled = true;

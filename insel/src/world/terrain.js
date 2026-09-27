@@ -79,8 +79,9 @@ export function createTerrain({ island, veil, quality }) {
     return clamp(occ, 0, 1);
   }
 
-  // ---- Farbe je Eckpunkt. Rückgabe: Glühen; Nebenwirkung: tmp = Farbe, smoothness, facet (Fels-Facetten) ----
-  let smoothness = 0, facet = 0;
+  // ---- Farbe je Eckpunkt. Rückgabe: Glühen; Nebenwirkung: tmp = Farbe, smoothness, facet (Fels-Facetten),
+  //      surfG/surfS/surfP = Anteil Wiese / Sand / Weg für die gemalte Flächenstruktur im Shader ----
+  let smoothness = 0, facet = 0, surfG = 0, surfS = 0, surfP = 0;
   function vertexColor(cx, cz, h, ny) {
     const nz = island.noise.zone(cx / 18, cz / 18);
     const macro = 1 + nz * 0.06;                       // ±6 % Makro-Variation (§7)
@@ -93,11 +94,12 @@ export function createTerrain({ island, veil, quality }) {
     const pw = padWeight(cx, cz);
     const pathW = island.pathWeight(cx, cz);
     let gl = 0;
-    smoothness = 0; facet = 0;
+    smoothness = 0; facet = 0; surfG = 0; surfS = 0; surfP = 0;
     if (dv < vol.rimRadius) {
       tmp.copy(PAL.lavaRock).lerp(PAL.basaltDark, 0.3 + nz * 0.2);
       gl = smoothstep(vol.lavaLevel + 4.5, vol.lavaLevel - 0.5, h);
-      facet = 0.12;
+      facet = 0.06;
+      smoothness = 0.4;
       return gl;
     }
     const wMo = zw[ZONES.length - 1] || 0;   // Moor (letzte Zone)
@@ -108,17 +110,20 @@ export function createTerrain({ island, veil, quality }) {
       if (b && b.kind === 'moor') tmp.copy(PAL.peatDark).lerp(PAL.peat, 0.35);
       else if (b && b.kind === 'quelle') tmp.copy(PAL.mineralWarm).lerp(PAL.mineral, clamp(1 - (b.level - h) / 1.2, 0, 1) * 0.8);
       else if (b && b.kind === 'gezeiten') tmp.copy(PAL.tideRock).lerp(PAL.tideAlgae, 0.3 + nz * 0.2);
-      smoothness = 0.75;
+      smoothness = 0.9;
+      surfS = b ? 0 : 0.7;
     } else if (s === 'moor') {
       const nm = island.noise.detail(cx / 6 + 70, cz / 6 - 30) * 0.5 + 0.5;
       tmp.copy(PAL.peat).lerp(PAL.peatDark, nm * 0.55);
       if (nm > 0.6) tmp.lerp(PAL.moorHeather, smoothstep(0.6, 0.85, nm) * 0.35);
-      smoothness = 0.7;
+      smoothness = 0.92;
+      surfG = 0.5;
     } else if (s === 'sand') {
       // trocken oben, warm in der Mitte, nasse Kante (1 m) an der Wasserlinie
       tmp.copy(PAL.sandWarm).lerp(PAL.sandDry, smoothstep(0.6, 2.2, h));
       tmp.lerp(PAL.sandWet, smoothstep(0.9, 0.15, h));
-      smoothness = 0.9;
+      smoothness = 0.98;
+      surfS = 1;
     } else if (s === 'rock' || s === 'ash') {
       if (s === 'ash' || wVu > 0.5) {
         const top = smoothstep(22, 44, h);
@@ -130,8 +135,10 @@ export function createTerrain({ island, veil, quality }) {
       }
       // Moos-Kante auf flacheren Felsen (Wiese → Fels über die Neigung, §7)
       if (s === 'rock' && h > 3) tmp.lerp(PAL.moss, smoothstep(0.66, 0.8, ny) * 0.5 * (1 - wVu));
-      facet = 0.12;
-      smoothness = 0;
+      // Facetten nur an steilen Klippen; sanfte Hänge (Vulkankegel) weich, sonst wird die Toon-Rampe zum Dreiecks-Mosaik.
+      // Farbvariation je Fläche dezent – die Schichtung malt der Shader
+      facet = 0.06;
+      smoothness = ny > 0.6 ? 0.6 : 0.25;
     } else {
       // Wiese: Zonenmischung, zwei Töne über das Zonenrauschen (kein Zufall je Dreieck)
       grassA.setRGB(0, 0, 0); grassB.setRGB(0, 0, 0);
@@ -159,17 +166,20 @@ export function createTerrain({ island, veil, quality }) {
       // Vulkanhang: trockener nach oben
       if (dv < 80) tmp.lerp(PAL.ash, smoothstep(12, 26, h) * 0.6);
       // Übergang zum Sand (3 m weich)
-      if (h < 3.6) tmp.lerp(PAL.sandWarm, smoothstep(3.6, 1.6, h) * 0.5);
+      const toSand = h < 3.6 ? smoothstep(3.6, 1.6, h) * 0.5 : 0;
+      if (toSand > 0) tmp.lerp(PAL.sandWarm, toSand);
       // steilere Flächen felsiger, mit Moos-Kante
+      const rocky = smoothstep(0.8, 0.74, ny) * 0.4;
       tmp.lerp(PAL.moss, smoothstep(0.86, 0.78, ny) * 0.4);
-      tmp.lerp(PAL.rockDark, smoothstep(0.8, 0.74, ny) * 0.4);
+      tmp.lerp(PAL.rockDark, rocky);
+      surfG = (1 - toSand) * (1 - rocky * 2); surfS = toSand;
       // Moorrand: Gras wird zu Torf und lila Heide
       if (wMo > 0.2) {
         const dm = Math.hypot(cx - moor.x, cz - moor.z);
         tmp.lerp(PAL.peat, smoothstep(moor.r + 4, moor.r - 6, dm) * 0.5 * wMo);
         if (nh > 0.15) tmp.lerp(PAL.moorHeather, smoothstep(0.15, 0.55, nh) * 0.45 * wMo);
       }
-      smoothness = 0.78;
+      smoothness = 0.97;   // Wiese ganz weich: die Rampe malt die Hügel, keine Dreieckskanten
     }
     // Wege (§7): 2.4 m hell mit weichem dunklem Saum, kein Rauschen – über die Klassen hinweg eingemischt
     if (pathW > 0.02 && s !== 'water') {
@@ -178,6 +188,7 @@ export function createTerrain({ island, veil, quality }) {
       tmp.lerp(tmp2, smoothstep(0.05, 0.5, pathW));
       smoothness = Math.max(smoothness, pathW * 0.9);
       facet *= 1 - pathW;
+      surfP = smoothstep(0.05, 0.5, pathW); surfG *= 1 - surfP; surfS *= 1 - surfP;
     }
     // Gezeitenbecken: dunkler, nasser Fels mit Algen auf der Schale
     for (let i = 0; i < tidePools.length; i++) {
@@ -193,16 +204,16 @@ export function createTerrain({ island, veil, quality }) {
     }
     // Plätze (Pads): glatt und ruhig
     smoothness = Math.max(smoothness, pw);
-    if (pw > 0) { tmp.lerp(PAL.path, pw * 0.5); facet *= 1 - pw; }
+    if (pw > 0) { tmp.lerp(PAL.path, pw * 0.5); facet *= 1 - pw; surfP = Math.max(surfP, pw * 0.6); surfG *= 1 - pw * 0.6; surfS *= 1 - pw * 0.6; }
     // Lava-Adern am oberen Kegel
     if (dv < 48 && h > 24 && dv >= vol.rimRadius) {
       const v = veinAt(cx, cz, h);
       if (v > 0.05) tmp.lerp(PAL.lavaRock, v * 0.6);
     }
-    // Makro-Variation + Umgebungsverdeckung (kühl abgedunkelt)
+    // Makro-Variation + Umgebungsverdeckung (kühl abgedunkelt, in Mulden und an Hangfüßen deutlich)
     tmp.multiplyScalar(macro);
     const occ = occlusionAt(cx, cz, h) * (s === 'water' ? 0.4 : 1);
-    if (occ > 0.01) { tmp2.copy(tmp).multiply(PAL.ao).multiplyScalar(1.6); tmp.lerp(tmp2, occ * 0.55); }
+    if (occ > 0.01) { tmp2.copy(tmp).multiply(PAL.ao).multiplyScalar(1.6); tmp.lerp(tmp2, occ * 0.65); }
     return gl;
   }
 
@@ -211,6 +222,7 @@ export function createTerrain({ island, veil, quality }) {
   const vSmooth = new Float32Array(n * n);
   const vFacet = new Float32Array(n * n);
   const vGlow = new Float32Array(n * n);
+  const vSurf = new Float32Array(n * n * 3);
   for (let j = 0; j < n; j++) {
     const z = -half + j * c;
     for (let i = 0; i < n; i++) {
@@ -222,6 +234,7 @@ export function createTerrain({ island, veil, quality }) {
       const g = vertexColor(x, z, h, _sn.y);
       vCol[vi * 3] = tmp.r; vCol[vi * 3 + 1] = tmp.g; vCol[vi * 3 + 2] = tmp.b;
       vSmooth[vi] = smoothness; vFacet[vi] = facet;
+      vSurf[vi * 3] = clamp(surfG, 0, 1); vSurf[vi * 3 + 1] = clamp(surfS, 0, 1); vSurf[vi * 3 + 2] = clamp(surfP, 0, 1);
       vGlow[vi] = Math.max(g, veinAt(x, z, h));
     }
   }
@@ -238,11 +251,14 @@ export function createTerrain({ island, veil, quality }) {
   const nor = new Float32Array(triCount * 9);
   const col = new Float32Array(triCount * 9);
   const glow = new Float32Array(triCount * 3);
+  const surf = new Float32Array(triCount * 9);
   let t = 0;
   const va = new THREE.Vector3(), vb = new THREE.Vector3(), vc = new THREE.Vector3();
   const e1 = new THREE.Vector3(), e2 = new THREE.Vector3(), fn = new THREE.Vector3();
 
   let fi = 0;
+  // Rasterpunkt → Positionen im (nicht indizierten) Puffer, für nachträgliches Einfärben (Kontaktschatten unter Bäumen)
+  const vertRefs = new Array(n * n);
   // Dreieck aus drei Rasterindizes (ia, ja …): Farben/Normalen der Eckpunkte, Facetten-Variation je Fläche auf Fels
   function pushTri(ia, ja, ib, jb, ic, jc) {
     const idx = [ja * n + ia, jb * n + ib, jc * n + ic];
@@ -278,6 +294,8 @@ export function createTerrain({ island, veil, quality }) {
       const r = vCol[vi * 3] + (mr - vCol[vi * 3]) * (1 - sm), g = vCol[vi * 3 + 1] + (mg - vCol[vi * 3 + 1]) * (1 - sm), b = vCol[vi * 3 + 2] + (mb - vCol[vi * 3 + 2]) * (1 - sm);
       col[o + k * 3] = r * fv; col[o + k * 3 + 1] = g * fv; col[o + k * 3 + 2] = b * fv;
       glow[t * 3 + k] = vGlow[vi];
+      (vertRefs[vi] || (vertRefs[vi] = [])).push(o + k * 3);
+      surf[o + k * 3] = vSurf[vi * 3]; surf[o + k * 3 + 1] = vSurf[vi * 3 + 1]; surf[o + k * 3 + 2] = vSurf[vi * 3 + 2];
     }
     t++;
   }
@@ -301,6 +319,7 @@ export function createTerrain({ island, veil, quality }) {
   geo.setAttribute('normal', new THREE.BufferAttribute(nor, 3));
   geo.setAttribute('color', new THREE.BufferAttribute(col, 3));
   geo.setAttribute('aGlow', new THREE.BufferAttribute(glow, 1));
+  geo.setAttribute('aSurf', new THREE.BufferAttribute(surf, 3));
   geo.computeBoundingSphere();
 
   const mat = new THREE.MeshLambertMaterial({ vertexColors: true });
@@ -311,19 +330,50 @@ export function createTerrain({ island, veil, quality }) {
     uniforms: { uLavaColor: lavaColor },
     fragmentPars: `uniform vec3 uLavaColor;
 varying float vGlow;
+varying vec3 vSurf;
 float lumoBlotchH(vec2 p) { vec3 p3 = fract(vec3(p.xyx) * 0.1031); p3 += dot(p3, p3.yzx + 33.33); return fract((p3.x + p3.y) * p3.z); }
 float lumoBlotch(vec2 p) { vec2 i = floor(p), f = fract(p); f = f * f * (3.0 - 2.0 * f); return mix(mix(lumoBlotchH(i), lumoBlotchH(i + vec2(1, 0)), f.x), mix(lumoBlotchH(i + vec2(0, 1)), lumoBlotchH(i + vec2(1, 1)), f.x), f.y); }
+// weiche, aber klare Kante (antialiasiert über die Bildschirmableitung) – „gemalt“, nicht „verrauscht“
+float lumoInk(float v, float th, float w) { float fw = fwidth(v) * 1.2 + w; return smoothstep(th - fw, th + fw, v); }
 `,
     vertex: (s) => s
-      .replace('#include <common>', '#include <common>\nattribute float aGlow;\nvarying float vGlow;')
-      .replace('#include <begin_vertex>', '#include <begin_vertex>\nvGlow = aGlow;'),
-    // Unterwasser-Tönung + zweitonige Kaustik (§5.4), Lava-Glühen
+      .replace('#include <common>', '#include <common>\nattribute float aGlow;\nattribute vec3 aSurf;\nvarying float vGlow;\nvarying vec3 vSurf;')
+      .replace('#include <begin_vertex>', '#include <begin_vertex>\nvGlow = aGlow;\nvSurf = aSurf;'),
+    // Gemalte Flächenstruktur je Materialklasse (§7: drei Töne, klare Formen, kein Rauschen), Unterwasser-Tönung +
+    // zweitonige Kaustik (§5.4), Lava-Glühen
     beforeVeil: /* glsl */`
       {
-        // gemalte Flächen-Variation (±4 %, zwei Skalen) statt Rauschfacetten
         vec2 bp = vVeilPos.xz;
+        // Detail nur in der Nähe (Luftperspektive: die Ferne wird ruhig und flächig)
+        float det = 1.0 - smoothstep(28.0, 80.0, -vFogView.z);
+        // Makro-Variation (±4 %, zwei Skalen)
         float bn = lumoBlotch(bp * 0.16) * 0.6 + lumoBlotch(bp * 0.62 + 3.1) * 0.4;
-        outgoingLight *= 1.0 + (bn - 0.5) * 0.08;
+        vec3 mul = vec3(1.0 + (bn - 0.5) * 0.06);
+        // (ohne Verzweigung: fwidth() braucht einheitlichen Kontrollfluss, sonst undefiniert auf Mobil-GPUs)
+        // Wiese: große Farbflecken in zwei Tönen (dunkler Fleck kühler und satter, ~3 m) + feine Halmstriche
+        float g1 = lumoBlotch(bp * 0.34 + 7.0);
+        float g2 = lumoBlotch(bp * 0.9 - 3.0);
+        float gpatch = lumoInk(g1 * 0.75 + g2 * 0.25, 0.5, 0.04);
+        float strokes = lumoInk(lumoBlotch(vec2(bp.x * 4.0 + g1 * 3.0, bp.y * 0.9 + g2)), 0.66, 0.025);
+        vec3 grassMul = mix(vec3(0.87, 0.93, 0.82), vec3(1.0), gpatch) * (1.0 + strokes * 0.08 * gpatch);
+        // Sand: feine Körnung (klar, wie gestupft) + wenige größere helle Flecken + vereinzelte dunkle Körner
+        float grain = lumoInk(lumoBlotch(bp * 5.5 + 2.0), 0.5, 0.06);
+        float spots = lumoInk(g2, 0.62, 0.05);
+        float grains = step(0.965, lumoBlotchH(floor(bp * 3.0) + 0.5));
+        vec3 sandMul = (vec3(0.97, 0.955, 0.93) + grain * 0.04 + spots * 0.022) - grains * 0.06;
+        // Weg: Kiesel-Zellen (hell auf dunklem Grund)
+        float peb = lumoBlotch(bp * 2.0 + 11.0);
+        vec3 pathMul = mix(vec3(0.935, 0.915, 0.89), vec3(1.0), lumoInk(peb, 0.46, 0.03));
+        // Fels/Asche (alles ohne Wiese/Sand/Weg): gemalte Gesteinsschichten – leicht geneigte Bänder mit Rauschversatz
+        float rockW = clamp(1.0 - vSurf.x - vSurf.y - vSurf.z, 0.0, 1.0) * step(0.2, vVeilPos.y);
+        float strata = lumoInk(sin(vVeilPos.y * 1.7 + g1 * 4.0 + bp.x * 0.05), 0.35, 0.12);
+        vec3 rockMul = mix(vec3(0.9, 0.9, 0.93), vec3(1.0), strata) * (1.0 + (lumoInk(g2, 0.6, 0.05) - 0.5) * 0.05);
+        vec3 m2 = mix(vec3(1.0), grassMul, vSurf.x);
+        m2 = mix(m2, sandMul, vSurf.y);
+        m2 = mix(m2, pathMul, vSurf.z);
+        m2 = mix(m2, rockMul, rockW);
+        mul *= mix(vec3(1.0), m2, det);
+        outgoingLight *= mul;
         float uy = vVeilPos.y;
         if (uy < 0.15) {
           float dd = clamp(-uy / 5.0, 0.0, 1.0);
@@ -349,10 +399,39 @@ float lumoBlotch(vec2 p) { vec2 i = floor(p), f = fract(p); f = f * f * (3.0 - 2
   mesh.matrixAutoUpdate = false;
   mesh.updateMatrix();
 
-  return {
+  // Kontaktschatten (§8.7 sinngemäß für die Welt): Boden unter Kronen, Büschen und Felsen kühl abdunkeln, damit Objekte
+  // „stehen“ statt zu schweben – auch auf „niedrig“ ohne Schattenkarte. Wird von der Vegetation nach dem Setzen aufgerufen.
+  const colAttr = geo.attributes.color;
+  const _ao = PAL.ao;
+  let contactsDirty = false;
+  function darken(x, z, r, amount) {
+    const i0 = Math.max(0, Math.floor((x - r + half) / c)), i1 = Math.min(n - 1, Math.ceil((x + r + half) / c));
+    const j0 = Math.max(0, Math.floor((z - r + half) / c)), j1 = Math.min(n - 1, Math.ceil((z + r + half) / c));
+    for (let j = j0; j <= j1; j++) for (let i = i0; i <= i1; i++) {
+      const d = Math.hypot(-half + i * c - x, -half + j * c - z);
+      if (d >= r) continue;
+      const refs = vertRefs[j * n + i];
+      if (!refs) continue;
+      const k = (1 - smoothstep(r * 0.35, r, d)) * amount;
+      for (let q = 0; q < refs.length; q++) {
+        const o = refs[q];
+        const cr = col[o], cg = col[o + 1], cb = col[o + 2];
+        col[o] = cr + (cr * _ao.r * 1.6 - cr) * k;
+        col[o + 1] = cg + (cg * _ao.g * 1.6 - cg) * k;
+        col[o + 2] = cb + (cb * _ao.b * 1.6 - cb) * k;
+      }
+    }
+    contactsDirty = true;
+  }
+  const terrain = {
     mesh,
     material: mat,
     triangles: triCount,
     lavaColor,
+    // Kontaktschatten unter einem Objekt (Radius m, Stärke 0..1); commit() überträgt gesammelte Änderungen
+    darken,
+    commit() { if (contactsDirty) { colAttr.needsUpdate = true; contactsDirty = false; } },
   };
+  mesh.userData.terrain = terrain;
+  return terrain;
 }

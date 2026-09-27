@@ -22,7 +22,7 @@ export const QUALITY = {
     name: 'medium', label: 'Mittel', pixelRatio: 1.5, shadows: true, shadowSize: 1024,
     vegetation: 0.7, terrainCell: 2.5, drawDistance: 480, waterSegments: 150, antialias: false,
     grassDistance: 80, particles: 0.8,
-    post: true, outline: 0.75, bloom: 0.22, bloomScale: 0.5,
+    post: true, outline: 0.8, bloom: 0.22, bloomScale: 0.5,
   },
   high: {
     name: 'high', label: 'Hoch', pixelRatio: 2, shadows: true, shadowSize: 2048,
@@ -31,6 +31,8 @@ export const QUALITY = {
     post: true, outline: 1.0, bloom: 0.32, bloomScale: 1.0,
   },
 };
+// Kontur-Breite in Gerätepixeln: mindestens 1 px (sonst trifft die Abtastung denselben Texel und die Linie verschwindet)
+const outlinePx = (q, dpr) => Math.max(1, q.outline * dpr);
 export const QUALITY_ORDER = ['low', 'medium', 'high'];
 
 function readSetting() {
@@ -63,8 +65,9 @@ export function detectQuality() {
   return { name: 'high', forced: false, reason: 'desktop', gpu };
 }
 
-// ---- Kontur-Pass (§4): Tiefenkanten (Silhouetten) + Knicke aus der zweiten Tiefenableitung, Farbe = Albedo × 0.38 mit
-// Sättigung × 1.2 (nie schwarz), nachts Richtung #10142E; ab 45–70 m ausgeblendet (Luftperspektive). Läuft im linearen Raum.
+// ---- Kontur-Pass (§4): Tiefenkanten (Silhouetten, auch diagonal abgetastet) + Knicke aus der zweiten Tiefenableitung,
+// Farbe = Albedo × 0.38 mit Sättigung × 1.2 (nie schwarz), nachts Richtung #10142E; ab 60–110 m ausgeblendet
+// (Luftperspektive). Läuft im linearen Raum vor dem Bloom, damit Leuchtendes über die Linie strahlt.
 const OUTLINE_SHADER = {
   uniforms: {
     tDiffuse: { value: null }, tDepth: { value: null }, uTexel: { value: new THREE.Vector2(1 / 1024, 1 / 1024) },
@@ -87,21 +90,25 @@ const OUTLINE_SHADER = {
       vec2 o = uTexel * uThick;
       float dl = linD(vUv - vec2(o.x, 0.0)), dr = linD(vUv + vec2(o.x, 0.0));
       float du = linD(vUv + vec2(0.0, o.y)), dd = linD(vUv - vec2(0.0, o.y));
+      vec2 od = o * 0.7071;
+      float d1a = linD(vUv + od), d1b = linD(vUv - od), d2a = linD(vUv + vec2(od.x, -od.y)), d2b = linD(vUv + vec2(-od.x, od.y));
       // Silhouette: ein Nachbar liegt deutlich weiter hinten → dieses Pixel liegt am Rand des näheren Objekts
-      float dmax = max(max(dl, dr), max(du, dd));
-      float jump = (dmax - dc) / (dc * 0.045 + 0.25);
-      float edge = smoothstep(1.0, 2.2, jump);
+      float dmax = max(max(max(dl, dr), max(du, dd)), max(max(d1a, d1b), max(d2a, d2b)));
+      float jump = (dmax - dc) / (dc * 0.04 + 0.22);
+      float edge = smoothstep(0.9, 2.0, jump);
       // Knicke (Dachkanten, Kisten, Klippenkanten): zweite Ableitung der Tiefe, relativ zur ersten
       float d2 = abs(dl + dr - 2.0 * dc) + abs(du + dd - 2.0 * dc);
       float d1 = abs(dr - dl) + abs(du - dd);
       float crease = d2 / (d1 * 0.35 + dc * 0.012 + 0.02);
-      edge = max(edge, smoothstep(1.2, 2.4, crease) * 0.7);
-      float fade = 1.0 - smoothstep(45.0, 70.0, dc);
+      edge = max(edge, smoothstep(1.2, 2.4, crease) * 0.65);
+      float fade = 1.0 - smoothstep(60.0, 110.0, dc);
       edge *= fade * uStrength;
       float l = dot(c.rgb, vec3(0.299, 0.587, 0.114));
-      vec3 oc = max(mix(vec3(l), c.rgb, 1.2), vec3(0.0)) * 0.13;
+      vec3 oc = max(mix(vec3(l), c.rgb, 1.25), vec3(0.0)) * 0.12;
       oc = max(oc, vec3(0.0025));
       oc = mix(oc, vec3(0.0052, 0.0070, 0.0273), uNight * 0.4);
+      // Leuchtendes (über 1.0) bekommt keine Kontur
+      edge *= 1.0 - smoothstep(0.9, 1.4, max(c.r, max(c.g, c.b)));
       gl_FragColor = vec4(mix(c.rgb, oc, edge), c.a);
     }`,
 };
@@ -115,12 +122,13 @@ class OutlinePass extends ShaderPass {
 }
 
 // ---- Abschluss-Pass: Tone-Mapping + sRGB (wie OutputPass), danach Farbkorrektur (dieselbe Formel wie lumoGrade in den
-// Materialien, aber fürs ganze Bild inkl. Sprites/Partikel), weiche Vignette, Dithering.
+// Materialien, aber fürs ganze Bild inkl. Sprites/Partikel), weiche S-Kurve (gemalter Kontrast: satte Schatten, klare
+// Lichter, Mitten unverändert), weiche Vignette, Dithering.
 const FINAL_SHADER = {
   uniforms: {
     tDiffuse: { value: null }, toneMappingExposure: { value: 1 },
     uGradeLift: { value: new THREE.Vector3() }, uGradeGain: { value: new THREE.Vector3(1, 1, 1) }, uGradeSat: { value: 1 }, uGradeContrast: { value: 1 },
-    uVignette: { value: 0.22 }, uTime: { value: 0 },
+    uVignette: { value: 0.24 }, uCurve: { value: 0.26 }, uTime: { value: 0 },
   },
   vertexShader: /* glsl */`
     varying vec2 vUv;
@@ -128,7 +136,7 @@ const FINAL_SHADER = {
   fragmentShader: /* glsl */`
     uniform sampler2D tDiffuse;
     uniform vec3 uGradeLift; uniform vec3 uGradeGain; uniform float uGradeSat; uniform float uGradeContrast;
-    uniform float uVignette; uniform float uTime;
+    uniform float uVignette; uniform float uCurve; uniform float uTime;
     varying vec2 vUv;
     #include <tonemapping_pars_fragment>
     float hash12(vec2 p) { vec3 p3 = fract(vec3(p.xyx) * 0.1031); p3 += dot(p3, p3.yzx + 33.33); return fract((p3.x + p3.y) * p3.z); }
@@ -142,12 +150,16 @@ const FINAL_SHADER = {
         c.rgb = NeutralToneMapping(c.rgb);
       #endif
       c = sRGBTransferOETF(c);
+      // S-Kurve: Schatten satter, Lichter klarer; ganz dunkle Töne bleiben lesbar (weicher Fuß, nie reines Schwarz)
+      vec3 s3 = c.rgb * c.rgb * (3.0 - 2.0 * c.rgb);
+      s3 = max(s3, c.rgb * 0.72);
+      c.rgb = mix(c.rgb, s3, uCurve);
       float l = dot(c.rgb, vec3(0.299, 0.587, 0.114));
       c.rgb = mix(vec3(l), c.rgb, uGradeSat);
       c.rgb = (c.rgb - 0.5) * uGradeContrast + 0.5;
       c.rgb = c.rgb * uGradeGain + uGradeLift * (1.0 - l);
       vec2 q = vUv - 0.5;
-      float vig = 1.0 - smoothstep(0.18, 0.6, dot(q, q)) * uVignette;
+      float vig = 1.0 - smoothstep(0.16, 0.62, dot(q, q)) * uVignette;
       c.rgb *= vig;
       c.rgb += (hash12(gl_FragCoord.xy + fract(uTime) * 3.0) - 0.5) * (1.5 / 255.0);
       gl_FragColor = clamp(c, 0.0, 1.0);
@@ -200,7 +212,7 @@ export function createRenderer({ canvas, quality: qInfo, events }) {
     composer.setSize(size.w, size.h);
     composer.addPass(new RenderPass(post.scene, post.camera));
     const outline = new OutlinePass();
-    outline.uniforms.uThick.value = q.outline * dpr * 0.85;
+    outline.uniforms.uThick.value = outlinePx(q, dpr);
     outline.uniforms.uStrength.value = q.outline > 0 ? 1 : 0;
     outline.uniforms.uNear.value = post.camera.near; outline.uniforms.uFar.value = post.camera.far;
     outline.enabled = q.outline > 0;
@@ -246,7 +258,7 @@ export function createRenderer({ canvas, quality: qInfo, events }) {
     if (post.composer) {
       post.composer.setPixelRatio(dpr);
       post.composer.setSize(m.w, m.h);
-      if (post.outline) post.outline.uniforms.uThick.value = q.outline * dpr * 0.85;
+      if (post.outline) post.outline.uniforms.uThick.value = outlinePx(q, dpr);
     }
     resizeCbs.forEach((cb) => cb(size));
     events && events.emit('resize', size);

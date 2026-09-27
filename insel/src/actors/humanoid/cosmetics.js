@@ -129,8 +129,9 @@ export function buildBackItem(cfg, P, W = 1, { straps = true, body = true } = {}
     const T = M.torso, x = s * 0.1 * W;
     // Tiefe der Rumpffläche an der Riemenposition x (Ellipse), damit der Riemen anliegt
     const zf = (y) => { const r = torsoRadius(y, W); return r.zr * Math.sqrt(Math.max(0.1, 1 - (x / r.xr) ** 2)); };
-    const pts = [new THREE.Vector3(x, T * 0.42, zf(T * 0.42) + 0.006), new THREE.Vector3(x, T * 0.72, zf(T * 0.72) + 0.007), new THREE.Vector3(x, T - 0.06, zf(T - 0.06) + 0.006), new THREE.Vector3(x, T + 0.005, 0.0), new THREE.Vector3(x, T - 0.06, -zf(T - 0.06) - 0.006), new THREE.Vector3(x, T * 0.62, -zf(T * 0.62) - 0.01)];
-    P.push(fig(tube(pts, pts.map(() => 0.015), { segs: 6, flat: 0.35, flatDir: new THREE.Vector3(0, 0, 1) }), { color: darker(ac, 0.55) }));
+    // schmale, gedeckte Riemen (kein „Hosenträger“-Look): Akzentfarbe stark abgedunkelt und entsättigt
+    const pts = [new THREE.Vector3(x, T * 0.46, zf(T * 0.46) + 0.005), new THREE.Vector3(x, T * 0.74, zf(T * 0.74) + 0.006), new THREE.Vector3(x, T - 0.06, zf(T - 0.06) + 0.005), new THREE.Vector3(x, T + 0.004, 0.0), new THREE.Vector3(x, T - 0.06, -zf(T - 0.06) - 0.005), new THREE.Vector3(x, T * 0.62, -zf(T * 0.62) - 0.01)];
+    P.push(fig(tube(pts, pts.map(() => 0.012), { segs: 6, flat: 0.3, flatDir: new THREE.Vector3(0, 0, 1) }), { hull: 0.5, color: mixHex(darker(ac, 0.5), '#3a3a46', 0.5) }));
   }
   if (body) { const b = buildBackpack(cfg, W); b.geo.translate(b.pivot[0], b.pivot[1], b.pivot[2]); P.push(b.geo); }
 }
@@ -139,7 +140,7 @@ export function buildBackpack(cfg, W = 1) {
   const pivot = [0, M.torso * 0.74, -0.09 * W];
   // Geometrie relativ zum Drehpunkt (oben am Rücken)
   const P = [
-    fig(new RoundedBoxGeometry(0.26 * W, 0.33, 0.14, 2, 0.04), { pos: [0, -0.15, -0.085], color: (x, y, z, out) => out.set(ac).multiplyScalar(z < -0.05 && y < 0.1 ? 1 : 0.94) }),
+    fig(new RoundedBoxGeometry(0.26 * W, 0.33, 0.14, 1, 0.04), { pos: [0, -0.15, -0.085], color: (x, y, z, out) => out.set(ac).multiplyScalar(z < -0.05 && y < 0.1 ? 1 : 0.94) }),
     fig(new RoundedBoxGeometry(0.22 * W, 0.11, 0.05, 1, 0.015), { pos: [0, -0.24, -0.15], color: darker(ac, 0.8) }),
     fig(new RoundedBoxGeometry(0.27 * W, 0.1, 0.16, 1, 0.03), { pos: [0, -0.04, -0.09], color: darker(ac, 0.85) }),
     fig(new THREE.TorusGeometry(0.03, 0.007, 5, 10, Math.PI), { pos: [0, 0.015, -0.09], rot: [0, 0, 0], color: darker(ac, 0.6) }),

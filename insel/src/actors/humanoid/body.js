@@ -48,10 +48,10 @@ export function buildTorso(cfg, W = buildWidth(cfg.build)) {
     // Haut über dem Tanktop ist im Rumpf gefärbt; die Träger als Bänder
     for (const s of [-1, 1]) for (const f of [-1, 1]) P.push(fig(new RoundedBoxGeometry(0.036, 0.15, 0.014, 2, 0.006), { pos: [s * 0.1 * W, T - 0.075, f * 0.085 * W], rot: [f * 0.28, 0, s * -0.1], color: top }));
   }
-  // Schultern (weich, unter dem Ärmelansatz)
-  for (const s of [-1, 1]) P.push(fig(sphere(0.068, 10, 7), { pos: [s * 0.205 * W, T - 0.058, 0], scale: [1.05 * W, 0.82, 0.95 * W], flag: tank ? FLAG.skin : FLAG.cloth, color: tank ? cfg.skin : (x, y, z, out) => base(x * 2.6, T - 0.06, z, out) }));
-  // Hals
-  P.push(fig(capsule(0.053, 0.06, 0.14, { segs: 10, topCap: false, botCap: false }), { pos: [0, T + 0.08, 0], flag: FLAG.skin, color: (x, y, z, out) => out.set(cfg.skin).multiplyScalar(y < -0.06 ? 0.9 : 1) }));
+  // Schultern: kleine Deltoid-Wölbung, die den Ärmelansatz füllt, ohne über die Ärmel zu ragen (keine „Schulterpolster“)
+  for (const s of [-1, 1]) P.push(fig(sphere(0.06, 10, 7), { pos: [s * 0.212 * W, T - 0.074, 0], scale: [1.0 * W, 0.78, 0.92 * W], flag: tank ? FLAG.skin : FLAG.cloth, hull: 0.5, color: tank ? cfg.skin : (x, y, z, out) => base(x * 2.6, T - 0.06, z, out) }));
+  // Hals: kurz und kräftig (Anime-Teen), unter dem Kinn leicht beschattet
+  P.push(fig(capsule(0.058, 0.066, 0.1, { segs: 12, topCap: false, botCap: false }), { pos: [0, T + 0.075, 0.004], flag: FLAG.skin, color: (x, y, z, out) => out.set(cfg.skin).multiplyScalar(y > -0.045 ? 0.9 : 1) }));
   if (cfg.vitiligo) P.push(fig(new THREE.CircleGeometry(0.02, 8), { pos: [0.035, T + 0.04, 0.05], rot: [0, 0.6, 0], flag: FLAG.skin, color: mixHex(cfg.skin, '#f8ede2', 0.7) }));
   if (style === 'hoodie') {
     // Kapuze im Nacken als deutliches Volumen (wenn nicht aufgesetzt), Kordeln weiß, Bauchtasche
@@ -59,8 +59,8 @@ export function buildTorso(cfg, W = buildWidth(cfg.build)) {
       P.push(fig(new THREE.TorusGeometry(0.1, 0.045, 7, 14, Math.PI * 1.25), { pos: [0, T + 0.01, -0.035 * W], rot: [Math.PI / 2 + 0.35, 0, Math.PI * 0.875], scale: [1.35 * W, 1.1, 1], color: dark }));
       P.push(fig(sphere(0.09, 10, 7), { pos: [0, T - 0.05, -0.14 * W], scale: [1.35 * W, 0.7, 0.75], color: dark, deform: (v) => { if (v.y > 0) v.y *= 0.7; } }));
     }
-    P.push(fig(new THREE.TorusGeometry(0.078, 0.02, 6, 16, Math.PI * 1.4), { pos: [0, T + 0.0, 0.0], rot: [Math.PI / 2, 0, Math.PI * 0.8], scale: [1.15 * W, 1, 0.95], color: dark }));
-    for (const s of [-1, 1]) P.push(fig(capsule(0.0055, 0.006, 0.13, { segs: 6, caps: 2 }), { pos: [s * 0.034, T - 0.04, fz(T - 0.08, 0.008)], rot: [-0.1, 0, s * 0.05], color: '#ffffff' }));
+    P.push(fig(new THREE.TorusGeometry(0.072, 0.021, 6, 16, Math.PI * 1.4), { pos: [0, T + 0.004, 0.004], rot: [Math.PI / 2, 0, Math.PI * 0.8], scale: [1.12 * W, 1, 0.95], color: dark }));
+    for (const s of [-1, 1]) P.push(fig(capsule(0.005, 0.0055, 0.1, { segs: 6, caps: 2 }), { pos: [s * 0.03, T - 0.035, fz(T - 0.07, 0.008)], rot: [-0.1, 0, s * 0.06], hull: 0.4, color: '#ffffff' }));
     P.push(fig(new RoundedBoxGeometry(0.2 * W, 0.11, 0.03, 1, 0.01), { pos: [0, 0.14, fz(0.14, 0.008)], rot: [0.1, 0, 0], color: (x, y, z, out) => out.set(dark).multiplyScalar(y > 0.045 ? 0.9 : 1) }));
   } else if (style === 'tshirt') {
     P.push(fig(new THREE.TorusGeometry(0.058, 0.011, 6, 14), { pos: [0, T - 0.005, 0.012], rot: [Math.PI / 2, 0, 0], scale: [1.1, 1, 0.85], color: dark }));
@@ -220,34 +220,30 @@ export function buildHand(cfg, side, kind = 'open', W = buildWidth(cfg.build)) {
     }
     return merge(P);
   }
+  // Anime-Hand: kompakt, weiche Handfläche (abgerundeter Block), kurze kräftige Finger dicht beieinander, Daumen innen
   const skin = cfg.skin, flag = FLAG.skin;
-  const palmW = 0.068 * W;
-  const palm = (h, d, y) => fig(sphere(0.5, 8, 6), { pos: [0, y, 0], scale: [palmW * 1.05, h * 1.1, d * 1.15], flag, color: skin, deform: (v) => { v.y *= 1 + Math.max(0, -v.y) * 0.15; } });
-  const finger = (x, y, z, len, r, rot, curl = 0) => fig(capsule(r, r * 0.86, len, { segs: 6, caps: 2 }), { pos: [x, y, z], rot, flag, color: skin, deform: (v) => { if (curl) v.z -= Math.max(0, -v.y) * curl; } });
-  if (kind === 'fist') {
-    // Faust: kompakter Block, Knöchelreihe vorn, Daumen quer davor
-    const P = [palm(0.062, 0.05, -0.04)];
-    for (let i = 0; i < 4; i++) P.push(fig(sphere(0.0125, 8, 6), { pos: [(i - 1.5) * 0.017 * W, -0.072, -0.008], flag, color: skin }));
-    P.push(fig(sphere(0.017, 8, 6), { pos: [0, -0.078, 0.012], scale: [1.8 * W, 0.75, 0.9], flag, color: skin }));
-    P.push(finger(-s * 0.02 * W, -0.028, 0.02, 0.04, 0.0105, [-0.9, 0, -s * 1.1]));
+  const palmW = 0.062 * W;
+  const wrist = () => fig(sphere(0.024, 8, 5), { pos: [0, -0.006, 0], scale: [1.15 * W, 0.7, 0.95], flag, color: skin });
+  const palm = (h, d, y, taper = 0.12) => fig(new RoundedBoxGeometry(palmW, h, d, 1, Math.min(0.012, d * 0.45)), { pos: [0, y, 0], flag, color: skin, deform: (v) => { v.x *= 1 + (v.y / h) * taper * -1; } });
+  const finger = (x, y, z, len, r, rot, curl = 0) => fig(capsule(r, r * 0.88, len, { segs: 6, caps: 2 }), { pos: [x, y, z], rot, flag, hull: 0.6, color: skin, deform: (v) => { if (curl) v.z -= Math.max(0, -v.y) * curl * (0.5 + 0.5 * Math.max(0, -v.y) / len); } });
+  if (kind === 'fist' || kind === 'thumb') {
+    // Faust: kompakter Block, Knöchelreihe oben, gefaltete Finger vorn, Daumen quer davor (oder nach vorn gestreckt)
+    const P = [wrist(), palm(0.054, 0.036, -0.03)];
+    for (let i = 0; i < 4; i++) P.push(fig(sphere(0.0122, 8, 6), { pos: [(i - 1.5) * 0.0155 * W, -0.06, -0.006], flag, hull: 0.5, color: skin }));
+    P.push(fig(new RoundedBoxGeometry(palmW * 0.96, 0.03, 0.028, 1, 0.011), { pos: [0, -0.07, 0.008], flag, color: skin }));
+    if (kind === 'fist') P.push(finger(-s * 0.02 * W, -0.036, 0.022, 0.04, 0.0105, [-1.0, 0, -s * 1.15]));
+    else P.push(finger(-s * 0.026 * W, -0.018, 0.012, 0.052, 0.011, [-Math.PI / 2 + 0.25, 0, -s * 0.25]));
     return merge(P);
   }
-  if (kind === 'thumb') {
-    const P = [palm(0.062, 0.05, -0.04)];
-    for (let i = 0; i < 4; i++) P.push(fig(sphere(0.0125, 8, 6), { pos: [(i - 1.5) * 0.017 * W, -0.072, -0.008], flag, color: skin }));
-    P.push(fig(sphere(0.017, 8, 6), { pos: [0, -0.078, 0.012], scale: [1.8 * W, 0.75, 0.9], flag, color: skin }));
-    P.push(finger(-s * 0.02 * W, -0.02, 0.012, 0.055, 0.011, [-Math.PI / 2 + 0.25, 0, -s * 0.25]));
-    return merge(P);
-  }
-  // offen: Handfläche, vier Finger (leicht gespreizt und gekrümmt), Daumen innen; „stop“: Finger gerade und zusammen
+  // offen: leicht gekrümmte Finger (entspannt), „stop“: Finger gerade und zusammen
   const stop = kind === 'stop';
-  const P = [palm(0.074, 0.03, -0.04)];
+  const P = [wrist(), palm(0.064, 0.03, -0.034)];
+  const lens = [0.036, 0.042, 0.04, 0.032];
   for (let i = 0; i < 4; i++) {
     const u = i - 1.5;
-    const len = 0.05 * (i === 0 || i === 3 ? 0.85 : 1);
-    P.push(finger(u * (stop ? 0.0155 : 0.0165) * W, -0.07, 0.0, len, 0.0092, [stop ? 0 : 0.18, 0, stop ? 0 : u * 0.07], stop ? 0 : 0.35));
+    P.push(finger(u * (stop ? 0.0148 : 0.0158) * W, -0.064, 0.001, lens[i], 0.0098, [stop ? 0 : 0.22, 0, stop ? 0 : u * 0.06], stop ? 0 : 0.5));
   }
-  P.push(finger(-s * 0.03 * W, -0.028, 0.006, 0.045, 0.0105, [stop ? 0.1 : -0.35, 0, -s * (stop ? 0.5 : 0.85)]));
-  if (cfg.vitiligo && !side) P.push(fig(new THREE.CircleGeometry(0.012, 8), { pos: [0, -0.042, 0.016], flag, color: mixHex(skin, '#f8ede2', 0.7) }));
+  P.push(finger(-s * 0.03 * W, -0.028, 0.008, 0.042, 0.0108, [stop ? 0.1 : -0.45, 0, -s * (stop ? 0.45 : 0.85)]));
+  if (cfg.vitiligo && !side) P.push(fig(new THREE.CircleGeometry(0.011, 8), { pos: [0, -0.04, 0.0165], flag, hull: 0, color: mixHex(skin, '#f8ede2', 0.7) }));
   return merge(P);
 }

@@ -14,7 +14,7 @@ const BODY_LOOK = {
 };
 
 const TEX_HALF = 256;
-const DAY = { shallow: new THREE.Color('#37e0cf'), mid: new THREE.Color('#12a6cc'), deep: new THREE.Color('#0b4a94') };
+const DAY = { shallow: new THREE.Color('#3ae4d2'), mid: new THREE.Color('#14aad2'), deep: new THREE.Color('#0d52a8') };
 const NIGHT = { shallow: new THREE.Color('#1a6a78'), mid: new THREE.Color('#0d3a5a'), deep: new THREE.Color('#061c3a') };
 
 const OCEAN_VERT = /* glsl */`
@@ -92,10 +92,20 @@ void main() {
   // Licht: zweistufig (Toon), Schattenseite der Wellen kühl
   float ndl = dot(N, uSunDir);
   float band = smoothstep(0.25, 0.4, ndl);
-  col *= uAmbient + uSunColor * (0.42 + 0.5 * band);
-  // Reflexband: Horizontfarbe bei streifendem Blick (Fresnel 0.35)
+  col *= uAmbient + uSunColor * (0.42 + 0.5 * band) * lumoCloudShadow(vWorld.xz);
+  // Gemalte Wellenlichter (§5.4): helle, klar begrenzte Streifen auf der Fläche, nur nahe der Kamera, treiben langsam
+  {
+    float wl1 = vnoise(vWorld.xz * vec2(0.22, 0.55) + vec2(uTime * 0.11, -uTime * 0.07));
+    float wl2 = vnoise(vWorld.xz * vec2(0.6, 0.18) - vec2(uTime * 0.05, uTime * 0.09));
+    float wl = wl1 * 0.6 + wl2 * 0.4;
+    float wlw = fwidth(wl) * 1.2 + 0.02;
+    float streak = smoothstep(0.56 - wlw, 0.56 + wlw, wl) * (1.0 - smoothstep(0.64, 0.72, wl));
+    streak *= (1.0 - smoothstep(50.0, 130.0, dist)) * smoothstep(0.4, 2.0, depth);
+    col = mix(col, col * 1.32 + uSunColor * 0.08, streak * 0.85);
+  }
+  // Reflexband: Horizontfarbe bei streifendem Blick (Fresnel 0.28), damit die Farbe der Tiefe erhalten bleibt
   float fres = pow(1.0 - max(dot(N, V), 0.0), 4.0);
-  col = mix(col, mix(uHorizonColor, uSkyColor, 0.35), clamp(fres * 0.6, 0.0, 0.35));
+  col = mix(col, mix(uHorizonColor, uSkyColor, 0.4), clamp(fres * 0.5, 0.0, 0.28));
   // Sonnenpfad + Funkeln (harte Punkte)
   vec3 Hh = normalize(uSunDir + V);
   float spec = pow(max(dot(N, Hh), 0.0), 220.0);

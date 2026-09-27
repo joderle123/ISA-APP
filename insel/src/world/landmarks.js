@@ -121,6 +121,7 @@ export function createLandmarks({ island, veil, colliders, scene, quality }) {
   tower.castShadow = true; tower.receiveShadow = true;
   group.add(tower);
   const glassMat = new THREE.MeshLambertMaterial({ color: '#5a6275', emissive: new THREE.Color('#fff1b8'), emissiveIntensity: 0.0, transparent: true, opacity: 0.85 });
+  veil.patch(glassMat, { key: 'lh-glass', ramp: 'glow' });   // Leuchtturm-Glas: leuchtet über 1.0 (Bloom), im Schleier gedämpft
   const glass = new THREE.Mesh(new THREE.CylinderGeometry(1.15, 1.15, 1.7, 10, 1), glassMat);
   glass.position.set(L.x, ly - 0.2 + towerH + 1.4, L.z);
   group.add(glass);

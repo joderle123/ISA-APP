@@ -1,6 +1,9 @@
 // Geometrie-Werkzeuge der Figur (Stil-Bibel §8): weiche, verschweißte Formen statt Low-Poly-Facetten.
 //   fig(geo, opts)      wie world/geom part(), aber mit weichen Normalen (Nähte verschweißt), Farben im LOKALEN Raum des Teils
 //                       (vor pos/rot/scale) und Flächen-Flag (opts.flag: 0 Stoff · 1 Haut · 2 flach/unbeleuchtet) im Attribut aWind.
+//                       opts.hull (0…1, Standard 1; flache Teile 0) = Breitenfaktor der Kontur-Hülle je Vertex – Haarsträhnen
+//                       bekommen so dünne Innenlinien, die Silhouette bleibt voll. Er liegt im Nachkommateil von aWind
+//                       (flag + 0.45·hull), damit er auch das Impostor-Backen (world/geom merge) übersteht.
 //   capsule(rTop, rBot, len)   Kapsel mit Kugelkappen um y = 0 (oben) und y = −len (unten) – Gelenkkugeln überlappen nahtlos
 //   lathe(profile, segs)       Drehform aus [[r, y], …]
 //   tube(points, radii, opts)  verjüngter Schlauch entlang einer Kurve (Haarsträhnen, Zöpfe); radii[last] = 0 → Spitze
@@ -14,6 +17,8 @@ import { merge } from '../../world/geom.js';
 
 export { merge, RoundedBoxGeometry };
 export const FLAG = { cloth: 0, skin: 1, flat: 2 };
+// Hüllenfaktor ↔ aWind: flag + HULL_SCALE·hull (hull 0…1); base.js liest fract(aWind) / HULL_SCALE
+export const HULL_SCALE = 0.45;
 
 const _m = new THREE.Matrix4(), _q = new THREE.Quaternion(), _e = new THREE.Euler(), _c = new THREE.Color(), _v = new THREE.Vector3(), _s = new THREE.Vector3(), _p = new THREE.Vector3();
 
@@ -42,7 +47,8 @@ export function fig(geo, opts = {}) {
   // Farben im lokalen Raum (vor der Transformation)
   const n = pa.count;
   const col = new Float32Array(n * 3);
-  const flag = new Float32Array(n).fill(opts.flag || 0);
+  const hullK = opts.hull === undefined ? (opts.flag === FLAG.flat ? 0 : 1) : Math.max(0, Math.min(1, opts.hull));
+  const flag = new Float32Array(n).fill((opts.flag || 0) + HULL_SCALE * hullK);
   const colorAt = (i) => {
     const x = pa.getX(i), y = pa.getY(i), z = pa.getZ(i);
     if (typeof opts.color === 'function') opts.color(x, y, z, _c, i); else _c.set(opts.color !== undefined ? opts.color : 0xffffff);
@@ -153,10 +159,17 @@ export function flat(points, { z = 0, center = null } = {}) {
   g.setIndex(idx);
   return g;
 }
-export function circle(r, segs = 12, { ry = r, cx = 0, cy = 0, z = 0 } = {}) {
+export function circle(r, segs = 12, { ry = r, cx = 0, cy = 0, z = 0, clampY = null } = {}) {
   const pts = [];
-  for (let i = 0; i < segs; i++) { const a = (i / segs) * Math.PI * 2; pts.push([cx + Math.cos(a) * r, cy + Math.sin(a) * ry]); }
+  for (let i = 0; i < segs; i++) { const a = (i / segs) * Math.PI * 2; const x = cx + Math.cos(a) * r; let y = cy + Math.sin(a) * ry; if (clampY) y = clampY(x, y); pts.push([x, y]); }
   return flat(pts, { z, center: [cx, cy] });
+}
+// Fläche zwischen zwei Kurven top(x) ≥ bot(x) über x0…x1 (Augenweiß, Lider): geschlossenes Polygon als Fächer
+export function lens(x0, x1, top, bot, segs = 14) {
+  const pts = [];
+  for (let i = 0; i <= segs; i++) { const x = x0 + (x1 - x0) * (i / segs); pts.push([x, bot(x)]); }
+  for (let i = segs; i >= 0; i--) { const x = x0 + (x1 - x0) * (i / segs); pts.push([x, top(x)]); }
+  return flat(pts);
 }
 // Mandel: oben runder (hUp) als unten (hDown), leichte Neigung tilt (rad, äußerer Winkel höher), Breite w
 export function almondPts(w, hUp, hDown, segs = 16, tilt = 0, s = 1) {
@@ -191,11 +204,11 @@ export function band(x0, x1, f, th, segs = 10, z = 0) {
   g.setIndex(idx);
   return g;
 }
-// Polygon mit Rand/Kern-Farbverlauf (für Iris): innere Scheibe + Ring als ein Teil
-export function ringGrad(rIn, rOut, segs = 14, { cx = 0, cy = 0, z = 0 } = {}) {
+// Ring (für Iris-Rand): innerer und äußerer Kreis/Ellipse (ry = Höhenradius), Punkte können mit clampY beschnitten werden
+export function ringGrad(rIn, rOut, segs = 14, { cx = 0, cy = 0, z = 0, ry = 1, clampY = null } = {}) {
   const pos = [], idx = [];
-  for (let i = 0; i < segs; i++) { const a = (i / segs) * Math.PI * 2; pos.push(cx + Math.cos(a) * rIn, cy + Math.sin(a) * rIn, z); }
-  for (let i = 0; i < segs; i++) { const a = (i / segs) * Math.PI * 2; pos.push(cx + Math.cos(a) * rOut, cy + Math.sin(a) * rOut, z); }
+  const put = (r) => { for (let i = 0; i < segs; i++) { const a = (i / segs) * Math.PI * 2; let x = cx + Math.cos(a) * r, y = cy + Math.sin(a) * r * ry; if (clampY) y = clampY(x, y); pos.push(x, y, z); } };
+  put(rIn); put(rOut);
   for (let i = 0; i < segs; i++) { const j = (i + 1) % segs; idx.push(i, segs + i, segs + j, i, segs + j, j); }
   const g = new THREE.BufferGeometry();
   g.setAttribute('position', new THREE.Float32BufferAttribute(pos, 3));

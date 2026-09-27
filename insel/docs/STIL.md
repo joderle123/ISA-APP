@@ -516,3 +516,48 @@ Umgesetzt in `engine/renderer.js`, `world/veil.js`, `world/sky.js`, `world/terra
 - **§10.3:** Duotone-Schleier (`lumoApplyVeil`), Nebelwand am Zonen-/Fleckenrand (`veilfx.walls`).
 - **§13 Post-Stack:** `rr.attachPost({ scene, camera, veil })`, `rr.render()`; niedrig rendert direkt (Farbkorrektur/Nebel im Material, `uLumoPost = 0`), mittel/hoch: RenderPass → Kontur → Bloom → Abschluss (Neutral-Tone-Mapping, sRGB, Grade aus `veil.uniforms`, Vignette 0.22, Dithering) → FXAA. `renderer.render(scene, camera)` von außen läuft durch den Stack; `renderer.info` zählt alle Pässe eines Bildes (`autoReset = false`).
 - **Tone-Mapping:** `NeutralToneMapping` statt ACES (Paletten bleiben gesättigt).
+
+### 16.1 Zweite Runde (27.09., Screenshot-Vergleich `shots/art/p1_…p5_`)
+
+Befund der ersten Runde: Boden = konturlose, matschige Fläche (weiche Schattenblobs + Höhennebel schon ab 4 m + keine
+Flächenstruktur), Konturen bei 0.64 px praktisch unsichtbar, Gras als dunkle Sprenkel, harte dunkle Bande am Meereshorizont
+(Nebel-Deckel wirkte auch aufs Meer), Wolken als flache Creme-Klumpen. „Niedrig“ wirkte schärfer als „mittel“.
+
+- **Konturen (`renderer.js`):** Breite = `max(1, outline × DPR)` Gerätepixel (mittel 0.8, hoch 1.0), acht Abtastrichtungen
+  (auch diagonal), Ausblendung 60–110 m, keine Kontur auf Leuchtendem (> 1.0 linear).
+- **Abschluss-Pass:** S-Kurve auf der Helligkeit (`uCurve` 0.26, weicher Fuß `max(s, c × 0.72)`, nie reines Schwarz),
+  Vignette 0.24.
+- **Dunst (`veil.js lumoFog`):** Nebelkurve flach (`f²(2−f)`: Mitteldistanz bleibt kontrastreich), Höhennebel unter 3 m
+  erst ab 25–90 m Abstand (Strand/Steg nahe der Kamera klar), Nebel-Deckel nach Höhe: am Meeresspiegel 1.0 (nahtloser
+  Horizont), ab 5–40 m Höhe `uFogMax` 0.72 × `gLumoFogCap` je Material (Silhouetten). `scene.fog.near` = 0.3 × Sichtweite.
+- **Licht (`sky.js`):** Schattenkarte `radius` 1.5 (mittel) / 2 (hoch) – klare Toon-Schattenformen; Hemisphäre tags
+  2.15–2.35 (vorher 2.5–2.9) für satteres Schattenband, goldene Stunde kühler (`#7062B8`); Wolken-Eigenleuchten 0.3
+  (zwei Töne lesbar). **Wolkenschatten:** `uCloudAmt` (tags 0.3, nachts 0) × `lumoCloudShadow(xz)` (VEIL_GLSL) auf dem
+  Sonnenanteil aller Lambert-/Toon-Materialien und des Wassers – große weiche Flecken ziehen über die Insel.
+- **Gelände (`terrain.js`):** Attribut `aSurf` (Wiese · Sand · Weg) und gemalte Flächenstruktur im Fragment, nur bis
+  28–80 m: Wiese = große zweitonige Farbflecken (~3 m, dunkler Fleck kühler/satter) + feine Halmstriche, Sand = klare
+  Körnung + wenige helle Flecken + einzelne dunkle Körner, Weg = Kiesel-Zellen; Kanten über `fwidth` antialiasiert
+  (`lumoInk`). Umgebungsverdeckung 0.65. **Kontaktschatten:** `terrain.darken(x, z, r, amount)` + `commit()` (über
+  `mesh.userData.terrain`), die Vegetation dunkelt den Boden unter Kronen/Büschen/Felsen kühl ab – Objekte stehen,
+  auch auf „niedrig“ ohne Schattenkarte.
+- **Gras (`vegetation.js`):** je Karte ein Büschel aus drei gefächerten Halmen (6 Dreiecke je Instanz), Basis ≈
+  Bodenfarbe (× 0.9–1.04), Spitze × 1.18, Transluzenz 0.6 – liest sich als Grasbüschel statt als Blatt oder Sprenkel.
+- **Wasser (`water.js`):** Tagesfarben gesättigter (`#3AE4D2 / #14AAD2 / #0D52A8`), gemalte Wellenlichter (klar
+  begrenzte helle Streifen bis 130 m, treiben langsam), Reflexband 0.28, Wolkenschatten auf dem Sonnenanteil.
+- **Fels/Asche:** gemalte Gesteinsschichten im Gelände-Shader (leicht geneigte Bänder mit Rauschversatz, ±5 %),
+  Facetten-Farbvariation auf Fels 0.08 (vorher 0.12) – die Facetten bleiben, lesen sich aber nicht mehr als Mosaik.
+- **Aufwindsäulen (`updrafts.js`):** stilisierter Schimmer statt Füllung – dünne aufsteigende Streifen, Fresnel-Rand wie
+  ein Glasrohr, nachts auf 30 % gedämpft (vorher eine orangefarbene Vollsäule vor dem Nachthimmel).
+- **Offen (nicht im WP Rendering):** Laternenpfähle `#2f2c3a` (Albedo 0.03 linear) lesen sich in der Toon-Rampe als
+  Schwarz – Palette in `props/kit/builders.js` Richtung Schiefer `#3F4460` (§2.2) ändern; Namensschilder (§11.3).
+
+## 17. Stand der Umsetzung – Figuren (WP Figuren, 27.09.)
+
+Umgesetzt in `actors/humanoid/{geo,base,head,body,cosmetics,index}.js` (APIs unverändert: `createHumanoid`, `setAnim`, `setExpression`, `setEmotionAura`, `setNameTag`, Kosmetik-Konfiguration, `h.face.mouths` mit vier Zuständen):
+
+- **§8.1 Proportionen:** Hals kürzer und kräftiger (`M.neckY`/`M.headY`: Halsansatz 0.05 m über der Schulterlinie, Kopfmitte 0.125 m über dem Halsgelenk), kein Schulter-„Polster“ mehr (kleine Deltoid-Wölbung unter dem Ärmelansatz), kompakte Anime-Hände (abgerundete Handfläche, kurze kräftige Finger, entspannt gekrümmt; Faust/Daumen/Stopp bleiben).
+- **§8.2 Kopf:** Schädel mit rundem Hinterkopf und zum Kinn zulaufendem Kiefer (`headDeform`); Augen 0.078 breit, deren Iris (hohe Ellipse, drei Töne) vom Oberlid angeschnitten wird (`EYE.lid`, kein Starren), Lidlinie mit Wimpernschwung, Lidfalte, Unterlidkante, zwei Glanzpunkte. Alle Gesichtsformen werden auf die gewölbte Kopffläche gelegt (`wrap()`), nicht als Ebene angeheftet. Blinzel-Lider tragen eine eigene Lidlinie an der Unterkante (halb geschlossene Augen sehen gezeichnet aus). Brauen breiter und innen dicker, Mund tiefer (`MOUTH.y −0.56`) mit Lächeln-Mundwinkeln, offenem Mund mit Zahnkante und Zunge.
+- **§8.3 Haare:** Statt Kappe + Strähnen-Klötzen eine **Haarschale** (`shell()`: Kugelsegment, dessen Saum in spitze Strähnen-Enden ausläuft, Saumhöhe vorn/seitlich/hinten je Stil) plus **Pony aus langen, flachen, spitzen Strähnen in zwei Lagen** (`fringe()`), Schläfensträhnen, Scheitelsträhnen. Vertexfarben: Zickzack-Glanzband, dunkle Unterseite, gemalte Strähnen-Rillen (7 %, `groove`), Akzent nur an Spitzen. Alle 15 Stile nutzen die Schale; Schweife (lang, Zopf, Locs, Flechtzöpfe) bleiben eigene Feder-Meshes.
+- **§4 Kontur:** Hüllenbreite je Vertex (`fig({ hull })`, im Nachkommateil von `aWind`, übersteht das Impostor-Backen): Silhouette 2.0 px, Haarsträhnen 0.35–0.6 (dünne Innenlinien statt „Ananas“), Augen/Mund 0. Hüllen werden mit ihrem Teil im Sichtkegel geprüft (Figuren außerhalb des Bildes kosten keine Hüllen-Calls); die Qualitätsstufe liest jede Figur je Bild neu (`refreshTier`, `window.LUMO` gibt es erst nach dem Aufbau) und hängt Hüllen um. Niedrig: Hülle nur am Kopf voller Figuren (Budget ≤ 150 Draw-Calls am Hafen: 6 animierte à 19 + 14 Impostoren à 3).
+- **§8.5 Animation:** Idle mit Atmen bis in die Schultern, kaum merklichem Armpendeln und Gewichtsverlagerung; Gehen mit längerer Standphase (Hüftkurve `|sin|^0.8`), Knie beugt im Schwung, Hüftschwung; Laufen 12° vor, Arme 90°, Bounce 0.07; Kopf zieht beim Drehen leicht nach (`yawRate`); Haare/Rucksack pendeln (springs.js).
+- **Budget:** Maximalausstattung 11 765 Dreiecke (≤ 12 000), Draw-Calls unverändert (ein Toon-Material, Hüllen als Kinder). Abnahme-Set: `shots/art/f01–f40` (Line-up 8 Figuren, alle Frisuren, Ausdrücke, Gehen/Laufen, Dorfleute, Hochformat), Vorher-Stand in `shots/art/vorher-figuren/`.

@@ -163,21 +163,28 @@ function flowersGeo(rnd, palette) {
   return merge(parts);
 }
 
-// Gras (§6): zwei gekreuzte Karten je Instanz (4 Dreiecke), Halme als abgerundete Dreiecke, Normale nach oben,
-// Vertex-Verlauf Basis = Bodenfarbe × 0.85, Spitze +22 % Luminanz
+// Gras (§6): zwei gekreuzte Karten je Instanz, jede Karte ein Büschel aus drei gefächerten Halmen (6 Dreiecke je Instanz),
+// Normale nach oben (kein Shading, nur Verlauf): Basis ≈ Bodenfarbe (verwächst mit der Wiese), Spitze +25 % Luminanz.
+// Die gefächerte Silhouette liest sich als Grasbüschel, nicht als einzelnes Blatt.
 function grassGeo(rnd) {
   const pos = [], col = [], wind = [], leaf = [];
-  const h = 0.42 + rnd() * 0.3, w = 0.34, lean = (rnd() - 0.5) * 0.3;
-  const push = (x, y, z, c, wv) => { pos.push(x, y, z); col.push(c, c, c); wind.push(wv); leaf.push(0.35); };
+  const h = 0.52 + rnd() * 0.3, lean = (rnd() - 0.5) * 0.25;
+  const push = (x, y, z, c, wv) => { pos.push(x, y, z); col.push(c, c, c); wind.push(wv); leaf.push(0.6); };
   for (const a of [0, Math.PI / 2]) {
-    const dx = Math.cos(a) * w * 0.5, dz = Math.sin(a) * w * 0.5;
-    const tx = Math.cos(a + Math.PI / 2) * lean, tz = Math.sin(a + Math.PI / 2) * lean;
-    // abgerundeter Halm: schmal am Boden, breit in der Mitte, weich zulaufende Spitze (vier Reihen)
-    const rows = [[0.55, 0.0, 0.5], [0.95, 0.38, 0.8], [0.7, 0.72, 0.98], [0.0, 1.0, 1.08]];
-    const P = rows.map(([wf, hf, c]) => [[-dx * wf + tx * hf * hf, h * hf, -dz * wf + tz * hf * hf, c, hf], [dx * wf + tx * hf * hf, h * hf, dz * wf + tz * hf * hf, c, hf]]);
-    for (let r = 0; r < rows.length - 1; r++) {
-      const [a0, b0] = P[r], [a1, b1] = P[r + 1];
-      for (const q of [a0, b0, a1, b0, b1, a1]) push(q[0], q[1], q[2], q[3], q[4]);
+    const ux = Math.cos(a), uz = Math.sin(a);                // Kartenrichtung (seitlich)
+    const tx = Math.cos(a + Math.PI / 2) * lean, tz = Math.sin(a + Math.PI / 2) * lean;   // Neigung aus der Karte heraus
+    // drei Halme: Fußpunkte eng beieinander, Spitzen gefächert (links, Mitte, rechts), mittlerer Halm am höchsten
+    const blades = [[-0.08, -0.3, 0.8], [0.0, 0.03, 1.0], [0.09, 0.32, 0.86]];
+    for (const [fx, sx, hf] of blades) {
+      const bw = 0.075, bh = h * hf;
+      const fr = 0.34;   // Höhe der breitesten Stelle
+      // Dreieck-Streifen: Fuß (schmal) → breiteste Stelle → Spitze
+      const p0 = [[(fx - bw * 0.5) * ux, 0, (fx - bw * 0.5) * uz, 0.82, 0], [(fx + bw * 0.5) * ux, 0, (fx + bw * 0.5) * uz, 0.82, 0]];
+      const mx = fx + sx * fr, my = bh * fr;
+      const p1 = [[(mx - bw * 0.85) * ux + tx * fr * fr, my, (mx - bw * 0.85) * uz + tz * fr * fr, 0.96, fr], [(mx + bw * 0.85) * ux + tx * fr * fr, my, (mx + bw * 0.85) * uz + tz * fr * fr, 0.96, fr]];
+      const tipx = fx + sx;
+      const tip = [tipx * ux + tx, bh, tipx * uz + tz, 1.18, 1];
+      for (const q of [p0[0], p0[1], p1[0], p0[1], p1[1], p1[0], p1[0], p1[1], tip]) push(q[0], q[1], q[2], q[3], q[4]);
     }
   }
   const g = new THREE.BufferGeometry();
@@ -527,8 +534,8 @@ export function createVegetation({ island, veil, colliders, quality, scene }) {
     ZONES.forEach((Z, k) => { if (zw[k] > 0) { grassTint.r += gtc[Z.id].r * zw[k]; grassTint.g += gtc[Z.id].g * zw[k]; grassTint.b += gtc[Z.id].b * zw[k]; tw += zw[k]; } });
     const wild = Math.max(0, 1 - tw);
     grassTint.r += gtc.wild.r * wild; grassTint.g += gtc.wild.g * wild; grassTint.b += gtc.wild.b * wild; tw += wild;
-    grassTint.multiplyScalar((0.7 + rnd() * 0.16) / tw);
-    if (I.s === 'sand') grassTint.lerp(new THREE.Color('#b9b56e'), 0.6);
+    grassTint.multiplyScalar((0.9 + rnd() * 0.14) / tw);
+    if (I.s === 'sand') grassTint.lerp(new THREE.Color('#c9c47a'), 0.6);
     add('grass', x, z, { s: 0.95 + rnd() * 0.6, tint: grassTint.clone() });
   });
   // Steine und Felsbrocken
@@ -644,6 +651,15 @@ export function createVegetation({ island, veil, colliders, quality, scene }) {
     }
   }
   scene.add(group);
+
+  // ---- Kontaktschatten in die Bodenfarben backen (Bäume: Kronenradius, Büsche/Felsen klein) ----
+  const terrainMesh = scene.getObjectByName('terrain');
+  const terrain = terrainMesh && terrainMesh.userData.terrain;
+  if (terrain && terrain.darken) {
+    const CONTACT = { palm: [2.4, 0.22], tree: [2.8, 0.3], blossom: [2.8, 0.3], jungle: [4.0, 0.36], pine: [2.2, 0.28], birch: [2.0, 0.22], mangrove: [2.4, 0.26], bush: [1.3, 0.22], boulder: [1.6, 0.26] };
+    for (const [name, [r, a]] of Object.entries(CONTACT)) for (const it of placed[name]) terrain.darken(it.x, it.z, r * it.s, a);
+    terrain.commit();
+  }
 
   // ---- Dichte + Kollision ----
   let density = quality.vegetation;

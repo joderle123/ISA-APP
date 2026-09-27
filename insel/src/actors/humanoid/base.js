@@ -7,6 +7,8 @@
 //                                Kantenlicht (STIL §3.3). Vertex-Attribut aWind trägt die Fläche: 0 Stoff/Haar · 1 Haut · 2 flach
 //                                (Augen, Mund, Brauen – unbeleuchtet wie gemalte Linien).
 //   getOutlineMaterial(veil, px) Inverted-Hull-Kontur in Bildschirm-Pixeln (STIL §4), Farbe = Albedo × 0.38, Sättigung × 1.2.
+//                                Breite je Vertex × Hüllenfaktor aus dem Nachkommateil von aWind (geo.js fig({ hull })):
+//                                Silhouette 1.0, Haarsträhnen 0.35–0.6 (dünne Innenlinien), flache Teile 0.
 //   getGlassMaterial()           Brillengläser mit Fresnel-Rand.
 //   figureTier(opts)             'low' | 'medium' | 'high' (opts.quality > setDefaultTier() > window.LUMO.quality > 'high').
 import * as THREE from 'three';
@@ -14,7 +16,9 @@ import * as THREE from 'three';
 // Maße (Meter): ≈ 6,5 Kopfhöhen (Kopfhöhe 0,30 m), lange Beine, schmale Taille, leicht breite Schultern (STIL §8.1)
 export const M = {
   hipY: 1.0, thigh: 0.47, shin: 0.45, torso: 0.58, shoulderX: 0.245, upperArm: 0.31, forearm: 0.28,
-  headR: 0.14, neck: 0.09, hand: 0.11, foot: 0.3,
+  headR: 0.14, neck: 0.075, hand: 0.11, foot: 0.3,
+  // Halsansatz über der Schulterlinie und Kopfmitte über dem Halsgelenk (index.js): kurzer, kräftiger Hals (Anime-Teen)
+  neckY: 0.05, headY: 0.125,
 };
 
 // Rumpfquerschnitt je Höhe (y: 0 Hüfte … M.torso Schulter) → halbe Breite/Tiefe vor Statur (W). body.js baut daraus die Drehform,
@@ -76,10 +80,10 @@ export function figureTier(opts = {}) {
   const q = opts.quality || defaultTier || (typeof globalThis !== 'undefined' && globalThis.LUMO && globalThis.LUMO.quality && globalThis.LUMO.quality.name) || 'high';
   return q === 'low' || q === 'medium' ? q : 'high';
 }
-// Hüllenbreite in Pixeln je Stufe und Detail (STIL §4.2 / §13): niedrig nur volle Figuren und nur Kopf + Rumpf
-// (Draw-Call-Budget ≤ 150 für alle Figuren am Hafen, tests/scenarios/figuren.mjs)
+// Hüllenbreite in Pixeln je Stufe und Detail (STIL §4.2 / §13): niedrig nur volle Figuren und nur der Kopf
+// (Draw-Call-Budget ≤ 150 für alle Figuren am Hafen, tests/scenarios/figuren.mjs: 6 animierte à 19 + 14 Impostoren à 3)
 export const HULL_PX = { low: { full: 1.6, lite: 0, hand: 1.1 }, medium: { full: 1.8, lite: 1.5, hand: 1.2 }, high: { full: 2.0, lite: 1.6, hand: 1.3 } };
-export const HULL_PARTS = { low: new Set(['head', 'torso', 'impostor']), medium: null, high: null };
+export const HULL_PARTS = { low: new Set(['head', 'impostor']), medium: null, high: null };
 
 // ---- Toon-Rampe „figur“ (STIL §3.1): 2 Bänder + Kernschatten, Übergänge ±0.03 NdotL (64 Texel, linear gefiltert) ----
 // Werte multiplizieren nur das Sonnenlicht; das Hemisphärenlicht füllt den Schatten (kühl oben, warm unten).
@@ -195,6 +199,7 @@ const HULL_VERT_COLOR = /* glsl */`
   float lumoL = dot(vColor.rgb, vec3(0.299, 0.587, 0.114));
   vColor.rgb = max(mix(vec3(lumoL), vColor.rgb, 1.2) * 0.38, vec3(0.03));
 }`;
+// Breite je Vertex: aWind = Flächen-Flag + 0.45·Hüllenfaktor (geo.js fig(), Haarsträhnen 0.5 → dünne Innenlinien)
 const HULL_PROJECT = /* glsl */`
 vec4 mvPosition = vec4( transformed, 1.0 );
 #ifdef USE_INSTANCING
@@ -208,7 +213,8 @@ gl_Position = projectionMatrix * mvPosition;
   float lumoLen = length(lumoN2);
   lumoN2 = lumoLen > 1e-5 ? lumoN2 / lumoLen : vec2(0.0);
   float lumoDist = -mvPosition.z;
-  float lumoW = uLumoWidth * (1.0 - smoothstep(uLumoOutline.w * 0.6, uLumoOutline.w, lumoDist));
+  float lumoK = clamp(fract(aWind + 0.001) / 0.45, 0.0, 1.0);
+  float lumoW = uLumoWidth * lumoK * (1.0 - smoothstep(uLumoOutline.w * 0.6, uLumoOutline.w, lumoDist));
   gl_Position.xy += lumoN2 * uLumoOutline.xy * lumoW * gl_Position.w;
 }`;
 export function getOutlineMaterial(veil, px = 2) {
@@ -220,7 +226,7 @@ export function getOutlineMaterial(veil, px = 2) {
       shader.uniforms.uLumoOutline = OUTLINE;
       shader.uniforms.uLumoWidth = width;
       shader.vertexShader = shader.vertexShader
-        .replace('#include <common>', '#include <common>\nuniform vec4 uLumoOutline;\nuniform float uLumoWidth;')
+        .replace('#include <common>', '#include <common>\nuniform vec4 uLumoOutline;\nuniform float uLumoWidth;\n#ifndef LUMO_AWIND\n#define LUMO_AWIND\nattribute float aWind;\n#endif')
         .replace('#include <color_vertex>', HULL_VERT_COLOR)
         .replace('#include <project_vertex>', HULL_PROJECT);
     };
@@ -232,16 +238,24 @@ export function getOutlineMaterial(veil, px = 2) {
   return MATS.get(k);
 }
 // Hülle an ein Teil hängen (gleiche Geometrie, kein Speicher-Doppel). Rückgabe: Hüllen-Mesh (Kind des Teils).
+// Die Hülle wird wie ihr Teil im Sichtkegel geprüft (gleiche Geometrie, gleiche Lage) – Figuren außerhalb des Bildes
+// kosten keine Hüllen-Draw-Calls.
 export function attachHull(mesh, mat) {
   if (!mesh || mesh.userData.hull) return mesh && mesh.userData.hull;
   const hull = new THREE.Mesh(mesh.geometry, mat);
   hull.name = 'hull';
   hull.castShadow = false; hull.receiveShadow = false;
-  hull.frustumCulled = false;
   hull.onBeforeRender = onHullRender;
   mesh.add(hull);
   mesh.userData.hull = hull;
   return hull;
+}
+// Hülle wieder abnehmen (Qualitätswechsel)
+export function detachHull(mesh) {
+  const hull = mesh && mesh.userData.hull;
+  if (!hull) return;
+  mesh.remove(hull);
+  delete mesh.userData.hull;
 }
 function onHullRender(renderer) { updateOutlineSize(renderer); }
 
