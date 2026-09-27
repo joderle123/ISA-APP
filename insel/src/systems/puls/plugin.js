@@ -276,10 +276,13 @@ export default {
     const ort = createSichererOrt({ game, puls: api });
     game.sichererOrt = ort;
     game.addUpdate((dt) => ort.update(dt), { order: 43 });
+    // Hängematte: die Ruhe-Szene des Baumhauses (WP40), wenn es sie gibt, sonst der eigene Ersatz
     events.on('safeplace:open', (e) => {
       const kind = e && e.kind;
       if (ort.isInside) { ort.exit(); return; }
-      if (kind === 'sichererOrt') ort.enter(); else ort.haengematte();
+      if (kind === 'sichererOrt') ort.enter();
+      else if (game.plugins.baumhaus && typeof game.plugins.baumhaus.rest === 'function') game.plugins.baumhaus.rest({ kind: 'haengematte' });
+      else ort.haengematte();
     });
 
     // ---- Puls-Chip (Vorher/Nachher, z. B. Sprint-Ventil, Tester) ----

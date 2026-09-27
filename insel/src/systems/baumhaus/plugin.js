@@ -215,7 +215,8 @@ export default {
       const t0 = performance.now();
       const ttl = title || (kind === 'sichererOrt' ? 'Sicherer Ort' : 'Hängematte');
       let timer = 0, closed = false;
-      const setPuls = (v) => { state.set('session.puls', v); emit('puls:set', { value: v, via: 'ruhe' }); };
+      // Puls über das Puls-System (WP33), sonst direkt in den Laufzeit-Zustand
+      const setPuls = (v) => { if (game.puls && game.puls.set) game.puls.set(v, 'ruhe'); else { state.set('session.puls', v); emit('puls:set', { value: v, via: 'ruhe' }); } };
       const promise = new Promise((resolve) => {
         const h = ui.overlay.open({
           id: 'ruhe', title: ttl, icon: 'haengematte', kind: 'dark', pause: true, cls: 'ov-ruhe', closeLabel: 'Zurück',
@@ -252,15 +253,11 @@ export default {
       if (audio && audio.play) { try { audio.play('open'); } catch (e) { /* egal */ } }
       return promise;
     }
+    // Pause-Menü: das Puls-Plugin (WP33, scenes/sicherer-ort.js) übernimmt Hängematte und Sicheren Ort; ohne WP33 die Ruhe-Szene hier
     events.on('safeplace:open', (e) => {
-      if (!e || e.handled) return;
-      if (e.kind === 'sichererOrt') {
-        const SO = game.plugins['sicherer-ort'] || game.plugins.sichererOrt;
-        if (SO && typeof SO.open === 'function') return;
-        e.handled = true; rest({ kind: 'sichererOrt' }); return;
-      }
+      if (!e || e.handled || game.sichererOrt) return;
       e.handled = true;
-      rest({ kind: 'haengematte' });
+      rest({ kind: e.kind === 'sichererOrt' ? 'sichererOrt' : 'haengematte' });
     });
 
     // ---- Glas ----
@@ -445,7 +442,7 @@ export default {
         case 'trophaeen': return openTrophies();
         case 'kiste': return openEinrichten();
         case 'tuer': {
-          if (hasOrt()) { const SO = game.plugins['sicherer-ort'] || game.plugins.sichererOrt; if (SO && SO.open) return SO.open(); return rest({ kind: 'sichererOrt' }); }
+          if (hasOrt()) { const SO = game.sichererOrt; if (SO && SO.enter) return SO.enter(); return rest({ kind: 'sichererOrt' }); }
           ui.glimm('Noch zu. Nimm die Hängematte.');
           return null;
         }
