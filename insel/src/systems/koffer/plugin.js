@@ -31,7 +31,7 @@ const CSS = `
 .kf-zone i.kf-dot{width:14px;height:14px;border-radius:50%;display:inline-block}
 .kf-zone.is-gruen i.kf-dot{background:#5ad24f}.kf-zone.is-gelb i.kf-dot{background:#ffd23f}.kf-zone.is-rot i.kf-dot{background:#ff5d5d}.kf-zone.is-notfall i.kf-dot{background:#ffd166}
 .kf-opts{display:flex;flex-wrap:wrap;gap:8px}
-.kf-opt{display:inline-flex;align-items:center;gap:6px;min-height:44px;padding:6px 12px;border-radius:12px;background:rgba(255,255,255,.08);box-shadow:0 0 0 1px rgba(255,255,255,.14);color:#fff;font:800 14px/1.1 var(--font,system-ui);cursor:pointer}
+.kf-opt{display:inline-flex;align-items:center;gap:6px;min-height:64px;min-width:64px;padding:6px 14px;border-radius:12px;background:rgba(255,255,255,.08);box-shadow:0 0 0 1px rgba(255,255,255,.14);color:#fff;font:800 14px/1.1 var(--font,system-ui);cursor:pointer}
 .kf-opt.is-on{box-shadow:0 0 0 2px var(--c-gold,#ffd166);background:rgba(255,209,102,.16)}
 .kf-opt.is-kopf-rot.is-on{box-shadow:0 0 0 2px #ff5d5d}
 .kf-warn{margin:6px 0 0;font-size:13px;color:#ffb3b3}

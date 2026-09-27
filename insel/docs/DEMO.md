@@ -98,6 +98,7 @@ Sicherheit ist immer an: Pause/X überall, kein Tod, keine Rangliste, Fehler kos
 - Namensschilder sind kleine Pillen in fester Größe, blenden sich bei Gedränge und während Dialogen aus.
 - Der Lichtstrahl über dem Ziel blendet nicht mehr den halben Bildschirm, wenn die Kamera darin steht (Hochformat).
 - „Neu anfangen“ im Pause-Menü (siehe oben), zweistufig und nur für den eigenen Spielstand.
+- Während Gesprächen steht keine Ziel-Säule über den Figuren; in der Nachtszene treten unbeteiligte Dorf-Figuren aus dem Bild.
 
 ## Bekannte Lücken (Demo-Stand)
 - **Andere Regionen** (Strand, Dschungel, Klippen, Markt, Vulkan, Moor) sind begehbar, aber grau. Glimm sagt beim
@@ -109,7 +110,7 @@ Sicherheit ist immer an: Pause/X überall, kein Tod, keine Rangliste, Fehler kos
 - e03: die Brücke ist eine Szene (keine echte Kisten-Physik); die Grotte läuft als Symbol-Minispiel ohne eigenen Innenraum.
 - Joker j07 „Senait kommt an“ (Code NEST) ist noch nicht gebaut.
 - Mehrere Spielstände pro Gerät gibt es im Speicher, aber noch keine Auswahl für die Jugendlichen (nur im Lehrer-Panel sichtbar).
-- Nachtszene: Eine Dorf-Figur kann noch durchs Bild laufen. Im Schlussbild mit Mika springen vier Figuren zum Spieler; ein Laternenpfahl kann kurz die Sicht verdecken.
+- Im Schlussbild mit Mika springen vier Figuren zum Spieler; ein Laternenpfahl kann kurz die Sicht verdecken.
 - Die späteren Folgen der Entscheidungen (Module 3–9) sind geplant, aber noch nicht gebaut. In der Demo reagieren nur Zeilen.
 - Puls, Skills-Koffer, Baumhaus-Möbel und Chronik sind vorhanden, aber im Hafen noch ohne Rolle.
 - Vorlesen braucht eine deutsche System-Stimme (iPad: Einstellungen → Bedienungshilfen → Gesprochene Inhalte).
@@ -117,5 +118,5 @@ Sicherheit ist immer an: Pause/X überall, kein Tod, keine Rangliste, Fehler kos
 
 ## Für Entwickler
 `npm run build` erzeugt `dist/`. Tests: `npm run test:fast` (Inhalte, Texte, Einheiten), `node tests/smoke.mjs`,
-`flock /tmp/lumo-chrome.lock node tests/scenarios/demo.mjs` (spielt den ganzen Demo-Pfad headless durch, 38 Prüfungen inkl. der Story-Entscheidungen, Nachtszene, Aufnäher-Moment und „Neu anfangen“, und legt Screenshots `200_…`–`207_…` im
+`flock /tmp/lumo-chrome.lock node tests/scenarios/demo.mjs` (spielt den ganzen Demo-Pfad headless durch, 39 Prüfungen inkl. der Story-Entscheidungen, ruhiger Nachtszene, Aufnäher-Moment und „Neu anfangen“, und legt Screenshots `200_…`–`207_…` im
 `SHOTS`-Ordner ab). Dauer mit Software-Grafik: etwa 10–15 Minuten.

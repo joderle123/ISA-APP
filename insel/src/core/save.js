@@ -290,6 +290,8 @@ export function createSave({ state, events = null, storage = null, now = () => D
       state.reset(defaultState());
       sinceSave = 0;
       applyAll();
+      // Reset-Hörer (z. B. Avatar-Look in lumo.settings) schreiben sofort wieder – danach noch einmal alles weg
+      try { for (let i = store.length - 1; i >= 0; i--) { const k = store.key(i); if (k && k.startsWith(KEY_PREFIX)) store.removeItem(k); } } catch (e) { /* egal */ }
       emit('save:wipe', { removed: keys.length });
       return keys.length;
     },
