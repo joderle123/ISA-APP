@@ -4,9 +4,12 @@ import * as THREE from 'three';
 import { part, merge } from './geom.js';
 import { FEATURES } from './island.js';
 
+// Standard-Material für Requisiten und Wahrzeichen: flach schattiert, Vertexfarben, Toon-Rampe „props“ (Stil-Bibel §3.1).
+// opts: Material-Optionen; zusätzlich ramp ('props' | 'fels' | 'laub' | 'figur' | {…}), rim, fogCap für den Schleier-Patch.
 export function lambertVC(veil, key, opts = {}) {
-  const m = new THREE.MeshLambertMaterial({ vertexColors: true, flatShading: true, ...opts });
-  if (veil) veil.patch(m, { key: 'lm-' + key });
+  const { ramp, rim, fogCap, trans, ...matOpts } = opts;
+  const m = new THREE.MeshLambertMaterial({ vertexColors: true, flatShading: true, ...matOpts });
+  if (veil) veil.patch(m, { key: 'lm-' + key, ramp, rim, fogCap, trans });
   return m;
 }
 
@@ -53,7 +56,7 @@ export function createLandmarks({ island, veil, colliders, scene, quality }) {
   const dockMesh = new THREE.Mesh(merge(dockParts), mat);
   dockMesh.castShadow = true; dockMesh.receiveShadow = true;
   group.add(dockMesh);
-  const lampMat = new THREE.MeshBasicMaterial({ vertexColors: true, toneMapped: false });
+  const lampMat = new THREE.MeshBasicMaterial({ vertexColors: true });
   const lamp = new THREE.Mesh(merge([lampGeo]), lampMat);
   group.add(lamp);
   colliders.addSurface({ type: 'box', x: D.x, z: (z0 + z1) / 2, hw: D.width / 2, hd: (z1 - z0) / 2, y: deckY, group: 'landmarks', tag: 'steg', surface: 'wood' });
@@ -171,8 +174,8 @@ export function createLandmarks({ island, veil, colliders, scene, quality }) {
 
   // ---- Rauchsäule: Low-Poly-Ballen, die aufsteigen, wachsen, mit dem Wind abdriften und verblassen ----
   const PUFFS = Math.round(30 * Math.max(0.5, qp));
-  const puffGeo = part(new THREE.IcosahedronGeometry(1, 1), { jitter: 0.32, seed: 77, faceVar: 0.16, color: '#ffffff' });
-  const puffMat = new THREE.MeshLambertMaterial({ vertexColors: true, flatShading: true, transparent: true, opacity: 0.86, depthWrite: false, emissive: new THREE.Color('#b8481a'), emissiveIntensity: 0 });
+  const puffGeo = part(new THREE.SphereGeometry(1, 10, 8), { smooth: true, color: '#ffffff', deform: (v) => { v.y *= v.y < 0 ? 0.7 : 1; } });
+  const puffMat = new THREE.MeshLambertMaterial({ vertexColors: true, transparent: true, opacity: 0.9, depthWrite: false, emissive: new THREE.Color('#b8481a'), emissiveIntensity: 0 });
   veil.patch(puffMat, { key: 'smoke', veil: false });
   const smoke = new THREE.InstancedMesh(puffGeo, puffMat, PUFFS);
   smoke.frustumCulled = false;
@@ -237,11 +240,11 @@ export function createLandmarks({ island, veil, colliders, scene, quality }) {
       boat.rotation.z = Math.sin(t * 0.9) * 0.04;
       boat.rotation.x = Math.sin(t * 0.7 + 1) * 0.025;
       lit += (litTarget - lit) * Math.min(1, dt * 1.5);
-      glassMat.emissiveIntensity = lit * 2.2 + 0.05;
+      glassMat.emissiveIntensity = lit * 3.0 + 0.05;
       beam.visible = lit > 0.02;
       beam.rotation.y += dt * 0.6;
       beamMat.uniforms.uAlpha.value = lit * (0.35 + night * 0.65);
-      lampMat.color.setScalar(0.5 + night * 1.2);
+      lampMat.color.setScalar(0.9 + night * 1.4);
     },
   };
 }

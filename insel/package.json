@@ -16,7 +16,8 @@
     "test:moves": "node tests/moves.mjs",
     "test:avatar": "node tests/avatar-grid.mjs && node tests/bodylang-sheet.mjs",
     "test:stil": "node tests/scenarios/stil.mjs",
-    "test": "npm run test:fast && node tests/core.mjs && node tests/smoke.mjs && node tests/scenario.mjs && node tests/scenarios/ui.mjs && node tests/moves.mjs && node tests/scenarios/welt.mjs && node tests/scenarios/stil.mjs && node tests/scenarios/quests.mjs && node tests/scenarios/figuren.mjs",
+    "test": "npm run test:fast && node tests/core.mjs && node tests/smoke.mjs && node tests/scenario.mjs && node tests/scenarios/ui.mjs && node tests/moves.mjs && node tests/scenarios/welt.mjs && node tests/scenarios/stil.mjs && node tests/scenarios/quests.mjs && node tests/scenarios/figuren.mjs && node tests/scenarios/codes.mjs",
+    "test:codes": "node tests/scenarios/codes.mjs",
     "test:welt": "node tests/scenarios/welt.mjs",
     "test:figuren": "node tests/scenarios/figuren.mjs",
     "test:quests": "node tests/scenarios/quests.mjs"

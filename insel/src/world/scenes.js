@@ -129,6 +129,10 @@ export function createScenes({ game, kit }) {
     }
     const fs = Math.max(1, Math.max(room.size[0], room.size[2]) / 24);   // große Räume: Nebel reicht weiter
     scene.fog.color.set(p.fog[0]); scene.fog.near = p.fog[1] * fs; scene.fog.far = p.fog[2] * fs;
+    // Innenräume: Dunst nah = Raumnebel, kein Höhennebel, keine Luftperspektive
+    veil.uniforms.uFogNearColor.value.set(p.fog[0]);
+    veil.uniforms.uFogHeight.value = 0;
+    veil.uniforms.uAerial.value = 0;
     sky.sun.intensity = (p.sun || 0) * 2.6;
     sky.hemi.color.set(p.hemi[0]); sky.hemi.groundColor.set(p.hemi[1]); sky.hemi.intensity = p.hemi[2];
     veil.uniforms.uFogSunAmt.value = 0;
@@ -141,6 +145,7 @@ export function createScenes({ game, kit }) {
     game.renderer.setClearColor(skyState.clear, 1);
     sky.time.paused = skyState.timePaused;
     veil.uniforms.uFogSunAmt.value = skyState.sunAmt;
+    veil.uniforms.uAerial.value = 1;
     skyState = null;
     lightRoom = null;
   }

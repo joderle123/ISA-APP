@@ -17,7 +17,7 @@ export function createTestgrotte({ scene, veil } = {}) {
     g.visible = false;
     const rock = new THREE.MeshLambertMaterial({ vertexColors: true, flatShading: true, side: THREE.BackSide });
     const inner = new THREE.MeshLambertMaterial({ vertexColors: true, flatShading: true });
-    const glow = new THREE.MeshLambertMaterial({ vertexColors: true, flatShading: true, emissive: new THREE.Color('#5ef0d8'), emissiveIntensity: 0.9 });
+    const glow = new THREE.MeshLambertMaterial({ vertexColors: true, flatShading: true, emissive: new THREE.Color('#5ef0d8'), emissiveIntensity: 1.4 });
     if (veil) { veil.patch(rock, { key: 'grotte', veil: false }); veil.patch(inner, { key: 'grotte-i', veil: false }); veil.patch(glow, { key: 'grotte-g', veil: false }); }
     // Höhle: Kasten von innen, mit Zittern und dunkler Felsfarbe
     const shell = new THREE.Mesh(part(new THREE.BoxGeometry(SIZE.w, SIZE.h, SIZE.d, 8, 4, 8), { jitter: 0.9, seed: 4, faceVar: 0.2, color: (x, y, z, out) => out.set(y > SIZE.h * 0.35 ? '#1b2f5a' : '#243a5e') }), rock);

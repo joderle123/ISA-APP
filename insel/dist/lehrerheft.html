@@ -1,0 +1,1348 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LUMO – Lehrerheft (Staffel 1)</title>
+<style>
+  :root { --ink: #1a1830; --muted: #5a5870; --line: #d8d6e4; --paper: #fff; --mod: #556; }
+  * { box-sizing: border-box; }
+  html { background: #f2f1f7; }
+  body { margin: 0; color: var(--ink); font: 15px/1.45 "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif; }
+  .sheet { max-width: 210mm; margin: 0 auto; padding: 16mm 14mm; background: var(--paper); }
+  h1 { margin: 0 0 4px; font-size: 34px; letter-spacing: 0.02em; }
+  h2 { margin: 0; font-size: 24px; }
+  h3 { margin: 0; font-size: 19px; }
+  h4 { margin: 0 0 6px; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--mod); }
+  p { margin: 0 0 6px; }
+  ul, ol { margin: 0 0 6px; padding-left: 20px; }
+  li { margin-bottom: 3px; }
+  .muted { color: var(--muted); }
+  .kicker { font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted); }
+  .lead { font-size: 17px; }
+  .cover { padding-bottom: 12mm; border-bottom: 3px solid var(--ink); margin-bottom: 10mm; }
+  .cover .meta { color: var(--muted); font-size: 13px; }
+  .box { padding: 12px 16px; border: 1.5px solid var(--line); border-radius: 12px; margin-bottom: 12px; background: #fafaff; }
+  .box h3 { margin-bottom: 6px; }
+  .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  th, td { padding: 6px 8px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+  thead th { font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
+  td.code, .code { font-family: "SFMono-Regular", Menlo, Consolas, "Liberation Mono", monospace; font-weight: 700; letter-spacing: 0.08em; }
+  td.alt { font-family: Menlo, Consolas, monospace; font-size: 12px; color: var(--muted); }
+  tr.teacher-only td { background: #fff3f6; }
+  .tear { border: 2px dashed var(--ink); border-radius: 12px; padding: 10px 14px; margin: 10mm 0; }
+  .module { margin-top: 10mm; page-break-before: always; break-before: page; }
+  .module-head { display: flex; gap: 14px; align-items: flex-start; padding-bottom: 10px; margin-bottom: 12px; border-bottom: 3px solid var(--mod); }
+  .module-nr { flex: none; width: 52px; height: 52px; border-radius: 14px; display: grid; place-items: center; background: var(--mod); color: #fff; font-weight: 800; font-size: 20px; }
+  .module-frage { font-size: 16px; font-weight: 600; margin-top: 4px; }
+  .module-ziel { color: var(--muted); }
+  .module-region { font-size: 13px; color: var(--muted); }
+  .unit { border: 1.5px solid var(--line); border-left: 6px solid var(--mod); border-radius: 12px; padding: 12px 14px; margin-bottom: 12px; page-break-inside: avoid; break-inside: avoid; }
+  .unit-head { display: flex; gap: 12px; align-items: flex-start; margin-bottom: 8px; }
+  .unit-nr { flex: none; min-width: 40px; height: 40px; padding: 0 8px; border-radius: 10px; display: grid; place-items: center; background: var(--mod); color: #fff; font-weight: 800; font-size: 17px; }
+  .unit-titles { flex: 1; min-width: 0; }
+  .unit-meta { font-size: 13px; color: var(--muted); }
+  .unit-code { flex: none; text-align: right; }
+  .unit-code .code { display: block; font-size: 22px; padding: 4px 10px; border: 2px solid var(--ink); border-radius: 8px; }
+  .unit-code small { display: block; margin-top: 4px; font-size: 11px; color: var(--muted); font-family: Menlo, Consolas, monospace; }
+  .unit-kurz { font-style: italic; color: #33314a; margin-bottom: 10px; }
+  .unit-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 16px; }
+  .unit-grid .bridge { grid-column: 1 / -1; padding-top: 8px; border-top: 1px dashed var(--line); }
+  .foot { margin-top: 14mm; padding-top: 8px; border-top: 1px solid var(--line); font-size: 12px; color: var(--muted); }
+  @media print {
+    html { background: #fff; }
+    .sheet { max-width: none; padding: 0; }
+    a { color: inherit; text-decoration: none; }
+    @page { size: A4; margin: 14mm; }
+  }
+  @media (max-width: 640px) { .cols, .unit-grid { grid-template-columns: 1fr; } .unit-head { flex-wrap: wrap; } }
+</style>
+</head>
+<body>
+<div class="sheet">
+  <header class="cover">
+    <p class="kicker">Skills-Kurs Jahr 1 · CDSE Annexe Junglinster</p>
+    <h1>LUMO – Lehrerheft</h1>
+    <p class="lead">Staffel 1 „Das zerbrochene Herzglas“ · 10 Module, 30 Einheiten, 9 Joker – jede Stunde endet mit einem Code, der genau ihre Quest öffnet.</p>
+    <p class="meta">Stand 27. September 2026 · erzeugt beim Build · nur für die Lehrkraft · Druck auf A4</p>
+  </header>
+
+  <section class="box">
+    <h3>So funktioniert es</h3>
+    <div class="cols">
+      <div>
+        <p><b>Code am Ende der Stunde.</b> Ein Wort (z. B. <span class="code">WELLE</span>), groß oder klein, im Tagebuch unter „Code“. Es öffnet die Hauptquest, die neue Kraft, die Regionsschicht, den Aufnäher und die Echte-Welt-Karte. Inhalte kommen nie vor der Stunde.</p>
+        <p><b>Verpasst?</b> Jeder spätere Code setzt frühere Einheiten ohne Code auf <b>Kurzfassung</b>: Fähigkeit, Splitter und Farbe sind da, dazu eine 3-Minuten-Szene. Die volle Quest bleibt mit ihrem Code erhalten.</p>
+        <p><b>Ersatzcode.</b> Wenn ein Code-Wort die Runde macht: Jede Einheit hat zusätzlich einen Ersatzcode WORT-WORT-ZAHL (Zahl über das Zahlenrad). Eigenes Salz pro Schuljahr: <span class="code">LUMO_SALT=… node build.mjs</span>.</p>
+      </div>
+      <div>
+        <p><b>Drei Brücken in den Unterricht:</b> die Rückseite des Aufnähers („Dreht mal eure Aufnäher um.“), die freiwillige Echte-Welt-Karte (gemacht / versucht / diesmal nicht – jede Antwort zählt gleich, nichts verlässt das Gerät) und 1–2 Debrief-Fragen pro Quest in diesem Heft.</p>
+        <p><b>Lehrer-Panel</b> (Code <span class="code">LEUCHTFEUER-42</span>): Codeliste, Inselwetter, Lines &amp; Veils, Umbenennen (Figuren, Glimm, Vögel – damit keine Figur wie ein Kind der Gruppe heißt), Farben des Gefühlsrads, eingelöste Codes je Spielstand.</p>
+        <p><b>Lines &amp; Veils.</b> Bei einem aktuellen Vorfall laufen e17, e26, e28, j08 und markierte Szenen nur als Kurzfassung ohne Szene. Pause/X, Ausgang, Zurückspulen und „Hilfe holen“ sind immer da.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="box">
+    <h3>Sonder-Codes</h3>
+    <table><thead><tr><th>Code</th><th>Wirkung</th><th>Ersatzcode</th></tr></thead><tbody><tr><td class="code">KOMPASS-0</td><td>Modul 0 · Ankommen</td><td class="alt">DUENE-GLUT-74</td></tr><tr><td class="code">KOMPASS-1</td><td>Modul 1 · Wer bin ich?</td><td class="alt">SPATZ-EICHHORN-30</td></tr><tr><td class="code">KOMPASS-2</td><td>Modul 2 · Gefühle verstehen</td><td class="alt">ANKER-SURFBRETT-62</td></tr><tr><td class="code">KOMPASS-3</td><td>Modul 3 · Gefühle regulieren (Skills)</td><td class="alt">EICHHORN-RIFF-18</td></tr><tr><td class="code">KOMPASS-4</td><td>Modul 4 · Meine Gedanken</td><td class="alt">HUEGEL-HECKE-98</td></tr><tr><td class="code">KOMPASS-5</td><td>Modul 5 · Kommunikation &amp; Grenzen</td><td class="alt">MEER-HUEGEL-54</td></tr><tr><td class="code">KOMPASS-6</td><td>Modul 6 · Wenn es schwierig wird</td><td class="alt">BOE-LIBELLE-86</td></tr><tr><td class="code">KOMPASS-7</td><td>Modul 7 · Digitale Welt</td><td class="alt">FLACKERN-FLUSS-42</td></tr><tr><td class="code">KOMPASS-8</td><td>Modul 8 · Gesund &amp; stark</td><td class="alt">BAER-KIEL-26</td></tr><tr><td class="code">KOMPASS-9</td><td>Modul 9 · Abschluss</td><td class="alt">KORALLE-BERG-82</td></tr><tr><td class="code">HERZGLAS-99</td><td>Demo (Team): alles als Kurzfassung</td><td class="alt">BLATT-MOLCH-0</td></tr><tr><td class="code">LEUCHTFEUER-42</td><td>Lehrer-Panel</td><td class="alt">KARTE-TANG-56</td></tr><tr><td class="code">RUHEWETTER</td><td>Inselwetter · Ruhewetter</td><td class="alt">WOLF-MEISE-13</td></tr><tr><td class="code">FESTWETTER</td><td>Inselwetter · Festwetter</td><td class="alt">HABICHT-STEG-87</td></tr><tr><td class="code">FRUEHLINGSWETTER</td><td>Inselwetter · Frühlingswetter</td><td class="alt">MEISE-INSEL-33</td></tr></tbody></table>
+    <p class="muted" style="margin-top:6px">Inselwetter: alle tippen denselben Code, damit niemand herausgehoben wird – 20 Minuten Spielzeit. Modul-Codes für Neue: alle Einheiten bis zu diesem Modul als Kurzfassung.</p>
+  </section>
+
+  <section class="tear">
+    <h3>Codeliste zum Abreißen</h3>
+    <table><thead><tr><th>Nr</th><th>Einheit</th><th>Code</th><th>Ersatzcode</th></tr></thead><tbody><tr><td>1</td><td>Willkommen – unser Rahmen</td><td class="code">BOJE</td><td class="alt">SEGEL-BUCHE-65</td></tr><tr><td>2</td><td>Kennenlernen in Bewegung</td><td class="code">DELFIN</td><td class="alt">DACHS-ZELT-21</td></tr><tr><td>3</td><td>Wir als Team</td><td class="code">OTTER</td><td class="alt">WAL-KAEFER-77</td></tr><tr><td>4</td><td>Das Glas der Bedürfnisse</td><td class="code">QUELLE</td><td class="alt">RUDER-STRUDEL-85</td></tr><tr><td>5</td><td>Zwischen laut und leise</td><td class="code">BRISE</td><td class="alt">KRAEHE-HASE-41</td></tr><tr><td>6</td><td>Mein Baum der Stärke</td><td class="code">EICHE</td><td class="alt">SEEHUND-GROTTE-97</td></tr><tr><td>7</td><td>Was sind Gefühle – und wozu sind sie gut?</td><td class="code">FUCHS</td><td class="alt">BAUMHAUS-NEST-53</td></tr><tr><td>8</td><td>Alles steht Kopf</td><td class="code">KRAKE</td><td class="alt">EULE-SPINNE-57</td></tr><tr><td>9</td><td>Wo spüre ich Gefühle?</td><td class="code">MOOS</td><td class="alt">HASE-WASSERFALL-13</td></tr><tr><td>10</td><td>Gemischte Gefühle</td><td class="code">LAGUNE</td><td class="alt">AHORN-PFAU-47</td></tr><tr><td>11</td><td>Skills und die Anspannungsskala</td><td class="code">WELLE</td><td class="alt">DRACHEN-SPECHT-91</td></tr><tr><td>12</td><td>Skills über Körper und Atem</td><td class="code">ROBBE</td><td class="alt">NEBEL-BUSSARD-35</td></tr><tr><td>13</td><td>Skills über die Sinne</td><td class="code">KIESEL</td><td class="alt">GANS-NACHT-79</td></tr><tr><td>14</td><td>Achtsamkeit und Kopf-Skills</td><td class="code">BUCHT</td><td class="alt">KORALLE-BRUECKE-23</td></tr><tr><td>15</td><td>Mein Skills-Koffer und Ampelplan</td><td class="code">GIPFEL</td><td class="alt">BAER-FLAGGE-67</td></tr><tr><td>16</td><td>Was sind Glaubenssätze?</td><td class="code">SEGEL</td><td class="alt">ORCA-PFAU-11</td></tr><tr><td>17</td><td>Meine Glaubenssätze</td><td class="code">WURZEL</td><td class="alt">SCHILF-KRAKE-55</td></tr><tr><td>18</td><td>Der kritische Detektiv</td><td class="code">LUCHS</td><td class="alt">MEER-ELSTER-95</td></tr><tr><td>19</td><td>Neue Gedanken ausprobieren</td><td class="code">KNOSPE</td><td class="alt">HUEGEL-BUSSARD-39</td></tr><tr><td>20</td><td>Verbal und nonverbal</td><td class="code">ORCA</td><td class="alt">GIPFEL-AUFWIND-54</td></tr><tr><td>21</td><td>Ich-Botschaften und Zuhören</td><td class="code">EULE</td><td class="alt">WINDRAD-HITZE-10</td></tr><tr><td>22</td><td>Grenzen erkennen</td><td class="code">STRAND</td><td class="alt">HUETTE-HORIZONT-42</td></tr><tr><td>23</td><td>Grenzen setzen: Stopp!</td><td class="code">IGEL</td><td class="alt">PILZ-WOLKE-98</td></tr><tr><td>24</td><td>Konflikte lösen</td><td class="code">BIBER</td><td class="alt">SONNE-LACHS-78</td></tr><tr><td>25</td><td>Gruppendruck und Nein sagen</td><td class="code">ANKER</td><td class="alt">KARTE-FACKEL-34</td></tr><tr><td>26</td><td>Mobbing und Zivilcourage</td><td class="code">ADLER</td><td class="alt">HAI-TAL-66</td></tr><tr><td>27</td><td>Social Media und ich</td><td class="code">INSEL</td><td class="alt">KRANICH-ZAPFEN-22</td></tr><tr><td>28</td><td>Echt oder fake? KI und Fake News</td><td class="code">PERLE</td><td class="alt">AST-KIESEL-6</td></tr><tr><td>29</td><td>Gesund und stark</td><td class="code">BAMBUS</td><td class="alt">LAGUNE-EICHHORN-62</td></tr><tr><td>30</td><td>Rückblick und Abschied</td><td class="code">MEER</td><td class="alt">BIBER-TANNE-92</td></tr><tr><td>J1</td><td>Filmeinheit „Alles steht Kopf“</td><td class="code">KRABBE</td><td class="alt">SEEHUND-VULKAN-22</td></tr><tr><td>J2</td><td>Filmeinheit „Das Streben nach Glück“</td><td class="code">LACHS</td><td class="alt">KRAEHE-BRUNNEN-66</td></tr><tr><td>J3</td><td>Doku „Das Dilemma mit den sozialen Medien“</td><td class="code">FALKE</td><td class="alt">RUDER-HUEGEL-10</td></tr><tr><td>J4</td><td>Naturtag mit Achtsamkeits-Parcours</td><td class="code">WALD</td><td class="alt">WAL-GLUEHWURM-2</td></tr><tr><td>J5</td><td>Unser Stück – Theater oder Video</td><td class="code">PFAU</td><td class="alt">DACHS-KARTE-46</td></tr><tr><td>J6</td><td>Dampf ablassen, Akku laden</td><td class="code">GEYSIR</td><td class="alt">SEGEL-GROTTE-90</td></tr><tr><td>J7</td><td>Neu in der Gruppe</td><td class="code">NEST</td><td class="alt">BEERE-PERLE-34</td></tr><tr class="teacher-only"><td>J8</td><td>Wenn uns etwas beschäftigt</td><td class="code">LINDE</td><td class="alt">BIRKE-SCHNECKE-26</td></tr><tr><td>J9</td><td>Ruhig durch die Prüfungszeit</td><td class="code">LOTUS</td><td class="alt">FLASCHE-KNOTEN-70</td></tr></tbody></table>
+    <p class="muted" style="margin-top:6px">Rosa: nur in dieser Liste (nicht an die Klasse geben).</p>
+  </section>
+
+  
+    <section class="module" style="--mod:#e9a23b">
+      <header class="module-head">
+        <span class="module-nr">M0</span>
+        <div><h2>Ankommen</h2><p class="module-frage">Wer sind wir als Gruppe?</p><p class="module-ziel">Die Jugendlichen kennen den Rahmen, fühlen sich in der Gruppe sicher und kennen Gefühlsrad und Skills-Pass.</p><p class="module-region">Region: Hafen-Dorf · Modul-Code für Neue: <b>KOMPASS-0</b></p></div>
+      </header>
+      
+    <article class="unit" data-unit="j1-e01" style="--mod:#e9a23b">
+      <header class="unit-head">
+        <span class="unit-nr">1</span>
+        <div class="unit-titles">
+          <h3>Willkommen – unser Rahmen</h3>
+          <p class="unit-meta">Einheit 1 · 100 min Kurs</p>
+        </div>
+        <div class="unit-code"><span class="code">BOJE</span><small>Ersatz: SEGEL-BUCHE-65</small></div>
+      </header>
+      <p class="unit-kurz">Die Gruppe lernt sich kennen, legt gemeinsam ihre Regeln fest und lernt die Rituale kennen, die sie durch das ganze Jahr begleiten.</p>
+      <div class="unit-grid">
+        <section>
+          <h4>Kursziele</h4>
+          <ul><li>kennen Ziel und Ablauf des Skills-Kurses</li><li>erarbeiten einen eigenen Gruppenvertrag und unterschreiben ihn</li><li>lernen Gefühlsrad und Skills-Pass kennen</li><li>erleben eine erste Übung, um im Hier und Jetzt anzukommen</li></ul>
+        </section>
+        <section>
+          <h4>Im Spiel</h4>
+          <p><b>Landgang: Der Hafen-Kodex</b> · Hafen-Dorf</p>
+          <p class="muted">Quest-Daten folgen mit dem Inhalts-Paket der Region.</p>
+          
+        </section>
+        <section class="bridge">
+          <h4>Brücken in den Unterricht</h4>
+          <p><b>Rückseite des Aufnähers:</b> <span class="muted">folgt</span></p>
+          <p><b>Echte-Welt-Karte:</b> <span class="muted">folgt</span></p>
+          <p><b>Debrief:</b></p>
+          <p class="muted">folgt</p>
+        </section>
+      </div>
+    </article>
+    <article class="unit" data-unit="j1-e02" style="--mod:#e9a23b">
+      <header class="unit-head">
+        <span class="unit-nr">2</span>
+        <div class="unit-titles">
+          <h3>Kennenlernen in Bewegung</h3>
+          <p class="unit-meta">Einheit 2 · 100 min Kurs</p>
+        </div>
+        <div class="unit-code"><span class="code">DELFIN</span><small>Ersatz: DACHS-ZELT-21</small></div>
+      </header>
+      <p class="unit-kurz">Mit Bewegung, Raten und Nachfragen lernt sich die Gruppe besser kennen und merkt, wie viel sie teilt – ohne dass jemand Persönliches preisgeben muss.</p>
+      <div class="unit-grid">
+        <section>
+          <h4>Kursziele</h4>
+          <ul><li>entdecken Gemeinsamkeiten, ohne etwas Persönliches erklären zu müssen</li><li>stellen einander Fragen und haken bei den Antworten nach</li><li>erleben, dass sie mit vielen Erfahrungen nicht allein sind</li><li>geben ein konkretes Kompliment und nehmen eines an, ohne es kleinzureden</li></ul>
+        </section>
+        <section>
+          <h4>Im Spiel</h4>
+          <p><b>Das Laternenfest</b> · Hafen-Dorf</p>
+          <p class="muted">Quest-Daten folgen mit dem Inhalts-Paket der Region.</p>
+          
+        </section>
+        <section class="bridge">
+          <h4>Brücken in den Unterricht</h4>
+          <p><b>Rückseite des Aufnähers:</b> <span class="muted">folgt</span></p>
+          <p><b>Echte-Welt-Karte:</b> <span class="muted">folgt</span></p>
+          <p><b>Debrief:</b></p>
+          <p class="muted">folgt</p>
+        </section>
+      </div>
+    </article>
+    <article class="unit" data-unit="j1-e03" style="--mod:#e9a23b">
+      <header class="unit-head">
+        <span class="unit-nr">3</span>
+        <div class="unit-titles">
+          <h3>Wir als Team</h3>
+          <p class="unit-meta">Einheit 3 · 100 min Kurs · Stempel „Team-Start“</p>
+        </div>
+        <div class="unit-code"><span class="code">OTTER</span><small>Ersatz: WAL-KAEFER-77</small></div>
+      </header>
+      <p class="unit-kurz">Draußen löst die Gruppe gemeinsam Aufgaben, vertraut sich beim Blindführen gegenseitig und hält fest, was sie als Team braucht.</p>
+      <div class="unit-grid">
+        <section>
+          <h4>Kursziele</h4>
+          <ul><li>lösen gemeinsam Aufgaben, bei denen jede Person gebraucht wird</li><li>führen und lassen sich führen – mit klaren Absprachen und Stopp-Recht</li><li>nehmen bewusst wahr, was Hören und Tasten leisten, wenn das Sehen fehlt</li><li>benennen, was die Gruppe braucht, und ergänzen den Gruppenvertrag</li></ul>
+        </section>
+        <section>
+          <h4>Im Spiel</h4>
+          <p><b>Die Brücke der Drei</b> · Hafen-Dorf</p>
+          <p class="muted">Quest-Daten folgen mit dem Inhalts-Paket der Region.</p>
+          
+        </section>
+        <section class="bridge">
+          <h4>Brücken in den Unterricht</h4>
+          <p><b>Rückseite des Aufnähers:</b> <span class="muted">folgt</span></p>
+          <p><b>Echte-Welt-Karte:</b> <span class="muted">folgt</span></p>
+          <p><b>Debrief:</b></p>
+          <p class="muted">folgt</p>
+        </section>
+      </div>
+    </article>
+    </section>
+    <section class="module" style="--mod:#22b8a3">
+      <header class="module-head">
+        <span class="module-nr">M1</span>
+        <div><h2>Wer bin ich?</h2><p class="module-frage">Was brauche ich, was kann ich?</p><p class="module-ziel">Die Jugendlichen können eigene Bedürfnisse und Stärken benennen.</p><p class="module-region">Region: Palmenstrand · Modul-Code für Neue: <b>KOMPASS-1</b></p></div>
+      </header>
+      
+    <article class="unit" data-unit="j1-e04" style="--mod:#22b8a3">
+      <header class="unit-head">
+        <span class="unit-nr">4</span>
+        <div class="unit-titles">
+          <h3>Das Glas der Bedürfnisse</h3>
+          <p class="unit-meta">Einheit 4 · 100 min Kurs</p>
+        </div>
+        <div class="unit-code"><span class="code">QUELLE</span><small>Ersatz: RUDER-STRUDEL-85</small></div>
+      </header>
+      <p class="unit-kurz">Bedürfnisse werden als innere Tanks greifbar: Die Gruppe füllt anonym das Glas der Bedürfnisse, und jede Person schaut, welcher eigene Tank gerade leer ist.</p>
+      <div class="unit-grid">
+        <section>
+          <h4>Kursziele</h4>
+          <ul><li>unterscheiden Bedürfnisse von Wünschen und ordnen sie sechs Bereichen zu</li><li>benennen anonym, was sie brauchen, und sehen, was die Gruppe teilt</li><li>schätzen ein, welche eigenen Bedürfnisse gerade gut und welche wenig erfüllt sind</li><li>planen einen kleinen Schritt, der einen leeren Tank etwas auffüllt</li></ul>
+        </section>
+        <section>
+          <h4>Im Spiel</h4>
+          <p><b>Die sechs Tanks von Muschelbucht</b> · Palmenstrand</p>
+          <p class="muted">Quest-Daten folgen mit dem Inhalts-Paket der Region.</p>
+          
+        </section>
+        <section class="bridge">
+          <h4>Brücken in den Unterricht</h4>
+          <p><b>Rückseite des Aufnähers:</b> <span class="muted">folgt</span></p>
+          <p><b>Echte-Welt-Karte:</b> <span class="muted">folgt</span></p>
+          <p><b>Debrief:</b></p>
+          <p class="muted">folgt</p>
+        </section>
+      </div>
+    </article>
+    <article class="unit" data-unit="j1-e05" style="--mod:#22b8a3">
+      <header class="unit-head">
+        <span class="unit-nr">5</span>
+        <div class="unit-titles">
+          <h3>Zwischen laut und leise</h3>
+          <p class="unit-meta">Einheit 5 · 100 min Kurs</p>
+        </div>
+        <div class="unit-code"><span class="code">BRISE</span><small>Ersatz: KRAEHE-HASE-41</small></div>
+      </header>
+      <p class="unit-kurz">Die Jugendlichen schätzen ein, wo sie zwischen Gegensätzen wie laut und leise stehen, vergleichen das mit dem Blick der Gruppe und erleben Unterschiede als Vielfalt.</p>
+      <div class="unit-grid">
+        <section>
+          <h4>Kursziele</h4>
+          <ul><li>schätzen sich auf acht Gegensatzpaaren ein und merken, dass sie je nach Situation anders sind</li><li>vergleichen Selbst- und Fremdbild und benennen, was sie überrascht</li><li>beschreiben Unterschiede in der Gruppe, ohne sie als besser oder schlechter zu bewerten</li><li>probieren den Dankbarkeitsblitz als kurzen Skill aus</li></ul>
+        </section>
+        <section>
+          <h4>Im Spiel</h4>
+          <p><b>Ebbe und Flut</b> · Palmenstrand</p>
+          <p class="muted">Quest-Daten folgen mit dem Inhalts-Paket der Region.</p>
+          
+        </section>
+        <section class="bridge">
+          <h4>Brücken in den Unterricht</h4>
+          <p><b>Rückseite des Aufnähers:</b> <span class="muted">folgt</span></p>
+          <p><b>Echte-Welt-Karte:</b> <span class="muted">folgt</span></p>
+          <p><b>Debrief:</b></p>
+          <p class="muted">folgt</p>
+        </section>
+      </div>
+    </article>
+    <article class="unit" data-unit="j1-e06" style="--mod:#22b8a3">
+      <header class="unit-head">
+        <span class="unit-nr">6</span>
+        <div class="unit-titles">
+          <h3>Mein Baum der Stärke</h3>
+          <p class="unit-meta">Einheit 6 · 100 min Kurs · Stempel „Stärken-Finder“</p>
+        </div>
+        <div class="unit-code"><span class="code">EICHE</span><small>Ersatz: SEEHUND-GROTTE-97</small></div>
+      </header>
+      <p class="unit-kurz">Die Jugendlichen gestalten einen Baum aus dem, was sie hält, was sie können, was in ihnen wächst und worauf sie stolz sind – und bekommen von der Gruppe Stärken zurückgemeldet.</p>
+      <div class="unit-grid">
+        <section>
+          <h4>Kursziele</h4>
+          <ul><li>benennen Ressourcen, Stärken und Erfolge und halten sie im eigenen Baum fest</li><li>beschreiben Stärken anderer an einem konkret beobachteten Verhalten</li><li>nehmen Rückmeldungen der Gruppe zu eigenen Stärken an</li><li>probieren den Bodyscan als Übung zum Runterkommen aus</li></ul>
+        </section>
+        <section>
+          <h4>Im Spiel</h4>
+          <p><b>Die Wurzeln der alten Mangrove</b> · Palmenstrand</p>
+          <p class="muted">Quest-Daten folgen mit dem Inhalts-Paket der Region.</p>
+          
+        </section>
+        <section class="bridge">
+          <h4>Brücken in den Unterricht</h4>
+          <p><b>Rückseite des Aufnähers:</b> <span class="muted">folgt</span></p>
+          <p><b>Echte-Welt-Karte:</b> <span class="muted">folgt</span></p>
+          <p><b>Debrief:</b></p>
+          <p class="muted">folgt</p>
+        </section>
+      </div>
+    </article>
+    </section>
+    <section class="module" style="--mod:#3fb954">
+      <header class="module-head">
+        <span class="module-nr">M2</span>
+        <div><h2>Gefühle verstehen</h2><p class="module-frage">Was fühle ich – und wozu?</p><p class="module-ziel">Die Jugendlichen benennen Gefühle genauer, spüren sie im Körper und kennen ihre Funktion.</p><p class="module-region">Region: Dschungel · Modul-Code für Neue: <b>KOMPASS-2</b></p></div>
+      </header>
+      
+    <article class="unit" data-unit="j1-e07" style="--mod:#3fb954">
+      <header class="unit-head">
+        <span class="unit-nr">7</span>
+        <div class="unit-titles">
+          <h3>Was sind Gefühle – und wozu sind sie gut?</h3>
+          <p class="unit-meta">Einheit 7 · 100 min Kurs</p>
+        </div>
+        <div class="unit-code"><span class="code">FUCHS</span><small>Ersatz: BAUMHAUS-NEST-53</small></div>
+      </header>
+      <p class="unit-kurz">Die Gruppe sammelt, welche Gefühle sie kennt, ordnet sie sechs Grundgefühlen zu und entdeckt, dass jedes Gefühl eine Botschaft hat – auch die unangenehmen.</p>
+      <div class="unit-grid">
+        <section>
+          <h4>Kursziele</h4>
+          <ul><li>benennen sechs Grundgefühle und ordnen ihnen weitere Gefühlswörter zu</li><li>erklären an Beispielen, welche Botschaft ein Gefühl hat und wozu auch unangenehme Gefühle gut sind</li><li>erkennen Gefühle an Gesicht und Haltung und stellen sie ohne Worte dar</li><li>üben, mit allen Sinnen im Hier und Jetzt anzukommen</li></ul>
+        </section>
+        <section>
+          <h4>Im Spiel</h4>
+          <p><b>Die sechs Federn</b> · Dschungel</p>
+          <p class="muted">Quest-Daten folgen mit dem Inhalts-Paket der Region.</p>
+          
+        </section>
+        <section class="bridge">
+          <h4>Brücken in den Unterricht</h4>
+          <p><b>Rückseite des Aufnähers:</b> <span class="muted">folgt</span></p>
+          <p><b>Echte-Welt-Karte:</b> <span class="muted">folgt</span></p>
+          <p><b>Debrief:</b></p>
+          <p class="muted">folgt</p>
+        </section>
+      </div>
+    </article>
+    <article class="unit" data-unit="j1-e08" style="--mod:#3fb954">
+      <header class="unit-head">
+        <span class="unit-nr">8</span>
+        <div class="unit-titles">
+          <h3>Alles steht Kopf</h3>
+          <p class="unit-meta">Einheit 8 · 100 min Kurs</p>
+        </div>
+        <div class="unit-code"><span class="code">KRAKE</span><small>Ersatz: EULE-SPINNE-57</small></div>
+      </header>
+      <p class="unit-kurz">Ausschnitte aus den Filmen „Alles steht Kopf“ 1 und 2 zeigen, wie Gefühle das Steuer übernehmen; die Gruppe erarbeitet, warum jedes Gefühl seinen Platz hat – auch Kummer.</p>
+      <div class="unit-grid">
+        <section>
+          <h4>Kursziele</h4>
+          <ul><li>erkennen Gefühle in Filmszenen und beschreiben, woran sie sie erkennen</li><li>unterscheiden angenehme und unangenehme Gefühle und begründen, wozu auch unangenehme gut sind</li><li>beschreiben mit dem Bild vom Steuerpult, welches Gefühl in einer Situation ihr Handeln bestimmt</li></ul>
+        </section>
+        <section>
+          <h4>Im Spiel</h4>
+          <p><b>Wer steht am Ruder?</b> · Dschungel</p>
+          <p class="muted">Quest-Daten folgen mit dem Inhalts-Paket der Region.</p>
+          
+        </section>
+        <section class="bridge">
+          <h4>Brücken in den Unterricht</h4>
+          <p><b>Rückseite des Aufnähers:</b> <span class="muted">folgt</span></p>
+          <p><b>Echte-Welt-Karte:</b> <span class="muted">folgt</span></p>
+          <p><b>Debrief:</b></p>
+          <p class="muted">folgt</p>
+        </section>
+      </div>
+    </article>
+    <article class="unit" data-unit="j1-e09" style="--mod:#3fb954">
+      <header class="unit-head">
+        <span class="unit-nr">9</span>
+        <div class="unit-titles">
+          <h3>Wo spüre ich Gefühle?</h3>
+          <p class="unit-meta">Einheit 9 · 100 min Kurs</p>
+        </div>
+        <div class="unit-code"><span class="code">MOOS</span><small>Ersatz: HASE-WASSERFALL-13</small></div>
+      </header>
+      <p class="unit-kurz">Die Jugendlichen zeichnen ihre Gefühls-Landkarte, finden ihr erstes Warnsignal für Wut und Angst und drücken Gefühle mit Haltung, Bewegung und Musik aus.</p>
+      <div class="unit-grid">
+        <section>
+          <h4>Kursziele</h4>
+          <ul><li>nehmen Gefühle als Signale im Körper wahr und zeichnen ihre Gefühls-Landkarte</li><li>benennen ihr erstes Warnsignal für Wut und für Angst</li><li>drücken Gefühle mit Haltung und Bewegung aus und erleben, wie Musik die Stimmung verändert</li></ul>
+        </section>
+        <section>
+          <h4>Im Spiel</h4>
+          <p><b>Das Frühwarnsystem</b> · Dschungel</p>
+          <p class="muted">Quest-Daten folgen mit dem Inhalts-Paket der Region.</p>
+          
+        </section>
+        <section class="bridge">
+          <h4>Brücken in den Unterricht</h4>
+          <p><b>Rückseite des Aufnähers:</b> <span class="muted">folgt</span></p>
+          <p><b>Echte-Welt-Karte:</b> <span class="muted">folgt</span></p>
+          <p><b>Debrief:</b></p>
+          <p class="muted">folgt</p>
+        </section>
+      </div>
+    </article>
+    <article class="unit" data-unit="j1-e10" style="--mod:#3fb954">
+      <header class="unit-head">
+        <span class="unit-nr">10</span>
+        <div class="unit-titles">
+          <h3>Gemischte Gefühle</h3>
+          <p class="unit-meta">Einheit 10 · 100 min Kurs · Stempel „Gefühls-Kenner“</p>
+        </div>
+        <div class="unit-code"><span class="code">LAGUNE</span><small>Ersatz: AHORN-PFAU-47</small></div>
+      </header>
+      <p class="unit-kurz">Mehrere Gefühle können gleichzeitig da sein und verschieden stark sein: Die Gruppe untersucht gemischte Gefühle und übt, ihre Stärke von 0 bis 10 einzuschätzen.</p>
+      <div class="unit-grid">
+        <section>
+          <h4>Kursziele</h4>
+          <ul><li>erkennen, dass mehrere Gefühle gleichzeitig da sein können, auch widersprüchliche</li><li>schätzen die Stärke eines Gefühls auf einer Skala von 0 bis 10 ein und begründen ihre Zahl</li><li>erleben, dass dieselbe Situation bei verschiedenen Menschen verschiedene Gefühle auslöst</li></ul>
+        </section>
+        <section>
+          <h4>Im Spiel</h4>
+          <p><b>Maëlles Abschiedsfest</b> · Dschungel</p>
+          <p class="muted">Quest-Daten folgen mit dem Inhalts-Paket der Region.</p>
+          
+        </section>
+        <section class="bridge">
+          <h4>Brücken in den Unterricht</h4>
+          <p><b>Rückseite des Aufnähers:</b> <span class="muted">folgt</span></p>
+          <p><b>Echte-Welt-Karte:</b> <span class="muted">folgt</span></p>
+          <p><b>Debrief:</b></p>
+          <p class="muted">folgt</p>
+        </section>
+      </div>
+    </article>
+    </section>
+    <section class="module" style="--mod:#6f86e6">
+      <header class="module-head">
+        <span class="module-nr">M3</span>
+        <div><h2>Gefühle regulieren (Skills)</h2><p class="module-frage">Was hilft mir, wenn es zu viel wird?</p><p class="module-ziel">Die Jugendlichen kennen mehrere Skills, wissen, welche bei welcher Anspannung helfen, und haben einen persönlichen Notfallplan.</p><p class="module-region">Region: Sturmklippen · Modul-Code für Neue: <b>KOMPASS-3</b></p></div>
+      </header>
+      
+    <article class="unit" data-unit="j1-e11" style="--mod:#6f86e6">
+      <header class="unit-head">
+        <span class="unit-nr">11</span>
+        <div class="unit-titles">
+          <h3>Skills und die Anspannungsskala</h3>
+          <p class="unit-meta">Einheit 11 · 100 min Kurs</p>
+        </div>
+        <div class="unit-code"><span class="code">WELLE</span><small>Ersatz: DRACHEN-SPECHT-91</small></div>
+      </header>
+      <p class="unit-kurz">Alle haben schon Skills – heute bekommen sie eine Ordnung: Die Anspannungsskala von 0 bis 100 zeigt, welche Skills bei welcher Zahl noch helfen.</p>
+      <div class="unit-grid">
+        <section>
+          <h4>Kursziele</h4>
+          <ul><li>erkennen, dass alle Momente ohne Kontrolle kennen und dass sie selbst schon Skills besitzen</li><li>erklären mit der Anspannungsskala, was bei 0–30, 30–70 und 70–100 in Kopf und Körper passiert</li><li>schätzen Alltagssituationen auf der Skala ein und ordnen passende Arten von Skills zu</li><li>messen ihre Anspannung vor und nach einem Spaziergang ohne Worte</li></ul>
+        </section>
+        <section>
+          <h4>Im Spiel</h4>
+          <p><b>Das Sturmbarometer</b> · Sturmklippen · etwa 18 min · Kurzfassung 3 min</p>
+          <p><b>Neu:</b> Ruhe: Puls · <span class="muted">Weg und Tor · Szene · Prüfung</span></p>
+          <p><b>Glimm:</b> „Bei Rot hört keiner zu.“</p>
+        </section>
+        <section class="bridge">
+          <h4>Brücken in den Unterricht</h4>
+          <p><b>Rückseite des Aufnähers:</b> „Anspannung 0–100: Grün, Gelb, Rot. Bei Rot erst runter, dann reden.“</p>
+          <p><b>Echte-Welt-Karte:</b> Schätz dreimal am Tag deine Zahl von 0 bis 100.</p>
+          <p><b>Debrief:</b></p>
+          <ol><li>Warum konnte man Luc bei 90 nicht zutexten?</li><li>Was half dir zurück auf Grün?</li></ol>
+        </section>
+      </div>
+    </article>
+    <article class="unit" data-unit="j1-e12" style="--mod:#6f86e6">
+      <header class="unit-head">
+        <span class="unit-nr">12</span>
+        <div class="unit-titles">
+          <h3>Skills über Körper und Atem</h3>
+          <p class="unit-meta">Einheit 12 · 100 min Kurs</p>
+        </div>
+        <div class="unit-code"><span class="code">ROBBE</span><small>Ersatz: NEBEL-BUSSARD-35</small></div>
+      </header>
+      <p class="unit-kurz">Atem, Bewegung und Muskeln: Die Jugendlichen testen Körper-Skills wie in einem Experiment – Zahl vorher, Skill, Zahl nachher – und finden heraus, was bei ihnen wirkt.</p>
+      <div class="unit-grid">
+        <section>
+          <h4>Kursziele</h4>
+          <ul><li>probieren fünf Atem-Skills aus und bewerten sie auf dem Skills-Tester</li><li>erleben im Experiment, dass kurze, intensive Bewegung die Anspannung senkt</li><li>üben Anspannen und Loslassen so, dass es auch unauffällig im Unterricht geht</li><li>wählen einen Favoriten und legen fest, bis zu welcher Zahl er hilft</li></ul>
+        </section>
+        <section>
+          <h4>Im Spiel</h4>
+          <p><b>Das Skills-Labor</b> · Sturmklippen</p>
+          <p class="muted">Quest-Daten folgen mit dem Inhalts-Paket der Region.</p>
+          
+        </section>
+        <section class="bridge">
+          <h4>Brücken in den Unterricht</h4>
+          <p><b>Rückseite des Aufnähers:</b> <span class="muted">folgt</span></p>
+          <p><b>Echte-Welt-Karte:</b> <span class="muted">folgt</span></p>
+          <p><b>Debrief:</b></p>
+          <p class="muted">folgt</p>
+        </section>
+      </div>
+    </article>
+    <article class="unit" data-unit="j1-e13" style="--mod:#6f86e6">
+      <header class="unit-head">
+        <span class="unit-nr">13</span>
+        <div class="unit-titles">
+          <h3>Skills über die Sinne</h3>
+          <p class="unit-meta">Einheit 13 · 100 min Kurs</p>
+        </div>
+        <div class="unit-code"><span class="code">KIESEL</span><small>Ersatz: GANS-NACHT-79</small></div>
+      </header>
+      <p class="unit-kurz">Düfte, Tasten, Kälte, Musik und Klang: Die Jugendlichen testen Sinnes-Skills, finden ihren Duft und stellen eine Skills-Playlist zum Runterkommen und Aufladen zusammen.</p>
+      <div class="unit-grid">
+        <section>
+          <h4>Kursziele</h4>
+          <ul><li>leiten 5-4-3-2-1 zu zweit an und erklären, warum die Sinne ins Hier und Jetzt zurückholen</li><li>testen Düfte auf Riechstreifen und ordnen sie Situationen wie Wut, Angst oder Müdigkeit zu</li><li>finden in der Sinneskiste einen Gegenstand für die Hosentasche und probieren einen Kälte-Skill aus</li><li>stellen eine Skills-Playlist mit Songs zum Runterkommen und zum Aufladen zusammen</li></ul>
+        </section>
+        <section>
+          <h4>Im Spiel</h4>
+          <p><b>Die Klangschlucht</b> · Sturmklippen</p>
+          <p class="muted">Quest-Daten folgen mit dem Inhalts-Paket der Region.</p>
+          
+        </section>
+        <section class="bridge">
+          <h4>Brücken in den Unterricht</h4>
+          <p><b>Rückseite des Aufnähers:</b> <span class="muted">folgt</span></p>
+          <p><b>Echte-Welt-Karte:</b> <span class="muted">folgt</span></p>
+          <p><b>Debrief:</b></p>
+          <p class="muted">folgt</p>
+        </section>
+      </div>
+    </article>
+    <article class="unit" data-unit="j1-e14" style="--mod:#6f86e6">
+      <header class="unit-head">
+        <span class="unit-nr">14</span>
+        <div class="unit-titles">
+          <h3>Achtsamkeit und Kopf-Skills</h3>
+          <p class="unit-meta">Einheit 14 · 100 min Kurs</p>
+        </div>
+        <div class="unit-code"><span class="code">BUCHT</span><small>Ersatz: KORALLE-BRUECKE-23</small></div>
+      </header>
+      <p class="unit-kurz">Mit dem Gedankenschiffchen lassen die Jugendlichen Gedanken vorbeiziehen, testen Kopf-Skills für mittlere Anspannung und gestalten nach einer Traumreise ihren sicheren Ort.</p>
+      <div class="unit-grid">
+        <section>
+          <h4>Kursziele</h4>
+          <ul><li>beschreiben nach dem Gedankenschiffchen, wie es ist, Gedanken zu beobachten, statt ihnen zu folgen</li><li>testen Kopf-Skills und erklären, warum sie bei Gelb helfen und bei Rot kaum</li><li>essen ein kleines Stück Obst oder Schokolade achtsam mit allen Sinnen</li><li>gestalten nach einer Traumreise einen sicheren Ort, den sie in Gedanken aufsuchen können</li></ul>
+        </section>
+        <section>
+          <h4>Im Spiel</h4>
+          <p><b>Die Irrlichter</b> · Sturmklippen</p>
+          <p class="muted">Quest-Daten folgen mit dem Inhalts-Paket der Region.</p>
+          
+        </section>
+        <section class="bridge">
+          <h4>Brücken in den Unterricht</h4>
+          <p><b>Rückseite des Aufnähers:</b> <span class="muted">folgt</span></p>
+          <p><b>Echte-Welt-Karte:</b> <span class="muted">folgt</span></p>
+          <p><b>Debrief:</b></p>
+          <p class="muted">folgt</p>
+        </section>
+      </div>
+    </article>
+    <article class="unit" data-unit="j1-e15" style="--mod:#6f86e6">
+      <header class="unit-head">
+        <span class="unit-nr">15</span>
+        <div class="unit-titles">
+          <h3>Mein Skills-Koffer und Ampelplan</h3>
+          <p class="unit-meta">Einheit 15 · 100 min Kurs · Stempel „Skills-Profi“</p>
+        </div>
+        <div class="unit-code"><span class="code">GIPFEL</span><small>Ersatz: BAER-FLAGGE-67</small></div>
+      </header>
+      <p class="unit-kurz">Das Glas der Bedürfnisse wird wieder geöffnet, dann packt jede Person ihren Skills-Koffer, erstellt einen Ampelplan für Grün, Gelb und Rot und gestaltet eine Notfallkarte.</p>
+      <div class="unit-grid">
+        <section>
+          <h4>Kursziele</h4>
+          <ul><li>verbinden leere Bedürfnis-Tanks aus Einheit 4 mit Anspannung und passenden Skills</li><li>stellen aus ihren Testergebnissen einen persönlichen Skills-Koffer mit fünf Fächern zusammen</li><li>erstellen einen Ampelplan mit Warnsignalen, Skills und mindestens einer erreichbaren erwachsenen Person</li><li>leiten der Gruppe ihren Lieblings-Skill an</li></ul>
+        </section>
+        <section>
+          <h4>Im Spiel</h4>
+          <p><b>Der Gewitter-Titan</b> · Sturmklippen</p>
+          <p class="muted">Quest-Daten folgen mit dem Inhalts-Paket der Region.</p>
+          
+        </section>
+        <section class="bridge">
+          <h4>Brücken in den Unterricht</h4>
+          <p><b>Rückseite des Aufnähers:</b> <span class="muted">folgt</span></p>
+          <p><b>Echte-Welt-Karte:</b> <span class="muted">folgt</span></p>
+          <p><b>Debrief:</b></p>
+          <p class="muted">folgt</p>
+        </section>
+      </div>
+    </article>
+    </section>
+    <section class="module" style="--mod:#9b5cff">
+      <header class="module-head">
+        <span class="module-nr">M4</span>
+        <div><h2>Meine Gedanken</h2><p class="module-frage">Was denke ich über mich – und stimmt das?</p><p class="module-ziel">Die Jugendlichen erkennen belastende Gedanken und können sie überprüfen und umformulieren.</p><p class="module-region">Region: Flüstermoor · Modul-Code für Neue: <b>KOMPASS-4</b></p></div>
+      </header>
+      
+    <article class="unit" data-unit="j1-e16" style="--mod:#9b5cff">
+      <header class="unit-head">
+        <span class="unit-nr">16</span>
+        <div class="unit-titles">
+          <h3>Was sind Glaubenssätze?</h3>
+          <p class="unit-meta">Einheit 16 · 100 min Kurs</p>
+        </div>
+        <div class="unit-code"><span class="code">SEGEL</span><small>Ersatz: ORCA-PFAU-11</small></div>
+      </header>
+      <p class="unit-kurz">Zwischen Situation und Gefühl steht ein Gedanke: Die Gruppe entdeckt Glaubenssätze – Sätze über sich selbst, die helfen oder bremsen – und merkt, dass viele dieselben kennen.</p>
+      <div class="unit-grid">
+        <section>
+          <h4>Kursziele</h4>
+          <ul><li>verstehen an Beispielen, dass dieselbe Situation je nach Gedanke zu verschiedenen Gefühlen und Handlungen führt</li><li>erklären, was Glaubenssätze sind, und unterscheiden hilfreiche von bremsenden Sätzen</li><li>nennen mögliche Quellen von Glaubenssätzen: einzelne Erfahrungen, Sprüche anderer, Vergleiche, Social Media</li><li>erleben, dass viele in der Gruppe dieselben bremsenden Sätze kennen</li></ul>
+        </section>
+        <section>
+          <h4>Im Spiel</h4>
+          <p><b>Die Flüstersteine</b> · Flüstermoor</p>
+          <p class="muted">Quest-Daten folgen mit dem Inhalts-Paket der Region.</p>
+          
+        </section>
+        <section class="bridge">
+          <h4>Brücken in den Unterricht</h4>
+          <p><b>Rückseite des Aufnähers:</b> <span class="muted">folgt</span></p>
+          <p><b>Echte-Welt-Karte:</b> <span class="muted">folgt</span></p>
+          <p><b>Debrief:</b></p>
+          <p class="muted">folgt</p>
+        </section>
+      </div>
+    </article>
+    <article class="unit" data-unit="j1-e17" style="--mod:#9b5cff">
+      <header class="unit-head">
+        <span class="unit-nr">17</span>
+        <div class="unit-titles">
+          <h3>Meine Glaubenssätze</h3>
+          <p class="unit-meta">Einheit 17 · 100 min Kurs · <b>Lines &amp; Veils</b></p>
+        </div>
+        <div class="unit-code"><span class="code">WURZEL</span><small>Ersatz: SCHILF-KRAKE-55</small></div>
+      </header>
+      <p class="unit-kurz">Jede Person schaut in Ruhe und nur für sich auf die eigenen bremsenden Glaubenssätze: woher sie kommen, ob sie heute noch stimmen und wo sie im Alltag bremsen.</p>
+      <div class="unit-grid">
+        <section>
+          <h4>Kursziele</h4>
+          <ul><li>schreiben eigene bremsende Glaubenssätze auf und fragen nach ihrer Herkunft</li><li>schätzen ein, wie sehr diese Sätze heute noch stimmen, und erkennen, wo sie im Alltag bremsen</li><li>erleben eine Runde, in der die Gruppe zuhört, ohne zu bewerten oder Ratschläge zu geben</li><li>lenken zum Schluss den Blick bewusst auf etwas Gutes</li></ul>
+        </section>
+        <section>
+          <h4>Im Spiel</h4>
+          <p><b>Die Stille Lichtung</b> · Flüstermoor</p>
+          <p class="muted">Quest-Daten folgen mit dem Inhalts-Paket der Region.</p>
+          
+        </section>
+        <section class="bridge">
+          <h4>Brücken in den Unterricht</h4>
+          <p><b>Rückseite des Aufnähers:</b> <span class="muted">folgt</span></p>
+          <p><b>Echte-Welt-Karte:</b> <span class="muted">folgt</span></p>
+          <p><b>Debrief:</b></p>
+          <p class="muted">folgt</p>
+        </section>
+      </div>
+    </article>
+    <article class="unit" data-unit="j1-e18" style="--mod:#9b5cff">
+      <header class="unit-head">
+        <span class="unit-nr">18</span>
+        <div class="unit-titles">
+          <h3>Der kritische Detektiv</h3>
+          <p class="unit-meta">Einheit 18 · 100 min Kurs</p>
+        </div>
+        <div class="unit-code"><span class="code">LUCHS</span><small>Ersatz: MEER-ELSTER-95</small></div>
+      </header>
+      <p class="unit-kurz">Die Jugendlichen prüfen zwei ihrer Glaubenssätze wie Detektive, formulieren nach sechs Regeln realistische neue Sätze und nehmen sie auf Kärtchen mit in den Alltag.</p>
+      <div class="unit-grid">
+        <section>
+          <h4>Kursziele</h4>
+          <ul><li>sammeln Beweise für und gegen einen eigenen bremsenden Glaubenssatz und unterscheiden Tatsachen von Urteilen</li><li>formulieren nach sechs Regeln einen realistischen, hilfreichen neuen Satz</li><li>gestalten Kärtchen mit ihren neuen Sätzen für den Alltag</li><li>antworten im Spiel schnell und realistisch auf bremsende Sätze</li></ul>
+        </section>
+        <section>
+          <h4>Im Spiel</h4>
+          <p><b>Fall: Der Steinriese</b> · Flüstermoor</p>
+          <p class="muted">Quest-Daten folgen mit dem Inhalts-Paket der Region.</p>
+          
+        </section>
+        <section class="bridge">
+          <h4>Brücken in den Unterricht</h4>
+          <p><b>Rückseite des Aufnähers:</b> <span class="muted">folgt</span></p>
+          <p><b>Echte-Welt-Karte:</b> <span class="muted">folgt</span></p>
+          <p><b>Debrief:</b></p>
+          <p class="muted">folgt</p>
+        </section>
+      </div>
+    </article>
+    <article class="unit" data-unit="j1-e19" style="--mod:#9b5cff">
+      <header class="unit-head">
+        <span class="unit-nr">19</span>
+        <div class="unit-titles">
+          <h3>Neue Gedanken ausprobieren</h3>
+          <p class="unit-meta">Einheit 19 · 100 min Kurs · Stempel „Gedanken-Detektiv“</p>
+        </div>
+        <div class="unit-code"><span class="code">KNOSPE</span><small>Ersatz: HUEGEL-BUSSARD-39</small></div>
+      </header>
+      <p class="unit-kurz">Im Rollenspiel erleben die Jugendlichen, wie ein neuer Satz Haltung und Ausgang einer Szene verändert, verbinden ihn mit ihrem Baum der Stärke und testen ihn eine Woche lang im Alltag.</p>
+      <div class="unit-grid">
+        <section>
+          <h4>Kursziele</h4>
+          <ul><li>erleben im Rollenspiel, wie ein anderer Gedanke Körperhaltung, Stimme und Verhalten verändert</li><li>verbinden ihre neuen Sätze mit Stärken und Ressourcen aus ihrem Baum der Stärke</li><li>planen eine Situation, in der sie ihren neuen Satz im Alltag testen, und sammeln eine Woche lang Beweise</li></ul>
+        </section>
+        <section>
+          <h4>Im Spiel</h4>
+          <p><b>Pits Probelauf</b> · Flüstermoor</p>
+          <p class="muted">Quest-Daten folgen mit dem Inhalts-Paket der Region.</p>
+          
+        </section>
+        <section class="bridge">
+          <h4>Brücken in den Unterricht</h4>
+          <p><b>Rückseite des Aufnähers:</b> <span class="muted">folgt</span></p>
+          <p><b>Echte-Welt-Karte:</b> <span class="muted">folgt</span></p>
+          <p><b>Debrief:</b></p>
+          <p class="muted">folgt</p>
+        </section>
+      </div>
+    </article>
+    </section>
+    <section class="module" style="--mod:#d9a800">
+      <header class="module-head">
+        <span class="module-nr">M5</span>
+        <div><h2>Kommunikation &amp; Grenzen</h2><p class="module-frage">Wie sage ich, was ich fühle und brauche?</p><p class="module-ziel">Die Jugendlichen formulieren Ich-Botschaften und setzen Grenzen klar und respektvoll.</p><p class="module-region">Region: Markt-Hügel · Modul-Code für Neue: <b>KOMPASS-5</b></p></div>
+      </header>
+      
+    <article class="unit" data-unit="j1-e20" style="--mod:#d9a800">
+      <header class="unit-head">
+        <span class="unit-nr">20</span>
+        <div class="unit-titles">
+          <h3>Verbal und nonverbal</h3>
+          <p class="unit-meta">Einheit 20 · 100 min Kurs</p>
+        </div>
+        <div class="unit-code"><span class="code">ORCA</span><small>Ersatz: GIPFEL-AUFWIND-54</small></div>
+      </header>
+      <p class="unit-kurz">Worte, Stimme und Körper sagen nicht immer dasselbe: Die Gruppe erlebt, wie viel ohne Worte ankommt, beschreibt Bilder nur mit Sprache und übersetzt Emojis in Sätze.</p>
+      <div class="unit-grid">
+        <section>
+          <h4>Kursziele</h4>
+          <ul><li>unterscheiden, was Worte, Stimme und Körper jeweils mitteilen, und nennen Beispiele für jeden Kanal</li><li>erleben im Spiel, wie viel Körpersprache verrät – und wo Worte unverzichtbar sind</li><li>beschreiben ein Bild so genau, dass jemand es nachzeichnen kann, und erfahren, wie Rückfragen das Verstehen verbessern</li><li>erklären, warum Nachrichten und Emojis leicht missverstanden werden, und nennen eine Strategie dagegen</li></ul>
+        </section>
+        <section>
+          <h4>Im Spiel</h4>
+          <p><b>Die Stummen vom Markt</b> · Markt-Hügel</p>
+          <p class="muted">Quest-Daten folgen mit dem Inhalts-Paket der Region.</p>
+          
+        </section>
+        <section class="bridge">
+          <h4>Brücken in den Unterricht</h4>
+          <p><b>Rückseite des Aufnähers:</b> <span class="muted">folgt</span></p>
+          <p><b>Echte-Welt-Karte:</b> <span class="muted">folgt</span></p>
+          <p><b>Debrief:</b></p>
+          <p class="muted">folgt</p>
+        </section>
+      </div>
+    </article>
+    <article class="unit" data-unit="j1-e21" style="--mod:#d9a800">
+      <header class="unit-head">
+        <span class="unit-nr">21</span>
+        <div class="unit-titles">
+          <h3>Ich-Botschaften und Zuhören</h3>
+          <p class="unit-meta">Einheit 21 · 100 min Kurs</p>
+        </div>
+        <div class="unit-code"><span class="code">EULE</span><small>Ersatz: WINDRAD-HITZE-10</small></div>
+      </header>
+      <p class="unit-kurz">Aus Vorwürfen werden Ich-Botschaften: Die Gruppe lernt die Formel „Ich fühle mich …, wenn …, weil … Ich wünsche mir …“ und übt, so zuzuhören, dass sich jemand verstanden fühlt.</p>
+      <div class="unit-grid">
+        <section>
+          <h4>Kursziele</h4>
+          <ul><li>unterscheiden Du- und Ich-Botschaften und beschreiben, wie beide auf das Gegenüber wirken</li><li>formulieren Du-Botschaften in Ich-Botschaften um und schreiben eine Ich-Botschaft zu einer eigenen Situation</li><li>hören einer Person zwei Minuten zu, ohne zu unterbrechen, und fassen das Gehörte samt Gefühl zusammen</li></ul>
+        </section>
+        <section>
+          <h4>Im Spiel</h4>
+          <p><b>Der Klarklang</b> · Markt-Hügel</p>
+          <p class="muted">Quest-Daten folgen mit dem Inhalts-Paket der Region.</p>
+          
+        </section>
+        <section class="bridge">
+          <h4>Brücken in den Unterricht</h4>
+          <p><b>Rückseite des Aufnähers:</b> <span class="muted">folgt</span></p>
+          <p><b>Echte-Welt-Karte:</b> <span class="muted">folgt</span></p>
+          <p><b>Debrief:</b></p>
+          <p class="muted">folgt</p>
+        </section>
+      </div>
+    </article>
+    <article class="unit" data-unit="j1-e22" style="--mod:#d9a800">
+      <header class="unit-head">
+        <span class="unit-nr">22</span>
+        <div class="unit-titles">
+          <h3>Grenzen erkennen</h3>
+          <p class="unit-meta">Einheit 22 · 100 min Kurs</p>
+        </div>
+        <div class="unit-code"><span class="code">STRAND</span><small>Ersatz: HUETTE-HORIZONT-42</small></div>
+      </header>
+      <p class="unit-kurz">Grenzen sind unsichtbar und bei jedem anders: Die Gruppe sortiert Grenz-Situationen, spürt beim Stopp-Abstand die eigene Wohlfühl-Distanz und sammelt, wie man ohne Worte zeigt, was man will – und was nicht.</p>
+      <div class="unit-grid">
+        <section>
+          <h4>Kursziele</h4>
+          <ul><li>unterscheiden körperliche, emotionale und digitale Grenzen und ordnen Alltagssituationen zu</li><li>erleben beim Stopp-Abstand, dass jeder Mensch eine andere Wohlfühl-Distanz hat und dass sie sich je nach Person ändert</li><li>benennen eigene Körpersignale, an denen sie merken, dass eine Grenze erreicht ist</li><li>sammeln Möglichkeiten, Gefühle und ein Nein auch ohne Worte zu zeigen, und erkennen, wo Worte nötig sind</li></ul>
+        </section>
+        <section>
+          <h4>Im Spiel</h4>
+          <p><b>Die unsichtbaren Gärten</b> · Markt-Hügel</p>
+          <p class="muted">Quest-Daten folgen mit dem Inhalts-Paket der Region.</p>
+          
+        </section>
+        <section class="bridge">
+          <h4>Brücken in den Unterricht</h4>
+          <p><b>Rückseite des Aufnähers:</b> <span class="muted">folgt</span></p>
+          <p><b>Echte-Welt-Karte:</b> <span class="muted">folgt</span></p>
+          <p><b>Debrief:</b></p>
+          <p class="muted">folgt</p>
+        </section>
+      </div>
+    </article>
+    <article class="unit" data-unit="j1-e23" style="--mod:#d9a800">
+      <header class="unit-head">
+        <span class="unit-nr">23</span>
+        <div class="unit-titles">
+          <h3>Grenzen setzen: Stopp!</h3>
+          <p class="unit-meta">Einheit 23 · 100 min Kurs · Stempel „Grenzen-Wächter“</p>
+        </div>
+        <div class="unit-code"><span class="code">IGEL</span><small>Ersatz: PILZ-WOLKE-98</small></div>
+      </header>
+      <p class="unit-kurz">Ein Stopp wirkt, wenn Worte, Stimme und Körper dasselbe sagen: Die Gruppe vergleicht drei Arten, Stopp zu sagen, verteidigt ihren „Garten“ und setzt in Rollenspielen Grenzen mit Ich-Botschaft und Körper.</p>
+      <div class="unit-grid">
+        <section>
+          <h4>Kursziele</h4>
+          <ul><li>beschreiben, was eine Grenze klar macht: Haltung, Blick, Hand, Stimme und kurze Worte ohne Lächeln</li><li>üben ein deutliches Stopp mit Stimme und Körper und steigern die Lautstärke im eigenen Tempo</li><li>setzen in Rollenspielen Grenzen mit Ich-Botschaft und Körper, auch wenn das Gegenüber nachhakt</li><li>notieren einen eigenen Stopp-Satz und eine Situation, in der sie ihn brauchen können</li></ul>
+        </section>
+        <section>
+          <h4>Im Spiel</h4>
+          <p><b>Der Garten-Wächter</b> · Markt-Hügel</p>
+          <p class="muted">Quest-Daten folgen mit dem Inhalts-Paket der Region.</p>
+          
+        </section>
+        <section class="bridge">
+          <h4>Brücken in den Unterricht</h4>
+          <p><b>Rückseite des Aufnähers:</b> <span class="muted">folgt</span></p>
+          <p><b>Echte-Welt-Karte:</b> <span class="muted">folgt</span></p>
+          <p><b>Debrief:</b></p>
+          <p class="muted">folgt</p>
+        </section>
+      </div>
+    </article>
+    </section>
+    <section class="module" style="--mod:#e85d2a">
+      <header class="module-head">
+        <span class="module-nr">M6</span>
+        <div><h2>Wenn es schwierig wird</h2><p class="module-frage">Was tue ich bei Konflikten, Gruppendruck und Mobbing?</p><p class="module-ziel">Die Jugendlichen kennen Wege aus Konflikten und wissen, wie sie sich und andere schützen.</p><p class="module-region">Region: Vulkan · Modul-Code für Neue: <b>KOMPASS-6</b></p></div>
+      </header>
+      
+    <article class="unit" data-unit="j1-e24" style="--mod:#e85d2a">
+      <header class="unit-head">
+        <span class="unit-nr">24</span>
+        <div class="unit-titles">
+          <h3>Konflikte lösen</h3>
+          <p class="unit-meta">Einheit 24 · 100 min Kurs</p>
+        </div>
+        <div class="unit-code"><span class="code">BIBER</span><small>Ersatz: SONNE-LACHS-78</small></div>
+      </header>
+      <p class="unit-kurz">Welches Tier bin ich im Streit? Die Gruppe entdeckt ihre Konfliktstile, lernt die Konflikt-Treppe kennen und spielt Alltagsstreits zweimal – so, wie sie oft laufen, und Stufe für Stufe.</p>
+      <div class="unit-grid">
+        <section>
+          <h4>Kursziele</h4>
+          <ul><li>erkennen den eigenen Konfliktstil und merken, dass er vom Gegenüber abhängt</li><li>beschreiben die fünf Stufen der Konflikt-Treppe und verbinden sie mit Skills aus den Modulen 3 und 5</li><li>wenden die Treppe im Rollenspiel auf einen Alltagskonflikt an</li><li>erleben im Schreiduell, warum niemand etwas versteht, wenn alle gleichzeitig reden</li></ul>
+        </section>
+        <section>
+          <h4>Im Spiel</h4>
+          <p><b>Die Friedenstreppe</b> · Vulkan</p>
+          <p class="muted">Quest-Daten folgen mit dem Inhalts-Paket der Region.</p>
+          
+        </section>
+        <section class="bridge">
+          <h4>Brücken in den Unterricht</h4>
+          <p><b>Rückseite des Aufnähers:</b> <span class="muted">folgt</span></p>
+          <p><b>Echte-Welt-Karte:</b> <span class="muted">folgt</span></p>
+          <p><b>Debrief:</b></p>
+          <p class="muted">folgt</p>
+        </section>
+      </div>
+    </article>
+    <article class="unit" data-unit="j1-e25" style="--mod:#e85d2a">
+      <header class="unit-head">
+        <span class="unit-nr">25</span>
+        <div class="unit-titles">
+          <h3>Gruppendruck und Nein sagen</h3>
+          <p class="unit-meta">Einheit 25 · 100 min Kurs</p>
+        </div>
+        <div class="unit-code"><span class="code">ANKER</span><small>Ersatz: KARTE-FACKEL-34</small></div>
+      </header>
+      <p class="unit-kurz">Wo fängt Mut an? Die Gruppe steckt ihre Komfortzonen ab, lernt vier Arten, Nein zu sagen, und probiert sie in typischen Druck-Situationen aus – vom Supermarkt bis zum Gruppenchat.</p>
+      <div class="unit-grid">
+        <section>
+          <h4>Kursziele</h4>
+          <ul><li>erkennen Situationen mit lautem und leisem Gruppendruck</li><li>erleben, dass Komfort-, Lern- und Panikzone bei jeder Person woanders liegen</li><li>kennen vier Arten, Nein zu sagen, und formulieren einen eigenen Nein-Satz</li><li>üben ein Nein unter Druck im Rollenspiel und erfahren, wie stark ein zweites Nein wirkt</li></ul>
+        </section>
+        <section>
+          <h4>Im Spiel</h4>
+          <p><b>Die Mutprobe am Krater</b> · Vulkan</p>
+          <p class="muted">Quest-Daten folgen mit dem Inhalts-Paket der Region.</p>
+          
+        </section>
+        <section class="bridge">
+          <h4>Brücken in den Unterricht</h4>
+          <p><b>Rückseite des Aufnähers:</b> <span class="muted">folgt</span></p>
+          <p><b>Echte-Welt-Karte:</b> <span class="muted">folgt</span></p>
+          <p><b>Debrief:</b></p>
+          <p class="muted">folgt</p>
+        </section>
+      </div>
+    </article>
+    <article class="unit" data-unit="j1-e26" style="--mod:#e85d2a">
+      <header class="unit-head">
+        <span class="unit-nr">26</span>
+        <div class="unit-titles">
+          <h3>Mobbing und Zivilcourage</h3>
+          <p class="unit-meta">Einheit 26 · 100 min Kurs · Stempel „Zivilcourage“ · <b>Lines &amp; Veils</b></p>
+        </div>
+        <div class="unit-code"><span class="code">ADLER</span><small>Ersatz: HAI-TAL-66</small></div>
+      </header>
+      <p class="unit-kurz">Wann ist ein Spaß kein Spaß mehr? Die Gruppe unterscheidet Spaß, Konflikt und Mobbing, versteht die Macht der Zuschauenden und baut Stufe für Stufe ihre Zivilcourage-Leiter.</p>
+      <div class="unit-grid">
+        <section>
+          <h4>Kursziele</h4>
+          <ul><li>unterscheiden Spaß, Konflikt und Mobbing anhand von vier Merkmalen</li><li>beschreiben die Rollen im Mobbing und erkennen, dass Zuschauende es beenden können</li><li>kennen sichere Handlungsmöglichkeiten auf der Zivilcourage-Leiter und wählen eine eigene Stufe</li><li>wissen, wo sie in Luxemburg und in der Schule Hilfe bekommen</li></ul>
+        </section>
+        <section>
+          <h4>Im Spiel</h4>
+          <p><b>Der Schatten-Chor</b> · Vulkan</p>
+          <p class="muted">Quest-Daten folgen mit dem Inhalts-Paket der Region.</p>
+          
+        </section>
+        <section class="bridge">
+          <h4>Brücken in den Unterricht</h4>
+          <p><b>Rückseite des Aufnähers:</b> <span class="muted">folgt</span></p>
+          <p><b>Echte-Welt-Karte:</b> <span class="muted">folgt</span></p>
+          <p><b>Debrief:</b></p>
+          <p class="muted">folgt</p>
+        </section>
+      </div>
+    </article>
+    </section>
+    <section class="module" style="--mod:#e06aa9">
+      <header class="module-head">
+        <span class="module-nr">M7</span>
+        <div><h2>Digitale Welt</h2><p class="module-frage">Was macht das Handy mit mir?</p><p class="module-ziel">Die Jugendlichen schätzen ihren Medienumgang ein und prüfen Inhalte kritisch.</p><p class="module-region">Region: Glimmerwolke · Modul-Code für Neue: <b>KOMPASS-7</b></p></div>
+      </header>
+      
+    <article class="unit" data-unit="j1-e27" style="--mod:#e06aa9">
+      <header class="unit-head">
+        <span class="unit-nr">27</span>
+        <div class="unit-titles">
+          <h3>Social Media und ich</h3>
+          <p class="unit-meta">Einheit 27 · 100 min Kurs</p>
+        </div>
+        <div class="unit-code"><span class="code">INSEL</span><small>Ersatz: KRANICH-ZAPFEN-22</small></div>
+      </header>
+      <p class="unit-kurz">Ehrlich, aber ohne erhobenen Zeigefinger: Die Gruppe vergleicht geschätzte und echte Bildschirmzeit, schaut hinter perfekte Bilder und macht einen eigenen Plan für ein Handy, das guttut.</p>
+      <div class="unit-grid">
+        <section>
+          <h4>Kursziele</h4>
+          <ul><li>vergleichen geschätzte und gemessene Bildschirmzeit und benennen, wie sie sich nach dem Scrollen fühlen</li><li>erklären, wie Apps Aufmerksamkeit binden und wie Vergleiche mit bearbeiteten Bildern wirken</li><li>erleben, wie ein ehrlich gemeinter positiver Kommentar wirkt, und schreiben selbst welche</li><li>legen einen persönlichen, machbaren Social-Media-Plan fest</li></ul>
+        </section>
+        <section>
+          <h4>Im Spiel</h4>
+          <p><b>Die Glimmerwolke</b> · Glimmerwolke</p>
+          <p class="muted">Quest-Daten folgen mit dem Inhalts-Paket der Region.</p>
+          
+        </section>
+        <section class="bridge">
+          <h4>Brücken in den Unterricht</h4>
+          <p><b>Rückseite des Aufnähers:</b> <span class="muted">folgt</span></p>
+          <p><b>Echte-Welt-Karte:</b> <span class="muted">folgt</span></p>
+          <p><b>Debrief:</b></p>
+          <p class="muted">folgt</p>
+        </section>
+      </div>
+    </article>
+    <article class="unit" data-unit="j1-e28" style="--mod:#e06aa9">
+      <header class="unit-head">
+        <span class="unit-nr">28</span>
+        <div class="unit-titles">
+          <h3>Echt oder fake? KI und Fake News</h3>
+          <p class="unit-meta">Einheit 28 · 100 min Kurs · Stempel „Fake-Checker“ · <b>Lines &amp; Veils</b></p>
+        </div>
+        <div class="unit-code"><span class="code">PERLE</span><small>Ersatz: AST-KIESEL-6</small></div>
+      </header>
+      <p class="unit-kurz">Echt oder KI? Die Gruppe testet ihren Blick im Real-or-Fake-Spiel, lernt die wichtigsten Begriffe, prüft Beiträge mit einer Checkliste und diskutiert, wofür KI hilft und wo sie gefährlich wird.</p>
+      <div class="unit-grid">
+        <section>
+          <h4>Kursziele</h4>
+          <ul><li>erklären KI, Deepfake, Fake News, Algorithmus und Filterblase in eigenen Worten</li><li>prüfen Bilder und Beiträge mit einer Checkliste und lesen quer, statt sich nur auf das Bild zu verlassen</li><li>wägen Nutzen und Risiken von KI ab und kennen die Grenze: Fälschungen von anderen sind Mobbing und können strafbar sein</li><li>bremsen sich mit einem Skill, bevor sie etwas teilen, das sie aufregt</li></ul>
+        </section>
+        <section>
+          <h4>Im Spiel</h4>
+          <p><b>Das Trugbild</b> · Glimmerwolke</p>
+          <p class="muted">Quest-Daten folgen mit dem Inhalts-Paket der Region.</p>
+          
+        </section>
+        <section class="bridge">
+          <h4>Brücken in den Unterricht</h4>
+          <p><b>Rückseite des Aufnähers:</b> <span class="muted">folgt</span></p>
+          <p><b>Echte-Welt-Karte:</b> <span class="muted">folgt</span></p>
+          <p><b>Debrief:</b></p>
+          <p class="muted">folgt</p>
+        </section>
+      </div>
+    </article>
+    </section>
+    <section class="module" style="--mod:#5fae5b">
+      <header class="module-head">
+        <span class="module-nr">M8</span>
+        <div><h2>Gesund &amp; stark</h2><p class="module-frage">Wie sorge ich für mich?</p><p class="module-ziel">Die Jugendlichen haben einen persönlichen, machbaren Gesund-Plan.</p><p class="module-region">Region: Quellental · Modul-Code für Neue: <b>KOMPASS-8</b></p></div>
+      </header>
+      
+    <article class="unit" data-unit="j1-e29" style="--mod:#5fae5b">
+      <header class="unit-head">
+        <span class="unit-nr">29</span>
+        <div class="unit-titles">
+          <h3>Gesund und stark</h3>
+          <p class="unit-meta">Einheit 29 · 100 min Kurs · Stempel „Gesund &amp; stark“</p>
+        </div>
+        <div class="unit-code"><span class="code">BAMBUS</span><small>Ersatz: LAGUNE-EICHHORN-62</small></div>
+      </header>
+      <p class="unit-kurz">Schlaf, Bewegung, Essen, Pausen und Stress hängen zusammen: Die Gruppe bezieht Position, packt einen Stress-Rucksack und plant einen kleinen Schritt, der wirklich machbar ist.</p>
+      <div class="unit-grid">
+        <section>
+          <h4>Kursziele</h4>
+          <ul><li>beziehen Stellung zu Fragen rund um Stress, Schlaf, Essen, Bewegung und Gruppendruck – und hören, wie andere es sehen</li><li>erkennen im Stress-Rucksack, was sie belastet und was sie entlastet, und verbinden das mit ihrem Skills-Koffer</li><li>planen einen kleinen, machbaren Schritt für ihre Gesundheit und legen ihn mit einem Wenn-dann-Satz fest</li><li>erleben den Bodyscan als Möglichkeit, abends zur Ruhe zu kommen</li></ul>
+        </section>
+        <section>
+          <h4>Im Spiel</h4>
+          <p><b>Die Nachtüberquerung</b> · Quellental</p>
+          <p class="muted">Quest-Daten folgen mit dem Inhalts-Paket der Region.</p>
+          
+        </section>
+        <section class="bridge">
+          <h4>Brücken in den Unterricht</h4>
+          <p><b>Rückseite des Aufnähers:</b> <span class="muted">folgt</span></p>
+          <p><b>Echte-Welt-Karte:</b> <span class="muted">folgt</span></p>
+          <p><b>Debrief:</b></p>
+          <p class="muted">folgt</p>
+        </section>
+      </div>
+    </article>
+    </section>
+    <section class="module" style="--mod:#b8a52a">
+      <header class="module-head">
+        <span class="module-nr">M9</span>
+        <div><h2>Abschluss</h2><p class="module-frage">Was nehme ich mit?</p><p class="module-ziel">Die Jugendlichen sehen, was sie gelernt haben, und verabschieden sich gut voneinander.</p><p class="module-region">Region: Leuchtturm · Modul-Code für Neue: <b>KOMPASS-9</b></p></div>
+      </header>
+      
+    <article class="unit" data-unit="j1-e30" style="--mod:#b8a52a">
+      <header class="unit-head">
+        <span class="unit-nr">30</span>
+        <div class="unit-titles">
+          <h3>Rückblick und Abschied</h3>
+          <p class="unit-meta">Einheit 30 · 100 min Kurs · Stempel „Skills-Legende“</p>
+        </div>
+        <div class="unit-code"><span class="code">MEER</span><small>Ersatz: BIBER-TANNE-92</small></div>
+      </header>
+      <p class="unit-kurz">Die letzte Einheit: Mit Skills-Pass, Glas und Baum schauen die Jugendlichen auf ihr Jahr, schreiben einen Brief an sich selbst und verabschieden sich wertschätzend voneinander.</p>
+      <div class="unit-grid">
+        <section>
+          <h4>Kursziele</h4>
+          <ul><li>blicken mit Skills-Pass und Jahreskurve auf ihr Jahr zurück und benennen, was sie gelernt haben</li><li>sehen an Plakat, Glas und Baum, was sich seit September verändert hat</li><li>schreiben einen Brief an sich selbst und geben einander wertschätzende Rückmeldungen</li><li>verabschieden sich bewusst voneinander und von der Leitung</li></ul>
+        </section>
+        <section>
+          <h4>Im Spiel</h4>
+          <p><b>Das Leuchtfeuer</b> · Leuchtturm</p>
+          <p class="muted">Quest-Daten folgen mit dem Inhalts-Paket der Region.</p>
+          
+        </section>
+        <section class="bridge">
+          <h4>Brücken in den Unterricht</h4>
+          <p><b>Rückseite des Aufnähers:</b> <span class="muted">folgt</span></p>
+          <p><b>Echte-Welt-Karte:</b> <span class="muted">folgt</span></p>
+          <p><b>Debrief:</b></p>
+          <p class="muted">folgt</p>
+        </section>
+      </div>
+    </article>
+    </section>
+    <section class="module" style="--mod:#556">
+      <header class="module-head"><span class="module-nr">J</span><div><h2>Joker-Einheiten</h2><p class="module-ziel">Event-Episoden, frei platzierbar, nie nötig für den Hauptweg. j08 „Der stille Abend“ steht nur in dieser Liste: ohne Timer, ohne Wertung, nur mit Lehrer-Code.</p></div></header>
+      
+    <article class="unit" data-unit="j1-j01" style="--mod:#556">
+      <header class="unit-head">
+        <span class="unit-nr">J1</span>
+        <div class="unit-titles">
+          <h3>Filmeinheit „Alles steht Kopf“</h3>
+          <p class="unit-meta">Joker · 200 min Kurs · passt nach Einheit 08</p>
+        </div>
+        <div class="unit-code"><span class="code">KRABBE</span><small>Ersatz: SEEHUND-VULKAN-22</small></div>
+      </header>
+      <p class="unit-kurz">Die Gruppe sieht an zwei Terminen den ganzen Film, beobachtet, welches Gefühl gerade am Steuer sitzt, und spielt danach selbst eine Konferenz der Gefühle.</p>
+      <div class="unit-grid">
+        <section>
+          <h4>Kursziele</h4>
+          <ul><li>verfolgen im ganzen Film, welches Gefühl gerade am Steuer sitzt und was es bei Riley auslöst</li><li>erklären, wozu Kummer im Film gebraucht wird und dass Gefühle gleichzeitig da sein können</li><li>übertragen das Bild vom Steuerpult in einer Improvisation auf eigene Alltagssituationen</li></ul>
+        </section>
+        <section>
+          <h4>Im Spiel</h4>
+          <p><b>Das Steuerhaus</b> · Dschungel</p>
+          <p class="muted">Quest-Daten folgen mit dem Inhalts-Paket der Region.</p>
+          
+        </section>
+        <section class="bridge">
+          <h4>Brücken in den Unterricht</h4>
+          <p><b>Rückseite des Aufnähers:</b> <span class="muted">folgt</span></p>
+          <p><b>Echte-Welt-Karte:</b> <span class="muted">folgt</span></p>
+          <p><b>Debrief:</b></p>
+          <p class="muted">folgt</p>
+        </section>
+      </div>
+    </article>
+    <article class="unit" data-unit="j1-j02" style="--mod:#556">
+      <header class="unit-head">
+        <span class="unit-nr">J2</span>
+        <div class="unit-titles">
+          <h3>Filmeinheit „Das Streben nach Glück“</h3>
+          <p class="unit-meta">Joker · 200 min Kurs · passt nach Einheit 19</p>
+        </div>
+        <div class="unit-code"><span class="code">LACHS</span><small>Ersatz: KRAEHE-BRUNNEN-66</small></div>
+      </header>
+      <p class="unit-kurz">An zwei Terminen sieht die Gruppe, wie Chris Gardner einen Rückschlag nach dem anderen erlebt, und untersucht, welche Gedanken, Menschen und Skills ihn weitermachen lassen.</p>
+      <div class="unit-grid">
+        <section>
+          <h4>Kursziele</h4>
+          <ul><li>beschreiben Rückschläge, Gefühle und Gedanken einer Filmfigur genau</li><li>formulieren zu bremsenden Gedanken realistische Gegensätze, wie in den Einheiten 18 und 19 geübt</li><li>erkennen, welche Menschen, Stärken und Skills in schweren Zeiten tragen</li><li>prüfen kritisch, was der Film über Glück, Erfolg und Anstrengung erzählt</li></ul>
+        </section>
+        <section>
+          <h4>Im Spiel</h4>
+          <p><b>Die Pechsträhne-Regatta</b> · Flüstermoor</p>
+          <p class="muted">Quest-Daten folgen mit dem Inhalts-Paket der Region.</p>
+          
+        </section>
+        <section class="bridge">
+          <h4>Brücken in den Unterricht</h4>
+          <p><b>Rückseite des Aufnähers:</b> <span class="muted">folgt</span></p>
+          <p><b>Echte-Welt-Karte:</b> <span class="muted">folgt</span></p>
+          <p><b>Debrief:</b></p>
+          <p class="muted">folgt</p>
+        </section>
+      </div>
+    </article>
+    <article class="unit" data-unit="j1-j03" style="--mod:#556">
+      <header class="unit-head">
+        <span class="unit-nr">J3</span>
+        <div class="unit-titles">
+          <h3>Doku „Das Dilemma mit den sozialen Medien“</h3>
+          <p class="unit-meta">Joker · 100 min Kurs · passt nach Einheit 28</p>
+        </div>
+        <div class="unit-code"><span class="code">FALKE</span><small>Ersatz: RUDER-HUEGEL-10</small></div>
+      </header>
+      <p class="unit-kurz">Die Gruppe sieht ausgewählte Ausschnitte der Doku, stoppt viermal und prüft mit kurzen Übungen, wie Apps Aufmerksamkeit binden, Vergleiche anheizen und Meinungsblasen bauen.</p>
+      <div class="unit-grid">
+        <section>
+          <h4>Kursziele</h4>
+          <ul><li>erklären, wie Apps mit Benachrichtigungen, endlosem Scrollen und Empfehlungen Aufmerksamkeit binden</li><li>erleben in einem Bewegungsspiel, wie eine Meinungsblase entsteht</li><li>prüfen die Doku selbst kritisch: Wo informiert sie, wo spitzt sie zu?</li><li>planen ein eigenes Handy-Experiment für eine Woche</li></ul>
+        </section>
+        <section>
+          <h4>Im Spiel</h4>
+          <p><b>Der Kontrollraum</b> · Glimmerwolke</p>
+          <p class="muted">Quest-Daten folgen mit dem Inhalts-Paket der Region.</p>
+          
+        </section>
+        <section class="bridge">
+          <h4>Brücken in den Unterricht</h4>
+          <p><b>Rückseite des Aufnähers:</b> <span class="muted">folgt</span></p>
+          <p><b>Echte-Welt-Karte:</b> <span class="muted">folgt</span></p>
+          <p><b>Debrief:</b></p>
+          <p class="muted">folgt</p>
+        </section>
+      </div>
+    </article>
+    <article class="unit" data-unit="j1-j04" style="--mod:#556">
+      <header class="unit-head">
+        <span class="unit-nr">J4</span>
+        <div class="unit-titles">
+          <h3>Naturtag mit Achtsamkeits-Parcours</h3>
+          <p class="unit-meta">Joker · 200 min Kurs · passt nach Einheit 29</p>
+        </div>
+        <div class="unit-code"><span class="code">WALD</span><small>Ersatz: WAL-GLUEHWURM-2</small></div>
+      </header>
+      <p class="unit-kurz">Ein halber Tag draußen: Zu zweit durchläuft die Gruppe einen Parcours mit sechs Sinnes-Stationen, picknickt, baut ein gemeinsames Land-Art-Bild und schließt mit einer Gefühlsrad-Runde im Gras.</p>
+      <div class="unit-grid">
+        <section>
+          <h4>Kursziele</h4>
+          <ul><li>nehmen an sechs Stationen die Umgebung mit jeweils einem Sinn bewusst wahr</li><li>vergleichen, wie ruhig sie vor und nach dem Parcours sind, und wählen eine Übung für den Alltag</li><li>gestalten als Gruppe ein Land-Art-Bild und erleben sich dabei als Team</li></ul>
+        </section>
+        <section>
+          <h4>Im Spiel</h4>
+          <p><b>Der Frühlingslauf</b> · Quellental</p>
+          <p class="muted">Quest-Daten folgen mit dem Inhalts-Paket der Region.</p>
+          
+        </section>
+        <section class="bridge">
+          <h4>Brücken in den Unterricht</h4>
+          <p><b>Rückseite des Aufnähers:</b> <span class="muted">folgt</span></p>
+          <p><b>Echte-Welt-Karte:</b> <span class="muted">folgt</span></p>
+          <p><b>Debrief:</b></p>
+          <p class="muted">folgt</p>
+        </section>
+      </div>
+    </article>
+    <article class="unit" data-unit="j1-j05" style="--mod:#556">
+      <header class="unit-head">
+        <span class="unit-nr">J5</span>
+        <div class="unit-titles">
+          <h3>Unser Stück – Theater oder Video</h3>
+          <p class="unit-meta">Joker · 200 min Kurs · passt nach Einheit 23</p>
+        </div>
+        <div class="unit-code"><span class="code">PFAU</span><small>Ersatz: DACHS-KARTE-46</small></div>
+      </header>
+      <p class="unit-kurz">Die Gruppe entwickelt in zwei Terminen ein kurzes Theaterstück oder Video zu einem Thema aus dem Jahr, probt es und führt es auf – auf Wunsch mit einem dritten Termin vor Publikum.</p>
+      <div class="unit-grid">
+        <section>
+          <h4>Kursziele</h4>
+          <ul><li>wählen ein Thema aus dem Kursjahr und formulieren eine klare Botschaft für ein Publikum</li><li>entwickeln gemeinsam Szenen und Rollen und übernehmen eine Aufgabe vor oder hinter der Bühne</li><li>spielen ein Verhalten aus dem Kurs – Nein sagen, Stopp, Ich-Botschaft, Zivilcourage – vor anderen durch</li><li>geben einander wertschätzende Rückmeldungen und legen Rollen bewusst wieder ab</li></ul>
+        </section>
+        <section>
+          <h4>Im Spiel</h4>
+          <p><b>Das Inselfest-Theater</b> · Markt-Hügel</p>
+          <p class="muted">Quest-Daten folgen mit dem Inhalts-Paket der Region.</p>
+          
+        </section>
+        <section class="bridge">
+          <h4>Brücken in den Unterricht</h4>
+          <p><b>Rückseite des Aufnähers:</b> <span class="muted">folgt</span></p>
+          <p><b>Echte-Welt-Karte:</b> <span class="muted">folgt</span></p>
+          <p><b>Debrief:</b></p>
+          <p class="muted">folgt</p>
+        </section>
+      </div>
+    </article>
+    <article class="unit" data-unit="j1-j06" style="--mod:#556">
+      <header class="unit-head">
+        <span class="unit-nr">J6</span>
+        <div class="unit-titles">
+          <h3>Dampf ablassen, Akku laden</h3>
+          <p class="unit-meta">Joker · 100 min Kurs · passt nach Einheit 15</p>
+        </div>
+        <div class="unit-code"><span class="code">GEYSIR</span><small>Ersatz: SEGEL-GROTTE-90</small></div>
+      </header>
+      <p class="unit-kurz">Ein Reserveprogramm für Tage, an denen der Plan nicht trägt: Die Gruppe schätzt ihre Energie ein, bewegt sich, spielt und baut gemeinsam – und merkt dabei, was ihre Energie verändert.</p>
+      <div class="unit-grid">
+        <section>
+          <h4>Kursziele</h4>
+          <ul><li>schätzen ihre Energie ein und erleben, wie Bewegung und Spiel sie verändern</li><li>arbeiten in Spielen mit Geduld und Absprache zusammen</li><li>benennen am Ende, was ihnen geholfen hat, runterzukommen oder wach zu werden</li></ul>
+        </section>
+        <section>
+          <h4>Im Spiel</h4>
+          <p><b>Die Energie-Arena</b> · Sturmklippen</p>
+          <p class="muted">Quest-Daten folgen mit dem Inhalts-Paket der Region.</p>
+          
+        </section>
+        <section class="bridge">
+          <h4>Brücken in den Unterricht</h4>
+          <p><b>Rückseite des Aufnähers:</b> <span class="muted">folgt</span></p>
+          <p><b>Echte-Welt-Karte:</b> <span class="muted">folgt</span></p>
+          <p><b>Debrief:</b></p>
+          <p class="muted">folgt</p>
+        </section>
+      </div>
+    </article>
+    <article class="unit" data-unit="j1-j07" style="--mod:#556">
+      <header class="unit-head">
+        <span class="unit-nr">J7</span>
+        <div class="unit-titles">
+          <h3>Neu in der Gruppe</h3>
+          <p class="unit-meta">Joker · 100 min Kurs · passt nach Einheit 03</p>
+        </div>
+        <div class="unit-code"><span class="code">NEST</span><small>Ersatz: BEERE-PERLE-34</small></div>
+      </header>
+      <p class="unit-kurz">Eine neue Person kommt dazu: Die Gruppe erklärt ihre Rituale selbst, erneuert den Gruppenvertrag, lernt sich ohne Bloßstellen kennen, und die neue Person bekommt eine Patin oder einen Paten.</p>
+      <div class="unit-grid">
+        <section>
+          <h4>Kursziele</h4>
+          <ul><li>erklären einer neuen Person die Rituale und Regeln der Gruppe mit eigenen Worten</li><li>prüfen den Gruppenvertrag gemeinsam und unterschreiben ihn neu</li><li>lernen sich in Spielen kennen, bei denen niemand etwas Persönliches preisgeben muss</li><li>vereinbaren eine Patenschaft für die ersten Wochen</li></ul>
+        </section>
+        <section>
+          <h4>Im Spiel</h4>
+          <p><b>Senait kommt an</b> · Hafen-Dorf</p>
+          <p class="muted">Quest-Daten folgen mit dem Inhalts-Paket der Region.</p>
+          
+        </section>
+        <section class="bridge">
+          <h4>Brücken in den Unterricht</h4>
+          <p><b>Rückseite des Aufnähers:</b> <span class="muted">folgt</span></p>
+          <p><b>Echte-Welt-Karte:</b> <span class="muted">folgt</span></p>
+          <p><b>Debrief:</b></p>
+          <p class="muted">folgt</p>
+        </section>
+      </div>
+    </article>
+    <article class="unit" data-unit="j1-j08" style="--mod:#556">
+      <header class="unit-head">
+        <span class="unit-nr">J8</span>
+        <div class="unit-titles">
+          <h3>Wenn uns etwas beschäftigt</h3>
+          <p class="unit-meta">Joker · 100 min Kurs · <b>nur Lehrer-Liste</b> · <b>Lines &amp; Veils</b></p>
+        </div>
+        <div class="unit-code"><span class="code">LINDE</span><small>Ersatz: BIRKE-SCHNECKE-26</small></div>
+      </header>
+      <p class="unit-kurz">Nach einem Streit, einem Vorfall in der Schule, einer schlimmen Nachricht oder einem Verlust gibt die Einheit Halt: klare Informationen, Raum ohne Druck, Skills zum Stabilisieren und den Weg zu Hilfe.</p>
+      <div class="unit-grid">
+        <section>
+          <h4>Kursziele</h4>
+          <ul><li>unterscheiden, was sie über das Ereignis sicher wissen und was Gerücht ist</li><li>erfahren, dass ihre Reaktionen – auch widersprüchliche oder scheinbar gar keine – normal sind</li><li>wenden Skills zum Stabilisieren an und planen, was ihnen in den nächsten Tagen hilft</li><li>wissen, an wen sie sich wenden können, wenn es nicht besser wird</li></ul>
+        </section>
+        <section>
+          <h4>Im Spiel</h4>
+          <p><b>Der stille Abend</b> · Hafen-Dorf</p>
+          <p class="muted">Quest-Daten folgen mit dem Inhalts-Paket der Region.</p>
+          
+        </section>
+        <section class="bridge">
+          <h4>Brücken in den Unterricht</h4>
+          <p><b>Rückseite des Aufnähers:</b> <span class="muted">folgt</span></p>
+          <p><b>Echte-Welt-Karte:</b> <span class="muted">folgt</span></p>
+          <p><b>Debrief:</b></p>
+          <p class="muted">folgt</p>
+        </section>
+      </div>
+    </article>
+    <article class="unit" data-unit="j1-j09" style="--mod:#556">
+      <header class="unit-head">
+        <span class="unit-nr">J9</span>
+        <div class="unit-titles">
+          <h3>Ruhig durch die Prüfungszeit</h3>
+          <p class="unit-meta">Joker · 100 min Kurs · passt nach Einheit 15</p>
+        </div>
+        <div class="unit-code"><span class="code">LOTUS</span><small>Ersatz: FLASCHE-KNOTEN-70</small></div>
+      </header>
+      <p class="unit-kurz">Vor einer Prüfungsphase klärt die Gruppe, woher Prüfungsstress kommt, plant das Lernen rückwärts vom Prüfungstag, prüft typische Prüfungsgedanken und übt Skills, die im Prüfungsraum niemand bemerkt.</p>
+      <div class="unit-grid">
+        <section>
+          <h4>Kursziele</h4>
+          <ul><li>erklären, wie Anspannung beim Lernen und in der Prüfung wirkt, und ordnen ihre eigene auf der Skala von 0 bis 100 ein</li><li>planen das Lernen für eine echte Prüfung rückwärts und mit Selbsttests</li><li>prüfen typische Prüfungsgedanken und formulieren realistische Gegensätze</li><li>üben einen Blackout-Plan und unauffällige Skills für den Prüfungsraum</li></ul>
+        </section>
+        <section>
+          <h4>Im Spiel</h4>
+          <p><b>Der Bootsführerschein</b> · Sturmklippen</p>
+          <p class="muted">Quest-Daten folgen mit dem Inhalts-Paket der Region.</p>
+          
+        </section>
+        <section class="bridge">
+          <h4>Brücken in den Unterricht</h4>
+          <p><b>Rückseite des Aufnähers:</b> <span class="muted">folgt</span></p>
+          <p><b>Echte-Welt-Karte:</b> <span class="muted">folgt</span></p>
+          <p><b>Debrief:</b></p>
+          <p class="muted">folgt</p>
+        </section>
+      </div>
+    </article>
+    </section>
+
+  <footer class="foot">LUMO – die Skills-Insel · 39 Einheiten, 1 davon mit vollständigen Quest-Daten · Dieses Heft enthält Kursbegriffe und Debrief-Fragen und ist nicht für Schüler:innen gedacht.</footer>
+</div>
+</body>
+</html>

@@ -112,7 +112,7 @@ export function createLife({ island, veil, scene, quality }) {
       void main() {
         vec2 p = gl_PointCoord * 2.0 - 1.0;
         float a = exp(-dot(p, p) * 4.0) * vB * uAmt;
-        gl_FragColor = vec4(vec3(0.8, 1.0, 0.4) * a * 2.2, a);
+        gl_FragColor = vec4(vec3(1.0, 0.91, 0.54) * a * 2.6, a);
       }`,
   }));
   fireflies.frustumCulled = false;

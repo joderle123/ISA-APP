@@ -103,6 +103,7 @@ export default {
     }
     // Code einlösen (Vorstufe zum Code-System aus WP30): Einheit, Modul, Demo, Lehrer, Inselwetter
     function redeemCode(word) {
+      if (game.plugins.codes && game.plugins.codes.redeem) return game.plugins.codes.redeem(word, { via: 'debug' });   // WP30 übernimmt
       const r = content.lookupCode(word);
       if (!r) return { ok: false, error: 'Dieser Code passt hier nicht.' };
       const used = state.get('codesUsed', []);

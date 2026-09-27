@@ -84,6 +84,85 @@ export function createVeilFx({ scene, veil, island, vegetation, particles, quali
   ring.renderOrder = 12;
   ring.frustumCulled = false;
   group.add(ring);
+
+  // ---- Nebelwand am Schleierrand (Stil-Bibel §10.3): 6 m hoch, Alpha 0.35 → 0 nach oben, driftende Schlieren,
+  // von innen und außen sichtbar – man sieht die Grenze. Ein Mesh je Slot (Zone/Fleck), folgt dem Gelände.
+  const WALL_H = 6;
+  const wallU = { uTime: { value: 0 }, uAmt: { value: 0 } };
+  const wallVert = /* glsl */`
+    varying vec2 vUv; varying vec3 vW; varying vec3 vFogView;
+    #include <fog_pars_vertex>
+    void main() {
+      vUv = uv;
+      vec4 w = modelMatrix * vec4(position, 1.0);
+      vW = w.xyz;
+      vec4 mv = viewMatrix * w;
+      vFogView = mv.xyz;
+      gl_Position = projectionMatrix * mv;
+      #ifdef USE_FOG
+        vFogDepth = -mv.z;
+      #endif
+    }`;
+  const wallFrag = /* glsl */`
+    uniform float uTime; uniform float uAmt;
+    varying vec2 vUv; varying vec3 vW; varying vec3 vFogView;
+    #include <fog_pars_fragment>
+    ${veil.glsl}
+    float h12(vec2 p) { vec3 p3 = fract(vec3(p.xyx) * 0.1031); p3 += dot(p3, p3.yzx + 33.33); return fract((p3.x + p3.y) * p3.z); }
+    float vn(vec2 p) { vec2 i = floor(p), f = fract(p); f = f * f * (3.0 - 2.0 * f); return mix(mix(h12(i), h12(i + vec2(1, 0)), f.x), mix(h12(i + vec2(0, 1)), h12(i + vec2(1, 1)), f.x), f.y); }
+    void main() {
+      float ang = vUv.x * 40.0;
+      float n = vn(vec2(ang, vUv.y * 2.5 - uTime * 0.12)) * 0.6 + vn(vec2(ang * 2.3 + 7.0, vUv.y * 5.0 - uTime * 0.2)) * 0.4;
+      float a = 0.35 * (1.0 - vUv.y) * (1.0 - vUv.y) * smoothstep(0.25, 0.75, n + 0.15) * uAmt;
+      float dCam = length(vFogView);
+      a *= smoothstep(2.0, 7.0, dCam);
+      vec3 col = mix(vec3(0.2747, 0.2542, 0.3916), vec3(0.4851, 0.4508, 0.6038), vUv.y * 0.6 + n * 0.4);
+      gl_FragColor = vec4(col, a);
+      #include <tonemapping_fragment>
+      #include <colorspace_fragment>
+      gLumoWorldY = vW.y;
+      #ifdef USE_FOG
+        gl_FragColor.rgb = lumoFog(gl_FragColor.rgb, vFogDepth, vFogView, fogColor, fogNear, fogFar);
+      #endif
+      gl_FragColor.rgb = lumoGrade(gl_FragColor.rgb);
+    }`;
+  const walls = new Map();   // slot-Index → { mesh, key }
+  function wallGeometry(cx, cz, r) {
+    const N = 96;
+    const pos = [], uv = [], idx = [];
+    for (let i = 0; i <= N; i++) {
+      const a = (i / N) * Math.PI * 2;
+      const x = cx + Math.cos(a) * r, z = cz + Math.sin(a) * r;
+      const g = Math.max(island.getHeight(x, z), island.waterLevel(x, z)) - 0.8;
+      pos.push(x, g, z, x, g + WALL_H, z);
+      uv.push(i / N, 0, i / N, 1);
+      if (i < N) { const b = i * 2; idx.push(b, b + 2, b + 1, b + 1, b + 2, b + 3); }
+    }
+    const geo = new THREE.BufferGeometry();
+    geo.setAttribute('position', new THREE.Float32BufferAttribute(pos, 3));
+    geo.setAttribute('uv', new THREE.Float32BufferAttribute(uv, 2));
+    geo.setIndex(idx);
+    geo.computeBoundingSphere();
+    return geo;
+  }
+  function wallFor(i, s) {
+    const rr = s.patch ? s.r * 0.8 : s.r * 0.95;
+    const key = `${s.id}:${s.x}:${s.z}:${rr.toFixed(1)}`;
+    let w = walls.get(i);
+    if (w && w.key === key) return w;
+    if (w) { group.remove(w.mesh); w.mesh.geometry.dispose(); w.mesh.material.dispose(); }
+    const mat = new THREE.ShaderMaterial({
+      uniforms: Object.assign(THREE.UniformsUtils.merge([THREE.UniformsLib.fog]), { uTime: wallU.uTime, uAmt: { value: 0 } }, veil.uniforms),
+      vertexShader: wallVert, fragmentShader: wallFrag, transparent: true, depthWrite: false, side: THREE.DoubleSide, fog: true,
+    });
+    const mesh = new THREE.Mesh(wallGeometry(s.x, s.z, rr), mat);
+    mesh.renderOrder = 10;
+    mesh.name = 'nebelwand-' + s.id;
+    group.add(mesh);
+    w = { mesh, key, r: rr, x: s.x, z: s.z };
+    walls.set(i, w);
+    return w;
+  }
   scene.add(group);
 
   let wave = null; // { x, z, y, t, maxR, duration }
@@ -175,7 +254,22 @@ export function createVeilFx({ scene, veil, island, vegetation, particles, quali
         gust = Math.max(0, gust - dt / 6);
         vegetation.setWind(1 + gust * 1.6);
       }
+      // Nebelwände: je verschleiertem Slot in Kameranähe; während einer Welle auf diesem Slot ausblenden
+      wallU.uTime.value = t;
+      if (camera) {
+        const cx = camera.position.x, cz = camera.position.z;
+        veil.slots.forEach((s, i) => {
+          const near = s.id && s.r > 0 && Math.hypot(cx - s.x, cz - s.z) < s.r * 1.2 + 90;
+          const waveHere = w && w.index === i;
+          const amt = near && !waveHere ? Math.max(0, (s.veil - 0.15) / 0.85) : 0;
+          if (amt <= 0.01) { const ex = walls.get(i); if (ex) ex.mesh.visible = false; return; }
+          const wall = wallFor(i, s);
+          wall.mesh.visible = true;
+          wall.mesh.material.uniforms.uAmt.value = amt;
+        });
+      }
     },
+    walls,
   };
   return fx;
 }

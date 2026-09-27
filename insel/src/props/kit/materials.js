@@ -13,19 +13,29 @@ export function createMaterials(veil) {
   const base = lambertVC(veil, 'props');
   const baseDouble = lambertVC(veil, 'props2', { side: THREE.DoubleSide });
 
+  // Leuchtendes leuchtet (Stil-Bibel §10.1): Emission über 1.0, damit der Bloom greift (Laterne ≈ 1.6, Feuer ≈ 2.2);
+  // keine Rampe, kein Kantenlicht (Rampe „glow“ über den Schlüssel)
   function glow(hex, { intensity = 0.7, veil: withVeil = true, opacity = 1 } = {}) {
     const key = `glow:${hex}:${intensity}:${withVeil}:${opacity}`;
     if (cache.has(key)) return cache.get(key);
-    const m = new THREE.MeshLambertMaterial({ vertexColors: true, flatShading: true, emissive: new THREE.Color(hex), emissiveIntensity: intensity, transparent: opacity < 1, opacity });
-    if (veil) veil.patch(m, { key: 'pglow' + (withVeil ? 'v' : 'n'), veil: withVeil });
+    const m = new THREE.MeshLambertMaterial({ vertexColors: true, flatShading: true, emissive: new THREE.Color(hex), emissiveIntensity: 0.6 + intensity * 1.2, transparent: opacity < 1, opacity });
+    m.userData.glowIntensity = intensity;
+    if (veil) veil.patch(m, { key: 'pglow' + (withVeil ? 'v' : 'n'), veil: withVeil, ramp: 'glow' });
     cache.set(key, m);
     return m;
   }
   function glass(hex = '#bfe8ff', { opacity = 0.35 } = {}) {
     const key = `glass:${hex}:${opacity}`;
     if (cache.has(key)) return cache.get(key);
-    const m = new THREE.MeshLambertMaterial({ vertexColors: true, flatShading: true, transparent: true, opacity, depthWrite: false, side: THREE.DoubleSide, emissive: new THREE.Color(hex), emissiveIntensity: 0.12 });
-    if (veil) veil.patch(m, { key: 'pglass' });
+    // Glas (§3.4): Füllung mit Alpha, Fresnel-Rand #DFF3FF
+    const m = new THREE.MeshLambertMaterial({ vertexColors: true, transparent: true, opacity, depthWrite: false, side: THREE.DoubleSide, emissive: new THREE.Color(hex), emissiveIntensity: 0.1 });
+    if (veil) veil.patch(m, { key: 'pglass', ramp: 'glow', beforeVeil: `{
+      vec3 gV = normalize(vViewPosition);
+      float gF = pow(1.0 - clamp(dot(normal, gV), 0.0, 1.0), 3.0);
+      outgoingLight += vec3(0.76, 0.93, 1.0) * gF * 0.6;
+      diffuseColor.a = clamp(diffuseColor.a + gF * 0.4, 0.0, 1.0);
+    }
+` });
     cache.set(key, m);
     return m;
   }
@@ -47,6 +57,8 @@ export function createMaterials(veil) {
           transformed.z += cos(uLumoTime * 7.5 + ph) * k * 0.12;
           transformed.y *= 0.92 + 0.16 * sin(uLumoTime * 11.0 + ph) * k;
         }`);
+      // Feuer leuchtet über 1.0 (Bloom, §10.1 Emission ≈ 2.2)
+      shader.fragmentShader = shader.fragmentShader.replace('#include <color_fragment>', '#include <color_fragment>\n diffuseColor.rgb *= 2.2;');
     };
     m.userData.__lumoKey = 'flame';
     m.customProgramCacheKey = () => 'flame';

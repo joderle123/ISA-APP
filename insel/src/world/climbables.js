@@ -94,7 +94,7 @@ export function createClimbables({ scene, island, colliders, veil, rng, sites = 
   const group = new THREE.Group();
   group.name = 'climbables';
   const mat = lambertVC(veil, 'climb');
-  const glowMat = new THREE.MeshLambertMaterial({ vertexColors: true, flatShading: true, emissive: new THREE.Color('#5cffa0'), emissiveIntensity: 0.35 });
+  const glowMat = new THREE.MeshLambertMaterial({ vertexColors: true, flatShading: true, emissive: new THREE.Color('#5cffa0'), emissiveIntensity: 1.2 });
   if (veil) veil.patch(glowMat, { key: 'climbglow', veil: false });
   const R = rng && rng.fork ? rng.fork('climbables') : { float: (a, b) => a + Math.random() * (b - a), next: Math.random };
 

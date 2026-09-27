@@ -51,6 +51,28 @@ export function veilFormula(slots, base, wave, x, z, strength = 1) {
   return amt * strength;
 }
 
+// ---- Rampen-Klassen der Stil-Bibel §3.1 (Schwellen auf N·L, Faktor des Sonnenanteils im Halbton, Übergangsbreite, Rim) ----
+// t1/t2 = Schwellen Licht/Halbton bzw. Halbton/Schatten, mid = Sonnenanteil im Halbton (Schatten = nur Hemisphärenlicht),
+// soft = Übergangsbreite, rim = Kantenlicht-Stärke, trans = Transluzenz (Laub im Gegenlicht), fogCap = Nebel-Deckel (Silhouetten)
+export const RAMPS = {
+  props:   { t1: 0.55, t2: 0.18, mid: 0.45, soft: 0.04, rim: 0.18 },
+  figur:   { t1: 0.32, t2: 0.05, mid: 0.40, soft: 0.03, rim: 0.35 },
+  laub:    { t1: 0.35, t2: 0.02, mid: 0.30, soft: 0.06, rim: 0.14, trans: 1 },
+  terrain: { t1: 0.60, t2: 0.22, mid: 0.50, soft: 0.10, rim: 0.0 },
+  fels:    { t1: 0.55, t2: 0.18, mid: 0.45, soft: 0.04, rim: 0.10 },
+  wolke:   { t1: 0.35, t2: 0.02, mid: 0.25, soft: 0.08, rim: 0.25, fogCap: 0.55 },
+  glow:    { t1: -1.0, t2: -1.0, mid: 1.0, soft: 0.02, rim: 0.0 },   // leuchtend: keine Rampe, kein Rim
+};
+// Standard-Klasse nach dem Material-Schlüssel (Figuren, Terrain, Vegetation … ohne dass deren Module etwas ändern müssen)
+export function rampForKey(key = '') {
+  if (key === 'human' || key.startsWith('figur')) return 'figur';
+  if (key === 'terrain') return 'terrain';
+  if (key.startsWith('veg') || key.startsWith('wind')) return 'laub';
+  if (key === 'wolke' || key === 'sturm' || key === 'smoke' || key === 'pcloud') return 'wolke';
+  if (key.startsWith('pglow') || key.startsWith('rune') || key.startsWith('climbglow') || key.endsWith('-g')) return 'glow';
+  return 'props';
+}
+
 // GLSL: Uniforms + Funktionen (auch für eigene ShaderMaterials nutzbar: veil.glsl)
 export const VEIL_GLSL = /* glsl */`
 uniform vec4 uVeilZones[${MAX_ZONES}];
@@ -64,13 +86,37 @@ uniform vec3 uVeilFogColor;
 uniform vec3 uFogSunColor;
 uniform vec3 uFogSunDir;
 uniform float uFogSunAmt;
+uniform vec3 uFogNearColor;
+uniform float uFogMax;
+uniform float uFogHeight;
+uniform float uAerial;
+uniform float uLumoPost;
 uniform vec3 uGradeLift;
 uniform vec3 uGradeGain;
 uniform float uGradeSat;
 uniform float uGradeContrast;
+uniform vec3 uShadowTint;
+uniform vec3 uRimWarm;
+uniform vec3 uRimCool;
+uniform float uRimGlobal;
+uniform vec3 uSunDirView;
+uniform vec3 uSunColorLin;
 float gLumoVeil = 0.0;
 float gLumoRing = 0.0;
 float gLumoInside = 0.0;
+float gLumoShadow = 1.0;
+float gLumoWorldY = 100.0;
+// linear → Ausgaberaum (sRGB), für Nebelfarben beim Direkt-Rendern ohne Post-Stack
+vec3 lumoToOut(vec3 c) {
+  c = max(c, vec3(0.0));
+  return mix(c * 12.92, 1.055 * pow(c, vec3(1.0 / 2.4)) - 0.055, step(vec3(0.0031308), c));
+}
+// Toon-Rampe: N·L → Sonnenanteil (1 Licht · mid Halbton · 0 Schatten = nur Hemisphärenlicht), weiche Kanten
+float lumoBand(float ndl, vec4 ramp, float soft) {
+  float hi = smoothstep(ramp.x - soft, ramp.x + soft, ndl);
+  float md = smoothstep(ramp.y - soft, ramp.y + soft, ndl);
+  return mix(md * ramp.z, 1.0, hi);
+}
 // Wellenwert für Slot k (uVeilWave: x, z, Radius, Slot · uVeilWave2: von, nach, Richtung ±1, Art 0 Farbwelle / 1 Rückfall)
 float lumoWaveValue(int k, float v, vec2 p, float w) {
   if (uVeilWave.z < 0.0 || abs(float(k) - uVeilWave.w) > 0.5) return v;
@@ -105,12 +151,18 @@ float lumoVeilAmount(vec3 p) {
 vec3 lumoApplyVeil(vec3 col, vec3 p) {
   float v = lumoVeilAmount(p);
   gLumoVeil = v;
+  gLumoWorldY = p.y;
   float l = dot(col, vec3(0.299, 0.587, 0.114));
-  // „Verflucht“: Kontrast flach, kalt-violett getönt, dunkle Schatten, träge wandernde Schlieren
-  float lf = 0.07 + l * 0.66;
-  float drift = 0.9 + 0.1 * sin(p.x * 0.11 + uLumoTime * 0.25) * sin(p.z * 0.09 - uLumoTime * 0.19 + p.y * 0.2);
-  vec3 grey = vec3(lf) * vec3(0.86, 0.87, 0.98) * drift + uVeilHaze * (0.03 + l * 0.08);
-  col = mix(col, grey, clamp(v * 0.94, 0.0, 1.0));
+  // „Verflucht“, nicht „unfertig“: kaltes Duotone (Schatten #2E2A44 · Mitten #7A7691 · Lichter #C9C4D8, Stil-Bibel §2.4),
+  // Kontrast × 0.85, träge wandernde Schlieren. Rechnung wahrnehmungsnah (Gamma), Farben linear.
+  float lp = pow(max(l, 0.0), 0.4545);
+  lp = clamp((lp - 0.5) * 0.85 + 0.5, 0.0, 1.0);
+  float drift = 0.93 + 0.07 * sin(p.x * 0.11 + uLumoTime * 0.25) * sin(p.z * 0.09 - uLumoTime * 0.19 + p.y * 0.2);
+  vec3 duo = lp < 0.5
+    ? mix(vec3(0.0273, 0.0232, 0.0578), vec3(0.1946, 0.1812, 0.2831), lp * 2.0)
+    : mix(vec3(0.1946, 0.1812, 0.2831), vec3(0.5841, 0.5520, 0.6867), (lp - 0.5) * 2.0);
+  duo *= drift;
+  col = mix(col, duo, clamp(v * 0.94, 0.0, 1.0));
   if (gLumoRing > 0.002) {
     float r = clamp(gLumoRing, 0.0, 1.0);
     if (uVeilWave2.w < 0.5) {
@@ -131,17 +183,28 @@ vec3 lumoApplyVeil(vec3 col, vec3 p) {
   if (uVeilWave2.w < 0.5) col += col * gLumoInside * 0.25 * clamp(1.0 - (uVeilWave.z - distance(p.xz, uVeilWave.xy)) / 14.0, 0.0, 1.0);
   return col;
 }
+// Luftperspektive statt Nebelwand (Stil-Bibel §5.3): Dunst nah → fern (Uniform → Szenen-Nebelfarbe), Sonnenstreuung,
+// Höhennebel unter 3 m, Ferne entsättigt; Nebel gedeckelt (uFogMax), damit Landmarken als Silhouette lesbar bleiben.
+// Farben kommen linear an; ohne Post-Stack (Direkt-Rendern im sRGB-Ausgaberaum) werden sie hier umgerechnet.
 vec3 lumoFog(vec3 col, float depth, vec3 viewPos, vec3 fogCol, float fogNear, float fogFar) {
   float f = smoothstep(fogNear, fogFar, depth);
+  f = max(f, uFogHeight * smoothstep(3.0, -1.0, gLumoWorldY) * smoothstep(4.0, 30.0, depth));
   vec3 dir = normalize(viewPos);
   float s = max(dot(dir, uFogSunDir), 0.0);
-  vec3 fc = mix(fogCol, uFogSunColor, pow(s, 4.0) * uFogSunAmt);
-  f = max(f, gLumoVeil * 0.34 * smoothstep(5.0, 40.0, depth));
-  fc = mix(fc, uVeilFogColor, gLumoVeil * 0.5 * smoothstep(5.0, 40.0, depth));
-  return mix(col, fc, f);
+  vec3 fc = mix(uFogNearColor, fogCol, f);
+  fc = mix(fc, uFogSunColor, pow(s, 4.0) * uFogSunAmt * (0.35 + 0.65 * f));
+  float veilF = gLumoVeil * smoothstep(5.0, 40.0, depth);
+  f = max(f, veilF * 0.34);
+  fc = mix(fc, uVeilFogColor, veilF * 0.5);
+  if (uLumoPost < 0.5) fc = lumoToOut(fc);
+  float l = dot(col, vec3(0.299, 0.587, 0.114));
+  col = mix(col, vec3(l), f * uAerial * 0.35);
+  return mix(col, fc, min(f, uFogMax));
 }
-// Farbkorrektur (nach Tone-Mapping, im sRGB-Ausgaberaum): Sättigung, Kontrast, warme Lichter / kühle Schatten
+// Farbkorrektur (nach Tone-Mapping, im sRGB-Ausgaberaum): Sättigung, Kontrast, warme Lichter / kühle Schatten.
+// Mit Post-Stack (uLumoPost = 1) übernimmt der Grade-Pass dieselbe Formel für das ganze Bild (auch Sprites/Partikel).
 vec3 lumoGrade(vec3 c) {
+  if (uLumoPost > 0.5) return c;
   float l = dot(c, vec3(0.299, 0.587, 0.114));
   c = mix(vec3(l), c, uGradeSat);
   c = (c - 0.5) * uGradeContrast + 0.5;
@@ -151,10 +214,69 @@ vec3 lumoGrade(vec3 c) {
 `;
 
 const FOG_FRAG = /* glsl */`
+  gLumoWorldY = vVeilPos.y;
 #ifdef USE_FOG
   gl_FragColor.rgb = lumoFog(gl_FragColor.rgb, vFogDepth, vFogView, fogColor, fogNear, fogFar);
 #endif
   gl_FragColor.rgb = lumoGrade(gl_FragColor.rgb);
+`;
+
+// Toon-Beleuchtung (Stil-Bibel §3): ersetzt das Lambert-Direktlicht durch die Rampe. Der Schattenwurf wird vorher
+// aus directLight.color herausgehalten (gLumoShadow) und multipliziert nur den Sonnenanteil – „kein Schatten im Schatten“,
+// die Schattenfarbe kommt allein vom Hemisphärenlicht (Himmel oben kühl, Boden unten warm).
+const LUMO_LAMBERT_PARS = /* glsl */`
+varying vec3 vViewPosition;
+uniform vec4 uRamp;
+uniform float uRampSoft;
+struct LambertMaterial {
+  vec3 diffuseColor;
+  float specularStrength;
+};
+void RE_Direct_Lambert( const in IncidentLight directLight, const in vec3 geometryPosition, const in vec3 geometryNormal, const in vec3 geometryViewDir, const in vec3 geometryClearcoatNormal, const in LambertMaterial material, inout ReflectedLight reflectedLight ) {
+  float dotNL = dot( geometryNormal, directLight.direction );
+  float sh = smoothstep( 0.18, 0.62, gLumoShadow );
+  gLumoShadow = 1.0;
+  float band = lumoBand( dotNL, uRamp, uRampSoft ) * sh;
+  reflectedLight.directDiffuse += band * directLight.color * BRDF_Lambert( material.diffuseColor );
+}
+void RE_IndirectDiffuse_Lambert( const in vec3 irradiance, const in vec3 geometryPosition, const in vec3 geometryNormal, const in vec3 geometryViewDir, const in vec3 geometryClearcoatNormal, const in LambertMaterial material, inout ReflectedLight reflectedLight ) {
+  reflectedLight.indirectDiffuse += irradiance * BRDF_Lambert( material.diffuseColor );
+}
+#define RE_Direct				RE_Direct_Lambert
+#define RE_IndirectDiffuse		RE_IndirectDiffuse_Lambert
+`;
+// MeshToonMaterial (Figuren mit eigener Rampe): behält seine Verlaufs-Rampe, der Schattenwurf kommt aus gLumoShadow
+const LUMO_TOON_PARS = /* glsl */`
+varying vec3 vViewPosition;
+struct ToonMaterial {
+  vec3 diffuseColor;
+};
+void RE_Direct_Toon( const in IncidentLight directLight, const in vec3 geometryPosition, const in vec3 geometryNormal, const in vec3 geometryViewDir, const in vec3 geometryClearcoatNormal, const in ToonMaterial material, inout ReflectedLight reflectedLight ) {
+  float sh = smoothstep( 0.18, 0.62, gLumoShadow );
+  gLumoShadow = 1.0;
+  vec3 irradiance = getGradientIrradiance( geometryNormal, directLight.direction ) * directLight.color * sh;
+  reflectedLight.directDiffuse += irradiance * BRDF_Lambert( material.diffuseColor );
+}
+void RE_IndirectDiffuse_Toon( const in vec3 irradiance, const in vec3 geometryPosition, const in vec3 geometryNormal, const in vec3 geometryViewDir, const in vec3 geometryClearcoatNormal, const in ToonMaterial material, inout ReflectedLight reflectedLight ) {
+  reflectedLight.indirectDiffuse += irradiance * BRDF_Lambert( material.diffuseColor );
+}
+#define RE_Direct				RE_Direct_Toon
+#define RE_IndirectDiffuse		RE_IndirectDiffuse_Toon
+`;
+// Kantenlicht (§3.3) und Laub-Transluzenz (§3.4) nach der Lichtsumme; im Schleier kühl und schwach, nachts Mondfarbe
+const LUMO_RIM = /* glsl */`
+{
+  vec3 lumoV = normalize( vViewPosition );
+  float lumoNdv = 1.0 - saturate( dot( normal, lumoV ) );
+  float lumoRimW = smoothstep( 0.58, 0.74, lumoNdv );
+  float lumoSunSide = saturate( dot( normal, uSunDirView ) * 0.5 + 0.5 );
+  vec3 lumoRim = ( uRimWarm * lumoSunSide + uRimCool * ( 1.0 - lumoSunSide ) * 0.4 ) * lumoRimW * uRimStrength * uRimGlobal;
+  reflectedLight.directDiffuse += lumoRim * ( 0.35 + 0.65 * diffuseColor.rgb );
+  #ifdef LUMO_TRANS
+    float lumoTr = pow( saturate( dot( -lumoV, uSunDirView ) ), 3.0 ) * uTrans * vLumoLeaf;
+    reflectedLight.directDiffuse += diffuseColor.rgb * uSunColorLin * 0.28 * lumoTr;
+  #endif
+}
 `;
 
 export function createVeil({ events, audio, zones: zoneDefs = ZONES } = {}) {
@@ -174,15 +296,27 @@ export function createVeil({ events, audio, zones: zoneDefs = ZONES } = {}) {
     uVeilStrength: { value: 1 },
     uLumoTime: { value: 0 },
     uVeilHaze: { value: new THREE.Color('#8f86b8') },
-    uVeilFogColor: { value: new THREE.Color().setRGB(0.55, 0.54, 0.63, THREE.LinearSRGBColorSpace) }, // roh (sRGB)
-    uFogSunColor: { value: new THREE.Color().setRGB(1, 0.69, 0.44, THREE.LinearSRGBColorSpace) }, // roh (sRGB)
+    uVeilFogColor: { value: new THREE.Color('#8f8aa8') },   // Nebel im Schleier (linear, Stil-Bibel §2.4)
+    uFogSunColor: { value: new THREE.Color('#ffb070') },    // Sonnenstreuung im Dunst (linear, setzt der Himmel)
     uFogSunDir: { value: new THREE.Vector3(0, 0, -1) },
     uFogSunAmt: { value: 0.8 },
+    uFogNearColor: { value: new THREE.Color('#dcebf6') },   // Dunst nah (fern = scene.fog.color)
+    uFogMax: { value: 0.86 },                                // Nebel-Deckel: Silhouetten bleiben lesbar (§5.3)
+    uFogHeight: { value: 0.12 },                             // Höhennebel unter 3 m
+    uAerial: { value: 1 },                                   // Ferne entsättigt
+    uLumoPost: { value: 0 },                                 // 1 = Post-Stack aktiv (Grade im Pass, Nebel linear)
     // Farbkorrektur (wird vom Himmel je nach Tageszeit gesetzt)
     uGradeLift: { value: new THREE.Vector3(0, 0, 0) },
     uGradeGain: { value: new THREE.Vector3(1, 1, 1) },
     uGradeSat: { value: 1 },
     uGradeContrast: { value: 1 },
+    // Toon-Licht (§3.2/§3.3): Schattentönung, Kantenlicht warm/kühl, Sonne im Sichtraum
+    uShadowTint: { value: new THREE.Color('#6e86c8') },
+    uRimWarm: { value: new THREE.Color('#fff1c8') },
+    uRimCool: { value: new THREE.Color('#9fb4ff') },
+    uRimGlobal: { value: 1 },
+    uSunDirView: { value: new THREE.Vector3(0, 1, 0) },
+    uSunColorLin: { value: new THREE.Color('#fff4dc') },
   };
   let base = 0.55;
   let baseOverride = null;   // Innenräume (WP18): Schleierwert außerhalb aller Zonen, z. B. graue Hafengrotte
@@ -239,16 +373,35 @@ export function createVeil({ events, audio, zones: zoneDefs = ZONES } = {}) {
     return wave ? { index: wave.index, x: wave.x, z: wave.z, radius: wave.radius, dir: wave.dir, from: wave.from, to: wave.to } : null;
   }
 
-  // Material patchen (onBeforeCompile wird verkettet)
+  // Material patchen (onBeforeCompile wird verkettet). Neben Schleier/Nebel/Farbkorrektur bekommt jedes beleuchtete
+  // Material (Lambert) die Toon-Rampe, Schattentönung und das Kantenlicht (Stil-Bibel §3):
+  //   opts.ramp   'props' | 'figur' | 'laub' | 'terrain' | 'fels' | 'wolke' | 'glow' | { t1, t2, mid, soft, rim, trans, fogCap }
+  //               (Standard nach opts.key, siehe rampForKey) · opts.rim überschreibt die Rim-Stärke
+  //   opts.fogCap 0..1 Nebel-Deckel (Landmarken-Silhouetten) · opts.trans Laub-Transluzenz (Attribut aLeaf)
+  // Die Rampen-Uniforms hängen am Material (material.userData.lumo), damit man sie zur Laufzeit anpassen kann.
   function patch(material, opts = {}) {
     const veilOn = opts.veil !== false;
     const prev = material.onBeforeCompile;
     const prevKey = material.customProgramCacheKey && material.userData.__lumoKey ? material.userData.__lumoKey : '';
+    const rampDef = typeof opts.ramp === 'object' && opts.ramp ? { ...RAMPS.props, ...opts.ramp } : (RAMPS[opts.ramp] || RAMPS[rampForKey(opts.key || '')]);
+    const lumo = material.userData.lumo || {
+      uRamp: { value: new THREE.Vector4() }, uRampSoft: { value: 0.04 }, uRimStrength: { value: 0 }, uTrans: { value: 0 }, uFogCap: { value: 1 },
+    };
+    lumo.uRamp.value.set(rampDef.t1, rampDef.t2, rampDef.mid, 0);
+    lumo.uRampSoft.value = rampDef.soft;
+    lumo.uRimStrength.value = opts.rim !== undefined ? opts.rim : rampDef.rim;
+    lumo.uTrans.value = opts.trans !== undefined ? opts.trans : (rampDef.trans || 0);
+    lumo.uFogCap.value = opts.fogCap !== undefined ? opts.fogCap : (rampDef.fogCap !== undefined ? rampDef.fogCap : 1);
+    material.userData.lumo = lumo;
+    const trans = lumo.uTrans.value > 0;
+    // Toon-Materialien (Figuren) bringen ihre eigene Rampe und ihr eigenes Kantenlicht mit
+    const isToon = !!material.isMeshToonMaterial;
+    const withRim = !isToon || opts.rim !== undefined;
     material.onBeforeCompile = (shader, renderer) => {
       if (prev && prev !== THREE.Material.prototype.onBeforeCompile) prev.call(material, shader, renderer);
-      Object.assign(shader.uniforms, uniforms);
+      Object.assign(shader.uniforms, uniforms, lumo);
       shader.vertexShader = shader.vertexShader
-        .replace('#include <common>', '#include <common>\nvarying vec3 vVeilPos;\nvarying vec3 vFogView;')
+        .replace('#include <common>', '#include <common>\nvarying vec3 vVeilPos;\nvarying vec3 vFogView;' + (trans ? '\nattribute float aLeaf;\nvarying float vLumoLeaf;' : ''))
         .replace('#include <fog_vertex>', `#include <fog_vertex>
   vec4 lumoWP = vec4(transformed, 1.0);
   #ifdef USE_INSTANCING
@@ -256,16 +409,22 @@ export function createVeil({ events, audio, zones: zoneDefs = ZONES } = {}) {
   #endif
   lumoWP = modelMatrix * lumoWP;
   vVeilPos = lumoWP.xyz;
-  vFogView = mvPosition.xyz;`);
+  vFogView = mvPosition.xyz;` + (trans ? '\n  vLumoLeaf = aLeaf;' : ''));
       shader.fragmentShader = shader.fragmentShader
-        .replace('#include <common>', '#include <common>\nvarying vec3 vVeilPos;\nvarying vec3 vFogView;\n' + VEIL_GLSL + (opts.fragmentPars || ''))
+        .replace('#include <common>', '#include <common>\nvarying vec3 vVeilPos;\nvarying vec3 vFogView;\nuniform float uRimStrength;\nuniform float uTrans;\nuniform float uFogCap;\n' + (trans ? '#define LUMO_TRANS\nvarying float vLumoLeaf;\n' : '') + VEIL_GLSL + (opts.fragmentPars || ''))
+        .replace('#include <lights_lambert_pars_fragment>', LUMO_LAMBERT_PARS)
+        .replace('#include <lights_toon_pars_fragment>', LUMO_TOON_PARS)
+        .replace(/directLight\.color \*= \( directLight\.visible && receiveShadow \) \? getShadow\(/g, 'gLumoShadow *= ( directLight.visible && receiveShadow ) ? getShadow(')
+        .replace('#include <lights_fragment_end>', '#include <lights_fragment_end>\n' + (withRim ? LUMO_RIM : ''))
         .replace('#include <opaque_fragment>', (opts.beforeVeil || '') + (veilOn ? 'outgoingLight = lumoApplyVeil(outgoingLight, vVeilPos);\n' : '') + (opts.afterVeil || '') + '#include <opaque_fragment>')
-        .replace('#include <fog_fragment>', FOG_FRAG);
+        .replace('#include <fog_fragment>', FOG_FRAG.replace('min(f, uFogMax)', 'min(f, uFogMax * uFogCap)'));
+      // Nebel-Deckel je Material (Silhouetten) – lumoFog selbst deckelt mit uFogMax
+      shader.fragmentShader = shader.fragmentShader.replace('return mix(col, fc, min(f, uFogMax));', 'return mix(col, fc, min(f, uFogMax * uFogCap));');
       if (opts.uniforms) Object.assign(shader.uniforms, opts.uniforms);
       if (opts.vertex) shader.vertexShader = opts.vertex(shader.vertexShader);
       if (opts.fragment) shader.fragmentShader = opts.fragment(shader.fragmentShader);
     };
-    const key = prevKey + '|lumo' + (veilOn ? 'V' : 'n') + (opts.key || '');
+    const key = prevKey + '|lumo' + (veilOn ? 'V' : 'n') + (trans ? 'T' : '') + (opts.key || '');
     material.userData.__lumoKey = key;
     material.customProgramCacheKey = () => key;
     material.needsUpdate = true;

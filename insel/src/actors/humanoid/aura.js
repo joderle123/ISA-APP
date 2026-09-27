@@ -48,12 +48,13 @@ const FRAG = /* glsl */`
   uniform float uRings; uniform float uGlow;
   varying vec3 vN; varying vec3 vV; varying float vY; varying float vAng;
   void main() {
-    float f = pow(1.0 - abs(dot(vN, vV)), 2.0);
+    // Fresnel-betonter Rand (STIL §10.5): Fläche höchstens 0.12, Rand höchstens 0.55 – das Gesicht bleibt frei lesbar
+    float f = pow(1.0 - abs(dot(normalize(vN), normalize(vV))), 3.2);
     float swirl = 0.5 + 0.5 * sin(vAng * 2.0 + vY * 4.5 - uTime * 1.7);
     vec3 col = mix(uColorA, uColorB, swirl * uMix);
     float ring = 0.62 + 0.38 * smoothstep(0.3, 0.7, fract(vY * uRings * 0.8 - uTime * 0.35));
-    float a = f * ring * uAlpha * (0.6 + 0.4 * sin(uTime * 2.2)) + f * uAlpha * 0.35;
-    gl_FragColor = vec4(col * uGlow * 1.3, a);
+    float a = f * ring * uAlpha * (0.32 + 0.18 * sin(uTime * 2.2)) + uAlpha * 0.08 * (0.4 + 0.6 * f);
+    gl_FragColor = vec4(col * uGlow * 1.35, min(a, 0.55 * uAlpha));
   }`;
 function auraMaterial() {
   return new THREE.ShaderMaterial({

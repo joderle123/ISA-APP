@@ -21,7 +21,9 @@ function qhash(x, y, z, seed) {
 /**
  * Teil vorbereiten.
  * opts: color (hex|Color|fn(x,y,z,c)), wind (Zahl|fn(x,y,z)), jitter (Zahl), seed,
- *       pos [x,y,z], rot [x,y,z], scale [x,y,z]|Zahl, deform fn(v:Vector3)
+ *       pos [x,y,z], rot [x,y,z], scale [x,y,z]|Zahl, deform fn(v:Vector3),
+ *       smooth (true = weiche Normalen: runde Kronen, Wolken, Büsche – Stil-Bibel §5.2/§6),
+ *       leaf (0..1 = Laub-Anteil für die Transluzenz im Gegenlicht, Attribut aLeaf)
  */
 export function part(geo, opts = {}) {
   let g = geo;
@@ -49,10 +51,17 @@ export function part(geo, opts = {}) {
   _q.setFromEuler(_e.set(r[0], r[1], r[2], opts.order || 'XYZ'));
   _m.compose(_v.set(p[0], p[1], p[2]), _q, new THREE.Vector3(sc[0], sc[1], sc[2]));
   g.applyMatrix4(_m);
-  if (g.index) g = g.toNonIndexed();
+  if (opts.smooth) {
+    // Weiche Normalen: auf der indizierten Geometrie berechnen (geteilte Ecken mitteln), dann erst auflösen
+    if (!g.index) g = mergeVerticesByPosition(g);
+    g.computeVertexNormals();
+    g = g.toNonIndexed();
+  } else {
+    if (g.index) g = g.toNonIndexed();
+    g.computeVertexNormals();
+  }
   g.deleteAttribute('uv');
   if (g.attributes.uv1) g.deleteAttribute('uv1');
-  g.computeVertexNormals();
   const n = g.attributes.position.count;
   const col = new Float32Array(n * 3);
   const wind = new Float32Array(n);
@@ -66,6 +75,7 @@ export function part(geo, opts = {}) {
   }
   g.setAttribute('color', new THREE.BufferAttribute(col, 3));
   g.setAttribute('aWind', new THREE.BufferAttribute(wind, 1));
+  if (opts.leaf) g.setAttribute('aLeaf', new THREE.BufferAttribute(new Float32Array(n).fill(opts.leaf), 1));
   // Flächenweise Helligkeitsvariation (Low-Poly-Look)
   if (opts.faceVar) {
     const s = opts.seed || 3;
@@ -77,11 +87,31 @@ export function part(geo, opts = {}) {
   return g;
 }
 
-// Teile zusammenfügen (nicht indiziert)
+// Nicht indizierte Geometrie wieder indizieren (Ecken mit gleicher Position teilen) – für weiche Normalen
+function mergeVerticesByPosition(g) {
+  const pa = g.attributes.position;
+  const map = new Map();
+  const index = [];
+  const pos = [];
+  for (let i = 0; i < pa.count; i++) {
+    const x = pa.getX(i), y = pa.getY(i), z = pa.getZ(i);
+    const k = (Math.round(x * 1e4)) + ',' + (Math.round(y * 1e4)) + ',' + (Math.round(z * 1e4));
+    let id = map.get(k);
+    if (id === undefined) { id = pos.length / 3; map.set(k, id); pos.push(x, y, z); }
+    index.push(id);
+  }
+  const out = new THREE.BufferGeometry();
+  out.setAttribute('position', new THREE.Float32BufferAttribute(pos, 3));
+  out.setIndex(index);
+  return out;
+}
+
+// Teile zusammenfügen (nicht indiziert); aLeaf nur, wenn mindestens ein Teil es trägt
 export function merge(parts) {
-  let total = 0;
-  for (const p of parts) total += p.attributes.position.count;
+  let total = 0, anyLeaf = false;
+  for (const p of parts) { total += p.attributes.position.count; if (p.attributes.aLeaf) anyLeaf = true; }
   const pos = new Float32Array(total * 3), nor = new Float32Array(total * 3), col = new Float32Array(total * 3), wind = new Float32Array(total);
+  const leaf = anyLeaf ? new Float32Array(total) : null;
   let o = 0;
   for (const p of parts) {
     const c = p.attributes.position.count;
@@ -89,6 +119,7 @@ export function merge(parts) {
     nor.set(p.attributes.normal.array, o * 3);
     col.set(p.attributes.color.array, o * 3);
     if (p.attributes.aWind) wind.set(p.attributes.aWind.array, o);
+    if (leaf && p.attributes.aLeaf) leaf.set(p.attributes.aLeaf.array, o);
     o += c;
   }
   const g = new THREE.BufferGeometry();
@@ -96,6 +127,7 @@ export function merge(parts) {
   g.setAttribute('normal', new THREE.BufferAttribute(nor, 3));
   g.setAttribute('color', new THREE.BufferAttribute(col, 3));
   g.setAttribute('aWind', new THREE.BufferAttribute(wind, 1));
+  if (leaf) g.setAttribute('aLeaf', new THREE.BufferAttribute(leaf, 1));
   g.computeBoundingSphere();
   g.computeBoundingBox();
   return g;
@@ -103,7 +135,7 @@ export function merge(parts) {
 
 // Blatt/Wedel: Streifen entlang einer Kurve mit V-Faltung
 // spine(t) → Vector3, width(t) → Zahl, fold = Absenkung der Ränder
-export function frond({ spine, width, segments = 6, fold = 0.15, color, tipColor, wind = (t) => t }) {
+export function frond({ spine, width, segments = 6, fold = 0.15, color, tipColor, wind = (t) => t, leaf = 0 }) {
   const pts = [];
   const tmp = new THREE.Vector3();
   for (let i = 0; i <= segments; i++) {
@@ -133,6 +165,7 @@ export function frond({ spine, width, segments = 6, fold = 0.15, color, tipColor
   g.computeVertexNormals();
   g.setAttribute('color', new THREE.Float32BufferAttribute(cols, 3));
   g.setAttribute('aWind', new THREE.Float32BufferAttribute(winds, 1));
+  if (leaf) g.setAttribute('aLeaf', new THREE.Float32BufferAttribute(new Float32Array(pos.length / 3).fill(leaf), 1));
   return g;
 }
 

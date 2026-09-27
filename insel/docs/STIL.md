@@ -381,7 +381,7 @@ Regenbogenring (bleibt), Vorderrand heller, Glitzer entlang des Rings (12/s), Bl
 
 ### 10.5 Auren
 
-Additive Hülle (bleibt), Ringe 1–6, Symbol-Sprite über dem Kopf 0.3 m, Bloom 1.2; im Profi-Modus aus.
+Additive Hülle (bleibt), Ringe 1–6, Symbol-Sprite über dem Kopf 0.3 m, Bloom 1.2; im Profi-Modus aus. Die Hülle darf die Figur **nie flächig verdecken** (heute eine gelbe Kapsel, b30): Fresnel-betonter Rand, Flächen-Alpha ≤ 0.12, Rand-Alpha ≤ 0.55, Gesicht bleibt immer frei lesbar.
 
 ### 10.6 Wetter
 
@@ -424,7 +424,7 @@ Schrift `ui-rounded / SF Pro Rounded / Nunito / Segoe UI` (wie heute). Gewichte 
 
 ### 11.6 Kompass, Glimm, Kraft-Rad, Tagebuch
 
-Kompass 36 px, ohne Rand, Verlaufsmaske, Nadel = kleines Gold-Dreieck; Glimm-Badge 56 px mit Mint-Ring (Puls-Farbe), Atmen dezent (Opazität 0.2–0.5); Kraft-Rad 4 Glas-Segmente, aktiv Gold, Icons 28 px; Tagebuch: Rail 132 px, Reiter mit Gold-Rand, Karte als gemaltes Pergament-Panel (`#F3E6C9` Papier mit Tintenlinien).
+Kompass 36 px, ohne Rand, Verlaufsmaske, Nadel = kleines Gold-Dreieck; Glimm-Badge 56 px mit Mint-Ring (Puls-Farbe), Atmen dezent (Opazität 0.2–0.5); Kraft-Rad 4 Glas-Segmente, aktiv Gold, Icons 28 px – solange es offen ist, blenden die HUD-Knöpfe aus (heute liegt es über „Kraft“ und „Springen“, b42), gesperrte Segmente 40 % Opazität mit kleinem Schloss; Tagebuch: Rail 132 px, Reiter mit Gold-Rand, Karte als gemaltes Pergament-Panel (`#F3E6C9` Papier mit Tintenlinien, Zonen als weiche Farbflächen statt Pixelraster, Nebel als Wolkenschraffur).
 
 ### 11.7 Titel- und Ladebild
 
@@ -436,7 +436,8 @@ Gemaltes Key-Art aus **Ebenen** (Canvas oder CSS): Himmel goldene Stunde (§2.3)
 
 - **FOV** 50° quer (heute 55), 62° hoch (heute 68). Weniger Verzerrung an den Figuren.
 - Folgen: Abstand 7.6 m, Neigung 0.22 rad, Blickhöhe 1.5 m; Horizont im oberen Drittel; Figur leicht links der Mitte beim Laufen (Offset 0.35 m), damit der Weg Raum hat.
-- Gespräch: Über-die-Schulter 35°, FOV 40°, Figur im linken Drittel, Gegenüber rechts, Blase über dem Gegenüber.
+- Gespräch: Über-die-Schulter 35°, FOV 40°, Spielfigur im linken Drittel als ¾-Rückenansicht mit **ganzem Kopf im Bild** (Oberkante Kopf ≥ 8 % unter dem Bildrand), Gegenüber im rechten Drittel und der Kamera zugewandt (`npc.face`), Blase mit Schwanz höchstens 0.4 m über dessen Kopf; Kacheln unten mittig, nie über einem Gesicht. Heute (b20) füllt die Spielfigur das rechte Drittel mit abgeschnittenem Kopf, und die Blase hängt 2 m neben der Sprecherin.
+- Zonen-Spawn und Teleport-Punkte blicken auf die Landmarke der Zone (Leuchtturm-Spawn zeigt den Turm, Vulkan-Spawn den Krater mit Rauch, Klippen-Spawn den Gewitterturm).
 - **Vista-Moment** beim Zonenwechsel: 1.2 s Rückzug +1.5 m, FOV −4°, Banner.
 - Gleiten: Abstand +3.2, FOV +9 (bleibt); Klettern nah; Tauchen kühler Grade.
 - Intro-Anflug: Sonne im Bild, Vordergrund-Element (Möwe/Palmwedel), Landung auf dem Steg.
@@ -471,25 +472,25 @@ Grundlage: Screenshot-Set vom 26.09. (`shots/art/a01–a25, b00–b42`, Qualitä
 
 | # | Problem (aktuell) | Ziel | Verweis | Aufwand |
 |---|---|---|---|---|
-| 1 | **Flaches Lambert ohne Rampe, Schattenfarbe, Rim und Kontur** – alles sieht „unbeleuchtet“ und wie ein Prototyp aus (jeder Screenshot) | Toon-Ramp 2–3 Bänder, kühle Schatten, Rim, farbige Konturen | §3, §4 | M (2 Tage) |
-| 2 | **Kein Post-Stack**: kein Bloom, Farbkorrektur nur pro Material (Sprites/Partikel ungegradet), keine Bild-Kontur – Laternen, Feuer, Lava und Runen leuchten nicht (a07, a08) | Composer mittel/hoch mit Bloom, Kontur, Grade-Pass; Glüh-Sprites auf niedrig | §13, §10.1 | M |
-| 3 | **Hafen-Dorf ohne Häuser** – der „letzte bunte Ort“ ist eine Wiese mit vier Feuerstellen und Laternen (a01, a05, b02); kein `haus`-Prop existiert | 8–10 bunte Holzhäuser, Kioske, Kisten, Netze, Wimpel, zweites Boot; Markt 5 Häuser | §9.2 | M |
-| 4 | **Himmel und Wolken**: 2-Stopp-Verlauf, Wolken als graue Polygon-Klumpen, Gewitterturm ein schwarzer Felsbrocken am Himmel (a02, a03, a05) | 4-Stopp-Himmel mit Horizontband und zwei Sonnenhöfen, Anime-Cumulus zweitonig, Gewitterturm blauviolett mit hellem Kamm | §5.1, §5.2 | S–M |
-| 5 | **Vegetation**: Gras als spitze Stern-Büschel (dunkle Stacheln auf Sand, a13), Kronen als Icosaeder Stufe 0 mit Jitter, Rausch-Facetten | Gras-Karten mit Verlauf, runde weiche Kronen mit 2 Tönen und Kontur, Blumen-Cluster | §6 | M |
-| 6 | **Grauschleier = flacher Zement** ohne Kontrast; wirkt unfertig statt verflucht (a06, a10, a14) | Duotone `#2E2A44/#7A7691/#C9C4D8`, Höhennebel, sichtbare Nebelwand am Rand | §2.4, §10.3 | S |
-| 7 | **Figuren steif und puppenhaft**: kleine Augen ohne Iris-Tiefe, 6 Kopfhöhen, kaum Idle-Bewegung, kein Blinzeln, Dorfleute als eingefrorene Impostoren, keine Kontur/Rim (a01, a20–a25) | 6,5 Köpfe, große zweitonige Augen mit Lidlinie, Strähnenhaar mit Glanzband, Presets, Blinzeln, Atmen auch bei Impostoren | §8 | M–L |
-| 8 | **Namensschilder weltgroß**: 0.48 m-Sprite füllt aus der Nähe den halben Bildschirm („Bootsjunge“, a05), Icons und Ringe zu dick | 0.26 m, Bildschirmgröße geklemmt 13–16 px, dünne Ringe, ≤ 6 gleichzeitig | §11.3 | S |
-| 9 | **HUD im Bonbon-Stil**: cyan/violett/gold Radialverläufe, 3 px helle Ränder, 3D-Bevel, große Aktionspille (alle Shots) | Glas-Panels, eine Akzentfarbe Gold, flache Pille, dünne Haarlinien | §11.2, §11.4 | S |
-| 10 | **Nacht zu dunkel und einfarbig**, Feuer winzig, keine Glühwürmchen, Schatten schwarz (a07, a08, b10) | Blaue Nacht (Minimum `#0C1030`), Bloom auf Laternen/Feuern, Glühwürmchen, Mondlicht mit Rim | §2.3, §5.5, §10.2 | S (nach #2) |
-| 11 | **Vulkan**: flache braune Masse, Lava-Adern als rosa Rauten, Rauchsäule aus durchsichtigen Kästen (a04, a08) | Basalt-Facetten mit 3 Tönen, Lava-Adern als leuchtende Risse (Bloom), Rauch als zweitonige runde Ballen mit weichem Rand | §2.2, §3.1, §10.1 | S–M |
-| 12 | **Ferne verschwimmt im Orange-Dunst**, Landmarken verlieren die Silhouette, harter Horizont (a02, a10) | Luftperspektive (kühler, entsättigt), Nebel gedeckelt auf Landmarken, Horizontband | §5.3 | S |
-| 13 | **Wasser** muddy in der goldenen Stunde, Schaum weich, keine nasse Sandkante, Reflexband fehlt (a01, a13) | 3 Tiefenbänder, klarer Schaum mit Löchern, Reflexband, nasser Sand, Funkeln | §5.4 | S |
-| 14 | **Requisiten dünn**: Tanks als leere Glasröhren, Runen als schwebende Ringe, Glimmer-Inseln als graue Brocken, keine Zweit-Details (Kisten, Netze, Schilder) (a10, a13, a02) | 3 Töne + Akzent + Kontur je Requisite, Sockel/Deckel/Emission für Tanks, Runen mit Symbol und Glow, Glimmer-Inseln perlweiß mit Neon-Kanten, Kleinkram-Sets je Zone | §9 | M |
-| 15 | **Titelbild** = CSS-Synthwave (Gitterlinien, Clip-Path-Insel) statt gemaltem Key-Art; Intro-Titel nur Textschatten (b00) | Ebenen-Key-Art mit Sonne, Silhouetten, Sonnenpfad; Titel mit Gold-Verlauf | §11.7 | S |
+| 1 | **Flaches Lambert ohne Rampe, Schattenfarbe, Rim und Kontur** – alles sieht „unbeleuchtet“ aus, Figuren und Requisiten kleben ohne Kante am Hintergrund; das ist der Hauptgrund für den Prototyp-Eindruck (jeder Screenshot) | Toon-Ramp 2–3 Bänder, kühle Schatten, Rim, farbige Konturen | §3, §4 | M (2 Tage) |
+| 2 | **Kein Post-Stack**: kein Bloom, Farbkorrektur nur pro Material (Sprites/Partikel ungegradet), keine Bild-Kontur – Laternen, Feuer, Lava und Runen leuchten nicht, die Nacht ist stumpf (a07, a08, b10) | Composer mittel/hoch mit Bloom, Kontur, Grade-Pass; Glüh-Sprites auf niedrig | §13, §10.1 | M |
+| 3 | **Grauschleier = flacher Zement**: Sieben von acht Zonen starten grau, also ist dieses konturlose Grau-Beige der *erste Eindruck* fast der ganzen Insel; es wirkt unfertig statt verflucht (a06, a10, a14, b04–b09, b11) | Duotone `#2E2A44/#7A7691/#C9C4D8` mit erhaltenem Kontrast, Höhennebel, Schwebeteilchen, sichtbare Nebelwand am Zonenrand | §2.4, §10.3 | S |
+| 4 | **Hafen-Dorf ohne Häuser** – der „letzte bunte Ort“ ist eine Wiese mit vier Feuerstellen, Laternen und einer Figurengruppe; kein `haus`-Prop existiert; Marktstände sind leere Gerüste (a01, a05, b02, b03, b08) | 8–10 bunte Holzhäuser, Kioske, Kisten, Netze, Wimpel, zweites Boot; Markt 5 Häuser + gefüllte Stände mit Markisen | §9.2 | M |
+| 5 | **Himmel und Wolken**: 2-Stopp-Verlauf, Wolken als graue Polygon-Klumpen, Gewitterturm ein schwarzer Felsbrocken am Himmel, unter dem Turm ein schwarzes Brett (a02, a03, a05, b06) | 4-Stopp-Himmel mit Horizontband und zwei Sonnenhöfen, Anime-Cumulus zweitonig, Gewitterturm blauviolett mit hellem Kamm, sichtbarer Regen | §5.1, §5.2 | S–M |
+| 6 | **Vegetation**: Gras als spitze Stern-Büschel (dunkle Stacheln auf Sand, a13, b12), Kronen als Icosaeder Stufe 0 mit Jitter, Kiefern als Papierkegel, Rausch-Facetten auf Wiesen | Gras-Karten mit Verlauf, runde weiche Kronen mit 2 Tönen und Kontur, Blumen-Cluster, weiche Wiesen-Normalen | §6, §7 | M |
+| 7 | **Figuren steif und puppenhaft**: Kugelkopf mit winzigen Augen, Haar als Kappe mit Koteletten-Klötzen, Kapuze als Kasten, 6 Kopfhöhen, kaum Idle-Bewegung, kein Blinzeln, Dorfleute als eingefrorene Impostoren in Trauben; Ausdrücke sind aus 3 m nicht lesbar („zornig“ und „traurig“ unterscheiden sich nur im Brauenwinkel, der Mund ist unsichtbar, a20–a22); die Aura-Kapsel verdeckt die Figur flächig (a01, b02, b20, b30) | 6,5 Köpfe, große zweitonige Augen mit Lidlinie, Strähnenhaar mit Glanzband, Ausdrucks-Presets mit sichtbarem Mund (offen/Lächeln/Schmollen, Breite 0.04 m), Blinzeln, Atmen auch bei Impostoren, Aura als Rand-Schimmer | §8, §10.5 | M–L |
+| 8 | **Namensschilder weltgroß**: 0.48 m-Sprite füllt aus der Nähe den halben Bildschirm („Bootsjunge“, „Fischerin“, „Sammlerin“ – a05, b03, b08), Trauben aus 4–5 Schildern, dicke Ringe | 0.26 m, Bildschirmgröße geklemmt 13–16 px, dünne Ringe, ≤ 6 gleichzeitig, Gesprächspartner ohne Schild | §11.3 | S |
+| 9 | **HUD im Bonbon-Stil**: cyan/violett/gold Radialverläufe, 3 px helle Ränder, 3D-Bevel, große Aktionspille; das Kraft-Rad liegt über den Knöpfen „Kraft“ und „Springen“ (b42) | Glas-Panels, eine Akzentfarbe Gold, flache Pille, dünne Haarlinien; Kraft-Rad blendet die Knöpfe aus | §11.2, §11.4, §11.6 | S |
+| 10 | **Komposition und Kamera**: Zonen-Spawns zeigen keine Landmarke (Leuchtturm-Spawn ohne Turm b09, Vulkan-Spawn = brauner Hang b07); Ferne verschwimmt im Orange-Dunst, harter Horizont (a02, a10); Dialog-Kamera schneidet der Spielfigur den Kopf ab und die Blase schwebt weit weg von Jolie (b20, b21) | Luftperspektive mit gedeckeltem Nebel auf Landmarken; Spawns mit Blick auf die Landmarke; Gesprächs-Kamera mit ganzem Kopf, Figur links, Blase mit Schwanz direkt über dem Gegenüber | §5.3, §12 | S |
+| 11 | **Nacht zu dunkel und einfarbig**, Bäume schwarze Klumpen vor schwarzem Himmel, Laternen ohne Glühen, Feuer winzig (a07, a08, b10) | Blaue Nacht (Minimum `#0C1030`), Bloom auf Laternen/Feuern, mehr Glühwürmchen, Mondlicht mit Rim, Kronen vom Himmel abgesetzt | §2.3, §5.5, §10.2 | S (nach #2) |
+| 12 | **Vulkan**: flache braune Masse, Lava-Adern als rosa Rauten, Rauchsäule aus durchsichtigen Kästen (a04, a08, b03) | Basalt-Facetten mit 3 Tönen, Lava-Adern als leuchtende Risse (Bloom), Rauch als zweitonige runde Ballen mit weichem Rand | §2.2, §3.1, §10.1 | S–M |
+| 13 | **Wasser** muddy in der goldenen Stunde, Schaum weich, keine nasse Sandkante, Reflexband fehlt (a01, a13, b09) | 3 Tiefenbänder, klarer Schaum mit Löchern, Reflexband, nasser Sand, Funkeln | §5.4 | S |
+| 14 | **Requisiten dünn**: Tanks als leere Glasröhren, Runen als schwebende Ringe, Glimmer-Inseln als graue Brocken, Baumhaus-Feige als nackter Riesenstamm mit Leiter, keine Zweit-Details (Kisten, Netze, Schilder) (a10, a13, a02, b03) | 3 Töne + Akzent + Kontur je Requisite, Sockel/Deckel/Emission für Tanks, Runen mit Symbol und Glow, Glimmer-Inseln perlweiß mit Neon-Kanten, Baumhaus mit Krone, Plattformen und Laternen, Kleinkram-Sets je Zone | §9 | M |
+| 15 | **Titelbild** = CSS-Synthwave (Gitterlinien, Clip-Path-Insel) statt gemaltem Key-Art; Tagebuch-Karte als Pixelraster (b00, b41) | Ebenen-Key-Art mit Sonne, Silhouetten, Sonnenpfad; Titel mit Gold-Verlauf; Karte als gemaltes Pergament | §11.7, §11.6 | S |
 
-Ergänzend (kleiner): FOV 55° → 50° (§12); Blob-Schatten dunkler/kleiner + echter Schattenwurf für die Spielfigur (§8.7); `faceVar` auf Gelände senken (§7); Kamera-Vista beim Zonenwechsel (§12).
+Ergänzend (kleiner): FOV 55° → 50° (§12); Blob-Schatten dunkler/kleiner + echter Schattenwurf für die Spielfigur (§8.7); `faceVar` auf Gelände senken (§7); Kamera-Vista beim Zonenwechsel (§12). Was schon trägt und bleibt: die Farbwelle (a11–a13), die Palmen-Silhouetten gegen das Abendmeer (b04), die Feuerstellen, die Pause-Karte (b40), das Glimm-Badge.
 
-**Reihenfolge:** 1 → 2 → 9 → 8 → 4 → 6 → 12 → 5 → 3 → 7 → 10 → 11 → 13 → 14 → 15. Nach 1, 2, 9 und 8 (zusammen ≈ 3–4 Tage) sieht dasselbe Spiel bereits nach einem anderen Produkt aus.
+**Reihenfolge:** 1 → 2 → 3 → 9 → 8 → 5 → 10 → 6 → 4 → 7 → 11 → 12 → 13 → 14 → 15. Nach 1, 2, 3, 9 und 8 (zusammen ≈ 4 Tage) sieht dasselbe Spiel bereits nach einem anderen Produkt aus – ohne ein einziges neues Modell.
 
 ---
 
@@ -497,6 +498,6 @@ Ergänzend (kleiner): FOV 55° → 50° (§12); Blob-Schatten dunkler/kleiner + 
 
 Jedes Grafik-Arbeitspaket legt vor dem Abschluss dieses Set (Qualität **mittel**, 1180×820, und Hochformat 820×1180) ab und vergleicht es mit dem Vorgänger:
 
-`tests/shots.mjs` (a01–a25) plus: Titel · Hafen mit Figuren (Spielersicht) · Dorfplatz · Strand · Dschungel · Klippen im Gewitter · Vulkan · Markt · Leuchtturm · Hafen Nacht · Strand Mittag · Hafen Morgen · Dialog (Blase) · Dialog (Kacheln) · Figur nah mit Aura · Pause · Tagebuch · Kraft-Rad (Skript: `art-shots.mjs` im Scratch-Ordner, Ziel `docs/shots/`).
+`tests/shots.mjs` (a01–a14) · `tests/figur-shots.mjs` (a15, a20–a25: Figur neutral/zornig/traurig/winkend/ganz/laufend, Wald-Kamera) · `tests/art-shots.mjs` (b00–b42: Titel · HUD · Hafen mit Figuren · Dorfplatz · Strand · Dschungel · Klippen im Gewitter · Vulkan · Markt · Leuchtturm · Hafen Nacht · Strand Mittag · Hafen Morgen · Dialog Blase · Dialog Kacheln · Figur nah mit Aura · Pause · Tagebuch · Kraft-Rad). Aufruf je Skript: `SHOTS=<Ordner> Q=medium node tests/<skript>.mjs` – die Skripte nacheinander starten (zwei Chromium-Instanzen mit Software-GL brechen sich gegenseitig ab). Referenz-Set vom 26.09.: `/tmp/claude-0/-home-user/f6080bde-1b7f-57ff-8c41-9f899e920847/scratchpad/shots/art/`.
 
 Prüffragen je Bild: Drei Töne pro Fläche? Schatten farbig? Konturen farbig und dünn? Leuchtendes leuchtet? Silhouetten lesbar? Ferne kühler und heller? Oberfläche ruhig, Gold als einziger Akzent? Namensschilder klein? Und die Kernfrage: **Würde man dieses Bild als Postkarte aufhängen?**

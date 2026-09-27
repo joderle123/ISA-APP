@@ -173,8 +173,9 @@ export async function createGame({ canvas, root, hudRoot, onProgress = () => {} 
     if (e.auto) ui.toast('Grafik angepasst: ' + e.quality.label);
   });
 
-  // ---- Schleife ----
-  const loop = createLoop({ render: () => renderer.render(scene, camera) });
+  // ---- Schleife (Post-Stack auf mittel/hoch, direkt auf niedrig – engine/renderer.js) ----
+  rr.attachPost({ scene, camera, veil });
+  const loop = createLoop({ render: () => rr.render({ night: sky.night, time: loop.time }) });
   game.loop = loop;
   let zoneT = 0, ambT = 0;
   loop.add(() => input.beginFrame(), { order: -100, always: true });

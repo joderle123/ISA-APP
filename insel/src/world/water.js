@@ -14,6 +14,8 @@ const BODY_LOOK = {
 };
 
 const TEX_HALF = 256;
+const DAY = { shallow: new THREE.Color('#37e0cf'), mid: new THREE.Color('#12a6cc'), deep: new THREE.Color('#0b4a94') };
+const NIGHT = { shallow: new THREE.Color('#1a6a78'), mid: new THREE.Color('#0d3a5a'), deep: new THREE.Color('#061c3a') };
 
 const OCEAN_VERT = /* glsl */`
 uniform float uTime;
@@ -84,45 +86,47 @@ void main() {
   vec3 V = normalize(cameraPosition - vWorld);
   float dist = length(cameraPosition - vWorld);
 
-  // Farbe nach Tiefe
-  vec3 col = mix(uShallow, uMid, smoothstep(0.3, 4.5, depth));
-  col = mix(col, uDeep, smoothstep(4.0, 16.0, depth));
-  // Licht
-  float ndl = max(dot(N, uSunDir), 0.0);
-  col *= uAmbient + uSunColor * (0.35 + 0.4 * ndl);
-  // Fresnel / Himmel
+  // Drei Tiefenbänder mit schmalen Übergängen (§5.4): flach 0–1.5 m · mittel 1.5–6 m · tief > 6 m
+  vec3 col = mix(uShallow, uMid, smoothstep(1.2, 1.8, depth));
+  col = mix(col, uDeep, smoothstep(5.6, 6.4, depth));
+  // Licht: zweistufig (Toon), Schattenseite der Wellen kühl
+  float ndl = dot(N, uSunDir);
+  float band = smoothstep(0.25, 0.4, ndl);
+  col *= uAmbient + uSunColor * (0.42 + 0.5 * band);
+  // Reflexband: Horizontfarbe bei streifendem Blick (Fresnel 0.35)
   float fres = pow(1.0 - max(dot(N, V), 0.0), 4.0);
-  col = mix(col, mix(uHorizonColor, uSkyColor, 0.4), clamp(fres * 0.6, 0.0, 0.55));
-  // Glanzlichter (facettiert + Funkeln)
+  col = mix(col, mix(uHorizonColor, uSkyColor, 0.35), clamp(fres * 0.6, 0.0, 0.35));
+  // Sonnenpfad + Funkeln (harte Punkte)
   vec3 Hh = normalize(uSunDir + V);
   float spec = pow(max(dot(N, Hh), 0.0), 220.0);
-  float tw = step(0.72, hash12(floor(vWorld.xz * 1.3) + floor(uTime * 5.0)));
-  col += uSunColor * (spec * 3.0 + spec * tw * 4.0) * (1.0 - uNight * 0.6);
-  // breiter Sonnenpfad
-  col += uSunColor * pow(max(dot(reflect(-V, N), uSunDir), 0.0), 24.0) * 0.25;
+  float tw = step(0.78, hash12(floor(vWorld.xz * 1.3) + floor(uTime * 5.0)));
+  col += uSunColor * (spec * 2.0 + spec * tw * 4.0) * (1.0 - uNight * 0.6);
+  col += uSunColor * pow(max(dot(reflect(-V, N), uSunDir), 0.0), 24.0) * 0.3;
 
-  // Schaum an der Küste
+  // Schaum als klare Formen: Küstenband 0.6–1.2 m mit Löchern, Wellenlinien mit step, Kämme draußen
   float n1 = vnoise(vWorld.xz * 0.35 + uTime * 0.15);
   float n2 = vnoise(vWorld.xz * 1.1 - uTime * 0.2);
-  float shore = 1.0 - smoothstep(0.02, 0.12 + n2 * 0.14, depth);
+  float shore = 1.0 - step(0.08 + n2 * 0.12, depth);
+  float holes = step(n2 + n1 * 0.3, 0.75);
+  shore *= holes;
   float ph = depth * 1.6 - uTime * 0.3 + n1 * 0.5;
   float fl = fract(ph);
-  float line = smoothstep(0.0, 0.04, fl) * (1.0 - smoothstep(0.06, 0.14, fl));
-  line *= 1.0 - smoothstep(0.3, 1.3, depth);
-  line *= smoothstep(0.4, 0.65, n2 + 0.15);
+  float line = step(0.02, fl) * (1.0 - step(0.12, fl));
+  line *= 1.0 - smoothstep(0.6, 1.6, depth);
+  line *= step(0.45, n2 + 0.15);
   float foam = clamp(max(shore, line * 0.9), 0.0, 1.0);
-  // Schaum auf Wellenkämmen draußen (dezent)
-  float crest = smoothstep(0.62, 0.8, N.x * 0.5 + 0.5) * smoothstep(3.0, 8.0, depth) * 0.12 * step(dist, 160.0);
+  float crest = step(0.68, N.x * 0.5 + 0.5) * smoothstep(3.0, 8.0, depth) * 0.1 * step(dist, 160.0);
   foam = max(foam, crest);
-  vec3 foamCol = uFoam * (uAmbient + uSunColor * 0.55);
+  vec3 foamCol = uFoam * (uAmbient + uSunColor * 0.6);
   col = mix(col, foamCol, foam);
 
   col = mix(col, lumoApplyVeil(col, vVeilPos), 0.65);
-  float alpha = mix(0.5, 0.97, smoothstep(0.1, 3.5, depth));
+  float alpha = mix(0.55, 0.97, smoothstep(0.1, 3.5, depth));
   alpha = max(alpha, foam);
   gl_FragColor = vec4(col, alpha);
   #include <tonemapping_fragment>
   #include <colorspace_fragment>
+  gLumoWorldY = vWorld.y;
   #ifdef USE_FOG
     gl_FragColor.rgb = lumoFog(gl_FragColor.rgb, vFogDepth, vFogView, fogColor, fogNear, fogFar);
   #endif
@@ -177,9 +181,9 @@ export function createWater({ island, veil, quality, scene }) {
     uTime: { value: 0 },
     uDepthTex: { value: depthTex },
     uTexHalf: { value: TEX_HALF },
-    uShallow: { value: new THREE.Color('#27d3c3') },
-    uMid: { value: new THREE.Color('#0b9cc2') },
-    uDeep: { value: new THREE.Color('#0a3f8a') },
+    uShallow: { value: new THREE.Color('#37e0cf') },
+    uMid: { value: new THREE.Color('#12a6cc') },
+    uDeep: { value: new THREE.Color('#0b4a94') },
     uFoam: { value: new THREE.Color('#ffffff') },
     uSunDir: { value: new THREE.Vector3(0, 1, 0) },
     uSunColor: { value: new THREE.Color('#ffe0b0') },
@@ -247,10 +251,11 @@ export function createWater({ island, veil, quality, scene }) {
         col = mix(col, uAmbient * 1.4, fres * 0.35);
         col = lumoApplyVeil(col, vWorld);
         // Glühen (leuchtende Gezeitenbecken: nachts stärker, im Schleier gedämpft)
-        col += uGlow * (0.4 + uNight * 0.9) * (1.0 - gLumoVeil * 0.8) * (0.7 + 0.3 * rip);
+        col += uGlow * (1.4 + uNight * 1.2) * (1.0 - gLumoVeil * 0.8) * (0.7 + 0.3 * rip);
         gl_FragColor = vec4(col, uAlpha);
         #include <tonemapping_fragment>
         #include <colorspace_fragment>
+        gLumoWorldY = vWorld.y;
         #ifdef USE_FOG
           gl_FragColor.rgb = lumoFog(gl_FragColor.rgb, vFogDepth, vFogView, fogColor, fogNear, fogFar);
         #endif
@@ -410,6 +415,10 @@ export function createWater({ island, veil, quality, scene }) {
     },
     // Licht vom Himmel übernehmen (Sonne/Mond, Umgebung, Himmelsfarben)
     syncSky(sky) {
+      // Tagesfarben → Nachtfarben (§5.4)
+      uniforms.uShallow.value.copy(DAY.shallow).lerp(NIGHT.shallow, sky.night);
+      uniforms.uMid.value.copy(DAY.mid).lerp(NIGHT.mid, sky.night);
+      uniforms.uDeep.value.copy(DAY.deep).lerp(NIGHT.deep, sky.night);
       uniforms.uSunDir.value.copy(sky.lightDir);
       uniforms.uSunColor.value.copy(sky.sun.color).multiplyScalar(Math.min(1.3, sky.sun.intensity / 3));
       uniforms.uAmbient.value.copy(sky.colors.ambient).multiplyScalar(1.6 - sky.night * 0.45);

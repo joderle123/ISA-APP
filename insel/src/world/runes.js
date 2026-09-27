@@ -86,7 +86,7 @@ export function createRunes({ scene, island, colliders, veil, particles, colors 
   const glowMat = (hexColor) => {
     const key = String(hexColor);
     if (!glowMats.has(key)) {
-      const m = new THREE.MeshLambertMaterial({ vertexColors: true, flatShading: true, emissive: new THREE.Color(hexColor), emissiveIntensity: 0.6, transparent: true, opacity: 0.95 });
+      const m = new THREE.MeshLambertMaterial({ vertexColors: true, flatShading: true, emissive: new THREE.Color(hexColor), emissiveIntensity: 1.4, transparent: true, opacity: 0.95 });
       if (veil) veil.patch(m, { key: 'rune-' + key, veil: false });
       glowMats.set(key, m);
     }

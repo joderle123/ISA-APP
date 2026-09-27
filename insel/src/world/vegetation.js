@@ -8,22 +8,27 @@ import { ZONES, SITES, FEATURES, ZONE_INDEX } from './island.js';
 const CHUNK = 80;
 const ZI = ZONE_INDEX;
 
-// ---------- Modelle ----------
+// ---------- Modelle (Stil-Bibel §6: klare Silhouetten, runde weiche Kronen, zwei Töne je Krone, kein Jitter) ----------
+const hueShift = (hex, deg) => { const c = new THREE.Color(hex); const h = {}; c.getHSL(h); return c.setHSL((h.h + deg / 360 + 1) % 1, h.s, h.l); };
+
 function palmGeo(rnd, variant) {
   const parts = [];
   const H = variant ? 8.6 : 7.2;
   const bend = variant ? 2.4 : 1.4;
   const segs = 7;
   const curve = (t) => new THREE.Vector3(bend * t * t, H * t, 0);
+  // Stamm mit Ringen (Vertex-Bänder alle 0.5 m ±5 %)
+  const barkA = new THREE.Color('#8e6c46'), barkB = new THREE.Color('#76583a');
   for (let i = 0; i < segs; i++) {
     const t0 = i / segs, t1 = (i + 1) / segs;
     const p0 = curve(t0), p1 = curve(t1);
     const len = p0.distanceTo(p1) * 1.04;
     const r0 = 0.36 - 0.16 * t0, r1 = 0.36 - 0.16 * t1;
     const ang = -Math.atan2(p1.x - p0.x, p1.y - p0.y);
-    parts.push(part(new THREE.CylinderGeometry(r1, r0 + 0.04, len, 6, 1, true), {
-      pos: [(p0.x + p1.x) / 2, (p0.y + p1.y) / 2, 0], rot: [0, 0, ang],
-      color: i % 2 ? '#8e6c46' : '#76583a', wind: (x, y) => Math.pow(Math.max(0, y) / H, 2) * 0.22,
+    parts.push(part(new THREE.CylinderGeometry(r1, r0 + 0.04, len, 7, 1, true), {
+      pos: [(p0.x + p1.x) / 2, (p0.y + p1.y) / 2, 0], rot: [0, 0, ang], smooth: true,
+      color: (x, y, z, out) => out.copy(Math.sin(y * 12.5) > 0.2 ? barkA : barkB),
+      wind: (x, y) => Math.pow(Math.max(0, y) / H, 2) * 0.22,
     }));
   }
   const top = curve(1);
@@ -33,16 +38,16 @@ function palmGeo(rnd, variant) {
     const L = 3.4 + rnd() * 1.1;
     const lift = 0.45 + rnd() * 0.2;
     parts.push(frond({
-      spine: (t) => new THREE.Vector3(top.x + Math.cos(phi) * L * t, top.y + L * (lift * t - 0.85 * t * t), Math.sin(phi) * L * t),
-      width: (t) => 0.62 * Math.pow(Math.sin(Math.PI * Math.min(1, t * 1.05 + 0.02)), 0.7),
-      segments: 6, fold: 0.28,
+      spine: (t) => new THREE.Vector3(top.x + Math.cos(phi) * L * t, top.y + L * (lift * t - 0.85 * t * t) - (t > 0.85 ? (t - 0.85) * 1.2 : 0), Math.sin(phi) * L * t),
+      width: (t) => 0.66 * Math.pow(Math.sin(Math.PI * Math.min(1, t * 1.05 + 0.02)), 0.7),
+      segments: 6, fold: 0.3,
       color: '#2c8f45', tipColor: '#96e05a',
-      wind: (t) => 0.3 + t * 0.7,
+      wind: (t) => 0.3 + t * 0.7, leaf: 1,
     }));
   }
   for (let k = 0; k < 3; k++) {
     const a = (k / 3) * Math.PI * 2;
-    parts.push(part(new THREE.OctahedronGeometry(0.24, 0), { pos: [top.x + Math.cos(a) * 0.28, top.y - 0.3, Math.sin(a) * 0.28], color: '#6b4a2a', wind: 0.25 }));
+    parts.push(part(new THREE.SphereGeometry(0.24, 6, 5), { pos: [top.x + Math.cos(a) * 0.28, top.y - 0.3, Math.sin(a) * 0.28], color: '#6b4a2a', wind: 0.25, smooth: true }));
   }
   return merge(parts);
 }
@@ -51,59 +56,61 @@ function canopyColor(light, dark, y0, y1) {
   const a = new THREE.Color(light), b = new THREE.Color(dark);
   return (x, y, z, out) => out.copy(b).lerp(a, smoothstep(y0, y1, y));
 }
+// Runde Krone aus großen weichen Loben, je Lobe Farbton ±4°
+function lobes(parts, list, light, dark, y0, y1, wind, seedBase = 0) {
+  list.forEach((b, i) => {
+    const deg = ((seedBase + i) % 3 - 1) * 4;
+    const cf = canopyColor(hueShift(light, deg), hueShift(dark, deg), y0, y1);
+    parts.push(part(new THREE.SphereGeometry(b[3], 10, 8), { pos: [b[0], b[1], b[2]], scale: [1, 0.86, 1], smooth: true, leaf: 1, color: cf, wind }));
+  });
+}
 
 function broadleafGeo(rnd, blossom) {
   const parts = [];
   const h = 3.0 + rnd() * 0.8;
-  parts.push(part(new THREE.CylinderGeometry(0.2, 0.32, h, 5, 1), { pos: [0, h / 2, 0], color: '#7a5638', jitter: 0.06, seed: 3, wind: (x, y) => (y / h) * 0.05 }));
-  parts.push(part(new THREE.CylinderGeometry(0.08, 0.14, 1.6, 4, 1), { pos: [0.55, h - 0.1, 0], rot: [0, 0, -0.9], color: '#7a5638', wind: 0.08 }));
-  parts.push(part(new THREE.CylinderGeometry(0.08, 0.14, 1.4, 4, 1), { pos: [-0.45, h - 0.3, 0.2], rot: [0.3, 0, 0.9], color: '#7a5638', wind: 0.08 }));
-  const blobs = [[0, h + 1.5, 0, 2.0], [1.3, h + 0.9, 0.4, 1.45], [-1.2, h + 1.0, -0.3, 1.5], [0.2, h + 2.6, -0.4, 1.3], [-0.3, h + 0.8, 1.1, 1.3]];
-  const colFn = blossom
-    ? canopyColor('#ffc2dc', '#f06a9c', h, h + 3.2)
-    : canopyColor('#9ade5a', '#3c9a3c', h + 0.2, h + 3.2);
-  blobs.forEach((b, i) => {
-    parts.push(part(new THREE.IcosahedronGeometry(b[3], i === 0 ? 1 : 0), {
-      pos: [b[0], b[1], b[2]], scale: [1, 0.85, 1], jitter: 0.35, seed: 10 + i,
-      color: colFn, wind: (x, y) => 0.12 + Math.max(0, y - h) * 0.05, faceVar: 0.14,
-    }));
-  });
+  // Stamm 6-eckig mit leichter Verjüngung und Wurzelansatz
+  parts.push(part(new THREE.CylinderGeometry(0.2, 0.3, h, 6, 1), { pos: [0, h / 2, 0], color: '#7a5638', wind: (x, y) => (y / h) * 0.05 }));
+  parts.push(part(new THREE.CylinderGeometry(0.3, 0.44, 0.35, 6, 1), { pos: [0, 0.17, 0], color: '#6e4c30' }));
+  parts.push(part(new THREE.CylinderGeometry(0.08, 0.14, 1.6, 5, 1), { pos: [0.55, h - 0.1, 0], rot: [0, 0, -0.9], color: '#7a5638', wind: 0.08 }));
+  parts.push(part(new THREE.CylinderGeometry(0.08, 0.14, 1.4, 5, 1), { pos: [-0.45, h - 0.3, 0.2], rot: [0.3, 0, 0.9], color: '#7a5638', wind: 0.08 }));
+  const list = [[0, h + 1.6, 0, 2.1], [1.35, h + 0.95, 0.4, 1.5], [-1.25, h + 1.05, -0.3, 1.55], [0.2, h + 2.7, -0.4, 1.35], [-0.3, h + 0.85, 1.15, 1.35]];
+  if (blossom) lobes(parts, list, '#ffc2dc', '#f06a9c', h, h + 3.4, (x, y) => 0.12 + Math.max(0, y - h) * 0.05, 2);
+  else lobes(parts, list, '#9ade5a', '#3b8a3e', h + 0.2, h + 3.4, (x, y) => 0.12 + Math.max(0, y - h) * 0.05, Math.floor(rnd() * 3));
   return merge(parts);
 }
 
 function jungleGeo(rnd) {
   const parts = [];
   const h = 6.2 + rnd() * 1.6;
-  parts.push(part(new THREE.CylinderGeometry(0.34, 0.55, h, 6, 3), { pos: [0, h / 2, 0], color: '#8a6a4c', jitter: 0.1, seed: 5, wind: (x, y) => (y / h) ** 2 * 0.06, deform: (v) => { v.x += Math.sin(v.y * 0.4) * 0.25; } }));
+  parts.push(part(new THREE.CylinderGeometry(0.34, 0.55, h, 7, 3), { pos: [0, h / 2, 0], color: '#8a6a4c', smooth: true, wind: (x, y) => (y / h) ** 2 * 0.06, deform: (v) => { v.x += Math.sin(v.y * 0.4) * 0.25; } }));
+  // Brettwurzeln
   for (let k = 0; k < 4; k++) {
     const a = (k / 4) * Math.PI * 2 + 0.4;
     parts.push(part(new THREE.ConeGeometry(0.55, 1.8, 3, 1), { pos: [Math.cos(a) * 0.5, 0.65, Math.sin(a) * 0.5], rot: [Math.sin(a) * 0.5, -a, -Math.cos(a) * 0.5], scale: [0.35, 1, 1.2], color: '#7a5c40' }));
   }
-  const cc = canopyColor('#6fd35a', '#1d6e33', h - 1.8, h + 3.2);
-  const blobs = [[0, h + 1.0, 0, 3.0], [0.3, h + 2.6, -0.2, 2.0]];
+  // Krone in zwei Etagen
+  const list = [[0, h + 1.1, 0, 3.1], [0.3, h + 2.8, -0.2, 2.1]];
   for (let k = 0; k < 6; k++) {
     const a = (k / 6) * Math.PI * 2 + rnd() * 0.5;
-    blobs.push([Math.cos(a) * 2.5, h - 0.2 + rnd() * 0.8, Math.sin(a) * 2.5, 1.7 + rnd() * 0.6]);
+    list.push([Math.cos(a) * 2.5, h - 0.2 + rnd() * 0.8, Math.sin(a) * 2.5, 1.8 + rnd() * 0.5]);
   }
-  blobs.forEach((b, i) => {
-    parts.push(part(new THREE.IcosahedronGeometry(b[3] * 0.92, i < 2 ? 1 : 0), { pos: [b[0], b[1], b[2]], scale: [1.1, 0.8, 1.1], jitter: 0.35, seed: 30 + i, color: cc, wind: 0.12 + i * 0.01, faceVar: 0.14 }));
-  });
-  // Lianen
+  lobes(parts, list, '#6fd35a', '#1d6e33', h - 1.8, h + 3.4, 0.12, Math.floor(rnd() * 3));
+  // Lianen als Bänder mit zwei Tönen
   for (let k = 0; k < 6; k++) {
     const a = rnd() * Math.PI * 2, r = 1.6 + rnd() * 1.8, L = 1.8 + rnd() * 2.6;
-    parts.push(part(new THREE.BoxGeometry(0.07, L, 0.07), { pos: [Math.cos(a) * r, h - L / 2 - 0.2, Math.sin(a) * r], color: '#2d6b2e', wind: (x, y) => 0.25 + (h - y) * 0.1 }));
+    parts.push(part(new THREE.BoxGeometry(0.09, L, 0.05), { pos: [Math.cos(a) * r, h - L / 2 - 0.2, Math.sin(a) * r], color: k % 2 ? '#2d6b2e' : '#3f8a3a', wind: (x, y) => 0.25 + (h - y) * 0.1 }));
   }
   return merge(parts);
 }
 
 function pineGeo(rnd) {
   const parts = [];
-  parts.push(part(new THREE.CylinderGeometry(0.16, 0.26, 2.2, 5, 1), { pos: [0, 1.1, 0], color: '#6d4c34' }));
+  parts.push(part(new THREE.CylinderGeometry(0.16, 0.26, 2.2, 6, 1), { pos: [0, 1.1, 0], color: '#6d4c34' }));
   const tiers = [[2.3, 2.6, 2.0], [1.85, 2.4, 3.4], [1.35, 2.2, 4.7], [0.85, 1.9, 5.9]];
   tiers.forEach(([r, hh, y], i) => {
-    parts.push(part(new THREE.ConeGeometry(r, hh, 7, 1), {
-      pos: [0, y, 0], jitter: 0.25, seed: 50 + i + Math.floor(rnd() * 100),
-      color: canopyColor('#4fa06a', '#255e45', y - hh / 2, y + hh / 2), wind: (x, yy) => Math.max(0, yy - 1.5) * 0.02, faceVar: 0.12,
+    parts.push(part(new THREE.ConeGeometry(r, hh, 9, 1), {
+      pos: [0, y, 0], smooth: true, leaf: 1,
+      color: canopyColor('#4fa06a', '#255e45', y - hh / 2, y + hh / 2), wind: (x, yy) => Math.max(0, yy - 1.5) * 0.02,
     }));
   });
   return merge(parts);
@@ -111,14 +118,14 @@ function pineGeo(rnd) {
 
 function bushGeo(rnd, flowering) {
   const parts = [];
-  const blobs = [[0, 0.55, 0, 0.85], [0.7, 0.45, 0.2, 0.62], [-0.6, 0.42, -0.2, 0.66], [0.1, 0.4, 0.65, 0.55]];
-  blobs.forEach((b, i) => parts.push(part(new THREE.IcosahedronGeometry(b[3], 0), { pos: [b[0], b[1], b[2]], scale: [1, 0.8, 1], jitter: 0.18, seed: 70 + i, color: canopyColor('#7fcf52', '#3a9140', 0, 1.2), wind: (x, y) => y * 0.12, faceVar: 0.15 })));
+  const list = [[0, 0.55, 0, 0.9], [0.7, 0.45, 0.2, 0.66], [-0.6, 0.42, -0.2, 0.7]];
+  lobes(parts, list, '#7fcf52', '#3a9140', 0, 1.3, (x, y) => y * 0.12, Math.floor(rnd() * 3));
   if (flowering) {
     const cols = ['#ff5d8f', '#ffd23f', '#ffffff', '#ff8c42'];
     const c = cols[Math.floor(rnd() * cols.length)];
     for (let k = 0; k < 7; k++) {
       const a = rnd() * Math.PI * 2, r = 0.3 + rnd() * 0.6;
-      parts.push(part(new THREE.OctahedronGeometry(0.13, 0), { pos: [Math.cos(a) * r, 0.75 + rnd() * 0.45, Math.sin(a) * r], color: c, wind: 0.15 }));
+      parts.push(part(new THREE.SphereGeometry(0.13, 6, 5), { pos: [Math.cos(a) * r, 0.8 + rnd() * 0.45, Math.sin(a) * r], color: c, wind: 0.15, smooth: true }));
     }
   }
   return merge(parts);
@@ -131,75 +138,52 @@ function fernGeo(rnd) {
     const L = 1.2 + rnd() * 0.5;
     parts.push(frond({
       spine: (t) => new THREE.Vector3(Math.cos(phi) * L * t, L * (1.0 * t - 0.8 * t * t) + 0.05, Math.sin(phi) * L * t),
-      width: (t) => 0.24 * Math.sin(Math.PI * Math.min(1, t + 0.05)),
-      segments: 4, fold: 0.2, color: '#1f7a34', tipColor: '#79d253', wind: (t) => t * 0.6,
+      width: (t) => 0.26 * Math.sin(Math.PI * Math.min(1, t + 0.05)),
+      segments: 4, fold: 0.2, color: '#1f7a34', tipColor: '#79d253', wind: (t) => t * 0.6, leaf: 1,
     }));
   }
   return merge(parts);
 }
 
+// Blumen: runde Punkte (Ø 0.14 m) auf Stiel
 function flowersGeo(rnd, palette) {
-  const pos = [], col = [], wind = [];
-  const stem = new THREE.Color('#3f8f3a'), mid = new THREE.Color('#ffe14d');
-  const push = (x, y, z, c, w) => { pos.push(x, y, z); col.push(c.r, c.g, c.b); wind.push(w); };
+  const parts = [];
+  const stem = '#3f8f3a';
   for (let k = 0; k < 6; k++) {
     const a = rnd() * Math.PI * 2, r = rnd() * 0.45;
     const x = Math.cos(a) * r, z = Math.sin(a) * r;
     const h = 0.28 + rnd() * 0.32;
-    const sa = rnd() * Math.PI, sx = Math.cos(sa) * 0.025, sz = Math.sin(sa) * 0.025;
-    // Stiel (2 Dreiecke)
-    push(x - sx, 0, z - sz, stem, 0); push(x + sx, 0, z + sz, stem, 0); push(x, h, z, stem, h);
-    push(x + sx, 0, z + sz, stem, 0); push(x - sx, 0, z - sz, stem, 0); push(x, h, z, stem, h);
-    // Blüte: 5 Blätter als Fächer, leicht geneigt
-    const c = new THREE.Color(palette[Math.floor(rnd() * palette.length)]);
-    const tx = (rnd() - 0.5) * 0.5, tz = (rnd() - 0.5) * 0.5;
-    const R = 0.12 + rnd() * 0.04;
-    for (let p = 0; p < 5; p++) {
-      const a0 = (p / 5) * Math.PI * 2, a1 = ((p + 0.5) / 5) * Math.PI * 2, a2 = ((p + 1) / 5) * Math.PI * 2;
-      const P = (ang, rr) => [x + Math.cos(ang) * rr, h + 0.02 + (Math.cos(ang) * tx + Math.sin(ang) * tz) * rr, z + Math.sin(ang) * rr];
-      const q0 = P(a0, R * 0.45), q1 = P(a1, R), q2 = P(a2, R * 0.45);
-      push(x, h + 0.03, z, mid, h); push(q0[0], q0[1], q0[2], c, h); push(q1[0], q1[1], q1[2], c, h);
-      push(x, h + 0.03, z, mid, h); push(q1[0], q1[1], q1[2], c, h); push(q2[0], q2[1], q2[2], c, h);
-    }
+    parts.push(part(new THREE.CylinderGeometry(0.012, 0.018, h, 3, 1), { pos: [x, h / 2, z], color: stem, wind: (px, py) => py / h * 0.6 }));
+    const c = palette[Math.floor(rnd() * palette.length)];
+    parts.push(part(new THREE.SphereGeometry(0.07 + rnd() * 0.02, 6, 5), { pos: [x, h + 0.04, z], scale: [1, 0.7, 1], color: c, wind: 0.6, smooth: true }));
+    parts.push(part(new THREE.SphereGeometry(0.03, 5, 4), { pos: [x, h + 0.08, z], color: '#ffe14d', wind: 0.6, smooth: true }));
   }
-  const g = new THREE.BufferGeometry();
-  g.setAttribute('position', new THREE.Float32BufferAttribute(pos, 3));
-  g.computeVertexNormals();
-  const nr = g.attributes.normal;
-  for (let i = 0; i < nr.count; i++) { if (nr.getY(i) < 0) nr.setXYZ(i, -nr.getX(i), -nr.getY(i), -nr.getZ(i)); }
-  g.setAttribute('color', new THREE.Float32BufferAttribute(col, 3));
-  g.setAttribute('aWind', new THREE.Float32BufferAttribute(wind.map((w) => w * 0.9), 1));
-  return g;
+  return merge(parts);
 }
 
+// Gras (§6): zwei gekreuzte Karten je Instanz (4 Dreiecke), Halme als abgerundete Dreiecke, Normale nach oben,
+// Vertex-Verlauf Basis = Bodenfarbe × 0.85, Spitze +22 % Luminanz
 function grassGeo(rnd) {
-  const pos = [], col = [], wind = [];
-  const n = 7;
-  for (let k = 0; k < n; k++) {
-    const a = (k / n) * Math.PI * 2 + rnd() * 0.8;
-    const r = rnd() * 0.22;
-    const bx = Math.cos(a) * r, bz = Math.sin(a) * r;
-    const h = 0.4 + rnd() * 0.45;
-    const lean = 0.12 + rnd() * 0.22;
-    const w = 0.07 + rnd() * 0.04;
-    const px = -Math.sin(a) * w, pz = Math.cos(a) * w;
-    const tx = bx + Math.cos(a) * lean, tz = bz + Math.sin(a) * lean;
-    pos.push(bx - px, 0, bz - pz, bx + px, 0, bz + pz, tx, h, tz);
-    const base = 0.72, tip = 1.12;
-    col.push(base, base, base, base, base, base, tip, tip, tip);
-    wind.push(0, 0, 1);
+  const pos = [], col = [], wind = [], leaf = [];
+  const h = 0.55 + rnd() * 0.35, w = 0.42, lean = (rnd() - 0.5) * 0.25;
+  const base = 0.62, mid = 0.92, tip = 1.15;
+  const push = (x, y, z, c, wv) => { pos.push(x, y, z); col.push(c, c, c); wind.push(wv); leaf.push(0.35); };
+  for (const a of [0, Math.PI / 2]) {
+    const dx = Math.cos(a) * w * 0.5, dz = Math.sin(a) * w * 0.5;
+    const tx = Math.cos(a + Math.PI / 2) * lean, tz = Math.sin(a + Math.PI / 2) * lean;
+    // abgerundetes Dreieck: Basis breit, Mitte etwas schmaler, Spitze
+    const p = [[-dx, 0, -dz, base, 0], [dx, 0, dz, base, 0], [dx * 0.72 + tx * 0.5, h * 0.55, dz * 0.72 + tz * 0.5, mid, 0.55], [-dx * 0.72 + tx * 0.5, h * 0.55, -dz * 0.72 + tz * 0.5, mid, 0.55], [tx, h, tz, tip, 1]];
+    const tri = (i, j, k) => { for (const q of [p[i], p[j], p[k]]) push(q[0], q[1], q[2], q[3], q[4]); };
+    tri(0, 1, 2); tri(0, 2, 3); tri(3, 2, 4);
   }
   const g = new THREE.BufferGeometry();
   g.setAttribute('position', new THREE.Float32BufferAttribute(pos, 3));
-  g.computeVertexNormals();
-  // Normalen nach oben kippen: Gras wirkt dann heller und gleichmäßiger
-  const nr = g.attributes.normal;
-  for (let i = 0; i < nr.count; i++) {
-    const v = new THREE.Vector3(nr.getX(i), nr.getY(i), nr.getZ(i)).multiplyScalar(0.35).add(new THREE.Vector3(0, 1, 0)).normalize();
-    nr.setXYZ(i, v.x, v.y, v.z);
-  }
+  const nr = new Float32Array(pos.length);
+  for (let i = 0; i < nr.length; i += 3) { nr[i] = 0; nr[i + 1] = 1; nr[i + 2] = 0; }
+  g.setAttribute('normal', new THREE.BufferAttribute(nr, 3));
   g.setAttribute('color', new THREE.Float32BufferAttribute(col, 3));
   g.setAttribute('aWind', new THREE.Float32BufferAttribute(wind, 1));
+  g.setAttribute('aLeaf', new THREE.Float32BufferAttribute(leaf, 1));
   return g;
 }
 
@@ -207,12 +191,12 @@ function rockGeo(rnd, big) {
   const parts = [];
   if (big) {
     parts.push(part(new THREE.IcosahedronGeometry(1, 1), {
-      scale: [1.3, 0.85, 1.1], jitter: 0.35, seed: 90 + Math.floor(rnd() * 50), faceVar: 0.18,
+      scale: [1.3, 0.85, 1.1], jitter: 0.3, seed: 90 + Math.floor(rnd() * 50), faceVar: 0.12,
       color: (x, y, z, out) => out.set(y > 0.55 ? '#7fa64f' : '#b2a79c'),
     }));
   } else {
-    parts.push(part(new THREE.DodecahedronGeometry(0.6, 0), { scale: [1.2, 0.65, 1], jitter: 0.25, seed: 120 + Math.floor(rnd() * 50), faceVar: 0.2, color: '#b5aca2' }));
-    parts.push(part(new THREE.DodecahedronGeometry(0.35, 0), { pos: [0.6, 0, 0.3], scale: [1, 0.7, 1], jitter: 0.15, seed: 7, faceVar: 0.2, color: '#a39a90' }));
+    parts.push(part(new THREE.DodecahedronGeometry(0.6, 0), { scale: [1.2, 0.65, 1], jitter: 0.22, seed: 120 + Math.floor(rnd() * 50), faceVar: 0.12, color: '#b5aca2' }));
+    parts.push(part(new THREE.DodecahedronGeometry(0.35, 0), { pos: [0.6, 0, 0.3], scale: [1, 0.7, 1], jitter: 0.12, seed: 7, faceVar: 0.12, color: '#a39a90' }));
   }
   return merge(parts);
 }
@@ -232,10 +216,8 @@ function reedGeo(rnd) {
     const px = -Math.sin(a) * w, pz = Math.cos(a) * w;
     const tx = bx + Math.cos(a) * lean, tz = bz + Math.sin(a) * lean;
     const c = rnd() < 0.35 ? stemDry : stem;
-    // Halm als langes Dreieck, zweite Fläche gedreht (sichtbar von allen Seiten)
     push(bx - px, 0, bz - pz, c, 0); push(bx + px, 0, bz + pz, c, 0); push(tx, h, tz, c, 1);
     push(bx - pz, 0, bz + px, c, 0); push(bx + pz, 0, bz - px, c, 0); push(tx, h, tz, c, 1);
-    // Kolben oben (brauner Zylinder aus 3 Flächen)
     if (rnd() < 0.6) {
       const y0 = h - 0.28, y1 = h - 0.02, R = 0.035;
       for (let f = 0; f < 3; f++) {
@@ -248,9 +230,9 @@ function reedGeo(rnd) {
   }
   const g = new THREE.BufferGeometry();
   g.setAttribute('position', new THREE.Float32BufferAttribute(pos, 3));
-  g.computeVertexNormals();
-  const nr = g.attributes.normal;
-  for (let i = 0; i < nr.count; i++) { const v = new THREE.Vector3(nr.getX(i), nr.getY(i), nr.getZ(i)).multiplyScalar(0.3).add(new THREE.Vector3(0, 1, 0)).normalize(); nr.setXYZ(i, v.x, v.y, v.z); }
+  const nr = new Float32Array(pos.length);
+  for (let i = 0; i < nr.length; i += 3) { nr[i] = 0; nr[i + 1] = 1; nr[i + 2] = 0; }
+  g.setAttribute('normal', new THREE.BufferAttribute(nr, 3));
   g.setAttribute('color', new THREE.Float32BufferAttribute(col, 3));
   g.setAttribute('aWind', new THREE.Float32BufferAttribute(wind.map((w) => w * 0.7), 1));
   return g;
@@ -260,58 +242,59 @@ function birchGeo(rnd) {
   const parts = [];
   const h = 5.2 + rnd() * 1.6;
   const bark = (x, y, z, out) => { const band = Math.sin(y * 9.0 + x * 20.0) > 0.72; out.set(band ? '#2b2b2b' : '#f2f0e8'); };
-  parts.push(part(new THREE.CylinderGeometry(0.11, 0.2, h, 5, 6), { pos: [0, h / 2, 0], color: bark, jitter: 0.03, seed: 61, wind: (x, y) => (y / h) ** 2 * 0.08, deform: (v) => { v.x += Math.sin(v.y * 0.7) * 0.18; } }));
+  parts.push(part(new THREE.CylinderGeometry(0.11, 0.2, h, 6, 6), { pos: [0, h / 2, 0], color: bark, smooth: true, wind: (x, y) => (y / h) ** 2 * 0.08, deform: (v) => { v.x += Math.sin(v.y * 0.7) * 0.18; } }));
   for (let k = 0; k < 4; k++) {
     const a = (k / 4) * Math.PI * 2 + rnd() * 0.8, y = h * (0.55 + k * 0.1);
     parts.push(part(new THREE.CylinderGeometry(0.03, 0.06, 1.6, 4, 1), { pos: [Math.cos(a) * 0.7, y, Math.sin(a) * 0.7], rot: [Math.sin(a) * 1.0, 0, -Math.cos(a) * 1.0], color: '#3a3a3a', wind: 0.15 }));
   }
-  // lichte, hängende Krone in gelbgrün
-  const cc = canopyColor('#d9e46a', '#7fa63e', h * 0.5, h + 1.5);
+  const list = [];
   for (let k = 0; k < 5; k++) {
     const a = (k / 5) * Math.PI * 2 + rnd() * 0.6, r = 0.9 + rnd() * 0.5;
-    parts.push(part(new THREE.IcosahedronGeometry(1.05 + rnd() * 0.35, 0), { pos: [Math.cos(a) * r, h * 0.72 + rnd() * 1.3, Math.sin(a) * r], scale: [0.9, 1.25, 0.9], jitter: 0.3, seed: 70 + k, color: cc, wind: 0.22 + k * 0.02, faceVar: 0.16 }));
+    list.push([Math.cos(a) * r, h * 0.72 + rnd() * 1.3, Math.sin(a) * r, 1.1 + rnd() * 0.35]);
   }
-  parts.push(part(new THREE.IcosahedronGeometry(1.2, 0), { pos: [0, h + 0.6, 0], scale: [0.9, 1.2, 0.9], jitter: 0.3, seed: 79, color: cc, wind: 0.28, faceVar: 0.16 }));
+  list.push([0, h + 0.6, 0, 1.25]);
+  lobes(parts, list, '#d9e46a', '#7fa63e', h * 0.5, h + 1.5, 0.24, Math.floor(rnd() * 3));
   return merge(parts);
 }
 
-// Heide: graugrüner Zwergstrauch, lila Blüten mit aWind ≥ 0.95 (der Shader lässt sie mit uBloom wachsen: schleierabhängig)
+// Heide: graugrüner Zwergstrauch, lila Blüten als runde Punkte mit aWind ≥ 0.95 (wachsen mit uBloom: schleierabhängig)
 function heatherGeo(rnd) {
   const parts = [];
-  const blobs = [[0, 0.22, 0, 0.42], [0.36, 0.18, 0.12, 0.3], [-0.32, 0.16, -0.14, 0.32], [0.05, 0.16, 0.34, 0.26]];
-  blobs.forEach((b, i) => parts.push(part(new THREE.IcosahedronGeometry(b[3], 0), { pos: [b[0], b[1], b[2]], scale: [1.1, 0.7, 1.1], jitter: 0.12, seed: 90 + i, color: canopyColor('#8ea86c', '#5c7448', 0, 0.5), wind: (x, y) => y * 0.15, faceVar: 0.16 })));
+  const list = [[0, 0.22, 0, 0.44], [0.36, 0.18, 0.12, 0.32], [-0.32, 0.16, -0.14, 0.34]];
+  lobes(parts, list, '#8ea86c', '#5c7448', 0, 0.5, (x, y) => y * 0.15, Math.floor(rnd() * 3));
   const cols = ['#b48cff', '#c99cff', '#9d6bd8', '#e0b8ff'];
-  for (let k = 0; k < 14; k++) {
+  for (let k = 0; k < 12; k++) {
     const a = rnd() * Math.PI * 2, r = rnd() * 0.5;
-    const y = 0.36 + rnd() * 0.22;
-    parts.push(part(new THREE.ConeGeometry(0.05, 0.22, 4, 1), { pos: [Math.cos(a) * r, y, Math.sin(a) * r], rot: [(rnd() - 0.5) * 0.5, 0, (rnd() - 0.5) * 0.5], color: cols[k % cols.length], wind: 0.97 }));
+    const y = 0.38 + rnd() * 0.22;
+    parts.push(part(new THREE.SphereGeometry(0.07, 6, 5), { pos: [Math.cos(a) * r, y, Math.sin(a) * r], color: cols[k % cols.length], wind: 0.97, smooth: true }));
   }
   return merge(parts);
 }
 
-// Mangrovenstrauch: Stelzwurzeln im Flachwasser, dichte dunkelgrüne Krone (Kollider-Tag 'mangrove': kletterbar markiert)
+// Mangrovenstrauch: dickere Stelzwurzeln im Flachwasser, dichte dunkelgrüne Krone (Kollider-Tag 'mangrove': kletterbar markiert)
 function mangroveGeo(rnd) {
   const parts = [];
   const h = 3.2 + rnd() * 1.2;
-  parts.push(part(new THREE.CylinderGeometry(0.16, 0.22, h * 0.6, 5, 1), { pos: [0, h * 0.7, 0], color: '#5c3d2a', wind: 0.05 }));
+  parts.push(part(new THREE.CylinderGeometry(0.16, 0.22, h * 0.6, 6, 1), { pos: [0, h * 0.7, 0], color: '#5c3d2a', wind: 0.05 }));
   for (let k = 0; k < 7; k++) {
     const a = (k / 7) * Math.PI * 2 + rnd() * 0.5, L = 1.4 + rnd() * 0.8;
-    parts.push(part(new THREE.CylinderGeometry(0.05, 0.11, L, 4, 1), { pos: [Math.sin(a) * L * 0.4, h * 0.4 - L * 0.32, Math.cos(a) * L * 0.4], rot: [Math.cos(a) * 0.62, 0, -Math.sin(a) * 0.62], color: '#4a3021' }));
-    parts.push(part(new THREE.CylinderGeometry(0.04, 0.06, L * 0.7, 4, 1), { pos: [Math.sin(a + 0.3) * L * 0.55, L * 0.3, Math.cos(a + 0.3) * L * 0.55], rot: [Math.cos(a + 0.3) * 0.35, 0, -Math.sin(a + 0.3) * 0.35], color: '#4a3021' }));
+    parts.push(part(new THREE.CylinderGeometry(0.07, 0.14, L, 5, 1), { pos: [Math.sin(a) * L * 0.4, h * 0.4 - L * 0.32, Math.cos(a) * L * 0.4], rot: [Math.cos(a) * 0.62, 0, -Math.sin(a) * 0.62], color: '#4a3021' }));
+    parts.push(part(new THREE.CylinderGeometry(0.05, 0.08, L * 0.7, 5, 1), { pos: [Math.sin(a + 0.3) * L * 0.55, L * 0.3, Math.cos(a + 0.3) * L * 0.55], rot: [Math.cos(a + 0.3) * 0.35, 0, -Math.sin(a + 0.3) * 0.35], color: '#4a3021' }));
   }
-  const cc = canopyColor('#4fae55', '#1f6a34', h * 0.7, h + 2.2);
+  const list = [];
   for (let k = 0; k < 6; k++) {
     const a = (k / 6) * Math.PI * 2 + rnd() * 0.5, r = 1.1 + rnd() * 0.5;
-    parts.push(part(new THREE.IcosahedronGeometry(1.15 + rnd() * 0.3, 0), { pos: [Math.cos(a) * r, h + 0.2 + rnd() * 0.6, Math.sin(a) * r], scale: [1.2, 0.75, 1.2], jitter: 0.3, seed: 100 + k, color: cc, wind: 0.14, faceVar: 0.15 }));
+    list.push([Math.cos(a) * r, h + 0.2 + rnd() * 0.6, Math.sin(a) * r, 1.2 + rnd() * 0.3]);
   }
-  parts.push(part(new THREE.IcosahedronGeometry(1.4, 1), { pos: [0, h + 1.1, 0], scale: [1.2, 0.8, 1.2], jitter: 0.32, seed: 109, color: cc, wind: 0.16, faceVar: 0.15 }));
+  list.push([0, h + 1.1, 0, 1.5]);
+  lobes(parts, list, '#4fae55', '#1f6a34', h * 0.7, h + 2.2, 0.14, Math.floor(rnd() * 3));
   return merge(parts);
 }
 
 function driftwoodGeo() {
   const parts = [];
-  parts.push(part(new THREE.CylinderGeometry(0.1, 0.14, 2.4, 5, 2), { rot: [0, 0, Math.PI / 2], pos: [0, 0.1, 0], color: '#d8c2a2', jitter: 0.06, seed: 4, faceVar: 0.1 }));
-  parts.push(part(new THREE.CylinderGeometry(0.05, 0.08, 0.8, 4, 1), { rot: [0.5, 0, 1.1], pos: [0.5, 0.25, 0.15], color: '#cdb596' }));
+  parts.push(part(new THREE.CylinderGeometry(0.1, 0.14, 2.4, 6, 2), { rot: [0, 0, Math.PI / 2], pos: [0, 0.1, 0], color: '#d8c2a2', smooth: true }));
+  parts.push(part(new THREE.CylinderGeometry(0.05, 0.08, 0.8, 5, 1), { rot: [0.5, 0, 1.1], pos: [0.5, 0.25, 0.15], color: '#cdb596' }));
   return merge(parts);
 }
 
@@ -324,7 +307,7 @@ function shellsGeo(rnd) {
   }
   const cols = ['#ffd6e6', '#fff1dc', '#ffc2a8'];
   for (let k = 0; k < 3; k++) {
-    parts.push(part(new THREE.ConeGeometry(0.09, 0.14, 5, 1), { pos: [0.5 + rnd() * 0.4, 0.05, (rnd() - 0.5) * 0.8], rot: [Math.PI / 2 - 0.3, rnd() * 3, 0], color: cols[k] }));
+    parts.push(part(new THREE.SphereGeometry(0.1, 7, 5), { pos: [0.5 + rnd() * 0.4, 0.04, (rnd() - 0.5) * 0.8], scale: [1, 0.5, 1.2], rot: [0, rnd() * 3, 0], color: cols[k], smooth: true }));
   }
   return merge(parts);
 }
@@ -527,7 +510,7 @@ export function createVegetation({ island, veil, colliders, quality, scene }) {
     if (r < p) add('flowers', x, z, { s: 0.9 + rnd() * 0.5, v: zw[ZI.klippen] > 0.4 ? 1 : (rnd() < 0.5 ? 0 : 1) });
   });
   // Gras
-  scatter(1.55, (x, z, r) => {
+  scatter(1.85, (x, z, r) => {
     const I = info(x, z);
     if (I.path > 0.35 || blocked(x, z, -1)) return;
     let p = 0;
@@ -540,9 +523,9 @@ export function createVegetation({ island, veil, colliders, quality, scene }) {
     ZONES.forEach((Z, k) => { if (zw[k] > 0) { grassTint.r += gtc[Z.id].r * zw[k]; grassTint.g += gtc[Z.id].g * zw[k]; grassTint.b += gtc[Z.id].b * zw[k]; tw += zw[k]; } });
     const wild = Math.max(0, 1 - tw);
     grassTint.r += gtc.wild.r * wild; grassTint.g += gtc.wild.g * wild; grassTint.b += gtc.wild.b * wild; tw += wild;
-    grassTint.multiplyScalar((0.9 + rnd() * 0.25) / tw);
+    grassTint.multiplyScalar((0.82 + rnd() * 0.2) / tw);
     if (I.s === 'sand') grassTint.lerp(new THREE.Color('#c8cf7a'), 0.5);
-    add('grass', x, z, { s: 0.8 + rnd() * 0.6, tint: grassTint.clone() });
+    add('grass', x, z, { s: 1.1 + rnd() * 0.8, tint: grassTint.clone() });
   });
   // Steine und Felsbrocken
   scatter(5, (x, z, r) => {
