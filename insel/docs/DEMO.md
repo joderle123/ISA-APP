@@ -120,3 +120,8 @@ Sicherheit ist immer an: Pause/X überall, kein Tod, keine Rangliste, Fehler kos
 `npm run build` erzeugt `dist/`. Tests: `npm run test:fast` (Inhalte, Texte, Einheiten), `node tests/smoke.mjs`,
 `flock /tmp/lumo-chrome.lock node tests/scenarios/demo.mjs` (spielt den ganzen Demo-Pfad headless durch, 39 Prüfungen inkl. der Story-Entscheidungen, ruhiger Nachtszene, Aufnäher-Moment und „Neu anfangen“, und legt Screenshots `200_…`–`207_…` im
 `SHOTS`-Ordner ab). Dauer mit Software-Grafik: etwa 10–15 Minuten.
+
+Bekannte rote Tests (schon vor der Story-Runde so, gleiche Fehler auf dem Stand vor `729a784`): `tests/scenarios/kraefte.mjs`
+(6 von 28, Puls-Zonen/Gadgets/Ring – Puls ist im Hafen noch ohne Rolle) und die Drachenleine in
+`tests/scenarios/minispiele.mjs` und `tests/scenarios/quests.mjs` (das Minispiel endet unter Software-Grafik nicht
+im Zeitfenster). Alle übrigen Prüfungen sind grün.
