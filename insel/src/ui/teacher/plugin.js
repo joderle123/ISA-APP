@@ -16,7 +16,7 @@ const WEATHER_ICON = { ruhe: 'ruhe', fest: 'feuer', fruehling: 'bonsai' };
 const WEATHER_TEXT = { ruhe: 'Goldener Abend, gebremste Stürme, halber Puls. Alle tippen ihn zugleich.', fest: 'Laternen an, Feuerwerk über der Bucht.', fruehling: 'Frühlingspalette, alles blüht.' };
 
 export const TEACHER_CSS = `
-.ov-teacher .ov-card { border-color: var(--c-gold); }
+.ov-teacher .ov-card { box-shadow: 0 0 0 1px rgba(255, 209, 102, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.08), 0 10px 30px rgba(6, 2, 20, 0.35), 0 40px 90px rgba(6, 2, 20, 0.45); }
 .tp-table { width: 100%; border-collapse: collapse; font-size: calc(16px * var(--txt-scale)); }
 .tp-table th, .tp-table td { padding: 8px 8px; border-bottom: 1px solid rgba(255, 255, 255, 0.12); text-align: left; vertical-align: middle; }
 .tp-table thead th { font-size: calc(12px * var(--txt-scale)); letter-spacing: 0.12em; text-transform: uppercase; color: var(--c-gold); }
@@ -29,21 +29,21 @@ export const TEACHER_CSS = `
 .tp-state.is-fertig { background: #5ad24f; color: var(--ink); } .tp-state.is-aktiv, .tp-state.is-offen { background: var(--c-gold); color: var(--ink); } .tp-state.is-kurz { background: rgba(45, 226, 201, 0.35); }
 .tp-flag { display: inline-block; margin-left: 6px; padding: 2px 8px; border-radius: 10px; font-size: calc(11px * var(--txt-scale)); font-weight: 900; letter-spacing: 0.08em; text-transform: uppercase; background: rgba(255, 79, 139, 0.35); }
 .tp-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 12px; }
-.tp-card { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; padding: 14px 16px; border-radius: 20px; background: rgba(255, 255, 255, 0.07); border-left: 6px solid var(--card, var(--c-gold)); }
+.tp-card { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; padding: 14px 16px; border-radius: 18px; background: rgba(255, 255, 255, 0.07); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1); border-left: 4px solid var(--card, var(--c-gold)); }
 .tp-card-icon { flex: none; width: 52px; height: 52px; border-radius: 16px; display: grid; place-items: center; background: var(--card, var(--c-gold)); color: var(--ink); }
 .tp-card > div { flex: 1 1 160px; min-width: 0; }
 .tp-card b { display: block; font-size: calc(18px * var(--txt-scale)); } .tp-card small { display: block; font-size: calc(14px * var(--txt-scale)); font-weight: 700; opacity: 0.75; }
 .tp-card .btn { flex: none; margin-left: auto; }
 .tp-name { display: grid; grid-template-columns: 44px 1fr 1fr auto; gap: 10px; align-items: center; padding: 8px 0; border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
 .tp-name .tp-ico { width: 44px; height: 44px; border-radius: 14px; display: grid; place-items: center; background: var(--who, var(--c-gold)); color: var(--ink); }
-.tp-name input { min-height: 48px; padding: 0 14px; border-radius: 14px; font: 800 calc(18px * var(--txt-scale)) / 1 var(--font); color: #fff; background: rgba(0, 0, 0, 0.3); border: 2px solid rgba(255, 255, 255, 0.25); outline: none; -webkit-user-select: text; user-select: text; min-width: 0; }
-.tp-name input:focus { border-color: var(--c-gold); }
+.tp-name input { min-height: 48px; padding: 0 14px; border-radius: 14px; font: 800 calc(18px * var(--txt-scale)) / 1 var(--font); color: #fff; background: rgba(0, 0, 0, 0.28); border: 0; box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.24); outline: none; -webkit-user-select: text; user-select: text; min-width: 0; }
+.tp-name input:focus { box-shadow: inset 0 0 0 2px var(--c-gold); }
 .tp-name small { font-size: calc(13px * var(--txt-scale)); font-weight: 700; opacity: 0.7; }
 .tp-color { display: grid; grid-template-columns: 52px 1fr auto; gap: 12px; align-items: center; padding: 8px 0; border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
-.tp-swatch { width: 52px; height: 52px; border-radius: 16px; display: grid; place-items: center; background: var(--emo); color: var(--ink); border: 3px solid rgba(255, 255, 255, 0.5); }
-.tp-color input[type=color] { width: 72px; height: 52px; padding: 0; border: 2px solid rgba(255, 255, 255, 0.3); border-radius: 14px; background: transparent; }
-.tp-slot { padding: 12px 16px; border-radius: 18px; background: rgba(255, 255, 255, 0.06); margin-bottom: 10px; }
-.tp-slot.is-current { border: 2px solid var(--c-gold); }
+.tp-swatch { width: 52px; height: 52px; border-radius: 16px; display: grid; place-items: center; background: var(--emo); color: var(--ink); border: 2px solid rgba(255, 255, 255, 0.35); }
+.tp-color input[type=color] { width: 72px; height: 52px; padding: 0; border: 1px solid rgba(255, 255, 255, 0.24); border-radius: 14px; background: transparent; }
+.tp-slot { padding: 12px 16px; border-radius: 18px; background: rgba(255, 255, 255, 0.06); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1); margin-bottom: 10px; }
+.tp-slot.is-current { box-shadow: inset 0 0 0 1.5px var(--c-gold); }
 .tp-slot b { font-size: calc(18px * var(--txt-scale)); } .tp-slot small { font-size: calc(13px * var(--txt-scale)); font-weight: 700; opacity: 0.7; }
 .tp-chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
 .tp-chips span { padding: 4px 10px; border-radius: 12px; font-size: calc(14px * var(--txt-scale)); font-weight: 800; letter-spacing: 0.06em; background: rgba(255, 255, 255, 0.12); }

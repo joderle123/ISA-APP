@@ -28,7 +28,7 @@ export function createHUD({ root, input, events, audio, game }) {
       <button class="hud-btn hud-btn-jump" type="button" data-btn="jump">${ICON.jump}<span class="lbl">Springen</span></button>
     </div>
     <div class="key-hints is-hidden"><b>WASD</b> laufen · <b>Maus</b> umsehen · <b>Leertaste</b> springen · <b>E</b> Aktion · <b>Q</b> Kraft · <b>Esc</b> Menü</div>
-    <div class="intro-title">LUMO<small>DIE INSEL</small></div>
+    <div class="intro-title"><span class="intro-word">LUMO</span><small>DIE INSEL</small></div>
     <div class="skip-hint is-hidden">Tippen zum Überspringen</div>
     <div class="debug is-hidden"></div>
   `;

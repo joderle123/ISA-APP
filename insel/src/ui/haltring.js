@@ -6,15 +6,15 @@ const CSS = `
 .haltring{position:absolute;left:0;top:0;width:118px;height:118px;margin:-59px 0 0 -59px;z-index:9;pointer-events:none;opacity:0;transition:opacity .25s ease;filter:drop-shadow(0 2px 4px rgba(0,0,0,.55))}
 .haltring.is-on{opacity:1}
 .haltring svg{width:118px;height:118px;display:block;overflow:visible}
-.haltring .hr-bg{fill:none;stroke:rgba(20,10,40,.55);stroke-width:11}
-.haltring .hr-seg{fill:none;stroke:#9fe8b0;stroke-width:9;stroke-linecap:butt;transition:stroke .2s ease}
-.haltring .hr-seg.is-empty{stroke:rgba(255,255,255,.16)}
+.haltring .hr-bg{fill:none;stroke:rgba(18,12,36,.62);stroke-width:10}
+.haltring .hr-seg{fill:none;stroke:#8fd18b;stroke-width:7;stroke-linecap:butt;transition:stroke .2s ease}
+.haltring .hr-seg.is-empty{stroke:rgba(255,255,255,.14)}
 .haltring .hr-seg.is-part{stroke:#ffd166}
-.haltring.is-ledge .hr-seg{stroke:#7ff0ff}
-.haltring.is-sliding .hr-seg{stroke:#ff8c8c}
-.haltring .hr-mark{fill:#fff;stroke:rgba(0,0,0,.5);stroke-width:1}
+.haltring.is-ledge .hr-seg{stroke:#ffd166}
+.haltring.is-sliding .hr-seg{stroke:#ff6b6b}
+.haltring .hr-mark{fill:#fff;stroke:rgba(20,16,42,.6);stroke-width:1}
 .haltring .hr-txt{fill:#fff;font:900 14px var(--font,system-ui);text-anchor:middle;dominant-baseline:middle}
-.haltring .hr-sub{fill:#fff;font:800 10px var(--font,system-ui);text-anchor:middle;dominant-baseline:middle;opacity:.85}
+.haltring .hr-sub{fill:#fff;font:800 10px var(--font,system-ui);letter-spacing:.1em;text-transform:uppercase;text-anchor:middle;dominant-baseline:middle;opacity:.85}
 `;
 const MARK = {
   wurzel: null,

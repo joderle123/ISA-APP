@@ -33,30 +33,32 @@ const FEATHERS = [
   { id: 'trauer', label: 'Trauer', icon: 'tropfen', color: '#3d7bff' },
 ];
 const ICON_ALIAS = { auge: 'blick', crew: 'teamgeist', welle: 'ruhe', horn: 'mut' };
+const UI_ICON = { auge: 'blick', crew: 'team', welle: 'ruhe', horn: 'mut' };   // Namen im Icon-Satz der Oberfläche (ui/icons.js)
 const R_OUT = 128, R_IN = 44, R_FEATHER = 178;   // Pixel: Segment radial 84 px, Bogen ≈ 135 px → ≥ 72 px Touch-Ziel
 
 const CSS = `
 .kraftrad{position:absolute;left:0;top:0;width:0;height:0;z-index:12;pointer-events:none;opacity:0;transition:opacity .12s ease}
 .kraftrad.is-open{opacity:1}
 .kraftrad svg{position:absolute;left:0;top:0;overflow:visible;pointer-events:none}
-.kraftrad .kr-seg{pointer-events:auto;cursor:pointer;fill:rgba(28,16,52,.78);stroke:rgba(255,255,255,.55);stroke-width:2;transition:fill .08s ease}
-.kraftrad .kr-seg.is-hot{fill:rgba(255,255,255,.28);stroke:#fff;stroke-width:3}
-.kraftrad .kr-seg.is-active{stroke:var(--c-gold,#ffd166);stroke-width:3}
-.kraftrad .kr-seg.is-locked{fill:rgba(60,60,70,.7);stroke:rgba(255,255,255,.25)}
-.kraftrad .kr-feather{pointer-events:auto;cursor:pointer;fill:rgba(28,16,52,.7);stroke:rgba(255,255,255,.4);stroke-width:2}
-.kraftrad .kr-feather.is-hot{fill:rgba(255,255,255,.3);stroke:#fff;stroke-width:3}
-.kraftrad .kr-feather.is-on{stroke-width:3.5}
-.kraftrad .kr-feather.is-locked{fill:rgba(60,60,70,.6);stroke:rgba(255,255,255,.2)}
-.kraftrad .kr-ico{position:absolute;width:34px;height:34px;margin:-17px 0 0 -17px;color:#fff;pointer-events:none;filter:drop-shadow(0 2px 3px rgba(0,0,0,.5))}
-.kraftrad .kr-ico svg{position:static;width:34px;height:34px;display:block}
-.kraftrad .kr-ico.is-locked{color:rgba(255,255,255,.45)}
-.kraftrad .kr-ico.is-locked::after{content:"";position:absolute;right:-8px;bottom:-8px;width:16px;height:16px;background:rgba(0,0,0,.6);border-radius:50%}
-.kraftrad .kr-lock{position:absolute;width:14px;height:14px;right:-7px;bottom:-7px;color:#fff;pointer-events:none}
-.kraftrad .kr-lock svg{width:14px;height:14px;position:static;display:block}
-.kraftrad .kr-label{position:absolute;left:0;top:0;transform:translate(-50%,-50%);font:900 15px/1 var(--font,system-ui);color:#fff;text-shadow:0 2px 4px rgba(0,0,0,.6);white-space:nowrap;pointer-events:none}
-.kraftrad .kr-center{position:absolute;transform:translate(-50%,-50%);font:800 13px/1.2 var(--font,system-ui);color:#fff;text-align:center;text-shadow:0 2px 4px rgba(0,0,0,.6);pointer-events:none;width:80px}
-.kraftrad .kr-center b{display:block;font-size:16px}
-.no-touch .kraftrad .kr-center small{display:block;opacity:.7;font-size:11px;margin-top:2px}
+.kraftrad svg{filter:drop-shadow(0 10px 30px rgba(6,2,20,.35))}
+.kraftrad .kr-seg{pointer-events:auto;cursor:pointer;fill:rgba(18,12,36,.66);stroke:rgba(255,255,255,.16);stroke-width:1;transition:fill .08s ease}
+.kraftrad .kr-seg.is-hot{fill:rgba(255,255,255,.18);stroke:rgba(255,255,255,.45)}
+.kraftrad .kr-seg.is-active{stroke:var(--c-gold,#ffd166);stroke-width:2}
+.kraftrad .kr-seg.is-locked{fill:rgba(18,12,36,.4);stroke:rgba(255,255,255,.08)}
+.kraftrad .kr-feather{pointer-events:auto;cursor:pointer;fill:rgba(18,12,36,.6);stroke:rgba(255,255,255,.16);stroke-width:1}
+.kraftrad .kr-feather.is-hot{fill:rgba(255,255,255,.18);stroke:rgba(255,255,255,.45)}
+.kraftrad .kr-feather.is-on{stroke-width:2.5}
+.kraftrad .kr-feather.is-locked{fill:rgba(18,12,36,.35);stroke:rgba(255,255,255,.08)}
+.kraftrad .kr-ico{position:absolute;width:28px;height:28px;margin:-14px 0 0 -14px;color:#fff;pointer-events:none;filter:drop-shadow(0 2px 3px rgba(0,0,0,.45))}
+.kraftrad .kr-ico svg{position:static;width:28px;height:28px;display:block;filter:none}
+.kraftrad .kr-ico.is-locked{color:rgba(255,255,255,.4)}
+.kraftrad .kr-lock{position:absolute;width:16px;height:16px;right:-9px;bottom:-9px;padding:2px;border-radius:50%;background:rgba(18,12,36,.9);color:rgba(255,255,255,.7);pointer-events:none;box-sizing:content-box}
+.kraftrad .kr-lock svg{width:16px;height:16px;position:static;display:block}
+.kraftrad .kr-label{position:absolute;left:0;top:0;transform:translate(-50%,-50%);font:800 13px/1 var(--font,system-ui);letter-spacing:.02em;color:#fff;text-shadow:0 2px 6px rgba(0,0,0,.45);white-space:nowrap;pointer-events:none}
+.kraftrad .kr-center{position:absolute;transform:translate(-50%,-50%);font:800 12px/1.2 var(--font,system-ui);letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.7);text-align:center;text-shadow:0 2px 6px rgba(0,0,0,.45);pointer-events:none;width:80px}
+.kraftrad .kr-center b{display:block;font-size:15px;letter-spacing:.02em;text-transform:none;color:var(--c-gold,#ffd166)}
+.kraftrad .kr-center small{display:none}
+.no-touch .kraftrad .kr-center small{display:block;opacity:.7;font-size:10px;margin-top:2px;letter-spacing:.06em}
 `;
 
 function arcPath(cx, cy, r0, r1, a0, a1) {
@@ -83,7 +85,10 @@ export function createKraftRad({ root, input, events, game, audio }) {
   let onSelect = null;
   const iconFn = (name) => {
     const ic = game.ui && game.ui.icon;
-    if (ic) { try { const s = ic(name, { size: 34 }); if (s) return s; } catch (e) { /* Fallback */ } }
+    const known = game.ui && Array.isArray(game.ui.icons) ? game.ui.icons : null;
+    const uiName = UI_ICON[name] || name;
+    // Icon-Satz der Oberfläche nur, wenn der Name dort existiert (sonst käme stumm der Punkt zurück)
+    if (ic && (!known || known.includes(uiName))) { try { const s = ic(uiName, { size: 28 }); if (s) return s; } catch (e) { /* Fallback */ } }
     return FALLBACK_ICON[name] || FALLBACK_ICON[ICON_ALIAS[name]] || FALLBACK_ICON.stern;
   };
 
@@ -191,6 +196,7 @@ export function createKraftRad({ root, input, events, game, audio }) {
     render();
     el.classList.add('is-open');
     el.setAttribute('aria-hidden', 'false');
+    root.classList.add('has-kraftrad');   // HUD-Knöpfe blenden aus, solange das Rad offen ist (Stil-Bibel §11.6)
     audio.play('radauf');
     events.emit('kraftrad:open', { segments: segments.map((s) => s.id), feathers: feathers ? feathers.slice() : null });
   }
@@ -199,6 +205,7 @@ export function createKraftRad({ root, input, events, game, audio }) {
     open = false;
     el.classList.remove('is-open');
     el.setAttribute('aria-hidden', 'true');
+    root.classList.remove('has-kraftrad');
     events.emit('kraftrad:close', {});
   }
 

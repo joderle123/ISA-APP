@@ -15,11 +15,18 @@
 <div id="lumo-root">
   <canvas id="lumo-canvas" aria-label="LUMO Spielwelt"></canvas>
   <div id="hud" class="is-hidden"></div>
+  <!-- Titel- und Ladebild: gemaltes Key-Art aus Ebenen (Stil-Bibel §11.7) – Himmel, Sonne, ferne Insel, Vulkaninsel, Meer mit Sonnenpfad, Palmen und Steg -->
   <div id="boot" class="boot">
-    <div class="boot-sky"></div>
-    <div class="boot-sun"></div>
-    <div class="boot-sea"></div>
-    <div class="boot-island"></div>
+    <div class="boot-sky" aria-hidden="true"></div>
+    <div class="boot-sun" aria-hidden="true"></div>
+    <div class="boot-far" aria-hidden="true"></div>
+    <div class="boot-mid" aria-hidden="true"></div>
+    <div class="boot-sea" aria-hidden="true"></div>
+    <div class="boot-path" aria-hidden="true"></div>
+    <div class="boot-haze" aria-hidden="true"></div>
+    <div class="boot-gulls" aria-hidden="true"></div>
+    <div class="boot-near boot-near-l" aria-hidden="true"></div>
+    <div class="boot-near boot-near-r" aria-hidden="true"></div>
     <div class="boot-card">
       <div class="boot-kicker">Ein Abenteuer auf der Insel</div>
       <h1 class="boot-title" aria-label="LUMO"><span>L</span><span>U</span><span>M</span><span>O</span></h1>

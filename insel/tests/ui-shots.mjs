@@ -29,9 +29,11 @@ try {
   await frames(page, 3);
 
   // HUD mit Zonen-Banner, Toast, Aktionspille
-  await page.evaluate(() => { LUMO.ui.showZone('Hafen-Dorf', 'Willkommen auf der Insel!', 'Du bist angekommen'); LUMO.ui.toast('Ein Stück Karte mehr.', 6000); LUMO.ui.setAction('Reden', () => {}); LUMO.ui.setPower({ enabled: true, label: 'Blick' }); });
-  await sleep(700);
-  await frames(page, 3);
+  await page.evaluate(() => { LUMO.ui.toast('Ein Stück Karte mehr.', 8000); LUMO.ui.setAction('Reden', () => {}); LUMO.ui.setPower({ enabled: true, label: 'Blick' }); });
+  await frames(page, 2);
+  await page.evaluate(() => { LUMO.ui.showZone('Hafen-Dorf', 'Willkommen auf der Insel!', 'Du bist angekommen'); });
+  await sleep(750);
+  await frames(page, 2);
   await shot(page, 'u01_hud');
   await page.evaluate(() => { LUMO.ui.setAction(null); });
 

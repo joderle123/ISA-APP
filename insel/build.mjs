@@ -3,7 +3,7 @@
 // Vorher: tools/gen.mjs erzeugt src/_gen/plugins.js (alle src/**/plugin.js) und src/_gen/content.js (alle src/content/**).
 // Nachher: alle tools/postbuild/*.mjs laufen mit { root, distDir, files, content, plugins, log }.
 import { build } from 'esbuild';
-import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
+import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { generate, runPostbuild } from './tools/gen.mjs';
@@ -36,7 +36,12 @@ const result = await build({
 let js = result.outputFiles[0].text;
 // Sicher einbetten: kein vorzeitiges </script>
 js = js.replace(/<\/script/gi, '<\\/script');
-const css = readFileSync(join(root, 'src/styles.css'), 'utf8');
+// Schriften (src/ui/fonts/*.woff2, OFL) werden als data-URL in das CSS eingebettet: url(fonts/<datei>) → data:font/woff2;base64,…
+const css = readFileSync(join(root, 'src/styles.css'), 'utf8').replace(/url\((["']?)fonts\/([\w.-]+\.woff2)\1\)/g, (m, q, file) => {
+  const path = join(root, 'src/ui/fonts', file);
+  if (!existsSync(path)) { console.warn('⚠ Schrift fehlt:', path); return m; }
+  return `url(data:font/woff2;base64,${readFileSync(path).toString('base64')})`;
+});
 const shell = readFileSync(join(root, 'src/shell.html'), 'utf8');
 
 const full = shell

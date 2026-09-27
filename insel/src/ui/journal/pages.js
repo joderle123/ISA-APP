@@ -4,6 +4,7 @@
 // Alle Seiten lesen nur game.state / game.content und schreiben über state (Echte-Welt-Karte, Code-Einlösung über debug bis WP30).
 import { esc } from '../overlay.js';
 import { UNIT_MODULE, KOFFER_FAECHER, AMPEL_ZONEN } from '../../content/schema/consts.js';
+import { drawMap } from '../map/render.js';
 
 const MODULE_COLOR = { 'j1-m0': '#ffb347', 'j1-m1': '#2de2c9', 'j1-m2': '#4cd964', 'j1-m3': '#8fa3ff', 'j1-m4': '#b06bff', 'j1-m5': '#ffd166', 'j1-m6': '#ff6b3d', 'j1-m7': '#ff8ccf', 'j1-m8': '#8fd18b', 'j1-m9': '#fff3a0', joker: '#ffffff' };
 const REGION_ICON = { hafen: 'anker', strand: 'muschel', dschungel: 'trommel', klippen: 'windrad', moor: 'stein', markt: 'spraydose', vulkan: 'flamme', glimmer: 'stern', quellen: 'giesskanne', leuchtturm: 'laterne' };
@@ -18,44 +19,19 @@ export function installDefaultPages(journal, { game, settings, audio, icon, spee
   const units = () => (content() && content().units) || [];
   const questOf = (id) => (content() && content().get('quests', id)) || null;
 
-  // ---- Karte: Rasterkarte der Insel aus der Höhenfunktion, Zonenfarben, Schleier grau, Spieler ----
+  // ---- Karte (Rückfall ohne Karten-Plugin): gemaltes Pergament aus ui/map/render.js, ohne Nebel ----
   journal.registerPage({
     id: 'karte', label: 'Karte', icon: 'karte', order: 10,
-    render(el, ctx) {
+    render(el) {
       const island = game.world && game.world.island;
       if (!island) { el.innerHTML = '<p class="jn-note">Die Karte lädt noch.</p>'; return; }
       const veil = game.world.veil;
-      const N = 64, R = 190;
-      const cv = document.createElement('canvas'); cv.width = cv.height = 512; cv.className = 'map-canvas';
-      const g = cv.getContext('2d');
-      g.fillStyle = '#123a5c'; g.fillRect(0, 0, 512, 512);
-      const cell = 512 / N;
-      const zoneCol = {}; for (const z of island.ZONES) zoneCol[z.id] = z.color;
-      for (let iy = 0; iy < N; iy++) for (let ix = 0; ix < N; ix++) {
-        const x = (ix + 0.5) / N * 2 * R - R, z = (iy + 0.5) / N * 2 * R - R;
-        const h = island.getHeight(x, z);
-        if (h <= 0.05) { if (h > -1.2) { g.fillStyle = '#1d5f86'; g.fillRect(ix * cell, iy * cell, cell + 0.5, cell + 0.5); } continue; }
-        const zid = island.zoneAt(x, z);
-        const base = zid ? zoneCol[zid] : (h > 18 ? '#8a7f7a' : '#7bbf5a');
-        const v = veil ? veil.amountAt(x, z) : 0;
-        g.fillStyle = mixGrey(base, v, h);
-        g.fillRect(ix * cell, iy * cell, cell + 0.5, cell + 0.5);
-      }
-      // Zonen-Namen und Schleier-Zustand
-      g.textAlign = 'center'; g.textBaseline = 'middle';
-      for (const z of island.ZONES) {
-        const px = (z.x + R) / (2 * R) * 512, py = (z.z + R) / (2 * R) * 512;
-        const veiled = veil && veil.isVeiled && veil.isVeiled(z.id);
-        g.font = '700 15px system-ui, sans-serif';
-        g.fillStyle = 'rgba(0,0,0,0.55)'; g.fillText(z.name, px + 1, py + 1);
-        g.fillStyle = veiled ? '#d8d4e6' : '#fff'; g.fillText(z.name, px, py);
-        if (veiled) { g.font = '600 12px system-ui, sans-serif'; g.fillStyle = '#c8c2dc'; g.fillText('Grauschleier', px, py + 17); }
-      }
-      // Spieler
+      const cv = document.createElement('canvas'); cv.width = cv.height = 640; cv.className = 'map-canvas';
       const p = game.player.position;
-      const px = (p.x + R) / (2 * R) * 512, py = (p.z + R) / (2 * R) * 512;
-      g.beginPath(); g.arc(px, py, 9, 0, Math.PI * 2); g.fillStyle = 'rgba(255,209,102,0.35)'; g.fill();
-      g.beginPath(); g.arc(px, py, 5, 0, Math.PI * 2); g.fillStyle = '#ffd166'; g.fill(); g.lineWidth = 2; g.strokeStyle = '#1d1330'; g.stroke();
+      const ctx = { island, veil, revealed: null, player: { x: p.x, z: p.z, yaw: game.player.yaw }, redraw: null };
+      let pending = false;
+      ctx.redraw = () => { if (pending || !cv.isConnected) return; pending = true; setTimeout(() => { pending = false; if (cv.isConnected) drawMap(cv, ctx); }, 60); };
+      drawMap(cv, ctx);
       el.innerHTML = `<div class="map-wrap"></div><p class="jn-note">${veil ? 'Grau = dort liegt noch der Schleier. Jeder Code bringt Farbe zurück.' : ''}</p>`;
       el.querySelector('.map-wrap').appendChild(cv);
     },
@@ -229,14 +205,4 @@ export function installDefaultPages(journal, { game, settings, audio, icon, spee
       el.innerHTML = `<table class="keys"><thead><tr><th></th><th>iPad</th><th>PC</th></tr></thead><tbody>${rows.map(([a, b, c]) => `<tr><th>${a}</th><td>${b}</td><td>${c}</td></tr>`).join('')}</tbody></table>`;
     },
   });
-}
-
-// Zonenfarbe mit Schleier grau mischen; Höhe hellt leicht auf
-function mixGrey(hex, v, h) {
-  const r = parseInt(hex.slice(1, 3), 16), g = parseInt(hex.slice(3, 5), 16), b = parseInt(hex.slice(5, 7), 16);
-  const l = 0.3 * r + 0.59 * g + 0.11 * b;
-  const k = Math.min(1, Math.max(0, v)) * 0.85;
-  const light = 1 + Math.min(0.25, h / 120);
-  const m = (c) => Math.max(0, Math.min(255, Math.round(((c * (1 - k) + (l * 0.75 + 40) * k)) * light)));
-  return `rgb(${m(r)},${m(g)},${m(b)})`;
 }
