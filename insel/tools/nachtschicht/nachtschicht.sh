@@ -23,6 +23,8 @@ for k,e in enumerate(st.get('extras',[])):
     r,info=check(e['runId'])
     print(f"EXTRA {k}: {e['name']} -> {r} | {info}" + (f" | Workflow(scriptPath={e['script']}, resumeFromRunId={e['runId']}, args scratch)" if r=='RESUME' else '') + (f" | extras[{k}].done=true setzen" if r=='DONE' else ''))
 i=st['current']
+if st.get('extras_first') and any(not e.get('done') for e in st.get('extras',[])):
+    print('STEPS: WAIT – zuerst das Grafik-Upgrade fertig machen (zwei Software-GL-Browser gleichzeitig stören sich)'); sys.exit()
 if i>=len(st['steps']): print('ALL_DONE'); sys.exit()
 step=st['steps'][i]; rid=step['runId']
 if not rid: print(f"STEP {i}: {step['name']} -> NEXT | Workflow(scriptPath={step['script']}, args scratch), dann runId eintragen"); sys.exit()
