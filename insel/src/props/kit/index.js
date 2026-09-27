@@ -2,11 +2,11 @@
 //   const kit = createPropKit({ veil, island, colliders, particles, rng, scene });
 //   kit.make('laterne', { variant: 'papier', color }) → Handle { group, type, update?, api…, collide? }   (nicht in der Szene)
 //   kit.spawn('signalfeuer', { id, x, z, y?, yaw, onGround, collide, ...opts }) → Handle + remove()   (in der Szene, animiert, mit Kollider)
-//   kit.bake([{ type, x, z, yaw, ...opts }], { id }) → { group, handles, remove() }   feste Teile zu einem Mesh je Material verschmolzen
+//   kit.bake([{ type, x, z, yaw, ...opts }], { id, castShadow }) → { group, handles, remove() }   feste Teile zu einem Mesh je Material verschmolzen
 //   kit.gallery({ x, z, spacing }) → alle Typen in einer Reihe (Screenshots)   ·   kit.update(dt, t)   ·   kit.triangles(handle)
 //   Typen: signalfeuer laterne tank marktstand fluesterstein kristall planke bohlenweg windrad drachen menhir orgel
 //          glimmerinsel glimmerkugel vogel grisel titan
-//          haus kiosk wimpelkette kisten fass boje netz ruderboot bank blumenkuebel brunnen pflaster (gebaeude.js, §9.2)
+//          haus kiosk wimpelkette kisten fass boje netz ruderboot bank blumenkuebel brunnen pflaster fels (gebaeude.js, §9.2)
 import * as THREE from 'three';
 import { createMaterials } from './materials.js';
 import * as B from './builders.js';
@@ -20,7 +20,7 @@ export const BUILDERS = {
   kristall: B.kristall, planke: B.planke, bohlenweg: B.bohlenweg, windrad: B.windrad, drachen: B.drachen, menhir: B.menhir,
   orgel: B.orgel, glimmerinsel: B.glimmerinsel, glimmerkugel: B.glimmerkugel, vogel, grisel, titan,
   haus: GB.haus, kiosk: GB.kiosk, wimpelkette: GB.wimpelkette, kisten: GB.kisten, fass: GB.fass, boje: GB.boje, netz: GB.netz,
-  ruderboot: GB.ruderboot, bank: GB.bank, blumenkuebel: GB.blumenkuebel, brunnen: GB.brunnen, pflaster: GB.pflaster,
+  ruderboot: GB.ruderboot, bank: GB.bank, blumenkuebel: GB.blumenkuebel, brunnen: GB.brunnen, pflaster: GB.pflaster, fels: GB.fels,
 };
 export { HAUS_WAENDE, HAUS_AKZENTE, HAUS_DIM } from './gebaeude.js';
 export const PROP_TYPES = Object.keys(BUILDERS);
@@ -87,7 +87,7 @@ export function createPropKit({ veil = null, island = null, colliders = null, pa
     return h;
   }
   // Feste Teile vieler Props zu wenigen Meshes verschmelzen (Laternenketten, Menhir-Kreise, Steinfelder …)
-  function bake(items, { id, parent = root } = {}) {
+  function bake(items, { id, parent = root, castShadow = true } = {}) {
     const handles = items.map((it) => { const { type, x, z, y, yaw, onGround, collide, ...opts } = it; const h = make(type, opts); place(h, { x, z, y, yaw, onGround, collide }); return h; });
     const byMat = new Map();
     const group = new THREE.Group();
@@ -111,7 +111,7 @@ export function createPropKit({ veil = null, island = null, colliders = null, pa
     for (const [mat, geos] of byMat) {
       const merged = mergeGeos(geos);
       const m = new THREE.Mesh(merged, mat);
-      m.castShadow = true; m.receiveShadow = true;
+      m.castShadow = castShadow; m.receiveShadow = true;   // flache Beläge (Pflaster) werfen keine Schatten (Acne auf sich selbst)
       m.userData.shared = false;
       group.add(m);
     }
@@ -170,7 +170,7 @@ export function createPropKit({ veil = null, island = null, colliders = null, pa
     for (const e of BIRD_EMOTIONS) put('vogel', { emotion: e, pose: 'sitzen' });
     put('glimmerkugel', { y: (y || 0) + 2 }); put('glimmerinsel', { y: (y || 0) + 4 }); put('grisel', { y: (y || 0) + 3 }); put('titan', { size: 0.35 });
     put('haus', { size: 'S' }); put('haus', { size: 'M', markise: true }); put('haus', { size: 'L' }); put('kiosk'); put('kisten', { n: 3 }); put('fass'); put('boje', { lying: true });
-    put('netz'); put('ruderboot'); put('bank'); put('blumenkuebel'); put('brunnen');
+    put('netz'); put('ruderboot'); put('bank'); put('blumenkuebel'); put('brunnen'); put('fels');
     put('pflaster', { x: 0, z: 0, y: 0, onGround: false, cx: x + Math.cos(yaw) * spacing * i, cz: z + Math.sin(yaw) * spacing * i, r: 2.5 });
     put('wimpelkette', { x: 0, z: 0, y: 0, onGround: false, from: [x + Math.cos(yaw) * spacing * i, (y || 0) + 3, z + Math.sin(yaw) * spacing * i], to: [x + Math.cos(yaw) * spacing * (i + 1), (y || 0) + 3, z + Math.sin(yaw) * spacing * (i + 1)] });
     return { handles: list, remove() { list.forEach((h) => h.remove()); } };

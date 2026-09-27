@@ -58,11 +58,16 @@ function canopyColor(light, dark, y0, y1) {
   return (x, y, z, out) => out.copy(b).lerp(a, smoothstep(y0, y1, y));
 }
 // Runde Krone aus großen weichen Loben, je Lobe Farbton ±4°
-function lobes(parts, list, light, dark, y0, y1, wind, seedBase = 0, segW = 8, segH = 6) {
+// (Stil-Bibel §6/§14: Kugeln (r, 12, 9), die erste Lobe der Liste ist die Mitte (1,3×), Randloben rücken 0,3 m nach innen,
+// damit die Loben zu EINER Silhouette verschmelzen statt zu „Traubenballons“)
+function lobes(parts, list, light, dark, y0, y1, wind, seedBase = 0, segW = 12, segH = 9, mergeIn = 0.3) {
   list.forEach((b, i) => {
     const deg = ((seedBase + i) % 3 - 1) * 4;
     const cf = canopyColor(hueShift(light, deg), hueShift(dark, deg), y0, y1);
-    parts.push(part(new THREE.SphereGeometry(b[3], segW, segH), { pos: [b[0], b[1], b[2]], scale: [1, 0.86, 1], smooth: true, leaf: 1, color: cf, wind }));
+    let [x, y, z, r] = b;
+    if (i === 0) r *= 1.3;
+    else if (mergeIn > 0) { const d = Math.hypot(x, z) || 1; const k = Math.max(0, d - mergeIn) / d; x *= k; z *= k; }
+    parts.push(part(new THREE.SphereGeometry(r, segW, segH), { pos: [x, y, z], scale: [1, 0.86, 1], smooth: true, leaf: 1, color: cf, wind }));
   });
 }
 
@@ -74,9 +79,10 @@ function broadleafGeo(rnd, blossom) {
   parts.push(part(new THREE.CylinderGeometry(0.3, 0.44, 0.35, 6, 1), { pos: [0, 0.17, 0], color: '#6e4c30' }));
   parts.push(part(new THREE.CylinderGeometry(0.08, 0.14, 1.6, 5, 1), { pos: [0.55, h - 0.1, 0], rot: [0, 0, -0.9], color: '#7a5638', wind: 0.08 }));
   parts.push(part(new THREE.CylinderGeometry(0.08, 0.14, 1.4, 5, 1), { pos: [-0.45, h - 0.3, 0.2], rot: [0.3, 0, 0.9], color: '#7a5638', wind: 0.08 }));
-  const list = [[0, h + 1.6, 0, 2.1], [1.35, h + 0.95, 0.4, 1.5], [-1.25, h + 1.05, -0.3, 1.55], [0.2, h + 2.7, -0.4, 1.35], [-0.3, h + 0.85, 1.15, 1.35]];
-  if (blossom) lobes(parts, list, '#ffc2dc', '#f06a9c', h, h + 3.4, (x, y) => 0.12 + Math.max(0, y - h) * 0.05, 2);
-  else lobes(parts, list, '#9ade5a', '#3b8a3e', h + 0.2, h + 3.4, (x, y) => 0.12 + Math.max(0, y - h) * 0.05, Math.floor(rnd() * 3));
+  const list = [[0, h + 1.6, 0, 1.75], [1.35, h + 0.95, 0.4, 1.5], [-1.25, h + 1.05, -0.3, 1.55], [0.2, h + 2.7, -0.4, 1.35], [-0.3, h + 0.85, 1.15, 1.35]];
+  // zwei Töne: dunkles Band unten (bis ≈ 0,55 der Kronenhöhe), oben hell
+  if (blossom) lobes(parts, list, '#ffc2dc', '#f06a9c', h + 0.7, h + 2.2, (x, y) => 0.12 + Math.max(0, y - h) * 0.05, 2);
+  else lobes(parts, list, '#9ade5a', '#3b8a3e', h + 0.7, h + 2.2, (x, y) => 0.12 + Math.max(0, y - h) * 0.05, Math.floor(rnd() * 3));
   return merge(parts);
 }
 
@@ -90,12 +96,12 @@ function jungleGeo(rnd) {
     parts.push(part(new THREE.ConeGeometry(0.55, 1.8, 3, 1), { pos: [Math.cos(a) * 0.5, 0.65, Math.sin(a) * 0.5], rot: [Math.sin(a) * 0.5, -a, -Math.cos(a) * 0.5], scale: [0.35, 1, 1.2], color: '#7a5c40' }));
   }
   // Krone in zwei Etagen
-  const list = [[0, h + 1.1, 0, 3.1], [0.3, h + 2.8, -0.2, 2.1]];
+  const list = [[0, h + 1.1, 0, 2.5], [0.3, h + 2.8, -0.2, 2.1]];
   for (let k = 0; k < 6; k++) {
     const a = (k / 6) * Math.PI * 2 + rnd() * 0.5;
     list.push([Math.cos(a) * 2.5, h - 0.2 + rnd() * 0.8, Math.sin(a) * 2.5, 1.8 + rnd() * 0.5]);
   }
-  lobes(parts, list, '#6fd35a', '#1d6e33', h - 1.8, h + 3.4, 0.12, Math.floor(rnd() * 3));
+  lobes(parts, list, '#6fd35a', '#1d6e33', h - 0.6, h + 1.6, 0.12, Math.floor(rnd() * 3));
   // Lianen als Bänder mit zwei Tönen
   for (let k = 0; k < 6; k++) {
     const a = rnd() * Math.PI * 2, r = 1.6 + rnd() * 1.8, L = 1.8 + rnd() * 2.6;
@@ -119,8 +125,8 @@ function pineGeo(rnd) {
 
 function bushGeo(rnd, flowering) {
   const parts = [];
-  const list = [[0, 0.55, 0, 0.9], [0.7, 0.45, 0.2, 0.66], [-0.6, 0.42, -0.2, 0.7]];
-  lobes(parts, list, '#7fcf52', '#3a9140', 0, 1.3, (x, y) => y * 0.12, Math.floor(rnd() * 3), 7, 5);
+  const list = [[0, 0.55, 0, 0.72], [0.7, 0.45, 0.2, 0.66], [-0.6, 0.42, -0.2, 0.7]];
+  lobes(parts, list, '#7fcf52', '#3a9140', 0.2, 0.9, (x, y) => y * 0.12, Math.floor(rnd() * 3), 9, 7, 0.15);
   if (flowering) {
     const cols = ['#ff5d8f', '#ffd23f', '#ffffff', '#ff8c42'];
     const c = cols[Math.floor(rnd() * cols.length)];

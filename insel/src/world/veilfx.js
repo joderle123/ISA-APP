@@ -85,9 +85,9 @@ export function createVeilFx({ scene, veil, island, vegetation, particles, quali
   ring.frustumCulled = false;
   group.add(ring);
 
-  // ---- Nebelwand am Schleierrand (Stil-Bibel §10.3): 6 m hoch, Alpha 0.35 → 0 nach oben, driftende Schlieren,
+  // ---- Nebelwand am Schleierrand (Stil-Bibel §10.3): 9 m hoch, Alpha 0.62 → 0 nach oben (linear), driftende Schlieren,
   // von innen und außen sichtbar – man sieht die Grenze. Ein Mesh je Slot (Zone/Fleck), folgt dem Gelände.
-  const WALL_H = 7;
+  const WALL_H = 9;
   const wallU = { uTime: { value: 0 }, uAmt: { value: 0 } };
   const wallVert = /* glsl */`
     varying vec2 vUv; varying vec3 vW; varying vec3 vFogView;
@@ -114,10 +114,16 @@ export function createVeilFx({ scene, veil, island, vegetation, particles, quali
       float ang = vUv.x * 40.0;
       float n = vn(vec2(ang, vUv.y * 2.5 - uTime * 0.12)) * 0.6 + vn(vec2(ang * 2.3 + 7.0, vUv.y * 5.0 - uTime * 0.2)) * 0.4;
       // dichter Fuß (0.55), nach oben in Schlieren ausfransend; heller Kamm, damit die Wand vor dem Boden lesbar ist
-      float a = 0.55 * (1.0 - vUv.y) * (1.0 - vUv.y * 0.85) * smoothstep(0.12, 0.62, n + 0.2 - vUv.y * 0.35) * uAmt;
+      // linearer Abfall über 9 m (quadratisch war nur die unterste Meterlage sichtbar, die das Gelände meist verdeckt)
+      float a = 0.62 * (1.0 - vUv.y) * smoothstep(0.1, 0.6, n + 0.22 - vUv.y * 0.25) * uAmt;
       float dCam = length(vFogView);
       a *= smoothstep(2.0, 7.0, dCam);
-      vec3 col = mix(vec3(0.2747, 0.2542, 0.3916), vec3(0.62, 0.58, 0.74), vUv.y * 0.7 + n * 0.5);
+      // weiche Ränder: an der Silhouette des Zylinders (streifender Blick) ausblenden, sonst liest sich die Wand als Glasplatte
+      vec3 wallN = vec3(cos(vUv.x * 6.2831853), 0.0, sin(vUv.x * 6.2831853));
+      vec3 toCam = normalize(cameraPosition - vW);
+      a *= smoothstep(0.0, 0.4, abs(dot(wallN, toCam)));
+      // hell vor dem dunklen Schleierboden (Duotone-Lichter ≈ #C9C4D8), unten dichter und etwas dunkler, oben helle Schlieren
+      vec3 col = mix(vec3(0.42, 0.39, 0.55), vec3(0.78, 0.75, 0.9), vUv.y * 0.55 + n * 0.55);
       gl_FragColor = vec4(col, a);
       #include <tonemapping_fragment>
       #include <colorspace_fragment>

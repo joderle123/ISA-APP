@@ -11,17 +11,20 @@ export const WORLD_LIMIT = 205;          // weiche Grenze im Meer
 export const DEEP_WATER = -1.5;          // tiefer als das: nicht begehbar
 export const SLOPE_LIMIT = 0.62;         // normal.y minimal (≈ 52°)
 
-// Zonen (Mittelpunkt, Radius, deutscher Name). spawn = sicherer Startpunkt für Teleport.
+// Zonen (Mittelpunkt, Radius, deutscher Name). spawn = sicherer Startpunkt für Teleport; spawn.yaw = Blickrichtung auf die
+// Landmarke der Zone (Stil-Bibel §12: Vulkan-Spawn am Kraterrand mit Blick auf Lava und Rauch, Leuchtturm-Spawn zeigt den
+// Turm, Klippen-Spawn den Gewitterturm, Dschungel den Wasserfall, Moor den Steinriesen).
 // Reihenfolge ist Teil der API (Index = Schleier-Slot, terrain.js liest zw[k] positionsabhängig): neue Zonen hinten anfügen.
+const yawTo = (x, z, tx, tz) => Math.atan2(tx - x, tz - z);
 export const ZONES = [
-  { id: 'hafen', name: 'Hafen-Dorf', x: 6, z: 110, r: 42, spawn: { x: 6, z: 118 }, color: '#ffb347' },
-  { id: 'strand', name: 'Palmenstrand', x: 136, z: 28, r: 40, spawn: { x: 132, z: 30 }, color: '#2de2c9' },
-  { id: 'dschungel', name: 'Dschungel', x: 82, z: -82, r: 44, spawn: { x: 84, z: -80 }, color: '#4cd964' },
-  { id: 'klippen', name: 'Sturmklippen', x: -96, z: -96, r: 46, spawn: { x: -100, z: -90 }, color: '#8fa3ff' },
-  { id: 'markt', name: 'Markt-Hügel', x: -118, z: 14, r: 36, spawn: { x: -116, z: 16 }, color: '#ffd166' },
-  { id: 'vulkan', name: 'Vulkan', x: 0, z: -42, r: 58, spawn: { x: 19.6, z: 8.3 }, color: '#ff6b3d' },
-  { id: 'leuchtturm', name: 'Leuchtturm', x: -120, z: 122, r: 36, spawn: { x: -88, z: 127 }, color: '#fff3a0' },
-  { id: 'moor', name: 'Flüstermoor', x: -114, z: 68, r: 26, spawn: { x: -105, z: 59 }, color: '#b48cff' },
+  { id: 'hafen', name: 'Hafen-Dorf', x: 6, z: 110, r: 42, spawn: { x: 6, z: 118, yaw: yawTo(6, 118, 4, 106) }, color: '#ffb347' },
+  { id: 'strand', name: 'Palmenstrand', x: 136, z: 28, r: 40, spawn: { x: 132, z: 30, yaw: yawTo(132, 30, 150, -8) }, color: '#2de2c9' },
+  { id: 'dschungel', name: 'Dschungel', x: 82, z: -82, r: 44, spawn: { x: 84, z: -80, yaw: yawTo(84, -80, 91, -98) }, color: '#4cd964' },
+  { id: 'klippen', name: 'Sturmklippen', x: -96, z: -96, r: 46, spawn: { x: -100, z: -84, yaw: yawTo(-100, -84, -100, -104) }, color: '#8fa3ff' },
+  { id: 'markt', name: 'Markt-Hügel', x: -118, z: 14, r: 36, spawn: { x: -116, z: 16, yaw: yawTo(-116, 16, -118, 2) }, color: '#ffd166' },
+  { id: 'vulkan', name: 'Vulkan', x: 0, z: -42, r: 58, spawn: { x: -14.8, z: -46.5, yaw: yawTo(-14.8, -46.5, 0, -42) }, color: '#ff6b3d' },
+  { id: 'leuchtturm', name: 'Leuchtturm', x: -120, z: 122, r: 36, spawn: { x: -88, z: 127, yaw: yawTo(-88, 127, -122, 124) }, color: '#fff3a0' },
+  { id: 'moor', name: 'Flüstermoor', x: -114, z: 68, r: 26, spawn: { x: -105, z: 59, yaw: yawTo(-105, 59, -112, 82) }, color: '#b48cff' },
 ];
 export const ZONE_INDEX = Object.fromEntries(ZONES.map((z, i) => [z.id, i]));
 

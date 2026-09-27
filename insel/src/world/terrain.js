@@ -14,7 +14,7 @@ const PAL = {
   path: C('#dcb98a'), pathDark: C('#bd9868'),
   rock: C('#b39a86'), rockDark: C('#8d7868'),
   cliff: C('#8a8fa6'), cliffDark: C('#5a6080'),
-  basalt: C('#4b3f3d'), basaltDark: C('#3a3038'), ash: C('#7a6358'),
+  basalt: C('#4b3f3d'), basaltDark: C('#3a3038'), ash: C('#7a6358'), obsidian: C('#2b2430'),
   lavaRock: C('#5b2618'),
   heather: C('#a77fc8'), meadow: C('#e6cf5a'), moss: C('#6a8a62'),
   peat: C('#5c4f3a'), peatDark: C('#2f2820'), moorHeather: C('#8a5fb8'),
@@ -57,12 +57,13 @@ export function createTerrain({ island, veil, quality }) {
     }
     return w;
   }
-  // Lava-Adern am oberen Kegel (0..0,6), stetig über Flächen hinweg
+  // Lava-Adern am oberen Kegel: hier nur die weiche MASKE (0..0,6, wo Risse liegen dürfen); die schmalen Risse selbst
+  // malt der Fragment-Shader (ridged-Rauschen, Glühen > 1.0 → Bloom), damit sie nicht an der 2,5-m-Rasterweite verschmieren
   function veinAt(x, z, h) {
     const dv = Math.hypot(x - vol.x, z - vol.z);
     if (dv >= 48 || dv < vol.rimRadius || h <= 24) return 0;
     const vein = ridged(island.noise.rock, x / 9 + 5, z / 9 - 2, 2);
-    return smoothstep(0.5, 0.64, vein) * 0.6 * smoothstep(24, 33, h) * (1 - smoothstep(38, 48, dv));
+    return smoothstep(0.42, 0.6, vein) * 0.6 * smoothstep(24, 33, h) * (1 - smoothstep(38, 48, dv));
   }
   // Umgebungsverdeckung aus der Höhenkarte: Mulden und Fußpunkte von Hängen liegen tiefer als ihre Umgebung
   function occlusionAt(x, z, h) {
@@ -126,8 +127,9 @@ export function createTerrain({ island, veil, quality }) {
       surfS = 1;
     } else if (s === 'rock' || s === 'ash') {
       if (s === 'ash' || wVu > 0.5) {
-        const top = smoothstep(22, 44, h);
-        tmp.copy(PAL.ash).lerp(PAL.basalt, top);
+        // Basalt in drei Tönen (Asche → Basalt → Obsidian nach oben), Schichtung malt der Shader
+        const top = smoothstep(20, 36, h), peak = smoothstep(38, 50, h);
+        tmp.copy(PAL.ash).lerp(PAL.basalt, top).lerp(PAL.obsidian, peak);
       } else {
         tmp.copy(PAL.rock);
         tmp2.copy(PAL.cliff);
@@ -205,10 +207,10 @@ export function createTerrain({ island, veil, quality }) {
     // Plätze (Pads): glatt und ruhig
     smoothness = Math.max(smoothness, pw);
     if (pw > 0) { tmp.lerp(PAL.path, pw * 0.5); facet *= 1 - pw; surfP = Math.max(surfP, pw * 0.6); surfG *= 1 - pw * 0.6; surfS *= 1 - pw * 0.6; }
-    // Lava-Adern am oberen Kegel
+    // Lava-Adern am oberen Kegel: Fels um die Risse leicht rötlich (die Risse selbst malt der Shader)
     if (dv < 48 && h > 24 && dv >= vol.rimRadius) {
       const v = veinAt(cx, cz, h);
-      if (v > 0.05) tmp.lerp(PAL.lavaRock, v * 0.6);
+      if (v > 0.05) tmp.lerp(PAL.lavaRock, v * 0.25);
     }
     // Makro-Variation + Umgebungsverdeckung (kühl abgedunkelt, in Mulden und an Hangfüßen deutlich)
     tmp.multiplyScalar(macro);
@@ -324,11 +326,13 @@ export function createTerrain({ island, veil, quality }) {
 
   const mat = new THREE.MeshLambertMaterial({ vertexColors: true });
   const lavaColor = { value: new THREE.Color('#ff5a1a') };
+  const volcanoU = { value: new THREE.Vector3(vol.x, vol.z, vol.rimRadius) };
   veil.patch(mat, {
     key: 'terrain',
     ramp: 'terrain',
-    uniforms: { uLavaColor: lavaColor },
+    uniforms: { uLavaColor: lavaColor, uVolcano: volcanoU },
     fragmentPars: `uniform vec3 uLavaColor;
+uniform vec3 uVolcano;
 varying float vGlow;
 varying vec3 vSurf;
 float lumoBlotchH(vec2 p) { vec3 p3 = fract(vec3(p.xyx) * 0.1031); p3 += dot(p3, p3.yzx + 33.33); return fract((p3.x + p3.y) * p3.z); }
@@ -368,8 +372,13 @@ float lumoInk(float v, float th, float w) { float fw = fwidth(v) * 1.2 + w; retu
         mul *= mix(vec3(1.0), vec3(0.86, 0.79, 0.74), pathRim * det);
         // Fels/Asche (alles ohne Wiese/Sand/Weg): gemalte Gesteinsschichten – leicht geneigte Bänder mit Rauschversatz
         float rockW = clamp(1.0 - vSurf.x - vSurf.y - vSurf.z, 0.0, 1.0) * step(0.2, vVeilPos.y);
+        float dVol = distance(bp, uVolcano.xy);
+        float cone = smoothstep(uVolcano.z + 70.0, uVolcano.z + 8.0, dVol) * smoothstep(14.0, 26.0, vVeilPos.y);
+        // Gesteinsschichten: am Vulkankegel kräftiger und bis zur Spitze (drei Töne lesbar), sonst dezent
         float strata = lumoInk(sin(vVeilPos.y * 1.7 + g1 * 4.0 + bp.x * 0.05), 0.35, 0.12);
-        vec3 rockMul = mix(vec3(0.9, 0.9, 0.93), vec3(1.0), strata) * (1.0 + (lumoInk(g2, 0.6, 0.05) - 0.5) * 0.05);
+        vec3 rockMul = mix(mix(vec3(0.9, 0.9, 0.93), vec3(0.8, 0.78, 0.86), cone), vec3(1.0), strata) * (1.0 + (lumoInk(g2, 0.6, 0.05) - 0.5) * 0.05);
+        // Landmarke im Schleier (§5.3): der obere Kegel behält die Hälfte seiner Farbe
+        gLumoVeilCap = 1.0 - 0.5 * smoothstep(28.0, 40.0, vVeilPos.y) * smoothstep(uVolcano.z + 60.0, uVolcano.z + 20.0, dVol);
         vec3 m2 = mix(vec3(1.0), grassMul, vSurf.x);
         m2 = mix(m2, sandMul, vSurf.y);
         m2 = mix(m2, pathMul, vSurf.z);
@@ -390,7 +399,16 @@ float lumoInk(float v, float th, float w) { float fw = fwidth(v) * 1.2 + w; retu
     afterVeil: /* glsl */`
       {
         float pulse = 0.75 + 0.25 * sin(uLumoTime * 1.7 + vVeilPos.x * 0.3 + vVeilPos.z * 0.2);
-        outgoingLight += uLavaColor * vGlow * vGlow * 2.2 * pulse;
+        // Lavasee (aGlow ≈ 1) glüht flächig; Adern (aGlow ≤ 0,6) sind schmale ridged-Risse mit dunklem Saum, Glühen > 1.0 (Bloom)
+        float lake = smoothstep(0.62, 0.9, vGlow);
+        float veinMask = smoothstep(0.03, 0.3, vGlow) * (1.0 - lake);
+        vec2 vp = vVeilPos.xz;
+        float rn = 1.0 - abs(2.0 * lumoBlotch(vp * 0.11 + 5.0) - 1.0);
+        rn = rn * 0.62 + (1.0 - abs(2.0 * lumoBlotch(vp * 0.27 + 2.0) - 1.0)) * 0.38;
+        float crack = lumoInk(rn, 0.955, 0.012) * veinMask;
+        float halo = lumoInk(rn, 0.9, 0.03) * veinMask;
+        outgoingLight = mix(outgoingLight, outgoingLight * vec3(0.5, 0.36, 0.34), halo * 0.7);
+        outgoingLight += uLavaColor * (lake * lake * 2.2 * pulse + crack * 3.0 * (0.85 + 0.15 * pulse) + halo * 0.25);
       }
     `,
   });

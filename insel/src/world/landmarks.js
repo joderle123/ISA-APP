@@ -50,8 +50,9 @@ export function createLandmarks({ island, veil, colliders, scene, quality }) {
   }
   // Laterne am Stegende
   const lampZ = z0 + 2.2;
-  dockParts.push(part(new THREE.CylinderGeometry(0.07, 0.09, 2.6, 5, 1), { pos: [D.x - D.width / 2 + 0.3, deckY + 1.3, lampZ], color: '#2f2c3a' }));
-  dockParts.push(part(new THREE.CylinderGeometry(0.2, 0.14, 0.12, 6, 1), { pos: [D.x - D.width / 2 + 0.3, deckY + 2.95, lampZ], color: '#2f2c3a' }));
+  dockParts.push(part(new THREE.CylinderGeometry(0.07, 0.09, 2.6, 5, 1), { pos: [D.x - D.width / 2 + 0.3, deckY + 1.3, lampZ], color: '#3F4460' }));
+  dockParts.push(part(new THREE.CylinderGeometry(0.2, 0.14, 0.12, 6, 1), { pos: [D.x - D.width / 2 + 0.3, deckY + 2.95, lampZ], color: '#3F4460' }));
+  dockParts.push(part(new THREE.CylinderGeometry(0.21, 0.21, 0.02, 6, 1), { pos: [D.x - D.width / 2 + 0.3, deckY + 2.88, lampZ], color: '#C9CFE8' }));
   const lampGeo = part(new THREE.IcosahedronGeometry(0.2, 0), { pos: [D.x - D.width / 2 + 0.3, deckY + 2.72, lampZ], color: '#ffe7a0' });
   const dockMesh = new THREE.Mesh(merge(dockParts), mat);
   dockMesh.castShadow = true; dockMesh.receiveShadow = true;
@@ -175,9 +176,22 @@ export function createLandmarks({ island, veil, colliders, scene, quality }) {
 
   // ---- Rauchsäule: Low-Poly-Ballen, die aufsteigen, wachsen, mit dem Wind abdriften und verblassen ----
   const PUFFS = Math.round(30 * Math.max(0.5, qp));
-  const puffGeo = part(new THREE.SphereGeometry(1, 10, 8), { smooth: true, color: '#ffffff', deform: (v) => { v.y *= v.y < 0 ? 0.7 : 1; } });
-  const puffMat = new THREE.MeshLambertMaterial({ vertexColors: true, transparent: true, opacity: 0.9, depthWrite: false, emissive: new THREE.Color('#b8481a'), emissiveIntensity: 0 });
-  veil.patch(puffMat, { key: 'smoke', veil: false });
+  const puffGeo = part(new THREE.SphereGeometry(1, 16, 12), { smooth: true, color: '#ffffff', deform: (v) => { v.y *= v.y < 0 ? 0.7 : 1; } });
+  // Rauch: weiche Rampe (0.2), zweitonig über die Rampe (Sonnenseite hell), Fresnel-Rand (Alpha 0.9 → 0), Marker-Alpha für den
+  // Kontur-Pass (Alpha wird direkt geschrieben, nicht verrechnet), im Schleier nur halb entfärbt (Landmarke bleibt lesbar)
+  const puffMat = new THREE.MeshLambertMaterial({
+    vertexColors: true, transparent: true, opacity: 0.9, depthWrite: false, emissive: new THREE.Color('#b8481a'), emissiveIntensity: 0,
+    blending: THREE.CustomBlending, blendSrc: THREE.SrcAlphaFactor, blendDst: THREE.OneMinusSrcAlphaFactor, blendSrcAlpha: THREE.OneFactor, blendDstAlpha: THREE.ZeroFactor,
+  });
+  veil.patch(puffMat, {
+    key: 'smoke', ramp: { t1: 0.4, t2: 0.05, mid: 0.3, soft: 0.2, rim: 0.2, fogCap: 0.55 },
+    beforeVeil: `{
+      float smF = 1.0 - saturate(dot(normalize(normal), normalize(vViewPosition)));
+      diffuseColor.a *= 1.0 - smoothstep(0.35, 1.0, smF) * 0.95;
+      gLumoVeilCap = 0.5;
+    }
+`,
+  });
   const smoke = new THREE.InstancedMesh(puffGeo, puffMat, PUFFS);
   smoke.frustumCulled = false;
   smoke.renderOrder = 6;

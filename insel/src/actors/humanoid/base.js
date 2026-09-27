@@ -83,7 +83,11 @@ export function figureTier(opts = {}) {
 // Hüllenbreite in Pixeln je Stufe und Detail (STIL §4.2 / §13): niedrig nur volle Figuren und nur der Kopf
 // (Draw-Call-Budget ≤ 150 für alle Figuren am Hafen, tests/scenarios/figuren.mjs: 6 animierte à 19 + 14 Impostoren à 3)
 export const HULL_PX = { low: { full: 1.6, lite: 0, hand: 1.1 }, medium: { full: 1.8, lite: 1.5, hand: 1.2 }, high: { full: 2.0, lite: 1.6, hand: 1.3 } };
-export const HULL_PARTS = { low: new Set(['head', 'impostor']), medium: null, high: null };
+// Hüllen je Stufe (§13 Draw-Call-Budget): niedrig nur Kopf, mittel die silhouettenbildenden Teile (Oberarme, Becken und
+// Rucksack liegen innerhalb der Silhouette – ihre Kanten fängt die Post-Kontur), hoch alle Teile
+export const HULL_PARTS = { low: new Set(['head', 'impostor']), medium: new Set(['head', 'hair', 'hairTail', 'torso', 'thighL', 'thighR', 'shinL', 'shinR', 'foreL', 'foreR', 'impostor']), high: null };
+// Jenseits dieses Kamera-Abstands bleiben die Hüllen aus (die Post-Kontur trägt die Silhouette; spart Draw-Calls je Figur)
+export const HULL_FAR = { low: 14, medium: 26, high: 40 };
 
 // ---- Toon-Rampe „figur“ (STIL §3.1): 2 Bänder + Kernschatten, Übergänge ±0.03 NdotL (64 Texel, linear gefiltert) ----
 // Werte multiplizieren nur das Sonnenlicht; das Hemisphärenlicht füllt den Schatten (kühl oben, warm unten).

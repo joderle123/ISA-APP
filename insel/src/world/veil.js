@@ -161,9 +161,10 @@ float lumoVeilAmount(vec3 p) {
   return amt * uVeilStrength;
 }
 float gLumoVeilReady = 0.0;
+float gLumoVeilCap = 1.0;   // Schleier-Deckel je Material/Fragment (Landmarken: Vulkan-Spitze, Rauch bleiben halb farbig)
 vec3 lumoApplyVeil(vec3 col, vec3 p) {
   // das Kantenlicht hat den Schleierwert für dieses Fragment meist schon berechnet (lumoVeilAmount setzt auch Ring/Innen)
-  float v = gLumoVeilReady > 0.5 ? gLumoVeil : lumoVeilAmount(p);
+  float v = (gLumoVeilReady > 0.5 ? gLumoVeil : lumoVeilAmount(p)) * gLumoVeilCap;
   gLumoVeil = v;
   gLumoWorldY = p.y;
   float l = dot(col, vec3(0.299, 0.587, 0.114));
@@ -259,7 +260,8 @@ struct LambertMaterial {
 };
 void RE_Direct_Lambert( const in IncidentLight directLight, const in vec3 geometryPosition, const in vec3 geometryNormal, const in vec3 geometryViewDir, const in vec3 geometryClearcoatNormal, const in LambertMaterial material, inout ReflectedLight reflectedLight ) {
   float dotNL = dot( geometryNormal, directLight.direction );
-  float sh = smoothstep( 0.18, 0.62, gLumoShadow ) * lumoCloudShadow( vVeilPos.xz );
+  // Schattenwurf nie schwarz (§3.6, Deckkraft 0.85): im Schatten bleibt ein Rest Sonnenanteil
+  float sh = mix( 0.15, 1.0, smoothstep( 0.18, 0.62, gLumoShadow ) ) * lumoCloudShadow( vVeilPos.xz );
   gLumoShadow = 1.0;
   float band = lumoBand( dotNL, uRamp, uRampSoft ) * sh;
   reflectedLight.directDiffuse += band * directLight.color * BRDF_Lambert( material.diffuseColor );
@@ -277,7 +279,7 @@ struct ToonMaterial {
   vec3 diffuseColor;
 };
 void RE_Direct_Toon( const in IncidentLight directLight, const in vec3 geometryPosition, const in vec3 geometryNormal, const in vec3 geometryViewDir, const in vec3 geometryClearcoatNormal, const in ToonMaterial material, inout ReflectedLight reflectedLight ) {
-  float sh = smoothstep( 0.18, 0.62, gLumoShadow ) * lumoCloudShadow( vVeilPos.xz );
+  float sh = mix( 0.15, 1.0, smoothstep( 0.18, 0.62, gLumoShadow ) ) * lumoCloudShadow( vVeilPos.xz );
   gLumoShadow = 1.0;
   vec3 irradiance = getGradientIrradiance( geometryNormal, directLight.direction ) * directLight.color * sh;
   reflectedLight.directDiffuse += irradiance * BRDF_Lambert( material.diffuseColor );

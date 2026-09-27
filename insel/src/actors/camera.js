@@ -3,7 +3,8 @@
 // Mindestabstand heran (nie in den Kopf). Dazu der Kino-Anflug vom Meer zum Hafen.
 // Modi: rig.mode = 'follow' (alle Bewegungs-Ansichten) | 'intro' | 'free' (setShot) | 'talk' | 'photo'
 //   rig.viewMode = 'follow' | 'glide' | 'climb' | 'swim' | 'dive' (vom Spieler-Zustand, player.cameraMode)
-//   rig.setMode('talk', { target: Vector3|Object3D, side: ±1 }) · rig.setMode('photo') · rig.setMode(null) (zurück)
+//   rig.setMode('talk', { target: Vector3|Object3D, side?: ±1 (Hinweis; strict: true erzwingt), }) · rig.setMode('photo') · rig.setMode(null)
+//   Gespräch (§12): Spielfigur links als ¾-Rückenansicht, Gegenüber rechts – die Kamera wählt die Seite, die sein Gesicht zeigt
 //   rig.shake(strength, seconds) (reducedFx dämpft) · rig.reducedFx · rig.bounds (Innenraum-Box, z. B. Tauchen)
 import * as THREE from 'three';
 
@@ -11,8 +12,9 @@ const MIN_DIST = 3.2, MAX_DIST = 22;
 const MIN_OCCLUDED = 3.6;   // näher rückt die Kamera wegen Bäumen nie heran
 const OCC_PITCH = 0.4;      // bei Verdeckung hebt sich der Blick (über den Kopf hinweg)
 
-// Nur dicke Stämme (Dschungelriesen) ziehen die Kamera heran; dünne Stämme dürfen kurz durchs Bild
-const OCCLUDERS = new Set(['jungle', 'mangrove', 'podest']);
+// Nur dicke Stämme (Dschungelriesen, Kiefern) ziehen die Kamera heran; dünne Stämme dürfen kurz durchs Bild
+const OCCLUDERS = new Set(['jungle', 'mangrove', 'podest', 'pine']);
+const VISTA = { dur: 1.2, dist: 1.5, fov: -4 };   // Vista-Moment beim Zonenwechsel (§12): kurzer Rückzug, engeres Bild
 
 // Ansichten je Bewegungszustand: Abstand/Neigung/Blickhöhe/FOV-Zuschlag/Folge-Tempo
 const VIEWS = {
@@ -39,17 +41,19 @@ export function createCameraRig({ camera, island, input, player, events, collide
     occlusion: 1,   // aktueller Verkürzungsfaktor durch Bäume (1 = frei)
     reducedFx: false,
     bounds: null,   // { min:{x,y,z}, max:{x,y,z} } – Kamera bleibt im Raum (Tauchen/Innenräume)
-    baseFov: 55,
+    baseFov: 50,
     fovOffset: 0,
+    vista: null,    // { t } – läuft nach einem Zonenwechsel zu Fuß (nicht nach Teleport)
   };
   let idleLook = 10;
   const tmp = new THREE.Vector3();
   const desired = new THREE.Vector3();
   const shot = { pos: new THREE.Vector3(), look: new THREE.Vector3() };
-  const talk = { target: null, side: 1, t: 0 };
+  const talk = { target: null, side: -1, pref: -1, t: 0 };
   const photo = { pan: new THREE.Vector3(), t: 0 };
   let shake = { amp: 0, t: 0, dur: 0 };
-  let fovCur = 55;
+  let fovCur = 50;
+  let lastTeleport = -10;
   let viewDist = 0, viewLookY = 1.6;
   let lastView = 'follow';
 
@@ -102,7 +106,10 @@ export function createCameraRig({ camera, island, input, player, events, collide
     rig.focus.z += (p.z - rig.focus.z) * k;
     rig.focus.y += (p.y + rig.lookOffsetY - rig.focus.y) * ky;
     if (rig.mode === 'photo') rig.focus.add(photo.pan);
-    const wantDist = THREE.MathUtils.clamp(rig.targetDist + viewDist, rig.mode === 'photo' ? 1.5 : MIN_DIST, rig.mode === 'photo' ? 40 : MAX_DIST + 6);
+    // Vista-Moment: Sinus-Bogen über 1,2 s (Rückzug +1,5 m, FOV −4°)
+    let vistaK = 0;
+    if (rig.vista) { rig.vista.t += dt; const u = rig.vista.t / VISTA.dur; if (u >= 1) rig.vista = null; else vistaK = Math.sin(Math.PI * u); }
+    const wantDist = THREE.MathUtils.clamp(rig.targetDist + viewDist + VISTA.dist * vistaK, rig.mode === 'photo' ? 1.5 : MIN_DIST, rig.mode === 'photo' ? 40 : MAX_DIST + 6);
     rig.dist += (wantDist - rig.dist) * (snap ? 1 : 1 - Math.exp(-dt * 6));
     // Bei Verdeckung von oben schauen, damit der Kopf nicht das Bild füllt
     const lift = (1 - rig.occlusion) * OCC_PITCH;
@@ -146,7 +153,7 @@ export function createCameraRig({ camera, island, input, player, events, collide
     camera.lookAt(rig.focus);
     applyShake(dt);
     // FOV je Ansicht
-    const wantFov = rig.baseFov + view.fov + rig.fovOffset;
+    const wantFov = rig.baseFov + view.fov + rig.fovOffset + VISTA.fov * vistaK;
     fovCur += (wantFov - fovCur) * (snap ? 1 : 1 - Math.exp(-dt * 4));
     if (Math.abs(camera.fov - fovCur) > 0.05) { camera.fov = fovCur; camera.updateProjectionMatrix(); }
   }
@@ -187,6 +194,10 @@ export function createCameraRig({ camera, island, input, player, events, collide
     if (cb) cb();
   }
 
+  if (events) {
+    events.on('player:teleport', () => { lastTeleport = performance.now(); rig.vista = null; });
+    events.on('zone:change', (e) => { if (e && e.id && rig.mode === 'follow' && performance.now() - lastTeleport > 1500) rig.vista = { t: 0 }; });
+  }
   rig.startIntro = startIntro;
   rig.skipIntro = endIntro;
   rig.snap = () => { rig.dist = rig.targetDist + viewDist; place(0, true); };
@@ -201,7 +212,7 @@ export function createCameraRig({ camera, island, input, player, events, collide
   rig.setMode = (name, opts = {}) => {
     if (rig.mode === 'intro') return false;
     if (!name || name === 'follow') { if (rig.mode === 'talk' || rig.mode === 'photo') { rig.mode = 'follow'; events && events.emit('camera:mode', { mode: 'follow' }); } return true; }
-    if (name === 'talk') { talk.target = opts.target || null; talk.side = opts.side || 1; talk.t = 0; rig.mode = 'talk'; }
+    if (name === 'talk') { talk.target = opts.target || null; talk.pref = opts.strict && opts.side ? opts.side : -1; talk.side = talk.pref; talk.t = 0; rig.mode = 'talk'; }
     else if (name === 'photo') { photo.pan.set(0, 0, 0); photo.t = 0; rig.mode = 'photo'; }
     else if (name === 'free') { rig.mode = 'free'; }
     else return false;
@@ -247,21 +258,45 @@ export function createCameraRig({ camera, island, input, player, events, collide
       return;
     }
     if (rig.mode === 'talk') {
-      // Über-die-Schulter: Figur links/rechts im Bild, Gesprächspartner gegenüber
+      // Über-die-Schulter (§12): Spielfigur im linken Drittel als ¾-Rückenansicht mit ganzem Kopf, Gegenüber rechts und der
+      // Kamera zugewandt – die Seite wird beim Start so gewählt, dass das Gesicht des Gegenübers zur Kamera zeigt
       talk.t += dt;
       tA.copy(player.position).add(tmp.set(0, 1.5, 0));
       talkTarget(tB);
       tMid.copy(tA).lerp(tB, 0.5);
       const dir = tmp.copy(tB).sub(tA); dir.y = 0;
       const d = Math.max(1.5, dir.length()); dir.normalize();
-      const side = tmp.set(-dir.z, 0, dir.x).multiplyScalar(talk.side * 1.3);
-      desired.copy(tA).addScaledVector(dir, -2.2 - d * 0.4).add(side); desired.y = tA.y + 0.45 + d * 0.1;
+      const dx = dir.x, dz = dir.z;
+      if (talk.t <= dt) {
+        // Vorzugsseite (Standard −1 = Spielfigur links, §12; opts.side ist nur ein Hinweis): das Gegenüber blickt in eine
+        // Richtung (yaw) – die Seite nehmen, von der aus sein Gesicht zu sehen ist
+        const t = talk.target;
+        let best = talk.pref;
+        if (t && t.isObject3D) {
+          const fy = t.rotation.y, fx = Math.sin(fy), fz = Math.cos(fy);
+          let bestDot = -Infinity;
+          for (const s of [-1, 1]) {
+            const cx = tA.x - dx * (2.2 + d * 0.4) + (-dz) * s * 1.3, cz = tA.z - dz * (2.2 + d * 0.4) + dx * s * 1.3;
+            const vx = cx - tB.x, vz = cz - tB.z, vl = Math.hypot(vx, vz) || 1;
+            const dot = (fx * vx + fz * vz) / vl + (s === talk.pref ? 0.2 : 0);
+            if (dot > bestDot) { bestDot = dot; best = s; }
+          }
+        }
+        talk.side = best;
+      }
+      const side = tmp.set(-dz, 0, dx).multiplyScalar(talk.side * 1.3);
+      desired.copy(tA).addScaledVector(dir, -2.3 - d * 0.4).add(side); desired.y = tA.y + 0.62 + d * 0.1;
       const gh = island.getHeight(desired.x, desired.z) + 0.6;
       if (desired.y < gh) desired.y = gh;
       const kk = talk.t < 0.05 ? 1 : 1 - Math.exp(-dt * 4);
       camera.position.lerp(desired, kk);
+      // Blickpunkt etwas über der Mitte, damit beide Köpfe mit Luft nach oben im Bild sind
+      tMid.y += 0.12;
       rig.focus.lerp(tMid, kk);
       camera.lookAt(rig.focus);
+      const wantFov = rig.baseFov - 8;
+      fovCur += (wantFov - fovCur) * kk;
+      if (Math.abs(camera.fov - fovCur) > 0.05) { camera.fov = fovCur; camera.updateProjectionMatrix(); }
       player.setCameraYaw(Math.atan2(camera.position.x - rig.focus.x, camera.position.z - rig.focus.z));
       return;
     }
@@ -303,10 +338,10 @@ export function createCameraRig({ camera, island, input, player, events, collide
     player.setCameraYaw(rig.yaw);
   };
 
-  // FOV für Hoch-/Querformat
+  // FOV für Hoch-/Querformat (§12: 50° quer, 62° hoch)
   rig.onResize = (size) => {
     camera.aspect = size.aspect;
-    rig.baseFov = size.portrait ? 68 : 55;
+    rig.baseFov = size.portrait ? 62 : 50;
     fovCur = rig.baseFov + (VIEWS[rig.viewMode] || VIEWS.follow).fov + rig.fovOffset;
     camera.fov = fovCur;
     camera.updateProjectionMatrix();

@@ -174,25 +174,31 @@ export function buildBrow(cfg, s) {
   return { geo: fig(g, { flag: FLAG.flat, hull: 0, color: col }), anchor };
 }
 export const MOUTH = { x: 0, y: -0.56, z: 0.9 };
-export function mouthColor(cfg) { return mixHex(darker(cfg.skin, 0.5), '#8a4550', 0.5); }
+// Lippenlinie dunkler (#7A2E3A, Stil-Bibel §8.2 / §14) und 0,006 dick, Mundbreite 0,052 – aus 3 m lesbar
+export function mouthColor(cfg) { return mixHex(darker(cfg.skin, 0.45), '#7a2e3a', 0.7); }
 export function buildMouth(cfg, kind) {
   const c = mouthColor(cfg);
   const flag = FLAG.flat, hull = 0;
-  if (kind === 'neutral') return fig(band(-0.016, 0.016, (t) => -0.0012 * Math.sin(Math.PI * t), (t) => 0.0032 + 0.0012 * Math.sin(Math.PI * t), 8), { flag, hull, color: c });
+  if (kind === 'neutral') return fig(band(-0.021, 0.021, (t) => -0.0014 * Math.sin(Math.PI * t), (t) => 0.0052 + 0.0012 * Math.sin(Math.PI * t), 8), { flag, hull, color: c });
   if (kind === 'smile') {
     // Lächeln: Bogen mit betonten Mundwinkeln (kleine Punkte)
     return merge([
-      fig(band(-0.024, 0.024, (t) => -0.012 * (1 - (2 * t - 1) ** 2), (t) => 0.0028 + 0.002 * Math.sin(Math.PI * t), 14), { flag, hull, color: c }),
-      fig(circle(0.0026, 7, { cx: -0.024, cy: 0.001 }), { flag, hull, color: c }),
-      fig(circle(0.0026, 7, { cx: 0.024, cy: 0.001 }), { flag, hull, color: c }),
+      fig(band(-0.031, 0.031, (t) => -0.015 * (1 - (2 * t - 1) ** 2), (t) => 0.0046 + 0.002 * Math.sin(Math.PI * t), 14), { flag, hull, color: c }),
+      fig(circle(0.0034, 7, { cx: -0.031, cy: 0.0012 }), { flag, hull, color: c }),
+      fig(circle(0.0034, 7, { cx: 0.031, cy: 0.0012 }), { flag, hull, color: c }),
     ]);
   }
-  if (kind === 'frown') return fig(band(-0.018, 0.018, (t) => 0.0085 * (1 - (2 * t - 1) ** 2) - 0.0045, (t) => 0.003 + 0.0016 * Math.sin(Math.PI * t), 12), { flag, hull, color: c });
+  // Schmollen: Bogen nach unten, Mundwinkel betont tiefer
+  if (kind === 'frown') return merge([
+    fig(band(-0.0235, 0.0235, (t) => 0.0105 * (1 - (2 * t - 1) ** 2) - 0.0055, (t) => 0.005 + 0.0016 * Math.sin(Math.PI * t), 12), { flag, hull, color: c }),
+    fig(circle(0.0032, 7, { cx: -0.0235, cy: -0.0058 }), { flag, hull, color: c }),
+    fig(circle(0.0032, 7, { cx: 0.0235, cy: -0.0058 }), { flag, hull, color: c }),
+  ]);
   // offen: dunkle Ellipse mit Zahnkante und Zungenbogen
   return merge([
-    fig(circle(0.0135, 16, { ry: 0.0105 }), { flag, hull, color: '#6e2634' }),
-    fig(band(-0.0095, 0.0095, () => 0.0062, () => 0.0034, 6).translate(0, 0, 0.0008), { flag, hull, color: '#ffffff' }),
-    fig(circle(0.0075, 10, { ry: 0.004, cy: -0.0065 }).translate(0, 0, 0.0008), { flag, hull, color: '#b05060' }),
+    fig(circle(0.0165, 16, { ry: 0.0125 }), { flag, hull, color: '#5e1f2c' }),
+    fig(band(-0.0115, 0.0115, () => 0.0074, () => 0.0038, 6).translate(0, 0, 0.0008), { flag, hull, color: '#ffffff' }),
+    fig(circle(0.009, 10, { ry: 0.0046, cy: -0.0078 }).translate(0, 0, 0.0008), { flag, hull, color: '#b05060' }),
   ]);
 }
 export const mouthAnchor = () => headAnchor(MOUTH.x, MOUTH.y, MOUTH.z);

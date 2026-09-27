@@ -60,14 +60,21 @@ export function createLife({ island, veil, scene, quality }) {
   group.add(gulls);
 
   // ---- Schmetterlinge ----
+  // Flügel als abgerundete zweitonige Karten (Fächer aus einem weichen Umriss, innen dunkler), Körper schmal
+  const wingOutline = [[0.02, 0.1], [0.1, 0.26], [0.22, 0.3], [0.34, 0.22], [0.38, 0.08], [0.34, -0.06], [0.26, -0.2], [0.14, -0.28], [0.04, -0.2], [0.02, -0.06]];
+  const wingPos = [];
+  for (const s of [-1, 1]) {
+    for (let i = 0; i < wingOutline.length - 1; i++) {
+      const a = wingOutline[i], b = wingOutline[i + 1];
+      const tri = s > 0 ? [[0, 0, 0.02], [s * a[0], 0, a[1]], [s * b[0], 0, b[1]]] : [[0, 0, 0.02], [s * b[0], 0, b[1]], [s * a[0], 0, a[1]]];
+      for (const v of tri) wingPos.push(v[0], v[1], v[2]);
+    }
+  }
   const bfGeo = merge([
-    part(new THREE.BufferGeometry().setAttribute('position', new THREE.Float32BufferAttribute([
-      0, 0, 0.12, 0.34, 0, 0.2, 0.3, 0, -0.08,
-      0, 0, 0.0, 0.3, 0, -0.08, 0.22, 0, -0.26,
-      0, 0, 0.12, -0.3, 0, -0.08, -0.34, 0, 0.2,
-      0, 0, 0.0, -0.22, 0, -0.26, -0.3, 0, -0.08,
-    ], 3)), { color: '#ffffff', wind: (x) => Math.abs(x) * 1.6 }),
-    part(new THREE.BoxGeometry(0.04, 0.04, 0.3), { color: '#2a2230' }),
+    part(new THREE.BufferGeometry().setAttribute('position', new THREE.Float32BufferAttribute(wingPos, 3)), {
+      color: (x, y, z, out) => out.setScalar(Math.abs(x) < 0.16 ? 0.55 : 1.0), wind: (x) => Math.abs(x) * 1.6,
+    }),
+    part(new THREE.CapsuleGeometry(0.025, 0.24, 2, 6).rotateX(Math.PI / 2), { color: '#3a3040', smooth: true }),
   ]);
   const bfMat = flapMaterial(veil, 22.0);
   const BF = 12;
@@ -125,7 +132,7 @@ export function createLife({ island, veil, scene, quality }) {
   return {
     group, gulls, butterflies: bflies, fireflies,
     setViewport(heightPx, fovDeg) { ffU.uScale.value = heightPx / (2 * Math.tan((fovDeg * Math.PI) / 360)); },
-    update(dt, t, focus, night) {
+    update(dt, t, focus, night, hidden = false) {
       // Möwen kreisen
       for (let i = 0; i < GULLS; i++) {
         const g = gullData[i];
@@ -142,7 +149,7 @@ export function createLife({ island, veil, scene, quality }) {
       gulls.visible = night < 0.6;
       // Schmetterlinge um den Spieler (nur tagsüber, nicht im Schleier)
       const day = 1 - night;
-      const showBf = day > 0.5 && focus;
+      const showBf = day > 0.5 && focus && !hidden;
       bflies.visible = !!showBf;
       if (showBf) {
         for (let i = 0; i < BF; i++) {
@@ -154,11 +161,12 @@ export function createLife({ island, veil, scene, quality }) {
           if (Math.hypot(b.ox, b.oz) > 18) { b.ox *= 0.5; b.oz *= 0.5; }
           const gy = island.getHeight(x, z);
           const vis = gy > 0.5 && veil.amountAt(x, z) < 0.5 ? 1 : 0;
-          const y = Math.max(gy, 0) + 0.8 + Math.sin(tt * 2.3) * 0.5;
+          // nie unter 1,2 m (sonst liegen sie „am Boden herum“), leicht geneigt in Flugrichtung
+          const y = Math.max(gy, 0) + 1.7 + Math.sin(tt * 2.3) * 0.45;
           const yaw = Math.atan2(Math.cos(tt * 0.7) * 3.5, -Math.sin(tt * 0.6) * 3);
-          e.set(0, yaw, 0, 'YXZ');
+          e.set(0.25, yaw, Math.sin(tt * 1.3) * 0.2, 'YXZ');
           q.setFromEuler(e);
-          m4.compose(v.set(x, y, z), q, one.setScalar(vis * 0.6));
+          m4.compose(v.set(x, y, z), q, one.setScalar(vis * 0.4));
           bflies.setMatrixAt(i, m4);
           one.setScalar(1);
         }

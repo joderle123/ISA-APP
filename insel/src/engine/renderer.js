@@ -100,9 +100,11 @@ const OUTLINE_SHADER = {
       float d2 = abs(dl + dr - 2.0 * dc) + abs(du + dd - 2.0 * dc);
       float d1 = abs(dr - dl) + abs(du - dd);
       float crease = d2 / (d1 * 0.35 + dc * 0.012 + 0.02);
-      edge = max(edge, smoothstep(1.2, 2.4, crease) * 0.65);
+      edge = max(edge, smoothstep(1.5, 2.8, crease) * 0.65);
       float fade = 1.0 - smoothstep(60.0, 110.0, dc);
       edge *= fade * uStrength;
+      // Wolken, Rauch und Gewitterturm schreiben Alpha < 0.995 (Marker): keine Kontur (§5.2 – keine Ballon-Ränder)
+      edge *= step(0.995, c.a);
       float l = dot(c.rgb, vec3(0.299, 0.587, 0.114));
       vec3 oc = max(mix(vec3(l), c.rgb, 1.25), vec3(0.0)) * 0.12;
       oc = max(oc, vec3(0.0025));

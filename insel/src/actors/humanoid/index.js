@@ -18,7 +18,7 @@ import { merge } from './geo.js';
 import {
   M, SKIN_TONES, HAIR_COLORS, EYE_COLORS, HAIR_STYLES, BROW_STYLES, GLASSES, HEARING_AIDS, PROSTHESES, HEAD_ITEMS, TOP_STYLES,
   BOTTOM_STYLES, SHOE_STYLES, PATTERNS, MASKS, BACK_ITEMS, ACCESSORIES, CLOTH_COLORS, clamp01, buildWidth, heightScale, getMaterial,
-  getGlassMaterial, getOutlineMaterial, attachHull, detachHull, figureTier, HULL_PX, HULL_PARTS, hasDOM, hash01, setDefaultTier, setFigureRim,
+  getGlassMaterial, getOutlineMaterial, attachHull, detachHull, figureTier, HULL_PX, HULL_PARTS, HULL_FAR, hasDOM, hash01, setDefaultTier, setFigureRim,
 } from './base.js';
 import { buildHead, buildBrow, buildMouth, buildLids, buildLenses, buildHairTail, mouthAnchor } from './head.js';
 import { buildTorso, buildPelvis, buildThigh, buildShin, buildUpperArm, buildForearm, buildHand } from './body.js';
@@ -196,7 +196,7 @@ export function createHumanoid(config = {}, opts = {}) {
   }
 
   const meshes = {};
-  let hullPx = 0, hullMat = null, hullMatHand = null;
+  let hullPx = 0, hullMat = null, hullMatHand = null, hullsNear = true;
   function setupHulls() {
     hullPx = (HULL_PX[tier] || HULL_PX.high)[detail] || 0;
     hullMat = hullPx > 0 ? getOutlineMaterial(veil, hullPx) : null;
@@ -235,6 +235,7 @@ export function createHumanoid(config = {}, opts = {}) {
   const hands = { L: {}, R: {} };
   let hairSwing = null, packSwing = null;
   function build() {
+    hullsNear = true;   // neue Hüllen sind sichtbar; der nächste update() blendet sie nach Abstand wieder aus
     placeJoints();
     setupHulls();
     const W = buildWidth(cfg.build);
@@ -349,7 +350,7 @@ export function createHumanoid(config = {}, opts = {}) {
       m.quaternion.copy(A.q).multiply(_qz.setFromAxisAngle(_Z, s * (0.05 - exprCur.brows * 0.42)));
     }
     const mo = clamp(exprCur.mouth, -1, 1);
-    const kind = exprCur.open > 0.5 ? 'open' : mo > 0.3 ? 'smile' : mo < -0.3 ? 'frown' : 'neutral';
+    const kind = exprCur.open > 0.35 ? 'open' : mo > 0.35 ? 'smile' : mo < -0.35 ? 'frown' : 'neutral';
     for (const [k2, m] of Object.entries(face.mouths)) {
       m.visible = k2 === kind;
       if (k2 === 'open') m.scale.set(0.75 + exprCur.open * 0.35 + Math.max(0, mo) * 0.3, 0.7 + exprCur.open * 0.4, 1);
@@ -439,6 +440,11 @@ export function createHumanoid(config = {}, opts = {}) {
     stopEmote() { if (emote) { const e = emote; emote = null; blend = 0; cur.body.y = ((cur.body.y + Math.PI) % (Math.PI * 2) + Math.PI * 2) % (Math.PI * 2) - Math.PI; e.resolve({ done: false, cancelled: true }); } },
     update(dt, camera) {
       refreshTier();
+      // Hüllen nur nahe der Kamera (§13): weiter weg trägt die Post-Kontur die Silhouette
+      if (camera) {
+        const on = group.position.distanceTo(camera.position) < (HULL_FAR[tier] || 40);
+        if (on !== hullsNear) { hullsNear = on; group.traverse((o) => { if (o.isMesh && o.name === 'hull') o.visible = on; }); }
+      }
       animT += dt;
       blend = Math.min(1, blend + dt * 5);
       const motion = sensor.update(dt);

@@ -550,6 +550,7 @@ Flächenstruktur), Konturen bei 0.64 px praktisch unsichtbar, Gras als dunkle Sp
   ein Glasrohr, nachts auf 30 % gedämpft (vorher eine orangefarbene Vollsäule vor dem Nachthimmel).
 - **Offen (nicht im WP Rendering):** Laternenpfähle `#2f2c3a` (Albedo 0.03 linear) lesen sich in der Toon-Rampe als
   Schwarz – Palette in `props/kit/builders.js` Richtung Schiefer `#3F4460` (§2.2) ändern; Namensschilder (§11.3).
+  *(Laternen erledigt im WP Art, §19; Namensschilder weiter offen – NPC-Team.)*
 
 ## 17. Stand der Umsetzung – Figuren (WP Figuren, 27.09.)
 
@@ -576,3 +577,78 @@ Umgesetzt in `src/styles.css`, `src/shell.html`, `src/ui/{hud,kraftrad,haltring,
 - **Nicht angefasst:** Namensschilder (`actors/humanoid/nametag.js`, bereits nach §11.3 im WP Figuren), Gesprächs-Kamera (§12), Systeme unter `src/systems/**`.
 - **Abnahme-Set:** `tests/ui-shots.mjs` → `shots/art/ui-nachher/` (u00–u24), Vorher-Stand in `shots/art/ui-vorher/`.
 
+
+## 19. Stand der Umsetzung – Art-Direction-Fixes (WP Art, 27.09.)
+
+Grundlage: Verdikt „sieht noch nicht hochwertig genug aus“ und die priorisierte Lückenliste des Art-Directors (Bilder
+`shots/art/a01–a25, b00–b42`). Abnahme-Set (mittel, 1180×820): `shots/art/final/` (Hafen Tag/Platz/Nacht, Strand nach der
+Farbwelle, Dschungel grau/befreit, Klippen im Gewitter, Vulkan, Figuren-Aufstellung, Gespräch, Titel quer/hoch), Vorher-Stand
+derselben Ansichten in `shots/art/vor/`. Skripte: `scratchpad/final-shots.mjs`, `scratchpad/art-quick2.mjs` (Kontrollbilder).
+
+- **§9.2 Häuser (Prio 1):** `props/kit/gebaeude.js` – `haus(o, K)` in drei Größen S/M/L (Steinsockel 0,4 m, 1,6 m in den Hang
+  gezogen; Planken-Wände als Flächenfarbe alle 0,35 m ±4 %, oben 5 % breiter; Giebel-Prismen; Satteldach 38° mit 0,6 m
+  Überstand, 0,25 m dick, drei Ziegelbänder `#C6553B/#B44A33/#D46A4A` oder Schiefer, Unterseite Holz, First-Kappe;
+  gewölbte Tür `#6E4A30` mit Rahmen, Beschlägen, Goldknauf und Stufe; Fenster mit Leisten-Laibung, zurückgesetzter Scheibe,
+  Sprossen, Läden in Akzentfarbe, Blumenkasten; Schornstein; Türlaterne mit heller Kante; Markise (Markt); L zweistöckig mit
+  Stockwerksband). Dazu `kiosk`, `wimpelkette` (Schnur + Dreiecksflaggen zwischen Weltpunkten), `kisten`, `fass`, `boje`,
+  `netz`, `ruderboot`, `bank`, `blumenkuebel`, `brunnen`, `pflaster` (Kopfsteinscheibe/-ring, folgt dem Gelände, Farbe je
+  1,4-m-Zelle, ohne Schattenwurf), `fels`. Neue `geom.part`-Option `faceColor` (Farbe je Dreieck aus dem Schwerpunkt: klare
+  Planken-, Ziegel- und Steinreihen). Fensterscheiben über ein geteiltes Material `materials.window()` (tags Glas, nachts
+  emissiv `#FFE7A0` × 1,7 → Bloom; `materials.setNight()` aus dem Welt-Plugin). Budget: S 1 564 · M 2 276 · L 2 728 Dreiecke.
+  **Layout** in `world/layout.js` (`BUILDINGS`): 10 Häuser um den Dorfplatz und an der Uferstraße (Pads haus1–3, Fischerhütten
+  am Ufer), Kiosk am Snackstand, 5 Markt-Häuser mit Markisen an den Terrassen; die Vegetation spart die Grundrisse aus
+  (`vegetation.js blocked`). `world/plugin.js` backt je Zone (ein Mesh je Material), setzt Wimpelketten zwischen Laternen und
+  Häusern, Pflaster um Dorfplatz und Signalfeuer, Brunnen, Bänke, Blumenkübel, Kisten/Fässer/Netz/Bojen am Steg, Ruderboot
+  und Bojen in der Bucht, Kraterrand-Felsen, Markt-Kram; Marktstände sind gefüllt (Tischdecke, zwei Reihen Kisten mit
+  Früchten, Säcke, Krüge, Girlande).
+- **§2.4/§10.3 Schleier (Prio 2):** `veil.js lumoApplyVeil` mappt die Luminanz mit `pow(l, 0.7)` und Kontrast × 1,15 (der
+  dunkle Stopp `#2E2A44` wird erreicht, Rampen-Bänder bleiben lesbar), Duotone nur zu 0,8 eingemischt (Rest = kühl
+  „eingefrorene“ Eigenfarbe). Höhennebel im Schleier 0,35 (global 0,08), Schleier-Dunst 0,4. Kantenlicht berechnet den
+  Schleierwert einmal je Fragment (`gLumoVeilReady`), dämpft Rim (`#B9B3CC` × 0,25) und Transluzenz (× 0,2) im Schleier;
+  Grasspitzen werden im Schleier auf Boden × 1,05 gedeckelt (`vGrassTip`), Schilf heller (`#86a84e`). Nebelwand
+  (`veilfx.js`): 9 m hoch, Alpha 0,62 linear nach oben, heller Kamm vor dem dunklen Schleierboden, an der Zylinder-
+  Silhouette weich ausgeblendet (keine „Glasplatte“). `gLumoVeilCap`: Vulkan-
+  Kegel (> 28 m) und Rauch bleiben zur Hälfte farbig (Landmarken im Schleier, §5.3).
+- **§12 Spawns, Vista, Gespräch (Prio 4/5):** `island.ZONES[].spawn.yaw` blickt auf die Landmarke (Vulkan-Spawn am
+  Kraterrand `kraterRand`, Leuchtturm-Spawn zeigt den Turm, Klippen-Spawn 6 m versetzt zum Gewitterturm, Dschungel →
+  Wasserfall, Moor → Steinriese); `game.debug.teleport` nutzt ihn. `camera.js`: `pine` in OCCLUDERS, Vista beim Zonenwechsel
+  zu Fuß (1,2 s, +1,5 m, FOV −4°), FOV 50° quer / 62° hoch (auch `game.js` Kamera). Gesprächskamera: Spielfigur links als
+  ¾-Rückenansicht, Kamera 0,62 m über Kopfhöhe, Blick leicht angehoben, FOV −8°; die Seite wird beim Start so gewählt, dass
+  das Gesicht des Gegenübers zur Kamera zeigt (`opts.side` ist nur ein Hinweis, `strict: true` erzwingt). `bubbles.js
+  project()` klemmt die Blase mit ihrer halben Breite + 16 px (nicht mehr abgeschnitten).
+- **§5.5 Nacht (Prio 6):** `world/lights.js` Lichtpool – drei Punktlichter (mittel/hoch) folgen den drei nächsten
+  brennenden Laternen/Feuern/Türlaternen (warm `#FFB070`, Reichweite 7 m, Feuer 9,5 m mit Flackern, ohne Schatten, weiche
+  Überblendung; `game.world.lightPool`, Quellen sammelt das Welt-Plugin jede Sekunde). Schattenwurf nie schwarz:
+  `sh = mix(0.15, 1.0, …)` in Lambert- und Toon-Rampe (§3.6 Deckkraft 0,85); nachts `shadow.radius` 3.
+- **§5.2 Wolken/Rauch (Prio 7):** Wolken, Gewitterturm und Rauch schreiben Marker-Alpha < 0,995 (CustomBlending One/Zero,
+  weil three bei undurchsichtigen Materialien Alpha 1,0 erzwingt); der Kontur-Pass lässt solche Pixel aus (keine
+  Ballon-Ränder), Knick-Schwelle 1,5–2,8. Rauchballen (1, 16, 12), Rampe soft 0,2 mit Sonnenseite, Fresnel-Rand (Alpha 0,9 →
+  0). Gewitterturm: weniger, größere Ballen, Kamm `#9AA2CC` ab y 38.
+- **§2.2 Vulkan (Prio 8):** Basalt in drei Tönen (Asche → Basalt → Obsidian `#2B2430`), Gesteinsschichten am Kegel kräftiger
+  bis zur Spitze; Lava-Adern als schmale ridged-Risse im Fragment-Shader (`aGlow` ist nur noch die Maske) mit dunklem Saum
+  und Glühen > 1,0 (Bloom); 14 Kraterrand-Felsen (`fels`).
+- **§5.4 Wasser (Prio 9):** Funkeln = Glanz × weiches wanderndes Rausch-Tor (keine 0,77-m-Kacheln), nur bis 140 m;
+  Gezeitenbecken glühen zweitonig (Mitte ruhig, Rand heller, Randsaum).
+- **§7 Boden (Prio 10):** Wiesenflecken ~7 m mit 0,95/0,97/0,93 (statt 0,87/0,93/0,82 bei 3 m), Halmstriche nur bis 15 m,
+  Weg mit sichtbarem 0,4-m-Saum (`vSurf.z`-Band, `#BF915A`); Dorfplatz mit Pflaster, Brunnen, Bänken, Kübeln.
+- **§6 Tiere/Kronen (Prio 11/14):** Schmetterlinge als abgerundete zweitonige Flügelkarten, 0,4 groß, nie unter 1,2 m, im
+  Gespräch ausgeblendet (`life.update(…, hidden)`). Kronen: Kugeln (r, 12, 9), erste Lobe 1,3×, Randloben 0,3 m nach innen
+  (eine Silhouette), dunkles Unterband; Büsche (9, 7).
+- **§8.2 Ausdrücke (Prio 12):** Mundbreite 0,052, Lippenlinie `#7A2E3A` 0,006 dick, Schmollen mit Mundwinkeln, offener Mund
+  größer; Presets schalten Mundform ab Stärke 0,35; Fingertrennlinien in Konturfarbe (Handrücken).
+- **§2.2 Laternen (Prio 13):** Pfahl Holz `#7A4E2E`, Beschläge/Gehäuse Schiefer `#3F4460`, helle Kante `#C9CFE8` am
+  Gehäuse (auch Steglampe).
+- **§11.7 Titelbild (Prio 15):** Generator `scratchpad/keyart-gen2.mjs` schreibt die Ebenen in `styles.css`: Wedel als
+  glatte, sich verjüngende Fiederblätter mit hängenden Spitzen (weiche Kerben, Bezier-Umriss), Sonnenpfad als unregelmäßige
+  Lichtstreifen mit Lücken, neue Ebene `.boot-clouds` (4 Cumulus in Hof-Farbe, langsame Drift), ferne Insel weicher.
+- **§13 Leistung (Prio 16):** Hüllen auf „mittel“ nur an silhouettenbildenden Teilen (`HULL_PARTS.medium`: Kopf, Haar,
+  Rumpf, Beine, Unterarme – Oberarme/Becken/Rucksack fängt die Post-Kontur), Pflaster ohne Schattenwurf, Backen je Zone.
+  Hüllen zudem nur bis 26 m Kamera-Abstand (`HULL_FAR`, mittel; weiter weg trägt die Post-Kontur). Zensus
+  (`scratchpad/census2.mjs`, mittel): Hafen 398 → 370 Draw-Calls (118 Figuren-Objekte bei 12 animierten, 75 Vegetation mit
+  48 Schattenwerfern, 32 Spielfigur, 21 Requisiten), Markt 514 → 318. `tests/perf.mjs` (mittel, vier Blickrichtungen, vor der
+  Hüllen-Distanz): hafen 387 · strand 321 · markt 462 · übrige Zonen 206–273. Der Rest über dem Ziel (≤ 320) liegt bei den
+  12 animierten Figuren (je ≈ 9 Teile + Hüllen) – Stellschraube `MAX_ANIMATED` (NPC-Team) oder Impostoren ab 25 m.
+- **Offen (NPC-Team, `src/systems/npc/**`, Prio 3):** Namensschilder auf `h.setNameTag()`/`actors/humanoid/nametag.js`
+  umstellen (Bildschirmgröße geklemmt), Gesprächspartner ohne Schild, höchstens 6 Schilder nach Abstand; Dorfleute mit
+  Mindestabstand 2,5 m an Requisiten verteilen (Bänke, Brunnen, Kiosk, Steg-Kisten sind jetzt vorhanden); `npc.face` auf
+  einen Punkt zwischen Kamera und Spieler; Impostoren-Hüllen zusammenlegen.

@@ -109,8 +109,11 @@ void main() {
   // Sonnenpfad + Funkeln (harte Punkte)
   vec3 Hh = normalize(uSunDir + V);
   float spec = pow(max(dot(N, Hh), 0.0), 220.0);
-  float tw = step(0.78, hash12(floor(vWorld.xz * 1.3) + floor(uTime * 5.0)));
-  col += uSunColor * (spec * 0.8 + spec * tw * 1.6) * (1.0 - uNight * 0.6);
+  // Funkeln: Glanz × weiches, wanderndes Rausch-Tor (keine 0,77-m-Kacheln, §5.4); nur nahe der Kamera
+  float twA = vnoise(vWorld.xz * 0.9 + vec2(uTime * 0.35, -uTime * 0.22));
+  float twB = vnoise(vWorld.xz * 2.3 - vec2(uTime * 0.5, uTime * 0.3));
+  float tw = smoothstep(0.5, 0.78, twA) * smoothstep(0.55, 0.85, twB) * (1.0 - smoothstep(60.0, 140.0, dist));
+  col += uSunColor * (spec * 0.7 + spec * tw * 2.2) * (1.0 - uNight * 0.6);
   col += uSunColor * pow(max(dot(reflect(-V, N), uSunDir), 0.0), 24.0) * 0.16;
 
   // Schaum als klare Formen: Küstenband 0.6–1.2 m mit Löchern, Wellenlinien mit step, Kämme draußen
@@ -260,8 +263,10 @@ export function createWater({ island, veil, quality, scene }) {
         col = mix(col, vec3(1.0) * (uAmbient + uSunColor * 0.5), foam);
         col = mix(col, uAmbient * 1.4, fres * 0.35);
         col = lumoApplyVeil(col, vWorld);
-        // Glühen (leuchtende Gezeitenbecken: nachts stärker, im Schleier gedämpft)
-        col += uGlow * (1.4 + uNight * 1.2) * (1.0 - gLumoVeil * 0.8) * (0.7 + 0.3 * rip);
+        // Glühen (leuchtende Gezeitenbecken, §5.4): zwei Töne – Mitte ruhig, zum Rand hin heller, plus heller Randsaum –
+        // statt einem flächigen Neon-Block; nachts stärker, im Schleier gedämpft
+        float glowK = mix(0.45, 1.0, smoothstep(0.3, 0.85, r)) * (0.75 + 0.25 * rip) + smoothstep(0.86, 0.95, r) * 0.9 * (1.0 - smoothstep(0.96, 1.0, r));
+        col += uGlow * (1.4 + uNight * 1.2) * (1.0 - gLumoVeil * 0.8) * glowK;
         gl_FragColor = vec4(col, uAlpha);
         #include <tonemapping_fragment>
         #include <colorspace_fragment>

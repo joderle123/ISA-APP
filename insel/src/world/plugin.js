@@ -49,7 +49,7 @@ export default {
     // ---- Dekor für M0–M3 (Requisiten je Zone; Inhalts-WPs dürfen einzelne Stücke entfernen) ----
     const decorList = new Map();
     const dec = (zone, id, type, opts) => { const h = props.spawn(type, { id: `dekor-${id}`, ...opts }); h.zone = zone; decorList.set(h.id, h); return h; };
-    const bake = (zone, id, items) => { const h = props.bake(items, { id: `dekor-${id}` }); h.zone = zone; decorList.set(h.id, h); return h; };
+    const bake = (zone, id, items, opts = {}) => { const h = props.bake(items, { id: `dekor-${id}`, ...opts }); h.zone = zone; decorList.set(h.id, h); return h; };
     const S = island.SITES;
     // Hafen: vier dunkle Signalfeuer um den Dorfplatz, Laternenreihe vom Steg zum Platz, Papierlaternen am Baumhaus
     bake('hafen', 'signalfeuer', [[18, 118], [-10, 120], [16, 100], [-8, 100]].map(([x, z]) => ({ type: 'signalfeuer', x, z, lit: false })));
@@ -89,7 +89,7 @@ export default {
     bake('hafen', 'pflaster', [
       { type: 'pflaster', x: 0, z: 0, y: 0, onGround: false, collide: false, cx: 1, cz: 111, r: 6.6 },
       ...[[18, 118], [-10, 120], [16, 100], [-8, 100]].map(([x, z]) => ({ type: 'pflaster', x: 0, z: 0, y: 0, onGround: false, collide: false, cx: x, cz: z, r: 3.3, r0: 1.75 })),
-    ]);
+    ], { castShadow: false });
     const faceTo = (x, z, tx, tz) => Math.atan2(tx - x, tz - z);
     bake('hafen', 'platz', [
       { type: 'brunnen', x: -2, z: 112.5, yaw: 0.4 },
@@ -121,7 +121,7 @@ export default {
     // Markt: vier gefüllte Stände um den Platz, Laternen, Pflaster, Wimpelketten zwischen den Häusern, Kisten und Kübel
     bake('markt', 'staende', [[-118, 27, 0], [-131, 14, Math.PI / 2], [-118, 1, Math.PI], [-105, 14, -Math.PI / 2]].map(([x, z, yaw], i) => ({ type: 'marktstand', x, z, yaw, colors: [['#D94A3A', '#FFF3D6'], ['#4F88C8', '#FFF3D6'], ['#FFD23F', '#5b3a8a'], ['#2FB8A8', '#FFF3D6']][i] })));
     bake('markt', 'laternen', [[-124, 22], [-112, 22], [-124, 6], [-112, 6]].map(([x, z]) => ({ type: 'laterne', x, z, variant: 'pfahl', lit: true })));
-    bake('markt', 'pflaster', [{ type: 'pflaster', x: 0, z: 0, y: 0, onGround: false, collide: false, cx: -118, cz: 14, r: 9.5, color: '#D2B48C' }]);
+    bake('markt', 'pflaster', [{ type: 'pflaster', x: 0, z: 0, y: 0, onGround: false, collide: false, cx: -118, cz: 14, r: 9.5, color: '#D2B48C' }], { castShadow: false });
     bake('markt', 'wimpel', [
       chain('markt', lampTop(-124, 22), lampTop(-112, 22)), chain('markt', lampTop(-124, 6), lampTop(-112, 6)),
       chain('markt', eaveTo('markt-1', -118, 33), eaveTo('markt-4', -132, 26)), chain('markt', eaveTo('markt-3', -100, 14), eaveTo('markt-5', -104, 2)),
@@ -132,6 +132,18 @@ export default {
       ...[[-125.4, 21.4], [-110.6, 21.4], [-125.4, 6.6], [-110.6, 6.6]].map(([x, z]) => ({ type: 'blumenkuebel', x, z })),
       ...[[-118, 8, Math.PI], [-124, 14, Math.PI / 2]].map(([x, z, yaw]) => ({ type: 'bank', x, z, yaw })),
     ]);
+    // Vulkan: Kraterrand-Felsen (Obsidian, drei Töne) außen um den Kamm, die Serpentine bleibt frei
+    {
+      const V = island.FEATURES.volcano;
+      const rocks = [];
+      for (let i = 0; i < 14; i++) {
+        const a = (i / 14) * Math.PI * 2 + 0.2, r = V.rimRadius + 1.6 + (i % 3) * 0.9;
+        const x = V.x + Math.cos(a) * r, z = V.z + Math.sin(a) * r;
+        if (island.pathWeight(x, z) > 0.2) continue;
+        rocks.push({ type: 'fels', x, z, yaw: i * 1.7, size: 1.1 + (i % 4) * 0.35, color: i % 2 ? '#3A3038' : '#4B3F3D' });
+      }
+      bake('vulkan', 'kraterfelsen', rocks);
+    }
     // Quellental: Laternen-Camp, Leuchtturm-Halbinsel: Laterne am Weg
     bake('vulkan', 'quellen-laternen', [[38, -14], [44, -27], [55, -26]].map(([x, z]) => ({ type: 'laterne', x, z, variant: 'pfahl', lit: true })));
     // Glimmerwolke: sieben schwebende Inseln über der Nordküste (sichtbar, noch unerreichbar) mit Kugeln
@@ -176,6 +188,24 @@ export default {
       // Grisel nur nachts als Silhouette
       gr.hidden = world.sky.night <= 0.45; gr.group.visible = !gr.hidden;
     }, { order: -11 });
+    // ---- Lichtpool (§5.5): brennende Laternen/Feuer, Türlaternen der Häuser, Steglampe → drei wandernde Punktlichter ----
+    const lightPool = world.lightPool;
+    const _lp = new (game.THREE.Vector3)();
+    function collectEmitters() {
+      const out = [];
+      const dock = island.FEATURES.dock;
+      out.push({ x: dock.x - dock.width / 2 + 0.3, y: dock.deck + 2.7, z: dock.z0 + 0.2, i: 5, r: 7 });
+      const each = (h) => {
+        if (h.type === 'laterne' && h.lit) { h.group.getWorldPosition(_lp); out.push({ x: _lp.x, y: _lp.y + (h.kind === 'pfahl' ? 2.35 : h.kind === 'papier' ? 2.6 : 2.2), z: _lp.z, i: 6, r: 7, color: h.kind === 'papier' && h.opts && h.opts.color ? h.opts.color : '#ffb070' }); }
+        else if (h.type === 'signalfeuer' && h.lit) { h.group.getWorldPosition(_lp); out.push({ x: _lp.x, y: _lp.y + 1.3, z: _lp.z, i: 11, r: 9.5, color: '#ffa050', flicker: true }); }
+        else if ((h.type === 'haus' || h.type === 'kiosk') && h.lampWorld) { h.lampWorld(_lp); out.push({ x: _lp.x, y: _lp.y, z: _lp.z, i: 5, r: 6.5 }); }
+      };
+      for (const h of props.list()) { if (h.type === 'bake') h.handles.forEach(each); else each(h); }
+      return out;
+    }
+    let emitT = 0.5;
+    if (lightPool) game.addUpdate((dt) => { emitT += dt; if (emitT > 1) { emitT = 0; lightPool.setEmitters(scenes.isInterior ? [] : collectEmitters()); } }, { order: -11 });
+
     const decor = {
       list: () => [...decorList.values()],
       get: (id) => decorList.get(id.startsWith('dekor-') ? id : 'dekor-' + id) || null,

@@ -244,6 +244,12 @@ export function buildHand(cfg, side, kind = 'open', W = buildWidth(cfg.build)) {
     P.push(finger(u * (stop ? 0.0148 : 0.0158) * W, -0.064, 0.001, lens[i], 0.0098, [stop ? 0 : 0.22, 0, stop ? 0 : u * 0.06], stop ? 0 : 0.5));
   }
   P.push(finger(-s * 0.03 * W, -0.028, 0.008, 0.042, 0.0108, [stop ? 0.1 : -0.45, 0, -s * (stop ? 0.45 : 0.85)]));
+  // Fingertrennlinien (Handrücken) in Konturfarbe – sonst lesen sich die Finger aus 3 m als Klumpen (§4.4 Innenlinien)
+  const ink = darker(skin, 0.42);
+  for (let i = 0; i < 3; i++) {
+    const u = i - 1;
+    P.push(fig(box(0.0032, 0.03, 0.006), { pos: [u * (stop ? 0.0148 : 0.0158) * W, -0.076, 0.0092], rot: [0, 0, stop ? 0 : u * 0.06], smooth: false, flag: FLAG.flat, hull: 0, color: ink }));
+  }
   if (cfg.vitiligo && !side) P.push(fig(new THREE.CircleGeometry(0.011, 8), { pos: [0, -0.04, 0.0165], flag, hull: 0, color: mixHex(skin, '#f8ede2', 0.7) }));
   return merge(P);
 }

@@ -67,6 +67,7 @@ export function haus(o = {}, K) {
   const ridgeCol = slate ? '#2C3049' : '#8F3A2A';
   const seed = Math.floor(R.float(0, 1000));
   const P = [], W = [], D = [], G = [];   // fest (base) · Fenster (window) · doppelseitig · leuchtend (glow)
+  const lampLocal = new THREE.Vector3();
   const yT = SOCLE_TOP + H;                                  // Oberkante Wand
   const hw = B / 2 + 0.6;                                    // halbe Dachbreite mit Überstand
   const gableH = (B / 2) * Math.tan(ROOF_A) * 1.05;          // Giebelhöhe über der (oben breiteren) Wand
@@ -132,6 +133,7 @@ export function haus(o = {}, K) {
     P.push(onFace(new THREE.BoxGeometry(0.24, 0.02, 0.24), 'front', B, T, [lu, lv + 0.1, w0 + 0.42], { opts: { color: METALL_H } }));
     P.push(onFace(new THREE.BoxGeometry(0.26, 0.03, 0.26), 'front', B, T, [lu, lv - 0.2, w0 + 0.42], { opts: { color: METALL } }));
     G.push(onFace(new THREE.BoxGeometry(0.2, 0.28, 0.2), 'front', B, T, [lu, lv - 0.05, w0 + 0.42], { opts: { color: '#ffe08a' } }));
+    lampLocal.set(lu, lv - 0.05, T / 2 + w0 + 0.42);
   }
   // Fenster: Rahmen aus vier Leisten (Laibung), zurückgesetzte Scheibe, Sprossen, Läden, Blumenkasten
   const lowerV = SOCLE_TOP + 1.55, upperV = SOCLE_TOP + 3.3 + 1.3;
@@ -200,6 +202,8 @@ export function haus(o = {}, K) {
     far: 260,
     // Traufpunkt in Haus-Koordinaten (für Wimpelketten): face + u
     eave(face, u = 0) { const p = facePlace(face, B, T, [u, yE + 0.1, 0.55]).pos; return new THREE.Vector3(p[0], p[1], p[2]); },
+    // Türlaterne in Weltkoordinaten (Lichtpool)
+    lampWorld(out = new THREE.Vector3()) { g.updateMatrixWorld(true); return g.localToWorld(out.copy(lampLocal)); },
     collide(colliders, x, z, y, yaw = 0) { return colliders.addBox(x, z, B / 2 + 0.25, T / 2 + 0.25, yaw, { group: 'props', tag: 'haus' }); },
   };
 }
@@ -241,6 +245,7 @@ export function kiosk(o = {}, K) {
   const gl = mesh(merge(G), M.glow('#ffe08a', { intensity: 0.9 })); gl.castShadow = false; g.add(gl);
   return {
     group: g, type: 'kiosk', far: 220,
+    lampWorld(out = new THREE.Vector3()) { g.updateMatrixWorld(true); return g.localToWorld(out.set(1.1, 2.29, 1.7)); },
     collide(colliders, x, z, y, yaw = 0) { return colliders.addBox(x, z, 1.55, 1.25, yaw, { group: 'props', tag: 'kiosk' }); },
   };
 }
@@ -441,6 +446,18 @@ export function brunnen(o = {}, K) {
   g.add(mesh(merge(P), M.base));
   return { group: g, type: 'brunnen', far: 200, collide(colliders, x, z) { return colliders.addCircle(x, z, 1.2, { group: 'props', tag: 'brunnen' }); } };
 }
+// Fels: kantiger Block in drei Tönen (Kraterrand-Felsen, Klippen); o.size, o.color (Basalt-Grundton)
+export function fels(o = {}, K) {
+  const { M, R } = K;
+  const g = new THREE.Group();
+  const sz = o.size || 1.4, seed = 800 + Math.floor(R.float(0, 200));
+  const base = col(o.color || '#4B3F3D'), light = base.clone().multiplyScalar(1.35), dark = base.clone().multiplyScalar(0.72);
+  const P = [];
+  P.push(part(new THREE.DodecahedronGeometry(sz * 0.6, 0), { pos: [0, sz * 0.32, 0], scale: [1.25, 0.8, 1.05], jitter: sz * 0.22, seed, faceColor: (cx, cy, cz, out, f) => out.copy(cy > sz * 0.42 ? light : cy < sz * 0.18 ? dark : base).multiplyScalar(0.96 + qhash(f, seed, 1, 2) * 0.08) }));
+  P.push(part(new THREE.DodecahedronGeometry(sz * 0.36, 0), { pos: [sz * 0.5, sz * 0.2, sz * 0.25], scale: [1.1, 0.75, 1], jitter: sz * 0.12, seed: seed + 3, faceColor: (cx, cy, cz, out, f) => out.copy(cy > sz * 0.28 ? light : base).multiplyScalar(0.96 + qhash(f, seed + 5, 1, 2) * 0.08) }));
+  g.add(mesh(merge(P), M.base));
+  return { group: g, type: 'fels', far: 200, collide(colliders, x, z) { return colliders.addCircle(x, z, sz * 0.7, { group: 'props', tag: 'fels' }); } };
+}
 // Pflaster: Kopfsteinscheibe/-ring auf dem Gelände (Weltkoordinaten o.cx/o.cz, Gruppe bei 0/0/0 mit onGround:false),
 // Ecken folgen der Insel; o.r Außenradius, o.r0 Innenradius (Ring um ein Feuer), o.color Grundton
 export function pflaster(o = {}, K) {
@@ -466,11 +483,20 @@ export function pflaster(o = {}, K) {
   }
   const geo = new THREE.BufferGeometry();
   geo.setAttribute('position', new THREE.Float32BufferAttribute(pos, 3));
+  // Flächenfarbe je 1,4-m-Zelle (nicht je Dreieck – sonst lesen sich die dünnen Fächer-Dreiecke als Speichen), ±3 %,
+  // dazu ein schmaler, etwas dunklerer Randstein
   const base = o.color || '#C9B08C';
-  const outer = col(base).multiplyScalar(0.82);
+  const kerb = col(base).multiplyScalar(0.9);
   const gp = part(geo, {
-    faceColor: (x, y, z, out, f) => { const d = Math.hypot(x - cx, z - cz); const h = qhash(f, seed, 5, 9); out.copy(d > r - 0.5 || (r0 && d < r0 + 0.45) ? outer : col(base).multiplyScalar(h < 0.3 ? 0.9 : h > 0.9 ? 1.06 : 1.0)); },
+    faceColor: (x, y, z, out) => {
+      const d = Math.hypot(x - cx, z - cz);
+      const h = qhash(Math.floor(x / 1.4), Math.floor(z / 1.4), seed, 9);
+      out.copy(d > r - 0.35 || (r0 && d < r0 + 0.35) ? kerb : col(base).multiplyScalar(0.97 + h * 0.06));
+    },
   });
+  // Normalen nach oben (ein Belag, keine Facetten in der Rampe), wirft keinen Schatten
+  const nrm = gp.attributes.normal.array;
+  for (let i = 0; i < nrm.length; i += 3) { nrm[i] = 0; nrm[i + 1] = 1; nrm[i + 2] = 0; }
   const m = mesh(gp, M.base);
   m.castShadow = false;
   g.add(m);

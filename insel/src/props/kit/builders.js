@@ -69,27 +69,34 @@ export function laterne(o = {}, K) {
   const color = o.color || (kind === 'papier' ? '#ff7a59' : '#ffe08a');
   const h = o.height !== undefined ? o.height : (kind === 'papier' ? 2.6 : 2.9);
   const P = [];
+  // Pfahl aus Holz (#7A4E2E, §2.2), Beschläge und Gehäuse Schiefer #3F4460 – #2f2c3a las sich in der Rampe als Schwarz
+  const SCHIEFER = '#3F4460', HOLZ = '#7A4E2E', KANTE = '#C9CFE8';
   if (kind === 'pfahl') {
-    P.push(part(new THREE.CylinderGeometry(0.06, 0.09, h, 5, 1), { pos: [0, h / 2, 0], color: '#2f2c3a' }));
-    P.push(part(new THREE.BoxGeometry(0.5, 0.06, 0.06), { pos: [0.22, h - 0.05, 0], color: '#2f2c3a' }));
-    P.push(part(new THREE.CylinderGeometry(0.02, 0.02, 0.25, 4, 1), { pos: [0.45, h - 0.18, 0], color: '#2f2c3a' }));
+    P.push(part(new THREE.CylinderGeometry(0.06, 0.09, h, 6, 1), { pos: [0, h / 2, 0], color: HOLZ }));
+    P.push(part(new THREE.CylinderGeometry(0.08, 0.08, 0.1, 6, 1), { pos: [0, h - 0.3, 0], color: SCHIEFER }));
+    P.push(part(new THREE.CylinderGeometry(0.11, 0.13, 0.12, 6, 1), { pos: [0, 0.06, 0], color: SCHIEFER }));
+    P.push(part(new THREE.BoxGeometry(0.5, 0.06, 0.06), { pos: [0.22, h - 0.05, 0], color: SCHIEFER }));
+    P.push(part(new THREE.BoxGeometry(0.06, 0.28, 0.05), { pos: [0.16, h - 0.2, 0], rot: [0, 0, 0.7], color: SCHIEFER }));
+    P.push(part(new THREE.CylinderGeometry(0.02, 0.02, 0.25, 4, 1), { pos: [0.45, h - 0.18, 0], color: SCHIEFER }));
   } else if (kind === 'haengend') {
-    P.push(part(new THREE.CylinderGeometry(0.02, 0.02, 0.3, 4, 1), { pos: [0, h + 0.15, 0], color: '#2f2c3a' }));
+    P.push(part(new THREE.CylinderGeometry(0.02, 0.02, 0.3, 4, 1), { pos: [0, h + 0.15, 0], color: SCHIEFER }));
   }
   const cx = kind === 'pfahl' ? 0.45 : 0, cy = kind === 'pfahl' ? h - 0.55 : h;
   if (kind === 'papier') {
-    P.push(part(new THREE.CylinderGeometry(0.02, 0.02, 0.4, 4, 1), { pos: [0, cy + 0.42, 0], color: '#2f2c3a' }));
+    P.push(part(new THREE.CylinderGeometry(0.02, 0.02, 0.4, 4, 1), { pos: [0, cy + 0.42, 0], color: SCHIEFER }));
     const paper = part(new THREE.SphereGeometry(0.34, 8, 6), { pos: [0, cy, 0], scale: [1, 1.15, 1], color: color, faceVar: 0.06 });
     g.add(mesh(merge(P), M.base));
     const lamp = mesh(paper, M.glow(color, { intensity: 0.75 }), !!o.dynamic);
     g.add(lamp);
     return finishLamp(g, lamp, o, 'papier');
   }
-  // Gehäuse: Rahmen + Dach + Scheibe
+  // Gehäuse: Rahmen + Dach mit heller Kante (Metall-Glanzpunkt) + Scheibe
   const F = [];
-  for (const [sx, sz] of [[-1, -1], [1, -1], [1, 1], [-1, 1]]) F.push(part(new THREE.BoxGeometry(0.04, 0.5, 0.04), { pos: [cx + sx * 0.15, cy, sz * 0.15], color: '#2f2c3a' }));
-  F.push(part(new THREE.ConeGeometry(0.28, 0.16, 4, 1), { pos: [cx, cy + 0.32, 0], rot: [0, Math.PI / 4, 0], color: '#2f2c3a' }));
-  F.push(part(new THREE.BoxGeometry(0.34, 0.04, 0.34), { pos: [cx, cy - 0.26, 0], color: '#2f2c3a' }));
+  for (const [sx, sz] of [[-1, -1], [1, -1], [1, 1], [-1, 1]]) F.push(part(new THREE.BoxGeometry(0.04, 0.5, 0.04), { pos: [cx + sx * 0.15, cy, sz * 0.15], color: SCHIEFER }));
+  F.push(part(new THREE.ConeGeometry(0.28, 0.16, 4, 1), { pos: [cx, cy + 0.32, 0], rot: [0, Math.PI / 4, 0], color: SCHIEFER }));
+  F.push(part(new THREE.BoxGeometry(0.36, 0.025, 0.36), { pos: [cx, cy + 0.235, 0], color: KANTE }));
+  F.push(part(new THREE.IcosahedronGeometry(0.035, 0), { pos: [cx, cy + 0.42, 0], color: KANTE }));
+  F.push(part(new THREE.BoxGeometry(0.34, 0.04, 0.34), { pos: [cx, cy - 0.26, 0], color: SCHIEFER }));
   P.push(...F);
   g.add(mesh(merge(P), M.base));
   const lamp = mesh(part(new THREE.BoxGeometry(0.26, 0.42, 0.26), { pos: [cx, cy, 0], color: color }), M.glow(color, { intensity: 0.9 }), !!o.dynamic);

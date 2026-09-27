@@ -122,7 +122,8 @@ export function createBubbles({ root, events, game, speech, audio, icon, lock })
     let x = (V.x * 0.5 + 0.5) * w, y = (-V.y * 0.5 + 0.5) * h;
     if (behind) { x = w / 2; y = h * 0.3; }
     const minY = Math.min(h - 220, (item.el.offsetHeight || 100) + 56);   // ganze Blase samt Namen im Bild (Gesprächs-Kamera)
-    x = Math.max(170, Math.min(w - 170, x)); y = Math.max(minY, Math.min(h - 220, y));
+    const hw = (item.el.offsetWidth || 340) / 2 + 16;                      // halbe Blasenbreite (bis 560 px breit) + Rand
+    x = Math.max(hw, Math.min(w - hw, x)); y = Math.max(minY, Math.min(h - 220, y));
     item.el.style.left = x.toFixed(0) + 'px';
     item.el.style.top = y.toFixed(0) + 'px';
     if (force) item.el.style.transition = 'none';

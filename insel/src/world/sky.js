@@ -172,37 +172,38 @@ function makeCloud(rnd) {
 function makeStormTower(rnd) {
   const parts = [];
   const dark = new THREE.Color('#4a4f74'), crest = new THREE.Color('#9aa2cc'), under = new THREE.Color('#33385a');
+  // Kamm #9AA2CC schon ab y 40 sichtbar, Unterseite dunkel – weniger, dafür größere Ballen (klare Silhouette)
   const colFn = (x, y, z, out) => {
-    const t = THREE.MathUtils.smoothstep(y, 34, 92);
+    const t = THREE.MathUtils.smoothstep(y, 38, 76);
     out.copy(dark).lerp(crest, t);
-    if (y < 44) out.lerp(under, THREE.MathUtils.smoothstep(44 - y, 0, 10) * 0.7);
+    if (y < 42) out.lerp(under, THREE.MathUtils.smoothstep(42 - y, 0, 9) * 0.7);
   };
-  const blob = (x, y, z, R, sx, sy, sz, seed) => parts.push(part(new THREE.SphereGeometry(R, 12, 9), {
+  const blob = (x, y, z, R, sx, sy, sz, seed) => parts.push(part(new THREE.SphereGeometry(R, 14, 10), {
     pos: [x, y, z], scale: [sx, sy, sz], smooth: true, color: colFn,
     deform: (v) => { if (v.y < -R * 0.45) v.y = -R * 0.45 - (v.y + R * 0.45) * 0.2; },
   }));
-  // Wolkenbasis: unregelmäßiger Rand aus mittelgroßen Ballen
-  for (let i = 0; i < 30; i++) {
-    const a = rnd() * Math.PI * 2, r = Math.sqrt(rnd()) * 44;
-    const R = 8 + rnd() * 5;
-    blob(Math.cos(a) * r, 38 + rnd() * 8 - r * 0.05, Math.sin(a) * r, R, 1.3 + rnd() * 0.25, 0.7 + rnd() * 0.2, 1.3 + rnd() * 0.25, 200 + i);
+  // Wolkenbasis: unregelmäßiger Rand aus großen Ballen
+  for (let i = 0; i < 16; i++) {
+    const a = rnd() * Math.PI * 2, r = Math.sqrt(rnd()) * 42;
+    const R = 11 + rnd() * 6;
+    blob(Math.cos(a) * r, 38 + rnd() * 7 - r * 0.05, Math.sin(a) * r, R, 1.3 + rnd() * 0.25, 0.72 + rnd() * 0.2, 1.3 + rnd() * 0.25, 200 + i);
   }
   // Fetzen außen (Böenfront)
-  for (let i = 0; i < 10; i++) {
-    const a = rnd() * Math.PI * 2, r = 42 + rnd() * 18;
-    blob(Math.cos(a) * r, 33 + rnd() * 5, Math.sin(a) * r, 4.5 + rnd() * 3.5, 1.6, 0.55, 1.2, 260 + i);
+  for (let i = 0; i < 6; i++) {
+    const a = rnd() * Math.PI * 2, r = 44 + rnd() * 16;
+    blob(Math.cos(a) * r, 33 + rnd() * 5, Math.sin(a) * r, 6 + rnd() * 4, 1.6, 0.55, 1.2, 260 + i);
   }
   // aufgetürmte Ballen, nach oben heller und enger
-  for (let i = 0; i < 18; i++) {
-    const t = i / 17;
-    const a = rnd() * Math.PI * 2, r = (1 - t) * 26 + rnd() * 8;
-    const R = 13 - t * 3 + rnd() * 4;
-    blob(Math.cos(a) * r, 46 + t * 34, Math.sin(a) * r, R, 1.1, 0.95, 1.1, 300 + i);
+  for (let i = 0; i < 11; i++) {
+    const t = i / 10;
+    const a = rnd() * Math.PI * 2, r = (1 - t) * 24 + rnd() * 8;
+    const R = 16 - t * 4 + rnd() * 4;
+    blob(Math.cos(a) * r, 47 + t * 34, Math.sin(a) * r, R, 1.1, 0.95, 1.1, 300 + i);
   }
   // Amboss oben (vom Höhenwind verschoben)
-  for (let i = 0; i < 8; i++) {
-    const a = (i / 8) * Math.PI * 2 + rnd() * 0.5, r = 6 + rnd() * 22;
-    blob(Math.cos(a) * r + 12, 84 + rnd() * 6, Math.sin(a) * r - 5, 11 + rnd() * 4, 1.9, 0.45, 1.9, 400 + i);
+  for (let i = 0; i < 6; i++) {
+    const a = (i / 6) * Math.PI * 2 + rnd() * 0.5, r = 6 + rnd() * 22;
+    blob(Math.cos(a) * r + 12, 85 + rnd() * 6, Math.sin(a) * r - 5, 13 + rnd() * 5, 1.9, 0.45, 1.9, 400 + i);
   }
   return merge(parts);
 }
@@ -251,7 +252,10 @@ export function createSky({ scene, renderer, audio, quality, events }) {
 
   // ---- Wolken (zwei Töne über die Rampe „wolke“, kein Schleier, Nebel gedeckelt) ----
   const rnd = mulberry32(99);
-  const cloudMat = new THREE.MeshLambertMaterial({ vertexColors: true, emissive: new THREE.Color('#ffffff'), emissiveIntensity: 0.12, fog: true });
+  // Marker-Alpha 0.99 im Puffer: der Kontur-Pass lässt Wolken damit aus (keine Ballon-Ränder, §5.2). three erzwingt bei
+  // undurchsichtigen Materialien Alpha 1.0 (OPAQUE), darum CustomBlending One/Zero (ergibt dasselbe Bild, schreibt aber das Alpha)
+  const MARKER = { opacity: 0.99, blending: THREE.CustomBlending, blendSrc: THREE.OneFactor, blendDst: THREE.ZeroFactor, blendSrcAlpha: THREE.OneFactor, blendDstAlpha: THREE.ZeroFactor };
+  const cloudMat = new THREE.MeshLambertMaterial({ vertexColors: true, emissive: new THREE.Color('#ffffff'), emissiveIntensity: 0.12, fog: true, ...MARKER });
   const clouds = new THREE.Group();
   clouds.name = 'clouds';
   const cloudGeos = [makeCloud(rnd), makeCloud(rnd), makeCloud(rnd), makeCloud(rnd)];
@@ -274,7 +278,7 @@ export function createSky({ scene, renderer, audio, quality, events }) {
 
   // ---- Dauergewitter über den Sturmklippen ----
   const storm = { x: -100, z: -100, r: 55, intensity: 1, flash: 0, next: 3, bolt: null, boltT: 0 };
-  const stormMat = new THREE.MeshLambertMaterial({ vertexColors: true, emissive: new THREE.Color('#4a4e78'), emissiveIntensity: 0.5, fog: true });
+  const stormMat = new THREE.MeshLambertMaterial({ vertexColors: true, emissive: new THREE.Color('#4a4e78'), emissiveIntensity: 0.5, fog: true, ...MARKER });
   const stormEmissiveBase = new THREE.Color('#4a4e78'), stormEmissiveFlash = new THREE.Color('#c9d0ff');
   const stormGroup = new THREE.Group();
   stormGroup.position.set(storm.x, 0, storm.z);
@@ -452,6 +456,8 @@ export function createSky({ scene, renderer, audio, quality, events }) {
     hemi.intensity = cur.hemiI;
     scene.fog.color.copy(colors.hazeFar);
     renderer.toneMappingExposure = state.exposure;
+    // nachts weicherer Schattenrand (§3.6: radius 3), tags klare Toon-Schattenformen
+    sun.shadow.radius = (quality.name === 'high' ? 2 : 1.5) + state.night * 1.5;
     domeU.uTop.value.set(cur.top[0], cur.top[1], cur.top[2]);
     domeU.uMid.value.set(cur.mid[0], cur.mid[1], cur.mid[2]);
     domeU.uHorizon.value.set(cur.hor[0], cur.hor[1], cur.hor[2]);

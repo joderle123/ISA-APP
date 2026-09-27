@@ -43,6 +43,7 @@ import { createColliders } from './world/colliders.js';
 import { createLandmarks, lambertVC } from './world/landmarks.js';
 import { part, merge, frond, tint } from './world/geom.js';
 import { createLife } from './world/life.js';
+import { createLightPool } from './world/lights.js';
 import { createPlayer } from './actors/player.js';
 import { createCameraRig } from './actors/camera.js';
 import { createHumanoid } from './actors/humanoid.js';
@@ -66,7 +67,7 @@ export async function createGame({ canvas, root, hudRoot, onProgress = () => {} 
   const renderer = rr.renderer;
   const q0 = rr.quality;
   const scene = new THREE.Scene();
-  const camera = new THREE.PerspectiveCamera(55, 1, 0.3, 1600);
+  const camera = new THREE.PerspectiveCamera(50, 1, 0.3, 1600);
   camera.position.set(-150, 60, 320);
   camera.lookAt(0, 20, 60);
   const input = createInput({ root, events });
@@ -89,6 +90,7 @@ export async function createGame({ canvas, root, hudRoot, onProgress = () => {} 
   const particles = createParticles(scene);
   const landmarks = createLandmarks({ island, veil, colliders, scene, quality: q0 });
   const life = createLife({ island, veil, scene, quality: q0 });
+  const lightPool = createLightPool({ scene, quality: q0 });
   const veilFx = createVeilFx({ scene, veil, island, vegetation, particles, quality: q0, events });
   particles.setBudget(q0.particles);
   const player = createPlayer({ scene, island, colliders, input, audio, particles, events, look: settings.look });
@@ -97,7 +99,7 @@ export async function createGame({ canvas, root, hudRoot, onProgress = () => {} 
   const game = {
     THREE,
     scene, camera, renderer, events, input, audio, particles, colliders, settings,
-    world: { island, terrain, water, sky, veil, veilFx, vegetation, landmarks, life },
+    world: { island, terrain, water, sky, veil, veilFx, vegetation, landmarks, life, lightPool },
     player, cameraRig,
     ui: null, interactions: null, loop: null,
     time: sky.time,
@@ -164,6 +166,7 @@ export async function createGame({ canvas, root, hudRoot, onProgress = () => {} 
     vegetation.setQuality(q);
     water.setQuality(q);
     veilFx.setQuality(q);
+    lightPool.setQuality(q);
     particles.setBudget(q.particles);
     camera.far = Math.max(900, q.drawDistance * 1.6);
     camera.updateProjectionMatrix();
@@ -197,7 +200,8 @@ export async function createGame({ canvas, root, hudRoot, onProgress = () => {} 
     water.update(dt, t, particles, camera.position);
     vegetation.update(camera);
     landmarks.update(dt, t, sky.night, particles);
-    life.update(dt, t, player.position, sky.night);
+    life.update(dt, t, player.position, sky.night, cameraRig.mode === 'talk');
+    lightPool.update(dt, player.position, sky.night);
     veilFx.update(dt, t, player.position, camera);
     particles.update(dt);
   }, { order: -10, always: true });
@@ -270,8 +274,8 @@ export async function createGame({ canvas, root, hudRoot, onProgress = () => {} 
         const Z = island.zoneById(target);
         if (!Z) return false;
         x = Z.spawn.x; z = Z.spawn.z;
-        if (yaw === undefined) yaw = Math.atan2(Z.x - x, Z.z - z) || 0;
-        if (Math.hypot(Z.x - x, Z.z - z) < 3) yaw = Math.atan2(-x, -z);
+        // Blick auf die Landmarke der Zone (island.ZONES spawn.yaw, §12), sonst zur Zonenmitte
+        if (yaw === undefined) yaw = Z.spawn.yaw !== undefined ? Z.spawn.yaw : (Math.atan2(Z.x - x, Z.z - z) || 0);
       } else { x = target.x; z = target.z; }
       player.teleport(x, z, yaw);
       cameraRig.behindPlayer();
