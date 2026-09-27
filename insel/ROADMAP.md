@@ -50,3 +50,14 @@ Die Insel soll immer größer werden:
 
 ## Alternative, die man kennen sollte
 **Minecraft Education** bietet Mehrspieler, Schul-Logins und einen Lehrer-Modus mit Kartenübersicht, Teleport und Einfrieren. Nach unserem Wissensstand ist es für Schüler:innen in Luxemburg kostenlos; das bitte prüfen. Der Nachteil: Es ist nicht das eigene Spiel, und die Kursinhalte passen weniger genau.
+
+## Ideen-Speicher (von der Lehrkraft, noch nicht eingeplant)
+- **Eigenes Board statt Pferd (September 2026):** Im Lauf des Spiels bekommt man ein Skateboard (später evtl. E-Board
+  oder E-Roller), mit dem man richtig fahren und Tricks machen kann – wie das Pferd in Red Dead, aber für Jugendliche.
+  Zusatzidee, nicht „das gewisse Etwas“. Vorschlag: Board selbst bauen/reparieren (mit Fränz), Deck gestalten
+  (Selbstausdruck), Trick-Linien und Spots auf der Insel, ein Skatepark am Hafen als Treffpunkt (passt zu Hangout und
+  Mehrspieler in Stufe 2/3). Hinfallen ist lustig, nie peinlich; Üben macht besser. Technisch: eigenes Fahr-Modul auf dem
+  bestehenden Bewegungssystem (Lenken, Ollie, Grind, Manual), Touch: Joystick + Sprung + Wisch-Tricks.
+- **Individuelle Förderung über den Hub:** Quests nach Förderziel (nicht nach Diagnose) sortiert; der Hub empfiehlt
+  per Code/Link (`FOKUS-…`) ohne Personendaten; alle dürfen alles spielen. Dazu ein Spielprofil am Gerät (Tempo, Wahl,
+  sicherer Rahmen, Vorlesen). **Keine** Dossiers an KI-Dienste.
