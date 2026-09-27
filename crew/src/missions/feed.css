@@ -556,3 +556,5 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
   .feed-ghost-row { grid-template-columns: minmax(0, 1fr); }
   .feed-sc .nm { max-width: 8em; overflow: hidden; text-overflow: ellipsis; }
 }
+.feed-res-row.other { color: var(--muted); font-weight: 500; }
+.feed-res-row .pill { flex: none; white-space: nowrap; }

@@ -7,10 +7,21 @@ Die Lehrkraft zeigt das Spiel am Beamer oder am Lehrer-iPad. Die Jugendlichen nu
 Alle spielen zusammen als eine Crew. Es gibt keine Einzel-Rangliste. Die gesammelte Energie baut
 ein gemeinsames Crew-HQ aus. Bei jedem neuen Level wählt die Crew per A/B, welches Teil dazukommt.
 
+## Erster Start
+
+Die Crew wählt Namen und Look und tippt auf „Crew gründen“ (ohne Namen heißt der Knopf „Erst Namen wählen“).
+Danach kommt einmal **„So geht CREW“**: Mission spielen → Energie sammeln → HQ ausbauen. Überspringen geht.
+Beim ersten Mal erklärt eine kleine Sprechblase die Knöpfe **X** und **Pause**. Alles steht auch unter **Hilfe**.
+Jede Einmal-Erklärung erscheint nur einmal pro Gerät. Im Lehrermodus unter „Einstellungen“ →
+„Erklärungen wieder zeigen“ kommen sie zurück.
+
+**Vertretung?** Auf dem Startbildschirm unten „Schnellstart für Vertretung“ antippen. Das geht ohne PIN.
+
 ## So läuft eine Session (ca. 10 Minuten)
 
 1. **Crew-Session starten** auf dem Startbildschirm. Eintippen, wie viele heute mitspielen.
-2. **Wetter-Check (1 Min.):** Jede:r stellt geheim ein Wetter ein und dreht die Karte nur zur Lehrkraft.
+2. **Wetter-Check (1 Min.):** Jede:r stellt geheim ein Wetter auf dem eigenen iPad ein und dreht die Karte nur zur Lehrkraft.
+   Am Beamer steht nur eine Legende zum Nachlesen.
    Du tippst einmal: „Alle eher sonnig“, „Gemischt“ oder „Bei einigen Sturm“. Genaue Zahlen gibt es nur
    auf Wunsch („genauer zählen“) und erst ab 6 Leuten. Bei Sturm: „1 Minute runterkommen“.
 3. **Mission des Tages (4–5 Min.):** jeden Wochentag ein anderes Spiel. Eine Sitzungs-Uhr kürzt
@@ -30,7 +41,7 @@ Sind alle Karten gezählt, geht das Spiel von allein weiter. Das spart Tipparbei
 | Donnerstag | **Feed-Check** | Echt, Meinung oder Fake? Gerüchte stoppen, Gruppendruck, Zivilcourage online. |
 | Freitag | **Konter-Battle** | Aus einem blöden Spruch wird eine Stärke (Reframing). Der Crew-Tower wächst. |
 
-Am Wochenende gibt es „Freie Wahl“. Mit „Andere Mission“ kannst du jederzeit tauschen.
+Am Wochenende gibt es „Freie Wahl“: Die Crew wählt aus allen aktiven Missionen. Mit „Andere Mission“ kannst du jederzeit tauschen.
 In der **Solo-Zone** gibt es Spiele für eine Person (z. B. Chill-Zone, Gefühls-Decoder, Clash-Solo).
 
 ## Sicherheit im Spiel

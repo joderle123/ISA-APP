@@ -98,7 +98,7 @@ Sicherheit ist immer an: Pause/X überall, kein Tod, keine Rangliste, Fehler kos
 - Namensschilder sind kleine Pillen in fester Größe, blenden sich bei Gedränge und während Dialogen aus.
 - Der Lichtstrahl über dem Ziel blendet nicht mehr den halben Bildschirm, wenn die Kamera darin steht (Hochformat).
 - „Neu anfangen“ im Pause-Menü (siehe oben), zweistufig und nur für den eigenen Spielstand.
-- Während Gesprächen steht keine Ziel-Säule über den Figuren; in der Nachtszene treten unbeteiligte Dorf-Figuren aus dem Bild.
+- Während Gesprächen steht keine Ziel-Säule über den Figuren; in der Nachtszene sind unbeteiligte Figuren kurz ausgeblendet.
 
 ## Bekannte Lücken (Demo-Stand)
 - **Andere Regionen** (Strand, Dschungel, Klippen, Markt, Vulkan, Moor) sind begehbar, aber grau. Glimm sagt beim

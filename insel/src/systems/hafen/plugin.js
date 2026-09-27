@@ -79,15 +79,14 @@ export default {
         const nx = S.x + 0.6, nz = S.z + 2.8, y = Math.atan2(S.x - nx, S.z - nz);
         n.warpTo(nx, nz, y); n.setOverride({ x: nx, z: nz, yaw: y, anim: 'sit' });
       }
-      // Stille Szene: Dorf-Figuren, die nicht mitspielen, treten aus dem Bild (nach der Szene weiter wie gewohnt)
+      // Stille Szene: Figuren, die nicht mitspielen, sind kurz ausgeblendet (nach der Szene weiter wie gewohnt)
       const cast = new Set(((content.get && content.get('dialogues', id)) || {}).cast || []);
       const away = [];
       if (S && game.npcs && game.npcs.list) for (const o of game.npcs.list()) {
-        if (!o || cast.has(o.id) || o.override || !o.position || !o.warpTo || !o.setOverride) continue;
-        const dx = o.position.x - S.x, dz = o.position.z - S.z, d = Math.hypot(dx, dz);
-        if (d > 14) continue;
-        const k = d > 0.1 ? 20 / d : 0, ox = S.x + (k ? dx * k : 20), oz = S.z + dz * k;
-        o.warpTo(ox, oz); o.setOverride({ x: ox, z: oz, anim: 'idle' }); away.push(o);
+        if (!o || cast.has(o.id) || o.override || !o.position || !o.setOverride) continue;
+        const d = Math.hypot(o.position.x - S.x, o.position.z - S.z);
+        if (d > 30) continue;
+        o.setOverride({ x: o.position.x, z: o.position.z, anim: 'idle', hidden: true }); away.push(o);
       }
       return () => { if (n && n.clearOverride) n.clearOverride(); for (const o of away) o.clearOverride(); game.time.setTimeOfDay(sc.after); };
     }

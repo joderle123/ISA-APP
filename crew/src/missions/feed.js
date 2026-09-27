@@ -472,7 +472,7 @@
         if (r === ctx.SKIP) continue;
         ans = { solo: r };
       } else {
-        const r = await callTeams(G, holder, { stage: 'fakt', paddle: 'abcd', hint: 'A = Echt · B = Meinung · C = Fake', choices: [{ v: 'F', label: 'Echt', sub: 'A', cls: 'ja' }, { v: 'M', label: 'Meinung', sub: 'B', cls: 'lD' }, { v: 'X', label: 'Fake', sub: 'C', cls: 'nein' }] });
+        const r = await callTeams(G, holder, { stage: 'fakt', paddle: 'abc', hint: 'A = Echt · B = Meinung · C = Fake', choices: [{ v: 'F', label: 'Echt', sub: 'A', cls: 'ja' }, { v: 'M', label: 'Meinung', sub: 'B', cls: 'lD' }, { v: 'X', label: 'Fake', sub: 'C', cls: 'nein' }] });
         if (r === ctx.SKIP) continue;
         ans = r;
       }
@@ -488,8 +488,9 @@
         const ok = ans[s] === truth;
         anyRight = anyRight || ok;
         score(G, s, ok ? worth : 0, worth);
-        const txt = G.solo ? (ok ? (it.fake ? 'Fake erwischt!' : 'Richtig erkannt!') : 'Diesmal anders. Lies kurz die Begründung.') : (ok ? (it.fake ? 'Fake erwischt!' : 'richtig erkannt') : 'anders getippt');
-        return h('div', { class: 'feed-res-row' }, G.solo ? null : teamPill(G, s), h('span', null, txt), h('span', { class: 'feed-grow' }), ptsChip(ok ? worth : 0));
+        // Andere Wahl ist kein Fehler: neutraler Satz, keine „+0“
+        const txt = G.solo ? (ok ? (it.fake ? 'Fake erwischt!' : 'Richtig erkannt!') : 'Diesmal anders. Lies kurz die Begründung.') : (ok ? (it.fake ? 'Fake erwischt!' : 'richtig erkannt') : 'Andere Wahl – schaut euch die Begründung an');
+        return h('div', { class: 'feed-res-row' + (ok ? '' : ' other') }, G.solo ? null : teamPill(G, s), h('span', null, txt), h('span', { class: 'feed-grow' }), ok ? ptsChip(worth) : null);
       });
       clear(holder);
       holder.appendChild(h('div', { class: 'card feed-verdict pop v' + truth },
@@ -844,6 +845,7 @@
       h('p', { class: 'lead' }, G.solo ? 'Dein Handy vibriert ohne Pause. Was ist echt? Und was machst du?' : 'Euer Handy vibriert ohne Pause. Was ist echt? Und was macht ihr?'),
       kinds,
       h('p', { class: 'muted' }, G.solo ? 'Tippe an, was du machen würdest. Du siehst sofort, was passiert.' : 'Teilt euch in zwei Teams. Jedes Team einigt sich leise und zeigt es.'),
+      G.solo ? ui.xHint('Mit dem X oben rechts kannst du jeden Post und jede Runde überspringen. Ohne Grund.') : null,
       formula);
     G.wrap = ctx.screen([h('div', { class: 'feed-main feed-intro' }, h('div', { class: 'feed-left' }, lock.el), side)]);
     lock.run();

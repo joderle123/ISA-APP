@@ -670,6 +670,75 @@ textarea { min-height: 120px; font-family: ui-monospace, Menlo, monospace; font-
 @keyframes sa-fuse { to { transform: scaleX(0); } }
 @media (prefers-reduced-motion: reduce) { .sa-ball.drop { animation: none; opacity: 1; transform: translateY(34px); } .sa-fuse { animation: none; } }
 
+/* ---------- Erklären: Schritte, Sprechblase, Hinweise ---------- */
+.howto { display: grid; gap: 12px; }
+.howto.row3 { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
+.howto-step { position: relative; display: flex; gap: 14px; align-items: flex-start; padding: 14px 16px; box-sizing: border-box; }
+.howto.row3 .howto-step { flex-direction: column; align-items: center; text-align: center; padding: 26px 18px 20px; }
+.howto-num {
+  flex: none; display: grid; place-items: center; width: 42px; height: 42px; border-radius: 50%;
+  font-family: var(--font-display); font-size: 1.3em;
+  background: var(--accent); color: var(--accent-ink); border: var(--bw) solid var(--line);
+}
+.howto.row3 .howto-num { position: absolute; top: -14px; left: 14px; width: 38px; height: 38px; font-size: 1.15em; }
+.howto-ic { display: grid; place-items: center; color: var(--yellow); }
+.howto.row3 .howto-ic { width: 84px; height: 84px; border-radius: 50%; background: color-mix(in srgb, var(--yellow) 18%, transparent); border: 2px solid var(--line); }
+.howto-title { font-family: var(--font-display); text-transform: var(--display-case); letter-spacing: var(--display-track); font-size: 1.2em; }
+.app[data-look="neon"] .howto-num { background: transparent; color: var(--accent); border-color: var(--accent); }
+.app[data-look="pixel"] .howto-num, .app[data-look="pixel"] .howto.row3 .howto-ic { border-radius: 0; }
+
+.coach {
+  position: absolute; z-index: 5; width: min(380px, calc(100vw - 24px)); box-sizing: border-box;
+  display: flex; flex-direction: column; gap: 10px; padding: 14px 16px;
+  background: var(--bg2); color: var(--text);
+  border: var(--bw) solid var(--yellow); border-radius: var(--radius);
+  box-shadow: 0 var(--lift) 0 var(--line), var(--glow);
+  pointer-events: auto;
+  animation: pop-in 240ms cubic-bezier(.2,1.4,.4,1) both;
+}
+.coach-arrow { position: absolute; top: -12px; width: 20px; height: 20px; background: var(--bg2); border-left: var(--bw) solid var(--yellow); border-top: var(--bw) solid var(--yellow); transform: rotate(45deg); }
+.coach-rows { display: flex; flex-direction: column; gap: 8px; }
+.coach-row { display: flex; align-items: center; gap: 12px; line-height: 1.3; }
+.coach-ic {
+  flex: none; display: grid; place-items: center; width: 38px; height: 38px; border-radius: var(--radius-sm);
+  background: var(--panel); border: 2px solid var(--line); color: var(--text); font-family: var(--font-display); font-size: 1.1em;
+}
+.coach-ic.x { background: var(--teamB); color: var(--teamB-ink); }
+.app[data-look="neon"] .coach-ic.x { background: transparent; color: var(--teamB); border-color: var(--teamB); }
+
+.x-hint { display: flex; align-items: center; gap: 10px; margin: 0; color: var(--muted); font-size: 0.9em; }
+.x-chip { flex: none; display: grid; place-items: center; width: 30px; height: 30px; border-radius: 8px; background: var(--teamB); color: var(--teamB-ink); border: 2px solid var(--line); font-family: var(--font-display); }
+.app[data-look="neon"] .x-chip { background: transparent; color: var(--teamB); border-color: var(--teamB); }
+
+.teacher-line {
+  display: inline-flex; align-items: center; gap: 8px; padding: 7px 14px; border-radius: 99px;
+  background: var(--yellow); color: var(--yellow-ink); border: 2px solid var(--line); font-weight: 600; font-size: 0.95em;
+}
+.app[data-look="neon"] .teacher-line { background: transparent; color: var(--yellow); border-color: var(--yellow); }
+
+.need-msg { display: flex; align-items: center; gap: 8px; margin: 0; font-weight: 700; color: var(--yellow); }
+.card.need { border-color: var(--yellow); box-shadow: 0 0 0 4px color-mix(in srgb, var(--yellow) 55%, transparent), 0 var(--lift) 0 var(--line); animation: shake 420ms ease both; }
+.card.need input { border-color: var(--yellow); }
+
+.countdown-signal { font-size: clamp(3.6em, 12vw, 9em); max-width: 92vw; animation: count-pop 520ms cubic-bezier(.2,1.4,.4,1) both; }
+
+.quick-steps { margin: 0; padding-left: 1.4em; display: flex; flex-direction: column; gap: 8px; }
+.quick-steps li { padding-left: 4px; }
+.quick-steps li b { display: block; }
+
+/* Wetter-Check am Beamer: Hinweis aufs eigene iPad + Legende (nicht antippbar) */
+.wx-callout {
+  display: flex; align-items: center; gap: 16px; padding: 14px 18px; border-radius: var(--radius);
+  background: color-mix(in srgb, var(--good) 18%, transparent); border: var(--bw) solid var(--good);
+}
+.wx-callout .ic { color: var(--good); }
+.wx-callout-t { font-family: var(--font-display); text-transform: var(--display-case); letter-spacing: var(--display-track); font-size: 1.35em; }
+.wx-legend { display: flex; flex-direction: column; gap: 8px; padding: 12px 14px; border-radius: var(--radius); border: 2px dashed color-mix(in srgb, var(--text) 35%, transparent); pointer-events: none; }
+.wx-legend-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 6px 16px; }
+.wx-leg { display: flex; align-items: center; gap: 10px; opacity: .9; }
+.howto-screen { justify-content: center; }
+.howto-screen .howto.row3 { margin-top: 10px; }
+
 /* ---- missions/clash.css ---- */
 /* =========================================================
    Mission „Clash“ – Friedenstreppe
@@ -1094,6 +1163,11 @@ textarea { min-height: 120px; font-family: ui-monospace, Menlo, monospace; font-
   .clash-teamcard .clash-ava { width: 70px; }
   .clash-hands { margin-bottom: 20px; }
 }
+
+/* Einmal-Erklärung zur Start-Hitze und Hinweis zum Zurückspulen */
+.clash-heat-hint { display: flex; align-items: center; gap: 10px; flex: 1 1 320px; padding: 10px 14px; border-radius: var(--radius-sm); background: color-mix(in srgb, var(--clash-warm) 20%, transparent); border: 2px solid var(--clash-warm); font-weight: 600; }
+.clash-heat-hint .clash-flame { color: var(--clash-hot); }
+.clash-rw-hint { display: flex; align-items: center; gap: 8px; margin: 0; font-size: 0.92em; color: var(--muted); }
 
 /* ---- missions/feed.css ---- */
 /* =========================================================
@@ -1654,6 +1728,8 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
   .feed-ghost-row { grid-template-columns: minmax(0, 1fr); }
   .feed-sc .nm { max-width: 8em; overflow: hidden; text-overflow: ellipsis; }
 }
+.feed-res-row.other { color: var(--muted); font-weight: 500; }
+.feed-res-row .pill { flex: none; white-space: nowrap; }
 
 /* ---- missions/radar.css ---- */
 /* Mission „Gefühls-Radar“ – alle Klassen mit Präfix radar- */
@@ -3640,6 +3716,7 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
     solo: {},             // Bestwerte pro Solo-Spiel (ohne Namen)
     hq: { owned: [] },    // Crew-HQ: freigeschaltete Teile (Nummern 1–12), von der Crew gewählt
     records: {},          // Crew-Rekord (beste Punkte) pro Mission – nur für die ganze Crew
+    seen: {},             // Einmal-Erklärungen, die dieses Gerät schon gezeigt hat (z. B. xpause, clashHeat)
   });
 
   function deepMerge(base, extra) {
@@ -3722,6 +3799,17 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
     return chosen;
   }
 
+  /* ---------- Einmal-Erklärungen ---------- */
+  // true = schon gezeigt. firstTime(key) liefert true genau einmal pro Gerät und merkt es sich.
+  function seen(key) { return !!(state.seen && state.seen[key]); }
+  function firstTime(key) {
+    if (seen(key)) return false;
+    state.seen = state.seen || {};
+    state.seen[key] = true;
+    save();
+    return true;
+  }
+
   CREW.content = CREW.content || {};
   CREW.util = { h, append, clear, shuffle, pick, clamp, sleep, todayISO, weekday, WEEKDAYS, escapeHtml };
   CREW.store = store;
@@ -3734,6 +3822,8 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
   CREW.LEVELS = LEVELS;
   CREW.levelInfo = levelInfo;
   CREW.pickContent = pickContent;
+  CREW.seen = seen;
+  CREW.firstTime = firstTime;
 
   /* ---------- Registrierung von Modulen ---------- */
   CREW.missions = CREW.missions || [];
@@ -3972,6 +4062,8 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
     const o = opts || {};
     const st = stage();
     CREW.stopSpeaking();
+    // Einmal-Sprechblasen gehören zum alten Bildschirm
+    overlays().querySelectorAll('.coach').forEach((c) => c.remove());
     clear(st);
     const wrap = h('div', { class: 'wrap' + (o.center ? ' center' : '') + (o.narrow ? ' narrow' : '') }, children);
     st.appendChild(wrap);
@@ -4131,9 +4223,26 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
     }, ms || 600);
   }
 
-  /* „Scan läuft …“-Balken: zeigt, dass das Spiel gerade auf die Antworten wartet */
+  /* Wartebalken: zeigt, dass das Spiel gerade auf die Eingabe der Lehrkraft wartet */
   function scanBar(text) {
-    return h('div', { class: 'scanbar', role: 'status' }, h('span', { class: 'scanbar-t' }, text || 'Scan läuft …'), h('i', { 'aria-hidden': 'true' }));
+    return h('div', { class: 'scanbar', role: 'status' }, h('span', { class: 'scanbar-t' }, text || 'Lehrkraft tippt ein …'), h('i', { 'aria-hidden': 'true' }));
+  }
+  /* Klare Zeile für die Lehrkraft am Beamer: Was tippe ich jetzt? */
+  function teacherLine(text) {
+    return h('div', { class: 'teacher-line', role: 'status' }, CREW.icon('user', 20), h('span', null, h('b', null, 'Lehrkraft: '), text));
+  }
+  /* Kurzer Hinweis auf die X-Karte (Solo-Intros, Chill-Zone) */
+  function xHint(text) {
+    return h('p', { class: 'x-hint' }, h('span', { class: 'x-chip', 'aria-hidden': 'true' }, 'X'), h('span', null, text || 'Mit dem X oben rechts kannst du jede Karte überspringen. Ohne Grund.'));
+  }
+  /* Nummerierte Schritte mit Symbol (Vorbild: Radar-Intro). items: [{ icon, title, text, extra }] */
+  function steps(items, opts) {
+    const o = opts || {};
+    return h('div', { class: 'howto' + (o.row ? ' row3' : '') }, items.map((it, i) =>
+      h('div', { class: 'howto-step card' + (o.enter === false ? '' : ' enter-' + Math.min(3, i + 1)) },
+        h('span', { class: 'howto-num' }, String(i + 1)),
+        it.icon ? h('span', { class: 'howto-ic' }, CREW.icon(it.icon, o.row ? 40 : 28)) : null,
+        h('div', { class: 'stack', style: { gap: '4px' } }, h('b', { class: 'howto-title' }, it.title), it.text ? h('span', { class: 'muted' }, it.text) : null, it.extra || null))));
   }
 
   /* Globale Pause: Timer (und Module, die SK/CREW.isPaused() abfragen) warten */
@@ -4186,10 +4295,12 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
       CREW.sound.play('count');
       await sleep(650);
     }
+    // Das Signalwort bleibt lange und groß stehen (≈1,8 s), damit es niemand verpasst
     clear(ov);
-    ov.appendChild(h('div', { class: 'countdown-big', style: { fontSize: 'clamp(3em, 10vw, 7em)' } }, text || 'Zeigt her!'));
+    ov.style.background = 'color-mix(in srgb, var(--ink) 72%, transparent)';
+    ov.appendChild(h('div', { class: 'countdown-big countdown-signal' }, text || 'Zeigt her!'));
     CREW.sound.play('go');
-    await sleep(900);
+    await sleep(1800);
     ov.remove();
   }
 
@@ -4208,7 +4319,7 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
       if (o.dismissable !== false) ov.addEventListener('click', (e) => { if (e.target === ov) close(null); });
       root.appendChild(ov);
       const first = actions.querySelector('button');
-      if (first) first.focus();
+      if (first) first.focus({ preventScroll: true });
     });
   }
   const confirm = (title, body, yes, no) =>
@@ -4265,14 +4376,14 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
 
   /* Hinweis, welche Antwort-Karte die Jugendlichen öffnen sollen */
   const PADDLES = {
-    wetter: 'Wetter', zahl: 'Zahl 0–10', janein: 'Ja / Nein', abcd: 'A B C D', emo: 'Gefühl',
+    wetter: 'Wetter', zahl: 'Zahl 0–10', janein: 'Ja / Nein', abcd: 'A B C D', abc: 'A B C', emo: 'Gefühl',
   };
   function paddleHint(type, extra) {
     return h('div', { class: 'paddle-hint' }, CREW.icon('phone', 22), h('span', null, 'Antwort-Karte: ', h('b', null, PADDLES[type] || type), extra ? ' · ' + extra : ''));
   }
 
   CREW.isPaused = isPaused;
-  CREW.ui = { setPaused, isPaused, revealRow, screen, btn, iconBtn, speakBtn, say, choice, next, stepper, tally, valuePad, autoNext, scanBar, timer, threeTwoOne, modal, confirm, toast, confetti, countUp, paddleHint, PADDLES, stage, overlays };
+  CREW.ui = { setPaused, isPaused, revealRow, screen, btn, iconBtn, speakBtn, say, choice, next, stepper, tally, valuePad, autoNext, scanBar, teacherLine, xHint, steps, timer, threeTwoOne, modal, confirm, toast, confetti, countUp, paddleHint, PADDLES, stage, overlays };
 })();
 
 /* ---- content/clash.js ---- */
@@ -6162,6 +6273,7 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
         meter.el),
       cm.el,
       h('div', { class: 'row between clash-foot' }, h('p', { class: 'muted' }, 'Wie schaukelt sich der Streit hoch?'), ui.speakBtn(readAll)),
+      G.solo ? ui.xHint('Mit dem X oben rechts kannst du jede Szene und jede Stufe überspringen. Ohne Grund.') : null,
     ]);
     wrap.dataset.clash = 'intro';
     const n = sc.intro.length;
@@ -6178,6 +6290,16 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
     await ctx.sleep(1000);
     cm.stamp('Stopp!');
     CREW.sound.play('go');
+    // Einmal pro Gerät erklären, warum die Hitze schon so hoch ist, bevor die Crew etwas tut
+    if (CREW.firstTime('clashHeat')) {
+      const foot = wrap.querySelector('.clash-foot');
+      const hint = h('div', { class: 'clash-heat-hint pop', role: 'status' }, h('span', { class: 'clash-flame' }, ownIcon('flame', 26)),
+        h('span', null, G.solo
+          ? 'So heiß ist der Streit schon, bevor du eingreifst. Deine Antworten senken oder erhöhen die Hitze.'
+          : 'So heiß ist der Streit schon, bevor ihr eingreift. Eure Antworten senken oder erhöhen die Hitze.'));
+      const line = foot && foot.querySelector('p');
+      if (line) line.replaceWith(hint); else wrap.appendChild(hint);
+    }
     await ctx.sleep(450);
     const r = await ask(G, wrap, [
       { label: 'Andere Szene', value: 'swap', variant: 'ghost', icon: 'shuffle' },
@@ -6299,7 +6421,8 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
         h('span', { class: 'pill ' + (info.good ? 'good' : 'accent') }, info.label),
         h('span', { class: 'clash-delta ' + (delta <= 0 ? 'down' : 'up') }, 'Hitze ' + (delta <= 0 ? '−' : '+') + Math.abs(delta))),
       h('p', { class: 'lead' }, info.line),
-      listenTip);
+      listenTip,
+      info.good ? null : h('p', { class: 'clash-rw-hint' }, ownIcon('rewind', 20), h('span', null, h('b', null, 'Zurückspulen: '), 'Nochmal probieren. Die Antwort zählt dann nicht.')));
     fb.style.visibility = 'hidden';
     const wrap = ctx.screen([hud(G, meter), cm.el, fb]);
     wrap.dataset.clash = 'result';
@@ -6997,7 +7120,7 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
         if (r === ctx.SKIP) continue;
         ans = { solo: r };
       } else {
-        const r = await callTeams(G, holder, { stage: 'fakt', paddle: 'abcd', hint: 'A = Echt · B = Meinung · C = Fake', choices: [{ v: 'F', label: 'Echt', sub: 'A', cls: 'ja' }, { v: 'M', label: 'Meinung', sub: 'B', cls: 'lD' }, { v: 'X', label: 'Fake', sub: 'C', cls: 'nein' }] });
+        const r = await callTeams(G, holder, { stage: 'fakt', paddle: 'abc', hint: 'A = Echt · B = Meinung · C = Fake', choices: [{ v: 'F', label: 'Echt', sub: 'A', cls: 'ja' }, { v: 'M', label: 'Meinung', sub: 'B', cls: 'lD' }, { v: 'X', label: 'Fake', sub: 'C', cls: 'nein' }] });
         if (r === ctx.SKIP) continue;
         ans = r;
       }
@@ -7013,8 +7136,9 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
         const ok = ans[s] === truth;
         anyRight = anyRight || ok;
         score(G, s, ok ? worth : 0, worth);
-        const txt = G.solo ? (ok ? (it.fake ? 'Fake erwischt!' : 'Richtig erkannt!') : 'Diesmal anders. Lies kurz die Begründung.') : (ok ? (it.fake ? 'Fake erwischt!' : 'richtig erkannt') : 'anders getippt');
-        return h('div', { class: 'feed-res-row' }, G.solo ? null : teamPill(G, s), h('span', null, txt), h('span', { class: 'feed-grow' }), ptsChip(ok ? worth : 0));
+        // Andere Wahl ist kein Fehler: neutraler Satz, keine „+0“
+        const txt = G.solo ? (ok ? (it.fake ? 'Fake erwischt!' : 'Richtig erkannt!') : 'Diesmal anders. Lies kurz die Begründung.') : (ok ? (it.fake ? 'Fake erwischt!' : 'richtig erkannt') : 'Andere Wahl – schaut euch die Begründung an');
+        return h('div', { class: 'feed-res-row' + (ok ? '' : ' other') }, G.solo ? null : teamPill(G, s), h('span', null, txt), h('span', { class: 'feed-grow' }), ok ? ptsChip(worth) : null);
       });
       clear(holder);
       holder.appendChild(h('div', { class: 'card feed-verdict pop v' + truth },
@@ -7369,6 +7493,7 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
       h('p', { class: 'lead' }, G.solo ? 'Dein Handy vibriert ohne Pause. Was ist echt? Und was machst du?' : 'Euer Handy vibriert ohne Pause. Was ist echt? Und was macht ihr?'),
       kinds,
       h('p', { class: 'muted' }, G.solo ? 'Tippe an, was du machen würdest. Du siehst sofort, was passiert.' : 'Teilt euch in zwei Teams. Jedes Team einigt sich leise und zeigt es.'),
+      G.solo ? ui.xHint('Mit dem X oben rechts kannst du jeden Post und jede Runde überspringen. Ohne Grund.') : null,
       formula);
     G.wrap = ctx.screen([h('div', { class: 'feed-main feed-intro' }, h('div', { class: 'feed-left' }, lock.el), side)]);
     lock.run();
@@ -8586,7 +8711,8 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
         h('span', { class: 'eyebrow' }, 'Solo · Stärken-Training'),
         h('h1', { class: 'outline-text' }, 'Konter-Rush'),
         h('p', { class: 'lead' }, 'Du siehst eine Stärke. Welcher Spruch steckt dahinter?'),
-        h('p', { class: 'muted' }, SOLO_CARDS + ' Karten. Kein Zeitdruck. Jeder Treffer baut deinen Turm.')),
+        h('p', { class: 'muted' }, SOLO_CARDS + ' Karten. Kein Zeitdruck. Jeder Treffer baut deinen Turm.'),
+        ui.xHint()),
       h('div', { class: 'reframe-solo-demo enter-2' }, flipTag(demoCard, { demo: true, small: true }).el),
     ]);
     await ctx.waitFor(ui.choice(vi.acts, [{ label: 'Start', value: 'go', iconRight: 'play', id: 'rf-solo-start' }]));
@@ -8747,8 +8873,8 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
         });
         const cnt = h('b', { class: 'display' }, '0');
         const w2 = ctx.screen([
-          h('div', { class: 'row between' }, h('span', { class: 'eyebrow' }, 'Wer steht?'), ui.scanBar()),
-          h('h2', null, 'Tippe so viele Figuren an, wie gerade stehen.'),
+          h('div', { class: 'row between' }, h('span', { class: 'eyebrow' }, 'Wer steht?'), ui.teacherLine('Tippt an, wie viele stehen')),
+          h('h2', null, 'Eine Figur pro Person, die steht. Keine Namen.'),
           h('div', { class: 'sa-crowd' }, people),
           h('p', { class: 'lead', style: { textAlign: 'center' } }, 'Stehen: ', cnt),
         ]);
@@ -8759,7 +8885,7 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
         await ui.threeTwoOne('Zeigt eure Schätzung!');
         const vp = ui.valuePad({ count: N, min: 0, max: N, placeholder: 'Tippe die gezeigten Zahlen ein …', onFull: () => ui.autoNext('sa-reveal', () => vp.get().length >= N) });
         const w3 = ctx.screen([
-          h('div', { class: 'row between' }, h('span', { class: 'eyebrow' }, 'Schätzungen'), ui.scanBar()),
+          h('div', { class: 'row between' }, h('span', { class: 'eyebrow' }, 'Schätzungen'), ui.teacherLine('Tippt die gezeigten Zahlen ein')),
           h('h2', null, 'Welche Zahlen seht ihr?'),
           h('div', { class: 'card' }, vp.el),
         ]);
@@ -9859,6 +9985,7 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
       h('div', { class: 'solo-dec-start enter-3' },
         h('div', { class: 'stack', style: { gap: '6px' } },
           h('span', { class: 'muted small' }, SCENES + ' Szenen · Gefühl bis +3 · Stärke +1 · Weniger Hinweise = mehr Punkte'),
+          ui.xHint('Mit dem X oben rechts kannst du jede Szene überspringen. Ohne Grund.'),
           rec != null ? h('span', { class: 'pill', id: 'dec-record' }, CREW.icon('trophy', 18), 'Dein Rekord: ' + rec + ' Punkte') : null),
         h('div', { class: 'row solo-dec-start-btns' },
           ui.btn('Zurück', () => done('back'), { variant: 'ghost', icon: 'left' }),
@@ -10773,10 +10900,11 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
       h('button', { type: 'button', class: 'crew-badge', style: { background: 'none', border: 0, color: 'inherit', padding: 0, cursor: 'pointer' }, onclick: () => goHome(), 'aria-label': 'Zum Start' },
         h('span', { class: 'logo', html: CREW.LOGO }),
         h('span', { class: 'name' }, S.crew.name || 'CREW')),
-      h('div', { class: 'energy-mini', title: 'Crew-Energie' },
+      // Vor der Gründung gibt es noch kein HQ: kein „Rohbau“-Balken, der wie ein Ladefehler wirkt
+      S.crew.founded ? h('div', { class: 'energy-mini', title: 'Crew-Energie' },
         CREW.icon('bolt', 22),
         h('span', { class: 'lvl' }, li.level ? 'Level ' + li.level : 'Rohbau'),
-        h('div', { class: 'bar' }, fill)),
+        h('div', { class: 'bar' }, fill)) : null,
       h('div', { class: 'spacer' }),
       run ? ui.iconBtn(null, onXCard, { text: 'X', cls: 'xcard', label: 'X-Karte: Diese Karte überspringen', id: 'btn-x' }) : null,
       run ? ui.iconBtn('pause', showPause, { label: 'Pause', id: 'btn-pause' }) : null,
@@ -10808,13 +10936,51 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
     }
     ui.setPaused(false);
     run = null;
+    closeCoach();
     CREW.stopSpeaking();
     renderTopbar();
+  }
+
+  /* Die Knöpfe oben, kurz erklärt (Sprechblase beim ersten Mal, Hilfe, Schnellstart) */
+  function safetyRows(o) {
+    const withAll = o && o.all;
+    const row = (ic, name, text) => h('div', { class: 'coach-row' }, ic, h('span', null, h('b', null, name + ': '), text));
+    return h('div', { class: 'coach-rows' },
+      row(h('span', { class: 'coach-ic x' }, 'X'), 'X-Karte', 'Karte überspringen, ohne Grund. Keiner fragt nach.'),
+      row(h('span', { class: 'coach-ic' }, CREW.icon('pause', 20)), 'Pause', 'Kurz durchatmen. Das Spiel wartet.'),
+      withAll ? row(h('span', { class: 'coach-ic' }, CREW.icon('help', 20)), 'Hilfe', 'Nummern zum Reden und diese Erklärung.') : null,
+      withAll ? row(h('span', { class: 'coach-ic' }, CREW.icon('home', 20)), 'Start', 'Zurück zum Startbildschirm.') : null);
+  }
+  /* Einmal pro Gerät: kleine Sprechblase unter X und Pause, sobald sie zum ersten Mal auftauchen */
+  let coachTimer = null;
+  function closeCoach() {
+    clearTimeout(coachTimer);
+    document.querySelectorAll('#overlays .coach').forEach((c) => c.remove());
+  }
+  function coachXPause() {
+    const x = document.getElementById('btn-x');
+    if (!x || CREW.seen('xpause')) return;
+    CREW.firstTime('xpause');
+    closeCoach();
+    const p = document.getElementById('btn-pause') || x;
+    const rx = x.getBoundingClientRect();
+    const rp = p.getBoundingClientRect();
+    const right = Math.max(8, window.innerWidth - Math.max(rx.right, rp.right) - 4);
+    const box = h('div', { class: 'coach', role: 'status', style: { top: Math.round(Math.max(rx.bottom, rp.bottom) + 14) + 'px', right: right + 'px' } },
+      h('span', { class: 'coach-arrow', style: { right: Math.max(14, window.innerWidth - right - (rx.left + rx.width / 2) - 10) + 'px' } }),
+      h('span', { class: 'eyebrow' }, 'Neu hier oben'),
+      safetyRows(),
+      h('div', { class: 'row between', style: { gap: '8px' } },
+        h('span', { class: 'muted small' }, 'Steht auch unter Hilfe.'),
+        ui.btn('Verstanden', closeCoach, { small: true, icon: 'check', id: 'coach-ok' })));
+    ui.overlays().appendChild(box);
+    coachTimer = setTimeout(closeCoach, 14000);
   }
 
   /* X-Karte: jederzeit ohne Begründung überspringen.
      Läuft gerade eine Animation, merkt sich das Spiel das X und überspringt die nächste Karte. */
   function onXCard() {
+    closeCoach();
     if (!run) return;
     if (run.skipWaiter) {
       const w = run.skipWaiter;
@@ -10834,6 +11000,7 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
 
   /* Pause mit Atemkreis */
   function showPause() {
+    closeCoach();
     CREW.stopSpeaking();
     ui.setPaused(true);
     const circle = h('div', { style: { width: 'min(46vmin, 320px)', aspectRatio: '1', borderRadius: '50%', background: 'radial-gradient(circle, var(--good) 0%, color-mix(in srgb, var(--good) 30%, transparent) 70%)', border: 'var(--bw) solid var(--line)', animation: 'breathe 10s ease-in-out infinite' } });
@@ -10860,9 +11027,14 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
     const body = h('div', { class: 'stack' },
       h('p', { class: 'lead' }, 'Wenn dich etwas belastet: Sprich mit einer erwachsenen Person, der du vertraust. Zum Beispiel hier in der Annexe.'),
       h('div', { class: 'list' }, nums.map(([n, t, d]) => h('div', { class: 'li' }, h('div', null, h('b', null, n), d ? h('div', { class: 'muted small' }, d) : null), h('span', { class: 'display selectable', style: { fontSize: '1.4em' } }, t)))),
-      h('p', { class: 'muted small' }, 'X-Karte: Mit dem X oben rechts darfst du jede Karte überspringen. Ohne Begründung.'),
+      h('div', { class: 'stack', style: { gap: '8px' } }, h('span', { class: 'eyebrow' }, 'Die Knöpfe oben'), safetyRows()),
       h('p', { class: 'muted small' }, 'Antwort-Karte: Deine Wahl wird nirgends gespeichert.'));
-    ui.modal({ title: 'Hilfe', body, actions: [{ label: 'Schließen', value: true }] });
+    closeCoach();
+    const actions = [{ label: 'Schließen', value: true }];
+    if (S.crew.founded) actions.unshift({ label: 'So geht CREW', value: 'howto', variant: 'ghost', icon: 'help' });
+    ui.modal({ title: 'Hilfe', body, actions }).then((v) => {
+      if (v === 'howto') ui.modal({ title: 'So geht CREW', body: howToSteps(), actions: [{ label: 'Alles klar', value: true, icon: 'check' }] });
+    });
   }
 
   /* ---------- Crew-Woche & Crew-HQ-Teile ---------- */
@@ -10909,6 +11081,8 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
     applyLook();
     renderTopbar();
     if (!S.crew.founded) return renderFounding();
+    // Direkt nach der Gründung (oder nach „Erklärungen wieder zeigen“): einmal „So geht CREW“
+    if (S.seen && S.seen.howto === false) return renderHowTo();
     const li = CREW.levelInfo(S.energy);
     const wd = weekday();
     const m = missionForToday();
@@ -10936,6 +11110,7 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
         h('span', { class: 'eyebrow' }, 'Moien! Heute ist ' + WEEKDAYS[wd]),
         h('h1', { class: 'outline-text' }, S.crew.name || 'CREW')));
     const teacher = ui.btn('Lehrkraft', renderTeacherGate, { variant: 'ghost', small: true, icon: 'lock', id: 'tile-teacher' });
+    const quick = ui.btn('Schnellstart für Vertretung', showQuickstart, { variant: 'ghost', small: true, icon: 'help', id: 'tile-quick' });
     ui.screen([
       hero,
       cta,
@@ -10943,8 +11118,49 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
       h('div', { class: 'grid two enter-3' },
         tile({ icon: 'leaf', title: 'Solo-Zone', sub: 'Alleine chillen und trainieren', onClick: renderSoloHub, id: 'tile-solo' }),
         tile({ icon: 'phone', title: 'Antwort-Karte', sub: 'Für dein iPad', onClick: renderPaddle, id: 'tile-paddle' })),
-      h('div', { class: 'row end' }, teacher),
+      h('div', { class: 'row end' }, quick, teacher),
     ]);
+  }
+
+  /* ---------- So geht CREW (einmal nach der Gründung, später über Hilfe) ---------- */
+  function howToSteps() {
+    return ui.steps([
+      { icon: 'play', title: 'Mission spielen', text: 'Jeden Tag eine Mission. Etwa 10 Minuten, alle zusammen.' },
+      { icon: 'bolt', title: 'Energie sammeln', text: 'Jede Mission bringt eurer Crew Energie.' },
+      { icon: 'base', title: 'HQ ausbauen', text: 'Mit der Energie wächst euer Crew-HQ. Ihr stimmt ab, was dazukommt.' },
+    ], { row: true });
+  }
+  function renderHowTo() {
+    const done = () => { S.seen = S.seen || {}; S.seen.howto = true; CREW.save(); renderHome(); };
+    const wrap = ui.screen([
+      h('div', { class: 'row between enter' },
+        h('div', { class: 'stack', style: { gap: '4px' } }, h('span', { class: 'eyebrow' }, 'Willkommen, ' + (S.crew.name || 'Crew')), h('h1', { class: 'outline-text' }, 'So geht CREW')),
+        ui.btn('Überspringen', done, { variant: 'ghost', small: true, id: 'howto-skip' })),
+      howToSteps(),
+      h('p', { class: 'lead muted enter-3', style: { textAlign: 'center' } }, 'Keine Einzel-Punkte. Nur die Crew zählt.'),
+    ]);
+    wrap.classList.add('howto-screen');
+    ui.choice(wrap, [{ label: 'Los geht’s', value: 'go', iconRight: 'right', id: 'howto-go' }]).then(done);
+  }
+
+  /* ---------- Schnellstart für Vertretung (ohne PIN) ---------- */
+  const GUIDE_STEPS = [
+    ['Öffnen', 'CREW am Beamer oder auf dem Lehrer-iPad öffnen. Die Jugendlichen öffnen auf ihren iPads die „Antwort-Karte“.'],
+    ['Wetter-Check (1 Min.)', 'Jede:r stellt geheim das Wetter ein und dreht die Karte nur zu dir. Die anderen schauen nach vorn. Du tippst einmal: sonnig, gemischt oder Sturm. „Genauer zählen“ ist freiwillig; genaue Zahlen erscheinen erst ab 6 Leuten.'],
+    ['Mission des Tages (4–5 Min.)', 'Jeder Wochentag hat ein eigenes Spiel. Mit „Andere Mission“ kannst du tauschen. Eine Sitzungs-Uhr kürzt Runden, wenn die Zeit knapp wird.'],
+    ['Nachspielzeit (1–2 Min.)', 'Eine Frage, freiwillig. Das ist der wichtigste Teil.'],
+    ['Energie', 'Energie fließt ins gemeinsame Crew-HQ und wird sofort nach der Mission gespeichert. Beim Level-up wählt die Crew per A/B ein neues Teil. Es gibt keine Einzel-Rangliste.'],
+  ];
+  function showQuickstart() {
+    const m = missionForToday();
+    const body = h('div', { class: 'stack' },
+      h('p', { class: 'lead' }, 'Ohne PIN. So läuft eine Session (ca. 10 Minuten):'),
+      h('ol', { class: 'quick-steps' }, GUIDE_STEPS.map(([t, d]) => h('li', null, h('b', null, t), h('span', { class: 'muted' }, d)))),
+      h('div', { class: 'stack', style: { gap: '8px' } }, h('span', { class: 'eyebrow' }, 'Mission starten'),
+        h('p', null, 'Auf dem Startbildschirm den großen Knopf „' + (m ? 'Heute: ' + m.title : 'Freie Wahl') + ' · Los!“ antippen. Das Spiel führt Schritt für Schritt.')),
+      h('div', { class: 'stack', style: { gap: '8px' } }, h('span', { class: 'eyebrow' }, 'Knöpfe oben rechts (während der Session)'), safetyRows({ all: true })),
+      h('p', { class: 'muted small' }, 'Mehr Details (Punkteregeln, Einstellungen) im Lehrermodus mit PIN.'));
+    ui.modal({ title: 'Schnellstart für Vertretung', body, actions: [{ label: 'Alles klar', value: true, icon: 'check' }] });
   }
   function tile(o) {
     const t = h('button', { type: 'button', class: 'tile' + (o.hero ? ' hero' : ''), id: o.id },
@@ -10961,35 +11177,69 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
     let look = S.crew.look || 'arena';
     let names = CREW.util.shuffle(NAME_A).slice(0, 3);
     let chosen = null;
+    let needName = false;
     const draw = () => {
       applyLook(look);
       const nameRow = h('div', { class: 'row' }, names.map((n) => {
         const c = h('button', { type: 'button', class: 'chip' + (chosen === n ? ' sel' : '') }, n);
-        c.addEventListener('click', () => { CREW.sound.play('tap'); chosen = n; input.value = ''; draw(); });
+        c.addEventListener('click', () => { CREW.sound.play('tap'); chosen = n; needName = false; input.value = ''; draw(); });
         return c;
       }), ui.iconBtn('shuffle', () => { names = CREW.util.shuffle(NAME_A).slice(0, 3); draw(); }, { label: 'Neue Vorschläge' }));
       const input = h('input', { type: 'text', id: 'crew-name', maxlength: '24', placeholder: 'oder eigenen Crew-Namen eintippen (ohne echte Namen)', value: chosen && !names.includes(chosen) ? chosen : '' });
-      input.addEventListener('input', () => { chosen = input.value.trim() || null; });
+      input.addEventListener('input', () => {
+        chosen = input.value.trim() || null;
+        foundLabel();
+        if (chosen && needName) { needName = false; nameCard.classList.remove('need'); if (needMsg.parentNode) needMsg.remove(); }
+      });
+      const needMsg = h('p', { class: 'need-msg', role: 'status' }, CREW.icon('right', 20), 'Tippt einen Vorschlag an oder schreibt einen Namen.');
+      const nameCard = h('div', { class: 'card stack enter-2' + (needName ? ' need' : '') }, h('h3', null, '1. Wie heißt eure Crew?'), nameRow, input, needName ? needMsg : null);
       const lookRow = h('div', { class: 'grid three' }, LOOKS.map((L) => {
         const t = h('button', { type: 'button', class: 'tile' + (look === L.id ? ' hero' : ''), 'data-look': L.id },
           h('span', { class: 't-title' }, L.label), h('span', { class: 't-sub' }, L.desc));
         t.addEventListener('click', () => { CREW.sound.play('tap'); look = L.id; draw(); });
         return t;
       }));
+      const st = document.getElementById('stage');
+      const keepTop = st ? st.scrollTop : 0; // Neuzeichnen soll nicht nach oben springen
       ui.screen([
         h('div', { class: 'stack enter' }, h('span', { class: 'eyebrow' }, 'Neue Crew'), h('h1', { class: 'outline-text' }, 'Gründet eure Crew'),
           h('p', { class: 'lead muted' }, 'Stimmt gemeinsam ab. Name und Look gehören der ganzen Crew.')),
-        h('div', { class: 'card stack enter-2' }, h('h3', null, '1. Wie heißt eure Crew?'), nameRow, input),
+        nameCard,
         h('div', { class: 'card stack enter-3' }, h('h3', null, '2. Welcher Look?'), h('p', { class: 'muted small' }, 'Tippt die Looks an, um sie auszuprobieren.'), lookRow),
-        h('div', { class: 'row end' }, ui.btn('Crew gründen', async () => {
-          const name = (input.value.trim() || chosen || '').slice(0, 24);
-          if (!name) { ui.toast('Wählt zuerst einen Namen.'); return; }
-          S.crew.name = name; S.crew.look = look; S.crew.founded = true; CREW.save();
-          CREW.sound.play('unlock'); ui.confetti();
-          renderHome();
-        }, { big: true, icon: 'check', id: 'btn-found' })),
+        h('div', { class: 'row end' }, foundBtn),
       ]);
+      foundLabel();
+      if (st) st.scrollTop = keepTop;
+      // Hinweis oder gewählter Name: Namens-Kasten UND Gründen-Knopf zusammen im Bild
+      if (needName || chosen) showNameAndButton(nameCard, needName);
     };
+    function showNameAndButton(card, smooth) {
+      const st = document.getElementById('stage');
+      if (!st || !foundBtn.isConnected) return;
+      const box = st.getBoundingClientRect();
+      const top = card.getBoundingClientRect().top - box.top - 12;       // Platz über dem Kasten
+      const bottom = foundBtn.getBoundingClientRect().bottom - box.bottom + 16; // fehlt unter dem Knopf
+      let dy = 0;
+      if (bottom > 0) dy = Math.min(bottom, Math.max(0, top)); // runter, aber Kasten-Oberkante bleibt sichtbar
+      else if (top < 0) dy = Math.max(top, bottom);            // hoch, aber Knopf bleibt sichtbar
+      if (dy) st.scrollBy({ top: dy, behavior: smooth ? 'smooth' : 'auto' });
+    }
+    // Solange kein Name da ist, sagt der Knopf, was fehlt
+    const foundBtn = ui.btn('Crew gründen', () => {
+      const inp = document.getElementById('crew-name');
+      const name = ((inp && inp.value.trim()) || chosen || '').slice(0, 24);
+      if (!name) { CREW.sound.play('soft'); needName = true; draw(); return; }
+      S.crew.name = name; S.crew.look = look; S.crew.founded = true;
+      S.seen = S.seen || {}; S.seen.howto = false; // gleich danach einmal „So geht CREW“
+      CREW.save();
+      CREW.sound.play('unlock'); ui.confetti();
+      renderHome();
+    }, { big: true, icon: 'check', id: 'btn-found' });
+    function foundLabel() {
+      const has = !!chosen;
+      foundBtn.querySelector('span:not(.ic)').textContent = has ? 'Crew gründen' : 'Erst Namen wählen';
+      foundBtn.classList.toggle('ghost', !has);
+    }
     draw();
   }
 
@@ -11068,6 +11318,7 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
     endRun();
     run = { token: ++tokenCounter, skipWaiter: null, inMission: false, phase: 'setup', startedAt: Date.now() };
     renderTopbar();
+    requestAnimationFrame(coachXPause);
     try {
       // 1) Wer ist da?
       const size = await askCrewSize();
@@ -11145,11 +11396,17 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
     const t = guard();
     const wx = CREW.WEATHER;
     const firstWeek = S.history.length < 5;
-    const legend = h('div', { class: 'grid three' }, wx.map((w) => h('div', { class: 'card soft row', style: { flexWrap: 'nowrap' } }, CREW.weatherIcon(w.id, 60), h('div', null, h('b', null, w.label), firstWeek ? h('div', { class: 'muted small' }, w.hint) : null))));
+    // Am Beamer nur eine Legende zum Nachlesen: Gewählt wird auf dem eigenen iPad
+    const legend = h('div', { class: 'wx-legend', 'aria-label': 'Legende' },
+      h('span', { class: 'eyebrow' }, 'Legende · nur zum Nachlesen'),
+      h('div', { class: 'wx-legend-grid' }, wx.map((w) => h('div', { class: 'wx-leg' }, CREW.weatherIcon(w.id, 48), h('div', null, h('b', null, w.label), firstWeek ? h('div', { class: 'muted small' }, w.hint) : null)))));
     const wrap = ui.screen([
       h('div', { class: 'row between enter' }, h('div', { class: 'stack', style: { gap: '4px' } }, h('span', { class: 'eyebrow' }, 'Crew-Wetterbericht'), h('h2', null, 'Wetter-Check: Wie ist’s heute bei dir?')), ui.paddleHint('wetter')),
-      h('p', { class: 'lead muted enter-2' }, 'Stell es geheim ein. Dreh die Karte nur zur Lehrkraft. Die anderen schauen nach vorn.'),
-      h('div', { class: 'enter-2' }, legend),
+      h('div', { class: 'wx-callout enter-2' }, CREW.icon('phone', 40),
+        h('div', { class: 'stack', style: { gap: '2px' } },
+          h('b', { class: 'wx-callout-t' }, 'Das wählt jede:r auf dem eigenen iPad.'),
+          h('span', null, 'Geheim einstellen. Karte nur zur Lehrkraft drehen. Die anderen schauen nach vorn.'))),
+      h('div', { class: 'enter-3' }, legend),
     ]);
     const r = await waitX(ui.choice(wrap, [{ label: 'Überspringen', value: 'skip', variant: 'ghost' }, { label: 'Alle bereit', value: 'go', iconRight: 'right' }]), t, 'skip');
     if (r === 'skip') return { skipped: true };
@@ -11157,7 +11414,7 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
     if (!run || run.token !== t) throw new Abort();
     // Schnell: ein Tipp für die ganze Crew. Genauer zählen nur, wenn die Lehrkraft will.
     const w2 = ui.screen([
-      h('div', { class: 'stack', style: { alignItems: 'center', textAlign: 'center' } }, h('span', { class: 'eyebrow' }, 'Nur für die Lehrkraft'), h('h2', null, 'Was zeigt die Crew?'), ui.scanBar('Wetter-Scan läuft …')),
+      h('div', { class: 'stack', style: { alignItems: 'center', textAlign: 'center' } }, h('span', { class: 'eyebrow' }, 'Nur für die Lehrkraft'), h('h2', null, 'Was zeigt die Crew?'), ui.scanBar('Karten ansehen, dann tippen')),
     ], { center: true, narrow: true });
     const quick = await waitX(ui.choice(w2, [
       { label: 'Alle eher sonnig', value: 'sonnig', icon: 'star', id: 'wx-sonnig' },
@@ -11171,7 +11428,7 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
     if (quick === 'count') {
       const ta = ui.tally(wx.map((w) => ({ id: w.id, label: w.label, icon: CREW.weatherIcon(w.id, 56) })), { max: size, onFull: () => ui.autoNext('wx-show', () => ta.total() >= size) });
       const w3 = ui.screen([
-        h('div', { class: 'row between' }, h('div', { class: 'stack' }, h('span', { class: 'eyebrow' }, 'Nur für die Lehrkraft'), h('h2', null, 'Wetter zählen')), ui.scanBar('Wetter-Scan läuft …')),
+        h('div', { class: 'row between' }, h('div', { class: 'stack' }, h('span', { class: 'eyebrow' }, 'Nur für die Lehrkraft'), h('h2', null, 'Wetter zählen')), ui.scanBar('Karten ansehen, dann tippen')),
         h('p', { class: 'muted' }, 'Tippe auf ein Wetter, einmal pro Karte. Namen werden nicht gespeichert.'),
         ta.el,
       ]);
@@ -11224,7 +11481,7 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
       return null;
     }
     for (;;) {
-      if (!m) m = await pickMissionList(ms, t);
+      if (!m) m = await pickMissionList(ms, t, !missionForToday());
       const wrap = ui.screen([
         h('div', { class: 'stack enter', style: { alignItems: 'center', textAlign: 'center' } },
           h('span', { class: 'eyebrow' }, 'Mission des Tages'),
@@ -11239,10 +11496,11 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
       m = null;
     }
   }
-  function pickMissionList(ms, t) {
+  function pickMissionList(ms, t, free) {
     return run_wait(new Promise((resolve) => {
       ui.screen([
-        h('div', { class: 'stack' }, h('span', { class: 'eyebrow' }, 'Mission wählen'), h('h2', null, 'Worauf habt ihr Lust?')),
+        h('div', { class: 'stack' }, h('span', { class: 'eyebrow' }, free ? 'Freie Wahl' : 'Mission wählen'), h('h2', null, 'Worauf habt ihr Lust?'),
+          free ? h('p', { class: 'lead muted' }, 'Heute gibt es keine feste Mission: Ihr wählt frei aus ' + ms.length + (ms.length === 1 ? ' Mission.' : ' Missionen.')) : null),
         h('div', { class: 'grid two' }, ms.map((m) => {
           const t2 = h('button', { type: 'button', class: 'tile', 'data-mission': m.id },
             h('span', { class: 't-title' }, m.title),
@@ -11462,6 +11720,7 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
     endRun();
     run = { token: ++tokenCounter, skipWaiter: null, inMission: false, solo: true };
     renderTopbar();
+    requestAnimationFrame(coachXPause);
     const ctx = makeCtx(g, 1);
     ctx.solo = true;
     ctx.best = (key, value, higherIsBetter) => {
@@ -11628,6 +11887,9 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
           ui.btn(S.settings.sound ? 'Töne: AN' : 'Töne: AUS', () => { S.settings.sound = !S.settings.sound; CREW.save(); renderTeacher('einstellungen'); }, { variant: S.settings.sound ? 'good' : 'ghost', small: true }),
           ui.btn(S.settings.speech ? 'Vorlesen: AN' : 'Vorlesen: AUS', () => { S.settings.speech = !S.settings.speech; CREW.save(); renderTopbar(); renderTeacher('einstellungen'); }, { variant: S.settings.speech ? 'good' : 'ghost', small: true }),
           ui.btn('Vorlesen testen', () => CREW.speak('Moien Crew! So klingt die Vorlesestimme.'), { variant: 'ghost', small: true, icon: 'speaker' }))),
+      h('div', { class: 'card stack' }, h('h3', null, 'Erklärungen'),
+        h('p', { class: 'muted small' }, 'Die Einmal-Erklärungen („So geht CREW“, X und Pause, Hitze bei Clash) auf diesem Gerät noch einmal zeigen.'),
+        h('div', { class: 'row end' }, ui.btn('Erklärungen wieder zeigen', () => { S.seen = { howto: false }; CREW.save(); ui.toast('Die Erklärungen kommen beim nächsten Mal wieder.'); }, { small: true, variant: 'ghost', icon: 'undo', id: 't-reset-seen' }))),
       h('div', { class: 'card stack' }, h('h3', null, 'PIN ändern'), pinIn, h('div', { class: 'row end' }, ui.btn('PIN speichern', () => { const v = pinIn.value.trim(); if (!/^\d{4,8}$/.test(v)) { ui.toast('Bitte 4 bis 8 Ziffern.'); return; } S.settings.pin = v; CREW.save(); pinIn.value = ''; ui.toast('Neue PIN gespeichert.'); }, { small: true }))));
   }
 
@@ -11672,11 +11934,7 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
     return h('div', { class: 'stack' },
       h('div', { class: 'card stack' }, h('h3', null, 'So läuft eine Session (ca. 10 Minuten)'),
         h('ol', { class: 'stack', style: { margin: 0, paddingLeft: '1.2em' } },
-          h('li', null, 'CREW am Beamer oder auf dem Lehrer-iPad öffnen. Die Jugendlichen öffnen auf ihren iPads die „Antwort-Karte“.'),
-          h('li', null, 'Wetter-Check (1 Min.): Jede:r stellt geheim das Wetter ein und dreht die Karte nur zu dir. Die anderen schauen nach vorn. Du tippst einmal: sonnig, gemischt oder Sturm. „Genauer zählen“ ist freiwillig; genaue Zahlen erscheinen erst ab 6 Leuten.'),
-          h('li', null, 'Mission des Tages (4–5 Min.): Jeder Wochentag hat ein eigenes Spiel. Mit „Andere Mission“ kannst du tauschen. Eine Sitzungs-Uhr kürzt Runden, wenn die Zeit knapp wird.'),
-          h('li', null, 'Nachspielzeit (1–2 Min.): Eine Frage, freiwillig. Das ist der wichtigste Teil.'),
-          h('li', null, 'Energie fließt ins gemeinsame Crew-HQ und wird sofort nach der Mission gespeichert. Beim Level-up wählt die Crew per A/B ein neues Teil. Es gibt keine Einzel-Rangliste.'))),
+          GUIDE_STEPS.map(([title, text], i) => h('li', null, i === 0 || i === 4 ? text : title + ': ' + text)))),
       h('div', { class: 'card stack' }, h('h3', null, 'Wochenplan'), h('div', { class: 'list' }, byDay)),
       h('div', { class: 'card stack' }, h('h3', null, 'Sicherheitsregeln im Spiel'),
         h('ul', { class: 'stack', style: { margin: 0, paddingLeft: '1.2em' } },

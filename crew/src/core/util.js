@@ -93,6 +93,7 @@
     solo: {},             // Bestwerte pro Solo-Spiel (ohne Namen)
     hq: { owned: [] },    // Crew-HQ: freigeschaltete Teile (Nummern 1–12), von der Crew gewählt
     records: {},          // Crew-Rekord (beste Punkte) pro Mission – nur für die ganze Crew
+    seen: {},             // Einmal-Erklärungen, die dieses Gerät schon gezeigt hat (z. B. xpause, clashHeat)
   });
 
   function deepMerge(base, extra) {
@@ -175,6 +176,17 @@
     return chosen;
   }
 
+  /* ---------- Einmal-Erklärungen ---------- */
+  // true = schon gezeigt. firstTime(key) liefert true genau einmal pro Gerät und merkt es sich.
+  function seen(key) { return !!(state.seen && state.seen[key]); }
+  function firstTime(key) {
+    if (seen(key)) return false;
+    state.seen = state.seen || {};
+    state.seen[key] = true;
+    save();
+    return true;
+  }
+
   CREW.content = CREW.content || {};
   CREW.util = { h, append, clear, shuffle, pick, clamp, sleep, todayISO, weekday, WEEKDAYS, escapeHtml };
   CREW.store = store;
@@ -187,6 +199,8 @@
   CREW.LEVELS = LEVELS;
   CREW.levelInfo = levelInfo;
   CREW.pickContent = pickContent;
+  CREW.seen = seen;
+  CREW.firstTime = firstTime;
 
   /* ---------- Registrierung von Modulen ---------- */
   CREW.missions = CREW.missions || [];

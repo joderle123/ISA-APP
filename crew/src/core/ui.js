@@ -12,6 +12,8 @@
     const o = opts || {};
     const st = stage();
     CREW.stopSpeaking();
+    // Einmal-Sprechblasen gehören zum alten Bildschirm
+    overlays().querySelectorAll('.coach').forEach((c) => c.remove());
     clear(st);
     const wrap = h('div', { class: 'wrap' + (o.center ? ' center' : '') + (o.narrow ? ' narrow' : '') }, children);
     st.appendChild(wrap);
@@ -171,9 +173,26 @@
     }, ms || 600);
   }
 
-  /* „Scan läuft …“-Balken: zeigt, dass das Spiel gerade auf die Antworten wartet */
+  /* Wartebalken: zeigt, dass das Spiel gerade auf die Eingabe der Lehrkraft wartet */
   function scanBar(text) {
-    return h('div', { class: 'scanbar', role: 'status' }, h('span', { class: 'scanbar-t' }, text || 'Scan läuft …'), h('i', { 'aria-hidden': 'true' }));
+    return h('div', { class: 'scanbar', role: 'status' }, h('span', { class: 'scanbar-t' }, text || 'Lehrkraft tippt ein …'), h('i', { 'aria-hidden': 'true' }));
+  }
+  /* Klare Zeile für die Lehrkraft am Beamer: Was tippe ich jetzt? */
+  function teacherLine(text) {
+    return h('div', { class: 'teacher-line', role: 'status' }, CREW.icon('user', 20), h('span', null, h('b', null, 'Lehrkraft: '), text));
+  }
+  /* Kurzer Hinweis auf die X-Karte (Solo-Intros, Chill-Zone) */
+  function xHint(text) {
+    return h('p', { class: 'x-hint' }, h('span', { class: 'x-chip', 'aria-hidden': 'true' }, 'X'), h('span', null, text || 'Mit dem X oben rechts kannst du jede Karte überspringen. Ohne Grund.'));
+  }
+  /* Nummerierte Schritte mit Symbol (Vorbild: Radar-Intro). items: [{ icon, title, text, extra }] */
+  function steps(items, opts) {
+    const o = opts || {};
+    return h('div', { class: 'howto' + (o.row ? ' row3' : '') }, items.map((it, i) =>
+      h('div', { class: 'howto-step card' + (o.enter === false ? '' : ' enter-' + Math.min(3, i + 1)) },
+        h('span', { class: 'howto-num' }, String(i + 1)),
+        it.icon ? h('span', { class: 'howto-ic' }, CREW.icon(it.icon, o.row ? 40 : 28)) : null,
+        h('div', { class: 'stack', style: { gap: '4px' } }, h('b', { class: 'howto-title' }, it.title), it.text ? h('span', { class: 'muted' }, it.text) : null, it.extra || null))));
   }
 
   /* Globale Pause: Timer (und Module, die SK/CREW.isPaused() abfragen) warten */
@@ -226,10 +245,12 @@
       CREW.sound.play('count');
       await sleep(650);
     }
+    // Das Signalwort bleibt lange und groß stehen (≈1,8 s), damit es niemand verpasst
     clear(ov);
-    ov.appendChild(h('div', { class: 'countdown-big', style: { fontSize: 'clamp(3em, 10vw, 7em)' } }, text || 'Zeigt her!'));
+    ov.style.background = 'color-mix(in srgb, var(--ink) 72%, transparent)';
+    ov.appendChild(h('div', { class: 'countdown-big countdown-signal' }, text || 'Zeigt her!'));
     CREW.sound.play('go');
-    await sleep(900);
+    await sleep(1800);
     ov.remove();
   }
 
@@ -248,7 +269,7 @@
       if (o.dismissable !== false) ov.addEventListener('click', (e) => { if (e.target === ov) close(null); });
       root.appendChild(ov);
       const first = actions.querySelector('button');
-      if (first) first.focus();
+      if (first) first.focus({ preventScroll: true });
     });
   }
   const confirm = (title, body, yes, no) =>
@@ -305,12 +326,12 @@
 
   /* Hinweis, welche Antwort-Karte die Jugendlichen öffnen sollen */
   const PADDLES = {
-    wetter: 'Wetter', zahl: 'Zahl 0–10', janein: 'Ja / Nein', abcd: 'A B C D', emo: 'Gefühl',
+    wetter: 'Wetter', zahl: 'Zahl 0–10', janein: 'Ja / Nein', abcd: 'A B C D', abc: 'A B C', emo: 'Gefühl',
   };
   function paddleHint(type, extra) {
     return h('div', { class: 'paddle-hint' }, CREW.icon('phone', 22), h('span', null, 'Antwort-Karte: ', h('b', null, PADDLES[type] || type), extra ? ' · ' + extra : ''));
   }
 
   CREW.isPaused = isPaused;
-  CREW.ui = { setPaused, isPaused, revealRow, screen, btn, iconBtn, speakBtn, say, choice, next, stepper, tally, valuePad, autoNext, scanBar, timer, threeTwoOne, modal, confirm, toast, confetti, countUp, paddleHint, PADDLES, stage, overlays };
+  CREW.ui = { setPaused, isPaused, revealRow, screen, btn, iconBtn, speakBtn, say, choice, next, stepper, tally, valuePad, autoNext, scanBar, teacherLine, xHint, steps, timer, threeTwoOne, modal, confirm, toast, confetti, countUp, paddleHint, PADDLES, stage, overlays };
 })();

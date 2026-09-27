@@ -77,8 +77,8 @@
         });
         const cnt = h('b', { class: 'display' }, '0');
         const w2 = ctx.screen([
-          h('div', { class: 'row between' }, h('span', { class: 'eyebrow' }, 'Wer steht?'), ui.scanBar()),
-          h('h2', null, 'Tippe so viele Figuren an, wie gerade stehen.'),
+          h('div', { class: 'row between' }, h('span', { class: 'eyebrow' }, 'Wer steht?'), ui.teacherLine('Tippt an, wie viele stehen')),
+          h('h2', null, 'Eine Figur pro Person, die steht. Keine Namen.'),
           h('div', { class: 'sa-crowd' }, people),
           h('p', { class: 'lead', style: { textAlign: 'center' } }, 'Stehen: ', cnt),
         ]);
@@ -89,7 +89,7 @@
         await ui.threeTwoOne('Zeigt eure Schätzung!');
         const vp = ui.valuePad({ count: N, min: 0, max: N, placeholder: 'Tippe die gezeigten Zahlen ein …', onFull: () => ui.autoNext('sa-reveal', () => vp.get().length >= N) });
         const w3 = ctx.screen([
-          h('div', { class: 'row between' }, h('span', { class: 'eyebrow' }, 'Schätzungen'), ui.scanBar()),
+          h('div', { class: 'row between' }, h('span', { class: 'eyebrow' }, 'Schätzungen'), ui.teacherLine('Tippt die gezeigten Zahlen ein')),
           h('h2', null, 'Welche Zahlen seht ihr?'),
           h('div', { class: 'card' }, vp.el),
         ]);

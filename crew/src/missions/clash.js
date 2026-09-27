@@ -299,6 +299,7 @@
         meter.el),
       cm.el,
       h('div', { class: 'row between clash-foot' }, h('p', { class: 'muted' }, 'Wie schaukelt sich der Streit hoch?'), ui.speakBtn(readAll)),
+      G.solo ? ui.xHint('Mit dem X oben rechts kannst du jede Szene und jede Stufe überspringen. Ohne Grund.') : null,
     ]);
     wrap.dataset.clash = 'intro';
     const n = sc.intro.length;
@@ -315,6 +316,16 @@
     await ctx.sleep(1000);
     cm.stamp('Stopp!');
     CREW.sound.play('go');
+    // Einmal pro Gerät erklären, warum die Hitze schon so hoch ist, bevor die Crew etwas tut
+    if (CREW.firstTime('clashHeat')) {
+      const foot = wrap.querySelector('.clash-foot');
+      const hint = h('div', { class: 'clash-heat-hint pop', role: 'status' }, h('span', { class: 'clash-flame' }, ownIcon('flame', 26)),
+        h('span', null, G.solo
+          ? 'So heiß ist der Streit schon, bevor du eingreifst. Deine Antworten senken oder erhöhen die Hitze.'
+          : 'So heiß ist der Streit schon, bevor ihr eingreift. Eure Antworten senken oder erhöhen die Hitze.'));
+      const line = foot && foot.querySelector('p');
+      if (line) line.replaceWith(hint); else wrap.appendChild(hint);
+    }
     await ctx.sleep(450);
     const r = await ask(G, wrap, [
       { label: 'Andere Szene', value: 'swap', variant: 'ghost', icon: 'shuffle' },
@@ -436,7 +447,8 @@
         h('span', { class: 'pill ' + (info.good ? 'good' : 'accent') }, info.label),
         h('span', { class: 'clash-delta ' + (delta <= 0 ? 'down' : 'up') }, 'Hitze ' + (delta <= 0 ? '−' : '+') + Math.abs(delta))),
       h('p', { class: 'lead' }, info.line),
-      listenTip);
+      listenTip,
+      info.good ? null : h('p', { class: 'clash-rw-hint' }, ownIcon('rewind', 20), h('span', null, h('b', null, 'Zurückspulen: '), 'Nochmal probieren. Die Antwort zählt dann nicht.')));
     fb.style.visibility = 'hidden';
     const wrap = ctx.screen([hud(G, meter), cm.el, fb]);
     wrap.dataset.clash = 'result';

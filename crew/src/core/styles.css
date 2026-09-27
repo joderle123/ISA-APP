@@ -654,3 +654,72 @@ textarea { min-height: 120px; font-family: ui-monospace, Menlo, monospace; font-
 .sa-fuse { height: 12px; border-radius: 99px; background: var(--accent); width: 100%; animation: sa-fuse 5s linear forwards; transform-origin: left; }
 @keyframes sa-fuse { to { transform: scaleX(0); } }
 @media (prefers-reduced-motion: reduce) { .sa-ball.drop { animation: none; opacity: 1; transform: translateY(34px); } .sa-fuse { animation: none; } }
+
+/* ---------- Erklären: Schritte, Sprechblase, Hinweise ---------- */
+.howto { display: grid; gap: 12px; }
+.howto.row3 { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
+.howto-step { position: relative; display: flex; gap: 14px; align-items: flex-start; padding: 14px 16px; box-sizing: border-box; }
+.howto.row3 .howto-step { flex-direction: column; align-items: center; text-align: center; padding: 26px 18px 20px; }
+.howto-num {
+  flex: none; display: grid; place-items: center; width: 42px; height: 42px; border-radius: 50%;
+  font-family: var(--font-display); font-size: 1.3em;
+  background: var(--accent); color: var(--accent-ink); border: var(--bw) solid var(--line);
+}
+.howto.row3 .howto-num { position: absolute; top: -14px; left: 14px; width: 38px; height: 38px; font-size: 1.15em; }
+.howto-ic { display: grid; place-items: center; color: var(--yellow); }
+.howto.row3 .howto-ic { width: 84px; height: 84px; border-radius: 50%; background: color-mix(in srgb, var(--yellow) 18%, transparent); border: 2px solid var(--line); }
+.howto-title { font-family: var(--font-display); text-transform: var(--display-case); letter-spacing: var(--display-track); font-size: 1.2em; }
+.app[data-look="neon"] .howto-num { background: transparent; color: var(--accent); border-color: var(--accent); }
+.app[data-look="pixel"] .howto-num, .app[data-look="pixel"] .howto.row3 .howto-ic { border-radius: 0; }
+
+.coach {
+  position: absolute; z-index: 5; width: min(380px, calc(100vw - 24px)); box-sizing: border-box;
+  display: flex; flex-direction: column; gap: 10px; padding: 14px 16px;
+  background: var(--bg2); color: var(--text);
+  border: var(--bw) solid var(--yellow); border-radius: var(--radius);
+  box-shadow: 0 var(--lift) 0 var(--line), var(--glow);
+  pointer-events: auto;
+  animation: pop-in 240ms cubic-bezier(.2,1.4,.4,1) both;
+}
+.coach-arrow { position: absolute; top: -12px; width: 20px; height: 20px; background: var(--bg2); border-left: var(--bw) solid var(--yellow); border-top: var(--bw) solid var(--yellow); transform: rotate(45deg); }
+.coach-rows { display: flex; flex-direction: column; gap: 8px; }
+.coach-row { display: flex; align-items: center; gap: 12px; line-height: 1.3; }
+.coach-ic {
+  flex: none; display: grid; place-items: center; width: 38px; height: 38px; border-radius: var(--radius-sm);
+  background: var(--panel); border: 2px solid var(--line); color: var(--text); font-family: var(--font-display); font-size: 1.1em;
+}
+.coach-ic.x { background: var(--teamB); color: var(--teamB-ink); }
+.app[data-look="neon"] .coach-ic.x { background: transparent; color: var(--teamB); border-color: var(--teamB); }
+
+.x-hint { display: flex; align-items: center; gap: 10px; margin: 0; color: var(--muted); font-size: 0.9em; }
+.x-chip { flex: none; display: grid; place-items: center; width: 30px; height: 30px; border-radius: 8px; background: var(--teamB); color: var(--teamB-ink); border: 2px solid var(--line); font-family: var(--font-display); }
+.app[data-look="neon"] .x-chip { background: transparent; color: var(--teamB); border-color: var(--teamB); }
+
+.teacher-line {
+  display: inline-flex; align-items: center; gap: 8px; padding: 7px 14px; border-radius: 99px;
+  background: var(--yellow); color: var(--yellow-ink); border: 2px solid var(--line); font-weight: 600; font-size: 0.95em;
+}
+.app[data-look="neon"] .teacher-line { background: transparent; color: var(--yellow); border-color: var(--yellow); }
+
+.need-msg { display: flex; align-items: center; gap: 8px; margin: 0; font-weight: 700; color: var(--yellow); }
+.card.need { border-color: var(--yellow); box-shadow: 0 0 0 4px color-mix(in srgb, var(--yellow) 55%, transparent), 0 var(--lift) 0 var(--line); animation: shake 420ms ease both; }
+.card.need input { border-color: var(--yellow); }
+
+.countdown-signal { font-size: clamp(3.6em, 12vw, 9em); max-width: 92vw; animation: count-pop 520ms cubic-bezier(.2,1.4,.4,1) both; }
+
+.quick-steps { margin: 0; padding-left: 1.4em; display: flex; flex-direction: column; gap: 8px; }
+.quick-steps li { padding-left: 4px; }
+.quick-steps li b { display: block; }
+
+/* Wetter-Check am Beamer: Hinweis aufs eigene iPad + Legende (nicht antippbar) */
+.wx-callout {
+  display: flex; align-items: center; gap: 16px; padding: 14px 18px; border-radius: var(--radius);
+  background: color-mix(in srgb, var(--good) 18%, transparent); border: var(--bw) solid var(--good);
+}
+.wx-callout .ic { color: var(--good); }
+.wx-callout-t { font-family: var(--font-display); text-transform: var(--display-case); letter-spacing: var(--display-track); font-size: 1.35em; }
+.wx-legend { display: flex; flex-direction: column; gap: 8px; padding: 12px 14px; border-radius: var(--radius); border: 2px dashed color-mix(in srgb, var(--text) 35%, transparent); pointer-events: none; }
+.wx-legend-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 6px 16px; }
+.wx-leg { display: flex; align-items: center; gap: 10px; opacity: .9; }
+.howto-screen { justify-content: center; }
+.howto-screen .howto.row3 { margin-top: 10px; }

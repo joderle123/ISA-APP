@@ -12,12 +12,24 @@ for (const [vpName, vp] of Object.entries({ ipadLandscape: VIEWPORTS.ipadLandsca
   await waitText(page, 'Gründet eure Crew');
   await shot(page, tag('01-gruendung'));
   problems.push(...await layoutCheck(page, tag('gruendung')));
+  // Vor der Gründung: kein „Rohbau“ oben; ohne Namen sagt der Knopf, was fehlt
+  if (await page.locator('.energy-mini').count()) problems.push(`${tag('gruendung')}: Energie-Balken vor der Gründung sichtbar`);
+  await page.locator('#btn-found', { hasText: 'Erst Namen wählen' }).click();
+  if (!(await page.locator('.card.need').count())) problems.push(`${tag('gruendung')}: Namens-Kasten ohne Hervorhebung`);
+  if (await page.evaluate(() => window.CREW.state.crew.founded)) problems.push(`${tag('gruendung')}: ohne Namen gegründet`);
   await page.locator('.chip').first().click();
   await page.locator('[data-look="pixel"]').click();
   await shot(page, tag('02-gruendung-pixel'));
   await page.locator('[data-look="arena"]').click();
   await clickText(page, 'Crew gründen');
+  // Einmal nach der Gründung: „So geht CREW“ (3 Schritte), dann Start
+  await waitText(page, 'So geht CREW');
+  await shot(page, tag('02c-so-geht-crew'));
+  problems.push(...await layoutCheck(page, tag('so-geht-crew')));
+  if ((await page.locator('.howto-step').count()) !== 3) problems.push(`${tag('so-geht-crew')}: erwartet 3 Schritte`);
+  await page.locator('#howto-go').click();
   await page.locator('.modal, #tile-session').first().waitFor();
+  if (await page.evaluate(() => window.CREW.state.seen.howto !== true)) problems.push(`${tag('so-geht-crew')}: nicht als gesehen gespeichert`);
 
   // Start
   await page.locator('#tile-session').waitFor();
@@ -54,7 +66,7 @@ for (const [vpName, vp] of Object.entries({ ipadLandscape: VIEWPORTS.ipadLandsca
   for (let i = 0; i < 3; i++) {
     if (i === 2) await waitText(page, 'Goldene Karte', 5000);
     await clickText(page, 'Alle haben geschätzt');
-    await waitText(page, 'Tippe so viele Figuren an', 8000);
+    await waitText(page, 'Eine Figur pro Person', 8000);
     await page.locator('.sa-person').nth(0).click();
     await page.locator('.sa-person').nth(1).click();
     if (i === 0) { await shot(page, tag('09-stehauf-stehen')); problems.push(...await layoutCheck(page, tag('stehen'))); }
@@ -97,8 +109,15 @@ for (const [vpName, vp] of Object.entries({ ipadLandscape: VIEWPORTS.ipadLandsca
   await shot(page, tag('16-paddle-wetter'));
   problems.push(...await layoutCheck(page, tag('paddle-wetter')));
 
-  // Lehrermodus
+  // Schnellstart für Vertretung (ohne PIN)
   await page.locator('#btn-home').click();
+  await page.locator('#tile-quick').click();
+  await waitText(page, 'Schnellstart für Vertretung');
+  if ((await page.locator('.modal .quick-steps li').count()) !== 5) problems.push(`${tag('schnellstart')}: erwartet 5 Schritte`);
+  await shot(page, tag('16b-schnellstart'));
+  await page.locator('.modal button', { hasText: 'Alles klar' }).click();
+
+  // Lehrermodus
   await page.locator('#tile-teacher').click();
   for (const d of ['1', '2', '3', '4']) await page.locator('.valuepad button', { hasText: new RegExp('^' + d + '$') }).click();
   // Start-PIN: erst eine eigene PIN festlegen

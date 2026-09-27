@@ -558,7 +558,8 @@
         h('span', { class: 'eyebrow' }, 'Solo · Stärken-Training'),
         h('h1', { class: 'outline-text' }, 'Konter-Rush'),
         h('p', { class: 'lead' }, 'Du siehst eine Stärke. Welcher Spruch steckt dahinter?'),
-        h('p', { class: 'muted' }, SOLO_CARDS + ' Karten. Kein Zeitdruck. Jeder Treffer baut deinen Turm.')),
+        h('p', { class: 'muted' }, SOLO_CARDS + ' Karten. Kein Zeitdruck. Jeder Treffer baut deinen Turm.'),
+        ui.xHint()),
       h('div', { class: 'reframe-solo-demo enter-2' }, flipTag(demoCard, { demo: true, small: true }).el),
     ]);
     await ctx.waitFor(ui.choice(vi.acts, [{ label: 'Start', value: 'go', iconRight: 'play', id: 'rf-solo-start' }]));

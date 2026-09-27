@@ -193,6 +193,7 @@
       h('div', { class: 'solo-dec-start enter-3' },
         h('div', { class: 'stack', style: { gap: '6px' } },
           h('span', { class: 'muted small' }, SCENES + ' Szenen · Gefühl bis +3 · Stärke +1 · Weniger Hinweise = mehr Punkte'),
+          ui.xHint('Mit dem X oben rechts kannst du jede Szene überspringen. Ohne Grund.'),
           rec != null ? h('span', { class: 'pill', id: 'dec-record' }, CREW.icon('trophy', 18), 'Dein Rekord: ' + rec + ' Punkte') : null),
         h('div', { class: 'row solo-dec-start-btns' },
           ui.btn('Zurück', () => done('back'), { variant: 'ghost', icon: 'left' }),

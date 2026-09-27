@@ -194,7 +194,7 @@ export default {
         const dx = n.position.x - camera.position.x, dz = n.position.z - camera.position.z;
         const dist = Math.hypot(n.position.x - p.x, n.position.z - p.z);
         const inView = (dx * camDir.x + dz * camDir.z) / (Math.hypot(dx, dz) || 1) > -0.25;
-        list.push({ id: n.id, dist, inView, hidden: n.hidden && !n.override, priority: n.busy ? 1 : 0 });
+        list.push({ id: n.id, dist, inView, hidden: n.hidden && !(n.override && !n.override.hidden), priority: n.busy ? 1 : 0 });
       }
       const r = pickAnimated(list, budget().animated, budget());
       for (const n of npcs.values()) n.setLod(r.animated.has(n.id) ? 'full' : r.lite.has(n.id) ? 'lite' : 'hidden');

@@ -165,7 +165,7 @@ export function createNpc({ game, def, root, resolveSite, look, rng, names = () 
     get site() { return curSite; },
     get entry() { return curEntry; },
     get override() { return override; },
-    get hidden() { return hiddenByRoutine; },
+    get hidden() { return hiddenByRoutine || !!(override && override.hidden); },
     get name() { return tag.name || displayName(def, names()); },
     get color() { return def.color || '#ffd166'; },
     get busy() { return !!override || !!facing; },
@@ -179,7 +179,7 @@ export function createNpc({ game, def, root, resolveSite, look, rng, names = () 
       else { if (wasFull) h.setDetail('lite'); if (l === 'lite') settleAndBake(); else dropImpostor(); }
       applyShadows();
     },
-    // Übersteuerung (Nachtwache, Szene): Ort, Blick, Animation, Posen. Der Tagesablauf pausiert.
+    // Übersteuerung (Nachtwache, Szene): Ort, Blick, Animation, Posen, hidden. Der Tagesablauf pausiert.
     setOverride(o) {
       override = o ? { ...o } : null;
       if (override && typeof override.x === 'number') target = { x: override.x, z: override.z, anim: override.anim || 'idle', site: null };
@@ -195,7 +195,8 @@ export function createNpc({ game, def, root, resolveSite, look, rng, names = () 
     update(dt, ctx) {
       const { hour, camera, playerPos, view, bond = 0, verstimmt = false } = ctx;
       if (!override) routine(hour, playerPos);
-      if (hiddenByRoutine && !override) { h.group.visible = false; return; }
+      // Szene kann Figuren kurz ausblenden (override.hidden, z. B. stille Nachtszene)
+      if ((hiddenByRoutine && !override) || (override && override.hidden)) { h.group.visible = false; return; }
       if (lod !== 'hidden') h.group.visible = true;
       // Laufen zum Ziel
       if (target) {

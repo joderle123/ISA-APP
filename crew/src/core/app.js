@@ -42,10 +42,11 @@
       h('button', { type: 'button', class: 'crew-badge', style: { background: 'none', border: 0, color: 'inherit', padding: 0, cursor: 'pointer' }, onclick: () => goHome(), 'aria-label': 'Zum Start' },
         h('span', { class: 'logo', html: CREW.LOGO }),
         h('span', { class: 'name' }, S.crew.name || 'CREW')),
-      h('div', { class: 'energy-mini', title: 'Crew-Energie' },
+      // Vor der Gründung gibt es noch kein HQ: kein „Rohbau“-Balken, der wie ein Ladefehler wirkt
+      S.crew.founded ? h('div', { class: 'energy-mini', title: 'Crew-Energie' },
         CREW.icon('bolt', 22),
         h('span', { class: 'lvl' }, li.level ? 'Level ' + li.level : 'Rohbau'),
-        h('div', { class: 'bar' }, fill)),
+        h('div', { class: 'bar' }, fill)) : null,
       h('div', { class: 'spacer' }),
       run ? ui.iconBtn(null, onXCard, { text: 'X', cls: 'xcard', label: 'X-Karte: Diese Karte überspringen', id: 'btn-x' }) : null,
       run ? ui.iconBtn('pause', showPause, { label: 'Pause', id: 'btn-pause' }) : null,
@@ -77,13 +78,51 @@
     }
     ui.setPaused(false);
     run = null;
+    closeCoach();
     CREW.stopSpeaking();
     renderTopbar();
+  }
+
+  /* Die Knöpfe oben, kurz erklärt (Sprechblase beim ersten Mal, Hilfe, Schnellstart) */
+  function safetyRows(o) {
+    const withAll = o && o.all;
+    const row = (ic, name, text) => h('div', { class: 'coach-row' }, ic, h('span', null, h('b', null, name + ': '), text));
+    return h('div', { class: 'coach-rows' },
+      row(h('span', { class: 'coach-ic x' }, 'X'), 'X-Karte', 'Karte überspringen, ohne Grund. Keiner fragt nach.'),
+      row(h('span', { class: 'coach-ic' }, CREW.icon('pause', 20)), 'Pause', 'Kurz durchatmen. Das Spiel wartet.'),
+      withAll ? row(h('span', { class: 'coach-ic' }, CREW.icon('help', 20)), 'Hilfe', 'Nummern zum Reden und diese Erklärung.') : null,
+      withAll ? row(h('span', { class: 'coach-ic' }, CREW.icon('home', 20)), 'Start', 'Zurück zum Startbildschirm.') : null);
+  }
+  /* Einmal pro Gerät: kleine Sprechblase unter X und Pause, sobald sie zum ersten Mal auftauchen */
+  let coachTimer = null;
+  function closeCoach() {
+    clearTimeout(coachTimer);
+    document.querySelectorAll('#overlays .coach').forEach((c) => c.remove());
+  }
+  function coachXPause() {
+    const x = document.getElementById('btn-x');
+    if (!x || CREW.seen('xpause')) return;
+    CREW.firstTime('xpause');
+    closeCoach();
+    const p = document.getElementById('btn-pause') || x;
+    const rx = x.getBoundingClientRect();
+    const rp = p.getBoundingClientRect();
+    const right = Math.max(8, window.innerWidth - Math.max(rx.right, rp.right) - 4);
+    const box = h('div', { class: 'coach', role: 'status', style: { top: Math.round(Math.max(rx.bottom, rp.bottom) + 14) + 'px', right: right + 'px' } },
+      h('span', { class: 'coach-arrow', style: { right: Math.max(14, window.innerWidth - right - (rx.left + rx.width / 2) - 10) + 'px' } }),
+      h('span', { class: 'eyebrow' }, 'Neu hier oben'),
+      safetyRows(),
+      h('div', { class: 'row between', style: { gap: '8px' } },
+        h('span', { class: 'muted small' }, 'Steht auch unter Hilfe.'),
+        ui.btn('Verstanden', closeCoach, { small: true, icon: 'check', id: 'coach-ok' })));
+    ui.overlays().appendChild(box);
+    coachTimer = setTimeout(closeCoach, 14000);
   }
 
   /* X-Karte: jederzeit ohne Begründung überspringen.
      Läuft gerade eine Animation, merkt sich das Spiel das X und überspringt die nächste Karte. */
   function onXCard() {
+    closeCoach();
     if (!run) return;
     if (run.skipWaiter) {
       const w = run.skipWaiter;
@@ -103,6 +142,7 @@
 
   /* Pause mit Atemkreis */
   function showPause() {
+    closeCoach();
     CREW.stopSpeaking();
     ui.setPaused(true);
     const circle = h('div', { style: { width: 'min(46vmin, 320px)', aspectRatio: '1', borderRadius: '50%', background: 'radial-gradient(circle, var(--good) 0%, color-mix(in srgb, var(--good) 30%, transparent) 70%)', border: 'var(--bw) solid var(--line)', animation: 'breathe 10s ease-in-out infinite' } });
@@ -129,9 +169,14 @@
     const body = h('div', { class: 'stack' },
       h('p', { class: 'lead' }, 'Wenn dich etwas belastet: Sprich mit einer erwachsenen Person, der du vertraust. Zum Beispiel hier in der Annexe.'),
       h('div', { class: 'list' }, nums.map(([n, t, d]) => h('div', { class: 'li' }, h('div', null, h('b', null, n), d ? h('div', { class: 'muted small' }, d) : null), h('span', { class: 'display selectable', style: { fontSize: '1.4em' } }, t)))),
-      h('p', { class: 'muted small' }, 'X-Karte: Mit dem X oben rechts darfst du jede Karte überspringen. Ohne Begründung.'),
+      h('div', { class: 'stack', style: { gap: '8px' } }, h('span', { class: 'eyebrow' }, 'Die Knöpfe oben'), safetyRows()),
       h('p', { class: 'muted small' }, 'Antwort-Karte: Deine Wahl wird nirgends gespeichert.'));
-    ui.modal({ title: 'Hilfe', body, actions: [{ label: 'Schließen', value: true }] });
+    closeCoach();
+    const actions = [{ label: 'Schließen', value: true }];
+    if (S.crew.founded) actions.unshift({ label: 'So geht CREW', value: 'howto', variant: 'ghost', icon: 'help' });
+    ui.modal({ title: 'Hilfe', body, actions }).then((v) => {
+      if (v === 'howto') ui.modal({ title: 'So geht CREW', body: howToSteps(), actions: [{ label: 'Alles klar', value: true, icon: 'check' }] });
+    });
   }
 
   /* ---------- Crew-Woche & Crew-HQ-Teile ---------- */
@@ -178,6 +223,8 @@
     applyLook();
     renderTopbar();
     if (!S.crew.founded) return renderFounding();
+    // Direkt nach der Gründung (oder nach „Erklärungen wieder zeigen“): einmal „So geht CREW“
+    if (S.seen && S.seen.howto === false) return renderHowTo();
     const li = CREW.levelInfo(S.energy);
     const wd = weekday();
     const m = missionForToday();
@@ -205,6 +252,7 @@
         h('span', { class: 'eyebrow' }, 'Moien! Heute ist ' + WEEKDAYS[wd]),
         h('h1', { class: 'outline-text' }, S.crew.name || 'CREW')));
     const teacher = ui.btn('Lehrkraft', renderTeacherGate, { variant: 'ghost', small: true, icon: 'lock', id: 'tile-teacher' });
+    const quick = ui.btn('Schnellstart für Vertretung', showQuickstart, { variant: 'ghost', small: true, icon: 'help', id: 'tile-quick' });
     ui.screen([
       hero,
       cta,
@@ -212,8 +260,49 @@
       h('div', { class: 'grid two enter-3' },
         tile({ icon: 'leaf', title: 'Solo-Zone', sub: 'Alleine chillen und trainieren', onClick: renderSoloHub, id: 'tile-solo' }),
         tile({ icon: 'phone', title: 'Antwort-Karte', sub: 'Für dein iPad', onClick: renderPaddle, id: 'tile-paddle' })),
-      h('div', { class: 'row end' }, teacher),
+      h('div', { class: 'row end' }, quick, teacher),
     ]);
+  }
+
+  /* ---------- So geht CREW (einmal nach der Gründung, später über Hilfe) ---------- */
+  function howToSteps() {
+    return ui.steps([
+      { icon: 'play', title: 'Mission spielen', text: 'Jeden Tag eine Mission. Etwa 10 Minuten, alle zusammen.' },
+      { icon: 'bolt', title: 'Energie sammeln', text: 'Jede Mission bringt eurer Crew Energie.' },
+      { icon: 'base', title: 'HQ ausbauen', text: 'Mit der Energie wächst euer Crew-HQ. Ihr stimmt ab, was dazukommt.' },
+    ], { row: true });
+  }
+  function renderHowTo() {
+    const done = () => { S.seen = S.seen || {}; S.seen.howto = true; CREW.save(); renderHome(); };
+    const wrap = ui.screen([
+      h('div', { class: 'row between enter' },
+        h('div', { class: 'stack', style: { gap: '4px' } }, h('span', { class: 'eyebrow' }, 'Willkommen, ' + (S.crew.name || 'Crew')), h('h1', { class: 'outline-text' }, 'So geht CREW')),
+        ui.btn('Überspringen', done, { variant: 'ghost', small: true, id: 'howto-skip' })),
+      howToSteps(),
+      h('p', { class: 'lead muted enter-3', style: { textAlign: 'center' } }, 'Keine Einzel-Punkte. Nur die Crew zählt.'),
+    ]);
+    wrap.classList.add('howto-screen');
+    ui.choice(wrap, [{ label: 'Los geht’s', value: 'go', iconRight: 'right', id: 'howto-go' }]).then(done);
+  }
+
+  /* ---------- Schnellstart für Vertretung (ohne PIN) ---------- */
+  const GUIDE_STEPS = [
+    ['Öffnen', 'CREW am Beamer oder auf dem Lehrer-iPad öffnen. Die Jugendlichen öffnen auf ihren iPads die „Antwort-Karte“.'],
+    ['Wetter-Check (1 Min.)', 'Jede:r stellt geheim das Wetter ein und dreht die Karte nur zu dir. Die anderen schauen nach vorn. Du tippst einmal: sonnig, gemischt oder Sturm. „Genauer zählen“ ist freiwillig; genaue Zahlen erscheinen erst ab 6 Leuten.'],
+    ['Mission des Tages (4–5 Min.)', 'Jeder Wochentag hat ein eigenes Spiel. Mit „Andere Mission“ kannst du tauschen. Eine Sitzungs-Uhr kürzt Runden, wenn die Zeit knapp wird.'],
+    ['Nachspielzeit (1–2 Min.)', 'Eine Frage, freiwillig. Das ist der wichtigste Teil.'],
+    ['Energie', 'Energie fließt ins gemeinsame Crew-HQ und wird sofort nach der Mission gespeichert. Beim Level-up wählt die Crew per A/B ein neues Teil. Es gibt keine Einzel-Rangliste.'],
+  ];
+  function showQuickstart() {
+    const m = missionForToday();
+    const body = h('div', { class: 'stack' },
+      h('p', { class: 'lead' }, 'Ohne PIN. So läuft eine Session (ca. 10 Minuten):'),
+      h('ol', { class: 'quick-steps' }, GUIDE_STEPS.map(([t, d]) => h('li', null, h('b', null, t), h('span', { class: 'muted' }, d)))),
+      h('div', { class: 'stack', style: { gap: '8px' } }, h('span', { class: 'eyebrow' }, 'Mission starten'),
+        h('p', null, 'Auf dem Startbildschirm den großen Knopf „' + (m ? 'Heute: ' + m.title : 'Freie Wahl') + ' · Los!“ antippen. Das Spiel führt Schritt für Schritt.')),
+      h('div', { class: 'stack', style: { gap: '8px' } }, h('span', { class: 'eyebrow' }, 'Knöpfe oben rechts (während der Session)'), safetyRows({ all: true })),
+      h('p', { class: 'muted small' }, 'Mehr Details (Punkteregeln, Einstellungen) im Lehrermodus mit PIN.'));
+    ui.modal({ title: 'Schnellstart für Vertretung', body, actions: [{ label: 'Alles klar', value: true, icon: 'check' }] });
   }
   function tile(o) {
     const t = h('button', { type: 'button', class: 'tile' + (o.hero ? ' hero' : ''), id: o.id },
@@ -230,35 +319,69 @@
     let look = S.crew.look || 'arena';
     let names = CREW.util.shuffle(NAME_A).slice(0, 3);
     let chosen = null;
+    let needName = false;
     const draw = () => {
       applyLook(look);
       const nameRow = h('div', { class: 'row' }, names.map((n) => {
         const c = h('button', { type: 'button', class: 'chip' + (chosen === n ? ' sel' : '') }, n);
-        c.addEventListener('click', () => { CREW.sound.play('tap'); chosen = n; input.value = ''; draw(); });
+        c.addEventListener('click', () => { CREW.sound.play('tap'); chosen = n; needName = false; input.value = ''; draw(); });
         return c;
       }), ui.iconBtn('shuffle', () => { names = CREW.util.shuffle(NAME_A).slice(0, 3); draw(); }, { label: 'Neue Vorschläge' }));
       const input = h('input', { type: 'text', id: 'crew-name', maxlength: '24', placeholder: 'oder eigenen Crew-Namen eintippen (ohne echte Namen)', value: chosen && !names.includes(chosen) ? chosen : '' });
-      input.addEventListener('input', () => { chosen = input.value.trim() || null; });
+      input.addEventListener('input', () => {
+        chosen = input.value.trim() || null;
+        foundLabel();
+        if (chosen && needName) { needName = false; nameCard.classList.remove('need'); if (needMsg.parentNode) needMsg.remove(); }
+      });
+      const needMsg = h('p', { class: 'need-msg', role: 'status' }, CREW.icon('right', 20), 'Tippt einen Vorschlag an oder schreibt einen Namen.');
+      const nameCard = h('div', { class: 'card stack enter-2' + (needName ? ' need' : '') }, h('h3', null, '1. Wie heißt eure Crew?'), nameRow, input, needName ? needMsg : null);
       const lookRow = h('div', { class: 'grid three' }, LOOKS.map((L) => {
         const t = h('button', { type: 'button', class: 'tile' + (look === L.id ? ' hero' : ''), 'data-look': L.id },
           h('span', { class: 't-title' }, L.label), h('span', { class: 't-sub' }, L.desc));
         t.addEventListener('click', () => { CREW.sound.play('tap'); look = L.id; draw(); });
         return t;
       }));
+      const st = document.getElementById('stage');
+      const keepTop = st ? st.scrollTop : 0; // Neuzeichnen soll nicht nach oben springen
       ui.screen([
         h('div', { class: 'stack enter' }, h('span', { class: 'eyebrow' }, 'Neue Crew'), h('h1', { class: 'outline-text' }, 'Gründet eure Crew'),
           h('p', { class: 'lead muted' }, 'Stimmt gemeinsam ab. Name und Look gehören der ganzen Crew.')),
-        h('div', { class: 'card stack enter-2' }, h('h3', null, '1. Wie heißt eure Crew?'), nameRow, input),
+        nameCard,
         h('div', { class: 'card stack enter-3' }, h('h3', null, '2. Welcher Look?'), h('p', { class: 'muted small' }, 'Tippt die Looks an, um sie auszuprobieren.'), lookRow),
-        h('div', { class: 'row end' }, ui.btn('Crew gründen', async () => {
-          const name = (input.value.trim() || chosen || '').slice(0, 24);
-          if (!name) { ui.toast('Wählt zuerst einen Namen.'); return; }
-          S.crew.name = name; S.crew.look = look; S.crew.founded = true; CREW.save();
-          CREW.sound.play('unlock'); ui.confetti();
-          renderHome();
-        }, { big: true, icon: 'check', id: 'btn-found' })),
+        h('div', { class: 'row end' }, foundBtn),
       ]);
+      foundLabel();
+      if (st) st.scrollTop = keepTop;
+      // Hinweis oder gewählter Name: Namens-Kasten UND Gründen-Knopf zusammen im Bild
+      if (needName || chosen) showNameAndButton(nameCard, needName);
     };
+    function showNameAndButton(card, smooth) {
+      const st = document.getElementById('stage');
+      if (!st || !foundBtn.isConnected) return;
+      const box = st.getBoundingClientRect();
+      const top = card.getBoundingClientRect().top - box.top - 12;       // Platz über dem Kasten
+      const bottom = foundBtn.getBoundingClientRect().bottom - box.bottom + 16; // fehlt unter dem Knopf
+      let dy = 0;
+      if (bottom > 0) dy = Math.min(bottom, Math.max(0, top)); // runter, aber Kasten-Oberkante bleibt sichtbar
+      else if (top < 0) dy = Math.max(top, bottom);            // hoch, aber Knopf bleibt sichtbar
+      if (dy) st.scrollBy({ top: dy, behavior: smooth ? 'smooth' : 'auto' });
+    }
+    // Solange kein Name da ist, sagt der Knopf, was fehlt
+    const foundBtn = ui.btn('Crew gründen', () => {
+      const inp = document.getElementById('crew-name');
+      const name = ((inp && inp.value.trim()) || chosen || '').slice(0, 24);
+      if (!name) { CREW.sound.play('soft'); needName = true; draw(); return; }
+      S.crew.name = name; S.crew.look = look; S.crew.founded = true;
+      S.seen = S.seen || {}; S.seen.howto = false; // gleich danach einmal „So geht CREW“
+      CREW.save();
+      CREW.sound.play('unlock'); ui.confetti();
+      renderHome();
+    }, { big: true, icon: 'check', id: 'btn-found' });
+    function foundLabel() {
+      const has = !!chosen;
+      foundBtn.querySelector('span:not(.ic)').textContent = has ? 'Crew gründen' : 'Erst Namen wählen';
+      foundBtn.classList.toggle('ghost', !has);
+    }
     draw();
   }
 
@@ -337,6 +460,7 @@
     endRun();
     run = { token: ++tokenCounter, skipWaiter: null, inMission: false, phase: 'setup', startedAt: Date.now() };
     renderTopbar();
+    requestAnimationFrame(coachXPause);
     try {
       // 1) Wer ist da?
       const size = await askCrewSize();
@@ -414,11 +538,17 @@
     const t = guard();
     const wx = CREW.WEATHER;
     const firstWeek = S.history.length < 5;
-    const legend = h('div', { class: 'grid three' }, wx.map((w) => h('div', { class: 'card soft row', style: { flexWrap: 'nowrap' } }, CREW.weatherIcon(w.id, 60), h('div', null, h('b', null, w.label), firstWeek ? h('div', { class: 'muted small' }, w.hint) : null))));
+    // Am Beamer nur eine Legende zum Nachlesen: Gewählt wird auf dem eigenen iPad
+    const legend = h('div', { class: 'wx-legend', 'aria-label': 'Legende' },
+      h('span', { class: 'eyebrow' }, 'Legende · nur zum Nachlesen'),
+      h('div', { class: 'wx-legend-grid' }, wx.map((w) => h('div', { class: 'wx-leg' }, CREW.weatherIcon(w.id, 48), h('div', null, h('b', null, w.label), firstWeek ? h('div', { class: 'muted small' }, w.hint) : null)))));
     const wrap = ui.screen([
       h('div', { class: 'row between enter' }, h('div', { class: 'stack', style: { gap: '4px' } }, h('span', { class: 'eyebrow' }, 'Crew-Wetterbericht'), h('h2', null, 'Wetter-Check: Wie ist’s heute bei dir?')), ui.paddleHint('wetter')),
-      h('p', { class: 'lead muted enter-2' }, 'Stell es geheim ein. Dreh die Karte nur zur Lehrkraft. Die anderen schauen nach vorn.'),
-      h('div', { class: 'enter-2' }, legend),
+      h('div', { class: 'wx-callout enter-2' }, CREW.icon('phone', 40),
+        h('div', { class: 'stack', style: { gap: '2px' } },
+          h('b', { class: 'wx-callout-t' }, 'Das wählt jede:r auf dem eigenen iPad.'),
+          h('span', null, 'Geheim einstellen. Karte nur zur Lehrkraft drehen. Die anderen schauen nach vorn.'))),
+      h('div', { class: 'enter-3' }, legend),
     ]);
     const r = await waitX(ui.choice(wrap, [{ label: 'Überspringen', value: 'skip', variant: 'ghost' }, { label: 'Alle bereit', value: 'go', iconRight: 'right' }]), t, 'skip');
     if (r === 'skip') return { skipped: true };
@@ -426,7 +556,7 @@
     if (!run || run.token !== t) throw new Abort();
     // Schnell: ein Tipp für die ganze Crew. Genauer zählen nur, wenn die Lehrkraft will.
     const w2 = ui.screen([
-      h('div', { class: 'stack', style: { alignItems: 'center', textAlign: 'center' } }, h('span', { class: 'eyebrow' }, 'Nur für die Lehrkraft'), h('h2', null, 'Was zeigt die Crew?'), ui.scanBar('Wetter-Scan läuft …')),
+      h('div', { class: 'stack', style: { alignItems: 'center', textAlign: 'center' } }, h('span', { class: 'eyebrow' }, 'Nur für die Lehrkraft'), h('h2', null, 'Was zeigt die Crew?'), ui.scanBar('Karten ansehen, dann tippen')),
     ], { center: true, narrow: true });
     const quick = await waitX(ui.choice(w2, [
       { label: 'Alle eher sonnig', value: 'sonnig', icon: 'star', id: 'wx-sonnig' },
@@ -440,7 +570,7 @@
     if (quick === 'count') {
       const ta = ui.tally(wx.map((w) => ({ id: w.id, label: w.label, icon: CREW.weatherIcon(w.id, 56) })), { max: size, onFull: () => ui.autoNext('wx-show', () => ta.total() >= size) });
       const w3 = ui.screen([
-        h('div', { class: 'row between' }, h('div', { class: 'stack' }, h('span', { class: 'eyebrow' }, 'Nur für die Lehrkraft'), h('h2', null, 'Wetter zählen')), ui.scanBar('Wetter-Scan läuft …')),
+        h('div', { class: 'row between' }, h('div', { class: 'stack' }, h('span', { class: 'eyebrow' }, 'Nur für die Lehrkraft'), h('h2', null, 'Wetter zählen')), ui.scanBar('Karten ansehen, dann tippen')),
         h('p', { class: 'muted' }, 'Tippe auf ein Wetter, einmal pro Karte. Namen werden nicht gespeichert.'),
         ta.el,
       ]);
@@ -493,7 +623,7 @@
       return null;
     }
     for (;;) {
-      if (!m) m = await pickMissionList(ms, t);
+      if (!m) m = await pickMissionList(ms, t, !missionForToday());
       const wrap = ui.screen([
         h('div', { class: 'stack enter', style: { alignItems: 'center', textAlign: 'center' } },
           h('span', { class: 'eyebrow' }, 'Mission des Tages'),
@@ -508,10 +638,11 @@
       m = null;
     }
   }
-  function pickMissionList(ms, t) {
+  function pickMissionList(ms, t, free) {
     return run_wait(new Promise((resolve) => {
       ui.screen([
-        h('div', { class: 'stack' }, h('span', { class: 'eyebrow' }, 'Mission wählen'), h('h2', null, 'Worauf habt ihr Lust?')),
+        h('div', { class: 'stack' }, h('span', { class: 'eyebrow' }, free ? 'Freie Wahl' : 'Mission wählen'), h('h2', null, 'Worauf habt ihr Lust?'),
+          free ? h('p', { class: 'lead muted' }, 'Heute gibt es keine feste Mission: Ihr wählt frei aus ' + ms.length + (ms.length === 1 ? ' Mission.' : ' Missionen.')) : null),
         h('div', { class: 'grid two' }, ms.map((m) => {
           const t2 = h('button', { type: 'button', class: 'tile', 'data-mission': m.id },
             h('span', { class: 't-title' }, m.title),
@@ -731,6 +862,7 @@
     endRun();
     run = { token: ++tokenCounter, skipWaiter: null, inMission: false, solo: true };
     renderTopbar();
+    requestAnimationFrame(coachXPause);
     const ctx = makeCtx(g, 1);
     ctx.solo = true;
     ctx.best = (key, value, higherIsBetter) => {
@@ -897,6 +1029,9 @@
           ui.btn(S.settings.sound ? 'Töne: AN' : 'Töne: AUS', () => { S.settings.sound = !S.settings.sound; CREW.save(); renderTeacher('einstellungen'); }, { variant: S.settings.sound ? 'good' : 'ghost', small: true }),
           ui.btn(S.settings.speech ? 'Vorlesen: AN' : 'Vorlesen: AUS', () => { S.settings.speech = !S.settings.speech; CREW.save(); renderTopbar(); renderTeacher('einstellungen'); }, { variant: S.settings.speech ? 'good' : 'ghost', small: true }),
           ui.btn('Vorlesen testen', () => CREW.speak('Moien Crew! So klingt die Vorlesestimme.'), { variant: 'ghost', small: true, icon: 'speaker' }))),
+      h('div', { class: 'card stack' }, h('h3', null, 'Erklärungen'),
+        h('p', { class: 'muted small' }, 'Die Einmal-Erklärungen („So geht CREW“, X und Pause, Hitze bei Clash) auf diesem Gerät noch einmal zeigen.'),
+        h('div', { class: 'row end' }, ui.btn('Erklärungen wieder zeigen', () => { S.seen = { howto: false }; CREW.save(); ui.toast('Die Erklärungen kommen beim nächsten Mal wieder.'); }, { small: true, variant: 'ghost', icon: 'undo', id: 't-reset-seen' }))),
       h('div', { class: 'card stack' }, h('h3', null, 'PIN ändern'), pinIn, h('div', { class: 'row end' }, ui.btn('PIN speichern', () => { const v = pinIn.value.trim(); if (!/^\d{4,8}$/.test(v)) { ui.toast('Bitte 4 bis 8 Ziffern.'); return; } S.settings.pin = v; CREW.save(); pinIn.value = ''; ui.toast('Neue PIN gespeichert.'); }, { small: true }))));
   }
 
@@ -941,11 +1076,7 @@
     return h('div', { class: 'stack' },
       h('div', { class: 'card stack' }, h('h3', null, 'So läuft eine Session (ca. 10 Minuten)'),
         h('ol', { class: 'stack', style: { margin: 0, paddingLeft: '1.2em' } },
-          h('li', null, 'CREW am Beamer oder auf dem Lehrer-iPad öffnen. Die Jugendlichen öffnen auf ihren iPads die „Antwort-Karte“.'),
-          h('li', null, 'Wetter-Check (1 Min.): Jede:r stellt geheim das Wetter ein und dreht die Karte nur zu dir. Die anderen schauen nach vorn. Du tippst einmal: sonnig, gemischt oder Sturm. „Genauer zählen“ ist freiwillig; genaue Zahlen erscheinen erst ab 6 Leuten.'),
-          h('li', null, 'Mission des Tages (4–5 Min.): Jeder Wochentag hat ein eigenes Spiel. Mit „Andere Mission“ kannst du tauschen. Eine Sitzungs-Uhr kürzt Runden, wenn die Zeit knapp wird.'),
-          h('li', null, 'Nachspielzeit (1–2 Min.): Eine Frage, freiwillig. Das ist der wichtigste Teil.'),
-          h('li', null, 'Energie fließt ins gemeinsame Crew-HQ und wird sofort nach der Mission gespeichert. Beim Level-up wählt die Crew per A/B ein neues Teil. Es gibt keine Einzel-Rangliste.'))),
+          GUIDE_STEPS.map(([title, text], i) => h('li', null, i === 0 || i === 4 ? text : title + ': ' + text)))),
       h('div', { class: 'card stack' }, h('h3', null, 'Wochenplan'), h('div', { class: 'list' }, byDay)),
       h('div', { class: 'card stack' }, h('h3', null, 'Sicherheitsregeln im Spiel'),
         h('ul', { class: 'stack', style: { margin: 0, paddingLeft: '1.2em' } },
