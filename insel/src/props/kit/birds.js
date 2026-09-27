@@ -107,7 +107,6 @@ export function vogel(o = {}, K) {
   let pose = o.pose || 'fliegen', bob = 0, glowV = 1;
   const api = {
     group: g, type: 'vogel', emotion, id: D.id, name: D.name, color: hex, def: D, wings, edges,
-    get pose() { return pose; },
     pose(p) {
       pose = p;
       const sit = p === 'sitzen';
