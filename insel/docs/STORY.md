@@ -164,7 +164,7 @@ Feuer + Glocke · Abend am Feuer: drei Figuren nennen deine Tat · Farbwelle, we
 | M0-Ende | `dialogues/m0-finale.js` | bunter Hafen, Kisten bleiben · Mika (Folge Wahl 3) · „Und dann?“ → „Dann mach ich den Hafen zu.“ · „Noch nicht.“ |
 
 Beats laufen nach dem Lagerfeuer (Hafen-Plugin, `story.beat`), nie bei Kurzfassungen, nie doppelt (`story.seen.<id>`),
-unter `?test` nur mit `?story`. Die Nachtszene stellt die Uhr auf 22:30 und setzt dich ans Dorffeuer; danach Morgen.
+unter `?test` nur mit `?story`. Die Nachtszene stellt die Uhr auf 22:30, setzt dich ans Dorffeuer und Ilda daneben; danach Morgen.
 Nachspielen: `LUMO.debug.storyBeat('m0-nach-e01')`. Verzweigung im Dialog: `{ branch: [{ when, goto }], goto }`.
 
 ## 13. Abweichungen von DESIGN.md (mit Grund)

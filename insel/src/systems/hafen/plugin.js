@@ -62,7 +62,7 @@ export default {
     const storyOn = !params.has('test') || params.has('story');
     const BEAT_AFTER = { 'j1-e01': 'm0-nach-e01', 'j1-e02': 'm0-nach-e02', 'j1-e03': 'm0-finale' };
     // Nachtszene (docs/STORY.md §12): vor dem Beat Uhr auf 22:30 und ans Dorffeuer, danach Morgen (du schläfst dort ein)
-    const BEAT_SCENE = { 'm0-nach-e01': { hour: 22.5, site: 'hafen.feuerPlatz', after: 7.5 } };
+    const BEAT_SCENE = { 'm0-nach-e01': { hour: 22.5, site: 'hafen.feuerPlatz', after: 7.5, sits: 'ilda' } };
     function stageBeat(id) {
       const sc = BEAT_SCENE[id];
       if (!sc || !game.time || !game.time.setTimeOfDay) return null;
@@ -73,7 +73,13 @@ export default {
         if (game.cameraRig) { game.cameraRig.behindPlayer(); game.cameraRig.snap(); }
       }
       game.time.setTimeOfDay(sc.hour);
-      return () => game.time.setTimeOfDay(sc.after);
+      // Figur sitzt schon am Feuer (nachts wäre sie laut Tagesablauf im Haus); Übersteuerung endet mit der Szene
+      const n = sc.sits && S && game.npcs && game.npcs.get ? game.npcs.get(sc.sits) : null;
+      if (n && n.setOverride && n.warpTo) {
+        const nx = S.x + 0.6, nz = S.z + 2.8, y = Math.atan2(S.x - nx, S.z - nz);
+        n.warpTo(nx, nz, y); n.setOverride({ x: nx, z: nz, yaw: y, anim: 'sit' });
+      }
+      return () => { if (n && n.clearOverride) n.clearOverride(); game.time.setTimeOfDay(sc.after); };
     }
     let beatTimer = null;
     const busy = () => !game.started || (ui.overlay && ui.overlay.count) || (game.dialogue && game.dialogue.isOpen) || (game.session && game.session.ending) || (game.scenes && game.scenes.isInterior);

@@ -270,7 +270,9 @@ try {
       const cam = LUMO.cameraRig.camera || LUMO.camera, H = LUMO.renderer ? LUMO.renderer.domElement.clientHeight : innerHeight;
       const fov = cam && cam.fov ? cam.fov : 50;
       // sizeAttenuation aus: Weltmaß bei 1 m Abstand → Bildschirm-Pixel der ganzen Canvas (Pille = 32/40 davon)
-      return { px: +(s.scale.y * H / (2 * Math.tan((fov * Math.PI / 180) / 2)) * 0.8).toFixed(1), vis: s.visible };
+      // sichtbar = in Reichweite; ob es gerade einem näheren Schild ausweicht (Entflechten), ist hier egal
+      const t = LUMO.npcs.get('ilda').tag;
+      return { px: +(s.scale.y * H / (2 * Math.tan((fov * Math.PI / 180) / 2)) * 0.8).toFixed(1), vis: s.visible || !!(t && t.eligible) };
     });
   };
   const tNear = await tagPx(1.8);
