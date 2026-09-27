@@ -16,7 +16,7 @@ export function checkCond(ctx, path, c) {
     case 'ability': return isStr(v) ? oneOf(ctx, p, v, ABILITIES, 'Fähigkeit') : err(ctx, p, 'Fähigkeits-ID erwartet');
     case 'upgrade': return isStr(v) ? oneOf(ctx, p, v, UPGRADES, 'Upgrade') : err(ctx, p, 'Upgrade-ID erwartet');
     case 'feather': return isStr(v) ? oneOf(ctx, p, v, EMOTIONS, 'Feder') : err(ctx, p, 'Feder = Emotion erwartet');
-    case 'item': case 'deed': case 'collectible': return isStr(v) ? true : err(ctx, p, 'ID erwartet');
+    case 'item': case 'deed': case 'collectible': case 'weg': case 'gadget': return isStr(v) ? true : err(ctx, p, 'ID erwartet');
     case 'flag':
       if (isStr(v)) return true;
       if (Array.isArray(v) && v.length === 3 && isStr(v[0]) && isOp(v[1])) return true;

@@ -63,6 +63,8 @@ export function evalCond(c, ctx) {
     case 'feather': return (st.get('feathers', []) || []).includes(v);
     case 'item': return (st.get('items', []) || []).includes(v);
     case 'deed': return (st.get('deeds', []) || []).includes(v);
+    case 'weg': return (st.get('wege', []) || []).includes(v);           // Wegfähigkeit aus Bindung 2 (WP34/WP35)
+    case 'gadget': return (st.get('gadgets', []) || []).includes(v);     // Koffer-Gadget (WP33)
     case 'collectible': return !!st.get('collectibles.' + v);
     case 'flag': {
       if (typeof v === 'string') return !!st.get('flags.' + v);
