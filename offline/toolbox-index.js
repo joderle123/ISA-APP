@@ -1,6 +1,6 @@
 /* Toolbox-Index für den CDSE Hub – automatisch erzeugt von scripts/toolbox-index.mjs
    (npm run build / npm run index). Nicht von Hand bearbeiten. Format: offline/README.md */
-window.CDSE_TOOLBOX_INDEX = {"stand":"2026-09-26","materialien":[
+window.CDSE_TOOLBOX_INDEX = {"stand":"2026-09-27","materialien":[
 {"id":"reframing","titel":"Reframing: Mëch selwer nei gesinn","typ":["Aktivität"],"alter":["C4","ES"],"themen":["Selbstwahrnehmung","Fremdwahrnehmung","Selbstwertgefühl"],"eldib":["V-19","V-20","V-22","V-24","V-26","V-28","V-30","K-15","K-16","K-17","K-18","K-19","K-20","K-21","K-24","K-25","K-26","K-28","K-32","SOZ-21","SOZ-27","SOZ-31","SOZ-32","SOZ-33","SOZ-34","SOZ-35","SOZ-37"],"kurz":"An dëser Aktivitéit setzen sech d’Jugendlecher mat negative Selbstzouschreiwungen auserneen, wéi z. B. „Ech sinn ze haart“, „Ech sinn ze nervös“ oder „Ech…"},
 {"id":"ausgeschlossen","titel":"Ausgeschlossen","typ":["Kursstunde"],"alter":["C2","C3"],"themen":["Selbstwahrnehmung","Fremdwahrnehmung","Beziehungsaufbau","Konfliktlösung"],"eldib":[],"kurz":"Die Kinder setzen sich mit dem Thema Ausgrenzung auseinander."},
 {"id":"buch-ich-bin-wie-du-ich-bin-anders-als-du","titel":"Buch “Ich bin wie du/Ich bin anders als du”","typ":["Aktivität"],"alter":["C2","C3"],"themen":["Selbstwahrnehmung","Fremdwahrnehmung"],"eldib":[],"kurz":"D’Buch behandelt Thema vun Ënnerscheeder an Gemeinsamkeeten tëschent Kanner."},

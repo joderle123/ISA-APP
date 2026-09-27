@@ -6,6 +6,8 @@ import {
   collectTags,
   emptyFilter,
   facetCounts,
+  prepareInIdle,
+  prepareMaterialSearch,
   queryLibrary,
   type FacetCounts,
   type FilterState,
@@ -89,6 +91,8 @@ export function Einheiten({
   useEffect(() => {
     libraryRef.current = library
   }, [library])
+  // Suchtexte vorbereiten, solange der Browser nichts zu tun hat
+  useEffect(() => prepareInIdle(library, prepareMaterialSearch), [library])
 
   // --- Deep links ---------------------------------------------------------------
   useEffect(() => {

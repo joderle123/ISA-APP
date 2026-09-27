@@ -2,10 +2,12 @@
 //   npm run build   (oder: npx vite build)
 //   node scripts/toolbox-test.cjs
 // Prüft: PDF-Knopf auf der Karte, unbekannter und wiederholter Blatt-Link, Wechsel zu den Einheiten
-// mit ELDiB-Ziel (auch nach Neuladen), Suche (kurze Wörter nur als Wort, Titel zuerst), Einzahl
-// „1 Blatt“, Bereichs-Kacheln ohne Überlauf, Material-Finder (Zahl wie in der Liste), Tipp für das
-// Team („Gespeichert.“), Seitenumbruch W-03, voller Titel im Blatt-Dialog am Handy, Mappe (Sprache
-// je Blatt, Dateinamen, Titel, Ladekreis am geklickten Knopf, Hinweis über der Leiste, Leiste am Handy).
+// mit ELDiB-Ziel (auch nach Neuladen), Suche (kurze Wörter nur als Wort, Titel zuerst; Umlaute in
+// beide Richtungen, Akzente, ß, ELDiB-Codes und Stufen in jeder Schreibweise, Aufgabentexte),
+// Einzahl „1 Blatt“, Bereichs-Kacheln ohne Überlauf, Material-Finder (Zahl wie in der Liste, auch
+// mit ELDiB-Code), Tipp für das Team („Gespeichert.“), Seitenumbruch W-03, Sprache DE/FR gemerkt
+// (Dialog, Karte, Mappe), voller Titel im Blatt-Dialog am Handy, Mappe (Sprache je Blatt,
+// Dateinamen, Titel, Ladekreis am geklickten Knopf, Hinweis über der Leiste, Leiste am Handy).
 const path = require('path')
 let chromium
 try {
@@ -134,6 +136,33 @@ function seitenTexte(datei) {
   pruefe(/Pause/.test(pause[0] ?? ''), '„Pause“: Titel-Treffer steht vorn')
   pruefe((await suchen('Skills')).length >= 100, '„Skills“ findet weiter die Blätter des Skills-Kurses')
 
+  // Suche tolerant: Umlaute in beide Richtungen, Akzente, Groß/klein, ELDiB-Codes, Stufen, Aufgabentexte
+  const gleich = async (zaehlen, varianten, text) => {
+    const n = []
+    for (const v of varianten) n.push(await zaehlen(v))
+    pruefe(n[0] > 0 && n.every((x) => x === n[0]), `${text}: ${varianten.map((v, i) => `„${v}“ ${n[i]}`).join(', ')}`)
+    return n[0]
+  }
+  const blaetterZahl = async (q) => (await suchen(q)).length
+  await gleich(blaetterZahl, ['Prüfung', 'Pruefung', 'PRÜFUNG'], 'Blätter: ü = ue')
+  await gleich(blaetterZahl, ['Übung', 'Uebung'], 'Blätter: Ü = Ue')
+  await gleich(blaetterZahl, ['colère', 'colere', 'COLÈRE'], 'Blätter: Akzente egal')
+  await gleich(blaetterZahl, ['V-21', 'v21', 'V 21'], 'Blätter: ELDiB-Code in jeder Schreibweise')
+  await gleich(blaetterZahl, ['C3', 'Cycle 3', 'cycle3', 'Zyklus 3'], 'Blätter: Stufe als Code oder Name')
+  await suche.fill('')
+  await page.waitForTimeout(300)
+  const chipZahl = (text) => page.evaluate((t) => Number([...document.querySelectorAll('aside .fchip')].find((c) => c.textContent.startsWith(t))?.querySelector('.n')?.textContent), text)
+  const c1 = await chipZahl('C1 · Spielschule')
+  const es = await chipZahl('ES · Sekundar')
+  pruefe((await gleich(blaetterZahl, ['Spielschule', 'Précoce', 'precoce'], 'Blätter: Stufen-Namen C1')) === c1, `„Spielschule“ findet die ${c1} Blätter der Stufe C1`)
+  pruefe((await gleich(blaetterZahl, ['Sekundar', 'ES', 'es'], 'Blätter: Stufen-Namen ES')) === es, `„Sekundar“ und „ES“ finden die ${es} Blätter der Stufe ES`)
+  pruefe((await blaetterZahl('Schule')) < es / 2, '„Schule“ trifft nicht jedes Blatt der „Spielschule“ oder „Sekundarschule“')
+  pruefe((await suchen('mitbestimmen')).includes('Körperbild: Filter, Vergleiche und ich'), 'Suche findet Wörter aus den Aufgabentexten')
+  const pause2 = await suchen('Pause')
+  const titelTreffer = pause2.filter((t) => /pause/i.test(t))
+  const nurAufgabe = ['Meine Energie-Batterie', 'Drei gute Dinge'].map((t) => pause2.indexOf(t))
+  pruefe(titelTreffer.length >= 3 && nurAufgabe.every((i) => i >= titelTreffer.length), `„Pause“: ${titelTreffer.length} Titel-Treffer vor Treffern nur im Aufgabentext (Plätze ${nurAufgabe.map((i) => i + 1).join(', ')})`)
+
   // Einzahl: „1 Blatt“
   await suchen('Wutvulkan')
   const kopf = await page.evaluate(() => [...document.querySelectorAll('h1')].find((h) => h.offsetParent && h.textContent === 'Arbeitsblätter').nextElementSibling.textContent)
@@ -166,7 +195,22 @@ function seitenTexte(datei) {
   await page.waitForTimeout(300)
   const einheitenKi = Number(/\d+/.exec(await page.evaluate(() => document.querySelector('main#ergebnisse h1').nextElementSibling.textContent))[0])
   pruefe(einheitenKi <= 5, `Einheiten: „KI“ nur als Wort (${einheitenKi} Treffer)`)
+  const einheitenZahl = async (q) => {
+    await page.fill('input[placeholder^="Titel, Thema"]', q)
+    await page.waitForTimeout(300)
+    if (await page.locator('main#ergebnisse', { hasText: 'Keine passenden Materialien' }).count()) return 0
+    return Number(/\d+/.exec(await page.evaluate(() => document.querySelector('main#ergebnisse h1').nextElementSibling.textContent))[0])
+  }
+  await gleich(einheitenZahl, ['Gefühle', 'Gefuehle', 'GEFÜHLE'], 'Einheiten: ü = ue')
+  await gleich(einheitenZahl, ['Straße', 'Strasse'], 'Einheiten: ß = ss')
+  await gleich(einheitenZahl, ['KOG-28', 'kog28', 'KOG 28'], 'Einheiten: ELDiB-Code in jeder Schreibweise')
+  await gleich(einheitenZahl, ['C3', 'Cycle 3'], 'Einheiten: Stufe als Code oder Name')
   await page.fill('input[placeholder^="Titel, Thema"]', '')
+  await page.fill('input[placeholder="Ziel oder Code, z. B. V-13"]', 'kog 28')
+  await page.waitForTimeout(200)
+  const ziele = await page.$$eval('aside label.check-row .code', (els) => els.map((e) => e.textContent.trim()))
+  pruefe(ziele.length === 1 && ziele[0] === 'KOG-28', `Filter „ELDiB-Ziele“: „kog 28“ findet genau KOG-28 (${ziele.join(', ')})`)
+  await page.fill('input[placeholder="Ziel oder Code, z. B. V-13"]', '')
 
   // Material-Finder: genannte Zahl = Zahl in der Bibliothek danach; nur Stichwörter → kein Knopf „Alle Treffer …“
   const finder = async (text) => {
@@ -184,6 +228,17 @@ function seitenTexte(datei) {
   await finder('Interessiert sich für Dinosaurier')
   pruefe((await page.locator('dialog[open] button', { hasText: 'Alle Treffer in der Bibliothek anzeigen' }).count()) === 0, 'Material-Finder: nur Stichwörter → kein Knopf, der die ganze Bibliothek zeigt')
   await page.keyboard.press('Escape')
+  // Material-Finder versteht ELDiB-Codes; Zahl und Liste bleiben gleich
+  const kogGenannt = Number((/Ich habe (\d+)/.exec(await finder('Etwas zu kog 28')) || [])[1])
+  pruefe((await page.locator('dialog[open] .badge', { hasText: 'ELDiB: KOG-28' }).count()) > 0, 'Material-Finder: „kog 28“ als ELDiB-Ziel KOG-28 verstanden')
+  const alleTreffer = page.locator('dialog[open] button', { hasText: 'Alle Treffer in der Bibliothek anzeigen' })
+  let kogListe = -1
+  if (await alleTreffer.count()) {
+    await alleTreffer.click()
+    await page.waitForTimeout(400)
+    kogListe = Number(/\d+/.exec(await page.evaluate(() => document.querySelector('main#ergebnisse h1').nextElementSibling.textContent))[0])
+  } else await page.keyboard.press('Escape')
+  pruefe(kogGenannt > 0 && kogGenannt === kogListe, `Material-Finder mit ELDiB-Code: dieselbe Zahl wie die Liste (${kogGenannt}/${kogListe})`)
 
   // Tipp für das Team: kurzer Hinweis „Gespeichert.“
   await page.goto('about:blank')
@@ -243,6 +298,38 @@ function seitenTexte(datei) {
   await page.locator('main#blaetter article.bl-karte label.bl-wahl').first().click()
   const gemischt = await mappe('Als ein PDF')
   pruefe(gemischt.name === 'Mappe_arbeitsblaetter_DE-FR.pdf', `gemischte Mappe: Dateiname _DE-FR (${gemischt.name})`)
+
+  // Sprache DE/FR: einmal gewählt gilt sie für Dialog, Karte und Mappe und bleibt nach dem Neuladen
+  const sp = await neueSeite({ width: 1280, height: 900 })
+  const gedrueckt = () => sp.evaluate(() => document.querySelector('dialog[open] .seg button[aria-pressed="true"]')?.textContent.trim())
+  const gespeichert = () => sp.evaluate(() => localStorage.getItem('cdse-blatt-sprache-v1'))
+  await sp.goto(DATEI + '#blatt=koerperbild')
+  await sp.waitForSelector('dialog[open] .seg')
+  pruefe((await gedrueckt()) === 'DE', 'Sprache: anfangs Deutsch')
+  await sp.locator('dialog[open] .seg button', { hasText: 'FR' }).click()
+  await sp.reload()
+  await sp.waitForSelector('dialog[open] .seg')
+  pruefe((await gedrueckt()) === 'FR' && (await gespeichert()) === 'fr', 'Sprache: Französisch bleibt nach dem Neuladen (eigener Schlüssel)')
+  await sp.evaluate(() => (location.hash = '#blatt=wut-verstehen'))
+  await sp.waitForFunction(() => document.querySelector('#bl-detail-titel')?.textContent !== 'Wut verstehen und steuern' && document.querySelector('dialog[open] .seg button[aria-pressed="true"]')?.textContent.trim() === 'FR', null, { timeout: 5000 }).catch(() => {})
+  pruefe((await gedrueckt()) === 'FR', 'Sprache: auch das nächste Blatt öffnet auf Französisch')
+  await sp.keyboard.press('Escape')
+  const karteVon = (titel) => sp.locator('main#blaetter article.bl-karte', { has: sp.locator('h3', { hasText: titel }) })
+  const pdfKnopf2 = karteVon('Wut verstehen und steuern').locator('button[aria-label^="PDF herunterladen"]')
+  pruefe((await pdfKnopf2.textContent()).includes('FR'), 'Karte zeigt „PDF · FR“')
+  pruefe(!(await karteVon('Mein Wutvulkan').locator('button[aria-label^="PDF herunterladen"]').textContent()).includes('FR'), 'Karte eines Blatts ohne Französisch bleibt „PDF“')
+  const dlK = sp.waitForEvent('download', { timeout: 60000 }).catch(() => null)
+  await pdfKnopf2.click()
+  pruefe(((await dlK)?.suggestedFilename() ?? '').endsWith('_FR.pdf'), 'PDF auf der Karte in der gewählten Sprache')
+  await karteVon('Wut verstehen und steuern').locator('label.bl-wahl').click()
+  const dlM = sp.waitForEvent('download', { timeout: 60000 }).catch(() => null)
+  await sp.locator('.bl-mappe button', { hasText: 'Als ein PDF' }).click()
+  pruefe((await dlM)?.suggestedFilename() === 'Mappe_arbeitsblaetter_FR.pdf', 'Mappe (über die Karte) in der gewählten Sprache')
+  await sp.evaluate(() => (location.hash = '#blatt=wut-verstehen'))
+  await sp.waitForSelector('dialog[open] .seg')
+  await sp.locator('dialog[open] .seg button', { hasText: 'DE' }).click()
+  await sp.keyboard.press('Escape')
+  pruefe((await gespeichert()) === 'de' && !(await pdfKnopf2.textContent()).includes('FR'), 'Sprache zurück auf Deutsch: gespeichert, Karte wieder „PDF“')
 
   // Handy: voller Titel im Blatt-Dialog, Hinweis über der Mappe-Leiste
   const handy = await neueSeite({ width: 390, height: 844 }, true)

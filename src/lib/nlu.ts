@@ -4,8 +4,9 @@
 // Fully client-side & deterministic — no network, no LLM at runtime.
 // ---------------------------------------------------------------------------
 import type { AgeLevel, Material, MaterialType, ParticipantMode } from '../types/material'
-import { emptyFilter, type FilterState } from './filter'
-import { materialTypeById, participantModeById, themeLabel } from '../data/taxonomy'
+import { emptyFilter, searchScore, searchTokens, type FilterState } from './filter'
+import { eldibGoalById, materialTypeById, participantModeById, themeLabel } from '../data/taxonomy'
+import { normaliseEldibCode } from './deeplink'
 
 export interface Signals {
   themes: string[]
@@ -14,10 +15,12 @@ export interface Signals {
   participants: ParticipantMode[]
   wantWorksheet: boolean | null
   keywords: string[]
+  /** ELDiB goals named in the text („KOG-29“, „kog29“, „KOG 29“). */
+  eldib: string[]
 }
 
 export const emptySignals: Signals = {
-  themes: [], ages: [], types: [], participants: [], wantWorksheet: null, keywords: [],
+  themes: [], ages: [], types: [], participants: [], wantWorksheet: null, keywords: [], eldib: [],
 }
 
 // --- theme lexicon: word/stem regex → theme id(s) ---------------------------
@@ -106,6 +109,15 @@ function detectWorksheet(t: string): boolean | null {
   return null
 }
 
+function detectEldib(t: string): string[] {
+  const set = new Set<string>()
+  for (const m of t.matchAll(/(?:^|[^\p{L}\p{N}])((?:v|k|soz|kog)\s*[-–_]?\s*\d{1,2})(?!\p{N})/gu)) {
+    const code = normaliseEldibCode(m[1])
+    if (code && eldibGoalById.has(code)) set.add(code)
+  }
+  return [...set]
+}
+
 export function parse(text: string): Signals {
   const t = ' ' + text.toLowerCase().replace(/[\n\r]+/g, ' ') + ' '
   const themes = new Set<string>()
@@ -114,6 +126,7 @@ export function parse(text: string): Signals {
   const participants = detectParticipants(t)
   const types = detectTypes(t)
   const wantWorksheet = detectWorksheet(t)
+  const eldib = detectEldib(t)
   // free interest keywords: explicit "interessiert sich für X / mag X / Fan von X / Thema X"
   const keywords = new Set<string>()
   for (const m of text.matchAll(/(?:interessiert sich f(?:ü|ue)r|interesse an|mag|fan von|liebt|thema|rund um|geht um)\s+([a-zä-üA-ZÄ-Ü][\wäöüß-]{2,})/gi))
@@ -123,7 +136,7 @@ export function parse(text: string): Signals {
     const lw = w.toLowerCase()
     if (w.length >= 4 && /^[A-ZÄÖÜ]/.test(w) && !STOP.has(lw)) keywords.add(lw)
   }
-  return { themes: [...themes], ages, participants, types, wantWorksheet, keywords: [...keywords].slice(0, 8) }
+  return { themes: [...themes], ages, participants, types, wantWorksheet, keywords: [...keywords].slice(0, 8), eldib }
 }
 
 /** Refine accumulated signals with a new message (topics accumulate, the
@@ -136,6 +149,7 @@ export function mergeSignals(base: Signals, add: Signals): Signals {
     types: add.types.length ? add.types : base.types,
     wantWorksheet: add.wantWorksheet !== null ? add.wantWorksheet : base.wantWorksheet,
     keywords: [...new Set([...base.keywords, ...add.keywords])].slice(0, 10),
+    eldib: [...new Set([...base.eldib, ...add.eldib])],
   }
 }
 
@@ -147,18 +161,20 @@ export interface Ranked {
 }
 
 export function hasAnySignal(s: Signals): boolean {
-  return !!(s.themes.length || s.ages.length || s.participants.length || s.types.length || s.wantWorksheet !== null || s.keywords.length)
+  return !!(s.themes.length || s.ages.length || s.participants.length || s.types.length || s.wantWorksheet !== null || s.keywords.length || s.eldib.length)
 }
 
 export function rank(materials: Material[], s: Signals, ratings: Record<string, number>): Ranked[] {
   if (!hasAnySignal(s)) return []
-  const MAX = s.themes.length * 10 + 6 + 4 + 3 + 4 + s.keywords.length * 3 || 1
+  const MAX = s.themes.length * 10 + s.eldib.length * 10 + 6 + 4 + 3 + 4 + s.keywords.length * 3 || 1
   const out: Ranked[] = []
   for (const m of materials) {
     let score = 0
     const reasons: string[] = []
     const tHit = s.themes.filter((t) => m.themes.includes(t))
     if (tHit.length) { score += tHit.length * 10; reasons.push('Thema ' + tHit.map(themeLabel).join(', ')) }
+    const eHit = s.eldib.filter((g) => m.eldibGoals.includes(g))
+    if (eHit.length) { score += eHit.length * 10; reasons.push('ELDiB ' + eHit.join(', ')) }
     if (s.ages.length) {
       if (s.ages.some((a) => m.ageLevels.includes(a))) { score += 6; reasons.push('Alter ' + m.ageLevels.join('/')) }
       else score -= 6
@@ -170,9 +186,13 @@ export function rank(materials: Material[], s: Signals, ratings: Record<string, 
     if (s.wantWorksheet === true) { if (m.worksheet) { score += 4; reasons.push('mit Arbeitsblatt') } else score -= 7 }
     if (s.wantWorksheet === false && m.worksheet) score -= 1
     if (s.keywords.length) {
-      const hay = (m.title + ' ' + m.shortDescription + ' ' + m.tags.join(' ') + ' ' + m.themes.map(themeLabel).join(' ')).toLowerCase()
-      const kw = s.keywords.filter((k) => hay.includes(k))
-      if (kw.length) { score += kw.length * 3; reasons.push('Interesse: ' + kw.join(', ')) }
+      // wie die Suche der Bibliothek (Umlaute, Akzente, Aufgabentexte); Titel und
+      // Beschreibung zählen mehr als Treffer nur in Ablauf oder Aufgaben
+      const kw = s.keywords.map((k) => [k, searchScore(m, searchTokens(k))] as const).filter(([, p]) => p > 0)
+      if (kw.length) {
+        score += kw.reduce((n, [, p]) => n + (p >= 3 ? 3 : 1), 0)
+        reasons.push('Interesse: ' + kw.map(([k]) => k).join(', '))
+      }
     }
     if (score > 0) {
       score += (ratings[m.id] || 0) * 0.4
@@ -196,6 +216,7 @@ export function describe(s: Signals): string[] {
   if (s.wantWorksheet === true) out.push('mit Arbeitsblatt')
   if (s.wantWorksheet === false) out.push('ohne Arbeitsblatt')
   if (s.keywords.length) out.push('Interesse: ' + s.keywords.join(', '))
+  if (s.eldib.length) out.push('ELDiB: ' + s.eldib.join(', '))
   return out
 }
 
@@ -206,6 +227,7 @@ export function signalsToFilter(s: Signals): FilterState {
     ageLevels: s.ages,
     types: s.types,
     participantModes: s.participants,
+    eldibGoals: s.eldib,
     hasWorksheet: s.wantWorksheet === true,
   }
 }

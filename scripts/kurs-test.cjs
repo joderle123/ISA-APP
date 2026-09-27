@@ -4,7 +4,8 @@
 // Prüft: nächste Einheit, Einheit öffnen, Material abhaken und Notiz (bleiben
 // nach Neuladen), „Heute gehalten“, Gruppen (Name nie leer), Deep-Links, Reiterwechsel
 // mit offener Einheit („Jahresweg“, Zurück), PDF der Schülerblätter, Grundlagen,
-// Druckansicht, Spickzettel auf einer Seite, Blatt-Vorschau.
+// Druckansicht, Spickzettel auf einer Seite, Blatt-Vorschau, Kurs-Blätter über ihre
+// Aufgabentexte auffindbar, gemerkte Sprache FR ohne Folgen im Kurs, Handy-Breite.
 const path = require('path')
 const fs = require('fs')
 let chromium
@@ -24,6 +25,14 @@ const einheiten = new Map(kurs.flatMap((k) => k.einheiten ?? []).map((e) => [e.i
 const jahr1 = kurs.find((k) => k.jahr && k.jahr.nr === 1)
 const reihe = jahr1.module.flatMap((m) => m.einheiten).filter((id) => einheiten.has(id))
 const jahrZahl = kurs.filter((k) => k.jahr).length
+const blattDir = path.join(__dirname, '..', 'src', 'data', 'blaetter')
+const blaetter = new Map(
+  fs
+    .readdirSync(blattDir)
+    .filter((d) => d.endsWith('.json'))
+    .flatMap((d) => JSON.parse(fs.readFileSync(path.join(blattDir, d), 'utf8')))
+    .map((b) => [b.id, b]),
+)
 
 let ok = 0
 let fehlerZahl = 0
@@ -151,6 +160,36 @@ function pruefe(bed, text) {
     const seiten = (pdf.toString('latin1').match(/\/Type\s*\/Page(?![s\w])/g) || []).length
     pruefe(seiten === 1, `Spickzettel ${id}: eine Seite (${seiten})`)
   }
+
+  // Schülerblätter des Kurses: über Wörter aus ihren Aufgabentexten zu finden (Suche der Arbeitsblätter)
+  const kursBlatt = blaetter.get((e1.blaetter ?? [])[0])
+  const aufgabe = kursBlatt?.de.bausteine.find((x) => x.art === 'aufgabe')
+  const wort = aufgabe && (aufgabe.text.match(/[A-Za-zÄÖÜäöüß]{7,}/g) ?? []).find((w) => !kursBlatt.de.titel.toLowerCase().includes(w.toLowerCase()))
+  if (wort) {
+    await page.goto(DATEI)
+    await page.waitForSelector('main#blaetter article.bl-karte')
+    await page.fill('input[placeholder^="Suchen:"]', wort)
+    await page.waitForTimeout(300)
+    const titel = await page.$$eval('main#blaetter article.bl-karte h3', (els) => els.map((x) => x.textContent))
+    pruefe(titel.includes(kursBlatt.de.titel), `Kurs-Blatt „${kursBlatt.de.titel}“ über „${wort}“ aus seiner Aufgabe gefunden`)
+  }
+
+  // Gemerkte Sprache FR: die Kurs-Blätter haben kein Französisch – Dialog und PDF bleiben deutsch
+  await page.evaluate(() => localStorage.setItem('cdse-blatt-sprache-v1', 'fr'))
+  await page.goto('about:blank')
+  await page.goto(DATEI + '#kurs=' + e1.id)
+  await page.waitForSelector('.ku-einheit-aktionen')
+  if ((await page.locator('.ku-blaetter button').count()) > 0) {
+    await page.locator('.ku-blaetter button').first().click()
+    await page.waitForSelector('dialog.bl-detail[open]')
+    pruefe((await page.locator('dialog.bl-detail[open] .seg').count()) === 0, 'Kurs-Blatt ohne Französisch: keine Sprachwahl, auch wenn FR gemerkt ist')
+    await page.click('dialog.bl-detail .icon-btn[aria-label="Schließen"]')
+    const dl = page.waitForEvent('download', { timeout: 120000 })
+    await page.locator('.ku-einheit-aktionen button', { hasText: 'Schülerblätter (PDF)' }).click()
+    const name = (await dl).suggestedFilename()
+    pruefe(!name.includes('_FR'), `Kurs: „Schülerblätter (PDF)“ bleibt deutsch (${name})`)
+  }
+  await page.evaluate(() => localStorage.removeItem('cdse-blatt-sprache-v1'))
 
   // Grundlagen
   await page.goto(DATEI + '#kurs=grundlagen')
