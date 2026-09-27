@@ -80,8 +80,7 @@ export function createNameTag({ name = '', icon = 'punkt', color = '#ffd166', pi
     const fov = camera.isPerspectiveCamera ? camera.fov : 50;
     const near = 1 - THREE.MathUtils.smoothstep(cur.dist, 5, 30);
     const px = (26 + 6 * near) * (cur.pill / 30);
-    const k = (px / 32) * (CH / (32 * S));            // ganze Canvas-Höhe in px
-    const hPx = 32 * S * k, wPx = hPx * (CW / CH);
+    const hPx = px * (CH / (32 * S)), wPx = hPx * (CW / CH);   // ganze Canvas-Höhe in Bildschirm-Pixeln
     const f = 2 * Math.tan(THREE.MathUtils.degToRad(fov) / 2) / H;
     sprite.scale.set(wPx * f, hPx * f, 1);
   };

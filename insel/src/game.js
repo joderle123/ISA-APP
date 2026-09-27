@@ -2,8 +2,12 @@
 //
 // API-Kurzüberblick (für weitere Module):
 //   game.world.veil      Grauschleier: setZone/veilZone/restoreZone(id,{x,z,duration,onDone})/amountAt(x,z)/patch(material,opts)
+//                        patch() gibt jedem Lambert-Material die Toon-Rampe, Schattentönung und das Kantenlicht (docs/STIL.md §3):
+//                        opts.ramp 'props'|'figur'|'laub'|'terrain'|'fels'|'wolke'|'glow'|{t1,t2,mid,soft,rim}, opts.rim, opts.fogCap
 //                        setGrade({lift,gain,sat,contrast}) – Farbkorrektur (setzt der Himmel je Tageszeit selbst)
 //                        Eigene Shader: veil.glsl einbinden, veil.uniforms übernehmen, am Ende lumoGrade(lumoFog(...)).
+//   Rendering            engine/renderer.js: Post-Stack (Kontur, Bloom, Grade, FXAA) auf mittel/hoch, rr.render(); renderer.render(scene, camera)
+//                        von außen läuft automatisch durch den Stack. Leuchtendes: Emission > 1.0 (Bloom-Schwelle), Stil-Bibel §10.1
 //   game.world.veilFx    Schleier-Schwebeteilchen + Lichtvorhang/Funken/Böe der Farbwelle (Events veil:restore:start/restored)
 //   game.world.sky       time.setTimeOfDay(h) (Sonne 6–19 Uhr), night, golden, grade, setStorm(v), colors
 //   game.world.landmarks Steg, Boot, Leuchtturm (setLighthouseLit), Lava + Rauchsäule (smoke)

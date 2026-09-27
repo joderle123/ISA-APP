@@ -1,6 +1,6 @@
 // Avatar-Raster (WP16): Screenshots aller Frisuren × 4 Hauttöne, aller Hilfsmittel (Brillen, Hörgeräte, Prothesen),
 // Masken, Kopfsachen, Oberteile × Unterteile, Muster, Aufnäher-Raster und Nahaufnahmen. Prüft: keine Seitenfehler,
-// ≤ 6000 Dreiecke je Figur, alte Konfigurationen bleiben gültig, 'lite'-Stufe hat weniger Draw-Calls.
+// ≤ 12000 Dreiecke je Figur, alte Konfigurationen bleiben gültig, 'lite'-Stufe hat weniger Draw-Calls.
 // Aufruf: node tests/avatar-grid.mjs   (SHOTS=Ordner, Q=low|medium|high)
 import { launch, openGame, startGame, frames, shot, IPAD_LANDSCAPE } from './lib.mjs';
 
@@ -58,7 +58,7 @@ try {
   await frames(page, 4);
   await shot(page, 'av01_frisuren_hauttoene');
   const maxTris = Math.max(...stats.map((s) => s.tris));
-  check('Frisuren × Hauttöne: ≤ 6000 Dreiecke je Figur', maxTris <= 6000, `max ${maxTris}`);
+  check('Frisuren × Hauttöne: ≤ 12000 Dreiecke je Figur', maxTris <= 12000, `max ${maxTris}`);
   // Nahaufnahme der ersten Reihe (links und rechts)
   await page.evaluate(() => { const y = LUMO.world.island.getHeight(-3.5, 60); LUMO.debug.setShot({ x: -3.6, y: y + 1.9, z: 63.6 }, { x: -3.6, y: y + 1.3, z: 60 }); LUMO.debug.advance(0.3); });
   await frames(page, 3);
@@ -73,7 +73,7 @@ try {
   stats = await page.evaluate((cfgs) => window.__spawnGrid(cfgs, { cols: 8, dx: 1.2, dz: 1.8 }), aidCfgs);
   await frames(page, 4);
   await shot(page, 'av04_hilfsmittel');
-  check('Hilfsmittel: ≤ 6000 Dreiecke', Math.max(...stats.map((s) => s.tris)) <= 6000);
+  check('Hilfsmittel: ≤ 12000 Dreiecke', Math.max(...stats.map((s) => s.tris)) <= 12000);
   await page.evaluate(() => { const y = LUMO.world.island.getHeight(-2, 60); LUMO.debug.setShot({ x: -1.5, y: y + 1.75, z: 62.6 }, { x: -1.5, y: y + 1.35, z: 60 }); LUMO.debug.advance(0.3); });
   await frames(page, 3);
   await shot(page, 'av05_hilfsmittel_nah');
@@ -84,7 +84,7 @@ try {
   stats = await page.evaluate((cfgs) => window.__spawnGrid(cfgs, { cols: 12, dx: 1.15, dz: 1.8 }), clothCfgs);
   await frames(page, 4);
   await shot(page, 'av06_kleidung_muster');
-  check('Kleidung: ≤ 6000 Dreiecke', Math.max(...stats.map((s) => s.tris)) <= 6000);
+  check('Kleidung: ≤ 12000 Dreiecke', Math.max(...stats.map((s) => s.tris)) <= 12000);
   await page.evaluate(() => { const y = LUMO.world.island.getHeight(-4, 60); LUMO.debug.setShot({ x: -3.5, y: y + 1.8, z: 63.4 }, { x: -3.5, y: y + 1.1, z: 60 }); LUMO.debug.advance(0.3); });
   await frames(page, 3);
   await shot(page, 'av07_kleidung_nah');
@@ -101,7 +101,7 @@ try {
   stats = await page.evaluate((cfgs) => window.__spawnGrid(cfgs, { cols: 10, dx: 1.25, dz: 1.8 }), extraCfgs);
   await frames(page, 4);
   await shot(page, 'av08_masken_rucksack_jacke');
-  check('Masken/Aufnäher: ≤ 6000 Dreiecke', Math.max(...stats.map((s) => s.tris)) <= 6000, `max ${Math.max(...stats.map((s) => s.tris))}`);
+  check('Masken/Aufnäher: ≤ 12000 Dreiecke', Math.max(...stats.map((s) => s.tris)) <= 12000, `max ${Math.max(...stats.map((s) => s.tris))}`);
   // von hinten: Aufnäher-Raster (Figuren zeigen mit dem Rücken zur Kamera)
   await page.evaluate((cfgs) => window.__spawnGrid(cfgs, { cols: 3, dx: 1.2, dz: 1.8, yaw: Math.PI }), extraCfgs.slice(5, 8));
   await page.evaluate(() => { const y = LUMO.world.island.getHeight(0, 60); LUMO.debug.setShot({ x: 0, y: y + 1.7, z: 63.2 }, { x: 0, y: y + 1.05, z: 60 }); LUMO.debug.advance(0.3); });

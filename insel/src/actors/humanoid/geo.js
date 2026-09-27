@@ -126,7 +126,7 @@ export function tube(points, radii, { segs = 6, flat = 1, flatDir = null } = {})
   return g;
 }
 // Haar-Klumpen: Basis at, Richtung dir, Länge len, Radius r, Biegung bend (Versatz an der Spitze), Verjüngung taper
-export function strand({ at, dir, len, r, bend = [0, 0, 0], flat = 1, flatDir = null, segs = 5, steps = 4, taper = 0.55, wave = 0, seed = 0 } = {}) {
+export function strand({ at, dir, len, r, bend = [0, 0, 0], flat = 1, flatDir = null, segs = 5, steps = 4, taper = 0.55, wave = 0, seed = 0, leaf = false } = {}) {
   const A = new THREE.Vector3(...at), D = new THREE.Vector3(...dir).normalize(), B = new THREE.Vector3(...bend);
   const pts = [], radii = [];
   for (let i = 0; i <= steps; i++) {
@@ -134,7 +134,7 @@ export function strand({ at, dir, len, r, bend = [0, 0, 0], flat = 1, flatDir = 
     const p = A.clone().addScaledVector(D, len * t).addScaledVector(B, t * t);
     if (wave) { p.x += Math.sin(t * 6.0 + seed) * wave * t; p.z += Math.cos(t * 5.0 + seed * 1.3) * wave * t; }
     pts.push(p);
-    radii.push(i === steps ? 0 : r * Math.pow(1 - t, taper) * (i === 0 ? 0.92 : 1));
+    radii.push(i === steps ? 0 : leaf ? r * Math.pow(Math.sin(Math.PI * (0.12 + 0.88 * t)), 0.6) : r * Math.pow(1 - t, taper) * (i === 0 ? 0.92 : 1));
   }
   return tube(pts, radii, { segs, flat, flatDir: flatDir ? new THREE.Vector3(...flatDir) : null });
 }

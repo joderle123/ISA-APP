@@ -100,8 +100,8 @@ void main() {
   vec3 Hh = normalize(uSunDir + V);
   float spec = pow(max(dot(N, Hh), 0.0), 220.0);
   float tw = step(0.78, hash12(floor(vWorld.xz * 1.3) + floor(uTime * 5.0)));
-  col += uSunColor * (spec * 2.0 + spec * tw * 4.0) * (1.0 - uNight * 0.6);
-  col += uSunColor * pow(max(dot(reflect(-V, N), uSunDir), 0.0), 24.0) * 0.3;
+  col += uSunColor * (spec * 0.8 + spec * tw * 1.6) * (1.0 - uNight * 0.6);
+  col += uSunColor * pow(max(dot(reflect(-V, N), uSunDir), 0.0), 24.0) * 0.16;
 
   // Schaum als klare Formen: Küstenband 0.6–1.2 m mit Löchern, Wellenlinien mit step, Kämme draußen
   float n1 = vnoise(vWorld.xz * 0.35 + uTime * 0.15);
@@ -111,13 +111,13 @@ void main() {
   shore *= holes;
   float ph = depth * 1.6 - uTime * 0.3 + n1 * 0.5;
   float fl = fract(ph);
-  float line = step(0.02, fl) * (1.0 - step(0.12, fl));
-  line *= 1.0 - smoothstep(0.6, 1.6, depth);
-  line *= step(0.45, n2 + 0.15);
+  float line = step(0.02, fl) * (1.0 - step(0.1, fl));
+  line *= 1.0 - smoothstep(0.5, 1.3, depth);
+  line *= smoothstep(0.42, 0.55, n2 + 0.15) * 0.75;
   float foam = clamp(max(shore, line * 0.9), 0.0, 1.0);
   float crest = step(0.68, N.x * 0.5 + 0.5) * smoothstep(3.0, 8.0, depth) * 0.1 * step(dist, 160.0);
   foam = max(foam, crest);
-  vec3 foamCol = uFoam * (uAmbient + uSunColor * 0.6);
+  vec3 foamCol = uFoam * (uAmbient + uSunColor * 0.45);
   col = mix(col, foamCol, foam);
 
   col = mix(col, lumoApplyVeil(col, vVeilPos), 0.65);

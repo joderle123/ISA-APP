@@ -27,6 +27,8 @@ try {
   const los = async () => { await waitFor(page, () => document.querySelector('[data-overlay="minigame"] [data-los]')); await page.click('[data-overlay="minigame"] [data-los]'); };
   const auto = (level) => page.evaluate((l) => LUMO.minigames.current.inst.auto(l), level);
   const weiter = async () => { await waitFor(page, () => document.querySelector('[data-overlay="minigame"] [data-weiter]')); await page.click('[data-overlay="minigame"] [data-weiter]'); };
+  // Welt-Spiele: Countdown (Echtzeit + Spielzeit) abwarten, bis der Lauf beginnt
+  const lauf = async () => { for (let i = 0; i < 40; i++) { const ph = await page.evaluate(() => { LUMO.debug.advance(0.3); const c = LUMO.minigames.current; return c && c.inst ? c.inst.phase : null; }); if (ph === 'lauf') return true; await sleep(20); } return false; };
 
   // ---- Plugin ----
   const api = await page.evaluate(() => ({ plugins: LUMO.plugins.list, failed: LUMO.plugins.failed, api: !!LUMO.minigames && typeof LUMO.minigames.play === 'function', templates: Object.keys(LUMO.minigames.templates), ids: LUMO.content.ids('minigames') }));
@@ -51,9 +53,11 @@ try {
   await page.evaluate(() => { LUMO.cameraRig.behindPlayer(); LUMO.cameraRig.snap(); });
   await frames(page, 3);
   await shot(page, '121_mg_rennen_countdown');
-  await page.evaluate(() => LUMO.debug.advance(2.8));
+  await lauf();
+  await page.evaluate(() => LUMO.debug.advance(0.5));
+  await sleep(150);
   const r1 = await page.evaluate(() => ({ enabled: LUMO.player.enabled, phase: LUMO.minigames.current.inst.phase, time: document.querySelector('[data-mg-time]').textContent }));
-  check('Nach dem Countdown: Spielfigur frei, Rennen läuft, Zeit zählt', r1.enabled && r1.phase === 'lauf', J(r1));
+  check('Nach dem Countdown: Spielfigur frei, Rennen läuft, Zeit zählt', r1.enabled && r1.phase === 'lauf' && r1.time !== '0,0', J(r1));
   // durch die Ringe (Teleport je Ring + kurze Spielzeit)
   const t0 = Date.now();
   for (let i = 0; i < 11; i++) await page.evaluate(() => { LUMO.debug.mgAct('ring'); LUMO.debug.advance(0.4); });
@@ -62,14 +66,12 @@ try {
   check('Ergebnis: Gold in wenigen Sekunden, versteckter Leuchtstern erscheint erst jetzt, Bestwert gespeichert (mit Geist)', r2.medal === 'gold' && r2.stern === '1' && r2.label === 'Leuchtstern' && r2.score.includes('Neuer Bestwert') && r2.best && r2.best.medal === 'gold' && r2.best.stern === true && Array.isArray(r2.best.ghost.samples) && r2.best.ghost.cp.length === 11 && r2.again && r2.weiter === 'Weiter', J({ ...r2, best: { ...r2.best, ghost: r2.best.ghost.cp.length } }));
   await shot(page, '122_mg_ergebnis_stern');
   // Neustart < 1 s, Geist läuft mit
-  const tA = Date.now();
   await page.click('[data-overlay="minigame"] [data-again]');
   await waitFor(page, () => !document.querySelector('[data-overlay="minigame"]') && LUMO.debug.mgInfo() && LUMO.debug.mgInfo().phase === 'spiel');
-  const restartMs = Date.now() - tA;
-  await page.evaluate(() => LUMO.debug.advance(2.8));
+  await lauf();
   await page.evaluate(() => { LUMO.debug.mgAct('ring'); LUMO.debug.advance(0.5); LUMO.debug.mgAct('ring'); LUMO.debug.advance(0.5); });
-  const g1 = await page.evaluate(() => { const g = LUMO.scene.getObjectByName('geist-bestzeit'); return { ghost: !!g, visible: !!(g && g.visible), delta: document.querySelector('[data-mg-ghost]').textContent, tries: LUMO.debug.mgInfo().tries }; });
-  check('Nochmal: Neustart unter 1 s, Geist der Bestzeit läuft sichtbar mit, Abstand im HUD', restartMs < 1000 && g1.ghost && g1.visible && /s$/.test(g1.delta) && g1.tries === 2, J({ restartMs, ...g1 }));
+  const g1 = await page.evaluate(() => { const g = LUMO.scene.getObjectByName('geist-bestzeit'); return { ghost: !!g, visible: !!(g && g.visible), delta: document.querySelector('[data-mg-ghost]').textContent, tries: LUMO.debug.mgInfo().tries, restartMs: LUMO.debug.mgInfo().restartMs }; });
+  check('Nochmal: Neustart unter 1 s (in der Seite gemessen), Geist der Bestzeit läuft sichtbar mit, Abstand im HUD', g1.restartMs < 1000 && g1.ghost && g1.visible && /s$/.test(g1.delta) && g1.tries === 2, J(g1));
   await page.evaluate(() => { LUMO.cameraRig.behindPlayer(); LUMO.cameraRig.snap(); });
   await frames(page, 3);
   await shot(page, '123_mg_rennen_geist');
@@ -229,7 +231,8 @@ try {
   await page.evaluate(() => { LUMO.debug.teleport('hafen'); window.__lt = LUMO.minigames.lotsen({ guide: 'jolie', mode: 'folgen', minigame: 'e03-rollentausch' }); });
   await los();
   await waitFor(page, () => document.querySelector('[data-mg-dark].is-in'));
-  await page.evaluate(() => LUMO.debug.advance(2.2));
+  await lauf();
+  await page.evaluate(() => LUMO.debug.advance(0.3));
   await frames(page, 3);
   const fo = await page.evaluate(() => ({ dark: !!document.querySelector('[data-mg-dark].is-in'), lights: [...document.querySelectorAll('[data-mg-light]')].filter((l) => l.style.display !== 'none').length, points: LUMO.minigames.current.inst.points.length, hud: document.querySelector('[data-mg-info]').textContent, jolie: LUMO.debug.npc('jolie') && LUMO.debug.npc('jolie').lod, bubble: !!document.querySelector('.bubble[data-who="jolie"]') }));
   check('Folgen: Bild dunkel, Lichtpunkt sichtbar, 6 Lichter (Abenteuer), Jolie spricht, HUD zählt', fo.dark && fo.lights >= 1 && fo.points === 6 && fo.hud.includes('Licht 1/6'), J(fo));

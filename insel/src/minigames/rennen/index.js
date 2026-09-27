@@ -22,10 +22,12 @@ export default {
     const island = world.island;
     const kind = params.kind || 'lauf';
     const radius = params.radius || (kind === 'boot' ? 3.6 : kind === 'segeln' ? 3.2 : 2.4);
+    // Bodenhöhe wie die Spielfigur: Gelände oder begehbare Fläche (Steg, Dach, Podest), fürs Boot der Wasserspiegel
+    const groundY = (x, z) => { const t = island.getHeight(x, z); const s = game.colliders && game.colliders.surfaceHeight ? game.colliders.surfaceHeight(x, z, Infinity, 0.65) : -Infinity; return s > t ? s : t; };
     const resolve3 = (pos) => {
       const p = ctx.resolvePos(pos); if (!p) return null;
       let y = p.y;
-      if (y === undefined || y === null) y = kind === 'boot' ? island.waterLevel(p.x, p.z) + 0.9 : island.getHeight(p.x, p.z) + (p.rel !== undefined ? p.rel : 1.15);
+      if (y === undefined || y === null) y = kind === 'boot' ? island.waterLevel(p.x, p.z) + 0.9 : groundY(p.x, p.z) + (p.rel !== undefined ? p.rel : 1.15);
       return { x: p.x, y, z: p.z, r: p.r || radius };
     };
     const cps = (params.checkpoints || []).map(resolve3).filter(Boolean);
@@ -217,9 +219,8 @@ export default {
         ctx.finish({ seconds: sec, fails: 0, ground: 0, checkpoints: n, kind, auto: true, ghost: { samples: samples.serialize(), cp: cps.map((c, i) => +((i + 1) * (sec / n)).toFixed(2)) } });
       },
       act(name, arg) {
-        if (name === 'ring') { const c = cps[race.index]; if (!c) return false; if (kind === 'boot' && boat) { boat.place(c.x, c.z, boat.yaw); placePlayerOnBoat(); } else player.teleport(c.x, c.z); phase = 'lauf'; return true; }
+        if (name === 'ring') { const c = cps[race.index]; if (!c || phase !== 'lauf') return false; if (kind === 'boot' && boat) { boat.place(c.x, c.z, boat.yaw); placePlayerOnBoat(); } else player.teleport(c.x, c.z); return true; }
         if (name === 'ruder') { chooseRuder(arg); return true; }
-        if (name === 'go') { ctx.lock(false); phase = 'lauf'; return true; }
         return false;
       },
       get phase() { return phase; }, get time() { return t; },

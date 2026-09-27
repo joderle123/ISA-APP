@@ -61,9 +61,9 @@ export function buildPatchParts(patches, where, W = 1) {
   for (const l of lay) {
     const p = list[l.i];
     const modNr = p.joker ? 10 : Number((p.module.match(/m(\d)/) || [])[1]) || 0;
-    const disc = new THREE.CircleGeometry(l.r, 14);
+    const disc = new THREE.CircleGeometry(l.r, 10);
     const sym = symbolGeo(modNr, l.r);
-    const border = new THREE.RingGeometry(l.r * 0.78, l.r, 14, 1);
+    const border = new THREE.RingGeometry(l.r * 0.78, l.r, 10, 1);
     if (where === 'back') {
       // Rückenfläche des Rumpfes (Ellipse je Höhe): Position auf der Fläche, Normale nach hinten
       const y = 0.1 + l.v * (M.torso - 0.2);

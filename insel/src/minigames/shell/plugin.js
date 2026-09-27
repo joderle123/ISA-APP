@@ -41,7 +41,7 @@ export default {
       return { ok: true, result: D._mgResult || null, phase: shell.current ? shell.current.phase : 'zu' };
     };
     D.mgAct = (name, ...args) => { const c = shell.current; return c && c.inst && c.inst.act ? c.inst.act(name, ...args) : null; };
-    D.mgInfo = () => { const c = shell.current; return c ? { id: c.id, mode: c.mode, phase: c.phase, rueckenwind: c.rueckenwind, tries: c.tries, template: c.def.template, hasInst: !!c.inst } : null; };
+    D.mgInfo = () => { const c = shell.current; return c ? { id: c.id, mode: c.mode, phase: c.phase, rueckenwind: c.rueckenwind, tries: c.tries, template: c.def.template, hasInst: !!c.inst, restartMs: c.restartMs } : null; };
     D.mgList = () => game.content.ids('minigames');
     D.mgBests = () => game.state.get('medals', {});
     D.mgResult = () => D._mgResult || null;

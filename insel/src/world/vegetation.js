@@ -5,7 +5,7 @@ import { part, merge, frond } from './geom.js';
 import { mulberry32, smoothstep } from './noise.js';
 import { ZONES, SITES, FEATURES, ZONE_INDEX } from './island.js';
 
-const CHUNK = 80;
+const CHUNK = 112;
 const ZI = ZONE_INDEX;
 
 // ---------- Modelle (Stil-Bibel §6: klare Silhouetten, runde weiche Kronen, zwei Töne je Krone, kein Jitter) ----------
@@ -57,11 +57,11 @@ function canopyColor(light, dark, y0, y1) {
   return (x, y, z, out) => out.copy(b).lerp(a, smoothstep(y0, y1, y));
 }
 // Runde Krone aus großen weichen Loben, je Lobe Farbton ±4°
-function lobes(parts, list, light, dark, y0, y1, wind, seedBase = 0) {
+function lobes(parts, list, light, dark, y0, y1, wind, seedBase = 0, segW = 8, segH = 6) {
   list.forEach((b, i) => {
     const deg = ((seedBase + i) % 3 - 1) * 4;
     const cf = canopyColor(hueShift(light, deg), hueShift(dark, deg), y0, y1);
-    parts.push(part(new THREE.SphereGeometry(b[3], 10, 8), { pos: [b[0], b[1], b[2]], scale: [1, 0.86, 1], smooth: true, leaf: 1, color: cf, wind }));
+    parts.push(part(new THREE.SphereGeometry(b[3], segW, segH), { pos: [b[0], b[1], b[2]], scale: [1, 0.86, 1], smooth: true, leaf: 1, color: cf, wind }));
   });
 }
 
@@ -119,7 +119,7 @@ function pineGeo(rnd) {
 function bushGeo(rnd, flowering) {
   const parts = [];
   const list = [[0, 0.55, 0, 0.9], [0.7, 0.45, 0.2, 0.66], [-0.6, 0.42, -0.2, 0.7]];
-  lobes(parts, list, '#7fcf52', '#3a9140', 0, 1.3, (x, y) => y * 0.12, Math.floor(rnd() * 3));
+  lobes(parts, list, '#7fcf52', '#3a9140', 0, 1.3, (x, y) => y * 0.12, Math.floor(rnd() * 3), 7, 5);
   if (flowering) {
     const cols = ['#ff5d8f', '#ffd23f', '#ffffff', '#ff8c42'];
     const c = cols[Math.floor(rnd() * cols.length)];
@@ -145,18 +145,20 @@ function fernGeo(rnd) {
   return merge(parts);
 }
 
-// Blumen: runde Punkte (Ø 0.14 m) auf Stiel
+// Blumen: runde Punkte (Ø 0.14 m) auf Stiel – sparsam gebaut (≈ 25 Dreiecke je Blume)
 function flowersGeo(rnd, palette) {
   const parts = [];
-  const stem = '#3f8f3a';
-  for (let k = 0; k < 6; k++) {
+  const stem = '#3f8f3a', mid = new THREE.Color('#ffe14d');
+  for (let k = 0; k < 5; k++) {
     const a = rnd() * Math.PI * 2, r = rnd() * 0.45;
     const x = Math.cos(a) * r, z = Math.sin(a) * r;
     const h = 0.28 + rnd() * 0.32;
-    parts.push(part(new THREE.CylinderGeometry(0.012, 0.018, h, 3, 1), { pos: [x, h / 2, z], color: stem, wind: (px, py) => py / h * 0.6 }));
-    const c = palette[Math.floor(rnd() * palette.length)];
-    parts.push(part(new THREE.SphereGeometry(0.07 + rnd() * 0.02, 6, 5), { pos: [x, h + 0.04, z], scale: [1, 0.7, 1], color: c, wind: 0.6, smooth: true }));
-    parts.push(part(new THREE.SphereGeometry(0.03, 5, 4), { pos: [x, h + 0.08, z], color: '#ffe14d', wind: 0.6, smooth: true }));
+    parts.push(part(new THREE.CylinderGeometry(0.012, 0.018, h, 3, 1, true), { pos: [x, h / 2, z], color: stem, wind: (px, py) => py / h * 0.6 }));
+    const c = new THREE.Color(palette[Math.floor(rnd() * palette.length)]);
+    parts.push(part(new THREE.SphereGeometry(0.07 + rnd() * 0.02, 5, 4), {
+      pos: [x, h + 0.04, z], scale: [1, 0.7, 1], wind: 0.6, smooth: true,
+      color: (px, py, pz, out) => out.copy(py > h + 0.075 ? mid : c),
+    }));
   }
   return merge(parts);
 }
@@ -165,16 +167,18 @@ function flowersGeo(rnd, palette) {
 // Vertex-Verlauf Basis = Bodenfarbe × 0.85, Spitze +22 % Luminanz
 function grassGeo(rnd) {
   const pos = [], col = [], wind = [], leaf = [];
-  const h = 0.55 + rnd() * 0.35, w = 0.42, lean = (rnd() - 0.5) * 0.25;
-  const base = 0.62, mid = 0.92, tip = 1.15;
+  const h = 0.42 + rnd() * 0.3, w = 0.34, lean = (rnd() - 0.5) * 0.3;
   const push = (x, y, z, c, wv) => { pos.push(x, y, z); col.push(c, c, c); wind.push(wv); leaf.push(0.35); };
   for (const a of [0, Math.PI / 2]) {
     const dx = Math.cos(a) * w * 0.5, dz = Math.sin(a) * w * 0.5;
     const tx = Math.cos(a + Math.PI / 2) * lean, tz = Math.sin(a + Math.PI / 2) * lean;
-    // abgerundetes Dreieck: Basis breit, Mitte etwas schmaler, Spitze
-    const p = [[-dx, 0, -dz, base, 0], [dx, 0, dz, base, 0], [dx * 0.72 + tx * 0.5, h * 0.55, dz * 0.72 + tz * 0.5, mid, 0.55], [-dx * 0.72 + tx * 0.5, h * 0.55, -dz * 0.72 + tz * 0.5, mid, 0.55], [tx, h, tz, tip, 1]];
-    const tri = (i, j, k) => { for (const q of [p[i], p[j], p[k]]) push(q[0], q[1], q[2], q[3], q[4]); };
-    tri(0, 1, 2); tri(0, 2, 3); tri(3, 2, 4);
+    // abgerundeter Halm: schmal am Boden, breit in der Mitte, weich zulaufende Spitze (vier Reihen)
+    const rows = [[0.55, 0.0, 0.5], [0.95, 0.38, 0.8], [0.7, 0.72, 0.98], [0.0, 1.0, 1.08]];
+    const P = rows.map(([wf, hf, c]) => [[-dx * wf + tx * hf * hf, h * hf, -dz * wf + tz * hf * hf, c, hf], [dx * wf + tx * hf * hf, h * hf, dz * wf + tz * hf * hf, c, hf]]);
+    for (let r = 0; r < rows.length - 1; r++) {
+      const [a0, b0] = P[r], [a1, b1] = P[r + 1];
+      for (const q of [a0, b0, a1, b0, b1, a1]) push(q[0], q[1], q[2], q[3], q[4]);
+    }
   }
   const g = new THREE.BufferGeometry();
   g.setAttribute('position', new THREE.Float32BufferAttribute(pos, 3));
@@ -263,10 +267,10 @@ function heatherGeo(rnd) {
   const list = [[0, 0.22, 0, 0.44], [0.36, 0.18, 0.12, 0.32], [-0.32, 0.16, -0.14, 0.34]];
   lobes(parts, list, '#8ea86c', '#5c7448', 0, 0.5, (x, y) => y * 0.15, Math.floor(rnd() * 3));
   const cols = ['#b48cff', '#c99cff', '#9d6bd8', '#e0b8ff'];
-  for (let k = 0; k < 12; k++) {
+  for (let k = 0; k < 9; k++) {
     const a = rnd() * Math.PI * 2, r = rnd() * 0.5;
     const y = 0.38 + rnd() * 0.22;
-    parts.push(part(new THREE.SphereGeometry(0.07, 6, 5), { pos: [Math.cos(a) * r, y, Math.sin(a) * r], color: cols[k % cols.length], wind: 0.97, smooth: true }));
+    parts.push(part(new THREE.SphereGeometry(0.075, 4, 3), { pos: [Math.cos(a) * r, y, Math.sin(a) * r], color: cols[k % cols.length], wind: 0.97, smooth: true }));
   }
   return merge(parts);
 }
@@ -515,7 +519,7 @@ export function createVegetation({ island, veil, colliders, quality, scene }) {
     if (I.path > 0.35 || blocked(x, z, -1)) return;
     let p = 0;
     if (I.s === 'grass') p = 0.7 * (1 - zw[ZI.dschungel] * 0.5);
-    else if (I.s === 'sand' && I.h > 1.3) p = 0.12;
+    else if (I.s === 'sand' && I.h > 1.6) p = 0.05;
     else if (I.s === 'ash') p = 0.08;
     if (r >= p) return;
     // Farbe: Zonen-Gras
@@ -523,9 +527,9 @@ export function createVegetation({ island, veil, colliders, quality, scene }) {
     ZONES.forEach((Z, k) => { if (zw[k] > 0) { grassTint.r += gtc[Z.id].r * zw[k]; grassTint.g += gtc[Z.id].g * zw[k]; grassTint.b += gtc[Z.id].b * zw[k]; tw += zw[k]; } });
     const wild = Math.max(0, 1 - tw);
     grassTint.r += gtc.wild.r * wild; grassTint.g += gtc.wild.g * wild; grassTint.b += gtc.wild.b * wild; tw += wild;
-    grassTint.multiplyScalar((0.82 + rnd() * 0.2) / tw);
-    if (I.s === 'sand') grassTint.lerp(new THREE.Color('#c8cf7a'), 0.5);
-    add('grass', x, z, { s: 1.1 + rnd() * 0.8, tint: grassTint.clone() });
+    grassTint.multiplyScalar((0.7 + rnd() * 0.16) / tw);
+    if (I.s === 'sand') grassTint.lerp(new THREE.Color('#b9b56e'), 0.6);
+    add('grass', x, z, { s: 0.95 + rnd() * 0.6, tint: grassTint.clone() });
   });
   // Steine und Felsbrocken
   scatter(5, (x, z, r) => {
@@ -604,7 +608,10 @@ export function createVegetation({ island, veil, colliders, quality, scene }) {
     // nach Variante und Block gruppieren
     const buckets = new Map();
     for (const it of list) {
-      const key = it.v + ':' + Math.floor((it.x + 256) / CHUNK) + ':' + Math.floor((it.z + 256) / CHUNK);
+      const ci = Math.floor((it.x + 256) / CHUNK), cj = Math.floor((it.z + 256) / CHUNK);
+      // Kleinkram: eine Variante je Block (halb so viele Draw-Calls; Vielfalt kommt aus Farbe, Größe, Drehung)
+      const v = sp.kind === 'small' ? (ci * 7 + cj * 13) % sp.geos.length : it.v;
+      const key = v + ':' + ci + ':' + cj;
       if (!buckets.has(key)) buckets.set(key, []);
       buckets.get(key).push(it);
     }

@@ -309,13 +309,21 @@ export function createTerrain({ island, veil, quality }) {
     key: 'terrain',
     ramp: 'terrain',
     uniforms: { uLavaColor: lavaColor },
-    fragmentPars: 'uniform vec3 uLavaColor;\nvarying float vGlow;\n',
+    fragmentPars: `uniform vec3 uLavaColor;
+varying float vGlow;
+float lumoBlotchH(vec2 p) { vec3 p3 = fract(vec3(p.xyx) * 0.1031); p3 += dot(p3, p3.yzx + 33.33); return fract((p3.x + p3.y) * p3.z); }
+float lumoBlotch(vec2 p) { vec2 i = floor(p), f = fract(p); f = f * f * (3.0 - 2.0 * f); return mix(mix(lumoBlotchH(i), lumoBlotchH(i + vec2(1, 0)), f.x), mix(lumoBlotchH(i + vec2(0, 1)), lumoBlotchH(i + vec2(1, 1)), f.x), f.y); }
+`,
     vertex: (s) => s
       .replace('#include <common>', '#include <common>\nattribute float aGlow;\nvarying float vGlow;')
       .replace('#include <begin_vertex>', '#include <begin_vertex>\nvGlow = aGlow;'),
     // Unterwasser-Tönung + zweitonige Kaustik (§5.4), Lava-Glühen
     beforeVeil: /* glsl */`
       {
+        // gemalte Flächen-Variation (±4 %, zwei Skalen) statt Rauschfacetten
+        vec2 bp = vVeilPos.xz;
+        float bn = lumoBlotch(bp * 0.16) * 0.6 + lumoBlotch(bp * 0.62 + 3.1) * 0.4;
+        outgoingLight *= 1.0 + (bn - 0.5) * 0.08;
         float uy = vVeilPos.y;
         if (uy < 0.15) {
           float dd = clamp(-uy / 5.0, 0.0, 1.0);

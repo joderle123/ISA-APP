@@ -1,5 +1,5 @@
 // Unit-Tests Avatar (WP16/17/41, Node ohne Browser): Konfiguration (alt → neu), 16 Hauttöne, alle Frisuren × Hauttöne
-// und alle Hilfsmittel bauen ohne Fehler und bleiben ≤ 6000 Dreiecke, Aufnäher-Raster (39, keine Überlappung),
+// und alle Hilfsmittel bauen ohne Fehler und bleiben ≤ 12000 Dreiecke (weiche Cel-Shading-Figur, Stil-Bibel §8), Aufnäher-Raster (39, keine Überlappung),
 // Körpersprache (10 Posen, additiv, Gefühl → Posen), Emotes (12 inkl. 3 Tänze, Promise), Aura-Helfer, Kosmetik-Inventar.
 // Aufruf: node --test tests/unit/avatar.test.mjs
 import test from 'node:test';
@@ -30,7 +30,7 @@ test('normalizeConfig: alte Konfigurationen (accessory) bleiben gültig und werd
   assert.ok(HAIR_STYLES.includes('kopftuch') && HAIR_STYLES.includes('locs') && HAIR_STYLES.includes('flechtzoepfe') && HAIR_STYLES.includes('buzz'));
 });
 
-test('Alle Frisuren × 4 Hauttöne und alle Hilfsmittel bauen ohne Fehler, ≤ 6000 Dreiecke', () => {
+test('Alle Frisuren × 4 Hauttöne und alle Hilfsmittel bauen ohne Fehler, ≤ 12000 Dreiecke', () => {
   let max = 0;
   for (const hairStyle of HAIR_STYLES) for (const skin of [SKIN_TONES[0], SKIN_TONES[5], SKIN_TONES[10], SKIN_TONES[15]]) {
     const h = createHumanoid({ hairStyle, skin, freckles: 2, vitiligo: 1 });
@@ -47,7 +47,7 @@ test('Alle Frisuren × 4 Hauttöne und alle Hilfsmittel bauen ohne Fehler, ≤ 6
   full.update(1 / 30); max = Math.max(max, full.triangles);
   assert.ok(Object.values(full.meshes).length >= 16);
   full.dispose();
-  assert.ok(max <= 6000, `max ${max}`);
+  assert.ok(max <= 12000, `max ${max}`);
   // Alle Kleidungsstile und Masken
   for (const topStyle of TOP_STYLES) for (const bottomsStyle of BOTTOM_STYLES) { const h = createHumanoid({ topStyle, bottomsStyle, shoesStyle: SHOE_STYLES[topStyle.length % 4], pattern: PATTERNS[bottomsStyle.length % PATTERNS.length], head: HEAD_ITEMS[topStyle.length % HEAD_ITEMS.length] }); h.update(0.05); h.dispose(); }
   for (const mask of MASKS) { const h = createHumanoid({ mask }, { detail: 'lite' }); h.update(0.05); assert.ok(Object.values(h.meshes).length < 14); h.dispose(); }

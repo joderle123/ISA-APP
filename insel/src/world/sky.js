@@ -14,17 +14,17 @@ import { mulberry32 } from './noise.js';
 //   hazeN/hazeF  Dunst nah → fern (Nebel, unter dem Horizont)         hemiI     Hemisphären-Stärke (Schattenhelligkeit)
 //   grade        [sat, contrast, lift-hex]                             exp/night Belichtung · Nachtanteil (Sterne, Mond)
 const KEYS = [
-  { h: 0.0, top: '#0A0F2C', mid: '#141B44', hor: '#2A3470', sun: '#8FA6FF', sunI: 1.0, halo: '#3A4A8A', haloAmt: 0.5, shadow: '#1E2A5E', ground: '#141A44', hazeN: '#1E2650', hazeF: '#1A2050', grade: [0.78, 1.04, '#03051A'], exp: 0.92, night: 1, hemiI: 0.62, rim: '#8FA6FF' },
-  { h: 4.9, top: '#0A0F2C', mid: '#141B44', hor: '#2A3470', sun: '#8FA6FF', sunI: 1.0, halo: '#3A4A8A', haloAmt: 0.5, shadow: '#1E2A5E', ground: '#141A44', hazeN: '#1E2650', hazeF: '#1A2050', grade: [0.78, 1.04, '#03051A'], exp: 0.92, night: 1, hemiI: 0.62, rim: '#8FA6FF' },
+  { h: 0.0, top: '#0A0F2C', mid: '#141B44', hor: '#2A3470', sun: '#8FA6FF', sunI: 1.3, halo: '#3A4A8A', haloAmt: 0.5, shadow: '#243270', ground: '#161C48', hazeN: '#222A58', hazeF: '#1C2354', grade: [0.8, 1.04, '#04071F'], exp: 0.94, night: 1, hemiI: 0.75, rim: '#8FA6FF' },
+  { h: 4.9, top: '#0A0F2C', mid: '#141B44', hor: '#2A3470', sun: '#8FA6FF', sunI: 1.3, halo: '#3A4A8A', haloAmt: 0.5, shadow: '#243270', ground: '#161C48', hazeN: '#222A58', hazeF: '#1C2354', grade: [0.8, 1.04, '#04071F'], exp: 0.94, night: 1, hemiI: 0.75, rim: '#8FA6FF' },
   { h: 5.7, top: '#243070', mid: '#5A4E94', hor: '#E88A82', sun: '#FFB07A', sunI: 0.9, halo: '#FF8A6A', haloAmt: 0.9, shadow: '#4A4A88', ground: '#4A3448', hazeN: '#B08AA0', hazeF: '#A07A9A', grade: [1.0, 1.05, '#020210'], exp: 0.98, night: 0.55, hemiI: 1.1, rim: '#FFC8A0' },
   { h: 6.8, top: '#5C8FD8', mid: '#9FC5EE', hor: '#FFDDB8', sun: '#FFE0B8', sunI: 2.6, halo: '#FFC58A', haloAmt: 0.7, shadow: '#7C8CD0', ground: '#8A7A66', hazeN: '#F4E6D4', hazeF: '#ECDCCB', grade: [1.10, 1.05, '#000000'], exp: 1.02, night: 0, hemiI: 2.6, rim: '#FFE9C8' },
-  { h: 9.5, top: '#3D8BE8', mid: '#79B6F0', hor: '#CDE8F6', sun: '#FFF6E0', sunI: 3.2, halo: '#FFF3D8', haloAmt: 0.4, shadow: '#6E86C8', ground: '#8C8A6C', hazeN: '#E0EDF6', hazeF: '#D2E4F2', grade: [1.08, 1.06, '#000000'], exp: 1.0, night: 0, hemiI: 2.8, rim: '#FFF1C8' },
-  { h: 14.5, top: '#3D8BE8', mid: '#79B6F0', hor: '#CDE8F6', sun: '#FFF6E0', sunI: 3.2, halo: '#FFF3D8', haloAmt: 0.4, shadow: '#6E86C8', ground: '#8C8A6C', hazeN: '#E0EDF6', hazeF: '#D2E4F2', grade: [1.08, 1.06, '#000000'], exp: 1.0, night: 0, hemiI: 2.8, rim: '#FFF1C8' },
-  { h: 16.6, top: '#3E6BC0', mid: '#8FA6DE', hor: '#FFC48A', sun: '#FFD2A0', sunI: 3.0, halo: '#FFA060', haloAmt: 0.7, shadow: '#7A6AAE', ground: '#9A8266', hazeN: '#F4DCC4', hazeF: '#EBD0BE', grade: [1.08, 1.06, '#00030D'], exp: 1.02, night: 0, hemiI: 2.9, rim: '#FFE0B0' },
-  { h: 18.5, top: '#35589E', mid: '#8A8CCC', hor: '#FFB078', sun: '#FFC08A', sunI: 2.5, halo: '#FF8E50', haloAmt: 0.85, shadow: '#6E5EA6', ground: '#8E6A56', hazeN: '#F0C8AC', hazeF: '#E6BCA8', grade: [1.08, 1.06, '#00030D'], exp: 1.02, night: 0, hemiI: 2.6, rim: '#FFD0A0' },
+  { h: 9.5, top: '#3D8BE8', mid: '#79B6F0', hor: '#CDE8F6', sun: '#FFF6E0', sunI: 2.7, halo: '#FFF3D8', haloAmt: 0.4, shadow: '#6E86C8', ground: '#8C8A6C', hazeN: '#E2EEF7', hazeF: '#D6E6F3', grade: [1.05, 1.06, '#000000'], exp: 0.96, night: 0, hemiI: 2.5, rim: '#FFF1C8' },
+  { h: 14.5, top: '#3D8BE8', mid: '#79B6F0', hor: '#CDE8F6', sun: '#FFF6E0', sunI: 2.7, halo: '#FFF3D8', haloAmt: 0.4, shadow: '#6E86C8', ground: '#8C8A6C', hazeN: '#E2EEF7', hazeF: '#D6E6F3', grade: [1.05, 1.06, '#000000'], exp: 0.96, night: 0, hemiI: 2.5, rim: '#FFF1C8' },
+  { h: 16.6, top: '#3E6BC0', mid: '#8FA6DE', hor: '#FFC48A', sun: '#FFD2A0', sunI: 3.0, halo: '#FFA060', haloAmt: 0.7, shadow: '#7A6AAE', ground: '#9A8266', hazeN: '#F2E0CE', hazeF: '#E8D6CA', grade: [1.08, 1.06, '#00030D'], exp: 1.02, night: 0, hemiI: 2.9, rim: '#FFE0B0' },
+  { h: 18.5, top: '#35589E', mid: '#8A8CCC', hor: '#FFB078', sun: '#FFC08A', sunI: 2.5, halo: '#FF8E50', haloAmt: 0.85, shadow: '#6E5EA6', ground: '#8E6A56', hazeN: '#EED0BC', hazeF: '#E2C6B8', grade: [1.08, 1.06, '#00030D'], exp: 1.02, night: 0, hemiI: 2.6, rim: '#FFD0A0' },
   { h: 19.2, top: '#1A2358', mid: '#5A3E8C', hor: '#E86A6A', sun: '#D89AB8', sunI: 1.2, halo: '#FF6A5A', haloAmt: 0.85, shadow: '#3A3F80', ground: '#4A3448', hazeN: '#8A5A8A', hazeF: '#7A4A8A', grade: [1.0, 1.05, '#020210'], exp: 0.98, night: 0.3, hemiI: 1.2, rim: '#FFB0A0' },
-  { h: 20.3, top: '#0A0F2C', mid: '#141B44', hor: '#2A3470', sun: '#8FA6FF', sunI: 1.0, halo: '#3A4A8A', haloAmt: 0.5, shadow: '#1E2A5E', ground: '#141A44', hazeN: '#1E2650', hazeF: '#1A2050', grade: [0.78, 1.04, '#03051A'], exp: 0.92, night: 1, hemiI: 0.62, rim: '#8FA6FF' },
-  { h: 24.0, top: '#0A0F2C', mid: '#141B44', hor: '#2A3470', sun: '#8FA6FF', sunI: 1.0, halo: '#3A4A8A', haloAmt: 0.5, shadow: '#1E2A5E', ground: '#141A44', hazeN: '#1E2650', hazeF: '#1A2050', grade: [0.78, 1.04, '#03051A'], exp: 0.92, night: 1, hemiI: 0.62, rim: '#8FA6FF' },
+  { h: 20.3, top: '#0A0F2C', mid: '#141B44', hor: '#2A3470', sun: '#8FA6FF', sunI: 1.3, halo: '#3A4A8A', haloAmt: 0.5, shadow: '#243270', ground: '#161C48', hazeN: '#222A58', hazeF: '#1C2354', grade: [0.8, 1.04, '#04071F'], exp: 0.94, night: 1, hemiI: 0.75, rim: '#8FA6FF' },
+  { h: 24.0, top: '#0A0F2C', mid: '#141B44', hor: '#2A3470', sun: '#8FA6FF', sunI: 1.3, halo: '#3A4A8A', haloAmt: 0.5, shadow: '#243270', ground: '#161C48', hazeN: '#222A58', hazeF: '#1C2354', grade: [0.8, 1.04, '#04071F'], exp: 0.94, night: 1, hemiI: 0.75, rim: '#8FA6FF' },
 ];
 const hexToV = (h) => { const n = parseInt(h.slice(1), 16); return [((n >> 16) & 255) / 255, ((n >> 8) & 255) / 255, (n & 255) / 255]; };
 const COLOR_KEYS = ['top', 'mid', 'hor', 'sun', 'halo', 'shadow', 'ground', 'hazeN', 'hazeF', 'rim'];
@@ -246,7 +246,7 @@ export function createSky({ scene, renderer, audio, quality, events }) {
   scene.add(hemi);
 
   // ---- Nebel (Luftperspektive: near = 0.18 × Sichtweite) ----
-  scene.fog = new THREE.Fog(0xcfe3f4, quality.drawDistance * 0.18, quality.drawDistance);
+  scene.fog = new THREE.Fog(0xcfe3f4, quality.drawDistance * 0.25, quality.drawDistance * 1.4);
 
   // ---- Wolken (zwei Töne über die Rampe „wolke“, kein Schleier, Nebel gedeckelt) ----
   const rnd = mulberry32(99);
@@ -491,7 +491,8 @@ export function createSky({ scene, renderer, audio, quality, events }) {
     u.uRimGlobal.value = 1 - state.night * 0.5;
     u.uFogNearColor.value.copy(colors.hazeNear);
     u.uFogSunColor.value.copy(colors.glow);
-    u.uFogSunAmt.value = cur.haloAmt * 0.9;
+    u.uFogSunAmt.value = cur.haloAmt * 0.6;
+    u.uFogMax.value = 0.72;
     u.uFogHeight.value = 0.12;
     u.uSunColorLin.value.copy(sun.color).multiplyScalar(sun.intensity);
     post = u.uLumoPost.value;
@@ -541,8 +542,8 @@ export function createSky({ scene, renderer, audio, quality, events }) {
       shadowSpan.v = q.name === 'high' ? 60 : 44;
       sc.left = -shadowSpan.v; sc.right = shadowSpan.v; sc.top = shadowSpan.v; sc.bottom = -shadowSpan.v;
       sc.updateProjectionMatrix();
-      scene.fog.far = q.drawDistance;
-      scene.fog.near = q.drawDistance * 0.18;
+      scene.fog.far = q.drawDistance * 1.4;
+      scene.fog.near = q.drawDistance * 0.25;
       cloudCount = CLOUD_N[q.name] || 18;
       applyClouds();
     },

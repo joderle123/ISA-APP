@@ -185,7 +185,7 @@ export function createShell({ game, templates }) {
     clearTimeout(lineTimer); lineTimer = setTimeout(() => h.line.classList.remove('is-in'), ms);
   }
   // Countdown 3·2·1·Los (Echtzeit; die Spielfigur steht solange)
-  function countdown(n = 3, { seconds = 0.8 } = {}) {
+  function countdown(n = 3, { seconds = 0.7 } = {}) {
     const h = hud();
     return new Promise((resolve) => {
       let k = n, t = 0;
@@ -193,7 +193,7 @@ export function createShell({ game, templates }) {
       show(String(k));
       const off = game.addUpdate((dt, _t, real) => {
         t += real;
-        if (t < seconds) return;
+        if (t < (k === 0 ? seconds * 0.7 : seconds)) return;
         t = 0; k--;
         if (k > 0) { show(String(k)); return; }
         if (k === 0) { show('Los!'); return; }
@@ -264,6 +264,7 @@ export function createShell({ game, templates }) {
     s.startedAt = performance.now();
     emit('minigame:start', { id: s.id, mode: s.mode, rueckenwind: s.rueckenwind, tries: s.tries });
     if (s.inst) { try { s.inst.stop(); } catch (e) { /* egal */ } s.inst = null; }
+    if (s.restartAt) { s.restartMs = Math.round(performance.now() - s.restartAt); s.restartAt = 0; }
     if (s.world) {
       if (s.overlay) { const o = s.overlay; s.overlay = null; o.close('los'); }
       hudShow(true, s.def);
@@ -343,6 +344,7 @@ export function createShell({ game, templates }) {
   function restart(s) {
     emit('minigame:restart', { id: s.id, tries: s.tries });
     s.phase = 'neu';
+    s.restartAt = performance.now();
     startGame(s);
   }
   function cancel(s, reason) {
@@ -364,7 +366,7 @@ export function createShell({ game, templates }) {
 
   const api = {
     templates,
-    get current() { return current ? { id: current.id, def: current.def, mode: current.mode, phase: current.phase, inst: current.inst, rueckenwind: current.rueckenwind, tries: current.tries } : null; },
+    get current() { return current ? { id: current.id, def: current.def, mode: current.mode, phase: current.phase, inst: current.inst, rueckenwind: current.rueckenwind, tries: current.tries, restartMs: current.restartMs } : null; },
     bests,
     medalOf(id) { const b = bests(id); return b ? { medal: b.medal || null, stern: !!b.stern, best: b.best } : null; },
     // Minispiel spielen: Startkarte → Lauf → Ergebnis. opts: { mode, skipStart, who, satzbau, step, quest }

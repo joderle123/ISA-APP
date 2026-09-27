@@ -14,7 +14,7 @@ import * as THREE from 'three';
 // Maße (Meter): ≈ 6,5 Kopfhöhen (Kopfhöhe 0,30 m), lange Beine, schmale Taille, leicht breite Schultern (STIL §8.1)
 export const M = {
   hipY: 1.0, thigh: 0.47, shin: 0.45, torso: 0.58, shoulderX: 0.245, upperArm: 0.31, forearm: 0.28,
-  headR: 0.135, neck: 0.09, hand: 0.11, foot: 0.3,
+  headR: 0.14, neck: 0.09, hand: 0.11, foot: 0.3,
 };
 
 // Rumpfquerschnitt je Höhe (y: 0 Hüfte … M.torso Schulter) → halbe Breite/Tiefe vor Statur (W). body.js baut daraus die Drehform,
@@ -76,8 +76,10 @@ export function figureTier(opts = {}) {
   const q = opts.quality || defaultTier || (typeof globalThis !== 'undefined' && globalThis.LUMO && globalThis.LUMO.quality && globalThis.LUMO.quality.name) || 'high';
   return q === 'low' || q === 'medium' ? q : 'high';
 }
-// Hüllenbreite in Pixeln je Stufe und Detail (STIL §4.2 / §13): niedrig nur volle Figuren
+// Hüllenbreite in Pixeln je Stufe und Detail (STIL §4.2 / §13): niedrig nur volle Figuren und nur Kopf + Rumpf
+// (Draw-Call-Budget ≤ 150 für alle Figuren am Hafen, tests/scenarios/figuren.mjs)
 export const HULL_PX = { low: { full: 1.6, lite: 0, hand: 1.1 }, medium: { full: 1.8, lite: 1.5, hand: 1.2 }, high: { full: 2.0, lite: 1.6, hand: 1.3 } };
+export const HULL_PARTS = { low: new Set(['head', 'torso', 'impostor']), medium: null, high: null };
 
 // ---- Toon-Rampe „figur“ (STIL §3.1): 2 Bänder + Kernschatten, Übergänge ±0.03 NdotL (64 Texel, linear gefiltert) ----
 // Werte multiplizieren nur das Sonnenlicht; das Hemisphärenlicht füllt den Schatten (kühl oben, warm unten).

@@ -18,7 +18,7 @@ import { merge } from './geo.js';
 import {
   M, SKIN_TONES, HAIR_COLORS, EYE_COLORS, HAIR_STYLES, BROW_STYLES, GLASSES, HEARING_AIDS, PROSTHESES, HEAD_ITEMS, TOP_STYLES,
   BOTTOM_STYLES, SHOE_STYLES, PATTERNS, MASKS, BACK_ITEMS, ACCESSORIES, CLOTH_COLORS, clamp01, buildWidth, heightScale, getMaterial,
-  getGlassMaterial, getOutlineMaterial, attachHull, figureTier, HULL_PX, hasDOM, hash01, setDefaultTier, setFigureRim,
+  getGlassMaterial, getOutlineMaterial, attachHull, figureTier, HULL_PX, HULL_PARTS, hasDOM, hash01, setDefaultTier, setFigureRim,
 } from './base.js';
 import { buildHead, buildBrow, buildMouth, buildLids, buildLenses, buildHairTail, mouthAnchor } from './head.js';
 import { buildTorso, buildPelvis, buildThigh, buildShin, buildUpperArm, buildForearm, buildHand } from './body.js';
@@ -176,7 +176,7 @@ export function createHumanoid(config = {}, opts = {}) {
   const hips = new THREE.Group(); hips.position.y = M.hipY; body.add(hips);
   const spine = new THREE.Group(); spine.position.y = 0.06; hips.add(spine);
   const neck = new THREE.Group(); neck.position.y = M.torso + 0.07; spine.add(neck);
-  const headPivot = new THREE.Group(); headPivot.position.y = M.headR * 0.95; neck.add(headPivot);
+  const headPivot = new THREE.Group(); headPivot.position.y = M.headR * 0.86; neck.add(headPivot);
   const hairPivot = new THREE.Group(); hairPivot.name = 'hair'; headPivot.add(hairPivot);
   const packPivot = new THREE.Group(); packPivot.name = 'pack'; spine.add(packPivot);
   const J = { body, spine, head: neck, hipL: new THREE.Group(), hipR: new THREE.Group(), kneeL: new THREE.Group(), kneeR: new THREE.Group(), shL: new THREE.Group(), shR: new THREE.Group(), elL: new THREE.Group(), elR: new THREE.Group(), wristL: new THREE.Group(), wristR: new THREE.Group(), hair: hairPivot, pack: packPivot };
@@ -208,7 +208,8 @@ export function createHumanoid(config = {}, opts = {}) {
     m.name = name;
     parent.add(m);
     meshes[name] = m;
-    if (hull && mat === material && hullMat) attachHull(m, thin ? hullMatHand : hullMat);
+    const parts = HULL_PARTS[tier];
+    if (hull && mat === material && hullMat && (!parts || parts.has(name))) attachHull(m, thin ? hullMatHand : hullMat);
     return m;
   }
   function drop(name) { const m = meshes[name]; if (m) { m.parent.remove(m); m.geometry.dispose(); delete meshes[name]; } }
@@ -252,7 +253,7 @@ export function createHumanoid(config = {}, opts = {}) {
         hairPivot.position.set(tail.pivot[0], tail.pivot[1], tail.pivot[2]);
         tail.geo.translate(-tail.pivot[0], -tail.pivot[1], -tail.pivot[2]);
         mk('hairTail', tail.geo, hairPivot);
-        hairSwing = createSwing(hairPivot, { k: 55, damp: 6, gain: 0.012, turnGain: 0.35, limit: 0.5, idle: 0.025, phase: seed });
+        hairSwing = createSwing(hairPivot, { k: 55, damp: 6.5, gain: 0.07, turnGain: 0.5, limit: 0.5, idle: 0.025, phase: seed });
       }
     }
     const lens = buildLenses(cfg);
@@ -264,7 +265,7 @@ export function createHumanoid(config = {}, opts = {}) {
       else {
         packPivot.position.set(pack.pivot[0], pack.pivot[1], pack.pivot[2]);
         mk('pack', pack.geo, packPivot);
-        packSwing = createSwing(packPivot, { k: 140, damp: 11, gain: 0.005, turnGain: 0.08, limit: 0.16, idle: 0.004, phase: seed + 2 });
+        packSwing = createSwing(packPivot, { k: 140, damp: 11, gain: 0.03, turnGain: 0.1, limit: 0.16, idle: 0.004, phase: seed + 2 });
       }
     }
     mk('torso', torso, spine);
@@ -286,7 +287,7 @@ export function createHumanoid(config = {}, opts = {}) {
       }
     }
     group.scale.setScalar((cfg.scale || 1) * heightScale(cfg.height));
-    if (tag) tag.sprite.position.y = 2.0 + 0.08;
+    if (tag && tag.sprite) tag.sprite.position.y = 2.0 + 0.08;
     applyExpression(0);
   }
 

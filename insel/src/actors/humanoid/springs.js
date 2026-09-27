@@ -4,7 +4,7 @@
 //   const swing = createSwing(pivot, { k, damp, gain, limit, idle });   swing.update(dt, sensor.state, t)
 import * as THREE from 'three';
 
-const _p = new THREE.Vector3(), _q = new THREE.Quaternion(), _v = new THREE.Vector3();
+const _p = new THREE.Vector3(), _q = new THREE.Quaternion(), _v = new THREE.Vector3(), _up = new THREE.Vector3(0, 1, 0);
 
 // Beschleunigung des Objekts in dessen lokalem Raum (Differenzen der Weltposition, geglättet und begrenzt)
 export function createMotionSensor(object, { maxAcc = 30 } = {}) {
@@ -24,7 +24,7 @@ export function createMotionSensor(object, { maxAcc = 30 } = {}) {
       _v.subVectors(vel, prevVel).divideScalar(dt);
       prevVel.copy(vel);
       // in den lokalen Raum drehen (nur Gier), begrenzen, leicht glätten
-      _q.set(0, 0, 0, 1).setFromAxisAngle(new THREE.Vector3(0, 1, 0), -yaw);
+      _q.setFromAxisAngle(_up, -yaw);
       _v.applyQuaternion(_q);
       _v.clampLength(0, maxAcc);
       const k = Math.min(1, dt * 18);

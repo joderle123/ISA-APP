@@ -338,7 +338,7 @@ export function createRenderer({ canvas, quality: qInfo, events }) {
     render(opts = {}) {
       renderer.info.reset();
       if (post.active) {
-        if (post.outline) post.outline.uniforms.uNight.value = opts.night || 0;
+        if (post.outline) { post.outline.uniforms.uNight.value = opts.night || 0; post.outline.uniforms.uNear.value = post.camera.near; post.outline.uniforms.uFar.value = post.camera.far; }
         if (post.final) post.final.uniforms.uTime.value = opts.time || 0;
         if (post.final) post.final.uniforms.toneMappingExposure.value = renderer.toneMappingExposure;
         inPost = true;
