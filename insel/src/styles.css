@@ -952,3 +952,26 @@ html.reduced-fx .ov { -webkit-backdrop-filter: none; backdrop-filter: none; back
 @keyframes qo-nudge { 0%, 100% { transform: translateX(-50%) scale(1); } 40% { transform: translateX(-50%) scale(1.08); background: rgba(60, 40, 10, 0.75); } }
 @media (max-width: 700px) { .quest-obj { top: calc(56px + var(--safe-t)); max-width: calc(100vw - 32px); } }
 html.reduced-fx .quest-obj.is-new, html.reduced-fx .quest-obj.is-nudge { animation: none; }
+
+/* Spielgefühl (systems/quests/feel.js): Aktion-Knopf federt, Aufnäher-Moment */
+.hud-btn-action.is-pop { animation: btn-pop 0.32s ease; }
+@keyframes btn-pop { 0% { transform: scale(1); } 35% { transform: scale(0.88); } 70% { transform: scale(1.06); } 100% { transform: scale(1); } }
+.patch-reveal { position: absolute; left: 50%; top: 24%; z-index: 30; pointer-events: none; transform: translate(-50%, -50%); animation: pr-fly 2.6s cubic-bezier(.3,.7,.3,1) forwards; }
+.patch-reveal .pr-badge { position: relative; display: grid; place-items: center; width: 108px; height: 108px; border-radius: 30%; transform: rotate(45deg); background: var(--pc);
+  background: radial-gradient(circle at 35% 30%, color-mix(in srgb, var(--pc) 70%, #fff), var(--pc) 60%, color-mix(in srgb, var(--pc) 70%, #000));
+  box-shadow: 0 0 0 5px rgba(255,255,255,0.9), 0 0 0 9px var(--pc), 0 10px 30px rgba(0,0,0,0.45), 0 0 60px var(--pc); overflow: hidden; color: #1b1030; }
+.patch-reveal .pr-badge > svg { transform: rotate(-45deg); stroke-width: 2.4; }
+.patch-reveal .pr-shine { position: absolute; inset: -40%; background: linear-gradient(100deg, transparent 40%, rgba(255,255,255,0.75) 50%, transparent 60%); transform: translateX(-120%); animation: pr-shine 0.9s ease 0.55s forwards; }
+.patch-reveal .pr-ring { position: absolute; inset: -30px; border-radius: 50%; border: 3px solid var(--pc); opacity: 0; animation: pr-ring 0.9s ease-out 0.2s; }
+@keyframes pr-fly {
+  0% { opacity: 0; transform: translate(-50%, -50%) scale(0.2) rotate(-40deg); }
+  18% { opacity: 1; transform: translate(-50%, -50%) scale(1.12) rotate(6deg); }
+  28% { transform: translate(-50%, -50%) scale(1) rotate(0); }
+  62% { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+  100% { opacity: 0; transform: translate(-50%, 130%) scale(0.18); }
+}
+@keyframes pr-shine { to { transform: translateX(120%); } }
+@keyframes pr-ring { 0% { opacity: 0.9; transform: scale(0.6); } 100% { opacity: 0; transform: scale(1.6); } }
+html.reduced-fx .patch-reveal { animation: pr-fade 2.2s ease forwards; }
+html.reduced-fx .patch-reveal .pr-shine, html.reduced-fx .patch-reveal .pr-ring { animation: none; display: none; }
+@keyframes pr-fade { 0%, 100% { opacity: 0; } 15%, 75% { opacity: 1; } }

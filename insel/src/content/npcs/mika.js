@@ -18,7 +18,7 @@ export default {
   bond: { ability: { level: 2, id: 'lavatunnel', say: 'Der Tunnel. Sag es keinem.' }, jacket: 'flamme', finale: 'Ich hab den Harten gespielt. Sorry, Pit.' },
   tell: { bluff: 'kaut-auf-der-lippe', amp: { entspannt: 1, abenteuer: 0.6, profi: 0.3 } },
   lines: {
-    greet: ['Was willst du?', 'Der Krater ist unser Platz.', 'Moien. Traust du dich?'],
+    greet: ['Was willst du?', 'Der Krater ist unser Platz.', 'Wer redet, verliert. Merk dir das.'],
     campfire: { 'mika-zweites-nein': 'Zwei Nein. Die Crew ist gekippt.', 'mika-publikum': 'Ich hab mein Publikum gedreht.' },
     campfireDefault: 'War okay heute. Sag es keinem.',
     capOff: 'Halt die Klappe. Geh.',

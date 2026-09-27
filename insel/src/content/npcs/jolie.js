@@ -18,8 +18,8 @@ export default {
   bond: { ability: { level: 2, id: 'spalt', say: 'Ich zeig dir die Spalten.' }, jacket: 'muschel', finale: 'Du hast dich einfach neben mich gesetzt.' },
   tell: { bluff: 'blick-links-unten', amp: { entspannt: 1, abenteuer: 0.6, profi: 0.3 } },
   lines: {
-    greet: ['Hi.', 'Oh. Du wieder.', 'Ist okay, wenn du bleibst.'],
-    campfire: { 'jolie-dasein': 'Du hast dich einfach dazugesetzt. Ohne Fragen.', 'jolie-spalt': 'Ich durfte vorgehen. Das war neu.', 'jolie-dazugesetzt': 'Du hast dich einfach neben mich gesetzt.', 'jolie-im-dunkeln-gefuehrt': 'Im Dunkeln war ich froh, dass du gewartet hast.', 'jolie-zweites-nein': 'Ich war nicht allein mit meinem Nein.' },
+    greet: ['Hi.', 'Oh. Du wieder.', 'Ist okay, wenn du bleibst.', 'Nicht gucken. Ist noch nicht fertig.'],
+    campfire: { 'jolie-versprochen': 'Du hast was versprochen. Ich merk mir das.', 'jolie-ehrlich': 'Du hast nichts versprochen. War wenigstens ehrlich.', 'jolie-dasein': 'Du hast dich einfach dazugesetzt. Ohne Fragen.', 'jolie-spalt': 'Ich durfte vorgehen. Das war neu.', 'jolie-dazugesetzt': 'Du hast dich einfach neben mich gesetzt.', 'jolie-im-dunkeln-gefuehrt': 'Im Dunkeln war ich froh, dass du gewartet hast.', 'jolie-zweites-nein': 'Ich war nicht allein mit meinem Nein.' },
     campfireDefault: 'Heute war es weniger grau. Wegen dir.',
     verstimmt: 'Du warst nicht da. Am Steg.',
     capOff: '…',

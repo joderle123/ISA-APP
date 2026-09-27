@@ -1,5 +1,9 @@
 # LUMO – Demo „Hafen-Dorf“ (Stand: Demo-Woche)
 
+> **PFLICHT für alle Agenten, die Story, Texte oder Dialoge schreiben, prüfen oder kritisieren:** zuerst
+> `docs/LEITPLANKE-LEHRKRAFT.md` lesen (Verständlichkeit für die Schüler, ihre Problematik im Vordergrund – geht vor
+> „nicht zu einfach“).
+
 Kurzanleitung für die Lehrkraft. Die Demo umfasst das Modul 0 „Ankommen“: die Ankunft und die drei Hafen-Quests.
 Alles läuft offline in einer einzigen HTML-Datei, ohne Konten, ohne Namen, ohne Netz.
 
@@ -21,6 +25,10 @@ Alles läuft offline in einer einzigen HTML-Datei, ohne Konten, ohne Namen, ohne
 3. Jede Quest endet mit einem **Aufnäher** (auf dem Hoodie; umdrehen zeigt den Kurssatz), Lichtsplittern und einer
    **Farbwelle**, die den Hafen Stück für Stück bunt macht. Nach der dritten Quest ist der Hafen ganz bunt, alle vier
    Signalfeuer brennen (Schnellreise und Speichern).
+
+**Geschichte (docs/STORY.md):** Zwischen den Quests liegen kurze Szenen – das Boot, eine Nacht mit Ilda am Feuer, Jolies
+Heft, ein Morgen mit Mika an der Hafenmauer. Drei Entscheidungen haben keinen „richtigen“ Knopf (Jolies Geheimnis, Ildas
+direkte Frage, das alte Festplakat); spätere Zeilen reagieren leise darauf. Jede Wahl gibt dieselbe Belohnung.
 
 ## Die Codes
 | Code | Einheit | Quest | Dauer | Was passiert |
@@ -68,5 +76,5 @@ Sicherheit ist immer an: Pause/X überall, kein Tod, keine Rangliste, Fehler kos
 
 ## Für Entwickler
 `npm run build` erzeugt `dist/`. Tests: `npm run test:fast` (Inhalte, Texte, Einheiten), `node tests/smoke.mjs`,
-`npm run test:demo` (spielt den ganzen Demo-Pfad headless durch, 26 Prüfungen, und legt 8 Screenshots `200_…`–`207_…` im
+`npm run test:demo` (spielt den ganzen Demo-Pfad headless durch, 30 Prüfungen inkl. der Story-Entscheidungen, und legt Screenshots `200_…`–`207_…` im
 `SHOTS`-Ordner ab). Dauer mit Software-Grafik: etwa 10–15 Minuten.

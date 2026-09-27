@@ -2,6 +2,8 @@
 // Jolie (Dazusetzen, Splitter 1) → Farbwelle → Code DELFIN → Nachfragen, Funken tragen, Komplimente → Code OTTER →
 // Brücke, Hafengrotte, Kodex-Zeile → Hafen ganz bunt, Signalfeuer brennen → Speichern und „Weiter“ in einem neuen Tab →
 // graue Regionen: „Kommt bald“ ohne Absturz → Demo-/Lehrer-Code. Aufruf: node tests/scenarios/demo.mjs (Q=low|medium)
+// Story (docs/STORY.md §6): die drei M0-Entscheidungen setzen flags.m0.*; die Beats (Nacht, Heft, Finale) werden per
+// LUMO.debug.storyBeat abgespielt und zeigen die passende Verzweigung (Knoten-Protokoll über dialogue:node).
 import { launch, openGame, startGame, frames, shot, runScenario, pickChoice, IPAD_LANDSCAPE, DIST } from '../lib.mjs';
 
 const Q = process.env.Q || 'low';
@@ -85,6 +87,14 @@ const browser = await launch();
 try {
   const { page, context, errors } = await openGame(browser, { viewport: IPAD_LANDSCAPE, query: `q=${Q}&skipintro&autostart&debug&demo` });
   await startGame(page, { hour: 17.3 });
+  await page.evaluate(() => { window.__nodes = []; LUMO.events.on('dialogue:node', (e) => window.__nodes.push(e.id + ':' + e.node)); });
+  const visited = (id, node) => page.evaluate(([i, n]) => window.__nodes.includes(i + ':' + n), [id, node]);
+  const playBeat = async (id, prefer, shotName) => {
+    await page.evaluate((i) => LUMO.debug.storyBeat(i), id);
+    await waitFor(page, sceneOpen, 15000);
+    const ok = await playScene(page, prefer, { onChoices: shotName ? async () => { await frames(page, 3); await shot(page, shotName); } : null });
+    return ok;
+  };
 
   // ---- 1 Start: Plugins, Inhalte, Hafen grau, Ankunft läuft ----
   const api = await page.evaluate(() => ({ plugins: LUMO.plugins.list, failed: LUMO.plugins.failed.map((f) => f.id), defs: LUMO.quests.defs().map((d) => d.id), regions: LUMO.content.list('regions').map((r) => r.id) }));
@@ -106,12 +116,17 @@ try {
   await page.evaluate(() => { for (let i = 0; i < 44; i++) LUMO.debug.advance(1); });
   const o1 = await page.evaluate(() => LUMO.debug.objective());
   check('Stupser nach 40 s ohne Annäherung (Ziel-Zeile pulsiert, Marker leuchtet)', o1.nudges >= 1 && o1.dist > 20, J(o1));
+  const il = await page.evaluate(() => { const n = LUMO.npcs.get('ilda'), p = n.group.position; return { d: +Math.hypot(p.x - 6, p.z - 130).toFixed(1), hold: !!(n.override && n.override.questHold) }; });
+  check('Ilda wartet am Steg, solange die Ziel-Zeile dorthin zeigt (nicht laut Tagesablauf am Dorfplatz)', il.d < 5, J(il));
   await frames(page, 2);
   await shot(page, '200b_demo_ziel_stupser');
   await page.setViewportSize({ width: 820, height: 1180 });
   await page.evaluate(() => { LUMO.debug.teleport({ x: 6, z: 124 }, Math.atan2(4 - 6, 106 - 124)); LUMO.debug.advance(0.5); LUMO.cameraRig.behindPlayer(); LUMO.cameraRig.snap(); });
   await frames(page, 3);
   await shot(page, '200c_demo_hochformat');
+  // Ziel hinter der Figur: die Kamera steht fast in der Lichtsäule – die darf dann nicht halb den Bildschirm füllen
+  const beam = await page.evaluate(() => { const m = LUMO.quests.markers, g = m.group, c = LUMO.camera.position; return { cd: +Math.hypot(c.x - g.position.x, c.z - g.position.z).toFixed(2), vis: g.visible && g.children[0].visible, op: +g.children[0].material.opacity.toFixed(2) }; });
+  check('Lichtsäule blendet aus, wenn die Kamera in ihr steht', !(beam.cd < 1.5 && beam.vis && beam.op > 0.05), J(beam));
   await page.setViewportSize(IPAD_LANDSCAPE);
   await frames(page, 2);
 
@@ -121,7 +136,7 @@ try {
   check('Am Steg: Szene ankunft-ilda, Ilda spricht, Talk-Kamera', d0.id === 'ankunft-ilda' && d0.who === 'ilda' && d0.cam === 'talk', J(d0));
   await frames(page, 2);
   await shot(page, '201_demo_ilda');
-  const ok1 = await playScene(page, ['Was ist passiert', 'Ja.']);
+  const ok1 = await playScene(page, ['Mehr oder weniger', 'Warum ist alles so grau']);
   await waitFor(page, () => LUMO.quests.status('hafen-ankunft') === 'fertig', 20000);
   const s1 = await page.evaluate(() => ({ blick: LUMO.state.get('abilities', []).includes('blick'), deed: LUMO.state.get('deeds', []).includes('ilda-blick'), aura: LUMO.npcs.view ? LUMO.npcs.view.aura : null, active: LUMO.quests.active }));
   check('Ankunft fertig: Blick gewährt (Auren an), Tat im Log, kein Auftrag mehr aktiv', ok1 && s1.blick && s1.deed && s1.aura !== false && !s1.active, J(s1));
@@ -143,8 +158,9 @@ try {
   const k1 = await page.evaluate(() => ({ lachen: LUMO.state.get('flags.kodex.lachen'), deed: LUMO.state.get('deeds', []).includes('kodex-regel'), bond: LUMO.npcs.bond('tun') }));
   check('Kodex ausgehandelt: Regel „Niemand wird ausgelacht“, Tat, Bindung Tun 1', ok2 && k1.lachen === true && k1.deed && k1.bond >= 1, J(k1));
   await goAndAct(page, 'hafen.ufer', sceneOpen);
-  const ok3 = await playScene(page, ['Dazusetzen'], { onChoices: async () => { await frames(page, 2); await shot(page, '203_demo_jolie'); } });
-  check('Jolie: Kacheln mit „Dazusetzen“ (Zeichen), Szene bis zum Ende', ok3 && playScene.seen.includes('Dazusetzen'), J(playScene.seen));
+  const ok3 = await playScene(page, ['Dazusetzen', 'Ich hab Zeit', 'Du warst im Turm', 'Versprochen'], { onChoices: async () => { await frames(page, 2); await shot(page, '203_demo_jolie'); } });
+  const j1 = await page.evaluate(() => ({ jolie: LUMO.state.get('flags.m0.jolie'), deed: LUMO.state.get('deeds', []).includes('jolie-versprochen') }));
+  check('Jolie: Kacheln mit „Dazusetzen“ (Zeichen), Szene bis zum Ende, Wahl 1 „Versprochen.“ → flags.m0.jolie', ok3 && playScene.seen.includes('Dazusetzen') && j1.jolie === 'versprochen' && j1.deed, J({ seen: playScene.seen, j1 }));
   await waitFor(page, () => LUMO.state.get('units.j1-e01') === 'fertig', 30000);
   await frames(page, 6);
   await shot(page, '204_demo_farbwelle');
@@ -152,14 +168,28 @@ try {
   const e1 = await page.evaluate(() => ({ shards: LUMO.state.get('shards', []), patches: LUMO.state.get('patches', []), splitter: LUMO.state.get('lichtsplitter'), veil: LUMO.world.veil.zoneValue('hafen'), bond: LUMO.npcs.bond('jolie'), fire: !!LUMO.state.get('signalfeuer.sf-hafen-platz') }));
   check('e01 fertig: Splitter 1, Aufnäher j1-e01, Lichtsplitter, Farbwelle → Schleier 0,3, Bindung Jolie, Signalfeuer Dorfplatz brennt', ok3 && e1.shards.includes(1) && e1.patches.includes('j1-e01') && e1.splitter >= 2 && e1.veil <= 0.31 && e1.bond >= 1 && e1.fire, J(e1));
 
+  await waitFor(page, () => LUMO.debug.feel().shown >= 1, 20000).catch(() => null);
+  const f1 = await page.evaluate(() => LUMO.debug.feel());
+  check('Aufnäher-Moment für j1-e01 kommt nach der Szene (nichts wartet mehr)', f1.shown >= 1 && f1.pending === 0, J(f1));
+
+  // ---- 3b Nacht am Feuer (m0-nach-e01): Uhr 22:30, Wahl 2 „Weiß ich nicht.“ → danach Morgen ----
+  await page.evaluate(() => LUMO.debug.storyBeat('m0-nach-e01'));
+  await waitFor(page, sceneOpen, 15000);
+  const night = await page.evaluate(() => LUMO.time.getTimeOfDay());
+  const okN = await playScene(page, ['Dazusetzen', 'Kann sein', 'Schweigen', 'Weiß ich nicht'], { onChoices: async () => { await frames(page, 3); await shot(page, '204b_story_nacht'); } });
+  await sleep(300);
+  const n0 = await page.evaluate(() => ({ ilda: LUMO.state.get('flags.m0.ilda'), hour: LUMO.time.getTimeOfDay(), seen: !!LUMO.state.get('story.seen.m0-nach-e01') }));
+  check('Nachtszene: 22:30 am Feuer, Wahl 2 „Weiß ich nicht.“ → flags.m0.ilda, danach Morgen', okN && night > 22 && night < 23 && n0.ilda === 'ausgewichen' && n0.hour > 7 && n0.hour < 9 && n0.seen, J({ night, n0 }));
+
   // ---- 4 Code DELFIN → j1-e02: Nachfragen, Funken, Komplimente ----
   const r2 = await scen(page, ['code delfin', 'expect state.units.j1-e02 == aktiv']);
   check('Code DELFIN öffnet und startet j1-e02', r2.ok, r2.steps.filter((s) => !s.ok).map((s) => s.step + ' · ' + s.info).join(' | '));
   await goAndAct(page, 'hafen.dorfplatz', sceneOpen);
-  const ok4 = await playScene(page, ['Was machst du gern', 'Und dann?']);
+  const ok4 = await playScene(page, ['Umdrehen', 'Was machst du gern', 'Und dann?']);
   await waitFor(page, () => LUMO.debug.questInfo().step === 'funken', 20000);
   const n1 = await page.evaluate(() => ({ faeden: LUMO.state.get('upgrades', []).includes('blick.faeden'), deed: LUMO.state.get('deeds', []).includes('tun-nachgefragt') }));
-  check('Nachfragen: Faden-Stufe des Blicks, Tat im Log', ok4 && n1.faeden && n1.deed, J(n1));
+  const plakat = await page.evaluate(() => LUMO.state.get('flags.m0.plakat'));
+  check('Nachfragen: Wahl 3 Plakat „Umdrehen.“, Akku-Lüge mit grünem Lämpchen, Faden-Stufe des Blicks, Tat im Log', ok4 && plakat === 'umgedreht' && n1.faeden && n1.deed && (await visited('e02-nachfragen', 'h2')), J({ n1, plakat }));
   let delivered = 0;
   for (let i = 0; i < 3; i++) {
     await scen(page, ['site hafen.feuerPlatz', 'wait 0.4']);
@@ -179,6 +209,11 @@ try {
   await waitFor(page, () => LUMO.world.veil.zoneValue('hafen') <= 0.16, 40000);
   const e2 = await page.evaluate(() => ({ patches: LUMO.state.get('patches', []), veil: LUMO.world.veil.zoneValue('hafen'), bond: LUMO.npcs.bond('tun') }));
   check('e02 fertig: Aufnäher, Schleier 0,15, Bindung Tun', e2.patches.includes('j1-e02') && e2.veil <= 0.16 && e2.bond >= 1, J(e2));
+
+  // ---- 4b Morgen (m0-nach-e02): Jolies Heft – sie weiß, dass du dichtgehalten hast (Wahl 1 + 2) ----
+  const okH = await playBeat('m0-nach-e02', ['Du hast mich gezeichnet', 'Was war da drauf'], '205a_story_heft');
+  const hb = { b1: await visited('m0-nach-e02', 'b1'), g0: await visited('m0-nach-e02', 'g0'), h1: await visited('m0-nach-e02', 'h1') };
+  check('Heft-Szene: Folge „dichtgehalten“ (b1), nicht „gesagt“ (g0), Plakat umgedreht → kein Jhemp-Bild (h1)', okH && hb.b1 && !hb.g0 && !hb.h1, J(hb));
 
   // ---- 5 Code OTTER → j1-e03: Brücke, Grotte, Kodex-Zeile ----
   const r3 = await scen(page, ['code otter', 'expect state.units.j1-e03 == aktiv']);
@@ -205,10 +240,26 @@ try {
   await waitFor(page, () => LUMO.state.get('units.j1-e03') === 'fertig', 30000);
   await waitFor(page, () => LUMO.world.veil.zoneValue('hafen') <= 0.01, 40000);
   const e3 = await page.evaluate(() => ({ zeile: LUMO.state.get('flags.kodex.zeile'), patches: LUMO.state.get('patches', []), veil: LUMO.world.veil.zoneValue('hafen'), fires: LUMO.session.signalfeuer.litIds().filter((id) => id.startsWith('sf-hafen')).length, saved: LUMO.save.slots()[LUMO.save.current].unitsDone }));
+  const kd = { d5: await visited('e03-kodex', 'd6'), d3: await visited('e03-kodex', 'd3') };
+  check('e03-Kodex: Ilda merkt das Ausweichen („Schlecht für mich.“), kein Dank an Jolie', kd.d5 && !kd.d3, J(kd));
   check('e03 fertig: Kodex-Zeile, drei Aufnäher, Hafen ganz bunt (Schleier 0), vier Hafen-Feuer brennen, Spielstand gesichert (3 Einheiten)', ok6 && e3.zeile === 'stopp' && e3.patches.length === 3 && e3.veil <= 0.01 && e3.fires === 4 && e3.saved === 3, J(e3));
   await page.evaluate(() => { LUMO.debug.teleport({ x: 6, z: 128 }, Math.atan2(4 - 6, 106 - 128)); LUMO.debug.advance(0.5); LUMO.cameraRig.behindPlayer(); LUMO.cameraRig.snap(); });
   await frames(page, 4);
   await shot(page, '206_demo_hafen_bunt');
+
+  // Aufnäher-Moment im Bild (CSS-Animation läuft in Echtzeit) und Aktion-Feedback
+  // (Software-Renderer: ein Frame dauert länger als die 2,6-s-Animation – fürs Bild eine angehaltene Kopie im Höhepunkt)
+  const f3 = await page.evaluate(() => {
+    LUMO.debug.patchReveal('j1-e03');
+    const r = { ...LUMO.debug.feel(), patches: (LUMO.state.get('patches', []) || []).length };
+    const el = document.querySelector('.patch-reveal');
+    if (el) { const c = el.cloneNode(true); c.id = 'pr-still'; c.style.animation = 'none'; c.style.transform = 'translate(-50%, -50%)'; el.parentNode.appendChild(c); }
+    return r;
+  });
+  await frames(page, 2);
+  await shot(page, '206b_demo_aufnaeher_moment');
+  await page.evaluate(() => { const c = document.getElementById('pr-still'); if (c) c.remove(); });
+  check('Aufnäher-Momente: je fertigem Auftrag einer, Abzeichen im Bild', f3.shown >= 4 && f3.reveal && f3.pending === 0, J(f3));
 
   // ---- 6 Namensschilder: klein und elegant, in Bildschirmgröße geklemmt (nah ≈ 32 px, fern ≈ 26 px Pille) ----
   const tagPx = async (d) => {
@@ -226,6 +277,11 @@ try {
   await shot(page, '207_demo_namensschild_nah');
   const tFar = await tagPx(12);
   check('Namensschild klein und elegant: Pille 24–34 px nah wie fern', tNear.vis && tFar.vis && tNear.px >= 24 && tNear.px <= 34 && tFar.px >= 24 && tFar.px <= 34, J({ near: tNear, far: tFar }));
+
+  // ---- 6b Demo-Ende (m0-finale, nach den Bild-Prüfungen, weil die Szene Figuren umstellt): Mika an der Hafenmauer mit der Spitze zum umgedrehten Plakat, Ilda auf Nachfrage ----
+  const okF = await playBeat('m0-finale', ['Warum packen', 'Und warum sprühst', 'Zeig mal', 'Was glitzert', 'Klar', 'Und dann?', 'Noch nicht'], '206b_story_mika');
+  const fb = { e2: await visited('m0-finale', 'e2'), l1: await visited('m0-finale', 'l1'), q: await visited('m0-finale', 'q') };
+  check('Demo-Ende: Mika zitiert das umgedrehte Plakat (e2), „Und dann?“ → Ildas Plan (l1), Entwurf „Noch nicht.“ bis zum Schluss', okF && fb.e2 && fb.l1 && fb.q, J(fb));
 
   // ---- 7 Graue Regionen: freundlicher Hinweis, kein Absturz ----
   await scen(page, ['teleport strand', 'wait 0.5']);
@@ -265,12 +321,13 @@ try {
   await page2.click('[data-reset-no]');
   await sleep(200);
   const keptAfterNo = await page2.evaluate(() => LUMO.state.get('units.j1-e03') === 'fertig' && !!document.querySelector('[data-reset-ask]'));
+  await page2.evaluate(() => localStorage.setItem('lumo.save.7', localStorage.getItem('lumo.save.' + LUMO.save.current)));   // Spielstand einer anderen Person
   await page2.click('[data-reset-ask]');
   await sleep(150);
   await page2.click('[data-reset-yes]');
   await sleep(300);
-  const rs = await page2.evaluate(() => { const k = []; for (let i = 0; i < localStorage.length; i++) k.push(localStorage.key(i)); return { e03: LUMO.state.get('units.j1-e03') || null, patches: (LUMO.state.get('patches', []) || []).length, keys: k.filter((x) => x.startsWith('lumo.') && !x.startsWith('lumo.device')) }; });
-  check('Neu anfangen: erst Nachfrage, „Lieber nicht“ behält alles, „Ja“ löscht den Spielstand', askShown && keptAfterNo && rs.e03 !== 'fertig' && rs.patches === 0, J({ askShown, keptAfterNo, rs }));
+  const rs = await page2.evaluate(() => { const k = []; for (let i = 0; i < localStorage.length; i++) k.push(localStorage.key(i)); return { e03: LUMO.state.get('units.j1-e03') || null, patches: (LUMO.state.get('patches', []) || []).length, other: !!localStorage.getItem('lumo.save.7'), keys: k.filter((x) => x.startsWith('lumo.') && !x.startsWith('lumo.device')) }; });
+  check('Neu anfangen: erst Nachfrage, „Lieber nicht“ behält alles, „Ja“ setzt nur den eigenen Spielstand zurück', askShown && keptAfterNo && rs.e03 !== 'fertig' && rs.patches === 0 && rs.other, J({ askShown, keptAfterNo, rs }));
 
   const allErrors = errors.concat(errors2).filter((e) => !/favicon|AudioContext|WebGL|ResizeObserver/.test(e));
   check('Keine Seitenfehler', allErrors.length === 0, allErrors.slice(0, 3).join(' | '));

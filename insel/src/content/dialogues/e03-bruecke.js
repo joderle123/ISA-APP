@@ -1,6 +1,6 @@
 // Szene e03-bruecke (DESIGN §12 e03): die Brücke zum Strand ist kaputt. Jolie passt durch Spalten, Tun schiebt Kisten,
 // Glimm leuchtet – das Siegel füllt sich nur, wenn alle beigetragen haben. Crew-Ruf kommt dazu.
-// Story: Jolie meldet sich zum ersten Mal von selbst · Tun will filmen und lässt es (Saat für das Video).
+// Story (docs/STORY.md §7): Jolie meldet sich von selbst, redet aber „nicht mit Tun“ · Tun hebt die Kamera und senkt sie.
 export default {
   id: 'e03-bruecke', unit: 'j1-e03', cast: ['tun', 'jolie'], camera: 'talk', rewind: true, start: 'a',
   nodes: {
@@ -19,11 +19,32 @@ export default {
         { say: 'Zu gefährlich.', icon: 'stopp', goto: 'b2' },
       ],
     },
-    b2: { speaker: 'jolie', say: 'Ich schaff das. Wirklich.', anim: 'idle', goto: 'c' },
-    c: { speaker: 'tun', say: 'Okay. Ich schieb die Kiste. Du hältst!', anim: 'talk', goto: 'd' },
-    d: { speaker: 'glimm', say: 'Und ich leuchte. Gern geschehen.', goto: 'e' },
-    e: { speaker: 'tun', say: 'Siegel voll. Alle drei. Krass.', anim: 'cheer', effects: [{ deed: 'crew-bruecke' }, { sound: 'chime' }], goto: 'e2' },
-    e2: { speaker: 'tun', say: 'Das hätte ich gern gefilmt. … Nee. Lieber nicht.', anim: 'think', goto: 'f' },
-    f: { speaker: 'jolie', say: 'Die Grotte dahinter ist dunkel. Führst du mich?', anim: 'think', end: true },
+    b2: {
+      speaker: 'jolie', say: 'Ich schaff das. Wirklich.', anim: 'idle',
+      choices: [{ say: 'Okay. Geh.', icon: 'check', effects: [{ deed: 'jolie-spalt' }], goto: 'c' }],
+    },
+    c: { speaker: 'tun', say: 'Seit wann redest du mit mir?', anim: 'think', goto: 'c2' },
+    c2: {
+      speaker: 'jolie', say: 'Tu ich nicht. Ich rede mit der Brücke.', anim: 'idle',
+      choices: [
+        { sign: 'lachen', label: 'Lachen', goto: 'd' },
+        { sign: 'nicken', label: 'Nicken', goto: 'd' },
+      ],
+    },
+    d: { speaker: 'glimm', say: 'Und ich leuchte. Gern geschehen.', effects: [{ deed: 'crew-bruecke' }, { sound: 'chime' }], goto: 'e' },
+    e: {
+      speaker: 'erzaehler', say: 'Siegel voll. Tun hebt die Kamera. Und senkt sie wieder.',
+      choices: [
+        { say: 'Warum filmst du nicht?', icon: 'kamera', goto: 'e1' },
+        { label: 'Nichts sagen', icon: 'ohr', goto: 'e2' },
+        { say: 'Film ruhig.', icon: 'check', goto: 'e3' },
+      ],
+    },
+    e1: { speaker: 'tun', say: 'Akku. Hab ich doch gesagt.', anim: 'idle', goto: 'e1b' },
+    e1b: { speaker: 'glimm', say: 'Lämpchen. Immer noch grün.', goto: 'f' },
+    e2: { speaker: 'tun', say: 'Was guckst du so?', anim: 'angry', goto: 'f' },
+    e3: { speaker: 'tun', say: 'Nee. Lieber nicht.', anim: 'sad', goto: 'f' },
+    f: { speaker: 'tun', say: 'Weiter. Bevor die Brücke es sich anders überlegt.', anim: 'cheer', goto: 'g' },
+    g: { speaker: 'jolie', say: 'Die Grotte dahinter ist dunkel. Führst du mich?', anim: 'think', end: true },
   },
 };

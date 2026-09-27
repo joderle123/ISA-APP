@@ -18,9 +18,9 @@ export default {
   bond: { ability: { level: 2, id: 'werkstatt', say: 'Die Werkstatt steht dir offen.' }, jacket: 'anker', finale: 'Du hast gefragt, statt zu warten.' },
   tell: { bluff: 'reibt-den-ring', amp: { entspannt: 1, abenteuer: 0.6, profi: 0.3 } },
   lines: {
-    greet: ['Moien. Alles an Bord?', 'Der Hafen hält zusammen. Meistens.', 'Frag mich nicht nach dem Turm.'],
+    greet: ['Moien. Alles an Bord?', 'Der Hafen hält zusammen. Noch.', 'Frag mich nicht nach dem Turm.', 'Die Möwen waren früh heute. Wie immer.'],
     campfire: { 'ilda-blick': 'Du siehst jetzt mehr als die meisten hier.', 'ilda-schluessel': 'Der Schlüssel ist zurück. Danke dir.', 'ilda-hilfe-geholt': 'Du hast mich geholt. Richtig so.' },
-    campfireDefault: 'Guter Tag. Du warst da, wo es zählte.',
+    campfireDefault: 'Guter Tag. Sag ich nicht oft.',
     capOff: 'Nicht jetzt. Später reden wir.',
   },
 };

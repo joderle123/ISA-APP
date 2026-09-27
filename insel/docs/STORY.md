@@ -1,164 +1,179 @@
 # LUMO – Story-Bibel Staffel 1: „Das zerbrochene Herzglas“
 
-Kompakte Erzähl-Grundlage für alle Inhalte (Dialoge, Glimm, Beats, Erinnerungen). Baut auf DESIGN.md §2, §12, §13 auf.
-Abweichungen stehen am Ende (§10). Spielertext: du-Form, ≤ 12 Wörter pro Blase, Glimm ≤ 6, nie belehrend.
+Erzähl-Grundlage für alle Inhalte (Dialoge, Glimm, Beats, Erinnerungen). Baut auf DESIGN.md §2, §12, §13, §19 auf.
+Abweichungen stehen am Ende (§11). Spielertext: du-Form, ≤ 12 Wörter pro Blase, Glimm ≤ 6, ≤ 2 Blasen vor einer Wahl.
 
-## 1. Prämisse in drei Sätzen
-Du kommst mit dem letzten Boot des Sommers auf eine Insel, die grau wird. Vor einem Jahr ist beim Sommerfest das
-Leuchtfeuer ausgegangen, das Herzglas im Turm zerbrach in neun Splitter, und seitdem redet niemand darüber.
-Du bist die einzige Person, die fragt – und genau das braucht die Insel.
+**Maßstab:** Schreibqualität wie ein großes Erzählspiel – nicht dessen Gewalt. Ernst entsteht aus Entscheidungen,
+Schweigen, Loyalität und Folgen. Nie aus Blut, Tod, Horror oder Bloßstellung (DESIGN §19 gilt immer).
 
-**Hook-Frage (Intro):** „Warum ist der Turm seit einem Jahr dunkel? Das sagt hier keiner.“
+## 1. Prämisse
+Du kommst mit dem letzten Boot vor dem Herbst auf eine Insel, die grau wird. Vor einem Jahr ging beim Sommerfest das
+Leuchtfeuer aus, das Herzglas zerbrach in neun Splitter, und seitdem redet niemand darüber. Ohne Licht läuft im
+Herbststurm keine Fähre ein – Ilda hat still beschlossen, den Hafen zum Saisonende zu schließen. Du hast eine Saison.
 
-## 2. Das zentrale Rätsel (nur fürs Team)
-- **Was geschah:** eine Kette aus kleinen Dingen (DESIGN §2): Jhemp übermüdet → stolpert auf der Festbühne → Tun filmt
-  es als Witz → die Vulkan-Crew schneidet den Clip und teilt ihn → Jhemp schämt sich, Ilda sagt „Reiß dich zusammen!“ →
-  Jhemp knallt die Turmtür zu, das Herzglas kippt → danach schweigen alle.
-- **Was das Grau ist:** Grisel, die Schleiermotte, frisst Ungesagtes und spinnt daraus den Grauschleier. Wo etwas
-  ausgesprochen, geteilt oder repariert wird, kommt Farbe zurück (Farbwelle). Das ist die einzige „Magie“-Regel.
-- **Was das Herzglas ist:** die Linse im Leuchtturm. Sie bündelt das Licht der ganzen Insel. Jeder Splitter trägt eine
-  Erinnerung an die Nacht – gefärbt vom Gefühl der Person, die ihn hatte.
-- **Der Twist, den Teens erraten können:** Es gibt keinen Bösewicht. Grisel ist nicht die Ursache, sondern satt vom
-  Schweigen. „Schuld“ ist eine Kette, in der fast jede Figur ein Glied ist – auch die netten (Tun, Ilda).
-  Erratbar durch gestreute Hinweise (§5): Tun meidet das Thema und hat „letzten Sommer“ aufgehört zu filmen; Ilda weicht
-  beim Turm aus; Jolie war nach dem Knall im Turm, aber „gefragt hat mich keiner“.
-- **Kernsatz:** Nicht der Knall hat die Insel grau gemacht, sondern das Schweigen danach.
-- **Nie:** Wer im roten Bereich ist, ist nicht „vom Schleier befallen“. Keine Figur ist böse. Auflösung = Wiedergutmachung.
+**Hook (Boot):** „Kein Netz. Seit der Turm schweigt.“ – **Frage der Staffel:** Warum redet hier keiner? Und du?
 
-## 3. Ton
-- Warm, trocken-witzig, ein bisschen geheimnisvoll. Wie eine gute Serie, nicht wie eine Unterrichtsstunde.
-- Humor aus Figuren (Tun, Glimm, Möwen), nie auf Kosten von jemandem, der sich nicht wehren kann.
-- Gefühle werden gezeigt (Aura, Farbe, Pose, Pause), nicht erklärt. Keine Therapie-Wörter, keine Übungsanleitungen.
-- Erwachsene reden wie Erwachsene (kein Jugendslang). Jugendliche reden kurz, halb-fertig, ehrlich.
-- Das Rätsel wird in Häppchen serviert: pro Beat höchstens EIN neuer Hinweis. Nie alles erklären.
-- Pausen („…“) sind erlaubt und oft stärker als Text.
+## 2. Die Wahrheit (nur fürs Team)
+- **Die Kette** (DESIGN §2): Jhemp, drei Nächte wach, stolpert auf der Festbühne → Tun filmt es als Witz → die
+  Vulkan-Crew schneidet den Clip („Leuchtturm-Opa tanzt“) und teilt ihn → alle lachen aufs Handy → Ilda, gestresst:
+  „Reiß dich zusammen!“ → Jhemp rennt in den Turm, knallt die Tür, das Herzglas kippt (Unfall) → **Jolie läuft ihm als
+  Einzige nach**, kommt zu spät, findet drinnen nur Glas; Jhemp ist über die Klippentreppe weg → danach schweigen alle.
+- **Das Grau:** Grisel, die Schleiermotte, frisst Ungesagtes und spinnt daraus den Schleier. Wo etwas ausgesprochen,
+  geteilt oder repariert wird, kommt Farbe zurück. Einzige „Magie“-Regel.
+- **Der Turm ist mehr als Licht:** Am Turm hängt der Funkmast – die einzige Verbindung zum Festland. Seit er dunkel
+  ist, gibt es kein Netz, nur Kims lokales Glimmernetz. Darum lebt der Clip dort weiter: Er lässt sich nicht mehr
+  zurückholen (bittersüß, M7).
+- **Kernsatz:** Nicht der Knall hat die Insel grau gemacht, sondern das Schweigen danach. Keine Figur ist böse.
 
-## 4. Figuren und Stimmen
-Jede Figur: Stimmregeln, drei Beispielzeilen. (Bögen siehe DESIGN §13.)
+## 3. Deine Geschichte: der Entwurf
+Die Spielfigur trägt etwas Ungesagtes: **einen Entwurf im Handy. Ein Satz. Seit Wochen nicht abgeschickt.** Wem, was,
+warum – sagt das Spiel nie. Offen genug, dass jede:r etwas hineinlegen kann; kein Trauma, keine Vorgeschichte.
+- Auf der Insel gibt es kein Netz, solange der Turm dunkel ist. Du *kannst* nicht senden – und bist vielleicht deshalb hier.
+- Fragmente, nie erzwungen: Boot (der Entwurf) · Ilda nachts: „Wer mit dem letzten Boot kommt, lässt was zurück.“ ·
+  Jolies Heft: du auf dem Boot, Daumen überm Handy · M0-Ende: „Noch nicht.“ · M3 Sturmhütte: Jhemp hat auch einen
+  Brief nie abgeschickt · M8 Nacht: Glimm „Du schaust wieder drauf.“ · Ilda hält ihren Schließungsbrief zurück (Spiegel).
+- **Auflösung (e30):** Das Licht brennt, der Mast hat Netz. Oben sagen alle ihren ungesagten Satz. Du wählst deinen aus
+  Fragmenten („Es tut mir leid.“ · „Ich vermisse dich.“ · „Ich war wütend.“ · „Danke.“ · „Ich hätte fragen sollen.“ ·
+  „Keiner davon.“), dann: **Senden** oder **Behalten – ich sag’s selbst.** Nach „Senden“ steht da nur „Zugestellt.“
+  Keine Antwort. Das Spiel zeigt nie, was zurückkommt.
 
-**Kapitänin Ilda Ferreira** (~60, Anker, blau) – Mentorin, hält den Hafen zusammen, schweigt über den Turm.
-- Kurze Aussagesätze, Seefahrer-Trockenheit, „Moien“. Warm, aber nie weich. Weicht beim Turm aus (Themawechsel, Blick weg).
-- Ihr Bogen: vom „Frag mich nicht nach dem Turm“ zum „Ich hätte fragen sollen“ (M9).
-- „Frag mich nicht nach dem Turm.“ · „Ohne Regeln bleiben die Feuer kalt. Versucht es.“ · „Mehr sag ich dazu heute nicht.“
+## 4. Die Gegenkraft: Mika und „Wer redet, verliert.“
+Kein Bösewicht, aber eine Haltung mit Gesicht. **Mika Thill** (16) und die Vulkan-Crew leben nach:
+**„Vergessen ist besser. Wer redet, verliert.“**
+- **Warum überzeugend:** Letzten Sommer *hat* Reden alles schlimmer gemacht – Tratsch, der Clip, 40 Reposts. Mika hat
+  gesehen, wie Worte einen Mann vom Turm gejagt haben. Schweigen schützt seine Crew. Er hat oft recht mit dem, was er
+  beobachtet – und unrecht mit dem Schluss: Er verwechselt Tratsch *über* jemanden mit Reden *mit* jemandem.
+- **Warum falsch:** Sein Schweigen schützt vor allem ihn: Er hat den Clip geschnitten. Und sein Spruch ist selbst
+  Lärm – gesprüht an jede Wand. Grisel und Mika wollen dasselbe, aus verschiedenen Gründen.
+- **Erlösbar, nicht einfach:** M6 gibt er es zu – und verliert dafür seine Crew (die ältere Asche-Crew lacht ihn aus).
+  Pit nimmt seine Entschuldigung nicht sofort an („Mal sehen.“). Im Finale steht Mika am Rand, nicht im Kreis. Erst in
+  der letzten Szene macht er einen Schritt ans Feuer. Mehr nicht.
+- **Saat in M0:** Gerücht (Tun: „Denen widerspricht man nicht.“), Graffiti auf dem alten Festplakat (e02),
+  Auftritt an der Hafenmauer am Morgen nach e03 – mit einer Spitze, die zu deiner Plakat-Wahl passt.
 
-**Glimm** (Lichtsalamander, Begleiter) – zynisch, wird von den Levels widerlegt.
-- ≤ 6 Wörter, Stakkato, Punkt statt Komma. Kommentiert, gibt nie Anweisungen wie ein Lehrer. Gibt Unrecht knapp zu.
-- Geheimnis: Glimm war auch mal grau („Ich war nie grau. Fast nie.“ → Finale: „Ich war auch grau. Jetzt nicht.“).
-- „Farben über Köpfen. Ernsthaft?“ · „Regeln. Gähn. Okay, die war gut.“ · „Die wissen was. Beide.“
+## 5. Was auf dem Spiel steht (die Uhr)
+Kein Timer im Bild. Die Uhr läuft in der Welt: gestapelte Kisten mit Namen am Steg, Ildas zugeklebter Brief ans
+Festland, „Die letzte Fähre geht, wenn die Stürme kommen.“ Jedes Modul zeigt einen Schritt: M1 die ersten Kisten sind
+weg · M3 erster Sturm · M5 halber Markt zu · M6 Crew zerfällt · M8 letzte Fähre angekündigt · M9 Sturmnacht.
+**Finale im ersten Herbststurm:** Die Fähre sieht das Licht und legt an. Der Hafen bleibt offen – und Maëlle fährt mit
+genau dieser Fähre weg. Das Licht, das die Insel rettet, nimmt jemanden mit.
 
-**Jolie Wagner** (13, Muschel, türkis) – still, „Ebbe“, zeichnet.
-- Anfangs „…“, dann halbe Sätze mit Pausen. Nie dramatisch. Trockener, leiser Humor, sobald sie vertraut.
-- Geheimnis: war nach dem Knall allein im Turm, fand Splitter 1, hat es nie erzählt, weil niemand fragte.
-- Bogen M0: grau und allein → „Du bist geblieben.“ → meldet sich selbst („Wenn ihr wollt.“) → unterschreibt als Erste.
-- „Du bist geblieben. Die meisten gehen nach zwei Sekunden.“ · „Ich … zeichne Möwen.“ · „Gut. Ich kenn da ein paar Spalten.“
+## 6. Entscheidungen mit Preis (M0, umgesetzt)
+Keine Option ist „die richtige“, jede kostet etwas, keine gibt weniger Belohnung, nichts blockiert. Zustand nur in
+`game.state` (`flags.m0.*`), Reaktionen über Dialog-Verzweigungen (`branch`) und Lagerfeuer-Taten (DESIGN §20a).
 
-**Tun Kremer** (13, Kamera, gelb) – Hafen-Clown, laut, filmt (früher) alles.
-- Ausrufe, Übertreibung, Möwen-Running-Gag. Wird kurz still, wenn es um letzten Sommer geht („Egal.“, „Frag nicht.“).
-- Geheimnis: Er hat das Original-Video gedreht. Er schämt sich, filmt seitdem „nicht mehr“ (M7 Auflösung, M9 Entschuldigung).
-- „Keine Regeln! Die Möwe hält sich auch an keine.“ · „Also … hab ich. Bis letzten Sommer. Egal.“ ·
-  „Das hätte ich gern gefilmt. … Nee. Lieber nicht.“
+| Wahl | Wo | Optionen → Flag | Preis | Folgen (subtil) |
+|---|---|---|---|---|
+| **Jolies Geheimnis** | e01-jolie | „Versprochen.“ → `m0.jolie=versprochen` · „Kann ich nicht versprechen.“ → `offen` | Versprechen bindet dich gegen Ilda · Ehrlichkeit kühlt Jolie ab | Lagerfeuer-Satz Jolie; m0-nach-e01 (Glimm erinnert ans Versprechen); m0-nach-e02 (Jolie weiß, ob du dicht gehalten hast) |
+| **Ilda fragt direkt** | m0-nach-e01 (Nacht) | „Weiß ich nicht.“ → `m0.ilda=ausgewichen` · „Frag sie selbst.“ → `fragselbst` · „Ja. War sie.“ → `gesagt` | Lügen: Ilda merkt es · Weitergeben: Jolie merkt es · Zurückgeben: Ilda geht zu Jolie, Jolie verdächtigt dich trotzdem | m0-nach-e02 (drei Fassungen), e03-kodex (Ilda dankt Jolie – oder sagt dir leise „Schlecht für mich.“) |
+| **Das Plakat** | e02-nachfragen | „Abreißen.“ → `m0.plakat=weg` · „Hängen lassen.“ → `bleibt` · „Umdrehen.“ → `umgedreht` | Der Spruch reißt nur mit Jhemps Gesicht ab · Tun lacht zu laut · Umdrehen ist genau das Schweigen der Insel | m0-nach-e02 (Jolie hat Jhemp nachgezeichnet), m0-finale (Mikas Spitze passt zu deiner Wahl) |
 
-**Weitere Hafen-Figuren** (Demo: nur Kulisse und Gruß-Zeilen)
-- **Fränz Kieffer** (~70, Hammer, j02): Bootsbauer, gelassen, Pech ist kein Urteil. „Moien. Das Boot hält. Noch.“ ·
-  „Vierter. Und stolz.“ · „Pech ist nur Pech. Kein Urteil.“
-- **Senait Tesfaye** (12, Kompass, j07): kommt „wie du damals“. Neugierig, hakt nach. „Warum heißt das Kodex?“ ·
-  „Zeig mir das mit dem Feuer.“ · „Bei uns war das anders. Egal, zeig.“
+Weitere Staffel-Wahlen (Plan): M3 Jhemp bittet, ihn nicht zu verraten · M6 Crew oder Pit · M7 Clip löschen (geht nur
+lokal – Kopien bleiben) · M9 dein Satz. Späte Folgen zitieren M0-Flags (Jolie im Finale: „Du hast dicht gehalten.“ /
+„Du hast es Ilda gesagt. War richtig. Hat trotzdem wehgetan.“).
 
-**Mentoren und spätere Figuren** (Stimmregeln kurz)
-- **Tiago** (15, Surfbrett, „Flut“): laut, will gesehen werden. „Hat das jemand gesehen? Nein? Nochmal!“ ·
-  „Oben in der Mangrove sieht man alles.“ · „Keiner hat geguckt. Alle aufs Handy.“
-- **Maëlle** (14, Trommel): Takt statt Worte, gemischte Gefühle. „Ich freu mich. Und ich will nicht weg.“ ·
-  „Die Musik brach ab. Mitten im Lied.“ · „Hör mal. Das ist mein Traumschiff.“
-- **Luc** (16, Windrad): Erfinder, Wut wie Wetter. „Deckel ab. Sorry. Gib mir zwei Minuten.“ ·
-  „Das Barometer lügt nicht.“ · „Die Hütte da oben war mal bewohnt.“
-- **Jhemp** (~65, Laterne): leise, müde, schämt sich. „Geh wieder. Bitte.“ · „Ich wollte nur weg.“ ·
-  „Der Turm … ist nicht mehr meiner.“
-- **Pit** (13, Stein): fest überzeugt vom Schlimmsten. „Die lachen doch eh über mich.“ · „Hat keiner gesagt. Weiß ich trotzdem.“ ·
-  „Ich bin nicht der Witz.“
-- **Noor** (14, Spraydose): sagt es mit Farbe. „Wer hat mein Bild übermalt?“ · „Wände reden. Wenn man sie lässt.“ ·
-  „Das Turmbild malen wir zusammen.“
-- **Oma Lucinda** (~70, Gießkanne): Faktencheck. „Gesehen oder nur gehört?“ · „Ich war da. Damals.“ · „Erst gießen, dann urteilen.“
-- **Mika** (16, Flamme): spielt den Harten. „Chillt. War nur Spaß.“ · „Die Asche-Crew guckt. Immer.“ · „Ich hab den Clip geschnitten.“
-- **Yara** (15, Stern), **Kim** (13, Chip): Glimmerwolke. „Vierzig Versuche für ein echtes Foto.“ · „Spiegel hat das nicht von mir.“
-- **Grisel** (Schleiermotte): flüstert, hungrig, nie gemein. „So still. So viel Ungesagtes.“ · „Heute hat jemand etwas gesagt. Endlich.“ ·
-  „Ihr habt zugehört. Ich bin satt.“
+## 7. Figuren und Stimmen
+Allgemein: Niemand erklärt seine Gefühle in ganzen Sätzen. Figuren sagen weniger, als sie meinen. Pausen („…“) sind
+Absicht. Erwachsene reden wie Erwachsene, Jugendliche kurz und halb fertig. Humor kommt aus Figuren, nie aus Pointen.
 
-## 5. Laufende Fäden und Geheimnisse (Saat → Auflösung)
-| Faden | Saat (wo) | Auflösung |
+**Kapitänin Ilda Ferreira** (~60, Anker) – hält den Hafen, hält den Mund. Kurze Sätze, trocken, „Moien“. Wechselt das
+Thema, statt zu lügen („Setz dich woanders hin. Bitte.“). Schläft schlecht. Trägt den Schließungsbrief zugeklebt bei
+sich und schickt ihn nicht ab. Bricht Sätze ab („Ende der Saison mach ich …“). Bogen: vom Schweigen zu „Ich hätte fragen
+sollen.“ (M9). Wenn du fragst, antwortet sie – aber nur einmal.
+
+**Glimm** (Lichtsalamander) – zynisch, ≤ 6 Wörter, oft daneben („Kratzer. Spannend. Nicht.“). Kommentiert, belehrt nie,
+verrät nie die Lösung. Sieht manchmal, was andere verbergen („Lämpchen ist grün.“). War selbst grau („Fast nie.“ →
+e30 „Ich war auch grau. Jetzt nicht.“).
+
+**Jolie Wagner** (13, Muschel) – still, zeichnet alles. Trockener Humor erst, wenn sie vertraut („Ich rede mit der
+Brücke.“). Geheimnis: ist Jhemp nachgelaufen, war zu langsam, fand das Glas. Widerspruch, den man bemerken kann:
+„Gefragt hat mich keiner“ – aber Ilda soll es nicht wissen („Die fragt dann, warum ich da war.“). Ihr ungesagter Satz
+(M9): „Ich war zu langsam. Und hab keinen geholt.“ Ihr „…“ wird kürzer, je länger du bleibst.
+
+**Tun Kremer** (13, Kamera) – Hafen-Clown. Je näher ein Thema am Turm, desto lauter der Witz („Über den Turm redet
+keiner. Kleiner Witz.“). Nennt Jhemps Stuhl „besetzt“. Lüge, die man durchschauen kann: „Akku kaputt. Seitdem.“ – das
+Lämpchen leuchtet grün. Hebt die Kamera und senkt sie wieder. Auflösung M7 (sein harmloses Original), M9 „Das Video war
+nicht okay.“
+
+**Mika Thill** (16, Flamme) – ruhig, spöttisch, nie laut. Sätze wie Urteile. „Bunt steht euch. Hält nur nicht.“ ·
+„Frag deinen Kumpel mit der Kamera.“ · „Damit keiner vergisst, was Reden anrichtet.“
+
+**Jhemp Weber** (~65, Laterne) – taucht erst M3 auf, ist in M0 nur Abwesenheit: das Plakat, der leere Stuhl am vierten
+Feuer, Kratzer am Turmschloss („Da hat jemand lange gebraucht.“). Nimmt den Turm am Ende **nicht** zurück.
+
+**Weitere** (Stimmregeln wie bisher, DESIGN §13): Fränz („Pech ist nur Pech. Kein Urteil.“), Senait („Warum heißt das
+Kodex?“), Tiago („Keiner hat geguckt. Alle aufs Handy.“), Maëlle („Ich freu mich. Und ich will nicht weg.“), Luc,
+Pit („Ich bin nicht der Witz.“), Noor, Oma Lucinda („Gesehen oder nur gehört?“), Yara, Kim, Grisel („So viel Ungesagtes.“).
+
+## 8. Hinweise und Widersprüche (nicht zu leicht)
+Kein Satz nennt die Lehre. Die Kette setzt man aus Spuren über Module zusammen; die Chronik ordnet, erklärt aber nicht.
+| Spur (Saat) | Wo | Was man daraus schließen kann | Auflösung |
+|---|---|---|---|
+| Tuns „Akku kaputt“ vs. grünes Lämpchen | e02, e03 | Er *will* nicht filmen | M7 Archiv, M9 |
+| Tun: „Mit mir schon gar nicht.“ (Jolie redet nicht mit ihm) | e01 | Zwischen den beiden war was | Jolie sah ihn filmen (M7) |
+| Leerer Stuhl, „besetzt“, Ilda: „Setz dich woanders hin.“ | e01, Nacht | Jemand fehlt, über den keiner redet | Jhemp (M3) |
+| Ilda: „Schlafen. Schon lange nicht.“ | Nacht | Erschöpfung ist Teil der Kette | Splitter 9 (M8) |
+| Jolie: „Gefragt hat mich keiner“ / „Die fragt dann …“ | e01 | Jolie hatte einen Grund, dort zu sein | Splitter 1 später, M9 |
+| Kratzer am Turmschloss | Jolies Heft | Zitternde Hände, drei Nächte wach | M3, M8 |
+| Rausgerissene Heftseite („Nichts. Der Turm.“) | Jolies Heft | Jolie hat die Nacht gezeichnet | M9: sie klebt sie wieder ein |
+| Mika: „Frag deinen Kumpel mit der Kamera.“ | M0-Ende | Tun hängt mit drin | M6/M7 |
+| Ilda: „Ich war an dem Abend auf See.“ vs. Lucinda: „Sie stand an der Bühne.“ | M2 / M5 | Ilda verschweigt ihren Satz | Splitter 6 |
+| Der Clip in Kims Glimmernetz, 40 Kopien | M7 | Man kann nicht alles zurückholen | bleibt |
+
+## 9. Beats je Modul (Skill wird Handlung, nie Lektion)
+- **M0 Hafen – Ankommen.** Kodex am Feuer, die graue Jolie, eine Crew aus Fremden. Erste Farbe, erster Splitter, drei
+  Entscheidungen mit Preis, die Uhr läuft (Kisten, Brief), Mikas Spruch. Ende: bunter Hafen, dunkler Turm, „Noch nicht.“
+- **M1 Strand – Wer bin ich?** Splitter 2 (Tiago). Die ersten Kisten sind weg. Die Möwe trägt Glas.
+- **M2 Dschungel – Gefühle.** Maëlles Angst-Erinnerung. Ilda behauptet, sie war an dem Abend auf See.
+- **M3 Klippen – Regulieren.** Erster Sturm. Jhemp in der Sturmhütte: „Ich wollte nur weg.“ Er bittet dich, ihn nicht
+  zu verraten (Wahl). Auch er hat einen Brief nie abgeschickt. Der Turm flackert.
+- **M4 Moor – Gedanken.** Pit war sicher, das Lachen galt ihm. Mikas Spruch steht auch hier.
+- **M5 Markt – Grenzen.** Halber Markt zu. Lucinda: „Reiß dich zusammen!“ – Ildas Satz. Der Widerspruch fällt.
+- **M6 Vulkan – Gruppendruck.** Mika gibt den Schnitt zu und verliert seine Crew. Du wählst: Crew oder Pit.
+- **M7 Glimmerwolke – Digital.** Tuns Original, der Schnitt, 40 Reposts. Löschen geht nur lokal. Tun steht dazu.
+- **M8 Quellental – Gesund.** Nachtüberquerung mit Jhemp. Letzte Fähre angekündigt. Ilda öffnet ihren Brief nicht.
+- **M9 Leuchtturm – Abschluss.** Sturmnacht. Die Chronik ergibt die Kette. Oben: alle sagen ihren Satz, du deinen.
+
+## 10. Finale, bittersüß, und Staffel-2-Hook
+- **e30:** Turm-Parcours, oben Grisel zuhören statt kämpfen. Ilda: „Ich hätte fragen sollen.“ Tun: „Das Video war nicht
+  okay.“ Jhemp: „Ich hätte Hilfe holen können.“ Jolie: „Ich war zu langsam.“ Dann dein Satz (§3). Ilda lässt dich das
+  Licht zünden. Die Fähre legt an.
+- **Was nicht heil wird:** Der Clip bleibt in der Welt. Jhemp nimmt den Turm nicht zurück – er gibt **Jolie** den
+  Schlüssel („Du bist mir nachgelaufen. Als Einzige.“) und zieht zu Fränz in die Werft. Maëlle fährt mit der Fähre.
+  Mika bleibt am Rand. Ilda zerreißt ihren Brief nicht – sie legt ihn in die Schublade. „Man weiß nie.“
+- **Hook Staffel 2:** Fränz repariert dein Boot. Im Licht sieht man weitere Inseln, eine ist grau. Grisel als Lichtfalter
+  auf deinem Bug. Glimm: „Noch eine graue Insel. Klar. Natürlich.“
+
+## 11. Rituale und laufende Witze
+Die Möwe klaut (Ildas Schlüsselbund – samt Turmschlüssel, den Ilda hastig einsteckt) · Tuns Quatsch-Zusatz an jede
+Regel („Auch Möwen.“) · Ilda sagt „Moien“ und nichts über den Turm · Jolies „…“ wird kürzer · jede Kodex-Zeile = ein
+Feuer + Glocke · Abend am Feuer: drei Figuren nennen deine Tat · Farbwelle, wenn etwas ausgesprochen wird.
+
+## 12. M0 im Spiel (umgesetzt)
+| Moment | Datei | Kern |
 |---|---|---|
-| Ilda schweigt über den Turm | Ankunft „Frag mich nicht…“, e01 „Das ist aus.“, e03 „Mehr sag ich heute nicht.“ | Splitter 6 (e23), M9 „Ich hätte fragen sollen.“ |
-| Tun hat aufgehört zu filmen | e02 „Bis letzten Sommer. Egal.“, e03 „Lieber nicht.“, Finale „Ohne Filmen.“ | Splitter 8 (e28), M9 „Das Video war nicht okay.“ |
-| Jolie war im Turm, keiner fragte | e01 Splitter 1 + „Gefragt hat mich keiner.“ | Chronik: erstes Glied „Situation“; Finale: Jolies eigener Stopp |
-| Licht flackert im Turm | Beat nach e01, Cliffhanger-Pool M0 | Jhemp lebt im Turm/Hütte (M3), flackert zum ersten Mal beim Titan |
-| Der Splitter zieht zum Strand | e03-Ende, Finale-Beat | M1: Splitter 2 (Tiago) am Strand |
-| Glimm war auch grau | Glimm-Pool „Fast nie.“ | e30 „Ich war auch grau. Jetzt nicht.“ |
-| Die Möwe | e01 Schlüsseldieb, Tun filmt Möwen, Jolie zeichnet sie | läuft durch alle Module (M1: trägt ein Stück Glas) |
-| Wer hat den Schuppen von innen abgeschlossen? | Cliffhanger-Pool M0 | Jhemps altes Versteck (M3/M8) |
+| Boot | `dialogues/m0-ankunft-boot.js` | letzte Fahrt, der Entwurf (Wahl: lesen/wegstecken), kein Netz, Glimm |
+| Steg | `dialogues/ankunft-ilda.js` | „Freiwillig?“, Kisten mit Namen, Blick, „Frag mich nicht nach dem Turm.“ |
+| e01 Kodex | `dialogues/e01-kodex.js` | Tuns Turm-„Witz“, der leere Stuhl („besetzt“), „Mit mir schon gar nicht.“ |
+| e01 Jolie | `dialogues/e01-jolie.js` | Dasein → Splitter 1 · **Wahl 1** Versprechen |
+| Nacht | `dialogues/m0-nach-e01.js` | Ilda an der Glut, Brief, „Ende der Saison mach ich …“ · **Wahl 2** |
+| e02 | `dialogues/e02-nachfragen.js` | **Wahl 3** Plakat · „Und dann?“ → Akku-Lüge, grünes Lämpchen · Faden |
+| Morgen | `dialogues/m0-nach-e02.js` | Jolies Heft (privat), Folgen von Wahl 1–3, Kratzer, rausgerissene Seite |
+| e03 Brücke | `dialogues/e03-bruecke.js` | „Ich rede mit der Brücke.“ · Kamera hoch, Kamera runter |
+| e03 Kodex | `dialogues/e03-kodex.js` | Jolie unterschreibt zuerst · Herzglas, Herbst-Einsatz · Folge von Wahl 2 |
+| M0-Ende | `dialogues/m0-finale.js` | bunter Hafen, Kisten bleiben · Mika (Folge Wahl 3) · „Und dann?“ → „Dann mach ich den Hafen zu.“ · „Noch nicht.“ |
 
-## 6. Beats je Modul (Skill wird Handlung, nicht Lektion)
-- **M0 Hafen – Ankommen.** Der Hafen kann sich nicht einigen, wie man zusammenlebt – also brennen die Feuer nicht. Du
-  handelst den Kodex aus, setzt dich zur grauen Jolie, lotst sie durch die Grotte. Aus Fremden wird eine Crew. Erster
-  Splitter, erste Farbe, erste Spur: Jolie war im Turm.
-- **M1 Strand – Wer bin ich?** Die Flut spült Splitter 2 an. Tiagos Surf-Show sah damals niemand, alle lachten aufs Handy.
-  Wünsche und Bedürfnisse werden Gezeiten: Wer weiß, was er braucht, kann Ebbe und Flut rufen.
-- **M2 Dschungel – Gefühle verstehen.** Sechs Gefühlsvögel, ein siebter grauer kreist. Maëlles Erinnerung (Angst) zeigt
-  den Knall aus Panik-Sicht: Gefühle filtern, was man sieht.
-- **M3 Klippen – Gefühle regulieren.** Im Gewitter bleibst du steuerbar. Du findest Jhemp in der Sturmhütte; seine
-  Erinnerung: „Ich wollte nur weg.“ Der Turm flackert zum ersten Mal. Grisel erstmals in der Ferne.
-- **M4 Moor – Meine Gedanken.** Sätze werden Steine. Pit war sicher, das Lachen galt ihm. Ein Gedanke färbt ein Gefühl –
-  der Steinriese „Urteil“ zerfällt, wenn man Fakten prüft.
-- **M5 Markt – Kommunikation und Grenzen.** Ein verstummter Markt. Oma Lucinda war Zeugin: Ilda sagte „Reiß dich
-  zusammen!“ statt zu fragen. Ich-Botschaften lassen die grauen Blasen platzen.
-- **M6 Vulkan – Wenn es schwierig wird.** Gruppendruck am Krater. Mika gibt zu, dass die Crew den Clip geschnitten hat.
-  Tuns Verstärker-Rolle wird sichtbar; der Schatten-Chor kippt, wenn einer als Zweiter Nein sagt (Jolie).
-- **M7 Glimmerwolke – Digitale Welt.** Das Archiv zeigt Tuns harmloses Original, den Schnitt, die 40 Reposts. Tun steht
-  dazu. Die Kette ist fast komplett – und niemand darin ist ein Monster.
-- **M8 Quellental – Gesund und stark.** Nachtüberquerung mit Jhemp. Drei Nächte ohne Schlaf, Ilda fuhr aufs Meer statt
-  zu reden. Ein kleiner Schritt als Plan. Sonnenaufgang, Splitter 9.
-- **M9 Leuchtturm – Abschluss.** Die Chronik ergibt die Kette. Oben wartet Grisel; alle sagen den Satz, den sie nie
-  gesagt haben. Grisel wird Lichtfalter, die Linse zündet, Regenbogenwelle über die Insel.
+Beats laufen nach dem Lagerfeuer (Hafen-Plugin, `story.beat`), nie bei Kurzfassungen, nie doppelt (`story.seen.<id>`),
+unter `?test` nur mit `?story`. Die Nachtszene stellt die Uhr auf 22:30 und setzt dich ans Dorffeuer; danach Morgen.
+Nachspielen: `LUMO.debug.storyBeat('m0-nach-e01')`. Verzweigung im Dialog: `{ branch: [{ when, goto }], goto }`.
 
-## 7. Finale und Staffel-2-Hook
-- **Finale (e30):** vertikaler Turm-Parcours, eine Etage pro Modul. Oben hört man Grisel zu statt zu kämpfen. Ilda:
-  „Ich hätte fragen sollen.“ Tun: „Das Video war nicht okay.“ Jhemp: „Ich hätte Hilfe holen können.“ Jolie spricht ihren
-  eigenen Stopp. Ilda lässt dich das Licht zünden. Figuren nennen konkrete Taten von dir. Leises Lagerfeuer.
-- **Hook Staffel 2:** Fränz hat dein Boot repariert. Im Licht des Leuchtturms sieht man am Horizont weitere Inseln – und
-  eine davon ist grau. Die Flaschenpost ist versiegelt bis Staffel 2. Grisel, jetzt Lichtfalter, sitzt auf deinem Bug.
-  Letzte Zeile (Glimm): „Noch eine graue Insel. Klar. Natürlich.“
-
-## 8. Wiederkehrende Witze und Rituale
-- **Die Möwe:** klaut Dinge (Schlüssel, später Glas, Pommes), taucht in jedem Modul einmal auf. Tun hat sie „seit Jahren“ im Visier.
-- **Glimm-Rückzieher:** erst „Gähn“/„Nutzlos“, dann knapp „Okay, die war gut.“
-- **Tuns Regel-Humor:** „Auch Möwen.“ – Tun hängt an jede Regel einen Quatsch-Zusatz, den keiner unterschreibt.
-- **Ilda sagt „Moien“** und nichts über den Turm.
-- **Jolies „…“** wird kürzer, je länger du sie kennst. Im Finale gibt es keine Punkte mehr.
-- **Kodex unterschreiben:** jede neue Zeile = ein Feuer an + Glockenklang. Kommt in j07 (Senait) und M9 zurück.
-- **Abend am Feuer:** drei Figuren nennen deine Tat, dann ein Cliffhanger-Satz. Am Morgen danach ein kurzer Story-Beat.
-- **Farbwelle:** jedes Mal, wenn etwas ausgesprochen oder repariert wird.
-
-## 9. M0 im Spiel (Demo, umgesetzt)
-| Moment | Datei | Inhalt |
-|---|---|---|
-| Ankunft (Boot) | `dialogues/m0-ankunft-boot.js` | Erzähler + Glimm: letzter Sommer-Boot, grau, der dunkle Turm, Hook-Frage |
-| Ilda am Steg | `dialogues/ankunft-ilda.js` | „Grau heißt: Da ist jemand allein.“ · „Frag mich nicht nach dem Turm.“ |
-| e01 Kodex | `dialogues/e01-kodex.js` | Tun „Keine Regeln“ → eigene Regel · Ilda weicht beim Turm aus · Tun über Jolie |
-| e01 Jolie | `dialogues/e01-jolie.js` | Dasein → Splitter 1 · „Gefragt hat mich keiner.“ |
-| Beat nach e01 | `dialogues/m0-nach-e01.js` | Jolie kommt von selbst · Licht im Turm hat geflackert |
-| e02 Nachfragen | `dialogues/e02-nachfragen.js` | „Bis letzten Sommer. Egal.“ · erster Faden Tun–Jolie |
-| Beat nach e02 | `dialogues/m0-nach-e02.js` | Jolie hat Tun gezeichnet · die kaputte Brücke |
-| e03 Brücke | `dialogues/e03-bruecke.js` | Jolie meldet sich · Tun filmt nicht |
-| e03 Kodex | `dialogues/e03-kodex.js` | Jolie unterschreibt als Erste · Herzglas · Ilda schweigt · Tun flieht |
-| Demo-Ende | `dialogues/m0-finale.js` | Hafen leuchtet · Splitter glüht Richtung Strand · Tun sah es glitzern · „Einer wartet am Strand.“ |
-| Grau-Teaser | `systems/hafen/plugin.js` | Strand nach M0: „Da glitzert was. Kommt bald.“ · Turm: „Der Turm. Noch zu. Kommt bald.“ |
-
-Die Beats laufen am Morgen nach dem Lagerfeuer (Hafen-Plugin, `story.beat`), nie bei Kurzfassungen, nie doppelt
-(`story.seen.<id>`), unter `?test` nur mit `?story`. Nachspielen: `LUMO.debug.storyBeat('m0-finale')`.
-
-## 10. Abweichungen von DESIGN.md (mit Grund)
-- **Jolie war im Turm** (DESIGN nennt Splitter 1 nur „Fundstück von Jolie“): gibt dem ersten Splitter eine Herkunft und
-  macht den Kernsatz (Schweigen) schon in M0 spürbar, ohne die Kette zu verraten.
-- **Tun „hat aufgehört zu filmen“** (DESIGN: Tun filmt): der Clown filmt seit dem Fest nicht mehr – das ist der
-  erratbare Hinweis auf seine Rolle. Seine Kamera trägt er weiter. Greet-Zeile „Ich film nicht. Ehrlich.“ passt dazu.
-- **Glimm stellt sich im Boot-Beat selbst vor** (DESIGN: kein fester Auftritt): der Begleiter braucht einen ersten Satz.
-- **Cliffhanger nach M0 zeigt auf den Strand**, obwohl die Brücke in e03 zum Strand führt: passt; der Strand bleibt bis
-  M1 grau (Code fehlt), Glimm neckt beim Betreten.
+## 13. Abweichungen von DESIGN.md (mit Grund)
+- **Mika als Gegenkraft ab M0** (DESIGN: ab e24): eine Haltung mit Gesicht gibt der Staffel Reibung, ohne Bösewicht;
+  der Satz „Es gibt keinen Bösewicht“ bleibt wahr.
+- **Der Entwurf der Spielfigur** (neu): persönlicher Einsatz ohne Trauma, zahlt im Finale ein; nur Fragmente, kein Freitext.
+- **Funkmast am Turm, Ildas Schließungsplan** (neu): macht die Folgen des Schweigens greifbar (kein Netz, keine Fähre).
+- **Jolie ist Jhemp nachgelaufen** (DESIGN: Splitter 1 „Fundstück“): gibt dem Splitter eine Herkunft und Jolie einen Satz.
+- **Tun „filmt nicht mehr“, Akku-Lüge** (DESIGN: Tun filmt): erratbarer Hinweis auf seine Rolle.
+- **Jhemp gibt Jolie den Schlüssel, Maëlle zieht weg** (DESIGN: „Rückkehr“, „Traumschiff“): bittersüß statt glatt.
+- **M0-Wahlen mit Flags `m0.*` und Dialog-`branch`** (Engine-Erweiterung, klein): Folgen ohne Strafe, DESIGN §6/§20a.
+- **Nachtszene nach e01** (DESIGN: Beat am Morgen): ein ruhiger Moment braucht Dunkelheit.

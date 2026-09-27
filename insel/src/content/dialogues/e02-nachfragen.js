@@ -1,30 +1,57 @@
 // Szene e02-nachfragen (DESIGN §12 e02): eine Frage bringt nur eine flache Antwort. Erst „Und dann?“ verrät ein
 // harmloses Detail – und zwischen Tun und Jolie erscheint der erste Faden.
-// Story: Tun hat „letzten Sommer“ mit dem Filmen aufgehört (Saat für das Video, Splitter 8) · Jolie traut sich einen Satz.
+// Story (docs/STORY.md §6 Wahl 3, §8): das alte Festplakat mit Mikas Spruch (m0.plakat = weg | bleibt | umgedreht) ·
+// Tun hat „letzten Sommer“ aufgehört zu filmen, schiebt es auf den Akku – das Lämpchen leuchtet grün.
 export default {
   id: 'e02-nachfragen', unit: 'j1-e02', cast: ['tun', 'jolie'], camera: 'talk', rewind: true, start: 'a',
   nodes: {
-    a: {
-      speaker: 'tun', say: 'Heute ist Laternenfest! Frag mich was. Irgendwas.', anim: 'cheer',
+    a: { speaker: 'erzaehler', say: 'Das alte Festplakat. Ein alter Mann. Quer drüber: WER REDET, VERLIERT.', goto: 'b' },
+    b: {
+      speaker: 'tun', say: 'Das muss weg. Heute ist Fest. Ist einfach hässlich.', anim: 'angry',
       choices: [
-        { say: 'Was machst du gern?', icon: 'frage', goto: 'b' },
-        { say: 'Was filmst du so?', icon: 'kamera', goto: 'b' },
+        { say: 'Abreißen.', icon: 'x', effects: [{ flag: 'm0.plakat', set: 'weg' }], goto: 'b1' },
+        { say: 'Hängen lassen.', icon: 'hand', effects: [{ flag: 'm0.plakat', set: 'bleibt' }], goto: 'b2' },
+        { say: 'Umdrehen.', icon: 'drehen', effects: [{ flag: 'm0.plakat', set: 'umgedreht' }], goto: 'b3' },
       ],
     },
-    b: {
+    b1: { speaker: 'erzaehler', say: 'Der Spruch reißt nur mit dem Gesicht ab.', goto: 'b1b' },
+    b1b: { speaker: 'jolie', say: 'Da war Jhemp drauf. Lachend.', anim: 'sad', goto: 'b1c' },
+    b1c: { speaker: 'tun', say: '… Danke trotzdem.', anim: 'sad', goto: 'd' },
+    b2: { speaker: 'tun', say: 'Klar. Ist ja nur Papier. Haha.', anim: 'cheer', goto: 'b2b' },
+    b2b: { speaker: 'glimm', say: 'Zu lautes Haha.', goto: 'd' },
+    b3: { speaker: 'tun', say: 'Perfekt. Weg ist weg.', anim: 'cheer', goto: 'b3b' },
+    b3b: { speaker: 'glimm', say: 'Umdrehen. Sehr inseltypisch.', goto: 'd' },
+    d: { speaker: 'tun', say: 'Die vom Vulkan. Mika. Denen widerspricht man nicht.', anim: 'idle', goto: 'e' },
+    e: {
+      speaker: 'tun', say: 'Egal! Laternenfest! Frag mich was. Irgendwas.', anim: 'cheer',
+      choices: [
+        { say: 'Was machst du gern?', icon: 'frage', goto: 'f' },
+        { say: 'Was filmst du so?', icon: 'kamera', goto: 'f' },
+      ],
+    },
+    f: {
       speaker: 'tun', say: 'Ach, so Zeug halt.', anim: 'idle',
       choices: [
-        { say: 'Und dann?', icon: 'frage', tone: 'ruhig', goto: 'c' },
-        { say: 'Okay.', icon: 'check', goto: 'b2' },
+        { say: 'Und dann?', icon: 'frage', tone: 'ruhig', goto: 'g' },
+        { say: 'Okay.', icon: 'check', goto: 'f2' },
       ],
     },
-    b2: { speaker: 'glimm', say: 'Flach. Frag nochmal nach.', goto: 'b' },
-    c: { speaker: 'tun', say: 'Möwen. Ich filme Möwen. Die sind komplett irre.', anim: 'talk', goto: 'c2' },
-    c2: { speaker: 'tun', say: 'Also … hab ich. Bis letzten Sommer. Egal.', anim: 'sad', goto: 'd' },
-    d: { speaker: 'jolie', say: 'Ich … zeichne Möwen.', anim: 'think', effects: [{ upgrade: 'blick.faeden' }], goto: 'e' },
-    e: { speaker: 'glimm', say: 'Ein Faden. Zwischen den beiden.', goto: 'f' },
-    f: { speaker: 'tun', say: 'Echt jetzt? Zeig mal!', anim: 'cheer', effects: [{ deed: 'tun-nachgefragt' }], goto: 'f2' },
-    f2: { speaker: 'jolie', say: 'Später. Vielleicht.', anim: 'idle', goto: 'g' },
-    g: { speaker: 'tun', say: 'Holst du Funken fürs Fest? Vom Feuer da drüben.', anim: 'idle', end: true },
+    f2: { speaker: 'glimm', say: 'Flach. Da ist mehr.', goto: 'f' },
+    g: { speaker: 'tun', say: 'Möwen. Ich filme Möwen. Die sind komplett irre.', anim: 'talk', goto: 'h' },
+    h: {
+      speaker: 'tun', say: 'Also … hab ich. Bis letzten Sommer.', anim: 'sad',
+      choices: [
+        { say: 'Und dann?', icon: 'frage', tone: 'ruhig', goto: 'h1' },
+        { sign: 'nicken', label: 'Nicken', goto: 'i' },
+      ],
+    },
+    h1: { speaker: 'tun', say: 'Akku kaputt. Seitdem. Blöd, oder?', anim: 'cheer', goto: 'h2' },
+    h2: { speaker: 'glimm', say: 'Das Lämpchen ist grün.', goto: 'i' },
+    i: { speaker: 'jolie', say: 'Ich … zeichne Möwen.', anim: 'think', effects: [{ upgrade: 'blick.faeden' }], goto: 'j' },
+    j: { speaker: 'glimm', say: 'Ein Faden. Zwischen den beiden.', goto: 'k' },
+    k: { speaker: 'tun', say: 'Echt jetzt? Zeig mal!', anim: 'cheer', effects: [{ deed: 'tun-nachgefragt' }], goto: 'l' },
+    l: { speaker: 'jolie', say: 'Dir? Nee.', anim: 'idle', goto: 'l2' },
+    l2: { speaker: 'tun', say: 'Autsch. Verdient, aber autsch.', anim: 'sad', goto: 'm' },
+    m: { speaker: 'tun', say: 'Holst du Funken fürs Fest? Vom Feuer da drüben.', anim: 'idle', end: true },
   },
 };

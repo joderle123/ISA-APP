@@ -3,10 +3,12 @@
 //     Danach öffnen die Kurs-Codes (BOJE, DELFIN, OTTER) die Quests j1-e01…e03; jede Quest senkt den Schleier
 //     (RegionDef.veil.steps) als Farbwelle, e03 macht den Hafen ganz bunt.
 //   · Andere Regionen bleiben grau: beim Betreten sagt Glimm einmal je Sitzung „Grau hier. Kommt bald.“
-//     (nach M0 am Strand: „Da glitzert was. Kommt bald.“, am Turm eigener Satz – docs/STORY.md)
+//     (nach M0 am Strand: „Da glitzert was. Kommt bald.“, am Turm „Zu. Kratzer am Schloss.“ – docs/STORY.md)
 //   · Story-Beats (docs/STORY.md): Ankunft mit dem Boot (erster Start, nach dem Stil-Studio) und je ein kurzer Beat am
 //     Morgen nach dem Lagerfeuer von e01/e02/e03 (m0-nach-e01, m0-nach-e02, m0-finale). Spielstand: story.beat (wartend),
 //     story.seen.<id>. Unter ?test nur mit ?story, damit Szenarien nicht von Szenen unterbrochen werden.
+//     m0-nach-e01 ist eine Nachtszene am Dorffeuer (BEAT_SCENE: Uhrzeit + Ort, danach Morgen).
+//     Entscheidungen der Beats liegen als flags.m0.* im Spielstand (docs/STORY.md §6).
 //   · Autosave läuft im Kern (save.autosave); nach einer fertigen Quest wird sofort gespeichert.
 //   game.plugins.hafen → { started(), teaser(zone) }   Spielstand: flags.hafenStart
 //   Tests (?test): die Ankunft startet nur mit ?demo automatisch, damit ältere Szenarien (Code WELLE → aktiv) gleich bleiben.
@@ -43,7 +45,7 @@ export default {
       if (v === null || v < 0.5) return false;
       teased.add(zone);
       const m0 = (world.veil.zoneValue ? world.veil.zoneValue('hafen') : 1) <= 0.01;
-      const line = zone === 'leuchtturm' ? 'Der Turm. Noch zu. Kommt bald.' : zone === 'strand' && m0 ? 'Da glitzert was. Kommt bald.' : 'Grau hier. Kommt bald.';
+      const line = zone === 'leuchtturm' ? 'Zu. Kratzer am Schloss. Kommt bald.' : zone === 'strand' && m0 ? 'Da glitzert was. Kommt bald.' : 'Grau hier. Kommt bald.';
       if (ui.glimm) ui.glimm(line, { seconds: 3 });
       return true;
     }
@@ -59,15 +61,31 @@ export default {
     // ---- Story-Beats: erst abspielen, wenn nichts anderes offen ist (Stil-Studio, Lagerfeuer, Recap, Szene) ----
     const storyOn = !params.has('test') || params.has('story');
     const BEAT_AFTER = { 'j1-e01': 'm0-nach-e01', 'j1-e02': 'm0-nach-e02', 'j1-e03': 'm0-finale' };
+    // Nachtszene (docs/STORY.md §12): vor dem Beat Uhr auf 22:30 und ans Dorffeuer, danach Morgen (du schläfst dort ein)
+    const BEAT_SCENE = { 'm0-nach-e01': { hour: 22.5, site: 'hafen.feuerPlatz', after: 7.5 } };
+    function stageBeat(id) {
+      const sc = BEAT_SCENE[id];
+      if (!sc || !game.time || !game.time.setTimeOfDay) return null;
+      const S = content.resolveSite ? content.resolveSite(sc.site) : null;
+      if (S && game.player && game.player.teleport && !(game.scenes && game.scenes.isInterior)) {
+        const px = S.x + 2.4, pz = S.z + 1.2;
+        game.player.teleport(px, pz, Math.atan2(S.x - px, S.z - pz));
+        if (game.cameraRig) { game.cameraRig.behindPlayer(); game.cameraRig.snap(); }
+      }
+      game.time.setTimeOfDay(sc.hour);
+      return () => game.time.setTimeOfDay(sc.after);
+    }
     let beatTimer = null;
     const busy = () => !game.started || (ui.overlay && ui.overlay.count) || (game.dialogue && game.dialogue.isOpen) || (game.session && game.session.ending) || (game.scenes && game.scenes.isInterior);
-    function playBeat(id, tries = 0) {
-      if (!storyOn || !id || !content.has('dialogues', id) || state.get('story.seen.' + id)) { if (state.get('story.beat') === id) state.set('story.beat', null); return false; }
+    function playBeat(id, tries = 0, force = false) {
+      if ((!storyOn && !force) || !id || !content.has('dialogues', id) || state.get('story.seen.' + id)) { if (state.get('story.beat') === id) state.set('story.beat', null); return false; }
       clearTimeout(beatTimer);
-      if (busy()) { if (tries < 600) beatTimer = setTimeout(() => playBeat(id, tries + 1), 1000); return false; }
+      if (busy()) { if (tries < 600) beatTimer = setTimeout(() => playBeat(id, tries + 1, force), 1000); return false; }
       state.set('story.seen.' + id, true);
       if (state.get('story.beat') === id) state.set('story.beat', null);
-      if (game.dialogue && game.dialogue.play) game.dialogue.play(id);
+      const after = stageBeat(id);
+      const run = game.dialogue && game.dialogue.play ? game.dialogue.play(id) : null;
+      if (after) Promise.resolve(run).catch(() => null).then(after);
       return true;
     }
     events.on('quest:complete', (e) => { if (e && !e.kurz && BEAT_AFTER[e.id]) state.set('story.beat', BEAT_AFTER[e.id]); });
@@ -81,7 +99,8 @@ export default {
 
     const D = game.debug || (game.debug = {});
     D.hafenStart = () => { state.set('flags.hafenStart', false); return firstStart(); };
-    D.storyBeat = (id) => { if (id) state.set('story.seen.' + id, false); return playBeat(id || state.get('story.beat')); };
+    // Debug/Tests: spielt den Beat auch unter ?test (ausdrücklicher Aufruf)
+    D.storyBeat = (id) => { if (id) state.set('story.seen.' + id, false); return playBeat(id || state.get('story.beat'), 0, true); };
     return { started: () => !!state.get('flags.hafenStart'), teaser, firstStart, playBeat };
   },
 };

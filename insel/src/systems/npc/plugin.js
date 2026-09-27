@@ -228,7 +228,9 @@ export default {
         const near = cx !== null && Math.hypot(cx - n.group.position.x, cz - n.group.position.z) < 1.6;
         tags.push({ tag: t, pos: tagPos[tags.length], dist: d, prio: (near ? 4 : 0) + (n.def.ambient ? 0 : 1) });
       }
-      if (tags.length > 1) declutterTags(tags, camera, typeof window !== "undefined" ? window.innerWidth : 1180, typeof window !== "undefined" ? window.innerHeight : 820, dt);
+      // Während einer Szene stehen Sprechblasen oben: Namensschilder weich ausblenden (die Blase nennt, wer spricht)
+      if (game.dialogue && game.dialogue.isOpen) for (const x of tags) x.tag.declutter(false, dt);
+      else if (tags.length > 1) declutterTags(tags, camera, typeof window !== "undefined" ? window.innerWidth : 1180, typeof window !== "undefined" ? window.innerHeight : 820, dt);
       else for (const x of tags) x.tag.declutter(true, dt);
       // Grenz-Radius: betreten/verlassen (für Quests und Körpersignale)
       saveT += dt;

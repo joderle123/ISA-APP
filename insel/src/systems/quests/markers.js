@@ -56,6 +56,14 @@ export function createMarkers({ game }) {
       const p = game.player.position;
       const d = Math.hypot(p.x - group.position.x, p.z - group.position.z);
       group.visible = d > 2.2;
+      // Kamera steht in/an der Säule (Ziel hinter der Figur): sonst füllt das additive Licht halb den Bildschirm
+      const cam = game.camera;
+      if (cam) {
+        const cd = Math.hypot(cam.position.x - group.position.x, cam.position.z - group.position.z);
+        const f = THREE.MathUtils.smoothstep(cd, 1.4 * g, 3.6 * g);
+        matBeam.opacity *= f;
+        beam.visible = f > 0.02;
+      }
     },
     dispose() { scene.remove(group); },
   };

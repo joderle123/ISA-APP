@@ -177,7 +177,7 @@ export function dialogues(ctx, d) {
   const ids = new Set(Object.keys(d.nodes));
   if (!isStr(d.start) || !ids.has(d.start)) ok = err(ctx, 'start', `start muss ein Knoten sein (${[...ids].join(', ')})`);
   const reachable = new Set();
-  const visit = (id) => { if (!ids.has(id) || reachable.has(id)) return; reachable.add(id); const n = d.nodes[id]; if (!isObj(n)) return; if (isStr(n.goto)) visit(n.goto); if (isList(n.choices)) n.choices.forEach((c) => isObj(c) && isStr(c.goto) && visit(c.goto)); if (isObj(n.lauschen) && isStr(n.lauschen.abort)) visit(n.lauschen.abort); };
+  const visit = (id) => { if (!ids.has(id) || reachable.has(id)) return; reachable.add(id); const n = d.nodes[id]; if (!isObj(n)) return; if (isStr(n.goto)) visit(n.goto); if (isList(n.choices)) n.choices.forEach((c) => isObj(c) && isStr(c.goto) && visit(c.goto)); if (isObj(n.lauschen) && isStr(n.lauschen.abort)) visit(n.lauschen.abort); if (isList(n.branch)) n.branch.forEach((b) => isObj(b) && isStr(b.goto) && visit(b.goto)); };
   if (isStr(d.start)) visit(d.start);
   for (const [id, n] of Object.entries(d.nodes)) {
     const p = ['nodes', id];
@@ -192,6 +192,16 @@ export function dialogues(ctx, d) {
     if (n.lauschen !== undefined && !(isObj(n.lauschen) && isNum(n.lauschen.seconds))) ok = err(ctx, sub(p, 'lauschen'), 'lauschen: { seconds, abort? }');
     if (n.satzbau !== undefined) { if (!isStr(n.satzbau)) ok = err(ctx, sub(p, 'satzbau'), 'Minispiel-ID erwartet'); else ref(ctx, sub(p, 'satzbau'), 'minigame', n.satzbau); }
     if (n.end !== undefined && !isBool(n.end)) ok = err(ctx, sub(p, 'end'), 'end: true');
+    if (n.branch !== undefined) {
+      if (!isList(n.branch) || !n.branch.length) ok = err(ctx, sub(p, 'branch'), 'branch: [{ when, goto }] mit mindestens einem Eintrag');
+      else n.branch.forEach((b, i) => {
+        const q = [...p, 'branch', i];
+        if (!isObj(b)) { ok = err(ctx, q, 'Verzweigung muss ein Objekt sein'); return; }
+        ok = checkCond(ctx, sub(q, 'when'), b.when) && ok;
+        if (!(isStr(b.goto) && ids.has(b.goto))) ok = err(ctx, sub(q, 'goto'), `goto '${b.goto}' ist kein Knoten`);
+      });
+      if (n.goto === undefined && n.end !== true && n.choices === undefined) ok = err(ctx, p, 'Verzweigung braucht einen Standardweg (goto, choices oder end)');
+    }
     if (n.choices !== undefined) {
       if (!isList(n.choices) || !n.choices.length) ok = err(ctx, sub(p, 'choices'), 'choices: Liste mit mindestens einer Wahl');
       else {

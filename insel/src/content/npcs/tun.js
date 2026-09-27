@@ -18,7 +18,7 @@ export default {
   bond: { ability: { level: 2, id: 'daecher', say: 'Über die Dächer geht es schneller.' }, jacket: 'kamera', finale: 'Das Video war nicht okay. Sorry.' },
   tell: { bluff: 'grinst-einseitig', amp: { entspannt: 1, abenteuer: 0.6, profi: 0.3 } },
   lines: {
-    greet: ['Yo! Keine Regeln, oder?', 'Lächeln. Ich film nicht. Ehrlich.', 'Moien. Was geht?'],
+    greet: ['Yo! Keine Regeln, oder?', 'Lächeln. Ich film nicht. Ehrlich.', 'Moien! Die Möwe hat wieder was geklaut. Respekt.'],
     campfire: { 'tun-nachgefragt': 'Du hast nachgefragt. Macht sonst keiner.', 'tun-kodex': 'Okay, die Regel war gut. Zugegeben.', 'tun-gestoppt': 'Du hast Stopp gesagt. Ich hab es gehört.', 'tun-bank-gedreht': 'Ich hab die Bank gedreht. Zuerst.' },
     campfireDefault: 'War ein guter Tag. Kein Witz.',
     verstimmt: 'Du hast gelacht. Über mich.',

@@ -1,6 +1,6 @@
 // Szene e03-kodex (DESIGN §12 e03): die Crew ergänzt den Kodex um eine Zeile. Das vierte Feuer brennt, der Hafen wird bunt.
-// Story: Jolie unterschreibt als Erste (von der Grauen zur Crew) · der Splitter zeigt zum Strand · Ilda nennt das
-// Herzglas und schweigt dann · Tun verschwindet auffällig schnell (Rätsel, Auflösung M7).
+// Story (docs/STORY.md §5/§6): Jolie unterschreibt als Erste · Folge von Wahl 2 (m0.ilda): Ilda dankt Jolie – oder sagt
+// dir leise, was dein Dichthalten sie kostet · Herzglas und Herbst: was auf dem Spiel steht · Tun flieht zu den „Möwen“.
 export default {
   id: 'e03-kodex', unit: 'j1-e03', cast: ['ilda', 'jolie', 'tun'], camera: 'talk', rewind: true, start: 'a',
   nodes: {
@@ -19,7 +19,18 @@ export default {
         { sign: 'nicken', label: 'Nicken', goto: 'd' },
       ],
     },
-    d: { speaker: 'ilda', say: 'Vier Feuer. Ab heute seid ihr eine Crew.', anim: 'talk', goto: 'e' },
+    d: {
+      branch: [
+        { when: { flag: ['m0.ilda', '==', 'ausgewichen'] }, goto: 'd5' },
+        { when: { any: [{ flag: ['m0.ilda', '==', 'gesagt'] }, { flag: ['m0.ilda', '==', 'fragselbst'] }] }, goto: 'd3' },
+      ],
+      speaker: 'ilda', say: 'Vier Feuer. Sieht nach Crew aus.', anim: 'talk', goto: 'e',
+    },
+    d3: { speaker: 'ilda', say: 'Vier Feuer. Und Jolie … danke. Fürs Aufheben.', anim: 'talk', goto: 'd4' },
+    d4: { speaker: 'jolie', say: 'Hat ja keiner gefragt.', anim: 'idle', goto: 'd4b' },
+    d4b: { speaker: 'ilda', say: 'Ich weiß.', anim: 'sad', goto: 'e' },
+    d5: { speaker: 'ilda', say: 'Vier Feuer. Sieht nach Crew aus.', anim: 'talk', goto: 'd6' },
+    d6: { speaker: 'ilda', say: 'Du hältst dicht. Gut für sie. Schlecht für mich.', anim: 'idle', goto: 'e' },
     e: {
       speaker: 'jolie', say: 'Der Splitter wird warm. Er zeigt zum Strand.', anim: 'think',
       choices: [
@@ -29,8 +40,9 @@ export default {
     },
     f: { speaker: 'ilda', say: 'Herzglas. Die Linse aus dem Turm. Neun Splitter.', anim: 'sad', goto: 'g' },
     f2: { speaker: 'ilda', say: 'Nicht heute. Das ist Herzglas. Aus dem Turm.', anim: 'sad', goto: 'g' },
-    g: { speaker: 'ilda', say: 'Mehr sag ich dazu heute nicht.', anim: 'idle', goto: 'h' },
+    g: { speaker: 'ilda', say: 'Ohne Licht läuft im Herbststurm keine Fähre ein.', anim: 'think', goto: 'g2' },
+    g2: { speaker: 'ilda', say: 'Mehr sag ich dazu heute nicht.', anim: 'idle', goto: 'h' },
     h: { speaker: 'tun', say: 'Ich muss … Möwen. Tschüss!', anim: 'idle', goto: 'i' },
-    i: { speaker: 'glimm', say: 'Die wissen was. Beide.', end: true },
+    i: { speaker: 'glimm', say: 'Möwen. Um diese Uhrzeit.', end: true },
   },
 };

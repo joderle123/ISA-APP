@@ -86,18 +86,22 @@ function tragen(step, o) {
 function szene(step, o) {
   const r = base(step, o);
   const at = r.params.at ? r.ctx.resolvePos(r.params.at) : null;
-  let running = false, retry = null;
+  let running = false, retry = null, release = null, holdT = 2;
+  const hold = () => { if (at && !release && r.ctx.holdCast) release = r.ctx.holdCast(r.params.dialogue, at); };
+  const unhold = () => { if (release) { release(); release = null; } };
   const play = async () => {
     if (running) return;
     running = true;
     const res = await r.ctx.dialogue(r.params.dialogue, { step: r.step.id, quest: r.quest && r.quest.id });
     running = false;
     if (!r.active) return;
+    release = null;   // die Szene hat ihre Übersteuerung schon gelöst
     if (res && res.reason === 'end') { r.active = false; cleanup(r); r.done(res); return; }
     // Rückzug/Exit: kein Fehlschlag – der Schritt wartet am selben Ort
     const p = at || r.ctx.player();
     if (!retry) retry = interact(r, { id: 'szene-' + r.step.id, x: p.x, z: p.z, radius: 3.5, label: 'Reden', priority: 2, onAction: play });
     r.ctx.marker(p, { label: 'Reden', icon: 'sprechblase' });
+    hold();
   };
   return Object.assign(r, {
     describe: () => ({ label: r.step.label || 'Rede mit der Figur', target: at, icon: 'sprechblase' }),
@@ -106,10 +110,12 @@ function szene(step, o) {
       if (at && dist(r.ctx.player(), at) > (at.r || 4)) {
         r.ctx.marker(at, { label: 'Reden', icon: 'sprechblase' });
         retry = interact(r, { id: 'szene-' + r.step.id, x: at.x, z: at.z, radius: at.r || 4, label: 'Reden', priority: 2, onAction: play });
+        hold();
       } else play();
     },
-    update() {},
-    stop() { r.active = false; cleanup(r); },
+    // Tagesablauf kann die Figur später wegschicken: alle 2 s nachsehen (holdCast prüft selbst, ob sie noch dort ist)
+    update(dt) { if (!r.active || running || release || !at) return; holdT -= dt || 0; if (holdT <= 0) { holdT = 2; hold(); } },
+    stop() { r.active = false; unhold(); cleanup(r); },
     play,
   });
 }

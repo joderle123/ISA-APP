@@ -13,6 +13,7 @@
 import { createQuestEngine } from './engine.js';
 import { createMarkers } from './markers.js';
 import { createObjective } from './objective.js';
+import { createFeel } from './feel.js';
 import { installQuestPages, PAGES_CSS } from './pages.js';
 import { evalCond, applyEffects } from './dsl.js';
 import { createWorldDsl } from './worlddsl.js';
@@ -84,6 +85,18 @@ export default {
       minMedal(id) { const m = content.get('minigames', id); return (m && m.story && m.story.minMedal) || 'bronze'; },
       failForward(id) { const m = content.get('minigames', id); return !(m && m.story && m.story.failForward === false); },
       gateOpen(id) { return !!state.get('gates.' + id); },
+      // Szene an einem Ort: die Hauptfigur (erste im cast) wartet dort, solange der Schritt wartet – sonst steht
+      // „Zur Kapitänin am Steg“ da, während sie laut Tagesablauf am Dorfplatz ist. Gibt eine Freigabe-Funktion zurück.
+      holdCast(dialogueId, at) {
+        const d = content.get('dialogues', dialogueId);
+        const id = d && Array.isArray(d.cast) && d.cast.length ? d.cast[0] : null;
+        const N = npcs(); const n = id && N && N.get ? N.get(id) : null;
+        if (!n || !n.setOverride || !at || (n.override && !n.override.questHold)) return null;   // Szene/Nachtwache hat Vorrang
+        // Schon dort (Tagesablauf, z. B. Jolie sitzt am Ufer): nichts ändern, die Pose gehört zur Szene
+        if (!n.override && Math.hypot(n.position.x - at.x, n.position.z - at.z) < (at.r || 4) + 2) return null;
+        n.setOverride({ x: at.x + 1.3, z: at.z - 0.6, anim: 'idle', questHold: true });
+        return () => { if (n.override && n.override.questHold) n.clearOverride(); };
+      },
       npcPos(id) { const N = npcs(); const n = N && N.get ? N.get(id) : null; return n && n.group ? { x: n.group.position.x, z: n.group.position.z, r: 3 } : null; },
       // Rückenwind: ein Windschatten-Stein erscheint vor der Figur (Hinweisleiter Stufe 2)
       rueckenwind({ step }) {
@@ -158,6 +171,7 @@ export default {
     events.on('state:reset', () => { markers.clear(); ctx.clearRueckenwind(); if (started) engine.resume(); });
     events.on('save:load', () => { if (started) engine.resume(); });
     const objective = createObjective({ game, engine, markers });
+    const feel = createFeel({ game, engine });
     game.addUpdate((dt, t) => { engine.update(dt); markers.update(dt, t); objective.update(dt); }, { order: 40 });
 
     // ---- Tagebuch ----
@@ -177,6 +191,8 @@ export default {
     D.questMarker = () => markers.target;
     D.objective = () => ({ ...objective.info, idle: objective.idle, dom: objective.el ? { text: objective.el.textContent, off: objective.el.classList.contains('is-off') } : null });
     D.nudge = () => objective.nudge();
+    D.feel = () => ({ pending: feel.pending, shown: feel.shown, reveal: !!document.querySelector('.patch-reveal') });
+    D.patchReveal = (unit) => feel.reveal(unit || 'j1-e01');
     D.addDeed = (id, npc) => engine.deeds.add(id, { npc });
     D.checkEchoes = () => engine.echoes.check();
 

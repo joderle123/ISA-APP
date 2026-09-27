@@ -2,6 +2,7 @@
 // (stage.js) liefert Blasen, Kacheln, Kamera, Lauschen und Minispiele über den Kontext.
 //   const d = createDialogue(def, ctx);  await d.start() → { end: true, reason: 'end'|'rueckzug'|'exit'|'abbruch', node }
 //   d.node (aktueller Knoten) · d.history ([{ node, snap }]) · d.rewind() · d.exit(reason) · d.running · d.hitzeOf(npc)
+//   Knoten-Verzweigung: { branch: [{ when: Bedingung, goto }], goto } – erste passende Bedingung, sonst normal weiter.
 // Kontext:
 //   puls() · hasHilfe() · hitze(npc) · setHitze(npc, v) · evalCond(c) · applyEffects(list) · snapshot() · restore(snap)
 //   say({ who, text, tts, anim, sign, node }) → Promise          Sprechblase (jede Zeile vorlesbar)
@@ -43,6 +44,12 @@ export function createDialogue(def, ctx) {
   async function step(id) {
     const node = await enterNode(id);
     if (exitReason) return null;
+    // Verzweigung ohne Wahl (Folgen früherer Entscheidungen, docs/STORY.md §6): die erste passende Bedingung gewinnt,
+    // sonst läuft der Knoten normal weiter (eigener Satz, goto). Keine Strafe, nur eine andere Zeile.
+    if (Array.isArray(node.branch) && ctx.evalCond) {
+      const hit = node.branch.find((b) => b && nodes[b.goto] && ctx.evalCond(b.when));
+      if (hit) return hit.goto;
+    }
     const who = speakerOf(node);
     if (node.say !== undefined || node.sign) {
       if (node.lauschen) {

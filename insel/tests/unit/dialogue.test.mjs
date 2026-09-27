@@ -172,3 +172,16 @@ test('Rückzug und Exit beenden sofort ohne Strafe; Satz-Bau-Knoten; unbekannter
   const r3 = await d3.start();
   assert.equal(r3.reason, 'fehler');
 });
+
+test('Verzweigung ohne Wahl: erste passende Bedingung, sonst Standardweg (Folgen früherer Entscheidungen)', async () => {
+  const def = { id: 't-branch', cast: ['jolie'], start: 'a', nodes: {
+    a: { branch: [{ when: { flag: ['m0.ilda', '==', 'gesagt'] }, goto: 'g' }, { when: { flag: 'm0.versprochen' }, goto: 'v' }], speaker: 'jolie', say: 'Hi.', goto: 'z' },
+    g: { speaker: 'jolie', say: 'Du hast es ihr gesagt.', goto: 'z' },
+    v: { speaker: 'jolie', say: 'Du hast dicht gehalten.', goto: 'z' },
+    z: { speaker: 'jolie', say: 'Okay.', end: true },
+  } };
+  const run = async (setup) => { const s = stage(); setup(s.state); await createDialogue(def, s.ctx).start(); return s.log.says.map((x) => x.text); };
+  assert.deepEqual(await run(() => {}), ['Hi.', 'Okay.'], 'ohne Flag: Standardweg mit eigenem Satz');
+  assert.deepEqual(await run((st) => st.set('flags.m0.versprochen', true)), ['Du hast dicht gehalten.', 'Okay.']);
+  assert.deepEqual(await run((st) => { st.set('flags.m0.versprochen', true); st.set('flags.m0.ilda', 'gesagt'); }), ['Du hast es ihr gesagt.', 'Okay.'], 'Reihenfolge zählt');
+});

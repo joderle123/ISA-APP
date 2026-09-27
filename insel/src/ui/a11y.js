@@ -92,7 +92,7 @@ export function createSettings({ game, state, events, speech, audio, icon }) {
       </section>
       <section class="set-block set-reset" data-reset>
         <h3>${icon('zurueck', { size: 22 })} Neu anfangen</h3>
-        <p class="set-hint">Löscht den Spielstand auf diesem Gerät. Für die nächste Person.</p>
+        <p class="set-hint">Dein Spielstand startet von vorn. Andere Spielstände bleiben.</p>
         <div class="reset-row"><button type="button" class="btn-reset" data-reset-ask>Neu anfangen …</button></div>
       </section>`;
     el.querySelectorAll('[data-set]').forEach((b) => b.addEventListener('click', () => {
@@ -103,7 +103,7 @@ export function createSettings({ game, state, events, speech, audio, icon }) {
       set(key, val);
       render(el);
     }));
-    // Neu anfangen: zweistufig (erst fragen, dann löschen), danach frischer Start ohne ?debug
+    // Neu anfangen: zweistufig (erst fragen, dann den aktuellen Spielstand neu anlegen), danach frischer Start
     const rs = el.querySelector('[data-reset]');
     if (rs) rs.addEventListener('click', (ev) => {
       const b = ev.target.closest('button');
@@ -111,13 +111,14 @@ export function createSettings({ game, state, events, speech, audio, icon }) {
       const row = rs.querySelector('.reset-row');
       if (b.hasAttribute('data-reset-ask')) {
         if (audio) audio.play('tile');
-        row.innerHTML = `<b class="reset-q">Wirklich? Alles auf diesem Gerät ist dann weg.</b><button type="button" class="btn-reset is-danger" data-reset-yes>Ja, alles löschen</button><button type="button" class="btn-reset" data-reset-no>Lieber nicht</button>`;
+        row.innerHTML = `<b class="reset-q">Wirklich? Dein Fortschritt ist dann weg.</b><button type="button" class="btn-reset is-danger" data-reset-yes>Ja, neu anfangen</button><button type="button" class="btn-reset" data-reset-no>Lieber nicht</button>`;
         const no = row.querySelector('[data-reset-no]'); if (no) no.focus();
       } else if (b.hasAttribute('data-reset-no')) {
         if (audio) audio.play('tile');
         render(el);
       } else if (b.hasAttribute('data-reset-yes')) {
-        if (game && game.save && game.save.wipe) game.save.wipe();
+        // Nur den eigenen Spielstand (DESIGN §20a.11): andere Slots, Lehrer- und Geräte-Daten bleiben
+        if (game && game.save && game.save.newGame) game.save.newGame(game.save.current);
         if (events) events.emit('ui:reset', {});
         if (!(typeof location !== 'undefined' && /[?&]test\b/.test(location.search))) setTimeout(() => location.reload(), 60);
       }
