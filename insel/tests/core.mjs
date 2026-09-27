@@ -86,7 +86,10 @@ try {
     const h = LUMO.player.humanoid;
     // nur die Körperteile (ohne unsichtbare Aura/Ring)
     const box = new LUMO.THREE.Box3();
-    for (const m of Object.values(h.meshes)) box.union(new LUMO.THREE.Box3().setFromObject(m));
+    // Matrizen frisch rechnen; nur sichtbare Varianten zählen (Hand-/Mund-Varianten liegen verborgen darin)
+    h.group.updateMatrixWorld(true);
+    const shown = (o) => { for (; o; o = o.parent) if (!o.visible) return false; return true; };
+    for (const m of Object.values(h.meshes)) if (shown(m)) box.union(new LUMO.THREE.Box3().setFromObject(m));
     const total = box.max.y - box.min.y;
     const headH = h.headHeight;   // Kopf ohne Haare
     h.setExpression({ brows: -1, mouth: -0.8 });
@@ -96,7 +99,7 @@ try {
     return { height: h.height, total, headH, heads: total / headH, e1, mouths: Object.keys(h.face.mouths), api: typeof h.setExpression };
   });
   check('Figur ≈ 6 Kopfhöhen (Teen-Proportion)', fig.heads >= 5.6 && fig.heads <= 7.2 && Math.abs(fig.total - fig.height) < 0.15, `${fig.heads.toFixed(2)} Köpfe (Kopf ${fig.headH.toFixed(2)} m, Höhe ${fig.total.toFixed(2)} m)`);
-  check('Ausdrucks-API (Brauen/Mund)', fig.api === 'function' && fig.e1.brows < -0.9 && fig.mouths.length === 3, JSON.stringify(fig.e1));
+  check('Ausdrucks-API (Brauen/Mund)', fig.api === 'function' && fig.e1.brows < -0.9 && ['neutral', 'smile', 'frown'].every((k) => fig.mouths.includes(k)), JSON.stringify(fig.e1));
 
   // ---- Farbkorrektur und Nacht ----
   const grade = await page.evaluate(() => {
