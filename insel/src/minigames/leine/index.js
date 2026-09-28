@@ -92,55 +92,103 @@ export default {
     }
 
     // ---- Zeichnen (Weltkoordinaten: Stegkante y = 0, Mitte zwischen euch x = 0) ----
-    function figure(c, x, { color, facing = 1, away = false, lookUp = false, lean = 0, stift = false, you = false }) {
+    // Stil wie die 3D-Insel: Abendlicht von vorn, ihr sitzt mit dem Rücken zur Kamera am Stegende (keine Kindergesichter),
+    // Farben aus dem echten Look (Spielfigur = eigener Avatar mit Rucksack, Partner = Figur-Look), Name klein davor.
+    const DEF_YOU = { skin: '#f0c09a', hair: '#4a2e1f', hairStyle: 'kurz', top: '#ff5d73', bottoms: '#2f4a7a', accessory: 'rucksack', accessoryColor: '#ffd166' };
+    let youLook = DEF_YOU, npcLook = { skin: '#d9b08c', hair: '#6b4a2f', hairStyle: 'lang', top: farbe, bottoms: '#2b3350' };
+    try { if (game.avatar && game.avatar.look) youLook = { ...DEF_YOU, ...game.avatar.look() }; } catch (_) { /* Standard-Look */ }
+    try { const d = partner && game.content && game.content.get('npcs', partner); if (d && d.look) npcLook = { ...npcLook, ...d.look, top: params.farbe || d.look.top }; } catch (_) { /* Standard-Look */ }
+    // Gegenlicht: Farben leicht abdunkeln und Richtung Abendviolett ziehen
+    const shade = (hex, k = 0.72) => { const n = parseInt(String(hex).replace('#', '').padEnd(6, '0').slice(0, 6), 16) || 0; const r = (n >> 16) & 255, g = (n >> 8) & 255, b = n & 255; return `rgb(${Math.round(r * k + 40 * (1 - k))},${Math.round(g * k + 22 * (1 - k))},${Math.round(b * k + 60 * (1 - k))})`; };
+    const RIM = 'rgba(255,190,120,0.85)';
+    function figure(c, x, { look, away = false, lookUp = false, lean = 0, toward = 0, stift = false, you = false, label = '' }) {
       c.save(); c.translate(x + lean, 0);
-      // Beine über der Kante
-      c.fillStyle = you ? '#5b4a8a' : '#4b4a58';
-      roundRect(c, -12, -6, 10, 36, 5); c.fill(); roundRect(c, 2, -6, 10, 36, 5); c.fill();
-      // Körper (Kapuzenpulli)
-      c.fillStyle = color;
-      roundRect(c, -18, -50, 36, 50, 14); c.fill();
-      // Kopf + Kapuze
-      const hy = lookUp ? -70 : -64;
-      c.fillStyle = you ? '#f2c79b' : '#d9b08c';
-      circle(c, 0, hy, 14); c.fill();
-      if (!you) { c.fillStyle = color; c.beginPath(); c.arc(away ? 4 : 0, hy - 2, 17, Math.PI * 0.95, Math.PI * 2.05); c.fill(); }
-      // Blickrichtung: Augen nur, wenn zugewandt
-      if (!away) { c.fillStyle = '#1d1330'; circle(c, facing * 5, hy + (lookUp ? -2 : 1), 2.2); c.fill(); circle(c, facing * 11, hy + (lookUp ? -2 : 1), 2); c.fill(); }
-      else { c.fillStyle = color; circle(c, 6, hy, 12); c.fill(); }
-      // Heft und Stift auf dem Schoß
-      if (stift) { c.fillStyle = '#f4ecd8'; roundRect(c, -14 * facing - 8, -26, 20, 14, 3); c.fill(); c.strokeStyle = '#ffd166'; c.lineWidth = 3; c.beginPath(); c.moveTo(-6 * facing, -30); c.lineTo(-16 * facing, -16); c.stroke(); }
+      const top = shade(look.top || '#888'), hair = shade(look.hair || '#333', 0.6), skin = shade(look.skin || '#d9b08c', 0.62);
+      // Sitzfläche (Hose auf dem Steg)
+      c.fillStyle = shade(look.bottoms || '#2b3350', 0.6); roundRect(c, -22, -8, 44, 12, 6); c.fill();
+      // Rücken im Kapuzenpulli: runde Schultern, nach unten etwas breiter
+      c.fillStyle = top;
+      c.beginPath(); c.moveTo(-24, -2); c.quadraticCurveTo(-26, -40, -17, -54); c.quadraticCurveTo(0, -62, 17, -54); c.quadraticCurveTo(26, -40, 24, -2); c.closePath(); c.fill();
+      // Gegenlicht-Kante an den Schultern
+      c.strokeStyle = RIM; c.lineWidth = 2; c.beginPath(); c.moveTo(-23, -30); c.quadraticCurveTo(-22, -50, -12, -57); c.moveTo(12, -57); c.quadraticCurveTo(22, -50, 23, -30); c.stroke();
+      // Kapuze hängt im Nacken (oder ist auf)
+      const hood = look.head === 'kapuze';
+      if (!hood) { c.fillStyle = shade(look.top || '#888', 0.6); roundRect(c, -12, -58, 24, 12, 6); c.fill(); }
+      // Rucksack der Spielfigur
+      if (you && look.accessory === 'rucksack') { c.fillStyle = shade(look.accessoryColor || '#ffd166', 0.8); roundRect(c, -13, -44, 26, 30, 7); c.fill(); c.fillStyle = 'rgba(0,0,0,0.18)'; roundRect(c, -9, -30, 18, 10, 4); c.fill(); }
+      // Kopf von hinten: Haar deckt fast alles, beim Abwenden/Zuwenden schaut ein Stück Wange hervor
+      const tilt = away ? 7 : toward ? -5 * toward : 0;
+      const hy = lookUp ? -76 : -70;
+      c.save(); c.translate(tilt, 0);
+      c.fillStyle = skin; circle(c, -13, hy + 2, 4); c.fill(); circle(c, 13, hy + 2, 4); c.fill();   // Ohren
+      if (away || toward) { c.fillStyle = skin; circle(c, away ? 7 : -7 * toward, hy + 3, 12); c.fill(); }
+      c.fillStyle = hood ? top : hair; circle(c, 0, hy, hood ? 16 : 14); c.fill();
+      if (!hood && look.hairStyle === 'lang') { roundRect(c, -14, hy, 28, 26, 10); c.fill(); }
+      if (!hood && look.hairStyle === 'dutt') { circle(c, 0, hy - 14, 6); c.fill(); }
+      c.strokeStyle = RIM; c.lineWidth = 2; c.beginPath(); c.arc(0, hy, hood ? 16 : 14, Math.PI * 1.15, Math.PI * 1.85); c.stroke();
+      c.restore();
+      // Heft und Stift neben der Hüfte
+      if (stift) { c.fillStyle = '#e8dcc0'; roundRect(c, 20, -14, 18, 12, 2); c.fill(); c.strokeStyle = '#ffd166'; c.lineWidth = 3; c.beginPath(); c.moveTo(26, -18); c.lineTo(36, -8); c.stroke(); }
+      // Name klein vor der Figur auf dem Steg (wer ist wer, ohne Kopfzeile lesen zu müssen)
+      if (label) {
+        c.font = '800 13px ' + FONT; const tw = c.measureText(label).width;
+        c.fillStyle = you ? 'rgba(255,209,102,0.95)' : 'rgba(255,255,255,0.85)'; roundRect(c, -tw / 2 - 8, 14, tw + 16, 20, 10); c.fill();
+        c.fillStyle = '#1d1330'; c.textAlign = 'center'; c.textBaseline = 'middle'; c.fillText(label, 0, 24.5);
+      }
       c.restore();
     }
+    const FONT = getComputedStyle(document.body).fontFamily;
+    // Ferne Schären-Silhouetten (fest, damit nichts flackert)
+    const RIDGE = [[-420, 0], [-360, -18], [-300, -8], [-250, -30], [-190, -12], [-150, -4], [150, -6], [200, -22], [260, -40], [300, -26], [360, -14], [420, 0]];
     function draw(c, w, h) {
       c.clearRect(0, 0, w, h);
-      const sky = c.createLinearGradient(0, 0, 0, h); sky.addColorStop(0, '#2a1d52'); sky.addColorStop(0.55, '#7a4a78'); sky.addColorStop(1, '#1b3550');
+      // Abendhimmel mit tief stehender Sonne
+      const sky = c.createLinearGradient(0, 0, 0, h); sky.addColorStop(0, '#1f1845'); sky.addColorStop(0.46, '#6a3f6e'); sky.addColorStop(0.66, '#e08a5c'); sky.addColorStop(0.68, '#2b4a66'); sky.addColorStop(1, '#10263a');
       c.fillStyle = sky; c.fillRect(0, 0, w, h);
       zoom += (zoomTarget - zoom) * 0.06;
+      const s = zoom * (w / 520);
       c.save();
-      c.translate(w / 2, h * 0.74);
-      c.scale(zoom * (w / 520), zoom * (w / 520));
-      // Wasser mit leichten Wellen
-      c.fillStyle = '#1e4a6a'; c.fillRect(-900, 8, 1800, 400);
-      c.strokeStyle = 'rgba(255,255,255,0.12)'; c.lineWidth = 2;
-      for (let k = 0; k < 5; k++) { c.beginPath(); for (let x = -420; x <= 420; x += 20) { const y = 40 + k * 26 + Math.sin(x * 0.03 + now * 1.4 + k) * 3; x === -420 ? c.moveTo(x, y) : c.lineTo(x, y); } c.stroke(); }
-      // Steg
-      c.fillStyle = '#8a5a2b'; c.fillRect(-900, -2, 1800, 14);
-      c.fillStyle = '#6b4320'; for (let x = -300; x <= 300; x += 90) c.fillRect(x, 12, 12, 60);
+      c.translate(w / 2, h * 0.68);
+      c.scale(s, s);
+      // Sonne am Horizont + Glanzbahn auf dem Wasser
+      const sun = c.createRadialGradient(0, -6, 2, 0, -6, 90); sun.addColorStop(0, 'rgba(255,214,150,0.95)'); sun.addColorStop(0.25, 'rgba(255,170,110,0.55)'); sun.addColorStop(1, 'rgba(255,140,90,0)');
+      c.fillStyle = sun; c.fillRect(-200, -120, 400, 140);
+      c.fillStyle = 'rgba(255,220,170,0.95)'; c.beginPath(); c.arc(0, 0, 18, Math.PI, 0); c.fill();
+      // Ferne Schären
+      c.fillStyle = '#3a2d52'; c.beginPath(); c.moveTo(RIDGE[0][0], 0); for (const [x, y] of RIDGE) c.lineTo(x, y); c.lineTo(420, 0); c.closePath(); c.fill();
+      // Wasser
+      c.fillStyle = '#1c3a55'; c.fillRect(-900, 0, 1800, 400);
+      for (let k = 0; k < 9; k++) {
+        const y = 4 + k * k * 1.6, wdt = 14 + k * 9;
+        c.fillStyle = `rgba(255,200,140,${0.5 - k * 0.045})`;
+        const off = Math.sin(now * 1.3 + k * 1.7) * 6;
+        c.fillRect(-wdt / 2 + off, y, wdt, 1.6 + k * 0.25);
+      }
+      c.strokeStyle = 'rgba(255,255,255,0.08)'; c.lineWidth = 1.5;
+      for (let k = 0; k < 4; k++) { c.beginPath(); for (let x = -420; x <= 420; x += 20) { const y = 12 + k * 18 + Math.sin(x * 0.03 + now * 1.4 + k) * 2; x === -420 ? c.moveTo(x, y) : c.lineTo(x, y); } c.stroke(); }
+      // Steg im Vordergrund (Planken laufen auf die Kamera zu)
+      c.fillStyle = '#3d2716'; c.beginPath(); c.moveTo(-190, 2); c.lineTo(190, 2); c.lineTo(420, 200); c.lineTo(-420, 200); c.closePath(); c.fill();
+      c.strokeStyle = 'rgba(0,0,0,0.35)'; c.lineWidth = 2;
+      for (let i = -5; i <= 5; i++) { c.beginPath(); c.moveTo(i * 38, 2); c.lineTo(i * 84, 200); c.stroke(); }
+      c.strokeStyle = 'rgba(255,190,120,0.35)'; c.beginPath(); c.moveTo(-190, 2.5); c.lineTo(190, 2.5); c.stroke();
+      // Poller mit Laterne rechts vorn (warmes Licht, wie am echten Steg)
+      c.fillStyle = '#2a1a0e'; roundRect(c, 196, -30, 16, 70, 4); c.fill();
+      const lg = c.createRadialGradient(204, -40, 1, 204, -40, 34); lg.addColorStop(0, 'rgba(255,209,102,0.9)'); lg.addColorStop(1, 'rgba(255,209,102,0)');
+      c.fillStyle = lg; c.fillRect(160, -80, 90, 80); c.fillStyle = '#ffd166'; roundRect(c, 198, -48, 12, 14, 3); c.fill();
       // Figur-Lage aus dem aktuellen Stück
       const since = now - segT;
       const away = segKind === 'ab' || (bubble && bubble.text === 'Egal.' && now < bubble.until);
       const lean = away ? 22 : segKind === 'nah' ? -8 * Math.min(1, since * 3) : 0;
       const lookUp = geste && geste.name === 'schaut' && now - geste.t < 1.6;
       const px = -62, jx = 62 - closer;
-      figure(c, px, { color: '#ffd166', facing: 1, you: true });
-      figure(c, jx, { color: farbe, facing: -1, away, lookUp, lean, stift: !stiftWeg });
-      if (stiftWeg) { c.strokeStyle = '#ffd166'; c.lineWidth = 3; c.beginPath(); c.moveTo(jx + 26, -3); c.lineTo(jx + 42, -3); c.stroke(); c.fillStyle = '#f4ecd8'; roundRect(c, jx + 30, -9, 18, 6, 2); c.fill(); }
+      figure(c, px, { look: youLook, you: true, label: 'Du' });
+      figure(c, jx, { look: npcLook, away, lookUp, lean, toward: segKind === 'nah' ? 1 : 0, stift: !stiftWeg, label: name });
+      if (stiftWeg) { c.strokeStyle = '#ffd166'; c.lineWidth = 3; c.beginPath(); c.moveTo(jx + 30, 6); c.lineTo(jx + 46, 6); c.stroke(); c.fillStyle = '#e8dcc0'; roundRect(c, jx + 34, 0, 18, 6, 2); c.fill(); }
       // Die Leine: Spannung sichtbar (straff/locker), Zucken bei Test-Sätzen, Zittern beim Festhalten gegen das Abwenden
       const T = L.tension, strain = L.strain;
       const twitch = segKind === 'test' && since < 0.6 ? Math.sin(now * 55) * 7 * (1 - since / 0.6) : 0;
       const shake = strain ? Math.sin(now * 70) * 2.5 * T : 0;
-      const ax = px + 16, ay = -24, bx = jx + lean - 16, by = -24;
+      const ax = px + 22, ay = -14, bx = jx + lean - 22, by = -14;
       const sag = (1 - T) * 46 + 4;
       c.strokeStyle = strain && T > 0.8 ? '#ff8c6b' : L.held ? '#ffd166' : 'rgba(255,255,255,0.8)';
       c.lineWidth = L.held ? 5 : 3.5;
@@ -151,14 +199,14 @@ export default {
       c.restore();
       // Sprechblase der Figur (Bildschirm-Koordinaten, gut lesbar)
       if (bubble && now < bubble.until) {
-        const font = '800 22px ' + getComputedStyle(document.body).fontFamily;
+        const font = '800 22px ' + FONT;
         c.font = font; const tw = c.measureText(bubble.text).width;
         const bw = tw + 36, bh = 48, bx0 = Math.min(w - bw - 12, Math.max(12, w * 0.62 - bw / 2)), by0 = 14;
         c.fillStyle = 'rgba(255,255,255,0.95)'; roundRect(c, bx0, by0, bw, bh, 18); c.fill();
         c.beginPath(); c.moveTo(bx0 + bw * 0.5 - 8, by0 + bh); c.lineTo(bx0 + bw * 0.5 + 6, by0 + bh + 14); c.lineTo(bx0 + bw * 0.5 + 10, by0 + bh); c.fill();
         c.fillStyle = '#1d1330'; c.textAlign = 'left'; c.textBaseline = 'middle'; c.fillText(bubble.text, bx0 + 18, by0 + bh / 2 + 1);
       }
-      if (now < plan.waves[0].t0 - 0.2 && !(bubble && now < bubble.until)) { c.fillStyle = 'rgba(255,255,255,0.9)'; c.font = '900 22px ' + getComputedStyle(document.body).fontFamily; c.textAlign = 'center'; c.fillText('Halten = bleiben', w / 2, 34); }
+      if (now < plan.waves[0].t0 - 0.2 && !(bubble && now < bubble.until)) { c.fillStyle = 'rgba(255,255,255,0.9)'; c.font = '900 22px ' + FONT; c.textAlign = 'center'; c.fillText('Halten = bleiben', w / 2, 34); }
     }
 
     const inst = {

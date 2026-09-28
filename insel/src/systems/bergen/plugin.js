@@ -70,6 +70,7 @@ export default {
       return nearestFund(list, got(), boatXZ(), t, drifts, { fogOpen: fo });
     }
 
+    let fundToast = null;   // { el, sum, until } des letzten Fund-Toasts
     function collect(id, { silent = false } = {}) {
       const f = funde.find((x) => x.id === id);
       if (!f || got().includes(id)) return false;
@@ -80,8 +81,12 @@ export default {
         const p = kp.boat;
         audio.play('pickup');
         particles.emit({ x: p.x, y: p.y + 1.2, z: p.z, count: 22, spread: 0.6, up: 2.2, speed: 2, color: '#ffd166', size: 0.15, life: 1, gravity: -1.5, drag: 1.4, additive: true });
-        const txt = Object.entries(f.material).map(([k, v]) => `+${v} ${matName[k] || k}`).join('  ');
-        if (ui.toast) ui.toast(txt, 2200);
+        // Mehrere Funde kurz hintereinander: EIN Sammel-Toast statt gestapelter Banner (ruhiger, nichts wirkt „falsch“)
+        const nowMs = Date.now();
+        const sum = fundToast && fundToast.el && fundToast.el.isConnected && nowMs < fundToast.until ? addMaterials(fundToast.sum, f.material) : { ...f.material };
+        if (fundToast && fundToast.el) fundToast.el.remove();
+        const txt = Object.entries(sum).filter(([, v]) => v > 0).map(([k, v]) => `+${v} ${matName[k] || k}`).join('  ');
+        fundToast = { sum, until: nowMs + 2000, el: ui.toast ? ui.toast(txt, 2200) : null };
         if (f.kind === 'klippe') world.schaeren.gullUp(f.x, f.z);
       }
       events.emit('bergen:fund', { id, material: { ...f.material } });

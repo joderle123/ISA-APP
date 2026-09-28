@@ -23,7 +23,7 @@
     "test:quests": "node tests/scenarios/quests.mjs",
     "test:minispiele": "node tests/scenarios/minispiele.mjs",
     "test:baumhaus": "node tests/scenarios/baumhaus.mjs",
-    "test:kraefte": "node tests/scenarios/kraefte.mjs && node tests/scenarios/kostprobe.mjs",
+    "test:kraefte": "node tests/scenarios/kraefte.mjs",
     "test:demo": "node tests/scenarios/demo.mjs",
     "test:kostprobe": "node tests/scenarios/kostprobe.mjs"
   },

@@ -60,7 +60,7 @@ Dazu am Ende eine kleine Wahl bei Mika: Wer ihm recht gibt, bekommt ein Angebot 
 aufgegriffen). Wer zurückfragt „Und wem hilft Schweigen?“, hört ein einziges Wort: „… Mir.“
 </details>
 
-## Kostprobe Teil 1: „Die Kielpost fährt“ (nach OTTER)
+## Kostprobe: Die Kielpost fährt (nach OTTER oder mit HERZGLAS-99)
 Nach dem Demo-Ende (m0-finale) haben Jolie und Tun die alte **Kielpost** aus der Hafengrotte gehoben. Sie liegt am
 **Steg** (Westseite). Mit dem Code HERZGLAS-99 ist sie zum Ausprobieren sofort da.
 1. Am Steg **Einsteigen**. Beim ersten Mal erwischt dich Ilda („Eine Fahrt. Ohne Mist.“) und gibt dir ihre alte
@@ -77,7 +77,26 @@ Nach dem Demo-Ende (m0-finale) haben Jolie und Tun die alte **Kielpost** aus der
 - **Zurück:** am Steg langsam werden → „Aussteigen“, oder jederzeit Pause → „Zurück zum Steg“.
 - **Zuklappen ist sicher:** Gespeichert wird bei jedem Fund, Bau und Anlegen. Wer auf dem Wasser zuklappt, steht beim
   nächsten Start am Steg; alle Funde bleiben.
-- Noch nicht drin (nächste Runde): Nest, Mission QUELLE, Spiegel-Station, Bootsfarbe und -name, zweiter Anleger.
+- **Steuerung auf dem Boot:** Joystick (PC: WASD) = fahren · Springen halten (Leertaste) = Segel dicht ·
+  Aktion halten (E) = Haken auswerfen · Pause → „Zurück zum Steg“.
+- **Zum Ausprobieren:** einmal absichtlich gegen die Möwenklippe fahren (sanfter Stoß, Möwe fliegt auf) · erst ohne
+  Laterne an die Nebelwand, dann mit · auf dem Wasser zuklappen und neu laden (man steht am Steg, alles ist noch da).
+
+### Die zwei Gesprächs-Minispiele
+Beide starten aus einem Gespräch heraus (keine Texteingabe). Nichts geht kaputt: Klappt es nicht, sagt Glimm nur
+„Später.“, und man darf sofort wieder. Nach zwei Versuchen bietet Glimm „Anders probieren?“ an (Kurzfassung, gleiche
+Belohnung). X beendet jederzeit ohne Verlust.
+- **„Leine halten“ mit Jolie** (Code BOJE, nach dem Kodex am Feuer: Jolie sitzt grau am Steg → „Dazusetzen“).
+  Ihr sitzt am Stegende, zwischen euch eine Leine. Knopf halten = bleiben. Dreht Jolie sich weg: kurz loslassen.
+  Kurze Sätze wie „Egal.“ sind ein Test – weiter halten. „Was sagen“ ist die Falle: Jolie sagt nur „Egal.“.
+- **„Unter der Oberfläche“ mit Tun** (Code DELFIN, Ziel-Zeile „Tun am alten Festplakat“ folgen → „Genau hinsehen“).
+  Tun macht Witze. Unter dem Satz treibt eine Farbe: tippen, wenn sie im Kreis ist. Ist sie klar, das passende
+  Gefühlswort aus drei wählen. Unter dem „Haha“ liegt traurig.
+- Gesprächsthema danach: Wie merkt man, dass jemand Ruhe braucht? Was steckt manchmal hinter einem Witz?
+
+### Noch nicht drin (nächste Runde)
+Mission QUELLE, das Nest (Innenraum), die Spiegel-Station, Bootsfarbe und -name, der zweite Anleger (Bootshaus).
+Die 30-Sekunden-Pause vor einem neuen Versuch ist noch nicht eingebaut (man darf sofort wieder).
 - Test: `flock /tmp/lumo-chrome.lock node tests/scenarios/kostprobe.mjs` · Unit-Tests `tests/unit/bergen.test.mjs`, `werft.test.mjs`.
 
 ## Die Codes

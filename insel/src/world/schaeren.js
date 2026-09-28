@@ -144,6 +144,15 @@ export function createSchaeren({ scene, veil, particles, audio, quality, gullSou
     if (audio) audio.play('moewe');
   }
 
+  // ---- Lebenszeichen auf der Anfahrt: ein paar Möwen kreisen über der offenen See (feste Kreise, kein Zufall) ----
+  const kreiser = [];
+  if (gullSource) for (const [cx, cz, r, hgt, sp] of [[22, 162, 7, 7, 0.45], [-22, 206, 9, 9, -0.35], [46, 214, 6, 6.5, 0.5], [88, 160, 8, 8, -0.4]]) {
+    const m = new THREE.Mesh(gullSource.geometry, gullSource.material);
+    m.scale.setScalar(0.7);
+    group.add(m);
+    kreiser.push({ m, cx, cz, r, hgt, sp });
+  }
+
   scene.add(group);
   const api = {
     group, SCHAEREN, ledge: LEDGE,
@@ -172,6 +181,11 @@ export function createSchaeren({ scene, veil, particles, audio, quality, gullSou
         for (const m of fogMats) m.opacity = m.userData.base * k;
         fog.scale.set(1 + (1 - k) * 0.35, 1 - (1 - k) * 0.5, 1 + (1 - k) * 0.35);
         if (k <= 0) { fogActive = false; fog.visible = false; }
+      }
+      for (const g of kreiser) {
+        const a = t * g.sp;
+        g.m.position.set(g.cx + Math.sin(a) * g.r, g.hgt + Math.sin(t * 0.7 + g.cx) * 0.6, g.cz + Math.cos(a) * g.r);
+        g.m.rotation.set(0, a + (g.sp > 0 ? Math.PI / 2 : -Math.PI / 2), (g.sp > 0 ? -0.35 : 0.35));
       }
       for (const f of flyers) {
         if (!f.on) continue;
