@@ -12,6 +12,13 @@ export default {
   ],
   emotion: { base: { primary: ['freude', 6], secondary: ['ueberraschung', 3], inner: ['trauer', 3] } },
   tanks: { koerper: 65, sicherheit: 60, zugehoerigkeit: 50, anerkennung: 30, selbstbestimmung: 55, spass: 80 },
+  // Gläser (Blick-Stufe „Gläser“, QUELLE): Höhe = wie wichtig (0–1), Füllung = wie voll (Startwert, 0–1). Namen: content/beduerfnisse.js
+  glaeser: {
+    form: 'dose',
+    folge: { id: 'winde', icon: 'seil', glimm: 'Die Winde klemmt.' },
+    wichtig: { dazugehoeren: 0.55, ruhe: 0.4, anerkennung: 1, bewegung: 0.45, schlaf: 0.3, mitbestimmen: 0.4 },
+    voll: { dazugehoeren: 0.25, ruhe: 0.75, anerkennung: 0.15, bewegung: 0.85, schlaf: 0.2, mitbestimmen: 0.7 },
+  },
   boundary: { byBond: [1.6, 1.3, 1.0, 0.8], mood: { wut: 1.3 } },
   streitStil: { default: 'fuchs', vs: { ilda: 'teddy', mika: 'schildkroete' } },
   temperament: 'flut',

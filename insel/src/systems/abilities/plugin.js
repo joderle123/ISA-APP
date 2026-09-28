@@ -1,7 +1,7 @@
 // Kräfte-Plugin (WP35, DESIGN §5): verbindet Blick, Mut und Teamgeist mit dem Kraft-Rad (kraft:tap) und dem Tagebuch
 // (Seite „Kräfte“: Stufen je Kraft, die 36 Blick-Wörter, Stopp-Bestwert, Crew). Ruhe läuft über den Koffer (WP33).
 //   game.abilities = game.plugins.abilities → { blick, mut, teamgeist, stages(), use(id), info(), page }
-//   Debug: LUMO.debug.blick() · stopp(target?) · stoppRelease() · stoppAuto() · crewRuf(helper?) · klarklang(npc) ·
+//   Debug: LUMO.debug.blick() · blickGlaeser(npc|null) · blickHalten(npc) · blickGlas() · stopp(target?) · stoppRelease() · stoppAuto() · crewRuf(helper?) · klarklang(npc) ·
 //     nein(npc) · zuschauer(vs) · zweitesNein(vs) · abilities()
 import { createBlick } from './blick.js';
 import { createMut } from './mut.js';
@@ -22,7 +22,7 @@ const CSS = `
 .kr-word.is-on{opacity:1;background:rgba(255,255,255,.14);box-shadow:0 0 0 1px var(--wc,#7ff0ff)}
 `;
 const POWERS = [
-  { id: 'blick', label: 'Blick', icon: 'blick', color: '#7ff0ff', stages: ['auren', 'faeden', 'tanks', 'koerper', 'doppel', 'grenzen', 'streittiere', 'masken'], labels: { auren: 'Auren', faeden: 'Fäden', tanks: 'Tanks', koerper: 'Körper', doppel: 'Doppel', grenzen: 'Grenzen', streittiere: 'Streit-Tiere', masken: 'Masken' } },
+  { id: 'blick', label: 'Blick', icon: 'blick', color: '#7ff0ff', stages: ['auren', 'faeden', 'tanks', 'koerper', 'doppel', 'grenzen', 'streittiere', 'masken'], labels: { auren: 'Auren', faeden: 'Fäden', tanks: 'Gläser', koerper: 'Körper', doppel: 'Doppel', grenzen: 'Grenzen', streittiere: 'Streit-Tiere', masken: 'Masken' } },
   { id: 'teamgeist', label: 'Teamgeist', icon: 'team', color: '#ffd166', stages: ['ruf', 'hilfe', 'zweitesNein', 'zuschauer'], labels: { ruf: 'Crew-Ruf', hilfe: 'Hilfe holen', zweitesNein: 'Zweites Nein', zuschauer: 'Zuschauer' } },
   { id: 'ruhe', label: 'Ruhe', icon: 'ruhe', color: '#9fe8b0', stages: ['puls', 'koerper', 'sinne', 'kopf', 'ampel', 'rucksack'], labels: { puls: 'Puls', koerper: 'Körper', sinne: 'Sinne', kopf: 'Kopf', ampel: 'Ampel', rucksack: 'Rucksack' } },
   { id: 'mut', label: 'Mut', icon: 'mut', color: '#ff8c8c', stages: ['zeichen', 'klarklang', 'stopp', 'nein', 'leiter'], labels: { zeichen: 'Zeichen', klarklang: 'Klarklang', stopp: 'Stopp', nein: 'Nein', leiter: 'Leiter' } },
@@ -86,6 +86,10 @@ export default {
     D.zuschauer = (vs) => teamgeist.zuschauer(vs);
     D.zweitesNein = (vs) => teamgeist.zweitesNein(vs);
     D.abilities = () => api.info();
+    // Blick-Stufe „Gläser“ (QUELLE): Gefäße sofort zeigen / Hinschauen starten / Zustand
+    D.blickGlaeser = (npc) => (npc ? blick.glaeser.show(npc) : blick.glaeser.hide());
+    D.blickHalten = (npc) => blick.glaeser.focus(npc);
+    D.blickGlas = () => blick.glaeser.current;
     return api;
   },
 };

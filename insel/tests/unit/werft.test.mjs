@@ -10,7 +10,7 @@ import { fundorte, sumMaterials, MATERIALS } from '../../src/systems/bergen/mode
 import { checkBuild, payFor, totalCost, affords } from '../../src/systems/werft/model.js';
 
 const L = fundorte(FUNDE);
-const T = TEILE.teile;
+const T = TEILE.teile.filter((t) => !t.mission);   // die drei Boots-Teile; der Blitz-Motor (QUELLE) ist ein Missions-Teil
 const ids = L.map((f) => f.id);
 const combos = (arr, k) => (k === 0 ? [[]] : arr.flatMap((x, i) => combos(arr.slice(i + 1), k - 1).map((c) => [x, ...c])));
 
@@ -48,4 +48,15 @@ test('Bauen: Laterne braucht Ildas Plan, fehlendes Material wird genannt, bezahl
   let m = all;
   for (const t of T) { assert.ok(checkBuild(t, m, { plans: ['laterne'] }).ok, t.id); m = payFor(t, m); }
   for (const k of MATERIALS) assert.ok(m[k] >= 0);
+});
+
+test('Blitz-Motor (QUELLE): versteckt, braucht Tuns Plan, geht nach allen drei Teilen mit allen 10 Funden', () => {
+  const bm = TEILE.teile.find((t) => t.id === 'blitzmotor');
+  assert.ok(bm && bm.versteckt && bm.mission && bm.plan === 'blitzmotor');
+  let m = sumMaterials(L);
+  for (const t of T) m = payFor(t, m);
+  assert.equal(checkBuild(bm, m, { plans: ['laterne'] }).ok, false);
+  assert.equal(checkBuild(bm, m, { plans: ['laterne', 'blitzmotor'] }).ok, true);
+  const rest = Object.values(bm.kosten).reduce((a, b) => a + b, 0);
+  assert.ok(rest >= 5, 'viel Material');
 });

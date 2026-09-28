@@ -21,6 +21,9 @@ export const UNIT_STATES = ['gesperrt', 'kurz', 'offen', 'aktiv', 'fertig'];
 
 export const EMOTIONS = ['freude', 'wut', 'angst', 'trauer', 'ekel', 'ueberraschung'];
 export const TANKS = ['koerper', 'sicherheit', 'zugehoerigkeit', 'anerkennung', 'selbstbestimmung', 'spass'];
+// Die sechs Bedürfnis-Gläser aus dem Kurs (j1-e04); Namen und Farben stehen in content/beduerfnisse.js
+export const BEDUERFNISSE = ['dazugehoeren', 'ruhe', 'anerkennung', 'bewegung', 'schlaf', 'mitbestimmen'];
+export const GLAS_FORMEN = ['dose', 'tintenfass', 'laternenglas', 'glas'];
 export const STREIT_STILE = ['hai', 'schildkroete', 'teddy', 'fuchs', 'eule'];
 export const AMPEL_ZONEN = ['gruen', 'gelb', 'rot'];
 export const MODES = ['entspannt', 'abenteuer', 'profi'];
@@ -40,7 +43,7 @@ export const VEIL_ZONES = ['hafen', 'strand', 'dschungel', 'klippen', 'moor', 'm
 export const REGION_IDS = [...VEIL_ZONES, 'glimmer', 'quellen'];
 export const SEASONS = ['spaetsommer', 'herbst', 'winter', 'tauwetter', 'fruehling', 'sommer', 'sommernacht'];
 
-export const QUEST_TEMPLATES = ['wegTor', 'tragen', 'szene', 'ermitteln', 'treppe', 'befreunden', 'lotsen', 'boss', 'bauen', 'pruefung', 'nachtwache', 'erinnerung'];
+export const QUEST_TEMPLATES = ['wegTor', 'tragen', 'szene', 'ermitteln', 'treppe', 'befreunden', 'lotsen', 'boss', 'bauen', 'pruefung', 'nachtwache', 'erinnerung', 'auftrag'];
 export const BEFREUNDEN_RULES = ['nicht-rennen', 'linie-achten', 'still-sitzen', 'fangen', 'frisch-fuettern', 'stillstehen-umsehen'];
 export const BOSS_WINS = ['hilfe-holen', 'zuschauer', 'lauschen', 'fakten'];
 export const ERMITTELN_BOARDS = ['gericht', 'chronik', 'repost'];
@@ -69,4 +72,4 @@ export const FORBIDDEN_WORDS = [
   '5-4-3-2-1', '5 4 3 2 1', '54321', 'gedankenschiffchen', 'traumreise', '4-7-8', '4 7 8',
 ];
 // Felder, die nur die Lehrkraft sieht (Lehrerheft): nicht auf Übungswörter geprüft
-export const TEACHER_FIELDS = ['debrief', 'kursziele'];
+export const TEACHER_FIELDS = ['debrief', 'kursziele', 'lehrerheft'];

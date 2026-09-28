@@ -22,7 +22,7 @@ export default {
     { id: 'j1-e01', nr: 1, module: 'j1-m0', title: 'Willkommen – unser Rahmen', quest: 'Landgang: Der Hafen-Kodex', region: 'hafen', code: 'BOJE', joker: false, stamp: null },
     { id: 'j1-e02', nr: 2, module: 'j1-m0', title: 'Kennenlernen in Bewegung', quest: 'Das Laternenfest', region: 'hafen', code: 'DELFIN', joker: false, stamp: null },
     { id: 'j1-e03', nr: 3, module: 'j1-m0', title: 'Wir als Team', quest: 'Die Brücke der Drei', region: 'hafen', code: 'OTTER', joker: false, stamp: 'Team-Start' },
-    { id: 'j1-e04', nr: 4, module: 'j1-m1', title: 'Das Glas der Bedürfnisse', quest: 'Die sechs Tanks von Muschelbucht', region: 'strand', code: 'QUELLE', joker: false, stamp: null },
+    { id: 'j1-e04', nr: 4, module: 'j1-m1', title: 'Das Glas der Bedürfnisse', quest: 'Leck im Nest', region: 'strand', code: 'QUELLE', joker: false, stamp: null },
     { id: 'j1-e05', nr: 5, module: 'j1-m1', title: 'Zwischen laut und leise', quest: 'Ebbe und Flut', region: 'strand', code: 'BRISE', joker: false, stamp: null },
     { id: 'j1-e06', nr: 6, module: 'j1-m1', title: 'Mein Baum der Stärke', quest: 'Die Wurzeln der alten Mangrove', region: 'strand', code: 'EICHE', joker: false, stamp: 'Stärken-Finder' },
     { id: 'j1-e07', nr: 7, module: 'j1-m2', title: 'Was sind Gefühle – und wozu sind sie gut?', quest: 'Die sechs Federn', region: 'dschungel', code: 'FUCHS', joker: false, stamp: null },

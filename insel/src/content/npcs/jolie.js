@@ -12,6 +12,13 @@ export default {
   ],
   emotion: { base: { primary: ['trauer', 4], secondary: ['angst', 2] } },
   tanks: { koerper: 70, sicherheit: 60, zugehoerigkeit: 15, anerkennung: 40, selbstbestimmung: 60, spass: 50 },
+  // Gläser (Blick-Stufe „Gläser“, QUELLE): Höhe = wie wichtig (0–1), Füllung = wie voll (Startwert, 0–1). Namen: content/beduerfnisse.js
+  glaeser: {
+    form: 'tintenfass',
+    folge: { id: 'karte', icon: 'karte', glimm: 'Die Karte bleibt leer.' },
+    wichtig: { dazugehoeren: 0.6, ruhe: 0.55, anerkennung: 0.35, bewegung: 0.3, schlaf: 0.45, mitbestimmen: 1 },
+    voll: { dazugehoeren: 0.4, ruhe: 0.7, anerkennung: 0.5, bewegung: 0.6, schlaf: 0.55, mitbestimmen: 0.1 },
+  },
   boundary: { byBond: [2.4, 1.8, 1.2, 0.9], mood: { angst: 1.3 } },
   streitStil: { default: 'schildkroete', vs: { tun: 'fuchs' } },
   temperament: 'ebbe',

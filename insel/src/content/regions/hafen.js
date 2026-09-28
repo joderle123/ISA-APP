@@ -2,7 +2,10 @@
 // dann 0,3 (e01), 0,15 (e02), 0 (e03). Orte für die drei Hafen-Quests und die Ankunft.
 export default {
   id: 'hafen', module: 'j1-m0', name: 'Hafen-Dorf',
-  veil: { zone: 'hafen', start: 0.55, steps: { 'j1-e01': 0.3, 'j1-e02': 0.15, 'j1-e03': 0 } },
+  // Fleck „nest“ (QUELLE j1-e04): der Strand ums Bootshaus. Start farbig (0); beim Leck wird er grau (Rückfall-Welle,
+  // Effekt relapse in quests/j1-e04.js), am Ende der Mission kommt die Farbwelle (freeAt).
+  veil: { zone: 'hafen', start: 0.55, steps: { 'j1-e01': 0.3, 'j1-e02': 0.15, 'j1-e03': 0 },
+    patches: [{ id: 'nest', x: -8, z: 137, r: 15, start: 0, freeAt: 'j1-e04' }] },
   palette: { key: '#ffb347', accent: '#2fb8a8', dyes: ['#ff7a59', '#ffd166', '#2fb8a8', '#4f88c8'] },
   season: 'spaetsommer',
   sites: {
@@ -16,6 +19,7 @@ export default {
     // Kostprobe „Die Kielpost fährt“ (systems/kielpost, bergen, werft): Liegeplatz am Steg, Werkbank, Schären im Meer
     kielpost: { x: 5.4, z: 145, r: 3 },       // Landepunkt auf dem Steg (Einsteigen/Aussteigen)
     werft: { x: 15.5, z: 131.5, r: 3 },       // Werkbank am Steg
+    nest: { x: -5.4, z: 131.4, r: 3 },        // QUELLE: neben dem Bootshaus (Tun, Jolie, Wasserwerk), nicht vor der Tür
     moewenklippe: { x: -50, z: 176, r: 8 },   // Felsinsel, ein Fund auf dem Vorsprung
     wrackbank: { x: 66, z: 186, r: 6 },       // Wrack hinter der Nebelwand
   },

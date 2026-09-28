@@ -1,7 +1,7 @@
 // Lehrer-Panel (WP30, DESIGN §10): nur nach dem Lehrer-Code erreichbar (state.session.teacher, Laufzeit). Seiten:
 // Codes (alle 39 Einheiten inkl. j08, Modul-, Demo-, Wetter- und Lehrer-Code, Ersatzcodes, Freischalten auf diesem Gerät),
 // Inselwetter (Ruhe, Fest, Frühling), Lines & Veils, Namen (Figuren, Glimm, Vögel), Farben des Gefühlsrads, eingelöste Codes
-// je Spielstand (nur Spielnamen und Codes, keine Personendaten).
+// je Spielstand (nur Spielnamen und Codes, keine Personendaten), Spiegel-Stationen an/aus (Standard aus, Gerät: device 'spiegel').
 //   game.plugins.teacher → { open(page?) → Handle|false, close(), isOpen, pages, refresh() }   Overlay .ov[data-overlay=lehrer]
 //   Hört auf teacher:open (Lehrer-Code) und teacher:close. Tagebuch-Seite 'lehrer' erscheint nur im Lehrer-Modus.
 //   Ereignisse: teacher:panel {open, page}
@@ -72,6 +72,7 @@ export default {
       { id: 'namen', label: 'Namen', icon: 'text' },
       { id: 'farben', label: 'Farben', icon: 'stil' },
       { id: 'eingeloest', label: 'Eingelöst', icon: 'haken' },
+      { id: 'spiegel', label: 'Spiegel', icon: 'glas' },
     ];
     const render = {
       codes(el) {
@@ -163,6 +164,17 @@ export default {
           input.addEventListener('change', apply);
         });
         el.querySelector('[data-colors-reset]').addEventListener('click', () => { if (audio) audio.play('tile'); T.colors.reset(); refresh(); });
+      },
+      // Spiegel-Stationen (QUELLE, privat): Standard AUS; erst nach der Datenschutz-Freigabe einschalten (KONZEPT §15 Punkt 9)
+      spiegel(el) {
+        const on = !!T.device.get('spiegel', false);
+        el.innerHTML = `
+          <p class="jn-lead">Freiwillige Station im Baumhaus: eigene Gläser einstellen. Bleibt auf dem Gerät.</p>
+          <div class="set-block">
+            <button type="button" class="row row-toggle${on ? ' is-on' : ''}" data-spiegel role="switch" aria-checked="${on}"><span class="row-icon">${icon('glas', { size: 26 })}</span><span class="row-text"><b>Spiegel-Stationen ${on ? 'an' : 'aus'}</b><small>Erst nach Datenschutz-Freigabe einschalten.</small></span><span class="switch" aria-hidden="true"><i></i></span></button>
+          </div>
+          <p class="jn-note">Aus: Die Station steht nicht im Baumhaus, nichts wird angelegt. An: Werte bleiben privat, nie im Export-Code, nie im Lehrerheft. Sie sehen nur, was eine Person Ihnen selbst zeigt.</p>`;
+        el.querySelector('[data-spiegel]').addEventListener('click', () => { if (audio) audio.play('tile'); T.device.set('spiegel', on ? null : true); emit('spiegel:schalter', { an: !on }); if (ui.toast) ui.toast(!on ? 'Spiegel-Stationen an' : 'Spiegel-Stationen aus'); refresh(); });
       },
       eingeloest(el) {
         const store = game.save.storage;

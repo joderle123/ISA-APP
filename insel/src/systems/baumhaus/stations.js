@@ -2,6 +2,7 @@
 // Trophäenwand, Tür zum Sicheren Ort, Möbel aus dem Raster, Tür und Schild auf dem Außenpodest.
 //   const S = createStationBuilders({ THREE, part, merge, M, rng });   (M = game.props.materials)
 //   S.bonsai(model) · S.glass(summary) · S.pinnwand(chain, tints) · S.trophies(list) · S.door({ open }) · S.furniture(def, item)
+//   S.spiegelRegal(colors) (QUELLE, nur wenn die Spiegel-Stationen an sind; zeigt nie Werte)
 //   S.deck() – jede Rückgabe: { group, update?(dt, t), dispose() }; Meshes heißen 'bh-<station>' (Tests zählen userData)
 const TAU = Math.PI * 2;
 const NEED_COLOR = { koerper: '#ff7a59', sicherheit: '#3d7bff', zugehoerigkeit: '#ffd23f', anerkennung: '#ff5d8f', selbstbestimmung: '#9b5cff', spass: '#2de2c9' };
@@ -185,6 +186,28 @@ export function createStationBuilders({ THREE, part, merge, M, rng = null }) {
     return done(g);
   }
 
+  // ---- Spiegel-Regal (QUELLE, privat): sechs LEERE Gläser mit Farbpunkten der Kurs-Bedürfnisse. Zeigt nie Werte
+  // (diskret im Klassenraum, KONZEPT §15 Punkt 5); es steht nur da, wenn die Lehrkraft die Spiegel-Stationen eingeschaltet hat.
+  function spiegelRegal(colors = []) {
+    const g = new THREE.Group(); g.name = 'bh-spiegelglaeser';
+    const base = [], dots = [];
+    base.push(part(new THREE.BoxGeometry(1.9, 1.5, 0.4), { pos: [0, 0.75, -0.02], color: '#7a5a3c', faceVar: 0.08 }));
+    for (const y of [0.78, 1.42]) base.push(part(new THREE.BoxGeometry(1.8, 0.06, 0.42), { pos: [0, y, 0.02], color: '#a87850' }));
+    const glass = [];
+    colors.slice(0, 6).forEach((c, i) => {
+      const x = -0.6 + (i % 3) * 0.6, y = i < 3 ? 1.45 : 0.81;
+      glass.push(part(new THREE.CylinderGeometry(0.15, 0.13, 0.36, 8, 1, true), { pos: [x, y + 0.2, 0.05], color: '#dff4ff' }));
+      base.push(part(new THREE.CylinderGeometry(0.16, 0.16, 0.04, 8, 1), { pos: [x, y + 0.4, 0.05], color: '#8a6a48' }));
+      dots.push({ geo: part(new THREE.CircleGeometry(0.06, 8), { pos: [x, y - 0.06, 0.24], color: c }), c });
+    });
+    g.add(mesh(base, M.base, 'bh-spiegelglaeser-holz'));
+    const gm = new THREE.Mesh(merge(glass), M.glass('#bfe8ff', { opacity: 0.3 })); gm.name = 'bh-spiegelglaeser-glas'; gm.castShadow = false; g.add(gm);
+    const byC = new Map(); for (const d of dots) { if (!byC.has(d.c)) byC.set(d.c, []); byC.get(d.c).push(d.geo); }
+    for (const [hex, geos] of byC) { const m = mesh(geos, M.glow(hex, { intensity: 0.5 }), 'bh-spiegelglaeser-punkt'); m.castShadow = false; g.add(m); }
+    g.userData = { glaeser: colors.length };
+    return done(g);
+  }
+
   // ---- Außenpodest: Tür in den Stamm, Papierlaterne, Schild mit Bonsai-Symbol ----
   function deck() {
     const g = new THREE.Group(); g.name = 'bh-podest';
@@ -203,5 +226,5 @@ export function createStationBuilders({ THREE, part, merge, M, rng = null }) {
     return done(g);
   }
 
-  return { bonsai, glass, pinnwand, trophies, door, furniture, deck, NEED_COLOR, TIER_COLOR };
+  return { bonsai, glass, pinnwand, trophies, door, furniture, deck, spiegelRegal, NEED_COLOR, TIER_COLOR };
 }

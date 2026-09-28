@@ -36,6 +36,12 @@ export const LIGHT_PRESETS = {
     points: [{ color: '#b48cff', intensity: 64, distance: 22, at: [0, 0.5, 0] }],
     grade: { sat: 0.95, contrast: 1.04 },
   },
+  // Bootshaus „Nest“ (Kostprobe, systems/nest): warme Werkstattlampe, kühles Wasserlicht von der Luke
+  bootshaus: {
+    fog: ['#2a2230', 10, 60], clear: '#211a24', hemi: ['#fff0d8', '#3a4a5a', 1.45], sun: 0,
+    points: [{ color: '#ffe6bc', intensity: 110, distance: 24, at: [0.1, 0.78, -0.1] }, { color: '#6fd8ff', intensity: 30, distance: 12, at: [-0.45, 0.2, 0.55] }, { color: '#ffb070', intensity: 40, distance: 12, at: [0.6, 0.6, -0.7] }],
+    grade: { sat: 0.96, contrast: 1.04 },
+  },
   kerzen: {
     fog: ['#1e140c', 6, 44], clear: '#170f08', hemi: ['#ffc890', '#2a1a10', 0.9], sun: 0,
     points: [{ color: '#ffb860', intensity: 83, distance: 18, at: [0, 0.3, 0] }, { color: '#ff9a50', intensity: 38, distance: 12, at: [-0.6, 0.25, 0.6] }],

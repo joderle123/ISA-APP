@@ -66,6 +66,7 @@ export const SITES = {
   haus3: { x: 34, z: 120, r: 5, zone: 'hafen' },
   hafengrotte: { x: -24, z: 124, r: 0, zone: 'hafen', interior: 'hafengrotte' },
   werft: { x: 15.5, z: 131.5, r: 0, zone: 'hafen' },            // Werkbank der Kielpost (systems/werft)
+  bootshaus: { x: -9.6, z: 133.4, r: 0, zone: 'hafen', interior: 'nest' },   // vor der Landtür des Bootshauses (systems/nest, Innenraum „Nest“)
   moewenklippe: { x: -50, z: 176, r: 0, zone: 'hafen' },         // Schären: Felsinsel mit Vorsprung (world/schaeren.js)
   wrackbank: { x: 66, z: 186, r: 0, zone: 'hafen' },             // Schären: Wrack hinter der Nebelwand
   // M1 Strand

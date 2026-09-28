@@ -94,8 +94,57 @@ Belohnung). X beendet jederzeit ohne Verlust.
   Gefühlswort aus drei wählen. Unter dem „Haha“ liegt traurig.
 - Gesprächsthema danach: Wie merkt man, dass jemand Ruhe braucht? Was steckt manchmal hinter einem Witz?
 
+### Das Nest, der Blick (Gläser) und der Spiegel (Systeme für QUELLE)
+- **Nest:** das Bootshaus auf Pfählen am Strand westlich vom Steg, **zu Fuß** erreichbar (Tür „Nest“, nach OTTER).
+  Drinnen: Werkbank (öffnet die Werft), Wasserluke mit Tuns Winde, Kartentisch, Hängematte, zwei Bauplätze
+  (Fotowand, Dachboden-Ecke), die erst die Mission öffnet. Nest-Werte ändern sich nur durch Taten, nie durch Zeit.
+- **Blick-Stufe „Gläser“:** Kraft tippen zeigt zuerst nur die Folge (Tuns Winde klemmt, Jolies Karte bleibt leer).
+  Wer die Figur kurz weiter anschaut (Ring füllt sich) oder nochmal tippt, sieht ihre Gefäße: hoch = wichtig,
+  Füllung = voll, die größte Lücke leuchtet. Tun: Blechdosen, Jolie: Tintenfässer, Ilda: Laternengläser.
+- **Blitz-Motor** (an der Werft, erst mit Tuns Plan): füllt Tuns Glas sofort, bekommt einen Riss und tropft bis zur
+  **nächsten Sitzung** (nächstes Öffnen des Spiels). Der Motor bleibt als Deko im Nest.
+- **Spiegel im Baumhaus:** freiwillig, privat, **standardmäßig aus**. Lehrer-Panel → Seite „Spiegel“ → „Spiegel-Stationen“
+  (erst nach der Datenschutz-Freigabe einschalten). Sechs Gläser mit den Kurs-Namen, „Nicht merken“ ist voreingestellt,
+  „Zeigen“ öffnet eine Vollbild-Karte nur mit dem Ausgewählten, „Ausblenden“ macht sie weg. Nichts wird gesendet.
+- Test: `flock /tmp/lumo-chrome.lock node tests/scenarios/nest.mjs` · Unit-Tests `tests/unit/nest.test.mjs`, `spiegel.test.mjs`.
+
+### Mission QUELLE „Leck im Nest“ (Code QUELLE, nach OTTER oder nach HERZGLAS-99, ≈ 12–15 min)
+Kurs-Einheit j1-e04 „Das Glas der Bedürfnisse“. Der Satz dazu steht **nur** auf der Rückseite des Aufnähers
+(„Wichtig und leer = größte Lücke.“) – im Spiel sagt ihn niemand, man findet ihn beim Spielen heraus.
+1. **Wasser im Nest** (Ziel-Zeile zeigt zur Tür „Nest“; der Strand ums Nest ist grau): drinnen zwei Planken von der
+   Werkbank zum Leck tragen (hingehen liefert ab), dann die treibende Kiste mit dem **Haken** holen – Aktion **halten**,
+   zu früh loslassen heißt nur: sie treibt weiter. Treibgut: 2 Metall, 2 Holz, 1 Tau. Unter der losen Diele liegt
+   **Logbuchseite 2**: „Jhemp hat drei Nächte nicht geschlafen.“ Drinnen zeigt ein schwebender Kristall das nächste Ziel.
+2. **Ilda am Steg** hält zwei Laternengläser hoch (Bild über der Szene): „Welches fehlt mehr?“ Jede Antwort ist okay.
+   Danach hat der Blick die Stufe **Gläser**.
+3. **Tun neben dem Nest**: „Lasst mich alle in Ruhe!“ Beim Witz „Kapitän Titanic“ → „Genau hinsehen“ = **Unter der
+   Oberfläche**, das feine Wort ist **gekränkt**. Danach stehen seine Blechdosen über ihm.
+4. **Spuren im Nest**: Hängematte (Dose Schlaf, klein), Winde (Anerkennung, hoch), Crew-Liste an der Tür (Dazugehören).
+   Die Hängematte kann man **flicken** – das ist die Falle: Tun sagt „Danke. Trotzdem.“ und bleibt grau.
+5. **Blitz-Motor**: Tun gibt dir den Plan. An der Werkbank darf man ihn bauen (Treibgut reicht). Sein Glas schießt
+   hoch, bekommt einen Riss und läuft bis zum nächsten Öffnen des Spiels aus. Keine Strafe, der Motor bleibt als Deko.
+6. **Vor der Crew reden**: „Du brauchst mehr Schlaf“ oder „Tun gehört zur Crew“ sind nicht falsch, bringen aber nichts
+   Neues. Erst „Tun hat die Winde repariert. Heimlich.“ öffnet den Bauplatz **Fotowand**.
+7. **Fotowand bauen** (Nest, „Bauen“) und „Bild aufhängen“: Tun bekommt Farbe, am Nest kommt ein Stück Farbe zurück.
+8. **Das Wasserwerk** (Minispiel Tank-Leitungen): nie alle Tanks gleichzeitig voll.
+9. **Jolie hinter dem Nest**: „Dableiben“ = **Leine halten** (sie testet: „Was willst du?“, „Geh doch.“). Dann: „Keiner
+   fragt mich was. Nie.“ Den Umzug kann man nicht ändern – aber eine eigene Ecke anbieten.
+10. **Jolies Ecke bauen** (Dachboden) und am Kartentisch „Route wählen“: „Ich wähle.“ → „Klar. Wie immer.“ (nichts
+    ändert sich), „Jolie wählt.“ → Marker auf der Karte, ihr Glas steigt ein Stück (nicht voll).
+11. **Crew-Glas am Feuer**: Jede Figur wirft eine Muschel ohne Namen ins Glas, du auch (oder keine) – deine Wahl wird
+    nirgends gespeichert. Dann Abstimmung über den nächsten Raum (nur die Wahl wird gemerkt, gebaut wird später).
+    Aufnäher „Bedürfnis-Pegel“, Lichtsplitter, Farbwelle ums Nest.
+- **Kurzfassung (3 min)**: Blick (Gläser) bei Ilda + Crew-Glas → Blick-Stufe und Aufnäher (Tagebuch → „Kurz spielen“).
+- **Zuklappen ist sicher**: Es geht am zuletzt fertigen Schritt weiter; halbe Arbeit im Nest (z. B. eine Planke) bleibt.
+- **Spiegel im Baumhaus**: Ist er im Lehrer-Panel eingeschaltet, kann man danach freiwillig die eigenen Gläser ansehen.
+- **Echte-Welt-Karte:** „Welches Glas füllen bei dir Leute, nicht Dinge?“ · **Debrief:** „Warum hat die Hängematte Tun
+  nicht geholfen?“ · „Was wollte Tun, und was hat er gebraucht?“ Im Lehrerheft: Wortliste der Spielbegriffe mit Bild.
+  Eine eingelöste Quest heißt nicht, dass das Thema behandelt ist.
+- Test: `flock /tmp/lumo-chrome.lock node tests/scenarios/kostprobe2.mjs` · Unit-Tests `tests/unit/quelle.test.mjs`.
+
 ### Noch nicht drin (nächste Runde)
-Mission QUELLE, das Nest (Innenraum), die Spiegel-Station, Bootsfarbe und -name, der zweite Anleger (Bootshaus).
+Bootsfarbe und -name, der zweite Anleger (Bootshaus, Kürzungsliste: zu Fuß). Der nächste Raum aus der Abstimmung wird
+noch nicht gebaut.
 Die 30-Sekunden-Pause vor einem neuen Versuch ist noch nicht eingebaut (man darf sofort wieder).
 - Test: `flock /tmp/lumo-chrome.lock node tests/scenarios/kostprobe.mjs` · Unit-Tests `tests/unit/bergen.test.mjs`, `werft.test.mjs`.
 
@@ -105,6 +154,7 @@ Die 30-Sekunden-Pause vor einem neuen Versuch ist noch nicht eingebaut (man darf
 | **BOJE** | j1-e01 Willkommen – unser Rahmen | Landgang: Der Hafen-Kodex | ≈ 5 min | Möwe klaut Ildas Schlüssel (Lauf über Steg, Kisten, Dächer = Bewegungs-Tutorial) · am Feuer mit Tun und Ilda Regeln aushandeln · die einzige graue Figur (Jolie) finden und sich einfach dazusetzen → Splitter 1 |
 | **DELFIN** | j1-e02 Kennenlernen in Bewegung | Das Laternenfest | ≈ 5 min | Tun fragen – erst „Und dann?“ verrät etwas Echtes, ein Faden zu Jolie erscheint · drei Funken vom Feuer zu den Laternen tragen (Rennen schwappt) · Komplimente für Taten lassen die Laterne steigen |
 | **OTTER** | j1-e03 Wir als Team | Die Brücke der Drei | ≈ 6 min | Brücke nur zu dritt · Jolie mit Symbolbefehlen durch die dunkle Hafengrotte lotsen (sie hat ein Stopp-Recht) · Rollentausch (freiwillig) · die Crew ergänzt den Kodex um eine Zeile → Crew-Ruf |
+| **QUELLE** | j1-e04 Das Glas der Bedürfnisse | Leck im Nest | ≈ 12–15 min | Leck stopfen · Blick (Gläser) · Tuns größte Lücke finden (Falle Hängematte, Blitz-Motor) · Fotowand · Wasserwerk · Jolie (Leine halten), Dachboden-Ecke, Route · Crew-Glas |
 | HERZGLAS-99 | Demo (Team) | – | – | alle übrigen Einheiten als Kurzfassung freischalten (nur zum Ausprobieren) |
 | LEUCHTFEUER-42 | Lehrer-Panel | – | – | Codeliste, Inselwetter, Lines & Veils, Figuren umbenennen, Gefühlsfarben |
 | KOMPASS-0 | Modul 0 | – | – | für Neue: alle drei Hafen-Einheiten als Kurzfassung |

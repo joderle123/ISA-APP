@@ -191,7 +191,7 @@ test('jede Vorlage hat einen Minimaltest', async () => {
     if (opts.after) opts.after(r, fails);
   });
   const tick = (r, n, dt = 1 / 30) => { for (let i = 0; i < n; i++) r.update(dt); };
-  assert.equal(TEMPLATES.length, 12);
+  assert.equal(TEMPLATES.length, 13);   // 12 aus DESIGN §16 + 'auftrag' (QUELLE)
   // wegTor
   {
     const p = run({ id: 'w', template: 'wegTor', params: { to: { site: 'kante' } } }, { after: (r) => { player.x = 0; player.z = 0; tick(r, 2); player.x = -104; player.z = -96; tick(r, 1); } });

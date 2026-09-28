@@ -1,5 +1,6 @@
 // Die 12 Schritt-Vorlagen der Quest-Engine (WP31, DESIGN §16): wegTor, tragen, szene, ermitteln, treppe, befreunden,
-// lotsen, boss, bauen, pruefung, nachtwache, erinnerung. Reine Logik: alles Welt-Spezifische läuft über den Adapter ctx
+// lotsen, boss, bauen, pruefung, nachtwache, erinnerung – dazu 'auftrag' (QUELLE): ein System/Missions-Plugin führt den
+// Schritt selbst (z. B. im Innenraum „Nest“) und meldet „fertig“ über ein Flag. Reine Logik: alles Welt-Spezifische läuft über den Adapter ctx
 // (siehe engine.js / plugin.js), deshalb laufen die Vorlagen auch headless in Node-Tests.
 //   const r = createRunner(step, { quest, ctx, done, fail, progress });  r.start() · r.update(dt) · r.stop() · r.describe()
 //   describe() → { label, target:{x,z}|null, icon }   (Marker und Tagebuch)
@@ -10,7 +11,7 @@
 //   interaction({id,x,z,radius,label,onAction}) → {remove} · spawn(type, opts) → {remove, group?} · creature(id, params) → {x,z}
 //   carry(def) · drop() · carrying() · on(event, fn) → off · glimm(t) · toast(t) · say(o) · pulsCap(v|null)
 //   evalCond(c) · applyEffects(list) · minMedal(minigameId) → 'bronze' · winWait(win) → Promise
-export const TEMPLATES = ['wegTor', 'tragen', 'szene', 'ermitteln', 'treppe', 'befreunden', 'lotsen', 'boss', 'bauen', 'pruefung', 'nachtwache', 'erinnerung'];
+export const TEMPLATES = ['wegTor', 'tragen', 'szene', 'ermitteln', 'treppe', 'befreunden', 'lotsen', 'boss', 'bauen', 'pruefung', 'nachtwache', 'erinnerung', 'auftrag'];
 export const MEDAL_RANK = { bronze: 0, silber: 1, gold: 2, stern: 3 };
 const dist = (a, b) => (a && b ? Math.hypot(a.x - b.x, a.z - b.z) : Infinity);
 const noop = () => {};
@@ -387,7 +388,26 @@ function erinnerung(step, o) {
   });
 }
 
-export const FACTORIES = { wegTor, tragen, szene, ermitteln, treppe, befreunden, lotsen, boss, bauen: minigameStep('hammer'), pruefung: minigameStep('medaille'), nachtwache, erinnerung };
+// ---- 13 Auftrag: ein Missions-Plugin spielt den Schritt (z. B. im Nest) und setzt am Ende flags.<flag>. Der Marker zeigt
+// draußen auf den Ort (at); drinnen führt das Plugin selbst (die Ziel-Zeile ist im Innenraum aus). Ist das Flag schon
+// gesetzt (Neu laden nach dem Schritt), ist der Schritt sofort fertig.
+function auftrag(step, o) {
+  const r = base(step, o);
+  const at = r.params.at ? r.ctx.resolvePos(r.params.at) : null;
+  const fertig = () => !!(r.ctx.evalCond && r.ctx.evalCond({ flag: r.params.flag }));
+  return Object.assign(r, {
+    describe: () => ({ label: r.step.label || 'Auftrag', target: at, icon: r.params.icon || 'auftrag' }),
+    start() {
+      r.active = true;
+      if (at) r.ctx.marker(at, { label: r.step.label || 'Auftrag', icon: r.params.icon || 'auftrag' });
+      if (r.ctx.emit) r.ctx.emit('quest:auftrag', { step: r.step.id, flag: r.params.flag, room: r.params.room || null });
+    },
+    update() { if (!r.active || !fertig()) return; r.active = false; cleanup(r); r.done({ flag: r.params.flag }); },
+    stop() { r.active = false; cleanup(r); },
+  });
+}
+
+export const FACTORIES = { auftrag, wegTor, tragen, szene, ermitteln, treppe, befreunden, lotsen, boss, bauen: minigameStep('hammer'), pruefung: minigameStep('medaille'), nachtwache, erinnerung };
 
 export function createRunner(step, o) {
   const f = FACTORIES[step.template];

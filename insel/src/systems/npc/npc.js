@@ -151,7 +151,8 @@ export function createNpc({ game, def, root, resolveSite, look, rng, names = () 
     A.setInner(view.masken && snap.inner ? { emotion: snap.inner[0], intensity: snap.inner[1] } : null);
     A.setMaskView(!!(view.masken && snap.inner));
     A.setBoundary(view.grenzen ? boundaryRadius(def.boundary, bond, snap) : null, { color: verstimmt ? '#ff6b6b' : (def.color || '#ffd166') });
-    A.setTanks(view.tanks ? Object.fromEntries(TANKS.map((t) => [t, tanks.value(t) / 100])) : null);
+    // Figuren mit Gläsern (QUELLE) zeigen ihre Gefäße über den Blick (abilities/gefaesse.js), nicht die alten Tank-Säulen
+    A.setTanks(view.tanks && !def.glaeser ? Object.fromEntries(TANKS.map((t) => [t, tanks.value(t) / 100])) : null);
     A.setStreitTier(view.streittiere ? streitStilFor(def, view.vs || null) : null);
     A.setHotspots(view.koerper && snap.heat > 30 ? (snap.heat > 70 ? ['faeuste', 'kiefer'] : ['bauch', 'schultern']) : null);
   }

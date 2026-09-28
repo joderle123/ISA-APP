@@ -1,5 +1,5 @@
 // Teile der Kielpost (BAUPLAN §2.1 A4), gebaut an der Werft, jedes als sichtbares Mesh am Boot (actors/boot.js).
-// Kürzungsliste Punkt 1: Farbe und Name kommen später. Kosten: alle drei Teile gehen mit 9 der 10 Funde
+// Kürzungsliste Punkt 1: Farbe und Name kommen später. Dazu der Blitz-Motor (Mission QUELLE, versteckt bis zum Plan). Kosten: alle drei Teile gehen mit 9 der 10 Funde
 // (content/bergen/hafen.js, Unit-Test tests/unit/werft.test.mjs). Die Laterne braucht Ildas Plan (flags.boot.plan.laterne).
 export default {
   id: 'teile',
@@ -16,6 +16,11 @@ export default {
       glimm: 'Ruhiger. Fast gemütlich.' },
     { id: 'segel', name: 'Segel', icon: 'segel', label: 'Schneller fahren', kosten: { tuch: 2, holz: 1, metall: 1 },
       glimm: 'Neues Segel. Los!' },
+    // QUELLE Schritt 5 (die Falle „Wunsch statt Bedürfnis“): erscheint erst mit Tuns Plan (flags.boot.plan.blitzmotor).
+    // Bauen füllt Tuns Glas „Anerkennung“ sofort, dann Riss: läuft bis zur nächsten Sitzung aus (systems/nest).
+    // Das Material ist nicht weg: Der Motor steht danach als Deko im Nest. mission: true = nicht in den drei Boots-Teilen.
+    { id: 'blitzmotor', name: 'Blitz-Motor', icon: 'blitz', label: 'Wie die Krater-Crew', kosten: { metall: 2, holz: 2, tau: 1 }, plan: 'blitzmotor',
+      versteckt: true, mission: true, glimm: 'Laut. Schnell. Hm.' },
   ],
   // Glimm-Zeilen und kurze Hinweise rund ums Boot (≤ 6 Wörter für Glimm)
   zeilen: {
@@ -23,6 +28,7 @@ export default {
     nebelAuf: { glimm: 'Der Nebel geht!' },
     ersteFahrt: { glimm: 'Kisten treiben. Haken raus!' },
     bump: { glimm: 'Autsch. Nur Holz.' },
+    rissAus: { glimm: 'Hält nicht. Merkste?' },   // Blitz-Motor: nächste Sitzung, Tuns Glas ist ausgelaufen (systems/nest)
     fehlt: { label: 'Fehlt noch' },
     planFehlt: { label: 'Plan fehlt' },
   },

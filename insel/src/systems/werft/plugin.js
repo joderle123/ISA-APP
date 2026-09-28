@@ -1,7 +1,8 @@
 // Werft-Plugin (BAUPLAN §2.1 A4, ohne Nest-Innenraum): eine offene Werkbank am Steg (SITES.werft). Dort baut man aus
 // dem Geborgenen die Teile der Kielpost (content/boot/teile.js): Ausleger, Segel, Laterne. Jedes Teil ist danach als
 // Mesh am Boot zu sehen (actors/boot.js setTeile). Die Laterne braucht Ildas Plan (flags.boot.plan.laterne).
-//   Spielstand: boot.teile[] (gebaut) · bergen.material (wird bezahlt)
+//   Spielstand: boot.teile[] (gebaut) · bergen.material (wird bezahlt) · Pläne: flags.boot.plan.<plan>
+//   Blitz-Motor (QUELLE): versteckt bis flags.boot.plan.blitzmotor; nach dem Bau übernimmt systems/nest (Glas + Riss, Deko)
 //   Ereignisse: werft:open · werft:gebaut {id}
 //   game.plugins.werft → { teile, check(id), canBuild(id), anyBuildable(), build(id), open() }
 //   Debug: LUMO.debug.werft.{ open(), build(id) }
@@ -60,7 +61,8 @@ export default {
     for (const [lx, lz] of [[-1.6, -1.2], [1.6, -1.2], [-1.6, 1.2], [1.6, 1.2]]) { const p = toW(lx, lz); game.colliders.addCircle(p.x, p.z, 0.16, { group: 'werft' }); }
     { const p = toW(0, -0.5); game.colliders.addBox(p.x, p.z, 1.1, 0.45, yaw, { group: 'werft' }); }
 
-    const plans = () => (state.get('flags.boot.plan.laterne') ? ['laterne'] : []);
+    // Pläne: flags.boot.plan.<plan> (Laterne von Ilda, Blitz-Motor von Tun in QUELLE)
+    const plans = () => teile.filter((t) => t.plan && state.get('flags.boot.plan.' + t.plan)).map((t) => t.plan);
     const built = () => state.get('boot.teile', []) || [];
     const material = () => state.get('bergen.material', {}) || {};
     const byId = (id) => teile.find((t) => t.id === id);
@@ -86,7 +88,9 @@ export default {
     const chip = (k, need, have) => { const m = mats.find((x) => x.id === k) || { name: k, color: '#ccc' }; return `<span class="wf-chip${have < need ? ' is-missing' : ''}"><i style="background:${m.color}"></i>${m.name} ${Math.min(have, need)}/${need}</span>`; };
     function render(body) {
       const m = material();
-      body.innerHTML = `<div class="wf-list">${teile.map((t) => {
+      // versteckte Teile (Blitz-Motor) erst mit Plan oder wenn schon gebaut
+      const shown = teile.filter((t) => !t.versteckt || plans().includes(t.plan) || built().includes(t.id));
+      body.innerHTML = `<div class="wf-list">${shown.map((t) => {
         const r = check(t.id);
         const cost = Object.entries(t.kosten || {}).map(([k, n]) => chip(k, n, m[k] || 0)).join('');
         const btn = r.gebaut ? `<button class="wf-btn" type="button" disabled>${ui.icon ? ui.icon('check', { size: 20 }) : ''}</button>`

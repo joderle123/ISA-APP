@@ -1,6 +1,6 @@
 // Bedingungen (Cond) und Effekte (Effect) des Content-Schemas – Validierung ohne Auswertung.
 // Auswertung übernehmen später die Systeme (Quest-/Dialog-Engine); hier wird nur die Form geprüft.
-import { EMOTIONS, TANKS, MODES, ABILITIES, UPGRADES, VEIL_ZONES, AMPEL_ZONEN } from './consts.js';
+import { EMOTIONS, TANKS, MODES, ABILITIES, UPGRADES, VEIL_ZONES, AMPEL_ZONEN, BEDUERFNISSE } from './consts.js';
 import { isObj, isStr, isNum, isBool, isText, err, warn, ref, sub, oneOf, range, checkPos, unitRef } from './util.js';
 
 const OPS = ['<', '<=', '>', '>=', '==', '!='];
@@ -95,8 +95,9 @@ function checkEffectObj(ctx, path, e) {
       if (!isObj(v)) return err(ctx, p, 'tank: { npc, tank, add, kind }');
       if (!isStr(v.npc)) return err(ctx, sub(p, 'npc'), 'npc fehlt');
       ref(ctx, sub(p, 'npc'), 'npc', v.npc);
-      if (!oneOf(ctx, sub(p, 'tank'), v.tank, TANKS, 'Tank')) return false;
-      if (!isNum(v.add)) return err(ctx, sub(p, 'add'), 'add muss eine Zahl sein');
+      // Alte Tanks (0–100) oder die sechs Kurs-Bedürfnisse (Nest-Gläser 0–1, systems/nest): add (±) oder set (absolut 0–1)
+      if (!oneOf(ctx, sub(p, 'tank'), v.tank, [...new Set([...TANKS, ...BEDUERFNISSE])], 'Tank')) return false;
+      if (!isNum(v.add) && !(BEDUERFNISSE.includes(v.tank) && isNum(v.set) && v.set >= 0 && v.set <= 1)) return err(ctx, sub(p, 'add'), 'add muss eine Zahl sein (Bedürfnis-Glas: oder set 0–1)');
       if (v.kind !== undefined && !['need', 'wish'].includes(v.kind)) return err(ctx, sub(p, 'kind'), "kind: 'need' | 'wish'");
       return true;
     case 'puls': return isNum(v) ? true : err(ctx, p, 'puls: Zahl (±)');

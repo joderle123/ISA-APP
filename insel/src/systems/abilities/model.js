@@ -8,6 +8,19 @@
 //   bystanderEffect(count) → { heat: −15·min(n,3), courage: 0..1 }   (Zuschauer-Wende, e26)
 //   mutActionFor({ upgrades, target, targetHeat, near }) → 'stopp' | 'klarklang' | 'zeichen' | null
 //   sharedThreads(list) → Paare mit Gemeinsamkeit (gleiches Hauptgefühl oder gleicher leerster Tank) für die Fäden (e02)
+//   GLAS (Blick-Stufe „Gläser“, QUELLE): { hold, show, radius, folge } · glasTarget(cands, bestId) → Kandidat für den Blick
+//     (erst die Folge in der Welt, Gefäße erst nach GLAS.hold Sekunden Hinschauen oder einem zweiten Tipp)
+// ---- Blick-Stufe „Gläser“ (QUELLE, j1-e04): erst die Folge in der Welt, dann (länger hinschauen) die Gefäße ----
+export const GLAS = { hold: 1.2, show: 14, radius: 12, folge: 2.6 };
+// cands: [{ id, d (Abstand), facing (-1..1) }] – die Figur, die der Kraft-Tipp schon gewählt hat, sonst die nächste vorn, sonst die nächste
+export function glasTarget(cands = [], bestId = null) {
+  if (!cands.length) return null;
+  const best = cands.find((c) => c.id === bestId);
+  if (best) return best;
+  const front = cands.filter((c) => c.facing > 0.2).sort((a, b) => a.d - b.d);
+  return front[0] || cands.slice().sort((a, b) => a.d - b.d)[0];
+}
+
 export const BLICK_STAGES = ['auren', 'faeden', 'tanks', 'koerper', 'doppel', 'grenzen', 'streittiere', 'masken'];
 export const BLICK_UPGRADE = { faeden: 'blick.faeden', tanks: 'blick.tanks', koerper: 'blick.koerper', doppel: 'blick.doppel', grenzen: 'blick.grenzen', streittiere: 'blick.streittiere', masken: 'blick.masken' };
 export function blickStages(upgrades = [], abilities = []) {

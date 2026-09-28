@@ -163,6 +163,7 @@ export const questBeispiel = {
 // bauen / pruefung { minigame }
 // nachtwache { pool:[id] }
 // erinnerung { memory }
+// auftrag    { flag, at?:Pos, room? }   Missions-Plugin spielt den Schritt (z. B. im Nest), fertig bei flags.<flag> (QUELLE)
 
 // ---- MinigameDef (Vorlagen: rennen|rhythmus|satzbau|duell|verteidigung|lotsen|bauen|wuerfel|leine|oberflaeche) ----
 // Gesprächs-Vorlagen leine/oberflaeche (Kostprobe B, über choice.minigame): zusätzlich kurz: ['1–3 ruhige Zeilen']

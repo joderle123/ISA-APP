@@ -125,6 +125,19 @@ export function npcs(ctx, d) {
     if (!isObj(d.tanks)) ok = err(ctx, 'tanks', 'tanks: { koerper, sicherheit, … } 0–100');
     else for (const [k, v] of Object.entries(d.tanks)) { if (!C.TANKS.includes(k)) ok = err(ctx, ['tanks', k], `unbekannter Tank – erlaubt: ${C.TANKS.join(', ')}`); else ok = range(ctx, ['tanks', k], v, 0, 100, 'Tank') && ok; }
   }
+  // Gläser (Blick-Stufe „Gläser“, QUELLE): { form, folge?:{id, icon, glimm}, wichtig:{need:0–1}, voll:{need:0–1} }, Namen aus content/beduerfnisse.js
+  if (d.glaeser !== undefined) {
+    const g = d.glaeser;
+    if (!isObj(g)) ok = err(ctx, 'glaeser', 'glaeser: { form, wichtig, voll }');
+    else {
+      ok = oneOf(ctx, 'glaeser.form', g.form, C.GLAS_FORMEN, 'Gefäßform') && ok;
+      for (const k of ['wichtig', 'voll']) {
+        if (!isObj(g[k])) { ok = err(ctx, ['glaeser', k], `${k}: { ${C.BEDUERFNISSE.join(', ')} } 0–1`); continue; }
+        for (const [n, v] of Object.entries(g[k])) { if (!C.BEDUERFNISSE.includes(n)) ok = err(ctx, ['glaeser', k, n], `unbekanntes Bedürfnis – erlaubt: ${C.BEDUERFNISSE.join(', ')}`); else ok = range(ctx, ['glaeser', k, n], v, 0, 1, 'Wert') && ok; }
+      }
+      if (g.folge !== undefined && !(isObj(g.folge) && isStr(g.folge.id) && (g.folge.glimm === undefined || isText(g.folge.glimm)))) ok = err(ctx, 'glaeser.folge', 'folge: { id, icon?, glimm? }');
+    }
+  }
   if (d.boundary !== undefined) {
     const b = d.boundary;
     if (!isObj(b) || !(isList(b.byBond) && b.byBond.length === 4 && b.byBond.every(isNum))) ok = err(ctx, 'boundary', 'boundary: { byBond:[4 Radien], mood?:{emotion: faktor} }');
@@ -292,6 +305,13 @@ const STEP_PARAMS = {
   bauen(ctx, p, x) { if (!isStr(x.minigame)) return err(ctx, sub(p, 'minigame'), 'minigame fehlt'); ref(ctx, sub(p, 'minigame'), 'minigame', x.minigame); return true; },
   pruefung(ctx, p, x) { if (!isStr(x.minigame)) return err(ctx, sub(p, 'minigame'), 'minigame fehlt'); ref(ctx, sub(p, 'minigame'), 'minigame', x.minigame); return true; },
   nachtwache(ctx, p, x) { if (!strList(x.pool) || !x.pool.length) return err(ctx, sub(p, 'pool'), 'pool: Liste von Nachtwache-IDs'); x.pool.forEach((n, i) => ref(ctx, [...p, 'pool', i], 'nachtwache', n)); return true; },
+  // auftrag (QUELLE): ein Missions-Plugin spielt den Schritt, fertig bei flags.<flag>
+  auftrag(ctx, p, x) {
+    let o = isStr(x.flag) ? true : err(ctx, sub(p, 'flag'), 'flag fehlt (fertig, sobald flags.<flag> gesetzt ist)');
+    if (x.at !== undefined) o = checkPos(ctx, sub(p, 'at'), x.at) && o;
+    if (x.room !== undefined) { if (!isStr(x.room)) o = err(ctx, sub(p, 'room'), 'Raum-ID erwartet'); }
+    return o;
+  },
   erinnerung(ctx, p, x) { if (!isStr(x.memory)) return err(ctx, sub(p, 'memory'), 'memory fehlt'); ref(ctx, sub(p, 'memory'), 'memory', x.memory); return true; },
 };
 function checkStep(ctx, p, s) {
@@ -600,4 +620,13 @@ export function boot(ctx, d) {
   }, 'Boots-Teile', { min: 1 });
 }
 
-export const VALIDATORS = { regions, npcs, dialogues, quests, minigames, rooms, gadgets, memories, nachtwache, echoes, cosmetics, collectibles, glimm, units, bergen, boot };
+// ---- Bedürfnisse (content/beduerfnisse.js, die sechs Gläser aus dem Kurs, eine einzige Stelle) ----
+export function beduerfnisse(ctx, d) {
+  return arrayOf(ctx, 'liste', d.liste, (b, i) => {
+    const p = ['liste', i];
+    if (!isObj(b) || !C.BEDUERFNISSE.includes(b.id)) return err(ctx, p, `Bedürfnis mit id aus ${C.BEDUERFNISSE.join(', ')}`);
+    return req(ctx, b, 'name', isText, 'Name', p) && req(ctx, b, 'icon', isStr, 'Icon-Name', p) && req(ctx, b, 'color', isColor, 'Farbe #rrggbb', p);
+  }, 'Bedürfnisse', { min: 6 });
+}
+
+export const VALIDATORS = { regions, npcs, dialogues, quests, minigames, rooms, gadgets, memories, nachtwache, echoes, cosmetics, collectibles, glimm, units, bergen, boot, beduerfnisse };

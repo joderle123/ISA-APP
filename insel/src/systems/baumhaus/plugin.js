@@ -11,11 +11,18 @@
 //   Hört auf: safeplace:open {kind:'haengematte'|'sichererOrt'} (Pause-Menü) · scene:enter/exit · state deedLog/baumhaus/chronik/medals/units
 //   Spielstand: baumhaus { furniture:[{id,cx,cz,yaw}], bonsai:[{id,text,color,kind}], jukebox:[4 × runter|auf|still], glas:[{moment|need, day}] }
 //     (baumhaus.glas ist privat: nie im Export-Code, core/save.js PRIVATE_PATHS)
+//   Spiegel-Gläser (QUELLE, privat, systems/baumhaus/spiegel.js): Station 'spiegelglaeser' nur, wenn die Lehrkraft
+//     „Spiegel-Stationen“ eingeschaltet hat (Gerätespeicher, Standard AUS). Werte nur unter private.spiegel („Merken“) oder
+//     nur im Speicher („Nicht merken“, Standard). Zeigen = Vollbild-Karte, schreibt nichts. Pause blendet sofort aus.
+//     game.baumhaus.spiegel → Modell (available(), values(), set(), setMerken(), zeigen() …) · openSpiegel() · Ereignis spiegel:stich {}
 //   Debug: LUMO.debug.baumhaus() · enterBaumhaus() · baumhausStation(id) · placeFurniture(id, cx, cz) · bonsaiInfo() · addShell(need) · rest(kind)
 import { STATIONS, BAUMHAUS_ROOM, ROOM_ID, DECK, stationById } from '../../scenes/baumhaus.js';
 import * as MDL from './model.js';
 import { createStationBuilders } from './stations.js';
 import { esc } from '../../ui/overlay.js';
+import { createSpiegel, STEPS } from './spiegel.js';
+import { vesselSVG } from '../abilities/gefaesse.js';
+import { BED } from '../nest/model.js';
 import { TANKS as NEEDS } from '../../content/schema/consts.js';
 
 const NEED_LABEL = { koerper: 'Körper', sicherheit: 'Sicherheit', zugehoerigkeit: 'Dazugehören', anerkennung: 'Anerkennung', selbstbestimmung: 'Selbst bestimmen', spass: 'Spaß' };
@@ -65,6 +72,36 @@ const CSS = `
 .bh-troph{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:10px}
 .bh-troph .bh-chip{border-bottom:4px solid var(--tier,#ffd166)}
 .bh-tag{font-size:12px;opacity:.7;text-transform:uppercase;letter-spacing:.06em}
+.sp-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+@media (max-width:760px){.sp-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.sp-glas{display:grid;grid-template-columns:52px minmax(0,1fr);min-width:0;gap:6px 10px;align-items:center;padding:10px;border-radius:var(--radius);background:var(--ghost);border:2px solid transparent;--c:#ffd166}
+.sp-glas.is-gross{border-color:var(--c);box-shadow:0 0 18px color-mix(in srgb,var(--c) 55%,transparent);animation:spGlow 1.6s ease-in-out infinite}
+@keyframes spGlow{0%,100%{box-shadow:0 0 10px color-mix(in srgb,var(--c) 40%,transparent)}50%{box-shadow:0 0 24px color-mix(in srgb,var(--c) 75%,transparent)}}
+.sp-glas .gf-svg{grid-row:span 2;width:52px;height:118px}
+.sp-name{grid-column:1/-1;display:flex;align-items:center;gap:6px;font-weight:900;font-size:15px;line-height:1.1;min-width:0}
+.sp-name i{width:24px;height:24px;border-radius:50%;display:grid;place-items:center;background:var(--c);color:#14122a;flex:none;font-style:normal}
+.sp-reg{display:flex;flex-direction:column;gap:2px;font-size:13px;font-weight:800;opacity:.9;min-width:0}
+.sp-reg input{width:100%;height:34px;accent-color:var(--c);margin:0}
+.sp-reg input::-webkit-slider-thumb{width:30px;height:30px}
+.sp-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-top:8px}
+.sp-card{display:flex;align-items:center;gap:10px;min-height:64px;padding:10px 12px;border-radius:var(--radius);background:var(--ghost);border:2px solid transparent;color:#fff;font:800 15px/1.2 system-ui,sans-serif;text-align:left}
+.sp-card.is-on{border-color:#2de2c9;background:rgba(45,226,201,.16)}
+.sp-card .ico{flex:none;width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:var(--c,#ffd166);color:#14122a}
+.sp-foot{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;margin-top:14px}
+.sp-seg{display:flex;border-radius:999px;background:var(--ghost);padding:4px}
+.sp-seg button{min-height:48px;padding:0 16px;border-radius:999px;border:0;background:transparent;color:#fff;font:800 15px/1 system-ui,sans-serif}
+.sp-seg button.is-on{background:#fff;color:#14122a}
+.sp-pick{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0 4px}
+.sp-pick button{min-height:52px;padding:0 14px;border-radius:14px;border:2px solid transparent;background:var(--ghost);color:#fff;font:800 15px/1 system-ui,sans-serif;display:flex;align-items:center;gap:8px}
+.sp-pick button.is-on{border-color:#ffd166;background:rgba(255,209,102,.18)}
+.ov-spiegel-zeigen .ov-card{background:#0f1430}
+.sp-show{display:flex;flex-wrap:wrap;gap:22px;justify-content:center;align-items:flex-end;padding:20px 0}
+.sp-show-item{display:flex;flex-direction:column;align-items:center;gap:10px;min-width:160px;--c:#ffd166}
+.sp-show-item .gf-svg{width:104px;height:236px}
+.sp-show-item b{font-size:26px}
+.sp-show-item.is-schritt{padding:22px 26px;border-radius:24px;background:rgba(255,255,255,.08);border:3px solid var(--c);font-size:26px;font-weight:900;max-width:420px;text-align:center}
+.sp-show-ico{width:50px;height:50px;border-radius:50%;display:grid;place-items:center;background:var(--c);color:#14122a}
+.sp-show-tag{font-size:15px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;color:var(--c)}
 `;
 
 export default {
@@ -82,6 +119,10 @@ export default {
     const cond = (c) => (session && session.evalCond ? session.evalCond(c) : false);
     const day = () => Number(state.get('time.day', 1)) || 1;
     const S = createStationBuilders({ THREE, part, merge, M: game.props.materials, rng: game.rng && game.rng.fork ? game.rng.fork('baumhaus') : null });
+    // Spiegel-Gläser (privat): Schalter liegt in den Lehrer-Einstellungen des Geräts (codes/teacher.js device, Standard aus)
+    const dev = () => (game.codes && game.codes.teacher && game.codes.teacher.device) || null;
+    const spiegel = createSpiegel({ state, device: { get: (k, f) => { const d = dev(); return d ? d.get(k, f) : f; } } });
+    const SPIEGEL_STATION = { id: 'spiegelglaeser', at: [4.5, 0, 3.3], yaw: -2.25, label: 'Gläser', icon: 'glas', radius: 2.0 };
     if (typeof document !== 'undefined' && !document.getElementById('bh-css')) { const st = document.createElement('style'); st.id = 'bh-css'; st.textContent = CSS; document.head.appendChild(st); }
 
     // ---- Raum registrieren (ersetzt den Platzhalter des Baukastens) ----
@@ -161,9 +202,24 @@ export default {
       }
       dirty.delete('moebel');
     }
+    // Regal nur, wenn die Spiegel-Stationen an sind; aus = nichts steht da, nichts wird angelegt
+    function mountSpiegel() {
+      if (parts.spiegelglaeser) { parts.spiegelglaeser.dispose(); delete parts.spiegelglaeser; }
+      if (!spiegel.available()) return null;
+      const r = room();
+      if (!r) return null;
+      if (!dyn) { dyn = new THREE.Group(); dyn.name = 'bh-dyn'; r.group.add(dyn); }
+      const h = S.spiegelRegal(BED.liste.map((b) => b.color));
+      h.group.position.set(SPIEGEL_STATION.at[0], 0, SPIEGEL_STATION.at[2]);
+      h.group.rotation.y = SPIEGEL_STATION.yaw;
+      dyn.add(h.group);
+      parts.spiegelglaeser = h;
+      return h;
+    }
     function refresh(id) {
       if (!inside()) { dirty.add(id || 'alle'); return false; }
-      if (!id || id === 'alle') { for (const k of Object.keys(BUILD)) mount(k); mountFurniture(); dirty.clear(); return true; }
+      if (!id || id === 'alle') { for (const k of Object.keys(BUILD)) mount(k); mountFurniture(); mountSpiegel(); dirty.clear(); return true; }
+      if (id === 'spiegel') { mountSpiegel(); addInteractions(); return true; }
       if (id === 'moebel') mountFurniture(); else mount(id);
       return true;
     }
@@ -175,6 +231,7 @@ export default {
         const label = s.id === 'tuer' ? (hasOrt() ? 'Sicherer Ort' : 'Tür') : s.label;
         interactions.push(game.interactions.add({ id: 'bh-' + s.id, x: pocket.x + s.at[0], z: pocket.z + s.at[2], radius: s.radius, label, priority: 2, onAction: () => api.open(s.id) }));
       }
+      if (spiegel.available()) { const s = SPIEGEL_STATION; interactions.push(game.interactions.add({ id: 'bh-' + s.id, x: pocket.x + s.at[0], z: pocket.z + s.at[2], radius: s.radius, label: s.label, priority: 2, onAction: () => api.open(s.id) })); }
     }
     function removeInteractions() { for (const it of interactions) it.remove(); interactions = []; }
     events.on('scene:enter', (e) => {
@@ -425,8 +482,95 @@ export default {
       return ui.overlay.open({ id: 'bh-einrichten', title: 'Einrichten', icon: 'hammer', kind: 'panel', content: (body, h) => render(body, h) });
     }
 
+    // ---- Spiegel-Gläser (privat, freiwillig) ----
+    const stepOf = (v) => STEPS.reduce((best, x, i) => (Math.abs(x - v) < Math.abs(STEPS[best] - v) ? i : best), 0);
+    let spHandle = null, spShow = null;
+    function stich(h) { if (audio && audio.play) { try { audio.play('pickup'); } catch (e) { /* egal */ } } emit('spiegel:stich', {}); if (ui.toast) ui.toast('Ein Stich für dich.', 2200); if (h) h.close('fertig'); }
+    function openSpiegel() {
+      if (!spiegel.available()) return null;
+      if (spHandle && spHandle.open) return spHandle;
+      const render = (body, h) => {
+        const gl = spiegel.glasses();
+        const cards = spiegel.schritte();
+        const sel = spiegel.schritt;
+        const glas = (g) => `<div class="sp-glas${g.gross ? ' is-gross' : ''}" data-glas="${g.id}" style="--c:${esc(g.color)}">
+          <div class="sp-name"><i>${icon(g.icon, { size: 16 })}</i><span>${esc(g.name)}</span></div>${vesselSVG(g, 'glas')}
+          <label class="sp-reg">wichtig<input type="range" min="0" max="4" step="1" value="${stepOf(g.wichtig)}" data-need="${g.id}" data-key="wichtig" aria-label="${esc(g.name)}: wie wichtig"></label>
+          <label class="sp-reg">voll<input type="range" min="0" max="4" step="1" value="${stepOf(g.voll)}" data-need="${g.id}" data-key="voll" aria-label="${esc(g.name)}: wie voll"></label></div>`;
+        body.innerHTML = `
+          <p class="bh-lead">Deine Gläser. Nur für dich.</p>
+          <div class="sp-grid">${gl.map(glas).join('')}</div>
+          <div class="bh-tag" style="margin-top:14px">Ein kleiner Schritt?</div>
+          <div class="sp-cards">${cards.map((k) => `<button type="button" class="sp-card${sel === k.id ? ' is-on' : ''}" data-schritt="${k.id}" style="--c:${esc(k.color)}"><span class="ico">${icon(k.icon, { size: 20 })}</span><span>${esc(k.text)}</span></button>`).join('')}
+            <button type="button" class="sp-card${sel === 'keiner' ? ' is-on' : ''}" data-schritt="keiner"><span class="ico">${icon('x', { size: 20 })}</span><span>Keiner davon</span></button></div>
+          <div class="sp-foot">
+            <div class="sp-seg" role="group" aria-label="Merken"><button type="button" data-merken="1" class="${spiegel.merken ? 'is-on' : ''}">Merken (nur hier)</button><button type="button" data-merken="0" class="${spiegel.merken ? '' : 'is-on'}">Nicht merken</button></div>
+            <button type="button" class="btn" data-zeigen>${icon('augen', { size: 22 })}<span>Zeigen</span></button>
+          </div>
+          <div class="ov-actions"><button class="btn btn-primary btn-big" type="button" data-fertig>${icon('check', { size: 24 })}<span>Fertig</span></button><button class="btn btn-big" type="button" data-heute>${icon('mond', { size: 24 })}<span>Nicht heute</span></button></div>
+          <p class="bh-note">Bleibt auf diesem Gerät. Wird nie gesendet.</p>`;
+        body.querySelectorAll('input[data-need]').forEach((inp) => inp.addEventListener('input', () => {
+          spiegel.set(inp.dataset.need, inp.dataset.key, STEPS[Number(inp.value)] ?? 0.5);
+          // Nur die Gläser neu zeichnen (Regler behalten den Finger)
+          const gl2 = spiegel.glasses();
+          for (const g of gl2) { const el = body.querySelector(`[data-glas="${g.id}"]`); if (!el) continue; el.classList.toggle('is-gross', g.gross); const old = el.querySelector('.gf-svg'); if (old) old.outerHTML = vesselSVG(g, 'glas'); }
+        }));
+        body.querySelectorAll('input[data-need]').forEach((inp) => inp.addEventListener('change', () => render(body, h)));
+        body.querySelectorAll('[data-schritt]').forEach((b) => b.addEventListener('click', () => { audio.play('tile'); spiegel.waehle(b.dataset.schritt); render(body, h); }));
+        body.querySelectorAll('[data-merken]').forEach((b) => b.addEventListener('click', () => { audio.play('tile'); spiegel.setMerken(b.dataset.merken === '1'); render(body, h); }));
+        body.querySelector('[data-zeigen]').addEventListener('click', () => { audio.play('tile'); openZeigen(); });
+        body.querySelector('[data-fertig]').addEventListener('click', () => { if (spiegel.fertig()) stich(h); });
+        body.querySelector('[data-heute]').addEventListener('click', () => { if (spiegel.nichtHeute()) stich(h); });
+      };
+      spHandle = ui.overlay.open({ id: 'spiegelglaeser', title: 'Deine Gläser', icon: 'glas', kind: 'panel', cls: 'ov-spiegel', content: (body, h) => render(body, h), onClose: () => { spHandle = null; } });
+      return spHandle;
+    }
+    // Zeigen: erst auswählen, dann Vollbild mit NUR dem Ausgewählten; „Ausblenden“ schließt sofort. Schreibt nichts.
+    function openZeigen(preset = null) {
+      if (!spiegel.available()) return null;
+      const pick = new Set(preset || []);
+      const gl = spiegel.glasses();
+      const opts = [{ id: 'luecke', label: 'Größte Lücke', icon: 'stern' }, ...gl.map((g) => ({ id: g.id, label: g.name, icon: g.icon })), { id: 'schritt', label: 'Mein Schritt', icon: 'check' }];
+      const showCard = () => {
+        const card = spiegel.zeigen([...pick]);
+        if (!card || !card.items.length) return null;
+        return ui.overlay.open({
+          id: 'spiegel-zeigen', title: '', kind: 'full', cls: 'ov-spiegel-zeigen', closeLabel: 'Ausblenden',
+          content: (body, h) => {
+            body.innerHTML = `<div class="sp-show">${card.items.map((it) => it.kind === 'schritt'
+              ? `<div class="sp-show-item is-schritt" style="--c:${esc(it.color)}"><span class="sp-show-tag">Mein Schritt</span>${icon(it.icon, { size: 40 })}<span>${esc(it.text)}</span></div>`
+              : `<div class="sp-show-item" style="--c:${esc(it.color)}">${it.kind === 'luecke' ? '<span class="sp-show-tag">Größte Lücke</span>' : ''}${vesselSVG(it, 'glas')}<span class="sp-show-ico">${icon(it.icon, { size: 30 })}</span><b>${esc(it.name)}</b></div>`).join('')}</div>
+              <div class="ov-actions"><button class="btn btn-primary btn-big" type="button" data-weg>${icon('x', { size: 26 })}<span>Ausblenden</span></button></div>`;
+            body.querySelector('[data-weg]').addEventListener('click', () => h.close('ausblenden'));
+          },
+          onClose: () => { spShow = null; },
+        });
+      };
+      if (preset) { spShow = showCard(); return spShow; }
+      return ui.overlay.open({
+        id: 'spiegel-auswahl', title: 'Was zeigen?', icon: 'augen', kind: 'panel',
+        content: (body, h) => {
+          const render = () => {
+            body.innerHTML = `<p class="bh-lead">Nur das, was du antippst.</p><div class="sp-pick">${opts.map((o) => `<button type="button" data-pick="${o.id}" class="${pick.has(o.id) ? 'is-on' : ''}">${icon(o.icon, { size: 20 })}<span>${esc(o.label)}</span></button>`).join('')}</div>
+              <div class="ov-actions"><button class="btn btn-primary btn-big" type="button" data-go${pick.size ? '' : ' disabled'}>${icon('augen', { size: 24 })}<span>Zeigen</span></button></div>`;
+            body.querySelectorAll('[data-pick]').forEach((b) => b.addEventListener('click', () => { audio.play('tile'); const id = b.dataset.pick; if (pick.has(id)) pick.delete(id); else pick.add(id); render(); }));
+            body.querySelector('[data-go]').addEventListener('click', () => { h.close('zeigen'); setTimeout(() => { spShow = showCard(); }, 60); });
+          };
+          render();
+        },
+      });
+    }
+    // Pause blendet sofort aus (KONZEPT §15 Punkt 5); Neu anfangen / Laden vergisst den Sitzungsspeicher
+    events.on('ui:overlay', (e) => {
+      if (!e || !e.open || e.id !== 'pause') return;
+      for (const id of ['spiegel-zeigen', 'spiegel-auswahl', 'spiegelglaeser']) if (ui.overlay.isOpen && ui.overlay.isOpen(id)) ui.overlay.close(id);
+    });
+    events.on('state:reset', () => spiegel.forget());
+    events.on('spiegel:schalter', () => { if (inside()) refresh('spiegel'); else dirty.add('alle'); });
+
     // ---- Stationen öffnen ----
     function open(id) {
+      if (id === 'spiegelglaeser') { if (!spiegel.available()) return null; if (audio && audio.play) { try { audio.play('open'); } catch (e) { /* egal */ } } return openSpiegel(); }   // kein Ereignis mit Station-ID (privat)
       const s = stationById(id);
       if (!s) return null;
       emit('baumhaus:station', { id });
@@ -441,6 +585,7 @@ export default {
         case 'tisch': return openMaexchen();
         case 'trophaeen': return openTrophies();
         case 'kiste': return openEinrichten();
+        case 'spiegelglaeser': return spiegel.available() ? openSpiegel() : null;
         case 'tuer': {
           if (hasOrt()) { const SO = game.sichererOrt; if (SO && SO.enter) return SO.enter(); return rest({ kind: 'sichererOrt' }); }
           ui.glimm('Noch zu. Nimm die Hängematte.');
@@ -485,6 +630,7 @@ export default {
         get composer() { return composer(); },
       },
       trophies: trophyList,
+      spiegel, openSpiegel, openZeigen, SPIEGEL_STATION,
     };
     game.baumhaus = api;
 

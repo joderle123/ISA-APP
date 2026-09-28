@@ -8,6 +8,7 @@ import { join } from 'node:path';
 import { loadContent } from '../content-load.mjs';
 import { createContent } from '../../src/core/content.js';
 import { allCodes, DEFAULT_SALT, isLinesVeilsUnit } from '../../src/systems/codes/model.js';
+import { icon } from '../../src/ui/icons.js';
 
 const esc = (s) => String(s == null ? '' : s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const t = (v) => (v && typeof v === 'object' ? v.t : v) || '';
@@ -15,16 +16,18 @@ const MODULE_COLOR = { 'j1-m0': '#e9a23b', 'j1-m1': '#22b8a3', 'j1-m2': '#3fb954
 const REGION_NAME = { hafen: 'Hafen-Dorf', strand: 'Palmenstrand', dschungel: 'Dschungel', klippen: 'Sturmklippen', moor: 'Flüstermoor', markt: 'Markt-Hügel', vulkan: 'Vulkan', glimmer: 'Glimmerwolke', quellen: 'Quellental', leuchtturm: 'Leuchtturm' };
 const ABILITY_LABEL = { blick: 'Blick', teamgeist: 'Teamgeist', schwimmen: 'Schwimmen', klettern: 'Klettern', segel: 'Gefühlssegel', tauchen: 'Tauchen', ruhe: 'Ruhe', mut: 'Mut' };
 const UPGRADE_LABEL = {
-  'blick.faeden': 'Blick: Fäden', 'blick.tanks': 'Blick: Tanks', 'blick.koerper': 'Blick: Körpersignale', 'blick.doppel': 'Blick: Doppel-Auren', 'blick.grenzen': 'Blick: Grenzen', 'blick.streittiere': 'Blick: Streit-Tiere', 'blick.masken': 'Blick: Masken',
+  'blick.faeden': 'Blick: Fäden', 'blick.tanks': 'Blick: Gläser', 'blick.koerper': 'Blick: Körpersignale', 'blick.doppel': 'Blick: Doppel-Auren', 'blick.grenzen': 'Blick: Grenzen', 'blick.streittiere': 'Blick: Streit-Tiere', 'blick.masken': 'Blick: Masken',
   'segel.kombi': 'Segel: Kombis', 'ruhe.puls': 'Ruhe: Puls', 'ruhe.koerper': 'Ruhe: Körper-Skills', 'ruhe.sinne': 'Ruhe: Sinnes-Skills', 'ruhe.kopf': 'Ruhe: Kopf-Skills', 'ruhe.ampel': 'Ruhe: Ampelplan', 'ruhe.rucksack': 'Ruhe: Rucksack',
   'mut.zeichen': 'Mut: Zeichen', 'mut.klarklang': 'Mut: Klarklang', 'mut.stopp': 'Mut: Stopp-Schild', 'mut.nein': 'Mut: Nein-Züge', 'mut.leiter': 'Mut: Leiter',
   'teamgeist.ruf': 'Teamgeist: Crew-Ruf', 'teamgeist.hilfe': 'Teamgeist: Hilfe holen', 'teamgeist.zweitesNein': 'Teamgeist: zweites Nein', 'teamgeist.zuschauer': 'Teamgeist: Zuschauer',
 };
-const TEMPLATE_LABEL = { wegTor: 'Weg und Tor', tragen: 'Tragen', szene: 'Szene', ermitteln: 'Ermitteln', treppe: 'Treppe', befreunden: 'Befreunden', lotsen: 'Lotsen', boss: 'Boss', bauen: 'Bauen', pruefung: 'Prüfung', nachtwache: 'Nachtwache', erinnerung: 'Erinnerung' };
+const TEMPLATE_LABEL = { wegTor: 'Weg und Tor', tragen: 'Tragen', szene: 'Szene', ermitteln: 'Ermitteln', treppe: 'Treppe', befreunden: 'Befreunden', lotsen: 'Lotsen', boss: 'Boss', bauen: 'Bauen', pruefung: 'Prüfung', nachtwache: 'Nachtwache', erinnerung: 'Erinnerung', auftrag: 'Auftrag' };
 
 function grantLabels(q) {
   const out = [];
-  for (const g of (q && q.grants) || []) {
+  // Ohne eigene grants (z. B. QUELLE: die Stufe gibt eine Figur mitten in der Quest) gilt die Kurzfassung
+  const list = q && Array.isArray(q.grants) ? q.grants : (q && q.kurzfassung && q.kurzfassung.grants) || [];
+  for (const g of list) {
     if (!g || typeof g !== 'object') continue;
     if (g.grant) out.push(ABILITY_LABEL[g.grant] || g.grant);
     if (g.upgrade) out.push(UPGRADE_LABEL[g.upgrade] || g.upgrade);
@@ -91,8 +94,20 @@ export async function buildLehrerheft({ root, salt = process.env.LUMO_SALT || DE
           <p><b>Debrief:</b></p>
           ${q && Array.isArray(q.debrief) && q.debrief.length ? `<ol>${q.debrief.map((d) => `<li>${esc(t(d))}</li>`).join('')}</ol>` : '<p class="muted">folgt</p>'}
         </section>
+        ${q && q.lehrerheft ? extraCard(q.lehrerheft) : ''}
       </div>
     </article>`;
+  }
+
+  // Zusatz je Quest (QuestDef.lehrerheft): Wortliste der Spielbegriffe mit Bild, Hinweise für die Lehrkraft
+  function extraCard(x) {
+    const words = Array.isArray(x.wortliste) ? x.wortliste : [];
+    return `
+        <section class="bridge extra">
+          ${words.length ? `<h4>Spielbegriffe (Wortliste mit Bild)</h4><table class="words"><tbody>${words.map((w) => `<tr><td class="pic">${icon(w.bild || 'punkt', { size: 22 })}</td><td><b>${esc(w.wort)}</b></td><td>${esc(w.heisst || '')}</td></tr>`).join('')}</tbody></table>` : ''}
+          ${x.hinweis ? `<p class="hint"><b>${esc(x.hinweis)}</b></p>` : ''}
+          ${x.spiegel ? `<p class="muted">${esc(x.spiegel)}</p>` : ''}
+        </section>`;
   }
 
   // ---- Module und Joker ----
@@ -173,6 +188,10 @@ export async function buildLehrerheft({ root, salt = process.env.LUMO_SALT || DE
   .unit-kurz { font-style: italic; color: #33314a; margin-bottom: 10px; }
   .unit-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 16px; }
   .unit-grid .bridge { grid-column: 1 / -1; padding-top: 8px; border-top: 1px dashed var(--line); }
+  .words td { padding: 3px 6px; font-size: 13px; }
+  .words td.pic { width: 30px; color: var(--mod); }
+  .words svg { display: block; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  .hint { margin-top: 8px; padding: 6px 10px; border-left: 4px solid var(--mod); background: #fafaff; }
   .foot { margin-top: 14mm; padding-top: 8px; border-top: 1px solid var(--line); font-size: 12px; color: var(--muted); }
   @media print {
     html { background: #fff; }
@@ -203,6 +222,7 @@ export async function buildLehrerheft({ root, salt = process.env.LUMO_SALT || DE
       <div>
         <p><b>Drei Brücken in den Unterricht:</b> die Rückseite des Aufnähers („Dreht mal eure Aufnäher um.“), die freiwillige Echte-Welt-Karte (gemacht / versucht / diesmal nicht – jede Antwort zählt gleich, nichts verlässt das Gerät) und 1–2 Debrief-Fragen pro Quest in diesem Heft.</p>
         <p><b>Lehrer-Panel</b> (Code <span class="code">${esc(unitsDef.codes.teacher || '–')}</span>): Codeliste, Inselwetter, Lines &amp; Veils, Umbenennen (Figuren, Glimm, Vögel – damit keine Figur wie ein Kind der Gruppe heißt), Farben des Gefühlsrads, eingelöste Codes je Spielstand.</p>
+        <p><b>Wichtig:</b> Eine eingelöste Quest heißt nicht, dass das Thema behandelt ist.</p>
         <p><b>Lines &amp; Veils.</b> Bei einem aktuellen Vorfall laufen e17, e26, e28, j08 und markierte Szenen nur als Kurzfassung ohne Szene. Pause/X, Ausgang, Zurückspulen und „Hilfe holen“ sind immer da.</p>
       </div>
     </div>

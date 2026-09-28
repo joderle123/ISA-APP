@@ -12,6 +12,13 @@ export default {
   ],
   emotion: { base: { primary: ['freude', 3], secondary: ['trauer', 2] } },
   tanks: { koerper: 55, sicherheit: 75, zugehoerigkeit: 60, anerkennung: 70, selbstbestimmung: 80, spass: 35 },
+  // Gläser (Blick-Stufe „Gläser“, QUELLE): Höhe = wie wichtig (0–1), Füllung = wie voll (Startwert, 0–1). Namen: content/beduerfnisse.js
+  glaeser: {
+    form: 'laternenglas',
+    folge: { id: 'laterne', icon: 'laterne', glimm: 'Ildas Licht flackert.' },
+    wichtig: { dazugehoeren: 0.9, ruhe: 0.4, anerkennung: 0.3, bewegung: 0.35, schlaf: 0.3, mitbestimmen: 0.5 },
+    voll: { dazugehoeren: 0.5, ruhe: 0.6, anerkennung: 0.7, bewegung: 0.6, schlaf: 0, mitbestimmen: 0.8 },
+  },
   boundary: { byBond: [2.0, 1.6, 1.2, 1.0], mood: { wut: 1.2 } },
   streitStil: { default: 'eule', vs: { jhemp: 'schildkroete' } },
   temperament: 'ruhig',

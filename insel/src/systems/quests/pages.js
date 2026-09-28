@@ -78,17 +78,19 @@ export function installQuestPages({ journal, game, quests, audio, icon, speech }
       const regular = units().filter((u) => !u.joker);
       const joker = units().filter((u) => u.joker && (!u.teacherOnly || us[u.id]));
       const patch = (u) => {
-        const done = us[u.id] === 'fertig';
         const q = questOf(u.id);
+        // Auch die gespielte Kurzfassung bringt den Aufnäher (state.patches), die Einheit bleibt dabei 'kurz'
+        const done = us[u.id] === 'fertig' || (st ? (st.get('patches', []) || []).includes(u.id) : false);
         const back = q && q.patch && q.patch.back ? q.patch.back : `${u.title}.`;
         const ic = q && q.patch && q.patch.icon ? q.patch.icon : (REGION_ICON[u.region] || 'stern');
         const col = q && q.patch && q.patch.color ? q.patch.color : (MODULE_COLOR[u.module] || '#fff');
         return `<button type="button" class="patch${done ? ' is-done' : ''}${us[u.id] && !done ? ' is-open' : ''}${fresh.includes(u.id) ? ' is-new' : ''}" data-patch="${esc(u.id)}" style="--card:${col}" aria-label="${esc(u.quest)}${done ? ', umdrehen' : ''}">
           ${done && stiche[u.id] ? `<span class="patch-stitch" title="Echte Welt: ein Stich">${icon('haken', { size: 16 })}</span>` : ''}
-          <span class="patch-inner"><span class="patch-front">${icon(done ? ic : 'schloss', { size: done ? 30 : 22 })}<small>${esc(u.joker ? 'J' + u.nr : String(u.nr))}</small></span><span class="patch-back"><small>${esc(u.quest)}</small><p>${esc(back)}</p></span></span>
+          <span class="patch-inner"><span class="patch-front">${icon(done ? ic : 'schloss', { size: done ? 30 : 22 })}<small>${esc(u.joker ? 'J' + u.nr : String(u.nr))}</small></span><span class="patch-back"><small>${esc((q && q.patch && q.patch.name) || u.quest)}</small><p>${esc(back)}</p></span></span>
         </button>`;
       };
-      const done = Object.values(us).filter((s) => s === 'fertig').length;
+      const havePatch = st ? (st.get('patches', []) || []) : [];
+      const done = regular.concat(joker).filter((u) => us[u.id] === 'fertig' || havePatch.includes(u.id)).length;
       el.innerHTML = `
         <p class="jn-lead">${done} von ${regular.length + joker.length} Aufnähern. Tippe einen an, um ihn umzudrehen.</p>
         <div class="patch-grid">${regular.map(patch).join('')}</div>
