@@ -180,11 +180,11 @@ try {
     await page.waitForFunction(() => { const l = [...document.querySelectorAll('[data-overlay="e04-spur"] .q4-need')].pop(); return l && l.textContent !== 'Schlaf'; }, null, { timeout: 5000 });
     const spw = await page.evaluate(() => ([...document.querySelectorAll('[data-overlay="e04-spur"] .q4-need')].pop() || {}).textContent);
     await shot(page, '508_spur_winde');
-    await page.evaluate(() => [...document.querySelectorAll('[data-overlay="e04-spur"] [data-q4="ok"]')].pop().click());
+    await page.evaluate(() => [...document.querySelectorAll('[data-overlay="e04-spur"] [data-q4]')].pop().click());
     await adv(page, 0.5);
     const li = await actAt(page, [-2.3, 0, 4.5], 'Crew-Liste');
     await page.waitForFunction(() => LUMO.ui.overlay.isOpen('e04-spur'), null, { timeout: 5000 });
-    await page.evaluate(() => [...document.querySelectorAll('[data-overlay="e04-spur"] [data-q4="ok"]')].pop().click());
+    await page.evaluate(() => [...document.querySelectorAll('[data-overlay="e04-spur"] [data-q4]')].pop().click());
     await adv(page, 0.6);
     const i6 = await info(page);
     check('Spuren: Winde (Anerkennung), Crew-Liste (Dazugehören) → Schritt „Tun will einen Motor“', spw === 'Anerkennung' && li.ok && i6.m.spuren.length === 3 && i6.q.step === 'motor', J({ spw, li, i6 }));
@@ -221,6 +221,11 @@ try {
 
     // ---- 8 Wasserwerk (e04-tank-leitungen) ----
     await exitNest(page);
+    await runScenario(page, ['site hafen.nest', 'wait 0.6']);
+    await frames(page, 3);
+    const ww = await page.evaluate(() => LUMO.interactions.current && LUMO.interactions.current.label);
+    await shot(page, '509b_wasserwerk_station');
+    check('Wasserwerk: klar benannte Station draußen am Nest („Wasserwerk“ statt „Start“)', ww === 'Wasserwerk', J(ww));
     await goAndAct(page, 'hafen.nest', () => !!document.querySelector('[data-overlay="minigame"]'));
     for (let i = 0; i < 20 && (await page.evaluate(() => LUMO.debug.questInfo().step === 'wasserwerk')); i++) {
       // Minispiel automatisch lösen, ohne auf das Promise zu warten (die Hülle schließt selbst)

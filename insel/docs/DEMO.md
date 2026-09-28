@@ -94,7 +94,60 @@ Belohnung). X beendet jederzeit ohne Verlust.
   Gefühlswort aus drei wählen. Unter dem „Haha“ liegt traurig.
 - Gesprächsthema danach: Wie merkt man, dass jemand Ruhe braucht? Was steckt manchmal hinter einem Witz?
 
-### Das Nest, der Blick (Gläser) und der Spiegel (Systeme für QUELLE)
+### Noch nicht drin (nächste Runde)
+Bootsfarbe und -name, der zweite Anleger (Bootshaus, Kürzungsliste: zu Fuß). Der nächste Raum aus der Abstimmung wird
+noch nicht gebaut.
+Die 30-Sekunden-Pause vor einem neuen Versuch ist noch nicht eingebaut (man darf sofort wieder).
+- Test: `flock /tmp/lumo-chrome.lock node tests/scenarios/kostprobe.mjs` · Unit-Tests `tests/unit/bergen.test.mjs`, `werft.test.mjs`.
+
+## Kostprobe Teil 2: Leck im Nest (Code QUELLE)
+Kurs-Einheit j1-e04 „Das Glas der Bedürfnisse“, ≈ 12–15 min. Der Satz dazu steht **nur** auf der Rückseite des
+Aufnähers („Wichtig und leer = größte Lücke.“) – im Spiel sagt ihn niemand, man findet ihn beim Spielen heraus.
+Die sechs Bedürfnisse heißen wie im Kurs: Dazugehören, Ruhe und Erholung, Anerkennung, Bewegung, Schlaf, Mitbestimmen.
+
+### So startest du
+- Nach OTTER: Pause (II) → Tagebuch → **Code** → `QUELLE`. Zum Ausprobieren ohne Vorlauf erst `HERZGLAS-99`, dann `QUELLE`.
+- Die Ziel-Zeile oben führt zur Tür **„Nest“** (Bootshaus am Strand westlich vom Steg, zu Fuß). Drinnen zeigt ein
+  schwebender gelber Kristall das nächste Ziel.
+- **Kurzfassung (3 min)**, falls die Zeit fehlt: Tagebuch → „Kurz spielen“ (Blick bei Ilda + Crew-Glas).
+
+### Was passiert
+1. **Wasser im Nest** (Ziel-Zeile zeigt zur Tür „Nest“; der Strand ums Nest ist grau): drinnen zwei Planken von der
+   Werkbank zum Leck tragen (hingehen liefert ab), dann die treibende Kiste mit dem **Haken** holen – Aktion **halten**,
+   zu früh loslassen heißt nur: sie treibt weiter. Treibgut: 2 Metall, 2 Holz, 1 Tau. Unter der losen Diele liegt
+   **Logbuchseite 2**: „Jhemp hat drei Nächte nicht geschlafen.“ Drinnen zeigt ein schwebender Kristall das nächste Ziel.
+2. **Ilda am Steg** hält zwei Laternengläser hoch (Bild über der Szene): „Welches fehlt mehr?“ Jede Antwort ist okay.
+   Danach hat der Blick die Stufe **Gläser**.
+3. **Tun neben dem Nest**: „Lasst mich alle in Ruhe!“ Beim Witz „Kapitän Titanic“ → „Genau hinsehen“ = **Unter der
+   Oberfläche**, das feine Wort ist **gekränkt** (steht in der Wortliste im Lehrerheft – vorher kurz einführen).
+   Danach stehen seine Blechdosen über ihm.
+4. **Spuren im Nest**: Hängematte (Dose Schlaf, klein), Winde (Anerkennung, hoch), Crew-Liste an der Tür (Dazugehören).
+   Die Hängematte kann man **flicken** – das ist die Falle: Tun sagt „Danke. Trotzdem.“ und bleibt grau.
+   An der Winde „Kurbeln“, an der Liste „Streifen antippen“ – Glimm kommentiert kurz.
+5. **Blitz-Motor**: Tun gibt dir den Plan. An der Werkbank darf man ihn bauen (Treibgut reicht). Sein Glas schießt
+   hoch, bekommt einen Riss und läuft bis zum nächsten Öffnen des Spiels aus. Keine Strafe, der Motor bleibt als Deko.
+6. **Vor der Crew reden**: „Du brauchst mehr Schlaf“ oder „Tun gehört zur Crew“ sind nicht falsch, bringen aber nichts
+   Neues. Erst „Tun hat die Winde repariert. Heimlich.“ öffnet den Bauplatz **Fotowand**.
+7. **Fotowand bauen** (Nest, „Bauen“) und „Bild aufhängen“: Tun bekommt Farbe, am Nest kommt ein Stück Farbe zurück.
+   Glimm: „Raus. Zum Wasserwerk.“
+8. **Das Wasserwerk** (Minispiel Tank-Leitungen): draußen vor dem Nest, Knopf **„Wasserwerk“**. Die Pointe: nie alle
+   Tanks gleichzeitig voll. Nach drei Versuchen geht es auch ohne Medaille weiter.
+9. **Jolie hinter dem Nest**: „Dableiben“ = **Leine halten** (sie testet: „Was willst du?“, „Geh doch.“). Dann: „Keiner
+   fragt mich was. Nie.“ Den Umzug kann man nicht ändern – aber eine eigene Ecke anbieten.
+10. **Jolies Ecke bauen** (Dachboden) und am Kartentisch „Route wählen“: „Ich wähle.“ (grauer Knopf) → „Klar. Wie
+    immer.“ (nichts ändert sich), „Jolie wählt.“ (Knopf in Jolies Farbe mit ihrer Muschel) → Marker auf der Karte,
+    ihr Glas steigt ein Stück (nicht voll).
+11. **Crew-Glas am Feuer**: Jede Figur wirft eine Muschel ohne Namen ins Glas, du auch (oder keine) – deine Wahl wird
+    nirgends gespeichert. Dann Abstimmung über den nächsten Raum (nur die Wahl wird gemerkt, gebaut wird später).
+    Aufnäher „Bedürfnis-Pegel“, Lichtsplitter, Farbwelle ums Nest.
+- **Kurzfassung (3 min)**: Blick (Gläser) bei Ilda + Crew-Glas → Blick-Stufe und Aufnäher (Tagebuch → „Kurz spielen“).
+- **Zuklappen ist sicher**: Es geht am zuletzt fertigen Schritt weiter; halbe Arbeit im Nest (z. B. eine Planke) bleibt.
+- **Echte-Welt-Karte:** „Welches Glas füllen bei dir Leute, nicht Dinge?“ · **Debrief:** „Warum hat die Hängematte Tun
+  nicht geholfen?“ · „Was wollte Tun, und was hat er gebraucht?“ Im Lehrerheft: Wortliste der Spielbegriffe mit Bild.
+  Eine eingelöste Quest heißt nicht, dass das Thema behandelt ist.
+- Test: `flock /tmp/lumo-chrome.lock node tests/scenarios/kostprobe2.mjs` · Unit-Tests `tests/unit/quelle.test.mjs`.
+
+### Das Nest, der Blick (Gläser) und der Blitz-Motor
 - **Nest:** das Bootshaus auf Pfählen am Strand westlich vom Steg, **zu Fuß** erreichbar (Tür „Nest“, nach OTTER).
   Drinnen: Werkbank (öffnet die Werft), Wasserluke mit Tuns Winde, Kartentisch, Hängematte, zwei Bauplätze
   (Fotowand, Dachboden-Ecke), die erst die Mission öffnet. Nest-Werte ändern sich nur durch Taten, nie durch Zeit.
@@ -103,50 +156,28 @@ Belohnung). X beendet jederzeit ohne Verlust.
   Füllung = voll, die größte Lücke leuchtet. Tun: Blechdosen, Jolie: Tintenfässer, Ilda: Laternengläser.
 - **Blitz-Motor** (an der Werft, erst mit Tuns Plan): füllt Tuns Glas sofort, bekommt einen Riss und tropft bis zur
   **nächsten Sitzung** (nächstes Öffnen des Spiels). Der Motor bleibt als Deko im Nest.
-- **Spiegel im Baumhaus:** freiwillig, privat, **standardmäßig aus**. Lehrer-Panel → Seite „Spiegel“ → „Spiegel-Stationen“
-  (erst nach der Datenschutz-Freigabe einschalten). Sechs Gläser mit den Kurs-Namen, „Nicht merken“ ist voreingestellt,
-  „Zeigen“ öffnet eine Vollbild-Karte nur mit dem Ausgewählten, „Ausblenden“ macht sie weg. Nichts wird gesendet.
 - Test: `flock /tmp/lumo-chrome.lock node tests/scenarios/nest.mjs` · Unit-Tests `tests/unit/nest.test.mjs`, `spiegel.test.mjs`.
 
-### Mission QUELLE „Leck im Nest“ (Code QUELLE, nach OTTER oder nach HERZGLAS-99, ≈ 12–15 min)
-Kurs-Einheit j1-e04 „Das Glas der Bedürfnisse“. Der Satz dazu steht **nur** auf der Rückseite des Aufnähers
-(„Wichtig und leer = größte Lücke.“) – im Spiel sagt ihn niemand, man findet ihn beim Spielen heraus.
-1. **Wasser im Nest** (Ziel-Zeile zeigt zur Tür „Nest“; der Strand ums Nest ist grau): drinnen zwei Planken von der
-   Werkbank zum Leck tragen (hingehen liefert ab), dann die treibende Kiste mit dem **Haken** holen – Aktion **halten**,
-   zu früh loslassen heißt nur: sie treibt weiter. Treibgut: 2 Metall, 2 Holz, 1 Tau. Unter der losen Diele liegt
-   **Logbuchseite 2**: „Jhemp hat drei Nächte nicht geschlafen.“ Drinnen zeigt ein schwebender Kristall das nächste Ziel.
-2. **Ilda am Steg** hält zwei Laternengläser hoch (Bild über der Szene): „Welches fehlt mehr?“ Jede Antwort ist okay.
-   Danach hat der Blick die Stufe **Gläser**.
-3. **Tun neben dem Nest**: „Lasst mich alle in Ruhe!“ Beim Witz „Kapitän Titanic“ → „Genau hinsehen“ = **Unter der
-   Oberfläche**, das feine Wort ist **gekränkt**. Danach stehen seine Blechdosen über ihm.
-4. **Spuren im Nest**: Hängematte (Dose Schlaf, klein), Winde (Anerkennung, hoch), Crew-Liste an der Tür (Dazugehören).
-   Die Hängematte kann man **flicken** – das ist die Falle: Tun sagt „Danke. Trotzdem.“ und bleibt grau.
-5. **Blitz-Motor**: Tun gibt dir den Plan. An der Werkbank darf man ihn bauen (Treibgut reicht). Sein Glas schießt
-   hoch, bekommt einen Riss und läuft bis zum nächsten Öffnen des Spiels aus. Keine Strafe, der Motor bleibt als Deko.
-6. **Vor der Crew reden**: „Du brauchst mehr Schlaf“ oder „Tun gehört zur Crew“ sind nicht falsch, bringen aber nichts
-   Neues. Erst „Tun hat die Winde repariert. Heimlich.“ öffnet den Bauplatz **Fotowand**.
-7. **Fotowand bauen** (Nest, „Bauen“) und „Bild aufhängen“: Tun bekommt Farbe, am Nest kommt ein Stück Farbe zurück.
-8. **Das Wasserwerk** (Minispiel Tank-Leitungen): nie alle Tanks gleichzeitig voll.
-9. **Jolie hinter dem Nest**: „Dableiben“ = **Leine halten** (sie testet: „Was willst du?“, „Geh doch.“). Dann: „Keiner
-   fragt mich was. Nie.“ Den Umzug kann man nicht ändern – aber eine eigene Ecke anbieten.
-10. **Jolies Ecke bauen** (Dachboden) und am Kartentisch „Route wählen“: „Ich wähle.“ → „Klar. Wie immer.“ (nichts
-    ändert sich), „Jolie wählt.“ → Marker auf der Karte, ihr Glas steigt ein Stück (nicht voll).
-11. **Crew-Glas am Feuer**: Jede Figur wirft eine Muschel ohne Namen ins Glas, du auch (oder keine) – deine Wahl wird
-    nirgends gespeichert. Dann Abstimmung über den nächsten Raum (nur die Wahl wird gemerkt, gebaut wird später).
-    Aufnäher „Bedürfnis-Pegel“, Lichtsplitter, Farbwelle ums Nest.
-- **Kurzfassung (3 min)**: Blick (Gläser) bei Ilda + Crew-Glas → Blick-Stufe und Aufnäher (Tagebuch → „Kurz spielen“).
-- **Zuklappen ist sicher**: Es geht am zuletzt fertigen Schritt weiter; halbe Arbeit im Nest (z. B. eine Planke) bleibt.
-- **Spiegel im Baumhaus**: Ist er im Lehrer-Panel eingeschaltet, kann man danach freiwillig die eigenen Gläser ansehen.
-- **Echte-Welt-Karte:** „Welches Glas füllen bei dir Leute, nicht Dinge?“ · **Debrief:** „Warum hat die Hängematte Tun
-  nicht geholfen?“ · „Was wollte Tun, und was hat er gebraucht?“ Im Lehrerheft: Wortliste der Spielbegriffe mit Bild.
-  Eine eingelöste Quest heißt nicht, dass das Thema behandelt ist.
-- Test: `flock /tmp/lumo-chrome.lock node tests/scenarios/kostprobe2.mjs` · Unit-Tests `tests/unit/quelle.test.mjs`.
+### Der Spiegel (privat, standardmäßig AUS)
+- Im Baumhaus steht ein **Spiegel**: Wer will, stellt dort die eigenen sechs Gläser ein (wie wichtig, wie voll).
+  Freiwillig, ohne Punkte, ohne Rückmeldung an die Lehrkraft.
+- **Er ist aus**, bis die **Datenschutz-Freigabe** der Schule da ist. Bis dahin nicht einschalten.
+- Für eine eigene Vorschau (z. B. am Lehrer-Gerät): Code `LEUCHTFEUER-42` → Lehrer-Panel → Seite **„Spiegel“** →
+  Schalter **„Spiegel-Stationen“** (Hinweis: „Erst nach Datenschutz-Freigabe einschalten.“). Der Schalter gilt für das
+  ganze Gerät. Danach wieder ausschalten.
+- Was gespeichert wird: nur auf dem Gerät, nur im privaten Teil des Spielstands, **nie** im Export. „Nicht merken“ ist
+  voreingestellt – dann wird gar nichts gespeichert. „Zeigen“ öffnet eine Vollbild-Karte, die nichts speichert.
+  „Neu anfangen“ und „wipe“ löschen die Werte. Die Lehrkraft sieht nicht, ob jemand den Spiegel benutzt hat.
 
-### Noch nicht drin (nächste Runde)
-Bootsfarbe und -name, der zweite Anleger (Bootshaus, Kürzungsliste: zu Fuß). Der nächste Raum aus der Abstimmung wird
-noch nicht gebaut.
-Die 30-Sekunden-Pause vor einem neuen Versuch ist noch nicht eingebaut (man darf sofort wieder).
-- Test: `flock /tmp/lumo-chrome.lock node tests/scenarios/kostprobe.mjs` · Unit-Tests `tests/unit/bergen.test.mjs`, `werft.test.mjs`.
+### Ehrliche Lücken (Teil 2)
+- Tun und Jolie stehen nie **im** Nest; ihre Sätze dort erscheinen als Sprechblase ohne Figur.
+- Im Nest wirkt das Wasser am Boden noch eher grau-blau; das Sprühen am Leck macht es lesbar.
+- Das Crew-Glas speichert nur die gewählte Raum-Idee; der Raum selbst wird erst später gebaut.
+- Die 30-Sekunden-Pause vor einem neuen Versuch bei Gesprächs-Minispielen fehlt noch (man darf sofort wieder).
+- Das Nest ist nur zu Fuß erreichbar (kein zweiter Anleger fürs Boot, Kürzungsliste).
+- Die Aufnäher-Stelle „nest“ im Schleier belegt den vierten Platz, der bisher für Rückfälle frei war.
+- Mehrere Szenen am selben Ort starten direkt hintereinander (z. B. nach dem Wasserwerk sofort Jolie).
+- Der Spiegel-Schalter merkt nicht, ob ein Gerät geteilt ist (eine Einstellung „Geteiltes Gerät“ gibt es noch nicht).
 
 ## Die Codes
 | Code | Einheit | Quest | Dauer | Was passiert |

@@ -73,6 +73,8 @@ test('Quest-Daten: 11 Schritte wie WERKZEUG-QUESTS Nr. 1, Kurzfassung Blick + Cr
   assert.equal(QUEST.echteWelt, 'Welches Glas füllen bei dir Leute, nicht Dinge?');
   assert.deepEqual(QUEST.debrief, ['Warum hat die Hängematte Tun nicht geholfen?', 'Was wollte Tun, und was hat er gebraucht?']);
   assert.equal(QUEST.steps.find((s) => s.id === 'wasserwerk').params.minigame, 'e04-tank-leitungen');
+  assert.equal(QUEST.steps.find((s) => s.id === 'wasserwerk').params.label, 'Wasserwerk', 'Station heißt „Wasserwerk“, nicht nur „Start“');
+  assert.ok(QUEST.lehrerheft.wortliste.some((w) => w.wort === 'gekränkt'), 'gekränkt steht im Lehrerheft (vorher einführen)');
   assert.equal(QUEST.grants, undefined, 'die Blick-Stufe gibt Ilda mitten in der Quest, nicht der Start');
   const c = vctx(); assert.ok(VALIDATORS.quests(c, QUEST), JSON.stringify(c.errors));
   for (const d of DIALOGE) { const c2 = vctx(); assert.ok(VALIDATORS.dialogues(c2, d), d.id + ' ' + JSON.stringify(c2.errors)); }

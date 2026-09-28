@@ -339,8 +339,10 @@ function minigameStep(icon) {
     };
     const offer = () => {
       const p = r.params.at ? r.ctx.resolvePos(r.params.at) : r.ctx.player();
-      r.ctx.marker(p, { label: 'Start', icon });
-      interact(r, { id: 'mini-' + r.step.id, x: p.x, z: p.z, radius: 4, label: 'Start', priority: 2, onAction: play });
+      // params.label: sichtbarer Name der Station (z. B. „Wasserwerk“), sonst „Start“
+      const label = r.params.label || 'Start';
+      r.ctx.marker(p, { label, icon });
+      interact(r, { id: 'mini-' + r.step.id, x: p.x, z: p.z, radius: 4, label, priority: 2, onAction: play });
     };
     return Object.assign(r, {
       describe: () => ({ label: r.step.label || `Minispiel: ${r.params.minigame}`, target: r.params.at ? r.ctx.resolvePos(r.params.at) : null, icon }),

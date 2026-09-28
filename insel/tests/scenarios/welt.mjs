@@ -42,7 +42,7 @@ try {
     bodies: LUMO.world.island.WATER_BODIES.map((b) => b.id), props: LUMO.props.types.length, budget: LUMO.debug.propsBudget().filter((b) => !b.ok),
   }));
   check('Plugins props + welt installiert', api.plugins.includes('props') && api.plugins.includes('welt') && api.failed.length === 0, JSON.stringify(api.plugins));
-  check('Schleier: 8 Zonen (mit Moor) + Standard-Flecken', api.slots.length === 11 && api.zones[7] === 'moor' && api.patches.includes('mangrove') && api.patches.includes('glimmer'), api.slots.join(','));
+  check('Schleier: 8 Zonen (mit Moor) + Standard-Flecken (mit „nest“ für QUELLE)', api.slots.length === 12 && api.slots.includes('nest') && api.zones[7] === 'moor' && api.patches.includes('mangrove') && api.patches.includes('glimmer'), api.slots.join(','));
   check('Gewässer und Räume registriert', api.bodies.length >= 10 && api.rooms.length >= 7, `${api.bodies.length} Gewässer · ${api.rooms.length} Räume`);
   check('Requisiten: 17 Typen, alle unter 3k Dreiecken, Dekor gesetzt', api.props >= 17 && api.budget.length === 0 && api.decor >= 20, `${api.decor} Dekor-Gruppen`);
 

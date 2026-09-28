@@ -53,6 +53,9 @@ export default {
     karte: ['Jetzt die Karte.'],
     route: ['Nicht voll. Aber mehr.'],
     raus: ['Raus. Draußen geht’s weiter.'],
+    winde: ['Läuft wie neu. Wer war das?'],
+    liste: ['Da fehlt einer.'],
+    wasserwerk: ['Raus. Zum Wasserwerk.'],
   },
   zyniker: ['Gefühle? Nutzlos. Angeblich.', 'Regeln. Gähn. Okay, die war gut.', 'Ich war nie grau. Fast nie.', 'Die Insel schweigt. Ich meistens auch.'],
 };

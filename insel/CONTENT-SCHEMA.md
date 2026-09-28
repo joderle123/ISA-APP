@@ -160,9 +160,11 @@ export const questBeispiel = {
 // befreunden { creature, rule:'nicht-rennen'|'linie-achten'|'still-sitzen'|'fangen'|'frisch-fuettern'|'stillstehen-umsehen', seconds? }
 // lotsen     { guide, mode:'befehle'|'folgen', stoppRecht:true, visualFallback:true, room }
 // boss       { phases:[{zone, template, params, pulsCap}], win:'hilfe-holen'|'zuschauer'|'lauschen'|'fakten' }
-// bauen / pruefung { minigame }
+// bauen / pruefung { minigame, label? }   label = Name der Station (sonst „Start“)
 // nachtwache { pool:[id] }
 // erinnerung { memory }
+// QuestDef.lehrerheft? (nur Lehrerheft, nie im Spiel): { wortliste:[{ wort, bild:icon, heisst }], hinweis, spiegel } – Beispiel quests/j1-e04.js
+// QuestDef.patch.name? Name des Aufnähers (Tagebuch-Rückseite), sonst der Quest-Titel aus units.js
 // auftrag    { flag, at?:Pos, room? }   Missions-Plugin spielt den Schritt (z. B. im Nest), fertig bei flags.<flag> (QUELLE)
 
 // ---- MinigameDef (Vorlagen: rennen|rhythmus|satzbau|duell|verteidigung|lotsen|bauen|wuerfel|leine|oberflaeche) ----

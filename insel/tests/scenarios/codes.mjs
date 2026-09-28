@@ -85,7 +85,7 @@ try {
   await page.waitForFunction(() => !!document.querySelector('.ov[data-overlay=lehrer].is-in'), null, { timeout: 20000 });
   await frames(page, 2);
   const tp = await page.evaluate(() => ({ teacher: LUMO.codes.isTeacher(), open: LUMO.plugins.teacher.isOpen, page: document.querySelector('.ov[data-overlay=lehrer] .jn-page').dataset.pageId, tabs: [...document.querySelectorAll('.ov[data-overlay=lehrer] [data-page]')].map((b) => b.dataset.page), rows: document.querySelectorAll('.ov[data-overlay=lehrer] tr[data-unit]').length, j08: !!document.querySelector('.ov[data-overlay=lehrer] tr[data-unit="j1-j08"]'), x: !!document.querySelector('.ov[data-overlay=lehrer] .ov-close'), used: LUMO.state.get('codesUsed', []), lehrerPage: LUMO.ui.journal.pages.some((p) => p.id === 'lehrer') }));
-  check('LEUCHTFEUER-42 öffnet das Lehrer-Panel: 6 Seiten, 39 Einheiten inkl. j08, X, Tagebuch-Seite „Lehrer“', tp.teacher && tp.open && tp.page === 'codes' && tp.tabs.length === 6 && tp.rows === 39 && tp.j08 && tp.x && tp.used.includes('teacher:teacher') && tp.lehrerPage, JSON.stringify(tp));
+  check('LEUCHTFEUER-42 öffnet das Lehrer-Panel: 7 Seiten (mit „Spiegel“), 39 Einheiten inkl. j08, X, Tagebuch-Seite „Lehrer“', tp.teacher && tp.open && tp.page === 'codes' && tp.tabs.length === 7 && tp.tabs.includes('spiegel') && tp.rows === 39 && tp.j08 && tp.x && tp.used.includes('teacher:teacher') && tp.lehrerPage, JSON.stringify(tp));
   await shot(page, '112_lehrer_codes');
   // Ersatzcodes einblenden
   await page.click('.ov[data-overlay=lehrer] [data-show-alt]');

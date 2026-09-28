@@ -230,7 +230,7 @@ export default {
         const h = ui.overlay.open({
           id, title, icon, kind: 'panel', pause: true,
           content: (body) => {
-            body.innerHTML = `${html}<div class="ov-actions">${buttons.map((b) => `<button class="btn ${b.primary === false ? '' : 'btn-primary'} btn-big" type="button" data-q4="${esc(b.key)}">${ui.icon(b.icon || 'check', { size: 24 })}<span>${esc(b.label)}</span></button>`).join('')}</div>`;
+            body.innerHTML = `${html}<div class="ov-actions">${buttons.map((b) => `<button class="btn ${b.primary === false ? '' : 'btn-primary'} btn-big" type="button" data-q4="${esc(b.key)}"${b.color ? ` style="background:${esc(b.color)};color:#1d1330"` : ''}>${ui.icon(b.icon || 'check', { size: 24 })}<span>${esc(b.label)}</span></button>`).join('')}</div>`;
             body.querySelectorAll('[data-q4]').forEach((b) => b.addEventListener('click', () => { res = b.dataset.q4; sound('tile'); h.close('ok'); }));
           },
           onClose: () => resolve(res),
@@ -241,8 +241,8 @@ export default {
     // ---- Spuren (Tuns drei Dosen) ----
     const SPUR = {
       haengematte: { need: 'schlaf', title: 'Die Hängematte', lines: ['Zerrissen. Tun schläft auf dem Boden.'] },
-      winde: { need: 'anerkennung', title: 'Die Winde', lines: ['Neues Tau. Frisch geölt. Ein T im Holz.', 'Gemerkt hat es keiner.'] },
-      liste: { need: 'dazugehoeren', title: 'Die Crew-Liste', lines: ['Jolie. Ilda. Und ein leerer Streifen.'] },
+      winde: { need: 'anerkennung', title: 'Die Winde', lines: ['Neues Tau. Frisch geölt. Ein T im Holz.', 'Gemerkt hat es keiner.'], tat: { key: 'kurbeln', label: 'Kurbeln', icon: 'seil', sound: 'click' } },
+      liste: { need: 'dazugehoeren', title: 'Die Crew-Liste', lines: ['Jolie. Ilda. Und ein leerer Streifen.'], tat: { key: 'tippen', label: 'Streifen antippen', icon: 'hand', sound: 'tile' } },
     };
     async function spur(id, { flicken: doFlicken = null } = {}) {
       const S = SPUR[id];
@@ -250,12 +250,15 @@ export default {
       const b = need(S.need);
       const kannFlicken = id === 'haengematte' && !F('haengematte');
       const html = () => `<div class="q4-card">${hasGlas() ? `<div class="q4-ves" data-ves>${dose('tun', S.need)}</div>` : '<div></div>'}<div>${S.lines.map((l) => `<p>${esc(l)}</p>`).join('')}${hasGlas() ? `<span class="q4-need" style="background:${esc(b.color)}">${esc(b.name)}</span>` : ''}</div></div>`;
-      const buttons = kannFlicken ? [{ key: 'flicken', label: 'Flicken', icon: 'hammer' }, { key: 'ok', label: 'Lassen', icon: 'weiter', primary: false }] : undefined;
-      let r;
-      if (doFlicken !== null && typeof document === 'undefined') r = doFlicken ? 'flicken' : 'ok';
+      // Winde und Liste: eine kleine, folgenlose Handlung (Kurbeln / Antippen) statt nur „Weiter“ – Glimm kommentiert danach
+      const buttons = kannFlicken ? [{ key: 'flicken', label: 'Flicken', icon: 'hammer' }, { key: 'ok', label: 'Lassen', icon: 'weiter', primary: false }]
+        : S.tat ? [{ key: S.tat.key, label: S.tat.label, icon: S.tat.icon }] : undefined;
+      let r, pause = 0;
+      const weiter = S.tat ? S.tat.key : 'ok';
+      if (doFlicken !== null && typeof document === 'undefined') r = doFlicken && kannFlicken ? 'flicken' : weiter;
       else {
         const p = karte({ id: 'e04-spur', title: S.title, icon: id === 'liste' ? 'team' : id === 'winde' ? 'seil' : 'haengematte', html: html(), buttons });
-        if (doFlicken !== null) setTimeout(() => { const el = document.querySelector(`[data-overlay="e04-spur"] [data-q4="${doFlicken && kannFlicken ? 'flicken' : 'ok'}"]`); if (el) el.click(); }, 60);
+        if (doFlicken !== null) setTimeout(() => { const el = document.querySelector(`[data-overlay="e04-spur"] [data-q4="${doFlicken && kannFlicken ? 'flicken' : weiter}"]`); if (el) el.click(); }, 60);
         r = await p;
       }
       const neu = !F('spur.' + id);
@@ -268,11 +271,14 @@ export default {
         emit('quelle:spur', { id, flicken: true });
         await ui.say({ who: 'tun', text: 'Danke. Trotzdem.' });
         glimm('haengematte');
-      } else emit('quelle:spur', { id, flicken: false });
+      } else {
+        emit('quelle:spur', { id, flicken: false });
+        if (S.tat && r === S.tat.key) { sound(S.tat.sound); glimm(id, 2.4); pause = 2600; }
+      }
       if (neu && ['haengematte', 'winde', 'liste'].every((k) => F('spur.' + k)) && step() === 'spuren' && !F('spuren')) {
         setF('spuren');
-        glimm('spurenFertig', 3.4);
-        setTimeout(() => glimm('raus'), 3800);
+        setTimeout(() => glimm('spurenFertig', 3.4), pause);
+        setTimeout(() => glimm('raus'), pause + 3800);
       }
       sync(); save();
       return true;
@@ -417,7 +423,7 @@ export default {
         sound('chime');
         await ui.say({ who: 'tun', text: 'Ich? An der Wand? … Okay. Cool.' });
         glimm('bild');
-        setTimeout(() => glimm('raus'), 3000);
+        setTimeout(() => glimm('wasserwerk'), 3000);
         sync(); save();
         return true;
       },
@@ -426,7 +432,7 @@ export default {
         if (step() !== 'dachboden' || F('dachboden') || nest.slots.state('dachboden') !== 'gebaut') return false;
         let r = wer;
         if (!r && typeof document !== 'undefined') {
-          r = await karte({ id: 'e04-karte', title: 'Die nächste Route', icon: 'karte', html: '<div class="q4-card"><div></div><div><p>Die Karte ist leer.</p><p>Wer wählt?</p></div></div>', buttons: [{ key: 'ich', label: 'Ich wähle.', icon: 'hand' }, { key: 'jolie', label: 'Jolie wählt.', icon: 'karte' }] });
+          r = await karte({ id: 'e04-karte', title: 'Die nächste Route', icon: 'karte', html: '<div class="q4-card"><div></div><div><p>Die Karte ist leer.</p><p>Wer wählt?</p></div></div>', buttons: [{ key: 'ich', label: 'Ich wähle.', icon: 'hand', primary: false }, { key: 'jolie', label: 'Jolie wählt.', icon: (content.get('npcs', 'jolie') || {}).icon || 'muschel', color: (content.get('npcs', 'jolie') || {}).color || '#39d0c8' }] });
         }
         if (r !== 'ich' && r !== 'jolie') return false;
         emit('quelle:route', { wer: r });

@@ -12,7 +12,7 @@ export default {
         { label: 'Nichts sagen', icon: 'ohr', goto: 'c2' },
       ],
     },
-    c: { speaker: 'tun', say: 'Nix. Das Nest säuft ab. Jolie schmollt. Super.', anim: 'angry', goto: 'd' },
+    c: { speaker: 'tun', say: 'Das Nest säuft ab. Super.', anim: 'angry', goto: 'd' },
     c2: { speaker: 'tun', say: 'Starr nicht so. Bin kein Aquarium.', anim: 'angry', goto: 'd' },
     d: {
       speaker: 'tun', say: 'Ist doch egal, Kapitän Titanic. Haha.', anim: 'cheer',
