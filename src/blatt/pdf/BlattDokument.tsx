@@ -12,6 +12,7 @@ import { eldibDomainById, eldibGoalById } from '../../data/taxonomy'
 import { Bausteine, nummerieren, Plakette, Fliess, type Ctx } from './bausteine'
 import { LEHRER_MASSE, MASSE, SCHRIFT, SEITE, TEXTE, dauerText, typo, type Masse } from './stil'
 import { ELDIB_FR } from '../eldib-fr'
+import { URHEBER, URHEBER_NAME } from '../../lib/urheber'
 
 const BREITE = 595.28 - SEITE.rand * 2
 
@@ -99,19 +100,26 @@ function Kopfzeile({ blatt, nr, sprache, p, m, lehrer }: { blatt: Blatt; nr?: st
   )
 }
 
+/** Fußzeile: Marke, Blatt und Seitenzahl, darunter klein der Urheber-Vermerk in der Sprache des Blatts.
+ *  Sie steht tiefer als der Inhalt je reicht (SEITE.unten) – auch auf ganz vollen Seiten bleibt Luft. */
 function Fusszeile({ blatt, nr, sprache }: { blatt: Blatt; nr?: string; sprache: Sprache }) {
   const tx = TEXTE[sprache]
   return (
-    <View fixed style={{ position: 'absolute', left: SEITE.rand, right: SEITE.rand, bottom: 20, flexDirection: 'row', alignItems: 'center', borderTopWidth: 0.6, borderTopColor: NEUTRAL.haarlinie, paddingTop: 6 }}>
-      <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 7, color: NEUTRAL.marke, letterSpacing: 0.4 }}>CDSE Toolbox</Text>
-      <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 7, color: NEUTRAL.sehrLeise, marginLeft: 6, flex: 1 }}>
-        {[nr ? `${tx.arbeitsblatt} ${nr}` : null, blattInhalt(blatt, sprache).titel].filter(Boolean).join('  ·  ')}
-      </Text>
-      {/* Seiten zählen je Blatt (auch in einer Mappe); ein einseitiger Teil braucht keine Seitenzahl */}
-      <Text
-        style={{ fontFamily: SCHRIFT.jugend, fontSize: 7, color: NEUTRAL.sehrLeise }}
-        render={({ subPageNumber, subPageTotalPages }) => (subPageTotalPages > 1 ? `${tx.seite} ${subPageNumber} / ${subPageTotalPages}` : '')}
-      />
+    <View fixed style={{ position: 'absolute', left: SEITE.rand, right: SEITE.rand, bottom: 16, borderTopWidth: 0.6, borderTopColor: NEUTRAL.haarlinie, paddingTop: 4.5 }}>
+      <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+        <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 7, color: NEUTRAL.marke, letterSpacing: 0.4 }}>CDSE Toolbox</Text>
+        {/* immer eine Zeile: ein sehr langer Titel endet mit „…“, statt die Fußzeile zu erhöhen */}
+        <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 7, color: NEUTRAL.sehrLeise, marginLeft: 6, flex: 1, maxLines: 1, textOverflow: 'ellipsis' }}>
+          {[nr ? `${tx.arbeitsblatt} ${nr}` : null, blattInhalt(blatt, sprache).titel].filter(Boolean).join('  ·  ')}
+        </Text>
+        {/* Seiten zählen je Blatt (auch in einer Mappe); ein einseitiger Teil braucht keine Seitenzahl.
+            Feste Breite: Der Titel wird gesetzt, bevor die Seitenzahl feststeht – so berührt er sie nie. */}
+        <Text
+          style={{ width: 46, marginLeft: 8, fontFamily: SCHRIFT.jugend, fontSize: 7, color: NEUTRAL.sehrLeise, textAlign: 'right' }}
+          render={({ subPageNumber, subPageTotalPages }) => (subPageTotalPages > 1 ? `${tx.seite} ${subPageNumber} / ${subPageTotalPages}` : '')}
+        />
+      </View>
+      <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 6, color: NEUTRAL.sehrLeise, marginTop: 2.5, letterSpacing: 0.15 }}>{URHEBER[sprache]}</Text>
     </View>
   )
 }
@@ -330,7 +338,7 @@ export function BlattSeiten({ blatt, opt }: { blatt: Blatt; opt?: BlattOptionen 
 export function BlattDokument({ blatt, opt }: { blatt: Blatt; opt?: BlattOptionen }) {
   const inhalt = blattInhalt(blatt, opt?.sprache ?? 'de')
   return (
-    <Document title={inhalt.titel} author="CDSE Toolbox" creator="CDSE Toolbox" producer="CDSE Toolbox" language={opt?.sprache === 'fr' ? 'fr' : 'de'}>
+    <Document title={inhalt.titel} author={URHEBER_NAME} creator="CDSE Toolbox" producer="CDSE Toolbox" language={opt?.sprache === 'fr' ? 'fr' : 'de'}>
       <BlattSeiten blatt={blatt} opt={opt} />
     </Document>
   )
@@ -340,7 +348,7 @@ export function BlattDokument({ blatt, opt }: { blatt: Blatt; opt?: BlattOptione
 export function MappeDokument({ blaetter, opt, titel }: { blaetter: { blatt: Blatt; nr?: string; sprache?: Sprache }[]; opt?: BlattOptionen; titel: string }) {
   const fr = blaetter.length > 0 && blaetter.every((x) => (x.sprache ?? opt?.sprache) === 'fr')
   return (
-    <Document title={titel} author="CDSE Toolbox" creator="CDSE Toolbox" producer="CDSE Toolbox" language={fr ? 'fr' : 'de'}>
+    <Document title={titel} author={URHEBER_NAME} creator="CDSE Toolbox" producer="CDSE Toolbox" language={fr ? 'fr' : 'de'}>
       {blaetter.map(({ blatt, nr, sprache }) => (
         <BlattSeiten key={blatt.id} blatt={blatt} opt={{ ...opt, nr, sprache: sprache ?? opt?.sprache }} />
       ))}

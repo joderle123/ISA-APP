@@ -523,10 +523,13 @@ export function WorksheetView({
   worksheet: w,
   themeId,
   fallbackTitle,
+  vermerk,
 }: {
   worksheet: Worksheet
   themeId?: string
   fallbackTitle: string
+  /** Urheber-Vermerk unten auf dem Blatt (nur bei KI-Materialien) */
+  vermerk?: string
 }) {
   const { deep, light } = themeColor(themeId)
   let task = 0
@@ -565,6 +568,9 @@ export function WorksheetView({
           if (isTask) task += 1
           return <Block key={i} block={b} num={isTask ? task : null} deep={deep} light={light} />
         })}
+
+        {/* wie die Fußzeile des gedruckten Blatts */}
+        {vermerk ? <p className="urheber mt-6 text-[11.5px]">{vermerk}</p> : null}
       </div>
     </div>
   )

@@ -5,7 +5,8 @@
 // abhaken und Notiz (bleiben nach Neuladen), „Heute gehalten“, Gruppen (Name nie leer), Deep-Links,
 // Reiterwechsel mit offener Einheit („Jahresweg“, Zurück), PDF der Schülerblätter,
 // Grundlagen, Druckansicht, Spickzettel auf einer Seite, Blatt-Vorschau, Kurs-Blätter über ihre
-// Aufgabentexte auffindbar, gemerkte Sprache FR ohne Folgen im Kurs, Handy-Breite.
+// Aufgabentexte auffindbar, gemerkte Sprache FR ohne Folgen im Kurs, Handy-Breite, Urheber-Vermerk
+// (Einheit, Joker und Grundlagen am Ende der Seite und im Druck, Spickzettel, jede Seite der Schülerblätter).
 const path = require('path')
 const fs = require('fs')
 let chromium
@@ -41,6 +42,22 @@ function pruefe(bed, text) {
   else {
     fehlerZahl++
     console.log('✗ ' + text)
+  }
+}
+
+/** Urheber-Vermerk wie in src/lib/urheber.ts (dort steht er an einer Stelle). */
+const URHEBER = (() => {
+  const q = fs.readFileSync(path.join(__dirname, '..', 'src', 'lib', 'urheber.ts'), 'utf8')
+  return { de: /\bde: '([^']+)'/.exec(q)[1], fr: /\bfr: '([^']+)'/.exec(q)[1], name: /URHEBER_NAME = '([^']+)'/.exec(q)[1] }
+})()
+
+/** Text je Seite und Autor einer PDF-Datei (braucht python3 mit PyMuPDF; sonst null). */
+function pdfLesen(datei) {
+  try {
+    const py = 'import json, sys, pymupdf; d = pymupdf.open(sys.argv[1]); print(json.dumps({"seiten": [p.get_text() for p in d], "autor": d.metadata.get("author")}))'
+    return JSON.parse(require('child_process').execFileSync('python3', ['-c', py, datei]).toString())
+  } catch {
+    return null
   }
 }
 
@@ -82,6 +99,8 @@ function pruefe(bed, text) {
   pruefe((await page.locator('.ku-fahrplan button.an').count()) === 1, 'im Fahrplan ist genau ein Schritt markiert')
   pruefe((await page.textContent('.ku-schritt-zeit')).includes('0–' + e1.schritte[0].dauer), 'erster Schritt zeigt seine Minuten')
   pruefe((await page.locator('.ku-material input').count()) === e1.material.length, 'Material als Checkliste')
+  const vermerkAmEnde = () => page.evaluate(() => document.querySelector('article.ku-einheit > :last-child.urheber')?.textContent ?? '')
+  pruefe((await vermerkAmEnde()) === URHEBER.de, 'Einheit: Urheber-Vermerk am Ende der Seite')
 
   // Material abhaken + Notiz → bleibt nach Neuladen
   await page.locator('.ku-material input').first().check()
@@ -98,6 +117,8 @@ function pruefe(bed, text) {
   await page.emulateMedia({ media: 'print' })
   pruefe(await page.locator('body > .ku-druck').isVisible(), 'Druckfassung im Druck sichtbar')
   pruefe(!(await page.locator('header.sticky').isVisible()), 'Kopfzeile im Druck ausgeblendet')
+  pruefe((await page.evaluate(() => document.querySelector('body > .ku-druck > :last-child')?.textContent)) === URHEBER.de, 'Druckfassung endet mit dem Urheber-Vermerk')
+  pruefe(await page.locator('body > .ku-druck > :last-child').isVisible(), 'Urheber-Vermerk im Druck sichtbar')
   await page.emulateMedia({ media: 'screen' })
   pruefe(!(await page.locator('body > .ku-druck').isVisible()), 'Druckfassung am Bildschirm unsichtbar')
 
@@ -194,13 +215,15 @@ function pruefe(bed, text) {
       window.print = () => (window.__druck = document.documentElement.outerHTML.replace(/<script[\s\S]*?<\/script>/gi, ''))
     })
     await page.locator('.ku-einheit-aktionen button', { hasText: 'Spickzettel' }).click()
+    const html = await page.evaluate(() => window.__druck)
     const druck = await ctx.newPage()
-    await druck.setContent(await page.evaluate(() => window.__druck))
+    await druck.setContent(html)
     await druck.emulateMedia({ media: 'print' })
     const pdf = await druck.pdf({ format: 'A4', preferCSSPageSize: true })
     await druck.close()
     const seiten = (pdf.toString('latin1').match(/\/Type\s*\/Page(?![s\w])/g) || []).length
     pruefe(seiten === 1, `Spickzettel ${id}: eine Seite (${seiten})`)
+    pruefe(html.includes(`<p class="ku-druck-urheber">${URHEBER.de}</p>`), `Spickzettel ${id}: mit Urheber-Vermerk`)
   }
 
   // Schülerblätter des Kurses: über Wörter aus ihren Aufgabentexten zu finden (Suche der Arbeitsblätter)
@@ -230,6 +253,8 @@ function pruefe(bed, text) {
     await page.locator('.ku-einheit-aktionen button', { hasText: 'Schülerblätter (PDF)' }).click()
     const name = (await dl).suggestedFilename()
     pruefe(!name.includes('_FR'), `Kurs: „Schülerblätter (PDF)“ bleibt deutsch (${name})`)
+    const pdf = pdfLesen(await (await dl).path())
+    if (pdf) pruefe(pdf.seiten.length > 0 && pdf.seiten.every((t) => t.includes(URHEBER.de) && !t.includes(URHEBER.fr)), `Kurs: Schülerblätter mit deutschem Urheber-Vermerk auf allen ${pdf.seiten.length} Seiten`)
   }
   await page.evaluate(() => localStorage.removeItem('cdse-blatt-sprache-v1'))
 
@@ -237,10 +262,21 @@ function pruefe(bed, text) {
   await page.goto(DATEI + '#kurs=grundlagen')
   await page.waitForSelector('#ku-gl-titel')
   pruefe(true, 'Grundlagen-Seite öffnet')
+  pruefe((await page.evaluate(() => document.querySelector('article.ku-einheit > .urheber')?.textContent)) === URHEBER.de, 'Grundlagen: Urheber-Vermerk am Ende der Seite')
+  pruefe((await page.evaluate(() => document.querySelector('body > .ku-druck > :last-child')?.textContent)) === URHEBER.de, 'Grundlagen: Druckfassung endet mit dem Urheber-Vermerk')
   if (jahrZahl === 3) {
     const anzahl = (nr) => kurs.find((k) => k.jahr && k.jahr.nr === nr).module.flatMap((m) => m.einheiten).length
     const gl = await page.textContent('.ku-gl-inhalt')
     pruefe(gl.includes(`${anzahl(1)} Einheiten in Kursjahr 1`) && (anzahl(2) !== anzahl(3) || gl.includes(`je ${anzahl(2)} in Kursjahr 2 und 3`)), 'Grundlagen nennen die Einheiten aller Kursjahre')
+  }
+
+  // Joker: Urheber-Vermerk am Ende der Seite und im Druck
+  const joker = [...einheiten.values()].find((e) => e.joker)
+  if (joker) {
+    await page.goto(DATEI + '#kurs=' + joker.id)
+    await page.waitForSelector('.ku-einheit-kopf')
+    pruefe((await vermerkAmEnde()) === URHEBER.de, `Joker ${joker.id}: Urheber-Vermerk am Ende der Seite`)
+    pruefe((await page.evaluate(() => document.querySelector('body > .ku-druck > :last-child')?.textContent)) === URHEBER.de, `Joker ${joker.id}: Druckfassung endet mit dem Urheber-Vermerk`)
   }
 
   // Reiterwechsel und zurück
@@ -287,6 +323,12 @@ function pruefe(bed, text) {
     await page.locator('.ku-einheit-aktionen button', { hasText: 'Mit Lehrerseiten' }).click()
     const name = (await dl).suggestedFilename()
     pruefe(name.endsWith('_mit-Lehrerseiten.pdf'), `Einheit: „Mit Lehrerseiten“ mit eigenem Dateinamen (${name})`)
+    const pdf = pdfLesen(await (await dl).path())
+    if (pdf) {
+      const lehrer = pdf.seiten.filter((t) => t.includes('FÜR DIE LEHRPERSON')).length
+      pruefe(lehrer === e1.blaetter.filter((id) => blaetter.has(id)).length && pdf.seiten.every((t) => t.includes(URHEBER.de)), `Einheit: Urheber-Vermerk auf allen ${pdf.seiten.length} Seiten, auch den ${lehrer} Lehrerseiten`)
+      pruefe(pdf.autor === URHEBER.name, `Einheit: PDF-Autor „${pdf.autor}“`)
+    } else console.log('· Schülerblätter: Vermerk im PDF nicht geprüft (python3 mit PyMuPDF fehlt)')
   }
 
   // Kursjahre 2 und 3: Gruppe umstellen → Jahresweg, Joker, erste Einheit.

@@ -15,6 +15,7 @@ import { heute, neueGruppe, useKursStand, type Gruppe } from '../kurs/fortschrit
 import { loadPdfModule } from '../lib/loadPdf'
 import { writeHash } from '../lib/deeplink'
 import { toast } from '../lib/toast'
+import { URHEBER } from '../lib/urheber'
 import type { Bewertungen } from '../lib/useBewertungen'
 import { BlattDetail, blaetterText } from './Blaetter'
 import { Dialog } from '../components/Dialog'
@@ -862,6 +863,8 @@ function EinheitSeite({ e, gruppe, gruppeAendern, bew, aktiv }: { e: Einheit; gr
         </div>
       </section>
 
+      <p className="urheber ku-urheber">{URHEBER.de}</p>
+
       {offen && <BlattDetail key={offen.id} b={offen} bew={bew} onSchliessen={() => setOffen(null)} onOeffnen={(id) => setOffen(blattById.get(id) ?? null)} />}
       {aktiv
         ? createPortal(
@@ -935,6 +938,7 @@ function Spickzettel({ e, kopfzeile }: { e: Einheit; kopfzeile: string }) {
           ) : null}
         </div>
       </div>
+      <p className="ku-druck-urheber">{URHEBER.de}</p>
     </div>
   )
 }
@@ -1084,6 +1088,7 @@ function DruckEinheit({ e, kopfzeile, jahrTitel, notiz }: { e: Einheit; kopfzeil
           <p className="ku-druck-klein">{notiz}</p>
         </>
       ) : null}
+      <p className="ku-druck-urheber">{URHEBER.de}</p>
     </div>
   )
 }
@@ -1185,6 +1190,7 @@ function GrundlagenSeite({ aktiv }: { aktiv: boolean }) {
               </nav>
             ) : null}
           </div>
+          <p className="urheber ku-urheber">{URHEBER.de}</p>
           {aktiv
             ? createPortal(
                 <div className="ku-druck">
@@ -1197,6 +1203,7 @@ function GrundlagenSeite({ aktiv }: { aktiv: boolean }) {
                       ))}
                     </section>
                   ))}
+                  <p className="ku-druck-urheber">{URHEBER.de}</p>
                 </div>,
                 document.body,
               )

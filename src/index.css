@@ -867,6 +867,16 @@
     background: var(--line-2);
     border-radius: 9999px;
   }
+
+  /* Urheber-Vermerk am Ende KI-erstellter Inhalte (Text: src/lib/urheber.ts) */
+  .urheber {
+    margin: 0;
+    padding-top: 10px;
+    border-top: 1px solid var(--line);
+    font-size: 12px;
+    line-height: 1.5;
+    color: var(--muted);
+  }
 }
 
 @keyframes dreh {
@@ -1234,6 +1244,9 @@
   .bl-verwandt button:hover {
     border-color: var(--line-2);
     background: var(--surface-2);
+  }
+  .bl-detail-urheber {
+    grid-column: 1 / -1;
   }
   @media (max-width: 900px) {
     .bl-detail-body {
@@ -2557,6 +2570,9 @@
     gap: 6px;
     margin-top: 16px;
   }
+  .ku-urheber {
+    margin-top: 28px;
+  }
   .ku-seite-label {
     display: inline-flex;
     align-items: center;
@@ -2946,14 +2962,26 @@
     font-size: 8.5pt;
     color: #444;
   }
+  /* Urheber-Vermerk am Ende des Ausdrucks – bleibt beim letzten Inhalt, nie allein auf einer Seite */
+  .ku-druck .ku-druck-urheber {
+    margin: 6pt 0 0;
+    padding-top: 2pt;
+    border-top: 0.5pt solid #bbb;
+    font-size: 7pt;
+    line-height: 1.25;
+    color: #555;
+    break-before: avoid;
+    break-inside: avoid;
+  }
   /* Spickzettel: etwas enger gesetzt und mit schmaleren Rändern, damit er auf eine Seite passt */
   .ku-spick {
     page: spick;
     font-size: 9.5pt;
     line-height: 1.35;
   }
+  /* unten 8 mm statt 12 mm: Platz für den Urheber-Vermerk, der Zettel bleibt eine Seite */
   @page spick {
-    margin: 12mm 14mm;
+    margin: 12mm 14mm 8mm;
   }
   .ku-spick h1 {
     font-size: 16pt;
@@ -2964,6 +2992,12 @@
   }
   .ku-spick .ku-druck-klein {
     font-size: 8.5pt;
+  }
+  .ku-spick .ku-druck-urheber {
+    margin-top: 4pt;
+    padding-top: 1.5pt;
+    font-size: 6.8pt;
+    line-height: 1.2;
   }
   .ku-spick-tab {
     width: 100%;

@@ -16,6 +16,7 @@ import {
 import type { ReactNode } from 'react'
 import type { Material, WorksheetBlock } from '../types/material'
 import { trennung } from '../lib/trennung'
+import { URHEBER, URHEBER_NAME, vonKi } from '../lib/urheber'
 
 // Disable automatic hyphenation so goal ids like "[SOZ-5]" never break into
 // "[-SOZ-5]". Words wrap at spaces only.
@@ -336,6 +337,10 @@ const s = StyleSheet.create({
     paddingTop: 5,
   },
   footerText: { fontSize: 7.5, lineHeight: 1.25, color: C.faint },
+  // KI-Material: zweite, kleine Zeile mit dem Urheber-Vermerk. Die Fußzeile rückt dafür tiefer
+  // (Seitenrand unten bleibt 44 pt – kein Material bekommt dadurch eine Seite mehr).
+  footerMitVermerk: { bottom: 14, paddingTop: 4, flexDirection: 'column', alignItems: 'stretch' },
+  footerVermerk: { fontSize: 6, lineHeight: 1.2, color: C.faint, letterSpacing: 0.1, marginTop: 1.8 },
   // Worksheet (student-facing, printable) — child-friendly, age-aware
   wsAccent: { height: 7, borderRadius: 4, marginBottom: 12 },
   wsBand: { flexDirection: 'row', alignItems: 'center' },
@@ -368,14 +373,31 @@ const s = StyleSheet.create({
   wsTableCell: { flex: 1, borderWidth: 0.8, borderColor: '#c8cfd8', paddingVertical: 7, paddingHorizontal: 5 },
 })
 
+/** Urheber-Vermerk in der Fußzeile – nur bei KI-Material (Deutsch, auch bei luxemburgischem Inhalt). */
+const vermerkVon = (m: Material) => (vonKi(m) ? URHEBER.de : undefined)
+/** Autor in den PDF-Angaben: bei KI-Material der Urheber, sonst wie bisher. */
+const autorVon = (m: Material) => (vonKi(m) ? URHEBER_NAME : m.author || 'ISA-App')
+
 /** Fußzeile: links Herkunft und Titel, rechts die Seitenzahl. Die frühere, absolut gesetzte
- *  Text-Zeile mit render erschien in react-pdf 4 gar nicht. */
-function Fuss({ text }: { text: string }) {
+ *  Text-Zeile mit render erschien in react-pdf 4 gar nicht. Mit `vermerk` (KI-Material) steht
+ *  darunter klein der Urheber-Vermerk. */
+function Fuss({ text, vermerk }: { text: string; vermerk?: string }) {
+  if (!vermerk)
+    return (
+      <View style={s.footer} fixed>
+        <Text style={[s.footerText, { flex: 1, marginRight: 12 }]}>{text}</Text>
+        {/* ohne lineHeight – sonst zeichnet react-pdf 4 die Seitenzahl nicht */}
+        <Text style={{ fontSize: 7.5, color: C.faint }} render={({ pageNumber, totalPages }) => `${pageNumber} / ${totalPages}`} />
+      </View>
+    )
   return (
-    <View style={s.footer} fixed>
-      <Text style={[s.footerText, { flex: 1, marginRight: 12 }]}>{text}</Text>
-      {/* ohne lineHeight – sonst zeichnet react-pdf 4 die Seitenzahl nicht */}
-      <Text style={{ fontSize: 7.5, color: C.faint }} render={({ pageNumber, totalPages }) => `${pageNumber} / ${totalPages}`} />
+    <View style={[s.footer, s.footerMitVermerk]} fixed>
+      <View style={{ flexDirection: 'row', alignItems: 'flex-end' }}>
+        {/* immer eine Zeile; die Seitenzahl hat eine feste Breite, weil der Text vor ihr gesetzt wird */}
+        <Text style={[s.footerText, { flex: 1, marginRight: 8, maxLines: 1, textOverflow: 'ellipsis' }]}>{text}</Text>
+        <Text style={{ width: 30, fontSize: 7.5, color: C.faint, textAlign: 'right' }} render={({ pageNumber, totalPages }) => `${pageNumber} / ${totalPages}`} />
+      </View>
+      <Text style={s.footerVermerk}>{vermerk}</Text>
     </View>
   )
 }
@@ -1150,7 +1172,7 @@ function WorksheetPage({ material: m }: { material: Material }) {
         })}
       </View>
 
-      <Fuss text={`CDSE Toolbox · Arbeitsblatt · ${m.title}`} />
+      <Fuss text={`CDSE Toolbox · Arbeitsblatt · ${m.title}`} vermerk={vermerkVon(m)} />
     </Page>
   )
 }
@@ -1158,7 +1180,7 @@ function WorksheetPage({ material: m }: { material: Material }) {
 /** Only the student worksheet page(s) — for printing a class set. */
 export function WorksheetDocument({ material: m }: { material: Material }) {
   return (
-    <Document title={`Arbeitsblatt: ${m.worksheet?.title || m.title}`} author={m.author || 'ISA-App'}>
+    <Document title={`Arbeitsblatt: ${m.worksheet?.title || m.title}`} author={autorVon(m)}>
       {m.worksheet ? <WorksheetPage material={m} /> : null}
     </Document>
   )
@@ -1172,7 +1194,7 @@ export function MaterialDocument({ material: m }: { material: Material }) {
   return (
     <Document
       title={m.title}
-      author={m.author || 'ISA-App'}
+      author={autorVon(m)}
       subject={m.themes.map(themeLabel).join(', ')}
       keywords={m.tags.join(', ')}
     >
@@ -1273,7 +1295,7 @@ export function MaterialDocument({ material: m }: { material: Material }) {
           </View>
         </View>
 
-        <Fuss text={`CDSE Toolbox · ${m.title}`} />
+        <Fuss text={`CDSE Toolbox · ${m.title}`} vermerk={vermerkVon(m)} />
       </Page>
 
       {/* ---------------- Page 2 · Oflaf + Ziler ---------------- */}
@@ -1366,7 +1388,7 @@ export function MaterialDocument({ material: m }: { material: Material }) {
           ) : null}
         </View>
 
-        <Fuss text={`CDSE Toolbox · ${m.title}`} />
+        <Fuss text={`CDSE Toolbox · ${m.title}`} vermerk={vermerkVon(m)} />
       </Page>
 
       {/* ---------------- Page 3 · Arbeitsblatt (optional) ---------------- */}

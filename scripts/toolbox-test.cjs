@@ -7,7 +7,9 @@
 // Einzahl „1 Blatt“, Bereichs-Kacheln ohne Überlauf, Material-Finder (Zahl wie in der Liste, auch
 // mit ELDiB-Code), Tipp für das Team („Gespeichert.“), Seitenumbruch W-03, Sprache DE/FR gemerkt
 // (Dialog, Karte, Mappe), voller Titel im Blatt-Dialog am Handy, Mappe (Sprache je Blatt,
-// Dateinamen, Titel, Ladekreis am geklickten Knopf, Hinweis über der Leiste, Leiste am Handy).
+// Dateinamen, Titel, Ladekreis am geklickten Knopf, Hinweis über der Leiste, Leiste am Handy),
+// Urheber-Vermerk (Blatt-Dialog DE/FR, jede PDF-Seite von Blatt, Lehrerseite und Mappe in der
+// Sprache des Blatts, KI-Material in Ansicht und PDF – nicht bei einem digitalisierten Original).
 const path = require('path')
 let chromium
 try {
@@ -33,15 +35,22 @@ function pdfHatTitel(buf, titel) {
   return buf.includes(Buffer.from(titel, 'utf16le').swap16())
 }
 
-/** Text je Seite einer PDF-Datei (braucht python3 mit PyMuPDF wie scripts/mappe-pruefen.tsx; sonst null). */
-function seitenTexte(datei) {
+/** Text je Seite und Autor einer PDF-Datei (braucht python3 mit PyMuPDF wie scripts/mappe-pruefen.tsx; sonst null). */
+function pdfLesen(datei) {
   try {
-    const py = 'import json, sys, pymupdf; print(json.dumps([p.get_text() for p in pymupdf.open(sys.argv[1])]))'
+    const py = 'import json, sys, pymupdf; d = pymupdf.open(sys.argv[1]); print(json.dumps({"seiten": [p.get_text() for p in d], "autor": d.metadata.get("author")}))'
     return JSON.parse(require('child_process').execFileSync('python3', ['-c', py, datei]).toString())
   } catch {
     return null
   }
 }
+const seitenTexte = (datei) => pdfLesen(datei)?.seiten ?? null
+
+/** Urheber-Vermerk wie in src/lib/urheber.ts (dort steht er an einer Stelle). */
+const URHEBER = (() => {
+  const q = require('fs').readFileSync(path.join(__dirname, '..', 'src', 'lib', 'urheber.ts'), 'utf8')
+  return { de: /\bde: '([^']+)'/.exec(q)[1], fr: /\bfr: '([^']+)'/.exec(q)[1], name: /URHEBER_NAME = '([^']+)'/.exec(q)[1] }
+})()
 
 ;(async () => {
   const browser = await chromium.launch()
@@ -330,6 +339,72 @@ function seitenTexte(datei) {
   await sp.locator('dialog[open] .seg button', { hasText: 'DE' }).click()
   await sp.keyboard.press('Escape')
   pruefe((await gespeichert()) === 'de' && !(await pdfKnopf2.textContent()).includes('FR'), 'Sprache zurück auf Deutsch: gespeichert, Karte wieder „PDF“')
+
+  // Urheber-Vermerk: Blatt-Dialog in der gezeigten Sprache; jede PDF-Seite (Schülerseiten, Lehrerseite,
+  // Mappe) in der Sprache des Blatts; KI-Material in Ansicht, Arbeitsblatt und PDF; Original ohne
+  const uh = await neueSeite({ width: 1280, height: 900 })
+  const vermerke = (sel) => uh.$$eval(sel, (els) => els.map((e) => ({ text: e.textContent.trim(), lang: e.getAttribute('lang') })))
+  const laden = async (knopf) => {
+    const dl = uh.waitForEvent('download', { timeout: 60000 }).catch(() => null)
+    await knopf.click()
+    const d = await dl
+    await uh.evaluate(() => document.querySelectorAll('.toast button').forEach((b) => b.click()))
+    return d ? { name: d.suggestedFilename(), pdf: pdfLesen(await d.path()) } : null
+  }
+  /** jede Seite trägt genau den Vermerk der erwarteten Sprache ('de', 'fr' oder beide bei gemischter Mappe) */
+  const pdfVermerk = (pdf, sprachen) =>
+    pdf.seiten.length > 0 && pdf.seiten.every((t) => sprachen.some((s) => t.includes(URHEBER[s]))) && sprachen.every((s) => pdf.seiten.some((t) => t.includes(URHEBER[s])))
+  await uh.goto(DATEI + '#blatt=beduerfnis-glaeser')
+  await uh.waitForSelector('dialog[open] .seg')
+  let v = await vermerke('dialog[open] .urheber')
+  pruefe(v.length === 1 && v[0].text === URHEBER.de && v[0].lang === 'de', `Blatt-Dialog DE: Vermerk „${v[0]?.text}“`)
+  const blattDe = await laden(uh.locator('dialog[open] button', { hasText: 'Mit Lehrerseite' }))
+  if (blattDe?.pdf) {
+    pruefe(pdfVermerk(blattDe.pdf, ['de']) && blattDe.pdf.seiten.some((t) => t.includes('FÜR DIE LEHRPERSON')), `Blatt-PDF DE mit Lehrerseite: Vermerk auf allen ${blattDe.pdf.seiten.length} Seiten`)
+    pruefe(blattDe.pdf.autor === URHEBER.name, `Blatt-PDF: Autor „${blattDe.pdf.autor}“`)
+  } else console.log('· Blatt-PDF: Vermerk nicht geprüft (kein Download oder python3 mit PyMuPDF fehlt)')
+  await uh.locator('dialog[open] .seg button', { hasText: 'FR' }).click()
+  v = await vermerke('dialog[open] .urheber')
+  pruefe(v.length === 1 && v[0].text === URHEBER.fr && v[0].lang === 'fr', `Blatt-Dialog FR: Vermerk „${v[0]?.text}“`)
+  const blattFr = await laden(uh.locator('dialog[open] button', { hasText: 'Mit Lehrerseite' }))
+  if (blattFr?.pdf) pruefe(pdfVermerk(blattFr.pdf, ['fr']) && blattFr.pdf.seiten.some((t) => t.includes('POUR L’ENSEIGNANT·E')), `Blatt-PDF FR mit Lehrerseite: französischer Vermerk auf allen ${blattFr.pdf.seiten.length} Seiten`)
+  await uh.locator('dialog[open] button', { hasText: 'In die Mappe legen' }).click()
+  await uh.locator('dialog[open] .seg button', { hasText: 'DE' }).click()
+  await uh.keyboard.press('Escape')
+  await uh.locator('main#blaetter article.bl-karte', { has: uh.locator('h3', { hasText: 'Mein Wutvulkan' }) }).locator('label.bl-wahl').click()
+  const mappeGemischt = await laden(uh.locator('.bl-mappe button', { hasText: 'Mit Lehrerseiten' }))
+  if (mappeGemischt?.pdf) {
+    pruefe(pdfVermerk(mappeGemischt.pdf, ['de', 'fr']), `Mappe DE-FR mit Lehrerseiten (${mappeGemischt.name}): jede Seite mit dem Vermerk ihres Blatts`)
+    pruefe(mappeGemischt.pdf.autor === URHEBER.name, `Mappe: Autor „${mappeGemischt.pdf.autor}“`)
+  }
+  // KI-Material mit Arbeitsblatt: Vermerk am Ende der Ansicht und unter dem Arbeitsblatt, in beiden PDFs
+  await uh.goto('about:blank')
+  await uh.goto(DATEI + '#material=zivilcourage-net-wegkucken')
+  await uh.waitForSelector('dialog[open]')
+  v = await vermerke('dialog[open] .urheber')
+  pruefe(v.length === 2 && v.every((x) => x.text === URHEBER.de), `KI-Material: Vermerk in der Ansicht und unter dem Arbeitsblatt (${v.length})`)
+  const matKi = await laden(uh.locator('dialog[open] .dlg-foot button', { hasText: 'PDF' }))
+  if (matKi?.pdf) {
+    pruefe(pdfVermerk(matKi.pdf, ['de']), `KI-Material-PDF: Vermerk auf allen ${matKi.pdf.seiten.length} Seiten`)
+    pruefe(matKi.pdf.autor === URHEBER.name, `KI-Material-PDF: Autor „${matKi.pdf.autor}“`)
+  }
+  const abKi = await laden(uh.locator('dialog[open] .dlg-foot button', { hasText: 'Arbeitsblatt' }))
+  if (abKi?.pdf) pruefe(pdfVermerk(abKi.pdf, ['de']) && abKi.pdf.autor === URHEBER.name, `KI-Material, nur Arbeitsblatt: Vermerk auf allen ${abKi.pdf.seiten.length} Seiten, Autor`)
+  // Digitalisiertes Original (aus den Daten, mit Autorin oder Autor): kein Vermerk, Angaben wie bisher
+  const original = (() => {
+    const q = require('fs').readFileSync(path.join(__dirname, '..', 'src', 'data', 'materials', 'digitized.ts'), 'utf8')
+    return JSON.parse(q.slice(q.indexOf('= [') + 2)).find((m) => m.source === 'original' && m.author)
+  })()
+  await uh.goto('about:blank')
+  await uh.goto(DATEI + '#material=' + original.id)
+  await uh.waitForSelector('dialog[open]')
+  pruefe((await uh.locator('dialog[open] .urheber').count()) === 0, 'Original: kein Urheber-Vermerk in der Ansicht')
+  pruefe((await uh.locator('dialog[open] .dlg-head', { hasText: original.author }).count()) === 1, 'Original: Autorin/Autor steht wie bisher im Kopf')
+  const matOrig = await laden(uh.locator('dialog[open] .dlg-foot button', { hasText: 'PDF' }))
+  if (matOrig?.pdf) {
+    pruefe(matOrig.pdf.seiten.every((t) => !t.includes('©') && !t.includes(URHEBER.name)), 'Original-PDF: auf keiner Seite ein Urheber-Vermerk')
+    pruefe(matOrig.pdf.autor === original.author, 'Original-PDF: Autorin/Autor wie bisher in den PDF-Angaben')
+  }
 
   // Handy: voller Titel im Blatt-Dialog, Hinweis über der Mappe-Leiste
   const handy = await neueSeite({ width: 390, height: 844 }, true)

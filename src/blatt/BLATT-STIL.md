@@ -26,7 +26,9 @@ Musterblätter zum Anschauen: `gefuehle.json` (Mein Wutvulkan, Ballon-Atmen) und
 
 Umfang: Schülerteil **1 Seite** (Spielschule, C2) bzw. **höchstens 2 Seiten** (C3–ES).
 Die Seite „Für die Lehrperson“ muss auf **eine** Seite passen. Seitenzahlen zählen je Blatt („Seite 1 / 2“), auch in
-einer Mappe; ein einseitiger Teil hat keine Seitenzahl.
+einer Mappe; ein einseitiger Teil hat keine Seitenzahl. In der Fußzeile jeder Seite steht darunter klein der
+Urheber-Vermerk „© 2026 Joey Guedes, Psychologe · CDSE“ (französische Fassung: „psychologue“); der Text steht nur in
+`src/lib/urheber.ts`.
 
 ## 2. Aufbau eines Blatts
 
