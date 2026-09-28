@@ -339,8 +339,8 @@ const s = StyleSheet.create({
   footerText: { fontSize: 7.5, lineHeight: 1.25, color: C.faint },
   // KI-Material: zweite, kleine Zeile mit dem Urheber-Vermerk. Die Fußzeile rückt dafür tiefer
   // (Seitenrand unten bleibt 44 pt – kein Material bekommt dadurch eine Seite mehr).
-  footerMitVermerk: { bottom: 14, paddingTop: 4, flexDirection: 'column', alignItems: 'stretch' },
-  footerVermerk: { fontSize: 6, lineHeight: 1.2, color: C.faint, letterSpacing: 0.1, marginTop: 1.8 },
+  footerMitVermerk: { bottom: 15.5, paddingTop: 3, flexDirection: 'column', alignItems: 'stretch' },
+  footerVermerk: { fontSize: 6, lineHeight: 1.2, color: C.faint, letterSpacing: 0.1, marginTop: 1.2 },
   // Worksheet (student-facing, printable) — child-friendly, age-aware
   wsAccent: { height: 7, borderRadius: 4, marginBottom: 12 },
   wsBand: { flexDirection: 'row', alignItems: 'center' },
