@@ -1,11 +1,15 @@
 # Toolbox (ISA-App) – Offline-Version (zum Doppelklicken)
 
-**`ISA-App.html`** ist die komplette Toolbox in **einer einzigen Datei** – 287
+**`ISA-App.html`** ist die komplette Toolbox in **einer einzigen Datei** – 295
 Arbeitsblätter (Spielschule bis Sekundarschule, jedes mit Seite für die
 Lehrperson), der **Skills-Kurs** (drei Kursjahre mit 100 Einheiten und 17 Jokern, Schritt für
 Schritt ausgearbeitet, mit 158 Schülerblättern), alle 613 Materialien, Suche und Filter, der Material-Finder, die
 Team-Ablage und der PDF-Export sind eingebettet (auch die Schriften). Es wird **kein Internet und kein Server**
 gebraucht; die Datei stellt keine Netzwerkanfragen.
+
+Alles, was mit KI erstellt wurde – Arbeitsblätter, Einheiten und Grundlagen des Skills-Kurses, KI-Materialien –,
+trägt den Urheber-Vermerk „© 2026 Joey Guedes, Psychologe · CDSE“ (französische Blätter: „psychologue“): im PDF
+in der Fußzeile jeder Seite, in der App und im Druck am Ende. Digitalisierte Originale und die Team-Ablage bleiben ohne.
 
 ## So benutzt du sie
 

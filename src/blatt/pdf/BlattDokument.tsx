@@ -12,6 +12,7 @@ import { eldibDomainById, eldibGoalById } from '../../data/taxonomy'
 import { Bausteine, nummerieren, Plakette, Fliess, type Ctx } from './bausteine'
 import { LEHRER_MASSE, MASSE, SCHRIFT, SEITE, TEXTE, dauerText, typo, type Masse } from './stil'
 import { ELDIB_FR } from '../eldib-fr'
+import { URHEBER, URHEBER_NAME } from '../../lib/urheber'
 
 const BREITE = 595.28 - SEITE.rand * 2
 
@@ -99,18 +100,26 @@ function Kopfzeile({ blatt, nr, sprache, p, m, lehrer }: { blatt: Blatt; nr?: st
   )
 }
 
+/** Fußzeile: Marke, Blatt und Seitenzahl, darunter klein der Urheber-Vermerk in der Sprache des Blatts.
+ *  Sie steht tiefer als der Inhalt je reicht (SEITE.unten) – auch auf ganz vollen Seiten bleibt Luft. */
 function Fusszeile({ blatt, nr, sprache }: { blatt: Blatt; nr?: string; sprache: Sprache }) {
   const tx = TEXTE[sprache]
   return (
-    <View fixed style={{ position: 'absolute', left: SEITE.rand, right: SEITE.rand, bottom: 20, flexDirection: 'row', alignItems: 'center', borderTopWidth: 0.6, borderTopColor: NEUTRAL.haarlinie, paddingTop: 6 }}>
-      <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 7, color: NEUTRAL.marke, letterSpacing: 0.4 }}>CDSE Toolbox</Text>
-      <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 7, color: NEUTRAL.sehrLeise, marginLeft: 6, flex: 1 }}>
-        {[nr ? `${tx.arbeitsblatt} ${nr}` : null, blattInhalt(blatt, sprache).titel].filter(Boolean).join('  ·  ')}
-      </Text>
-      <Text
-        style={{ fontFamily: SCHRIFT.jugend, fontSize: 7, color: NEUTRAL.sehrLeise }}
-        render={({ pageNumber, totalPages }) => `${tx.seite} ${pageNumber} / ${totalPages}`}
-      />
+    <View fixed style={{ position: 'absolute', left: SEITE.rand, right: SEITE.rand, bottom: 16, borderTopWidth: 0.6, borderTopColor: NEUTRAL.haarlinie, paddingTop: 4.5 }}>
+      <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+        <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 7, color: NEUTRAL.marke, letterSpacing: 0.4 }}>CDSE Toolbox</Text>
+        {/* immer eine Zeile: ein sehr langer Titel endet mit „…“, statt die Fußzeile zu erhöhen */}
+        <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 7, color: NEUTRAL.sehrLeise, marginLeft: 6, flex: 1, maxLines: 1, textOverflow: 'ellipsis' }}>
+          {[nr ? `${tx.arbeitsblatt} ${nr}` : null, blattInhalt(blatt, sprache).titel].filter(Boolean).join('  ·  ')}
+        </Text>
+        {/* Seiten zählen je Blatt (auch in einer Mappe); ein einseitiger Teil braucht keine Seitenzahl.
+            Feste Breite: Der Titel wird gesetzt, bevor die Seitenzahl feststeht – so berührt er sie nie. */}
+        <Text
+          style={{ width: 46, marginLeft: 8, fontFamily: SCHRIFT.jugend, fontSize: 7, color: NEUTRAL.sehrLeise, textAlign: 'right' }}
+          render={({ subPageNumber, subPageTotalPages }) => (subPageTotalPages > 1 ? `${tx.seite} ${subPageNumber} / ${subPageTotalPages}` : '')}
+        />
+      </View>
+      <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 6, color: NEUTRAL.sehrLeise, marginTop: 2.5, letterSpacing: 0.15 }}>{URHEBER[sprache]}</Text>
     </View>
   )
 }
@@ -143,19 +152,25 @@ function Titelblock({ blatt, inhalt, sprache, p, m }: { blatt: Blatt; inhalt: Bl
   )
 }
 
-/** Kleiner Kopf auf Folgeseiten. */
+/** Kleiner Kopf auf den Folgeseiten dieses Blatts. In einer Mappe zählt pageNumber das ganze
+ *  Dokument; beim Umbrechen kennt react-pdf aber nur pageNumber, noch nicht subPageNumber.
+ *  Deshalb merkt sich der Kopf die erste Seite seines Blatts – sonst stünde er auch auf der
+ *  ersten Seite jedes weiteren Blatts und schöbe dort Inhalt auf eine neue Seite. */
 function Folgekopf({ inhalt, sprache, p }: { inhalt: BlattInhalt; sprache: Sprache; p: Palette }) {
+  const start = { seite: Number.POSITIVE_INFINITY }
   return (
     <View
       fixed
-      render={({ pageNumber }) =>
-        pageNumber > 1 ? (
+      render={({ pageNumber, subPageNumber }) => {
+        if (subPageNumber === undefined) start.seite = Math.min(start.seite, pageNumber)
+        const folgeseite = subPageNumber === undefined ? pageNumber > start.seite : subPageNumber > 1
+        return folgeseite ? (
           <View style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 12, paddingBottom: 6, borderBottomWidth: 0.6, borderBottomColor: NEUTRAL.haarlinie }}>
             <View style={{ width: 10, height: 3, borderRadius: 2, backgroundColor: p.tief, marginRight: 6 }} />
             <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 9, color: NEUTRAL.text, flex: 1 }}>{typo(inhalt.titel, sprache)}</Text>
           </View>
         ) : null
-      }
+      }}
     />
   )
 }
@@ -323,7 +338,7 @@ export function BlattSeiten({ blatt, opt }: { blatt: Blatt; opt?: BlattOptionen 
 export function BlattDokument({ blatt, opt }: { blatt: Blatt; opt?: BlattOptionen }) {
   const inhalt = blattInhalt(blatt, opt?.sprache ?? 'de')
   return (
-    <Document title={inhalt.titel} author="CDSE Toolbox" creator="CDSE Toolbox" producer="CDSE Toolbox" language={opt?.sprache === 'fr' ? 'fr' : 'de'}>
+    <Document title={inhalt.titel} author={URHEBER_NAME} creator="CDSE Toolbox" producer="CDSE Toolbox" language={opt?.sprache === 'fr' ? 'fr' : 'de'}>
       <BlattSeiten blatt={blatt} opt={opt} />
     </Document>
   )
@@ -333,7 +348,7 @@ export function BlattDokument({ blatt, opt }: { blatt: Blatt; opt?: BlattOptione
 export function MappeDokument({ blaetter, opt, titel }: { blaetter: { blatt: Blatt; nr?: string; sprache?: Sprache }[]; opt?: BlattOptionen; titel: string }) {
   const fr = blaetter.length > 0 && blaetter.every((x) => (x.sprache ?? opt?.sprache) === 'fr')
   return (
-    <Document title={titel} author="CDSE Toolbox" creator="CDSE Toolbox" producer="CDSE Toolbox" language={fr ? 'fr' : 'de'}>
+    <Document title={titel} author={URHEBER_NAME} creator="CDSE Toolbox" producer="CDSE Toolbox" language={fr ? 'fr' : 'de'}>
       {blaetter.map(({ blatt, nr, sprache }) => (
         <BlattSeiten key={blatt.id} blatt={blatt} opt={{ ...opt, nr, sprache: sprache ?? opt?.sprache }} />
       ))}

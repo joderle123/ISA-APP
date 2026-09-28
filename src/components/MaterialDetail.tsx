@@ -10,6 +10,7 @@ import {
   themeLabel,
 } from '../data/taxonomy'
 import { domainStyle, plainLabel, sourceInfo, typeLabels } from '../lib/ui'
+import { URHEBER, vonKi } from '../lib/urheber'
 import { StarRating } from './StarRating'
 import { variants, applyVariant } from '../data/variants'
 import { WorksheetView } from './WorksheetView'
@@ -60,6 +61,7 @@ export function MaterialDetail({
   const view = setting ? applyVariant(m, setting) : m
   const src = sourceInfo(m.source)
   const isUpload = m.source === 'cdse' && !!m.upload
+  const ki = vonKi(m)
 
   const goalsByDomain = eldibDomains
     .map((d) => ({
@@ -230,7 +232,7 @@ export function MaterialDetail({
                     Nur Arbeitsblatt (PDF)
                   </button>
                 </div>
-                <WorksheetView worksheet={view.worksheet} themeId={view.themes[0]} fallbackTitle={view.title} />
+                <WorksheetView worksheet={view.worksheet} themeId={view.themes[0]} fallbackTitle={view.title} vermerk={ki ? URHEBER.de : undefined} />
               </section>
             )}
           </div>
@@ -337,6 +339,8 @@ export function MaterialDetail({
             ) : null}
           </section>
         </div>
+        {/* nur KI-Materialien – Originale und Team-Ablage behalten ihre Angaben */}
+        {ki ? <p className="urheber mx-6 mb-6 max-sm:mx-4 max-sm:mb-4">{URHEBER.de}</p> : null}
       </div>
 
       <footer className="dlg-foot">

@@ -33,7 +33,7 @@ const ARTEN = new Set([
   'aufgabe', 'text', 'info', 'geschichte', 'bild', 'spalten', 'abstand', 'seitenumbruch', 'linien', 'frage', 'satzanfaenge', 'feld', 'tabelle',
   'wennDann', 'dialog', 'vertrag', 'ankreuzen', 'bilder', 'wortspeicher', 'skala', 'einschaetzung', 'zuordnen', 'gefuehle', 'ampel', 'thermometer',
   'vulkan', 'eisberg', 'koerper', 'batterie', 'waage', 'leiter', 'zielscheibe', 'hand', 'mindmap', 'schritte', 'plan', 'tagesplan', 'atmen', 'comic',
-  'karten', 'rueckblick', 'notfall', 'gefuehlsrad',
+  'karten', 'rueckblick', 'notfall', 'gefuehlsrad', 'glaeser', 'netz', 'kurve', 'tageskreis', 'farbkalender',
 ])
 
 /** Formulierungen, die nach Textbaukasten klingen. */
@@ -196,6 +196,35 @@ function pruefeBausteine(wo: string, liste: Baustein[], blatt: Blatt, sprache: S
         break
       case 'wennDann':
         if (b.zeilen + (b.beispiele?.length ?? 0) > 6) melde('H', w, 'mehr als 6 Wenn-dann-Zeilen')
+        break
+      case 'glaeser': {
+        const n = b.items.length + (b.leer ?? 0)
+        if (!n || n > 30) melde('F', w, '1–30 Gläser')
+        if (b.spalten && ![3, 4, 5, 6].includes(b.spalten)) melde('F', w, 'Gläser: 3–6 Spalten')
+        if (b.legende && b.legende.length !== 2) melde('F', w, 'Legende: genau 2 Einträge (Strich, ausmalen)')
+        const max = (b.spalten ?? 5) >= 6 ? 14 : 20
+        b.items.forEach((x) => x.length > max && melde('H', w, `„${x}“ ist unter dem Glas zu lang (max. ${max} Zeichen)`))
+        break
+      }
+      case 'netz':
+        if (b.bereiche.length < 5 || b.bereiche.length > 10) melde('F', w, 'Netz: 5–10 Bereiche')
+        if (b.stufen && ![5, 10].includes(b.stufen)) melde('F', w, 'Netz: 5 oder 10 Stufen')
+        b.bereiche.forEach((x) => x.length > 28 && melde('H', w, `Bereich „${x}“ zu lang (max. 28 Zeichen)`))
+        break
+      case 'kurve':
+        if (b.x.length < 2 || b.x.length > 12) melde('F', w, 'Kurve: 2–12 Punkte auf der x-Achse')
+        for (const x of [b.oben, b.unten, b.mitte ?? '']) if (x.length > 22) melde('H', w, `Achsenbeschriftung „${x}“ zu lang (max. 22 Zeichen)`)
+        b.x.forEach((x) => x.length > Math.max(6, Math.floor(84 / b.x.length)) && melde('H', w, `„${x}“ ist für die x-Achse zu lang`))
+        break
+      case 'tageskreis':
+        if (!b.titel.length || b.titel.length > 2) melde('F', w, 'Tageskreis: 1 oder 2 Kreise')
+        if (b.legende.length < 2 || b.legende.length > 8) melde('F', w, 'Tageskreis: 2–8 Farben in der Legende')
+        for (const l of b.legende) if (!FARBWOERTER.includes(l.farbe)) melde('F', w, `Farbe „${l.farbe}“ gibt es nicht`)
+        break
+      case 'farbkalender':
+        if (b.wochen && (b.wochen < 4 || b.wochen > 6)) melde('F', w, 'Farbkalender: 4–6 Wochen')
+        if (b.legende.length < 2 || b.legende.length > 8) melde('F', w, 'Farbkalender: 2–8 Farben in der Legende')
+        for (const l of b.legende) if (!FARBWOERTER.includes(l.farbe)) melde('F', w, `Farbe „${l.farbe}“ gibt es nicht`)
         break
     }
     for (const id of bilder) {

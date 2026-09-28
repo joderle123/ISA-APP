@@ -1656,6 +1656,313 @@ function Notfall({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'notfall' }> })
   )
 }
 
+// --- Selbstreflexion: Gläser, Netz, Kurve, Tageskreis, Farbkalender ----------------------
+// Ruhige Liniengrafiken zum Füllen, Ausmalen und Einzeichnen – viel Weißraum, dünne Striche
+// in der Bereichsfarbe, keine Deko.
+
+/** Ein Glas als Umriss: oben offen breit, unten schmaler mit runden Ecken. */
+function GlasForm({ b, h, farbe, fuell, strich, skala, feinFarbe }: { b: number; h: number; farbe: string; fuell?: number; strich?: number; skala?: boolean; feinFarbe?: string }) {
+  const ein = b * 0.13
+  const r = b * 0.17
+  const umriss = `M1 1 L${b - 1} 1 L${b - 1 - ein} ${h - 1 - r} Q${b - 1 - ein} ${h - 1} ${b - 1 - ein - r} ${h - 1} L${1 + ein + r} ${h - 1} Q${1 + ein} ${h - 1} ${1 + ein} ${h - 1 - r} Z`
+  /** x der linken Wand in Höhe y (0 = oben) */
+  const links = (y: number) => 1 + ein * Math.min(1, (y - 1) / (h - 2 - r))
+  const hoeheBei = (anteil: number) => h - 1 - (h - 2) * anteil
+  return (
+    <Svg width={b} height={h} viewBox={`0 0 ${b} ${h}`}>
+      <Path d={umriss} fill="#FFFFFF" stroke="none" />
+      {fuell ? (
+        <Path
+          d={`M${links(hoeheBei(fuell))} ${hoeheBei(fuell)} L${b - links(hoeheBei(fuell))} ${hoeheBei(fuell)} L${b - 1 - ein} ${h - 1 - r} Q${b - 1 - ein} ${h - 1} ${b - 1 - ein - r} ${h - 1} L${1 + ein + r} ${h - 1} Q${1 + ein} ${h - 1} ${1 + ein} ${h - 1 - r} Z`}
+          fill={feinFarbe ?? farbe}
+          stroke="none"
+        />
+      ) : null}
+      {skala
+        ? [0.25, 0.5, 0.75].map((a) => {
+            const y = hoeheBei(a)
+            const x = links(y)
+            return <Line key={a} x1={x + 1} y1={y} x2={x + (a === 0.5 ? 6 : 4)} y2={y} stroke={feinFarbe ?? farbe} strokeWidth={0.9} />
+          })
+        : null}
+      {strich !== undefined ? (
+        <Line x1={links(hoeheBei(strich)) - 2} y1={hoeheBei(strich)} x2={b - links(hoeheBei(strich)) + 2} y2={hoeheBei(strich)} stroke={NEUTRAL.tinte} strokeWidth={1.6} strokeLinecap="round" />
+      ) : null}
+      <Path d={umriss} fill="none" stroke={farbe} strokeWidth={1.3} strokeLinejoin="round" />
+    </Svg>
+  )
+}
+
+function Glaeser({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'glaeser' }> }) {
+  const sp = b.spalten ?? 5
+  const zelle = c.breite / sp
+  const gb = Math.min(zelle * 0.52, 56)
+  const gh = gb * 1.24
+  const alle = [...b.items.map((text) => text), ...Array.from({ length: b.leer ?? 0 }, () => '')]
+  const reihen: string[][] = []
+  for (let i = 0; i < alle.length; i += sp) reihen.push(alle.slice(i, i + sp))
+  const skala = b.skala !== false
+  return (
+    <View>
+      {b.legende ? (
+        <View wrap={false} style={{ flexDirection: 'row', flexWrap: 'wrap', marginBottom: 10 }}>
+          {b.legende.map((l, i) => (
+            <View key={i} style={{ flexDirection: 'row', alignItems: 'center', marginRight: 22, marginBottom: 2 }}>
+              <GlasForm b={15} h={19} farbe={c.p.tief} feinFarbe={c.p.mittel} fuell={i === 1 ? 0.45 : undefined} strich={i === 0 ? 0.72 : undefined} />
+              <Fliess c={c} klein style={{ marginLeft: 6 }}>
+                {t(c, l)}
+              </Fliess>
+            </View>
+          ))}
+        </View>
+      ) : null}
+      {reihen.map((reihe, i) => (
+        <View key={i} wrap={false} style={{ flexDirection: 'row', marginTop: i ? c.m.abstand * 0.8 : 0 }}>
+          {reihe.map((text, k) => (
+            <View key={k} style={{ width: zelle, alignItems: 'center' }}>
+              <GlasForm b={gb} h={gh} farbe={c.p.tief} feinFarbe={c.p.mittel} skala={skala} />
+              {text ? (
+                <Fliess c={c} klein zentriert style={{ marginTop: 4, width: zelle - 6 }}>
+                  {t(c, text)}
+                </Fliess>
+              ) : (
+                <View style={{ width: zelle * 0.72, height: c.m.klein * 1.7, borderBottomWidth: 0.8, borderBottomColor: NEUTRAL.linie }} />
+              )}
+            </View>
+          ))}
+        </View>
+      ))}
+    </View>
+  )
+}
+
+function Netz({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'netz' }> }) {
+  const n = b.bereiche.length
+  const st = b.stufen ?? 10
+  const rand = 98
+  const d = Math.min(c.breite - 2 * rand, 336)
+  const W = c.breite
+  const H = d + 58
+  const R = d / 2
+  const cx = W / 2
+  const cy = H / 2
+  const seg = 360 / n
+  const pkt = (r: number, a: number): [number, number] => [cx + r * Math.sin((a * Math.PI) / 180), cy - r * Math.cos((a * Math.PI) / 180)]
+  const sektor = (ra: number, a0: number, a1: number) => {
+    const [x0, y0] = pkt(ra, a0)
+    const [x1, y1] = pkt(ra, a1)
+    return `M${cx} ${cy} L${x0} ${y0} A${ra} ${ra} 0 ${a1 - a0 > 180 ? 1 : 0} 1 ${x1} ${y1} Z`
+  }
+  const labelB = rand - 8
+  return (
+    <View wrap={false} style={{ width: W, height: H }}>
+      <Svg width={W} height={H} viewBox={`0 0 ${W} ${H}`}>
+        {b.bereiche.map((_, i) => (
+          <Path key={`s${i}`} d={sektor(R, i * seg, (i + 1) * seg)} fill={i % 2 ? '#FFFFFF' : c.p.zart} stroke="none" />
+        ))}
+        {Array.from({ length: st }, (_, k) => (
+          <Circle key={`r${k}`} cx={cx} cy={cy} r={(R * (k + 1)) / st} fill="none" stroke={(k + 1) % 5 === 0 && k + 1 < st ? c.p.tief : c.p.mittel} strokeWidth={(k + 1) % 5 === 0 && k + 1 < st ? 0.9 : 0.7} />
+        ))}
+        {b.bereiche.map((_, i) => {
+          const [x, y] = pkt(R, i * seg)
+          return <Line key={`l${i}`} x1={cx} y1={cy} x2={x} y2={y} stroke={c.p.tief} strokeWidth={0.9} />
+        })}
+        <Circle cx={cx} cy={cy} r={R} fill="none" stroke={c.p.tief} strokeWidth={1.4} />
+        <Circle cx={cx} cy={cy} r={2.2} fill={c.p.tief} />
+      </Svg>
+      {[1, Math.round(st / 2), st].map((k) => {
+        const [x, y] = pkt((R * (k - 0.5)) / st, seg * 0.5)
+        return (
+          <View key={`z${k}`} style={{ position: 'absolute', left: x - 7, top: y - 5, width: 14, alignItems: 'center' }}>
+            <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 6.4, color: c.p.tief }}>{String(k)}</Text>
+          </View>
+        )
+      })}
+      {b.bereiche.map((name, i) => {
+        const a = (i + 0.5) * seg
+        const [x, y] = pkt(R + 9, a)
+        const sin = Math.sin((a * Math.PI) / 180)
+        const cos = Math.cos((a * Math.PI) / 180)
+        const ausr = sin > 0.3 ? 'left' : sin < -0.3 ? 'right' : 'center'
+        const left = ausr === 'left' ? x : ausr === 'right' ? x - labelB : x - labelB / 2
+        const hoehe = c.m.klein * 2.8
+        const top = cos > 0.3 ? y - hoehe : cos < -0.3 ? y : y - hoehe / 2
+        return (
+          <View key={`t${i}`} style={{ position: 'absolute', left, top, width: labelB, height: hoehe, justifyContent: cos > 0.3 ? 'flex-end' : cos < -0.3 ? 'flex-start' : 'center' }}>
+            <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: c.m.klein, lineHeight: 1.2, color: NEUTRAL.text, textAlign: ausr }}>{t(c, name)}</Text>
+          </View>
+        )
+      })}
+    </View>
+  )
+}
+
+function Kurve({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'kurve' }> }) {
+  const H = b.hoehe ?? 190
+  const achse = 70
+  const unten = 30
+  const W = c.breite
+  const pl = achse
+  const pr = W - 4
+  const pt = 8
+  const pb = H - unten
+  const n = b.x.length
+  const schritt = (pr - pl) / n
+  const xi = (i: number) => pl + (i + 0.5) * schritt
+  const stufen = 4
+  const yi = (k: number) => pt + ((pb - pt) * k) / stufen
+  const mitte = b.mitte !== undefined
+  return (
+    <View wrap={false}>
+      <View style={{ width: W, height: H }}>
+        <Svg width={W} height={H} viewBox={`0 0 ${W} ${H}`}>
+          <Rect x={pl} y={pt} width={pr - pl} height={pb - pt} fill={c.p.zart} stroke="none" />
+          {Array.from({ length: stufen + 1 }, (_, k) => (
+            <Line key={`h${k}`} x1={pl} y1={yi(k)} x2={pr} y2={yi(k)} stroke={k === stufen / 2 && mitte ? c.p.tief : c.p.mittel} strokeWidth={k === stufen / 2 && mitte ? 1 : 0.7} strokeDasharray={k === 0 || k === stufen || (k === stufen / 2 && mitte) ? undefined : '3 3'} />
+          ))}
+          {b.x.map((_, i) => (
+            <Line key={`v${i}`} x1={xi(i)} y1={pt} x2={xi(i)} y2={pb} stroke={c.p.mittel} strokeWidth={0.6} strokeDasharray="1.5 3" />
+          ))}
+          <Line x1={pl} y1={pt - 4} x2={pl} y2={pb} stroke={c.p.tief} strokeWidth={1.3} />
+          <Line x1={pl} y1={pb} x2={pr} y2={pb} stroke={c.p.tief} strokeWidth={1.3} />
+          {b.x.map((_, i) => (
+            <Circle key={`p${i}`} cx={xi(i)} cy={pb} r={1.8} fill={c.p.tief} />
+          ))}
+        </Svg>
+        {[
+          [b.oben, yi(0)],
+          ...(mitte ? [[b.mitte ?? '', yi(stufen / 2)] as [string, number]] : []),
+          [b.unten, yi(stufen)],
+        ].map(([text, y], k) => (
+          <View key={`y${k}`} style={{ position: 'absolute', left: 0, top: (y as number) - c.m.klein * 0.75, width: achse - 8 }}>
+            <Text style={{ fontFamily: c.m.schrift, fontSize: c.m.klein, lineHeight: 1.2, color: NEUTRAL.leise, textAlign: 'right' }}>{t(c, text as string)}</Text>
+          </View>
+        ))}
+        {b.x.map((text, i) => (
+          <View key={`x${i}`} style={{ position: 'absolute', left: xi(i) - schritt / 2, top: pb + 5, width: schritt, alignItems: 'center' }}>
+            <Text style={{ fontFamily: c.m.schrift, fontWeight: c.m.fett, fontSize: c.m.klein, lineHeight: 1.2, color: NEUTRAL.text, textAlign: 'center' }}>{t(c, text)}</Text>
+          </View>
+        ))}
+      </View>
+      {b.linien ? (
+        <View style={{ flexDirection: 'row', marginTop: 6, marginLeft: achse }}>
+          {b.linien.map((l, i) => (
+            <View key={i} style={{ flexDirection: 'row', alignItems: 'center', marginRight: 22 }}>
+              <Svg width={26} height={8} viewBox="0 0 26 8">
+                <Line x1={1} y1={4} x2={25} y2={4} stroke={i ? NEUTRAL.leise : c.p.tief} strokeWidth={2} strokeDasharray={i ? '4 3' : undefined} strokeLinecap="round" />
+              </Svg>
+              <Fliess c={c} klein style={{ marginLeft: 6 }}>
+                {t(c, l)}
+              </Fliess>
+            </View>
+          ))}
+        </View>
+      ) : null}
+    </View>
+  )
+}
+
+function FarbLegende({ c, legende, spalten = 4 }: { c: Ctx; legende: { farbe: Farbwort; text: string }[]; spalten?: number }) {
+  return (
+    <View style={{ flexDirection: 'row', flexWrap: 'wrap', marginTop: 10 }}>
+      {legende.map((l, i) => (
+        <View key={i} style={{ width: `${100 / spalten}%`, flexDirection: 'row', alignItems: 'center', marginBottom: 6, paddingRight: 8 }}>
+          <View style={{ width: 12, height: 12, borderRadius: 6, backgroundColor: aufhellen(FARBWORT[l.farbe], 0.75), borderWidth: 0.9, borderColor: FARBWORT[l.farbe], marginRight: 6 }} />
+          <View style={{ flex: 1, borderBottomWidth: l.text ? 0 : 0.8, borderBottomColor: NEUTRAL.linie, minHeight: 12 }}>
+            {l.text ? (
+              <Fliess c={c} klein>
+                {t(c, l.text)}
+              </Fliess>
+            ) : null}
+          </View>
+        </View>
+      ))}
+    </View>
+  )
+}
+
+function Tageskreis({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'tageskreis' }> }) {
+  const anz = Math.max(1, Math.min(2, b.titel.length))
+  const d = anz === 2 ? Math.min((c.breite - 24) / 2, 236) : Math.min(c.breite, 270)
+  const R = d / 2 - 15
+  const r0 = R * 0.24
+  const m = d / 2
+  const pkt = (r: number, stunde: number): [number, number] => {
+    const a = (stunde * 15 * Math.PI) / 180
+    return [m + r * Math.sin(a), m - r * Math.cos(a)]
+  }
+  const kreis = (titel: string, k: number) => (
+    <View key={k} style={{ width: d, alignItems: 'center' }}>
+      <View style={{ width: d, height: d }}>
+        <Svg width={d} height={d} viewBox={`0 0 ${d} ${d}`}>
+          <Circle cx={m} cy={m} r={R} fill="#FFFFFF" stroke={c.p.tief} strokeWidth={1.4} />
+          {Array.from({ length: 24 }, (_, h) => {
+            const [x0, y0] = pkt(r0, h)
+            const [x1, y1] = pkt(R, h)
+            const stark = h % 6 === 0
+            return <Line key={h} x1={x0} y1={y0} x2={x1} y2={y1} stroke={stark ? c.p.tief : c.p.mittel} strokeWidth={stark ? 1 : 0.7} />
+          })}
+          <Circle cx={m} cy={m} r={r0} fill={c.p.zart} stroke={c.p.tief} strokeWidth={1} />
+        </Svg>
+        {[0, 3, 6, 9, 12, 15, 18, 21].map((h) => {
+          const [x, y] = pkt(R + 8.5, h)
+          return (
+            <View key={h} style={{ position: 'absolute', left: x - 9, top: y - 5, width: 18, alignItems: 'center' }}>
+              <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 7, color: h % 6 === 0 ? c.p.tief : NEUTRAL.leise, fontWeight: h % 6 === 0 ? 600 : 400 }}>{String(h)}</Text>
+            </View>
+          )
+        })}
+        <View style={{ position: 'absolute', left: m - r0, top: m - 5, width: r0 * 2, alignItems: 'center' }}>
+          <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 7, color: c.p.tief }}>24 h</Text>
+        </View>
+      </View>
+      {titel ? (
+        <Fliess c={c} fett zentriert style={{ marginTop: 2, width: d }}>
+          {t(c, titel)}
+        </Fliess>
+      ) : null}
+    </View>
+  )
+  return (
+    <View wrap={false}>
+      <View style={{ flexDirection: 'row', justifyContent: anz === 2 ? 'space-between' : 'center' }}>{b.titel.slice(0, 2).map((x, k) => kreis(x, k))}</View>
+      <FarbLegende c={c} legende={b.legende} />
+    </View>
+  )
+}
+
+const WOCHE: Record<Sprache, string[]> = { de: ['Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa', 'So'], fr: ['Lu', 'Ma', 'Me', 'Je', 'Ve', 'Sa', 'Di'] }
+
+function Farbkalender({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'farbkalender' }> }) {
+  const wochen = b.wochen ?? 5
+  const luecke = 5
+  const k = Math.min((c.breite - luecke * 6) / 7, 60)
+  const breite = k * 7 + luecke * 6
+  return (
+    <View wrap={false} style={{ alignItems: 'center' }}>
+      <View style={{ width: breite }}>
+        <View style={{ flexDirection: 'row', marginBottom: 4 }}>
+          {WOCHE[c.sprache].map((w, i) => (
+            <View key={w + i} style={{ width: k, marginRight: i < 6 ? luecke : 0, alignItems: 'center' }}>
+              <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: c.m.klein, color: i >= 5 ? c.p.tief : NEUTRAL.leise }}>{w}</Text>
+            </View>
+          ))}
+        </View>
+        {Array.from({ length: wochen }, (_, z) => (
+          <View key={z} style={{ flexDirection: 'row', marginBottom: luecke }}>
+            {Array.from({ length: 7 }, (_, i) => (
+              <View key={i} style={{ width: k, height: k * 0.86, marginRight: i < 6 ? luecke : 0, borderWidth: 0.9, borderColor: c.p.mittel, borderRadius: 6, backgroundColor: '#FFFFFF' }}>
+                <View style={{ width: 15, height: 11, borderRightWidth: 0.6, borderBottomWidth: 0.6, borderColor: c.p.mittel, borderBottomRightRadius: 4 }} />
+              </View>
+            ))}
+          </View>
+        ))}
+        <FarbLegende c={c} legende={b.legende} spalten={3} />
+      </View>
+    </View>
+  )
+}
+
 // --- Verteiler ------------------------------------------------------------------------
 
 function EinBaustein({ c, b }: { c: Ctx; b: Baustein }) {
@@ -1759,6 +2066,16 @@ function EinBaustein({ c, b }: { c: Ctx; b: Baustein }) {
       return <Rueckblick c={c} b={b} />
     case 'notfall':
       return <Notfall c={c} b={b} />
+    case 'glaeser':
+      return <Glaeser c={c} b={b} />
+    case 'netz':
+      return <Netz c={c} b={b} />
+    case 'kurve':
+      return <Kurve c={c} b={b} />
+    case 'tageskreis':
+      return <Tageskreis c={c} b={b} />
+    case 'farbkalender':
+      return <Farbkalender c={c} b={b} />
   }
 }
 
@@ -1775,7 +2092,7 @@ function abstandVor(b: Baustein, vorher: Baustein | undefined, c: Ctx): number {
 const FEST = new Set<Baustein['art']>([
   'info', 'geschichte', 'bild', 'frage', 'feld', 'vertrag', 'wortspeicher', 'skala', 'zuordnen', 'ampel', 'thermometer',
   'vulkan', 'eisberg', 'koerper', 'batterie', 'waage', 'leiter', 'zielscheibe', 'hand', 'mindmap', 'plan', 'atmen', 'notfall', 'linien',
-  'gefuehlsrad',
+  'gefuehlsrad', 'netz', 'kurve', 'tageskreis', 'farbkalender',
 ])
 
 /** Kleine Bausteine, die nicht umbrechen sollen (auch wenn sie es könnten). */
@@ -1806,6 +2123,8 @@ function istFest(b: Baustein): boolean {
       return b.karten.length <= 6
     case 'text':
       return b.text.length < 500
+    case 'glaeser':
+      return b.items.length + (b.leer ?? 0) <= (b.spalten ?? 5) * 2
     default:
       return false
   }

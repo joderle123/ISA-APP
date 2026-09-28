@@ -21,16 +21,21 @@ Musterblätter zum Anschauen: `gefuehle.json` (Mein Wutvulkan, Ballon-Atmen) und
 3. Rendern: `npx tsx --tsconfig tsconfig.scripts.json scripts/blatt-render.tsx <ordner> <blatt-id> --png --fr`
 4. **Jede Seite als Bild ansehen** und kritisch prüfen: Passt alles? Zu voll? Zu leer? Seitenumbruch sinnvoll? Wirkt es professionell?
 5. Nachbessern, bis es wirklich gut ist.
+6. Seitenzahlen aller Blätter: `npm run blaetter:seiten`. Mappen (mehrere Blätter in einer PDF, z. B. „Alle Blätter“
+   einer Kurs-Einheit): `npm run blaetter:mappe` – jedes Blatt muss dort genauso aussehen wie einzeln.
 
 Umfang: Schülerteil **1 Seite** (Spielschule, C2) bzw. **höchstens 2 Seiten** (C3–ES).
-Die Seite „Für die Lehrperson“ muss auf **eine** Seite passen.
+Die Seite „Für die Lehrperson“ muss auf **eine** Seite passen. Seitenzahlen zählen je Blatt („Seite 1 / 2“), auch in
+einer Mappe; ein einseitiger Teil hat keine Seitenzahl. In der Fußzeile jeder Seite steht darunter klein der
+Urheber-Vermerk „© 2026 Joey Guedes, Psychologe · CDSE“ (französische Fassung: „psychologue“); der Text steht nur in
+`src/lib/urheber.ts`.
 
 ## 2. Aufbau eines Blatts
 
 ```json
 {
   "id": "wutvulkan",                      // klein, a–z, 0–9, Bindestriche; eindeutig
-  "bereich": "gefuehle",                  // gefuehle | verhalten | miteinander | lernen | alltag | werkzeuge
+  "bereich": "gefuehle",                  // gefuehle | verhalten | miteinander | lernen | alltag | werkzeuge | skills | selbstreflexion
   "thema": "wut",                         // siehe src/blatt/katalog.ts (THEMEN)
   "stufen": ["C3", "C4"],                 // C1 | C2 | C3 | C4 | ES
   "sozialform": ["einzeln", "gruppe"],    // einzeln | gruppe | klasse
@@ -111,6 +116,17 @@ dem Baustein, zu dem sie gehört, und bleibt mit ihm auf einer Seite.
 | `plan` | `ziel?` ('' = Linie), `zeilen`, `tage?`, `symbol?` (gesicht/kasten/stern) | Wochen-Tracker. |
 | `tagesplan` | `zeilen: [{zeit?, text?, bild?}]`, `leer?` | Tagesablauf. |
 | `atmen` | `uebung`: quadrat, ballon, blume, fuenf-sinne, finger | Fertige Atem-/Achtsamkeitsübungen. |
+
+### Selbstreflexion: Grafiken zum Füllen, Ausmalen und Einzeichnen
+Ruhige Liniengrafiken mit viel Weißraum – für Blätter, die zum Innehalten einladen (Bereich `selbstreflexion`).
+
+| Art | Felder | Wofür |
+|---|---|---|
+| `glaeser` | `items`, `leer?`, `spalten?` (3–6), `legende?` (2 Texte), `skala?` | Gläser mit Beschriftung (max. 20 Zeichen): Strich = so voll soll es sein, ausmalen = so voll ist es jetzt. Bedürfnisse, Werte. |
+| `netz` | `bereiche` (5–10, max. 28 Zeichen), `stufen?` (5/10) | Lebensnetz: jeder Bereich ein Tortenstück mit Ringen zum Ausmalen (innen wenig, außen viel). |
+| `kurve` | `x` (2–12), `oben`, `unten`, `mitte?`, `linien?` (2 Legendentexte), `hoehe?` | Leeres Diagramm zum Einzeichnen: Stimmung und Energie einer Woche, Lebenslinie. |
+| `tageskreis` | `titel` (1–2 Kreise), `legende` ([{farbe, text}], 2–8; `text: ''` = Linie) | 24-Stunden-Kreise zum Ausmalen: normaler Tag und Wunsch-Tag. |
+| `farbkalender` | `wochen?` (4–6), `legende` ([{farbe, text}], 2–8) | Kästchen-Kalender (Mo–So) zum Ausmalen, z. B. Stimmung pro Tag. |
 
 ### Bildgeschichten & Karten
 | Art | Felder | Wofür |
