@@ -3,6 +3,7 @@
 CREW ist ein tägliches Gruppenspiel für 4–6 Jugendliche (12–16 Jahre) mit sozial-emotionalem Förderbedarf.
 Die Lehrkraft zeigt das Spiel am Beamer oder am Lehrer-iPad. Die Jugendlichen nutzen ihre iPads als
 „Antwort-Karte“ (Zahl, Wetter, Ja/Nein, A–D, Gefühl) und halten sie auf „Zeigt her!“ hoch.
+Auf der Zahl-Karte sperrt **Fertig** die gewählte Zahl und verdeckt sie, bis es „Zeigt her!“ heißt.
 
 Alle spielen zusammen als eine Crew. Es gibt keine Einzel-Rangliste. Die gesammelte Energie baut
 ein gemeinsames Crew-HQ aus. Bei jedem neuen Level wählt die Crew per A/B, welches Teil dazukommt.
@@ -35,11 +36,19 @@ Sind alle Karten gezählt, geht das Spiel von allein weiter. Das spart Tipparbei
 
 | Tag | Mission | Worum es geht |
 |---|---|---|
-| Montag | **Wer steht?** | „Steh auf, wenn du …“: schätzen, aufstehen, auflösen. Mit Goldener Karte und Blitzrunde. |
+| Montag | **Wer steht?** | „Steh auf, wenn du …“: Zahl tippen und „Fertig“, aufstehen, zeigen. Genau = ★★, 1 daneben = ★. Mit Goldener Karte (×2) und Blitzrunde. |
 | Dienstag | **Gefühls-Radar** | Gleiche Situation, welches Gefühl? Wie stark? Ein Radar-Profi schätzt die Crew. |
 | Mittwoch | **Clash** | Ein Streit zwischen zwei Fantasiefiguren. Zwei Teams bringen sie über 5 Level zum Frieden (nach der Friedenstreppe). |
 | Donnerstag | **Feed-Check** | Echt, Meinung oder Fake? Gerüchte stoppen, Gruppendruck, Zivilcourage online. |
 | Freitag | **Konter-Battle** | Aus einem blöden Spruch wird eine Stärke (Reframing). Der Crew-Tower wächst. |
+
+**So läuft „Wer steht?“ (pro Karte):**
+
+1. Die Karte steht am Beamer. Jede:r tippt auf der Antwort-Karte (Zahl 0–10) ein, wie viele gleich aufstehen, und drückt **Fertig**.
+   Die Zahl ist dann gesperrt und verdeckt. Steh nur auf, wenn's für dich stimmt – nicht wegen der Zahl.
+2. **Aufstehen!** Du tippst einmal die Zahl an, wie viele stehen. Die Zahl erscheint groß.
+3. **Zeigt her!** Alle tippen auf ZEIGEN. Du zählst nur zwei Dinge: **Volltreffer** (genau richtig) und **1 daneben**.
+   Das Spiel rechnet die Sterne für die Crew aus. Einzelne Zahlen tippst du nicht ein.
 
 Am Wochenende gibt es „Freie Wahl“: Die Crew wählt aus allen aktiven Missionen. Mit „Andere Mission“ kannst du jederzeit tauschen.
 In der **Solo-Zone** gibt es Spiele für eine Person (z. B. Chill-Zone, Gefühls-Decoder, Clash-Solo).

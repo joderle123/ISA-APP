@@ -63,18 +63,50 @@ for (const [vpName, vp] of Object.entries({ ipadLandscape: VIEWPORTS.ipadLandsca
   await shot(page, tag('08-stehauf-karte'));
   problems.push(...await layoutCheck(page, tag('stehauf-karte')));
   const N = await page.evaluate(() => window.CREW.state.lastCrewSize);
+  // Karte zeigt „So geht's“ (3 Schritte), die Punkte-Regel und die Ehrlichkeits-Regel
+  if ((await page.locator('.sa-how .howto-step').count()) !== 3) problems.push(`${tag('stehauf-karte')}: erwartet 3 Schritte „So geht's“`);
+  if (!(await page.locator('.sa-score', { hasText: 'Genau richtig' }).count())) problems.push(`${tag('stehauf-karte')}: Punkte-Regel fehlt`);
+  if (!(await page.getByText('nicht wegen der Zahl').count())) problems.push(`${tag('stehauf-karte')}: Ehrlichkeits-Regel fehlt`);
+  if (!(await page.getByText('Sitzen bleiben ist immer okay').count())) problems.push(`${tag('stehauf-karte')}: „Sitzen bleiben ist immer okay“ fehlt`);
   for (let i = 0; i < 3; i++) {
     if (i === 2) await waitText(page, 'Goldene Karte', 5000);
-    await clickText(page, 'Alle haben geschätzt');
-    await waitText(page, 'Eine Figur pro Person', 8000);
-    await page.locator('.sa-person').nth(0).click();
-    await page.locator('.sa-person').nth(1).click();
+    await clickText(page, 'Alle sind fertig');
+    await waitText(page, 'Wie viele stehen?', 8000);
+    if ((await page.locator('#sa-standrow button').count()) !== N + 1) problems.push(`${tag('stehen')}: erwartet Zahlen 0 bis ${N}`);
     if (i === 0) { await shot(page, tag('09-stehauf-stehen')); problems.push(...await layoutCheck(page, tag('stehen'))); }
-    await clickText(page, 'Weiter');
-    await waitText(page, 'Welche Zahlen seht ihr?', 8000);
-    // Alle Schätzungen eintippen: danach geht es von allein zur Auflösung
-    for (let k = 0; k < N; k++) await page.locator('.valuepad button', { hasText: new RegExp('^' + (k % 2 ? 2 : 1) + '$') }).first().click();
+    // Einmal verklickt: 3 statt 2, dann korrigieren
+    if (i === 0) {
+      await page.locator('#sa-standrow button', { hasText: /^3$/ }).click();
+      await waitText(page, 'So viele stehen', 5000);
+      await clickText(page, 'Zahl ändern');
+      await waitText(page, 'Wie viele stehen?', 5000);
+    }
+    await page.locator('#sa-standrow button', { hasText: /^2$/ }).click();
+    await waitText(page, 'So viele stehen', 5000);
+    if ((await page.locator('.sa-bignum').textContent()).trim() !== '2') problems.push(`${tag('stehen-gross')}: große Zahl falsch`);
+    if (i === 0) { await shot(page, tag('09b-stehauf-zahl-gross')); problems.push(...await layoutCheck(page, tag('stehen-gross'))); }
+    await page.locator('#sa-show').click();
+    await waitText(page, 'Zählt nur diese zwei', 8000);
+    // Nur zwei Zähler, vorbelegt mit 0 – keine einzelnen Zahlen mehr eintippen
+    if ((await page.locator('.sa-counter').count()) !== 2) problems.push(`${tag('zeigen')}: erwartet 2 Zähler`);
+    if (await page.locator('.valuepad').count()) problems.push(`${tag('zeigen')}: altes Zahlenfeld noch da`);
+    if (!(await page.locator('.sa-counter', { hasText: '1 oder 3' }).count())) problems.push(`${tag('zeigen')}: „1 daneben“ nennt nicht 1 oder 3`);
+    await page.locator('#sa-exact-plus').click();
+    await page.locator('#sa-exact-plus').click();
+    await page.locator('#sa-near-plus').click();
+    // Mehr Treffer als Leute geht nicht
+    for (let k = 0; k < N + 2; k++) await page.locator('#sa-near-plus').click();
+    const sum = await page.evaluate(() => [...document.querySelectorAll('.sa-cval')].reduce((a, e) => a + Number(e.textContent), 0));
+    if (sum !== N) problems.push(`${tag('zeigen')}: Zähler zusammen ${sum} statt höchstens ${N}`);
+    for (let k = 0; k < N - 3; k++) await page.locator('#sa-near-minus').click();
+    if (i === 0) { await shot(page, tag('10a-stehauf-zeigen')); problems.push(...await layoutCheck(page, tag('zeigen'))); }
+    await clickText(page, 'Auflösen');
     await waitText(page, 'Volltreffer', 5000);
+    // 2 genau + 1 daneben = 5 Sterne (Goldene Karte ×2 = 10)
+    const want = i === 2 ? 10 : 5;
+    if ((await page.locator('.sa-starrow .sa-star').count()) !== want) problems.push(`${tag('aufloesung')}: erwartet ${want} Sterne`);
+    if (!(await page.getByText('+' + want + ' Crew-Punkte').count())) problems.push(`${tag('aufloesung')}: erwartet +${want} Crew-Punkte`);
+    if (!(await page.getByText('Wer steht, darf was sagen. Muss aber nicht.').count())) problems.push(`${tag('aufloesung')}: Satz „Wer steht, darf was sagen“ fehlt`);
     if (i === 0) { await page.waitForTimeout(400); await shot(page, tag('10-stehauf-aufloesung')); problems.push(...await layoutCheck(page, tag('aufloesung'))); }
     await clickText(page, i < 2 ? 'Nächste Karte' : 'Weiter');
   }
@@ -99,12 +131,31 @@ for (const [vpName, vp] of Object.entries({ ipadLandscape: VIEWPORTS.ipadLandsca
   // Antwort-Karte
   await page.locator('#tile-paddle').click();
   await waitText(page, 'Antwort-Karte');
+  await page.locator('[data-tab="zahl"]').click();
   await page.locator('.paddle-grid button').nth(7).click();
   await shot(page, tag('14-paddle'));
   problems.push(...await layoutCheck(page, tag('paddle')));
+  // Zahl-Karte: Zeigen geht wie immer direkt (Radar & Co.)
   await clickText(page, 'Zeigen');
   await shot(page, tag('15-paddle-zeigen'));
   await page.locator('#btn-paddle-back').click();
+  // Fertig sperrt und verdeckt die Zahl, ZEIGEN zeigt sie groß, danach ist alles zurückgesetzt
+  await page.locator('.paddle-grid button').nth(3).click();
+  await page.locator('#btn-lock').click();
+  await waitText(page, 'Gesperrt', 3000);
+  if (await page.locator('.paddle-grid').count()) problems.push(`${tag('paddle-gesperrt')}: Zahlen trotz Sperre wählbar`);
+  if (await page.locator('.paddle', { hasText: /\b3\b/ }).count()) problems.push(`${tag('paddle-gesperrt')}: Zahl trotz Sperre sichtbar`);
+  await shot(page, tag('15b-paddle-gesperrt'));
+  problems.push(...await layoutCheck(page, tag('paddle-gesperrt')));
+  await clickText(page, 'Zeigen');
+  if ((await page.locator('.paddle-show .answer').textContent()).trim() !== '3') problems.push(`${tag('paddle-gesperrt')}: ZEIGEN zeigt nicht die gesperrte Zahl`);
+  await shot(page, tag('15c-paddle-gesperrt-zeigen'));
+  await page.locator('#btn-paddle-back', { hasText: 'Neue Runde' }).click();
+  if (await page.locator('#paddle-locked').count() || !(await page.locator('.paddle-grid').count())) problems.push(`${tag('paddle-gesperrt')}: Neue Runde setzt nicht zurück`);
+  // Andere Karten haben kein „Fertig“
+  await page.locator('[data-tab="janein"]').click();
+  await page.locator('.paddle-grid button').first().click();
+  if (await page.locator('#btn-lock').count()) problems.push(`${tag('paddle')}: „Fertig“ auf der Ja/Nein-Karte`);
   await page.locator('[data-tab="wetter"]').click();
   await shot(page, tag('16-paddle-wetter'));
   problems.push(...await layoutCheck(page, tag('paddle-wetter')));

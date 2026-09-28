@@ -521,6 +521,9 @@ p { margin: 0; }
 .paddle-grid { display: grid; gap: 12px; flex: 1; }
 .paddle-grid .btn { font-size: 1.6em; min-height: 88px; white-space: normal; }
 .paddle-grid .btn.sel { outline: 5px solid var(--yellow); outline-offset: 3px; }
+.paddle-locked { align-items: center; justify-content: center; text-align: center; gap: 18px; border: var(--bw) dashed var(--line); border-radius: var(--radius); background: var(--panel); padding: 24px; }
+.paddle-lock-ic { display: grid; place-items: center; width: 150px; height: 150px; border-radius: 50%; background: color-mix(in srgb, var(--yellow) 22%, transparent); border: var(--bw) solid var(--line); color: var(--yellow); }
+.paddle-lock-t { font-size: clamp(1.5em, 4.5vmin, 2.4em); line-height: 1.15; }
 .paddle-show {
   position: absolute; inset: 0;
   display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 24px;
@@ -639,21 +642,43 @@ textarea { min-height: 120px; font-family: ui-monospace, Menlo, monospace; font-
 
 /* ---------- Wer steht? ---------- */
 .sa-gold { border-color: #e0a100 !important; background: linear-gradient(135deg, color-mix(in srgb, #ffd54a 30%, var(--panel)), var(--panel)) !important; }
-.sa-crowd { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
-.sa-person { appearance: none; font: inherit; width: 84px; height: 110px; border-radius: 18px; border: var(--bw) solid var(--line); background: var(--panel); color: var(--muted); cursor: pointer; display: grid; place-items: end center; padding-bottom: 8px; transform-origin: 50% 100%; transform: scaleY(.72); opacity: .6; transition: transform 220ms cubic-bezier(.2,1.6,.4,1), opacity 160ms; touch-action: manipulation; }
-.sa-person.up { transform: none; opacity: 1; background: var(--yellow); color: var(--yellow-ink); }
-.sa-line { position: relative; display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; align-items: end; gap: 4px; width: 100%; max-width: 900px; margin: 0 auto; padding-top: 70px; border-bottom: 4px solid var(--line); }
-.sa-col { display: flex; flex-direction: column; justify-content: flex-end; align-items: center; gap: 6px; padding-bottom: 6px; }
-.sa-col.real .sa-num { background: var(--good); color: var(--good-ink, #062); }
-.sa-chips { display: flex; flex-direction: column-reverse; gap: 4px; min-height: 20px; }
-.sa-chip { width: 26px; height: 16px; border-radius: 6px; background: var(--teamA); border: 2px solid var(--line); animation: pop-in 300ms both; }
-.sa-num { font-family: var(--font-display); font-size: 1.5em; min-width: 40px; text-align: center; border-radius: 10px; padding: 2px 6px; }
-.sa-ball { position: absolute; top: -40px; width: 40px; height: 40px; border-radius: 50%; background: var(--yellow); border: var(--bw) solid var(--line); opacity: 0; }
-.sa-ball.drop { animation: sa-drop 520ms cubic-bezier(.3,1.4,.5,1) forwards; }
-@keyframes sa-drop { 0% { opacity: 1; transform: translateY(-40px); } 70% { transform: translateY(46px); } 100% { opacity: 1; transform: translateY(34px); } }
+/* Wer steht?: So geht's, Punkte-Regel, Zahlenreihe, große Zahl, zwei Zähler, Sterne */
+.wrap.sa-wrap { gap: 14px; }
+.sa-card { padding: 18px 26px; gap: 8px; }
+.sa-card .say { font-size: clamp(1.5em, 1.8vw + 0.9em, 2.4em); }
+.sa-how .howto.row3 { gap: 14px; margin-top: 10px; }
+.sa-how .howto.row3 .howto-step { flex-direction: row; align-items: flex-start; text-align: left; padding: 26px 14px 14px; gap: 12px; }
+.sa-how .howto.row3 .howto-ic { width: 46px; height: 46px; flex: none; }
+.sa-how .howto.row3 .howto-ic svg { width: 26px; height: 26px; }
+.sa-how .howto-title { font-size: 1.1em; }
+.sa-how .howto-step .muted { font-size: .95em; }
+.sa-how .paddle-hint { font-size: .8em; padding: 5px 10px; margin-top: 4px; }
+.sa-how .paddle-hint b { white-space: nowrap; }
+.sa-score { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 10px 22px; padding: 10px 16px; border-radius: var(--radius); border: 2px dashed var(--yellow); background: color-mix(in srgb, var(--yellow) 12%, transparent); }
+.sa-score.gold { border-style: solid; border-color: #e0a100; background: color-mix(in srgb, #ffd54a 26%, transparent); }
+.sa-score-item { display: inline-flex; align-items: center; gap: 8px; font-size: 1.1em; }
+.sa-stars { display: inline-flex; gap: 2px; color: var(--yellow); vertical-align: middle; }
+.sa-stars svg { fill: currentColor; }
+.sa-honest { margin: 0; text-align: center; }
+.sa-numrow { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; width: 100%; max-width: 980px; }
+.sa-numrow .btn.sa-numbtn { font-family: var(--font-display); font-size: 2.2em; min-width: 96px; min-height: 96px; padding: 0 12px; justify-content: center; }
+.sa-bignum { font-family: var(--font-display); font-size: clamp(7em, 34vmin, 16em); line-height: 1; color: var(--yellow); -webkit-text-stroke: 5px var(--ink); paint-order: stroke fill; text-shadow: 0 10px 0 var(--ink); font-variant-numeric: tabular-nums; }
+.sa-bignum.small { font-size: clamp(4em, 16vmin, 7em); -webkit-text-stroke-width: 4px; text-shadow: 0 6px 0 var(--ink); }
+.app[data-look="neon"] .sa-bignum { -webkit-text-stroke: 0; text-shadow: 0 0 40px currentColor; }
+.sa-target { display: flex; align-items: center; justify-content: center; gap: 24px; }
+.sa-counters { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; }
+.sa-counter { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 14px; padding: 22px 18px; }
+.sa-counter .sa-cval { font-size: 4em; min-width: 1.4em; }
+.sa-ctitle { font-family: var(--font-display); text-transform: var(--display-case); letter-spacing: var(--display-track); font-size: 1.4em; display: inline-flex; align-items: center; gap: 10px; }
+.sa-counter .stepper { gap: 22px; }
+.sa-counter .stepper .icon-btn { width: 76px; height: 76px; }
+.sa-counter .stepper .icon-btn svg { width: 34px; height: 34px; }
+.sa-starrow { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px; color: var(--yellow); }
+.sa-star { animation: pop-in 360ms cubic-bezier(.2,1.5,.4,1) both; }
+.sa-star svg { fill: currentColor; width: 56px; height: 56px; }
 .sa-fuse { height: 12px; border-radius: 99px; background: var(--accent); width: 100%; animation: sa-fuse 5s linear forwards; transform-origin: left; }
 @keyframes sa-fuse { to { transform: scaleX(0); } }
-@media (prefers-reduced-motion: reduce) { .sa-ball.drop { animation: none; opacity: 1; transform: translateY(34px); } .sa-fuse { animation: none; } }
+@media (prefers-reduced-motion: reduce) { .sa-star { animation: none; } .sa-fuse { animation: none; } }
 
 /* ---------- Erklären: Schritte, Sprechblase, Hinweise ---------- */
 .howto { display: grid; gap: 12px; }

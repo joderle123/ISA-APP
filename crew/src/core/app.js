@@ -795,6 +795,7 @@
     if (tab === 'team') tab = 'zahl';
     let sel = null;
     let hidden = false;
+    let locked = false;
     const tabs = [
       ['wetter', 'Wetter'], ['zahl', 'Zahl 0–10'], ['janein', 'Ja / Nein'], ['abcd', 'A B C D'], ['emo', 'Gefühl'],
     ];
@@ -818,12 +819,26 @@
       else if (tab === 'janein') grid = h('div', { class: 'paddle-grid', style: { gridTemplateColumns: '1fr 1fr' } }, mk('Ja'), mk('Nein'));
       else if (tab === 'abcd') grid = h('div', { class: 'paddle-grid', style: { gridTemplateColumns: '1fr 1fr' } }, ['A', 'B', 'C', 'D'].map((x) => mk(x)));
       else grid = h('div', { class: 'paddle-grid', style: { gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))' } }, EMO.map((x) => mk(x)));
+      // Zahl-Karte: „Fertig“ sperrt und verdeckt die Schätzung, bis „Zeigt her!“ kommt (Wer steht?)
+      if (locked) {
+        ui.screen([h('div', { class: 'paddle' },
+          h('div', { class: 'row between' }, h('h2', null, 'Antwort-Karte')),
+          h('div', { class: 'paddle-body paddle-locked', id: 'paddle-locked' },
+            h('span', { class: 'paddle-lock-ic' }, CREW.icon('lock', 96)),
+            h('div', { class: 'display paddle-lock-t' }, 'Gesperrt – warte auf „Zeigt her!“'),
+            h('p', { class: 'muted' }, 'Deine Zahl ist versteckt. Keiner sieht sie.'),
+            ui.btn('Zeigen', showBig, { big: true, variant: 'good', icon: 'eye', id: 'btn-show' })))]);
+        return;
+      }
       const status = sel == null
-        ? h('p', { class: 'muted' }, 'Wähle deine Antwort. Wenn es heißt „Zeigt her!“, tippe auf ZEIGEN und halte das iPad hoch.')
+        ? h('p', { class: 'muted' }, tab === 'zahl'
+          ? 'Wähle deine Zahl und drück Fertig. Wenn es heißt „Zeigt her!“, tippe auf ZEIGEN und halte das iPad hoch.'
+          : 'Wähle deine Antwort. Wenn es heißt „Zeigt her!“, tippe auf ZEIGEN und halte das iPad hoch.')
         : h('div', { class: 'row between' },
             h('div', { class: 'row' }, h('span', { class: 'muted' }, 'Deine Wahl:'), h('b', { class: 'display', style: { fontSize: '1.6em' } }, hidden ? '• • •' : labelOf(sel))),
             h('div', { class: 'row' },
               ui.iconBtn(hidden ? 'eye' : 'eyeOff', () => { hidden = !hidden; draw(); }, { label: hidden ? 'Wahl anzeigen' : 'Wahl verdecken' }),
+              tab === 'zahl' ? ui.btn('Fertig', () => { locked = true; CREW.sound.play('unlock'); draw(); }, { big: true, icon: 'lock', id: 'btn-lock', silent: true }) : null,
               ui.btn('Zeigen', showBig, { big: true, variant: 'good', icon: 'eye', id: 'btn-show' })));
       ui.screen([h('div', { class: 'paddle' },
         h('div', { class: 'row between' }, h('h2', null, 'Antwort-Karte')),
@@ -838,7 +853,7 @@
         content,
         tab === 'wetter' ? h('div', { class: 'display', style: { fontSize: '2.4em' } }, labelOf(sel)) : null,
         tab === 'wetter' ? h('div', { class: 'pill accent paddle-private' }, 'Nur zur Lehrkraft zeigen') : null,
-        ui.btn('Zurück', () => { ov.remove(); sel = null; hidden = false; draw(); }, { variant: 'ghost', icon: 'left', id: 'btn-paddle-back' }));
+        ui.btn(locked ? 'Neue Runde' : 'Zurück', () => { ov.remove(); sel = null; hidden = false; locked = false; draw(); }, { variant: 'ghost', icon: locked ? 'undo' : 'left', id: 'btn-paddle-back' }));
       ui.overlays().appendChild(ov);
       const note = ov.querySelector('.paddle-private');
       if (note) setTimeout(() => note.remove(), 5000);
