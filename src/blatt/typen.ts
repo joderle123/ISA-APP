@@ -102,7 +102,8 @@ export type Baustein =
   | { art: 'vertrag'; titel?: string; text: string; unterschriften: string[] }
   // --- Auswählen & Einschätzen ----------------------------------------------
   | { art: 'ankreuzen'; titel?: string; items: string[]; spalten?: 1 | 2 | 3; frei?: number }
-  | { art: 'bilder'; bilder: { bild: BildId; text?: string }[]; spalten?: 2 | 3 | 4; modus?: 'einkreisen' | 'ankreuzen' | 'anmalen' | 'nur' }
+  /** `klein`: kompakte Reihe (Piktogramm auf getöntem Kreis, Text daneben) – z. B. Alltagsbeispiele auf Mathe-Blättern. */
+  | { art: 'bilder'; bilder: { bild: BildId; text?: string }[]; spalten?: 2 | 3 | 4; modus?: 'einkreisen' | 'ankreuzen' | 'anmalen' | 'nur'; klein?: boolean }
   | { art: 'wortspeicher'; titel?: string; items: string[] }
   | { art: 'skala'; frage?: string; von: string; bis: string; stufen?: 5 | 10 | 11; gesichter?: boolean }
   | { art: 'einschaetzung'; items: string[]; optionen: string[] }
@@ -146,6 +147,26 @@ export type Baustein =
   | { art: 'kaestchen'; zeilen: number; label?: string }
   /** Kassenbon: Posten mit Preisen; ohne `summe` bleibt die Summe zum Ausrechnen leer. */
   | { art: 'bon'; titel?: string; posten: { text: string; preis: string }[]; summe?: string; fuss?: string }
+  /** Rechenpäckchen: kurze Aufgaben in Spalten. Im Text: `___` Antwortlinie, `[]` Kästchen (für <, >, =),
+   *  `{35}` vorgegebene Antwort in der Akzentfarbe (Beispiel), `#3/4#` Bruch mit Bruchstrich. */
+  | { art: 'paeckchen'; items: string[]; spalten?: 1 | 2 | 3 | 4; buchstaben?: boolean }
+  /** Stellenwerttafel: `stellen` z. B. ['Z', 'E', 'z', 'h'], das Komma steht nach der Stelle Nr. `komma` (ab 1).
+   *  Zeilen mit `zahl` sind ausgefüllt (Beispiel), ohne `zahl` leer zum Eintragen. */
+  | { art: 'stellentafel'; stellen: string[]; komma: number; zeilen: { label?: string; zahl?: string }[] }
+  /** Hunderterfelder (10 × 10 = 1 Ganzes): `gefaerbt` Kästchen sind gefärbt, spaltenweise (erst ganze Zehntel).
+   *  `text` steht darunter, ohne `text` eine Schreiblinie. */
+  | { art: 'hunderterfeld'; felder: { gefaerbt?: number; text?: string; label?: string }[]; spalten?: 2 | 3 | 4 }
+  /** Zahlenstrahl über die ganze Breite. Werte mit Komma als Text („0,25“). `zahlen` werden beschriftet,
+   *  `punkte` sind Pfeile mit Buchstaben (ohne `name`: leerer Kasten zum Eintragen). */
+  | { art: 'zahlenstrahl'; von: string; bis: string; schritt: string; fein?: string; zahlen?: string[]; punkte?: { wert: string; name?: string }[] }
+  /** Bruchbilder: Kreise, Rechtecke, Streifen, Mengen und die Bruchwand. */
+  | { art: 'bruchbilder'; items: Bruchbild[]; spalten?: 1 | 2 | 3 | 4 }
+  /** Einheiten-Treppe (l – dl – cl – ml, t – kg – g): nach unten malnehmen, nach oben teilen. */
+  | { art: 'treppe'; stufen: string[]; runter: string; rauf: string; beispiel?: string }
+  /** Komma-Sprünge bei · und : 10, 100, 1000: Ziffern in Kästchen, Bögen für jeden Sprung. Ohne `ergebnis` zum Einzeichnen. */
+  | { art: 'kommasprung'; items: { zahl: string; op: '·' | ':'; faktor: 10 | 100 | 1000; ergebnis?: string; label?: string; boegen?: boolean }[]; spalten?: 1 | 2 | 3 }
+  /** Geometrie in Originalgröße: Maße in mm (zum Nachmessen muss das Blatt in 100 % gedruckt werden). */
+  | { art: 'geo'; felder: GeoFeld[]; spalten?: 1 | 2 | 3 | 4 }
   // --- Bildgeschichten & Karten ---------------------------------------------
   | { art: 'comic'; felder: ComicFeld[]; spalten?: 2 | 3 }
   | { art: 'karten'; karten: { titel?: string; text?: string; bild?: BildId }[]; spalten?: 2 | 3 | 4; hoehe?: number }
@@ -163,6 +184,64 @@ export interface Rechnung {
   /** Kleine Überschrift, z. B. „a)“ oder „Beispiel“. */
   label?: string
 }
+
+/** Ein Bruchbild. Beschriftung: `bruch` als Bruch mit Bruchstrich ('3/4'; '' = leerer Bruch zum Ausfüllen),
+ *  `text` als Zeile darunter ('' = Schreiblinie), `ankreuzen` als kleine Auswahl (z. B. ['ja', 'nein']). */
+export interface Bruchbild {
+  /** kreis, rechteck (2 Reihen bei 4, 6, 8 Teilen), streifen, menge (Punkte), wand (Bruchstreifen untereinander) */
+  form: 'kreis' | 'rechteck' | 'streifen' | 'menge' | 'wand'
+  /** Anzahl der Teile (kreis, rechteck, streifen) */
+  teile?: number
+  /** gefärbte Teile – bei `menge` gefärbte Gruppen */
+  gefaerbt?: number
+  /** Teile absichtlich ungleich groß (Fehler finden) */
+  ungleich?: boolean
+  /** menge: Anzahl der Punkte; `gruppen` > 0 kreist sie in so viele gleiche Gruppen ein */
+  anzahl?: number
+  gruppen?: number
+  /** wand: Nenner der Streifen, z. B. [1, 2, 3, 4] */
+  nenner?: number[]
+  bruch?: string
+  text?: string
+  label?: string
+  ankreuzen?: string[]
+}
+
+/** Ein Feld mit einer Zeichnung in Originalgröße; alle Maße in mm, Ursprung oben links, y nach unten. */
+export interface GeoFeld {
+  /** Breite (Standard: ganze Spalte) und Höhe in mm */
+  b?: number
+  h: number
+  label?: string
+  /** Zeile unter der Zeichnung ('' = Schreiblinie) */
+  text?: string
+  /** Hintergrund: Karo (5 mm) oder Punkte (5 mm) */
+  raster?: 'karo' | 'punkte'
+  elemente: GeoElement[]
+}
+
+export type GeoPunkt = [number, number] | string
+
+/** Winkel in Grad, gegen den Uhrzeigersinn ab „nach rechts“ (wie im Heft). */
+export type GeoElement =
+  /** Punkt als kleines Kreuz mit Namen; `lage` = wo der Name steht (o, u, l, r, ol, or, ul, ur) */
+  | { t: 'punkt'; name?: string; x: number; y: number; lage?: 'o' | 'u' | 'l' | 'r' | 'ol' | 'or' | 'ul' | 'ur'; kreuz?: boolean }
+  /** Strecke (von–bis), Halbgerade (ab `von` durch `bis` bis zum Rand) oder Gerade (durch beide bis zu den Rändern).
+   *  `name` steht am Ende (z. B. „g“), `stil` 'strasse' zeichnet eine breite helle Straße. */
+  | { t: 'linie'; von: GeoPunkt; bis: GeoPunkt; art?: 'strecke' | 'halbgerade' | 'gerade'; farbe?: 'tinte' | 'tief' | 'grau'; stil?: 'strasse' | 'dick' | 'gestrichelt'; name?: string; mass?: string }
+  /** Winkel mit Scheitel (x, y), Schenkel in Richtung a1 und a2, Länge r; `marke`: Bogen bzw. Quadrat bei 90° */
+  | { t: 'winkel'; x: number; y: number; a1: number; a2: number; r?: number; r2?: number; marke?: boolean; name?: string }
+  /** Vieleck; `seiten` Beschriftung je Seite (von Ecke i zu i+1), `ecken` Namen, `rechte` Ecken mit rechtem Winkel */
+  | { t: 'vieleck'; punkte: [number, number][]; seiten?: string[]; ecken?: string[]; rechte?: number[]; fuellung?: boolean }
+  | { t: 'text'; x: number; y: number; text: string; klein?: boolean; fett?: boolean; mitte?: boolean }
+  /** Lineal: Oberkante bei y, die 0 bei x0, `cm` lang */
+  | { t: 'lineal'; x0: number; y: number; cm: number }
+  /** Uhr mit Stunden- und Minutenzeiger */
+  | { t: 'uhr'; x: number; y: number; r: number; h: number; m?: number }
+  /** Laptop von der Seite: Scharnier (x, y), Tastatur nach rechts, Bildschirm im Winkel `winkel` */
+  | { t: 'laptop'; x: number; y: number; winkel: number; l?: number }
+  /** Helle Fläche (Häuserblock, Park, Wasser) für Pläne */
+  | { t: 'flaeche'; x: number; y: number; b: number; h: number; ton?: 'grau' | 'gruen' | 'blau'; rx?: number }
 
 export interface ComicFeld {
   /** Bis zu zwei Figuren, z. B. ['figur:noah:wuetend', 'figur:mia:traurig']. */
@@ -231,6 +310,8 @@ export interface Blatt {
   verwandt?: string[]
   /** Gehört zum Skills-Kurs: Einheit(en), in denen das Blatt vorkommt (z. B. ['j1-e01']). */
   kurs?: string[]
+  /** Erklärbild (schrittweise Animation) im Blatt-Dialog der App, siehe src/blatt/erklaerbilder. */
+  animation?: string
   de: BlattInhalt
   fr?: BlattInhalt
 }

@@ -15,6 +15,8 @@ import { MOTIV_NAMEN } from '../src/blatt/motive'
 import { QUELLEN_TEXTE } from '../src/blatt/quellen'
 import { eldibGoalById } from '../src/data/taxonomy'
 import { bereichAusDatei } from '../src/blatt/nummern'
+import { geoPunkte, kommaSprung, MM, stuecke, wert } from '../src/blatt/pdf/mathe'
+import { SEITE } from '../src/blatt/pdf/stil'
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..')
 const args = process.argv.slice(2)
@@ -34,6 +36,7 @@ const ARTEN = new Set([
   'wennDann', 'dialog', 'vertrag', 'ankreuzen', 'bilder', 'wortspeicher', 'skala', 'einschaetzung', 'zuordnen', 'gefuehle', 'ampel', 'thermometer',
   'vulkan', 'eisberg', 'koerper', 'batterie', 'waage', 'leiter', 'zielscheibe', 'hand', 'mindmap', 'schritte', 'plan', 'tagesplan', 'atmen', 'comic',
   'karten', 'rueckblick', 'notfall', 'gefuehlsrad', 'glaeser', 'netz', 'kurve', 'tageskreis', 'farbkalender', 'rechnungen', 'kaestchen', 'bon',
+  'paeckchen', 'stellentafel', 'hunderterfeld', 'zahlenstrahl', 'bruchbilder', 'treppe', 'kommasprung', 'geo',
 ])
 
 /** Mathe: Dezimalzahl mit Komma („12,5“) als Zahl – oder NaN */
@@ -71,7 +74,8 @@ const ZEICHEN = readdirSync(SCHRIFTEN)
   .reduce((a, b) => new Set([...a].filter((c) => b.has(c))))
 ZEICHEN.add(0xad)
 function fremdeZeichen(x: string): string {
-  return [...new Set([...x].filter((ch) => ch !== '\n' && !ZEICHEN.has(ch.codePointAt(0) ?? 0)))].join(' ')
+  // \n Zeilenumbruch, \t Tabulator im Päckchen (rechter Teil bündig) – beide werden nicht als Zeichen gesetzt
+  return [...new Set([...x].filter((ch) => ch !== '\n' && ch !== '\t' && !ZEICHEN.has(ch.codePointAt(0) ?? 0)))].join(' ')
 }
 
 function melde(art: 'F' | 'H', wo: string, text: string) {
@@ -105,7 +109,10 @@ function texteVon(b: Baustein): string[] {
   return out
 }
 
-function pruefeBausteine(wo: string, liste: Baustein[], blatt: Blatt, sprache: Sprache, tiefe = 0) {
+/** verfügbare Breite in pt (wie in BlattDokument/Spalten) */
+const BREITE = 595.28 - SEITE.rand * 2
+
+function pruefeBausteine(wo: string, liste: Baustein[], blatt: Blatt, sprache: Sprache, tiefe = 0, breite = BREITE) {
   let aufgaben = 0
   liste.forEach((b, i) => {
     const w = `${wo} [${i + 1}:${b?.art}]`
@@ -156,9 +163,100 @@ function pruefeBausteine(wo: string, liste: Baustein[], blatt: Blatt, sprache: S
       }
       case 'spalten':
         if (tiefe) melde('F', w, 'Spalten dürfen nicht verschachtelt werden')
-        pruefeBausteine(w + ' links', b.links ?? [], blatt, sprache, tiefe + 1)
-        pruefeBausteine(w + ' rechts', b.rechts ?? [], blatt, sprache, tiefe + 1)
+        {
+          const [l, r] = b.verhaeltnis === '2:1' ? [2, 1] : b.verhaeltnis === '1:2' ? [1, 2] : [1, 1]
+          const bl = ((breite - 16) * l) / (l + r)
+          pruefeBausteine(w + ' links', b.links ?? [], blatt, sprache, tiefe + 1, bl)
+          pruefeBausteine(w + ' rechts', b.rechts ?? [], blatt, sprache, tiefe + 1, breite - 16 - bl)
+        }
         break
+      case 'paeckchen':
+        if (!b.items?.length || b.items.length > 16) melde('F', w, 'Päckchen: 1–16 Aufgaben')
+        if (b.spalten && ![1, 2, 3, 4].includes(b.spalten)) melde('F', w, '1–4 Spalten')
+        for (const x of b.items ?? []) {
+          if (/_{1,2}(?!_)/.test(x.replace(/_{3,}/g, '')) && !/#[^#]*_[^#]*#/.test(x)) melde('H', w, `„${x}“: Antwortlinie mit mindestens drei _`)
+          if ((x.match(/#/g) ?? []).length % 2) melde('F', w, `„${x}“: Bruch nicht geschlossen (#z/n#)`)
+          if ((x.match(/\{/g) ?? []).length !== (x.match(/\}/g) ?? []).length) melde('F', w, `„${x}“: Klammer { } nicht geschlossen`)
+          stuecke(x)
+        }
+        break
+      case 'stellentafel': {
+        if (b.stellen.length < 2 || b.stellen.length > 8) melde('F', w, 'Stellentafel: 2–8 Stellen')
+        if (b.komma < 1 || b.komma > b.stellen.length) melde('F', w, 'Stellentafel: Komma nach Stelle 1 … Anzahl der Stellen')
+        for (const z of b.zeilen) {
+          if (!z.zahl) continue
+          if (!/^\d+(,\d+)?$/.test(z.zahl)) { melde('F', w, `Stellentafel: „${z.zahl}“ ist keine Zahl`); continue }
+          const [g, nk = ''] = z.zahl.split(',')
+          if (g.length > b.komma || nk.length > b.stellen.length - b.komma) melde('F', w, `Stellentafel: „${z.zahl}“ passt nicht in die Stellen`)
+        }
+        break
+      }
+      case 'hunderterfeld':
+        if (!b.felder?.length || b.felder.length > 8) melde('F', w, 'Hunderterfeld: 1–8 Felder')
+        for (const f of b.felder ?? []) if (f.gefaerbt !== undefined && (f.gefaerbt < 0 || f.gefaerbt > 100 || !Number.isInteger(f.gefaerbt))) melde('F', w, 'Hunderterfeld: 0–100 gefärbte Kästchen')
+        break
+      case 'zahlenstrahl': {
+        const von = wert(b.von), bis = wert(b.bis), schritt = wert(b.schritt), fein = b.fein ? wert(b.fein) : 0
+        if ([von, bis, schritt].some(Number.isNaN) || bis <= von || schritt <= 0) { melde('F', w, 'Zahlenstrahl: von < bis, Schritt > 0'); break }
+        const teilt = (a: number, d: number) => Math.abs(a / d - Math.round(a / d)) < 1e-6
+        if (!teilt(bis - von, schritt) || (bis - von) / schritt > 20) melde('F', w, 'Zahlenstrahl: Schritt muss die Länge in höchstens 20 Teile teilen')
+        if (fein && (!teilt(schritt, fein) || (bis - von) / fein > 100)) melde('F', w, 'Zahlenstrahl: feine Striche müssen den Schritt teilen (höchstens 100)')
+        for (const z of [...(b.zahlen ?? []), ...(b.punkte ?? []).map((p) => p.wert)]) {
+          const v = wert(z)
+          if (Number.isNaN(v) || v < von - 1e-9 || v > bis + 1e-9) melde('F', w, `Zahlenstrahl: „${z}“ liegt nicht zwischen ${b.von} und ${b.bis}`)
+          else if (fein && !teilt(v - von, fein) && (b.zahlen ?? []).includes(z)) melde('H', w, `Zahlenstrahl: „${z}“ liegt nicht auf einem Strich`)
+        }
+        break
+      }
+      case 'bruchbilder':
+        if (!b.items?.length || b.items.length > 12) melde('F', w, 'Bruchbilder: 1–12 Bilder')
+        for (const x of b.items ?? []) {
+          const n = x.form === 'menge' ? (x.gruppen ?? 0) : x.teile ?? 1
+          if (['kreis', 'rechteck', 'streifen'].includes(x.form) && (!x.teile || x.teile < 1 || x.teile > 12)) melde('F', w, 'Bruchbild: 1–12 Teile')
+          if (x.ungleich && ![2, 3, 4, 5, 6].includes(x.teile ?? 0)) melde('F', w, 'Bruchbild: ungleiche Teile nur bei 2–6 Teilen')
+          if ((x.gefaerbt ?? 0) > n) melde('F', w, 'Bruchbild: mehr gefärbt als Teile')
+          if (x.form === 'menge') {
+            if (!x.anzahl || x.anzahl > 40) melde('F', w, 'Menge: 1–40 Punkte')
+            if (x.gruppen && (x.anzahl ?? 0) % x.gruppen) melde('F', w, 'Menge: Punkte lassen sich nicht in gleiche Gruppen teilen')
+          }
+          if (x.form === 'wand' && (!x.nenner?.length || x.nenner.some((d) => d < 1 || d > 12))) melde('F', w, 'Bruchwand: Nenner 1–12')
+          if (x.bruch && !/^\d+\/\d+$/.test(x.bruch)) melde('F', w, `Bruchbild: „${x.bruch}“ – bitte wie „3/4“ (oder '' für leer)`)
+        }
+        break
+      case 'treppe':
+        if (b.stufen.length < 2 || b.stufen.length > 5) melde('F', w, 'Treppe: 2–5 Stufen')
+        break
+      case 'kommasprung':
+        if (!b.items?.length || b.items.length > 9) melde('F', w, 'Kommasprung: 1–9 Aufgaben')
+        for (const x of b.items ?? []) {
+          if (!/^\d+(,\d+)?$/.test(x.zahl)) { melde('F', w, `Kommasprung: „${x.zahl}“ ist keine Zahl`); continue }
+          if (![10, 100, 1000].includes(x.faktor) || !['·', ':'].includes(x.op)) melde('F', w, 'Kommasprung: · oder : mit 10, 100, 1000')
+          const e = kommaSprung(x.zahl, x.op, x.faktor).ergebnis
+          const soll = x.op === '·' ? wert(x.zahl) * x.faktor : wert(x.zahl) / x.faktor
+          if (Math.abs(wert(e) - soll) > 1e-9) melde('F', w, `Kommasprung: interne Rechnung ${x.zahl} ${x.op} ${x.faktor} ergibt ${e}`)
+          if (x.ergebnis !== undefined && Math.abs(wert(x.ergebnis) - soll) > 1e-9) melde('F', w, `Kommasprung: ${x.zahl} ${x.op} ${x.faktor} ist nicht ${x.ergebnis}`)
+        }
+        break
+      case 'geo': {
+        const sp = b.spalten ?? Math.min(4, b.felder.length)
+        const spalteMm = (breite - (sp - 1) * 10) / sp / MM
+        for (const f of b.felder ?? []) {
+          const B = f.b ?? Math.floor(spalteMm)
+          if (B > spalteMm + 0.01) melde('F', w, `Geo-Feld ${B} mm breit, Platz ist nur ${spalteMm.toFixed(1)} mm`)
+          if (!f.h || f.h > 200) melde('F', w, 'Geo-Feld: Höhe 1–200 mm')
+          const namen = geoPunkte(f)
+          const drin = (x: number, y: number) => x >= 0 && x <= B && y >= 0 && y <= f.h
+          const ref = (p: unknown) => (typeof p === 'string' ? namen.has(p) : Array.isArray(p) && p.length === 2 && drin(p[0], p[1]))
+          for (const e of f.elemente ?? []) {
+            if (e.t === 'punkt' && !drin(e.x, e.y)) melde('F', w, `Punkt ${e.name ?? ''} liegt außerhalb des Feldes`)
+            if (e.t === 'linie' && (!ref(e.von) || !ref(e.bis))) melde('F', w, `Linie: Punkt ${JSON.stringify(e.von)} oder ${JSON.stringify(e.bis)} fehlt oder liegt außerhalb`)
+            if (e.t === 'vieleck') for (const q of e.punkte) if (!drin(q[0], q[1])) melde('F', w, 'Vieleck: Ecke außerhalb des Feldes')
+            if (e.t === 'lineal' && (e.x0 - 4 < 0 || e.x0 + e.cm * 10 + 4 > B || e.y + 11 > f.h)) melde('F', w, 'Lineal ragt aus dem Feld')
+            if (e.t === 'uhr' && (e.x - e.r < 0 || e.x + e.r > B || e.y - e.r < 0 || e.y + e.r > f.h)) melde('F', w, 'Uhr ragt aus dem Feld')
+          }
+        }
+        break
+      }
       case 'geschichte':
         if (b.bild) bilder.push(b.bild)
         if (b.text.length > 900) melde('H', w, 'Geschichte sehr lang (> 900 Zeichen)')

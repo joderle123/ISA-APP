@@ -140,9 +140,20 @@ Stage, Küche, Werkstatt) – nie kindlich. Pro Lektion ein Blatt: Regel, Beispi
 | `bon` | `titel?`, `posten: [{text, preis}]` (Preis wie „0,89 €“), `summe?`, `fuss?` | Kassenbon; ohne `summe` zum Ausrechnen (das Prüfskript prüft eine angegebene Summe). |
 | `aufgabe` mit `stufe` | 1, 2 oder 3 | Kleine Punkte an der Nummer: Basis, Kern, Plus – unauffällig, die Lehrerseite erklärt sie. |
 | `tabelle` mit `werte` | vorgegebene Zeilen | z. B. „Stimmt das?“ mit Rechnungen zum Prüfen. |
+| `paeckchen` | `items`, `spalten?` (1–4), `buchstaben?` | Kurze Aufgaben in Spalten. Im Text: `___` Antwortlinie (mehr _ = länger), `[]` Kästchen für <, >, =, `{35}` vorgegebene Antwort in der Akzentfarbe (Beispiel), `#3/4#` Bruch mit Bruchstrich (`#_/_#` leer), Tabulator `\t` = rechter Teil bündig am Rand (z. B. „stimmt [] stimmt nicht []“). |
+| `stellentafel` | `stellen` (z. B. `["Z","E","z","h"]`), `komma` (Stellen vor dem Komma), `zeilen: [{label?, zahl?}]` | Stellenwerttafel mit Komma-Spalte; Zeilen mit `zahl` ausgefüllt (Beispiel), sonst leer. |
+| `hunderterfeld` | `felder: [{gefaerbt?, text?, label?}]`, `spalten?` | 10 × 10 = 1 Ganzes; `gefaerbt` Kästchen spaltenweise (Zehntel zuerst). Ohne `text` eine Schreiblinie darunter. |
+| `zahlenstrahl` | `von`, `bis`, `schritt`, `fein?`, `zahlen?`, `punkte?: [{wert, name?}]` | Werte als Text mit Komma. Punkte ohne `name` bekommen einen leeren Kasten zum Eintragen. |
+| `bruchbilder` | `items: [{form, teile?, gefaerbt?, ungleich?, anzahl?, gruppen?, nenner?, bruch?, text?, label?, ankreuzen?}]`, `spalten?` | `kreis`, `rechteck`, `streifen`, `menge` (Punkte, in `gruppen` eingekreist), `wand` (Bruchstreifen). `ungleich` = absichtlich ungleiche Teile. `bruch: "3/4"` oder `""` (leerer Bruch). |
+| `treppe` | `stufen`, `runter`, `rauf`, `beispiel?` | Einheiten-Treppe (l – dl – cl – ml, t – kg – g): nach unten malnehmen, nach oben teilen. |
+| `kommasprung` | `items: [{zahl, op ("·" / ":"), faktor (10/100/1000), ergebnis?, label?}]`, `spalten?` | Mit `ergebnis`: Bögen für jeden Sprung, neue Nullen farbig (Beispiel). Ohne: Zahl mit leeren Kästchen zum Einzeichnen. Das Prüfskript rechnet nach. |
+| `geo` | `felder: [{b?, h, label?, text?, raster?, elemente}]`, `spalten?` | Geometrie in **Originalgröße** (mm, Ursprung oben links): `punkt` (Kreuz + Name), `linie` (`strecke`, `halbgerade`, `gerade`; `stil` strasse/dick/gestrichelt; `mass`), `winkel` (Grad gegen den Uhrzeigersinn, Bogen bzw. Quadrat bei 90°), `vieleck` (`seiten`, `ecken`, `rechte`), `lineal`, `uhr`, `laptop`, `flaeche`, `text`. Das Prüfskript prüft Feldbreite und Lage. |
 
 Lehrerseite: `loesungen` ist Pflicht (kurz, eine Zeile je Aufgabe). ELDiB-Ziele und Quellen braucht ein Mathe-Blatt nicht.
-Minuszeichen im Text als Gedankenstrich „–“, in Rechnungen `"op": "-"`.
+Minuszeichen im Text als Gedankenstrich „–“, in Rechnungen `"op": "-"`. Mal „·“, geteilt „:“. Zahlen bis 9999 ohne
+Trennzeichen (1000 ml), größere mit geschütztem Leerzeichen. Brüche im Fließtext als „3/4“, in Päckchen als `#3/4#`.
+Blätter mit Messaufgaben (`geo`) auf der Lehrerseite daran erinnern, in Originalgröße (100 %) zu drucken.
+`animation` (Blatt-Feld) verweist auf ein Erklärbild, das die App im Blatt-Dialog zeigt (siehe src/blatt/erklaerbilder).
 
 ### Bildgeschichten & Karten
 | Art | Felder | Wofür |
@@ -158,7 +169,7 @@ Minuszeichen im Text als Gedankenstrich „–“, in Rechnungen `"op": "-"`.
 
 ## 4. Bilder
 
-- **Piktogramme** `icon:<name>` – Liste in `src/blatt/bilder/icons.json` (246 Stück, z. B. backpack, bed, book, bulb, clock, device-mobile, friends, heart, hourglass, lifebuoy, moon, music, palette, pillow, school, shield, sun, target, traffic-lights, volcano …).
+- **Piktogramme** `icon:<name>` – Liste in `src/blatt/bilder/icons.json` (268 Stück, z. B. angle, backpack, bed, book, bulb, clock, device-mobile, friends, heart, hourglass, lifebuoy, moon, music, palette, pillow, school, shield, sun, target, traffic-lights, volcano …).
 - **Gefühlsgesichter** `gesicht:<gefühl>` – froh, traurig, wuetend, aengstlich, ueberrascht, angeekelt, ruhig, stolz, verlegen, muede, nervoes, enttaeuscht, gelangweilt, verwirrt, aufgeregt, besorgt, neutral.
 - **Figuren** `figur:<name>[:<gefühl>[:<haltung>]]`
   - Kinder: mia, noah, lea, sami, amira (Kopftuch), tom (Kappe); Jugendliche: jana, ben; Erwachsene: lehrerin, lehrer.

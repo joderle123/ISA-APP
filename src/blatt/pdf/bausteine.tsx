@@ -11,6 +11,7 @@ import { bildZeichnung, iconZeichnung, NEUTRAL, type Form, type Palette, type Ze
 import { gefuehlWort, gesichtZeichnung } from '../gesichter'
 import { motivZeichnung, VULKAN, HAND, fingerSpitze, EISBERG } from '../motive'
 import { Zeichnen } from './Zeichnen'
+import { Bruchbilder, Geo, Hunderterfeld, Kommasprung, Paeckchen, Stellentafel, Treppe, Zahlenstrahl, Zeile } from './mathe'
 import { SCHRIFT, TEXTE, typo, type Masse } from './stil'
 
 export interface Ctx {
@@ -553,6 +554,29 @@ function Bilder({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'bilder' }> }) {
   const sp = b.spalten ?? (b.bilder.length <= 4 ? b.bilder.length : 3)
   const luecke = 10
   const kb = (c.breite - luecke * (sp - 1)) / sp
+  if (b.klein) {
+    const d = c.m.basis * 3.1
+    return (
+      <View style={{ flexDirection: 'row', flexWrap: 'wrap' }}>
+        {b.bilder.map((x, i) => (
+          <View key={i} wrap={false} style={{ width: kb, marginRight: (i + 1) % sp === 0 ? 0 : luecke, marginBottom: 6, flexDirection: 'row', alignItems: 'center' }}>
+            <Plakette c={c} id={x.bild} d={d} />
+            {x.text ? (
+              /[_[{#]/.test(x.text) ? (
+                <View style={{ marginLeft: 8, flex: 1 }}>
+                  <Zeile c={c} s={x.text} />
+                </View>
+              ) : (
+                <Fliess c={c} fett style={{ marginLeft: 8, flex: 1 }}>
+                  {t(c, x.text)}
+                </Fliess>
+              )
+            ) : null}
+          </View>
+        ))}
+      </View>
+    )
+  }
   const bildB = Math.min(kb * 0.62, 110)
   return (
     <View style={{ flexDirection: 'row', flexWrap: 'wrap' }}>
@@ -2276,6 +2300,22 @@ function EinBaustein({ c, b }: { c: Ctx; b: Baustein }) {
       return <KaestchenFeld c={c} b={b} />
     case 'bon':
       return <Bon c={c} b={b} />
+    case 'paeckchen':
+      return <Paeckchen c={c} b={b} />
+    case 'stellentafel':
+      return <Stellentafel c={c} b={b} />
+    case 'hunderterfeld':
+      return <Hunderterfeld c={c} b={b} />
+    case 'zahlenstrahl':
+      return <Zahlenstrahl c={c} b={b} />
+    case 'bruchbilder':
+      return <Bruchbilder c={c} b={b} />
+    case 'treppe':
+      return <Treppe c={c} b={b} />
+    case 'kommasprung':
+      return <Kommasprung c={c} b={b} />
+    case 'geo':
+      return <Geo c={c} b={b} />
   }
 }
 
@@ -2293,6 +2333,7 @@ const FEST = new Set<Baustein['art']>([
   'info', 'geschichte', 'bild', 'frage', 'feld', 'vertrag', 'wortspeicher', 'skala', 'zuordnen', 'ampel', 'thermometer',
   'vulkan', 'eisberg', 'koerper', 'batterie', 'waage', 'leiter', 'zielscheibe', 'hand', 'mindmap', 'plan', 'atmen', 'notfall', 'linien',
   'gefuehlsrad', 'netz', 'kurve', 'tageskreis', 'farbkalender', 'rechnungen', 'bon',
+  'stellentafel', 'hunderterfeld', 'zahlenstrahl', 'bruchbilder', 'treppe', 'kommasprung', 'geo',
 ])
 
 /** Kleine Bausteine, die nicht umbrechen sollen (auch wenn sie es könnten). */
@@ -2303,6 +2344,8 @@ function istFest(b: Baustein): boolean {
       return b.zeilen + (b.beispiel ? 1 : 0) + (b.werte?.length ?? 0) <= 8
     case 'kaestchen':
       return b.zeilen <= 14
+    case 'paeckchen':
+      return b.items.length <= 16
     case 'satzanfaenge':
       return b.items.length * (b.linien ?? 1) <= 8
     case 'ankreuzen':
