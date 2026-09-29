@@ -22,7 +22,6 @@
       "Modul 2"
     ],
     "bild": "icon:decimal",
-    "animation": "zehntel-hundertstel",
     "de": {
       "titel": "Hinter dem Komma",
       "untertitel": "Dezimalzahlen verstehen: Zehntel und Hundertstel – Modul 2, Lektion 1",
@@ -285,7 +284,7 @@
       "lehrer": {
         "ziel": "Die Jugendlichen lesen und schreiben Dezimalzahlen mit Zehnteln und Hundertsteln, kennen den Wert jeder Ziffer nach dem Komma und wissen, wann eine 0 den Wert ändert – auch bei Geld, Zeiten und Daten.",
         "ablauf": [
-          "Einstieg (5 Min.): Das Erklärbild „Zehntel und Hundertstel“ aus der Toolbox zeigen oder ein Hunderterfeld an die Tafel zeichnen. „Wie viel ist ein Streifen? Wie viel ein Kästchen?“",
+          "Einstieg (5 Min.): Ein Hunderterfeld an die Tafel zeichnen. „Wie viel ist ein Streifen? Wie viel ein Kästchen?“",
           "Regel (10 Min.): 3,45 in die Stellentafel eintragen und mit Geld lesen: 3 Euro, 4 Zehn-Cent-Stücke, 5 Cent. Den Kasten „So liest du Dezimalzahlen“ gemeinsam lesen.",
           "Gemeinsam an der Tafel (5 Min.): „drei Komma zwei“ schreiben lassen und den Wert der 5 in 2,05 klären.",
           "Einzelarbeit (20–25 Min.): Aufgaben 1 bis 5, Aufgabe 6 für alle, die fertig sind. Die Punkte an der Nummer zeigen die Stufe.",
@@ -578,7 +577,7 @@
       "lehrer": {
         "ziel": "Les jeunes lisent et écrivent des nombres décimaux avec des dixièmes et des centièmes, connaissent la valeur de chaque chiffre après la virgule et savent quand un 0 change la valeur – aussi avec de l’argent, des temps et des données.",
         "ablauf": [
-          "Entrée en matière (5 min) : montrer l’animation « Dixièmes et centièmes » de la Toolbox ou dessiner une grille de 100 au tableau. « Combien vaut une bande ? Et une case ? »",
+          "Entrée en matière (5 min) : dessiner une grille de 100 au tableau. « Combien vaut une bande ? Et une case ? »",
           "Règle (10 min) : placer 3,45 dans le tableau de numération et le lire avec de l’argent : 3 euros, 4 pièces de 10 centimes, 5 centimes. Lire ensemble l’encadré « Lire un nombre décimal ».",
           "Ensemble au tableau (5 min) : faire écrire « trois virgule deux » et clarifier la valeur du 5 dans 2,05.",
           "Travail individuel (20–25 min) : exercices 1 à 5, l’exercice 6 pour ceux qui ont fini. Les points à côté du numéro indiquent le niveau.",
@@ -633,7 +632,6 @@
       "Modul 2"
     ],
     "bild": "icon:math-greater",
-    "animation": "vergleichen",
     "de": {
       "titel": "Gleich lang, dann vergleichen",
       "untertitel": "Dezimalzahlen vergleichen und ordnen – Modul 2, Lektion 2",
@@ -903,7 +901,7 @@
       "lehrer": {
         "ziel": "Die Jugendlichen vergleichen und ordnen Dezimalzahlen sicher: zuerst die Ganzen, dann Stelle für Stelle, Zahlen mit Nullen gleich lang gemacht. Sie runden Geldbeträge auf ganze Euro, um zu überschlagen.",
         "ablauf": [
-          "Einstieg (5 Min.): „0,4 oder 0,25 – was ist mehr?“ Abstimmen lassen, dann das Erklärbild „Vergleichen“ aus der Toolbox zeigen.",
+          "Einstieg (5 Min.): „0,4 oder 0,25 – was ist mehr?“ Abstimmen lassen und die Begründungen sammeln.",
           "Regel (10 Min.): Beide Zahlen am Zahlenstrahl zeigen und als Geld lesen (40 Cent gegen 25 Cent). Den Kasten „So vergleichst du“ gemeinsam lesen.",
           "Gemeinsam an der Tafel (5 Min.): 0,3 und 0,30 vergleichen; 1,5 und 1,45 ordnen.",
           "Einzelarbeit (20–25 Min.): Aufgaben 1 bis 5, Aufgabe 6 für alle, die fertig sind. Die Punkte an der Nummer zeigen die Stufe.",
@@ -1203,7 +1201,7 @@
       "lehrer": {
         "ziel": "Les jeunes comparent et rangent des nombres décimaux avec assurance : d’abord les entiers, puis chiffre par chiffre, en complétant par des zéros. Ils arrondissent des montants à l’euro près pour estimer.",
         "ablauf": [
-          "Entrée en matière (5 min) : « 0,4 ou 0,25 – lequel est le plus grand ? » Faire voter, puis montrer l’animation « Comparer ».",
+          "Entrée en matière (5 min) : « 0,4 ou 0,25 – lequel est le plus grand ? » Faire voter et recueillir les justifications.",
           "Règle (10 min) : placer les deux nombres sur la droite graduée et les lire comme de l’argent (40 ct contre 25 ct). Lire l’encadré « Comparer ».",
           "Ensemble au tableau (5 min) : comparer 0,3 et 0,30 ; ranger 1,5 et 1,45.",
           "Travail individuel (20–25 min) : exercices 1 à 5, l’exercice 6 pour ceux qui ont fini. Les points indiquent le niveau.",
@@ -1257,7 +1255,6 @@
       "Modul 2"
     ],
     "bild": "icon:calculator",
-    "animation": "komma-unter-komma",
     "de": {
       "titel": "Komma unter Komma",
       "untertitel": "Dezimalzahlen addieren und subtrahieren – Modul 2, Lektion 3",
@@ -1801,7 +1798,6 @@
       "Modul 2"
     ],
     "bild": "icon:math-symbols",
-    "animation": "komma-springt",
     "de": {
       "titel": "Das Komma springt",
       "untertitel": "Mal und geteilt durch 10, 100, 1000 – Modul 2, Lektion 4",
@@ -2083,7 +2079,7 @@
       "lehrer": {
         "ziel": "Die Jugendlichen multiplizieren und dividieren Dezimalzahlen mit 10, 100 und 1000, indem sie das Komma um so viele Stellen verschieben, wie der Faktor Nullen hat, und fehlende Stellen mit 0 füllen.",
         "ablauf": [
-          "Einstieg (5 Min.): Den Preis eines Kaugummis (0,45 €) anschreiben: „Was kosten 10, was 100 Stück?“ Danach das Erklärbild „Das Komma springt“ zeigen.",
+          "Einstieg (5 Min.): Den Preis eines Kaugummis (0,45 €) anschreiben: „Was kosten 10, was 100 Stück?“",
           "Regel (10 Min.): 2,4 · 100 und 7 : 100 mit Bögen vorrechnen; die neuen Nullen farbig schreiben. Den Kasten „Die Regel“ gemeinsam lesen.",
           "Gemeinsam an der Tafel (5 Min.): 0,6 · 10 und 8 : 10 – jeweils zuerst sagen lassen, in welche Richtung das Komma springt.",
           "Einzelarbeit (20–25 Min.): Aufgaben 1 bis 5, Aufgabe 6 für alle, die fertig sind. Die Punkte an der Nummer zeigen die Stufe.",
@@ -2395,7 +2391,7 @@
       "lehrer": {
         "ziel": "Les jeunes multiplient et divisent des nombres décimaux par 10, 100 et 1000 en déplaçant la virgule d’autant de rangs que le facteur a de zéros et en complétant par des 0.",
         "ablauf": [
-          "Entrée en matière (5 min) : écrire le prix d’un chewing-gum (0,45 €) : « Combien coûtent 10, puis 100 pièces ? » Puis montrer l’animation « La virgule saute ».",
+          "Entrée en matière (5 min) : écrire le prix d’un chewing-gum (0,45 €) : « Combien coûtent 10, puis 100 pièces ? »",
           "Règle (10 min) : calculer 2,4 · 100 et 7 : 100 avec des arcs ; écrire les nouveaux zéros en couleur. Lire ensemble l’encadré « La règle ».",
           "Ensemble au tableau (5 min) : 0,6 · 10 et 8 : 10 – faire dire d’abord dans quel sens la virgule saute.",
           "Travail individuel (20–25 min) : exercices 1 à 5, l’exercice 6 pour ceux qui ont fini. Les points indiquent le niveau.",
@@ -2452,7 +2448,6 @@
       "Modul 2"
     ],
     "bild": "icon:pizza",
-    "animation": "brueche",
     "de": {
       "titel": "Gerecht teilen",
       "untertitel": "Hälfte, Drittel und Viertel – Modul 2, Lektion 5",
@@ -2755,7 +2750,7 @@
       "lehrer": {
         "ziel": "Die Jugendlichen erkennen und benennen Hälften, Drittel und Viertel als gleich große Teile eines Ganzen, schreiben sie als Bruch und vergleichen einfache Brüche mit der Bruchwand.",
         "ablauf": [
-          "Einstieg (5 Min.): Eine Papier-Pizza ungerecht in vier Stücke schneiden: „Ist das ein Viertel?“ Danach das Erklärbild „Hälfte, Drittel, Viertel“ zeigen.",
+          "Einstieg (5 Min.): Eine Papier-Pizza ungerecht in vier Stücke schneiden: „Ist das ein Viertel?“",
           "Regel (10 Min.): Papierstreifen falten (Hälften, Viertel); Zähler und Nenner an 3/4 erklären. Den Kasten gemeinsam lesen.",
           "Gemeinsam an der Tafel (5 Min.): „In wie viele Teile teilst du für Drittel?“ – „Wie schreibt man die Hälfte?“",
           "Einzelarbeit (20–25 Min.): Aufgaben 1 bis 5, Aufgabe 6 für alle, die fertig sind. Die Punkte an der Nummer zeigen die Stufe.",
@@ -3088,7 +3083,7 @@
       "lehrer": {
         "ziel": "Les jeunes reconnaissent et nomment la moitié, le tiers et le quart comme des parts égales d’un tout, les écrivent sous forme de fraction et comparent des fractions simples à l’aide du mur des fractions.",
         "ablauf": [
-          "Entrée en matière (5 min) : découper une pizza en papier en quatre parts inégales : « Est-ce un quart ? » Puis montrer l’animation « Moitié, tiers, quart ».",
+          "Entrée en matière (5 min) : découper une pizza en papier en quatre parts inégales : « Est-ce un quart ? »",
           "Règle (10 min) : plier des bandes de papier (moitiés, quarts) ; expliquer numérateur et dénominateur avec 3/4. Lire l’encadré ensemble.",
           "Ensemble au tableau (5 min) : « En combien de parts partages-tu pour des tiers ? » – « Comment écrit-on la moitié ? »",
           "Travail individuel (20–25 min) : exercices 1 à 5, l’exercice 6 pour ceux qui ont fini. Les points indiquent le niveau.",
@@ -3143,7 +3138,6 @@
       "Modul 2"
     ],
     "bild": "icon:chart-pie",
-    "animation": "bruchteil",
     "de": {
       "titel": "Ein Drittel von 12",
       "untertitel": "Bruchteil einer Menge – Modul 2, Lektion 6",
@@ -3361,7 +3355,7 @@
       "lehrer": {
         "ziel": "Die Jugendlichen berechnen Bruchteile einer Menge (z. B. 2/3 von 15), indem sie durch den Nenner teilen und mit dem Zähler malnehmen, und wenden das bei Rabatten und Umfragen an.",
         "ablauf": [
-          "Einstieg (5 Min.): 12 Plättchen oder Stifte in 3 gleiche Gruppen legen: „Wie viel ist ein Drittel?“ Danach das Erklärbild „Ein Drittel von 12“ zeigen.",
+          "Einstieg (5 Min.): 12 Plättchen oder Stifte in 3 gleiche Gruppen legen: „Wie viel ist ein Drittel?“",
           "Regel (10 Min.): „Erst teilen, dann mal“ an 2/3 von 12 vorrechnen; die Kontrolle 3 · 4 = 12 zeigen. Den Kasten gemeinsam lesen.",
           "Gemeinsam an der Tafel (5 Min.): die Hälfte von 10, ein Drittel von 9, drei Viertel von 8.",
           "Einzelarbeit (20–25 Min.): Aufgaben 1 bis 5, Aufgabe 6 für alle, die fertig sind. Die Punkte an der Nummer zeigen die Stufe.",
@@ -3609,7 +3603,7 @@
       "lehrer": {
         "ziel": "Les jeunes calculent la fraction d’une quantité (p. ex. 2/3 de 15) en divisant par le dénominateur puis en multipliant par le numérateur, et l’appliquent à des soldes et des sondages.",
         "ablauf": [
-          "Entrée en matière (5 min) : répartir 12 jetons ou crayons en 3 groupes égaux : « Combien fait un tiers ? » Puis montrer l’animation « Un tiers de 12 ».",
+          "Entrée en matière (5 min) : répartir 12 jetons ou crayons en 3 groupes égaux : « Combien fait un tiers ? »",
           "Règle (10 min) : calculer 2/3 de 12 selon « d’abord diviser, puis multiplier » ; montrer la vérification 3 · 4 = 12. Lire l’encadré ensemble.",
           "Ensemble au tableau (5 min) : la moitié de 10, un tiers de 9, trois quarts de 8.",
           "Travail individuel (20–25 min) : exercices 1 à 5, l’exercice 6 pour ceux qui ont fini. Les points indiquent le niveau.",
@@ -3665,7 +3659,6 @@
       "Modul 2"
     ],
     "bild": "icon:glass-full",
-    "animation": "kapazitaet",
     "de": {
       "titel": "Wie viel passt hinein?",
       "untertitel": "Kapazität: Liter, Deziliter, Zentiliter, Milliliter – Modul 2, Lektion 7",
@@ -3906,8 +3899,8 @@
       "lehrer": {
         "ziel": "Die Jugendlichen kennen die Kapazitätseinheiten l, dl, cl und ml, schätzen passende Einheiten im Alltag und rechnen mit dem Faktor 10 zwischen benachbarten Einheiten um.",
         "ablauf": [
-          "Einstieg (5 Min.): Flasche, Glas, Dose und Löffel zeigen: „Wie viel passt hinein?“ Schätzen, dann die Etiketten lesen. Danach das Erklärbild „Kapazität“ zeigen.",
-          "Regel (10 Min.): 1 l Wasser in 10 Gläser zu 1 dl verteilen (oder im Erklärbild zeigen); die Einheiten-Treppe an die Tafel zeichnen.",
+          "Einstieg (5 Min.): Flasche, Glas, Dose und Löffel zeigen: „Wie viel passt hinein?“ Schätzen, dann die Etiketten lesen.",
+          "Regel (10 Min.): 1 l Wasser in 10 Gläser zu 1 dl verteilen; die Einheiten-Treppe an die Tafel zeichnen.",
           "Gemeinsam an der Tafel (5 Min.): 1 l = ___ ml, 2 l = ___ dl, 300 ml = ___ dl – jeweils mit der Treppe.",
           "Einzelarbeit (20–25 Min.): Aufgaben 1 bis 5, Aufgabe 6 für alle, die fertig sind. Die Punkte an der Nummer zeigen die Stufe.",
           "Abschluss (5 Min.): Exit-Ticket: 4 l = ___ dl und 250 cl = ___ l. Danach den Kurz-Check ausfüllen lassen."
@@ -4177,8 +4170,8 @@
       "lehrer": {
         "ziel": "Les jeunes connaissent les unités de capacité l, dl, cl et ml, estiment l’unité qui convient au quotidien et convertissent avec le facteur 10 entre unités voisines.",
         "ablauf": [
-          "Entrée en matière (5 min) : montrer une bouteille, un verre, une canette et une cuillère : « Combien ça contient ? » Estimer, puis lire les étiquettes. Montrer l’animation « Capacité ».",
-          "Règle (10 min) : répartir 1 l d’eau dans 10 verres de 1 dl (ou dans l’animation) ; dessiner l’escalier des unités au tableau.",
+          "Entrée en matière (5 min) : montrer une bouteille, un verre, une canette et une cuillère : « Combien ça contient ? » Estimer, puis lire les étiquettes.",
+          "Règle (10 min) : répartir 1 l d’eau dans 10 verres de 1 dl ; dessiner l’escalier des unités au tableau.",
           "Ensemble au tableau (5 min) : 1 l = ___ ml, 2 l = ___ dl, 300 ml = ___ dl – chaque fois avec l’escalier.",
           "Travail individuel (20–25 min) : exercices 1 à 5, l’exercice 6 pour ceux qui ont fini. Les points indiquent le niveau.",
           "Clôture (5 min) : ticket de sortie : 4 l = ___ dl et 250 cl = ___ l. Puis le petit bilan."
@@ -4233,7 +4226,6 @@
       "Modul 2"
     ],
     "bild": "icon:weight",
-    "animation": "masse",
     "de": {
       "titel": "Wie schwer ist das?",
       "untertitel": "Masse: Tonne, Kilogramm, Gramm – Modul 2, Lektion 8",
@@ -4482,7 +4474,7 @@
       "lehrer": {
         "ziel": "Die Jugendlichen kennen die Masseeinheiten t, kg und g, schätzen Gewichte aus dem Alltag und rechnen mit dem Faktor 1000 um – auch mit Komma.",
         "ablauf": [
-          "Einstieg (5 Min.): Handy, Rucksack und eine Packung Zucker (1 kg) herumgeben: „Was ist schwerer? Um wie viel?“ Danach das Erklärbild „Masse“ zeigen.",
+          "Einstieg (5 Min.): Handy, Rucksack und eine Packung Zucker (1 kg) herumgeben: „Was ist schwerer? Um wie viel?“",
           "Regel (10 Min.): Die Treppe t – kg – g an die Tafel; 3 kg = 3000 g und 2500 g = 2,5 kg mit Komma-Sprüngen vorrechnen.",
           "Gemeinsam an der Tafel (5 Min.): 1 kg = ___ g, 2 t = ___ kg, 750 g = ___ kg.",
           "Einzelarbeit (20–25 Min.): Aufgaben 1 bis 5, Aufgabe 6 für alle, die fertig sind. Die Punkte an der Nummer zeigen die Stufe.",
@@ -4761,7 +4753,7 @@
       "lehrer": {
         "ziel": "Les jeunes connaissent les unités de masse t, kg et g, estiment des masses du quotidien et convertissent avec le facteur 1000 – aussi avec une virgule.",
         "ablauf": [
-          "Entrée en matière (5 min) : faire circuler un portable, un sac et un paquet de sucre (1 kg) : « Qu’est-ce qui est plus lourd ? De combien ? » Puis montrer l’animation « Masse ».",
+          "Entrée en matière (5 min) : faire circuler un portable, un sac et un paquet de sucre (1 kg) : « Qu’est-ce qui est plus lourd ? De combien ? »",
           "Règle (10 min) : l’escalier t – kg – g au tableau ; calculer 3 kg = 3000 g et 2500 g = 2,5 kg avec les sauts de la virgule.",
           "Ensemble au tableau (5 min) : 1 kg = ___ g, 2 t = ___ kg, 750 g = ___ kg.",
           "Travail individuel (20–25 min) : exercices 1 à 5, l’exercice 6 pour ceux qui ont fini. Les points indiquent le niveau.",
@@ -4817,7 +4809,6 @@
       "Modul 2"
     ],
     "bild": "icon:line",
-    "animation": "linien",
     "de": {
       "titel": "Punkt, Gerade, Strecke",
       "untertitel": "Punkt, Gerade, Halbgerade und Strecke – Modul 2, Lektion 9",
@@ -5406,7 +5397,7 @@
       "lehrer": {
         "ziel": "Die Jugendlichen unterscheiden Punkt, Strecke, Halbgerade und Gerade, schreiben sie mit der richtigen Klammer ([AB], [AB), (AB)), zeichnen sie genau mit dem Lineal und bestimmen Schnittpunkte.",
         "ablauf": [
-          "Einstieg (5 Min.): Einen Stadtplan oder das Erklärbild „Punkt, Gerade, Strecke“ zeigen: Wo sind Punkte, wo Strecken, wo lange Geraden?",
+          "Einstieg (5 Min.): Einen Stadtplan zeigen: Wo sind Punkte, wo Strecken, wo lange Geraden?",
           "Regel (10 Min.): An der Tafel aus der Strecke [AB] erst die Halbgerade [AB), dann die Gerade (AB) machen und die Klammern dazuschreiben.",
           "Gemeinsam an der Tafel (5 Min.): „Welche Linie kann man messen?“ – „Wie schreibt man die Gerade durch A und B?“",
           "Einzelarbeit (20–25 Min.): Aufgaben 1 bis 5 mit Lineal und spitzem Bleistift, Aufgabe 6 für alle, die fertig sind.",
@@ -6025,7 +6016,7 @@
       "lehrer": {
         "ziel": "Les jeunes distinguent point, segment, demi-droite et droite, les notent avec le bon signe ([AB], [AB), (AB)), les tracent avec précision à la règle et déterminent des points d’intersection.",
         "ablauf": [
-          "Entrée en matière (5 min) : montrer un plan de ville ou l’animation « Point, droite, segment » : où sont les points, les segments, les longues droites ?",
+          "Entrée en matière (5 min) : montrer un plan de ville : où sont les points, les segments, les longues droites ?",
           "Règle (10 min) : au tableau, transformer le segment [AB] en demi-droite [AB), puis en droite (AB), en écrivant chaque notation.",
           "Ensemble au tableau (5 min) : « Quelle ligne peut-on mesurer ? » – « Comment note-t-on la droite passant par A et B ? »",
           "Travail individuel (20–25 min) : exercices 1 à 5 avec règle et crayon bien taillé, l’exercice 6 pour ceux qui ont fini.",
@@ -6080,7 +6071,6 @@
       "Modul 2"
     ],
     "bild": "icon:ruler-measure",
-    "animation": "messen",
     "de": {
       "titel": "Auf den Millimeter genau",
       "untertitel": "Strecken messen und der Mittelpunkt – Modul 2, Lektion 10",
@@ -6464,7 +6454,7 @@
       "lehrer": {
         "ziel": "Die Jugendlichen messen Strecken auf den Millimeter genau, rechnen zwischen cm und mm um, finden den Mittelpunkt einer Strecke und nutzen ihn bei Alltagsaufgaben.",
         "ablauf": [
-          "Einstieg (5 Min.): Zwei Jugendliche messen dieselbe Strecke – einmal ab dem Linealrand, einmal ab der 0. „Warum kommt Verschiedenes heraus?“ Danach das Erklärbild „Messen“ zeigen.",
+          "Einstieg (5 Min.): Zwei Jugendliche messen dieselbe Strecke – einmal ab dem Linealrand, einmal ab der 0. „Warum kommt Verschiedenes heraus?“",
           "Regel (10 Min.): Anlegen und Ablesen am Tafellineal vormachen; 5,6 cm = 56 mm; den Mittelpunkt durch Halbieren finden.",
           "Gemeinsam an der Tafel (5 Min.): 5 cm = ___ mm; Mittelpunkt einer 10-cm-Strecke.",
           "Einzelarbeit (20–25 Min.): Aufgaben 1 bis 5, Aufgabe 6 für alle, die fertig sind. Die Punkte an der Nummer zeigen die Stufe.",
@@ -6878,7 +6868,7 @@
       "lehrer": {
         "ziel": "Les jeunes mesurent des segments au millimètre près, convertissent les cm et les mm, trouvent le milieu d’un segment et l’utilisent dans des problèmes du quotidien.",
         "ablauf": [
-          "Entrée en matière (5 min) : deux jeunes mesurent le même segment – une fois depuis le bord de la règle, une fois depuis le 0. « Pourquoi le résultat diffère-t-il ? » Puis montrer l’animation « Mesurer ».",
+          "Entrée en matière (5 min) : deux jeunes mesurent le même segment – une fois depuis le bord de la règle, une fois depuis le 0. « Pourquoi le résultat diffère-t-il ? »",
           "Règle (10 min) : montrer comment poser et lire la règle du tableau ; 5,6 cm = 56 mm ; trouver le milieu en divisant par deux.",
           "Ensemble au tableau (5 min) : 5 cm = ___ mm ; milieu d’un segment de 10 cm.",
           "Travail individuel (20–25 min) : exercices 1 à 5, l’exercice 6 pour ceux qui ont fini. Les points indiquent le niveau.",
@@ -6934,7 +6924,6 @@
       "Modul 2"
     ],
     "bild": "icon:angle",
-    "animation": "winkel",
     "de": {
       "titel": "Spitz, recht oder stumpf?",
       "untertitel": "Winkel: spitz, recht und stumpf – Modul 2, Lektion 11",
@@ -7434,7 +7423,7 @@
       "lehrer": {
         "ziel": "Die Jugendlichen unterscheiden spitze, rechte und stumpfe Winkel, prüfen sie mit Geodreieck oder Blattecke, markieren rechte Winkel und finden Winkel in ihrer Umgebung.",
         "ablauf": [
-          "Einstieg (5 Min.): Einen Laptop langsam aufklappen oder das Erklärbild „Winkel“ zeigen: „Wann ist der Winkel spitz, recht, stumpf?“",
+          "Einstieg (5 Min.): Einen Laptop langsam aufklappen: „Wann ist der Winkel spitz, recht, stumpf?“",
           "Regel (10 Min.): Eine Blattecke als „Winkel-Prüfer“ falten; drei Winkel an der Tafel damit prüfen. Den Kasten gemeinsam lesen.",
           "Gemeinsam an der Tafel (5 Min.): „Wie viel Grad hat ein rechter Winkel?“ – die Uhr um 3 Uhr zeigen.",
           "Einzelarbeit (20–25 Min.): Aufgaben 1 bis 5 mit Geodreieck, Aufgabe 6 für alle, die fertig sind.",
@@ -7964,7 +7953,7 @@
       "lehrer": {
         "ziel": "Les jeunes distinguent les angles aigus, droits et obtus, les vérifient avec l’équerre ou le coin d’une feuille, marquent les angles droits et trouvent des angles dans leur environnement.",
         "ablauf": [
-          "Entrée en matière (5 min) : ouvrir lentement un ordinateur portable ou montrer l’animation « Angles » : « Quand l’angle est-il aigu, droit, obtus ? »",
+          "Entrée en matière (5 min) : ouvrir lentement un ordinateur portable : « Quand l’angle est-il aigu, droit, obtus ? »",
           "Règle (10 min) : plier le coin d’une feuille pour en faire un « testeur d’angle droit » ; vérifier trois angles au tableau. Lire l’encadré ensemble.",
           "Ensemble au tableau (5 min) : « Combien de degrés mesure un angle droit ? » – montrer l’horloge à 3 h.",
           "Travail individuel (20–25 min) : exercices 1 à 5 avec l’équerre, l’exercice 6 pour ceux qui ont fini.",
@@ -8020,7 +8009,6 @@
       "Modul 2"
     ],
     "bild": "icon:fence",
-    "animation": "umfang",
     "de": {
       "titel": "Einmal rundherum",
       "untertitel": "Umfang von Quadrat, Rechteck und Dreieck – Modul 2, Lektion 12",
@@ -8533,7 +8521,7 @@
       "lehrer": {
         "ziel": "Die Jugendlichen berechnen den Umfang von Quadrat, Rechteck und Dreieck – durch Messen oder aus gegebenen Seiten – und lösen Alltagsaufgaben (Zaun, Laufrunde, Leisten), auch rückwärts.",
         "ablauf": [
-          "Einstieg (5 Min.): „Wie viel Schnur brauche ich, um einmal um das Pult zu kommen?“ Schätzen, dann messen. Danach das Erklärbild „Umfang“ zeigen.",
+          "Einstieg (5 Min.): „Wie viel Schnur brauche ich, um einmal um das Pult zu kommen?“ Schätzen, dann messen.",
           "Regel (10 Min.): Am Rechteck 6 cm × 4 cm alle Seiten addieren, dann die Abkürzung 2 · (6 + 4) zeigen. Den Kasten gemeinsam lesen.",
           "Gemeinsam an der Tafel (5 Min.): Quadrat mit 3 cm Seite; Dreieck mit 2 cm, 3 cm und 4 cm.",
           "Einzelarbeit (20–25 Min.): Aufgaben 1 bis 5, Aufgabe 6 für alle, die fertig sind. Die Punkte an der Nummer zeigen die Stufe.",
@@ -9076,7 +9064,7 @@
       "lehrer": {
         "ziel": "Les jeunes calculent le périmètre du carré, du rectangle et du triangle – en mesurant ou à partir des côtés donnés – et résolvent des problèmes du quotidien (clôture, tour de piste, plinthes), aussi à l’envers.",
         "ablauf": [
-          "Entrée en matière (5 min) : « Combien de ficelle faut-il pour faire le tour du bureau ? » Estimer, puis mesurer. Montrer ensuite l’animation « Périmètre ».",
+          "Entrée en matière (5 min) : « Combien de ficelle faut-il pour faire le tour du bureau ? » Estimer, puis mesurer.",
           "Règle (10 min) : additionner tous les côtés du rectangle 6 cm × 4 cm, puis montrer le raccourci 2 · (6 + 4). Lire l’encadré ensemble.",
           "Ensemble au tableau (5 min) : carré de 3 cm de côté ; triangle de 2 cm, 3 cm et 4 cm.",
           "Travail individuel (20–25 min) : exercices 1 à 5, l’exercice 6 pour ceux qui ont fini. Les points indiquent le niveau.",

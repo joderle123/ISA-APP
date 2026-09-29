@@ -27,6 +27,20 @@ export interface BlattOptionen {
   lehrer?: boolean
   /** Blattnummer, z. B. 'G-07' */
   nr?: string
+  /** Teil eines Hefts (z. B. Mathe-Modulheft): eigener Kopf und Fuß, fortlaufende Seitenzahl, Lernziel statt Untertitel */
+  heft?: HeftAngaben
+}
+
+export interface HeftAngaben {
+  /** Reiter oben links, z. B. „Lektion 1“ */
+  reiter: string
+  /** Zeile neben dem Reiter, z. B. „Mathe · Modul 2 · Dezimalzahlen“ */
+  meta: string
+  /** Fußzeile vor dem Titel, z. B. „Mathe · Modul 2 · Lektion 1“ */
+  fuss: string
+  /** „Mein Ziel: …“ unter dem Titel (ersetzt den Untertitel) */
+  lernziel?: string
+  zielWort?: string
 }
 
 export function blattInhalt(b: Blatt, sprache: Sprache): BlattInhalt {
@@ -54,17 +68,18 @@ function NameFeld({ label, breite, m }: { label: string; breite: number; m: Mass
   )
 }
 
-function Kopfzeile({ blatt, nr, sprache, p, m, lehrer }: { blatt: Blatt; nr?: string; sprache: Sprache; p: Palette; m: Masse; lehrer?: boolean }) {
+function Kopfzeile({ blatt, nr, sprache, p, m, lehrer, heft }: { blatt: Blatt; nr?: string; sprache: Sprache; p: Palette; m: Masse; lehrer?: boolean; heft?: HeftAngaben }) {
   const bereich = bereichById.get(blatt.bereich)!
   const tx = TEXTE[sprache]
-  const nummer = [nr ? `${tx.arbeitsblatt} ${nr}` : null, stufenText(blatt.stufen)].filter(Boolean).join('  ·  ')
-  const thema = themaLabel(blatt.bereich, blatt.thema, sprache)
-  const reiter = lehrer ? tx.lehrer : bereich[sprache]
+  // Im Heft: „Lektion 1“ als Reiter, Modul und Thema daneben, keine Namensfelder (der Name steht auf dem Deckblatt)
+  const nummer = heft ? (lehrer ? heft.reiter : '') : [nr ? `${tx.arbeitsblatt} ${nr}` : null, stufenText(blatt.stufen)].filter(Boolean).join('  ·  ')
+  const thema = heft ? heft.meta : themaLabel(blatt.bereich, blatt.thema, sprache)
+  const reiter = lehrer ? tx.lehrer : heft ? heft.reiter : bereich[sprache]
   // Passt die Meta-Zeile neben Reiter, Name und Datum? Breiten je Zeichen an Inter 7,4 pt und
   // Manrope 7 pt (Versalien) gemessen – obere Werte, damit nie eine Zeile ungewollt umbricht.
-  const felder = lehrer ? 0 : m.layout === 'bild' ? 14 + 27 + 150 : 14 + 27 + 118 + 14 + 27 + 62
+  const felder = lehrer || heft ? 0 : m.layout === 'bild' ? 14 + 27 + 150 : 14 + 27 + 118 + 14 + 27 + 62
   const frei = BREITE - (reiter.length * 5.85 + 12) - 8 - felder
-  const metaText = [nummer, thema].join('  ·  ')
+  const metaText = [nummer, thema].filter(Boolean).join('  ·  ')
   const eineZeile = metaText.length * 3.95 <= frei
   // Langer Reiter (z. B. „Lernen & Selbstorganisation“): passt auch zweizeilig nicht daneben –
   // dann steht die Meta-Zeile vollständig unter dem Kopf statt über vier Zeilen gequetscht.
@@ -87,7 +102,7 @@ function Kopfzeile({ blatt, nr, sprache, p, m, lehrer }: { blatt: Blatt; nr?: st
         ) : (
           <View style={{ flex: 1 }} />
         )}
-        {!lehrer ? (
+        {!lehrer && !heft ? (
           <>
             <NameFeld label={tx.name} breite={m.layout === 'bild' ? 150 : 118} m={m} />
             {m.layout !== 'bild' ? <NameFeld label={tx.datum} breite={62} m={m} /> : null}
@@ -106,24 +121,29 @@ function Kopfzeile({ blatt, nr, sprache, p, m, lehrer }: { blatt: Blatt; nr?: st
 /** Fußzeile: links das CDSE-Logo, daneben Marke, Blatt und Seitenzahl, darunter klein der Urheber-Vermerk
  *  in der Sprache des Blatts. Sie steht tiefer als der Inhalt je reicht (SEITE.unten) – auch auf ganz vollen
  *  Seiten bleibt Luft. */
-function Fusszeile({ blatt, nr, sprache }: { blatt: Blatt; nr?: string; sprache: Sprache }) {
+function Fusszeile({ blatt, nr, sprache, heft }: { blatt: Blatt; nr?: string; sprache: Sprache; heft?: HeftAngaben }) {
   const tx = TEXTE[sprache]
   return (
     <View fixed style={{ position: 'absolute', left: SEITE.rand, right: SEITE.rand, bottom: 16, borderTopWidth: 0.6, borderTopColor: NEUTRAL.haarlinie, paddingTop: 4.5, flexDirection: 'row', alignItems: 'center' }}>
       <Image src={CDSE_LOGO} style={{ width: LOGO_HOEHE * CDSE_LOGO_SEITEN, height: LOGO_HOEHE, marginRight: 8 }} />
       <View style={{ flex: 1 }}>
         <View style={{ flexDirection: 'row', alignItems: 'center' }}>
-          <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 7, color: NEUTRAL.marke, letterSpacing: 0.4 }}>CDSE Toolbox</Text>
+          <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 7, color: NEUTRAL.marke, letterSpacing: 0.4 }}>{heft ? heft.fuss : 'CDSE Toolbox'}</Text>
           {/* immer eine Zeile: ein sehr langer Titel endet mit „…“, statt die Fußzeile zu erhöhen */}
           <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 7, color: NEUTRAL.sehrLeise, marginLeft: 6, flex: 1, maxLines: 1, textOverflow: 'ellipsis' }}>
-            {[nr ? `${tx.arbeitsblatt} ${nr}` : null, blattInhalt(blatt, sprache).titel].filter(Boolean).join('  ·  ')}
+            {[nr && !heft ? `${tx.arbeitsblatt} ${nr}` : null, typo(blattInhalt(blatt, sprache).titel, sprache)].filter(Boolean).join('  ·  ')}
           </Text>
           {/* Seiten zählen je Blatt (auch in einer Mappe); ein einseitiger Teil braucht keine Seitenzahl.
               Feste Breite: Der Titel wird gesetzt, bevor die Seitenzahl feststeht – so berührt er sie nie. */}
-          <Text
-            style={{ width: 46, marginLeft: 8, fontFamily: SCHRIFT.jugend, fontSize: 7, color: NEUTRAL.sehrLeise, textAlign: 'right' }}
-            render={({ subPageNumber, subPageTotalPages }) => (subPageTotalPages > 1 ? `${tx.seite} ${subPageNumber} / ${subPageTotalPages}` : '')}
-          />
+          {heft ? (
+            // im Heft: fortlaufende Seitenzahl (wie im Inhaltsverzeichnis)
+            <Text style={{ width: 46, marginLeft: 8, fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 8.5, color: NEUTRAL.text, textAlign: 'right' }} render={({ pageNumber }) => String(pageNumber)} />
+          ) : (
+            <Text
+              style={{ width: 46, marginLeft: 8, fontFamily: SCHRIFT.jugend, fontSize: 7, color: NEUTRAL.sehrLeise, textAlign: 'right' }}
+              render={({ subPageNumber, subPageTotalPages }) => (subPageTotalPages > 1 ? `${tx.seite} ${subPageNumber} / ${subPageTotalPages}` : '')}
+            />
+          )}
         </View>
         <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 6, color: NEUTRAL.sehrLeise, marginTop: 2.5, letterSpacing: 0.15 }}>{URHEBER[sprache]}</Text>
       </View>
@@ -131,7 +151,7 @@ function Fusszeile({ blatt, nr, sprache }: { blatt: Blatt; nr?: string; sprache:
   )
 }
 
-function Titelblock({ blatt, inhalt, sprache, p, m }: { blatt: Blatt; inhalt: BlattInhalt; sprache: Sprache; p: Palette; m: Masse }) {
+function Titelblock({ blatt, inhalt, sprache, p, m, heft }: { blatt: Blatt; inhalt: BlattInhalt; sprache: Sprache; p: Palette; m: Masse; heft?: HeftAngaben }) {
   const c: Ctx = { m, p, sprache, nummern: new Map(), breite: BREITE }
   const bild = blatt.bild ?? 'icon:' + (bereichById.get(blatt.bereich)?.icon ?? 'star')
   const d = m.layout === 'jugend' ? 54 : m.layout === 'bild' ? 74 : 64
@@ -141,7 +161,12 @@ function Titelblock({ blatt, inhalt, sprache, p, m }: { blatt: Blatt; inhalt: Bl
         <View style={{ flex: 1, paddingRight: 14 }}>
           <View style={{ width: 26, height: 3.5, borderRadius: 2, backgroundColor: p.tief, marginBottom: 7 }} />
           <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: m.titel, lineHeight: 1.12, color: NEUTRAL.text, letterSpacing: -0.3 }}>{typo(inhalt.titel, sprache)}</Text>
-          {inhalt.untertitel ? (
+          {heft?.lernziel ? (
+            <Text style={{ fontFamily: m.schrift, fontSize: m.untertitel, lineHeight: 1.4, color: NEUTRAL.leise, marginTop: 5 }}>
+              <Text style={{ fontWeight: m.fett, color: p.tief }}>{heft.zielWort ?? 'Mein Ziel:'} </Text>
+              {typo(heft.lernziel, sprache)}
+            </Text>
+          ) : inhalt.untertitel ? (
             <Text style={{ fontFamily: m.schrift, fontSize: m.untertitel, lineHeight: 1.4, color: NEUTRAL.leise, marginTop: 5 }}>{typo(inhalt.untertitel, sprache)}</Text>
           ) : null}
         </View>
@@ -195,7 +220,7 @@ function LText({ children, farbe }: { children: string; farbe?: string }) {
   return <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: LEHRER_MASSE.basis, lineHeight: 1.45, color: farbe ?? NEUTRAL.text }}>{children}</Text>
 }
 
-function Lehrerseite({ blatt, inhalt, sprache, p, nr }: { blatt: Blatt; inhalt: BlattInhalt; sprache: Sprache; p: Palette; nr?: string }) {
+function Lehrerseite({ blatt, inhalt, sprache, p, nr, heft }: { blatt: Blatt; inhalt: BlattInhalt; sprache: Sprache; p: Palette; nr?: string; heft?: HeftAngaben }) {
   const tx = TEXTE[sprache]
   const L = inhalt.lehrer
   const ty = (s: string) => typo(s, sprache)
@@ -223,7 +248,7 @@ function Lehrerseite({ blatt, inhalt, sprache, p, nr }: { blatt: Blatt; inhalt: 
   if (L.material) fakten.push([tx.material, ty(L.material)])
   return (
     <Page size="A4" style={{ paddingHorizontal: SEITE.rand, paddingTop: SEITE.oben, paddingBottom: SEITE.unten + 6 }}>
-      <Kopfzeile blatt={blatt} nr={nr} sprache={sprache} p={p} m={LEHRER_MASSE} lehrer />
+      <Kopfzeile blatt={blatt} nr={nr} sprache={sprache} p={p} m={LEHRER_MASSE} lehrer heft={heft} />
       <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 19, color: NEUTRAL.text, letterSpacing: -0.2 }}>{ty(inhalt.titel)}</Text>
       <View style={{ flexDirection: 'row', alignItems: 'flex-start', marginTop: 8, marginBottom: 14, backgroundColor: p.zart, borderRadius: 9, padding: 10 }}>
         <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 9.4, color: p.tief, marginRight: 8, marginTop: 0.6 }}>{tx.ziel}</Text>
@@ -325,7 +350,7 @@ function Lehrerseite({ blatt, inhalt, sprache, p, nr }: { blatt: Blatt; inhalt: 
           ) : null}
         </View>
       ) : null}
-      <Fusszeile blatt={blatt} nr={nr} sprache={sprache} />
+      <Fusszeile blatt={blatt} nr={nr} sprache={sprache} heft={heft} />
     </Page>
   )
 }
@@ -347,13 +372,13 @@ export function BlattSeiten({ blatt, opt }: { blatt: Blatt; opt?: BlattOptionen 
       {opt?.schueler !== false ? (
         <Page size="A4" style={{ paddingHorizontal: SEITE.rand, paddingTop: SEITE.oben, paddingBottom: SEITE.unten + 6 }}>
           <Folgekopf inhalt={inhalt} sprache={sprache} p={p} />
-          <Kopfzeile blatt={blatt} nr={opt?.nr} sprache={sprache} p={p} m={m} />
-          <Titelblock blatt={blatt} inhalt={inhalt} sprache={sprache} p={p} m={m} />
+          <Kopfzeile blatt={blatt} nr={opt?.nr} sprache={sprache} p={p} m={m} heft={opt?.heft} />
+          <Titelblock blatt={blatt} inhalt={inhalt} sprache={sprache} p={p} m={m} heft={opt?.heft} />
           <Bausteine c={c} liste={inhalt.bausteine} />
-          <Fusszeile blatt={blatt} nr={opt?.nr} sprache={sprache} />
+          <Fusszeile blatt={blatt} nr={opt?.nr} sprache={sprache} heft={opt?.heft} />
         </Page>
       ) : null}
-      {opt?.lehrer !== false ? <Lehrerseite blatt={blatt} inhalt={inhalt} sprache={sprache} p={p} nr={opt?.nr} /> : null}
+      {opt?.lehrer !== false ? <Lehrerseite blatt={blatt} inhalt={inhalt} sprache={sprache} p={p} nr={opt?.nr} heft={opt?.heft} /> : null}
     </>
   )
 }

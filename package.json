@@ -14,6 +14,7 @@
     "blaetter:icons": "node scripts/blatt-icons.mjs",
     "blaetter:seiten": "tsx --tsconfig tsconfig.scripts.json scripts/blatt-seiten.tsx",
     "blaetter:mappe": "tsx --tsconfig tsconfig.scripts.json scripts/mappe-pruefen.tsx",
+    "blaetter:modulheft": "tsx --tsconfig tsconfig.scripts.json scripts/modulheft.tsx",
     "kurs:pruefen": "tsx --tsconfig tsconfig.scripts.json scripts/kurs-pruefen.ts",
     "kurs:test": "node scripts/kurs-test.cjs"
   },

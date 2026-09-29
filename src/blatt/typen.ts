@@ -310,8 +310,6 @@ export interface Blatt {
   verwandt?: string[]
   /** Gehört zum Skills-Kurs: Einheit(en), in denen das Blatt vorkommt (z. B. ['j1-e01']). */
   kurs?: string[]
-  /** Erklärbild (schrittweise Animation) im Blatt-Dialog der App, siehe src/blatt/erklaerbilder. */
-  animation?: string
   de: BlattInhalt
   fr?: BlattInhalt
 }

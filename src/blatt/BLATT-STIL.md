@@ -23,6 +23,10 @@ Musterblätter zum Anschauen: `gefuehle.json` (Mein Wutvulkan, Ballon-Atmen) und
 5. Nachbessern, bis es wirklich gut ist.
 6. Seitenzahlen aller Blätter: `npm run blaetter:seiten`. Mappen (mehrere Blätter in einer PDF, z. B. „Alle Blätter“
    einer Kurs-Einheit): `npm run blaetter:mappe` – jedes Blatt muss dort genauso aussehen wie einzeln.
+7. Modulhefte (z. B. Mathe Modul 2: Deckblatt, Inhalt, alle Lektionen, Wortschatz, „Mein Lernstand“ und dazu ein
+   Lösungsheft mit den Seiten „Für die Lehrperson“): `npm run blaetter:modulheft -- [ordner] --fr --png`. Welche
+   Blätter in welcher Reihenfolge ins Heft kommen, dazu „Mein Ziel“ je Lektion und der Wortschatz, steht in
+   `src/blatt/module.ts`. Im Heft muss jede Lektion genau 2 Seiten haben, sonst stimmen die Seitenzahlen im Inhalt nicht.
 
 Umfang: Schülerteil **1 Seite** (Spielschule, C2) bzw. **höchstens 2 Seiten** (C3–ES).
 Die Seite „Für die Lehrperson“ muss auf **eine** Seite passen. Seitenzahlen zählen je Blatt („Seite 1 / 2“), auch in
@@ -153,7 +157,6 @@ Lehrerseite: `loesungen` ist Pflicht (kurz, eine Zeile je Aufgabe). ELDiB-Ziele 
 Minuszeichen im Text als Gedankenstrich „–“, in Rechnungen `"op": "-"`. Mal „·“, geteilt „:“. Zahlen bis 9999 ohne
 Trennzeichen (1000 ml), größere mit geschütztem Leerzeichen. Brüche im Fließtext als „3/4“, in Päckchen als `#3/4#`.
 Blätter mit Messaufgaben (`geo`) auf der Lehrerseite daran erinnern, in Originalgröße (100 %) zu drucken.
-`animation` (Blatt-Feld) verweist auf ein Erklärbild, das die App im Blatt-Dialog zeigt (siehe src/blatt/erklaerbilder).
 
 ### Bildgeschichten & Karten
 | Art | Felder | Wofür |
