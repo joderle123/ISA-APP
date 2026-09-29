@@ -109,7 +109,7 @@ export function createHUD({ root, input, events, audio, game }) {
     setTimeout(() => el.keys.classList.add('is-out'), 12000);
   }
   events.on('input:device', setDeviceClass);
-  setDeviceClass('none');
+  // Erster Aufruf erst unten, wenn `ui` existiert (sonst Absturz auf Geräten ohne Touch, z. B. PC)
 
   // ---- Zonen-Banner ----
   let bannerTimer = 0;
@@ -288,5 +288,6 @@ export function createHUD({ root, input, events, audio, game }) {
   };
   root.classList.remove('is-hidden');
   ui.show(false);
+  setDeviceClass('none');
   return ui;
 }
