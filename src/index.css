@@ -868,14 +868,24 @@
     border-radius: 9999px;
   }
 
-  /* Urheber-Vermerk am Ende KI-erstellter Inhalte (Text: src/lib/urheber.ts) */
+  /* Urheber-Vermerk am Ende KI-erstellter Inhalte (Text: src/lib/urheber.ts), davor das CDSE-Logo */
   .urheber {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     margin: 0;
     padding-top: 10px;
     border-top: 1px solid var(--line);
     font-size: 12px;
     line-height: 1.5;
     color: var(--muted);
+  }
+  /* das Logo hat einen weißen Grund – „multiply“ lässt ihn auf hellem Grund verschwinden */
+  .urheber-logo {
+    flex: none;
+    width: auto;
+    height: 30px;
+    mix-blend-mode: multiply;
   }
 }
 
@@ -2964,6 +2974,9 @@
   }
   /* Urheber-Vermerk am Ende des Ausdrucks – bleibt beim letzten Inhalt, nie allein auf einer Seite */
   .ku-druck .ku-druck-urheber {
+    display: flex;
+    align-items: center;
+    gap: 5pt;
     margin: 6pt 0 0;
     padding-top: 2pt;
     border-top: 0.5pt solid #bbb;
@@ -2972,6 +2985,9 @@
     color: #555;
     break-before: avoid;
     break-inside: avoid;
+  }
+  .ku-druck .ku-druck-urheber .urheber-logo {
+    height: 14pt;
   }
   /* Spickzettel: etwas enger gesetzt und mit schmaleren Rändern, damit er auf eine Seite passt */
   .ku-spick {
@@ -2998,6 +3014,9 @@
     padding-top: 1.5pt;
     font-size: 6.8pt;
     line-height: 1.2;
+  }
+  .ku-spick .ku-druck-urheber .urheber-logo {
+    height: 11pt;
   }
   .ku-spick-tab {
     width: 100%;

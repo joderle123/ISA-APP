@@ -12,11 +12,13 @@ import {
   Rect,
   Polygon,
   Line,
+  Image,
 } from '@react-pdf/renderer'
 import type { ReactNode } from 'react'
 import type { Material, WorksheetBlock } from '../types/material'
 import { trennung } from '../lib/trennung'
 import { URHEBER, URHEBER_NAME, vonKi } from '../lib/urheber'
+import { CDSE_LOGO, CDSE_LOGO_SEITEN } from '../lib/cdse-logo'
 
 // Disable automatic hyphenation so goal ids like "[SOZ-5]" never break into
 // "[-SOZ-5]". Words wrap at spaces only.
@@ -337,9 +339,11 @@ const s = StyleSheet.create({
     paddingTop: 5,
   },
   footerText: { fontSize: 7.5, lineHeight: 1.25, color: C.faint },
-  // KI-Material: zweite, kleine Zeile mit dem Urheber-Vermerk. Die Fußzeile rückt dafür tiefer
-  // (Seitenrand unten bleibt 44 pt – kein Material bekommt dadurch eine Seite mehr).
-  footerMitVermerk: { bottom: 15.5, paddingTop: 3, flexDirection: 'column', alignItems: 'stretch' },
+  // KI-Material: zweite, kleine Zeile mit dem Urheber-Vermerk, links davon das CDSE-Logo – so hoch wie
+  // die beiden Zeilen. Die Fußzeile rückt dafür tiefer (Seitenrand unten bleibt 44 pt – kein Material
+  // bekommt dadurch eine Seite mehr).
+  footerMitVermerk: { bottom: 15.5, paddingTop: 3, alignItems: 'center' },
+  footerLogo: { width: 17.5 * CDSE_LOGO_SEITEN, height: 17.5, marginRight: 8 },
   footerVermerk: { fontSize: 6, lineHeight: 1.2, color: C.faint, letterSpacing: 0.1, marginTop: 1.2 },
   // Worksheet (student-facing, printable) — child-friendly, age-aware
   wsAccent: { height: 7, borderRadius: 4, marginBottom: 12 },
@@ -380,7 +384,7 @@ const autorVon = (m: Material) => (vonKi(m) ? URHEBER_NAME : m.author || 'ISA-Ap
 
 /** Fußzeile: links Herkunft und Titel, rechts die Seitenzahl. Die frühere, absolut gesetzte
  *  Text-Zeile mit render erschien in react-pdf 4 gar nicht. Mit `vermerk` (KI-Material) steht
- *  darunter klein der Urheber-Vermerk. */
+ *  darunter klein der Urheber-Vermerk und links das CDSE-Logo. */
 function Fuss({ text, vermerk }: { text: string; vermerk?: string }) {
   if (!vermerk)
     return (
@@ -392,12 +396,15 @@ function Fuss({ text, vermerk }: { text: string; vermerk?: string }) {
     )
   return (
     <View style={[s.footer, s.footerMitVermerk]} fixed>
-      <View style={{ flexDirection: 'row', alignItems: 'flex-end' }}>
-        {/* immer eine Zeile; die Seitenzahl hat eine feste Breite, weil der Text vor ihr gesetzt wird */}
-        <Text style={[s.footerText, { flex: 1, marginRight: 8, maxLines: 1, textOverflow: 'ellipsis' }]}>{text}</Text>
-        <Text style={{ width: 30, fontSize: 7.5, color: C.faint, textAlign: 'right' }} render={({ pageNumber, totalPages }) => `${pageNumber} / ${totalPages}`} />
+      <Image src={CDSE_LOGO} style={s.footerLogo} />
+      <View style={{ flex: 1 }}>
+        <View style={{ flexDirection: 'row', alignItems: 'flex-end' }}>
+          {/* immer eine Zeile; die Seitenzahl hat eine feste Breite, weil der Text vor ihr gesetzt wird */}
+          <Text style={[s.footerText, { flex: 1, marginRight: 8, maxLines: 1, textOverflow: 'ellipsis' }]}>{text}</Text>
+          <Text style={{ width: 30, fontSize: 7.5, color: C.faint, textAlign: 'right' }} render={({ pageNumber, totalPages }) => `${pageNumber} / ${totalPages}`} />
+        </View>
+        <Text style={s.footerVermerk}>{vermerk}</Text>
       </View>
-      <Text style={s.footerVermerk}>{vermerk}</Text>
     </View>
   )
 }

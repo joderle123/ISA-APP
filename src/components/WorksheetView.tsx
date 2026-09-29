@@ -1,6 +1,7 @@
 import type { ReactNode } from 'react'
 import type { Worksheet, WorksheetBlock } from '../types/material'
 import { themeColor } from '../lib/themeColors'
+import { Urheber } from './Urheber'
 
 // On-screen, visually rich rendering of a worksheet — mirrors the printable PDF
 // (numbered tasks, writing lines, pictorial scales, drawing boxes, tables).
@@ -570,7 +571,7 @@ export function WorksheetView({
         })}
 
         {/* wie die Fußzeile des gedruckten Blatts */}
-        {vermerk ? <p className="urheber mt-6 text-[11.5px]">{vermerk}</p> : null}
+        {vermerk ? <Urheber text={vermerk} className="urheber mt-6 text-[11.5px]" /> : null}
       </div>
     </div>
   )

@@ -8,8 +8,9 @@ Team-Ablage und der PDF-Export sind eingebettet (auch die Schriften). Es wird **
 gebraucht; die Datei stellt keine Netzwerkanfragen.
 
 Alles, was mit KI erstellt wurde – Arbeitsblätter, Einheiten und Grundlagen des Skills-Kurses, KI-Materialien –,
-trägt den Urheber-Vermerk „© 2026 Joey Guedes, Psychologe · CDSE“ (französische Blätter: „psychologue“): im PDF
-in der Fußzeile jeder Seite, in der App und im Druck am Ende. Digitalisierte Originale und die Team-Ablage bleiben ohne.
+trägt den Urheber-Vermerk „© 2026 Joey Guedes, Psychologe · CDSE“ (französische Blätter: „psychologue“) und
+links daneben das CDSE-Logo: im PDF in der Fußzeile jeder Seite, in der App und im Druck am Ende. Digitalisierte
+Originale und die Team-Ablage bleiben ohne.
 
 ## So benutzt du sie
 
