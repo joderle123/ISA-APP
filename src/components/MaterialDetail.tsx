@@ -11,6 +11,7 @@ import {
 } from '../data/taxonomy'
 import { domainStyle, plainLabel, sourceInfo, typeLabels } from '../lib/ui'
 import { URHEBER, vonKi } from '../lib/urheber'
+import { Urheber } from './Urheber'
 import { StarRating } from './StarRating'
 import { variants, applyVariant } from '../data/variants'
 import { WorksheetView } from './WorksheetView'
@@ -340,7 +341,7 @@ export function MaterialDetail({
           </section>
         </div>
         {/* nur KI-Materialien – Originale und Team-Ablage behalten ihre Angaben */}
-        {ki ? <p className="urheber mx-6 mb-6 max-sm:mx-4 max-sm:mb-4">{URHEBER.de}</p> : null}
+        {ki ? <Urheber text={URHEBER.de} className="urheber mx-6 mb-6 max-sm:mx-4 max-sm:mb-4" /> : null}
       </div>
 
       <footer className="dlg-foot">

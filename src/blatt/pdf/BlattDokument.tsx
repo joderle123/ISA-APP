@@ -4,7 +4,7 @@
 // gleich – nur Inhalt, Stufe und Bereichsfarbe ändern sich.
 // ---------------------------------------------------------------------------
 
-import { Document, Page, View, Text } from '@react-pdf/renderer'
+import { Document, Page, View, Text, Image } from '@react-pdf/renderer'
 import type { Blatt, BlattInhalt, Sprache } from '../typen'
 import { bereichById, layoutFuer, stufenText, themaLabel } from '../katalog'
 import { NEUTRAL, palette, type Palette } from '../zeichnung'
@@ -13,8 +13,11 @@ import { Bausteine, nummerieren, Plakette, Fliess, type Ctx } from './bausteine'
 import { LEHRER_MASSE, MASSE, SCHRIFT, SEITE, TEXTE, dauerText, typo, type Masse } from './stil'
 import { ELDIB_FR } from '../eldib-fr'
 import { URHEBER, URHEBER_NAME } from '../../lib/urheber'
+import { CDSE_LOGO, CDSE_LOGO_SEITEN } from '../../lib/cdse-logo'
 
 const BREITE = 595.28 - SEITE.rand * 2
+/** Das Logo in der Fußzeile ist so hoch wie ihre beiden Zeilen – die Fußzeile wird nicht höher. */
+const LOGO_HOEHE = 19
 
 export interface BlattOptionen {
   sprache?: Sprache
@@ -100,26 +103,30 @@ function Kopfzeile({ blatt, nr, sprache, p, m, lehrer }: { blatt: Blatt; nr?: st
   )
 }
 
-/** Fußzeile: Marke, Blatt und Seitenzahl, darunter klein der Urheber-Vermerk in der Sprache des Blatts.
- *  Sie steht tiefer als der Inhalt je reicht (SEITE.unten) – auch auf ganz vollen Seiten bleibt Luft. */
+/** Fußzeile: links das CDSE-Logo, daneben Marke, Blatt und Seitenzahl, darunter klein der Urheber-Vermerk
+ *  in der Sprache des Blatts. Sie steht tiefer als der Inhalt je reicht (SEITE.unten) – auch auf ganz vollen
+ *  Seiten bleibt Luft. */
 function Fusszeile({ blatt, nr, sprache }: { blatt: Blatt; nr?: string; sprache: Sprache }) {
   const tx = TEXTE[sprache]
   return (
-    <View fixed style={{ position: 'absolute', left: SEITE.rand, right: SEITE.rand, bottom: 16, borderTopWidth: 0.6, borderTopColor: NEUTRAL.haarlinie, paddingTop: 4.5 }}>
-      <View style={{ flexDirection: 'row', alignItems: 'center' }}>
-        <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 7, color: NEUTRAL.marke, letterSpacing: 0.4 }}>CDSE Toolbox</Text>
-        {/* immer eine Zeile: ein sehr langer Titel endet mit „…“, statt die Fußzeile zu erhöhen */}
-        <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 7, color: NEUTRAL.sehrLeise, marginLeft: 6, flex: 1, maxLines: 1, textOverflow: 'ellipsis' }}>
-          {[nr ? `${tx.arbeitsblatt} ${nr}` : null, blattInhalt(blatt, sprache).titel].filter(Boolean).join('  ·  ')}
-        </Text>
-        {/* Seiten zählen je Blatt (auch in einer Mappe); ein einseitiger Teil braucht keine Seitenzahl.
-            Feste Breite: Der Titel wird gesetzt, bevor die Seitenzahl feststeht – so berührt er sie nie. */}
-        <Text
-          style={{ width: 46, marginLeft: 8, fontFamily: SCHRIFT.jugend, fontSize: 7, color: NEUTRAL.sehrLeise, textAlign: 'right' }}
-          render={({ subPageNumber, subPageTotalPages }) => (subPageTotalPages > 1 ? `${tx.seite} ${subPageNumber} / ${subPageTotalPages}` : '')}
-        />
+    <View fixed style={{ position: 'absolute', left: SEITE.rand, right: SEITE.rand, bottom: 16, borderTopWidth: 0.6, borderTopColor: NEUTRAL.haarlinie, paddingTop: 4.5, flexDirection: 'row', alignItems: 'center' }}>
+      <Image src={CDSE_LOGO} style={{ width: LOGO_HOEHE * CDSE_LOGO_SEITEN, height: LOGO_HOEHE, marginRight: 8 }} />
+      <View style={{ flex: 1 }}>
+        <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+          <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 7, color: NEUTRAL.marke, letterSpacing: 0.4 }}>CDSE Toolbox</Text>
+          {/* immer eine Zeile: ein sehr langer Titel endet mit „…“, statt die Fußzeile zu erhöhen */}
+          <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 7, color: NEUTRAL.sehrLeise, marginLeft: 6, flex: 1, maxLines: 1, textOverflow: 'ellipsis' }}>
+            {[nr ? `${tx.arbeitsblatt} ${nr}` : null, blattInhalt(blatt, sprache).titel].filter(Boolean).join('  ·  ')}
+          </Text>
+          {/* Seiten zählen je Blatt (auch in einer Mappe); ein einseitiger Teil braucht keine Seitenzahl.
+              Feste Breite: Der Titel wird gesetzt, bevor die Seitenzahl feststeht – so berührt er sie nie. */}
+          <Text
+            style={{ width: 46, marginLeft: 8, fontFamily: SCHRIFT.jugend, fontSize: 7, color: NEUTRAL.sehrLeise, textAlign: 'right' }}
+            render={({ subPageNumber, subPageTotalPages }) => (subPageTotalPages > 1 ? `${tx.seite} ${subPageNumber} / ${subPageTotalPages}` : '')}
+          />
+        </View>
+        <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 6, color: NEUTRAL.sehrLeise, marginTop: 2.5, letterSpacing: 0.15 }}>{URHEBER[sprache]}</Text>
       </View>
-      <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 6, color: NEUTRAL.sehrLeise, marginTop: 2.5, letterSpacing: 0.15 }}>{URHEBER[sprache]}</Text>
     </View>
   )
 }

@@ -28,7 +28,8 @@ Umfang: Schülerteil **1 Seite** (Spielschule, C2) bzw. **höchstens 2 Seiten** 
 Die Seite „Für die Lehrperson“ muss auf **eine** Seite passen. Seitenzahlen zählen je Blatt („Seite 1 / 2“), auch in
 einer Mappe; ein einseitiger Teil hat keine Seitenzahl. In der Fußzeile jeder Seite steht darunter klein der
 Urheber-Vermerk „© 2026 Joey Guedes, Psychologe · CDSE“ (französische Fassung: „psychologue“); der Text steht nur in
-`src/lib/urheber.ts`.
+`src/lib/urheber.ts`. Links neben beiden Zeilen steht das CDSE-Logo (`src/lib/cdse-logo.ts`, aus der Vorlage der
+Fiche de renseignement), genau so hoch wie die zwei Zeilen – die Fußzeile wird dadurch nicht höher.
 
 ## 2. Aufbau eines Blatts
 

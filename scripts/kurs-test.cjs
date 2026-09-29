@@ -101,6 +101,13 @@ function pdfLesen(datei) {
   pruefe((await page.locator('.ku-material input').count()) === e1.material.length, 'Material als Checkliste')
   const vermerkAmEnde = () => page.evaluate(() => document.querySelector('article.ku-einheit > :last-child.urheber')?.textContent ?? '')
   pruefe((await vermerkAmEnde()) === URHEBER.de, 'Einheit: Urheber-Vermerk am Ende der Seite')
+  pruefe(
+    await page.evaluate(() => {
+      const i = document.querySelector('article.ku-einheit > :last-child.urheber > img.urheber-logo')
+      return !!i && i.complete && i.naturalWidth > 0 && i.getBoundingClientRect().height > 0
+    }),
+    'Einheit: CDSE-Logo neben dem Urheber-Vermerk',
+  )
 
   // Material abhaken + Notiz → bleibt nach Neuladen
   await page.locator('.ku-material input').first().check()
@@ -223,7 +230,7 @@ function pdfLesen(datei) {
     await druck.close()
     const seiten = (pdf.toString('latin1').match(/\/Type\s*\/Page(?![s\w])/g) || []).length
     pruefe(seiten === 1, `Spickzettel ${id}: eine Seite (${seiten})`)
-    pruefe(html.includes(`<p class="ku-druck-urheber">${URHEBER.de}</p>`), `Spickzettel ${id}: mit Urheber-Vermerk`)
+    pruefe(/<p class="ku-druck-urheber"><img class="urheber-logo"[^>]* src="data:image\/png;base64,[A-Za-z0-9+/=]+"[^>]*>([^<]*)<\/p>/.exec(html)?.[1] === URHEBER.de, `Spickzettel ${id}: mit Urheber-Vermerk und CDSE-Logo`)
   }
 
   // Schülerblätter des Kurses: über Wörter aus ihren Aufgabentexten zu finden (Suche der Arbeitsblätter)

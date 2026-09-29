@@ -35,10 +35,13 @@ function pdfHatTitel(buf, titel) {
   return buf.includes(Buffer.from(titel, 'utf16le').swap16())
 }
 
-/** Text je Seite und Autor einer PDF-Datei (braucht python3 mit PyMuPDF wie scripts/mappe-pruefen.tsx; sonst null). */
+/** Text je Seite, Autor und Bilder in der Fußzeile (CDSE-Logo, unterste 45 pt) einer PDF-Datei
+ *  (braucht python3 mit PyMuPDF wie scripts/mappe-pruefen.tsx; sonst null). */
 function pdfLesen(datei) {
   try {
-    const py = 'import json, sys, pymupdf; d = pymupdf.open(sys.argv[1]); print(json.dumps({"seiten": [p.get_text() for p in d], "autor": d.metadata.get("author")}))'
+    const py =
+      'import json, sys, pymupdf; d = pymupdf.open(sys.argv[1]); print(json.dumps({"seiten": [p.get_text() for p in d], "autor": d.metadata.get("author"), ' +
+      '"logos": [len([b for b in p.get_image_info() if p.rect.height - b["bbox"][1] < 45]) for p in d]}))'
     return JSON.parse(require('child_process').execFileSync('python3', ['-c', py, datei]).toString())
   } catch {
     return null
@@ -351,13 +354,18 @@ const URHEBER = (() => {
     await uh.evaluate(() => document.querySelectorAll('.toast button').forEach((b) => b.click()))
     return d ? { name: d.suggestedFilename(), pdf: pdfLesen(await d.path()) } : null
   }
-  /** jede Seite trägt genau den Vermerk der erwarteten Sprache ('de', 'fr' oder beide bei gemischter Mappe) */
+  /** jede Seite trägt genau den Vermerk der erwarteten Sprache ('de', 'fr' oder beide bei gemischter Mappe)
+   *  und daneben einmal das CDSE-Logo */
   const pdfVermerk = (pdf, sprachen) =>
-    pdf.seiten.length > 0 && pdf.seiten.every((t) => sprachen.some((s) => t.includes(URHEBER[s]))) && sprachen.every((s) => pdf.seiten.some((t) => t.includes(URHEBER[s])))
+    pdf.seiten.length > 0 && pdf.seiten.every((t) => sprachen.some((s) => t.includes(URHEBER[s]))) && sprachen.every((s) => pdf.seiten.some((t) => t.includes(URHEBER[s]))) &&
+    pdf.logos.every((n) => n === 1)
+  /** Logo neben dem Vermerk in der Ansicht: geladen und sichtbar */
+  const logosGeladen = (sel) => uh.$$eval(sel + ' img.urheber-logo', (els) => els.filter((i) => i.complete && i.naturalWidth > 0 && i.getBoundingClientRect().height > 0).length)
   await uh.goto(DATEI + '#blatt=beduerfnis-glaeser')
   await uh.waitForSelector('dialog[open] .seg')
   let v = await vermerke('dialog[open] .urheber')
   pruefe(v.length === 1 && v[0].text === URHEBER.de && v[0].lang === 'de', `Blatt-Dialog DE: Vermerk „${v[0]?.text}“`)
+  pruefe((await logosGeladen('dialog[open] .urheber')) === 1, 'Blatt-Dialog: CDSE-Logo neben dem Vermerk')
   const blattDe = await laden(uh.locator('dialog[open] button', { hasText: 'Mit Lehrerseite' }))
   if (blattDe?.pdf) {
     pruefe(pdfVermerk(blattDe.pdf, ['de']) && blattDe.pdf.seiten.some((t) => t.includes('FÜR DIE LEHRPERSON')), `Blatt-PDF DE mit Lehrerseite: Vermerk auf allen ${blattDe.pdf.seiten.length} Seiten`)
@@ -383,6 +391,7 @@ const URHEBER = (() => {
   await uh.waitForSelector('dialog[open]')
   v = await vermerke('dialog[open] .urheber')
   pruefe(v.length === 2 && v.every((x) => x.text === URHEBER.de), `KI-Material: Vermerk in der Ansicht und unter dem Arbeitsblatt (${v.length})`)
+  pruefe((await logosGeladen('dialog[open] .urheber')) === 2, 'KI-Material: CDSE-Logo neben beiden Vermerken')
   const matKi = await laden(uh.locator('dialog[open] .dlg-foot button', { hasText: 'PDF' }))
   if (matKi?.pdf) {
     pruefe(pdfVermerk(matKi.pdf, ['de']), `KI-Material-PDF: Vermerk auf allen ${matKi.pdf.seiten.length} Seiten`)
@@ -403,6 +412,7 @@ const URHEBER = (() => {
   const matOrig = await laden(uh.locator('dialog[open] .dlg-foot button', { hasText: 'PDF' }))
   if (matOrig?.pdf) {
     pruefe(matOrig.pdf.seiten.every((t) => !t.includes('©') && !t.includes(URHEBER.name)), 'Original-PDF: auf keiner Seite ein Urheber-Vermerk')
+    pruefe(matOrig.pdf.logos.every((n) => n === 0), 'Original-PDF: kein CDSE-Logo in der Fußzeile')
     pruefe(matOrig.pdf.autor === original.author, 'Original-PDF: Autorin/Autor wie bisher in den PDF-Angaben')
   }
 
