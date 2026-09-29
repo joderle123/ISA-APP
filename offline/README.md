@@ -1,8 +1,8 @@
 # Toolbox (ISA-App) – Offline-Version (zum Doppelklicken)
 
-**`ISA-App.html`** ist die komplette Toolbox in **einer einzigen Datei** – 295
+**`ISA-App.html`** ist die komplette Toolbox in **einer einzigen Datei** – 307
 Arbeitsblätter (Spielschule bis Sekundarschule, jedes mit Seite für die
-Lehrperson), der **Skills-Kurs** (drei Kursjahre mit 100 Einheiten und 17 Jokern, Schritt für
+Lehrperson, darunter die 12 Lektionen von Mathe Modul 2), der **Skills-Kurs** (drei Kursjahre mit 100 Einheiten und 17 Jokern, Schritt für
 Schritt ausgearbeitet, mit 158 Schülerblättern), alle 613 Materialien, Suche und Filter, der Material-Finder, die
 Team-Ablage und der PDF-Export sind eingebettet (auch die Schriften). Es wird **kein Internet und kein Server**
 gebraucht; die Datei stellt keine Netzwerkanfragen.
