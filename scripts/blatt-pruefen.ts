@@ -33,8 +33,15 @@ const ARTEN = new Set([
   'aufgabe', 'text', 'info', 'geschichte', 'bild', 'spalten', 'abstand', 'seitenumbruch', 'linien', 'frage', 'satzanfaenge', 'feld', 'tabelle',
   'wennDann', 'dialog', 'vertrag', 'ankreuzen', 'bilder', 'wortspeicher', 'skala', 'einschaetzung', 'zuordnen', 'gefuehle', 'ampel', 'thermometer',
   'vulkan', 'eisberg', 'koerper', 'batterie', 'waage', 'leiter', 'zielscheibe', 'hand', 'mindmap', 'schritte', 'plan', 'tagesplan', 'atmen', 'comic',
-  'karten', 'rueckblick', 'notfall', 'gefuehlsrad', 'glaeser', 'netz', 'kurve', 'tageskreis', 'farbkalender',
+  'karten', 'rueckblick', 'notfall', 'gefuehlsrad', 'glaeser', 'netz', 'kurve', 'tageskreis', 'farbkalender', 'rechnungen', 'kaestchen', 'bon',
 ])
+
+/** Mathe: Dezimalzahl mit Komma („12,5“) als Zahl – oder NaN */
+const ZAHL = /^\d+(,\d+)?$/
+const zahl = (x: string) => (ZAHL.test(x) ? Number(x.replace(',', '.')) : NaN)
+const gleich = (a: number, b: number) => Math.abs(a - b) < 1e-9
+/** „0,89 €“ → 0,89 */
+const PREIS = /^(\d+,\d{2}) €$/
 
 /** Formulierungen, die nach Textbaukasten klingen. */
 const FLOSKELN: [RegExp, string][] = [
@@ -110,7 +117,43 @@ function pruefeBausteine(wo: string, liste: Baustein[], blatt: Blatt, sprache: S
         if (!b.text?.trim()) melde('F', w, 'Aufgabe ohne Text')
         if (b.text.length > 150) melde('H', w, `Aufgabentext zu lang (${b.text.length} Zeichen, max. 150)`)
         for (const s of b.symbole ?? []) if (!SYMBOLE.includes(s)) melde('F', w, `Symbol „${s}“ gibt es nicht`)
+        if (b.stufe !== undefined && ![1, 2, 3].includes(b.stufe)) melde('F', w, 'Stufe 1, 2 oder 3')
+        if (b.stufe && blatt.bereich !== 'mathe') melde('H', w, 'Stufen-Punkte sind für Mathe-Blätter gedacht')
         break
+      case 'rechnungen':
+        if (!b.items?.length || b.items.length > 12) melde('F', w, '1–12 Rechnungen')
+        if (b.spalten && ![1, 2, 3, 4].includes(b.spalten)) melde('F', w, '1–4 Spalten')
+        for (const r of b.items ?? []) {
+          const wo2 = `${w} ${(r.zeilen ?? []).join(r.op === '-' ? ' - ' : ' + ')}`
+          if (!r.zeilen || r.zeilen.length < 2 || r.zeilen.length > 4) { melde('F', wo2, '2–4 Zahlen je Rechnung'); continue }
+          if (r.op && !['+', '-'].includes(r.op)) melde('F', wo2, 'Rechenzeichen + oder -')
+          if (r.op === '-' && r.zeilen.length !== 2) melde('F', wo2, 'Minus: genau 2 Zahlen')
+          const z = r.zeilen.map(zahl)
+          if (z.some(Number.isNaN)) { melde('F', wo2, 'Zahlen nur mit Ziffern und Komma (z. B. 12,5)'); continue }
+          if (r.ergebnis !== undefined) {
+            const e = zahl(r.ergebnis), soll = r.op === '-' ? z[0] - z[1] : z.reduce((a, x) => a + x, 0)
+            if (Number.isNaN(e) || !gleich(e, soll)) melde('F', wo2, `Ergebnis „${r.ergebnis}“ stimmt nicht`)
+          }
+          if (r.op === '-' && z[1] > z[0]) melde('F', wo2, 'Ergebnis wäre negativ')
+        }
+        break
+      case 'kaestchen':
+        if (!b.zeilen || b.zeilen < 1 || b.zeilen > 20) melde('F', w, 'Kästchen: 1–20 Zeilen')
+        break
+      case 'bon': {
+        if (!b.posten?.length || b.posten.length > 10) melde('F', w, 'Bon: 1–10 Posten')
+        let summe = 0
+        for (const x of b.posten ?? []) {
+          const m = PREIS.exec(x.preis ?? '')
+          if (!m) melde('F', w, `Preis „${x.preis}“: bitte wie „0,89 €“`)
+          else summe += zahl(m[1])
+        }
+        if (b.summe !== undefined) {
+          const m = PREIS.exec(b.summe)
+          if (!m || !gleich(zahl(m[1]), summe)) melde('F', w, `Summe „${b.summe}“ stimmt nicht (${summe.toFixed(2).replace('.', ',')} €)`)
+        }
+        break
+      }
       case 'spalten':
         if (tiefe) melde('F', w, 'Spalten dürfen nicht verschachtelt werden')
         pruefeBausteine(w + ' links', b.links ?? [], blatt, sprache, tiefe + 1)
@@ -264,8 +307,9 @@ function pruefeInhalt(wo: string, inh: BlattInhalt | undefined, blatt: Blatt, sp
   if (!L.hintergrund || L.hintergrund.length < 250) melde('F', wo, 'Lehrerseite: fachlicher Hintergrund zu kurz (mind. 250 Zeichen)')
   if (L.hintergrund && L.hintergrund.length > 1100) melde('H', wo, 'Lehrerseite: Hintergrund über 1100 Zeichen – Seite wird voll')
   for (const q of L.quellen ?? []) if (!QUELLEN_TEXTE.has(q)) melde('F', wo, `Quelle nicht in der geprüften Liste (src/blatt/quellen.ts): „${q.slice(0, 70)}“`)
-  if (!(L.quellen ?? []).length) melde('H', wo, 'Lehrerseite ohne Quelle')
-  const alle = [L.ziel, ...(L.ablauf ?? []), L.hintergrund, ...(L.impulse ?? []), ...(L.tipps ?? []), L.achtung ?? '', L.material ?? '', L.differenzierung?.leichter ?? '', L.differenzierung?.schwerer ?? '']
+  if (!(L.quellen ?? []).length && blatt.bereich !== 'mathe') melde('H', wo, 'Lehrerseite ohne Quelle')
+  const alle = [L.ziel, ...(L.ablauf ?? []), L.hintergrund, ...(L.impulse ?? []), ...(L.tipps ?? []), L.achtung ?? '', L.material ?? '', L.differenzierung?.leichter ?? '', L.differenzierung?.schwerer ?? '', ...(L.loesungen ?? [])]
+  if (blatt.bereich === 'mathe' && !(L.loesungen ?? []).length) melde('F', wo, 'Mathe-Blatt: Lösungen für die Lehrperson fehlen')
   for (const x of [...alle, inh.titel, inh.untertitel ?? '', inh.anleitung ?? '']) {
     if (fremdeZeichen(x)) melde('F', wo, `Zeichen fehlt in der Schrift: ${fremdeZeichen(x)}`)
   }
@@ -302,7 +346,8 @@ for (const datei of liste) {
     if (!werkzeug && b.bereich !== 'skills' && b.stufen?.includes('ES') && !b.fr) melde('F', wo, 'Sekundarschul-Blatt braucht eine französische Fassung (fr)')
     if (!Array.isArray(b.sozialform) || !b.sozialform.length || b.sozialform.some((s) => !['einzeln', 'gruppe', 'klasse'].includes(s))) melde('F', wo, 'sozialform ungültig')
     if (!b.dauer) melde('F', wo, 'dauer fehlt')
-    if (!Array.isArray(b.eldib) || !b.eldib.length || b.eldib.length > 4) melde('F', wo, '1–4 ELDiB-Ziele angeben')
+    /* Mathe übt Rechnen und Messen – dafür gibt es keine ELDiB-Ziele */
+    if (b.bereich === 'mathe' ? !Array.isArray(b.eldib) || b.eldib.length > 4 : !Array.isArray(b.eldib) || !b.eldib.length || b.eldib.length > 4) melde('F', wo, '1–4 ELDiB-Ziele angeben')
     for (const e of b.eldib ?? []) if (!eldibGoalById.has(e)) melde('F', wo, `ELDiB-Ziel „${e}“ gibt es nicht`)
     if (!Array.isArray(b.schlagworte) || b.schlagworte.length < 3) melde('H', wo, 'mindestens 3 Schlagworte')
     if (b.bild) {

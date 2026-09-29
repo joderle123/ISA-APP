@@ -36,7 +36,7 @@ Fiche de renseignement), genau so hoch wie die zwei Zeilen – die Fußzeile wir
 ```json
 {
   "id": "wutvulkan",                      // klein, a–z, 0–9, Bindestriche; eindeutig
-  "bereich": "gefuehle",                  // gefuehle | verhalten | miteinander | lernen | alltag | werkzeuge | skills | selbstreflexion
+  "bereich": "gefuehle",                  // gefuehle | verhalten | miteinander | lernen | alltag | werkzeuge | skills | selbstreflexion | mathe
   "thema": "wut",                         // siehe src/blatt/katalog.ts (THEMEN)
   "stufen": ["C3", "C4"],                 // C1 | C2 | C3 | C4 | ES
   "sozialform": ["einzeln", "gruppe"],    // einzeln | gruppe | klasse
@@ -128,6 +128,21 @@ Ruhige Liniengrafiken mit viel Weißraum – für Blätter, die zum Innehalten e
 | `kurve` | `x` (2–12), `oben`, `unten`, `mitte?`, `linien?` (2 Legendentexte), `hoehe?` | Leeres Diagramm zum Einzeichnen: Stimmung und Energie einer Woche, Lebenslinie. |
 | `tageskreis` | `titel` (1–2 Kreise), `legende` ([{farbe, text}], 2–8; `text: ''` = Linie) | 24-Stunden-Kreise zum Ausmalen: normaler Tag und Wunsch-Tag. |
 | `farbkalender` | `wochen?` (4–6), `legende` ([{farbe, text}], 2–8) | Kästchen-Kalender (Mo–So) zum Ausmalen, z. B. Stimmung pro Tag. |
+
+### Mathe (Bereich `mathe`, Voie préparatoire)
+Mathe-Blätter folgen dem Lehrplan (CNES-Référentiel, 5e PF), Aufgaben aus dem Alltag Jugendlicher (Geld, Handy, Sport,
+Stage, Küche, Werkstatt) – nie kindlich. Pro Lektion ein Blatt: Regel, Beispiel, Übungen in drei Stufen, Kurz-Check.
+
+| Art | Felder | Wofür |
+|---|---|---|
+| `rechnungen` | `items: [{zeilen, op?, ergebnis?, label?}]`, `spalten?` (1–4), `auffuellen?` | Schriftlich rechnen Komma unter Komma, jede Ziffer in einem Kästchen. Ohne `ergebnis` bleibt die Zeile leer. `auffuellen` zeigt fehlende Nullen farbig (für Beispiele). Das Prüfskript rechnet die Ergebnisse nach. |
+| `kaestchen` | `zeilen`, `label?` | Karopapier (5 mm) für eigene Rechnungen. |
+| `bon` | `titel?`, `posten: [{text, preis}]` (Preis wie „0,89 €“), `summe?`, `fuss?` | Kassenbon; ohne `summe` zum Ausrechnen (das Prüfskript prüft eine angegebene Summe). |
+| `aufgabe` mit `stufe` | 1, 2 oder 3 | Kleine Punkte an der Nummer: Basis, Kern, Plus – unauffällig, die Lehrerseite erklärt sie. |
+| `tabelle` mit `werte` | vorgegebene Zeilen | z. B. „Stimmt das?“ mit Rechnungen zum Prüfen. |
+
+Lehrerseite: `loesungen` ist Pflicht (kurz, eine Zeile je Aufgabe). ELDiB-Ziele und Quellen braucht ein Mathe-Blatt nicht.
+Minuszeichen im Text als Gedankenstrich „–“, in Rechnungen `"op": "-"`.
 
 ### Bildgeschichten & Karten
 | Art | Felder | Wofür |

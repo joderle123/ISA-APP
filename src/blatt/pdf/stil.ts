@@ -118,7 +118,10 @@ type Texte = Record<
   | 'meinZiel'
   | 'leicht'
   | 'mittel'
-  | 'schwer',
+  | 'schwer'
+  | 'loesungen'
+  | 'summe'
+  | 'stufen',
   string
 >
 
@@ -166,6 +169,9 @@ export const TEXTE: Record<Sprache, Texte> = {
     leicht: 'leicht',
     mittel: 'geht so',
     schwer: 'schwer',
+    loesungen: 'Lösungen',
+    summe: 'Summe',
+    stufen: 'Punkte an den Aufgaben: 1 = Basis, 2 = Kern, 3 = Plus',
   },
   fr: {
     name: 'Nom',
@@ -210,6 +216,9 @@ export const TEXTE: Record<Sprache, Texte> = {
     leicht: 'facile',
     mittel: 'moyen',
     schwer: 'difficile',
+    loesungen: 'Solutions',
+    summe: 'Total',
+    stufen: 'Points à côté des exercices : 1 = base, 2 = standard, 3 = approfondissement',
   },
 }
 

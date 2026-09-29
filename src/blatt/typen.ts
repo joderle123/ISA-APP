@@ -12,7 +12,7 @@ import type { AgeLevel } from '../types/material'
 export type Stufe = AgeLevel
 
 /** Themenbereiche der Blätter (bewusst keine Schulfächer). */
-export type Bereich = 'gefuehle' | 'verhalten' | 'miteinander' | 'lernen' | 'alltag' | 'werkzeuge' | 'skills' | 'selbstreflexion'
+export type Bereich = 'gefuehle' | 'verhalten' | 'miteinander' | 'lernen' | 'alltag' | 'werkzeuge' | 'skills' | 'selbstreflexion' | 'mathe'
 
 /**
  * Gestaltung nach Alter:
@@ -82,7 +82,8 @@ export interface Stufentext {
 
 export type Baustein =
   // --- Struktur & Text -----------------------------------------------------
-  | { art: 'aufgabe'; text: string; hinweis?: string; symbole?: Symbol[] }
+  /** `stufe` (Mathe): kleine Punkte neben der Nummer – 1 Basis, 2 Kern, 3 Plus; unauffällig, nur als Orientierung. */
+  | { art: 'aufgabe'; text: string; hinweis?: string; symbole?: Symbol[]; stufe?: 1 | 2 | 3 }
   | { art: 'text'; text: string; klein?: boolean }
   | { art: 'info'; titel?: string; text?: string; punkte?: string[]; symbol?: 'tipp' | 'wissen' | 'achtung' | 'merke' | 'hilfe' }
   | { art: 'geschichte'; titel?: string; text: string; bild?: BildId }
@@ -95,7 +96,7 @@ export type Baustein =
   | { art: 'frage'; text: string; linien?: number }
   | { art: 'satzanfaenge'; items: string[]; linien?: number }
   | { art: 'feld'; label?: string; hoehe?: number; beispiel?: string; zeichnen?: boolean }
-  | { art: 'tabelle'; spalten: string[]; zeilen: number; beispiel?: string[]; breiten?: number[]; /** Erste Spalte vorab nummerieren, beginnend mit dieser Zahl. */ nummern?: number }
+  | { art: 'tabelle'; spalten: string[]; zeilen: number; beispiel?: string[]; breiten?: number[]; /** Erste Spalte vorab nummerieren, beginnend mit dieser Zahl. */ nummern?: number; /** Vorgegebene Zeilen (z. B. Aufgaben, Preise) vor den leeren. */ werte?: string[][] }
   | { art: 'wennDann'; zeilen: number; beispiele?: { wenn: string; dann: string }[]; wenn?: string; dann?: string }
   | { art: 'dialog'; zeilen: { wer: string; text?: string }[] }
   | { art: 'vertrag'; titel?: string; text: string; unterschriften: string[] }
@@ -137,6 +138,14 @@ export type Baustein =
   | { art: 'tageskreis'; titel: string[]; legende: { farbe: Farbwort; text: string }[] }
   /** Kalender aus Kästchen (Wochentage als Spalten) zum Ausmalen, mit Farblegende. */
   | { art: 'farbkalender'; wochen?: number; legende: { farbe: Farbwort; text: string }[] }
+  // --- Mathe ----------------------------------------------------------------
+  /** Schriftliche Rechnungen, Komma unter Komma (jede Ziffer in einem Kästchen). Ohne `ergebnis` bleibt die
+   *  Ergebniszeile leer. `auffuellen`: fehlende Nachkommastellen als 0 in der Akzentfarbe zeigen (für Beispiele). */
+  | { art: 'rechnungen'; items: Rechnung[]; spalten?: 1 | 2 | 3 | 4; auffuellen?: boolean }
+  /** Rechenkästchen (Karopapier) für eigene Rechnungen. */
+  | { art: 'kaestchen'; zeilen: number; label?: string }
+  /** Kassenbon: Posten mit Preisen; ohne `summe` bleibt die Summe zum Ausrechnen leer. */
+  | { art: 'bon'; titel?: string; posten: { text: string; preis: string }[]; summe?: string; fuss?: string }
   // --- Bildgeschichten & Karten ---------------------------------------------
   | { art: 'comic'; felder: ComicFeld[]; spalten?: 2 | 3 }
   | { art: 'karten'; karten: { titel?: string; text?: string; bild?: BildId }[]; spalten?: 2 | 3 | 4; hoehe?: number }
@@ -145,6 +154,15 @@ export type Baustein =
   | { art: 'notfall'; eintraege?: { name: string; nummer: string }[]; text?: string }
 
 export type BausteinArt = Baustein['art']
+
+/** Eine schriftliche Rechnung: Zahlen als Text mit Komma („12,5“), Operator '+' oder '-'. */
+export interface Rechnung {
+  zeilen: string[]
+  op?: '+' | '-'
+  ergebnis?: string
+  /** Kleine Überschrift, z. B. „a)“ oder „Beispiel“. */
+  label?: string
+}
 
 export interface ComicFeld {
   /** Bis zu zwei Figuren, z. B. ['figur:noah:wuetend', 'figur:mia:traurig']. */
@@ -180,6 +198,8 @@ export interface Lehrerseite {
   achtung?: string
   /** Zusätzliches Material (Schere, Kleber …). */
   material?: string
+  /** Lösungen (Mathe), kurz je Aufgabe: „1) 6,8 · 8,75 …“. */
+  loesungen?: string[]
 }
 
 export interface BlattInhalt {

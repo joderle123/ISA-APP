@@ -6,7 +6,7 @@
 
 import { View, Text, Svg, Path, Circle, Line, Rect, Polygon } from '@react-pdf/renderer'
 import type { ReactNode } from 'react'
-import type { Baustein, BildId, ComicFeld, Farbwort, Gefuehl, Sprache, Stufentext, Symbol } from '../typen'
+import type { Baustein, BildId, ComicFeld, Farbwort, Gefuehl, Rechnung, Sprache, Stufentext, Symbol } from '../typen'
 import { bildZeichnung, iconZeichnung, NEUTRAL, type Form, type Palette, type Zeichnung } from '../zeichnung'
 import { gefuehlWort, gesichtZeichnung } from '../gesichter'
 import { motivZeichnung, VULKAN, HAND, fingerSpitze, EISBERG } from '../motive'
@@ -179,12 +179,25 @@ function zonenFarbe(i: number, n: number): string {
 
 // --- Bausteine --------------------------------------------------------------------
 
+/** Stufe einer Aufgabe (Mathe): drei kleine Punkte, 1–3 davon gefüllt – Basis, Kern, Plus. */
+function StufenPunkte({ c, n }: { c: Ctx; n: 1 | 2 | 3 }) {
+  const d = 4.6
+  return (
+    <View style={{ flexDirection: 'row', marginLeft: 5, marginTop: (c.m.nummer - d) / 2 }}>
+      {[1, 2, 3].map((i) => (
+        <View key={i} style={{ width: d, height: d, borderRadius: d / 2, marginRight: 1.6, backgroundColor: i <= n ? c.p.tief : '#FFFFFF', borderWidth: 0.8, borderColor: i <= n ? c.p.tief : NEUTRAL.sehrLeise }} />
+      ))}
+    </View>
+  )
+}
+
 function Aufgabe({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'aufgabe' }> }) {
   const n = c.nummern.get(b)
   return (
     <View wrap={false} style={{ marginTop: c.m.abstand * 0.7, marginBottom: c.m.abstand * 0.5 }}>
       <View style={{ flexDirection: 'row', alignItems: 'flex-start' }}>
         {n !== undefined && <Nummer c={c} n={n} />}
+        {b.stufe ? <StufenPunkte c={c} n={b.stufe} /> : null}
         {(b.symbole ?? []).map((s) => (
           <SymbolKachel key={s} c={c} s={s} />
         ))}
@@ -374,6 +387,11 @@ function Tabelle({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'tabelle' }> })
           )}
         </View>
       ) : null}
+      {(b.werte ?? []).map((w, r) => (
+        <View key={'w' + r} style={{ flexDirection: 'row', minHeight: zeileH, borderBottomWidth: r < (b.werte?.length ?? 0) - 1 || b.zeilen > 0 ? 0.8 : 0, borderBottomColor: NEUTRAL.rahmen }} wrap={false}>
+          {b.spalten.map((_, i) => zelle(i, <Fliess c={c} klein>{t(c, w[i] ?? '')}</Fliess>))}
+        </View>
+      ))}
       {Array.from({ length: b.zeilen }, (_, r) => (
         <View key={r} style={{ flexDirection: 'row', height: zeileH, borderBottomWidth: r < b.zeilen - 1 ? 0.8 : 0, borderBottomColor: NEUTRAL.rahmen }} wrap={false}>
           {b.spalten.map((_, i) =>
@@ -1965,6 +1983,182 @@ function Farbkalender({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'farbkalen
 
 // --- Verteiler ------------------------------------------------------------------------
 
+// --- Mathe -------------------------------------------------------------------
+
+/** Karo wie im Mathe-Heft: 5 mm */
+const KARO = 14.17
+const KARO_LINIE = '#D3D9E4'
+
+/** „12,5“ → ['12', '5'] */
+function zerlege(x: string): [string, string] {
+  const s = String(x ?? '').replace(/\s/g, '')
+  const i = s.indexOf(',')
+  return i < 0 ? [s, ''] : [s.slice(0, i), s.slice(i + 1)]
+}
+
+/** Eine schriftliche Rechnung Komma unter Komma: jede Ziffer, das Komma und das Rechenzeichen in einem Kästchen. */
+function EineRechnung({ c, r, auffuellen, k }: { c: Ctx; r: Rechnung; auffuellen?: boolean; k: number }) {
+  const teile = [...r.zeilen, ...(r.ergebnis ? [r.ergebnis] : [])].map(zerlege)
+  const nach = Math.max(0, ...teile.map(([, n]) => n.length))
+  /* vorn ein Kästchen mehr, wenn das Ergebnis eine Stelle mehr bekommen kann (Übertrag) */
+  const ganz = Math.max(1, ...teile.map(([g]) => g.length)) + (!r.ergebnis && r.op !== '-' ? 1 : 0)
+  const n = 1 + ganz + (nach ? 1 : 0) + nach
+  const schrift = { fontFamily: SCHRIFT.jugend, fontSize: k * 0.64, lineHeight: 1 }
+  const zelle = (key: string, ch: string, farbe?: string, fett?: boolean) => (
+    <View key={key} style={{ width: k, height: k, alignItems: 'center', justifyContent: 'center', borderRightWidth: 0.5, borderBottomWidth: 0.5, borderColor: KARO_LINIE }}>
+      <Text style={{ ...schrift, color: farbe ?? NEUTRAL.text, fontWeight: fett ? 700 : 400 }}>{ch}</Text>
+    </View>
+  )
+  const zeile = (key: string, zahl: string | null, op: string, farbe?: string, fett?: boolean) => {
+    const [g, nk] = zahl == null ? ['', ''] : zerlege(zahl)
+    const zellen = [zelle(key + 'o', op, NEUTRAL.text, true)]
+    for (let i = 0; i < ganz; i++) {
+      const j = i - (ganz - g.length)
+      zellen.push(zelle(key + 'g' + i, j >= 0 ? g[j] : '', farbe, fett))
+    }
+    if (nach) {
+      const komma = zahl != null && (nk.length > 0 || !!auffuellen)
+      zellen.push(zelle(key + 'k', komma ? ',' : '', nk.length ? farbe : c.p.tief, fett))
+      for (let i = 0; i < nach; i++) {
+        const leer = zahl == null || i >= nk.length
+        zellen.push(zelle(key + 'n' + i, !leer ? nk[i] : zahl != null && auffuellen ? '0' : '', !leer ? farbe : c.p.tief, fett))
+      }
+    }
+    return (
+      <View key={key} style={{ flexDirection: 'row' }}>
+        {zellen}
+      </View>
+    )
+  }
+  const MINUS = String.fromCharCode(0x2212)
+  return (
+    <View wrap={false}>
+      {r.label ? (
+        <Fliess c={c} klein fett farbe={NEUTRAL.leise} style={{ marginBottom: 3 }}>
+          {t(c, r.label)}
+        </Fliess>
+      ) : null}
+      <View style={{ width: n * k, borderLeftWidth: 0.5, borderTopWidth: 0.5, borderColor: KARO_LINIE }}>
+        {r.zeilen.map((z, i) => zeile('z' + i, z, i === r.zeilen.length - 1 ? (r.op === '-' ? MINUS : '+') : ''))}
+        <View style={{ height: 1.3, backgroundColor: NEUTRAL.text }} />
+        {zeile('e', r.ergebnis ?? null, '', c.p.tief, true)}
+      </View>
+    </View>
+  )
+}
+
+function Rechnungen({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'rechnungen' }> }) {
+  const sp = b.spalten ?? Math.min(4, Math.max(1, b.items.length))
+  const k = c.m.layout === 'jugend' ? 16 : 19
+  const reihen: Rechnung[][] = []
+  b.items.forEach((r, i) => {
+    if (i % sp === 0) reihen.push([])
+    reihen[reihen.length - 1].push(r)
+  })
+  return (
+    <View>
+      {reihen.map((reihe, ri) => (
+        <View key={ri} wrap={false} style={{ flexDirection: 'row', marginTop: ri ? 10 : 0 }}>
+          {Array.from({ length: sp }, (_, i) => (
+            <View key={i} style={{ flex: 1 }}>
+              {reihe[i] ? <EineRechnung c={c} r={reihe[i]} auffuellen={b.auffuellen} k={k} /> : null}
+            </View>
+          ))}
+        </View>
+      ))}
+    </View>
+  )
+}
+
+/** Karopapier (5 mm) für eigene Rechnungen */
+function KaestchenFeld({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'kaestchen' }> }) {
+  const n = Math.max(1, b.zeilen)
+  const spalten = Math.floor((c.breite - 1) / KARO)
+  const w = spalten * KARO, h = n * KARO
+  return (
+    <View wrap={false}>
+      {b.label ? (
+        <Fliess c={c} klein fett farbe={NEUTRAL.leise} style={{ marginBottom: 3 }}>
+          {t(c, b.label)}
+        </Fliess>
+      ) : null}
+      <Svg width={w + 1} height={h + 1}>
+        {Array.from({ length: spalten + 1 }, (_, i) => (
+          <Line key={'v' + i} x1={0.5 + i * KARO} y1={0.5} x2={0.5 + i * KARO} y2={h + 0.5} stroke={KARO_LINIE} strokeWidth={0.5} />
+        ))}
+        {Array.from({ length: n + 1 }, (_, i) => (
+          <Line key={'h' + i} x1={0.5} y1={0.5 + i * KARO} x2={w + 0.5} y2={0.5 + i * KARO} stroke={KARO_LINIE} strokeWidth={0.5} />
+        ))}
+      </Svg>
+    </View>
+  )
+}
+
+/** Kassenbon: gezackter Rand oben und unten, Posten mit Preisen, Summe (leer = ausrechnen) */
+function Bon({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'bon' }> }) {
+  const w = Math.min(c.breite, 232)
+  const zacke = 7, hz = 4.5
+  const zacken = (unten: boolean) => {
+    const n = Math.floor(w / zacke)
+    const pkt: string[] = []
+    for (let i = 0; i <= n; i++) pkt.push(`${(i * w) / n},${unten ? (i % 2 ? hz : 0) : i % 2 ? 0 : hz}`)
+    const rand = unten ? `${w},0 0,0` : `${w},${hz} 0,${hz}`
+    return (
+      <Svg width={w} height={hz}>
+        <Polygon points={pkt.join(' ') + ' ' + rand} fill="#FFFFFF" stroke="none" />
+        <Path d={'M' + pkt.join(' L')} stroke={NEUTRAL.rahmen} strokeWidth={0.8} fill="none" />
+        <Line x1={0.4} y1={0} x2={0.4} y2={hz} stroke={NEUTRAL.rahmen} strokeWidth={0.8} />
+        <Line x1={w - 0.4} y1={0} x2={w - 0.4} y2={hz} stroke={NEUTRAL.rahmen} strokeWidth={0.8} />
+      </Svg>
+    )
+  }
+  const strich = <View style={{ borderTopWidth: 0.8, borderTopColor: NEUTRAL.rahmen, borderStyle: 'dashed', marginVertical: 5 }} />
+  const zeile = (links: string, rechts: ReactNode, fett?: boolean) => (
+    <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'flex-end', marginVertical: 1.2 }}>
+      <Fliess c={c} klein={!fett} fett={fett}>
+        {t(c, links)}
+      </Fliess>
+      {typeof rechts === 'string' ? (
+        <Fliess c={c} klein={!fett} fett={fett}>
+          {t(c, rechts)}
+        </Fliess>
+      ) : (
+        rechts
+      )}
+    </View>
+  )
+  return (
+    <View wrap={false} style={{ width: w }}>
+      {zacken(false)}
+      <View style={{ backgroundColor: '#FFFFFF', borderLeftWidth: 0.8, borderRightWidth: 0.8, borderColor: NEUTRAL.rahmen, paddingHorizontal: 13, paddingVertical: 6 }}>
+        {b.titel ? (
+          <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: c.m.klein, letterSpacing: 1.2, textAlign: 'center', color: NEUTRAL.text }}>{t(c, b.titel).toUpperCase()}</Text>
+        ) : null}
+        {b.titel ? strich : null}
+        {b.posten.map((x, i) => (
+          <View key={i}>{zeile(x.text, x.preis)}</View>
+        ))}
+        {strich}
+        {zeile(
+          tx(c).summe.toUpperCase(),
+          b.summe ? (
+            t(c, b.summe)
+          ) : (
+            <View style={{ width: 66, height: c.m.basis * 1.5, borderBottomWidth: 1, borderBottomColor: NEUTRAL.linie }} />
+          ),
+          true,
+        )}
+        {b.fuss ? (
+          <Fliess c={c} klein zentriert farbe={NEUTRAL.leise} style={{ marginTop: 5 }}>
+            {t(c, b.fuss)}
+          </Fliess>
+        ) : null}
+      </View>
+      {zacken(true)}
+    </View>
+  )
+}
+
 function EinBaustein({ c, b }: { c: Ctx; b: Baustein }) {
   switch (b.art) {
     case 'aufgabe':
@@ -2076,6 +2270,12 @@ function EinBaustein({ c, b }: { c: Ctx; b: Baustein }) {
       return <Tageskreis c={c} b={b} />
     case 'farbkalender':
       return <Farbkalender c={c} b={b} />
+    case 'rechnungen':
+      return <Rechnungen c={c} b={b} />
+    case 'kaestchen':
+      return <KaestchenFeld c={c} b={b} />
+    case 'bon':
+      return <Bon c={c} b={b} />
   }
 }
 
@@ -2092,7 +2292,7 @@ function abstandVor(b: Baustein, vorher: Baustein | undefined, c: Ctx): number {
 const FEST = new Set<Baustein['art']>([
   'info', 'geschichte', 'bild', 'frage', 'feld', 'vertrag', 'wortspeicher', 'skala', 'zuordnen', 'ampel', 'thermometer',
   'vulkan', 'eisberg', 'koerper', 'batterie', 'waage', 'leiter', 'zielscheibe', 'hand', 'mindmap', 'plan', 'atmen', 'notfall', 'linien',
-  'gefuehlsrad', 'netz', 'kurve', 'tageskreis', 'farbkalender',
+  'gefuehlsrad', 'netz', 'kurve', 'tageskreis', 'farbkalender', 'rechnungen', 'bon',
 ])
 
 /** Kleine Bausteine, die nicht umbrechen sollen (auch wenn sie es könnten). */
@@ -2100,7 +2300,9 @@ function istFest(b: Baustein): boolean {
   if (FEST.has(b.art)) return true
   switch (b.art) {
     case 'tabelle':
-      return b.zeilen + (b.beispiel ? 1 : 0) <= 8
+      return b.zeilen + (b.beispiel ? 1 : 0) + (b.werte?.length ?? 0) <= 8
+    case 'kaestchen':
+      return b.zeilen <= 14
     case 'satzanfaenge':
       return b.items.length * (b.linien ?? 1) <= 8
     case 'ankreuzen':

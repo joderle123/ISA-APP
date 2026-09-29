@@ -5,7 +5,7 @@
 // ---------------------------------------------------------------------------
 
 import { Document, Page, View, Text, Image } from '@react-pdf/renderer'
-import type { Blatt, BlattInhalt, Sprache } from '../typen'
+import type { Baustein, Blatt, BlattInhalt, Sprache } from '../typen'
 import { bereichById, layoutFuer, stufenText, themaLabel } from '../katalog'
 import { NEUTRAL, palette, type Palette } from '../zeichnung'
 import { eldibDomainById, eldibGoalById } from '../../data/taxonomy'
@@ -285,6 +285,17 @@ function Lehrerseite({ blatt, inhalt, sprache, p, nr }: { blatt: Blatt; inhalt: 
               <LText>{ty(L.achtung)}</LText>
             </View>
           ) : null}
+          {L.loesungen?.length ? (
+            <View wrap={false} style={{ borderWidth: 0.8, borderColor: p.mittel, borderRadius: 10, padding: 10, marginBottom: 11 }}>
+              <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 9.4, color: p.tief, marginBottom: 3 }}>{tx.loesungen}</Text>
+              {mitStufen(inhalt.bausteine) ? <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 7.4, lineHeight: 1.35, color: NEUTRAL.leise, marginBottom: 5 }}>{tx.stufen}</Text> : null}
+              {L.loesungen.map((x, i) => (
+                <Text key={i} style={{ fontFamily: SCHRIFT.jugend, fontSize: 8.2, lineHeight: 1.4, color: NEUTRAL.text, marginBottom: 2 }}>
+                  {ty(x)}
+                </Text>
+              ))}
+            </View>
+          ) : null}
         </View>
       </View>
       <View wrap={false} style={{ borderTopWidth: 0.6, borderTopColor: NEUTRAL.haarlinie, paddingTop: 10, marginBottom: 10 }}>
@@ -317,6 +328,11 @@ function Lehrerseite({ blatt, inhalt, sprache, p, nr }: { blatt: Blatt; inhalt: 
       <Fusszeile blatt={blatt} nr={nr} sprache={sprache} />
     </Page>
   )
+}
+
+/** Haben Aufgaben eine Stufe (Mathe: Punkte an der Nummer)? Dann erklärt die Lehrerseite sie. */
+function mitStufen(liste: Baustein[]): boolean {
+  return liste.some((b) => (b.art === 'aufgabe' && !!b.stufe) || (b.art === 'spalten' && (mitStufen(b.links) || mitStufen(b.rechts))))
 }
 
 export function BlattSeiten({ blatt, opt }: { blatt: Blatt; opt?: BlattOptionen }) {

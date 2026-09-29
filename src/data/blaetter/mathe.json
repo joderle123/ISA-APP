@@ -1,0 +1,545 @@
+[
+  {
+    "id": "mathe-m2-komma-unter-komma",
+    "bereich": "mathe",
+    "thema": "dezimalzahlen",
+    "stufen": [
+      "ES"
+    ],
+    "sozialform": [
+      "einzeln",
+      "klasse"
+    ],
+    "dauer": "45–60 Min.",
+    "eldib": [],
+    "schlagworte": [
+      "Dezimalzahlen",
+      "Addieren",
+      "Subtrahieren",
+      "Komma unter Komma",
+      "Geld",
+      "Modul 2"
+    ],
+    "bild": "icon:calculator",
+    "de": {
+      "titel": "Komma unter Komma",
+      "untertitel": "Dezimalzahlen addieren und subtrahieren – Modul 2, Lektion 3",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Preise, Handydaten, Sportzeiten: Fast alles, was du im Alltag bezahlst oder misst, hat ein Komma. Plus und minus rechnest du damit genauso wie mit ganzen Zahlen – mit einer einzigen Regel."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "2:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Die Regel",
+              "punkte": [
+                "Komma unter Komma: Schreib die Zahlen so untereinander, dass alle Kommas in einer Spalte stehen.",
+                "Gleich lang machen: Fehlende Stellen hinten mit 0 auffüllen – 3,5 ist dasselbe wie 3,50.",
+                "Rechnen wie immer, von rechts nach links. Das Komma im Ergebnis steht genau darunter."
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "rechnungen",
+              "auffuellen": true,
+              "spalten": 1,
+              "items": [
+                {
+                  "label": "So sieht es aus: 20 – 7,35",
+                  "zeilen": [
+                    "20",
+                    "7,35"
+                  ],
+                  "op": "-",
+                  "ergebnis": "12,65"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Rechne. Die Zahlen stehen schon Komma unter Komma."
+        },
+        {
+          "art": "rechnungen",
+          "spalten": 4,
+          "items": [
+            {
+              "label": "a)",
+              "zeilen": [
+                "4,5",
+                "2,3"
+              ],
+              "op": "+"
+            },
+            {
+              "label": "b)",
+              "zeilen": [
+                "7,25",
+                "1,5"
+              ],
+              "op": "+"
+            },
+            {
+              "label": "c)",
+              "zeilen": [
+                "9,8",
+                "3,6"
+              ],
+              "op": "-"
+            },
+            {
+              "label": "d)",
+              "zeilen": [
+                "6,4",
+                "2,85"
+              ],
+              "op": "-"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Schreib die Zahlen selbst Komma unter Komma in die Kästchen und rechne.",
+          "hinweis": "a) 5,4 + 12,75     b) 30 – 8,6     c) 0,85 + 2,4 + 1,1     d) 15,2 – 9,75"
+        },
+        {
+          "art": "kaestchen",
+          "zeilen": 7
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Nach dem Training kaufst du am Kiosk ein. Wie viel kostet alles zusammen? Du zahlst mit 10 €. Wie viel bekommst du zurück?"
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "bon",
+              "titel": "Kiosk Sporthalle",
+              "posten": [
+                {
+                  "text": "Wasser 0,5 l",
+                  "preis": "0,89 €"
+                },
+                {
+                  "text": "Proteinriegel",
+                  "preis": "1,99 €"
+                },
+                {
+                  "text": "Apfel",
+                  "preis": "0,55 €"
+                },
+                {
+                  "text": "Sandwich",
+                  "preis": "3,50 €"
+                }
+              ],
+              "fuss": "Danke und bis bald"
+            }
+          ],
+          "rechts": [
+            {
+              "art": "kaestchen",
+              "zeilen": 6,
+              "label": "Rechnung"
+            },
+            {
+              "art": "linien",
+              "anzahl": 1,
+              "label": "Rückgeld:"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Dein Handy-Abo hat 15 GB im Monat. Verbraucht: Streaming 6,75 GB, Social Media 4,3 GB, Rest 1,85 GB. Wie viel bleibt dir noch?"
+        },
+        {
+          "art": "kaestchen",
+          "zeilen": 5
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Stimmt das? Kreuze an und korrigiere, was falsch ist."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Rechnung",
+            "stimmt",
+            "stimmt nicht",
+            "richtig wäre"
+          ],
+          "breiten": [
+            3,
+            1.2,
+            1.5,
+            2.3
+          ],
+          "zeilen": 0,
+          "werte": [
+            [
+              "4,5 + 2,35 = 6,85",
+              "",
+              "",
+              ""
+            ],
+            [
+              "7 – 2,4 = 5,4",
+              "",
+              "",
+              ""
+            ],
+            [
+              "1,25 + 0,8 = 1,33",
+              "",
+              "",
+              ""
+            ],
+            [
+              "10,5 – 0,75 = 9,75",
+              "",
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 3,
+          "text": "Sport: Lena läuft 100 m in 13,48 s, Tiago in 12,9 s, Mila in 14,05 s. Wie viel schneller ist Tiago als Lena?",
+          "hinweis": "Und: Wie weit liegen die schnellste und die langsamste Zeit auseinander?"
+        },
+        {
+          "art": "kaestchen",
+          "zeilen": 6
+        },
+        {
+          "art": "text",
+          "text": "Kurz-Check: Wie sicher bist du?",
+          "klein": true
+        },
+        {
+          "art": "einschaetzung",
+          "items": [
+            "Ich schreibe Zahlen Komma unter Komma.",
+            "Ich fülle fehlende Stellen mit 0 auf.",
+            "Ich schätze, bevor ich rechne."
+          ],
+          "optionen": [
+            "sicher",
+            "geht so",
+            "noch nicht"
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen addieren und subtrahieren Dezimalzahlen schriftlich: Komma unter Komma, fehlende Stellen mit 0 auffüllen, Übertrag und Borgen richtig setzen – auch in Aufgaben mit Geld, Daten und Zeiten.",
+        "ablauf": [
+          "Einstieg (5 Min.): Einen echten Kassenbon zeigen oder anschreiben. „Stimmt die Summe?“ Erst schätzen lassen, dann nachrechnen.",
+          "Regel (10 Min.): 12,5 + 3,75 einmal rechtsbündig (falsch) und einmal Komma unter Komma (richtig) anschreiben. „Warum kommt links Unsinn heraus?“ Den Kasten „Die Regel“ gemeinsam lesen.",
+          "Gemeinsam an der Tafel (5 Min.): 1,20 € + 3,50 €, 5 – 2,4 und 20 – 7,35 (20 = 20,00).",
+          "Einzelarbeit (20–25 Min.): Aufgaben 1 bis 5, Aufgabe 6 für alle, die fertig sind. Die Punkte an der Nummer zeigen die Stufe.",
+          "Abschluss (5 Min.): Exit-Ticket an der Tafel: 2,3 + 1,45 und 8 – 2,6. Danach den Kurz-Check ausfüllen lassen."
+        ],
+        "hintergrund": "Die meisten Fehler entstehen, wenn Dezimalzahlen rechtsbündig untereinander geschrieben werden oder die Stellen nach dem Komma wie eigene ganze Zahlen behandelt werden („0,8 + 0,5 = 0,13“). Wer Dezimalzahlen als Geldbeträge liest (0,8 € sind 80 Cent), sieht den Fehler sofort. Das Auffüllen mit Nullen macht beide Zahlen gleich lang; danach ist das Verfahren genau das der ganzen Zahlen. Ein Überschlag vor dem Rechnen („ungefähr 13 + 4“) deckt Kommafehler auf und gibt schwächeren Schülerinnen und Schülern Sicherheit.",
+        "differenzierung": {
+          "leichter": "Aufgaben 1 und 3 zuerst. Karopapier mit farbig markierter Komma-Spalte. Beträge in Cent denken (0,85 € sind 85 Cent).",
+          "schwerer": "Aufgabe 6 und eine eigene Einkaufsliste mit Budget (z. B. 25 €) schreiben, die jemand anderes nachrechnet."
+        },
+        "impulse": [
+          "Woran merkst du, dass ein Ergebnis nicht stimmen kann?",
+          "Warum ändert eine 0 hinten den Wert nicht, eine 0 direkt nach dem Komma aber schon (0,5 und 0,05)?"
+        ],
+        "tipps": [
+          "Angehängte Nullen in einer anderen Farbe schreiben lassen.",
+          "Taschenrechner nur zur Kontrolle nach dem schriftlichen Rechnen."
+        ],
+        "material": "Karopapier, eventuell echte Kassenbons",
+        "loesungen": [
+          "1) 6,8 · 8,75 · 6,2 · 3,55",
+          "2) 18,15 · 21,4 · 4,35 · 5,45",
+          "3) 6,93 € · Rückgeld 3,07 €",
+          "4) 12,9 GB verbraucht, 2,1 GB bleiben",
+          "5) stimmt · falsch (4,6) · falsch (2,05) · stimmt",
+          "6) 0,58 s · Abstand: 1,15 s",
+          "Exit-Ticket: 3,75 · 5,4"
+        ]
+      }
+    },
+    "fr": {
+      "titel": "Virgule sous virgule",
+      "untertitel": "Additionner et soustraire des nombres décimaux – module 2, leçon 3",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Prix, données mobiles, temps en sport : presque tout ce que tu paies ou mesures au quotidien a une virgule. Tu additionnes et tu soustrais comme avec les nombres entiers – avec une seule règle."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "2:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "La règle",
+              "punkte": [
+                "Virgule sous virgule : écris les nombres les uns sous les autres, toutes les virgules dans la même colonne.",
+                "Même longueur : complète à droite par des 0 – 3,5 est égal à 3,50.",
+                "Calcule comme d’habitude, de droite à gauche. La virgule du résultat se place juste en dessous."
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "rechnungen",
+              "auffuellen": true,
+              "spalten": 1,
+              "items": [
+                {
+                  "label": "Exemple : 20 – 7,35",
+                  "zeilen": [
+                    "20",
+                    "7,35"
+                  ],
+                  "op": "-",
+                  "ergebnis": "12,65"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Calcule. Les nombres sont déjà placés virgule sous virgule."
+        },
+        {
+          "art": "rechnungen",
+          "spalten": 4,
+          "items": [
+            {
+              "label": "a)",
+              "zeilen": [
+                "4,5",
+                "2,3"
+              ],
+              "op": "+"
+            },
+            {
+              "label": "b)",
+              "zeilen": [
+                "7,25",
+                "1,5"
+              ],
+              "op": "+"
+            },
+            {
+              "label": "c)",
+              "zeilen": [
+                "9,8",
+                "3,6"
+              ],
+              "op": "-"
+            },
+            {
+              "label": "d)",
+              "zeilen": [
+                "6,4",
+                "2,85"
+              ],
+              "op": "-"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Place toi-même les nombres virgule sous virgule dans les cases et calcule.",
+          "hinweis": "a) 5,4 + 12,75     b) 30 – 8,6     c) 0,85 + 2,4 + 1,1     d) 15,2 – 9,75"
+        },
+        {
+          "art": "kaestchen",
+          "zeilen": 7
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Après l’entraînement, tu fais des achats au kiosque. Combien coûte le tout ? Tu paies avec 10 €. Combien te rend-on ?"
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "bon",
+              "titel": "Kiosque salle de sport",
+              "posten": [
+                {
+                  "text": "Eau 0,5 l",
+                  "preis": "0,89 €"
+                },
+                {
+                  "text": "Barre protéinée",
+                  "preis": "1,99 €"
+                },
+                {
+                  "text": "Pomme",
+                  "preis": "0,55 €"
+                },
+                {
+                  "text": "Sandwich",
+                  "preis": "3,50 €"
+                }
+              ],
+              "fuss": "Merci et à bientôt"
+            }
+          ],
+          "rechts": [
+            {
+              "art": "kaestchen",
+              "zeilen": 6,
+              "label": "Calcul"
+            },
+            {
+              "art": "linien",
+              "anzahl": 1,
+              "label": "Monnaie rendue :"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Ton forfait mobile a 15 Go par mois. Déjà utilisés : streaming 6,75 Go, réseaux sociaux 4,3 Go, reste 1,85 Go. Combien t’en reste-t-il ?"
+        },
+        {
+          "art": "kaestchen",
+          "zeilen": 5
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Vrai ou faux ? Coche et corrige ce qui est faux."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Calcul",
+            "vrai",
+            "faux",
+            "correct serait"
+          ],
+          "breiten": [
+            3,
+            1.2,
+            1.5,
+            2.3
+          ],
+          "zeilen": 0,
+          "werte": [
+            [
+              "4,5 + 2,35 = 6,85",
+              "",
+              "",
+              ""
+            ],
+            [
+              "7 – 2,4 = 5,4",
+              "",
+              "",
+              ""
+            ],
+            [
+              "1,25 + 0,8 = 1,33",
+              "",
+              "",
+              ""
+            ],
+            [
+              "10,5 – 0,75 = 9,75",
+              "",
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 3,
+          "text": "Sport : Lena court le 100 m en 13,48 s, Tiago en 12,9 s, Mila en 14,05 s. De combien Tiago est-il plus rapide que Lena ?",
+          "hinweis": "Et : quel est l’écart entre le temps le plus rapide et le plus lent ?"
+        },
+        {
+          "art": "kaestchen",
+          "zeilen": 6
+        },
+        {
+          "art": "text",
+          "text": "Petit bilan : à quel point es-tu sûr·e de toi ?",
+          "klein": true
+        },
+        {
+          "art": "einschaetzung",
+          "items": [
+            "J’écris les nombres virgule sous virgule.",
+            "Je complète les chiffres manquants par des 0.",
+            "J’estime avant de calculer."
+          ],
+          "optionen": [
+            "sûr·e",
+            "à peu près",
+            "pas encore"
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes additionnent et soustraient des nombres décimaux en colonnes : virgule sous virgule, compléter par des 0, placer correctement les retenues – aussi dans des problèmes avec de l’argent, des données et des temps.",
+        "ablauf": [
+          "Entrée en matière (5 min) : montrer ou écrire un vrai ticket de caisse. « Le total est-il juste ? » D’abord estimer, puis vérifier par le calcul.",
+          "Règle (10 min) : écrire 12,5 + 3,75 une fois aligné à droite (faux) et une fois virgule sous virgule (juste). « Pourquoi le calcul de gauche donne-t-il n’importe quoi ? » Lire ensemble l’encadré « La règle ».",
+          "Ensemble au tableau (5 min) : 1,20 € + 3,50 €, 5 – 2,4 et 20 – 7,35 (20 = 20,00).",
+          "Travail individuel (20–25 min) : exercices 1 à 5, l’exercice 6 pour ceux qui ont fini. Les points à côté du numéro indiquent le niveau.",
+          "Clôture (5 min) : ticket de sortie au tableau : 2,3 + 1,45 et 8 – 2,6. Ensuite, faire remplir le petit bilan."
+        ],
+        "hintergrund": "La plupart des erreurs viennent de nombres décimaux alignés à droite ou de chiffres après la virgule traités comme des nombres entiers (« 0,8 + 0,5 = 0,13 »). Lire les nombres décimaux comme des montants (0,8 € font 80 centimes) rend l’erreur visible tout de suite. Compléter par des zéros donne la même longueur aux deux nombres ; ensuite, la technique est exactement celle des nombres entiers. Une estimation avant le calcul (« environ 13 + 4 ») révèle les erreurs de virgule et rassure les élèves plus fragiles.",
+        "differenzierung": {
+          "leichter": "Commencer par les exercices 1 et 3. Papier quadrillé avec la colonne de la virgule en couleur. Penser en centimes (0,85 € font 85 centimes).",
+          "schwerer": "Exercice 6 et écrire sa propre liste d’achats avec un budget (p. ex. 25 €) que quelqu’un d’autre vérifie."
+        },
+        "impulse": [
+          "À quoi vois-tu qu’un résultat ne peut pas être juste ?",
+          "Pourquoi un 0 à la fin ne change-t-il pas la valeur, alors qu’un 0 juste après la virgule la change (0,5 et 0,05) ?"
+        ],
+        "tipps": [
+          "Faire écrire les zéros ajoutés d’une autre couleur.",
+          "La calculatrice sert seulement à vérifier après le calcul écrit."
+        ],
+        "material": "Papier quadrillé, éventuellement de vrais tickets de caisse",
+        "loesungen": [
+          "1) 6,8 · 8,75 · 6,2 · 3,55",
+          "2) 18,15 · 21,4 · 4,35 · 5,45",
+          "3) 6,93 € · monnaie rendue 3,07 €",
+          "4) 12,9 Go utilisés, il reste 2,1 Go",
+          "5) vrai · faux (4,6) · faux (2,05) · vrai",
+          "6) 0,58 s · écart : 1,15 s",
+          "Ticket de sortie : 3,75 · 5,4"
+        ]
+      }
+    }
+  }
+]

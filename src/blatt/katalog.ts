@@ -98,6 +98,15 @@ export const BEREICHE: BereichDef[] = [
     farben: { tief: '#3E6A85', mittel: '#BDD0DC', zart: '#EDF3F7' },
     beschreibung: 'Innehalten und sich selbst besser kennen: Bedürfnisse, Lebensbereiche, Werte, Tagesrhythmus, Stimmungen und der eigene Weg – mit Gläsern, Netzen, Kurven und Kreisen zum Ausmalen und Einzeichnen.',
   },
+  {
+    id: 'mathe',
+    kuerzel: 'MA',
+    de: 'Mathe',
+    fr: 'Mathématiques',
+    icon: 'math',
+    farben: { tief: '#3F46A8', mittel: '#C5C8EE', zart: '#EEEFFB' },
+    beschreibung: 'Mathe für die Voie préparatoire (5e PF), Modul für Modul: Dezimalzahlen, Brüche, Größen und Geometrie mit Aufgaben aus dem Alltag Jugendlicher – Regel, Beispiel, Übungen in drei Stufen und Lösungen für die Lehrperson.',
+  },
 ]
 
 export const bereichById = new Map(BEREICHE.map((b) => [b.id, b]))
@@ -186,6 +195,11 @@ export const THEMEN: ThemaDef[] = [
   T('selbstreflexion', 'rhythmus', 'Zeit & Tagesrhythmus', 'Temps et rythme de la journée'),
   T('selbstreflexion', 'einfluss', 'Einfluss & Gelassenheit', 'Influence et sérénité'),
   T('selbstreflexion', 'rueckblick', 'Rückblick & Verlauf', 'Bilan et évolution'),
+
+  T('mathe', 'dezimalzahlen', 'Dezimalzahlen', 'Nombres décimaux'),
+  T('mathe', 'brueche', 'Brüche', 'Fractions'),
+  T('mathe', 'groessen', 'Größen & Einheiten', 'Grandeurs et mesures'),
+  T('mathe', 'geometrie', 'Geometrie', 'Géométrie'),
 ]
 
 export const themaById = new Map(THEMEN.map((t) => [t.bereich + '/' + t.id, t]))
