@@ -9,7 +9,7 @@ import { fileURLToPath } from 'node:url'
 import { execFileSync } from 'node:child_process'
 import { ModulheftDokument, heftSeiten } from '../src/blatt/pdf/Modulheft'
 import { registriereSchriften } from '../src/blatt/pdf/stil'
-import { MODULE } from '../src/blatt/module'
+import { MODULE, modulheftDateiname } from '../src/blatt/module'
 import type { Blatt, Sprache } from '../src/blatt/typen'
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..')
@@ -22,12 +22,11 @@ const ordner = join(ROOT, 'src/data/blaetter')
 const blaetter = new Map<string, Blatt>()
 for (const d of readdirSync(ordner)) if (d.endsWith('.json')) for (const b of JSON.parse(readFileSync(join(ordner, d), 'utf8')) as Blatt[]) blaetter.set(b.id, b)
 
-const NAMEN: Record<Sprache, [string, string]> = { de: ['Heft', 'Loesungen'], fr: ['Cahier', 'Solutions'] }
 const sprachen: Sprache[] = args.includes('--fr') ? ['de', 'fr'] : ['de']
 for (const modul of MODULE) {
   for (const sprache of sprachen) {
     for (const loesungen of [false, true]) {
-      const datei = join(ziel, `${modul.fach[sprache].replace(/é/g, 'e')}_Modul-${modul.nr}_${NAMEN[sprache][loesungen ? 1 : 0]}${sprache === 'fr' ? '_FR' : ''}.pdf`)
+      const datei = join(ziel, modulheftDateiname(modul, sprache, loesungen))
       await renderToFile(<ModulheftDokument modul={modul} blaetter={blaetter} sprache={sprache} loesungen={loesungen} />, datei)
       // Der Inhalt rechnet mit festen Seitenzahlen: eine Lektion mit mehr oder weniger Seiten verschiebt alles danach.
       const seiten = readFileSync(datei, 'latin1').match(/\/Type\s*\/Page(?!s)/g)?.length ?? 0

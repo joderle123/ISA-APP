@@ -3,6 +3,8 @@ import { MaterialDocument, WorksheetDocument } from '../pdf/MaterialPdf'
 import type { Material } from '../types/material'
 import { slug } from './slug'
 import { BlattDokument, MappeDokument, type BlattOptionen } from '../blatt/pdf/BlattDokument'
+import { ModulheftDokument } from '../blatt/pdf/Modulheft'
+import { modulheftDateiname, type Modul } from '../blatt/module'
 import { registriereSchriften } from '../blatt/pdf/stil'
 import type { Blatt, Sprache } from '../blatt/typen'
 import kinderRegular from '../assets/fonts/pdf/Kinderschrift-Regular.ttf?url'
@@ -87,5 +89,14 @@ export async function downloadMappe(blaetter: { blatt: Blatt; nr?: string; sprac
   const teil = opt.schueler === false ? '_Lehrerseiten' : opt.lehrer === false ? '' : '_mit-Lehrerseiten'
   const name = `Mappe_${slug(titel) || 'Arbeitsblaetter'}${sp}${teil}.pdf`
   saveBlob(await pdf(<MappeDokument blaetter={blaetter} titel={titel} opt={opt} />).toBlob(), name)
+  return name
+}
+
+/** Ein ganzes Modul als Heft (Deckblatt, Inhalt, Lektionen, Wortschatz, Lernstand) oder als Lösungsheft.
+ *  Die Blätter kommen vom Aufrufer – so landen die Daten nicht ein zweites Mal im PDF-Teil. */
+export async function downloadModulheft(modul: Modul, blaetter: Map<string, Blatt>, sprache: Sprache, loesungen: boolean): Promise<string> {
+  schriften()
+  const name = modulheftDateiname(modul, sprache, loesungen)
+  saveBlob(await pdf(<ModulheftDokument modul={modul} blaetter={blaetter} sprache={sprache} loesungen={loesungen} />).toBlob(), name)
   return name
 }

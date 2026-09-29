@@ -4,7 +4,7 @@
 // Deutsch – Französisch für Deckblatt, Inhalt und Anhang des Modulhefts.
 // ---------------------------------------------------------------------------
 
-import type { Sprache } from './typen'
+import type { Bereich, Sprache } from './typen'
 
 type Zweisprachig = Record<Sprache, string>
 
@@ -19,6 +19,8 @@ export interface ModulThema {
 export interface Modul {
   id: string
   nr: number
+  /** Bereich der Toolbox, in dem das Heft zum Herunterladen steht */
+  bereich: Bereich
   fach: Zweisprachig
   klasse: string
   titel: Zweisprachig
@@ -33,6 +35,7 @@ export interface Modul {
 export const MATHE_MODUL_2: Modul = {
   id: 'mathe-m2',
   nr: 2,
+  bereich: 'mathe',
   fach: { de: 'Mathe', fr: 'Mathématiques' },
   klasse: '5e',
   titel: { de: 'Dezimalzahlen, Brüche, Größen und Geometrie', fr: 'Nombres décimaux, fractions, grandeurs et géométrie' },
@@ -106,3 +109,15 @@ export const MATHE_MODUL_2: Modul = {
 }
 
 export const MODULE: Modul[] = [MATHE_MODUL_2]
+
+/** Anzahl der Lektionen (Blätter) eines Moduls */
+export function lektionenZahl(modul: Modul): number {
+  return modul.themen.reduce((n, t) => n + t.lektionen.length, 0)
+}
+
+/** Dateiname des Hefts, z. B. Mathe_Modul-2_Heft.pdf oder Mathematiques_Modul-2_Solutions_FR.pdf */
+export function modulheftDateiname(modul: Modul, sprache: Sprache, loesungen: boolean): string {
+  const teil = sprache === 'fr' ? (loesungen ? 'Solutions' : 'Cahier') : loesungen ? 'Loesungen' : 'Heft'
+  const fach = modul.fach[sprache].normalize('NFD').replace(/[̀-ͯ]/g, '')
+  return `${fach}_Modul-${modul.nr}_${teil}${sprache === 'fr' ? '_FR' : ''}.pdf`
+}

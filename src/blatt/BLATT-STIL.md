@@ -27,6 +27,7 @@ Musterblätter zum Anschauen: `gefuehle.json` (Mein Wutvulkan, Ballon-Atmen) und
    Lösungsheft mit den Seiten „Für die Lehrperson“): `npm run blaetter:modulheft -- [ordner] --fr --png`. Welche
    Blätter in welcher Reihenfolge ins Heft kommen, dazu „Mein Ziel“ je Lektion und der Wortschatz, steht in
    `src/blatt/module.ts`. Im Heft muss jede Lektion genau 2 Seiten haben, sonst stimmen die Seitenzahlen im Inhalt nicht.
+   In der Toolbox steht das Heft oben im Bereich des Moduls (Knöpfe „Heft (PDF)“ und „Lösungsheft“, Sprache wie gemerkt).
 
 Umfang: Schülerteil **1 Seite** (Spielschule, C2) bzw. **höchstens 2 Seiten** (C3–ES).
 Die Seite „Für die Lehrperson“ muss auf **eine** Seite passen. Seitenzahlen zählen je Blatt („Seite 1 / 2“), auch in

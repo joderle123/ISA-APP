@@ -5,6 +5,7 @@ import { useCallback, useDeferredValue, useEffect, useMemo, useRef, useState } f
 import { alleBlaetter, blattById } from '../data/blaetter'
 import type { Baustein, Bereich, NummeriertesBlatt, Sprache, Stufe } from '../blatt/typen'
 import { BEREICHE, bereichById, STUFEN_REIHE, stufenText, THEMEN, themaLabel } from '../blatt/katalog'
+import { MODULE, lektionenZahl, type Modul } from '../blatt/module'
 import { bildZeichnung, iconZeichnung, palette } from '../blatt/zeichnung'
 import { ZeichnungSvg } from '../blatt/ZeichnungSvg'
 import { eldibGoalById } from '../data/taxonomy'
@@ -342,6 +343,37 @@ export function BlattDetail({ b, bew, onSchliessen, onOeffnen, gewaehlt, onWaehl
   )
 }
 
+/** Ein ganzes Modul als Heft herunterladen (z. B. Mathe Modul 2): das Heft und das Lösungsheft als PDF, sonst nichts. */
+function ModulheftLeiste({ modul, sprache, laedt, onLaden }: { modul: Modul; sprache: Sprache; laedt: string | null; onLaden: (loesungen: boolean) => void }) {
+  const bereich = bereichById.get(modul.bereich)!
+  const fr = sprache === 'fr' ? ' · FR' : ''
+  const heft = 'heft:' + modul.id
+  const beschaeftigt = laedt === heft || laedt === heft + ':loesungen'
+  return (
+    <section className="bl-heft" style={{ ['--bc' as string]: bereich.farben.tief }} aria-label={`${modul.fach.de} Modul ${modul.nr} als Heft`}>
+      <span className="bl-bereich-ic" style={{ background: bereich.farben.zart }}>
+        <ZeichnungSvg z={{ ...iconZeichnung(bereich.icon), w: 1.6 }} p={{ ...palette(bereich.farben), tinte: bereich.farben.tief }} />
+      </span>
+      <div className="bl-heft-text">
+        <b>
+          {modul.fach.de} Modul {modul.nr} als Heft
+        </b>
+        <span>Alle {lektionenZahl(modul)} Lektionen in einem PDF – mit Deckblatt, Inhalt, Wortschatz und Lernstand.</span>
+      </div>
+      <div className="bl-heft-knoepfe">
+        <button type="button" className="btn btn-sm btn-primary" disabled={beschaeftigt} onClick={() => onLaden(false)}>
+          {laedt === heft ? <span className="spin" /> : <Icon name="download" />}
+          Heft (PDF){fr}
+        </button>
+        <button type="button" className="btn btn-sm" disabled={beschaeftigt} onClick={() => onLaden(true)}>
+          {laedt === heft + ':loesungen' ? <span className="spin" /> : <Icon name="book" />}
+          Lösungsheft{fr}
+        </button>
+      </div>
+    </section>
+  )
+}
+
 export function Blaetter({
   aktiv,
   bew,
@@ -426,6 +458,20 @@ export function Blaetter({
       toast(`Mappe erstellt: ${await m.downloadMappe(liste, 'Arbeitsblätter', { lehrer })}`, 'ok')
     } catch (e) {
       toast(e instanceof Error ? e.message : 'Mappe konnte nicht erstellt werden.', 'error')
+    } finally {
+      setLaedt(null)
+    }
+  }
+  // Heft in der gemerkten Sprache, wenn alle Lektionen auch auf Französisch da sind
+  const heftSprache = (modul: Modul): Sprache => (modul.themen.every((t) => t.lektionen.every((id) => blattById.get(id)?.fr)) ? gewaehlteSprache : 'de')
+  async function heftLaden(modul: Modul, loesungen: boolean) {
+    setLaedt(`heft:${modul.id}${loesungen ? ':loesungen' : ''}`)
+    try {
+      const m = await loadPdfModule()
+      const name = await m.downloadModulheft(modul, blattById, heftSprache(modul), loesungen)
+      toast(`${loesungen ? 'Lösungsheft' : 'Heft'} erstellt: ${name}`, 'ok')
+    } catch (e) {
+      toast(e instanceof Error ? e.message : 'Das Heft konnte nicht erstellt werden.', 'error')
     } finally {
       setLaedt(null)
     }
@@ -575,6 +621,9 @@ export function Blaetter({
             </div>
           </aside>
           <main id="blaetter" className="min-w-0">
+            {MODULE.filter((m) => m.bereich === filter.bereich).map((m) => (
+              <ModulheftLeiste key={m.id} modul={m} sprache={heftSprache(m)} laedt={laedt} onLaden={(loesungen) => heftLaden(m, loesungen)} />
+            ))}
             {treffer.length === 0 ? (
               <div className="panel px-6 py-12 text-center">
                 <h2 className="disp text-[20px] text-ink">Kein passendes Arbeitsblatt</h2>
