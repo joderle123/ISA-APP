@@ -41,28 +41,27 @@
         "titel": "Der Wut-Eisberg",
         "kurz": "Was andere von der Wut sehen, ist oft nur die Spitze: An erfundenen Fällen schaut die Klasse darunter, sammelt Auslöser und findet in Zeitlupe die ersten Warnzeichen im Körper.",
         "ziele": [
-          "unterscheiden an erfundenen Fällen, was andere von der Wut sehen und was darunter liegen kann: Kränkung, Angst, Scham, Ungerechtigkeit oder ein leerer Tank",
+          "unterscheiden an erfundenen Fällen, was andere von der Wut sehen und was darunter liegen kann",
           "benennen ihre häufigsten Auslöser und das, was ihre Zündschnur verkürzt",
-          "beschreiben in Zeitlupen-Szenen frühe, mittlere und späte Warnzeichen im Körper und halten ihr eigenes erstes Zeichen fest",
-          "probieren offene Hände und einen lockeren Kiefer als Gegensignal zum ersten Warnzeichen aus"
+          "beschreiben in Zeitlupen-Szenen frühe, mittlere und späte Warnzeichen und halten ihr erstes Zeichen fest",
+          "probieren offene Hände und einen lockeren Kiefer als Gegensignal aus"
         ],
         "material": [
-          "Gefühlsrad-Plakat und Anspannungsskala (A3), Klebepunkte: einer je Person",
-          "Klebezettel: ein Block je Tischgruppe",
-          "Eisberg-Plakat (A1 oder Flipchart): großer Eisberg, Wasserlinie im oberen Drittel, darunter viel Platz; dicker Stift",
-          "Acht A5-Karten, mit dickem Stift beschriftet: Kränkung, Angst, Scham, Ungerechtigkeit, Enttäuschung, Hilflosigkeit, Ausgeschlossen sein, Leerer Tank; Klebeband oder Magnete",
-          "Kopiervorlage „Wut-Fälle und Beobachtungskarten“: einmal auf festes Papier kopiert und ausgeschnitten",
-          "Schülerheft mit den Blättern „Der Wut-Eisberg“ und „Meine Auslöser und Warnzeichen“",
-          "Buntstifte in Gelb, Orange und Rot: ein Satz je Tischgruppe",
-          "Stempel oder Sticker für den Skills-Pass"
+          "Gefühlsrad-Plakat, 20 Klebepunkte",
+          "Klebezettel: ein Block je Gruppe",
+          "Eisberg-Plakat (A1), dicker Stift",
+          "8 A5-Karten, Klebeband oder Magnete",
+          "Fall- und Beobachtungskarten",
+          "Schülerheft",
+          "Buntstifte: Gelb, Orange, Rot",
+          "Stempel für den Skills-Pass"
         ],
         "vorbereitung": [
-          "Das Eisberg-Plakat zeichnen und neben die Tafel hängen; die acht Karten umgedreht bereitlegen",
-          "Das Tafelbild aus Schritt 3 anschreiben und bis zum Input abdecken; den Wortspeicher an den Rand der Tafel schreiben",
-          "Die Karten der Kopiervorlage ausschneiden; Namen austauschen, falls jemand in der Klasse so heißt",
-          "Beim Régent nachfragen, ob es in der Klasse gerade einen Vorfall gab, der einem der Fälle ähnelt; diesen Fall dann durch Fall 6 ersetzen",
-          "Vorn eine Spielfläche von etwa drei mal zwei Metern freiräumen",
-          "Die Fälle einmal selbst durchgehen: An welchen drei Stellen wird eingefroren, lange bevor es zum Ausbruch käme?"
+          "Eisberg-Plakat zeichnen; die acht Wörter aus Schritt 3 auf A5-Karten schreiben",
+          "Tafelbild aus Schritt 3 und Wortspeicher anschreiben und abdecken",
+          "Karten ausschneiden, Namen prüfen; überlegen, wo eingefroren wird",
+          "Régent fragen, ob ein Fall an einen echten Vorfall erinnert – dann Fall 6",
+          "Vorn eine Spielfläche freiräumen"
         ],
         "ablauf": [
           {
@@ -139,7 +138,7 @@
             "titel": "Der Wut-Eisberg",
             "dauer": 12,
             "phase": "input",
-            "text": "Die Geschichte „Das Heft“ vom Blatt vorlesen, die Klasse liest mit. Zuerst sammeln, was die anderen in der Klasse von Elias gesehen haben, und es oberhalb der Wasserlinie auf das Plakat schreiben (2 Min.). Dann fragen, was Elias gespürt haben könnte, das niemand sieht: Zu jedem passenden Vorschlag die Karte umdrehen und unter die Wasserlinie hängen, am Ende alle acht aufdecken (3 Min.). Die fünf häufigsten mit dem Tafelbild erklären (3 Min.). Den leeren Tank kennen viele aus dem Glas der Bedürfnisse der 7e – wer dabei war, erklärt ihn den Neuen in einem Satz. Zum Schluss Aufgabe 1 allein lösen und mit der Person daneben vergleichen (3 Min.).",
+            "text": "Die Geschichte „Das Heft“ vom Blatt vorlesen, die Klasse liest mit. Zuerst sammeln, was die anderen in der Klasse von Elias gesehen haben, und es oberhalb der Wasserlinie auf das Plakat schreiben (2 Min.). Dann fragen, was Elias gespürt haben könnte, das niemand sieht, und zu jedem passenden Vorschlag die Karte umdrehen und unter die Wasserlinie hängen: Kränkung, Angst, Scham, Ungerechtigkeit, Enttäuschung, Hilflosigkeit, Ausgeschlossen sein, Leerer Tank; am Ende alle aufdecken (3 Min.). Die fünf häufigsten mit dem Tafelbild erklären (3 Min.). Den leeren Tank kennen viele aus dem Glas der Bedürfnisse der 7e – wer dabei war, erklärt ihn den Neuen in einem Satz. Zum Schluss Aufgabe 1 allein lösen und mit der Person daneben vergleichen (3 Min.).",
             "sagen": [
               "Was haben die anderen gesehen? Und was hat Elias gespürt, das keiner gesehen hat?",
               "Wut ist oft wie ein Leibwächter: Sie springt nach vorn, damit niemand merkt, wie sehr etwas getroffen hat.",
@@ -187,9 +186,10 @@
             "titel": "Eisberg-Detektive und mein Eisberg",
             "dauer": 18,
             "phase": "uebung",
-            "text": "Jede Tischgruppe bekommt eine Fallkarte und einige Klebezettel. In der Gruppe (6 Min.): den Fall laut lesen, zwei oder drei Gefühle für unter Wasser auswählen, jedes auf einen Zettel schreiben und einen Satz vorbereiten: Was hätte der Figur in diesem Moment geholfen? Dann stellt jede Gruppe ihren Fall in einem Satz vor, klebt die Karte über die Wasserlinie und die Zettel darunter und nennt ihren Satz; die Klasse darf ergänzen (6 Min.). Zum Schluss arbeitet jede Person allein auf dem Blatt (6 Min.): Aufgabe 2, der eigene Eisberg zu einer Situation, die sie niemandem erzählen muss, dann die Aufgaben 3 und 4. Das Blatt wird weder eingesammelt noch vorgelesen.",
+            "text": "Jede Tischgruppe bekommt eine Fallkarte und einen Klebezettel. In der Gruppe (6 Min.): den Fall laut lesen, auf den Zettel schreiben, was die anderen sehen (drei, vier Wörter), zwei oder drei Gefühle für unter Wasser auswählen und einen Satz vorbereiten: Was hätte der Figur in diesem Moment geholfen? Dann stellt jede Gruppe ihren Fall kurz vor, klebt den Zettel über die Wasserlinie, schreibt ihre Fallnummer neben die gewählten Karten unter Wasser und nennt ihren Satz; die Klasse darf ergänzen (6 Min.). Zum Schluss arbeitet jede Person allein auf dem Blatt (6 Min.): Aufgabe 2, der eigene Eisberg zu einer Situation, die sie niemandem erzählen muss, dann die Aufgaben 3 und 4. Das Blatt wird weder eingesammelt noch vorgelesen.",
             "sagen": [
               "Was könnte bei der Person auf eurer Karte unter Wasser liegen? Ihr dürft zwei oder drei Gefühle nehmen.",
+              "Schaut aufs Plakat: Neben welchen Karten stehen die meisten Nummern?",
               "Für euren eigenen Eisberg: Denkt an eine Situation, in der ihr richtig wütend wart. Ihr schreibt nur für euch."
             ],
             "punkte": [
@@ -200,7 +200,7 @@
               "Fall 5 · Die Bücher: Im Flur fällt ein Stapel Bücher vom Wagen. Der Éducateur sieht nur Ana daneben: „Schon wieder du. Heb das sofort auf.“ Ana war es nicht. Hinter seinem Rücken grinst der, der es war. Ana tritt gegen den Wagen.",
               "Fall 6 (Reserve) · Das neue Handy: Chiara hat zum Geburtstag ein neues Handy bekommen. In der Pause schnappt Ben es sich, hält es hoch und ruft: „Hol’s dir doch.“ Chiara schreit und versucht, es ihm aus der Hand zu reißen."
             ],
-            "tipp": "Die Gruppen finden für denselben Fall oft verschiedene Gefühle – gut so: In einen Eisberg sieht niemand hinein, man kann nur vermuten und nachfragen. Wer über sich nichts schreiben will, füllt den Eisberg für eine Figur aus einer Serie oder einem Film.",
+            "tipp": "Die Klasse ergänzt oft andere Gefühle als die Gruppe – gut so: In einen Eisberg sieht niemand hinein, man kann nur vermuten und nachfragen. Wer über sich nichts schreiben will, füllt den Eisberg für eine Figur aus einer Serie oder einem Film.",
             "wennEsKippt": "Erzählt jemand beim eigenen Eisberg plötzlich laut von einer schweren Situation, etwa von Gewalt zu Hause, freundlich stoppen, danken und ein Gespräch nach der Stunde anbieten; noch am selben Tag den SePAS informieren. Dann ruhig mit der nächsten Gruppe weitermachen. Albert eine Tischgruppe nur herum, sich kurz dazusetzen und mit einer Frage zur Figur starten: Was ging ihr durch den Kopf, kurz bevor es knallte?",
             "blatt": "ff6-wut-eisberg"
           },
@@ -209,7 +209,8 @@
             "dauer": 5,
             "phase": "aktiv",
             "text": "Alle stehen auf. Zu zweit Stein, Papier, Schere spielen; wer verliert, wird Fan der anderen Person, stellt sich hinter sie und feuert sie beim nächsten Spiel mit ihrem Namen an. Die Fanclubs wachsen, bis im Finale zwei Hälften der Klasse ihre beiden Letzten anfeuern (3 Min.). Danach kurz fragen: Wer hat sich beim Ausscheiden eine Sekunde lang geärgert – und woran hat man es gesehen? Liegt die große Pause zwischen den beiden Stunden, entfällt diese Übung.",
-            "tipp": "Die Frage nach dem kurzen Ärger ist die Brücke zur Zeitlupe: Schon bei einem Spiel zeigt der Körper, was los ist – ein Stöhnen, ein Augenrollen, ein Fuß, der aufstampft."
+            "tipp": "Die Frage nach dem kurzen Ärger ist die Brücke zur Zeitlupe: Schon bei einem Spiel zeigt der Körper, was los ist – ein Stöhnen, ein Augenrollen, ein Fuß, der aufstampft.",
+            "wennEsKippt": "Lacht jemand Ausgeschiedene aus oder wird es zu wild, kurz anhalten: Fans feuern ihre Person an, niemand buht die anderen aus. Wer nicht spielen möchte, ist von Anfang an Fan oder zählt die Runden."
           },
           {
             "titel": "Wut in Zeitlupe",
@@ -222,7 +223,7 @@
               "Bei welcher Zahl hätte die Figur auf die Bremse treten müssen, damit es gar nicht so weit kommt?"
             ],
             "punkte": [
-              "Alles in Zeitlupe, keine Berührung.",
+              "Alles in Zeitlupe, keine Berührung, keine echten Personen aus Klasse oder Schule.",
               "Die Figur bleibt stumm; der Auslöser darf seinen Satz von der Karte sagen – langsam.",
               "Die Regie ruft dreimal „Freeze!“: beim ersten kleinen Zeichen, wenn es mehr wird, kurz vor dem Ausbruch.",
               "Der Ausbruch wird nie gespielt – nach dem dritten Freeze ist Schluss.",
@@ -273,7 +274,7 @@
             "titel": "Skill: Offene Hände, lockerer Kiefer",
             "dauer": 10,
             "phase": "skill",
-            "text": "Alle sitzen, beide Füße am Boden, und schätzen still ihre Zahl; die Lehrkraft macht vor und mit. Zehn Sekunden lang die typischen Wutsignale absichtlich anspannen: Fäuste ballen, Zähne zusammenbeißen, Schultern hochziehen. Dann das Gegenteil: die Hände öffnen und mit den Handflächen nach oben auf die Oberschenkel legen, den Kiefer locker lassen, die Schultern sinken lassen und langsam ausatmen; wer mag, lässt die Mundwinkel ganz leicht nach oben gehen. Dreimal wechseln, danach eine Minute nur offene Hände und die Zahl neu schätzen. Zwei, drei Rückmeldungen einholen und erklären: Der Körper meldet dem Kopf zurück, was er tut – offene Hände sagen dem Alarmsystem, dass gerade kein Kampf ansteht. Auf dem Blatt steht der Skill im Kasten „Dein Gegensignal“.",
+            "text": "Alle sitzen, beide Füße am Boden, und schätzen still ihre Zahl; die Lehrkraft macht vor und mit. Zehn Sekunden lang die Wutsignale absichtlich anspannen: Fäuste ballen, Zähne zusammenbeißen, Schultern hochziehen. Dann das Gegenteil: Hände öffnen, Handflächen nach oben auf die Oberschenkel, Kiefer locker, Schultern sinken lassen, langsam ausatmen; wer mag, lässt die Mundwinkel leicht nach oben gehen. Dreimal wechseln, danach eine Minute nur offene Hände und die Zahl neu schätzen. Zwei, drei Rückmeldungen einholen und erklären: Der Körper meldet dem Kopf zurück, was er tut – offene Hände sagen dem Alarmsystem, dass kein Kampf ansteht. Auf dem Blatt steht der Skill im Kasten „Dein Gegensignal“.",
             "sagen": [
               "Macht eine Faust, beißt die Zähne zusammen, zieht die Schultern hoch. Spürt ihr, wie sich das anfühlt?",
               "Und jetzt auf: Hände offen, Kiefer locker, Schultern runter. Was ist anders?",
@@ -301,7 +302,7 @@
           "Nummenmaa, L., Glerean, E., Hari, R. & Hietanen, J. K. (2014). Bodily maps of emotions. Proceedings of the National Academy of Sciences, 111(2), 646–651.",
           "Gross, J. J. (1998). The emerging field of emotion regulation: An integrative review. Review of General Psychology, 2(3), 271–299."
         ],
-        "achtung": "Wut berührt manchmal Gewalt – erlebte und ausgeübte. Eigene Ausbrüche werden nicht vor der Klasse erzählt, die Blätter bleiben privat. In der Zeitlupe: keine Berührung, der Ausbruch wird nie gespielt, niemand spielt eine echte Person aus Klasse oder Schule, Regie führen statt spielen ist immer erlaubt. Zu viel wird es, wenn jemand erstarrt, den Tränen nahe ist, den Raum verlassen will oder aus dem Spiel echte Wut wird: die Übung für diese Person beenden, einen ruhigen Platz in Sichtweite anbieten und nach der Stunde unter vier Augen nachfragen. Deutet jemand an, geschlagen, bedroht oder gedemütigt zu werden oder selbst andere zu verletzen: nicht vor der Klasse vertiefen, nichts versprechen (keine Geheimhaltung), noch am selben Tag den SePAS informieren und nach dem Schutzkonzept der Schule handeln; bei akuter Gefahr 112 rufen und die Person nicht allein lassen. Fällt jemand häufig durch heftige Ausbrüche auf, das mit Régent und SePAS besprechen – nicht in dieser Stunde und nicht vor den anderen.",
+        "achtung": "Wut berührt manchmal Gewalt – erlebte und ausgeübte. Eigene Ausbrüche werden nicht vor der Klasse erzählt, die Blätter bleiben privat. Zu viel wird es, wenn jemand erstarrt, weint, hinauswill oder aus dem Spiel echte Wut wird: die Übung für diese Person beenden, einen ruhigen Platz in Sichtweite anbieten, später unter vier Augen nachfragen. Deutet jemand an, geschlagen, bedroht oder gedemütigt zu werden oder andere zu verletzen: nicht vor der Klasse vertiefen, nichts versprechen, noch am selben Tag den SePAS informieren, nach dem Schutzkonzept der Schule handeln; bei akuter Gefahr 112. Häufige heftige Ausbrüche mit Régent und SePAS besprechen.",
         "differenzierung": {
           "leichter": "Für Jugendliche, die mühsam lesen: Aufgabe 1 auf dem Eisberg-Blatt zu zweit mit einer Person lösen, die gut liest; beim eigenen Eisberg reichen Stichworte oder Wörter aus dem Wortspeicher. Im Umriss genügt das erste Zeichen; das Protokoll darf zu Beginn der nächsten Stunde mündlich nachgetragen werden.",
           "schwerer": "Einen zweiten Eisberg für die Lehrerin aus der Geschichte füllen: Was könnte unter ihrer Reaktion liegen? In der Zeitlupe die Moderation übernehmen und bei jedem Freeze fragen, welcher Gedanke die Zahl gerade hochtreibt."
@@ -312,28 +313,27 @@
         "titel": "L’iceberg de la colère",
         "kurz": "Ce que les autres voient de la colère n’est souvent que la pointe : à partir de cas inventés, la classe regarde dessous, rassemble des déclencheurs et cherche au ralenti les premiers signaux d’alerte du corps.",
         "ziele": [
-          "distinguent, à partir de cas inventés, ce que les autres voient de la colère et ce qui peut se cacher dessous : vexation, peur, honte, injustice ou réservoir vide",
+          "distinguent, dans des cas inventés, ce que les autres voient de la colère et ce qui peut se cacher dessous",
           "nomment leurs déclencheurs les plus fréquents et ce qui raccourcit leur mèche",
-          "décrivent, dans des scènes au ralenti, les signaux d’alerte précoces, moyens et tardifs dans le corps et notent leur tout premier signal",
-          "essaient les mains ouvertes et la mâchoire relâchée comme contre-signal au premier signal d’alerte"
+          "décrivent, dans des scènes au ralenti, des signaux d’alerte précoces, moyens et tardifs et notent leur premier signal",
+          "essaient les mains ouvertes et la mâchoire relâchée comme contre-signal"
         ],
         "material": [
-          "Affiche de la roue des émotions et échelle de tension (A3), gommettes : une par jeune",
+          "Roue des émotions, 20 gommettes",
           "Post-it : un bloc par îlot",
-          "Affiche de l’iceberg (A1 ou tableau de papier) : grand iceberg, ligne de flottaison dans le tiers supérieur, beaucoup de place dessous ; gros feutre",
-          "Huit cartes A5 écrites au gros feutre : vexation, peur, honte, injustice, déception, impuissance, être mis à l’écart, réservoir vide ; ruban adhésif ou aimants",
-          "Modèle à photocopier « Cas de colère et cartes d’observation » : copié une fois sur papier épais et découpé",
-          "Cahier de l’élève avec les fiches « L’iceberg de la colère » et « Mes déclencheurs et signaux d’alerte »",
-          "Crayons de couleur jaune, orange et rouge : un jeu par îlot",
-          "Tampon ou autocollants pour le Skills-Pass"
+          "Affiche de l’iceberg (A1), feutre",
+          "8 cartes A5, adhésif ou aimants",
+          "Cartes situations et d’observation",
+          "Cahier de l’élève",
+          "Crayons jaune, orange, rouge",
+          "Tampon pour le Skills-Pass"
         ],
         "vorbereitung": [
-          "Dessiner l’affiche de l’iceberg et l’accrocher à côté du tableau ; préparer les huit cartes face cachée",
-          "Écrire au tableau la grille de l’étape 3 et la cacher jusqu’à l’apport ; noter les mots-clés au bord du tableau",
-          "Découper les cartes du modèle ; changer un prénom si un jeune de la classe le porte",
-          "Demander au régent s’il y a eu récemment dans la classe un incident qui ressemble à l’un des cas ; remplacer alors ce cas par le cas 6",
-          "Libérer devant un espace de jeu d’environ trois mètres sur deux",
-          "Parcourir soi-même les cas : à quels trois moments figer la scène, bien avant l’explosion ?"
+          "Dessiner l’iceberg, écrire les huit mots de l’étape 3 sur des cartes A5",
+          "Écrire au tableau la grille de l’étape 3 et les mots-clés, les cacher",
+          "Découper les cartes, vérifier les prénoms ; prévoir où figer les scènes",
+          "Demander au régent si un cas rappelle un incident réel – alors prendre le cas 6",
+          "Libérer un espace de jeu devant"
         ],
         "ablauf": [
           {
@@ -393,7 +393,7 @@
               "Moi, c’est l’imprimante qui tombe en panne pile au moment où je n’ai pas le temps."
             ],
             "tipp": "Les petits déclencheurs du quotidien – le wifi qui rame, quelqu’un qui mâche bruyamment, la file à la cantine – rendent le début facile et souvent drôle. Les sujets lourds viennent plus tard sur la fiche, sans public.",
-            "wennEsKippt": "Si un post-it nomme malgré tout une personne (« mon frère », « Monsieur … »), ne pas lire le nom mais reformuler : qu’est-ce que cette personne fait qui t’énerve ? Le nom devient une situation. Ne pas lire ni afficher les post-it insultants ; si la classe se moque d’une personne absente, montrer la charte de classe."
+            "wennEsKippt": "Si un post-it nomme malgré tout une personne (« mon frère », « Monsieur … »), ne pas lire le nom mais reformuler : qu’est-ce que cette personne fait qui t’énerve ? Le nom devient une situation. Les post-it insultants ne sont ni lus ni affichés ; si la classe se moque d’une personne absente, montrer la charte de classe."
           },
           {
             "titel": "Retour sur la séance et ouverture du chapitre",
@@ -410,7 +410,7 @@
             "titel": "L’iceberg de la colère",
             "dauer": 12,
             "phase": "input",
-            "text": "Lire à voix haute l’histoire « Le cahier » de la fiche, la classe suit. D’abord rassembler ce que les autres élèves ont vu d’Elias et l’écrire sur l’affiche, au-dessus de la ligne de flottaison (2 min). Puis demander ce qu’Elias a pu ressentir sans que personne le voie : à chaque proposition qui convient, retourner la carte correspondante et l’accrocher sous la ligne ; à la fin, découvrir les huit (3 min). Expliquer les cinq plus fréquentes avec la grille au tableau (3 min). Beaucoup connaissent le réservoir vide grâce au bocal des besoins de la 7e – un jeune qui était là l’explique en une phrase aux nouveaux. Pour finir, chacun fait seul l’exercice 1 et compare avec la personne d’à côté (3 min).",
+            "text": "Lire à voix haute l’histoire « Le cahier » de la fiche, la classe suit. D’abord rassembler ce que les autres élèves ont vu d’Elias et l’écrire sur l’affiche, au-dessus de la ligne de flottaison (2 min). Puis demander ce qu’Elias a pu ressentir sans que personne le voie et, à chaque proposition qui convient, retourner la carte et l’accrocher sous la ligne : vexation, peur, honte, injustice, déception, impuissance, être mis à l’écart, réservoir vide ; à la fin, tout découvrir (3 min). Expliquer les cinq plus fréquentes avec la grille au tableau (3 min). Beaucoup connaissent le réservoir vide grâce au bocal des besoins de la 7e – un jeune qui était là l’explique en une phrase aux nouveaux. Pour finir, chacun fait seul l’exercice 1 et compare avec la personne d’à côté (3 min).",
             "sagen": [
               "Qu’est-ce que les autres ont vu ? Et qu’est-ce qu’Elias a ressenti, que personne n’a vu ?",
               "La colère, c’est souvent comme un garde du corps : elle se jette en avant pour que personne ne remarque à quel point quelque chose a fait mal.",
@@ -458,9 +458,10 @@
             "titel": "Détectives de l’iceberg et mon iceberg",
             "dauer": 18,
             "phase": "uebung",
-            "text": "Chaque îlot reçoit une carte situation et quelques post-it. En groupe (6 min) : lire le cas à voix haute, choisir deux ou trois émotions pour sous l’eau, écrire chacune sur un post-it et préparer une phrase : qu’est-ce qui aurait aidé le personnage à ce moment-là ? Ensuite, chaque groupe présente son cas en une phrase, colle la carte au-dessus de la ligne de flottaison et les post-it en dessous, puis dit sa phrase ; la classe peut compléter (6 min). Pour finir, chacun travaille seul sur sa fiche (6 min) : l’exercice 2, son propre iceberg à propos d’une situation qu’il n’a à raconter à personne, puis les exercices 3 et 4. La fiche n’est ni ramassée ni lue à voix haute.",
+            "text": "Chaque îlot reçoit une carte situation et un post-it. En groupe (6 min) : lire le cas à voix haute, écrire sur le post-it ce que voient les autres (trois ou quatre mots), choisir deux ou trois émotions pour sous l’eau et préparer une phrase : qu’est-ce qui aurait aidé le personnage à ce moment-là ? Ensuite, chaque groupe présente brièvement son cas, colle le post-it au-dessus de la ligne de flottaison, écrit son numéro de cas à côté des cartes choisies sous l’eau et dit sa phrase ; la classe peut compléter (6 min). Pour finir, chacun travaille seul sur sa fiche (6 min) : l’exercice 2, son propre iceberg à propos d’une situation qu’il n’a à raconter à personne, puis les exercices 3 et 4. La fiche n’est ni ramassée ni lue à voix haute.",
             "sagen": [
               "Qu’est-ce qui pourrait se cacher sous l’eau chez le personnage de votre carte ? Vous pouvez prendre deux ou trois émotions.",
+              "Regardez l’affiche : à côté de quelles cartes y a-t-il le plus de numéros ?",
               "Pour votre propre iceberg : pensez à une situation où vous étiez vraiment en colère. Vous écrivez seulement pour vous."
             ],
             "punkte": [
@@ -471,7 +472,7 @@
               "Cas 5 · Les livres : dans le couloir, une pile de livres tombe du chariot. L’éducateur ne voit qu’Ana à côté : « Encore toi. Ramasse ça, tout de suite. » Ce n’était pas elle. Derrière lui, celui qui l’a fait ricane. Ana donne un coup de pied dans le chariot.",
               "Cas 6 (réserve) · Le nouveau portable : Chiara a reçu un nouveau portable pour son anniversaire. À la récré, Ben le lui prend, le tient en l’air et lance : « Viens le chercher. » Chiara crie et essaie de le lui arracher des mains."
             ],
-            "tipp": "Les groupes trouvent souvent des émotions différentes pour le même cas – tant mieux : personne ne voit à l’intérieur d’un iceberg, on peut seulement supposer et demander. Un jeune qui ne veut rien écrire sur lui remplit l’iceberg pour un personnage de série ou de film.",
+            "tipp": "La classe propose souvent d’autres émotions que le groupe – tant mieux : personne ne voit à l’intérieur d’un iceberg, on peut seulement supposer et demander. Un jeune qui ne veut rien écrire sur lui remplit l’iceberg pour un personnage de série ou de film.",
             "wennEsKippt": "Si un jeune raconte soudain à voix haute une situation lourde, par exemple de la violence à la maison, l’arrêter avec bienveillance, le remercier et lui proposer un entretien après le cours ; informer le SePAS le jour même. Puis continuer calmement avec le groupe suivant. Si un îlot se contente de chahuter, s’asseoir un moment avec lui et lancer une question sur le personnage : qu’est-ce qui lui passait par la tête juste avant que ça éclate ?",
             "blatt": "ff6-wut-eisberg"
           },
@@ -480,20 +481,21 @@
             "dauer": 5,
             "phase": "aktiv",
             "text": "Tout le monde se lève. On joue à deux à pierre-feuille-ciseaux ; qui perd devient fan de l’autre, se place derrière lui et l’encourage au match suivant en scandant son prénom. Les fan-clubs grossissent jusqu’à la finale, où deux moitiés de classe encouragent leurs deux derniers joueurs (3 min). Ensuite, demander brièvement : qui s’est énervé une seconde en perdant – et à quoi est-ce qu’on l’a vu ? Si la grande récréation tombe entre les deux heures, supprimer cet exercice.",
-            "tipp": "La question sur ce petit agacement fait le lien avec le ralenti : même pendant un jeu, le corps montre ce qui se passe – un soupir, des yeux au ciel, un pied qui tape par terre."
+            "tipp": "La question sur ce petit agacement fait le lien avec le ralenti : même pendant un jeu, le corps montre ce qui se passe – un soupir, des yeux au ciel, un pied qui tape par terre.",
+            "wennEsKippt": "Si quelqu’un se moque des perdants ou si ça devient trop agité, arrêter un instant : les fans encouragent leur joueur, personne ne hue les autres. Qui ne veut pas jouer est fan dès le début ou compte les manches."
           },
           {
             "titel": "La colère au ralenti",
             "dauer": 25,
             "phase": "uebung",
-            "text": "Échauffement (3 min) : debout derrière sa chaise, chacun montre sans un mot les chiffres annoncés – 10, 30, 50, puis 70 ; on ne va pas plus haut. Chaque îlot prépare ensuite la scène de sa carte situation – on ne joue que les secondes avant l’explosion : qui est le personnage, qui le déclencheur, qui met en scène (4 min) ? Les groupes passent l’un après l’autre devant la classe (3 min chacun). Le metteur en scène lit la carte et lance trois fois « Arrêt sur image ! » ; à chaque arrêt, un îlot spectateur décrit ce qu’il voit dans sa zone du corps (carte d’observation) et tout le monde montre le chiffre estimé avec les doigts. Pour finir, classer au tableau les signaux en précoces, moyens et tardifs (3 min).",
+            "text": "Échauffement (3 min) : debout derrière sa chaise, chacun montre sans un mot 10, 30, 50, puis 70 ; on ne va pas plus haut. Chaque îlot prépare ensuite la scène de sa carte situation – on ne joue que les secondes avant l’explosion : qui est le personnage, qui le déclencheur, qui met en scène (4 min) ? Les groupes passent l’un après l’autre devant la classe (3 min chacun). Le metteur en scène lit la carte et lance trois fois « Arrêt sur image ! » ; à chaque arrêt, un îlot spectateur décrit ce qu’il voit dans sa zone du corps (carte d’observation) et tout le monde montre le chiffre estimé avec les doigts. Pour finir, classer au tableau les signaux en précoces, moyens et tardifs (3 min).",
             "sagen": [
               "Tout au ralenti et sans se toucher. Le personnage reste muet – montrez ce que fait le corps avant que la bouche s’ouvre.",
               "Arrêt sur image ! Qu’est-ce que vous voyez ? Regardez votre zone : le regard, la mâchoire, les épaules, les mains, les pieds.",
               "À quel chiffre le personnage aurait-il dû freiner pour que ça n’aille pas aussi loin ?"
             ],
             "punkte": [
-              "Tout au ralenti, sans se toucher.",
+              "Tout au ralenti, sans se toucher, sans jouer de vraies personnes de la classe ou de l’école.",
               "Le personnage reste muet ; le déclencheur peut dire la phrase de la carte – lentement.",
               "Le metteur en scène lance trois fois « Arrêt sur image ! » : au premier petit signe, quand ça monte, juste avant l’explosion.",
               "L’explosion n’est jamais jouée – après le troisième arrêt, c’est fini.",
@@ -544,7 +546,7 @@
             "titel": "Skill : mains ouvertes, mâchoire relâchée",
             "dauer": 10,
             "phase": "skill",
-            "text": "Tout le monde est assis, les deux pieds au sol, et estime en silence son chiffre ; l’enseignant·e montre et fait avec la classe. Pendant dix secondes, contracter exprès les signaux typiques de la colère : serrer les poings, serrer les dents, remonter les épaules. Puis l’inverse : ouvrir les mains et les poser sur les cuisses, paumes vers le haut, relâcher la mâchoire, laisser descendre les épaules et expirer lentement ; qui veut laisse remonter très légèrement les coins de la bouche. Alterner trois fois, puis rester une minute rien qu’avec les mains ouvertes et estimer à nouveau son chiffre. Recueillir deux ou trois retours et expliquer : le corps renvoie à la tête ce qu’il fait – des mains ouvertes signalent au système d’alarme qu’aucun combat n’est en vue. Sur la fiche, le skill figure dans l’encadré « Ton contre-signal ».",
+            "text": "Tout le monde est assis, les deux pieds au sol, et estime en silence son chiffre ; l’enseignant·e montre et fait avec la classe. Pendant dix secondes, contracter exprès les signaux de la colère : serrer les poings, serrer les dents, remonter les épaules. Puis l’inverse : mains ouvertes, paumes vers le haut sur les cuisses, mâchoire relâchée, épaules qui descendent, expiration lente ; qui veut laisse remonter légèrement les coins de la bouche. Alterner trois fois, puis une minute rien qu’avec les mains ouvertes, et estimer à nouveau son chiffre. Recueillir deux ou trois retours et expliquer : le corps renvoie à la tête ce qu’il fait – des mains ouvertes signalent au système d’alarme qu’aucun combat n’est en vue. Sur la fiche, le skill figure dans l’encadré « Ton contre-signal ».",
             "sagen": [
               "Serrez les poings, serrez les dents, remontez les épaules. Vous sentez ce que ça fait ?",
               "Et maintenant, on ouvre : mains ouvertes, mâchoire relâchée, épaules en bas. Qu’est-ce qui change ?",
@@ -572,12 +574,12 @@
           "Nummenmaa, L., Glerean, E., Hari, R. & Hietanen, J. K. (2014). Bodily maps of emotions. Proceedings of the National Academy of Sciences, 111(2), 646–651.",
           "Gross, J. J. (1998). The emerging field of emotion regulation: An integrative review. Review of General Psychology, 2(3), 271–299."
         ],
-        "achtung": "La colère touche parfois à la violence – subie ou exercée. Personne ne raconte ses propres crises devant la classe, les fiches restent privées. Au ralenti : on ne se touche pas, l’explosion n’est jamais jouée, personne ne joue une vraie personne de la classe ou de l’école, et on peut toujours mettre en scène au lieu de jouer. C’est trop quand un jeune se fige, est au bord des larmes, veut quitter la salle ou quand le jeu tourne à la vraie colère : arrêter l’exercice pour lui, lui proposer une place au calme, en vue, et lui parler en tête-à-tête après le cours. Si un jeune laisse entendre qu’il est frappé, menacé ou humilié, ou qu’il blesse lui-même d’autres personnes : ne pas approfondir devant la classe, ne rien promettre (pas de secret), informer le SePAS le jour même et agir selon le protocole de protection de l’école ; en cas de danger immédiat, appeler le 112 et ne pas laisser la personne seule. Si un jeune se fait souvent remarquer par de violents accès de colère, en parler avec le régent et le SePAS – pas pendant cette séance ni devant les autres.",
+        "achtung": "La colère touche parfois à la violence – subie ou exercée. Personne ne raconte ses crises devant la classe, les fiches restent privées. C’est trop quand un jeune se fige, pleure, veut sortir ou quand le jeu tourne à la vraie colère : arrêter l’exercice pour lui, lui proposer une place calme, en vue, et lui parler plus tard en tête-à-tête. Si un jeune laisse entendre qu’il est frappé, menacé ou humilié, ou qu’il blesse d’autres personnes : ne pas approfondir devant la classe, ne rien promettre, informer le SePAS le jour même, suivre le protocole de protection de l’école ; en cas de danger immédiat, 112. Crises fréquentes et violentes : en parler au régent et au SePAS.",
         "differenzierung": {
           "leichter": "Pour les jeunes qui lisent difficilement : faire l’exercice 1 de la fiche de l’iceberg à deux avec un camarade qui lit bien ; pour son propre iceberg, des mots-clés ou les mots du tableau suffisent. Dans la silhouette, le premier signal suffit ; le journal peut être raconté à l’oral au début de la séance suivante.",
           "schwerer": "Remplir un deuxième iceberg pour l’enseignante de l’histoire : qu’est-ce qui pourrait se cacher sous sa réaction ? Au ralenti, animer les retours et demander à chaque arrêt quelle pensée fait monter le chiffre."
         },
-        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec gommette et chiffre (5 min), l’iceberg de la colère avec Elias et l’exercice 1 (12 min), une scène au ralenti avec le cas 1, jouée par deux volontaires devant toute la classe (10 min), fiche « Mes déclencheurs et signaux d’alerte », exercices 1 à 3 (10 min), mains ouvertes, mâchoire relâchée (6 min), Skills-Pass et journal de la colère (7 min). Les détectives de l’iceberg et son propre iceberg sont rattrapés à la séance suivante."
+        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec gommette et chiffre (5 min), l’iceberg de la colère avec Elias et l’exercice 1 (12 min), une scène au ralenti avec le cas 1, jouée par deux volontaires devant toute la classe (10 min), fiche « Mes déclencheurs et signaux d’alerte », exercices 1 à 3 (10 min), mains ouvertes, mâchoire relâchée (6 min), Skills-Pass et journal de la colère (7 min). Les détectives de l’iceberg et l’iceberg personnel sont rattrapés à la séance suivante."
       }
     }
   ],

@@ -42,21 +42,20 @@
           "schreiben einen Wenn-dann-Plan für eine Sache, die noch schwer ist"
         ],
         "material": [
-          "Schülerheft für jede Person (Blatt „Neu am Lycée“)",
-          "Gefühlsrad-Plakat, Klebepunkte in zwei Farben (je einer pro Person)",
-          "Moderationskarten, drei je Tischgruppe, dicke Stifte",
-          "Plakat „Neu am Lycée – unsere Tipps“, Klebeband",
-          "Rallye-Karten (Kopiervorlage), fünf Umschläge",
-          "Eine Uhr je Tischgruppe (ein Handy nur als Uhr)",
-          "Basis-Liste: Gruppe, Station, los, zurück",
+          "Schülerheft für jede Person",
+          "Klebepunkte in zwei Farben, je 20",
+          "Moderationskarten, drei je Gruppe",
+          "Plakat für die Tipps, dicke Stifte",
+          "Rallye-Karten, fünf Umschläge",
+          "Eine Uhr je Tischgruppe",
           "Stempel für den Skills-Pass"
         ],
         "vorbereitung": [
-          "Eine Woche vorher mit Direktion oder Régent klären, ob Vierergruppen im Haus unterwegs sein dürfen; sonst wird die Rallye ein Rundgang mit der ganzen Klasse.",
-          "Sekretariat, SePAS, Éducateurs, Bibliothek und Krankenzimmer vorwarnen: Vierergruppen kommen vorbei und stellen eine kurze Frage.",
-          "Rallye-Karten ausfüllen (Raum und Stockwerk, Hinweise), unpassende Karten überkleben; kopieren, ausschneiden, je Tischgruppe eine Kartenzeile in einen Umschlag.",
-          "Den Namen des Régent klären und wann und wo man ihn oder sie außerhalb des Unterrichts erreicht.",
-          "An die Tafel: die sieben Anlaufstellen mit Nummern (Schritt 4) und die Rallye-Regeln (Schritt 6); Tipp-Plakat vorbereiten."
+          "Mit Direktion oder Régent klären, ob Vierergruppen im Haus unterwegs sein dürfen.",
+          "Sekretariat, SePAS, Éducateurs, Bibliothek und Krankenzimmer vorwarnen.",
+          "Rallye-Karten ausfüllen, kopieren, ausschneiden, je Tischgruppe in einen Umschlag.",
+          "An die Tafel: Anlaufstellen (Schritt 4) und Rallye-Regeln (Schritt 6).",
+          "Klären, wann und wo man den Régent außerhalb des Unterrichts erreicht."
         ],
         "ablauf": [
           {
@@ -110,7 +109,7 @@
             "titel": "Check-in: erster Schultag und heute",
             "dauer": 10,
             "phase": "ankommen",
-            "text": "Beim Hereinkommen klebt jede Person zwei Punkte auf das Gefühlsrad-Plakat: einen in der ersten Farbe zu dem Gefühl vom ersten Schultag am Lycée, einen in der zweiten Farbe zu dem Gefühl von heute. Die Lehrkraft klebt ihre Punkte zuerst und sagt einen Satz dazu. Wenn alle sitzen, gemeinsam auf das Plakat schauen; zwei, drei Freiwillige sagen, was ihnen auffällt (4 Min.). Meist sammeln sich die Punkte vom ersten Tag bei nervös, unsicher oder begeistert, die von heute liegen verteilter. Festhalten: Am Anfang war fast die ganze Klasse aufgeregt – und bei vielen hat sich das schon verändert.",
+            "text": "Beim Hereinkommen klebt jede Person zwei Punkte auf das Gefühlsrad-Plakat: einen in der ersten Farbe zu dem Gefühl vom ersten Schultag am Lycée, einen in der zweiten Farbe zu dem Gefühl von heute; die Punkte der Lehrkraft kleben schon. Wenn alle sitzen, sagt die Lehrkraft einen Satz zu ihren Punkten; dann schauen alle auf das Plakat, und zwei, drei Freiwillige sagen, was ihnen auffällt (4 Min.). Meist sammeln sich die Punkte vom ersten Tag bei nervös, unsicher oder begeistert, die von heute liegen verteilter. Festhalten: Am Anfang war fast die ganze Klasse aufgeregt – und bei vielen hat sich das schon verändert.",
             "sagen": [
               "Ein Punkt für euren ersten Schultag hier, einer für heute. Niemand muss sagen, welche Punkte seine sind.",
               "Was fällt euch auf, wenn ihr die beiden Farben vergleicht?"
@@ -163,44 +162,36 @@
             ],
             "tabelle": {
               "spalten": [
-                "Nr.",
                 "Anlaufstelle",
                 "Hilft zum Beispiel, wenn …"
               ],
               "zeilen": [
                 [
-                  "1",
-                  "Régent oder Régente",
+                  "1 Régent oder Régente",
                   "es um die Klasse, um Noten oder um Ärger geht – oft die erste Anlaufstelle"
                 ],
                 [
-                  "2",
-                  "SePAS",
+                  "2 SePAS",
                   "einen etwas bedrückt und man mit jemandem reden will, der zuhört und vertraulich behandelt, was man erzählt"
                 ],
                 [
-                  "3",
-                  "Éducateurs",
+                  "3 Éducateurs",
                   "im Schulalltag etwas schiefläuft: Streit in der Pause, Fragen, Ärger"
                 ],
                 [
-                  "4",
-                  "Sekretariat",
+                  "4 Sekretariat",
                   "man eine Bescheinigung, ein Formular oder eine Auskunft braucht"
                 ],
                 [
-                  "5",
-                  "Direktion",
+                  "5 Direktion",
                   "es um wichtige Entscheidungen geht oder sonst niemand weiterhilft"
                 ],
                 [
-                  "6",
-                  "Bibliothek",
+                  "6 Bibliothek",
                   "man Bücher, einen Computer oder einen ruhigen Platz zum Lernen sucht"
                 ],
                 [
-                  "7",
-                  "Krankenzimmer",
+                  "7 Krankenzimmer",
                   "einem schlecht ist oder man sich verletzt hat"
                 ]
               ]
@@ -228,7 +219,7 @@
             "titel": "Lycée-Rallye in Tischgruppen",
             "dauer": 25,
             "phase": "aktiv",
-            "text": "Start an der Basis, dem Klassenraum (4 Min.): Jede Tischgruppe bekommt ihren Umschlag mit zwei Rallye-Karten und verteilt die Rollen Weg, Zeit, Fragen und Notieren; die Regeln an der Tafel und den Kasten „So fragst du im Lycée nach“ im Heft gemeinsam lesen. Runde 1 (8 Min.): Die Gruppen gehen zu ihrer ersten Station. Die Lehrkraft bleibt an der Basis und notiert, wann jede Gruppe geht und zurückkommt. Runde 2 (8 Min.): Wer zurück ist, meldet sich kurz, tauscht die Rollen und startet zur zweiten Station; wer danach zurück ist, bereitet den Bericht vor. Bericht (5 Min.): Jede Gruppe nennt je Station Ort, Zeiten und eine Sache, bei der sie hilft; die Lehrkraft schreibt Räume und Zeiten an die Tafel, alle tragen sie in die Tabelle im Heft ein.",
+            "text": "Start an der Basis, dem Klassenraum (4 Min.): Jede Tischgruppe bekommt ihren Umschlag mit zwei Rallye-Karten und verteilt die Rollen Weg, Zeit, Fragen und Notieren; die Regeln an der Tafel und den Kasten „So fragst du im Lycée nach“ im Heft gemeinsam lesen. Runde 1 (8 Min.): Die Gruppen gehen zu ihrer ersten Station. Die Lehrkraft bleibt an der Basis und notiert auf einem Blatt, wann jede Gruppe geht und zurückkommt. Runde 2 (8 Min.): Wer zurück ist, meldet sich kurz, tauscht die Rollen und startet zur zweiten Station; wer danach zurück ist, bereitet den Bericht vor. Bericht (5 Min.): Jede Gruppe nennt je Station Ort, Zeiten und eine Sache, bei der sie hilft; die Lehrkraft schreibt Räume und Zeiten an die Tafel, alle tragen sie in die Tabelle im Heft ein.",
             "sagen": [
               "Guten Tag, wir sind aus der 7e und machen eine Rallye durchs Lycée. Haben Sie kurz Zeit für eine Frage?",
               "Nach acht Minuten seid ihr zurück – auch wenn ihr noch nicht alles herausgefunden habt."
@@ -295,7 +286,7 @@
           "Rickwood, D., Deane, F. P., Wilson, C. J. & Ciarrochi, J. (2005). Young people’s help-seeking for mental health problems. Australian e-Journal for the Advancement of Mental Health, 4(3), 218–251.",
           "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
         ],
-        "achtung": "Der Start am Lycée ist nicht für alle leicht: Manche vermissen ihre alte Klasse, fühlen sich ausgeschlossen oder sind enttäuscht, in der Voie de préparation zu sein. Solche Beiträge würdigen, nicht vor der Klasse vertiefen, nach der Stunde ein Gespräch anbieten und bei Sorge Régent und SePAS einbeziehen; Hinweise auf Mobbing nach dem Vorgehen der Schule klären. Für die Rallye gilt die Aufsichtspflicht: Wer gerade nicht ohne Erwachsene unterwegs sein sollte, geht unauffällig mit einer Begleitperson oder führt an der Basis die Liste. Hinweise auf Gewalt oder Selbstverletzung: noch am selben Tag den SePAS informieren und nach dem Schutzkonzept der Schule handeln.",
+        "achtung": "Der Start am Lycée ist nicht für alle leicht: Manche vermissen ihre alte Klasse, fühlen sich ausgeschlossen oder sind enttäuscht, in der Voie de préparation zu sein. Solche Beiträge würdigen, nicht vor der Klasse vertiefen und nach der Stunde ein Gespräch anbieten. Bei Hinweisen auf Mobbing, Gewalt oder Selbstverletzung noch am selben Tag den SePAS informieren und nach dem Schutzkonzept der Schule handeln. Für die Rallye gilt die Aufsichtspflicht: Wer nicht ohne Erwachsene unterwegs sein sollte, geht unauffällig mit einer Begleitperson oder führt an der Basis die Liste.",
         "differenzierung": {
           "leichter": "Aufgabe 1 im Tandem: Eine Person liest vor, beide kreuzen an. Bei der Rallye übernehmen Jugendliche, die mühsam schreiben, die Rolle Weg oder Zeit; in der Tabelle reichen Raumnummer und ein Stichwort. Für den Plan Satzanfänge an die Tafel: Wenn ich nicht weiß, …, dann frage ich …",
           "schwerer": "Schnelle schreiben drei Tipps für die nächste 7e auf eine Karte oder zeichnen einen einfachen Plan des Lycée mit allen Anlaufstellen für das Klassenplakat. Bei der Rallye übernehmen sie die Rolle Fragen und stellen eine eigene Zusatzfrage."
@@ -312,21 +303,20 @@
           "écrivent un plan « si… alors » pour une chose encore difficile"
         ],
         "material": [
-          "Un cahier de l’élève par jeune (fiche « Premiers pas au lycée »)",
-          "Roue des émotions en affiche, gommettes de deux couleurs (une de chaque par jeune)",
-          "Cartes, trois par îlot, gros feutres",
-          "Affiche « Premiers pas au lycée – nos astuces », ruban adhésif",
-          "Cartes du rallye (modèle à photocopier), cinq enveloppes",
-          "Une montre par îlot (un portable seulement comme montre)",
-          "Liste de la base : groupe, poste, départ, retour",
+          "Un cahier de l’élève par jeune",
+          "Gommettes de deux couleurs, 20 de chaque",
+          "Cartes, trois par îlot",
+          "Affiche pour les astuces, gros feutres",
+          "Cartes du rallye, cinq enveloppes",
+          "Une montre par îlot",
           "Tampon pour le Skills-Pass"
         ],
         "vorbereitung": [
-          "Une semaine avant, vérifier avec la direction ou le régent que des groupes de quatre peuvent circuler dans le bâtiment ; sinon, le rallye devient une visite avec toute la classe.",
-          "Prévenir le secrétariat, le SePAS, les éducateurs, la bibliothèque et l’infirmerie : des groupes de quatre passeront poser une courte question.",
-          "Compléter les cartes du rallye (salle et étage, indices), recouvrir celles qui ne conviennent pas ; photocopier, découper, une ligne de cartes par îlot dans une enveloppe.",
-          "Se renseigner sur le nom du régent et sur quand et où le ou la joindre en dehors des cours.",
-          "Au tableau : les sept points de contact numérotés (étape 4) et les règles du rallye (étape 6) ; préparer l’affiche des astuces."
+          "Vérifier avec la direction ou le régent que des groupes de quatre peuvent circuler dans le bâtiment.",
+          "Prévenir le secrétariat, le SePAS, les éducateurs, la bibliothèque et l’infirmerie.",
+          "Compléter les cartes du rallye, les photocopier, les découper, une enveloppe par îlot.",
+          "Au tableau : les points de contact (étape 4) et les règles du rallye (étape 6).",
+          "Savoir quand et où joindre le régent en dehors des cours."
         ],
         "ablauf": [
           {
@@ -380,12 +370,12 @@
             "titel": "Tour d’humeur : le premier jour et aujourd’hui",
             "dauer": 10,
             "phase": "ankommen",
-            "text": "En entrant, chaque jeune colle deux gommettes sur la roue des émotions : une de la première couleur sur l’émotion de son premier jour au lycée, une de la seconde sur celle d’aujourd’hui. Coller ses propres gommettes en premier et dire une phrase. Une fois tout le monde assis, regarder l’affiche ensemble ; deux ou trois volontaires disent ce qu’ils remarquent (4 min). En général, les gommettes du premier jour se regroupent vers nerveux, pas sûr de moi ou enthousiaste, celles d’aujourd’hui sont plus dispersées. Retenir : au début, presque toute la classe avait le trac – et pour beaucoup, ça a déjà changé.",
+            "text": "En entrant, chaque jeune colle deux gommettes sur la roue des émotions : une de la première couleur sur l’émotion de son premier jour au lycée, une de la seconde sur celle d’aujourd’hui ; celles de l’enseignant·e sont déjà collées. Une fois tout le monde assis, dire une phrase sur ses propres gommettes, puis regarder l’affiche ensemble ; deux ou trois volontaires disent ce qu’ils remarquent (4 min). En général, les gommettes du premier jour se regroupent vers nerveux, pas sûr de moi ou enthousiaste, celles d’aujourd’hui sont plus dispersées. Retenir : au début, presque toute la classe avait le trac – et pour beaucoup, ça a déjà changé.",
             "sagen": [
               "Une gommette pour votre premier jour ici, une pour aujourd’hui. Personne n’est obligé de dire lesquelles sont les siennes.",
               "Qu’est-ce que vous remarquez quand vous comparez les deux couleurs ?"
             ],
-            "tipp": "Commencer par un exemple sincère, par exemple : ma première gommette est sur nerveux – je ne vous connaissais pas encore. Cela montre que le trac fait partie de tout début, chez les adultes aussi.",
+            "tipp": "Commencer par un exemple sincère, comme : ma première gommette est sur nerveux – je ne vous connaissais pas encore. Cela montre que le trac fait partie de tout début, chez les adultes aussi.",
             "wennEsKippt": "Si des gommettes d’aujourd’hui sont sur seul, triste ou en colère, ne pas en parler devant la classe – les gommettes sont anonymes. Dire une phrase pour tout le monde : pour certains, c’est après quelques semaines que ça devient difficile, quand le quotidien s’installe ; c’est normal aussi, et aujourd’hui on regarde justement qui peut aider. Si tout le monde se bouscule devant l’affiche, faire passer îlot par îlot."
           },
           {
@@ -415,7 +405,7 @@
             "titel": "Qui aide pour quoi ? D’abord deviner",
             "dauer": 15,
             "phase": "uebung",
-            "text": "Au tableau figurent les sept points de contact numérotés (tableau). Commencer par donner le nom du régent et le moyen de le joindre ; chacun le note sur la première ligne du tableau du cahier (2 min). Puis lire les huit situations l’une après l’autre : les îlots se mettent d’accord à voix basse en 20 secondes ; à « trois », une personne par îlot montre le numéro avec les doigts (9 min). Corriger brièvement avec ce qui vaut dans l’établissement ; ce qui reste flou est noté au tableau comme question. Pour finir, demander ce qui empêche les jeunes de demander de l’aide et noter deux ou trois réponses (4 min), par exemple : la honte, ne pas savoir où aller, ne connaître personne. Transition : le rallye va vous enlever deux de ces obstacles.",
+            "text": "Au tableau figurent les sept points de contact numérotés (tableau). Commencer par donner le nom du régent et le moyen de le joindre ; chacun le note sur la première ligne du tableau du cahier (2 min). Puis lire les huit situations l’une après l’autre : les îlots se mettent d’accord à voix basse en 20 secondes ; à « trois », une personne par îlot montre le numéro avec les doigts (9 min). Corriger brièvement en fonction de ce qui se fait dans l’établissement ; ce qui reste flou est noté au tableau comme question. Pour finir, demander ce qui empêche les jeunes de demander de l’aide et noter deux ou trois réponses (4 min), par exemple : la honte, ne pas savoir où aller, ne connaître personne. Transition : le rallye va vous enlever deux de ces obstacles.",
             "sagen": [
               "Vous avez 20 secondes en îlot. À trois, quelqu’un montre votre numéro avec les doigts.",
               "Souvent, plusieurs réponses sont justes. L’essentiel, c’est qu’un adulte soit au courant.",
@@ -427,55 +417,47 @@
               "Mila cherche un endroit calme pendant la pause de midi pour réviser un devoir en classe. (6)",
               "Diogo a été malade deux jours et ne sait pas où remettre son mot d’excuse. (ça dépend des écoles – demander au 1)",
               "Amira est triste depuis des semaines et voudrait parler à quelqu’un qui ne le répétera pas. (2, aussi 1)",
-              "À la récré, Ben se fait sans cesse bousculer et moquer par deux plus grands. (3, 1 ou 2 – l’essentiel : qu’un adulte soit au courant)",
+              "À la récré, Ben se fait sans cesse bousculer par deux plus grands, qui se moquent de lui. (3, 1 ou 2 – l’essentiel : qu’un adulte soit au courant)",
               "La veste de Sofia a disparu après le cours de sport. (ça dépend des écoles – le rallye va le dire)",
               "Votre classe voudrait un ballon et un filet de ping-pong pour les récrés. (1, puis 5 – et bientôt votre conseil de coopération)"
             ],
             "tabelle": {
               "spalten": [
-                "N°",
                 "Point de contact",
                 "Aide par exemple quand…"
               ],
               "zeilen": [
                 [
-                  "1",
-                  "Régent ou régente",
+                  "1 Régent ou régente",
                   "il s’agit de la classe, des notes ou d’un souci – souvent le premier interlocuteur"
                 ],
                 [
-                  "2",
-                  "SePAS",
+                  "2 SePAS",
                   "quelque chose pèse et qu’on veut parler à quelqu’un qui écoute et traite ce qu’on raconte de façon confidentielle"
                 ],
                 [
-                  "3",
-                  "Éducateurs",
+                  "3 Éducateurs",
                   "quelque chose se passe mal au quotidien : dispute à la récré, questions, soucis"
                 ],
                 [
-                  "4",
-                  "Secrétariat",
+                  "4 Secrétariat",
                   "on a besoin d’une attestation, d’un formulaire ou d’un renseignement"
                 ],
                 [
-                  "5",
-                  "Direction",
+                  "5 Direction",
                   "il s’agit de décisions importantes ou que personne d’autre ne peut aider"
                 ],
                 [
-                  "6",
-                  "Bibliothèque",
+                  "6 Bibliothèque",
                   "on cherche des livres, un ordinateur ou un endroit calme pour travailler"
                 ],
                 [
-                  "7",
-                  "Infirmerie",
+                  "7 Infirmerie",
                   "on se sent mal ou qu’on s’est blessé"
                 ]
               ]
             },
-            "tipp": "Ne pas savoir exactement ce qui vaut dans son établissement n’est pas grave : la question va au tableau et le rallye y répondra. Au passage, les jeunes voient que les adultes aussi se renseignent.",
+            "tipp": "Ne pas savoir exactement ce qui se fait dans son établissement n’est pas grave : la question va au tableau et le rallye y répondra. Au passage, les jeunes voient que les adultes aussi se renseignent.",
             "wennEsKippt": "Si tout le monde crie en même temps, s’en tenir strictement au déroulement : 20 secondes à voix basse, puis on montre à trois – qui crie avant ne compte pas. Si un jeune parle de lui à propos de Ben ou d’Amira, l’accueillir brièvement, ne pas approfondir et lui en parler après le cours ; en cas de signes de harcèlement, agir avec le régent et le SePAS selon la procédure de l’école.",
             "blatt": "ff7-neu-am-lycee"
           },
@@ -498,7 +480,7 @@
             "titel": "Rallye dans le lycée en îlots",
             "dauer": 25,
             "phase": "aktiv",
-            "text": "Départ à la base, la salle de classe (4 min) : chaque îlot reçoit son enveloppe avec deux cartes et se répartit les rôles – chemin, temps, questions, notes ; lire ensemble les règles au tableau et l’encadré « Pour demander au lycée » du cahier. Tour 1 (8 min) : les groupes partent vers leur premier poste. Rester à la base et noter l’heure de départ et de retour de chaque groupe. Tour 2 (8 min) : un groupe revenu se signale, change de rôles et part vers son deuxième poste ; au retour, il prépare son compte rendu. Comptes rendus (5 min) : chaque groupe donne, pour chaque poste, le lieu, les horaires et une chose pour laquelle il aide ; écrire les salles et les horaires au tableau, chacun les reporte dans le tableau du cahier.",
+            "text": "Départ à la base, la salle de classe (4 min) : chaque îlot reçoit son enveloppe avec deux cartes et se répartit les rôles – chemin, temps, questions, notes ; lire ensemble les règles au tableau et l’encadré « Pour demander au lycée » du cahier. Tour 1 (8 min) : les groupes partent vers leur premier poste. Rester à la base et noter sur une feuille l’heure de départ et de retour de chaque groupe. Tour 2 (8 min) : un groupe revenu se signale, change de rôles et part vers son deuxième poste ; au retour, il prépare son compte rendu. Comptes rendus (5 min) : chaque groupe donne, pour chaque poste, le lieu, les horaires et une chose pour laquelle il aide ; écrire les salles et les horaires au tableau, chacun les reporte dans le tableau du cahier.",
             "sagen": [
               "Bonjour, nous sommes de la 7e et nous faisons un rallye dans le lycée. Vous auriez un moment pour une question ?",
               "Au bout de huit minutes, vous êtes de retour – même si vous n’avez pas encore tout trouvé."
@@ -532,7 +514,7 @@
             "titel": "Skill : la respiration des doigts",
             "dauer": 10,
             "phase": "skill",
-            "text": "Annoncer : voici un skill que personne ne voit – pour les moments où tout est nouveau et trop : dans un couloir bondé, devant une porte inconnue, avant le premier devoir en classe. Le montrer une fois lentement, puis faire ensemble deux fois le tour des cinq doigts ; compter à voix basse et faire l’exercice avec la classe. Ensuite, recueillir deux ou trois retours : comment c’était ? Où, au lycée, pourriez-vous le faire discrètement ? Pour finir, expliquer : qui expire lentement freine son corps – le cœur bat plus calmement.",
+            "text": "Annoncer : voici un skill que personne ne voit – pour les moments où tout est nouveau et où l’on se sent débordé : dans un couloir bondé, devant une porte inconnue, avant le premier devoir en classe. Le montrer une fois lentement, puis faire ensemble deux fois le tour des cinq doigts ; compter à voix basse et faire l’exercice avec la classe. Ensuite, recueillir deux ou trois retours : comment c’était ? Où, au lycée, pourriez-vous le faire discrètement ? Pour finir, expliquer : qui expire lentement freine son corps – le cœur bat plus calmement.",
             "sagen": [
               "On monte – on inspire. On descend – on expire, tout doucement.",
               "Sous la table, personne ne le voit. Où, au lycée, cela pourrait-il vous servir ?"
@@ -545,7 +527,7 @@
               "Cinq doigts, cinq respirations – puis le chemin du retour."
             ],
             "tipp": "Que personne ne le voie est souvent l’argument le plus fort pour des jeunes. Refaire un tour lors des prochaines séances, avant un devoir en classe ou après une récré bruyante.",
-            "wennEsKippt": "Si ça rigole, continuer à compter calmement et faire l’exercice soi-même – la première fois, c’est normal. Si la classe s’agite trop, s’arrêter après un tour et recommencer la semaine prochaine. Personne n’est obligé de fermer les yeux."
+            "wennEsKippt": "Si des rires fusent, continuer à compter calmement et faire l’exercice soi-même – la première fois, c’est normal. Si la classe s’agite trop, s’arrêter après un tour et recommencer la semaine prochaine. Personne n’est obligé de fermer les yeux."
           },
           {
             "titel": "Skills-Pass et tour éclair avec le pouce",
@@ -565,7 +547,7 @@
           "Rickwood, D., Deane, F. P., Wilson, C. J. & Ciarrochi, J. (2005). Young people’s help-seeking for mental health problems. Australian e-Journal for the Advancement of Mental Health, 4(3), 218–251.",
           "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
         ],
-        "achtung": "Le début au lycée n’est pas simple pour tous : certains regrettent leur ancienne classe, se sentent exclus ou vivent mal leur orientation en voie de préparation. Accueillir ces remarques sans les approfondir devant la classe, proposer un entretien après le cours et, en cas d’inquiétude, impliquer le régent et le SePAS ; traiter les signes de harcèlement selon la procédure de l’école. Pour le rallye, le devoir de surveillance s’applique : un jeune qui ne devrait pas circuler sans adulte fait discrètement le parcours avec un accompagnateur ou tient la liste à la base. En cas de signes de violence ou d’automutilation : informer le SePAS le jour même et agir selon le protocole de protection de l’école.",
+        "achtung": "Le début au lycée n’est pas simple pour tous : certains regrettent leur ancienne classe, se sentent exclus ou vivent mal leur orientation en voie de préparation. Accueillir ces remarques sans les approfondir devant la classe et proposer un entretien après le cours. En cas de signes de harcèlement, de violence ou d’automutilation, informer le SePAS le jour même et agir selon le protocole de protection de l’école. Pour le rallye, le devoir de surveillance s’applique : un jeune qui ne devrait pas circuler sans adulte fait discrètement le parcours avec un accompagnateur ou tient la liste à la base.",
         "differenzierung": {
           "leichter": "Exercice 1 en binôme : l’un lit à voix haute, les deux cochent. Pendant le rallye, les jeunes qui ont du mal à écrire prennent le rôle chemin ou temps ; dans le tableau, un numéro de salle et un mot-clé suffisent. Pour le plan, des débuts de phrase au tableau : Si je ne sais pas…, alors je demande à…",
           "schwerer": "Les plus rapides écrivent trois astuces pour la prochaine 7e sur une carte ou dessinent un plan simple du lycée avec tous les points de contact pour l’affiche de la classe. Pendant le rallye, ils prennent le rôle questions et posent une question en plus."
@@ -802,7 +784,7 @@
               "lire l’emploi du temps et changer de salle à temps",
               "m’habituer à beaucoup de professeurs différents",
               "avoir chaque jour le bon matériel",
-              "penser aux devoirs et aux devoirs en classe",
+              "penser aux devoirs à faire et aux devoirs en classe",
               "trouver ma place dans la nouvelle classe",
               "me sentir bien à la récré et à la cantine",
               "gérer le trajet et le réveil matinal"
@@ -978,11 +960,11 @@
       ],
       "de": {
         "titel": "Lycée-Rallye: Stationskarten",
-        "untertitel": "Kopiervorlage für die Lehrkraft – vor dem Kopieren ausfüllen",
+        "untertitel": "Zehn Stationen für fünf Tischgruppen – vor dem Kopieren ausfüllen",
         "bausteine": [
           {
             "art": "text",
-            "text": "Vor dem Kopieren: bei „Wo“ Raum und Stockwerk eintragen, bei „Tipp“ einen Hinweis. Nur Stationen wählen, die in drei, vier Minuten zu erreichen sind; unpassende Karten überkleben und neu beschriften, etwa mit Kantine oder Sporthalle. Jede Zeile ist der Umschlag einer Tischgruppe.",
+            "text": "Bei „Wo“ Raum und Stockwerk eintragen, bei „Tipp“ einen Hinweis. Nur Stationen wählen, die in drei, vier Minuten zu erreichen sind; unpassende Karten überkleben und neu beschriften, etwa mit Kantine oder Sporthalle. Jede Zeile ist der Umschlag einer Tischgruppe.",
             "klein": true
           },
           {
@@ -1049,11 +1031,11 @@
       },
       "fr": {
         "titel": "Rallye dans le lycée : cartes des postes",
-        "untertitel": "Modèle à photocopier – à compléter avant de photocopier",
+        "untertitel": "Dix postes pour cinq îlots – à compléter avant de photocopier",
         "bausteine": [
           {
             "art": "text",
-            "text": "Avant de photocopier : à « Où », écrire la salle et l’étage ; à « Indice », une piste. Ne choisir que des postes accessibles en trois ou quatre minutes ; recouvrir les cartes qui ne conviennent pas et les réécrire, par exemple avec la cantine ou la salle de sport. Chaque ligne correspond à l’enveloppe d’un îlot.",
+            "text": "À « Où », écrire la salle et l’étage ; à « Indice », une piste. Ne choisir que des postes accessibles en trois ou quatre minutes ; recouvrir les cartes qui ne conviennent pas et les réécrire, par exemple avec la cantine ou la salle de sport. Chaque ligne correspond à l’enveloppe d’un îlot.",
             "klein": true
           },
           {
@@ -1071,7 +1053,7 @@
               },
               {
                 "titel": "3 · Éducateurs",
-                "text": "Où : ________________________________\nQuand y a-t-il quelqu’un ? Demandez : pour quoi aidez-vous les élèves au quotidien ?"
+                "text": "Où : ________________________________\nQuand y a-t-il quelqu’un ? Demandez : en quoi aidez-vous les élèves au quotidien ?"
               },
               {
                 "titel": "8 · Objets trouvés",
@@ -1079,7 +1061,7 @@
               },
               {
                 "titel": "4 · Secrétariat",
-                "text": "Où : ________________________________\nQuand est-il ouvert ? Demandez : pour quoi les élèves viennent-ils vous voir ? Notez deux choses."
+                "text": "Où : ________________________________\nQuand est-il ouvert ? Demandez : pour quelles raisons les élèves viennent-ils vous voir ? Notez deux choses."
               },
               {
                 "titel": "9 · Point de rassemblement",

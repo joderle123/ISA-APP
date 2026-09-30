@@ -21,7 +21,7 @@
         },
         {
           "de": "vermissen",
-          "fr": "manquer à quelqu’un (il me manque)"
+          "fr": "manquer (il me manque)"
         },
         {
           "de": "der Alltag",
@@ -30,42 +30,31 @@
         {
           "de": "trösten",
           "fr": "consoler"
-        },
-        {
-          "de": "für jemanden da sein",
-          "fr": "être là pour quelqu’un"
         }
       ],
       "de": {
         "titel": "Trauer und Verlust",
-        "kurz": "Verlust hat viele Formen – vom Umzug bis zum Tod. Die Klasse versteht am Trauer-Pendel, warum Trauer zwischen Vermissen und Alltag hin- und hergeht, und übt, was Trauernden wirklich hilft.",
+        "kurz": "Verlust hat viele Formen. Am Trauer-Pendel versteht die Klasse, wie Trauer verläuft, und übt, was Trauernden wirklich hilft.",
         "ziele": [
-          "erkennen an erfundenen Beispielen, dass Verlust viele Formen hat und jede Trauer berechtigt ist",
-          "beschreiben am Trauer-Pendel, dass Trauer zwischen Vermissen und Alltag hin- und hergeht und beides dazugehört",
-          "üben Sätze und kleine Taten, die trauernden Freundinnen und Freunden helfen",
-          "nennen Anzeichen, dass Trauer mehr Hilfe braucht, und Stellen, die helfen"
+          "erkennen, dass Verlust viele Formen hat und jede Trauer zählt",
+          "beschreiben, wie Trauer zwischen Vermissen und Alltag pendelt",
+          "üben Sätze und kleine Taten, die Trauernden helfen",
+          "nennen Warnzeichen, bei denen Trauer mehr Hilfe braucht"
         ],
         "material": [
-          "Schülerheft für jede Person (Blatt „Wenn etwas fehlt“)",
-          "Gefühlsrad-Plakat, Klebepunkte: einer je Person",
-          "Moderationskarten: eine je Person für die Trostwand, vier je Tischgruppe für die Verlustkarten; dicke Stifte, Klebeband",
-          "Plakat „Was tröstet?“ (A2), Plakat mit dem Rahmen für das Kapitel (Schritt 2), Hilfe-Plakat mit Raum und Sprechzeiten des SePAS und dem Kanner- a Jugendtelefon 116 111",
-          "Kopiervorlage „Karten: Trauer und Verlust“: Verlustkarten einmal, Satzkarten fünfmal, ausgeschnitten, die Satzkarten in fünf Umschlägen",
-          "Malerkrepp für die Pendel-Linie, zwei A4-Schilder: „Vermissen“ und „Alltag“",
-          "Ein Stuhl und Kopfhörer als Requisiten für Tiago",
-          "Fragenbox (Karton mit Schlitz) und kleine Zettel",
-          "Taschentücher und Wasser am Ruheplatz",
-          "Stempel für den Skills-Pass"
+          "Schülerheft; Stempel für den Skills-Pass",
+          "Gefühlsrad-Plakat, 20 Klebepunkte",
+          "40 Moderationskarten, Stifte, Malerkrepp",
+          "Plakate: „Was tröstet?“, Rahmen, Hilfe",
+          "Verlust- und Satzkarten (Kopiervorlage)",
+          "Zwei A4-Schilder; Stuhl, Kopfhörer",
+          "Fragenbox; Taschentücher, Wasser"
         ],
         "vorbereitung": [
-          "Eine Woche vorher mit Régent und SePAS klären, ob jemand in der Klasse gerade einen Verlust erlebt hat – einen Todesfall, eine Trennung der Eltern, einen Umzug, eine Unterbringung außerhalb der Familie.",
-          "Diese Jugendlichen vor der Stunde unter vier Augen ansprechen, am besten gemeinsam mit dem SePAS: erklären, was in der Stunde passiert, und sie wählen lassen – ganz dabei, mit Pausen am Ruheplatz, still zuhörend oder die Stunde beim SePAS. Ähnelt ihre Lage Tiagos Geschichte (Tod eines Großelternteils), sie vorher darauf hinweisen.",
-          "Gab es kürzlich einen Todesfall in der Klasse oder im Lycée oder einen Suizid im Umfeld, die Stunde nur nach Absprache mit SePAS und Direktion halten oder verschieben und keine Beispiele verwenden, die der echten Lage ähneln.",
-          "Etwa zwei Wochen vorher die Eltern mit einem kurzen Brief, abgestimmt mit SePAS und Direktion, über das Kapitel „Schwere Gefühle“ informieren (vier Stunden, bis „Wenn es mir schlecht geht“): worum es geht, dass niemand Persönliches erzählen muss, wo es Hilfe gibt – mit der Bitte, Bescheid zu geben, wenn es in der Familie gerade einen Verlust gibt.",
-          "Mit dem SePAS absprechen, dass während der Stunde jemand erreichbar ist; wenn möglich hält eine Person des SePAS die Stunde mit – vor allem, wenn die Lehrkraft selbst gerade einen Verlust verarbeitet.",
-          "Den Ruheplatz festlegen: ein Tisch am Fenster mit Wasser und Taschentüchern oder ein Stuhl vor der offenen Tür, in Sichtweite.",
-          "Die Verlustkarten lesen: Ähnelt eine Karte der Lage einer Person in der Klasse, sie gegen die sechste Karte tauschen oder Namen und Einzelheiten ändern.",
-          "Die Pendel-Linie vor der Tafel kleben, die Plakate aufhängen, die Fragenbox neben die Tür stellen und die Moderationskarten für die Trostwand an die Tür legen."
+          "Mit Régent und SePAS klären, wer gerade einen Verlust erlebt; diese Jugendlichen vorher ansprechen und wählen lassen.",
+          "Nach einem Todesfall im Lycée oder einem Suizid im Umfeld nur nach Absprache mit SePAS und Direktion halten.",
+          "Elternbrief zum Kapitel (mit SePAS und Direktion) – mit der Bitte, einen Verlust in der Familie zu melden.",
+          "SePAS erreichbar oder dabei; Ruheplatz festlegen; Karten schneiden, Pendel-Linie kleben, Plakate aufhängen."
         ],
         "ablauf": [
           {
@@ -136,7 +125,7 @@
             "titel": "Rückblick und Rahmen für das Kapitel",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Eine Person liest ihren Satz aus dem Skills-Pass der letzten Stunde vor – dort ging es um Fehler und das Wort „noch“. Dann das neue Kapitel nennen und an die Tafel schreiben: „Schwere Gefühle – Was tun mit Trauer, Scham und Einsamkeit?“ Vier Stunden: Trauer, Scham und Schuld, Einsamkeit und zum Schluss, was man tut, wenn es einem richtig schlecht geht. Das Rahmen-Plakat vorlesen und jeden Punkt in einem Satz begründen (Liste). Den Ruheplatz zeigen und die Fragenbox neben der Tür: Fragen ohne Namen werden in der nächsten Stunde beantwortet, nachdem die Lehrkraft sie mit dem SePAS angeschaut hat.",
+            "text": "Eine Person liest ihren Satz aus dem Skills-Pass der letzten Stunde vor – dort ging es um Fehler und das Wort „noch“. Dann das neue Kapitel nennen und an die Tafel schreiben: „Schwere Gefühle – Was tun mit Trauer, Scham und Einsamkeit?“ Vier Stunden: Trauer, Scham und Schuld, Einsamkeit und zum Schluss, was man tut, wenn es einem richtig schlecht geht. Das Rahmen-Plakat vorlesen und jeden Punkt in einem Satz begründen (Liste); es hängt in allen vier Stunden des Kapitels. Den Ruheplatz zeigen und die Fragenbox neben der Tür: Fragen ohne Namen werden in der nächsten Stunde beantwortet, nachdem die Lehrkraft sie mit dem SePAS angeschaut hat.",
             "sagen": [
               "In den nächsten vier Wochen geht es um Gefühle, über die man selten spricht. Ihr müsst dabei nichts von euch erzählen – wir arbeiten mit ausgedachten Personen.",
               "Trotzdem kann euch etwas nahegehen. Dann dürft ihr jederzeit an den Ruheplatz, ohne etwas zu erklären."
@@ -148,7 +137,7 @@
               "Was hier gesagt wird, bleibt hier. Ist jemand in Gefahr, holt die Lehrkraft Hilfe und sagt es der Person vorher.",
               "Fragen, die ihr nicht laut stellen wollt, kommen ohne Namen in die Fragenbox."
             ],
-            "tipp": "Den Rahmen nicht herunterlesen, sondern kurz begründen: Jugendliche nehmen Regeln ernster, wenn sie merken, dass die Regeln sie schützen. Das Plakat hängt in allen vier Stunden des Kapitels.",
+            "tipp": "Den Rahmen nicht herunterlesen, sondern kurz begründen: Jugendliche nehmen Regeln ernster, wenn sie merken, dass die Regeln sie schützen. Zettel aus der Fragenbox, die auf eine Gefährdung hindeuten, noch am selben Tag mit dem SePAS besprechen, nicht erst in der nächsten Stunde.",
             "wennEsKippt": "Kommt ein Spruch wie „Wird das jetzt Therapie?“, gelassen antworten: Nein – es geht um Wissen und Werkzeuge, nicht um eure Geschichten. Oft ist das die Aufregung vor einem ernsten Thema; ein kurzer Lacher darf sein, dann geht es ruhig weiter."
           },
           {
@@ -227,7 +216,7 @@
               ]
             },
             "tipp": "Die Linie in der Mitte ist gewollt: Viele Tage gehören auf beide Seiten, genau das ist die Botschaft. Ist vorne zu wenig Platz, bleiben alle am Platz stehen und zeigen mit dem Arm nach links oder rechts, mit beiden Armen für beides.",
-            "wennEsKippt": "Wird es albern und alle rennen hin und her, das Tempo herausnehmen: bei jedem Tag erst still bis drei zählen, dann auf ein Zeichen langsam gehen. Wer nicht aufstehen möchte, zeigt vom Platz aus.",
+            "wennEsKippt": "Wird es albern und alle rennen hin und her, das Tempo herausnehmen: bei jedem Tag erst still bis drei zählen, dann auf ein Zeichen langsam gehen. Erkennt sich jemand in Tiagos Geschichte wieder und wird still, vom Platz aus mitmachen lassen oder den Ruheplatz anbieten und nach der Stunde nachfragen.",
             "blatt": "ff5-wenn-etwas-fehlt"
           },
           {
@@ -309,7 +298,7 @@
               ]
             },
             "tipp": "Die Karten in der Mitte sind die wertvollsten: Sie zeigen, dass es auf die Person und den Moment ankommt. Wer unsicher ist, kann fast immer fragen: Magst du darüber reden – oder lieber etwas anderes machen?",
-            "wennEsKippt": "Streitet eine Gruppe laut über eine Karte, das würdigen: Genau darum geht es. Die Karte kommt in die Mitte, und die Gruppe nennt in der Auswertung beide Gründe. Macht sich jemand über die Sätze lustig, zurückfragen: Was würdest du denn sagen? Oft kommt dann ein guter Satz.",
+            "wennEsKippt": "Streitet eine Gruppe über eine Karte – etwa über den besseren Ort –, das würdigen: Genau darum geht es. Glaubensfragen nicht entscheiden; es zählt, was der trauernden Person Halt gibt, und die Karte kommt in die Mitte. Macht sich jemand über die Sätze lustig, zurückfragen: Was würdest du denn sagen? Oft kommt dann ein guter Satz.",
             "blatt": "ff5-trauer-karten"
           },
           {
@@ -335,7 +324,7 @@
             "titel": "Léas Nachricht – und wann Erwachsene helfen",
             "dauer": 8,
             "phase": "uebung",
-            "text": "Den Kasten „Was Trauernden meistens hilft“ auf dem Blatt kurz lesen. Dann schreibt jede Person allein in Aufgabe 3 Léas erste Nachricht an Tiago und ihre Antwort auf seine (4 Min.); zwei, drei Freiwillige lesen vor. Zum Schluss gemeinsam den Kasten „Wann Trauer mehr Hilfe braucht“ lesen und klären: Einem Erwachsenen Bescheid zu sagen, wenn es einem Freund lange sehr schlecht geht, ist kein Verrat, sondern Freundschaft. Auf das Hilfe-Plakat zeigen: Wo ist der SePAS, wann ist er da? (3 Min.)",
+            "text": "Den Kasten „Was Trauernden meistens hilft“ auf dem Blatt kurz lesen. Dann schreibt jede Person allein in Aufgabe 3 Léas erste Nachricht an Tiago und ihre Antwort auf seine (4 Min.); zwei, drei Freiwillige lesen vor. Zum Schluss gemeinsam den Kasten „Wann Trauer mehr Hilfe braucht“ lesen und klären: Einem Erwachsenen Bescheid zu sagen, wenn es einem Freund lange sehr schlecht geht, ist kein Verrat, sondern Freundschaft. Auf das Hilfe-Plakat zeigen: Raum und Sprechzeiten des SePAS, Kanner- a Jugendtelefon 116 111 (3 Min.).",
             "sagen": [
               "Kurz und ehrlich reicht. Eine gute Nachricht setzt Tiago nicht unter Druck, sofort zu antworten.",
               "Wenn Tiago über Wochen kaum isst, nicht mehr kommt oder sagt, er will bei seinem Avô sein, ist das zu groß für Léa allein. Dann holt sie einen Erwachsenen dazu – genau das ist Freundschaft."
@@ -383,7 +372,7 @@
           "Worden, J. W. (2009). Grief Counseling and Grief Therapy (4th ed.). New York: Springer.",
           "Bagwell, C. L. & Schmidt, M. E. (2011). Friendships in Childhood and Adolescence. New York: Guilford."
         ],
-        "achtung": "Verluste sind in jeder Klasse häufig und oft nicht bekannt: niemanden nach eigenen Verlusten fragen, keine Erinnerungsübung mit persönlichen Inhalten. Wer gerade trauert, entscheidet nach dem Vorgespräch selbst, wie er oder sie teilnimmt. Erzählt jemand von einem eigenen Verlust oder wird es jemandem zu viel – er verstummt, weint, albert auffällig oder will hinaus –, würdigen, nicht vor der Klasse vertiefen, den Ruheplatz anbieten, nach der Stunde das Gespräch suchen und den SePAS noch am selben Tag informieren. Mehr Hilfe braucht es, wenn Trauer über Wochen den Alltag lähmt, jemand kaum schläft oder isst, Alkohol oder Drogen nimmt, um nichts zu spüren, oder sagt, er wolle bei der verstorbenen Person sein: ruhig ansprechen, nichts versprechen, noch am selben Tag den SePAS einbeziehen und nach dem Schutzkonzept der Schule handeln; bei akuter Gefahr 112 rufen und die Person nicht allein lassen. Zettel aus der Fragenbox, die auf eine Gefährdung hindeuten, sofort mit dem SePAS besprechen. Trauerbräuche und Glaubensvorstellungen sind verschieden: alle gelten lassen. Die Lehrkraft muss das nicht allein klären.",
+        "achtung": "Niemanden nach eigenen Verlusten fragen. Wer gerade trauert, wählt im Vorgespräch: ganz dabei, mit Pausen, still zuhörend oder beim SePAS. Wird es jemandem zu viel (verstummt, weint, albert) oder erzählt jemand Eigenes: würdigen, nicht vertiefen, Ruheplatz anbieten, nach der Stunde sprechen, SePAS am selben Tag informieren. Mehr Hilfe ist nötig, wenn Trauer über Wochen den Alltag lähmt, jemand kaum schläft oder isst, Drogen nimmt oder bei der verstorbenen Person sein will: SePAS am selben Tag, Schutzkonzept der Schule; bei akuter Gefahr 112, nicht allein lassen.",
         "differenzierung": {
           "leichter": "Die Verlustkarte liest eine Person der Gruppe vor, die gut liest; auf den Moderationskarten reichen Stichworte. In Aufgabe 3 darf ein Satz aus dem Kasten „Was Trauernden meistens hilft“ übernommen werden. Den Wortspeicher an der Tafel stehen lassen.",
           "schwerer": "Beschreiben, wie das Pendel nach einem Umzug oder dem Ende einer Freundschaft aussieht: Was wäre dort Vermissen, was Alltag? Oder im Rollenspiel die Beobachtung für die ganze Klasse übernehmen und am Ende die drei wichtigsten Punkte zusammenfassen."
@@ -392,34 +381,27 @@
       },
       "fr": {
         "titel": "Deuil et perte",
-        "kurz": "La perte a plusieurs visages – du déménagement au décès. Avec le balancier du deuil, la classe comprend les allers-retours entre manque et quotidien et s’entraîne à ce qui aide vraiment une personne en deuil.",
+        "kurz": "La perte a plusieurs visages. Avec le balancier du deuil, la classe comprend comment le deuil évolue et s’entraîne à ce qui aide vraiment.",
         "ziele": [
-          "reconnaissent, à partir d’exemples inventés, que la perte a plusieurs visages et que chaque chagrin est légitime",
-          "décrivent avec le balancier du deuil les allers-retours entre le manque et le quotidien, qui font tous deux partie du deuil",
-          "s’entraînent à des phrases et à de petits gestes qui aident un ami ou une amie en deuil",
-          "nomment des signes montrant qu’un deuil demande plus d’aide, et les lieux où la trouver"
+          "reconnaissent que la perte a plusieurs visages",
+          "décrivent le va-et-vient du deuil entre manque et quotidien",
+          "s’entraînent à des phrases et des gestes qui aident",
+          "nomment les signes qu’un deuil demande plus d’aide"
         ],
         "material": [
-          "Un cahier de l’élève par jeune (fiche « Quand quelque chose manque »)",
-          "Roue des émotions en affiche, gommettes : une par jeune",
-          "Cartons : un par jeune pour le mur du réconfort, quatre par îlot pour les cartes perte ; gros feutres, ruban adhésif",
-          "Affiche « Qu’est-ce qui console ? » (A2), affiche avec le cadre du chapitre (étape 2), affiche d’aide avec la salle et les horaires du SePAS et le Kanner- a Jugendtelefon 116 111",
-          "Modèle à photocopier « Cartes : deuil et perte » : les cartes perte une fois, les cartes phrases cinq fois, découpées, les cartes phrases dans cinq enveloppes",
-          "Ruban de masquage pour la ligne du balancier, deux panneaux A4 : « Le manque » et « Le quotidien »",
-          "Une chaise et un casque audio comme accessoires pour Tiago",
-          "Boîte à questions (boîte à chaussures avec une fente) et petits papiers",
-          "Mouchoirs et eau au coin calme",
-          "Tampon pour le Skills-Pass"
+          "Cahier de l’élève ; tampon Skills-Pass",
+          "Roue des émotions, 20 gommettes",
+          "40 cartons, feutres, ruban de masquage",
+          "Affiches : réconfort, cadre, aide",
+          "Cartes perte et phrases (modèle)",
+          "Deux panneaux A4 ; chaise, casque",
+          "Boîte à questions ; mouchoirs, eau"
         ],
         "vorbereitung": [
-          "Une semaine avant, vérifier avec le régent ou la régente et le SePAS si un jeune de la classe vit une perte récente – un décès, une séparation des parents, un déménagement, un placement hors de la famille.",
-          "Parler avant la séance en tête-à-tête avec ces jeunes, de préférence avec le SePAS : expliquer ce qui va se passer et les laisser choisir – participer pleinement, avec des pauses au coin calme, écouter sans intervenir, ou passer la séance au SePAS. Si leur situation ressemble à l’histoire de Tiago (décès d’un grand-parent), les en prévenir.",
-          "En cas de décès récent dans la classe ou au lycée, ou de suicide dans l’entourage, ne tenir la séance qu’en accord avec le SePAS et la direction, ou la reporter, et n’utiliser aucun exemple proche de la situation réelle.",
-          "Environ deux semaines avant, informer les parents par un court courrier, validé avec le SePAS et la direction, sur le chapitre « Émotions difficiles » (quatre séances, jusqu’à « Quand je vais mal ») : de quoi il s’agit, que personne ne doit raconter sa vie, où trouver de l’aide – en leur demandant de prévenir l’école si la famille vit une perte en ce moment.",
-          "Convenir avec le SePAS que quelqu’un reste joignable pendant la séance ; si possible, une personne du SePAS coanime – surtout si l’enseignant·e traverse soi-même un deuil.",
-          "Choisir le coin calme : une table près de la fenêtre avec de l’eau et des mouchoirs, ou une chaise devant la porte ouverte, à portée de vue.",
-          "Lire les cartes perte : si une carte ressemble à la situation d’un jeune de la classe, la remplacer par la sixième ou changer le prénom et les détails.",
-          "Coller la ligne du balancier devant le tableau, accrocher les affiches, poser la boîte à questions près de la porte et les cartons du mur du réconfort à l’entrée."
+          "Voir avec le régent ou la régente et le SePAS qui vit une perte ; parler avant à ces jeunes, les laisser choisir.",
+          "Après un décès au lycée ou un suicide dans l’entourage, ne tenir la séance qu’en accord avec le SePAS et la direction.",
+          "Courrier aux parents sur le chapitre (avec le SePAS et la direction), en demandant de signaler une perte récente.",
+          "SePAS joignable ou présent ; coin calme choisi ; cartes découpées, ligne collée, affiches accrochées."
         ],
         "ablauf": [
           {
@@ -490,7 +472,7 @@
             "titel": "Retour et cadre du chapitre",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Un jeune lit sa phrase du Skills-Pass de la dernière séance – il y était question des erreurs et du mot « pas encore ». Puis annoncer le nouveau chapitre et l’écrire au tableau : « Émotions difficiles – Que faire de la tristesse, de la honte et de la solitude ? » Quatre séances : le deuil, la honte et la culpabilité, la solitude et, pour finir, que faire quand on va vraiment mal. Lire l’affiche du cadre et justifier chaque point en une phrase (liste). Montrer le coin calme et la boîte à questions près de la porte : les questions sans nom reçoivent une réponse à la séance suivante, après avoir été lues avec le SePAS.",
+            "text": "Un jeune lit sa phrase du Skills-Pass de la dernière séance – il y était question des erreurs et du mot « pas encore ». Puis annoncer le nouveau chapitre et l’écrire au tableau : « Émotions difficiles – Que faire de la tristesse, de la honte et de la solitude ? » Quatre séances : le deuil, la honte et la culpabilité, la solitude et, pour finir, que faire quand on va vraiment mal. Lire l’affiche du cadre et justifier chaque point en une phrase (liste) ; elle reste au mur pendant les quatre séances du chapitre. Montrer le coin calme et la boîte à questions près de la porte : les questions sans nom reçoivent une réponse à la séance suivante, après avoir été lues avec le SePAS.",
             "sagen": [
               "Pendant les quatre prochaines semaines, on va aborder des émotions dont on parle rarement. Vous n’avez rien à raconter sur vous – on travaille avec des personnages inventés.",
               "Quelque chose peut quand même vous toucher. Dans ce cas, vous pouvez aller au coin calme à tout moment, sans rien expliquer."
@@ -502,7 +484,7 @@
               "Ce qui est dit ici reste ici. Si quelqu’un est en danger, l’adulte va chercher de l’aide et le dit d’abord à la personne.",
               "Les questions qu’on ne veut pas poser à voix haute vont, sans nom, dans la boîte à questions."
             ],
-            "tipp": "Ne pas lire le cadre d’une traite, mais le justifier brièvement : les jeunes prennent les règles plus au sérieux quand ils sentent qu’elles les protègent. L’affiche reste au mur pendant les quatre séances du chapitre.",
+            "tipp": "Ne pas lire le cadre d’une traite, mais le justifier brièvement : les jeunes prennent les règles plus au sérieux quand ils sentent qu’elles les protègent. Un papier de la boîte à questions qui laisse penser à un danger est vu le jour même avec le SePAS, sans attendre la séance suivante.",
             "wennEsKippt": "Si quelqu’un lance « C’est une thérapie, maintenant ? », répondre calmement : non – il s’agit de savoirs et d’outils, pas de vos histoires. C’est souvent la nervosité avant un sujet sérieux ; un petit rire peut passer, puis on continue calmement."
           },
           {
@@ -581,7 +563,7 @@
               ]
             },
             "tipp": "La ligne du milieu est voulue : beaucoup de jours vont des deux côtés, et c’est justement le message. S’il manque de place devant, tout le monde reste debout à sa place et montre la gauche ou la droite avec le bras, les deux bras pour « les deux ».",
-            "wennEsKippt": "Si ça devient chahuteur et que tout le monde court d’un côté à l’autre, ralentir : à chaque jour, compter d’abord jusqu’à trois en silence, puis avancer lentement au signal. Qui ne veut pas se lever montre depuis sa place.",
+            "wennEsKippt": "Si ça devient chahuteur et que tout le monde court d’un côté à l’autre, ralentir : à chaque jour, compter d’abord jusqu’à trois en silence, puis avancer lentement au signal. Si un jeune se reconnaît dans l’histoire de Tiago et se tait, le laisser participer depuis sa place ou lui proposer le coin calme, et prendre de ses nouvelles après le cours.",
             "blatt": "ff5-wenn-etwas-fehlt"
           },
           {
@@ -663,7 +645,7 @@
               ]
             },
             "tipp": "Les cartes du milieu sont les plus précieuses : elles montrent que tout dépend de la personne et du moment. En cas de doute, on peut presque toujours demander : tu as envie d’en parler – ou plutôt de faire autre chose ?",
-            "wennEsKippt": "Si un îlot se dispute bruyamment sur une carte, le saluer : c’est exactement le but. La carte va au milieu, et le groupe donne ses deux raisons lors de la mise en commun. Si quelqu’un se moque des phrases, lui retourner la question : et toi, qu’est-ce que tu dirais ? Souvent, une bonne phrase arrive.",
+            "wennEsKippt": "Si un îlot se dispute sur une carte – par exemple sur le monde meilleur –, le saluer : c’est exactement le but. Ne pas trancher les questions de croyance ; ce qui compte, c’est ce qui aide la personne en deuil à tenir, et la carte va au milieu. Si quelqu’un se moque des phrases, lui retourner la question : et toi, qu’est-ce que tu dirais ? Souvent, une bonne phrase arrive.",
             "blatt": "ff5-trauer-karten"
           },
           {
@@ -689,7 +671,7 @@
             "titel": "Le message de Léa – et quand les adultes aident",
             "dauer": 8,
             "phase": "uebung",
-            "text": "Lire rapidement l’encadré « Ce qui aide le plus souvent » sur la fiche. Puis chaque jeune écrit seul, dans l’exercice 3, le premier message de Léa à Tiago et sa réponse au sien (4 min) ; deux ou trois volontaires lisent. Pour finir, lire ensemble l’encadré « Quand le deuil demande plus d’aide » et clarifier : prévenir un adulte quand un ami va très mal depuis longtemps, ce n’est pas trahir, c’est de l’amitié. Montrer l’affiche d’aide : où est le SePAS, quand est-il là ? (3 min)",
+            "text": "Lire rapidement l’encadré « Ce qui aide le plus souvent » sur la fiche. Puis chaque jeune écrit seul, dans l’exercice 3, le premier message de Léa à Tiago et sa réponse au sien (4 min) ; deux ou trois volontaires lisent. Pour finir, lire ensemble l’encadré « Quand le deuil demande plus d’aide » et clarifier : prévenir un adulte quand un ami va très mal depuis longtemps, ce n’est pas trahir, c’est de l’amitié. Montrer l’affiche d’aide : salle et horaires du SePAS, Kanner- a Jugendtelefon 116 111 (3 min).",
             "sagen": [
               "Court et sincère, ça suffit. Un bon message ne met pas Tiago sous pression pour répondre tout de suite.",
               "Si Tiago mange à peine pendant des semaines, ne vient plus ou dit qu’il veut être avec son avô, c’est trop lourd pour Léa seule. Alors elle va chercher un adulte – c’est justement ça, l’amitié."
@@ -737,7 +719,7 @@
           "Worden, J. W. (2009). Grief Counseling and Grief Therapy (4th ed.). New York: Springer.",
           "Bagwell, C. L. & Schmidt, M. E. (2011). Friendships in Childhood and Adolescence. New York: Guilford."
         ],
-        "achtung": "Les pertes sont fréquentes dans chaque classe et souvent inconnues : ne demander à personne de parler de ses propres pertes, aucun exercice de souvenir à contenu personnel. Un jeune en deuil décide lui-même, après l’entretien préalable, comment il participe. Si un jeune parle d’une perte personnelle ou si c’est trop pour lui – il se tait soudain, pleure, fait le pitre ou veut sortir –, le remercier, ne pas approfondir devant la classe, proposer le coin calme, chercher l’échange après le cours et informer le SePAS le jour même. Il faut plus d’aide quand le deuil paralyse le quotidien pendant des semaines, qu’un jeune ne dort ou ne mange presque plus, prend de l’alcool ou des drogues pour ne plus rien sentir, ou dit qu’il voudrait être avec la personne décédée : lui parler calmement, ne rien promettre, faire appel au SePAS le jour même et agir selon le protocole de protection de l’école ; en cas de danger immédiat, appeler le 112 et ne pas laisser la personne seule. Les papiers de la boîte à questions qui laissent penser à un danger sont vus tout de suite avec le SePAS. Les rites de deuil et les croyances varient : les respecter tous. Ce n’est pas à l’enseignant·e de régler cela sans aide.",
+        "achtung": "N’interroger personne sur ses propres pertes. Un jeune en deuil choisit à l’entretien préalable : participer, faire des pauses, écouter seulement ou rester au SePAS. Si c’est trop pour quelqu’un (silence, larmes, pitreries) ou s’il parle de lui : remercier, ne pas approfondir, proposer le coin calme, lui parler après le cours, informer le SePAS le jour même. Plus d’aide est nécessaire si le deuil paralyse le quotidien depuis des semaines, si le jeune dort ou mange à peine, prend des drogues ou veut être avec la personne décédée : SePAS le jour même, protocole de protection de l’école ; danger immédiat : 112, ne pas le laisser seul.",
         "differenzierung": {
           "leichter": "Dans chaque îlot, un jeune qui lit bien lit la carte perte ; sur les cartons, des mots-clés suffisent. Pour l’exercice 3, on peut reprendre une phrase de l’encadré « Ce qui aide le plus souvent ». Laisser le lexique au tableau.",
           "schwerer": "Décrire à quoi ressemble le balancier après un déménagement ou la fin d’une amitié : qu’est-ce qui serait le manque, qu’est-ce qui serait le quotidien ? Ou, pendant le jeu de rôle, observer pour toute la classe et résumer à la fin les trois points les plus importants."
