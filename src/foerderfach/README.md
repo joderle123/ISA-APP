@@ -17,7 +17,7 @@ steht an einer Stelle (`FACH` in `fach.ts`).
 | `fach.ts` | Name, Farben je Klassenstufe, die fünf Kompetenzbereiche (CASEL), Phasen, kurze Texte DE/FR |
 | `daten.ts` | lädt alles aus `src/data/foerderfach` |
 | `pdf/teile.tsx` | Kopf, Fuß, Überschriften, Kompetenz-Punkte, Deckblatt |
-| `pdf/Handbuch.tsx` | Lehrerhandbuch: Teil A (Fach), Teil B (Jahrespläne), Teil C (Einheiten) |
+| `pdf/Handbuch.tsx` | Booklet je Klassenstufe (Lehrerhandbuch 7e, 6e, 5e): Teil A (Fach), Teil B (Jahresplan), Teil C (Einheiten, falls ausgearbeitet), Kopiervorlagen, Notizen, Rückseite |
 | `pdf/Schuelerheft.tsx` | Schülerheft: Deckblatt, Blätter für jede Stunde, Blätter der Einheiten |
 | `src/data/foerderfach/plan-7e.json` … `plan-5e.json` | Jahrespläne: Ziele je Kompetenzbereich, Kapitel mit Trimester, 35 Doppelstunden |
 | `src/data/foerderfach/einheiten-7e.json` | ausgearbeitete Einheiten (Deutsch und Französisch in einer Einheit) |
@@ -27,9 +27,11 @@ steht an einer Stelle (`FACH` in `fach.ts`).
 ## Befehle
 
 - Prüfen: `npm run foerderfach:pruefen` (Nummern, Trimester, Minuten, DE/FR gleich aufgebaut, Quellen, Stil)
-- PDFs: `npm run foerderfach:pdf -- [ordner] [--png]` → Lehrerhandbuch und Schülerheft 7e, DE und FR,
-  standardmäßig in `tmp/foerderfach` (nicht im Repo). Das Skript prüft, dass die Seitenzahlen im
-  Inhaltsverzeichnis und die Verweise ins Schülerheft stimmen.
+- PDFs: `npm run foerderfach:pdf -- [ordner] [--png]` → drei Booklets (7e, 6e, 5e) und das Schülerheft 7e,
+  jeweils DE und FR, standardmäßig in `tmp/foerderfach` (nicht im Repo). Das Skript prüft, dass die
+  Seitenzahlen im Inhalt und die Verweise auf die Kopiervorlagen stimmen und dass jedes Booklet eine
+  durch 4 teilbare Seitenzahl hat (Druck als Broschüre, z. B. auf A3 gefaltet zu A4).
+- Kopiervorlagen jedes Booklets: `VORLAGEN` in `daten.ts`, dazu die Blätter der ausgearbeiteten Einheiten.
 
 ## Regeln für neue Einheiten
 

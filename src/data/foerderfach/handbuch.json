@@ -2,27 +2,58 @@
   "de": {
     "vorwort": {
       "titel": "Zu diesem Entwurf",
-      "text": "Dieses Muster zeigt Aufbau und Gestaltung des Lehrerhandbuchs: die Grundlagen des Fachs, die drei Jahrespläne und eine vollständig ausgearbeitete Einheit. Die fertigen Handbücher enthalten für jede Klassenstufe alle 35 Einheiten in diesem Format, das Schülerheft alle Blätter."
+      "mitEinheit": "Dieses Heft zeigt Aufbau und Gestaltung des Lehrerhandbuchs für die {klasse}: die Grundlagen des Fachs, den Jahresplan, eine vollständig ausgearbeitete Einheit und die Kopiervorlagen für das Schülerheft. Das fertige Handbuch enthält alle 35 Einheiten in diesem Format.",
+      "ohneEinheit": "Dieses Heft zeigt Aufbau und Gestaltung des Lehrerhandbuchs für die {klasse}: die Grundlagen des Fachs, den Jahresplan und die Kopiervorlagen für jede Stunde. Die ausgearbeiteten Einheiten folgen im fertigen Handbuch – im selben Format wie die Muster-Einheit der 7e."
     },
     "ueberblick": {
       "titel": "Das Fach auf einen Blick",
       "einleitung": "Skills fir d’Liewen ist das Fach für sozio-emotionales Lernen in der Voie de préparation. In einer Doppelstunde pro Woche lernen die Jugendlichen, Gefühle zu verstehen, mit Stress und Wut umzugehen, gut miteinander zu reden, Grenzen zu setzen und verantwortlich zu entscheiden. Das Fach übt, statt zu predigen: Jede Stunde enthält Bewegung, Austausch und einen Skill zum Ausprobieren.",
       "fakten": [
-        { "zahl": "3", "text": "Jahre: 7e, 6e und 5e" },
-        { "zahl": "35", "text": "Doppelstunden pro Jahr" },
-        { "zahl": "100", "text": "Minuten pro Einheit, immer gleich aufgebaut" },
-        { "zahl": "5", "text": "Kompetenzbereiche nach CASEL" },
-        { "zahl": "0", "text": "Noten – Rückmeldung über Skills-Pass und Selbsteinschätzung" },
-        { "zahl": "2", "text": "Sprachen: Deutsch und Französisch" }
+        {
+          "zahl": "3",
+          "text": "Jahre: 7e, 6e und 5e"
+        },
+        {
+          "zahl": "35",
+          "text": "Doppelstunden pro Jahr"
+        },
+        {
+          "zahl": "100",
+          "text": "Minuten pro Einheit, immer gleich aufgebaut"
+        },
+        {
+          "zahl": "5",
+          "text": "Kompetenzbereiche nach CASEL"
+        },
+        {
+          "zahl": "0",
+          "text": "Noten – Rückmeldung über Skills-Pass und Selbsteinschätzung"
+        },
+        {
+          "zahl": "2",
+          "text": "Sprachen: Deutsch und Französisch"
+        }
       ],
       "wirkung": {
         "titel": "Warum das Fach wirkt",
         "text": "Schulprogramme, die sozial-emotionale Kompetenzen Schritt für Schritt aufbauen, verbessern Verhalten, Klassenklima und auch die Schulleistungen (Durlak et al., 2011); die Effekte sind noch Jahre später messbar (Taylor et al., 2017). Am besten wirken Programme mit vier Merkmalen – nach ihnen ist das Fach gebaut:",
         "punkte": [
-          { "titel": "Schritt für Schritt", "text": "Die Einheiten bauen aufeinander auf – über drei Jahre vom Ich über das Wir zur Welt." },
-          { "titel": "Aktiv", "text": "Rollenspiele, Aufstellungen, Experimente: Skills werden geübt, nicht nur besprochen." },
-          { "titel": "Fokussiert", "text": "Jede Einheit hat ein klares Ziel und genug Zeit zum Üben." },
-          { "titel": "Ausdrücklich", "text": "Die Jugendlichen wissen, was sie lernen und wozu – der Skills-Pass hält es fest." }
+          {
+            "titel": "Schritt für Schritt",
+            "text": "Die Einheiten bauen aufeinander auf – über drei Jahre vom Ich über das Wir zur Welt."
+          },
+          {
+            "titel": "Aktiv",
+            "text": "Rollenspiele, Aufstellungen, Experimente: Skills werden geübt, nicht nur besprochen."
+          },
+          {
+            "titel": "Fokussiert",
+            "text": "Jede Einheit hat ein klares Ziel und genug Zeit zum Üben."
+          },
+          {
+            "titel": "Ausdrücklich",
+            "text": "Die Jugendlichen wissen, was sie lernen und wozu – der Skills-Pass hält es fest."
+          }
         ]
       },
       "nicht": {
@@ -50,31 +81,93 @@
       "titel": "So läuft eine Doppelstunde",
       "einleitung": "Alle Einheiten folgen demselben Aufbau. Das gibt der Klasse Sicherheit und der Lehrkraft Routine: Nach wenigen Wochen laufen Check-in und Abschluss fast von selbst.",
       "ablauf": [
-        { "min": "0–10", "phase": "ankommen", "titel": "Check-in", "text": "Klebepunkt am Gefühlsrad beim Hereinkommen, zwei oder drei Stimmen dazu; ab Einheit 13 mit der Anspannung von 0 bis 100." },
-        { "min": "10–15", "phase": "bruecke", "titel": "Brücke", "text": "Rückblick auf die letzte Stunde, das Thema von heute nennen." },
-        { "min": "15–45", "phase": "uebung", "titel": "Hauptteil 1", "text": "Kurzer Input, dann eine erste Übung – oft erst allein, dann zu zweit." },
-        { "min": "45–50", "phase": "aktiv", "titel": "Bewegungspause", "text": "Fünf Minuten aufstehen und bewegen; entfällt, wenn die große Pause dazwischen liegt." },
-        { "min": "50–85", "phase": "uebung", "titel": "Hauptteil 2", "text": "Gruppenarbeit, Rollenspiel, Stationen oder Aufstellung – in Gruppen zu vier oder fünf." },
-        { "min": "85–95", "phase": "skill", "titel": "Skill", "text": "Ein Skill oder eine kurze Achtsamkeitsübung zum Runterkommen." },
-        { "min": "95–100", "phase": "abschluss", "titel": "Abschluss", "text": "Ein Satz im Skills-Pass, Blitzlicht, Ausblick." }
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in",
+          "text": "Klebepunkt am Gefühlsrad beim Hereinkommen, zwei oder drei Stimmen dazu; ab Einheit 13 mit der Anspannung von 0 bis 100."
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Brücke",
+          "text": "Rückblick auf die letzte Stunde, das Thema von heute nennen."
+        },
+        {
+          "min": "15–45",
+          "phase": "uebung",
+          "titel": "Hauptteil 1",
+          "text": "Kurzer Input, dann eine erste Übung – oft erst allein, dann zu zweit."
+        },
+        {
+          "min": "45–50",
+          "phase": "aktiv",
+          "titel": "Bewegungspause",
+          "text": "Fünf Minuten aufstehen und bewegen; entfällt, wenn die große Pause dazwischen liegt."
+        },
+        {
+          "min": "50–85",
+          "phase": "uebung",
+          "titel": "Hauptteil 2",
+          "text": "Gruppenarbeit, Rollenspiel, Stationen oder Aufstellung – in Gruppen zu vier oder fünf."
+        },
+        {
+          "min": "85–95",
+          "phase": "skill",
+          "titel": "Skill",
+          "text": "Ein Skill oder eine kurze Achtsamkeitsübung zum Runterkommen."
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Abschluss",
+          "text": "Ein Satz im Skills-Pass, Blitzlicht, Ausblick."
+        }
       ],
       "rituale": {
         "titel": "Drei Rituale für drei Jahre",
         "punkte": [
-          { "titel": "Check-in mit dem Gefühlsrad", "text": "Jede Stunde beginnt mit der Frage: Wie geht es dir gerade? Ein Punkt am Plakat genügt." },
-          { "titel": "Skills-Pass", "text": "Am Ende jeder Stunde ein Satz: Was nehme ich mit? Die Einträge werden nicht bewertet." },
-          { "titel": "Blitzlicht", "text": "Zum Schluss ein Wort pro Person, ohne Kommentar. „Weiter“ ist erlaubt." }
+          {
+            "titel": "Check-in mit dem Gefühlsrad",
+            "text": "Jede Stunde beginnt mit der Frage: Wie geht es dir gerade? Ein Punkt am Plakat genügt."
+          },
+          {
+            "titel": "Skills-Pass",
+            "text": "Am Ende jeder Stunde ein Satz: Was nehme ich mit? Die Einträge werden nicht bewertet."
+          },
+          {
+            "titel": "Blitzlicht",
+            "text": "Zum Schluss ein Wort pro Person, ohne Kommentar. „Weiter“ ist erlaubt."
+          }
         ]
       },
       "klasse": {
         "titel": "Mit zwanzig Jugendlichen arbeiten",
         "punkte": [
-          { "titel": "Erst allein, dann zu zweit, dann alle", "text": "So denken alle nach, bevor die Lautesten antworten." },
-          { "titel": "Feste Tischgruppen", "text": "Gruppen zu vier für ein Kapitel; danach neu mischen, zum Beispiel über Geburtstage oder Karten." },
-          { "titel": "Rollen in Gruppen", "text": "Zeit, Schreiben, Vortragen, Material – jede Person hat eine Aufgabe." },
-          { "titel": "Ein Ruhesignal", "text": "Hand heben oder Klangschale, das ganze Jahr dasselbe." },
-          { "titel": "Freiwilligkeit", "text": "Persönliches wird nie verlangt. Geschrieben wird ins Heft, vorgelesen nur, wer möchte." },
-          { "titel": "Beispiele statt Bekenntnisse", "text": "Gearbeitet wird mit erfundenen Figuren und Situationen – nah am Alltag, aber nie über einzelne Jugendliche." }
+          {
+            "titel": "Erst allein, dann zu zweit, dann alle",
+            "text": "So denken alle nach, bevor die Lautesten antworten."
+          },
+          {
+            "titel": "Feste Tischgruppen",
+            "text": "Gruppen zu vier für ein Kapitel; danach neu mischen, zum Beispiel über Geburtstage oder Karten."
+          },
+          {
+            "titel": "Rollen in Gruppen",
+            "text": "Zeit, Schreiben, Vortragen, Material – jede Person hat eine Aufgabe."
+          },
+          {
+            "titel": "Ein Ruhesignal",
+            "text": "Hand heben oder Klangschale, das ganze Jahr dasselbe."
+          },
+          {
+            "titel": "Freiwilligkeit",
+            "text": "Persönliches wird nie verlangt. Geschrieben wird ins Heft, vorgelesen nur, wer möchte."
+          },
+          {
+            "titel": "Beispiele statt Bekenntnisse",
+            "text": "Gearbeitet wird mit erfundenen Figuren und Situationen – nah am Alltag, aber nie über einzelne Jugendliche."
+          }
         ]
       }
     },
@@ -82,10 +175,22 @@
       "titel": "Rahmen und Sicherheit",
       "einleitung": "In diesem Fach geht es um Gefühle, Freundschaft, Familie und manchmal um schwere Themen. Ein klarer Rahmen schützt die Jugendlichen – und die Lehrkraft.",
       "grundsaetze": [
-        { "titel": "Freiwillig", "text": "Niemand muss Persönliches erzählen; „weiter“ ist immer erlaubt. Persönliche Schreibaufgaben werden weder eingesammelt noch vorgelesen." },
-        { "titel": "Keine Tiefenbohrung", "text": "Belastendes wird nicht vor der Klasse vertieft, sondern nach der Stunde unter vier Augen aufgegriffen." },
-        { "titel": "Vertraulich – mit Grenze", "text": "Was erzählt wird, bleibt in der Klasse. Ist jemand in Gefahr, muss die Lehrkraft handeln – das sagt sie von Anfang an offen." },
-        { "titel": "Sensible Einheiten", "text": "Im Jahresplan markiert: mit dem SePAS gemeinsam planen und die Eltern vorab informieren." }
+        {
+          "titel": "Freiwillig",
+          "text": "Niemand muss Persönliches erzählen; „weiter“ ist immer erlaubt. Persönliche Schreibaufgaben werden weder eingesammelt noch vorgelesen."
+        },
+        {
+          "titel": "Keine Tiefenbohrung",
+          "text": "Belastendes wird nicht vor der Klasse vertieft, sondern nach der Stunde unter vier Augen aufgegriffen."
+        },
+        {
+          "titel": "Vertraulich – mit Grenze",
+          "text": "Was erzählt wird, bleibt in der Klasse. Ist jemand in Gefahr, muss die Lehrkraft handeln – das sagt sie von Anfang an offen."
+        },
+        {
+          "titel": "Sensible Einheiten",
+          "text": "Im Jahresplan markiert: mit dem SePAS gemeinsam planen und die Eltern vorab informieren."
+        }
       ],
       "anvertrauen": {
         "titel": "Wenn sich jemand anvertraut",
@@ -101,11 +206,26 @@
         "titel": "Hilfe in Luxemburg",
         "text": "Im Lycée: der SePAS. Außerhalb, auch anonym:",
         "nummern": [
-          { "name": "Kanner- a Jugendtelefon (anonym, kostenlos)", "nummer": "116 111" },
-          { "name": "BEE SECURE Helpline (Internet, Cybermobbing)", "nummer": "8002 1234" },
-          { "name": "SOS Détresse – Hilfe am Telefon", "nummer": "45 45 45" },
-          { "name": "Notruf: Rettung und Feuerwehr", "nummer": "112" },
-          { "name": "Polizei", "nummer": "113" }
+          {
+            "name": "Kanner- a Jugendtelefon (anonym, kostenlos)",
+            "nummer": "116 111"
+          },
+          {
+            "name": "BEE SECURE Helpline (Internet, Cybermobbing)",
+            "nummer": "8002 1234"
+          },
+          {
+            "name": "SOS Détresse – Hilfe am Telefon",
+            "nummer": "45 45 45"
+          },
+          {
+            "name": "Notruf: Rettung und Feuerwehr",
+            "nummer": "112"
+          },
+          {
+            "name": "Polizei",
+            "nummer": "113"
+          }
         ]
       },
       "noten": {
@@ -116,32 +236,68 @@
     "plaene": {
       "titel": "Die Jahrespläne",
       "einleitung": "Jedes Jahr hat 35 Einheiten für rund 36 Schulwochen. Wahleinheiten vertiefen ein Thema; fallen Stunden aus, entfallen zuerst sie. Die Kapitel bauen aufeinander auf – ihre Reihenfolge sollte bleiben."
+    },
+    "rueckseite": {
+      "titel": "Drei Jahre, ein roter Faden",
+      "text": "In der 7e lernen die Jugendlichen ihre Gefühle kennen und steuern, in der 6e setzen sie ihre Skills im Alltag ein, in der 5e planen sie ihren eigenen Weg. Jede Doppelstunde folgt demselben Aufbau – mit Ritualen, die Sicherheit geben, und Übungen, die im Alltag tragen.",
+      "dieses": "dieses Heft"
     }
   },
   "fr": {
     "vorwort": {
       "titel": "À propos de ce projet",
-      "text": "Ce modèle présente la structure et la mise en page du guide de l’enseignant : les bases de la matière, les trois plans annuels et une séance entièrement rédigée. Les guides définitifs contiendront, pour chaque niveau, les 35 séances dans ce format, et le cahier de l’élève toutes les fiches."
+      "mitEinheit": "Ce cahier présente la structure et la mise en page du guide de l’enseignant pour la {klasse} : les bases de la matière, le plan annuel, une séance entièrement rédigée et les modèles à photocopier pour le cahier de l’élève. Le guide définitif contiendra les 35 séances dans ce format.",
+      "ohneEinheit": "Ce cahier présente la structure et la mise en page du guide de l’enseignant pour la {klasse} : les bases de la matière, le plan annuel et les modèles à photocopier utilisés à chaque séance. Les séances rédigées suivront dans le guide définitif, dans le même format que la séance modèle de la 7e."
     },
     "ueberblick": {
       "titel": "La matière en bref",
       "einleitung": "Skills fir d’Liewen est la matière d’apprentissage socio-émotionnel de la voie de préparation. À raison d’une séance de deux heures par semaine, les jeunes apprennent à comprendre leurs émotions, à gérer le stress et la colère, à bien communiquer, à poser leurs limites et à décider de façon responsable. La matière fait pratiquer au lieu de faire la morale : chaque séance comporte du mouvement, des échanges et un skill à essayer.",
       "fakten": [
-        { "zahl": "3", "text": "années : 7e, 6e et 5e" },
-        { "zahl": "35", "text": "séances doubles par an" },
-        { "zahl": "100", "text": "minutes par séance, toujours la même structure" },
-        { "zahl": "5", "text": "domaines de compétences selon CASEL" },
-        { "zahl": "0", "text": "note – un retour par le Skills-Pass et l’auto-évaluation" },
-        { "zahl": "2", "text": "langues : allemand et français" }
+        {
+          "zahl": "3",
+          "text": "années : 7e, 6e et 5e"
+        },
+        {
+          "zahl": "35",
+          "text": "séances doubles par an"
+        },
+        {
+          "zahl": "100",
+          "text": "minutes par séance, toujours la même structure"
+        },
+        {
+          "zahl": "5",
+          "text": "domaines de compétences selon CASEL"
+        },
+        {
+          "zahl": "0",
+          "text": "note – un retour par le Skills-Pass et l’auto-évaluation"
+        },
+        {
+          "zahl": "2",
+          "text": "langues : allemand et français"
+        }
       ],
       "wirkung": {
         "titel": "Pourquoi la matière est efficace",
         "text": "Les programmes scolaires qui développent pas à pas les compétences socio-émotionnelles améliorent le comportement, le climat de classe et même les résultats scolaires (Durlak et al., 2011) ; les effets restent mesurables des années plus tard (Taylor et al., 2017). Les programmes les plus efficaces ont quatre caractéristiques – la matière est construite sur elles :",
         "punkte": [
-          { "titel": "Progressif", "text": "Les séances s’enchaînent – sur trois ans, du moi au nous, puis au monde." },
-          { "titel": "Actif", "text": "Jeux de rôle, positionnements, expériences : on exerce les skills au lieu d’en parler seulement." },
-          { "titel": "Ciblé", "text": "Chaque séance a un objectif clair et laisse assez de temps pour s’entraîner." },
-          { "titel": "Explicite", "text": "Les jeunes savent ce qu’ils apprennent et pourquoi – le Skills-Pass en garde la trace." }
+          {
+            "titel": "Progressif",
+            "text": "Les séances s’enchaînent – sur trois ans, du moi au nous, puis au monde."
+          },
+          {
+            "titel": "Actif",
+            "text": "Jeux de rôle, positionnements, expériences : on exerce les skills au lieu d’en parler seulement."
+          },
+          {
+            "titel": "Ciblé",
+            "text": "Chaque séance a un objectif clair et laisse assez de temps pour s’entraîner."
+          },
+          {
+            "titel": "Explicite",
+            "text": "Les jeunes savent ce qu’ils apprennent et pourquoi – le Skills-Pass en garde la trace."
+          }
         ]
       },
       "nicht": {
@@ -169,31 +325,93 @@
       "titel": "Le déroulement d’une séance double",
       "einleitung": "Toutes les séances suivent la même structure. La classe y gagne en sécurité et l’enseignant·e en routine : après quelques semaines, le tour d’humeur et la clôture se déroulent presque tout seuls.",
       "ablauf": [
-        { "min": "0–10", "phase": "ankommen", "titel": "Tour d’humeur", "text": "Une gommette sur la roue en entrant, deux ou trois voix ; dès la séance 13 avec la tension de 0 à 100." },
-        { "min": "10–15", "phase": "bruecke", "titel": "Lien", "text": "Retour sur la séance précédente, annonce du thème du jour." },
-        { "min": "15–45", "phase": "uebung", "titel": "Partie principale 1", "text": "Court apport, puis première activité – souvent seul d’abord, puis à deux." },
-        { "min": "45–50", "phase": "aktiv", "titel": "Pause active", "text": "Cinq minutes pour se lever et bouger ; supprimée si la récréation tombe entre les deux heures." },
-        { "min": "50–85", "phase": "uebung", "titel": "Partie principale 2", "text": "Travail de groupe, jeu de rôle, ateliers ou positionnement – en groupes de quatre ou cinq." },
-        { "min": "85–95", "phase": "skill", "titel": "Skill", "text": "Un skill ou un court exercice de pleine conscience pour se poser." },
-        { "min": "95–100", "phase": "abschluss", "titel": "Clôture", "text": "Une phrase dans le Skills-Pass, tour éclair, annonce de la suite." }
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Tour d’humeur",
+          "text": "Une gommette sur la roue en entrant, deux ou trois voix ; dès la séance 13 avec la tension de 0 à 100."
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Lien",
+          "text": "Retour sur la séance précédente, annonce du thème du jour."
+        },
+        {
+          "min": "15–45",
+          "phase": "uebung",
+          "titel": "Partie principale 1",
+          "text": "Court apport, puis première activité – souvent seul d’abord, puis à deux."
+        },
+        {
+          "min": "45–50",
+          "phase": "aktiv",
+          "titel": "Pause active",
+          "text": "Cinq minutes pour se lever et bouger ; supprimée si la récréation tombe entre les deux heures."
+        },
+        {
+          "min": "50–85",
+          "phase": "uebung",
+          "titel": "Partie principale 2",
+          "text": "Travail de groupe, jeu de rôle, ateliers ou positionnement – en groupes de quatre ou cinq."
+        },
+        {
+          "min": "85–95",
+          "phase": "skill",
+          "titel": "Skill",
+          "text": "Un skill ou un court exercice de pleine conscience pour se poser."
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Clôture",
+          "text": "Une phrase dans le Skills-Pass, tour éclair, annonce de la suite."
+        }
       ],
       "rituale": {
         "titel": "Trois rituels pour trois ans",
         "punkte": [
-          { "titel": "Tour d’humeur avec la roue", "text": "Chaque séance commence par la question : comment vas-tu ? Une gommette sur l’affiche suffit." },
-          { "titel": "Skills-Pass", "text": "À la fin de chaque séance, une phrase : qu’est-ce que j’emporte ? Les phrases ne sont pas évaluées." },
-          { "titel": "Tour éclair", "text": "Pour finir, un mot par jeune, sans commentaire. On peut dire « je passe »." }
+          {
+            "titel": "Tour d’humeur avec la roue",
+            "text": "Chaque séance commence par la question : comment vas-tu ? Une gommette sur l’affiche suffit."
+          },
+          {
+            "titel": "Skills-Pass",
+            "text": "À la fin de chaque séance, une phrase : qu’est-ce que j’emporte ? Les phrases ne sont pas évaluées."
+          },
+          {
+            "titel": "Tour éclair",
+            "text": "Pour finir, un mot par jeune, sans commentaire. On peut dire « je passe »."
+          }
         ]
       },
       "klasse": {
         "titel": "Travailler avec vingt jeunes",
         "punkte": [
-          { "titel": "Seul, à deux, puis tous", "text": "Ainsi, tout le monde réfléchit avant que les plus bavards répondent." },
-          { "titel": "Des îlots fixes", "text": "Des groupes de quatre pour un chapitre ; ensuite on mélange, par exemple par date d’anniversaire ou avec des cartes." },
-          { "titel": "Des rôles dans les groupes", "text": "Temps, écriture, présentation, matériel – chaque jeune a une tâche." },
-          { "titel": "Un signal de calme", "text": "Main levée ou bol chantant, le même toute l’année." },
-          { "titel": "Le volontariat", "text": "On n’exige jamais rien de personnel. On écrit dans le cahier ; seul lit à voix haute qui le souhaite." },
-          { "titel": "Des exemples plutôt que des confidences", "text": "On travaille avec des personnages et des situations inventés – proches du quotidien, mais jamais sur un jeune en particulier." }
+          {
+            "titel": "Seul, à deux, puis tous",
+            "text": "Ainsi, tout le monde réfléchit avant que les plus bavards répondent."
+          },
+          {
+            "titel": "Des îlots fixes",
+            "text": "Des groupes de quatre pour un chapitre ; ensuite on mélange, par exemple par date d’anniversaire ou avec des cartes."
+          },
+          {
+            "titel": "Des rôles dans les groupes",
+            "text": "Temps, écriture, présentation, matériel – chaque jeune a une tâche."
+          },
+          {
+            "titel": "Un signal de calme",
+            "text": "Main levée ou bol chantant, le même toute l’année."
+          },
+          {
+            "titel": "Le volontariat",
+            "text": "On n’exige jamais rien de personnel. On écrit dans le cahier ; seul lit à voix haute qui le souhaite."
+          },
+          {
+            "titel": "Des exemples plutôt que des confidences",
+            "text": "On travaille avec des personnages et des situations inventés – proches du quotidien, mais jamais sur un jeune en particulier."
+          }
         ]
       }
     },
@@ -201,10 +419,22 @@
       "titel": "Cadre et sécurité",
       "einleitung": "Cette matière parle d’émotions, d’amitié, de famille et parfois de sujets lourds. Un cadre clair protège les jeunes – et l’enseignant·e.",
       "grundsaetze": [
-        { "titel": "Volontaire", "text": "Personne n’est obligé de raconter quelque chose de personnel ; on peut toujours dire « je passe ». Les écrits personnels ne sont ni ramassés ni lus à voix haute." },
-        { "titel": "Pas d’approfondissement en classe", "text": "Ce qui est lourd n’est pas approfondi devant la classe, mais repris après le cours en tête-à-tête." },
-        { "titel": "Confidentiel – avec une limite", "text": "Ce qui est raconté reste dans la classe. Si quelqu’un est en danger, l’enseignant·e doit agir – et le dit ouvertement dès le début." },
-        { "titel": "Séances sensibles", "text": "Signalées dans le plan annuel : les préparer avec le SePAS et informer les parents au préalable." }
+        {
+          "titel": "Volontaire",
+          "text": "Personne n’est obligé de raconter quelque chose de personnel ; on peut toujours dire « je passe ». Les écrits personnels ne sont ni ramassés ni lus à voix haute."
+        },
+        {
+          "titel": "Pas d’approfondissement en classe",
+          "text": "Ce qui est lourd n’est pas approfondi devant la classe, mais repris après le cours en tête-à-tête."
+        },
+        {
+          "titel": "Confidentiel – avec une limite",
+          "text": "Ce qui est raconté reste dans la classe. Si quelqu’un est en danger, l’enseignant·e doit agir – et le dit ouvertement dès le début."
+        },
+        {
+          "titel": "Séances sensibles",
+          "text": "Signalées dans le plan annuel : les préparer avec le SePAS et informer les parents au préalable."
+        }
       ],
       "anvertrauen": {
         "titel": "Quand un jeune se confie",
@@ -220,11 +450,26 @@
         "titel": "De l’aide au Luxembourg",
         "text": "Au lycée : le SePAS. En dehors, aussi de façon anonyme :",
         "nummern": [
-          { "name": "Kanner- a Jugendtelefon (anonyme, gratuit)", "nummer": "116 111" },
-          { "name": "BEE SECURE Helpline (internet, cyberharcèlement)", "nummer": "8002 1234" },
-          { "name": "SOS Détresse – aide par téléphone", "nummer": "45 45 45" },
-          { "name": "Urgences : secours et pompiers", "nummer": "112" },
-          { "name": "Police", "nummer": "113" }
+          {
+            "name": "Kanner- a Jugendtelefon (anonyme, gratuit)",
+            "nummer": "116 111"
+          },
+          {
+            "name": "BEE SECURE Helpline (internet, cyberharcèlement)",
+            "nummer": "8002 1234"
+          },
+          {
+            "name": "SOS Détresse – aide par téléphone",
+            "nummer": "45 45 45"
+          },
+          {
+            "name": "Urgences : secours et pompiers",
+            "nummer": "112"
+          },
+          {
+            "name": "Police",
+            "nummer": "113"
+          }
         ]
       },
       "noten": {
@@ -235,6 +480,11 @@
     "plaene": {
       "titel": "Les plans annuels",
       "einleitung": "Chaque année compte 35 séances pour environ 36 semaines de cours. Les séances au choix approfondissent un thème ; si des heures tombent, elles sautent en premier. Les chapitres s’enchaînent – leur ordre devrait être respecté."
+    },
+    "rueckseite": {
+      "titel": "Trois ans, un fil rouge",
+      "text": "En 7e, les jeunes apprennent à connaître et à réguler leurs émotions ; en 6e, ils utilisent leurs skills au quotidien ; en 5e, ils préparent leur propre chemin. Chaque séance double suit la même structure – avec des rituels qui rassurent et des activités utiles au quotidien.",
+      "dieses": "ce cahier"
     }
   }
 }

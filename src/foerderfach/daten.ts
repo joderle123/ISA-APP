@@ -19,3 +19,7 @@ export const HANDBUCH = handbuch as HandbuchDatei
 
 export const BLAETTER: Blatt[] = blaetterListe as Blatt[]
 export const blattById = new Map(BLAETTER.map((b) => [b.id, b]))
+
+/** Kopiervorlagen, die in jedes Booklet gehören: Einstieg, die Blätter für jede Stunde und die Klassenvereinbarung
+ *  (die Einheit 1 jeder Klassenstufe stellt sie auf oder erneuert sie). */
+export const VORLAGEN = ['ff-das-fach', 'ff-gefuehlsrad', 'ff-skills-pass', 'ff-klassenvereinbarung']

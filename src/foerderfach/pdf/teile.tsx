@@ -13,7 +13,7 @@ import { SCHRIFT, SEITE, typo } from '../../blatt/pdf/stil'
 import { URHEBER } from '../../lib/urheber'
 import { CDSE_LOGO, CDSE_LOGO_SEITEN } from '../../lib/cdse-logo'
 import { FACH, KOMPETENZEN, STUFE_FARBEN, TX } from '../fach'
-import type { Jahresplan, Klasse, Kompetenz, Sprache } from '../typen'
+import type { HandbuchText, Jahresplan, Klasse, Kompetenz, Sprache } from '../typen'
 
 export const SEITE_B = 595.28
 export const BREITE = SEITE_B - SEITE.rand * 2
@@ -289,6 +289,94 @@ export function Deckblatt({ plan, sprache, art, felder }: { plan: Jahresplan; sp
           <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 6.5, color: NEUTRAL.sehrLeise, marginTop: 2 }}>{URHEBER[sprache]}</Text>
         </View>
       </View>
+    </Page>
+  )
+}
+
+// --- Notizen und Rückseite (Booklet) -----------------------------------------------------------
+
+/** Linierte Seite – füllt das Heft auf ein Vielfaches von 4 Seiten auf. */
+export function NotizenSeite({ klasse, sprache }: { klasse: Klasse; sprache: Sprache }) {
+  const t = TX[sprache]
+  const p = stufenPalette(klasse)
+  return (
+    <Page size="A4" style={seitenStil}>
+      <Kopf reiter={t.notizen} meta={`${FACH.name}  ·  ${t.lehrerhandbuch} ${klasse}`} p={p} />
+      <SeitenTitel titel={t.notizen} p={p} sprache={sprache} />
+      {Array.from({ length: 26 }, (_, i) => (
+        <View key={i} style={{ height: 24.5, borderBottomWidth: 0.6, borderBottomColor: NEUTRAL.rahmen }} />
+      ))}
+      <Fuss links={FACH.name} titel={t.notizen} sprache={sprache} />
+    </Page>
+  )
+}
+
+/** Rückseite: die drei Jahre (dieses Heft hervorgehoben), die fünf Kompetenzbereiche, Urheber und Stand. */
+export function Rueckseite({ plan, plaene, sprache, text, stand }: { plan: Jahresplan; plaene: Jahresplan[]; sprache: Sprache; text: HandbuchText; stand: string }) {
+  const t = TX[sprache]
+  const p = stufenPalette(plan.klasse)
+  const r = text.rueckseite
+  return (
+    <Page size="A4" style={{ padding: 0 }}>
+      <View style={{ paddingHorizontal: 48, paddingTop: 96 }}>
+        <Kleinlabel farbe={p.tief}>{`${FACH.voie[sprache]} · ${plaene.map((x) => x.klasse).join(' · ')}`}</Kleinlabel>
+        <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 30, lineHeight: 1.1, color: NEUTRAL.text, marginTop: 8, letterSpacing: -0.5 }}>{FACH.name}</Text>
+        <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 700, fontSize: 13, color: p.tief, marginTop: 4 }}>{FACH.untertitel[sprache]}</Text>
+        <View style={{ width: 40, height: 2, backgroundColor: WARM, marginTop: 18, marginBottom: 14 }} />
+        <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 15, color: NEUTRAL.text }}>{ty(r.titel, sprache)}</Text>
+        <Absatz groesse={10.4} style={{ marginTop: 5, lineHeight: 1.55 }}>
+          {ty(r.text, sprache)}
+        </Absatz>
+        <View style={{ flexDirection: 'row', marginTop: 22 }}>
+          {plaene.map((pl, i) => {
+            const aktiv = pl.klasse === plan.klasse
+            const f = STUFE_FARBEN[pl.klasse]
+            return (
+              <View key={pl.klasse} style={{ flex: 1, marginLeft: i ? 10 : 0, borderRadius: 10, padding: 12, backgroundColor: aktiv ? f.zart : NEUTRAL.flaeche, borderWidth: 1.2, borderColor: aktiv ? f.tief : NEUTRAL.flaeche }}>
+                <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+                  <View style={{ width: 32, height: 32, borderRadius: 8, backgroundColor: f.tief, alignItems: 'center', justifyContent: 'center' }}>
+                    <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 13, color: '#FFFFFF' }}>{pl.klasse}</Text>
+                  </View>
+                  {aktiv ? (
+                    <View style={{ marginLeft: 8, backgroundColor: f.tief, borderRadius: 4, paddingHorizontal: 5, paddingVertical: 1.5 }}>
+                      <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 6.6, letterSpacing: 0.6, color: '#FFFFFF' }}>{versal(r.dieses)}</Text>
+                    </View>
+                  ) : null}
+                </View>
+                <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 11, lineHeight: 1.2, color: NEUTRAL.text, marginTop: 8 }}>{ty(pl.titel[sprache], sprache)}</Text>
+                <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 8.2, lineHeight: 1.4, color: NEUTRAL.leise, marginTop: 2 }}>{ty(pl.untertitel[sprache], sprache)}</Text>
+              </View>
+            )
+          })}
+        </View>
+        <Kleinlabel style={{ marginTop: 26 }}>{t.kompetenzen}</Kleinlabel>
+        <View style={{ flexDirection: 'row', marginTop: 10 }}>
+          {KOMPETENZEN.map((k) => (
+            <View key={k.id} style={{ flex: 1, alignItems: 'center', paddingHorizontal: 3 }}>
+              <Plakette name={k.bild} d={32} farbe="#FFFFFF" grund={k.farbe} />
+              <Text style={{ fontFamily: SCHRIFT.jugend, fontWeight: 600, fontSize: 8, lineHeight: 1.3, color: NEUTRAL.text, marginTop: 5, textAlign: 'center' }}>{k.name[sprache]}</Text>
+            </View>
+          ))}
+        </View>
+        <Kleinlabel style={{ marginTop: 26 }}>{text.ueberblick.titel}</Kleinlabel>
+        <View style={{ flexDirection: 'row', marginTop: 10 }}>
+          {text.ueberblick.fakten.map((f, i) => (
+            <View key={i} style={{ flex: 1, alignItems: 'center', paddingHorizontal: 4, borderLeftWidth: i ? 0.6 : 0, borderLeftColor: NEUTRAL.haarlinie }}>
+              <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 20, lineHeight: 1.15, color: p.tief }}>{f.zahl}</Text>
+              {/* nur der Kern: „Jahre: 7e, 6e und 5e“ → „Jahre“ */}
+              <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 7.6, lineHeight: 1.3, color: NEUTRAL.leise, textAlign: 'center', marginTop: 1 }}>{ty(f.text.split(/\s*(?::|–|,)\s*/)[0], sprache)}</Text>
+            </View>
+          ))}
+        </View>
+      </View>
+      <View style={{ position: 'absolute', left: 48, right: 48, bottom: 50, flexDirection: 'row', alignItems: 'center', borderTopWidth: 0.6, borderTopColor: NEUTRAL.haarlinie, paddingTop: 10 }}>
+        <Image src={CDSE_LOGO} style={{ width: 30 * CDSE_LOGO_SEITEN, height: 30, marginRight: 12 }} />
+        <View style={{ flex: 1 }}>
+          <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 8, color: NEUTRAL.marke, letterSpacing: 0.3 }}>{URHEBER[sprache]}</Text>
+          <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 7.4, color: NEUTRAL.leise, marginTop: 2 }}>{t.stand(stand)}</Text>
+        </View>
+      </View>
+      <View style={{ position: 'absolute', left: 0, right: 0, bottom: 0, height: 20, backgroundColor: p.tief }} />
     </Page>
   )
 }

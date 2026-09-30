@@ -114,8 +114,8 @@ export interface TitelText {
 }
 
 export interface HandbuchText {
-  /** Kurzer Hinweis auf der Inhaltsseite (Entwurf, Aufbau) */
-  vorwort: TitelText
+  /** Kurzer Hinweis auf der Inhaltsseite (Entwurf, Aufbau); {klasse} wird ersetzt */
+  vorwort: { titel: string; mitEinheit: string; ohneEinheit: string }
   ueberblick: {
     titel: string
     einleitung: string
@@ -150,6 +150,8 @@ export interface HandbuchText {
     titel: string
     einleitung: string
   }
+  /** Rückseite des Hefts */
+  rueckseite: { titel: string; text: string; dieses: string }
 }
 
 export type HandbuchDatei = Record<Sprache, HandbuchText>

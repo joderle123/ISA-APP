@@ -1,16 +1,18 @@
 // ---------------------------------------------------------------------------
-// Lehrerhandbuch des Förderfachs als PDF:
+// Booklet je Klassenstufe (Lehrerhandbuch 7e, 6e, 5e) als PDF:
 //   Deckblatt · Inhalt
 //   Teil A  Das Fach (Überblick, Kompetenzbereiche, Doppelstunde, Rahmen)
-//   Teil B  Die Jahrespläne 7e, 6e, 5e
-//   Teil C  Ausgearbeitete Einheiten (Ziele, Material, Ablauf, Schritte)
-// Seitenzahlen im Inhalt kommen aus einem ersten Durchlauf (Marken), die
-// Verweise ins Schülerheft aus dessen Satz (siehe scripts/foerderfach.tsx).
+//   Teil B  Der Jahresplan der Klassenstufe
+//   Teil C  Ausgearbeitete Einheiten (falls vorhanden)
+//   Teil C/D Kopiervorlagen für das Schülerheft
+//   Notizen (füllen auf ein Vielfaches von 4 Seiten auf) · Rückseite
+// Seitenzahlen im Inhalt und die Verweise auf die Kopiervorlagen kommen aus
+// einem ersten Durchlauf (Marken, siehe scripts/foerderfach.tsx).
 // ---------------------------------------------------------------------------
 
 import { Document, Page, View, Text } from '@react-pdf/renderer'
 import type { Blatt } from '../../blatt/typen'
-import { blattInhalt } from '../../blatt/pdf/BlattDokument'
+import { BlattSeiten, blattInhalt } from '../../blatt/pdf/BlattDokument'
 import { NEUTRAL, type Palette } from '../../blatt/zeichnung'
 import { SCHRIFT } from '../../blatt/pdf/stil'
 import { QUELLEN } from '../../blatt/quellen'
@@ -29,8 +31,10 @@ import {
   KompetenzPunkte,
   Marke,
   type Marken,
+  NotizenSeite,
   Plakette,
   Punktliste,
+  Rueckseite,
   SeitenTitel,
   WARM,
   Zwischentitel,
@@ -41,17 +45,19 @@ import {
 } from './teile'
 
 export interface HandbuchDaten {
-  /** Klassenstufe des Handbuchs (Deckblatt, Farbe) */
-  klasse: Klasse
-  /** Alle Jahrespläne (Teil B zeigt alle drei) */
+  /** Alle Jahrespläne (die Kompetenzseite zeigt die Ziele aller drei Jahre) */
   plaene: Jahresplan[]
-  /** Ausgearbeitete Einheiten (Teil C) */
+  /** Alle ausgearbeiteten Einheiten; jedes Heft nimmt die seiner Klassenstufe */
   einheiten: Einheit[]
   text: Record<Sprache, HandbuchText>
   blaetter: Map<string, Blatt>
-  /** Seite jedes Blatts im Schülerheft (je Sprache) */
-  heftSeiten: Record<Sprache, Map<string, number>>
+  /** Kopiervorlagen, die in jedes Heft gehören (vor den Blättern der Einheiten) */
+  vorlagen: string[]
 }
+
+/** Platzhalter für Seitenzahlen im ersten Durchlauf – gleich breit wie die echten, damit sich nichts verschiebt */
+const PLATZHALTER = 88
+const vorlageId = (blatt: string) => `v-${blatt}`
 
 const ROT = '#B4533A'
 const ROT_ZART = '#FBF1EC'
@@ -93,14 +99,14 @@ interface InhaltEintrag {
   unter?: string
 }
 
-function InhaltSeite({ sprache, p, klasse, teile, text, seiten }: { sprache: Sprache; p: Palette; klasse: Klasse; teile: { titel: string; eintraege: InhaltEintrag[] }[]; text: HandbuchText; seiten?: Marken }) {
+function InhaltSeite({ sprache, p, klasse, teile, text, vorwort, seiten }: { sprache: Sprache; p: Palette; klasse: Klasse; teile: { titel: string; eintraege: InhaltEintrag[] }[]; text: HandbuchText; vorwort: string; seiten?: Marken }) {
   const t = TX[sprache]
   return (
     <Page size="A4" style={seitenStil}>
       <Kopf reiter={t.lehrerhandbuch} meta={`${FACH.name}  ·  ${klasse}`} p={p} />
       <SeitenTitel titel={t.inhalt} p={p} sprache={sprache} />
       {teile.map((teil, ti) => (
-        <View key={ti} wrap={false} style={{ marginTop: ti ? 14 : 4 }}>
+        <View key={ti} wrap={false} style={{ marginTop: ti ? 13 : 4 }}>
           <View style={{ paddingBottom: 3, borderBottomWidth: 0.8, borderBottomColor: p.mittel }}>
             <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 11.5, color: p.tief }}>{teil.titel}</Text>
           </View>
@@ -110,7 +116,7 @@ function InhaltSeite({ sprache, p, klasse, teile, text, seiten }: { sprache: Spr
                 <View style={{ flexDirection: 'row', alignItems: 'flex-end' }}>
                   <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 10.5, color: NEUTRAL.text }}>{ty(e.titel, sprache)}</Text>
                   <View style={{ flex: 1, marginHorizontal: 6, marginBottom: 3.2, borderBottomWidth: 1, borderBottomColor: NEUTRAL.rahmen, borderStyle: 'dotted' }} />
-                  <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 10.5, color: NEUTRAL.text, width: 20, textAlign: 'right' }}>{String(seiten?.get(e.id) ?? '')}</Text>
+                  <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 10.5, color: NEUTRAL.text, width: 20, textAlign: 'right' }}>{String(seiten ? (seiten.get(e.id) ?? '') : PLATZHALTER)}</Text>
                 </View>
                 {e.unter ? <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 8.4, lineHeight: 1.35, color: NEUTRAL.leise, marginTop: 1 }}>{ty(e.unter, sprache)}</Text> : null}
               </View>
@@ -122,7 +128,7 @@ function InhaltSeite({ sprache, p, klasse, teile, text, seiten }: { sprache: Spr
         <View style={{ width: 3, borderRadius: 2, backgroundColor: p.tief, marginRight: 10 }} />
         <View style={{ flex: 1 }}>
           <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 10, color: p.tief, marginBottom: 3 }}>{ty(text.vorwort.titel, sprache)}</Text>
-          <Absatz groesse={9.2}>{ty(text.vorwort.text, sprache)}</Absatz>
+          <Absatz groesse={9.2}>{ty(vorwort, sprache)}</Absatz>
         </View>
       </View>
       <Fuss links={FACH.name} titel={t.inhalt} sprache={sprache} />
@@ -180,6 +186,8 @@ function UeberblickSeite({ sprache, p, klasse, text, marken }: { sprache: Sprach
 }
 
 function KompetenzSeite({ sprache, p, klasse, text, plaene, marken }: { sprache: Sprache; p: Palette; klasse: Klasse; text: HandbuchText; plaene: Jahresplan[]; marken?: Marken }) {
+  /** Die Spalte der eigenen Klassenstufe ist leicht getönt */
+  const grund = (k: Klasse) => (k === klasse ? STUFE_FARBEN[k].zart : undefined)
   const t = TX[sprache]
   const k = text.kompetenzen
   const spalte1 = 0.3
@@ -195,7 +203,7 @@ function KompetenzSeite({ sprache, p, klasse, text, plaene, marken }: { sprache:
             <Kleinlabel>{t.kompetenzen}</Kleinlabel>
           </View>
           {plaene.map((pl) => (
-            <View key={pl.klasse} style={{ width: `${rest * 100}%`, padding: 8, borderLeftWidth: 0.8, borderLeftColor: NEUTRAL.rahmen }}>
+            <View key={pl.klasse} style={{ width: `${rest * 100}%`, padding: 8, borderLeftWidth: 0.8, borderLeftColor: NEUTRAL.rahmen, backgroundColor: grund(pl.klasse), borderTopRightRadius: pl === plaene[plaene.length - 1] ? 9 : 0 }}>
               <View style={{ height: 3, borderRadius: 2, backgroundColor: STUFE_FARBEN[pl.klasse].tief, marginBottom: 5 }} />
               <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 13, color: STUFE_FARBEN[pl.klasse].tief }}>{pl.klasse}</Text>
               <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 7.6, color: NEUTRAL.leise, marginTop: 1 }}>{ty(pl.titel[sprache], sprache)}</Text>
@@ -218,7 +226,7 @@ function KompetenzSeite({ sprache, p, klasse, text, plaene, marken }: { sprache:
               </View>
             </View>
             {plaene.map((pl) => (
-              <View key={pl.klasse} style={{ width: `${rest * 100}%`, padding: 8, borderLeftWidth: 0.8, borderLeftColor: NEUTRAL.rahmen }}>
+              <View key={pl.klasse} style={{ width: `${rest * 100}%`, padding: 8, borderLeftWidth: 0.8, borderLeftColor: NEUTRAL.rahmen, backgroundColor: grund(pl.klasse) }}>
                 <Absatz groesse={8.3} style={{ lineHeight: 1.38 }}>
                   {ty(pl.ziele[kd.id][sprache], sprache)}
                 </Absatz>
@@ -523,7 +531,7 @@ function HeftVerweis({ seite, t, p }: { seite?: number; t: FachTx; p: Palette })
   if (!seite) return null
   return (
     <View style={{ borderWidth: 0.8, borderColor: p.tief, borderRadius: 4, paddingHorizontal: 4, paddingVertical: 1.2, marginLeft: 6 }}>
-      <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 6.8, letterSpacing: 0.3, color: p.tief }}>{t.heftSeite(seite)}</Text>
+      <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 6.8, letterSpacing: 0.3, color: p.tief }}>{t.vorlageSeite(seite)}</Text>
     </View>
   )
 }
@@ -610,7 +618,9 @@ function SchrittBlock({ s, nr, sprache, p, t, heftSeite }: { s: Schritt; nr: num
   )
 }
 
-function EinheitSeiten({ e, plan, sprache, blaetter, heftSeiten, marken }: { e: Einheit; plan: Jahresplan; sprache: Sprache; blaetter: Map<string, Blatt>; heftSeiten: Map<string, number>; marken?: Marken }) {
+function EinheitSeiten({ e, plan, sprache, blaetter, seiten, marken }: { e: Einheit; plan: Jahresplan; sprache: Sprache; blaetter: Map<string, Blatt>; seiten?: Marken; marken?: Marken }) {
+  /** Seite der Kopiervorlage in diesem Heft (erster Durchlauf: Platzhalter) */
+  const vorlageSeite = (id: string): number | undefined => (seiten ? seiten.get(vorlageId(id)) : PLATZHALTER)
   const t = TX[sprache]
   const x = e[sprache]
   const pe = plan.einheiten.find((u) => u.id === e.id)!
@@ -658,7 +668,7 @@ function EinheitSeiten({ e, plan, sprache, blaetter, heftSeiten, marken }: { e: 
                     {ty(a.titel, sprache)}
                   </Absatz>
                 </View>
-                <HeftVerweis seite={blatt ? heftSeiten.get(blatt) : undefined} t={t} p={p} />
+                <HeftVerweis seite={blatt ? vorlageSeite(blatt) : undefined} t={t} p={p} />
               </View>
             )
           })}
@@ -686,7 +696,7 @@ function EinheitSeiten({ e, plan, sprache, blaetter, heftSeiten, marken }: { e: 
           {e.blaetter.length ? (
             <View style={{ marginTop: 10, borderWidth: 0.8, borderColor: p.mittel, borderRadius: 10, padding: 10 }}>
               <Kleinlabel farbe={p.tief} style={{ marginBottom: 4 }}>
-                {t.heft}
+                {t.kopiervorlagen}
               </Kleinlabel>
               {e.blaetter.map((id) => {
                 const b = blaetter.get(id)
@@ -695,7 +705,7 @@ function EinheitSeiten({ e, plan, sprache, blaetter, heftSeiten, marken }: { e: 
                     <Absatz groesse={8.6} style={{ flex: 1 }}>
                       {b ? ty(blattInhalt(b, sprache).titel, sprache) : id}
                     </Absatz>
-                    <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 8.6, color: p.tief }}>{heftSeiten.get(id) ? `${t.seite} ${heftSeiten.get(id)}` : ''}</Text>
+                    <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 8.6, color: p.tief }}>{vorlageSeite(id) ? `${t.seite} ${vorlageSeite(id)}` : ''}</Text>
                   </View>
                 )
               })}
@@ -720,7 +730,7 @@ function EinheitSeiten({ e, plan, sprache, blaetter, heftSeiten, marken }: { e: 
         </Zwischentitel>
       </View>
       {x.schritte.map((s, i) => (
-        <SchrittBlock key={i} s={s} nr={i + 1} sprache={sprache} p={p} t={t} heftSeite={s.blatt ? heftSeiten.get(s.blatt) : undefined} />
+        <SchrittBlock key={i} s={s} nr={i + 1} sprache={sprache} p={p} t={t} heftSeite={s.blatt ? vorlageSeite(s.blatt) : undefined} />
       ))}
 
       {x.bruecke ? (
@@ -746,18 +756,64 @@ function EinheitSeiten({ e, plan, sprache, blaetter, heftSeiten, marken }: { e: 
   )
 }
 
-// --- Dokument ---------------------------------------------------------------------------------------------------------
+// --- Kopiervorlagen ----------------------------------------------------------------------------------------------------
 
-export function handbuchTitel(klasse: Klasse, sprache: Sprache): string {
+function VorlagenSeiten({ ids, klasse, sprache, blaetter, marken }: { ids: string[]; klasse: Klasse; sprache: Sprache; blaetter: Map<string, Blatt>; marken?: Marken }) {
+  const t = TX[sprache]
+  return (
+    <>
+      {ids.map((id) => {
+        const b = blaetter.get(id)
+        if (!b) return null
+        return (
+          <BlattSeiten
+            key={id}
+            blatt={b}
+            opt={{
+              sprache,
+              schueler: true,
+              lehrer: false,
+              farben: STUFE_FARBEN[klasse],
+              heft: { reiter: t.kopiervorlage, meta: `${FACH.name}  ·  ${klasse}  ·  ${t.kopiervorlagen}`, fuss: `${FACH.name} · ${klasse}` },
+              seite: marken
+                ? (n) => {
+                    const alt = marken.get(vorlageId(id))
+                    if (alt === undefined || n < alt) marken.set(vorlageId(id), n)
+                  }
+                : undefined,
+            }}
+          />
+        )
+      })}
+    </>
+  )
+}
+
+// --- Booklet ------------------------------------------------------------------------------------------------------------
+
+export function bookletTitel(klasse: Klasse, sprache: Sprache): string {
   return `${FACH.name} – ${TX[sprache].lehrerhandbuch} ${klasse}`
 }
 
-export function HandbuchDokument({ daten, sprache, marken, seiten }: { daten: HandbuchDaten; sprache: Sprache; marken?: Marken; seiten?: Marken }) {
+/** Kopiervorlagen eines Hefts: die für jede Stunde, dann die Blätter der Einheiten (ohne Doppelte). */
+export function vorlagenVon(daten: HandbuchDaten, klasse: Klasse): string[] {
+  const einheiten = daten.einheiten.filter((e) => e.klasse === klasse)
+  return [...new Set([...daten.vorlagen, ...einheiten.flatMap((e) => e.blaetter)])].filter((id) => daten.blaetter.has(id))
+}
+
+/**
+ * Ein Heft für eine Klassenstufe. `marken` sammelt beim Setzen die Seitenzahlen (erster Durchlauf),
+ * `seiten` liefert sie für Inhalt und Verweise (zweiter Durchlauf). `notizen` = Anzahl Notizseiten,
+ * damit die Seitenzahl ein Vielfaches von 4 wird (Druck als Broschüre).
+ */
+export function BookletDokument({ daten, klasse, sprache, marken, seiten, notizen = 0, stand }: { daten: HandbuchDaten; klasse: Klasse; sprache: Sprache; marken?: Marken; seiten?: Marken; notizen?: number; stand: string }) {
   const t = TX[sprache]
   const text = daten.text[sprache]
-  const haupt = daten.plaene.find((pl) => pl.klasse === daten.klasse)!
-  const p = stufenPalette(daten.klasse)
-  const teile = [
+  const plan = daten.plaene.find((pl) => pl.klasse === klasse)!
+  const einheiten = daten.einheiten.filter((e) => e.klasse === klasse)
+  const vorlagen = vorlagenVon(daten, klasse)
+  const p = stufenPalette(klasse)
+  const teile: { titel: string; eintraege: InhaltEintrag[] }[] = [
     {
       titel: t.teilA,
       eintraege: [
@@ -767,32 +823,39 @@ export function HandbuchDokument({ daten, sprache, marken, seiten }: { daten: Ha
         { id: 'a4', titel: text.sicherheit.titel },
       ],
     },
-    {
-      titel: t.teilB,
-      eintraege: daten.plaene.map((pl) => ({ id: `b-${pl.klasse}`, titel: `${t.jahresplan} ${pl.klasse} · ${pl.titel[sprache]}`, unter: pl.untertitel[sprache] })),
-    },
-    {
-      titel: t.teilC,
-      eintraege: daten.einheiten.map((e) => {
-        const pe = haupt.einheiten.find((u) => u.id === e.id)
+    { titel: t.teilB, eintraege: [{ id: `b-${klasse}`, titel: `${t.jahresplan} ${klasse} · ${plan.titel[sprache]}`, unter: plan.untertitel[sprache] }] },
+  ]
+  if (einheiten.length) {
+    teile.push({
+      titel: t.teil(teile.length, t.muster),
+      eintraege: einheiten.map((e) => {
+        const pe = plan.einheiten.find((u) => u.id === e.id)
         return { id: `c-${e.id}`, titel: `${t.einheit} ${pe?.nr ?? ''} · ${e[sprache].titel}`, unter: e[sprache].kurz }
       }),
-    },
-  ]
+    })
+  }
+  teile.push({
+    titel: t.teil(teile.length, t.kopiervorlagen),
+    eintraege: vorlagen.map((id) => ({ id: vorlageId(id), titel: blattInhalt(daten.blaetter.get(id)!, sprache).titel })),
+  })
+  const vorwort = (einheiten.length ? text.vorwort.mitEinheit : text.vorwort.ohneEinheit).replaceAll('{klasse}', klasse)
   return (
-    <Document title={handbuchTitel(daten.klasse, sprache)} author={URHEBER_NAME} creator="CDSE" producer="CDSE" language={sprache}>
-      <Deckblatt plan={haupt} sprache={sprache} art="handbuch" />
-      <InhaltSeite sprache={sprache} p={p} klasse={daten.klasse} teile={teile} text={text} seiten={seiten} />
-      <UeberblickSeite sprache={sprache} p={p} klasse={daten.klasse} text={text} marken={marken} />
-      <KompetenzSeite sprache={sprache} p={p} klasse={daten.klasse} text={text} plaene={daten.plaene} marken={marken} />
-      <DoppelstundeSeite sprache={sprache} p={p} klasse={daten.klasse} text={text} marken={marken} />
-      <SicherheitSeite sprache={sprache} p={p} klasse={daten.klasse} text={text} marken={marken} />
-      {daten.plaene.map((pl) => (
-        <JahresplanSeiten key={pl.klasse} plan={pl} sprache={sprache} text={text} marken={marken} />
+    <Document title={bookletTitel(klasse, sprache)} author={URHEBER_NAME} creator="CDSE" producer="CDSE" language={sprache}>
+      <Deckblatt plan={plan} sprache={sprache} art="handbuch" />
+      <InhaltSeite sprache={sprache} p={p} klasse={klasse} teile={teile} text={text} vorwort={vorwort} seiten={seiten} />
+      <UeberblickSeite sprache={sprache} p={p} klasse={klasse} text={text} marken={marken} />
+      <KompetenzSeite sprache={sprache} p={p} klasse={klasse} text={text} plaene={daten.plaene} marken={marken} />
+      <DoppelstundeSeite sprache={sprache} p={p} klasse={klasse} text={text} marken={marken} />
+      <SicherheitSeite sprache={sprache} p={p} klasse={klasse} text={text} marken={marken} />
+      <JahresplanSeiten plan={plan} sprache={sprache} text={text} marken={marken} />
+      {einheiten.map((e) => (
+        <EinheitSeiten key={e.id} e={e} plan={plan} sprache={sprache} blaetter={daten.blaetter} seiten={seiten} marken={marken} />
       ))}
-      {daten.einheiten.map((e) => (
-        <EinheitSeiten key={e.id} e={e} plan={daten.plaene.find((pl) => pl.klasse === e.klasse)!} sprache={sprache} blaetter={daten.blaetter} heftSeiten={daten.heftSeiten[sprache]} marken={marken} />
+      <VorlagenSeiten ids={vorlagen} klasse={klasse} sprache={sprache} blaetter={daten.blaetter} marken={marken} />
+      {Array.from({ length: notizen }, (_, i) => (
+        <NotizenSeite key={i} klasse={klasse} sprache={sprache} />
       ))}
+      <Rueckseite plan={plan} plaene={daten.plaene} sprache={sprache} text={text} stand={stand} />
     </Document>
   )
 }

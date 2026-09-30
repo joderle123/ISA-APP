@@ -4,7 +4,7 @@
       "id": "ff7-e01",
       "klasse": "7e",
       "dauer": 100,
-      "blaetter": ["ff7-klassenvereinbarung", "ff-gefuehlsrad", "ff-skills-pass"],
+      "blaetter": ["ff-klassenvereinbarung", "ff-gefuehlsrad", "ff-skills-pass"],
       "de": {
         "titel": "Willkommen im Fach – unser Rahmen",
         "kurz": "Die Klasse lernt das neue Fach und seine Rituale kennen, stellt gemeinsam ihre Klassenvereinbarung auf und probiert den ersten Skill aus.",
@@ -90,7 +90,7 @@
             ],
             "tipp": "Beim Zusammenhängen die Karten laut vorlesen und die Klasse entscheiden lassen, was zusammengehört. So bleiben es die Regeln der Klasse.",
             "wennEsKippt": "Kommen nur Scherzkarten („jede Woche Pizza“), mit Humor aufnehmen und nachfragen, was dahintersteckt: Soll es sich hier nicht wie normaler Unterricht anfühlen? Daraus wird oft eine echte Regel. Beleidigende Karten wortlos abnehmen und später unter vier Augen ansprechen.",
-            "blatt": "ff7-klassenvereinbarung"
+            "blatt": "ff-klassenvereinbarung"
           },
           {
             "titel": "Bewegungspause: Alle, die …",
@@ -125,7 +125,7 @@
             ],
             "tipp": "Die Grenzen der Vertraulichkeit offen zu nennen, schafft eher Vertrauen als Misstrauen. Den Satz nicht improvisieren, sondern vorlesen: Er steht im Schülerheft.",
             "wennEsKippt": "Will jemand nicht unterschreiben, nicht drängen: Unterschreiben heißt „Ich halte mich daran“, nicht „Ich finde alles gut“. Anbieten, später zu unterschreiben, und nach der Stunde kurz fragen, was fehlt.",
-            "blatt": "ff7-klassenvereinbarung"
+            "blatt": "ff-klassenvereinbarung"
           },
           {
             "titel": "Das Gefühlsrad und der erste Check-in",
@@ -260,7 +260,7 @@
             ],
             "tipp": "En regroupant, lire les cartes à voix haute et laisser la classe décider de ce qui va ensemble. Ainsi, les règles restent celles de la classe.",
             "wennEsKippt": "Si les cartes sont surtout pour rire (« pizza chaque semaine »), les accueillir avec humour et demander ce qu’il y a derrière : vous voulez que ce cours ne ressemble pas à un cours comme les autres ? On en tire souvent une vraie règle. Retirer sans commentaire une carte blessante et en parler plus tard en tête-à-tête.",
-            "blatt": "ff7-klassenvereinbarung"
+            "blatt": "ff-klassenvereinbarung"
           },
           {
             "titel": "Pause active : debout, assis",
@@ -295,7 +295,7 @@
             ],
             "tipp": "Dire ouvertement où s’arrête la confidentialité crée plutôt de la confiance que de la méfiance. Ne pas improviser la phrase, mais la lire : elle figure dans le cahier de l’élève.",
             "wennEsKippt": "Si un jeune ne veut pas signer, ne pas insister : signer veut dire « je la respecte », pas « je suis d’accord avec tout ». Proposer de signer plus tard et demander après le cours ce qui manque.",
-            "blatt": "ff7-klassenvereinbarung"
+            "blatt": "ff-klassenvereinbarung"
           },
           {
             "titel": "La roue des émotions et le premier tour d’humeur",

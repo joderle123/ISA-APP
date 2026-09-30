@@ -3,7 +3,7 @@
 // aufgebaut, lückenlose Minuten, vorhandene Blätter, geprüfte Quellen und Stil.
 //   npx tsx --tsconfig tsconfig.scripts.json scripts/foerderfach-pruefen.ts [--streng]
 // Fehler → Exit-Code 1. Hinweise (Stil) werden nur gezeigt; mit --streng zählen sie als Fehler.
-import { EINHEITEN, HANDBUCH, PLAENE, BLAETTER, blattById } from '../src/foerderfach/daten'
+import { EINHEITEN, HANDBUCH, PLAENE, BLAETTER, VORLAGEN, blattById } from '../src/foerderfach/daten'
 import { KOMPETENZEN, PHASEN } from '../src/foerderfach/fach'
 import { QUELLEN_TEXTE } from '../src/blatt/quellen'
 import type { EinheitText, Phase, Sprache } from '../src/foerderfach/typen'
@@ -215,6 +215,8 @@ function texteIn(x: unknown, out: string[] = []): string[] {
 }
 const aufbau = (x: unknown): unknown => (Array.isArray(x) ? x.map(aufbau) : x && typeof x === 'object' ? Object.fromEntries(Object.entries(x).map(([k, v]) => [k, aufbau(v)])) : typeof x)
 if (JSON.stringify(aufbau(HANDBUCH.de)) !== JSON.stringify(aufbau(HANDBUCH.fr))) melde('F', 'handbuch', 'DE und FR sind nicht gleich aufgebaut')
+for (const s of SPRACHEN) for (const v of [HANDBUCH[s].vorwort.mitEinheit, HANDBUCH[s].vorwort.ohneEinheit]) if (!v.includes('{klasse}')) melde('F', `handbuch ${s}`, 'Vorwort ohne Platzhalter {klasse}')
+for (const id of VORLAGEN) if (!blattById.has(id)) melde('F', 'daten.ts', `Kopiervorlage „${id}“ gibt es nicht`)
 for (const s of SPRACHEN) for (const x of texteIn(HANDBUCH[s])) stil(`handbuch ${s}`, x, s)
 
 // --- Schülerblätter ------------------------------------------------------------------------------------
@@ -227,7 +229,7 @@ for (const b of BLAETTER) {
     for (const x of texteIn(inhalt.bausteine)) stil(`Blatt ${b.id} ${s}`, x, s)
     for (const q of inhalt.lehrer.quellen ?? []) if (!QUELLEN_TEXTE.has(q)) melde('F', `Blatt ${b.id} ${s}`, `Quelle nicht geprüft: „${q.slice(0, 60)}“`)
   }
-  const genutzt = EINHEITEN.some((e) => e.blaetter.includes(b.id)) || ['ff-das-fach', 'ff-gefuehlsrad', 'ff-skills-pass'].includes(b.id)
+  const genutzt = EINHEITEN.some((e) => e.blaetter.includes(b.id)) || VORLAGEN.includes(b.id)
   if (!genutzt) melde('H', `Blatt ${b.id}`, 'wird in keiner Einheit verwendet')
 }
 
