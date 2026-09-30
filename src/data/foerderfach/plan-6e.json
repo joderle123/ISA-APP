@@ -1,0 +1,226 @@
+{
+  "klasse": "6e",
+  "titel": { "de": "Stark im Alltag", "fr": "Solide au quotidien" },
+  "untertitel": {
+    "de": "Selbstwert, Stress, Freundschaft und gute Entscheidungen",
+    "fr": "Estime de soi, stress, amitiés et bons choix"
+  },
+  "faden": {
+    "de": "Im zweiten Jahr werden die Skills alltagstauglich: Selbstwert und Körperbild, Stress und Lernen, Wut, Freundschaft und Liebe, Familie, Vielfalt, Sicherheit im Netz, Alkohol, Vapes und Cannabis, Gesundheit und Hilfe in Krisen. Die Rituale aus der 7e bleiben. Neu ist der Skills-Kompass: Am Ende jedes Kapitels hält jede Person fest, welcher Skill ihr in diesem Bereich hilft.",
+    "fr": "En 6e, les skills deviennent utiles au quotidien : estime de soi et image du corps, stress et apprentissage, colère, amitié et amour, famille, diversité, sécurité en ligne, alcool, vapoteuse et cannabis, santé et aide en cas de crise. Les rituels de la 7e continuent. Nouveauté : la boussole des skills – à la fin de chaque chapitre, chaque jeune note le skill qui l’aide dans ce domaine."
+  },
+  "ziele": {
+    "kennen": {
+      "de": "sehen ihren Wert unabhängig von Noten, Likes und Aussehen und gehen freundlich mit sich um.",
+      "fr": "voient leur valeur au-delà des notes, des likes et de l’apparence et se traitent avec bienveillance."
+    },
+    "steuern": {
+      "de": "erkennen Stress und Wut früh, bremsen mit der Stopp-Ampel und lernen wirksamer.",
+      "fr": "repèrent tôt le stress et la colère, freinent avec le feu stop et apprennent plus efficacement."
+    },
+    "verstehen": {
+      "de": "erkennen Vorurteile und respektieren verschiedene Familien, Sprachen und Lebenswege.",
+      "fr": "reconnaissent les préjugés et respectent la diversité des familles, des langues et des parcours."
+    },
+    "miteinander": {
+      "de": "pflegen Freundschaften, klären Streit fair und handeln Vereinbarungen aus.",
+      "fr": "entretiennent leurs amitiés, règlent les disputes avec respect et négocient des accords."
+    },
+    "entscheiden": {
+      "de": "entscheiden informiert bei Alkohol, Vapes und Cannabis, schützen sich im Netz und holen Hilfe für andere.",
+      "fr": "décident en connaissance de cause face à l’alcool, à la vapoteuse et au cannabis, se protègent en ligne et cherchent de l’aide pour les autres."
+    }
+  },
+  "kapitel": [
+    { "id": "ff6-k1", "nr": 1, "trimester": 1, "bild": "icon:door-enter", "titel": { "de": "Wieder ankommen", "fr": "Se retrouver" }, "leitfrage": { "de": "Wer sind wir in diesem Jahr?", "fr": "Qui sommes-nous cette année ?" } },
+    { "id": "ff6-k2", "nr": 2, "trimester": 1, "bild": "icon:star", "titel": { "de": "Selbstwert und Körper", "fr": "Estime de soi et corps" }, "leitfrage": { "de": "Was macht mich wertvoll – auch wenn ich mich vergleiche?", "fr": "Qu’est-ce qui fait ma valeur – même quand je me compare ?" } },
+    { "id": "ff6-k3", "nr": 3, "trimester": 1, "bild": "icon:school", "titel": { "de": "Stress und Schule", "fr": "Stress et école" }, "leitfrage": { "de": "Wie komme ich gut durch Schule, Lernen und Tests?", "fr": "Comment bien traverser l’école, les révisions et les devoirs en classe ?" } },
+    { "id": "ff6-k4", "nr": 4, "trimester": 1, "bild": "icon:flame", "titel": { "de": "Wut und Impulse", "fr": "Colère et impulsions" }, "leitfrage": { "de": "Was steckt hinter meiner Wut – und wie bremse ich rechtzeitig?", "fr": "Que cache ma colère – et comment freiner à temps ?" } },
+    { "id": "ff6-k5", "nr": 5, "trimester": 2, "bild": "icon:friends", "titel": { "de": "Freundschaft, Liebe und Zugehörigkeit", "fr": "Amitié, amour et appartenance" }, "leitfrage": { "de": "Was macht Freundschaft und Liebe aus – und was, wenn es schwierig wird?", "fr": "Qu’est-ce qui fait une amitié, un amour – et que faire quand c’est difficile ?" } },
+    { "id": "ff6-k6", "nr": 6, "trimester": 2, "bild": "icon:home", "titel": { "de": "Familie und Zuhause", "fr": "Famille et foyer" }, "leitfrage": { "de": "Wie gehen wir zu Hause miteinander um?", "fr": "Comment vivons-nous ensemble à la maison ?" } },
+    { "id": "ff6-k7", "nr": 7, "trimester": 2, "bild": "icon:world", "titel": { "de": "Vielfalt und Respekt", "fr": "Diversité et respect" }, "leitfrage": { "de": "Wie gehen wir mit Unterschieden um?", "fr": "Comment vivre avec nos différences ?" } },
+    { "id": "ff6-k8", "nr": 8, "trimester": 3, "bild": "icon:lock", "titel": { "de": "Sicher im Netz", "fr": "En sécurité en ligne" }, "leitfrage": { "de": "Wie schütze ich mich und andere online?", "fr": "Comment me protéger et protéger les autres en ligne ?" } },
+    { "id": "ff6-k9", "nr": 9, "trimester": 3, "bild": "icon:alert-triangle", "titel": { "de": "Riskant oder okay?", "fr": "Risqué ou pas ?" }, "leitfrage": { "de": "Alkohol, Vapes, Cannabis: Was muss ich wissen – und wie entscheide ich?", "fr": "Alcool, vapoteuse, cannabis : que faut-il savoir – et comment décider ?" } },
+    { "id": "ff6-k10", "nr": 10, "trimester": 3, "bild": "icon:heart", "titel": { "de": "Gesund an Körper und Seele", "fr": "Bien dans son corps et dans sa tête" }, "leitfrage": { "de": "Was tut mir gut – und was tun, wenn es jemandem richtig schlecht geht?", "fr": "Qu’est-ce qui me fait du bien – et que faire quand quelqu’un va vraiment mal ?" } },
+    { "id": "ff6-k11", "nr": 11, "trimester": 3, "bild": "icon:trophy", "titel": { "de": "Abschluss", "fr": "Bilan" }, "leitfrage": { "de": "Was hat sich in diesem Jahr verändert?", "fr": "Qu’est-ce qui a changé cette année ?" } }
+  ],
+  "einheiten": [
+    {
+      "id": "ff6-e01", "nr": 1, "kapitel": "ff6-k1", "basis": "j2-e01", "kompetenzen": ["miteinander", "kennen"],
+      "titel": { "de": "Neustart als Klasse", "fr": "Un nouveau départ pour la classe" },
+      "kurz": { "de": "Alte und Neue lernen sich kennen, die Klassenvereinbarung wird geprüft, der Skills-Kompass kommt dazu", "fr": "Anciens et nouveaux font connaissance, la charte est revue, la boussole des skills arrive" }
+    },
+    {
+      "id": "ff6-e02", "nr": 2, "kapitel": "ff6-k1", "basis": "j2-e02", "kompetenzen": ["steuern", "miteinander"],
+      "titel": { "de": "Die Skills-Olympiade", "fr": "Les olympiades des skills" },
+      "kurz": { "de": "In Teams fünf Disziplinen: Atem, Sinne, Kopf, Stopp, Ich-Botschaft – und die Anspannungsskala", "fr": "En équipes, cinq épreuves : souffle, sens, tête, stop, message en « je » – et l’échelle de tension" }
+    },
+    {
+      "id": "ff6-e03", "nr": 3, "kapitel": "ff6-k2", "basis": "j2-e03", "kompetenzen": ["kennen"],
+      "titel": { "de": "Was macht mich wertvoll?", "fr": "Qu’est-ce qui fait ma valeur ?" },
+      "kurz": { "de": "Selbstwert ist mehr als Noten, Likes und Aussehen: eine Versteigerung von dem, was man nicht kaufen kann", "fr": "La valeur, plus que les notes, les likes et le look : des enchères de ce qui ne s’achète pas" }
+    },
+    {
+      "id": "ff6-e04", "nr": 4, "kapitel": "ff6-k2", "basis": "j2-e04", "kompetenzen": ["kennen", "verstehen"],
+      "titel": { "de": "Mein Körper und ich", "fr": "Mon corps et moi" },
+      "kurz": { "de": "Warum Bilder im Netz selten echt sind, was der Körper leistet, wie man respektvoll über Körper spricht", "fr": "Pourquoi les images en ligne sont rarement réelles, ce que fait le corps, en parler avec respect" }
+    },
+    {
+      "id": "ff6-e05", "nr": 5, "kapitel": "ff6-k2", "basis": "j2-e05", "kompetenzen": ["kennen", "steuern"],
+      "titel": { "de": "Freundlich mit mir selbst", "fr": "La bienveillance envers soi" },
+      "kurz": { "de": "Den inneren Kritiker kennenlernen, einen freundlichen Ton üben, einen Satz für schwere Momente finden", "fr": "Rencontrer le critique intérieur, essayer un ton bienveillant, trouver une phrase pour les moments durs" }
+    },
+    {
+      "id": "ff6-e06", "nr": 6, "kapitel": "ff6-k3", "basis": "j2-e06", "kompetenzen": ["kennen", "steuern"],
+      "titel": { "de": "Stress verstehen", "fr": "Comprendre le stress" },
+      "kurz": { "de": "Stress-Anzeichen auf dem Barometer einordnen und erleben, wann guter Stress in zu viel kippt", "fr": "Situer ses signes de stress sur le baromètre et sentir quand le bon stress devient trop" }
+    },
+    {
+      "id": "ff6-e07", "nr": 7, "kapitel": "ff6-k3", "basis": "j2-e07", "kompetenzen": ["steuern"],
+      "titel": { "de": "Lernen, das hängen bleibt", "fr": "Apprendre pour retenir" },
+      "kurz": { "de": "Experiment mit fremden Wörtern: Wiederlesen oder Selbsttest? Drei Regeln für wirksames Lernen", "fr": "Expérience avec des mots inconnus : relire ou se tester ? Trois règles pour bien apprendre" }
+    },
+    {
+      "id": "ff6-e08", "nr": 8, "kapitel": "ff6-k3", "basis": "j2-e08", "kompetenzen": ["steuern"],
+      "titel": { "de": "Aufschieben überlisten", "fr": "Déjouer la procrastination" },
+      "kurz": { "de": "Den Kreislauf des Aufschiebens durchschauen, den ersten kleinen Schritt finden, mit Timer arbeiten", "fr": "Comprendre le cercle de la procrastination, trouver le premier petit pas, travailler avec un minuteur" }
+    },
+    {
+      "id": "ff6-e09", "nr": 9, "kapitel": "ff6-k3", "basis": "j2-e09", "kompetenzen": ["steuern", "kennen"],
+      "titel": { "de": "Tests ohne Panik", "fr": "Des devoirs en classe sans panique" },
+      "kurz": { "de": "Was Prüfungsangst mit Kopf und Körper macht, Gedanken prüfen, den Testtag planen", "fr": "Ce que le trac fait à la tête et au corps, vérifier ses pensées, planifier le jour du devoir" }
+    },
+    {
+      "id": "ff6-e10", "nr": 10, "kapitel": "ff6-k4", "basis": "j2-e10", "kompetenzen": ["kennen", "steuern"],
+      "titel": { "de": "Der Wut-Eisberg", "fr": "L’iceberg de la colère" },
+      "kurz": { "de": "Unter die Spitze der Wut schauen, Auslöser sammeln, Warnzeichen in Zeitlupe finden", "fr": "Regarder sous la pointe de la colère, repérer les déclencheurs, trouver les signaux au ralenti" }
+    },
+    {
+      "id": "ff6-e11", "nr": 11, "kapitel": "ff6-k4", "basis": "j2-e11", "kompetenzen": ["steuern", "entscheiden"],
+      "titel": { "de": "Stopp – erst denken, dann handeln", "fr": "Stop – réfléchir avant d’agir" },
+      "kurz": { "de": "Die Stopp-Ampel lernen – runterkommen, abwägen, handeln – und in Alltagsszenen üben", "fr": "Apprendre le feu stop – se calmer, peser, agir – et l’exercer dans des scènes du quotidien" }
+    },
+    {
+      "id": "ff6-e12", "nr": 12, "kapitel": "ff6-k4", "basis": "j2-e12", "kompetenzen": ["miteinander", "entscheiden"],
+      "titel": { "de": "Wiedergutmachen", "fr": "Réparer" },
+      "kurz": { "de": "Entschuldigungen ohne Ausreden, die Fragen der Wiedergutmachung beantworten, einen Plan machen", "fr": "S’excuser sans se justifier, répondre aux questions de la réparation, faire un plan" }
+    },
+    {
+      "id": "ff6-e13", "nr": 13, "kapitel": "ff6-k5", "basis": "j2-e13", "kompetenzen": ["miteinander", "kennen"],
+      "titel": { "de": "Was macht eine gute Freundschaft aus?", "fr": "Qu’est-ce qu’une bonne amitié ?" },
+      "kurz": { "de": "Freundschaftsanzeigen schreiben, die fünf Pfeiler finden, eine Freundschaft mit dem Barometer prüfen", "fr": "Rédiger des annonces d’amitié, trouver les cinq piliers, vérifier une amitié avec le baromètre" }
+    },
+    {
+      "id": "ff6-e14", "nr": 14, "kapitel": "ff6-k5", "basis": "j2-e14", "kompetenzen": ["miteinander", "verstehen"],
+      "titel": { "de": "Streit unter Freunden", "fr": "Disputes entre amis" },
+      "kurz": { "de": "Warum Nachrichten im Chat falsch ankommen, mit vier Ohren hören, ein faires Klärungsgespräch üben", "fr": "Pourquoi les messages sont mal compris, écouter avec quatre oreilles, oser une vraie explication" }
+    },
+    {
+      "id": "ff6-e15", "nr": 15, "kapitel": "ff6-k5", "basis": "j2-e15", "kompetenzen": ["verstehen", "miteinander"],
+      "titel": { "de": "Dazugehören und ausgeschlossen sein", "fr": "Être inclus, être exclu" },
+      "kurz": { "de": "Erleben, wie sich Ausschluss anfühlt, andere einbeziehen, Eifersucht und Druck ansprechen", "fr": "Ressentir l’exclusion, inclure les autres, parler de jalousie et de pression" }
+    },
+    {
+      "id": "ff6-e16", "nr": 16, "kapitel": "ff6-k5", "basis": "j2-e16", "kompetenzen": ["kennen", "verstehen"],
+      "titel": { "de": "Verliebt – und jetzt?", "fr": "Amoureux, amoureuse – et maintenant ?" },
+      "kurz": { "de": "Was Verliebtsein mit Körper und Kopf macht, Respekt und Einvernehmlichkeit im Alltag, anonyme Fragen", "fr": "Ce que l’amour fait au corps et à la tête, respect et consentement au quotidien, questions anonymes" },
+      "hinweis": { "de": "Eltern vorab informieren", "fr": "Informer les parents au préalable" }
+    },
+    {
+      "id": "ff6-e17", "nr": 17, "kapitel": "ff6-k5", "basis": "j2-e17", "wahl": true, "kompetenzen": ["kennen", "miteinander"],
+      "titel": { "de": "Wenn Freundschaften enden", "fr": "Quand une amitié se termine" },
+      "kurz": { "de": "Wie Freundschaften sich verändern, fair auseinandergehen, neue Kontakte knüpfen", "fr": "Comment les amitiés évoluent, se quitter avec respect, créer de nouveaux liens" }
+    },
+    {
+      "id": "ff6-e18", "nr": 18, "kapitel": "ff6-k6", "basis": "j2-e18", "kompetenzen": ["verstehen"],
+      "titel": { "de": "Familien sind verschieden", "fr": "Les familles sont différentes" },
+      "kurz": { "de": "An erfundenen Familien entdecken, wie verschieden Zuhause aussieht und wer außer Eltern mitträgt", "fr": "Découvrir avec des familles inventées la diversité des foyers et qui d’autre soutient" }
+    },
+    {
+      "id": "ff6-e19", "nr": 19, "kapitel": "ff6-k6", "basis": "j2-e19", "kompetenzen": ["miteinander", "steuern"],
+      "titel": { "de": "Streit zu Hause", "fr": "Disputes à la maison" },
+      "kurz": { "de": "Hinter typische Streitthemen schauen, im Forumtheater die Zuhause-Formel üben, einen Abkühl-Plan machen", "fr": "Regarder derrière les sujets de dispute, s’exercer en théâtre-forum, faire un plan pour se calmer" }
+    },
+    {
+      "id": "ff6-e20", "nr": 20, "kapitel": "ff6-k6", "basis": "j2-e20", "kompetenzen": ["miteinander", "entscheiden"],
+      "titel": { "de": "Mehr Freiraum aushandeln", "fr": "Négocier plus de liberté" },
+      "kurz": { "de": "Hinter Forderungen Interessen finden, Vertrauen Schritt für Schritt aufbauen, Vereinbarungen treffen", "fr": "Trouver les intérêts derrière les demandes, bâtir la confiance pas à pas, conclure des accords" }
+    },
+    {
+      "id": "ff6-e21", "nr": 21, "kapitel": "ff6-k7", "basis": "j2-e21", "kompetenzen": ["verstehen"],
+      "titel": { "de": "Schubladen im Kopf", "fr": "Les cases dans la tête" },
+      "kurz": { "de": "Wie aus Sortieren Vorurteile werden – und wann Begegnung die Schubladen öffnet", "fr": "Comment le tri devient préjugé – et quand la rencontre ouvre les cases" }
+    },
+    {
+      "id": "ff6-e22", "nr": 22, "kapitel": "ff6-k7", "basis": "j2-e22", "kompetenzen": ["verstehen", "kennen"],
+      "titel": { "de": "Viele Sprachen, viele Wege", "fr": "Plusieurs langues, plusieurs chemins" },
+      "kurz": { "de": "Fakten über das vielfältige Luxemburg schätzen und das eigene Sprachenporträt malen", "fr": "Estimer des faits sur le Luxembourg pluriel et dessiner son portrait de langues" }
+    },
+    {
+      "id": "ff6-e23", "nr": 23, "kapitel": "ff6-k7", "basis": "j2-e23", "kompetenzen": ["verstehen", "entscheiden"],
+      "titel": { "de": "Stopp Diskriminierung", "fr": "Stop à la discrimination" },
+      "kurz": { "de": "Diskriminierung erkennen, im Forumtheater reagieren, Anlaufstellen kennen", "fr": "Reconnaître la discrimination, réagir en théâtre-forum, connaître les services d’aide" }
+    },
+    {
+      "id": "ff6-e24", "nr": 24, "kapitel": "ff6-k8", "basis": "j2-e24", "kompetenzen": ["entscheiden"],
+      "titel": { "de": "Meine Daten, meine Bilder", "fr": "Mes données, mes images" },
+      "kurz": { "de": "Spuren eines Profils verfolgen, Privatsphäre einstellen, sichere Passwörter, was bei Bildern gilt", "fr": "Suivre les traces d’un profil, régler sa confidentialité, des mots de passe sûrs, le droit à l’image" }
+    },
+    {
+      "id": "ff6-e25", "nr": 25, "kapitel": "ff6-k8", "basis": "j2-e25", "kompetenzen": ["verstehen", "entscheiden"],
+      "titel": { "de": "Hass im Netz", "fr": "La haine en ligne" },
+      "kurz": { "de": "Meinung, Beleidigung und Hassrede unterscheiden, Gegenrede schreiben, sichern, melden, blockieren", "fr": "Distinguer opinion, insulte et haine, répondre sans haine, sauvegarder, signaler, bloquer" }
+    },
+    {
+      "id": "ff6-e26", "nr": 26, "kapitel": "ff6-k8", "basis": "j2-e26", "kompetenzen": ["steuern", "entscheiden"],
+      "titel": { "de": "Gaming – Spaß und Grenzen", "fr": "Jeux vidéo – plaisir et limites" },
+      "kurz": { "de": "Was Games gut können, Tricks, die festhalten, ein Lootbox-Experiment, eigene Regeln", "fr": "Ce que les jeux font de bien, les astuces qui retiennent, une expérience de loot box, ses règles" }
+    },
+    {
+      "id": "ff6-e27", "nr": 27, "kapitel": "ff6-k9", "basis": "j2-e27", "kompetenzen": ["entscheiden"],
+      "titel": { "de": "Fakten statt Mythen", "fr": "Des faits, pas des mythes" },
+      "kurz": { "de": "Was Alkohol, Nikotin und Cannabis im jungen Gehirn bewirken: Expertenteams und Mythen-Check", "fr": "Ce que l’alcool, la nicotine et le cannabis font au cerveau jeune : équipes d’experts et chasse aux mythes" }
+    },
+    {
+      "id": "ff6-e28", "nr": 28, "kapitel": "ff6-k9", "basis": "j2-e28", "kompetenzen": ["entscheiden", "miteinander"],
+      "titel": { "de": "Party, Druck und gute Entscheidungen", "fr": "Fêtes, pression et bons choix" },
+      "kurz": { "de": "Druck-Situationen durchspielen, Nein-Sätze auffrischen, einen Plan B bauen, im Notfall richtig handeln", "fr": "Jouer des situations de pression, revoir ses phrases pour dire non, un plan B, bien réagir en urgence" }
+    },
+    {
+      "id": "ff6-e29", "nr": 29, "kapitel": "ff6-k9", "basis": "j2-e29", "kompetenzen": ["steuern", "entscheiden"],
+      "titel": { "de": "Was Konsum verspricht", "fr": "Ce que promet la consommation" },
+      "kurz": { "de": "Verstehen, was Menschen im Konsum suchen, und Skills für dieselben Bedürfnisse testen", "fr": "Comprendre ce que l’on cherche dans la consommation et tester des skills pour les mêmes besoins" }
+    },
+    {
+      "id": "ff6-e30", "nr": 30, "kapitel": "ff6-k10", "basis": "j2-e30", "kompetenzen": ["steuern", "kennen"],
+      "titel": { "de": "Schlaf – der unterschätzte Skill", "fr": "Le sommeil – le skill sous-estimé" },
+      "kurz": { "de": "Warum Jugendliche spät müde werden, ein Schlaf-Quiz in Bewegung, ein Schlaf-Experiment für eine Woche", "fr": "Pourquoi les ados s’endorment tard, un quiz du sommeil en mouvement, une expérience d’une semaine" }
+    },
+    {
+      "id": "ff6-e31", "nr": 31, "kapitel": "ff6-k10", "basis": "j2-e31", "wahl": true, "kompetenzen": ["kennen", "entscheiden"],
+      "titel": { "de": "Essen, Trinken, Energie", "fr": "Manger, boire, énergie" },
+      "kurz": { "de": "Die eigene Energie über den Tag zeichnen, Energydrinks prüfen – ohne Diät- und Körperdruck", "fr": "Dessiner son énergie au fil de la journée, examiner les boissons énergisantes – sans pression sur le corps" }
+    },
+    {
+      "id": "ff6-e32", "nr": 32, "kapitel": "ff6-k10", "basis": "j2-e32", "wahl": true, "kompetenzen": ["steuern"],
+      "titel": { "de": "Bewegung für den Kopf", "fr": "Bouger pour la tête" },
+      "kurz": { "de": "Testen, wie Gehen und Spielen Stimmung und Wachheit verändern, und eine eigene Bewegungsidee planen", "fr": "Tester comment marcher et jouer changent l’humeur, et planifier sa propre idée pour bouger" }
+    },
+    {
+      "id": "ff6-e33", "nr": 33, "kapitel": "ff6-k10", "basis": "j2-e33", "kompetenzen": ["verstehen", "miteinander"],
+      "titel": { "de": "Wenn es jemandem richtig schlecht geht", "fr": "Quand quelqu’un va vraiment mal" },
+      "kurz": { "de": "Warnzeichen kennen, ansprechen und zuhören üben, erleben: Hilfe holen ist kein Verrat", "fr": "Connaître les signaux d’alerte, oser en parler, écouter : demander de l’aide n’est pas trahir" },
+      "hinweis": { "de": "Gemeinsam mit dem SePAS", "fr": "Avec le SePAS" }
+    },
+    {
+      "id": "ff6-e34", "nr": 34, "kapitel": "ff6-k11", "basis": "j2-e34", "wahl": true, "kompetenzen": ["kennen"],
+      "titel": { "de": "Mein Jahr in Bildern", "fr": "Mon année en images" },
+      "kurz": { "de": "Mit Skills-Pass und Kompass zurückblicken, Standbilder, eine Collage aus sechs Bildern", "fr": "Revenir sur l’année avec le Skills-Pass et la boussole, des tableaux vivants, un collage" }
+    },
+    {
+      "id": "ff6-e35", "nr": 35, "kapitel": "ff6-k11", "basis": "j2-e35", "kompetenzen": ["miteinander", "kennen"],
+      "titel": { "de": "Das Stärken-Fest", "fr": "La fête des forces" },
+      "kurz": { "de": "Stärken-Karten verschenken, das Wunschspiel spielen, auf die 5e schauen, sich verabschieden", "fr": "S’offrir des cartes de forces, jouer au jeu préféré, regarder vers la 5e, se dire au revoir" }
+    }
+  ]
+}

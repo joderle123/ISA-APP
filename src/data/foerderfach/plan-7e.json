@@ -1,0 +1,220 @@
+{
+  "klasse": "7e",
+  "titel": { "de": "Ich, wir und die Welt", "fr": "Moi, nous et le monde" },
+  "untertitel": {
+    "de": "Gefühle verstehen, Skills lernen, gut miteinander umgehen",
+    "fr": "Comprendre ses émotions, apprendre des skills, bien vivre ensemble"
+  },
+  "faden": {
+    "de": "Das erste Jahr ist wie eine Treppe gebaut: vom Ich (Bedürfnisse, Stärken, Gefühle, Skills) über das Wir (Kommunikation, Grenzen, Konflikte, Mobbing) zur Welt (Handy und Netz, Gesundheit). Die Klasse beginnt mit festen Ritualen, die sie drei Jahre begleiten: dem Check-in mit dem Gefühlsrad, dem Skills-Pass und dem Blitzlicht. Ab Einheit 13 kommt die Anspannungsskala von 0 bis 100 dazu.",
+    "fr": "La première année est construite comme un escalier : du moi (besoins, forces, émotions, skills) au nous (communication, limites, conflits, harcèlement), puis au monde (portable et internet, santé). La classe commence par des rituels qui l’accompagnent pendant trois ans : le tour d’humeur avec la roue des émotions, le Skills-Pass et le tour éclair. À partir de la séance 13 s’y ajoute l’échelle de tension de 0 à 100."
+  },
+  "ziele": {
+    "kennen": {
+      "de": "benennen Gefühle mit dem Gefühlsrad genau und kennen ihre Bedürfnisse und Stärken.",
+      "fr": "nomment précisément leurs émotions avec la roue et connaissent leurs besoins et leurs forces."
+    },
+    "steuern": {
+      "de": "schätzen ihre Anspannung von 0 bis 100 ein und nutzen ihren Skills-Koffer mit Ampelplan.",
+      "fr": "évaluent leur tension de 0 à 100 et utilisent leur valise à skills avec le plan feu tricolore."
+    },
+    "verstehen": {
+      "de": "lesen Körpersprache und Gefühle anderer und unterscheiden Spaß, Konflikt und Mobbing.",
+      "fr": "lisent le langage du corps et les émotions des autres et distinguent blague, conflit et harcèlement."
+    },
+    "miteinander": {
+      "de": "sprechen in Ich-Botschaften, setzen Grenzen und lösen Konflikte Schritt für Schritt.",
+      "fr": "parlent en messages en « je », posent leurs limites et résolvent les conflits pas à pas."
+    },
+    "entscheiden": {
+      "de": "sagen Nein bei Gruppendruck, prüfen Beiträge im Netz und helfen, statt nur zuzuschauen.",
+      "fr": "disent non face à la pression du groupe, vérifient les contenus en ligne et aident au lieu de regarder."
+    }
+  },
+  "kapitel": [
+    { "id": "ff7-k1", "nr": 1, "trimester": 1, "bild": "icon:door-enter", "titel": { "de": "Ankommen", "fr": "Arriver" }, "leitfrage": { "de": "Wer sind wir als Klasse?", "fr": "Qui sommes-nous en tant que classe ?" } },
+    { "id": "ff7-k2", "nr": 2, "trimester": 1, "bild": "icon:user", "titel": { "de": "Wer bin ich?", "fr": "Qui suis-je ?" }, "leitfrage": { "de": "Was brauche ich, was kann ich?", "fr": "De quoi ai-je besoin, qu’est-ce que je sais faire ?" } },
+    { "id": "ff7-k3", "nr": 3, "trimester": 1, "bild": "icon:mood-smile", "titel": { "de": "Gefühle verstehen", "fr": "Comprendre les émotions" }, "leitfrage": { "de": "Was fühle ich – und wozu?", "fr": "Qu’est-ce que je ressens – et à quoi ça sert ?" } },
+    { "id": "ff7-k4", "nr": 4, "trimester": 2, "bild": "icon:feather", "titel": { "de": "Gefühle regulieren", "fr": "Réguler ses émotions" }, "leitfrage": { "de": "Was hilft mir, wenn es zu viel wird?", "fr": "Qu’est-ce qui m’aide quand c’est trop ?" } },
+    { "id": "ff7-k5", "nr": 5, "trimester": 2, "bild": "icon:message-circle", "titel": { "de": "Kommunikation und Grenzen", "fr": "Communication et limites" }, "leitfrage": { "de": "Wie sage ich, was ich fühle und brauche?", "fr": "Comment dire ce que je ressens et ce dont j’ai besoin ?" } },
+    { "id": "ff7-k6", "nr": 6, "trimester": 2, "bild": "icon:shield", "titel": { "de": "Wenn es schwierig wird", "fr": "Quand ça se complique" }, "leitfrage": { "de": "Was tue ich bei Streit, Gruppendruck und Mobbing?", "fr": "Que faire face aux disputes, à la pression du groupe et au harcèlement ?" } },
+    { "id": "ff7-k7", "nr": 7, "trimester": 3, "bild": "icon:device-mobile", "titel": { "de": "Digitale Welt", "fr": "Monde numérique" }, "leitfrage": { "de": "Was macht das Handy mit mir?", "fr": "Qu’est-ce que le portable fait de moi ?" } },
+    { "id": "ff7-k8", "nr": 8, "trimester": 3, "bild": "icon:bulb", "titel": { "de": "Meine Gedanken", "fr": "Mes pensées" }, "leitfrage": { "de": "Was denke ich über mich – und stimmt das?", "fr": "Qu’est-ce que je pense de moi – et est-ce vrai ?" } },
+    { "id": "ff7-k9", "nr": 9, "trimester": 3, "bild": "icon:heart", "titel": { "de": "Gesund und stark", "fr": "Prendre soin de soi" }, "leitfrage": { "de": "Wie sorge ich für mich?", "fr": "Comment prendre soin de moi ?" } },
+    { "id": "ff7-k10", "nr": 10, "trimester": 3, "bild": "icon:flag", "titel": { "de": "Abschluss", "fr": "Bilan" }, "leitfrage": { "de": "Was nehme ich mit?", "fr": "Qu’est-ce que j’emporte ?" } }
+  ],
+  "einheiten": [
+    {
+      "id": "ff7-e01", "nr": 1, "kapitel": "ff7-k1", "basis": "j1-e01", "kompetenzen": ["kennen", "miteinander"],
+      "titel": { "de": "Willkommen im Fach – unser Rahmen", "fr": "Bienvenue – notre cadre" },
+      "kurz": { "de": "Fach und Rituale kennenlernen, die Klassenvereinbarung aufstellen, erster Skill: 5-4-3-2-1", "fr": "Découvrir la matière et ses rituels, établir la charte de classe, premier skill : 5-4-3-2-1" }
+    },
+    {
+      "id": "ff7-e02", "nr": 2, "kapitel": "ff7-k1", "neu": true, "kompetenzen": ["kennen", "miteinander"],
+      "titel": { "de": "Neu am Lycée", "fr": "Premiers pas au lycée" },
+      "kurz": { "de": "Was ist neu, was ist schwer? Lycée-Rallye: Wer hilft wobei? Ein Plan für die ersten Wochen", "fr": "Qu’est-ce qui change ? Rallye dans le lycée : qui aide pour quoi ? Un plan pour les premières semaines" }
+    },
+    {
+      "id": "ff7-e03", "nr": 3, "kapitel": "ff7-k1", "basis": "j1-e02", "kompetenzen": ["verstehen", "miteinander"],
+      "titel": { "de": "Kennenlernen in Bewegung", "fr": "Faire connaissance en bougeant" },
+      "kurz": { "de": "Aufstellungen, Raten und Nachfragen: Gemeinsamkeiten entdecken, ohne Persönliches preiszugeben", "fr": "Se positionner, deviner, questionner : découvrir des points communs sans se dévoiler" }
+    },
+    {
+      "id": "ff7-e04", "nr": 4, "kapitel": "ff7-k1", "basis": "j1-e03", "kompetenzen": ["miteinander", "entscheiden"],
+      "titel": { "de": "Wir als Klasse", "fr": "Nous, la classe" },
+      "kurz": { "de": "Teamaufgaben, die nur gemeinsam gelingen – und festhalten, was die Klasse braucht", "fr": "Des défis qui ne réussissent qu’ensemble – puis noter ce dont la classe a besoin" }
+    },
+    {
+      "id": "ff7-e05", "nr": 5, "kapitel": "ff7-k1", "neu": true, "kompetenzen": ["miteinander", "entscheiden"],
+      "titel": { "de": "Unser Klassenrat", "fr": "Notre conseil de coopération" },
+      "kurz": { "de": "Rollen, Ablauf und Briefkasten des Klassenrats kennenlernen und eine erste Entscheidung treffen", "fr": "Découvrir les rôles, le déroulement et la boîte aux lettres du conseil, prendre une première décision" }
+    },
+    {
+      "id": "ff7-e06", "nr": 6, "kapitel": "ff7-k2", "basis": "j1-e04", "kompetenzen": ["kennen"],
+      "titel": { "de": "Das Glas der Bedürfnisse", "fr": "Le bocal des besoins" },
+      "kurz": { "de": "Bedürfnisse als innere Tanks: das Glas der Klasse anonym füllen, den eigenen leeren Tank finden", "fr": "Les besoins comme des réservoirs : remplir anonymement le bocal de la classe, repérer le sien" }
+    },
+    {
+      "id": "ff7-e07", "nr": 7, "kapitel": "ff7-k2", "basis": "j1-e05", "kompetenzen": ["kennen", "verstehen"],
+      "titel": { "de": "Zwischen laut und leise", "fr": "Entre expansif et réservé" },
+      "kurz": { "de": "Sich zwischen Gegensätzen einordnen, mit dem Blick der anderen vergleichen, Vielfalt als Stärke sehen", "fr": "Se situer entre des contraires, comparer avec le regard des autres, voir la diversité comme une force" }
+    },
+    {
+      "id": "ff7-e08", "nr": 8, "kapitel": "ff7-k2", "basis": "j1-e06", "kompetenzen": ["kennen", "verstehen"],
+      "titel": { "de": "Mein Baum der Stärke", "fr": "Mon arbre des forces" },
+      "kurz": { "de": "Einen Baum aus Halt, Können und Stolz gestalten und Stärken von der Klasse zurückbekommen", "fr": "Dessiner son arbre (racines, savoir-faire, fiertés) et recevoir les forces vues par la classe" }
+    },
+    {
+      "id": "ff7-e09", "nr": 9, "kapitel": "ff7-k3", "basis": "j1-e07", "kompetenzen": ["kennen"],
+      "titel": { "de": "Was sind Gefühle – und wozu?", "fr": "Les émotions – à quoi servent-elles ?" },
+      "kurz": { "de": "Gefühle sammeln, sechs Grundgefühlen zuordnen, die Botschaft jedes Gefühls entdecken", "fr": "Rassembler des émotions, les classer en six émotions de base, découvrir le message de chacune" }
+    },
+    {
+      "id": "ff7-e10", "nr": 10, "kapitel": "ff7-k3", "basis": "j1-e08", "kompetenzen": ["kennen", "verstehen"],
+      "titel": { "de": "Alles steht Kopf", "fr": "Vice-versa" },
+      "kurz": { "de": "Filmausschnitte: Wie Gefühle das Steuer übernehmen – und warum auch Kummer seinen Platz hat", "fr": "Extraits de film : comment les émotions prennent les commandes – et pourquoi la tristesse a sa place" },
+      "hinweis": { "de": "Vorführrechte der Schule klären", "fr": "Vérifier les droits de projection" }
+    },
+    {
+      "id": "ff7-e11", "nr": 11, "kapitel": "ff7-k3", "basis": "j1-e09", "kompetenzen": ["kennen", "steuern"],
+      "titel": { "de": "Wo spüre ich Gefühle?", "fr": "Où est-ce que je ressens mes émotions ?" },
+      "kurz": { "de": "Die Gefühls-Landkarte des Körpers zeichnen, erste Warnsignale für Wut und Angst finden", "fr": "Dessiner la carte corporelle des émotions, repérer ses premiers signaux d’alerte" }
+    },
+    {
+      "id": "ff7-e12", "nr": 12, "kapitel": "ff7-k3", "basis": "j1-e10", "wahl": true, "kompetenzen": ["kennen"],
+      "titel": { "de": "Gemischte Gefühle", "fr": "Émotions mélangées" },
+      "kurz": { "de": "Mehrere Gefühle gleichzeitig: untersuchen und ihre Stärke von 0 bis 10 einschätzen", "fr": "Plusieurs émotions en même temps : les explorer et évaluer leur intensité de 0 à 10" }
+    },
+    {
+      "id": "ff7-e13", "nr": 13, "kapitel": "ff7-k4", "basis": "j1-e11", "kompetenzen": ["steuern", "kennen"],
+      "titel": { "de": "Skills und die Anspannungsskala", "fr": "Les skills et l’échelle de tension" },
+      "kurz": { "de": "Skills ordnen: Die Skala von 0 bis 100 zeigt, welcher Skill bei welcher Anspannung noch hilft", "fr": "Ranger les skills : l’échelle de 0 à 100 montre quel skill aide encore à quel niveau de tension" }
+    },
+    {
+      "id": "ff7-e14", "nr": 14, "kapitel": "ff7-k4", "basis": "j1-e12", "kompetenzen": ["steuern"],
+      "titel": { "de": "Skills über Körper und Atem", "fr": "Des skills par le corps et le souffle" },
+      "kurz": { "de": "Körper-Skills testen wie ein Experiment: Zahl vorher, Skill, Zahl nachher", "fr": "Tester des skills corporels comme une expérience : chiffre avant, skill, chiffre après" }
+    },
+    {
+      "id": "ff7-e15", "nr": 15, "kapitel": "ff7-k4", "basis": "j1-e13", "kompetenzen": ["steuern"],
+      "titel": { "de": "Skills über die Sinne", "fr": "Des skills par les sens" },
+      "kurz": { "de": "Sinnes-Skills an Stationen testen – Tasten, Kälte, Klang – und eine Playlist zum Runterkommen bauen", "fr": "Tester des skills sensoriels en ateliers – toucher, froid, sons – et créer une playlist pour se calmer" },
+      "hinweis": { "de": "Düfte nur nach Rückfrage (Allergien)", "fr": "Parfums seulement après vérification (allergies)" }
+    },
+    {
+      "id": "ff7-e16", "nr": 16, "kapitel": "ff7-k4", "basis": "j1-e14", "kompetenzen": ["steuern", "kennen"],
+      "titel": { "de": "Achtsamkeit und Kopf-Skills", "fr": "Pleine conscience et skills mentaux" },
+      "kurz": { "de": "Gedanken vorbeiziehen lassen, Kopf-Skills für mittlere Anspannung testen, den sicheren Ort finden", "fr": "Laisser passer ses pensées, tester des skills mentaux, trouver son lieu sûr" }
+    },
+    {
+      "id": "ff7-e17", "nr": 17, "kapitel": "ff7-k4", "basis": "j1-e15", "kompetenzen": ["steuern", "kennen"],
+      "titel": { "de": "Mein Skills-Koffer und Ampelplan", "fr": "Ma valise à skills et mon plan feu tricolore" },
+      "kurz": { "de": "Den Skills-Koffer packen, einen Ampelplan für Grün, Gelb und Rot und eine Notfallkarte erstellen", "fr": "Remplir sa valise à skills, établir un plan vert-orange-rouge et une carte d’urgence" }
+    },
+    {
+      "id": "ff7-e18", "nr": 18, "kapitel": "ff7-k5", "basis": "j1-e20", "kompetenzen": ["verstehen", "miteinander"],
+      "titel": { "de": "Verbal und nonverbal", "fr": "Verbal et non verbal" },
+      "kurz": { "de": "Erleben, wie viel ohne Worte ankommt, Körpersprache lesen, Emojis in Sätze übersetzen", "fr": "Voir tout ce qui passe sans les mots, lire le langage du corps, traduire des émojis en phrases" }
+    },
+    {
+      "id": "ff7-e19", "nr": 19, "kapitel": "ff7-k5", "basis": "j1-e21", "kompetenzen": ["miteinander", "verstehen"],
+      "titel": { "de": "Ich-Botschaften und Zuhören", "fr": "Messages en « je » et écoute" },
+      "kurz": { "de": "Aus Vorwürfen Ich-Botschaften machen und zu zweit üben, so zuzuhören, dass sich jemand verstanden fühlt", "fr": "Transformer des reproches en messages en « je » et s’entraîner à deux à vraiment écouter" }
+    },
+    {
+      "id": "ff7-e20", "nr": 20, "kapitel": "ff7-k5", "basis": "j1-e22", "kompetenzen": ["kennen", "verstehen"],
+      "titel": { "de": "Grenzen erkennen", "fr": "Reconnaître les limites" },
+      "kurz": { "de": "Grenz-Situationen sortieren, die eigene Wohlfühl-Distanz spüren, die Grenzen anderer lesen", "fr": "Trier des situations, ressentir sa distance de confort, lire les limites des autres" }
+    },
+    {
+      "id": "ff7-e21", "nr": 21, "kapitel": "ff7-k5", "basis": "j1-e23", "kompetenzen": ["miteinander", "steuern"],
+      "titel": { "de": "Grenzen setzen: Stopp!", "fr": "Poser ses limites : stop !" },
+      "kurz": { "de": "Drei Arten, Stopp zu sagen, vergleichen und im Rollenspiel Grenzen mit Wort und Körper setzen", "fr": "Comparer trois façons de dire stop et poser ses limites en jeu de rôle, avec les mots et le corps" }
+    },
+    {
+      "id": "ff7-e22", "nr": 22, "kapitel": "ff7-k6", "basis": "j1-e24", "kompetenzen": ["miteinander", "entscheiden"],
+      "titel": { "de": "Konflikte lösen", "fr": "Résoudre les conflits" },
+      "kurz": { "de": "Konfliktstile entdecken, die Konflikt-Treppe lernen, Alltagsstreits Stufe für Stufe durchspielen", "fr": "Découvrir les styles de conflit, apprendre l’escalier du conflit, rejouer des disputes marche par marche" }
+    },
+    {
+      "id": "ff7-e23", "nr": 23, "kapitel": "ff7-k6", "basis": "j1-e25", "kompetenzen": ["entscheiden", "steuern"],
+      "titel": { "de": "Gruppendruck und Nein sagen", "fr": "Pression du groupe et savoir dire non" },
+      "kurz": { "de": "Vier Arten, Nein zu sagen, in Druck-Situationen erproben – vom Pausenhof bis zum Klassenchat", "fr": "Essayer quatre façons de dire non face à la pression – de la cour au groupe de la classe" }
+    },
+    {
+      "id": "ff7-e24", "nr": 24, "kapitel": "ff7-k6", "basis": "j1-e26", "kompetenzen": ["verstehen", "entscheiden"],
+      "titel": { "de": "Mobbing und Zivilcourage", "fr": "Harcèlement et courage civique" },
+      "kurz": { "de": "Spaß, Konflikt und Mobbing unterscheiden, die Rolle der Zuschauenden verstehen, Zivilcourage üben", "fr": "Distinguer blague, conflit et harcèlement, comprendre le rôle des témoins, oser intervenir" }
+    },
+    {
+      "id": "ff7-e25", "nr": 25, "kapitel": "ff7-k7", "basis": "j1-e27", "kompetenzen": ["kennen", "entscheiden"],
+      "titel": { "de": "Social Media und ich", "fr": "Les réseaux sociaux et moi" },
+      "kurz": { "de": "Geschätzte und echte Bildschirmzeit vergleichen, hinter perfekte Bilder schauen, einen Handy-Plan machen", "fr": "Comparer temps d’écran estimé et réel, regarder derrière les images parfaites, faire un plan" }
+    },
+    {
+      "id": "ff7-e26", "nr": 26, "kapitel": "ff7-k7", "basis": "j1-e28", "kompetenzen": ["entscheiden", "verstehen"],
+      "titel": { "de": "Echt oder fake?", "fr": "Vrai ou faux ?" },
+      "kurz": { "de": "Echt-oder-fake-Spiel, Beiträge mit einer Checkliste prüfen, über Chancen und Gefahren von KI sprechen", "fr": "Jeu « vrai ou faux », vérifier des publications, parler des atouts et des dangers de l’IA" }
+    },
+    {
+      "id": "ff7-e27", "nr": 27, "kapitel": "ff7-k8", "basis": "j1-e16", "kompetenzen": ["kennen"],
+      "titel": { "de": "Was sind Glaubenssätze?", "fr": "C’est quoi, une croyance ?" },
+      "kurz": { "de": "Zwischen Situation und Gefühl steht ein Gedanke: Sätze entdecken, die helfen oder bremsen", "fr": "Entre la situation et l’émotion, il y a une pensée : repérer les phrases qui aident ou qui freinent" }
+    },
+    {
+      "id": "ff7-e28", "nr": 28, "kapitel": "ff7-k8", "basis": "j1-e17", "kompetenzen": ["kennen"],
+      "titel": { "de": "Meine Glaubenssätze", "fr": "Mes croyances" },
+      "kurz": { "de": "In Ruhe und nur für sich: eigene bremsende Sätze finden – woher sie kommen und ob sie noch stimmen", "fr": "Au calme et pour soi : repérer ses phrases qui freinent – d’où elles viennent, si elles sont vraies" }
+    },
+    {
+      "id": "ff7-e29", "nr": 29, "kapitel": "ff7-k8", "basis": "j1-e18", "kompetenzen": ["kennen", "steuern"],
+      "titel": { "de": "Der kritische Detektiv", "fr": "Le détective critique" },
+      "kurz": { "de": "Glaubenssätze wie Detektive prüfen und realistische neue Sätze auf Kärtchen mitnehmen", "fr": "Examiner ses croyances comme un détective et emporter de nouvelles phrases réalistes" }
+    },
+    {
+      "id": "ff7-e30", "nr": 30, "kapitel": "ff7-k8", "basis": "j1-e19", "wahl": true, "kompetenzen": ["steuern", "kennen"],
+      "titel": { "de": "Neue Gedanken ausprobieren", "fr": "Essayer de nouvelles pensées" },
+      "kurz": { "de": "Im Rollenspiel erleben, wie ein neuer Satz eine Szene verändert, und ihn eine Woche lang testen", "fr": "Voir en jeu de rôle comment une nouvelle phrase change une scène, puis la tester une semaine" }
+    },
+    {
+      "id": "ff7-e31", "nr": 31, "kapitel": "ff7-k9", "basis": "j1-e29", "kompetenzen": ["kennen", "entscheiden"],
+      "titel": { "de": "Was mir guttut", "fr": "Ce qui me fait du bien" },
+      "kurz": { "de": "Schlaf, Bewegung, Essen und Stress hängen zusammen: Position beziehen und einen kleinen Schritt planen", "fr": "Sommeil, mouvement, alimentation et stress sont liés : prendre position et planifier un petit pas" }
+    },
+    {
+      "id": "ff7-e32", "nr": 32, "kapitel": "ff7-k9", "basis": "j1-j09", "kompetenzen": ["steuern", "entscheiden"],
+      "titel": { "de": "Ruhig durch die Testphase", "fr": "Rester calme pendant les devoirs en classe" },
+      "kurz": { "de": "Woher Prüfungsstress kommt, das Lernen rückwärts planen, unauffällige Skills für den Test üben", "fr": "D’où vient le stress, planifier ses révisions à rebours, des skills discrets pour le jour J" }
+    },
+    {
+      "id": "ff7-e33", "nr": 33, "kapitel": "ff7-k10", "basis": "j1-j05", "wahl": true, "termine": 2, "kompetenzen": ["miteinander", "entscheiden"],
+      "titel": { "de": "Unser Stück – Theater oder Video", "fr": "Notre pièce – théâtre ou vidéo" },
+      "kurz": { "de": "In Gruppen kurze Szenen oder Videos zu einem Thema des Jahres entwickeln, proben und zeigen", "fr": "En groupes, créer de courtes scènes ou vidéos sur un thème de l’année, les répéter et les présenter" }
+    },
+    {
+      "id": "ff7-e35", "nr": 35, "kapitel": "ff7-k10", "basis": "j1-e30", "kompetenzen": ["kennen", "miteinander"],
+      "titel": { "de": "Rückblick und Abschied", "fr": "Bilan et au revoir" },
+      "kurz": { "de": "Mit Skills-Pass, Glas und Baum aufs Jahr schauen, einen Brief an sich selbst schreiben", "fr": "Revenir sur l’année avec le Skills-Pass, le bocal et l’arbre, s’écrire une lettre" }
+    }
+  ]
+}

@@ -1,0 +1,885 @@
+[
+  {
+    "id": "ff-das-fach",
+    "bereich": "skills",
+    "thema": "ankommen",
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln"
+    ],
+    "dauer": "5 Min.",
+    "eldib": [],
+    "schlagworte": [
+      "Förderfach",
+      "Rituale",
+      "Regeln",
+      "Hilfe"
+    ],
+    "bild": "icon:stairs",
+    "de": {
+      "titel": "So funktioniert das Fach",
+      "untertitel": "Zwei Stunden pro Woche für Gefühle, Stress, Freundschaft und gute Entscheidungen",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "In diesem Fach lernst du Skills: Fertigkeiten, mit denen du besser durch schwierige Momente kommst – mit Gefühlen, mit Stress und mit anderen Menschen. Skills lernt man wie einen Sport: durch Ausprobieren und Üben."
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "So läuft eine Stunde"
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 0,
+          "items": [
+            {
+              "titel": "Check-in",
+              "text": "Wie geht es dir gerade? Du zeigst es am Gefühlsrad."
+            },
+            {
+              "titel": "Thema",
+              "text": "Übungen allein, zu zweit und in Gruppen."
+            },
+            {
+              "titel": "Bewegung",
+              "text": "Kurz aufstehen, bewegen, durchatmen."
+            },
+            {
+              "titel": "Skill",
+              "text": "Ein Skill zum Ausprobieren."
+            },
+            {
+              "titel": "Skills-Pass",
+              "text": "Ein Satz: Was nehme ich heute mit?"
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Das gilt hier",
+          "punkte": [
+            "Es gibt keine Noten. Es zählt, dass du ausprobierst.",
+            "Du entscheidest, was du von dir erzählst. „Weiter“ ist immer erlaubt.",
+            "Was du ins Heft schreibst, liest niemand ohne deine Erlaubnis.",
+            "Wir lachen miteinander, nicht übereinander."
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Hilfe im Lycée",
+          "text": "Im SePAS deines Lycée arbeiten Psychologinnen, Psychologen, Sozialarbeiterinnen und Sozialarbeiter. Sie hören dir zu, beraten dich und behandeln vertraulich, was du erzählst."
+        },
+        {
+          "art": "notfall"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen wissen, wie eine Stunde abläuft, welche Regeln gelten und wo sie Hilfe bekommen.",
+        "ablauf": [
+          "Einheit 1: Die Seite beim Austeilen der Hefte kurz gemeinsam anschauen (3 Min.).",
+          "Den Ablauf einer Stunde an der Tafel wiederholen, wenn die Rituale noch neu sind.",
+          "Den Raum des SePAS und die Sprechzeiten nennen und im Heft ergänzen lassen."
+        ],
+        "hintergrund": "Vorhersehbare Abläufe geben Sicherheit, gerade in Stunden, in denen es um Gefühle geht. Programme zur Förderung sozial-emotionaler Kompetenzen wirken besonders, wenn sie offen benennen, was geübt wird und wozu (Durlak et al., 2011).",
+        "quellen": [
+          "Durlak, J. A., Weissberg, R. P., Dymnicki, A. B., Taylor, R. D. & Schellinger, K. B. (2011). The impact of enhancing students’ social and emotional learning: A meta-analysis of school-based universal interventions. Child Development, 82(1), 405–432."
+        ],
+        "material": "Schülerheft"
+      }
+    },
+    "fr": {
+      "titel": "Comment fonctionne la matière",
+      "untertitel": "Deux heures par semaine pour les émotions, le stress, l’amitié et les bons choix",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Dans cette matière, tu apprends des skills : des savoir-faire qui t’aident à mieux traverser les moments difficiles – avec tes émotions, avec le stress et avec les autres. Les skills s’apprennent comme un sport : en essayant et en s’entraînant."
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Le déroulement d’une séance"
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 0,
+          "items": [
+            {
+              "titel": "Tour d’humeur",
+              "text": "Comment vas-tu ? Tu le montres sur la roue des émotions."
+            },
+            {
+              "titel": "Thème",
+              "text": "Des activités seul, à deux et en groupe."
+            },
+            {
+              "titel": "Mouvement",
+              "text": "Se lever, bouger, respirer."
+            },
+            {
+              "titel": "Skill",
+              "text": "Un skill à essayer."
+            },
+            {
+              "titel": "Skills-Pass",
+              "text": "Une phrase : qu’est-ce que j’emporte aujourd’hui ?"
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Nos règles",
+          "punkte": [
+            "Il n’y a pas de notes. Ce qui compte, c’est d’essayer.",
+            "Tu décides de ce que tu racontes sur toi. Tu peux toujours dire « je passe ».",
+            "Ce que tu écris dans ton cahier, personne ne le lit sans ta permission.",
+            "On rit ensemble, pas les uns des autres."
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "De l’aide au lycée",
+          "text": "Au SePAS de ton lycée travaillent des psychologues et des assistants sociaux. Ils t’écoutent, te conseillent et traitent ce que tu racontes en toute confidentialité."
+        },
+        {
+          "art": "notfall"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes savent comment se déroule une séance, quelles règles s’appliquent et où trouver de l’aide.",
+        "ablauf": [
+          "Séance 1 : regarder brièvement la page ensemble en distribuant les cahiers (3 min).",
+          "Rappeler le déroulement d’une séance au tableau tant que les rituels sont nouveaux.",
+          "Indiquer la salle et les horaires du SePAS et les faire noter dans le cahier."
+        ],
+        "hintergrund": "Des déroulements prévisibles rassurent, surtout dans des cours où l’on parle d’émotions. Les programmes qui développent les compétences socio-émotionnelles sont particulièrement efficaces lorsqu’ils nomment clairement ce qui est exercé et pourquoi (Durlak et al., 2011).",
+        "quellen": [
+          "Durlak, J. A., Weissberg, R. P., Dymnicki, A. B., Taylor, R. D. & Schellinger, K. B. (2011). The impact of enhancing students’ social and emotional learning: A meta-analysis of school-based universal interventions. Child Development, 82(1), 405–432."
+        ],
+        "material": "Cahier de l’élève"
+      }
+    }
+  },
+  {
+    "id": "ff-gefuehlsrad",
+    "bereich": "skills",
+    "thema": "ankommen",
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "3–10 Min. je Stunde",
+    "eldib": [],
+    "schlagworte": [
+      "Gefühlsrad",
+      "Check-in",
+      "Gefühle benennen",
+      "Förderfach"
+    ],
+    "bild": "icon:mood-smile",
+    "de": {
+      "titel": "Das Gefühlsrad",
+      "untertitel": "Innen die Grundgefühle, außen die genaueren Wörter",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "„Schlecht“ kann vieles heißen: enttäuscht, gekränkt, nervös oder einfach müde. Je genauer du ein Gefühl benennst, desto besser kannst du damit umgehen."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Kreise ein, wie es dir gerade geht. Es dürfen auch zwei oder drei Wörter sein.",
+          "symbole": [
+            "einkreisen"
+          ]
+        },
+        {
+          "art": "gefuehlsrad"
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Gerade fühle ich mich …",
+            "Das liegt vielleicht daran, dass …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Du entscheidest, was du teilst.",
+          "text": "Im Check-in reicht es, auf ein Wort zu zeigen. Das „weil“ ist freiwillig."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen lernen ein Werkzeug kennen, mit dem sie Gefühle genauer benennen. Das Rad ist die Grundlage für den Check-in am Anfang jeder Stunde.",
+        "ablauf": [
+          "Einheit 1 (5 Min.): Das Rad am Plakat erklären – innen sechs Grundgefühle, außen genauere Wörter. Fragen: Was ist der Unterschied zwischen genervt und gekränkt?",
+          "Einzeln (2 Min.): Wörter einkreisen, Satzanfänge ergänzen. Das Blatt wird nicht eingesammelt.",
+          "Tischgruppen (3 Min.): Reihum zeigt jede Person auf ein Wort; ein Satz dazu ist freiwillig.",
+          "Jede weitere Stunde (3 Min.): Beim Hereinkommen einen Klebepunkt auf das Plakat setzen; zwei oder drei Freiwillige sagen ihr Wort. Ab Einheit 13 kommt die Anspannung von 0 bis 100 dazu."
+        ],
+        "hintergrund": "Das Gefühlsrad geht auf Gloria Willcox (1982) zurück: Innen stehen wenige Grundgefühle, nach außen werden die Wörter feiner. Wer ein Gefühl in Worte fasst, dämpft damit messbar die Reaktion des Gehirns auf belastende Reize (Lieberman et al., 2007). Ein großer Gefühlswortschatz gehört zur emotionalen Kompetenz und hilft Jugendlichen, passend zu handeln, statt nur zu reagieren (Brackett, 2019).",
+        "quellen": [
+          "Willcox, G. (1982). The Feeling Wheel: A tool for expanding awareness of emotions and increasing spontaneity and intimacy. Transactional Analysis Journal, 12(4), 274–276.",
+          "Lieberman, M. D., Eisenberger, N. I., Crockett, M. J., Tom, S. M., Pfeifer, J. H. & Way, B. M. (2007). Putting feelings into words: Affect labeling disrupts amygdala activity in response to affective stimuli. Psychological Science, 18(5), 421–428.",
+          "Brackett, M. A. (2019). Permission to Feel. New York: Celadon."
+        ],
+        "differenzierung": {
+          "leichter": "Nur die sechs Grundgefühle in der Mitte verwenden; die äußeren Wörter bei Bedarf vorlesen.",
+          "schwerer": "Die Klasse sammelt Wörter, die im Rad fehlen – etwa gestresst, peinlich berührt, erleichtert – und ordnet sie einem Grundgefühl zu."
+        },
+        "impulse": [
+          "Genervt oder gereizt – wo ist für euch der Unterschied?",
+          "Welches Gefühl fehlt euch im Rad?"
+        ],
+        "tipps": [
+          "Das Rad als Plakat in A2 aufhängen: Mit Klebepunkten ist die Stimmung der Klasse auf einen Blick sichtbar, ohne dass jemand sprechen muss.",
+          "Antworten wie „geht so“ gelten lassen und höchstens fragen, welches Wort im Rad am nächsten dran ist."
+        ],
+        "achtung": "Zeigt jemand immer wieder auf hilflos, einsam oder überfordert: nicht vor der Klasse nachfragen, sondern ein Gespräch unter vier Augen anbieten und bei Sorge den SePAS einbeziehen.",
+        "material": "Rad als Plakat (A2 oder A3), Klebepunkte, Schülerheft"
+      }
+    },
+    "fr": {
+      "titel": "La roue des émotions",
+      "untertitel": "Au centre, les émotions de base ; à l’extérieur, des mots plus précis",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "« Mal » peut vouloir dire beaucoup de choses : déçu, blessé, nerveux ou simplement fatigué. Plus tu nommes une émotion avec précision, mieux tu peux t’en occuper."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Entoure comment tu te sens en ce moment. Tu peux aussi entourer deux ou trois mots.",
+          "symbole": [
+            "einkreisen"
+          ]
+        },
+        {
+          "art": "gefuehlsrad"
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "En ce moment, je me sens…",
+            "C’est peut-être parce que…"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Tu décides de ce que tu partages.",
+          "text": "Pendant le tour d’humeur, il suffit de montrer un mot. Le « parce que » est facultatif."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes découvrent un outil qui les aide à nommer leurs émotions avec plus de précision. La roue sert de base au tour d’humeur au début de chaque séance.",
+        "ablauf": [
+          "Séance 1 (5 min) : présenter la roue sur l’affiche – au centre six émotions de base, à l’extérieur des mots plus précis. Demander : quelle est la différence entre agacé et blessé ?",
+          "Seul (2 min) : entourer des mots, compléter les débuts de phrase. La fiche n’est pas ramassée.",
+          "En îlots (3 min) : chacun montre un mot à son tour ; une phrase en plus est facultative.",
+          "Chaque séance suivante (3 min) : en entrant, coller une gommette sur l’affiche ; deux ou trois volontaires disent leur mot. À partir de la séance 13 s’ajoute la tension de 0 à 100."
+        ],
+        "hintergrund": "La roue des émotions remonte à Gloria Willcox (1982) : au centre, quelques émotions de base ; vers l’extérieur, des mots de plus en plus fins. Mettre une émotion en mots atténue de façon mesurable la réaction du cerveau face à des stimuli pénibles (Lieberman et al., 2007). Un vocabulaire émotionnel riche fait partie de la compétence émotionnelle et aide les jeunes à agir de façon adaptée au lieu de simplement réagir (Brackett, 2019).",
+        "quellen": [
+          "Willcox, G. (1982). The Feeling Wheel: A tool for expanding awareness of emotions and increasing spontaneity and intimacy. Transactional Analysis Journal, 12(4), 274–276.",
+          "Lieberman, M. D., Eisenberger, N. I., Crockett, M. J., Tom, S. M., Pfeifer, J. H. & Way, B. M. (2007). Putting feelings into words: Affect labeling disrupts amygdala activity in response to affective stimuli. Psychological Science, 18(5), 421–428.",
+          "Brackett, M. A. (2019). Permission to Feel. New York: Celadon."
+        ],
+        "differenzierung": {
+          "leichter": "N’utiliser que les six émotions de base du centre ; lire les mots extérieurs si besoin.",
+          "schwerer": "La classe cherche des mots qui manquent dans la roue – stressé, gêné, soulagé – et les range sous une émotion de base."
+        },
+        "impulse": [
+          "Agacé ou irrité – quelle différence pour vous ?",
+          "Quelle émotion vous manque dans la roue ?"
+        ],
+        "tipps": [
+          "Afficher la roue en A2 : avec des gommettes, l’humeur de la classe se voit d’un coup d’œil, sans que personne doive parler.",
+          "Accepter des réponses comme « bof » et demander tout au plus quel mot de la roue s’en approche le plus."
+        ],
+        "achtung": "Si un jeune montre souvent impuissant, seul ou débordé : ne pas poser de questions devant la classe, proposer un entretien en tête-à-tête et, en cas d’inquiétude, impliquer le SePAS.",
+        "material": "Roue en affiche (A2 ou A3), gommettes, cahier de l’élève"
+      }
+    }
+  },
+  {
+    "id": "ff-skills-pass",
+    "bereich": "skills",
+    "thema": "ankommen",
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln"
+    ],
+    "dauer": "3 Min. je Stunde",
+    "eldib": [],
+    "schlagworte": [
+      "Skills-Pass",
+      "Rückblick",
+      "Ritual",
+      "Förderfach"
+    ],
+    "bild": "icon:bookmark",
+    "de": {
+      "titel": "Mein Skills-Pass",
+      "untertitel": "Ein Satz pro Stunde – am Ende des Jahres hast du dein ganzes Jahr in der Hand.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Schreib am Ende jeder Stunde einen Satz auf: Was nehme ich heute mit?",
+          "hinweis": "Zum Beispiel: „Mit 5-4-3-2-1 werde ich ruhiger.“ Eine Seite pro Trimester."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Nr.",
+            "1. Trimester: Das nehme ich mit",
+            "Stempel"
+          ],
+          "breiten": [
+            0.45,
+            4,
+            0.85
+          ],
+          "zeilen": 12,
+          "nummern": 1
+        },
+        {
+          "art": "frage",
+          "text": "Mein wichtigster Skill in diesem Trimester:",
+          "linien": 1
+        },
+        {
+          "art": "text",
+          "text": "Am Ende des Trimesters: So schätze ich mich ein.",
+          "klein": true
+        },
+        {
+          "art": "einschaetzung",
+          "items": [
+            "Ich kann sagen, wie ich mich fühle.",
+            "Ich kenne Skills, die mich ruhiger machen.",
+            "Ich merke, wie es anderen geht.",
+            "Ich kann sagen, was ich brauche, ohne andere zu verletzen.",
+            "Ich überlege, bevor ich mich entscheide."
+          ],
+          "optionen": [
+            "noch nicht",
+            "manchmal",
+            "oft"
+          ]
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Nr.",
+            "2. Trimester: Das nehme ich mit",
+            "Stempel"
+          ],
+          "breiten": [
+            0.45,
+            4,
+            0.85
+          ],
+          "zeilen": 12,
+          "nummern": 13
+        },
+        {
+          "art": "frage",
+          "text": "Mein wichtigster Skill in diesem Trimester:",
+          "linien": 1
+        },
+        {
+          "art": "text",
+          "text": "Am Ende des Trimesters: So schätze ich mich ein.",
+          "klein": true
+        },
+        {
+          "art": "einschaetzung",
+          "items": [
+            "Ich kann sagen, wie ich mich fühle.",
+            "Ich kenne Skills, die mich ruhiger machen.",
+            "Ich merke, wie es anderen geht.",
+            "Ich kann sagen, was ich brauche, ohne andere zu verletzen.",
+            "Ich überlege, bevor ich mich entscheide."
+          ],
+          "optionen": [
+            "noch nicht",
+            "manchmal",
+            "oft"
+          ]
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Nr.",
+            "3. Trimester: Das nehme ich mit",
+            "Stempel"
+          ],
+          "breiten": [
+            0.45,
+            4,
+            0.85
+          ],
+          "zeilen": 12,
+          "nummern": 25
+        },
+        {
+          "art": "frage",
+          "text": "Am Ende des Jahres: Welcher Skill hat dir am meisten geholfen?",
+          "linien": 1
+        },
+        {
+          "art": "text",
+          "text": "Am Ende des Trimesters: So schätze ich mich ein.",
+          "klein": true
+        },
+        {
+          "art": "einschaetzung",
+          "items": [
+            "Ich kann sagen, wie ich mich fühle.",
+            "Ich kenne Skills, die mich ruhiger machen.",
+            "Ich merke, wie es anderen geht.",
+            "Ich kann sagen, was ich brauche, ohne andere zu verletzen.",
+            "Ich überlege, bevor ich mich entscheide."
+          ],
+          "optionen": [
+            "noch nicht",
+            "manchmal",
+            "oft"
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen halten nach jeder Stunde in einem Satz fest, was sie mitnehmen. Am Ende jedes Trimesters schätzen sie sich in den fünf Kompetenzbereichen selbst ein und sehen so, was gewachsen ist.",
+        "ablauf": [
+          "Einheit 1: Den Pass zeigen und den ersten Satz schreiben lassen (3 Min.).",
+          "Am Ende jeder Stunde (3 Min.): Satz eintragen, Stempel geben. Wem nichts einfällt, schreibt den Skill der Stunde auf.",
+          "Die Einträge nicht korrigieren und nur lesen, wenn jemand es anbietet.",
+          "Letzte Stunde jedes Trimesters (10 Min.): den wichtigsten Skill notieren und die fünf Sätze unten auf der Seite einschätzen – eine Selbsteinschätzung, keine Note. Wer mag, erzählt, was sich verändert hat."
+        ],
+        "hintergrund": "Wer am Ende einer Stunde selbst formuliert, was er gelernt hat, verarbeitet das Gelernte ein zweites Mal und kann es später leichter abrufen. Das Skillstraining für Jugendliche nutzt ein ähnliches Werkzeug: Skills werden notiert, damit sie im Alltag präsent bleiben (Rathus & Miller, 2015). Der Stempel würdigt die Mitarbeit, nicht die Qualität des Satzes.",
+        "quellen": [
+          "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Satzanfänge an die Tafel: „Heute habe ich gemerkt …“, „Ein Skill, den ich ausprobieren will …“.",
+          "schwerer": "Zusätzlich notieren, wann der Skill in der kommenden Woche passen könnte."
+        },
+        "impulse": [
+          "Was hat euch heute überrascht?",
+          "Welchen Satz würdet ihr euch in einem Monat gern selbst vorlesen?"
+        ],
+        "tipps": [
+          "Einen eigenen Stempel für die Klasse gestalten lassen; das stärkt das Wir-Gefühl."
+        ],
+        "material": "Schülerheft, Stempel oder Sticker"
+      }
+    },
+    "fr": {
+      "titel": "Mon Skills-Pass",
+      "untertitel": "Une phrase par séance – à la fin de l’année, tu tiens ton année entière entre tes mains.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "À la fin de chaque séance, écris une phrase : qu’est-ce que j’emporte aujourd’hui ?",
+          "hinweis": "Par exemple : « Avec 5-4-3-2-1, je me calme. » Une page par trimestre."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "N°",
+            "1er trimestre : ce que j’emporte",
+            "Tampon"
+          ],
+          "breiten": [
+            0.45,
+            4,
+            0.85
+          ],
+          "zeilen": 12,
+          "nummern": 1
+        },
+        {
+          "art": "frage",
+          "text": "Mon skill le plus important ce trimestre :",
+          "linien": 1
+        },
+        {
+          "art": "text",
+          "text": "En fin de trimestre : voici où j’en suis.",
+          "klein": true
+        },
+        {
+          "art": "einschaetzung",
+          "items": [
+            "Je sais dire comment je me sens.",
+            "Je connais des skills qui me calment.",
+            "Je remarque comment vont les autres.",
+            "Je sais dire ce dont j’ai besoin sans blesser les autres.",
+            "Je réfléchis avant de décider."
+          ],
+          "optionen": [
+            "pas encore",
+            "parfois",
+            "souvent"
+          ]
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "N°",
+            "2e trimestre : ce que j’emporte",
+            "Tampon"
+          ],
+          "breiten": [
+            0.45,
+            4,
+            0.85
+          ],
+          "zeilen": 12,
+          "nummern": 13
+        },
+        {
+          "art": "frage",
+          "text": "Mon skill le plus important ce trimestre :",
+          "linien": 1
+        },
+        {
+          "art": "text",
+          "text": "En fin de trimestre : voici où j’en suis.",
+          "klein": true
+        },
+        {
+          "art": "einschaetzung",
+          "items": [
+            "Je sais dire comment je me sens.",
+            "Je connais des skills qui me calment.",
+            "Je remarque comment vont les autres.",
+            "Je sais dire ce dont j’ai besoin sans blesser les autres.",
+            "Je réfléchis avant de décider."
+          ],
+          "optionen": [
+            "pas encore",
+            "parfois",
+            "souvent"
+          ]
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "N°",
+            "3e trimestre : ce que j’emporte",
+            "Tampon"
+          ],
+          "breiten": [
+            0.45,
+            4,
+            0.85
+          ],
+          "zeilen": 12,
+          "nummern": 25
+        },
+        {
+          "art": "frage",
+          "text": "À la fin de l’année : quel skill t’a le plus aidé ?",
+          "linien": 1
+        },
+        {
+          "art": "text",
+          "text": "En fin de trimestre : voici où j’en suis.",
+          "klein": true
+        },
+        {
+          "art": "einschaetzung",
+          "items": [
+            "Je sais dire comment je me sens.",
+            "Je connais des skills qui me calment.",
+            "Je remarque comment vont les autres.",
+            "Je sais dire ce dont j’ai besoin sans blesser les autres.",
+            "Je réfléchis avant de décider."
+          ],
+          "optionen": [
+            "pas encore",
+            "parfois",
+            "souvent"
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Après chaque séance, les jeunes notent en une phrase ce qu’ils emportent. À la fin de chaque trimestre, ils s’auto-évaluent dans les cinq domaines de compétences et voient ainsi ce qui a grandi.",
+        "ablauf": [
+          "Séance 1 : présenter le pass et faire écrire la première phrase (3 min).",
+          "À la fin de chaque séance (3 min) : écrire la phrase, donner un tampon. Qui ne trouve rien note le skill de la séance.",
+          "Ne pas corriger les phrases et ne les lire que si le jeune le propose.",
+          "Dernière séance de chaque trimestre (10 min) : noter le skill le plus important et évaluer les cinq phrases en bas de page – une auto-évaluation, pas une note. Qui le souhaite raconte ce qui a changé."
+        ],
+        "hintergrund": "Formuler soi-même à la fin d’un cours ce que l’on a appris, c’est traiter une deuxième fois ce qui a été vu et pouvoir le retrouver plus facilement. L’entraînement aux skills pour adolescents utilise un outil semblable : les skills sont notés pour rester présents au quotidien (Rathus & Miller, 2015). Le tampon valorise la participation, pas la qualité de la phrase.",
+        "quellen": [
+          "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Des débuts de phrase au tableau : « Aujourd’hui, j’ai remarqué… », « Un skill que je veux essayer… ».",
+          "schwerer": "Noter en plus quand le skill pourrait servir dans la semaine."
+        },
+        "impulse": [
+          "Qu’est-ce qui vous a surpris aujourd’hui ?",
+          "Quelle phrase aimeriez-vous vous relire dans un mois ?"
+        ],
+        "tipps": [
+          "Faire créer un tampon propre à la classe : cela renforce le sentiment d’appartenance."
+        ],
+        "material": "Cahier de l’élève, tampon ou autocollants"
+      }
+    }
+  },
+  {
+    "id": "ff7-klassenvereinbarung",
+    "bereich": "skills",
+    "thema": "ankommen",
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe",
+      "klasse"
+    ],
+    "dauer": "35 Min.",
+    "eldib": [],
+    "schlagworte": [
+      "Klassenvereinbarung",
+      "Regeln",
+      "Vertraulichkeit",
+      "Förderfach"
+    ],
+    "bild": "icon:heart-handshake",
+    "de": {
+      "titel": "Unsere Klassenvereinbarung",
+      "untertitel": "Was wir brauchen, damit wir hier offen sein können",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Denk zuerst allein nach: Was brauchst du, damit du hier ehrlich sein kannst? Und was soll auf keinen Fall passieren?",
+          "symbole": [
+            "nachdenken",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "feld",
+              "label": "Das brauche ich",
+              "hoehe": 3
+            }
+          ],
+          "rechts": [
+            {
+              "art": "feld",
+              "label": "Das soll hier nicht passieren",
+              "hoehe": 3
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schreib die fünf Regeln auf, auf die sich eure Klasse geeinigt hat – und warum sie wichtig sind.",
+          "hinweis": "Positiv formuliert wirkt eine Regel besser: „Wir lassen einander ausreden“ statt „Nicht dazwischenreden“."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Nr.",
+            "Unsere Regel",
+            "Warum sie uns wichtig ist"
+          ],
+          "breiten": [
+            0.45,
+            2.6,
+            2
+          ],
+          "zeilen": 5,
+          "nummern": 1,
+          "beispiel": [
+            "z. B.",
+            "Wir lachen miteinander, nicht übereinander.",
+            "Damit sich niemand bloßgestellt fühlt."
+          ]
+        },
+        {
+          "art": "frage",
+          "text": "Was machen wir, wenn jemand eine Regel bricht?",
+          "linien": 2
+        },
+        {
+          "art": "vertrag",
+          "titel": "Ich halte mich daran",
+          "text": "Wir haben diese Regeln gemeinsam aufgestellt und erinnern einander ruhig daran. Was hier jemand Persönliches erzählt, bleibt in der Klasse – außer jemand ist in Gefahr: Dann holt die Lehrkraft Hilfe und sagt vorher, was sie tut. Am ___ prüfen wir, ob die Regeln noch passen.",
+          "unterschriften": [
+            "Meine Unterschrift"
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Klasse stellt in der ersten Stunde eigene Regeln auf, begründet sie und verpflichtet sich darauf. Die Grenzen der Vertraulichkeit werden offen besprochen.",
+        "ablauf": [
+          "Allein (3 Min.): Aufgabe 1 – jede Person notiert, was sie braucht und was nicht passieren soll.",
+          "Tischgruppen (7 Min.): auf Moderationskarten übertragen, eine Farbe für „brauchen“, eine für „nicht passieren“, ein Gedanke pro Karte.",
+          "Klasse (10 Min.): Karten an der Tafel ordnen und mit je drei Klebepunkten gewichten.",
+          "Klasse (15 Min.): die fünf wichtigsten als Regeln formulieren, ins Heft übertragen, den Satz zur Vertraulichkeit vorlesen und unterschreiben – im Heft und auf dem Plakat."
+        ],
+        "hintergrund": "Gemeinsam erarbeitete Regeln werden eher eingehalten als vorgegebene, weil sie das Bedürfnis nach Mitbestimmung und Zugehörigkeit ernst nehmen (Deci & Ryan, 2000). Für eine Klasse, die über persönliche Themen spricht, ist ein klarer, vorhersehbarer Rahmen zugleich eine Schutzbedingung. Programme, die sozial-emotionale Fertigkeiten fördern, wirken besonders, wenn Ziele und Regeln offen benannt werden (Durlak et al., 2011).",
+        "quellen": [
+          "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268.",
+          "Durlak, J. A., Weissberg, R. P., Dymnicki, A. B., Taylor, R. D. & Schellinger, K. B. (2011). The impact of enhancing students’ social and emotional learning: A meta-analysis of school-based universal interventions. Child Development, 82(1), 405–432."
+        ],
+        "differenzierung": {
+          "leichter": "Acht vorformulierte Regelkarten mitbringen; die Klasse wählt fünf aus und begründet sie mündlich.",
+          "schwerer": "Die Klasse legt zusätzlich fest, wie sie Regelverstöße bespricht, etwa im Klassenrat."
+        },
+        "impulse": [
+          "Welche Regel ist euch die wichtigste – und warum gerade die?",
+          "Was soll die Lehrkraft tun, wenn es hier einmal richtig laut wird?"
+        ],
+        "tipps": [
+          "Das Plakat in jeder Stunde aufhängen und bei Regelverstößen darauf zeigen, statt zu schimpfen – die Regeln stammen von der Klasse.",
+          "Nach den Herbstferien und nach Weihnachten kurz prüfen: Passt noch alles?"
+        ],
+        "achtung": "Wird deutlich, dass jemand Gewalt oder Bedrohung erlebt, nicht vor der Klasse nachfragen: ein Gespräch unter vier Augen anbieten und noch am selben Tag den SePAS informieren.",
+        "material": "Moderationskarten in zwei Farben, Klebepunkte, Plakat oder Flipchart, dicke Stifte"
+      }
+    },
+    "fr": {
+      "titel": "Notre charte de classe",
+      "untertitel": "Ce dont nous avons besoin pour pouvoir parler ouvertement",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Réfléchis d’abord seul : de quoi as-tu besoin pour pouvoir être sincère ici ? Et qu’est-ce qui ne doit surtout pas arriver ?",
+          "symbole": [
+            "nachdenken",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "feld",
+              "label": "Ce dont j’ai besoin",
+              "hoehe": 3
+            }
+          ],
+          "rechts": [
+            {
+              "art": "feld",
+              "label": "Ce qui ne doit pas arriver ici",
+              "hoehe": 3
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Écris les cinq règles choisies par ta classe – et pourquoi elles sont importantes.",
+          "hinweis": "Une règle formulée positivement fonctionne mieux : « On se laisse finir de parler » plutôt que « Ne pas couper la parole »."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "N°",
+            "Notre règle",
+            "Pourquoi elle compte pour nous"
+          ],
+          "breiten": [
+            0.45,
+            2.6,
+            2
+          ],
+          "zeilen": 5,
+          "nummern": 1,
+          "beispiel": [
+            "ex.",
+            "On rit ensemble, pas les uns des autres.",
+            "Pour que personne ne se sente ridiculisé."
+          ]
+        },
+        {
+          "art": "frage",
+          "text": "Que faisons-nous si quelqu’un ne respecte pas une règle ?",
+          "linien": 2
+        },
+        {
+          "art": "vertrag",
+          "titel": "Je la respecte",
+          "text": "Nous avons établi ces règles ensemble et nous nous les rappelons calmement. Ce que quelqu’un raconte de personnel ici reste dans la classe – sauf si quelqu’un est en danger : l’adulte va alors chercher de l’aide et dit avant ce qu’il fait. Le ___, nous vérifions si les règles conviennent encore.",
+          "unterschriften": [
+            "Ma signature"
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Dès la première séance, la classe établit ses propres règles, les justifie et s’engage à les respecter. Les limites de la confidentialité sont abordées ouvertement.",
+        "ablauf": [
+          "Seul (3 min) : exercice 1 – chaque jeune note ce dont il a besoin et ce qui ne doit pas arriver.",
+          "En îlots (7 min) : reporter sur des cartes, une couleur pour « besoin », une pour « à éviter », une idée par carte.",
+          "En classe (10 min) : classer les cartes au tableau et les pondérer avec trois gommettes par jeune.",
+          "En classe (15 min) : formuler les cinq plus importantes en règles, les recopier, lire la phrase sur la confidentialité et signer – dans le cahier et sur l’affiche."
+        ],
+        "hintergrund": "Des règles élaborées ensemble sont mieux respectées que des règles imposées, car elles prennent au sérieux le besoin d’autonomie et d’appartenance (Deci & Ryan, 2000). Pour une classe qui parle de sujets personnels, un cadre clair et prévisible est aussi une condition de protection. Les programmes qui développent les compétences socio-émotionnelles sont particulièrement efficaces lorsque les objectifs et les règles sont nommés ouvertement (Durlak et al., 2011).",
+        "quellen": [
+          "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268.",
+          "Durlak, J. A., Weissberg, R. P., Dymnicki, A. B., Taylor, R. D. & Schellinger, K. B. (2011). The impact of enhancing students’ social and emotional learning: A meta-analysis of school-based universal interventions. Child Development, 82(1), 405–432."
+        ],
+        "differenzierung": {
+          "leichter": "Apporter huit cartes de règles déjà formulées ; la classe en choisit cinq et les justifie à l’oral.",
+          "schwerer": "La classe décide en plus comment elle discute des règles non respectées, par exemple au conseil de coopération."
+        },
+        "impulse": [
+          "Quelle règle est la plus importante pour vous – et pourquoi celle-là ?",
+          "Que doit faire l’enseignant·e si la classe devient vraiment bruyante ?"
+        ],
+        "tipps": [
+          "Afficher la charte à chaque séance et la montrer du doigt en cas d’écart plutôt que de gronder – les règles viennent de la classe.",
+          "Après les vacances de la Toussaint et de Noël, vérifier brièvement : tout convient-il encore ?"
+        ],
+        "achtung": "S’il apparaît qu’un jeune subit de la violence ou des menaces, ne pas poser de questions devant la classe : proposer un entretien en tête-à-tête et informer le SePAS le jour même.",
+        "material": "Cartes de deux couleurs, gommettes, affiche ou tableau de papier, gros feutres"
+      }
+    }
+  }
+]

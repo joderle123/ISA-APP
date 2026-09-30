@@ -1,0 +1,228 @@
+{
+  "klasse": "5e",
+  "titel": { "de": "Mein Weg", "fr": "Mon chemin" },
+  "untertitel": {
+    "de": "Werte, Zukunft, schwere Gefühle und gute Entscheidungen",
+    "fr": "Valeurs, avenir, émotions difficiles et bons choix"
+  },
+  "faden": {
+    "de": "Im dritten Jahr geht es um den eigenen Weg: Werte und Identität, Beruf und Zukunft, Selbstständigkeit, gute Entscheidungen, schwere Gefühle und Resilienz, Meinung und Mitbestimmung, respektvolle Beziehungen, Medien und KI. Am Ende hat jede Person ihr eigenes Skills-Buch – eine Sammlung der Skills, Pläne und Sätze, die sie nach der 5e mitnimmt.",
+    "fr": "En 5e, il s’agit de son propre chemin : valeurs et identité, métier et avenir, autonomie, bons choix, émotions difficiles et résilience, opinion et participation, relations respectueuses, médias et IA. À la fin, chaque jeune a son livre des skills – un recueil des skills, des plans et des phrases à emporter après la 5e."
+  },
+  "ziele": {
+    "kennen": {
+      "de": "kennen ihre Werte, Interessen und Stärken und beschreiben, wer sie sein wollen.",
+      "fr": "connaissent leurs valeurs, leurs intérêts et leurs forces et décrivent qui ils veulent être."
+    },
+    "steuern": {
+      "de": "gehen mit schweren Gefühlen um, setzen sich Ziele mit Wenn-dann-Plänen und organisieren ihren Alltag.",
+      "fr": "font face aux émotions difficiles, se fixent des objectifs avec des plans « si… alors » et organisent leur quotidien."
+    },
+    "verstehen": {
+      "de": "unterscheiden Meinung und Tatsache, hören Gegenargumente an und erkennen, was ihren Feed steuert.",
+      "fr": "distinguent opinion et fait, écoutent les arguments contraires et comprennent ce qui pilote leur fil d’actualité."
+    },
+    "miteinander": {
+      "de": "vertreten ihre Meinung fair, gestalten Beziehungen respektvoll und achten auf Einvernehmlichkeit.",
+      "fr": "défendent leur avis avec respect, vivent des relations respectueuses et veillent au consentement."
+    },
+    "entscheiden": {
+      "de": "planen ihren Weg nach der 5e und entscheiden mit Kopf, Bauch und Werten.",
+      "fr": "préparent leur chemin après la 5e et décident avec la tête, l’intuition et leurs valeurs."
+    }
+  },
+  "kapitel": [
+    { "id": "ff5-k1", "nr": 1, "trimester": 1, "bild": "icon:door-enter", "titel": { "de": "Ankommen", "fr": "Arriver" }, "leitfrage": { "de": "Wo stehe ich?", "fr": "Où en suis-je ?" } },
+    { "id": "ff5-k2", "nr": 2, "trimester": 1, "bild": "icon:compass", "titel": { "de": "Werte und Identität", "fr": "Valeurs et identité" }, "leitfrage": { "de": "Was ist mir wichtig – und wer will ich sein?", "fr": "Qu’est-ce qui compte pour moi – et qui est-ce que je veux être ?" } },
+    { "id": "ff5-k3", "nr": 3, "trimester": 1, "bild": "icon:route", "titel": { "de": "Zukunft und Beruf", "fr": "Avenir et métier" }, "leitfrage": { "de": "Was kann ich, was will ich – und wie komme ich dahin?", "fr": "Qu’est-ce que je sais faire, qu’est-ce que je veux – et comment y arriver ?" } },
+    { "id": "ff5-k4", "nr": 4, "trimester": 1, "bild": "icon:wallet", "titel": { "de": "Selbstständig werden", "fr": "Devenir autonome" }, "leitfrage": { "de": "Was brauche ich, um mein Leben selbst zu organisieren?", "fr": "De quoi ai-je besoin pour organiser ma vie ?" } },
+    { "id": "ff5-k5", "nr": 5, "trimester": 2, "bild": "icon:scale", "titel": { "de": "Entscheidungen und Verantwortung", "fr": "Choix et responsabilité" }, "leitfrage": { "de": "Wie entscheide ich gut?", "fr": "Comment bien décider ?" } },
+    { "id": "ff5-k6", "nr": 6, "trimester": 2, "bild": "icon:umbrella", "titel": { "de": "Schwere Gefühle", "fr": "Émotions difficiles" }, "leitfrage": { "de": "Was tun mit Trauer, Scham und Einsamkeit?", "fr": "Que faire de la tristesse, de la honte et de la solitude ?" } },
+    { "id": "ff5-k7", "nr": 7, "trimester": 2, "bild": "icon:lifebuoy", "titel": { "de": "Resilienz und Hilfe", "fr": "Résilience et aide" }, "leitfrage": { "de": "Was hält mich, wenn es schwer wird?", "fr": "Qu’est-ce qui me tient quand c’est dur ?" } },
+    { "id": "ff5-k8", "nr": 8, "trimester": 3, "bild": "icon:speakerphone", "titel": { "de": "Meinung und Mitbestimmung", "fr": "Opinion et participation" }, "leitfrage": { "de": "Wie vertrete ich meine Meinung – fair und wirksam?", "fr": "Comment défendre mon avis – avec respect et efficacité ?" } },
+    { "id": "ff5-k9", "nr": 9, "trimester": 3, "bild": "icon:heart-handshake", "titel": { "de": "Liebe, Sexualität und Einvernehmlichkeit", "fr": "Amour, sexualité et consentement" }, "leitfrage": { "de": "Was gehört zu einer guten Beziehung – und wie geht Einvernehmlichkeit?", "fr": "Qu’est-ce qu’une bonne relation – et comment fonctionne le consentement ?" } },
+    { "id": "ff5-k10", "nr": 10, "trimester": 3, "bild": "icon:robot", "titel": { "de": "Medien und KI", "fr": "Médias et IA" }, "leitfrage": { "de": "Wer steuert, was ich sehe – und wie nutze ich KI klug?", "fr": "Qui décide de ce que je vois – et comment utiliser l’IA avec discernement ?" } },
+    { "id": "ff5-k11", "nr": 11, "trimester": 3, "bild": "icon:flag", "titel": { "de": "Abschluss", "fr": "Bilan" }, "leitfrage": { "de": "Was nehme ich mit auf meinen Weg?", "fr": "Qu’est-ce que j’emporte sur mon chemin ?" } }
+  ],
+  "einheiten": [
+    {
+      "id": "ff5-e01", "nr": 1, "kapitel": "ff5-k1", "basis": "j3-e01", "kompetenzen": ["miteinander", "kennen"],
+      "titel": { "de": "Das letzte Jahr im Fach beginnt", "fr": "La dernière année commence" },
+      "kurz": { "de": "Die Klassenvereinbarung erneuern, Wünsche und Sorgen anonym sammeln, das Skills-Buch beginnen", "fr": "Renouveler la charte, recueillir anonymement souhaits et craintes, commencer le livre des skills" }
+    },
+    {
+      "id": "ff5-e02", "nr": 2, "kapitel": "ff5-k1", "basis": "j3-e02", "kompetenzen": ["kennen", "steuern"],
+      "titel": { "de": "Wo stehe ich?", "fr": "Où en suis-je ?" },
+      "kurz": { "de": "Mit dem Skills-Radar den eigenen Stand bestimmen, Stärken von außen hören, zwei Ziele festlegen", "fr": "Se situer avec le radar des skills, entendre ses forces vues par les autres, fixer deux objectifs" }
+    },
+    {
+      "id": "ff5-e03", "nr": 3, "kapitel": "ff5-k2", "basis": "j3-e03", "kompetenzen": ["kennen", "entscheiden"],
+      "titel": { "de": "Was mir wichtig ist", "fr": "Ce qui compte pour moi" },
+      "kurz": { "de": "Werte hinter Alltagsentscheidungen entdecken, eine Werte-Auktion, die eigenen Top 3", "fr": "Découvrir les valeurs derrière les choix du quotidien, des enchères de valeurs, son top 3" }
+    },
+    {
+      "id": "ff5-e04", "nr": 4, "kapitel": "ff5-k2", "basis": "j3-e04", "kompetenzen": ["kennen"],
+      "titel": { "de": "Wer bin ich – und wer will ich sein?", "fr": "Qui suis-je – et qui ai-je envie d’être ?" },
+      "kurz": { "de": "Rollen und Zugehörigkeiten in der Identitäts-Blume, Gespräche im Kugellager, ein Blick nach vorn", "fr": "Rôles et appartenances dans la fleur de l’identité, échanges en carrousel, un regard vers l’avenir" }
+    },
+    {
+      "id": "ff5-e05", "nr": 5, "kapitel": "ff5-k2", "basis": "j3-e05", "wahl": true, "kompetenzen": ["kennen", "entscheiden"],
+      "titel": { "de": "Vorbilder", "fr": "Modèles" },
+      "kurz": { "de": "Wer uns prägt, Vorbilder aus dem Netz prüfen, erleben, wie schnell man nachmacht", "fr": "Qui nous influence, examiner les modèles en ligne, voir à quelle vitesse on imite" }
+    },
+    {
+      "id": "ff5-e06", "nr": 6, "kapitel": "ff5-k3", "basis": "j3-e10", "kompetenzen": ["kennen"],
+      "titel": { "de": "Was kann ich, was will ich?", "fr": "Ce que je sais faire, ce que je veux" },
+      "kurz": { "de": "Interessen-Check, kurze Arbeitsproben und der Blick der Klasse: der Anfang des Berufsprofils", "fr": "Test d’intérêts, courts essais pratiques, regard de la classe : le début du profil professionnel" }
+    },
+    {
+      "id": "ff5-e07", "nr": 7, "kapitel": "ff5-k3", "basis": "j3-e11", "kompetenzen": ["entscheiden", "kennen"],
+      "titel": { "de": "Berufe entdecken", "fr": "Découvrir des métiers" },
+      "kurz": { "de": "Berufe zum eigenen Profil sammeln, Wege in die Berufsausbildung kennen, ein Interview planen", "fr": "Trouver des métiers liés à son profil, connaître les voies de la formation professionnelle, préparer une interview" }
+    },
+    {
+      "id": "ff5-e08", "nr": 8, "kapitel": "ff5-k3", "basis": "j3-e12", "kompetenzen": ["miteinander", "steuern"],
+      "titel": { "de": "Bewerben und vorstellen", "fr": "Postuler et se présenter" },
+      "kurz": { "de": "Was in eine Bewerbung gehört, Antworten mit Beispielen, ein Vorstellungsgespräch im Rollenspiel", "fr": "Ce que contient une candidature, des réponses avec exemples, un entretien en jeu de rôle" }
+    },
+    {
+      "id": "ff5-e09", "nr": 9, "kapitel": "ff5-k3", "basis": "j3-e13", "kompetenzen": ["steuern", "entscheiden"],
+      "titel": { "de": "Ziele, die tragen", "fr": "Des objectifs qui tiennent" },
+      "kurz": { "de": "Mit WOOP und Wenn-dann-Plänen aus einem Wunsch ein Ziel für die nächsten Monate machen", "fr": "Avec WOOP et des plans « si… alors », faire d’un souhait un objectif pour les mois à venir" }
+    },
+    {
+      "id": "ff5-e10", "nr": 10, "kapitel": "ff5-k4", "basis": "j3-e14", "kompetenzen": ["entscheiden", "steuern"],
+      "titel": { "de": "Geld im Griff", "fr": "Gérer son argent" },
+      "kurz": { "de": "Brauchen oder wollen? Ein Monatsbudget planen, einen Monat im Zeitraffer spielen, der Kauf-Stopp", "fr": "Besoin ou envie ? Un budget mensuel, un mois joué en accéléré, le stop avant l’achat" }
+    },
+    {
+      "id": "ff5-e11", "nr": 11, "kapitel": "ff5-k4", "basis": "j3-e15", "kompetenzen": ["steuern"],
+      "titel": { "de": "Alltag organisieren", "fr": "Organiser son quotidien" },
+      "kurz": { "de": "Termine rückwärts planen, Wege mit dem Bus finden, Formulare verstehen, ein Telefonat üben", "fr": "Planifier à rebours, trouver son trajet en bus, comprendre des formulaires, oser téléphoner" }
+    },
+    {
+      "id": "ff5-e12", "nr": 12, "kapitel": "ff5-k4", "basis": "j3-e16", "kompetenzen": ["entscheiden", "miteinander"],
+      "titel": { "de": "Einkaufen und versorgen", "fr": "Faire les courses, se nourrir" },
+      "kurz": { "de": "Ein einfaches Essen mit Einkaufsliste und Budget planen – mit Schulküche auch zum Kochen", "fr": "Planifier un repas simple avec liste et budget – et le cuisiner si le lycée a une cuisine" }
+    },
+    {
+      "id": "ff5-e13", "nr": 13, "kapitel": "ff5-k5", "basis": "j3-e06", "kompetenzen": ["entscheiden"],
+      "titel": { "de": "Gut entscheiden", "fr": "Bien décider" },
+      "kurz": { "de": "Blitzentscheidungen, ein Entscheidungsweg in vier Schritten, Bauch, Kopf und Werte im inneren Rat", "fr": "Décisions éclair, un chemin en quatre étapes, intuition, raison et valeurs au conseil intérieur" }
+    },
+    {
+      "id": "ff5-e14", "nr": 14, "kapitel": "ff5-k5", "basis": "j3-e07", "kompetenzen": ["entscheiden", "steuern"],
+      "titel": { "de": "Risiko, Mut und Leichtsinn", "fr": "Risque, courage et imprudence" },
+      "kurz": { "de": "Im Würfel-Experiment erleben, warum man mehr riskiert, wenn andere zuschauen; Mut von Leichtsinn trennen", "fr": "Voir avec des dés pourquoi on risque plus devant les autres ; distinguer courage et imprudence" }
+    },
+    {
+      "id": "ff5-e15", "nr": 15, "kapitel": "ff5-k5", "basis": "j3-e08", "kompetenzen": ["entscheiden"],
+      "titel": { "de": "Rausch und Risiko", "fr": "Ivresse et risques" },
+      "kurz": { "de": "Mythen über Alkohol, Cannabis und andere Drogen prüfen, Mischkonsum, Mitfahren, Notfall", "fr": "Examiner les mythes sur l’alcool, le cannabis et d’autres drogues, les mélanges, les trajets, l’urgence" }
+    },
+    {
+      "id": "ff5-e16", "nr": 16, "kapitel": "ff5-k5", "basis": "j3-e09", "kompetenzen": ["kennen", "steuern"],
+      "titel": { "de": "Fehler machen – und daraus lernen", "fr": "Se tromper – et apprendre" },
+      "kurz": { "de": "Fehler nach ihrer Art sortieren, das Wort „noch“ schätzen, beim Jonglieren jeden Patzer feiern", "fr": "Trier les erreurs, apprécier le mot « pas encore », fêter chaque raté en jonglant" }
+    },
+    {
+      "id": "ff5-e17", "nr": 17, "kapitel": "ff5-k6", "basis": "j3-e17", "kompetenzen": ["kennen", "verstehen"],
+      "titel": { "de": "Trauer und Verlust", "fr": "Deuil et perte" },
+      "kurz": { "de": "Verlust hat viele Formen: verstehen, wie Trauer verläuft, und üben, was Trauernden hilft", "fr": "La perte a plusieurs visages : comprendre le deuil et s’entraîner à ce qui aide vraiment" },
+      "hinweis": { "de": "Vorher klären, ob jemand gerade einen Verlust erlebt hat", "fr": "Vérifier avant si quelqu’un vit une perte récente" }
+    },
+    {
+      "id": "ff5-e18", "nr": 18, "kapitel": "ff5-k6", "basis": "j3-e18", "kompetenzen": ["kennen", "steuern"],
+      "titel": { "de": "Scham und Schuld", "fr": "Honte et culpabilité" },
+      "kurz": { "de": "Scham und Schuld unterscheiden, aus der Scham-Spirale aussteigen, wiedergutmachen statt sich abwerten", "fr": "Distinguer honte et culpabilité, sortir de la spirale de la honte, réparer plutôt que se dévaloriser" }
+    },
+    {
+      "id": "ff5-e19", "nr": 19, "kapitel": "ff5-k6", "basis": "j3-e19", "kompetenzen": ["kennen", "miteinander", "verstehen"],
+      "titel": { "de": "Einsamkeit", "fr": "La solitude" },
+      "kurz": { "de": "Allein sein oder einsam sein, Gespräche anfangen, andere einbeziehen, einen kleinen Schritt planen", "fr": "Être seul ou se sentir seul, engager la conversation, inclure les autres, planifier un petit pas" }
+    },
+    {
+      "id": "ff5-e20", "nr": 20, "kapitel": "ff5-k6", "basis": "j3-e20", "kompetenzen": ["steuern", "miteinander"],
+      "titel": { "de": "Wenn es mir schlecht geht", "fr": "Quand je vais mal" },
+      "kurz": { "de": "Sachlich über Suizidgedanken und Selbstverletzung sprechen, Hilfe kennen, einen Sicherheitsplan bauen", "fr": "Parler sobrement des idées suicidaires et de l’automutilation, connaître l’aide, faire son plan de sécurité" },
+      "hinweis": { "de": "Gemeinsam mit dem SePAS", "fr": "Avec le SePAS" }
+    },
+    {
+      "id": "ff5-e21", "nr": 21, "kapitel": "ff5-k7", "basis": "j3-e21", "kompetenzen": ["kennen"],
+      "titel": { "de": "Was mich stark macht", "fr": "Ce qui me donne de la force" },
+      "kurz": { "de": "Was die Resilienzforschung weiß, Kraftquellen in Geschichten entdecken, die eigenen sammeln", "fr": "Ce que dit la recherche sur la résilience, des ressources dans des histoires, trouver les siennes" }
+    },
+    {
+      "id": "ff5-e22", "nr": 22, "kapitel": "ff5-k7", "basis": "j3-e22", "kompetenzen": ["miteinander", "entscheiden"],
+      "titel": { "de": "Hilfe holen ist stark", "fr": "Demander de l’aide, c’est fort" },
+      "kurz": { "de": "Hürden beim Hilfeholen verstehen, wer in Luxemburg wofür da ist, den ersten Satz üben", "fr": "Comprendre les obstacles, savoir qui aide pour quoi au Luxembourg, oser la première phrase" }
+    },
+    {
+      "id": "ff5-e23", "nr": 23, "kapitel": "ff5-k7", "basis": "j3-e23", "wahl": true, "kompetenzen": ["kennen", "steuern"],
+      "titel": { "de": "Gute Momente sammeln", "fr": "Collectionner les bons moments" },
+      "kurz": { "de": "Was Dankbarkeit bewirkt, gute Momente suchen, ein Gute-Momente-Glas beginnen", "fr": "Ce que produit la gratitude, chercher les bons moments, commencer un bocal des bons moments" }
+    },
+    {
+      "id": "ff5-e24", "nr": 24, "kapitel": "ff5-k8", "basis": "j3-e24", "kompetenzen": ["verstehen", "kennen"],
+      "titel": { "de": "Meine Meinung zählt", "fr": "Mon avis compte" },
+      "kurz": { "de": "Tatsache und Meinung unterscheiden, sich in vier Schritten eine Meinung bilden, Position beziehen", "fr": "Distinguer fait et opinion, se forger un avis en quatre étapes, prendre position" }
+    },
+    {
+      "id": "ff5-e25", "nr": 25, "kapitel": "ff5-k8", "basis": "j3-e25", "kompetenzen": ["miteinander", "verstehen"],
+      "titel": { "de": "Streiten, aber fair", "fr": "Débattre sans se déchirer" },
+      "kurz": { "de": "Argumente aus Behauptung, Begründung und Beispiel bauen, Debattenregeln, eine Mini-Debatte", "fr": "Construire un argument (affirmation, raison, exemple), des règles de débat, un mini-débat" }
+    },
+    {
+      "id": "ff5-e26", "nr": 26, "kapitel": "ff5-k8", "basis": "j3-e26", "kompetenzen": ["miteinander", "entscheiden"],
+      "titel": { "de": "Mitbestimmen", "fr": "Participer aux décisions" },
+      "kurz": { "de": "Mit der Beteiligungsleiter prüfen, wo die Klasse mitbestimmt, ein Anliegen planen, im Klassenrat entscheiden", "fr": "Avec l’échelle de participation, voir où la classe décide, préparer une demande, trancher en conseil" }
+    },
+    {
+      "id": "ff5-e27", "nr": 27, "kapitel": "ff5-k9", "basis": "j3-e27", "kompetenzen": ["verstehen", "miteinander"],
+      "titel": { "de": "Respekt in Beziehungen", "fr": "Le respect dans les relations" },
+      "kurz": { "de": "Den Rahmen vereinbaren, Szenen nach der Beziehungs-Ampel sortieren, jemandem beistehen", "fr": "Convenir du cadre, classer des scènes avec le feu des relations, soutenir quelqu’un" },
+      "hinweis": { "de": "Eltern vorab informieren", "fr": "Informer les parents au préalable" }
+    },
+    {
+      "id": "ff5-e28", "nr": 28, "kapitel": "ff5-k9", "basis": "j3-e28", "kompetenzen": ["miteinander", "entscheiden"],
+      "titel": { "de": "Ja heißt Ja – Einvernehmlichkeit", "fr": "Seul un oui est un oui – le consentement" },
+      "kurz": { "de": "Was ein echtes Ja ausmacht, Signale lesen, nachfragen, ein Nein annehmen, Mythen prüfen", "fr": "Ce qu’est un vrai oui, lire les signaux, demander, accepter un non, examiner les mythes" }
+    },
+    {
+      "id": "ff5-e29", "nr": 29, "kapitel": "ff5-k9", "basis": "j3-e29", "wahl": true, "kompetenzen": ["entscheiden", "verstehen"],
+      "titel": { "de": "Körper, Sexualität, Vielfalt", "fr": "Corps, sexualité, diversité" },
+      "kurz": { "de": "Mythen zu Körper, Sex und Verhütung prüfen, Begriffe zur Vielfalt klären, Beratungsstellen kennen", "fr": "Examiner les mythes sur le corps, la sexualité et la contraception, les mots de la diversité, les lieux de conseil" },
+      "hinweis": { "de": "Nach Absprache mit der Direktion, gern mit einer Fachstelle", "fr": "Après accord de la direction, idéalement avec un service spécialisé" }
+    },
+    {
+      "id": "ff5-e30", "nr": 30, "kapitel": "ff5-k9", "basis": "j3-e30", "kompetenzen": ["entscheiden", "miteinander", "verstehen"],
+      "titel": { "de": "Nudes, Sexting und Erpressung", "fr": "Nudes, sexting et chantage" },
+      "kurz": { "de": "Druck, Bilder zu schicken, durchschauen, richtig handeln, wenn Bilder herumgehen, beistehen statt beschämen", "fr": "Déjouer la pression à envoyer des photos, bien réagir si des images circulent, soutenir sans humilier" }
+    },
+    {
+      "id": "ff5-e31", "nr": 31, "kapitel": "ff5-k10", "basis": "j3-e31", "kompetenzen": ["verstehen", "entscheiden"],
+      "titel": { "de": "Algorithmen und Filterblasen", "fr": "Algorithmes et bulles de filtres" },
+      "kurz": { "de": "Die Signale kennen, nach denen Feeds sortieren, ohne Handy zwei Feeds bauen, gegensteuern", "fr": "Connaître les signaux qui trient les fils, construire deux fils sans portable, reprendre la main" }
+    },
+    {
+      "id": "ff5-e32", "nr": 32, "kapitel": "ff5-k10", "basis": "j3-e32", "kompetenzen": ["entscheiden"],
+      "titel": { "de": "KI klug nutzen", "fr": "Utiliser l’IA avec discernement" },
+      "kurz": { "de": "KI-Antworten prüfen, Grenzen bei Hausaufgaben, Daten und Deepfakes, eigene KI-Regeln", "fr": "Vérifier les réponses de l’IA, des limites pour les devoirs, les données et les deepfakes, ses règles" }
+    },
+    {
+      "id": "ff5-e33", "nr": 33, "kapitel": "ff5-k11", "basis": "j3-e33", "kompetenzen": ["kennen"],
+      "titel": { "de": "Mein Skills-Buch", "fr": "Mon livre des skills" },
+      "kurz": { "de": "Ein zweites Skills-Radar zeigt, was gewachsen ist; das Skills-Buch wird fertig; ein Skills-Markt", "fr": "Un second radar montre ce qui a grandi ; le livre des skills est terminé ; un marché des skills" }
+    },
+    {
+      "id": "ff5-e34", "nr": 34, "kapitel": "ff5-k11", "basis": "j3-e34", "kompetenzen": ["steuern", "entscheiden"],
+      "titel": { "de": "Brücken in die Zukunft", "fr": "Des ponts vers l’avenir" },
+      "kurz": { "de": "Den Übergang nach der 5e planen, das eigene Netz aktualisieren, einen Ampelplan für den Neustart", "fr": "Préparer l’après-5e, mettre à jour son réseau, un plan feu tricolore pour le nouveau départ" }
+    },
+    {
+      "id": "ff5-e35", "nr": 35, "kapitel": "ff5-k11", "basis": "j3-e35", "kompetenzen": ["miteinander", "kennen"],
+      "titel": { "de": "Abschied nach drei Jahren", "fr": "Au revoir après trois ans" },
+      "kurz": { "de": "Den Weg durch drei Jahre abgehen, Proviant für den Weg verschenken, sich mit einem Ritual verabschieden", "fr": "Parcourir le chemin des trois années, s’offrir des provisions pour la route, se dire au revoir" }
+    }
+  ]
+}

@@ -16,7 +16,9 @@
     "blaetter:mappe": "tsx --tsconfig tsconfig.scripts.json scripts/mappe-pruefen.tsx",
     "blaetter:modulheft": "tsx --tsconfig tsconfig.scripts.json scripts/modulheft.tsx",
     "kurs:pruefen": "tsx --tsconfig tsconfig.scripts.json scripts/kurs-pruefen.ts",
-    "kurs:test": "node scripts/kurs-test.cjs"
+    "kurs:test": "node scripts/kurs-test.cjs",
+    "foerderfach:pruefen": "tsx --tsconfig tsconfig.scripts.json scripts/foerderfach-pruefen.ts",
+    "foerderfach:pdf": "tsx --tsconfig tsconfig.scripts.json scripts/foerderfach.tsx"
   },
   "dependencies": {
     "@react-pdf/renderer": "^4.5.1",

@@ -6,7 +6,7 @@
 
 import { Document, Page, View, Text, Image } from '@react-pdf/renderer'
 import type { Baustein, Blatt, BlattInhalt, Sprache } from '../typen'
-import { bereichById, layoutFuer, stufenText, themaLabel } from '../katalog'
+import { bereichById, layoutFuer, stufenText, themaLabel, type Farben } from '../katalog'
 import { NEUTRAL, palette, type Palette } from '../zeichnung'
 import { eldibDomainById, eldibGoalById } from '../../data/taxonomy'
 import { Bausteine, nummerieren, Plakette, Fliess, type Ctx } from './bausteine'
@@ -29,6 +29,10 @@ export interface BlattOptionen {
   nr?: string
   /** Teil eines Hefts (z. B. Mathe-Modulheft): eigener Kopf und Fuß, fortlaufende Seitenzahl, Lernziel statt Untertitel */
   heft?: HeftAngaben
+  /** Eigene Farben statt der Bereichsfarbe (Förderfach: die Farbe der Klassenstufe) */
+  farben?: Farben
+  /** Meldet die Seitenzahl der ersten Schülerseite im Dokument (für Verweise aus einem anderen Heft) */
+  seite?: (n: number) => void
 }
 
 export interface HeftAngaben {
@@ -364,13 +368,23 @@ export function BlattSeiten({ blatt, opt }: { blatt: Blatt; opt?: BlattOptionen 
   const sprache = opt?.sprache ?? 'de'
   const inhalt = blattInhalt(blatt, sprache)
   const bereich = bereichById.get(blatt.bereich) ?? bereichById.get('werkzeuge')!
-  const p = palette(bereich.farben)
+  const p = palette(opt?.farben ?? bereich.farben)
   const m = MASSE[blatt.layout ?? (blatt.bereich === 'werkzeuge' ? 'jugend' : layoutFuer(blatt.stufen))]
   const c: Ctx = { m, p, sprache, nummern: nummerieren(inhalt.bausteine), breite: BREITE }
+  const melde = opt?.seite
   return (
     <>
       {opt?.schueler !== false ? (
         <Page size="A4" style={{ paddingHorizontal: SEITE.rand, paddingTop: SEITE.oben, paddingBottom: SEITE.unten + 6 }}>
+          {melde ? (
+            <Text
+              style={{ position: 'absolute', left: 0, top: 0, fontSize: 1, color: '#FFFFFF' }}
+              render={({ pageNumber }) => {
+                melde(pageNumber)
+                return ''
+              }}
+            />
+          ) : null}
           <Folgekopf inhalt={inhalt} sprache={sprache} p={p} />
           <Kopfzeile blatt={blatt} nr={opt?.nr} sprache={sprache} p={p} m={m} heft={opt?.heft} />
           <Titelblock blatt={blatt} inhalt={inhalt} sprache={sprache} p={p} m={m} heft={opt?.heft} />

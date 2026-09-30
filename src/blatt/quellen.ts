@@ -47,6 +47,9 @@ export const QUELLEN: Record<string, string> = {
 
   // Soziales Lernen, Konflikte, Mobbing
   durlak2011: 'Durlak, J. A., Weissberg, R. P., Dymnicki, A. B., Taylor, R. D. & Schellinger, K. B. (2011). The impact of enhancing students’ social and emotional learning: A meta-analysis of school-based universal interventions. Child Development, 82(1), 405–432.',
+  taylor2017: 'Taylor, R. D., Oberle, E., Durlak, J. A. & Weissberg, R. P. (2017). Promoting positive youth development through school-based social and emotional learning interventions: A meta-analysis of follow-up effects. Child Development, 88(4), 1156–1171.',
+  yeager2017: 'Yeager, D. S. (2017). Social and emotional learning programs for adolescents. The Future of Children, 27(1), 73–94.',
+  casel2020: 'CASEL (2020). CASEL’S SEL Framework: What Are the Core Competence Areas and Where Are They Promoted? Chicago: Collaborative for Academic, Social, and Emotional Learning.',
   greenberg1995: 'Greenberg, M. T., Kusché, C. A., Cook, E. T. & Quamma, J. P. (1995). Promoting emotional competence in school-aged children: The effects of the PATHS curriculum. Development and Psychopathology, 7(1), 117–136.',
   websterStratton2003: 'Webster-Stratton, C. & Reid, M. J. (2003). Treating conduct problems and strengthening social and emotional competence in young children: The Dina Dinosaur treatment program. Journal of Emotional and Behavioral Disorders, 11(3), 130–143.',
   shure1992: 'Shure, M. B. (1992). I Can Problem Solve (ICPS). Champaign, IL: Research Press.',
