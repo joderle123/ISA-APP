@@ -1,0 +1,1391 @@
+{
+  "einheiten": [
+    {
+      "id": "ff6-e10",
+      "klasse": "6e",
+      "dauer": 100,
+      "blaetter": [
+        "ff6-wut-eisberg",
+        "ff6-wut-signale"
+      ],
+      "vorlagen": [
+        "ff6-wut-karten"
+      ],
+      "woerter": [
+        {
+          "de": "die Wut",
+          "fr": "la colère"
+        },
+        {
+          "de": "der Auslöser",
+          "fr": "le déclencheur"
+        },
+        {
+          "de": "das Warnzeichen",
+          "fr": "le signal d’alerte"
+        },
+        {
+          "de": "die Kränkung",
+          "fr": "la vexation"
+        },
+        {
+          "de": "die Scham",
+          "fr": "la honte"
+        },
+        {
+          "de": "die Zündschnur",
+          "fr": "la mèche"
+        }
+      ],
+      "de": {
+        "titel": "Der Wut-Eisberg",
+        "kurz": "Was andere von der Wut sehen, ist oft nur die Spitze: An erfundenen Fällen schaut die Klasse darunter, sammelt Auslöser und findet in Zeitlupe die ersten Warnzeichen im Körper.",
+        "ziele": [
+          "unterscheiden an erfundenen Fällen, was andere von der Wut sehen und was darunter liegen kann: Kränkung, Angst, Scham, Ungerechtigkeit oder ein leerer Tank",
+          "benennen ihre häufigsten Auslöser und das, was ihre Zündschnur verkürzt",
+          "beschreiben in Zeitlupen-Szenen frühe, mittlere und späte Warnzeichen im Körper und halten ihr eigenes erstes Zeichen fest",
+          "probieren offene Hände und einen lockeren Kiefer als Gegensignal zum ersten Warnzeichen aus"
+        ],
+        "material": [
+          "Gefühlsrad-Plakat und Anspannungsskala (A3), Klebepunkte: einer je Person",
+          "Klebezettel: ein Block je Tischgruppe",
+          "Eisberg-Plakat (A1 oder Flipchart): großer Eisberg, Wasserlinie im oberen Drittel, darunter viel Platz; dicker Stift",
+          "Acht A5-Karten, mit dickem Stift beschriftet: Kränkung, Angst, Scham, Ungerechtigkeit, Enttäuschung, Hilflosigkeit, Ausgeschlossen sein, Leerer Tank; Klebeband oder Magnete",
+          "Kopiervorlage „Wut-Fälle und Beobachtungskarten“: einmal auf festes Papier kopiert und ausgeschnitten",
+          "Schülerheft mit den Blättern „Der Wut-Eisberg“ und „Meine Auslöser und Warnzeichen“",
+          "Buntstifte in Gelb, Orange und Rot: ein Satz je Tischgruppe",
+          "Stempel oder Sticker für den Skills-Pass"
+        ],
+        "vorbereitung": [
+          "Das Eisberg-Plakat zeichnen und neben die Tafel hängen; die acht Karten umgedreht bereitlegen",
+          "Das Tafelbild aus Schritt 3 anschreiben und bis zum Input abdecken; den Wortspeicher an den Rand der Tafel schreiben",
+          "Die Karten der Kopiervorlage ausschneiden; Namen austauschen, falls jemand in der Klasse so heißt",
+          "Beim Régent nachfragen, ob es in der Klasse gerade einen Vorfall gab, der einem der Fälle ähnelt; diesen Fall dann durch Fall 6 ersetzen",
+          "Vorn eine Spielfläche von etwa drei mal zwei Metern freiräumen",
+          "Die Fälle einmal selbst durchgehen: An welchen drei Stellen wird eingefroren, lange bevor es zum Ausbruch käme?"
+        ],
+        "ablauf": [
+          {
+            "min": "0–10",
+            "phase": "ankommen",
+            "titel": "Check-in: Was bringt euch auf die Palme?"
+          },
+          {
+            "min": "10–15",
+            "phase": "bruecke",
+            "titel": "Rückblick und Start ins Kapitel Wut"
+          },
+          {
+            "min": "15–27",
+            "phase": "input",
+            "titel": "Der Wut-Eisberg"
+          },
+          {
+            "min": "27–45",
+            "phase": "uebung",
+            "titel": "Eisberg-Detektive und mein Eisberg"
+          },
+          {
+            "min": "45–50",
+            "phase": "aktiv",
+            "titel": "Bewegungspause: Stein, Papier, Schere mit Fanclub"
+          },
+          {
+            "min": "50–75",
+            "phase": "uebung",
+            "titel": "Wut in Zeitlupe"
+          },
+          {
+            "min": "75–85",
+            "phase": "uebung",
+            "titel": "Meine Auslöser und Warnzeichen"
+          },
+          {
+            "min": "85–95",
+            "phase": "skill",
+            "titel": "Skill: Offene Hände, lockerer Kiefer"
+          },
+          {
+            "min": "95–100",
+            "phase": "abschluss",
+            "titel": "Skills-Pass und Wut-Protokoll"
+          }
+        ],
+        "schritte": [
+          {
+            "titel": "Check-in: Was bringt euch auf die Palme?",
+            "dauer": 10,
+            "phase": "ankommen",
+            "text": "Beim Hereinkommen setzt jede Person ihren Klebepunkt auf das Gefühlsrad-Plakat. Auf drei zeigen alle ihre Anspannung mit den Fingern (0–10 Finger für 0–100); die Lehrkraft beginnt mit Gefühl und Zahl, zwei, drei Freiwillige nennen ihr Wort (3 Min.). Dann schreibt jede Person auf einen Klebezettel, was sie im Alltag schnell auf die Palme bringt – eine Sache, keine Person (2 Min.). Die Zettel einsammeln, fünf oder sechs vorlesen und alle neben das Eisberg-Plakat kleben, Ähnliches zusammen (4 Min.). Sie werden in Schritt 7 wieder gebraucht.",
+            "sagen": [
+              "Gefühl, Zahl – und dann auf den Zettel: Was bringt euch im Alltag schnell auf die Palme? Eine Sache, keine Person.",
+              "Bei mir ist es der Drucker, der genau dann streikt, wenn ich es eilig habe."
+            ],
+            "tipp": "Kleine Alltagsauslöser – langsames WLAN, jemand kaut laut, die Schlange in der Kantine – machen den Einstieg leicht und oft lustig. Die großen Themen kommen später auf das Blatt, und zwar ohne Publikum.",
+            "wennEsKippt": "Steht auf einem Zettel doch eine Person („mein Bruder“, „Herr …“), den Namen weglassen und umformulieren: Was genau macht diese Person, das dich aufregt? So wird aus dem Namen eine Situation. Zettel mit Beleidigungen weder vorlesen noch aufhängen; wird über Abwesende gelästert, auf die Klassenvereinbarung zeigen."
+          },
+          {
+            "titel": "Rückblick und Start ins Kapitel Wut",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "Eine Person liest ihren Satz aus dem Skills-Pass der letzten Stunde vor; kurz nachfragen, welcher Skill im Skills-Kompass unter „3 · Stress und Schule“ steht (zwei Stimmen reichen). Dann das neue Kapitel öffnen und die Leitfrage an die Tafel schreiben: Was steckt hinter meiner Wut – und wie bremse ich rechtzeitig? Die drei Stunden des Kapitels ankündigen: heute verstehen, nächste Woche bremsen, danach wiedergutmachen. Den Rahmen klären: Niemand erzählt von eigenen Ausbrüchen, gearbeitet wird mit erfundenen Figuren.",
+            "sagen": [
+              "Wut hat einen schlechten Ruf. Dabei meldet sie oft nur, dass etwas nicht stimmt – schwierig wird meistens erst, was wir dann tun.",
+              "Ihr müsst heute nichts von euch erzählen. Was ihr über eure eigene Wut herausfindet, bleibt auf eurem Blatt."
+            ],
+            "tipp": "Die drei Schritte des Kapitels an der Tafel stehen lassen: verstehen – bremsen – wiedergutmachen. Jugendlichen, denen Wut schon oft Ärger gebracht hat, gibt das eine Perspektive statt einer Anklage."
+          },
+          {
+            "titel": "Der Wut-Eisberg",
+            "dauer": 12,
+            "phase": "input",
+            "text": "Die Geschichte „Das Heft“ vom Blatt vorlesen, die Klasse liest mit. Zuerst sammeln, was die anderen in der Klasse von Elias gesehen haben, und es oberhalb der Wasserlinie auf das Plakat schreiben (2 Min.). Dann fragen, was Elias gespürt haben könnte, das niemand sieht: Zu jedem passenden Vorschlag die Karte umdrehen und unter die Wasserlinie hängen, am Ende alle acht aufdecken (3 Min.). Die fünf häufigsten mit dem Tafelbild erklären (3 Min.). Den leeren Tank kennen viele aus dem Glas der Bedürfnisse der 7e – wer dabei war, erklärt ihn den Neuen in einem Satz. Zum Schluss Aufgabe 1 allein lösen und mit der Person daneben vergleichen (3 Min.).",
+            "sagen": [
+              "Was haben die anderen gesehen? Und was hat Elias gespürt, das keiner gesehen hat?",
+              "Wut ist oft wie ein Leibwächter: Sie springt nach vorn, damit niemand merkt, wie sehr etwas getroffen hat.",
+              "Liegt unter der Wut Scham, macht eine Ansage vor allen es schlimmer. Liegt Ungerechtigkeit darunter, hilft es, gehört zu werden."
+            ],
+            "tabelle": {
+              "spalten": [
+                "Unter Wasser",
+                "Typischer Gedanke",
+                "Was dann eher hilft"
+              ],
+              "zeilen": [
+                [
+                  "Kränkung",
+                  "„Der nimmt mich nicht ernst.“",
+                  "Respekt, ernst genommen werden"
+                ],
+                [
+                  "Angst",
+                  "„Gleich passiert mir was – oder ich verliere etwas.“",
+                  "Sicherheit, Klarheit, Abstand"
+                ],
+                [
+                  "Scham",
+                  "„Alle haben es gesehen. Ich stehe blöd da.“",
+                  "Unter vier Augen reden, nicht vor allen"
+                ],
+                [
+                  "Ungerechtigkeit",
+                  "„Das ist nicht fair. Immer ich.“",
+                  "Gehört werden, eine faire Klärung"
+                ],
+                [
+                  "Leerer Tank",
+                  "„Ich kann einfach nicht mehr.“",
+                  "Essen, Schlaf, Pause – danach reden"
+                ]
+              ]
+            },
+            "tipp": "Das Bild vom Leibwächter kommt bei Jugendlichen gut an, weil es die Wut nicht verurteilt: Sie hat eine Aufgabe, sie übertreibt nur manchmal.",
+            "wennEsKippt": "Kommt der Einwand „Manchmal bin ich einfach nur wütend“, zustimmen: Nicht immer liegt etwas darunter, und Wut über echtes Unrecht ist berechtigt. Der Eisberg ist ein Werkzeug zum Nachschauen, keine Pflicht, etwas zu finden.",
+            "blatt": "ff6-wut-eisberg"
+          },
+          {
+            "titel": "Eisberg-Detektive und mein Eisberg",
+            "dauer": 18,
+            "phase": "uebung",
+            "text": "Jede Tischgruppe bekommt eine Fallkarte und einige Klebezettel. In der Gruppe (6 Min.): den Fall laut lesen, zwei oder drei Gefühle für unter Wasser auswählen, jedes auf einen Zettel schreiben und einen Satz vorbereiten: Was hätte der Figur in diesem Moment geholfen? Dann stellt jede Gruppe ihren Fall in einem Satz vor, klebt die Karte über die Wasserlinie und die Zettel darunter und nennt ihren Satz; die Klasse darf ergänzen (6 Min.). Zum Schluss arbeitet jede Person allein auf dem Blatt (6 Min.): Aufgabe 2, der eigene Eisberg zu einer Situation, die sie niemandem erzählen muss, dann die Aufgaben 3 und 4. Das Blatt wird weder eingesammelt noch vorgelesen.",
+            "sagen": [
+              "Was könnte bei der Person auf eurer Karte unter Wasser liegen? Ihr dürft zwei oder drei Gefühle nehmen.",
+              "Für euren eigenen Eisberg: Denkt an eine Situation, in der ihr richtig wütend wart. Ihr schreibt nur für euch."
+            ],
+            "punkte": [
+              "Fall 1 · Das Fußballspiel: In der Pause werden Teams gewählt. Tiago bleibt als Letzter übrig. Einer sagt: „Dann nehmen wir halt den.“ Zwei lachen. Tiago schießt den Ball über den Zaun und geht.",
+              "Fall 2 · Das Referat: Mila hat drei Abende an ihrem Referat gearbeitet. Danach sagt der Lehrer vor allen: „Viel zu kurz. Nächstes Mal bitte mit etwas Mühe.“ Hinten kichert jemand. Mila knallt ihr Heft auf den Tisch.",
+              "Fall 3 · Vergessen: Yusuf soll nach dem Training abgeholt werden. Niemand kommt, sein Akku ist leer. Nach einer Stunde im Regen geht er zu Fuß nach Hause. Dort fragt sein kleiner Bruder, ob er mit ihm zockt. Yusuf brüllt ihn an.",
+              "Fall 4 · Das Foto: In der Pause lachen vier aus der Klasse über ein Handy. Léa sieht: Es ist ein Foto von ihr, im Bus eingeschlafen, mit offenem Mund. Einer sagt: „Das kommt in die Gruppe.“ Léa schreit: „Lösch das, du Idiot.“",
+              "Fall 5 · Die Bücher: Im Flur fällt ein Stapel Bücher vom Wagen. Der Éducateur sieht nur Ana daneben: „Schon wieder du. Heb das sofort auf.“ Ana war es nicht. Hinter seinem Rücken grinst der, der es war. Ana tritt gegen den Wagen.",
+              "Fall 6 (Reserve) · Das neue Handy: Chiara hat zum Geburtstag ein neues Handy bekommen. In der Pause schnappt Ben es sich, hält es hoch und ruft: „Hol’s dir doch.“ Chiara schreit und versucht, es ihm aus der Hand zu reißen."
+            ],
+            "tipp": "Die Gruppen finden für denselben Fall oft verschiedene Gefühle – gut so: In einen Eisberg sieht niemand hinein, man kann nur vermuten und nachfragen. Wer über sich nichts schreiben will, füllt den Eisberg für eine Figur aus einer Serie oder einem Film.",
+            "wennEsKippt": "Erzählt jemand beim eigenen Eisberg plötzlich laut von einer schweren Situation, etwa von Gewalt zu Hause, freundlich stoppen, danken und ein Gespräch nach der Stunde anbieten; noch am selben Tag den SePAS informieren. Dann ruhig mit der nächsten Gruppe weitermachen. Albert eine Tischgruppe nur herum, sich kurz dazusetzen und mit einer Frage zur Figur starten: Was ging ihr durch den Kopf, kurz bevor es knallte?",
+            "blatt": "ff6-wut-eisberg"
+          },
+          {
+            "titel": "Bewegungspause: Stein, Papier, Schere mit Fanclub",
+            "dauer": 5,
+            "phase": "aktiv",
+            "text": "Alle stehen auf. Zu zweit Stein, Papier, Schere spielen; wer verliert, wird Fan der anderen Person, stellt sich hinter sie und feuert sie beim nächsten Spiel mit ihrem Namen an. Die Fanclubs wachsen, bis im Finale zwei Hälften der Klasse ihre beiden Letzten anfeuern (3 Min.). Danach kurz fragen: Wer hat sich beim Ausscheiden eine Sekunde lang geärgert – und woran hat man es gesehen? Liegt die große Pause zwischen den beiden Stunden, entfällt diese Übung.",
+            "tipp": "Die Frage nach dem kurzen Ärger ist die Brücke zur Zeitlupe: Schon bei einem Spiel zeigt der Körper, was los ist – ein Stöhnen, ein Augenrollen, ein Fuß, der aufstampft."
+          },
+          {
+            "titel": "Wut in Zeitlupe",
+            "dauer": 25,
+            "phase": "uebung",
+            "text": "Aufwärmen (3 Min.): Alle stehen hinter ihrem Stuhl und zeigen auf Zuruf ohne Worte, wie sich 10, 30, 50 und 70 anfühlen; höher geht es nicht. Dann bereitet jede Tischgruppe die Szene zu ihrer Fallkarte vor – gespielt werden nur die Sekunden vor dem Ausbruch: Wer ist die Figur, wer der Auslöser, wer führt Regie (4 Min.)? Die Gruppen spielen nacheinander vorn (je 3 Min.). Die Regie liest die Karte vor und ruft dreimal „Freeze!“; bei jedem Freeze beschreibt eine zuschauende Tischgruppe, was sie in ihrem Körperbereich sieht (Beobachtungskarte), und alle zeigen mit den Fingern die geschätzte Zahl. Zum Schluss die Zeichen an der Tafel nach früh, mittel und spät ordnen (3 Min.).",
+            "sagen": [
+              "Alles in Zeitlupe und ohne Berührung. Die Figur bleibt stumm – zeigt, was der Körper macht, bevor der Mund aufgeht.",
+              "Freeze! Was seht ihr? Schaut auf euren Körperbereich: Blick, Kiefer, Schultern, Hände, Füße.",
+              "Bei welcher Zahl hätte die Figur auf die Bremse treten müssen, damit es gar nicht so weit kommt?"
+            ],
+            "punkte": [
+              "Alles in Zeitlupe, keine Berührung.",
+              "Die Figur bleibt stumm; der Auslöser darf seinen Satz von der Karte sagen – langsam.",
+              "Die Regie ruft dreimal „Freeze!“: beim ersten kleinen Zeichen, wenn es mehr wird, kurz vor dem Ausbruch.",
+              "Der Ausbruch wird nie gespielt – nach dem dritten Freeze ist Schluss.",
+              "Nach der Szene aus der Rolle aussteigen: ausschütteln, den eigenen Namen sagen."
+            ],
+            "tabelle": {
+              "spalten": [
+                "Freeze",
+                "Zahl etwa",
+                "Was man sehen kann"
+              ],
+              "zeilen": [
+                [
+                  "1 · früh",
+                  "30",
+                  "Blick wird starr, Kiefer spannt sich, Hände werden unruhig"
+                ],
+                [
+                  "2 · mittel",
+                  "50",
+                  "Schultern hoch, Atem schneller und flacher, Fäuste"
+                ],
+                [
+                  "3 · spät",
+                  "70 und mehr",
+                  "Gesicht rot, Oberkörper nach vorn, Blick nur noch auf eine Person, ein Schritt nach vorn"
+                ]
+              ]
+            },
+            "tipp": "Zeitlupe nimmt der Szene die Gefahr und macht sie oft komisch – das ist erwünscht: Lachen hilft, die Körpersignale ohne Scham anzuschauen. In der ersten Szene kann die Lehrkraft selbst die Figur spielen; dann sehen alle, wie langsam und genau es gemeint ist.",
+            "wennEsKippt": "Wird aus der Zeitlupe echte Wut, Schubsen oder Auslachen, sofort „Freeze!“ rufen, alle aus der Rolle holen und die Szene mit der Lehrkraft als Figur neu starten. Wer nicht spielen will, führt Regie oder beobachtet; niemand wird auf die Bühne geschickt. Läuft die Zeit davon, lieber nur zwei Freezes je Szene als eine Gruppe auslassen.",
+            "blatt": "ff6-wut-karten"
+          },
+          {
+            "titel": "Meine Auslöser und Warnzeichen",
+            "dauer": 10,
+            "phase": "uebung",
+            "text": "Zurück an den Plätzen füllt jede Person das Blatt „Meine Auslöser und Warnzeichen“ allein aus. Aufgabe 1 und 2 ankreuzen (3 Min.); die Klebezettel vom Check-in und die Zeichen an der Tafel helfen beim Ergänzen. Aufgabe 3 (5 Min.): die eigenen Warnzeichen in den Umriss malen – Gelb für das Allererste, Orange für das, was dazukommt, Rot für das, was kurz vor dem Ausbruch passiert – und den Satz zum ersten Zeichen ergänzen. Dabei herumgehen und nach dem allerersten Zeichen fragen. Zum Schluss gemeinsam die Beispielzeile des Wut-Protokolls lesen (2 Min.).",
+            "sagen": [
+              "Welches Zeichen kommt bei euch zuerst – noch bevor ihr merkt, dass ihr wütend seid?",
+              "Viele merken es zuerst im Kiefer, im Bauch oder in den Händen. Bei manchen wird es einfach laut im Kopf."
+            ],
+            "tipp": "Wer in der 7e die Gefühls-Landkarte gezeichnet hat, kennt den Umriss. Neu ist die Reihenfolge: Was kommt zuerst? Genau dort setzt nächste Woche die Bremse an.",
+            "wennEsKippt": "Findet jemand kein Zeichen, an die Zeitlupe erinnern (Was hat die Figur als Erstes gemacht?) oder bei der Zündschnur anfangen: Müdigkeit und Hunger merkt man leichter. Wer nichts über sich eintragen möchte, malt die Zeichen einer Figur aus der Zeitlupe ein.",
+            "blatt": "ff6-wut-signale"
+          },
+          {
+            "titel": "Skill: Offene Hände, lockerer Kiefer",
+            "dauer": 10,
+            "phase": "skill",
+            "text": "Alle sitzen, beide Füße am Boden, und schätzen still ihre Zahl; die Lehrkraft macht vor und mit. Zehn Sekunden lang die typischen Wutsignale absichtlich anspannen: Fäuste ballen, Zähne zusammenbeißen, Schultern hochziehen. Dann das Gegenteil: die Hände öffnen und mit den Handflächen nach oben auf die Oberschenkel legen, den Kiefer locker lassen, die Schultern sinken lassen und langsam ausatmen; wer mag, lässt die Mundwinkel ganz leicht nach oben gehen. Dreimal wechseln, danach eine Minute nur offene Hände und die Zahl neu schätzen. Zwei, drei Rückmeldungen einholen und erklären: Der Körper meldet dem Kopf zurück, was er tut – offene Hände sagen dem Alarmsystem, dass gerade kein Kampf ansteht. Auf dem Blatt steht der Skill im Kasten „Dein Gegensignal“.",
+            "sagen": [
+              "Macht eine Faust, beißt die Zähne zusammen, zieht die Schultern hoch. Spürt ihr, wie sich das anfühlt?",
+              "Und jetzt auf: Hände offen, Kiefer locker, Schultern runter. Was ist anders?",
+              "Das geht auch unauffällig unter dem Tisch – genau dann, wenn ihr euer erstes Warnzeichen bemerkt."
+            ],
+            "tipp": "Anspannen und Loslassen kennt die Klasse aus der 7e; neu ist, dass genau die Wut-Haltung umgedreht wird. Offene Hände und ein halbes Lächeln stammen aus dem DBT-Skillstraining: Sie wirken nicht wie ein Schalter, nehmen dem Körper aber die Kampfhaltung.",
+            "wennEsKippt": "Wird über das halbe Lächeln gekichert, das Lächeln weglassen und nur mit Händen und Kiefer arbeiten. Wer beim Anspannen unruhig wird, macht nur den zweiten Teil."
+          },
+          {
+            "titel": "Skills-Pass und Wut-Protokoll",
+            "dauer": 5,
+            "phase": "abschluss",
+            "text": "Die Leitfrage für den Skills-Pass an die Tafel schreiben: Woran merke ich meine Wut, bevor sie platzt? Jede Person schreibt ihren Satz (2 Min.) und bekommt den Stempel; wer mag, liest vor, zwei Stimmen reichen. Dann den Wochenauftrag geben: bis zur nächsten Stunde einmal im Wut-Protokoll festhalten, was passiert ist, was darunter lag und welches Zeichen zuerst kam – ohne Namen und Einzelheiten. Zum Schluss der Ausblick auf die nächste Stunde.",
+            "sagen": [
+              "Ein Satz für den Skills-Pass: Woran merkt ihr eure Wut, bevor sie platzt?",
+              "Bis nächste Woche beobachtet ihr euch selbst: einmal hinschauen, eine Zeile ausfüllen, fertig."
+            ],
+            "tipp": "Bleiben die Hefte in der Schule, die Protokollseite kopiert mitgeben oder eine Situation zu Beginn der nächsten Stunde aus dem Gedächtnis nachtragen lassen."
+          }
+        ],
+        "bruecke": "Nächste Woche geht es um die Sekunden zwischen dem ersten Warnzeichen und dem Ausbruch: Ihr lernt die Stopp-Ampel kennen und probiert sie in Szenen aus dem Alltag aus – bis dahin schaut ihr, welches Zeichen bei euch zuerst kommt.",
+        "hintergrund": "Unter sichtbarer Wut liegen oft verletzlichere Gefühle: Kränkung, Angst, Enttäuschung oder Scham. Besonders gut untersucht ist der Weg von Scham zu Ärger: Wer sich als ganze Person bloßgestellt fühlt, wehrt das häufig mit Wut und Schuldzuweisung nach außen ab (Tangney & Dearing, 2002). Der Eisberg macht diese Schicht besprechbar, ohne dass jemand Eigenes erzählen muss, und zeigt auch Erwachsenen, was hilft: Scham braucht ein Gespräch unter vier Augen, keine Ansage vor der Klasse. Wut ist zugleich ein Körperzustand: In den Körperkarten von Nummenmaa et al. (2014) zeigte sie sich vor allem in Kopf, Brust, Armen und Händen. Viele bemerken diese Signale, bevor sie denken: Ich bin wütend. Je früher man in den Ablauf eines Gefühls eingreift, desto leichter gelingt die Regulation (Gross, 1998) – deshalb sucht die Stunde das allererste Warnzeichen, an dem nächste Woche die Stopp-Ampel ansetzt.",
+        "quellen": [
+          "Tangney, J. P. & Dearing, R. L. (2002). Shame and Guilt. New York: Guilford.",
+          "Nummenmaa, L., Glerean, E., Hari, R. & Hietanen, J. K. (2014). Bodily maps of emotions. Proceedings of the National Academy of Sciences, 111(2), 646–651.",
+          "Gross, J. J. (1998). The emerging field of emotion regulation: An integrative review. Review of General Psychology, 2(3), 271–299."
+        ],
+        "achtung": "Wut berührt manchmal Gewalt – erlebte und ausgeübte. Eigene Ausbrüche werden nicht vor der Klasse erzählt, die Blätter bleiben privat. In der Zeitlupe: keine Berührung, der Ausbruch wird nie gespielt, niemand spielt eine echte Person aus Klasse oder Schule, Regie führen statt spielen ist immer erlaubt. Zu viel wird es, wenn jemand erstarrt, den Tränen nahe ist, den Raum verlassen will oder aus dem Spiel echte Wut wird: die Übung für diese Person beenden, einen ruhigen Platz in Sichtweite anbieten und nach der Stunde unter vier Augen nachfragen. Deutet jemand an, geschlagen, bedroht oder gedemütigt zu werden oder selbst andere zu verletzen: nicht vor der Klasse vertiefen, nichts versprechen (keine Geheimhaltung), noch am selben Tag den SePAS informieren und nach dem Schutzkonzept der Schule handeln; bei akuter Gefahr 112 rufen und die Person nicht allein lassen. Fällt jemand häufig durch heftige Ausbrüche auf, das mit Régent und SePAS besprechen – nicht in dieser Stunde und nicht vor den anderen.",
+        "differenzierung": {
+          "leichter": "Für Jugendliche, die mühsam lesen: Aufgabe 1 auf dem Eisberg-Blatt zu zweit mit einer Person lösen, die gut liest; beim eigenen Eisberg reichen Stichworte oder Wörter aus dem Wortspeicher. Im Umriss genügt das erste Zeichen; das Protokoll darf zu Beginn der nächsten Stunde mündlich nachgetragen werden.",
+          "schwerer": "Einen zweiten Eisberg für die Lehrerin aus der Geschichte füllen: Was könnte unter ihrer Reaktion liegen? In der Zeitlupe die Moderation übernehmen und bei jedem Freeze fragen, welcher Gedanke die Zahl gerade hochtreibt."
+        },
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit Klebepunkt und Zahl (5 Min.), der Wut-Eisberg mit Elias und Aufgabe 1 (12 Min.), eine Zeitlupen-Szene mit Fall 1, gespielt von zwei Freiwilligen vor der ganzen Klasse (10 Min.), Blatt „Meine Auslöser und Warnzeichen“, Aufgaben 1 bis 3 (10 Min.), offene Hände, lockerer Kiefer (6 Min.), Skills-Pass und Wut-Protokoll (7 Min.). Die Eisberg-Detektive und der eigene Eisberg werden in der nächsten Stunde nachgeholt."
+      },
+      "fr": {
+        "titel": "L’iceberg de la colère",
+        "kurz": "Ce que les autres voient de la colère n’est souvent que la pointe : à partir de cas inventés, la classe regarde dessous, rassemble des déclencheurs et cherche au ralenti les premiers signaux d’alerte du corps.",
+        "ziele": [
+          "distinguent, à partir de cas inventés, ce que les autres voient de la colère et ce qui peut se cacher dessous : vexation, peur, honte, injustice ou réservoir vide",
+          "nomment leurs déclencheurs les plus fréquents et ce qui raccourcit leur mèche",
+          "décrivent, dans des scènes au ralenti, les signaux d’alerte précoces, moyens et tardifs dans le corps et notent leur tout premier signal",
+          "essaient les mains ouvertes et la mâchoire relâchée comme contre-signal au premier signal d’alerte"
+        ],
+        "material": [
+          "Affiche de la roue des émotions et échelle de tension (A3), gommettes : une par jeune",
+          "Post-it : un bloc par îlot",
+          "Affiche de l’iceberg (A1 ou tableau de papier) : grand iceberg, ligne de flottaison dans le tiers supérieur, beaucoup de place dessous ; gros feutre",
+          "Huit cartes A5 écrites au gros feutre : vexation, peur, honte, injustice, déception, impuissance, être mis à l’écart, réservoir vide ; ruban adhésif ou aimants",
+          "Modèle à photocopier « Cas de colère et cartes d’observation » : copié une fois sur papier épais et découpé",
+          "Cahier de l’élève avec les fiches « L’iceberg de la colère » et « Mes déclencheurs et signaux d’alerte »",
+          "Crayons de couleur jaune, orange et rouge : un jeu par îlot",
+          "Tampon ou autocollants pour le Skills-Pass"
+        ],
+        "vorbereitung": [
+          "Dessiner l’affiche de l’iceberg et l’accrocher à côté du tableau ; préparer les huit cartes face cachée",
+          "Écrire au tableau la grille de l’étape 3 et la cacher jusqu’à l’apport ; noter les mots-clés au bord du tableau",
+          "Découper les cartes du modèle ; changer un prénom si un jeune de la classe le porte",
+          "Demander au régent s’il y a eu récemment dans la classe un incident qui ressemble à l’un des cas ; remplacer alors ce cas par le cas 6",
+          "Libérer devant un espace de jeu d’environ trois mètres sur deux",
+          "Parcourir soi-même les cas : à quels trois moments figer la scène, bien avant l’explosion ?"
+        ],
+        "ablauf": [
+          {
+            "min": "0–10",
+            "phase": "ankommen",
+            "titel": "Tour d’humeur : qu’est-ce qui vous énerve vite ?"
+          },
+          {
+            "min": "10–15",
+            "phase": "bruecke",
+            "titel": "Retour sur la séance et ouverture du chapitre"
+          },
+          {
+            "min": "15–27",
+            "phase": "input",
+            "titel": "L’iceberg de la colère"
+          },
+          {
+            "min": "27–45",
+            "phase": "uebung",
+            "titel": "Détectives de l’iceberg et mon iceberg"
+          },
+          {
+            "min": "45–50",
+            "phase": "aktiv",
+            "titel": "Pause active : pierre-feuille-ciseaux avec fan-club"
+          },
+          {
+            "min": "50–75",
+            "phase": "uebung",
+            "titel": "La colère au ralenti"
+          },
+          {
+            "min": "75–85",
+            "phase": "uebung",
+            "titel": "Mes déclencheurs et signaux d’alerte"
+          },
+          {
+            "min": "85–95",
+            "phase": "skill",
+            "titel": "Skill : mains ouvertes, mâchoire relâchée"
+          },
+          {
+            "min": "95–100",
+            "phase": "abschluss",
+            "titel": "Skills-Pass et journal de la colère"
+          }
+        ],
+        "schritte": [
+          {
+            "titel": "Tour d’humeur : qu’est-ce qui vous énerve vite ?",
+            "dauer": 10,
+            "phase": "ankommen",
+            "text": "En entrant, chaque jeune colle sa gommette sur l’affiche de la roue des émotions. À trois, tout le monde montre sa tension avec les doigts (0 à 10 doigts pour 0 à 100) ; l’enseignant·e commence avec son émotion et son chiffre, deux ou trois volontaires disent leur mot (3 min). Puis chacun écrit sur un post-it ce qui l’énerve vite au quotidien – une chose, pas une personne (2 min). Ramasser les post-it, en lire cinq ou six à voix haute et les coller tous à côté de l’affiche de l’iceberg, en regroupant ce qui se ressemble (4 min). Ils resserviront à l’étape 7.",
+            "sagen": [
+              "L’émotion, le chiffre – et ensuite, sur le post-it : qu’est-ce qui vous énerve vite au quotidien ? Une chose, pas une personne.",
+              "Moi, c’est l’imprimante qui tombe en panne pile au moment où je n’ai pas le temps."
+            ],
+            "tipp": "Les petits déclencheurs du quotidien – le wifi qui rame, quelqu’un qui mâche bruyamment, la file à la cantine – rendent le début facile et souvent drôle. Les sujets lourds viennent plus tard sur la fiche, sans public.",
+            "wennEsKippt": "Si un post-it nomme malgré tout une personne (« mon frère », « Monsieur … »), ne pas lire le nom mais reformuler : qu’est-ce que cette personne fait qui t’énerve ? Le nom devient une situation. Ne pas lire ni afficher les post-it insultants ; si la classe se moque d’une personne absente, montrer la charte de classe."
+          },
+          {
+            "titel": "Retour sur la séance et ouverture du chapitre",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "Un jeune lit sa phrase du Skills-Pass de la dernière séance ; demander brièvement quel skill figure dans la boussole des skills sous « 3 · Stress et école » (deux voix suffisent). Puis ouvrir le nouveau chapitre et écrire au tableau la question clé : que cache ma colère – et comment freiner à temps ? Annoncer les trois séances du chapitre : aujourd’hui comprendre, la semaine prochaine freiner, ensuite réparer. Poser le cadre : personne ne raconte ses propres crises de colère, on travaille avec des personnages inventés.",
+            "sagen": [
+              "La colère a mauvaise réputation. Pourtant, souvent, elle signale juste que quelque chose ne va pas – le problème, c’est plutôt ce qu’on fait ensuite.",
+              "Aujourd’hui, vous n’avez rien à raconter sur vous. Ce que vous découvrez sur votre propre colère reste sur votre fiche."
+            ],
+            "tipp": "Laisser au tableau les trois étapes du chapitre : comprendre – freiner – réparer. Pour les jeunes à qui la colère a déjà valu beaucoup d’ennuis, c’est une perspective plutôt qu’un procès."
+          },
+          {
+            "titel": "L’iceberg de la colère",
+            "dauer": 12,
+            "phase": "input",
+            "text": "Lire à voix haute l’histoire « Le cahier » de la fiche, la classe suit. D’abord rassembler ce que les autres élèves ont vu d’Elias et l’écrire sur l’affiche, au-dessus de la ligne de flottaison (2 min). Puis demander ce qu’Elias a pu ressentir sans que personne le voie : à chaque proposition qui convient, retourner la carte correspondante et l’accrocher sous la ligne ; à la fin, découvrir les huit (3 min). Expliquer les cinq plus fréquentes avec la grille au tableau (3 min). Beaucoup connaissent le réservoir vide grâce au bocal des besoins de la 7e – un jeune qui était là l’explique en une phrase aux nouveaux. Pour finir, chacun fait seul l’exercice 1 et compare avec la personne d’à côté (3 min).",
+            "sagen": [
+              "Qu’est-ce que les autres ont vu ? Et qu’est-ce qu’Elias a ressenti, que personne n’a vu ?",
+              "La colère, c’est souvent comme un garde du corps : elle se jette en avant pour que personne ne remarque à quel point quelque chose a fait mal.",
+              "Si c’est la honte qui se cache sous la colère, une remarque devant tout le monde empire les choses. Si c’est l’injustice, ça aide d’être écouté."
+            ],
+            "tabelle": {
+              "spalten": [
+                "Sous l’eau",
+                "Pensée typique",
+                "Ce qui aide plutôt"
+              ],
+              "zeilen": [
+                [
+                  "Vexation",
+                  "« Il ne me prend pas au sérieux. »",
+                  "Du respect, être pris au sérieux"
+                ],
+                [
+                  "Peur",
+                  "« Il va m’arriver quelque chose – ou je vais perdre quelque chose. »",
+                  "Sécurité, clarté, distance"
+                ],
+                [
+                  "Honte",
+                  "« Tout le monde l’a vu. J’ai l’air bête. »",
+                  "Parler en tête-à-tête, pas devant tout le monde"
+                ],
+                [
+                  "Injustice",
+                  "« Ce n’est pas juste. C’est toujours moi. »",
+                  "Être écouté, une explication équitable"
+                ],
+                [
+                  "Réservoir vide",
+                  "« Je n’en peux plus. »",
+                  "Manger, dormir, faire une pause – parler ensuite"
+                ]
+              ]
+            },
+            "tipp": "L’image du garde du corps parle aux jeunes parce qu’elle ne condamne pas la colère : elle a une mission, elle en fait juste parfois trop.",
+            "wennEsKippt": "Si quelqu’un objecte : « Parfois, je suis juste en colère », lui donner raison : il n’y a pas toujours quelque chose dessous, et la colère face à une vraie injustice est légitime. L’iceberg est un outil pour regarder, pas une obligation de trouver quelque chose.",
+            "blatt": "ff6-wut-eisberg"
+          },
+          {
+            "titel": "Détectives de l’iceberg et mon iceberg",
+            "dauer": 18,
+            "phase": "uebung",
+            "text": "Chaque îlot reçoit une carte situation et quelques post-it. En groupe (6 min) : lire le cas à voix haute, choisir deux ou trois émotions pour sous l’eau, écrire chacune sur un post-it et préparer une phrase : qu’est-ce qui aurait aidé le personnage à ce moment-là ? Ensuite, chaque groupe présente son cas en une phrase, colle la carte au-dessus de la ligne de flottaison et les post-it en dessous, puis dit sa phrase ; la classe peut compléter (6 min). Pour finir, chacun travaille seul sur sa fiche (6 min) : l’exercice 2, son propre iceberg à propos d’une situation qu’il n’a à raconter à personne, puis les exercices 3 et 4. La fiche n’est ni ramassée ni lue à voix haute.",
+            "sagen": [
+              "Qu’est-ce qui pourrait se cacher sous l’eau chez le personnage de votre carte ? Vous pouvez prendre deux ou trois émotions.",
+              "Pour votre propre iceberg : pensez à une situation où vous étiez vraiment en colère. Vous écrivez seulement pour vous."
+            ],
+            "punkte": [
+              "Cas 1 · Le match de foot : à la récré, on forme les équipes. Tiago reste le dernier. Un joueur dit : « Bon, on n’a qu’à le prendre, lui. » Deux autres rigolent. Tiago envoie le ballon par-dessus la grille et s’en va.",
+              "Cas 2 · L’exposé : Mila a travaillé trois soirs sur son exposé. Ensuite, le prof dit devant toute la classe : « Beaucoup trop court. La prochaine fois, fais un effort. » Au fond, quelqu’un ricane. Mila claque son cahier sur la table.",
+              "Cas 3 · Oublié : quelqu’un devait venir chercher Yusuf après l’entraînement. Personne ne vient, sa batterie est à plat. Après une heure sous la pluie, il rentre à pied. À la maison, son petit frère lui demande de jouer à la console avec lui. Yusuf lui hurle dessus.",
+              "Cas 4 · La photo : à la récré, quatre élèves de la classe rigolent autour d’un portable. Léa voit que c’est une photo d’elle, endormie dans le bus, la bouche ouverte. L’un d’eux dit : « Ça, je la mets dans le groupe. » Léa crie : « Efface ça, espèce d’idiot. »",
+              "Cas 5 · Les livres : dans le couloir, une pile de livres tombe du chariot. L’éducateur ne voit qu’Ana à côté : « Encore toi. Ramasse ça, tout de suite. » Ce n’était pas elle. Derrière lui, celui qui l’a fait ricane. Ana donne un coup de pied dans le chariot.",
+              "Cas 6 (réserve) · Le nouveau portable : Chiara a reçu un nouveau portable pour son anniversaire. À la récré, Ben le lui prend, le tient en l’air et lance : « Viens le chercher. » Chiara crie et essaie de le lui arracher des mains."
+            ],
+            "tipp": "Les groupes trouvent souvent des émotions différentes pour le même cas – tant mieux : personne ne voit à l’intérieur d’un iceberg, on peut seulement supposer et demander. Un jeune qui ne veut rien écrire sur lui remplit l’iceberg pour un personnage de série ou de film.",
+            "wennEsKippt": "Si un jeune raconte soudain à voix haute une situation lourde, par exemple de la violence à la maison, l’arrêter avec bienveillance, le remercier et lui proposer un entretien après le cours ; informer le SePAS le jour même. Puis continuer calmement avec le groupe suivant. Si un îlot se contente de chahuter, s’asseoir un moment avec lui et lancer une question sur le personnage : qu’est-ce qui lui passait par la tête juste avant que ça éclate ?",
+            "blatt": "ff6-wut-eisberg"
+          },
+          {
+            "titel": "Pause active : pierre-feuille-ciseaux avec fan-club",
+            "dauer": 5,
+            "phase": "aktiv",
+            "text": "Tout le monde se lève. On joue à deux à pierre-feuille-ciseaux ; qui perd devient fan de l’autre, se place derrière lui et l’encourage au match suivant en scandant son prénom. Les fan-clubs grossissent jusqu’à la finale, où deux moitiés de classe encouragent leurs deux derniers joueurs (3 min). Ensuite, demander brièvement : qui s’est énervé une seconde en perdant – et à quoi est-ce qu’on l’a vu ? Si la grande récréation tombe entre les deux heures, supprimer cet exercice.",
+            "tipp": "La question sur ce petit agacement fait le lien avec le ralenti : même pendant un jeu, le corps montre ce qui se passe – un soupir, des yeux au ciel, un pied qui tape par terre."
+          },
+          {
+            "titel": "La colère au ralenti",
+            "dauer": 25,
+            "phase": "uebung",
+            "text": "Échauffement (3 min) : debout derrière sa chaise, chacun montre sans un mot les chiffres annoncés – 10, 30, 50, puis 70 ; on ne va pas plus haut. Chaque îlot prépare ensuite la scène de sa carte situation – on ne joue que les secondes avant l’explosion : qui est le personnage, qui le déclencheur, qui met en scène (4 min) ? Les groupes passent l’un après l’autre devant la classe (3 min chacun). Le metteur en scène lit la carte et lance trois fois « Arrêt sur image ! » ; à chaque arrêt, un îlot spectateur décrit ce qu’il voit dans sa zone du corps (carte d’observation) et tout le monde montre le chiffre estimé avec les doigts. Pour finir, classer au tableau les signaux en précoces, moyens et tardifs (3 min).",
+            "sagen": [
+              "Tout au ralenti et sans se toucher. Le personnage reste muet – montrez ce que fait le corps avant que la bouche s’ouvre.",
+              "Arrêt sur image ! Qu’est-ce que vous voyez ? Regardez votre zone : le regard, la mâchoire, les épaules, les mains, les pieds.",
+              "À quel chiffre le personnage aurait-il dû freiner pour que ça n’aille pas aussi loin ?"
+            ],
+            "punkte": [
+              "Tout au ralenti, sans se toucher.",
+              "Le personnage reste muet ; le déclencheur peut dire la phrase de la carte – lentement.",
+              "Le metteur en scène lance trois fois « Arrêt sur image ! » : au premier petit signe, quand ça monte, juste avant l’explosion.",
+              "L’explosion n’est jamais jouée – après le troisième arrêt, c’est fini.",
+              "Après la scène, on sort du rôle : se secouer, dire son propre prénom."
+            ],
+            "tabelle": {
+              "spalten": [
+                "Arrêt",
+                "Chiffre environ",
+                "Ce qu’on peut voir"
+              ],
+              "zeilen": [
+                [
+                  "1 · précoce",
+                  "30",
+                  "Le regard se fige, la mâchoire se serre, les mains s’agitent"
+                ],
+                [
+                  "2 · moyen",
+                  "50",
+                  "Épaules relevées, respiration plus rapide et plus courte, poings serrés"
+                ],
+                [
+                  "3 · tardif",
+                  "70 et plus",
+                  "Visage rouge, buste en avant, regard fixé sur une seule personne, un pas en avant"
+                ]
+              ]
+            },
+            "tipp": "Le ralenti enlève le danger de la scène et la rend souvent drôle – c’est voulu : rire aide à regarder les signaux du corps sans honte. Pour la première scène, jouer soi-même le personnage : la classe voit alors à quel point tout doit être lent et précis.",
+            "wennEsKippt": "Si le ralenti tourne à la vraie colère, à la bousculade ou à la moquerie, lancer tout de suite « Arrêt sur image ! », faire sortir tout le monde du rôle et reprendre la scène avec l’enseignant·e dans le rôle du personnage. Qui ne veut pas jouer met en scène ou observe ; personne n’est envoyé sur scène. Si le temps manque, faire seulement deux arrêts par scène plutôt que de supprimer un groupe.",
+            "blatt": "ff6-wut-karten"
+          },
+          {
+            "titel": "Mes déclencheurs et signaux d’alerte",
+            "dauer": 10,
+            "phase": "uebung",
+            "text": "De retour à sa place, chaque jeune remplit seul la fiche « Mes déclencheurs et signaux d’alerte ». Cocher les exercices 1 et 2 (3 min) ; les post-it du tour d’humeur et les signaux notés au tableau aident à compléter. Exercice 3 (5 min) : colorier ses signaux d’alerte dans la silhouette – jaune pour le tout premier, orange pour ce qui s’ajoute, rouge pour ce qui arrive juste avant l’explosion – et compléter la phrase sur le premier signal. Pendant ce temps, passer entre les îlots et demander quel est le tout premier signal. Pour finir, lire ensemble la ligne d’exemple du journal de la colère (2 min).",
+            "sagen": [
+              "Quel signal arrive en premier chez vous – avant même que vous remarquiez que vous êtes en colère ?",
+              "Beaucoup le sentent d’abord dans la mâchoire, le ventre ou les mains. Chez certains, ça devient juste bruyant dans la tête."
+            ],
+            "tipp": "Ceux qui ont dessiné la carte corporelle des émotions en 7e connaissent la silhouette. La nouveauté, c’est l’ordre : qu’est-ce qui vient en premier ? C’est précisément là que le frein interviendra la semaine prochaine.",
+            "wennEsKippt": "Si quelqu’un ne trouve aucun signal, rappeler le ralenti (qu’a fait le personnage en premier ?) ou commencer par la mèche : la fatigue et la faim se remarquent plus facilement. Qui ne veut rien noter sur soi colorie les signaux d’un personnage du ralenti.",
+            "blatt": "ff6-wut-signale"
+          },
+          {
+            "titel": "Skill : mains ouvertes, mâchoire relâchée",
+            "dauer": 10,
+            "phase": "skill",
+            "text": "Tout le monde est assis, les deux pieds au sol, et estime en silence son chiffre ; l’enseignant·e montre et fait avec la classe. Pendant dix secondes, contracter exprès les signaux typiques de la colère : serrer les poings, serrer les dents, remonter les épaules. Puis l’inverse : ouvrir les mains et les poser sur les cuisses, paumes vers le haut, relâcher la mâchoire, laisser descendre les épaules et expirer lentement ; qui veut laisse remonter très légèrement les coins de la bouche. Alterner trois fois, puis rester une minute rien qu’avec les mains ouvertes et estimer à nouveau son chiffre. Recueillir deux ou trois retours et expliquer : le corps renvoie à la tête ce qu’il fait – des mains ouvertes signalent au système d’alarme qu’aucun combat n’est en vue. Sur la fiche, le skill figure dans l’encadré « Ton contre-signal ».",
+            "sagen": [
+              "Serrez les poings, serrez les dents, remontez les épaules. Vous sentez ce que ça fait ?",
+              "Et maintenant, on ouvre : mains ouvertes, mâchoire relâchée, épaules en bas. Qu’est-ce qui change ?",
+              "Ça marche aussi discrètement sous la table – justement au moment où vous remarquez votre premier signal d’alerte."
+            ],
+            "tipp": "La classe connaît « contracter et relâcher » depuis la 7e ; la nouveauté, c’est qu’on inverse précisément la posture de la colère. Les mains ouvertes et le demi-sourire viennent de l’entraînement aux skills de la DBT : ce n’est pas un interrupteur, mais le corps quitte sa posture de combat.",
+            "wennEsKippt": "Si le demi-sourire fait rire, le laisser de côté et travailler seulement avec les mains et la mâchoire. Un jeune qui s’agite en contractant fait seulement la deuxième partie."
+          },
+          {
+            "titel": "Skills-Pass et journal de la colère",
+            "dauer": 5,
+            "phase": "abschluss",
+            "text": "Écrire au tableau la question clé du Skills-Pass : à quoi est-ce que je remarque ma colère avant qu’elle éclate ? Chacun écrit sa phrase (2 min) et reçoit le tampon ; qui veut la lit, deux voix suffisent. Ensuite, donner la mission de la semaine : d’ici la prochaine séance, noter une fois dans le journal de la colère ce qui s’est passé, ce qu’il y avait dessous et quel signal est venu en premier – sans noms ni détails. Pour finir, annoncer la prochaine séance.",
+            "sagen": [
+              "Une phrase pour le Skills-Pass : à quoi remarquez-vous votre colère avant qu’elle éclate ?",
+              "D’ici la semaine prochaine, vous vous observez vous-mêmes : regarder une fois, remplir une ligne, c’est tout."
+            ],
+            "tipp": "Si les cahiers restent à l’école, donner une copie de la page du journal ou faire noter une situation de mémoire au début de la séance suivante."
+          }
+        ],
+        "bruecke": "La semaine prochaine, on s’intéresse aux secondes entre le premier signal d’alerte et l’explosion : vous découvrez le feu stop et vous l’essayez dans des scènes du quotidien – d’ici là, observez quel signal arrive en premier chez vous.",
+        "hintergrund": "Sous la colère visible se cachent souvent des émotions plus vulnérables : vexation, peur, déception ou honte. Le passage de la honte à la colère est particulièrement bien étudié : qui se sent exposé dans toute sa personne s’en défend souvent par la colère et en rejetant la faute sur les autres (Tangney & Dearing, 2002). L’iceberg permet d’en parler sans que personne raconte sa propre histoire, et montre aussi aux adultes ce qui aide : la honte appelle un entretien en tête-à-tête, pas une remarque devant la classe. La colère est aussi un état du corps : dans les cartes corporelles de Nummenmaa et al. (2014), elle apparaissait surtout dans la tête, la poitrine, les bras et les mains. Beaucoup sentent ces signaux avant de se dire : je suis en colère. Plus on intervient tôt dans le déroulement d’une émotion, plus la régulation est facile (Gross, 1998) : la séance cherche donc le tout premier signal, sur lequel s’appuiera le feu stop.",
+        "quellen": [
+          "Tangney, J. P. & Dearing, R. L. (2002). Shame and Guilt. New York: Guilford.",
+          "Nummenmaa, L., Glerean, E., Hari, R. & Hietanen, J. K. (2014). Bodily maps of emotions. Proceedings of the National Academy of Sciences, 111(2), 646–651.",
+          "Gross, J. J. (1998). The emerging field of emotion regulation: An integrative review. Review of General Psychology, 2(3), 271–299."
+        ],
+        "achtung": "La colère touche parfois à la violence – subie ou exercée. Personne ne raconte ses propres crises devant la classe, les fiches restent privées. Au ralenti : on ne se touche pas, l’explosion n’est jamais jouée, personne ne joue une vraie personne de la classe ou de l’école, et on peut toujours mettre en scène au lieu de jouer. C’est trop quand un jeune se fige, est au bord des larmes, veut quitter la salle ou quand le jeu tourne à la vraie colère : arrêter l’exercice pour lui, lui proposer une place au calme, en vue, et lui parler en tête-à-tête après le cours. Si un jeune laisse entendre qu’il est frappé, menacé ou humilié, ou qu’il blesse lui-même d’autres personnes : ne pas approfondir devant la classe, ne rien promettre (pas de secret), informer le SePAS le jour même et agir selon le protocole de protection de l’école ; en cas de danger immédiat, appeler le 112 et ne pas laisser la personne seule. Si un jeune se fait souvent remarquer par de violents accès de colère, en parler avec le régent et le SePAS – pas pendant cette séance ni devant les autres.",
+        "differenzierung": {
+          "leichter": "Pour les jeunes qui lisent difficilement : faire l’exercice 1 de la fiche de l’iceberg à deux avec un camarade qui lit bien ; pour son propre iceberg, des mots-clés ou les mots du tableau suffisent. Dans la silhouette, le premier signal suffit ; le journal peut être raconté à l’oral au début de la séance suivante.",
+          "schwerer": "Remplir un deuxième iceberg pour l’enseignante de l’histoire : qu’est-ce qui pourrait se cacher sous sa réaction ? Au ralenti, animer les retours et demander à chaque arrêt quelle pensée fait monter le chiffre."
+        },
+        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec gommette et chiffre (5 min), l’iceberg de la colère avec Elias et l’exercice 1 (12 min), une scène au ralenti avec le cas 1, jouée par deux volontaires devant toute la classe (10 min), fiche « Mes déclencheurs et signaux d’alerte », exercices 1 à 3 (10 min), mains ouvertes, mâchoire relâchée (6 min), Skills-Pass et journal de la colère (7 min). Les détectives de l’iceberg et son propre iceberg sont rattrapés à la séance suivante."
+      }
+    }
+  ],
+  "blaetter": [
+    {
+      "id": "ff6-wut-eisberg",
+      "bereich": "skills",
+      "thema": "gefuehle",
+      "stufen": [
+        "ES"
+      ],
+      "layout": "jugend",
+      "sozialform": [
+        "einzeln",
+        "gruppe"
+      ],
+      "dauer": "20 Min.",
+      "eldib": [],
+      "schlagworte": [
+        "Wut",
+        "Eisberg",
+        "Gefühle unter der Wut",
+        "Förderfach"
+      ],
+      "bild": "icon:mountain",
+      "kurs": [
+        "ff6-e10"
+      ],
+      "de": {
+        "titel": "Der Wut-Eisberg",
+        "untertitel": "Was andere sehen, ist nur die Spitze. Darunter liegt oft etwas, das mehr wehtut.",
+        "bausteine": [
+          {
+            "art": "text",
+            "text": "Wut ist oft wie ein Leibwächter: Sie springt nach vorn, damit niemand merkt, was eigentlich getroffen hat. Wer weiß, was darunter liegt, weiß auch, was wirklich hilft."
+          },
+          {
+            "art": "geschichte",
+            "titel": "Das Heft",
+            "bild": "figur:ben:wuetend",
+            "text": "Elias (13) kommt nach der Pause in den Klassenraum. Sein Heft liegt aufgeschlagen auf dem Tisch, jemand hat „Loser“ quer über die Seite geschrieben. Hinten lachen drei. Elias wirft das Heft gegen die Wand und brüllt: „Wer war das?“ Genau in dem Moment kommt die Lehrerin herein – und schickt ihn vor die Tür. Auf dem Flur tritt er gegen seinen Rucksack und denkt: Immer ich."
+          },
+          {
+            "art": "aufgabe",
+            "text": "Welcher Gedanke von Elias gehört zu welchem Gefühl unter Wasser? Verbinde.",
+            "hinweis": "Bei Elias kann mehr als ein Gefühl darunterliegen."
+          },
+          {
+            "art": "zuordnen",
+            "titel": [
+              "Gedanke von Elias",
+              "Unter Wasser"
+            ],
+            "links": [
+              "„Alle haben es gesehen. Jetzt lachen sie über mich.“",
+              "„Die haben null Respekt vor mir.“",
+              "„Ich muss raus – und die drei lachen weiter.“",
+              "„Wenn das so weitergeht, habe ich hier bald niemanden mehr.“",
+              "„Heute war schon alles zu viel. Ich kann nicht mehr.“"
+            ],
+            "rechts": [
+              "Ungerechtigkeit",
+              "Angst",
+              "Leerer Tank",
+              "Kränkung",
+              "Scham"
+            ]
+          },
+          {
+            "art": "info",
+            "symbol": "merke",
+            "titel": "Was darunter liegt, bestimmt, was hilft",
+            "punkte": [
+              "Scham: nicht vor allen, sondern unter vier Augen reden.",
+              "Kränkung: ernst genommen werden, Respekt einfordern.",
+              "Ungerechtigkeit: gehört werden, eine faire Klärung verlangen.",
+              "Angst: Sicherheit und Abstand schaffen.",
+              "Leerer Tank: erst essen, trinken, schlafen – dann reden."
+            ]
+          },
+          {
+            "art": "seitenumbruch"
+          },
+          {
+            "art": "aufgabe",
+            "text": "Dein Eisberg: Denk an eine Situation, in der du richtig wütend warst. Was haben andere gesehen – und was lag darunter?",
+            "hinweis": "Das Beispiel zeigt den Eisberg von Elias. Deine Situation musst du niemandem erzählen."
+          },
+          {
+            "art": "eisberg",
+            "oben": "Das haben die anderen gesehen",
+            "unten": "Das lag darunter",
+            "beispielOben": "Heft an die Wand, brüllen, gegen den Rucksack treten",
+            "beispielUnten": "Scham vor der Klasse, Kränkung durch „Loser“, Ungerechtigkeit: Er muss raus, die anderen nicht"
+          },
+          {
+            "art": "aufgabe",
+            "text": "Was liegt bei dir am häufigsten unter der Wut? Kreuze an."
+          },
+          {
+            "art": "ankreuzen",
+            "spalten": 3,
+            "frei": 1,
+            "items": [
+              "Kränkung",
+              "Angst",
+              "Scham",
+              "Ungerechtigkeit",
+              "Enttäuschung",
+              "Hilflosigkeit",
+              "Ausgeschlossen sein",
+              "Leerer Tank"
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Was hilft dir, wenn deine Wut so aussieht – und was macht es schlimmer?"
+          },
+          {
+            "art": "satzanfaenge",
+            "items": [
+              "Wenn bei mir … darunter liegt, hilft mir …",
+              "Schlimmer wird es, wenn …"
+            ],
+            "linien": 2
+          },
+          {
+            "art": "info",
+            "symbol": "hilfe",
+            "titel": "Du entscheidest, was du teilst.",
+            "text": "Dein Eisberg gehört dir. Nichts davon wird vorgelesen oder eingesammelt. Liegt unter deiner Wut etwas, das dich lange beschäftigt, sprich mit einer Person, der du vertraust, oder mit dem SePAS."
+          }
+        ],
+        "lehrer": {
+          "ziel": "Die Jugendlichen erkennen, dass unter sichtbarer Wut oft Kränkung, Angst, Scham, Ungerechtigkeit oder ein leerer Tank liegen, und leiten ab, was dann hilft.",
+          "ablauf": [
+            "Einheit 10, Schritt 3 (12 Min.): Geschichte vorlesen, Eisberg-Plakat füllen, Tafelbild erklären, Aufgabe 1 allein.",
+            "Schritt 4 (18 Min.): Eisberg-Detektive in Tischgruppen mit den Fallkarten, dann Aufgaben 2 bis 4 allein.",
+            "Das Blatt wird weder eingesammelt noch vorgelesen."
+          ],
+          "hintergrund": "Wut entsteht, wenn jemand eine Situation als Kränkung, Bedrohung oder Unrecht bewertet (Novaco, 1975). Oft liegt darunter ein verletzlicheres Gefühl; besonders gut belegt ist der Zusammenhang mit Scham, die leicht in Ärger und Schuldzuweisung umschlägt (Tangney & Dearing, 2002).",
+          "quellen": [
+            "Novaco, R. W. (1975). Anger Control: The Development and Evaluation of an Experimental Treatment. Lexington, MA: Lexington Books.",
+            "Tangney, J. P. & Dearing, R. L. (2002). Shame and Guilt. New York: Guilford."
+          ],
+          "achtung": "Der eigene Eisberg kann Gewalt oder Demütigung berühren: nicht vor der Klasse vertiefen, nach der Stunde ansprechen, noch am selben Tag den SePAS informieren.",
+          "material": "Eisberg-Plakat, acht Karten für unter Wasser, Fallkarten (Kopiervorlage)"
+        }
+      },
+      "fr": {
+        "titel": "L’iceberg de la colère",
+        "untertitel": "Ce que les autres voient n’est que la pointe. Dessous, il y a souvent quelque chose qui fait plus mal.",
+        "bausteine": [
+          {
+            "art": "text",
+            "text": "La colère, c’est souvent comme un garde du corps : elle se jette en avant pour que personne ne remarque ce qui a vraiment touché. Savoir ce qu’il y a dessous, c’est aussi savoir ce qui aide vraiment."
+          },
+          {
+            "art": "geschichte",
+            "titel": "Le cahier",
+            "bild": "figur:ben:wuetend",
+            "text": "Elias (13 ans) revient en classe après la récré. Son cahier est ouvert sur la table, quelqu’un a écrit « Loser » en travers de la page. Au fond, trois élèves rigolent. Elias jette le cahier contre le mur et crie : « Qui a fait ça ? » Juste à ce moment, la prof entre – et le met à la porte. Dans le couloir, il donne un coup de pied dans son sac et pense : c’est toujours moi."
+          },
+          {
+            "art": "aufgabe",
+            "text": "Quelle pensée d’Elias va avec quelle émotion sous l’eau ? Relie.",
+            "hinweis": "Chez Elias, il peut y avoir plus d’une émotion dessous."
+          },
+          {
+            "art": "zuordnen",
+            "titel": [
+              "Pensée d’Elias",
+              "Sous l’eau"
+            ],
+            "links": [
+              "« Tout le monde l’a vu. Maintenant, ils se moquent de moi. »",
+              "« Ils n’ont aucun respect pour moi. »",
+              "« C’est moi qui dois sortir – et les trois continuent de rire. »",
+              "« Si ça continue, je n’aurai bientôt plus personne ici. »",
+              "« Aujourd’hui, c’était déjà trop. Je n’en peux plus. »"
+            ],
+            "rechts": [
+              "Injustice",
+              "Peur",
+              "Réservoir vide",
+              "Vexation",
+              "Honte"
+            ]
+          },
+          {
+            "art": "info",
+            "symbol": "merke",
+            "titel": "Ce qu’il y a dessous décide de ce qui aide",
+            "punkte": [
+              "Honte : parler en tête-à-tête, pas devant tout le monde.",
+              "Vexation : être pris au sérieux, demander du respect.",
+              "Injustice : être écouté, demander une explication équitable.",
+              "Peur : se mettre en sécurité, prendre de la distance.",
+              "Réservoir vide : d’abord manger, boire, dormir – ensuite parler."
+            ]
+          },
+          {
+            "art": "seitenumbruch"
+          },
+          {
+            "art": "aufgabe",
+            "text": "Ton iceberg : pense à une situation où tu étais vraiment en colère. Qu’ont vu les autres – et qu’y avait-il dessous ?",
+            "hinweis": "L’exemple montre l’iceberg d’Elias. Tu n’as à raconter ta situation à personne."
+          },
+          {
+            "art": "eisberg",
+            "oben": "Ce que les autres ont vu",
+            "unten": "Ce qu’il y avait dessous",
+            "beispielOben": "Cahier contre le mur, cris, coup de pied dans le sac",
+            "beispielUnten": "Honte devant la classe, vexation à cause de « Loser », injustice : lui doit sortir, pas les autres"
+          },
+          {
+            "art": "aufgabe",
+            "text": "Qu’est-ce qui se cache le plus souvent sous ta colère ? Coche."
+          },
+          {
+            "art": "ankreuzen",
+            "spalten": 3,
+            "frei": 1,
+            "items": [
+              "Vexation",
+              "Peur",
+              "Honte",
+              "Injustice",
+              "Déception",
+              "Impuissance",
+              "Être mis à l’écart",
+              "Réservoir vide"
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Qu’est-ce qui t’aide quand ta colère ressemble à ça – et qu’est-ce qui empire les choses ?"
+          },
+          {
+            "art": "satzanfaenge",
+            "items": [
+              "Quand il y a … sous ma colère, ce qui m’aide, c’est …",
+              "C’est pire quand …"
+            ],
+            "linien": 2
+          },
+          {
+            "art": "info",
+            "symbol": "hilfe",
+            "titel": "Tu décides de ce que tu partages.",
+            "text": "Ton iceberg t’appartient. Rien n’est lu à voix haute ni ramassé. Si, sous ta colère, il y a quelque chose qui te pèse depuis longtemps, parles-en à une personne de confiance ou au SePAS."
+          }
+        ],
+        "lehrer": {
+          "ziel": "Les jeunes reconnaissent que sous une colère visible se cachent souvent vexation, peur, honte, injustice ou réservoir vide, et en déduisent ce qui aide.",
+          "ablauf": [
+            "Séance 10, étape 3 (12 min) : lire l’histoire, remplir l’affiche de l’iceberg, expliquer la grille, exercice 1 seul.",
+            "Étape 4 (18 min) : détectives de l’iceberg en îlots avec les cartes situations, puis exercices 2 à 4 seul.",
+            "La fiche n’est ni ramassée ni lue à voix haute."
+          ],
+          "hintergrund": "La colère naît quand on juge une situation vexante, menaçante ou injuste (Novaco, 1975). Dessous se cache souvent une émotion plus vulnérable ; le lien avec la honte, qui bascule facilement en colère et en reproches, est particulièrement bien documenté (Tangney & Dearing, 2002).",
+          "quellen": [
+            "Novaco, R. W. (1975). Anger Control: The Development and Evaluation of an Experimental Treatment. Lexington, MA: Lexington Books.",
+            "Tangney, J. P. & Dearing, R. L. (2002). Shame and Guilt. New York: Guilford."
+          ],
+          "achtung": "Son propre iceberg peut toucher à la violence ou à l’humiliation : ne pas approfondir devant la classe, en parler après le cours, informer le SePAS le jour même.",
+          "material": "Affiche de l’iceberg, huit cartes pour sous l’eau, cartes situations (modèle à photocopier)"
+        }
+      }
+    },
+    {
+      "id": "ff6-wut-signale",
+      "bereich": "skills",
+      "thema": "regulieren",
+      "stufen": [
+        "ES"
+      ],
+      "layout": "jugend",
+      "sozialform": [
+        "einzeln"
+      ],
+      "dauer": "10 Min. und eine Woche",
+      "eldib": [],
+      "schlagworte": [
+        "Wut",
+        "Auslöser",
+        "Warnzeichen",
+        "Wut-Protokoll",
+        "Förderfach"
+      ],
+      "bild": "icon:alarm",
+      "kurs": [
+        "ff6-e10",
+        "ff6-e11"
+      ],
+      "de": {
+        "titel": "Meine Auslöser und Warnzeichen",
+        "untertitel": "Wut kommt selten aus dem Nichts. Wer seine Auslöser und ersten Zeichen kennt, kann früher bremsen.",
+        "bausteine": [
+          {
+            "art": "aufgabe",
+            "text": "Was bringt dich schnell auf die Palme? Kreuze an und ergänze."
+          },
+          {
+            "art": "ankreuzen",
+            "spalten": 2,
+            "frei": 1,
+            "items": [
+              "Jemand blamiert mich vor anderen.",
+              "Man beschuldigt mich zu Unrecht.",
+              "Jemand redet schlecht über meine Familie.",
+              "Jemand kommandiert mich herum.",
+              "Ich verliere beim Zocken oder im Sport.",
+              "Jemand nimmt meine Sachen, ohne zu fragen.",
+              "Mir hört niemand zu.",
+              "Ein Kommentar oder Foto im Chat.",
+              "Technik streikt: Akku leer, WLAN weg."
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Was verkürzt deine Zündschnur? Kreuze an, was deine Wut schneller hochkommen lässt."
+          },
+          {
+            "art": "ankreuzen",
+            "spalten": 3,
+            "items": [
+              "müde",
+              "hungrig",
+              "Stress in der Schule",
+              "schon genervt",
+              "zu lange am Handy",
+              "krank oder Schmerzen"
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Wo und in welcher Reihenfolge meldet sich deine Wut? Male in den Umriss.",
+            "hinweis": "Gelb: das Allererste, was du merkst. Orange: was dazukommt. Rot: was kurz vor dem Ausbruch passiert."
+          },
+          {
+            "art": "koerper",
+            "legende": [
+              {
+                "farbe": "gelb",
+                "text": "ganz früh – etwa bei 30"
+              },
+              {
+                "farbe": "orange",
+                "text": "es wird mehr – etwa bei 50"
+              },
+              {
+                "farbe": "rot",
+                "text": "kurz vor dem Ausbruch – ab 70"
+              }
+            ]
+          },
+          {
+            "art": "satzanfaenge",
+            "items": [
+              "Mein allererstes Zeichen ist …",
+              "Das merken andere an mir, bevor ich es selbst merke: …"
+            ],
+            "linien": 1
+          },
+          {
+            "art": "seitenumbruch"
+          },
+          {
+            "art": "info",
+            "symbol": "merke",
+            "titel": "Warum früh bremsen?",
+            "text": "Bei 30 kannst du noch reden, nachfragen oder weggehen. Ab 70 übernimmt der Körper – dann hilft meist nur noch ein starker Skill. Je früher du dein Zeichen bemerkst, desto mehr Möglichkeiten hast du."
+          },
+          {
+            "art": "info",
+            "symbol": "tipp",
+            "titel": "Dein Gegensignal",
+            "text": "Sobald du dein erstes Zeichen bemerkst: Hände öffnen, Kiefer locker lassen, langsam ausatmen. Das geht auch unauffällig unter dem Tisch."
+          },
+          {
+            "art": "aufgabe",
+            "text": "Wut-Protokoll: Beobachte dich bis zur nächsten Stunde. Eine Zeile pro Situation reicht.",
+            "hinweis": "Keine Namen, keine Einzelheiten – nur so viel, dass du dich erinnerst."
+          },
+          {
+            "art": "tabelle",
+            "spalten": [
+              "Tag",
+              "Was ist passiert?",
+              "Was lag darunter?",
+              "Erstes Zeichen",
+              "Zahl"
+            ],
+            "breiten": [
+              0.55,
+              2,
+              1.45,
+              1.3,
+              0.6
+            ],
+            "zeilen": 5,
+            "beispiel": [
+              "Mo",
+              "Bus verpasst, 20 Min. im Regen gewartet",
+              "leerer Tank, Ungerechtigkeit",
+              "Kiefer fest",
+              "60"
+            ]
+          },
+          {
+            "art": "text",
+            "text": "Am Ende der Woche: Schau auf deine Zeilen. Was fällt dir auf?",
+            "klein": true
+          },
+          {
+            "art": "satzanfaenge",
+            "items": [
+              "Meine Wut kam vor allem, wenn …",
+              "Mein erstes Zeichen war meistens …"
+            ],
+            "linien": 2
+          },
+          {
+            "art": "info",
+            "symbol": "hilfe",
+            "titel": "Du entscheidest, was du teilst.",
+            "text": "Das Protokoll ist für dich. Nächste Woche nennst du höchstens dein erstes Zeichen – wenn du willst."
+          }
+        ],
+        "lehrer": {
+          "ziel": "Die Jugendlichen benennen Auslöser und Verstärker ihrer Wut, zeichnen die Reihenfolge ihrer Warnzeichen ein und beobachten sich eine Woche lang mit einem kurzen Protokoll.",
+          "ablauf": [
+            "Einheit 10, Schritt 7 (10 Min.): Aufgaben 1 und 2 allein, die Klebezettel vom Check-in helfen; Aufgabe 3 mit Gelb, Orange und Rot.",
+            "Die Beispielzeile des Protokolls gemeinsam lesen; den Wochenauftrag im Abschluss geben.",
+            "Einheit 11: Das erste Zeichen wird zum Signal für Rot in der Stopp-Ampel."
+          ],
+          "hintergrund": "Wut zeigt sich im Körper, oft bevor sie im Kopf ankommt; in den Körperkarten von Nummenmaa et al. (2014) vor allem in Kopf, Brust, Armen und Händen. Je früher man in den Ablauf eines Gefühls eingreift, desto leichter gelingt es (Gross, 1998). Das Protokoll nutzt Selbstbeobachtung: Wer Auslöser und Reaktionen notiert, erkennt Muster (Kanfer et al., 2012).",
+          "quellen": [
+            "Nummenmaa, L., Glerean, E., Hari, R. & Hietanen, J. K. (2014). Bodily maps of emotions. Proceedings of the National Academy of Sciences, 111(2), 646–651.",
+            "Gross, J. J. (1998). The emerging field of emotion regulation: An integrative review. Review of General Psychology, 2(3), 271–299.",
+            "Kanfer, F. H., Reinecker, H. & Schmelzer, D. (2012). Selbstmanagement-Therapie (5. Aufl.). Berlin: Springer."
+          ],
+          "achtung": "Einträge wie „redet schlecht über meine Familie“ oder ein ständig leerer Tank können auf Belastungen hinweisen. Nicht vor der Klasse nachfragen; bei Sorge den SePAS einbeziehen.",
+          "material": "Buntstifte in Gelb, Orange und Rot"
+        }
+      },
+      "fr": {
+        "titel": "Mes déclencheurs et signaux d’alerte",
+        "untertitel": "La colère vient rarement de nulle part. Qui connaît ses déclencheurs et ses premiers signaux peut freiner plus tôt.",
+        "bausteine": [
+          {
+            "art": "aufgabe",
+            "text": "Qu’est-ce qui t’énerve vite ? Coche et complète."
+          },
+          {
+            "art": "ankreuzen",
+            "spalten": 2,
+            "frei": 1,
+            "items": [
+              "Quelqu’un me ridiculise devant les autres.",
+              "On m’accuse à tort.",
+              "Quelqu’un dit du mal de ma famille.",
+              "Quelqu’un me donne des ordres.",
+              "Je perds à un jeu vidéo ou au sport.",
+              "Quelqu’un prend mes affaires sans demander.",
+              "Personne ne m’écoute.",
+              "Un commentaire ou une photo dans un groupe en ligne.",
+              "La technique lâche : plus de batterie, plus de wifi."
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Qu’est-ce qui raccourcit ta mèche ? Coche ce qui fait monter ta colère plus vite."
+          },
+          {
+            "art": "ankreuzen",
+            "spalten": 3,
+            "items": [
+              "fatigue",
+              "faim",
+              "stress à l’école",
+              "déjà énervé·e",
+              "trop de temps sur le portable",
+              "maladie ou douleur"
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Où et dans quel ordre ta colère se manifeste-t-elle ? Colorie dans la silhouette.",
+            "hinweis": "Jaune : le tout premier signe que tu remarques. Orange : ce qui s’ajoute. Rouge : ce qui arrive juste avant l’explosion."
+          },
+          {
+            "art": "koerper",
+            "legende": [
+              {
+                "farbe": "gelb",
+                "text": "très tôt – vers 30"
+              },
+              {
+                "farbe": "orange",
+                "text": "ça monte – vers 50"
+              },
+              {
+                "farbe": "rot",
+                "text": "juste avant l’explosion – dès 70"
+              }
+            ]
+          },
+          {
+            "art": "satzanfaenge",
+            "items": [
+              "Mon tout premier signal, c’est …",
+              "Les autres le remarquent chez moi avant moi : …"
+            ],
+            "linien": 1
+          },
+          {
+            "art": "seitenumbruch"
+          },
+          {
+            "art": "info",
+            "symbol": "merke",
+            "titel": "Pourquoi freiner tôt ?",
+            "text": "À 30, tu peux encore parler, poser une question ou t’éloigner. À partir de 70, le corps prend le dessus – souvent, seul un skill fort aide encore. Plus tu remarques ton signal tôt, plus tu as de possibilités."
+          },
+          {
+            "art": "info",
+            "symbol": "tipp",
+            "titel": "Ton contre-signal",
+            "text": "Dès que tu remarques ton premier signal : ouvre les mains, relâche la mâchoire, expire lentement. Ça marche aussi discrètement sous la table."
+          },
+          {
+            "art": "aufgabe",
+            "text": "Journal de la colère : observe-toi jusqu’à la prochaine séance. Une ligne par situation suffit.",
+            "hinweis": "Pas de noms, pas de détails – juste assez pour t’en souvenir."
+          },
+          {
+            "art": "tabelle",
+            "spalten": [
+              "Jour",
+              "Que s’est-il passé ?",
+              "Qu’y avait-il dessous ?",
+              "Premier signal",
+              "Chiffre"
+            ],
+            "breiten": [
+              0.55,
+              2,
+              1.45,
+              1.3,
+              0.6
+            ],
+            "zeilen": 5,
+            "beispiel": [
+              "lun.",
+              "Bus raté, 20 min d’attente sous la pluie",
+              "réservoir vide, injustice",
+              "mâchoire serrée",
+              "60"
+            ]
+          },
+          {
+            "art": "text",
+            "text": "À la fin de la semaine : relis tes lignes. Qu’est-ce que tu remarques ?",
+            "klein": true
+          },
+          {
+            "art": "satzanfaenge",
+            "items": [
+              "Ma colère est surtout venue quand …",
+              "Mon premier signal était le plus souvent …"
+            ],
+            "linien": 2
+          },
+          {
+            "art": "info",
+            "symbol": "hilfe",
+            "titel": "Tu décides de ce que tu partages.",
+            "text": "Le journal est pour toi. La semaine prochaine, tu dis tout au plus ton premier signal – si tu veux."
+          }
+        ],
+        "lehrer": {
+          "ziel": "Les jeunes nomment les déclencheurs et les amplificateurs de leur colère, dessinent l’ordre de leurs signaux d’alerte et s’observent pendant une semaine avec un court journal.",
+          "ablauf": [
+            "Séance 10, étape 7 (10 min) : exercices 1 et 2 seul, les post-it du tour d’humeur aident ; exercice 3 en jaune, orange et rouge.",
+            "Lire ensemble la ligne d’exemple du journal ; donner la mission de la semaine à la clôture.",
+            "Séance 11 : le premier signal devient le signal du rouge dans le feu stop."
+          ],
+          "hintergrund": "La colère se manifeste dans le corps, souvent avant d’arriver dans la tête ; dans les cartes corporelles de Nummenmaa et al. (2014), surtout dans la tête, la poitrine, les bras et les mains. Plus on intervient tôt dans le déroulement d’une émotion, plus c’est facile (Gross, 1998). Le journal repose sur l’auto-observation : noter déclencheurs et réactions fait apparaître des schémas (Kanfer et al., 2012).",
+          "quellen": [
+            "Nummenmaa, L., Glerean, E., Hari, R. & Hietanen, J. K. (2014). Bodily maps of emotions. Proceedings of the National Academy of Sciences, 111(2), 646–651.",
+            "Gross, J. J. (1998). The emerging field of emotion regulation: An integrative review. Review of General Psychology, 2(3), 271–299.",
+            "Kanfer, F. H., Reinecker, H. & Schmelzer, D. (2012). Selbstmanagement-Therapie (5. Aufl.). Berlin: Springer."
+          ],
+          "achtung": "Des réponses comme « dit du mal de ma famille » ou un réservoir constamment vide peuvent signaler des difficultés. Ne pas poser de questions devant la classe ; en cas d’inquiétude, impliquer le SePAS.",
+          "material": "Crayons de couleur jaune, orange et rouge"
+        }
+      }
+    },
+    {
+      "id": "ff6-wut-karten",
+      "bereich": "skills",
+      "thema": "gefuehle",
+      "stufen": [
+        "ES"
+      ],
+      "layout": "jugend",
+      "sozialform": [
+        "gruppe",
+        "klasse"
+      ],
+      "dauer": "40 Min.",
+      "eldib": [],
+      "schlagworte": [
+        "Wut",
+        "Fallkarten",
+        "Zeitlupe",
+        "Rollenspiel",
+        "Förderfach"
+      ],
+      "bild": "icon:masks-theater",
+      "kurs": [
+        "ff6-e10"
+      ],
+      "de": {
+        "titel": "Wut-Fälle und Beobachtungskarten",
+        "untertitel": "Kopiervorlage zum Ausschneiden – für die Eisberg-Detektive und die Wut in Zeitlupe",
+        "bausteine": [
+          {
+            "art": "info",
+            "symbol": "merke",
+            "titel": "So werden die Karten gebraucht",
+            "punkte": [
+              "Jede Tischgruppe bekommt eine Fallkarte: zuerst für den Eisberg, dann für die Szene in Zeitlupe. Fall 6 ist Reserve.",
+              "Die spielende Gruppe bekommt die Karte „Regie“; jede zuschauende Gruppe eine Beobachtungskarte und achtet nur auf ihren Körperbereich.",
+              "Keine Berührung. Der Ausbruch wird nie gespielt – nach dem dritten Freeze ist Schluss."
+            ]
+          },
+          {
+            "art": "karten",
+            "spalten": 3,
+            "hoehe": 132,
+            "karten": [
+              {
+                "titel": "Fall 1 · Das Fußballspiel",
+                "text": "In der Pause werden Teams gewählt. Tiago bleibt als Letzter übrig. Einer sagt: „Dann nehmen wir halt den.“ Zwei lachen. Tiago schießt den Ball über den Zaun und geht."
+              },
+              {
+                "titel": "Fall 2 · Das Referat",
+                "text": "Mila hat drei Abende an ihrem Referat gearbeitet. Danach sagt der Lehrer vor allen: „Viel zu kurz. Nächstes Mal bitte mit etwas Mühe.“ Hinten kichert jemand. Mila knallt ihr Heft auf den Tisch."
+              },
+              {
+                "titel": "Fall 3 · Vergessen",
+                "text": "Yusuf soll nach dem Training abgeholt werden. Niemand kommt, sein Akku ist leer. Nach einer Stunde im Regen geht er zu Fuß nach Hause. Dort fragt sein kleiner Bruder, ob er mit ihm zockt. Yusuf brüllt ihn an."
+              },
+              {
+                "titel": "Fall 4 · Das Foto",
+                "text": "In der Pause lachen vier aus der Klasse über ein Handy. Léa sieht: Es ist ein Foto von ihr, im Bus eingeschlafen, mit offenem Mund. Einer sagt: „Das kommt in die Gruppe.“ Léa schreit: „Lösch das, du Idiot.“"
+              },
+              {
+                "titel": "Fall 5 · Die Bücher",
+                "text": "Im Flur fällt ein Stapel Bücher vom Wagen. Der Éducateur sieht nur Ana daneben: „Schon wieder du. Heb das sofort auf.“ Ana war es nicht. Hinter seinem Rücken grinst der, der es war. Ana tritt gegen den Wagen."
+              },
+              {
+                "titel": "Fall 6 · Das neue Handy",
+                "text": "Chiara hat zum Geburtstag ein neues Handy bekommen. In der Pause schnappt Ben es sich, hält es hoch und ruft: „Hol’s dir doch.“ Chiara schreit und versucht, es ihm aus der Hand zu reißen."
+              }
+            ]
+          },
+          {
+            "art": "karten",
+            "spalten": 3,
+            "hoehe": 100,
+            "karten": [
+              {
+                "titel": "Blick und Stirn",
+                "text": "Wohin schaut die Figur? Wird der Blick starr, oder weicht er aus? Zieht sich die Stirn zusammen?"
+              },
+              {
+                "titel": "Kiefer und Mund",
+                "text": "Beißt die Figur die Zähne zusammen? Werden die Lippen schmal? Arbeitet der Kiefer?"
+              },
+              {
+                "titel": "Schultern und Atem",
+                "text": "Gehen die Schultern hoch oder nach vorn? Wird der Atem schneller, flacher, lauter?"
+              },
+              {
+                "titel": "Hände und Arme",
+                "text": "Werden die Hände unruhig oder zu Fäusten? Verschränkt die Figur die Arme oder zeigt sie mit dem Finger?"
+              },
+              {
+                "titel": "Beine und Füße",
+                "text": "Steht die Figur fest, oder tritt sie von einem Fuß auf den anderen? Geht sie einen Schritt vor oder zurück?"
+              },
+              {
+                "titel": "Regie",
+                "text": "Lies die Fallkarte vor. Ruf dreimal „Freeze!“: beim ersten kleinen Zeichen, wenn es mehr wird, kurz vor dem Ausbruch. Dann: Schluss, raus aus der Rolle."
+              }
+            ]
+          }
+        ],
+        "lehrer": {
+          "ziel": "Erfundene Fälle für die Eisberg-Detektive und die Wut in Zeitlupe, dazu Karten, die das Beobachten der Körpersignale auf die Tischgruppen verteilen.",
+          "ablauf": [
+            "Einmal auf festes Papier kopieren und ausschneiden; Namen tauschen, falls jemand in der Klasse so heißt.",
+            "Einheit 10, Schritt 4: eine Fallkarte je Tischgruppe; Fall 6 ist Reserve.",
+            "Schritt 6: Die spielende Gruppe hat die Karte „Regie“, jede zuschauende Gruppe eine Beobachtungskarte."
+          ],
+          "hintergrund": "Erfundene Figuren schaffen Abstand: Die Jugendlichen sprechen über Scham, Kränkung und Ausbrüche, ohne Eigenes preiszugeben. In Zeitlupe werden die Körpersignale der Wut sichtbar, die sich vor allem in Kopf, Brust, Armen und Händen zeigen (Nummenmaa et al., 2014).",
+          "quellen": [
+            "Nummenmaa, L., Glerean, E., Hari, R. & Hietanen, J. K. (2014). Bodily maps of emotions. Proceedings of the National Academy of Sciences, 111(2), 646–651."
+          ],
+          "material": "Festes Papier, Schere"
+        }
+      },
+      "fr": {
+        "titel": "Cas de colère et cartes d’observation",
+        "untertitel": "Modèle à photocopier et à découper – pour les détectives de l’iceberg et la colère au ralenti",
+        "bausteine": [
+          {
+            "art": "info",
+            "symbol": "merke",
+            "titel": "Comment utiliser les cartes",
+            "punkte": [
+              "Chaque îlot reçoit une carte situation : d’abord pour l’iceberg, puis pour la scène au ralenti. Le cas 6 est une réserve.",
+              "Le groupe qui joue reçoit la carte « Mise en scène » ; chaque îlot spectateur reçoit une carte d’observation et ne regarde que sa zone du corps.",
+              "On ne se touche pas. L’explosion n’est jamais jouée – après le troisième arrêt sur image, c’est fini."
+            ]
+          },
+          {
+            "art": "karten",
+            "spalten": 3,
+            "hoehe": 132,
+            "karten": [
+              {
+                "titel": "Cas 1 · Le match de foot",
+                "text": "À la récré, on forme les équipes. Tiago reste le dernier. Un joueur dit : « Bon, on n’a qu’à le prendre, lui. » Deux autres rigolent. Tiago envoie le ballon par-dessus la grille et s’en va."
+              },
+              {
+                "titel": "Cas 2 · L’exposé",
+                "text": "Mila a travaillé trois soirs sur son exposé. Ensuite, le prof dit devant toute la classe : « Beaucoup trop court. La prochaine fois, fais un effort. » Au fond, quelqu’un ricane. Mila claque son cahier sur la table."
+              },
+              {
+                "titel": "Cas 3 · Oublié",
+                "text": "Quelqu’un devait venir chercher Yusuf après l’entraînement. Personne ne vient, sa batterie est à plat. Après une heure sous la pluie, il rentre à pied. À la maison, son petit frère lui demande de jouer à la console. Yusuf lui hurle dessus."
+              },
+              {
+                "titel": "Cas 4 · La photo",
+                "text": "À la récré, quatre élèves de la classe rigolent autour d’un portable. Léa voit que c’est une photo d’elle, endormie dans le bus, la bouche ouverte. L’un d’eux dit : « Ça, je la mets dans le groupe. » Léa crie : « Efface ça, espèce d’idiot. »"
+              },
+              {
+                "titel": "Cas 5 · Les livres",
+                "text": "Dans le couloir, une pile de livres tombe du chariot. L’éducateur ne voit qu’Ana à côté : « Encore toi. Ramasse ça, tout de suite. » Ce n’était pas elle. Derrière lui, celui qui l’a fait ricane. Ana donne un coup de pied dans le chariot."
+              },
+              {
+                "titel": "Cas 6 · Le nouveau portable",
+                "text": "Chiara a reçu un nouveau portable pour son anniversaire. À la récré, Ben le lui prend, le tient en l’air et lance : « Viens le chercher. » Chiara crie et essaie de le lui arracher des mains."
+              }
+            ]
+          },
+          {
+            "art": "karten",
+            "spalten": 3,
+            "hoehe": 100,
+            "karten": [
+              {
+                "titel": "Regard et front",
+                "text": "Où regarde le personnage ? Son regard se fige-t-il ou fuit-il ? Son front se plisse-t-il ?"
+              },
+              {
+                "titel": "Mâchoire et bouche",
+                "text": "Le personnage serre-t-il les dents ? Ses lèvres deviennent-elles minces ? Sa mâchoire travaille-t-elle ?"
+              },
+              {
+                "titel": "Épaules et respiration",
+                "text": "Les épaules montent-elles ou partent-elles vers l’avant ? La respiration devient-elle plus rapide, plus courte, plus bruyante ?"
+              },
+              {
+                "titel": "Mains et bras",
+                "text": "Les mains s’agitent-elles ou se ferment-elles en poings ? Le personnage croise-t-il les bras ou pointe-t-il du doigt ?"
+              },
+              {
+                "titel": "Jambes et pieds",
+                "text": "Le personnage est-il bien planté ou passe-t-il d’un pied à l’autre ? Fait-il un pas en avant ou en arrière ?"
+              },
+              {
+                "titel": "Mise en scène",
+                "text": "Lis la carte à voix haute. Lance trois fois « Arrêt sur image ! » : au premier petit signe, quand ça monte, juste avant l’explosion. Puis : fin, on sort du rôle."
+              }
+            ]
+          }
+        ],
+        "lehrer": {
+          "ziel": "Des cas inventés pour les détectives de l’iceberg et la colère au ralenti, avec des cartes qui répartissent l’observation des signaux du corps entre les îlots.",
+          "ablauf": [
+            "Photocopier une fois sur papier épais et découper ; changer un prénom si un jeune de la classe le porte.",
+            "Séance 10, étape 4 : une carte situation par îlot ; le cas 6 est une réserve.",
+            "Étape 6 : le groupe qui joue a la carte « Mise en scène », chaque îlot spectateur une carte d’observation."
+          ],
+          "hintergrund": "Des personnages inventés créent de la distance : les jeunes parlent de honte, de vexation et de crises de colère sans rien révéler d’eux-mêmes. Au ralenti, les signaux corporels de la colère deviennent visibles ; ils se manifestent surtout dans la tête, la poitrine, les bras et les mains (Nummenmaa et al., 2014).",
+          "quellen": [
+            "Nummenmaa, L., Glerean, E., Hari, R. & Hietanen, J. K. (2014). Bodily maps of emotions. Proceedings of the National Academy of Sciences, 111(2), 646–651."
+          ],
+          "material": "Papier épais, ciseaux"
+        }
+      }
+    }
+  ]
+}

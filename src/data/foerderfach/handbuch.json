@@ -1,9 +1,8 @@
 {
   "de": {
     "vorwort": {
-      "titel": "Zu diesem Entwurf",
-      "mitEinheit": "Dieses Heft zeigt Aufbau und Gestaltung des Lehrerhandbuchs für die {klasse}: die Grundlagen des Fachs, den Jahresplan, eine vollständig ausgearbeitete Einheit und die Kopiervorlagen für das Schülerheft. Das fertige Handbuch enthält alle 35 Einheiten in diesem Format.",
-      "ohneEinheit": "Dieses Heft zeigt Aufbau und Gestaltung des Lehrerhandbuchs für die {klasse}: die Grundlagen des Fachs, den Jahresplan und die Kopiervorlagen für jede Stunde. Die ausgearbeiteten Einheiten folgen im fertigen Handbuch – im selben Format wie die Muster-Einheit der 7e."
+      "titel": "So ist dieses Handbuch aufgebaut",
+      "text": "Teil A erklärt das Fach: Aufbau der Doppelstunde, Rahmen und Sicherheit, Methoden, Zusammenarbeit mit Eltern und Kollegium. Teil B zeigt den Jahresplan der {klasse}. Teil C enthält alle Einheiten des Jahres, Kapitel für Kapitel – jede mit Zielen, Material, Ablauf, Anleitung mit Beispielsätzen, Hinweisen für schwierige Momente, einer Kurzfassung für eine einzelne Stunde und den Kopiervorlagen direkt dahinter. Teil D enthält die Blätter, die das ganze Jahr gebraucht werden. Bei jedem Blatt steht die Seite im Schülerheft."
     },
     "ueberblick": {
       "titel": "Das Fach auf einen Blick",
@@ -233,9 +232,342 @@
         "text": "Das Fach wird nicht benotet. Die Jugendlichen halten nach jeder Stunde im Skills-Pass fest, was sie mitnehmen, und schätzen sich am Ende jedes Trimesters selbst ein. Die Lehrkraft gibt Rückmeldung zur Mitarbeit, nie zu Gefühlen oder Persönlichem."
       }
     },
+    "methoden": {
+      "titel": "Methodenkoffer",
+      "einleitung": "Die Einheiten sind vollständig ausgearbeitet. Der Methodenkoffer hilft, wenn etwas nicht passt: als Ersatz für eine Übung, als Zusatz, wenn Zeit übrig ist, und als Werkzeug, wenn die Klasse unruhig oder müde ist. Alle Methoden funktionieren mit zwanzig Jugendlichen im Klassenraum.",
+      "gruppen": [
+        {
+          "titel": "Check-in",
+          "wann": "0–10",
+          "text": "Der Klebepunkt am Gefühlsrad ist der Standard. Varianten bringen Abwechslung; ab dem zweiten Trimester der 7e kommt die Anspannung von 0 bis 100 immer dazu.",
+          "eintraege": [
+            {
+              "titel": "Gefühlsrad mit Klebepunkt",
+              "text": "Beim Hereinkommen klebt jede Person einen Punkt auf das Wort, das passt. Zwei oder drei Freiwillige sagen einen Satz dazu."
+            },
+            {
+              "titel": "Finger-Skala",
+              "text": "Auf drei zeigen alle gleichzeitig null bis zehn Finger – so hoch ist die Anspannung, mal zehn. Schnell und ohne Worte."
+            },
+            {
+              "titel": "Aufstellen an der Linie",
+              "text": "Klebeband am Boden: 0 an der Tür, 100 am Fenster. Alle stellen sich zu ihrer Zahl; wer mag, sagt, was sie nach oben oder unten treibt."
+            },
+            {
+              "titel": "Wetterbericht",
+              "text": "Mein inneres Wetter ist heute … – sonnig, bewölkt, Nebel, Gewitter. Austausch in der Tischgruppe, zwei Stimmen im Plenum."
+            },
+            {
+              "titel": "Akkustand",
+              "text": "Mein Akku steht bei … Prozent. Wer mag, sagt, was ihn heute geladen oder geleert hat."
+            },
+            {
+              "titel": "Zwei Gefühle",
+              "text": "Welche zwei Gefühle sind gerade gleichzeitig da? Passt ab dem Kapitel „Gefühle verstehen“."
+            }
+          ]
+        },
+        {
+          "titel": "Bewegungspause",
+          "wann": "45–50",
+          "text": "Fünf Minuten, im Raum oder auf dem Schulhof. Liegt die große Pause zwischen den beiden Stunden, entfällt sie.",
+          "eintraege": [
+            {
+              "titel": "Alle, die …",
+              "text": "Alle stehen hinter dem Stuhl. Wer sich angesprochen fühlt, setzt sich kurz und steht wieder auf. Nur harmlose Sätze."
+            },
+            {
+              "titel": "Stein, Papier, Schere mit Fanclub",
+              "text": "Alle spielen zu zweit. Wer verliert, wird Fan der Person, die gewonnen hat, und feuert sie im nächsten Duell an. Am Ende jubelt die Klasse zwei Personen zu."
+            },
+            {
+              "titel": "Zip Zap Boing",
+              "text": "In zwei Kreisen zu zehn wandert ein Klatschimpuls: Zip zur Nachbarin, Zap quer durch den Kreis, Boing zurück. Niemand scheidet aus."
+            },
+            {
+              "titel": "Spiegeln",
+              "text": "Zu zweit gegenüber: Eine Person bewegt sich langsam, die andere spiegelt, nach einer Minute wechseln. Ruhig und konzentrierend."
+            },
+            {
+              "titel": "Zählen bis 20",
+              "text": "Die Klasse zählt bis 20, jede Zahl sagt nur eine Person, ohne Absprache. Sprechen zwei gleichzeitig, geht es bei 1 los."
+            },
+            {
+              "titel": "Ja-Nein-Seiten",
+              "text": "Die Lehrkraft liest Aussagen vor, etwa „Pizza ist besser als Pasta“. Wer zustimmt, geht zur Fensterseite, sonst zur Türseite."
+            }
+          ]
+        },
+        {
+          "titel": "Skills zum Runterkommen",
+          "wann": "85–95",
+          "text": "Langsam anleiten, selbst mitmachen, danach fragen: Wann könnte das helfen?",
+          "eintraege": [
+            {
+              "titel": "5-4-3-2-1",
+              "text": "5 Dinge sehen, 4 hören, 3 spüren, 2 riechen, 1 schmecken – zwischen den Schritten Zeit lassen."
+            },
+            {
+              "titel": "Kastenatmung",
+              "text": "4 Sekunden ein, 4 halten, 4 aus, 4 halten. Wer das Halten unangenehm findet, lässt es weg."
+            },
+            {
+              "titel": "Anspannen und Loslassen",
+              "text": "Fäuste, Schultern und Gesicht fünf Sekunden fest anspannen, dann loslassen und den Unterschied spüren."
+            },
+            {
+              "titel": "Klangschale",
+              "text": "Schale anschlagen; alle heben die Hand, wenn der Ton ganz verklungen ist. Drei Durchgänge."
+            },
+            {
+              "titel": "Farbsuche",
+              "text": "Eine Farbe wählen und still alles im Raum finden, was diese Farbe hat."
+            },
+            {
+              "titel": "Kälte",
+              "text": "Kaltes Wasser über die Handgelenke oder ein Kühlpack in die Hand – hilft schnell bei sehr hoher Anspannung."
+            }
+          ]
+        },
+        {
+          "titel": "Abschluss",
+          "wann": "95–100",
+          "text": "Der Skills-Pass kommt immer. Davor eine kurze Runde, die zum Thema passt.",
+          "eintraege": [
+            {
+              "titel": "Blitzlicht",
+              "text": "Ein Wort pro Person, schnell und ohne Kommentar. Mit zwanzig dauert es zwei Minuten, wenn die Lehrkraft beginnt."
+            },
+            {
+              "titel": "Daumen",
+              "text": "Daumen hoch, in die Mitte oder runter – auf drei alle gleichzeitig."
+            },
+            {
+              "titel": "Koffer und Papierkorb",
+              "text": "Was packe ich ein, was lasse ich hier? Je ein Satz in der Tischgruppe."
+            },
+            {
+              "titel": "Ein Satz für alle",
+              "text": "Jede Tischgruppe einigt sich auf einen Satz zur Stunde und sagt ihn laut."
+            }
+          ]
+        },
+        {
+          "titel": "Gruppen bilden",
+          "text": "Zufall entlastet: Niemand bleibt übrig, niemand wird gewählt. Bei Konflikten oder wenn jemand geschützt werden muss, teilt die Lehrkraft offen selbst ein.",
+          "eintraege": [
+            {
+              "titel": "Abzählen",
+              "text": "Reihum von 1 bis 5 zählen; alle Einsen bilden eine Gruppe, alle Zweien die nächste."
+            },
+            {
+              "titel": "Karten ziehen",
+              "text": "Spielkarten mit gleicher Zahl oder gleichem Symbol bilden eine Gruppe."
+            },
+            {
+              "titel": "Postkarten-Puzzle",
+              "text": "Postkarten in vier Teile schneiden und ziehen lassen; wer zusammenpasst, arbeitet zusammen."
+            },
+            {
+              "titel": "Geburtstagsreihe",
+              "text": "Ohne Worte nach Geburtstag aufstellen und die Reihe in Vierergruppen teilen."
+            }
+          ]
+        },
+        {
+          "titel": "Wenn die Klasse unruhig ist",
+          "text": "Nicht lauter werden, sondern leiser und langsamer. Eine kurze Bewegung vor die nächste Denkaufgabe setzen, Anweisungen kurz halten.",
+          "eintraege": [
+            {
+              "titel": "Ruhesignal",
+              "text": "Hand heben: Wer es sieht, hebt auch die Hand und wird still. Nach zwei, drei Wochen wirkt es fast von selbst."
+            },
+            {
+              "titel": "Bewegung, dann Stille",
+              "text": "Eine Minute Hampelmann, dann eine Minute still sitzen und die Anspannung schätzen."
+            },
+            {
+              "titel": "Stilles Schreibgespräch",
+              "text": "Eine Frage in die Mitte eines Plakats je Tischgruppe; alle schreiben schweigend Antworten und Kommentare dazu. Fünf Minuten spricht niemand."
+            },
+            {
+              "titel": "Klangschale",
+              "text": "Hand heben, wenn der Ton weg ist – wirkt oft schneller als jede Ermahnung."
+            }
+          ]
+        },
+        {
+          "titel": "Wenn die Energie fehlt",
+          "text": "Müdigkeit ernst nehmen: Fenster auf, Wasser trinken, kurz aufstehen. Danach eine leichte Übung im Sitzen.",
+          "eintraege": [
+            {
+              "titel": "Musikrunde",
+              "text": "Drei Freiwillige spielen je 30 Sekunden eines Songs, der sie auflädt."
+            },
+            {
+              "titel": "Ball der Gefühle",
+              "text": "Einen weichen Ball zuwerfen; wer fängt, beantwortet eine leichte Frage, etwa: Was hat dich heute gefreut?"
+            },
+            {
+              "titel": "Gefühlsstatue",
+              "text": "Eine Person stellt ein Gefühl als Standbild dar, die anderen raten und sagen, woran sie es erkannt haben."
+            }
+          ]
+        },
+        {
+          "titel": "Wenn Zeit übrig bleibt",
+          "eintraege": [
+            {
+              "titel": "Positivitätskette",
+              "text": "Jede Person sagt der Person rechts, was ihr heute an ihr aufgefallen ist – über das, was sie tut, nicht über das Aussehen."
+            },
+            {
+              "titel": "Rücken an Rücken",
+              "text": "Zu zweit: Eine Person beschreibt ein einfaches Bild, die andere zeichnet es, ohne nachzufragen. Dann vergleichen und wechseln."
+            },
+            {
+              "titel": "Klassenrat",
+              "text": "Zehn Minuten Klassenrat: ein Anliegen aus dem Briefkasten besprechen und einen Beschluss festhalten."
+            },
+            {
+              "titel": "Skill wiederholen",
+              "text": "Die Klasse wählt einen Skill aus einer früheren Stunde, alle machen ihn zwei Minuten lang."
+            }
+          ]
+        }
+      ]
+    },
+    "eltern": {
+      "titel": "Eltern und Kollegium",
+      "einleitung": "Eltern und Kolleginnen und Kollegen sollen wissen, was im Fach geschieht – nicht, was einzelne Jugendliche dort erzählen. Ein kurzer Brief zu Beginn des Schuljahres und eine Information an das Kollegium schaffen Vertrauen und beugen Missverständnissen vor.",
+      "punkte": [
+        {
+          "titel": "Mit Direktion und SePAS abstimmen",
+          "text": "Vor dem ersten Brief klären: Wer ist im SePAS Ansprechperson, wie läuft das Schutzkonzept der Schule, welche Einheiten bereitet der SePAS mit vor?"
+        },
+        {
+          "titel": "Eltern vorab informieren",
+          "text": "Zu Beginn des Jahres mit dem Brief; vor sensiblen Einheiten – im Jahresplan markiert – noch einmal kurz, etwa über das Mitteilungsheft."
+        },
+        {
+          "titel": "In der Sprache der Familie",
+          "text": "Den Brief auf Deutsch oder auf Französisch mitgeben – beide Fassungen stehen in diesem Heft. Bei Bedarf ein Gespräch anbieten, gern mit einer Person, die übersetzt."
+        },
+        {
+          "titel": "Keine Einzelheiten weitergeben",
+          "text": "Fragen von Eltern auf Ziele und Methoden lenken. Was Jugendliche in der Stunde erzählen, bleibt in der Klasse – außer jemand ist in Gefahr."
+        },
+        {
+          "titel": "Skills im Unterricht erlauben",
+          "text": "Régent und Kollegium wissen, welche Skills die Klasse lernt, und erlauben sie auch in anderen Fächern: kurz atmen, ein Kühlpack, eine Minute vor der Tür in Sichtweite."
+        },
+        {
+          "titel": "Beobachtungen, keine Geschichten",
+          "text": "Was Lehrkräfte im Alltag sehen, darf in die Stunde einfließen („Mir fällt auf, dass es vor Tests laut wird“) – nie, was eine einzelne Person erzählt hat."
+        }
+      ],
+      "kollegium": {
+        "titel": "Kurzinfo für das Kollegium",
+        "text": "Ab [Datum] hat die Klasse [Klasse] jeden [Wochentag] eine Doppelstunde „Skills fir d’Liewen“. Die Jugendlichen lernen, Gefühle zu erkennen, mit Stress und Wut umzugehen, Konflikte fair zu lösen und gut zu entscheiden. Sie üben kleine Skills, etwa die Kastenatmung oder einen Stopp-Satz. Bitte erlauben Sie diese Skills auch in Ihrem Unterricht, wenn es passt. Fragen gern an [Name]."
+      }
+    },
+    "brief": {
+      "seite": "Elternbrief (Deutsch)",
+      "betreff": "Ein neues Fach für Ihr Kind: „Skills fir d’Liewen“",
+      "anrede": "Liebe Eltern, liebe Erziehungsberechtigte,",
+      "absaetze": [
+        "in diesem Schuljahr hat die Klasse Ihres Kindes jede Woche eine Doppelstunde im Fach „Skills fir d’Liewen“. Die Jugendlichen lernen dort Fertigkeiten, die im Alltag helfen: Gefühle erkennen und benennen, mit Stress und Wut umgehen, gut miteinander reden, Grenzen setzen, Konflikte fair lösen und verantwortlich entscheiden.",
+        "Das Fach wird nicht benotet. Gelernt wird durch Üben: in Gesprächen, Rollenspielen, mit Bewegung und kurzen Übungen zum Ruhigwerden. Niemand muss etwas Persönliches erzählen. Was in der Klasse erzählt wird, bleibt dort – außer ein Kind ist in Gefahr. Dann holt die Schule Hilfe, zum Beispiel beim SePAS.",
+        "Einige Stunden behandeln Themen wie Freundschaft und Liebe, Familie, Internet oder Alkohol und Drogen. Vor diesen Stunden informieren wir Sie noch einmal. Alle Materialien können Sie gern bei uns ansehen.",
+        "Ihr Kind bekommt ein Schülerheft, in das es während des Jahres schreibt. Das Heft gehört Ihrem Kind – bitte lesen Sie darin nur, wenn es Ihnen das Heft zeigt. Wenn Sie Fragen haben oder uns etwas mitteilen möchten, melden Sie sich gern."
+      ],
+      "gruss": "Mit freundlichen Grüßen",
+      "unterschrift": "[Name der Lehrkraft] · [Schule] · [Telefon oder E-Mail]",
+      "abschnitt": {
+        "titel": "Bitte ausfüllen und bis [Datum] zurückgeben",
+        "felder": [
+          "Name der oder des Jugendlichen",
+          "Klasse"
+        ],
+        "bestaetigung": "Ich habe den Brief über das Fach „Skills fir d’Liewen“ gelesen.",
+        "frage": "Was wir wissen sollten, zum Beispiel Allergien, Asthma oder eine schwierige Situation in der Familie (freiwillig):",
+        "unterschrift": "Datum und Unterschrift einer erziehungsberechtigten Person"
+      }
+    },
+    "material": {
+      "titel": "Material für das Jahr",
+      "einleitung": "Die Liste zu Beginn des Schuljahres einmal durchgehen. Was eine Einheit zusätzlich braucht, steht bei der Einheit unter „Material“.",
+      "gruppen": [
+        {
+          "titel": "Für jede Stunde",
+          "punkte": [
+            "Gefühlsrad als Plakat (A2 oder A3) und Klebepunkte",
+            "Anspannungsskala 0–100 als Plakat (7e ab Einheit 13, 6e und 5e das ganze Jahr)",
+            "Klassenvereinbarung als Plakat",
+            "Schülerhefte – einmal festlegen, ob sie in der Klasse bleiben",
+            "Stempel oder Sticker für den Skills-Pass",
+            "Klangschale oder ein anderes Ruhesignal"
+          ]
+        },
+        {
+          "titel": "Papier und Stifte",
+          "punkte": [
+            "Moderationskarten in mehreren Farben",
+            "Plakate (A2) oder Flipchart",
+            "dicke Filzstifte, Klebeband, Magnete",
+            "Briefumschläge"
+          ]
+        },
+        {
+          "titel": "Bewegung und Skills",
+          "punkte": [
+            "ein weicher Ball",
+            "Kühlpacks oder eine Schüssel für kaltes Wasser",
+            "Knetbälle",
+            "Riechdosen – nur nach Rückfrage wegen Allergien und Asthma",
+            "Lautsprecher für leise Musik"
+          ]
+        },
+        {
+          "titel": "Technik",
+          "punkte": [
+            "Beamer oder großer Bildschirm",
+            "ein gut sichtbarer Timer",
+            "Internet für die Medien-Einheiten",
+            "Vorführrechte für Filme (Schullizenz) klären"
+          ]
+        },
+        {
+          "titel": "Aufbewahren bis zum Schuljahresende",
+          "punkte": [
+            "die Plakate der Klasse",
+            "7e: Klassenrat-Briefkasten, Glas der Bedürfnisse, Plakat „Was sind Skills?“",
+            "Schülerhefte – sie gehören den Jugendlichen und gehen am Ende mit nach Hause"
+          ]
+        }
+      ]
+    },
     "plaene": {
       "titel": "Die Jahrespläne",
       "einleitung": "Jedes Jahr hat 35 Einheiten für rund 36 Schulwochen. Wahleinheiten vertiefen ein Thema; fallen Stunden aus, entfallen zuerst sie. Die Kapitel bauen aufeinander auf – ihre Reihenfolge sollte bleiben."
+    },
+    "jahresweg": {
+      "titel": "Der Jahresweg",
+      "text": "Kopiervorlage für ein Plakat: auf A3 vergrößern und im Raum aufhängen. Nach jedem Kapitel markiert die Klasse, wo sie steht – mit einem Klebepunkt oder einer Wäscheklammer. So sieht sie, was sie schon geschafft hat.",
+      "plakat": "Unser Weg durch die {klasse}"
+    },
+    "glossar": {
+      "titel": "Glossar Deutsch – Französisch",
+      "text": "Die Wörter aus den Wortspeichern der Einheiten – für Klassen, die in beiden Sprachen lernen, und für Lehrkräfte, die eine Einheit in der anderen Sprache halten. Die Zahl nennt die Einheit, in der das Wort vorkommt."
+    },
+    "heft": {
+      "inhalt": "Inhalt",
+      "jedeStunde": "Für jede Stunde",
+      "woerter": "Meine Wörter",
+      "woerterText": "Die wichtigsten Wörter aus den Stunden – auf Deutsch und auf Französisch.",
+      "hilfeTitel": "Hier bekommst du Hilfe",
+      "hilfeText": "Im Lycée hört dir der SePAS zu. Du kannst auch anonym und kostenlos anrufen:",
+      "notizen": "Meine Notizen"
     },
     "rueckseite": {
       "titel": "Drei Jahre, ein roter Faden",
@@ -245,9 +577,8 @@
   },
   "fr": {
     "vorwort": {
-      "titel": "À propos de ce projet",
-      "mitEinheit": "Ce cahier présente la structure et la mise en page du guide de l’enseignant pour la {klasse} : les bases de la matière, le plan annuel, une séance entièrement rédigée et les modèles à photocopier pour le cahier de l’élève. Le guide définitif contiendra les 35 séances dans ce format.",
-      "ohneEinheit": "Ce cahier présente la structure et la mise en page du guide de l’enseignant pour la {klasse} : les bases de la matière, le plan annuel et les modèles à photocopier utilisés à chaque séance. Les séances rédigées suivront dans le guide définitif, dans le même format que la séance modèle de la 7e."
+      "titel": "Comment ce guide est organisé",
+      "text": "La partie A présente la matière : déroulement de la séance, cadre et sécurité, méthodes, collaboration avec les parents et les collègues. La partie B présente le plan annuel de la {klasse}. La partie C contient toutes les séances de l’année, chapitre par chapitre – chacune avec ses objectifs, le matériel, le déroulement, des consignes avec des exemples de phrases, des conseils pour les moments difficiles, une version courte pour une seule heure et, juste après, les modèles à photocopier. La partie D réunit les fiches utilisées toute l’année. Pour chaque fiche, la page du cahier de l’élève est indiquée."
     },
     "ueberblick": {
       "titel": "La matière en bref",
@@ -477,9 +808,342 @@
         "text": "La matière n’est pas notée. Après chaque séance, les jeunes notent dans le Skills-Pass ce qu’ils emportent, et ils s’auto-évaluent à la fin de chaque trimestre. L’enseignant·e donne un retour sur la participation, jamais sur les émotions ou la vie personnelle."
       }
     },
+    "methoden": {
+      "titel": "Boîte à outils",
+      "einleitung": "Les séances sont entièrement rédigées. La boîte à outils sert quand quelque chose ne convient pas : pour remplacer une activité, pour compléter quand il reste du temps, et comme outil quand la classe est agitée ou fatiguée. Toutes ces méthodes fonctionnent avec vingt jeunes en salle de classe.",
+      "gruppen": [
+        {
+          "titel": "Tour d’humeur",
+          "wann": "0–10",
+          "text": "La gommette sur la roue des émotions est la règle. Les variantes apportent du changement ; à partir du deuxième trimestre de la 7e, la tension de 0 à 100 s’y ajoute toujours.",
+          "eintraege": [
+            {
+              "titel": "Roue des émotions et gommette",
+              "text": "En entrant, chaque jeune colle une gommette sur le mot qui lui correspond. Deux ou trois volontaires ajoutent une phrase."
+            },
+            {
+              "titel": "Échelle des doigts",
+              "text": "À trois, tout le monde montre en même temps de zéro à dix doigts – c’est le niveau de tension, fois dix. Rapide et sans paroles."
+            },
+            {
+              "titel": "Se placer sur la ligne",
+              "text": "Du ruban adhésif au sol : 0 à la porte, 100 à la fenêtre. Chacun se place à son chiffre ; qui veut dit ce qui le fait monter ou descendre."
+            },
+            {
+              "titel": "Bulletin météo",
+              "text": "Aujourd’hui, mon temps intérieur est… – ensoleillé, nuageux, brouillard, orage. Échange en îlots, deux voix en classe entière."
+            },
+            {
+              "titel": "Niveau de batterie",
+              "text": "Ma batterie est à … pour cent. Qui veut dit ce qui l’a rechargée ou vidée aujourd’hui."
+            },
+            {
+              "titel": "Deux émotions",
+              "text": "Quelles deux émotions sont là en même temps ? Convient à partir du chapitre « Comprendre les émotions »."
+            }
+          ]
+        },
+        {
+          "titel": "Pause active",
+          "wann": "45–50",
+          "text": "Cinq minutes, en classe ou dans la cour. Si la grande récréation tombe entre les deux heures, elle est supprimée.",
+          "eintraege": [
+            {
+              "titel": "Debout, assis",
+              "text": "Tout le monde est debout derrière sa chaise. Qui se sent concerné s’assoit un instant, puis se relève. Uniquement des phrases anodines."
+            },
+            {
+              "titel": "Pierre, papier, ciseaux avec supporters",
+              "text": "Tout le monde joue à deux. Qui perd devient supporter du gagnant et l’encourage au duel suivant. À la fin, toute la classe acclame deux personnes."
+            },
+            {
+              "titel": "Zip Zap Boing",
+              "text": "En deux cercles de dix, un clap circule : Zip au voisin, Zap à travers le cercle, Boing pour renvoyer. Personne n’est éliminé."
+            },
+            {
+              "titel": "Le miroir",
+              "text": "À deux, face à face : l’un bouge lentement, l’autre imite ; on change après une minute. Calme et concentration."
+            },
+            {
+              "titel": "Compter jusqu’à 20",
+              "text": "La classe compte jusqu’à 20, chaque nombre est dit par une seule personne, sans se concerter. Si deux parlent en même temps, on recommence à 1."
+            },
+            {
+              "titel": "Côté oui, côté non",
+              "text": "Lire des affirmations, par exemple « La pizza, c’est mieux que les pâtes ». Qui est d’accord va côté fenêtre, les autres côté porte."
+            }
+          ]
+        },
+        {
+          "titel": "Skills pour se calmer",
+          "wann": "85–95",
+          "text": "Guider lentement, participer soi-même, puis demander : quand est-ce que ça pourrait aider ?",
+          "eintraege": [
+            {
+              "titel": "5-4-3-2-1",
+              "text": "5 choses que l’on voit, 4 que l’on entend, 3 que l’on sent sur sa peau, 2 que l’on sent avec le nez, 1 que l’on goûte – laisser du temps entre les étapes."
+            },
+            {
+              "titel": "Respiration carrée",
+              "text": "Inspirer 4 secondes, retenir 4, expirer 4, retenir 4. Qui n’aime pas retenir son souffle laisse cette étape de côté."
+            },
+            {
+              "titel": "Contracter et relâcher",
+              "text": "Serrer fort les poings, les épaules et le visage pendant cinq secondes, puis relâcher et sentir la différence."
+            },
+            {
+              "titel": "Bol chantant",
+              "text": "Faire sonner le bol ; chacun lève la main quand le son a complètement disparu. Trois fois."
+            },
+            {
+              "titel": "Chasse aux couleurs",
+              "text": "Choisir une couleur et repérer en silence tout ce qui a cette couleur dans la salle."
+            },
+            {
+              "titel": "Le froid",
+              "text": "De l’eau froide sur les poignets ou une poche de froid dans la main – aide vite quand la tension est très haute."
+            }
+          ]
+        },
+        {
+          "titel": "Clôture",
+          "wann": "95–100",
+          "text": "Le Skills-Pass vient toujours. Avant, un court tour en lien avec le thème.",
+          "eintraege": [
+            {
+              "titel": "Tour éclair",
+              "text": "Un mot par personne, vite et sans commentaire. À vingt, cela prend deux minutes si l’enseignant·e commence."
+            },
+            {
+              "titel": "Pouce",
+              "text": "Pouce en haut, au milieu ou en bas – à trois, tout le monde en même temps."
+            },
+            {
+              "titel": "Valise et corbeille",
+              "text": "Qu’est-ce que j’emporte, qu’est-ce que je laisse ici ? Une phrase chacun, en îlot."
+            },
+            {
+              "titel": "Une phrase pour tous",
+              "text": "Chaque îlot se met d’accord sur une phrase sur la séance et la dit à voix haute."
+            }
+          ]
+        },
+        {
+          "titel": "Former des groupes",
+          "text": "Le hasard soulage : personne ne reste seul, personne n’est choisi en dernier. En cas de conflit ou si quelqu’un doit être protégé, l’enseignant·e forme les groupes en le disant ouvertement.",
+          "eintraege": [
+            {
+              "titel": "Compter",
+              "text": "Compter à tour de rôle de 1 à 5 ; tous les 1 forment un groupe, tous les 2 le suivant."
+            },
+            {
+              "titel": "Tirer des cartes",
+              "text": "Les cartes à jouer de même valeur ou de même symbole forment un groupe."
+            },
+            {
+              "titel": "Puzzle de cartes postales",
+              "text": "Couper des cartes postales en quatre morceaux et les faire tirer ; ceux qui vont ensemble travaillent ensemble."
+            },
+            {
+              "titel": "Ligne des anniversaires",
+              "text": "Se mettre en ligne par date d’anniversaire sans parler, puis découper la ligne en groupes de quatre."
+            }
+          ]
+        },
+        {
+          "titel": "Quand la classe est agitée",
+          "text": "Ne pas parler plus fort, mais plus bas et plus lentement. Placer un court mouvement avant la prochaine tâche de réflexion, donner des consignes brèves.",
+          "eintraege": [
+            {
+              "titel": "Signal de calme",
+              "text": "Lever la main : qui la voit lève aussi la main et se tait. Après deux ou trois semaines, cela marche presque tout seul."
+            },
+            {
+              "titel": "Bouger, puis silence",
+              "text": "Une minute de sauts, puis une minute assis en silence en estimant sa tension."
+            },
+            {
+              "titel": "Discussion muette",
+              "text": "Une question au centre d’une affiche par îlot ; chacun écrit en silence réponses et commentaires. Personne ne parle pendant cinq minutes."
+            },
+            {
+              "titel": "Bol chantant",
+              "text": "Lever la main quand le son a disparu – souvent plus efficace qu’un rappel à l’ordre."
+            }
+          ]
+        },
+        {
+          "titel": "Quand l’énergie manque",
+          "text": "Prendre la fatigue au sérieux : ouvrir la fenêtre, boire de l’eau, se lever un instant. Ensuite, une activité légère, assis.",
+          "eintraege": [
+            {
+              "titel": "Tour musical",
+              "text": "Trois volontaires font écouter chacun 30 secondes d’une chanson qui leur donne de l’énergie."
+            },
+            {
+              "titel": "Balle des émotions",
+              "text": "Lancer une balle souple ; qui l’attrape répond à une question simple, par exemple : qu’est-ce qui t’a fait plaisir aujourd’hui ?"
+            },
+            {
+              "titel": "Statue d’émotion",
+              "text": "Une personne représente une émotion en image figée, les autres devinent et disent à quoi ils l’ont reconnue."
+            }
+          ]
+        },
+        {
+          "titel": "Quand il reste du temps",
+          "eintraege": [
+            {
+              "titel": "Chaîne positive",
+              "text": "Chacun dit à son voisin de droite ce qu’il a remarqué chez lui aujourd’hui – sur ce qu’il fait, pas sur son apparence."
+            },
+            {
+              "titel": "Dos à dos",
+              "text": "À deux : l’un décrit une image simple, l’autre la dessine sans poser de questions. Puis comparer et échanger les rôles."
+            },
+            {
+              "titel": "Conseil de coopération",
+              "text": "Dix minutes de conseil : discuter d’une demande de la boîte aux lettres et noter une décision."
+            },
+            {
+              "titel": "Refaire un skill",
+              "text": "La classe choisit un skill d’une séance précédente, tout le monde le pratique pendant deux minutes."
+            }
+          ]
+        }
+      ]
+    },
+    "eltern": {
+      "titel": "Parents et collègues",
+      "einleitung": "Les parents et les collègues doivent savoir ce qui se passe dans cette matière – pas ce que chaque jeune y raconte. Une courte lettre en début d’année et une information aux collègues créent la confiance et évitent les malentendus.",
+      "punkte": [
+        {
+          "titel": "Se concerter avec la direction et le SePAS",
+          "text": "Avant la première lettre, clarifier : qui est la personne de contact au SePAS, comment fonctionne le protocole de protection de l’école, quelles séances le SePAS prépare avec vous ?"
+        },
+        {
+          "titel": "Informer les parents à l’avance",
+          "text": "En début d’année avec la lettre ; avant les séances sensibles – signalées dans le plan annuel – encore une fois brièvement, par exemple par le carnet de liaison."
+        },
+        {
+          "titel": "Dans la langue de la famille",
+          "text": "Donner la lettre en allemand ou en français – les deux versions figurent dans ce guide. Si nécessaire, proposer un entretien, volontiers avec une personne qui traduit."
+        },
+        {
+          "titel": "Ne pas transmettre de détails",
+          "text": "Ramener les questions des parents aux objectifs et aux méthodes. Ce que les jeunes racontent en séance reste dans la classe – sauf si quelqu’un est en danger."
+        },
+        {
+          "titel": "Autoriser les skills en classe",
+          "text": "Le régent et les collègues savent quels skills la classe apprend et les autorisent aussi dans les autres cours : respirer un instant, une poche de froid, une minute devant la porte, à portée de vue."
+        },
+        {
+          "titel": "Des observations, pas des histoires",
+          "text": "Ce que les enseignants voient au quotidien peut nourrir la séance (« Je remarque que c’est bruyant avant les devoirs en classe ») – jamais ce qu’un jeune a raconté."
+        }
+      ],
+      "kollegium": {
+        "titel": "Information pour les collègues",
+        "text": "À partir du [date], la classe [classe] a chaque [jour] une séance de deux heures de « Skills fir d’Liewen ». Les jeunes apprennent à reconnaître leurs émotions, à gérer le stress et la colère, à régler les conflits de façon juste et à bien décider. Ils s’exercent à de petits skills, comme la respiration carrée ou une phrase stop. Merci de les autoriser aussi dans votre cours quand cela s’y prête. Pour toute question : [nom]."
+      }
+    },
+    "brief": {
+      "seite": "Lettre aux parents (français)",
+      "betreff": "Une nouvelle matière pour votre enfant : « Skills fir d’Liewen »",
+      "anrede": "Chers parents, chères personnes responsables,",
+      "absaetze": [
+        "cette année, la classe de votre enfant a chaque semaine une séance de deux heures de « Skills fir d’Liewen ». Les jeunes y apprennent des savoir-faire utiles au quotidien : reconnaître et nommer leurs émotions, gérer le stress et la colère, bien communiquer, poser des limites, régler les conflits de façon juste et prendre des décisions responsables.",
+        "Cette matière n’est pas notée. On apprend en s’exerçant : échanges, jeux de rôle, mouvement et courts exercices pour se calmer. Personne n’est obligé de raconter quelque chose de personnel. Ce qui est dit en classe reste en classe – sauf si un enfant est en danger. L’école cherche alors de l’aide, par exemple auprès du SePAS.",
+        "Certaines séances abordent des sujets comme l’amitié et l’amour, la famille, Internet, l’alcool ou les drogues. Avant ces séances, nous vous informerons à nouveau. Vous pouvez consulter tout le matériel auprès de nous.",
+        "Votre enfant reçoit un cahier dans lequel il écrit tout au long de l’année. Ce cahier lui appartient – merci de ne le lire que s’il vous le montre. Si vous avez des questions ou souhaitez nous signaler quelque chose, n’hésitez pas à nous contacter."
+      ],
+      "gruss": "Avec nos salutations les meilleures",
+      "unterschrift": "[Nom de l’enseignant·e] · [Lycée] · [téléphone ou courriel]",
+      "abschnitt": {
+        "titel": "À remplir et à rendre avant le [date]",
+        "felder": [
+          "Nom du jeune",
+          "Classe"
+        ],
+        "bestaetigung": "J’ai lu la lettre sur la matière « Skills fir d’Liewen ».",
+        "frage": "Ce que nous devrions savoir, par exemple allergies, asthme ou situation familiale difficile (facultatif) :",
+        "unterschrift": "Date et signature d’une personne responsable"
+      }
+    },
+    "material": {
+      "titel": "Le matériel de l’année",
+      "einleitung": "Parcourir la liste une fois en début d’année. Ce dont une séance a besoin en plus figure dans la séance, sous « Matériel ».",
+      "gruppen": [
+        {
+          "titel": "Pour chaque séance",
+          "punkte": [
+            "Roue des émotions en affiche (A2 ou A3) et gommettes",
+            "Échelle de tension 0–100 en affiche (7e à partir de la séance 13, 6e et 5e toute l’année)",
+            "Charte de classe en affiche",
+            "Cahiers de l’élève – décider une fois s’ils restent en classe",
+            "Tampon ou autocollants pour le Skills-Pass",
+            "Bol chantant ou autre signal de calme"
+          ]
+        },
+        {
+          "titel": "Papier et feutres",
+          "punkte": [
+            "Cartes de plusieurs couleurs",
+            "Affiches (A2) ou tableau de papier",
+            "Gros feutres, ruban adhésif, aimants",
+            "Enveloppes"
+          ]
+        },
+        {
+          "titel": "Mouvement et skills",
+          "punkte": [
+            "une balle souple",
+            "des poches de froid ou un bol pour l’eau froide",
+            "des balles anti-stress",
+            "des boîtes à odeurs – seulement après avoir vérifié allergies et asthme",
+            "une enceinte pour une musique douce"
+          ]
+        },
+        {
+          "titel": "Technique",
+          "punkte": [
+            "projecteur ou grand écran",
+            "un minuteur bien visible",
+            "Internet pour les séances sur les médias",
+            "vérifier les droits de projection des films (licence de l’école)"
+          ]
+        },
+        {
+          "titel": "À garder jusqu’à la fin de l’année",
+          "punkte": [
+            "les affiches de la classe",
+            "7e : boîte aux lettres du conseil, bocal des besoins, affiche « C’est quoi, un skill ? »",
+            "les cahiers de l’élève – ils appartiennent aux jeunes et partent avec eux à la fin de l’année"
+          ]
+        }
+      ]
+    },
     "plaene": {
       "titel": "Les plans annuels",
       "einleitung": "Chaque année compte 35 séances pour environ 36 semaines de cours. Les séances au choix approfondissent un thème ; si des heures tombent, elles sautent en premier. Les chapitres s’enchaînent – leur ordre devrait être respecté."
+    },
+    "jahresweg": {
+      "titel": "Le chemin de l’année",
+      "text": "Modèle pour une affiche : agrandir en A3 et l’accrocher dans la salle. Après chaque chapitre, la classe marque où elle en est – avec une gommette ou une pince à linge. Elle voit ainsi le chemin déjà parcouru.",
+      "plakat": "Notre chemin en {klasse}"
+    },
+    "glossar": {
+      "titel": "Glossaire français – allemand",
+      "text": "Les mots clés des séances – pour les classes qui apprennent dans les deux langues et pour les enseignant·es qui mènent une séance dans l’autre langue. Le numéro indique la séance où le mot apparaît."
+    },
+    "heft": {
+      "inhalt": "Sommaire",
+      "jedeStunde": "Pour chaque séance",
+      "woerter": "Mes mots",
+      "woerterText": "Les mots les plus importants des séances – en français et en allemand.",
+      "hilfeTitel": "Ici, tu trouves de l’aide",
+      "hilfeText": "Au lycée, le SePAS est là pour t’écouter. Tu peux aussi appeler, de façon anonyme et gratuite :",
+      "notizen": "Mes notes"
     },
     "rueckseite": {
       "titel": "Trois ans, un fil rouge",

@@ -4,7 +4,37 @@
       "id": "ff7-e01",
       "klasse": "7e",
       "dauer": 100,
-      "blaetter": ["ff-klassenvereinbarung", "ff-gefuehlsrad", "ff-skills-pass"],
+      "blaetter": [
+        "ff-klassenvereinbarung",
+        "ff-gefuehlsrad",
+        "ff-skills-pass"
+      ],
+      "woerter": [
+        {
+          "de": "die Fertigkeit (der Skill)",
+          "fr": "le savoir-faire (le skill)"
+        },
+        {
+          "de": "die Klassenvereinbarung",
+          "fr": "la charte de classe"
+        },
+        {
+          "de": "die Regel",
+          "fr": "la règle"
+        },
+        {
+          "de": "das Gefühl",
+          "fr": "l’émotion"
+        },
+        {
+          "de": "vertraulich",
+          "fr": "confidentiel"
+        },
+        {
+          "de": "unterschreiben",
+          "fr": "signer"
+        }
+      ],
       "de": {
         "titel": "Willkommen im Fach – unser Rahmen",
         "kurz": "Die Klasse lernt das neue Fach und seine Rituale kennen, stellt gemeinsam ihre Klassenvereinbarung auf und probiert den ersten Skill aus.",
@@ -30,14 +60,46 @@
           "Den Satz zur Vertraulichkeit (Schülerheft, Klassenvereinbarung) einmal laut lesen, damit er sicher sitzt"
         ],
         "ablauf": [
-          { "min": "0–10", "phase": "ankommen", "titel": "Aufstellen ohne Worte" },
-          { "min": "10–25", "phase": "input", "titel": "Was sind Skills? Das Fach und der Jahresweg" },
-          { "min": "25–45", "phase": "uebung", "titel": "Klassenvereinbarung 1: sammeln und gewichten" },
-          { "min": "45–50", "phase": "aktiv", "titel": "Bewegungspause: Alle, die …" },
-          { "min": "50–65", "phase": "uebung", "titel": "Klassenvereinbarung 2: formulieren und unterschreiben" },
-          { "min": "65–80", "phase": "uebung", "titel": "Das Gefühlsrad und der erste Check-in" },
-          { "min": "80–90", "phase": "skill", "titel": "Skill: 5-4-3-2-1" },
-          { "min": "90–100", "phase": "abschluss", "titel": "Skills-Pass und Blitzlicht" }
+          {
+            "min": "0–10",
+            "phase": "ankommen",
+            "titel": "Aufstellen ohne Worte"
+          },
+          {
+            "min": "10–25",
+            "phase": "input",
+            "titel": "Was sind Skills? Das Fach und der Jahresweg"
+          },
+          {
+            "min": "25–45",
+            "phase": "uebung",
+            "titel": "Klassenvereinbarung 1: sammeln und gewichten"
+          },
+          {
+            "min": "45–50",
+            "phase": "aktiv",
+            "titel": "Bewegungspause: Alle, die …"
+          },
+          {
+            "min": "50–65",
+            "phase": "uebung",
+            "titel": "Klassenvereinbarung 2: formulieren und unterschreiben"
+          },
+          {
+            "min": "65–80",
+            "phase": "uebung",
+            "titel": "Das Gefühlsrad und der erste Check-in"
+          },
+          {
+            "min": "80–90",
+            "phase": "skill",
+            "titel": "Skill: 5-4-3-2-1"
+          },
+          {
+            "min": "90–100",
+            "phase": "abschluss",
+            "titel": "Skills-Pass und Blitzlicht"
+          }
         ],
         "schritte": [
           {
@@ -62,18 +124,51 @@
               "Ihr habt alle schon Skills. Hier lernt ihr neue dazu – und wann welcher passt."
             ],
             "tabelle": {
-              "spalten": ["Kapitel", "Leitfrage"],
+              "spalten": [
+                "Kapitel",
+                "Leitfrage"
+              ],
               "zeilen": [
-                ["1 Ankommen", "Wer sind wir als Klasse?"],
-                ["2 Wer bin ich?", "Was brauche ich, was kann ich?"],
-                ["3 Gefühle verstehen", "Was fühle ich – und wozu?"],
-                ["4 Gefühle regulieren", "Was hilft mir, wenn es zu viel wird?"],
-                ["5 Kommunikation und Grenzen", "Wie sage ich, was ich fühle und brauche?"],
-                ["6 Wenn es schwierig wird", "Was tue ich bei Streit, Gruppendruck und Mobbing?"],
-                ["7 Digitale Welt", "Was macht das Handy mit mir?"],
-                ["8 Meine Gedanken", "Was denke ich über mich – und stimmt das?"],
-                ["9 Gesund und stark", "Wie sorge ich für mich?"],
-                ["10 Abschluss", "Was nehme ich mit?"]
+                [
+                  "1 Ankommen",
+                  "Wer sind wir als Klasse?"
+                ],
+                [
+                  "2 Wer bin ich?",
+                  "Was brauche ich, was kann ich?"
+                ],
+                [
+                  "3 Gefühle verstehen",
+                  "Was fühle ich – und wozu?"
+                ],
+                [
+                  "4 Gefühle regulieren",
+                  "Was hilft mir, wenn es zu viel wird?"
+                ],
+                [
+                  "5 Kommunikation und Grenzen",
+                  "Wie sage ich, was ich fühle und brauche?"
+                ],
+                [
+                  "6 Wenn es schwierig wird",
+                  "Was tue ich bei Streit, Gruppendruck und Mobbing?"
+                ],
+                [
+                  "7 Digitale Welt",
+                  "Was macht das Handy mit mir?"
+                ],
+                [
+                  "8 Meine Gedanken",
+                  "Was denke ich über mich – und stimmt das?"
+                ],
+                [
+                  "9 Gesund und stark",
+                  "Wie sorge ich für mich?"
+                ],
+                [
+                  "10 Abschluss",
+                  "Was nehme ich mit?"
+                ]
               ]
             },
             "tipp": "Auch Scherzantworten wie „zocken“ oder „schlafen“ aufschreiben: Ablenkung und Ruhe sind echte Skills – nur helfen sie nicht in jeder Lage.",
@@ -173,7 +268,12 @@
           "Durlak, J. A., Weissberg, R. P., Dymnicki, A. B., Taylor, R. D. & Schellinger, K. B. (2011). The impact of enhancing students’ social and emotional learning: A meta-analysis of school-based universal interventions. Child Development, 82(1), 405–432.",
           "Yeager, D. S. (2017). Social and emotional learning programs for adolescents. The Future of Children, 27(1), 73–94."
         ],
-        "achtung": "Die Grenzen der Vertraulichkeit von Anfang an offen nennen. Erzählt jemand von Gewalt, Missbrauch, Selbstverletzung oder Suizidgedanken, das nicht vor der Klasse vertiefen: nach der Stunde das Gespräch unter vier Augen suchen, noch am selben Tag den SePAS informieren und nach dem Schutzkonzept der Schule handeln. Die Lehrkraft muss das nicht allein klären."
+        "achtung": "Die Grenzen der Vertraulichkeit von Anfang an offen nennen. Erzählt jemand von Gewalt, Missbrauch, Selbstverletzung oder Suizidgedanken, das nicht vor der Klasse vertiefen: nach der Stunde das Gespräch unter vier Augen suchen, noch am selben Tag den SePAS informieren und nach dem Schutzkonzept der Schule handeln. Die Lehrkraft muss das nicht allein klären.",
+        "differenzierung": {
+          "leichter": "Für Jugendliche, die sich mit dem Schreiben schwertun: Regeln mündlich sammeln, die Lehrkraft schreibt; im Heft reicht es, die fünf Regeln abzuschreiben. Beim Gefühlsrad nur die sechs Grundgefühle in der Mitte nutzen.",
+          "schwerer": "Die Tischgruppen formulieren zu jeder Regel ein Beispiel, woran man merkt, dass sie eingehalten wird, und schlagen vor, wie die Klasse Regelverstöße im Klassenrat bespricht."
+        },
+        "kurzfassung": "Bleibt nur eine Stunde: Aufstellen ohne Worte (5 Min.), Klassenvereinbarung sammeln, gewichten und unterschreiben (30 Min.), Skills-Pass und Blitzlicht (10 Min.), zum Schluss 5-4-3-2-1 (5 Min.). Gefühlsrad und Jahresweg in der nächsten Stunde nachholen."
       },
       "fr": {
         "titel": "Bienvenue – notre cadre",
@@ -200,14 +300,46 @@
           "Lire une fois à voix haute la phrase sur la confidentialité (cahier de l’élève, charte) pour bien la maîtriser"
         ],
         "ablauf": [
-          { "min": "0–10", "phase": "ankommen", "titel": "En ligne sans un mot" },
-          { "min": "10–25", "phase": "input", "titel": "C’est quoi, un skill ? La matière et l’année" },
-          { "min": "25–45", "phase": "uebung", "titel": "Charte 1 : rassembler et choisir" },
-          { "min": "45–50", "phase": "aktiv", "titel": "Pause active : debout, assis" },
-          { "min": "50–65", "phase": "uebung", "titel": "Charte 2 : formuler et signer" },
-          { "min": "65–80", "phase": "uebung", "titel": "La roue des émotions et le premier tour d’humeur" },
-          { "min": "80–90", "phase": "skill", "titel": "Skill : 5-4-3-2-1" },
-          { "min": "90–100", "phase": "abschluss", "titel": "Skills-Pass et tour éclair" }
+          {
+            "min": "0–10",
+            "phase": "ankommen",
+            "titel": "En ligne sans un mot"
+          },
+          {
+            "min": "10–25",
+            "phase": "input",
+            "titel": "C’est quoi, un skill ? La matière et l’année"
+          },
+          {
+            "min": "25–45",
+            "phase": "uebung",
+            "titel": "Charte 1 : rassembler et choisir"
+          },
+          {
+            "min": "45–50",
+            "phase": "aktiv",
+            "titel": "Pause active : debout, assis"
+          },
+          {
+            "min": "50–65",
+            "phase": "uebung",
+            "titel": "Charte 2 : formuler et signer"
+          },
+          {
+            "min": "65–80",
+            "phase": "uebung",
+            "titel": "La roue des émotions et le premier tour d’humeur"
+          },
+          {
+            "min": "80–90",
+            "phase": "skill",
+            "titel": "Skill : 5-4-3-2-1"
+          },
+          {
+            "min": "90–100",
+            "phase": "abschluss",
+            "titel": "Skills-Pass et tour éclair"
+          }
         ],
         "schritte": [
           {
@@ -232,18 +364,51 @@
               "Vous avez tous déjà des skills. Ici, vous en apprenez de nouveaux – et vous découvrez lequel convient à quel moment."
             ],
             "tabelle": {
-              "spalten": ["Chapitre", "Question clé"],
+              "spalten": [
+                "Chapitre",
+                "Question clé"
+              ],
               "zeilen": [
-                ["1 Arriver", "Qui sommes-nous en tant que classe ?"],
-                ["2 Qui suis-je ?", "De quoi ai-je besoin, qu’est-ce que je sais faire ?"],
-                ["3 Comprendre les émotions", "Qu’est-ce que je ressens – et à quoi ça sert ?"],
-                ["4 Réguler ses émotions", "Qu’est-ce qui m’aide quand c’est trop ?"],
-                ["5 Communication et limites", "Comment dire ce que je ressens et ce dont j’ai besoin ?"],
-                ["6 Quand ça se complique", "Que faire face aux disputes, à la pression du groupe et au harcèlement ?"],
-                ["7 Monde numérique", "Qu’est-ce que le portable fait de moi ?"],
-                ["8 Mes pensées", "Qu’est-ce que je pense de moi – et est-ce vrai ?"],
-                ["9 Prendre soin de soi", "Comment prendre soin de moi ?"],
-                ["10 Bilan", "Qu’est-ce que j’emporte ?"]
+                [
+                  "1 Arriver",
+                  "Qui sommes-nous en tant que classe ?"
+                ],
+                [
+                  "2 Qui suis-je ?",
+                  "De quoi ai-je besoin, qu’est-ce que je sais faire ?"
+                ],
+                [
+                  "3 Comprendre les émotions",
+                  "Qu’est-ce que je ressens – et à quoi ça sert ?"
+                ],
+                [
+                  "4 Réguler ses émotions",
+                  "Qu’est-ce qui m’aide quand c’est trop ?"
+                ],
+                [
+                  "5 Communication et limites",
+                  "Comment dire ce que je ressens et ce dont j’ai besoin ?"
+                ],
+                [
+                  "6 Quand ça se complique",
+                  "Que faire face aux disputes, à la pression du groupe et au harcèlement ?"
+                ],
+                [
+                  "7 Monde numérique",
+                  "Qu’est-ce que le portable fait de moi ?"
+                ],
+                [
+                  "8 Mes pensées",
+                  "Qu’est-ce que je pense de moi – et est-ce vrai ?"
+                ],
+                [
+                  "9 Prendre soin de soi",
+                  "Comment prendre soin de moi ?"
+                ],
+                [
+                  "10 Bilan",
+                  "Qu’est-ce que j’emporte ?"
+                ]
               ]
             },
             "tipp": "Noter aussi les réponses pour rire, comme « jouer » ou « dormir » : se distraire et se reposer sont de vrais skills – ils n’aident simplement pas dans toutes les situations.",
@@ -343,7 +508,12 @@
           "Durlak, J. A., Weissberg, R. P., Dymnicki, A. B., Taylor, R. D. & Schellinger, K. B. (2011). The impact of enhancing students’ social and emotional learning: A meta-analysis of school-based universal interventions. Child Development, 82(1), 405–432.",
           "Yeager, D. S. (2017). Social and emotional learning programs for adolescents. The Future of Children, 27(1), 73–94."
         ],
-        "achtung": "Dire dès le début où s’arrête la confidentialité. Si un jeune parle de violence, d’abus, d’automutilation ou d’idées suicidaires, ne pas approfondir devant la classe : chercher un entretien en tête-à-tête après le cours, informer le SePAS le jour même et agir selon le protocole de protection de l’école. Ce n’est pas à l’enseignant·e de régler cela sans aide."
+        "achtung": "Dire dès le début où s’arrête la confidentialité. Si un jeune parle de violence, d’abus, d’automutilation ou d’idées suicidaires, ne pas approfondir devant la classe : chercher un entretien en tête-à-tête après le cours, informer le SePAS le jour même et agir selon le protocole de protection de l’école. Ce n’est pas à l’enseignant·e de régler cela sans aide.",
+        "differenzierung": {
+          "leichter": "Pour les jeunes qui ont du mal à écrire : rassembler les règles à l’oral, l’enseignant·e écrit ; dans le cahier, recopier les cinq règles suffit. Pour la roue des émotions, n’utiliser que les six émotions de base du centre.",
+          "schwerer": "Les îlots formulent pour chaque règle un exemple qui montre qu’elle est respectée et proposent comment la classe discute des écarts au conseil de coopération."
+        },
+        "kurzfassung": "S’il ne reste qu’une heure : en ligne sans un mot (5 min), rassembler, pondérer et signer la charte (30 min), Skills-Pass et tour éclair (10 min), pour finir 5-4-3-2-1 (5 min). Rattraper la roue des émotions et le chemin de l’année à la séance suivante."
       }
     }
   ]

@@ -1,0 +1,1277 @@
+{
+  "einheiten": [
+    {
+      "id": "ff5-e17",
+      "klasse": "5e",
+      "dauer": 100,
+      "blaetter": [
+        "ff5-wenn-etwas-fehlt"
+      ],
+      "vorlagen": [
+        "ff5-trauer-karten"
+      ],
+      "woerter": [
+        {
+          "de": "der Verlust",
+          "fr": "la perte"
+        },
+        {
+          "de": "die Trauer",
+          "fr": "le deuil"
+        },
+        {
+          "de": "vermissen",
+          "fr": "manquer à quelqu’un (il me manque)"
+        },
+        {
+          "de": "der Alltag",
+          "fr": "le quotidien"
+        },
+        {
+          "de": "trösten",
+          "fr": "consoler"
+        },
+        {
+          "de": "für jemanden da sein",
+          "fr": "être là pour quelqu’un"
+        }
+      ],
+      "de": {
+        "titel": "Trauer und Verlust",
+        "kurz": "Verlust hat viele Formen – vom Umzug bis zum Tod. Die Klasse versteht am Trauer-Pendel, warum Trauer zwischen Vermissen und Alltag hin- und hergeht, und übt, was Trauernden wirklich hilft.",
+        "ziele": [
+          "erkennen an erfundenen Beispielen, dass Verlust viele Formen hat und jede Trauer berechtigt ist",
+          "beschreiben am Trauer-Pendel, dass Trauer zwischen Vermissen und Alltag hin- und hergeht und beides dazugehört",
+          "üben Sätze und kleine Taten, die trauernden Freundinnen und Freunden helfen",
+          "nennen Anzeichen, dass Trauer mehr Hilfe braucht, und Stellen, die helfen"
+        ],
+        "material": [
+          "Schülerheft für jede Person (Blatt „Wenn etwas fehlt“)",
+          "Gefühlsrad-Plakat, Klebepunkte: einer je Person",
+          "Moderationskarten: eine je Person für die Trostwand, vier je Tischgruppe für die Verlustkarten; dicke Stifte, Klebeband",
+          "Plakat „Was tröstet?“ (A2), Plakat mit dem Rahmen für das Kapitel (Schritt 2), Hilfe-Plakat mit Raum und Sprechzeiten des SePAS und dem Kanner- a Jugendtelefon 116 111",
+          "Kopiervorlage „Karten: Trauer und Verlust“: Verlustkarten einmal, Satzkarten fünfmal, ausgeschnitten, die Satzkarten in fünf Umschlägen",
+          "Malerkrepp für die Pendel-Linie, zwei A4-Schilder: „Vermissen“ und „Alltag“",
+          "Ein Stuhl und Kopfhörer als Requisiten für Tiago",
+          "Fragenbox (Karton mit Schlitz) und kleine Zettel",
+          "Taschentücher und Wasser am Ruheplatz",
+          "Stempel für den Skills-Pass"
+        ],
+        "vorbereitung": [
+          "Eine Woche vorher mit Régent und SePAS klären, ob jemand in der Klasse gerade einen Verlust erlebt hat – einen Todesfall, eine Trennung der Eltern, einen Umzug, eine Unterbringung außerhalb der Familie.",
+          "Diese Jugendlichen vor der Stunde unter vier Augen ansprechen, am besten gemeinsam mit dem SePAS: erklären, was in der Stunde passiert, und sie wählen lassen – ganz dabei, mit Pausen am Ruheplatz, still zuhörend oder die Stunde beim SePAS. Ähnelt ihre Lage Tiagos Geschichte (Tod eines Großelternteils), sie vorher darauf hinweisen.",
+          "Gab es kürzlich einen Todesfall in der Klasse oder im Lycée oder einen Suizid im Umfeld, die Stunde nur nach Absprache mit SePAS und Direktion halten oder verschieben und keine Beispiele verwenden, die der echten Lage ähneln.",
+          "Etwa zwei Wochen vorher die Eltern mit einem kurzen Brief, abgestimmt mit SePAS und Direktion, über das Kapitel „Schwere Gefühle“ informieren (vier Stunden, bis „Wenn es mir schlecht geht“): worum es geht, dass niemand Persönliches erzählen muss, wo es Hilfe gibt – mit der Bitte, Bescheid zu geben, wenn es in der Familie gerade einen Verlust gibt.",
+          "Mit dem SePAS absprechen, dass während der Stunde jemand erreichbar ist; wenn möglich hält eine Person des SePAS die Stunde mit – vor allem, wenn die Lehrkraft selbst gerade einen Verlust verarbeitet.",
+          "Den Ruheplatz festlegen: ein Tisch am Fenster mit Wasser und Taschentüchern oder ein Stuhl vor der offenen Tür, in Sichtweite.",
+          "Die Verlustkarten lesen: Ähnelt eine Karte der Lage einer Person in der Klasse, sie gegen die sechste Karte tauschen oder Namen und Einzelheiten ändern.",
+          "Die Pendel-Linie vor der Tafel kleben, die Plakate aufhängen, die Fragenbox neben die Tür stellen und die Moderationskarten für die Trostwand an die Tür legen."
+        ],
+        "ablauf": [
+          {
+            "min": "0–10",
+            "phase": "ankommen",
+            "titel": "Check-in: Gefühlsrad, Anspannung, Trostwand"
+          },
+          {
+            "min": "10–15",
+            "phase": "bruecke",
+            "titel": "Rückblick und Rahmen für das Kapitel"
+          },
+          {
+            "min": "15–30",
+            "phase": "uebung",
+            "titel": "Verlust hat viele Formen: Verlustkarten"
+          },
+          {
+            "min": "30–45",
+            "phase": "uebung",
+            "titel": "Das Trauer-Pendel: Tiagos Woche"
+          },
+          {
+            "min": "45–50",
+            "phase": "aktiv",
+            "titel": "Bewegungspause: Ausschütteln und bis 20 zählen"
+          },
+          {
+            "min": "50–62",
+            "phase": "uebung",
+            "titel": "Was hilft Trauernden? Satzkarten sortieren"
+          },
+          {
+            "min": "62–77",
+            "phase": "uebung",
+            "titel": "Rollenspiel: Tiago in der Pause"
+          },
+          {
+            "min": "77–85",
+            "phase": "uebung",
+            "titel": "Léas Nachricht – und wann Erwachsene helfen"
+          },
+          {
+            "min": "85–95",
+            "phase": "skill",
+            "titel": "Skill: Die Welle kommen und gehen lassen"
+          },
+          {
+            "min": "95–100",
+            "phase": "abschluss",
+            "titel": "Skills-Pass, Anspannung und Ausblick"
+          }
+        ],
+        "schritte": [
+          {
+            "titel": "Check-in: Gefühlsrad, Anspannung, Trostwand",
+            "dauer": 10,
+            "phase": "ankommen",
+            "text": "Beim Hereinkommen klebt jede Person wie gewohnt einen Punkt auf das Gefühlsrad. An der Tür liegt für alle eine Moderationskarte: Wer mag, schreibt ohne Namen ein Wort darauf, was tröstet, wenn es einem nicht gut geht – ein Ort, ein Lied, ein Mensch, ein Tier, ein Essen –, und hängt sie an das Plakat „Was tröstet?“ (4 Min.). Dann zeigen alle auf drei ihre Anspannung mit den Fingern (0–10 Finger für 0–100); die Lehrkraft beginnt mit einem Satz zu ihrer Zahl. Zwei, drei Freiwillige nennen Gefühl und Zahl. Zum Schluss liest die Lehrkraft fünf, sechs Karten von der Trostwand vor, ohne sie zu kommentieren; die Wand bleibt hängen und kommt beim Skill am Ende wieder.",
+            "sagen": [
+              "Ein Wort auf die Karte: Was tröstet euch, wenn es euch nicht gut geht? Ohne Namen – eine leere Karte ist auch in Ordnung.",
+              "Auf drei zeigt ihr eure Anspannung. Ich fange an: vier Finger, also 40 – das Thema heute ist ernst, und das merke ich."
+            ],
+            "tipp": "Die Trostfrage steht bewusst vor dem Thema: Wer zuerst an etwas denkt, das guttut, geht mit mehr Halt in eine Stunde über Verlust. Die anonymen Karten zeigen außerdem, wie verschieden Trost aussieht – Pizza und Oma hängen gleichberechtigt nebeneinander.",
+            "wennEsKippt": "Stehen Scherzwörter auf den Karten, sie genauso vorlesen: Schlafen oder ein Döner können wirklich trösten. Zeigt jemand acht Finger oder mehr oder klebt den Punkt auf ein schweres Wort wie einsam oder hilflos, nicht vor der Klasse nachfragen, sondern während der Gruppenarbeit leise fragen, ob die Person heute etwas braucht – etwa einen Platz nahe am Ruheplatz."
+          },
+          {
+            "titel": "Rückblick und Rahmen für das Kapitel",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "Eine Person liest ihren Satz aus dem Skills-Pass der letzten Stunde vor – dort ging es um Fehler und das Wort „noch“. Dann das neue Kapitel nennen und an die Tafel schreiben: „Schwere Gefühle – Was tun mit Trauer, Scham und Einsamkeit?“ Vier Stunden: Trauer, Scham und Schuld, Einsamkeit und zum Schluss, was man tut, wenn es einem richtig schlecht geht. Das Rahmen-Plakat vorlesen und jeden Punkt in einem Satz begründen (Liste). Den Ruheplatz zeigen und die Fragenbox neben der Tür: Fragen ohne Namen werden in der nächsten Stunde beantwortet, nachdem die Lehrkraft sie mit dem SePAS angeschaut hat.",
+            "sagen": [
+              "In den nächsten vier Wochen geht es um Gefühle, über die man selten spricht. Ihr müsst dabei nichts von euch erzählen – wir arbeiten mit ausgedachten Personen.",
+              "Trotzdem kann euch etwas nahegehen. Dann dürft ihr jederzeit an den Ruheplatz, ohne etwas zu erklären."
+            ],
+            "punkte": [
+              "Wir sprechen über ausgedachte Personen. Niemand muss etwas Eigenes erzählen.",
+              "„Weiter“ ist immer erlaubt, ohne Begründung.",
+              "Wer kurz raus muss, geht an den Ruheplatz. Nach ein paar Minuten schaut die Lehrkraft vorbei – nicht zur Kontrolle, sondern damit niemand allein bleibt.",
+              "Was hier gesagt wird, bleibt hier. Ist jemand in Gefahr, holt die Lehrkraft Hilfe und sagt es der Person vorher.",
+              "Fragen, die ihr nicht laut stellen wollt, kommen ohne Namen in die Fragenbox."
+            ],
+            "tipp": "Den Rahmen nicht herunterlesen, sondern kurz begründen: Jugendliche nehmen Regeln ernster, wenn sie merken, dass die Regeln sie schützen. Das Plakat hängt in allen vier Stunden des Kapitels.",
+            "wennEsKippt": "Kommt ein Spruch wie „Wird das jetzt Therapie?“, gelassen antworten: Nein – es geht um Wissen und Werkzeuge, nicht um eure Geschichten. Oft ist das die Aufregung vor einem ernsten Thema; ein kurzer Lacher darf sein, dann geht es ruhig weiter."
+          },
+          {
+            "titel": "Verlust hat viele Formen: Verlustkarten",
+            "dauer": 15,
+            "phase": "uebung",
+            "text": "Jede Tischgruppe bekommt eine Verlustkarte mit einer ausgedachten Person (Liste), liest sie laut und bespricht die Fragen darauf (6 Min.): Was hat die Person verloren – und was fehlt ihr jetzt alles, im Alltag, in der Schule, zu Hause? Woran könnten andere merken, dass es ihr nicht gut geht? Die Gruppe schreibt drei, vier Antworten auf Moderationskarten, eine pro Karte. Dann stellt jede Gruppe ihre Person in einem Satz vor und hängt die Karten unter den Namen an die Tafel (5 Min.). Die Lehrkraft fasst zusammen: Hinter jedem Verlust stecken viele kleine, und jeder kann Trauer auslösen – auch der Tod eines Menschen, um den es gleich bei Tiago geht. Zum Schluss trägt jede Person in Aufgabe 1 drei Personen ein (3 Min.).",
+            "sagen": [
+              "Was hat Inês verloren? Nicht nur ihre Freundin – was fehlt ihr jetzt noch alles?",
+              "Darf Amira um ihren Hund trauern? Ja. Trauer braucht keine Erlaubnis, und es gibt keine Rangliste."
+            ],
+            "punkte": [
+              "Inês (14): Die Familie ist von Porto nach Esch gezogen. Ihre beste Freundin sieht sie nur noch im Videocall.",
+              "Noah (15): Die Eltern haben sich getrennt. Der Vater wohnt jetzt in Trier, Noah sieht ihn jedes zweite Wochenende.",
+              "Amira (14): Ihr Hund Rocky ist letzte Woche gestorben. Zwölf Jahre lang ist sie jeden Morgen mit ihm um den Block gegangen.",
+              "Luca (15): Diogo war seit der Grundschule sein bester Freund. Seit dem Sommer antwortet Diogo nicht mehr auf seine Nachrichten.",
+              "Mathis (14): Im Training hat er sich das Knie verletzt. Die Saison, auf die er sich ein Jahr gefreut hat, ist für ihn vorbei.",
+              "Leonie (15, Ersatzkarte): Die große Schwester ist zum Studieren nach Brüssel gezogen. Ihr Zimmer ist leer, abends ist es still."
+            ],
+            "tipp": "Den Satz „Niemand muss beweisen, dass sein Verlust groß genug ist“ an die Tafel schreiben. Er entlastet alle, deren Verlust kaum jemand bemerkt – nach einem Umzug, einer Trennung oder dem Ende einer Freundschaft.",
+            "wennEsKippt": "Beginnt jemand, vom eigenen Verlust zu erzählen, nicht abwürgen und nicht vertiefen: kurz würdigen (Danke, dass du das sagst. Das klingt schwer.), ein Gespräch nach der Stunde anbieten und mit der Karte weitermachen. Vergleicht eine Gruppe die Verluste – ein Hund sei doch nicht so schlimm –, nicht streiten, sondern zurückfragen: Wer entscheidet, wie sehr etwas wehtut?",
+            "blatt": "ff5-wenn-etwas-fehlt"
+          },
+          {
+            "titel": "Das Trauer-Pendel: Tiagos Woche",
+            "dauer": 15,
+            "phase": "uebung",
+            "text": "Die Geschichte von Tiago auf dem Blatt vorlesen (2 Min.). Dann stehen alle auf und stellen sich an die Pendel-Linie vor der Tafel: links das Schild „Vermissen“, rechts „Alltag“. Die Lehrkraft liest Tiagos Woche Tag für Tag vor (Tabelle), und alle gehen langsam auf die Seite, auf der Tiago gerade ist. Wer unsicher ist, bleibt auf der Linie. Nach jedem Tag eine Person fragen, woran sie es erkennt (7 Min.). Danach das Modell an die Tafel zeichnen – ein Pendel zwischen zwei Seiten – und festhalten: Beide Seiten sind gesund; schwierig wird es, wenn jemand lange auf einer Seite festsitzt. Zum Schluss Aufgabe 2 allein am Platz (4 Min.).",
+            "sagen": [
+              "Wo ist Tiago gerade – beim Vermissen oder im Alltag? Geht langsam auf die Seite.",
+              "Ist Tiago ein schlechter Enkel, weil er beim Training lacht? Nein. Er macht eine Pause vom Trauern – die braucht jeder.",
+              "Wer nur vermisst, erschöpft sich. Wer nur weitermacht, schiebt die Trauer vor sich her. Gesund ist das Hin und Her."
+            ],
+            "tabelle": {
+              "spalten": [
+                "Tiagos Woche",
+                "Seite",
+                "Woran man es erkennt"
+              ],
+              "zeilen": [
+                [
+                  "Montag: Im Bus hört er immer wieder die alten Sprachnachrichten seines Avô.",
+                  "Vermissen",
+                  "Erinnern tut weh und tut gut."
+                ],
+                [
+                  "Dienstag: Beim Training lacht er über einen Witz – und fühlt sich danach schlecht.",
+                  "Alltag",
+                  "Lachen ist kein Verrat. Schuldgefühle danach sind häufig."
+                ],
+                [
+                  "Mittwoch: Er lernt für den Mathe-Test und denkt zwei Stunden an nichts anderes.",
+                  "Alltag",
+                  "Ablenkung ist eine Pause, kein Vergessen."
+                ],
+                [
+                  "Donnerstag: Seine Mutter weint in der Küche; er setzt sich einfach dazu.",
+                  "Vermissen",
+                  "Zusammen trauern verbindet."
+                ],
+                [
+                  "Freitag: Er schreit seinen kleinen Bruder wegen einer Kleinigkeit an.",
+                  "Vermissen",
+                  "Trauer zeigt sich oft als Gereiztheit oder Müdigkeit."
+                ],
+                [
+                  "Samstag: Mit Léa plant er, im Sommer das Grab seines Avô zu besuchen.",
+                  "beides",
+                  "Die Verbindung bleibt – und das Leben geht weiter."
+                ],
+                [
+                  "Sonntag: Er kocht das Lieblingsgericht seines Avô, mit Musik und viel Chaos.",
+                  "beides",
+                  "Erinnern und Leben passen zusammen."
+                ]
+              ]
+            },
+            "tipp": "Die Linie in der Mitte ist gewollt: Viele Tage gehören auf beide Seiten, genau das ist die Botschaft. Ist vorne zu wenig Platz, bleiben alle am Platz stehen und zeigen mit dem Arm nach links oder rechts, mit beiden Armen für beides.",
+            "wennEsKippt": "Wird es albern und alle rennen hin und her, das Tempo herausnehmen: bei jedem Tag erst still bis drei zählen, dann auf ein Zeichen langsam gehen. Wer nicht aufstehen möchte, zeigt vom Platz aus.",
+            "blatt": "ff5-wenn-etwas-fehlt"
+          },
+          {
+            "titel": "Bewegungspause: Ausschütteln und bis 20 zählen",
+            "dauer": 5,
+            "phase": "aktiv",
+            "text": "Fenster auf. Alle stehen hinter ihrem Stuhl und schütteln nacheinander Hände, Arme, Schultern und Beine aus (1 Min.). Dann zählt die Klasse gemeinsam bis 20: Jede Person darf jederzeit die nächste Zahl sagen, nur nicht zwei Zahlen direkt hintereinander, ohne Absprache und ohne Zeichen. Sprechen zwei gleichzeitig, beginnt die Klasse wieder bei 1 (4 Min.). Liegt die große Pause zwischen den beiden Stunden, entfällt die Übung.",
+            "sagen": [
+              "Auch das gehört zum Pendel: eine Pause vom schweren Thema. Hier darf gelacht werden."
+            ],
+            "tipp": "Die Pause mitten im Thema bewusst so benennen: Sie zeigt, dass Ernst und Lachen in derselben Stunde Platz haben – genau wie bei Tiago."
+          },
+          {
+            "titel": "Was hilft Trauernden? Satzkarten sortieren",
+            "dauer": 12,
+            "phase": "uebung",
+            "text": "Jede Tischgruppe bekommt einen Umschlag mit zehn Satzkarten (Tabelle) und schreibt drei Überschriften auf Moderationskarten: „hilft eher“, „kommt drauf an“, „hilft eher nicht“. Die Gruppe liest jede Karte laut und legt sie in eine Spalte; wird sie sich nicht einig, kommt die Karte zu „kommt drauf an“ (5 Min.). Dann liest die Lehrkraft die Karten nacheinander vor, und die Gruppen zeigen auf drei, wo sie liegen: Daumen hoch, zur Seite oder runter (5 Min.). Bei Unterschieden nachfragen, warum, vor allem bei den Karten in der Mitte. Zum Schluss an die Tafel schreiben, was fast immer hilft: da sein, fragen statt raten, kleine konkrete Hilfe, dranbleiben (2 Min.).",
+            "sagen": [
+              "Es gibt nicht den perfekten Satz. Was fast immer hilft: da sein, ehrlich sein, nicht aus dem Weg gehen.",
+              "Warum kann derselbe Satz die eine trösten und den anderen verletzen?"
+            ],
+            "tabelle": {
+              "spalten": [
+                "Satzkarte",
+                "Spalte",
+                "Warum"
+              ],
+              "zeilen": [
+                [
+                  "Es tut mir so leid. Ich weiß nicht, was ich sagen soll – aber ich bin da.",
+                  "hilft eher",
+                  "Ehrlich und ohne Druck."
+                ],
+                [
+                  "Ich weiß genau, wie du dich fühlst.",
+                  "hilft eher nicht",
+                  "Niemand weiß das genau. Besser: fragen."
+                ],
+                [
+                  "Kopf hoch, das wird schon wieder.",
+                  "hilft eher nicht",
+                  "Klingt, als solle die Trauer schnell verschwinden."
+                ],
+                [
+                  "Magst du erzählen, wie er so war?",
+                  "kommt drauf an",
+                  "Manche erzählen gern, andere noch nicht. Die Frage lässt die Wahl."
+                ],
+                [
+                  "Soll ich dich nach dem Training ein Stück begleiten?",
+                  "hilft eher",
+                  "Kleine, konkrete Hilfe."
+                ],
+                [
+                  "Er ist jetzt an einem besseren Ort.",
+                  "kommt drauf an",
+                  "Tröstet manche, andere glauben das nicht. Besser fragen, was Halt gibt."
+                ],
+                [
+                  "Jetzt ist aber mal gut, das ist doch schon Monate her.",
+                  "hilft eher nicht",
+                  "Trauer hat keine Frist."
+                ],
+                [
+                  "Ich hab heute an dich gedacht.",
+                  "hilft eher",
+                  "Zeigt: Du bist nicht vergessen – auch Wochen später."
+                ],
+                [
+                  "Hast du Lust, am Samstag was zu machen? Einfach so.",
+                  "kommt drauf an",
+                  "Ablenkung tut gut, wenn ein Nein erlaubt ist."
+                ],
+                [
+                  "(Gar nichts sagen und ihm aus dem Weg gehen.)",
+                  "hilft eher nicht",
+                  "Fühlt sich für Trauernde oft wie Ausschluss an."
+                ]
+              ]
+            },
+            "tipp": "Die Karten in der Mitte sind die wertvollsten: Sie zeigen, dass es auf die Person und den Moment ankommt. Wer unsicher ist, kann fast immer fragen: Magst du darüber reden – oder lieber etwas anderes machen?",
+            "wennEsKippt": "Streitet eine Gruppe laut über eine Karte, das würdigen: Genau darum geht es. Die Karte kommt in die Mitte, und die Gruppe nennt in der Auswertung beide Gründe. Macht sich jemand über die Sätze lustig, zurückfragen: Was würdest du denn sagen? Oft kommt dann ein guter Satz.",
+            "blatt": "ff5-trauer-karten"
+          },
+          {
+            "titel": "Rollenspiel: Tiago in der Pause",
+            "dauer": 15,
+            "phase": "uebung",
+            "text": "Die Lehrkraft spielt Tiago: Er sitzt in der Pause auf der Treppe – ein Stuhl vorne –, Kopfhörer auf, den Blick auf dem Handy. Die Klasse spielt Mitschülerinnen und Mitschüler, die gerade erfahren haben, dass sein Avô gestorben ist; jede Tischgruppe hat einen Beobachtungsauftrag (Liste). Nacheinander kommen Freiwillige allein oder zu zweit nach vorn und probieren einen Einstieg; wer zuschaut, darf „Stopp“ rufen und übernehmen (10 Min., vier bis fünf Szenen). Tiago reagiert echt, mal ausweichend, mal dankbar, und sagt nach jeder Szene in einem Satz, was ihm gutgetan hat. Danach nennt jede Gruppe eine Beobachtung (3 Min.). Zum Schluss legt die Lehrkraft die Rolle sichtbar ab: aufstehen, Kopfhörer weg, ein Satz als sie selbst.",
+            "sagen": [
+              "Ihr habt gerade erfahren, dass Tiagos Avô gestorben ist. Tiago sitzt allein auf der Treppe. Was macht ihr?",
+              "Als Tiago hat mir gutgetan, dass du dich einfach neben mich gesetzt hast. Du musstest gar nicht viel sagen."
+            ],
+            "punkte": [
+              "Gruppe 1: Mit welchem ersten Satz kommt jemand an Tiago heran?",
+              "Gruppe 2: Was sagt der Körper – Abstand, Blick, wo man sich hinsetzt?",
+              "Gruppe 3: Wann wird Tiago ruhiger oder offener?",
+              "Gruppe 4: Wann zieht Tiago sich zurück?",
+              "Gruppe 5: Was davon würdet ihr selbst so machen – und was nicht?"
+            ],
+            "tipp": "Die Lehrkraft spielt Tiago bewusst selbst: So muss niemand aus der Klasse eine trauernde Person darstellen. Ist eine Person des SePAS dabei, kann sie Tiago spielen, während die Lehrkraft die Szenen anhält und moderiert.",
+            "wennEsKippt": "Wird im Rollenspiel gelacht, nicht schimpfen: Unsicherheit macht oft albern. Kurz anhalten, Tiago fragen, wie sich das gerade anfühlt, und ernsthaft neu beginnen. Meldet sich niemand, in der Rolle von Tiago selbst einen Satz sagen (Passt schon, ehrlich.) und fragen, was man darauf antworten könnte. Wirkt jemand still betroffen, das Mitspielen ausdrücklich freiwillig halten und nach der Stunde nachfragen."
+          },
+          {
+            "titel": "Léas Nachricht – und wann Erwachsene helfen",
+            "dauer": 8,
+            "phase": "uebung",
+            "text": "Den Kasten „Was Trauernden meistens hilft“ auf dem Blatt kurz lesen. Dann schreibt jede Person allein in Aufgabe 3 Léas erste Nachricht an Tiago und ihre Antwort auf seine (4 Min.); zwei, drei Freiwillige lesen vor. Zum Schluss gemeinsam den Kasten „Wann Trauer mehr Hilfe braucht“ lesen und klären: Einem Erwachsenen Bescheid zu sagen, wenn es einem Freund lange sehr schlecht geht, ist kein Verrat, sondern Freundschaft. Auf das Hilfe-Plakat zeigen: Wo ist der SePAS, wann ist er da? (3 Min.)",
+            "sagen": [
+              "Kurz und ehrlich reicht. Eine gute Nachricht setzt Tiago nicht unter Druck, sofort zu antworten.",
+              "Wenn Tiago über Wochen kaum isst, nicht mehr kommt oder sagt, er will bei seinem Avô sein, ist das zu groß für Léa allein. Dann holt sie einen Erwachsenen dazu – genau das ist Freundschaft."
+            ],
+            "tipp": "Die Nachrichten nicht einsammeln. Wer vorliest, bekommt ein kurzes Danke, keine Bewertung – es gibt viele gute Nachrichten.",
+            "wennEsKippt": "Fragt jemand nach, weil er sich um eine echte Person sorgt, nicht vor der Klasse vertiefen: Das ist eine wichtige Frage – ich spreche gleich nach der Stunde mit dir darüber. Danach das Gespräch führen und den SePAS noch am selben Tag einbeziehen.",
+            "blatt": "ff5-wenn-etwas-fehlt"
+          },
+          {
+            "titel": "Skill: Die Welle kommen und gehen lassen",
+            "dauer": 10,
+            "phase": "skill",
+            "text": "Erklären: Trauer und andere schwere Gefühle kommen oft in Wellen – ausgelöst durch ein Lied, einen Geruch, einen Geburtstag. Wer gegen eine Welle ankämpft, verliert viel Kraft; man kann lernen, sie kommen und gehen zu lassen. Dann die Übung langsam anleiten, Augen offen oder gesenkt, und zwischen den Sätzen Zeit lassen (Liste, 5 Min.). Danach zwei, drei Rückmeldungen: Wie war das? Wann könnte das helfen – abends im Bett, im Bus, vor einem Test? Zum Schluss auf die Trostwand zeigen und drei Karten vorlesen: Das sind Ideen für die Zeit nach der Welle.",
+            "sagen": [
+              "Eine Welle geht vorbei, auch wenn es sich im Moment nicht so anfühlt.",
+              "Und wenn eine Welle sehr hoch wird, holt ihr euch jemanden an den Strand."
+            ],
+            "punkte": [
+              "Füße auf den Boden, Hände auf die Oberschenkel. Spür den Stuhl unter dir.",
+              "Denk an ein Gefühl von heute, etwa Müdigkeit oder Ärger über den Bus. Stell es dir als Welle vor, die auf den Strand zurollt.",
+              "Du musst sie nicht stoppen. Atme ruhig: vier Zählzeiten ein, sechs aus. Die Welle steigt – und flacht wieder ab.",
+              "Sag dir innerlich, was da ist: Das ist Müdigkeit. Das ist Ärger. Es darf da sein. Es geht auch wieder.",
+              "Spür zum Schluss die Füße, den Stuhl, den Raum. Heb den Blick."
+            ],
+            "tipp": "Bewusst mit einem leichten Gefühl üben lassen. Niemand soll sich absichtlich an etwas Trauriges erinnern; ein Skill wird geübt, solange das Meer ruhig ist.",
+            "wennEsKippt": "Kichern ist beim ersten Mal normal: kurz warten, ruhig weitersprechen. Wirkt jemand während der Übung aufgewühlt, leise anbieten, die Augen zu öffnen und die Füße fest auf den Boden zu stellen oder an den Ruheplatz zu gehen, und nach der Stunde nachfragen.",
+            "blatt": "ff5-wenn-etwas-fehlt"
+          },
+          {
+            "titel": "Skills-Pass, Anspannung und Ausblick",
+            "dauer": 5,
+            "phase": "abschluss",
+            "text": "Eintrag in den Skills-Pass mit der Leitfrage: Was würde ich jemandem sagen oder schreiben, der gerade etwas verloren hat? (2 Min.), danach der Stempel. Dann zeigen alle auf drei noch einmal ihre Anspannung mit den Fingern; die Lehrkraft vergleicht still mit dem Anfang. Den Ausblick auf die nächste Stunde geben, auf das Hilfe-Plakat zeigen und sagen, wann die Lehrkraft nach der Stunde ansprechbar ist.",
+            "sagen": [
+              "Für den Skills-Pass: Was würdet ihr jemandem sagen oder schreiben, der gerade etwas verloren hat? Ein Satz reicht.",
+              "Wer nach dieser Stunde reden möchte: Ich bin gleich danach noch ein paar Minuten hier. Und der SePAS ist für euch da – der Raum steht auf dem Plakat."
+            ],
+            "tipp": "Wer deutlich angespannter geht, als er gekommen ist, bekommt vor dem Gehen ein kurzes Wort unter vier Augen: Wie geht es dir jetzt? Brauchst du noch etwas?"
+          }
+        ],
+        "bruecke": "Nächste Woche geht es um zwei Gefühle, die man am liebsten versteckt: Scham und Schuld – und darum, wie man aus der Scham-Spirale wieder herauskommt.",
+        "hintergrund": "Trauer ist die normale Antwort auf einen Verlust – nicht nur auf einen Todesfall, auch auf eine Trennung, einen Umzug oder das Ende einer Freundschaft. Nach dem dualen Prozessmodell (Stroebe & Schut, 1999) pendeln Trauernde zwischen zwei Seiten: dem Verlust (vermissen, erinnern, weinen) und dem Alltag (Schule, Freunde, Neues, Pausen vom Trauern). Das Hin und Her gilt als gesund; schwierig wird es, wenn jemand lange auf einer Seite festsitzt. Worden (2009) beschreibt Trauer nicht als feste Folge von Phasen, sondern als Aufgaben – bis hin zu einer bleibenden inneren Verbindung, die neben dem weiteren Leben Platz hat. Trauer zeigt sich auch als Gereiztheit, Müdigkeit oder Rückzug. Für Jugendliche sind Freundinnen und Freunde eine wichtige Stütze (Bagwell & Schmidt, 2011); deshalb übt die Stunde, was Gleichaltrige konkret tun können – und wann sie Erwachsene dazuholen.",
+        "quellen": [
+          "Stroebe, M. & Schut, H. (1999). The dual process model of coping with bereavement: Rationale and description. Death Studies, 23(3), 197–224.",
+          "Worden, J. W. (2009). Grief Counseling and Grief Therapy (4th ed.). New York: Springer.",
+          "Bagwell, C. L. & Schmidt, M. E. (2011). Friendships in Childhood and Adolescence. New York: Guilford."
+        ],
+        "achtung": "Verluste sind in jeder Klasse häufig und oft nicht bekannt: niemanden nach eigenen Verlusten fragen, keine Erinnerungsübung mit persönlichen Inhalten. Wer gerade trauert, entscheidet nach dem Vorgespräch selbst, wie er oder sie teilnimmt. Erzählt jemand von einem eigenen Verlust oder wird es jemandem zu viel – er verstummt, weint, albert auffällig oder will hinaus –, würdigen, nicht vor der Klasse vertiefen, den Ruheplatz anbieten, nach der Stunde das Gespräch suchen und den SePAS noch am selben Tag informieren. Mehr Hilfe braucht es, wenn Trauer über Wochen den Alltag lähmt, jemand kaum schläft oder isst, Alkohol oder Drogen nimmt, um nichts zu spüren, oder sagt, er wolle bei der verstorbenen Person sein: ruhig ansprechen, nichts versprechen, noch am selben Tag den SePAS einbeziehen und nach dem Schutzkonzept der Schule handeln; bei akuter Gefahr 112 rufen und die Person nicht allein lassen. Zettel aus der Fragenbox, die auf eine Gefährdung hindeuten, sofort mit dem SePAS besprechen. Trauerbräuche und Glaubensvorstellungen sind verschieden: alle gelten lassen. Die Lehrkraft muss das nicht allein klären.",
+        "differenzierung": {
+          "leichter": "Die Verlustkarte liest eine Person der Gruppe vor, die gut liest; auf den Moderationskarten reichen Stichworte. In Aufgabe 3 darf ein Satz aus dem Kasten „Was Trauernden meistens hilft“ übernommen werden. Den Wortspeicher an der Tafel stehen lassen.",
+          "schwerer": "Beschreiben, wie das Pendel nach einem Umzug oder dem Ende einer Freundschaft aussieht: Was wäre dort Vermissen, was Alltag? Oder im Rollenspiel die Beobachtung für die ganze Klasse übernehmen und am Ende die drei wichtigsten Punkte zusammenfassen."
+        },
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit Gefühlsrad und Anspannung (5 Min.), Rahmen für das Kapitel (5 Min.), die Verlustkarten vorlesen und Aufgabe 1 (8 Min.), Tiagos Woche an der Pendel-Linie (12 Min.), Satzkarten in Tischgruppen sortieren (10 Min.), den Kasten „Wann Trauer mehr Hilfe braucht“ lesen (5 Min.), Skills-Pass und Anspannung (5 Min.). Rollenspiel, Léas Nachricht und die Welle entfallen; die Welle lässt sich als Skill in die nächste Stunde verschieben, Léas Nachricht ebenso."
+      },
+      "fr": {
+        "titel": "Deuil et perte",
+        "kurz": "La perte a plusieurs visages – du déménagement au décès. Avec le balancier du deuil, la classe comprend les allers-retours entre manque et quotidien et s’entraîne à ce qui aide vraiment une personne en deuil.",
+        "ziele": [
+          "reconnaissent, à partir d’exemples inventés, que la perte a plusieurs visages et que chaque chagrin est légitime",
+          "décrivent avec le balancier du deuil les allers-retours entre le manque et le quotidien, qui font tous deux partie du deuil",
+          "s’entraînent à des phrases et à de petits gestes qui aident un ami ou une amie en deuil",
+          "nomment des signes montrant qu’un deuil demande plus d’aide, et les lieux où la trouver"
+        ],
+        "material": [
+          "Un cahier de l’élève par jeune (fiche « Quand quelque chose manque »)",
+          "Roue des émotions en affiche, gommettes : une par jeune",
+          "Cartons : un par jeune pour le mur du réconfort, quatre par îlot pour les cartes perte ; gros feutres, ruban adhésif",
+          "Affiche « Qu’est-ce qui console ? » (A2), affiche avec le cadre du chapitre (étape 2), affiche d’aide avec la salle et les horaires du SePAS et le Kanner- a Jugendtelefon 116 111",
+          "Modèle à photocopier « Cartes : deuil et perte » : les cartes perte une fois, les cartes phrases cinq fois, découpées, les cartes phrases dans cinq enveloppes",
+          "Ruban de masquage pour la ligne du balancier, deux panneaux A4 : « Le manque » et « Le quotidien »",
+          "Une chaise et un casque audio comme accessoires pour Tiago",
+          "Boîte à questions (boîte à chaussures avec une fente) et petits papiers",
+          "Mouchoirs et eau au coin calme",
+          "Tampon pour le Skills-Pass"
+        ],
+        "vorbereitung": [
+          "Une semaine avant, vérifier avec le régent ou la régente et le SePAS si un jeune de la classe vit une perte récente – un décès, une séparation des parents, un déménagement, un placement hors de la famille.",
+          "Parler avant la séance en tête-à-tête avec ces jeunes, de préférence avec le SePAS : expliquer ce qui va se passer et les laisser choisir – participer pleinement, avec des pauses au coin calme, écouter sans intervenir, ou passer la séance au SePAS. Si leur situation ressemble à l’histoire de Tiago (décès d’un grand-parent), les en prévenir.",
+          "En cas de décès récent dans la classe ou au lycée, ou de suicide dans l’entourage, ne tenir la séance qu’en accord avec le SePAS et la direction, ou la reporter, et n’utiliser aucun exemple proche de la situation réelle.",
+          "Environ deux semaines avant, informer les parents par un court courrier, validé avec le SePAS et la direction, sur le chapitre « Émotions difficiles » (quatre séances, jusqu’à « Quand je vais mal ») : de quoi il s’agit, que personne ne doit raconter sa vie, où trouver de l’aide – en leur demandant de prévenir l’école si la famille vit une perte en ce moment.",
+          "Convenir avec le SePAS que quelqu’un reste joignable pendant la séance ; si possible, une personne du SePAS coanime – surtout si l’enseignant·e traverse soi-même un deuil.",
+          "Choisir le coin calme : une table près de la fenêtre avec de l’eau et des mouchoirs, ou une chaise devant la porte ouverte, à portée de vue.",
+          "Lire les cartes perte : si une carte ressemble à la situation d’un jeune de la classe, la remplacer par la sixième ou changer le prénom et les détails.",
+          "Coller la ligne du balancier devant le tableau, accrocher les affiches, poser la boîte à questions près de la porte et les cartons du mur du réconfort à l’entrée."
+        ],
+        "ablauf": [
+          {
+            "min": "0–10",
+            "phase": "ankommen",
+            "titel": "Tour d’humeur : roue, tension, mur du réconfort"
+          },
+          {
+            "min": "10–15",
+            "phase": "bruecke",
+            "titel": "Retour et cadre du chapitre"
+          },
+          {
+            "min": "15–30",
+            "phase": "uebung",
+            "titel": "La perte a plusieurs visages : cartes perte"
+          },
+          {
+            "min": "30–45",
+            "phase": "uebung",
+            "titel": "Le balancier du deuil : la semaine de Tiago"
+          },
+          {
+            "min": "45–50",
+            "phase": "aktiv",
+            "titel": "Pause active : se secouer et compter jusqu’à 20"
+          },
+          {
+            "min": "50–62",
+            "phase": "uebung",
+            "titel": "Qu’est-ce qui aide ? Trier les cartes phrases"
+          },
+          {
+            "min": "62–77",
+            "phase": "uebung",
+            "titel": "Jeu de rôle : Tiago à la récré"
+          },
+          {
+            "min": "77–85",
+            "phase": "uebung",
+            "titel": "Le message de Léa – et quand les adultes aident"
+          },
+          {
+            "min": "85–95",
+            "phase": "skill",
+            "titel": "Skill : laisser la vague venir et repartir"
+          },
+          {
+            "min": "95–100",
+            "phase": "abschluss",
+            "titel": "Skills-Pass, tension et suite"
+          }
+        ],
+        "schritte": [
+          {
+            "titel": "Tour d’humeur : roue, tension, mur du réconfort",
+            "dauer": 10,
+            "phase": "ankommen",
+            "text": "En entrant, chaque jeune colle comme d’habitude une gommette sur la roue des émotions. Près de la porte, un carton attend chacun : qui le souhaite y écrit, sans son nom, un mot sur ce qui console quand ça ne va pas – un lieu, une chanson, une personne, un animal, un plat – et l’accroche sur l’affiche « Qu’est-ce qui console ? » (4 min). Puis, à trois, tout le monde montre sa tension avec les doigts (0 à 10 doigts pour 0 à 100) ; l’enseignant·e commence avec une phrase sur son chiffre. Deux ou trois volontaires disent leur émotion et leur chiffre. Pour finir, lire cinq ou six cartons du mur du réconfort, sans les commenter ; le mur reste affiché et revient avec le skill en fin de séance.",
+            "sagen": [
+              "Un mot sur le carton : qu’est-ce qui vous console quand ça ne va pas ? Sans votre nom – un carton vide, c’est bien aussi.",
+              "À trois, vous montrez votre tension. Je commence : quatre doigts, donc 40 – le sujet d’aujourd’hui est sérieux, et je le sens."
+            ],
+            "tipp": "La question du réconfort vient exprès avant le thème : en pensant d’abord à ce qui fait du bien, on aborde une séance sur la perte avec plus d’appui. Les cartons anonymes montrent aussi à quel point le réconfort est varié – la pizza et la grand-mère se retrouvent côte à côte, à égalité.",
+            "wennEsKippt": "Si des cartons sont écrits pour rire, les lire comme les autres : dormir ou un kebab peuvent vraiment consoler. Si un jeune montre huit doigts ou plus, ou colle sa gommette sur un mot lourd comme seul ou impuissant, ne pas poser de questions devant la classe, mais lui demander discrètement pendant le travail en groupe s’il a besoin de quelque chose aujourd’hui – par exemple d’une place près du coin calme."
+          },
+          {
+            "titel": "Retour et cadre du chapitre",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "Un jeune lit sa phrase du Skills-Pass de la dernière séance – il y était question des erreurs et du mot « pas encore ». Puis annoncer le nouveau chapitre et l’écrire au tableau : « Émotions difficiles – Que faire de la tristesse, de la honte et de la solitude ? » Quatre séances : le deuil, la honte et la culpabilité, la solitude et, pour finir, que faire quand on va vraiment mal. Lire l’affiche du cadre et justifier chaque point en une phrase (liste). Montrer le coin calme et la boîte à questions près de la porte : les questions sans nom reçoivent une réponse à la séance suivante, après avoir été lues avec le SePAS.",
+            "sagen": [
+              "Pendant les quatre prochaines semaines, on va aborder des émotions dont on parle rarement. Vous n’avez rien à raconter sur vous – on travaille avec des personnages inventés.",
+              "Quelque chose peut quand même vous toucher. Dans ce cas, vous pouvez aller au coin calme à tout moment, sans rien expliquer."
+            ],
+            "punkte": [
+              "On parle de personnages inventés. Personne n’est obligé de raconter quelque chose de personnel.",
+              "On peut toujours dire « je passe », sans se justifier.",
+              "Qui a besoin de sortir un moment va au coin calme. Au bout de quelques minutes, l’adulte passe voir – pas pour contrôler, mais pour que personne ne reste seul.",
+              "Ce qui est dit ici reste ici. Si quelqu’un est en danger, l’adulte va chercher de l’aide et le dit d’abord à la personne.",
+              "Les questions qu’on ne veut pas poser à voix haute vont, sans nom, dans la boîte à questions."
+            ],
+            "tipp": "Ne pas lire le cadre d’une traite, mais le justifier brièvement : les jeunes prennent les règles plus au sérieux quand ils sentent qu’elles les protègent. L’affiche reste au mur pendant les quatre séances du chapitre.",
+            "wennEsKippt": "Si quelqu’un lance « C’est une thérapie, maintenant ? », répondre calmement : non – il s’agit de savoirs et d’outils, pas de vos histoires. C’est souvent la nervosité avant un sujet sérieux ; un petit rire peut passer, puis on continue calmement."
+          },
+          {
+            "titel": "La perte a plusieurs visages : cartes perte",
+            "dauer": 15,
+            "phase": "uebung",
+            "text": "Chaque îlot reçoit une carte perte avec un personnage inventé (liste), la lit à voix haute et discute des questions qui y figurent (6 min) : qu’est-ce que cette personne a perdu – et qu’est-ce qui lui manque maintenant, au quotidien, à l’école, à la maison ? À quoi les autres pourraient-ils voir qu’elle ne va pas bien ? Le groupe note trois ou quatre réponses sur des cartons, une idée par carton. Puis chaque îlot présente son personnage en une phrase et affiche ses cartons au tableau sous le prénom (5 min). Résumer en ajoutant le décès d’une personne : une perte en cache beaucoup d’autres, et chacune peut causer du chagrin. Pour finir, chacun note trois personnages dans l’exercice 1 (3 min).",
+            "sagen": [
+              "Qu’est-ce qu’Inês a perdu ? Pas seulement son amie – qu’est-ce qui lui manque encore ?",
+              "Amira a-t-elle le droit d’avoir du chagrin pour son chien ? Oui. Le chagrin n’a pas besoin d’autorisation, et il n’y a pas de classement."
+            ],
+            "punkte": [
+              "Inês (14 ans) : sa famille a quitté Porto pour Esch. Elle ne voit plus sa meilleure amie qu’en appel vidéo.",
+              "Noah (15 ans) : ses parents se sont séparés. Son père habite maintenant à Trèves ; Noah le voit un week-end sur deux.",
+              "Amira (14 ans) : son chien Rocky est mort la semaine dernière. Pendant douze ans, elle a fait le tour du quartier avec lui chaque matin.",
+              "Luca (15 ans) : Diogo était son meilleur ami depuis l’école primaire. Depuis l’été, Diogo ne répond plus à ses messages.",
+              "Mathis (14 ans) : il s’est blessé au genou à l’entraînement. La saison qu’il attendait depuis un an est finie pour lui.",
+              "Leonie (15 ans, carte de réserve) : sa grande sœur est partie étudier à Bruxelles. Sa chambre est vide, le soir la maison est silencieuse."
+            ],
+            "tipp": "Écrire au tableau la phrase « Personne n’a à prouver que sa perte est assez grande ». Elle soulage tous ceux dont la perte passe presque inaperçue – après un déménagement, une séparation ou la fin d’une amitié.",
+            "wennEsKippt": "Si un jeune commence à parler de sa propre perte, ne pas lui couper la parole ni approfondir : le remercier brièvement (Merci de le dire. Ça a l’air dur.), proposer d’en parler après le cours et revenir à la carte. Si un îlot compare les pertes – un chien, ce ne serait pas si grave –, ne pas débattre, mais demander : qui décide à quel point quelque chose fait mal ?",
+            "blatt": "ff5-wenn-etwas-fehlt"
+          },
+          {
+            "titel": "Le balancier du deuil : la semaine de Tiago",
+            "dauer": 15,
+            "phase": "uebung",
+            "text": "Lire l’histoire de Tiago sur la fiche (2 min). Puis tout le monde se lève et se place sur la ligne du balancier devant le tableau : à gauche le panneau « Le manque », à droite « Le quotidien ». Lire la semaine de Tiago jour après jour (tableau) ; chacun se déplace lentement du côté où se trouve Tiago à ce moment-là, et qui hésite reste sur la ligne. Après chaque jour, demander à un jeune à quoi il le voit (7 min). Ensuite, dessiner le modèle au tableau – un balancier entre deux côtés – et retenir : les deux côtés sont sains, cela devient difficile quand quelqu’un reste longtemps bloqué d’un côté. Pour finir, exercice 2, seul à sa place (4 min).",
+            "sagen": [
+              "Où est Tiago en ce moment – du côté du manque ou du quotidien ? Allez-y lentement.",
+              "Est-ce que Tiago est un mauvais petit-fils parce qu’il rit à l’entraînement ? Non. Il fait une pause dans son deuil – tout le monde en a besoin.",
+              "Rester toujours dans le manque, ça épuise. Continuer comme si de rien n’était, ça repousse le chagrin à plus tard. Ce qui est sain, c’est l’aller-retour."
+            ],
+            "tabelle": {
+              "spalten": [
+                "La semaine de Tiago",
+                "Côté",
+                "À quoi on le voit"
+              ],
+              "zeilen": [
+                [
+                  "Lundi : dans le bus, il réécoute sans cesse les anciens messages vocaux de son avô.",
+                  "manque",
+                  "Se souvenir fait mal et fait du bien."
+                ],
+                [
+                  "Mardi : à l’entraînement, il rit d’une blague – et se sent mal ensuite.",
+                  "quotidien",
+                  "Rire n’est pas trahir. Se sentir coupable ensuite, c’est fréquent."
+                ],
+                [
+                  "Mercredi : il révise pour le devoir en classe de maths et ne pense à rien d’autre pendant deux heures.",
+                  "quotidien",
+                  "Se changer les idées, c’est une pause, pas un oubli."
+                ],
+                [
+                  "Jeudi : sa mère pleure dans la cuisine ; il s’assoit simplement à côté d’elle.",
+                  "manque",
+                  "Être tristes ensemble rapproche."
+                ],
+                [
+                  "Vendredi : il crie sur son petit frère pour un rien.",
+                  "manque",
+                  "Le deuil se montre souvent par de l’irritabilité ou de la fatigue."
+                ],
+                [
+                  "Samedi : avec Léa, il prévoit d’aller sur la tombe de son avô cet été.",
+                  "les deux",
+                  "Le lien reste – et la vie continue."
+                ],
+                [
+                  "Dimanche : il cuisine le plat préféré de son avô, en musique et dans un joyeux désordre.",
+                  "les deux",
+                  "Se souvenir et vivre vont ensemble."
+                ]
+              ]
+            },
+            "tipp": "La ligne du milieu est voulue : beaucoup de jours vont des deux côtés, et c’est justement le message. S’il manque de place devant, tout le monde reste debout à sa place et montre la gauche ou la droite avec le bras, les deux bras pour « les deux ».",
+            "wennEsKippt": "Si ça devient chahuteur et que tout le monde court d’un côté à l’autre, ralentir : à chaque jour, compter d’abord jusqu’à trois en silence, puis avancer lentement au signal. Qui ne veut pas se lever montre depuis sa place.",
+            "blatt": "ff5-wenn-etwas-fehlt"
+          },
+          {
+            "titel": "Pause active : se secouer et compter jusqu’à 20",
+            "dauer": 5,
+            "phase": "aktiv",
+            "text": "Ouvrir la fenêtre. Tout le monde se lève derrière sa chaise et secoue l’une après l’autre les mains, les bras, les épaules et les jambes (1 min). Puis la classe compte ensemble jusqu’à 20 : chacun peut dire le nombre suivant à tout moment, mais jamais deux nombres de suite, sans se concerter ni faire de signe. Si deux personnes parlent en même temps, on repart de 1 (4 min). Si la grande récréation tombe entre les deux heures, supprimer cet exercice.",
+            "sagen": [
+              "Ça aussi, c’est le balancier : une pause dans un sujet lourd. Ici, on a le droit de rire."
+            ],
+            "tipp": "Nommer la pause ainsi : elle montre que le sérieux et le rire ont leur place dans la même séance – comme chez Tiago."
+          },
+          {
+            "titel": "Qu’est-ce qui aide ? Trier les cartes phrases",
+            "dauer": 12,
+            "phase": "uebung",
+            "text": "Chaque îlot reçoit une enveloppe avec dix cartes phrases (tableau) et écrit trois titres sur des cartons : « aide plutôt », « ça dépend », « n’aide plutôt pas ». Le groupe lit chaque carte à voix haute et la place dans une colonne ; s’il ne se met pas d’accord, la carte va dans « ça dépend » (5 min). Puis lire les cartes une à une ; à trois, les îlots montrent où ils les ont placées : pouce en haut, sur le côté ou en bas (5 min). En cas de différences, demander pourquoi, surtout pour les cartes du milieu. Pour finir, noter au tableau ce qui aide presque toujours : être là, demander plutôt que deviner, une petite aide concrète, rester présent dans la durée (2 min).",
+            "sagen": [
+              "La phrase parfaite n’existe pas. Ce qui aide presque toujours : être là, être sincère, ne pas éviter la personne.",
+              "Pourquoi la même phrase peut-elle consoler l’une et blesser l’autre ?"
+            ],
+            "tabelle": {
+              "spalten": [
+                "Carte phrase",
+                "Colonne",
+                "Pourquoi"
+              ],
+              "zeilen": [
+                [
+                  "Ça me fait vraiment de la peine. Je ne sais pas quoi dire – mais je suis là.",
+                  "aide plutôt",
+                  "Sincère et sans pression."
+                ],
+                [
+                  "Je sais exactement ce que tu ressens.",
+                  "n’aide plutôt pas",
+                  "Personne ne le sait exactement. Mieux vaut demander."
+                ],
+                [
+                  "Allez, courage, ça va passer.",
+                  "n’aide plutôt pas",
+                  "Donne l’impression que le chagrin doit vite disparaître."
+                ],
+                [
+                  "Tu veux me raconter comment il était ?",
+                  "ça dépend",
+                  "Certains aiment en parler, d’autres pas encore. La question laisse le choix."
+                ],
+                [
+                  "Je t’accompagne un bout de chemin après l’entraînement ?",
+                  "aide plutôt",
+                  "Une petite aide concrète."
+                ],
+                [
+                  "Il est dans un monde meilleur maintenant.",
+                  "ça dépend",
+                  "Console certains, d’autres n’y croient pas. Mieux vaut demander ce qui aide à tenir."
+                ],
+                [
+                  "Bon, ça suffit maintenant, ça fait des mois.",
+                  "n’aide plutôt pas",
+                  "Le deuil n’a pas de date limite."
+                ],
+                [
+                  "J’ai pensé à toi aujourd’hui.",
+                  "aide plutôt",
+                  "Montre : on ne t’oublie pas – même des semaines après."
+                ],
+                [
+                  "On se fait un truc samedi ? Juste comme ça.",
+                  "ça dépend",
+                  "Se changer les idées fait du bien, si on a le droit de dire non."
+                ],
+                [
+                  "(Ne rien dire et l’éviter.)",
+                  "n’aide plutôt pas",
+                  "Pour la personne en deuil, cela ressemble souvent à une mise à l’écart."
+                ]
+              ]
+            },
+            "tipp": "Les cartes du milieu sont les plus précieuses : elles montrent que tout dépend de la personne et du moment. En cas de doute, on peut presque toujours demander : tu as envie d’en parler – ou plutôt de faire autre chose ?",
+            "wennEsKippt": "Si un îlot se dispute bruyamment sur une carte, le saluer : c’est exactement le but. La carte va au milieu, et le groupe donne ses deux raisons lors de la mise en commun. Si quelqu’un se moque des phrases, lui retourner la question : et toi, qu’est-ce que tu dirais ? Souvent, une bonne phrase arrive.",
+            "blatt": "ff5-trauer-karten"
+          },
+          {
+            "titel": "Jeu de rôle : Tiago à la récré",
+            "dauer": 15,
+            "phase": "uebung",
+            "text": "L’enseignant·e joue Tiago : à la récré, assis sur les marches – une chaise devant la classe –, le casque sur les oreilles, les yeux sur son portable. La classe joue des camarades qui viennent d’apprendre la mort de son avô ; chaque îlot a une consigne d’observation (liste). À tour de rôle, des volontaires viennent devant, seuls ou à deux, et tentent une première approche ; les spectateurs peuvent crier « Stop » et prendre la place (10 min, quatre ou cinq scènes). Tiago réagit de façon réaliste, tantôt fuyant, tantôt reconnaissant, et dit après chaque scène, en une phrase, ce qui lui a fait du bien. Puis chaque îlot partage une observation (3 min). Pour finir, sortir visiblement du rôle : se lever, enlever le casque, dire une phrase en son propre nom.",
+            "sagen": [
+              "Vous venez d’apprendre que l’avô de Tiago est mort. Tiago est assis seul sur les marches. Qu’est-ce que vous faites ?",
+              "En tant que Tiago, ça m’a fait du bien que tu t’assoies simplement à côté de moi. Tu n’as pas eu besoin de dire grand-chose."
+            ],
+            "punkte": [
+              "Îlot 1 : avec quelle première phrase quelqu’un aborde-t-il Tiago ?",
+              "Îlot 2 : que dit le corps – la distance, le regard, l’endroit où l’on s’assoit ?",
+              "Îlot 3 : à quel moment Tiago se calme-t-il ou s’ouvre-t-il ?",
+              "Îlot 4 : à quel moment Tiago se ferme-t-il ?",
+              "Îlot 5 : qu’est-ce que vous feriez vous-mêmes de la même façon – et quoi pas ?"
+            ],
+            "tipp": "C’est volontairement l’adulte qui joue Tiago : ainsi, aucun jeune ne doit jouer une personne en deuil. Si une personne du SePAS est présente, elle peut jouer Tiago pendant que l’enseignant·e arrête les scènes et anime.",
+            "wennEsKippt": "Si la classe rit pendant le jeu, ne pas gronder : l’insécurité rend souvent chahuteur. Arrêter un instant, demander à Tiago ce qu’il ressent à ce moment-là, puis recommencer sérieusement. Si personne ne se lance, donner soi-même une réplique de Tiago (Ça va, t’inquiète.) et demander ce qu’on pourrait répondre. Si un jeune semble touché en silence, rappeler que jouer est facultatif et prendre de ses nouvelles après le cours."
+          },
+          {
+            "titel": "Le message de Léa – et quand les adultes aident",
+            "dauer": 8,
+            "phase": "uebung",
+            "text": "Lire rapidement l’encadré « Ce qui aide le plus souvent » sur la fiche. Puis chaque jeune écrit seul, dans l’exercice 3, le premier message de Léa à Tiago et sa réponse au sien (4 min) ; deux ou trois volontaires lisent. Pour finir, lire ensemble l’encadré « Quand le deuil demande plus d’aide » et clarifier : prévenir un adulte quand un ami va très mal depuis longtemps, ce n’est pas trahir, c’est de l’amitié. Montrer l’affiche d’aide : où est le SePAS, quand est-il là ? (3 min)",
+            "sagen": [
+              "Court et sincère, ça suffit. Un bon message ne met pas Tiago sous pression pour répondre tout de suite.",
+              "Si Tiago mange à peine pendant des semaines, ne vient plus ou dit qu’il veut être avec son avô, c’est trop lourd pour Léa seule. Alors elle va chercher un adulte – c’est justement ça, l’amitié."
+            ],
+            "tipp": "Ne pas ramasser les messages. Qui lit reçoit un simple merci, pas d’évaluation – il y a beaucoup de bons messages.",
+            "wennEsKippt": "Si un jeune pose une question parce qu’il s’inquiète pour une personne réelle, ne pas approfondir devant la classe : c’est une question importante, on en parle juste après le cours. Mener ensuite l’entretien et informer le SePAS le jour même.",
+            "blatt": "ff5-wenn-etwas-fehlt"
+          },
+          {
+            "titel": "Skill : laisser la vague venir et repartir",
+            "dauer": 10,
+            "phase": "skill",
+            "text": "Expliquer : le chagrin et d’autres émotions difficiles arrivent souvent par vagues – déclenchées par une chanson, une odeur, un anniversaire. Lutter contre une vague coûte beaucoup de forces ; on peut apprendre à la laisser venir et repartir. Puis guider l’exercice lentement, les yeux ouverts ou baissés, en laissant du temps entre les phrases (liste, 5 min). Ensuite, recueillir deux ou trois retours : comment c’était ? Quand est-ce que ça pourrait aider – le soir au lit, dans le bus, avant un devoir en classe ? Pour finir, montrer le mur du réconfort et lire trois cartons : ce sont des idées pour l’après-vague.",
+            "sagen": [
+              "Une vague finit par passer, même si sur le moment on n’y croit pas.",
+              "Et si une vague devient très haute, faites venir quelqu’un sur la plage."
+            ],
+            "punkte": [
+              "Les pieds au sol, les mains sur les cuisses. Sens la chaise sous toi.",
+              "Pense à une émotion d’aujourd’hui, par exemple la fatigue ou l’agacement à cause du bus. Imagine-la comme une vague qui roule vers la plage.",
+              "Tu n’as pas besoin de l’arrêter. Respire calmement : inspire sur quatre temps, expire sur six. La vague monte – puis redescend.",
+              "Dis-toi intérieurement ce qui est là : c’est de la fatigue. C’est de l’agacement. Ça a le droit d’être là. Ça repart aussi.",
+              "Pour finir, sens tes pieds, la chaise, la pièce. Relève le regard."
+            ],
+            "tipp": "S’entraîner exprès avec une émotion légère. Personne ne doit se rappeler volontairement quelque chose de triste ; un skill s’apprend quand la mer est calme.",
+            "wennEsKippt": "Les rires sont normaux la première fois : attendre un peu et continuer calmement. Si un jeune semble bouleversé pendant l’exercice, lui proposer discrètement d’ouvrir les yeux et de bien poser les pieds au sol, ou d’aller au coin calme, et prendre de ses nouvelles après le cours.",
+            "blatt": "ff5-wenn-etwas-fehlt"
+          },
+          {
+            "titel": "Skills-Pass, tension et suite",
+            "dauer": 5,
+            "phase": "abschluss",
+            "text": "Écrire dans le Skills-Pass avec la question : qu’est-ce que je dirais ou écrirais à quelqu’un qui vient de perdre quelque chose ? (2 min), puis le tampon. Ensuite, à trois, tout le monde montre encore une fois sa tension avec les doigts ; comparer en silence avec le début. Annoncer la prochaine séance, montrer l’affiche d’aide et dire quand on est disponible après le cours.",
+            "sagen": [
+              "Pour le Skills-Pass : qu’est-ce que vous diriez ou écririez à quelqu’un qui vient de perdre quelque chose ? Une phrase suffit.",
+              "Si vous voulez parler après ce cours : je reste encore quelques minutes. Et le SePAS est là pour vous – la salle est indiquée sur l’affiche."
+            ],
+            "tipp": "Un jeune qui repart nettement plus tendu qu’à son arrivée reçoit un petit mot en tête-à-tête avant de partir : comment ça va maintenant ? Tu as besoin de quelque chose ?"
+          }
+        ],
+        "bruecke": "La semaine prochaine, on parle de deux émotions qu’on préfère cacher : la honte et la culpabilité – et de la façon de sortir de la spirale de la honte.",
+        "hintergrund": "Le deuil est la réaction normale à une perte – pas seulement à un décès, mais aussi à une séparation, un déménagement ou la fin d’une amitié. Selon le modèle du double processus (Stroebe & Schut, 1999), les personnes en deuil font des allers-retours entre deux pôles : la perte (le manque, les souvenirs, les larmes) et le quotidien (l’école, les amis, la nouveauté, des pauses dans le chagrin). Ce va-et-vient est considéré comme sain ; cela devient difficile quand quelqu’un reste longtemps bloqué d’un côté. Worden (2009) décrit le deuil non comme une suite fixe d’étapes, mais comme des tâches – jusqu’à un lien intérieur durable qui trouve sa place dans la vie qui continue. Le deuil se manifeste aussi par de l’irritabilité, de la fatigue ou du repli. Pour les adolescents, les amis sont un soutien important (Bagwell & Schmidt, 2011) ; la séance entraîne donc ce que les jeunes peuvent faire concrètement – et quand faire appel à un adulte.",
+        "quellen": [
+          "Stroebe, M. & Schut, H. (1999). The dual process model of coping with bereavement: Rationale and description. Death Studies, 23(3), 197–224.",
+          "Worden, J. W. (2009). Grief Counseling and Grief Therapy (4th ed.). New York: Springer.",
+          "Bagwell, C. L. & Schmidt, M. E. (2011). Friendships in Childhood and Adolescence. New York: Guilford."
+        ],
+        "achtung": "Les pertes sont fréquentes dans chaque classe et souvent inconnues : ne demander à personne de parler de ses propres pertes, aucun exercice de souvenir à contenu personnel. Un jeune en deuil décide lui-même, après l’entretien préalable, comment il participe. Si un jeune parle d’une perte personnelle ou si c’est trop pour lui – il se tait soudain, pleure, fait le pitre ou veut sortir –, le remercier, ne pas approfondir devant la classe, proposer le coin calme, chercher l’échange après le cours et informer le SePAS le jour même. Il faut plus d’aide quand le deuil paralyse le quotidien pendant des semaines, qu’un jeune ne dort ou ne mange presque plus, prend de l’alcool ou des drogues pour ne plus rien sentir, ou dit qu’il voudrait être avec la personne décédée : lui parler calmement, ne rien promettre, faire appel au SePAS le jour même et agir selon le protocole de protection de l’école ; en cas de danger immédiat, appeler le 112 et ne pas laisser la personne seule. Les papiers de la boîte à questions qui laissent penser à un danger sont vus tout de suite avec le SePAS. Les rites de deuil et les croyances varient : les respecter tous. Ce n’est pas à l’enseignant·e de régler cela sans aide.",
+        "differenzierung": {
+          "leichter": "Dans chaque îlot, un jeune qui lit bien lit la carte perte ; sur les cartons, des mots-clés suffisent. Pour l’exercice 3, on peut reprendre une phrase de l’encadré « Ce qui aide le plus souvent ». Laisser le lexique au tableau.",
+          "schwerer": "Décrire à quoi ressemble le balancier après un déménagement ou la fin d’une amitié : qu’est-ce qui serait le manque, qu’est-ce qui serait le quotidien ? Ou, pendant le jeu de rôle, observer pour toute la classe et résumer à la fin les trois points les plus importants."
+        },
+        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec la roue et la tension (5 min), cadre du chapitre (5 min), lire les cartes perte et faire l’exercice 1 (8 min), la semaine de Tiago sur la ligne du balancier (12 min), trier les cartes phrases en îlots (10 min), lire l’encadré « Quand le deuil demande plus d’aide » (5 min), Skills-Pass et tension (5 min). Le jeu de rôle, le message de Léa et la vague sont supprimés ; la vague peut servir de skill à la séance suivante, et le message de Léa peut y être rattrapé."
+      }
+    }
+  ],
+  "blaetter": [
+    {
+      "id": "ff5-wenn-etwas-fehlt",
+      "bereich": "skills",
+      "thema": "gefuehle",
+      "stufen": [
+        "ES"
+      ],
+      "layout": "jugend",
+      "sozialform": [
+        "einzeln",
+        "gruppe"
+      ],
+      "dauer": "30 Min.",
+      "eldib": [],
+      "schlagworte": [
+        "Trauer",
+        "Verlust",
+        "Trauer-Pendel",
+        "Trauernde unterstützen",
+        "Förderfach"
+      ],
+      "bild": "icon:candle",
+      "kurs": [
+        "ff5-e17"
+      ],
+      "de": {
+        "titel": "Wenn etwas fehlt",
+        "untertitel": "Verlust hat viele Formen – und Trauer verläuft bei jedem Menschen anders.",
+        "bausteine": [
+          {
+            "art": "aufgabe",
+            "text": "Trag drei Personen von den Karten ein: Was fehlt ihnen jetzt alles?",
+            "hinweis": "Du musst nichts aus deinem eigenen Leben aufschreiben."
+          },
+          {
+            "art": "tabelle",
+            "spalten": [
+              "Person und Verlust",
+              "Was fehlt jetzt alles?"
+            ],
+            "breiten": [
+              1.6,
+              3.4
+            ],
+            "zeilen": 3,
+            "beispiel": [
+              "Chiara: Ihre Tanzgruppe hat sich aufgelöst.",
+              "die Proben am Freitag, die Leute aus der Gruppe, das Gefühl, etwas richtig gut zu können"
+            ]
+          },
+          {
+            "art": "text",
+            "text": "Hinter einem Verlust stecken viele kleine. Niemand muss beweisen, dass sein Verlust „groß genug“ ist."
+          },
+          {
+            "art": "geschichte",
+            "titel": "Tiago",
+            "text": "Vor sechs Wochen ist Tiagos Avô gestorben, sein Großvater in Portugal. Tiago (15) konnte nicht zur Beerdigung fahren. In der Klasse weiß es kaum jemand. Tiago geht zum Training, macht Witze, lernt für den Mathe-Test. Im Bus hört er immer wieder die alten Sprachnachrichten seines Avô. Manchmal lacht er beim Training – und fühlt sich danach schlecht.",
+            "bild": "figur:ben:traurig"
+          },
+          {
+            "art": "info",
+            "symbol": "wissen",
+            "titel": "Das Trauer-Pendel",
+            "text": "Trauernde pendeln zwischen zwei Seiten: dem Vermissen und dem Alltag. Beides gehört dazu. Wer nur vermisst, erschöpft sich. Wer nur weitermacht, schiebt die Trauer vor sich her. Lachen ist kein Verrat – es ist eine Pause."
+          },
+          {
+            "art": "aufgabe",
+            "text": "Was könnte Tiago auf beiden Seiten guttun? Schreib je zwei Ideen auf."
+          },
+          {
+            "art": "spalten",
+            "verhaeltnis": "1:1",
+            "links": [
+              {
+                "art": "feld",
+                "label": "Vermissen",
+                "beispiel": "ein Foto seines Avô aufstellen",
+                "hoehe": 3
+              }
+            ],
+            "rechts": [
+              {
+                "art": "feld",
+                "label": "Alltag",
+                "beispiel": "mit Léa zum Training gehen",
+                "hoehe": 3
+              }
+            ]
+          },
+          {
+            "art": "info",
+            "symbol": "tipp",
+            "titel": "Was Trauernden meistens hilft",
+            "punkte": [
+              "da sein, auch ohne die richtigen Worte: „Ich weiß nicht, was ich sagen soll – aber ich bin da.“",
+              "fragen statt raten: „Magst du erzählen – oder lieber etwas anderes machen?“",
+              "kleine, konkrete Hilfe: begleiten, zusammen lernen, etwas Normales unternehmen",
+              "dranbleiben – auch nach Wochen und an schweren Tagen wie Geburtstagen"
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Léa hat gerade erfahren, was passiert ist. Schreib ihre erste Nachricht an Tiago – und ihre Antwort auf seine.",
+            "hinweis": "Kurz und ehrlich reicht. Eine gute Nachricht setzt Tiago nicht unter Druck, sofort zu antworten."
+          },
+          {
+            "art": "dialog",
+            "zeilen": [
+              {
+                "wer": "Léa"
+              },
+              {
+                "wer": "Tiago",
+                "text": "Danke. Ist gerade echt schwer."
+              },
+              {
+                "wer": "Léa"
+              }
+            ]
+          },
+          {
+            "art": "info",
+            "symbol": "achtung",
+            "titel": "Wann Trauer mehr Hilfe braucht",
+            "text": "Trauer ist keine Krankheit, aber niemand muss sie allein tragen. Es ist kein Verrat, einem Erwachsenen Bescheid zu sagen. Sprich mit jemandem, wenn eine Person …",
+            "punkte": [
+              "über Wochen kaum schläft, isst oder zur Schule kommt,",
+              "Alkohol oder Drogen nimmt, um nichts mehr zu spüren,",
+              "sagt, sie wolle nicht mehr leben oder bei der verstorbenen Person sein – dann sofort."
+            ]
+          },
+          {
+            "art": "info",
+            "symbol": "merke",
+            "titel": "Die Welle – ein Skill für dich",
+            "text": "Trauer kommt oft in Wellen: ein Lied, ein Geruch, ein Geburtstag. Du musst die Welle nicht stoppen.",
+            "punkte": [
+              "Füße auf den Boden. Ruhig atmen: vier Zählzeiten ein, sechs aus.",
+              "Benennen: Das ist Trauer. Sie darf da sein – und sie geht auch wieder.",
+              "Wird die Welle zu hoch: Hol dir jemanden dazu."
+            ]
+          },
+          {
+            "art": "notfall"
+          }
+        ],
+        "lehrer": {
+          "ziel": "Die Jugendlichen erkennen, dass Verlust viele Formen hat, verstehen das Trauer-Pendel und üben, trauernde Freundinnen und Freunde zu unterstützen – und zu erkennen, wann Erwachsene dazugehören.",
+          "ablauf": [
+            "Aufgabe 1 (3 Min.): nach den Verlustkarten drei Personen eintragen – nur Personen von den Karten, nichts aus dem eigenen Leben.",
+            "Geschichte lesen, Tiagos Woche an der Pendel-Linie stellen, dann Aufgabe 2 allein (4 Min.).",
+            "Nach Satzkarten und Rollenspiel: Tipp-Kasten lesen, Aufgabe 3 allein (4 Min.), den Kasten „Wann Trauer mehr Hilfe braucht“ gemeinsam lesen.",
+            "Zum Schluss die Welle als Skill anleiten; den Kasten auf dem Blatt als Erinnerung zeigen."
+          ],
+          "hintergrund": "Nach dem dualen Prozessmodell pendeln Trauernde zwischen Verlust und Alltag; gesund ist die Bewegung zwischen beiden Seiten, nicht eine feste Folge von Phasen (Stroebe & Schut, 1999). Gleichaltrige sind für Jugendliche oft die ersten Ansprechpersonen (Bagwell & Schmidt, 2011); deshalb übt das Blatt konkrete Unterstützung.",
+          "quellen": [
+            "Stroebe, M. & Schut, H. (1999). The dual process model of coping with bereavement: Rationale and description. Death Studies, 23(3), 197–224.",
+            "Bagwell, C. L. & Schmidt, M. E. (2011). Friendships in Childhood and Adolescence. New York: Guilford."
+          ],
+          "achtung": "Nicht nach eigenen Verlusten fragen. Bei anhaltendem Rückzug, Drogen oder Sätzen wie „Ich will bei ihm sein“: am selben Tag ein Gespräch unter vier Augen, nichts versprechen, den SePAS informieren und nach dem Schutzkonzept der Schule handeln; bei akuter Gefahr 112, die Person nicht allein lassen.",
+          "material": "Verlustkarten, Pendel-Linie aus Malerkrepp, Satzkarten"
+        }
+      },
+      "fr": {
+        "titel": "Quand quelque chose manque",
+        "untertitel": "La perte a plusieurs visages – et chacun vit le deuil à sa façon.",
+        "bausteine": [
+          {
+            "art": "aufgabe",
+            "text": "Note trois personnages des cartes : qu’est-ce qui leur manque maintenant ?",
+            "hinweis": "Tu n’as rien à écrire sur ta propre vie."
+          },
+          {
+            "art": "tabelle",
+            "spalten": [
+              "Personnage et perte",
+              "Qu’est-ce qui manque maintenant ?"
+            ],
+            "breiten": [
+              1.6,
+              3.4
+            ],
+            "zeilen": 3,
+            "beispiel": [
+              "Chiara : son groupe de danse s’est arrêté.",
+              "les répétitions du vendredi, les filles du groupe, le sentiment d’être vraiment douée pour quelque chose"
+            ]
+          },
+          {
+            "art": "text",
+            "text": "Une perte en cache souvent beaucoup d’autres. Personne n’a à prouver que sa perte est « assez grande »."
+          },
+          {
+            "art": "geschichte",
+            "titel": "Tiago",
+            "text": "Il y a six semaines, l’avô de Tiago est mort : son grand-père, au Portugal. Tiago (15 ans) n’a pas pu aller à l’enterrement. En classe, presque personne n’est au courant. Tiago va à l’entraînement, fait des blagues, révise pour le devoir en classe de maths. Dans le bus, il réécoute sans cesse les anciens messages vocaux de son avô. Parfois, il rit à l’entraînement – et se sent mal ensuite.",
+            "bild": "figur:ben:traurig"
+          },
+          {
+            "art": "info",
+            "symbol": "wissen",
+            "titel": "Le balancier du deuil",
+            "text": "En deuil, on fait des allers-retours entre deux côtés : le manque et le quotidien. Les deux en font partie. Rester toujours dans le manque, ça épuise. Continuer comme si de rien n’était, ça repousse le chagrin. Rire n’est pas trahir – c’est une pause."
+          },
+          {
+            "art": "aufgabe",
+            "text": "Qu’est-ce qui pourrait faire du bien à Tiago de chaque côté ? Note deux idées par côté."
+          },
+          {
+            "art": "spalten",
+            "verhaeltnis": "1:1",
+            "links": [
+              {
+                "art": "feld",
+                "label": "Le manque",
+                "beispiel": "mettre une photo de son avô sur son bureau",
+                "hoehe": 3
+              }
+            ],
+            "rechts": [
+              {
+                "art": "feld",
+                "label": "Le quotidien",
+                "beispiel": "aller à l’entraînement avec Léa",
+                "hoehe": 3
+              }
+            ]
+          },
+          {
+            "art": "info",
+            "symbol": "tipp",
+            "titel": "Ce qui aide le plus souvent",
+            "punkte": [
+              "être là, même sans trouver les mots : « Je ne sais pas quoi dire – mais je suis là. »",
+              "demander plutôt que deviner : « Tu as envie d’en parler – ou plutôt de faire autre chose ? »",
+              "une petite aide concrète : accompagner, réviser ensemble, faire quelque chose de normal",
+              "rester présent – même après des semaines et les jours difficiles, comme les anniversaires"
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Léa vient d’apprendre ce qui s’est passé. Écris son premier message à Tiago – et sa réponse au sien.",
+            "hinweis": "Court et sincère, ça suffit. Un bon message ne pousse pas Tiago à répondre tout de suite."
+          },
+          {
+            "art": "dialog",
+            "zeilen": [
+              {
+                "wer": "Léa"
+              },
+              {
+                "wer": "Tiago",
+                "text": "Merci. C’est vraiment dur en ce moment."
+              },
+              {
+                "wer": "Léa"
+              }
+            ]
+          },
+          {
+            "art": "info",
+            "symbol": "achtung",
+            "titel": "Quand le deuil demande plus d’aide",
+            "text": "Le deuil n’est pas une maladie, mais personne ne doit le porter seul. Prévenir un adulte, ce n’est pas trahir. Parles-en à quelqu’un si une personne…",
+            "punkte": [
+              "dort, mange ou vient à l’école à peine depuis des semaines,",
+              "prend de l’alcool ou des drogues pour ne plus rien sentir,",
+              "dit qu’elle ne veut plus vivre ou qu’elle veut être avec la personne décédée – alors tout de suite."
+            ]
+          },
+          {
+            "art": "info",
+            "symbol": "merke",
+            "titel": "La vague – un skill pour toi",
+            "text": "Le chagrin arrive souvent par vagues : une chanson, une odeur, un anniversaire. Tu n’as pas besoin d’arrêter la vague.",
+            "punkte": [
+              "Les pieds au sol. Respirer calmement : inspirer sur quatre temps, expirer sur six.",
+              "Nommer : c’est du chagrin. Il a le droit d’être là – et il repart aussi.",
+              "Si la vague devient trop haute : fais venir quelqu’un."
+            ]
+          },
+          {
+            "art": "notfall"
+          }
+        ],
+        "lehrer": {
+          "ziel": "Les jeunes reconnaissent que la perte a plusieurs visages, comprennent le balancier du deuil et s’entraînent à soutenir un ami ou une amie en deuil – et à repérer quand un adulte doit être prévenu.",
+          "ablauf": [
+            "Exercice 1 (3 min) : après les cartes perte, noter trois personnages – uniquement ceux des cartes, rien de sa propre vie.",
+            "Lire l’histoire, placer la semaine de Tiago sur la ligne du balancier, puis exercice 2 seul (4 min).",
+            "Après les cartes phrases et le jeu de rôle : lire l’encadré conseils, exercice 3 seul (4 min), lire ensemble l’encadré « Quand le deuil demande plus d’aide ».",
+            "Pour finir, guider la vague comme skill ; montrer l’encadré sur la fiche comme aide-mémoire."
+          ],
+          "hintergrund": "Selon le modèle du double processus, les personnes en deuil oscillent entre la perte et le quotidien ; ce qui est sain, c’est le mouvement entre les deux côtés, pas une suite fixe d’étapes (Stroebe & Schut, 1999). Pour les adolescents, les pairs sont souvent les premiers interlocuteurs (Bagwell & Schmidt, 2011) ; la fiche entraîne donc un soutien concret.",
+          "quellen": [
+            "Stroebe, M. & Schut, H. (1999). The dual process model of coping with bereavement: Rationale and description. Death Studies, 23(3), 197–224.",
+            "Bagwell, C. L. & Schmidt, M. E. (2011). Friendships in Childhood and Adolescence. New York: Guilford."
+          ],
+          "achtung": "Ne pas interroger sur des pertes personnelles. En cas de repli durable, de drogues ou de phrases comme « Je veux être avec lui » : entretien en tête-à-tête le jour même, ne rien promettre, informer le SePAS et agir selon le protocole de protection de l’école ; en cas de danger immédiat, 112, ne pas laisser la personne seule.",
+          "material": "Cartes perte, ligne du balancier au ruban de masquage, cartes phrases"
+        }
+      }
+    },
+    {
+      "id": "ff5-trauer-karten",
+      "bereich": "skills",
+      "thema": "gefuehle",
+      "stufen": [
+        "ES"
+      ],
+      "layout": "jugend",
+      "sozialform": [
+        "gruppe"
+      ],
+      "dauer": "15 Min. und 12 Min.",
+      "eldib": [],
+      "schlagworte": [
+        "Verlustkarten",
+        "Satzkarten",
+        "Trauer",
+        "Förderfach"
+      ],
+      "bild": "icon:messages",
+      "kurs": [
+        "ff5-e17"
+      ],
+      "de": {
+        "titel": "Karten: Trauer und Verlust",
+        "untertitel": "Kopiervorlage: Verlustkarten einmal, Satzkarten einmal je Tischgruppe",
+        "bausteine": [
+          {
+            "art": "text",
+            "text": "Verlustkarten: einmal kopieren und ausschneiden. Jede Tischgruppe zieht eine Karte; die sechste ist Ersatz. Kommt eine Karte der Lage einer Person in der Klasse zu nahe, sie austauschen oder Namen und Einzelheiten ändern.",
+            "klein": true
+          },
+          {
+            "art": "karten",
+            "spalten": 2,
+            "karten": [
+              {
+                "titel": "Inês, 14",
+                "text": "Die Familie ist von Porto nach Esch gezogen. Ihre beste Freundin Bruna sieht Inês nur noch im Videocall. In der neuen Klasse versteht sie noch nicht alles.\nFragen: Was fehlt Inês jetzt alles? Woran könnten andere merken, dass es ihr nicht gut geht?"
+              },
+              {
+                "titel": "Noah, 15",
+                "text": "Die Eltern haben sich getrennt. Der Vater wohnt jetzt in Trier, Noah sieht ihn jedes zweite Wochenende. Die Abende mit Papa vor dem Fernseher gibt es nicht mehr.\nFragen: Was fehlt Noah jetzt alles? Woran könnten andere merken, dass es ihm nicht gut geht?"
+              },
+              {
+                "titel": "Amira, 14",
+                "text": "Ihr Hund Rocky ist letzte Woche gestorben, zwölf Jahre alt. Jeden Morgen vor der Schule ist Amira mit ihm um den Block gegangen. Seine Leine hängt noch an der Tür.\nFragen: Was fehlt Amira jetzt alles? Woran könnten andere merken, dass es ihr nicht gut geht?"
+              },
+              {
+                "titel": "Luca, 15",
+                "text": "Diogo war seit der Grundschule sein bester Freund. Seit dem Sommer antwortet Diogo nicht mehr auf Lucas Nachrichten und sitzt in der Kantine bei anderen.\nFragen: Was fehlt Luca jetzt alles? Woran könnten andere merken, dass es ihm nicht gut geht?"
+              },
+              {
+                "titel": "Mathis, 14",
+                "text": "Im Training hat sich Mathis das Knie verletzt. Die Saison, auf die er sich ein Jahr lang gefreut hat, ist für ihn vorbei. Am Samstag spielt sein Team ohne ihn.\nFragen: Was fehlt Mathis jetzt alles? Woran könnten andere merken, dass es ihm nicht gut geht?"
+              },
+              {
+                "titel": "Leonie, 15",
+                "text": "Ihre große Schwester ist zum Studieren nach Brüssel gezogen. Ihr Zimmer ist leer, und abends ist es still. Früher haben die beiden jeden Abend zusammen Serien geschaut.\nFragen: Was fehlt Leonie jetzt alles? Woran könnten andere merken, dass es ihr nicht gut geht?"
+              }
+            ]
+          },
+          {
+            "art": "seitenumbruch"
+          },
+          {
+            "art": "text",
+            "text": "Satzkarten: fünfmal kopieren und ausschneiden; jede Tischgruppe bekommt alle zehn Karten in einem Umschlag. Die Gruppen sortieren: hilft eher – kommt drauf an – hilft eher nicht.",
+            "klein": true
+          },
+          {
+            "art": "karten",
+            "spalten": 2,
+            "hoehe": 110,
+            "karten": [
+              {
+                "titel": "Es tut mir so leid. Ich weiß nicht, was ich sagen soll – aber ich bin da."
+              },
+              {
+                "titel": "Ich weiß genau, wie du dich fühlst."
+              },
+              {
+                "titel": "Kopf hoch, das wird schon wieder."
+              },
+              {
+                "titel": "Magst du erzählen, wie er so war?"
+              },
+              {
+                "titel": "Soll ich dich nach dem Training ein Stück begleiten?"
+              },
+              {
+                "titel": "Er ist jetzt an einem besseren Ort."
+              },
+              {
+                "titel": "Jetzt ist aber mal gut, das ist doch schon Monate her."
+              },
+              {
+                "titel": "Ich hab heute an dich gedacht."
+              },
+              {
+                "titel": "Hast du Lust, am Samstag was zu machen? Einfach so."
+              },
+              {
+                "titel": "(Gar nichts sagen und ihm aus dem Weg gehen.)"
+              }
+            ]
+          }
+        ],
+        "lehrer": {
+          "ziel": "Karten für die Gruppenarbeit: Die Verlustkarten zeigen an erfundenen Personen, wie viele Formen Verlust hat; mit den Satzkarten üben die Tischgruppen, was Trauernden hilft.",
+          "ablauf": [
+            "Verlustkarten einmal kopieren und ausschneiden; vorher prüfen, ob eine Karte der Lage einer Person in der Klasse ähnelt, und sie dann austauschen.",
+            "Satzkarten fünfmal kopieren, ausschneiden und je Tischgruppe in einen Umschlag legen.",
+            "Verlustkarten in Schritt 3, Satzkarten in Schritt 6 der Einheit einsetzen."
+          ],
+          "hintergrund": "Erfundene Personen schaffen Abstand: Die Jugendlichen sprechen über Verlust, ohne Eigenes preiszugeben. Die Satzkarten üben Unterstützung unter Gleichaltrigen, die für Jugendliche eine wichtige Stütze sind (Bagwell & Schmidt, 2011).",
+          "quellen": [
+            "Bagwell, C. L. & Schmidt, M. E. (2011). Friendships in Childhood and Adolescence. New York: Guilford."
+          ],
+          "material": "Schere, fünf Umschläge"
+        }
+      },
+      "fr": {
+        "titel": "Cartes : deuil et perte",
+        "untertitel": "Modèle à photocopier : les cartes perte une fois, les cartes phrases une fois par îlot",
+        "bausteine": [
+          {
+            "art": "text",
+            "text": "Cartes perte : photocopier une fois et découper. Chaque îlot tire une carte ; la sixième sert de réserve. Si une carte est trop proche de la situation d’un jeune de la classe, la remplacer ou changer le prénom et les détails.",
+            "klein": true
+          },
+          {
+            "art": "karten",
+            "spalten": 2,
+            "karten": [
+              {
+                "titel": "Inês, 14 ans",
+                "text": "Sa famille a quitté Porto pour Esch. Inês ne voit plus sa meilleure amie Bruna qu’en appel vidéo. Dans sa nouvelle classe, elle ne comprend pas encore tout.\nÀ discuter : qu’est-ce qui manque à Inês maintenant ? À quoi les autres pourraient-ils voir qu’elle ne va pas bien ?"
+              },
+              {
+                "titel": "Noah, 15 ans",
+                "text": "Ses parents se sont séparés. Son père habite maintenant à Trèves ; Noah le voit un week-end sur deux. Les soirées télé avec son père, c’est fini.\nÀ discuter : qu’est-ce qui manque à Noah maintenant ? À quoi les autres pourraient-ils voir qu’il ne va pas bien ?"
+              },
+              {
+                "titel": "Amira, 14 ans",
+                "text": "Son chien Rocky est mort la semaine dernière, à douze ans. Chaque matin avant l’école, Amira faisait le tour du quartier avec lui. Sa laisse est encore accrochée à la porte.\nÀ discuter : qu’est-ce qui manque à Amira maintenant ? À quoi les autres pourraient-ils voir qu’elle ne va pas bien ?"
+              },
+              {
+                "titel": "Luca, 15 ans",
+                "text": "Diogo était son meilleur ami depuis l’école primaire. Depuis l’été, Diogo ne répond plus aux messages de Luca et, à la cantine, il mange avec d’autres.\nÀ discuter : qu’est-ce qui manque à Luca maintenant ? À quoi les autres pourraient-ils voir qu’il ne va pas bien ?"
+              },
+              {
+                "titel": "Mathis, 14 ans",
+                "text": "À l’entraînement, Mathis s’est blessé au genou. La saison qu’il attendait depuis un an est finie pour lui. Samedi, son équipe joue sans lui.\nÀ discuter : qu’est-ce qui manque à Mathis maintenant ? À quoi les autres pourraient-ils voir qu’il ne va pas bien ?"
+              },
+              {
+                "titel": "Leonie, 15 ans",
+                "text": "Sa grande sœur est partie étudier à Bruxelles. Sa chambre est vide, et le soir, la maison est silencieuse. Avant, elles regardaient des séries ensemble tous les soirs.\nÀ discuter : qu’est-ce qui manque à Leonie maintenant ? À quoi les autres pourraient-ils voir qu’elle ne va pas bien ?"
+              }
+            ]
+          },
+          {
+            "art": "seitenumbruch"
+          },
+          {
+            "art": "text",
+            "text": "Cartes phrases : photocopier cinq fois et découper ; chaque îlot reçoit les dix cartes dans une enveloppe. Les groupes trient : aide plutôt – ça dépend – n’aide plutôt pas.",
+            "klein": true
+          },
+          {
+            "art": "karten",
+            "spalten": 2,
+            "hoehe": 110,
+            "karten": [
+              {
+                "titel": "Ça me fait vraiment de la peine. Je ne sais pas quoi dire – mais je suis là."
+              },
+              {
+                "titel": "Je sais exactement ce que tu ressens."
+              },
+              {
+                "titel": "Allez, courage, ça va passer."
+              },
+              {
+                "titel": "Tu veux me raconter comment il était ?"
+              },
+              {
+                "titel": "Je t’accompagne un bout de chemin après l’entraînement ?"
+              },
+              {
+                "titel": "Il est dans un monde meilleur maintenant."
+              },
+              {
+                "titel": "Bon, ça suffit maintenant, ça fait des mois."
+              },
+              {
+                "titel": "J’ai pensé à toi aujourd’hui."
+              },
+              {
+                "titel": "On se fait un truc samedi ? Juste comme ça."
+              },
+              {
+                "titel": "(Ne rien dire et l’éviter.)"
+              }
+            ]
+          }
+        ],
+        "lehrer": {
+          "ziel": "Cartes pour le travail en groupe : les cartes perte montrent, à travers des personnages inventés, les nombreux visages de la perte ; avec les cartes phrases, les îlots s’entraînent à ce qui aide une personne en deuil.",
+          "ablauf": [
+            "Photocopier une fois les cartes perte et les découper ; vérifier avant si une carte ressemble à la situation d’un jeune de la classe, et la remplacer le cas échéant.",
+            "Photocopier cinq fois les cartes phrases, les découper et mettre une série par îlot dans une enveloppe.",
+            "Utiliser les cartes perte à l’étape 3, les cartes phrases à l’étape 6 de la séance."
+          ],
+          "hintergrund": "Des personnages inventés créent de la distance : les jeunes parlent de la perte sans rien dévoiler d’eux-mêmes. Les cartes phrases entraînent le soutien entre pairs, qui compte beaucoup à l’adolescence (Bagwell & Schmidt, 2011).",
+          "quellen": [
+            "Bagwell, C. L. & Schmidt, M. E. (2011). Friendships in Childhood and Adolescence. New York: Guilford."
+          ],
+          "material": "Ciseaux, cinq enveloppes"
+        }
+      }
+    }
+  ]
+}

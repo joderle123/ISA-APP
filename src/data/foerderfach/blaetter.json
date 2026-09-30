@@ -43,11 +43,7 @@
             },
             {
               "titel": "Thema",
-              "text": "Übungen allein, zu zweit und in Gruppen."
-            },
-            {
-              "titel": "Bewegung",
-              "text": "Kurz aufstehen, bewegen, durchatmen."
+              "text": "Übungen allein, zu zweit und in Gruppen – mit einer kurzen Bewegungspause."
             },
             {
               "titel": "Skill",
@@ -118,11 +114,7 @@
             },
             {
               "titel": "Thème",
-              "text": "Des activités seul, à deux et en groupe."
-            },
-            {
-              "titel": "Mouvement",
-              "text": "Se lever, bouger, respirer."
+              "text": "Des activités seul, à deux et en groupe – avec une courte pause active."
             },
             {
               "titel": "Skill",
@@ -879,6 +871,818 @@
         ],
         "achtung": "S’il apparaît qu’un jeune subit de la violence ou des menaces, ne pas poser de questions devant la classe : proposer un entretien en tête-à-tête et informer le SePAS le jour même.",
         "material": "Cartes de deux couleurs, gommettes, affiche ou tableau de papier, gros feutres"
+      }
+    }
+  },
+  {
+    "id": "ff-anspannungsskala",
+    "bereich": "skills",
+    "thema": "regulieren",
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "klasse"
+    ],
+    "dauer": "10 Min., danach 1 Min. je Check-in",
+    "eldib": [],
+    "schlagworte": [
+      "Anspannung",
+      "0–100",
+      "Check-in",
+      "Förderfach"
+    ],
+    "bild": "icon:bolt",
+    "de": {
+      "titel": "Meine Anspannung von 0 bis 100",
+      "untertitel": "Die Zahl sagt dir, welche Skills gerade noch helfen",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Anspannung ist die Lautstärke deines inneren Alarms. Wut, Angst, Stress oder Aufregung treiben sie hoch. Ab jetzt nennst du im Check-in nicht nur dein Gefühl, sondern auch deine Zahl."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Lies die drei Zonen. Schreib in jede Zone, woran du sie bei dir merkst.",
+          "hinweis": "Denk an Körper, Gedanken und Verhalten – etwa heißes Gesicht, Tunnelblick, lauter werden."
+        },
+        {
+          "art": "thermometer",
+          "linien": 1,
+          "stufen": [
+            {
+              "titel": "Grün (0–30): Ich kann klar denken",
+              "text": "Reden, zuhören und Probleme lösen klappen. Jetzt ist die beste Zeit, Skills zu üben. So ist es bei mir:"
+            },
+            {
+              "titel": "Gelb (30–70): Es wird eng",
+              "text": "Ich werde gereizt, unruhig oder ziehe mich zurück. Jetzt helfen Ablenkung, Sinne, Musik und Bewegung. So ist es bei mir:"
+            },
+            {
+              "titel": "Rot (70–100): Der Körper übernimmt",
+              "text": "Denken geht kaum noch. Jetzt helfen starke Körper-Skills, raus aus der Situation und Hilfe holen. So ist es bei mir:"
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Erst runter, dann reden.",
+          "text": "Bei Rot kann niemand vernünftig mit dir reden – auch du selbst nicht. Senk zuerst die Anspannung. Danach könnt ihr klären, was los war."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wie hoch wäre deine Anspannung? Kreuz für jede Situation die Zone an.",
+          "hinweis": "Es gibt kein Richtig oder Falsch. Dieselbe Situation ist für die eine Person eine 20, für die andere eine 80."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "Grün 0–30",
+            "Gelb 30–70",
+            "Rot 70–100"
+          ],
+          "items": [
+            "Jemand drängelt sich in der Kantine vor dir in die Schlange.",
+            "Du wirst nach Hausaufgaben gefragt, die du vergessen hast.",
+            "Gleich musst du vor der Klasse sprechen.",
+            "Das Display deines Handys ist gesprungen.",
+            "Jemand teilt ein peinliches Foto von dir in der Klassengruppe.",
+            "Du wirst für etwas beschuldigt, das du nicht getan hast.",
+            "Dein Bus fährt dir vor der Nase weg."
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Du entscheidest, was du teilst.",
+          "text": "Im Check-in reicht deine Zahl. Wenn sie oft sehr hoch ist, sprich mit deiner Lehrkraft, dem SePAS oder einer Person, der du vertraust."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen lernen die Anspannungsskala von 0 bis 100 kennen und beschreiben ihre Anzeichen in drei Zonen. Ab der Einheit „Skills und die Anspannungsskala“ gehört die Zahl zu jedem Check-in.",
+        "ablauf": [
+          "Einführung: die drei Zonen an der Tafel mit der Klasse füllen, dann Aufgabe 1 allein.",
+          "Situationen aus Aufgabe 2 vorlesen; die Klasse zeigt die Zone mit der Hand oder stellt sich an eine Linie im Raum.",
+          "Danach in jedem Check-in: Gefühl und Zahl nennen – am Plakat oder mit den Fingern (0–10 für 0–100)."
+        ],
+        "hintergrund": "Die Skala macht Anspannung sprechbar und zeigt, welche Skills in welchem Bereich noch greifen: Bei sehr hoher Anspannung helfen vor allem körperbezogene Skills, bei mittlerer eher Ablenkung und Sinne (Rathus & Miller, 2015).",
+        "quellen": [
+          "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford."
+        ],
+        "material": "Skala als Plakat (A3), Schülerheft"
+      }
+    },
+    "fr": {
+      "titel": "Ma tension de 0 à 100",
+      "untertitel": "Le chiffre te dit quels skills aident encore",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "La tension, c’est le volume de ton alarme intérieure. La colère, la peur, le stress ou l’excitation la font monter. Désormais, au tour d’humeur, tu donnes ton émotion et aussi ton chiffre."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Lis les trois zones. Écris dans chaque zone à quoi tu la reconnais chez toi.",
+          "hinweis": "Pense au corps, aux pensées et au comportement – par exemple visage chaud, vision en tunnel, parler plus fort."
+        },
+        {
+          "art": "thermometer",
+          "linien": 1,
+          "stufen": [
+            {
+              "titel": "Vert (0–30) : je peux réfléchir clairement",
+              "text": "Parler, écouter et résoudre des problèmes, ça marche. C’est le meilleur moment pour s’entraîner aux skills. Chez moi, c’est comme ça :"
+            },
+            {
+              "titel": "Orange (30–70) : ça devient serré",
+              "text": "Je deviens irritable, agité ou je me renferme. Ce qui aide : se distraire, les sens, la musique, le mouvement. Chez moi, c’est comme ça :"
+            },
+            {
+              "titel": "Rouge (70–100) : le corps prend le dessus",
+              "text": "Réfléchir devient presque impossible. Ce qui aide : des skills corporels forts, sortir de la situation, chercher de l’aide. Chez moi, c’est comme ça :"
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "D’abord redescendre, ensuite parler.",
+          "text": "Dans le rouge, personne ne peut discuter calmement avec toi – toi non plus. Fais d’abord baisser ta tension. Ensuite, vous pourrez parler de ce qui s’est passé."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Quelle serait ta tension ? Coche la zone pour chaque situation.",
+          "hinweis": "Il n’y a pas de bonne ou de mauvaise réponse. La même situation vaut 20 pour une personne et 80 pour une autre."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "Vert 0–30",
+            "Orange 30–70",
+            "Rouge 70–100"
+          ],
+          "items": [
+            "Quelqu’un te passe devant dans la file de la cantine.",
+            "On te demande les devoirs que tu as oubliés.",
+            "Tu dois bientôt parler devant la classe.",
+            "L’écran de ton portable est fissuré.",
+            "Quelqu’un partage une photo gênante de toi dans le groupe de la classe.",
+            "On t’accuse de quelque chose que tu n’as pas fait.",
+            "Ton bus part juste sous ton nez."
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Tu décides de ce que tu partages.",
+          "text": "Au tour d’humeur, ton chiffre suffit. S’il est souvent très haut, parles-en à ton enseignant·e, au SePAS ou à une personne de confiance."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes découvrent l’échelle de tension de 0 à 100 et décrivent leurs signes dans trois zones. À partir de la séance « Les skills et l’échelle de tension », le chiffre fait partie de chaque tour d’humeur.",
+        "ablauf": [
+          "Introduction : remplir les trois zones au tableau avec la classe, puis l’exercice 1 seul.",
+          "Lire les situations de l’exercice 2 ; la classe montre la zone avec la main ou se place sur une ligne dans la salle.",
+          "Ensuite, à chaque tour d’humeur : dire l’émotion et le chiffre – sur l’affiche ou avec les doigts (0–10 pour 0–100)."
+        ],
+        "hintergrund": "L’échelle permet de parler de la tension et montre quels skills fonctionnent encore à quel niveau : quand la tension est très haute, ce sont surtout les skills corporels qui aident ; à un niveau moyen, plutôt la distraction et les sens (Rathus & Miller, 2015).",
+        "quellen": [
+          "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford."
+        ],
+        "material": "Échelle en affiche (A3), cahier de l’élève"
+      }
+    }
+  },
+  {
+    "id": "ff-skills-kompass",
+    "bereich": "skills",
+    "thema": "abschluss",
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln"
+    ],
+    "dauer": "5 Min. am Ende jedes Kapitels",
+    "eldib": [],
+    "schlagworte": [
+      "Skills-Kompass",
+      "6e",
+      "Rückblick",
+      "Förderfach"
+    ],
+    "bild": "icon:compass",
+    "de": {
+      "titel": "Mein Skills-Kompass",
+      "untertitel": "Welcher Skill hilft mir wo?",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Nicht jeder Skill passt überall. Der Kompass zeigt dir, welcher Skill dir wo hilft: in der Schule, bei Wut, in Freundschaften, zu Hause, im Netz. Der Skills-Koffer aus der 7e sortiert Skills nach der Anspannung – der Kompass sortiert sie nach den Bereichen deines Alltags."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Am Ende jedes Kapitels: Welcher Skill hilft dir in diesem Bereich – und wann setzt du ihn ein? Trag beides ins passende Feld ein.",
+          "hinweis": "Blättere dafür in deinem Skills-Pass. Ein Skill kann eine Übung sein, ein Satz, den du dir sagst, oder etwas, das du tust."
+        },
+        {
+          "art": "wortspeicher",
+          "titel": "Skills aus der 7e – sie zählen auch",
+          "items": [
+            "Kastenatmung",
+            "Fingeratmung",
+            "Anspannen und Loslassen",
+            "5-4-3-2-1",
+            "Kälte",
+            "Musik",
+            "rückwärts zählen",
+            "Gedankenschiffchen",
+            "sicherer Ort",
+            "Ich-Botschaft",
+            "Stopp-Satz",
+            "Nein-Satz",
+            "Erst runter, dann reden"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "So kann ein Eintrag aussehen",
+          "text": "Stress und Schule: Kastenatmung, bevor ich das Blatt umdrehe. Hilft mir, wenn mir im Test der Kopf leer wird."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "feld",
+              "label": "1 · Wieder ankommen",
+              "hoehe": 4.5
+            }
+          ],
+          "rechts": [
+            {
+              "art": "feld",
+              "label": "2 · Selbstwert und Körper",
+              "hoehe": 4.5
+            }
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "feld",
+              "label": "3 · Stress und Schule",
+              "hoehe": 4.5
+            }
+          ],
+          "rechts": [
+            {
+              "art": "feld",
+              "label": "4 · Wut und Impulse",
+              "hoehe": 4.5
+            }
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "feld",
+              "label": "5 · Freundschaft, Liebe und Zugehörigkeit",
+              "hoehe": 4.5
+            }
+          ],
+          "rechts": [
+            {
+              "art": "feld",
+              "label": "6 · Familie und Zuhause",
+              "hoehe": 4.5
+            }
+          ]
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "feld",
+              "label": "7 · Vielfalt und Respekt",
+              "hoehe": 4.5
+            }
+          ],
+          "rechts": [
+            {
+              "art": "feld",
+              "label": "8 · Sicher im Netz",
+              "hoehe": 4.5
+            }
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "feld",
+              "label": "9 · Riskant oder okay?",
+              "hoehe": 4.5
+            }
+          ],
+          "rechts": [
+            {
+              "art": "feld",
+              "label": "10 · Gesund an Körper und Seele",
+              "hoehe": 4.5
+            }
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "feld",
+              "label": "11 · Abschluss",
+              "hoehe": 4.5
+            }
+          ],
+          "rechts": [
+            {
+              "art": "feld",
+              "label": "Mein wichtigster Skill in diesem Jahr",
+              "hoehe": 4.5
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Am Ende des Jahres: Schau auf deinen ganzen Kompass. Was hat sich verändert?"
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "In diesem Bereich komme ich heute besser zurecht: …",
+            "Diesen Skill nutze ich inzwischen fast von selbst: …",
+            "Hier suche ich noch einen Skill: …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Du entscheidest, was du teilst.",
+          "text": "Der Kompass gehört dir. In der Runde reicht es, den Namen deines Skills zu nennen."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen halten am Ende jedes Kapitels fest, welcher Skill ihnen in diesem Bereich ihres Alltags hilft und wann. So entsteht über die 6e eine persönliche Übersicht.",
+        "ablauf": [
+          "Einheit 1 der 6e: Blatt zeigen und den Unterschied zum Skills-Koffer erklären.",
+          "Am Ende jedes Kapitels (5 Min., vor dem Skills-Pass): im Skills-Pass zurückblättern und ein Feld ausfüllen; wer noch keinen Skill hat, schreibt „noch offen“.",
+          "Letzte Einheit: die Abschlussfragen beantworten und gemeinsam zurückschauen."
+        ],
+        "hintergrund": "Skills wirken, wenn sie im Alltag abrufbar sind. Das Skillstraining für Jugendliche hält deshalb schriftlich fest, welcher Skill wann hilft, und fragt regelmäßig nach seinem Einsatz (Rathus & Miller, 2015).",
+        "quellen": [
+          "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford."
+        ],
+        "material": "Schülerheft"
+      }
+    },
+    "fr": {
+      "titel": "Ma boussole des skills",
+      "untertitel": "Quel skill m’aide, et où ?",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Tous les skills ne conviennent pas partout. La boussole te montre quel skill t’aide et où : à l’école, face à la colère, en amitié, à la maison, en ligne. La valise à skills de la 7e range les skills selon la tension – la boussole les range selon les domaines de ta vie."
+        },
+        {
+          "art": "aufgabe",
+          "text": "À la fin de chaque chapitre : quel skill t’aide dans ce domaine – et quand l’utilises-tu ? Note les deux dans la bonne case.",
+          "hinweis": "Pour cela, feuillette ton Skills-Pass. Un skill peut être un exercice, une phrase que tu te dis ou quelque chose que tu fais."
+        },
+        {
+          "art": "wortspeicher",
+          "titel": "Les skills de la 7e comptent aussi",
+          "items": [
+            "respiration carrée",
+            "respiration des doigts",
+            "contracter et relâcher",
+            "5-4-3-2-1",
+            "le froid",
+            "la musique",
+            "compter à rebours",
+            "le petit bateau des pensées",
+            "le lieu sûr",
+            "message en « je »",
+            "phrase stop",
+            "phrase pour dire non",
+            "D’abord redescendre, ensuite parler"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Exemple d’entrée",
+          "text": "Stress et école : respiration carrée avant de retourner la feuille. M’aide quand j’ai un trou pendant un devoir en classe."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "feld",
+              "label": "1 · Se retrouver",
+              "hoehe": 4.5
+            }
+          ],
+          "rechts": [
+            {
+              "art": "feld",
+              "label": "2 · Estime de soi et corps",
+              "hoehe": 4.5
+            }
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "feld",
+              "label": "3 · Stress et école",
+              "hoehe": 4.5
+            }
+          ],
+          "rechts": [
+            {
+              "art": "feld",
+              "label": "4 · Colère et impulsions",
+              "hoehe": 4.5
+            }
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "feld",
+              "label": "5 · Amitié, amour et appartenance",
+              "hoehe": 4.5
+            }
+          ],
+          "rechts": [
+            {
+              "art": "feld",
+              "label": "6 · Famille et foyer",
+              "hoehe": 4.5
+            }
+          ]
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "feld",
+              "label": "7 · Diversité et respect",
+              "hoehe": 4.5
+            }
+          ],
+          "rechts": [
+            {
+              "art": "feld",
+              "label": "8 · En sécurité en ligne",
+              "hoehe": 4.5
+            }
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "feld",
+              "label": "9 · Risqué ou pas ?",
+              "hoehe": 4.5
+            }
+          ],
+          "rechts": [
+            {
+              "art": "feld",
+              "label": "10 · Bien dans son corps et dans sa tête",
+              "hoehe": 4.5
+            }
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "feld",
+              "label": "11 · Bilan",
+              "hoehe": 4.5
+            }
+          ],
+          "rechts": [
+            {
+              "art": "feld",
+              "label": "Mon skill le plus important cette année",
+              "hoehe": 4.5
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "À la fin de l’année : regarde toute ta boussole. Qu’est-ce qui a changé ?"
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Dans ce domaine, je m’en sors mieux aujourd’hui : …",
+            "Ce skill, je l’utilise maintenant presque sans y penser : …",
+            "Ici, je cherche encore un skill : …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Tu décides de ce que tu partages.",
+          "text": "La boussole t’appartient. Au tour de table, il suffit de dire le nom de ton skill."
+        }
+      ],
+      "lehrer": {
+        "ziel": "À la fin de chaque chapitre, les jeunes notent quel skill les aide dans ce domaine de leur vie et quand. Au fil de la 6e se construit ainsi une vue d’ensemble personnelle.",
+        "ablauf": [
+          "Séance 1 de la 6e : présenter la fiche et expliquer la différence avec la valise à skills.",
+          "À la fin de chaque chapitre (5 min, avant le Skills-Pass) : feuilleter le Skills-Pass et remplir une case ; qui n’a pas encore de skill écrit « encore ouvert ».",
+          "Dernière séance : répondre aux questions de fin d’année et faire le bilan ensemble."
+        ],
+        "hintergrund": "Les skills sont efficaces quand on peut y recourir au quotidien. L’entraînement aux skills pour adolescents note donc par écrit quel skill aide et quand, et demande régulièrement comment il a été utilisé (Rathus & Miller, 2015).",
+        "quellen": [
+          "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford."
+        ],
+        "material": "Cahier de l’élève"
+      }
+    }
+  },
+  {
+    "id": "ff-skills-buch",
+    "bereich": "skills",
+    "thema": "abschluss",
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln"
+    ],
+    "dauer": "10 Min. am Ende jedes Kapitels",
+    "eldib": [],
+    "schlagworte": [
+      "Skills-Buch",
+      "5e",
+      "Rückblick",
+      "Förderfach"
+    ],
+    "bild": "icon:book",
+    "de": {
+      "titel": "Mein Skills-Buch",
+      "untertitel": "Was ich nach der 5e mitnehme",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "In der 5e probierst du viel aus. In dieses Buch kommt nur, was bei dir wirklich wirkt – in vier Rubriken: Lieblingsskills, Pläne, Sätze, die tragen, und Menschen, die helfen. So findest du es auch nach der 5e noch: in der Ausbildung, im Praktikum, zu Hause."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Gestalte dein Deckblatt: Gib deinem Buch einen Namen und zeichne ein Zeichen, das zu dir und deinem Weg passt.",
+          "hinweis": "Ein Symbol, ein Wort, ein Muster oder ein aufgeklebtes Foto – es muss nur dir gefallen."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "feld",
+              "label": "Mein Zeichen",
+              "zeichnen": true,
+              "hoehe": 6.4
+            }
+          ],
+          "rechts": [
+            {
+              "art": "satzanfaenge",
+              "items": [
+                "Mein Buch heißt: …"
+              ],
+              "linien": 2
+            },
+            {
+              "art": "satzanfaenge",
+              "items": [
+                "Im Juni will ich sagen können: …"
+              ],
+              "linien": 3
+            }
+          ]
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Am Ende jedes Kapitels: Was davon willst du in fünf Jahren noch wissen? Trag es hier ein.",
+          "hinweis": "Für jedes Kapitel gibt es eine neue Seite. Nicht jedes Feld muss voll werden – lieber ein guter Eintrag als vier halbe."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Kapitel: …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "feld",
+              "label": "Lieblingsskills – was mir wirklich hilft und wie es geht",
+              "beispiel": "Kastenatmung: 4 Sekunden ein, 4 halten, 4 aus, 4 halten. Hilft mir vor Tests.",
+              "hoehe": 9
+            },
+            {
+              "art": "feld",
+              "label": "Sätze, die tragen – was ich mir in schweren Momenten sage",
+              "beispiel": "Ein schwerer Moment ist noch kein schweres Leben.",
+              "hoehe": 9
+            }
+          ],
+          "rechts": [
+            {
+              "art": "feld",
+              "label": "Pläne – Wenn …, dann … für Momente, die ich kenne",
+              "beispiel": "Wenn mich im Praktikum jemand vor allen kritisiert, dann atme ich aus und frage, was ich anders machen soll.",
+              "hoehe": 9
+            },
+            {
+              "art": "feld",
+              "label": "Menschen, die helfen – wer, wobei und wie ich sie erreiche",
+              "beispiel": "Tante Sofia, wenn es zu Hause kracht: anrufen, auch abends. Kanner- a Jugendtelefon: 116 111",
+              "hoehe": 9
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Du entscheidest, was du teilst.",
+          "text": "Dein Buch gehört dir. Die Lehrkraft liest nur, was du ihr zeigst."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen legen in der 5e ein eigenes Skills-Buch an und ergänzen es am Ende jedes Kapitels – eine Sammlung aus Skills, Plänen, Sätzen und Menschen, die über das Fach hinaus trägt.",
+        "ablauf": [
+          "Einheit 1 der 5e (15 Min.): Seite 1 gestalten. Den Juni-Satz nicht vorlesen lassen.",
+          "Am Ende jedes Kapitels (10 Min.): Seite 2 neu kopieren und ausfüllen; nicht jede Rubrik muss voll werden.",
+          "Letzte Einheiten: Buch durchsehen, Lücken füllen, mitnehmen."
+        ],
+        "hintergrund": "Die Rubrik „Pläne“ nutzt Wenn-dann-Pläne, die die Umsetzung von Vorsätzen deutlich verbessern (Gollwitzer, 1999). „Menschen, die helfen“ folgt dem Sicherheitsplan nach Stanley und Brown (2012): Hilfe wird konkret, mit Namen und Weg.",
+        "quellen": [
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503.",
+          "Stanley, B. & Brown, G. K. (2012). Safety planning intervention: A brief intervention to mitigate suicide risk. Cognitive and Behavioral Practice, 19(2), 256–264."
+        ],
+        "achtung": "Persönlich: nicht einsammeln, nicht vorlesen, nicht bewerten. Bei Hinweisen auf Selbstverletzung, Gewalt oder Suizidgedanken: Gespräch unter vier Augen, noch am selben Tag den SePAS informieren.",
+        "material": "Schülerheft, Ringbuch oder Mappe"
+      }
+    },
+    "fr": {
+      "titel": "Mon livre des skills",
+      "untertitel": "Ce que j’emporte après la 5e",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "En 5e, tu essaies beaucoup de choses. Dans ce livre, tu ne gardes que ce qui marche vraiment pour toi – en quatre rubriques : skills préférés, plans, phrases qui portent et personnes qui aident. Ainsi, tu les retrouves aussi après la 5e : en formation, en stage, à la maison."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Crée ta couverture : donne un nom à ton livre et dessine un signe qui te correspond, toi et ton chemin.",
+          "hinweis": "Un symbole, un mot, un motif ou une photo collée – il suffit qu’il te plaise."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "feld",
+              "label": "Mon signe",
+              "zeichnen": true,
+              "hoehe": 6.4
+            }
+          ],
+          "rechts": [
+            {
+              "art": "satzanfaenge",
+              "items": [
+                "Mon livre s’appelle : …"
+              ],
+              "linien": 2
+            },
+            {
+              "art": "satzanfaenge",
+              "items": [
+                "En juin, je veux pouvoir dire : …"
+              ],
+              "linien": 3
+            }
+          ]
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "À la fin de chaque chapitre : qu’est-ce que tu veux encore savoir dans cinq ans ? Note-le ici.",
+          "hinweis": "Chaque chapitre a sa nouvelle page. Pas besoin de tout remplir – mieux vaut une bonne entrée que quatre à moitié."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Chapitre : …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "feld",
+              "label": "Skills préférés – ce qui m’aide vraiment et comment ça marche",
+              "beispiel": "Respiration carrée : inspirer 4 secondes, retenir 4, expirer 4, retenir 4. M’aide avant les devoirs en classe.",
+              "hoehe": 9
+            },
+            {
+              "art": "feld",
+              "label": "Phrases qui portent – ce que je me dis dans les moments durs",
+              "beispiel": "Un moment difficile n’est pas une vie difficile.",
+              "hoehe": 9
+            }
+          ],
+          "rechts": [
+            {
+              "art": "feld",
+              "label": "Plans – si…, alors… pour des moments que je connais",
+              "beispiel": "Si quelqu’un me critique devant tout le monde en stage, alors j’expire et je demande ce que je dois faire autrement.",
+              "hoehe": 9
+            },
+            {
+              "art": "feld",
+              "label": "Personnes qui aident – qui, pour quoi et comment les joindre",
+              "beispiel": "Tante Sofia, quand ça éclate à la maison : l’appeler, même le soir. Kanner- a Jugendtelefon : 116 111",
+              "hoehe": 9
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Tu décides de ce que tu partages.",
+          "text": "Ton livre t’appartient. L’enseignant·e ne lit que ce que tu lui montres."
+        }
+      ],
+      "lehrer": {
+        "ziel": "En 5e, les jeunes créent leur propre livre des skills et le complètent à la fin de chaque chapitre – un recueil de skills, de plans, de phrases et de personnes qui porte au-delà de la matière.",
+        "ablauf": [
+          "Séance 1 de la 5e (15 min) : créer la page 1. Ne pas faire lire la phrase de juin.",
+          "À la fin de chaque chapitre (10 min) : photocopier une nouvelle page 2 et la remplir ; toutes les rubriques ne doivent pas être pleines.",
+          "Dernières séances : relire le livre, compléter les manques, l’emporter."
+        ],
+        "hintergrund": "La rubrique « Plans » utilise des plans si-alors, qui améliorent nettement la mise en œuvre des bonnes résolutions (Gollwitzer, 1999). « Personnes qui aident » suit le plan de sécurité de Stanley et Brown (2012) : l’aide devient concrète, avec des noms et un chemin.",
+        "quellen": [
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503.",
+          "Stanley, B. & Brown, G. K. (2012). Safety planning intervention: A brief intervention to mitigate suicide risk. Cognitive and Behavioral Practice, 19(2), 256–264."
+        ],
+        "achtung": "Personnel : ne pas ramasser, ne pas faire lire, ne pas évaluer. En cas de signes d’automutilation, de violence ou d’idées suicidaires : entretien en tête-à-tête, informer le SePAS le jour même.",
+        "material": "Cahier de l’élève, classeur ou chemise"
       }
     }
   }

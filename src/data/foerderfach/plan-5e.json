@@ -32,17 +32,105 @@
     }
   },
   "kapitel": [
-    { "id": "ff5-k1", "nr": 1, "trimester": 1, "bild": "icon:door-enter", "titel": { "de": "Ankommen", "fr": "Arriver" }, "leitfrage": { "de": "Wo stehe ich?", "fr": "Où en suis-je ?" } },
-    { "id": "ff5-k2", "nr": 2, "trimester": 1, "bild": "icon:compass", "titel": { "de": "Werte und Identität", "fr": "Valeurs et identité" }, "leitfrage": { "de": "Was ist mir wichtig – und wer will ich sein?", "fr": "Qu’est-ce qui compte pour moi – et qui est-ce que je veux être ?" } },
-    { "id": "ff5-k3", "nr": 3, "trimester": 1, "bild": "icon:route", "titel": { "de": "Zukunft und Beruf", "fr": "Avenir et métier" }, "leitfrage": { "de": "Was kann ich, was will ich – und wie komme ich dahin?", "fr": "Qu’est-ce que je sais faire, qu’est-ce que je veux – et comment y arriver ?" } },
-    { "id": "ff5-k4", "nr": 4, "trimester": 1, "bild": "icon:wallet", "titel": { "de": "Selbstständig werden", "fr": "Devenir autonome" }, "leitfrage": { "de": "Was brauche ich, um mein Leben selbst zu organisieren?", "fr": "De quoi ai-je besoin pour organiser ma vie ?" } },
-    { "id": "ff5-k5", "nr": 5, "trimester": 2, "bild": "icon:scale", "titel": { "de": "Entscheidungen und Verantwortung", "fr": "Choix et responsabilité" }, "leitfrage": { "de": "Wie entscheide ich gut?", "fr": "Comment bien décider ?" } },
-    { "id": "ff5-k6", "nr": 6, "trimester": 2, "bild": "icon:umbrella", "titel": { "de": "Schwere Gefühle", "fr": "Émotions difficiles" }, "leitfrage": { "de": "Was tun mit Trauer, Scham und Einsamkeit?", "fr": "Que faire de la tristesse, de la honte et de la solitude ?" } },
-    { "id": "ff5-k7", "nr": 7, "trimester": 2, "bild": "icon:lifebuoy", "titel": { "de": "Resilienz und Hilfe", "fr": "Résilience et aide" }, "leitfrage": { "de": "Was hält mich, wenn es schwer wird?", "fr": "Qu’est-ce qui me tient quand c’est dur ?" } },
-    { "id": "ff5-k8", "nr": 8, "trimester": 3, "bild": "icon:speakerphone", "titel": { "de": "Meinung und Mitbestimmung", "fr": "Opinion et participation" }, "leitfrage": { "de": "Wie vertrete ich meine Meinung – fair und wirksam?", "fr": "Comment défendre mon avis – avec respect et efficacité ?" } },
-    { "id": "ff5-k9", "nr": 9, "trimester": 3, "bild": "icon:heart-handshake", "titel": { "de": "Liebe, Sexualität und Einvernehmlichkeit", "fr": "Amour, sexualité et consentement" }, "leitfrage": { "de": "Was gehört zu einer guten Beziehung – und wie geht Einvernehmlichkeit?", "fr": "Qu’est-ce qu’une bonne relation – et comment fonctionne le consentement ?" } },
-    { "id": "ff5-k10", "nr": 10, "trimester": 3, "bild": "icon:robot", "titel": { "de": "Medien und KI", "fr": "Médias et IA" }, "leitfrage": { "de": "Wer steuert, was ich sehe – und wie nutze ich KI klug?", "fr": "Qui décide de ce que je vois – et comment utiliser l’IA avec discernement ?" } },
-    { "id": "ff5-k11", "nr": 11, "trimester": 3, "bild": "icon:flag", "titel": { "de": "Abschluss", "fr": "Bilan" }, "leitfrage": { "de": "Was nehme ich mit auf meinen Weg?", "fr": "Qu’est-ce que j’emporte sur mon chemin ?" } }
+    {
+      "id": "ff5-k1", "nr": 1, "trimester": 1, "bild": "icon:door-enter",
+      "titel": { "de": "Ankommen", "fr": "Arriver" },
+      "leitfrage": { "de": "Wo stehe ich?", "fr": "Où en suis-je ?" },
+      "worum": {
+        "de": "Das letzte Jahr im Fach beginnt. Die Klasse erneuert ihre Vereinbarung, sammelt anonym Wünsche und Sorgen und beginnt das Skills-Buch: Hier kommt hinein, was nach der 5e bleiben soll. Mit dem Skills-Radar bestimmt jede Person ihren Stand und zwei Ziele für das Jahr.",
+        "fr": "La dernière année de la matière commence. La classe renouvelle sa charte, rassemble anonymement souhaits et inquiétudes et commence le livre des skills : on y garde ce qui doit rester après la 5e. Avec le radar des skills, chacun fait le point et se fixe deux objectifs pour l’année."
+      }
+    },
+    {
+      "id": "ff5-k2", "nr": 2, "trimester": 1, "bild": "icon:compass",
+      "titel": { "de": "Werte und Identität", "fr": "Valeurs et identité" },
+      "leitfrage": { "de": "Was ist mir wichtig – und wer will ich sein?", "fr": "Qu’est-ce qui compte pour moi – et qui est-ce que je veux être ?" },
+      "worum": {
+        "de": "Was ist mir wichtig – und wer will ich sein? Die Jugendlichen entdecken Werte hinter Alltagsentscheidungen, gestalten ihre Identitäts-Blume aus Rollen und Zugehörigkeiten und prüfen, wer sie prägt: Vorbilder aus dem Umfeld und aus dem Netz.",
+        "fr": "Qu’est-ce qui compte pour moi – et qui est-ce que je veux être ? Les jeunes découvrent les valeurs derrière les choix du quotidien, dessinent leur fleur d’identité avec leurs rôles et leurs appartenances et examinent qui les influence : modèles de l’entourage et d’Internet."
+      }
+    },
+    {
+      "id": "ff5-k3", "nr": 3, "trimester": 1, "bild": "icon:route",
+      "titel": { "de": "Zukunft und Beruf", "fr": "Avenir et métier" },
+      "leitfrage": { "de": "Was kann ich, was will ich – und wie komme ich dahin?", "fr": "Qu’est-ce que je sais faire, qu’est-ce que je veux – et comment y arriver ?" },
+      "worum": {
+        "de": "Nach der 5e beginnt für viele die Berufsausbildung. Die Klasse beginnt ein Berufsprofil aus Interessen, Stärken und dem Blick der anderen, entdeckt Berufe und Wege dorthin, übt Bewerbung und Vorstellungsgespräch und macht aus einem Wunsch ein Ziel mit Plan.",
+        "fr": "Après la 5e, beaucoup entrent en formation professionnelle. La classe commence un profil métier à partir des intérêts, des forces et du regard des autres, découvre des métiers et les chemins pour y arriver, s’exerce à la candidature et à l’entretien et transforme un souhait en objectif avec un plan."
+      }
+    },
+    {
+      "id": "ff5-k4", "nr": 4, "trimester": 1, "bild": "icon:wallet",
+      "titel": { "de": "Selbstständig werden", "fr": "Devenir autonome" },
+      "leitfrage": { "de": "Was brauche ich, um mein Leben selbst zu organisieren?", "fr": "De quoi ai-je besoin pour organiser ma vie ?" },
+      "worum": {
+        "de": "Geld, Termine, Wege, Formulare, Einkaufen: Die Jugendlichen üben, was sie brauchen, um ihr Leben selbst zu organisieren – mit Monatsbudget, Rückwärtsplanung, Busfahrplan, Telefontraining und einem einfachen Essen, das sie planen und, wo es eine Schulküche gibt, auch kochen.",
+        "fr": "Argent, rendez-vous, trajets, formulaires, courses : les jeunes s’entraînent à ce dont ils ont besoin pour organiser leur vie – avec un budget mensuel, une planification à rebours, les horaires de bus, un entraînement au téléphone et un repas simple qu’ils planifient et, s’il y a une cuisine à l’école, qu’ils préparent."
+      }
+    },
+    {
+      "id": "ff5-k5", "nr": 5, "trimester": 2, "bild": "icon:scale",
+      "titel": { "de": "Entscheidungen und Verantwortung", "fr": "Choix et responsabilité" },
+      "leitfrage": { "de": "Wie entscheide ich gut?", "fr": "Comment bien décider ?" },
+      "worum": {
+        "de": "Wie entscheide ich gut – auch wenn andere zuschauen? Die Klasse lernt einen Entscheidungsweg in vier Schritten, erlebt im Würfel-Experiment den Einfluss der Gruppe, trennt Mut von Leichtsinn, prüft Mythen über Rausch und Risiko und übt, aus Fehlern zu lernen.",
+        "fr": "Comment bien décider – même quand les autres regardent ? La classe apprend une démarche de décision en quatre étapes, vit l’influence du groupe dans l’expérience des dés, distingue courage et imprudence, vérifie les idées reçues sur l’ivresse et le risque et s’exerce à apprendre de ses erreurs."
+      }
+    },
+    {
+      "id": "ff5-k6", "nr": 6, "trimester": 2, "bild": "icon:umbrella",
+      "titel": { "de": "Schwere Gefühle", "fr": "Émotions difficiles" },
+      "leitfrage": { "de": "Was tun mit Trauer, Scham und Einsamkeit?", "fr": "Que faire de la tristesse, de la honte et de la solitude ?" },
+      "worum": {
+        "de": "Trauer, Scham und Einsamkeit kennt jeder – darüber gesprochen wird selten. Die Klasse versteht, wie diese Gefühle wirken und was hilft, übt, anderen beizustehen, und lernt in der letzten Einheit, gemeinsam mit dem SePAS, einen Sicherheitsplan für Zeiten, in denen es richtig schlecht geht.",
+        "fr": "Tout le monde connaît le chagrin, la honte et la solitude – on en parle rarement. La classe comprend comment ces émotions agissent et ce qui aide, s’exerce à soutenir les autres et découvre dans la dernière séance, avec le SePAS, un plan de sécurité pour les moments où ça va vraiment mal."
+      }
+    },
+    {
+      "id": "ff5-k7", "nr": 7, "trimester": 2, "bild": "icon:lifebuoy",
+      "titel": { "de": "Resilienz und Hilfe", "fr": "Résilience et aide" },
+      "leitfrage": { "de": "Was hält mich, wenn es schwer wird?", "fr": "Qu’est-ce qui me tient quand c’est dur ?" },
+      "worum": {
+        "de": "Was hält Menschen, wenn es schwer wird? Die Jugendlichen erfahren, was die Resilienzforschung weiß, sammeln ihre Kraftquellen, zeichnen ihr Netz aus Menschen und Stellen, die helfen, und üben den ersten Satz, mit dem man um Hilfe bittet.",
+        "fr": "Qu’est-ce qui tient les gens debout quand c’est difficile ? Les jeunes découvrent ce que sait la recherche sur la résilience, rassemblent leurs sources de force, dessinent leur réseau de personnes et de services qui aident et s’exercent à la première phrase pour demander de l’aide."
+      }
+    },
+    {
+      "id": "ff5-k8", "nr": 8, "trimester": 3, "bild": "icon:speakerphone",
+      "titel": { "de": "Meinung und Mitbestimmung", "fr": "Opinion et participation" },
+      "leitfrage": { "de": "Wie vertrete ich meine Meinung – fair und wirksam?", "fr": "Comment défendre mon avis – avec respect et efficacité ?" },
+      "worum": {
+        "de": "Tatsache oder Meinung? Die Klasse bildet sich in vier Schritten eine Meinung, baut Argumente, debattiert nach fairen Regeln und bringt am Ende ein eigenes Anliegen in den Klassenrat – mit der Beteiligungsleiter als Maßstab.",
+        "fr": "Fait ou opinion ? La classe se forge une opinion en quatre étapes, construit des arguments, débat selon des règles justes et porte pour finir sa propre demande au conseil de coopération – avec l’échelle de participation comme repère."
+      }
+    },
+    {
+      "id": "ff5-k9", "nr": 9, "trimester": 3, "bild": "icon:heart-handshake",
+      "titel": { "de": "Liebe, Sexualität und Einvernehmlichkeit", "fr": "Amour, sexualité et consentement" },
+      "leitfrage": { "de": "Was gehört zu einer guten Beziehung – und wie geht Einvernehmlichkeit?", "fr": "Qu’est-ce qu’une bonne relation – et comment fonctionne le consentement ?" },
+      "worum": {
+        "de": "Ein sensibles Kapitel mit klarem Rahmen: Die Eltern sind vorab informiert, persönliche Fragen gibt es nicht, Fragen dürfen anonym gestellt werden. Im Mittelpunkt stehen Respekt in Beziehungen, Einvernehmlichkeit, Vielfalt und der Schutz vor Druck und Erpressung im Netz.",
+        "fr": "Un chapitre sensible avec un cadre clair : les parents sont informés à l’avance, pas de questions personnelles, les questions peuvent être posées anonymement. Au centre : le respect dans les relations, le consentement, la diversité et la protection contre la pression et le chantage en ligne."
+      }
+    },
+    {
+      "id": "ff5-k10", "nr": 10, "trimester": 3, "bild": "icon:robot",
+      "titel": { "de": "Medien und KI", "fr": "Médias et IA" },
+      "leitfrage": { "de": "Wer steuert, was ich sehe – und wie nutze ich KI klug?", "fr": "Qui décide de ce que je vois – et comment utiliser l’IA avec discernement ?" },
+      "worum": {
+        "de": "Wer steuert, was ich sehe? Die Jugendlichen lernen die Signale kennen, nach denen Feeds sortieren, bauen ohne Handy zwei Feeds und steuern gegen. Sie prüfen KI-Antworten und legen eigene Regeln für KI fest: bei Hausaufgaben, Daten und Deepfakes.",
+        "fr": "Qui décide de ce que je vois ? Les jeunes découvrent les signaux selon lesquels les fils d’actualité trient, construisent deux fils sans portable et reprennent la main. Ils vérifient les réponses d’une IA et fixent leurs propres règles pour l’IA : devoirs, données et deepfakes."
+      }
+    },
+    {
+      "id": "ff5-k11", "nr": 11, "trimester": 3, "bild": "icon:flag",
+      "titel": { "de": "Abschluss", "fr": "Bilan" },
+      "leitfrage": { "de": "Was nehme ich mit auf meinen Weg?", "fr": "Qu’est-ce que j’emporte sur mon chemin ?" },
+      "worum": {
+        "de": "Drei Jahre gehen zu Ende. Ein zweites Skills-Radar zeigt, was gewachsen ist, das Skills-Buch wird fertig, der Übergang nach der 5e wird geplant. Zum Abschied geht die Klasse ihren Weg durch drei Jahre noch einmal ab, und alle geben einander Proviant für den Weg mit.",
+        "fr": "Trois années se terminent. Un deuxième radar des skills montre ce qui a grandi, le livre des skills est terminé et le passage après la 5e est préparé. Pour se dire au revoir, la classe refait le chemin des trois années et chacun donne aux autres des provisions pour la route."
+      }
+    }
   ],
   "einheiten": [
     {

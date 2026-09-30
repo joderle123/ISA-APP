@@ -55,6 +55,8 @@ export interface Kapitel {
   leitfrage: Zweisprachig
   /** Piktogramm, z. B. 'icon:door-enter' */
   bild: string
+  /** 2–3 Sätze: worum es im Kapitel geht (Kapitelseite im Handbuch) */
+  worum?: Zweisprachig
 }
 
 export interface Jahresplan {
@@ -87,6 +89,10 @@ export interface EinheitText {
   quellen?: string[]
   /** Sensible Punkte und wann handeln */
   achtung?: string
+  /** Für gemischte Klassen: einfacher (Sprache, Lesen, Schreiben) und anspruchsvoller */
+  differenzierung?: { leichter: string; schwerer: string }
+  /** Wenn nur eine Stunde (50 Min.) bleibt: welche Schritte, was entfällt, was sich verschieben lässt */
+  kurzfassung?: string
 }
 
 /** Eine ausgearbeitete Einheit. Minuten, Phasen und Blätter müssen in beiden Sprachen gleich sein. */
@@ -96,14 +102,20 @@ export interface Einheit {
   klasse: Klasse
   /** Minuten, meist 100 */
   dauer: number
-  /** Blätter des Schülerhefts (Ids aus blaetter.json) in der Reihenfolge der Einheit */
+  /** Blätter des Schülerhefts (Ids aus blaetter*.json) in der Reihenfolge der Einheit */
   blaetter: string[]
+  /** Kopiervorlagen nur für die Lehrkraft (Karten zum Ausschneiden): im Handbuch nach der Einheit, nicht im Schülerheft */
+  vorlagen?: string[]
+  /** Wortspeicher: 3–6 Schlüsselwörter der Einheit in beiden Sprachen (steht an der Tafel, landet im Glossar) */
+  woerter: Zweisprachig[]
   de: EinheitText
   fr: EinheitText
 }
 
 export interface EinheitenDatei {
   einheiten: Einheit[]
+  /** Nur in Entwürfen (src/data/foerderfach/entwurf): die Schülerblätter dieser Einheiten */
+  blaetter?: import('../blatt/typen').Blatt[]
 }
 
 // --- Texte des Lehrerhandbuchs (Teil A) ------------------------------------------------
@@ -113,9 +125,30 @@ export interface TitelText {
   text: string
 }
 
+/** Methoden für alle Einheiten: Varianten, Ersatz, Hilfe bei Unruhe (Teil A) */
+export interface MethodenGruppe {
+  titel: string
+  /** Minuten im Ablauf, z. B. „0–10“ (optional) */
+  wann?: string
+  text?: string
+  eintraege: TitelText[]
+}
+
+/** Elternbrief als Kopiervorlage – steht in jedem Heft auf Deutsch und auf Französisch. */
+export interface ElternBrief {
+  /** Überschrift der Seite im Heft, z. B. „Elternbrief (Deutsch)“ */
+  seite: string
+  betreff: string
+  anrede: string
+  absaetze: string[]
+  gruss: string
+  unterschrift: string
+  abschnitt: { titel: string; felder: string[]; bestaetigung: string; frage: string; unterschrift: string }
+}
+
 export interface HandbuchText {
-  /** Kurzer Hinweis auf der Inhaltsseite (Entwurf, Aufbau); {klasse} wird ersetzt */
-  vorwort: { titel: string; mitEinheit: string; ohneEinheit: string }
+  /** Kurzer Hinweis auf der Inhaltsseite (Aufbau des Hefts); {klasse} wird ersetzt */
+  vorwort: { titel: string; text: string }
   ueberblick: {
     titel: string
     einleitung: string
@@ -150,6 +183,15 @@ export interface HandbuchText {
     titel: string
     einleitung: string
   }
+  methoden: { titel: string; einleitung: string; gruppen: MethodenGruppe[] }
+  eltern: { titel: string; einleitung: string; punkte: TitelText[]; kollegium: TitelText }
+  brief: ElternBrief
+  material: { titel: string; einleitung: string; gruppen: { titel: string; punkte: string[] }[] }
+  /** Plakat „Unser Weg durch die 7e“: Seitentitel im Heft, Hinweis; {klasse} wird ersetzt */
+  jahresweg: { titel: string; text: string; plakat: string }
+  glossar: { titel: string; text: string }
+  /** Schülerheft: Inhaltsseite, Wörterliste, Rückseite mit Hilfe */
+  heft: { inhalt: string; jedeStunde: string; woerter: string; woerterText: string; hilfeTitel: string; hilfeText: string; notizen: string }
   /** Rückseite des Hefts */
   rueckseite: { titel: string; text: string; dieses: string }
 }

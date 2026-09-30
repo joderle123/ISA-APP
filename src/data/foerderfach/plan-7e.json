@@ -32,16 +32,96 @@
     }
   },
   "kapitel": [
-    { "id": "ff7-k1", "nr": 1, "trimester": 1, "bild": "icon:door-enter", "titel": { "de": "Ankommen", "fr": "Arriver" }, "leitfrage": { "de": "Wer sind wir als Klasse?", "fr": "Qui sommes-nous en tant que classe ?" } },
-    { "id": "ff7-k2", "nr": 2, "trimester": 1, "bild": "icon:user", "titel": { "de": "Wer bin ich?", "fr": "Qui suis-je ?" }, "leitfrage": { "de": "Was brauche ich, was kann ich?", "fr": "De quoi ai-je besoin, qu’est-ce que je sais faire ?" } },
-    { "id": "ff7-k3", "nr": 3, "trimester": 1, "bild": "icon:mood-smile", "titel": { "de": "Gefühle verstehen", "fr": "Comprendre les émotions" }, "leitfrage": { "de": "Was fühle ich – und wozu?", "fr": "Qu’est-ce que je ressens – et à quoi ça sert ?" } },
-    { "id": "ff7-k4", "nr": 4, "trimester": 2, "bild": "icon:feather", "titel": { "de": "Gefühle regulieren", "fr": "Réguler ses émotions" }, "leitfrage": { "de": "Was hilft mir, wenn es zu viel wird?", "fr": "Qu’est-ce qui m’aide quand c’est trop ?" } },
-    { "id": "ff7-k5", "nr": 5, "trimester": 2, "bild": "icon:message-circle", "titel": { "de": "Kommunikation und Grenzen", "fr": "Communication et limites" }, "leitfrage": { "de": "Wie sage ich, was ich fühle und brauche?", "fr": "Comment dire ce que je ressens et ce dont j’ai besoin ?" } },
-    { "id": "ff7-k6", "nr": 6, "trimester": 2, "bild": "icon:shield", "titel": { "de": "Wenn es schwierig wird", "fr": "Quand ça se complique" }, "leitfrage": { "de": "Was tue ich bei Streit, Gruppendruck und Mobbing?", "fr": "Que faire face aux disputes, à la pression du groupe et au harcèlement ?" } },
-    { "id": "ff7-k7", "nr": 7, "trimester": 3, "bild": "icon:device-mobile", "titel": { "de": "Digitale Welt", "fr": "Monde numérique" }, "leitfrage": { "de": "Was macht das Handy mit mir?", "fr": "Qu’est-ce que le portable fait de moi ?" } },
-    { "id": "ff7-k8", "nr": 8, "trimester": 3, "bild": "icon:bulb", "titel": { "de": "Meine Gedanken", "fr": "Mes pensées" }, "leitfrage": { "de": "Was denke ich über mich – und stimmt das?", "fr": "Qu’est-ce que je pense de moi – et est-ce vrai ?" } },
-    { "id": "ff7-k9", "nr": 9, "trimester": 3, "bild": "icon:heart", "titel": { "de": "Gesund und stark", "fr": "Prendre soin de soi" }, "leitfrage": { "de": "Wie sorge ich für mich?", "fr": "Comment prendre soin de moi ?" } },
-    { "id": "ff7-k10", "nr": 10, "trimester": 3, "bild": "icon:flag", "titel": { "de": "Abschluss", "fr": "Bilan" }, "leitfrage": { "de": "Was nehme ich mit?", "fr": "Qu’est-ce que j’emporte ?" } }
+    {
+      "id": "ff7-k1", "nr": 1, "trimester": 1, "bild": "icon:door-enter",
+      "titel": { "de": "Ankommen", "fr": "Arriver" },
+      "leitfrage": { "de": "Wer sind wir als Klasse?", "fr": "Qui sommes-nous en tant que classe ?" },
+      "worum": {
+        "de": "Die Klasse ist neu, das Lycée auch. In diesem Kapitel entsteht der Rahmen für das ganze Jahr: Rituale, eine gemeinsame Klassenvereinbarung, erste Orientierung am Lycée und ein Klassenrat, in dem die Jugendlichen mitentscheiden. Wer sich sicher fühlt, kann später auch über Schwieriges reden.",
+        "fr": "La classe est nouvelle, le lycée aussi. Ce chapitre pose le cadre de toute l’année : des rituels, une charte de classe commune, des repères au lycée et un conseil de coopération où les jeunes participent aux décisions. Qui se sent en sécurité pourra plus tard parler aussi de choses difficiles."
+      }
+    },
+    {
+      "id": "ff7-k2", "nr": 2, "trimester": 1, "bild": "icon:user",
+      "titel": { "de": "Wer bin ich?", "fr": "Qui suis-je ?" },
+      "leitfrage": { "de": "Was brauche ich, was kann ich?", "fr": "De quoi ai-je besoin, qu’est-ce que je sais faire ?" },
+      "worum": {
+        "de": "Bevor es um Gefühle geht, schauen die Jugendlichen auf sich selbst: Was brauche ich, damit es mir gut geht? Wo stehe ich zwischen laut und leise? Was kann ich schon? Das Glas der Bedürfnisse und der Baum der Stärke begleiten die Klasse durch das ganze Jahr.",
+        "fr": "Avant de parler des émotions, les jeunes se regardent eux-mêmes : de quoi ai-je besoin pour aller bien ? Où est-ce que je me situe, entre bruyant et discret ? Qu’est-ce que je sais déjà faire ? Le bocal des besoins et l’arbre des forces accompagnent la classe toute l’année."
+      }
+    },
+    {
+      "id": "ff7-k3", "nr": 3, "trimester": 1, "bild": "icon:mood-smile",
+      "titel": { "de": "Gefühle verstehen", "fr": "Comprendre les émotions" },
+      "leitfrage": { "de": "Was fühle ich – und wozu?", "fr": "Qu’est-ce que je ressens – et à quoi ça sert ?" },
+      "worum": {
+        "de": "Gefühle sind Signale, keine Störungen. Die Klasse sammelt Gefühlswörter, entdeckt die Botschaft hinter jedem Grundgefühl, findet heraus, wo Gefühle im Körper sitzen, und erlebt, dass mehrere Gefühle gleichzeitig da sein können. Das ist die Grundlage für das zweite Trimester.",
+        "fr": "Les émotions sont des signaux, pas des pannes. La classe rassemble des mots pour les émotions, découvre le message de chaque émotion de base, repère où elles se logent dans le corps et constate que plusieurs émotions peuvent être là en même temps. C’est la base du deuxième trimestre."
+      }
+    },
+    {
+      "id": "ff7-k4", "nr": 4, "trimester": 2, "bild": "icon:feather",
+      "titel": { "de": "Gefühle regulieren", "fr": "Réguler ses émotions" },
+      "leitfrage": { "de": "Was hilft mir, wenn es zu viel wird?", "fr": "Qu’est-ce qui m’aide quand c’est trop ?" },
+      "worum": {
+        "de": "Jetzt wird geübt: Mit der Anspannungsskala von 0 bis 100 lernen die Jugendlichen, welcher Skill bei welcher Anspannung noch hilft. Sie testen Skills über Körper und Atem, über die Sinne und über den Kopf wie in einem Experiment – und packen am Ende ihren persönlichen Skills-Koffer mit Ampelplan.",
+        "fr": "Place à l’entraînement : avec l’échelle de tension de 0 à 100, les jeunes découvrent quel skill aide encore à quel niveau de tension. Ils testent des skills par le corps et la respiration, par les sens et par la tête, comme dans une expérience – et remplissent pour finir leur valise à skills avec un plan feu tricolore."
+      }
+    },
+    {
+      "id": "ff7-k5", "nr": 5, "trimester": 2, "bild": "icon:message-circle",
+      "titel": { "de": "Kommunikation und Grenzen", "fr": "Communication et limites" },
+      "leitfrage": { "de": "Wie sage ich, was ich fühle und brauche?", "fr": "Comment dire ce que je ressens et ce dont j’ai besoin ?" },
+      "worum": {
+        "de": "Wie sage ich, was ich fühle und brauche – ohne Vorwurf? Die Klasse erlebt, wie viel ohne Worte ankommt, übt Ich-Botschaften und echtes Zuhören, spürt die eigene Wohlfühl-Distanz und probiert aus, wie man Stopp sagt: mit Worten, Stimme und Körper.",
+        "fr": "Comment dire ce que je ressens et ce dont j’ai besoin – sans reproche ? La classe découvre tout ce qui passe sans les mots, s’exerce aux messages en « je » et à la vraie écoute, sent sa propre distance de confort et essaie de dire stop : avec les mots, la voix et le corps."
+      }
+    },
+    {
+      "id": "ff7-k6", "nr": 6, "trimester": 2, "bild": "icon:shield",
+      "titel": { "de": "Wenn es schwierig wird", "fr": "Quand ça se complique" },
+      "leitfrage": { "de": "Was tue ich bei Streit, Gruppendruck und Mobbing?", "fr": "Que faire face aux disputes, à la pression du groupe et au harcèlement ?" },
+      "worum": {
+        "de": "Streit, Gruppendruck und Mobbing gehören zum Alltag vieler Jugendlicher. Die Klasse lernt die Konflikt-Treppe, übt Nein-Sagen in Druck-Situationen und unterscheidet Spaß, Konflikt und Mobbing. Im Mittelpunkt stehen die Zuschauenden: Was kann ich tun, damit es aufhört?",
+        "fr": "Disputes, pression du groupe et harcèlement font partie du quotidien de beaucoup de jeunes. La classe apprend l’escalier du conflit, s’exerce à dire non sous pression et distingue plaisanterie, conflit et harcèlement. Au centre : les témoins – que puis-je faire pour que ça s’arrête ?"
+      }
+    },
+    {
+      "id": "ff7-k7", "nr": 7, "trimester": 3, "bild": "icon:device-mobile",
+      "titel": { "de": "Digitale Welt", "fr": "Monde numérique" },
+      "leitfrage": { "de": "Was macht das Handy mit mir?", "fr": "Qu’est-ce que le portable fait de moi ?" },
+      "worum": {
+        "de": "Ohne erhobenen Zeigefinger: Die Jugendlichen vergleichen geschätzte und echte Bildschirmzeit, schauen hinter perfekte Bilder und prüfen, ob Beiträge echt oder gefälscht sind. Am Ende stehen ein eigener Handy-Plan und ein erster Blick auf KI.",
+        "fr": "Sans faire la morale : les jeunes comparent leur temps d’écran estimé et réel, regardent derrière les images parfaites et vérifient si des publications sont vraies ou fausses. À la fin, chacun a son propre plan portable – et un premier regard sur l’IA."
+      }
+    },
+    {
+      "id": "ff7-k8", "nr": 8, "trimester": 3, "bild": "icon:bulb",
+      "titel": { "de": "Meine Gedanken", "fr": "Mes pensées" },
+      "leitfrage": { "de": "Was denke ich über mich – und stimmt das?", "fr": "Qu’est-ce que je pense de moi – et est-ce vrai ?" },
+      "worum": {
+        "de": "Zwischen Situation und Gefühl steht ein Gedanke. Die Klasse entdeckt Sätze, die helfen oder bremsen, und prüft sie wie Detektive: Stimmt das wirklich? Persönliche Glaubenssätze bleiben im Heft; geübt wird mit erfundenen Beispielen und im Rollenspiel.",
+        "fr": "Entre la situation et l’émotion, il y a une pensée. La classe découvre des phrases qui aident ou qui freinent et les examine comme des détectives : est-ce vraiment vrai ? Les croyances personnelles restent dans le cahier ; on s’exerce avec des exemples inventés et en jeu de rôle."
+      }
+    },
+    {
+      "id": "ff7-k9", "nr": 9, "trimester": 3, "bild": "icon:heart",
+      "titel": { "de": "Gesund und stark", "fr": "Prendre soin de soi" },
+      "leitfrage": { "de": "Wie sorge ich für mich?", "fr": "Comment prendre soin de moi ?" },
+      "worum": {
+        "de": "Schlaf, Bewegung, Essen und Stress hängen zusammen. Die Jugendlichen beziehen Position, planen einen kleinen Schritt für ihren Alltag und lernen, wie sie ruhig durch die Testphase kommen: rückwärts planen und unauffällige Skills für den Test.",
+        "fr": "Sommeil, mouvement, alimentation et stress sont liés. Les jeunes prennent position, planifient un petit pas pour leur quotidien et apprennent à traverser sereinement la période des devoirs en classe : planifier à rebours et utiliser des skills discrets pendant l’épreuve."
+      }
+    },
+    {
+      "id": "ff7-k10", "nr": 10, "trimester": 3, "bild": "icon:flag",
+      "titel": { "de": "Abschluss", "fr": "Bilan" },
+      "leitfrage": { "de": "Was nehme ich mit?", "fr": "Qu’est-ce que j’emporte ?" },
+      "worum": {
+        "de": "Das Jahr wird sichtbar: In Gruppen entsteht ein kurzes Stück oder Video zu einem Thema des Jahres. In der letzten Stunde schaut die Klasse mit Skills-Pass, Glas und Baum zurück, und jede Person schreibt einen Brief an sich selbst.",
+        "fr": "L’année devient visible : en groupes, les jeunes créent une courte pièce ou une vidéo sur un thème de l’année. Lors de la dernière séance, la classe regarde en arrière avec le Skills-Pass, le bocal et l’arbre, et chacun écrit une lettre à soi-même."
+      }
+    }
   ],
   "einheiten": [
     {
@@ -207,9 +287,14 @@
       "kurz": { "de": "Woher Prüfungsstress kommt, das Lernen rückwärts planen, unauffällige Skills für den Test üben", "fr": "D’où vient le stress, planifier ses révisions à rebours, des skills discrets pour le jour J" }
     },
     {
-      "id": "ff7-e33", "nr": 33, "kapitel": "ff7-k10", "basis": "j1-j05", "wahl": true, "termine": 2, "kompetenzen": ["miteinander", "entscheiden"],
-      "titel": { "de": "Unser Stück – Theater oder Video", "fr": "Notre pièce – théâtre ou vidéo" },
-      "kurz": { "de": "In Gruppen kurze Szenen oder Videos zu einem Thema des Jahres entwickeln, proben und zeigen", "fr": "En groupes, créer de courtes scènes ou vidéos sur un thème de l’année, les répéter et les présenter" }
+      "id": "ff7-e33", "nr": 33, "kapitel": "ff7-k10", "basis": "j1-j05", "wahl": true, "kompetenzen": ["miteinander", "entscheiden"],
+      "titel": { "de": "Unser Stück 1: Idee und Szenen", "fr": "Notre pièce 1 : idée et scènes" },
+      "kurz": { "de": "In Gruppen ein Thema des Jahres wählen, eine kurze Szene oder ein Video planen, erste Proben", "fr": "En groupes, choisir un thème de l’année, préparer une courte scène ou vidéo, premières répétitions" }
+    },
+    {
+      "id": "ff7-e34", "nr": 34, "kapitel": "ff7-k10", "basis": "j1-j05", "wahl": true, "kompetenzen": ["miteinander", "kennen"],
+      "titel": { "de": "Unser Stück 2: Proben und Zeigen", "fr": "Notre pièce 2 : répéter et présenter" },
+      "kurz": { "de": "Proben, einander Rückmeldung geben und die Stücke der Klasse zeigen – mit Nachgespräch", "fr": "Répéter, se donner des retours et présenter les pièces à la classe – avec un échange" }
     },
     {
       "id": "ff7-e35", "nr": 35, "kapitel": "ff7-k10", "basis": "j1-e30", "kompetenzen": ["kennen", "miteinander"],

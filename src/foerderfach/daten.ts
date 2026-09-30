@@ -4,8 +4,13 @@ import plan7e from '../data/foerderfach/plan-7e.json'
 import plan6e from '../data/foerderfach/plan-6e.json'
 import plan5e from '../data/foerderfach/plan-5e.json'
 import einheiten7e from '../data/foerderfach/einheiten-7e.json'
+import einheiten6e from '../data/foerderfach/einheiten-6e.json'
+import einheiten5e from '../data/foerderfach/einheiten-5e.json'
 import handbuch from '../data/foerderfach/handbuch.json'
-import blaetterListe from '../data/foerderfach/blaetter.json'
+import werkzeugBlaetter from '../data/foerderfach/blaetter.json'
+import blaetter7e from '../data/foerderfach/blaetter-7e.json'
+import blaetter6e from '../data/foerderfach/blaetter-6e.json'
+import blaetter5e from '../data/foerderfach/blaetter-5e.json'
 import type { Blatt } from '../blatt/typen'
 import type { Einheit, EinheitenDatei, HandbuchDatei, Jahresplan, Klasse } from './typen'
 
@@ -13,13 +18,27 @@ export const PLAENE: Jahresplan[] = [plan7e as Jahresplan, plan6e as Jahresplan,
 export const planVon = (k: Klasse): Jahresplan => PLAENE.find((p) => p.klasse === k)!
 
 /** Ausgearbeitete Einheiten aller Klassenstufen */
-export const EINHEITEN: Einheit[] = [...(einheiten7e as EinheitenDatei).einheiten]
+export const EINHEITEN: Einheit[] = [einheiten7e, einheiten6e, einheiten5e].flatMap((d) => (d as EinheitenDatei).einheiten)
 
 export const HANDBUCH = handbuch as HandbuchDatei
 
-export const BLAETTER: Blatt[] = blaetterListe as Blatt[]
+/** Werkzeug-Blätter (für jede Stunde) und die Blätter der Einheiten je Klassenstufe */
+export const BLAETTER: Blatt[] = [werkzeugBlaetter, blaetter7e, blaetter6e, blaetter5e].flatMap((d) => d as Blatt[])
 export const blattById = new Map(BLAETTER.map((b) => [b.id, b]))
 
-/** Kopiervorlagen, die in jedes Booklet gehören: Einstieg, die Blätter für jede Stunde und die Klassenvereinbarung
- *  (die Einheit 1 jeder Klassenstufe stellt sie auf oder erneuert sie). */
-export const VORLAGEN = ['ff-das-fach', 'ff-gefuehlsrad', 'ff-skills-pass', 'ff-klassenvereinbarung']
+/** Werkzeug-Blätter je Klassenstufe – Teil D des Lehrerhandbuchs („Kopiervorlagen für jede Stunde“). */
+export const WERKZEUGE: Record<Klasse, string[]> = {
+  '7e': ['ff-das-fach', 'ff-gefuehlsrad', 'ff-skills-pass', 'ff-klassenvereinbarung', 'ff-anspannungsskala'],
+  '6e': ['ff-das-fach', 'ff-gefuehlsrad', 'ff-anspannungsskala', 'ff-skills-pass', 'ff-klassenvereinbarung', 'ff-skills-kompass'],
+  '5e': ['ff-das-fach', 'ff-gefuehlsrad', 'ff-anspannungsskala', 'ff-skills-pass', 'ff-klassenvereinbarung', 'ff-skills-buch'],
+}
+
+/** Blätter vorn im Schülerheft (vor den Blättern der Einheiten): Einstieg und was jede Stunde gebraucht wird. */
+export const HEFT_VORN: Record<Klasse, string[]> = {
+  '7e': ['ff-das-fach', 'ff-gefuehlsrad', 'ff-skills-pass'],
+  '6e': ['ff-das-fach', 'ff-gefuehlsrad', 'ff-anspannungsskala', 'ff-skills-pass', 'ff-skills-kompass'],
+  '5e': ['ff-das-fach', 'ff-gefuehlsrad', 'ff-anspannungsskala', 'ff-skills-pass', 'ff-skills-buch'],
+}
+
+/** Alle Werkzeug-Blätter (für die Prüfung) */
+export const VORLAGEN = [...new Set(Object.values(WERKZEUGE).flat())]

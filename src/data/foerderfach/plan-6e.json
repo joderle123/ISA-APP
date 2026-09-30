@@ -32,17 +32,105 @@
     }
   },
   "kapitel": [
-    { "id": "ff6-k1", "nr": 1, "trimester": 1, "bild": "icon:door-enter", "titel": { "de": "Wieder ankommen", "fr": "Se retrouver" }, "leitfrage": { "de": "Wer sind wir in diesem Jahr?", "fr": "Qui sommes-nous cette année ?" } },
-    { "id": "ff6-k2", "nr": 2, "trimester": 1, "bild": "icon:star", "titel": { "de": "Selbstwert und Körper", "fr": "Estime de soi et corps" }, "leitfrage": { "de": "Was macht mich wertvoll – auch wenn ich mich vergleiche?", "fr": "Qu’est-ce qui fait ma valeur – même quand je me compare ?" } },
-    { "id": "ff6-k3", "nr": 3, "trimester": 1, "bild": "icon:school", "titel": { "de": "Stress und Schule", "fr": "Stress et école" }, "leitfrage": { "de": "Wie komme ich gut durch Schule, Lernen und Tests?", "fr": "Comment bien traverser l’école, les révisions et les devoirs en classe ?" } },
-    { "id": "ff6-k4", "nr": 4, "trimester": 1, "bild": "icon:flame", "titel": { "de": "Wut und Impulse", "fr": "Colère et impulsions" }, "leitfrage": { "de": "Was steckt hinter meiner Wut – und wie bremse ich rechtzeitig?", "fr": "Que cache ma colère – et comment freiner à temps ?" } },
-    { "id": "ff6-k5", "nr": 5, "trimester": 2, "bild": "icon:friends", "titel": { "de": "Freundschaft, Liebe und Zugehörigkeit", "fr": "Amitié, amour et appartenance" }, "leitfrage": { "de": "Was macht Freundschaft und Liebe aus – und was, wenn es schwierig wird?", "fr": "Qu’est-ce qui fait une amitié, un amour – et que faire quand c’est difficile ?" } },
-    { "id": "ff6-k6", "nr": 6, "trimester": 2, "bild": "icon:home", "titel": { "de": "Familie und Zuhause", "fr": "Famille et foyer" }, "leitfrage": { "de": "Wie gehen wir zu Hause miteinander um?", "fr": "Comment vivons-nous ensemble à la maison ?" } },
-    { "id": "ff6-k7", "nr": 7, "trimester": 2, "bild": "icon:world", "titel": { "de": "Vielfalt und Respekt", "fr": "Diversité et respect" }, "leitfrage": { "de": "Wie gehen wir mit Unterschieden um?", "fr": "Comment vivre avec nos différences ?" } },
-    { "id": "ff6-k8", "nr": 8, "trimester": 3, "bild": "icon:lock", "titel": { "de": "Sicher im Netz", "fr": "En sécurité en ligne" }, "leitfrage": { "de": "Wie schütze ich mich und andere online?", "fr": "Comment me protéger et protéger les autres en ligne ?" } },
-    { "id": "ff6-k9", "nr": 9, "trimester": 3, "bild": "icon:alert-triangle", "titel": { "de": "Riskant oder okay?", "fr": "Risqué ou pas ?" }, "leitfrage": { "de": "Alkohol, Vapes, Cannabis: Was muss ich wissen – und wie entscheide ich?", "fr": "Alcool, vapoteuse, cannabis : que faut-il savoir – et comment décider ?" } },
-    { "id": "ff6-k10", "nr": 10, "trimester": 3, "bild": "icon:heart", "titel": { "de": "Gesund an Körper und Seele", "fr": "Bien dans son corps et dans sa tête" }, "leitfrage": { "de": "Was tut mir gut – und was tun, wenn es jemandem richtig schlecht geht?", "fr": "Qu’est-ce qui me fait du bien – et que faire quand quelqu’un va vraiment mal ?" } },
-    { "id": "ff6-k11", "nr": 11, "trimester": 3, "bild": "icon:trophy", "titel": { "de": "Abschluss", "fr": "Bilan" }, "leitfrage": { "de": "Was hat sich in diesem Jahr verändert?", "fr": "Qu’est-ce qui a changé cette année ?" } }
+    {
+      "id": "ff6-k1", "nr": 1, "trimester": 1, "bild": "icon:door-enter",
+      "titel": { "de": "Wieder ankommen", "fr": "Se retrouver" },
+      "leitfrage": { "de": "Wer sind wir in diesem Jahr?", "fr": "Qui sommes-nous cette année ?" },
+      "worum": {
+        "de": "Die Klasse kennt das Fach – oder lernt es neu kennen, wenn Neue dazugekommen sind. Die Klassenvereinbarung wird geprüft und erneuert, der Skills-Kompass kommt dazu, und in einer Skills-Olympiade frischen alle auf, was sie aus der 7e können.",
+        "fr": "La classe connaît la matière – ou la découvre, si de nouveaux élèves sont arrivés. La charte de classe est revue et renouvelée, la boussole des skills fait son entrée, et des olympiades des skills permettent de rafraîchir ce que chacun sait faire depuis la 7e."
+      }
+    },
+    {
+      "id": "ff6-k2", "nr": 2, "trimester": 1, "bild": "icon:star",
+      "titel": { "de": "Selbstwert und Körper", "fr": "Estime de soi et corps" },
+      "leitfrage": { "de": "Was macht mich wertvoll – auch wenn ich mich vergleiche?", "fr": "Qu’est-ce qui fait ma valeur – même quand je me compare ?" },
+      "worum": {
+        "de": "Was macht mich wertvoll – jenseits von Noten, Likes und Aussehen? Die Jugendlichen entdecken, worauf Selbstwert wirklich beruht, schauen kritisch auf Körperbilder im Netz und üben, mit sich selbst so freundlich zu reden wie mit einem guten Freund.",
+        "fr": "Qu’est-ce qui me donne de la valeur – au-delà des notes, des likes et de l’apparence ? Les jeunes découvrent sur quoi repose vraiment l’estime de soi, regardent d’un œil critique les images du corps sur Internet et s’exercent à se parler avec la même bienveillance qu’à un bon ami."
+      }
+    },
+    {
+      "id": "ff6-k3", "nr": 3, "trimester": 1, "bild": "icon:school",
+      "titel": { "de": "Stress und Schule", "fr": "Stress et école" },
+      "leitfrage": { "de": "Wie komme ich gut durch Schule, Lernen und Tests?", "fr": "Comment bien traverser l’école, les révisions et les devoirs en classe ?" },
+      "worum": {
+        "de": "Stress gehört zur Schule – zu viel davon nicht. Die Klasse ordnet Stress-Anzeichen ein, testet in einem Experiment, wie Lernen hängen bleibt, überlistet das Aufschieben mit kleinen ersten Schritten und plant den Testtag, damit die Prüfungsangst kleiner wird.",
+        "fr": "Le stress fait partie de l’école – trop de stress, non. La classe repère les signes du stress, teste dans une expérience comment on apprend durablement, déjoue la procrastination par de petits premiers pas et prépare le jour du devoir en classe pour que la peur diminue."
+      }
+    },
+    {
+      "id": "ff6-k4", "nr": 4, "trimester": 1, "bild": "icon:flame",
+      "titel": { "de": "Wut und Impulse", "fr": "Colère et impulsions" },
+      "leitfrage": { "de": "Was steckt hinter meiner Wut – und wie bremse ich rechtzeitig?", "fr": "Que cache ma colère – et comment freiner à temps ?" },
+      "worum": {
+        "de": "Wut ist ein starkes Gefühl mit einer Botschaft – gefährlich wird sie, wenn sie das Steuer übernimmt. Die Jugendlichen schauen unter die Spitze des Wut-Eisbergs, lernen die Stopp-Ampel und üben, was nach einem Ausraster hilft: sich entschuldigen und wiedergutmachen.",
+        "fr": "La colère est une émotion forte porteuse d’un message – elle devient dangereuse quand elle prend le volant. Les jeunes regardent sous la pointe de l’iceberg de la colère, apprennent le feu stop et s’exercent à ce qui aide après un débordement : s’excuser et réparer."
+      }
+    },
+    {
+      "id": "ff6-k5", "nr": 5, "trimester": 2, "bild": "icon:friends",
+      "titel": { "de": "Freundschaft, Liebe und Zugehörigkeit", "fr": "Amitié, amour et appartenance" },
+      "leitfrage": { "de": "Was macht Freundschaft und Liebe aus – und was, wenn es schwierig wird?", "fr": "Qu’est-ce qui fait une amitié, un amour – et que faire quand c’est difficile ?" },
+      "worum": {
+        "de": "Freundschaften sind in diesem Alter besonders wichtig – und besonders verletzlich. Die Klasse findet heraus, was eine gute Freundschaft ausmacht, wie man Streit fair klärt, wie sich Ausschluss anfühlt und was Verliebtsein mit Körper und Kopf macht. Respekt und Einvernehmlichkeit ziehen sich durch alle Einheiten.",
+        "fr": "À cet âge, les amitiés comptent énormément – et elles sont fragiles. La classe découvre ce qui fait une bonne amitié, comment régler une dispute de façon juste, ce que l’on ressent quand on est exclu et ce que le fait d’être amoureux fait au corps et à la tête. Respect et consentement traversent toutes les séances."
+      }
+    },
+    {
+      "id": "ff6-k6", "nr": 6, "trimester": 2, "bild": "icon:home",
+      "titel": { "de": "Familie und Zuhause", "fr": "Famille et foyer" },
+      "leitfrage": { "de": "Wie gehen wir zu Hause miteinander um?", "fr": "Comment vivons-nous ensemble à la maison ?" },
+      "worum": {
+        "de": "Familien sind verschieden – und überall wird gestritten. An erfundenen Familien entdecken die Jugendlichen, wie vielfältig Zuhause aussieht, üben die Zuhause-Formel für Streit und lernen, wie man mehr Freiraum aushandelt. Niemand muss über die eigene Familie sprechen.",
+        "fr": "Les familles sont différentes – et partout on se dispute. À partir de familles inventées, les jeunes découvrent la diversité des foyers, s’exercent à la formule maison pour les disputes et apprennent à négocier plus de liberté. Personne n’a à parler de sa propre famille."
+      }
+    },
+    {
+      "id": "ff6-k7", "nr": 7, "trimester": 2, "bild": "icon:world",
+      "titel": { "de": "Vielfalt und Respekt", "fr": "Diversité et respect" },
+      "leitfrage": { "de": "Wie gehen wir mit Unterschieden um?", "fr": "Comment vivre avec nos différences ?" },
+      "worum": {
+        "de": "Luxemburg ist vielfältig – die Klasse meistens auch. Die Jugendlichen erleben, wie aus Sortieren Vorurteile werden, malen ihr Sprachenporträt und üben, bei Diskriminierung zu reagieren. Am Ende kennen sie Anlaufstellen, wenn jemand ausgegrenzt wird.",
+        "fr": "Le Luxembourg est divers – la classe aussi, le plus souvent. Les jeunes voient comment le fait de classer mène aux préjugés, dessinent leur portrait des langues et s’exercent à réagir face à la discrimination. À la fin, ils connaissent les points de contact quand quelqu’un est exclu."
+      }
+    },
+    {
+      "id": "ff6-k8", "nr": 8, "trimester": 3, "bild": "icon:lock",
+      "titel": { "de": "Sicher im Netz", "fr": "En sécurité en ligne" },
+      "leitfrage": { "de": "Wie schütze ich mich und andere online?", "fr": "Comment me protéger et protéger les autres en ligne ?" },
+      "worum": {
+        "de": "Die Jugendlichen verfolgen, welche Spuren ein Profil hinterlässt, stellen Privatsphäre und Passwörter sicher ein und lernen, was bei Bildern gilt. Sie unterscheiden Meinung, Beleidigung und Hassrede, schreiben Gegenrede und prüfen, mit welchen Tricks Games festhalten.",
+        "fr": "Les jeunes suivent les traces que laisse un profil, règlent leur confidentialité et leurs mots de passe et apprennent ce qui vaut pour les images. Ils distinguent opinion, insulte et discours de haine, rédigent des contre-discours et examinent les astuces des jeux vidéo pour retenir les joueurs."
+      }
+    },
+    {
+      "id": "ff6-k9", "nr": 9, "trimester": 3, "bild": "icon:alert-triangle",
+      "titel": { "de": "Riskant oder okay?", "fr": "Risqué ou pas ?" },
+      "leitfrage": { "de": "Alkohol, Vapes, Cannabis: Was muss ich wissen – und wie entscheide ich?", "fr": "Alcool, vapoteuse, cannabis : que faut-il savoir – et comment décider ?" },
+      "worum": {
+        "de": "Sachlich statt mit Schreckensbildern: Die Klasse prüft Mythen über Alkohol, Vapes und Cannabis, spielt Druck-Situationen durch und baut einen Plan B. Sie fragt, was Menschen im Konsum suchen – und welche Skills dieselben Bedürfnisse erfüllen.",
+        "fr": "Des faits plutôt que des images qui font peur : la classe vérifie les idées reçues sur l’alcool, la cigarette électronique et le cannabis, rejoue des situations de pression et construit un plan B. Elle se demande ce que l’on cherche dans la consommation – et quels skills répondent aux mêmes besoins."
+      }
+    },
+    {
+      "id": "ff6-k10", "nr": 10, "trimester": 3, "bild": "icon:heart",
+      "titel": { "de": "Gesund an Körper und Seele", "fr": "Bien dans son corps et dans sa tête" },
+      "leitfrage": { "de": "Was tut mir gut – und was tun, wenn es jemandem richtig schlecht geht?", "fr": "Qu’est-ce qui me fait du bien – et que faire quand quelqu’un va vraiment mal ?" },
+      "worum": {
+        "de": "Schlaf, Essen, Trinken und Bewegung sind unterschätzte Skills. Die Jugendlichen machen kleine Experimente mit ihrem Alltag. Die letzte Einheit des Kapitels, gemeinsam mit dem SePAS, zeigt, was zu tun ist, wenn es jemandem richtig schlecht geht: ansprechen, zuhören, Hilfe holen.",
+        "fr": "Sommeil, alimentation et mouvement sont des skills sous-estimés. Les jeunes font de petites expériences avec leur quotidien. La dernière séance du chapitre, menée avec le SePAS, montre quoi faire quand quelqu’un va vraiment mal : en parler, écouter, chercher de l’aide."
+      }
+    },
+    {
+      "id": "ff6-k11", "nr": 11, "trimester": 3, "bild": "icon:trophy",
+      "titel": { "de": "Abschluss", "fr": "Bilan" },
+      "leitfrage": { "de": "Was hat sich in diesem Jahr verändert?", "fr": "Qu’est-ce qui a changé cette année ?" },
+      "worum": {
+        "de": "Was hat sich in diesem Jahr verändert? Mit Skills-Pass und Kompass schaut die Klasse zurück, hält das Jahr in Bildern fest und feiert mit einem Stärken-Fest, was jede und jeder kann – mit einem Blick auf die 5e.",
+        "fr": "Qu’est-ce qui a changé cette année ? Avec le Skills-Pass et la boussole, la classe regarde en arrière, résume l’année en images et célèbre, lors d’une fête des forces, ce que chacun sait faire – avec un regard vers la 5e."
+      }
+    }
   ],
   "einheiten": [
     {

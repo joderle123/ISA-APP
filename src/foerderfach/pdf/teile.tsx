@@ -31,15 +31,17 @@ export const ty = (s: string | undefined, sprache: Sprache) => (s ? typo(s, spra
 
 export type Marken = Map<string, number>
 
-/** Unsichtbare Marke: trägt beim Setzen die Seitenzahl in `marken` ein (für das Inhaltsverzeichnis). */
-export function Marke({ id, marken }: { id: string; marken?: Marken }) {
+/** Unsichtbare Marke: trägt beim Setzen die Seitenzahl in `marken` ein (für das Inhaltsverzeichnis).
+ *  `fliess`: im Textfluss statt absolut – nötig in Views mit `break`, sonst zählt die Seite davor. */
+export function Marke({ id, marken, fliess }: { id: string; marken?: Marken; fliess?: boolean }) {
   if (!marken) return null
   return (
     <Text
-      style={{ position: 'absolute', left: 0, top: 0, fontSize: 1, color: '#FFFFFF' }}
+      style={fliess ? { fontSize: 1, lineHeight: 1, height: 1, color: '#FFFFFF' } : { position: 'absolute', left: 0, top: 0, fontSize: 1, color: '#FFFFFF' }}
       render={({ pageNumber }) => {
         const alt = marken.get(id)
-        if (alt === undefined || pageNumber < alt) marken.set(id, pageNumber)
+        // im Textfluss zählt der letzte Aufruf (frühere Aufrufe kommen vor dem Seitenumbruch)
+        if (fliess || alt === undefined || pageNumber < alt) marken.set(id, pageNumber)
         return ''
       }}
     />
@@ -48,9 +50,10 @@ export function Marke({ id, marken }: { id: string; marken?: Marken }) {
 
 // --- Kopf und Fuß ------------------------------------------------------------------------------
 
+/** Kopfzeile – `fixed`: steht auf jeder Seite, wenn ein Abschnitt über mehrere Seiten läuft. */
 export function Kopf({ reiter, meta, p }: { reiter: string; meta: string; p: Palette }) {
   return (
-    <View style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 16 }}>
+    <View fixed style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 16 }}>
       <View style={{ backgroundColor: p.tief, borderRadius: 4, paddingHorizontal: 6, paddingVertical: 2.2 }}>
         <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 7, letterSpacing: 0.9, color: '#FFFFFF' }}>{versal(reiter)}</Text>
       </View>

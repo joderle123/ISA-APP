@@ -18,7 +18,8 @@
     "kurs:pruefen": "tsx --tsconfig tsconfig.scripts.json scripts/kurs-pruefen.ts",
     "kurs:test": "node scripts/kurs-test.cjs",
     "foerderfach:pruefen": "tsx --tsconfig tsconfig.scripts.json scripts/foerderfach-pruefen.ts",
-    "foerderfach:pdf": "tsx --tsconfig tsconfig.scripts.json scripts/foerderfach.tsx"
+    "foerderfach:pdf": "tsx --tsconfig tsconfig.scripts.json scripts/foerderfach.tsx",
+    "foerderfach:blatt": "tsx --tsconfig tsconfig.scripts.json scripts/foerderfach-blatt.tsx"
   },
   "dependencies": {
     "@react-pdf/renderer": "^4.5.1",
