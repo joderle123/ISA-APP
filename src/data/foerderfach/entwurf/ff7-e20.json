@@ -99,7 +99,7 @@
           {
             "min": "95–100",
             "phase": "abschluss",
-            "titel": "Skills-Pass, Mission, Ausblick"
+            "titel": "Skills-Pass, Moment wählen, Ausblick"
           }
         ],
         "schritte": [
@@ -118,12 +118,12 @@
             "titel": "Rückblick: Ich-Botschaften im Alltag",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Eine Person liest ihren Satz aus dem Skills-Pass der letzten Stunde vor. Per Daumen nach der Wochen-Mission fragen (hoch, Mitte, runter): Wer hat eine Ich-Botschaft ausprobiert oder einmal nur zugehört? Eine Stimme erzählt, wie die andere Person reagiert hat; auch „hat nicht geklappt“ zählt, niemand muss die Mission geschafft haben. Dann überleiten: Viele Ich-Botschaften drehen sich darum, dass einem etwas zu nah oder zu viel wird – also um Grenzen.",
+            "text": "Eine Person liest ihren Satz aus dem Skills-Pass der letzten Stunde vor. Dann die Wochen-Mission nachfragen – im gewählten Moment eine Ich-Botschaft sagen oder zwei Minuten nur zuhören: Kam dein Moment, und was hast du gemacht? Daumen hoch: Der Moment kam, ich habe es probiert; Mitte: Der Moment kam, ich habe etwas anderes gemacht; runter: Der Moment kam nicht. Eine Stimme erzählt, wie die andere Person reagiert hat; auch „hat nicht geklappt“ zählt, niemand muss. Dann überleiten: Viele Ich-Botschaften drehen sich darum, dass einem etwas zu nah oder zu viel wird – also um Grenzen.",
             "sagen": [
-              "Hat es jemand ausprobiert? Auch ‚hat nicht geklappt‘ zählt – dann schauen wir, woran es lag.",
+              "Kam euer Moment für die Ich-Botschaft – und was habt ihr gemacht? Daumen hoch, Mitte oder runter. Auch ‚hat nicht geklappt‘ zählt – dann schauen wir, woran es lag.",
               "Heute geht es um Grenzen: Wo fangen eure an, und woran merkt ihr, dass jemand anderes an seiner Grenze ist?"
             ],
-            "wennEsKippt": "Hat niemand etwas ausprobiert, nicht tadeln. Stattdessen fragen, in welcher Situation der Woche eine Ich-Botschaft gepasst hätte, und sie gemeinsam in einem Satz formulieren."
+            "wennEsKippt": "Zeigen fast alle Daumen runter, nicht tadeln: Mancher Moment kommt in einer Woche nicht. Stattdessen fragen, in welcher Situation der Woche eine Ich-Botschaft gepasst hätte, und sie gemeinsam in einem Satz formulieren."
           },
           {
             "titel": "Was sind Grenzen?",
@@ -287,7 +287,7 @@
             "titel": "Skill: Körper-Check",
             "dauer": 10,
             "phase": "skill",
-            "text": "Ankündigen: Den Körper-Check kennt ihr aus Stunde 11 – heute mit einer neuen Frage. Der Körper meldet oft zuerst, dass etwas zu nah oder zu viel ist, noch bevor man es denkt. Alle sitzen bequem, die Füße am Boden, die Augen offen oder geschlossen. Die drei Schritte langsam anleiten (Liste) und selbst mitmachen; insgesamt etwa drei Minuten. Danach zwei, drei Rückmeldungen: Wo habt ihr etwas gespürt? Zum Schluss fragen, wann der Körper-Check helfen könnte – im Bus, vor einem Gespräch, wenn jemand näherkommt – und erklären: Wer seine Signale früh bemerkt, hat mehr Zeit zu reagieren.",
+            "text": "Ankündigen: Den Körper-Check kennt ihr aus Stunde 11 – heute mit einer neuen Frage. Der Körper meldet oft zuerst, dass etwas zu nah oder zu viel ist, noch bevor man es denkt. Alle sitzen bequem, die Füße am Boden, die Augen offen oder geschlossen – beides ist gleich gut. Die drei Schritte langsam anleiten (Liste) und selbst mitmachen; insgesamt höchstens drei Minuten. Wer nicht mitmachen will, drückt nur still die Füße in den Boden und wartet; das wird nicht kommentiert. Danach zwei, drei Rückmeldungen: Wo habt ihr etwas gespürt? Zum Schluss fragen, wann der Körper-Check helfen könnte – im Bus, vor einem Gespräch, wenn jemand näherkommt – und erklären: Wer seine Signale früh bemerkt, hat mehr Zeit zu reagieren.",
             "sagen": [
               "Ihr müsst nichts ändern. Nur bemerken, was da ist.",
               "Wo war es eng, wo war es locker? Wer mag, sagt eine Stelle."
@@ -298,22 +298,24 @@
               "Leg eine Hand dorthin, wo es eng ist, atme zweimal langsam aus und schätz deine Zahl."
             ],
             "tipp": "Den Körper-Check mit dem Ampelplan aus dem Skills-Koffer verbinden: Wer bei Gelb seine Signale bemerkt, kann noch reden, weggehen oder Hilfe holen.",
-            "wennEsKippt": "Wirkt jemand bei der Übung aufgewühlt, leise anbieten, die Augen zu öffnen und die Füße fest auf den Boden zu stellen; nach der Stunde kurz nachfragen. Wird gekichert, ruhig weitersprechen – niemand muss die Augen schließen."
+            "wennEsKippt": "Wirkt jemand bei der Übung aufgewühlt, leise anbieten, die Augen zu öffnen und die Füße fest auf den Boden zu stellen; nach der Stunde kurz nachfragen. Wird gekichert, ruhig weitersprechen – niemand muss die Augen schließen. Die Übung nie verlängern, um Ruhe zu erzwingen: Kurz und freiwillig wirkt sie, erzwungen nicht."
           },
           {
-            "titel": "Skills-Pass, Mission, Ausblick",
+            "titel": "Skills-Pass, Moment wählen, Ausblick",
             "dauer": 5,
             "phase": "abschluss",
-            "text": "Skills-Pass (3 Min.) mit der Leitfrage an der Tafel: Woran merke ich, dass mir etwas zu nah ist – und woran bei anderen? Danach gibt es den Stempel; wer mag, liest seinen Satz vor, zwei Stimmen reichen. Dann die Wochen-Mission im Heft ansagen und den Ausblick auf die nächste Stunde geben (2 Min.).",
+            "text": "Skills-Pass (2 Min.) mit der Leitfrage an der Tafel: Woran merke ich, dass mir etwas zu nah ist – und woran bei anderen? Danach gibt es den Stempel; wer mag, liest seinen Satz vor, eine Stimme reicht. Wochen-Mission und Moment wählen (2 Min.): Die Mission im Heft ansagen – eine Beobachtung: Wenn dein Moment kommt, dann achte darauf, was dein Körper meldet. Dann wählt jede Person ihren Moment: Auf drei zeigen alle einen Finger für den vollen Bus, zwei für die Schlange in der Kantine, drei für den Augenblick, in dem jemand das Handy sehen will, die Faust für einen eigenen Moment – und schreiben ihn in die Spalte ‚Mein Moment: Wenn …‘ neben der Mission, ein Stichwort reicht. Zum Schluss der Ausblick auf die nächste Stunde (1 Min.).",
             "sagen": [
-              "Ein Satz für den Skills-Pass: Woran merkt ihr, dass euch etwas zu nah ist – oder dass es jemand anderem zu nah ist?"
+              "Ein Satz für den Skills-Pass: Woran merkt ihr, dass euch etwas zu nah ist – oder dass es jemand anderem zu nah ist?",
+              "Wann kommt euer Moment? Ein Finger: der volle Bus. Zwei: die Schlange in der Kantine. Drei: Jemand will mein Handy sehen. Faust: ein eigener Moment. Schreibt ihn ins Heft: Wenn …, dann achte ich auf meinen Körper."
             ],
-            "tipp": "Die Markierungen nach der Stunde entfernen und notieren, wo die Bahnen lagen – nächste Woche wird dort das Stopp geübt."
+            "tipp": "Auch eine Beobachtung braucht einen Auslöser: Wer weiß, wann er hinspürt, spürt eher hin – und hat nächste Woche etwas zu berichten, ohne dass jemand kontrolliert. Die Markierungen nach der Stunde entfernen und notieren, wo die Bahnen lagen – nächste Woche wird dort das Stopp geübt.",
+            "wennEsKippt": "Nennt jemand einen Scherz-Moment, gelten lassen, wenn er ernst gemeint ist. Wer keinen Moment wählen will, lässt die Spalte leer – nächste Woche fragt niemand nach. Wer die Sprache noch lernt oder nicht schreiben mag, malt ein Zeichen: Bus, Teller, Handy."
           }
         ],
         "bruecke": "Nächste Woche übt ihr, eine Grenze so zu zeigen, dass sie ankommt: mit einem klaren Stopp – mit Worten, mit dem Körper oder indem ihr weggeht und Hilfe holt.",
-        "mission": "Achte diese Woche einmal darauf, wann dein Körper „zu nah“ oder „zu viel“ meldet – im Bus, in der Pause oder im Chat. Nur beobachten.",
-        "hintergrund": "Grenzen schützen, was zu einer Person gehört: Körper und Raum, Gefühle und Privates – und zunehmend auch Fotos, Nachrichten und Daten. Hall (1966) beobachtete in den USA Distanzzonen, die Menschen je nach Beziehung einhalten: intim bis etwa 45 cm, persönlich bis etwa 1,2 m, sozial bis etwa 3,6 m, dahinter öffentlich. Die Werte schwanken mit Kultur, Situation und Stimmung; es gibt keinen richtigen Abstand, nur einen, der für die Person passt. Dass eine Grenze erreicht ist, meldet oft zuerst der Körper: Gefühle gehen mit typischen Körperempfindungen einher (Nummenmaa et al., 2014). Den Sinn für solche inneren Signale nennt Craig (2002) Interozeption; der Körper-Check lenkt die Aufmerksamkeit gezielt darauf. Wer die eigenen Signale kennt, kann früher reagieren – und wer die Zeichen anderer liest, kann aufhören oder nachfragen, bevor ein Konflikt entsteht.",
+        "mission": "Wenn dein Moment kommt – im vollen Bus, in der Schlange in der Kantine oder wenn jemand dein Handy sehen will –, achte darauf, was dein Körper meldet: zu nah, zu viel oder passt.",
+        "hintergrund": "Grenzen schützen, was zu einer Person gehört: Körper und Raum, Gefühle und Privates, Fotos und Nachrichten. Grundlage ist das Modell der Distanzzonen von Hall (1966): Menschen halten je nach Beziehung Abstände ein – intim bis etwa 45 cm, persönlich bis etwa 1,2 m, sozial bis etwa 3,6 m, dahinter öffentlich. Die Werte schwanken mit Kultur und Stimmung; es gibt keinen richtigen Abstand, nur einen, der passt. Eine erreichte Grenze meldet oft zuerst der Körper – der wichtigste Beleg sind die Körperkarten von Nummenmaa et al. (2014): Gefühle gehen mit typischen Körperempfindungen einher, die Menschen in verschiedenen Ländern ähnlich verorten. Den Sinn für solche Signale nennt Craig (2002) Interozeption; der Körper-Check lenkt die Aufmerksamkeit darauf. Wer die eigenen Signale kennt, kann früher reagieren – wer die Zeichen anderer liest, hört auf oder fragt nach, bevor es Streit gibt.",
         "quellen": [
           "Hall, E. T. (1966). The Hidden Dimension. Garden City, NY: Doubleday.",
           "Nummenmaa, L., Glerean, E., Hari, R. & Hietanen, J. K. (2014). Bodily maps of emotions. Proceedings of the National Academy of Sciences, 111(2), 646–651.",
@@ -321,10 +323,10 @@
         ],
         "achtung": "Grenzen berühren Erfahrungen, die manche nicht teilen möchten. Es gilt das Stopp-Recht: Wer nicht mitmachen will, misst, notiert oder geht auf das leere Ziel zu; niemand wird berührt, und wer Stopp hört, bleibt sofort stehen. Nähe und Begrüßung sind in jeder Familie und Kultur anders – keine Form ist die richtige. Erzählt jemand von Übergriffen, Gewalt oder verbreiteten Bildern: ruhig zuhören, nicht vor der Klasse nachfragen, nichts versprechen, nach der Stunde sprechen, noch am selben Tag den SePAS informieren und nach dem Schutzkonzept der Schule handeln.",
         "differenzierung": {
-          "leichter": "Die Grenz-Karten liest eine Person vor, die gut liest; die drei Überschriften haben ein Bild. Beim Stopp-Abstand übernehmen Jugendliche, die die Unterrichtssprache noch lernen, gern das Messen – Fußlängen zählen geht in jeder Sprache. Auf dem Blatt reichen Stichworte: Aufgabe 3 wird nur angekreuzt, bei Aufgabe 4 reicht ein Wort je Farbe.",
+          "leichter": "Die Grenz-Karten liest eine Person vor, die gut liest; die drei Überschriften haben ein Bild. Beim Stopp-Abstand übernehmen Jugendliche, die die Unterrichtssprache noch lernen, gern das Messen – Fußlängen zählen geht in jeder Sprache. Auf dem Blatt reichen Stichworte: Aufgabe 3 wird nur angekreuzt, bei Aufgabe 4 reicht ein Wort je Farbe. Für die Spalte „Mein Moment“ reicht ein Wort: Bus, Kantine, Handy.",
           "schwerer": "Zu drei Karten aus „kommt drauf an“ aufschreiben, wovon es abhängt: wer, wie, wann – oder eine eigene Situation auf eine leere Karte schreiben. In Schritt 7 eine eigene Szene erfinden, in der jemand eine Grenze ohne Worte zeigt, und sie von einer anderen Gruppe lesen lassen."
         },
-        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit Körperstelle (5 Min.), Was sind Grenzen? mit Tafelbild (7 Min.), Grenz-Karten sortieren mit Daumen-Runde (13 Min.), Stopp-Abstand vorn an einer Bahn mit vier, fünf Freiwilligen und dem leeren Ziel (12 Min.), Grenzen anderer lesen mit drei Szenen (8 Min.), Skills-Pass und Wochen-Mission (5 Min.). Der Körper-Check und die Aufgaben 3 und 4 auf dem Blatt kommen in die nächste Stunde."
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit Körperstelle (5 Min.), Was sind Grenzen? mit Tafelbild (7 Min.), Grenz-Karten sortieren mit Daumen-Runde (13 Min.), Stopp-Abstand vorn an einer Bahn mit vier, fünf Freiwilligen und dem leeren Ziel (12 Min.), Grenzen anderer lesen mit drei Szenen (8 Min.), Skills-Pass, Mission und Moment wählen (5 Min.). Der Körper-Check und die Aufgaben 3 und 4 auf dem Blatt kommen in die nächste Stunde."
       },
       "fr": {
         "titel": "Reconnaître les limites",
@@ -393,7 +395,7 @@
           {
             "min": "95–100",
             "phase": "abschluss",
-            "titel": "Skills-Pass, mission, prochaine séance"
+            "titel": "Skills-Pass, choix du moment, prochaine séance"
           }
         ],
         "schritte": [
@@ -412,12 +414,12 @@
             "titel": "Retour : les messages en « je » au quotidien",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Un jeune lit la phrase de son Skills-Pass de la dernière séance. Pour la mission de la semaine, faire un sondage du pouce (en haut, au milieu, en bas) : qui a essayé un message en « je » ou a simplement écouté quelqu’un ? Une voix raconte comment l’autre a réagi ; « ça n’a pas marché » compte aussi, personne n’est obligé d’avoir réussi la mission. Faire ensuite la transition : beaucoup de messages en « je » parlent de quelque chose qui est trop près ou de trop – autrement dit, de limites.",
+            "text": "Un jeune lit la phrase de son Skills-Pass de la dernière séance. Puis revenir sur la mission de la semaine – au moment choisi, dire un message en « je » ou écouter deux minutes sans rien dire d’autre : ton moment est-il venu, et qu’as-tu fait ? Pouce en haut : le moment est venu, j’ai essayé ; au milieu : le moment est venu, j’ai fait autre chose ; en bas : le moment n’est pas venu. Une voix raconte comment l’autre a réagi ; « ça n’a pas marché » compte aussi, personne n’est obligé. Faire ensuite la transition : beaucoup de messages en « je » parlent de quelque chose qui est trop près ou de trop – autrement dit, de limites.",
             "sagen": [
-              "Quelqu’un a essayé ? “Ça n’a pas marché”, ça compte aussi – on regarde alors pourquoi.",
+              "Votre moment pour le message en « je » est-il venu – et qu’avez-vous fait ? Pouce en haut, au milieu ou en bas. “Ça n’a pas marché”, ça compte aussi – on regarde alors pourquoi.",
               "Aujourd’hui, on parle des limites : où commencent les vôtres, et à quoi voyez-vous que quelqu’un d’autre est à sa limite ?"
             ],
-            "wennEsKippt": "Si personne n’a rien essayé, ne pas faire de reproche. Demander plutôt dans quelle situation de la semaine un message en « je » aurait convenu, et le formuler ensemble en une phrase."
+            "wennEsKippt": "Si presque tous les pouces sont en bas, ne pas faire de reproche : certains moments ne viennent pas dans la semaine. Demander plutôt dans quelle situation de la semaine un message en « je » aurait convenu, et le formuler ensemble en une phrase."
           },
           {
             "titel": "C’est quoi, une limite ?",
@@ -581,7 +583,7 @@
             "titel": "Skill : le tour du corps",
             "dauer": 10,
             "phase": "skill",
-            "text": "Annoncer : vous connaissez le tour du corps depuis la séance 11 – aujourd’hui, avec une nouvelle question. Le corps signale souvent en premier que quelque chose est trop près ou de trop, avant même qu’on y pense. Tout le monde s’assoit confortablement, les pieds au sol, les yeux ouverts ou fermés. Guider lentement les trois étapes (liste) et faire l’exercice soi-même ; en tout, environ trois minutes. Ensuite, deux ou trois retours : où avez-vous senti quelque chose ? Pour finir, demander quand le tour du corps pourrait aider – dans le bus, avant une discussion, quand quelqu’un s’approche – et expliquer : qui remarque tôt ses signaux a plus de temps pour réagir.",
+            "text": "Annoncer : vous connaissez le tour du corps depuis la séance 11 – aujourd’hui, avec une nouvelle question. Le corps signale souvent en premier que quelque chose est trop près ou de trop, avant même qu’on y pense. Tout le monde s’assoit confortablement, les pieds au sol, les yeux ouverts ou fermés – les deux se valent. Guider lentement les trois étapes (liste) et faire l’exercice soi-même ; en tout, trois minutes au maximum. Qui ne veut pas participer appuie seulement les pieds dans le sol, en silence, et attend ; on ne fait pas de commentaire. Ensuite, deux ou trois retours : où avez-vous senti quelque chose ? Pour finir, demander quand le tour du corps pourrait aider – dans le bus, avant une discussion, quand quelqu’un s’approche – et expliquer : qui remarque tôt ses signaux a plus de temps pour réagir.",
             "sagen": [
               "Vous n’avez rien à changer. Seulement remarquer ce qui est là.",
               "Où c’était serré, où c’était détendu ? Qui veut dit un endroit."
@@ -592,22 +594,24 @@
               "Pose une main là où c’est serré, expire deux fois lentement et estime ton chiffre."
             ],
             "tipp": "Relier le tour du corps au plan feu tricolore de la valise à skills : qui remarque ses signaux à l’orange peut encore parler, partir ou aller chercher de l’aide.",
-            "wennEsKippt": "Si un jeune semble bouleversé pendant l’exercice, lui proposer discrètement d’ouvrir les yeux et de bien poser les pieds au sol ; lui parler brièvement après le cours. Si des rires fusent, continuer calmement – personne n’est obligé de fermer les yeux."
+            "wennEsKippt": "Si un jeune semble bouleversé pendant l’exercice, lui proposer discrètement d’ouvrir les yeux et de bien poser les pieds au sol ; lui parler brièvement après le cours. Si des rires fusent, continuer calmement – personne n’est obligé de fermer les yeux. Ne jamais prolonger l’exercice pour imposer le calme : court et facultatif, il fonctionne ; imposé, non."
           },
           {
-            "titel": "Skills-Pass, mission, prochaine séance",
+            "titel": "Skills-Pass, choix du moment, prochaine séance",
             "dauer": 5,
             "phase": "abschluss",
-            "text": "Skills-Pass (3 min) avec la question au tableau : à quoi je remarque que quelque chose est trop près pour moi – et pour les autres ? Ensuite, le tampon ; qui veut lit sa phrase, deux voix suffisent. Puis annoncer la mission de la semaine dans le cahier et la prochaine séance (2 min).",
+            "text": "Skills-Pass (2 min) avec la question au tableau : à quoi je remarque que quelque chose est trop près pour moi – et pour les autres ? Ensuite, le tampon ; qui veut lit sa phrase, une voix suffit. Mission de la semaine et choix du moment (2 min) : annoncer la mission dans le cahier – une observation : quand ton moment arrive, tu remarques ce que ton corps te dit. Puis chacun choisit son moment : à « trois », tout le monde montre un doigt pour le bus bondé, deux pour la file à la cantine, trois pour l’instant où quelqu’un veut voir le portable, le poing pour un moment à soi – et l’écrit dans la colonne « Mon moment : si… » à côté de la mission, un mot-clé suffit. Pour finir, annoncer la prochaine séance (1 min).",
             "sagen": [
-              "Une phrase pour le Skills-Pass : à quoi remarquez-vous que quelque chose est trop près pour vous – ou pour quelqu’un d’autre ?"
+              "Une phrase pour le Skills-Pass : à quoi remarquez-vous que quelque chose est trop près pour vous – ou pour quelqu’un d’autre ?",
+              "Quand arrive votre moment ? Un doigt : le bus bondé. Deux : la file à la cantine. Trois : quelqu’un veut voir mon portable. Le poing : un moment à vous. Écrivez-le dans le cahier : si…, alors je fais attention à mon corps."
             ],
-            "tipp": "Après la séance, enlever les repères et noter où étaient les pistes – la semaine prochaine, on s’y entraînera à dire stop."
+            "tipp": "Même une observation a besoin d’un déclencheur : qui sait quand écouter son corps l’écoute plus souvent – et aura quelque chose à raconter la semaine prochaine, sans que personne ne contrôle. Après la séance, enlever les repères et noter où étaient les pistes – la semaine prochaine, on s’y entraînera à dire stop.",
+            "wennEsKippt": "Si quelqu’un donne un moment pour rire, le laisser passer s’il est sérieux au fond. Qui ne veut pas choisir de moment laisse la colonne vide – la semaine prochaine, personne ne lui demandera rien. Qui apprend encore la langue ou n’aime pas écrire dessine un signe : bus, assiette, portable."
           }
         ],
         "bruecke": "La semaine prochaine, vous vous entraînerez à montrer une limite pour qu’elle soit comprise : avec un stop clair – avec les mots, avec le corps, ou en partant pour aller chercher de l’aide.",
-        "mission": "Cette semaine, remarque une fois quand ton corps te dit « trop près » ou « trop » – dans le bus, à la récré ou en ligne. Tu observes, c’est tout.",
-        "hintergrund": "Les limites protègent ce qui appartient à une personne : son corps et son espace, ses émotions et sa vie privée – et de plus en plus ses photos, ses messages et ses données. Hall (1966) a observé aux États-Unis des zones de distance que les gens respectent selon la relation : intime jusqu’à environ 45 cm, personnelle jusqu’à environ 1,2 m, sociale jusqu’à environ 3,6 m, publique au-delà. Ces valeurs varient selon la culture, la situation et l’humeur ; il n’y a pas de bonne distance, seulement celle qui convient à la personne. Souvent, c’est le corps qui signale en premier qu’une limite est atteinte : les émotions s’accompagnent de sensations corporelles typiques (Nummenmaa et al., 2014). Craig (2002) appelle intéroception ce sens des signaux internes ; le tour du corps y dirige l’attention. Qui connaît ses signaux peut réagir plus tôt – et qui lit les signes des autres peut s’arrêter ou demander avant qu’un conflit n’éclate.",
+        "mission": "Quand ton moment arrive – dans le bus bondé, dans la file à la cantine ou quand quelqu’un veut voir ton portable –, remarque ce que ton corps te dit : trop près, trop, ou ça va.",
+        "hintergrund": "Les limites protègent ce qui appartient à une personne : son corps et son espace, ses émotions et sa vie privée, photos et messages. La base est le modèle des zones de distance de Hall (1966) : selon la relation, on garde une distance intime jusqu’à environ 45 cm, personnelle jusqu’à 1,2 m, sociale jusqu’à 3,6 m, publique au-delà. Ces valeurs varient selon la culture et l’humeur ; il n’y a pas de bonne distance, seulement celle qui convient. Le corps signale souvent en premier qu’une limite est atteinte – le meilleur appui est la carte du corps de Nummenmaa et al. (2014) : les émotions vont avec des sensations corporelles typiques, situées au même endroit d’un pays à l’autre. Craig (2002) appelle intéroception ce sens des signaux internes ; le tour du corps y dirige l’attention. Qui connaît ses signaux réagit plus tôt – qui lit les signes des autres s’arrête ou demande avant le conflit.",
         "quellen": [
           "Hall, E. T. (1966). The Hidden Dimension. Garden City, NY: Doubleday.",
           "Nummenmaa, L., Glerean, E., Hari, R. & Hietanen, J. K. (2014). Bodily maps of emotions. Proceedings of the National Academy of Sciences, 111(2), 646–651.",
@@ -615,10 +619,10 @@
         ],
         "achtung": "Les limites touchent à des expériences que certains ne veulent pas partager. Le droit de dire stop s’applique : qui ne veut pas participer mesure, note ou avance vers l’arrivée vide ; personne n’est touché, et qui entend « stop » s’arrête aussitôt. La proximité et les salutations varient selon les familles et les cultures – aucune n’est la bonne. Si un jeune parle d’agressions, de violence ou d’images diffusées : écouter calmement, ne pas questionner devant la classe, ne rien promettre, lui parler après le cours, informer le SePAS le jour même et agir selon le protocole de protection de l’école.",
         "differenzierung": {
-          "leichter": "Un jeune qui lit bien lit les cartes limites à son îlot ; les trois titres ont une image. Pour la distance « stop », les jeunes qui apprennent encore la langue de la classe prennent volontiers la mesure – compter des pieds marche dans toutes les langues. Sur la fiche, des mots-clés suffisent : à l’exercice 3, on coche seulement ; à l’exercice 4, un mot par couleur suffit.",
+          "leichter": "Un jeune qui lit bien lit les cartes limites à son îlot ; les trois titres ont une image. Pour la distance « stop », les jeunes qui apprennent encore la langue de la classe prennent volontiers la mesure – compter des pieds marche dans toutes les langues. Sur la fiche, des mots-clés suffisent : à l’exercice 3, on coche seulement ; à l’exercice 4, un mot par couleur suffit. Pour la colonne « Mon moment », un mot suffit : bus, cantine, portable.",
           "schwerer": "Pour trois cartes de la pile « ça dépend », écrire de quoi ça dépend : de qui, de quelle façon, de quand – ou écrire une situation sur une carte vierge. À l’étape 7, inventer une scène où quelqu’un montre une limite sans mots, et la faire lire par un autre îlot."
         },
-        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec l’endroit du corps (5 min), c’est quoi, une limite ? avec le tableau (7 min), trier les cartes limites avec le tour du pouce (13 min), distance « stop » devant la classe sur une piste, avec quatre ou cinq volontaires et l’arrivée vide (12 min), lire les limites des autres avec trois scènes (8 min), Skills-Pass et mission de la semaine (5 min). Le tour du corps et les exercices 3 et 4 de la fiche passent à la séance suivante."
+        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec l’endroit du corps (5 min), c’est quoi, une limite ? avec le tableau (7 min), trier les cartes limites avec le tour du pouce (13 min), distance « stop » devant la classe sur une piste, avec quatre ou cinq volontaires et l’arrivée vide (12 min), lire les limites des autres avec trois scènes (8 min), Skills-Pass, mission et choix du moment (5 min). Le tour du corps et les exercices 3 et 4 de la fiche passent à la séance suivante."
       }
     }
   ],

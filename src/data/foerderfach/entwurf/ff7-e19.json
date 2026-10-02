@@ -104,7 +104,7 @@
           {
             "min": "95–100",
             "phase": "abschluss",
-            "titel": "Skills-Pass, Ich-Blitzlicht, Mission"
+            "titel": "Skills-Pass, Moment wählen, Ich-Blitzlicht"
           }
         ],
         "schritte": [
@@ -124,11 +124,12 @@
             "titel": "Rückblick: Wie etwas ankommt",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Kurz an die letzte Stunde erinnern: Über welche drei Kanäle läuft eine Nachricht, und wem glauben wir, wenn sie nicht zusammenpassen? Eine Person liest ihren Satz aus dem Skills-Pass vor. Per Daumen nach der Wochen-Mission fragen (hoch, Mitte, runter); eine Stimme erzählt, was ihr aufgefallen ist, niemand muss sie geschafft haben. Dann das Thema an die Tafel schreiben: Was sage ich, wenn mich etwas stört – und wie höre ich zu, wenn jemand etwas loswerden will?",
+            "text": "Kurz an die letzte Stunde erinnern: Über welche drei Kanäle läuft eine Nachricht, und wem glauben wir, wenn sie nicht zusammenpassen? Eine Person liest ihren Satz aus dem Skills-Pass vor. Dann die Wochen-Mission nachfragen – im gewählten Moment nachfragen: Wie meinst du das? Kam dein Moment, und was hast du gemacht? Daumen hoch: Der Moment kam, ich habe nachgefragt; Mitte: Der Moment kam, ich habe etwas anderes gemacht; runter: Der Moment kam nicht. Eine Stimme erzählt in einem Satz, was die Antwort war, niemand muss. Dann das Thema an die Tafel schreiben: Was sage ich, wenn mich etwas stört – und wie höre ich zu, wenn jemand etwas loswerden will?",
             "sagen": [
+              "Kam euer Moment zum Nachfragen – und was habt ihr gemacht? Daumen hoch, Mitte oder runter.",
               "Letzte Woche ging es darum, wie etwas ankommt. Heute geht es darum, was ihr sagt, wenn euch etwas stört – ohne dass gleich Streit daraus wird."
             ],
-            "tipp": "Wer in der Mission nachgefragt hat, statt zu raten, bekommt ausdrücklich Anerkennung: Genau dieses Nachfragen ist heute der Kern des Zuhörens."
+            "tipp": "Wer in der Mission nachgefragt hat, statt zu raten, bekommt ausdrücklich Anerkennung: Genau dieses Nachfragen ist heute der Kern des Zuhörens. Daumen runter ist keine Niederlage: Mancher Moment kommt in einer Woche nicht, der Plan gilt weiter."
           },
           {
             "titel": "Du-Botschaft oder Ich-Botschaft?",
@@ -265,19 +266,21 @@
             "blatt": "ff7-ich-botschaften"
           },
           {
-            "titel": "Skills-Pass, Ich-Blitzlicht, Mission",
+            "titel": "Skills-Pass, Moment wählen, Ich-Blitzlicht",
             "dauer": 5,
             "phase": "abschluss",
-            "text": "Skills-Pass (2 Min.) mit der Leitfrage an der Tafel: Welche Ich-Botschaft könnte ich diese Woche brauchen? Der Satz ist zugleich der Plan für die Wochen-Mission. Danach gibt es den Stempel. Dann das Ich-Blitzlicht: Fünf, sechs Freiwillige sagen einen Satz zu heute, der mit „Ich“ beginnt (2 Min.). Zum Schluss die Wochen-Mission im Heft ansagen und den Ausblick auf die nächste Stunde geben (1 Min.).",
+            "text": "Skills-Pass (2 Min.) mit der Leitfrage an der Tafel: Welche Ich-Botschaft könnte ich diese Woche brauchen? Der Satz ist der eine Teil des Plans für die Wochen-Mission. Danach gibt es den Stempel. Mission und Moment wählen (2 Min.): Die Mission im Heft ansagen – wenn dich etwas stört, dann Ich-Botschaft. Dann wählt jede Person den anderen Teil des Plans, ihren Moment: Auf drei zeigen alle einen Finger für ‚wenn jemand meine Sachen nimmt, ohne zu fragen‘, zwei für ‚wenn mich jemand unterbricht‘, drei für ‚wenn mich im Chat etwas nervt‘, die Faust für einen eigenen Moment – und schreiben ihn in die Spalte ‚Mein Moment: Wenn …‘ neben der Mission, ein Stichwort reicht. Wer lieber zuhört, schreibt: wenn mir jemand etwas erzählt. Dann das Ich-Blitzlicht: Drei, vier Freiwillige sagen einen Satz zu heute, der mit „Ich“ beginnt; mit dem Ausblick auf die nächste Stunde schließen (1 Min.).",
             "sagen": [
+              "Wann kommt euer Moment? Ein Finger: Jemand nimmt meine Sachen, ohne zu fragen. Zwei: Jemand unterbricht mich. Drei: Im Chat nervt mich etwas. Faust: ein eigener Moment. Schreibt ihn ins Heft: Wenn …, dann sage ich meine Ich-Botschaft.",
               "Ein Satz zu heute, der mit ‚Ich‘ anfängt: Ich nehme mit … oder Ich fand schwierig …"
             ],
-            "tipp": "Wer im Skills-Pass keine eigene Ich-Botschaft aufschreiben möchte, schreibt die Formel ab – auch das ist ein Satz zum Mitnehmen."
+            "tipp": "Wer im Skills-Pass keine eigene Ich-Botschaft aufschreiben möchte, schreibt die Formel ab – auch das ist ein Satz zum Mitnehmen. Satz im Skills-Pass und Moment im Heft ergeben zusammen den Plan: Wenn …, dann sage ich … – so wird aus dem guten Vorsatz ein Vorhaben mit Auslöser, nach dem die Brücke nächste Woche fragt, ohne Kontrolle.",
+            "wennEsKippt": "Nennt jemand einen Scherz-Moment, gelten lassen, wenn er ernst gemeint ist. Wer keinen Moment wählen will, lässt die Spalte leer – nächste Woche fragt niemand nach. Kommt beim Wählen echter Ärger über eine anwesende Person hoch, einen Moment zu Hause oder im Chat wählen lassen; was in der Klasse klemmt, gehört in den Briefkasten des Klassenrats."
           }
         ],
         "bruecke": "Nächste Woche geht es um Grenzen: Wo fangen eure an – und woran merkt ihr, dass ihr jemandem zu nahe kommt?",
-        "mission": "Probier diese Woche eine Ich-Botschaft aus – zu Hause, im Bus oder im Chat. Oder hör jemandem zwei Minuten lang nur zu, ohne Tipps.",
-        "hintergrund": "Thomas Gordon (1972) beschrieb zwei Werkzeuge, die zusammengehören: die Ich-Botschaft für Momente, in denen mich etwas stört, und das aktive Zuhören für Momente, in denen die andere Person etwas bewegt. Du-Botschaften enthalten Urteile und lösen meist Verteidigung aus; Ich-Botschaften beschreiben Situation, Gefühl und Wunsch und lassen dem Gegenüber Raum. Mit dem „weil“ nimmt die Formel auf, was die Gewaltfreie Kommunikation das Bedürfnis hinter dem Gefühl nennt, und mit dem Wunsch eine erfüllbare Bitte (Rosenberg, 2001). Rogers und Roethlisberger (1952) sahen im vorschnellen Bewerten das größte Hindernis im Gespräch und schlugen eine einfache Regel vor: Erst wenn ich wiedergegeben habe, was der andere denkt und fühlt – so, dass er zustimmt –, sage ich meine eigene Meinung. Genau das üben die Paare beim Zusammenfassen. Beides gelingt nur mit ruhigem Kopf: erst runter, dann reden.",
+        "mission": "Wenn dich etwas stört, sag eine Ich-Botschaft – Gefühl und Wunsch reichen. Oder: Wenn dir jemand etwas erzählt, hör zwei Minuten nur zu, ohne Tipps. Du wählst deinen Moment.",
+        "hintergrund": "Grundlage sind zwei Werkzeuge aus dem Kommunikationstraining von Thomas Gordon (1972): die Ich-Botschaft für Momente, in denen mich etwas stört, und das aktive Zuhören für Momente, in denen die andere Person etwas bewegt. Du-Botschaften enthalten Urteile und lösen Verteidigung aus; Ich-Botschaften beschreiben Situation, Gefühl und Wunsch. Das „weil“ nennt das Bedürfnis hinter dem Gefühl, der Wunsch eine erfüllbare Bitte – wie in der Gewaltfreien Kommunikation (Rosenberg, 2001). Der wichtigste Beleg für das Zuhören stammt von Rogers und Roethlisberger (1952): Das größte Hindernis im Gespräch ist das vorschnelle Bewerten; die eigene Meinung kommt erst, wenn man wiedergegeben hat, was der andere denkt und fühlt – so, dass er zustimmt. Beides gelingt nur mit ruhigem Kopf – erst runter, dann reden – und am ehesten, wenn der Satz an einen gewählten Moment gebunden ist.",
         "quellen": [
           "Gordon, T. (1972). Familienkonferenz. Hamburg: Hoffmann und Campe.",
           "Rosenberg, M. B. (2001). Gewaltfreie Kommunikation. Paderborn: Junfermann.",
@@ -285,10 +288,10 @@
         ],
         "achtung": "Ich-Botschaften sind ein Werkzeug für Alltagskonflikte, kein Schutz vor Mobbing oder Gewalt: Wer wiederholt angegriffen, bedroht oder kontrolliert wird, braucht Erwachsene – dann Régent und SePAS einbeziehen. Eigene Ich-Botschaften drehen sich um kleine Alltagssachen und werden nicht vorgelesen. Beim Zuhören zu zweit nur harmlose Themen anbieten; erzählt jemand Belastendes, übernimmt die Lehrkraft, würdigt den Beitrag und bietet ein Gespräch nach der Stunde an. Bei Hinweisen auf Gewalt, Missbrauch oder Selbstverletzung noch am selben Tag den SePAS informieren und nach dem Schutzkonzept der Schule handeln.",
         "differenzierung": {
-          "leichter": "Nur zwei Teile verlangen: Gefühl und Wunsch („Ich bin genervt. Frag bitte vorher.“); die Formel und die Gefühlswörter vom Gefühlsrad bleiben an der Tafel. Für Aufgabe 1 und 2 Paare so bilden, dass eine Person gut liest; die Vorwurf-Karte liest in der Gruppe jemand vor, der gut liest. Beim Zuhören darf das Zusammenfassen mit „Du meinst also …“ beginnen und in jeder Sprache stattfinden, die beide sprechen.",
+          "leichter": "Nur zwei Teile verlangen: Gefühl und Wunsch („Ich bin genervt. Frag bitte vorher.“); die Formel und die Gefühlswörter vom Gefühlsrad bleiben an der Tafel. Für Aufgabe 1 und 2 Paare so bilden, dass eine Person gut liest; die Vorwurf-Karte liest in der Gruppe jemand vor, der gut liest. Beim Zuhören darf das Zusammenfassen mit „Du meinst also …“ beginnen und in jeder Sprache stattfinden, die beide sprechen. Für die Spalte „Mein Moment“ reicht ein Wort in jeder Sprache: Kabel, Chat, Pause.",
           "schwerer": "Aufschreiben, was die andere Person auf die Ich-Botschaft antworten könnte, und eine ruhige zweite Antwort darauf formulieren. Beim Zuhören zu dritt die Beobachtung übernehmen und mit dem Zuhör-Check Rückmeldung geben."
         },
-        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit Ich-Satz (5 Min.), Du-Botschaft oder Ich-Botschaft mit Szene und Formel (10 Min.), Aufgabe 1 und 2 und der Vorwurf-Check (15 Min.), Zuhören mit den Zuhör-Bremsen und einer Runde zu zweit (12 Min.), erst atmen, dann reden (3 Min.), Skills-Pass und Wochen-Mission (5 Min.). Der Klassenrat und der Zuhör-Check entfallen; die Sitzung wird nachgeholt, wo es passt, und das Zuhören zu zweit lässt sich in der nächsten Stunde ausbauen."
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit Ich-Satz (5 Min.), Du-Botschaft oder Ich-Botschaft mit Szene und Formel (10 Min.), Aufgabe 1 und 2 und der Vorwurf-Check (15 Min.), Zuhören mit den Zuhör-Bremsen und einer Runde zu zweit (12 Min.), erst atmen, dann reden (3 Min.), Skills-Pass, Mission und Moment wählen (5 Min.). Der Klassenrat und der Zuhör-Check entfallen; die Sitzung wird nachgeholt, wo es passt, und das Zuhören zu zweit lässt sich in der nächsten Stunde ausbauen."
       },
       "fr": {
         "titel": "Messages en « je » et écoute",
@@ -362,7 +365,7 @@
           {
             "min": "95–100",
             "phase": "abschluss",
-            "titel": "Skills-Pass, tour éclair en « je », mission"
+            "titel": "Skills-Pass, choix du moment, tour éclair en « je »"
           }
         ],
         "schritte": [
@@ -382,11 +385,12 @@
             "titel": "Retour : comment un message est reçu",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Rappeler brièvement la dernière séance : par quels trois canaux passe un message, et qui croit-on quand ils ne vont pas ensemble ? Un jeune lit la phrase de son Skills-Pass. Pour la mission de la semaine, faire un sondage du pouce (en haut, au milieu, en bas) ; une voix raconte ce qu’elle a remarqué, personne n’est obligé de l’avoir réussie. Écrire ensuite le thème au tableau : qu’est-ce que je dis quand quelque chose me dérange – et comment j’écoute quand quelqu’un a besoin de vider son sac ?",
+            "text": "Rappeler brièvement la dernière séance : par quels trois canaux passe un message, et qui croit-on quand ils ne vont pas ensemble ? Un jeune lit la phrase de son Skills-Pass. Puis revenir sur la mission de la semaine – demander, au moment choisi : tu veux dire quoi ? Ton moment est-il venu, et qu’as-tu fait ? Pouce en haut : le moment est venu, j’ai demandé ; au milieu : le moment est venu, j’ai fait autre chose ; en bas : le moment n’est pas venu. Une voix raconte en une phrase ce qu’on lui a répondu, personne n’est obligé. Écrire ensuite le thème au tableau : qu’est-ce que je dis quand quelque chose me dérange – et comment j’écoute quand quelqu’un a besoin de vider son sac ?",
             "sagen": [
+              "Votre moment pour demander est-il venu – et qu’avez-vous fait ? Pouce en haut, au milieu ou en bas.",
               "La semaine dernière, on a vu comment un message est reçu. Aujourd’hui, on voit quoi dire quand quelque chose vous dérange – sans que ça tourne tout de suite à la dispute."
             ],
-            "tipp": "Qui a demandé ce que voulait dire un message au lieu de deviner mérite d’être salué : c’est justement ce réflexe de demander qui est au cœur de l’écoute aujourd’hui."
+            "tipp": "Qui a demandé ce que voulait dire un message au lieu de deviner mérite d’être salué : c’est justement ce réflexe de demander qui est au cœur de l’écoute aujourd’hui. Le pouce en bas n’est pas un échec : certains moments ne viennent pas dans la semaine, le plan reste valable."
           },
           {
             "titel": "Message en « tu » ou message en « je » ?",
@@ -523,19 +527,21 @@
             "blatt": "ff7-ich-botschaften"
           },
           {
-            "titel": "Skills-Pass, tour éclair en « je », mission",
+            "titel": "Skills-Pass, choix du moment, tour éclair en « je »",
             "dauer": 5,
             "phase": "abschluss",
-            "text": "Skills-Pass (2 min) avec la question au tableau : de quel message en « je » pourrais-je avoir besoin cette semaine ? Cette phrase sert aussi de plan pour la mission de la semaine. Ensuite, le tampon. Puis le tour éclair en « je » : cinq ou six volontaires disent une phrase sur la séance qui commence par « Je » (2 min). Pour finir, annoncer la mission de la semaine dans le cahier et la prochaine séance (1 min).",
+            "text": "Skills-Pass (2 min) avec la question au tableau : de quel message en « je » pourrais-je avoir besoin cette semaine ? Cette phrase est la première moitié du plan pour la mission de la semaine. Ensuite, le tampon. Mission et choix du moment (2 min) : annoncer la mission dans le cahier – quand quelque chose te dérange, message en « je ». Puis chacun choisit l’autre moitié du plan, son moment : à « trois », tout le monde montre un doigt pour “quand quelqu’un prend mes affaires sans demander”, deux pour “quand on me coupe la parole”, trois pour “quand quelque chose m’énerve dans le groupe en ligne”, le poing pour un moment à soi – et l’écrit dans la colonne « Mon moment : si… » à côté de la mission, un mot-clé suffit. Qui préfère écouter écrit : quand quelqu’un me raconte quelque chose. Puis le tour éclair en « je » : trois ou quatre volontaires disent une phrase sur la séance qui commence par « Je » ; terminer par l’annonce de la prochaine séance (1 min).",
             "sagen": [
+              "Quand arrive votre moment ? Un doigt : quelqu’un prend mes affaires sans demander. Deux : quelqu’un me coupe la parole. Trois : quelque chose m’énerve dans le groupe en ligne. Le poing : un moment à vous. Écrivez-le dans le cahier : si…, alors je dis mon message en “je”.",
               "Une phrase sur aujourd’hui qui commence par “Je” : j’emporte… ou j’ai trouvé difficile…"
             ],
-            "tipp": "Qui ne veut pas écrire son propre message en « je » dans le Skills-Pass recopie la formule – c’est aussi une phrase à emporter."
+            "tipp": "Qui ne veut pas écrire son propre message en « je » dans le Skills-Pass recopie la formule – c’est aussi une phrase à emporter. La phrase du Skills-Pass et le moment dans le cahier forment ensemble le plan : si…, alors je dis… – la bonne résolution devient un projet avec un déclencheur, sur lequel le lien de la semaine prochaine reviendra, sans contrôle.",
+            "wennEsKippt": "Si quelqu’un donne un moment pour rire, le laisser passer s’il est sérieux au fond. Qui ne veut pas choisir de moment laisse la colonne vide – la semaine prochaine, personne ne lui demandera rien. Si une vraie colère contre une personne présente remonte au moment de choisir, faire choisir un moment à la maison ou en ligne ; ce qui coince dans la classe va dans la boîte aux lettres du conseil de coopération."
           }
         ],
         "bruecke": "La semaine prochaine, on parle des limites : où commencent les vôtres – et à quoi remarquez-vous que vous êtes trop près de quelqu’un ?",
-        "mission": "Cette semaine, essaie une fois un message en « je » – à la maison, dans le bus ou par message. Ou écoute quelqu’un deux minutes, sans donner de conseils.",
-        "hintergrund": "Thomas Gordon (1972) a décrit deux outils qui vont ensemble : le message en « je » pour les moments où quelque chose me dérange, et l’écoute active pour ceux où c’est l’autre qui est touché. Les messages en « tu » contiennent des jugements et provoquent souvent une défense ; les messages en « je » décrivent la situation, l’émotion et le souhait et laissent de la place à l’autre. Avec le « parce que », la formule reprend ce que la communication non violente appelle le besoin derrière l’émotion, et avec le souhait, une demande réalisable (Rosenberg, 2001). Rogers et Roethlisberger (1952) voyaient dans le jugement trop rapide le principal obstacle à la discussion et proposaient une règle simple : je ne donne mon avis qu’après avoir reformulé ce que l’autre pense et ressent – à sa satisfaction. C’est exactement ce que les binômes entraînent en résumant. Les deux ne réussissent qu’avec la tête calme : d’abord redescendre, ensuite parler.",
+        "mission": "Quand quelque chose te dérange, dis un message en « je » – l’émotion et le souhait suffisent. Ou : quand on te raconte quelque chose, écoute deux minutes sans donner de conseils.",
+        "hintergrund": "La séance repose sur deux outils du programme de Thomas Gordon (1972) : le message en « je » pour les moments où quelque chose me dérange, et l’écoute active pour ceux où c’est l’autre qui est touché. Les messages en « tu » contiennent des jugements et provoquent une défense ; les messages en « je » décrivent la situation, l’émotion et le souhait. Le « parce que » nomme le besoin derrière l’émotion, le souhait une demande réalisable – comme dans la communication non violente (Rosenberg, 2001). Pour l’écoute, l’appui vient de Rogers et Roethlisberger (1952) : le principal obstacle à la discussion est le jugement trop rapide ; on ne donne son avis qu’après avoir reformulé ce que l’autre pense et ressent, à sa satisfaction. Les deux ne réussissent qu’avec la tête calme – d’abord redescendre, ensuite parler – et d’autant mieux que la phrase est liée à un moment choisi d’avance.",
         "quellen": [
           "Gordon, T. (1972). Familienkonferenz. Hamburg: Hoffmann und Campe.",
           "Rosenberg, M. B. (2001). Gewaltfreie Kommunikation. Paderborn: Junfermann.",
@@ -543,10 +549,10 @@
         ],
         "achtung": "Le message en « je » est un outil pour les conflits du quotidien, pas une protection contre le harcèlement ou la violence : un jeune attaqué, menacé ou contrôlé de façon répétée a besoin d’adultes – impliquer alors le régent et le SePAS. Les messages en « je » personnels portent sur de petites choses du quotidien et ne sont pas lus à voix haute. Pour l’écoute à deux, ne proposer que des sujets anodins ; si un jeune raconte quelque chose de lourd, prendre le relais, l’accueillir et proposer un entretien après le cours. En cas de signes de violence, d’abus ou d’automutilation, informer le SePAS le jour même et agir selon le protocole de protection de l’école.",
         "differenzierung": {
-          "leichter": "N’exiger que deux parties : l’émotion et le souhait (« Je suis agacé. Demande avant, s’il te plaît. ») ; la formule et les mots de la roue des émotions restent au tableau. Pour les exercices 1 et 2, former les binômes de sorte que l’un des deux lise bien ; dans l’îlot, un jeune qui lit bien lit la carte reproche. Pour l’écoute, le résumé peut commencer par « Tu veux dire que… » et se faire dans n’importe quelle langue que les deux parlent.",
+          "leichter": "N’exiger que deux parties : l’émotion et le souhait (« Je suis agacé. Demande avant, s’il te plaît. ») ; la formule et les mots de la roue des émotions restent au tableau. Pour les exercices 1 et 2, former les binômes de sorte que l’un des deux lise bien ; dans l’îlot, un jeune qui lit bien lit la carte reproche. Pour l’écoute, le résumé peut commencer par « Tu veux dire que… » et se faire dans n’importe quelle langue que les deux parlent. Pour la colonne « Mon moment », un mot dans n’importe quelle langue suffit : chargeur, groupe, récré.",
           "schwerer": "Écrire ce que l’autre pourrait répondre au message en « je », puis formuler une deuxième réponse calme. Pour l’écoute, travailler à trois et prendre le rôle d’observateur, avec un retour à partir de la grille d’écoute."
         },
-        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec une phrase en « je » (5 min), message en « tu » ou en « je » avec la scène et la formule (10 min), exercices 1 et 2 et test du reproche (15 min), écoute avec les freins à l’écoute et un tour à deux (12 min), respirer avant de parler (3 min), Skills-Pass et mission de la semaine (5 min). Le conseil et la grille d’écoute sont supprimés ; la réunion est rattrapée dès que possible, et l’écoute à deux peut être approfondie à la séance suivante."
+        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec une phrase en « je » (5 min), message en « tu » ou en « je » avec la scène et la formule (10 min), exercices 1 et 2 et test du reproche (15 min), écoute avec les freins à l’écoute et un tour à deux (12 min), respirer avant de parler (3 min), Skills-Pass, mission et choix du moment (5 min). Le conseil et la grille d’écoute sont supprimés ; la réunion est rattrapée dès que possible, et l’écoute à deux peut être approfondie à la séance suivante."
       }
     }
   ],

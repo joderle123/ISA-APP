@@ -97,7 +97,7 @@
           {
             "min": "95–100",
             "phase": "abschluss",
-            "titel": "Stopp-Satz-Runde, Skills-Pass, Mission"
+            "titel": "Stopp-Satz-Runde, Skills-Pass, Moment wählen"
           }
         ],
         "schritte": [
@@ -117,9 +117,9 @@
             "titel": "Rückblick: Wo war es zu nah?",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Kurz an die letzte Stunde erinnern: körperliche, emotionale und digitale Grenzen, die eigene Wohlfühl-Distanz. Eine Person liest ihren Satz aus dem Skills-Pass vor. Per Daumen nach der Wochen-Mission fragen (hoch, Mitte, runter): Wer hat bemerkt, wann der Körper „zu nah“ oder „zu viel“ gemeldet hat? Wer mag, nennt nur den Ort – Bus, Kantine, Pause, Chat –, keine Geschichte; niemand muss die Mission geschafft haben. Dann das Ziel nennen: heute eine Grenze so zeigen, dass sie ankommt.",
+            "text": "Kurz an die letzte Stunde erinnern: körperliche, emotionale und digitale Grenzen, die eigene Wohlfühl-Distanz. Eine Person liest ihren Satz aus dem Skills-Pass vor. Dann die Wochen-Mission nachfragen – im gewählten Moment darauf achten, was der Körper meldet: Kam dein Moment, und was hast du gemerkt? Daumen hoch: Der Moment kam, ich habe hingespürt; Mitte: Der Moment kam, ich habe nicht daran gedacht; runter: Der Moment kam nicht. Wer mag, nennt nur Ort und Signal – Bus, zu nah; Kantine, passt –, keine Geschichte; niemand muss. Dann das Ziel nennen: heute eine Grenze so zeigen, dass sie ankommt.",
             "sagen": [
-              "Wo hat euer Körper diese Woche Stopp gesagt? Nur den Ort, keine Geschichte – zum Beispiel im Bus oder in der Schlange in der Kantine.",
+              "Kam euer Moment – und was hat euer Körper gemeldet? Daumen hoch, Mitte oder runter. Wer mag, sagt nur Ort und Signal, keine Geschichte – zum Beispiel: Bus, zu nah.",
               "Letztes Mal habt ihr Grenzen erkannt. Heute übt ihr, sie zu zeigen – so, dass sie ankommen."
             ],
             "wennEsKippt": "Erzählt jemand von einer Situation, die nach Übergriff, Gewalt oder Bedrohung klingt, freundlich unterbrechen: Danke, dass du das sagst. Darüber möchte ich nachher in Ruhe mit dir reden. Dann weitermachen, das Gespräch direkt nach der Stunde führen und noch am selben Tag den SePAS informieren."
@@ -165,7 +165,8 @@
             "text": "Zu zweit, mit einer Person eigener Wahl, an den Bahnen wie in der letzten Stunde oder im Raum. B geht langsam auf A zu, A stoppt; nach jeder Runde wechseln (6 Min.): erst nur mit der Hand, dann Hand und Wort, dann alles zusammen – fester Stand, Blick, feste Stimme, ein kurzer Satz. Wer sich schwertut, beginnt leise und wird von Runde zu Runde lauter. Dann allein Aufgabe 2 auf dem Blatt: Stopp-Sätze ankreuzen (3 Min.). Danach das Nachhaken üben (6 Min.): A sagt den eigenen Stopp-Satz, B hakt einmal nach, mit einem der Sätze von der Tafel – „Stell dich nicht so an“ oder „Ist doch nur Spaß“ –, A wiederholt ruhig denselben Satz. Kurz in der Klasse (3 Min.): Was war schwerer – der erste Satz oder der zweite?",
             "sagen": [
               "Probiert es so leise, wie es für euch geht – und dann eine Stufe lauter. Ihr bestimmt das Tempo.",
-              "Beim Nachhaken müsst ihr nichts Neues erfinden. Derselbe Satz noch einmal, ruhig und fest – das reicht."
+              "Beim Nachhaken müsst ihr nichts Neues erfinden. Derselbe Satz noch einmal, ruhig und fest – das reicht.",
+              "Ein Satz wie ‚Stell dich nicht so an‘ ist kein Argument: Er soll euch dazu bringen, euer Stopp zurückzunehmen. Ob ihr das tut, entscheidet ihr – nicht die andere Person und nicht ich."
             ],
             "punkte": [
               "Keine Berührung. Spätestens eine Fußlänge vorher ist Schluss.",
@@ -173,7 +174,7 @@
               "Laut heißt nicht schreien: so laut, dass die Person es hört – nicht der ganze Flur.",
               "Nachgehakt wird nur einmal, mit einem Satz von der Tafel."
             ],
-            "tipp": "Viele finden das Nachhaken schwerer als das erste Stopp, gerade bei Freunden. Die Lehrkraft spielt einmal vor, wie man denselben Satz ruhig wiederholt, ohne sich zu rechtfertigen – das nimmt den Druck, eine bessere Begründung finden zu müssen. Ist wenig Platz, üben die Paare in zwei Durchgängen: Die eine Hälfte übt, die andere schaut zu.",
+            "tipp": "Viele finden das Nachhaken schwerer als das erste Stopp, gerade bei Freunden. Die Lehrkraft spielt einmal vor, wie man denselben Satz ruhig wiederholt, ohne sich zu rechtfertigen – das nimmt den Druck, eine bessere Begründung finden zu müssen. Ist wenig Platz, üben die Paare in zwei Durchgängen: Die eine Hälfte übt, die andere schaut zu. Dass die Entscheidung ausdrücklich bei den Jugendlichen liegt, ist kein Trick: Was bevormundet, lehnen sie ab – wer ihnen zeigt, wie jemand sie zum Nachgeben bringen will, hat sie auf seiner Seite.",
             "wennEsKippt": "Wird das Üben zum Brüllwettbewerb, die Regel von der Tafel wiederholen und eine Runde im Flüsterton anschließen. Wer nicht vor anderen üben möchte, übt mit der Lehrkraft in einer Ecke oder zuerst nur mit der Hand. Geht jemand trotz Stopp weiter, sofort abbrechen und die Person das nächste Paar beobachten lassen.",
             "blatt": "ff7-mein-stopp"
           },
@@ -238,19 +239,21 @@
             "wennEsKippt": "Wird gewackelt oder geschubst, alle wieder setzen und die Übung im Sitzen machen: beide Füße fest auf den Boden, Rücken aufrecht, ausatmen. Wer den Satz nicht laut sagen mag, sagt ihn im Kopf."
           },
           {
-            "titel": "Stopp-Satz-Runde, Skills-Pass, Mission",
+            "titel": "Stopp-Satz-Runde, Skills-Pass, Moment wählen",
             "dauer": 5,
             "phase": "abschluss",
-            "text": "Wer mag, sagt seinen Stopp-Satz laut und klar – ohne Namen –, und die Klasse antwortet gemeinsam: Okay. So übt sie zum Schluss die andere Seite – ein Nein annehmen, ohne zu diskutieren (2 Min.). Dann der Skills-Pass zum Ende des Kapitels mit der Leitfrage an der Tafel: Was nehme ich aus vier Stunden Kommunikation und Grenzen mit? Danach gibt es den Stempel (2 Min.). Zum Schluss die Wochen-Mission im Heft ansagen und den Ausblick auf das neue Kapitel geben (1 Min.).",
+            "text": "Wer mag, sagt seinen Stopp-Satz laut und klar – ohne Namen –, und die Klasse antwortet gemeinsam: Okay. So übt sie zum Schluss die andere Seite – ein Nein annehmen, ohne zu diskutieren; die Lehrkraft gibt das Tempo vor, fünf, sechs Sätze reichen (1 Min.). Dann der Skills-Pass zum Ende des Kapitels mit der Leitfrage an der Tafel: Was nehme ich aus vier Stunden Kommunikation und Grenzen mit? Danach gibt es den Stempel (2 Min.). Wochen-Mission und Moment wählen (2 Min.): Die Mission im Heft ansagen – wenn dein Moment kommt, dann fester Stand; und wer Stopp hört, hört auf. Dann wählt jede Person ihren Moment: Auf drei zeigen alle einen Finger für ‚vor einem Test‘, zwei für ‚im Bus oder an der Haltestelle‘, drei für ‚bevor ich Nein sage‘, die Faust für einen eigenen Moment – und schreiben ihn in die Spalte ‚Mein Moment: Wenn …‘ neben der Mission, ein Stichwort reicht. Mit dem Ausblick auf das neue Kapitel schließen.",
             "sagen": [
-              "Sagt euren Satz so, wie ihr ihn meint. Und wir antworten alle: Okay."
+              "Sagt euren Satz so, wie ihr ihn meint. Und wir antworten alle: Okay.",
+              "Wann kommt euer Moment für den festen Stand? Ein Finger: vor einem Test. Zwei: im Bus oder an der Haltestelle. Drei: bevor ich Nein sage. Faust: ein eigener Moment. Schreibt ihn ins Heft: Wenn …, dann fester Stand."
             ],
-            "tipp": "Das gemeinsame Okay wirkt oft stärker als jede Erklärung: Ein Nein anzunehmen, ist genauso ein Skill wie Nein zu sagen."
+            "tipp": "Das gemeinsame Okay wirkt oft stärker als jede Erklärung: Ein Nein anzunehmen, ist genauso ein Skill wie Nein zu sagen. Der Moment ist der eigentliche Plan: Ein Skill mit festem Auslöser wird eher ausprobiert als ein guter Vorsatz – die Brücke nächste Woche fragt danach, ohne Kontrolle.",
+            "wennEsKippt": "Nennt jemand einen Scherz-Moment, gelten lassen, wenn er ernst gemeint ist. Wer keinen Moment wählen will, lässt die Spalte leer – nächste Woche fragt niemand nach. Wer die Sprache noch lernt oder nicht schreiben mag, malt ein Zeichen: Blatt, Bus, eine Hand. Wird die Okay-Runde zum Gejohle, sie beenden und das Okay einmal still mit dem Daumen geben."
           }
         ],
         "bruecke": "Nächste Woche beginnt ein neues Kapitel: Es geht um Streit. Ihr lernt die Konflikt-Treppe kennen und spielt Alltagsstreits Stufe für Stufe durch – mit allem, was ihr in diesem Kapitel geübt habt.",
-        "mission": "Probier diese Woche einmal den festen Stand aus – vor einem Test, im Bus oder bevor du Nein sagst. Und wenn jemand zu dir Stopp sagt: einfach aufhören.",
-        "hintergrund": "Eine Grenze wirkt, wenn Worte, Stimme und Körper dasselbe sagen. Nach Watzlawick et al. (1967) bestimmt die Beziehungsebene, wie ein Inhalt verstanden wird: Ein Lächeln beim Stopp sagt „nicht so ernst gemeint“ und schwächt die Botschaft, auch wenn es meist nur Verlegenheit ist. Das Skillstraining der Dialektisch-Behavioralen Therapie für Jugendliche übt, ein Anliegen kurz und klar zu sagen, es bei Bedarf ruhig zu wiederholen und dabei selbstsicher aufzutreten (Rathus & Miller, 2015). Rollenspiele sind dabei keine Spielerei: Wer ein Verhalten mehrmals erfolgreich ausprobiert, traut es sich im Ernstfall eher zu (Bandura, 1977). Ebenso wichtig sind die Gegenseite – ein Nein anzunehmen – und der dritte Weg: weggehen und Hilfe holen, wenn ein Stopp nicht reicht. Ein Stopp ist kein Schutz vor Gewalt; wer in einer bedrohlichen Situation erstarrt, trägt keine Schuld.",
+        "mission": "Wenn dein Moment kommt – vor einem Test, im Bus oder bevor du Nein sagst –, mach den festen Stand: Füße, Rücken, ausatmen. Und wenn jemand zu dir Stopp sagt: einfach aufhören.",
+        "hintergrund": "Grundlage ist das Kommunikationsmodell von Watzlawick et al. (1967): Die Beziehungsebene bestimmt, wie ein Inhalt verstanden wird – eine Grenze wirkt, wenn Worte, Stimme und Körper dasselbe sagen; ein Lächeln beim Stopp schwächt die Botschaft. Das Vorgehen folgt dem DBT-Skillstraining für Jugendliche: ein Anliegen kurz und klar sagen, ruhig wiederholen, selbstsicher auftreten (Rathus & Miller, 2015). Der wichtigste Wirkungsbeleg ist Banduras (1977) Theorie der Selbstwirksamkeit: Die stärkste Quelle ist die Bewältigungserfahrung – wer etwas mehrmals erfolgreich geübt hat, traut es sich im Ernstfall eher zu. Deshalb wird gespielt, nicht besprochen. Ob und wann sie Stopp sagen, entscheiden die Jugendlichen – Bevormundung lehnen sie ab. Ebenso wichtig: ein Nein annehmen – und Hilfe holen, wenn das Stopp nicht reicht. Ein Stopp schützt nicht vor Gewalt; wer erstarrt, trägt keine Schuld.",
         "quellen": [
           "Watzlawick, P., Beavin, J. H. & Jackson, D. D. (1967). Pragmatics of Human Communication. New York: Norton.",
           "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford.",
@@ -258,10 +261,10 @@
         ],
         "achtung": "Rollenspiele zu Grenzverletzungen können Erinnerungen wecken. Es gilt das Stopp-Recht: Wer nicht mitspielen möchte, führt den Stopp-Check; niemand wird angefasst, es gibt nur Worte, Abstand und ein einziges Nachhaken, und die Rolle A ist nie eine echte Person aus der Klasse. Bedrohung und Erpressung (Hilfe-Karten) werden nicht gespielt, nur beraten. Ausdrücklich sagen: Wer in einer echten Situation erstarrt, ist nicht schuld. Erzählt jemand in der Stunde von eigenen Grenzverletzungen: nicht im Plenum vertiefen, ruhig würdigen, nach der Stunde ansprechen, nichts versprechen, noch am selben Tag den SePAS informieren und nach dem Schutzkonzept der Schule handeln.",
         "differenzierung": {
-          "leichter": "Die Stopp-Sätze stehen an der Tafel, einer davon darf übernommen werden. Wer noch wenig Deutsch spricht, setzt die Grenze zuerst mit dem Körper und einem Wort – Stopp versteht man in jeder Sprache. Die Szenen-Karte liest in der Gruppe eine Person vor, die gut liest.",
+          "leichter": "Die Stopp-Sätze stehen an der Tafel, einer davon darf übernommen werden. Wer noch wenig Deutsch spricht, setzt die Grenze zuerst mit dem Körper und einem Wort – Stopp versteht man in jeder Sprache. Die Szenen-Karte liest in der Gruppe eine Person vor, die gut liest. Für die Spalte „Mein Moment“ reicht ein Wort: Test, Bus, Nein.",
           "schwerer": "Das Gespräch mit Luca weiterschreiben: Was tust du, wenn er ein drittes Mal nachhakt? Im Rollenspiel den Stopp-Check übernehmen und der Gruppe am Ende zwei Dinge zurückmelden, die gewirkt haben."
         },
-        "kurzfassung": "Bleibt nur eine Stunde: Check-in im Stehen (5 Min.), Welches Stopp nimmt man ernst? mit den drei Arten an der Tafel (10 Min.), Stopp üben zu zweit mit Hand und Wort (10 Min.), Rollenspiel mit zwei Szenen-Karten je Gruppe (15 Min.), fester Stand (5 Min.), Stopp-Satz-Runde, Skills-Pass und Wochen-Mission (5 Min.). Der Stopp-Plan auf dem Blatt wird in der nächsten Stunde ergänzt."
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in im Stehen (5 Min.), Welches Stopp nimmt man ernst? mit den drei Arten an der Tafel (10 Min.), Stopp üben zu zweit mit Hand und Wort (10 Min.), Rollenspiel mit zwei Szenen-Karten je Gruppe (15 Min.), fester Stand (5 Min.), Stopp-Satz-Runde, Skills-Pass, Mission und Moment wählen (5 Min.). Der Stopp-Plan auf dem Blatt wird in der nächsten Stunde ergänzt."
       },
       "fr": {
         "titel": "Poser ses limites : stop !",
@@ -328,7 +331,7 @@
           {
             "min": "95–100",
             "phase": "abschluss",
-            "titel": "Tour des phrases stop, Skills-Pass, mission"
+            "titel": "Tour des phrases stop, Skills-Pass, choix du moment"
           }
         ],
         "schritte": [
@@ -348,9 +351,9 @@
             "titel": "Retour : où était-ce trop près ?",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Rappeler brièvement la dernière séance : limites physiques, émotionnelles et numériques, la distance de confort. Un jeune lit la phrase de son Skills-Pass. Pour la mission de la semaine, faire un sondage du pouce (en haut, au milieu, en bas) : qui a remarqué quand son corps disait « trop près » ou « trop » ? Qui veut donne seulement le lieu – le bus, la cantine, la récré, en ligne –, pas l’histoire ; personne n’est obligé d’avoir réussi la mission. Puis donner l’objectif : aujourd’hui, montrer une limite de façon qu’elle soit comprise.",
+            "text": "Rappeler brièvement la dernière séance : limites physiques, émotionnelles et numériques, la distance de confort. Un jeune lit la phrase de son Skills-Pass. Puis revenir sur la mission de la semaine – au moment choisi, remarquer ce que le corps dit : ton moment est-il venu, et qu’as-tu remarqué ? Pouce en haut : le moment est venu, j’ai écouté mon corps ; au milieu : le moment est venu, je n’y ai pas pensé ; en bas : le moment n’est pas venu. Qui veut donne seulement le lieu et le signal – bus, trop près ; cantine, ça va –, pas l’histoire ; personne n’est obligé. Puis donner l’objectif : aujourd’hui, montrer une limite de façon qu’elle soit comprise.",
             "sagen": [
-              "Où votre corps a-t-il dit stop cette semaine ? Seulement le lieu, pas l’histoire – par exemple dans le bus ou dans la file à la cantine.",
+              "Votre moment est-il venu – et qu’a dit votre corps ? Pouce en haut, au milieu ou en bas. Qui veut donne seulement le lieu et le signal, pas l’histoire – par exemple : bus, trop près.",
               "La dernière fois, vous avez appris à reconnaître les limites. Aujourd’hui, vous vous entraînez à les montrer – pour qu’elles soient comprises."
             ],
             "wennEsKippt": "Si un jeune raconte une situation qui ressemble à une agression, à de la violence ou à une menace, l’interrompre avec bienveillance : merci de le dire. J’aimerais qu’on en parle tranquillement tout à l’heure. Puis continuer, avoir l’entretien juste après le cours et informer le SePAS le jour même."
@@ -396,7 +399,8 @@
             "text": "À deux, avec un ou une partenaire de son choix, sur des pistes comme à la dernière séance ou dans la salle. B avance lentement vers A, A l’arrête ; on change après chaque tour (6 min) : d’abord seulement avec la main, puis la main et un mot, puis tout ensemble – bien ancré, le regard, la voix ferme, une phrase courte. Qui a du mal commence doucement et parle un peu plus fort à chaque tour. Puis, seul, exercice 2 de la fiche : cocher des phrases stop (3 min). Ensuite, s’entraîner quand l’autre insiste (6 min) : A dit sa phrase stop, B insiste une fois, avec une des phrases du tableau – « Fais pas ton cinéma » ou « C’est juste pour rire » –, A répète calmement la même phrase. Bref retour en classe entière (3 min) : qu’est-ce qui était le plus difficile – la première phrase ou la deuxième ?",
             "sagen": [
               "Essayez aussi doucement que vous le pouvez – puis un cran plus fort. C’est vous qui décidez du rythme.",
-              "Quand l’autre insiste, vous n’avez rien à inventer de nouveau. La même phrase encore une fois, calme et ferme – ça suffit."
+              "Quand l’autre insiste, vous n’avez rien à inventer de nouveau. La même phrase encore une fois, calme et ferme – ça suffit.",
+              "Une phrase comme “Fais pas ton cinéma” n’est pas un argument : elle sert à vous faire retirer votre stop. Si vous le retirez ou non, c’est vous qui décidez – pas l’autre, et pas moi."
             ],
             "punkte": [
               "Pas de contact. Au plus tard à un pied de distance, on s’arrête.",
@@ -404,7 +408,7 @@
               "Fort ne veut pas dire crier : assez fort pour que la personne entende – pas tout le couloir.",
               "On n’insiste qu’une fois, avec une phrase du tableau."
             ],
-            "tipp": "Beaucoup trouvent plus difficile de tenir bon quand l’autre insiste que de dire le premier stop, surtout avec des amis. Montrer une fois comment répéter calmement la même phrase, sans se justifier – cela enlève la pression de devoir trouver une meilleure raison. S’il y a peu de place, les binômes s’entraînent en deux fois : une moitié s’exerce, l’autre regarde.",
+            "tipp": "Beaucoup trouvent plus difficile de tenir bon quand l’autre insiste que de dire le premier stop, surtout avec des amis. Montrer une fois comment répéter calmement la même phrase, sans se justifier – cela enlève la pression de devoir trouver une meilleure raison. S’il y a peu de place, les binômes s’entraînent en deux fois : une moitié s’exerce, l’autre regarde. Laisser expressément la décision aux jeunes n’est pas une ruse : ils rejettent ce qui les infantilise – et qui leur montre comment on cherche à les faire céder les a de son côté.",
             "wennEsKippt": "Si l’exercice tourne au concours de cris, rappeler la règle du tableau et enchaîner avec un tour à voix basse. Qui ne veut pas s’entraîner devant les autres s’entraîne avec l’enseignant·e dans un coin ou d’abord seulement avec la main. Si quelqu’un continue d’avancer malgré le stop, arrêter tout de suite et lui faire observer la paire suivante.",
             "blatt": "ff7-mein-stopp"
           },
@@ -469,19 +473,21 @@
             "wennEsKippt": "Si ça vacille ou si on se pousse, faire rasseoir tout le monde et faire l’exercice assis : les deux pieds bien au sol, le dos droit, expirer. Qui ne veut pas dire la phrase à voix haute la dit dans sa tête."
           },
           {
-            "titel": "Tour des phrases stop, Skills-Pass, mission",
+            "titel": "Tour des phrases stop, Skills-Pass, choix du moment",
             "dauer": 5,
             "phase": "abschluss",
-            "text": "Qui veut dit sa phrase stop à voix haute et clairement – sans prénom –, et la classe répond en chœur : d’accord. Ainsi, elle s’entraîne pour finir à l’autre côté – accepter un non sans discuter (2 min). Puis le Skills-Pass de fin de chapitre, avec la question au tableau : qu’est-ce que j’emporte de ces quatre séances sur la communication et les limites ? Ensuite, le tampon (2 min). Pour finir, annoncer la mission de la semaine dans le cahier et le nouveau chapitre (1 min).",
+            "text": "Qui veut dit sa phrase stop à voix haute et clairement – sans prénom –, et la classe répond en chœur : d’accord. Ainsi, elle s’entraîne pour finir à l’autre côté – accepter un non sans discuter ; donner le rythme, cinq ou six phrases suffisent (1 min). Puis le Skills-Pass de fin de chapitre, avec la question au tableau : qu’est-ce que j’emporte de ces quatre séances sur la communication et les limites ? Ensuite, le tampon (2 min). Mission de la semaine et choix du moment (2 min) : annoncer la mission dans le cahier – quand ton moment arrive, tu t’ancres bien debout ; et qui entend stop s’arrête. Puis chacun choisit son moment : à « trois », tout le monde montre un doigt pour “avant un devoir en classe”, deux pour “dans le bus ou à l’arrêt”, trois pour “avant de dire non”, le poing pour un moment à soi – et l’écrit dans la colonne « Mon moment : si… » à côté de la mission, un mot-clé suffit. Terminer par l’annonce du nouveau chapitre.",
             "sagen": [
-              "Dites votre phrase comme vous la pensez. Et nous répondons tous : d’accord."
+              "Dites votre phrase comme vous la pensez. Et nous répondons tous : d’accord.",
+              "Quand arrive votre moment pour bien vous ancrer ? Un doigt : avant un devoir en classe. Deux : dans le bus ou à l’arrêt. Trois : avant de dire non. Le poing : un moment à vous. Écrivez-le dans le cahier : si…, alors je m’ancre bien debout."
             ],
-            "tipp": "Le « d’accord » en chœur fait souvent plus d’effet que n’importe quelle explication : accepter un non est un skill, tout comme dire non."
+            "tipp": "Le « d’accord » en chœur fait souvent plus d’effet que n’importe quelle explication : accepter un non est un skill, tout comme dire non. Le moment est le vrai plan : un skill avec un déclencheur précis s’essaie bien plus souvent qu’une bonne résolution – le lien de la semaine prochaine y reviendra, sans contrôle.",
+            "wennEsKippt": "Si quelqu’un donne un moment pour rire, le laisser passer s’il est sérieux au fond. Qui ne veut pas choisir de moment laisse la colonne vide – la semaine prochaine, personne ne lui demandera rien. Qui apprend encore la langue ou n’aime pas écrire dessine un signe : une feuille, un bus, une main. Si le tour des « d’accord » tourne au chahut, l’arrêter et répondre une seule fois en silence, avec le pouce."
           }
         ],
         "bruecke": "La semaine prochaine commence un nouveau chapitre : on parle des disputes. Vous allez découvrir l’escalier du conflit et rejouer des disputes du quotidien marche par marche – avec tout ce que vous avez appris dans ce chapitre.",
-        "mission": "Cette semaine, essaie une fois de bien t’ancrer debout – avant un devoir en classe, dans le bus ou avant de dire non. Et si quelqu’un te dit stop : arrête, tout simplement.",
-        "hintergrund": "Une limite fonctionne quand les mots, la voix et le corps disent la même chose. Selon Watzlawick et al. (1967), c’est la relation qui détermine comment un contenu est compris : un sourire en disant stop signifie « pas si sérieux » et affaiblit le message, même s’il n’est le plus souvent que de la gêne. L’entraînement aux skills de la thérapie comportementale dialectique pour adolescents exerce à formuler une demande de façon courte et claire, à la répéter calmement si besoin et à se montrer sûr de soi (Rathus & Miller, 2015). Les jeux de rôle n’ont rien d’un jeu d’enfant : qui a réussi plusieurs fois un comportement ose davantage le mettre en œuvre en situation réelle (Bandura, 1977). Tout aussi importants sont l’autre côté – accepter un non – et la troisième voie : partir et aller chercher de l’aide quand un stop ne suffit pas. Un stop ne protège pas de la violence ; qui se fige face à une menace n’est pas coupable.",
+        "mission": "Quand ton moment arrive – avant un devoir en classe, dans le bus ou avant de dire non –, ancre-toi bien debout : pieds, dos, souffle. Et si on te dit stop : arrête, c’est tout.",
+        "hintergrund": "Le modèle de base est celui de Watzlawick et al. (1967) : la relation détermine comment un contenu est compris – une limite tient quand mots, voix et corps disent la même chose ; un sourire en disant stop affaiblit le message. La démarche suit l’entraînement aux skills de la thérapie comportementale dialectique pour adolescents : une demande courte et claire, répétée calmement, avec assurance (Rathus & Miller, 2015). Le principal appui est la théorie de l’auto-efficacité de Bandura (1977) : sa source la plus forte est l’expérience de réussite – qui a réussi plusieurs fois ose davantage en situation réelle. D’où le jeu de rôle. Si et quand ils disent stop, les jeunes en décident – ils rejettent ce qui les infantilise. Et aussi : accepter un non – et chercher de l’aide quand un stop ne suffit pas. Un stop ne protège pas de la violence ; qui se fige n’est pas coupable.",
         "quellen": [
           "Watzlawick, P., Beavin, J. H. & Jackson, D. D. (1967). Pragmatics of Human Communication. New York: Norton.",
           "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford.",
@@ -489,10 +495,10 @@
         ],
         "achtung": "Les jeux de rôle sur les limites franchies peuvent réveiller des souvenirs. Le droit de dire stop s’applique : qui ne veut pas jouer prend la grille du stop ; personne n’est touché, il n’y a que des mots, de la distance et une seule insistance, et le rôle A n’est jamais une vraie personne de la classe. Les menaces et le chantage (cartes aide) ne se jouent pas, on en discute. Le dire clairement : qui se fige dans une vraie situation n’est pas coupable. Si un jeune raconte que ses propres limites ont été franchies : ne pas approfondir en classe, l’accueillir, lui parler après le cours, ne rien promettre, informer le SePAS le jour même, suivre le protocole de protection de l’école.",
         "differenzierung": {
-          "leichter": "Les phrases stop sont au tableau ; on peut en reprendre une telle quelle. Qui parle encore peu français pose d’abord la limite avec le corps et un mot – stop se comprend dans toutes les langues. Dans l’îlot, un jeune qui lit bien lit la carte scène.",
+          "leichter": "Les phrases stop sont au tableau ; on peut en reprendre une telle quelle. Qui parle encore peu français pose d’abord la limite avec le corps et un mot – stop se comprend dans toutes les langues. Dans l’îlot, un jeune qui lit bien lit la carte scène. Pour la colonne « Mon moment », un mot suffit : devoir, bus, non.",
           "schwerer": "Continuer le dialogue avec Luca : que fais-tu s’il insiste une troisième fois ? Dans le jeu de rôle, prendre la grille du stop et donner à l’îlot, à la fin, deux choses qui ont marché."
         },
-        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur debout (5 min), quel stop prend-on au sérieux ? avec les trois façons au tableau (10 min), s’entraîner à deux avec la main et les mots (10 min), jeu de rôle avec deux cartes scènes par îlot (15 min), les pieds bien ancrés (5 min), tour des phrases stop, Skills-Pass et mission de la semaine (5 min). Le plan stop de la fiche est complété à la séance suivante."
+        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur debout (5 min), quel stop prend-on au sérieux ? avec les trois façons au tableau (10 min), s’entraîner à deux avec la main et les mots (10 min), jeu de rôle avec deux cartes scènes par îlot (15 min), les pieds bien ancrés (5 min), tour des phrases stop, Skills-Pass, mission et choix du moment (5 min). Le plan stop de la fiche est complété à la séance suivante."
       }
     }
   ],

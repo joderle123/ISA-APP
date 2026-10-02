@@ -101,7 +101,7 @@
           {
             "min": "95–100",
             "phase": "abschluss",
-            "titel": "Daumen ohne Worte, Skills-Pass, Mission"
+            "titel": "Daumen ohne Worte, Skills-Pass, Moment wählen"
           }
         ],
         "schritte": [
@@ -121,11 +121,12 @@
             "titel": "Rückblick und Start ins Kapitel",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Eine Person liest ihren Satz aus dem Skills-Pass der letzten Stunde vor, in der der Skills-Koffer gepackt wurde. Per Daumen nach der Wochen-Mission fragen: Wer hatte die Notfallkarte dabei und hat einmal den Ampel-Check gemacht (hoch, Mitte, runter)? Eine Stimme erzählt, welche Farbe sie hatte; niemand muss die Mission geschafft haben. Dann das neue Kapitel an der Tafel aufdecken (vorher angeschrieben): Kommunikation und Grenzen – Wie sage ich, was ich fühle und brauche? Am Tafelrand stehen die vier Stunden: ohne Worte, Ich-Botschaften und Zuhören, Grenzen erkennen, Stopp sagen.",
+            "text": "Eine Person liest ihren Satz aus dem Skills-Pass der letzten Stunde vor, in der der Skills-Koffer gepackt wurde. Dann die Wochen-Mission nachfragen – die Notfallkarte dabeihaben und im gewählten Moment den Ampel-Check machen: Stopp, Farbe, Skill. Kam dein Moment, und was hast du gemacht? Daumen hoch: Der Moment kam, ich habe den Ampel-Check gemacht; Mitte: Der Moment kam, ich habe etwas anderes gemacht; runter: Der Moment kam nicht. Eine Stimme nennt ihre Farbe, niemand muss. Dann das neue Kapitel an der Tafel aufdecken (vorher angeschrieben): Kommunikation und Grenzen – Wie sage ich, was ich fühle und brauche? Am Tafelrand stehen die vier Stunden: ohne Worte, Ich-Botschaften und Zuhören, Grenzen erkennen, Stopp sagen.",
             "sagen": [
+              "Kam euer Moment für den Ampel-Check – und was habt ihr gemacht? Daumen hoch, Mitte oder runter.",
               "In den nächsten vier Wochen geht es darum, wie ihr sagt, was ihr fühlt und braucht – und wie ihr zeigt, wo eure Grenze ist. Heute fangen wir mit allem an, was ohne Worte ankommt."
             ],
-            "tipp": "Die vier Stunden des Kapitels am Tafelrand stehen lassen. Wer weiß, wohin ein Kapitel führt, arbeitet ruhiger – und die Verbindung zum Kapitel davor liegt auf der Hand: Erst runter, dann reden."
+            "tipp": "Daumen runter ist keine Niederlage: Mancher Moment kommt in einer Woche einfach nicht, der Plan gilt weiter. Die vier Stunden des Kapitels am Tafelrand stehen lassen. Wer weiß, wohin ein Kapitel führt, arbeitet ruhiger – und die Verbindung zum Kapitel davor liegt auf der Hand: Erst runter, dann reden."
           },
           {
             "titel": "Worte, Stimme, Körper: Was glaubt ihr mir?",
@@ -264,7 +265,7 @@
             "titel": "Skill: Achtsames Hören",
             "dauer": 10,
             "phase": "skill",
-            "text": "Ankündigen: Achtsames Hören kennt ihr aus Stunde 7 – heute ist es das Training fürs Zuhören, um das es nächste Woche geht. Alle sitzen bequem, die Augen geschlossen oder auf einen Punkt am Boden gerichtet. Die drei Schritte langsam anleiten, je etwa eine Minute, und selbst mitmachen (Liste). Danach nennen drei, vier Freiwillige ihr leisestes Geräusch. Zum Schluss fragen, wann das helfen könnte – im Bus, abends im Bett, wenn der Kopf voll ist – und erklären: Wer auf Geräusche achtet, holt die Aufmerksamkeit aus dem Gedankenkarussell ins Hier und Jetzt.",
+            "text": "Ankündigen: Achtsames Hören kennt ihr aus Stunde 7 – heute ist es das Training fürs Zuhören, um das es nächste Woche geht. Alle sitzen bequem, die Augen offen auf einen Punkt am Boden gerichtet oder geschlossen – beides ist gleich gut. Die drei Schritte langsam anleiten, je etwa eine Minute und zusammen nicht länger als drei Minuten, und selbst mitmachen (Liste). Wer nicht mitmachen will, hält still einen Knetball oder drückt die Füße in den Boden und wartet; das wird nicht kommentiert. Danach nennen drei, vier Freiwillige ihr leisestes Geräusch. Zum Schluss fragen, wann das helfen könnte – im Bus, abends im Bett, wenn der Kopf voll ist – und erklären: Wer auf Geräusche achtet, holt die Aufmerksamkeit aus dem Gedankenkarussell ins Hier und Jetzt.",
             "sagen": [
               "Ihr müsst nichts tun außer hören. Wenn Gedanken kommen, geht einfach zurück zu den Geräuschen.",
               "Was war das leiseste Geräusch, das ihr gehört habt?"
@@ -275,23 +276,25 @@
               "Such eine Minute lang das leiseste Geräusch, das du finden kannst – und atme dabei langsam aus."
             ],
             "tipp": "Wer schwer still sitzen kann, hält einen Knetball oder Radiergummi in der Hand. Macht jemand absichtlich ein Geräusch, es ruhig mitzählen: Auch das ist ein Geräusch im Raum.",
-            "wennEsKippt": "Kichern ist beim ersten Mal normal: kurz warten und leise weitersprechen. Ist es zu unruhig, auf eine Minute kürzen und nur das leiseste Geräusch suchen lassen. Niemand muss die Augen schließen."
+            "wennEsKippt": "Kichern ist beim ersten Mal normal: kurz warten und leise weitersprechen. Ist es zu unruhig, auf eine Minute kürzen und nur das leiseste Geräusch suchen lassen. Niemand muss die Augen schließen, niemand muss mitmachen – und die Übung wird nie verlängert, um Ruhe zu erzwingen."
           },
           {
-            "titel": "Daumen ohne Worte, Skills-Pass, Mission",
+            "titel": "Daumen ohne Worte, Skills-Pass, Moment wählen",
             "dauer": 5,
             "phase": "abschluss",
-            "text": "Passend zum Thema zuerst ohne Worte: Auf drei zeigen alle mit dem Daumen, wie die Stunde war (1 Min.). Dann schreibt jede Person einen Satz in den Skills-Pass zur Leitfrage an der Tafel: Woran merke ich, wie jemand etwas meint? Danach gibt es den Stempel (3 Min.). Zum Schluss die Wochen-Mission im Heft ansagen und den Ausblick auf die nächste Stunde geben (1 Min.).",
+            "text": "Passend zum Thema zuerst ohne Worte: Auf drei zeigen alle mit dem Daumen, wie die Stunde war (1 Min.). Dann schreibt jede Person einen Satz in den Skills-Pass zur Leitfrage an der Tafel: Woran merke ich, wie jemand etwas meint? Danach gibt es den Stempel (2 Min.). Wochen-Mission und Moment wählen (2 Min.): Die Mission im Heft ansagen – wenn dein Moment kommt, dann nachfragen: Wie meinst du das? Dann wählt jede Person ihren Moment: Auf drei zeigen alle einen Finger für ein knappes ok. ohne alles, zwei für eine Nachricht, die komisch klingt, drei für ein Gesicht, das sie nicht lesen können, die Faust für einen eigenen Moment – und schreiben ihn in die Spalte ‚Mein Moment: Wenn …‘ neben der Mission, ein Stichwort reicht. Mit dem Ausblick auf die nächste Stunde schließen.",
             "sagen": [
               "Daumen auf drei – ohne ein Wort. Eins, zwei, drei.",
-              "Für den Skills-Pass: Woran merkt ihr, wie jemand etwas meint?"
+              "Für den Skills-Pass: Woran merkt ihr, wie jemand etwas meint?",
+              "Wann kommt euer Moment? Ein Finger: ein knappes ok. ohne alles. Zwei: eine Nachricht, die komisch klingt. Drei: ein Gesicht, das ihr nicht lesen könnt. Faust: ein eigener Moment. Schreibt ihn ins Heft: Wenn …, dann frage ich nach."
             ],
-            "tipp": "Wem nichts einfällt, schreibt die Chat-Regel ab, die ihm am wichtigsten ist."
+            "tipp": "Wem nichts einfällt, schreibt die Chat-Regel ab, die ihm am wichtigsten ist. Der Moment ist der eigentliche Plan: Nachfragen mit festem Auslöser passiert eher als der Vorsatz, es ‚mal zu probieren‘ – die Brücke nächste Woche fragt danach, ohne Kontrolle.",
+            "wennEsKippt": "Nennt jemand einen Scherz-Moment, gelten lassen, wenn er ernst gemeint ist. Wer keinen Moment wählen will, lässt die Spalte leer – nächste Woche fragt niemand nach. Wer die Sprache noch lernt oder nicht schreiben mag, malt ein Zeichen: ein Handy für den Chat, ein Gesicht für den Blick."
           }
         ],
         "bruecke": "Nächste Woche lernt ihr einen Satz, der viel Streit verhindert: die Ich-Botschaft – und wie man so zuhört, dass sich jemand wirklich verstanden fühlt.",
-        "mission": "Kommt dir diese Woche eine Nachricht komisch vor, frag einmal nach: „Wie meinst du das?“ Oder achte einmal darauf, was Gesicht, Stimme und Hände sagen.",
-        "hintergrund": "Kommunikation läuft über mehrere Kanäle: Worte, Stimme und Körper. Watzlawick et al. (1967) prägten den Satz, dass man nicht nicht kommunizieren kann, und beschrieben, dass jede Nachricht einen Inhalts- und einen Beziehungsaspekt hat; die Beziehung zeigt sich vor allem in Stimme, Blick und Haltung. Widersprechen sich die Kanäle, muss das Gegenüber deuten – und liegt dabei oft daneben, denn Körpersprache ist ein Hinweis, kein Beweis. Wie viel Rückfragen ausmachen, zeigten Leavitt und Mueller (1951): Beschrieb jemand geometrische Figuren, zeichneten die Zuhörenden deutlich genauer, sobald sie nachfragen durften – es dauerte nur länger. Im Chat fehlen Stimme und Körper ganz. Wer schreibt, hört beim Tippen den eigenen Tonfall mit und überschätzt, wie gut Ironie oder Ernst beim anderen ankommen (Kruger et al., 2005). Deshalb übt die Stunde das einfachste Gegenmittel: nachfragen.",
+        "mission": "Wenn dein Moment kommt, frag nach: „Wie meinst du das?“ – bei einem knappen ok., bei einer Nachricht, die komisch klingt, oder bei einem Gesicht, das du nicht lesen kannst.",
+        "hintergrund": "Grundlage ist das Kommunikationsmodell von Watzlawick et al. (1967): Man kann nicht nicht kommunizieren, und jede Nachricht – über Worte, Stimme und Körper – hat einen Inhalts- und einen Beziehungsaspekt; die Beziehung zeigt sich vor allem in Stimme, Blick und Haltung. Widersprechen sich die Kanäle, muss das Gegenüber deuten: Körpersprache ist ein Hinweis, kein Beweis. Der wichtigste Beleg für das Gegenmittel stammt von Leavitt und Mueller (1951): Beschrieb jemand geometrische Figuren, zeichneten die Zuhörenden genauer, sobald sie nachfragen durften – es dauerte nur länger. Im Chat fehlen Stimme und Körper: Wer schreibt, hört beim Tippen den eigenen Tonfall mit und überschätzt, wie gut Ironie ankommt (Kruger et al., 2005; Kasten auf dem Blatt). Die Stunde übt das einfachste Gegenmittel, das Nachfragen; die Wochen-Mission bindet es an einen selbst gewählten Moment.",
         "quellen": [
           "Watzlawick, P., Beavin, J. H. & Jackson, D. D. (1967). Pragmatics of Human Communication. New York: Norton.",
           "Leavitt, H. J. & Mueller, R. A. H. (1951). Some effects of feedback on communication. Human Relations, 4(4), 401–410.",
@@ -299,10 +302,10 @@
         ],
         "achtung": "Die Körpersprache einzelner Jugendlicher nie vor der Klasse deuten oder bewerten: Blickkontakt, Abstand und Gesten sind in jeder Familie und Kultur anders. Die Pantomime ist freiwillig, und über Sprachen und Akzente wird nicht gelacht. Kommen ein Chat-Streit, verletzende Nachrichten oder Cybermobbing zur Sprache: nicht in der Klasse auswerten, keine echten Chats zeigen lassen, nach der Stunde ein Gespräch anbieten, auf die BEE SECURE Helpline (8002 1234) hinweisen, bei Mobbing Régent und SePAS einbeziehen. Bei Drohungen, Gewalt oder Selbstverletzung noch am selben Tag den SePAS informieren.",
         "differenzierung": {
-          "leichter": "Die Körpersprache-Karten zeigen zu jedem Wort ein Gesicht; so spielen auch Jugendliche mit, die das Wort noch nicht kennen. „Ja, klar.“ und den Rätselsatz darf man in jeder Sprache sagen; bei Rücken an Rücken helfen die Formen-Wörter an der Tafel, und Paare mit einer gemeinsamen Sprache arbeiten in dieser oder nehmen Vorlage A. Wer mühsam schreibt, übersetzt die Emojis mündlich oder mit einem Wort aus dem Wortspeicher.",
+          "leichter": "Die Körpersprache-Karten zeigen zu jedem Wort ein Gesicht; so spielen auch Jugendliche mit, die das Wort noch nicht kennen. „Ja, klar.“ und den Rätselsatz darf man in jeder Sprache sagen; bei Rücken an Rücken helfen die Formen-Wörter an der Tafel, und Paare mit einer gemeinsamen Sprache arbeiten in dieser oder nehmen Vorlage A. Wer mühsam schreibt, übersetzt die Emojis mündlich oder mit einem Wort aus dem Wortspeicher. Für die Spalte „Mein Moment“ reicht ein Wort oder ein kleines Zeichen: Chat, Gesicht.",
           "schwerer": "Eine eigene missverständliche Nachricht erfinden und von einer anderen Gruppe deuten lassen: Stimmt die Deutung mit der Absicht überein? Bei Rücken an Rücken die schwierigste Vorlage D nehmen oder als dritte Person notieren, welche Wörter geholfen haben."
         },
-        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit Gesicht und Zahl (5 Min.), die vier Sätze und das Tafelbild Worte, Stimme, Körper (10 Min.), Gefühle ohne Worte in den Tischgruppen (10 Min.), Emojis in Sätze übersetzen und Chat-Regeln (15 Min.), achtsames Hören (5 Min.), Skills-Pass und Wochen-Mission (5 Min.). Rücken an Rücken entfällt; die Übung passt in eine spätere Stunde, wenn Zeit übrig bleibt."
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit Gesicht und Zahl (5 Min.), die vier Sätze und das Tafelbild Worte, Stimme, Körper (10 Min.), Gefühle ohne Worte in den Tischgruppen (10 Min.), Emojis in Sätze übersetzen und Chat-Regeln (15 Min.), achtsames Hören (5 Min.), Skills-Pass, Mission und Moment wählen (5 Min.). Rücken an Rücken entfällt; die Übung passt in eine spätere Stunde, wenn Zeit übrig bleibt."
       },
       "fr": {
         "titel": "Verbal et non verbal",
@@ -373,7 +376,7 @@
           {
             "min": "95–100",
             "phase": "abschluss",
-            "titel": "Pouce sans un mot, Skills-Pass, mission"
+            "titel": "Pouce sans un mot, Skills-Pass, choix du moment"
           }
         ],
         "schritte": [
@@ -393,11 +396,12 @@
             "titel": "Retour sur la séance et nouveau chapitre",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Un jeune lit la phrase de son Skills-Pass de la dernière séance, celle où l’on a rempli la valise à skills. Pour la mission de la semaine, faire un sondage du pouce : qui avait sa carte d’urgence sur lui et a fait une fois le réflexe feu tricolore (en haut, au milieu, en bas) ? Une voix raconte quelle couleur elle avait ; personne n’est obligé d’avoir réussi la mission. Découvrir ensuite le nouveau chapitre, écrit au tableau à l’avance : Communication et limites – Comment dire ce que je ressens et ce dont j’ai besoin ? En marge, les quatre séances : sans les mots, messages en « je » et écoute, reconnaître les limites, dire stop.",
+            "text": "Un jeune lit la phrase de son Skills-Pass de la dernière séance, celle où l’on a rempli la valise à skills. Puis revenir sur la mission de la semaine – garder sa carte d’urgence sur soi et faire le réflexe feu tricolore au moment choisi : stop, couleur, skill. Ton moment est-il venu, et qu’as-tu fait ? Pouce en haut : le moment est venu, j’ai fait le réflexe feu tricolore ; au milieu : le moment est venu, j’ai fait autre chose ; en bas : le moment n’est pas venu. Une voix dit sa couleur, personne n’est obligé. Découvrir ensuite le nouveau chapitre, écrit au tableau à l’avance : Communication et limites – Comment dire ce que je ressens et ce dont j’ai besoin ? En marge, les quatre séances : sans les mots, messages en « je » et écoute, reconnaître les limites, dire stop.",
             "sagen": [
+              "Votre moment pour le réflexe feu tricolore est-il venu – et qu’avez-vous fait ? Pouce en haut, au milieu ou en bas.",
               "Pendant quatre semaines, on va voir comment dire ce que vous ressentez et ce dont vous avez besoin – et comment montrer où se trouve votre limite. Aujourd’hui, on commence par tout ce qui passe sans les mots."
             ],
-            "tipp": "Laisser les quatre séances du chapitre en marge du tableau. Quand on sait où mène un chapitre, on travaille plus sereinement – et le lien avec le chapitre précédent est évident : d’abord redescendre, ensuite parler."
+            "tipp": "Le pouce en bas n’est pas un échec : certains moments ne viennent tout simplement pas dans la semaine, le plan reste valable. Laisser les quatre séances du chapitre en marge du tableau. Quand on sait où mène un chapitre, on travaille plus sereinement – et le lien avec le chapitre précédent est évident : d’abord redescendre, ensuite parler."
           },
           {
             "titel": "Mots, voix, corps : vous croyez quoi ?",
@@ -536,7 +540,7 @@
             "titel": "Skill : l’écoute attentive",
             "dauer": 10,
             "phase": "skill",
-            "text": "Annoncer : vous connaissez l’écoute attentive depuis la séance 7 – aujourd’hui, elle sert d’entraînement à l’écoute, le sujet de la semaine prochaine. Tout le monde s’assoit confortablement, les yeux fermés ou posés sur un point au sol. Guider lentement les trois étapes, environ une minute chacune, et faire l’exercice soi-même (liste). Ensuite, trois ou quatre volontaires disent le bruit le plus faible qu’ils ont entendu. Pour finir, demander quand cela pourrait aider – dans le bus, le soir au lit, quand la tête est pleine – et expliquer : écouter les bruits sort l’attention du tourbillon des pensées et la ramène ici et maintenant.",
+            "text": "Annoncer : vous connaissez l’écoute attentive depuis la séance 7 – aujourd’hui, elle sert d’entraînement à l’écoute, le sujet de la semaine prochaine. Tout le monde s’assoit confortablement, les yeux ouverts, posés sur un point au sol, ou fermés – les deux se valent. Guider lentement les trois étapes, environ une minute chacune et pas plus de trois minutes en tout, et faire l’exercice soi-même (liste). Qui ne veut pas participer garde en silence une balle anti-stress dans la main ou appuie les pieds dans le sol et attend ; on ne fait pas de commentaire. Ensuite, trois ou quatre volontaires disent le bruit le plus faible qu’ils ont entendu. Pour finir, demander quand cela pourrait aider – dans le bus, le soir au lit, quand la tête est pleine – et expliquer : écouter les bruits sort l’attention du tourbillon des pensées et la ramène ici et maintenant.",
             "sagen": [
               "Vous n’avez rien à faire, à part écouter. Si des pensées arrivent, revenez simplement aux bruits.",
               "Quel est le bruit le plus faible que vous avez entendu ?"
@@ -547,23 +551,25 @@
               "Cherche pendant une minute le bruit le plus faible que tu puisses trouver – et expire lentement."
             ],
             "tipp": "Qui a du mal à rester tranquille peut garder une balle anti-stress ou une gomme dans la main. Si quelqu’un fait exprès du bruit, le compter calmement avec les autres : c’est aussi un bruit de la salle.",
-            "wennEsKippt": "Les rires sont normaux la première fois : attendre un instant et continuer à voix basse. Si c’est trop agité, réduire à une minute et chercher seulement le bruit le plus faible. Personne n’est obligé de fermer les yeux."
+            "wennEsKippt": "Les rires sont normaux la première fois : attendre un instant et continuer à voix basse. Si c’est trop agité, réduire à une minute et chercher seulement le bruit le plus faible. Personne n’est obligé de fermer les yeux ni de participer – et on ne prolonge jamais l’exercice pour imposer le calme."
           },
           {
-            "titel": "Pouce sans un mot, Skills-Pass, mission",
+            "titel": "Pouce sans un mot, Skills-Pass, choix du moment",
             "dauer": 5,
             "phase": "abschluss",
-            "text": "Pour rester dans le thème, d’abord sans un mot : à « trois », tout le monde montre avec le pouce comment était la séance (1 min). Puis chacun écrit une phrase dans son Skills-Pass, à partir de la question au tableau : à quoi je vois ce que quelqu’un veut vraiment dire ? Ensuite, le tampon (3 min). Pour finir, annoncer la mission de la semaine dans le cahier et la prochaine séance (1 min).",
+            "text": "Pour rester dans le thème, d’abord sans un mot : à « trois », tout le monde montre avec le pouce comment était la séance (1 min). Puis chacun écrit une phrase dans son Skills-Pass, à partir de la question au tableau : à quoi je vois ce que quelqu’un veut vraiment dire ? Ensuite, le tampon (2 min). Mission de la semaine et choix du moment (2 min) : annoncer la mission dans le cahier – quand ton moment arrive, tu demandes : tu veux dire quoi ? Puis chacun choisit son moment : à « trois », tout le monde montre un doigt pour un “ok.” tout sec, deux pour un message qui sonne bizarre, trois pour un visage qu’on n’arrive pas à lire, le poing pour un moment à soi – et l’écrit dans la colonne « Mon moment : si… » à côté de la mission, un mot-clé suffit. Terminer par l’annonce de la prochaine séance.",
             "sagen": [
               "Le pouce à “trois” – sans un mot. Un, deux, trois.",
-              "Pour le Skills-Pass : à quoi voyez-vous ce que quelqu’un veut vraiment dire ?"
+              "Pour le Skills-Pass : à quoi voyez-vous ce que quelqu’un veut vraiment dire ?",
+              "Quand arrive votre moment ? Un doigt : un “ok.” tout sec. Deux : un message qui sonne bizarre. Trois : un visage que vous n’arrivez pas à lire. Le poing : un moment à vous. Écrivez-le dans le cahier : si…, alors je demande."
             ],
-            "tipp": "Qui ne trouve rien recopie la règle pour les messages qui lui semble la plus importante."
+            "tipp": "Qui ne trouve rien recopie la règle pour les messages qui lui semble la plus importante. Le moment est le vrai plan : demander avec un déclencheur précis se fait bien plus souvent que la bonne résolution d’“essayer un jour” – le lien de la semaine prochaine y reviendra, sans contrôle.",
+            "wennEsKippt": "Si quelqu’un donne un moment pour rire, le laisser passer s’il est sérieux au fond. Qui ne veut pas choisir de moment laisse la colonne vide – la semaine prochaine, personne ne lui demandera rien. Qui apprend encore la langue ou n’aime pas écrire dessine un signe : un portable pour les messages, un visage pour le regard."
           }
         ],
         "bruecke": "La semaine prochaine, vous apprendrez une phrase qui évite beaucoup de disputes : le message en « je » – et comment écouter pour que l’autre se sente vraiment compris.",
-        "mission": "Si un message te paraît bizarre cette semaine, demande une fois : « Tu veux dire quoi ? » Ou observe une fois ce que disent le visage, la voix et les mains.",
-        "hintergrund": "La communication passe par plusieurs canaux : les mots, la voix et le corps. Watzlawick et al. (1967) ont formulé l’idée qu’on ne peut pas ne pas communiquer et montré que tout message a un aspect de contenu et un aspect de relation ; la relation se lit surtout dans la voix, le regard et la posture. Quand les canaux se contredisent, l’autre doit interpréter – et se trompe souvent, car le langage du corps est un indice, pas une preuve. Leavitt et Mueller (1951) ont montré l’effet des questions : quand une personne décrivait des figures géométriques, ceux qui écoutaient dessinaient bien plus juste dès qu’ils pouvaient poser des questions, mais il leur fallait plus de temps. Dans un message écrit, la voix et le corps disparaissent. Celui qui écrit entend son propre ton dans sa tête et surestime à quel point l’ironie ou le sérieux passent chez l’autre (Kruger et al., 2005). D’où le remède le plus simple, que la séance entraîne : demander.",
+        "mission": "Quand ton moment arrive, demande : « Tu veux dire quoi ? » – devant un “ok.” tout sec, un message qui sonne bizarre ou un visage que tu n’arrives pas à lire.",
+        "hintergrund": "La séance repose sur le modèle de la communication de Watzlawick et al. (1967) : on ne peut pas ne pas communiquer, et tout message – par les mots, la voix et le corps – a un aspect de contenu et un aspect de relation ; la relation se lit dans la voix, le regard et la posture. Quand les canaux se contredisent, l’autre doit interpréter : le langage du corps est un indice, pas une preuve. Le meilleur appui du remède vient de Leavitt et Mueller (1951) : quand on décrivait des figures géométriques, les auditeurs dessinaient bien plus juste dès qu’ils pouvaient poser des questions, mais plus lentement. Dans un message écrit, la voix et le corps disparaissent : celui qui écrit entend son propre ton et surestime à quel point son ironie passe (Kruger et al., 2005 ; l’encadré de la fiche). La séance entraîne le remède le plus simple, demander ; la mission le lie à un moment choisi par chacun.",
         "quellen": [
           "Watzlawick, P., Beavin, J. H. & Jackson, D. D. (1967). Pragmatics of Human Communication. New York: Norton.",
           "Leavitt, H. J. & Mueller, R. A. H. (1951). Some effects of feedback on communication. Human Relations, 4(4), 401–410.",
@@ -571,10 +577,10 @@
         ],
         "achtung": "Ne jamais interpréter ni juger devant la classe le langage du corps d’un jeune : le contact visuel, la distance et les gestes varient selon les familles et les cultures. Le mime est facultatif, et on ne rit ni des langues ni des accents. Si une dispute en ligne, des messages blessants ou du cyberharcèlement sont évoqués : ne pas en parler en classe, ne pas faire montrer de vraies conversations, proposer un entretien après le cours, indiquer la BEE SECURE Helpline (8002 1234), en cas de harcèlement impliquer le régent et le SePAS. En cas de menaces, de violence ou d’automutilation, informer le SePAS le jour même.",
         "differenzierung": {
-          "leichter": "Les cartes langage du corps montrent un visage pour chaque mot ; ainsi, même les jeunes qui ne connaissent pas encore le mot peuvent jouer. On peut dire « Oui, bien sûr. » et la phrase mystère dans n’importe quelle langue ; pour l’exercice dos à dos, les mots des formes au tableau aident, et les binômes qui partagent une langue l’utilisent ou prennent le modèle A. Qui a du mal à écrire traduit les émojis à l’oral ou avec un des mots clés du tableau.",
+          "leichter": "Les cartes langage du corps montrent un visage pour chaque mot ; ainsi, même les jeunes qui ne connaissent pas encore le mot peuvent jouer. On peut dire « Oui, bien sûr. » et la phrase mystère dans n’importe quelle langue ; pour l’exercice dos à dos, les mots des formes au tableau aident, et les binômes qui partagent une langue l’utilisent ou prennent le modèle A. Qui a du mal à écrire traduit les émojis à l’oral ou avec un des mots clés du tableau. Pour la colonne « Mon moment », un mot ou un petit dessin suffit : message, visage.",
           "schwerer": "Inventer un message ambigu et le faire interpréter par un autre îlot : l’interprétation correspond-elle à l’intention ? Pour l’exercice dos à dos, prendre le modèle D, le plus difficile, ou, dans un groupe de trois, noter comme observateur les mots qui ont aidé."
         },
-        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec le visage et le chiffre (5 min), les quatre phrases et le tableau mots, voix, corps (10 min), des émotions sans mots en îlots (10 min), traduire des émojis et règles pour les messages (15 min), écoute attentive (5 min), Skills-Pass et mission de la semaine (5 min). L’exercice dos à dos est supprimé ; il trouve sa place dans une séance ultérieure, s’il reste du temps."
+        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec le visage et le chiffre (5 min), les quatre phrases et le tableau mots, voix, corps (10 min), des émotions sans mots en îlots (10 min), traduire des émojis et règles pour les messages (15 min), écoute attentive (5 min), Skills-Pass, mission et choix du moment (5 min). L’exercice dos à dos est supprimé ; il trouve sa place dans une séance ultérieure, s’il reste du temps."
       }
     }
   ],
@@ -760,6 +766,12 @@
           },
           {
             "art": "info",
+            "symbol": "wissen",
+            "titel": "Aus der Forschung",
+            "text": "Wer eine Nachricht schreibt, ist fast immer sicher, dass die Ironie ankommt. Die Leser erkannten sie viel seltener – sie hören deine Stimme nicht."
+          },
+          {
+            "art": "info",
             "symbol": "tipp",
             "titel": "So vermeidest du Missverständnisse",
             "punkte": [
@@ -937,6 +949,12 @@
                 ""
               ]
             ]
+          },
+          {
+            "art": "info",
+            "symbol": "wissen",
+            "titel": "Ce que dit la recherche",
+            "text": "Celui qui écrit un message est presque toujours sûr que son ironie passe. Les lecteurs la reconnaissaient bien moins souvent – ils n’entendent pas ta voix."
           },
           {
             "art": "info",
